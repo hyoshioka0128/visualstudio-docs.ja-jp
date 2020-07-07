@@ -1,7 +1,7 @@
 ---
-title: '方法: イベント レシーバーの作成 |Microsoft Docs'
+title: '方法: イベントレシーバーを作成する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
 dev_langs:
@@ -17,57 +17,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966758"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016918"
 ---
-# <a name="how-to-create-an-event-receiver"></a>方法: イベント レシーバーを作成します。
-  作成して*イベント レシーバー*、リストなどの SharePoint アイテムまたはリスト項目と、ユーザーが対話するときに応答することができます。 たとえば、ユーザーがカレンダーを変更したり、連絡先リストから名前を削除、イベント レシーバー内でコードをトリガーできます。 このトピックでは、リスト インスタンスには、イベント レシーバーを追加する方法を確認できます。
+# <a name="how-to-create-an-event-receiver"></a>方法: イベントレシーバーを作成する
+  *イベントレシーバー*を作成することにより、ユーザーがリストやリストアイテムなどの SharePoint アイテムを操作するときに応答できます。 たとえば、ユーザーがカレンダーを変更したり、連絡先リストから名前を削除したりすると、イベントレシーバーのコードがトリガーされます。 このトピックでは、イベントレシーバーをリストインスタンスに追加する方法について説明します。
 
- 次の手順を完了する必要がありますインストールした[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]サポート対象エディションの Windows および SharePoint とします。 この例では、SharePoint プロジェクトが必要とするためもする必要がありますの手順を完了、トピックの「[チュートリアル。For SharePoint のサイト列、コンテンツの種類、および一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)です。
+ これらの手順を完了するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows および SharePoint のエディションがインストールされ、サポートされている必要があります。 この例では SharePoint プロジェクトが必要であるため、「[チュートリアル: サイト列、コンテンツタイプ、および sharepoint の一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)」の手順を完了している必要もあります。
 
-## <a name="adding-an-event-receiver"></a>イベント レシーバーの追加
- 作成したプロジェクト[チュートリアル。For SharePoint のサイト列、コンテンツの種類、および一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)カスタムのサイト列、カスタム リスト、およびコンテンツの種類が含まれています。 次の手順では、リストなどの SharePoint アイテムで発生するイベントを処理する方法を表示するリスト インスタンスに単純なイベント ハンドラー (イベント レシーバー) を追加することでこのプロジェクトを展開します。
+## <a name="adding-an-event-receiver"></a>イベントレシーバーの追加
+ 「[チュートリアル: サイト列、コンテンツタイプ、および SharePoint の一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)」で作成したプロジェクトには、カスタムサイト列、カスタムリスト、およびコンテンツタイプが含まれています。 次の手順では、単純なイベントハンドラー (イベントレシーバー) をリストインスタンスに追加して、このプロジェクトを拡張します。これにより、リストなどの SharePoint アイテムで発生するイベントの処理方法が示されます。
 
-#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>リスト インスタンスには、イベント レシーバーを追加するには
+#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>イベントレシーバーをリストインスタンスに追加するには
 
-1. 作成したプロジェクトを開く[チュートリアル。For SharePoint のサイト列、コンテンツの種類、および一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)です。
+1. 「[チュートリアル: SharePoint のサイト列、コンテンツタイプ、およびリストを作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)する」で作成したプロジェクトを開きます。
 
-2. **ソリューション エクスプ ローラー**、名前は、SharePoint プロジェクト ノードを選択**クリニック**します。
+2. **ソリューションエクスプローラー**で、[**クリニック**] という名前の SharePoint プロジェクトノードを選択します。
 
-3. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-4. いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**項目。
+4. [ **Visual C#** ] または [ **Visual Basic**で、[ **SharePoint** ] ノードを展開し、[ **2010** ] 項目を選択します。
 
-5. **テンプレート**ウィンドウで、選択**イベント レシーバー**、名前を付けます**TestEventReceiver1**、選択し、 **[ok]** ボタンをクリックします。
+5. [**テンプレート**] ウィンドウで [**イベントレシーバー**] を選択し、「 **TestEventReceiver1**」という名前を指定して、[ **OK** ] をクリックします。
 
-     **SharePoint カスタマイズ ウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード**が表示されます。
 
-6. **イベント レシーバーの種類が必要ですか?** 一覧で、選択**リスト項目イベント**します。
+6. [**どの種類のイベントレシーバーを使用しますか?** ] ボックスの一覧で、[**リスト項目イベント**] を選択します。
 
-7. **どの項目がイベント ソースにする必要がありますか?** 一覧で、選択**患者 (Clinic\Patients)** します。
+7. [**イベントソースを指定してください]** の一覧で、[**患者 (Clinic\Patients)**] を選択します。
 
-8. **、次のイベントを処理**一覧で、次のチェック ボックスをオン**項目が追加されました**、選択し、**完了**ボタンをクリックします。
+8. [**次のイベントを処理**する] ボックスの一覧で、**項目**の横にあるチェックボックスをオンにし、[**完了**] をクリックします。
 
-     新しいイベント レシーバーのコード ファイルには名前は 1 つのメソッドが含まれています`ItemAdded`します。 次の手順ですべての連絡先の名前は Scott Brown 既定するために、このメソッドにコードを追加します。
+     新しいイベントレシーバーのコードファイルには、という名前の1つのメソッドが含まれてい `ItemAdded` ます。 次の手順では、このメソッドにコードを追加して、すべての連絡先が既定で Scott Brown という名前になるようにします。
 
-9. 既存`ItemAdded`メソッドを次のコードは、クリックして、 **F5**キー。
+9. 既存の `ItemAdded` メソッドを次のコードに置き換え、 **F5**キーを押します。
 
      [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
      [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]
 
-     コードを実行し、SharePoint サイト、web ブラウザーに表示されます。
+     コードが実行され、SharePoint サイトが web ブラウザーに表示されます。
 
-10. クイック起動バーで、**患者**リンクをクリックして、**新しい項目の追加**リンク。
+10. クイック起動バーで、[**患者**] リンクを選択し、[**新しいアイテムの追加**] リンクを選択します。
 
-     新しい項目のエントリ フォームが開きます。
+     新しい項目の入力フォームが開きます。
 
-11. フィールドに、データを入力してから、**保存**ボタンをクリックします。
+11. フィールドにデータを入力し、[**保存**] をクリックします。
 
-     選択した後、**保存** ボタン、**患者名**Scott Brown 名に列が自動的に更新します。
+     [**保存**] ボタンを選択すると、[**患者の名前**] 列が Scott Brown という名前に自動的に更新されます。
 
 ## <a name="see-also"></a>関連項目
 

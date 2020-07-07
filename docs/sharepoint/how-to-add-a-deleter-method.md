@@ -1,7 +1,7 @@
 ---
-title: '方法: Deleter メソッドの追加 |Microsoft Docs'
+title: '方法: 削除子メソッドを追加する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,59 +19,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418348"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017042"
 ---
-# <a name="how-to-add-a-deleter-method"></a>方法: Deleter メソッドを追加します。
-  SharePoint サイト上の外部リストから、モデルに Deleter メソッドを追加してデータ レコードを削除するには、エンドユーザーを有効にすることができます。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+# <a name="how-to-add-a-deleter-method"></a>方法: 削除子メソッドを追加する
+  エンドユーザーが、削除子メソッドをモデルに追加することによって、SharePoint サイトの外部リストからデータレコードを削除できるようにすることができます。 詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
-### <a name="to-create-a-deleter-method"></a>Deleter メソッドを作成するには
+### <a name="to-create-a-deleter-method"></a>削除子メソッドを作成するには
 
-1. **BDC デザイナー**エンティティを選択します。
+1. **BDC デザイナー**で、エンティティを選択します。
 
-2. メニュー バーで、**ビュー** > **その他の Windows** > **BDC メソッドの詳細**します。
+2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細**を表示] を選択します。
 
-    **BDC メソッドの詳細**ウィンドウが開きます。 このウィンドウの詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
+    [ **BDC メソッドの詳細**] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
-3. **メソッドを追加する**一覧で、選択**Deleter メソッドを作成する**します。
+3. [**メソッドの追加**] の一覧で、[**削除子メソッドの作成**] を選択します。
 
-    Visual Studio では、モデルに、次の要素を追加します。 これらの要素、 **BDC メソッドの詳細**ウィンドウ。
+    Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、[ **BDC メソッドの詳細**] ウィンドウに表示されます。
 
-   - という名前のメソッド**削除**します。
+   - **Delete**という名前のメソッド。
 
    - メソッドの入力パラメーター。
 
    - パラメーターの型記述子。
 
-   - メソッドのメソッドのインスタンス。
+   - メソッドのメソッドインスタンス。
 
-     詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
+     詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
-4. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。
+4. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
 
-    エンティティ サービス コード ファイルがコード エディターで開きます。 詳細については、エンティティ サービス コード ファイルは、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
+    コードエディターで entity service コードファイルが開きます。 Entity service コードファイルの詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
-5. レコードを削除する Deleter メソッドにコードを追加します。 次の例では、SQL Server の AdventureWorks サンプル データベースを使用して販売注文から品目を削除します。
-
-   > [!NOTE]
-   > この例では、メソッドは、2 つの入力パラメーターを使用します。
+5. レコードを削除するコードを削除子メソッドに追加します。 次の例では、SQL Server の AdventureWorks サンプルデータベースを使用して、販売注文から行項目を削除します。
 
    > [!NOTE]
-   > 値を置き換える、`ServerName`フィールドに、サーバーの名前。
+   > この例のメソッドでは、2つの入力パラメーターを使用します。
+
+   > [!NOTE]
+   > フィールドの値を `ServerName` サーバーの名前に置き換えます。
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
 
 ## <a name="see-also"></a>関連項目
-- [ビジネス データ接続モデルを設計します。](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [方法: Finder メソッドを追加します。](../sharepoint/how-to-add-a-finder-method.md)
-- [方法: 特定の Finder メソッドを追加します。](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [方法: Creator メソッドを追加します。](../sharepoint/how-to-add-a-creator-method.md)
-- [方法: Updater メソッドを追加します。](../sharepoint/how-to-add-an-updater-method.md)
-- [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)
-- [方法: メソッドにパラメーターを追加します。](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [方法: メソッド インスタンスを定義します。](../sharepoint/how-to-define-a-method-instance.md)
+- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)
+- [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)
+- [方法: Updater メソッドを追加する](../sharepoint/how-to-add-an-updater-method.md)
+- [BDC モデルのデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)
+- [方法: メソッドにパラメーターを追加する](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [方法: メソッドインスタンスを定義する](../sharepoint/how-to-define-a-method-instance.md)

@@ -1,7 +1,7 @@
 ---
 title: '方法: エンティティ間の関連付けを作成する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
@@ -21,12 +21,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981830"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016935"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>方法: エンティティ間の関連付けを作成する
   関連付けを作成することによって、Business Data Connectivity (BDC) モデルのエンティティ間のリレーションシップを定義できます。 Visual Studio では、モデルのコンシューマーに各アソシエーションに関する情報を提供するメソッドが生成されます。 これらのメソッドは、SharePoint web パーツ、リスト、またはカスタムアプリケーションで、ユーザーインターフェイス (UI) にデータリレーションシップを表示するために使用できます。
@@ -35,19 +34,19 @@ ms.locfileid: "72981830"
 
 ### <a name="to-create-an-association-between-entities"></a>エンティティ間の関連付けを作成するには
 
-1. **ツールボックス**の **[BusinessDataConnectivity]** タブで、 **[Association]** 項目を選択します。
+1. **ツールボックス**の [ **BusinessDataConnectivity** ] タブで、[ **Association** ] 項目を選択します。
 
 2. BDC デザイナーで、[ソース] エンティティを選択し、目的のエンティティを選択します。
 
      **関連付けエディター**が表示されます。
 
-3. 外部キーベースの関連付けを作成する場合は、 **[外部キーの関連付け]** チェックボックスをオンにします。
+3. 外部キーベースの関連付けを作成する場合は、[**外部キーの関連付け**] チェックボックスをオンにします。
 
-    1. **識別子マッピング**テーブルの **[ソース ID]** 列で、[**フィールド]** 列に表示される一致する各型記述子の横にある識別子を選択します。
+    1. **識別子マッピング**テーブルの [**ソース ID** ] 列で、[**フィールド]** 列に表示される一致する各型記述子の横にある識別子を選択します。
 
-         たとえば、 **[ソース ID]** 列で、`ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 型記述子と `ReadItem.salesOrder.SalesOrder.ContactID` 型記述子の横にある [`ContactID`] を選択します。
+         たとえば、[**ソース ID** ] 列で、 `ContactID` `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 型記述子と型記述子の横にあるを選択し `ReadItem.salesOrder.SalesOrder.ContactID` ます。
 
-4. 外部キーなし関連付けを作成する場合は、 **[外部キーの関連付け]** チェックボックスをオフにします。
+4. 外部キーなし関連付けを作成する場合は、[**外部キーの関連付け**] チェックボックスをオフにします。
 
 5. **[OK]** を選択します。
 

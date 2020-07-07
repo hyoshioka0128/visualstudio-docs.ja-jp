@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint プロジェクト拡張機能の作成 |Microsoft Docs'
+title: '方法: SharePoint プロジェクトの拡張機能を作成する |Microsoft Docs'
 ms.date: 04/28/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 191f5d718064a4e094a2c28e3f584168b20fb3fc
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966875"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017154"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>方法: SharePoint プロジェクト拡張機能を作成します。
-  Visual Studio で開いている任意の SharePoint プロジェクトに機能を追加する場合は、プロジェクトの拡張機能を作成します。 詳細については、次を参照してください。 [SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)します。
+# <a name="how-to-create-a-sharepoint-project-extension"></a>方法: SharePoint プロジェクトの拡張機能を作成する
+  Visual Studio で開いている SharePoint プロジェクトに機能を追加する場合は、プロジェクトの拡張機能を作成します。 詳細については、「 [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)」を参照してください。
 
 ### <a name="to-create-a-project-extension"></a>プロジェクトの拡張機能を作成するには
 
@@ -36,12 +35,12 @@ ms.locfileid: "62966875"
 
 3. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> インターフェイスを実装するクラスを作成します。
 
-4. 追加、<xref:System.ComponentModel.Composition.ExportAttribute>クラスにします。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>属性コンス トラクターの型。
+4. <xref:System.ComponentModel.Composition.ExportAttribute>をクラスに追加します。 この属性を使用すると、Visual Studio で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 属性コンストラクターに渡します。
 
-5. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>メソッドのメンバーを使用して、 *projectService*パラメーター、拡張機能の動作を定義します。 このパラメーターは、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>で定義されたイベントへのアクセスを提供するオブジェクト、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>インターフェイス。
+5. メソッドの実装では <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> 、 *projectservice*パラメーターのメンバーを使用して拡張機能の動作を定義します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> インターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> 。
 
 ## <a name="example"></a>例
- 次のコード例で定義されている SharePoint プロジェクト イベントのほとんどを処理する単純なプロジェクトの拡張機能を作成する方法を示します、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>インターフェイス。 SharePoint プロジェクトを作成するコードをテストするには、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]とし、その他のプロジェクトをソリューションに追加、プロジェクト プロパティの値を変更または削除またはプロジェクトを除外します。 メッセージを記述することで、拡張機能を通知するイベントの**出力**ウィンドウと**エラー一覧**ウィンドウ。
+ 次のコード例は、インターフェイスで定義されているほとんどの SharePoint プロジェクトイベントを処理する単純なプロジェクト拡張機能を作成する方法を示して <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> います。 コードをテストするには、で SharePoint プロジェクトを作成 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] し、ソリューションにプロジェクトを追加するか、プロジェクトプロパティの値を変更するか、プロジェクトを削除または除外します。 拡張機能は、[**出力**] ウィンドウと [**エラー一覧**] ウィンドウにメッセージを書き込むことによって、イベントを通知します。
 
   ```vb
     Imports Microsoft.VisualStudio.SharePoint
@@ -185,9 +184,9 @@ ms.locfileid: "62966875"
   }
   ```
 
-この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウと**エラー一覧**ウィンドウ。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
+この例では、SharePoint プロジェクトサービスを使用して、メッセージを [**出力**] ウィンドウと [**エラー一覧**] ウィンドウに書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
- 処理する方法を示す例について、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>イベントを参照してください[方法。ショートカット メニュー項目を SharePoint プロジェクトに追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)と[方法。SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)します。
+ イベントとイベントの処理方法を示す例につい <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> ては、「[方法: ショートカットメニュー項目を Sharepoint プロジェクトに追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)する」および「[方法: Sharepoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)する」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
@@ -196,11 +195,11 @@ ms.locfileid: "62966875"
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 拡張機能を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [、SharePoint 用の拡張機能の展開ツールの Visual Studio で](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+## <a name="deploy-the-extension"></a>拡張機能のデプロイ
+ 拡張機能を配置するには、 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリおよび拡張機能と共に配布するその他のファイル用の拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint プロジェクト システムを拡張します。](../sharepoint/extending-the-sharepoint-project-system.md)
-- [方法: SharePoint プロジェクトのショートカット メニュー項目を追加します。](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
-- [方法: SharePoint プロジェクトにプロパティを追加します。](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
-- [チュートリアル: SharePoint プロジェクト拡張機能を作成します。](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)
+- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
+- [方法: ショートカットメニュー項目を SharePoint プロジェクトに追加する](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+- [方法: SharePoint プロジェクトにプロパティを追加する](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [チュートリアル: SharePoint プロジェクト拡張機能の作成](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)

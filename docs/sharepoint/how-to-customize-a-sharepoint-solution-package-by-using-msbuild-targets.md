@@ -1,7 +1,7 @@
 ---
-title: MSBuild ターゲットを使用して SharePoint ソリューション パッケージをカスタマイズします。
+title: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,18 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401507"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016883"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>方法: MSBuild ターゲットを使用して SharePoint ソリューション パッケージをカスタマイズします。
-  MSBuild ターゲットを使用すると、コマンド プロンプトで、Visual Studio で SharePoint パッケージ ファイルを作成する方法をカスタマイズできます ( *.wsp*)。 たとえば、中間ディレクトリからパッケージ化と、列挙するファイルを指定する MSBuild 項目グループを変更する MSBuild プロパティをカスタマイズできます。
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>方法: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
+  MSBuild ターゲットをコマンドプロンプトで使用することにより、Visual Studio が SharePoint パッケージファイル (*.wsp*) を作成する方法をカスタマイズできます。 たとえば、MSBuild のプロパティをカスタマイズして、パッケージ化された中間ディレクトリと、列挙されたファイルを指定する MSBuild 項目グループを変更できます。
 
-## <a name="customize-and-run-msbuild-targets"></a>カスタマイズ、および MSBuild のターゲットの実行
- BeforeLayout および AfterLayout のターゲットをカスタマイズする場合は、追加、削除、またはパッケージがファイルの変更など、パッケージのレイアウトの前にタスクを実行できます。
+## <a name="customize-and-run-msbuild-targets"></a>MSBuild ターゲットのカスタマイズと実行
+ BeforeLayout および AfterLayout ターゲットをカスタマイズする場合は、パッケージレイアウトの前に、パッケージ化されるファイルの追加、削除、変更などのタスクを実行できます。
 
 #### <a name="to-customize-the-beforelayout-target"></a>BeforeLayout ターゲットをカスタマイズするには
 
@@ -37,15 +36,15 @@ ms.locfileid: "66401507"
    </Project>
    ```
 
-    この例では、このターゲットのパッケージ化する前にメッセージが表示されます。
+    この例では、このターゲットのパッケージ化の前にメッセージを表示します。
 
-2. ファイルに名前を**CustomLayout.SharePoint.targets**、SharePoint プロジェクトのフォルダーに保存します。
+2. ファイルに「 **Customlayout. sharepoint**」という名前を付け、sharepoint プロジェクトのフォルダーに保存します。
 
-3. プロジェクトを開きます、そのショートカット メニューを開きを選択し、**プロジェクトのアンロード**します。
+3. プロジェクトを開き、ショートカットメニューを開き、[**プロジェクトのアンロード**] を選択します。
 
-4. **ソリューション エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**編集**  *\<ProjectName > .vbproj*または**の編集** *\<ProjectName > .csproj*します。
+4. **ソリューションエクスプローラー**で、プロジェクトのショートカットメニューを開き、[ * \<ProjectName> .vbproj*の**編集**] または [ * \<ProjectName> .csproj*の**編集**] を選択します。
 
-5. 後に、`Import`プロジェクト ファイルの末尾付近の行に、次の行を追加します。
+5. `Import`プロジェクトファイルの末尾付近にある行の後に、次の行を追加します。
 
    ```xml
    <Import Project="CustomLayout.SharePoint.targets" />
@@ -53,17 +52,17 @@ ms.locfileid: "66401507"
 
 6. プロジェクト ファイルを保存して閉じます。
 
-7. **ソリューション エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**プロジェクトの再読み込み**します。
+7. **ソリューションエクスプローラー**で、プロジェクトのショートカットメニューを開き、[プロジェクトの**再読み込み**] をクリックします。
 
-   プロジェクトを発行するときに、パッケージ化を開始する前に、メッセージが出力に表示されます。
+   プロジェクトを発行すると、パッケージが開始される前に、メッセージが出力に表示されます。
 
 #### <a name="to-customize-the-afterlayout-target"></a>AfterLayout ターゲットをカスタマイズするには
 
-1. メニュー バーで、**ファイル** > **オープン** > **ファイル**します。
+1. メニューバーで、[**ファイル**] [ファイルを開く] の順に選択し  >  **Open**  >  **File**ます。
 
-2. **ファイルを開く**ダイアログ ボックスで、プロジェクト フォルダーに移動し、CustomLayout.target ファイルを選択および選択し、**オープン**ボタンをクリックします。
+2. [**ファイルを開く**] ダイアログボックスで、プロジェクトフォルダーに移動し、customlayout. target ファイルを選択して、[**開く**] をクリックします。
 
-3. 直前に、`</Project>`タグは、次のコードを追加します。
+3. タグの直前に `</Project>` 、次のコードを追加します。
 
    ```xml
    <Target Name="AfterLayout">
@@ -71,13 +70,13 @@ ms.locfileid: "66401507"
    </Target>
    ```
 
-    この例では、このターゲットがパッケージ化された後、メッセージが表示されます。
+    この例では、このターゲットがパッケージ化された後にメッセージを表示します。
 
-4. 保存して、ターゲット ファイルを閉じます。
+4. ターゲットファイルを保存して閉じます。
 
-5. Visual Studio を再起動して、プロジェクトを開きます。
+5. Visual Studio を再起動し、プロジェクトを開きます。
 
-   プロジェクトを発行するときに、パッケージの開始前に BeforeLayout メッセージが表示され、パッケージ化が完了したら、AfterLayout メッセージが表示されます。
+   プロジェクトを発行すると、パッケージの開始前に BeforeLayout メッセージが表示され、パッケージの終了後に AfterLayout メッセージが表示されます。
 
 ## <a name="see-also"></a>関連項目
-- [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

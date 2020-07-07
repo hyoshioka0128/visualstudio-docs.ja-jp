@@ -1,7 +1,7 @@
 ---
-title: MSBuild タスクを使用して SharePoint ソリューション パッケージを作成します。
+title: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成する
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,100 +12,99 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401496"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017009"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>方法: MSBuild タスクを使用した SharePoint ソリューション パッケージの作成します。
-  ビルド、クリーンアップ、および SharePoint のパッケージを検証することができます ( *.wsp*) MSBuild タスクのコマンドラインを使用して、開発用コンピューター。 ビルド コンピューターで Team Foundation Server を使用して、ビルド プロセスを自動化するのにこれらのコマンドを使用することもできます。
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成する
+  開発用コンピューターでコマンドライン MSBuild タスクを使用して、SharePoint パッケージ (*.wsp*) のビルド、クリーン、検証を行うことができます。 これらのコマンドを使用して、ビルドコンピューターで Team Foundation Server を使用してビルドプロセスを自動化することもできます。
 
-## <a name="build-a-sharepoint-package"></a>SharePoint パッケージを作成します。
+## <a name="build-a-sharepoint-package"></a>SharePoint パッケージの作成
 
-#### <a name="to-build-a-sharepoint-package"></a>SharePoint パッケージを作成するには
+#### <a name="to-build-a-sharepoint-package"></a>SharePoint パッケージをビルドするには
 
-1. Windows で**開始**] メニューの [選択**すべてのプログラム** > **アクセサリ** > **コマンド プロンプト**します。
+1. Windows の [**スタート**] メニューで、[**すべてのプログラム**] [  >  **アクセサリ**  >  **] [コマンドプロンプト**] の順に選択します。
 
-2. SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. プロジェクトのパッケージを作成するには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージを作成します。 *Projectfilename*をプロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:Package ProjectFileName
     ```
 
-     たとえば、ListDefinition1 と呼ばれる SharePoint プロジェクトをパッケージ化するには、次のコマンドのいずれかを実行できます。
+     たとえば、次のコマンドのいずれかを実行して、ListDefinition1 という名前の SharePoint プロジェクトをパッケージ化することができます。
 
     ```cmd
     msbuild /t:Package ListDefinition1.vbproj
     msbuild /t:Package ListDefinition1.csproj
     ```
 
-## <a name="clean-a-sharepoint-package"></a>SharePoint パッケージをクリーンアップします。
+## <a name="clean-a-sharepoint-package"></a>SharePoint パッケージのクリーンアップ
 
 #### <a name="to-clean-a-sharepoint-package"></a>SharePoint パッケージをクリーンアップするには
 
 1. コマンド プロンプト ウィンドウを開きます。
 
-2. SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. プロジェクトのパッケージをクリーンアップするには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージをクリーンアップします。 *Projectfilename*をプロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
     ```
 
-     たとえば、ListDefinition1 と呼ばれる SharePoint プロジェクトをクリーンアップするには、次のコマンドのいずれかを実行できます。
+     たとえば、次のコマンドのいずれかを実行して、ListDefinition1 という名前の SharePoint プロジェクトをクリーンアップすることができます。
 
     ```cmd
     msbuild /t:CleanPackage ListDefinition1.vbproj
     msbuild /t:CleanPackage ListDefinition1.csproj
     ```
 
-## <a name="validate-a-sharepoint-package"></a>SharePoint パッケージを検証します。
+## <a name="validate-a-sharepoint-package"></a>SharePoint パッケージの検証
 
 #### <a name="to-validate-a-sharepoint-package"></a>SharePoint パッケージを検証するには
 
 1. コマンド プロンプト ウィンドウを開きます。
 
-2. SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. プロジェクトのパッケージを検証するには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージを検証します。 *Projectfilename*をプロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
     ```
 
-     たとえば、ListDefinition1 と呼ばれる SharePoint プロジェクトを検証するには、次のコマンドのいずれかを実行できます。
+     たとえば、次のコマンドのいずれかを実行して、ListDefinition1 という名前の SharePoint プロジェクトを検証することができます。
 
     ```cmd
     msbuild /t:ValidatePackage ListDefinition1.vbproj
     msbuild /t:ValidatePackage ListDefinition1.csproj
     ```
 
-## <a name="set-properties-in-a-sharepoint-package"></a>SharePoint パッケージでプロパティを設定します。
+## <a name="set-properties-in-a-sharepoint-package"></a>SharePoint パッケージのプロパティの設定
 
-#### <a name="to-set-a-property-in-a-sharepoint-package"></a>SharePoint パッケージでプロパティを設定するには
+#### <a name="to-set-a-property-in-a-sharepoint-package"></a>SharePoint パッケージのプロパティを設定するには
 
 1. コマンド プロンプト ウィンドウを開きます。
 
-2. SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. プロジェクトのパッケージでプロパティを設定するには、次のコマンドを入力します。 置換*PropertyName*プロパティを設定するを使用します。
+3. 次のコマンドを入力して、プロジェクトのパッケージのプロパティを設定します。 *PropertyName*は、設定するプロパティで置き換えます。
 
     ```cmd
     msbuild /property:PropertyName=Value
     ```
 
-     たとえば、警告レベルを設定するには、次のコマンドを実行できます。
+     たとえば、次のコマンドを実行して警告レベルを設定できます。
 
     ```cmd
     msbuild /property:WarningLevel = 2
     ```
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint の機能を作成します。](../sharepoint/creating-sharepoint-features.md)
-- [方法: SharePoint フィーチャーをカスタマイズします。](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [方法: 項目を SharePoint の機能を追加および削除](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [SharePoint 機能の作成](../sharepoint/creating-sharepoint-features.md)
+- [方法: SharePoint 機能をカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-feature.md)
+- [方法: SharePoint 機能に項目を追加および削除する](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

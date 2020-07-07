@@ -1,7 +1,7 @@
 ---
-title: デプロイ、発行とリモートで SharePoint ソリューションのアップグレード
+title: SharePoint ソリューションをリモートで配置、パブリッシュ、& アップグレードする
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,67 +15,66 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401446"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016803"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>方法: 配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード
-  SharePoint ソリューションをローカル システムを展開だけでなくリモート サイトまたはローカルの SharePoint サイトに SharePoint のサンド ボックス ソリューションを発行できます。 リモートの公開プロセスのコピー、 *.wsp* SharePoint サーバーにファイルが、ソリューションをインストールして、ソリューションをアクティブ化することができます。 変更された後は、リモート SharePoint ソリューションのインストールをアップグレードすることもできます。
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>方法: リモートサーバー上で SharePoint ソリューションを配置、発行、およびアップグレードする
+  SharePoint ソリューションをローカルシステムに配置するだけでなく、リモートサイトまたはローカル SharePoint サイトに対して、サンドボックス化された SharePoint ソリューションを発行できます。 リモート発行プロセスでは、SharePoint サーバーに *.wsp*ファイルがコピーされ、ソリューションがインストールされて、ソリューションのアクティブ化が可能になります。 リモート SharePoint ソリューションを変更した後に、そのインストールをアップグレードすることもできます。
 
-## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>リモート SharePoint サーバーをセキュリティで保護された SharePoint ソリューションを発行するには
+## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>サンドボックス化される SharePoint ソリューションをリモート SharePoint サーバーに発行するには
 
-1. **ソリューション エクスプ ローラー**、発行、および選択する、セキュリティで保護された SharePoint プロジェクトのショートカット メニューを開き**発行**します。
+1. **ソリューションエクスプローラー**で、発行するサンドボックス化された SharePoint プロジェクトのショートカットメニューを開き、[**発行**] を選択します。
 
-2. **発行** ダイアログ ボックスで、選択、 **SharePoint サイトに発行**オプション ボタン、およびなど、オンライン発行サイトの URL を入力:`https://mytestsite.sharepoint.microsoftonline.com`します。
+2. [**発行**] ダイアログボックスで、[ **SharePoint サイトに発行する**] オプションを選択し、オンライン発行サイトの URL (など) を入力し `https://mytestsite.sharepoint.microsoftonline.com` ます。
 
-3. 選択、**発行した後、ブラウザーでソリューション ギャラリー ページを開く**のソリューションの一覧を表示するオプション ボタン、**ソリューション ギャラリー**発行後のページ。
+3. 発行後にソリューション**ギャラリー**ページにソリューションの一覧を表示するには、[**発行後にブラウザーでソリューションギャラリーを開く**] をクリックします。
 
-4. 選択、**発行**ボタンをクリックします。
+4. **[発行]** をクリックします。
 
-5. ユーザー認証が必要な場合、リモート サーバーにサインインします。
+5. ユーザー認証が必要な場合は、リモートサーバーにサインインします。
 
-     Visual Studio で発行の進行状況が表示されます。**出力**ウィンドウ。 プロセスが終了すると、ソリューション ( *.wsp*) ファイル、リモートの SharePoint サーバーにインストールされます。 ただし、その必要がありますもアクティブ化する前に、SharePoint で使用できます。
+     発行の進行状況が Visual Studio の**出力**ウィンドウに表示されます。 プロセスが終了すると、ソリューション (*.wsp*) ファイルがリモート SharePoint サーバーにインストールされます。 ただし、SharePoint で使用するには、アクティブにしておく必要があります。
 
-6. **ソリューション ギャラリー**ページで、SharePoint アプリケーションを選択し、リボンで、次のように選択します。、 **Activate**ボタンをクリックします。
+6. [**ソリューションギャラリー** ] ページで SharePoint アプリケーションを選択し、リボンの [**アクティブ化**] ボタンをクリックします。
 
-7. **ソリューションのアクティブ化** ダイアログ ボックスで、リボンで、選択、**アクティブ化**もう一度ボタンをクリックします。
+7. [**ソリューションのアクティブ化**] ダイアログボックスのリボンで、[**アクティブ化**] ボタンをもう一度クリックします。
 
-     **状態**列に、**ソリューション ギャラリー**ページは、アプリケーションがアクティブであることを示します。
+     **ソリューションギャラリー**ページの [**状態**] 列には、アプリケーションがアクティブであることが示されます。
 
-## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>リモート SharePoint サーバー上のセキュリティで保護された SharePoint ソリューションをアップグレードするには
- 次のプロセスを使用すると、アプリケーションに変更を行った後にアップグレードする場合、SharePoint のサンド ボックス ソリューションは、リモート サーバーで既にパブリッシュされて、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+## <a name="to-upgrade-a-sandboxed-sharepoint-solution-on-a-remote-sharepoint-server"></a>リモートの SharePoint サーバーで、サンドボックス化される SharePoint ソリューションをアップグレードするには
+ セキュリティで保護された SharePoint ソリューションがリモートサーバーで既にパブリッシュされている場合、次のプロセスを使用すると、でアプリケーションを変更した後で、そのソリューションをアップグレードでき [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
-1. SharePoint のパッケージの名前を変更[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 この場合に**ソリューション エクスプ ローラー**パッケージを開きます。 表示される、**パッケージ エクスプ ローラー**します。
+1. で SharePoint パッケージの名前を変更 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] します。 これを行うには、でパッケージを**ソリューションエクスプローラー**開きます。 **パッケージエクスプローラー**に表示されます。
 
-2. **パッケージ エクスプ ローラー**の**名前**ボックスに、パッケージ名を一意の名前に変更します。
+2. **パッケージエクスプローラー**の [**名前**] ボックスで、パッケージ名を一意の名前に変更します。
 
 3. プロジェクトを保存します。
 
-4. **ソリューション エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**発行**します。
+4. **ソリューションエクスプローラー**で、プロジェクトのショートカットメニューを開き、[**発行**] を選択します。
 
-5. **発行** ダイアログ ボックスで、選択、 **SharePoint サイトに発行**オプション ボタンと、ソリューションが保存されているリモート サーバーの URL が不足している場合は、入力します。
+5. [**発行**] ダイアログボックスで、[ **SharePoint サイトに発行する**] オプションボタンをクリックし、ソリューションが保存されているリモートサーバーの URL がない場合は、それを入力します。
 
-6. 選択、**発行した後、ブラウザーでソリューション ギャラリー ページを開く**のソリューションの一覧を表示するオプション ボタン、**ソリューション ギャラリー**発行後のページ。
+6. 発行後にソリューション**ギャラリー**ページにソリューションの一覧を表示するには、[**発行後にブラウザーでソリューションギャラリーを開く**] をクリックします。
 
-7. 選択、**発行**ボタンをクリックします。
+7. **[発行]** をクリックします。
 
-8. ユーザー認証が必要な場合、リモート サーバーにサインインします。
+8. ユーザー認証が必要な場合は、リモートサーバーにサインインします。
 
-     ログインして場合、リモート サーバーに最近、認証は必要ありません。
+     最近リモートサーバーにログインした場合、認証は必要ありません。
 
-     SharePoint サーバーで同じ名前を持つアプリケーションの古いバージョンがまだ存在する場合は、SharePoint サーバーに同じ名前のパッケージが既に存在するエラーが発生します。 パブリッシュする前に一意の名前に、パッケージの名前を変更する必要があります。
+     同じ名前を持つ古いバージョンのアプリケーションが SharePoint サーバーにまだ存在している場合は、同じ名前のパッケージが SharePoint サーバーに既に存在するというエラーが表示されます。 発行する前に、パッケージ名を一意の名前に変更する必要があります。
 
-9. SharePoint では、新しいアプリケーションを選択し、その後、リボンで、次のように選択します。、**アップグレード**ボタンをクリックします。
+9. SharePoint で新しいアプリケーションを選択し、リボンの [**アップグレード**] ボタンをクリックします。
 
-10. **ソリューションのアップグレード** ダイアログ ボックスで、リボンで、選択、**アップグレード**もう一度ボタンをクリックします。 **状態**列に、**ソリューション ギャラリー**ページは、アプリケーションがアクティブであるを示すようになりました。
+10. [**ソリューションのアップグレード**] ダイアログボックスのリボンで、[**アップグレード**] ボタンをもう一度クリックします。 **ソリューションギャラリー**ページの [**状態**] 列に、アプリケーションがアクティブであることが表示されます。
 
-     ソリューションの古いバージョンが非アクティブ化、ソリューションの新しいバージョンが以前のソリューションから保持されているデータをアップグレードし、SharePoint で新しいソリューションを有効にします。
+     以前のバージョンのソリューションは非アクティブ化されています。新しいバージョンのソリューションは、古いソリューションから保持されているデータでアップグレードされ、新しいソリューションは SharePoint でアクティブ化されます。
 
 ## <a name="see-also"></a>関連項目
-- [方法: 配置し、SharePoint ソリューションをローカル SharePoint サイトに発行します。](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
-- [SharePoint ソリューション パッケージを作成します。](../sharepoint/creating-sharepoint-solution-packages.md)
-- [方法: SharePoint ソリューション パッケージをカスタマイズします。](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [方法: 追加して、パッケージ デザイナーを使用して機能と、パッケージにアイテムを削除](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
+- [方法: SharePoint ソリューションをローカルの SharePoint サイトに配置および発行する](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
+- [SharePoint ソリューションパッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)
+- [方法: SharePoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+- [方法: パッケージデザイナーを使用してパッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
