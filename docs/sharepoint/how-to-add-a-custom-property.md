@@ -1,7 +1,7 @@
 ---
-title: '方法: カスタム プロパティの追加 |Microsoft Docs'
+title: '方法: カスタムプロパティを追加する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
@@ -17,34 +17,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556851"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017075"
 ---
-# <a name="how-to-add-a-custom-property"></a>方法: カスタム プロパティを追加します。
-  使用してモデルにカスタム プロパティを追加することができます、**プロパティ エディター**します。 接続文字列などの情報と実行時にその他のデータを取得するコードでこれらのプロパティにアクセスすることができます。
+# <a name="how-to-add-a-custom-property"></a>方法: カスタムプロパティを追加する
+  **プロパティエディター**を使用して、モデルにカスタムプロパティを追加できます。 コードでこれらのプロパティにアクセスして、実行時に接続文字列やその他のデータなどの情報を取得できます。
 
-### <a name="to-add-a-custom-property"></a>カスタム プロパティを追加するには
+### <a name="to-add-a-custom-property"></a>カスタムプロパティを追加するには
 
-1. **BDC エクスプ ローラー**、カスタム プロパティを適用するモデル要素を表すノードを選択します。
+1. **BDC エクスプローラー**で、カスタムプロパティを適用するモデル要素を表すノードを選択します。
 
-2. メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
+2. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
 
-3. **プロパティ**ウィンドウで、選択、**カスタム プロパティ**プロパティ、省略記号ボタンをクリックして (![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP します。NET モバイル デザイナー楕円"))。
+3. [**プロパティ**] ウィンドウで、[**カスタムプロパティ**] プロパティを選択し、省略記号ボタン (![ASP.NET Mobile Designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
 
-     **プロパティ エディター**  ダイアログ ボックスが表示されます。
+     [**プロパティエディター** ] ダイアログボックスが表示されます。
 
-4. テキスト ボックスに、**名前**列、プロパティの名前を指定します。
+4. [**名前**] 列のテキストボックスで、プロパティの名前を指定します。
 
-5. **型**フィールド、カスタム プロパティの適切なデータ型を選択します。
+5. カスタムプロパティの**type**フィールドで、適切なデータ型を選択します。
 
-6. **値**、カスタム プロパティのフィールドの値を指定し、、 **OK**ボタン。
+6. カスタムプロパティの [**値**] フィールドに値を指定し、[ **OK** ] をクリックします。
 
 ## <a name="see-also"></a>関連項目
-- [ビジネス データ接続モデルを設計します。](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [ビジネス データ接続モデルを設計します。](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [ビジネス データ接続モデルを作成します。](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [SharePoint ビジネス データを統合します。](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)

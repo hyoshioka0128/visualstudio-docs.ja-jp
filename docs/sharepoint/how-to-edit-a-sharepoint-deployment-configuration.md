@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint の配置構成の編集 |Microsoft Docs'
+title: '方法: SharePoint の配置構成を編集する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
@@ -14,42 +14,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444706"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016778"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>方法: SharePoint の配置構成を編集します。
-  配置構成を作成または既存の展開構成を変更できます。 たとえば、1 つの手順を実行したり、展開プロセスの手順の順序を変更します。 作成または組み込みおよびプログラムで追加の構成を変更できないために、展開の構成を変更することがあります。
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>方法: SharePoint の配置構成を編集する
+  展開構成を作成するか、既存の展開構成を変更することができます。 たとえば、1つの手順を実行したり、配置プロセスのステップの順序を変更したりできます。 組み込みの構成およびプログラムによって追加された構成は変更できないため、配置構成を作成または変更することができます。
 
-## <a name="create-a-sharepoint-deployment-configuration"></a>SharePoint の配置構成を作成します。
+## <a name="create-a-sharepoint-deployment-configuration"></a>SharePoint 配置構成を作成する
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint の配置構成を作成するには
 
-1. **ソリューション エクスプ ローラー**を SharePoint プロジェクトを選択し、メニュー バーで、次のように選択します。**プロジェクト**、 _ProjectName_**プロパティ**します。
+1. **ソリューションエクスプローラー**で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**]、[ProjectName の_ProjectName_**プロパティ**] の順に選択します。
 
-2. **SharePoint**  タブで、選択、**新規**ボタンをクリックします。
+2. [ **SharePoint** ] タブで、[**新規作成**] をクリックします。
 
-     **新しい配置構成の追加** ダイアログ ボックスが表示されます。
+     [**新しい展開構成の追加**] ダイアログボックスが表示されます。
 
-3. **名前**テキスト ボックスに、展開の構成の名前を入力します。
+3. [**名前**] テキストボックスに、展開構成の名前を入力します。
 
-4. **使用可能な展開手順**ウィンドウで、展開の構成に追加するには、選択する手順を選択、(**>**) ボタンをクリックし、選択し、 **[ok]** ボタンをクリックします。
+4. [**利用可能な展開手順**] ウィンドウで、展開構成に追加する手順を選択し、() ボタンを選択して、[ **>** **OK** ] をクリックします。
 
     > [!NOTE]
-    > 配置前コマンドまたは配置後コマンドを構成した場合、次の手順は、カスタマイズされた展開構成に追加する場合にのみを実行します。
+    > 配置前コマンドまたは配置後コマンドを構成した場合、これらの手順は、カスタマイズされた展開構成に追加した場合にのみ実行されます。
 
-## <a name="change-the-active-deployment-configuration"></a>アクティブな配置構成を変更します。
+## <a name="change-the-active-deployment-configuration"></a>アクティブな配置構成の変更
 
 #### <a name="to-change-the-active-deployment-configuration"></a>アクティブな配置構成を変更するには
 
-1. **ソリューション エクスプ ローラー**を SharePoint プロジェクトを選択し、メニュー バーで、次のように選択します**プロジェクト** > **\<*ProjectName*。> プロパティ**します。
+1. **ソリューションエクスプローラー**で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**の  >  ** \<*ProjectName*> プロパティ**] を選択します。
 
-2. 選択、 **SharePoint**タブ。
+2. [ **SharePoint** ] タブを選択します。
 
-3. **アクティブな配置構成**リスト ボックスで、使用する配置構成の名前を選択します。
+3. [**アクティブな展開構成**] ボックスの一覧で、使用する展開構成の名前を選択します。
 
 ## <a name="see-also"></a>関連項目
-- [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

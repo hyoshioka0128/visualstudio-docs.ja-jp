@@ -1,7 +1,7 @@
 ---
 title: 'チュートリアル: 基本的なサイト定義プロジェクトの作成 |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,86 +13,85 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009412"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016765"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>チュートリアル: 基本的なサイト定義プロジェクトを作成します。
-  このチュートリアルでは、一部のコントロールに視覚的 Web パーツを含む基本的なサイト定義を作成する方法を示します。 わかりやすくする、作成した視覚的 Web パーツにはいくつかのコントロールがあります。 ただし、多くの機能を含むより高度な SharePoint サイト定義を作成できます。
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>チュートリアル: 基本的なサイト定義プロジェクトの作成
+  このチュートリアルでは、いくつかのコントロールを含む視覚的 Web パーツを含む基本的なサイト定義を作成する方法について説明します。 わかりやすくするために、作成する視覚的 Web パーツにはいくつかのコントロールしかありません。 ただし、より高度な SharePoint サイト定義を作成して、より多くの機能を含めることができます。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- 使用してサイト定義を作成する、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]プロジェクト テンプレート。
+- プロジェクトテンプレートを使用してサイト定義を作成する [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- SharePoint のサイト定義を使用して SharePoint サイトを作成します。
+- Sharepoint でサイト定義を使用して SharePoint サイトを作成する。
 
-- ソリューションに視覚的 Web パーツを追加します。
+- ビジュアル Web パーツをソリューションに追加します。
 
-- 新しいビジュアル Web パーツを追加して、サイトの default.aspx ページをカスタマイズします。
+- 新しいビジュアル Web パーツを追加して、サイトの default.aspx ページをカスタマイズする。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
-- サポート対象エディションの Microsoft Windows および SharePoint。 詳細については、SharePoint ソリューションを開発するための要件を参照してください。
+- サポート対象エディションの Microsoft Windows および SharePoint。 詳細については、「SharePoint ソリューションを開発するための要件」を参照してください。
 
-- Visual Studio
+- 見ることができます。
 
-## <a name="create-a-site-definition-solution"></a>サイト定義ソリューションを作成します。
- まずでサイト定義プロジェクト作成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]です。
+## <a name="create-a-site-definition-solution"></a>サイト定義ソリューションを作成する
+ まず、でサイト定義プロジェクトを作成し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
 #### <a name="to-create-a-site-definition-project"></a>サイト定義プロジェクトを作成するには
 
-1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 お使いの IDE が Visual Basic 開発設定を使用して、メニュー バーに設定されている場合は、選択**ファイル** > **新しいプロジェクト**します。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、メニューバーで [**ファイル**] [新規作成] [プロジェクト] の順に選択し  >  **New Project**ます。
 
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-2. 展開、 **Visual c#** ノードまたは**Visual Basic**ノード、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+2. [ **Visual C#** ] ノードまたは **[Visual Basic** ] ノードを展開し、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
-3. **テンプレート**一覧で、選択、 **SharePoint 2010 プロジェクト**テンプレート。
+3. [**テンプレート**] ボックスの一覧で、[ **SharePoint 2010] プロジェクト**テンプレートを選択します。
 
-4. **名前**ボックスに、入力**TestSiteDef**、選択し、 **OK**ボタン。
+4. [**名前**] ボックスに「 **testsitedef**」と入力し、[ **OK** ] をクリックします。
 
-    **SharePoint カスタマイズ ウィザード**が表示されます。
+    **SharePoint カスタマイズウィザード**が表示されます。
 
-5. **デバッグのサイトとセキュリティのレベルを指定**ページで、サイト定義をデバッグする SharePoint サイトの URL を入力するか、既定の場所を使用して (http://<em>システム名</em>/)。
+5. [**デバッグのサイトとセキュリティレベルの指定**] ページで、サイト定義をデバッグする SharePoint サイトの URL を入力するか、既定の場所 (Http://<em>システム名</em>/) を使用します。
 
-6. **この SharePoint ソリューションの信頼レベルとは何ですか?** セクションで、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
+6. [**この SharePoint ソリューションの信頼レベル**を指定してください] セクションで、[**ファームソリューションとして配置**する] オプションボタンを選択します。
 
-    すべてのサイト定義プロジェクトはファーム ソリューションとして配置する必要があります。 サンド ボックス ソリューションとファーム ソリューションの詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
+    すべてのサイト定義プロジェクトは、ファームソリューションとして配置する必要があります。 サンドボックスソリューションとファームソリューションの詳細については、「[サンドボックスソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)」を参照してください。
 
-7. 選択、**完了**ボタンをクリックします。
+7. **[完了]** をクリックします。
 
-    プロジェクトが表示されます**ソリューション エクスプ ローラー**します。
+    プロジェクトが**ソリューションエクスプローラー**に表示されます。
 
-8. **ソリューション エクスプ ローラー**をプロジェクト ノードを選択し、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
+8. **ソリューションエクスプローラー**で、プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-9. いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+9. [ **Visual C#** ] または [ **Visual Basic**で、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
-10. **テンプレート**ウィンドウで、選択、**サイト定義**のままに、テンプレート、**名前**として**SiteDefinition1**、を選択し**追加**ボタンをクリックします。
+10. [**テンプレート**] ペインで、[**サイト定義**] テンプレートを選択し、**名前**は**SiteDefinition1**のままにして、[**追加**] ボタンを選択します。
 
-## <a name="create-a-visual-web-part"></a>視覚的 web パーツを作成します。
- 次に、サイト定義のメイン ページに表示する視覚的 Web パーツを作成します。
+## <a name="create-a-visual-web-part"></a>視覚的 web パーツを作成する
+ 次に、サイト定義のメインページに表示する視覚的 Web パーツを作成します。
 
 #### <a name="to-create-a-visual-web-part"></a>視覚的 web パーツを作成するには
 
-1. **ソリューション エクスプ ローラー**、選択、 **すべてのファイル**ボタンをクリックします。
+1. **ソリューションエクスプローラー**で、[**すべてのファイルを表示**] ボタンをクリックします。
 
-2. 選択、 **SiteDefinition1**プロジェクト ノード、およびその後、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
+2. **SiteDefinition1**プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
-3. 展開、 **Visual c#** ノードまたは**Visual Basic**ノード、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+3. [ **Visual C#** ] ノードまたは **[Visual Basic** ] ノードを展開し、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
-4. テンプレートの一覧で選択、**視覚的 Web パーツ**テンプレート、既定の名前を VisualWebPart1 をクリックしてください、**追加**ボタンをクリックします。
+4. テンプレートの一覧で [ **Visual Web パーツ**] テンプレートを選択し、既定の名前 VisualWebPart1 をそのままにして、[**追加**] ボタンを選択します。
 
-     *VisualWebPart1.ascx*ファイルが開きます。
+     *VisualWebPart1*ファイルが開きます。
 
-5. 下部にある*VisualWebPart1.ascx*、3 つのコントロールをフォームに追加するのには、次のマークアップを追加します。 テキスト ボックス、ボタン、およびラベル。
+5. *VisualWebPart1*の下部で、次のマークアップを追加して、テキストボックス、ボタン、およびラベルの3つのコントロールをフォームに追加します。
 
     ```aspx-csharp
     <table>
@@ -110,27 +109,27 @@ ms.locfileid: "63009412"
     </table>
     ```
 
-6. *VisualWebPart1.ascx*、オープン、 *VisualWebPart1.ascx.cs*ファイル (の[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) または*VisualWebPart1.ascx.vb* (の[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])、しを追加次のコードでは:
+6. *VisualWebPart1*の下で、 *VisualWebPart1.ascx.cs*ファイル (の場合) [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] または*VisualWebPart1* (の場合) を開き、 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 次のコードを追加します。
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
 
-     このコードは、web パーツのボタン クリックの機能を追加します。
+     このコードは、web パーツのボタンクリック用の機能を追加します。
 
-## <a name="add-the-visual-web-part-to-the-default-aspx-page"></a>既定の ASPX ページを視覚的 web パーツを追加します。
- 次に、サイト定義の既定の ASPX ページを視覚的 Web パーツを追加します。
+## <a name="add-the-visual-web-part-to-the-default-aspx-page"></a>既定の ASPX ページに視覚的 web パーツを追加する
+ 次に、視覚的 Web パーツをサイト定義の既定の ASPX ページに追加します。
 
-#### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>既定の ASPX ページを視覚的 web パーツを追加するには
+#### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>既定の ASPX ページに視覚的 web パーツを追加するには
 
-1. Default.aspx ページを開き、下にある次の行を追加、`WebPartPages`タグ。
+1. Default.aspx ページを開き、タグの下に次の行を追加し `WebPartPages` ます。
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
     ```
 
-     この行では、Web パーツでそのコード名 MyWebPartControls を関連付けます。 *Namespace*パラメーターで使用される名前空間に一致、 *VisualWebPart1.ascx*コード ファイル。
+     この行によって、MyWebPartControls という名前が Web パーツとそのコードに関連付けられます。 *Namespace*パラメーターは、 *VisualWebPart1*コードファイルで使用されている名前空間と一致します。
 
-2. 後に、`</asp:Content>`要素全体を置き換える`ContentPlaceHolderId="PlaceHolderMain"`セクションとその内容を次のコード。
+2. 要素の後 `</asp:Content>` に、セクション全体 `ContentPlaceHolderId="PlaceHolderMain"` とその内容を次のコードに置き換えます。
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -138,49 +137,49 @@ ms.locfileid: "63009412"
     </asp:Content>
     ```
 
-     このコードでは、先ほど作成した視覚的 Web パーツへの参照を作成します。
+     このコードは、前に作成したビジュアル Web パーツへの参照を作成します。
 
-3. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SiteDefinition1**ノードを選び、**スタートアップ アイテムとして設定**します。
+3. **ソリューションエクスプローラー**で、[ **SiteDefinition1** ] ノードのショートカットメニューを開き、[**スタートアップ項目に設定**] をクリックします。
 
-## <a name="deploy-and-run-the-site-definition-solution"></a>展開してサイト定義ソリューションの実行
- 次に、プロジェクト、SharePoint をデプロイして、プロジェクトを実行します。
+## <a name="deploy-and-run-the-site-definition-solution"></a>サイト定義ソリューションを展開して実行する
+ 次に、プロジェクトを SharePoint に配置してから、プロジェクトを実行します。
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>サイト定義を配置して実行するには
 
-- メニュー バーで、**ビルド** > **デプロイ TestSiteDef**します。
+- メニューバーで、[ **Build**  >  **Deploy testsitedef**] を選択します。
 
 - **F5** キーを押します。
 
-     Visual Studio では、コードをコンパイル、その機能を追加します。 SharePoint ソリューション (WSP) ファイルでは、すべてのファイルにパッケージ化、WSP ファイルを SharePoint サーバーにデプロイします。 SharePoint では、し、ファイルをインストールし、機能をアクティブにします。
+     Visual Studio は、コードをコンパイルし、その機能を追加し、すべてのファイルを SharePoint ソリューション (WSP) ファイルにパッケージ化して、WSP ファイルを SharePoint サーバーに配置します。 その後、SharePoint によってファイルがインストールされ、機能がアクティブ化されます。
 
-## <a name="create-a-site-based-on-the-site-definition"></a>サイト定義に基づいてサイトを作成します。
- 次に、新しいサイト定義を使用して、サイトを作成します。
+## <a name="create-a-site-based-on-the-site-definition"></a>サイト定義に基づいてサイトを作成する
+ 次に、新しいサイト定義を使用してサイトを作成します。
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>サイト定義を使用してサイトを作成するには
 
-1. SharePoint サイトでは、新しい SharePoint サイトのページが表示されます。
+1. SharePoint サイトで、[新しい SharePoint サイト] ページが表示されます。
 
-2. **タイトルと説明**セクションに、入力**新しい マイサイト**タイトルと、サイトの説明。
+2. [**タイトルと説明**] セクションで、タイトルとサイトの説明に**新しいサイト**を入力します。
 
-3. **Web サイトのアドレス**セクションに、入力**mynewsite**で、 **URL 名**ボックス。
+3. [ **Web サイトのアドレス**] セクションで、[ **URL 名**] ボックスに「 **mynewsite** 」と入力します。
 
-4. **テンプレート**セクションで、選択、 **SharePoint のカスタマイズ**タブ。
+4. [**テンプレート**] セクションで、[ **SharePoint のカスタマイズ**] タブを選択します。
 
-5. **テンプレートを選択して**一覧で、選択**SiteDefinition1**します。
+5. **[テンプレートの選択**] の一覧で [ **SiteDefinition1**] を選択します。
 
-6. その既定値では、その他の設定のままにして、**作成**ボタンをクリックします。
+6. その他の設定は既定値のままにして、[**作成**] ボタンをクリックします。
 
      新しいサイトが表示されます。
 
-## <a name="test-the-new-site"></a>新しいサイトをテストします。
- 次に、正常に動作するかどうかを確認する新しいサイトをテストします。
+## <a name="test-the-new-site"></a>新しいサイトをテストする
+ 次に、新しいサイトをテストして、正常に動作するかどうかを確認します。
 
 #### <a name="to-test-the-new-site"></a>新しいサイトをテストするには
 
-- 既定の ASPX ページで、テキストを入力し、、**ラベル テキストの変更**テキスト ボックスの横にあるボタンをクリックします。
+- 既定の ASPX ページで、テキストを入力し、テキストボックスの横にある [**ラベルテキストの変更**] ボタンをクリックします。
 
-     ボタンの右側にあるラベルのテキストが表示されます。
+     テキストは、ボタンの右側のラベルに表示されます。
 
 ## <a name="see-also"></a>関連項目
-- [方法: イベント レシーバーを作成します。](../sharepoint/how-to-create-an-event-receiver.md)
+- [方法: イベントレシーバーを作成する](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

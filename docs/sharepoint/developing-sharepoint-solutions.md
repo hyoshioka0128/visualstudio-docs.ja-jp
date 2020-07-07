@@ -1,7 +1,7 @@
 ---
 title: SharePoint ソリューションの開発 |Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -15,12 +15,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7670f05fbeced78a0c77a8ffc053cf6b607708f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
-ms.translationtype: MT
+ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586898"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016788"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint ソリューションの開発
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトおよびサイト要素を作成するための SharePoint プロジェクトの種類のテンプレートがいくつか用意されています。 使用可能なプロジェクトの種類の一覧については、「 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。 次に、SharePoint プロジェクトの要素およびプロパティについて説明します。
@@ -36,7 +35,7 @@ ms.locfileid: "82586898"
  すべての SharePoint プロジェクトに、名前変更、削除、切り取り、コピー、プロジェクトからのドラッグなどの操作ができないノードが 2 つ含まれています。 これらのノードを次に示します。
 
 - 特徴
-- Package
+- パッケージ
 
   プロジェクトにフィーチャーまたはパッケージが定義されているかどうかに関係なく、この 2 つのノードはすべての SharePoint プロジェクトに必ず表示されます。
 
@@ -59,7 +58,7 @@ ms.locfileid: "82586898"
 
  **ソリューション エクスプローラー**で SharePoint プロジェクト ノード、プロジェクト項目ノード、またはプロジェクト項目ファイル ノードを選択すると、次のプロパティが [プロパティ] ウィンドウまたは [プロパティ] ページに表示されます。
 
-### <a name="project-properties"></a>プロジェクトのプロパティ
+### <a name="project-properties"></a>プロジェクト プロパティ
 
 |プロパティ名|説明|
 |-------------------|-----------------|
@@ -99,15 +98,15 @@ ms.locfileid: "82586898"
 |カスタム ツール|デザイン時にファイルを変換し、変換の結果を別のファイルに出力するツールが存在する場合に、そのツールの名前を指定します。 たとえば、データセット (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) ファイルでは既定のカスタム ツールを使用できます。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
 |カスタム ツールの名前空間|カスタム ツールの出力がコピーされる名前空間です。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
 |デプロイの場所|SharePoint サーバー上のファイルの完全修飾パス。 このパスは、[配置ルート] プロパティと [配置パス] プロパティで構成されます。|
-|配置パス|SharePoint サーバーファイル上のファイルの相対パス (Workflow1.xaml\\など)。 ファイルの完全修飾パスは、 *Deployment Path* 値の末尾に *Deployment Root* 値を連結することによって作成されます。<br /><br /> [*展開の種類*] プロパティで*rootfile*の値を選択すると、*展開ルート*プロパティが\\sharepointroot>に\<変更され、その\<結果、sharepointroot> \\\workflow1 の完全修飾パスになります。 詳細については、「 [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)」を参照してください。|
-|Deployment Root|文字列。 ファイルの配置先となる SharePoint Server 上のルート フォルダーです たとえば、 \<sharepointroot> \ template\ Features\\\<FeatureName>\\です。<br /><br /> *Deployment Root* プロパティの値は、 *Deployment Type* の設定に依存します。|
-|デプロイの種類|ファイルの配置の種類です。 *Deployment Root* 値に依存します。 次の値のいずれかです。<br /><br /> Nodeployment: * \<値>*<br /><br /> Elementmanifest: * \<sharepointroot> \\\\<templateFeatureName>*\\<br /><br /> Elementfile: * \<sharepointroot> \\\\<templateFeatureName>\\*<br /><br /> TemplateFile: * \<sharepointroot> \ Template\\*<br /><br /> Rootfile: * \<sharepointroot>\\*<br /><br /> Globalresource: * \<sharepointroot> \ リソース\\*<br /><br /> Classresource: * \<ClassResourcePath>\\*<br /><br /> 詳細については、「<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>」を参照してください。|
+|配置パス|SharePoint サーバーファイル上のファイルの相対パス (Workflow1.xaml など) \\ 。 ファイルの完全修飾パスは、 *Deployment Path* 値の末尾に *Deployment Root* 値を連結することによって作成されます。<br /><br /> [*展開の種類*] プロパティで*rootfile*の値を選択すると、*展開ルート*プロパティがに変更され \<SharePointRoot> \\ ます。その結果、完全修飾パスは \<SharePointRoot> \ workflow1 に \\ なります。 詳細については、「 [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)」を参照してください。|
+|Deployment Root|文字列 をオンにします。 ファイルの配置先となる SharePoint Server 上のルート フォルダーです たとえば、「 \<SharePointRoot> \ Template\ Features」のように \\ \<FeatureName> \\ します。<br /><br /> *Deployment Root* プロパティの値は、 *Deployment Type* の設定に依存します。|
+|デプロイの種類|ファイルの配置の種類です。 *Deployment Root* 値に依存します。 次の値のいずれかです。<br /><br /> NoDeployment*\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \ テンプレート \ 機能 \\ \<FeatureName> *\\<br /><br /> ElementFile: * \<SharePointRoot> \ テンプレート \ 機能 \\ \<FeatureName> \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \ テンプレート \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \ リソース \\ *<br /><br /> ClassResource*\<ClassResourcePath>\\*<br /><br /> 詳細については、「<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>」を参照してください。|
 |ファイル名|項目ファイルの名前またはフォルダーの名前です。|
 |完全なパス|項目ファイルの場所です。 システム テーブルは読み取り専用です。|
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|Title|[説明]|
 |-----------|-----------------|
 |[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で使用できる SharePoint プロジェクトおよびプロジェクト項目テンプレートについて説明します。|
 |[方法: SharePoint プロジェクトに項目を追加する](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|新規または既存の項目を [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクトに追加する方法を説明します。|

@@ -1,7 +1,7 @@
 ---
-title: '方法: SharePoint プロジェクト項目の種類の定義 |Microsoft Docs'
+title: '方法: SharePoint プロジェクト項目の種類を定義する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,15 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814045"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016858"
 ---
-# <a name="how-to-define-a-sharepoint-project-item-type"></a>方法: SharePoint プロジェクト項目の種類を定義します。
-  カスタム SharePoint プロジェクト項目を作成する場合は、プロジェクト項目の種類を定義します。 詳細については、次を参照してください。[カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)します。
+# <a name="how-to-define-a-sharepoint-project-item-type"></a>方法: SharePoint プロジェクト項目の種類を定義する
+  カスタム SharePoint プロジェクト項目を作成する場合は、プロジェクト項目の種類を定義します。 詳細については、「[カスタム SharePoint プロジェクト項目の種類の定義](../sharepoint/defining-custom-sharepoint-project-item-types.md)」を参照してください。
 
 ### <a name="to-define-a-project-item-type"></a>プロジェクト項目の種類を定義するには
 
@@ -36,23 +35,23 @@ ms.locfileid: "62814045"
 
 3. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> インターフェイスを実装するクラスを作成します。
 
-4. クラスには、次の属性を追加します。
+4. クラスに次の属性を追加します。
 
-    - <xref:System.ComponentModel.Composition.ExportAttribute>。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>属性コンス トラクターの型。
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. この属性を使用すると、Visual Studio で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 プロジェクト項目の型定義では、この属性は、新しいプロジェクト項目の文字列識別子を指定します。 形式を使用することをお勧めします*会社名*。 *。機能名*すべてのプロジェクト項目の一意の名前であるかどうかを確認します。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. プロジェクト項目の種類の定義で、この属性は新しいプロジェクト項目の文字列識別子を指定します。 *会社名*の形式を使用することをお勧めします。すべてのプロジェクトアイテムの名前が一意になるようにするための*機能名*。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>。 この属性では、このプロジェクト項目に対して表示するアイコンを指定する**ソリューション エクスプ ローラー**します。 この属性は省略可能です。適用されませんが、クラス、Visual Studio には、プロジェクト項目の既定のアイコンが表示されます。 この属性を設定する場合は、アイコンまたはビットマップがアセンブリに埋め込むの完全修飾名を渡します。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. この属性は、**ソリューションエクスプローラー**でこのプロジェクト項目に対して表示するアイコンを指定します。 この属性は省略可能です。クラスに適用しない場合、Visual Studio ではプロジェクト項目の既定のアイコンが表示されます。 この属性を設定する場合は、アセンブリに埋め込まれているアイコンまたはビットマップの完全修飾名を渡します。
 
-5. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>メソッドのメンバーを使用して、 *projectItemTypeDefinition*プロジェクト項目の種類の動作を定義するパラメーター。 このパラメーターは、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>で定義されたイベントへのアクセスを提供するオブジェクト、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents>インターフェイス。 プロジェクト項目の種類の特定のインスタンスにアクセスするには、処理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>ようなイベント<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>と<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>します。
+5. メソッドの実装では、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> *projectItemTypeDefinition*パラメーターのメンバーを使用して、プロジェクト項目の種類の動作を定義します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> インターフェイスおよびインターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> 。 プロジェクト項目の種類の特定のインスタンスにアクセスするには、やなどのイベントを処理し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> ます。
 
 ## <a name="example"></a>例
- 次のコード例では、単純なプロジェクト項目の種類を定義する方法を示します。 このプロジェクト項目の種類へのメッセージを書き込みます、**出力**ウィンドウと**エラー一覧**ウィンドウ ユーザーがこの種類のプロジェクト項目をプロジェクトに追加します。
+ 単純なプロジェクト項目の種類を定義する方法を次のコード例に示します。 このプロジェクト項目の種類は、ユーザーがこの種類のプロジェクト項目をプロジェクトに追加したときに、メッセージを [**出力**] ウィンドウと [**エラー一覧**] ウィンドウに書き込みます。
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemtype.vb#2)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#2](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemtype.cs#2)]
 
- この例では、SharePoint プロジェクト サービスを使用して、メッセージを書き込む、**出力**ウィンドウと**エラー一覧**ウィンドウ。 詳細については、次を参照してください。 [SharePoint プロジェクト サービスを使用して、](../sharepoint/using-the-sharepoint-project-service.md)します。
+ この例では、SharePoint プロジェクトサービスを使用して、メッセージを [**出力**] ウィンドウと [**エラー一覧**] ウィンドウに書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。
@@ -61,15 +60,15 @@ ms.locfileid: "62814045"
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-project-item"></a>プロジェクト項目を配置します。
- 他の開発者が自分のプロジェクト項目を有効にするには、プロジェクト テンプレートまたはプロジェクト項目テンプレートを作成します。 詳細については、次を参照してください。[項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)します。
+## <a name="deploy-the-project-item"></a>プロジェクト項目を配置する
+ 他の開発者がプロジェクト項目を使用できるようにするには、プロジェクトテンプレートまたはプロジェクト項目テンプレートを作成します。 詳細については、「 [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)」を参照してください。
 
- プロジェクト項目を展開するには、作成、[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]拡張機能 (VSIX) に、アセンブリ、テンプレート、およびその他のファイル プロジェクト項目に配布するパッケージ化します。 詳細については、次を参照してください。 [、SharePoint 用の拡張機能の展開ツールの Visual Studio で](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+ プロジェクト項目を配置するには、 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリ、テンプレート、およびプロジェクト項目と共に配布するその他のファイルの拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [カスタム SharePoint プロジェクト項目の種類を定義します。](../sharepoint/defining-custom-sharepoint-project-item-types.md)
-- [項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成します。](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [チュートリアル: 項目テンプレート、第 1 部でのカスタム動作プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
-- [チュートリアル: プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
-- [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加します。](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-- [方法: カスタム SharePoint プロジェクト項目の種類のショートカット メニュー項目を追加します。](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
+- [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+- [チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
+- [方法: プロパティをカスタム SharePoint プロジェクト項目の種類に追加する](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+- [方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)

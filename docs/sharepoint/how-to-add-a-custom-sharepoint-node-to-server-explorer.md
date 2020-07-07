@@ -1,7 +1,7 @@
 ---
-title: '方法: サーバー エクスプ ローラーにカスタム SharePoint ノードの追加 |Microsoft Docs'
+title: '方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する |Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556690"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86017053"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>方法: サーバー エクスプ ローラーにカスタム SharePoint ノードを追加します。
-  カスタム ノードを追加することができます、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 表示されていないその他の SharePoint コンポーネントを表示する場合に便利ですが**サーバー エクスプ ローラー**既定。 詳細については、次を参照してください。[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)します。
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する
+  カスタムノードは、**サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下に追加できます。 これは、既定では**サーバーエクスプローラー**に表示されない追加の SharePoint コンポーネントを表示する場合に便利です。 詳細については、[サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
 
- カスタム ノードを追加するには、まず新しいノードを定義するクラスを作成します。 次の既存のノードの子として、ノードを追加する拡張機能を作成します。
+ カスタムノードを追加するには、まず、新しいノードを定義するクラスを作成します。 次に、既存のノードの子としてノードを追加する拡張機能を作成します。
 
 ### <a name="to-define-the-new-node"></a>新しいノードを定義するには
 
@@ -33,7 +32,7 @@ ms.locfileid: "62556690"
 
     - Microsoft.VisualStudio.SharePoint
 
-    - Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+    - VisualStudio (拡張子が付いています)
 
     - System.ComponentModel.Composition
 
@@ -41,50 +40,50 @@ ms.locfileid: "62556690"
 
 3. <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> インターフェイスを実装するクラスを作成します。
 
-4. クラスには、次の属性を追加します。
+4. クラスに次の属性を追加します。
 
-    - <xref:System.ComponentModel.Composition.ExportAttribute>。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>属性コンス トラクターの型。
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. この属性を使用すると、Visual Studio で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>。 ノードの定義では、この属性は、新しいノードの文字列識別子を指定します。 形式を使用することをお勧めします*会社名*。 *。ノード名*のすべてのノードの一意の識別子であるかどうかを確認します。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. ノード定義では、この属性は新しいノードの文字列識別子を指定します。 *会社名*の形式を使用することをお勧めします。*ノード名*を使用して、すべてのノードが一意の識別子を持つようにします。
 
-5. 実装で、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A>メソッドのメンバーを使用して、 *typeDefinition*パラメーターを新しいノードの動作を構成します。 このパラメーターは、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>で定義されたイベントへのアクセスを提供するオブジェクト、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents>インターフェイス。
+5. メソッドの実装では <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> 、 *typedefinition*パラメーターのメンバーを使用して、新しいノードの動作を構成します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> インターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。
 
-     次のコード例では、新しいノードを定義する方法を示します。 この例では、プロジェクトにリソースとして埋め込ま CustomChildNodeIcon という名前のアイコンが含まれている前提としています。
+     次のコード例は、新しいノードを定義する方法を示しています。 この例では、プロジェクトに CustomChildNodeIcon というアイコンが埋め込みリソースとして含まれていることを前提としています。
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]
 
-### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>既存のノードの子として新しいノードを追加するには
+### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>新しいノードを既存のノードの子として追加するには
 
-1. ノードの定義と同じプロジェクトを実装するクラスを作成、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>インターフェイス。
+1. ノード定義と同じプロジェクトで、インターフェイスを実装するクラスを作成し <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> ます。
 
-2. クラスに <xref:System.ComponentModel.Composition.ExportAttribute> 属性を追加します。 この属性により、Visual Studio を検出して読み込む、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>実装します。 渡す、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>属性コンス トラクターの型。
+2. クラスに <xref:System.ComponentModel.Composition.ExportAttribute> 属性を追加します。 この属性を使用すると、Visual Studio で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 属性コンストラクターに渡します。
 
-3. クラスに <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 属性を追加します。 ノードの拡張機能では、この属性は、拡張するノードの型の文字列識別子を指定します。
+3. クラスに <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 属性を追加します。 ノード拡張では、この属性によって、拡張するノードの種類の文字列識別子が指定されます。
 
-     Visual Studio によって提供される組み込みのノードの種類を指定するには、属性コンス トラクターに次の列挙値のいずれかを渡します。
+     Visual Studio によって提供される組み込みのノード型を指定するには、次の列挙値のいずれかを属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>:これらのサイト接続ノード (サイトの Url を表示するノード) を指定する値のサイト ノード、または他のすべての親ノードを使用して**サーバー エクスプ ローラー**します。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: これらの値を使用して、**サーバーエクスプローラー**内のサイト接続ノード (サイトの url を表示するノード)、サイトノード、またはその他のすべての親ノードを指定します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>:これらの値を使用すると、リスト、フィールド、またはコンテンツの種類を表すノードなどの SharePoint サイト上の個々 のコンポーネントを表す組み込みのノードのいずれかを指定します。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: リスト、フィールド、コンテンツタイプを表すノードなど、SharePoint サイト上の個々のコンポーネントを表す組み込みノードの1つを指定するには、次の値を使用します。
 
-4. 実装で、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A>メソッドは、ハンドル、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>のイベント、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>パラメーター。
+4. メソッドの実装で <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> 、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> パラメーターのイベントを処理し <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> ます。
 
-5. <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>イベント ハンドラーでは、新しいノードの子ノードのコレクションを追加、<xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A>イベント引数のパラメーターによって公開されるオブジェクト。
+5. <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>イベントハンドラーで、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> イベント引数パラメーターによって公開されるオブジェクトの子ノードコレクションに新しいノードを追加します。
 
-     次のコード例は、SharePoint サイト ノードの子として新しいノードを追加する方法を示します**サーバー エクスプ ローラー**します。
+     次のコード例は、**サーバーエクスプローラー**で SharePoint サイトノードの子として新しいノードを追加する方法を示しています。
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
 
 ## <a name="complete-example"></a>コード例全体
- 次のコード例は、単純なノードを定義し、SharePoint サイト ノードの子として追加するコード全体を提供します。**サーバー エクスプ ローラー**します。
+ 次のコード例では、単純なノードを定義し、それを**サーバーエクスプローラー**の SharePoint サイトノードの子として追加するための完全なコードを示します。
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]
 
 ## <a name="compiling-the-code"></a>コードのコンパイル
- この例では、プロジェクトにリソースとして埋め込ま CustomChildNodeIcon という名前のアイコンが含まれている前提としています。 この例では、次のアセンブリへの参照も必要です。
+ この例では、プロジェクトに CustomChildNodeIcon というアイコンが埋め込みリソースとして含まれていることを前提としています。 この例では、次のアセンブリへの参照も必要です。
 
 - Microsoft.VisualStudio.SharePoint
 
@@ -92,10 +91,10 @@ ms.locfileid: "62556690"
 
 - System.Drawing
 
-## <a name="deploy-the-extension"></a>拡張機能をデプロイします。
- 展開する、**サーバー エクスプ ローラー**拡張機能、作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]アセンブリおよびその他の拡張機能を配布するファイルの拡張機能 (VSIX) にパッケージ化します。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+## <a name="deploy-the-extension"></a>拡張機能のデプロイ
+ **サーバーエクスプローラー**拡張機能を配置するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリおよび拡張機能と共に配布するその他のファイル用の拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張します。](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [方法: サーバー エクスプ ローラーでの SharePoint ノードを拡張します。](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
-- [チュートリアル: Web パーツを表示するサーバー エクスプ ローラーを拡張します。](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [方法: サーバーエクスプローラーで SharePoint ノードを拡張する](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
+- [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
