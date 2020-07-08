@@ -6,12 +6,13 @@ ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 8bf139a6eab3c25bf28e787f9af12135813436e3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 6640a03523994b845d90f45ff6323126f462068a
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984928"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950643"
 ---
 # <a name="install-a-preview-release"></a>プレビュー リリースをインストールする
 
@@ -22,7 +23,7 @@ ms.locfileid: "74984928"
 
 Visual Studio for Mac の新しいバージョンは、正式にリリースされる前に、プレビューとしてリリースされます。 プレビュー リリースでは、製品に完全に組み込まれる前の新機能を試し、最新の修正プログラムを受け取ることができます。
 
-Visual Studio for Mac のプレビュー リリースは、個別のダウンロードではなく、更新プログラムとして配布されます。 [更新](update.md)に関する記事で説明されているように、Visual Studio for Mac には Stable、Beta、Alpha の 3 つの更新チャネルがあります。
+Visual Studio for Mac のプレビュー リリースは、個別のダウンロードではなく、更新プログラムとして配布されます。 [更新プログラム](update.md)に関する記事で説明されているように、Visual Studio for Mac には 3 つの更新チャネルStable、Beta、Alpha があります。
 
 ほとんどのプレビュー リリースは **Beta** と **Alpha** の両方のチャネルで使用できますが、[プレビューのリリース ノート](/visualstudio/releasenotes/vs2017-mac-preview-relnotes)で常に最新の正確な情報を確認してください。
 

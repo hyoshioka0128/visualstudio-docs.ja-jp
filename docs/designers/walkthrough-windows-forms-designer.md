@@ -1,20 +1,20 @@
 ---
 title: Windows フォーム デザイナー チュートリアル
 ms.date: 08/09/2019
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589839"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816463"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
+# <a name="tutorial-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
 Windows フォーム デザイナーでは、Windows フォーム アプリケーションを構築するための多くのツールが提供されています。 この記事では、デザイナーによって提供されるさまざまなツールを使用して、以下のようなタスクなど、アプリを構築する方法について説明します。
 
@@ -257,7 +257,7 @@ DemoCalculator コントロールのボタンには、電卓ロジックの多�
 
 ## <a name="test-the-control"></a>コントロールをテストする
 
-DemoCalculator コントロールは <xref:System.Windows.Forms.UserControl> クラスを継承しているので、**UserControl テスト コンテナー**を使用してその動作をテストできます。 詳細については、[UserControl の実行時の動作をテストする](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)」をご覧ください。
+DemoCalculator コントロールは <xref:System.Windows.Forms.UserControl> クラスを継承しているので、**UserControl テスト コンテナー**を使用してその動作をテストできます。 詳細については、「[方法:UserControl の実行時の動作をテストする](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)」をご覧ください。
 
 1. **F5** キーを押し、**UserControl Test Container** で DemoCalculator コントロールをビルドして実行します。
 

@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
 ms.date: 03/25/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: 6b6ed0635f86abb94fd3693d14b53a9ff1f7c936
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273999"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906057"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
 コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。

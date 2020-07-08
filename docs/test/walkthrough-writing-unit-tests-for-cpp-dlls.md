@@ -1,18 +1,18 @@
 ---
 title: '方法: C++ DLL 用の単体テストの記述'
 ms.date: 06/13/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275427"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816008"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>方法: C++ DLL 用の単体テストの記述
 
@@ -34,7 +34,7 @@ ms.locfileid: "77275427"
 
 8. [外部リソースから単位を分離する](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。 一般に、DLL は、他の DLL、データベース、またはリモートのサブシステムなど、開発中のシステムの他のコンポーネントに依存しています。 各単位をその依存関係から分離してテストすると役立ちます。 外部コンポーネントは、テストの実行を遅くする可能性があります。 開発中、他のコンポーネントが不完全であることもあり得ます。
 
-## <a name="create_test_project"></a> ネイティブ単体テスト プロジェクトを作成する
+## <a name="create-a-native-unit-test-project"></a><a name="create_test_project"></a> ネイティブ単体テスト プロジェクトを作成する
 
 1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。
 
@@ -82,7 +82,7 @@ ms.locfileid: "77275427"
 
          ![1 つのテストが成功したことを示す単体テスト エクスプローラー](../test/media/utecpp04.png)
 
-## <a name="create_dll_project"></a> DLL プロジェクトを作成する
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> DLL プロジェクトを作成する
 
 ::: moniker range="vs-2019"
 
@@ -148,7 +148,7 @@ ms.locfileid: "77275427"
 
 ::: moniker-end
 
-## <a name="make_functions_visible"></a> DLL プロジェクトにテスト プロジェクトを結合する
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="make_functions_visible"></a> DLL プロジェクトにテスト プロジェクトを結合する
 
 1. DLL プロジェクトをテスト プロジェクトのプロジェクト参照に追加します。
 
@@ -194,7 +194,7 @@ ms.locfileid: "77275427"
 
    テストとコード プロジェクトをセット アップして、コード プロジェクトで関数を実行するテストを実行できることを確認しました。 ここで、実際のテストおよびコードの記述を開始できます。
 
-## <a name="iterate"></a> テストを繰り返し増やして成功させる
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> テストを繰り返し増やして成功させる
 
 1. 新しいテストを追加します。
 
@@ -252,7 +252,7 @@ ms.locfileid: "77275427"
     > [!TIP]
     > 一度に 1 つのテストを追加してコードを開発します。 各反復処理の後にすべてのテストが合格することを確認します。
 
-## <a name="debug"></a> 失敗したテストをデバッグする
+## <a name="debug-a-failing-test"></a><a name="debug"></a> 失敗したテストをデバッグする
 
 1. 別のテストを追加します。
 
@@ -337,7 +337,7 @@ ms.locfileid: "77275427"
 
 ::: moniker-end
 
-## <a name="refactor"></a> テストを変更せずにコードをリファクタリングする
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> テストを変更せずにコードをリファクタリングする
 
 1. SquareRoot 関数の中心的な計算を簡素化します。
 

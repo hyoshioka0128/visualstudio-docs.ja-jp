@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89006ab582a48f7f3be54b4eb459903b64af7daf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280249"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85816697"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>クイック スタート: プロファイリング ツールの概要
+# <a name="first-look-at-profiling-tools"></a>プロファイリング ツールの概要
 
 Visual Studio にはさまざまなプロファイリング ツールがあります。各種アプリの多様な問題を診断できます。 この記事では、最も一般的なプロファイリング ツールを簡単に紹介します。
 
@@ -204,9 +204,9 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 |[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|可|
 |[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|可|Ｘ|
 |[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|可|Ｘ|
-|[イベント ビューアー](../profiling/perftips.md)|可|可|可|
-|[.NET Async](../profiling/perftips.md)|はい (.NET のみ)|可|可|
-|[データベース](../profiling/perftips.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
+|[イベント ビューアー](../profiling/events-viewer.md)|可|可|可|
+|[.NET Async](../profiling/analyze-async.md)|はい (.NET のみ)|可|可|
+|[データベース](../profiling/analyze-database.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|Ｘ|Ｘ|Ｘ|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
 ::: moniker-end

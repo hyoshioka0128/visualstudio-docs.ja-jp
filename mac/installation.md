@@ -7,12 +7,13 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 45f9756607cbb638d1f69f77bdf8cd2ee30953c5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75851948"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938964"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
@@ -53,7 +54,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
    すべてのプラットフォームをインストールすることを希望されない場合には、以下のガイドを使用してインストールするプラットフォームを決めることがきます。
 
 
-|アプリの種類  |移行先  |[選択]  |メモ  |
+|アプリの種類  |Target  |選択ツール  |メモ  |
 |---------|---------|---------|---------|
 |**Xamarin を使用するアプリ**| Xamarin.Forms|**Android** と **iOS** プラットフォームを選択します |次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります |
 ||iOS のみ|**iOS** プラットフォームを選択します|次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります|
@@ -91,7 +92,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
 - [Visual Studio エンドポイント](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Visual Studio for Mac をインストールすると、アプリのコードの記述を開始できます。 以下のガイドで、次の手順であるプロジェクトの記述と配置について説明します。
 
@@ -114,6 +115,6 @@ Visual Studio for Mac をインストールすると、アプリのコードの�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のインストール (Windows)](/visualstudio/install/install-visual-studio)

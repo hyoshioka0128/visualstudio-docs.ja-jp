@@ -5,12 +5,13 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 664f2431de7702219ced2ae2af4bd908e814a689
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 4bfa6bdfbb4b27a849b4807c99ae9dc8b9bd6764
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985186"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950390"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
 
@@ -44,7 +45,7 @@ Visual Studio for Mac では、個人アカウントに複数のアカウント�
 
 追加ユーザー アカウントを追加するには、「[Visual Studio for Mac にサインインする方法](#how-to-sign-in-to-visual-studio-for-mac)」セクションの手順に従います。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio にサインイン (Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [複数のユーザー アカウントを使って作業する (Windows の Visual Studio)](/visualstudio/ide/work-with-multiple-user-accounts)

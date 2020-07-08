@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 6ae0a77cf4849f0e648eeed17830911c90c8b584
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649803"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902808"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 

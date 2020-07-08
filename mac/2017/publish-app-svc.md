@@ -9,20 +9,21 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.custom: video
+ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 97964589b832b05f4d528a801a1899eeb8385883
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 42f455c824697e0909c990932611bb440a23a2af
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73714465"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950446"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用して Azure App Service に Web アプリを発行する
 
 発行ツールを使用して、Azure App Service に ASP.NET Core アプリを発行することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - ASP.NET Core を有効にしてインストールされた [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017)。
 - Azure サブスクリプション。 サブスクリプションがまだない場合は、[無料でサインアップ](https://azure.microsoft.com/free/dotnet/)します。これには、30 日間の $200 のクレジットと、12 か月間の人気の無料サービスが含まれます。

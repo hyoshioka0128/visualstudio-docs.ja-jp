@@ -6,12 +6,13 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: how-to
+ms.openlocfilehash: 600c4a21b6c9db8a6adb14e8fc96092f1782339f
+ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "73189665"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85938644"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -50,11 +51,11 @@ Visual Studio for Mac によって、既定の関数が含まれる .NET Standar
 
 ![テンプレートからの新しい Azure Function が表示されている Visual Studio for Mac エディター](media/azure-functions-newproj.png)
 
-新しいプロジェクトには次のファイルが含まれます。
+新しいプロジェクトには次のファイルが含まれています。
 
 * **お使いの関数名.cs**: このクラスには、選択した関数の定型コードが含まれます。 関数名を保持する **FunctionName** 属性と、何が関数をトリガーするかを指定するトリガー属性 (例: HTTP 要求) が含まれます。 関数のメソッドについて詳しくは、「[Azure Functions C# 開発者向けリファレンス](/azure/azure-functions/functions-dotnet-class-library)」をご覧ください。
 * **host.json** – このファイルでは、Functions ホストのグローバル構成オプションが記述されています。 ファイルの例と、このファイルで使用可能な設定については、「[Azure Functions の host.json のリファレンス](/azure/azure-functions/functions-host-json)」をご覧ください。
-* **local.settings.json** – このファイルには、関数をローカルで実行するためのすべての設定が含まれます。 これらの設定は、Azure Functions Core Tools によって使用されます。 詳細については、Azure Functions Core Tools の記事の[ローカル設定ファイル](/azure/azure-functions/functions-run-local#local-settings-file)に関する記事を参照してください。
+* **local.settings.json** – このファイルには、関数をローカルで実行するためのすべての設定が含まれます。 これらの設定は、Azure Functions Core Tools によって使用されます。 詳しくは、Azure Functions Core Tools に関する記事の「[ローカル設定ファイル](/azure/azure-functions/functions-run-local#local-settings-file)」をご覧ください。
 
 Visual Studio for Mac で新しい Azure Functions プロジェクトが作成されたので、ローカル コンピューターから既定の HTTP によってトリガーされる関数をテストできます。
 
@@ -90,7 +91,7 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
     「[使用可能な関数テンプレート](#available-function-templates)」のセクションには、Azure 関数のテンプレート一覧があります。
 
-上記の手順を使用して、複数の関数を関数アプリ プロジェクトに追加できます。 プロジェクト内の各関数で異なるトリガーを使用できますが、1 つの関数には 1 つのトリガーのみを使用する必要があります。 詳しくは、「[Azure Functions でのトリガーとバインドの概念](/azure/azure-functions/functions-triggers-bindings)」をご覧ください。
+関数アプリ プロジェクトに関数をさらに追加するには、前述の手順を使用します。 プロジェクトの各関数のトリガーは異なる場合があります。しかし、1 つの関数には、トリガーは正確に 1 つしか持たせることができません。 詳細については、「[Azure Functions でのトリガーとバインドの概念](/azure/azure-functions/functions-triggers-bindings)」を参照してください。
 
 ## <a name="publish-to-azure"></a>Azure に発行する
 
@@ -99,18 +100,18 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 3. **[Azure App Service に発行する]** ダイアログでは、既存のアプリ サービスを選択するか、 **[新規]** をクリックして新しいものを作成することができます。
 4. **[新しい App Service を作成する]** ダイアログに設定を入力します。![[Azure に発行する] メニュー オプション](media/azure-functions-image7.png)
 
-    |設定  |Description  |
+    |設定  |説明  |
     |---------|---------|
     |**App Service の名前**|新しい関数アプリを識別する、グローバルに一意な名前。|
-    |**サブスクリプション**|使用する Azure サブスクリプション。|
+    |**サブスクリプション**|使用する Azure のサブスクリプション。|
     |**[リソース グループ](/azure/azure-resource-manager/resource-group-overview)**|関数アプリを作成するリソース グループの名前。 新しいリソース グループを作成するには、 **+** を選択します。|
     |**[サービス プラン](/azure/azure-functions/functions-scale)**|既存のプランを選択するか、カスタム プランを作成します。 ご自分の近くのリージョン、またはご使用の関数がアクセスする他のサービスに近い場所を選択します。|
 
-5. **[次へ]** をクリックし、ストレージ アカウントを作成します。 Functions ランタイムには Azure Storage アカウントが必要です。 **[カスタム]** をクリックし、汎用のストレージ アカウントを作成するか、既存のものを使用します。
+5. **[次へ]** をクリックし、ストレージ アカウントを作成します。 Functions の共通言語ランタイムでは、Azure ストレージ アカウントが必要です。 **[カスタム]** をクリックし、汎用のストレージ アカウントを作成するか、既存のものを使用します。
 
     ![[Azure に発行する] メニュー オプション](media/azure-functions-image8.png)
 
-6. **[作成]** をクリックして、これらの設定で Azure に関数アプリと関連リソースを作成し、関数プロジェクト コードをデプロイします。
+6. **[作成]** をクリックして、これらの設定で、Azure に関数アプリと関連リソースを作成し、ご自分の関数のプロジェクト コードをデプロイします。
 
 7. 発行時に "Azure で関数のバージョンを更新する" ことを求めるダイアログが表示される場合があります。 **[はい]** をクリックします。
 
@@ -118,7 +119,7 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
 ## <a name="function-app-settings"></a>Function App の設定
 
-Local.settings.json で追加したすべての設定は、Azure の関数アプリにも追加する必要があります。 プロジェクトを発行するとき、これらの設定は自動的にアップロードされません。
+local.settings.json に追加したすべての設定は、Azure の関数アプリに追加する必要があります。 これらの設定は、プロジェクトの発行時には自動的にアップロードされません。
 
 アプリの設定にアクセスするには、[https://ms.portal.azure.com/](https://ms.portal.azure.com/) の Azure portal にアクセスします。 **[Functions アプリ]** の **[Functions アプリ]** を選択し、関数名を強調表示します。
 
@@ -154,7 +155,7 @@ Local.settings.json で追加したすべての設定は、Azure の関数アプ
 
 - **汎用 webhook** – これは、webhook をサポートするサービスから要求を受信するたびに実行される単純な関数です。 詳細については、[汎用 webhook についての Azure Functions の記事](/azure/azure-functions/functions-create-generic-webhook-triggered-function)をご覧ください。
 
-- **Durable Functions オーケストレーション** – Durable Functions を使うと、サーバーレス環境でステートフル関数を記述できます。 この拡張機能は状態、チェックポイント、再起動を管理します。 詳細については、[Durable Functions](/azure/azure-functions/durable-functions-overview)に関する Azure Functions ガイドをご覧ください。
+- **Durable Functions オーケストレーション** – Durable Functions を使うと、サーバーレス環境でステートフル関数を記述できます。 この拡張機能は、状態、チェックポイント、および再起動を自動的に管理します。 詳細については、[Durable Functions](/azure/azure-functions/durable-functions-overview)に関する Azure Functions ガイドをご覧ください。
 
 - **イメージ リサイザー** – この関数は、コンテナーに BLOB が追加されるたびに異なるサイズのイメージを作成します。 このテンプレートは、トリガーに対するパスと接続文字列、小さいイメージ出力、および中くらいのイメージ出力を受け取ります。
 
