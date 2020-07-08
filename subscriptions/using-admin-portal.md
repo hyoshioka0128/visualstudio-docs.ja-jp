@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
-ms.topic: conceptual
+ms.topic: overview
 description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: 279f1d926bd81bafd8fd79e5cdddbf67b96899f1
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808363"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902945"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 

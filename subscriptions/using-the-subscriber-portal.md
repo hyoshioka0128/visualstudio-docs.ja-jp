@@ -5,14 +5,14 @@ ms.author: v-evwin
 manager: lank
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
-ms.topic: conceptual
+ms.topic: overview
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232188"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85902877"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 

@@ -5,22 +5,23 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: f9925954083c7fe64ad29c7cfed618a84d7a6386
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.topic: overview
+ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984863"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950558"
 ---
 # <a name="managing-references-in-a-project"></a>プロジェクト内の参照の管理
 
 Visual Studio for Mac には、プロジェクトに参照を追加する方法が 2 つあります。
 
-![プロジェクトの参照](media/projects-and-solutions-image10.png)
+![プロジェクト参照](media/projects-and-solutions-image10.png)
 
-次のとおりです。
+これらのボタンの役割は、次のとおりです。
 
-* References
+* 関連項目
 * NuGet (パッケージ フォルダーで追加)
 
 さらに、Web 参照とネイティブ参照は任意のプロジェクトに追加することもできます。
@@ -43,7 +44,7 @@ NuGet は、.NET 開発用の最も人気のあるパッケージ マネージ�
 
 NuGet パッケージの使用方法については、「[Including a NuGet package in your Project](nuget-walkthrough.md)」(プロジェクトに NuGet パッケージを含める) チュートリアルを参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [参照の管理 (Windows の Visual Studio)](/visualstudio/ide/managing-references-in-a-project)
 - [拡張 SDK と比較して NuGet を使用した参照の追加 (Windows の Visual Studio)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

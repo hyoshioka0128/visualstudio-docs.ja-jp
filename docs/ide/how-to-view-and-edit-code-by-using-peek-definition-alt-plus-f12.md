@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770521"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092311"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
 
@@ -74,7 +74,7 @@ ms.locfileid: "85770521"
 |-------------------|:-----------------------:|
 |定義ウィンドウを開く|**Alt**+**F12**|
 |定義ウィンドウを閉じる|**Esc**|
-|定義ウィンドウを通常のドキュメント タブに昇格する|**Shift**+**Alt**+**Home**|
+|定義ウィンドウを通常のドキュメント タブに昇格する|**Ctrl**+**Alt**+**Home**|
 |定義ウィンドウ間を移動する|**Ctrl**+**Alt**+ **-** と **Ctrl**+**Alt**+ **=**|
 |複数の結果の間を移動する|**F8** と **Shift**+**F8**|
 |コード エディター ウィンドウと定義ウィンドウの間で切り替える|**Shift**+**Esc**|
@@ -82,7 +82,7 @@ ms.locfileid: "85770521"
 > [!NOTE]
 > Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード間の移動](../ide/navigating-code.md)
 - [[定義へ移動] と [定義をここに表示]](../ide/go-to-and-peek-definition.md)

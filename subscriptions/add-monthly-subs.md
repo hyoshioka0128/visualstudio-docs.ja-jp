@@ -5,14 +5,14 @@ ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 06/23/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: 新しく購入した月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する方法について説明します
-ms.openlocfilehash: abe0b7a84f0979de4bc1f59b6f82144c804c8c7e
-ms.sourcegitcommit: 60315ba949aca1ff06fe431dbcbcfb0fedc1e8d3
+ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85307098"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85904698"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>新しい月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する
 Azure サブスクリプションを使用して新しい月単位の Visual Studio サブスクリプションを購入するときに、それらをユーザーに割り当てるにはサブスクリプション管理ポータルへの追加が必要な場合があります。  

@@ -1,16 +1,16 @@
 ---
 title: 'チュートリアル: XSLT 階層の使用'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 892c166504b9a33fdcbbe0af2605e8268a2b06e7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
+ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592452"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85815033"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>チュートリアル: XSLT 階層の使用
 

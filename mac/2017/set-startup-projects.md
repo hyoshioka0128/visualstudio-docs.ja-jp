@@ -4,15 +4,15 @@ description: この記事では、実行時またはデバッグ時に開始す�
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 02/21/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 55519960a6b84968ced43183833167a365e91b35
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1b015d9009dc813c50ef891a4a523ba497c254c2
+ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68872320"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "85950549"
 ---
 # <a name="set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定する
 
