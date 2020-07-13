@@ -1,7 +1,7 @@
 ---
 title: JavaScript と TypeScript の単体テスト
 description: Visual Studio では、Node.js Tools for Visual Studio を使用する JavaScript と TypeScript コードの単体テストをサポートします
-ms.date: 06/06/2018
+ms.date: 07/06/2020
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: acac3eb306d12ff6976e19ae5dc1ad772691094c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: cdaff34c7eb2f9eba7c075127647c2eacbb736f9
+ms.sourcegitcommit: bcddb4647815e9ce2e175d9258e8df1b795e3e85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289002"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86033352"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
 
@@ -72,25 +72,32 @@ describe('Test Suite 1', function() {
 ![テスト エクスプローラー](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
-> テスト エクスプローラーは TypeScript ファイル内の単体テストを検出できないため、*tsconfig.json* では `outdir` または `outfile` オプションを使わないでください。
+> TypeScript の場合、テスト エクスプローラーで単体テストを検出することができないため、*tsconfig.json* では、`outdir` オプション、または `outfile` オプションを使用しないでください。
 
 ## <a name="run-tests"></a>テストの実行
 
-テストは、Visual Studio 2017 内で、またはコマンド ラインから、実行することができます。
+テストは、Visual Studio 内で、またはコマンド ラインから、実行することができます。
 
-### <a name="run-tests-in-visual-studio-2017"></a>Visual Studio 2017 でテストを実行する
+### <a name="run-tests-in-visual-studio"></a>Visual Studio でテストを実行する
 
+::: moniker range=">=vs-2019"
+テスト エクスプローラーで **[すべて実行]** リンクをクリックして、テストを実行することができます。 または、1 つ以上のテストまたはグループを選択し、右クリックして、ショートカット メニューから **[実行]** を選択して、テストを実行することもできます。 バックグラウンドでテストが実行され、テスト エクスプローラーが自動的に更新されて、結果が表示されます。 さらに、右クリックして、 **[デバッグ]** を選択して、選択したテストをデバッグすることもできます。
+::: moniker-end
+::: moniker range="vs-2017"
 テスト エクスプローラーで **[すべて実行]** リンクをクリックして、テストを実行することができます。 または、1 つ以上のテストまたはグループを選択し、右クリックして、ショートカット メニューから **[選択したテストの実行]** を選択することで、テストを実行することもできます。 バックグラウンドでテストが実行され、テスト エクスプローラーが自動的に更新されて、結果が表示されます。 さらに、 **[選択したテストのデバッグ]** を選択して、選択したテストをデバッグすることもできます。
+::: moniker-end
 
-> [!Warning]
-> 現在、Node 8 以降を使用する単体テストのデバッグは、JavaScript テスト ファイルについてのみ動作し、TypeScript テスト ファイルではブレークポイントにヒットしません。 回避策としては、`debugger` キーワードを使ってください。
+TypeScript の場合、生成された JavaScript コードに対して単体テストが実行されます。
+
+> [!NOTE]
+> ほとんどの TypeScript シナリオでは、TypeScript コードでブレークポイントを設定し、テスト エクスプローラーでテストを右クリックし、 **[デバッグ]** を選択して、単体テストをデバッグすることができます。 ソース マップを使用する一部のシナリオなど、より複雑なシナリオでは、TypeScript コードでブレークポイントに到達するのが困難な場合があります。 回避策としては、`debugger` キーワードを使用してみてください。
 
 > [!NOTE]
 > プロファイリング テストまたはコード カバレッジは、現在はサポートされていません。
 
 ### <a name="run-tests-from-the-command-line"></a>コマンド ラインからテストを実行する
 
-次のコマンドを使って、Visual Studio 2017 の[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)からテストを実行できます。
+次のコマンドを使って、Visual Studio の[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs) からテストを実行できます。
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter

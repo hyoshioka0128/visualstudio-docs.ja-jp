@@ -1,19 +1,19 @@
 ---
 title: Live Unit Testing
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Live Unit Testing
 author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34200e8719ef25de3c54c612b967cf3d4f9bab85
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
+ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2020
-ms.locfileid: "81223705"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85906224"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing を構成して使用する方法
 
@@ -198,9 +198,9 @@ Live Unit Testing で自動的にテストを実行してテスト結果を更�
 
 テスト メソッドを個別に追加または除外する場合には、コード エディター ウィンドウを使います。 コード エディター ウィンドウでテスト メソッドのシグネチャを右クリックして、次のいずれかのオプションを選択します。
 
-- **[Live Tests]\(ライブ テスト\)**  >  **[Include \<selected method>]\(<選択したメソッド> を含める\)**
-- **[Live Tests]\(ライブ テスト\)**  >  **[Exclude \<selected method>]\(<選択したメソッド> を除外する\)**
-- **[Live Tests]\(ライブ テスト\)**  >  **[Exclude All But \<selected method>]\(<選択したメソッド> 以外をすべて除外する\)**
+- **[Live Tests]\(ライブ テスト)**  >  **[\<selected method> を含める]**
+- **[Live Tests]\(ライブ テスト)**  >  **[\<selected method> を除外する]**
+- **[Live Tests]\(ライブ テスト\)**  >  **[\<selected method> 以外のすべてを除外する]**
 
 ### <a name="exclude-tests-programmatically"></a>プログラムによってテストを除外する
 
