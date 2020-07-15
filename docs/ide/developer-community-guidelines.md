@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed52bcbd6d27a958276541c2d6813aa322c73839
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
+ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092298"
+ms.locfileid: "86137559"
 ---
 # <a name="developer-community-guidelines"></a>開発者コミュニティのガイドライン
 
@@ -74,7 +74,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 * [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
 * [Visual Studio サブスクリプション サポート](https://feedback.azure.com/forums/908035-sql-server)
 * [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
-* [ウィンドウ](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
+* [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
 
 #### <a name="additional-information"></a>追加情報
 
