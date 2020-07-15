@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905998"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301461"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -26,7 +26,7 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 2. [ツール] セクションで、Windows 開発者アカウントのタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。  コードをクリップボードにコピーし、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Windows 開発者特典のタイル](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. [https://developer.microsoft.com](https://developer.microsoft.com) サイト上で登録プロセスを開始できます。  **[サインアップ]** をクリックして続行します。
+3. [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) サイト上で登録プロセスを開始できます。  **[サインアップ]** をクリックして続行します。
    > [!div class="mx-imgBorder"]
    > ![Windows 開発者特典の登録](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. 自分のサブスクリプションにサインインします。  複数のアカウントがある場合は、エンタープライズ サブスクリプションに関連付けられているアカウントを選択します。
