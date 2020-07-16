@@ -42,6 +42,8 @@
       items:
         - name: テスト エクスプローラーを使用して単体テストを実行する
           href: run-unit-tests-with-test-explorer.md
+        - name: テスト エクスプローラーを使用して単体テストをデバッグする
+          href: debug-unit-tests-with-test-explorer.md
         - name: テスト エクスプローラーに関する FAQ
           href: test-explorer-faq.md
     - name: コマンド ラインからテストを実行する
@@ -103,7 +105,7 @@
       items:
         - name: C++ UWP DLL の単体テスト
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'UWP アプリの Visual C# コードの単体テスト'
+        - name: UWP アプリの Visual C# コードの単体テスト
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'チュートリアル: UWP アプリ用の単体テストの作成および実行'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
