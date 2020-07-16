@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8fbeb9b1631e9cefa132f50a13dc5cf4db58c9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9e7a21a010cf98da3d7adb9627105c2847b7571e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283373"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386356"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
 
@@ -89,6 +89,13 @@ ms.locfileid: "85283373"
 |[CA2328: JsonSerializerSettings が安全であることを確認してください](../code-quality/ca2328.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2329: セキュリティで保護されていない構成が JsonSerializer で使用されている場合は、逆シリアル化を行わないでください](../code-quality/ca2329.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2330: 逆シリアル化の際に、JsonSerializer の構成は確実にセキュリティで保護してください](../code-quality/ca2330.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
+|[CA2350: DataTable. ReadXml () の入力が信頼されていることを確認します](ca2350.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataTable> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2351: データセット ReadXml () の入力が信頼されていることを確認します。](ca2351.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2352: 安全でないデータセットまたはシリアル化可能な型の DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2352.md)|でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。|
+|[CA2353: Unsafe データセットまたはシリアル化可能な型の DataTable](ca2353.md)|XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2354: 逆シリアル化されたオブジェクトグラフ内の Unsafe データセットまたは DataTable が、リモートでのコード実行攻撃に対して脆弱になる可能性があります](ca2354.md)|シリアル化されたを使用して逆シリアル <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 化すると、キャストされた型のオブジェクトグラフにまたはを含めることができ <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2355: 逆シリアル化されたオブジェクトグラフに安全ではないデータセットまたは DataTable があります](ca2355.md)|キャストまたは指定された型のオブジェクトグラフがまたはを含むことができる場合、逆シリアル化し <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2356: web 逆シリアル化されたオブジェクトグラフ内の安全でないデータセットまたは DataTable](ca2356.md)|またはを持つメソッドには、 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> またはを参照できるパラメーターがあり <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA3001:SQL インジェクションの脆弱性のコード レビュー](../code-quality/ca3001.md)|信頼されていない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃に注意してください。 SQL インジェクション攻撃によって、悪意のある SQL コマンドを実行し、アプリケーションのセキュリティと整合性を損なう可能性があります。|
 |[CA3002:XSS の脆弱性のコード レビュー](../code-quality/ca3002.md)|Web 要求から信頼されていない入力を処理する場合は、クロスサイトスクリプティング (XSS) 攻撃に注意する必要があります。 XSS 攻撃によって、信頼できない入力が未加工の HTML 出力に挿入され、攻撃者が悪意のあるスクリプトを実行したり、web ページのコンテンツを改ざんしたりする可能性があります。|
 |[CA3003:ファイル パス インジェクションの脆弱性のコード レビュー](../code-quality/ca3003.md)|Web 要求から信頼されていない入力を使用する場合は、ファイルへのパスを指定するときにユーザーが制御する入力を使用することに注意してください。|
@@ -122,9 +129,9 @@ ms.locfileid: "85283373"
 |[CA5372:XPathDocument に XmlReader を使用します](../code-quality/ca5372.md)|信頼されていないデータから XML を処理すると、危険な外部参照が読み込まれる可能性があります。これは、セキュリティで保護された競合回避モジュールを使用するか、DTD 処理を無効にして、XmlReader|
 |[CA5373:廃止されたキー派生関数を使用しません](../code-quality/ca5373.md)|このルールは、弱いキー派生メソッドとの呼び出しを検出し <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> `Rfc2898DeriveBytes.CryptDeriveKey` ます。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName>弱いアルゴリズム PBKDF1 が使用されていました。|
 |[CA5374: XslTransform を使用しません](../code-quality/ca5374.md)|このルール <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> では、がコード内でインスタンス化されているかどうかを確認します。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>は互換性のために残されているため、使用しないでください。|
-|[CA5375: アカウントの共有アクセス署名を使用しません](../code-quality/ca5375.md)|アカウント SAS は、blob コンテナー、テーブル、キュー、およびサービス SAS で許可されていないファイル共有に対する読み取り、書き込み、および削除操作へのアクセスを委任できます。 ただし、コンテナーレベルのポリシーはサポートされておらず、付与されるアクセス許可をより柔軟に制御することはできません。 悪意のあるユーザーがアクセスすると、ストレージアカウントが簡単に侵害されます。|
-|[CA5376: SharedAccessProtocol HttpsOnly を使用します。](../code-quality/ca5376.md)|SAS は、HTTP でプレーンテキストで転送できない機密データです。|
-|[CA5377: コンテナーレベルのアクセスポリシーを使用する](../code-quality/ca5377.md)|コンテナーレベルのアクセスポリシーは、いつでも変更または失効できます。 これにより、付与されるアクセス許可をより柔軟に制御できるようになります。|
+|[CA5375: アカウントの Shared Access Signature を使用しないでください](../code-quality/ca5375.md)|アカウント SAS は、blob コンテナー、テーブル、キュー、およびサービス SAS で許可されていないファイル共有に対する読み取り、書き込み、および削除操作へのアクセスを委任できます。 ただし、コンテナーレベルのポリシーはサポートされておらず、付与されるアクセス許可をより柔軟に制御することはできません。 悪意のあるユーザーがアクセスすると、ストレージアカウントが簡単に侵害されます。|
+|[CA5376: SharedAccessProtocol HttpsOnly を使用します](../code-quality/ca5376.md)|SAS は、HTTP でプレーンテキストで転送できない機密データです。|
+|[CA5377: コンテナー レベルのアクセス ポリシーを使用します](../code-quality/ca5377.md)|コンテナーレベルのアクセスポリシーは、いつでも変更または失効できます。 これにより、付与されるアクセス許可をより柔軟に制御できるようになります。|
 |[CA5378: ServicePointManagerSecurityProtocols を無効にしません](../code-quality/ca5378.md)|`Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols`をに設定すると、 `true` Windows Communication Framework の (WCF) Transport Layer SECURITY (tls) 接続が tls 1.0 を使用するように制限されます。 このバージョンの TLS は非推奨とされます。|
 |[CA5379: 弱いキー派生関数アルゴリズムを使用しません](../code-quality/ca5379.md)|クラスは、 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 既定でアルゴリズムを使用し <xref:System.Security.Cryptography.HashAlgorithmName.SHA1> ます。 またはそれ以上のコンストラクターの一部のオーバーロードで使用するハッシュアルゴリズムを指定する必要があり <xref:System.Security.Cryptography.HashAlgorithmName.SHA256> ます。 プロパティに <xref:System.Security.Cryptography.Rfc2898DeriveBytes.HashAlgorithm> はアクセサーのみがあり、 `get` 修飾子はありません `overriden` 。|
 |[CA5380:ルート ストアに証明書を追加しません](../code-quality/ca5380.md)|このルールは、信頼されたルート証明機関の証明書ストアに証明書を追加するコードを検出します。 既定では、信頼されたルート証明機関の証明書ストアは、Microsoft ルート証明書プログラムの要件を満たしている一連のパブリック Ca で構成されます。|
@@ -138,11 +145,11 @@ ms.locfileid: "85283373"
 |[CA5388: 弱いキー派生関数を使用する場合は十分な反復回数を確保してください](../code-quality/ca5388.md)|このルールは、によって暗号化キーが生成されたかどうかを、 <xref:System.Security.Cryptography.Rfc2898DeriveBytes> 10万未満の反復回数で確認します。 反復回数が多いほど、生成された暗号化キーを推測しようとする辞書攻撃に対する軽減に役立ちます。|
 |[CA5389:アーカイブ項目のパスをターゲット ファイル システム パスに追加しません](../code-quality/ca5389.md)|ファイルパスは相対パスにすることができ、予想されるファイルシステムのターゲットパスの外部でファイルシステムにアクセスする可能性があります。これにより、悪意のある構成の変更や、配置と待機の手法を使用したリモートでのコードの実行が可能になります。|
 |[CA5390: 暗号化キーをハードコーディングしません](../code-quality/ca5390.md)|対称アルゴリズムを成功させるには、送信側と受信側だけが秘密キーを認識している必要があります。 キーがハードコーディングされている場合は、簡単に検出できます。 コンパイル済みバイナリでも、悪意のあるユーザーが簡単に抽出できます。 秘密キーが侵害されると、暗号文は直接復号化でき、保護されなくなります。|
-|[CA5391: ASP.NET Core MVC コントローラーで偽造防止トークンを使用する](../code-quality/ca5391.md)|偽造防止 `POST` トークンを検証せずに、、、または要求を処理すると、 `PUT` `PATCH` `DELETE` クロスサイト要求偽造攻撃に対して脆弱になる可能性があります。 クロスサイト要求偽造攻撃は、認証されたユーザーから ASP.NET Core MVC コントローラーに悪意のある要求を送信できます。|
-|[CA5392: P/Invoke の DefaultDllImportSearchPaths 属性を使用します。](../code-quality/ca5392.md)|既定では、P/Invoke 関数でプローブを使用して、 <xref:System.Runtime.InteropServices.DllImportAttribute> 読み込むライブラリの現在の作業ディレクトリを含む多数のディレクトリが検出されます。 これは、特定のアプリケーションのセキュリティ上の問題であり、DLL のハイジャックにつながる可能性があります。|
-|[CA5393: unsafe DllImportSearchPath 値を使用しないでください](../code-quality/ca5393.md)|既定の DLL 検索ディレクトリとアセンブリディレクトリに悪意のある DLL が存在する可能性があります。 または、アプリケーションの実行場所によっては、アプリケーションのディレクトリに悪意のある DLL が存在する可能性があります。|
+|[CA5391: ASP.NET Core MVC コントローラーで偽造防止トークンを使用します](../code-quality/ca5391.md)|偽造防止 `POST` トークンを検証せずに、、、または要求を処理すると、 `PUT` `PATCH` `DELETE` クロスサイト要求偽造攻撃に対して脆弱になる可能性があります。 クロスサイト要求偽造攻撃は、認証されたユーザーから ASP.NET Core MVC コントローラーに悪意のある要求を送信できます。|
+|[CA5392: P/Invoke に対して DefaultDllImportSearchPaths 属性を使用します](../code-quality/ca5392.md)|既定では、P/Invoke 関数でプローブを使用して、 <xref:System.Runtime.InteropServices.DllImportAttribute> 読み込むライブラリの現在の作業ディレクトリを含む多数のディレクトリが検出されます。 これは、特定のアプリケーションのセキュリティ上の問題であり、DLL のハイジャックにつながる可能性があります。|
+|[CA5393: 安全でない DllImportSearchPath 値を使用しないでください](../code-quality/ca5393.md)|既定の DLL 検索ディレクトリとアセンブリディレクトリに悪意のある DLL が存在する可能性があります。 または、アプリケーションの実行場所によっては、アプリケーションのディレクトリに悪意のある DLL が存在する可能性があります。|
 |[CA5394: 安全でないランダム度を使用しません](../code-quality/ca5394.md)|暗号強度の弱い擬似乱数ジェネレーターを使用すると、攻撃者がセキュリティを重視した値が生成されることを予測できます。|
-|[CA5395: アクションメソッドの HttpVerb 属性を見逃す](../code-quality/ca5395.md)|データの作成、編集、削除、またはその他の変更を行うすべてのアクションメソッドは、クロスサイト要求偽造攻撃からの偽造防止属性で保護する必要があります。 GET 操作の実行は、副作用のない安全な操作であり、永続化されたデータを変更することはありません。|
+|[CA5395: アクション メソッドの HttpVerb 属性がありません](../code-quality/ca5395.md)|データの作成、編集、削除、またはその他の変更を行うすべてのアクションメソッドは、クロスサイト要求偽造攻撃からの偽造防止属性で保護する必要があります。 GET 操作の実行は、副作用のない安全な操作であり、永続化されたデータを変更することはありません。|
 |[CA5396: HttpCookie で HttpOnly を true に設定します](../code-quality/ca5396.md)|多層防御の手段として、セキュリティが重要な HTTP クッキーが HttpOnly としてマークされていることを確認します。 これは、web ブラウザーがスクリプトによる cookie へのアクセスを許可しないことを示します。 挿入された悪意のあるスクリプトは、cookie を盗む一般的な方法です。|
 |[CA5397:非推奨の SslProtocols 値を使用しません](../code-quality/ca5397.md)|トランスポート層セキュリティ (TLS) は、通常、ハイパーテキスト転送プロトコルセキュア (HTTPS) を使用して、コンピューター間の通信をセキュリティで保護します。 Tls の古いプロトコルバージョンは、TLS 1.2 および TLS 1.3 よりも安全性が低く、新しい脆弱性が発生する可能性が高くなります。 リスクを最小限に抑えるために、古いプロトコルバージョンを避けてください。|
 |[CA5398:ハードコーディングされた SslProtocols 値を回避します](../code-quality/ca5398.md)|トランスポート層セキュリティ (TLS) は、通常、ハイパーテキスト転送プロトコルセキュア (HTTPS) を使用して、コンピューター間の通信をセキュリティで保護します。 Tls 1.2 と TLS 1.3 は最新ではありませんが、プロトコルバージョン TLS 1.0 および TLS 1.1 は非推奨とされます。 今後、TLS 1.2 および TLS 1.3 が非推奨とされる可能性があります。 アプリケーションがセキュリティで保護されていることを確認するには、プロトコルバージョンをハードコーディングしないようにします。|

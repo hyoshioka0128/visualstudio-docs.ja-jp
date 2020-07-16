@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905774"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387279"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>方法: 拡張機能を Visual Studio 2019/2017 および Visual Studio 2015 と互換性を持たせる
 
@@ -29,7 +29,7 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 1. 適切な NuGet パッケージをインポートします。
 2. 拡張機能マニフェストを更新します。
     * インストールの対象
-    * 必須コンポーネント
+    * 前提条件
 3. CSProj を更新します。
     * `<MinimumVisualStudioVersion>` を更新します。
     * `<VsixType>` プロパティを追加します。
@@ -69,12 +69,12 @@ Visual studio 2019 または2017ではなく、Visual Studio 2015 を使用し�
 
 Visual Studio 2015 と2019/2017 の両方で VSIXv3 をビルドしてデプロイするには、次の NuGet パッケージが必要です。
 
-バージョン | ビルド ツール
+Version | ビルド ツール
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2019 または2017 | Microsoft.VSSDK.BuildTool
 
-次の手順に従います。
+これを行うには、次の手順を実行します。
 
 * NuGet パッケージ Microsoft.VisualStudio.Sdk.BuildTasks.14.0 をプロジェクトに追加します。
 * プロジェクトに Microsoft.VSSDK.BuildTools が含まれていない場合は、追加します。
@@ -213,5 +213,4 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 ![VSIX の検索](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> **ファイルを開い**たメッセージでプロジェクトがハングした場合は、Visual Studio を強制的にシャットダウンし、プロジェクトディレクトリに移動して、隠しフォルダーを表示し、 *vs*フォルダーを削除します。
- 
+> **ファイルを開く**メッセージでプロジェクトが応答しなくなった場合は、Visual Studio を強制的にシャットダウンし、プロジェクトディレクトリに移動して、隠しフォルダーを表示し、 *vs*フォルダーを削除します。
