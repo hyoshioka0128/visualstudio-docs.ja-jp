@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Execute |Microsoft Docs
+title: 'IDebugProcess3:: Execute |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b6647db9e3a013be0ffd3a0a12f92e9cb6cc738
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9b70deabd4cb7996d76373c6216057678c0bd3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405821"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386174"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このプロセスを停止状態から実行が続行されます。 (ステップ) など、以前の実行状態をクリアし、もう一度実行して、プロセスを開始します。  
+このプロセスの実行を停止状態から続行します。 前の実行状態 (ステップなど) がすべてクリアされ、プロセスが再度実行を開始します。  
   
 > [!NOTE]
-> このメソッドは、の代わりに使用する必要があります[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)します。  
+> このメソッドは、 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)の代わりに使用する必要があります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,19 +43,19 @@ int Execute(
   
 #### <a name="parameters"></a>パラメーター  
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)スレッドの実行を表すオブジェクト。  
+ から実行するスレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ユーザーは、他のプロセスのスレッドを停止状態から実行を起動するときに、このプロセスにこのメソッドが呼び出されます。 ユーザーが選択すると、このメソッドが呼び出されますも、**開始**コマンドから、**デバッグ**IDE のメニュー。 このメソッドの実装を呼び出す可能性があります、[再開](../../../extensibility/debugger/reference/idebugthread2-resume.md)プロセスの現在のスレッドでメソッド。  
+## <a name="remarks"></a>解説  
+ ユーザーが他のプロセスのスレッドで停止状態から実行を開始すると、このプロセスでこのメソッドが呼び出されます。 このメソッドは、ユーザーが IDE の [**デバッグ**] メニューから [**開始**] コマンドを選択したときにも呼び出されます。 このメソッドの実装は、プロセス内の現在のスレッドで[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)メソッドを呼び出す場合と同じように簡単に行うことができます。  
   
 > [!WARNING]
-> 停止イベントまたは直接 (同期) イベントを送信しない[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md); この呼び出しを処理中にそれ以外の場合、デバッガーがハングします。  
+> この呼び出しの処理中に、停止イベントまたは即時 (同期) イベントを[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に送信しないでください。それ以外の場合、デバッガーは応答を停止する可能性があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [再開](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
+ [よる](../../../extensibility/debugger/reference/idebugthread2-resume.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

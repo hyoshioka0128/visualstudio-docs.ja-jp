@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651777"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386551"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 で問題を報告する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Visual Studio に関する最新のドキュメントについては、[Visual S
 
 Visual Studio 2015 で問題が発生した場合は、それを診断して修正できるように、Microsoft にご報告ください。  **[問題の報告]** ツールを使うと、問題に関する詳しい情報を収集し、数回のクリックで問題を Microsoft に送信できます。
 
-Microsoft は、お客様のプライバシーを尊重いたします。 お客様から送信していただいたデータの扱いについて詳しくは、「[Microsoft Visual Studio 製品ファミリのプライバシーに関する声明](https://www.visualstudio.com/dn948229)」をご覧ください。
+Microsoft は、お客様のプライバシーを尊重いたします。 お客様から送信していただいたデータの扱いについて詳しくは、「 [Microsoft Visual Studio 製品ファミリのプライバシーに関する声明](https://www.visualstudio.com/dn948229)」をご覧ください。
 
 ## <a name="open-the-report-a-problem-tool"></a>[問題の報告] ツールを開きます
 
-タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、 **[ヘルプ] > [フィードバックの送信]、[問題の報告]** の順にクリックします。
+タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、**[ヘルプ] > [フィードバックの送信]、[問題の報告]** の順にクリックします。
 
 ![[問題の報告] のメニュー項目](../ide/media/report-a-problem-menu-item.png "[問題の報告] のメニュー項目")
 
@@ -45,7 +45,7 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 ## <a name="provide-a-screenshot-optional"></a>スクリーンショットを提供します (オプション)
 
-**[スクリーンショットを含める]** を選択し、Microsoft に現在の画面を送信します。 ツールを使うと、画像をトリミングして、問題が表示されている画面の部分だけを表示できます。 **[追加のファイルの添付]** ボタンをクリックして、その他のスクリーン ショットやファイルをさらに添付できます。
+**[スクリーンショットを含める]** を選び、Microsoft に現在の画面を送信します。 ツールでは、画面中のこの問題が表示された部分のみにイメージをトリミングできます。 **[追加のファイルの添付]** ボタンをクリックして、その他のスクリーン ショットやファイルをさらに添付できます。
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>トレースとヒープ ダンプを提供します (省略可能)
 
@@ -53,7 +53,7 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 1. トレースとヒープ ダンプのファイルは、問題を診断するうえで非常に役立ちます。   [問題の報告] ツールで再現する手順を記録し Microsoft にデータを送信してくだされば、大変助かります。
 
-2. **[操作を記録して問題を再現する]** の横にあるシェブロンをクリックします。 問題が原因で Visual Studio のハングやクラッシュが生じる場合、Visual Studio の別のインスタンスを開き、リスト ビューから選択します。
+2. **[操作を記録して問題を再現する]** の横にあるシェブロンをクリックします。 問題によって Visual Studio が応答しなくなったりクラッシュしたりしている場合は、Visual Studio の別のインスタンスを開き、リストビューから選択します。
 
 3. **[記録の開始]** をクリックし、問題を再現するための操作を行います。 完了したら、フローティング ウィンドウで **[記録の停止]** ボタンをクリックします。
 
@@ -69,6 +69,6 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 [送信] ボタンをクリックして、イメージ、トレースやダンプ ファイルと共にレポートを送信します。 **[送信]** ボタンが灰色表示の場合、タイトルと説明が記載されていることを確認します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ご意見](../ide/talk-to-us.md)
