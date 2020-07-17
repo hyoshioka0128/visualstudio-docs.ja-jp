@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに対するソフトウェア ダウンロードでの製品の利用可能性について説明します。
-ms.openlocfilehash: 7b6b3bf3dbcf75a33853a9af5edf51e3ef1165a8
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 27950fa2a4589ee5068e7d5f294f651132c229ea
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232303"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387214"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのソフトウェア ダウンロードに対する製品の利用可能性
 サブスクライバー特典の一環として、広い範囲のソフトウェアのダウンロードにアクセスできます。
@@ -27,7 +27,7 @@ ms.locfileid: "80232303"
 - **製品がサブスクリプションの一部ではない**。 特別なライセンス条項、技術上の制限事項、開発者の関連性などの理由により、一部の Microsoft 製品はサブスクリプションに含まれていません。 サブスクリプションに製品を追加することをご提案される場合は、最寄りの Visual Studio [カスタマー サービス](https://visualstudio.microsoft.com/subscriptions/support/) センターまで電子メールでご連絡ください。
 - **製品が一般公開されている**。 一部のツール、SDK、DDK、サービス パックは、[Microsoft ダウンロード センター](https://www.microsoft.com/download)で一般公開されています。 このような製品は、ダウンロードに公開されない場合があります。
 - **まだ製品がリリースされていない**。  ダウンロードでは、多くのプレリリース (ベータ) 版やリリース候補版を入手できます。 ただし、すべてのベータ版が公開されるわけではありません。たとえば、一部のベータ版には特別な登録や資格が必要です。 オープン テクニカル ベータ プログラムの詳細については、[Microsoft Connect](https://connect.microsoft.com/) にアクセスしてください。
-- **お客様の国ではその製品を利用できない。** 地域的な制約により、ご利用いただけない Microsoft 製品もあります。
+- **お客様の国または地域ではその製品を利用できない。** 地域的な制約により、ご利用いただけない Microsoft 製品もあります。
 - **冗長なソフトウェア。** Office を含むサブスクリプションで、Select Office スイートおよびスタンドアロン Office ダウンロードおよびプロダクト キーは使用できなくなります。 同じバージョンの対応する最高の Office スイートのダウンロードとプロダクト キーを使用できます。  たとえば、PowerPoint 2010 を検索する場合、検索結果は生成されません。  しかし、Office 2010 (PowerPoint 2010 が含まれる Office スイート) を検索し、スイートをダウンロードすることはできます。
 
 ## <a name="what-do-i-get"></a>何を取得できますか。
@@ -38,12 +38,12 @@ ms.locfileid: "80232303"
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 - ソフトウェアのダウンロードによっては、インストールとライセンス認証を行うためにプロダクト キーが必要になる場合があります。  プロダクト キーの入手方法と管理方法の詳細については、[プロダクト キー](product-keys.md)に関する記事をご覧ください。 
 - [ソフトウェアをダウンロード](download-software.md)する方法を学習します。

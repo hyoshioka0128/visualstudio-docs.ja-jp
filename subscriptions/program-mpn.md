@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183055"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387149"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -44,7 +44,7 @@ MPN でコンピテンシーを取得するか、Action Pack を購入したパ�
 
 | Silver コンピテンシーのみを持つパートナー向けの最大の特典                   | 1 つ以上の Gold コンピテンシーを持つパートナー向けの最大の特典               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 国ごとに 25 Visual Studio Enterprise サブスクリプション、世界中で 75 個          | 国ごとに 50 Visual Studio Enterprise サブスクリプション、世界中で 150 個         |
+| 国または地域ごとに 25 個の Visual Studio Enterprise サブスクリプション、世界中で 75 個          | 国または地域ごとに 50 個の Visual Studio Enterprise サブスクリプション、世界中で 150 個         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Action Pack を購入するパートナー向けのサブスクリプション
 

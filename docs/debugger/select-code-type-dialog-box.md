@@ -15,18 +15,20 @@ helpviewer_keywords:
 - debugging [Visual Studio], engine selection
 - debugger, engine selection
 - debugging engine selection dialog box
+no-loc:
+- Blazor WebAssembly
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6831837853f2e8dd5502e57d0976899c5d31a1a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285427"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211578"
 ---
 # <a name="select-code-type-dialog-box"></a>[コードの種類の選択] ダイアログ ボックス
 
@@ -37,7 +39,7 @@ ms.locfileid: "85285427"
 **次のコードの種類をデバッグする:** 表示される一覧から、デバッグするコードの種類を選択します。 これは、[アタッチの失敗をトラブルシューティング](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors)するときに役立ちます。 このオプションを使用すると、デバッグするコードの種類のみに検出を制限できます。
 
    ::: moniker range=">=vs-2019"
-   - Blazor WebAssembly - クライアント側の Blazor WebAssembly
+   - Blazor WebAssembly - クライアント側 Blazor WebAssembly
    - GPU - ソフトウェア エミュレーター - GPU ソフトウェア エミュレーター上で実行される C++ コード
    - JavaScript (Chrome) - Chrome で実行される JavaScript
    - JavaScript (Microsoft Edge - Chromium) - Windows 10 用 Chromium ベース Microsoft Edge で実行される JavaScript

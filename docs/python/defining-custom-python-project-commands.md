@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540869"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386986"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python プロジェクトのカスタム コマンドを定義する
 
@@ -384,7 +384,7 @@ Web プロジェクトの **[サーバーの起動]** および **[デバッグ 
 
 定義されていないプロパティを参照する場合は、属性値を空にすることができます。 たとえば、トークン `$(StartupFile)` を使っていて、スタートアップ ファイルがプロジェクトで定義されていない場合、そのトークンは空の文字列に解決されます。 このような場合は、既定値を定義できます。 たとえば、Bottle、Flask、Django Project テンプレートで定義されている **[サーバーの起動]** および **[デバッグ サーバーの開始]** コマンドは、プロジェクトのプロパティでサーバーのスタートアップ ファイルに別の値が定義されていない場合、既定で *manage.py* になります。
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>コマンドを実行すると Visual Studio がハングしてクラッシュする
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>コマンドを実行すると Visual Studio が応答しなくなりクラッシュする
 
 `ExecuteIn="output"` を指定してコンソール コマンドを実行しようとすると、Visual Studio が出力の解析を試みてクラッシュする場合があります。 代わりに、`ExecuteIn="console"` を使用してください。 ([問題 3682](https://github.com/Microsoft/PTVS/issues/3681) に関する説明を参照してください)
 

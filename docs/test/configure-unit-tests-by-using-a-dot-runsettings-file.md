@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288768"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211610"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -67,7 +67,7 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
     </Project>
     ```
 
-- ".runsettings" という名前の実行設定ファイルを、ソリューションのルートに配置します。
+- *.runsettings* という名前の実行設定ファイルを、ソリューションのルートに配置します。
 
   実行設定ファイルの自動検出が有効になっている場合、このファイル内の設定は実行されるすべてのテストに適用されます。 runsettings ファイルの自動検出は、次の 2 つの場所から有効にすることができます。
   
@@ -205,6 +205,11 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
 他の種類の診断データ アダプターをカスタマイズするには、[テスト設定ファイル](../test/collect-diagnostic-information-using-test-settings.md)を使用します。
 
+
+### <a name="blame-data-collector"></a>Blame データ コレクター
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+このオプションは、テスト ホストがクラッシュする原因となる問題のあるテストを分離するのに役立ちます。 コレクターを実行すると、出力ファイル (*Sequence.xml*) が *TestResults* に作成されます。これには、クラッシュ前のテストの実行順序がキャプチャされます。 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ public void HomePageTest()
   </LoggerRunSettings>
 ```
 
-`LoggerRunSettings` セクションには、テスト実行に使用される 1 つ以上のロガーが定義されています。 最も一般的なロガーは、コンソール、trx、および html です。 
+`LoggerRunSettings` セクションによって、テスト実行に使用される 1 つ以上のロガーが定義されます。 最も一般的なロガーは、コンソール、trx、および html です。 
 
 ### <a name="mstest-run-settings"></a>MSTest の実行設定
 
@@ -386,6 +402,33 @@ public void HomePageTest()
 |**MapInconclusiveToFailed**|False|テストが結果不確定の状態で完了した場合は、**テスト エクスプローラー**でスキップ状態にマップされます。 結果不確定のテストを失敗として表示する場合は、この値を **true** に設定します。|
 |**InProcMode**|False|テストを MSTest アダプターと同じプロセスで実行する場合は、この値を **true** に設定します。 この設定で、わずかにパフォーマンスが向上します。 ただし、あるテストが例外で終了した場合、残りのテストは続行されません。|
 |**AssemblyResolution**|False|単体テストを検索して実行する場合、追加のアセンブリへのパスを指定できます。 たとえば、テスト アセンブリと同じディレクトリにない依存関係アセンブリにこれらのパスを使用します。 パスを指定するには、**Directory Path** 要素を使用します。 パスには環境変数を含めることができます。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>環境変数を *.runsettings* ファイルに指定する
+
+環境変数はテスト ホストとの直接の対話処理が可能な *.runsettings* ファイルに設定できます。 *DOTNET_ROOT* のような環境変数の設定を必要とする単純ではないプロジェクトをサポートするには、 *.runsettings* ファイルに環境変数を指定する必要があります。 これらの変数は、テスト ホスト プロセスの生成中に設定され、ホストで使用できます。
+
+### <a name="example"></a>例
+
+次のコードは、環境変数を渡すサンプルの *.runsettings* ファイルです。
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+**RunConfiguration** ノードには、**EnvironmentVariables** ノードが含まれている必要があります。 環境変数は、要素名とその値として指定できます。
+
+> [!NOTE]
+> これらの環境変数は、テスト ホストが開始されるときに常に設定される必要があるため、テストは常に別のプロセスで実行する必要があります。 このため、テスト ホストが常に呼び出されるよう、環境変数があるときは */InIsolation* フラグが設定されます。
 
 ## <a name="see-also"></a>関連項目
 

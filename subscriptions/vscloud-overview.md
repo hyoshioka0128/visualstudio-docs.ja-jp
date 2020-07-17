@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906025"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211624"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -40,7 +40,7 @@ Azure サブスクリプションに対して、[所有者](https://docs.microso
 
 4. 購入するサブスクリプションの数を選択します。
     > [!div class="mx-imgBorder"]
-    > ![サブスクリプションの数を選択する](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![サブスクリプションの数を選択する](_img/buy-vs-subscriptions/buy-vs-sub-users.png "購入するサブスクリプションの数を選択する")
 
     サブスクリプションを自分に割り当てない場合は、 **[自分にこのサブスクリプションを割り当てる]** をオフにします。
 
@@ -62,12 +62,18 @@ Azure サブスクリプションに対して、[所有者](https://docs.microso
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>購入したクラウド サブスクリプションの更新のキャンセル
 
-* 購入したサブスクリプションの数を変更するには:
+サブスクリプションをキャンセルするために必要なのは、契約のサブスクリプションの数をゼロ (0) に設定することだけです。  サブスクリプションの数を減らすには、次の手順に従います。
+1. <https://manage.visualstudio.com> にサインインします
+1. 複数の契約がある場合は、ドロップダウン リストから目的の契約を選択します。
+1. 左上にある **[概要]** アイコンをクリックして、サブスクリプションに関する情報を表示します。  
+> [!div class="mx-imgBorder"]
+> ![サブスクリプションの概要の表示](_img/buy-vs-subscriptions/overview-button.png "概要ボタンをクリックしてサブスクリプションの詳細を表示する")
+
+4. キャンセルするサブスクリプションのエントリを見つけて、 **[数量の変更]** をクリックします。
+1. 数量をゼロ (0) に設定します。 サブスクリプションは、予定請求日まではそのまま残りますが、請求日となったときに更新は行われません。   
 
 > [!div class="mx-imgBorder"]
-> ![サブスクリプションを変更する](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* これらのサブスクリプションをキャンセルするには、サブスクリプションの数をゼロ (0) に減らします。 次の請求期間の開始時に更新がありません (月間クラウド サブスクリプションの場合は次の月初、年間クラウド サブスクリプションの場合は 12 か月後)。
+> ![サブスクリプションを変更する](_img/buy-vs-subscriptions/manage-subscriptions.png "[数量の変更] をクリックしてサブスクリプションをキャンセルする")
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

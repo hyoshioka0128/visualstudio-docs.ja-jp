@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769925"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387318"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -69,7 +69,7 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
 1. **[記録]** タブを選択します。
 
-1. 問題をそこで再現できる場合は、 **[操作の記録]** で Visual Studio の現在のインスタンスを選択します。 再現できない (たとえば、Visual Studio がハングしている) 場合は、 **\<Create a new instance>** を選択して、Visual Studio の新しいインスタンスの操作を記録します。
+1. 問題をそこで再現できる場合は、 **[操作の記録]** で Visual Studio の現在のインスタンスを選択します。 再現できない (たとえば、Visual Studio が応答していない) 場合は、 **\<Create a new instance>** を選択して、Visual Studio の新しいインスタンスの操作を記録します。
 
 1. **[記録の開始]** を選択します。 ツールの実行を許可します。
 
