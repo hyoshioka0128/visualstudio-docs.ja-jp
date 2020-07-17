@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904410"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387136"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -36,7 +36,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 
 5. 個人情報を入力し、ユーザー名とパスワードを選択し、 **[今すぐ参加]** をクリックします。
 
-6. 国と郵便番号を指定し、 **[次へ]** をクリックします。
+6. 国または地域と郵便番号を指定し、 **[次へ]** をクリックします。
 
 7. 次に、プロファイルとして自分自身に関する情報を入力します。  学生であるかどうかを示し、直近の役職名、会社、および業界を入力します。
 

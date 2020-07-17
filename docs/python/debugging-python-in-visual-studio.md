@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541155"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387032"
 ---
 # <a name="debug-your-python-code"></a>Python コードのデバッグ
 
@@ -253,7 +253,7 @@ ptvsd のインストールを管理するには
 
     ![[出力] ウィンドウ内のデバッガーのログ記録の出力](media/debugger-logging-output.png)
 
-1. Visual Studio がハングしたり、または **[出力]** ウィンドウにアクセスできない場合は、Visual Studio を再起動してコマンド ウィンドウを開き、次のコマンドを入力します。
+1. Visual Studio が応答しなくなったり、または **[出力]** ウィンドウにアクセスできなくなったりした場合は、Visual Studio を再起動してコマンド ウィンドウを開き、次のコマンドを入力します。
 
     ```ps
     DebugAdapterHost.Logging /On

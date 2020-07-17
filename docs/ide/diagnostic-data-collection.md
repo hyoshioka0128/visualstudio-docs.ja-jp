@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652474"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387253"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio で収集したシステムによって生成されたログ
 
@@ -20,11 +20,11 @@ Visual Studio は、問題の修正と製品の品質向上のために、[Visua
 
 ## <a name="types-of-collected-data"></a>収集されるデータの種類
 
-Visual Studio では、クラッシュ、ハング、UI の無応答、CPU またはメモリの使用率が高い状況のシステムで生成されたログを収集します。 製品のインストールまたは使用中に発生したエラーに関する情報も収集します。 収集したデータは、エラーによって異なり、スタック トレース、メモリ ダンプ、例外情報が含まれる場合があります。
+Visual Studio では、クラッシュ、UI の無応答、CPU またはメモリの使用率が高い状況のシステムで生成されたログが収集されます。 製品のインストールまたは使用中に発生したエラーに関する情報も収集します。 収集したデータは、エラーによって異なり、スタック トレース、メモリ ダンプ、例外情報が含まれる場合があります。
 
 - 高い CPU 使用率と無応答については、関連する Visual Studio のスレッドのスタック トレースが収集されます。
 
-- いくつかのスレッドのスタック トレースでは問題の原因を特定するために十分ではない場合、たとえば、クラッシュ、ハング、高いメモリ使用率については、メモリ *ダンプ*を収集します。 ダンプは、エラーが発生したときのプロセスの状態を表します。
+- いくつかのスレッドのスタック トレースでは問題の原因を特定するために十分ではない場合、たとえば、クラッシュ、無応答、高いメモリ使用率については、メモリ *ダンプ*が収集されます。 ダンプは、エラーが発生したときのプロセスの状態を表します。
 
 - ディスク上のファイルに書き込もうとしているときの例外など、予期しないエラー条件については、例外に関する情報を収集します。 この情報には、例外の名前、例外が発生したスレッドのスタック トレース、例外に関連するメッセージ、特定の例外に関連するその他の情報が含まれています。
 
@@ -52,7 +52,7 @@ Visual Studio では、クラッシュ、ハング、UI の無応答、CPU ま�
 
 ### <a name="error-classification"></a>エラーの分類
 
-ログに基づいて、エラーが分類され、調査の優先度付けのためにカウントされます。 たとえば、“System.IO.FileStream.Init” での “System.IO.\__Error.WinIOError” が、製品のバージョン \<x> で 500 回発生し、そのバージョンで発生率が最高になっていることを検出することがあります。
+ログに基づいて、エラーが分類され、調査の優先度付けのためにカウントされます。 たとえば、"System.IO.FileStream.Init" での "System.IO.\__Error.WinIOError" が、製品のバージョン \<x> で 500 回発生し、そのバージョンで発生率が最高になっていることを検出することがあります。
 
 ### <a name="work-items-for-tracking"></a>追跡のための作業項目
 
@@ -70,7 +70,7 @@ Visual Studio では、クラッシュ、ハング、UI の無応答、CPU ま�
 
 収集するデータの目的とそのアクセスとリテンション期間の制約を考えた場合、Visual Studio および Windows の既定のプライバシー設定を使用することお勧めします。 ただし、Visual Studio エクスペリエンス向上プログラムへの参加は[オプトアウト](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out)することができます。 すべてのプログラムのシステムによって生成されたログの収集をオプトアウトするには、「[Windows 10 の診断、フィードバック、プライバシー](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)」を参照してください。 オプションは、ご使用の Windows のバージョンによって異なる場合があります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio カスタマー エクスペリエンス向上プログラム](visual-studio-experience-improvement-program.md)
 - [Windows 10 の診断、フィードバック、プライバシー](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092324"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181054"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>チーム エクスプローラーのプロジェクトに接続する
 
@@ -38,7 +38,7 @@ ms.locfileid: "86092324"
    ![チーム エクスプローラーのプロジェクトに接続する](media/team-explorer/connect-project.png)
 
 > [!TIP]
-> 新しいプロジェクトを作成するか、ユーザーをプロジェクトに追加する必要がある場合、[プロジェクトの作成 (Azure DevOps)](/azure/devops/organizations/projects/create-project) に関するページと[プロジェクトまたはチームにユーザーを追加する (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project) 方法に関するページを参照してください。
+> リポジトリからプロジェクトを開く場合は、[リポジトリからプロジェクトを開く](../get-started/tutorial-open-project-from-repo.md)方法に関するページを参照してください。 新しいプロジェクトを作成するか、ユーザーをプロジェクトに追加する場合、[プロジェクトの作成 (Azure DevOps)](/azure/devops/organizations/projects/create-project)と、[プロジェクトまたはチームへのユーザーの追加 (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project)に関するページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 

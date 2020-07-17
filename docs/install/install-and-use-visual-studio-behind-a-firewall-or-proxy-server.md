@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 09340940796e20f679c3c9bbad3d55880b25ab7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce11689cc8cba45473a918668a07ddcc6cdc2ee3
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283477"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387162"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -112,7 +112,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | Office Web <br>アドイン <br> file:/// <br>検証 <br>サービス | verificationservice.osi.office.net | https/443 | Office Web アドインのマニフェストを検証するために使用されます。 |
 | SharePoint と <br>Office アドイン | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | SharePoint および Office のアドインを SharePoint Online および Office 365 に発行し、テストするために使用されます |
 | ワークフロー マネージャー <br>テスト サービス<br> Host | | http/12292 | SharePoint アドインをワークフローでテストするために自動的に作成されるファイアウォール規則です。 |
-| 自動的に収集される <br>信頼性の統計情報 <br>と、 <br>Azure SDK および SQL Tools 用の <br>その他の<br> カスタマー エクスペリエンス向上プログラム <br>(CEIP) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | ユーザーから Microsoft に信頼性の統計情報 (クラッシュ/ハング データ) を送信するために使用されます。 Windows エラー報告を有効にした場合、実際のクラッシュ/ハング ダンプは引き続きアップロードされ、統計情報のみが抑制されます。 <br>Azure Tools SDK 拡張機能の匿名の利用状況パターン、および SQL ツールの利用状況パターンを Visual Studio に対して明らかにします。 |
+| 自動的に収集される <br>信頼性の統計情報 <br>と、 <br>Azure SDK および SQL Tools 用の <br>その他の<br> カスタマー エクスペリエンス向上プログラム <br>(CEIP) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | ユーザーから Microsoft に信頼性の統計情報 (クラッシュまたは無応答データ) を送信するために使用されます。 Windows エラー報告を有効にした場合、実際のクラッシュまたは無応答ダンプは引き続きアップロードされ、統計情報のみが抑制されます。 <br>Azure Tools SDK 拡張機能の匿名の利用状況パターン、および SQL ツールの利用状況パターンを Visual Studio に対して明らかにします。 |
 | Visual Studio <br> カスタマー エクスペリエンス <br>向上プログラム (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | 匿名の利用状況のパターンとエラー ログを収集するために使用されます。 <br><br>UI のフリーズ問題を追跡するために使用されます。 |
 | Azure リソースの<br>作成と <br>管理 | management.azure.com <br>management.core.windows.net | https/443 | Web アプリケーション、Azure Functions、または WebJobs の発行をサポートする Azure Websites またはその他のリソースを作成するために使用されます。 |
 | 更新された Web 発行ツールの <br>確認と拡張機能に関する <br>推奨事項 | marketplace.visualstudio.com | https/443 | 更新された発行ツールの可用性を確認するために使用されます。 無効の場合、Web 発行のための潜在的な推奨拡張機能が表示されない場合があります。 |

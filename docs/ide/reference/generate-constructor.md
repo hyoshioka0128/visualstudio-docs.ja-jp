@@ -1,18 +1,18 @@
 ---
 title: コンストラクターのクイック アクションを生成する
-ms.date: 01/26/2018
+ms.date: 07/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306789"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285415"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio でコンストラクターを生成する
 
@@ -22,7 +22,7 @@ ms.locfileid: "79306789"
 
 - Visual Basic
 
-**機能:** クラスの新しいコンストラクターのコードをすぐに生成できます。
+**概要:** クラスの新しいコンストラクターのコードをすぐに生成できます。
 
 **条件:** 新しいコンストラクターを導入し、自動的に適切に宣言したいとき。または既存のコンストラクターを変更するとき。
 
@@ -31,12 +31,13 @@ ms.locfileid: "79306789"
 **方法:** コンストラクターを生成するにはいくつかの方法があります。
 
 - [コンストラクターを生成してメンバーを選択する](#pick)
+- [プロパティを指定してコンストラクターを生成する](#with)
 - [選択したフィールドからコンストラクターを生成する](#selection)
 - [新しい使用からコンストラクターを生成する](#usage)
 - [既存のコンストラクターにパラメーターを追加する](#addparameter)
 - [コンストラクターのパラメーターからフィールド/プロパティを作成して初期化する](#create)
 
-## <a id = "pick"></a> コンストラクターを生成してメンバーを選択する (C# のみ)
+## <a name="generate-constructor-and-pick-members-c-only"></a><a id = "pick"></a> コンストラクターを生成してメンバーを選択する (C# のみ)
 
 1. クラス内の任意の空の行にカーソルを置きます。
 
@@ -44,11 +45,11 @@ ms.locfileid: "79306789"
 
 1. 次に、以下のいずれかを実行します。
 
-   - **[キーボード]**
+   - **キーボード**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
 
    ![コンストラクター生成のプレビュー](media/constructor1-preview-cs.png)
 
@@ -67,7 +68,17 @@ ms.locfileid: "79306789"
 
    ![コンストラクター生成の結果](media/constructor1-result-cs.png)
 
-## <a id="selection"></a> 選択したフィールドからコンストラクターを生成する (C# のみ)
+## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> プロパティを指定してコンストラクターを生成する (C# のみ)
+
+1. インスタンスにカーソルを合わせます。
+
+2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+
+3. **[`<QualifiedName>` でコンストラクターを生成する (プロパティ付き)** ] を選択します。
+
+   ![コンストラクター生成のプレビュー](media/generate-constructor-with-properties.png)
+
+## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> 選択したフィールドからコンストラクターを生成する (C# のみ)
 
 1. 生成されるコンストラクターに含めるメンバーを強調表示します。
 
@@ -75,11 +86,11 @@ ms.locfileid: "79306789"
 
 1. 次に、以下のいずれかを実行します。
 
-   - **[キーボード]**
+   - **キーボード**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
 
       ![コンストラクター生成のプレビュー](media/constructor2-preview-cs.png)
 
@@ -89,7 +100,7 @@ ms.locfileid: "79306789"
 
    ![コンストラクター生成の結果](media/constructor2-result-cs.png)
 
-## <a id="usage"></a> 新しい使用からコンストラクターを生成する (C#、Visual Basic)
+## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> 新しい使用からコンストラクターを生成する (C#、Visual Basic)
 
 1. 赤い波線が表示されている行にカーソルを置きます。 赤い波線は、まだ存在していないコンストラクターの呼び出しを示します。
 
@@ -103,12 +114,12 @@ ms.locfileid: "79306789"
 
 2. 次に、以下のいずれかを実行します。
 
-   - **[キーボード]**
+   - **キーボード**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
 
       ![コンストラクター生成のプレビュー](media/constructor-preview-cs.png)
 
@@ -127,7 +138,7 @@ ms.locfileid: "79306789"
 
        ![VB のメソッド生成結果](media/constructor-result-vb.png)
 
-## <a id="addparameter"></a> 既存のコンストラクターにパラメーターを追加する (C# のみ)
+## <a name="add-parameter-to-existing-constructor-c-only"></a><a id="addparameter"></a> 既存のコンストラクターにパラメーターを追加する (C# のみ)
 
 1. 既存のコンストラクターの呼び出しにパラメーターを追加します。
 
@@ -137,12 +148,12 @@ ms.locfileid: "79306789"
 
 3. 次に、以下のいずれかを実行します。
 
-   - **[キーボード]**
+   - **キーボード**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
 
       ![コンストラクター生成のプレビュー](media/constructor4-preview-cs.png)
 
@@ -154,7 +165,7 @@ ms.locfileid: "79306789"
 
 また、既存のメソッドにパラメーターを追加することもできます。 詳細については、[メソッドにパラメーターを追加する方法](add-parameter.md)に関するページを参照してください。
 
-## <a id="create"></a> コンストラクターのパラメーターからフィールドまたはプロパティを作成して初期化する (C# のみ)
+## <a name="create-and-initialize-a-field-or-property-from-a-constructor-parameter-c-only"></a><a id="create"></a> コンストラクターのパラメーターからフィールドまたはプロパティを作成して初期化する (C# のみ)
 
 1. 既存のコンストラクターを探して、パラメーターを追加します。
 
@@ -164,11 +175,11 @@ ms.locfileid: "79306789"
 
 1. 次に、以下のいずれかを実行します。
 
-   - **[キーボード]**
+   - **キーボード**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
 
    ![コンストラクター生成のプレビュー](media/constructor5-preview-cs.png)
 
@@ -178,7 +189,7 @@ ms.locfileid: "79306789"
 
    ![コンストラクター生成の結果](media/constructor5-result-cs.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード生成](../code-generation-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

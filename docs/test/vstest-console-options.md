@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289041"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211564"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -52,7 +52,7 @@ ms.locfileid: "85289041"
 |**/ListExecutors**|インストール済みのテスト実行プログラムを一覧表示します。|
 |**/ListLoggers**|インストール済みのテスト ロガーを一覧表示します。|
 |**/ListSettingsProviders**|インストール済みのテスト設定プロバイダーを一覧表示します。|
-|**/Blame**|実行されているテストを追跡し、テスト ホスト プロセスがクラッシュした場合は、クラッシュ時に実行されていた特定のテストまで (特定のテストを含む) の実行の順序でテスト名を出力します。 この出力によって、より簡単に問題のあるテストを分離して、さらに診断することができます。 詳細については、[こちら](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)を参照してください。|
+|**/Blame**|変更履歴モードでテストを実行します。 このオプションは、テスト ホストがクラッシュする原因となる問題のあるテストを分離するために役立ちます。 クラッシュが検出されると、クラッシュ前に実行されたテストの順序をキャプチャするシーケンス ファイルが `TestResults/<Guid>/<Guid>_Sequence.xml` に作成されます。 詳細については、「[Blame データ コレクター](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)」を参照してください。|
 |**/Diag:[*ファイル名*]**|指定されたファイルに診断トレース ログを書き込みます。|
 |**/ResultsDirectory:[*path*]**|テスト結果ディレクトリが存在しない場合、指定されたパスに作成されます。<br />例 : `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|現在のプロセスを起動する親プロセスのプロセス ID です。|
@@ -64,24 +64,44 @@ ms.locfileid: "85289041"
 
 ## <a name="examples"></a>使用例
 
-*VSTest.Console.exe* を実行するための構文は、次のとおりです。
+*vstest.console.exe* を実行するための構文は、次のとおりです。
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-次のコマンドでは、テスト ライブラリ **myTestProject.dll** の *VSTest.Console.exe* を実行します。
+次のコマンドでは、テスト ライブラリ *myTestProject.dll* の *vstest.console.exe* が実行されます。
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-次のコマンドでは、複数のテスト ファイルを使用して *VSTest.Console.exe* を実行します。 テスト ファイル名は次のようにスペースで区切ります。
+次のコマンドでは、複数のテスト ファイルを使用して *vstest.console.exe* が実行されます。 テスト ファイル名は次のようにスペースで区切ります。
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-次のコマンドでは、いくつかのオプションを使用して *VSTest.Console.exe* を実行します。 分離プロセスで *myTestFile.dll* ファイル内のテストが実行され、*Local.RunSettings* ファイルで指定された設定が使用されます。 さらに、"Priority=1" とマークされているテストのみが実行され、結果は *.trx* ファイルに記録されます。
+次のコマンドでは、いくつかのオプションを使用して *vstest.console.exe* が実行されます。 分離プロセスで *myTestFile.dll* ファイル内のテストが実行され、*Local.RunSettings* ファイルで指定された設定が使用されます。 さらに、"Priority=1" とマークされているテストのみが実行され、結果は *.trx* ファイルに記録されます。
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+次のコマンドでは、テスト ライブラリ *myTestProject.dll* の *vstest.console.exe* が `/blame` オプションを使用して実行されます。
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+テスト ホストのクラッシュが発生した場合は、*sequence.xml* ファイルが生成されます。 このファイルには、クラッシュ時に実行されていた特定のテストまで (特定のテストを含む) の実行の順序での、テストの完全修飾名が含まれます。
+
+テスト ホストのクラッシュが一切発生していない場合、*sequence.xml* ファイルは生成されません。
+
+生成された *sequence.xml* ファイルの例を次に示します。 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

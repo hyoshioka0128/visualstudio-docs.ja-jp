@@ -7,18 +7,18 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: f195c0f2a165dae1d17697fb351ee6f576864a37
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 247a2b9d4649aae6f3a32a6156e2f9558c481e68
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906093"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387292"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
 
 > [!NOTE]
-> Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、 <https://visualstudio.microsoft.com/vs/pricing/> に移動し、Visual Studio サブスクリプションのさまざまな購入オプションを調べることをお勧めします。
+> Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、<https://visualstudio.microsoft.com/vs/pricing/> に移動し、Visual Studio サブスクリプションのさまざまな購入オプションを調べることをお勧めします。
 
 > [!NOTE]
 > 特定のレベルのすべてのサブスクリプションで、サポート インシデントを受け取れるわけではありません。 FTE、NFR、MPN、MCT およびその他のプログラムを通じて取得したサブスクリプションは、サポート インシデントを受け取りません。 自分のサブスクリプションにテクニカル サポート インシデントを受け取る資格がない場合、テクニカル サポート タイルは使用可能な特典に表示されません。
@@ -39,7 +39,7 @@ Visual Studio サブスクリプションからダウンロードされた開発
 2. これで担当者とのチャット セッションが開始されます。担当者は、ユーザーの**契約 ID** と**アクセス ID** を作成して、ユーザーが保存できるようにそれらをメールを通じてユーザーに提供することができます。
 
 3. プロセスを完了するには、担当者に以下のものを提供する必要があります。
-   - 国
+   - お住まいの国または地域
    - 会社名
    - フル ネーム
    - 自分のサブスクリプションへのサインインに使用するメール アドレス
@@ -52,10 +52,10 @@ Visual Studio サブスクリプションからダウンロードされた開発
 4. プロセスが完了すると、サポート インシデントを作成するときに使用する**契約 ID** と**アクセス ID** が記載されたメールが届きます。  ここでは、新しいアクセス ID と契約 ID を使用して、サポート インシデントを送信する手順についても提供されます。 
 
 > [!NOTE]
-> 英語以外の言語のサポート アカウントを有効にする場合は、お住まいの国を[このリスト](https://support.microsoft.com/help/14084/activate-support-contract)から選択してください。
+> 英語以外の言語のサポート アカウントを有効にする場合は、お住まいの国または地域を[このリスト](https://support.microsoft.com/help/14084/activate-support-contract)から選択してください。
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>特典を使用してインシデントを送信する方法
-**契約 ID** および**アクセス ID** を設定したら、これらを使用して、[オンライン](https://support.microsoft.com/oas/) (サインインが必要) でまたは [Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) を通じて、またはお住まいの国のテクニカル サポート番号に電話して、テクニカル サポートにインシデントを送信することができます。 オンラインでインシデントを送信する場合は、Microsoft サポート担当者にコールバックさせるオプションがあります。
+**契約 ID** および**アクセス ID** を設定したら、これらを使用して、[オンライン](https://support.microsoft.com/oas/) (サインインが必要) で、または [Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) を通じて、またはお住まいの国や地域のテクニカル サポート番号に電話して、テクニカル サポートにインシデントを送信することができます。 オンラインでインシデントを送信する場合は、Microsoft サポート担当者にコールバックさせるオプションがあります。
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>テクニカル サポート インシデントをオンラインで送信するために、サインインに使用するアカウントと関連付けられた契約 ID とアクセス ID を既にお持ちの場合
 インシデントをオンラインで送信するときに、まずサインインが求められます。 契約 ID およびアクセス ID と関連付けられているアカウントでサインインします。 アカウントに関連付けられている既存のサポート プランの特典が、サポート ワークフローの手順 3 に表示されます。 そのプランを選択し、ケースの送信を続行します。 プランに示されている上限に達するか、プランの有効期限まで (どちらか早い方)、インシデントを送信できます。 残りのインシデントが “0” になるか、プランの有効期限が切れると、アクティブではなくなります。
@@ -99,7 +99,7 @@ Visual Studio サブスクリプションからダウンロードされた開発
 6. 残りの手順 (重要度、連絡先情報、確認) を完了します。   インシデントを送信すると、インシデントが正常に送信されたことを示す確認メッセージが表示され、ケースにファイルをアップロードすることができます。 サポート担当者がインシデントに割り当てられます。担当者はユーザーが選択した連絡方法でユーザーに連絡し、問題の解決に当たります。
 
 #### <a name="submit-an-incident-by-phone"></a>電話でインシデントを送信する
-電話でサポート インシデントを作成する場合は、お住まいの国の[カスタマー サービス](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers)の電話番号を見つけてください。 電話をかける場合は、契約 ID とアクセス ID が使用可能であることをご確認ください。
+電話でサポート インシデントを作成する場合は、お住まいの国または地域の[カスタマー サービス](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers)の電話番号を見つけてください。 電話をかける場合は、契約 ID とアクセス ID が使用可能であることをご確認ください。
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>Azure Portal 内でインシデントを送信する
 Azure に関連する問題がある場合に Visual Studio サブスクリプションのテクニカル サポート特典を使用するには、契約 ID とアクセス ID を Azure サブスクリプションにリンクする必要があります。

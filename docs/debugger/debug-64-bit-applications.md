@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca7feade173db9ccf8c86daaeb1399ef3e10a08b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350772"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386252"
 ---
 # <a name="debug-64-bit-applications"></a>64 ビット アプリケーションをデバッグする
 ローカル コンピューターまたはリモート コンピューターで実行されている 64 ビット アプリケーションをデバッグできます。
@@ -37,7 +37,7 @@ ms.locfileid: "85350772"
 
 1. C# コンソール アプリケーションなど、Visual Studio ソリューションを作成します。
 
-2. 構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、[プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
+2. 構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、「[方法:プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
 
 3. この時点で、64 ビット バージョンのリモート デバッガー (msvsmon.exe) が起動します。 64 ビット構成のソリューションが開いている限り、これが実行されます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "85350772"
 
 - ネットワーク スタックの信頼性を低下させるネットワーク セキュリティ ソフトウェアがコンピューターにインストールされており、localhost に向かうパケットがドロップされています。 すべてのネットワーク セキュリティ ソフトウェアを無効にしてみて、問題が解決するか確認します。 解決した場合は、ネットワーク セキュリティ ソフトウェア ベンダーに、ソフトウェアが localhost トラフィックに干渉していることを報告します。
 
-- Visual Studio でハングまたはパフォーマンスに関する問題が発生しています。 問題が定期的に発生する場合は、Visual Studio (devenv.exe) とワーカー プロセス (msvsmon.exe) のダンプを収集して、Microsoft に送信できます。 問題の報告については、「 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)」をご覧ください。
+- Visual Studio が応答しなくなった、またはその他のパフォーマンスの問題が発生しています。 問題が定期的に発生する場合は、Visual Studio (devenv.exe) とワーカー プロセス (msvsmon.exe) のダンプを収集して、Microsoft に送信できます。 問題の報告については、「 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

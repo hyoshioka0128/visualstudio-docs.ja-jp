@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676372"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386954"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのダンプ ファイル
 
@@ -35,7 +35,7 @@ ms.locfileid: "65676372"
 
 Visual Studio でヒープ付きダンプ ファイルを開くのは、デバッグ セッションのブレークポイントで実行を中断するようなものです。 実行を続行することはできませんが、ダンプ時におけるアプリのスタック、スレッド、変数値を調べることができます。
 
-ダンプは、ほとんどの場合、開発者がアクセス権を持たないコンピューターで生じた問題をデバッグするために使用されます。 クラッシュやハングを自分のコンピューター上で再現できないときは、顧客のコンピューターからのダンプ ファイルを使用できます。 また、テスト担当者は、詳細なテストに使用するクラッシュまたはハング データを保存するためにダンプを作成します。
+ダンプは、ほとんどの場合、開発者がアクセス権を持たないコンピューターで生じた問題をデバッグするために使用されます。 クラッシュや応答しないプログラムを自分のマシン上で再現できないときは、顧客のマシンからのダンプ ファイルを使用できます。 また、テスト担当者は、詳細なテストに使用するクラッシュまたは応答しないプログラムのデータを保存するためにダンプを作成します。
 
 Visual Studio デバッガーでは、マネージドまたはネイティブ コードのダンプ ファイルを保存できます。 Visual Studio によって作成されたダンプ ファイルも、"*ミニダンプ形式*" でファイルを保存する他のアプリによって作成されたダンプ ファイルもデバッグすることができます。
 
