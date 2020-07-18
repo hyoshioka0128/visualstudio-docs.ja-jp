@@ -1,17 +1,17 @@
 ---
 title: XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "82921107"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459295"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
 
@@ -98,8 +98,6 @@ ms.locfileid: "82921107"
 ### <a name="viewbox"></a>Viewbox
 
 ズーム コントロールのようにオブジェクトを拡大または縮小します。 **ViewBox** に対して追加できるオブジェクトは 1 つのみです。 複数のオブジェクトにその効果を適用する場合は、レイアウト パネルを **ViewBox** に追加してから、コントロールをそのレイアウト パネルに追加します。
-
-(WPF プロジェクトでのみ使用可能)
 
 ![ViewBox レイアウト コントロール](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

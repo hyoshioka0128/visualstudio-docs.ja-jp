@@ -171,6 +171,7 @@ f1_keywords:
 - CA1832
 - CA1833
 - CA1835
+- CA1836
 - CA1900
 - CA1901
 - CA1903
@@ -290,12 +291,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835434"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454190"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -460,6 +461,7 @@ ms.locfileid: "85835434"
 | CA1832 |[CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1832.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | CA1833 |[CA1833: 配列の Span または Memory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1833.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.Span%601> <xref:System.Memory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | CA1835 |[CA1835: ' ReadAsync ' と ' WriteAsync ' に対して ' Memory' に基づくオーバーロードを優先します](../code-quality/ca1835.md) | ' Stream ' には、最初の引数として ' Memory byte ' を受け取る ' ReadAsync ' オーバーロード &lt; &gt; と、 &lt; &gt; 1 番目の引数として ' ReadOnlyMemory Byte ' を受け取る ' WriteAsync ' オーバーロードがあります。 より効率的なメモリベースのオーバーロードを呼び出すことをお勧めします。 |
+| CA1836 |[CA1836: `IsEmpty` `Count` 使用可能な場合は優先します。](../code-quality/ca1836.md) | `IsEmpty` `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> オブジェクトに項目が含まれているかどうかを判断するために、、、またはよりも効率的なプロパティを優先します。 |
 | CA1900 | [CA1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
 | CA1903 | [CA1903:対象のフレームワークから API のみを使用します](../code-quality/ca1903.md) | メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。 |

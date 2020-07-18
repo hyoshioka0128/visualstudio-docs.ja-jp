@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: dabcd99e4807d60db53487527d9b3a554169c8c4
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814929"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454151"
 ---
 # <a name="performance-warnings"></a>パフォーマンスに関する警告
 パフォーマンスの警告は、高パフォーマンスのライブラリとアプリケーションをサポートします。
@@ -33,7 +33,7 @@ ms.locfileid: "85814929"
 | [CA1801:使用されていないパラメーターの確認](../code-quality/ca1801.md) | メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 |
 | [CA1802:適切な場所にリテラルを使用します](../code-quality/ca1802.md) | フィールドは静的および読み取り専用 (では Shared および ReadOnly) として宣言され [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 、コンパイル時に計算できるという値を使用して初期化されます。 コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、宣言を const (const in) フィールドに変更して、実行時で [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] はなくコンパイル時に値が計算されるようにします。 |
 | [CA1804:使用されていないローカルを削除します](../code-quality/ca1804.md) | 使用されていないローカル変数や不要な引数があると、アセンブリのサイズが大きくなり、パフォーマンスが低下します。 |
-| [CA1805: 不必要に初期化しないでください](../code-quality/ca1805.md) | .NET ランタイムは、コンストラクターを実行する前に、参照型のすべてのフィールドを既定値に初期化します。 ほとんどの場合、フィールドを既定値に明示的に初期化することは冗長であり、メンテナンスコストがかかり、パフォーマンスが低下する可能性があります (アセンブリサイズの増加など)。 |
+| [CA1805:不必要に初期化しない](../code-quality/ca1805.md) | .NET ランタイムは、コンストラクターを実行する前に、参照型のすべてのフィールドを既定値に初期化します。 ほとんどの場合、フィールドを既定値に明示的に初期化することは冗長であり、メンテナンスコストがかかり、パフォーマンスが低下する可能性があります (アセンブリサイズの増加など)。 |
 | [CA1806:メソッドの結果を無視しない](../code-quality/ca1806.md) | 新しいオブジェクトが作成されましたが、使用されていないか、新しい文字列を作成して返すメソッドが呼び出され、新しい文字列が使用されていないか、またはコンポーネントオブジェクトモデル (COM) または P/Invoke メソッドが、使用されていない HRESULT またはエラーコードを返しています。 |
 | [CA1809:ローカルを使用しすぎないでください](../code-quality/ca1809.md) | パフォーマンス最適化の一般的な方法として、メモリではなくプロセッサのレジスタに値を格納する方法があります。これは "値のレジスタ格納" と呼ばれます。  すべてのローカル変数をレジスタ格納できるようにするには、ローカル変数の数を 64 個に制限します。 |
 | [CA1810:参照型の静的フィールドをインラインで初期化します](../code-quality/ca1810.md) | 型で明示的な静的コンストラクターを宣言すると、Just-In-Time (JIT) コンパイラが、静的コンストラクターが呼び出されたことを確認するために、型の静的メソッドと静的インスタンス コンストラクターに個別にチェックを追加します。 静的コンストラクターのチェックによってパフォーマンスが低下することがあります。 |
@@ -59,3 +59,4 @@ ms.locfileid: "85814929"
 | [CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1832.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | [CA1833: 配列の Span または Memory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1833.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.Span%601> <xref:System.Memory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | [CA1835: ' ReadAsync ' と ' WriteAsync ' に対して ' Memory' に基づくオーバーロードを優先します](../code-quality/ca1835.md) | ' Stream ' には、最初の引数として ' Memory byte ' を受け取る ' ReadAsync ' オーバーロード &lt; &gt; と、 &lt; &gt; 1 番目の引数として ' ReadOnlyMemory Byte ' を受け取る ' WriteAsync ' オーバーロードがあります。 より効率的なメモリベースのオーバーロードを呼び出すことをお勧めします。 |
+| [CA1836: `IsEmpty` `Count` 使用可能な場合は優先します。](../code-quality/ca1836.md) | `IsEmpty` `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> オブジェクトに項目が含まれているかどうかを判断するために、、、またはよりも効率的なプロパティを優先します。 |
