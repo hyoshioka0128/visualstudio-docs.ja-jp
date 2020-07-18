@@ -10,17 +10,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfd94a55fe207f5c20e2ed1e5630d62c73c9ba2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
+ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904725"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86418068"
 ---
 # <a name="walkthrough-highlight-text"></a>チュートリアル: テキストの強調表示
 Managed Extensibility Framework (MEF) コンポーネントパーツを作成することによって、エディターにさまざまな視覚効果を追加できます。 このチュートリアルでは、テキストファイル内で現在の単語が出現するたびに強調表示する方法について説明します。 1つの単語がテキストファイル内に複数回出現し、カレットを1回の出現時に配置すると、すべての出現箇所が強調表示されます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する
@@ -104,7 +104,7 @@ Managed Extensibility Framework (MEF) コンポーネントパーツを作成す
     ```csharp
     public HighlightWordFormatDefinition()
     {
-                this.BackgroundColor = Colors.LightBlue;
+        this.BackgroundColor = Colors.LightBlue;
         this.ForegroundColor = Colors.DarkBlue;
         this.DisplayName = "Highlight Word";
         this.ZOrder = 5;
