@@ -76,6 +76,15 @@
             - name: ユーザー エクスペリエンス ガイドライン
               tocHref: /visualstudio/extensibility/ux-guidelines/
               topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+        - name: はじめに (CSharp)
+          tocHref: /visualstudio/get-started/csharp/
+          topicHref: /visualstudio/get-started/csharp/index
+        - name: はじめに (Visual Basic)
+          tocHref: /visualstudio/get-started/visual-basic/
+          topicHref: /visualstudio/get-started/visual-basic/index
+        - name: コンテナー ツール
+          tocHref: /visualstudio/containers/
+          topicHref: /visualstudio/containers/index
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild

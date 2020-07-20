@@ -11,22 +11,20 @@
           href: container-tools.md
         - name: コンテナー内の React.js シングル ページ アプリ
           href: container-tools-react.md
-        - name: Azure Dev Spaces を使用した Kubernetes 開発 >>
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Kubernetes 開発
+          href: local-process-kubernetes.md
     - name: チュートリアル
       expanded: true
       items:
         - name: Docker Compose を使用した複数コンテナーのアプリ
           href: tutorial-multicontainer.md
-        - name: Visual Studio での Kubernetes
-          href: tutorial-kubernetes-tools.md
     - name: 方法
       items:
         - name: ローカルの Docker コンテナーでのアプリのデバッグ
           href: edit-and-refresh.md
         - name: コンテナー レジストリに配置する
           href: hosting-web-apps-in-docker.md
-        - name: Azure App Service にデプロイする
+        - name: Azure App Service に配置する
           href: deploy-app-service.md
         - name: Docker Hub に配置する
           href: deploy-docker-hub.md
@@ -40,7 +38,7 @@
           href: container-build.md
     - name: トラブルシューティング
       href: troubleshooting-docker-errors.md
-    - name: リファレンス
+    - name: 関連項目
       items:
         - name: コンテナーのプロジェクトの MSBuild プロパティ
           href: container-msbuild-properties.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: 起動設定
           href: container-launch-settings.md
+- name: Kubernetes を使用した開発
+  items:
+    - name: Visual Studio での Kubernetes
+      href: tutorial-kubernetes-tools.md
+    - name: Kubernetes を使用したローカル プロセス (プレビュー)
+      href: local-process-kubernetes.md
+    - name: Kubernetes を使用したローカル プロセスのしくみ (プレビュー)
+      href: overview-local-process-kubernetes.md

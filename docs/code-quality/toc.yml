@@ -563,6 +563,8 @@
                   href: ca1833.md
                 - name: 'CA1835: Stream ReadAsync/WriteAsync メソッドのメモリ オーバーロードを優先します'
                   href: ca1835.md
+                - name: 'CA1836:使用可能な場合は、Count よりも IsEmpty を優先します'
+                  href: ca1836.md
             - name: 移植性に関する警告
               items:
                 - name: 概要
