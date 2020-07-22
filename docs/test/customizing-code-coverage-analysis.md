@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ce63e6ff368b090f096642c7f664c1adf45a0857
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880313"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86475992"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -34,13 +34,13 @@ ms.locfileid: "80880313"
 
 ::: moniker range="vs-2017"
 
-3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
+3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)に関する説明を参照してください。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
+3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line)に関する説明を参照してください。
 
 ::: moniker-end
 
