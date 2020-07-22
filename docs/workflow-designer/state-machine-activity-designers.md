@@ -3,23 +3,23 @@ title: ワークフローデザイナーステートマシンアクティビテ�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 8a2ad311c5ea9b992b8e68a8250433354ea48f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188907"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876061"
 ---
 # <a name="state-machine-activity-designers"></a>ステート マシン アクティビティ デザイナー
 
 ワークフローデザイナーには、ワークフローを構築するときに使用できるアクティビティデザイナーが多数用意されています。 このセクションでは、ステート マシン ワークフローの作成と管理を目的とした、システムによって提供されるアクティビティ デザイナーを紹介します。 次のトピックでは、これらのデザイナーについて説明し、その使用方法についてのガイドラインを示します。
 
-## <a name="reference"></a>辞書／辞典／その他
+## <a name="reference"></a>関連項目
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>
@@ -37,11 +37,11 @@ ms.locfileid: "73188907"
 
  [アクティビティ デザイナーの使用](control-flow-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
  [ランタイム](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 
  [トランザクション](../workflow-designer/transaction-activity-designers.md)
 

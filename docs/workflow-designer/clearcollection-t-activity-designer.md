@@ -5,43 +5,43 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4808c046c4da23bc5c95d3978965afd938962f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a96f0b56172684c5c82910b34f40aa44fd6aec81
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650698"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876178"
 ---
-# <a name="clearcollectiont-activity-designer"></a>ClearCollection \<T > アクティビティデザイナー
+# <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T> アクティビティ デザイナー
 
-@No__t_2 アクティビティを作成および構成するには、 **Clearcollection \<T >** アクティビティデザイナーを使用します。
+**Clearcollection \<T> **アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.ClearCollection%601> ます。
 
-## <a name="the-clearcollectiont-activity"></a>ClearCollection \<T > アクティビティ
+## <a name="the-clearcollectiont-activity"></a>ClearCollection \<T> アクティビティ
 
 <xref:System.Activities.Statements.ClearCollection%601> アクティビティで、指定したすべての項目のコレクションをクリアします。
 
-### <a name="using-the-clearcollectiont-activity-designer"></a>ClearCollection \<T > アクティビティデザイナーの使用
+### <a name="using-the-clearcollectiont-activity-designer"></a>ClearCollection \<T> アクティビティデザイナーの使用
 
-**Clearcollection \<T >** アクティビティデザイナーは、 **[ツールボックス]** の **[コレクション]** カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの **[ツールボックス]** タブをクリックします。 または、 **[表示]** メニューの **[ツールボックス]** を選択するか、 **ctrl** +**Alt** +**X**キーを押します。
+** \<T> Clearcollection**アクティビティデザイナーは、[**ツールボックス**] の [**コレクション**] カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの [**ツールボックス**] タブをクリックします。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X**キーを押します。
 
-**Clearcollection \<T >** アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティが配置されている任意の場所 (<xref:System.Activities.Statements.Sequence> 内など) ワークフローデザイナーにドロップできます。 アクティビティデザイナーを削除すると、既定の <xref:System.Activities.Activity.DisplayName%2A> ClearCollection < Int32 \> の <xref:System.Activities.Statements.ClearCollection%601> アクティビティが作成されます。 (既定では、 *Typeargument*は**Int32**です。 TypeArgument は、プロパティグリッドで変更できます)。@No__t_0 値は、 **Clearcollection < t \>** アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。 他のプロパティは、プロパティ グリッドで編集する必要があります。
+**Clearcollection \<T> **アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.ClearCollection%601> と、既定値 <xref:System.Activities.Activity.DisplayName%2A> の clearcollection<Int32 を持つアクティビティが作成さ \> れます。 (既定では、 *Typeargument*は**Int32**です。 TypeArgument は、プロパティグリッドで変更できます)。この <xref:System.Activities.Activity.DisplayName%2A> 値は、 **clearcollection \><T**アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。 他のプロパティは、プロパティ グリッドで編集する必要があります。
 
-### <a name="the-clearcollectiont-properties"></a>ClearCollection \<T > プロパティ
+### <a name="the-clearcollectiont-properties"></a>ClearCollection \<T> プロパティ
 
 次の表に、<xref:System.Activities.Statements.ClearCollection%601> のプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ClearCollection%601> アクティビティの表示名を指定します (省略可能)。 既定値は ClearCollection < Int32 \> です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|クリアする項目のコレクションを指定します。 このコレクションの型は**ICollection \<TypeArgument > です。** コレクションを指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
-|*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型を指定します。 既定では、この*Typeargument*型は**Int32**に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの*Typeargument*の値を変更します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|誤り|<xref:System.Activities.Statements.ClearCollection%601> アクティビティの表示名を指定します (省略可能)。 既定値は ClearCollection<Int32 \> です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|正しい|クリアする項目のコレクションを指定します。 このコレクションの型は**ICollection \<TypeArgument> です。** コレクションを指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
+|*TypeArgument*|正しい|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型を指定します。 既定では、この*Typeargument*型は**Int32**に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの*Typeargument*の値を変更します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [コレクション](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
