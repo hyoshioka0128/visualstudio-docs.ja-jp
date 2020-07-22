@@ -5,32 +5,32 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f8d6c442982fff47a679e8fc2ccc04ee515a9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650526"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875606"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile アクティビティ デザイナー
 
-@No__t_0 アクティビティは、指定された条件が**false**と評価されるまで、<xref:System.Activities.Statements.DoWhile.Body%2A> に含まれるアクティビティを少なくとも1回実行します。 ループの本体に含まれるアクティビティを 0 回以上実行する必要がある場合は、代わりに、<xref:System.Activities.Statements.While> アクティビティを使用します。
+アクティビティは、 <xref:System.Activities.Statements.DoWhile> <xref:System.Activities.Statements.DoWhile.Body%2A> 指定された条件が**false**と評価されるまで、少なくとも1回に含まれるアクティビティを実行します。 ループの本体に含まれるアクティビティを 0 回以上実行する必要がある場合は、代わりに、<xref:System.Activities.Statements.While> アクティビティを使用します。
 
 ## <a name="dowhile-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの DoWhile のプロパティ
 
-次の表に、最も役に立つ <xref:System.Activities.Statements.DoWhile> アクティビティのプロパティを示し、デザイナーでそれらを使用する方法について説明します。
+次の表に、最も役に立つ <xref:System.Activities.Statements.DoWhile> アクティビティのプロパティと、デザイナーでのそれらの使用方法について説明します。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|条件が**true**のときに実行するアクティビティ。 @No__t_0 アクティビティを追加するには、"ここにアクティビティをドロップします" というヒントテキストが表示された**Dowhile**アクティビティデザイナーの **[Body]** ボックスに、[ツールボックス] からアクティビティをドロップします。|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|ループの各繰り返しの後に評価する条件。 @No__t_0 を設定するには、 **Dowhile**アクティビティデザイナーまたはプロパティグリッドの **[条件]** ボックスに Visual Basic 式を入力します。|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|誤り|条件が**true**のときに実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.DoWhile.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**dowhile**アクティビティデザイナーの [ **Body** ] ボックスに、[ツールボックス] からアクティビティをドロップします。|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|正しい|ループの各繰り返しの後に評価する条件。 を設定するには <xref:System.Activities.Statements.DoWhile.Condition%2A> 、 **dowhile**アクティビティデザイナーまたはプロパティグリッドの [**条件**] ボックスに Visual Basic 式を入力します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [While](../workflow-designer/while-activity-designer.md)
 - [制御フロー](../workflow-designer/control-flow-activity-designers.md)

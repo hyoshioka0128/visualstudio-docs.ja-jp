@@ -3,17 +3,17 @@ title: ワークフローデザイナーコレクションアクティビティ�
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6a07ed95-8319-44a2-8a1d-b4a89f16d0d9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ede1d6b77c687f308204593f60b8e947e0cbf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3375faa8e1f09465a879da197713da745f08b2da
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650685"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876165"
 ---
 # <a name="collection-activity-designers"></a>コレクション アクティビティ デザイナー
 

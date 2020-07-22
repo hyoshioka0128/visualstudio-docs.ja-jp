@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 116e8c31a6d7cad2e5c6da95bc66e34a0d11163a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649948"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875970"
 ---
 # <a name="sequence-activity-designer"></a>Sequence アクティビティ デザイナー
 
@@ -25,17 +25,17 @@ ms.locfileid: "72649948"
 
 ## <a name="using-the-sequence-activity-designer"></a>Sequence アクティビティ デザイナーの使用
 
-@No__t_0 アクティビティを追加するには、 **[ツールボックス]** から**Sequence**アクティビティデザイナーをドラッグし、ワークフローデザイナー画面にドロップします。 この <xref:System.Activities.Statements.Sequence> アクティビティに子アクティビティを追加するには、**ツールボックス** から他のアクティビティをドラッグし、ここにアクティビティをドロップします というヒントテキストが表示されているボックス内の三角形にドロップします。
+アクティビティを追加するには <xref:System.Activities.Statements.Sequence> 、[**ツールボックス**] から**Sequence**アクティビティデザイナーをドラッグし、ワークフローデザイナー画面にドロップします。 このアクティビティに子アクティビティを追加するには <xref:System.Activities.Statements.Sequence> 、[**ツールボックス**] から他のアクティビティをドラッグし、[ここにアクティビティをドロップします] というヒントテキストが表示されているボックス内の三角形にドロップします。
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの Sequence アクティビティのプロパティ
 
 次の表に、<xref:System.Activities.Statements.Sequence> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドまたはデザイナー画面で編集できます。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|ヘッダーの <xref:System.Activities.Statements.Sequence> アクティビティ デザイナーの表示名を指定します。 既定値は Sequence です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Activity.DisplayName%2A>|誤り|ヘッダーの <xref:System.Activities.Statements.Sequence> アクティビティ デザイナーの表示名を指定します。 既定値は Sequence です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [フローチャート](../workflow-designer/flowchart-activity-designer.md)
 - [制御フロー](../workflow-designer/control-flow-activity-designers.md)

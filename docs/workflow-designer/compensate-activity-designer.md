@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65203663214e6bc82a4a7b20af9caa25bfd98ee4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650654"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876152"
 ---
 # <a name="compensate-activity-designer"></a>Compensate アクティビティ デザイナー
 
-**Compensate**アクティビティデザイナーは、<xref:System.Activities.Statements.Compensate> アクティビティを作成および構成するために使用されます。
+**Compensate**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Compensate> ます。
 
 ## <a name="the-compensate-activity"></a>Compensate アクティビティ
 
@@ -29,23 +29,23 @@ ms.locfileid: "72650654"
 
 ### <a name="using-the-compensate-activity-designer"></a>Compensate アクティビティ デザイナーの使用
 
-**Compensate**アクティビティデザイナーは、**ツールボックス**の **[トランザクション]** カテゴリにあります。 **ツールボックス**を開くには、ワークフローデザイナーの左側にある **[ツールボックス]** タブを選択します。 または、 **[表示]** メニューの **[ツールボックス]** を選択するか、 **ctrl** +**Alt** +**X**キーを押します。
+**Compensate**アクティビティデザイナーは、**ツールボックス**の [**トランザクション**] カテゴリにあります。 **ツールボックス**を開くには、ワークフローデザイナーの左側にある [**ツールボックス**] タブを選択します。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X**キーを押します。
 
-**Compensate**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティが配置されている任意の場所 (<xref:System.Activities.Statements.Sequence> 内など) にドロップしてワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除すると、既定の <xref:System.Activities.Activity.DisplayName%2A> 補正の <xref:System.Activities.Statements.Compensate> アクティビティが作成されます。 @No__t_0 値は、 **Compensate**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
+**Compensate**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Compensate> と、補正の既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 この <xref:System.Activities.Activity.DisplayName%2A> 値は、**補正**アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-compensate-properties"></a>Compensate のプロパティ
 
-次の表に、<xref:System.Activities.Statements.CancellationScope> のプロパティと、デザイナーでのその使用方法を示します。 @No__t_0 プロパティは、プロパティグリッドまたはワークフローデザイナー画面で編集できます。 プロパティグリッドで <xref:System.Activities.Statements.Compensate.Target%2A> プロパティを編集します。
+次の表に、<xref:System.Activities.Statements.CancellationScope> のプロパティと、デザイナーでのその使用方法を示します。 プロパティは、 <xref:System.Activities.Activity.DisplayName%2A> プロパティグリッドまたはワークフローデザイナー画面で編集できます。 <xref:System.Activities.Statements.Compensate.Target%2A>プロパティグリッドでプロパティを編集します。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Compensate> アクティビティの表示名を指定します (省略可能)。 既定値は Compensate です。|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|True|この <xref:System.Activities.InArgument%601> アクティビティの <xref:System.Activities.Statements.CompensationToken> を含む <xref:System.Activities.Statements.Compensate> を指定します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|誤り|<xref:System.Activities.Statements.Compensate> アクティビティの表示名を指定します (省略可能)。 既定値は Compensate です。|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|正しい|この <xref:System.Activities.InArgument%601> アクティビティの <xref:System.Activities.Statements.CompensationToken> を含む <xref:System.Activities.Statements.Compensate> を指定します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [トランザクション](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate アクティビティ デザイナー](../workflow-designer/compensate-activity-designer.md)
-- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [用](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
