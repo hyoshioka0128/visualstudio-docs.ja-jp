@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903918"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972336"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>メニューコマンドを使用して拡張機能を作成する
 
 このチュートリアルでは、メモ帳を起動するメニューコマンドを使用して拡張機能を作成する方法について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
@@ -32,7 +32,17 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. **Firstmenucommand**という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[**新しいプロジェクト**] ダイアログで見つけることができます。
 
+::: moniker range="vs-2017"
+
 2. プロジェクトが開いたら、 **Firstcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*FirstCommand.cs*に変更します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. プロジェクトが開いたら、 **Firstcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [**コマンド**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*FirstCommand.cs*に変更します。
+
+::: moniker-end
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
@@ -50,7 +60,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ::: moniker-end
 
-次に、実験用インスタンスの [**ツール**] メニューにアクセスします。 **呼び出し FirstCommand**コマンドが表示できます。 この時点で、コマンドを実行すると、 **Firstcommandpackage 内に Firstcommandpackage**というメッセージボックスが表示されます。 次のセクションでは、このコマンドからメモ帳を実際に起動する方法について説明します。
+次に、実験用インスタンスの [**ツール**] メニューにアクセスします。 **呼び出し FirstCommand**コマンドが表示できます。 この時点で、コマンドを実行すると、 **Firstmenuin firstcommand. MenuItemCallback () の中に Firstcommand**というメッセージボックスが表示されます。 次のセクションでは、このコマンドからメモ帳を実際に起動する方法について説明します。
 
 ## <a name="change-the-menu-command-handler"></a>メニューコマンドハンドラーの変更
 
@@ -77,11 +87,13 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     }
     ```
 
-3. メソッドを削除 `MenuItemCallback` し、メソッドを追加し `StartNotepad` ます。これにより、メモ帳が開始されます。
+3. メソッドを削除 `Execute` し、メソッドを追加し `StartNotepad` ます。これにより、メモ帳が開始されます。
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 2. コマンド ラインから次を実行します。
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,13 +125,13 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 この拡張機能の *.vsix*ファイルは、 *firstmenucommand* bin ディレクトリにあります。 具体的には、リリース構成をビルドしたことを前提として、次のようになります。
 
-*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand .vsix*
+*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
 拡張機能をインストールするには、フレンドが開いている Visual Studio のインスタンスをすべて閉じ、.vsix ファイルをダブルクリックする必要があり*ます*。これにより、 **vsix インストーラー**が表示されます。 ファイルは *%LocalAppData%\Microsoft\VisualStudio \<version> \ Extensions*ディレクトリにコピーされます。
 
 友人が Visual Studio を再度起動すると、[**ツール**] [  >  **拡張機能と更新プログラム**] に firstmenucommand 拡張機能が表示されます。 拡張機能**と更新プログラム**にアクセスして、拡張機能をアンインストールまたは無効にすることができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このチュートリアルでは、Visual Studio 拡張機能で実行できることのほんの一部のみを示しました。 Visual Studio 拡張機能で実行できるその他の (非常に簡単な) 項目を次に示します。
 
