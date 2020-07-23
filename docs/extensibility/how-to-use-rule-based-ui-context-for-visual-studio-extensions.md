@@ -7,12 +7,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1457b8178a48ac867ee8407df9501dee56afd45b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4ee29937b11110ee6aae65628b81ea49588fdd22
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905576"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972310"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する
 
@@ -105,7 +105,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
     name: "Test auto load",
     expression: "(SingleProject | MultipleProjects) & DotConfig",
     termNames: new[] { "SingleProject", "MultipleProjects","DotConfig" },
-    termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
+    termValues: new[] { VSConstants.UICONTEXT.SolutionHasSingleProject_string , VSConstants.UICONTEXT.SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
  これで、式は3つの用語を参照します。 最初の2つの用語では、"SingleProject" と "複数のプロジェクト" が、他のよく知られている UI コンテキスト (Guid) を参照しています。 3つ目の用語 "DotConfig" は、この記事で既に定義されている規則ベースの UI コンテキストです。
@@ -129,7 +129,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
 
 サポートされているさまざまな種類の用語を次に示します。
 
-|用語|説明|
+|期間|説明|
 |-|-|
 |{nnnnnnnn-nnnn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID は、UI コンテキストを参照します。 この用語は、UI コンテキストがアクティブである場合は true、それ以外の場合は false になります。|
 |HierSingleSelectionName:\<pattern>|この用語は、アクティブ階層内の選択が単一の項目であり、選択した項目の名前が "pattern" で指定された .Net 正規表現と一致する場合に true になります。|
