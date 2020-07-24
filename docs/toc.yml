@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: サービス ベースライン使用時の Visual Studio の更新
               href: install/update-servicing-baseline.md
+            - name: 最小限のオフライン レイアウトを使用して Visual Studio を更新する
+              href: install/update-minimal-layout.md
             - name: Visual Studio 配置の更新プログラムを制御する
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: パッケージ ペイロードの変更の管理
@@ -948,7 +950,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: キーボード ショートカット
       items:
