@@ -1,6 +1,6 @@
 ---
 title: VSTest.Console.exe のコマンド ライン オプション
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211564"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869595"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -35,7 +35,7 @@ ms.locfileid: "86211564"
 | オプション | 説明 |
 |---|---|
 |**[*テストファイル名*]**|指定されたファイルからテストを実行します。 複数のテスト ファイル名を指定するときは、スペースで区切ります。<br />例: `mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*ファイル名*]**|データ コレクターなどの追加設定を指定してテストを実行します。<br />例 : `/Settings:Local.RunSettings`|
+|**/Settings:[*ファイル名*]**|データ コレクターなどの追加設定を指定してテストを実行します。 詳細については、「[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)」をご覧ください<br />例 : `/Settings:local.runsettings`|
 |**/Tests:[*テスト名*]**|指定した値を含む名前のテストを実行します。 複数の値を指定するには、コンマで区切ります。<br />例 : `/Tests:TestMethod1,testMethod2`<br />**/Tests** コマンドライン オプションを、 **/TestCaseFilter** コマンドライン オプションと一緒に使用することはできません。|
 |**/Parallel**|テストを並列で実行するように指定します。 既定では、マシン上のすべての利用可能なコア数まで使用できます。 使用するコアの数は、設定ファイルで構成できます。|
 |**/Enablecodecoverage**|テストの実行で、データ診断アダプター CodeCoverage を有効にします。<br />設定ファイルで指定されていない場合は、既定の設定が使用されます。|

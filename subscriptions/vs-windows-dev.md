@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
-ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
+ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86301461"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875476"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -52,7 +52,7 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 ||
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer が含まれます除外:Microsoft Partner Network (MPN)、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、Most Valuable Professional (MVP)、Regional Director (RD)。除外:Microsoft Partner Network (MPN)、Imagine、MCT Software & Services。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
