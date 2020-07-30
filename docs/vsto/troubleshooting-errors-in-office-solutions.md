@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d73dadd10342d3616291fb93efbb447bd7ecaee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537320"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234693"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office ソリューションで発生したエラーのトラブルシューティング
   Visual Studio で Office ソリューションを開発する際、次のタスクを実行するときに問題が発生する場合があります。
@@ -217,3 +217,4 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 - [Office ソリューションのトラブルシューティング](../vsto/troubleshooting-office-solutions.md)
 - [Office ソリューションのセキュリティに関するトラブルシューティング](../vsto/troubleshooting-office-solution-security.md)
 - [Office ソリューションの配置のトラブルシューティング](../vsto/troubleshooting-office-solution-deployment.md)
+- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2141d2fd7d046f61ba6febecc427066d7a09ba18
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904476"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235031"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
 次に、VSPackage と問題を解決するためのヒントについて、一般的な問題を示します。
@@ -123,5 +123,6 @@ ms.locfileid: "85904476"
 
    InprocServer32 エントリが VSPackage dll の正しいパスを持っていることを確認します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackages](../extensibility/internals/vspackages.md)
+- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

@@ -100,6 +100,7 @@ f1_keywords:
 - CA1413
 - CA1414
 - CA1415
+- CA1417
 - CA1500
 - CA1501
 - CA1502
@@ -291,12 +292,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454190"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235096"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -397,6 +398,7 @@ ms.locfileid: "86454190"
 | CA1413 | [CA1413:Com 参照可能な値型ではパブリックでないフィールドを使用しません](../code-quality/ca1413.md) | COM から参照できる値型の非パブリック インスタンス フィールドは、COM クライアントで表示できます。 フィールドの内容をレビューして、公開するべきではない情報や、設計またはセキュリティに意図しない影響を及ぼす情報が含まれていないかどうかを確認してください。 |
 | CA1414 | [CA1414: ブール型の P/Invoke 引数を MarshalAs に設定します。](../code-quality/ca1414.md) | Boolean データ型は、アンマネージ コードの複数の表現を持っています。 |
 | CA1415 | [CA1415: P/Invoke を正しく宣言します。](../code-quality/ca1415.md) | この規則では、OVERLAPPED 構造体パラメーターへのポインターを持ち、対応するマネージド型パラメーターが System.Threading.NativeOverlapped 構造体へのポインターではない [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] 関数に対するオペレーティング システム呼び出しメソッド宣言が対象になります。 |
+| CA1417 | [CA1417: `OutAttribute` P/invoke に文字列パラメーターを使用しません](../code-quality/ca1417.md) | で値によって渡される文字列パラメーター `OutAttribute` は、文字列がインターン文字列である場合、ランタイムを不安定にする可能性があります。 |
 | CA1500 | [CA1500:変数名はフィールド名と同一にすることはできません](../code-quality/ca1500.md) | インスタンスのメソッドで、宣言する型のインスタンス フィールドと名前が一致するパラメーターまたはローカル変数が宣言されていると、エラーの原因となります。 |
 | CA1501 | [CA1501:継承を使用しすぎないでください](../code-quality/ca1501.md) | 型が、その継承階層内の 5 つ以上深いレベルにあります。 深いレベルで入れ子にされた型の確認、理解、および保守は困難です。 |
 | CA1502 | [CA1502:メソッドの実装を複雑にしすぎないでください](../code-quality/ca1502.md) | この規則は、線形独立のメソッド経路数を示す尺度で、条件分岐の数と複雑さによって決まります。 |
