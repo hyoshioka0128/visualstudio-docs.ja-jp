@@ -30,7 +30,6 @@
 #### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST の強調表示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
-#### [Enterprise Mobility + Security](vs-ems.md)
 #### [エンタープライズ向け Microsoft 365 アプリ](microsoft-365-apps-for-enterprise.md)
 #### [Microsoft 365 開発者](vs-m365.md)
 #### [Parasoft](vs-parasoft.md)
