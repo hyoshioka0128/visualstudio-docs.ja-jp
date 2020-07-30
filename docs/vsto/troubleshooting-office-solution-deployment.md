@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679a6e753e61ecb1af9097692a741c35e531c7cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545744"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234979"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションの配置のトラブルシューティング
   このトピックでは、Office ソリューションを配置するときに発生する可能性がある一般的な問題を解決する方法について説明します。
@@ -129,3 +129,4 @@ ms.locfileid: "85545744"
 
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
+- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

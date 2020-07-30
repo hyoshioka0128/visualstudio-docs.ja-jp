@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76cd454cd66e31db8c521d71183aa479da1fe2a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8825f1f4393d93df6a621fd71b6782c6652a9c0c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537411"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234810"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office ソリューションのセキュリティに関するトラブルシューティング
   このトピックでは、Office ソリューションをセキュリティで保護する際に発生する可能性のある一般的な問題を解決するためのヒントを示します。
@@ -31,7 +31,7 @@ ms.locfileid: "85537411"
 
 - [マイ コンピューター]
 
-- インターネット
+- Test1
 
 - ローカル イントラネット
 
@@ -50,3 +50,4 @@ ms.locfileid: "85537411"
 
 ## <a name="see-also"></a>関連項目
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)
+- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
