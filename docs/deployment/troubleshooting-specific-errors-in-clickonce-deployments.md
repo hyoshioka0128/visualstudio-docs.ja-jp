@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a98a822cd9aac6d93b4964e2e8bdadc98972e5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381900"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235161"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 この記事では、アプリケーションを展開するときに発生する可能性がある一般的なエラー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] と、それぞれの問題を解決するための手順を示します。
@@ -139,3 +139,4 @@ ms.locfileid: "85381900"
 ## <a name="see-also"></a>関連項目
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
+- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
