@@ -402,8 +402,8 @@
                   href: ide/reference/extract-local-function.md
                 - name: インラインの一時変数
                   href: ide/reference/inline-temporary-variable.md
-                - name: インポートされていない型に対する IntelliSense 入力候補
-                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: インポートされていない型と拡張メソッドに対する IntelliSense 入力候補
+                  href: ide/reference/intellisense-completion-unimported-types-extension-methods.md
                 - name: 条件式および論理演算を反転させる
                   href: ide/reference/invert-conditional-logical.md
                 - name: if ステートメントを反転させる

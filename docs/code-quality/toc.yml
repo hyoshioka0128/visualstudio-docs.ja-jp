@@ -415,6 +415,8 @@
                   href: ca1414.md
                 - name: 'CA1415:P/Invoke を正しく宣言します'
                   href: ca1415.md
+                - name: 'CA1417:P/Invoke の文字列パラメーターに OutAttribute を使用しません'
+                  href: ca1417.md
             - name: 保守性に関する警告
               items:
                 - name: 概要
