@@ -12,16 +12,16 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75584609"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235148"
 ---
-# <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
+# <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Visual Basic でコード エディターを使用する方法を学習する
 
-この 10 分間の Visual Studio のコード エディターの紹介では、ファイルにコードを追加した上で、Visual Studio でコードを記述、コード内を移動、およびコードを理解する簡単な方法をいくつか説明します。
+この 10 分間の Visual Studio のコード エディターの紹介では、ファイルにコードを追加した上で、Visual Studio でコードを記述、コード内を移動、および Visual Basic コードを理解する簡単な方法をいくつか説明します。
 
 ::: moniker range="vs-2017"
 
@@ -40,7 +40,7 @@ ms.locfileid: "75584609"
 この記事では、既に Visual Basic を使い慣れていることを前提としています。 使い慣れていない場合は、最初に [Visual Studio の Visual Basic の概要](../../get-started/visual-basic/tutorial-console.md)などのチュートリアルに関するページを参照することをお勧めします。
 
 > [!TIP]
-> この記事に従うには、Visual Studio に対して Visual Basic 設定が選択されていることを確認します。 統合開発環境 (IDE) の設定の選択については、「[Select environment settings](visual-studio-ide.md#select-environment-settings)」 (環境設定を選択する) を参照してください。
+> この記事に従うには、Visual Studio に対して Visual Basic 設定が選択されていることを確認します。 統合開発環境 (IDE) の設定の選択については、「[Select environment settings (環境設定を選択する)](visual-studio-ide.md#select-environment-settings)」 を参照してください。
 
 ## <a name="create-a-new-code-file"></a>新しいコード ファイルを作成する
 

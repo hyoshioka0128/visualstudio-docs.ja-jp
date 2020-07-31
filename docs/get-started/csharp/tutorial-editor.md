@@ -12,16 +12,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75590437"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234966"
 ---
-# <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
+# <a name="learn-to-use-the-code-editor-with-c"></a>C# でコード エディターを使用する方法を学習する
 
-この 10 分間の Visual Studio のコード エディターの紹介では、ファイルにコードを追加した上で、Visual Studio でコードを記述、コード内を移動、およびコードを理解する簡単な方法をいくつか説明します。
+この 10 分間の Visual Studio のコード エディターの紹介では、ファイルにコードを追加した上で、Visual Studio でコードを記述、コード内を移動、および C# コードを理解する簡単な方法をいくつか説明します。
 
 ::: moniker range="vs-2017"
 

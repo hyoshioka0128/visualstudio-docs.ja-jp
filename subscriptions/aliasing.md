@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: 0f5ed4fe67dbd863a7ba4c22f10946cbeb1c36b0
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509058"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234641"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
@@ -36,7 +36,7 @@ ms.locfileid: "79509058"
 2. ページの右上に示されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  そうでない場合は、UPN が不一致になっており、サブスクリプションを表示することはできません。 
 
 > [!div class="mx-imgBorder"]
-> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png)
+> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png "右上に表示されるメール アドレスをサインインに使用するアドレスに必ず一致させます。")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>UPN の不一致を修正する方法
 
@@ -69,7 +69,7 @@ Visual Studio プラットフォームでは、サブスクリプションの詳
 2. [アカウント エイリアス] で、サブスクリプションの割り当てに使用する電子メール アドレスの横にある **[プライマリにする]** を選択します。 
 
 > [!div class="mx-imgBorder"]
-> ![プライマリ電子メール アドレスの設定](_img//aliasing/account-aliases.png)
+> ![プライマリ電子メール アドレスの設定](_img//aliasing/account-aliases.png "[プライマリにする] リンクを使用し、サブスクリプションのプライマリ エイリアスを選択します。")
 
 3. Visual Studio サブスクリプション ポータル (https://my.visualstudio.com) ) からサインアウトします 
 

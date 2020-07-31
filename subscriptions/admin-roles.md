@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: スーパー管理者と管理者ロール、および管理者を割り当てる方法について説明します。
-ms.openlocfilehash: 234153dcb8dd06b33ab7aac78e587439684963f9
-ms.sourcegitcommit: 1f7aed335c48215dff5c151f76f22e3f10e8b564
+ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80808379"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234628"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
 
@@ -30,10 +30,10 @@ ms.locfileid: "80808379"
 2. **[管理者の管理]** というラベルのタブをクリックします。
 3. **[追加]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![管理者の追加](_img/admin-roles/add-admins.png)
+   > ![管理者の追加](_img/admin-roles/add-admins.png "[管理者の管理] ブレードをクリックし、[追加] をクリックして新しい管理者を割り当てます。")
 4. 新しい管理者の情報でフォームを完成させます。  
    > [!div class="mx-imgBorder"]
-   > ![[管理者の追加] フォーム](_img/admin-roles/add-form.png)
+   > ![[管理者の追加] フォーム](_img/admin-roles/add-form.png "新しい管理者のサインイン情報を入力し、その管理者をスーパー管理者にするかどうかを選択します。次に [追加] をクリックします。")
 
    > [!NOTE]
    > この管理者が管理者をさらに割り当てることができるようにするには、 **[スーパー管理者]** チェックボックスをオンにすることを忘れないでください。

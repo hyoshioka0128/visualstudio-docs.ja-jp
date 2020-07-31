@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 03/24/2020
+ms.date: 07/22/2020
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444826"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115314"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -30,22 +30,27 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Pipelines (セルフホステッド)       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL| Azure Boards & Repos (Basic)、Azure Test Plans、Azure Pipelines (セルフホステッド)       |  はい          |
-| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                        | Azure Boards & Repos (Basic)                                                            |  はい          |
-| Visual Studio Professional with GitHub Enterprise | VL| Azure Boards & Repos (Basic)                                                            |  はい          |
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
-| MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
+| Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise   | VL| Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  はい          |
+| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                        | Azure Boards & Repos (Basic<sup>2</sup>) [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  はい          |
+| Visual Studio Professional with GitHub Enterprise | VL| Azure Boards & Repos (Basic<sup>2</sup>) [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  はい          |
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  はい          |
+| MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  はい          |
 ||
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark、MCT Software & Services Developer、FTE が含まれます。除外:MCT Software & Services、Imagine は含まれません。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark, MCT Software & Services Developer、FTE。除外:MCT Software & Services、Imagine は含まれません。*
 
+<sup>2</sup> *Basic プランでは、リリース パイプラインとマルチステージの継続的配置 (CD) パイプラインを定義し、承認とゲートを利用してデプロイを制御します。パイプライン プレビュー機能の Free アクセスが有効になっているとき、関係者はあらゆる Azure Pipelines 機能を利用できます。プランに含まれる機能に関する詳細については、Azure の[アクセス レベルに関するページ](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)をご覧ください。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) にアクセスして、割り当てられているすべてのサブスクリプションを確認します。
 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+### <a name="q-as-a-visual-studio-enterprise-subscriber-do-i-get-additional-parallel-jobs-for-tfs-and-azure-pipelines"></a>Q:Visual Studio Enterprise サブスクライバーには、TFS と Azure Pipelines の追加並列ジョブが与えられますか。
+A: はい。 Visual Studio Enterprise サブスクライバーには、Team Foundation Server 2017 以降で並列ジョブが 1 つ、メンバーになっている Azure DevOps Services 組織ごとにセルフホステッド並列ジョブが 1 つ与えられます。
 
 ## <a name="support-resources"></a>サポート リソース
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
