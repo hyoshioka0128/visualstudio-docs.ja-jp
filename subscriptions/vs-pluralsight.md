@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902808"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375899"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -82,13 +82,7 @@ ms.locfileid: "85902808"
 A: すべての Visual Studio Enterprise サブスクリプションに Pluralsight 特典が含まれるわけではありません。  [特典を受ける条件についての表](#eligibility)で、サブスクリプションが対象であるかどうかを参照してください。
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q:任意のカスタマイズされた学習のプレイリストやチャネルへのアクセス権はありますか。
-A: はい。Visual Studio サブスクライバーは、Pluralsight トレーニング特典の一部としてチャネルをエクスポートするアクセス権を取得します。 これらのチャネルは Microsoft の専門家によって特別に作成されており、.Net、Azure、DevOps、モビリティの学習範囲を対象としています。 Visual Studio サブスクリプション ポータル [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) から Pluralsight 特典をアクティブにし、Pluralsight 学習ページでこれらのチャネルにアクセスします。
-
-•   Scott Hanselmann (.Net、Azure) - [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-•   Donovan Brown (DevOps) - [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-•   James Montemagno (モビリティ) - [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+A: はい。 Visual Studio サブスクライバーは、このサービスの呼び物であるロール、ラーニング パス、カスタム チャネル (プレイリスト) を Pluralsight トレーニング特典として利用できます。 このサービスの呼び物であるコンテンツは Microsoft と Pluralsight が特別に編集しており、重要な関心領域が学習できるように調整されています。 Pluralsight ホーム ページで Pluralsight 特典やその他のコンテンツを利用するには、Visual Studio サブスクリプション ポータル <https://my.visualstudio.com/benefits> でそれをアクティベートします。
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q:Pluralsight サブスクリプションがなくなるとどうなりますか。
 A: Pluralsight 無料サブスクリプションの終了時、Pluralsight から直接、サブスクリプションを購入できます。  詳細については、[Pluralsight](https://www.pluralsight.com) にお問い合わせください。

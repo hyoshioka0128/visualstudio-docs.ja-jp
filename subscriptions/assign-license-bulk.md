@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903281"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235135"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -30,7 +30,7 @@ ms.locfileid: "85903281"
 
 1. 一括追加では、Microsoft Excel テンプレートを使用してサブスクライバー情報をアップロードします。 [Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\) ダイアログ ボックスで、 **[ダウンロード]** をクリックしてテンプレートをダウンロードします。
    > [!div class="mx-imgBorder"]
-   > ![複数のサブスクライバーをアップロードするための Excel テンプレートをダウンロードする](media/download-template-upload-subscribers.png)
+   > ![複数のサブスクライバーをアップロードするための Excel テンプレートをダウンロードする](media/download-template-upload-subscribers.png "空の Excel テンプレートをダウンロードし、一括割り当てプロセスを開始します。")
    >
    > [!NOTE]
    > 常にこのテンプレートの最新バージョンをダウンロードしてください。 古いバージョンを使うと、一括アップロードが失敗する可能性があります。
@@ -50,17 +50,17 @@ ms.locfileid: "85903281"
 
 1. Visual Studio サブスクリプション管理ポータルに戻ります。 **[Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\)** ダイアログ ボックスで、 **[参照]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![複数のサブスクライバーをアップロードするために保存したテンプレートを参照する](media/bulk-add-browse-saved-template.png)
+   > ![複数のサブスクライバーをアップロードするために保存したテンプレートを参照する](media/bulk-add-browse-saved-template.png "ファイルの場所を参照したり、このダイアログ ボックスにドラッグ アンド ドロップしたりできます。")
 
 1. 保存した Excel ファイルを選んで、 **[OK]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![複数のサブスクライバーをアップロードするための Excel テンプレートをアップロードする](media/bulk-upload-subscribers.png)
+   > ![複数のサブスクライバーをアップロードするための Excel テンプレートをアップロードする](media/bulk-upload-subscribers.png "データを含むテンプレートがここに表示されます。[OK] をクリックすると、アップロードが開始します。")
 
     アップロードの進行状況を示すダイアログが表示されます。
 
     テンプレートにエラーが含まれていると、アップロードは失敗してエラーが表示されるので、テンプレートを修正して一括アップロードを再試行します。
    > [!div class="mx-imgBorder"]
-   > ![複数サブスクライバーのアップロードが失敗した場合のエラー メッセージ](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![複数サブスクライバーのアップロードが失敗した場合のエラー メッセージ](_img/assign-license-bulk/bulk-add-upload-failure.png "このメッセージは、アップロードしたファイルにエラーがあった場合に表示されます。エラーを解決し、一括追加プロセスを再実行します。")
 
    エラーが発生した場合は、次の手順を行います。
    1. 作成した Excel ファイルを開き、問題を修正して、ファイルを保存します。
@@ -72,7 +72,7 @@ ms.locfileid: "85903281"
 
     アップロードが成功すると、サブスクライバーの一覧と確認メッセージが表示されます。
    > [!div class="mx-imgBorder"]
-   > ![複数サブスクライバーのアップロードが成功した場合の確認メッセージ](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![複数サブスクライバーのアップロードが成功した場合の確認メッセージ](_img/assign-license-bulk/bulk-add-upload-success.png "アップロードが正常に完了すると、確認メッセージが表示されます。")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Azure Active Directory グループを使用してサブスクリプションを割り当てる 
 この機能を使用すると、サブスクリプションの割り当てが簡単に利用できます。 サブスクリプション管理ポータル上で、Azure Active Directory セキュリティ グループを追加できます。そうすることで、グループ内のすべてのユーザーに確実にサブスクリプションが割り当てられます。 また、操作を簡単にするために、ユーザーが組織を離れ、Azure Active Directory から削除されるときに、サブスクリプションへのアクセスも削除されます。 
@@ -100,14 +100,14 @@ ms.locfileid: "85903281"
 3. **[追加]** タブを選択し、ドロップダウンで **[Azure Active Directory グループ]** を選択します。  
 
    > [!div class="mx-imgBorder"]
-   > ![Azure AD を使用した一括追加の選択](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Azure AD を使用した一括追加の選択](_img/assign-license-bulk/bulk-add-aad.png "Azure Active Directory グループからサブスクライバーをプルするには、[Bulk add using Azure AD]\(Azure AD を使用した一括追加\) 機能を選択します。")
 
 4. フォーム フィールドに追加する Azure AD グループの名前の入力を開始します。 これにより、組織内で使用可能な Azure AD グループが検索されます。 
 
 5. グループを選択すると、グループ名がフィールドに自動的に入力されます。 追加する前に、そのグループ内のユーザーを表示することもできます。 次に、グループのサブスクリプション レベル、ダウンロード権限、および通信設定を選択できます。 必要に応じて、[参照] フィールドに詳細を追加できます。 
 
    > [!div class="mx-imgBorder"]
-   > ![Azure AD を使用した一括追加の選択](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Azure AD グループを選択する](_img/assign-license-bulk/bulk-add-aad-details.png "Azure AD グループの名前を選択し、そのグループからサブスクライバーを追加します。")
 
 6. **[追加]** 、 **[確認]** の順にクリックします。 
 

@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Local Process with Kubernetes を使用して開発用コンピューターを Kubernetes クラスターに接続するプロセスについて説明します
 keywords: Local Process with Kubernetes, Docker, Kubernetes, Azure, コンテナー
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454375"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133978"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Local Process with Kubernetes のしくみ
 
@@ -40,6 +40,44 @@ Visual Studio で Local Process with Kubernetes を使用するには、*ASP.NET
 
 クラスターへの接続が確立された後、ユーザーは、コンテナー化を使用せずに、コンピューター上でネイティブにコードを実行してデバッグすることができ、コードではクラスターの残りの部分と直接対話できます。 リモート エージェントが受信するネットワーク トラフィックは、ネイティブに実行されているコードがそのトラフィックを受け入れて処理できるよう、接続時に指定されたローカル ポートにリダイレクトされます。 ご利用のクラスターにある環境変数、ボリューム、シークレットは、開発用コンピューター上で実行されているコードから利用できるようになります。 また、Local Process with Kubernetes によって開発用コンピューターに追加された hosts ファイルのエントリとポート転送により、コードでは、クラスター側のサービス名を使用して、クラスター上で実行されているサービスにネットワーク トラフィックを送信することができます。そのトラフィックは、クラスターで実行されているサービスに転送されます。 接続されている間は常に、開発用コンピューターとクラスターの間でトラフィックがルーティングされます。
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>分離して開発するためのルーティング機能の使用
+
+既定では、Local Process with Kubernetes によって 1 つのサービスのすべてのトラフィックが開発用コンピューターにリダイレクトされます。 また、ルーティング機能を使用して、サブドメインから開発用コンピューターに提供されるサービスにのみ、要求をリダイレクトするオプションもあります。 これらのルーティング機能により、Local Process with Kubernetes を使用して分離して開発し、クラスター内の他のトラフィックの中断を回避することができます。
+
+次のアニメーションは、同じクラスターで作業している 2 人の開発者を示しています。
+
+![分離を示すアニメーション GIF](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+分離した作業を有効にすると、Local Process with Kubernetes では、Kubernetes クラスターへの接続だけでなく、次のことが行われます。
+
+* Kubernetes クラスターで Azure Dev Spaces が有効になっていないことを確認します。
+* 選択したサービスを同じ名前空間内のクラスターにレプリケートし、*routing.visualstudio.io/route-from=SERVICE_NAME* ラベルと *routing.visualstudio.io/route-on-header=kubernetes-route-as:GENERATED_NAME* 注釈を追加します。
+* Kubernetes クラスター上の同じ名前空間でルーティング マネージャーを構成し、開始します。 ルーティング マネージャーによって、名前空間でルーティングを構成するときに、ラベル セレクターを使用して *routing.visualstudio.io/route-from=SERVICE_NAME* ラベルと *routing.visualstudio.io/route-on-header=kubernetes-route-as:GENERATED_NAME* 注釈が検索されます。
+
+Local Process with Kubernetes によって、Kubernetes クラスター上で Azure Dev Spaces が有効になっていることが検出されると、Local Process with Kubernetes を使用する前に Azure Dev Spaces を無効にするように求められます。
+
+ルーティング マネージャーによって、起動時に次のことが行われます。
+* サブドメインの *GENERATED_NAME* を使用して、名前空間で見つかったすべてのイングレスが複製されます。 
+* 各サービス用に、*GENERATED_NAME* サブドメインで複製されたイングレスに関連付けられたエンボイ ポッドを作成します。
+* 分離して作業しているサービス用の追加のエンボイ ポッドを作成します。 これで、サブドメインを指定した要求を開発用コンピューターにルーティングすることができます。
+* サブドメインを持つサービスのルーティングを処理するために、各エンボイ ポッド用のルーティング規則を構成します。
+
+*GENERATED_NAME* サブドメインが指定された要求がクラスターで受信されると、要求に *kubernetes-route-as=GENERATED_NAME* ヘッダーが追加されます。 エンボイ ポッドによって、クラスター内の適切なサービスへの要求のルーティングが処理されます。 分離して作業されているサービスに要求がルーティングされると、その要求はリモート エージェントによって開発用コンピューターにリダイレクトされます。
+
+*GENERATED_NAME* サブドメインが指定されていない要求がクラスターで受信されると、要求にヘッダーが追加されません。 エンボイ ポッドによって、クラスター内の適切なサービスへの要求のルーティングが処理されます。 置き換えられるサービスに要求がルーティングされる場合、その要求はリモート エージェントではなく元のサービスにルーティングされます。
+
+> [!IMPORTANT]
+> クラスター上の各サービスでは、追加の要求を行うときに *kubernetes-route-as=GENERATED_NAME* ヘッダーを転送する必要があります。 たとえば、*serviceA* で要求が受信されると、*serviceB* に要求が行われてから応答が返されます。 この例では、*serviceA* から要求の *kubernetes-route-as=GENERATED_NAME* ヘッダーが *serviceB* に転送される必要があります。 [ASP.NET][asp-net-header] などの一部の言語には、ヘッダーの伝達を処理するメソッドが用意されている場合があります。
+
+クラスターから切断すると、既定では、Local Process with Kubernetes によってすべてのエンボイ ポッドおよび重複しているサービスが削除されます。 
+
+> [注] ルーティング マネージャーの展開とサービスは、名前空間で実行されたままになります。 展開とサービスを削除するには、名前空間に対して次のコマンドを実行します。
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>診断とログ記録
 
 Local Process with Kubernetes を使用してクラスターに接続しているときは、クラスターからの診断ログが、開発用コンピューターの[一時ディレクトリ][azds-tmp-dir]に記録されます。
@@ -52,11 +90,17 @@ Local Process with Kubernetes には次の制限があります。
 * あるサービスに接続するには、そのサービスを 1 つのポッドでサポートする必要があります。 レプリカが含まれるサービスなど、1 つのサービスに複数のポッドで接続することはできません。
 * Local Process with Kubernetes を正常に接続するために、1 つのポッドには、そのポッドで実行されているコンテナーが 1 つだけ与えられます。 Local Process with Kubernetes では、サービス メッシュによって挿入されたサイドカー コンテナーなど、追加のコンテナーが与えられたポッドを利用してサービスに接続できません。
 * ホスト ファイルを編集する目的で開発コンピューターで実行するには、管理者特権が Local Process with Kubernetes に必要になります。
+* Azure Dev Spaces が有効なクラスターでは、Local Process with Kubernetes を使用できません。
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Local Process with Kubernetes と Azure Dev Spaces が有効なクラスター
+
+Azure Dev Spaces が有効なクラスターでは、Local Process with Kubernetes を使用できません。 Azure Dev Spaces が有効なクラスターで Local Process with Kubernetes を使用する場合は、クラスターに接続する前に Azure Dev Spaces を無効にする必要があります。
 
 ## <a name="next-steps"></a>次のステップ
 
 Local Process with Kubernetes を使用してローカル環境の開発用コンピューターをクラスターに接続する方法については、[Local Process with Kubernetes の使用](local-process-kubernetes.md)に関するページを参照してください。
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

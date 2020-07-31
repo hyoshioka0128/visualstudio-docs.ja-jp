@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: 管理ポータルで言語、連絡先、サブスクリプション レベルなどの基本設定を設定する方法について説明します。
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183497"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234615"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>管理ポータルで契約の基本設定を設定する
 スーパー管理者は、各契約に対してグローバルに適用される特定の基本設定を、管理ポータルで設定できます。  これらの基本設定を行うと、管理者がサブスクライバーを追加するときには、その管理者用のサブスクリプションの詳細が自動的に設定されます。また、これらの基本設定は、スーパー管理者だけがグローバルに変更できます。  
@@ -24,13 +24,13 @@ ms.locfileid: "84183497"
 1. スーパー管理者特権が与えられている ID で管理ポータルにサインインします。
 2. **[管理者の管理]** タブをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![管理者の基本設定ボタン](_img/admin-prefs/admin-prefs-button.png)
+   > ![管理者の基本設定ボタン](_img/admin-prefs/admin-prefs-button.png "[管理者の管理] をクリックし、[Agreement Preferences]\(契約の基本設定\) をクリックして基本設定を表示します")
 
 3. **[Agreement Preferences]\(契約の基本設定\)** をクリックします。
 右側でパネルが開き、利用できる基本設定が表示されます。 
 
    > [!div class="mx-imgBorder"]
-   > ![管理者の基本設定のポップアップ ダイアログ](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![管理者の基本設定のポップアップ ダイアログ](_img/admin-prefs/admin-prefs-flyout.png "基本設定を設定し、[保存] をクリックします")
 
 ## <a name="set-your-preferences"></a>基本設定を設定する
 それでは、利用できる基本設定とその効果を 1 つずつ見ていきましょう。 
@@ -86,6 +86,3 @@ Visual Studio サブスクリプションの管理に関する詳細情報をご
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)
 - [サブスクリプションの編集](edit-license.md)
 - [最大使用量の確認](maximum-usage.md)
-
-
-

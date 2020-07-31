@@ -42,6 +42,8 @@
       items:
         - name: 概要
           href: install/visual-studio-administrator-guide.md
+        - name: Visual Studio 企業向けガイド
+          href: install/visual-studio-enterprise-guide.md
         - name: コマンド ラインを使用する
           items:
             - name: コマンド ライン パラメーターを使用して Visual Studio をインストールする

@@ -1,6 +1,6 @@
 ---
 title: エラーのトラブルシューティング情報
-ms.date: 07/17/2020
+ms.date: 07/23/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "86459282"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234732"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
 
@@ -109,7 +109,7 @@ ms.locfileid: "86459282"
 
 ## <a name="knowledge-base-articles"></a>サポート技術情報の文書
 
-サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 KB の文書には、[Microsoft サポート](https://support.microsoft.com) Web サイトでアクセスできます。 [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/) ページでも、Visual Studio の KB 記事コレクションを閲覧できます。
+サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/) ページで Visual Studio の KB 記事を閲覧できます。
 
 ## <a name="developer-forums"></a>開発者フォーラム
 
@@ -124,4 +124,5 @@ ms.locfileid: "86459282"
 ## <a name="see-also"></a>関連項目
 
 * [ネットワーク関連のエラーまたはプロキシ エラーをトラブルシューティングする](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [トラブルシューティング (Visual Studio for Windows)](/troubleshoot/visualstudio/welcome-visual-studio/)
 * [トラブルシューティング (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: 管理者が特定のサブスクリプション GUID をサブスクライバーに割り当てる方法について説明します
-ms.openlocfilehash: e2e8cd4f5d07f218fc23c0b7b6f28ababc25263f
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072594"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235187"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルで特定のサブスクリプションを割り当てる
 
@@ -32,7 +32,7 @@ ms.locfileid: "82072594"
 1. [管理ポータル](https://manage.visualstudio.com)にサインインします。
 2. **[エクスポート]** タブを選択します。ファイルがローカル コンピューターにダウンロードされます。 このファイルには、ユーザー サブスクリプションを含む割り当ての名前と、エクスポートの日付が含まれます。
 > [!div class="mx-imgBorder"]
-> ![サブスクライバーのエクスポート](_img/exporting-subscriptions/exporting-subscriptions.png)
+> ![サブスクライバーのエクスポート](_img/exporting-subscriptions/exporting-subscriptions.png "[エクスポート] をクリックし、割り当て済みサブスクリプションの一覧をサブスクライバー情報と共に保存します。")
 
 ### <a name="identify-the-guids-you-want-to-assign"></a>割り当てる GUID を特定する
 

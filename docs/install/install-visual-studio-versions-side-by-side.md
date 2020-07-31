@@ -1,6 +1,6 @@
 ---
 title: 複数バージョンの Visual Studio をインストールする
-ms.date: 03/05/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114653"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234992"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -45,6 +45,22 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 * 複数のバージョンの Visual Studio がコンピューターにインストールされている場合、そのうちの 1 つのバージョンをアンインストールすると、すべてのバージョンの Visual Studio のファイルの関連付けが削除されます。
 
 * すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) またはソフトウェア発行者から入手した拡張機能を再インストールする必要があります。
+
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>複数のマイナー バージョンの Visual Studio をサイドバイサイドでインストールする
+
+Visual Studio のあるマイナー バージョンから次のバージョンにアップグレードする場合、既定では、Visual Studio インストーラーによって、現在のインストールがそのチャネルの次のバージョンに更新されます。 たとえば、16.6.4 Preview をインストールすると、インストーラーでは現在の 16.6.3 Preview のインストールの置き換えが試行されます。これは、両方のバージョンが 16.6 Preview チャネルにあるためです。 これにより、古いバージョンの Visual Studio がマシンの領域を確実に占有しないようにすることができます。 場合によっては、複数のマイナー リリースをサイドバイサイドでインストールすると役立つ場合があります。 この例では、これは同じマシン上に 16.6.3 と 16.6.4 の両方が存在することを意味します。
+
+1. 既存のバージョンの Visual Studio と共にサイドバイサイドでインストールするマイナー バージョンの [Visual Studio ブートストラップ ファイル](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)をダウンロードします。
+2. 管理者モードでコマンド プロンプトを開きます。 これを行うには、Windows のスタート メニューを開き、「cmd」と入力し、コマンド プロンプトの検索結果を右クリックし、 **[管理者として実行]** を選択します。 コマンド プロンプトで、Visual Studio ブートストラップ ファイルが配置されているフォルダーにディレクトリを変更します。
+3. 次のコマンドを実行して、インストール場所に新しいフォルダーのパスを指定し、.exe ファイル名を、インストールするバージョンの Visual Studio の適切なブートストラップ名に置き換えます。 .exe ファイル名は、以下のファイルと同じか、同様の名前にすることをお勧めします。
+   * Visual Studio Community の場合は vs_community.exe
+   * Visual Studio Professional の場合は vs_professional.exe
+   * Visual Studio Enterprise の場合は vs_enterprise.exe
+
+```
+vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+```
+4. インストーラーのダイアログに従って、インストールに必要なコンポーネントを選択します。 詳細については、「[Visual Studio のインストール](install-visual-studio.md#step-4---choose-workloads)」を参照してください。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework のバージョンと複数バージョンのインストール
 

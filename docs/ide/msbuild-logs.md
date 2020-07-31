@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768705"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235070"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild に関する問題のトラブルシューティングとログ記録
 
@@ -131,3 +131,7 @@ MSBuild を実行したディレクトリに、Msbuild.binlog ファイルが作
     ```
 
     msbuild を実行したディレクトリに、Msbuild.log ファイルが作成されます。
+
+## <a name="see-also"></a>関連項目
+
+- [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
