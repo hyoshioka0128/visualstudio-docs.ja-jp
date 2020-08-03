@@ -8,16 +8,17 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "82921353"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507964"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML デザイナーを使用して UI を作成する
 
@@ -122,8 +123,8 @@ Visual Studio の [ドキュメント アウトライン] ウィンドウは、B
 
 - [アニメーションを作成する](animate-objects-in-xaml-designer.md) (Blend for Visual Studio のみ)。
 
-Visual Studio で [ドキュメントアウトライン] ウィンドウを表示するには、メニューバーで [**その他の Windows** > **ドキュメントアウトライン**の**表示** > ] を選択します。
-Blend for Visual Studio でオブジェクトとタイムラインウィンドウを表示するには、メニューバーで [**ドキュメントアウトライン**の**表示** > ] を選択します。
+Visual Studio で [ドキュメントアウトライン] ウィンドウを表示するには、メニュー **View**バーで [  >  **その他の Windows**  >  **ドキュメントアウトライン**の表示] を選択します。
+Blend for Visual Studio でオブジェクトとタイムラインウィンドウを表示するには、メニューバーで**View**[  >  **ドキュメントアウトライン**の表示] を選択します。
 
 ![Visual Studio の [ドキュメント アウトライン] ウィンドウ](media/document-outline-window.png)
 
@@ -131,11 +132,11 @@ Blend for Visual Studio でオブジェクトとタイムラインウィンド�
 
 **表示/非表示**
 
-アートボード要素を表示するか、非表示にします。 表示される場合、目の形をした記号として表示されます。 **Ctrl**+**h**キーを押して要素を非表示に**し**+たり、**ctrl**+**h**キーを押して表示したりすることもできます。
+アートボード要素を表示するか、非表示にします。 表示される場合、目の形をした記号として表示されます。 **Ctrl**h キーを押して + **H**要素を非表示にし**たり、** + **ctrl** + **h**キーを押して表示したりすることもできます。
 
 **ロック/ロック解除**
 
-アートボード要素をロックまたはロック解除します。 ロックされている要素は変更できません。 ロックされると、南京錠の形をした記号として表示されます。 **Ctrl**+**l**キーを押して要素を**ロックし**+たり、**ctrl**+**l**キーを押してロックを解除したりすることもできます。
+アートボード要素をロックまたはロック解除します。 ロックされている要素は変更できません。 ロックされると、南京錠の形をした記号として表示されます。 **Ctrl**l キーを押して + **L**要素をロックしたり **、** + **ctrl** + **l**キーを押してロックを解除したりすることもできます。
 
 **スコープを pageRoot に戻す**
 
@@ -161,7 +162,7 @@ Blend for Visual Studio でオブジェクトとタイムラインウィンド�
 
 プロパティの使用とイベントの処理の詳細については、「[コントロールとパターンの概要](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [XAML デザイナーで要素を操作する](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [リソースを作成して適用する方法](../xaml-tools/how-to-create-and-apply-a-resource.md)
