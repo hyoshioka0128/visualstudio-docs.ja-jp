@@ -11,8 +11,6 @@
           href: container-tools.md
         - name: コンテナー内の React.js シングル ページ アプリ
           href: container-tools-react.md
-        - name: Kubernetes 開発
-          href: local-process-kubernetes.md
     - name: チュートリアル
       expanded: true
       items:
@@ -54,3 +52,5 @@
       href: local-process-kubernetes.md
     - name: Kubernetes を使用したローカル プロセスのしくみ (プレビュー)
       href: overview-local-process-kubernetes.md
+    - name: Local Process with Kubernetes を構成する
+      href: configure-local-process-with-kubernetes.md
