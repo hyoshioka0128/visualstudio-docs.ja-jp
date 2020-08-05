@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cb1d5196874956d54c01504288a4d948b12abea8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283568"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453702"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
@@ -91,9 +91,6 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
    ![NuGet パッケージを追加する](../javascript/media/aspnet-core-ts-nuget.png)
 
    Visual Studio によってソリューション エクスプローラーの **[依存関係]** ノードの下に NuGet パッケージが追加されます。
-
-   > [!NOTE]
-   > このチュートリアルでは NuGet パッケージが必要です。 ご自分のアプリでは、[TypeScript npm パッケージ](https://www.npmjs.com/package/typescript)を使用することもできます。
 
 1. プロジェクト ノードを右クリックし、 **[追加] > [新しいアイテム]** の順に選択します。 **[TypeScript JSON 構成ファイル]** を選択し、 **[追加]** をクリックします。
 
