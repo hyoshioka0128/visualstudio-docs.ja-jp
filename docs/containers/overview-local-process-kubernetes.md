@@ -6,12 +6,15 @@ ms.topic: conceptual
 description: Local Process with Kubernetes を使用して開発用コンピューターを Kubernetes クラスターに接続するプロセスについて説明します
 keywords: Local Process with Kubernetes, Docker, Kubernetes, Azure, コンテナー
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+manager: jillfra
+author: ghogen
+ms.author: ghogen
+ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133978"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507886"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Local Process with Kubernetes のしくみ
 
@@ -20,6 +23,9 @@ Local Process with Kubernetes を使用すると、開発用のコンピュー�
 Local Process with Kubernetes を使用すると、代わりに開発用コンピューターとクラスターの間に直接接続が作成されることにより、コードをビルドしてクラスターにデプロイする必要がなくなります。 デバッグ中に開発用コンピューターをクラスターに接続すると、Docker または Kubernetes の構成を作成することなく、完全なアプリケーションのコンテキストで、サービスを迅速にテストおよび開発できます。
 
 Local Process with Kubernetes では、接続された Kubernetes クラスターと開発用コンピューターの間でトラフィックがリダイレクトされます。 このトラフィックのリダイレクトにより、開発用コンピューター上のコードと、Kubernetes クラスターで実行されているサービスは、同じ Kubernetes クラスター内に存在するかのように通信できます。 Local Process with Kubernetes には、開発用コンピューターの Kubernetes クラスター内のポッドに利用できる環境変数とマウントされたボリュームをレプリケートする方法も用意されています。 開発用コンピューター上の環境変数およびマウントされたボリュームにアクセスできると、それらの依存関係を手動でレプリケートすることなく、コードの作業をすばやく行うことができます。
+
+> [!WARNING]
+> Local Process for Kubernetes は、開発およびテストのシナリオでのみ使用することを目的としています。 アクティブに使用されている運用クラスターまたはライブ サービスでの使用は意図されておらず、サポートされていません。
 
 ## <a name="using-local-process-with-kubernetes"></a>Local Process with Kubernetes の使用
 
@@ -39,6 +45,12 @@ Visual Studio で Local Process with Kubernetes を使用するには、*ASP.NET
 * 開発用コンピューター上でコードの実行とデバッグが開始されます。 必要な場合は、開発用コンピューターで必要なポートを現在使用しているサービスまたはプロセスが停止されて、ポートが解放されます。
 
 クラスターへの接続が確立された後、ユーザーは、コンテナー化を使用せずに、コンピューター上でネイティブにコードを実行してデバッグすることができ、コードではクラスターの残りの部分と直接対話できます。 リモート エージェントが受信するネットワーク トラフィックは、ネイティブに実行されているコードがそのトラフィックを受け入れて処理できるよう、接続時に指定されたローカル ポートにリダイレクトされます。 ご利用のクラスターにある環境変数、ボリューム、シークレットは、開発用コンピューター上で実行されているコードから利用できるようになります。 また、Local Process with Kubernetes によって開発用コンピューターに追加された hosts ファイルのエントリとポート転送により、コードでは、クラスター側のサービス名を使用して、クラスター上で実行されているサービスにネットワーク トラフィックを送信することができます。そのトラフィックは、クラスターで実行されているサービスに転送されます。 接続されている間は常に、開発用コンピューターとクラスターの間でトラフィックがルーティングされます。
+
+さらに、Local Process with Kubernetes には、`KubernetesLocalProcessConfig.yaml` ファイルを介して、開発コンピューター上のクラスター内のポッドで使用できる環境変数とマウントされたファイルをレプリケートする方法が用意されています。 このファイルを使用して、新しい環境変数やボリューム マウントを作成することもできます。
+
+## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml を使用した追加の構成
+
+`KubernetesLocalProcessConfig.yaml` ファイルを使用すると、クラスター内のポッドからアクセスできる環境変数とマウントされたファイルをレプリケートすることができます。 追加の構成オプションの詳細については、「[Local Process with Kubernetes を構成する][using-config-yaml]」を参照してください。
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>分離して開発するためのルーティング機能の使用
 
@@ -108,3 +120,4 @@ Local Process with Kubernetes を使用してローカル環境の開発用コ�
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[using-config-yaml]: configure-local-process-with-kubernetes.md

@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 5/19/2020
+ms.date: 7/30/2020
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,76 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cc1cbc98d4612c8f480cca0a9469d4a56da10bb3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
+ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184784"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87471520"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4710"></a>4.7.1.0
+リリース日: 2020 年 8 月 5 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - 既定のテンプレートに名前空間のサポートを追加しました。
+  
+  - Unity メッセージ API を 2019.4 に更新しました。
+
+  - `CA1823` 用の [`USP0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0013.md) サプレッサーが追加されました。 `SerializeField` または `SerializeReference` 属性を持つプライベート フィールドを未使用としてマークすることはできません (FxCop)。
+  
+  - `CA1822` 用の [`USP0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0014.md) サプレッサーが追加されました。 Unity メッセージを `static` 修飾子の候補としてフラグ設定することはできません (FxCop)。
+
+  - `CA1801` 用の [`USP0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0015.md) サプレッサーが追加されました。 使用されていないパラメーターを Unity メッセージから削除することはできません (FxCop)。
+  
+  - [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) サプレッサーに MenuItem サポートを追加しました。  
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - 追加のかっこやメソッド引数と共に動作しない [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) および [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) サプレッサーを修正しました。
+  
+  - Unity の設定で自動更新が無効になっている場合でも資産データベースの更新が強制される問題を修正しました。
+
+## <a name="4700"></a>4.7.0.0
+リリース日: 2020 年 6 月 23 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - Unity によってソリューションとプロジェクトが再生成されるときに、ソリューション フォルダーを保持するためのサポートを追加しました。
+
+  - [`UNT0015`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0015.md) 診断が追加されました。 `InitializeOnLoadMethod` または `RuntimeInitializeOnLoadMethod` 属性を使用して、不適切なメソッド シグネチャを検出します。
+
+  - [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) 診断が追加されました。 文字列リテラルである最初の引数と共に `Invoke`、`InvokeRepeating`、`StartCoroutine`、または `StopCoroutine` を使用するのは、タイプ セーフではありません。
+
+  - [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md) 診断が追加されました。 `SetPixels` の呼び出しは低速です。
+
+  - シェーダー ファイルに対するブロック コメントとインデントのサポートを追加しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity メッセージ ウィザードでメッセージをフィルター処理するときに、選択項目がリセットされません。
+  
+  - Unity API ドキュメントを開くときに、常に既定のブラウザーが使用されます。
+  
+  - 次の規則で [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)、[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md)、および [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) サプレッサーを修正しました: SerializeField 属性で修飾されたすべてのフィールドの `IDE0044` (読み取り専用)、`IDE0051` (未使用)、`CS0649` (未割り当て) が抑制されます。 `Unity.Object` を拡張したすべての型のパブリック フィールドの `CS0649` (未割り当て) が抑制されます。
+
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) 診断のジェネリック型パラメーターのチェックを修正しました。
+
+- **評価:**
+
+  - 列挙型での等価比較を修正しました。
 
 ## <a name="4610"></a>4.6.1.0
 リリース日: 2020 年 5 月 19 日
@@ -43,19 +103,19 @@ Visual Studio Tools for Unity の変更ログです。
 
   - CodeLens のサポート (Unity スクリプトとメッセージ) を追加しました。
   
-  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0012.md) 診断が追加されました。 `StartCoroutine()` でコルーチンの呼び出しが検出されてラップされます。
+  - [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md) 診断が追加されました。 `StartCoroutine()` でコルーチンの呼び出しが検出されてラップされます。
 
-  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0013.md) 診断が追加されました。 無効または重複する `SerializeField` 属性が検出され削除されます。
+  - [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) 診断が追加されました。 無効または重複する `SerializeField` 属性が検出され削除されます。
 
-  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0014.md) 診断が追加されました。 コンポーネント以外またはインターフェイス以外の型を使用して呼び出された `GetComponent()` が検出されます。
+  - [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) 診断が追加されました。 コンポーネント以外またはインターフェイス以外の型を使用して呼び出された `GetComponent()` が検出されます。
   
-  - `IDE0051` 用の [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0009.md) サプレッサーが追加されました。 `ContextMenu` 属性を持つメソッド、または `ContextMenuItem` 属性を持つフィールドによって参照されているメソッドには未使用のフラグが設定されません。
+  - `IDE0051` 用の [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) サプレッサーが追加されました。 `ContextMenu` 属性を持つメソッド、または `ContextMenuItem` 属性を持つフィールドによって参照されているメソッドには未使用のフラグが設定されません。
 
-  - `IDE0051` 用の [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0010.md) サプレッサーが追加されました。 `ContextMenuItem` 属性を持つフィールドに未使用のフラグが設定されません。
+  - `IDE0051` 用の [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) サプレッサーが追加されました。 `ContextMenuItem` 属性を持つフィールドに未使用のフラグが設定されません。
   
-  - `IDE0044` 用の [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0011.md) サプレッサーが追加されました。 `ContextMenuItem` 属性を持つフィールドが読み取り専用にされません。
+  - `IDE0044` 用の [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) サプレッサーが追加されました。 `ContextMenuItem` 属性を持つフィールドが読み取り専用にされません。
   
-  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md)、[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)、[`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) は、`SerializeReference` 属性と `SerializeField` 属性の両方で動作するようになりました。
+  - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)、[`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md)、[`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) は、`SerializeReference` 属性と `SerializeField` 属性の両方で動作するようになりました。
   
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -67,7 +127,7 @@ Visual Studio Tools for Unity の変更ログです。
   
   - `CreateInspectorGUI` メッセージのメッセージ スコープを修正しました。
 
-  - ポリモーフィックな修飾子を持つメソッドでは、[`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md) が報告されません。
+  - ポリモーフィックな修飾子を持つメソッドでは、[`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md) が報告されません。
 
 - **評価:**
 
@@ -81,7 +141,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - `IDE0051` 用の [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md) サプレッサーが追加されました。 Invoke、InvokeRepeating、StartCoroutine、または StopCoroutine で使用されるプライベート メソッドを未使用としてマークすることはできません。
+  - `IDE0051` 用の [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) サプレッサーが追加されました。 Invoke、InvokeRepeating、StartCoroutine、または StopCoroutine で使用されるプライベート メソッドを未使用としてマークすることはできません。
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -101,7 +161,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) の不適切なメッセージの署名に対する診断チェックを修正しました。 複数のレベルの継承を含む型を検査すると、この診断は次のメッセージで失敗します: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`。
+  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) の不適切なメッセージの署名に対する診断チェックを修正しました。 複数のレベルの継承を含む型を検査すると、この診断は次のメッセージで失敗します: `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`。
 
 ## <a name="4500"></a>4.5.0.0
 
@@ -113,9 +173,9 @@ Visual Studio Tools for Unity の変更ログです。
 
   - HLSL ファイルのサポートが追加されました。
   
-  - `IDE0051` 用の [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md) サプレッサーが追加されました。 `SerializeField` 属性を持つプライベート フィールドを未使用としてマークすることはできません。
+  - `IDE0051` 用の [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) サプレッサーが追加されました。 `SerializeField` 属性を持つプライベート フィールドを未使用としてマークすることはできません。
   
-  - `CS0649` 用の [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md) サプレッサーが追加されました。 `SerializeField` 属性を持つフィールドを未割り当てとしてマークすることはできません。  
+  - `CS0649` 用の [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) サプレッサーが追加されました。 `SerializeField` 属性を持つフィールドを未割り当てとしてマークすることはできません。  
 
 ### <a name="bug-fixes"></a>バグ修正
 
@@ -151,7 +211,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - タグ比較アナライザー [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md) の、高度なバイナリ式および呼び出し式を修正しました。
+  - タグ比較アナライザー [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md) の、高度なバイナリ式および呼び出し式を修正しました。
 
 ### <a name="deprecated-features"></a>非推奨の機能
 
@@ -167,7 +227,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - すべての Unity メッセージに対して `IDE0060` (未使用パラメーター) 用の [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0005.md) サプレッサーが追加されました。
+  - すべての Unity メッセージに対して `IDE0060` (未使用パラメーター) 用の [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) サプレッサーが追加されました。
   
   - `TooltipAttribute` でタグ付けされたフィールド用のクイック ヒントを追加しました。 (これは、このフィールドを使用する単純な get アクセサーに対しても機能します)。
 
@@ -190,21 +250,21 @@ Visual Studio Tools for Unity の変更ログです。
 - **統合:**
 
   - Unity に固有の新しい診断を追加することによって、Visual Studio が Unity プロジェクトをより深く理解できるようにしました。 また、Unity プロジェクトには適用されない一般的な C# 診断を抑制することで、IDE をよりスマートにしました。 たとえば、IDE では、インスペクター変数 `readonly` を変更するクイック修正は表示されません。これにより、Unity エディターで変数を変更できなくなります。
-    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0001.md):Unity メッセージは空の場合でもランタイムによって呼び出されます。それらのメッセージを宣言する場合は、不要な処理を Unity ランタイムが回避するようにしないでください。
-    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0002.md):文字列の等価性を使用したタグ比較は、組み込みの CompareTag メソッドよりも遅くなります。
-    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0003.md):型の安全性のため、GetComponent のフォームは汎用的なものを使用することが推奨されています。
-    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0004.md):更新メッセージはフレームレートに依存しているため、Time.fixedDeltaTime ではなく Time.deltaTime instead を使用する必要があります。
-    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0005.md):FixedUpdate メッセージはフレームレートに依存しないため、Time.deltaTime ではなく Time.fixedDeltaTime を使用する必要があります。
-    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md):この Unity メッセージに対して無効なメソッド署名が検出されました。
-    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0007.md):Unity では、null 合体演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
-    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0008.md):Unity では、null 反映演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
-    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0009.md):InitializeOnLoad 属性をクラスに適用する場合は、静的コンストラクターを指定する必要があります。 InitializeOnLoad 属性を使用すると、エディターの起動時にそれが確実に呼び出されます。
-    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0010.md):MonoBehaviours は、AddComponent() を使用してのみ作成する必要があります。 MonoBehaviour はコンポーネントであり、GameObject にアタッチする必要があります。
-    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0011.md):ScriptableObject は CreateInstance() を使用してのみ作成する必要があります。 Unity メッセージ メソッドを処理するには、Unity エンジンによって ScriptableObject を作成する必要があります。
-    - `IDE0029` の [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0001.md): Unity オブジェクトでは、null 合体演算子を使用しないでください。
-    - `IDE0031` の [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0002.md): Unity オブジェクトでは null 反映演算子を使用しなきでください。
-    - `IDE0051` の [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0003.md): Unity メッセージは Unity ランタイムによって呼び出されます。
-    - `IDE0044` の [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0004.md): SerializeField 属性を持つフィールドを読み取り専用にしないでください。
+    - [`UNT0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0001.md):Unity メッセージは空の場合でもランタイムによって呼び出されます。それらのメッセージを宣言する場合は、不要な処理を Unity ランタイムが回避するようにしないでください。
+    - [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md):文字列の等価性を使用したタグ比較は、組み込みの CompareTag メソッドよりも遅くなります。
+    - [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md):型の安全性のため、GetComponent のフォームは汎用的なものを使用することが推奨されています。
+    - [`UNT0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0004.md):更新メッセージはフレームレートに依存しているため、Time.fixedDeltaTime ではなく Time.deltaTime instead を使用する必要があります。
+    - [`UNT0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0005.md):FixedUpdate メッセージはフレームレートに依存しないため、Time.deltaTime ではなく Time.fixedDeltaTime を使用する必要があります。
+    - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md):この Unity メッセージに対して無効なメソッド署名が検出されました。
+    - [`UNT0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0007.md):Unity では、null 合体演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
+    - [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md):Unity では、null 反映演算子と互換性のない、Unity オブジェクト用の null 比較演算子がオーバーライドされます。
+    - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0009.md):InitializeOnLoad 属性をクラスに適用する場合は、静的コンストラクターを指定する必要があります。 InitializeOnLoad 属性を使用すると、エディターの起動時にそれが確実に呼び出されます。
+    - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md):MonoBehaviours は、AddComponent() を使用してのみ作成する必要があります。 MonoBehaviour はコンポーネントであり、GameObject にアタッチする必要があります。
+    - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0011.md):ScriptableObject は CreateInstance() を使用してのみ作成する必要があります。 Unity メッセージ メソッドを処理するには、Unity エンジンによって ScriptableObject を作成する必要があります。
+    - `IDE0029` の [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md): Unity オブジェクトでは、null 合体演算子を使用しないでください。
+    - `IDE0031` の [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md): Unity オブジェクトでは null 反映演算子を使用しなきでください。
+    - `IDE0051` の [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md): Unity メッセージは Unity ランタイムによって呼び出されます。
+    - `IDE0044` の [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md): SerializeField 属性を持つフィールドを読み取り専用にしないでください。
 
 ## <a name="4310"></a>4.3.1.0
 
@@ -508,7 +568,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
 
@@ -566,7 +626,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - (以前のバージョン 3.9.0.0 からの移植) Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
 
@@ -576,7 +636,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - Unity のパフォーマンスのバグの一時的な回避策: プロジェクト生成時の MonoIslands のキャッシュ。
 
@@ -616,7 +676,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - 今後、新しい Unity ランタイムを使用するときにはポータブル pdb を mdb に変換しないでください。
 
@@ -686,7 +746,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - Mono バージョンの検出を修正しました。
 
@@ -706,7 +766,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - Unity ターゲット フレームワークの検出を修正しました。
 
@@ -766,7 +826,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **Project Generation:**
+- **プロジェクトの生成:**
 
   - プレーヤー プロジェクトに対するプロジェクト guid の計算を修正しました。
 

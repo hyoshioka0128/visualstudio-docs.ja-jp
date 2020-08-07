@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 03/07/2020
+ms.date: 07/29/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
-ms.openlocfilehash: 5b21a87f0dc84189381f63274343f5fd7a384c5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: bf2afafc99993b2b3717f0264fee89b747eab58a
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180234"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434293"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
@@ -27,11 +27,11 @@ ms.locfileid: "84180234"
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>サブスクライバー ポータルでダウンロードを見つける方法
 [[ダウンロード]](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) ページにアクセスすると、製品の種類でグループ化された一般的なダウンロードが表示されます。  表示されている一般的なダウンロードのいずれかを選択するか、ページの上部にある検索バーを使用して任意の製品を検索できます。
 > [!div class="mx-imgBorder"]
-> ![サブスクライバー ダウンロード ページ](_img/subscriber-downloads/subscriber-downloads-resized.png)
+> ![サブスクライバー ダウンロード ページ](_img/subscriber-downloads/subscriber-downloads-resized.png "[ダウンロード] ブレードをクリックすると、最も人気のあるダウンロードが表示されます。")
 
 たとえば、開発者ツールの一覧から **Visual Studio 2019** を選択した場合、利用可能な Visual Studio 2019 ダウンロードの一覧が表示されます。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 のダウンロード](_img/subscriber-downloads/vs2019-product-list.png)
+> ![Visual Studio 2019 のダウンロード](_img/subscriber-downloads/vs2019-product-list.png "製品を選択すると、使用可能なバージョンの一覧が表示されます。")
 
 利用可能なドロップダウン メニューを使用して、アーキテクチャ、言語、ファイルの種類を簡単に選択できます。 該当するオプションを選択し、 **[ダウンロード]** をクリックして製品のダウンロードを開始します。
 
@@ -41,16 +41,16 @@ ms.locfileid: "84180234"
 ### <a name="displaying-download-details"></a>ダウンロードの詳細の表示
 製品名または **[情報]** リンクをクリックすると、そのダウンロードの詳細が表示され、製品のリリース ノートにアクセスできます。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 ダウンロードの詳細](_img/subscriber-downloads/vs2019-info.png)
+> ![Visual Studio 2019 ダウンロードの詳細](_img/subscriber-downloads/vs2019-info.png "[情報] タブでは、ダウンロードに関する情報が表示され、リリース ノートへのアクセスが提供されます。")
 
 詳細ウィンドウで、 **[キー]** タブをクリックして、プロダクト キーの状態を確認することもできます。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 プロダクト キー](_img/subscriber-downloads/vs2019-keys.png)
+> ![Visual Studio 2019 プロダクト キー](_img/subscriber-downloads/vs2019-keys.png "[キー] タブでは、残りのキーの数が表示され、使用可能なキーを要求することができます。")
 
 ### <a name="obtaining-product-keys"></a>プロダクト キーの取得
 ダウンロード用プロダクト キーを取得する場合は、 **[キーを入手]** というラベルの付いた青いキーをクリックするか、詳細ウィンドウが既に表示されている場合は、 **[キー]** タブの **[キーの要求]** をクリックします。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2019 のプロダクト キーの要求](_img/subscriber-downloads/vs2019-claim-keys.png)
+> ![Visual Studio 2019 のプロダクト キーの要求](_img/subscriber-downloads/vs2019-claim-keys.png "[キーの要求] をクリックして、残りのキーを要求します。")
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
@@ -67,7 +67,3 @@ ms.locfileid: "84180234"
 - [Azure DevTest の個人クレジット](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Visual Studio IDE](vs-ide-benefit.md)
-
-
-
-

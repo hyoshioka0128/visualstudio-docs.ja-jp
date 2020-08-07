@@ -3,7 +3,11 @@ title: プロファイリング ツールを使用してパフォーマンスを
 description: Visual Studio で利用可能な各種診断ツールについて簡単に説明します。
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816697"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507990"
 ---
 # <a name="first-look-at-profiling-tools"></a>プロファイリング ツールの概要
 
@@ -168,7 +172,7 @@ UI の応答性、長い読み込み時間、UWP アプリの遅い表示更新�
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>ネットワーク使用量を分析する (UWP)
 
-UWP アプリでは、`Windows.Web.Http` API を利用して実行されたネットワーク操作を分析できます。このツールは、アクセスと認証の問題、キャッシュの不適切な利用、ディスプレイとダウンロードの低いパフォーマンスなどの問題の解決に役に立つことがあります。 ツールを使用するには、パフォーマンス プロファイラーで **[ネットワーク]** を選択し、 **[開始]** を選択します。 アプリで、`Windows.Web.Http` を使用するシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
+UWP アプリでは、実行されたネットワーク操作を、`Windows.Web.Http` API を使用して分析できます。 このツールを使用すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。 ツールを使用するには、パフォーマンス プロファイラーで **[ネットワーク]** を選択し、 **[開始]** を選択します。 アプリで、`Windows.Web.Http` を使用するシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
 
 ![ネットワーク使用率プロファイリング ツール](../profiling/media/prof-tour-network-usage.png "Diag Network Usage")
 
@@ -198,13 +202,13 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 ::: moniker range=">=vs-2019"
 |パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[パフォーマンスのヒント](../profiling/perftips.md)|可|可|可|
-|[CPU 使用率](../profiling/cpu-usage.md)|可|可|可|
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|可|
-|[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|可|
-|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|可|Ｘ|
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|可|Ｘ|
-|[イベント ビューアー](../profiling/events-viewer.md)|可|可|可|
+|[パフォーマンスのヒント](../profiling/perftips.md)|可|可|○|
+|[CPU 使用率](../profiling/cpu-usage.md)|可|可|○|
+|[メモリ使用量](../profiling/memory-usage.md)|可|可|○|
+|[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|○|
+|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|必須|no|
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|必須|no|
+|[イベント ビューアー](../profiling/events-viewer.md)|可|可|○|
 |[.NET Async](../profiling/analyze-async.md)|はい (.NET のみ)|可|可|
 |[データベース](../profiling/analyze-database.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|Ｘ|Ｘ|Ｘ|
@@ -214,14 +218,14 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 ::: moniker range="vs-2017"
 |パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[CPU 使用率](../profiling/cpu-usage.md)|可|可|可|
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|可|
-|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|可|Ｘ|
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|可|Ｘ|
+|[CPU 使用率](../profiling/cpu-usage.md)|可|可|○|
+|[メモリ使用量](../profiling/memory-usage.md)|可|可|○|
+|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|必須|no|
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|必須|no|
 |[パフォーマンスのヒント](../profiling/perftips.md)|可|XAML の場合は可、HTML の場合は不可|可|
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|可|Ｘ|可|
+|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|はい|no|可|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
-|[ネットワーク使用率](../profiling/network-usage.md)|Ｘ|可|Ｘ|
+|[ネットワーク使用率](../profiling/network-usage.md)|no|はい|no|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ|
 |[JavaScript メモリ](../profiling/javascript-memory.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ|
 ::: moniker-end

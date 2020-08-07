@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
-ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904573"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434253"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。
@@ -24,7 +24,7 @@ ms.locfileid: "85904573"
 2. **[サブスクリプション]** タブをクリックします。 
 3. 右上にある **[Contact my Admin]\(管理者に問い合わせる\)** をクリックします。 
    > [!div class="mx-imgBorder"]
-   > ![[Contact my Admin]\(管理者に問い合わせる\)](_img/contact-my-admin/contact-my-admin-button.png)
+   > ![[Contact my Admin]\(管理者に問い合わせる\)](_img/contact-my-admin/contact-my-admin-button.png "[Contact my Admin]\(管理者に問い合わせる\) ボタンをクリックしてメッセージを入力し、[送信] をクリックします。")
 4. 管理者へのメッセージを入力します。
 5. 管理者に送信されたメッセージのコピーを受け取る場合、 **[Send me a copy]\(コピーを送る\)** チェックボックスをクリックします。 
 6. 最後に、 **[送信]** をクリックします。

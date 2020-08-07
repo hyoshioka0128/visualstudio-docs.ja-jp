@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444877"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453684"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -26,14 +26,14 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 
 特典ページでは、使用中のサブスクリプションが目立つように青いバナーで表示されています。 ページの右上にも表示されます。
 > [!div class="mx-imgBorder"]
-> ![アクティブなサブスクリプション](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![アクティブなサブスクリプション](_img/manage-vs-subscriptions/current-subscription-cropped.png "現在のサブスクリプションは、ページの上部とサブスクリプションのドロップダウン リストに表示されます。")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>サブスクリプションは次のいずれかの方法で切り替えることができます。
 
 - 右上のドロップダウンをクリックし、一覧からサブスクリプションを選びます
 - [サブスクリプション] タブをクリックし、使うサブスクリプションをクリックします
   > [!div class="mx-imgBorder"]
-  > ![サブスクリプションを切り替える](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![サブスクリプションを切り替える](_img/manage-vs-subscriptions/change-subscription-resized.png "[サブスクリプション] タブをクリックして、すべてのサブスクリプションに関する詳細情報を表示し、それらを切り替えます。")
 
 ### <a name="if-your-subscription-is-not-visible"></a>サブスクリプションが表示されない場合...
 
@@ -78,7 +78,7 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 毎月の Visual Studio サブスクリプション ニュースレターなど、サブスクリプションとベネフィットに関する更新を定期的に受け取りたい場合は、Visual Studio プロファイルで Visual Studio サブスクリプションのボックスをオンにして、[ユーザー設定を更新](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)します。 いつでもこれらのユーザー設定を変更したり、サブスクライブを解除したりできます。 
 
    > [!div class="mx-imgBorder"]
-   > ![ユーザー設定](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![ユーザー設定](_img/manage-vs-subscriptions/change-prefs.png "Visual Studio サブスクリプション プログラムのメールのチェックボックスをオンにして、更新プログラムを受信します。")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>既存の Azure DevOps Services または Azure サブスクリプションにサブスクリプションをリンクする
 個人の Microsoft アカウント (MSA) を使ってサブスクリプションにサインインしていて、Azure によって管理される職場または学校アカウントを使う Azure DevOps Services または Microsoft Azure を含むサブスクリプションがある場合は、2 つのサブスクリプションをリンクできます。 これは "代替アカウント" と呼ばれ、サブスクリプションへのサインインに MSA を使い続けることができるだけでなく、職場または学校アカウントに関連付けられている既存の Azure、Azure DevOps Services、IDE リソースにアクセスすることもできます。

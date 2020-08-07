@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284727"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390263"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
 
@@ -47,6 +47,9 @@ ms.locfileid: "85284727"
 - **Windows** には、**コア**と**拡張機能**の各サブグループが含まれます。 **[オブジェクト ブラウザー]** を使って Windows SDK または拡張 SDK 内の参照を探索できます。
 
 - **最近**使用したサブグループを**参照**します。
+ 
+    > [!NOTE]
+    > C++ プロジェクトを開発している場合は、[参照マネージャー] ダイアログ ボックスに **[参照]** が表示されない場合があります。
 
 ## <a name="add-a-reference"></a>参照を追加する
 
