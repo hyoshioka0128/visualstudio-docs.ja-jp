@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289093"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453757"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
 この Visual Studio のコード エディターの概要では、Visual Studio でコードを記述、コード内を移動、およびコードを理解する簡単な方法をいくつか示します。
 
 > [!TIP]
-> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。 実行するアプリ開発の種類によっては、Visual Studio と共に **Node.js ワークロード**をインストールする必要がある場合があります。
+> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。 実行するアプリ開発の種類によっては、Visual Studio と共に **Node.js ワークロード**をインストールする必要がある場合があります。 TypeScript の言語サービスを取得する方法の詳細については、「[TypeScript のサポート](../javascript/javascript-in-vs-2019.md#typescript-support)」をご覧ください。
 
 この記事では、既に JavaScript の開発に慣れていることを前提としています。 慣れていない場合は、最初に [Node.js と Express のアプリの作成](../javascript/tutorial-nodejs.md)などのチュートリアルに関するページを参照することをお勧めします。
 
@@ -65,6 +65,8 @@ IntelliSense 情報を提供する場合、言語サービスで TypeScript *d.t
 ![エラー一覧の表示](../javascript/media/write-code-error-list.png)
 
 `"data"` の前にコンマ (`,`) を追加することで、このコードを修正できます。
+
+リンティングの詳細については、「[リンティング](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)」をご覧ください。
 
 ## <a name="comment-out-code"></a>コメント アウト コード
 

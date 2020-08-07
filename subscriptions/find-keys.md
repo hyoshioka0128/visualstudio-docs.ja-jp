@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションでプロダクト キーを検索して要求する | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 03/09/2020
+ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションでプロダクト キーを検索、要求、エクスポートする方法を説明します。
-ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232486"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453744"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでプロダクト キーを検索して要求する
 この記事では、 https://my.visualstudio.com/productkeys からプロダクト キーを検索、要求、エクスポートする方法について説明します。  キーを使用して製品をライセンス認証する方法、キーのリテール版とボリューム ライセンス版、および毎日のプロダクト キー要求の制限について詳しくは、[プロダクト キーの概要](product-keys.md)に関するページをご覧ください。
@@ -20,7 +20,7 @@ ms.locfileid: "80232486"
 ## <a name="locating-and-claiming-product-keys"></a>プロダクト キーの確認と要求
 プロダクト キーを表示するには、Visual Studio サブスクリプションにサインインする必要があります。 以下に示す [[ダウンロード]](https://my.visualstudio.com/downloads) ページで、特定の製品の青い **[キーを入手]** リンクを選択すると、その製品のプロダクト キーが表示されます。  すべてのキーをまとめて [[プロダクト キー](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)] ページで確認することもできます。 1 つの製品に対して複数のキーが存在する場合は、使用するキーを識別できるよう、該当するダウンロードの [メモ] 列にメモが表示されます。
 > [!div class="mx-imgBorder"]
-> ![ダウンロード ページからキーを入手する](_img/product-keys/download-get-key.png)
+> ![ダウンロード ページからキーを入手する](_img/product-keys/download-get-key.png "情報ページでダウンロードの [キーを入手] をクリックし、その製品のキーを取得します。")
 
 製品によっては、1 つのダウンロードに製品の複数のエディションが含まれていることがあります。 このような場合、入力されたプロダクト キーによって、製品のどのエディションがインストールされるかが決まります。
 "静的" キーなどのように、自動的に提供されるキーもあります。これらは、ライセンス認証が必要ないので、同じキーを必要に応じて何回でも使用することができます。 他のキーについては、製品の **[キーを入手]** リンクを選択して要求する必要があります。
@@ -53,7 +53,7 @@ ms.locfileid: "80232486"
 2. [[プロダクト キー]](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) タブをクリックします。
 3. プロダクト キーは、製品名のアルファベット順に一覧表示されます。  目的の製品の名前まで下にスクロールするか、ページの上部にある検索バーを使用して検索することができます。
 > [!div class="mx-imgBorder"]
-> ![プロダクト キーの検索](_img/product-keys/search-keys.png)
+> ![プロダクト キーの検索](_img/product-keys/search-keys.png "目的の製品までスクロールするか、検索ボックスを使用して製品をすばやく見つけます。")
    
 この例では、検索バーを使用して Visual Studio Enterprise 2019 用のプロダクト キーを検索しています。
 ご覧のように、いくつかのバージョンが一覧表示されます。  Visual Studio Enterprise 2019 バージョン 16.0 および 16.1 に対して、それぞれ 1 つのキーが既に要求されています。  異なる種類の追加キーは、両方のバージョンで引き続き使用できます。 **[メモ]** 列に要求したキーに関する簡単なメモを記録することができます。  これと **[要求済み]** 列の日付を組み合わせて、要求したキーを追跡することができます。  たとえば、キーを使用して製品のインストールをライセンス認証するときにメモを作成する場合があります。

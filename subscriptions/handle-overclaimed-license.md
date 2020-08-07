@@ -7,15 +7,15 @@ ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: サブスクリプションの割り当て超過を管理者が解決する方法について説明します
-ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232450"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453725"
 ---
-# <a name="overallocated-subscriptions"></a>サブスクリプションの割り当て超過
-サブスクライバーを追加した後に、注文が変更される場合があります。これにより会社が所有するライセンス数よりも割り当てられたサブスクリプションが多くなる場合があります。 これは "割り当て超過" と呼ばれています。  
+# <a name="over-allocated-subscriptions"></a>サブスクリプションの割り当て超過
+サブスクライバーを追加した後に、注文が変更される場合があります。これにより会社が所有するライセンス数よりも割り当てられたサブスクリプションが多くなる場合があります。 これは "割り当て超過" と呼ばれます。  
 
 ご利用のサブスクリプションの割り当てを表示するには、左上にあるアイコンをクリックして、割り当てウィンドウを開きます。  
 
@@ -23,11 +23,11 @@ ms.locfileid: "80232450"
 > Open License プログラムでは割り当て超過は許可されません。  また、他のプログラムでは、ポータルにこの情報を別の方式で表示できます。
 >
 > [!div class="mx-imgBorder"]
-> ![過剰に要求されたサブスクリプションの通知](_img/over-claimed/over-claimed-alert.png)
+> ![過剰に要求されたサブスクリプションの通知](_img/over-claimed/over-claimed-alert.png "割り当て超過の数は概要に一覧表示され、サブスクリプションの種類ごとに、グラフのハッシュされたバーで表されます。")
 
 表示ではハッシュされたバーを使用して、サブスクリプションの割り当て超過が示されていることに注目してください。  すべてのサブスクリプションの種類全体での割り当て超過の数は、上部の [概要] セクションにあります。また、サブスクリプション レベルごとに、固有の割り当て状態も表示されます。  
 
-## <a name="resolve-overallocated-subscriptions"></a>サブスクリプションの割り当て超過を解決する
+## <a name="resolve-over-allocated-subscriptions"></a>サブスクリプションの割り当て超過を解決する
 割り当て超過を解決するには、次のようにいくつかの方法があります。
 - 再販業者に連絡して追加のサブスクリプションを購入します。
 - 年次補正期間まで待って、その時点で割り当て超過のサブスクリプションの支払いを行います。 

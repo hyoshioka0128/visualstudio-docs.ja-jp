@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182912"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425395"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 
@@ -170,3 +170,4 @@ Visual Basic コンパイラによってその名前空間がインポートさ�
 
 - [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)
 - [.NET Core SDK プロジェクトの MSBuild プロパティ](/dotnet/core/project-sdk/msbuild-props)
+- [一般的な MSBuild 項目メタデータ](common-msbuild-item-metadata.md)

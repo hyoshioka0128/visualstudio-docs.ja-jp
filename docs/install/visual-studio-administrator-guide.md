@@ -2,7 +2,7 @@
 title: Visual Studio 管理者ガイド
 titleSuffix: ''
 description: エンタープライズ環境で Visual Studio を展開する方法について説明します。
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419264"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425408"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
@@ -48,6 +48,10 @@ ms.locfileid: "85419264"
 
   個々のクライアント コンピューターはどこから更新プログラムを入手しますか? 具体的には、更新プログラムをインターネットから取得するか、全社的なローカル共有から取得するかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。
 
+  ネットワーク インストール レイアウトを Visual Studio の最新の更新プログラムのインストール ポイントとして使用できるように、また、クライアント ワークステーションに既に配置されているインストールを保持するために、最新の製品の更新プログラムを使って Visual Studio のネットワーク インストール レイアウトを更新できます。 詳細については、「[Visual Studio のネットワーク ベース インストールを更新する](../install/update-a-network-installation-of-visual-studio.md)」をご覧ください。
+
+  インターネットに接続されていないコンピューターの場合、オフラインの Visual Studio インスタンスを更新する最も簡単かつ迅速な方法は、最小限のレイアウトを作成することです。 詳細については、「[最小限のオフライン レイアウトを使用して Visual Studio を更新する](update-minimal-layout.md)」をご覧ください。
+
 * 会社に必要な[ワークロードとコンポーネント](workload-and-component-ids.md?view=vs-2019)を決定します。
 
 * (スクリプト ファイルの詳細管理を簡単にする) [応答ファイル](automated-installation-with-response-file.md?view=vs-2019)を使用するかどうかを決定します。
@@ -69,6 +73,10 @@ ms.locfileid: "85419264"
 * 更新モデルについて決定します。
 
   個々のクライアント コンピューターはどこから更新プログラムを入手しますか? 具体的には、更新プログラムをインターネットから取得するか、全社的なローカル共有から取得するかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。
+
+  ネットワーク インストール レイアウトを Visual Studio の最新の更新プログラムのインストール ポイントとして使用できるように、また、クライアント ワークステーションに既に配置されているインストールを保持するために、最新の製品の更新プログラムを使って Visual Studio のネットワーク インストール レイアウトを更新できます。 詳細については、「[Visual Studio のネットワーク ベース インストールを更新する](../install/update-a-network-installation-of-visual-studio.md)」をご覧ください。
+
+  インターネットに接続されていないコンピューターの場合、オフラインの Visual Studio インスタンスを更新する最も簡単かつ迅速な方法は、最小限のレイアウトを作成することです。 詳細については、「[最小限のオフライン レイアウトを使用して Visual Studio を更新する](update-minimal-layout.md)」をご覧ください。
 
 * 会社に必要な[ワークロードとコンポーネント](workload-and-component-ids.md?view=vs-2017)を決定します。
 

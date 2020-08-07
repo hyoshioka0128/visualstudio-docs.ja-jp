@@ -7,12 +7,12 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
 description: 管理者がサブスクリプションの割り当てを削除する方法を説明します。
-ms.openlocfilehash: e6ce84aa84e25bcdeb44b93954289a65a3454010
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902911"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434264"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで割り当てを削除する
 サブスクライバーが会社を退職したり、プロジェクトを完了したり、新しい仕事の役割に切り替わったりして、Visual Studio サブスクリプションが不要になった場合に、それらのサブスクリプションを削除して、他のユーザーに割り当てることができます。 サブスクリプションを再割り当てする場合は、サブスクライバーのすべての特典がリセットされるわけではないことに注意してください。  新しいユーザーは要求されていない任意のキーを要求し、以前に要求されたキーを表示できるようになりますが、要求の上限はリセット**されません**。  エンタープライズ契約 (EA) を締結している組織の場合、Pluralsight トレーニングなど、元のユーザーによって使用されていたすべての特典がリセットされます。 
@@ -24,7 +24,7 @@ ms.locfileid: "85902911"
 2. 選択したサブスクライバーを削除するには、 **[削除]** をクリックします。
 3. 削除の確認を求めるメッセージが表示されたら、 **[OK]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![サブスクライバーの削除](_img/delete-license/delete-subscribers.png)
+   > ![サブスクライバーの削除](_img/delete-license/delete-subscribers.png "削除するユーザーを選択し、[削除] をクリックします。複数のサブスクライバーを選択する場合、Ctrl キーと Shift キーを使用できます。")
 
    > [!NOTE]
    > テンプレートを利用した一括削除は、使用できません。 Azure Active Directory セキュリティ グループを使用してサブスクリプションの割り当てを管理している組織では、削除の実行方法の詳細については、[こちらの記事](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions)を参照してください。  

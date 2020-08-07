@@ -2,16 +2,19 @@
 title: Visual Studio で Local Process with Kubernetes を使用する (プレビュー)
 ms.technology: vs-azure
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Visual Studio で Local Process with Kubernetes を使用して開発用コンピューターを Kubernetes クラスターに接続する方法について説明します
 keywords: Local Process with Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, コンテナー
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+ms.author: ghogen
+author: ghogen
+manager: jillfra
+ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133997"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507899"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Local Process with Kubernetes (プレビュー) の使用
 
@@ -137,6 +140,10 @@ Visual Studio で [自転車共有サンプル アプリケーション][bike-sh
 >
 > Visual Studio がクラスターへの接続を突然終了した場合、または Visual Studio Code が終了した場合は、Local Process with Kubernetes に接続する前に、リダイレクトしているサービスが元の状態に戻らない可能性があります。 この問題を解決するには、[トラブルシューティング ガイド][troubleshooting]のページを参照してください。
 
+## <a name="additional-configuration"></a>追加構成
+
+Local Process with Kubernetes では、ルーティング トラフィックを処理し、追加の構成なしで環境変数をレプリケートできます。 ConfigMap ファイルなど、Kubernetes クラスターのコンテナーにマウントされているファイルをダウンロードする必要がある場合、`KubernetesLocalProcessConfig.yaml` を作成し、開発用コンピューターにそれらのファイルをダウンロードできます。 詳細については、[Local Process with Kubernetes 向けの追加の構成に KubernetesLocalProcessConfig.yaml を使用する][kubernetesLocalProcessConfig-yaml]方法に関するページを参照してください。
+
 ## <a name="using-logging-and-diagnostics"></a>ログ記録と診断の使用
 
 診断ログは、[開発用コンピューターの *TEMP* ディレクトリ][azds-tmp-dir]の `Azure Dev Spaces` ディレクトリにあります。
@@ -170,3 +177,4 @@ Local Process with Kubernetes のしくみを理解する
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[kubernetesLocalProcessConfig-yaml]: configure-local-process-with-kubernetes.md

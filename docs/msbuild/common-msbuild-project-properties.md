@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f372be9ffa6ae76503550616c6b3612aad6146
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 08c790af5504c902bf5fe37d2cddba9b9f63aa40
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770873"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425369"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 
@@ -137,3 +137,5 @@ ms.locfileid: "85770873"
 ## <a name="see-also"></a>関連項目
 
 - [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
+- [一般的な MSBuild 項目メタデータ](common-msbuild-item-metadata.md)
+- [MSBuild の予約済みおよび既知のプロパティ](msbuild-reserved-and-well-known-properties.md)

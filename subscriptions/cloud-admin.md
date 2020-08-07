@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: 月次サブスクリプションの管理者を設定する
-ms.openlocfilehash: ef1536eb27beb501fc278d1a95521905c9d9485a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903110"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434302"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する
 
@@ -36,19 +36,19 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 2. Visual Studio 月次サブスクリプションの購入に使用したアカウントを使ってサインインします。
 3. **[Azure サービス]** で **[コストの管理と請求]** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![[Azure サービス] で [コストの管理と請求] を選択する](_img/cloud-admin/azure-cost-billing.png)
+   > ![[Azure サービス] で [コストの管理と請求] を選択する](_img/cloud-admin/azure-cost-billing.png "Azure サービス グループから Cost Management を選択する")
 4. **[個人用サブスクリプション]** リストで、購入に使用した Azure サブスクリプションを選択します。
    > [!div class="mx-imgBorder"]
-   > ![サブスクリプションの選択](_img/cloud-admin/subscription-list.png)
+   > ![サブスクリプションの選択](_img/cloud-admin/subscription-list.png "購入を行うために使用する Azure サブスクリプションを選択します。")
 5. 左側のナビゲーション ウィンドウのリストの一番上の近くにある **[アクセス制御 (IAM)]** をクリックします。
 6. ページの上部にある **[追加]** タブをクリックします。
 7. **[ロールの割り当ての追加]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![[アクセス制御]、[追加]、[ロールの割り当ての追加] の順に選択する](_img/cloud-admin/access-control-add.png)
+   > ![[アクセス制御]、[追加]、[ロールの割り当ての追加] の順に選択する](_img/cloud-admin/access-control-add.png "左側の一覧から [アクセス制御] を選択し、[追加] を選択します。")
 8. 右側のポップアップ ウィンドウで、ウィンドウの一番上にある **[ロール]** ドロップダウンをクリックし、下にスクロールして **[ユーザー アクセス管理者]** を選択します。
 9. ユーザーの一覧で、管理者にするユーザーまで下にスクロールして、選択します。 
    > [!div class="mx-imgBorder"]
-   > ![[ロール]、[ユーザー アクセス管理者] の順にアクセスする](_img/cloud-admin/add-role-user-access-admin.png)
+   > ![[ロール]、[ユーザー アクセス管理者] の順にアクセスする](_img/cloud-admin/add-role-user-access-admin.png "[ロール]、[ユーザー アクセス管理者] の順に選択した後、管理者にするユーザーの名前を選択します。")
 10. **[保存]** をクリックします。
 11. **[ロールの割り当て]** タブをクリックし、選択したユーザーがユーザー アクセス管理者として表示されることを確認します。
 
