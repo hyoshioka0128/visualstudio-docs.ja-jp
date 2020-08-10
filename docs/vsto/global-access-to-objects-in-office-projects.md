@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f76a2e74315980764a2cdffe67af4403552de7fe
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253442"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041052"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office プロジェクト内のオブジェクトへのグローバルアクセス
   Office プロジェクトを作成すると、Visual Studio は自動的に `Globals` という名前のクラスをプロジェクトに生成します。 `Globals` クラスを使用して、プロジェクト内の任意のコードから実行時に異なる複数のプロジェクト項目にアクセスすることができます。
@@ -49,7 +49,7 @@ ms.locfileid: "71253442"
 
 - Word 文書またはテンプレート プロジェクトの `ThisDocument` クラス。 このオブジェクトには、 `Globals.ThisDocument` プロパティを使用してアクセスすることができます。
 
-- VSTO アドインプロジェクトのクラス。`ThisAddIn` このオブジェクトには、 `Globals.ThisAddIn` プロパティを使用してアクセスすることができます。
+- `ThisAddIn`VSTO アドインプロジェクトのクラス。 このオブジェクトには、 `Globals.ThisAddIn` プロパティを使用してアクセスすることができます。
 
 - リボン デザイナーを使用してカスタマイズした、プロジェクト内のすべてのリボン。 リボンには、 `Globals.Ribbons` プロパティを使用してアクセスすることができます。 詳細については、「[実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)」を参照してください。
 
@@ -57,24 +57,23 @@ ms.locfileid: "71253442"
 
 - [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]をターゲットとするプロジェクトで実行時にリボン コントロールおよびホスト項目を作成できるようにするファクトリ オブジェクト。 このオブジェクトには、 `Globals.Factory` プロパティを使用してアクセスすることができます。 このオブジェクトは、次のいずれかのインターフェイスを実装するクラスのインスタンスです。
 
-  - <xref:Microsoft.Office.Tools.Factory>
+  - [Microsoft. Office. ツールファクトリ](xref:Microsoft.Office.Tools.Factory)
 
-  - <xref:Microsoft.Office.Tools.Excel.Factory>
+  - [Microsoft. Office. Excel. Factory](xref:Microsoft.Office.Tools.Excel.Factory)
 
-  - <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - [Microsoft. Office. Outlook. Factory](xref:Microsoft.Office.Tools.Outlook.Factory)
 
-  - <xref:Microsoft.Office.Tools.Word.Factory>
+  - [Microsoft. Office. Word. Factory](xref:Microsoft.Office.Tools.Word.Factory)
 
   たとえば、 `Globals.Sheet1` プロパティを使用すると、Excel のドキュメントレベルのプロジェクトの操作ウィンドウでユーザーがボタンをクリックした場合に <xref:Microsoft.Office.Tools.Excel.NamedRange> の `Sheet1` コントロールにテキストを挿入することができます。
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
-## <a name="initialize-the-globals-class"></a>Globals クラスを初期化します
- ドキュメントまたは VSTO アドインが`Globals`初期化される前にクラスを使用しようとするコードは、実行時の例外をスローする可能性があります。 たとえば、クラス レベルの変数の宣言が `Globals` を使用することで失敗する場合があります。これは、宣言されたオブジェクトがインスタンス化される前に、 `Globals` クラスがすべてのホスト項目への参照を使用して初期化されない可能性があるためです。
+ `Globals`ドキュメントまたは VSTO アドインが初期化される前にクラスを使用しようとするコードは、実行時の例外をスローする可能性があります。 たとえば、クラス レベルの変数の宣言が `Globals` を使用することで失敗する場合があります。これは、宣言されたオブジェクトがインスタンス化される前に、 `Globals` クラスがすべてのホスト項目への参照を使用して初期化されない可能性があるためです。
 
 > [!NOTE]
-> `Globals` クラスは設計時に初期化されることはありませんが、コントロールのインスタンスがデザイナーによって作成されます。 これは、ユーザーコントロールクラス内から`Globals`クラスのプロパティを使用するユーザーコントロールを作成する場合、返されたオブジェクトを使用する前に、プロパティが**null**を返すかどうかを確認する必要があることを意味します。
+> `Globals` クラスは設計時に初期化されることはありませんが、コントロールのインスタンスがデザイナーによって作成されます。 これは、ユーザーコントロールクラス内からクラスのプロパティを使用するユーザーコントロールを作成する場合 `Globals` 、返されたオブジェクトを使用する前に、プロパティが**null**を返すかどうかを確認する必要があることを意味します。
 
 ## <a name="see-also"></a>関連項目
 - [実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)
@@ -83,4 +82,4 @@ ms.locfileid: "71253442"
 - [ドキュメントホスト項目](../vsto/document-host-item.md)
 - [ブックホスト項目](../vsto/workbook-host-item.md)
 - [ワークシートホスト項目](../vsto/worksheet-host-item.md)
-- [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)
+- [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)
