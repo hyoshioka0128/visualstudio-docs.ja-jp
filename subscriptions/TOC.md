@@ -16,6 +16,7 @@
 ### [Microsoft アカウントでサインイン](sign-in-msa.md)
 ### [職場/学校アカウントでサインイン](sign-in-work.md)
 ### [GitHub を使用したサインイン](sign-in-github.md)
+### [接続された ID](use-connected-identities.md)
 ### [代替 ID](vs-alternate-identity.md)
 ### [サインインに関する問題](sign-in-issues.md)
 ### [サブスクライバー データの匿名化](anonymization.md)
