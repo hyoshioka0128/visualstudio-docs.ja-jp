@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e7a21a010cf98da3d7adb9627105c2847b7571e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 9b5a03c9cb7ae7c5a5c81bd452dbb04d8db4c09d
+ms.sourcegitcommit: ed17ca9ae5f92c229c4e46233bcfe0a49d29ec43
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386356"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88052623"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
 
@@ -89,13 +89,15 @@ ms.locfileid: "86386356"
 |[CA2328: JsonSerializerSettings が安全であることを確認してください](../code-quality/ca2328.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2329: セキュリティで保護されていない構成が JsonSerializer で使用されている場合は、逆シリアル化を行わないでください](../code-quality/ca2329.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2330: 逆シリアル化の際に、JsonSerializer の構成は確実にセキュリティで保護してください](../code-quality/ca2330.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
-|[CA2350: DataTable. ReadXml () の入力が信頼されていることを確認します](ca2350.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataTable> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
-|[CA2351: データセット ReadXml () の入力が信頼されていることを確認します。](ca2351.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
-|[CA2352: 安全でないデータセットまたはシリアル化可能な型の DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2352.md)|でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。|
-|[CA2353: Unsafe データセットまたはシリアル化可能な型の DataTable](ca2353.md)|XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
-|[CA2354: 逆シリアル化されたオブジェクトグラフ内の Unsafe データセットまたは DataTable が、リモートでのコード実行攻撃に対して脆弱になる可能性があります](ca2354.md)|シリアル化されたを使用して逆シリアル <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 化すると、キャストされた型のオブジェクトグラフにまたはを含めることができ <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
-|[CA2355: 逆シリアル化されたオブジェクトグラフに安全ではないデータセットまたは DataTable があります](ca2355.md)|キャストまたは指定された型のオブジェクトグラフがまたはを含むことができる場合、逆シリアル化し <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2350:DataTable.ReadXml() の入力が信頼されていることを確認してください](ca2350.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataTable> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2351:DataSet.ReadXml() の入力が信頼されていることを確認してください](ca2351.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2352:シリアル化可能な型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2352.md)|でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。|
+|[CA2353:シリアル化可能な型の安全でない DataSet または DataTable](ca2353.md)|XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2354.md)|シリアル化されたを使用して逆シリアル <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 化すると、キャストされた型のオブジェクトグラフにまたはを含めることができ <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](ca2355.md)|キャストまたは指定された型のオブジェクトグラフがまたはを含むことができる場合、逆シリアル化し <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA2356: web 逆シリアル化されたオブジェクトグラフ内の安全でないデータセットまたは DataTable](ca2356.md)|またはを持つメソッドには、 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> またはを参照できるパラメーターがあり <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2361: データセットを含む自動生成されたクラスを確認します。 ReadXml () は信頼されていないデータでは使用されません](ca2361.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2362: 自動生成されたシリアル化可能な型の Unsafe データセットまたは DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2362.md)|で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。|
 |[CA3001:SQL インジェクションの脆弱性のコード レビュー](../code-quality/ca3001.md)|信頼されていない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃に注意してください。 SQL インジェクション攻撃によって、悪意のある SQL コマンドを実行し、アプリケーションのセキュリティと整合性を損なう可能性があります。|
 |[CA3002:XSS の脆弱性のコード レビュー](../code-quality/ca3002.md)|Web 要求から信頼されていない入力を処理する場合は、クロスサイトスクリプティング (XSS) 攻撃に注意する必要があります。 XSS 攻撃によって、信頼できない入力が未加工の HTML 出力に挿入され、攻撃者が悪意のあるスクリプトを実行したり、web ページのコンテンツを改ざんしたりする可能性があります。|
 |[CA3003:ファイル パス インジェクションの脆弱性のコード レビュー](../code-quality/ca3003.md)|Web 要求から信頼されていない入力を使用する場合は、ファイルへのパスを指定するときにユーザーが制御する入力を使用することに注意してください。|
