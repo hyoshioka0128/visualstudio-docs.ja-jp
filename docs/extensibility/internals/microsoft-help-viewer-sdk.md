@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536189"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114259"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 
@@ -445,7 +445,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 
 **Branding.xml**
 
-| | |
+| 機能 | 説明 |
 | - | - |
 | 機能: | **CollapsibleArea** |
 | 次のコマンドを使用します。 | 折りたたみコンテンツコントロールのテキストを展開します |
@@ -459,7 +459,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | ViewColorizedText | 色分け表示 |
 | 連結 Edvbtabdisplaylanguage | Visual Basic (サンプル) |
 | VBDeclaration | 宣言 |
-| VBUsage | 使用方法 |
+| VBUsage | 使用法 |
 | 機能: | **フィードバック、フッター、ロゴ** |
 | 次のコマンドを使用します。 | 顧客が電子メールで現在のトピックに関するフィードバックを提供するフィードバックコントロールを提供します。  コンテンツの著作権テキスト。  ロゴの定義。 |
 | **要素** | **値 (これらの文字列は、コンテンツの導入者のニーズに合わせて変更できます。)** |
@@ -563,7 +563,7 @@ branding.js ファイルには、Visual Studio ヘルプビューアーのブラ
 
 ブランド化パッケージには、ユーザーのために重要な情報を提供するための一連の HTM ファイルが含まれています。たとえば、インストールされているコンテンツセットを示すセクションを含むホームページや、トピックのローカルセットにトピックが見つからない場合にユーザーに通知するページなどがあります。 これらの HTM ファイルは製品ごとに変更できます。  ISO シェルベンダーは、既定のブランドパッケージを取得し、これらのページの動作とコンテンツを必要に応じて変更できます。  これらのファイルは、ブランド化タグが branding.xml ファイルから対応するコンテンツを取得するために、それぞれのブランドパッケージを参照します。
 
-|**[最近使ったファイル]**|**用途**|**表示されるコンテンツソース**|
+|**ファイル**|**用途**|**表示されるコンテンツソース**|
 |-|-|-|
 |homepage.htm|これは、現在インストールされているコンテンツと、そのコンテンツについてユーザーに提示するのに適したその他のメッセージを表示するページです。  このファイルには、追加のメタデータ属性 "Microsoft.Help.Id" content = "-1" があります。これにより、このコンテンツはローカルコンテンツ TOC の先頭に配置されます。||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml、タグ\<HomePageTitle>|
@@ -597,7 +597,7 @@ Visual Studio ヘルプビューアーのブランド化パッケージには、
 
 Visual Studio のコンテンツには、Visual Studio のロゴとその他のグラフィックスが表示されます。  Visual Studio ヘルプビューアーのブランド化パッケージに含まれるグラフィックファイルの完全な一覧を次に示します。
 
-|**[最近使ったファイル]**|**用途**|**使用例**|
+|**ファイル**|**用途**|**使用例**|
 |-|-|-|
 |clear.gif|折りたたみ可能な領域を表示するために使用されます||
 |footer_slice.gif|フッタープレゼンテーション||
@@ -688,7 +688,7 @@ Visual Studio ブランド化パッケージを入手するには、.mshc ファ
 </html>
 ```
 
-**まとめ**
+**要約**
 
 上記の手順を使用および拡張すると、Vsp は Visual Studio ヘルプビューアー用のコンテンツセットを配置できるようになります。
 

@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477035"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114181"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName 要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,8 +26,8 @@ ms.locfileid: "77477035"
 <Name>Localized name of the extension</Name>  
 ```  
   
-## <a name="attributes-and-elements"></a>属性と要素  
- 次のセクションでは、属性、子要素、親要素について説明します。  
+## <a name="attributes-and-elements"></a>属性および要素  
+ 以降のセクションでは、属性、子要素、および親要素について説明します。  
   
 ### <a name="attributes"></a>属性  
   
@@ -51,13 +51,39 @@ ms.locfileid: "77477035"
  必須。 ターゲット言語の言語パックの名前。  
   
 ## <a name="element-information"></a>要素情報  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    名前空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   スキーマ名   |                 VSIX 言語パックのスキーマ                 |
-| 検証ファイル |                VSIXLanguagePackSchema                 |
-|  空にすることができます   |                      適用なし                       |
+
+:::row:::
+    :::column:::
+        名前空間
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        スキーマ名
+    :::column-end:::
+    :::column:::
+        VSIX 言語パックのスキーマ
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        検証ファイル
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        空にすることができます
+    :::column-end:::
+    :::column:::
+        適用なし
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>参照  
  [VSX Language Pack スキーマリファレンス](../extensibility/vsx-language-pack-schema-reference.md)   

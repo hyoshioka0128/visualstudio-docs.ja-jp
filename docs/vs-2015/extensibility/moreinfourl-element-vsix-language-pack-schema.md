@@ -8,17 +8,17 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c583d67e1920080f11158a4001e191e93e234006
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e8012eb02d143a741cb7eea70c45cabc4ee92002
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476839"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114298"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoURL 要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-省略可。 拡張機能に関するローカライズされた情報へのリンク。  
+省略可能。 拡張機能に関するローカライズされた情報へのリンク。  
   
 ## <a name="syntax"></a>構文  
   
@@ -26,8 +26,8 @@ ms.locfileid: "77476839"
 <MoreInfoURL>URL</MoreInfoURL>  
 ```  
   
-## <a name="attributes-and-elements"></a>属性と要素  
- 次のセクションでは、属性、子要素、親要素について説明します。  
+## <a name="attributes-and-elements"></a>属性および要素  
+ 以降のセクションでは、属性、子要素、および親要素について説明します。  
   
 ### <a name="attributes"></a>属性  
   
@@ -48,17 +48,43 @@ ms.locfileid: "77476839"
 |[VSIX LanguagePack 要素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|必須。 VSIX 言語パックのルート要素を提供します。|  
   
 ## <a name="text-value"></a>テキスト値  
- 省略可。 Web サイトへのリンク。 リンクはテキスト文字列です。  
+ 省略可能。 Web サイトへのリンク。 リンクはテキスト文字列です。  
   
 ## <a name="element-information"></a>要素情報  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    名前空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   スキーマ名   |                 VSIX 言語パックのスキーマ                 |
-| 検証ファイル |                VSIXLanguagePackSchema                 |
-|  空にすることができます   |                      適用なし                       |
-  
+
+:::row:::
+    :::column:::
+        名前空間
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        スキーマ名
+    :::column-end:::
+    :::column:::
+        VSIX 言語パックのスキーマ
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        検証ファイル
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        空にすることができます
+    :::column-end:::
+    :::column:::
+        適用なし
+    :::column-end:::
+:::row-end:::
+
 ## <a name="see-also"></a>参照  
  [VSX Language Pack スキーマリファレンス](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)   

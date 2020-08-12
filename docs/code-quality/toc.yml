@@ -748,6 +748,10 @@
                   href: ca2355.md
                 - name: 'CA2356:Web の逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable 型'
                   href: ca2356.md
+                - name: 'CA2361:DataSet.ReadXml() を含む自動生成クラスが信頼されていないデータで使用されていないことを確認してください'
+                  href: ca2361.md
+                - name: 'CA2362:シリアル化可能な自動生成型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります'
+                  href: ca2362.md
                 - name: 'CA2330: 逆シリアル化の際に、JsonSerializer の構成は確実にセキュリティで保護してください'
                   href: ca2330.md
                 - name: 'CA3001:SQL インジェクションの脆弱性のコード レビュー'
