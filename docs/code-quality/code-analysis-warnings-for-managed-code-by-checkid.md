@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235096"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114150"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -603,3 +604,4 @@ ms.locfileid: "87235096"
 | CA5400 | [CA5400 HttpClient 証明書失効リストの確認が無効になっていないことを確認します。](../code-quality/ca5400.md) | 失効した証明書は信頼されていません。 攻撃者が悪意のあるデータを渡すか、または HTTPS 通信で機微なデータを盗むために使用される可能性があります。 |
 | CA5401 | [CA5401 既定以外の IV で CreateEncryptor 機能を使用しない](../code-quality/ca5401.md) | 対称暗号化では、ディクショナリ攻撃を防ぐために、常に反復不可能な初期化ベクターを使用する必要があります。 |
 | CA5402 | [CA5402 既定の IV で CreateEncryptor 機能を使用する](../code-quality/ca5402.md) | 対称暗号化では、ディクショナリ攻撃を防ぐために、常に反復不可能な初期化ベクターを使用する必要があります。 |
+| IL3000 | [IL3000 単一ファイルとして発行するときに、アセンブリファイルパスへのアクセスを使用しない](../code-quality/il3000.md) | 単一ファイルとして発行するときにアセンブリファイルパスへのアクセスを使用しない |
