@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: cf62972b192d73bd130d15066d79ea70fe24beb8
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576618"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144598"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 メンバーを名前で削除します。  
@@ -43,21 +43,21 @@ HRESULT DeleteMemberByName(
  `grfdex`  
  メンバー名で大文字と小文字を区別するかどうかを指定します。 次のいずれかの値を指定できます。  
   
-|[値]|説明|  
+|値|意味|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|大文字と小文字を区別する方法で名前の参照を実行するように要求します。 大文字と小文字を区別する検索をサポートしていないオブジェクトによって無視される可能性があります。|  
 |fdexNameCaseInsensitive|大文字と小文字を区別せずに名前参照を実行するように要求します。 大文字と小文字を区別しない検索をサポートしていないオブジェクトによって無視される可能性があります。|  
   
 ## <a name="return-value"></a>戻り値  
- 次のいずれかの値を返します。  
+ 次の値のいずれか。  
   
-|||  
+|値|意味|
 |-|-|  
-|`S_OK`|成功。|  
+|`S_OK`|正常終了しました。|  
 |`S_FALSE`|メンバーは存在しますが、削除できません。|  
   
-## <a name="remarks"></a>Remarks  
- メンバーが削除された場合、DISPID は `GetNextDispID` に対して有効なままである必要があります。  
+## <a name="remarks"></a>解説  
+ メンバーが削除された場合、DISPID はに対して有効なままである必要があり `GetNextDispID` ます。  
   
  指定された名前のメンバーが削除され、後で同じ名前のメンバーが再作成される場合、DISPID は同じである必要があります。 (大文字と小文字のみが異なるメンバーが "同じ" であるかどうかは、オブジェクトに依存します)。  
   

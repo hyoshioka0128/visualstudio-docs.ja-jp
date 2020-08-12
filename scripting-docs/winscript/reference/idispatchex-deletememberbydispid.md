@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 0c3dbb040e39fd15b77e42b2eaa9fb2cdda0b1b2
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576637"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144637"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 メンバーを DISPID で削除します。  
@@ -37,18 +37,18 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバー識別子。 `GetDispID` または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
+ メンバー識別子。 `GetDispID`は、またはを使用し `GetNextDispID` てディスパッチ識別子を取得します。  
   
 ## <a name="return-value"></a>戻り値  
- 次のいずれかの値を返します。  
+ 次の値のいずれか。  
   
-|||  
+|値|意味|
 |-|-|  
-|`S_OK`|成功。|  
+|`S_OK`|正常終了しました。|  
 |`S_FALSE`|メンバーは存在しますが、削除できません。|  
   
-## <a name="remarks"></a>コメント  
- メンバーが削除された場合、DISPID は `GetNextDispID`に対して有効なままである必要があります。  
+## <a name="remarks"></a>解説  
+ メンバーが削除された場合、DISPID はに対して有効なままである必要があり `GetNextDispID` ます。  
   
  指定された名前のメンバーが削除され、後で同じ名前のメンバーが再作成される場合、DISPID は同じである必要があります。 (大文字と小文字のみが異なるメンバー名が "同じ" であるかどうかは、オブジェクトに依存します)。  
   
@@ -64,7 +64,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)
