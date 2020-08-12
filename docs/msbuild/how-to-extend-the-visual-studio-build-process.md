@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a465a752282f4a0dc00f3fb294ade4169bb19b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
+ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093946"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88041039"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
 
@@ -31,7 +31,6 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 
 ## <a name="override-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
 
-共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、MSBuild では、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットが呼び出され、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットが呼び出されます。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、MSBuild タスクを利用し、ビルド処理をさらに細かく制御できます。
 共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、MSBuild では、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットが呼び出され、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットが呼び出されます。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、MSBuild タスクを利用し、ビルド処理をさらに細かく制御できます。
 
 > [!NOTE]
@@ -61,11 +60,11 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 
 |ターゲット名|説明|
 |-----------------|-----------------|
-|`BeforeCompile`、`AfterCompile`|これらのターゲットのいずれかに挿入されているタスクは、コア コンパイル完了の前または後に実行されます。 ほとんどのカスタマイズはこれら 2 つのターゲットのいずれかで行われます。|
-|`BeforeBuild`、`AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:** `BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されており、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
-|`BeforeRebuild`、`AfterRebuild`|これらのターゲットのいずれかに挿入されているタスクは、コア再ビルド機能の呼び出しの前または後に実行されます。 *Microsoft.Common.targets* のターゲット実行順序は `BeforeRebuild`、`Clean`、`Build`、`AfterRebuild` です。|
-|`BeforeClean`、`AfterClean`|これらのターゲットのいずれかに挿入されているタスクは、コア クリーン機能の呼び出しの前または後に実行されます。|
-|`BeforePublish`、`AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
+|`BeforeCompile`, `AfterCompile`|これらのターゲットのいずれかに挿入されているタスクは、コア コンパイル完了の前または後に実行されます。 ほとんどのカスタマイズはこれら 2 つのターゲットのいずれかで行われます。|
+|`BeforeBuild`, `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:**`BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されており、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
+|`BeforeRebuild`, `AfterRebuild`|これらのターゲットのいずれかに挿入されているタスクは、コア再ビルド機能の呼び出しの前または後に実行されます。 *Microsoft.Common.targets* のターゲット実行順序は `BeforeRebuild`、`Clean`、`Build`、`AfterRebuild` です。|
+|`BeforeClean`, `AfterClean`|これらのターゲットのいずれかに挿入されているタスクは、コア クリーン機能の呼び出しの前または後に実行されます。|
+|`BeforePublish`, `AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
 |`BeforeResolveReferences`、`AfterResolveReferences`|これらのターゲットのいずれかに挿入されているタスクは、アセンブリ参照解決の前または後に実行されます。|
 |`BeforeResGen`、`AfterResGen`|これらのターゲットのいずれかに挿入されているタスクは、リソース生成の前または後に実行されます。|
 
@@ -112,7 +111,7 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 
 事前定義済みターゲットのオーバーライドはビルド処理を拡張する簡単な方法ですが、MSBuild ではターゲットの定義が順番に評価されるため、プロジェクトをインポートする別のプロジェクトが、既にオーバーライドしているターゲットをオーバーライドすることを防ぐことはできません。 そのため、たとえば、プロジェクト ファイルに定義されている最後の `AfterBuild` ターゲットが、その他すべてのプロジェクトがインポートされた後に、ビルド中に使用されるターゲットになります。
 
-共通のターゲット全体で `DependsOnTargets` 属性で使用される DependsOn プロパティをオーバーライドすることで、ターゲットの意図しないオーバーライドを防ぐことができます。 たとえば、`Build` ターゲットには、`DependsOnTargets` 属性値 `"$(BuildDependsOn)"` が含まれています。 次の例を考えてみましょう。
+共通のターゲット全体で `DependsOnTargets` 属性で使用される DependsOn プロパティをオーバーライドすることで、ターゲットの意図しないオーバーライドを防ぐことができます。 たとえば、`Build` ターゲットには、`DependsOnTargets` 属性値 `"$(BuildDependsOn)"` が含まれています。 次の点を考慮してください。
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
