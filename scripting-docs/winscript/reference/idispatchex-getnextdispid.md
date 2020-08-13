@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetNextDispID | Microsoft Docs
+title: 'IDispatchEx:: GetNextDispID |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8811e828a6701769badf45ca7c37f9c53529150f
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997347"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144430"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 
@@ -41,28 +41,28 @@ HRESULT GetNextDispID(
 ## <a name="parameters"></a>パラメーター
 
 `grfdex`\
-項目のセットが列挙を決定します。 次の値の組み合わせを指定できます。
+列挙する項目のセットを決定します。 次の値の組み合わせを指定できます。
 
-|[値]|説明|
+|値|意味|
 |-----------|-------------|
-|fdexEnumDefault|要求は、オブジェクトは、既定の要素を列挙します。 オブジェクトは任意の要素のセットを列挙するために許可します。|
-|fdexEnumAll|要求は、オブジェクトがすべての要素を列挙します。 オブジェクトは任意の要素のセットを列挙するために許可します。|
+|fdexEnumDefault|オブジェクトが既定の要素を列挙することを要求します。 オブジェクトは、要素の任意のセットを列挙できます。|
+|fdexEnumAll|オブジェクトがすべての要素を列挙することを要求します。 オブジェクトは、要素の任意のセットを列挙できます。|
 
 `id`\
-現在のメンバーを識別します。 GetNextDispID では、この後に、列挙内の項目を取得します。 この識別子を取得するのにには、GetDispID または GetNextDispID 以前の呼び出しを使用します。 最初の項目の最初の識別子を取得するのにには、DISPID_STARTENUM 値を使用します。
+現在のメンバーを識別します。 GetNextDispID は、この後の列挙体の項目を取得します。 では、GetDispID または GetNextDispID への以前の呼び出しを使用して、この識別子を取得します。 DISPID_STARTENUM 値を使用して、最初の項目の最初の識別子を取得します。
 
 `pid`\
-列挙体の次の項目の識別子を受信するように DISPID 変数のアドレス。
+列挙体の次の項目の識別子を受け取る DISPID 変数のアドレス。
 
-によってメンバーが削除された場合`DeleteMemberByName`または`DeleteMemberByDispID`、`DISPID`の有効なままにする必要がある`GetNextDispID`します。
+メンバーがまたはによって削除された場合、はに `DeleteMemberByName` `DeleteMemberByDispID` 対して `DISPID` 有効なままである必要があり `GetNextDispID` ます。
 
 ## <a name="return-value"></a>戻り値
 
-次のいずれかの値を返します。
+次の値のいずれか。
 
-|||
+|値|意味|
 |-|-|
-|`S_OK`|成功。|
+|`S_OK`|正常終了しました。|
 |`S_FALSE`|列挙が行われます。|
 
 ## <a name="example"></a>例

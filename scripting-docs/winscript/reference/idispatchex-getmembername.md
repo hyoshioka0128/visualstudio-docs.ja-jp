@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 8dbfb82e986ed6d1738bcc0cffeec35e5ba4515c
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72574105"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144611"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 メンバーの名前を取得します。  
@@ -38,17 +38,17 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- メンバーを識別します。 `GetDispID` または `GetNextDispID` を使用してディスパッチ識別子を取得します。  
+ メンバーを識別します。 `GetDispID`は、またはを使用し `GetNextDispID` てディスパッチ識別子を取得します。  
   
  `pbstrName`  
- メンバーの名前を受け取る `BSTR` のアドレス。 この値は、呼び出し元のアプリケーションによって解放されます。  
+ `BSTR`メンバーの名前を受け取るのアドレス。 この値は、呼び出し元のアプリケーションによって解放されます。  
   
 ## <a name="return-value"></a>戻り値  
- 次のいずれかの値を返します。  
+ 次の値のいずれか。  
   
-|||  
+|値|意味|
 |-|-|  
-|`S_OK`|成功。|  
+|`S_OK`|正常終了しました。|  
 |`DISP_E_UNKNOWNNAME`|名前が不明です。|  
   
 ## <a name="example"></a>例  
@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
  [IDispatchEx インターフェイス](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)
