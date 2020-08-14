@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: ソース リンクを使用した NuGet パッケージのデバッグ
       href: source-link.md
+- name: テスト
+  items:
+    - name: 概要
+      href: testing.md
 - name: コードのコンパイルとビルド
   items:
     - name: 概要
