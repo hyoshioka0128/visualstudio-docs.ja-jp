@@ -173,6 +173,7 @@ f1_keywords:
 - CA1833
 - CA1835
 - CA1836
+- CA1838
 - CA1900
 - CA1901
 - CA1903
@@ -293,12 +294,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114150"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214605"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -372,7 +373,7 @@ ms.locfileid: "88114150"
 | CA1068 | [CA1068:CancellationToken パラメーターは最後に指定する必要があります](../code-quality/ca1068.md) | メソッドに、最後のパラメーターではない CancellationToken パラメーターが指定されています。 |
 | CA1069 | [CA1069: 列挙型には重複する値を指定できません](../code-quality/ca1069.md) | 列挙には、同じ定数値が明示的に割り当てられている複数のメンバーがあります。 |
 | CA1070 | [CA1070: イベント フィールドを virtual として宣言しません](../code-quality/ca1070.md) | [フィールドに似たイベント](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)が virtual として宣言されました。 |
-| CA1200 | [CA1200:プレフィックスで cref タグを使用しません](../code-quality/ca1200.md) | XML ドキュメントタグの[cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute)属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 プレフィックスでタグを使用するのは避けて `cref` ください。これにより、コンパイラが参照を検証できなくなります。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
+| CA1200 | [CA1200:プレフィックスで cref タグを使用しません](../code-quality/ca1200.md) | XML ドキュメントタグの [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 プレフィックスでタグを使用するのは避けて `cref` ください。これにより、コンパイラが参照を検証できなくなります。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
 | CA1300 | [CA1300:MessageBoxOption を指定します](../code-quality/ca1300.md) | テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。 |
 | CA1301 | [CA1301:重複するアクセラレータを使用しません](../code-quality/ca1301.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールが重複するアクセスキーを持っている場合、アクセスキーの動作は適切に定義されていません。 |
 | CA1302 | [CA1302:ロケール特有の文字列をハードコードしません](../code-quality/ca1302.md) | System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 Environment.GetFolderPath メソッドは、Environment.SpecialFolder 列挙体に関連付けられ、ローカライズされ、現在実行されているコンピューターに適切な位置を返します。 |
@@ -455,16 +456,17 @@ ms.locfileid: "88114150"
 | CA1823 | [CA1823:使用されていないプライベート フィールドを使用しません](../code-quality/ca1823.md) | アセンブリ内でアクセスされていないと思われるプライベート フィールドが検出されました。 |
 | CA1824 |[CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します](../code-quality/ca1824.md) | NeutralResourcesLanguage 属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語をリソースマネージャーに通知します。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。 |
 | CA1825 |[CA1825:長さ 0 の配列割り当てを回避します](../code-quality/ca1825.md) | 長さ0の配列を初期化すると、不要なメモリ割り当てにつながります。 代わりに、を呼び出すことによって、静的に割り当てられた空の配列インスタンスを使用し <xref:System.Array.Empty%2A?displayProperty=nameWithType> ます。 メモリ割り当ては、このメソッドのすべての呼び出しで共有されます。 |
-| CA1826 |[CA1826:Linq の列挙可能なメソッドの代わりにプロパティを使用します](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable>LINQ メソッドが、同等のより効率的なプロパティをサポートする型で使用されました。 |
-| CA1827 |[CA1827:Any が使用できる場合は Count/LongCount を使用しません](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A>または <xref:System.Linq.Enumerable.LongCount%2A> メソッドが使用されました <xref:System.Linq.Enumerable.Any%2A> 。メソッドの方が効率的です。 |
-| CA1828 |[CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A>または <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> メソッドが使用されました <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 。メソッドの方が効率的です。 |
-| CA1829 |[CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A>LINQ メソッドは、同等の、より効率的なまたはプロパティをサポートする型で使用されていま `Length` `Count` した。 |
-| CA1830 |[CA1830:StringBuilder の厳密に型指定された Append および Insert メソッドのオーバーロードをお勧めします](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A>と <xref:System.Text.StringBuilder.Insert%2A> は、を超える複数の型のオーバーロードを提供し <xref:System.String> ます。  可能であれば、ToString () と文字列ベースのオーバーロードを使用して、厳密に型指定されたオーバーロードを優先します。 |
+| CA1826 |[CA1826:Linq の列挙可能なメソッドの代わりにプロパティを使用します](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable> LINQ メソッドが、同等のより効率的なプロパティをサポートする型で使用されました。 |
+| CA1827 |[CA1827:Any が使用できる場合は Count/LongCount を使用しません](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A> または <xref:System.Linq.Enumerable.LongCount%2A> メソッドが使用されました <xref:System.Linq.Enumerable.Any%2A> 。メソッドの方が効率的です。 |
+| CA1828 |[CA1828:AnyAsync が使用できる場合は CountAsync/LongCountAsync を使用しません](../code-quality/ca1828.md) | <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync%2A> または <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.LongCountAsync%2A> メソッドが使用されました <xref:Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync%2A> 。メソッドの方が効率的です。 |
+| CA1829 |[CA1829:Enumerable. Count メソッドではなく Length/Count プロパティを使用します](../code-quality/ca1829.md) | <xref:System.Linq.Enumerable.Count%2A> LINQ メソッドは、同等の、より効率的なまたはプロパティをサポートする型で使用されていま `Length` `Count` した。 |
+| CA1830 |[CA1830:StringBuilder の厳密に型指定された Append および Insert メソッドのオーバーロードをお勧めします](../code-quality/ca1830.md) | <xref:System.Text.StringBuilder.Append%2A> と <xref:System.Text.StringBuilder.Insert%2A> は、を超える複数の型のオーバーロードを提供し <xref:System.String> ます。  可能であれば、ToString () と文字列ベースのオーバーロードを使用して、厳密に型指定されたオーバーロードを優先します。 |
 | CA1831 |[CA1831: 該当する場合、文字列に範囲ベースのインデクサーの代わりに AsSpan を使用します](../code-quality/ca1831.md) | 文字列に対して範囲インデクサーを使用し、その値を暗黙的に ReadOnlySpan char 型に割り当てると、 &lt; &gt; の代わりにメソッドが <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 使用され、 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 文字列の要求された部分のコピーが生成されます。 |
 | CA1832 |[CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1832.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | CA1833 |[CA1833: 配列の Span または Memory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1833.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.Span%601> <xref:System.Memory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | CA1835 |[CA1835: ' ReadAsync ' と ' WriteAsync ' に対して ' Memory' に基づくオーバーロードを優先します](../code-quality/ca1835.md) | ' Stream ' には、最初の引数として ' Memory byte ' を受け取る ' ReadAsync ' オーバーロード &lt; &gt; と、 &lt; &gt; 1 番目の引数として ' ReadOnlyMemory Byte ' を受け取る ' WriteAsync ' オーバーロードがあります。 より効率的なメモリベースのオーバーロードを呼び出すことをお勧めします。 |
 | CA1836 |[CA1836: `IsEmpty` `Count` 使用可能な場合は優先します。](../code-quality/ca1836.md) | `IsEmpty` `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> オブジェクトに項目が含まれているかどうかを判断するために、、、またはよりも効率的なプロパティを優先します。 |
+| CA1838 | [CA1838: `StringBuilder` P/invoke のパラメーターを使用しない](../code-quality/ca1838.md) | ' StringBuilder ' のマーシャリングでは、常にネイティブバッファーコピーが作成されるため、1つのマーシャリング操作に複数の割り当てが行われます。 |
 | CA1900 | [CA1900:値型フィールドはポータブルでなければなりません](../code-quality/ca1900.md) | この規則は、明示的なレイアウトによって宣言された構造体が、64 ビット オペレーティング システムでアンマネージ コードにマーシャリングされるときに、適切にアライメントされるかどうかを確認します。 |
 | CA1901 | [CA1901: P/Invoke 宣言はポータブルでなければなりません](../code-quality/ca1901.md) | この規則では、P/Invoke の各パラメーターのサイズと戻り値が評価され、32 ビットおよび 64 ビット オペレーティング システムのアンマネージ コードにマーシャリングされたときのパラメーターのサイズが正しいことが検証されます。 |
 | CA1903 | [CA1903:対象のフレームワークから API のみを使用します](../code-quality/ca1903.md) | メンバーまたは型が、プロジェクトの対象のフレームワークに含まれていない Service Pack で導入されたメンバーまたは型を使用しています。 |
@@ -475,8 +477,8 @@ ms.locfileid: "88114150"
 | CA2004 | [CA2004:GC.KeepAlive への呼び出しを削除します](../code-quality/ca2004.md) | SafeHandle の使用に変更する場合、すべての GC.KeepAlive (object) の呼び出しを削除します。 この場合、クラスに GC.KeepAlive の呼び出しを含めることはできません。 クラスはファイナライザーを持っていない代わりに、SafeHandle を使用して OS ハンドルを終了していることが前提となっています。 |
 | CA2006 | [CA2006:SafeHandle を使用して、ネイティブ リソースを要約します](../code-quality/ca2006.md) | マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。 |
 | CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を <xref:System.Threading.Tasks.Task> 直接待機します。 非同期メソッドがを直接待機する場合 <xref:System.Threading.Tasks.Task> 、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出して <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 、継続の意図を知らせることを検討してください。 |
-| CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable`メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。 |
-| CA2011 | [CA2011: セッター内でプロパティを割り当てません](ca2011.md) | プロパティに、独自の[set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
+| CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable` メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。 |
+| CA2011 | [CA2011: セッター内でプロパティを割り当てません](ca2011.md) | プロパティに、独自の [set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
 | CA2012 | [CA2012: ValueTask を正しく使用する必要があります](ca2012.md) | メンバーの呼び出しから返される ValueTasks は、直接待機することを意図しています。  ValueTask を複数回使用しようとするか、完了する前に1つの結果に直接アクセスすると、例外または破損が発生する可能性があります。  このような ValueTask を無視すると、機能的なバグが示され、パフォーマンスが低下する可能性があります。 |
 | CA2013 | [CA2013: 値の型と共に ReferenceEquals を使用しないでください](ca2013.md) | を使用して値を比較するときに <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> 、obja と Obja が値型の場合、メソッドに渡される前にボックス化され <xref:System.Object.ReferenceEquals%2A> ます。 これは、objA と Obja の両方が値型の同じインスタンスを表している場合でも、 <xref:System.Object.ReferenceEquals%2A> メソッドは false を返すことを意味します。 |
 | CA2014 | [CA2014: ループで stackalloc を使用しないでください。](ca2014.md) | Stackalloc によって割り当てられるスタック領域は、現在のメソッドの呼び出しの最後にのみ解放されます。  ループでこれを使用すると、スタックが無制限に増加し、最終的にスタックオーバーフロー状態になる可能性があります。 |
@@ -582,7 +584,7 @@ ms.locfileid: "88114150"
 | CA5366 | [CA5366 データセット読み取り XML に XmlReader を使用する](../code-quality/ca5366.md) | を使用して <xref:System.Data.DataSet> 信頼できないデータを持つ XML を読み取ると、危険な外部参照が読み込まれる可能性があります。これは、 <xref:System.Xml.XmlReader> セキュリティで保護された競合回避モジュールを使用するか、DTD 処理を無効にして制限する必要があり |
 | CA5367 | [CA5367 はポインターフィールドを持つ型をシリアル化しません](../code-quality/ca5367.md) | このルールでは、ポインターフィールドまたはプロパティを持つシリアル化可能なクラスがあるかどうかを確認します。 シリアル化できないメンバーは、静的メンバーまたはでマークされたフィールドなどのポインターにすることができ <xref:System.NonSerializedAttribute> ます。 |
 | CA5368 | [ページから派生したクラスの CA5368 Set ViewStateUserKey](../code-quality/ca5368.md) | プロパティを設定する <xref:System.Web.UI.Page.ViewStateUserKey> と、個々のユーザーのビューステート変数に識別子を割り当てて、攻撃者が変数を使用して攻撃を生成できないようにすることで、アプリケーションに対する攻撃を防ぐことができます。 そうしないと、クロスサイト要求の偽造に対する脆弱性が発生します。 |
-| CA5374 | [CA5374 XslTransform を使用しない](../code-quality/ca5374.md) | このルール <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> では、がコード内でインスタンス化されているかどうかを確認します。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>は互換性のために残されているため、使用しないでください。 |
+| CA5374 | [CA5374 XslTransform を使用しない](../code-quality/ca5374.md) | このルール <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> では、がコード内でインスタンス化されているかどうかを確認します。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> は互換性のために残されているため、使用しないでください。 |
 | CA5375 | [CA5375 アカウントの共有アクセス署名を使用しない](../code-quality/ca5375.md) | アカウント SAS は、blob コンテナー、テーブル、キュー、およびサービス SAS で許可されていないファイル共有に対する読み取り、書き込み、および削除操作へのアクセスを委任できます。 ただし、コンテナーレベルのポリシーはサポートされておらず、付与されるアクセス許可をより柔軟に制御することはできません。 悪意のあるユーザーがアクセスすると、ストレージアカウントが簡単に侵害されます。 |
 | CA5376 | [CA5376 SharedAccessProtocol HttpsOnly を使用する](../code-quality/ca5376.md) | SAS は、HTTP でプレーンテキストで転送できない機密データです。 |
 | CA5377 | [CA5377 コンテナーレベルのアクセスポリシーを使用する](../code-quality/ca5377.md) | コンテナーレベルのアクセスポリシーは、いつでも変更または失効できます。 これにより、付与されるアクセス許可をより柔軟に制御できるようになります。 |

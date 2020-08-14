@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: 自動機能の中断
               href: automatic-feature-suspension.md
+            - name: 発行に関する警告
+              items:
+                - name: 概要
+                  displayName: publish warnings
+                - name: 'IL3000:単一ファイルとして発行するときにアセンブリ ファイル パスへのアクセスを使用しない'
+                  href: il3000.md
