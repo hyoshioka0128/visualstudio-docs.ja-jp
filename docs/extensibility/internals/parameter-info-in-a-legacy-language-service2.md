@@ -1,5 +1,5 @@
 ---
-title: レガシー言語サービスのパラメータ情報2 |マイクロソフトドキュメント
+title: 従来の言語でのパラメーターヒント Service2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2c40c9ca5c038a70714545f4133db0c0dd686d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80706741"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237959"
 ---
-# <a name="parameter-info-in-a-legacy-language-service"></a>従来の言語サービスのパラメーター ヒント
-IntelliSense パラメーター ヒントは、ユーザーがメソッド パラメーター リスト リストの開始文字 (通常は左かっこ) を入力したときにメソッドのシグネチャを表示するツールヒントです。 各パラメーターが入力され、パラメーター区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。
+# <a name="parameter-info-in-a-legacy-language-service-2"></a>従来の言語サービスのパラメーターヒント2
+IntelliSense パラメーターヒントは、ユーザーがメソッドパラメーターリストのパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、メソッドのシグネチャを表示するツールヒントです。 各パラメーターが入力され、パラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。
 
- 管理パッケージ フレームワーク (MPF) クラスは、パラメーターヒントの管理をサポートします。 パーサーは、パラメーター開始、パラメーターの次のパラメーター、およびパラメーターの終了文字を検出する必要があり、メソッドシグネチャとそれに関連付けられたパラメーターのリストを指定する必要があります。
+ Managed package framework (MPF) クラスは、パラメーターヒントのツールヒントを管理するための機能を提供します。 パーサーは、パラメーター start、パラメーター next、およびパラメーターの終了文字を検出する必要があり、メソッドシグネチャとそれに関連付けられたパラメーターのリストを指定する必要があります。
 
- レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 詳細については、「[エディタと言語サービスの拡張](../../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 詳細については、「 [エディターと言語サービスの拡張](../../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
 
 ## <a name="implementation"></a>実装
- パーサーは、パラメーター・リストの<xref:Microsoft.VisualStudio.Package.TokenTriggers>開始文字 (多くの場合、左括弧) を見つけたときに、トリガー値が設定されるように設定する必要があります。 パラメーター区切<xref:Microsoft.VisualStudio.Package.TokenTriggers>り記号 (多くの場合コンマ) が見つかったときにトリガーを設定する必要があります。 これにより、パラメーターヒントツールが更新され、次のパラメーターが太字で表示されます。 パーサーは、パラメーター・リストの<xref:Microsoft.VisualStudio.Package.TokenTriggers>終了文字 (しばしば閉じ括弧) が見つかった場合に、トリガー値を設定する必要があります。
+ パーサーは、 <xref:Microsoft.VisualStudio.Package.TokenTriggers> パラメーターリストの開始文字 (多くの場合、始めかっこ) を検出したときにトリガー値が設定されるように設定する必要があります。 <xref:Microsoft.VisualStudio.Package.TokenTriggers>パラメーター区切り記号 (多くの場合、コンマ) が検出されたときにトリガーを設定する必要があります。 これにより、パラメーターヒントのツールヒントが更新され、次のパラメーターが太字で表示されます。 <xref:Microsoft.VisualStudio.Package.TokenTriggers>がパラメーターリストの末尾の文字 (多くの場合、閉じかっこ) を検出すると、パーサーはトリガーの値を設定する必要があります。
 
- トリガー<xref:Microsoft.VisualStudio.Package.TokenTriggers>値はメソッドの呼び出し<xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A>を開始し、メソッドパーサーを<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>解析理由で呼び出<xref:Microsoft.VisualStudio.Package.ParseReason>します。 パーサーは、パラメーター リストの開始文字の前の識別子が認識されたメソッド名であると判断した場合、オブジェクト内の一致するメソッド<xref:Microsoft.VisualStudio.Package.AuthoringScope>シグネチャのリストを返します。 メソッドシグネチャが見つかった場合は、リストの最初のシグネチャを含む [パラメータ情報] ツールチップが表示されます。 このツールヒントは、署名の詳細が入力されると更新されます。 パラメーター リストの終了文字を入力すると、[パラメーターヒント] ツールチップがビューから削除されます。
+ <xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値は、メソッドの呼び出しを開始し <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> ます。このメソッドは、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 解析の理由でメソッドパーサーを呼び出し <xref:Microsoft.VisualStudio.Package.ParseReason> ます。 パラメーターリストの開始文字より前の識別子が認識されたメソッド名であるとパーサーが判断した場合、オブジェクト内の一致するメソッドシグネチャのリストを返し <xref:Microsoft.VisualStudio.Package.AuthoringScope> ます。 メソッドシグネチャが見つかった場合は、一覧の最初のシグネチャと共にパラメーターヒントのヒントが表示されます。 このツールヒントは、さらに多くの署名が入力されたときに更新されます。 パラメーターリストの終了文字を入力すると、パラメーターヒントのヒントがビューから削除されます。
 
 > [!NOTE]
-> パラメーターヒントのツールヒントが正しく書式設定されていることを確認するには、<xref:Microsoft.VisualStudio.Package.Methods>クラスのプロパティをオーバーライドして、適切な文字を指定する必要があります。 基本<xref:Microsoft.VisualStudio.Package.Methods>クラスは、C# スタイルのメソッド シグネチャを想定しています。 これを行<xref:Microsoft.VisualStudio.Package.Methods>う方法の詳細については、クラスを参照してください。
+> パラメーターヒントのヒントが適切に書式設定されていることを確認するには、クラスのプロパティをオーバーライドして適切な文字を指定する必要があり <xref:Microsoft.VisualStudio.Package.Methods> ます。 基本クラスは、 <xref:Microsoft.VisualStudio.Package.Methods> C# スタイルのメソッドシグネチャを前提としています。 これを <xref:Microsoft.VisualStudio.Package.Methods> 実行する方法の詳細については、クラスを参照してください。
 
-## <a name="enabling-support-for-the-parameter-info"></a>パラメーター情報のサポートの有効化
- パラメーターヒントツールヒントをサポートするには、 の`ShowCompletion`名前付きパラメーター<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>を`true`に設定する必要があります。 言語サービスは、プロパティからこのレジストリ エントリの値<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>を読み取ります。
+## <a name="enabling-support-for-the-parameter-info"></a>パラメーターヒントのサポートを有効にする
+ パラメーターヒントのツールヒントをサポートするに `ShowCompletion` は、の名前付きパラメーターをに設定する必要があり <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> `true` ます。 言語サービスは、プロパティからこのレジストリエントリの値を読み取り <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> ます。
 
- さらに、パラメーターヒント<xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A>を表示するには、プロパティ`true`を に設定する必要があります。
+ また、パラメーターヒントを表示するには、 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ParameterInformation%2A> プロパティをに設定する必要があり `true` ます。
 
 ### <a name="example"></a>例
- ここでは、パラメータリスト文字を検出し、適切なトリガを設定する簡単な例を示します。 この例は、説明のみを目的とします。 この例では、スキャナーに、テキスト`GetNextToken`行からトークンを識別して返すメソッドが含まれていることを前提としています。 このコード例では、適切な種類の文字が見えたときにトリガを設定します。
+ パラメーターリスト文字を検出し、適切なトリガーを設定する簡単な例を次に示します。 この例は、説明を目的としたものです。 スキャナーには、 `GetNextToken` テキスト行からトークンを識別して返すメソッドが含まれていることを前提としています。 このコード例では、単純に、正しい種類の文字が表示されるたびにトリガーを設定します。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -91,17 +91,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>パーサーでのパラメーター情報ツールヒントのサポート
- クラス<xref:Microsoft.VisualStudio.Package.Source>は、パラメーターヒントのツールヒントが表示および<xref:Microsoft.VisualStudio.Package.AuthoringScope>更新<xref:Microsoft.VisualStudio.Package.AuthoringSink>されたときに、 および クラスの内容についていくつかの前提を作成します。
+## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>パーサーでパラメーターヒントのツールヒントをサポートする
+ クラスは、 <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.AuthoringScope> パラメーターヒント <xref:Microsoft.VisualStudio.Package.AuthoringSink> のヒントが表示および更新されるときに、クラスとクラスの内容について何らかの仮定を行います。
 
-- パーサーは、パラメーター <xref:Microsoft.VisualStudio.Package.ParseReason> ・リストの開始文字を入力するときに指定されます。
+- パーサーは、 <xref:Microsoft.VisualStudio.Package.ParseReason> パラメーターリストの開始文字が入力されたときに指定されます。
 
-- オブジェクト内で指定された<xref:Microsoft.VisualStudio.Package.ParseRequest>位置は、パラメーター・リストの開始文字の直後にあります。 パーサーは、その位置で使用可能なすべてのメソッド宣言のシグネチャを収集し、オブジェクトのバージョンのリストに格納する<xref:Microsoft.VisualStudio.Package.AuthoringScope>必要があります。 このリストには、メソッド名、メソッドの型 (または戻り値の型)、および使用可能なパラメーターの一覧が含まれています。 このリストは、後で[パラメータ情報]ツールチップに表示するメソッドシグネチャまたはシグネチャを検索します。
+- オブジェクトで指定された場所 <xref:Microsoft.VisualStudio.Package.ParseRequest> は、パラメーターリストの開始文字の直後にあります。 パーサーは、その位置で利用可能なすべてのメソッド宣言のシグネチャを収集し、バージョンのオブジェクトのリストに格納する必要があり <xref:Microsoft.VisualStudio.Package.AuthoringScope> ます。 この一覧には、メソッド名、メソッドの型 (または戻り値の型)、および使用可能なパラメーターの一覧が含まれています。 このリストは、後でパラメーターヒントに表示するメソッドのシグネチャまたはシグネチャを検索します。
 
-  パーサーは、オブジェクトによって指定された行を<xref:Microsoft.VisualStudio.Package.ParseRequest>解析して、入力されるメソッドの名前と、ユーザーがパラメーターを入力する距離を収集する必要があります。 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>これは、<xref:Microsoft.VisualStudio.Package.AuthoringSink>メソッドの名前をオブジェクトのメソッドに渡し、パラメーター リストの開始文字が<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>解析されるときに<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>メソッドを呼び出し、次のパラメーター リストが解析されるときにメソッドを呼び出し、最後にパラメーター<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>リスト終了文字が解析されるときにメソッドを呼び出すことで実現されます。 これらのメソッド呼び出しの結果は、<xref:Microsoft.VisualStudio.Package.Source>パラメーターヒントを適切に更新するためにクラスによって使用されます。
+  パーサーは、オブジェクトによって指定された行を解析し、 <xref:Microsoft.VisualStudio.Package.ParseRequest> 入力されたメソッドの名前と、ユーザーが入力するパラメーターの距離を収集する必要があります。 これを実現するには、メソッドの名前をオブジェクトのメソッドに渡し、 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink> パラメーターリストの開始文字が解析されたときにメソッドを呼び出し、パラメーターリストの次の文字が解析されたときにメソッドを呼び出し、 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> 最後に <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> パラメーターリストの終了文字を解析するときにメソッドを呼び出します。 これらのメソッド呼び出しの結果は、パラメーターヒント <xref:Microsoft.VisualStudio.Package.Source> のヒントを適切に更新するためにクラスによって使用されます。
 
 ### <a name="example"></a>例
- ここに、ユーザーが入力するテキストの行を示します。 行の下の数字は、パーサが行内のその位置でどのステップをとったかを示します(解析が左から右に移動すると仮定します)。 ここで想定しているのは、"testfunc" メソッド シグネチャを含め、行の前のすべてがメソッド シグネチャ用に既に解析されているということです。
+ ユーザーが入力する可能性のあるテキスト行を次に示します。 行の下の数値は、パーサーによって行のその位置でどのステップが実行されるかを示します (解析が左から右に移動することを前提としています)。 ここでは、"testfunc" メソッドシグネチャを含む、メソッドのシグネチャに対して、行の前のすべてが既に解析されていることを前提としています。
 
 ```
 testfunc("a string",3);
@@ -109,12 +109,12 @@ testfunc("a string",3);
      12          3 4
 ```
 
- パーサーが実行する手順を以下に示します。
+ パーサーによって実行される手順を次に示します。
 
-1. パーサーは"testfunc"というテキストで呼び出<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>します。
+1. パーサーは、 <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> テキスト "testfunc" を使用してを呼び出します。
 
-2. パーサーは<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>を呼び出します。
+2. パーサーが <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> を呼び出します。
 
-3. パーサーは<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>を呼び出します。
+3. パーサーが <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> を呼び出します。
 
-4. パーサーは<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>を呼び出します。
+4. パーサーが <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> を呼び出します。
