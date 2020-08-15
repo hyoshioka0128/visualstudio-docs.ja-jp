@@ -1,7 +1,0 @@
-# [Windows スクリプト インターフェイス](windows-script-interfaces.md)
-# [Windows スクリプト ホスト](windows-script-hosts.md)
-# [Windows スクリプト エンジン](windows-script-engines.md)
-# [アクティブ スクリプトのデバッグの概要](active-script-debugging-overview.md)
-## [スマート ホスト ヘルパー インターフェイスの実装](implementing-smart-host-helper-interfaces.md)
-# [アクティブ スクリプト プロファイリングの概要](active-script-profiling-overview.md)
-# [Windows スクリプト インターフェイスのリファレンス](reference/TOC.md)
