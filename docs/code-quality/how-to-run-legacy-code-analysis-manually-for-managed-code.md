@@ -10,15 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44190f8e828f9a971f15b57266978603dcac8139
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 8a6b52a09729cbc76f91eee76f23e652f07c934f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462063"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250520"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>方法: マネージコードに対してレガシコード分析を手動で実行する
-コード分析ツールは、ソースコードで発生する可能性のある欠陥に関する情報を提供します。 コードプロジェクトの各ビルドでコード分析を自動的に実行できます。また、コード分析を手動で実行することもできます。 コード分析の実行時にチェックされる規則は、プロジェクトのプロパティページの [コード分析] ページで指定します。 詳細については、「[方法: マネージコードプロジェクトのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)」を参照してください。
+
+コード分析ツールは、ソースコードで発生する可能性のある欠陥に関する情報を提供します。 コードプロジェクトの各ビルドでコード分析を自動的に実行できます。また、コード分析を手動で実行することもできます。 コード分析の実行時にチェックされる規則は、プロジェクトのプロパティページの [コード分析] ページで指定します。 詳細については、「 [方法: マネージコードプロジェクトのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)」を参照してください。
 
 ## <a name="to-run-code-analysis-manually"></a>コード分析を手動で実行するには
 
@@ -31,4 +32,3 @@ set EnableLegacyCodeAnalysis = true
 2. **ソリューションエクスプローラー**で、プロジェクトをクリックします。
 
 3. [**分析**] メニューの [*プロジェクト名***に対してコード分析を実行**] をクリックします。
-
