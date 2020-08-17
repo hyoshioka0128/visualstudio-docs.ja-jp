@@ -567,6 +567,8 @@
                   href: ca1835.md
                 - name: 'CA1836:使用可能な場合は、Count よりも IsEmpty を優先します'
                   href: ca1836.md
+                - name: 'CA1838: P/Invokes の StringBuilder パラメーターを使用しません'
+                  href: ca1838.md
             - name: 移植性に関する警告
               items:
                 - name: 概要
