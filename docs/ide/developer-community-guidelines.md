@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137559"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972474"
 ---
 # <a name="developer-community-guidelines"></a>開発者コミュニティのガイドライン
 
@@ -89,12 +89,15 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 意思決定プロセスでは、機能の提案について次の特性を確認しています。
 
+- 一般的な製品の方向性と一致しているか?
 - ビルドと管理を許容できるか?
 - 全体的な[ロードマップ](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)戦略に合っているか?
 - 投票やコメントが示すとおりのコミュニティ サポートが得られるか?
 - コミュニティ サポートが低くても、Microsoft がそれを気に入るか?
 
 これらの質問の 1 つでも、答えが "はい" ではない場合は、終了します。 しかし、多くの場合、提案は _[レビュー中]_ としてオープンのままとなります。
+
+提案が製品の全体的な方向性と一致しない場合は、"*スコープ外*" として閉じます。 たとえば、Visual Studio ファミリ製品の他のメンバーに同様の投資がある場合があります。 または、提案された機能は少数の人にのみ関連しているため、拡張機能を提供する方が適していることがあります。
 
 [提案の状態とよくあるご質問](https://docs.microsoft.com/visualstudio/ide/report-a-problem)に関する記事を参照して、機能の提案の進行状況を追跡します。
 

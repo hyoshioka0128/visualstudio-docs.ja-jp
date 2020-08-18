@@ -15,17 +15,17 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0e971a2a38013ae75287467404e3321e3c4d37
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544197"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238895"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ: 視覚化およびモデリングを使用したデザインの変更
 
 ソフトウェア システムがユーザーのニーズを確実に満たすようにするには、Visual Studio の視覚化およびモデリング ツールを使用します。
-コードマップ、依存関係図、クラス図などのツールを使用して、次のことを行います。
+コード マップ、依存関係図、クラス ダイアグラムなどのツールを、次の目的で使用します。
 
 どのバージョンの Visual Studio が各ツールをサポートしているかについては、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -53,11 +53,11 @@ ms.locfileid: "85544197"
 
 ## <a name="scenario-overview"></a>シナリオの概要
 
-このシナリオでは、Dinner Now と Lucerne Publishing という 2 つの架空の企業のソフトウェア開発ライフサイクルの事例について説明します。 Dinner Now は、シアトルで Web ベースの料理宅配サービスを提供しています。 お客様は、ディナー Now web サイトで食事を注文し、支払いを行うことができます。 注文は最寄りのレストランに送信され、そこから料理が配達されます。 ニューヨークを拠点とする Lucerne Publishing は、オフラインとオンラインでさまざまなビジネスを展開しています。 たとえば、顧客がレストランのレビューを投稿できる web サイトを実行します。
+このシナリオでは、Dinner Now と Lucerne Publishing という 2 つの架空の企業のソフトウェア開発ライフサイクルの事例について説明します。 Dinner Now は、シアトルで Web ベースの料理宅配サービスを提供しています。 顧客は、Dinner Now の Web サイトで料理を注文し、料金を支払うことができます。 注文は最寄りのレストランに送信され、そこから料理が配達されます。 ニューヨークを拠点とする Lucerne Publishing は、オフラインとオンラインでさまざまなビジネスを展開しています。 その 1 つに、顧客がレストランのレビューを投稿できる Web サイトがあります。
 
 先ごろ Dinner Now を買収した Lucerne は、現在次のような変更を計画しています。
 
-- レストランのレビュー機能をディナーに追加して、web サイトを統合しましょう。
+- Dinner Now にレストランのレビューの機能を追加して両社の Web サイトを統合する。
 
 - Dinner Now の支払いシステムを Lucerne のシステムに置き換える。
 
@@ -75,21 +75,21 @@ Team Foundation Server の詳細については、次のトピックを参照し
 
 - [更新されたコードのテスト、検証、およびチェックイン](#TestValidateCheckInCode)
 
-## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>ソフトウェア開発におけるアーキテクチャとモデリング図の役割
+## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a> ソフトウェア開発におけるアーキテクチャ図とモデル図の役割
 
 ソフトウェア開発ライフサイクルのさまざまなステージにおけるこれらのツールの役割を次の表に示します。
 
-||**ユーザー要求のモデリング**|**ビジネス プロセスのモデリング**|**システムのアーキテクチャと設計**|**コードの視覚化と精査**|**検証**|
+|ツール/ロール|ユーザー要求のモデリング|ビジネス プロセスのモデリング|システムのアーキテクチャと設計|コードの視覚化と精査|検証|
 |------|-|-|-|-|-|
 |ドメイン固有言語 (DSL) 図|はい|はい|はい|||
 |依存関係図、レイヤー検証|||はい|はい|はい|
 |コード マップ|||はい|はい|はい|
 |クラス デザイナー (コード ベース)||||はい||
 
-依存関係図を描画するには、モデリングプロジェクトを既存のソリューションまたは新しいソリューションの一部として作成する必要があります。 これらの図はモデリング プロジェクト内に生成する必要があります。
-依存関係図の項目はモデリングプロジェクトに配置されますが、共通モデルには格納されません。 コードから作成されたコード マップおよび .NET クラス図は、モデリング プロジェクトに含まれません。
+依存関係図を描画するには、モデリング プロジェクトを作成する必要があります。既存のソリューションの一部として作成することも、新しいソリューションを作成することもできます。 これらの図はモデリング プロジェクト内に生成する必要があります。
+依存関係図の項目は、モデリング プロジェクトに配置されますが、共通モデルには格納されません。 コードから作成されたコード マップおよび .NET クラス図は、モデリング プロジェクトに含まれません。
 
-参照トピック
+参照:
 
 - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -101,7 +101,7 @@ Team Foundation Server の詳細については、次のトピックを参照し
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-どちらのチームも、依存関係の検証を使用して、開発中のコードが設計と一貫していることを確認します。 参照トピック
+どちらのチームも、開発中のコードで設計との一致を維持するために依存関係の検証も使用しています。 参照:
 
 - [コードと設計の一致の維持](#ValidatingCode)
 
@@ -110,13 +110,13 @@ Team Foundation Server の詳細については、次のトピックを参照し
 - [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 一部のバージョンの Visual Studio では、視覚化およびモデリングのために、依存関係検証と読み取り専用バージョンのコードマップがサポートされています。 この機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+> Visual Studio のいくつかのバージョンでは、依存関係の検証と、視覚化およびモデリングのためのコード マップの読み取り専用のバージョンがサポートされています。 この機能をサポートする Visual Studio のバージョンを確認するには、「[アーキテクチャとモデリング ツールのエディション サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
-## <a name="understand-and-communicate-information-about-the-system"></a>システムに関する情報を理解し、伝達する
+## <a name="understand-and-communicate-information-about-the-system"></a>システムに関する情報の把握と伝達
 
 Visual Studio のモデリング図は、使用する順番は特に決まっていません。したがって、それぞれのニーズや方法に合わせて使用できます。 モデルは通常、プロジェクト全体を通じて繰り返し頻繁に参照されます。 図にはそれぞれ長所があるため、さまざまな図を使用することにより、開発中のシステムのさまざまな側面を把握、記述、および伝達できます。
 
-ディナーと Lucerne は、図を共通言語として使用することで、相互にやり取りし、プロジェクトの利害関係者と通信します。 たとえば、Dinner Now では次のような作業に図を使用しています。
+Dinner Now と Lucerne は、プロジェクトに関するコミュニケーションのための共通の言語として図を使用しています。 たとえば、Dinner Now では次のような作業に図を使用しています。
 
 - 既存のコードの視覚化。
 
@@ -136,15 +136,15 @@ Lucerne では、次のような作業に図を使用しています。
 
 これらの図は Team Foundation Server と統合されているため、Dinner Now と Lucerne にとっては作業の計画、管理、および追跡がより簡単になります。 たとえば、モデルを使用してテスト ケースと開発タスクを特定し、必要な作業を見積もることができます。 Lucerne では、進行状況を監視したり、システムがユーザーの要求を満たしていることを確認したりできるように、Team Foundation Server の作業項目をモデル要素にリンクしています。 たとえば、ユース ケースをテスト ケース作業項目にリンクして、すべてのテストに成功するとユース ケースが満たされたことがわかるようにしています。
 
-チームが変更をチェックインする前に、依存関係の検証と自動テストを含むビルドを実行して、テストと設計に対してコードを検証します。 これにより、更新されたコードが設計に矛盾していないこと、動作する既存の機能に悪影響を与えないことを確認できます。
+変更をチェックインする前には、依存関係の検証と自動テストを含むビルドを実行して、コードをテストと設計に照らし合わせて検証します。 これにより、更新されたコードが設計に矛盾していないこと、動作する既存の機能に悪影響を与えないことを確認できます。
 
-### <a name="identify-changes-to-the-existing-system"></a>既存のシステムに対する変更の特定
+### <a name="identify-changes-to-the-existing-system"></a>既存のシステムに対する変更を特定する
 
 Dinner Now では、新しい要求を満たすためのコストを見積もる必要があります。 これは、その変更がシステムの他の部分にどのくらい影響するかによって違ってきます。 そのため、Dinner Now の開発者の 1 人が、既存のコードから次のマップと図を作成しました。
 
-|**マップまたは図**|**さ**|
+|**マップまたは図**|**表示される内容**|
 |-|-|
-|*コードマップ*<br /><br /> 参照トピック<br /><br /> - [ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)<br />- [コードマップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML ファイルを編集してコードマップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|コード内の依存関係とその他の関係。<br /><br /> たとえば、Dinner Now はまず、アセンブリのコード マップでアセンブリとその依存関係の概要を確認するとします。 そのとき、マップの詳細を表示してそれらのアセンブリの名前空間やクラスを調べることができます。<br /><br /> さらに、コードの特定の領域やその他の種類のリレーションシップを調べるためのマップを生成することもできます。 対象となる領域やリレーションシップを見つけて選択するにはソリューション エクスプローラーを使用します。|
+|*コード マップ*<br /><br /> 参照:<br /><br /> - [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)<br />- [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)<br />- [DGML ファイルを編集してコード マップをカスタマイズする](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|コード内の依存関係とその他の関係。<br /><br /> たとえば、Dinner Now はまず、アセンブリのコード マップでアセンブリとその依存関係の概要を確認するとします。 そのとき、マップの詳細を表示してそれらのアセンブリの名前空間やクラスを調べることができます。<br /><br /> さらに、コードの特定の領域やその他の種類のリレーションシップを調べるためのマップを生成することもできます。 対象となる領域やリレーションシップを見つけて選択するにはソリューション エクスプローラーを使用します。|
 |*コード ベースのクラス図*<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)」を参照してください。|コード内の既存のクラス。|
 
  たとえば、開発者はコード マップを作成します。 新しいシナリオの影響を受ける領域に合わせてスコープを調整します。 次のマップでは、それらの領域が選択されて強調表示されています。
@@ -167,28 +167,28 @@ Dinner Now では、新しい要求を満たすためのコストを見積もる
 |-|-|
 |*コード ベースのクラス図*<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)」を参照してください。|コード内の既存のクラス。|
 
-### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>コードと設計の一貫性を保つ
- Dinner Now では、更新されたコードが設計と一致していることを確認する必要があります。 システムの機能のレイヤーを記述する依存関係図を作成し、それらの間に許可される依存関係を指定して、ソリューションの成果物をそれらのレイヤーに関連付けます。
+### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a> コードと設計の一致を維持する
+ Dinner Now では、更新されたコードが設計と一致していることを確認する必要があります。 そのため、システムの機能のレイヤーを記述する依存関係図を生成し、レイヤー間で許容される依存関係を指定して、ソリューションの成果物をそれらのレイヤーに関連付けました。
 
 |**Diagram (ダイアグラム)**|**記述する内容**|
 |-|-|
-|*依存関係図*<br /><br /> 参照トピック<br /><br /> - [コードから依存関係図を作成する](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)<br />- [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />- [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)|コードの論理アーキテクチャ。<br /><br /> 依存関係図は、Visual Studio ソリューションの成果物を編成し、*レイヤー*と呼ばれる抽象的なグループにマップします。 これらのレイヤーは、それらの成果物がシステムで実行するロール、タスク、または機能を識別します。<br /><br /> 依存関係図は、システムの意図した設計を記述し、その設計に対する進化するコードを検証するのに役立ちます。<br /><br /> レイヤーを作成するには、ソリューション エクスプローラー、コード マップ、クラス ビュー、およびオブジェクト ブラウザーから項目をドラッグします。 新しいレイヤーを描画するには、ツールボックスを使用するか、図の画面を右クリックします。<br /><br /> 既存の依存関係を表示するには、依存関係図サーフェイスを右クリックし、[**依存関係の生成**] をクリックします。 必要とされる依存関係を指定するには、新しい依存関係を描画します。|
+|"*依存関係図*"<br /><br /> 参照:<br /><br /> - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)<br />- [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />- [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)|コードの論理アーキテクチャ。<br /><br /> 依存関係図では、Visual Studio ソリューション内の成果物が整理されて、"*レイヤー*" と呼ばれる抽象的なグループにマップされます。 これらのレイヤーは、それらの成果物がシステムで実行するロール、タスク、または機能を識別します。<br /><br /> 依存関係図は、必要とされるシステムの設計を記述し、コードの変更をその設計に照らし合わせて検証するのに便利です。<br /><br /> レイヤーを作成するには、ソリューション エクスプローラー、コード マップ、クラス ビュー、およびオブジェクト ブラウザーから項目をドラッグします。 新しいレイヤーを描画するには、ツールボックスを使用するか、図の画面を右クリックします。<br /><br /> 既存の依存関係を表示するには、依存関係図の画面を右クリックし、 **[依存関係の生成]** をクリックします。 必要とされる依存関係を指定するには、新しい依存関係を描画します。|
 
-たとえば、次の依存関係図は、レイヤー間の依存関係と、各レイヤーに関連付けられている成果物の数を示しています。
+たとえば、次の依存関係図は、レイヤー間の依存関係と、各レイヤーに関連付けられている成果物の数を記述しています。
 
-![統合支払いシステムの依存関係図](../modeling/media/layer_integrated_dnlucerne.png)
+![統合された支払いシステムの依存関係図](../modeling/media/layer_integrated_dnlucerne.png)
 
  **依存関係図**
 
-コードの開発中に設計との競合が発生しないようにするために、チームは Azure DevOps で実行されるビルドに対して依存関係の検証を使用します。 また、チェックイン操作で依存関係の検証を必要とするカスタム MSBuild タスクも作成します。 ビルド レポートを使用して検証エラーを収集しています。
+チームでは、コードの開発中に設計との競合が起こらないようにするために、Azure DevOps で実行されるビルドで依存関係の検証を使用しています。 また、チェックイン操作で依存関係の検証を要求するカスタム MSBuild タスクも作成します。 ビルド レポートを使用して検証エラーを収集しています。
 
-参照トピック
+参照:
 
-- [ビジュアルデザイナーを使用する](/azure/devops/pipelines/get-started-designer)
+- [ビジュアル デザイナーを使用する](/azure/devops/pipelines/get-started-designer)
 
-- [TFVC ゲートチェックイン](/azure/devops/pipelines/build/triggers)
+- [TFVC ゲート チェックイン](/azure/devops/pipelines/build/triggers)
 
-- [ビルドタスクとリリースタスク](/azure/devops/pipelines/tasks/index)
+- [タスクのビルドとリリース](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>モデルの生成と使用に関する一般的なヒント
 
@@ -206,23 +206,23 @@ Visual Studio のモデリング図は Team Foundation Server と統合されて
 
 Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やされた時間を反映して作業項目を更新できます。 また、Team Foundation Server の以下の機能を使用して、作業の状況を監視および報告できます。
 
-- 毎日、予定された作業を予定どおりに完了するかどうかを示す*レポート*を作成します。 Team Foundation Server で他の同様のレポートを生成してバグの状況を追跡することもできます。
+- 計画された作業を予定どおりに完了できるかどうかを示す日次 "*バーン ダウン レポート*"。 Team Foundation Server で他の同様のレポートを生成してバグの状況を追跡することもできます。
 
 - Microsoft Excel を使用してチームのメンバーの作業負荷を監視および調整できる *イテレーション ワークシート* 。 このワークシートは Team Foundation Server にリンクされており、進行状況に関する定例会議で資料として使用できます。
 
 - Office Project を使用してプロジェクトに関する重要な情報をチームに伝える *開発ダッシュボード* 。
 
-参照トピック
+参照:
 
-- [アジャイルツールとアジャイルプロジェクト管理について](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [グラフ、ダッシュボード、ウィジェット (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Project を使用したバックログとタスクの作成](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
-### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a>コードのテスト、検証、チェックイン
+### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> コードのテスト、検証、チェックイン
 
-各タスクが完了すると、チームはコードをソース管理にチェックインし、忘れた場合は Team Foundation Server から通知を受け取ります。 Team Foundation Server がチェックインを受け入れる前に、単体テストと依存関係検証を実行して、テストケースと設計に照らし合わせてコードを検証します。 Team Foundation Server を使用して、ビルド、自動単体テスト、依存関係検証を定期的に実行します。 これにより、コードが以下の基準を満たしていることを確認できます。
+チームは、作業が完了するたびにコードをソース管理にチェックインします。その作業を忘れると、Team Foundation Server からリマインダーが届きます。 Team Foundation Server でチェックインが受け入れられるためには、単体テストと依存関係の検証を実行して、コードをテスト ケースと設計に照らし合わせて検証する必要があります。 ビルド、自動化された単体テスト、および依存関係の検証を定期的に実行するには、Team Foundation Server が使用されます。 これにより、コードが以下の基準を満たしていることを確認できます。
 
 - 正常に動作する。
 
@@ -232,9 +232,9 @@ Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やさ
 
 Dinner Now には数多くの自動テストがあり、そのほとんどを引き続き適用できるため、Lucerne でそれらを再利用することができます。 新しい機能をカバーするために、それらのテストに変更を加えたり、新しいテストを追加したりすることもできます。 Dinner Now と Lucerne の両方で Visual Studio による手動テストも実行されます。
 
-コードが設計に準拠していることを確認するために、チームは依存関係の検証を含むように Azure DevOps でビルドを構成します。 競合が発生した場合は、詳細なレポートが生成されます。
+また、コードが設計に準拠していることを確認するために、Azure DevOps で依存関係の検証を含むビルドを構成しています。 競合が発生した場合は、詳細なレポートが生成されます。
 
-参照トピック
+参照:
 
 - [アプリケーションのテスト](/azure/devops/test/overview?view=vsts)
 
@@ -254,7 +254,7 @@ Lucerne と Dinner Now は、支払いシステムを統合する必要があり
 
 - [論理アーキテクチャの記述: 依存関係図](#DescribeLayers)
 
-参照トピック
+参照:
 
 - [コードの視覚化](../modeling/visualize-code.md)
 
@@ -262,7 +262,7 @@ Lucerne と Dinner Now は、支払いシステムを統合する必要があり
 
 - [アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)
 
-### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>既存のコードの視覚化: コードマップ
+### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> 既存のコードの視覚化: コード マップ
 
 コード マップは、コード内の現在の編成やリレーションシップを示します。 マップの *ノード* によって項目が表され、 *リンク*によってリレーションシップが表されます。 コード マップは次のような作業に役立ちます。
 
@@ -270,7 +270,7 @@ Lucerne と Dinner Now は、支払いシステムを統合する必要があり
 
 - 提案された変更が既存のコードのどこにどのような影響を与えるのかを把握する。
 
-- 複雑さ、自然な依存関係、パターン、または改善によるメリットをもたらす可能性のあるその他の領域を検索します。
+- 複雑な領域、自然な依存関係、パターンなど、改良の余地がある領域を見つける。
 
 たとえば、Dinner Now では PaymentProcessing コンポーネントの更新のコストを見積もる必要があります。 これは、その変更がシステムの他の部分にどのくらい影響するかによって違ってきます。 そのため、Dinner Now の開発者の 1 人がコードからコード マップを生成し、変更の影響を受ける領域に合わせてスコープを調整しました。
 
@@ -314,7 +314,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - マップを調べる際には、実行する作業に合わせてレイアウトを再配置することができます。
 
-     たとえば、コードのレイヤーを視覚化するにはツリー レイアウトを選択します。 「[コードマップの参照および再配置」を](../modeling/browse-and-rearrange-code-maps.md)参照してください。
+     たとえば、コードのレイヤーを視覚化するにはツリー レイアウトを選択します。 「[コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)」を参照してください。
 
 #### <a name="summary-strengths-of-code-maps"></a>まとめ: コード マップの長所
  コード マップは次のような作業に役立ちます。
@@ -329,10 +329,10 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 |**Diagram (ダイアグラム)**|**記述する内容**|
 |-|-|
-|依存関係図|システムの論理アーキテクチャ。 依存関係検証を使用して、コードが設計と一貫性を保っていることを確認します。<br /><br /> 既存の依存関係または目的の依存関係を特定するには、コードマップとグループ関連項目を作成します。 依存関係図を作成するには、次を参照してください。<br /><br /> - [コードから依存関係図を作成する](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)|
+|依存関係図|システムの論理アーキテクチャ。 依存関係の検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 既存の依存関係または必要な依存関係を特定するには、コード マップを生成し、関連する項目をグループ化します。 依存関係図を作成するには、次を参照してください。<br /><br /> - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)|
 |クラス図 (コード ベース)|特定のプロジェクトに対するコード内の既存のクラス。<br /><br /> コード内の既存のクラスを視覚化して変更するには、クラス デザイナーを使用します。<br /><br /> 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)」を参照してください。|
 
-### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a>型の用語集を定義する: クラス図
+### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a> 型の用語集の定義: クラス ダイアグラム
  クラス図は、システムに参加するエンティティ、用語、または概念と、それらの関係を定義します。 たとえば、開発中にこれらの図を使用すると、各クラスの属性と操作を、実装の言語やスタイルに関係なく記述できます。
 
  Lucerne は、Process Payment ユース ケースに参加するエンティティを記述し、それについて議論するために、次のようなクラス図を描画しました。
@@ -388,9 +388,9 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 #### <a name="summary-strengths-of-class-diagrams"></a>まとめ: クラス図の長所
  クラス図を使用すると、以下の要素を定義できます。
 
-- ユーザーのニーズやシステムに参加するエンティティについて議論する際に使用する用語の共通用語集。 「[モデルユーザーの要件](../modeling/model-user-requirements.md)」を参照してください。
+- ユーザーのニーズやシステムに参加するエンティティについて議論する際に使用する用語の共通用語集。 「[ユーザー要件のモデリング](../modeling/model-user-requirements.md)」を参照してください。
 
-- システムのパート (コンポーネントなど) によって使用される型。実装に関係なく定義できます。 「[アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)化」を参照してください。
+- システムのパート (コンポーネントなど) によって使用される型。実装に関係なく定義できます。 「[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)」を参照してください。
 
 - 型の間の関係 (依存関係など)。 たとえば、ある型を別の型の複数のインスタンスに関連付けられることを示すことができます。
 
@@ -398,17 +398,17 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 |**Diagram (ダイアグラム)**|**説明**|
 |-|-|
-|依存関係図|クラスに関連するシステムの論理アーキテクチャを定義します。<br /><br /> 依存関係検証を使用して、コードが設計と一貫性を保っていることを確認します。<br /><br /> 参照トピック<br /><br /> - [コードから依存関係図を作成する](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)<br />- [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />- [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)|
-|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> クラスとその関係およびメソッドを特定するには、それらの要素を示すコード マップを生成します。<br /><br /> 参照トピック<br /><br /> - [ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)|
+|依存関係図|クラスに関連するシステムの論理アーキテクチャを定義します。<br /><br /> 依存関係の検証を使用して、コードが設計と常に一致することを確認します。<br /><br /> 参照:<br /><br /> - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)<br />- [依存関係図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />- [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)|
+|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> クラスとその関係およびメソッドを特定するには、それらの要素を示すコード マップを生成します。<br /><br /> 参照:<br /><br /> - [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>論理アーキテクチャの記述: 依存関係図
- 依存関係図は、ソリューション内の成果物を抽象的なグループ (*レイヤー*) に整理することによって、システムの論理アーキテクチャを記述します。 成果物には、名前空間、プロジェクト、クラス、メソッドなど、さまざまなものがあります。 レイヤーは、それらの成果物がシステムで実行するロールやタスクを表します。 コードが設計と一致していることを確認するために、ビルドやチェックイン操作にレイヤー検証を組み込むこともできます。
+### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a> 論理アーキテクチャの記述: 依存関係図
+ 依存関係図は、ソリューションの成果物を抽象的なグループ ("*レイヤー*") に整理することによってシステムの論理アーキテクチャを記述します。 成果物には、名前空間、プロジェクト、クラス、メソッドなど、さまざまなものがあります。 レイヤーは、それらの成果物がシステムで実行するロールやタスクを表します。 コードが設計と一致していることを確認するために、ビルドやチェックイン操作にレイヤー検証を組み込むこともできます。
 
- コードと設計の整合性を保つために、ディナーと Lucerne は次の依存関係図を使用して、進化するコードを検証します。
+ Dinner Now と Lucerne は、コードと設計の一致を維持するために、次のような依存関係図を使用してコードの変更を検証します。
 
- ![統合支払いシステムの依存関係図](../modeling/media/layer_integrated_dnlucerne.png)
+ ![統合された支払いシステムの依存関係図](../modeling/media/layer_integrated_dnlucerne.png)
 
- **Lucerne と統合されたディナーの依存関係図**
+ **Lucerne と統合された Dinner Now の依存関係図**
 
  この図のレイヤーは、Dinner Now と Lucerne の対応するソリューション成果物にリンクされています。 たとえば、Business レイヤーは DinnerNow.Business 名前空間とそのメンバー (新しい PaymentApprover クラスも含まれています) にリンクされており、 Resource Access レイヤーは DinnerNow.Data 名前空間にリンクされています。 図の矢印 ( *依存関係*) は、Resource Access レイヤーの機能を使用できるのは Business レイヤーだけであることを示しています。 コードを更新する過程で定期的にレイヤー検証を実行することにより、発生した競合をその場で検出して速やかに解決できます。
 
@@ -428,7 +428,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 #### <a name="drawing-a-dependency-diagram"></a>依存関係図の描画
 
-依存関係図には、主に次のような特徴があります。
+依存関係図の主な機能を以下に示します。
 
 - *レイヤー* は、成果物の論理グループを記述します。
 
@@ -444,13 +444,13 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
   - 1 つのレイヤーに成果物にリンクされた他のレイヤーが含まれている場合は、そのコンテナー レイヤーの数字にそれらの成果物が含まれていなくても、コンテナー レイヤーはそれらの成果物にリンクされます。
 
-    レイヤーにリンクされている成果物を表示するには、依存関係を右クリックし、[**リンクの表示**] をクリックして**レイヤーエクスプローラー**を開きます。
+    レイヤーにリンクされた成果物を表示するには、依存関係を右クリックし、 **[リンクの表示]** をクリックして**レイヤー エクスプローラー**を開きます。
 
 - *依存関係* は、あるレイヤーが別のレイヤーの機能を使用することはできても、その逆はできないことを示します。 *双方向の依存関係* は、あるレイヤーが別のレイヤーの機能を使用でき、その逆もできることを示します。
 
-     依存関係図に既存の依存関係を表示するには、ダイアグラムサーフェイスを右クリックし、[**依存関係の生成**] をクリックします。 必要とされる依存関係を記述するには、新しい依存関係を描画します。
+     依存関係図に既存の依存関係を表示するには、図の画面を右クリックし、 **[依存関係の生成]** をクリックします。 必要とされる依存関係を記述するには、新しい依存関係を描画します。
 
-参照トピック
+参照:
 
 - [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -460,9 +460,9 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
-#### <a name="summary-strengths-of-dependency-diagrams"></a>まとめ: 依存関係図の長所
+#### <a name="summary-strengths-of-dependency-diagrams"></a>概要:依存関係の長所
 
-依存関係図を使用すると、次のことができます。
+依存関係図は次の場合に役立ちます。
 
 - 成果物の機能に従ってシステムの論理アーキテクチャを記述する。
 
@@ -472,7 +472,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 |**Diagram (ダイアグラム)**|**説明**|
 |-|-|
-|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> レイヤーを作成するには、コード マップを生成し、レイヤーにするマップ項目をグループ化して、 マップから依存関係図にグループをドラッグします。<br /><br /> 参照トピック<br /><br /> - [ソリューション間の依存関係のマッピング](../modeling/map-dependencies-across-your-solutions.md)<br />- [コードマップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)|
+|コード マップ|既存のコード内の編成や関係を視覚化します。<br /><br /> レイヤーを作成するには、コード マップを生成し、レイヤーにするマップ項目をグループ化して、 そのグループをマップから依存関係図にドラッグします。<br /><br /> 参照:<br /><br /> - [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)<br />- [コード マップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>外部リソース
 

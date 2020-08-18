@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 05/19/2020
+ms.date: 08/05/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e30b904fae9bd0de3985c4ec6a2b6809add58032
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: abcffcfe6a7a22b2001ff38852d9bef916d2d119
+ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183154"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805848"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開発ビルド ツール
 
@@ -27,7 +27,7 @@ ms.locfileid: "84183154"
 
 コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.6.30027.131 | 必須
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.7.30310.162 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.3.29207.166 | 必須
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | 必須
@@ -35,7 +35,7 @@ Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 用 Azure ライブラ�
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services ビルド ツール | 16.3.29207.166 | 必須
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | コンテナーの開発ツール - Build Tools | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.1.28829.92 | 必須
-Microsoft.VisualStudio.Component.TypeScript.3.8 | TypeScript 3.8 SDK | 16.0.29813.82 | 必須
+Microsoft.VisualStudio.Component.TypeScript.3.9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必須
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation のビルド ツール | 16.0.28516.191 | 必須
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 開発ビルド ツール | 16.0.28516.191 | 必須
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
@@ -49,17 +49,17 @@ Microsoft.VisualStudio.Component.WebDeploy | Web 配置 | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開発ツール | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.8.DeveloperTools | .NET Framework 4.8 開発ツール | 16.4.29318.151 | Optional
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.6.30107.105 | Optional
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.6.30107.105 | Optional
-Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.6.30107.105 | Optional
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 ランタイム (LTS) | 16.7.30310.162 | Optional
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.7.30310.162 | Optional
+Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.7.30310.162 | Optional
 
 ## <a name="data-storage-and-processing-build-tools"></a>データ ストレージとビルド ツールの処理
 
@@ -78,7 +78,7 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開発ツール | 16.0.28516.191 | 推奨
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 推奨
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.6.30013.169 | 推奨
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.7.30310.162 | 推奨
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools - ビルド ツール | 16.0.28315.86 | 推奨
 
 ## <a name="net-desktop-build-tools"></a>.NET デスクトップ ビルド ツール
@@ -103,15 +103,15 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開発ツール | 16.0.28516.191 | 推奨
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.6.30107.105 | 推奨
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.6.30107.105 | 推奨
-Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.6.30107.105 | 推奨
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 ランタイム (LTS) | 16.7.30310.162 | 推奨
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.7.30310.162 | 推奨
+Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.7.30310.162 | 推奨
 Microsoft.VisualStudio.Component.TestTools.BuildTools | ツールのコア機能のテスト - Build Tools | 16.4.29409.204 | 推奨
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation のビルド ツール | 16.0.28516.191 | 推奨
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開発ツール | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開発ツール | 16.3.29207.166 | Optional
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# コンパイラ | 16.0.2852
 コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必須
-Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools のコア | 16.6.30013.169 | 必須
+Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools のコア | 16.7.30310.162 | 必須
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 
 ## <a name="net-core-build-tools"></a>.NET Core ビルド ツール
@@ -145,10 +145,10 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Ros
 コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core ビルド ツール | 16.3.29102.218 | 必須
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.6.30107.105 | 必須
-Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.6.30107.105 | 必須
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.7.30310.162 | 必須
+Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.7.30310.162 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.1.28829.92 | 必須
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.6.30107.105 | 推奨
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 ランタイム (LTS) | 16.7.30310.162 | 推奨
 
 ## <a name="nodejs-build-tools"></a>Node.js ビルド ツール
 
@@ -161,7 +161,7 @@ Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.6.
 コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild サポート | 16.0.28517.75 | 必須
-Microsoft.VisualStudio.Component.TypeScript.3.8 | TypeScript 3.8 SDK | 16.0.29813.82 | 必須
+Microsoft.VisualStudio.Component.TypeScript.3.9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必須
 
 ## <a name="officesharepoint-build-tools"></a>Office/SharePoint ビルド ツール
 
@@ -178,7 +178,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必須
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | 必須
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.6.30027.131 | 必須
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.7.30310.162 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.3.29207.166 | 必須
@@ -192,8 +192,8 @@ Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 開発ビルド ツ�
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | Visual Studio Tools for Office (VSTO) ビルド ツール | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.WebDeploy | Web 配置 | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開発ツール | 16.3.29207.166 | Optional
@@ -214,22 +214,22 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | .NET Framework 4.8 開発ツ�
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必須
 Microsoft.Component.NetFX.Native | .NET Native | 16.5.29515.121 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.6.30107.105 | 必須
-Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.6.30107.105 | 必須
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.7.30310.162 | 必須
+Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.7.30310.162 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.1.28829.92 | 必須
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | ユニバーサル Windows プラットフォーム ビルドの前提条件 | 16.3.29207.166 | 必須
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 推奨
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | v142 ビルド ツールの C++ ユニバーサル Windows プラットフォーム サポート (ARM64) | 16.3.29207.166 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM ビルド ツール (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64 ビルド ツール (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 ビルド ツール (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.6.30027.131 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM ビルド ツール (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64 ビルド ツール (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 ビルド ツール (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC.BuildTools | C++ (v142) ユニバーサル Windows プラットフォーム ツール | 16.3.29207.166 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | C++ (v141) ユニバーサル Windows プラットフォーム ツール | 16.3.29207.166 | Optional
@@ -250,23 +250,23 @@ Microsoft.VisualStudio.Component.Windows10SDK | Windows ユニバーサル C ラ
 Microsoft.VisualStudio.Component.TestTools.BuildTools | ツールのコア機能のテスト - Build Tools | 16.4.29409.204 | 推奨
 Microsoft.VisualStudio.Component.VC.ASAN | C++ AddressSanitizer (試験段階) | 16.5.29515.121 | 推奨
 Microsoft.VisualStudio.Component.VC.CMake.Project | Windows 用 C++ CMake ツール | 16.3.29103.31 | 推奨
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.26) | 16.6.30013.169 | 推奨
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.27) | 16.7.30310.162 | 推奨
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | 推奨
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 16.0.28625.61 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ ビルド ツール (v14.00) | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ ビルド ツール (v14.00) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | 最新 v142 ビルド ツールの C++ ATL (x86 & x64) | 16.4.29313.120 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | 最新 v142 ビルド ツールの C++ MFC (x86 & x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.26) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows 用 C++ Clang コンパイラ (10.0.0) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.27) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows 用 C++ Clang コンパイラ (10.0.0) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | v142 ビルド ツールの C++ Clang-cl (x64/x86) | 16.3.29207.166 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | v142 ビルド ツール用の C++ モジュール (x64/x86 – 実験) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 ビルド ツール (v14.16) | 16.6.30013.169 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.6.30027.131 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 ビルド ツール (v14.16) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.7.30310.162 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.7.30310.162 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Windows 用 C++ Clang ツール (10.0.0 - x64/x86) | 16.6.30027.131 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Windows 用 C++ Clang ツール (10.0.0 - x64/x86) | 16.7.30310.162 | Optional
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio 拡張機能の開発
 
@@ -280,7 +280,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Windows 用 C++
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | 必須
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 必須
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.6.30027.131 | 必須
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.7.30310.162 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.3.29207.166 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.1.28829.92 | 必須
@@ -291,7 +291,7 @@ Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Op
 Microsoft.Component.VC.Runtime.OSSupport | v142 ビルド ツールの C++ ユニバーサル Windows プラットフォーム ランタイム | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | 最新 v142 ビルド ツールの C++ ATL (x86 & x64) | 16.4.29313.120 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | 最新 v142 ビルド ツールの C++ MFC (x86 & x64) | 16.4.29313.120 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.26) | 16.6.30013.169 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.27) | 16.7.30310.162 | Optional
 
 ## <a name="web-development-build-tools"></a>Web 開発ビルド ツール
 
@@ -303,11 +303,11 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/
 
 コンポーネント ID | 名前 | バージョン | 依存関係の種類
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.6.30027.131 | 必須
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.7.30310.162 | 必須
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.3.29207.166 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.1.28829.92 | 必須
-Microsoft.VisualStudio.Component.TypeScript.3.8 | TypeScript 3.8 SDK | 16.0.29813.82 | 必須
+Microsoft.VisualStudio.Component.TypeScript.3.9 | TypeScript 3.9 SDK | 16.0.30310.162 | 必須
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 開発ビルド ツール | 16.0.28516.191 | 必須
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce ビルド ツール | 16.0.28625.61 | 推奨
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
@@ -316,9 +316,9 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開発ツール | 16.0.28516.191 | 推奨
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS ランタイム | 16.6.30107.105 | 推奨
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.6.30107.105 | 推奨
-Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.6.30107.105 | 推奨
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 ランタイム (LTS) | 16.7.30310.162 | 推奨
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 LTS ランタイム | 16.7.30310.162 | 推奨
+Microsoft.NetCore.Component.SDK | .NET Core SDK | 16.7.30310.162 | 推奨
 Microsoft.VisualStudio.Component.AspNet45 | 高度な ASP.NET 機能 | 16.0.28315.86 | 推奨
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | コンテナーの開発ツール - Build Tools | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.TestTools.BuildTools | ツールのコア機能のテスト - Build Tools | 16.4.29409.204 | 推奨
@@ -327,8 +327,8 @@ Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Fou
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 開発ツール | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.6.30027.131 | Optional
-Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.6.30027.131 | Optional
+Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 Targeting Pack | 16.7.30310.162 | Optional
+Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 Targeting Pack | 16.7.30310.162 | Optional
 Microsoft.Net.Component.4.8.TargetingPack | .NET Framework 4.8 Targeting Pack | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET Framework 4.6.1 開発ツール | 16.3.29207.166 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 開発ツール | 16.3.29207.166 | Optional
@@ -360,11 +360,11 @@ Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.1
 
 コンポーネント ID | 名前 | バージョン
 --- | --- | ---
-Microsoft.Net.Core.Component.SDK.2.2 | .NET Core 2.2 ランタイム (EOL) | 16.6.30013.169
-Microsoft.Net.Core.Component.SDK.3.0 | .NET Core 3.0 ランタイム (EOL) | 16.6.30107.105
-Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.20) | 16.6.30013.169
+Microsoft.Net.Core.Component.SDK.2.2 | .NET Core 2.2 ランタイム (サポート対象外) | 16.7.30310.162
+Microsoft.Net.Core.Component.SDK.3.0 | .NET Core 3.0 ランタイム (サポート対象外) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.20) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.20) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.20) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.20) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.20) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.ATL | v142 ビルド ツールの C++ v14.20 ATL (x86 & x64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | v142 ビルド ツールの C++ v14.20 ATL (ARM) | 16.5.29515.121
@@ -379,11 +379,11 @@ Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | v142 ビルド ツ�
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | v142 ビルド ツール用 C++ v14.20 MFC (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.20 MFC と Spectre 軽減策 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | v142 ビルド ツール用 C++ v14.20 MFC と Spectre 軽減策 (x86 & x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.20) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.20) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.20) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.21) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.21) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.21.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.21) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.21) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.21) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.21.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.21) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.ATL | v142 ビルド ツールの C++ v14.21 ATL (x86 & x64) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM | v142 ビルド ツールの C++ v14.21 ATL (ARM) | 16.2.29019.55
@@ -398,11 +398,11 @@ Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM.Spectre | v142 ビルド ツ�
 Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64 | v142 ビルド ツール用 C++ v14.21 MFC (ARM64) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.21 MFC と Spectre 軽減策 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.21.MFC.Spectre | v142 ビルド ツール用 C++ v14.21 MFC と Spectre 軽減策 (x86 & x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.21) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.21) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.21.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.21) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.22) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.22.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.22) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.22) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.22.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.22) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ATL | v142 ビルド ツールの C++ v14.22 ATL (x86 & x64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM | v142 ビルド ツールの C++ v14.22 ATL (ARM) | 16.4.29313.120
@@ -410,18 +410,18 @@ Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM.Spectre | v142 ビルド ツ�
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64 | v142 ビルド ツールの C++ v14.22 ATL (ARM64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.ATL.ARM64.Spectre | v142 ビルド ツール用 C++ v14.22 ATL と Spectre 軽減策 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.ATL.Spectre | v142 ビルド ツール用 C++ v14.22 ATL と Spectre 軽減策 (x86 & x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.22) | 16.6.30020.68
+Microsoft.VisualStudio.Component.VC.14.22.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.MFC | v142 ビルド ツールの C++ v14.22 MFC (x86 & x64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM | v142 ビルド ツールの C++ v14.22 MFC (ARM) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM.Spectre | v142 ビルド ツール用 C++ v14.22 MFC と Spectre 軽減策 (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64 | v142 ビルド ツール用 C++ v14.22 MFC (ARM64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.14.22.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.22 MFC と Spectre 軽減策 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.22.MFC.Spectre | v142 ビルド ツール用 C++ v14.22 MFC と Spectre 軽減策 (x86 & x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.22.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.22) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.22.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.22) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.22.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.22) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.23) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.23.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.23) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.23) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.23.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.23) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL | v142 ビルド ツール用 C++ v14.23 ATL (x86 & x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM | v142 ビルド ツール用 C++ v14.23 ATL (ARM) | 16.5.29515.121
@@ -429,18 +429,18 @@ Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM.Spectre | v142 ビルド ツ�
 Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64 | v142 ビルド ツール用 C++ v14.23 ATL (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL.ARM64.Spectre | v142 ビルド ツール用 C++ v14.23 ATL と Spectre 軽減策 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.ATL.Spectre | v142 ビルド ツール用 C++ v14.23 ATL と Spectre 軽減策 (x86 & x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.23) | 16.6.30020.68
+Microsoft.VisualStudio.Component.VC.14.23.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.MFC | v142 ビルド ツール用 C++ v14.23 MFC (x86 & x64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM | v142 ビルド ツール用 C++ v14.23 MFC (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM.Spectre | v142 ビルド ツール用 C++ v14.23 MFC と Spectre 軽減策 (ARM) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64 | v142 ビルド ツール用 C++ v14.23 MFC (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.23 MFC と Spectre 軽減策 (ARM64) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.14.23.MFC.Spectre | v142 ビルド ツール用 C++ v14.23 MFC と Spectre 軽減策 (x86 & x64) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.23.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.23) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.23.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.23) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.23.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.23) | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.14.24.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.24) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.24.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.24) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.24.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.24) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.24.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.24) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL | v142 ビルド ツール用 C++ v14.24 ATL (x86 & x64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM | v142 ビルド ツール用 C++ v14.24 ATL (ARM) | 16.5.29721.120
@@ -448,34 +448,53 @@ Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM.Spectre | v142 ビルド ツ�
 Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM64 | v142 ビルド ツール用 C++ v14.24 ATL (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL.ARM64.Spectre | v142 ビルド ツール用 C++ v14.24 ATL と Spectre 軽減策 (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.ATL.Spectre | v142 ビルド ツール用 C++ v14.24 ATL と Spectre 軽減策 (x86 & x64) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.24.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.24) | 16.6.30020.68
+Microsoft.VisualStudio.Component.VC.14.24.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.MFC | v142 ビルド ツール用 C++ v14.24 MFC (x86 & x64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM | v142 ビルド ツール用 C++ v14.24 MFC (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM.Spectre | v142 ビルド ツール用 C++ v14.24 MFC と Spectre 軽減策 (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM64 | v142 ビルド ツール用 C++ v14.24 MFC (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.24 MFC と Spectre 軽減策 (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.14.24.MFC.Spectre | v142 ビルド ツール用 C++ v14.24 MFC と Spectre 軽減策 (x86 & x64) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.24.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.24) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.24.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.24) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.14.24.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.24) | 16.5.29721.120
-Microsoft.VisualStudio.Component.VC.14.25.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL | v142 ビルド ツール用 C++ v14.25 ATL (x86 & x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM | v142 ビルド ツール用 C++ v14.25 ATL (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM.Spectre | v142 ビルド ツール用 C++ v14.25 ATL と Spectre 軽減策 (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64 | v142 ビルド ツール用 C++ v14.25 ATL (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64.Spectre | v142 ビルド ツール用 C++ v14.25 ATL と Spectre 軽減策 (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.ATL.Spectre | v142 ビルド ツール用 C++ v14.25 ATL と Spectre 軽減策 (x86 & x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC | v142 ビルド ツール用 C++ v14.25 MFC (x86 & x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM | v142 ビルド ツール用 C++ v14.25 MFC (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM.Spectre | v142 ビルド ツール用 C++ v14.25 MFC と Spectre 軽減策 (ARM) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64 | v142 ビルド ツール用 C++ v14.25 MFC (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.25 MFC と Spectre 軽減策 (ARM64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.MFC.Spectre | v142 ビルド ツール用 C++ v14.25 MFC と Spectre 軽減策 (x86 & x64) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.25) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.14.25.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.25) | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.14.25.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL | v142 ビルド ツール用 C++ v14.25 ATL (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM | v142 ビルド ツール用 C++ v14.25 ATL (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM.Spectre | v142 ビルド ツール用 C++ v14.25 ATL と Spectre 軽減策 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64 | v142 ビルド ツール用 C++ v14.25 ATL (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.ARM64.Spectre | v142 ビルド ツール用 C++ v14.25 ATL と Spectre 軽減策 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.ATL.Spectre | v142 ビルド ツール用 C++ v14.25 ATL と Spectre 軽減策 (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC | v142 ビルド ツール用 C++ v14.25 MFC (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM | v142 ビルド ツール用 C++ v14.25 MFC (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM.Spectre | v142 ビルド ツール用 C++ v14.25 MFC と Spectre 軽減策 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64 | v142 ビルド ツール用 C++ v14.25 MFC (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.25 MFC と Spectre 軽減策 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.MFC.Spectre | v142 ビルド ツール用 C++ v14.25 MFC と Spectre 軽減策 (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.25.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.25) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM | MSVC v142 - VS 2019 C++ ARM ビルド ツール (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM64 | MSVC v142 - VS 2019 C++ ARM64 ビルド ツール (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL | v142 ビルド ツール用 C++ v14.26 ATL (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM | v142 ビルド ツール用 C++ v14.26 ATL (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM.Spectre | v142 ビルド ツール用 C++ v14.26 ATL と Spectre 軽減策 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM64 | v142 ビルド ツール用 C++ v14.26 ATL (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.ARM64.Spectre | v142 ビルド ツール用 C++ v14.26 ATL と Spectre 軽減策 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.ATL.Spectre | v142 ビルド ツール用 C++ v14.26 ATL と Spectre 軽減策 (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.CLI.Support | v142 ビルド ツールの C++/CLI サポート (14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC | v142 ビルド ツール用 C++ v14.26 MFC (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM | v142 ビルド ツール用 C++ v14.26 MFC (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM.Spectre | v142 ビルド ツール用 C++ v14.26 MFC と Spectre 軽減策 (ARM) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM64 | v142 ビルド ツール用 C++ v14.26 MFC (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.ARM64.Spectre | v142 ビルド ツール用 C++ v14.26 MFC と Spectre 軽減策 (ARM64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.MFC.Spectre | v142 ビルド ツール用 C++ v14.26 MFC と Spectre 軽減策 (x86 & x64) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 ビルド ツール (v14.26) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.14.26.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.26) | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.ATL.ARM | 最新 v142 ビルド ツールの C++ ATL (ARM) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | 最新 v142 ビルド ツール用 C++ ATL と Spectre 軽減策 (ARM) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | 最新 v142 ビルド ツールの C++ ATL (ARM64) | 16.4.29313.120
@@ -487,9 +506,9 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | 最新 v142 ビルド ツ�
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | 最新 v142 ビルド ツールの C++ MFC (ARM64) | 16.4.29313.120
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | 最新 v142 ビルド ツール用 C++ MFC と Spectre 軽減策 (ARM64) | 16.5.29721.120
 Microsoft.VisualStudio.Component.VC.Redist.MSM | C++ 2019 再頒布可能パッケージ MSM | 16.5.29515.121
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.26) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.26) | 16.6.30013.169
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.26)  | 16.6.30013.169
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre 軽減ライブラリ (v14.27) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre 軽減ライブラリ (v14.27) | 16.7.30310.162
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre 軽減ライブラリ (v14.27)  | 16.7.30310.162
 Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 - VS 2017 C++ ARM Spectre 軽減ライブラリ (v14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 - VS 2017 C++ ARM64 Spectre 軽減ライブラリ (v14.16) | 16.5.29515.121
 Microsoft.VisualStudio.Component.VC.v141.ATL | v141 ビルド ツールの C++ ATL (x86 & x64) | 16.0.28625.61
