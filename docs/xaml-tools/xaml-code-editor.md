@@ -16,7 +16,7 @@ ms.locfileid: "85329174"
 ---
 # <a name="xaml-code-editor"></a>XAML コードエディター
 
-[Visual STUDIO IDE](../get-started/visual-studio-ide.md)の XAML コードエディターには、Windows プラットフォーム用の WPF アプリと UWP アプリを作成するために必要なすべてのツールと、 [Xamarin. フォーム](/xamarin/xamarin-forms/user-interface/text/editor/)が含まれています。 この記事では、XAML ベースのアプリを開発するときにコードエディターで果たす役割と、Visual Studio 2019 の XAML コードエディターに固有の機能の両方について説明します。
+[Visual STUDIO IDE](../get-started/visual-studio-ide.md)の XAML コードエディターには、Windows プラットフォーム用の WPF アプリと UWP アプリを作成するために必要なすべてのツールと、 [Xamarin.Forms](/xamarin/xamarin-forms/user-interface/text/editor/)が含まれています。 この記事では、XAML ベースのアプリを開発するときにコードエディターで果たす役割と、Visual Studio 2019 の XAML コードエディターに固有の機能の両方について説明します。
 
 まず、開いている WPF プロジェクトで IDE (統合開発環境) を見てみましょう。 次の図は、XAML コードエディターと共に使用する主要な IDE ツールのいくつかを示しています。
 
@@ -240,7 +240,7 @@ XAML コードに表示される電球アイコンは、コードのリファク
 
 条件付き XAML は、XAML マークアップで [ApiInformation.IsApiContractPresent](/uwp/api/windows.foundation.metadata.apiinformation.isapicontractpresent/) メソッドを使う方法を提供するものです。 これにより、分離コードを使わなくても、API の有無に基づいてマークアップでプロパティの設定やオブジェクトのインスタンス化を行うことができます。
 
-詳細については、「[条件付き xaml](/windows/uwp/debug-test-perf/conditional-xaml/) 」ページと、「[デスクトップアプリ (XAML アイランド)」ページのホスト UWP XAML コントロールに](/windows/apps/desktop/modernize/xaml-islands/)関するページを参照してください。
+詳細については、「[条件付き xaml](/windows/uwp/debug-test-perf/conditional-xaml/) 」ページと、「[デスクトップアプリ (XAML Islands)」ページのホスト UWP XAML コントロールに](/windows/apps/desktop/modernize/xaml-islands/)関するページを参照してください。
 
 ### <a name="xaml-structure-visualizer"></a>XAML 構造ビジュアライザー
 
