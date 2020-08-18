@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543846"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913313"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
@@ -262,7 +262,7 @@ Visual Studio で環境のレジストリ エントリが検出されたもの�
 修復オプションがない環境を修正する場合や、無効な環境を削除する場合は、次の手順を使用して直接レジストリを変更します。 Visual Studio では、レジストリの変更時に **[Python 環境]** ウィンドウが自動的に更新されます。
 
 1. *regedit.exe* を実行します。
-1. **HKEY_LOCAL_MACHINE\SOFTWARE\Python** に移動します。 IronPython の場合は、代わりに **IronPython** を検索します。
+1. **HKEY_LOCAL_MACHINE\SOFTWARE\Python** または **HKEY_CURRENT_USER\SOFTWARE\Python** に移動します。 IronPython の場合は、代わりに **IronPython** を検索します。
 1. **Python Core** (CPython の場合) や **ContinuumAnalytics** (Anaconda の場合) など、ディストリビューションと一致するノードを展開します。 IronPython の場合は、バージョン番号のノードを展開します。
 1. **InstallPath** ノードの下の値を検査します。
 
@@ -270,7 +270,8 @@ Visual Studio で環境のレジストリ エントリが検出されたもの�
 
     - コンピューター上にまだ環境が存在する場合は、**ExecutablePath** の値を正しい場所に変更します。 また、必要に応じて、 **(Default)** と **WindowedExecutablePath** の値を修正します。
     - コンピューター上に環境が既に存在せず、 **[Python 環境]** ウィンドウから削除する場合は、上のイメージの **3.6** など、**InstallPath** の親ノードを削除します。
-
+    - **HKEY_CURRENT_USER\SOFTWARE\Python** の無効な設定で、**HKEY_LOCAL_MACHINE\SOFTWARE\Python** の設定が上書きされます
+    
 ## <a name="see-also"></a>関連項目
 
 - [Python インタープリターのインストール](installing-python-interpreters.md)

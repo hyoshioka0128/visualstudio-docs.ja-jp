@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276489"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114213"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio の機能を提案する
 
@@ -86,6 +86,13 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 **[終了 - 情報が不十分]** は、いくつかの試みの後でも、機能の提案を十分に理解するために必要な情報が得られなかったことを示します。 この段階ではさらなるアクションを実行することができないため、新しい機能の提案を終了する必要があります。
 
 探していた情報が見つかる場合があります。 追加情報がある場合は、チケットを再アクティブ化するよう要求することができます。
+
+- - -
+
+![開発者コミュニティの提案の [終了 - スコープ外] 状態](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**[終了 - スコープ外]** 提案が製品の全体的な方向性と一致しない場合は、"*スコープ外*" として閉じます。 たとえば、Visual Studio ファミリ製品の他のメンバーに同様の投資がある場合があります。 または、提案された機能は少数の人にのみ関連しているため、拡張機能を提供する方が適していることがあります。
+
 
 - - -
 

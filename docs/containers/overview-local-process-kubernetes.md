@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507886"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913262"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Local Process with Kubernetes のしくみ
 
@@ -47,6 +47,9 @@ Visual Studio で Local Process with Kubernetes を使用するには、*ASP.NET
 クラスターへの接続が確立された後、ユーザーは、コンテナー化を使用せずに、コンピューター上でネイティブにコードを実行してデバッグすることができ、コードではクラスターの残りの部分と直接対話できます。 リモート エージェントが受信するネットワーク トラフィックは、ネイティブに実行されているコードがそのトラフィックを受け入れて処理できるよう、接続時に指定されたローカル ポートにリダイレクトされます。 ご利用のクラスターにある環境変数、ボリューム、シークレットは、開発用コンピューター上で実行されているコードから利用できるようになります。 また、Local Process with Kubernetes によって開発用コンピューターに追加された hosts ファイルのエントリとポート転送により、コードでは、クラスター側のサービス名を使用して、クラスター上で実行されているサービスにネットワーク トラフィックを送信することができます。そのトラフィックは、クラスターで実行されているサービスに転送されます。 接続されている間は常に、開発用コンピューターとクラスターの間でトラフィックがルーティングされます。
 
 さらに、Local Process with Kubernetes には、`KubernetesLocalProcessConfig.yaml` ファイルを介して、開発コンピューター上のクラスター内のポッドで使用できる環境変数とマウントされたファイルをレプリケートする方法が用意されています。 このファイルを使用して、新しい環境変数やボリューム マウントを作成することもできます。
+
+> [!NOTE]
+> クラスターへの接続が行われている間 (それに加えて 15 分間)、Local Process with Kubernetes により、ローカル コンピューター上で管理者権限を使用して *EndpointManager* という名前のプロセスが実行されます。
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml を使用した追加の構成
 
@@ -92,7 +95,7 @@ Local Process with Kubernetes によって、Kubernetes クラスター上で Az
 
 ## <a name="diagnostics-and-logging"></a>診断とログ記録
 
-Local Process with Kubernetes を使用してクラスターに接続しているときは、クラスターからの診断ログが、開発用コンピューターの[一時ディレクトリ][azds-tmp-dir]に記録されます。
+Local Process with Kubernetes を使用してクラスターに接続しているときは、クラスターからの診断ログが、開発用コンピューターの *TEMP* ディレクトリの *Local Process with Kubernetes* フォルダーに記録されます。
 
 ## <a name="limitations"></a>制限事項
 

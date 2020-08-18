@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387045"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818587"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.6 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.7 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ IntelliCode に関する詳細については、ブログ投稿の「[Announcing
 
 ### <a name="code-cleanup"></a>コードのクリーンアップ
 
-新しいドキュメントの正常性インジケーターと組み合わされたのが、新しいコード クリーンアップ コマンドです。 この新しいコマンドを使用して、警告と提案を特定し、ボタンをクリックして両方を修正することができます。
+新しいドキュメントの正常性インジケーターと組み合わされたのが、新しいコード クリーンアップ コマンドです。 この新しいコマンドを使用して、警告と提案を特定し、シングル アクション (またはボタンのクリック) で両方を修正することができます。
 
 クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-code-cleanup.md)および [.editorconfig ファイル](create-portable-custom-editor-options.md)のいずれかの提案に従って、任意のコード修正が適用されます。
 
@@ -178,7 +178,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
    ![Visual Studio 2019 のデバッグ検索ウィンドウを示すアニメーション](media/vs-2019/debug-window-search.gif)
 
-また、ウォッチ、ローカル、自動変数のウィンドウに表示される値を書式設定することもできます。  任意のウィンドウ内でいずれかの項目をダブルクリックしてコンマ (",") を追加し、使用可能な書式指定子のドロップダウン リストにアクセスします。各書式指定子には、意図した効果の説明が含まれています。
+また、ウォッチ、ローカル、自動変数のウィンドウに表示される値を書式設定することもできます。 任意のウィンドウ内でいずれかの項目を選択 (またはダブルクリック) してコンマ (",") を追加し、使用可能な書式指定子のドロップダウン リストにアクセスします。各書式指定子には、意図した効果の説明が含まれています。
 
    ![Visual Studio 2019 の新しいウォッチ ウィンドウと値の書式設定機能](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
 Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。 今後のリリース予定の一覧については、[Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap)に関するページを参照してください。
 
-Visual Studio 2019 のその他の機能について詳細を知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap/)に関するページを参照してください。
+ここでは、現在作業中の新機能をいくつか紹介します。
+
+- **Visual Studio 2019 による Visual Studio Codespaces のサポート (プレビュー)**
+
+  これまで以上に、開発者は職場や自宅で複数のプロジェクトの作業を行っています。 新機能、バグ修正、PR レビュー、プロトタイプのすべてに時間が奪われ、一定のコンテキスト切り替えが必要です。 [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) が役に立ちます。 すべてをクラウド内で開発でき、プロジェクトごとに専用のカスタム環境を数秒で作成できます。 Visual Studio 2019 を使用すると、コードスペースに接続して、ローカル環境と同じように作業できます。
+
+  詳細については、「[Visual Studio Codespaces の概要](/visualstudio/codespaces/overview/what-is-vsonline/)」を参照してください。
+
+- **Visual Studio 2019 での Git エクスペリエンスの向上 (プレビュー)**
+
+   GitHub、Azure Repos、その他のリモート ホスティング サービスでコードの作業を行うときの生産性を向上させるため、Git エクスペリエンスの改良が繰り返されています。 1 回の操作 (またはクリック) で、Visual Studio 2019 内から初期化およびプッシュすることができます。 また、新しい分岐の作成、現在のブランチの管理、マージの競合の解決を行うこともできます。
+
+   詳細については、「[Visual Studio での Git エクスペリエンスに関する新しい更新プログラム](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)」ブログ記事を参照してください。
+
+プレビュー リリースの詳細および試したい場合のダウンロード リンクについては、「 **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** 」ページを参照してください。
 
 ## <a name="give-us-feedback"></a>フィードバックの送信
 

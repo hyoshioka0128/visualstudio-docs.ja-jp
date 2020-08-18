@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 105583486a9f1420f1670a16abcb28e8268b293d
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
+ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371795"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88286654"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio で FxCop アナライザーをインストールする
 
@@ -26,7 +26,7 @@ Microsoft は、従来の分析から最も重要な "FxCop" ルールを含む�
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コード分析のプロパティ] ページから直接[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージをインストールできます。
+Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コード分析のプロパティ] ページから直接 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージをインストールできます。
 
 1. **ソリューションエクスプローラー**でプロジェクトノードを右クリックし、[**プロパティ**] をクリックして、[**コード分析**] タブを選択します。
 
@@ -38,7 +38,7 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 
    ![ソリューションエクスプローラーのアナライザーノード](media/solution-explorer-analyzers-node.png)
 
-以前のバージョンの Visual Studio 2019 を使用している場合は、パッケージ[マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)のいずれかを使用してパッケージをインストールします。
+以前のバージョンの Visual Studio 2019 を使用している場合は、パッケージ [マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) または [パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)のいずれかを使用してパッケージをインストールします。
 
 ::: moniker-end
 
@@ -46,10 +46,10 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 
 1. 使用している Visual Studio のバージョンに基づいて、インストールする[アナライザーパッケージのバージョンを決定](#fxcopanalyzers-package-versions)します。
 
-2. パッケージ[マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)を使用して、Visual Studio にパッケージをインストールします。
+2. パッケージ [マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) または [パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)を使用して、Visual Studio にパッケージをインストールします。
 
    > [!NOTE]
-   > 各アナライザーパッケージの [nuget.org] ページには、**パッケージマネージャーコンソール**に貼り付けるコマンドが表示されます。 クリップボードにテキストをコピーするための便利なボタンもあります。
+   > 各アナライザーパッケージの [nuget.org] ページには、 **パッケージマネージャーコンソール**に貼り付けるコマンドが表示されます。 クリップボードにテキストをコピーするための便利なボタンもあります。
    >
    > ![パッケージマネージャーコンソールコマンドを示す NuGet.org ページ](media/nuget-package-manager-command.png)
 
@@ -64,7 +64,7 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 ![Visual Studio の [プロパティ] ページからカスタム FxCop アナライザーパッケージをインストールする](media/install-fxcop-properties-page-ellipsis.png)
 
 > [!TIP]
-> 使用している Visual Studio のバージョンに基づいて、インストールする[アナライザーパッケージのバージョン](#fxcopanalyzers-package-versions)を決定します。 パッケージ[マネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)からパッケージをインストールすることもできます。
+> 使用している Visual Studio のバージョンに基づいて、インストールする [アナライザーパッケージのバージョン](#fxcopanalyzers-package-versions) を決定します。 パッケージ [マネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)からパッケージをインストールすることもできます。
 
 ### <a name="fxcopanalyzers-package-versions"></a>FxCopAnalyzers パッケージのバージョン
 
@@ -73,7 +73,7 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 | Visual Studio のバージョン | FxCop アナライザーパッケージのバージョン |
 | - | - |
 | Visual Studio 2019 (すべてのバージョン) | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) | 
-| Visual Studio 2017 バージョン 15.9 | [2.9.9](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.9) |
+| Visual Studio 2017 バージョン 15.9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 バージョン15.5 から15.8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 バージョン15.3 から15.4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 バージョン15.0 から15.2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -85,18 +85,18 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 バージョン15.5 以降では、マネージプロジェクトのすべての FxCop アナライザーを含む[Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)拡張機能をインストールできます。
+Visual Studio 2017 バージョン15.5 以降では、マネージプロジェクトのすべての FxCop アナライザーを含む [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) 拡張機能をインストールできます。
 
-1. Visual Studio で、[**ツール**] [ > **拡張機能と更新プログラム**] を選択します。
+1. Visual Studio で、[ **ツール**] [ > **拡張機能と更新プログラム**] を選択します。
 
    **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
    > [!NOTE]
    > または、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)から拡張機能を直接ダウンロードします。
 
-2. 左側のウィンドウで [**オンライン**] を展開し、[ **Visual Studio Marketplace**] を選択します。
+2. 左側のウィンドウで [ **オンライン** ] を展開し、[ **Visual Studio Marketplace**] を選択します。
 
-3. 検索ボックスに「code analysis」と入力し、 **Microsoft Code analysis 2017**拡張機能を探します。
+3. 検索ボックスに「code analysis」と入力し、 **Microsoft Code analysis 2017** 拡張機能を探します。
 
    ![Microsoft Code Analysis 2017 拡張機能](media/extensions-and-updates-code-analysis.png)
 
@@ -106,22 +106,22 @@ Visual Studio 2017 バージョン15.5 以降では、マネージプロジェ�
 
 [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)拡張機能には、マネージプロジェクトのすべての FxCop アナライザーが含まれています。 この拡張機能をインストールするには:
 
-1. Visual Studio で、[**拡張**機能] [ > **拡張機能の管理**] を選択します。
+1. Visual Studio で、[ **拡張**機能] [ > **拡張機能の管理**] を選択します。
 
-   [**拡張機能の管理**] ダイアログボックスが表示されます。
+   [ **拡張機能の管理** ] ダイアログボックスが表示されます。
 
    > [!NOTE]
    > または、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)から拡張機能を直接ダウンロードします。
 
-2. 左側のウィンドウで [**オンライン**] を展開し、[ **Visual Studio Marketplace**] を選択します。
+2. 左側のウィンドウで [ **オンライン** ] を展開し、[ **Visual Studio Marketplace**] を選択します。
 
-3. 検索ボックスに「code analysis」と入力し、 **Microsoft Code analysis 2019**拡張機能を探します。
+3. 検索ボックスに「code analysis」と入力し、 **Microsoft Code analysis 2019** 拡張機能を探します。
 
    ![Microsoft Code Analysis 2019 拡張機能](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-4. **[Download]** を選択します。
+4. **[ダウンロード]** を選択します。
 
    拡張機能がダウンロードされます。
 
@@ -135,21 +135,21 @@ Visual Studio 2017 バージョン15.5 以降では、マネージプロジェ�
 
    ::: moniker-end
 
-6. [**変更**] を選択してインストールを開始します。
+6. [ **変更** ] を選択してインストールを開始します。
 
    1 ~ 2 分後にインストールが完了します。
 
-7. [**閉じる**] を選択し、もう一度 Visual Studio を開きます。
+7. [ **閉じる**] を選択し、もう一度 Visual Studio を開きます。
 
 ::: moniker range="vs-2017"
 
-拡張機能がインストールされているかどうかを確認する場合は、[**ツール**] [  >  **拡張機能と更新プログラム**] を選択します。 [**拡張機能と更新プログラム**] ダイアログボックスで、左側の [**インストール済み**] カテゴリを選択し、名前を指定して拡張機能を検索します。
+拡張機能がインストールされているかどうかを確認する場合は、[**ツール**] [  >  **拡張機能と更新プログラム**] を選択します。 [ **拡張機能と更新プログラム** ] ダイアログボックスで、左側の [ **インストール済み** ] カテゴリを選択し、名前を指定して拡張機能を検索します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-拡張機能がインストールされているかどうかを確認する場合は、[**拡張**機能] [  >  **拡張機能の管理**] を選択します。 [**拡張機能の管理**] ダイアログボックスで、左側の [**インストール済み**] カテゴリを選択し、名前を指定して拡張機能を検索します。
+拡張機能がインストールされているかどうかを確認する場合は、[**拡張**機能] [  >  **拡張機能の管理**] を選択します。 [ **拡張機能の管理** ] ダイアログボックスで、左側の [ **インストール済み** ] カテゴリを選択し、名前を指定して拡張機能を検索します。
 
 ::: moniker-end
 

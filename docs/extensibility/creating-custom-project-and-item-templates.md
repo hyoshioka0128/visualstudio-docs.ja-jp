@@ -1,5 +1,5 @@
 ---
-title: カスタムプロジェクトテンプレートと項目テンプレートを作成する |Microsoft Docs
+title: プロジェクトと項目のカスタム テンプレートの作成 | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
@@ -8,83 +8,83 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c702aaaa51d86e2b8aac18a6b55201be03a635f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
-ms.translationtype: MT
+ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903317"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248573"
 ---
-# <a name="create-custom-project-and-item-templates"></a>カスタムプロジェクトと項目テンプレートの作成
+# <a name="create-custom-project-and-item-templates"></a>プロジェクトと項目のカスタム テンプレートを作成する
 
-Visual Studio SDK には、カスタムプロジェクトテンプレートとカスタム項目テンプレートを作成するプロジェクトテンプレートが含まれています。 これらのテンプレートには、いくつかの一般的なパラメーターの置換や、zip ファイルとしてのビルドが含まれます。 これらは自動的には展開されず、実験用インスタンスでは使用できません。 生成された zip ファイルをユーザーテンプレートディレクトリにコピーする必要があります。
+Visual Studio SDK には、カスタム プロジェクト テンプレートとカスタム項目テンプレートを作成するプロジェクト テンプレートが含まれています。 これらのテンプレートには、いくつかの一般的なパラメーター置換や、zip ファイルとしてのビルドが含まれます。 自動的には展開されず、実験用インスタンスでは使用できません。 生成された zip ファイルをユーザー テンプレート ディレクトリにコピーする必要があります。
 
-テンプレート作成テンプレートを使用すると、より大きな拡張機能にテンプレートを含めることができます。 これにより、ソースファイルにバージョンコントロールを実装し、テンプレートプロジェクトのグループを1つの VSIX パッケージに組み込むことができます。
+テンプレート作成テンプレートを使用すると、より大きな拡張機能にテンプレートを含めることができます。 これにより、ソース ファイルにバージョン コントロールを実装し、テンプレート プロジェクトのグループを 1 つの VSIX パッケージに組み込むことができます。
 
-NuGet パッケージをインストールするようにテンプレートを構成することもできます。 詳細については、「 [Visual Studio テンプレートの NuGet パッケージ](/nuget/visual-studio-extensibility/visual-studio-templates)」を参照してください。
+NuGet パッケージをインストールするようにテンプレートを構成することもできます。 詳細については、[Visual Studio テンプレートの NuGet パッケージ](/nuget/visual-studio-extensibility/visual-studio-templates)に関する記事を参照してください。
 
-テンプレートの基本的な作成シナリオでは、圧縮ファイルに出力する**テンプレートのエクスポート**ウィザードを使用する必要があります。 基本的なテンプレート作成の詳細については、「[プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)」を参照してください。
+基本的なテンプレート作成シナリオでは、**エクスポート テンプレート** ウィザードを使用して、圧縮ファイルに出力します。 基本的なテンプレート作成の詳細については、[プロジェクトと項目のテンプレートの作成](../ide/creating-project-and-item-templates.md)に関する記事を参照してください。
 
 > [!NOTE]
-> Visual Studio 2017 以降では、カスタムプロジェクトと項目テンプレートのスキャンは実行されなくなりました。 代わりに、拡張機能は、これらのテンプレートのインストール場所を記述するテンプレートマニフェストファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新できます。 MSI を使用して拡張機能を展開する場合は、テンプレートマニフェストファイルを手動で生成する必要があります。 詳細については、「 [Visual Studio 2017 のカスタムプロジェクトおよび項目テンプレートのアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)」を参照してください。 テンプレートマニフェストスキーマは、「 [Visual Studio テンプレートマニフェストスキーマリファレンス](../extensibility/visual-studio-template-manifest-schema-reference.md)」に記載されています。
+> Visual Studio 2017 以降では、プロジェクトと項目のカスタム テンプレートのスキャンは実行されなくなりました。 代わりに、拡張機能で、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して VSIX 拡張機能を更新できます。 MSI を使用して拡張機能を展開する場合は、テンプレート マニフェスト ファイルを手動で生成する必要があります。 詳細については、[プロジェクトおよび項目のカスタム テンプレートの Visual Studio 2017 へのアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)に関する記事を参照してください。 テンプレート マニフェスト スキーマについては、「[Visual Studio テンプレート マニフェスト スキーマ リファレンス](../extensibility/visual-studio-template-manifest-schema-reference.md)」で説明されています。
 
 ## <a name="create-a-project-template"></a>プロジェクト テンプレートを作成する
 
-1. プロジェクトテンプレートプロジェクトを作成します。 [**新しいプロジェクト**] ダイアログで [プロジェクトテンプレート] を検索し、C# または Visual Basic バージョンのいずれかを選択することで、プロジェクトテンプレートを見つけることができます。
+1. プロジェクト テンプレート プロジェクトを作成します。 プロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログで「プロジェクト テンプレート」と検索し、C# または Visual Basic のバージョンを選択すると検索できます。
 
-     このテンプレートは、クラスファイル、アイコン、 *.vstemplate*ファイル、 *projecttemplate .Vbproj*または*projecttemplate .csproj*という名前の編集可能なプロジェクトファイル、および他の種類のプロジェクト (*リソース .resx*ファイル、 *AssemblyInfo*ファイル、および*設定*ファイルなど) によって通常生成されるファイルを生成します。 各コードファイルには、必要に応じて共通のパラメーター置換が含まれています。
+     このテンプレートでは、クラス ファイル、アイコン、 *.vstemplate* ファイル、*ProjectTemplate.vbproj* または *ProjectTemplate.csproj* という名前の編集可能なプロジェクト ファイル、そして通常は他のプロジェクトの種類によって生成されるファイル (*resources.resx* ファイル、*AssemblyInfo* ファイル、 *.settings* ファイルなど) が生成されます。 各コード ファイルには、必要に応じて一般的なパラメーター置換が含まれています。
 
-![プロジェクトテンプレートプロジェクトの選択](media/project-template-selection.png)
+![プロジェクト テンプレート プロジェクトの選択](media/project-template-selection.png)
 
-2. プロジェクトの必要に応じて、プロジェクトの項目を追加および削除します。 編集可能なプロジェクトファイル、 *AssemblyInfo*ファイル、または *.vstemplate*ファイルは削除しないでください。
+2. プロジェクトの必要に応じて、プロジェクトの項目を追加および削除します。 編集可能なプロジェクトファイル、*AssemblyInfo* ファイル、または *.vstemplate* ファイルは削除しないでください。
 
-3. 追加と削除を反映するように *.vstemplate*ファイルを更新します。 [プロジェクト](../extensibility/project-element-visual-studio-templates.md)要素には、テンプレートに含める各ファイルの[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)要素が含まれている必要があります。
+3. 追加と削除が反映されるように *.vstemplate* ファイルを更新します。 [Project](../extensibility/project-element-visual-studio-templates.md) 要素には、テンプレートに含める各ファイルの [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) 要素が含まれている必要があります。
 
-4. コードファイルやその他のユーザー向けコンテンツを変更し、適切なパラメーター置換を追加します。
+4. コード ファイルやその他のユーザー向けコンテンツを変更し、適切なパラメーター置換を追加します。
 
 5. 生成されたコンテンツを必要に応じて変更します。
 
 6. プロジェクトをビルドします。
 
-     テンプレートを含む *.zip*ファイルが Visual Studio によって作成されます。 これはデプロイされておらず、実験用インスタンスでは使用できません。
+     Visual Studio によって、テンプレートを含む *.zip* ファイルが作成されます。 これは展開されないため、実験用インスタンスでは使用できません。
 
 ## <a name="create-an-item-template"></a>項目テンプレートを作成する
 
-1. 項目テンプレートプロジェクトを作成します。
+1. 項目テンプレート プロジェクトを作成します。
 
-     このテンプレートは、クラスファイル、アイコン、 *.vstemplate*ファイル、および*AssemblyInfo*ファイルを生成します。 クラスファイルには、一般的なパラメーターの置換がいくつか含まれています。
+     このテンプレートでは、クラス ファイル、アイコン、 *.vstemplate* ファイル、および *AssemblyInfo* ファイルが生成されます。 クラス ファイルには、一般的なパラメーター置換がいくつか含まれています。
 
 2. プロジェクトの必要に応じて、プロジェクトの項目を追加および削除します。
 
-3. 追加と削除を反映するように *.vstemplate*ファイルを更新します。 [プロジェクト](../extensibility/project-element-visual-studio-templates.md)要素には、テンプレートに含める各ファイルの[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)要素が含まれている必要があります。
+3. 追加と削除が反映されるように *.vstemplate* ファイルを更新します。 [Project](../extensibility/project-element-visual-studio-templates.md) 要素には、テンプレートに含める各ファイルの [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) 要素が含まれている必要があります。
 
-4. コードファイルやその他のユーザー向けコンテンツを変更し、適切なパラメーター置換を追加します。
+4. コード ファイルやその他のユーザー向けコンテンツを変更し、適切なパラメーター置換を追加します。
 
 5. 生成されたコンテンツを必要に応じて変更します。
 
 6. プロジェクトをビルドします。
 
-     Visual Studio によって、テンプレートを含む圧縮ファイルが作成されます。 これはデプロイされておらず、実験用インスタンスでは使用できません。
+     Visual Studio によって、テンプレートを含む圧縮ファイルが作成されます。 これは展開されないため、実験用インスタンスでは使用できません。
 
 ## <a name="deployment"></a>デプロイ
 
 ### <a name="to-deploy-the-project-or-item-template"></a>プロジェクトまたは項目テンプレートを配置するには
 
-1. VSIX プロジェクトを作成する。 詳細については、「 [VSIX プロジェクトテンプレート](../extensibility/vsix-project-template.md)」を参照してください。
+1. VSIX プロジェクトを作成する。 詳細については、「[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)」を参照してください。
 
-2. VSIX プロジェクトをスタートアッププロジェクトとして設定します。 **ソリューションエクスプローラー**で、[VSIX プロジェクト] ノードを選択し、右クリックし**て [スタートアッププロジェクトに設定**] を選択します。
+2. VSIX プロジェクトをスタートアップ プロジェクトとして設定します。 **ソリューション エクスプローラー**で VSIX プロジェクト ノードを選択して長押し (または右クリック) し、 **[スタートアップ プロジェクトに設定]** を選びます。
 
-3. プロジェクトテンプレートプロジェクトを VSIX プロジェクトのアセットとして設定します。 *Source.extension.vsixmanifest*ファイルを開きます。 [**アセット**] タブにアクセスし、[**新規**] をクリックします。
+3. プロジェクト テンプレート プロジェクトを VSIX プロジェクトのアセットとして設定します。 *.vsixmanifest* ファイルを開きます。 **[アセット]** タブに移動して、 **[新規]** を選択します。
 
-    1. [**種類**] フィールドを**VisualStudio**または**VisualStudio**に設定します。
+    1. **[種類]** フィールドを **Microsoft.VisualStudio.ProjectTemplate** または **Microsoft.VisualStudio.ItemTemplate** に設定します。
 
-    2. [ソース] で、[**現在のソリューション内のプロジェクト**] オプションを選択し、テンプレートが含まれているプロジェクトを選択します。
+    2. ソースに、 **[現在のソリューション内のプロジェクト]** オプションを選択し、テンプレートが含まれているプロジェクトを選択します。
 
-4. ソリューションをビルドし、 **F5**キーを押します。 実験用インスタンスが表示されます。
+4. ソリューションをビルドして、**F5** キーを押します。 実験用インスタンスが表示されます。
 
-5. プロジェクトテンプレートプロジェクトの場合は、[**新しいプロジェクト**] ダイアログ ([**ファイル**] [  >  **新しい**  >  **プロジェクト**]) の [Visual C#] ノードまたは [Visual Basic] ノードにプロジェクトテンプレートが表示されます。 項目テンプレートプロジェクトの場合は、[**新しい項目の追加**] ダイアログボックスに項目テンプレートが表示されます。 [**新しい項目の追加**] ダイアログを表示するには、**ソリューションエクスプローラー**からプロジェクトノードを選択し、[新しい項目の**追加**] をクリックし  >  **New Item**ます。
+5. プロジェクト テンプレート プロジェクトの場合、 **[新しいプロジェクト]** ダイアログ ( **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** ) の Visual C# または Visual Basic ノードにプロジェクト テンプレートが一覧表示されます。 項目テンプレート プロジェクトの場合は、項目テンプレートが **[新しい項目の追加]** ダイアログに一覧表示されます。 **[新しい項目の追加]** ダイアログを表示するには、**ソリューション エクスプローラー**からプロジェクト ノードを選択し、 **[追加]**  >  **[新しい項目]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレートリファレンス](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート参照](../ide/creating-project-and-item-templates.md)
 - [Visual Studio テンプレートの NuGet パッケージ](/nuget/visual-studio-extensibility/visual-studio-templates)
