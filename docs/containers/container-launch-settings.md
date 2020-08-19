@@ -6,18 +6,19 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283334"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247982"
 ---
 # <a name="container-tools-launch-settings"></a>コンテナー ツールの起動設定
 
 ASP.NET Core プロジェクト内の "*プロパティ*" フォルダーでは、開発用コンピューター上で Web アプリを起動させる方法を制御する設定が含まれる launchSettings.json ファイルを検索できます。 ASP.NET 開発でのこのファイルの使用方法についての詳細は、「[ASP.NET Core で複数の環境を使用する](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2)」を参照してください。 *launchSettings.json* では、**Docker** セクションの設定は、Visual Studio でのコンテナー化されたアプリの処理方法に関連しています。
 
 ::: moniker range="vs-2017"
+
 ```json
     "Docker": {
       "commandName": "Docker",

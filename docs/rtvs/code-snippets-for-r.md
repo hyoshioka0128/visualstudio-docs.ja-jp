@@ -8,14 +8,14 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969453"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238726"
 ---
-# <a name="code-snippets"></a>コード スニペット
+# <a name="code-snippets-for-r"></a>R のコード スニペット
 
 Visual Studio のコード スニペットでは、任意の長さのコード ブロックをすばやく挿入するショートカットが提供され、似たコードを何度も再入力しなくて済みます。 R Tools for Visual Studio (RTVS) では、多くの便利な R スニペットが Visual Studio のコレクションに追加されます。
 

@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Visual Studio + GitHub Enterprise オファーでのサブスクリプションの管理
-ms.openlocfilehash: d7100c2b9cfdd12579419927fd0bf8885038048b
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509006"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249831"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise を使用して Visual Studio サブスクリプションを管理する
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
@@ -46,8 +46,8 @@ GitHub.com の管理の詳細については、[GitHub ヘルプ](https://help.g
 + [ヘルプ トピックの完全な一覧](https://help.github.com/en)
 + [組織内のメンバーシップの管理](https://help.github.com/en/articles/managing-membership-in-your-organization)
 + [組織参加へのユーザーの招待](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-    - [チーム/組織からのユーザーの削除](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-    - [組織の以前のメンバーの回復](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
+  - [チーム/組織からのユーザーの削除](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+  - [組織の以前のメンバーの回復](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
 + [ロールを使用したアクセスの管理](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
 + [チームへのユーザーの編成](https://help.github.com/en/articles/organizing-members-into-teams)
 + [組織のリポジトリへのアクセスの管理](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
@@ -57,15 +57,16 @@ GitHub ヘルプでは、組織における GitHub Enterprise Server の実装�
 
 + [すべての管理者ガイドの表示](https://help.github.com/en/enterprise/2.16/admin)
 + [ユーザー管理](https://help.github.com/en/enterprise/2.16/admin/user-management)
-    - [組織とチーム](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-        - [組織の作成](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-        - [チームの作成](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-        - [チームへのユーザーの追加](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-        - [チームおよび組織からのユーザーの削除](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-    - [ユーザー セキュリティ](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
+  - [組織とチーム](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+    - [組織の作成](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+    - [チームの作成](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+    - [チームへのユーザーの追加](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+    - [チームおよび組織からのユーザーの削除](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+  - [ユーザー セキュリティ](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 + [GitHub Enterprise Server のインストールと構成](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>サポート リソース
+
 - [GitHub ヘルプ](https://help.github.com/en)で、GitHub のさまざまなトピックに関する質問への回答を確認できます。
 - [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
@@ -73,12 +74,14 @@ GitHub ヘルプでは、組織における GitHub Enterprise Server の実装�
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
 ## <a name="see-also"></a>関連項目
+
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
 - [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
 - [Azure ドキュメント](https://docs.microsoft.com/azure/)
 - [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
+
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
 - [個別のサブスクリプションの割り当て](assign-license.md)
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)
@@ -87,5 +90,3 @@ Visual Studio サブスクリプションの管理に関する詳細情報をご
 - [最大使用量の確認](maximum-usage.md)
 
 Visual Studio Subscriptions with GitHub Enterprise の管理の詳細については、Visual Studio の[サブスクリプション管理ポータル](https://visualstudio.microsoft.com/subscriptions-administration/)をご覧ください。
-
-

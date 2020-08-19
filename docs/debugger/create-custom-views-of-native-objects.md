@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5720511c15526a54a82018b2079b91aaf5dd6430
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350707"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248050"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Natvis フレームワークを使用してデバッガーで C++ オブジェクトのカスタム ビューを作成する
 
@@ -99,6 +99,7 @@ Visual Studio デバッガーによって、 *.natvis* ファイルが C++ プ�
 VSIX パッケージで *.natvis* ファイルをインストールして登録することができます。 インストールされている場所に関係なく、登録されているすべての *.natvis* ファイルがデバッグ時に自動的に取得されます。
 
 1. VSIX パッケージに *.natvis* ファイルを含めます。 たとえば、次のようなプロジェクト ファイルがあるとします。
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
@@ -109,6 +110,7 @@ VSIX パッケージで *.natvis* ファイルをインストールして登録�
    ```
 
 2. *source.extension.vsixmanifest* ファイルで *.natvis* ファイルを登録します。
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
@@ -702,7 +704,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
  `CustomVisualizer` 要素では、`Condition`、`IncludeView`、および `ExcludeView` 属性を使用できます。
 
- ## <a name="limitations"></a>制限事項
+## <a name="limitations"></a>制限事項
 
 Natvis のカスタマイズは、クラスと構造体では機能しますが、typedef では使用できません。
 

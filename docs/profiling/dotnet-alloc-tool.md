@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ec98f8d17465e95369eb6e2ecd88051f8daa59
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330446"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247791"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>.NET オブジェクト割り当てツールを使用してメモリ使用量を分析する
 
@@ -118,11 +118,11 @@ ms.locfileid: "85330446"
 - **[名前]** 列には、最上位レベルのノードとしてプロセスが表示されます。 プロセスの下にモジュールがあり、モジュールの下に関数があります。
 - これらの列には、 **[割り当て]** および **[呼び出しツリー]** ビューと同じ情報が表示されます。
 
-   - **合計 (割り当て)**
-   - **自己 (割り当て)**
-   - **合計サイズ (バイト)**
-   - **自己サイズ (バイト)**
-   - **平均サイズ (バイト)**
+  - **合計 (割り当て)**
+  - **自己 (割り当て)**
+  - **合計サイズ (バイト)**
+  - **自己サイズ (バイト)**
+  - **平均サイズ (バイト)**
 
 ### <a name="collection"></a>コレクション
 
