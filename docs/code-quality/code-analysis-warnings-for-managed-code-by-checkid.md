@@ -288,18 +288,19 @@ f1_keywords:
 - CA5122
 - CA5374
 - IL3000
+- IL3001
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 040df1edf85f2879cd2666e79768e76969464522
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: daaf6854b56b31419408691c27af245c4001ea42
+ms.sourcegitcommit: 328ab0d8e5770f1067e37dcc266c2b50ea07783c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214605"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88612878"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
 
@@ -375,7 +376,7 @@ ms.locfileid: "88214605"
 | CA1070 | [CA1070: イベント フィールドを virtual として宣言しません](../code-quality/ca1070.md) | [フィールドに似たイベント](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)が virtual として宣言されました。 |
 | CA1200 | [CA1200:プレフィックスで cref タグを使用しません](../code-quality/ca1200.md) | XML ドキュメントタグの [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 属性は、"コード参照" を意味します。 タグの内部テキストが、型、メソッド、プロパティなど、コード要素であることを指定します。 プレフィックスでタグを使用するのは避けて `cref` ください。これにより、コンパイラが参照を検証できなくなります。 また、Visual Studio 統合開発環境 (IDE: integrated development environment) が、リファクタリング中にこれらのシンボル参照を検索および更新できないようにします。 |
 | CA1300 | [CA1300:MessageBoxOption を指定します](../code-quality/ca1300.md) | テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。 |
-| CA1301 | [CA1301:重複するアクセラレータを使用しません](../code-quality/ca1301.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールが重複するアクセスキーを持っている場合、アクセスキーの動作は適切に定義されていません。 |
+| CA1301 | [CA1301:重複するアクセラレータを使用しません](../code-quality/ca1301.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 アクセス キーの重複したコントロールがあると、アクセス キーの動作は不明確になります。 |
 | CA1302 | [CA1302:ロケール特有の文字列をハードコードしません](../code-quality/ca1302.md) | System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 Environment.GetFolderPath メソッドは、Environment.SpecialFolder 列挙体に関連付けられ、ローカライズされ、現在実行されているコンピューターに適切な位置を返します。 |
 | CA1303 | [CA1303:ローカライズされるパラメーターとしてリテラルを渡さない](../code-quality/ca1303.md) | 外部から参照できるメソッドは、.NET コンストラクターまたはメソッドにパラメーターとして文字列リテラルを渡し、その文字列はローカライズ可能である必要があります。 |
 | CA1304 | [CA1304:CultureInfo を指定します](../code-quality/ca1304.md) | System.Globalization.CultureInfo パラメーターを受け入れるオーバーロードを持つメンバーを呼び出しているメソッドまたはコンストラクターが、CultureInfo パラメーターを使用するオーバーロードを呼び出していません。 CultureInfo オブジェクトまたは System.IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。 |
@@ -606,4 +607,5 @@ ms.locfileid: "88214605"
 | CA5400 | [CA5400 HttpClient 証明書失効リストの確認が無効になっていないことを確認します。](../code-quality/ca5400.md) | 失効した証明書は信頼されていません。 攻撃者が悪意のあるデータを渡すか、または HTTPS 通信で機微なデータを盗むために使用される可能性があります。 |
 | CA5401 | [CA5401 既定以外の IV で CreateEncryptor 機能を使用しない](../code-quality/ca5401.md) | 対称暗号化では、ディクショナリ攻撃を防ぐために、常に反復不可能な初期化ベクターを使用する必要があります。 |
 | CA5402 | [CA5402 既定の IV で CreateEncryptor 機能を使用する](../code-quality/ca5402.md) | 対称暗号化では、ディクショナリ攻撃を防ぐために、常に反復不可能な初期化ベクターを使用する必要があります。 |
-| IL3000 | [IL3000 単一ファイルとして発行するときに、アセンブリファイルパスへのアクセスを使用しない](../code-quality/il3000.md) | 単一ファイルとして発行するときにアセンブリファイルパスへのアクセスを使用しない |
+| IL3000 | [IL3000 1 つのファイルとして発行するときにアセンブリファイルパスにアクセスしない](../code-quality/il3000.md) | 1つのファイルとして発行するときにアセンブリファイルパスへのアクセスを使用しない |
+| IL3001 | [IL3001 を単一ファイルとして発行するときにアセンブリファイルパスにアクセスしないようにする](../code-quality/il3001.md) | 単一ファイルとして発行するときにアセンブリファイルパスにアクセスしない |
