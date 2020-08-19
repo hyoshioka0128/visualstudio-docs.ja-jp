@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286831"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144689"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>DevOps でラボ環境を使用する
 
@@ -34,9 +34,14 @@ ms.locfileid: "85286831"
 |![クラウドのラボ環境](../media/topology_cloud.png)| このラボ環境は、_サーバー トポロジ_と同様に機能します。ローカルで物理または仮想マシンを実行する必要がないため、設定に費やす時間を減らせ、メンテナンスが簡単になり、コストを抑えことができます。 Microsoft Azure などのクラウド環境には、複数の Web サイトや仮想マシンをカスタム ネットワークで早く簡単に構成できます。|
 |![クライアント サーバーのラボ環境](../media/topology_clientserver.png)| このラボ環境は、*クライアント/サーバー トポロジ*を備えています。これはサーバーとクライアントのコンポーネントを備えたアプリケーションをテストするために、よく使用されます。 クライアント/サーバー トポロジでは、アプリケーションのテストに使用されるクライアントとサーバーのすべてのコンピューターはラボ環境内にあります。 このトポロジを使用すると、テストに影響を与える各コンピューターからテスト データを収集することができます。|
 
-| | |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../../install/media/video-icon.png) | テスト用のラボ環境の管理に関する[ビデオを視聴します](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)。 |
+:::row:::
+    :::column:::
+        ![ビデオのムービー カメラ アイコン](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        テスト用のラボ環境の管理に関する[ビデオを視聴します](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)。
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Azure Pipelines や Team Foundation Server ビルドとリリースをクラウドと共に使用する
 

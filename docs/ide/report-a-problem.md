@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
-ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
+ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87330961"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584503"
 ---
 # <a name="report-a-problem-states-and-faq"></a>問題を報告する:状態とよくあるご質問
 
@@ -52,7 +52,7 @@ Visual Studio 開発者コミュニティは、問題の報告ツールを使用
 
 ![開発者コミュニティでの問題報告の "さらに情報が必要です" 状態](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**[さらに情報が必要です]** は、調査を進めるには、お客様からさらに診断情報が必要であることを示します。  [詳細情報の要求への応答方法についてはこちらをご覧ください](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)。
+**[さらに情報が必要です]** は、調査を進めるには、お客様からさらに診断情報が必要であることを示します。  [詳細情報の要求への応答方法についてはこちらをご覧ください](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)。
 
 - - -
 

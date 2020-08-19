@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d223d6e1e6ed3bf4b75b1c66bcc0f9dc897cfed
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434317"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247634"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 企業向けガイド
 お客様の会社で Visual Studio の利用を開始するときに時間を節約したい場合は、ここから開始してください。 この企業向けガイドには、一般的な企業シナリオにおいて Visual Studio をインストールおよび更新したり、問題が発生した場合にブロックを解除したり、さらにヘルプが必要な場合に問題を報告する方法を把握したりするためのヒントが含まれています。 
@@ -70,6 +70,3 @@ Visual Studio を正常に更新し、更新に関する問題を修正する方
 ## <a name="see-also"></a>関連項目 
 
 - [Visual Studio の生産性に関するガイド](../ide/productivity-features.md)
-
-
-

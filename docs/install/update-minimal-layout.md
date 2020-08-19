@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869906"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168750"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>最小限のオフライン レイアウトを使用して Visual Studio を更新する
 
@@ -56,12 +56,13 @@ ms.locfileid: "86869906"
 #### <a name="commands"></a>コマンド
 * **プレビュー**: このコマンドを使用すると、ダウンロードされるパッケージの数と、このレイアウトの作成に使用される領域の合計をプレビューできます。 
 * **生成**: このコマンドを使用すると、Visual Studio を更新するための最小限のレイアウトを生成できます。
-* **Regenerate**: このコマンドでは、既存の最小限のレイアウトの応答ファイルを使用してレイアウトを再生成できます。 すべての最小限のレイアウトで、`MinimalLayout.json` 応答ファイルが生成されます。これには、元々の最小限のレイアウトの入力パラメーターが含まれます。 **Regenerate** コマンドと `MinimalLayout.json` 応答ファイルを使用することで、最小限のレイアウトを再生成することができます。 これは、Visual Studio の新しい更新プログラムのための最小限のレイアウトを、以前の最小限のレイアウトの応答ファイルに基づいて作成する場合に便利です。 
-   - このコマンドでは、既に生成されたレイアウトからの `MinimalLayout.json` ファイル パスが必要です。 
+* **Regenerate**: このコマンドでは、既存の最小限のレイアウトの応答ファイルを使用してレイアウトを再生成できます。 すべての最小限のレイアウトで、`MinimalLayout.json` 応答ファイルが生成されます。これには、元々の最小限のレイアウトの入力パラメーターが含まれます。 **Regenerate** コマンドと `MinimalLayout.json` 応答ファイルを使用することで、最小限のレイアウトを再生成することができます。 これは、Visual Studio の新しい更新プログラムのための最小限のレイアウトを、以前の最小限のレイアウトの応答ファイルに基づいて作成する場合に便利です。
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   このコマンドでは、既に生成されたレイアウトからの `MinimalLayout.json` ファイル パスが必要です。 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Verify**: このコマンドを使用すると、レイアウト フォルダーが破損しているかどうかを確認できます。
 * **解決策**:このコマンドを使用すると、レイアウト フォルダーで欠落しているパッケージを置き換えるなど、破損したレイアウト フォルダーを修正できます。
