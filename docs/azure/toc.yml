@@ -17,12 +17,22 @@
 - name: Azure サービスに接続する
   expanded: false
   items:
-    - name: Azure ストレージを追加する
-      href: vs-azure-tools-connected-services-storage.md
-    - name: Azure Key Vault を追加する
-      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Azure Active Directory (AD) を追加する
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Azure App Insights を追加する
+      href: azure-app-insights-add-connected-service.md
+    - name: Azure Cache for Redis を追加する
+      href: azure-cache-for-redis-add-connected-service.md
+    - name: Azure CosmosDB を追加する
+      href: azure-cosmosdb-add-connected-service.md
+    - name: Azure Key Vault を追加する
+      href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Azure SignalR を追加する
+      href: azure-signalr-add-connected-service.md
+    - name: Azure SQL Database を追加する
+      href: azure-sql-database-add-connected-service.md
+    - name: Azure Storage を追加する
+      href: vs-azure-tools-connected-services-storage.md
 - name: Azure Cloud Services 開発
   expanded: false
   items:
