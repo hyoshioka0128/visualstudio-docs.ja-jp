@@ -1,5 +1,5 @@
 ---
-title: FxCop analyzer の構成オプション
+title: .NET code quality analyzer の構成オプション
 ms.date: 09/23/2019
 ms.topic: reference
 author: mikejo5000
@@ -7,21 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6b56bec2174ca71cc66f5424b7bdc309330d95
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248800"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706569"
 ---
-# <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop アナライザーの規則のスコープオプション
+# <a name="rule-scope-options-for-net-code-quality-analyzers"></a>.NET コード品質アナライザーの規則スコープオプション
 
-一部の FxCop analyzer ルールでは、コードベースのどの部分を適用すべきかを調整できます。 このページには、使用可能なスコープ構成オプション、許容される値、および適用できるルールが一覧表示されます。 これらのオプションを使用するには、 [Editorconfig ファイル](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)で指定します。
-
-これらの構成オプションは、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージのバージョン2.6.3 以降で使用できます。
+.NET code quality analyzer のいくつかのルールを使用すると、コードベースのどの部分を適用する必要があるかを絞り込むことができます。 このページには、使用可能なスコープ構成オプション、許容される値、および適用できるルールが一覧表示されます。 これらのオプションを使用するには、 [Editorconfig ファイル](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)で指定します。
 
 > [!TIP]
-> FxCopAnalyzers パッケージの特定のバージョンで使用できるすべてのオプションの一覧を表示するには、パッケージの*documentation*フォルダーにある*Analyzer Configuration.md*ファイルを参照してください。 ファイルは *% USERPROFILE% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \ \\ \<version\> Configuration.md*にあります。 この構成ドキュメントファイルは、バージョン2.6.5 以降では、パッケージの各バージョンに含まれています。 次に、 *Analyzer Configuration.md* ファイルでオプションを記述する方法の例を示します。
+> 使用可能なオプションの完全な一覧については、この [Analyzer Configuration.md ファイル](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)を参照してください。 次に、 *Analyzer Configuration.md* ファイルでオプションを記述する方法の例を示します。
 >
 > オプション名: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > オプション値: 整数値 \

@@ -11,26 +11,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250542"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706517"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
 コードメトリックスデータは、次の3つの方法で生成できます。
 
-- [FxCop アナライザー](#fxcop-analyzers-code-metrics-rules)をインストールし、それに含まれる4つのコードメトリックス (保守性) ルールを有効にします。
+- [.Net コード品質アナライザー](#net-code-quality-analyzers-code-metrics-rules)を有効にし、含まれている4つのコードメトリックス (保守性) ルールを有効にする。
 
 - Visual Studio 内[**の [**  >  **コードメトリックスの計算**](#calculate-code-metrics-menu-command) ] メニューコマンドを選択します。
 
 - C# および Visual Basic プロジェクトの場合は、 [コマンドライン](#command-line-code-metrics) から実行します。
 
-## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop アナライザーのコードメトリックス規則
+## <a name="net-code-quality-analyzers-code-metrics-rules"></a>.NET コード品質アナライザーのコードメトリックス規則
 
-[FxCopAnalyzers NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)には、いくつかのコードメトリックス[アナライザー](roslyn-analyzers-overview.md)の規則が含まれています。
+.NET コード品質アナライザーには、いくつかのコードメトリックス [アナライザー](roslyn-analyzers-overview.md) の規則が含まれています。
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
@@ -50,7 +50,7 @@ ms.locfileid: "88250542"
 
 ### <a name="configuration"></a>構成
 
-FxCop アナライザーパッケージのコードメトリックスルールが起動するしきい値を構成できます。
+コードメトリックスルールが起動されるしきい値を構成できます。
 
 1. テキスト ファイルを作成します。 例として、 *CodeMetricsConfig.txt*という名前を付けます。
 
