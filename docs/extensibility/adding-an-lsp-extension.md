@@ -37,7 +37,7 @@ LSP の目的と Visual Studio でのサポートは、Visual Studio 製品の�
 
 プロトコル自体の詳細については、こちらのドキュメントを参照[してください](https://github.com/Microsoft/language-server-protocol)。
 
-サンプル言語サーバーを作成する方法、または既存の言語サーバーを Visual Studio コードに統合する方法の詳細については、[こちら](https://code.visualstudio.com/docs/extensions/example-language-server)のドキュメントを参照してください。
+サンプル言語サーバーを作成する方法、または既存の言語サーバーを Visual Studio Code に統合する方法の詳細については、[こちら](https://code.visualstudio.com/docs/extensions/example-language-server)のドキュメントを参照してください。
 
 ## <a name="language-server-protocol-supported-features"></a>言語サーバー プロトコルでサポートされる機能
 
@@ -302,7 +302,7 @@ LSP 言語サービス拡張機能に設定のサポートを追加するには�
 
 2. JSON ファイルを右クリックし、[**プロパティ ]** を選択します。 **ビルド**アクションを "コンテンツ" に変更し、"VSIX に含める" プロパティを**true**に変更します。
 
-3. 構成セクションを実装し、JSON ファイルで定義されている設定のプレフィックスの一覧を返します (Visual Studio コードでは、これは package.json の構成セクション名にマップされます)。
+3. 構成セクションを実装し、JSON ファイルで定義されている設定のプレフィックスの一覧を返します (Visual Studio Code では、これは package.json の構成セクション名にマップされます)。
 
     ```csharp
     public IEnumerable<string> ConfigurationSections
