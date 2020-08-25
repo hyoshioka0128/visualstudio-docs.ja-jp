@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 04895e3dd72a7cb4f0373c970db0f12582506ef9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285557"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507987"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>64 ビット プロセスとして単体テストを実行する
 
@@ -30,7 +30,7 @@ ms.locfileid: "85285557"
    ::: moniker-end
 
     > [!TIP]
-    > 柔軟性を最大限に高めるには、テスト プロジェクトを**任意の CPU** 構成でコンパイルします。 これにより、32 ビット エージェントと 64 ビット エージェントの両方で実行できます。 **64 ビット**構成でテスト プロジェクトをコンパイルしても、特に利点はありません。
+    > 柔軟性を最大限に高めるには、テスト プロジェクトを**任意の CPU** 構成でコンパイルします。 これにより、32 ビット エージェントと 64 ビット エージェントの両方で実行できます。 64 ビットでのみサポートされているコードを呼び出さない限り、**64 ビット**でテスト プロジェクトをコンパイルすることには利点がありません。
 
 2. 64 ビット プロセスとして実行されるように単体テストを設定します。
 

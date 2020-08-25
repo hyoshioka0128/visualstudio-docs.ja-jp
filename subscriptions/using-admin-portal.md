@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902945"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249859"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 
@@ -42,7 +42,7 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 
 ページの左上には、選択すると、サブスクリプション割り当ての概要、契約の詳細、および最大使用量レポートが表示されるアイコンがいくつかあります。
 
-購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報を表示するには、上部にあるアイコンをクリックしてスライド式のパネルを有効にします。
+購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報を表示するには、上部にあるアイコンを選択してスライド式のパネルを有効にします。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクリプションの管理ポータルのサブスクライバー ページ](_img/using-admin-portal/subscribers-page.png)
 

@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d6d519483b350f2c1086c76bc17522b71a435fe9
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81389949"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88186322"
 ---
 Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
 
@@ -42,27 +42,27 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 *Dockerfile* (Docker の最終イメージを作成するためのレシピ) は、プロジェクトで作成されます。 その中に含まれるコマンドの詳細については、「[Dockerfile reference](https://docs.docker.com/engine/reference/builder/)」 (Dockerfile リファレンス) を参照してください。
 
-```
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim AS base
+```dockerfile
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk-stretch AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
 WORKDIR /src
-COPY ["HelloDockerTools/HelloDockerTools.csproj", "HelloDockerTools/"]
-RUN dotnet restore "HelloDockerTools/HelloDockerTools.csproj"
+COPY ["WebApplication1/WebApplication1.csproj", "WebApplication1/"]
+RUN dotnet restore "WebApplication1/WebApplication1.csproj"
 COPY . .
-WORKDIR "/src/HelloDockerTools"
-RUN dotnet build "HelloDockerTools.csproj" -c Release -o /app
+WORKDIR "/src/WebApplication1"
+RUN dotnet build "WebApplication1.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "HelloDockerTools.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication1.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
 前の *Dockerfile* は、[microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) イメージに基づいており、プロジェクトをビルドしてコンテナーに追加することで基本イメージを変更するための手順が含まれています。 .NET Framework を使用している場合、基本イメージは異なります。
@@ -98,8 +98,14 @@ IDE の [検索] ボックスを使用して (**Ctrl**+**Q** を押して使用)
 
 1. 構成ドロップダウンを **[リリース]** に変更し、アプリを構築します。
 1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
-1. 発行先ダイアログで **[コンテナー レジストリ]** タブを選択します。
-1. **[新しい Azure コンテナー レジストリを作成する]** を選択し、 **[発行]** をクリックします。
+1. **[発行]** ダイアログで **[Docker コンテナー レジストリ]** タブを選択します。
+
+   ![発行ダイアログのスクリーンショット - [Docker コンテナー レジストリ] を選択する](../../media/container-tools/vs-2019/docker-container-registry.png)
+
+1. **[新しい Azure Container Registry を作成する]** を選択します。
+
+   ![発行ダイアログのスクリーンショット - [新しい Azure Container Registry を作成する] を選択する](../../media/container-tools/vs-2019/select-existing-or-create-new-azure-container-registry.png)
+
 1. **[新しい Azure コンテナー レジストリを作成する]** で、目的の値を入力します。
 
     | 設定      | 推奨値  | 説明                                |
@@ -112,9 +118,13 @@ IDE の [検索] ボックスを使用して (**Ctrl**+**Q** を押して使用)
 
     ![Visual Studio の Azure コンテナー レジストリを作成するダイアログ][0]
 
-1. **[作成]**
+1. **[作成]** をクリックします。 これで **[発行]** ダイアログに作成したレジストリが表示されます。
 
-   ![発行の成功を示すスクリーンショット](../../media/container-tools/publish-succeeded.png)
+   ![発行ダイアログのスクリーンショット。作成した Azure Container Registry を確認できます](../../media/container-tools/vs-2019/created-azure-container-registry.png)
+
+1. **[完了]** を選択し、Azure で新しく作成したレジストリにコンテナー イメージを発行するプロセスを完了します。
+
+   ![発行の成功を示すスクリーンショット](../../media/container-tools/vs-2019/publish-succeeded.png)
 
 ## <a name="next-steps"></a>次の手順
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 19eca9747fa4e9ef80f7de05799a2cee685ce821
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285523"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248029"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 
@@ -39,7 +39,7 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
     ![発行先を選択する](../deployment/media/quickstart-publish-azure-new.png)
 
-1. [Azure App Service (Windows)]、 **[次へ]** の順に選択します。
+1. **[Azure App Service (Windows)]** 、 **[次へ]** の順に選択します。
 
     ![Azure App Service on Linux を選択する](../deployment/media/quickstart-publish-windows-select-azure-service.png)
 

@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902865"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250727"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションを管理する
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。
@@ -29,7 +29,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 6. **[アクセス許可]** を選びます。
 7. **[Visual Studio サブスクリプション]** を選びます (注: 保留中の Visual Studio サブスクリプションの更新プログラム)
 8. 目的の**個人**を選びます。
-9. **[送信]** をクリックします。
+9. **[送信]** を選択します
 10. 選択された個人が電子メールを受信します。
 11. 割り当てられているユーザーが、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にアクセスしてサインインします。
 12. 次を含む Visual Studio プロファイル ページが表示されます。
@@ -43,7 +43,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 2. **[アクセス許可]** を選びます。
 3. **[MSDN サブスクリプション]** を選びます (注: これは近々 "Visual Studio サブスクリプション" に変更されます)。
 4. 目的の**個人**を見つけます。
-5. **[送信]** をクリックします。
+5. **[送信]** を選択します
 6. 選択された個人が電子メールを受信します。
 7. 割り当てられているユーザーが、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にアクセスしてサインインします。
 8. Visual Studio プロファイル ページが表示される場合があります。

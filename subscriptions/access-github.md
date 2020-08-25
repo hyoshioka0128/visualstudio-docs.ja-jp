@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: 新しい Visual Studio + GitHub オファーの詳細情報
-ms.openlocfilehash: d2d4e3d3bef5b4e9c6f7cb4ba93f8b62cc13275a
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232785"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248184"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の概要  
 
@@ -66,7 +66,7 @@ GitHub を初めて使用する場合に役立つ可能性のある、いくつ�
 A: GitHub サブスクリプションの設定プロセスには、しばらく時間がかかることがあります。  待っていても何も通知がない場合は、GitHub 管理者に連絡することをお勧めします。  管理者がまだ対処中であるか、またはお客様に GitHub サブスクリプションを割り当てないことを決定した可能性があります。 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Q:GitHub 管理者にアクセスするには、どうすればよいですか?
-A: GitHub Enterprise Server を使用している場合は、クライアントの下部に表示されている **[サポート]** リンクをクリックすると、管理者に接続されます。
+A: GitHub Enterprise Server を使用している場合は、クライアントの下部に表示されている **[サポート]** リンクを選択すると、管理者に接続されます。
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Q:入手できるのは、完全な Visual Studio サブスクリプション (Professional または Enterprise) ですか? または、このサービスを含む IDE のみですか?
 A: GitHub Enterprise サブスクリプションと共に、完全な Visual Studio サブスクリプションを受け取ります。  サブスクリプションを個別に購入した場合と同様に、これらのサブスクリプションに含まれるソフトウェア ダウンロード、クラウド サービス、テクニカル サポート、パートナー特典などのすべてのメリットが得られます。

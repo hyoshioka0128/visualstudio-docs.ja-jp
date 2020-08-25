@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: ClickOnce アンマネージ API リファレンス
           href: clickonce-unmanaged-api-reference.md
+    - name: Visual Studio Installer Projects リファレンス
+      items:
+        - name: Visual Studio Installer Projects 拡張機能 と .NET Core 3.1
+          href: installer-projects-net-core.md
