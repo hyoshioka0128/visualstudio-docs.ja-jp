@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286654"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800971"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio で FxCop アナライザーをインストールする
 
@@ -28,7 +28,7 @@ Microsoft は、従来の分析から最も重要な "FxCop" ルールを含む�
 
 Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コード分析のプロパティ] ページから直接 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージをインストールできます。
 
-1. **ソリューションエクスプローラー**でプロジェクトノードを右クリックし、[**プロパティ**] をクリックして、[**コード分析**] タブを選択します。
+1. **ソリューションエクスプローラー**のプロジェクトノードで右クリック (または選択して保持) し、[**プロパティ**] をクリックして、[**コード分析**] タブにアクセスします。
 
    ![Visual Studio の [プロパティ] ページから FxCop アナライザーパッケージをインストールする](media/install-fxcop-properties-page.png)
 
@@ -59,7 +59,7 @@ Visual Studio 2019 バージョン16.3 以降では、プロジェクトの [コ
 
 ### <a name="custom-installation"></a>カスタム インストール
 
-カスタムインストールの場合、たとえば、別のバージョンのパッケージを指定する場合は、プロジェクトの [コード分析のプロパティ] ページで省略記号 (...) ボタンを選択します。 このボタンをクリックすると、NuGet パッケージマネージャーが検索文字列として "FxCopAnalyzers" と共に開きます。
+カスタムインストールの場合、たとえば、別のバージョンのパッケージを指定するには、プロジェクトの [コード分析のプロパティ] ページで省略記号 (...) ボタンを選択します。 このボタンをクリックすると、NuGet パッケージマネージャーが検索文字列として "FxCopAnalyzers" と共に開きます。
 
 ![Visual Studio の [プロパティ] ページからカスタム FxCop アナライザーパッケージをインストールする](media/install-fxcop-properties-page-ellipsis.png)
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: d70f2038881cd422b9c5a1015c4f88a49f2a3c9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280584"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800373"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express を使用したローカル コンピューターでの Azure クラウド サービスの実行とデバッグ
 Emulator Express を使用することにより、管理者として Visual Studio を実行せずに、クラウド サービスをテストおよびデバッグできます。 クラウド サービスの要件に応じて、Emulator Express または完全なエミュレーターのどちらを使用するかをプロジェクト設定で指定できます。 完全なエミュレーターの詳細については、「[コンピューティング エミュレーターでの Azure アプリケーションの実行](/azure/storage/common/storage-use-emulator)」を参照してください。
@@ -23,7 +23,7 @@ Azure SDK 2.3 以降で Azure プロジェクトを作成すると、Emulator Ex
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
+1. ソリューションエクスプローラーで、プロジェクトを右クリックし、コンテキストメニューの [ **プロパティ**] をクリックします。
 
 1. プロジェクト プロパティのページで、**[Web]** タブを選択します。
 
@@ -47,5 +47,5 @@ Emulator Express には、次のような制限事項があることがわかっ
 - 1,000 未満のポート番号にはアクセスできません。 通常 1,000 未満のポートが使用される認証プロバイダーを使用する場合は、この値を 1,000 を超えるポート番号に変更する必要がある場合があります。
 - Azure コンピューティング エミュレーターに適用されるすべての制限は、Emulator Express にも適用されます。 たとえば、デプロイあたり 50 を超えるロール インスタンスを保持できません。 Azure コンピューティング エミュレーターの詳細については、「[クラウド サービスのパフォーマンスのテスト](vs-azure-tools-performance-profiling-cloud-services.md)」をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [Azure cloud services のデバッグ](vs-azure-tools-debugging-cloud-services-overview.md)
