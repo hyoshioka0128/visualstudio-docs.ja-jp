@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911718"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800477"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 
@@ -22,19 +22,19 @@ ms.locfileid: "72911718"
 
 ## <a name="overview"></a>概要
 
-Azure Tools for Microsoft Visual Studio をインストール済みである場合、Azure のストレージ アカウントから、BLOB、キュー、テーブルのデータを表示できます。 サーバー エクスプローラーの [Azure] の **[ストレージ]** ノードに、ローカル ストレージ エミュレーター アカウントをはじめとする Azure ストレージ アカウント内のデータが表示されます。
+Azure Tools for Microsoft Visual Studio をインストール済みである場合、Azure のストレージ アカウントから、BLOB、キュー、テーブルのデータを表示できます。 サーバーエクスプローラーの [Azure **storage** ] ノードには、ローカルストレージエミュレーターアカウントとその他の azure ストレージアカウント内のデータが表示されます。
 
-Visual Studio でサーバー エクスプローラーを表示するには、メニュー バーの **[表示]**  >  **[サーバー エクスプローラー]** を選択します。 **[ストレージ]** ノードには、接続先の各 Azure サブスクリプションまたは証明書に存在するすべてのストレージ アカウントが表示されます。 ストレージ アカウントが表示されない場合は、 [この記事の最後](#add-storage-accounts-by-using-server-explorer)に記載した手順で追加できます。
+Visual Studio でサーバーエクスプローラーを表示するには、メニューバーで [サーバーエクスプローラーの**表示**] を選択し  >  **Server Explorer**ます。 **[ストレージ]** ノードには、接続先の各 Azure サブスクリプションまたは証明書に存在するすべてのストレージ アカウントが表示されます。 ストレージ アカウントが表示されない場合は、 [この記事の最後](#add-storage-accounts-by-using-server-explorer)に記載した手順で追加できます。
 
-Azure SDK 2.7 以降では、Cloud Explorer を使用して Azure リソースを表示および管理することもできます。 詳細については、[Cloud Explorer を使用した Azure リソースの管理](vs-azure-tools-resources-managing-with-cloud-explorer.md)に関する記事をご覧ください。
+Azure SDK 2.7 以降では、Cloud Explorer を使用して Azure リソースを表示および管理することもできます。 詳細については、「 [Cloud Explorer を使用した Azure リソースの管理](vs-azure-tools-resources-managing-with-cloud-explorer.md)」を参照してください。
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Visual Studio でのストレージ リソースの表示と管理
 
-サーバー エクスプローラーには、ストレージ エミュレーター アカウント内の BLOB、キュー、テーブルの一覧が自動的に表示されます。 ストレージ エミュレーター アカウントは、サーバー エクスプローラーの **[ストレージ]** ノードの下に **[開発]** ノードとして表示されます。
+サーバー エクスプローラーには、ストレージ エミュレーター アカウント内の BLOB、キュー、テーブルの一覧が自動的に表示されます。 ストレージエミュレーターアカウントは、[ **ストレージ** ] ノードの [サーバーエクスプローラーの [ **開発** ] ノードの下に一覧表示されます。
 
 ストレージ エミュレーター アカウントのリソースを表示するには、 **[開発]** ノードを展開します。 **[開発]** ノードを展開したとき、まだストレージ エミュレーターが起動していない場合は、自動的に起動します。 このプロセスには数秒かかる場合があります。 ストレージ エミュレーターの起動中、Visual Studio の他の領域では作業を続行できます。
 
-ストレージ アカウントのリソースを表示するには、サーバー エクスプローラーでストレージ アカウントのノードを展開します。展開すると、 **[BLOB]** 、 **[キュー]** 、および **[テーブル]** ノードが表示されます。
+ストレージ アカウントのリソースを表示するには、サーバー エクスプローラーでストレージ アカウントのノードを展開します。展開すると、**[BLOB]**、**[キュー]**、および **[テーブル]** ノードが表示されます。
 
 ## <a name="work-with-blob-resources"></a>BLOB リソースの操作
 
@@ -42,7 +42,7 @@ Azure SDK 2.7 以降では、Cloud Explorer を使用して Azure リソース�
 
 ### <a name="to-create-a-blob-container"></a>BLOB コンテナーを作成するには
 
-1. **[BLOB]** ノードのショートカット メニューを開き、 **[BLOB コンテナーの作成]** を選択します。
+1. **[BLOB]** ノードのショートカット メニューを開き、**[BLOB コンテナーの作成]** を選択します。
 1. **[BLOB コンテナーの作成]** ダイアログ ボックスで新しいコンテナーの名前を入力します。
 1. キーボードの Enter キーを押すか、名前フィールドの外側をクリックまたはタップして BLOB コンテナーを保存します。
 
@@ -51,11 +51,11 @@ Azure SDK 2.7 以降では、Cloud Explorer を使用して Azure リソース�
 
 ### <a name="to-delete-a-blob-container"></a>BLOB コンテナーを削除するには
 
-削除する BLOB コンテナーのショートカット メニューを開き、 **[削除]** を選択します。
+削除する BLOB コンテナーのショートカット メニューを開き、**[削除]** を選択します。
 
 ### <a name="to-display-a-list-of-the-items-in-a-blob-container"></a>BLOB コンテナー内の項目の一覧を表示するには
 
-一覧で BLOB コンテナー名のショートカット メニューを開き、 **[開く]** を選択します。
+一覧で BLOB コンテナー名のショートカット メニューを開き、**[開く]** を選択します。
 
 表示した BLOB コンテナーの内容は、BLOB コンテナー ビューと呼ばれるタブに表示されます。
 
@@ -72,9 +72,9 @@ BLOB コンテナー ビューの右上隅にあるボタンを使用して、BL
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>BLOB コンテナーにフォルダーまたはサブフォルダーを作成するには
 
-1. Cloud Explorer で BLOB コンテナーを選択します。 コンテナー ウィンドウで **[BLOB のアップロード]** をクリックします。
+1. **Cloud Explorer**で blob コンテナーを選択します。 コンテナー ウィンドウで **[BLOB のアップロード]** をクリックします。
 
-1. **[新しいファイルのアップロード]** ダイアログ ボックスで、 **[参照]** をクリックしてアップロードするファイルを指定し、 **[フォルダー (省略可)]** ボックスにフォルダー名を入力します。
+1. **[新しいファイルのアップロード]** ダイアログ ボックスで、**[参照]** をクリックしてアップロードするファイルを指定し、**[フォルダー (省略可)]** ボックスにフォルダー名を入力します。
 
    ![Uploading a file into a blob folder](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -82,7 +82,7 @@ BLOB コンテナー ビューの右上隅にあるボタンを使用して、BL
 
    ![Folder added to a blob container](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
-1. フォルダーをダブルクリックするか、Enter キーを押してフォルダーの内容を表示します。 コンテナーのフォルダー内で、 **[親ディレクトリを開く]** (矢印) ボタンをクリックすると、コンテナーのルートに戻ることができます。
+1. フォルダーをダブルクリックするか、Enter キーを押してフォルダーの内容を表示します。 コンテナーのフォルダー内で、**[親ディレクトリを開く]** (矢印) ボタンをクリックすると、コンテナーのルートに戻ることができます。
 
 ### <a name="to-delete-a-container-folder"></a>コンテナーのフォルダーを削除するには
 
@@ -94,7 +94,7 @@ BLOB コンテナー内のフォルダーは仮想フォルダーであるため
 
 共通のプレフィックスを指定すると、表示される BLOB をフィルター処理できます。
 
-たとえば、フィルター テキスト ボックスに **hello** というプレフィックスを入力し、 **[実行]** ( **!** ) ボタンをクリックすると、"hello" で始まる BLOB だけが表示されます。
+たとえば、フィルター テキスト ボックスに **hello** というプレフィックスを入力し、**[実行]** (**!**) ボタンをクリックすると、"hello" で始まる BLOB だけが表示されます。
 
 ![フィルター テキスト ボックス](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,23 +102,23 @@ BLOB コンテナー内のフォルダーは仮想フォルダーであるため
 
 ### <a name="to-download-blob-data"></a>BLOB データをダウンロードするには
 
-Cloud Explorer で次のいずれかの方法を使用します。
+**Cloud Explorer**で、次のいずれかの方法を使用します。
 
-* 1 つ以上の BLOB のショートカット メニューを開き、 **[開く]** を選択します。
-* BLOB 名を選択し、 **[開く]** をクリックします。
+* 1 つ以上の BLOB のショートカット メニューを開き、**[開く]** を選択します。
+* BLOB 名を選択し、**[開く]** をクリックします。
 * BLOB 名をダブルクリックします。
 
-**[Azure のアクティビティ ログ]** ウィンドウに BLOB のダウンロードの進行状況が表示されます。
+BLOB のダウンロードの進行状況が **[Azure のアクティビティ ログ] **ウィンドウに表示されます。
 
 その種類のファイルの既定のエディターで BLOB が開きます。 オペレーティング システムによってファイルの種類が認識された場合は、ローカルにインストールされているアプリケーションでファイルが開きます。 それ以外の場合は、BLOB のファイルの種類に適したアプリケーションを選択するよう求められます。 BLOB をダウンロードしたときに作成されるローカル ファイルは、読み取り専用としてマークされます。
 
 BLOB データはローカルにキャッシュされ、Azure Blob Storage での BLOB の最終更新時刻に照らしてチェックされます。 BLOB が前回のダウンロード後に更新されている場合は、再度ダウンロードされます。 それ以外の場合は、ローカル ディスクから BLOB が読み込まれます。
 
-既定では、BLOB が一時ディレクトリにダウンロードされます。 特定のディレクトリに BLOB をダウンロードするには、選択した BLOB 名のショートカット メニューを開き、 **[名前を付けて保存]** を選択します。 この方法で BLOB を保存すると、BLOB ファイルは開かれず、読み取り/書き込み属性のローカル ファイルが作成されます。
+既定では、BLOB が一時ディレクトリにダウンロードされます。 特定のディレクトリに BLOB をダウンロードするには、選択した BLOB 名のショートカット メニューを開き、**[名前を付けて保存]** を選択します。 この方法で BLOB を保存すると、BLOB ファイルは開かれず、読み取り/書き込み属性のローカル ファイルが作成されます。
 
 ### <a name="to-upload-blobs"></a>BLOB をアップロードするには
 
-BLOB をアップロードするには、コンテナーを開き、BLOB コンテナー ビューに表示されたら、 **[BLOB のアップロード]** をクリックします
+BLOB をアップロードするには、コンテナーを開き、BLOB コンテナー ビューに表示されたら、**[BLOB のアップロード]** をクリックします
 
 アップロード対象ファイル (複数可) を選択し、任意の種類のファイルをアップロードできます。 **[Azure のアクティビティ ログ]** ウィンドウにアップロードの進行状況が表示されます。 BLOB データを操作する方法の詳細については、[.NET で Azure Blob Storage を使用する方法](/azure/storage/blobs/storage-quickstart-blobs-dotnet)に関する記事をご覧ください。
 
@@ -130,11 +130,11 @@ Azure Diagnostics の詳細については、「 [Azure Diagnostics を使用し
 
 ### <a name="to-get-the-url-for-a-blob"></a>BLOB の URL を取得するには
 
-BLOB のショートカット メニューを開き、 **[URL のコピー]** を選択します。
+BLOB のショートカット メニューを開き、**[URL のコピー]** を選択します。
 
 ### <a name="to-edit-a-blob"></a>BLOB を編集するには
 
-BLOB を選択し、 **[BLOB を開く]** をクリックします。
+Blob を選択し、[ **blob を開く** ] ボタンを選択します。
 
 ファイルは一時的な場所にダウンロードされ、ローカル コンピューター上で開かれます。 変更を行ってから、BLOB を再アップロードします。
 
@@ -158,7 +158,7 @@ BLOB を選択し、 **[BLOB を開く]** をクリックします。
 ストレージ サービスのキューの詳細については、「[.NET を使用して Azure Queue Storage を使用する](/azure/storage/queues/storage-dotnet-how-to-use-queues)」をご覧ください。 ストレージ サービス キューの Web サービスについては、「 [キュー サービスの概念](/rest/api/storageservices/Queue-Service-Concepts)」を参照してください。 Visual Studio を使用して、ストレージ サービス キューにメッセージを送信する方法については、「 [ストレージ サービスのキューにメッセージを送信する](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)」を参照してください。
 
 > [!NOTE]
-> ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、「[Service Bus のキュー、トピック、サブスクリプション](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)」をご覧ください。
+> ストレージ サービスのキューは、Azure Service Bus キューとは異なります。 Service Bus キューの詳細については、「 [キュー、トピック、およびサブスクリプションの Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)」を参照してください。
 
 ## <a name="work-with-table-resources"></a>テーブル リソースの操作
 
@@ -166,14 +166,14 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 ### <a name="to-create-a-table"></a>テーブルを作成するには
 
-1. Cloud Explorer でストレージ アカウントの **[テーブル]** ノードを選択し、 **[テーブルの作成]** を選択します。
+1. **Cloud Explorer**で、ストレージアカウントの [**テーブル**] ノードを選択し、[**テーブルの作成**] を選択します。
 1. **[テーブルの作成]** ダイアログ ボックスでテーブルの名前を入力します。
 
 ### <a name="to-view-table-data"></a>テーブル データを表示するには
 
-1. Cloud Explorer で **[Azure]** ノードを開き、 **[Storage]** ノードを開きます。
+1. **Cloud Explorer**で、[ **Azure** ] ノードを開き、[**ストレージ**] ノードを開きます。
 1. 目的のストレージ アカウント ノードを開き、 **[テーブル]** ノードを開いて、そのストレージ アカウントのテーブルの一覧を表示します。
-1. テーブルのショートカット メニューを開き、 **[テーブルの表示]** を選択します。
+1. テーブルのショートカット メニューを開き、**[テーブルの表示]** を選択します。
 
     ![An Azure table in Solution Explorer](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
 
@@ -181,24 +181,24 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 ### <a name="to-edit-table-data"></a>テーブル データを編集するには
 
-テーブル デザイナーで、エンティティ (単一の行) またはプロパティ (単一のセル) のショートカット メニューを開き、 **[編集]** を選択します。
+**テーブルデザイナー**で、エンティティ (単一の行) またはプロパティ (1 つのセル) のショートカットメニューを開き、[**編集**] を選択します。
 
-![テーブルエンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![テーブル エンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 単一テーブルのエンティティが、同じ一連のプロパティ (列) を持っている必要はありません。 テーブル データの表示と編集には、次の制限があることに留意してください。
 
 * バイナリ データ (`type byte[]`) は、表示することも編集することもできませんが、テーブルに格納することは可能です。
-* **PartitionKey** と **RowKey** の値は編集できません。この操作は、Azure の Table Storage ではサポートされていません。
+* **Partitionkey**または**RowKey**の値を編集することはできません。 Azure Table storage ではその操作がサポートされていないためです。
 * **Timestamp** という名前のプロパティは作成できません。 Azure Storage サービスでこの名前のプロパティが使用されています。
-* **DateTime** 値を入力する場合は、ご使用のコンピューターの地域と言語の設定に適した形式に従う必要があります (たとえば、英語 (米国) の場合は、MM/DD/YYYY HH:MM:SS [AM|PM])。
+* **DateTime**値を入力する場合は、コンピューターの地域と言語の設定に適した形式に従う必要があります (たとえば、MM/DD/YYYY HH: MM: SS [AM |PM] を英語) にします。
 
 ### <a name="to-add-entities"></a>エンティティを追加するには
 
-1. テーブル デザイナー で **[エンティティの追加]** をクリックします。
+1. **テーブルデザイナー**で、[**エンティティの追加**] ボタンを選択します。
 
     ![[エンティティの追加] ボタン](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. **[エンティティの追加]** ダイアログ ボックスで、**PartitionKey** プロパティと **RowKey** プロパティの値を入力します。
+1. **[エンティティの追加]** ダイアログ ボックスで、**PartitionKey** プロパティおよび **RowKey** プロパティの値を入力します。
 
     ![[エンティティの追加] ダイアログ ボックス](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -217,7 +217,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 1. クエリの作成を終えたら、ダイアログ ボックスを閉じます。 クエリの結果であるテキスト形式が WCF Data Services フィルターとしてテキスト ボックスに表示されます。
 1. クエリを実行するには、緑の三角形のアイコンをクリックします。
 
-また、フィルター テキスト ボックスに WCF Data Services フィルター文字列を直接入力することで、テーブル デザイナーに表示されるエンティティ データをフィルター処理することもできます。 この種の文字列は、SQL の WHERE 句に似ていますが、サーバーには HTTP 要求として送信されます。 フィルター文字列を作成する方法の詳細については、「[テーブル デザイナー用のフィルター文字列の作成](vs-azure-tools-table-designer-construct-filter-strings.md)」を参照してください。
+また、フィルター テキスト ボックスに WCF Data Services フィルター文字列を直接入力することで、テーブル デザイナーに表示されるエンティティ データをフィルター処理することもできます。 この種の文字列は、SQL の WHERE 句に似ていますが、サーバーには HTTP 要求として送信されます。 フィルター文字列を作成する方法の詳細については、「 [テーブルデザイナーのフィルター文字列の](vs-azure-tools-table-designer-construct-filter-strings.md)作成」を参照してください。
 
 有効なフィルター文字列の例を次の図に示します。
 
@@ -230,12 +230,12 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 ### <a name="to-refresh-blob-container-data"></a>BLOB コンテナー データを更新するには
 
 * **[ストレージ]** の下の **[BLOB]** ノードを選択し、サーバー エクスプローラー ツール バーの **[最新の情報に更新]** をクリックします。
-* 表示されている BLOB の一覧を更新するには、 **[実行]** をクリックします。
+* 表示されている BLOB の一覧を更新するには、**[実行]** をクリックします。
 
 ### <a name="to-refresh-table-data"></a>テーブル データを更新するには
 
 * **[ストレージ]** の下の **[テーブル]** ノードを選択し、サーバー エクスプローラー ツール バーの **[最新の情報に更新]** をクリックします。
-* テーブル デザイナーに表示されているエンティティの一覧を更新するには、テーブル デザイナーで **[実行]** をクリックします。
+* **テーブルデザイナー**に表示されているエンティティの一覧を更新するには、テーブルデザイナーで [**実行**] ボタンを選択します。
 
 ### <a name="to-refresh-queue-data"></a>キュー データを更新するには
 
@@ -251,7 +251,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>サーバー エクスプローラーを使用してストレージ アカウントを作成するには
 
-1. サーバー エクスプローラーで **[ストレージ]** ノードのショートカット メニューを開き、 **[ストレージ アカウントの作成]** を選択します。
+1. サーバー エクスプローラーで **[ストレージ]** ノードのショートカット メニューを開き、**[ストレージ アカウントの作成]** を選択します。
 
 1. **[ストレージ アカウントの作成]** ダイアログ ボックスで、次の情報を選択または入力します。
 
@@ -262,30 +262,30 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
    ![Azure のストレージ アカウントの作成](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. **[作成]** を選択します。
+1. **［作成］** を選択します
 
 新しいストレージ アカウントがソリューション エクスプローラーの **[Storage]** ボックスの一覧に表示されます。
 
 ### <a name="to-attach-an-existing-storage-account-by-using-server-explorer"></a>サーバー エクスプローラーを使用して既存のストレージ アカウントを接続するには
 
-1. サーバー エクスプローラーで、[Azure] の **[ストレージ]** ノードのショートカット メニューを開き、 **[外部ストレージのアタッチ]** を選択します。
+1. サーバー エクスプローラーで、[Azure] の **[ストレージ]** ノードのショートカット メニューを開き、**[外部ストレージのアタッチ]** を選択します。
 
     ![Adding an existing storage account](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
 1. **[ストレージ アカウントの作成]** ダイアログ ボックスで、次の情報を選択または入力します。
 
    * 接続する既存のストレージ アカウントの名前。
-   * 選択したストレージ アカウントのキー。 この値は通常、ストレージ アカウントを選択したときに提供されます。 ストレージ アカウント キーを Visual Studio に記憶させる場合は、 **[アカウント キーを記憶する]** チェック ボックスをオンにします。
+   * 選択したストレージ アカウントのキー。 この値は通常、ストレージ アカウントを選択したときに提供されます。 ストレージ アカウント キーを Visual Studio に記憶させる場合は、**[アカウント キーを記憶する]** チェック ボックスをオンにします。
    * HTTP、HTTPS、カスタム エンドポイントなど、ストレージ アカウントへの接続に使用するプロトコル。 カスタム エンドポイントの詳細については、[接続文字列の構成方法](https://msdn.microsoft.com/library/azure/ee758697.aspx)に関する記事をご覧ください。
 
 ### <a name="to-view-the-secondary-endpoints"></a>セカンダリ エンドポイントを表示するには
 
-**[読み取りアクセス Geo 冗長]** レプリケーション オプションを使用してストレージ アカウントを作成した場合は、アカウント名のショートカット メニューを開き、 **[プロパティ]** を選択してそのセカンダリ エンドポイントを表示できます。
+**[読み取りアクセス Geo 冗長]** レプリケーション オプションを使用してストレージ アカウントを作成した場合は、アカウント名のショートカット メニューを開き、**[プロパティ]** を選択してそのセカンダリ エンドポイントを表示できます。
 
 ![Storage secondary endpoints](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>サーバー エクスプローラーからストレージ アカウントを削除するには
 
-サーバー エクスプローラーでアカウント名のショートカット メニューを開き、 **[削除]** を選択します。
+サーバー エクスプローラーでアカウント名のショートカット メニューを開き、**[削除]** を選択します。
 
 ストレージ アカウントを削除すると、そのアカウントに関して保存されていたキー情報もすべて削除されます。
 

@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7ff64d43714fa69c2543a9bb12bb3cd12826c8
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706491"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800854"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を表示しない
 
@@ -35,7 +35,7 @@ C++/CLI では、マクロ CA を使用して \_ \_ ヘッダーファイル内�
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、 **Analyze**  >  **[実行コード分析の分析] を選択し、[アクティブな問題を抑制**する] を選択して、すべての警告を抑制できます。
+> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[実行コード分析の**分析**] を選択し、[  >  **アクティブな問題を抑制**する] を選択して、すべての警告を非表示にできます。
 >
 > ![Visual Studio でコード分析を実行し、問題を抑制する](media/suppress-active-issues.png)
 
@@ -44,13 +44,13 @@ C++/CLI では、マクロ CA を使用して \_ \_ ヘッダーファイル内�
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ビルドの**分析**] を選択し、  >  **アクティブな問題を抑制**することによって、すべての警告を抑制できます。
+> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ビルドの**分析**] を選択し、  >  **アクティブな問題を非**表示にして、すべての警告を非表示にすることができます。
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性
 
-**エラー一覧**でコード分析の警告のコンテキストまたは右クリックメニューから [**抑制**] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性がコードまたはプロジェクトのグローバル抑制ファイルのいずれかに追加されます。
+**エラー一覧**のコード分析警告のコンテキストまたは右クリック (または選択したままにする) メニューから [**抑制**] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性がコードに追加されるか、プロジェクトのグローバル抑制ファイルに追加されます。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性の形式は次のとおりです。
 
