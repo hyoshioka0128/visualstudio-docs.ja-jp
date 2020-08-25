@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 管理者がサブスクライバーにライセンスを割り当てる方法を説明します
-ms.openlocfilehash: e8eba6ad97d0f5e7e1da0e75093c33658f26a56a
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235018"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249478"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理者ポータルでライセンスを割り当てる
 Visual Studio サブスクリプションの管理者は、管理者ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
@@ -34,7 +34,7 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
 1. [管理ポータル](https://manage.visualstudio.com)にサインインします。
 2. 1 人の Visual Studio サブスクライバーにライセンスを割り当てるには、テーブルの上部にある **[追加]** を選択してから、 **[Individual subscriber]\(個々のサブスクライバー\)** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![1 人のサブスクライバーを追加する](_img/assign-license-add/add-subscriber-individual.png "[追加] をクリックし、個々のサブスクライバーを選択し、単一サブスクリプションを割り当てます。")
+   > ![1 人のサブスクライバーを追加する](_img/assign-license-add/add-subscriber-individual.png "[追加] を選択し、個々のサブスクライバーを選択し、単一サブスクリプションを割り当てます。")
 3. フォームのフィールドに新しいサブスクライバーの情報を入力します。 組織が Azure Active Directory を使っている場合は、 **[名前]** フィールドを使って現在のディレクトリのユーザーを検索し、検索結果から適切なユーザーを選ぶことができます。 そのユーザーを選ぶと、サインイン メール アドレス、通知メール アドレスが自動的に設定されます。
    > [!div class="mx-imgBorder"]
    > ![サブスクライバーの詳細](_img/assign-license-add/subscriber-details.png "サブスクライバーの名前とその他の詳細を入力するか、テナント メンバーから選択します。")
@@ -53,10 +53,10 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
 
     オプションの選択とサブスクライバーのデータの入力が終わったら、 **[Add Subscriber]\(サブスクライバーの追加\)** フライアウトの下部にある **[追加]** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![[追加] ボタンを選択する](media/add-button.png "[追加] をクリックして情報を保存し、サブスクリプションをサブスクライバーに割り当てます。")
+   > ![[追加] ボタンを選択する](media/add-button.png "[追加] を選択して情報を保存し、サブスクリプションをサブスクライバーに割り当てます。")
 
 ## <a name="resend-assignment-emails"></a>割り当てメールを再送信する
-サブスクライバーを追加すると、詳細な説明が記載された割り当てメールがサブスクライバーに自動的に送信されます。 サブスクライバーを選択して、上部メニューの **[再送信]** ボタンをクリックすることで、いつでも割り当てメールを送信し直すことができます。  複数のユーザーにメールを再送信するには、**Ctrl** キーを押しながら複数のサブスクライバーを選択します。  **[再送信]** ボタンをクリックすると、そのサブスクライバーに再送信するかどうかを確認するダイアログが表示されます。  
+サブスクライバーを追加すると、詳細な説明が記載された割り当てメールがサブスクライバーに自動的に送信されます。 サブスクライバーを選択して、上部メニューの **[再送信]** ボタンを選択することで、いつでも割り当てメールを送信し直すことができます。  複数のユーザーにメールを再送信するには、**Ctrl** キーを押しながら複数のサブスクライバーを選択します。  **[再送信]** ボタンを選択すると、そのサブスクライバーに再送信するかどうかを確認するダイアログが表示されます。  
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)

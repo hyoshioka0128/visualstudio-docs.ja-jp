@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8210ceeb26c3350822d95f85af7689a37894dba9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184056"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238609"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild でのビルド ログの取得
 
@@ -47,7 +47,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 次の表では、ログの詳細度 (列の値) が、ログに記録されるメッセージの種類 (行の値) に与える影響を示します。
 
-|                                       | 静的 | Minimal | 標準 | 詳細 | 診断 |
+| メッセージの種類と詳細              | 静的 | Minimal | 標準 | 詳細 | 診断 |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | エラー                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | 警告                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |

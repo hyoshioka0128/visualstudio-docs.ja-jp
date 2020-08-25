@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45632967c39348e8dc78dc3e2fb95227dcd86d7d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285910"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508081"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 
@@ -89,88 +89,4 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>コマンド ラインからプロファイル データを収集する
 
-コマンド ラインからパフォーマンス データを測定するには、Visual Studio またはリモート ツールに含まれている VSDiagnostics.exe を使用できます。 これは、Visual Studio がインストールされていないシステムでパフォーマンス トレースをキャプチャする場合や、パフォーマンス トレースのコレクションのスクリプトを作成する場合に便利です。 VSDiagnostics.exe を使用すると、ツールが停止するまでプロファイル データをキャプチャして保存する診断セッションが開始されます。 その時点で、そのデータは .diagsession ファイルにエクスポートされます。このファイルは、Visual Studio で開いて結果を分析できます。
-
-### <a name="launch-an-application"></a>アプリケーションを起動する
-
-1. コマンド プロンプトを開き、VSDiagnostics.exe のあるディレクトリに移動します。
-
-   ```
-   <Visual Studio Install Folder>\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-2. 次のコマンドで VSDiagnostics.exe を起動します。
-
-   ```
-   VSDiagnostics.exe start <id> /launch:<appToLaunch> /loadConfig:<configFile>
-   ```
-
-   次の引数を含める必要があります。
-
-   - \<id\>:収集セッションを識別します。 ID は常に 1 - 255 の数字です。
-   - \<appToLaunch\>:起動およびプロファイルする実行可能ファイル。
-   - \<configFile\>:起動する収集エージェントの構成ファイル。
-
-3. 収集を停止して結果を表示するには、この記事で後述する「収集を停止する」セクションの手順を実行します。
-
-### <a name="attach-to-an-existing-application"></a>既存のアプリケーションにアタッチする
-
-1. メモ帳などのアプリケーションを開き、**タスク マネージャー**を開いて、そのプロセス ID (PID) を取得します。 タスク マネージャーの  **[詳細]**   タブで PID を見つけます。
-2. コマンド プロンプトを開き、実行可能な収集エージェントがあるディレクトリに移動します。 通常は、以下のとおりです。
-
-   ```
-   <Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\
-   ```
-
-3. 次のコマンドを入力して、VSDiagnostics.exe ファイルを起動します。
-
-   ```
-   VSDiagnostics.exe start <id> /attach:<pid> /loadConfig:<configFile>
-   ```
-
-   次の引数を含める必要があります。
-
-   - \<id\>:収集セッションを識別します。 ID は常に 1 - 255 の数字です。
-   - \<pid\>:プロファイルするプロセスの PID。この場合は、手順 1 で見つけた PID です。
-   - \<configFile\>:起動する収集エージェントの構成ファイル。 詳細については、 [エージェントの構成ファイル](../profiling/profile-apps-from-command-line.md)に関するセクションを参照してください。
-
-4. 収集を停止して結果を表示するには、次のセクションの手順を実行します。
-
-### <a name="stop-collection"></a>収集を停止する
-
-1. 次のコマンドを入力して、収集セッションを停止し、ファイルに出力を送信します。
-
-   ```
-   VSDiagnostics.exe stop <id> /output:<path to file>
-   ```
-
-2. 前のコマンドから出力されたファイルに移動し、Visual Studio でそれを開いて、収集された情報を調べます。
-
-## <a name="agent-configuration-files"></a>エージェントの構成ファイル
-
-収集エージェントは、測定対象が何かに応じて、さまざまな種類のデータを収集する交換可能なコンポーネントです。
-便宜上、その情報をエージェント構成ファイルに保管することができます。 構成ファイルは、少なくとも .dll ファイルの名前とその COM CLSID を含む .json ファイルです。 以下は、次のフォルダー内にある構成ファイルの例です。
-
-```
-<Visual Studio installation folder>\Team Tools\DiagnosticsHub\Collector\AgentConfigs\
-```
-
-エージェントの構成ファイルをダウンロードして表示するには、以下のリンクを参照してください。
-
-- https://aka.ms/vs/diaghub/agentconfig/cpubase
-- https://aka.ms/vs/diaghub/agentconfig/cpuhigh
-- https://aka.ms/vs/diaghub/agentconfig/cpulow
-- https://aka.ms/vs/diaghub/agentconfig/database
-- https://aka.ms/vs/diaghub/agentconfig/dotnetasyncbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetallocbase
-- https://aka.ms/vs/diaghub/agentconfig/dotnetalloclow
-
- [CPU 使用率](../profiling/cpu-usage.md)プロファイル ツールについて収集されたデータに対応する CpuUsage 構成 (Base/High/Low)。
-DotNetObjectAlloc 構成 (Base/Low)。 [.NET オブジェクト割り当てツール](../profiling/dotnet-alloc-tool.md)について収集されたデータに対応します。
-
-Base/Low/High 構成はサンプリング レートを表します。 たとえば、Low は 100 サンプル/秒、High は 4,000 サンプル/秒です。
-VSDiagnostics.exe ツールを収集エージェントで使用するには、適切なエージェントの DLL と COM CLSID の両方が必要です。 エージェントには、その他の構成オプションがある場合もあります。 構成ファイルなしでエージェントを使用する場合は、次のコマンドでこの形式を使用してください。
-
-```
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+コマンド ラインからパフォーマンス データを測定するには、Visual Studio またはリモート ツールに含まれている VSDiagnostics.exe を使用できます。 これは、Visual Studio がインストールされていないシステムでパフォーマンス トレースをキャプチャする場合や、パフォーマンス トレースのコレクションのスクリプトを作成する場合に便利です。 詳しい指示が必要であれば、「[コマンド ラインからアプリケーションのパフォーマンスを測定する](../profiling/profile-apps-from-command-line.md)」を参照してください。

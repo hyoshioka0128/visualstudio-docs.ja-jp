@@ -902,7 +902,7 @@
     - name: IDE をカスタマイズする
       displayName: Personalize
       href: ide/personalizing-the-visual-studio-ide.md
-    - name: 'クイック スタート: テーマとテキストの色のカスタマイズ'
+    - name: 色のテーマとテキストをカスタマイズする
       href: ide/quickstart-personalize-the-ide.md
     - name: 環境設定
       displayName: profiles
@@ -956,7 +956,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: キーボード ショートカット
       items:
@@ -1409,6 +1409,8 @@
       href: ide/whats-new-visual-studio-2017.md
     - name: Visual Studio 2019 の新機能
       href: ide/whats-new-visual-studio-2019.md
+    - name: Visual Studio ドキュメントの新機能
+      href: ide/whats-new-visual-studio-docs.md
     - name: リリース ノートとシステム要件
       items:
         - name: リリースのタイミング

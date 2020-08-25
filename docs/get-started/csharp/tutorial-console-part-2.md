@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375934"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507957"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>チュートリアル: シンプルな C# コンソール アプリを拡張する
 
-このチュートリアルでは、最初のパートで作成したコンソール アプリを、Visual Studio を使用して拡張する方法について説明します。 詳細エディター機能の使い方やデバッグなど、開発者が生産性を高めるのに役立つ Visual Studio の機能の一部について説明します。
+このチュートリアルでは、最初のパートで作成したコンソール アプリを、Visual Studio を使用して拡張する方法について説明します。 複数のプロジェクトの管理やサードパーティ パッケージの参照など、日々の開発に必要な Visual Studio の機能についていくつか説明します。
 
 このシリーズの[最初のパート](tutorial-console.md)を完了している場合は、電卓コンソール アプリは既に用意できています。  パート 1 をスキップするには、GitHub リポジトリからプロジェクトを開くところから始めます。 C# 電卓アプリは、[vs-tutorial-samples リポジトリ](https://github.com/MicrosoftDocs/vs-tutorial-samples)にあるので、「[チュートリアル: リポジトリからプロジェクトを開く](../tutorial-open-project-from-repo.md)」に記載されている手順に従うと開始することができます。
 
