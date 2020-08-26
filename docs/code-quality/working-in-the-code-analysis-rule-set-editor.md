@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801543"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893308"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>コード分析規則セットエディターの使用
 
@@ -38,7 +38,7 @@ ms.locfileid: "88801543"
    > [!TIP]
    > [ **グループ** 化] ドロップダウンでルールをグループ化する方法を変更できます。
 
-- グループの [ **アクション** ] フィールドで、グループ内のすべてのルールに適用するアクションを指定します。
+- グループの [ **アクション** ] フィールドをクリックし、グループ内のすべてのルールに適用するアクションを指定します。
 
 - 個々のルールのチェックボックスをオンまたはオフにします。 ルールのチェックボックスをオンにすると、ルールは **警告** アクションに設定されます。
 

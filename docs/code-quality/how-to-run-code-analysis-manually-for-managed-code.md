@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1077e2cdae790fe8a7b7309b1e6427cd3ef81b48
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: bbd3d2023310b9412310fc86f419c2e8c4a127c4
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800165"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893399"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>方法: マネージコードのコード分析を手動で実行する (Visual Studio 2019 バージョン16.5 以降が必要)
 既定では、.NET Compiler Platform ("Roslyn") コードアナライザーは、ビルド時だけでなく、ライブ分析を行うことによって、C# または Visual Basic コードを分析します。 そのため、通常は手動でコード分析をトリガーする必要がありません。 ただし、コード分析を手動でトリガーする必要があるシナリオもあります。
 
 - 既定では、ライブコード分析は Visual Studio で開いているファイルに対してのみアナライザーを実行します。 ただし、特定のプロジェクトまたはソリューション内のすべてのファイルについて、コード分析の警告を表示することをお勧めします。 その場合は、プロジェクトまたはソリューションでコード分析を1回トリガーする必要があります。 または、継続的なライブコード分析を有効にして、ソリューション全体で実行できるようにすることもできます。 詳細については、[方法: マネージド コードのライブ コード分析スコープを構成する](./configure-live-code-analysis-scope-managed-code.md)」を参照してください。
-- 継続的なライブ分析またはビルド時の分析により、オンデマンドのコード分析実行ワークフローを使用することもできます。 その場合は、ライブ分析やビルド中にアナライザーの実行を無効にすることができます。 分析を無効にする方法の詳細については、「 [ソースコード分析を無効にする方法](disable-code-analysis.md)」を参照してください。 次に、プロジェクトまたはソリューションで手動でコード分析をトリガーします。 
+- 継続的なライブ分析またはビルド時の分析により、オンデマンドのコード分析実行ワークフローを使用することもできます。 その場合は、ライブ分析やビルド中にアナライザーの実行を無効にすることができます。 分析を無効にする方法の詳細については、「 [ソースコード分析を無効にする方法](disable-code-analysis.md)」を参照してください。 次に、プロジェクトまたはソリューションで手動でコード分析をトリガーします。
 
 ### <a name="run-code-analysis-manually"></a>手動でのコード分析の実行
 
-1. **ソリューションエクスプローラー**で、プロジェクトを選択します。
+1. [ **ソリューションエクスプローラー**で、プロジェクトを選択します。
 
 2. [**分析**] メニューの [*プロジェクト名***に対してコード分析を実行**] をクリックします。
 

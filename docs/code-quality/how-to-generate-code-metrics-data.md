@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800958"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893412"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
@@ -72,7 +72,7 @@ ms.locfileid: "88800958"
 
 ## <a name="calculate-code-metrics-menu-command"></a>[コードメトリックスの計算] メニューコマンド
 
-[ **Analyze**  >  **コードメトリックスの計算**] メニューに移動して、IDE で開いているプロジェクトの1つまたはすべてのコードメトリックスを生成します。
+[ **Analyze**  >  **コードメトリックスの計算**] メニューを使用して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコードメトリックスの結果を生成する
 
@@ -80,7 +80,7 @@ ms.locfileid: "88800958"
 
 - メニューバーで、[ **Analyze**  >  **Calculate Code Metrics**  >  **ソリューションの**コードメトリックスの分析] を選択します。
 
-- **ソリューションエクスプローラー**で、ソリューションを選択して保持 (または右クリック) し、[**コードメトリックスの計算**] を選択します。
+- **ソリューションエクスプローラー**で、ソリューションを右クリックし、[**コードメトリックスの計算**] を選択します。
 
 - [ **コードメトリックスの結果** ] ウィンドウで、[ **ソリューションのコードメトリックスを計算** する] ボタンを選択します。
 
