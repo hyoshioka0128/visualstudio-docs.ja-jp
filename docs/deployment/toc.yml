@@ -2,12 +2,12 @@
   href: index.yml
 - name: 概要
   items:
-    - name: 配置の概要
+    - name: 配置でのはじめに
+      href: deploying-applications-services-and-components.md
+    - name: フォルダー、IIS、または Azure にデプロイする
       href: deploying-applications-services-and-components-resources.md
 - name: クイックスタート
   items:
-    - name: 配置でのはじめに
-      href: deploying-applications-services-and-components.md
     - name: Azure App Service に配置する
       href: quickstart-deploy-to-azure.md
     - name: Linux 用 App Service に配置する
