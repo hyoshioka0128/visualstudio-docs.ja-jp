@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800854"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893373"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を表示しない
 
@@ -50,7 +50,7 @@ C++/CLI では、マクロ CA を使用して \_ \_ ヘッダーファイル内�
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性
 
-**エラー一覧**のコード分析警告のコンテキストまたは右クリック (または選択したままにする) メニューから [**抑制**] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性がコードに追加されるか、プロジェクトのグローバル抑制ファイルに追加されます。
+**エラー一覧**でコード分析の警告のコンテキストまたは右クリックメニューから [**抑制**] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性がコードまたはプロジェクトのグローバル抑制ファイルのいずれかに追加されます。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性の形式は次のとおりです。
 
