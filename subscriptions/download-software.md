@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248220"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801829"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
@@ -22,7 +22,7 @@ ms.locfileid: "88248220"
 サブスクリプションが職場または学校によって提供されている場合は、サブスクリプション管理者がダウンロードにアクセスできるかどうかを制御します。 ダウンロードへのアクセスを無効にすると、プロダクト キーへのアクセスも無効になります。 ダウンロードとプロダクトキーへのアクセス権がなく、必要な場合は、[管理者に問い合わせてください](contact-my-admin.md)。
 
 > [!NOTE]
-> Microsoft は、Office 365 のプロダクト キーの入手に関する問題を認識しています。  原因を調査しています。問題が解決されると、この記事が更新されます。 
+> 私たちは、Microsoft 365 のプロダクト キーの入手に関する問題を認識しています。  原因を調査しています。問題が解決されると、この記事が更新されます。 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>サブスクライバー ポータルでダウンロードを見つける方法
 [[ダウンロード]](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) ページにアクセスすると、製品の種類でグループ化された一般的なダウンロードが表示されます。  表示されている一般的なダウンロードのいずれかを選択するか、ページの上部にある検索バーを使用して任意の製品を検索できます。

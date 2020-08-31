@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a23afff970405bf7ae1bbd1c8aad326eb133780
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520381"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801166"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio による Python 検索パスの使用方法
 

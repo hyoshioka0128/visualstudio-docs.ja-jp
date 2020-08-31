@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-ms.openlocfilehash: dd16d8f28f78a7496ad3c93ab1db8eb51ebcf43b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902990"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801686"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -29,7 +29,7 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 特典タイル](_img/vs-pbi/vs-pbi-tile.png)
 
-3. Office 365 Developer サブスクリプションまたは Enterprise mobility + security など特定の他のサブスクリプション特典をアクティブ化した場合は、既にアカウントを持っている場合があります。  既存のアカウントが見つかった場合、既存のアカウントに Power BI Pro サブスクリプションを追加するか、または新しいアカウントにサインアップすることを選択できます。  1 つのユーザー ID でさまざまな特典にアクセスできるように、既存のアカウントに追加することをお勧めします。
+3. Microsoft 365 Developer サブスクリプションや Enterprise Mobility + Security など、特定の他のサブスクリプション特典をアクティブ化した場合は、既にアカウントを持っている可能性があります。  既存のアカウントが見つかった場合、既存のアカウントに Power BI Pro サブスクリプションを追加するか、または新しいアカウントにサインアップすることを選択できます。  1 つのユーザー ID でさまざまな特典にアクセスできるように、既存のアカウントに追加することをお勧めします。
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 特典の既存のアカウント](_img/vs-pbi/vs-pbi-existing-account.png)
 
@@ -55,9 +55,9 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro 特典の連絡先情報](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
-11. 次のページで、Power BI Pro の使用を開始するための設定が済んだことを確認します。  このページにはサインイン ページへのリンクがあります。  サインイン ページへのリンクとユーザー ID を記録することをお勧めします  (アカウントを設定するときに指定したアドレスにウェルカム メールも送信されます)。質問がある場合に使用できる自動 Office 365 アシスタント ウィンドウも表示されることがあります。  **[さあ、始めましょう]** をクリックして続行します。
+11. 次のページで、Power BI Pro の使用を開始するための設定が済んだことを確認します。  このページにはサインイン ページへのリンクがあります。  サインイン ページへのリンクとユーザー ID を記録することをお勧めします  (アカウントを設定するときに指定したアドレスにウェルカム メールも送信されます)。質問がある場合に使用できる、自動 Microsoft 365 アシスタント ウィンドウも表示されることがあります。  **[さあ、始めましょう]** をクリックして続行します。
 
-12. これで、Power BI Pro のアカウントがセットアップされ、ユーザーおよびドメイン管理、Office のソフトウェアのインストール、および Office 365 についての学習を行うことができる Office 365 管理センターが表示されます。  それで完了です!  準備ができました。
+12. これで、Power BI Pro のアカウントがセットアップされ、ユーザーおよびドメイン管理、Office のソフトウェアのインストール、および Microsoft 365 についての学習を行うことができる Microsoft 365 管理センターが表示されます。  それで完了です!  準備ができました。
 
 ## <a name="eligibility"></a>特典を受ける条件
 
@@ -91,7 +91,7 @@ A: はい。2 つの重要な注意事項はありますが、運用環境で使
 - Power BI Pro 特典は、政府機関向けのテナントには使用できません。
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q:Power BI Pro をアクティブ化しようとすると、"You already have an account through work\(作業中に既にアカウントを登録しています\)" というメッセージが表示されます。  特典はまだ使用できますか。
-A: はい。  このメッセージは、管理者ではないアクティブな Office 365 テナントが既に含まれるドメインにログオンしていることを示しています。  Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
+A: はい。  このメッセージは、管理者ではないアクティブな Microsoft 365 テナントが既に含まれるドメインにログオンしていることを示しています。  Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
 1. 作業中に既にアカウントを登録しているというメッセージが表示されたら、 **[新しいアカウントを作成]** をクリックします。
 
 2. 次の画面で連絡先情報を入力して、 **[次へ]** をクリックします。

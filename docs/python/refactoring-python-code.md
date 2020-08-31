@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea735dd5cc3da8d5509961dbc8b27eb6106fd2af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85520563"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801335"
 ---
 # <a name="refactor-python-code"></a>Python コードのリファクタリング
 
@@ -71,7 +71,7 @@ Visual Studio は、モジュール内で実際に定義されていないメン
 
 コードの作成では、モジュールの `import` ステートメントが最終的にまったく使われないことがよくあります。 Visual Studio はコードを分析するので、インポートされた名前が `import` ステートメントの出現箇所より下のスコープ内で使用されているかどうかを調べて、import ステートメントが必要かどうかを自動的に判断できます。
 
-エディター内の任意の場所を右クリックして **[Remove Imports (インポートの削除)]** を選択すると、 **[すべてのスコープ]** または **[Current Scope (現在のスコープ)]** のいずれかを選択できます。
+エディター内の任意の場所を右クリックして **[インポートを削除する]** を選択すると、 **[すべてのスコープ]** または単純に **[現在のスコープ]** から削除することができます。
 
 ![[Remove imports (インポートの削除)] メニュー](media/code-refactor-remove-imports-1.png)
 

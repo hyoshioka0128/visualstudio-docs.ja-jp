@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2074c4f15daf6a5ee5986a473ad98d7868409a3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a393afa3346b42786ff352dc0c2d48ea6c8b1152
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289262"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639381"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild コマンド ライン リファレンス
 
@@ -47,7 +47,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |Switch|省略形|説明|
 |------------|----------------|-----------------|
 |-detailedSummary|-ds|ビルド ログの最後に、ビルドされた構成に関する詳細情報と、それらの構成がノードに対してどのようにスケジュールされているかについて表示します。|
-|-graphBuild[:`True` または `False`]|-graph[:`True` または `False`]|MSBuild でプロジェクト グラフが作成およびビルドされるようにします。 グラフを作成するには、依存関係を形成するためのプロジェクト参照を識別する必要があります。 このグラフを構築するには、プロジェクト参照を、プロジェクトによって参照される前にビルドする必要があります。これは従来の MSBuild のスケジュールとは異なります。|
+|-graphBuild[:`True` または `False`]|-graph[:`True` または `False`]|MSBuild でプロジェクト グラフが作成およびビルドされるようにします。 グラフを作成するには、依存関係を形成するためのプロジェクト参照を識別する必要があります。 このグラフを構築するには、プロジェクト参照を、プロジェクトによって参照される前にビルドする必要があります。これは従来の MSBuild のスケジュールとは異なります。 MSBuild 16 以降が必要です。|
 |-help|/? または -h|使用方法を表示します。 たとえば、次のようなコマンドになります。<br /><br /> `msbuild.exe -?`|
 |-ignoreProjectExtensions: `extensions`|-ignore: `extensions`|ビルドするプロジェクト ファイルを決定するときに、指定した拡張子を無視します。 次の例に示すように、セミコロンまたはコンマを使用して複数の拡張子を区切ります。<br /><br /> `-ignoreprojectextensions:.vcproj,.sln`|
 |-interactive[:`True` または `False`]|-|ビルド内のアクションにユーザーとの対話が許可されることを示します。  対話型が想定されていない自動化されたシナリオでは、この引数を使用しないでください。 -Interactive を指定することは、-interactive:true を指定することと同じです。  このパラメーターは、応答ファイルから取得した値をオーバーライドするために使用します。

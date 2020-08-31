@@ -1,12 +1,12 @@
 ---
-title: コード分析の警告を表示しない
-ms.date: 12/01/2018
+title: コード分析の違反を抑制する
+ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
+ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893373"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "89091439"
 ---
-# <a name="suppress-code-analysis-warnings"></a>コード分析の警告を表示しない
+# <a name="suppress-code-analysis-violations"></a>コード分析の違反を抑制する
 
 多くの場合、警告が適用されないことを示すと便利です。 これは、コードがレビューされたことと、警告を抑制できることをチームメンバーに示します。 ソース内抑制 (ISS) では、属性を使用して <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 警告を抑制します。 属性は、警告を生成したコードセグメントの近くに配置できます。 属性を入力し <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> てソースファイルに追加することも、 **エラー一覧** の警告のショートカットメニューを使用して自動的に追加することもできます。
 
@@ -98,11 +98,11 @@ Visual Studio で警告が表示された場合は、 `SuppressMessage` [グロ�
 
 コード分析の警告は、属性が適用されるレベルでは抑制され <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> ます。 たとえば、属性は、アセンブリ、モジュール、型、メンバー、またはパラメーターレベルで適用できます。 この目的は、違反が発生したコードに対して抑制情報を密に結合することです。
 
-抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 次に例を示します。
+抑制の一般的な形式には、ルールカテゴリとルール識別子が含まれます。このルールには、ユーザーが判読できる規則名の表現が含まれています。 たとえば、次のように入力します。
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 次に例を示します。
+ソース内の抑制メタデータを最小限に抑えるためにパフォーマンス上の厳密な理由がある場合は、規則名を省略できます。 ルールカテゴリとそのルール ID が一緒に、十分に一意なルール識別子が構成されます。 たとえば、次のように入力します。
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

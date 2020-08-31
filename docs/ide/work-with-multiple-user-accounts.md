@@ -7,16 +7,16 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027606"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800230"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 
-複数の Microsoft アカウントや職場または学校のアカウントを所有している場合、そのすべてを Visual Studio に追加すると、個別にサインインしなくても、すべてのアカウントのリソースにアクセスできます。 Azure、Application Insights、Azure DevOps、Office 365 サービスでは、簡素化されたサインイン エクスペリエンスがサポートされています。
+複数の Microsoft アカウントや職場または学校のアカウントを所有している場合、そのすべてを Visual Studio に追加すると、個別にサインインしなくても、すべてのアカウントのリソースにアクセスできます。 Azure、Application Insights、Azure DevOps、Microsoft 365 サービスでは、合理化されたサインイン エクスペリエンスがサポートされています。
 
 1 台のコンピューターで複数のアカウントを追加した後、別のコンピューターで Visual Studio にサインインすると、そのアカウント セットがユーザーと共に移動されます。
 
@@ -53,7 +53,7 @@ Microsoft アカウントまたは組織アカウントで、Visual Studio に�
 
 ### <a name="access-azure-active-directory-in-a-web-project"></a>Web プロジェクトで Azure Active Directory にアクセス
 
-Azure Active Directory (AAD) では、ASP.NET MVC の Web アプリでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証がサポートされています。 ドメインの認証は、個々のユーザー アカウントの認証とは異なります。 Active Directory ドメインにアクセスできるユーザーは、各自の既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Office 365 アプリでは、ドメイン認証も使用できます。
+Azure Active Directory (AAD) では、ASP.NET MVC の Web アプリでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証がサポートされています。 ドメインの認証は、個々のユーザー アカウントの認証とは異なります。 Active Directory ドメインにアクセスできるユーザーは、各自の既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Microsoft 365 アプリでは、ドメイン認証も使用できます。
 
 ::: moniker range="vs-2017"
 

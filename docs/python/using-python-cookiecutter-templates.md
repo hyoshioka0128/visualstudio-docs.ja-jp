@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535149"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801582"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 拡張機能の使用
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) は、テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うためのグラフィカル ユーザー インターフェイスを提供します。 Cookiecutter は Visual Studio 2017 以降に付属しており、Visual Studio の以前のバージョンにも個別にインストールできます。
 
-Cookiecutter には、Python 3.3 以降 (32 ビットまたは 64 ビット) または Anaconda 3 4.2 以降 (32 ビットまたは 64 ビット) が必要です。 適切な Python インタープリターを使用できない場合、警告が Visual Studio に表示されます。 Visual Studio の実行中に Python インタープリターをインストールした場合は、Cookiecutter ツールバーの **[ホーム]** ボタンをクリックすると新しくインストールしたインタープリターが検出されます。 (環境全般の詳細については、「[Python 環境](managing-python-environments-in-visual-studio.md)」を参照してください。)
+Cookiecutter には、Python 3.3 以降 (32 ビットまたは 64 ビット) または Anaconda 3 4.2 以降 (32 ビットまたは 64 ビット) が必要です。 適切な Python インタープリターを使用できない場合、警告が Visual Studio に表示されます。 Visual Studio の実行中に Python インタープリターをインストールした場合は、Cookiecutter ツールバーの **[ホーム]** ボタンを選択すると、新しくインストールしたインタープリターが検出されます。 (環境全般の詳細については、「[Python 環境](managing-python-environments-in-visual-studio.md)」を参照してください。)
 
 インストールしたら、 **[表示]**  >  **[Cookiecutter Explorer]** を選択して Cookiecutter のウィンドウを開きます。
 
@@ -99,7 +99,7 @@ Cookiecutter テンプレートの作成の基本については、[Cookiecutter
 | --- | --- |
 | ラベル | エディターの上部に、変数名の代わりに変数に対して表示される内容を指定します。 |
 | [説明] | 編集コントロールに、変数の既定値の代わりに表示されるツールヒントを指定します。 |
-| URL | ラベルをハイパーリンクに変更し、URL を示したツールヒントとともに表示します。 ハイパーリンクをクリックすると、ユーザーの既定のブラウザーでその URL が開きます。 |
+| URL | ラベルをハイパーリンクに変更し、URL を示したツールヒントとともに表示します。 ハイパーリンクを選択すると、ユーザーの既定のブラウザーでその URL が開きます。 |
 | セレクター | 変数のエディターをカスタマイズできます。 現在、次のセレクターがサポートされています。<ul><li>`string`: 標準のテキスト ボックス (文字列の既定値)。</li><li>`list`: 標準のコンボ ボックス (リストの既定値)。</li><li>`yesno`: `y` と `n` のいずれかを選択するコンボ ボックス (文字列用)。</li><li>`odbcConnection`: データベース接続ダイアログを起動する **[...]** ボタンのあるテキスト ボックス。</li></ul> |
 
 例:
