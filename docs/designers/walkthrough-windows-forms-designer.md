@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816463"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801296"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
@@ -111,7 +111,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 コントロールのレイアウトを設定したので、DemoCalculator コントロールにボタンと表示を設定できます。
 
-1. **[ツールボックス]** で、`TextBox` コントロール アイコンをダブルクリックします。
+1. **ツールボックス**で、`TextBox` コントロール アイコンを選択します。
 
    `TextBox` コントロールが、`TableLayoutPanel` コントロールの最初のセルに配置されます。
 
@@ -129,11 +129,11 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 6. `TableLayoutPanel` コントロールを選択します。
 
-7. **[ツールボックス]** で、`Button` アイコンをダブルクリックします。
+7. **ツールボックス**で、`Button` アイコンを選択します。
 
    `Button` コントロールが、`TableLayoutPanel` コントロールの次の空いているセルに配置されます。
 
-8. **[ツールボックス]** で `Button` アイコンをさらに 4 回クリックして、`TableLayoutPanel` コントロールの 2 行目を設定します。
+8. **ツールボックス**で `Button` アイコンをさらに 4 回クリックし、`TableLayoutPanel` コントロールの 2 行目を設定します。
 
 9. **Shift** キーを押しながら選択して、5 つの `Button` コントロールをすべて選択します。 **Ctrl**+**C** キーを押して、`Button` コントロールをクリップボードにコピーします。
 
@@ -247,11 +247,11 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 ## <a name="implement-event-handlers"></a>イベント ハンドラーを実装する
 
-DemoCalculator コントロールのボタンには、電卓ロジックの多くを実装するために使用できるイベント ハンドラーがあります。 Windows フォーム デザイナーを使用すると、1 回のダブルクリックで、すべてのボタンのすべてのイベント ハンドラーのスタブを実装できます。
+DemoCalculator コントロールのボタンには、電卓ロジックの多くを実装するために使用できるイベント ハンドラーがあります。 Windows フォーム デザイナーを使用すると、すべてのボタンのすべてのイベント ハンドラーのスタブを 1 回の選択で実装できます。
 
 1. デザイン画面で、**Shift** キーを押しながら選択して、`Button` コントロールをすべて選択します。
 
-2. `Button` コントロールの 1 つをダブルクリックします。
+2. いずれかの `Button` コントロールを選択します。
 
    コード エディターが開き、デザイナーによって生成されたイベント ハンドラーが表示されます。
 
@@ -277,7 +277,7 @@ DemoCalculator コントロールを他の複合コントロールまたはフ�
 
 2. **ソリューション エクスプローラー**で、**DemoCalculatorTest** プロジェクトを右クリックし、 **[参照の追加]** を選択して、 **[参照の追加]** ダイアログ ボックスを開きます。
 
-3. **[プロジェクト]** タブを選択し、DemoCalculatorLib プロジェクトをダブルクリックして、テスト プロジェクトへの参照を追加します。
+3. **[プロジェクト]** タブに移動し、DemoCalculatorLib プロジェクトを選択して、テスト プロジェクトへの参照を追加します。
 
 4. **ソリューション エクスプローラー**で、**DemoCalculatorTest** を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
 

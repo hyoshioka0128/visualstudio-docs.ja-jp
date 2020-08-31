@@ -1,6 +1,6 @@
 - name: コード分析のドキュメント
   href: index.yml
-- name: マネージド コードの分析
+- name: .NET コード分析
   items:
     - name: 概要
       href: code-analysis-for-managed-code-overview.md
@@ -10,38 +10,28 @@
         - name: 概要
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
-        - name: ソース コード アナライザーのインストール
+        - name: サードパーティ製アナライザーのインストール
           href: install-roslyn-analyzers.md
-        - name: ソース コード アナライザーの構成
-          href: use-roslyn-analyzers.md
-        - name: ライブ コード分析のスコープ
-          href: configure-live-code-analysis-scope-managed-code.md
-        - name: 手動でのコード分析の実行
-          href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: コードの分析を無効にする
-          href: disable-code-analysis.md
-        - name: よくあるご質問
-          href: analyzers-faq.md
-        - name: FXCop アナライザー
+        - name: 構成
           items:
-            - name: FxCop アナライザーのインストール
-              href: install-fxcop-analyzers.md
-            - name: FxCop アナライザーへの移行
-              items:
-                - name: レガシ分析から FxCop アナライザーへの移行
-                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
-                - name: よくあるご質問
-                  href: fxcop-analyzers-faq.md
-                - name: 移植された規則
-                  href: fxcop-rule-port-status.md
-            - name: FxCop アナライザーの構成
-              items:
-                - name: 規則とプロジェクトの構成
-                  href: configure-fxcop-analyzers.md
-                - name: スコープ オプション
-                  href: fxcop-analyzer-options.md
-                - name: ルールのカテゴリを有効にする
-                  href: analyzer-rule-sets.md
+            - name: ソース コード分析の構成
+              href: use-roslyn-analyzers.md
+            - name: コード品質分析の構成
+              href: configure-fxcop-analyzers.md
+            - name: コード品質分析のカテゴリの構成
+              href: analyzer-rule-sets.md
+            - name: コード品質分析のオプション
+              href: fxcop-analyzer-options.md
+            - name: ライブ コード分析のスコープ
+              href: configure-live-code-analysis-scope-managed-code.md
+            - name: 手動でのコード分析の実行
+              href: how-to-run-code-analysis-manually-for-managed-code.md
+            - name: コードの分析を無効にする
+              href: disable-code-analysis.md
+            - name: コード分析の抑制
+              href: in-source-suppression-overview.md
+        - name: よく寄せられる質問
+          href: analyzers-faq.md
     - name: レガシ分析
       items:
         - name: 概要
@@ -137,16 +127,60 @@
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
             - name: バージョンの互換性
               href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: 規則セット
-      items:
-        - name: 概要
-          href: using-rule-sets-to-group-code-analysis-rules.md
-        - name: 規則セットを構成する
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: カスタム規則セットの作成
-          href: how-to-create-a-custom-rule-set.md
-        - name: 規則セット エディターの使用
-          href: working-in-the-code-analysis-rule-set-editor.md
+        - name: FXCop アナライザー
+          items:
+            - name: FxCop アナライザーのインストール
+              href: install-fxcop-analyzers.md
+            - name: FxCop アナライザーへの移行
+              items:
+                - name: レガシ分析から FxCop アナライザーへの移行
+                  href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
+                - name: よくあるご質問
+                  href: fxcop-analyzers-faq.md
+                - name: 移植された規則
+                  href: fxcop-rule-port-status.md
+            - name: FxCop アナライザーの構成
+              items:
+                - name: 規則セット
+                  items:
+                    - name: 概要
+                      href: rule-set-reference.md
+                    - name: すべての規則
+                      href: all-rules-rule-set.md
+                    - name: 基本正確性規則
+                      href: basic-correctness-rules-rule-set-for-managed-code.md
+                    - name: 基本デザイン ガイドライン規則
+                      href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                    - name: 拡張正確性規則
+                      href: extended-correctness-rules-rule-set-for-managed-code.md
+                    - name: 拡張デザイン ガイドライン規則
+                      href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                    - name: '[グローバリゼーション規則]'
+                      href: globalization-rules-rule-set-for-managed-code.md
+                    - name: マネージド最小規則
+                      href: managed-minimum-rules-rule-set-for-managed-code.md
+                    - name: マネージド推奨規則
+                      href: managed-recommended-rules-rule-set-for-managed-code.md
+                    - name: 混合最小規則
+                      href: mixed-minimum-rules-rule-set.md
+                    - name: 混合推奨規則
+                      href: mixed-recommended-rules-rule-set.md
+                    - name: ネイティブ最小規則
+                      href: native-minimum-rules-rule-set.md
+                    - name: ネイティブ推奨規則
+                      href: native-recommended-rules-rule-set.md
+                    - name: '[セキュリティ規則]'
+                      href: security-rules-rule-set-for-managed-code.md
+        - name: 規則セット
+          items:
+            - name: 概要
+              href: using-rule-sets-to-group-code-analysis-rules.md
+            - name: 規則セットを構成する
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
+            - name: カスタム規則セットの作成
+              href: how-to-create-a-custom-rule-set.md
+            - name: 規則セット エディターの使用
+              href: working-in-the-code-analysis-rule-set-editor.md
     - name: コード メトリックス
       items:
         - name: 概要
@@ -158,43 +192,11 @@
           href: working-with-code-metrics-data.md
     - name: 関連項目
       items:
-        - name: 規則セット
-          items:
-            - name: 概要
-              href: rule-set-reference.md
-            - name: すべての規則
-              href: all-rules-rule-set.md
-            - name: 基本正確性規則
-              href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: 基本デザイン ガイドライン規則
-              href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: 拡張正確性規則
-              href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: 拡張デザイン ガイドライン規則
-              href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: '[グローバリゼーション規則]'
-              href: globalization-rules-rule-set-for-managed-code.md
-            - name: マネージド最小規則
-              href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: マネージド推奨規則
-              href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: 混合最小規則
-              href: mixed-minimum-rules-rule-set.md
-            - name: 混合推奨規則
-              href: mixed-recommended-rules-rule-set.md
-            - name: ネイティブ最小規則
-              href: native-minimum-rules-rule-set.md
-            - name: ネイティブ推奨規則
-              href: native-recommended-rules-rule-set.md
-            - name: '[セキュリティ規則]'
-              href: security-rules-rule-set-for-managed-code.md
-        - name: 警告を表示しない
-          href: in-source-suppression-overview.md
-        - name: マネージド コードの警告
+        - name: .NET コード分析規則
           items:
             - name: 概要
               href: code-analysis-for-managed-code-warnings.md
-            - name: CheckId 別の警告
+            - name: コード品質ルールの概要
               href: code-analysis-warnings-for-managed-code-by-checkid.md
             - name: 暗号化警告
               items:

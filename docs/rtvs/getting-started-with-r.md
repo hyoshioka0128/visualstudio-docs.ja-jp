@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000517"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801179"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>R Tools for Visual Studio の概要
 
@@ -137,7 +137,7 @@ Visual Studio の主な強みの 1 つは、デバッグ UI です。 RTVS は�
 
 1. 最初に、**[R Tools]**、**[セッション]** の順に選択し、**[リセット]** メニューを使用して、現在のワークスペースをリセットし、ここまでに実行したすべてをクリアします。 既定では、対話型ウィンドウで行うすべてが、現在のセッションに入り、これはデバッガーでも使用されます。 セッションをリセットすることで、既存のデータがない状態でデバッグ セッションを開始できます。 ただし、ソース ファイルはワークスペースの外部で管理および保存されるため、 **[リセット]** コマンドは *script.R* ソース ファイルに影響しません。
 
-1. 前のセクションで作成された *script.R* ファイルを使用して、行にブレークポイントを設定します。行にキャレットを配置して **F9** キーを押すか、**[デバッグ]** から **[ブレークポイントの設定/解除]** メニューを選択すると、この行は `pop <-` で開始されます。 または、左側の余白をクリックすると、1 つのステップでこの操作を行うことができます。この行には、赤いブレークポイントのドットが表示されます。
+1. 前のセクションで作成された *script.R* ファイルを使用して、行にブレークポイントを設定します。行にキャレットを配置して **F9** キーを押すか、**[デバッグ]** から **[ブレークポイントの設定/解除]** メニューを選択すると、この行は `pop <-` で開始されます。 または、その行の左側の余白をクリックすると、ブレークポイントの赤いドットが表示されます。
 
     ![エディターでのブレークポイントの設定](media/getting-started-11-debug1.png)
 

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78235200"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800763"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -90,7 +90,7 @@ Visual Studio を使用して、macOS、Linux、Windows 用のアプリおよび
 
 ## <a name="connect-to-databases"></a>データベースへの接続
 
-**サーバー エクスプローラー**は、ローカル、リモートで、また Azure、Salesforce.com、Office 365、および Web サイトで SQL Server インスタンスとアセットを参照および管理するのに役立ちます。 **サーバー エクスプローラー**を開くには、メイン メニューで **[表示]**  >  **[サーバー エクスプローラー]** の順に選択します。 サーバー エクスプローラーの使用方法の詳細については、「[新しい接続を追加する](../data-tools/add-new-connections.md)」をご覧ください。
+**サーバー エクスプローラー**は、ローカル、リモートで、また Azure、Salesforce.com、Microsoft 365、および Web サイトで SQL Server インスタンスとアセットを参照および管理するのに役立ちます。 **サーバー エクスプローラー**を開くには、メイン メニューで **[表示]**  >  **[サーバー エクスプローラー]** の順に選択します。 サーバー エクスプローラーの使用方法の詳細については、「[新しい接続を追加する](../data-tools/add-new-connections.md)」をご覧ください。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) は、SQL Server、Azure SQL Database、Azure SQL Data Warehouse 用の強力な開発環境です。 データベースを構築、デバッグ、管理、およびリファクターできます。 データベース プロジェクトを操作したり、オンプレミスまたはオフプレミスで接続されたデータベース インスタンスを直接操作したりすることができます。
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248029"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800308"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 
@@ -31,7 +31,7 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 ## <a name="publish-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service へ発行する
 
-1. ソリューション エクスプローラーで、プロジェクトを右クリックして、 **[発行]** を選択します (または **[ビルド]**  >  **[発行]** メニュー項目を使用します)。
+1. ソリューション エクスプローラーで、プロジェクト ノードを右クリックして、 **[発行]** を選択します (または **[ビルド]**  >  **[発行]** メニュー項目を使用します)。
 
     ![ソリューション エクスプローラーのプロジェクト コンテキスト メニューにある [発行] コマンド](../deployment/media/quickstart-publish.png "[発行] を選択する")
 
@@ -51,7 +51,7 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
     ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
-1. **[発行]** ダイアログで、新しく作成されたインスタンスが自動的に選択されています。 準備ができたら、 **[完了]** をクリックします。
+1. **[発行]** ダイアログで、新しく作成されたインスタンスが自動的に選択されています。 準備ができたら、 **[完了]** を選択します。
 
     ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-windows-select-instance.png)
 

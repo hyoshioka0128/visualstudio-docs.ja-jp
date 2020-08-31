@@ -7,17 +7,17 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Microsoft 365 Apps for enterprise に関する説明を読み、インストールする
-ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250747"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800815"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise
 Microsoft 365 Apps for enterprise (以前の Office 365 Pro Plus) は、一部の Visual Studio サブスクリプションで利用できます。 
 
-最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 Pro Plus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
+最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Microsoft 365 apps for enterprise は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
 
 > [!NOTE]
 > Visual Studio サブスクリプションに含まれていれば、Microsoft 365 Apps for enterprise を運用環境で使用するためのライセンスが与えられます。  

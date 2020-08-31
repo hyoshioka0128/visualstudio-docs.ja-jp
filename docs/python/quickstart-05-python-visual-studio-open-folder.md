@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62431162"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801673"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>クイック スタート: フォルダー内の Python コードを開いて実行する
 
@@ -77,7 +77,7 @@ ms.locfileid: "62431162"
     ![Python ファイルの [デバッグ設定と起動設定] コマンド](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
-    > 選択肢として **[既定]** が表示されない場合は、 **[デバッグ設定と起動設定]** コマンドを選択するときに Python の *.py* ファイルを右クリックしたことを確認してください。 Visual Studio では、ファイルの種類を使用して、表示するデバッガー オプションが決定されます。
+    > 選択肢として **[既定]** が表示されない場合は、 **[デバッグ設定と起動設定]** コマンドを選択するときに Python の *.py* ファイルを選択したことを確認してください。 Visual Studio では、ファイルの種類を使用して、表示するデバッガー オプションが決定されます。
 
 1. Visual Studio で *launch.vs.json* という名前のファイルが開かれます。このファイルは隠しフォルダー *.vs* にあります。 このファイルでは、プロジェクトのデバッグ コンテキストが記述されています。 作業ディレクトリを指定するには、python-koans の例での `"workingDirectory": "python3"` のように、`"workingDirectory"` の値を追加します。
 

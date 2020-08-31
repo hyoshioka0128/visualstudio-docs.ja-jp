@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027328"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711665"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>チュートリアル: Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -55,7 +55,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 
 ## <a name="create-a-web-api-project"></a>Web API プロジェクトを作成する
 
-同じソリューションにプロジェクトを追加し、*MyWebAPI* という名前を付けます。 プロジェクト タイプとして **API** を選択し、 **[HTTPS 用の構成]** チェックボックスをオフにします。 この設計では、同じ Web アプリケーション内のコンテナー間の通信ではなく、クライアントとの通信にのみ SSL を使用します。 `WebFrontEnd` のみが HTTPS を必要とし、例のコードでは、そのチェックボックスをオフにしていることを前提としています。
+同じソリューションにプロジェクトを追加し、*MyWebAPI* という名前を付けます。 プロジェクト タイプとして **API** を選択し、 **[HTTPS 用の構成]** チェックボックスをオフにします。 この設計では、同じ Web アプリケーション内のコンテナー間の通信ではなく、クライアントとの通信にのみ SSL を使用します。 `WebFrontEnd` のみが HTTPS を必要とし、例のコードでは、そのチェックボックスをオフにしていることを前提としています。 一般に、Visual Studio によって使用される .NET 開発者証明書は外部からコンテナーへの要求に対してのみサポートされ、コンテナーからコンテナーへの要求に対してはサポートされません。
 
 ::: moniker range="vs-2017"
    ![Web API プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -123,7 +123,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
                 //app.UseHttpsRedirection();
     ```
 
-1. `WebFrontEnd` プロジェクトで、 **[追加] > [コンテナー オーケストレーター サポート]** の順に選択します。 **[Docker サポート オプション]** ダイアログが表示されます。
+1. `WebFrontEnd` プロジェクトで、**[追加] > [コンテナー オーケストレーター サポート]** の順に選択します。 **[Docker サポート オプション]** ダイアログが表示されます。
 
 1. **[Docker Compose]** を選択します。
 
@@ -178,7 +178,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 
 1. サイトをローカルで実行して (F5 キーまたは Ctrl + F5 キー)、想定どおりに動作することを確認します。 .NET Core 2.x バージョンですべてが正しく構成されている場合、"Hello from webfrontend and webapi (with value 1)" というメッセージが表示されます。  .NET Core 3 では、天気予報データが表示されます。
 
-   コンテナー オーケストレーションを追加するときに使用する最初のプロジェクトは、実行またはデバッグの際に起動されるように設定されます。 docker-compose プロジェクトの **[プロジェクトのプロパティ]** で、起動アクションを構成できます。  docker-compose プロジェクト ノードで、右クリックしてコンテキスト メニューを開き、 **[プロパティ]** を選択するか、Alt + Enter キーを押します。  次のスクリーンショットは、ここで使用するソリューションに必要なプロパティを示しています。  たとえば、 **[サービス URL]** プロパティをカスタマイズすることで読み込まれるページを変更できます。
+   コンテナー オーケストレーションを追加するときに使用する最初のプロジェクトは、実行またはデバッグの際に起動されるように設定されます。 docker-compose プロジェクトの **[プロジェクトのプロパティ]** で、起動アクションを構成できます。  docker-compose プロジェクト ノードで、右クリックしてコンテキスト メニューを開き、**[プロパティ]** を選択するか、Alt + Enter キーを押します。  次のスクリーンショットは、ここで使用するソリューションに必要なプロパティを示しています。  たとえば、**[サービス URL]** プロパティをカスタマイズすることで読み込まれるページを変更できます。
 
    ![docker-compose プロジェクト プロパティのスクリーンショット](media/tutorial-multicontainer/launch-action.png)
 
@@ -188,7 +188,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 
    .NET 3.1 の Web アプリでは、JSON 形式で気象データが表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Azure にコンテナー](/azure/containers)をデプロイするためのオプションを確認します。
 

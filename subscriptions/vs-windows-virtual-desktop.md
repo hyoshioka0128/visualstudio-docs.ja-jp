@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを使用して Microsoft Windows Virtual Desktop を活用する方法について説明します
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183588"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800607"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>サブスクリプション内で Windows Virtual Desktop にアクセスする 
 Visual Studio のサブスクライバーは、Microsoft Windows Virtual Desktop サービスで Azure Dev/Test の個人クレジットを使用できるようになりました。  
-Windows Virtual Desktop は、クラウド上で実行される包括的なデスクトップおよびアプリの仮想化サービスです。 これは、簡略化された管理、マルチセッションの Windows 10、Office 365 ProPlus の最適化、リモート デスクトップ サービス (RDS) 環境のサポートを提供する唯一の仮想デスクトップ インフラストラクチャ (VDI) です。 Windows デスクトップとアプリを数分で Azure にデプロイして拡張し、組み込みのセキュリティとコンプライアンスの機能を利用できます。
+Windows Virtual Desktop は、クラウド上で実行される包括的なデスクトップおよびアプリの仮想化サービスです。 これは、簡素化された管理、マルチセッション Windows 10、Microsoft 365 Apps for enterprise 向けの最適化、リモート デスクトップ サービス (RDS) 環境のサポートを提供する、唯一の仮想デスクトップ インフラストラクチャ (VDI) です。 Windows デスクトップとアプリを数分で Azure にデプロイして拡張し、組み込みのセキュリティとコンプライアンスの機能を利用できます。
 Azure 上の Windows Virtual Desktop でできることは次のとおりです。
 - マルチセッションの Windows 10 デプロイを設定し、スケーラビリティを備えた完全版の Windows 10 を提供
-- Office 365 ProPlus を仮想化および最適化し、マルチユーザーの仮想シナリオで運用
+- Microsoft 365 Apps for enterprise を仮想化および最適化し、マルチユーザーの仮想シナリオで運用
 - Windows 7 仮想デスクトップに無料の延長セキュリティ更新プログラムを提供
 - 既存のリモート デスクトップ サービス (RDS) と Windows Server のデスクトップやアプリをあらゆるコンピューターで利用
 - デスクトップとアプリの両方を仮想化
