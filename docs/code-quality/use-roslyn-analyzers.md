@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893425"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219778"
 ---
 # <a name="use-code-analyzers"></a>コードアナライザーを使用する
 
@@ -102,6 +102,9 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 - すべてのアナライザールールのルールの重要度を設定します:
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> 一度に複数のアナライザー規則を構成するエントリは、 *既定で有効になっ*ている規則にのみ適用されます。 アナライザーパッケージで既定で無効とマークされているアナライザーの規則は、明示的なエントリによって有効にする必要があり `dotnet_diagnostic.<rule ID>.severity = <severity>` ます。
 
 特定の規則 ID に適用できるエントリが複数ある場合、該当するエントリを選択するための優先順位は次のとおりです。
 
