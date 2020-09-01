@@ -372,12 +372,14 @@
                   href: ca1305.md
                 - name: 'CA1306:データ型のロケールを設定します'
                   href: ca1306.md
-                - name: 'CA1307:StringComparison の指定'
+                - name: 'CA1307:意味を明確にするための StringComparison の指定'
                   href: ca1307.md
                 - name: 'CA1308:文字列を大文字に標準化します'
                   href: ca1308.md
                 - name: 'CA1309:順序を示す StringComparison を使用します'
                   href: ca1309.md
+                - name: 'CA1310:正確な StringComparison の指定'
+                  href: ca1310.md
                 - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
                   href: ca2101.md
             - name: 相互運用性に関する警告
@@ -569,6 +571,8 @@
                   href: ca1835.md
                 - name: 'CA1836:使用可能な場合は、Count よりも IsEmpty を優先します'
                   href: ca1836.md
+                - name: 'CA1837:Process.GetCurrentProcess().Id の代わりに Environment.ProcessId を使用します'
+                  href: ca1837.md
                 - name: 'CA1838: P/Invokes の StringBuilder パラメーターを使用しません'
                   href: ca1838.md
             - name: 移植性に関する警告
@@ -601,6 +605,8 @@
                   href: ca2006.md
                 - name: 'CA2007:タスクを直接待機しないでください'
                   href: ca2007.md
+                - name: 'CA2008:TaskScheduler を渡さずにタスクを作成しない'
+                  href: ca2008.md
                 - name: 'CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください'
                   href: ca2009.md
                 - name: 'CA2011: セッター内でプロパティを割り当てません'
@@ -985,6 +991,8 @@
                   href: ca2247.md
                 - name: 'CA2248: 正しい enum 引数を Enum.HasFlag に指定します'
                   href: ca2248.md
+                - name: 'CA2249:String.IndexOf の代わりに String.Contains を使用することを検討します'
+                  href: ca2249.md
             - name: 自動機能の中断
               href: automatic-feature-suspension.md
             - name: 発行に関する警告
