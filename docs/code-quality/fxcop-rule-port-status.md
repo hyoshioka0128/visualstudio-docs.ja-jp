@@ -10,24 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189477"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219726"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
-以前に Visual Studio で静的コード分析を使用したことがある場合は、現在の実装で[FxCop アナライザー](install-fxcop-analyzers.md)として使用できる規則を考えているかもしれません。 このページには、移植されている規則と、移植されていない規則、およびそれらを移植する計画があるかどうかが一覧表示されます。
+以前に Visual Studio で静的コード分析を使用したことがある場合は、現在の実装で [FxCop アナライザー](install-fxcop-analyzers.md)として使用できる規則を考えているかもしれません。 このページには、移植されている規則と、移植されていない規則、およびそれらを移植する計画があるかどうかが一覧表示されます。
 
 ## <a name="ported-rules"></a>移植された規則
 
-Roslyn-アナライザーリポジトリの自動生成された[ドキュメントページ](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)には、FxCop アナライザーに移植されたルールの最新の一覧が含まれています。 このページには、規則が既定で有効になっているかどうかや、関連付けられている*コード修正プログラム*があるかどうかなどの追加情報も含まれています。 ([コード修正](../ide/quick-actions.md)は、Visual Studio の電球アイコンメニューで使用できるワンクリック修正です)。
+Roslyn-アナライザーリポジトリの自動生成された [ドキュメントページ](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) には、FxCop アナライザーに移植されたルールの最新の一覧が含まれています。 このページには、規則が既定で有効になっているかどうかや、関連付けられている *コード修正プログラム*があるかどうかなどの追加情報も含まれています。 ([コード修正](../ide/quick-actions.md) は、Visual Studio の電球アイコンメニューで使用できるワンクリック修正です)。
 
-このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md)に移植された fxcop 規則の一覧には次のものが含まれます。
+このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md) に移植された fxcop 規則の一覧には次のものが含まれます。
 
-ルール ID | タイトル
+ルールの ID | タイトル
 --------|---------
 [CA1000](ca1000.md) | ジェネリック型の静的メンバーを宣言しません
 [CA1001](ca1001.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
@@ -57,7 +57,7 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 [CA1050](ca1050.md) | 名前空間で型を宣言します
 [CA1051](ca1051.md) | 参照可能なインスタンス フィールドを宣言しません
 [CA1052](ca1052.md) | 静的ホルダー型は static または NotInheritable である必要があります
-[CA1053](ca1053.md) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの[CA1052](ca1052.md)に含まれています)
+[CA1053](ca1053.md) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの [CA1052](ca1052.md) に含まれています)
 [CA1054](ca1054.md) | Uri パラメーターを文字列にすることはできません
 [CA1055](ca1055.md) | Uri 戻り値を文字列にすることはできません
 [CA1056](ca1056.md) | Uri プロパティを文字列にすることはできません
@@ -68,14 +68,14 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 [CA1063](ca1063.md) | IDisposable を正しく実装する
 [CA1064](ca1064.md) | 例外は public として設定する必要があります
 [CA1065](ca1065.md) | 予期しない場所に例外を発生させません
-[CA1066](ca1066.md) | 型{0}は Equals を\<オーバーライドするため、IEquatable T> を実装する必要があります
-[CA1067](ca1067.md) | IEquatable\<T> を実装するときに、object.equals (object) をオーバーライドします
+[CA1066](ca1066.md) | Type {0} は Equals をオーバーライドするため、IEquatable を実装しなければなりませ \<T> ん
+[CA1067](ca1067.md) | IEquatable を実装するときに、Object.equals (object) をオーバーライドします。\<T>
 [CA1068](ca1068.md) | CancellationToken パラメーターは最後に指定する必要があります
 CA1200 | プレフィックスで cref タグを使用しません
 [CA1303](ca1303.md) | ローカライズされるパラメーターとしてリテラルを渡さない
 [CA1304](ca1304.md) | CultureInfo を指定します
 [CA1305](ca1305.md) | IFormatProvider を指定します
-[CA1307](ca1307.md) | StringComparison の指定
+[CA1307](ca1307.md) | 意味を明確にするための StringComparison の指定
 [CA1308](ca1308.md) | 文字列を大文字に標準化します
 [CA1309](ca1309.md) | 序数の文字列比較を使用する
 [CA1401](ca1401.md) | P/Invoke は参照可能であることはできません
@@ -119,7 +119,7 @@ CA1826 | インデックス可能なコレクションでは、列挙可能な�
 [CA2000](ca2000.md) | スコープを失う前にオブジェクトを破棄
 [CA2002](ca2002.md) | 弱い ID を伴うオブジェクト上でロックしません
 [CA2007](ca2007.md) | 待機中のタスクで ConfigureAwait を呼び出すことを検討してください
-CA2008 | TaskScheduler を渡さずにタスクを作成しない
+[CA2008](ca2008.md) | TaskScheduler を渡さずにタスクを作成しない
 CA2009 | ImmutableCollection 値に対して ToImmutableCollection を呼び出さないでください
 CA2010 | PreserveSigAttribute でマークされたメソッドによって返される値を常に使用する
 [CA2100](ca2100.md) | SQL クエリのセキュリティ脆弱性を確認
@@ -209,9 +209,9 @@ CA9999 | アナライザーのバージョンが一致しません
 
 ### <a name="rules-that-may-be-ported"></a>移植される可能性がある規則
 
-次の FxCop レガシ分析規則は、まだアナライザーとして実装されていませんが、の場合もあります。 これは、技術的な理由がブロックされているか、ルールの優先度が低いことが原因である可能性があります。 各ルールの移植状態の詳細については、[**問題の追跡**] 列のリンクをクリックしてください。
+次の FxCop レガシ分析規則は、まだアナライザーとして実装されていませんが、の場合もあります。 これは、技術的な理由がブロックされているか、ルールの優先度が低いことが原因である可能性があります。 各ルールの移植状態の詳細については、[ **問題の追跡** ] 列のリンクをクリックしてください。
 
-ルール ID | 問題の追跡
+ルールの ID | 問題の追跡
 --- | ---
 [CA1002](ca1002.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
 [CA1004](ca1004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)

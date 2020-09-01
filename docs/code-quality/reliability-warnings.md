@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 095631abc5678a27a4e79611433ff446337b956c
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835616"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219609"
 ---
 # <a name="reliability-warnings"></a>信頼性に関する警告
 
@@ -34,8 +34,9 @@ ms.locfileid: "85835616"
 |[CA2004:GC.KeepAlive への呼び出しを削除します](../code-quality/ca2004.md)|SafeHandle の使用法に変換する場合は、GC のすべての呼び出しを削除します。KeepAlive (オブジェクト)。 この場合、クラスは GC を呼び出す必要がありません。KeepAlive。ファイナライザーがなくても、SafeHandle に依存してそれらの OS ハンドルを最終処理することを前提としています。|
 |[CA2006:SafeHandle を使用して、ネイティブ リソースを要約します](../code-quality/ca2006.md)|マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。|
 |[CA2007:タスクを直接待機しないでください](../code-quality/ca2007.md)|非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を <xref:System.Threading.Tasks.Task> 直接待機します。|
-|[CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](../code-quality/ca2009.md)|`ToImmutable`メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。|
-|[CA2011: セッター内でプロパティを割り当てません](../code-quality/ca2011.md) | プロパティに、独自の[set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
+|[CA2008: TaskScheduler を渡さずにタスクを作成することはできません](../code-quality/ca2008.md)|タスクの作成または継続操作で、パラメーターを指定しないメソッドオーバーロードが使用さ <xref:System.Threading.Tasks.TaskScheduler> れています。|
+|[CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](../code-quality/ca2009.md)|`ToImmutable` メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。|
+|[CA2011: セッター内でプロパティを割り当てません](../code-quality/ca2011.md) | プロパティに、独自の [set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
 |[CA2012: ValueTask を正しく使用する必要があります](../code-quality/ca2012.md) | メンバーの呼び出しから返される ValueTasks は、直接待機することを意図しています。  ValueTask を複数回使用しようとするか、完了する前に1つの結果に直接アクセスすると、例外または破損が発生する可能性があります。  このような ValueTask を無視すると、機能的なバグが示され、パフォーマンスが低下する可能性があります。 |
 |[CA2013: 値の型と共に ReferenceEquals を使用しないでください](../code-quality/ca2013.md) | を使用して値を比較するときに <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> 、obja と Obja が値型の場合、メソッドに渡される前にボックス化され <xref:System.Object.ReferenceEquals%2A> ます。 これは、objA と Obja の両方が値型の同じインスタンスを表している場合でも、 <xref:System.Object.ReferenceEquals%2A> メソッドは false を返すことを意味します。 |
 |[CA2014: ループで stackalloc を使用しないでください。](../code-quality/ca2014.md) | Stackalloc によって割り当てられるスタック領域は、現在のメソッドの呼び出しの最後にのみ解放されます。  ループでこれを使用すると、スタックが無制限に増加し、最終的にスタックオーバーフロー状態になる可能性があります。 |
