@@ -1,5 +1,5 @@
 ---
-title: '&lt;パッケージ&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;Package &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745761"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;パッケージ&gt;要素 (ブートス トラップ)
-`Package`要素は、パッケージ ファイル内の最上位の XML 要素。
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; 要素 (ブートストラップ)
+要素は、 `Package` パッケージファイル内の最上位レベルの XML 要素です。
 
 ## <a name="syntax"></a>構文
 
@@ -141,16 +141,16 @@ ms.locfileid: "66745761"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `Package`要素が必要です。 次の属性があります。
+ `Package` 要素は必須です。 これには次の属性があります。
 
 | 属性 | 説明 |
 |--------------------| - |
-| `Culture` | 必須。 このパッケージには、使用する言語を決定するカルチャを定義します。 この属性がキーに、`Strings`要素で、インストール時に製品名とエラー メッセージのカルチャに固有の文字列の一覧を表示します。 |
-| `Name` | 必須。 などのツールで開発者に表示されるパッケージの名前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 この属性がキーに、`Strings`要素が含まれている、`String`を持つ要素、`Name`と`Culture`プロパティが一致するように設定、`Name`と`Culture`プロパティの`Package`します。 |
-| `LicenseAgreement` | 省略可能です。 ライセンス契約 (EULA) を含む配布パッケージでは、ファイルの名前を指定します。  このファイルは、プレーン テキストを指定できます ( *.txt*) またはリッチ テキスト形式。 ( *.rtf*) |
+| `Culture` | 必須。 使用する言語を決定する、このパッケージのカルチャを定義します。 この属性は要素のキーであり `Strings` 、インストール時に製品名とエラーメッセージのカルチャ固有の文字列を一覧表示します。 |
+| `Name` | 必須。 などのツール内で開発者に表示されるパッケージの名前 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 この属性は、要素に対するキーです。この要素には、のプロパティおよび `Strings` `String` プロパティと `Name` `Culture` 一致するように、プロパティとプロパティが設定された要素が含まれている必要があり `Name` `Culture` `Package` ます。 |
+| `LicenseAgreement` | 省略可能。 使用許諾契約書 (EULA) を含む配布パッケージ内のファイルの名前を指定します。  このファイルには、プレーンテキスト (*.txt*) またはリッチテキスト形式を使用できます。 (*.rtf*) |
 
 ## <a name="example"></a>例
- 次のコード例では、.NET Framework 2.0 再配布するための完全なパッケージ ファイルを示します。
+ .NET Framework 2.0 を再配布するための完全なパッケージファイルのコード例を次に示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -188,4 +188,4 @@ ms.locfileid: "66745761"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
+- [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

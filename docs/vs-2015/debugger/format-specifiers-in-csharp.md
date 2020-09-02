@@ -1,5 +1,5 @@
 ---
-title: 書式指定子 (C#) |Microsoft Docs
+title: C# の書式指定子 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,13 +28,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682478"
 ---
-# <a name="format-specifiers-in-c"></a>C# の書式指定子\#
+# <a name="format-specifiers-in-c"></a>C での書式指定子\#
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "65682478"
 }
 ```
 
-`my_var1` 変数をウォッチ ウィンドウに追加し (デバッグ中に **[デバッグ]/[ウィンドウ]/[ウォッチ]/、[ウォッチ 1]**)、表示を 16 進数に設定します ( **ウォッチ** ウィンドウで変数を右クリックし、 **[16 進数で表示]** を選択)。 これで、 **ウォッチ** ウィンドウに値 "0x0065" が表示されます。 この値を 16 進数の整数ではなく 10 進数の整数で表示するには、[名前] 列で変数名の後に 10 進数の書式指定子 **, d**を追加します。 [値] 列には、10 進数の値 "101" が表示されるようになりました。
+`my_var1` 変数をウォッチ ウィンドウに追加し (デバッグ中に **[デバッグ]/[ウィンドウ]/[ウォッチ]/、[ウォッチ 1]**)、表示を 16 進数に設定します ( **ウォッチ** ウィンドウで変数を右クリックし、 **[16 進数で表示]** を選択)。 これで、[ **ウォッチ** ] ウィンドウに値0x0065 が含まれていることが示されます。 この値を 16 進数の整数ではなく 10 進数の整数で表示するには、[名前] 列で変数名の後に 10 進数の書式指定子 **, d**を追加します。 [値] 列には、10 進数の値 "101" が表示されるようになりました。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
@@ -70,10 +70,10 @@ ms.locfileid: "65682478"
 |h|16 進整数|61541|0x0000F065|
 |nq|引用符なしの文字列。|"My String"|My String|
 |hidden|パブリック メンバーとパブリックでないメンバーをすべて表示します。|パブリック メンバーを表示します。|すべてのメンバーを表示します。|
-|raw|未処理の項目ノードで表示されるように項目を表示します。 プロキシ オブジェクトのみで有効です。|ディクショナリ\<T >|ディクショナリの未加工ビュー\<T >|
-|results|IEnumerable または IEnumerable を実装する型の変数と共に使用\<T >、通常はクエリ式の結果。 クエリ結果を含むメンバーのみを表示します。|すべてのメンバーを表示します。|クエリの条件に一致するメンバーを表示します。|
+|raw|未処理の項目ノードで表示されるように項目を表示します。 プロキシ オブジェクトのみで有効です。|Dictionary\<T>|ディクショナリの未加工ビュー\<T>|
+|results|IEnumerable または IEnumerable を実装する型の変数と共に使用され \<T> ます。通常は、クエリ式の結果です。 クエリ結果を含むメンバーのみを表示します。|すべてのメンバーを表示します。|クエリの条件に一致するメンバーを表示します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)
 - [[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

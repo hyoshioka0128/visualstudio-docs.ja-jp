@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682370"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
@@ -56,7 +56,7 @@ ms.locfileid: "65682370"
   
 1. コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します (\My Documents\、\Desktop\\ など)。  
   
-2. 「**md HelloWorld**」と入力して、\HelloWorld\\ というサブフォルダーを作成します。  
+2. 「**md HelloWorld**」と入力して、 \HelloWorld\\ というサブフォルダーを作成します。  
   
 3. 「**cd HelloWorld**」と入力して、その新しいフォルダーに移動します。  
   
@@ -173,7 +173,7 @@ ms.locfileid: "65682370"
   
 #### <a name="to-build-the-application"></a>アプリケーションをビルドするには  
   
-1. コマンド プロンプトで、「**msbuild helloworld.csproj/t:Build**」と入力します。  
+1. コマンドプロンプトで、「 **msbuild helloworld. .csproj/t: Build**」と入力します。  
   
      Visual C# コンパイラが呼び出され、Helloworld プロジェクト ファイルの Build ターゲットがビルドされて、Helloworld アプリケーションが作成されます。  
   
@@ -184,7 +184,7 @@ ms.locfileid: "65682370"
 > [!NOTE]
 > 詳細レベルを上げると、ビルドの詳細情報を表示できます。 詳細レベルを "detailed" に設定するには、コマンド プロンプトで次のいずれかのコマンドを入力します。  
 >   
-> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld. .csproj/t: Build/verbosity: detailed**  
   
 ## <a name="adding-build-properties"></a>ビルド プロパティを追加する  
  プロジェクト ファイルにビルド プロパティを追加すると、ビルドをさらに細かく制御できます。 ここでは、次のプロパティを追加します。  
@@ -260,11 +260,11 @@ ms.locfileid: "65682370"
   
 #### <a name="to-test-the-build-properties"></a>ビルド プロパティをテストするには  
   
-1. コマンド プロンプトで、「**msbuild helloworld.csproj/t:Build**」と入力します。  
+1. コマンドプロンプトで、「 **msbuild helloworld. .csproj/t: Build**」と入力します。  
   
      \Bin\ フォルダーが作成され、Visual C# コンパイラが呼び出されて、MSBuildSample アプリケーションが作成されて \Bin\ フォルダーに配置されます。  
   
-2. 「**dir Bin**」と入力して、\Bin\ フォルダーが作成されていることと、そこに MSBuildSample アプリケーションが含まれていることを確認します。  
+2. \ Bin\ フォルダーが作成されていること、および MSBuildSample アプリケーションが含まれていることを確認するには、「 **Dir Bin**」と入力します。  
   
 3. 「**Bin\MSBuildSample**」と入力してアプリケーションをテストします。  
   
@@ -335,31 +335,31 @@ ms.locfileid: "65682370"
   
 #### <a name="to-test-the-build-targets"></a>ビルド ターゲットをテストするには  
   
-1. コマンド プロンプトで、「**msbuild helloworld.csproj /p:AssemblyName=Greetings**」と入力します。  
+1. コマンドプロンプトで、「 **msbuild helloworld. .csproj/p: AssemblyName = 応答**」と入力します。  
   
-     **/t** スイッチを使用してターゲットを明示的に設定していないため、既定の Build ターゲットがビルドされます。 **/p** スイッチでは、`AssemblyName` プロパティをオーバーライドして新しい値 `Greetings` を割り当てています。 これにより、Greetings.exe という新しいアプリケーションが \Bin\ フォルダーに作成されます。  
+     ターゲットを明示的に設定するために **/t** スイッチを使用していなかったため、MSBuild は既定のビルドターゲットを実行します。 **/P**スイッチはプロパティをオーバーライド `AssemblyName` し、新しい値を指定し `Greetings` ます。 これにより、Greetings.exe という新しいアプリケーションが \Bin\ フォルダーに作成されます。  
   
-2. 「**dir Bin**」と入力して、\Bin\ フォルダーに MSBuildSample アプリケーションと新しい Greetings アプリケーションの両方が含まれていることを確認します。  
+2. \ Bin\ フォルダーに MSBuildSample アプリケーションと新しい応答アプリケーションの両方が含まれていることを確認するには、「 **Dir Bin**」と入力します。  
   
 3. 「**Bin\Greetings**」と入力して、Greetings アプリケーションをテストします。  
   
      "**Hello, world!** " というメッセージが表示されます。  
   
-4. 「**msbuild helloworld.csproj /t:clean**」を入力して、MSBuildSample アプリケーションを削除します。  
+4. 「 **Msbuild helloworld. .csproj/t: clean**」と入力して、MSBuildSample アプリケーションを削除します。  
   
      Clean タスクが実行されて、`AssemblyName` プロパティの値が既定値の `MSBuildSample` になっているアプリケーションが削除されます。  
   
-5. 「**msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**」を入力して、Greetings アプリケーションを削除します。  
+5. 「 **Msbuild helloworld. .csproj/t: clean/p: AssemblyName = 応答**」と入力して、応答アプリケーションを削除します。  
   
      Clean タスクが実行されて、**AssemblyName** プロパティの値が、指定した値 `Greetings` になっているアプリケーションが削除されます。  
   
-6. 「**dir Bin**」と入力して、\Bin\ フォルダーが空になったことを確認します。  
+6. \ Bin\ フォルダーが空になっていることを確認するには、「 **Dir Bin**」と入力します。  
   
 7. 「**msbuild**」と入力します。  
   
      プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、helloworld.csproj ファイルがビルドされます。 その結果、\Bin\ フォルダーに MSBuildSample アプリケーションが作成されます。  
   
-     「**dir Bin**」と入力して、\Bin\ フォルダーに MSBuildSample アプリケーションが含まれていることを確認します。  
+     \ Bin\ フォルダーに MSBuildSample アプリケーションが含まれていることを確認するには、「 **Dir Bin**」と入力します。  
   
 ## <a name="building-incrementally"></a>インクリメンタル ビルドを実行する  
  MSBuild では、ターゲットが依存しているソース ファイルやターゲット ファイルが変更された場合にのみターゲットをビルドすることができます。 ファイルが変更されているかどうかはファイルのタイム スタンプを使用して特定されます。  
@@ -383,19 +383,19 @@ ms.locfileid: "65682370"
     </Target>  
     ```  
   
-2. コマンド プロンプトで「**msbuild /v:d**」と入力して、Build ターゲットをテストします。  
+2. コマンドプロンプトで **「msbuild/v: d** 」と入力して、ビルドターゲットをテストします。  
   
      helloworld.csproj が既定のプロジェクト ファイルであること、Build が既定のターゲットであることに注意してください。  
   
-     **/v:d** スイッチは、ビルド処理の詳細な説明を表示するように指定します。  
+     **/V: d**スイッチは、ビルド処理の詳細な説明を指定します。  
   
      以下の行が表示されます。  
   
      **すべての出力ファイルが入力ファイルに対して最新なので、ターゲット "Build" を省略します。**  
   
-     **入力ファイル: HelloWorld.cs**  
+     **入力ファイル:HelloWorld.cs**  
   
-     **出力ファイル: BinMSBuildSample.exe**  
+     **出力ファイル:BinMSBuildSample.exe**  
   
      アプリケーションがビルドされてから変更されたソース ファイルがないため、Build ターゲットはスキップされます。  
   
@@ -437,7 +437,7 @@ ms.locfileid: "65682370"
 </Project>  
 ```  
   
-### <a name="comments"></a>コメント  
+### <a name="comments"></a>説明  
   
 ## <a name="example"></a>例  
   
@@ -477,9 +477,9 @@ ms.locfileid: "65682370"
 </Project>  
 ```  
   
-## <a name="whats-next"></a>次の内容  
+## <a name="whats-next"></a>次は何をすればよいですか?  
  このチュートリアルで説明した作業の大半は、Visual Studio で自動的に実行できます。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成、編集、ビルド、およびテストする方法については、「[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)」をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
 [MSBuild の概要](msbuild.md)  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)
