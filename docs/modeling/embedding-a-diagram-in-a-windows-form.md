@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547629"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows フォームにダイアグラムを埋め込む
@@ -20,7 +20,7 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Windows コントロールに DSL 図を埋め込む
 
-1. 新しい**ユーザーコントロール**ファイルを DslPackage プロジェクトに追加します。
+1. 新しい **ユーザーコントロール** ファイルを DslPackage プロジェクトに追加します。
 
 2. パネルコントロールをユーザーコントロールに追加します。 このパネルには DSL の図が表示されます。
 
@@ -28,7 +28,7 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
 
      コントロールのアンカープロパティを設定します。
 
-3. ソリューションエクスプローラーで、ユーザーコントロールファイルを右クリックし、[**コードの表示**] をクリックします。 次のコンストラクターと変数をコードに追加します。
+3. ソリューションエクスプローラーで、ユーザーコントロールファイルを右クリックし、[ **コードの表示**] をクリックします。 次のコンストラクターと変数をコードに追加します。
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -63,11 +63,11 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
     } } } }
     ```
 
-5. DSL をテストするには、 **F5**キーを押してサンプルモデルファイルを開きます。 この図はコントロール内に表示されます。 ツールボックスとその他の機能は正常に動作します。
+5. DSL をテストするには、 **F5** キーを押してサンプルモデルファイルを開きます。 この図はコントロール内に表示されます。 ツールボックスとその他の機能は正常に動作します。
 
 ## <a name="update-the-form-using-store-events"></a>ストアイベントを使用してフォームを更新する
 
-1. フォームデザイナーで、という名前の**リストボックス**を追加 `listBox1` します。 これにより、モデル内の要素の一覧が表示されます。 これは、*ストアイベント*を使用してモデルと同期されます。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
+1. フォームデザイナーで、という名前の **リストボックス** を追加 `listBox1` します。 これにより、モデル内の要素の一覧が表示されます。 これは、 *ストアイベント*を使用してモデルと同期されます。 詳細については、「 [イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
 2. カスタムコードファイルで、DocView クラスにさらにメソッドをオーバーライドします。
 
@@ -137,7 +137,7 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
     }
     ```
 
-4. DSL をテストするには、 **F5**キーを押し、Visual Studio の実験用インスタンスでサンプルモデルファイルを開きます。
+4. DSL をテストするには、 **F5** キーを押し、Visual Studio の実験用インスタンスでサンプルモデルファイルを開きます。
 
      リストボックスには、モデル内の要素の一覧が表示され、追加または削除した後、[元に戻す] と [やり直し] の後に適切であることがわかります。
 

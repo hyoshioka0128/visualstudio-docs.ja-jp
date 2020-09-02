@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153245"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-バインドされたブレークポイントの存在を指定し、かどうかには有効に指定します。  
+バインドされたブレークポイントが存在することを指定し、有効になっているかどうかも指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -50,24 +50,24 @@ public enum enum_BP_STATE { 
  ブレークポイントが存在しないことを指定します。  
   
  BPS_DELETED  
- ブレークポイントが削除されたことを指定します。  
+ ブレークポイントが削除されたことを示します。  
   
  BPS_DISABLED  
- ブレークポイントが無効になっていることを指定します。  
+ ブレークポイントが無効であることを指定します。  
   
  BPS_ENABLED  
- ブレークポイントが有効になっていることを指定します。  
+ ブレークポイントが有効であることを指定します。  
   
-## <a name="remarks"></a>Remarks  
- 返される、 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)メソッドから返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

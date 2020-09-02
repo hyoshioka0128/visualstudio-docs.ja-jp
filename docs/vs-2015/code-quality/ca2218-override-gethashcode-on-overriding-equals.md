@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538802"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:オーバーライドする Equals で GetHashCode をオーバーライドします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
@@ -36,7 +36,7 @@ ms.locfileid: "85538802"
  パブリック型はを <xref:System.Object.Equals%2A?displayProperty=fullName> オーバーライドしますが、をオーバーライドしません <xref:System.Object.GetHashCode%2A?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>ルールの説明
- <xref:System.Object.GetHashCode%2A>現在のインスタンスに基づいて値を返します。これは、ハッシュアルゴリズムや、ハッシュテーブルなどのデータ構造に適しています。 2つのオブジェクトが同じ型で等しい場合は、次の型のインスタンスが正しく動作することを確認するために、同じハッシュコードを返す必要があります。
+ <xref:System.Object.GetHashCode%2A> 現在のインスタンスに基づいて値を返します。これは、ハッシュアルゴリズムや、ハッシュテーブルなどのデータ構造に適しています。 2つのオブジェクトが同じ型で等しい場合は、次の型のインスタンスが正しく動作することを確認するために、同じハッシュコードを返す必要があります。
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538802"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- を実装する型<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- を実装する型 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、の実装を提供 <xref:System.Object.GetHashCode%2A> します。 同じ型のオブジェクトのペアについては、の実装が <xref:System.Object.Equals%2A> ペアに対してを返す場合は、実装が同じ値を返すことを確認する必要があり `true` ます。

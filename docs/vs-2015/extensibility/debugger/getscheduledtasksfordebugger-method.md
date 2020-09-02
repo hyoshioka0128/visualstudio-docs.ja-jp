@@ -1,5 +1,5 @@
 ---
-title: GetScheduledTasksForDebugger メソッド |Microsoft Docs
+title: Getscheduledタスク Fordebugger メソッド |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152736"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger メソッド
@@ -24,9 +24,9 @@ ms.locfileid: "68152736"
   
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **アセンブリ:** mscorlib (mscorlib.dll 内)  
+ **アセンブリ:** mscorlib (mscorlib.dll)  
   
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。  
+ .NET Framework からこの内部メンバーにアクセスすることはできないため、次の構文は、共通中間言語 (CIL) で提供されています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ ms.locfileid: "68152736"
 ```  
   
 ## <a name="return-value"></a>戻り値  
- スケジュールされたすべてのタスクの配列。 各タスクが実行か、または実行が完了します。  
+ すべてのスケジュールされたタスクの配列。 各タスクが実行中であるか、実行が完了しています。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドはスレッド セーフでないしの他のインスタンスと同時に使用する必要があります<xref:System.Threading.Tasks.TaskScheduler>デバッガーがその他のすべてのスレッドを中断された場合にのみには、デバッガーから呼び出すことはできます。  
+## <a name="remarks"></a>注釈  
+ このメソッドはスレッドセーフではなく、の他のインスタンスと同時に使用することはできません <xref:System.Threading.Tasks.TaskScheduler> 。デバッガーが他のすべてのスレッドを中断した場合にのみ、デバッガーから呼び出す必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [TaskScheduler クラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)

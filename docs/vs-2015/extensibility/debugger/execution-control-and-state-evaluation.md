@@ -12,29 +12,29 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bc6476c925f37d70ab45bae129a8b8a379ee519c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152767"
 ---
 # <a name="execution-control-and-state-evaluation"></a>実行の制御と状態の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-アプリケーションをデバッグするには、関数にステップ イン、ブレークポイント、停止、および実行を継続としてこのような実行管理機能を実装する必要があります。 Visual Studio ベースのデバッグ イベントの場合は、その実行コントロールは、デバッガーのコンポーネント間で送信されます。  
+アプリケーションをデバッグするには、関数のステップイン、ブレークポイントでの停止、実行の継続といった実行制御機能を実装する必要があります。 Visual Studio のデバッグは、デバッガーコンポーネント間で送信されるイベントに基づいて実行制御を行います。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [プログラムの制御](../../extensibility/debugger/program-control.md)  
- プログラムのレベルで発生する次のルーチンを一覧表示されます。 次のステートメントを設定、実行、ステップ実行、続行、中断、および再開します。  
+ プログラムレベルで発生する次のルーチンの一覧を示します。次のステートメントの設定、実行、ステップ実行、続行、中断、および再開します。  
   
  [ブレークポイントに関連するメソッド](../../extensibility/debugger/breakpoint-related-methods.md)  
- バインドを定義および保留中の Visual Studio をサポートするためのブレークポイントの型。  
+ Visual Studio でサポートされているブレークポイントのバインドおよび保留の種類を定義します。  
   
  [呼び出し履歴の評価](../../extensibility/debugger/call-stack-evaluation.md)  
- 中断モード中に、コール スタックのスタック フレームを表示できるようにするメソッドの実装について説明します。  
+ 中断モード中に呼び出し履歴のスタックフレームを表示できるようにするメソッドの実装について説明します。  
   
  [式の評価](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
- デバッグ エンジン (DE) の式の評価 (EE) およびセッション デバッグ マネージャーは、解析に関連して、IDE の windows のいずれかに入力された式の評価について説明します。  
+ デバッグエンジン (DE)、式の評価 (EE)、およびセッションデバッグマネージャーが、IDE のいずれかのウィンドウに入力された式の解析と評価にどのように関係しているかについて説明します。  
   
  [管理イベント](../../extensibility/debugger/control-events.md)  
- プログラムの制御された実行中にイベントを送信するためのインターフェイスについて説明します。
+ プログラムの制御された実行中にイベントを送信するために使用するインターフェイスについて説明します。

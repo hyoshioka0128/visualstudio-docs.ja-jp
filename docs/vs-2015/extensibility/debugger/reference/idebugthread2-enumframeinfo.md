@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo |Microsoft Docs
+title: 'IDebugThread2:: Enumフレーム情報 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: efda31daae198befbda35803ef71e1d0322e9bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153080"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このスレッドのスタック フレームの一覧を取得します。  
+このスレッドのスタックフレームの一覧を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,21 +44,21 @@ int EnumFrameInfo ( 
   
 #### <a name="parameters"></a>パラメーター  
  `dwFieldSpec`  
- [in]フラグの組み合わせ、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)のどのフィールドを指定する列挙体、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造は、入力します。指定、`FIF_FUNCNAME_FORMAT`関数名を 1 つの文字列に書式設定フラグ。  
+ から[フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)構造体のどのフィールドを入力するかを指定する、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列挙型のフラグの組み合わせ。`FIF_FUNCNAME_FORMAT`関数名を1つの文字列に書式設定するフラグを指定します。  
   
  `nRadix`  
- [in]列挙子の数値情報を書式設定に使用する基数。  
+ から列挙子の数値情報の書式設定に使用される基数。  
   
  `ppEnum`  
- [out]返します、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)オブジェクトの一覧を含む[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)スタック フレームを記述する構造体。  
+ 入出力スタックフレームを説明するフレーム[情報](../../../extensibility/debugger/reference/frameinfo.md)構造体のリストを格納している[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- スレッドのフレームは、最初に列挙する現在のフレームと最後に列挙された最も古いフレームを順に列挙されます。  
+## <a name="remarks"></a>注釈  
+ スレッドのフレームは順番に列挙され、現在のフレームが列挙され、最も古いフレームが最後に列挙されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   
