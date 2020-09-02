@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ffbefd03bccc215dd68c30bae3cebb28c85654d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204992"
 ---
-# <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
+# <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-関心のあるプログラムを記述するオブジェクトの配列が含まれています。  
+対象のプログラムを記述するオブジェクトの配列が含まれています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,22 +42,22 @@ public struct tagPROGRAM_NODE_ARRAY {
   
 ## <a name="members"></a>メンバー  
  dwCount  
- オブジェクトの数、`Members`配列。  
+ 配列内のオブジェクトの数 `Members` 。  
   
  メンバー  
- 配列の[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)要求されたプログラムを記述するオブジェクト。  
+ 要求されたプログラムを記述する [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) オブジェクトの配列。  
   
-## <a name="remarks"></a>Remarks  
- この構造体の一部は、 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造体への呼び出しによってさらに入力されますが、 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッドの呼び出しによって入力される[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造の一部です。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   

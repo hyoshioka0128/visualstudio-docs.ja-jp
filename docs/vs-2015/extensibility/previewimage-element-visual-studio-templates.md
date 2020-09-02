@@ -12,20 +12,20 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90521b5ea05aae2f54e56f21b65933a93580da85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194070"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-いずれかで表示されるプレビュー イメージのファイル名として、プレビュー イメージを指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。  
+[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるプレビューイメージのプレビューイメージをファイル名として指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<PreviewImage >  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,16 +46,16 @@ ms.locfileid: "68194070"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、いずれかでの表示方法を定義、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、 **新しいプロジェクト** または [ **新しい項目の追加** ] ダイアログボックスでの表示方法を定義します。|  
   
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
  テキストは、ファイル名を表す文字列である必要があります。  
   
-## <a name="remarks"></a>Remarks  
- `PreviewImage` は、省略可能な要素です。  
+## <a name="remarks"></a>注釈  
+ `PreviewImage` は省略可能な要素です。  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

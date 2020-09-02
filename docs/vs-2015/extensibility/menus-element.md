@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10e4a865774798792a386a4736058b0a5068db85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194238"
 ---
 # <a name="menus-element"></a>Menus 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-すべてのメニューとツールバー、VSPackage の実装を定義します。  
+VSPackage が実装するすべてのメニューとツールバーを定義します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,20 +39,20 @@ ms.locfileid: "68194238"
   
 |属性|説明|  
 |---------------|-----------------|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Menus 要素](../extensibility/menus-element.md)|すべてのメニューとツールバー、VSPackage の実装を定義します。|  
-|[Menu 要素](../extensibility/menu-element.md)|1 つのメニューまたはツールバーを表します。|  
+|[Menus 要素](../extensibility/menus-element.md)|VSPackage が実装するすべてのメニューとツールバーを定義します。|  
+|[Menu 要素](../extensibility/menu-element.md)|1つのメニューまたはツールバーを表します。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Commands 要素](../extensibility/commands-element.md)|VSPackage でのコマンドのコレクションを表します。|  
+|[Commands 要素](../extensibility/commands-element.md)|VSPackage 内のコマンドのコレクションを表します。|  
   
 ## <a name="example"></a>例  
   
@@ -79,6 +79,6 @@ ms.locfileid: "68194238"
 <Commands>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>参照  
+ [Vspackage のユーザーインターフェイス要素の追加方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: アダプターのエディターで新しいまたは変更された動作 |Microsoft Docs
+title: エディターアダプターを使用した新しいまたは変更された動作 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194175"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>エディター アダプターの新規または変更された動作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-以前のバージョンの Visual Studio コア エディターと照らして記述されたコードを更新する、新しい API を使用するのではなく、エディターのアダプター (または shim) を使用する場合は、エディターのアダプターの動作に次の相違点の注意する必要があります。に関しては、前のコア エディター。  
+以前のバージョンの Visual Studio コアエディターに対して記述されたコードを更新していて、新しい API を使用するのではなく、エディターアダプター (または shim) を使用する予定がある場合は、前のコアエディターに関して、エディターアダプターの動作の次の相違点に注意する必要があります。  
   
-## <a name="features"></a>機能  
+## <a name="features"></a>特徴  
   
-#### <a name="using-setsite"></a>SetSite() を使用します。  
- 呼び出す必要があります<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A>テキスト バッファーのテキストのビューを作成し、それらの他の操作を実行する前に、コード ウィンドウ。 ただし、これを使用する場合は必要はありません、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>このサービスの Create() メソッド自体を呼び出すために、それを作成する<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>します。  
+#### <a name="using-setsite"></a>SetSite () の使用  
+ <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A>他の操作を実行する前に、テキストバッファー、テキストビュー、およびコードウィンドウを CoCreate する場合は、を呼び出す必要があります。 ただし、この <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> サービスの create () メソッド自体はを呼び出すため、を使用して作成する場合は必要ありません <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A> 。  
   
-#### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>独自のコンテンツで IVsCodeWindow と IVsTextView をホストしています。  
- 両方をホストできる<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>Win32 モードまたは WPF モードのいずれかを使用して、独自のコンテンツ。 ただし、2 つのモードでは、いくつか違いがあることに注意してくださいおく必要があります。  
+#### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>独自のコンテンツで IVsCodeWindow と Ivscodewindow をホストする  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Win32 モードと WPF モードのどちらかを使用して、独自のコンテンツでとの両方をホストできます。 ただし、2つのモードにはいくつかの違いがあることに注意してください。  
   
-##### <a name="using-win32-and-wpf-versions-of-ivscodewindow"></a>IVsCodeWindow の Win32 と WPF のバージョンを使用します。  
- 派生したエディターのコード ウィンドウは<xref:Microsoft.VisualStudio.Shell.WindowPane>、古い Win32 を実装する<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>インターフェイスの新しい WPF と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>インターフェイス。 使用することができます、 <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsWindowPane%23CreatePaneWindow%2A> HWND ベースのホスティング環境を作成するメソッドまたは<xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsUIElementPane%23CreateUIElementPane%2A>WPF のホスティング環境を作成します。 基になるエディターは、常に、WPF を使用しますが、このウィンドウを独自のコンテンツに直接埋め込む場合は、ホスティングの要件に合ったウィンドウの種類を作成することができます。  
+##### <a name="using-win32-and-wpf-versions-of-ivscodewindow"></a>IVsCodeWindow の Win32 バージョンと WPF バージョンの使用  
+ エディターコードウィンドウはから派生したもの <xref:Microsoft.VisualStudio.Shell.WindowPane> で、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 新しい WPF インターフェイスだけでなく、古い Win32 インターフェイスも実装して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> います。 メソッドを使用すると、 <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsWindowPane%23CreatePaneWindow%2A> HWND ベースのホスト環境を作成できます。また、メソッドを使用して WPF ホスティング環境を作成することもでき <xref:Microsoft.VisualStudio.Shell.WindowPane.Microsoft%23VisualStudio%23Shell%23Interop%23IVsUIElementPane%23CreateUIElementPane%2A> ます。 基になるエディターは常に WPF を使用しますが、独自のコンテンツにこのウィンドウペインを直接埋め込む場合は、ホストの要件に適したウィンドウウィンドウの種類を作成できます。  
   
-##### <a name="using-win32-and-wpf-versions-of-ivstextview"></a>IVsTextView の Win32 と WPF のバージョンを使用します。  
- 設定することができます、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> Win32 モードまたは WPF モードにします。  
+##### <a name="using-win32-and-wpf-versions-of-ivstextview"></a>IVsTextView の Win32 バージョンと WPF バージョンの使用  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>を Win32 モードまたは WPF モードに設定できます。  
   
- エディター ファクトリを既定では、HWND 内でホストされているテキスト ビューを作成するときに、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> HWND を返します。 WPF コントロール内のエディターを埋め込むには、このモードを使用する必要があります。  
+ エディターファクトリがテキストビューを作成すると、既定では HWND の内部でホストされ、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> hwnd が返されます。 このモードを使用して、WPF コントロール内にエディターを埋め込むことはできません。  
   
- テキスト ビューを WPF モードに設定するに呼び出す必要がある<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.Initialize%2A>を渡します<xref:Microsoft.VisualStudio.TextManager.Interop.TextViewInitFlags3>のフラグ、初期化の 1 つとして、`InitView`パラメーター。 取得することができます、<xref:System.Windows.FrameworkElement>呼び出して<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane.CreateUIElementPane%2A>します。  
+ テキストビューを WPF モードに設定するには、を呼び出し、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.Initialize%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.TextViewInitFlags3> パラメーターの初期化フラグの1つとしてを渡す必要があり `InitView` ます。 を <xref:System.Windows.FrameworkElement> 呼び出すことによってを取得でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane.CreateUIElementPane%2A> ます。  
   
- WPF のモードは、2 つの方法で Win32 モードによって異なります。 まず、テキスト ビューは、WPF のコンテキストでホストできます。 キャストすることによって、WPF ウィンドウを表示できます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>に<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane>を呼び出すと<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>します。 2 番目、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A>も返しますが、HWND がこの HWND の位置を確認し、フォーカスの設定にのみ使用できます。 エディターで、ウィンドウを描画する方法には影響があるため、WM_PAINT メッセージに応答するこの HWND を使用する必要がありますできません。 この HWND では、アダプターを使用して新しいエディター コードへの移行を容易にするためにのみ存在します。 使用する必要がありますしないことを強くお勧め`VIF_NO_HWND_SUPPORT`コンポーネントから返される HWND の制限のため、操作する HWND を必要とする場合`GetWindowHandle`このモードでいます。  
+ WPF モードは、2つの方法で Win32 モードと異なります。 まず、テキストビューを WPF コンテキストでホストできます。 WPF ペインにアクセスするには、をにキャストし、を <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> 呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A> ます。 2番目のは <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> hwnd を返しますが、この hwnd はその位置を確認し、それにフォーカスを設定するためにのみ使用できます。 WM_PAINT メッセージに応答するためにこの HWND を使用することはできません。これは、エディターがウィンドウを描画する方法には影響しないためです。 この HWND は、アダプターを使って新しいエディターコードへの切り替えを容易にするためだけに存在します。 コンポーネントで HWND が必要な場合は、を使用しないことを強くお勧めし `VIF_NO_HWND_SUPPORT` `GetWindowHandle` ます。このモードでは、から返された hwnd の制限が原因です。  
   
-#### <a name="passing-arrays-as-parameters-in-native-code"></a>ネイティブ コードで配列をパラメーターとして渡す  
- 配列とその数を含むパラメーターを持つ API のレガシのエディターで多くの方法はあります。 以下に例を示します。  
+#### <a name="passing-arrays-as-parameters-in-native-code"></a>ネイティブコードでのパラメーターとしての配列の引き渡し  
+ 従来のエディター API には、配列とそのカウントを含むパラメーターを持つメソッドが多数あります。 次に例をいくつか示します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.RemoveViewOnlyMarkerTypes%2A>  
   
- ネイティブ コードでこれらのメソッドを呼び出す場合は、一度に 1 つだけの要素で渡す必要があります。 1 つ以上の要素を渡す場合、プライマリ相互運用機能の実装の問題が原因、呼び出しは拒否されます。  
+ ネイティブコードでこれらのメソッドを呼び出す場合は、一度に1つの要素のみを渡す必要があります。 複数の要素を渡した場合、プライマリ相互運用機能の実装に問題があるため、呼び出しは拒否されます。  
   
- 問題がなどの方法でより複雑な<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetIgnoreMarkerTypes%2A>します。 このメソッドが呼び出されるたびには、単に 3 つの異なるマーカーの種類を 3 回このメソッドを呼び出すことはできませんので、無視のマーカーの種類の前の一覧をクリアします。 唯一の対処法では、マネージ コードでのみこのメソッドを呼び出します。  
+ この問題は、などのメソッドを使用するとより複雑に <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetIgnoreMarkerTypes%2A> なります。 このメソッドが呼び出されるたびに、無視されるマーカーの型の前のリストがクリアされるため、このメソッドを3つの異なるマーカーの種類を使用して3回呼び出すことはできません。 唯一の解決策は、このメソッドをマネージコードでのみ呼び出すことです。  
   
-#### <a name="threading"></a>スレッド  
- バッファーのアダプターは、UI スレッドから常に呼び出す必要があります。 バッファーのアダプターは、マネージ オブジェクト、つまり、呼び出しが自動的にマーシャ リングできない、UI スレッドへとマネージ コードからそれを呼び出すことは COM マーシャ リングをバイパスします。  使用する必要があります、バック グラウンド スレッドからバッファー アダプターを呼び出す場合<xref:System.Windows.Threading.Dispatcher.Invoke%2A>または同様のメソッド。  
+#### <a name="threading"></a>スレッド処理  
+ 常に UI スレッドからバッファーアダプターを呼び出す必要があります。 バッファーアダプターはマネージオブジェクトであるため、マネージコードからの呼び出しでは COM マーシャリングがバイパスされ、呼び出しは UI スレッドに自動的にマーシャリングされません。  バックグラウンドスレッドからバッファーアダプターを呼び出す場合は、 <xref:System.Windows.Threading.Dispatcher.Invoke%2A> または同様のメソッドを使用する必要があります。  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer メソッド  
- すべての LockBuffer() メソッドが非推奨とされます。 以下に例を示します。  
+ すべての LockBuffer () メソッドは非推奨とされます。 次に例をいくつか示します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   
@@ -65,8 +65,8 @@ ms.locfileid: "68194175"
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.LockBuffer%2A>  
   
-#### <a name="commit-events"></a>イベントをコミットします。  
- コミット イベントがサポートされていません。 これらのイベントを通知するメソッドを呼び出すと、エラー コードを返すメソッドがします。  
+#### <a name="commit-events"></a>コミットイベント  
+ コミットイベントはサポートされていません。 これらのイベントを通知するメソッドを呼び出すと、メソッドはエラーコードを返します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>  
   
@@ -75,15 +75,15 @@ ms.locfileid: "68194175"
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUndoRedoClusterWithCommitEvents>  
   
 #### <a name="texteditorevents"></a>TextEditorEvents  
- <xref:EnvDTE.TextEditorEvents> Commit() で起動しません。 代わりにテキスト変更されるごとに起動されます。  
+ は <xref:EnvDTE.TextEditorEvents> コミット () では起動されなくなりました。 代わりに、テキストを変更するたびに起動されます。  
   
-#### <a name="text-markers"></a>テキスト マーカー  
- 呼び出す必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker.Invalidate%2A>で<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>オブジェクトの削除を行うときにします。 以前のバージョンでは、マーカーのリリースにのみ必要です。  
+#### <a name="text-markers"></a>テキストマーカー  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker.Invalidate%2A>オブジェクトを削除するときは、を呼び出す必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker> ます。 以前のバージョンでは、マーカーの解放のみが必要でした。  
   
 #### <a name="line-numbers"></a>[行番号]  
- メソッドのさまざまな<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>いない行番号をその要素のアウトラインと Visual Studio 2008 のように、ワード ラップ、行番号は、基になるバッファーの行番号に対応します。  
+ とのさまざまなメソッドについて <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx> 、行番号は、Visual Studio 2008 のように、アウトラインとワードラップを考慮する行番号ではなく、基になるバッファーの行番号に対応します。  
   
- 影響を受ける方法 (リストはすべてを網羅) 次に示します。  
+ 影響を受けるメソッドは次のとおりです (一覧は完全ではありません)。  
   
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
@@ -110,30 +110,30 @@ ms.locfileid: "68194175"
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>アウトライン  
- クライアントの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>を使用して追加されているアウトライン領域のみが表示されます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>します。 アドホックのリージョンは、エディター アダプターを介して追加されないので、表示されなくなります。 同様に、これらのクライアントでは、アウトライン、エディターのアダプターではなく、新しいエディターのコードを使用している言語 (c# および C++ を含む) によって追加された領域が見えない。  
+ のクライアント <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> では、またはを使用して追加されたアウトライン領域のみが表示され <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A> ます。 これらは、エディターアダプターによって追加されていないため、アドホック領域は表示されません。 同様に、これらのクライアントは、エディターアダプターではなく、新しいエディターコードを使用している言語 (C# および C++ を含む) によって追加されたアウトライン領域を表示しません。  
   
-#### <a name="line-heights"></a>行の高さ  
- 新しいエディターでテキスト行はフォント サイズやその他の行を基準とした行が移動可能な行の変換によって、異なる高さを持つことができます。 などのメソッドによって返される行の高さ<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A>が適用された行変換なしで既定のフォント サイズを使用して行の高さ。 この高さは、ビュー内の行の実際の高さを反映しない可能性があります。  
+#### <a name="line-heights"></a>線の高さ  
+ 新しいエディターでは、テキスト行の高さが異なる場合があります。これは、他の行との間で行を移動する可能性がある、フォントサイズと可能な行の変換によって異なります。 などのメソッドによって返される行 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A> の高さは、既定のフォントサイズを使用して行の変換が適用されていない行の高さです。 この高さは、ビューの線の実際の高さを反映している場合もあれば、表示されない場合もあります。  
   
-#### <a name="eventing-and-undo"></a>イベント処理および元に戻す  
- 新しいエディターでは、ビューをレンダリングし、元に戻すクラスターが開いている場合でも継続的に、イベントの発生などの操作を実行が続行されます。 この動作は従来のビューは、これらの操作を元に戻すクラスターの終了が終了するまでに実行されなかったは異なります。  
+#### <a name="eventing-and-undo"></a>イベントと元に戻す  
+ 新しいエディターでは、ビューは、元に戻すクラスターが開いている場合でも、イベントの表示や発生などの操作を継続して実行します。 この動作は、元に戻すクラスターが閉じられるまでこれらの操作を実行しなかった従来のビューとは異なります。  
   
 #### <a name="intellisense"></a>IntelliSense  
   
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>メソッドは、いずれかを実装しないクラスを渡す場合は失敗<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>または<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>します。 カスタム Win32 オーナー描画のポップアップがサポートされていません。  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>またはを実装していないクラスを渡した場合、メソッドは失敗し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3> ます。 カスタム Win32 オーナー描画ポップアップはサポートされなくなりました。  
   
-#### <a name="smarttags"></a>スマート タグ  
- 使用すると、作成されたスマート タグのアダプターのサポートはありません<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>インターフェイス。  
+#### <a name="smarttags"></a>SmartTags  
+ 、、、およびの各インターフェイスで作成されたスマートタグに対するアダプターのサポートはありません <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> 。  
   
 #### <a name="dte"></a>DTE  
- <xref:EnvDTE80.IncrementalSearch> 実装されていません。  
+ <xref:EnvDTE80.IncrementalSearch> が実装されていません。  
   
-## <a name="unimplemented-methods"></a>未実装のメソッド  
- テキスト バッファー アダプター、テキスト ビュー アダプター、およびテキスト レイヤー アダプターにはいくつかのメソッドが実装されていません。  
+## <a name="unimplemented-methods"></a>実装していないメソッド  
+ テキストバッファーアダプター、テキストビューアダプター、およびテキスト層アダプターに実装されていないメソッドがあります。  
   
-|Interface|実装されていません|  
+|インターフェイス|未実装|  
 |---------------|---------------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|`Reload(false)` 実装されていません。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|`Reload(false)` が実装されていません。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.EnumSpans%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetBufferMappingModes%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.GetMarkerData%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.ReleaseMarkerData%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CanReplaceLines%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CopyLineText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.EnumLayerMarkers%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetBaseBuffer%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetLengthOfLine%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetLineCount%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetLineText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.GetMarkerData%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.LockBufferEx%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.MapLocalSpansToTextOriginatingLayer%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.ReleaseMarkerData%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.ReplaceLines%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.ReplaceLinesEx%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.UnlockBufferEx%2A>|  
@@ -143,5 +143,5 @@ ms.locfileid: "68194175"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.InvokeInsertionUI%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.SetHoverWaitTimer%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetViewClassID%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> アウトラインの UI では無視されるが、アダプターに実装されます。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> アウトラインの UI では無視されるが、アダプターに実装されます。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> はアダプターに実装されますが、アウトライン UI では無視されます。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> はアダプターに実装されますが、アウトライン UI では無視されます。|

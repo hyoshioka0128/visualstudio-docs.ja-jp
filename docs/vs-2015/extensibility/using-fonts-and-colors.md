@@ -1,5 +1,5 @@
 ---
-title: フォントと色の使用 |Microsoft Docs
+title: フォントと色を使用する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,63 +15,63 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177229"
 ---
 # <a name="using-fonts-and-colors"></a>フォントと色の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]フォントおよび色を使用してテキストを表示するサポートを提供します。  
+では、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] フォントと色を使用したテキストの表示がサポートされています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [フォントと色の概要](../extensibility/font-and-color-overview.md)  
- テキストのフォントと色の設定について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE) です。 カテゴリとアイテムの表示の概念を説明し、Vspackage とコア エディターのテキスト属性を使用する方法について説明します。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE: integrated development environment) でのテキストのフォントと色の設定について説明します。 また、には、カテゴリと表示項目の概念が導入されており、Vspackage とコアエディターでテキスト属性がどのように使用されるかが説明されています。  
   
  [テキストに色づけするためのフォントと色の情報の取得](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- 管理 Vspackage でテキストの色づけを実装するためのガイドラインを提供します。**カテゴリ**以外**テキスト エディター**します。  
+ **テキストエディター**以外の**カテゴリ**を管理するテキストの色付けを vspackage に実装するためのガイドラインを示します。  
   
  [格納されたフォントと色の設定へのアクセス](../extensibility/accessing-stored-font-and-color-settings.md)  
- 現在のフォントと色を説明します。 設定の保存、取得と適用されることができます。  
+ 現在のフォントと色の設定を格納、取得、および適用する方法について説明します。  
   
  [カスタム カテゴリと表示項目の実装](../extensibility/implementing-custom-categories-and-display-items.md)  
- 使用されるウィンドウを作成および使用できる、独自の基本的な手順について説明します**アイテムを表示**と**カテゴリ**テキストの表示をサポートするためにします。  
+ ウィンドウで、テキストの表示をサポートするために独自の **表示項目** および **カテゴリ** を作成して使用する基本的な手順について説明します。  
   
- このアプローチを実装するために VSPackage が必要です、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>インターフェイスと関連するインターフェイス。  
+ この方法では、インターフェイスとそれに関連するインターフェイスを実装するには VSPackage が必要です <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 。  
   
  [方法: 組み込みのフォントおよび色のスキーマにアクセスする](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- 定義して組み込みのフォントや色を使用して、カテゴリを登録し、システム指定のフォントと色の使用を開始する方法について説明します。  
+ 組み込みのフォントと色を使用してカテゴリを定義および登録する方法と、システムによって提供されるフォントと色の使用を開始する方法について説明します。  
   
-## <a name="reference"></a>参照  
+## <a name="reference"></a>リファレンス  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- インスタンスを提供、`IVsFontAndColorDefaults`または<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>インターフェイスに表示された特定の項目に対応する、**設定を表示する**の一覧で、**フォントおよび色**のページ**オプション** ダイアログ ボックス。  
+ [ `IVsFontAndColorDefaults` <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> **オプション**] ダイアログボックスの [**フォントおよび色**] ページの [**設定の表示**] ボックスの一覧に表示されている特定の項目に対応するまたはインターフェイスのインスタンスを提供します。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- により、IDE をサポートするために VSPackage**フォントおよび色**ウィンドウまたは UI コンポーネントの既定のフォントと色を定義することでページ。  
+ ウィンドウまたは UI コンポーネントの既定のフォントと色を定義して、VSPackage が IDE の **フォントおよび色** ページをサポートできるようにします。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- 使用される機構を提供します。 表示項目のグループ - 2 つ以上のカテゴリの和集合を表すスーパー カテゴリを指定できますフォントと色のサポートを提供する VSPackage は。  
+ フォントおよび色のサポートを提供する VSPackage が、表示項目グループ (2 つ以上のカテゴリの和集合を表すスーパーカテゴリ) を指定できるようにするためのメカニズムを提供します。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- フォントおよび色のデータを取得したり、レジストリに保存するために VSPackage を使用できます。  
+ VSPackage がフォントと色のデータを取得したり、レジストリに保存したりできるようにします。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- フォントおよび色の設定でのフォントと色の変更に関する情報を使用している Vspackage に通知します。  
+ フォントおよび色の設定の変更に関するフォントおよび色の情報を使用していることを Vspackage に通知します。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- メソッドによって使用される入力と出力データを操作するためのツールを提供します、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **フォントおよびカラー**メカニズム。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**フォントおよびカラー**機構のメソッドで使用される入力データと出力データを操作するためのツールを提供します。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
  フォントおよび色の設定のキャッシュを制御します。  
   
 ## <a name="related-sections"></a>関連項目  
  [従来の言語サービスの開発](../extensibility/internals/developing-a-legacy-language-service.md)  
- Vspackage が言語サービスを使用して、カスタマイズする方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディター。  
+ Vspackage が言語サービスを使用してエディターをカスタマイズする方法について説明し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。  
   
  [カスタム エディターでの構文の色分け表示](../extensibility/syntax-coloring-in-custom-editors.md)  
- Descries 方法、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]エディターでは、言語サービスを使用して、構文の色分けを実装します。  
+ Descries は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エディターが言語サービスを使用して構文の色分けを実装する方法を説明します。  
   
  [Visual Studio の他の部分の拡張](../extensibility/extending-other-parts-of-visual-studio.md)  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] サービスを使用して、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の他の部分に相当する UI 要素を作成する方法について説明します。

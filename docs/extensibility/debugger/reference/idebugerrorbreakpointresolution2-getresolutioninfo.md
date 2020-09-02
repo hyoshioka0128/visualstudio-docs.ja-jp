@@ -1,5 +1,5 @@
 ---
-title: エラーブレークポイントの解像度2:::取得解像度情報 |マイクロソフトドキュメント
+title: 'IDebugErrorBreakpointResolution2:: Get Info |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730025"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-ブレークポイントエラー解決情報を取得します。
+ブレークポイントのエラー解決情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]入力するフィールドを決定する[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列挙体のフラグの`pErrorResolutionInfo`組み合わせ。
+からどのフィールドを入力するかを決定する、 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 列挙のフラグの組み合わせ `pErrorResolutionInfo` 。
 
 `pErrorResolutionInfo`\
-[イン、アウト]ブレークポイント解決の説明が入力されている[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造。
+[入力、出力]ブレークポイントの解決の説明が入力されている [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 構造体。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-`CDebugErrorBreakpointResolution`[インターフェイス](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)を公開する単純なオブジェクトに対してこのメソッドを実装する例を次に示します。
+次の例では、IDebugErrorBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対して、このメソッドを実装して `CDebugErrorBreakpointResolution` います。 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(

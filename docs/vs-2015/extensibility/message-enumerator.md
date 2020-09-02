@@ -1,5 +1,5 @@
 ---
-title: 列挙子のメッセージ |Microsoft Docs
+title: メッセージ列挙子 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6bd42c825cd45068e13178856e524268b426ec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194337"
 ---
 # <a name="message-enumerator"></a>メッセージの列挙子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用は、次のフラグ、`TEXTOUTPROC`関数コールバック関数を呼び出すときに、IDE を提供しますが、 [SccOpenProject](../extensibility/sccopenproject-function.md) (を参照してください[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)詳細については、コールバック関数の場合)。  
+関数には次のフラグが使用されます `TEXTOUTPROC` 。これは、 [Sccopenproject](../extensibility/sccopenproject-function.md) を呼び出すときに IDE が提供するコールバック関数です (コールバック関数の詳細については、「 [lptextoutproc](../extensibility/lptextoutproc.md) 」を参照してください)。  
   
- IDE がプロセスをキャンセルしようとして、キャンセル メッセージのいずれかを受け取ること可能性があります。 ソース管理プラグインで使用でこの例では、`SCC_MSG_STARTCANCEL`を表示するための IDE を要求する、**キャンセル**ボタンをクリックします。 その後、通常のメッセージのセットを送信できます。 これらを返しますの`SCC_MSG_RTN_CANCEL`、プラグイン、操作を終了し、返します、。 プラグインもポーリング`SCC_MSG_DOCANCEL`かどうか、ユーザーが操作の取り消しを判断するには、定期的にします。 すべての操作が完了したら、またはユーザーがキャンセルされた場合、プラグインが送信時に`SCC_MSG_STOPCANCEL`します。 `SCC_MSG_INFO`SCC_MSG_WARNING、SCC_MSG_ERROR 型では、メッセージの一覧に表示されるメッセージが使用されます。 `SCC_MSG_STATUS` テキストがステータス バーまたは一時的な表示領域で表示していることを示す特殊な型です。 維持されない永続的に、一覧にします。  
+ IDE からプロセスのキャンセルが求められた場合、キャンセルメッセージの1つが表示されることがあります。 この場合、ソース管理プラグインはを使用して、 `SCC_MSG_STARTCANCEL` IDE に **[キャンセル** ] ボタンを表示するように指示します。 その後、通常のメッセージのセットが送信される可能性があります。 これらのいずれかがを返した場合、 `SCC_MSG_RTN_CANCEL` プラグインは操作を終了し、を返します。 また、プラグインは定期的にポーリングして、 `SCC_MSG_DOCANCEL` ユーザーが操作を取り消したかどうかを判断します。 すべての操作が完了した場合、またはユーザーがキャンセルした場合は、プラグインによってが送信され `SCC_MSG_STOPCANCEL` ます。 `SCC_MSG_INFO`、SCC_MSG_WARNING、および SCC_MSG_ERROR の種類は、メッセージのスクロールリストに表示されるメッセージに使用されます。 `SCC_MSG_STATUS` は、テキストがステータスバーまたは一時的な表示領域に表示されることを示す特殊な型です。 リスト内に永続的に残されているわけではありません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,32 +43,32 @@ enum { 
   
 ## <a name="members"></a>メンバー  
  SCC_MSG_RTN_CANCEL  
- [キャンセル] を示すためにコールバックから返されます。  
+ キャンセルを示すには、コールバックから戻ります。  
   
  SCC_MSG_RTN_OK  
- 続行するコールバックから返されます。  
+ コールバックから戻り、続行します。  
   
  SCC_MSG_INFO  
- 情報メッセージです。  
+ メッセージは情報です。  
   
  SCC_MSG_WARNING  
  メッセージは警告です。  
   
  SCC_MSG_ERROR  
- メッセージは、エラーです。  
+ メッセージはエラーです。  
   
  SCC_MSG_STATUS  
- メッセージは、ステータス バーのものでは。  
+ メッセージはステータスバー用です。  
   
  SCC_MSG_DOCANCEL  
- テキストはありません。IDE を返します`SCC_MSG_RTN_OK`または`SCC_MSG_RTN_CANCEL`します。  
+ テキストなし。IDE `SCC_MSG_RTN_OK` はまたはを返し `SCC_MSG_RTN_CANCEL` ます。  
   
  SCC_MSG_STARTCANCEL  
- [キャンセル] ループを開始します。  
+ キャンセルループを開始します。  
   
  SCC_MSG_STOPCANCEL  
- [キャンセル] ループを停止します。  
+ キャンセルループを停止します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)
