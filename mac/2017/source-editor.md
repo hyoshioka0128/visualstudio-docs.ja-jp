@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985207"
 ---
 # <a name="source-editor"></a>ソース エディター
 
-信頼できるソース エディターは、簡潔かつ効率的にコードを記述するために不可欠です。 Visual Studio for Mac には、IDE との対話の中心になる高機能のソース エディターがあります。 ソース エディターは、構文の強調表示、コード スニペット、コードの折りたたみといった基本的なものから、完全に機能する IntelliSense コード補完などの Roslyn コンパイラとの統合によるものまで、開発者が作業を容易にするために期待するものや必要とする機能が用意されています。
+信頼できるソース エディターは、簡潔かつ効率的にコードを記述するために不可欠です。 Visual Studio for Mac には、IDE との対話の中心になる高機能のソース エディターがあります。 ソース エディターには、開発者が作業を容易にするために期待する機能や必要とする機能が用意されています。具体的には、構文の強調表示、コード スニペット、コードの折りたたみといった基本的な機能をはじめ、完全に機能する IntelliSense コード補完などの Roslyn コンパイラとの統合による機能もあります。
 
 Visual Studio for Mac のソース エディターでは、デバッグ、リファクタリング、バージョン管理の統合など、IDE に含まれる他のすべての機能とのシームレスなエクスペリエンスが提供されます。
 
@@ -50,7 +50,7 @@ Visual Studio for Mac には、クロスプラット フォーム開発を可能
 
 場合によっては、ソース コードの非表示文字を表示する必要があります。 コーディング標準に準拠していてスペースを浪費していないことを目で見て確認する方法です。 コードの評価が厳密にインデントされた行に依存する F# を記述するときも役に立ちます。
 
-**[Visual Studio] > [ユーザー設定] > [テキスト エディター] > [マーカーとルーラー]** に移動し、空白文字を表示するオプションを設定します。 このオプションを選ぶと、非表示文字を "_いつ_ " 表示するかを設定できます (表示しない、選択されたとき、常に表示する)。
+**[Visual Studio] > [ユーザー設定] > [テキスト エディター] > [マーカーとルーラー]** に移動し、空白文字を表示するオプションを設定します。 このオプションを選ぶと、非表示文字を "_いつ_ " 表示するかを設定できます(表示しない、選択されたとき、常に表示する)。
 
 ![非表示文字表示オプション](media/source-editor-image3.png)
 
@@ -80,7 +80,7 @@ Visual Studio for Mac には、クロスプラット フォーム開発を可能
 
 ![強調表示の色を示す例](media/source-editor-image7.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード エディター機能 (Windows の Visual Studio)](/visualstudio/ide/writing-code-in-the-code-and-text-editor)
 - [アウトライン (Windows の Visual Studio)](/visualstudio/ide/outlining)

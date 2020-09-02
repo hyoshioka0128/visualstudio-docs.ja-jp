@@ -73,7 +73,7 @@ ms.locfileid: "80705121"
 
 - VSPackage は、特定のソース管理モデルに限定されていません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理](../../extensibility/internals/source-control.md)
 - [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [ソース管理 VSPackage の作成](../../extensibility/internals/creating-a-source-control-vspackage.md)

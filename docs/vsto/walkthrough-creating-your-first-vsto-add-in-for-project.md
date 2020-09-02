@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 初めて VSTO アドイン プロジェクトの作成します。'
+title: 'チュートリアル: 初めての Project 用 VSTO アドインの作成'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981403"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>チュートリアル: 初めて VSTO アドイン プロジェクトの作成します。
-  このチュートリアルでは、Microsoft Office Project の VSTO アドインを作成する方法を示します。 この種のソリューションに作成した機能は、どのプロジェクトが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>チュートリアル: 初めての Project 用 VSTO アドインの作成
+  このチュートリアルでは、Microsoft Office プロジェクト用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのプロジェクトが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
@@ -50,7 +50,7 @@ ms.locfileid: "62981403"
 
 ### <a name="to-create-a-new-project-in-visual-studio"></a>Visual Studio で新しいプロジェクトを作成するには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を起動します。
 
 2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
@@ -66,12 +66,12 @@ ms.locfileid: "62981403"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] により **FirstProjectAddIn** プロジェクトが作成され、 **ThisAddIn** コード ファイルがエディターで開かれます。
 
-## <a name="write-code-that-adds-a-new-task-to-a-project"></a>プロジェクトに新しいタスクを追加するコードを記述します。
- 次に、ThisAddIn コード ファイルにコードを追加します。 新しいコードでは、Project のオブジェクト モデルを使用して、プロジェクトに新しいタスクを追加します。 ThisAddIn コード ファイルには、次の生成コードが既定で含まれています。
+## <a name="write-code-that-adds-a-new-task-to-a-project"></a>プロジェクトに新しいタスクを追加するコードを記述する
+ 次に、ThisAddIn コード ファイルにコードを追加します。 新しいコードでは、Project のオブジェクト モデルを使用して、プロジェクトに新しいタスクを追加します。 ThisAddIn コード ファイルには、次の生成されたコードが既定で含まれています。
 
-- `ThisAddIn` クラスの部分定義。 このクラスは、コードのエントリ ポイントを提供し、Project のオブジェクト モデルへのアクセスを提供します。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。`ThisAddIn` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
+- `ThisAddIn` クラスの部分定義。 このクラスは、コードのエントリ ポイントを提供し、Project のオブジェクト モデルへのアクセスを提供します。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。クラスの残りの部分 `ThisAddIn` は、変更しない非表示のコードファイルで定義されています。
 
-- `ThisAddIn_Startup` および `ThisAddIn_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Project が VSTO アドインを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、VSTO アドインを読み込むときに初期化し、VSTO アドインがアンロードされるときには使用したリソースをクリーンアップします。 詳細については、次を参照してください。 [Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
+- `ThisAddIn_Startup` および `ThisAddIn_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Project が VSTO アドインを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、VSTO アドインを読み込むときに初期化し、VSTO アドインがアンロードされるときには使用したリソースをクリーンアップします。 詳細については、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 
 ### <a name="to-add-a-task-to-a-new-project"></a>新しいプロジェクトにタスクを追加するには
 
@@ -82,24 +82,24 @@ ms.locfileid: "62981403"
     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]
 
-   プロジェクトを変更するには、このコード例は、次のオブジェクトを使用します。
+   プロジェクトを変更するために、このコード例では次のオブジェクトを使用します。
 
 - `Application` クラスの `ThisAddIn` フィールド。 `Application` フィールドは、Project の現在のインスタンスを表す `Microsoft.Office.Interop.MSProject.Application` オブジェクトを返します。
 
-- `pj` NewProject イベントのイベント ハンドラーのパラメーター。 `pj` パラメーターは、プロジェクトを表す `Microsoft.Office.Interop.MSProject.Project` オブジェクトです。 詳細については、次を参照してください。[ソリューション プロジェクト](../vsto/project-solutions.md)します。
+- `pj`NewProject イベントのイベントハンドラーのパラメーター。 `pj` パラメーターは、プロジェクトを表す `Microsoft.Office.Interop.MSProject.Project` オブジェクトです。 詳細については、「 [プロジェクトソリューション](../vsto/project-solutions.md)」を参照してください。
 
-1. C# を使用する場合は、次のコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。 このコードは接続、 `Application_Newproject` NewProject イベントにイベント ハンドラー。
+1. C# を使用する場合は、次のコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。 このコードは、 `Application_Newproject` イベントハンドラーを NewProject イベントに接続します。
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
 
-## <a name="test-the-project"></a>プロジェクトをテストします。
+## <a name="test-the-project"></a>プロジェクトのテスト
  プロジェクトをビルドして実行し、新しいプロジェクトに新しいタスクが表示されることを確認します。
 
 ### <a name="to-test-the-project"></a>プロジェクトをテストするには
 
 1. **F5** キーを押して、プロジェクトをビルドおよび実行します。 Microsoft Project が起動し、新しい空のプロジェクトが自動的に開きます。
 
-     プロジェクトをビルドすると、プロジェクトのビルド出力フォルダーに含まれるアセンブリにコードがコンパイルされます。 さらに Visual Studio は、Project が VSTO アドインを検出して読み込めるようにする一連のレジストリ エントリを作成し、VSTO アドインを実行できるように開発用コンピューター上のセキュリティを設定します。 詳細については、次を参照してください。 [Office ソリューション ビルド処理の概要](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))します。
+     プロジェクトをビルドすると、プロジェクトのビルド出力フォルダーに含まれるアセンブリにコードがコンパイルされます。 さらに Visual Studio は、Project が VSTO アドインを検出して読み込めるようにする一連のレジストリ エントリを作成し、VSTO アドインを実行できるように開発用コンピューター上のセキュリティを設定します。 詳細については、「 [Office ソリューションビルド処理の概要](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))」を参照してください。
 
 2. 新しいタスクが空のプロジェクトに追加されることを確認します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "62981403"
 
 4. Microsoft Project を閉じます。
 
-## <a name="clean-up-the-project"></a>プロジェクトをクリーンアップします。
+## <a name="clean-up-the-project"></a>プロジェクトをクリーンアップする
  プロジェクトの開発が完了したら、VSTO アドイン アセンブリ、レジストリ エントリ、およびセキュリティ設定を開発用コンピューターから削除します。 この操作を行わないと、開発用コンピューター上で Microsoft Project を起動するたびに VSTO アドインが実行されます。
 
 ### <a name="to-clean-up-your-project"></a>プロジェクトをクリーンアップするには
@@ -119,17 +119,17 @@ ms.locfileid: "62981403"
 ## <a name="next-steps"></a>次の手順
  これで Project 用の基本的な VSTO アドインの作成が完了しました。VSTO アドインの開発方法について詳しくは、次に示すトピックをご覧ください。
 
-- プロジェクト用の VSTO アドインで実行できる一般的なプログラミング タスク:[VSTO アドインをプログラム](../vsto/programming-vsto-add-ins.md)します。
+- Project 用 VSTO アドインで実行できる一般的なプログラミングタスク: [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)。
 
-- プロジェクトのオブジェクト モデルの使用。[プロジェクトのソリューション](../vsto/project-solutions.md)します。
+- Project: [project solutions](../vsto/project-solutions.md)のオブジェクトモデルの使用。
 
-- ビルドとプロジェクト用の VSTO アドインをデバッグします。[Office ソリューションの構築](../vsto/building-office-solutions.md)します。
+- Project 用 VSTO アドインのビルドとデバッグ: [Office ソリューションをビルド](../vsto/building-office-solutions.md)します。
 
-- VSTO アドイン プロジェクトの配置。[Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+- Project 用 VSTO アドインの配置: [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
-## <a name="see-also"></a>関連項目
-- [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)
-- [Project ソリューション](../vsto/project-solutions.md)
-- [Office ソリューションの構築](../vsto/building-office-solutions.md)
-- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
-- [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
+- [プロジェクトソリューション](../vsto/project-solutions.md)
+- [Office ソリューションのビルド](../vsto/building-office-solutions.md)
+- [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
+- [Office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)

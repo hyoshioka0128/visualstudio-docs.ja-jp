@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider:: GetSymAttribute |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733773"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-指定したモジュールの指定された親属性を持つデバッグ シンボルを取得します。
+指定したモジュールの指定した親属性を持つデバッグシンボルを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -52,31 +52,31 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>パラメーター
 `ulAppDomainID`\
-[in]アプリケーション ドメインの識別子。
+からアプリケーションドメインの識別子。
 
 `guidModule`\
-[in]モジュールを表す一意の識別子です。
+からモジュールの一意識別子。
 
 `tokParent`\
-[in]親属性のトークン。
+から親属性のトークン。
 
 `pstrName`\
-[in]モジュールの名前。
+からモジュールの名前。
 
 `cBuffer`\
-[in]出力`buffer`に必要なバイト数。
+から出力に必要なバイト数 `buffer` 。
 
 `pcBuffer`\
-[アウト]出力`buffer`の長さ。
+入出力出力の長さ `buffer` 。
 
 `buffer`\
-[アウト]シンボルを含む配列。
+入出力シンボルを格納している配列。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(

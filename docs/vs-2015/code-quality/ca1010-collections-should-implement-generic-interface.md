@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b141d755c717ad6650d2a49c98c2b26547066b7a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545523"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010:コレクションは、ジェネリック インターフェイスを実装しなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
@@ -101,5 +101,5 @@ ms.locfileid: "85545523"
 
  [CA1007:適切な場所にジェネリックを使用します](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ジェネリック](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

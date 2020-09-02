@@ -1,4 +1,4 @@
-﻿---
+---
 title: ItemMetadata 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e3d9f72abfd095288b50ab8de9b9bc3eae4cc51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162364"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 要素 (MSBuild)
@@ -62,7 +62,7 @@ ms.locfileid: "68162364"
   
  このテキストは、項目メタデータの値を指定します。テキストまたは XML を使うことができます。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>注釈  
   
 ## <a name="example"></a>例  
  次のコード例では、値が `fr` の `Culture` メタデータを項目 `CSFile` に追加する方法を示します。  
@@ -75,6 +75,6 @@ ms.locfileid: "68162364"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
- [項目](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>参照  
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
+ [アイテム](../msbuild/msbuild-items.md)

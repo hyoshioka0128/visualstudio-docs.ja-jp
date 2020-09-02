@@ -21,14 +21,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e64ef97b8b51f8a943e216bad67ec300026d5654
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382056"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>方法: テクニカル サポートのリンクを指定する
-アプリケーションを公開するとき [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、**サポート URL**プロパティは、ユーザーがアプリケーションに関する情報を取得するために使用できる Web ページまたはファイル共有を識別します。 このプロパティは省略可能です。指定されている場合、URL はアプリケーションの [**プログラムの追加と削除**] ダイアログボックスに表示されます。
+アプリケーションを公開するとき [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、 **サポート URL** プロパティは、ユーザーがアプリケーションに関する情報を取得するために使用できる Web ページまたはファイル共有を識別します。 このプロパティは省略可能です。指定されている場合、URL はアプリケーションの [ **プログラムの追加と削除** ] ダイアログボックスに表示されます。
 
  "**サポート URL** " プロパティは、**プロジェクトデザイナー**の [**発行**] ページで設定できます。
 
@@ -38,11 +38,11 @@ ms.locfileid: "85382056"
 
 2. **[公開]** タブをクリックします。
 
-3. [**オプション**] ボタンをクリックして、[**発行オプション**] ダイアログボックスを開きます。
+3. [ **オプション** ] ボタンをクリックして、[ **発行オプション** ] ダイアログボックスを開きます。
 
-4. [**説明**] をクリックします。
+4. [ **説明**] をクリックします。
 
-5. [**サポート URL** ] フィールドに、web サイト、web ページ、または UNC 共有への完全修飾パスを入力します。
+5. [ **サポート URL** ] フィールドに、web サイト、web ページ、または UNC 共有への完全修飾パスを入力します。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: を提供します。マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider2:: FunctionHasLineInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3a574766b884bf1aeed253754534fee66967e9ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733461"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
@@ -40,13 +40,13 @@ int FunctionHasLineInfo(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]インターフェイスによって表されるデバッグ[アドレス](../../../extensibility/debugger/reference/idebugaddress.md)。 このアドレスはMETHOD_ADDRESSでなければなりません。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるデバッグアドレス。 このアドレスは METHOD_ADDRESS である必要があります。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の`S_FALSE`場合は、 を返します。
+成功した場合はを返します `S_OK` 。それ以外の場合はを返し `S_FALSE` ます。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)示します。
+次の例は、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(
