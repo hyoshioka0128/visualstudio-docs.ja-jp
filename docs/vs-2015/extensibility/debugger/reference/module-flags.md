@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae51d604f455b12fd6933a54954b75a97aea4eb7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547469"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
+# <a name="module_flags"></a>MODULE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-モジュールの記述に使用します。  
+モジュールを記述するために使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -51,35 +51,35 @@ public enum enum_MODULE_FLAGS { 
   
 ## <a name="members"></a>メンバー  
  MODULE_FLAG_NONE  
- モジュールは指定されません。  
+ モジュールを指定しません。  
   
  MODULE_FLAG_SYSTEM  
- システム モジュールを指定します。  
+ システムモジュールを指定します。  
   
  MODULE_FLAG_SYMBOLS  
- シンボルのモジュールを指定します。  
+ シンボルモジュールを指定します。  
   
  MODULE_FLAG_64BIT  
- 64 ビット モジュールを指定します。  
+ 64ビットモジュールを指定します。  
   
  MODULE_FLAG_OPTIMIZED  
- モジュールが最適化されているを指定します。 この状態が反映、**モジュール**ウィンドウ。  
+ モジュールが最適化されていることを指定します。 この状態は、[ **モジュール** ] ウィンドウに反映されます。  
   
  MODULE_FLAG_UNOPTIMIZED  
- モジュールが最適化されていないことを指定します。 この状態が反映、**モジュール**ウィンドウ。 これは、既定の状態です。  
+ モジュールが最適化されていないことを指定します。 この状態は、[ **モジュール** ] ウィンドウに反映されます。 これが既定の状態です。  
   
-## <a name="remarks"></a>Remarks  
- 使用、`m_dwModuleFlags`のメンバー、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体。  
+## <a name="remarks"></a>注釈  
+ `m_dwModuleFlags` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体のメンバーに使用されます。  
   
- これらのフラグは、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

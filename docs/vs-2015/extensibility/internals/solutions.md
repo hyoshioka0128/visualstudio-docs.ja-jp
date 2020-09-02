@@ -12,24 +12,24 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a88037abf64211148730d5a36cf92605b34a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197179"
 ---
-# <a name="solutions"></a>解決策
+# <a name="solutions"></a>ソリューション
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソリューションは、連携してアプリケーションを作成する 1 つまたは複数のプロジェクトのグループです。 ソリューションに関連するプロジェクトとステータス情報は、2 つのソリューション ファイル、テキスト ベースのソリューション (.sln) ファイルおよびバイナリ ソリューション ユーザー オプション (.suo) ファイルに格納されます。  
+ソリューションは、アプリケーションを作成するために連携して動作する1つ以上のプロジェクトをグループ化したものです。 ソリューションに関連するプロジェクトおよび状態情報は、2つのソリューションファイル、テキストベースのソリューション (.sln) ファイル、およびバイナリソリューションユーザーオプション (.suo) ファイルに格納されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [概要](../../extensibility/internals/solutions-overview.md)  
- ソリューションとソリューションを開いたときに発生するプロセスに含まれるソリューション ファイルの種類について説明します。  
+ ソリューションに含まれるソリューションファイルの種類と、ソリューションを開いたときに発生するプロセスについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [ソリューション (.Sln) ファイル](../../extensibility/internals/solution-dot-sln-file.md)  
  .Sln ファイルの構造について説明します。  
   
  [ソリューション ユーザー オプション (.Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
- .Suo ファイルをについて説明します。
+ .Suo ファイルについて説明します。

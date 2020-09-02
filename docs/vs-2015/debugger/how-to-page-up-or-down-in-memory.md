@@ -1,5 +1,5 @@
 ---
-title: '方法: ページまたはメモリ内で下 |Microsoft Docs'
+title: '方法: メモリ内で 1 ページずつ上下に移動する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157855"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>方法: メモリ内で 1 ページずつ上下に移動する
@@ -51,7 +51,7 @@ ms.locfileid: "68157855"
   
 - 垂直スクロール バーの上端または下端にある矢印をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [[メモリ] ウィンドウ](../debugger/memory-windows.md)   
+## <a name="see-also"></a>参照  
+ [メモリウィンドウ](../debugger/memory-windows.md)   
  [方法: [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)   
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

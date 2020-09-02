@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca7d6bfb799f0a9460702c4b581ef3f5261672b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147485"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-この構造体は、モジュールの JustMyCode 情報の設定に使用されます。  
+この構造体は、モジュールのジャスト Mycode 情報を設定するために使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,21 +42,21 @@ public struct JMC_CODE_SPEC {
   
 ## <a name="members"></a>メンバー  
  fIsUserCode  
- 0 以外の値 (`TRUE`) モジュールは、ユーザー コードと見なす場合は、0 (`FALSE`) モジュールが外部コードとして扱うとデバッグする場合。  
+ `TRUE`モジュールがユーザーコードと見なされる場合は0以外 ()。それ以外の場合は、 `FALSE` モジュールが外部コードとして扱われ、デバッグされない場合は 0 ()。  
   
  bstrModuleName  
  対象のモジュールの名前。  
   
-## <a name="remarks"></a>Remarks  
- このような構造の一覧としてこの構造体が渡される、 [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [Setジャスト Mycodestate](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) メソッドにそのような構造体のリストとして渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

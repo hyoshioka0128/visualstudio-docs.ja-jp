@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドの表示 |Microsoft Docs
+title: '[表示] メニューのコマンド | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f8efd65c60b28c0ba50419770351d62cb615dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146477"
 ---
 # <a name="view-menu-commands"></a>[表示] メニューのコマンド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**ビュー**メニュー コマンド、spy++ を制御するユーザー インターフェイスを提供します。  
+**[表示]** メニューには、Spy++ ユーザー インターフェイスを制御するためのコマンドが用意されています。  
   
  **フォント**  
- 開く、**フォント** ダイアログ ボックスで、現在の spy++ ビューで使用するためのフォントを選択できます。  
+ [ **フォント** ] ダイアログボックスを開きます。このダイアログボックスでは、現在の Spy + + ビューで使用するフォントを選択できます。  
   
  **ツール バー**  
  ツールバーを表示または非表示にします。  
   
  **ステータス バー**  
- ステータス バーを表示または非表示にします。  
+ ステータスバーを表示または非表示にします。  
   
- **Properties**  
- 開く、**プロパティ** ダイアログ ボックスを表示します。
+ **プロパティ**  
+ アクティブなビューの [ **プロパティ** ] ダイアログボックスを開きます。

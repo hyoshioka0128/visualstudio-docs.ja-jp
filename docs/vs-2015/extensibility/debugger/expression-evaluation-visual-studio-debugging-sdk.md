@@ -1,5 +1,5 @@
 ---
-title: 式の評価 (Visual Studio Debugging SDK) |Microsoft Docs
+title: 式の評価 (Visual Studio デバッグ SDK) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,33 +12,33 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f2a84f01168dd01921d933a80fe052c1a6c6447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562212"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>式の評価 (Visual Studio Debugging SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IDE は、中断モード中に、プログラムのいくつかの変数を含む単純な式を評価できる必要があります。 これを実現するには、デバッグ エンジン (DE) が解析および IDE のウィンドウの 1 つに入力された式を評価することがあります。  
+中断モードでは、IDE は、プログラムの複数の変数を含む単純な式を評価できる必要があります。 これを実現するには、デバッグエンジン (DE) が、IDE のいずれかのウィンドウに入力された式を解析して評価できる必要があります。  
   
- 使用して式を作成、 [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドとは、その結果では表さ[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイス。  
+ 式は、 [IDebugExpressionContext2::P arseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) メソッドを使用して作成され、結果の [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスによって表されます。  
   
- **IDebugExpression2** DE および呼び出しによってインターフェイスが実装されているその**EvalAsync**を返すメソッドを[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスを表示するために、IDE、IDE で式の評価の結果。 [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)をウォッチ ウィンドウまたは [ローカル] ウィンドウに式の値を使用できる構造体を返します。  
+ **IDebugExpression2**インターフェイスは DE によって実装され、式の評価結果を ide に表示するために、 [IDEBUGPROPERTY2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスを ide に返すために**evalasync**メソッドを呼び出します。 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) は、式の値をウォッチウィンドウまたは [ローカル] ウィンドウに配置するために使用できる構造体を返します。  
   
- デバッグ パッケージまたはセッション デバッグ マネージャー (SDM) を呼び出す[IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)または[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)を取得する、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)を表すインターフェイス評価の結果。 `IDebugProperty2` 名前、種類、および式の値を返すメソッドがあります。 この情報は、さまざまなデバッガー ウィンドウに表示されます。  
+ デバッグパッケージまたはセッションデバッグマネージャー (SDM) は、 [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) または [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) を呼び出して、評価の結果を表す [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) インターフェイスを取得します。 `IDebugProperty2` には、式の名前、型、および値を返すメソッドがあります。 この情報は、さまざまなデバッガーウィンドウに表示されます。  
   
-## <a name="using-expression-evaluation"></a>式の評価を使用します。  
- 式の評価を使用することを実装する必要があります、 [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドとそのすべてのメソッドの[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを次の表に示すようにします。  
+## <a name="using-expression-evaluation"></a>式の評価の使用  
+ 式の評価を使用するには、次の表に示すように、 [IDebugExpressionContext2::P arseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) メソッドと [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスのすべてのメソッドを実装する必要があります。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|非同期的に式を評価します。|  
-|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|非同期の式の評価を終了します。|  
-|[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|同期的に式を評価します。|  
+|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|式を非同期的に評価します。|  
+|[中止](../../extensibility/debugger/reference/idebugexpression2-abort.md)|非同期式の評価を終了します。|  
+|[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|式を同期的に評価します。|  
   
- 同期および非同期の評価の実装が必要に、 [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)メソッド。 非同期の式の評価の実装が必要[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)します。  
+ 同期および非同期評価を行うには、 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) メソッドの実装が必要です。 非同期式の評価には、 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)の実装が必要です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [実行の制御と状態の評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)

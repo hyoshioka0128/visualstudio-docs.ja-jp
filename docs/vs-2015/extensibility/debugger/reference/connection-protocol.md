@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72ed9b8a747814d9537739c8dc27e5f113547756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561861"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-デバッグ サーバーとパッケージのデバッグ (DE) 間の通信に使用されるプロトコルを示します。  
+デバッグサーバーとデバッグパッケージ (DE) 間の通信に使用されるプロトコルを示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -52,36 +52,36 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>パラメーター  
  CONNECTION_NONE  
- サーバーに接続が確立されていません。  
+ サーバーへの接続が確立されていません。  
   
  CONNECTION_UNKNOWN  
- 接続が確立されていますが、不明な型のです。  
+ 接続が確立されましたが、これは不明な種類です。  
   
  CONNECTION_LOCAL  
- ローカル サーバーへの接続です。  
+ ローカルサーバーへの接続です。  
   
  CONNECTION_PIPE  
- 接続では、名前付きパイプ経由です。  
+ 接続は名前付きパイプを介して行われます。  
   
  CONNECTION_TCPIP  
- 接続は、TCP/IP を使用します。  
+ 接続は TCP/IP を使用します。  
   
  CONNECTION_HTTP  
- 接続は、(Web サーバー) 経由の HTTP を使用します。  
+ 接続は HTTP (Web サーバー経由) を使用します。  
   
  CONNECTION_OTHER  
- 他の種類の接続が確立されています (この値は現在使用されません)。  
+ 他の種類の接続が確立されています (この値は現在使用されていません)。  
   
-## <a name="remarks"></a>Remarks  
- これらの値から返される、 [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ これらの値は、 [Getconnectionprotocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) メソッドから返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

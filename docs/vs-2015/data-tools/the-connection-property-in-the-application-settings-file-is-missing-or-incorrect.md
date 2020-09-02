@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b51ff1b20f197de5b6773413558b7e71764780b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655401"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません
@@ -21,7 +21,7 @@ ms.locfileid: "72655401"
 
 アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません。 .dbml ファイルの接続文字列が代わりに使用されます。
 
- .dbml ファイルには、アプリケーション設定ファイルに見つからない接続文字列への参照が含まれています。 このメッセージは情報であり、 **[OK]** をクリックすると接続文字列設定が作成されます。
+ .dbml ファイルには、アプリケーション設定ファイルに見つからない接続文字列への参照が含まれています。 このメッセージは情報であり、**[OK]** をクリックすると接続文字列設定が作成されます。
 
 ### <a name="to-respond-to-this-message"></a>対処方法
 

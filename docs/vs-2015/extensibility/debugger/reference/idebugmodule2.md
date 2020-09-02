@@ -13,54 +13,54 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9fc229a353655aeae06460c32b5233888f22dd6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555811"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、モジュールを表します: プログラムの実行可能ファイル、単位は、-、DLL など。  
+このインターフェイスは、モジュール (つまり、DLL などのプログラムの実行可能単位) を表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugModule2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジン (DE) は、モジュールを表すと、そのモジュールに関する情報へのアクセスを提供するこのインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグエンジン (DE) は、モジュールを表し、そのモジュールに関する情報へのアクセスを提供するために、このインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出し[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)このインターフェイスを返します。 DE 送信、 [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)インターフェイスを使用してセッション デバッグ マネージャー (SDM)、[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)メソッド。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [Getmodule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)を呼び出すと、このインターフェイスが返されます。 DE は、[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)メソッドを使用して、 [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)インターフェイスをセッションデバッグマネージャー (SDM) に送信します。  
   
- このインターフェイスで返される可能性も、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造 (への呼び出しによって返される[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md))。  
+ このインターフェイスは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体 ( [enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)の呼び出しによって返される) でも返すことができます。  
   
- [[次へ]](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)もこのインターフェイスを返します ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)を返します、 [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)インターフェイス)。  
+ [次](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) に、このインターフェイスも返します ([Enummodules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) は [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) インターフェイスを返します)。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugModule2`します。  
+ 次の表に、のメソッドを示し `IDebugModule2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|取得、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)このモジュールを記述します。|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|このモジュールを説明する [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) を取得します。|  
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|互換性のために残されています。 使用しないでください。 このモジュールのシンボルを再読み込みします。|  
   
-## <a name="remarks"></a>Remarks  
- モジュールの情報を表示できる、**モジュール**IDE のウィンドウ。  
+## <a name="remarks"></a>注釈  
+ モジュール情報は、IDE の [ **モジュール** ] ウィンドウに表示できます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
+ [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

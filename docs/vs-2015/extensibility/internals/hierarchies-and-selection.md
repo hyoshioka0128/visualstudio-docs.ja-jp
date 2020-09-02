@@ -13,29 +13,29 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5bed77a6ec6f8f819137b6859ea0934260f1f03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158398"
 ---
 # <a name="hierarchies-and-selection"></a>階層と選択
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-カスタマイズすると[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、理解する必要がどの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトとユーザーに表示される内容を判断する選択コンテキストを使用する方法などの階層を処理します。 このセクションでは、の概念を説明します。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]階層と選択します。  
+をカスタマイズするときは [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、がプロジェクトなどの [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 階層をどのように処理するか、およびユーザーに表示される内容を判断するために選択コンテキストを使用する方法を理解しておく必要があります。 ここでは、階層と選択の概念について説明し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)  
- プロジェクト階層および階層の一般的な概念について説明します。  
+ プロジェクト階層と、階層の一般的な概念について説明します。  
   
  [IDE での選択と通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
- について説明しますが、どのように[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) は、ユーザーの現在アクティブなオブジェクトに関する情報を保持でき、Vspackage の通貨を追跡します。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE: integrated development environment) がユーザーの現在アクティブなオブジェクトについての情報をどのように維持し、vspackage track の通貨を使用するかについて説明します。  
   
  [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)  
- ウィンドウで、ユーザーの選択コンテキストのフォーカスを特定する方法のモデルについて説明します。  
+ ウィンドウに対するユーザーの選択コンテキストフォーカスを判断する方法のモデルについて説明します。  
   
  [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)  
- について説明する方法で使用可能な機能[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ユーザーの現在の選択コンテキストと IDE の全体的なコンテキストに基づきます。  
+ の使用可能な機能 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] が、ユーザーの現在の選択コンテキストと IDE コンテキスト全体にどのように基づいているかについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [アーキテクチャ](../../extensibility/internals/project-types-architecture.md)  
