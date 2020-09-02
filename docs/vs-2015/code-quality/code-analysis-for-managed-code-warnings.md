@@ -1,6 +1,6 @@
 ---
 title: マネージコードの警告のコード分析 |Microsoft Docs
-ms.date: 11/15/2016
+ms.date: 08/31/2020
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: wpickett
-ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e689d137e071096d096e117ef3b79df405a060ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535734"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285750"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>マネージド コードの警告に対応するコードの解析
+# <a name="net-code-analysis-rules"></a>.NET コード分析規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 マネージド コード分析ツールには、マネージド コード ライブラリの規則違反を示す警告機能があります。 警告は、デザイン、ローカリゼーション、パフォーマンス、セキュリティなどの規則の区分に分類されています。 個々の警告によって、マネージド コード分析規則の違反がわかります。 ここでは、マネージド コード分析の各警告について、詳細な説明と例を紹介します。
@@ -37,7 +37,7 @@ ms.locfileid: "85535734"
 |カテゴリ|警告のカテゴリ。|
 |互換性に影響する変更点|規則違反を修正することが、互換性に影響する変更点かどうかを示します。 互換性に影響する変更点とは、違反の原因となった対象に対して依存関係を持つアセンブリが、新たに修正したバージョンで再コンパイルされないこと、または変更によって実行時にエラーになる可能性があることを示します。 複数の修正を適用でき、互換性に影響する変更点があるものとないものがある場合、"あり" と "なし" を併記しています。|
 |原因|規則に従って警告が生成される原因になった特定のマネージド コード。|
-|説明|警告の背景にある問題について説明します。|
+|Description|警告の背景にある問題について説明します。|
 |違反の修正方法|規則に適合し、警告が生成されないようにソース コードを変更する方法について説明します。|
 |警告を抑制する状況|規則による警告を抑制しても安全な場合について説明します。|
 |コード例|規則に違反する例と、規則に適合する修正した例を示します。|
