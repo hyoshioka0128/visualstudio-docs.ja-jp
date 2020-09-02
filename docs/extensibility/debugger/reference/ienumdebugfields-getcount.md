@@ -1,5 +1,5 @@
 ---
-title: I列挙メソッドフィールド::取得カウント |マイクロソフトドキュメント
+title: 'IEnumDebugFields:: GetCount |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5109e3f515b98cf8d89babb7a66ec28e7849d3ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716926"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
-このメソッドは、列挙体内の要素の数を返します。
+このメソッドは、列挙体の要素の数を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>パラメーター
 `pcelt`\
-[アウト]列挙体の要素数を返します。
+入出力列挙体の要素の数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、次の、複製、スキップ、およびリセットのみを実装する必要があることを指定する、慣習的な COM 列挙インターフェイスの一部ではありません。
+## <a name="remarks"></a>注釈
+ このメソッドは、次、複製、スキップ、およびリセットのみを実装する必要があることを指定する、慣例的な COM 列挙インターフェイスの一部ではありません。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

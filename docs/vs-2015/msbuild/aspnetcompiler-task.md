@@ -1,4 +1,4 @@
-﻿---
+---
 title: AspNetCompiler タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1267ddbb093f59eaa60fae0eef2d83f6b7ba2e24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187057"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler タスク
@@ -48,11 +48,11 @@ ms.locfileid: "68187057"
 |`PhysicalPath`|省略可能な `String` 型のパラメーターです。<br /><br /> コンパイルされるアプリケーションの物理パスを指定します。 このパラメーターを指定しないと、アプリケーションの場所の特定には IIS メタベースが使われます。 このパラメーターは、aspnet_compiler.exe の **-p** スイッチに対応します。|  
 |`TargetFrameworkMoniker`|省略可能な `String` 型のパラメーターです。<br /><br /> 使う必要がある aspnet_compiler.exe の .NET Framework バージョンを示す TargetFrameworkMoniker を指定します。 .NET Framework モニカーのみを受け付けます。|  
 |`TargetPath`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションのコンパイル先の物理パスを指定します。 指定しないと、アプリケーションはインプレースでプリコンパイルされます。|  
-|`Updateable`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> このパラメーターが `true` の場合、プリコンパイルされたアプリケーションは更新可能です。  既定値は `false` です。 このパラメーターは、aspnet_compiler.exe の **-u** スイッチに対応します。|  
+|`Updateable`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> このパラメーターが `true` の場合、プリコンパイルされたアプリケーションは更新可能です。  既定値は `false` です。 このパラメーターは、aspnet_compiler.exe の **-u** スイッチに対応しています。|  
 |`VirtualPath`|省略可能な `String` 型のパラメーターです。<br /><br /> コンパイル対象のアプリケーションの仮想パス。 `PhysicalPath` を指定すると、アプリケーションの場所の指定に物理パスが使われます。 それ以外の場合は IIS メタベースが使われ、アプリケーションは既定のサイトにあるものと想定されます。 このパラメーターは、aspnet_compiler.exe の **-v** スイッチに対応します。|  
   
-## <a name="remarks"></a>解説  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
+## <a name="remarks"></a>Remarks  
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加パラメーターとその説明の一覧については、「 [Tooltaskextension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のコード例では、`AspNetCompiler` タスクを使って [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションをプリコンパイルします。  
@@ -71,6 +71,6 @@ ms.locfileid: "68187057"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)

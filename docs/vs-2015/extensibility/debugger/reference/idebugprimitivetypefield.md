@@ -11,33 +11,33 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad9ff38ae4533f7999b9966c1de32ac77105fcc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188116"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-プリミティブ型の列挙値を表す、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイス。  
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスからのプリミティブ型の列挙値を表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPrimitiveTypeField : IDebugField  
 ```  
   
 ## <a name="methods"></a>メソッド  
- メソッドだけでなく、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスでは、このインターフェイスは、次のメソッドを実装します。  
+ このインターフェイスは、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
 |[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|このフィールドに関連付けられているプリミティブ型を取得します。|  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

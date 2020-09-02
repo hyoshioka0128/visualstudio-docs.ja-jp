@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 型の間の継承を作成する (クラス デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668100"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>方法: 型の間の継承を作成する (クラス デザイナー)
@@ -32,7 +32,7 @@ ms.locfileid: "72668100"
 
      クラス ダイアグラムがない場合は、クラス ダイアグラムを作成します。 「[方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)」を参照してください。
 
-2. **[クラス デザイナー]** の **[ツールボックス]** で、 **[継承]** をクリックします。
+2. **[クラス デザイナー]** の **[ツールボックス]** で、**[継承]** をクリックします。
 
 3. クラス ダイアグラムで、必要な型間の継承線を次の間で描画します。
 
@@ -50,4 +50,4 @@ ms.locfileid: "72668100"
     >  既存のジェネリック型を視覚化できますが、新しいジェネリック型は作成できません。 また、既存のジェネリック型の型パラメーターは変更できません。
 
 ## <a name="see-also"></a>参照
- [継承](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)の[継承の基本](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)[方法: クラスデザイナーの型 (クラスデザイナー) ビジュアル](../ide/how-to-view-inheritance-between-types-class-designer.md) [ C++クラス](../ide/visual-cpp-classes-in-class-designer.md)間の継承を表示する
+ [継承](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)の[継承の基本](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)[方法: 型の間の継承を表示する方法 (クラスデザイナー)](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++ クラスクラスデザイナー](../ide/visual-cpp-classes-in-class-designer.md)

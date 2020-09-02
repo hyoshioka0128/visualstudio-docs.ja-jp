@@ -16,32 +16,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddaea95bc879364de99c0ec01213cda30fa4e7d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197619"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Microsoft デバッグ インターフェイス アクセス ソフトウェア開発キット (DIA SDK) は、Microsoft ポスト コンパイラ ツールによって生成されたプログラム データベース (.pdb) ファイルに格納されている情報のデバッグへのアクセスを提供します。 ポスト コンパイラ ツールによって生成される .pdb ファイルの形式が定数のリビジョンを受けて、ために、形式を公開する実用的ではありません。 DIA API を使用すると、検索し、.pdb ファイルに格納されているデバッグ情報を参照するアプリケーションを開発できます。 このようなアプリケーションはスタック トレース バック情報を報告やパフォーマンス データを分析などのことができます。  
+Microsoft debug Interface Access Software Development Kit (DIA SDK) を使用すると、microsoft ポストコンパイラ tools によって生成されたプログラムデータベース (.pdb) ファイルに格納されているデバッグ情報にアクセスできます。 ポストコンパイラツールによって生成される .pdb ファイルの形式は定数リビジョンであるため、形式の公開は現実的ではありません。 DIA API を使用すると、.pdb ファイルに格納されているデバッグ情報を検索および参照するアプリケーションを開発できます。 このようなアプリケーションでは、レポートスタックのトレースバック情報や、パフォーマンスデータの分析などを行うことができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [はじめに](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
- 機能 DIA SDK の概要が示され、および必須のヘッダーとライブラリ ファイル DIA SDK がインストールされているを指定します。  
+ DIA SDK 機能の概要について説明し、DIA SDK がインストールされる場所、および必要なヘッダーファイルとライブラリファイルを示します。  
   
  [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- DIA API を使用して、.pdb ファイルを照会する方法について説明します。  
+ DIA API を使用して .pdb ファイルのクエリを実行する方法について説明します。  
   
  [シンボルとシンボル タグ](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- DIA API でシンボルとシンボル タグの使用方法について説明します。  
+ DIA API でのシンボルおよびシンボルタグの使用方法について説明します。  
   
  [リファレンス](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
- インターフェイス、メソッド、列挙型、および DIA API の構造が含まれています。  
+ DIA API のインターフェイス、メソッド、列挙型、および構造体が含まれています。  
   
  [Dia2dump サンプル](../../debugger/debug-interface-access/dia2dump-sample.md)  
- DIA API を使用して検索し、デバッグ情報を参照する方法を示しています。  
+ DIA API を使用してデバッグ情報を検索および参照する方法について説明します。  
   
  [Dia2dump.cpp ソース ファイル](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
- ソース コードで使用される[Dia2dump サンプル](../../debugger/debug-interface-access/dia2dump-sample.md)DIA API を示します。
+ DIA API を示すために [Dia2dump サンプル](../../debugger/debug-interface-access/dia2dump-sample.md) で使用されるソースコード。

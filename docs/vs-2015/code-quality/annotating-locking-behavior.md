@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271593"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
@@ -67,31 +67,31 @@ ms.locfileid: "77271593"
 ## <a name="locking-annotations"></a>ロックの注釈  
  次の表に、ロックの注釈の一覧を示します。  
   
-|Annotation|説明|  
+|注釈|説明|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの排他ロックカウントによって関数がインクリメントされることを示します。|  
-|`_Acquires_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトのロックカウントによって関数がインクリメントされることを示します。|  
-|`_Acquires_nonreentrant_lock_(expr)`|`expr` によって指定されたロックが取得されます。  ロックが既に保持されている場合は、エラーが報告されます。|  
-|`_Acquires_shared_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの共有ロックカウントによって関数がインクリメントされることを示します。|  
-|`_Create_lock_level_(name)`|シンボルを宣言するステートメントがロックレベルであり、注釈 `_Has_Lock_level_` と `_Lock_level_order_`に使用できるように `name` ます。|  
-|`_Has_lock_kind_(kind)`|リソースオブジェクトの型情報を絞り込むために、任意のオブジェクトに注釈を加えます。 場合によっては、さまざまな種類のリソースに共通の型が使用され、オーバーロードされた型は、さまざまなリソース間でセマンティック要件を区別するのに十分ではありません。 定義済みの `kind` パラメーターの一覧を次に示します。<br /><br /> `_Lock_kind_mutex_`<br /> Mutex のロックの種類 ID。<br /><br /> `_Lock_kind_event_`<br /> イベントのロックの種類 ID。<br /><br /> `_Lock_kind_semaphore_`<br /> セマフォのロックの種類 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> スピンロックのロックの種類の ID。<br /><br /> `_Lock_kind_critical_section_`<br /> クリティカルセクションのロックの種類 ID。|  
-|`_Has_lock_level_(name)`|ロックオブジェクトに注釈を付け、`name`のロックレベルを与えます。|  
-|`_Lock_level_order_(name1, name2)`|`name1` と `name2`間のロックの順序を与えるステートメント。|  
-|`_Post_same_lock_(expr1, expr2)`|関数に注釈を付け、post 状態で、2つのロック (`expr1` と `expr2`) が同じロックオブジェクトであるかのように処理されることを示します。|  
-|`_Releases_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの排他ロックカウントによって関数がデクリメントされることを示します。|  
-|`_Releases_lock_(expr)`|関数に注釈を付け、post 状態では、`expr`によって指定されたロックオブジェクトのロックカウントによって関数がデクリメントされることを示します。|  
-|`_Releases_nonreentrant_lock_(expr)`|`expr` によって指定されたロックが解放されます。 ロックが現在保持されていない場合は、エラーが報告されます。|  
-|`_Releases_shared_lock_(expr)`|関数に注釈を付け、post 状態のときに、`expr`によって指定されたロックオブジェクトの共有ロックカウントによって関数がデクリメントされることを示します。|  
-|`_Requires_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって指定されたオブジェクトのロックカウントが少なくとも1つであることを示します。|  
-|`_Requires_lock_not_held_(expr)`|関数に注釈を付け、pre 状態では `expr` によって指定されたオブジェクトのロックカウントが0であることを示します。|  
+|`_Acquires_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、によって指定されたロックオブジェクトの排他ロックカウントによって関数がインクリメントされることを示し `expr` ます。|  
+|`_Acquires_lock_(expr)`|関数に注釈を付け、post 状態のときに、によって指定されたロックオブジェクトのロックカウントによって関数がインクリメントされることを示し `expr` ます。|  
+|`_Acquires_nonreentrant_lock_(expr)`|によって名前が付けられたロック `expr` が取得されます。  ロックが既に保持されている場合は、エラーが報告されます。|  
+|`_Acquires_shared_lock_(expr)`|関数に注釈を付け、post 状態のときに、によって指定されたロックオブジェクトの共有ロックカウントによって関数がインクリメントされることを示し `expr` ます。|  
+|`_Create_lock_level_(name)`|`name`注釈とで使用できるように、記号をロックレベルとして宣言するステートメント `_Has_Lock_level_` `_Lock_level_order_` 。|  
+|`_Has_lock_kind_(kind)`|リソースオブジェクトの型情報を絞り込むために、任意のオブジェクトに注釈を加えます。 場合によっては、さまざまな種類のリソースに共通の型が使用され、オーバーロードされた型は、さまざまなリソース間でセマンティック要件を区別するのに十分ではありません。 定義済みのパラメーターの一覧を次に示し `kind` ます。<br /><br /> `_Lock_kind_mutex_`<br /> Mutex のロックの種類 ID。<br /><br /> `_Lock_kind_event_`<br /> イベントのロックの種類 ID。<br /><br /> `_Lock_kind_semaphore_`<br /> セマフォのロックの種類 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> スピンロックのロックの種類の ID。<br /><br /> `_Lock_kind_critical_section_`<br /> クリティカルセクションのロックの種類 ID。|  
+|`_Has_lock_level_(name)`|ロックオブジェクトに注釈を付け、のロックレベルを与え `name` ます。|  
+|`_Lock_level_order_(name1, name2)`|との間のロックの順序を与えるステートメント `name1` `name2` 。|  
+|`_Post_same_lock_(expr1, expr2)`|関数に注釈を付け、post 状態では2つのロック ( `expr1` と) が同じロックオブジェクトであるかのように処理されることを示し `expr2` ます。|  
+|`_Releases_exclusive_lock_(expr)`|関数に注釈を付け、post 状態のときに、によって指定されたロックオブジェクトの排他ロックカウントによって関数がデクリメントされることを示し `expr` ます。|  
+|`_Releases_lock_(expr)`|関数に注釈を付け、post 状態のときに、によって指定されたロックオブジェクトのロックカウントによって関数がデクリメントされることを示し `expr` ます。|  
+|`_Releases_nonreentrant_lock_(expr)`|によって指定されたロック `expr` が解放されます。 ロックが現在保持されていない場合は、エラーが報告されます。|  
+|`_Releases_shared_lock_(expr)`|関数に注釈を付け、post 状態のときに、によって指定されたロックオブジェクトの共有ロックカウントによって関数がデクリメントされることを示し `expr` ます。|  
+|`_Requires_lock_held_(expr)`|関数に注釈を付け、pre 状態で、によって名前が付けられたオブジェクトのロックカウントが少なくとも1つであることを示し `expr` ます。|  
+|`_Requires_lock_not_held_(expr)`|関数に注釈を付け、pre 状態で、によって名前が付けられたオブジェクトのロックカウントが0であることを示し `expr` ます。|  
 |`_Requires_no_locks_held_`|関数に注釈を指定し、チェッカーが認識しているすべてのロックのロック数が0であることを示します。|  
-|`_Requires_shared_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって指定されたオブジェクトの共有ロックカウントが少なくとも1つであることを示します。|  
-|`_Requires_exclusive_lock_held_(expr)`|関数に注釈を付け、pre 状態で、`expr` によって指定されたオブジェクトの排他ロックカウントが少なくとも1つであることを示します。|  
+|`_Requires_shared_lock_held_(expr)`|関数に注釈を付け、pre 状態で、によって名前が付けられたオブジェクトの共有ロックカウント `expr` が少なくとも1つであることを示します。|  
+|`_Requires_exclusive_lock_held_(expr)`|関数に注釈を付け、pre 状態で、によって名前が付けられたオブジェクトの排他ロックカウント `expr` が少なくとも1つであることを示します。|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>非公開のロック オブジェクトに対する SAL の組み込み  
  特定のロックオブジェクトは、関連付けられているロック関数の実装によって公開されません。  次の表に、これらの非公開のロックオブジェクトを操作する関数に対する注釈を有効にする SAL 組み込み変数を示します。  
   
-|Annotation|説明|  
+|注釈|説明|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|キャンセルスピンロックについて説明します。|  
 |`_Global_critical_region_`|クリティカル領域について説明します。|  
@@ -101,20 +101,20 @@ ms.locfileid: "77271593"
 ## <a name="shared-data-access-annotations"></a>共有データ アクセスの注釈  
  次の表は、共有データアクセスの注釈を示しています。  
   
-|Annotation|説明|  
+|注釈|説明|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|  
-|`_Interlocked_`|変数に注釈をし、`_Guarded_by_(_Global_interlock_)`に相当します。|  
+|`_Guarded_by_(expr)`|変数に注釈を付け、変数がアクセスされるたびに、によって指定されたロックオブジェクトのロック数 `expr` が少なくとも1であることを示します。|  
+|`_Interlocked_`|変数に注釈を付いており、これはと同じです `_Guarded_by_(_Global_interlock_)` 。|  
 |`_Interlocked_operand_`|注釈付き関数のパラメーターは、さまざまなインタロックされた関数のいずれかのターゲットオペランドです。  これらのオペランドには、特定の追加プロパティが必要です。|  
-|`_Write_guarded_by_(expr)`|変数に注釈を付け、変数が変更されるたびに、`expr` によって指定されたロックオブジェクトのロック数が少なくとも1つであることを示します。|  
+|`_Write_guarded_by_(expr)`|変数に注釈を付け、変数が変更されるたびに、によって指定されたロックオブジェクトのロック数 `expr` が少なくとも1であることを示します。|  
   
 ## <a name="see-also"></a>参照  
- [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL](../code-quality/understanding-sal.md)  について  
+ [SAL 注釈を使用して C/c + + コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL について](../code-quality/understanding-sal.md)   
  [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
  [構造体とクラスに注釈を付ける](../code-quality/annotating-structs-and-classes.md)   
- [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
+ [注釈を適用するタイミングと場所の指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベストプラクティスと例](../code-quality/best-practices-and-examples-sal.md)   
  [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)

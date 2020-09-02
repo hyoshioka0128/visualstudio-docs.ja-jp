@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField |Microsoft Docs
+title: 'IDebugCustomAttribute:: GetParentField |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b6d6ceadc8ee0dc6099d6463a75f1c792837e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569577"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
@@ -40,14 +40,14 @@ int GetParentField(
   
 #### <a name="parameters"></a>パラメーター  
  `ppField`  
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)カスタム属性がアタッチされているフィールドを表すオブジェクト。  
+ 入出力カスタム属性がアタッチされているフィールドを表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 呼び出す、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドで返された[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)親フィールドの種類を決定するオブジェクトします。  
+## <a name="remarks"></a>注釈  
+ 返された[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに対して[getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドを呼び出し、親のフィールドの種類を判別します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
