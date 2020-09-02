@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::UnloadSymbols |Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: UnloadSymbols |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad78f1b569180a93b195f6a4076cc7396dcf8e53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176781"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-メモリから指定したモジュールのデバッグ シンボルをアンロードします。  
+指定したモジュールのデバッグシンボルをメモリからアンロードします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,16 +41,16 @@ int UnloadSymbols(
   
 #### <a name="parameters"></a>パラメーター  
  `ulAppDomainID`  
- [in]アプリケーション ドメインの識別子。  
+ からアプリケーションドメインの識別子。  
   
  `guidModule`  
- [in]モジュールの一意の識別子。  
+ からモジュールの一意識別子。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。  
+ 次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::UnloadSymbols(  
@@ -91,5 +91,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

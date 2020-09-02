@@ -1,5 +1,5 @@
 ---
-title: Web アプリケーションのデバッグ |Microsoft Docs
+title: Web アプリケーションのデバッグ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d11969ecfbe9a7e3fd02ad289b0de95512b0b8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177500"
 ---
 # <a name="debugging-web-applications"></a>Web アプリケーションのデバッグ
@@ -33,7 +33,7 @@ ms.locfileid: "68177500"
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: Web アプリケーションをデバッグする](../debugger/how-to-debug-web-applications.md)  
- デバッグする方法について説明します、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]まだ開発中のプロジェクト。  
+ 開発中のプロジェクトをデバッグする方法について説明し [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ます。  
   
  [配置した Web アプリケーションのデバッグ](../debugger/debugging-deployed-web-applications.md)  
  配置済みの [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションをデバッグする方法について説明します。  
@@ -54,8 +54,8 @@ ms.locfileid: "68177500"
  [配置した Web アプリケーションのデバッグ](../debugger/debugging-deployed-web-applications.md)  
  配置済みの [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションをデバッグする方法について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Web アプリケーションとスクリプトのデバッグ](../debugger/debugging-web-applications-and-script.md)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
- [デバッガーの基本事項](../debugger/debugger-basics.md)   
+ [デバッガーの基本](../debugger/debugger-basics.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

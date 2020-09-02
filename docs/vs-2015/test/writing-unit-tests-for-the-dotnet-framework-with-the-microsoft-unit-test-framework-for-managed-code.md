@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657067"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>マネージド コード用の Microsoft 単体テスト フレームワークを使用した .NET Framework 用単体テストの記述
@@ -26,10 +26,10 @@ ms.locfileid: "72657067"
 
  [Assert クラスの使用](../test/using-the-assert-classes.md)
 
- [方法: データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)
+ [方法: データドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)
 
- [ジェネリック メソッドの単体テスト](../test/unit-tests-for-generic-methods.md)
+ [ジェネリックメソッドの単体テスト](../test/unit-tests-for-generic-methods.md)
 
  [方法: .NET の旧バージョンを対象に指定する](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 
- [単体テスト作成用のサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)
+ [単体テストを作成するためのサンプルプロジェクト](../test/sample-project-for-creating-unit-tests.md)
