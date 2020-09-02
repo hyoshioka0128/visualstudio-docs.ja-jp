@@ -13,19 +13,19 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4cd84c3580d94491e09ce9e8cde8175f9e437be0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693396"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- このインターフェイスは、ポインター オブジェクトを表します。  
+ このインターフェイスは、ポインターオブジェクトを表します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -33,31 +33,31 @@ ms.locfileid: "65693396"
 IDebugPointerObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- 式エバリュエーターでは、ポインター オブジェクトを表すには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ 式エバリュエーターは、このインターフェイスを実装してポインターオブジェクトを表します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)インターフェイスを使用してこのインターフェイスを取得できる[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)場合、`IDebugObject`ポインターを表します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ がポインターを表す場合、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) インターフェイスは [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) を使用してこのインターフェイスを取得できます `IDebugObject` 。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 継承されたメソッドだけでなく[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)、`IDebugPointerObject`インターフェイスは、次のメソッドを公開します。  
+ インターフェイスは、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)から継承されたメソッドに加えて、 `IDebugPointerObject` 次のメソッドを公開します。  
   
-|メソッド|説明|  
+|Method|説明|  
 |------------|-----------------|  
 |[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|インターフェイスが指すオブジェクトを取得します。|  
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|インターフェイスの一連の連続するバイトとして指している値を取得します。|  
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|インターフェイスの一連の連続するバイトを指している値を設定します。|  
+|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|インターフェイスが連続する一連のバイトとして指す値を取得します。|  
+|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|インターフェイスが連続する一連のバイトを指す値を設定します。|  
   
-## <a name="remarks"></a>Remarks  
- 式エバリュエーターでは、このインターフェイスを使用して、解析ツリー内のポインターを表します。  
+## <a name="remarks"></a>解説  
+ 式エバリュエーターは、このインターフェイスを使用して、解析ツリー内のポインターを表します。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: ee.h  
+ ヘッダー: ee  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [式の評価インターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

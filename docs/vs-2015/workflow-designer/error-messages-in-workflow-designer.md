@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656761"
 ---
 # <a name="error-messages-in-workflow-designer"></a>ワークフロー デザイナーでのエラー メッセージ
@@ -36,7 +36,7 @@ ms.locfileid: "72656761"
 
    無効な式や検証制約違反によって、ワークフローの構築が失敗することはありません。 ワークフローは正常に構築されますが、実行時に <xref:System.Activities.InvalidWorkflowException> がスローされます。 XAML ファイルにエラーがある場合は、構築が失敗します。
 
-   @No__t_0 内では、ワークフローが読み込まれると、そのエラーが**エラー一覧**に表示されます。 エラーの原因となっているアクティビティに移動するには、**エラー一覧**でエラーをダブルクリックします。
+   内部 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、ワークフローが読み込まれると、そのエラーが **エラー一覧**に表示されます。 エラーの原因となっているアクティビティに移動するには、 **エラー一覧**でエラーをダブルクリックします。
 
 ### <a name="expression-errors"></a>式のエラー
  無効な式が赤い円で示され、その式の横に白い感嘆符が付いています。 このアイコンの上にカーソルを置くと、エラーの原因を表すツールヒントが表示されます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内では、式をクリックすると、エラーの発生元に下線が引かれた行が表示されます。 下線が引かれたテキストの上にカーソルを置くと、エラーの発生元を示すツールヒントが表示されます。

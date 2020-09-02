@@ -1,5 +1,5 @@
 ---
-title: Iデバッグフィールド |マイクロソフトドキュメント
+title: IDebugField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728756"
 ---
 # <a name="idebugfield"></a>IDebugField
@@ -28,31 +28,31 @@ ms.locfileid: "80728756"
 IDebugField : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- シンボル プロバイダーは、すべてのフィールドの基本クラスとしてこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ シンボルプロバイダーは、このインターフェイスをすべてのフィールドの基本クラスとして実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- このインターフェイスは、すべてのフィールドの基本クラスです。 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)の戻り値に基づいて、このインターフェイスは[、QueryInterface](/cpp/atl/queryinterface)を使用して、より特化したインターフェイスを返す場合があります。 さらに、多くのインターフェイスは`IDebugField`さまざまなメソッドからオブジェクトを返します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ このインターフェイスは、すべてのフィールドの基本クラスです。 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)の戻り値に基づいて、このインターフェイスは[QueryInterface](/cpp/atl/queryinterface)を使用してより特殊化されたインターフェイスを返す場合があります。 また、多くのインターフェイスは、 `IDebugField` さまざまなメソッドからオブジェクトを返します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugField`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugField` ます。
 
 |Method|説明|
 |------------|-----------------|
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|シンボルまたは型に関する表示可能な情報を取得します。|
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|記号または型に関する参照可能情報を取得します。|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|フィールドの種類を取得します。|
-|[Gettype](../../../extensibility/debugger/reference/idebugfield-gettype.md)|フィールドの種類を取得します。|
+|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|フィールドの型を取得します。|
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|フィールドのコンテナーを取得します。|
 |[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|フィールドのアドレスを取得します。|
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|フィールドのサイズをバイト単位で取得します。|
+|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|フィールドのサイズ (バイト単位) を取得します。|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|フィールドに関する拡張情報を取得します。|
-|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|2 つのフィールドを比較します。|
-|[ゲットタイプ情報](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|シンボルまたは型に関する型に依存しない情報を取得します。|
+|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|2つのフィールドを比較します。|
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|記号または型に関する型に依存しない情報を取得します。|
 
-## <a name="remarks"></a>Remarks
- 型は C 言語`typedef`と同等です。
+## <a name="remarks"></a>解説
+ 型は C 言語に相当 `typedef` します。
 
- 次の C++ 言語の`weather`例では、クラス型であり`sunny`、`stormy`シンボルです。
+ 次の C++ 言語の例で `weather` は、はクラス型であり、 `sunny` と `stormy` は記号です。
 
 ```cpp
 class weather;
@@ -60,14 +60,14 @@ weather sunny;
 weather stormy;
 ```
 
- フィールドがシンボルまたは型を表すかどうかは[、GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)を呼び出して[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)結果を調べることによって判断できます。 ビットが`FIELD_KIND_TYPE`設定されている場合、フィールドは型であり、ビットが`FIELD_KIND_SYMBOL`設定されている場合は、シンボルです。
+ フィールドがシンボルまたは型を表すかどうかを判断するには、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) を呼び出し、 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) の結果を調べます。 ビットが設定されている場合、 `FIELD_KIND_TYPE` フィールドは型であり、ビットが設定されている場合 `FIELD_KIND_SYMBOL` は記号になります。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: sh.h
+ ヘッダー: sh. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [シンボル プロバイダーのインターフェイス](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

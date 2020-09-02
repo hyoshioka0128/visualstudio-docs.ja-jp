@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329581"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend のアートボードの修飾キー
@@ -31,7 +31,7 @@ ms.locfileid: "85329581"
 |描画または変換するオブジェクトの比率を固定する|**Shift** キーを押す|
 |オブジェクトを 15°刻みで回転させる|**Shift** キーを押す|
 |オブジェクトを複製する|**Alt** キーを押しながらオブジェクトをドラッグする|
-|オブジェクトの親を変更する|オブジェクトをレイアウトパネル上にドラッグし、 **Alt**キーを押してからマウスボタンを放す|
+|オブジェクトの親を変更する|オブジェクトをレイアウトパネル上にドラッグし、 **Alt** キーを押してからマウスボタンを放す|
 |複数のオブジェクトを選択する|**Ctrl キー**を押しながら各オブジェクトを選択する|
 |隣接する複数のオブジェクトを選択する|**Shift キー**を押しながら最初と最後のオブジェクトを選択する|
 |マーキーをドラッグして選択する|**Shift キー**を押しながらドラッグする|
@@ -41,6 +41,6 @@ ms.locfileid: "85329581"
 
 ## <a name="see-also"></a>関連項目
 
-- [ショートカット キー](../xaml-tools/keyboard-shortcuts-in-blend.md)
+- [キーボード ショートカット](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [ペン ツールの修飾キー](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
 - [[個別選択] ツールの修飾キー](../xaml-tools/direct-selection-tool-modifier-keys-in-blend.md)
