@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547239"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>方法: パスワードで保護されたドキュメントでデータをキャッシュする
@@ -30,7 +30,7 @@ ms.locfileid: "85547239"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>パスワードで保護されている Word 文書にデータをキャッシュするには
 
-1. クラスで `ThisDocument` 、パブリックフィールドまたはキャッシュされるプロパティをマークします。 詳細については、「[データのキャッシュ](../vsto/caching-data.md)」を参照してください。
+1. クラスで `ThisDocument` 、パブリックフィールドまたはキャッシュされるプロパティをマークします。 詳細については、「 [データのキャッシュ](../vsto/caching-data.md)」を参照してください。
 
 2. クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> メソッドをオーバーライド `ThisDocument` し、ドキュメントから保護を削除します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "85547239"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>パスワードで保護されている Excel ブックにデータをキャッシュするには
 
-1. `ThisWorkbook`クラスまたは n クラスのいずれかで `Sheet` *n* 、パブリックフィールドまたはキャッシュされるプロパティをマークします。 詳細については、「[データのキャッシュ](../vsto/caching-data.md)」を参照してください。
+1. `ThisWorkbook`クラスまたは n クラスのいずれかで `Sheet` *n* 、パブリックフィールドまたはキャッシュされるプロパティをマークします。 詳細については、「 [データのキャッシュ](../vsto/caching-data.md)」を参照してください。
 
 2. クラスの <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> メソッドをオーバーライド `ThisWorkbook` し、ブックから保護を削除します。
 

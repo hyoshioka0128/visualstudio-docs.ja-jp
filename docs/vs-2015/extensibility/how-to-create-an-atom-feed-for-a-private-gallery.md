@@ -1,5 +1,5 @@
 ---
-title: '方法: Atom を作成するプライベート ギャラリーのフィード |Microsoft Docs'
+title: '方法: プライベートギャラリーの Atom フィードを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204209"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: プライベート ギャラリーの Atom フィード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Atom (RSS) フィードを拡張機能を含みにフィードを追加するイントラネット上の場所を作成する**拡張機能と更新**をプライベート ギャラリーとして。 詳細については、「[プライベート ギャラリー](../extensibility/private-galleries.md)」を参照してください。  
+拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、そのフィードをプライベートギャラリーとして **拡張機能と更新プログラム** に追加することができます。 詳細については、「 [Private Galleries](../extensibility/private-galleries.md)」を参照してください。  
   
-## <a name="creating-an-atom-feed"></a>フィードを Atom の作成  
- Atom をプライベート ギャラリーとしてフィードを作成するには、最初にフォルダーに、拡張機能 (.vsix ファイル) を収集します。 場合は、サブフォルダーにそれらを編成できます。 次のリソースも必要になります。  
+## <a name="creating-an-atom-feed"></a>Atom フィードの作成  
+ Atom フィードをプライベートギャラリーとして作成するには、まず、拡張機能 (.vsix ファイル) をフォルダーに集めます。 必要に応じて、サブフォルダーに整理することができます。 また、次のリソースも必要になります。  
   
-- プライベート ギャラリーとして拡張機能を利用できるようにする atom.xml ファイルです。 Atom.xml ファイルに接続する方法については**拡張機能と更新**を参照してください[プライベート ギャラリー](../extensibility/private-galleries.md)します。  
+- 拡張機能をプライベートギャラリーとして使用できるようにする atom.xml ファイル。 atom.xml ファイルを **拡張機能と更新プログラム**に接続する方法の詳細については、「 [プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。  
   
-- 拡張機能 (たとえば、スクリーン ショット) から抽出されたすべてのイメージ ファイルを格納するフォルダー。 利用できるように、atom.xml ファイルがこれらのイメージへの相対リンクを含む**拡張機能と更新**します。  
+- 拡張機能から抽出されたイメージファイル (スクリーンショットなど) を含むフォルダー。 atom.xml ファイルには、 **拡張機能と更新プログラム**で使用できるように、これらのイメージへの相対リンクが含まれています。  
   
-  たとえば、フォルダーに次の 2 つの拡張機能を収集したとします。  
+  たとえば、フォルダーに次の2つの拡張機能を収集したとします。  
   
-- Template_Wizard_239.vsix は空の VSIX プロジェクト テンプレートです。  
+- Template_Wizard_239 .vsix。これは空の VSIX プロジェクトテンプレートです。  
   
-- SelectionHighlight.vsix は、選択した単語のすべてのインスタンスを強調表示するツールです。  
+- SelectionHighlight。 .vsix は、選択した単語のすべてのインスタンスを強調表示するツールです。  
   
-  Atom.xml ファイルの内容を次の例となります。  
+  atom.xml ファイルの内容は、次の例のようになります。  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   
@@ -73,7 +73,7 @@ Atom (RSS) フィードを拡張機能を含みにフィードを追加するイ
   
 ```  
   
- 2 つのリンク タグをイメージの生成されたフォルダーのスクリーン ショットを参照することに注意してください。  
+ 2つのリンクタグが、生成されるイメージのフォルダー内のスクリーンショットを参照していることに注意してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プライベート ギャラリー](../extensibility/private-galleries.md)
