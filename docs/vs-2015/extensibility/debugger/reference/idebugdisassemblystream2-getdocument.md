@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument |Microsoft Docs
+title: 'IDebugDisassemblyStream2:: GetDocument |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d71db41646fece07b79389c35cdfaa7402c31438
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196197"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-この入力ストリームに関連付けられているソース ドキュメントを取得します。  
+この入力ストリームに関連付けられているソースドキュメントを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,17 +42,17 @@ int GetDocument( 
   
 #### <a name="parameters"></a>パラメーター  
  `bstrDocumentUrl`  
- [in]ドキュメントの URL。  
+ からドキュメントの URL。  
   
  `ppDocument`  
- [out]返します、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)ドキュメントを表すオブジェクト。  
+ 入出力ドキュメントを表す [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、テキスト ドキュメントを実際のファイルに格納されていないデバッグ エンジンによって実装されます。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、実際のファイルに格納されていないテキストドキュメントを含むデバッグエンジンによって実装されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

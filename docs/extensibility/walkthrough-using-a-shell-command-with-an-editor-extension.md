@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e9f7de69cfd969db8ae905ea65bbf868cf2c88a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904449"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェルコマンドを使用する
@@ -22,17 +22,17 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
  このチュートリアルでは、Managed Extensibility Framework (MEF) コンポーネントパーツと共に VSPackage を使用する方法について説明します。 VSPackage を使用して、メニューコマンドを Visual Studio シェルに登録する必要があります。 また、コマンドを使用して、MEF コンポーネントの部分にアクセスすることもできます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>メニューコマンドを使用して拡張機能を作成する
  [**ツール**] メニューに [**装飾要素の追加**] という名前のメニューコマンドを配置する VSPackage を作成します。
 
-1. という名前の C# VSIX プロジェクトを作成 `MenuCommandTest` し、カスタムコマンド項目テンプレート名**addadornment**を追加します。 詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+1. という名前の C# VSIX プロジェクトを作成 `MenuCommandTest` し、カスタムコマンド項目テンプレート名 **addadornment**を追加します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. MenuCommandTest という名前のソリューションが開きます。 MenuCommandTestPackage ファイルには、メニューコマンドを作成し、[**ツール**] メニューに配置するコードが含まれています。 この時点で、コマンドによってメッセージボックスが表示されます。 後の手順では、これを変更してコメントの表示要素を表示する方法を示します。
+2. MenuCommandTest という名前のソリューションが開きます。 MenuCommandTestPackage ファイルには、メニューコマンドを作成し、[ **ツール** ] メニューに配置するコードが含まれています。 この時点で、コマンドによってメッセージボックスが表示されます。 後の手順では、これを変更してコメントの表示要素を表示する方法を示します。
 
-3. VSIX マニフェストエディターで*source.extension.vsixmanifest*ファイルを開きます。 このタブには、 `Assets` MenuCommandTest という名前の VisualStudio の行が含まれている必要があります。
+3. VSIX マニフェストエディターで *source.extension.vsixmanifest* ファイルを開きます。 このタブには、 `Assets` MenuCommandTest という名前の VisualStudio の行が含まれている必要があります。
 
 4. *Source.extension.vsixmanifest*ファイルを保存して閉じます。
 
@@ -42,11 +42,11 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 2. このプロジェクトは、厳密な名前が付けられた VSPackage アセンブリと対話するため、アセンブリに署名する必要があります。 VSPackage アセンブリ用に既に作成されているキーファイルを再利用することができます。
 
-    1. プロジェクトのプロパティを開き、[**署名**] タブを選択します。
+    1. プロジェクトのプロパティを開き、[ **署名** ] タブを選択します。
 
-    2. [**アセンブリの署名**] を選択します。
+    2. [ **アセンブリの署名**] を選択します。
 
-    3. [**厳密な名前のキーファイルを選択し**てください] で、MenuCommandTest アセンブリ用に生成された*キー .snk*ファイルを選択します。
+    3. [ **厳密な名前のキーファイルを選択し**てください] で、MenuCommandTest アセンブリ用に生成された *キー .snk* ファイルを選択します。
 
 ## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>VSPackage プロジェクトの MEF 拡張機能を参照してください。
  MEF コンポーネントを VSPackage に追加するため、マニフェストで両方の種類のアセットを指定する必要があります。
@@ -56,15 +56,15 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage プロジェクトで MEF コンポーネントを参照するには
 
-1. MenuCommandTest プロジェクトで、VSIX マニフェストエディターの*source.extension.vsixmanifest*ファイルを開きます。
+1. MenuCommandTest プロジェクトで、VSIX マニフェストエディターの *source.extension.vsixmanifest* ファイルを開きます。
 
-2. [**アセット**] タブで、[**新規**] をクリックします。
+2. [ **アセット** ] タブで、[ **新規**] をクリックします。
 
-3. [**種類**] ボックスの一覧で、[ **VisualStudio**] を選択します。
+3. [ **種類** ] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
-4. [**ソース**] ボックスの一覧で、**現在のソリューション内のプロジェクト**を選択します。
+4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
 
-5. [**プロジェクト**] ボックスの一覧で [ **CommentAdornmentTest**] を選択します。
+5. [ **プロジェクト** ] ボックスの一覧で [ **CommentAdornmentTest**] を選択します。
 
 6. *Source.extension.vsixmanifest*ファイルを保存して閉じます。
 
@@ -685,7 +685,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 2. テキスト ファイルを作成します。 テキストを入力して選択します。
 
-3. [**ツール**] メニューの [**装飾の追加**] をクリックします。 バルーンはテキストウィンドウの右側に表示され、次のテキストのようなテキストが含まれている必要があります。
+3. [ **ツール** ] メニューの [ **装飾の追加**] をクリックします。 バルーンはテキストウィンドウの右側に表示され、次のテキストのようなテキストが含まれている必要があります。
 
      ユーザー名
 

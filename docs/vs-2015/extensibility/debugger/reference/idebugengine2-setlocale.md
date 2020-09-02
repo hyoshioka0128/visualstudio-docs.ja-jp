@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetLocale |Microsoft Docs
+title: 'IDebugEngine2:: SetLocale |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6b071bcc68b383854e1e5a12f3ae2cc08ea86f19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195926"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-デバッグ エンジン (DE) のロケールを設定します。  
+デバッグエンジン (DE) のロケールを設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,13 +40,13 @@ int SetLocale( 
   
 #### <a name="parameters"></a>パラメーター  
  `wLangID`  
- [in]言語ロケールを指定します。 たとえば、英語の場合は 1033 です。  
+ から言語のロケールを指定します。 たとえば、英語の場合は1033です。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドはセッション デバッグ マネージャー (SDM) に、DE によって返される文字列が正しくローカライズできるように、IDE のロケール設定を継承します。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、セッションデバッグマネージャー (SDM) によって呼び出され、DE によって返される文字列が適切にローカライズされるように、IDE のロケール設定を伝達します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

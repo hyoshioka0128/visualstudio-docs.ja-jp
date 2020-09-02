@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::LoadSymbols |Microsoft Docs
+title: 'IDebugEngine3:: LoadSymbols |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29f8af5e258da923ec814e0a224dcf87cbbfae9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195933"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このデバッグ エンジンでデバッグ中のすべてのモジュールのシンボルを読み込みます (必要に応じて)。  
+このデバッグエンジンによってデバッグされているすべてのモジュールのシンボルを (必要に応じて) 読み込みます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,14 +35,14 @@ int LoadSymbols();
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- なし。  
+ [なし] :  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。エラー コードを返しますそれ以外の場合。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- これには、このデバッグ エンジンによって参照されるすべてのモジュールのデバッグ シンボルが読み込まれます。 既に読み込まれていない場合にのみ、シンボルが読み込まれます。 呼び出して設定パスでシンボルが検索されます[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)します。  
+## <a name="remarks"></a>注釈  
+ これにより、このデバッグエンジンによって参照されるすべてのモジュールのデバッグシンボルが読み込まれます。 シンボルは、まだ読み込まれていない場合にのみ読み込まれます。 [Setsymbols path](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)への呼び出しによって設定されたパスでシンボルが検索されます。  
   
-## <a name="see-also"></a>関連項目  
- [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   
+## <a name="see-also"></a>参照  
+ [Setシンボルパス](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

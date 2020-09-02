@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586973"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト
@@ -27,11 +27,11 @@ ms.locfileid: "82586973"
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>コード化された UI テストについて把握しておくべきこと
  コード化された UI テストを使用する利点の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」と「[Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](https://msdn.microsoft.com/library/jj159335.aspx)」を参照してください。
 
- **メモ**
+ **ノート**
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")SharePoint アプリケーションのコード化された UI テストは、SharePoint 2010 でのみサポートされています。
+- ![Prerequsite](../test/media/prereq.png "前提条件") SharePoint アプリケーションのコード化された UI テストは、SharePoint 2010 でのみサポートされています。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")SharePoint アプリケーションでの Visio および PowerPoint 2010 コントロールのサポートはサポートされていません。
+- ![Prerequsite](../test/media/prereq.png "前提条件") SharePoint アプリケーションでの Visio および PowerPoint 2010 コントロールのサポートはサポートされていません。
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>SharePoint アプリのコード化された UI テストを作成する
  SharePoint 2010 アプリケーションでの[コード化された UI テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 方法は、他の種類のアプリケーションでのテストの作成方法と同じです。 記録と再生は、Web 編集インターフェイス上のすべてのコントロールでサポートされています。 カテゴリと Web パーツを選択するためのインターフェイスは、すべてが標準 Web コントロールです。
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- 空でないセルに対する操作を記録している場合は、セルにテキストを追加したときに新しい \<div> コントロールがセルの子として追加されるため、記録はより複雑になります。 新しい \<div> コントロールには、入力したテキストが含まれます。 レコーダーは新しい \<div> コントロールに対する操作を記録する必要がありますが、新しい \<div> コントロールはテキストが入力されるまで存在しないため、記録できません。 この問題に対応するために、手動で次のようにコードを変更する必要があります。
+ 空でないセルに対して操作を記録する場合、記録は少し複雑になります。これは、セルにテキストを追加すると、新しい \<div> コントロールがセルの子として追加されるためです。 新しいコントロールには、入力した \<div> テキストが含まれます。 レコーダーは、新しいコントロールに対する操作を記録する必要がありますが、 \<div> 新しい \<div> コントロールは、テストが入力されるまで存在しないため、できません。 この問題に対応するために、手動で次のようにコードを変更する必要があります。
 
 1. セルの初期化に移動して、 `RowIndex` および `ColumnIndex` プライマリ プロパティを作成します。
 
@@ -144,4 +144,4 @@ uiGridKeyboardInputEdit.Text=value;
  [Visual Studio ALM + Team Foundation Server のブログ](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
 ## <a name="see-also"></a>参照
- [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md) [Web パフォーマンスとロードテスト sharepoint 2010 および2013アプリケーション](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint ソリューションの作成](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)sharepoint のコードの[検証および](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)デバッグ sharepoint ソリューションの[ビルドと](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)デバッグ sharepoint[アプリケーションのパフォーマンスのプロファイリング](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md) [Web パフォーマンスとロードテスト sharepoint 2010 および2013アプリケーション](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint ソリューションの作成](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)sharepoint のコードの [検証および](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)デバッグ sharepoint ソリューションの [ビルドと](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)デバッグ sharepoint [アプリケーションのパフォーマンスのプロファイリング](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

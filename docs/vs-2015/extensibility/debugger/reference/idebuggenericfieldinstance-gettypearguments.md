@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments |Microsoft Docs
+title: 'IDebugGenericFieldInstance:: GetTypeArguments |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bef4d6c0d36eafd0279d97ecad2d1d2cc0656e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180832"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
@@ -43,16 +43,16 @@ int GetTypeArguments(
   
 #### <a name="parameters"></a>パラメーター  
  `cArgs`  
- [in]型パラメーターの数。  
+ から型パラメーターの数。  
   
  `ppArgs`  
- [out]型パラメーターの配列を返します。  
+ 入出力型パラメーターの配列を返します。  
   
  `pcArgs`  
- [入力、出力]メンバーの数、`ppArgs`配列。  
+ [入力、出力]配列内のメンバーの数 `ppArgs` 。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

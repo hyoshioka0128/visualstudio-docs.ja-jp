@@ -1,5 +1,5 @@
 ---
-title: をクリックして、ブレークポイントを指定します。マイクロソフトドキュメント
+title: IEnumDebugBoundBreakpoints2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421d46efbef189fd6ffc86812d2bfdd28f5da5ff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717446"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
@@ -28,38 +28,38 @@ ms.locfileid: "80717446"
 IEnumDebugBoundBreakpoints2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジン (DE) は、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 ブレークポイントがサポートされている場合は、このインターフェイスを実装する必要があります。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジン (DE) は、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 ブレークポイントがサポートされている場合は、このインターフェイスを実装する必要があります。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- ビジュアル スタジオ呼び出し:
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ Visual Studio の呼び出し:
 
-- [列挙ブレークポイント](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)トリガーされたすべてのブレークポイントのリストを表すこのインターフェイスを取得します。
+- [Enumbreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) ポイントは、トリガーされたすべてのブレークポイントのリストを表すこのインターフェイスを取得します。
 
-- バインドされたすべてのブレークポイントのリストを表すこのインターフェイスを取得するには、[列挙型ブレークポイント](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)です。
+- [Enumboundbreakpoints ポイント](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) は、バインドされたすべてのブレークポイントのリストを表すこのインターフェイスを取得します。
 
-- [列挙バインドブレークポイントは、保留中の](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)ブレークポイントにバインドされているすべてのブレークポイントのリストを表すこのインターフェイスを取得します。
+- [Enumboundbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ポイントは、保留中のブレークポイントにバインドされているすべてのブレークポイントのリストを表すこのインターフェイスを取得します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IEnumDebugBoundBreakpoints2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IEnumDebugBoundBreakpoints2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[次へ](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|列挙シーケンス内のバインドされたブレークポイントの指定した数を取得します。|
-|[スキップ](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|列挙シーケンス内のバインドされたブレークポイントの指定した数をスキップします。|
+|[次へ](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|列挙シーケンス内の指定した数のバインドされたブレークポイントを取得します。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|列挙シーケンス内の指定した数のバインドされたブレークポイントをスキップします。|
 |[リセット](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|列挙シーケンスを先頭にリセットします。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|列挙子のバインドされたブレークポイントの数を取得します。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|列挙子内のバインドされたブレークポイントの数を取得します。|
 
-## <a name="remarks"></a>Remarks
- Visual Studio では、このインターフェイスで表されるバインドされたブレークポイントを使用して、IDE のブレークポイントの表示を更新します。
+## <a name="remarks"></a>注釈
+ Visual Studio では、このインターフェイスによって表されるバインドされたブレークポイントを使用して、IDE 内のブレークポイントの表示を更新します。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
