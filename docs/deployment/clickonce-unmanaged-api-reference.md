@@ -29,65 +29,65 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900276"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce アンマネージド API リファレンス
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll から非管理対象のパブリック Api。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll からのアンマネージパブリック Api。
 
-## <a name="cleanonlineappcache"></a>CleanOnlineAppCache
- 消去またはからのすべてのオンライン アプリケーションのアンインストール、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション キャッシュします。
+## <a name="cleanonlineappcache"></a>Cleanオンライン Appcache
+ すべてのオンラインアプリケーションをアプリケーションキャッシュから消去またはアンインストール [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] します。
 
 ### <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラーを表す HRESULT を返します。 マネージ例外が発生した場合は、0x80020009 (DISP_E_EXCEPTION) を返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーを表す HRESULT を返します。 マネージ例外が発生した場合、は 0x80020009 (DISP_E_EXCEPTION) を返します。
 
-### <a name="remarks"></a>Remarks
- CleanOnlineAppCache の呼び出しが開始されます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]サービスが実行されていない場合。
+### <a name="remarks"></a>注釈
+ まだ実行されていない場合は、Cleanオンライン Appcache を呼び出すとサービスが開始され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
- マニフェストとアクティベーション URL からの展開情報を取得します。
+ マニフェストおよびアクティベーション URL から配置情報を取得します。
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|型|
+|パラメーター|説明|Type|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|`ActivationURL` へのポインター。|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest` へのポインター。|LPCWSTR|
-|`pwzApplicationIdentity`|完全なアプリケーション id が返されるを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|
-|`pdwIdentityBufferLength`|長さである DWORD へのポインター、 `pwzApplicationIdentity` WCHARs でのバッファー。 これには、NULL 終端文字のための領域が含まれます。|LPDWORD|
-|`pwzProcessorArchitecture`|マニフェストからのアプリケーションの展開のプロセッサ アーキテクチャを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|
-|`pdwArchitectureBufferLength`|長さである DWORD へのポインター、 `pwzProcessorArchitecture` WCHARs でのバッファー。|LPDWORD|
-|`pwzApplicationManifestCodebase`|マニフェストから、アプリケーション マニフェストのコードベースを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|
-|`pdwCodebaseBufferLength`|長さである DWORD へのポインター、 `pwzApplicationManifestCodebase` WCHARs でのバッファー。|LPDWORD|
-|`pwzDeploymentProvider`|NULL で終わる文字列を受け取るバッファーへのポインターを指定するマニフェストから配置プロバイダー存在する場合。 それ以外の場合、空の文字列が返されます。|LPWSTR|
-|`pdwProviderBufferLength`|長さである DWORD へのポインター、`pwzProviderBufferLength`します。|LPDWORD|
+|`pwzApplicationIdentity`|返される完全なアプリケーション id を指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|
+|`pdwIdentityBufferLength`|バッファーの長さ `pwzApplicationIdentity` (WCHARs) である DWORD へのポインター。 これには、NULL 終端文字のスペースが含まれます。|LPDWORD|
+|`pwzProcessorArchitecture`|マニフェストからアプリケーション配置のプロセッサアーキテクチャを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|
+|`pdwArchitectureBufferLength`|バッファーの長さ `pwzProcessorArchitecture` (WCHARs) である DWORD へのポインター。|LPDWORD|
+|`pwzApplicationManifestCodebase`|マニフェストからアプリケーションマニフェストのコードベースを指定する NULL で終わる文字列を受け取るバッファーへのポインター。|LPWSTR|
+|`pdwCodebaseBufferLength`|バッファーの長さ `pwzApplicationManifestCodebase` (WCHARs) である DWORD へのポインター。|LPDWORD|
+|`pwzDeploymentProvider`|マニフェストから配置プロバイダーを指定する NULL で終わる文字列を受け取るバッファーへのポインター (存在する場合)。 それ以外の場合は、空の文字列が返されます。|LPWSTR|
+|`pdwProviderBufferLength`|の長さである DWORD へのポインター `pwzProviderBufferLength` 。|LPDWORD|
 
 ### <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラーを表す HRESULT を返します。 バッファーが小さすぎる場合は、HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER) を返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーを表す HRESULT を返します。 バッファーが小さすぎる場合は、HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) を返します。
 
-### <a name="remarks"></a>Remarks
- ポインターを null にするにはできません。 `pcwzActivationUrl` `pcwzPathToDeploymentManifest`空にできません。
+### <a name="remarks"></a>注釈
+ ポインターを null にすることはできません。 `pcwzActivationUrl` およびを空にすることはでき `pcwzPathToDeploymentManifest` ません。
 
- アクティベーション URL をクリーンアップする、呼び出し元の役目です。 必要な場所またはクエリ文字列を削除するが、文字エスケープを追加します。
+ アクティベーション URL をクリーンアップするのは、呼び出し元の責任です。 たとえば、必要に応じてエスケープ文字を追加したり、クエリ文字列を削除したりできます。
 
- 入力文字列の長さを制限する、呼び出し元の責任です。 たとえば、URL の最大長は、2 KB です。
+ 入力の長さを制限するのは、呼び出し元の責任です。 たとえば、URL の最大長は2KB です。
 
 ## <a name="launchapplication"></a>LaunchApplication
- 起動または配置の URL を使用してアプリケーションをインストールします。
+ デプロイ URL を使用してアプリケーションを起動またはインストールします。
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|型|
+|パラメーター|説明|Type|
 |---------------|-----------------|----------|
-|`deploymentUrl`|配置マニフェストの URL を含む NULL で終わる文字列へのポインター。|LPCWSTR|
+|`deploymentUrl`|配置マニフェストの URL を格納している NULL で終わる文字列へのポインター。|LPCWSTR|
 |`data`|将来使用するために予約されています。 NULL にする必要があります|LPVOID|
-|`flags`|将来使用するために予約されています。 0 である必要があります。|DWORD|
+|`flags`|将来使用するために予約されています。 0 を指定する必要があります。|DWORD|
 
 ### <a name="return-value"></a>戻り値
- 成功した場合、S_OK を返します。それ以外の場合、エラーを表す HRESULT を返します。 マネージ例外が発生した場合は、0x80020009 (DISP_E_EXCEPTION) を返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーを表す HRESULT を返します。 マネージ例外が発生した場合、は 0x80020009 (DISP_E_EXCEPTION) を返します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

@@ -1,5 +1,5 @@
 ---
-title: 64 ビット アプリケーションの前提条件の展開 |Microsoft Docs
+title: 64ビットアプリケーションの展開の前提条件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928878"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>64 ビット アプリケーションの配置のための必要条件
@@ -36,12 +36,12 @@ ClickOnce の配置では、 64 ビット プラットフォームのアプリ�
 | 再頒布可能パッケージ | x64 サポート | IA64 サポート |
 | - |-------------|--------------|
 | [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | はい | いいえ |
-| Visual C++ 2010 ランタイム ライブラリ (IA64) | いいえ | [はい] |
-| Visual C++ 2010 ランタイム ライブラリ (x64) | [はい] | いいえ |
-| Microsoft .NET Framework 4 (x86 および x64) | [はい] | |
-| Microsoft .NET Framework 4 Client Profile (x86 および x64) | [はい] | |
+| Visual C++ 2010 ランタイム ライブラリ (IA64) | いいえ | はい |
+| Visual C++ 2010 ランタイム ライブラリ (x64) | はい | いいえ |
+| Microsoft .NET Framework 4 (x86 および x64) | はい | |
+| Microsoft .NET Framework 4 Client Profile (x86 および x64) | はい | |
 
 ## <a name="see-also"></a>関連項目
-- [アプリケーション、サービス、およびコンポーネントをデプロイします。](../deployment/deploying-applications-services-and-components.md)
-- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールします。](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [アプリケーション、サービス、およびコンポーネントの配置](../deployment/deploying-applications-services-and-components.md)
+- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [64 ビット アプリケーション](/dotnet/framework/64-bit-apps)

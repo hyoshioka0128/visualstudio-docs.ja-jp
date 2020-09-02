@@ -1,5 +1,5 @@
 ---
-title: '&lt;スケジュール&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;スケジュール &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,16 +16,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62927333"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;スケジュール&gt;要素 (ブートス トラップ)
-`Schedules`要素が含まれます`Schedule`によって定義されたコマンドで特定の時間を定義するには、要素、`Command`要素を実行する必要があります。
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;スケジュール &gt; 要素 (ブートストラップ)
+要素には、要素 `Schedules` `Schedule` によって定義されたコマンドを実行する特定の時刻を定義する要素が含まれ `Command` ます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Schedules>
@@ -40,28 +40,28 @@ ms.locfileid: "62927333"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `Schedules`要素の子である、`Product`要素。 各`Product`要素が 1 つだけあります`Schedules`要素。 `Schedules`要素に属性がありません。
+ 要素は `Schedules` 要素の子です `Product` 。 各 `Product` 要素は、最大で1つの要素を持つことができ `Schedules` ます。 `Schedules` 要素に属性はありません。
 
 ## <a name="schedule"></a>スケジュール
- `Schedule`要素の子である、`Schedules`要素。 A`Schedules`要素が少なくとも 1 つあります`Schedule`要素。
+ 要素は `Schedule` 要素の子です `Schedules` 。 要素には、 `Schedules` 少なくとも1つの要素が必要 `Schedule` です。
 
- `Schedule` 次の属性があります。
+ `Schedule` には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須。 スケジュール アイテムの名前。 これに対応して、`ScheduleName`のプロパティ、`Command`要素。 ときに、`Command`名前付きのスケジュールを参照するによって示される時にのみ実行されます`Schedule`要素。 また関連付けられるスケジュール、`FailIf`と`BypassIf`要素を指定したスケジュールで実行中にこれらの条件付きテストを制限します。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`Name`|必須です。 スケジュール項目の名前。 これは `ScheduleName` 、要素のプロパティに対応 `Command` します。 は、指定されたスケジュールを参照するときに、 `Command` その要素によって示される時刻にのみ実行され `Schedule` ます。 スケジュールは、および要素に関連付けられている場合もあり `FailIf` `BypassIf` ます。これにより、指定したスケジュールでこれらの条件テストを実行することが制限されます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
 
- 指定された`Schedule`要素には、次の子の 1 つだけ必要があります。
+ 指定された `Schedule` 要素は、次の子のうち1つだけを持つことができます。
 
 ## <a name="buildlist"></a>BuildList
- `BuildList`要素が、インストーラーのブートス トラップ アプリケーションの開始後にすぐにコマンドを実行するように指示します。
+ 要素は、 `BuildList` ブートストラップアプリケーションが開始された直後にコマンドを実行するようにインストーラーに指示します。
 
 ## <a name="beforepackage"></a>BeforePackage
- `BeforePackage`要素が指定したパッケージをインストールする前にコマンドを実行するインストーラーを指示します。
+ 要素は、 `BeforePackage` 指定されたパッケージがインストールされる前にコマンドを実行するようにインストーラーに指示します。
 
 ## <a name="afterpackage"></a>AfterPackage
- `AfterPackage`要素が指定したパッケージをインストールした後にコマンドを実行するインストーラーを指示します。
+ 要素は、 `AfterPackage` 指定されたパッケージのインストール後にコマンドを実行するようにインストーラーに指示します。
 
-## <a name="see-also"></a>関連項目
-- [\<製品 > 要素](../deployment/product-element-bootstrapper.md)
-- [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [\<Product> element](../deployment/product-element-bootstrapper.md)
+- [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)
