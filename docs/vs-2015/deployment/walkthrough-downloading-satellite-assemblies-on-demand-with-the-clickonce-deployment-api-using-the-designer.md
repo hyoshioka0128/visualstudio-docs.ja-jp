@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリのダウンロード |Microsoft Docs'
+title: 'チュートリアル: デザイナーを使用して、ClickOnce 配置 API で必要に応じてサテライトアセンブリをダウンロードする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,19 +22,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 559fb1f3613b42bd2c972f61b45736b07e76a318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420030"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>チュートリアル : デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 サテライト アセンブリを使用すると、複数のカルチャに対して Windows フォーム アプリケーションを構成できます。 *サテライト アセンブリ* とは、アプリケーションの既定のカルチャ以外のカルチャ用アプリケーション リソースを含むアセンブリのことです。
 
-説明したよう[ClickOnce アプリケーションのローカライズ](../deployment/localizing-clickonce-applications.md)、同じ内に複数のカルチャ用の複数のサテライト アセンブリを含めることができます[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開します。 既定では、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] により配置に含まれるすべてのサテライト アセンブリがクライアント コンピューターにダウンロードされます。ただし、多くの場合、1 つのクライアントに必要なサテライト アセンブリは 1 つだけです。
+「 [ClickOnce アプリケーションのローカライズ](../deployment/localizing-clickonce-applications.md)」で説明したように、同じデプロイ内の複数のカルチャに対して複数のサテライトアセンブリを含めることができ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ます。 既定では、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] により配置に含まれるすべてのサテライト アセンブリがクライアント コンピューターにダウンロードされます。ただし、多くの場合、1 つのクライアントに必要なサテライト アセンブリは 1 つだけです。
 
 このチュートリアルでは、サテライト アセンブリをオプションとしてマークする方法、および現在のカルチャ設定にクライアント コンピューターが必要とするアセンブリのみをダウンロードする方法について説明します。
 
@@ -51,9 +51,9 @@ ms.locfileid: "62420030"
 
 4. **[すべてのファイルを表示]** チェック ボックスをオンにして、サテライト アセンブリを表示します。 既定では、すべてのサテライト アセンブリが配置対象に含められ、このダイアログ ボックスに表示されます。
 
-     サテライト アセンブリは、フォームで、名前を持ちます*isoCode*\ApplicationName.resources.dll、場所*isoCode*は RFC 1766 形式の言語識別子です。
+     サテライトアセンブリは、 *isocode*\ApplicationName.resources.dll の形式で名前を持ちます。 *ISOCODE* は RFC 1766 形式の言語識別子です。
 
-5. クリックして**新しい.** で、**ダウンロード グループ**各言語識別子のリスト。 ダウンロード グループ名の入力を求めるメッセージが表示されたら、言語識別子を入力します。 たとえば、日本語のサテライト アセンブリの場合は指定する、ダウンロード グループ名`ja-JP`します。
+5. 各言語識別子の [**ダウンロードグループ**] ボックスの一覧の [**新規作成...** ] をクリックします。 ダウンロード グループ名の入力を求めるメッセージが表示されたら、言語識別子を入力します。 たとえば、日本語のサテライトアセンブリの場合は、ダウンロードグループ名を指定し `ja-JP` ます。
 
 6. **[アプリケーション ファイル]** ダイアログ ボックスを閉じます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "62420030"
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb#1)]
 
-4. `MyApplication` クラスに次のコードを追加します。
+4. 次のコードを `MyApplication` クラスに追加します。
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb#2)]
 
@@ -83,7 +83,7 @@ ms.locfileid: "62420030"
 
 コード例を見ると、<xref:System.Threading.Thread.CurrentUICulture%2A> が特定の値に設定されています。しかし、運用環境では、クライアント コンピューターに適切な値が既定で設定されるため、この行は削除する必要があります。 たとえば、アプリケーションを日本語のクライアント コンピューターで実行する場合、既定では <xref:System.Threading.Thread.CurrentUICulture%2A> が `ja-JP` になります。 ここでは、アプリケーションの配置前にサテライト アセンブリをテストするという趣旨でプログラムから設定しています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
-- [チュートリアル: ClickOnce 配置 API を使用して必要に応じてサテライト アセンブリをダウンロードする](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+- [チュートリアル : ClickOnce 配置 API を使用して必要に応じてサテライト アセンブリをダウンロードする](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [ClickOnce アプリケーションのローカライズ](../deployment/localizing-clickonce-applications.md)

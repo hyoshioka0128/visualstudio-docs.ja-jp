@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromPosition |Microsoft Docs
+title: 'IDebugSymbolProvider:: Getアドレス Fromposition |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27349cfdc438da133c4cea05077649ebb4df376c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547157"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、デバッグ アドレスの配列にドキュメントの位置をマップします。  
+このメソッドは、ドキュメントの位置をデバッグアドレスの配列にマップします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,26 +46,26 @@ int GetAddressesFromPosition( 
   
 #### <a name="parameters"></a>パラメーター  
  `pDocPos`  
- [in]ドキュメントの位置。  
+ からドキュメントの位置。  
   
  `fStatmentOnly`  
- [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。  
+ からTRUE の場合、デバッグアドレスを1つのステートメントに限定します。  
   
  `ppEnumBegAddresses`  
- [out]このステートメントまたは行に関連付けられた開始デバッグ アドレスの列挙子を返します。  
+ 入出力このステートメントまたは行に関連付けられている開始デバッグアドレスの列挙子を返します。  
   
  `ppEnumEndAddresses`  
- [out]返します、 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子。  
+ 入出力このステートメントまたは行に関連付けられている終了デバッグアドレスの [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) 列挙子を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ドキュメントの位置は、通常、ソース行の範囲を示します。 このメソッドを提供開始と、これらの行に関連付けられている終了デバッグ アドレス。 一部の言語では、複数の行または複数のステートメントを含む行にまたがるステートメントを使用できます。 このメソッドは、1 つのステートメントにデバッグ アドレスを制限するためのフラグを提供します。  
+## <a name="remarks"></a>注釈  
+ 通常、ドキュメントの位置は、ソース行の範囲を示します。 このメソッドは、これらの行に関連付けられているデバッグの開始アドレスと終了アドレスを提供します。 一部の言語では、複数の行にまたがるステートメントや、複数のステートメントを含む行が許可されます。 このメソッドには、デバッグアドレスを1つのステートメントに制限するフラグが用意されています。  
   
- テンプレートの場合と同様、複数のデバッグ アドレスを 1 つのステートメントのことができます。  
+ テンプレートの場合のように、1つのステートメントに複数のデバッグアドレスを含めることができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
+ [Getアドレス Fromcontext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

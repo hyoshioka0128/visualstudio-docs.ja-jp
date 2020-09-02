@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
+title: 'IDebugSymbolProviderDirect:: Getcurrentモジュール Info |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4ce4473fca76424f3b737d530997f766da7b219d
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421916"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-シンボルのグループ内のモジュールに関する情報を取得します。  
+シンボルグループ内のモジュールに関する情報を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,22 +47,22 @@ int GetCurrentModulesInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `pCount`  
- [in]内のモジュールの数、`ppGuids`配列。  
+ から配列内のモジュールの数 `ppGuids` 。  
   
  `ppGuids`  
- [in]モジュールの一意の識別子を含む配列。  
+ からモジュールの一意の識別子を格納している配列。  
   
  `pADIds`  
- [in]アプリケーション ドメインの識別子です。  
+ からアプリケーションドメインの識別子。  
   
  `pCurrentState`  
- [in]シンボルのグループの現在の状態。  
+ からシンボルグループの現在の状態。  
   
  `ppCDModItfs`  
- [out]シンボルのグループ内のモジュールを格納しているオブジェクトを返します。  
+ 入出力シンボルグループ内のモジュールを含むオブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

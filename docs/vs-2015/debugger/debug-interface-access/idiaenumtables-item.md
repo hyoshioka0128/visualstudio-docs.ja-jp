@@ -1,5 +1,5 @@
 ---
-title: Idiaenumtables::item |Microsoft Docs
+title: 'IDiaEnumTables:: Item |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eec94a5a02eda8fe9b1b3bf8f76f5050ab1e020
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423869"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-インデックスまたは名前を使用してテーブルを取得します。  
+インデックスまたは名前を使ってテーブルを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,16 +36,16 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>パラメーター  
  `index`  
- [in]インデックスまたは名前、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)を取得します。 0 の範囲の場合は、整数のバリアントを使用すると、必要があります`count`-1 の場合、`count`によって返されるは、 [idiaenumtables::get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)メソッド。  
+ から取得する [IDiaTable](../../debugger/debug-interface-access/idiatable.md) のインデックスまたは名前。 整数バリアントを使用する場合は、0 ~-1 の範囲で指定する必要があり `count` ます。ここで、 `count` は [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) メソッドによって返されます。  
   
  `table`  
- [out]返します、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)目的のテーブルを表すオブジェクト。  
+ 入出力目的のテーブルを表す [IDiaTable](../../debugger/debug-interface-access/idiatable.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 文字列のバリアントが指定されている場合、文字列は、特定のテーブルを名前します。 名前は、テーブル名のいずれかで定義されている[定数 (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)します。  
+## <a name="remarks"></a>注釈  
+ 文字列バリアントが指定されている場合、文字列は特定のテーブルに名前を指定します。 名前は、 [定数 (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)で定義されているテーブル名のいずれかである必要があります。  
   
 ## <a name="example"></a>例  
   
@@ -57,8 +57,8 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
  [定数 (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

@@ -14,42 +14,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 29832934b848729879ee1ba802c70f85117efd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537629"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-DIA プロパティ セットの永続的なプロパティを読み取ることができます。  
+DIA プロパティセットの永続的なプロパティを読み取ることができます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaPropertyStorage : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDiaPropertyStorage`します。  
+ 次の表に、のメソッドを示し `IDiaPropertyStorage` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
 |[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|このセット内のプロパティの列挙子へのポインターを取得します。|  
-|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|読み取り`BOOL`プロパティ セット内の値。|  
-|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|読み取り`BSTR`プロパティ セット内の値。|  
-|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|読み取り`DWORD`プロパティ セット内の値。|  
-|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|読み取り`LONG`プロパティ セット内の値。|  
-|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|プロパティ セット内のプロパティ値を読み取ります。|  
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|プロパティの識別子を指定する対応する文字列名を取得します。|  
-|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|読み取り`ULONGLONG`プロパティ セット内の値。|  
+|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|`BOOL`プロパティセット内の値を読み取ります。|  
+|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|`BSTR`プロパティセット内の値を読み取ります。|  
+|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|`DWORD`プロパティセット内の値を読み取ります。|  
+|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|`LONG`プロパティセット内の値を読み取ります。|  
+|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|プロパティセット内のプロパティ値を読み取ります。|  
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|指定されたプロパティ識別子の対応する文字列名を取得します。|  
+|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|`ULONGLONG`プロパティセット内の値を読み取ります。|  
   
-## <a name="remarks"></a>Remarks  
- プロパティ セット内の各プロパティがプロパティの識別子 (ID)、4 バイトで識別される`ULONG`そのセットに固有の値。 によって公開されるプロパティ、`IDiaPropertyStorage`インターフェイスは、親インターフェイスで使用可能なプロパティに対応します。 プロパティなど、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)インターフェイスを介して名前でアクセスできる、`IDiaPropertyStorage`インターフェイス (ただし、ある場合でも、このプロパティは、アクセス可能性がありますとは限りませんプロパティが有効で、特定`IDiaSymbol`オブジェクト)。  
+## <a name="remarks"></a>注釈  
+ プロパティセット内の各プロパティは、そのセットに固有の4バイト値であるプロパティ識別子 (ID) によって識別され `ULONG` ます。 インターフェイスを介して公開されるプロパティは、 `IDiaPropertyStorage` 親インターフェイスで使用できるプロパティに対応します。 たとえば、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) インターフェイスのプロパティは、インターフェイスを介して名前でアクセスできます `IDiaPropertyStorage` (ただし、プロパティがアクセス可能であっても、特定のオブジェクトに対してプロパティが有効であることを意味するわけではありません `IDiaSymbol` )。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- このインターフェイスを呼び出すことによって取得、`QueryInterface`別のインターフェイスのメソッド。 次のインターフェイスを照会することができます、`IDiaPropertyStorage`インターフェイス。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ このインターフェイスを取得するには、 `QueryInterface` 別のインターフェイスでメソッドを呼び出します。 インターフェイスに対して次のインターフェイスを照会でき `IDiaPropertyStorage` ます。  
   
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
@@ -66,7 +66,7 @@ IDiaPropertyStorage : IUnknown
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>例  
- この例によって公開されるすべてのプロパティを表示する関数を示しています、`IDiaPropertyStorage`オブジェクト。 参照してください、 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)方法の例については、インターフェイス`IDiaPropertyStorage`インターフェイスがから取得した、 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)インターフェイス。  
+ この例は、オブジェクトによって公開されているすべてのプロパティを表示する関数を示して `IDiaPropertyStorage` います。 インターフェイスを[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) `IDiaPropertyStorage` [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)インターフェイスから取得する方法の例については、IDiaEnumInjectedSources インターフェイスを参照してください。  
   
 ```cpp#  
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)  
@@ -122,16 +122,16 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 }  
 ```  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   

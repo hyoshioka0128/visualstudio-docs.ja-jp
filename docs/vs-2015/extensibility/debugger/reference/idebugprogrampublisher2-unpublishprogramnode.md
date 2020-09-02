@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode |Microsoft Docs
+title: 'IDebugProgramPublisher2:: UnpublishProgramNode |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4fed7f35b87ec3e4a761b7adc33876affe778d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423135"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-エンジン (DEs) とセッション デバッグ マネージャー (SDM) をデバッグする可用性から指定したプログラムのノードを削除します。  
+指定されたプログラムノードを可用性からデバッグエンジン (DEs) およびセッションデバッグマネージャー (SDM) に削除します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,17 +40,17 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>パラメーター  
  `pProgramNode`  
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を削除するプログラムのノードを表すオブジェクト。  
+ から削除されるプログラムノードを表す [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) オブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 削除すると、プログラムのノードはプログラムの情報のクエリで使用できるではなくなりました。  
+## <a name="remarks"></a>注釈  
+ 削除されると、プログラムの情報を照会するためのプログラムノードを使用できなくなります。  
   
- プログラム ノードを使用できるようにするには、呼び出し、 [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)メソッド。  
+ プログラムノードを使用できるようにするには、 [Publishprogramnode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) メソッドを呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)
