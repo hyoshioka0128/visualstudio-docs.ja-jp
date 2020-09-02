@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 132a3cb5f7d4257aa0728960cb5bfd50c5ee3066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420004"
 ---
 # <a name="comparing-performance-data-files"></a>パフォーマンス データ ファイルの比較
@@ -35,4 +35,4 @@ ms.locfileid: "62420004"
  しきい値を設定して、ノイズを減らし、指定した量によって変更のない行の比較テーブル ビュー内のデータをフィルター処理することができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法: パフォーマンス データ ファイルを比較する](../profiling/how-to-compare-performance-data-files.md)
+ [方法: パフォーマンスデータファイルを比較する](../profiling/how-to-compare-performance-data-files.md)

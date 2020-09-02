@@ -1,5 +1,5 @@
 ---
-title: グリフ管理 (ソース管理 VSPackage) |Microsoft Docs
+title: グリフコントロール (ソース管理 VSPackage) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b0960209b67c8d2f111296840119807d95bb2e2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538422"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>グリフ管理 (ソース管理 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソース管理 Vspackage を使用できる高度な統合の一部をソース管理下にある項目の状態を示すために、独自のグリフを表示する機能があります。  
+ソース管理 Vspackage で使用できる詳細な統合の一部は、ソース管理下の項目の状態を示す独自のグリフを表示する機能です。  
   
-## <a name="levels-of-glyph-control"></a>コントロールのグリフのレベル  
- 状態のグリフが例では、表示されるときに、項目の現在の状態を示すアイコン**ソリューション エクスプ ローラー**または**クラス ビュー**します。 ソース管理 VSPackage では、2 つのレベルのグリフの制御を実行できます。 定義済みセットによって提供されるグリフのグリフの選択を制限することができます、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE、またはそれが表示されるグリフのカスタム セットを定義できます。  
+## <a name="levels-of-glyph-control"></a>グリフコントロールのレベル  
+ 状態グリフは、 **ソリューションエクスプローラー** や **クラスビュー**などで表示されたときの項目の現在の状態を示すアイコンです。 ソース管理 VSPackage は、2つのレベルのグリフコントロールを実行できます。 このオプションは、IDE によって提供される定義済みのグリフセットに対して、グリフの選択を制限し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] たり、表示されるグリフのカスタムセットを定義したりすることができます。  
   
-### <a name="default-set-of-glyphs"></a>既定のグリフのセット  
- 内の項目に関連付けられている状態のグリフを決定する**ソリューション エクスプ ローラー**、プロジェクトを使ってソール コントロールからの状態のグリフの要求、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>します。 ソース管理 VSPackage は、IDE によって提供される定義済みのグリフに限定するグリフの選択を保持すること可能性があります。 この場合、VSPackage vsshell.idl で定義されているグリフ列挙型を表す値の配列を渡します戻ります。 詳細については、次を参照してください。<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>します。これは、「チェックイン」グリフと、「チェック アウト」グリフとしてチェック マークの南京錠など、IDE によって設定グリフの定義済みセット。  
+### <a name="default-set-of-glyphs"></a>既定のグリフセット  
+ **ソリューションエクスプローラー**の項目に関連付けられている状態グリフを確認するために、プロジェクトはを使用してソース管理から状態グリフを要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> ます。 ソース管理 VSPackage は、IDE によって提供される定義済みのグリフに限定されたグリフの選択を保持することができます。 この場合、VSPackage は、vsshell .idl に定義されているグリフ列挙体を表す値の配列を返します。 詳細については、「」を参照してください <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon> 。これは、IDE によって設定された定義済みのグリフセットで、"チェックイン" グリフの南京錠、"チェックアウト" グリフとしてのチェックマークなどです。  
   
-### <a name="custom-set-of-glyphs"></a>グリフのカスタム セット  
- ソース管理 VSPackage がインストールされている場合に、一意「ルック アンド フィール」を独自のグリフを使用できます。 新しいソース管理 VSPackage がアクティブな場合は、独自のグリフ場合でも、以前のソース管理 VSPackage がまだ読み込まれて使用を開始することが、非アクティブなが必要です。 このモードでソース管理 VSPackage でも使用できます、既存のアイコンを参照するくださいと一貫性を維持するために[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]選択した場合。  
+### <a name="custom-set-of-glyphs"></a>グリフのカスタムセット  
+ ソース管理 VSPackage は、インストール時に一意の "ルックアンドフィール" で独自のグリフを使用できます。 新しいソース管理 VSPackage がアクティブになると、以前のソース管理 VSPackage がまだ読み込まれていても非アクティブであっても、独自のグリフの使用を開始できるようになります。 このモードでは、ソース管理 VSPackage は既存のアイコンを使用して、選択されている場合にとの一貫性を維持することができ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>サービスは、インターフェイスをサポートしている<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>これにより、VSPackage をオプションで実装され、ide に求められますが。 IDE で、要求が発行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]現在登録されているソース管理 VSPackage からこのインターフェイスを取得する順番を試みます。 カスタム グリフの IDE の要求が成功した登録済みの VSPackage で、インターフェイスが存在する場合それ以外の場合、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE は一連の既定のグリフを使用します。  
+ <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>サービスはインターフェイスをサポートしてい <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> ます。これは、VSPackage が必要に応じて実装でき、IDE によって要求されます。 IDE が要求を行ったときに、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は、現在登録されているソース管理 VSPackage からこのインターフェイスを取得しようとします。 インターフェイスが登録されている VSPackage に存在する場合、IDE のカスタムグリフの要求は成功します。それ以外の場合、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE では既定のグリフセットが使用されます。  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>メソッドで使用される[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]の状態を示すさまざまなソース管理のイメージの一覧を取得します。 ソース管理 VSPackage は、IDE にカスタムのグリフのイメージ リストを識別するハンドルを返します。 IDE では、この時点でイメージ リストのコピーを作成し、表示するグリフを選択するために後で使用します。 新しいインターフェイスがサポートされていない場合、または`IVsSccGlyphs::GetCustomGlyphList`IDE によって提供されるグリフの既定の一覧からそのグリフを取得し、メソッドが E_NOTIMPL を返します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+ メソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A> [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] さまざまなソース管理状態を示すイメージの一覧を取得するために、によって使用されます。 ソース管理 VSPackage は、カスタムグリフのイメージリストへのハンドルを IDE に返します。 IDE はこの時点でイメージリストのコピーを作成し、後で表示するグリフを選択するために使用します。 新しいインターフェイスがサポートされていない場合、または `IVsSccGlyphs::GetCustomGlyphList` メソッドが E_NOTIMPL を返した場合、IDE はによって提供されるグリフの既定のリストからグリフを取得し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

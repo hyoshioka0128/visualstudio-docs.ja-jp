@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422111"
 ---
 # <a name="performance-session-overview"></a>パフォーマンス セッションの概要
@@ -54,7 +54,7 @@ ms.locfileid: "62422111"
 ## <a name="collect-profiling-data"></a>プロファイリング データの収集  
  プロファイリング データの収集は、**パフォーマンス エクスプローラー**から開始します。 プロファイリングを停止して再開することにより、収集するデータの量を制限できます。 既に実行されているプロセスにアタッチすることもできます。  
   
- アプリケーションが開始されるとすぐ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE に **[データ収集コントロール]** ウィンドウが表示されます。 **[データ収集コントロール]** ウィンドウで、収集プロセスを停止してから再開して、アプリケーションの特定の部分をプロファイリングできます。 また、**[データ収集コントロール]** ウィンドウを使用して、収集されるデータにマークを挿入することもできます。 マークはプロファイル ビューに表示されるユーザー定義データ ポイントであり、マークを使ってプロファイル データをフィルター処理できます。  
+ アプリケーションが開始されるとすぐ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE に **[データ収集コントロール]** ウィンドウが表示されます。 **[データ収集コントロール]** ウィンドウで、収集プロセスを停止してから再開して、アプリケーションの特定の部分をプロファイリングできます。 また、 **[データ収集コントロール]** ウィンドウを使用して、収集されるデータにマークを挿入することもできます。 マークはプロファイル ビューに表示されるユーザー定義データ ポイントであり、マークを使ってプロファイル データをフィルター処理できます。  
   
  ターゲット アプリケーションがシャットダウンすると、プロファイリング ツールはプロファイリング データ ファイル (*.vsp) を生成し、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE に概要レポート ビューを表示します。  
   
@@ -76,6 +76,6 @@ ms.locfileid: "62422111"
 ## <a name="generate-a-report-of-the-results"></a>結果のレポートの生成  
  パフォーマンス レポートのビューはどれも、行をメールやスプレッドシートに貼り付けることができます。1 つ以上のビューのデータを含むレポートを生成できます。  
   
-## <a name="see-also"></a>関連項目  
- [概要](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>参照  
+ [概念](../profiling/overviews-performance-tools.md)   
  [チュートリアル: パフォーマンスの問題を特定する](../profiling/walkthrough-identifying-performance-problems.md)

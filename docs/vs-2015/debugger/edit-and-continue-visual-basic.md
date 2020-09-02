@@ -1,5 +1,5 @@
 ---
-title: エディット コンティニュ (Visual Basic) |Microsoft Docs
+title: エディット コンティニュ (Visual Basic) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428566"
 ---
 # <a name="edit-and-continue-visual-basic"></a>エディット コンティニュ (Visual Basic)
@@ -44,7 +44,7 @@ ms.locfileid: "62428566"
  このセクションの各トピックでは、この機能の使用方法と許可されない種類の変更について詳しく説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法: エディット コンティニュの中断モード時に編集を適用する](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [方法: エディットコンティニュを使用して中断モードで編集を適用する](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  中断モードにおいてコードの編集を適用する方法について説明します。  
   
  [Visual Basic エディット コンティニュでサポートされていない編集](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  

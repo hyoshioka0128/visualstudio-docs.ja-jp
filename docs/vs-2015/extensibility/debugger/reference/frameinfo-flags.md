@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS | Microsoft Docs
+title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e5a930e81ff1105ba93ce3c3cff10ee8bff2f7e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538435"
 ---
-# <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
+# <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-スタック フレーム オブジェクトを取得する情報を指定します。  
+スタックフレームオブジェクトについて取得する情報を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -101,112 +101,112 @@ public enum enum_FRAMEINFO_FLAGS {
   
 ## <a name="members"></a>メンバー  
  FIF_FUNCNAME  
- 初期化/使用、`m_bstrFuncName`フィールド。  
+ フィールドを初期化/使用 `m_bstrFuncName` します。  
   
  FIF_RETURNTYPE  
- 初期化/使用、`m_bstrReturnType`フィールド。  
+ フィールドを初期化/使用 `m_bstrReturnType` します。  
   
  FIF_ARGS  
- 初期化/使用、`m_bstrArgs`フィールド。  
+ フィールドを初期化/使用 `m_bstrArgs` します。  
   
  FIF_LANGUAGE  
- 初期化/使用、`m_bstrLanguage`フィールド。  
+ フィールドを初期化/使用 `m_bstrLanguage` します。  
   
  FIF_MODULE  
- 初期化/使用、`m_bstrModule`フィールド。  
+ フィールドを初期化/使用 `m_bstrModule` します。  
   
  FIF_STACKRANGE  
- 初期化/使用、`m_addrMin`と`m_addrMax`(スタックの範囲) フィールド。  
+ `m_addrMin`および `m_addrMax` (スタック範囲) フィールドを初期化/使用します。  
   
  FIF_FRAME  
- 初期化/使用、`m_pFrame`フィールド。  
+ フィールドを初期化/使用 `m_pFrame` します。  
   
  FIF_DEBUGINFO  
- 初期化/使用、`m_fHasDebugInfo`フィールド。  
+ フィールドを初期化/使用 `m_fHasDebugInfo` します。  
   
  FIF_STALECODE  
- 初期化/使用、`m_fStaleCode`フィールド。  
+ フィールドを初期化/使用 `m_fStaleCode` します。  
   
  FIF_ANNOTATEDFRAME  
- 初期化/使用、`m_fAnnotatedFrame`フィールド。  
+ フィールドを初期化/使用 `m_fAnnotatedFrame` します。  
   
  FIF_DEBUG_MODULEP  
- 初期化/使用、`m_pModule`フィールド。  
+ フィールドを初期化/使用 `m_pModule` します。  
   
  FIF_FUNCNAME_FORMAT  
- 関数名の書式を設定します。 結果が返されます、`m_bstrFunName`フィールドおよびないその他のフィールドに入力されます。  
+ 関数名を書式設定します。 結果はフィールドに返され、 `m_bstrFunName` 他のフィールドは入力されません。  
   
  FIF_FUNCNAME_RETURNTYPE  
- 戻り値の型を追加、`m_bstrFuncName`フィールド。  
+ フィールドに戻り値の型を追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_ARGS  
- 引数を追加、`m_bstrFuncName`フィールド。  
+ フィールドに引数を追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_LANGUAGE  
- 言語を追加、`m_bstrFuncName`フィールド。  
+ フィールドに言語を追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_MODULE  
- モジュール名を追加、`m_bstrFuncName`フィールド。  
+ モジュール名をフィールドに追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_LINES  
- 追加する行の数、`m_bstrFuncName`フィールド。  
+ フィールドに行の数を追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_OFFSET  
- 追加、`m_bstrFuncName`フィールドに、行の先頭からのバイト オフセットの場合`FIF_FUNCNAME_LINES`を指定します。 場合`FIF_FUNCNAME_LINES`が指定されていないか、行番号が使用できない場合は、バイト単位のオフセットを関数の開始から追加します。  
+ `m_bstrFuncName`が指定されている場合、行の先頭からのオフセット (バイト単位) をフィールドに追加し `FIF_FUNCNAME_LINES` ます。 が指定されていない場合 `FIF_FUNCNAME_LINES` 、または行番号が使用できない場合は、関数の先頭からのオフセットをバイト単位で加算します。  
   
  FIF_FUNCNAME_ARGS_TYPES  
- 各関数の引数の型を追加、`m_bstrFuncName`フィールド。  
+ フィールドに各関数の引数の型を追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_ARGS_NAMES  
- 各関数の引数の名前を追加、`m_bstrFuncName`フィールド。  
+ 各関数の引数の名前をフィールドに追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_ARGS_VALUES  
- 各関数の引数の値を加算、`m_bstrFuncName`フィールド。  
+ 各関数の引数の値をフィールドに追加し `m_bstrFuncName` ます。  
   
  FIF_FUNCNAME_ARGS_ALL  
- 型、名、およびすべての引数の値を追加、`m_bstrFuncName`フィールド。  
+ フィールドにすべての引数の型、名前、および値を追加し `m_bstrFuncName` ます。  
   
  FIF_ARGS_TYPES  
- 引数の型が取得されて書式設定します。  
+ 引数の型が取得および書式設定されます。  
   
  FIF_ARGS_NAMES  
- 引数名が取得されて書式設定します。  
+ 引数名が取得および書式設定されます。  
   
  FIF_ARGS_VALUES  
- 引数の値が取得されて書式設定します。  
+ 引数の値は取得および書式設定されます。  
   
  FIF_ARGS_ALL  
- 取得し、型、名、およびすべての引数の値の書式を設定します。  
+ すべての引数の型、名前、および値を取得して書式設定します。  
   
  FIF_ARGS_NOFORMAT  
- 引数はフォーマットされないことを指定します (たとえば、引数リストをかっこで囲むの開閉の追加もしない引数間の区切り記号を追加) します。  
+ 引数が書式設定されていないことを指定します (たとえば、引数リストの始めかっこと終わりかっこを追加したり、引数の間に区切り記号を追加したりしないでください)。  
   
  FIF_ARGS_NO_FUNC_EVAL  
- 引数の値を取得するときに関数 (プロパティ) の評価が使用しないことを指定します。  
+ 引数の値を取得するときに、関数 (プロパティ) の評価を使用しないことを指定します。  
   
  FIF_FILTER_NON_USER_CODE  
- デバッグ エンジンでは、含まれていないために、非ユーザー コード フレームをフィルター処理します。  
+ デバッグエンジンは、非ユーザーコードフレームをフィルター処理して、含まれないようにします。  
   
  FIF_ARGS_NO_TOSTRING  
- 許可しない`ToString()`関数の評価または関数の引数を返すときに書式設定します。  
+ 関数 `ToString()` の引数を返すときに関数の評価または書式設定を許可しないでください。  
   
  FIF_DESIGN_TIME_EXPR_EVAL  
- フレームの情報は、ホスト プロセスではなく、ホストされるアプリケーション ドメインから取得する必要があります。  
+ フレーム情報は、ホストプロセスではなく、ホストされているアプリケーションドメインからのものである必要があります。  
   
-## <a name="remarks"></a>Remarks  
- これらのフラグに渡される、 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)と[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)メソッドで初期化するフィールドを示す、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体または構造体。  
+## <a name="remarks"></a>注釈  
+ これらのフラグは、[フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)の構造体または構造体で初期化されるフィールドを示すために、 [enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)メソッドと[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)メソッドに渡されます。  
   
- これらのフラグは、のどのフィールドを示すためにも使用、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造が返されるときに構造体が使用し、無効です。 これらの値は、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造のどのフィールドが使用され、構造体が返されたときに有効であるかを示すためにも使用されます。 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)   
- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)   
+ [Enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)

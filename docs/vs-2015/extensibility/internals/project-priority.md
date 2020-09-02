@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b012136c30f72cfdddadfc1a370ed76f567afffd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429913"
 ---
 # <a name="project-priority"></a>プロジェクトの優先順位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロジェクト項目は、通常、ソリューション内の 1 つしかプロジェクトのメンバーです。 そのため、IDE 簡単に判断できますプロジェクトは、項目を開くために使用します。 ただし、項目が 1 つ以上のプロジェクトのメンバーである場合は、IDE は、項目を開くための最適なプロジェクトを決定する優先度スキームを使用します。  
+通常、プロジェクトアイテムは、ソリューション内の1つのプロジェクトのメンバーです。 そのため、IDE では、項目を開くために使用されるプロジェクトを簡単に判断できます。 ただし、1つの項目が複数のプロジェクトのメンバーである場合、IDE は優先度スキームを使用して、項目を開くのに最適なプロジェクトを決定します。  
   
- 次に、プロジェクトの優先度スキームを示します。  
+ 次の一覧は、プロジェクトの優先度スキームを示しています。  
   
-- IDE の呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A>ドキュメントがそのプロジェクトのメンバーであるかどうかを判断するソリューション内の各プロジェクトのメソッド。  
+- IDE は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> ソリューション内のプロジェクトごとにメソッドを呼び出して、ドキュメントがそのプロジェクトのメンバーであるかどうかを確認します。  
   
-- ドキュメントが、プロジェクトのメンバーである場合は、プロジェクトは応答優先度の割り当てがそのドキュメントの処理に従ってします。 たとえば、言語プロジェクトはその言語のソース ファイルの優先度の高い応答しますが、ビルド プロセスの一部として使用されていない、認識されないファイルの種類の優先順位の低い応答します。  
+- ドキュメントがプロジェクトのメンバーである場合、プロジェクトは、そのドキュメントの処理に従ってプロジェクトが割り当てた優先度で応答します。 たとえば、言語プロジェクトは、言語ソースファイルに対して高い優先度で応答しますが、ビルドプロセスの一部として使用されていない、認識されないファイルの種類に対しては低い優先順位で応答します。  
   
-- ドキュメントのカスタムのプロジェクトに固有のエディターまたはデザイナーを提供するプロジェクトでは、優先度の高いも受信します。  
+- ドキュメントに対して、プロジェクト固有のカスタムエディターまたはデザイナーを提供するプロジェクトも、優先度が高くなります。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙体は、ドキュメントの優先度の値を提供します。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙体は、ドキュメントの優先順位の値を提供します。  
   
-- 最高の優先順位を指定するプロジェクトには、文書を開くためのコンテキストが与えられます。 2 つのプロジェクトが同じ優先順位の値を返す場合、アクティブなプロジェクトをお勧めします。 ソリューション内のプロジェクトが返されない、ドキュメントを開くことができますが、その他のファイル プロジェクトにドキュメントが挿入されます。 詳細については、次を参照してください。 [Miscellaneous Files プロジェクト](../../extensibility/internals/miscellaneous-files-project.md)します。  
+- 最も高い優先順位を指定するプロジェクトには、ドキュメントを開くコンテキストが付与されます。 2つのプロジェクトが同じ優先順位値を返す場合、アクティブなプロジェクトが優先されます。 ソリューション内のプロジェクトがドキュメントを開くことができない場合、IDE はそのドキュメントを [その他のファイル] プロジェクトに配置します。 詳細については、「 [その他のファイルプロジェクト](../../extensibility/internals/miscellaneous-files-project.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [その他のファイル プロジェクト](../../extensibility/internals/miscellaneous-files-project.md)   
- [方法: 開いているエディターを開いているドキュメントの](../../extensibility/how-to-open-editors-for-open-documents.md)   
+## <a name="see-also"></a>参照  
+ [その他のファイルプロジェクト](../../extensibility/internals/miscellaneous-files-project.md)   
+ [方法: 開いているドキュメントのエディターを開く](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)

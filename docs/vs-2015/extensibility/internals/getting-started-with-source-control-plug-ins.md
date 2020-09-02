@@ -1,5 +1,5 @@
 ---
-title: ソース管理プラグインの概要 |Microsoft Docs
+title: ソース管理プラグインを使用したはじめに |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85aa5727f252ad75c45064d7b885e3d282da36a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538162"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>ソース管理プラグイン入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソース管理プラグインを作成するには、ソース コントロールのプラグイン API で定義された関数を実装する DLL を作成する必要があり、次の DLL の登録を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ソース コードのバージョン管理に使用できるようにします。  
+ソース管理プラグインを作成するには、ソース管理プラグイン API で定義されている関数を実装する DLL を作成し、その DLL をに登録して、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ソースコードのバージョン管理で使用できるようにする必要があります。  
   
- ソース管理プラグイン API (バージョン 1.1、1.2、および 1.3) の 3 つのバージョンでは、ソース管理プラグインを使用できます。ここに記載されているソース コントロールのプラグイン API はバージョン 1.3 です。 これは、デザインは、ソース管理プラグインと完全に互換性がバージョン 1.1 および 1.2 をサポートします。 [ソース管理プラグイン API バージョン 1.3 で新](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)セクションで、ソース管理プラグイン API の最新バージョンでサポートされる新機能について説明します。  
+ ソース管理プラグイン API の3つのバージョン (バージョン1.1、1.2、および 1.3) をソース管理プラグインで使用できます。ここに記載されているソース管理プラグイン API はバージョン1.3 です。 バージョン1.1 および1.2 をサポートするソース管理プラグインと完全に互換性があるように設計されています。 「 [ソース管理プラグイン Api バージョン1.3 の新](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) 機能」セクションでは、ソース管理プラグイン api の最新バージョンでサポートされている新機能について詳しく説明しています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法: ソース管理プラグインのインストールします。](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
- ソース管理 DLL を接続するために必要なレジストリ エントリを作成する方法について説明します。  
+ [方法: ソース管理プラグインのインストール](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ ソース管理 DLL をプラグインするために必要なレジストリエントリを作成する方法について説明します。  
   
  [ソース管理プラグイン API バージョン 1.3 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- バージョン 1.3 でソース管理プラグイン API に加えられた変更の概要を簡単に説明します。  
+ バージョン1.3 のソース管理プラグイン API に加えられた変更の簡単な概要を示します。  
   
  [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- バージョン 1.2 でソース管理プラグイン API に加えられた変更の概要を簡単に説明します。  
+ バージョン1.2 のソース管理プラグイン API に加えられた変更の簡単な概要を示します。  
   
 ## <a name="related-sections"></a>関連項目  
  [ソース管理プラグイン](../../extensibility/source-control-plug-ins.md)  
  ソース管理プラグイン API のすべての要素の完全な一覧を提供します。  
   
  [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- ソース管理プラグインの SDK を定義し、含まれているリソースについて説明します。
+ ソース管理プラグイン SDK を定義し、含まれているリソースについて説明します。
