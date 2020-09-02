@@ -11,18 +11,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160109"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
+# <a name="guid_array"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-使用可能なデバッグ エンジンの一意の識別子の配列について説明します。  
+使用可能なデバッグエンジンの一意の識別子の配列を記述します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef struct tagGUID_ARRAY  
@@ -45,18 +45,18 @@ public struct GUID_ARRAY
  配列内の一意の識別子の数。  
   
  メンバー  
- 一意の識別子を含む配列。  
+ 一意の識別子を格納している配列。  
   
-## <a name="remarks"></a>Remarks  
- この構造体がによって返される、 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

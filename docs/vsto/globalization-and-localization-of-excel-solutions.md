@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986057"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel ソリューションのグローバリゼーションとローカリゼーション
-  ここでは、Windows に英語以外の言語を設定しているコンピューターで実行される Microsoft Office Excel ソリューションにおいて、特に考慮が必要な事項について説明します。 Microsoft Office ソリューションのグローバリゼーションとローカリゼーションは、ほとんどの点で、Visual Studio を使用して他の種類のソリューションを作成する場合と同じです。 一般的な情報については、「[アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)」を参照してください。
+  ここでは、Windows に英語以外の言語を設定しているコンピューターで実行される Microsoft Office Excel ソリューションにおいて、特に考慮が必要な事項について説明します。 Microsoft Office ソリューションのグローバリゼーションとローカリゼーションは、ほとんどの点で、Visual Studio を使用して他の種類のソリューションを作成する場合と同じです。 一般的な情報については、「 [アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)」を参照してください。
 
  既定では、Microsoft Office Excel のホスト コントロールは、マネージド コードを使用して渡されるデータや操作されるデータがすべて英語 (米国) の書式で設定されている限り、Windows のどの地域設定でも正常に動作します。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]を対象にしたプロジェクトでは、この動作は共通言語ランタイム (CLR) によって制御されます。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72986057"
  この場合でも、ドキュメントのテキストを操作するコードのすべての部分がテキストの言語と一致しているか確認する必要があります。また、ブックマーク、名前付き範囲、および他の表示フィールドが Office ドキュメントの再設定に対応しているか確認する必要もあります。この再設定は、異なる文法やテキストの長さに合わせて調整する場合に必要とされたものです。 含まれるテキストが比較的少ないドキュメント テンプレートの場合は、テキストをリソース ファイルに保存して実行時に読み込む方法も考えられます。
 
 ### <a name="text-direction"></a>テキストの方向
- Excel では、テキストが右から左へ表記されるようにワークシートのプロパティを設定できます。 デザイナーに配置されているホストコントロール (または、`RightToLeft` プロパティを持つコントロール) は、実行時にこれらの設定と自動的に一致します。 Word には、テキストの配置を変更するだけで、双方向テキスト用のドキュメント設定がないため、コントロールをこの設定にマップすることはできません。 ユーザーは、代わりにテキストの配置を各コントロールに設定する必要があります。 コードを記述して、すべてのコントロールでテキストが右から左へ表記されるようにできます。
+ Excel では、テキストが右から左へ表記されるようにワークシートのプロパティを設定できます。 デザイナーに配置されているホストコントロール (またはプロパティを持つコントロール) は、 `RightToLeft` 実行時にこれらの設定と自動的に一致します。 Word には、テキストの配置を変更するだけで、双方向テキスト用のドキュメント設定がないため、コントロールをこの設定にマップすることはできません。 ユーザーは、代わりにテキストの配置を各コントロールに設定する必要があります。 コードを記述して、すべてのコントロールでテキストが右から左へ表記されるようにできます。
 
 ### <a name="change-culture"></a>カルチャの変更
  ドキュメント レベルのカスタマイズ コードは、通常、Excel のメイン UI スレッドを共有します。そのため、スレッド カルチャに対して行った変更は、そのスレッドで実行されている、すべてのものに影響します。変更はカスタマイズに限定されません。
@@ -55,7 +55,7 @@ ms.locfileid: "72986057"
  Windows フォーム コントロールは、アプリケーション レベルの VSTO アドインがホスト アプリケーションによって起動される前に初期化されます。 このような場合は、カルチャを変更してから UI コントロールを設定する必要があります。
 
 ## <a name="install-the-language-packs"></a>言語パックをインストールする
- Windows の言語を英語以外に設定している場合は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の言語パックをインストールすることにより、Windows と同じ言語で [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] のメッセージを表示できます。 エンド ユーザーが英語以外を設定している Windows でソリューションを実行する場合は、Windows と同じ言語でランタイム メッセージを表示するために、適切な言語パックが必要になります。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 言語パックは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download)から入手できます。
+ Windows の言語を英語以外に設定している場合は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の言語パックをインストールすることにより、Windows と同じ言語で [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] のメッセージを表示できます。 エンド ユーザーが英語以外を設定している Windows でソリューションを実行する場合は、Windows と同じ言語でランタイム メッセージを表示するために、適切な言語パックが必要になります。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]言語パックは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download)から入手できます。
 
  さらに、ClickOnce メッセージ用に、再頒布可能な .NET Framework Language Pack が必要です。 .NET Framework 言語パックは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download)から入手できます。
 
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  同じコードを Visual Studio の Office 開発ツールを使用して作成したソリューションで使用し、COM 相互運用機能を通じて Excel に渡すと、日付の書式を en-US スタイルに設定した場合と同じ結果が得られます。
 
- (例:
+ 次に例を示します。
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
@@ -95,7 +95,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>外部データを使用するアプリケーション
  レガシ システムからエクスポートされたコンマ区切り値を含むファイル (CSV ファイル) などの外部データを開いたり使用したりするコードは、ファイルが en-US 以外の形式でエクスポートされると影響が出る場合があります。 データベースへのアクセスはすべての値がバイナリ形式なので影響を受けないと考えられますが、データベースで日付が文字列として保存されていたり、バイナリ形式を使用しない操作が実行されたりする場合は、この限りではありません。 また、Excel のデータを使用して SQL クエリを作成する場合、使用する関数によってはデータを en-US 形式にする必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [方法: Office 多言語ユーザーインターフェイスを対象にする](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)

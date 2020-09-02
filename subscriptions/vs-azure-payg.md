@@ -8,10 +8,10 @@ ms.date: 04/15/2020
 ms.topic: how-to
 description: Azure の従量課金アカウントを設定する方法を説明します。
 ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85902897"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest の従量課金制のサブスクリプション

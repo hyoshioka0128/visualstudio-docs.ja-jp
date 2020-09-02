@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453642"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>方法 : コード分析辞書をカスタマイズする
 
 コード分析では、組み込みの辞書を使用して、コード内の識別子を確認し、スペル、文法ケース、および .NET デザインガイドラインのその他の名前付け規則を確認します。 カスタム辞書 Xml ファイルを作成して、組み込みの辞書に用語、略語、および頭字語を追加、削除、または変更することができます。
 
-たとえば、コードに**DoorKnokker**という名前のクラスが含まれているとします。 コード分析では、**ドア**と**knokker**という2つの単語の複合として名前が識別されます。 その後、 **knokker**のスペルが正しくないという警告が生成されます。 コード分析でスペルを認識させるには、カスタム辞書に**knokker**という用語を追加します。
+たとえば、コードに **DoorKnokker**という名前のクラスが含まれているとします。 コード分析では、 **ドア** と **knokker**という2つの単語の複合として名前が識別されます。 その後、 **knokker** のスペルが正しくないという警告が生成されます。 コード分析でスペルを認識させるには、カスタム辞書に **knokker** という用語を追加します。
 
 ## <a name="to-create-a-custom-dictionary"></a>カスタム辞書を作成するには
 
@@ -74,7 +74,7 @@ ms.locfileid: "87453642"
 
 - [Dictionary/頭字語/CasingExceptions/頭字語](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>辞書/単語/認識/単語
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a> 辞書/単語/認識/単語
 
 コード分析によって正しくスペルが識別される用語の一覧に用語を含めるには、用語を辞書/単語/認識/単語要素の内部テキストとして追加します。 辞書/単語/認識された要素または Word 要素の用語では、大文字と小文字は区別されません。
 
@@ -109,7 +109,7 @@ ms.locfileid: "87453642"
 
 - [CA2204:リテラルに正しいスペルを要求](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>辞書/単語/認識されない/Word
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a> 辞書/単語/認識されない/Word
 
 コード分析によって正しくスペルが識別される用語の一覧から用語を除外するには、辞書/単語/認識されていない要素の内部テキストとして除外する用語を追加します。 辞書/単語/認識されない/Word 要素の用語では、大文字と小文字は区別されません。
 
@@ -144,7 +144,7 @@ ms.locfileid: "87453642"
 
 - [CA2204:リテラルに正しいスペルを要求](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionary/Words/Deprecated/Term [ @PreferredAlternate ]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term [ @PreferredAlternate ]
 
 コード分析によって非推奨と識別された用語の一覧に用語を含めるには、用語を辞書/単語/非推奨の要素の内部テキストとして追加します。 非推奨の用語は、スペルが正しく、使用すべきではない単語です。
 
@@ -181,7 +181,7 @@ ms.locfileid: "87453642"
 
 - [CA1726:適切な用語を使用します](../code-quality/ca1726.md)
 
-### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>辞書/単語/複合/語句 [ @CompoundAlternate ]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 辞書/単語/複合/語句 [ @CompoundAlternate ]
 
 組み込みの辞書は、複合語句ではなく、単一の個別の用語として用語を識別します。 コード分析で特定の単語として識別される用語の一覧に用語を含めるには、用語を辞書/単語/複合/用語要素の内部テキストとして追加します。 Term 要素の CompoundAlternate 属性で、個別の単語の最初の文字を大文字にして (Pascal 形式)、複合語句を構成する個々の単語を指定します。 内部テキストで指定された用語は、辞書/単語/DiscreteExceptions リストに自動的に追加されることに注意してください。
 
@@ -214,7 +214,7 @@ ms.locfileid: "87453642"
 
 - [CA1704:識別子は正しく入力されなければなりません](../code-quality/ca1704.md)
 
-### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term
 
 コード分析で、複合語の大文字と小文字の規則によって語句がチェックされるときに、単語として識別される用語を一覧から除外するには、辞書/単語/DiscreteExceptions/Term 要素の内部テキストとして用語を追加します。 Dictionary/Words/DiscreteExceptions/Term 要素の用語では、大文字と小文字は区別されません。
 
@@ -239,7 +239,7 @@ ms.locfileid: "87453642"
 
 - [CA1702:複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702.md)
 
-### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionary/頭字語/CasingExceptions/頭字語
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/頭字語/CasingExceptions/頭字語
 
 コード分析によって識別される用語の一覧に頭字語を含め、複合語の大文字と小文字の規則によって用語がチェックされる方法を指定するには、辞書/頭字語/CasingExceptions/頭字語要素の内部テキストとして用語を追加します。 Dictionary/頭字/CasingExceptions/頭字語の頭字語では、大文字と小文字が区別されます。
 
@@ -262,16 +262,16 @@ ms.locfileid: "87453642"
 
 - [CA1709:識別子では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1709.md)
 
-## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>プロジェクトにカスタム辞書を適用するには
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> プロジェクトにカスタム辞書を適用するには
 
 1. **ソリューションエクスプローラー**で、次のいずれかの手順を実行します。
 
-    - 1つのプロジェクトに辞書を追加するには、プロジェクト名を右クリックし、[**既存項目の追加**] をクリックします。 [**既存項目の追加**] ダイアログボックスでファイルを指定します。
+    - 1つのプロジェクトに辞書を追加するには、プロジェクト名を右クリックし、[ **既存項目の追加**] をクリックします。 [ **既存項目の追加** ] ダイアログボックスでファイルを指定します。
   
-    - 複数のプロジェクト間で共有される辞書を追加するには、[**既存項目の追加**] ダイアログボックスで共有するファイルを探し、[**追加**] ボタンの下矢印をクリックして、[**リンクとして追加**] をクリックします。
+    - 複数のプロジェクト間で共有される辞書を追加するには、[ **既存項目の追加** ] ダイアログボックスで共有するファイルを探し、[ **追加** ] ボタンの下矢印をクリックして、[ **リンクとして追加**] をクリックします。
 
 2. **ソリューションエクスプローラー**で、 **CustomDictionary.xml**ファイル名を右クリックし、[**プロパティ**] をクリックします。
 
-3. [**ビルドアクション**] ボックスの一覧で、[ **CodeAnalysisDictionary**] を選択します。
+3. [ **ビルドアクション** ] ボックスの一覧で、[ **CodeAnalysisDictionary**] を選択します。
 
-4. [**出力ディレクトリにコピー** ] ボックスの一覧の [**コピー**しない] を選択します。
+4. [ **出力ディレクトリにコピー** ] ボックスの一覧の [ **コピー**しない] を選択します。

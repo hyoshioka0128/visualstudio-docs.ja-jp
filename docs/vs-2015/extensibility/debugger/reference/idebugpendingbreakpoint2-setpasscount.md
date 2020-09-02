@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount |Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: Setpass Count |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42a4c4b008b34a66a408cbb9a5615ae3fbbf8407
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188609"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-設定または保留中のブレークポイントに関連付けられているパスの数を変更します。  
+保留中のブレークポイントに関連付けられているパスカウントを設定または変更します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,14 +41,14 @@ int SetPassCount( 
   
 #### <a name="parameters"></a>パラメーター  
  `bpPassCount`  
- [in]A [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)パスの数を含む構造体。  
+ からパスカウントを格納している [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 構造体。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`ブレークポイントが削除されている場合。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_BP_DELETED`ブレークポイントが削除されている場合は、を返します。  
   
-## <a name="remarks"></a>Remarks  
- 以前、保留中のブレークポイントに関連付けられていたパスの数が失われます。 保留中のブレークポイントからこれにバインドされているすべてのブレークポイントがそのパスの数に設定すると呼ばれる、`bpPassCount`パラメーター。  
+## <a name="remarks"></a>注釈  
+ 保留中のブレークポイントに関連付けられていたパスカウントは失われます。 この保留中のブレークポイントからバインドされたすべてのブレークポイントは、パスカウントをパラメーターに設定するために呼び出され `bpPassCount` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

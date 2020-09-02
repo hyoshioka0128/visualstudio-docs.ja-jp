@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 571079b7de52c4dbebbe842b232e4f889a9f0eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62989786"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio からのクラウド サービスの発行またはデプロイの準備
@@ -38,7 +38,7 @@ ms.locfileid: "62989786"
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Azure Portal を使用してクラウド サービスを作成する
 
-1. [Azure Portal](https://portal.azure.com/) にサインインします。
+1. [Azure portal](https://portal.azure.com/) にサインインします。
 1. ページ左側の **[Cloud Services (クラシック)]** を選択します。
 1. **[+ 追加]** を選択し、必要な情報 (DNS 名、サブスクリプション、リソース グループ、および場所) を入力します。 後で Visual Studio で行うため、この時点でパッケージをアップロードする必要はありません。
 1. **[作成]** を選択してプロセスを完了します。
@@ -57,7 +57,7 @@ ms.locfileid: "62989786"
 
 ### <a name="create-a-storage-account-through-the-azure-portal"></a>Azure Portal を使用してストレージ アカウントを作成する
 
-1. [Azure Portal](https://portal.azure.com/) にサインインします。
+1. [Azure portal](https://portal.azure.com/) にサインインします。
 1. 左上の **[+ 新規]** を選択します。
 1. "Azure Marketplace" の下の **[ストレージ]** を選択し、右側の **[ストレージ アカウント - Blob、File、Table、Queue]** を選択します。
 1. 必要な情報 (名前、デプロイ モデルなど) を入力します。

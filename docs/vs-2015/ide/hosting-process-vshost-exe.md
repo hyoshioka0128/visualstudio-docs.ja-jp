@@ -1,4 +1,4 @@
-﻿---
+---
 title: ホスト プロセス (vshost.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a998246f514f13a575f6a7fef850f9f705f92553
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645538"
 ---
 # <a name="hosting-process-vshostexe"></a>ホスト プロセス (vshost.exe)
@@ -34,7 +34,7 @@ Visual Studio のホスト プロセスは、デバッグのパフォーマン�
  **プロジェクト デザイナー**の [[セキュリティ] ページ](../ide/reference/security-page-project-designer.md)では、アプリケーションを部分信頼アプリケーションとして指定することができます。 部分信頼アプリケーションをデバッグするには、アプリケーション ドメインの特別な初期化が必要です。 ホスト プロセスは、この初期化を処理します。
 
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式評価
- デザイン時の式評価を使うと、 **[イミディエイト]** ウィンドウからコードをテストすることができ、アプリケーションを実行する必要がありません。 ホスト プロセスは、デザイン時の式評価の間にこのコードを実行します。 詳しくは、「[イミディエイト ウィンドウ](../ide/reference/immediate-window.md)」をご覧ください。
+ デザイン時の式評価を使うと、**[イミディエイト]** ウィンドウからコードをテストすることができ、アプリケーションを実行する必要がありません。 ホスト プロセスは、デザイン時の式評価の間にこのコードを実行します。 詳細については、「 [イミディエイトウィンドウ](../ide/reference/immediate-window.md)」を参照してください。
 
 ## <a name="see-also"></a>参照
  [デバッグとホストプロセス](../debugger/debugging-and-the-hosting-process.md)[方法: ホストプロセスの](../ide/how-to-disable-the-hosting-process.md)[イミディエイトウィンドウ](../ide/reference/immediate-window.md)[アプリケーションドメイン](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)を無効にする

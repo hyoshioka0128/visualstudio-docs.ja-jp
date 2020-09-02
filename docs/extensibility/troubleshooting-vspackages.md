@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235031"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
@@ -33,7 +33,7 @@ ms.locfileid: "87235031"
 
 1. VSPackage が実行されるように登録されているレジストリルートを使用していることを確認します。通常は実験的なレジストリルートです。
 
-    詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
+    詳細については、 [実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
 2. VSPackage が実験的なレジストリルートで実行されるように設定されている場合は、の実験用バージョンを実行していることを確認してください [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
@@ -41,18 +41,18 @@ ms.locfileid: "87235031"
 
 3. VSPackage レジストリエントリを確認します。
 
-    詳細については、「 [vspackage の登録](registering-and-unregistering-vspackages.md)と[vspackage の管理](../extensibility/managing-vspackages.md)」を参照してください。
+    詳細については、「 [vspackage の登録](registering-and-unregistering-vspackages.md) と [vspackage の管理](../extensibility/managing-vspackages.md)」を参照してください。
 
-4. VSPackage の読み込みに失敗しているのインスタンスの**出力**ウィンドウを開き [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 VSPackage が読み込みに失敗した理由に関する情報が、そのウィンドウに表示されることがあります。
+4. VSPackage の読み込みに失敗しているのインスタンスの **出力** ウィンドウを開き [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 VSPackage が読み込みに失敗した理由に関する情報が、そのウィンドウに表示されることがあります。
 
    > [!NOTE]
-   > の実験用バージョンを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) から開始している場合は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 両方のバージョンの**出力**ウィンドウを調べます。
+   > の実験用バージョンを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) から開始している場合は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 両方のバージョンの **出力** ウィンドウを調べます。
 
 5. アクティビティログを確認します。
 
-    詳細については、「[方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
+    詳細については、「 [方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
-6. IDE によってスローされた例外の詳細については、[**デバッグ**] メニューの [**例外**] をクリックして、例外を有効にします。 [**例外**] ダイアログボックスで、詳細情報を表示する例外の種類を選択します。
+6. IDE によってスローされた例外の詳細については、[**デバッグ**] メニューの [**例外**] をクリックして、例外を有効にします。 [ **例外** ] ダイアログボックスで、詳細情報を表示する例外の種類を選択します。
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>登録されていない VSPackage のトラブルシューティングを行うには
 
@@ -78,26 +78,26 @@ ms.locfileid: "87235031"
 
     1. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-    2. [**プロパティページ**] ダイアログボックスで、[**デバッグ**] タブを選択します。
+    2. [ **プロパティページ** ] ダイアログボックスで、[ **デバッグ** ] タブを選択します。
 
-    3. [**コマンドライン引数**] ボックスに、VSPackage が対象とする開発環境のルートサフィックスを入力します。 たとえば、実験用ビルドを選択するには、「 **/rootsuffix Exp**」と入力します。
+    3. [ **コマンドライン引数** ] ボックスに、VSPackage が対象とする開発環境のルートサフィックスを入力します。 たとえば、実験用ビルドを選択するには、「 **/rootsuffix Exp**」と入力します。
 
-    4. [**デバッグ**] メニューの [**デバッグの開始**] をクリックするか、F5 キーを押します。
+    4. [ **デバッグ** ] メニューの [ **デバッグの開始** ] をクリックするか、F5 キーを押します。
 
         > [!NOTE]
         > プロジェクトをデバッグする場合は、今すぐプロジェクトの既存のインスタンスを作成するか、読み込んでください。
 
 2. アクティビティログを使用します。
 
-     キーポイントでアクティビティログに情報を書き込むことによって、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行する場合に特に便利です。 詳細については、「[方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
+     キーポイントでアクティビティログに情報を書き込むことによって、VSPackage の動作をトレースします。 この手法は、小売環境で VSPackage を実行する場合に特に便利です。 詳細については、「 [方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
 3. パブリックシンボルを使用します。
 
      デバッグ中の読みやすさを向上させるために、デバッガーにシンボルをアタッチできます。
 
-    1. [ツール] メニューの [オプション] を**選択**し、[デバッグ] **/[シンボル**] ダイアログボックスに移動します。
+    1. [ツール] メニューの [オプション] を **選択** し、[デバッグ] **/[シンボル** ] ダイアログボックスに移動します。
 
-    2. 次**のシンボルファイル (.pdb) の場所**を追加します。
+    2. 次 **のシンボルファイル (.pdb) の場所**を追加します。
 
          `https://msdl.microsoft.com/download/symbols`
 
@@ -113,9 +113,9 @@ ms.locfileid: "87235031"
 
    1. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-   2. [**プロパティページ**] ダイアログボックスの [**参照**] タブを選択し、すべてのパスが正しいことを確認します。 または、**オブジェクトブラウザー**を使用して、参照先のオブジェクトを参照することもできます。
+   2. [**プロパティページ**] ダイアログボックスの [**参照**] タブを選択し、すべてのパスが正しいことを確認します。 または、 **オブジェクトブラウザー** を使用して、参照先のオブジェクトを参照することもできます。
 
-        マネージコードの場合は、 [Fuslogvw.exe (アセンブリバインディングログビューアー)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)を使用して、失敗したアセンブリの読み込みの詳細を表示できます。
+        マネージコードの場合は、 [Fuslogvw.exe (アセンブリバインディングログビューアー)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) を使用して、失敗したアセンブリの読み込みの詳細を表示できます。
 
 2. アンマネージコードの場合は、clsid レジストリノードで VSPackage の CLSID を見つけ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
@@ -125,4 +125,4 @@ ms.locfileid: "87235031"
 
 ## <a name="see-also"></a>関連項目
 - [VSPackages](../extensibility/internals/vspackages.md)
-- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

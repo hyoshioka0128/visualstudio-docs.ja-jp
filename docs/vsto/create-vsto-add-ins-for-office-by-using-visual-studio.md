@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio を使用して Office 用 VSTO アドインを作成する
 titleSuffix: ''
 ms.custom: seodec18
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986157"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio を使用して Office 用 VSTO アドインを作成する
@@ -29,7 +29,7 @@ ms.locfileid: "72986157"
  Office 開発の最新情報については、 [Microsoft Office デベロッパーセンター](https://developer.microsoft.com/office/docs)を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [Visual Studio &#40;での Office 開発の概要&#41;](getting-started-office-development-in-visual-studio.md)
+- [Visual Studio で &#40;Office 開発を開始する&#41;](getting-started-office-development-in-visual-studio.md)
 
  Office ソリューションの作成用に開発コンピューターを構成する方法、Office ソリューションの作成を開始する方法、および Visual Studio での Office 開発を対象とする新機能に関する情報へのリンクを示します。
 
@@ -97,25 +97,25 @@ ms.locfileid: "72986157"
 
  サンプル アプリケーション、および一般的なタスクの詳細な手順を説明するトピックへのリンクを示します。
 
-- [一般的な&#40;リファレンス (Visual Studio での Office 開発)&#41;](general-reference-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発に関する一般的なリファレンス &#40;&#41;](general-reference-office-development-in-visual-studio.md)
 
  Office プライマリ相互運用機能アセンブリ、マニフェスト、ユーザーインターフェイス要素、およびエラーメッセージに関する詳細情報へのリンクを示します。
 
-- [Visual Studio &#40;でのマネージリファレンス Office 開発&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発に関するマネージリファレンス &#40;&#41;](managed-reference-office-development-in-visual-studio.md)
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]を対象とする Office プロジェクトで使用される API の名前空間と型に関する情報へのリンクを示します。 .NET Framework 3.5 を対象とする Office プロジェクトで使用される名前空間と型に関する API リファレンスドキュメントについては、「Visual Studio 2008 ドキュメント: [2007 システム管理リファレンス](managed-reference-office-development-in-visual-studio.md)」の「リファレンス」セクションを参照してください。
 
-- [Visual Studio で&#40;のアンマネージ API リファレンス Office 開発&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発 &#40;アンマネージ API リファレンス&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Office アプリケーションでマネージド VSTO アドインのロードとアンロードなどの操作を実行するために使用できる COM インターフェイスに関する情報へのリンクを示します。
 
 ## <a name="related-sections"></a>関連項目
-- [Visual Studio 開発者ポータルを使用した Office 開発](https://developer.microsoft.com/office/docs)技術記事、ビデオ、ブログなど、その他のリソースを提供します。
+- [Visual Studio 開発者ポータルを使用した Office 開発](https://developer.microsoft.com/office/docs) 技術記事、ビデオ、ブログなど、その他のリソースを提供します。
 
-- [Visual Studio デベロッパーセンター](https://visualstudio.microsoft.com/)技術記事、ビデオ、ブログなど、その他の Visual Studio リソースを提供します。
+- [Visual Studio デベロッパーセンター](https://visualstudio.microsoft.com/) 技術記事、ビデオ、ブログなど、その他の Visual Studio リソースを提供します。
 
-- [MSDN ライブラリの Microsoft Office 開発](/previous-versions/office/office-12/bb726434(v=office.12))に関するセクションMSDN ライブラリの領域では、いくつかのバージョンの Office のソリューション開発に関する記事やリファレンスドキュメントを参照できます (Visual Studio を使用した Office 開発に固有ではありません)。
+- [MSDN ライブラリの Microsoft Office 開発](/previous-versions/office/office-12/bb726434(v=office.12)) に関するセクションMSDN ライブラリの領域では、いくつかのバージョンの Office のソリューション開発に関する記事やリファレンスドキュメントを参照できます (Visual Studio を使用した Office 開発に固有ではありません)。
 
-- [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)Visual Studio を使用して、web アプリケーション、XML web サービス、および従来のクライアントアプリケーションを設計、開発、デバッグ、および配置する方法について説明するトピックへのリンクを示します。
+- [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Visual Studio を使用して、web アプリケーション、XML web サービス、および従来のクライアントアプリケーションを設計、開発、デバッグ、および配置する方法について説明するトピックへのリンクを示します。
 
-- [Visual Studio でのプログラミングの .NET Framework](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))Visual Basic とビジュアルC#の .NET Framework を使用したアプリケーション開発について説明します。
+- [Visual Studio でのプログラミングの .NET Framework](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Visual Basic および Visual C# の .NET Framework を使用したアプリケーション開発について説明します。
