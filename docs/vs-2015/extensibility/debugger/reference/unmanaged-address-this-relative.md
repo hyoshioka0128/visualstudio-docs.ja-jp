@@ -13,18 +13,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aaed99b669946f4d2885009ff328ce4e2e62fcae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204751"
 ---
-# <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
+# <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-この構造体が関連しているアドレスを表す、`this`ポインター (`Me` Visual Basic で)。  
+この構造体は、ポインターに対して相対的なアドレス `this` ( `Me` Visual Basic) を表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef struct _tagUNMANAGED_THIS_RELATIVE {  
@@ -44,24 +44,24 @@ public struct UNMANAGED_THIS_RELATIVE {
   
 ## <a name="terms"></a>用語  
  dwOffset  
- (たとえば、クラスの vtable の開始) の基本の位置からのオフセットのバイト。  
+ 基本位置からのバイトオフセット (たとえば、クラス vtable の開始)。  
   
  dwBitOffset  
- 基本の位置からのビット単位のオフセット (常に 0 ビット フィールドを参照する場合を除き)。  
+ 基本位置からのビット単位のオフセット (ビットフィールドを参照する場合を除き、常に0です)。  
   
  dwBitLength  
- アドレスを表すビット数 (常に 0 ビット フィールドを参照する場合を除き)。  
+ アドレスを表すビット数 (ビットフィールドを参照している場合を除き、常に0です)。  
   
-## <a name="remarks"></a>Remarks  
- この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。  
+## <a name="remarks"></a>注釈  
+ この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

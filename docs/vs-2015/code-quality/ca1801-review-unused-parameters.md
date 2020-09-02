@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547785"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
@@ -28,7 +28,7 @@ ms.locfileid: "85547785"
 
 Visual Studio の最新のドキュメントについては、「 [CA1801: 使用](/visualstudio/code-quality/ca1801-review-unused-parameters)されていないパラメーターの確認」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|

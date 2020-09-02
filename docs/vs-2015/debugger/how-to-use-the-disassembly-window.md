@@ -1,5 +1,5 @@
 ---
-title: '方法: [逆アセンブル] ウィンドウを使用して |Microsoft Docs'
+title: '方法: [逆アセンブル] ウィンドウを使用する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,16 +26,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c25c3cdeb96abacb4123b2d0a851ac3d4acb0cd5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696139"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>方法: 逆アセンブル ウィンドウを使用します。
+# <a name="how-to-use-the-disassembly-window"></a>方法 : [逆アセンブル] ウィンドウを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この機能は、アドレス レベルのデバッグが有効になっている場合にのみ使用可能な**オプション**ダイアログ ボックスで、**デバッグ**ノード。 スクリプトまたは SQL のデバッグには使用できません。  
+この機能は、[ **オプション** ] ダイアログボックスの [ **デバッグ** ] ノードで、アドレスレベルのデバッグが有効になっている場合にのみ使用できます。 スクリプトまたは SQL のデバッグには使用できません。  
   
  **[逆アセンブル]** ウィンドウには、コンパイラによって作成された命令に対応するアセンブリ コードが表示されます。 マネージド コードをデバッグする場合、これらのアセンブリ命令は、Visual Studio コンパイラが生成した Microsoft Intermediate Language (MSIL) ではなく、Just-In-Time (JIT) コンパイラが作成したネイティブ コードに対応しています。  
   
@@ -60,22 +60,22 @@ ms.locfileid: "65696139"
   ほとんどの場合、アセンブリ言語ではなく生の数値の形式でマシン語コード命令を表示する必要はありません。 ただし、必要に応じて、[メモリ] ウィンドウを使用するか、[逆アセンブル] ウィンドウのショートカット メニューの [コード バイトの表示] を選択すると表示できます。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-display-the-disassembly-window"></a>[逆アセンブル] ウィンドウを表示するには  
   
-- **デバッグ** メニューの 選択**Windows**、 をクリック**逆アセンブル**します。  
+- [ **デバッグ** ] メニューの [ **ウィンドウ**] をクリックし、[ **逆アセンブル**] をクリックします。  
   
      デバッガーは動作中であるか、中断モードである必要があります。  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>オプション情報の表示と非表示を切り替えるには  
   
-- 右クリックし、**逆アセンブル**ウィンドウで、設定や、ショートカット メニューで目的のオプションをオフにします。  
+- [ **逆アセンブリ** ] ウィンドウを右クリックし、ショートカットメニューの必要なオプションを設定または解除します。  
   
      左マージンの黄色の矢印は、現在の実行ポイントの位置を示します。 ネイティブ コードの場合、これは CPU のプログラム カウンターに対応します。 この位置は、プログラム内で次に実行される命令を示します。  
   
-     詳細については、次を参照してください。[上下インメモリ](../debugger/how-to-page-up-or-down-in-memory.md)します。  
+     詳細については、「 [メモリ内でのページアップまたはダウン](../debugger/how-to-page-up-or-down-in-memory.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)   
+## <a name="see-also"></a>参照  
+ [デバッガーでのデータの表示](../debugger/viewing-data-in-the-debugger.md)   
  [方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)
