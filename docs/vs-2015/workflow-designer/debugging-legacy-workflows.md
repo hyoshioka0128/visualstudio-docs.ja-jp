@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656861"
 ---
 # <a name="debugging-legacy-workflows"></a>従来のワークフローのデバッグ
@@ -37,7 +37,7 @@ ms.locfileid: "72656861"
 
 - **ブレークポイント**: 予期したとおりに機能しますが、関数名のアクティビティを指定します。
 
-- **呼び出し履歴**: ワークフローインスタンスで実行されたアクティビティの概要を提供するために変更されました。 **[呼び出し履歴]** ウィンドウのエントリは、実行中のアクティビティの深さ優先検索です。 エントリをダブルクリックすると、選択したアクティビティにフォーカスを設定できます。
+- **呼び出し履歴**: ワークフローインスタンスで実行されたアクティビティの概要を提供するために変更されました。 [ **呼び出し履歴** ] ウィンドウのエントリは、実行中のアクティビティの深さ優先検索です。 エントリをダブルクリックすると、選択したアクティビティにフォーカスを設定できます。
 
 - **Threads**: デバッグされているワークフローインスタンスのインスタンス ID を提供します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "72656861"
 
 - デザイナ画面上の条件付きブレークポイント
 
-- クイック ウォッチ
+- [クイック ウォッチ]。
 
 - 次のステートメントの設定
 

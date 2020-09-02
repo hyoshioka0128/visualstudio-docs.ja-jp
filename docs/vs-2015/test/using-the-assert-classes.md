@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657136"
 ---
 # <a name="using-the-assert-classes"></a>Assert クラスの使用
@@ -60,4 +60,4 @@ UnitTestingFramework 名前空間の Assert クラスは、特定の機能を確
  テスト メソッドを ExpectedExceptionAttribute 属性で修飾して、開発コード内のメソッドによって例外がスローされることが予期される場合に、例外が実際にそのメソッドでスローされたことを確認します。
 
 ## <a name="see-also"></a>参照
- [既存のコードの単体テストを作成および実行する](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)<xref:Microsoft.VisualStudio.TestTools.UnitTesting>
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [既存コードに対する単体テストの作成と実行](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

@@ -1,5 +1,5 @@
 ---
-title: オブジェクトを作成します。マイクロソフトドキュメント
+title: 'IDebugFunctionObject:: CreateStringObject |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 40a13b9b388caa6a1ae6e3e470e4ea02553fa0ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728523"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
@@ -43,16 +43,16 @@ int CreateStringObject(
 
 ## <a name="parameters"></a>パラメーター
 `pcstrString`\
-[in]文字列オブジェクトの文字列値。
+から文字列オブジェクトの文字列値。
 
 `ppObject`\
-[アウト]新しく作成された文字列オブジェクトを表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトを返します。
+入出力新しく作成された文字列オブジェクトを表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- [インターフェイス](../../../extensibility/debugger/reference/idebugfunctionobject.md)で表される関数のパラメーターである文字列を表すオブジェクトを作成します。
+## <a name="remarks"></a>解説
+ [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイスによって表される関数のパラメーターである文字列を表すオブジェクトを作成するには、このメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

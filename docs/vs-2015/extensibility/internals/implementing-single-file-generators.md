@@ -1,5 +1,5 @@
 ---
-title: 単一ファイル ジェネレーターの実装 |Microsoft Docs
+title: 単一ファイルジェネレーターの実装 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,23 +13,23 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2ca842f05692d5d47ed42470f58f2be0bb45007
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192692"
 ---
 # <a name="implementing-single-file-generators"></a>単一ファイル ジェネレーターの実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-カスタム ツール-単一ファイル ジェネレーターとも呼ば-拡張に使用できる、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]と[!INCLUDE[csprcs](../../includes/csprcs-md.md)]プロジェクト システムで[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 カスタム ツールは、実装する COM コンポーネント、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>インターフェイス。 このインターフェイスを使用して、カスタム ツールは、1 つの出力ファイルに 1 つの入力ファイルを変換します。 変換の結果には、ソース コードが可能性があります。 または役立つその他の出力します。 カスタム ツールで生成されたコード ファイルの 2 つの例は、ビジュアル デザイナーと Web サービス記述言語 (WSDL) を使用して生成されたファイルの変更に応答で生成されたコードです。  
+カスタムツール (単一ファイルジェネレーターと呼ばれることもあります) を使用して、 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] のおよびプロジェクトシステムを拡張でき [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 カスタムツールは、インターフェイスを実装する COM コンポーネントです <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 。 このインターフェイスを使用すると、カスタムツールによって1つの入力ファイルが1つの出力ファイルに変換されます。 変換の結果は、ソースコード、またはその他の有用な出力である可能性があります。 カスタムツールによって生成されるコードファイルの2つの例は、ビジュアルデザイナーの変更と、Web サービス記述言語 (WSDL) を使用して生成されたファイルに応答して生成されるコードです。  
   
- カスタム ツールが読み込まれると、入力ファイルが保存される際、プロジェクト システムを呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>メソッドへの参照を渡すと、<xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress>ツールがユーザーにその進行状況を報告するためのコールバック インターフェイス。  
+ カスタムツールが読み込まれたとき、または入力ファイルが保存されると、プロジェクトシステムは <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> メソッドを呼び出し、コールバックインターフェイスへの参照を渡し <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> ます。これにより、ツールが進行状況をユーザーに報告できるようになります。  
   
- カスタム ツールを生成する出力ファイルは、入力ファイルへの依存関係をプロジェクトに追加されます。 プロジェクト システムのカスタム ツールの実装によって返される文字列に基づいて、出力ファイルの名前を自動的に決定する<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>します。  
+ カスタムツールによって生成される出力ファイルは、入力ファイルに対する依存関係があるプロジェクトに追加されます。 のカスタムツールの実装によって返された文字列に基づいて、出力ファイルの名前がプロジェクトシステムによって自動的に決定され <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> ます。  
   
- カスタム ツールを実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>インターフェイス。 必要に応じて、カスタム ツールのサポート、<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>インターフェイスは、入力ファイル以外のソースから情報を取得します。 いずれの場合も、カスタム ツールを使用する前に登録すると、システムまたは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ローカル レジストリ。 カスタム ツールを登録する方法の詳細については、次を参照してください。[単一ファイル ジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)します。  
+ カスタムツールでは、インターフェイスを実装する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> ます。 必要に応じて、カスタムツールは、 <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> 入力ファイル以外のソースから情報を取得するためのインターフェイスをサポートします。 どのような場合でも、カスタムツールを使用する前に、システムまたはローカルレジストリに登録する必要があり [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 カスタムツールの登録の詳細については、「 [単一ファイルジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクトの既定の Namespace を決定します。](../../misc/determining-the-default-namespace-of-a-project.md)   
+## <a name="see-also"></a>参照  
+ [プロジェクトの既定の名前空間の決定](../../misc/determining-the-default-namespace-of-a-project.md)   
  [ビジュアル デザイナーへのタイプの公開](../../extensibility/internals/exposing-types-to-visual-designers.md)

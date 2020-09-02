@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903526"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>ツールバーにメニューコントローラーを追加する
-このチュートリアルは、「ツール[ウィンドウにツールウィンドウを追加する」](../extensibility/adding-a-toolbar-to-a-tool-window.md)チュートリアルに基づいており、ツールウィンドウのツールバーにメニューコントローラーを追加する方法を示しています。 ここに示す手順は、「[ツールバーの追加](../extensibility/adding-a-toolbar.md)」チュートリアルで作成したツールバーにも適用できます。
+このチュートリアルは、「ツール [ウィンドウにツールウィンドウを追加する」](../extensibility/adding-a-toolbar-to-a-tool-window.md) チュートリアルに基づいており、ツールウィンドウのツールバーにメニューコントローラーを追加する方法を示しています。 ここに示す手順は、「 [ツールバーの追加](../extensibility/adding-a-toolbar.md) 」チュートリアルで作成したツールバーにも適用できます。
 
 メニューコントローラーは分割コントロールです。 メニューコントローラーの左側には最後に使用したコマンドが表示され、それをクリックすると実行できます。 メニューコントローラーの右側は矢印です。これをクリックすると、追加のコマンドの一覧が表示されます。 一覧でコマンドをクリックすると、コマンドが実行され、メニューコントローラーの左側のコマンドが置き換えられます。 このようにして、メニューコントローラーは、一覧から最後に使用したコマンドを常に表示するコマンドボタンのように動作します。
 
 メニューコントローラーはメニューに表示できますが、最も頻繁に使用されるのはツールバーです。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-menu-controller"></a>メニューコントローラーを作成する
 
-1. 「ツール[ウィンドウにツールバーを追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)する」で説明されている手順に従って、ツールバーを持つツールウィンドウを作成します。
+1. 「ツール [ウィンドウにツールバーを追加](../extensibility/adding-a-toolbar-to-a-tool-window.md) する」で説明されている手順に従って、ツールバーを持つツールウィンドウを作成します。
 
 2. *Twtestcommandpackage. vsct*で、[シンボル] セクションにアクセスします。 **Guidtwtestcommand整理 Ecmdset**という guidsymbol 要素で、メニューコントローラー、メニューコントローラーグループ、3つのメニュー項目を宣言します。
 
@@ -100,7 +100,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 6. この時点で、メニューコントローラーを見ることができます。 プロジェクトをビルドし、デバッグを開始します。 実験用のインスタンスが表示されます。
 
-   1. [**表示]/[その他のウィンドウ**] メニューで、[**テスト ToolWindow**] を開きます。
+   1. [ **表示]/[その他のウィンドウ** ] メニューで、[ **テスト ToolWindow**] を開きます。
 
    2. ツールウィンドウのツールバーにメニューコントローラーが表示されます。
 
@@ -220,7 +220,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
     3つの項目が表示されます。最初の項目が選択されており、そのアイコンの周りに強調表示ボックスがあります。 [ **MC 項目 3**] をクリックします。
 
-    ダイアログボックスが開き、 **[メニューコントローラー項目 3]** というメッセージが表示されます。 メッセージがメニューコントローラーボタンのテキストに対応することに注意してください。 メニューコントローラーボタンに**MC 項目 3**が表示されるようになりました。
+    ダイアログボックスが開き、 **[メニューコントローラー項目 3]** というメッセージが表示されます。 メッセージがメニューコントローラーボタンのテキストに対応することに注意してください。 メニューコントローラーボタンに **MC 項目 3**が表示されるようになりました。
 
 ## <a name="see-also"></a>関連項目
 - [ツールウィンドウへのツールバーの追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)

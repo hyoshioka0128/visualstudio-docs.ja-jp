@@ -1,5 +1,5 @@
 ---
-title: IDebug 式評価器3::Parse2 |マイクロソフトドキュメント
+title: IDebugExpressionEvaluator3::P arse2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729131"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-シンボル プロバイダーと評価フレームのアドレスを指定して、式文字列を解析された式に変換します。
+シンボルプロバイダーおよび評価フレームのアドレスを指定して、式文字列を解析済みの式に変換します。
 
 ## <a name="syntax"></a>構文
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>パラメーター
 `upstrExpression`\
-[in]解析する式文字列。
+から解析する式文字列。
 
 `dwFlags`\
-[in]式の解析方法を決定する[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)定数のコレクション。
+から式の解析方法を決定する [Parseflags](../../../extensibility/debugger/reference/parseflags.md) 定数のコレクション。
 
 `nRadix`\
-[in]数値情報の解釈に使用する基数。
+から数値情報を解釈するために使用される基数。
 
 `pSymbolProvider`\
-[in]シンボル プロバイダーのインターフェイス。
+からシンボルプロバイダーのインターフェイスです。
 
 `pAddress`\
-[in]評価フレームのアドレス。
+から評価フレームのアドレス。
 
 `pbstrError`\
-[アウト]エラーを人間が判読できるテキストとして返します。
+入出力エラーを人間が判読できるテキストとして返します。
 
 `pichError`\
-[アウト]式文字列内のエラーの開始位置の文字位置を返します。
+入出力式文字列内のエラーの先頭の文字位置を返します。
 
 `ppParsedExpression`\
-[アウト]オブジェクト内の解析された[式を](../../../extensibility/debugger/reference/idebugparsedexpression.md)返します。
+入出力 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクト内の解析された式を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-このメソッドは、実際の値ではなく、解析された式を生成します。 解析された式は、評価の準備が整いました。
+## <a name="remarks"></a>解説
+このメソッドは、実際の値ではなく、解析された式を生成します。 解析された式を評価する準備ができました。つまり、値に変換されます。
 
 ## <a name="example"></a>例
-次の例は、[インターフェイス](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)を公開する**CEE**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)インターフェイスを公開する**CEE**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

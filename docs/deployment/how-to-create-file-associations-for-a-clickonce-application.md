@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76ecc41a852d80319f8a171ed590eb73680d92cc
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382498"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのファイルの関連付けを作成する
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを1つまたは複数のファイル名拡張子に関連付けることができるため、ユーザーがこれらの種類のファイルを開いたときに、アプリケーションが自動的に起動されます。 ファイル名拡張子のサポートをアプリケーションに追加する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] のは簡単です。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを1つまたは複数のファイル名拡張子に関連付けることができるため、ユーザーがこれらの種類のファイルを開いたときに、アプリケーションが自動的に起動されます。 ファイル名拡張子のサポートをアプリケーションに追加する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] のは簡単です。
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>ClickOnce アプリケーションのファイルの関連付けを作成するには
 
@@ -31,7 +31,7 @@ ms.locfileid: "85382498"
 
 2. メモ帳などのテキストエディターまたは XML エディターを使用して、アプリケーションマニフェストを開きます。
 
-3. `assembly` 要素を検索します。 詳細については、「[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)」を参照してください。
+3. `assembly` 要素を検索します。 詳細については、「 [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)」を参照してください。
 
 4. 要素の子として `assembly` 、要素を追加し `fileAssociation` ます。 `fileAssociation`要素には、次の4つの属性があります。
 
@@ -41,7 +41,7 @@ ms.locfileid: "85382498"
 
    - `progid`: ファイルの種類を一意に識別する文字列。レジストリにマークを付けます。
 
-   - `defaultIcon`: このファイルの種類に使用するアイコン。 このアイコンは、アプリケーションマニフェストでファイルリソースとして追加する必要があります。 詳細については、「[方法: ClickOnce アプリケーションにデータファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
+   - `defaultIcon`: このファイルの種類に使用するアイコン。 このアイコンは、アプリケーションマニフェストでファイルリソースとして追加する必要があります。 詳細については、「[方法:ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
 
      要素と要素の例につい `file` `fileAssociation` ては、「 [ \<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)」を参照してください。
 
@@ -51,9 +51,9 @@ ms.locfileid: "85382498"
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
-    詳細については、「 [Mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」を参照してください。
+    詳しくは、「[Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
-- [\<fileAssociation>element](../deployment/fileassociation-element-clickonce-application.md)
+- [\<fileAssociation> element](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382225"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
@@ -147,17 +147,17 @@ ms.locfileid: "85382225"
 
      ローカライズされたリソース DLL は必要になるまで作成されません。 たとえば、新しいロケールを指定した後で、フォームやそのコントロールのテキストを変更した場合などに作成されます。
 
-4. Visual Studio IDE を使用して*Publishlocales*を発行します。
+4. Visual Studio IDE を使用して *Publishlocales* を発行します。
 
-     **ソリューション エクスプローラー**で *PublishLocales* を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクトデザイナーの [**発行**] ページで、発行場所を指定し、 **http://localhost/PublishLocales** [**今すぐ発行**] をクリックします。
+     **ソリューション エクスプローラー**で *PublishLocales* を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクトデザイナーの [ **発行** ] ページで、発行場所を指定し、 **http://localhost/PublishLocales** [ **今すぐ発行**] をクリックします。
 
      発行 Web ページが表示されたら、そのページを終了します。 (この手順では、プロジェクトを発行するだけで、インストールする必要はありません。)
 
-5. Visual Studio の [コマンドプロンプト] ウィンドウでマクロを呼び出して、 *Publishlocales*を再度発行します。 コマンドプロンプトウィンドウを表示するには、[**表示**] メニューの [**その他のウィンドウ**] をポイントし、[**コマンドウィンドウ**] をクリックするか、 **Ctrl** + **Alt** + **A**キーを押します。 コマンドプロンプトウィンドウで、「」と入力すると、 `macros` 使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。
+5. Visual Studio の [コマンドプロンプト] ウィンドウでマクロを呼び出して、 *Publishlocales* を再度発行します。 コマンドプロンプトウィンドウを表示するには、[**表示**] メニューの [**その他のウィンドウ**] をポイントし、[**コマンドウィンドウ**] をクリックするか、 **Ctrl** + **Alt** + **A**キーを押します。 コマンドプロンプトウィンドウで、「」と入力すると、 `macros` 使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
-6. 発行プロセスが成功すると、"発行が成功しました。" というメッセージが生成*されます*。 発行言語は ' en ' でした。 "メッセージボックスで [ **OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。
+6. 発行プロセスが成功すると、"発行が成功しました。" というメッセージが生成 *されます*。 発行言語は ' en ' でした。 "メッセージボックスで [ **OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。
 
 7. *C:\Inetpub\wwwroot\PublishLocales\en*を検索します。 ローカライズされたリソース DLL に加えて、マニフェスト、 *setup.exe*、発行 Web ページファイルなどのインストールされたファイルが表示されます。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに *.deploy* という拡張子を追加します。この拡張子は配置後に削除できます。)
 

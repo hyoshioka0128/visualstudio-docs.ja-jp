@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537606"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>方法: プログラムによって受信トレイから未読メッセージを取得する
-  この例では、Outlook の**受信トレイ**から未読の電子メールメッセージを取得し、アイテムの数を表示します。
+  この例では、Outlook の **受信トレイ** から未読の電子メールメッセージを取得し、アイテムの数を表示します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

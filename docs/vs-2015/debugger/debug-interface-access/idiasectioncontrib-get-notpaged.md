@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_notpaged |Microsoft Docs
+title: 'IDiaSectionContrib:: get_notPaged |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1899e59e6eb11b53757d28f9babc09739b1fdad3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151884"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-メモリ不足のセクションがページングされることはできないかどうかを示すフラグを取得します。  
+セクションがメモリからページアウトできないかどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ HRESULT get_notPaged ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out, retval]返します`TRUE`場合は、セクションは、それ以外の場合以外にページングされることはできません、返します`FALSE`します。  
+ [out, retval] `TRUE` セクションがページアウトできない場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

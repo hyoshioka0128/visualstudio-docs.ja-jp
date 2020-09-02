@@ -15,33 +15,33 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 931e1ab46793a5ff7e0434949330eaf4dbc820e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164426"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>定数 (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-これらの文字列定数、DIA SDK を通じてプログラム デバッグ データベース (PDB) ファイルのさまざまなセクションを識別するために使用できます。  
+これらの文字列定数を使用すると、プログラムデバッグデータベース (PDB) ファイルのさまざまなセクションを DIA SDK で識別できます。  
   
 ## <a name="constants"></a>定数  
- 次は、C と C++ マクロとして宣言されます。  
+ 次のは C/c + + マクロとして宣言されています。  
   
 |マクロ|値|  
 |-----------|-----------|  
-|`DiaTable_Symbols`|L「シンボル」|  
-|`DiaTable_Sections`|L「セクション」|  
-|`DiaTable_SrcFiles`|L"SourceFiles"|  
+|`DiaTable_Symbols`|L "記号"|  
+|`DiaTable_Sections`|L "セクション"|  
+|`DiaTable_SrcFiles`|L "SourceFiles"|  
 |`DiaTable_LineNums`|L"LineNumbers"|  
-|`DiaTable_SegMap`|L"SegmentMap"|  
+|`DiaTable_SegMap`|L "SegmentMap"|  
 |`DiaTable_Dbg`|L"Dbg"|  
-|`DiaTable_InjSrc`|L"InjectedSource"|  
-|`DiaTable_FrameData`|L"FrameData"|  
+|`DiaTable_InjSrc`|L "InjectedSource"|  
+|`DiaTable_FrameData`|L "フレームデータ"|  
   
 ## <a name="example"></a>例  
- これらの記号のいずれかの使用例を次に示します。  
+ 次に、これらのシンボルのいずれかを使用する例を示します。  
   
 ```cpp#  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  
@@ -55,11 +55,11 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 }  
 ```  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: dia2.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: dia2  
   
-## <a name="see-also"></a>関連項目  
- [リファレンス](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
+## <a name="see-also"></a>参照  
+ [「](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

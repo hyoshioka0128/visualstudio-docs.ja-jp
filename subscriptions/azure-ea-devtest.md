@@ -8,10 +8,10 @@ ms.date: 02/23/2020
 ms.topic: how-to
 description: Enterprise Agreement をご利用のお客様に提供される Azure DevTest の特別価格を利用する方法について説明します。
 ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903138"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise Agreement DevTest オファー

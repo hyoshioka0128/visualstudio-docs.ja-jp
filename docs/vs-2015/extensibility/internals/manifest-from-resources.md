@@ -7,10 +7,10 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4827402b63eadf517f031b04b7c7cf2fe8a4f56b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537099"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
@@ -48,7 +48,7 @@ Manifest from Resources ツールは、イメージリソース (.png または 
   
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \ imag? image1 xaml/assembly:/newIds/guidname: MyImages/newguid  
   
-## <a name="notes"></a>メモ  
+## <a name="notes"></a>Notes  
   
 - このツールでは、.png ファイルと .xaml ファイルのみがサポートされます。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に検出された、サポートされていないすべての型に対して警告が生成されます。 ツールがリソースの解析を完了したときにサポートされているイメージが見つからない場合は、エラーが生成されます。  
   
@@ -62,7 +62,7 @@ Manifest from Resources ツールは、イメージリソース (.png または 
   
 - ネイティブアセンブリ用に生成されるマニフェストは、ID シンボルがネイティブアセンブリの .rc ファイルのリソース Id と一致するように、生成後に手動で編集する必要がある場合があります。  
   
-## <a name="sample-output"></a>出力例  
+## <a name="sample-output"></a>サンプル出力  
  **単純なイメージマニフェスト**  
   
  イメージマニフェストは、次の .xml ファイルに似ています。  

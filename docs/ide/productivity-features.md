@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184082"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89219765"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio の生産性に関するガイド
 
@@ -24,7 +24,7 @@ ms.locfileid: "84184082"
 
 コマンド、設定、ドキュメント、インストール オプションなど、必要なものをすばやく検索して、メニューから探り出す時間を節約します。 Visual Studio の検索結果内のコマンドについてはキーボード ショートカットを参照してください。より簡単に覚えることができます。 
 
-- **タスク一覧を使用したモック コード**。 コードを完成させるための十分な要件がない場合は、[タスク一覧] を使って、`TODO` や `HACK` などのトークンやカスタム トークンを使用するコード コメントを追跡し、コード内の事前に定義された場所に直接アクセスできるショートカットを管理できます。 詳細については、「[タスク一覧の使用](../ide/using-the-task-list.md.)」を参照してください。
+- **タスク一覧を使用したモック コード**。 コードを完成させるための十分な要件がない場合は、[タスク一覧] を使って、`TODO` や `HACK` などのトークンやカスタム トークンを使用するコード コメントを追跡し、コード内の事前に定義された場所に直接アクセスできるショートカットを管理できます。 詳細については、「[タスク一覧の使用](../ide/using-the-task-list.md)」を参照してください。
 
 - **ソリューション エクスプローラーのショートカットの使用**。 Visual Studio を初めて使用する場合は、これらのショートカットは便利であり、新しいコードベースを理解しようとしするときに時間を節約できます。 すべてのショートカットの一覧については、「[Visual Studio の既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)」をご覧ください。
 

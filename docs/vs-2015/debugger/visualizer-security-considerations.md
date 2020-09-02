@@ -1,5 +1,5 @@
 ---
-title: ビジュアライザーのセキュリティに関する考慮事項 |Microsoft Docs
+title: ビジュアライザーのセキュリティに関する考慮事項 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146461"
 ---
 # <a name="visualizer-security-considerations"></a>ビジュアライザーのセキュリティに関する考慮事項
@@ -40,8 +40,8 @@ ms.locfileid: "68146461"
   
  このような脆弱性を軽減するために、ビジュアライザーによって公開されるインターフェイスに注意する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)   
  [方法: ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)   
- [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)   
+ [カスタムビジュアライザーの作成](../debugger/create-custom-visualizers-of-data.md)   
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

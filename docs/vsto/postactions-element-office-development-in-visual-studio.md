@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544418"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions &gt; 要素 (Visual Studio での Office 開発)
@@ -45,7 +45,7 @@ ms.locfileid: "85544418"
  `postActions` には、次の要素があります。
 
 ### <a name="postaction"></a>postAction
- 任意。 `postAction`名前空間の要素のロールは `vstav3` [&#60;postaction&#62; 要素で定義され、Visual Studio&#41;での Office 開発 &#40;](../vsto/postaction-element-office-development-in-visual-studio.md)ます。
+ 省略可能。 `postAction`名前空間の要素のロールは `vstav3` [&#60;postaction&#62; 要素で定義され、Visual Studio&#41;での Office 開発 &#40;](../vsto/postaction-element-office-development-in-visual-studio.md)ます。
 
 ## <a name="post-deployment-action-example"></a>配置後アクションの例
 

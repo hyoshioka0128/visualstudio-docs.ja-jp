@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6f1654c2497742231d12f19286f21a6395129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160441"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 要素 (Visual Studio テンプレート)
@@ -49,7 +49,7 @@ ms.locfileid: "68160441"
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  テキストは、 **Windows**である必要があります。  
   
 ## <a name="example"></a>例  
@@ -65,6 +65,6 @@ ms.locfileid: "68160441"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>参照  
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

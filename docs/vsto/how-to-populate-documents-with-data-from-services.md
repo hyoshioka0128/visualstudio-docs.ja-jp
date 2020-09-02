@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01e2a83f464576d1ca780daa17c0d9478f0caa14
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547148"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>方法: サービスのデータをドキュメントに読み込む
 
-Microsoft Office のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータにアクセスできます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、ホスト コントロールと呼ばれるコントロールを利用できます。これは、Microsoft Office Excel および Microsoft Office Word のネイティブ オブジェクトであり、イベントやデータ バインディング機能が強化されています。 詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+Microsoft Office のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータにアクセスできます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、ホスト コントロールと呼ばれるコントロールを利用できます。これは、Microsoft Office Excel および Microsoft Office Word のネイティブ オブジェクトであり、イベントやデータ バインディング機能が強化されています。 詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-次の例は、デザイン時にドキュメントにデータ バインド コントロールを追加する方法を示しています。 実行時に VSTO アドインのデータバインドコントロールを追加する方法の例については、「[チュートリアル: Vsto アドインプロジェクトのサービスからのデータへのバインド](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)」を参照してください。
+次の例は、デザイン時にドキュメントにデータ バインド コントロールを追加する方法を示しています。 実行時に VSTO アドインのデータバインドコントロールを追加する方法の例については、「 [チュートリアル: Vsto アドインプロジェクトのサービスからのデータへのバインド](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)」を参照してください。
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>ドキュメントレベルのプロジェクトに web サービスのデータを設定するには
 

@@ -1,5 +1,5 @@
 ---
-title: デプロイのセキュリティ保護します。
+title: セキュリティで保護されたデプロイ
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978376"
 ---
-# <a name="secure-deployment"></a>デプロイのセキュリティ保護します。
-  Office ソリューションを作成するときに実行するプロジェクトでコードを許可する、開発用コンピューターが自動的に更新されます。 ただし、ソリューションを配置するときに、ソリューションに証明書で署名するかを使用して、信頼の決定の基になる証拠を提供する必要があります、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプト キー。 詳細については、次を参照してください。 [Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)します。
+# <a name="secure-deployment"></a>セキュリティで保護されたデプロイ
+  Office ソリューションを作成すると、開発用コンピューターが自動的に更新され、プロジェクト内のコードが実行できるようになります。 ただし、ソリューションを配置するときは、証明書を使用してソリューションに署名するか、信頼プロンプトキーを使用することによって、信頼の決定の基礎となる証拠を提供する必要があり [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 詳細については、「 [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)」を参照してください。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- ドキュメント レベルのカスタマイズに、ネットワークの場所にドキュメントを配置する場合、Office アプリケーションのセキュリティ センターで信頼できる場所の一覧にドキュメントの場所を追加する必要がありますもできます。 エンドユーザーのコンピューターにドキュメントのアクセス許可を設定する方法の詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
+ ドキュメントレベルのカスタマイズでは、ドキュメントをネットワーク上の場所に配置する場合は、Office アプリケーションのセキュリティセンターにある信頼できる場所の一覧にドキュメントの場所を追加する必要もあります。 エンドユーザーのコンピューターに対するドキュメントのアクセス許可を設定する方法の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
-## <a name="prevent-office-solutions-from-running-code"></a>Office ソリューションがコードを実行するを防ぐ
- 管理者は、すべての Office ソリューションがコンピューターで実行されていることを防ぐために、レジストリを使用できます。 マネージ コード拡張機能を Office ソリューションが開かれた場合、Visual Studio Tools for Office ランタイム チェック エントリかどうか、名前の`Disabled`が存在するコンピューターで次のレジストリ キーのいずれかの。
+## <a name="prevent-office-solutions-from-running-code"></a>Office ソリューションでコードを実行できないようにする
+ 管理者は、レジストリを使用して、すべての Office ソリューションがコンピューター上で実行されるのを防ぐことができます。 マネージコード拡張機能を持つ Office ソリューションが開かれると、Visual Studio Tools for Office ランタイムは、 `Disabled` コンピューター上の次のいずれかのレジストリキーの下に名前のエントリが存在するかどうかを確認します。
 
-- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
 
-  Office ソリューションのコードの実行を防ぐために作成、`Disabled`一方または両方のこれらのレジストリ キーの下のエントリの値を次のデータ型のいずれかを指定して`Disabled`:
+  Office ソリューションでコードを実行できないようにするには、 `Disabled` これらのレジストリキーのいずれかまたは両方にエントリを作成し、に次のデータ型と値のいずれかを指定し `Disabled` ます。
 
-- REG_SZ または REG_EXPAND_SZ「0」(ゼロ) 以外の任意の文字列に設定されています。
+- "0" (ゼロ) 以外の任意の文字列に設定されている REG_SZ または REG_EXPAND_SZ。
 
-- 0 (ゼロ) 以外の値に設定されている REG_DWORD です。
+- 0 (ゼロ) 以外の値に設定されている REG_DWORD。
 
-  コードを実行する Office ソリューションを有効にするには、両方を設定、 `Disabled` 0 (ゼロ) へのエントリまたはレジストリ エントリを削除します。
+  Office ソリューションでコードを実行できるようにするには、両方の `Disabled` エントリを 0 (ゼロ) に設定するか、レジストリエントリを削除します。
 
-## <a name="see-also"></a>関連項目
-- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
-- [実行したり、Office ソリューションをホストするコンピューターを準備します。](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+## <a name="see-also"></a>こちらもご覧ください
+- [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションを実行またはホストするためのコンピューターの準備](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

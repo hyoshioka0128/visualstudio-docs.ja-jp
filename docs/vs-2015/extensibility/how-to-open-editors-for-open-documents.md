@@ -11,50 +11,50 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204148"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>方法: 開いているドキュメントのエディターを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-プロジェクトでは、ドキュメント ウィンドウが開いたら、プロジェクト最初判断しなければなりませんかどうか、ファイルが既に開いている別のエディターのドキュメント ウィンドウ。 ファイルがプロジェクトに固有のエディターで開くかを指定できますに登録されている標準のエディターのいずれかまたは[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
+プロジェクトでドキュメントウィンドウを開く前に、まず、そのファイルが別のエディターのドキュメントウィンドウで既に開いているかどうかを確認する必要があります。 このファイルは、プロジェクト固有のエディターで開くか、に登録されている標準エディターのいずれかで開くことができ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。  
   
-## <a name="opening-a-project-specific-editor"></a>プロジェクトに固有のエディターを開く  
- 次の手順を使用して、既に開いているファイルをプロジェクトに固有のエディターを開きます。  
+## <a name="opening-a-project-specific-editor"></a>プロジェクト固有のエディターを開く  
+ 既に開いているファイルのプロジェクト固有のエディターを開くには、次の手順に従います。  
   
-#### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>開いているファイルのプロジェクトに固有のエディターを開く  
+#### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>開いているファイルのプロジェクト固有のエディターを開くには  
   
 1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> メソッドを呼び出します。  
   
-    この呼び出しは、該当する場合に、ドキュメントの階層、階層のアイテムと、ウィンドウ フレームにポインターを返します。  
+    この呼び出しは、ドキュメントの階層、階層アイテム、およびウィンドウフレームへのポインターを返します (該当する場合)。  
   
-2. ドキュメントが開いている場合は、プロジェクトは、またはドキュメント ビュー オブジェクトが存在することも、ドキュメント データ オブジェクトのみが存在するかどうかを確認する必要があります。  
+2. ドキュメントが開いている場合、プロジェクトは、ドキュメントデータオブジェクトのみが存在するかどうか、またはドキュメントビューオブジェクトも存在するかどうかを確認する必要があります。  
   
-   - ドキュメント ビューのオブジェクトが存在する、このビューは、別の階層または階層アイテムの場合は、プロジェクトは、既存のウィンドウを再び表面化するビューのウィンドウ フレームへのポインターを使用します。  
+   - ドキュメントビューオブジェクトが存在し、このビューが別の階層または階層アイテム用である場合、プロジェクトはビューのウィンドウフレームへのポインターを使用して、既存のウィンドウを resurface します。  
   
-   - ドキュメント ビュー オブジェクトが存在し、このビューは、同じ階層および階層アイテムの場合、プロジェクトは、基になるドキュメント データ オブジェクトにアタッチできますが場合 2 つ目のビューを開くことができます。 それ以外の場合、プロジェクトでは、既存のウィンドウを再び表面化するビューのウィンドウ フレームへのポインターを使用する必要があります。  
+   - ドキュメントビューオブジェクトが存在し、このビューが同じ階層および階層アイテムに対して存在する場合、基になるドキュメントデータオブジェクトにアタッチできる場合、プロジェクトは2番目のビューを開くことができます。 それ以外の場合、プロジェクトはビューのウィンドウフレームへのポインターを使用して、既存のウィンドウを resurface する必要があります。  
   
-   - ドキュメントのデータ オブジェクトが存在する場合のみ、プロジェクトがそのビューに、ドキュメント データ オブジェクトを使用できるかどうかを決定する必要があります。 ドキュメント データ オブジェクトが互換性のある場合は、完全な手順で説明した[プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)します。  
+   - ドキュメントデータオブジェクトのみが存在する場合、プロジェクトは、そのビューにドキュメントデータオブジェクトを使用できるかどうかを判断する必要があります。 ドキュメントデータオブジェクトに互換性がある場合は、「 [プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)」で説明されている手順を実行します。  
   
-     ドキュメント データ オブジェクトに互換性がない場合は、ファイルが現在使用中であることを示します。 ユーザーにエラーが表示されます。 など、ユーザーが以外のエディターを使用してファイルを開こうとしてファイルが同時にコンパイルされるときに、このエラーを一時的な場合は、表示のみか、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] core テキスト エディター。 コアのテキスト エディターでは、コンパイラとドキュメント データ オブジェクトを共有できます。  
+     ドキュメントデータオブジェクトに互換性がない場合は、ファイルが現在使用中であることを示すエラーがユーザーに表示されます。 このエラーは、ユーザーがコアテキストエディター以外のエディターを使用してファイルを開こうとしたときに、ファイルがコンパイルされている場合など、一時的な場合にのみ表示され [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。 コアテキストエディターでは、ドキュメントデータオブジェクトをコンパイラと共有できます。  
   
-3. ドキュメント データ オブジェクトまたはドキュメント ビュー オブジェクトがないため、ドキュメントが開いていない場合は、手順を完了[プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)します。  
+3. ドキュメントデータオブジェクトまたはドキュメントビューオブジェクトがないためにドキュメントが開いていない場合は、「 [プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)」の手順を完了してください。  
   
-## <a name="opening-a-standard-editor"></a>標準のエディターを開く  
- 使用になっているファイルの標準のエディターを開くには、次の手順を開きます。  
+## <a name="opening-a-standard-editor"></a>標準エディターを開く  
+ 既に開いているファイルの標準エディターを開くには、次の手順に従います。  
   
-#### <a name="to-open-a-standard-editor-for-an-open-file"></a>開いているファイルの標準のエディターを開く  
+#### <a name="to-open-a-standard-editor-for-an-open-file"></a>開いているファイルの標準エディターを開くには  
   
-1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出す。  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出します。  
   
-     このメソッドが最初に、ドキュメントがまだ開いていない呼び出してを検証します<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>します。 ドキュメントが既に開いている場合、エディター ウィンドウが示されます。  
+     このメソッドは、まず、を呼び出してドキュメントがまだ開かれていないことを確認 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> します。 ドキュメントが既に開いている場合、そのエディターウィンドウは resurfaced です。  
   
-2. ドキュメントが開いていない場合、その後の手順を完了[方法。標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)します。  
+2. ドキュメントが開いていない場合は、 [「方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)」の手順を完了します。  
   
-## <a name="see-also"></a>関連項目  
- [開くと、プロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)   
- [方法: 開いているプロジェクト固有のエディター](../extensibility/how-to-open-project-specific-editors.md)   
+## <a name="see-also"></a>参照  
+ [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)   
+ [方法: プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)   
  [方法: 標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)

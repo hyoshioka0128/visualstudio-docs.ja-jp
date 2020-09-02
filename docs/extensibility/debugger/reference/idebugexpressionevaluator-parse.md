@@ -1,5 +1,5 @@
 ---
-title: IDebug 式エバリュエーター::Pマイクロソフトドキュメント
+title: IDebugExpressionEvaluator::P arse |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729495"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
@@ -51,28 +51,28 @@ int Parse(
 
 ## <a name="parameters"></a>パラメーター
 `upstrExpression`\
-[in]解析する式文字列。
+から解析する式文字列。
 
 `dwFlags`\
-[in]式の解析方法を決定する[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)定数のコレクション。
+から式の解析方法を決定する [Parseflags](../../../extensibility/debugger/reference/parseflags.md) 定数のコレクション。
 
 `nRadix`\
-[in]数値情報の解釈に使用する基数。
+から数値情報を解釈するために使用される基数。
 
 `pbstrError`\
-[アウト]エラーを人間が判読できるテキストとして返します。
+入出力エラーを人間が判読できるテキストとして返します。
 
 `pichError`\
-[アウト]式文字列内のエラーの開始位置の文字位置を返します。
+入出力式文字列内のエラーの先頭の文字位置を返します。
 
 `ppParsedExpression`\
-[アウト]オブジェクト内の解析された[式を](../../../extensibility/debugger/reference/idebugparsedexpression.md)返します。
+入出力 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクト内の解析された式を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、実際の値ではなく、解析された式を生成します。 解析された式は、評価の準備が整いました。
+## <a name="remarks"></a>解説
+ このメソッドは、実際の値ではなく、解析された式を生成します。 解析された式を評価する準備ができました。つまり、値に変換されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

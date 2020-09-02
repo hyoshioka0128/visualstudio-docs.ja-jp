@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985692"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook オブジェクトモデルの概要
@@ -51,7 +51,7 @@ ms.locfileid: "72985692"
 
 - <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
-### <a name="application-object"></a>Application オブジェクト
+### <a name="application-object"></a>アプリケーション オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.Application> オブジェクトは Outlook のアプリケーションを表し、Outlook オブジェクト モデルで最上位レベルのオブジェクトです。 このオブジェクトの最も重要なメンバーには、次のようなものがあります。
 
 - [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) メソッド。これを使用して、電子メール メッセージ、タスク、予定などの新しい項目を作成できます。
@@ -60,10 +60,10 @@ ms.locfileid: "72985692"
 
 - <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> プロパティ。これを使用して、電子メール メッセージや会議出席依頼などの単一の項目の内容を表示するウィンドウにアクセスできます。
 
-  <xref:Microsoft.Office.Interop.Outlook.Application> オブジェクトのインスタンスを取得するには、プロジェクトの `ThisAddIn` クラスの Application フィールドを使用します。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
+  オブジェクトのインスタンスを取得するには <xref:Microsoft.Office.Interop.Outlook.Application> 、プロジェクトのクラスの [アプリケーション] フィールドを使用し `ThisAddIn` ます。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
 > [!NOTE]
-> Outlook オブジェクトモデルの保護でブロックされているプロパティとメソッドを使用すると、セキュリティの警告を回避するために、`ThisAddIn` クラスの [アプリケーション] フィールドから Outlook オブジェクトを取得します。 詳細については、「 [Office ソリューションのセキュリティに関する具体的な考慮事項](../vsto/specific-security-considerations-for-office-solutions.md)」を参照してください。
+> Outlook オブジェクトモデルの保護によってブロックされているプロパティとメソッドを使用すると、セキュリティの警告を回避するために、クラスの [アプリケーション] フィールドから Outlook オブジェクトを取得し `ThisAddIn` ます。 詳細については、「 [Office ソリューションのセキュリティに関する具体的な考慮事項](../vsto/specific-security-considerations-for-office-solutions.md)」を参照してください。
 
 ### <a name="explorer-object"></a>エクスプローラーオブジェクト
  <xref:Microsoft.Office.Interop.Outlook.Explorer> オブジェクトは、電子メール メッセージ、タスク、または予定などの項目を含むフォルダーの内容を表示するウィンドウを表します。 <xref:Microsoft.Office.Interop.Outlook.Explorer> オブジェクトには、ウィンドウを変更するために使用するメソッドとプロパティ、およびウィンドウが変更されたときに発生するイベントが含まれます。
@@ -90,21 +90,21 @@ ms.locfileid: "72985692"
 ### <a name="folder-object"></a>Folder オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは、電子メール メッセージ、連絡先、タスク、およびその他の項目が含まれているフォルダーを表します。 Outlook には 16 の既定の <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトが用意されています。
 
- 既定の <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 列挙値により、定義されます。 たとえば、オブジェクトに適用された
+ 既定の <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 列挙値により、定義されます。 たとえば、次のように入力します。
 
- Microsoft. Interop. Oldefaultfolders は、Outlook の**受信トレイ**フォルダーに対応します。
+ Microsoft. Interop. Oldefaultfolders は、Outlook の **受信トレイ** フォルダーに対応します。
 
- 既定の <xref:Microsoft.Office.Interop.Outlook.Folder> にアクセスして新しい <xref:Microsoft.Office.Interop.Outlook.Folder>を作成する方法を示す例については、「[方法: プログラムによってカスタムフォルダー項目を作成](../vsto/how-to-programmatically-create-custom-folder-items.md)する」を参照してください。
+ 既定のにアクセスして新しいを作成する方法を示す例につい <xref:Microsoft.Office.Interop.Outlook.Folder> <xref:Microsoft.Office.Interop.Outlook.Folder> ては、「 [方法: プログラムによってカスタムフォルダー項目を作成](../vsto/how-to-programmatically-create-custom-folder-items.md)する」を参照してください。
 
 ### <a name="mailitem-object"></a>MailItem オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.MailItem> オブジェクトは電子メール メッセージを表します。 <xref:Microsoft.Office.Interop.Outlook.MailItem> オブジェクトは通常、「 **受信トレイ**」、「 **送信済みアイテム**」、および「 **送信トレイ**」などのフォルダーにあります。 <xref:Microsoft.Office.Interop.Outlook.MailItem> は、電子メール メッセージを作成し、送信するために使用できるプロパティとメソッドを公開します。
 
- 電子メールメッセージの作成方法を示す例については、「[方法: プログラムによって電子メールアイテムを作成](../vsto/how-to-programmatically-create-an-e-mail-item.md)する」を参照してください。
+ 電子メールメッセージの作成方法を示す例については、「 [方法: プログラムによって電子メールアイテムを作成](../vsto/how-to-programmatically-create-an-e-mail-item.md)する」を参照してください。
 
 ### <a name="appointmentitem-object"></a>AppointmentItem オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> オブジェクトは **カレンダー** フォルダー内の会議、1 回限りの予定、または定期的な予定や会議を表します。 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> オブジェクトには、会議出席依頼の応答や転送などのアクションを実行するメソッドと、会議の場所や時間など、会議詳細を指定するプロパティが含まれます。
 
- 予定の作成方法を示す例については、「[方法: プログラムによって会議出席依頼を作成](../vsto/how-to-programmatically-create-a-meeting-request.md)する」を参照してください。
+ 予定の作成方法を示す例については、「 [方法: プログラムによって会議出席依頼を作成](../vsto/how-to-programmatically-create-a-meeting-request.md)する」を参照してください。
 
 ### <a name="taskitem-object"></a>TaskItem オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> オブジェクトは、指定した期間内で実行するタスクを表します。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> オブジェクトは **[タスク]** フォルダーにあります。
@@ -112,11 +112,11 @@ ms.locfileid: "72985692"
  タスクを作成するには、 [オブジェクトの](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) CreateItem <xref:Microsoft.Office.Interop.Outlook.Application> メソッドを使用して、パラメーターの値 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> を渡します。
 
 ### <a name="contactitem-object"></a>ContactItem オブジェクト
- <xref:Microsoft.Office.Interop.Outlook.ContactItem>オブジェクトは、 **Contacts**フォルダー内の連絡先を表します。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> オブジェクトには、住所、電子メール アドレス、電話番号など、そのオブジェクトが表す人のさまざまな連絡先情報が含まれます。
+ オブジェクトは、 <xref:Microsoft.Office.Interop.Outlook.ContactItem> **Contacts** フォルダー内の連絡先を表します。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> オブジェクトには、住所、電子メール アドレス、電話番号など、そのオブジェクトが表す人のさまざまな連絡先情報が含まれます。
 
- 新しい連絡先を作成する方法を示す例については、「[方法: プログラムによって Outlook の連絡先にエントリを追加](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)する」を参照してください。 既存の連絡先を検索する方法を示す例については、「[方法: プログラムによって特定の連絡先を検索](../vsto/how-to-programmatically-search-for-a-specific-contact.md)する」を参照してください。
+ 新しい連絡先を作成する方法を示す例については、「 [方法: プログラムによって Outlook の連絡先にエントリを追加](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)する」を参照してください。 既存の連絡先を検索する方法を示す例については、「 [方法: プログラムによって特定の連絡先を検索](../vsto/how-to-programmatically-search-for-a-specific-contact.md)する」を参照してください。
 
-## <a name="refdoc"></a>Outlook オブジェクトモデルのドキュメントを使用する
+## <a name="use-the-outlook-object-model-documentation"></a><a name="refdoc"></a> Outlook オブジェクトモデルのドキュメントを使用する
  Outlook オブジェクト モデルに関する詳細については、Outlook プライマリ相互運用機能アセンブリ (PIA) のリファレンスと、VBA オブジェクト モデルのリファレンスを参照してください。
 
 ### <a name="primary-interop-assembly-reference"></a>プライマリ相互運用機能アセンブリのリファレンス
@@ -127,7 +127,7 @@ ms.locfileid: "72985692"
 ### <a name="vba-object-model-reference"></a>VBA オブジェクトモデルのリファレンス
  VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Outlook オブジェクト モデルについて説明しています。 詳細については、「 [Outlook 2010 オブジェクトモデルリファレンス](/office/vba/api/overview/Outlook/object-model)」を参照してください。
 
- VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Outlook PIA の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンスの Inspector オブジェクトは、Outlook PIA の <xref:Microsoft.Office.Interop.Outlook.Inspector> オブジェクトに対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Outlook VSTO アドイン プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
+ VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Outlook PIA の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンス内の Inspector オブジェクトは、 <xref:Microsoft.Office.Interop.Outlook.Inspector> OUTLOOK PIA 内のオブジェクトに対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Outlook VSTO アドイン プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
 
 ### <a name="related-topics"></a>関連トピック
 

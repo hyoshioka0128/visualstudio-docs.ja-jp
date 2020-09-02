@@ -1,4 +1,4 @@
-﻿---
+---
 title: Symbol Path コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651004"
 ---
 # <a name="symbol-path-command"></a>Symbol Path コマンド
@@ -53,5 +53,5 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コマンドウィンドウ](../../ide/reference/command-window.md) [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

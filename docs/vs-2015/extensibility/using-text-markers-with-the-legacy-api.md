@@ -1,5 +1,5 @@
 ---
-title: レガシ API を使用したテキスト マーカーの使用 |Microsoft Docs
+title: レガシ API でテキストマーカーを使用する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,63 +11,63 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695475"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>レガシ API を使用したテキスト マーカーの使用
+# <a name="using-text-markers-with-the-legacy-api"></a>レガシ API でのテキスト マーカーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキスト マーカーは、さまざまな浮動表示に影響を与えるバッファー内のテキストとテキストの範囲の動作です。 マーカーには、ブレークポイント、ブックマーク、波線の下線、および読み取り専用のリージョンが含まれます。 テキスト マーカーは、構文の色分け表示と基本的に異なります。 構文の色分けは、テキストの範囲に関連付けられている言語の構文を通信する簡単な方法を示します。 構文の色分け表示が要求されるの Windows の速度が重要な場合に、画面を再描画と一般にします。 構文の色分けは、テキストの色のみを変更します。 テキスト マーカーには、その他の多くのテキスト プロパティを変更できます。 テキスト マーカー「フローティング」して特別な動作を適用し、色分け表示します。  
+テキストマーカーは、テキスト領域の表示と動作に影響を与える可能性があるバッファー内のテキストの浮動範囲です。 マーカーには、ブレークポイント、ブックマーク、波線、および読み取り専用の領域が含まれます。 テキストマーカーは、基本的に構文の色分けとは異なります。 構文の色分けを使用すると、テキスト領域に関連付けられている言語の構文を簡単に伝えることができます。 一般的に、Windows が画面を再描画するときに、速度が重要な場合に、構文の色分けが要求されます。 構文の色分けでは、テキストの色のみが変更されます。 テキストマーカーは、他の多くのテキストプロパティを変更できます。 テキストマーカーは、"フローティング" し、特殊な動作と色分けを適用できます。  
   
- テキスト マーカーに関連付けられているパフォーマンス オーバーヘッドのため、テキスト バッファーの多くのマーカーを作成できません。 各マーカーは、ユーザーが、バッファーの内容を編集するたびに更新されます。  
+ テキストマーカーに関連するパフォーマンスのオーバーヘッドのため、テキストバッファー用に多くのマーカーを作成しないでください。 各マーカーは、ユーザーがバッファーの内容を編集するたびに更新されます。  
   
 > [!NOTE]
-> ユーザーは、表示されるマーカーの種類がない、図形、スタイルの色を変更できます。 詳細については、次を参照してください。[フォントおよび色のオプション ダイアログ ボックス](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)します。  
+> ユーザーは、表示されているマーカーの種類の色を変更できますが、図形とスタイルは変更できません。 詳細については、「[ [フォントおよび色] ([オプション] ダイアログボックス](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)-[環境])」を参照してください。  
   
 ## <a name="related-topics"></a>関連トピック  
   
-|タイトル|説明|  
+|Title|説明|  
 |-----------|-----------------|  
-|[方法: 標準のテキスト マーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)|によって提供される標準のテキスト マーカーの種類を追加する方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト ビューにコア エディター。|  
-|[方法: エラー マーカーを実装する](../extensibility/how-to-implement-error-markers.md)|インスタンスを実装する方法について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]赤い波線を使用してエラーを示すために使用されるマーカー。|  
-|[方法: カスタム テキスト マーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)|作成し、テキスト ビューに、カスタム テキスト マーカーの種類を追加する方法について説明します。|  
-|[方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)|テキスト マーカーを追加する方法について説明します。|  
-|[コア エディターの内部](../extensibility/inside-the-core-editor.md)|コア エディターの機能について説明し、コア エディターをカスタマイズする方法について詳しく説明します。|  
-|[エディターの機能](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|使用できる機能について説明します、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディター。|  
+|[方法: 標準のテキスト マーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)|コアエディターによって提供される標準のテキストマーカーの種類をテキストビューに追加する方法について説明し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。|  
+|[方法: エラー マーカーを実装する](../extensibility/how-to-implement-error-markers.md)|赤色の波下線を使用して [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エラーを示すために使用されるマーカーのインスタンスを実装する方法について説明します。|  
+|[方法: カスタム テキスト マーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)|テキストビューにカスタムのテキストマーカーの種類を作成して追加する方法について説明します。|  
+|[方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)|テキストマーカーを追加する方法について説明します。|  
+|[コア エディターの内部](../extensibility/inside-the-core-editor.md)|コアエディターの機能について説明し、コアエディターをカスタマイズする方法の詳細について説明します。|  
+|[エディターの機能](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|コアエディターで使用できる機能について説明し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。|  
   
-## <a name="reference"></a>参照  
+## <a name="reference"></a>リファレンス  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- エディターによって定義済みまたは VSPackage によって登録されたかどうかは、特定のテキスト マーカーの種類に関する情報を取得するための統一メカニズムを提供します。  
+ 特定のテキストマーカーの種類に関する情報を取得するための統一されたメカニズムを提供します。これは、エディターによって定義済みであるか、VSPackage によって登録されます。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- アクセスを提供し、2 次元座標を使用してテキスト バッファー内のテキスト マーカーの位置を調整します。  
+ 2次元座標を使用して、テキストバッファー内のテキストマーカーの位置へのアクセスを提供し、その位置を調整します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
- テキスト マーカーを管理するためのメソッドを提供します。  
+ テキストマーカーを管理するためのメソッドを提供します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- コールバックを提供します、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE およびテキスト マーカーの調整に使用されるその他のプロセス。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキストマーカーの調整に使用される IDE およびその他のプロセスへのコールバックを提供します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- 使用可能な機能を拡張して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>追加コールバックを提供することでインターフェイス。  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>追加のコールバックを提供することによって、インターフェイスを通じて使用できる機能を拡張します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- 使用可能な機能を拡張して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>追加コールバックを提供することでインターフェイス。  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>追加のコールバックを提供することによって、インターフェイスを通じて使用できる機能を拡張します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
- その他のマーカーの種類が同じ色のセットを共有するかどうかを判断するマーカーの種類を有効にします。  
+ マーカーの種類を有効にして、他のマーカーの種類が同じ色のセットを共有するかどうかを判断します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- テキスト マーカーのコア エディターのコンテキストを提供します。 コア エディター内にあるテキスト マーカー種類ごとに、IDE によって作成個別<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>オブジェクト。  
+ コアエディターのテキストマーカーのコンテキストを提供します。 コアエディターに含まれるテキストマーカーの種類ごとに、IDE によって別のオブジェクトが作成され <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> ます。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- マーカー グリフを含むドラッグ アンド ドロップの編集はサポートされているハンドラー。 グリフは、マーカーの位置を示すアイコンです。  
+ ドラッグアンドドロップ編集をサポートするグリフを持つマーカーに対して提供されるハンドラー。 グリフは、マーカーの位置を示すアイコンです。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- 返します、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>インターフェイスから他の Vspackage にマーカーをテキストを提供するサービスです。  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>他の vspackage にテキストマーカーを提供する、サービスからのインターフェイスを返します。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- アクセスを提供し、1 次元の座標を使用してテキスト バッファー内のテキスト マーカーの位置を調整します。 可能である場合、このインターフェイスを使用することはしません。
+ 1次元座標を使用して、テキストバッファー内のテキストマーカーの位置へのアクセスを提供し、その位置を調整します。 可能な場合は、このインターフェイスを使用しないでください。

@@ -1,5 +1,5 @@
 ---
-title: Idialoadcallback 2::restrictoriginalpathaccess |Microsoft Docs
+title: 'IDiaLoadCallback2:: RestrictOriginalPathAccess |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 970a188b5d72353dbb3ccf64fd74f3354f1ba888
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151951"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-元のデバッグ ディレクトリに .pdb ファイルを検索する問題であるかを決定します。  
+元のデバッグディレクトリで .pdb ファイルを検索することができているかどうかを判断します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -32,10 +32,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- すべてのコード以外のリターン`S_OK`元のデバッグ ディレクトリに .pdb ファイルを検索できないようにします。 元のデバッグ ディレクトリは、デバッグがオンにすると、実行可能ファイルにコンパイル シンボル ファイルへのパスです。 このパスが必ずしも同じ実行可能ファイルが存在するパスです。  
+## <a name="remarks"></a>注釈  
+ 以外のリターンコードでは、 `S_OK` 元のデバッグディレクトリで .pdb ファイルを検索できません。 元のデバッグディレクトリは、デバッグを有効にしたときに実行可能ファイルにコンパイルされたシンボルファイルへのパスです。 このパスは、必ずしも実行可能ファイルが存在するパスと同じではありません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

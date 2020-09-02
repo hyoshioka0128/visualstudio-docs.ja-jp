@@ -14,20 +14,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 051bde61132d286c3941a12c2e970aa2019fc0b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160472"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定します、かどうかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。  
+[**新しい項目の追加**] ダイアログボックスで [**マスターページの選択**] チェックボックスがオンになっているかどうかを指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<SupportsMasterPage >  
+ \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,20 +48,20 @@ ms.locfileid: "68160472"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類し、定義でどのように表示するデータを指定します、**新しいプロジェクト**または**新しい項目の** ダイアログ ボックス。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類するデータを指定し、[ **新しいプロジェクト** ] または [ **新しい項目** ] ダイアログボックスでの表示方法を定義します。|  
   
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**マスター ページの選択**のチェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。  
+ テキストは、[ `true` `false` **新しい項目の追加**] ダイアログボックスで [**マスターページの選択**] チェックボックスがオンになっているかどうかを示す、またはのいずれかである必要があります。  
   
-## <a name="remarks"></a>Remarks  
- `SupportsMasterPage` は、省略可能な要素です。 既定値は `false` です。  
+## <a name="remarks"></a>注釈  
+ `SupportsMasterPage` は省略可能な要素です。 既定値は `false` です。  
   
- `SupportsMasterPage`要素は、Web 項目テンプレートの使用のみ。  
+ `SupportsMasterPage`要素は、Web 項目テンプレートでのみ使用できます。  
   
 ## <a name="example"></a>例  
- 次の例では、マスター ページのサポートが含まれる Web プロジェクトのメタデータを示します。  
+ 次の例は、マスターページのサポートを含む Web プロジェクトのメタデータを示しています。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -85,6 +85,6 @@ ms.locfileid: "68160472"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

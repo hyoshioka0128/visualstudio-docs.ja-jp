@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537632"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>方法: プログラムによってブックを保護する
@@ -29,7 +29,7 @@ ms.locfileid: "85537632"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ブックを保護しても、ユーザーがセルを編集できなくなることはありません。 データを保護するには、ワークシートを保護する必要があります。 詳細については、「[方法: ワークシートをプログラムによって保護する](../vsto/how-to-programmatically-protect-worksheets.md)」を参照してください。
+ ブックを保護しても、ユーザーがセルを編集できなくなることはありません。 データを保護するには、ワークシートを保護する必要があります。 詳細については、「 [方法: ワークシートをプログラムによって保護する](../vsto/how-to-programmatically-protect-worksheets.md)」を参照してください。
 
  次のコード例では、変数を使用して、ユーザーから取得したパスワードを格納します。
 

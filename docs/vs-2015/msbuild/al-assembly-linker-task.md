@@ -1,4 +1,4 @@
-﻿---
+---
 title: AL (アセンブリ リンカー) タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85fb11429822d49d1a86697d9480f3a8ab0759de
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684690"
 ---
 # <a name="al-assembly-linker-task"></a>AL (アセンブリ リンカー) タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に配布されるツールである AL.exe をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 AL.exe について詳しくは、「[Al.exe (アセンブリ リンカー)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)」をご覧ください。  
+AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に配布されるツールである AL.exe をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 AL.exe の詳細については、「 [Al.exe (アセンブリリンカー)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)」を参照してください。  
   
 ## <a name="parameters"></a>パラメーター  
  `AL` タスクのパラメーターの説明を次の表に示します。  
@@ -71,8 +71,8 @@ AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に
 |`Win32Icon`|省略可能な `String` 型のパラメーターです。<br /><br /> .ico ファイルをアセンブリに挿入します。 この .ico ファイルは、エクスプローラーにおける出力ファイルの視覚的な表現を提供します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)」の `/win32icon` オプションに対応します。|  
 |`Win32Resource`|省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース (.res ファイル) を出力ファイルに挿入します。 詳しくは、「[Al.exe (アセンブリ リンカー)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)」で `/win32res` オプションのドキュメントをご覧ください。|  
   
-## <a name="remarks"></a>解説  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
+## <a name="remarks"></a>Remarks  
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.ToolTask> クラスから継承されます。 これらの追加パラメーターとその説明の一覧については、「 [Tooltaskextension Base Class](../msbuild/tooltaskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次の例では、指定したオプションでアセンブリを作成します。  
@@ -94,6 +94,6 @@ AL タスクは、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] と共に
 </AL>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

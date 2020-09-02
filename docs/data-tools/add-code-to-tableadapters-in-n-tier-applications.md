@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283100"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
-Tableadapter の部分クラスファイルを作成し、そのファイルにコードを追加することにより、TableAdapter の機能を拡張できます (コードを*DatasetName*ファイルに追加するのではなく)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](/dotnet/visual-basic/language-reference/modifiers/partial)または[partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)」を参照してください。
+Tableadapter の部分クラスファイルを作成し、そのファイルにコードを追加することにより、TableAdapter の機能を拡張できます (コードを *DatasetName* ファイルに追加するのではなく)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](/dotnet/visual-basic/language-reference/modifiers/partial) または [partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)」を参照してください。
 
 TableAdapter を定義するコードは、データセット内の TableAdapter に変更が加えられるたびに生成されます。 このコードは、TableAdapter の構成を変更するウィザードの実行中に変更が行われた場合にも生成されます。 TableAdapter の再生成時にコードが削除されないようにするには、TableAdapter の部分クラスファイルにコードを追加します。
 
-既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む*DatasetName* (または*DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト**" プロパティで指定されているプロジェクトには、データセットコードを含む*DatasetName* (または*DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。
+既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む *DatasetName* (または *DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト** " プロパティで指定されているプロジェクトには、データセットコードを含む *DatasetName* (または *DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。
 
 > [!NOTE]
 > **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存の部分データセットクラスは、データセットプロジェクトに手動で移動する必要があります。
@@ -42,7 +42,7 @@ TableAdapter を定義するコードは、データセット内の TableAdapter
 
 2. *.Xsd*ファイルをダブルクリックして、**データセットデザイナー**を開きます。
 
-3. コードを追加する TableAdapter を右クリックし、[**コードの表示**] を選択します。
+3. コードを追加する TableAdapter を右クリックし、[ **コードの表示**] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 

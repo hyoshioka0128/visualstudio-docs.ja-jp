@@ -14,20 +14,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199802"
 ---
 # <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールでは、サンプリング、インストルメンテーション、コンカレンシーという 3 種類のパフォーマンス データ収集方法をサポートしています。 また、.NET メモリ割り当てと有効期間データの収集には、サンプリングまたはインストルメンテーションの方式を使用できます。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールでは、サンプリング、インストルメンテーション、同時実行という 3 種類のパフォーマンス データ収集方法をサポートしています。 また、.NET メモリ割り当てと有効期間データの収集には、サンプリングまたはインストルメンテーションの方式を使用できます。  
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   パフォーマンス セッションの **[メソッド]** プロパティを使用すると、アプリケーションに最適の収集方法を指定できます。 収集方法はパフォーマンス ウィザード、パフォーマンス エクスプローラー、またはパフォーマンス セッションのプロパティ ページから設定することができます。 コマンド ライン ツールを使用する場合、詳細については「[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)」を参照してください。  
   
@@ -96,7 +96,7 @@ ms.locfileid: "68199802"
   
 3. **[コンカレンシー]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
- [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
+ [サンプリングデータ値について](../profiling/understanding-sampling-data-values.md)   
+ [パフォーマンスセッションのプロパティ](../profiling/performance-session-properties.md)

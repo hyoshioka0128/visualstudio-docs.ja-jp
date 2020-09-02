@@ -1,5 +1,5 @@
 ---
-title: ASP.NET および AJAX アプリケーションのデバッグ |Microsoft Docs
+title: ASP.NET と AJAX アプリケーションのデバッグ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686744"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ
@@ -46,13 +46,13 @@ ms.locfileid: "65686744"
  [デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] の例外のデバッグ時に "マイ コードのみ" を有効にする必要がある理由について説明します。  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Ajax アプリケーションのデバッグとトレースの概要](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  AJAX コードをデバッグするのに役立つ方法とツールについて説明します。  
   
  [IntelliTrace](../debugger/intellitrace.md)  
  アプリケーションの状態の履歴を記録してレビューする IntelliTrace を使用することで、アプリケーションの頻繁な再起動がなくなり、コードのデバッグ時間を短縮します。 アプリケーションの実行中に発生するイベントや呼び出しに関する情報を確認し、それらのポイントに合わせてデバッグを開始することができます。 Visual Studio Ultimate が必要です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Web アプリケーションとスクリプトのデバッグ](../debugger/debugging-web-applications-and-script.md)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   

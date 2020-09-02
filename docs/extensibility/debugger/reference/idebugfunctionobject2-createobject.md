@@ -1,5 +1,5 @@
 ---
-title: オブジェクト 2::オブジェクトの作成 |マイクロソフトドキュメント
+title: 'IDebugFunctionObject2:: CreateObject |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728482"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
@@ -50,28 +50,28 @@ int CreateObject (
 
 ## <a name="parameters"></a>パラメーター
 `pConstructor`\
-[in]作成[する](../../../extensibility/debugger/reference/idebugfunctionobject.md)オブジェクトのコンストラクターを表すオブジェクト。
+から作成されるオブジェクトのコンストラクターを表す [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) オブジェクト。
 
 `dwArgs`\
-[in]配列内のパラメーターの`pArg`数。 コンストラクターに渡されるパラメーターの数を表します。
+から配列内のパラメーターの数 `pArg` 。 コンストラクターに渡されるパラメーターの数を表します。
 
 `pArgs`\
-[in]コンストラクターに渡されるパラメーターを表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトの配列。
+からコンストラクターに渡されたパラメーターを表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトの配列。
 
 `dwEvalFlags`\
-[in]評価の実行方法を指定する[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体のフラグの組み合わせ。
+から評価を実行する方法を指定する、 [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙のフラグの組み合わせ。
 
 `dwTimeout`\
-[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 **無限**に待機するには INFINITE を使用します。
+からこのメソッドから戻る前に待機する最大時間 (ミリ秒単位)。 無期限に待機するには、 **無制限** を使用します。
 
 `ppObject`\
-[アウト]新しく作成されたオブジェクトを表す**IDebugObject**を返します。
+入出力新しく作成されたオブジェクトを表す **IDebugObject** を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- クラスのインスタンスを表すオブジェクト、またはコンストラクターを必要とするその他の複合型を表すオブジェクトを作成します。
+## <a name="remarks"></a>解説
+ このメソッドを呼び出して、クラスのインスタンス、またはコンストラクターを必要とする他の複合型 (パラメーター) を表すオブジェクトを作成します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

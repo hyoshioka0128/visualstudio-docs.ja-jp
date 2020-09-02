@@ -299,10 +299,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 05937cef7187726134a7116edae4d74ee004de1d
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219752"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
@@ -385,10 +385,10 @@ ms.locfileid: "89219752"
 | CA1304 | [CA1304:CultureInfo を指定します](../code-quality/ca1304.md) | System.Globalization.CultureInfo パラメーターを受け入れるオーバーロードを持つメンバーを呼び出しているメソッドまたはコンストラクターが、CultureInfo パラメーターを使用するオーバーロードを呼び出していません。 CultureInfo オブジェクトまたは System.IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。 |
 | CA1305 | [CA1305:IFormatProvider を指定します](../code-quality/ca1305.md) | System.IFormatProvider パラメーターを受け入れるオーバーロードを持つメンバーを 1 つ以上呼び出しているメソッドまたはコンストラクターが、IFormatProvider パラメーターを使用するオーバーロードを呼び出していません。 System.Globalization.CultureInfo オブジェクトまたは IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。 |
 | CA1306 | [CA1306:データ型のロケールを設定します](../code-quality/ca1306.md) | ロケールによって、データに関するカルチャ固有の表示要素が決まります。たとえば、数値、通貨記号、並べ替え順序に使用する形式などです。 DataTable または DataSet を作成するときは、ロケールを明示的に設定する必要があります。 |
-| CA1307 | [CA1307: 明確にするための StringComparison の指定](../code-quality/ca1307.md) | 文字列比較演算で、StringComparison パラメーターを設定しないメソッド オーバーロードが使用されています。 |
+| CA1307 | [CA1307:意味を明確にするための StringComparison の指定](../code-quality/ca1307.md) | 文字列比較演算で、StringComparison パラメーターを設定しないメソッド オーバーロードが使用されています。 |
 | CA1308 |[CA1308:文字列を大文字に標準化します](../code-quality/ca1308.md) | 文字列は大文字に正規化する必要があります。 小文字への変換時に 1 つの小さい文字グループをラウンド トリップさせることができません。 |
 | CA1309 | [CA1309:順序を示す StringComparison を使用します](../code-quality/ca1309.md) | 非言語的な文字列比較演算で、StringComparison パラメーターが Ordinal または OrdinalIgnoreCase に設定されていません。 パラメーターを StringComparison.Ordinal または StringComparison.OrdinalIgnoreCase に明示的に設定することによって、多くの場合、コードの速度、正確さ、および信頼性が向上します。 |
-| CA1310 | [CA1310: 正確な StringComparison を指定します](../code-quality/ca1310.md) | 文字列比較操作では、StringComparison パラメーターを設定せず、カルチャ固有の文字列比較を既定で使用するメソッドオーバーロードを使用します。 |
+| CA1310 | [CA1310:正確な StringComparison の指定](../code-quality/ca1310.md) | 文字列比較操作では、StringComparison パラメーターを設定せず、カルチャ固有の文字列比較を既定で使用するメソッドオーバーロードを使用します。 |
 | CA1400 | [CA1400: P/Invoke エントリポイントが存在する必要があります](../code-quality/ca1400.md) |パブリック メソッドまたはプロテクト メソッドが System.Runtime.InteropServices.DllImportAttribute 属性を使用してマークされています。 アンマネージ ライブラリの位置を特定できないか、メソッドがライブラリ内の関数と一致しません。 |
 | CA1401 | [CA1401: P/Invoke を表示できません](../code-quality/ca1401.md) | パブリック型のパブリック メソッドまたはプロテクト メソッドに、System.Runtime.InteropServices.DllImportAttribute 属性があります ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では Declare キーワードでも実装されます)。 このようなメソッドは公開しないでください。 |
 | CA1402 |[CA1402:COM 参照可能インターフェイスでのオーバーロードを避けてください](../code-quality/ca1402.md) | オーバーロードされたメソッドが COM クライアントに公開されると、最初のメソッド オーバーロードだけが名前を保持します。 後続のオーバーロードは、名前にアンダースコア文字 (_) およびオーバーロードの宣言の順序に対応する整数が付加され、一意の名前に変更されます。 |
@@ -444,7 +444,7 @@ ms.locfileid: "89219752"
 | CA1801 | [CA1801:使用されていないパラメーターの確認](../code-quality/ca1801.md) | メソッドのシグネチャに、メソッドの本体で使用されていないパラメーターがあります。 |
 | CA1802 |[CA1802:適切な場所にリテラルを使用します](../code-quality/ca1802.md) |フィールドが static および read-only ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では Shared および ReadOnly) として宣言され、コンパイル時に計算できる値によって初期化されています。 コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、宣言を const (const in) フィールドに変更して、実行時で [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] はなくコンパイル時に値が計算されるようにします。 |
 | CA1804 | [CA1804:使用されていないローカルを削除します](../code-quality/ca1804.md) | 使用されていないローカル変数や不要な引数があると、アセンブリのサイズが大きくなり、パフォーマンスが低下します。 |
-| CA1805 | [CA1805: 不必要に初期化しないでください](../code-quality/ca1805.md) | .NET ランタイムは、コンストラクターを実行する前に、参照型のすべてのフィールドを既定値に初期化します。 ほとんどの場合、フィールドを既定値に明示的に初期化することは冗長であり、メンテナンスコストがかかり、パフォーマンスが低下する可能性があります (アセンブリサイズの増加など)。 |
+| CA1805 | [CA1805:不必要に初期化しない](../code-quality/ca1805.md) | .NET ランタイムは、コンストラクターを実行する前に、参照型のすべてのフィールドを既定値に初期化します。 ほとんどの場合、フィールドを既定値に明示的に初期化することは冗長であり、メンテナンスコストがかかり、パフォーマンスが低下する可能性があります (アセンブリサイズの増加など)。 |
 | CA1806 | [CA1806:メソッドの結果を無視しない](../code-quality/ca1806.md) | 新しく作成されたオブジェクトが現在まで使用されていないか、新しい文字列を作成して返すメソッドが呼び出されて作成された新しい文字列が現在まで使用されていません。あるいは、COM または P/Invoke メソッドから返された HRESULT またはエラー コードが現在まで使用されていません。 |
 | CA1809 |[CA1809:ローカルを使用しすぎないでください](../code-quality/ca1809.md) | パフォーマンス最適化の一般的な方法として、メモリではなくプロセッサのレジスタに値を格納する方法があります。これは "値のレジスタ格納" と呼ばれます。 すべてのローカル変数をレジスタ格納できるようにするには、ローカル変数の数を 64 個に制限します。 |
 | CA1810 | [CA1810:参照型の静的フィールドをインラインで初期化します](../code-quality/ca1810.md) | 型で明示的な静的コンストラクターを宣言すると、Just-In-Time (JIT) コンパイラが、静的コンストラクターが呼び出されたことを確認するために、型の静的メソッドと静的インスタンス コンストラクターに個別にチェックを追加します。 静的コンストラクターのチェックによってパフォーマンスが低下することがあります。 |
@@ -483,7 +483,7 @@ ms.locfileid: "89219752"
 | CA2004 | [CA2004:GC.KeepAlive への呼び出しを削除します](../code-quality/ca2004.md) | SafeHandle の使用に変更する場合、すべての GC.KeepAlive (object) の呼び出しを削除します。 この場合、クラスに GC.KeepAlive の呼び出しを含めることはできません。 クラスはファイナライザーを持っていない代わりに、SafeHandle を使用して OS ハンドルを終了していることが前提となっています。 |
 | CA2006 | [CA2006:SafeHandle を使用して、ネイティブ リソースを要約します](../code-quality/ca2006.md) | マネージド コードで IntPtr を使用すると、セキュリティ上の問題および信頼性の問題が発生する可能性があります。 すべての IntPtr の使用状況をレビューして、SafeHandle または類似のテクノロジに置き換える必要があるかどうかを判断してください。 |
 | CA2007 | [CA2007:タスクを直接待機しないでください](ca2007.md) | 非同期メソッドは[awaits](/dotnet/csharp/language-reference/keywords/await) 、を <xref:System.Threading.Tasks.Task> 直接待機します。 非同期メソッドがを直接待機する場合 <xref:System.Threading.Tasks.Task> 、継続はタスクを作成したのと同じスレッドで発生します。 この動作は、パフォーマンスに関してはコストが高く、UI スレッドでデッドロックが発生する可能性があります。 を呼び出して <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> 、継続の意図を知らせることを検討してください。 |
-| CA2008 | [CA2008: TaskScheduler を渡さずにタスクを作成することはできません](ca2008.md) | タスクの作成または継続操作で、パラメーターを指定しないメソッドオーバーロードが使用さ <xref:System.Threading.Tasks.TaskScheduler> れています。 |
+| CA2008 | [CA2008:TaskScheduler を渡さずにタスクを作成しない](ca2008.md) | タスクの作成または継続操作で、パラメーターを指定しないメソッドオーバーロードが使用さ <xref:System.Threading.Tasks.TaskScheduler> れています。 |
 | CA2009 | [CA2009: ImmutableCollection 値で ToImmutableCollection を呼び出さないでください](ca2009.md) | `ToImmutable` メソッドは、名前空間から変更できないコレクションで不必要に呼び出されました <xref:System.Collections.Immutable> 。 |
 | CA2011 | [CA2011: セッター内でプロパティを割り当てません](ca2011.md) | プロパティに、独自の [set アクセサー](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor)内で誤って値が割り当てられました。 |
 | CA2012 | [CA2012: ValueTask を正しく使用する必要があります](ca2012.md) | メンバーの呼び出しから返される ValueTasks は、直接待機することを意図しています。  ValueTask を複数回使用しようとするか、完了する前に1つの結果に直接アクセスすると、例外または破損が発生する可能性があります。  このような ValueTask を無視すると、機能的なバグが示され、パフォーマンスが低下する可能性があります。 |

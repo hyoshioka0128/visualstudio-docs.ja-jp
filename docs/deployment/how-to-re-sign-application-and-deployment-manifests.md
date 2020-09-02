@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382199"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストおよび配置マニフェストに再署名する
@@ -31,7 +31,7 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
  マニフェストに再署名できるもう1つのシナリオは、顧客が独自の証明書を使用してアプリケーションマニフェストと配置マニフェストに署名する場合です。
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>アプリケーション マニフェストと配置マニフェストへの再署名
- この手順では、既にアプリケーションマニフェストファイル (*.manifest*) に変更を加えていることを前提としています。 詳細については、「[方法: 配置プロパティを変更する](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)」を参照してください。
+ この手順では、既にアプリケーションマニフェストファイル (*.manifest*) に変更を加えていることを前提としています。 詳細については、「 [方法: 配置プロパティを変更する](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)」を参照してください。
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してアプリケーションマニフェストと配置マニフェストに再署名するには
 
@@ -39,7 +39,7 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
 
 2. 署名するマニフェストファイルが格納されているフォルダーにディレクトリを変更します。
 
-3. 次のコマンドを入力して、アプリケーションマニフェストファイルに署名します。 *Manifestfilename*は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス*に置き換え、* *password*を証明書のパスワードに置き換えます。
+3. 次のコマンドを入力して、アプリケーションマニフェストファイルに署名します。 *Manifestfilename*は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス *に置き換え、* *password* を証明書のパスワードに置き換えます。
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -78,9 +78,9 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
 
 2. 署名するマニフェストファイルが格納されているフォルダーにディレクトリを変更します。
 
-3. 発行出力フォルダー内のファイルから *.deploy*ファイル拡張子を削除します。
+3. 発行出力フォルダー内のファイルから *.deploy* ファイル拡張子を削除します。
 
-4. 次のコマンドを入力して、更新されたファイルの新しいハッシュでアプリケーションマニフェストを更新し、アプリケーションマニフェストファイルに署名します。 *Manifestfilename*は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス*に置き換え、* *password*を証明書のパスワードに置き換えます。
+4. 次のコマンドを入力して、更新されたファイルの新しいハッシュでアプリケーションマニフェストを更新し、アプリケーションマニフェストファイルに署名します。 *Manifestfilename*は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス *に置き換え、* *password* を証明書のパスワードに置き換えます。
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password

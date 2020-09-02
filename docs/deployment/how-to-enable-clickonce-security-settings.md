@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382433"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>方法: ClickOnce のセキュリティ設定を有効にする
@@ -41,7 +41,7 @@ ms.locfileid: "85382433"
      [セキュリティ] ページで、アプリケーションのセキュリティ設定をカスタマイズできるようになりました。
 
     > [!NOTE]
-    > このチェックボックスは、**発行**ウィザードを使用してアプリケーションを発行するたびに自動的に選択されます。
+    > このチェックボックスは、 **発行** ウィザードを使用してアプリケーションを発行するたびに自動的に選択されます。
 
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を無効にするには
 
@@ -49,9 +49,9 @@ ms.locfileid: "85382433"
 
 2. **[セキュリティ]** タブをクリックします。
 
-3. [ **ClickOnce セキュリティ設定を有効にする**] チェックボックスをオフにします。
+3. [ **ClickOnce セキュリティ設定を有効にする** ] チェックボックスをオフにします。
 
-     アプリケーションは、完全な信頼セキュリティ設定を使用して実行されます。[**セキュリティ**] ページの設定はすべて無視されます。
+     アプリケーションは、完全な信頼セキュリティ設定を使用して実行されます。[ **セキュリティ** ] ページの設定はすべて無視されます。
 
     > [!NOTE]
     > アプリケーションが発行ウィザードを使用して発行されるたびに、このチェックボックスがオンになります。発行が成功するたびに、もう一度オフにする必要があります。

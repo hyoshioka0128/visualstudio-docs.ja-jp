@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238817"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル : オプション ボタンを使用してワークシートのグラフを更新する方法
@@ -135,28 +135,28 @@ ms.locfileid: "88238817"
    | プロパティ | 値 |
    |----------|------------------|
    | **名前** | **columnChart** |
-   | **[テキスト]** | **Column Chart** |
+   | **Text** | **縦棒グラフ** |
 
 3. 2番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|---------------|
    | **名前** | **barChart** |
-   | **[テキスト]** | **横棒グラフ** |
+   | **Text** | **横棒グラフ** |
 
 4. 3番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|----------------|
    | **名前** | **lineChart** |
-   | **[テキスト]** | **折れ線グラフ** |
+   | **Text** | **折れ線グラフ** |
 
 5. 4番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**areaBlockChart**|
-   |**[テキスト]**|**Area Block Chart**|
+   |**Text**|**Area Block Chart**|
 
    次に、オプションボタンがクリックされたときにグラフを更新するコードを記述します。
 

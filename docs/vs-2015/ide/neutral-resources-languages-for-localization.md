@@ -1,4 +1,4 @@
-﻿---
+---
 title: ローカリゼーションのニュートラル リソース言語 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85e0be0172f27732f8efeb882cbcde5b9c6aef3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670386"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>ローカリゼーションのニュートラル リソース言語
@@ -41,5 +41,5 @@ ms.locfileid: "72670386"
 [assembly: NeutralResourcesLanguageAttribute("en")]
 ```
 
-## <a name="see-also"></a>関連項目
- アプリケーション[のローカライズ](../ide/localizing-applications.md)[のためのリソースの階層構造](../ide/hierarchical-organization-of-resources-for-localization.md) [.NET Framework に基づく国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)<xref:System.Resources.ResourceManager> アプリケーションのローカライズ[とローカライズ](../ide/globalizing-and-localizing-applications.md)を行う
+## <a name="see-also"></a>参照
+ <xref:System.Resources.ResourceManager>[.NET Framework 階層に基づく国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)[ローカリゼーション](../ide/hierarchical-organization-of-resources-for-localization.md)[アプリケーション](../ide/localizing-applications.md)のローカライズとローカライズアプリケーションのローカライズ[とローカライズ](../ide/globalizing-and-localizing-applications.md)

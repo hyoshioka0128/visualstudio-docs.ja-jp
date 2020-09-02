@@ -28,6 +28,7 @@ ms.locfileid: "78263079"
 `UsingTask` `TaskFactory` によって生成されるタスクで使用される省略可能なパラメーターのリストが格納されます。 詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
  \<Project> \<UsingTask> \<ParameterGroup>
+ \<ParameterGroup>
 
 ## <a name="syntax"></a>構文
 

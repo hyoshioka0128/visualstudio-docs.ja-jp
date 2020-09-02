@@ -119,7 +119,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-の種類は、 `this.Host` テンプレートが実行されているホストの種類によって異なります。 Visual Studio で実行されているテンプレートでは、にキャストし `this.Host` `IServiceProvider` て、IDE などのサービスにアクセスできます。 次に例を示します。
+の種類は、 `this.Host` テンプレートが実行されているホストの種類によって異なります。 Visual Studio で実行されているテンプレートでは、にキャストし `this.Host` `IServiceProvider` て、IDE などのサービスにアクセスできます。 たとえば、次のように入力します。
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

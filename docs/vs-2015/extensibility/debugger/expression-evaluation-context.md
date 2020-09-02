@@ -1,5 +1,5 @@
 ---
-title: 式の評価コンテキスト |Microsoft Docs
+title: 式の評価のコンテキスト |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,25 +11,25 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 377609cb9f971b667872c198a53b45a6288f2c15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152780"
 ---
 # <a name="expression-evaluation-context"></a>式の評価のコンテキスト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、デバッグ、**式の評価コンテキスト**:  
+デバッグでは [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、 **式の評価コンテキスト**:  
   
-- 式の評価のコンテキストを表します。 一般に、評価コンテキストは、変数、パラメーター、関数、およびメソッドを評価する構文のスコープに対応します。 たとえば、スタック フレームに関連付けられている式の評価コンテキスト (該当する) 場合は、ローカル変数、メソッド パラメーター、およびクラス メンバーを評価するため、コンテキストが提供されます。  
+- 式の評価のコンテキストを表します。 一般に、評価コンテキストは、変数、パラメーター、関数、およびメソッドを評価する構文のスコープに対応します。 たとえば、スタックフレームに関連付けられている式の評価コンテキストでは、ローカル変数、メソッドパラメーター、およびクラスメンバー (該当する場合) を評価するためのコンテキストが提供されます。  
   
-- プログラムがブレークポイントで停止したときに存在します。 式自体は、バインドと、指定されたコンテキストで評価の準備が整った解析された式を表すデータ構造です。  
+- プログラムがブレークポイントで停止したときに存在します。 式自体は、指定されたコンテキスト内でバインドおよび評価できるように準備された解析済みの式を表すデータ構造体です。  
   
-     詳細については、式を使用して作成、 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッド。 式を評価するときに、変数または引数とその値の型と名前を格納している印刷可能な文字列を生成します。 この文字列は、[ウォッチ] ウィンドウまたは IDE の [ローカル] ウィンドウに表示されます。  
+     詳細については、 [Parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) メソッドを使用して式を作成します。 式が評価されると、変数または引数の名前と型、およびその値を含む印刷可能な文字列が生成されます。 この文字列は、ウォッチウィンドウまたは IDE の [ローカル] ウィンドウに表示されます。  
   
-     指定された、`BSTR`と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス、デバッグ エンジン (DE) を作成できます、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)式を解析してインターフェイス。 指定された、`IDebugExpression2`インターフェイス、DE は同期または非同期の式の評価での値を取得できます。 変数または引数の型と名前と共に、この値は、表示するため、IDE に送信されます。  
+     `BSTR`と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイスが指定されている場合、デバッグエンジン (DE) は、式を解析することによって[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを作成できます。 インターフェイスが指定され `IDebugExpression2` ている場合、DE は、同期または非同期の式の評価によって値を取得できます。 この値は、変数または引数の名前および型と共に IDE に送信され、表示されます。  
   
-## <a name="see-also"></a>関連項目  
- [式の評価のインターフェイス](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [式の評価インターフェイス](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)
