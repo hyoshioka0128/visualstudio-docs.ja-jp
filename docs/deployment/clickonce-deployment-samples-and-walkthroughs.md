@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900387"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 配置のサンプルとチュートリアル
@@ -33,10 +33,10 @@ ms.locfileid: "62900387"
 
 |トピック|説明|
 |-----------|-----------------|
-|[ClickOnce アプリケーションを手動でデプロイします。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework ユーティリティを使用して ClickOnce アプリケーションを配置する方法を説明します。|
-|[ClickOnce 配置 API で必要に応じてアセンブリをダウンロードします。](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|アプリケーション内の特定のアセンブリに "オプション" マークを付ける方法、および <xref:System.Deployment.Application> 名前空間にあるクラスを使用して、それらのアセンブリをダウンロードする方法について説明します。|
-|[ClickOnce 配置デザイナーを使用して API で必要に応じてアセンブリをダウンロードします。](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|アプリケーションで初めて使用するときにのみアプリケーション アセンブリをダウンロードする方法を説明します。|
+|[ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework ユーティリティを使用して ClickOnce アプリケーションを配置する方法を説明します。|
+|[ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|アプリケーション内の特定のアセンブリに "オプション" マークを付ける方法、および <xref:System.Deployment.Application> 名前空間にあるクラスを使用して、それらのアセンブリをダウンロードする方法について説明します。|
+|[デザイナーを使用して、ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|アプリケーションで初めて使用するときにのみアプリケーション アセンブリをダウンロードする方法を説明します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio のチュートリアル](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)

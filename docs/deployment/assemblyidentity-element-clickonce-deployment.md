@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt;要素 (ClickOnce 配置) |Microsoft Docs'
+title: '&lt;assemblyIdentity &gt; 要素 (ClickOnce 配置) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929068"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt;要素 (ClickOnce 配置)
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションのプライマリ アセンブリを識別します。
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity &gt; 要素 (ClickOnce 配置)
+アプリケーションのプライマリアセンブリを識別し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -40,20 +40,20 @@ ms.locfileid: "62929068"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `assemblyIdentity`要素が必要です。 これは、子要素を含まず、かつ、次の属性を持ちます。 
+ `assemblyIdentity` 要素は必須です。 子要素は含まれず、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`name`|必須。 情報提供を目的として、人間が判読できる配置の名前を指定します。<br /><br /> `name`に、一重引用符または二重引用符のような特殊文字が含まれている場合、アプリケーションはアクティブ化に失敗することがあります。|
-|`version`|必須。 アセンブリのバージョン番号を次の形式で指定します:`major.minor.build.revision`.<br /><br /> この値は、アプリケーションの更新をトリガーするマニフェストが更新されるたび、増加する必要があります。|
-|`publicKeyToken`|必須。 配置マニフェストに署名する公開キーの sha-1 ハッシュ値の最後の 8 バイトを表す 16 文字の 16 進文字列を指定します。 署名に使用する公開キーは 2048 ビット以上である必要があります。<br /><br /> アセンブリの署名は推奨されていますが、任意であり、署名するかに関わらずこの属性は必要です。 アセンブリが署名付きでない場合は、自己署名されたアセンブリから値をコピーするか、すべてがゼロ値である「ダミー」を使用する必要があります。|
-|`processorArchitecture`|必須。 プロセッサを指定します。 有効な値は`msil`すべてのプロセッサに対して`x86`32 ビットの Windows の`IA64`の 64 ビットの Windows と`Itanium`Intel 64 ビット Itanium プロセッサ用です。|
-|`type`|必須。 Windows サイド バイ サイド インストール テクノロジとの互換性を維持します。 許可されている値は`win32`だけです。 唯一の許容値は`win32`します。|
+|`name`|必須です。 情報提供を目的として、ユーザーが判読できる配置名を識別します。<br /><br /> に `name` 1 つまたは二重引用符などの特殊文字が含まれている場合、アプリケーションのアクティブ化に失敗する可能性があります。|
+|`version`|必須です。 次の形式でアセンブリのバージョン番号を指定します `major.minor.build.revision` 。<br /><br /> アプリケーションの更新をトリガーするには、この値を更新されたマニフェストでインクリメントする必要があります。|
+|`publicKeyToken`|必須です。 配置マニフェストの署名に使用される公開キーの SHA-1 ハッシュ値の最後の8バイトを表す16文字の16進数文字列を指定します。 署名に使用する公開キーは、2048ビット以上である必要があります。<br /><br /> アセンブリに署名することをお勧めしますが、省略可能ですが、この属性は必須です。 アセンブリが署名されていない場合は、自己署名アセンブリから値をコピーするか、すべてゼロの "ダミー" 値を使用する必要があります。|
+|`processorArchitecture`|必須です。 プロセッサを指定します。 有効な値は、 `msil` 32 ビット windows の場合はすべてのプロセッサ、64ビット windows の場合は、 `x86` `IA64` `Itanium` Intel 64 ビット Itanium プロセッサの場合はです。|
+|`type`|必須です。 Windows サイドバイサイドインストールテクノロジとの互換性を確保します。 使用できる値はのみ `win32` です。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 ## <a name="example"></a>例
- 次のコード例を示しています、`assemblyIdentity`内の要素を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]配置マニフェスト。 このコード例が示されている例の一部、 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)トピック。
+ 次のコード例は、 `assemblyIdentity` 配置マニフェストの要素を示してい [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 このコード例は、「 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md) 」で提供されている、より大きな例の一部です。
 
 ```xml
 <!-- Identify the deployment. -->
@@ -66,6 +66,6 @@ ms.locfileid: "62929068"
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity > 要素](../deployment/assemblyidentity-element-clickonce-application.md)
+- [\<assemblyIdentity> element](../deployment/assemblyidentity-element-clickonce-application.md)

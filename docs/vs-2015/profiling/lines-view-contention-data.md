@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583159"
 ---
 # <a name="lines-view---contention-data"></a>行ビュー - 競合データ
@@ -53,7 +53,7 @@ ms.locfileid: "62583159"
 |**包括ブロック時間 %**|プロセス内のすべてのブロック時間に対する、ステートメントの包括ブロック時間の割合。|  
 |**包括競合**|このステートメント、およびこのステートメント内で呼び出された関数で、実行をブロックされた回数。|  
 |**包括競合 %**|プロセス内のすべての競合イベントに対する、このステートメントの包括競合の割合。|  
-|**ソース/行番号**|プロファイラーによって生成された行の識別子。 識別子は次の構文を使用します:`SourceFile`**; [**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|  
+|**ソース/行番号**|プロファイラーによって生成された行の識別子。 識別子は次の構文を使用します:`SourceFile` **; [** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|  
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|  
 |**モジュール名**|ステートメントを含むモジュールの名前です。|  
 |**モジュール パス**|ステートメントを含むモジュールのパスです。|  
@@ -65,8 +65,8 @@ ms.locfileid: "62583159"
 |**ソース開始行**|ステートメントが開始されるソース ファイル内の行番号。|  
 |**ソース終了行**|ステートメントが終了するソース ファイル内の行番号。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
+## <a name="see-also"></a>参照  
+ [方法: レポートビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [行ビュー](../profiling/lines-view.md)   
- [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)   
+ [行ビュー-サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [行 ビュー](../profiling/lines-view-sampling-data.md)

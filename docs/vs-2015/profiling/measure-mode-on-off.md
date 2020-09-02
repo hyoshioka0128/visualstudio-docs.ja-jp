@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92db719f8af2688dc70ddb5ac253c17095302766
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563273"
 ---
 # <a name="measure-mode-onoff"></a>測定モード オン/オフ
@@ -27,7 +27,7 @@ ms.locfileid: "62563273"
   
  測定プロセスは繰り返せますが、表示されるのは最新のものだけです。 測定ボタンをもう一度クリックし、測定モードをオフにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チャネルの管理](../profiling/manage-channels.md)   
- [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)   
+ [ズームコントロール (スレッドビュー)](../profiling/zoom-control-threads-view.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

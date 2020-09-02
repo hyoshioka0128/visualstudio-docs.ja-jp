@@ -1,5 +1,5 @@
 ---
-title: SharePoint プロジェクト システムの拡張機能におけるデータの保存 |Microsoft Docs
+title: SharePoint プロジェクトシステムの拡張機能におけるデータの保存 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62827246"
 ---
-# <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクト システムの拡張機能でデータを保存します。
-  SharePoint プロジェクト システムを拡張するときは、SharePoint プロジェクトを閉じた後に保持される文字列データを保存できます。 データは、通常、またはプロジェクト自体と特定のプロジェクト項目と関連付けられています。
+# <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクトシステムの拡張機能にデータを保存する
+  SharePoint プロジェクトシステムを拡張すると、SharePoint プロジェクトを閉じた後も保持される文字列データを保存できます。 データは、通常、特定のプロジェクトアイテムまたはプロジェクト自体に関連付けられています。
 
- 実装する SharePoint ツールのオブジェクト モデル内のオブジェクトにデータを追加するには永続化する必要のないデータがあれば、<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>インターフェイス。 詳細については、次を参照してください。[ツールの拡張機能を SharePoint でカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)します。
+ 保持する必要のないデータがある場合は、インターフェイスを実装する SharePoint ツールオブジェクトモデル内の任意のオブジェクトにデータを追加でき <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> ます。 詳細については、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
 
-## <a name="save-data-that-is-associated-with-a-project-item"></a>プロジェクト項目に関連付けられているデータを保存します。
- データを保存するには、プロジェクト項目に追加するプロパティの値など、特定の SharePoint プロジェクト アイテムに関連付けられているデータがある場合、 *.spdata*プロジェクト項目のファイル。 これを行うには、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>オブジェクト。 このプロパティを追加するデータの保存、 **ExtensionData**内の要素、 *.spdata*プロジェクト項目のファイル。 詳細については、次を参照してください。 [ExtensionData 要素](../sharepoint/extensiondata-element.md)します。
+## <a name="save-data-that-is-associated-with-a-project-item"></a>プロジェクト項目に関連付けられているデータを保存する
+ 特定の SharePoint プロジェクト項目に関連付けられているデータ (プロジェクト項目に追加するプロパティの値など) がある場合は、そのデータをプロジェクト項目の *sharepointprojectitem.spdata* ファイルに保存できます。 これを行うには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> オブジェクトのプロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> ます。 このプロパティに追加したデータは、プロジェクト項目の*sharepointprojectitem.spdata*ファイルの**extensiondata**要素に保存されます。 詳細については、「 [Extensiondata 要素](../sharepoint/extensiondata-element.md)」を参照してください。
 
- 次のコード例は、使用する方法を示します、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>プロパティをカスタム SharePoint プロジェクト項目の種類で定義されている文字列プロパティの値を保存します。 例のコンテキストでは、この例を確認するには、次を参照してください。[方法。カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)します。
+ 次のコード例は、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> て、カスタム SharePoint プロジェクト項目の種類で定義されている文字列プロパティの値を保存する方法を示しています。 大きな例のコンテキストでこの例を確認するには、「 [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
 
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]
 
-## <a name="save-data-that-is-associated-with-a-project"></a>プロジェクトに関連付けられているデータを保存します。
- プロジェクト ファイルにデータを保存するには、SharePoint プロジェクトに追加するプロパティの値など、プロジェクト レベルのデータがある場合 (、 *.csproj*ファイルまたは *.vbproj*ファイル) またはプロジェクト ユーザー オプションファイル (、 *. csproj.user*ファイルまたは *. vbproj.user*ファイル)。 内のデータを保存するファイルは、データを使用する方法によって異なります。
+## <a name="save-data-that-is-associated-with-a-project"></a>プロジェクトに関連付けられているデータを保存する
+ SharePoint プロジェクトに追加するプロパティの値などのプロジェクトレベルのデータがある場合は、プロジェクトファイル ( *.csproj* ファイルまたは *.vbproj* ファイル) またはプロジェクトユーザーオプションファイル ( *.csproj* ファイルまたは *.vbproj* ファイル) にデータを保存することができます。このような場合は、 データの保存先として選択するファイルは、データの使用方法によって異なります。
 
-- SharePoint プロジェクトを開くすべての開発者が利用できるデータを表示する場合は、プロジェクト ファイルにデータを保存します。 このファイルが、このファイル内のデータは、プロジェクトをチェック アウトしたその他の開発者が利用できるようにも、常に、ソース管理データベースにチェックインします。
+- SharePoint プロジェクトを開いているすべての開発者がデータを使用できるようにするには、データをプロジェクトファイルに保存します。 このファイルは常にソース管理データベースにチェックインされるので、このファイル内のデータは、プロジェクトをチェックアウトする他の開発者が使用できます。
 
-- SharePoint プロジェクトを Visual Studio で開いている現在の開発者にのみ使用できるデータを表示する場合は、プロジェクト ユーザー オプション ファイルにデータを保存します。 このファイルは通常チェックインされない、ソース管理データベースにこのファイル内のデータをプロジェクトをチェック アウトするその他の開発者にご利用いただけませんので。
+- Visual Studio で SharePoint プロジェクトを開いている現在の開発者のみがデータを使用できるようにするには、データを project ユーザーオプションファイルに保存します。 通常、このファイルはソース管理データベースにチェックインされないため、このファイル内のデータは、プロジェクトをチェックアウトする他の開発者が使用することはできません。
 
-### <a name="save-data-to-the-project-file"></a>プロジェクト ファイルにデータを保存します。
- プロジェクト ファイルにデータを保存する変換、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>オブジェクトを<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>オブジェクトし、を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>メソッド。 次のコード例では、このメソッドを使用して、プロジェクト プロパティの値をプロジェクト ファイルに保存する方法を示します。 大規模なサンプルのコンテキストでは、この例を確認するには、次を参照してください。[方法。SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)します。
+### <a name="save-data-to-the-project-file"></a>データをプロジェクトファイルに保存する
+ データをプロジェクトファイルに保存するには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> オブジェクトをオブジェクトに変換 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> してから、メソッドを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> ます。 次のコード例は、このメソッドを使用してプロジェクトプロパティの値をプロジェクトファイルに保存する方法を示しています。 大規模なサンプルのコンテキストでこの例を確認するには、「 [方法: SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)する」を参照してください。
 
  [!code-vb[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#3)]
  [!code-csharp[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#3)]
 
- 変換の詳細については<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>Visual Studio オートメーション オブジェクト モデルまたは統合オブジェクト モデルでは、他の型にオブジェクトを参照してください[SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間の変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>Visual studio オートメーションオブジェクトモデルまたは統合オブジェクトモデルでオブジェクトを他の型に変換する方法の詳細については、「 [SharePoint プロジェクトシステムの種類とその他の visual studio プロジェクトの種類の間での変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)」を参照してください。
 
-### <a name="save-data-to-the-project-user-option-file"></a>プロジェクト ユーザー オプション ファイルにデータを保存します。
- プロジェクト ユーザー オプション ファイルにデータを保存するには、使用、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>オブジェクト。 次のコード例では、このプロパティを使用して、プロジェクト ユーザー オプション ファイルをプロジェクト プロパティの値を保存する方法を示します。 大規模なサンプルのコンテキストでは、この例を確認するには、次を参照してください。[方法。SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)します。
+### <a name="save-data-to-the-project-user-option-file"></a>プロジェクトユーザーオプションファイルにデータを保存する
+ プロジェクトユーザーオプションファイルにデータを保存するには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> オブジェクトのプロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> ます。 次のコード例では、このプロパティを使用してプロジェクトのプロパティの値をプロジェクトのユーザーオプションファイルに保存する方法を示します。 大規模なサンプルのコンテキストでこの例を確認するには、「 [方法: SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)する」を参照してください。
 
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>関連項目
-- [SharePoint プロジェクト システムを拡張します。](../sharepoint/extending-the-sharepoint-project-system.md)
-- [SharePoint ツール拡張機能とカスタム データを関連付ける](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
-- [SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間の変換します。](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
+- [カスタムデータと SharePoint ツールの拡張機能の関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
+- [SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

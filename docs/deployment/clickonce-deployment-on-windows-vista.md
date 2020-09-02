@@ -18,40 +18,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900503"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista の ClickOnce 配置
 
-Visual Studio でアプリケーションの構築 Windows Vista でユーザー アカウント制御 (UAC) は、通常、埋め込みマニフェストを生成するは、アプリケーションの実行可能ファイルに XML データをバイナリとしてにエンコードされます。  ClickOnce および Registration-free COM アプリケーションでは、Visual Studio は、埋め込みのマニフェストではなく、UAC のデータを格納しているこれらのプロジェクト ファイルを生成するために、外部のマニフェストが必要です。 Visual Studio の ClickOnce および Registration-free COM の展開という名前のファイルから情報を使用して*app.manifest*外部 UAC マニフェスト情報を生成します。 以外の場合は、Visual Studio には、アプリケーションの実行可能ファイルで、UAC のデータが埋め込まれます。
+Windows Vista のユーザーアカウント制御 (UAC) 用に Visual Studio でアプリケーションをビルドすると、通常、アプリケーションの実行可能ファイルにバイナリ XML データとしてエンコードされた埋め込みマニフェストが生成されます。  ClickOnce および登録を必要としない COM アプリケーションには外部マニフェストが必要であるため、Visual Studio では、埋め込みマニフェストではなく、UAC データを含むこれらのプロジェクト用のファイルが生成されます。 ClickOnce および登録を使用しない COM 配置の場合、Visual Studio では、 *app.xaml* という名前のファイルの情報を使用して、外部の UAC マニフェスト情報が生成されます。 それ以外の場合は、Visual Studio によって、UAC データがアプリケーションの実行可能ファイルに埋め込まれます。
 
-Visual Studio では、マニフェスト生成のため、次のオプションを提供します。
+Visual Studio には、マニフェスト生成のための次のオプションが用意されています。
 
-- 埋め込みマニフェストを使用します。 アプリケーションの実行可能ファイルに UAC のデータを埋め込むし、通常のユーザーとして実行します。
+- 埋め込みマニフェストを使用します。 UAC データをアプリケーションの実行可能ファイルに埋め込み、通常のユーザーとして実行します。
 
-   これは、(ClickOnce を使用する) 場合を除き、既定の設定です。 この設定は、Windows Vista で Visual Studio が動作する通常の方法をサポートしている、内部と外部の両方の世代でマニフェストを使用して`AsInvoker`します。
+   これは既定の設定です (ClickOnce を使用している場合を除く)。 この設定は、Visual Studio が Windows Vista で動作する通常の方法をサポートしています。また、を使用して内部マニフェストと外部マニフェストの両方を生成し `AsInvoker` ます。
 
-- 外部のマニフェストを使用します。 使用して、外部のマニフェストを生成*app.manifest*します。
+- 外部マニフェストを使用します。 *アプリケーションマニフェスト*を使用して外部マニフェストを生成します。
 
-   これで情報を使用して外部マニフェストだけが生成されます*app.manifest*します。 ClickOnce または Registration-free COM を使用してアプリケーションを発行するときに Visual Studio によって追加*app.manifest*をプロジェクトにし、このオプションを追加します。
+   これにより、 *アプリケーションマニフェスト*の情報を使用して、外部マニフェストのみが生成されます。 ClickOnce または登録を必要としない COM を使用してアプリケーションを発行すると、Visual Studio によってプロジェクトに *app.xaml* が追加され、このオプションが追加されます。
 
-- マニフェストを使用できません。 マニフェストを含まないアプリケーションを作成します。
+- マニフェストを使用しません。 マニフェストを使用せずにアプリケーションを作成します。
 
-   このアプローチとも呼ばれます*virtualization*します。 Visual Studio の以前のバージョンからの既存のアプリケーションとの互換性のためには、このオプションを使用します。
+   この方法は、 *仮想化*とも呼ばれます。 以前のバージョンの Visual Studio の既存のアプリケーションとの互換性を確保するには、このオプションを使用します。
 
-  新しいプロパティは、**アプリケーション**(Visual c# プロジェクトのみ) 用のプロジェクト デザイナーのページと、MSBuild プロジェクト ファイル形式でします。
+  新しいプロパティは、プロジェクトデザイナーの [ **アプリケーション** ] ページ (Visual C# プロジェクトの場合のみ) と MSBuild プロジェクトファイル形式で使用できます。
 
-  Visual Studio IDE で UAC マニフェスト生成を構成するためのメソッドは、プロジェクトの種類 (Visual c# または Visual Basic) によって異なります。
+  Visual Studio IDE で UAC マニフェストの生成を構成する方法は、プロジェクトの種類 (Visual C# または Visual Basic) によって異なります。
 
-  * マニフェストの生成を Visual c# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)します。
+  * マニフェスト生成のための Visual C# プロジェクトの構成の詳細については、「 [[アプリケーション] ページ (プロジェクトデザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)」を参照してください。
 
-  * マニフェストの生成を Visual Basic プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)します。
+  * マニフェスト生成のための Visual Basic プロジェクトの構成の詳細については、「 [[アプリケーション] ページ (プロジェクトデザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
-- [ユーザー アクセス許可と Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
+- [ユーザーアクセス許可と Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
 - [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md)

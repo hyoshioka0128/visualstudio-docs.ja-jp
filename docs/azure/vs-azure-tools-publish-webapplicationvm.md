@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572286"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell スクリプト)
@@ -33,81 +33,81 @@ Publish-WebApplicationVM
 ### <a name="configuration"></a>構成
 デプロイの詳細が記述されている JSON 構成ファイルへのパス。
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |true |
-| 位置 |named |
-| 既定値 |none |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| 必須 |true |
+| [位置] |指定 |
+| 既定値 |なし |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 仮想マシンを作成する Azure サブスクリプションの名前。
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |False |
-| 位置 |named |
+| 必須 |false |
+| [位置] |指定 |
 | 既定値 |サブスクリプション ファイルで最初のサブスクリプションを使用する |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-仮想マシンに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 「[方法:Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」を参照してください。
+仮想マシンに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [方法: Visual Studio で Web デプロイ パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」をご覧ください。
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |False |
-| 位置 |named |
-| 既定値 |none |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| 必須 |false |
+| [位置] |指定 |
+| 既定値 |なし |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 True の場合は、信頼されたルート証明機関によって署名されていない証明書の使用が許可されます。
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |False |
-| 位置 |named |
-| 既定値 |False |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| 必須 |false |
+| [位置] |指定 |
+| 既定値 |false |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
 ### <a name="vmpassword"></a>VMPassword
 仮想マシンアカウントの資格情報。 例: -VMPassword @{Name = "admin"; Password = "password"}
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |False |
-| 位置 |named |
-| 既定値 |none |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| 必須 |false |
+| [位置] |指定 |
+| 既定値 |なし |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Azure での SQL Database の資格情報。 例: -DatabaseServerPassword @{Name = "admin"; Password = "password"}
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |False |
-| 位置 |named |
-| 既定値 |none |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| 必須 |false |
+| [位置] |指定 |
+| 既定値 |なし |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 true の場合、スクリプトからのメッセージは出力ストリームに出力されます。
 
-| Aliases | none |
+| エイリアス | なし |
 | --- | --- |
-| 必須? |False |
-| 位置 |named |
-| 既定値 |False |
-| パイプライン入力を許可する |False |
-| ワイルドカード文字を許可する |False |
+| 必須 |false |
+| [位置] |指定 |
+| 既定値 |false |
+| パイプライン入力の受け入れ |false |
+| ワイルドカード文字の受け入れ |false |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 これには、仮想マシンの名前、アフィニティ グループ、VHD イメージ、およびサイズなど、プロジェクトを作成したときに指定した情報が含まれています。 また、仮想マシン上のエンドポイント、プロビジョニングするデータベース (該当する場合)、Web デプロイメント パラメーターも含まれています。 次のコードは JSON 構成ファイルの例を示しています。
