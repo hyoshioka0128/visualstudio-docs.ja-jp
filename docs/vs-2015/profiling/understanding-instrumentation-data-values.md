@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145473"
 ---
 # <a name="understanding-instrumentation-data-values"></a>インストルメンテーション データ値について
@@ -26,7 +26,7 @@ ms.locfileid: "68145473"
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   インストルメンテーション メソッドは、プロファイリングされたバイナリの、その関数から他の関数に対する各呼び出しの前後の対象の関数の開始時と終了時にコードを挿入します。 挿入されたコードは次のものを記録します。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "68145473"
   
   **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   各間隔について、プロファイラー解析は間隔の最後に存在していた呼び出し履歴を再構築します。 呼び出し履歴とは、ある時点でプロセッサ上でアクティブになっている関数のリストです。 1 つの関数 (現在の関数) だけがコードを実行しており、それ以外の関数は、現在の関数の呼び出しに至る一連の関数呼び出し (呼び出し履歴) です。  
   
@@ -98,6 +98,6 @@ ms.locfileid: "68145473"
   
  100 * 関数アプリケーション排他 / セッション アプリケーション包括  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス ツール データを分析する](../profiling/analyzing-performance-tools-data.md)   
+## <a name="see-also"></a>参照  
+ [パフォーマンスツールデータの分析](../profiling/analyzing-performance-tools-data.md)   
  [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)

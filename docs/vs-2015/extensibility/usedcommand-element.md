@@ -1,5 +1,5 @@
 ---
-title: UsedCommand 要素 |Microsoft Docs
+title: Used Command 要素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186367"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-他の .vsct ファイルで定義されているコマンドにアクセスするために VSPackage を使用できます。 例では、VSPackage は、標準を使用している場合、**コピー**コマンドで定義されている、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]シェルは、コマンドを追加するメニューまたはツールバー再実装せずします。  
+VSPackage が別の vsct ファイルで定義されているコマンドにアクセスできるようにします。 たとえば、VSPackage がシェルによって定義されている標準の **コピー** コマンドを使用する場合、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コマンドを再実装せずにメニューまたはツールバーに追加できます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,9 +36,9 @@ ms.locfileid: "68186367"
   
 |属性|説明|  
 |---------------|-----------------|  
-|guid|必須。 コマンドを識別する GUID ID のペアの GUID です。|  
-|id|必須。 コマンドを識別する GUID ID のペアの ID。|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|guid|必須です。 コマンドを識別する GUID ID ペアの GUID。|  
+|id|必須です。 コマンドを識別する GUID ID ペアの ID。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
@@ -50,10 +50,10 @@ ms.locfileid: "68186367"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[UsedCommands 要素](../extensibility/usedcommands-element.md)|UsedCommand 要素をグループ化し、他の UsedCommands グループ化します。|  
+|[UsedCommands 要素](../extensibility/usedcommands-element.md)|グループ化されたコマンド要素とその他の実行コマンドグループ。|  
   
-## <a name="remarks"></a>Remarks  
- コマンドを追加することによって、`<UsedCommands>`要素、VSPackage の通知、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境、VSPackage にコマンドが必要です。 追加する必要があります、`<UsedCommand>`パッケージが必要とする任意のコマンドの要素がすべてのバージョンと Visual Studio の構成に含まれません。 など、パッケージが Visual C に固有のコマンドを呼び出す場合のコマンドは、するには Visual Web Developer のユーザーが使用できる含める、`<UsedCommand>`コマンドの要素。  
+## <a name="remarks"></a>注釈  
+ VSPackage は、要素にコマンドを追加することにより、 `<UsedCommands>` [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSPackage がコマンドを必要とすることを環境に通知します。 `<UsedCommand>`パッケージが必要とするすべてのバージョンおよび構成に含まれていない可能性があるすべてのコマンドに対して、要素を追加する必要があります。 たとえば、パッケージが Visual C++ に固有のコマンドを呼び出すと、コマンドに要素を含めない限り、Visual Web Developer のユーザーはこのコマンドを使用できません `<UsedCommand>` 。  
   
 ## <a name="example"></a>例  
   
@@ -65,6 +65,6 @@ ms.locfileid: "68186367"
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [UsedCommands 要素](../extensibility/usedcommands-element.md)   
+## <a name="see-also"></a>参照  
+ [Used Commands 要素](../extensibility/usedcommands-element.md)   
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

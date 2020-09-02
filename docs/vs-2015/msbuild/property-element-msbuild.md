@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158274"
 ---
 # <a name="property-element-msbuild"></a>Property 要素 (MSBuild)
@@ -30,7 +30,7 @@ ms.locfileid: "68158274"
 ユーザー定義のプロパティ名と値を格納します。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトで使用されるすべてのプロパティは、`PropertyGroup` 要素の子として指定する必要があります。  
   
  \<Project>  
- \<PropertyGroup >  
+ \<PropertyGroup>  
   
 ## <a name="syntax"></a>構文  
   
@@ -63,8 +63,8 @@ ms.locfileid: "68158274"
   
  このテキストはプロパティ値を指定します。これに XML を含めることができます。  
   
-## <a name="remarks"></a>解説  
- プロパティ名に使用できるのは ASCII 文字のみに制限されます。 プロパティ値は、"`$(`" と "`)`" の間にプロパティ名を入れることでプロジェクト内で参照されます。 たとえば、`builddir` プロパティの値が `build` の場合、`$(builddir)\classes` は "build\classes" に解決されます。 プロパティの詳細については、「[MSBuild プロパティ](msbuild-properties1.md)」を参照してください。  
+## <a name="remarks"></a>注釈  
+ プロパティ名に使用できるのは ASCII 文字のみに制限されます。 プロパティ値は、"`$(`" と "`)`" の間にプロパティ名を入れることでプロジェクト内で参照されます。 たとえば、`builddir` プロパティの値が `build` の場合、`$(builddir)\classes` は "build\classes" に解決されます。 プロパティの詳細については、「 [MSBuild のプロパティ](msbuild-properties1.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のコードは、`Optimization` プロパティを `false` に設定します。さらに、`Version` プロパティが空の場合は `DefaultVersion` プロパティを `1.0` に設定します。  
@@ -76,6 +76,6 @@ ms.locfileid: "68158274"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 [MSBuild プロパティ](msbuild-properties1.md)  
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185937"
 ---
 # <a name="how-to-compare-performance-data-files"></a>方法: パフォーマンス データ ファイルを比較する
@@ -34,7 +34,7 @@ ms.locfileid: "68185937"
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>パフォーマンス エクスプローラーで、プロジェクトの比較ファイル ビューを作成するには  
   
-1. **パフォーマンス エクスプローラー**の **[レポート]** で、比較の初期値として使用する .vsp または .vsps レポート ファイルを選択します。  
+1. **パフォーマンスエクスプローラー**の [**レポート**] で、比較の基準値として使用する .vsp または .vsps レポートファイルを選択します。  
   
 2. 比較する .vsp または .vsps レポート ファイルを選択します。  
   
@@ -56,6 +56,6 @@ ms.locfileid: "68185937"
   
 1. **[分析]** メニューで **[パフォーマンス レポートの比較]** を選択します。  
   
-2. **[比較のための分析ファイルの選択]** ウィンドウで、 **[ベースライン ファイル]** 分析ファイル (.vsp または .vsps) と **[比較ファイル]** (.vsp or .vsps) を探して選択します。  
+2. **[比較用の分析ファイルの選択**] ウィンドウで、**ベースラインファイル**の分析ファイル (.vsp または .Vsps) と**比較ファイル**(.vsp または .vsps) を参照して選択します。  
   
 3. **[OK]** をクリックします。

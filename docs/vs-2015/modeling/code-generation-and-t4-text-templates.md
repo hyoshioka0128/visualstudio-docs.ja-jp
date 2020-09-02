@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667918"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>コード生成と T4 テキスト テンプレート
@@ -44,7 +44,7 @@ ms.locfileid: "72667918"
 
  また、テンプレートにはプログラム コードのフラグメントも含まれます。 これらのフラグメントを使用して、テキストのセクションの繰り返し、条件付きセクションの作成、アプリケーションのデータの表示を行うことができます。
 
- 出力を生成するには、テンプレートによって生成される関数をアプリケーションで呼び出します。 (例:
+ 出力を生成するには、テンプレートによって生成される関数をアプリケーションで呼び出します。 次に例を示します。
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -98,21 +98,21 @@ namespace Fabrikam.FirstJob
  テキスト テンプレート変換機能は、 *T4*と名付けられています。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)テキストファイルを生成するアプリケーションでは、プリコンパイルされたテキストテンプレートは、テキストを定義するための簡単で信頼性の高い方法です。 ただし、この方法では、実行時にテキスト テンプレートを変更することができません。
+ [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md) テキストファイルを生成するアプリケーションでは、プリコンパイルされたテキストテンプレートは、テキストを定義するための簡単で信頼性の高い方法です。 ただし、この方法では、実行時にテキスト テンプレートを変更することができません。
 
- [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)モデルからコードやその他のリソースを生成すると、モデルを更新することによってアプリケーションを更新できます。
+ [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) モデルからコードやその他のリソースを生成すると、モデルを更新することによってアプリケーションを更新できます。
 
- [ビルドプロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)@No__t_1 の視覚化とモデリング SDK がインストールされている場合は、生成されたソフトウェアをモデルの変更に合わせて最新の状態に保つことができます。
+ [ビルドプロセスでのコード生成](../modeling/code-generation-in-a-build-process.md) 視覚化およびモデリング SDK がインストールされている場合は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成されたソフトウェアをモデルの変更に合わせて最新の状態に保つことができます。
 
- [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)テキストテンプレートファイルの構文。
+ [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md) テキストテンプレートファイルの構文。
 
- [チュートリアル: テキストテンプレートを使用したコードの生成](../modeling/walkthrough-generating-code-by-using-text-templates.md)コード生成を使用する1つの方法のデモ。
+ [チュートリアル: テキストテンプレートを使用したコードの生成](../modeling/walkthrough-generating-code-by-using-text-templates.md) コード生成を使用する1つの方法のデモ。
 
- [T4 テキストテンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)テキストテンプレートのデバッグ方法および一般的なテキストテンプレートエラー。
+ [T4 テキストテンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md) テキストテンプレートのデバッグ方法および一般的なテキストテンプレートエラー。
 
- [TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)テキストテンプレート変換を実行するために使用できるコマンドラインツール。
+ [TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md) テキストテンプレート変換を実行するために使用できるコマンドラインツール。
 
- [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)独自のデータソースのディレクティブプロセッサとカスタムテンプレートホストを作成する方法。
+ [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md) 独自のデータソースのディレクティブプロセッサとカスタムテンプレートホストを作成する方法。
 
 ## <a name="see-also"></a>参照
  [ドメイン固有言語からコードを生成](../modeling/generating-code-from-a-domain-specific-language.md)[する UML モデルからファイルを生成する](../modeling/generate-files-from-a-uml-model.md)
