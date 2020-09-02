@@ -14,18 +14,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dbe65cc38bd14d859507d795ce32657f53ca8b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184310"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-CommandPlacements 要素には、CommandPlacement 要素とその他の CommandPlacements グループがグループ化します。  
+Commandplacements 要素は、Commandplacements 要素とその他のコマンド配置グループをグループ化します。  
   
- CommandPlacements 要素は省略可能です。 コマンド、グループ、またはメニューする必要がありますが含まれていない場合、2 次拠点で、.vsct ファイルにこのセクションを含めることはありません。  
+ CommandPlacements 要素は省略可能です。 コマンド、グループ、またはメニューが2次拠点に含まれていない場合は、このセクションを vsct ファイルに含める必要はありません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,14 +43,14 @@ CommandPlacements 要素には、CommandPlacement 要素とその他の CommandP
   
 |属性|説明|  
 |---------------|-----------------|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|CommandPlacements|CommandPlacement 要素をグループ化し、他の CommandPlacements グループ化します。|  
-|[CommandPlacement 要素](../extensibility/commandplacement-element.md)|1 つ以上のグループまたはメニューに含まれるには、ボタン、グループ、およびメニューを使用できます。|  
+|CommandPlacements|CommandPlacement 要素とその他のコマンド配置グループをグループ化します。|  
+|[CommandPlacement 要素](../extensibility/commandplacement-element.md)|ボタン、グループ、およびメニューを複数のグループまたはメニューに含めることができるようにします。|  
   
 ### <a name="parent-elements"></a>親要素  
   
@@ -69,6 +69,6 @@ CommandPlacements 要素には、CommandPlacement 要素とその他の CommandP
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [CommandPlacement 要素](../extensibility/commandplacement-element.md)   
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

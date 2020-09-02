@@ -1,5 +1,5 @@
 ---
-title: Microsoft Visual Studio デバッガー (例外がスローされます) ダイアログ ボックス |Microsoft Docs
+title: '[Microsoft Visual Studio デバッガー (例外がスローされました)] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9062b1f3811b0b2b596cfb7fa016bca00143f332
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66261066"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>[Microsoft Visual Studio デバッガー (例外がスローされました)] ダイアログ ボックス
@@ -33,10 +33,10 @@ ms.locfileid: "66261066"
 
 プログラムに例外が発生しました。 このダイアログ ボックスには、スローされた例外の種類が報告されます。 コードでは、この例外を処理する必要があります。 この例外を処理するには、次のオプションから選択できます。  
   
- **Break**  
+ **改**  
  デバッガーの実行を中断できます。 中断するまで、例外ハンドラーは起動されません。 中断した位置から継続すると、例外ハンドラーが起動されます。  
   
- **Continue**  
+ **続行**  
  実行が継続され、例外ハンドラーによって例外が処理されます。 このオプションは、特定の種類の例外に対しては使用できません。 **[継続]** によってアプリケーションは実行を継続できます。 ネイティブ アプリケーションでは、例外が再スローされます。 マネージド アプリケーションでは、プログラムが終了するか、または例外がホスト アプリケーションによって処理されます。  
   
 > [!NOTE]
@@ -45,7 +45,7 @@ ms.locfileid: "66261066"
  **無視**  
  実行が継続されますが、例外ハンドラーは起動されません。 例外ハンドラーが起動されないため、例外やエラーなどが続けて発生することがあります。 このオプションは、特定の種類の例外に対しては使用できません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)   
- [例外の推奨事項](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
+ [例外のベストプラクティス](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
  [例外処理](/cpp/extensions/exception-handling-cpp-component-extensions)

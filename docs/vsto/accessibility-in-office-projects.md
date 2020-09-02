@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189624"
 ---
 # <a name="accessibility-in-office-projects"></a>Office プロジェクトのユーザー補助機能
 
-Microsoft Visual Studio と Microsoft Office には、標準的なアクセシビリティ要件を満たすカスタムソリューションを構築するためのユーザー補助機能が多数含まれています。 Microsoft では、Web 上のアクセシビリティに関するガイドラインを公開しています。 詳細については、[アクセシビリティ web サイト](https://www.microsoft.com/accessibility/)を参照してください。
+Microsoft Visual Studio と Microsoft Office には、標準的なアクセシビリティ要件を満たすカスタムソリューションを構築するためのユーザー補助機能が多数含まれています。 Microsoft では、Web 上のアクセシビリティに関するガイドラインを公開しています。 詳細については、 [アクセシビリティ web サイト](https://www.microsoft.com/accessibility/)を参照してください。
 
 ほとんどの場合、Visual Studio の Office プロジェクトはアクセシビリティ標準を満たしているか、ソリューションにアクセスできるように設定できるプロパティを公開します。 ただし、アクセシビリティが制限されている機能がいくつかあります。
 
@@ -33,18 +33,18 @@ Microsoft Visual Studio と Microsoft Office には、標準的なアクセシ�
 ## <a name="accessibility-at-design-time"></a>デザイン時のアクセシビリティ
 
 ### <a name="use-shortcut-keys-in-document-level-projects"></a>ドキュメントレベルのプロジェクトでショートカットキーを使用する
- Visual Studio で Microsoft Office Word 文書または Microsoft Office Excel ブックが開いている場合、ショートカットキーコマンドを受け取るアプリケーションは一度に1つだけです。 既定では、Visual Studio はすべてのショートカットキーコマンドを受け取りますが、 **[オプション]** ダイアログボックスの **[キーボード設定]** ページで **[動的キーボードスキーム]** を選択して、ドキュメントにフォーカスがあるときに Word または Excel を受け取るようにすることができます。 詳細については、「Microsoft Office Word のキーボード」、「Microsoft Office キーボードの設定」、「[[オプション] ダイアログボックス](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)」、Microsoft Office および「[ [Microsoft Office キーボードの設定] ([オプション] ダイアログボックス](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md))」を参照してください。
+ Visual Studio で Microsoft Office Word 文書または Microsoft Office Excel ブックが開いている場合、ショートカットキーコマンドを受け取るアプリケーションは一度に1つだけです。 既定では、Visual Studio はすべてのショートカットキーコマンドを受け取りますが、[**オプション**] ダイアログボックスの [**キーボード設定**] ページで [**動的キーボードスキーム**] を選択して、ドキュメントにフォーカスがあるときに Word または Excel を受け取るようにすることができます。 詳細については、「Microsoft Office Word のキーボード」、「Microsoft Office キーボードの設定」、「[ [オプション] ダイアログボックス](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) 」、Microsoft Office および「[ [Microsoft Office キーボードの設定] ([オプション] ダイアログボックス](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md))」を参照してください。
 
 ### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>ドキュメントレベルのプロジェクトでリボンのショートカットキーを表示する
- Word 文書または Excel ブックが Visual Studio で開かれている場合は、 **Alt**キーを押して、リボン上のタブとコントロールのショートカットキーを表示することはできません。 デザイナーで文書またはブックを開いているときにショートカットキーを表示するには、次の手順を実行します。
+ Word 文書または Excel ブックが Visual Studio で開かれている場合は、 **Alt** キーを押して、リボン上のタブとコントロールのショートカットキーを表示することはできません。 デザイナーで文書またはブックを開いているときにショートカットキーを表示するには、次の手順を実行します。
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>デザイナーのリボンタブおよびコントロールのショートカットキーを表示するには
 
-1. Visual Studio で、 **[ツール]** メニューの **[オプション]** をクリックします。
+1. Visual Studio で、[ **ツール** ] メニューの [ **オプション**] をクリックします。
 
-2. **[Office ツール]** ノードを展開し、必要に応じて **[Microsoft Office Excel キーボード]** または **[Microsoft Office Word キーボード]** を選択します。
+2. [ **Office ツール** ] ノードを展開し、必要に応じて [ **Microsoft Office Excel キーボード** ] または [ **Microsoft Office Word キーボード**] を選択します。
 
-3. **[動的キーボードスキーム]** を選択します。
+3. [ **動的キーボードスキーム**] を選択します。
 
      変更を有効にするために Visual Studio を再起動する必要があることを示すメッセージが表示されます。
 
@@ -72,7 +72,7 @@ Microsoft Visual Studio と Microsoft Office には、標準的なアクセシ�
 ### <a name="actions-panes-and-custom-task-panes"></a>操作ウィンドウとカスタム作業ウィンドウ
  操作ウィンドウまたはカスタム作業ウィンドウにフォーカスがある場合は、Windows フォームアプリケーション上のコントロールにアクセスするのと同じ方法でコントロールにアクセスします。 操作ウィンドウとドキュメントの間でカーソルを移動するには、 **F6**キーを押します。
 
- 操作ウィンドウとカスタム作業ウィンドウの詳細については、「[操作ウィンドウの概要](../vsto/actions-pane-overview.md)」および「[カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」を参照してください。
+ 操作ウィンドウとカスタム作業ウィンドウの詳細については、「 [操作ウィンドウの概要](../vsto/actions-pane-overview.md) 」および「 [カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」を参照してください。
 
 ### <a name="display-modes"></a>表示モード
 
@@ -80,7 +80,7 @@ Visual Studio には、表示モードに関連する次の制限事項があり
 
 - Word 文書または Excel ワークシートのコントロールは、ドキュメントのズーム設定を100% 以外のものに変更すると無効になります。
 
-- ユーザーが**ハイコントラストを使用**するようにコンピューターのユーザー補助オプションを変更した場合、 **[新しいプロジェクト]** ダイアログボックスにコントロールが正しく表示されません。
+- ユーザーが**ハイコントラストを使用**するようにコンピューターのユーザー補助オプションを変更した場合、[**新しいプロジェクト**] ダイアログボックスにコントロールが正しく表示されません。
 
 拡大鏡を使用すると、これらの制限を克服できます。 拡大鏡は、ウィンドウの表示ユーティリティで、画面の拡大部分を表示するウィンドウを別に作成します。
 

@@ -11,37 +11,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82718a7ceb7a18f9978840f35ca0c5fce5628e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153666"
 ---
-# <a name="processes"></a>プロセス
+# <a name="processes"></a>処理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーのアーキテクチャの観点から、**プロセス**:  
+デバッガーのアーキテクチャに関しては、次のような **プロセス**があります。  
   
-- プログラムの一連のコンテナーです。 Windows プロセス、スレッドのセットのコンテナーであると密接に似ています。  
+- は、一連のプログラムのコンテナーです。 これは、スレッドのセットのコンテナーである Windows プロセスによく似ています。  
   
-- 名前、識別子、または物理的な識別子で自身を識別できます。  
+- 名前、識別子、または物理識別子を使用して識別できます。  
   
-- 実行中のすべてのプログラム (とそのスレッド) を列挙できます。  
+- 実行中のすべてのプログラム (およびそのスレッド) を列挙できます。  
   
-- 自体では、実行されているポートとそれを含んでいるマシンを記述できます。  
+- 自体、それが実行されているポート、およびそれを含むコンピューターを記述できます。  
   
-- 1 つを作成したり、他のプログラムの作成、プログラムを終了またはプログラムを停止します。  
+- 1つまたは複数のプログラムを作成したり、作成したプログラムを終了したり、プログラムを停止させたりすることができます。  
   
-- によって表される、 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)インターフェイスで、プロセスを起動するときに作成されます。 いずれかのセッション デバッグ マネージャー (SDM) プロセスの起動時または[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)します。  
+- は、プロセスの起動時に作成される [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) インターフェイスによって表されます。 プロセスは、セッションデバッグマネージャー (SDM) または [Launchsuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)のいずれかによって起動されます。  
   
-  パッケージのデバッグは呼び出すことによって、プロセスにデバッグ エンジン (DE) をアタッチすることができます[アタッチ](../../extensibility/debugger/reference/idebugprocess2-attach.md)します。 つまり、DE が処理できるプロセスで実行されているすべての可能なプログラムにアタッチします。 たとえば場合、DE、共通言語ランタイムは、プロセスにアタッチして、マネージ コードが実行されているプログラムのみにアタッチします。  
+  デバッグパッケージは、 [attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)を呼び出すことにより、デバッグエンジン (DE) をプロセスにアタッチできます。 これは、処理可能なプロセスで実行されているすべてのプログラムに、DE がアタッチされることを意味します。 たとえば、共通言語ランタイムがプロセスにアタッチされていない場合は、マネージコードを実行しているプログラムのみにアタッチされます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プログラム](../../extensibility/debugger/programs.md)   
- [スレッド](../../extensibility/debugger/threads.md)   
+ [レッド](../../extensibility/debugger/threads.md)   
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)   
- [パッケージをデバッグします。](../../extensibility/debugger/debug-package.md)   
- [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)   
+ [パッケージのデバッグ](../../extensibility/debugger/debug-package.md)   
+ [デバッグエンジン](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+ [[アタッチ]](../../extensibility/debugger/reference/idebugprocess2-attach.md)

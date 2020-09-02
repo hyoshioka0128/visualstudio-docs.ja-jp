@@ -11,16 +11,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4009ab6268140117c8fd1294adcc52ac347b799
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153713"
 ---
 # <a name="operational-modes"></a>操作モード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-これには、IDE できますが動作する、次のように 3 つのモードがあります。  
+IDE が動作できるモードには、次の3つがあります。  
   
 - [デザイン モード](#vsconoperationalmodesanchor1)  
   
@@ -28,33 +28,33 @@ ms.locfileid: "68153713"
   
 - [中断モード](#vsconoperationalmodesanchor3)  
   
-  移行方法を理解する必要がある実装の意思決定は、これらのモードの間で、カスタム デバッグ エンジン (DE) がどのように遷移します。 デは、これらのモードを直接実装しない場合があります。 これらのモードは、デバッグ パッケージ モードを切り替えるユーザーによる操作や、DE からのイベントに基づいてでは実際には。 たとえば、中断モードに実行モードからの移行が、DE から停止イベントによって依存します。 モードまたはモードの手順を実行するか中断からの移行は、ステップ実行などの操作を実行するユーザーに依存します。 DE 遷移の詳細については、次を参照してください。[実行の制御](../../extensibility/debugger/control-of-execution.md)します。  
+  これらのモード間でのカスタムデバッグエンジン (DE) の遷移方法は、移行メカニズムについて理解しておく必要がある実装上の決定です。 これらのモードは、DE によって直接実装される場合とない場合があります。 これらのモードは、ユーザーの操作または DE からのイベントに基づいて切り替える、実際にデバッグするパッケージモードです。 たとえば、実行モードから中断モードへの切り替えは、DE からの停止イベントによって指定されます。 中断から実行モードまたはステップモードへの移行は、ステップ実行や実行などの操作を実行するユーザーによって指定されます。 逆遷移の詳細については、「 [実行の制御](../../extensibility/debugger/control-of-execution.md)」を参照してください。  
   
-## <a name="vsconoperationalmodesanchor1"></a> デザイン モード  
- デザイン モードは、その間機能をアプリケーションでのデバッグを設定できますの Visual Studio のデバッグ、nonrunning 状態です。  
+## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a> デザインモード  
+ デザインモードは、Visual Studio のデバッグの実行されていない状態です。その間、アプリケーションでデバッグ機能を設定できます。  
   
- のみ、いくつかのデバッグ機能がデザイン モードのときに使用します。 開発者は、ブレークポイントを設定またはウォッチの式を作成できます。 デが読み込まれたまたは、IDE がデザイン モードと呼ばれるしないでください。 のみの実行と中断モード中に行われる、DE との対話します。  
+ デザインモードでは、いくつかのデバッグ機能しか使用されません。 開発者は、ブレークポイントを設定するか、ウォッチ式を作成することができます。 IDE がデザインモードの間は、DE が読み込まれたり呼び出されたりすることはありません。 実行モードと中断モードでの相互作用は、実行モードと中断モードでのみ行われます。  
   
-## <a name="vsconoperationalmodesanchor2"></a> 実行モード  
- 実行モードでは、プログラムは、IDE でのデバッグ セッションで実行するときに発生します。 アプリケーションは、ブレークポイントがヒットするまで、または例外がスローされるまで、連続コピーの終了まで実行されます。 ときに、アプリケーションは、デザイン モードに DE 遷移、終了時に実行されます。 ブレークポイントにヒットするか、例外がスローされます、DE は、中断モードに移行します。  
+## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a> 実行モード  
+ 実行モードは、IDE のデバッグセッションでプログラムが実行されたときに発生します。 アプリケーションは、終了するまで、ブレークポイントがヒットするまで、または例外がスローされるまで実行されます。 アプリケーションが終了すると、デザインモードに切り替えます。 ブレークポイントにヒットしたとき、または例外がスローされた場合、DE は中断モードに遷移します。  
   
-## <a name="vsconoperationalmodesanchor3"></a> 中断モード  
- 中断モードでは、デバッグ、プログラムの実行が中断されたときに発生します。 中断モード、中断時にアプリケーションのスナップショットを開発者に提供され、開発者、アプリケーションの状態を分析し、アプリケーションを実行する方法を変更します。 開発者できます表示しコードを編集、確認またはデータを変更、アプリケーションを再起動、実行を終了または同じポイントから実行を続行します。  
+## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a> 中断モード  
+ 中断モードは、デバッグプログラムの実行が中断されたときに発生します。 中断モードでは、開発者は中断時にアプリケーションのスナップショットを提供し、開発者はアプリケーションの状態を分析し、アプリケーションの実行方法を変更できます。 開発者は、コードの表示と編集、データの検査または変更、アプリケーションの再起動、実行の終了、または同じポイントからの実行の継続を行うことができます。  
   
- 中断モードは、DE、同期の停止イベントを送信するときに入力します。 同期の停止イベント、"stopping"のイベントとも呼ばれます。 セッション デバッグ マネージャー (SDM) に通知し、デバッグ中のアプリケーションにコードの実行が停止している IDE。 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)と[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)インターフェイスの停止イベントの例に示します。  
+ 中断モードは、DE が同期停止イベントを送信するときに入力されます。 同期停止イベントは、イベントの停止とも呼ばれ、セッションデバッグマネージャー (SDM) に通知し、デバッグ中のアプリケーションがコードの実行を停止したことを IDE に通知します。 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)インターフェイスと[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)インターフェイスは、イベントを停止する例です。  
   
- 停止イベントがデバッガーを中断モードまたはモードの手順を実行するからに移行するメソッドを次のいずれかを呼び出して継続します。  
+ 停止イベントは、次のいずれかのメソッドを呼び出すことで継続されます。これにより、デバッガーが中断モードから実行モードまたはステップモードに遷移します。  
   
-- [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+- [実行](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
 - [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   
-- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
+- [続行](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
   
-### <a name="vsconoperationalmodesanchor4"></a> ステップ モード  
- ステップ モードでは、プログラムのコード、またはに、または関数からは、次の行にステップするときに発生します。 メソッドを呼び出してステップが実行された[手順](../../extensibility/debugger/reference/idebugprocess3-step.md)します。 このメソッドが必要な`DWORD`を指定する、 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md)と[STEPKIND](../../extensibility/debugger/reference/stepkind.md)入力パラメーターとしての列挙体。  
+### <a name="step-mode"></a><a name="vsconoperationalmodesanchor4"></a> ステップモード  
+ ステップモードは、プログラムが次のコード行、または関数の内外にステップインするときに発生します。 ステップは、メソッドの [ステップ](../../extensibility/debugger/reference/idebugprocess3-step.md)を呼び出すことによって実行されます。 このメソッド `DWORD` には、入力パラメーターとして [stepunit](../../extensibility/debugger/reference/stepunit.md) および [stepunit](../../extensibility/debugger/reference/stepkind.md) 列挙体を指定するが必要です。  
   
- プログラムが正常にコードの場合、または関数の場合に、次の行にステップまたはブレークポイントの設定には、カーソルが実行されます、DE が自動的に中断モードに移行します。  
+ プログラムが次のコード行または関数にステップインした場合、またはカーソルまたは設定されたブレークポイントまで実行された場合、DE は自動的に中断モードに戻ります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [実行の制御](../../extensibility/debugger/control-of-execution.md)

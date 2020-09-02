@@ -1,5 +1,5 @@
 ---
-title: エラー :DCOM 通信を開始できません |。Microsoft Docs
+title: エラー :DCOM 通信を初期化できません | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fff1c56915fe4a06d66bdb08ce60219642933b1b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682532"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>エラー :DCOM 通信を初期化できません。
@@ -30,9 +30,9 @@ ms.locfileid: "65682532"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- リモート コンピューターの Windows ファイアウォールが有効にされている場合は、次を参照してください。[設定 Up the Remote Tools のデバイスで](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)ローカル デバッグのファイアウォールを構成する方法についてはします。  
+- リモートコンピューターで Windows ファイアウォールが有効になっている場合、ローカルデバッグ用にファイアウォールを構成する手順については、「 [デバイスでのリモートツールの設定](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 」を参照してください。  
   
 - Windows 認証を復元するために、両方のコンピューターを再起動してみます。 Kerberos エラーがないかどうかローカル コンピューターとリモート コンピューターのイベント ログを確認し、既知の問題がないかどうかドメイン管理者に問い合わせてください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Remote Debugging](../debugger/remote-debugging.md)
