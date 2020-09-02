@@ -1,4 +1,4 @@
-﻿---
+---
 title: Item 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192609"
 ---
 # <a name="item-element-msbuild"></a>Item 要素 (MSBuild)
@@ -72,10 +72,10 @@ ms.locfileid: "68192609"
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|アイテムの grouping 要素です。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  `Item` 要素はビルド システムへの入力を定義し、ユーザー定義のコレクション名に基づいてアイテム コレクションにグループ化されます。 これらのアイテム コレクションは、[タスク](../msbuild/msbuild-tasks.md)のパラメーターとして使用できます。タスクは、コレクション内の個々のアイテムを使用してビルド処理の各ステップを実行します。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。  
   
- `@(`*myType*`)` という表記を使用すると、*myType* 型のアイテムのコレクションをセミコロン区切りの文字列リストに展開して、パラメーターに渡すことができます。 パラメーターが `string` 型の場合は、パラメーターの値がセミコロンで区切られた要素のリストになります。 パラメーターが文字列の配列の場合 (`string[]`)、各要素はセミコロンの位置に基づいて配列に挿入されます。 タスク パラメーターが <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の場合、値は、アイテム コレクションの内容と、アタッチされているすべてのメタデータになります。 セミコロン以外の文字を使用して各アイテムを区切るには、`@(`*myType*`, '`*separator*`')` 構文を使用します。  
+ Notation myType を使用する `@(` *myType* `)` と、 *myType*型の項目のコレクションを、セミコロンで区切られた文字列のリストに展開し、パラメーターに渡すことができます。 パラメーターが `string` 型の場合は、パラメーターの値がセミコロンで区切られた要素のリストになります。 パラメーターが文字列の配列の場合 (`string[]`)、各要素はセミコロンの位置に基づいて配列に挿入されます。 タスク パラメーターが <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の場合、値は、アイテム コレクションの内容と、アタッチされているすべてのメタデータになります。 セミコロン以外の文字を使用して各項目を区切るには、myType separator 構文を使用し `@(` *myType* `, '` *separator* `')` ます。  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] エンジンでは、`*` や `?` などのワイルドカードや、`/**/*.cs` などの再帰的なワイルドカードを評価できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "68192609"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [項目](../msbuild/msbuild-items.md)   
- [MSBuild プロパティ](msbuild-properties1.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>参照  
+ [品目](../msbuild/msbuild-items.md)   
+ [MSBuild のプロパティ](msbuild-properties1.md)   
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)
