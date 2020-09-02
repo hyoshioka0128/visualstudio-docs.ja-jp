@@ -1,5 +1,5 @@
 ---
-title: ToggleHUD |Microsoft Docs
+title: ToggleHUD | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87c2571926b92e59ae03e5e988bbf535474dc6d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144579"
 ---
 # <a name="togglehud"></a>ToggleHUD
@@ -28,6 +28,6 @@ void ToggleHUD();
 ```  
   
 ## <a name="remarks"></a>Remarks  
- グラフィックス診断の HUD は、グラフィック診断で実行されているアプリケーションの左上隅に表示されます。 実行時情報、アプリケーションとグラフィックス情報のキャプチャ、および呼び出しによって追加されたメッセージが表示されます、 [AddMessage](../debugger/addmessage.md)メンバー関数。  
+ グラフィックス診断の HUD は、グラフィック診断で実行されているアプリケーションの左上隅に表示されます。 これには、アプリとグラフィックス情報キャプチャのランタイム情報、[AddMessage](../debugger/addmessage.md) メンバー関数の呼び出しによって追加されたメッセージが表示されます。  
   
  HUD を切り替えるには、アクティブにグラフィックス情報をキャプチャする必要はありません。これは、`VsgDbg` クラスのインスタンスを通じて切り替えられますが、[Init](../debugger/init.md) メンバー関数は最初に呼び出される必要はありません。

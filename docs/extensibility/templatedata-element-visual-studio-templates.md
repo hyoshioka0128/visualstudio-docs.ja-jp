@@ -76,7 +76,7 @@ ms.locfileid: "80699192"
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクトテンプレート、項目テンプレート、またはスタートキットのすべてのメタデータが含まれます。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `TemplateData` は必須の要素です。
 
  省略可能な要素を含めない場合は、その要素の既定値が使用されます。
@@ -108,6 +108,6 @@ ms.locfileid: "80699192"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

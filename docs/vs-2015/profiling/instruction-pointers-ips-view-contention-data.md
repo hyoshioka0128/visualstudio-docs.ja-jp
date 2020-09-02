@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187847"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>命令ポインター (IP) ビュー - 競合データ
@@ -45,8 +45,8 @@ ms.locfileid: "68187847"
 |**ソース開始行**|この命令の開始位置である、ソース ファイル内の行番号。|  
 |**ソース終了行**|この命令の終了位置である、ソース ファイル内の行番号。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
- [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view.md)   
- [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+## <a name="see-also"></a>参照  
+ [方法: レポートビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
+ [命令ポインター (Ip) ビュー](../profiling/instruction-pointers-ips-view.md)   
+ [命令ポインター (Ip) ビュー-サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view-sampling-data.md)
