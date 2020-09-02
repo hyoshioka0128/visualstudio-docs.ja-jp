@@ -14,20 +14,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1a52b360994c53eef69ceafa45828ec1020be16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186421"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-項目テンプレートでのグループに分類される項目テンプレートの識別子を指定します、 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)要素。  
+[Templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)要素によって項目テンプレートのグループに分類される項目テンプレートの識別子を指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<TemplateID >  
+ \<TemplateID>  
   
 ## <a name="syntax"></a>構文  
   
@@ -51,15 +51,15 @@ ms.locfileid: "68186421"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|  
   
 ## <a name="text-value"></a>テキスト値  
- A`string`は、項目テンプレートでのグループに分類される項目テンプレートの識別子を表す、`TemplateGroupID`要素。  
+ `string`要素によって項目テンプレートのグループに分類される項目テンプレートの識別子を表す `TemplateGroupID` 。  
   
-## <a name="remarks"></a>Remarks  
- `TemplateID` は、省略可能な要素です。  
+## <a name="remarks"></a>注釈  
+ `TemplateID` は省略可能な要素です。  
   
- .Vstemplate ファイルを指定しない場合、`TemplateID`要素、[名前](../extensibility/name-element-visual-studio-templates.md)要素は、テンプレートの識別子として使用されます。  
+ .Vstemplate ファイルで要素が省略されている場合は、 `TemplateID` [Name](../extensibility/name-element-visual-studio-templates.md) 要素がテンプレートの識別子として使用されます。  
   
- 値、`TemplateID`要素は、プロジェクト システムの登録と使用 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) に表示されるフィルター テンプレートを**新しい項目の追加**ダイアログ ボックス。  
+ 要素の値 `TemplateID` は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\projects) と共に使用して \\ 、[ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートをフィルター処理します。  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: プログラムプロバイダ2 |マイクロソフトドキュメント
+title: IDebugProgramProvider2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721697"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-この登録済みインターフェイスを使用すると、セッション デバッグ マネージャー (SDM) は[、IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)インターフェイスを通じて "公開" されたプログラムに関する情報を取得できます。
+この登録済みインターフェイスにより、セッションデバッグマネージャー (SDM) は、 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) インターフェイスを通じて "公開" されたプログラムに関する情報を取得できます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,30 +28,30 @@ ms.locfileid: "80721697"
 IDebugProgramProvider2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
-デバッグ エンジン (DE) は、デバッグ中のプログラムに関する情報を提供するには、このインターフェイスを実装します。 このインターフェイスは、レジストリの DE セクションで、メトリック`metricProgramProvider`を使用して登録[されます](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
+## <a name="notes-for-implementers"></a>実装側の注意
+デバッグエンジン (DE) は、デバッグ中のプログラムに関する情報を提供するために、このインターフェイスを実装します。 このインターフェイスは、「 `metricProgramProvider` [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)」で説明されているように、メトリックを使用してレジストリの DE セクションに登録されます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
-レジストリから取得した`CoCreateInstance`プログラム プロバイダ`CLSID`の COM 関数を呼び出します。 例を参照してください。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+`CoCreateInstance` `CLSID` レジストリから取得したプログラムプロバイダーのを使用して、COM の関数を呼び出します。 例を参照してください。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|さまざまな方法でフィルタ処理された、実行中のプログラムに関する情報を取得します。|
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|特定のプロセス ID を指定して、プログラム ノードを取得します。|
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|特定の種類のプロセスに関連付けられたプロバイダー イベントを監視するコールバックを確立します。|
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|DE で必要な言語固有のリソースのロケールを設定します。|
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|さまざまな方法でフィルター処理された、実行中のプログラムに関する情報を取得します。|
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|特定のプロセス ID を指定して、プログラムノードを取得します。|
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|特定の種類のプロセスに関連付けられているプロバイダーイベントを監視するためのコールバックを確立します。|
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|DE によって必要とされる言語固有のリソースのロケールを設定します。|
 
-## <a name="remarks"></a>Remarks
-通常、プロセスはこのインタフェースを使用して、そのプロセスで実行されているプログラムを調べる。
+## <a name="remarks"></a>注釈
+通常、プロセスでは、このインターフェイスを使用して、そのプロセスで実行されているプログラムに関する情報を確認します。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>例
 

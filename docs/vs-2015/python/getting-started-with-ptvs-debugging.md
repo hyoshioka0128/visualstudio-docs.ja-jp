@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197711"
 ---
 # <a name="getting-started-with-ptvs-debugging"></a>PTVS の概要: デバッグ
@@ -21,7 +21,7 @@ ms.locfileid: "68197711"
 
 Visual Studio の対話型デバッガーを使用すると、Python コード内の問題を簡単に診断して解決できます。  
   
- これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4)で視聴できます。  
+ これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4)で視聴できます。  
   
  直前の概要のトピックでは、空の Python アプリケーション プロジェクトを作成して、PythonApplication1.py に次のコードを入力しました。  
   
@@ -52,8 +52,8 @@ if __name__ == "__main__":
   
  [呼び出し履歴] ウィンドウには、デバッガーが停止している現在のステートメントの原因となった、保留中の関数呼び出しが表示されます。  さまざまなスタック フレーム (呼び出しスタック内の行) を選択して、コードが各関数での実行続行、変数の値の検索などを実行する場所にジャンプできます。  
   
- これらの手順は、非常に短い [Youtube ビデオ](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4)で視聴できます。  
+ これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4)で視聴できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

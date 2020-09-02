@@ -1,5 +1,5 @@
 ---
-title: IDebug バウンドブレークポイント2::GetPending ブレークポイント |マイクロソフトドキュメント
+title: 'IDebugBoundBreakpoint2:: GetPendingBreakpoint ポイント |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735484"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-指定されたバインドされたブレークポイントの作成元の保留中のブレークポイントを取得します。
+指定したバインドされたブレークポイントが作成された、保留中のブレークポイントを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,16 +42,16 @@ int GetPendingBreakpoint( 
 
 ## <a name="parameters"></a>パラメーター
 `ppPendingBreakpoint`\
-[アウト]このバインドされた[ブレークポイント](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)の作成に使用された保留中のブレークポイントを表すオブジェクトを返します。
+入出力このバインドされたブレークポイントの作成に使用された保留中のブレークポイントを表す [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-保留中のブレークポイントは、1 つまたは複数のプログラムに適用できるコードにブレークポイントをバインドするために必要なすべての情報のコレクションと考えることができます。
+## <a name="remarks"></a>解説
+保留中のブレークポイントは、1つまたは複数のプログラムに適用できるコードにブレークポイントをバインドするために必要なすべての情報のコレクションと考えることができます。
 
 ## <a name="example"></a>例
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)インターフェイスを公開する単純な`CBoundBreakpoint`オブジェクトに対してこのメソッドを実装する方法を次の例に示します。
+次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(

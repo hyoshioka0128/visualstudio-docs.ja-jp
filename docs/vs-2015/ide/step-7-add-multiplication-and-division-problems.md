@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646970"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>手順 7: 乗算問題と除算問題の追加
@@ -49,10 +49,10 @@ ms.locfileid: "72646970"
 
      次の図に示すように、クイズの受け手はクイズを完了するためには 4 つの問題に答える必要があります。
 
-     ![4 つの問題がある計算クイズ](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")4つの問題がある計算クイズ
+     ![4 つの問題がある計算クイズ](../ide/media/express-finishedquiz.png "Express_FinishedQuiz") 4つの問題がある計算クイズ
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 8: クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 [手順 8: クイズをカスタマイズ](../ide/step-8-customize-the-quiz.md)する」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 6: 減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 6: 減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。

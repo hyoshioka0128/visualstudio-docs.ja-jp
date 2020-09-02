@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3fe1c6440f76e358ccde22129cbd413bb229b77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646255"
 ---
 # <a name="how-to-view-managed-code-defects"></a>方法 : マネージド コードの障害を表示する
@@ -31,6 +31,6 @@ ms.locfileid: "72646255"
 
      [コード分析] ウィンドウには、警告に関する追加情報が表示されます。 警告を発生したソースファイル内の行が、ソースコードエディターで表示され、強調表示されます。
 
-- **警告 id を選択します。** 警告 id には、 **CA**がプレフィックスとして4桁の数字が付加されます。 たとえば、CA1234 のようになります。
+- **警告 id を選択します。** 警告 id には、 **CA** がプレフィックスとして4桁の数字が付加されます。 たとえば、CA1234 のようになります。
 
      警告の MSDN ライブラリヘルプトピックが表示されます。 ヘルプトピックには、警告の原因に関する詳細情報が含まれています。また、警告の問題がどのように発生し、解決されるかを示す例が含まれています。
