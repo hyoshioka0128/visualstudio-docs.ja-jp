@@ -13,54 +13,54 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 97bc8383f990f6c0c35a402f2ab36b2595d82a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147686"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、現在のデバッグ セッションで実行中のスレッドを列挙します。  
+この interfac は、現在のデバッグセッションで実行されているスレッドを列挙します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEnumDebugThreads2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジン (DE) は、プログラム内のスレッドの一覧を表すためには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグエンジン (DE) は、プログラム内のスレッドの一覧を表すために、このインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)プロセスで実行されているすべてのプログラムのすべてのスレッドのリストを表す、このインターフェイスを取得します。 呼び出す[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)プログラムで実行中のスレッドのリストを表す、このインターフェイスを取得します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [Enumthreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)を呼び出して、プロセス内で実行されているすべてのプログラム内のすべてのスレッドの一覧を表すこのインターフェイスを取得します。 [Enumthreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)を呼び出して、プログラムで実行されているスレッドの一覧を表すこのインターフェイスを取得します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IEnumDebugThreads2`します。  
+ 次の表に、のメソッドを示し `IEnumDebugThreads2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[次へ](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|指定した列挙体シーケンス内のスレッド数を取得します。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|指定する列挙体シーケンス内のスレッド数をスキップします。|  
-|[リセット](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|現在のものと同じ列挙状態を格納する列挙子を作成します。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|列挙子では、スレッドの数を取得します。|  
+|[次へ](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|列挙シーケンス内の指定された数のスレッドを取得します。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|列挙シーケンス内の指定された数のスレッドをスキップします。|  
+|[リセット](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|列挙シーケンスを先頭にリセットします。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|現在の列挙状態と同じ列挙状態を含む列挙子を作成します。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|列挙子内のスレッドの数を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- Visual Studio が通常を更新するには、このインターフェイスを取得、**スレッド**ウィンドウでもを呼び出すために、リストの最初のスレッドを取得したり[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、[続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)と[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)します。  
+## <a name="remarks"></a>注釈  
+ 通常、Visual Studio は、[ **スレッド** ] ウィンドウを更新するためにこのインターフェイスを取得し、 [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、 [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)、および [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)を呼び出すために、リストの最初のスレッドを取得します。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
- [手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
- [続行](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
- [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+ [画面](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
+ [まま](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
+ [実行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

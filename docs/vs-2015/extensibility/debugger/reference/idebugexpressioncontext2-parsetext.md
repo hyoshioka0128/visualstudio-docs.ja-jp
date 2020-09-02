@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText |Microsoft Docs
+title: IDebugExpressionContext2::P arseText |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fbd9252663f766035f628946e6aa93b1c00322a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158390"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-以降の評価のためのテキスト形式の式を解析します。  
+後で評価するために、テキスト形式の式を解析します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -50,33 +50,33 @@ int ParseText( 
   
 #### <a name="parameters"></a>パラメーター  
  `pszCode`  
- [in]解析する式。  
+ から解析する式。  
   
  `dwFlags`  
- [in]フラグの組み合わせ、 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)解析を制御する列挙体。  
+ から解析を制御する [parseflags](../../../extensibility/debugger/reference/parseflags.md) 列挙のフラグの組み合わせ。  
   
  `nRadix`  
- [in]内の数値情報を解析中に使用する基数`pszCode`します。  
+ からの数値情報の解析に使用される基数 `pszCode` 。  
   
  `ppExpr`  
- [out]返します、 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)バインドと評価の準備ができて、解析された式を表すオブジェクト。  
+ 入出力解析された式を表す [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) オブジェクトを返します。このオブジェクトは、バインドおよび評価の準備ができています。  
   
  `pbstrError`  
- [out]式にエラーが含まれている場合は、エラー メッセージを返します。  
+ 入出力式にエラーが含まれている場合は、エラーメッセージを返します。  
   
  `pichError`  
- [out]内のエラーの文字インデックスを返します`pszCode`式にエラーが含まれている場合。  
+ 入出力 `pszCode` 式にエラーが含まれている場合は、エラーの文字インデックスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドが呼び出されると、デバッグ エンジン (DE) が式を解析およびが正しいかどうかを検証する必要があります。 `pbstrError`と`pichError`式が有効でない場合パラメーターを入力する場合があります。  
+## <a name="remarks"></a>注釈  
+ このメソッドが呼び出されると、デバッグエンジン (DE) は、式を解析して、正しいかどうかを検証する必要があります。 `pbstrError` `pichError` 式が無効な場合は、パラメーターとパラメーターを入力できます。  
   
- ある式は評価されず、解析のみに注意してください。 以降の呼び出し、 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)または[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)メソッドが解析された式を評価します。  
+ 式は評価されず、解析のみが行われることに注意してください。 後で [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) または [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) メソッドを呼び出すと、解析された式が評価されます。  
   
 ## <a name="example"></a>例  
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CEnvBlock`を公開するオブジェクト、 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。 この例では、環境変数の名前として解析される式を考慮し、その変数の値を取得します。  
+ 次の例は、IDebugExpressionContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CEnvBlock` います。 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) この例では、式を環境変数の名前として解析し、その変数から値を取得します。  
   
 ```cpp#  
 HRESULT CEnvBlock::ParseText(  
@@ -124,7 +124,7 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

@@ -11,84 +11,84 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555969"
 ---
 # <a name="customizing-the-isolated-shell"></a>分離シェルのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio のユーザー インターフェイスのさまざまな側面を変更することで、コマンドと特殊化されたアプリケーションに含まれる機能を制限することで、Visual Studio 分離シェル アプリケーションをカスタマイズできます。  
+Visual studio の分離シェルアプリケーションをカスタマイズするには、Visual Studio のユーザーインターフェイスのさまざまな側面を変更し、特殊なアプリケーションに含まれるコマンドと機能を制限します。  
   
-## <a name="using-the-applicationpkgdef-file"></a>Application.pkgdef ファイルを使用します。  
- 分離シェルのテンプレート ソリューションが含まれています、 *SolutionName*します。次の機能を変更することができます Application.pkgdef ファイル:  
+## <a name="using-the-applicationpkgdef-file"></a>アプリケーションの pkgdef ファイルの使用  
+ 分離シェルテンプレートソリューションには、 *SolutionName*が含まれています。次の機能を変更できるようにするアプリケーションの pkgdef ファイル。  
   
 ##### <a name="the-application-title"></a>アプリケーションのタイトル  
- アプリケーションのタイトルは"AppName"の行の値を変更することで、アプリケーションのタイトル バーに表示される名前を指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+ アプリケーションのタイトルをカスタマイズできます。これは、 *SolutionName*の "AppName" 行の値を変更することによって、アプリケーションのタイトルバーに表示される名前です。アプリケーションの pkgdef ファイル。 詳細については、「 [チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
- アプリケーションのタイトルに現在読み込まれているプロジェクトを表示したくない場合は、"ShowHierarchyRootInTitle"の行の値を変更、 *SolutionName*します。Application.pkgdef のファイルは dword:00000001 から場合は dword:00000000 です。  
+ 現在読み込まれているプロジェクトをアプリケーションのタイトルに表示させたくない場合は、 *SolutionName*の "ShowHierarchyRootInTitle" 行の値を変更します。アプリケーションの pkgdef ファイルを dword: 00000001 から dword: 00000000 にします。  
   
-##### <a name="the-application-icon"></a>アプリケーション アイコン  
- アプリケーションのタイトル バー内のアプリケーション名で表示されるアイコンは、アプリケーションのアイコンをカスタマイズできます。 別のアイコンをアイコンのディレクトリにコピーします。 **ソリューション エクスプ ローラー**、リソース ファイルのフォルダーにアイコンを追加します。 VSShellStub.rc ファイルを開き IDI_STUBPROGRAM の値を新しいアイコンの名前に置き換えます。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+##### <a name="the-application-icon"></a>アプリケーションアイコン  
+ アプリケーションのタイトルバーにアプリケーション名で表示されるアイコンであるアプリケーションアイコンをカスタマイズできます。 アイコンディレクトリに別のアイコンをコピーします。 **ソリューションエクスプローラー**で、[リソースファイル] フォルダーにアイコンを追加します。 次に、VSShellStub .rc ファイルを開き、IDI_STUBPROGRAM の値を新しいアイコンの名前に置き換えます。 詳細については、「 [チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
-##### <a name="the-command-line-logo"></a>コマンド ラインのロゴ  
- コマンド ラインのロゴは、"CommandLineLogo"の行の値を変更することで、コマンドラインから、アプリケーションを起動するときに表示されるテキストをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+##### <a name="the-command-line-logo"></a>コマンドラインロゴ  
+ コマンドラインロゴは、アプリケーションをコマンドラインから起動したときに表示されるテキストで、 *SolutionName*の "CommandLineLogo" 行の値を変更することによってカスタマイズできます。アプリケーションの pkgdef ファイル。 詳細については、「[チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
-##### <a name="the-name-of-the-user-files-subfolder"></a>ユーザー ファイルのサブフォルダーの名前  
- "UserFilesSubFolderName"の行の値を変更することで、アプリケーションがユーザー ファイルの保持フォルダーの名前を変更する*SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-name-of-the-user-files-subfolder"></a>ユーザーファイルサブフォルダーの名前  
+ *SolutionName*の "UserFilesSubFolderName" 行の値を変更することによって、アプリケーションがユーザーファイル用に保持するフォルダーの名前を変更できます。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-title-of-the-solution-tree-node-in-the-new-project-dialog"></a>新しいプロジェクト ダイアログで、ソリューション ツリー ノードのタイトル  
- 新しいプロジェクト ダイアログでソリューション ノードのタイトルをカスタマイズするには"NewProjDlgSlnTreeNodeTitle"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-title-of-the-solution-tree-node-in-the-new-project-dialog"></a>[新しいプロジェクト] ダイアログのソリューションツリーノードのタイトル  
+ [新しいプロジェクト] ダイアログでソリューションノードのタイトルをカスタマイズするには、 *SolutionName*の "Newprojdlgslntreのタイトル" 行の値を変更します。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-installed-templates-header-in-the-new-project-dialog"></a>新しいプロジェクト ダイアログで、インストール済みのテンプレート ヘッダー  
- 新しいプロジェクト ダイアログで、インストール済みのテンプレート ヘッダーを変更するには"NewProjDlgInstalledTemplatesHdr"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-installed-templates-header-in-the-new-project-dialog"></a>[新しいプロジェクト] ダイアログの [インストールされたテンプレート] ヘッダー  
+ [新しいプロジェクト] ダイアログボックスの [インストールされたテンプレート] ヘッダーは、 *SolutionName*の "Newprojdlgexistingtemplates" 行の値を変更することによって変更できます。アプリケーションの pkgdef ファイル。  
   
-##### <a name="whether-or-not-to-hide-miscellaneous-files-by-default"></a>既定では、その他のファイルを非表示にするかどうか  
- "HideMiscellaneousFilesByDefault"の行の値を変更することで、既定でその他のファイルを非表示にするかどうかを指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 その他のファイルを非表示にする値を設定`dword:00000001`、ファイルを表示するには、値を設定および`dword:00000000`します。  
+##### <a name="whether-or-not-to-hide-miscellaneous-files-by-default"></a>その他のファイルを既定で非表示にするかどうか  
+ *SolutionName*の "HideMiscellaneousFilesByDefault" 行の値を変更することで、その他のファイルを既定で非表示にするかどうかを指定できます。アプリケーションの pkgdef ファイル。 その他のファイルを非表示にするには、値を設定し、ファイルを表示するには、 `dword:00000001` 値を設定し `dword:00000000` ます。  
   
 ##### <a name="whether-or-not-to-disable-the-output-window"></a>出力ウィンドウを無効にするかどうか  
- "DisableOutputWindow"の行の値を変更することで、アプリケーションの出力ウィンドウを無効にするかどうかを指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 出力ウィンドウを無効にする値を設定`dword:00000001`、出力ウィンドウを表示する値を設定および`dword:00000000`します。  
+ *SolutionName*の "DisableOutputWindow" 行の値を変更することによって、アプリケーションの出力ウィンドウを無効にするかどうかを指定できます。アプリケーションの pkgdef ファイル。 [出力] ウィンドウを無効にするには、値を設定し、[ `dword:00000001` 出力] ウィンドウを表示するには、値を設定し `dword:00000000` ます。  
   
-##### <a name="whether-or-not-to-allow-dropped-files-on-the-main-window"></a>ドロップされたファイルのメイン ウィンドウを許可するかどうか  
- "AllowsDroppedFilesOnMainWindow"の行の値を変更することで、アプリケーションのメイン ウィンドウにドロップされたファイルを許可するかどうかを指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 ドロップされたファイルを許可するには、値を設定`dword:00000001`、ドロップされたファイルを禁止する値を設定および`dword:00000000`します。  
+##### <a name="whether-or-not-to-allow-dropped-files-on-the-main-window"></a>メインウィンドウでのファイルの削除を許可するかどうか  
+ *SolutionName*の "AllowsDroppedFilesOnMainWindow" 行の値を変更することによって、アプリケーションのメインウィンドウでの削除されたファイルを許可するかどうかを指定できます。アプリケーションの pkgdef ファイル。 削除されたファイルを許可するには、値を設定し、削除されたファイルを許可しないように `dword:00000001` するには、値を設定し `dword:00000000` ます。  
   
 ##### <a name="the-default-search-page"></a>既定の検索ページ  
- "DefaultSearchPage"の行の値を変更することで、web ブラウザー ウィンドウを開いたときに表示されるページには、web ブラウザー ページをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。  
+ Web ブラウザーのページをカスタマイズするには、 *SolutionName*の "DefaultSearchPage" 行の値を変更して、web ブラウザーウィンドウを開いたときに表示されるページをカスタマイズします。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-default-home-page"></a>既定のホーム ページ  
- ホーム ページをカスタマイズするには"DefaultHomePage"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+##### <a name="the-default-home-page"></a>既定のホームページ  
+ ホームページをカスタマイズするには、 *SolutionName*の "DefaultHomePage" 行の値を変更します。アプリケーションの pkgdef ファイル。 詳細については、「[チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>ソリューションの概念を非表示にするかどうか  
- "HideSolutionConcept"の行の値を変更することで、アプリケーションでソリューションを非表示にするかどうかを指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 ソリューションを非表示にする値を設定`dword:00000001`、ソリューションを表示するには、値を設定および`dword:00000000`します。  
+ *SolutionName*の "HideSolutionConcept" 行の値を変更することによって、アプリケーションのソリューションを非表示にするかどうかを指定できます。アプリケーションの pkgdef ファイル。 ソリューションを非表示にするには、値を設定し、 `dword:00000001` ソリューションを表示するには値を設定し `dword:00000000` ます。  
   
-##### <a name="the-default-debug-engine"></a>既定のデバッグ エンジン  
- "DefaultDebugEngine"の行の値を変更することで、アプリケーションを使用して、デバッグ エンジンを変更することができます、 *SolutionName*します。Application.pkgdef ファイルをデバッグ エンジンの GUID です。  
+##### <a name="the-default-debug-engine"></a>既定のデバッグエンジン  
+ *SolutionName*の "DefaultDebugEngine" 行の値を変更することで、アプリケーションで使用するデバッグエンジンを変更できます。アプリケーションの pkgdef ファイルをデバッグエンジンの GUID に適用します。  
   
-##### <a name="the-file-extension-of-the-user-options-file"></a>ユーザー オプション ファイルのファイル拡張子  
- "UserOptsFileExt"の行の値を変更することで、アプリケーションがユーザー ファイルの保持フォルダーの名前を変更する*SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-file-extension-of-the-user-options-file"></a>ユーザーオプションファイルのファイル拡張子  
+ *SolutionName*の "UserOptsFileExt" 行の値を変更することによって、ユーザーファイルに対してアプリケーションで保持されるフォルダーの名前を変更できます。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-solution-file-extension"></a>ソリューション ファイルの拡張機能  
- "SolutionFileExt"の行の値を変更することで、ソリューション ファイルの使用、拡張機能を変更することができます、 *SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-solution-file-extension"></a>ソリューションファイルの拡張子  
+ ソリューションファイルに使用する拡張機能を変更するには、 *SolutionName*の "SolutionFileExt" 行の値を変更します。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-default-user-files-folder-root"></a>既定のユーザー ファイル フォルダーのルート  
- アプリケーションのユーザー ファイルのルート フォルダーの名前を変更するには"UserFilesSubFolderName"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-default-user-files-folder-root"></a>既定のユーザーファイルフォルダーのルート  
+ *SolutionName*の "UserFilesSubFolderName" 行の値を変更することによって、アプリケーションのユーザーファイルのルートフォルダーの名前を変更できます。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-solution-file-creator-identifier"></a>ソリューション ファイルの作成者の識別子  
- "SolutionFileCreatorIdentifier"の行の値を変更することで、ソリューション ファイルに使用される id を変更することができます、 *SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-solution-file-creator-identifier"></a>ソリューションファイル作成者識別子  
+ ソリューションファイルに使用される識別子を変更するには、 *SolutionName*の "SolutionFileCreatorIdentifier" 行の値を変更します。アプリケーションの pkgdef ファイル。  
   
 ##### <a name="the-default-projects-location"></a>既定のプロジェクトの場所  
- 既定のプロジェクトの場所の名前を変更するには"DefaultProjectsLocation"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。  
+ 既定のプロジェクトの場所の名前を変更するには、 *SolutionName*の "Defaultprojects location" 行の値を変更します。アプリケーションの pkgdef ファイル。  
   
-##### <a name="the-application-localization-package"></a>アプリケーションのローカライズ パッケージ  
- "AppLocalizationPackage"の行の値を変更することで、アプリケーションの使用、ローカライズされたパッケージを変更することができます、 *SolutionName*します。Application.pkgdef ファイルです。  
+##### <a name="the-application-localization-package"></a>アプリケーションローカライズパッケージ  
+ *SolutionName*の "AppLocalizationPackage" 行の値を変更することで、アプリケーションで使用するローカライズパッケージを変更できます。アプリケーションの pkgdef ファイル。  
   
-##### <a name="whether-or-not-to-show-the-hierarchy-root-in-the-title"></a>タイトルの階層のルートを表示するかどうか  
- "ShowHierarchyRootInTitle"の行の値を変更することで、アプリケーションのタイトル バーで階層のルートを表示するかどうかを指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 階層のルートを表示するには、値を設定`dword:00000001`、階層のルートを非表示にする値を設定および`dword:00000000`します。  
+##### <a name="whether-or-not-to-show-the-hierarchy-root-in-the-title"></a>タイトルに階層のルートを表示するかどうか  
+ *SolutionName*の "ShowHierarchyRootInTitle" 行の値を変更することによって、アプリケーションのタイトルバーに階層のルートを表示するかどうかを指定できます。アプリケーションの pkgdef ファイル。 階層のルートを表示するには、値 `dword:00000001` を設定し、階層のルートを非表示にするには、値を設定し `dword:00000000` ます。  
   
-##### <a name="specifying-a-start-page"></a>スタート ページを指定します。  
- カスタム アプリケーションのスタート ページを指定する、 *SolutionName*します。Application.pkgdef ファイルに"DisableStartPage"値を設定する`dword:00000000`、し、 `[$RootKey$\StartPage\Default]` .xaml ファイルの場所に URI を設定します。  
+##### <a name="specifying-a-start-page"></a>スタートページの指定  
+ カスタムアプリケーションのスタートページを指定するには、 *SolutionName*を使用します。アプリケーションの pkgdef ファイルを指定し、"DisableStartPage" の値をに設定 `dword:00000000` し、 `[$RootKey$\StartPage\Default]` URI を .xaml ファイルの場所に設定します。  
   
 ```  
 DisableStartPage=dword:00000000  
@@ -96,35 +96,35 @@ DisableStartPage=dword:00000000
 "Uri"="$RootFolder$\<name of XAML file>"  
 ```  
   
- Applicationcommands.vsct ファイル内の*SolutionName*UI プロジェクトをコメント アウト"No_ShellPkg_startPageCommand"エントリ。  
+ *SolutionName*UI プロジェクトの applicationcommands. vsct ファイルで、"No_ShellPkg_startPageCommand" エントリをコメントアウトします。  
   
 ```  
 <!--<Define name="No_ShellPkg_StartPageCommand"/>-->  
 ```  
   
- .Xaml ファイル、およびの必要な任意のグラフィック ファイルを追加する必要があります、 *SolutionName*プロジェクト。 これらのファイルに実際にコピーする必要があります、 *SolutionName*プロジェクト ディレクトリをその他のディレクトリからは追加されません。  
+ *SolutionName*プロジェクトには、必要な .xaml ファイルとグラフィックスファイルを追加する必要があります。 これらのファイルは、実際には *SolutionName* プロジェクトディレクトリにコピーする必要があり、他のディレクトリからは追加されません。  
   
- すべてのファイルに次のように設定します。、**項目の種類**プロパティを**分離シェル ファイル**ファイルにコピーするために、 *$RootFolder$* ディレクトリ。 (設定、**項目の種類**プロパティは、ファイルを右クリックし、選択**プロパティ**します。 このプロパティが見つかります**構成プロパティ**、**全般**)。  
+ ファイルが *$RootFolder $* ディレクトリにコピーされるようにするには、すべてのファイルで [**項目の種類**] プロパティを [**分離シェルファイル**] に設定します。 ( **項目の種類** のプロパティを設定するには、ファイルを右クリックし、[ **プロパティ**] を選択します。 このプロパティは、[ **構成プロパティ**]、[ **全般**] の下にあります)。  
   
- スタート ページをカスタマイズする方法の詳細については、次を参照してください。[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)します。  
+ スタートページのカスタマイズの詳細については、「 [スタートページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)」を参照してください。  
   
-## <a name="using-other-elements-of-the-isolated-shell"></a>分離シェルの他の要素を使用します。  
- その他のファイルと、アプリケーションをさらにカスタマイズする分離シェルのソリューション テンプレートに含まれているプロジェクトを使用することができます。  
+## <a name="using-other-elements-of-the-isolated-shell"></a>分離シェルのその他の要素の使用  
+ 分離シェルソリューションテンプレートに含まれている他のファイルやプロジェクトを使用して、アプリケーションをさらにカスタマイズすることができます。  
   
-##### <a name="enabledisable-visual-studio-packages"></a>Visual Studio パッケージの有効化/無効化  
- *SolutionName*.pkgundef ファイルは、特定のパッケージを除外することで、特定の種類の Visual Studio の機能を無効にすることができます。 たとえば、次のような行があるとします。  
+##### <a name="enabledisable-visual-studio-packages"></a>Visual Studio パッケージを有効/無効にする  
+ *SolutionName*を使用すると、特定のパッケージを除外することによって、特定の種類の Visual Studio 機能を無効にすることができます。 たとえば、次の行になります。  
   
 ```  
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- その他のファイル プロジェクトに表示されるプロジェクト テンプレートのセットから削除、**新しいプロジェクト**ダイアログ。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+ [ **新しいプロジェクト** ] ダイアログに表示される一連のプロジェクトテンプレートから、その他のファイルプロジェクトを削除します。 詳細については、「 [チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
-##### <a name="enabledisable-menu-commands"></a>メニュー コマンドを有効/無効にします。  
- *SolutionName*UI.vsct ファイルには、分離シェルを使用できるすべてのメニュー コマンドのコメント アウトされた一覧が含まれています。 特定のコマンドを無効にするのには、対応する行をコメント解除します。 たとえば、ウィンドウの分割/コメントを無効にするのには、`<Define name="No_SplitCommand"/>`行。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+##### <a name="enabledisable-menu-commands"></a>メニューコマンドを有効または無効にする  
+ *SolutionName*ファイルには、分離シェルで使用できるすべてのメニューコマンドのコメントアウトされた一覧が含まれています。 特定のコマンドを無効にするには、対応する行のコメントを解除します。 たとえば、ウィンドウ/分割コメントを無効にするには、行のコメントを解除し `<Define name="No_SplitCommand"/>` ます。 詳細については、「 [チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
-##### <a name="the-bitmap-used-on-the-splash-screen"></a>スプラッシュ スクリーンで使用されるビットマップ  
- スプラッシュ画面で、"SplashScreenBitmap"の行の値を変更することで、アプリケーションを起動するときに表示されるウィンドウは、使用されるビットマップをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+##### <a name="the-bitmap-used-on-the-splash-screen"></a>スプラッシュスクリーンで使用されるビットマップ  
+ スプラッシュスクリーンで使用するビットマップ (アプリケーションの起動時に表示されるウィンドウ) は、 *SolutionName*の "SplashScreenBitmap" 行の値を変更することによってカスタマイズできます。アプリケーションの pkgdef ファイル。 詳細については、「 [チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。  
   
-##### <a name="the-helpabout-window"></a>ヘルプ、ウィンドウの概要  
- 分離シェル テンプレートでは、ヘルプをカスタマイズに使用できる別のプロジェクト]、[アプリケーションのボックスの詳細について。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。
+##### <a name="the-helpabout-window"></a>[ヘルプ/バージョン情報] ウィンドウ  
+ 分離シェルテンプレートには、アプリケーションの [ヘルプ]/[バージョン情報] ボックスをカスタマイズするために使用できる別のプロジェクトがあります。 詳細については、「 [チュートリアル: 基本的な分離シェルアプリケーションの作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)」を参照してください。

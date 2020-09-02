@@ -14,20 +14,20 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186436"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、重要な場合に[ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)に設定されている`false`します。 ときに[ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)に設定されている`true`、項目テンプレートはすべてのプロジェクト タイプで使用できます。  
+項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、 [showbydefault Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md) がに設定されている場合に重要です `false` 。 [ [Showbydefault Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md) ] がに設定されている場合 `true` 、すべてのプロジェクトの種類で項目テンプレートを使用できます。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<TemplateGroupID >  
+ \<TemplateGroupID>  
   
 ## <a name="syntax"></a>構文  
   
@@ -55,10 +55,10 @@ ms.locfileid: "68186436"
   
  このテキストは、項目テンプレートのカテゴリの識別子を指定します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  `TemplateGroupID` は要素です。  
   
- 値、`TemplateGroupID`要素は、プロジェクト システムの登録と使用 (hkey_local_machine \software\microsoft\visualstudio\\ *\<バージョン番号 >* \Projects\\)フィルター テンプレートに表示される、**新しい項目の追加** ダイアログ ボックス。  
+ 要素の値 `TemplateGroupID` は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio) と共に使用して \\ *\<version number>* \\ 、[**新しい項目の追加**] ダイアログボックスに表示されるテンプレートをフィルター処理します。  
   
 |Visual C++ の値|説明|  
 |------------------------|-------------|  
@@ -72,6 +72,6 @@ ms.locfileid: "68186436"
 |WinRT - ネイティブ|Windows 8.0 ストア プロジェクトに使用されます|  
 |VC-Android|Android プロジェクトに使用されます|  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

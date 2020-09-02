@@ -1,5 +1,5 @@
 ---
-title: エラー :プロセスを検査するアクセス許可がありません&#39;id |Microsoft Docs
+title: エラー :プロセスの ID を検査する権限がありません | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157517"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー :プロセスを検査するアクセス許可がありません&#39;id
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>エラー :プロセスの ID を検査する権限がありません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロセスの ID を検査する権限がありません。 これは、システムの混が原因である可鉢があります。  
@@ -30,7 +30,7 @@ ms.locfileid: "68157517"
   
 ### <a name="to-enable-terminal-services"></a>ターミナル サービスを有効にするには  
   
-1. をクリックして**開始**を選択し**コントロール パネルの**です。  
+1. **[スタート]** ボタンをクリックして、 **[コントロール パネル]** をクリックします。  
   
 2. コントロール パネルで必要に応じて **[クラシック表示に切り替える]** を選択し、 **[管理ツール]** をダブルクリックします。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "68157517"
   
 6. **[サービス]** 一覧の **[Terminal Services]** を右クリックして、 **[プロパティ]** をクリックします。  
   
-7. **ターミナル サービスのプロパティ**ウィンドウに移動して、**全般** タブで設定し、**スタートアップの種類**に**手動**。  
+7. **[ターミナル サービスのプロパティ]** ウィンドウの **[全般]** タブで、 **[スタートアップの種類]** を **[手動]** に設定します。  
   
 8. **[OK]** をクリックします。  
   
@@ -66,5 +66,5 @@ ms.locfileid: "68157517"
   
 5. **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)

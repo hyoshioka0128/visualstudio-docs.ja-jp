@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551942"
 ---
 # <a name="zoom-control-threads-view"></a>ズーム コントロール (スレッド ビュー)
@@ -31,8 +31,8 @@ ms.locfileid: "62551942"
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>マウス ホイールを使用した拡大縮小  
  タイムライン上の任意の点をクリックし (マウス フォーカスを確実に置くため)、Ctrl キーを押しながらマウス ホイールを移動します (拡大するには前方へ、縮小するには後方へ)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チャネルの管理](../profiling/manage-channels.md)   
- [測定モード オン/オフ](../profiling/measure-mode-on-off.md)   
- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   
+ [測定モードのオン/オフ](../profiling/measure-mode-on-off.md)   
+ [スレッドビュー](../profiling/threads-view-parallel-performance.md)   
  [使用状況ナビゲーター](../profiling/utilization-navigator.md)

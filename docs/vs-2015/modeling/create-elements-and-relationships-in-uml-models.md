@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667810"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML モデル内に要素および関係を生成する
@@ -35,7 +35,7 @@ Visual Studio の拡張機能のプログラム コードでは、要素とリ�
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>作成する要素の所有者を取得します。
  モデルのルートを除いて、項目ごとに 1 つの所有者があるように、モデルは 1 つのツリーで形成されています。 モデルのルートは `IModel` 型です。これは `IPackage` の型です。
 
- たとえばユーザーの現在のダイアグラムなど、特定のダイアグラムに表示される要素を作成する場合、通常はそのダイアグラムとリンクしているパッケージ内に作成する必要があります。 (例:
+ たとえばユーザーの現在のダイアグラムなど、特定のダイアグラムに表示される要素を作成する場合、通常はそのダイアグラムとリンクしているパッケージ内に作成する必要があります。 次に例を示します。
 
 ```
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
@@ -43,7 +43,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 
  次の表は、共通のモデル要素の所有権をまとめたものです。
 
-|作成する要素|Owner|
+|作成する要素|所有者|
 |---------------------------|-----------|
 |`IActor, IUseCase, IComponent, IClass, IInterface, IEnumeration`<br /><br /> `IActivity, IInteraction`|`IPackage, IModel`|
 |`IAttribute, IOperation`|`IClass, IInterface`|
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>所有者に対して Create メソッドを呼び出す
- メソッド名は、`Create`*OwnedType* `()` の形式です。 (例:
+ メソッド名の形式は、 `Create` *OwnedType* `()` です。 次に例を示します。
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
 
 3. リレーションシップのプロパティ (名前など) を設定します。
 
-     (例:
+     次に例を示します。
 
     ```
     IAssociation association = subject.Package.CreateAssociation(subject, observer);
     association .Name = "Observes";
     ```
 
-4. リレーションシップの両方の側のプロパティを設定します。 常に 2 つの `MemberEnds` があります。 (例:
+4. リレーションシップの両方の側のプロパティを設定します。 常に 2 つの `MemberEnds` があります。 次に例を示します。
 
     ```
     association .MemberEnds[0].Name = "subject";   // role name

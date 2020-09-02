@@ -1,0 +1,196 @@
+- name: Visual Studio サブスクリプション
+  href: index.yml
+- name: 新着記事
+  href: whats-new-in-subscriptions.md
+- name: サブスクリプション
+  items:
+    - name: サブスクリプションの購入
+      items:
+        - name: Retail
+          href: buy-activate-retail.md
+        - name: クラウド
+          items:
+            - name: 概要
+              href: vscloud-overview.md
+            - name: 請求に関する FAQ
+              href: vscloud-billing-faq.md
+            - name: CSP のための購入
+              href: vscloud-csp.md
+        - name: Visual Studio と GitHub Enterprise
+          href: access-github.md
+        - name: Microsoft Partner Network
+          items:
+            - name: パートナー向けのサブスクリプション
+              href: program-mpn.md
+            - name: MPN のサブスクリプションを管理する
+              href: manage-mpn-subscriptions.md
+        - name: Microsoft for Startups
+          href: program-startups.md
+    - name: サインイン
+      items:
+        - name: Microsoft アカウントでサインイン
+          href: sign-in-msa.md
+        - name: 職場/学校アカウントでサインイン
+          href: sign-in-work.md
+        - name: GitHub を使用したサインイン
+          href: sign-in-github.md
+        - name: 接続された ID
+          href: use-connected-identities.md
+        - name: 代替 ID
+          href: vs-alternate-identity.md
+        - name: サインインの問題
+          href: sign-in-issues.md
+        - name: サブスクライバー データの匿名化
+          href: anonymization.md
+    - name: サブスクリプション ポータルの概要
+      href: using-the-subscriber-portal.md
+    - name: サブスクリプションを管理する
+      href: manage-vs-subscriptions.md
+    - name: サブスクリプション管理者に連絡してください
+      href: contact-my-admin.md
+    - name: 利点
+      items:
+        - name: ツール
+          items:
+            - name: Azure DevTest の個人クレジット
+              href: vs-azure.md
+            - name: Azure DevOps
+              href: vs-azure-devops.md
+            - name: Azure DevTest の従量課金制
+              href: vs-azure-payg.md
+            - name: Azure EA DevTest
+              href: azure-ea-devtest.md
+            - name: CAST の強調表示
+              href: vs-cast.md
+            - name: CloudPilot
+              href: vs-cloudpilot.md
+            - name: エンタープライズ向け Microsoft 365 アプリ
+              href: microsoft-365-apps-for-enterprise.md
+            - name: Microsoft 365 開発者
+              href: vs-m365.md
+            - name: Parasoft
+              href: vs-parasoft.md
+            - name: Power BI Pro
+              href: vs-pbi.md
+            - name: Visual Studio App Center
+              href: vs-visual-studio-app-center.md
+            - name: Visual Studio IDE
+              href: vs-ide-benefit.md
+            - name: WhiteSource Bolt
+              href: vs-whitesource.md
+            - name: Windows 開発者アカウント
+              href: vs-windows-dev.md
+            - name: Windows Virtual Desktop
+              href: vs-windows-virtual-desktop.md
+        - name: プロフェッショナルな開発
+          items:
+            - name: CODE マガジン
+              href: vs-code-magazine.md
+            - name: DataCamp
+              href: vs-datacamp.md
+            - name: LinkedIn Learning
+              href: vs-linkedin-learning.md
+            - name: Pluralsight
+              href: vs-pluralsight.md
+        - name: サポート
+          items:
+            - name: Azure コミュニティ
+              href: vs-azure-community.md
+            - name: コンシェルジェ サポート
+              href: vs-concierge-chat.md
+            - name: テクニカル サポート
+              href: vs-tech-support.md
+- name: ソフトウェアとキー
+  items:
+    - name: ソフトウェアのダウンロード
+      items:
+        - name: 製品の利用条件
+          href: product-availability.md
+        - name: ソフトウェアのダウンロード
+          href: download-software.md
+    - name: 使用可能なソフトウェアのダウンロードの一覧
+      href: software-download-list.md
+    - name: プロダクト キー
+      items:
+        - name: プロダクト キーの概要
+          href: product-keys.md
+        - name: キーの検索と要求
+          href: find-keys.md
+        - name: インターネット デモンストレーション
+          href: internet-demos.md
+- name: 管理者
+  items:
+    - name: 管理者の責任
+      items:
+        - name: 管理者の責任
+          href: admin-responsibilities.md
+        - name: 実稼働前インベントリ
+          href: admin-inventory.md
+        - name: 大規模なチームと外部請負業者を管理する
+          href: manage-teams.md
+        - name: ユーザーの割り当てを追跡し、注文を処理する
+          href: assignments-orders.md
+    - name: 管理ポータルへのアクセス
+      items:
+        - name: ボリューム ライセンス
+          href: volume-license.md
+        - name: MPSA
+          href: mpsa.md
+        - name: クラウド サブスクリプション
+          href: cloud-admin.md
+        - name: 顧客を管理するパートナー
+          href: open-migration.md
+        - name: 'ビデオ チュートリアル:管理ポータルにアクセスする'
+          href: 'https://youtu.be/plSu6fpi7UI'
+    - name: 管理ポータルの使用
+      items:
+        - name: スーパー管理者と管理者
+          href: admin-roles.md
+        - name: 契約の基本設定を設定する
+          href: admin-prefs.md
+        - name: 概要
+          href: using-admin-portal.md
+        - name: 月払いサブスクリプションを追加する
+          href: add-monthly-subs.md
+        - name: サブスクリプションを割り当てる
+          items:
+            - name: 1 人のユーザーを追加する
+              href: assign-license.md
+            - name: 複数のユーザーを追加する
+              href: assign-license-bulk.md
+            - name: 特定のサブスクリプションの割り当て
+              href: assign-guid.md
+        - name: サブスクリプションの編集
+          href: edit-license.md
+        - name: サブスクリプションの削除
+          href: delete-license.md
+        - name: サブスクリプションを検索する
+          href: search-license.md
+        - name: サブスクリプションのエクスポート
+          href: exporting-subscriptions.md
+        - name: 超過
+          href: handle-overclaimed-license.md
+        - name: 最大使用量
+          href: maximum-usage.md
+        - name: 有効期限が切れたサブスクリプション
+          href: handle-expired-license.md
+        - name: 'サブスクライバーのサインイン シナリオ '
+          href: aliasing.md
+        - name: 個人用電子メール サインインを持つサブスクライバー
+          href: personal-email-sign-ins.md
+        - name: GitHub Enterprise による Visual Studio の管理
+          href: assign-github.md
+- name: リソース
+  items:
+    - name: Visual Studio ライセンスのホワイト ペーパー
+      href: 'https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf'
+    - name: サブスクリプション オプションと価格を比較する
+      href: 'https://visualstudio.microsoft.com/vs/pricing'
+    - name: Visual Studio IDE 機能を比較する
+      href: 'https://visualstudio.microsoft.com/vs/compare'
+    - name: Visual Studio の管理とサブスクリプションのサポート
+      href: 'https://visualstudio.microsoft.com/support/support-overview-vs'
+    - name: ボリューム ライセンスの契約条件
+      href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
+    - name: Microsoft Products and Services Agreement (MPSA)
+      href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'
