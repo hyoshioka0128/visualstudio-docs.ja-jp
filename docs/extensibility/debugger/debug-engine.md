@@ -1,5 +1,5 @@
 ---
-title: デバッグ エンジン |マイクロソフトドキュメント
+title: デバッグエンジン |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739066"
 ---
-# <a name="debug-engine"></a>デバッグ エンジン
-デバッグ エンジン (DE) は、インタプリタまたはオペレーティング システムと連携して、実行制御、ブレークポイント、式評価などのデバッグ サービスを提供します。 DE は、デバッグ中のプログラムの状態を監視する役割を担います。 これを実現するために、DE は、CPU から、またはランタイムによって提供される API から、サポートされているランタイムで使用できるすべてのメソッドを使用します。
+# <a name="debug-engine"></a>デバッグエンジン
+デバッグエンジン (DE) はインタープリターやオペレーティングシステムと連携して、実行制御、ブレークポイント、式の評価などのデバッグサービスを提供します。 DE は、デバッグ中のプログラムの状態を監視する役割を担います。 これを実現するために、DE は、サポートされているランタイムで使用可能な任意のメソッド (CPU から、またはランタイムによって提供される Api) を使用します。
 
- たとえば、共通言語ランタイム (CLR) は、ICorDebugXXX インターフェイスを通じて実行中のプログラムを監視するメカニズムを提供します。 CLR をサポートする DE は、デバッグ中のマネージ コード プログラムを追跡するのに適切な ICorDebugXXX インターフェイスを使用します。 その後、セッションのデバッグ マネージャー (SDM) に、状態の変更を通信[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
-
-> [!NOTE]
-> デバッグ エンジンは、特定のランタイム、つまり、デバッグ対象のプログラムが実行されるシステムを対象とします。 CLR はマネージ コードのランタイムであり、Win32 ランタイムはネイティブ Windows アプリケーション用です。 作成した言語がこれら 2 つのランタイムのいずれかを対象とできる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]場合は、必要なデバッグ エンジンが既に提供されています。 実装する必要があるのは、式エバリュエーターです。
-
-## <a name="debug-engine-operation"></a>デバッグ エンジン操作
- 監視サービスは DE インターフェイスを通じて実装され、デバッグ パッケージが異なる動作モード間で遷移する可能性があります。 詳細については、[操作モード](../../extensibility/debugger/operational-modes.md)を参照してください。 通常、実行時環境ごとに 1 つの DE 実装しかありません。
+ たとえば、共通言語ランタイム (CLR) は、実行中のプログラムをコンポーネントのインターフェイスで監視するメカニズムを提供します。 CLR をサポートする DE は、適切なツールのインターフェイスを使用して、デバッグされているマネージコードプログラムを追跡します。 次に、状態の変更をセッションデバッグマネージャー (SDM) に伝達します。これにより、このような情報が IDE に転送さ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] れます。
 
 > [!NOTE]
-> Transact-SQL と[!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]の個別の DE 実装と、VBScript と[!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)]は、1 つの DE を共有します。
+> デバッグエンジンは、特定のランタイム (デバッグ対象のプログラムが実行されるシステム) を対象とします。 CLR はマネージコードのランタイムであり、Win32 ランタイムはネイティブ Windows アプリケーション用です。 作成した言語がこれら2つのランタイムのいずれかを対象とする場合は、に [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必要なデバッグエンジンが既に用意されています。 実装する必要があるのは、式エバリュエーターだけです。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグを有効にすると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジンは、シェルと同じプロセス内、またはデバッグ対象のプログラムと同じプロセスで実行できます。 後者の形式は、通常、デバッグ中のプロセスが実際にインタプリタの下で実行されているスクリプトであるときに発生します。 スクリプトを監視するには、デバッグ エンジンにインタープリタの詳しい知識が必要です。 この場合、インタプリタは実際にはランタイムです。デバッグ エンジンは、特定のランタイム実装用です。 さらに、単一の DE の実装は、プロセスとマシンの境界間で分割できます (リモート デバッグなど)。
+## <a name="debug-engine-operation"></a>デバッグエンジンの操作
+ 監視サービスは、DE インターフェイスによって実装され、デバッグパッケージが異なる動作モード間で移行する可能性があります。 詳細については、「 [操作モード](../../extensibility/debugger/operational-modes.md)」を参照してください。 通常、実行時環境ごとに1つの DE 実装のみが存在します。
 
- DE はデバッグ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]インターフェイスを公開します。 すべての通信は COM を介して行われます。 DE がインプロセス、アウトプロセス、または別のコンピューターにロードされているかどうかは、コンポーネントの通信には影響しません。
+> [!NOTE]
+> Transact-sql とでは個別の DE が実装されてい [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] ますが、VBScript を使用して [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 1 つの de を共有します。
 
- DE は式エバリュエーター コンポーネントと連携して、その特定のランタイムの DE が式の構文を理解できるようにします。 また、デは、言語コンパイラによって生成されたシンボリック デバッグ情報にアクセスするシンボル ハンドラー コンポーネントと連携します。 詳細については、「[式エバリュエーター](../../extensibility/debugger/expression-evaluator.md) 」および[「シンボル プロバイダー](../../extensibility/debugger/symbol-provider.md)」を参照してください。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] デバッグを使用すると、デバッグエンジンは、シェルと同じプロセス内、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] またはデバッグ対象のプログラムと同じプロセスで、次の2つの方法のいずれかを実行できます。 後者の形式は通常、デバッグ中のプロセスが、実際にはインタープリターで実行されるスクリプトである場合に発生します。 デバッグエンジンは、スクリプトを監視するためにインタープリターに関する詳しい知識を持っている必要があります。 この場合、インタープリターは実際にはランタイムです。デバッグエンジンは、特定のランタイム実装に使用されます。 さらに、単一の DE の実装は、プロセスとコンピューターの境界を越えて分割できます (リモートデバッグなど)。
+
+ DE はデバッグインターフェイスを公開し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 すべての通信は COM を介して行われます。 DE がインプロセス、アウトプロセス、または別のコンピューターのどちらに読み込まれても、コンポーネントの通信には影響しません。
+
+ DE は式エバリュエーターコンポーネントと連携して、特定のランタイムが式の構文を理解できるようにします。 また、DE は、シンボルハンドラーコンポーネントと共に、言語コンパイラによって生成されるシンボリックデバッグ情報にアクセスします。 詳細については、「 [式エバリュエーター](../../extensibility/debugger/expression-evaluator.md) と [シンボルプロバイダー](../../extensibility/debugger/symbol-provider.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)
+- [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)
 - [式エバリュエーター](../../extensibility/debugger/expression-evaluator.md)
-- [シンボル プロバイダー](../../extensibility/debugger/symbol-provider.md)
+- [シンボルプロバイダー](../../extensibility/debugger/symbol-provider.md)
