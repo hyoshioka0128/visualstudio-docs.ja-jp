@@ -1,5 +1,5 @@
 ---
-title: メソッドの評価メソッド::プロパティマイクロソフトドキュメント
+title: 'IDebugExpressionEvaluator:: GetMethodProperty |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729502"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-このメソッドは、メソッドのローカル、引数、およびその他のプロパティを含むプロパティ オブジェクトを取得します。
+このメソッドは、メソッドのローカル、引数、およびその他のプロパティを格納しているプロパティオブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,25 +49,25 @@ int GetMethodProperty(
 
 ## <a name="parameters"></a>パラメーター
 `pSymbolProvider`\
-[in][使用](../../../extensibility/debugger/reference/idebugsymbolprovider.md)するシンボル プロバイダー。
+から使用するシンボルプロバイダー。 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) オブジェクトとして表現されます。
 
 `pAddress`\
-[in]最も近い包含関数に解決する必要がある[、IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクトとして表されるコード内のアドレス。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) オブジェクトとして表される、最も近い関数に解決される必要がある、コード内のアドレス。
 
 `pBinder`\
-[in]使用するバインダーを[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)オブジェクトとして表します。
+から使用するバインダー。 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) オブジェクトとして表現されます。
 
 `fIncludeHiddenLocals`\
-[in]非ゼロ`TRUE`( ) は、隠されたローカル変数を含める手段です。ゼロ`FALSE`( ) は隠されたローカルを除外することを意味します。
+から0以外 () は、 `TRUE` 非表示のローカルを含めることを意味します。ゼロ ( `FALSE` ) は、隠しローカルを除外することを意味します。
 
 `ppProperty`\
-[アウト]メソッドを表す[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトを返します。
+入出力メソッドを表す [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 隠しローカル変数は、通常、コンパイラによって生成される変数です。
+## <a name="remarks"></a>解説
+ 非表示のローカルは、通常、コンパイラによって生成される変数です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

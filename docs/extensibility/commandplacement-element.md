@@ -1,5 +1,5 @@
 ---
-title: コマンド配置要素 |マイクロソフトドキュメント
+title: CommandPlacement 要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739737"
 ---
-# <a name="commandplacement-element"></a>コマンド配置要素
-CommandPlacement 要素を使用すると、ボタン、グループ、およびメニューを複数のグループまたはメニューに含めることができ、 CommandPlacement 要素を使用すると、ユーザー インターフェイスの外観を変更するためにこれらの項目を完全に再定義する必要はありません。
+# <a name="commandplacement-element"></a>CommandPlacement 要素
+CommandPlacement 要素を使用すると、ボタン、グループ、およびメニューを複数のグループまたはメニューに含めることができます。 CommandPlacement 要素を使用すると、ユーザーインターフェイスの外観を変更するために、これらの項目を完全に再定義する必要はありません。
 
- 詳細については、「[ボタンの再利用可能なグループを作成する](../extensibility/creating-reusable-groups-of-buttons.md)」を参照してください。
+ 詳細については、「 [再利用可能なボタンのグループの作成](../extensibility/creating-reusable-groups-of-buttons.md)」を参照してください。
 
 ## <a name="syntax"></a>構文
 
@@ -38,10 +38,10 @@ CommandPlacement 要素を使用すると、ボタン、グループ、および
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須。 [Symbols 要素](../extensibility/symbols-element.md)で定義されているコマンド セットの GUID。|
-|id|必須。 で定義されているメニュー、グループ、またはコマンドの ID を指定します`Symbols Element`。|
+|guid|必須。 [Symbols 要素](../extensibility/symbols-element.md)で定義されているコマンドセットの guid。|
+|id|必須。 に定義されている、配置するメニュー、グループ、またはコマンドの id `Symbols Element` 。|
 |priority|必須。 親要素内の項目の視覚的な位置を決定します。|
-|条件|省略可能。 [「条件付き A 属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
@@ -53,7 +53,7 @@ CommandPlacement 要素を使用すると、ボタン、グループ、および
 
 |要素|説明|
 |-------------|-----------------|
-|[コマンド配置要素](../extensibility/commandplacements-element.md)|コマンド配置要素とコマンド配置要素のグループを指定します。|
+|[CommandPlacements 要素](../extensibility/commandplacements-element.md)|Commandplacements 要素および Commandplacements 要素のグループを指定します。|
 
 ## <a name="example"></a>例
 
@@ -67,5 +67,5 @@ CommandPlacement 要素を使用すると、ボタン、グループ、および
 ```
 
 ## <a name="see-also"></a>関連項目
-- [コマンド配置要素](../extensibility/commandplacements-element.md)
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [CommandPlacements 要素](../extensibility/commandplacements-element.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

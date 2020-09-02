@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : ビルド イベントを指定する (Visual Basic) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670677"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>方法 : ビルド イベントを指定する (Visual Basic)
@@ -128,11 +128,11 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
 
 1. 発行するプロジェクト用の Windows アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をクリックし、 **[プロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、 **[Windows]** 、 **[Windows アプリケーション]** テンプレートの順に選択します。 プロジェクトに `VBWinApp` という名前を付けます。
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Basic]** ノードで、**[Windows]**、**[Windows アプリケーション]** テンプレートの順に選択します。 プロジェクトに `VBWinApp` という名前を付けます。
 
 3. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-4. プロジェクト デザイナーで、 **[発行]** ページに移動し、 **[発行場所]** を `C:\TEMP\` に設定します。
+4. プロジェクト デザイナーで、**[発行]** ページに移動し、**[発行場所]** を `C:\TEMP\` に設定します。
 
 5. **[今すぐ発行]** をクリックして、プロジェクトを発行します。
 
@@ -144,7 +144,7 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. プロジェクト デザイナーで、 **[コンパイル]** タブに移動し、 **[ビルド イベント]** ボタンをクリックして **[ビルド イベント]** ダイアログ ボックスを開きます。
+6. プロジェクトデザイナーで、[ **コンパイル** ] タブにアクセスし、[ **ビルドイベント** ] ボタンをクリックして [ **ビルドイベント** ] ダイアログボックスを開きます。
 
 7. **[ビルド後に実行するコマンド ライン]** ボックスに次のコマンドを入力します。
 
@@ -165,4 +165,4 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
     ```
 
 ## <a name="see-also"></a>参照
- [コンパイルプロパティの管理](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [[コンパイル] ページ、プロジェクトデザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [[発行] ページ、プロジェクトデザイナーの [](../ide/reference/publish-page-project-designer.md) [ビルド前に実行するコマンドライン]/[ビルド後に実行するコマンドライン] ダイアログボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)[方法: ビルドイベントを指定するC#()](../ide/how-to-specify-build-events-csharp.md)
+ [コンパイルプロパティの管理](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [[コンパイル] ページ、プロジェクトデザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [[発行] ページ、プロジェクトデザイナーの [](../ide/reference/publish-page-project-designer.md) [ビルド前に実行するコマンドライン]/[ビルド後に実行するコマンドライン] ダイアログボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)[方法: ビルドイベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)

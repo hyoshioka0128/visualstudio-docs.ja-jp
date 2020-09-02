@@ -9,13 +9,13 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1961b3f67f07f5d3015e7891786b6b213c8e8852
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204578"
 ---
 # <a name="extending-connected-services"></a>接続済みサービスの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 接続済みサービス SDK には、サービス プロバイダーがアプリの開発者で、Visual Studio IDE を離れることがなく、プロジェクトに追加できる簡単に Visual Studio 拡張機能を作成することができます。
+Visual Studio 接続済みサービス SDK を使用すると、サービスプロバイダーは visual studio の拡張機能を作成できます。これにより、アプリ開発者は Visual studio IDE を離れることなく簡単にプロジェクトに追加できます。

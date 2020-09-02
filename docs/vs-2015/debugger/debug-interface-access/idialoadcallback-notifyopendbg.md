@@ -1,5 +1,5 @@
 ---
-title: Idialoadcallback::notifyopendbg |Microsoft Docs
+title: 'IDiaLoadCallback:: NotifyOpenDBG |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12dd028cac885978589524aaf02f110a5a6994c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151976"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-候補 .dbg ファイルが開かれたときに呼び出されます。  
+Dbg ファイルが開かれたときに呼び出されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,13 +36,13 @@ HRESULT NotifyOpenDBG ( 
   
 #### <a name="parameters"></a>パラメーター  
  `dbgPath`  
- [in].Dbg ファイルの完全パス。  
+ からDbg ファイルの完全パス。  
   
  `resultCode`  
- [in]成功を示すコード (`S_OK`) またはこのファイルに適用されると、負荷の失敗。  
+ から`S_OK`このファイルに適用された読み込みの成功 () または失敗を示すコード。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 リターン コードは通常は無視されます。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 通常、リターンコードは無視されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
