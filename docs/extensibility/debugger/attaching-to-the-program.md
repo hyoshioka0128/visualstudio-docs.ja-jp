@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903216"
 ---
 # <a name="attach-to-the-program"></a>プログラムにアタッチする
@@ -23,15 +23,15 @@ ms.locfileid: "85903216"
 ## <a name="choose-how-to-attach"></a>アタッチ方法の選択
  セッションデバッグマネージャー (SDM) がデバッグ中のプログラムへのアタッチを試行するには、3つの方法があります。
 
-1. [Launchsuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッド (解釈された言語など) を通じてデバッグエンジンによって起動されるプログラムの場合、SDM は、アタッチされているプログラムに関連付けられている[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトから[IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)インターフェイスを取得します。 SDM がインターフェイスを取得できる場合 `IDebugProgramNodeAttach2` 、sdm は[onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッドを呼び出します。 `IDebugProgramNodeAttach2::OnAttach`メソッドは、 `S_OK` プログラムにアタッチされていないこと、および他の試行をプログラムにアタッチできることを示すためにを返します。
+1. [Launchsuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッド (解釈された言語など) を通じてデバッグエンジンによって起動されるプログラムの場合、SDM は、アタッチされているプログラムに関連付けられている[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトから[IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)インターフェイスを取得します。 SDM がインターフェイスを取得できる場合 `IDebugProgramNodeAttach2` 、sdm は [onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) メソッドを呼び出します。 `IDebugProgramNodeAttach2::OnAttach`メソッドは、 `S_OK` プログラムにアタッチされていないこと、および他の試行をプログラムにアタッチできることを示すためにを返します。
 
-2. SDM がアタッチされているプログラムから[IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)インターフェイスを取得できる場合、Sdm は[Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)メソッドを呼び出します。 この方法は、ポートサプライヤーによってリモートで起動されたプログラムには一般的です。
+2. SDM がアタッチされているプログラムから [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) インターフェイスを取得できる場合、Sdm は [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md) メソッドを呼び出します。 この方法は、ポートサプライヤーによってリモートで起動されたプログラムには一般的です。
 
-3. またはメソッドを使用してプログラムをアタッチできない場合 `IDebugProgramNodeAttach2::OnAttach` `IDebugProgramEx2::Attach` 、SDM は関数を呼び出してデバッグエンジン (まだ読み込まれていない場合) を読み込み、 `CoCreateInstance` その後[Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドを呼び出します。 この方法は、ポートサプライヤーによってローカルに起動されるプログラムには一般的です。
+3. またはメソッドを使用してプログラムをアタッチできない場合 `IDebugProgramNodeAttach2::OnAttach` `IDebugProgramEx2::Attach` 、SDM は関数を呼び出してデバッグエンジン (まだ読み込まれていない場合) を読み込み、 `CoCreateInstance` その後 [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドを呼び出します。 この方法は、ポートサプライヤーによってローカルに起動されるプログラムには一般的です。
 
     カスタムポート供給業者が `IDebugEngine2::Attach` メソッドのカスタムポートサプライヤーの実装でメソッドを呼び出すこともでき `IDebugProgramEx2::Attach` ます。 通常、この場合、カスタムポートサプライヤーは、リモートコンピューターでデバッグエンジンを起動します。
 
-   添付ファイルは、セッションデバッグマネージャー (SDM) が[Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドを呼び出すと実行されます。
+   添付ファイルは、セッションデバッグマネージャー (SDM) が [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドを呼び出すと実行されます。
 
    デバッグ対象のアプリケーションと同じプロセスで DE を実行する場合は、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)の次のメソッドを実装する必要があります。
 
@@ -43,7 +43,7 @@ ms.locfileid: "85903216"
 
   `IDebugEngine2::Attach`メソッドが呼び出された後、メソッドの実装で次の手順を実行し `IDebugEngine2::Attach` ます。
 
-1. [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)イベントオブジェクトを SDM に送信します。 詳細については、「[イベントの送信](../../extensibility/debugger/sending-events.md)」を参照してください。
+1. [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)イベントオブジェクトを SDM に送信します。 詳細については、「 [イベントの送信](../../extensibility/debugger/sending-events.md)」を参照してください。
 
 2. メソッドに渡された[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)オブジェクトに対して[getprogramid](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)メソッドを呼び出し `IDebugEngine2::Attach` ます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "85903216"
     > [!NOTE]
     > インターフェイスを実装すると `IDebugProgramNodeAttach2` 、プログラムの `GUID` がメソッドに渡され `IDebugProgramNodeAttach2::OnAttach` ます。 これ `GUID` は `GUID` 、メソッドによって返されるプログラムのために使用され `IDebugProgram2::GetProgramId` ます。
 
-3. [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)イベントオブジェクトを送信して、プログラムを表すためにローカルオブジェクトが作成されたことを SDM に通知し `IDebugProgram2` ます。 詳細については、「[イベントの送信](../../extensibility/debugger/sending-events.md)」を参照してください。
+3. [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)イベントオブジェクトを送信して、プログラムを表すためにローカルオブジェクトが作成されたことを SDM に通知し `IDebugProgram2` ます。 詳細については、「 [イベントの送信](../../extensibility/debugger/sending-events.md)」を参照してください。
 
     > [!NOTE]
     > これは `IDebugProgram2` 、メソッドに渡されたオブジェクトと同じではありません `IDebugEngine2::Attach` 。 以前に渡されたオブジェクトは、 `IDebugProgram2` ポートでのみ認識され、独立したオブジェクトです。
@@ -68,5 +68,5 @@ ms.locfileid: "85903216"
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
-- [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)
-- [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [[アタッチ]](../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+- [[アタッチ]](../../extensibility/debugger/reference/idebugengine2-attach.md)

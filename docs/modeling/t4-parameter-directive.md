@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591802"
 ---
 # <a name="t4-parameter-directive"></a>T4 パラメーター ディレクティブ
 
-Visual Studio テキスト テンプレートで、`parameter`ディレクティブは、外部のコンテキストから渡された値で初期化される テンプレート コードのプロパティを宣言します。 テキスト変換を呼び出すコードを記述する場合は、これらの値を設定できます。
+Visual Studio テキストテンプレートでは、ディレクティブは、 `parameter` 外部コンテキストから渡された値から初期化されるテンプレートコード内のプロパティを宣言します。 テキスト変換を呼び出すコードを記述する場合は、これらの値を設定できます。
 
 ## <a name="using-the-parameter-directive"></a>Parameter ディレクティブの使用
 
@@ -24,11 +24,11 @@ Visual Studio テキスト テンプレートで、`parameter`ディレクティ
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- `parameter`ディレクティブは、テンプレート コードの外部のコンテキストから渡された値により初期化されるプロパティを宣言します。 テキスト変換を呼び出すコードを記述する場合は、これらの値を設定できます。 値としては`Session`ディクショナリ、または <xref:System.Runtime.Remoting.Messaging.CallContext> のいずれかを渡すことができます。
+ ディレクティブは、 `parameter` 外部コンテキストから渡された値から初期化されるテンプレートコード内のプロパティを宣言します。 テキスト変換を呼び出すコードを記述する場合は、これらの値を設定できます。 値は、 `Session` ディクショナリまたはで渡すことができ <xref:System.Runtime.Remoting.Messaging.CallContext> ます。
 
- リモート処理可能な型のパラメーターを宣言できます。 すなわち、型は <xref:System.SerializableAttribute> をもって宣言されるか、<xref:System.MarshalByRefObject> から派生する必要があります。 これにより、テンプレートを処理する AppDomain にパラメーターの値を渡すことが許されます。
+ リモート処理可能な型のパラメーターを宣言できます。 つまり、型はを使用して宣言する <xref:System.SerializableAttribute> か、から派生する必要があり <xref:System.MarshalByRefObject> ます。 これにより、テンプレートが処理される AppDomain にパラメーター値を渡すことができます。
 
- たとえば、次の内容のテキスト テンプレートを記述できます。
+ たとえば、次の内容を含むテキストテンプレートを作成できます。
 
 ```
 <#@ template language="C#" #>
@@ -59,7 +59,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>呼び出しコンテキストで値を渡す
- <xref:System.Runtime.Remoting.Messaging.CallContext> 中で論理データとして値を渡すこともできます。
+ 別の方法として、の論理データとして値を渡すこともでき <xref:System.Runtime.Remoting.Messaging.CallContext> ます。
 
  次の例では、両方のメソッドを使用して値を渡します。
 
@@ -82,10 +82,10 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>ランタイム (前処理された) テキスト テンプレートに値を渡す
- 通常、ランタイム (前処理された) テキスト テンプレートで `<#@parameter#>`ディレクティブを使用する必要はありません。 代わりに、生成されたコードに対して追加のコンストラクターや設定可能なプロパティを定義し、パラメーターの値を渡すことができます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>実行時 (前処理済み) テキストテンプレートに値を渡す
+ 通常、ランタイム (前処理され `<#@parameter#>` た) テキストテンプレートでは、ディレクティブを使用する必要はありません。 代わりに、生成されたコードの追加のコンストラクターまたは設定可能なプロパティを定義して、パラメーター値を渡すことができます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
- ただし、ランタイムテンプレートで `<#@parameter>` を使用する場合、`Session`ディクショナリを使用して渡すこともできます。 例として、 `PreTextTemplate1` という名前の前処理済みテンプレートとしてファイルを作成したとします。 テンプレートは、次のコードを使用して、プログラムで呼び出すことができます。
+ ただし、をランタイムテンプレートで使用する場合は、 `<#@parameter>` セッションディクショナリを使用して値を渡すことができます。 例として、という前処理済みテンプレートとしてファイルを作成したとし `PreTextTemplate1` ます。 次のコードを使用して、プログラムでテンプレートを呼び出すことができます。
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -96,7 +96,7 @@ t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>TextTemplate .exe から引数を取得する
+## <a name="obtaining-arguments-from-texttemplateexe"></a>TextTemplate.exe から引数を取得する
 
 > [!IMPORTANT]
-> `parameter`ディレクティブは、`TextTransform.exe`ユーティリティの`-a`のパラメーターで設定された値を取得できません。 これらの値を取得するには、`template`ディレクティブで、`hostSpecific="true"` を設定し、`this.Host.ResolveParameterValue("","","argName")` を使用します。
+> ディレクティブは、 `parameter` `-a` ユーティリティのパラメーターに設定された値を取得しません `TextTransform.exe` 。 これらの値を取得するには、ディレクティブでを設定し、を `hostSpecific="true"` `template` 使用し `this.Host.ResolveParameterValue("","","argName")` ます。

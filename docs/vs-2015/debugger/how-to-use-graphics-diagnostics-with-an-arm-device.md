@@ -1,5 +1,5 @@
 ---
-title: '方法: ARM デバイスでグラフィックス診断を使用して |Microsoft Docs'
+title: '方法: ARM デバイスでグラフィックス診断を使用する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685873"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>方法: ARM デバイスでグラフィックス診断を使用してください。
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>方法: ARM デバイスでグラフィックス診断を使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 グラフィックス診断は、Windows RT 8.1 または Windows Phone 8.1 を実行する ARM ベースのデバイスで Direct3D アプリケーションのリモート デバッグをサポートします。 Direct3D がデバイス上で実行されている間に、Direct3D アプリケーショングラフィックス情報をキャプチャできます。また以前にキャプチャしたグラフィックス情報については、デバイスを再生コンピューターとして使用できます。  
@@ -28,23 +28,23 @@ ms.locfileid: "65685873"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>ARM ベースのデバイス上でリモート デバッギングを有効にするには  
   
-1. インストール、 [ARM Kits Policy](https://msdn.microsoft.com/windows/desktop/dn469188) ARM ベースのデバイスにします。  
+1. Arm ベースのデバイスに [Arm キットポリシー](https://msdn.microsoft.com/windows/desktop/dn469188) をインストールします。  
   
-2. インストール、 [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) ARM ベースのデバイスにします。  
+2. ARM ベースのデバイスに [リモートデバッグツール](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) をインストールします。  
   
 > [!IMPORTANT]
-> Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、次を参照してください。[展開および Windows Phone 8 向けアプリを実行する方法](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)します。  
+> Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、「 [Windows Phone 8 用にアプリをデプロイして実行する方法](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)」を参照してください。  
   
  デバイス上でリモート デバッギングを有効にしたら、デバイスをデバッグ ターゲットにしてグラフィックス診断を開始します。  
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>デバイス上でグラフィックス診断を構成および開始するには  
   
-1. **ソリューション プラットフォーム**ドロップダウン リストで、 **ARM** ARM ベースのデバイスをリモート デバッグ ターゲットとして使用できるようにします。  
+1. ARM ベースのデバイスをリモートデバッグターゲットとして使用できるようにするには、[ **ソリューションプラットフォーム** ] ドロップダウンリストで [ **arm** ] を選択します。  
   
-2. **デバッグ ターゲット**ドロップダウン リストで、ARM デバイスを選択します。  
+2. [ **デバッグターゲット** ] ドロップダウンリストで、ARM デバイスを選択します。  
   
-3. メニューで、次のように選択します。**デバッグ**、**グラフィックス**、**診断の開始**します。 (キーボード:Alt キーを押しながら f5 キー)  
+3. メニューで、[ **デバッグ**]、[ **グラフィックス**]、[ **診断の開始**] の順に選択します。 (キーボード: Alt + F5)  
   
-## <a name="see-also"></a>関連項目  
- [リモート コンピューター上の Windows ストア アプリを実行します。](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
+## <a name="see-also"></a>参照  
+ [リモートコンピューターでの Windows ストアアプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [方法: グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

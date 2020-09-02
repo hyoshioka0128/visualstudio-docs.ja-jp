@@ -53,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
 ## <a name="in-this-section"></a>このセクションの内容
  [チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md) Visual Studio の外部でテキストテンプレート機能を使用できるようにするカスタムテキストテンプレートホストを作成する方法について説明します。
 
-## <a name="reference"></a>リファレンス
+## <a name="reference"></a>関連項目
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>関連項目
