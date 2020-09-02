@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 869980fe7bbb773d566dffd38088b003e3a97a3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145643"
 ---
 # <a name="cores-view"></a>コア ビュー
@@ -29,7 +29,7 @@ ms.locfileid: "68145643"
   
  凡例領域には、グラフの各色に対するエントリがあります。 各エントリには、スレッドの色と名前、クロスコア コンテキスト スイッチの数、コンテキスト スイッチの総数、およびクロスコア コンテキスト スイッチの割合が示されます。 凡例は、クロスコア コンテキスト スイッチの数が多い順に並べられています。 表示されている時間範囲中に実行されたスレッドのみが一覧表示されます。  ズームまたはパンすると、リストが更新されます。  
   
-## <a name="see-also"></a>関連項目  
- [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)   
+## <a name="see-also"></a>参照  
+ [同時実行ビジュアライザー](../profiling/concurrency-visualizer.md)   
  [使用状況ビュー](../profiling/utilization-view.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

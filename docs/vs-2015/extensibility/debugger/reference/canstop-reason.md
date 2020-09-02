@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 277164ea3dfcdabbe24622bb5148ebd75d54f8c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561853"
 ---
-# <a name="canstopreason"></a>CANSTOP_REASON
+# <a name="canstop_reason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-プログラムが実行の特定のポイントに到達した後の実行を停止するかどうかを判断するために使用します。  
+プログラムの実行を特定の時点に達した後に実行を停止できるかどうかを判断するために使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,21 +43,21 @@ public enum enum_CANSTOP_REASON { 
   
 ## <a name="members"></a>メンバー  
  CANSTOP_ENTRYPOINT  
- 特定のプログラムのエントリ ポイントを指定します。  
+ 指定されたプログラムのエントリポイントを指定します。  
   
  CANSTOP_STEPIN  
- 関数にステップ インを指定します。  
+ 関数へのステップインを指定します。  
   
-## <a name="remarks"></a>Remarks  
- 引数として渡される、 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)セッション デバッグ マネージャー (SDM) の場合は、プログラムのエントリ ポイントに到達した後、または関数またはメソッドにステップ インした後に停止しても問題をことを確認します。  
+## <a name="remarks"></a>注釈  
+ プログラムのエントリポイントに到達した後、または関数またはメソッドにステップインした後に、セッションデバッグマネージャー (SDM) で確認するために、 [Getreason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) メソッドに引数として渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

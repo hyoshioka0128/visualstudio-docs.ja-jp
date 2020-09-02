@@ -1,5 +1,5 @@
 ---
-title: Idiadatasource::get_lasterror |Microsoft Docs
+title: 'IDiaDataSource:: get_lastError |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ad0570436dda6ac9ae52325c891b32a563cf6f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547365"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-最後の読み込みエラーのファイル名を取得します。  
+前回の読み込みエラーのファイル名を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,11 +34,11 @@ HRESULT get_lastError (
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- pRetVal  
- [out]最後の読み込みエラーに関連付けられている .pdb ファイル名を含む文字列を返します。  
+ の場合は、  
+ 入出力最後の読み込みエラーに関連付けられた .pdb ファイル名を含む文字列を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 読み込み操作による最後のエラー コードを返します。 返します`E_INVALIDARG`場合、`pRetVal`パラメーターが`NULL`します。  
+ 読み込み操作によって発生した最後のエラーコードを返します。 `E_INVALIDARG`パラメーターがの場合は、を返し `pRetVal` `NULL` ます。  
   
 ## <a name="example"></a>例  
   
@@ -47,5 +47,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

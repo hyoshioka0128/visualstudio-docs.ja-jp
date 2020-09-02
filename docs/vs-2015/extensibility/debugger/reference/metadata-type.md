@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1be7cb6071a0307a56285b8929e52e038c263fdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546825"
 ---
-# <a name="metadatatype"></a>METADATA_TYPE
+# <a name="metadata_type"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-この構造体には、メタデータから取得したフィールドの種類に関する情報を指定します。  
+この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,29 +44,29 @@ public struct METADATA_TYPE {
   
 #### <a name="parameters"></a>パラメーター  
  ulAppDomainID  
- シンボルが元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。  
+ シンボルの取得元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するために使用されます。  
   
  guidModule  
- このフィールドが含まれるモジュールの GUID です。  
+ このフィールドを含むモジュールの GUID。  
   
  tokClass  
- この型のメタデータ トークン ID。  
+ この型のメタデータトークン ID。  
   
- [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。  
+ [C++] `_mdToken` は、 `typedef` 32 ビットのです `int` 。  
   
-## <a name="remarks"></a>Remarks  
- 共用体の一部としてこの構造体が表示されます、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)ときに構造体、`dwKind`のフィールド、`TYPE_INFO`構造に設定されている`TYPE_KIND_METADATA`(からの値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列挙型)。  
+## <a name="remarks"></a>注釈  
+ この構造体は、構造体のフィールドがに設定されている場合に、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体の共用体の一部として表示され `dwKind` `TYPE_INFO` `TYPE_KIND_METADATA` ます ( [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 列挙型の値)。  
   
- `tokClass`値が型を一意に識別するメタデータ トークン。 メタデータ トークン ID の上位ビットを解釈する方法の詳細については、次を参照してください。、`CorTokenType`で corhdr.h ファイルで列挙、 [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] SDK。  
+ `tokClass`値は、型を一意に識別するメタデータトークンです。 メタデータトークン ID の上位ビットを解釈する方法の詳細については、 `CorTokenType` SDK の corhdr .h ファイルの列挙体を参照してください [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] 。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

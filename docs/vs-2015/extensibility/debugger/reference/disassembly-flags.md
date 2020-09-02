@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d48fcf9dd941194b56e2c794ad7f5673f8e58421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159316"
 ---
-# <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
+# <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 逆アセンブリのフラグを指定します。  
@@ -51,35 +51,35 @@ public enum enum_DISASSEMBLY_FLAGS { 
   
 ## <a name="members"></a>メンバー  
  DF_DOCUMENTCHANGE  
- この命令が別のドキュメントは、前のことを示します。  
+ この命令が前のドキュメントとは異なるドキュメントにあることを示します。  
   
  DF_DISABLED  
- この命令は実行されないことを示します。  
+ この命令が実行されないことを示します。  
   
  DF_INSTRUCTION_ACTIVE  
- この命令が実行される次の手順のいずれかであることを示します (あります 1 つ以上)。  
+ この命令が、次に実行される命令の1つであることを示します (複数存在する場合もあります)。  
   
  DF_DATA  
- この命令は、データ (コードではなく) で、実際にあることを示します。  
+ この命令が (コードではなく) 実際のデータであることを示します。  
   
  DF_HASSOURCE  
- この命令にソースがあることを示します。 プロファイルまたはガベージ コレクションのコードなどのいくつかの手順では、対応するソースがあるありません。  
+ この命令にソースがあることを示します。 プロファイルやガベージコレクションコードなどの一部の命令には、対応するソースがありません。  
   
  DF_DOCUMENT_CHECKSUM  
- 示します`bstrDocumentUrl`フィールドには、ドキュメントの URL の後のチェックサム データが含まれています。 「解説」を参照してください、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)チェックサム データを格納する方法の構造体。  
+ フィールドに `bstrDocumentUrl` 、ドキュメントの URL の後にチェックサムデータが格納されていることを示します。 チェックサムデータの格納方法については、 [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 構造体の「解説」を参照してください。  
   
-## <a name="remarks"></a>Remarks  
- として使用される、`dwFlags`のメンバー、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体。  
+## <a name="remarks"></a>注釈  
+ `dwFlags` [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md)構造体のメンバーとして使用されます。  
   
- これらのフラグは、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

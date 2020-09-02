@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: グラフィックス診断を使用して計算シェーダーをデバッグする |Microsoft Docs'
+title: 'チュートリアル: グラフィックス診断を使用したコンピューティングシェーダーのデバッグ |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186787"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用
@@ -32,7 +32,7 @@ ms.locfileid: "68186787"
 ## <a name="scenario"></a>シナリオ  
  このシナリオでは、シミュレーション更新の計算量が最も多い部分を実行するために DirectCompute を使用する流体力学シミュレーションを記述しました。 アプリを実行したときに、データセットと UI は正しくレンダリングされますが、シミュレーションが想定どおりに動作しません。 グラフィックス診断を使用すると、グラフィックス ログに問題をキャプチャして、アプリのデバッグを実行できます。 問題は、アプリケーションでは次のように見えます。  
   
- ![シミュレートされた液体は正しく動作します。](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
+ ![シミュレートされた液体の動作が正しくありません。](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
  グラフィックスの問題をグラフィックス ログにキャプチャする方法については、「 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)」をご覧ください。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "68186787"
   
 2. **[フレーム一覧]** で、正しくないシミュレーション動作を示すフレームを選択します。 DirectCompute イベントは Direct3D イベントと共にフレームごとにキャプチャされるため、エラーがレンダリング コードではなくシミュレーション コードに表示されたとしても、フレームを選択する必要があります。 このシナリオでは、グラフィックス ログのタブは次のように表示されます。  
   
-    ![Visual Studio に使用される、グラフィックス ログ ドキュメント。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
+    ![Visual Studio のグラフィックス ログ ドキュメント。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
    問題を示しているフレームを選択したら、 **[グラフィックス イベント一覧]** を使用してそのフレームを診断できます。 **[グラフィックス イベント一覧]** には、フレームがアクティブなときに行われたすべての DirectCompute 呼び出しと Direct3D API 呼び出し (たとえば、GPU で計算を実行する API 呼び出しやデータセットまたは UI をレンダリングする API 呼び出し) のイベントが含まれます。 この場合、GPU で実行されたシミュレーションの一部を表す `Dispatch` イベントに注目します。  
   
@@ -53,19 +53,19 @@ ms.locfileid: "68186787"
   
 1. **[グラフィックス診断]** ツール バーで、 **[イベント一覧]** を選択して、 **[グラフィックス イベント一覧]** ウィンドウを開きます。  
   
-2. データセットをレンダリングする描画イベントの **[グラフィックス イベント一覧]** を調べます。 簡単にするには、次のように入力します。`Draw`で、**検索**の右上隅にあるボックス、**グラフィックス イベント一覧**ウィンドウ。 これによって一覧がフィルター処理され、タイトルに "Draw" を含むイベントのみが一覧に表示されます。 このシナリオでは、これらの描画イベントが発生したことがわかります。  
+2. データセットをレンダリングする描画イベントの **[グラフィックス イベント一覧]** を調べます。 これを簡単にするには、 **[グラフィックス イベント一覧]** ウィンドウの右上隅にある **[検索]** ボックスに「`Draw`」と入力します。 これによって一覧がフィルター処理され、タイトルに "Draw" を含むイベントのみが一覧に表示されます。 このシナリオでは、これらの描画イベントが発生したことがわかります。  
   
-    ![イベント一覧&#40;EL&#41;描画イベントを示しています。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+    ![イベント一覧 &#40;EL&#41; は描画イベントを示しています。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3. グラフィックス ログのドキュメント タブでレンダー ターゲットを観察しながら、各描画イベント間を移動します。  
   
 4. レンダリングされたデータセットがレンダー ターゲットによって最初に表示されたら移動を停止します。 このシナリオでは、データセットは最初の描画イベントでレンダリングされます。 シミュレーションのエラーが表示されます。  
   
-    ![これは、イベントのレンダリングに、シミュレーション データ セットを描画します。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
+    ![この描画イベントはシミュレーション データ セットをレンダリングします。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5. 次に、シミュレーションを更新する `Dispatch` イベントの **[グラフィックス イベント一覧]** を調べます。 シミュレーションはレンダリングされる前に更新される可能性が高いため、結果をレンダリングする描画イベントの前に発生する `Dispatch` イベントに最初に集中できます。 簡単にするには、変更、**検索**ボックス`Draw;Dispatch;CSSetShader(`します。 これによって一覧がフィルター処理され、描画イベントに加えて、`Dispatch` イベントおよび `CSSetShader` イベントも一覧に表示されます。 このシナリオでは、描画イベントの前にいつくかの `Dispatch` イベントが発生したことがわかります。  
+5. 次に、シミュレーションを更新する `Dispatch` イベントの **[グラフィックス イベント一覧]** を調べます。 シミュレーションはレンダリングされる前に更新される可能性が高いため、結果をレンダリングする描画イベントの前に発生する `Dispatch` イベントに最初に集中できます。 これを簡単にするには、`Draw;Dispatch;CSSetShader(` を読み取るように **[検索]** ボックスを変更します。 これによって一覧がフィルター処理され、描画イベントに加えて、`Dispatch` イベントおよび `CSSetShader` イベントも一覧に表示されます。 このシナリオでは、描画イベントの前にいつくかの `Dispatch` イベントが発生したことがわかります。  
   
-    ![EL は描画、ディスパッチ、CSSetShader のイベント](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
+    ![EL は描画、ディスパッチ、CSSetShader のイベントを表示する](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
    これで、多数になる可能性のある `Dispatch` イベントのうち、問題に該当するいくつかのイベントを特定できるので、これらのイベントを詳しく調べることができます。  
   
@@ -83,30 +83,30 @@ ms.locfileid: "68186787"
   
 2. 3 番目の `Dispatch` イベント (描画イベントの直前にあるイベント) を選択し、次に、 **[グラフィックス パイプライン ステージ]** ウィンドウの **[計算シェーダー]** ステージで、 **[デバッグ開始]** をクリックします。  
   
-    ![EL. の 3 つ目のディスパッチ イベントを選択](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
+    ![EL の第 3 のディスパッチ イベントを選択します。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
     統合ステップを実行するシェーダーで HLSL デバッガーが開始されます。  
   
 3. 統合ステップの計算シェーダー ソース コードを調べて、エラーの原因を探します。 グラフィックス診断を使用して、HLSL 計算シェーダー コードをデバッグする場合は、コードをステップ実行したり、ウォッチ ウィンドウなどの他の一般的なデバッグ ツールを使用したりできます。 このシナリオでは、統合ステップを実行する計算シェーダーにエラーがないことを確認します。  
   
-    ![IntegrateCS 計算シェーダーをデバッグします。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
+    ![IntegrateCS 計算シェーダーのデバッグ。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. 計算シェーダーのデバッグを停止する、**デバッグ**ツールバーで、選択**デバッグの停止** (キーボード。Shift + F5)。  
+4. 計算シェーダーのデバッグを停止するには、 **[デバッグ]** ツール バーで、 **[デバッグの停止]** (キーボード: Shift + F5) を選択します。  
   
 5. 次に、2 番目の `Dispatch` イベントを選択し、前のステップで実行したように、計算シェーダーのデバッグを開始します。  
   
-    ![2 番目のディスパッチ イベントを選択する、EL. で](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
+    ![EL の第 2 のディスパッチ イベントを選択します。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
   
     各流体パーティクルに対して作用するフォースを計算するシェーダーで HLSL デバッガーが開始されます。  
   
 6. フォース計算ステップの計算シェーダー ソース コードを調べます。 このシナリオでは、エラーの原因がここにあることを確認します。  
   
-    ![デバッグ、ForceCS&#95;単純な計算シェーダー。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+    ![ForceCS&#95;単純な計算シェーダーをデバッグしています。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
    エラーが発生した場所を確認した後、デバッグを停止して、計算シェーダー ソース コードを変更すると、相互作用するパーティクル間の距離を正しく計算できます。 このシナリオでは、行 `float2 diff = N_position + P_position;` を `float2 diff = N_position - P_position;` に変更するだけです。  
   
-   ![修正されたコンピューティング&#45;シェーダー コード。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+   ![修正された compute&#45;シェーダーコード。](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
    このシナリオでは、計算シェーダーが実行時にコンパイルされるため、変更を加えた後、アプリを再起動するだけで、変更がシミュレーションに及ぼす影響を確認できます。 アプリをリビルドする必要はありません。 アプリを実行すると、シミュレーションが正しく動作していることが確認できます。  
   
-   ![シミュレートされた液体は正しく動作します。](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
+   ![シミュレートされた液体は正しく動作しています。](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
