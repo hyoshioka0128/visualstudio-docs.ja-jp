@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187178"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
@@ -24,43 +24,43 @@ ms.locfileid: "68187178"
 
 このインターフェイスは、命令のストリームを表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugDisassemblyStream2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジンでは、プログラムのコードの混合モードをサポートするには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグエンジンは、プログラムのコードの逆アセンブリをサポートするために、このインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出し、 [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)メソッドは、このインターフェイスを返します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [Getdisassemblystream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)メソッドを呼び出すと、このインターフェイスが返されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugDisassemblyStream2`します。  
+ 次の表に、のメソッドを示し `IDebugDisassemblyStream2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|手順については、混合モードのストリームの現在位置から始まるを読み取ります。|  
-|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|[逆アセンブル] ストリームの指定した位置の基準とした命令数が特定の読み取りポインターを移動します。|  
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|特定のコード コンテキストのコードの場所の識別子を返します。|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|指定したコードの場所の識別子に対応するコードのコンテキスト オブジェクトを返します。|  
-|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|現在のコードの場所を表すコードの場所の識別子を返します。|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|この混合モードのストリームに関連付けられているソース ドキュメントを取得します。|  
-|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|この混合モードのストリームのスコープを取得します。|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|この混合モードのストリームのサイズを取得します。|  
+|[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|逆アセンブリストリームの現在位置から指示を読み取ります。|  
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|指定された位置を基準として、逆アセンブルストリーム内の読み取りポインターを指定された数だけ移動します。|  
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|特定のコードコンテキストのコード位置識別子を返します。|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|指定されたコードの場所の識別子に対応するコードコンテキストオブジェクトを返します。|  
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|現在のコードの場所を表すコード位置識別子を返します。|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|この逆アセンブリストリームに関連付けられているソースドキュメントを取得します。|  
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|この逆アセンブリストリームのスコープを取得します。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|この逆アセンブリストリームのサイズを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- アドレス空間全体だけ関数または領域内のモジュールを表すため、逆アセンブリのストリームを作成できます。 それぞれの命令がによって表される、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)への呼び出しによって返される構造体、[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ 逆アセンブリストリームは、アドレス空間全体を表すために作成することも、スペース内の関数またはモジュールだけを表すように作成することもできます。 各命令は、 [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)メソッドの呼び出しによって返される[disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md)構造体によって表されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

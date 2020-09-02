@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568048"
 ---
 # <a name="collecting-tier-interaction-data"></a>階層相互作用データの収集
@@ -34,7 +34,7 @@ ms.locfileid: "62568048"
   
  **Windows 8 と Windows Server 2012**  
   
- Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで階層相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。 Windows ストア アプリの階層相互作用データを収集することはできません。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。 階層相互作用データは、サポートされている他のバージョンの Windows で、すべてのプロファイル方法に含めることができます。  
+ Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで階層相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。 Windows ストア アプリの階層相互作用データを収集することはできません。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。 階層相互作用データは、サポートされている他のバージョンの Windows で、すべてのプロファイル方法に含めることができます。  
   
  **パフォーマンス ウィザード**  
   
@@ -44,9 +44,9 @@ ms.locfileid: "62568048"
   
 1. パフォーマンス エクスプローラーで、コンテキスト メニューの **[プロパティ]** をクリックします。  
   
-2. **[階層の相互作用]** ページを選択し、**[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。  
+2. **[階層の相互作用]** ページを選択し、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。  
   
-3. パフォーマンス エクスプローラーで、**[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。  
+3. パフォーマンス エクスプローラーで、 **[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。  
   
-## <a name="see-also"></a>関連項目  
- [階層相互作用のビュー](../profiling/tier-interactions-view.md)
+## <a name="see-also"></a>参照  
+ [階層の相互作用ビュー](../profiling/tier-interactions-view.md)

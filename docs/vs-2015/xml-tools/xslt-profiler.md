@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406725"
 ---
 # <a name="xslt-profiler"></a>XSLT プロファイラー
@@ -21,7 +21,7 @@ ms.locfileid: "75406725"
 
 XSLT プロファイラーは、XSLT ドキュメントの開発とデバッグに役立つパフォーマンス分析プロファイラー ツールです。 XSLT プロファイラーを使用して詳細な XSLT パフォーマンス レポートを作成することにより、XSLT コード内のパフォーマンス関連の問題を計測および評価できるようになります。 XSLT プロファイラーには、XSL および XSLT のスタイル シートの最適化に役立つヒントが含まれており、最高のパフォーマンスが必要になる XSLT ベースのアプリケーションには不可欠です。
 
- XSLT プロファイラーは Visual Studio 2010 に含まれており、Visual Studio の **[XML]** メニューから使用できます。
+ XSLT プロファイラーは Visual Studio 2010 に含まれており、Visual Studio の [ **XML** ] メニューから使用できます。
 
  ![XSLT プロファイラー](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 

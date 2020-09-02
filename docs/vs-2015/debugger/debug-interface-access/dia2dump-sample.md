@@ -15,28 +15,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197592"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump サンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dia2dump サンプルでは、Visual Studio と共にインストールされ、Dia2dump.cpp ソース ファイルが含まれています。 コンパイル済み実行可能ファイルは、コマンドラインから実行し、プログラム全体のデータベース (.pdb) ファイルの内容を表示します。  
+Dia2dump サンプルは Visual Studio と共にインストールされ、Dia2dump ソースファイルが含まれています。 コンパイルされた実行可能ファイルは、コマンドラインから実行され、プログラムデータベース (.pdb) ファイル全体の内容を表示します。  
   
 ### <a name="to-install-the-sample"></a>サンプルをインストールするには  
   
-1. システムが Visual Studio セットアップの開始 ページで説明されているすべてのセットアップ要件を満たしていることを確認します。  
+1. Visual Studio セットアップの開始ページで説明されているすべてのセットアップ要件をシステムが満たしていることを確認します。  
   
-2. Visual Studio をインストールして、サンプルは、のすべてのセットアップとインストールの指示に従います。  
+2. Visual Studio をインストールし、含まれているサンプルのすべてのセットアップとインストール手順に従います。  
   
 #### <a name="to-build-the-sample"></a>サンプルをビルドするには  
   
-1. Visual Studio で Dia2dump.sln ファイルを開きます。 (必要に応じて、Visual Studio 最初する際に役立つ Dia2dump プロジェクトをアップグレードします。)  
+1. Visual Studio で Dia2dump ファイルを開きます。 (必要に応じて、Visual Studio は、Dia2dump プロジェクトをアップグレードするために最初に役立ちます)。  
   
-2. プロジェクトのプロパティ ページでの**C と C++** &#124; **全般** &#124; **追加のインクルード ディレクトリ**プロパティを指定、`..\DIA SDK\include`ディレクトリ。 これにより、コンパイラが dia2.h ファイルを見つけることができます。  
+2. プロジェクトのプロパティページの [ **C/c + +** &#124; **全般** &#124; **追加のインクルードディレクトリ** ] プロパティで、ディレクトリを指定し `..\DIA SDK\include` ます。 これにより、コンパイラが dia2 ファイルを見つけられることが保証されます。  
   
 3. **[ビルド]** メニューで、 **[ソリューションのリビルド]** をクリックします。  
   
@@ -44,12 +44,12 @@ Dia2dump サンプルでは、Visual Studio と共にインストールされ、
   
 #### <a name="to-run-the-sample"></a>サンプルを実行するには  
   
-1. コマンド プロンプトを開き、次に入力します。  
+1. コマンド プロンプトを開き、次のコマンドを入力します。  
   
     ```  
     dia2dump filename  
     ```  
   
-## <a name="see-also"></a>関連項目  
- [Dia2dump.cpp ソース ファイル](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
+## <a name="see-also"></a>参照  
+ [Dia2dump ソースファイル](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
  [方法: Visual Studio プロジェクトのアップグレードが成功しなかった場合のトラブルシューティング](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)

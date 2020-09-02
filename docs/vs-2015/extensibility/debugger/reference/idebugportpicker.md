@@ -11,37 +11,37 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e030facd8c70aec4fdc480b01c90ee4c0acda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188391"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ポートを選択するためには、カスタマイズした UI を表します。  
+ポートを選択するためのカスタマイズされた UI を表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortPicker : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- このインターフェイスは、ポートのサプライヤーによって実装されます。 ポート サプライヤー CLSID として公開し、ポイントし、ポートの選択を定義する、`metricPortPickerCLSID`で公開されている CLSID メトリック。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ このインターフェイスは、ポートサプライヤーによって実装されます。 ポートサプライヤーは、ポートピッカーを CLSID として公開し、公開された CLSID でメトリックをポイントすることによって、そのポートの選択を定義し `metricPortPickerCLSID` ます。  
   
 ## <a name="methods"></a>メソッド  
- 次の表は、メソッドの`IDebugPortPicker`します。  
+ 次の表に、のメソッドを示し `IDebugPortPicker` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|ユーザーがポートを選択できる指定されたダイアログ ボックスが表示されます。|  
-|[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|サービス プロバイダーを設定します。|  
+|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|指定されたダイアログボックスを表示し、ユーザーがポートを選択できるようにします。|  
+|[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|サービスプロバイダーを設定します。|  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

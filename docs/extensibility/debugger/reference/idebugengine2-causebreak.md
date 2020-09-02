@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::原因ブレイク |マイクロソフトドキュメント
+title: 'IDebugEngine2:: CauseBreak |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62be3ce13ecbc3180cf2bbcce26b04f3d79edb1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731154"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-このデバッグ エンジン (DE) によってデバッグされているすべてのプログラムが、次にスレッドの 1 つが実行を試みるたびに実行を停止するように要求します。
+は、このデバッグエンジン (DE) によってデバッグされているすべてのプログラムが、次にそのスレッドの実行を試行したときに実行を停止することを要求します。
 
 ## <a name="syntax"></a>構文
 
@@ -38,10 +38,10 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは非同期です: このメソッドが呼び出された後にプログラムが次に実行を試みたときに[、IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)イベントが送信されます。
+## <a name="remarks"></a>解説
+ このメソッドは非同期です。 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) イベントは、このメソッドが呼び出された後にプログラムが次に実行を試行したときに送信されます。
 
 ## <a name="see-also"></a>関連項目
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

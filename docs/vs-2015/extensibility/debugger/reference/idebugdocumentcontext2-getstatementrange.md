@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange |Microsoft Docs
+title: 'IDebugDocumentContext2:: GetStatementRange |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68411ac4ded03c83ad0ad1e414107e6591f4e975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145057"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ドキュメント コンテキストのファイルのステートメントの範囲を取得します。  
+ドキュメントコンテキストのファイルステートメントの範囲を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,21 +42,21 @@ int GetStatementRange( 
   
 #### <a name="parameters"></a>パラメーター  
  `pBegPosition`  
- [入力、出力]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体の開始位置が入力されます。 この情報が必要でない場合は、この引数を null 値を設定します。  
+ [入力、出力]開始位置を格納する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。 この情報が不要な場合は、この引数を null 値に設定します。  
   
  `pEndPosition`  
- [入力、出力]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体の終了位置が入力されます。 この情報が必要でない場合は、この引数を null 値を設定します。  
+ [入力、出力]終了位置を格納する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。 この情報が不要な場合は、この引数を null 値に設定します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ステートメントの範囲は、このドキュメントのコンテキストを参照するコードの原因である行の範囲です。  
+## <a name="remarks"></a>注釈  
+ ステートメント範囲は、このドキュメントコンテキストが参照するコードを提供する行の範囲です。  
   
- このドキュメントのコンテキスト内でソース コード (コメントを含む) の範囲を取得する呼び出し、 [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)メソッド。  
+ このドキュメントコンテキスト内のソースコードの範囲 (コメントを含む) を取得するには、 [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) メソッドを呼び出します。  
   
 ## <a name="example"></a>例  
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugContext`を公開するオブジェクト、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)インターフェイス。 この例は、開始位置、null 値でない場合にのみ、終了位置に格納します。  
+ 次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) この例では、開始位置が null 値でない場合にのみ終了位置を入力します。  
   
 ```cpp#  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  
@@ -87,7 +87,7 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 }    
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

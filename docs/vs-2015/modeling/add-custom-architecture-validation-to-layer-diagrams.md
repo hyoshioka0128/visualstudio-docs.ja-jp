@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b5ebe4e38878df209ab6065b1dbca88cd8404b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655306"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>カスタム アーキテクチャ検証をレイヤー図に追加する
@@ -33,7 +33,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 > [!WARNING]
 > 検証プロジェクトを作成したら、このトピックの最後にある [コード例](#example) をコピーし、各自のニーズに合わせて編集してください。
 
-## <a name="requirements"></a>［要件］
+## <a name="requirements"></a>要件
  「 [要件](../modeling/extend-layer-diagrams.md#prereqs)」を参照してください。
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>新しい VSIX でレイヤー検証コントロールを定義する
@@ -43,7 +43,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 
 1. **[ファイル]** メニューの **[新しいプロジェクト]** を使用して、新しいソリューションにプロジェクトを作成します。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[モデリング プロジェクト]** で、 **[Layer Designer Validation Extension]** (レイヤー デザイナー検証拡張機能) をクリックします。
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[モデリング プロジェクト]** で、 **[Layer Designer Validation Extension]**(レイヤー デザイナー検証拡張機能) をクリックします。
 
     このテンプレートでは、小さい例を含むプロジェクトが作成されます。
 
@@ -51,7 +51,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
    > テンプレートの正常動作を makethe には、次の操作を行います。
    >
    > - `LogValidationError` の呼び出しを編集し、省略可能な引数 `errorSourceNodes` と `errorTargetNodes`を削除します。
-   >   - カスタムプロパティを使用する場合は、「[レイヤー図へのカスタムプロパティの追加](../modeling/add-custom-properties-to-layer-diagrams.md)」で説明されている更新プログラムを適用します。
+   >   - カスタムプロパティを使用する場合は、「 [レイヤー図へのカスタムプロパティの追加](../modeling/add-custom-properties-to-layer-diagrams.md)」で説明されている更新プログラムを適用します。
 
 3. コードを編集して検証を定義します。 詳細については、「 [検証のプログラミング](#programming)」を参照してください。
 
@@ -60,7 +60,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
    > [!NOTE]
    > メソッドは特定の状況においてのみ呼び出され、ブレークポイントは自動的には動作しません。 詳細については、「 [レイヤー検証のデバッグ](#debugging)」を参照してください。
 
-5. @No__t_0 のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin \\* で **.vsix**ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 拡張機能をアンインストールするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を使用します。
+5. のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] *bin \\ *で **.vsix**ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 拡張機能をアンインストールするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を使用します。
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>レイヤー検証コントロールを別の VSIX に追加する
  レイヤー検証コントロール、コマンド、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを別にすることをお勧めします。 その他の種類のモデリング拡張機能については、「 [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)」を参照してください。
@@ -71,37 +71,37 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 
 2. ソリューションで VSIX プロジェクトを特定または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest**という名前のファイルが含まれます。 VSIX プロジェクトを追加する必要がある場合は、以下の手順に従います。
 
-    1. **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** 、 **[機能拡張]** 、 **[VSIX プロジェクト]** の順にクリックします。
+    1. **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]**、 **[機能拡張]**、 **[VSIX プロジェクト]** の順にクリックします。
 
     2. **ソリューション エクスプローラー**で、VSIX プロジェクトのショートカット メニューを開き、 **[スタートアップ プロジェクトに設定]** をクリックします。
 
 3. **source.extension.vsixmanifest**の **[アセット]** で、レイヤー検証プロジェクトを MEF コンポーネントとして追加します。
 
-    1. **[新規作成]** をクリックします。
+    1. **[新規]** を選択します。
 
     2. **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のように設定します。
 
-         **[種類]**  = **Microsoft.VisualStudio.MefComponent**
+         **型**  = **VisualStudio. MefComponent**
 
-         **[ソース]**  = **現在のソリューション内のプロジェクト**
+         **ソース**  = **現在のソリューション内のプロジェクト**
 
-         **[プロジェクト]**  = *検証プロジェクト*
+         **プロジェクト**  = *検証プロジェクト*
 
 4. また、このプロジェクトをレイヤー検証として追加する必要があります。
 
-    1. **[新規作成]** をクリックします。
+    1. **[新規]** を選択します。
 
     2. **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のように設定します。
 
-         **[種類]**  = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**」を参照してください。 これは、ドロップダウン リストのオプションの 1 つではありません。 キーボードで入力する必要があります。
+         **型**  = VisualStudio......**レイヤー. バリデーター**。 これは、ドロップダウン リストのオプションの 1 つではありません。 キーボードで入力する必要があります。
 
-         **[ソース]**  = **現在のソリューション内のプロジェクト**
+         **ソース**  = **現在のソリューション内のプロジェクト**
 
-         **[プロジェクト]**  = *検証プロジェクト*
+         **プロジェクト**  = *検証プロジェクト*
 
 5. レイヤー検証プロジェクトに戻り、次のプロジェクト参照を追加します。
 
-    |**参照**|**実行できる操作**|
+    |**リファレンス**|**実行できる操作**|
     |-------------------|------------------------------------|
     |Microsoft.VisualStudio.GraphModel.dll|アーキテクチャ グラフを読み取る|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|レイヤーと関連付けられているコード DOM を読み取る|
@@ -121,7 +121,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 
      拡張機能をアンインストールするには、 **[ツール]** メニューの **[拡張機能と更新プログラム]** を使用します。
 
-## <a name="programming"></a> 検証のプログラミング
+## <a name="programming-validation"></a><a name="programming"></a> 検証のプログラミング
  レイヤー検証拡張機能を定義するには、以下の特性を備えたクラスを定義します。
 
 - 宣言の全体的な形式を次に示します。
@@ -190,7 +190,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 
   レイヤーからコード内の要素へのリンクのカテゴリは "Represents" です。
 
-## <a name="debugging"></a> 検証のデバッグ
+## <a name="debugging-validation"></a><a name="debugging"></a> 検証のデバッグ
  レイヤー検証拡張機能をデバッグするには、Ctrl キーを押しながら F5 キーを押します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開きます。 このインスタンスで、レイヤー モデルを開くか作成します。 このモデルは、コードと関連付けられている必要があり、少なくとも 1 つの依存関係を含む必要があります。
 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>依存関係を含むソリューションでのテスト
@@ -212,12 +212,12 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 
  または、 `System.Windows.Forms.MessageBox.Show()`の呼び出しを挿入してもかまいません。 メッセージ ボックスが表示されたら、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のメイン インスタンスに移動し、 **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします。 **Graphcmd.exe**という名前のプロセスを選択します。
 
- 常に、Ctrl キーを押しながら F5 キーを押して ( **[デバッグなしで開始]** ) 実験用インスタンスを起動します。
+ 常に、Ctrl キーを押しながら F5 キーを押して (**[デバッグなしで開始]**) 実験用インスタンスを起動します。
 
 ### <a name="deploying-a-validation-extension"></a>検証拡張機能を配置する
- 適切なバージョンの Visual Studio がインストールされているコンピューターに検証拡張機能をインストールするには、ターゲット コンピューターで VSIX ファイルを開きます。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] がインストールされているコンピューターにインストールするには、VSIX の内容を Extensions フォルダーに手動で抽出する必要があります。 詳細については、「[レイヤーモデル拡張機能の配置](../modeling/deploy-a-layer-model-extension.md)」を参照してください。
+ 適切なバージョンの Visual Studio がインストールされているコンピューターに検証拡張機能をインストールするには、ターゲット コンピューターで VSIX ファイルを開きます。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] がインストールされているコンピューターにインストールするには、VSIX の内容を Extensions フォルダーに手動で抽出する必要があります。 詳細については、「 [レイヤーモデル拡張機能の配置](../modeling/deploy-a-layer-model-extension.md)」を参照してください。
 
-## <a name="example"></a> Example code
+## <a name="example-code"></a><a name="example"></a> コード例
 
 ```csharp
 using System;
