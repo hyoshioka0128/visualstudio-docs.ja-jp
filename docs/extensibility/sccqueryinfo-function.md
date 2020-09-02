@@ -1,5 +1,5 @@
 ---
-title: 関数 |マイクロソフトドキュメント
+title: SccQueryInfo 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1efae18f15588f4dacf3409ea95e30af05397c6e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700473"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 関数
-この関数は、ソース管理下で選択されたファイルのセットの状態情報を取得します。
+この関数は、ソース管理下で選択された一連のファイルのステータス情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,47 +34,47 @@ SCCRTN SccQueryInfo(
 ```
 
 #### <a name="parameters"></a>パラメーター
- を行う
+ pvContext
 
-[in]ソース管理プラグインのコンテキスト構造。
+からソース管理プラグインのコンテキスト構造。
 
- nファイル
+ nFiles
 
-[in]配列に指定されたファイルの`lpFileNames`数と配列の長さ`lpStatus`。
+から配列に指定されたファイルの数 `lpFileNames` と配列の長さ `lpStatus` 。
 
- ファイル名
+ lpFileNames 名
 
-[in]照会するファイルの名前の配列。
+からクエリ対象のファイルの名前の配列。
 
- lp2
+ lpStatus
 
-[イン、アウト]ソース管理プラグインが各ファイルのステータス フラグを返す配列。 詳細については、「[ファイルステータスコード](../extensibility/file-status-code-enumerator.md)」を参照してください。
+[入力、出力]ソース管理プラグインが各ファイルの状態フラグを返す配列。 詳細については、「 [ファイルのステータスコード](../extensibility/file-status-code-enumerator.md)」を参照してください。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
-|SCC_OK|クエリは正常に実行されました。|
-|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題がありました。 再試行することをお勧めします。|
-|SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていない。|
-|SCC_E_NONSPECIFICERROR|非特異的なエラー。|
+|SCC_OK|クエリが成功しました。|
+|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスに問題が発生しました。 再試行することをお勧めします。|
+|SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていません。|
+|SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>Remarks
- 空`lpFileName`の文字列の場合、現在更新する状態情報はありません。 それ以外の場合は、ステータス情報が変更された可能性があるファイルの完全パス名です。
+## <a name="remarks"></a>注釈
+ `lpFileName`が空の文字列の場合、現在更新する状態情報はありません。 それ以外の場合は、ステータス情報が変更された可能性があるファイルの完全なパス名です。
 
- 戻り値の配列はビットの`SCC_STATUS_xxxx`ビットマスクにすることができます。 詳細については、「[ファイルステータスコード](../extensibility/file-status-code-enumerator.md)」を参照してください。 ソース管理システムでは、すべてのビットの種類をサポートしていない場合があります。 たとえば、提供されていない`SCC_STATUS_OUTOFDATE`場合、ビットは設定されません。
+ 戻り値の配列には、ビットのビットマスクを指定でき `SCC_STATUS_xxxx` ます。 詳細については、「 [ファイルのステータスコード](../extensibility/file-status-code-enumerator.md)」を参照してください。 ソース管理システムは、すべてのビット型をサポートしていない場合があります。 たとえば、が提供されていない場合、 `SCC_STATUS_OUTOFDATE` ビットは設定されません。
 
- この機能を使用してファイルをチェックアウトする場合は、`MSSCCI`以下のステータス要件に注意してください。
+ この関数を使用してファイルをチェックアウトする場合は、次の状態の要件に注意して `MSSCCI` ください。
 
-- `SCC_STATUS_OUTBYUSER`は、現在のユーザーがファイルをチェックアウトしたときに設定されます。
+- `SCC_STATUS_OUTBYUSER` は、現在のユーザーがファイルをチェックアウトしたときに設定されます。
 
-- `SCC_STATUS_CHECKEDOUT`設定されていない限り`SCC_STATUS_OUTBYUSER`、設定できません。
+- `SCC_STATUS_CHECKEDOUT` を設定しない限り、を設定することはできません `SCC_STATUS_OUTBYUSER` 。
 
-- `SCC_STATUS_CHECKEDOUT`は、指定された作業ディレクトリにファイルがチェックアウトされている場合にのみ設定されます。
+- `SCC_STATUS_CHECKEDOUT` は、指定された作業ディレクトリにファイルがチェックアウトされている場合にのみ設定されます。
 
-- 現在のユーザーが作業ディレクトリ以外のディレクトリにファイルをチェックアウトした場合は、設定されますが`SCC_STATUS_OUTBYUSER``SCC_STATUS_CHECKEDOUT`、チェックアウトされません。
+- ファイルが現在のユーザーによって作業ディレクトリ以外のディレクトリにチェックアウトされている場合、は設定されますが、 `SCC_STATUS_OUTBYUSER` は設定され `SCC_STATUS_CHECKEDOUT` ません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)

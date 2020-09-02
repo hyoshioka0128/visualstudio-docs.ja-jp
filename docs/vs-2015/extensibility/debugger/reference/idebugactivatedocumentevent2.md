@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c2087cb8f1b9a4b89448f3bf07f869d16ed44dc8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65673687"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-デバッグ エンジン (DE) では、このインターフェイスを使用してドキュメントを読み込む。  
+デバッグエンジン (DE) は、このインターフェイスを使用してドキュメントの読み込みを要求します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -30,31 +30,31 @@ ms.locfileid: "65673687"
 IDebugActivateDocumentEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デは、ソース ファイルを開く必要があるときに、このインターフェイスを実装します。 このインターフェイスは、操作やインタープリターのスクリプトの一部であるデバッグ エンジンによってのみ実装されます。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります (、SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス)。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ ソースファイルを開く必要がある場合、DE はこのインターフェイスを実装します。 このインターフェイスは、またはで動作するスクリプトインタープリターの一部であるデバッグエンジンによってのみ実装されます。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります (SDM は[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)を使用してインターフェイスにアクセスし `IDebugEvent2` ます)。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デは作成し、ソース ファイルを表示する必要があるときに、このイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって提供されるコールバック関数。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ DE は、ソースファイルを開く必要があるときに、このイベントオブジェクトを作成して送信します。 イベントは、デバッグ対象のプログラムにアタッチされるときに、SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugActivateDocumentEvent2`します。  
+ 次の表に、のメソッドを示し `IDebugActivateDocumentEvent2` ます。  
   
 |メソッド|説明|  
 |-------------|-----------------|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|アクティブ化するためにドキュメントを取得します。|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|ドキュメント内の位置を説明するドキュメント コンテキストを取得します。|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|アクティブにするドキュメントを取得します。|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|ドキュメント内の位置を記述するドキュメントコンテキストを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- このインターフェイスが使用されている一般的なシナリオは、解析エラーを使用してドキュメントを表示できるようにスクリプト DE このインターフェイスは、SDM に送信する HTML ページ上のスクリプト コードで解析エラーが発生した場合。  
+## <a name="remarks"></a>解説  
+ このインターフェイスが使用される一般的なシナリオは、HTML ページのスクリプトコードで解析エラーが発生した場合に、解析エラーのあるドキュメントを表示できるように、スクリプトがこのインターフェイスを SDM に送信することです。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
