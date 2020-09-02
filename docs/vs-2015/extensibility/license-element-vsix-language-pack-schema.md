@@ -8,12 +8,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114177"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284383"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "88114177"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[VSIX LanguagePack 要素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|必須。 VSIX 言語パックのルート要素を提供します。|  
+|[VSIX LanguagePack 要素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|必須です。 VSIX 言語パックのルート要素を提供します。|  
   
 ## <a name="text-value"></a>テキスト値  
  表示するローカライズされたライセンスファイルの相対パス。  
@@ -54,39 +54,13 @@ ms.locfileid: "88114177"
  要素が定義されている場合は、指定された `License` ライセンスファイルのテキストがセットアップ中に表示され、ユーザーはライセンスに同意しないと続行できません。  
   
 ## <a name="element-information"></a>要素情報  
-
-:::row:::
-    :::column:::
-        名前空間  
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        スキーマ名
-    :::column-end:::
-    :::column:::
-        VSIX 言語パックのスキーマ
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        検証ファイル
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        空にすることができます
-    :::column-end:::
-    :::column:::
-        適用なし
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    名前空間    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   スキーマ名   |                 VSIX 言語パックのスキーマ                 |
+| 検証ファイル |                VSIXLanguagePackSchema                 |
+|  空にすることができます   |                      該当なし                       |
   
 ## <a name="see-also"></a>参照  
  [VSX Language Pack スキーマリファレンス](../extensibility/vsx-language-pack-schema-reference.md)   
