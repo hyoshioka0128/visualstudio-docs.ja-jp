@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f00bbc7741768852b5928b249dc7035bc440992
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670402"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio の起動時間の最適化
@@ -31,10 +31,10 @@ Visual Studio で起動の遅延が検出されると、ポップアップ メ�
 
 ![Visual Studio のパフォーマンスの管理-ポップアップ](../ide/media/vside-perfdialog-popup.PNG "Visual Studio のパフォーマンスの管理-ポップアップ")
 
-**[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスには、 **[拡張機能]** と **[ツール ウィンドウ]** という 2 つのカテゴリがあります。
+**[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスには、**[拡張機能]** と **[ツール ウィンドウ]** という 2 つのカテゴリがあります。
 
 ### <a name="control-extensions"></a>拡張機能の制御
-拡張機能が Visual Studio の起動の遅延の原因となっている場合、いずれかの種類の拡張機能を選択したときに、 **[Visual Studio のパフォーマンスを管理]** ダイアログ ボックスに拡張機能が表示されます。 起動時間への影響 ( **[影響]** セクションにリストされている) が受け入れがたい場合には、 **[無効にする]** ボタンを選び、起動時には常に拡張機能を無効にするよう選択することができます。 拡張機能マネージャーまたは [Visual Studio のパフォーマンスの管理] ダイアログ ボックスを使用して、今後のセッションで拡張機能を再度有効にすることができます。
+拡張機能が Visual Studio の起動の遅延の原因となっている場合、いずれかの種類の拡張機能を選択したときに、**[Visual Studio のパフォーマンスを管理]** ダイアログ ボックスに拡張機能が表示されます。 起動時間への影響 (**[影響]** セクションにリストされている) が受け入れがたい場合には、**[無効にする]** ボタンを選び、起動時には常に拡張機能を無効にするよう選択することができます。 拡張機能マネージャーまたは [Visual Studio のパフォーマンスの管理] ダイアログ ボックスを使用して、今後のセッションで拡張機能を再度有効にすることができます。
 
 ![Visual Studio のパフォーマンスの管理-拡張機能](../ide/media/vside-perfdialog-extensions.PNG "Visual Studio のパフォーマンスの管理-拡張機能")
 
@@ -48,4 +48,4 @@ Visual Studio で起動の遅延が検出されると、ポップアップ メ�
 
 ![Visual Studio のパフォーマンスの管理-ツールウィンドウ](../ide/media/vside-perfdialog-toolwindows.PNG "Visual Studio のパフォーマンスの管理-ツールウィンドウ")
 
-後で気が変わった場合、 **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスでこれらのオプションを元に戻すことができます。 **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスを開くには、メニュー バーで、 **[ヘルプ]** 、 **[Visual Studio のパフォーマンスの管理]** の順に選択します。
+後で気が変わった場合、**[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスでこれらのオプションを元に戻すことができます。 **[Visual Studio のパフォーマンスの管理]** ダイアログ ボックスを開くには、メニュー バーで、**[ヘルプ]**、**[Visual Studio のパフォーマンスの管理]** の順に選択します。

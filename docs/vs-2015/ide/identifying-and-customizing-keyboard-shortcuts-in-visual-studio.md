@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670491"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio でのキーボード ショートカットの識別とカスタマイズ
@@ -43,7 +43,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 - [ショートカット キーの確認](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)
 
-- [ショートカット キーのカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)
+- [ショートカットキーのカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)
 
 - [カスタム ショートカット キーの共有](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)
 
@@ -52,13 +52,13 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 > [!NOTE]
 > 使用している Visual Studio の設定とエディションによって、メニューに表示されるコマンドやダイアログ ボックスに表示されるオプションの名前や位置が異なる場合があります。 このトピックは **[全般的な開発設定]** に基づいています。
 
-## <a name="bkmk_identify"></a>ショートカット キーの確認
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> ショートカットキーの識別
 
-1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。
+1. メニューバーで、[ **ツール**]、[ **オプション**] の順に選択します。
 
 2. **[環境]** を展開し、**[キーボード]** を選択します。
 
-     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "|::ref1::|")
+     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "オプションキーボード")
 
 3. **[以下の文字列を含むコマンドを表示]** ボックスに、コマンド名の全体または一部を、空白を含めずに入力し始めます。
 
@@ -70,15 +70,15 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 5. コマンドにショートカット キーが既に割り当てられている場合は、**[選択したコマンドへのショートカット]** ボックスの一覧に表示されます。
 
-     ![指定されたコマンドのショートカットを表示](../ide/media/viewshortcut.png "|::ref2::|")
+     ![指定されたコマンドのショートカットを表示](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="bkmk_assign"></a>ショートカット キーのカスタマイズ
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a> ショートカットキーのカスタマイズ
 
-1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。
+1. メニューバーで、[ **ツール**]、[ **オプション**] の順に選択します。
 
 2. **[環境]** フォルダーを展開し、**[キーボード]** を選択します。
 
-     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "|::ref3::|")
+     ![[オプション] ダイアログ ボックスにキーボード ショートカットを表示](../ide/media/optionskeyboard.png "オプションキーボード")
 
 3. **[以下の文字列を含むコマンドを表示]** ボックスに、コマンド名の全体または一部を、空白を含めずに入力し始めます。
 
@@ -100,14 +100,14 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
      ショートカット キーが別のコマンドに既に割り当てられている場合は、**[現在使用されているショートカット]** ボックスに表示されます。 その場合は、Backspace キーを押してそのショートカット キーを削除してから、別のショートカット キーを試します。
 
-     ![コマンドに異なるショートカットを指定](../ide/media/reassignshortcut.png "|::ref4::|")
+     ![コマンドに異なるショートカットを指定](../ide/media/reassignshortcut.png "ショートカットの再割り当て")
 
 7. **[割り当て]** ボタンをクリックします。
 
     > [!NOTE]
     > コマンドに別のショートカット キーを指定し、**[割り当て]** ボタンをクリックした後に、**[キャンセル]** ボタンをクリックしても、ダイアログ ボックスは閉じますが、変更は元に戻りません。
 
-## <a name="bkmk_transfer"></a>カスタム ショートカット キーの共有
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> カスタムショートカットキーの共有
  カスタム ショートカット キーを他のユーザーと共有できます。そのためには、ショートカット キーの情報をファイルにエクスポートし、そのファイルを他のユーザーに渡して、インポートしてもらう必要があります。
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>ショートカット キーのみをエクスポートするには
@@ -120,7 +120,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 4. **[キーボード]** チェック ボックスをオンにして、**[次へ]** ボタンをクリックします。
 
-     ![カスタマイズされたキーボード ショートカットのみをエクスポート](../ide/media/exportshortcuts.png "|::ref5::|")
+     ![カスタマイズされたキーボード ショートカットのみをエクスポート](../ide/media/exportshortcuts.png "ExportShortcuts カット")
 
 5. **[設定ファイルの名前を指定してください]** と **[設定を次のディレクトリに格納する]** ボックスで、既定値のままにするか別の値を指定し、**[完了]** ボタンをクリックします。
 
@@ -142,7 +142,7 @@ Visual Studio のコマンドのショートカット キーを確認し、カ�
 
 7. **[キーボード]** チェック ボックスをオンにして、**[完了]** ボタンをクリックします。
 
-     ![カスタマイズされたキーボード ショートカットのみをインポート](../ide/media/importshortcuts.png "|::ref6::|")
+     ![カスタマイズされたキーボード ショートカットのみをインポート](../ide/media/importshortcuts.png "ImportShortcuts カット")
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)

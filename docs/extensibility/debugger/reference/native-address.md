@@ -1,5 +1,5 @@
 ---
-title: NATIVE_ADDRESS |マイクロソフトドキュメント
+title: NATIVE_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7c62bbea846f3d486ead8add4dfab2182df1e1bb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714339"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
-この構造体は、ネイティブ アドレスを表します。
+この構造体は、ネイティブアドレスを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,19 +43,19 @@ public struct NATIVE_ADDRESS {
 ## <a name="members"></a>メンバー
 
 `unknown`\
-ネイティブ アドレス (この意味は、ランタイムとオペレーティング システムによって異なります)。
+ネイティブアドレス (その意味は、ランタイムとオペレーティングシステムによって異なります)。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
-構造体`dwKind`のフィールドが[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体の値) に`ADDRESS_KIND_NATIVE`設定されている`DEBUG_ADDRESS_UNION`場合、この構造体は[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の共用体の一部です。
+この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_NATIVE` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
 ## <a name="requirements"></a>必要条件
 
-ヘッダー: sh.h
+ヘッダー: sh. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 
