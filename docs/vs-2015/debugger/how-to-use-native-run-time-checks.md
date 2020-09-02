@@ -1,5 +1,5 @@
 ---
-title: '方法: ネイティブ ランタイム チェックの使用 |Microsoft Docs'
+title: '方法: ネイティブ ランタイム チェックを使用する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,10 +42,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685851"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>方法: ネイティブ ランタイム チェックを使用する
@@ -65,7 +65,7 @@ Visual C++ では、ネイティブ [runtime_checks](https://msdn.microsoft.com/
   
   最適化された ( **/RTC** ) ビルドで **/O**を使用すると、コンパイラ エラーが発生します。 `runtime_checks` プラグマを最適化されたビルドに使用しても効果はありません。  
   
-  ランタイム チェックが有効になっている状態のプログラムをデバッグすると、既定の動作では、ランタイム エラーの発生時にプログラムが停止し、デバッガーが起動されます。 この既定の動作は、任意のランタイム チェックで変更できます。 詳細については、次を参照してください。[デバッガーでの例外を管理する](../debugger/managing-exceptions-with-the-debugger.md)します。  
+  ランタイム チェックが有効になっている状態のプログラムをデバッグすると、既定の動作では、ランタイム エラーの発生時にプログラムが停止し、デバッガーが起動されます。 この既定の動作は、任意のランタイム チェックで変更できます。 詳細については、「[デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)」を参照してください。  
   
   次の手順で、デバッグ ビルドでネイティブ ランタイム チェックを有効にする方法と、ネイティブ ランタイム チェックの動作を変更する方法を説明します。  
   
@@ -83,7 +83,7 @@ Visual C++ では、ネイティブ [runtime_checks](https://msdn.microsoft.com/
   
 - `runtime_checks` プラグマを使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [ランタイム エラー チェック](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

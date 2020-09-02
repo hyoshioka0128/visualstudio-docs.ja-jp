@@ -1,5 +1,5 @@
 ---
-title: デバッガーのセキュリティ |Microsoft Docs
+title: デバッガーのセキュリティ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686794"
 ---
 # <a name="debugger-security"></a>デバッガーのセキュリティ
@@ -40,7 +40,7 @@ ms.locfileid: "65686794"
 ### <a name="managed-debugging-security"></a>マネージド デバッグのセキュリティ  
  すべてのマネージド デバッグに適用される全般的な推奨事項を次に示します。  
   
-- 信頼関係のないユーザーのプロセスにアタッチするときは注意します。アタッチを実行するときに、信頼できるかどうかを判断します。 信頼関係のないユーザーのプロセスにアタッチするときに、セキュリティの警告ダイアログ ボックスが表示され、プロセスにアタッチするかどうかが確認されます。 "信頼関係のあるユーザー" には、自分と、.NET Framework をインストールしたコンピューターで一般的に定義されている標準のユーザーが含まれます。たとえば、 **aspnet**、 **localsystem**、 **networkservice**、および **localservice**です。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)します。  
+- 信頼関係のないユーザーのプロセスにアタッチするときは注意します。アタッチを実行するときに、信頼できるかどうかを判断します。 信頼関係のないユーザーのプロセスにアタッチするときに、セキュリティの警告ダイアログ ボックスが表示され、プロセスにアタッチするかどうかが確認されます。 "信頼関係のあるユーザー" には、自分と、.NET Framework をインストールしたコンピューターで一般的に定義されている標準のユーザーが含まれます。たとえば、 **aspnet**、 **localsystem**、 **networkservice**、および **localservice**です。 詳細については、「[セキュリティ警告: 信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)」を参照してください。  
   
 - プロジェクトをインターネットからダウンロードするとき、およびそのプロジェクトを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]に読み込むときは注意します。 デバッグを実行しない場合でも、これはリスクの高い方法です。 この場合、含まれるプロジェクトとコードが信頼できるかどうかを判断します。  
   
@@ -57,10 +57,10 @@ ms.locfileid: "65686794"
   
  リモート コンピューターでは未知のプロセスをデバッグしないでください。デバッガーを実行するコンピューターや msvsmon.exe (Visual Studio リモート デバッグ モニター) に悪影響を及ぼす攻略行為が行われる可能性があります。 それでも未知のプロセスをデバッグする必要がある場合は、ローカルでデバッグし、セキュリティ上の脅威をローカルの問題に抑えるためにファイアウォールを使用します。  
   
- 詳細については、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。  
+ 詳細については、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。  
   
 ### <a name="web-services-debugging-security"></a>Web サービスをデバッグするときのセキュリティ  
- ローカルでデバッグする方が安全ですが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が Web サーバーにインストールされていない可能性があるため、ローカル デバッグを実行できない場合があります。 通常、Web サービスのデバッグは、開発時を除いてリモートで行われます。そのため、Web サービスのデバッグにも、リモート デバッグのセキュリティに関する推奨事項が適用されます。 次に、その他の推奨される手順を示します。 詳細については、「 [Debugging XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)」を参照してください。  
+ ローカルでデバッグする方が安全ですが、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が Web サーバーにインストールされていない可能性があるため、ローカル デバッグを実行できない場合があります。 通常、Web サービスのデバッグは、開発時を除いてリモートで行われます。そのため、Web サービスのデバッグにも、リモート デバッグのセキュリティに関する推奨事項が適用されます。 次に、その他の推奨される手順を示します。 詳細については、「 [Debugging XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)」を参照してください。  
   
 - セキュリティに問題のある Web サーバーではデバッグを有効にしないでください。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "65686794"
 - インターネットに公開されている Web サービスをデバッグする場合は、特に注意が必要です。  
   
 ### <a name="external-components"></a>外部コンポーネント  
- プログラムが外部コンポーネントとやり取りする場合、特に、外部コンポーネントのコードを自分で記述していない場合は、そのコンポーネントの信頼ステータスに注意します。 また、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] またはデバッガーで使用する可能性のあるコンポーネントにも注意します。  
+ プログラムが外部コンポーネントとやり取りする場合、特に、外部コンポーネントのコードを自分で記述していない場合は、そのコンポーネントの信頼ステータスに注意します。 また、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] またはデバッガーで使用する可能性のあるコンポーネントにも注意します。  
   
 ### <a name="symbols-and-source-code"></a>シンボルとソース コード  
  次の 2 つの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ツールでは、セキュリティについて考慮する必要があります。  
@@ -80,8 +80,8 @@ ms.locfileid: "65686794"
   
   [シンボル (.pdb) ファイルとソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事をご覧ください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
- [デバッガーの基本事項](../debugger/debugger-basics.md)   
- [セキュリティ警告: 信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
+ [デバッガーの基本](../debugger/debugger-basics.md)   
+ [セキュリティ警告: 信頼されていないユーザーが所有するプロセスにアタッチすることは危険な場合があります。次の情報が疑わしいと思われる場合や、不明な場合は、このプロセスにアタッチしないでください。](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
  [セキュリティ警告: デバッガーは信頼されないコマンドを実行する必要があります](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

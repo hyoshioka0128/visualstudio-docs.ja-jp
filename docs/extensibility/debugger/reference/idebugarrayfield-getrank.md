@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugArrayField:: Ge/k |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736313"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-配列のランクまたは次元数を取得します。
+配列の次元のランクまたは数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>パラメーター
 `pdwRank`\
-[アウト]ランクを返します。
+入出力ランクを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 配列のランクは次元数に対応します。 C++ および C# では、多次元配列は実際には配列の配列であるため、1 次元配列と見なすことができます (メソッドは`GetRank`常に 1 を返します)。 一[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]方、多次元配列は異なる方法で処理され、そのような配列のランクは次元の数を反映します(`GetRank`そして、メソッドは常に次元の数を返します)。
+## <a name="remarks"></a>解説
+ 配列のランクは、次元の数に対応します。 C++ および C# では、多次元配列は配列の配列であるため、1次元配列と見なされることがあり `GetRank` ます (メソッドは常に1を返します)。 一方、では、 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 多次元配列は異なる方法で処理され、そのような配列のランクは次元の数を反映し `GetRank` ます (メソッドは常に次元数を返します)。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

@@ -1,5 +1,5 @@
 ---
-title: Iデバッグエイリアス::Dポーズ |マイクロソフトドキュメント
+title: IDebugAlias::D ispose |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df3a2ecc50063df8f90645b9ccaa72754c3728c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736555"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
-このエイリアスを削除対象としてマークします。
+このエイリアスを削除の対象としてマークします。
 
 ## <a name="syntax"></a>構文
 
@@ -39,10 +39,10 @@ int Dispose();
  [なし] :
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドが呼び出されると、エイリアスは使用できなくなります。
+## <a name="remarks"></a>解説
+ このメソッドが呼び出されると、別名は使用できなくなります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
