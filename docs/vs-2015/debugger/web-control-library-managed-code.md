@@ -1,5 +1,5 @@
 ---
-title: Web コントロール ライブラリ (マネージ コード) |Microsoft Docs
+title: Web コントロールライブラリ (マネージコード) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688176"
 ---
 # <a name="web-control-library-managed-code"></a>Web コントロール ライブラリ (マネージド コード)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web コントロール ライブラリ プロジェクト テンプレートは DLL を作成します。 クラス ライブラリは DLL であるため、直接実行することはできません。 コントロールを埋め込む [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ページを作成する必要があります。 詳細については、次を参照してください。 [Web コントロール ライブラリ テンプレート](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)します。  
+Web コントロール ライブラリ プロジェクト テンプレートは DLL を作成します。 クラス ライブラリは DLL であるため、直接実行することはできません。 コントロールを埋め込む [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ページを作成する必要があります。 詳細については、「 [Web コントロールライブラリのテンプレート](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)」を参照してください。  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Web コントロール ライブラリをデバッグするには (方法 1)  
   
@@ -43,13 +43,13 @@ Web コントロール ライブラリ プロジェクト テンプレートは 
   
 6. テスト ハーネスを指す URL を使用してブラウザー ウィンドウを開きます。 コントロール内のブレークポイントにヒットすると、デバッグを開始できます。  
   
-### <a name="to-debug-a-web-control-library-method-2"></a>Web コントロール ライブラリ (メソッドの 2) をデバッグするには  
+### <a name="to-debug-a-web-control-library-method-2"></a>Web コントロールライブラリをデバッグするには (メソッド 2)  
   
 1. ホスト アプリケーション プロジェクトと Web コントロール プロジェクトを同じソリューションで作成します。  
   
-2. **ソリューション エクスプ ローラー**をホスト アプリケーションを右クリックして**参照の追加**します。  
+2. **ソリューションエクスプローラー**で、ホストアプリケーションを右クリックし、[**参照の追加**] を選択します。  
   
 3. Web コントロール プロジェクトへの参照を追加します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ASP.NET Web アプリケーション](../debugger/debugging-preparation-aspnet-web-applications.md)

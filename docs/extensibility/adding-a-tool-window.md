@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904146"
 ---
 # <a name="add-a-tool-window"></a>ツールウィンドウを追加する
@@ -32,22 +32,22 @@ ms.locfileid: "85904146"
 
 - ツールウィンドウの既定の位置を設定します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 Visual Studio SDK は、Visual Studio セットアップでオプション機能として含まれています。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-tool-window"></a>ツールウィンドウを作成する
 
-1. VSIX テンプレートを使用して**Firsttoolwin**という名前のプロジェクトを作成し、 **FirstToolWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
+1. VSIX テンプレートを使用して **Firsttoolwin** という名前のプロジェクトを作成し、 **FirstToolWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
 
     > [!NOTE]
-    > ツールウィンドウを使用した拡張機能の作成の詳細については、「[ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
+    > ツールウィンドウを使用した拡張機能の作成の詳細については、「 [ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
 ## <a name="add-a-control-to-the-tool-window"></a>ツールウィンドウにコントロールを追加する
 
 1. 既定のコントロールを削除します。 *Firsttoolwindowcontrol .xaml*を開き、 **[Click Me!]** を削除します。 ボタンを選択します。
 
-2. **ツールボックス**で、[**すべての WPF コントロール**] セクションを展開し、[ **Media 要素**] コントロールを**firsttoolwindowcontrol**フォームにドラッグします。 コントロールを選択し、[**プロパティ**] ウィンドウで、この要素に**mediaElement1**という名前を指定します。
+2. **ツールボックス**で、[**すべての WPF コントロール**] セクションを展開し、[ **Media 要素**] コントロールを**firsttoolwindowcontrol**フォームにドラッグします。 コントロールを選択し、[ **プロパティ** ] ウィンドウで、この要素に **mediaElement1**という名前を指定します。
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>ツールウィンドウにツールバーを追加する
 次のようにツールバーを追加すると、そのグラデーションと色が IDE の他の部分と一致することが保証されます。
@@ -102,7 +102,7 @@ Visual Studio SDK は、Visual Studio セットアップでオプション機能
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />
     ```
 
-2. セクション内に Button 要素を追加し `<Buttons>` ます。 この要素は、ツールウィンドウのツールバーに、**検索**(虫眼鏡) アイコン付きで表示されます。
+2. セクション内に Button 要素を追加し `<Buttons>` ます。 この要素は、ツールウィンドウのツールバーに、 **検索** (虫眼鏡) アイコン付きで表示されます。
 
     ```xml
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">
@@ -139,7 +139,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ```
 
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>ツールウィンドウとツールバーのインスタンス化
-ツールバーとメニューコマンドを追加して、[**ファイルを開く**] ダイアログを起動し、選択したメディアファイルを再生します。
+ツールバーとメニューコマンドを追加して、[ **ファイルを開く** ] ダイアログを起動し、選択したメディアファイルを再生します。
 
 1. *FirstToolWindow.cs*を開き、次のディレクティブを追加し `using` ます。
 
@@ -206,7 +206,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ### <a name="to-implement-a-menu-command-in-the-tool-window"></a>ツールウィンドウにメニューコマンドを実装するには
 
-1. FirstToolWindowCommand クラスに、[**ファイルを開く**] ダイアログを呼び出す buttonhandler メソッドを追加します。 ファイルが選択されると、メディアファイルが再生されます。
+1. FirstToolWindowCommand クラスに、[ **ファイルを開く** ] ダイアログを呼び出す buttonhandler メソッドを追加します。 ファイルが選択されると、メディアファイルが再生されます。
 
 2. FirstToolWindowCommand クラスで、FindToolWindow () メソッドで作成される FirstToolWindow ウィンドウへのプライベート参照を追加します。
 
@@ -253,7 +253,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>ツールウィンドウの既定の位置を設定する
 
-次に、ツールウィンドウの IDE で既定の場所を指定します。 ツールウィンドウの構成情報は、 *FirstToolWindowPackage.cs*ファイルにあります。
+次に、ツールウィンドウの IDE で既定の場所を指定します。 ツールウィンドウの構成情報は、 *FirstToolWindowPackage.cs* ファイルにあります。
 
 1. *FirstToolWindowPackage.cs*で、クラスの <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 属性を見つけ `FirstToolWindowPackage` ます。これにより、FirstToolWindow 型がコンストラクターに渡されます。 既定の位置を指定するには、次の例のように、コンストラクターにさらにパラメーターを追加する必要があります。
 
@@ -263,7 +263,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    最初の名前付きパラメーターはで、 `Style` その値はです。これは、ウィンドウが既存のウィンドウのタブになることを `Tabbed` 意味します。 ドッキング位置は、パラメーターによって指定され `Window` ます。 n このケースでは、**ソリューションエクスプローラー**の GUID になります。
+    最初の名前付きパラメーターはで、 `Style` その値はです。これは、ウィンドウが既存のウィンドウのタブになることを `Tabbed` 意味します。 ドッキング位置は、パラメーターによって指定され `Window` ます。 n このケースでは、 **ソリューションエクスプローラー**の GUID になります。
 
     > [!NOTE]
     > IDE でのウィンドウの種類の詳細については、「」を参照してください <xref:EnvDTE.vsWindowType> 。
@@ -272,11 +272,11 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 1. **F5**キーを押して、Visual Studio の実験的なビルドの新しいインスタンスを開きます。
 
-2. [**表示**] メニューの [**その他のウィンドウ**] をポイントし、[**最初のツールウィンドウ**] をクリックします。
+2. [ **表示** ] メニューの [ **その他のウィンドウ** ] をポイントし、[ **最初のツールウィンドウ**] をクリックします。
 
-    メディアプレーヤーのツールウィンドウは、**ソリューションエクスプローラー**と同じ位置で開きます。 それでも以前と同じ位置に表示されている場合は、ウィンドウのレイアウトをリセットします (ウィンドウまたはウィンドウの**レイアウトをリセット**します)。
+    メディアプレーヤーのツールウィンドウは、 **ソリューションエクスプローラー**と同じ位置で開きます。 それでも以前と同じ位置に表示されている場合は、ウィンドウのレイアウトをリセットします (ウィンドウまたはウィンドウの**レイアウトをリセット**します)。
 
-3. ツールウィンドウで、ボタン (**検索**アイコンが表示されています) をクリックします。 サポートされているサウンドファイルまたはビデオファイル (たとえば、 *C:\windows\media\chimes.wav*) を選択し、[**開く**] を押します。
+3. ツールウィンドウで、ボタン ( **検索** アイコンが表示されています) をクリックします。 サポートされているサウンドファイルまたはビデオファイル (たとえば、 *C:\windows\media\chimes.wav*) を選択し、[ **開く**] を押します。
 
     チャイム音が聞こえます。
 
