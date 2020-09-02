@@ -1,5 +1,5 @@
 ---
-title: COM および ActiveX のデバッグ |Microsoft Docs
+title: COM および ActiveX のデバッグ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702316"
 ---
 # <a name="com-and-activex-debugging"></a>COM および ActiveX のデバッグ
@@ -48,7 +48,7 @@ ms.locfileid: "65702316"
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)  
  デバッグに関連するドキュメントのより広範囲なリンクを提供します。 デバッガーの新機能、設定と準備、ブレークポイント、例外の処理、エディット コンティニュ、マネージド コードのデバッグ、Visual C++ プロジェクトのデバッグ、COM および ActiveX のデバッグ、DLL のデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報へのリンクを提供します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [COM の概要](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [ActiveX コントロール](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   

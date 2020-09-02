@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 461aa702350e1385e01df6f78e942bbe73b16402
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386200"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
@@ -25,7 +25,7 @@ ms.locfileid: "86386200"
 このプログラムの実行を停止状態から続行します。 前の実行状態 (ステップなど) はすべて保持され、プログラムは再度実行を開始します。  
   
 > [!NOTE]
-> このメソッドは非推奨とされます。 代わりに[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)メソッドを使用してください。  
+> このメソッドは非推奨とされます。 代わりに [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) メソッドを使用してください。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,7 +43,7 @@ int Continue( 
   
 #### <a name="parameters"></a>パラメーター  
  `pThread`  
- からスレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。  
+ からスレッドを表す [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) オブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
@@ -52,7 +52,7 @@ int Continue( 
  このメソッドは、デバッグされているプログラムの数や、停止イベントを生成したプログラムに関係なく、このプログラムで呼び出されます。 の実装では、前の実行状態 (ステップなど) を保持し、以前の実行を完了する前に停止していないかのように実行を継続する必要があります。 つまり、このプログラムのスレッドがステップオーバー操作を行っていて、他のプログラムが停止したために停止された場合、このメソッドが呼び出されたときには、プログラムは元のステップオーバー操作を完了する必要があります。  
   
 > [!WARNING]
-> この呼び出しの処理中に、停止イベントまたは即時 (同期) イベントを[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に送信しないでください。それ以外の場合、デバッガーは応答を停止する可能性があります。  
+> この呼び出しの処理中に、停止イベントまたは即時 (同期) イベントを [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) に送信しないでください。それ以外の場合、デバッガーは応答を停止する可能性があります。  
   
 ## <a name="see-also"></a>参照  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 033d8f0e22ec040ffb10821993a5a9c647ee401e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538919"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307:StringComparison の指定
@@ -46,5 +46,5 @@ ms.locfileid: "85538919"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  ライブラリまたはアプリケーションが限定されたローカルユーザーを対象としていて、ローカライズされない場合は、この規則による警告を抑制することが安全です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [グローバリゼーションの警告](../code-quality/globalization-warnings.md) [CA1309: 序数の Stringcomparison を使用する](../code-quality/ca1309-use-ordinal-stringcomparison.md)

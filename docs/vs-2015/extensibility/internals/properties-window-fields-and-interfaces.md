@@ -1,5 +1,5 @@
 ---
-title: Properties Window Fields and インターフェイス |Microsoft Docs
+title: プロパティウィンドウのフィールドとインターフェイス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700822"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>プロパティ ウィンドウのフィールドとインターフェイス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-モデルの選択で表示される情報を決定する、**プロパティ**ウィンドウは IDE でフォーカスのあるウィンドウに基づきます。 すべてのウィンドウと、選択したウィンドウ内のオブジェクトには、その選択コンテキスト オブジェクトのグローバルの選択コンテキストにプッシュされることができます。 環境は、そのウィンドウにフォーカスがあるときに、ウィンドウ フレームの値でグローバルの選択コンテキストを更新します。 フォーカスが変更されたときにも選択コンテキスト。  
+[ **プロパティ** ] ウィンドウに表示される情報を決定するために選択するモデルは、IDE にフォーカスがあるウィンドウに基づいています。 すべてのウィンドウおよび選択したウィンドウ内のオブジェクトは、選択コンテキストオブジェクトをグローバル選択コンテキストにプッシュできます。 環境では、ウィンドウにフォーカスがあるときに、ウィンドウフレームの値を使用してグローバル選択コンテキストを更新します。 フォーカスが変更されると、選択コンテキストが変わります。  
   
 ## <a name="tracking-selection-in-the-ide"></a>IDE での選択の追跡  
- ウィンドウ フレームまたは、IDE によって所有されているサイトと呼ばれるサービスを持つ<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>します。 もう 1 つ開いているウィンドウにフォーカスを変更するか、内の別のプロジェクト項目を選択すると、ユーザーが原因と、選択した方法を変更に、次の手順が表示**ソリューション エクスプ ローラー**、に表示される内容を変更するのには**プロパティ**ウィンドウ。  
+ IDE によって所有されているウィンドウフレームまたはサイトには、という名前のサービスがあり <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> ます。 次の手順では、[**プロパティ**] ウィンドウに表示される内容を変更するために、ユーザーが別の開いているウィンドウにフォーカスを変更したり、**ソリューションエクスプローラー**で別のプロジェクト項目を選択したりすることによって発生する、選択項目の変更について説明します。  
   
-1. 選択したウィンドウの呼び出しでは配置されている VSPackage によって作成されたオブジェクト<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>が<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>します。  
+1. 選択したウィンドウに配置されている VSPackage によって作成されたオブジェクトは、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> を呼び出すためにを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> ます。  
   
-2. 選択したウィンドウ、によって提供される、選択コンテナーを作成、独自<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>オブジェクト。 呼び出すときに、選択内容、VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>環境では、すべてのリスナーに通知するなど、**プロパティ**ウィンドウで、変更します。 新しい選択範囲に関連する階層と項目の情報へのアクセスも提供します。  
+2. 選択したウィンドウによって提供される選択コンテナーによって、独自のオブジェクトが作成され <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます。 選択が変更されると、VSPackage はを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> 変更の **プロパティ** ウィンドウを含む、環境内のリスナーに通知します。 また、新しい選択に関連する階層と項目情報へのアクセスも提供されます。  
   
-3. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>で選択した階層アイテムを渡すと、`VSHPROPID_BrowseObject`パラメーターは設定します、<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>オブジェクト。  
+3. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>を呼び出し、パラメーターに選択した階層項目を渡すと、オブジェクトが設定され `VSHPROPID_BrowseObject` <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます。  
   
-4. 派生したオブジェクト、 [IDispatch インターフェイス](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)に対して返される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>、項目は、次の要求、および環境にラップします、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (次の手順を参照してください)。 環境は、2 番目の呼び出しの呼び出しが失敗した場合、 `IVsHierarchy::GetProperty`、選択コンテナーを渡す<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>階層アイテムまたはアイテムを指定します。  
+4. 要求された項目に対して [IDispatch インターフェイス](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) から派生したオブジェクトが返され、 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 環境がそれをにラップし <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます (次の手順を参照)。 呼び出しが失敗した場合、環境はへの2回目の呼び出しを行い `IVsHierarchy::GetProperty` 、 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 階層項目または項目が提供する選択コンテナーを渡します。  
   
-    VSPackage を作成できませんが、プロジェクト<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>を実装する VSPackage に、環境が指定したウィンドウのため (たとえば、**ソリューション エクスプ ローラー**) を構築します<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>の代わりに。  
+    プロジェクト VSPackage は、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> それを実装する環境指定のウィンドウ VSPackage ( **ソリューションエクスプローラー**など) が <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> その代わりに構築されるため、作成されません。  
   
-5. 環境のメソッドを呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>に基づいてオブジェクトを取得、`IDispatch`インターフェイスを埋めるために、**プロパティ**ウィンドウ。  
+5. 環境では、のメソッドを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> インターフェイスに基づいてオブジェクトを取得し、[ `IDispatch` **プロパティ** ] ウィンドウに入力します。  
   
-   内の値、**プロパティ**ウィンドウが変更には、Vspackage 実装`IVsTrackSelectionEx::OnElementValueChangeEx`と`IVsTrackSelectionEx::OnSelectionChangeEx`要素の値に変更を報告します。 環境が呼び出され、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>または<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>に表示される情報を保持する、**プロパティ**ウィンドウは、プロパティの値と同期します。 詳細については、次を参照してください。[プロパティ ウィンドウでプロパティ値を更新](../../misc/updating-property-values-in-the-properties-window.md)します。  
+   [ **プロパティ** ] ウィンドウの値が変更された場合、vspackage は `IVsTrackSelectionEx::OnElementValueChangeEx` を実装し、 `IVsTrackSelectionEx::OnSelectionChangeEx` 要素の値に変更を報告します。 次に、またはを呼び出して、[ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> **プロパティ** ] ウィンドウに表示されている情報をプロパティ値と同期させます。 詳細については、「 [プロパティウィンドウでのプロパティ値の更新](../../misc/updating-property-values-in-the-properties-window.md)」を参照してください。  
   
-   別の選択をするだけでなくプロジェクト項目で**ソリューション エクスプ ローラー**その項目に関連するプロパティを表示するで使用可能なドロップダウン リストを使用して、フォームまたはドキュメント ウィンドウ内から別のオブジェクトも選択できます、**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウのオブジェクト一覧](../../extensibility/internals/properties-window-object-list.md)します。  
+   **ソリューションエクスプローラー**で別のプロジェクトアイテムを選択してそのアイテムに関連するプロパティを表示することに加えて、[**プロパティ**] ウィンドウのドロップダウンリストを使用して、フォームまたはドキュメントウィンドウ内から別のオブジェクトを選択することもできます。 詳細については、「[ [プロパティ] ウィンドウオブジェクトリスト](../../extensibility/internals/properties-window-object-list.md)」を参照してください。  
   
-   情報の表示方法を変更することができます、**プロパティ**からアルファベット順をカテゴリ別のウィンドウのグリッドまた、、で適切なボタンをクリックして、選択したオブジェクトのプロパティページを開くことも、使用可能な場合。**プロパティ**ウィンドウ。 詳細については、次を参照してください。[プロパティ ウィンドウのボタン](../../extensibility/internals/properties-window-buttons.md)と[プロパティ ページ](../../extensibility/internals/property-pages.md)します。  
+   [ **プロパティ** ] ウィンドウのグリッドでの情報の表示方法をアルファベット順からカテゴリ別に変更できます。また、使用可能な場合は、[ **プロパティ** ] ウィンドウの該当するボタンをクリックして、選択したオブジェクトのプロパティページを開くこともできます。 詳細については、「 [プロパティウィンドウのボタン](../../extensibility/internals/properties-window-buttons.md) と [プロパティページ](../../extensibility/internals/property-pages.md)」を参照してください。  
   
-   最後に、下部にある、**プロパティ**ウィンドウで選択したフィールドの説明も含まれています、**プロパティ** ウィンドウのグリッド。 詳細については、次を参照してください。[プロパティ ウィンドウからフィールドの説明を取得する](../../misc/getting-field-descriptions-from-the-properties-window.md)します。  
+   最後に、 **[プロパティ]** ウィンドウの下部には、[ **プロパティ** ] ウィンドウのグリッドで選択したフィールドの説明も表示されます。 詳細については、「 [プロパティウィンドウからのフィールドの説明の取得](../../misc/getting-field-descriptions-from-the-properties-window.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロパティの拡張](../../extensibility/internals/extending-properties.md)
