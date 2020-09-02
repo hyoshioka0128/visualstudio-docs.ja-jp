@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a940cf371373d23d98ce8f89005197ee3ea7c309
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687062"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild のリファレンス
@@ -30,10 +30,10 @@ ms.locfileid: "65687062"
 Windows Presentation Foundation (WPF) は、このセクションで説明するように、追加のビルドのサポートによって Microsoft ビルド エンジン (MSBuild) を拡張します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [.Targets Files (.Targets ファイル)](../msbuild/wpf-dot-targets-files.md)  
+ [.ターゲットファイル](../msbuild/wpf-dot-targets-files.md)  
  WPF .targets ファイルについて説明します。  
   
- [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)  
+ [タスクリファレンス](../msbuild/wpf-msbuild-task-reference.md)  
  使用可能な WPF ビルド タスクの一覧を示します。  
   
  <xref:Microsoft.Build.Tasks>  
@@ -51,5 +51,5 @@ Windows Presentation Foundation (WPF) は、このセクションで説明する
  <xref:Microsoft.Build.Tasks.Windows>  
  ビルド タスク Windows アセンブリ。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

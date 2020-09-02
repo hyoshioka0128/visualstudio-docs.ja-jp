@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS | Microsoft Docs
+title: PROCESS_INFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88ff2a1da1f937fd4011932979bd95057eb40dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205050"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-説明またはプロセスのプロパティを指定します。  
+プロセスのプロパティを記述または指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,29 +47,29 @@ enum enum_PROCESS_INFO_FLAGS { 
   
 ## <a name="members"></a>メンバー  
  PIFLAG_SYSTEM_PROCESS  
- プロセスがシステム プロセスであることを示します。  
+ プロセスがシステムプロセスであることを示します。  
   
  PIFLAG_DEBUGGER_ATTACHED  
- プロセスは、デバッガーによってデバッグされていることを示します。 可能性がある、[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]デバッガー、またはに、いくつかその他のデバッガー、WinDbg などを指定する可能性があります。  
+ プロセスがデバッガーによってデバッグされていることを示します。 デバッガーの場合もあれば、 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 他のデバッガー (WinDbg など) の場合もあります。  
   
  PIFLAG_PROCESS_STOPPED  
- プロセスが停止していることを示します。 有効な場合にのみ`PIFLAG_DEBUGGER_ATTACHED`も指定します。 使用できる[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]以降。  
+ プロセスが停止されたことを示します。 が指定されている場合にのみ有効です `PIFLAG_DEBUGGER_ATTACHED` 。 以降で使用でき [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] ます。  
   
  PIFLAG_PROCESS_RUNNING  
- プロセスが実行されていることを示します。 有効な場合にのみ`PIFLAG_DEBUGGER_ATTACHED`も指定します。 使用できる[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]以降。  
+ プロセスが実行中であることを示します。 が指定されている場合にのみ有効です `PIFLAG_DEBUGGER_ATTACHED` 。 以降で使用でき [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] ます。  
   
-## <a name="remarks"></a>Remarks  
- 使用、`Flags`のメンバー、 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造体。  
+## <a name="remarks"></a>注釈  
+ `Flags` [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造体のメンバーに使用されます。  
   
- これらのフラグは、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

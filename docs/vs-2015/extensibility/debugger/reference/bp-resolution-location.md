@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ea6539f2ed790dda5cc4c9de126aa226f4b2686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153292"
 ---
-# <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
+# <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ブレークポイント解像度の位置の構造を指定します。  
+ブレークポイントの解決場所の構造を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -49,33 +49,33 @@ public struct BP_RESOLUTION_LOCATION {
   
 ## <a name="members"></a>メンバー  
  `bpType`  
- 値、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)を解釈する方法を指定する列挙体、 `bpResLocation` union または`unionmemberX`メンバー。  
+ [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) `bpResLocation` 共用体またはメンバーを解釈する方法を指定する BP_TYPE 列挙の値 `unionmemberX` 。  
   
  `bpResLocation.bpresCode`  
- [C++のみ]含まれています、 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)場合構造体`bpType`  = `BPT_CODE`します。  
+ [C++ のみ]の場合、 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)構造体が含まれ `bpType`  =  `BPT_CODE` ます。  
   
  `bpResLocation.bpresData`  
- [C++のみ]含まれています、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)場合構造体`bpType`  = `BPT_DATA`します。  
+ [C++ のみ]の場合、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)構造体が含まれ `bpType`  =  `BPT_DATA` ます。  
   
  `bpResLocation.unused`  
- [C++のみ]プレース ホルダー。  
+ [C++ のみ]プレースホルダー。  
   
  `unionmember1`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
  `unionmember2`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
  `unionmember3`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
  `unionmember4`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
-## <a name="remarks"></a>Remarks  
- この構造体のメンバーである、 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)と[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) および [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 構造体のメンバーです。  
   
- [C#のみ]`unionmemberX`メンバーは、次の表に従って解釈されます。 左の列を確認、`bpType`間で各を決定する値、`unionmemberX`マーシャ リングおよびメンバーを表します、`unionmemberX`それに応じて。 C# では、この構造を解釈する方法の例を参照してください。  
+ [C# のみ] `unionmemberX` メンバーは、次の表に従って解釈されます。 左の列で値を調べ `bpType` て、各メンバーが表すものを特定し `unionmemberX` 、それに応じてをマーシャリングし `unionmemberX` ます。 この構造体を C# で解釈する方法については、例を参照してください。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -83,7 +83,7 @@ public struct BP_RESOLUTION_LOCATION {
 |`BPT_DATA`|`string` (データ式)|`string` (関数名)|`string` (イメージ名)|`enum_BP_RES_DATA_FLAGS`|  
   
 ## <a name="example"></a>例  
- この例では、解釈、`BP_RESOLUTION_LOCATION`構造 (C#)。  
+ この例では、C# で構造体を解釈する方法を示し `BP_RESOLUTION_LOCATION` ます。  
   
 ```csharp  
 using System;  
@@ -112,14 +112,14 @@ namespace MyPackage
 }  
 ```  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189682"
 ---
 # <a name="data-in-office-solutions"></a>Office ソリューションのデータ
@@ -45,12 +45,12 @@ ms.locfileid: "73189682"
 
  プロジェクトにデータベース ファイルをインポートする方法と、オフラインで使用するためにデータをキャッシュできるタイミングについて説明します。
 
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション
 - [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)
 
  Visual Studio におけるデータの操作方法を説明するトピックの一覧を示します。
 
-- [データの保存](../data-tools/save-data-back-to-the-database.md)
+- [データを保存する](../data-tools/save-data-back-to-the-database.md)
 
  データセットの操作方法に関するトピックへのリンクを示します。データセット内のデータを変更する方法や、変更をデータ ソースに書き込む方法などに関するトピックがあります。
 

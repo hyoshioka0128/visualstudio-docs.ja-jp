@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192856"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>複数のプロセッサを使用したプロジェクトのビルド
@@ -41,6 +41,6 @@ MSBuild では、複数のプロセッサまたはマルチコア プロセッ�
   
  この問題を回避し、マルチプロセッサによるビルドを可能にするために、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では "プロセス分離" が使用されます。 プロセス分離によって、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は最大 `n` のプロセスを作成できます。`n` はシステムで利用可能なプロセッサの数です。 たとえば、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] が 2 つのプロセッサを搭載したシステムでソリューションをビルドする場合は、2 つのビルド プロセスのみ作成されます。 これらのプロセスは、ソリューションに含まれるすべてのプロジェクトのビルドに再利用されます。  
   
-## <a name="see-also"></a>関連項目  
- [MSBuild での複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
+## <a name="see-also"></a>参照  
+ [複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [タスク](../msbuild/msbuild-tasks.md)

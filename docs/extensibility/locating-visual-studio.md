@@ -1,5 +1,5 @@
 ---
-title: Visual Studio の検出 |Microsoft Docs
+title: Visual Studio の検索 |Microsoft Docs
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64878144"
 ---
-# <a name="locate-visual-studio"></a>Visual Studio を検索します。
+# <a name="locate-visual-studio"></a>Visual Studio を探す
 
-Visual Studio 2017 以降では、同じバージョンまたはエディションでも複数のインスタンスをインストールできます。 これは、機能は、以前のインストールを維持しながら主要な開発コンピューターに新しい機能をプレビューする場合に便利です。 これらの変更により、インスタンスの検索に使用できる 1 つの環境変数またはレジストリ値はありません。 代わりに、使用、 [COM クエリ API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx)拡張機能に関連する条件に基づいてインスタンスを検索します。
+Visual Studio 2017 以降では、同じバージョンまたはエディションの複数のインスタンスをインストールできます。 これは、以前のインストールを維持しながら、プライマリ開発用コンピューターで新しい機能をプレビューする場合に便利です。 これらの変更のため、インスタンスの検索に使用できる1つの環境変数またはレジストリ値はありません。 代わりに、 [COM クエリ API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) を使用して、拡張機能に関連する条件に基づいてインスタンスを検索することができます。
 
-これは、ネイティブおよびマネージ コードの使用可能な NuGet パッケージで高速の読み取り専用の API です。
+これは、ネイティブコードとマネージコードで使用できる NuGet パッケージを含む高速で読み取り専用の API です。
 
-| コード | パッケージ |
+| コード | Package |
 | ---- | --- |
 | ネイティブ | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | マネージド | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-指定されたパスまたは現在のプロセスでは、1 つのインスタンスを検索したり、すべてのインスタンスを列挙できます。 参照してください[サンプル](https://github.com/Microsoft/vs-setup-samples)Visual Studio を検索する方法の完全な例です。
+パスまたは現在のプロセスを指定して単一のインスタンスを検索することも、すべてのインスタンスを列挙することもできます。 Visual Studio を検索する方法の完全な例については [、サンプル](https://github.com/Microsoft/vs-setup-samples) を参照してください。
 
 ## <a name="tools"></a>ツール
 
-ビルド環境、PowerShell スクリプト、インストーラー、およびより多くのシナリオで Visual Studio およびその他のツールを検索するには、さまざまなオープン ソース ツールを直接使用したり、独自のスクリプトと共に再配布があります。
+ビルド環境、PowerShell スクリプト、インストーラー、その他のシナリオで Visual Studio やその他のツールを見つけるには、独自のスクリプトと共に直接または再配布できるオープンソースツールが多数あります。
 
 | プロジェクト | 説明 |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | 1 つのファイルのネイティブ リリースなどの条件を満たすインスタンスを検索する実行可能ファイルまたはプレリリース版では、どのような製品がインストールされている、およびどのワークロードがインストールされています。 以下の情報が返さを Visual Studio 2017 以降、2010 以降、Visual Studio の検索もサポートします。 参照してください、 [wiki](https://github.com/Microsoft/vswhere/wiki)例についてはします。 |
-| [VSSetup コマンドレット](https://github.com/Microsoft/vssetup.powershell) | サポートされている PowerShell コマンドレットと同じ条件に基づいてインスタンスを検索する際のオブジェクトとしての豊富な情報を返す 2.0 と新しい_vswhere_インスタンスに関するさらに多くのプロパティを検出するとします。 参照してください、 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki)例についてはします。 |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自動的に検出_VSIXInstaller_しインストールをコマンドラインに渡します、**.vsix*ファイル。 この機能は、クエリ Api を直接サポートはありません。 インストーラーで役立ちます。 参照してください、 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki)例についてはします。 |
+| [vswhere](https://github.com/Microsoft/vswhere) | 1つのファイルのネイティブ実行可能ファイルで、リリースやプレリリース、インストールされている製品、インストールされているワークロードなどの条件を満たすインスタンスを検索します。 では、visual studio 2010 以降を検索することもできます。ただし、Visual Studio 2017 以降では、より少ない情報が返されます。 例については、 [wiki](https://github.com/Microsoft/vswhere/wiki) を参照してください。 |
+| [VSSetup コマンドレット](https://github.com/Microsoft/vssetup.powershell) | PowerShell コマンドレットは、2.0 以降でサポートされています。これにより、 _vswhere_ と同じ条件に基づいてインスタンスを検索し、インスタンスに関するさらに多くのプロパティを検出するために使用できるオブジェクトとして、豊富な情報が返されます。 例については、 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) を参照してください。 |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | は、 _VSIXInstaller_ を自動的に検索し、コマンドラインを渡して **.vsix* ファイルをインストールします。 この機能は、クエリ Api を直接サポートしていないインストーラーで役に立ちます。 例については、 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) を参照してください。 |
 
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio 2017 セットアップの変更点](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
-* [DTE を使用して Visual Studio を起動します。](launch-visual-studio-dte.md)
+* [DTE を使って Visual Studio を起動する](launch-visual-studio-dte.md)

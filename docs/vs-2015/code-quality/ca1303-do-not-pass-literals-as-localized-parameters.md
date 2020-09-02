@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f3ad1f56215d002c03d346b38ce6155e8df7412b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539114"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303:ローカライズされるパラメーターとしてリテラルを渡さない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
@@ -62,5 +62,5 @@ ms.locfileid: "85539114"
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/cs/FxCop.Globalization.DoNotPassLiterals.cs#1)]
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [デスクトップ アプリケーションのリソース](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

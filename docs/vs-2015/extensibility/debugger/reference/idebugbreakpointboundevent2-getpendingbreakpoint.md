@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint |Microsoft Docs
+title: 'IDebugBreakpointBoundEvent2:: GetPendingBreakpoint ポイント |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c3f831f2d889044d0dfaceecdc9acba2801cd74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176788"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
@@ -40,13 +40,13 @@ int GetPendingBreakpoint( 
   
 #### <a name="parameters"></a>パラメーター  
  `ppPendingBP`  
- [out]返します、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)バインドされている保留中のブレークポイントを表すオブジェクト。  
+ 入出力保留中のブレークポイントを表す [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CBreakpointSetDebugEventBase**を公開するオブジェクト、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)インターフェイス。  
+ 次の例は、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)インターフェイスを公開する**Cbreakpointsetdebugeventbase**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(  
@@ -74,6 +74,6 @@ STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

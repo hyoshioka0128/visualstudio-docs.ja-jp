@@ -11,18 +11,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 16933eb409f55be209d54c26d0c077ed96f53cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205009"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-有効な列挙値は、プログラムのフラグを破棄します。  
+プログラム破棄フラグの有効な値を列挙します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PPROGRAM_DESTROY_FLAGS  
@@ -41,18 +41,18 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>用語  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- プログラムの破棄が、デバッグを続行します。  
+ プログラムを破棄しますが、デバッグを続行します。  
   
-## <a name="remarks"></a>Remarks  
- 列挙体は、によって返される、 [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ 列挙体は、 [Getflags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

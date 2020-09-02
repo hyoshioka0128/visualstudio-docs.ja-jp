@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 278d8537ee253d8c79024d5e866befa1d65ded0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194199"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-親カテゴリ内のテンプレートを表示する数を指定します、**新しいプロジェクト** ダイアログ ボックス。  
+[ **新しいプロジェクト** ] ダイアログボックスにテンプレートを表示する親カテゴリの数を指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<NumberOfParentCategoriesToRollUp >  
+ \<NumberOfParentCategoriesToRollUp>  
   
 ## <a name="syntax"></a>構文  
   
@@ -55,13 +55,13 @@ ms.locfileid: "68194199"
 ## <a name="text-value"></a>テキスト値  
  `integer`値が必要です。  
   
- この値は、親カテゴリ内のテンプレートを表示する数を指定します、**新しいプロジェクト** ダイアログ ボックス。  
+ この値は、[ **新しいプロジェクト** ] ダイアログボックスにテンプレートを表示する親カテゴリの数を指定します。  
   
-## <a name="remarks"></a>Remarks  
- `NumberOfParentCategoriesToRollUp` は、省略可能な要素です。  
+## <a name="remarks"></a>注釈  
+ `NumberOfParentCategoriesToRollUp` は省略可能な要素です。  
   
 ## <a name="example"></a>例  
- この例でのメタデータを[!INCLUDE[csprcs](../includes/csprcs-md.md)]Windows アプリケーション。 このメタデータを含むテンプレートには最上位レベルの下 2 つのフォルダーが配置されている場合[!INCLUDE[csprcs](../includes/csprcs-md.md)]ノードの最上位レベルのノードで、テンプレートが表示されます、**新しいプロジェクト** ダイアログ ボックス。 場合、`NumberOfParentCategoriesToRollUp`テンプレートのみが表示されます ノードでそのが物理的に配置されているが設定されています。  
+ この例は、Windows アプリケーションのメタデータを示してい [!INCLUDE[csprcs](../includes/csprcs-md.md)] ます。 このメタデータを持つテンプレートの最上位レベルノードの下に2つのフォルダーレベルが配置されている場合 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 、テンプレートは [ **新しいプロジェクト** ] ダイアログボックスの最上位ノードに表示されます。 が設定されて `NumberOfParentCategoriesToRollUp` いない場合、テンプレートは物理的に配置されているノードにのみ表示されます。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ ms.locfileid: "68194199"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

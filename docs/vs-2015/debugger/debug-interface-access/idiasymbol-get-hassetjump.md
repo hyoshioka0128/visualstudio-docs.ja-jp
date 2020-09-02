@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_hassetjump |Microsoft Docs
+title: 'IDiaSymbol:: get_hasSetJump |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3de774fcfa7fcbce48653eb1e6615ae70902cb0d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703738"
 ---
-# <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
+# <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-関数の使用が含まれるかどうかを指定するフラグを取得、 [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2)コマンド (ペアになって、 [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f)コマンド、例外処理の C スタイルのメソッドをフォームこれら)。  
+関数に [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) コマンド ( [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) コマンドとの組み合わせ) を使用するかどうかを指定するフラグを取得します。これらは、例外処理の C スタイルのメソッドを形成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,23 +35,23 @@ HRESULT get_hasSetJump(
   
 #### <a name="parameters"></a>パラメーター  
  `pFlag`  
- [out]返します`TRUE`関数が含まれている場合、`setjmp`コマンド以外を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` 関数にコマンドが含まれている場合はを返します `setjmp` 。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
 ## <a name="requirements"></a>必要条件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK バージョン 8.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
+ [IDiaSymbol:: get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
  [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f)   
  [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2)

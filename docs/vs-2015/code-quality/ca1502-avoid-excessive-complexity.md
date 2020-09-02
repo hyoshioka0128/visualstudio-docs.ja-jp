@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547837"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:メソッドの実装を複雑にしすぎないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
@@ -36,7 +36,7 @@ ms.locfileid: "85547837"
  メソッドには、過剰なサイクロマティック複雑度があります。
 
 ## <a name="rule-description"></a>ルールの説明
- *サイクロマティック複雑度*は、メソッドを使用して線形的に独立したパスの数を測定します。これは、条件分岐の数と複雑さによって決まります。 サイクロマティック複雑度が低いのは、一般に、理解、テスト、および保守が容易なメソッドであることを示しています。 サイクロマティック複雑度は、メソッドの制御フローグラフから計算され、次のように指定されます。
+ *サイクロマティック複雑度* は、メソッドを使用して線形的に独立したパスの数を測定します。これは、条件分岐の数と複雑さによって決まります。 サイクロマティック複雑度が低いのは、一般に、理解、テスト、および保守が容易なメソッドであることを示しています。 サイクロマティック複雑度は、メソッドの制御フローグラフから計算され、次のように指定されます。
 
  サイクロマティック複雑度 = エッジの数-ノードの数 + 1
 
@@ -44,7 +44,7 @@ ms.locfileid: "85547837"
 
  このルールは、サイクロマティック複雑度が25を超える場合に違反を報告します。
 
- コードメトリックスの詳細については、「[マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)」を参照してください。
+ コードメトリックスの詳細については、「 [マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、メソッドをリファクタリングして、サイクロマティック複雑度を下げます。
@@ -57,7 +57,7 @@ ms.locfileid: "85547837"
 
 - ブランチの数 (、、 `if` など `while` `do` )
 
-- 内の `case` ステートメントの数`switch`
+- 内の `case` ステートメントの数 `switch`
 
   次の例は、さまざまなサイクロマティック複雑なメソッドを示しています。
 
@@ -92,5 +92,5 @@ ms.locfileid: "85547837"
 ## <a name="related-rules"></a>関連規則
  [CA1501:継承を使用しすぎないでください](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

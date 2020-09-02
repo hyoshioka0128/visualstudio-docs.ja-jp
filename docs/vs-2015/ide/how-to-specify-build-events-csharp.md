@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : ビルド イベントを指定する (C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670690"
 ---
 # <a name="how-to-specify-build-events-c"></a>方法 : ビルド イベントを指定する (C#)
@@ -49,12 +49,12 @@ ms.locfileid: "72670690"
 5. **[ビルド後に実行するコマンド ライン]** ボックスで、ビルド イベントの構文を指定します。
 
     > [!NOTE]
-    > .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
+    > .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。  たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
 
 6. **[ビルド後イベントの実行]** ボックスで、ビルド後イベントを実行する条件を指定します。
 
     > [!NOTE]
-    > 長い構文を追加する場合、または [[ビルド前に実行するコマンド ライン]/[ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)でビルド マクロを選択する場合は、省略記号 **[...]** ボタンをクリックして編集ボックスを表示します。
+    > 長い構文を追加する場合、または [ビルド前に実行する [コマンドライン]/[ビルド後に実行するコマンドライン] ダイアログボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)でビルドマクロを選択する場合は、省略記号ボタン ([**...**]) をクリックして編集ボックスを表示します。
 
      ビルド イベントの構文では、コマンド プロンプトまたは .bat ファイルで有効な任意のコマンドを使うことができます。 後続のすべてのコマンドが確実に実行されるように、バッチ ファイルの名前の前には `call` を記述する必要があります。
 
@@ -73,9 +73,9 @@ ms.locfileid: "72670690"
 
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>アプリケーション マニフェストを変更する .exe コマンドを作成するには
 
-1. コマンド用のコンソール アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+1. コマンド用のコンソール アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** を展開し、 **[Windows]** をクリックして、 **[コンソール アプリケーション]** テンプレートをクリックします。 プロジェクトに `ChangeOSVersionCS` という名前を付けます。
+2. **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** を展開し、**[Windows]** をクリックして、**[コンソール アプリケーション]** テンプレートをクリックします。 プロジェクトに `ChangeOSVersionCS` という名前を付けます。
 
 3. Program.cs で、ファイルの先頭にある他の `using` ステートメントに次の行を追加します。
 
@@ -145,17 +145,17 @@ ms.locfileid: "72670690"
 
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>ビルド後のイベントを呼び出してアプリケーション マニフェストを変更するには
 
-1. 発行するプロジェクト用の Windows アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+1. 発行するプロジェクト用の Windows アプリケーションを作成します。 **[ファイル]** メニューの **[新規作成]** をポイントし、**[プロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** を展開し、 **[Windows]** をクリックして、 **[Windows フォーム アプリケーション]** テンプレートをクリックします。 プロジェクトに `CSWinApp` という名前を付けます。
+2. **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** を展開し、**[Windows]** をクリックして、**[Windows フォーム アプリケーション]** テンプレートをクリックします。 プロジェクトに `CSWinApp` という名前を付けます。
 
 3. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-4. プロジェクト デザイナーで、 **[発行]** ページに移動し、 **[発行場所]** を `C:\TEMP\` に設定します。
+4. プロジェクト デザイナーで、**[発行]** ページに移動し、**[発行場所]** を `C:\TEMP\` に設定します。
 
 5. **[今すぐ発行]** をクリックして、プロジェクトを発行します。
 
-     マニフェスト ファイルがビルドされ、`C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest` に配置されます。 マニフェストを表示するには、ファイルを右クリックし、 **[プログラムから開く]** 、 **[一覧からプログラムを選択する]** 、 **[メモ帳]** の順にクリックします。
+     マニフェスト ファイルがビルドされ、`C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest` に配置されます。 マニフェストを表示するには、ファイルを右クリックし、**[プログラムから開く]**、**[一覧からプログラムを選択する]**、**[メモ帳]** の順にクリックします。
 
      ファイルで `<osVersionInfo>` 要素を探します。 たとえば、バージョンは次のように記述されています。
 
@@ -163,7 +163,7 @@ ms.locfileid: "72670690"
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. プロジェクト デザイナーで、 **[ビルド イベント]** タブをクリックし、 **[ビルド後の編集]** をクリックします。
+6. プロジェクトデザイナーで、[ **ビルドイベント** ] タブをクリックし、[ **ビルド後の編集** ] ボタンをクリックします。
 
 7. **[ビルド後に実行するコマンド ライン]** ボックスに次のコマンドを入力します。
 
@@ -175,7 +175,7 @@ ms.locfileid: "72670690"
 
 8. プロジェクトを再び発行します。 **[発行]** ページに移動して、 **[今すぐ発行]** をクリックします。
 
-     マニフェストを再び表示します。 マニフェストを表示するには、発行ディレクトリを開きし、ファイルを右クリックして、 **[プログラムから開く]** 、 **[一覧からプログラムを選択する]** 、 **[メモ帳]** の順に選択します。
+     マニフェストを再び表示します。 マニフェストを表示するには、発行ディレクトリを開きし、ファイルを右クリックして、**[プログラムから開く]**、**[一覧からプログラムを選択する]**、**[メモ帳]** の順に選択します。
 
      これで、バージョンは次のように表示されます。
 
@@ -184,4 +184,4 @@ ms.locfileid: "72670690"
     ```
 
 ## <a name="see-also"></a>参照
- [[ビルドイベント] ページ、プロジェクトC#デザイナー () [](../ide/reference/build-events-page-project-designer-csharp.md)ビルド前に実行する[コマンドライン]/[ビルド後に実行するコマンドライン] ダイアログボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)[方法: ビルドイベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
+ [[ビルドイベント] ページ、プロジェクトデザイナー (C#) [](../ide/reference/build-events-page-project-designer-csharp.md) [ビルド前に実行するコマンドライン]/[ビルド後に実行するコマンドライン] ダイアログボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)[方法: ビルドイベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

@@ -14,34 +14,34 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b56ab490342cfbda9c16408aa0937abd80728c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194380"
 ---
 # <a name="managing-vspackages"></a>VSPackage の管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ほとんどの場合は、プロジェクトと項目テンプレートの登録し、パッケージを自動的に読み込むため、Vspackage の管理について心配する必要はありません。 ただし、状況によっては、パッケージを管理するためにさらに詳しくを学習する必要があります。  
+ほとんどの場合、Vspackage の管理について心配する必要はありません。プロジェクトと項目テンプレートによってパッケージが登録され、自動的に読み込まれるためです。 ただし、状況によっては、パッケージを管理するためにもう少し学習が必要になる場合があります。  
   
-## <a name="using-the-experimental-instance"></a>実験用インスタンスを使用します。  
- 実験用インスタンスの詳細についてを参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
+## <a name="using-the-experimental-instance"></a>実験用インスタンスの使用  
+ 実験用インスタンスの詳細については、 [実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。  
   
 ## <a name="registering-and-unregistering-vspackages"></a>VSPackage の登録と登録解除  
- 登録し、Vspackage とその他の種類の拡張機能の登録を解除する方法については、次を参照してください。[の登録および登録を解除する Vspackage](../extensibility/registering-and-unregistering-vspackages.md)します。  
+ Vspackage とその他の種類の拡張機能を登録および登録解除する方法については、「 [vspackage の登録と](../extensibility/registering-and-unregistering-vspackages.md)登録解除」を参照してください。  
   
-## <a name="loading-a-vspackage"></a>VSPackage の読み込み  
- Vspackage は、autoload 特定 CMDUICONTEXT GUID の電源がオンに設定できます。 詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
+## <a name="loading-a-vspackage"></a>VSPackage を読み込んでいます  
+ Vspackage は、特定の CMDUICONTEXT GUID が有効になっている場合に自動読み込みするように設定できます。 詳細については、「 [vspackage の読み込み](../extensibility/loading-vspackages.md)」を参照してください。  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage を使用して、バック グラウンドで Vspackage をロードするには  
- AsyncPackage クラスは、Visual Studio での UI の応答性の向上のバック グラウンド スレッドで読み込むパッケージを使用できます。 詳細については、「[方法 :AsyncPackage を使用して、バック グラウンドで Vspackage を読み込む](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)します。  
+## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage を使用してバックグラウンドで Vspackage を読み込む  
+ AsyncPackage クラスを使用すると、バックグラウンドスレッドでのパッケージの読み込みが有効になり、Visual Studio での UI の応答性が向上します。 詳細については、「 [方法: AsyncPackage を使用してバックグラウンドで vspackage を読み込む](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)」を参照してください。  
   
-## <a name="rule-based-ui-context-for-extensions"></a>拡張機能のルール ベースの UI コンテキスト  
- ルール ベースの UI コンテキストを使用する UI コンテキストがアクティブになるし、関連付けられている Vspackage が読み込まれる正確な条件を定義する拡張機能の作成者。 詳細については、「[方法 :Visual Studio 拡張機能のルール ベースの UI コンテキストを使用して](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)します。  
+## <a name="rule-based-ui-context-for-extensions"></a>拡張機能のルールベースの UI コンテキスト  
+ ルールベースの UI コンテキストを使用すると、拡張機能の作成者は、UI コンテキストがアクティブ化され、関連付けられている Vspackage が読み込まれる正確な条件を定義できます。 詳細については、「 [方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)」を参照してください。  
   
 ## <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング  
- 読み込まれないか、エラーが発生する Vspackage のトラブルシューティングの手法を確認します。[VSPackage のトラブルシューティング](../extensibility/troubleshooting-vspackages.md)  
+ 読み込まれない、またはエラーが発生している Vspackage のトラブルシューティングの手法については、 [vspackage](../extensibility/troubleshooting-vspackages.md)を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>参照  
+ [VSPackages](../extensibility/internals/vspackages.md)

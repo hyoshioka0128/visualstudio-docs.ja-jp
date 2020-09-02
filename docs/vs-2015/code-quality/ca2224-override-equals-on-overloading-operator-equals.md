@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538637"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
@@ -50,7 +50,7 @@ ms.locfileid: "85538637"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>一貫性のない等値定義の例
 
 ### <a name="description"></a>説明
- 次の例は、一貫性のない定義を持つ型の等価性を示しています。 `BadPoint`等値演算子のカスタム実装を提供することで等値の意味を変更しますが、の <xref:System.Object.Equals%2A> 動作が同じになるようにオーバーライドしません。
+ 次の例は、一貫性のない定義を持つ型の等価性を示しています。 `BadPoint` 等値演算子のカスタム実装を提供することで等値の意味を変更しますが、の <xref:System.Object.Equals%2A> 動作が同じになるようにオーバーライドしません。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]

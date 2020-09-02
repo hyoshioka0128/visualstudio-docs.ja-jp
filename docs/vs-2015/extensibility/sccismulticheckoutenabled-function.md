@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65641803c1fdcb4645bbc20f6cbc845e5d326689
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200062"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この関数は、ソース管理プラグインのファイルに複数のチェック アウトできるかどうかを確認します。  
+この関数は、ソース管理プラグインがファイルに対して複数のチェックアウトを許可しているかどうかを確認します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,21 +35,21 @@ SCCRTN SccIsMultiCheckoutEnabled(
   
 #### <a name="parameters"></a>パラメーター  
  pContext  
- [in]ソース管理プラグイン コンテキスト構造体。  
+ からソース管理プラグインのコンテキスト構造。  
   
  pbMultiCheckout  
- [out]このプロジェクト (0 以外の場合は複数のチェック アウトがサポートされている) 複数のチェック アウトが有効になっているかどうかを指定します。  
+ 入出力このプロジェクトに対して複数のチェックアウトを有効にするかどうかを指定します (0 以外の場合は複数のチェックアウトがサポートされます)。  
   
 ## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
-|SCC_OK|チェックは成功しました。|  
+|SCC_OK|チェックに成功しました。|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|  
   
-## <a name="remarks"></a>Remarks  
- 2 つのチェックかどうかファイル チェック アウトできる同時に 1 つ以上のユーザーを決定するようになります。 最初に、ソース管理システムでは、複数のチェック アウトをサポートする必要があります。 ソース管理プラグインは、初期化中にこの機能を指定することによって指定できます、`SCC_CAP_MULTICHECKOUT`します。 その後、2 番目のチェック、IDE は、現在のプロジェクトが複数のチェック アウトをサポートしているかどうかを判断するには、この関数を呼び出します。 成功した場合、プラグインを返しますがコードし、設定の選択されたプロジェクトは、複数のチェック アウトがサポートされている場合、`pbMultiCheckout`に 0 以外の場合 (`TRUE`) または`FALSE`します。  
+## <a name="remarks"></a>注釈  
+ IDE は2つのチェックを行い、複数のユーザーが同時にファイルをチェックアウトできるかどうかを判断します。 まず、ソース管理システムが複数のチェックアウトをサポートしている必要があります。 ソース管理プラグインは、を指定することにより、初期化中にこの機能を指定でき `SCC_CAP_MULTICHECKOUT` ます。 その後、2番目のチェックとして、IDE はこの関数を呼び出して、現在のプロジェクトが複数のチェックアウトをサポートしているかどうかを判断します。 選択したプロジェクトで複数のチェックアウトがサポートされている場合、プラグインは成功コードを返し、 `pbMultiCheckout` を0以外 ( `TRUE` ) またはに設定し `FALSE` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

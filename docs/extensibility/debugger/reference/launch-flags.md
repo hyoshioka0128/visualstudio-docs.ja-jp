@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS |マイクロソフトドキュメント
+title: LAUNCH_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714720"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
@@ -48,28 +48,28 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `LAUNCH_DEBUG`\
-デバッグ用のプロセスを起動します。
+デバッグのプロセスを起動します。
 
 `LAUNCH_NODEBUG`\
 デバッグせずにプロセスを起動します。
 
 `LAUNCH_ENABLE_ENC`\
-非推奨、使用しないでください。
+非推奨です。使用しないでください。
 
 `LAUNCH_MERGE_ENV`\
-プロセスを起動し、起動ホストと環境をマージします。
+プロセスを起動し、環境を起動中のホストにマージします。
 
-## <a name="remarks"></a>Remarks
-これらの値は、引数として[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッドに渡されます。
+## <a name="remarks"></a>注釈
+これらの値は、 [Launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) メソッドに引数として渡されます。
 
-これらのフラグはビット単位`OR`で組み合わせることができる。
+これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -16,22 +16,22 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547551"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office ソリューションの配置マニフェスト
   配置マニフェストは、Office ソリューションの配置設定を記述する XML ファイルであり、現在のアプリケーションのバージョンを識別します。
 
- Visual Studio での Office 開発では、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)リファレンスで定義されている配置マニフェストスキーマを使用します。
+ Visual Studio での Office 開発では、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md) リファレンスで定義されている配置マニフェストスキーマを使用します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  Office ソリューションの配置マニフェストファイルは、現在のバージョンとその他の配置設定を識別します。 アプリケーションマニフェストを参照し、ソリューションの現在のバージョンとソリューション内のすべてのファイルについて説明します。
 
 ## <a name="file-name-syntax"></a>ファイル名の構文
- 配置マニフェストファイルの名前は、拡張子が *.vsto*である必要があります。 これは標準の配置マニフェストですが、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 拡張機能は、Visual Studio Tools for Office ランタイムがファイルを処理できるようにすることとは異なります。
+ 配置マニフェストファイルの名前は、拡張子が *.vsto* である必要があります。 これは標準の配置マニフェストですが、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 拡張機能は、Visual Studio Tools for Office ランタイムがファイルを処理できるようにすることとは異なります。
 
 ## <a name="example"></a>例
  次のコード例は、Visual Studio Tools for Office ソリューションの配置マニフェストを示しています。

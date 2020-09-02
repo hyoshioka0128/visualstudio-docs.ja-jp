@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b584e355f5b64984f57dd17606dfb0a2f781c62d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547668"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:列挙型を FlagsAttribute に設定しません
@@ -61,5 +61,5 @@ ms.locfileid: "85547668"
 ## <a name="related-rules"></a>関連規則
  [CA1027:列挙型を FlagsAttribute に設定します](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.FlagsAttribute?displayProperty=fullName>

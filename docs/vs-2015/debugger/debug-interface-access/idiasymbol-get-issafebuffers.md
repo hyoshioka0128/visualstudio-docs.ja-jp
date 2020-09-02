@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_issafebuffers |Microsoft Docs
+title: 'IDiaSymbol:: get_isSafeBuffers |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 046744fda09f272ca80c2760e880dce23d45ae36
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65673758"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-セーフ バッファーのプリプロセッサ ディレクティブを使用しているかどうかを指定するフラグを取得します。 使用する場合、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)に設定されている`SymTagFunction`します。  
+セーフバッファーのプリプロセッサディレクティブを使用するかどうかを指定するフラグを取得します。 [Symtagenum 列挙型](../../debugger/debug-interface-access/symtagenum.md)がに設定されている場合は、を使用し `SymTagFunction` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,23 +35,23 @@ HRESULT get_isSafeBuffers( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`ポインターは、セーフ バッファー; のプリプロセッサ ディレクティブを使用している場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` ポインターがセーフバッファーにプリプロセッサディレクティブを使用している場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [strict_gs_check](https://msdn.microsoft.com/library/decfec81-c916-42e0-a07f-8cc26df6a7ce)

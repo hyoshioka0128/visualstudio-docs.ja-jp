@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541621"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>方法: リボングループにダイアログボックスランチャーを追加する
@@ -29,9 +29,9 @@ ms.locfileid: "85541621"
 
 1. **ソリューションエクスプローラー**でリボンコードファイル (*.vb*または *.cs*ファイル) を選択します。
 
-2. [**表示**] メニューの [**デザイナー**] をクリックします。
+2. [ **表示** ] メニューの [ **デザイナー**] をクリックします。
 
-3. リボンデザイナーで、任意のグループを右クリックし、[**追加**] をクリックします。
+3. リボンデザイナーで、任意のグループを右クリックし、[ **追加**] をクリックします。
 
      <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick>カスタムまたは組み込みダイアログボックスを開くには、グループのイベントにコードを追加します。
 

@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_read |Microsoft Docs
+title: 'IDiaSectionContrib:: get_read |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c06a618d0278d6a02409c33a73cd179f3b228e7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150509"
 ---
-# <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
+# <a name="idiasectioncontribget_read"></a>IDiaSectionContrib::get_read
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-セクションを読み取れるかどうかを示すフラグを取得します。  
+セクションを読み取ることができるかどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ HRESULT get_read ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`セクションを読み取ることができます。 場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` セクションを読み取ることができる場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

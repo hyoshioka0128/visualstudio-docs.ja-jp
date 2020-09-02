@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b99cbd777755a9a48869299b5cea523ecacbb4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153375"
 ---
-# <a name="bppasscount"></a>BP_PASSCOUNT
+# <a name="bp_passcount"></a>BP_PASSCOUNT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-条件付きブレークポイントが発生する、カウントと条件について説明します。  
+条件付きブレークポイントが発生する回数と条件について説明します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,26 +42,26 @@ public struct BP_PASSCOUNT { 
   
 ## <a name="members"></a>メンバー  
  `dwPassCount`  
- それを起動する前に、ブレークポイントを渡すための時間数。  
+ ブレークポイントを実行する前に、そのブレークポイントを通過する回数。  
   
  `stylePassCount`  
- 値、 [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)ブレークポイントのスタイルを指定する列挙体は、数を渡します。  
+ ブレークポイントのパスカウントのスタイルを指定する [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) 列挙の値です。  
   
-## <a name="remarks"></a>Remarks  
- この構造体のメンバーである、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造体。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 構造体のメンバーです。  
   
- この構造体がパラメーターとして渡されるも、[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)と[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)メソッド。  
+ この構造体は、パラメーターとして[Setpass count](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) および[setpass count](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) メソッドにも渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
- [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
+ [Setpass Count](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
+ [Setpass Count](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
  [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)

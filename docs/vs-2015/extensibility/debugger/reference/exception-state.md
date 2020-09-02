@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4e30d9cc9df592cc6feb97c14449dbc6a122ec63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149355"
 ---
-# <a name="exceptionstate"></a>EXCEPTION_STATE
+# <a name="exception_state"></a>EXCEPTION_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 例外の状態を指定します。  
@@ -77,65 +77,65 @@ public enum enum_EXCEPTION_STATE { 
   
 ## <a name="members"></a>メンバー  
  EXCEPTION_NONE  
- 例外は停止されません。  
+ 例外では停止しないでください。  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- 例外の最初の実行を停止します。 例外イベントを記述する場合、このフラグは、例外イベントでは、初回の例外イベントを示します。  
+ 最初の例外の発生時に停止します。 例外イベントを記述する場合、このフラグは例外イベントが初回例外イベントであることを示します。  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- 例外の 2 つ目の実行を停止します。 例外イベントを記述する場合は、例外イベントでは、次の例外イベントを示します。  
+ 例外の2回目の発生時に停止します。 例外イベントを記述するときに、例外イベントが第2の例外イベントであることを示します。  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- ユーザー モードの例外の最初の実行を停止します。 例外イベントを記述する場合は、例外イベントのユーザーの初回の例外イベントであることを示します。  
+ ユーザーモード例外の初回起動時に停止します。 例外イベントを記述するときに、例外イベントが初回ユーザー例外イベントであることを示します。  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- ユーザー モードの例外がキャッチされない場合は停止します。 例外イベントを記述する場合は、例外イベントのキャッチされないユーザー モード例外イベントであることを示します。  
+ ユーザーモードの例外がキャッチされない場合に停止します。 例外イベントを記述するときに、例外イベントがキャッチされていないユーザーモードの例外イベントであることを示します。  
   
  EXCEPTION_STOP_ALL  
- すべての例外で停止します。 例外イベントを記述する場合は使用されません。  
+ 例外で停止します。 例外イベントの記述時には使用されません。  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- 例外イベントを記述する場合から例外を続行することはできませんを示します。  
+ 例外イベントを記述するときに、例外をから続行できないことを示します。  
   
  EXCEPTION_CODE_SUPPORTED  
- 例外にそれをサポートするコードがあることを示します。 例外を表示するために使用  
+ 例外にサポートするコードが含まれていることを示します。 例外の表示に使用されます  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- 例外コードを 16 進数で表示することを示します。 例外を表示するために使用されます。  
+ 例外コードを16進数で表示する必要があることを示します。 例外を表示するために使用されます。  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- 例外コード JustMyCode をサポートしていることを示します。 例外を表示するために使用されます。  
+ 例外コードがジャスト Mycode をサポートしていることを示します。 例外を表示するために使用されます。  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- マネージ コードのデバッガーが例外を処理することを示します。 指定しない場合、セット、既定のデバッガー、例外を処理します。 渡されます、 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)メソッドで使用されていないと、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造体。  
+ マネージコードデバッガーが例外を処理する必要があることを示します。 設定されていない場合、既定のデバッガーは例外を処理します。 これは [Setallexceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) メソッドに渡され、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 構造体では使用されません。  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
- 廃止された、使用しないでください。  
+ 使用しないでください。  
   
  EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
- 廃止された、使用しないでください。  
+ 使用しないでください。  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
- 廃止された、使用しないでください。  
+ 使用しないでください。  
   
  EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
- 廃止された、使用しないでください。  
+ 使用しないでください。  
   
-## <a name="remarks"></a>Remarks  
- として使用される、`dwState`のメンバー、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造については、何ができると、例外の状態を示します。  
+## <a name="remarks"></a>注釈  
+ `dwState`例外の状態とそれに対して実行できることを示すために、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造体のメンバーとして使用されます。  
   
- これらの値は渡されることも、 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)メソッドすべての例外の状態を設定します。  
+ これらの値は、すべての例外の状態を設定するために [Setallexceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) メソッドにも渡されます。  
   
- これらのフラグは、ビットごとの OR と組み合わせることがあります。  
+ これらのフラグは、ビットごとの OR と組み合わせることができます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ddff6130e2243d10c00cefec160d057516d60932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153280"
 ---
-# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+# <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ブレークポイントがバインドされた理由を説明します。  
+ブレークポイントがバインド解除された理由を示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,27 +47,27 @@ public enum enum_BP_UNBOUND_REASON { 
   
 ## <a name="members"></a>メンバー  
  BPUR_UNKNOWN  
- 不明な理由です。  
+ 理由は不明です。  
   
  BPUR_CODE_UNLOADED  
- ブレークポイントを含むコードがアンロードされました。  
+ ブレークポイントを含むコードはアンロードされました。  
   
  BPUR_BREAKPOINT_REBIND  
- ブレークポイントが別の場所にバインドされています。 編集後に発生したり、ブレークポイントに移動したとき、またはファイル パスが無効になっているブレークポイントがバインドされている場合は、操作を続行します。  
+ ブレークポイントは別の場所に再バインドされています。 これは、ブレークポイントが移動したとき、または無効になったパスを持つファイルにブレークポイントがバインドされたときに発生する可能性があります。  
   
  BPUR_ BREAKPOINT_ERROR  
- ブレークポイントを判定して、バインド後にエラーが発生されます。 これは管理対象のブレークポイント条件を持つは無効になります。  
+ ブレークポイントは、バインド後にエラーが発生していると判断されます。 これは、条件が有効でなくなったマネージブレークポイントに発生します。  
   
-## <a name="remarks"></a>Remarks  
- によって返される、 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [Getreason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

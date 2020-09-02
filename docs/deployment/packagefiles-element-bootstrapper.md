@@ -1,5 +1,5 @@
 ---
-title: '&lt;PackageFiles&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;PackageFiles &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747513"
 ---
-# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;要素 (ブートス トラップ)
-`PackageFiles`要素が含まれます`PackageFile`の結果として実行されるインストール パッケージを定義するには、要素、`Command`要素。
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 要素 (ブートストラップ)
+要素には、要素 `PackageFiles` `PackageFile` の結果として実行されるインストールパッケージを定義する要素が含まれ `Command` ます。
 
 ## <a name="syntax"></a>構文
 
@@ -46,23 +46,23 @@ ms.locfileid: "66747513"
 
 |属性|説明|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|省略可能です。 場合設定`false`、インストーラーから参照されるファイルをダウンロードのみが、`Command`要素。 場合設定`true`、すべてのファイルがダウンロードされます。<br /><br /> 場合に設定`IfNotHomesite`、インストーラーには、同じ動作がまるで`False`場合`ComponentsLocation`に設定されている`HomeSite`、し、それ以外の場合は動作が同じ場合と`True`。 この設定をそれ自体がパッケージに HomeSite シナリオでは、独自の動作を実行するブートス トラップを許可することができます。<br /><br /> 既定値は `true` です。|
+|`CopyAllPackageFiles`|省略可能。 に設定すると、 `false` インストーラーは要素から参照されるファイルのみをダウンロードし `Command` ます。 に設定すると `true` 、すべてのファイルがダウンロードされます。<br /><br /> に設定すると、インストーラーは、 `IfNotHomesite` がに設定されている場合と同じように動作し `False` `ComponentsLocation` `HomeSite` ます。それ以外の場合は、と同じように動作し `True` ます。 この設定は、ブートストラップ自体のパッケージが HomeSite シナリオで独自の動作を実行することを許可するのに役立ちます。<br /><br /> 既定値は、`true` です。|
 
 ## <a name="packagefile"></a>PackageFile
- `PackageFile`要素の子である、`PackageFiles`要素。 A`PackageFiles`要素が少なくとも 1 つあります`PackageFile`要素。
+ 要素は `PackageFile` 要素の子です `PackageFiles` 。 要素には、 `PackageFiles` 少なくとも1つの要素が必要 `PackageFile` です。
 
- `PackageFile` 次の属性があります。
+ `PackageFile` には次の属性があります。
 
 | 属性 | 説明 |
 |---------------| - |
-| `Name` | 必須。 パッケージ ファイルの名前。 これは、名前を`Command`パッケージをインストールするための条件を定義する場合に、要素を参照します。 この値はへのキーとしても使用、`Strings`などのツールをローカライズされた名前を取得するテーブル[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]が使用して、パッケージを記述します。 |
-| `HomeSite` | 省略可能です。 インストーラーに含まれてない場合は、リモート サーバー上のパッケージの場所。 |
-| `CopyOnBuild` | 省略可能です。 ブートス トラップがビルド時に、ディスク上にパッケージ ファイルをコピーする必要があるかどうかを指定します。 既定値は true です。 |
-| `PublicKey` | パッケージの証明書の署名者の公開暗号化キー。 場合に、必ず`HomeSite`は使用しない場合は省略可能です。 |
-| `Hash` | 省略可能です。 パッケージ ファイルの SHA1 ハッシュ。 これは、インストール時に、ファイルの整合性を検証に使用されます。 パッケージ ファイルからは、同一のハッシュを計算することはできません、パッケージはインストールされていません。 |
+| `Name` | 必須。 パッケージ ファイルの名前。 これは、 `Command` パッケージがインストールされる条件を定義するときに要素が参照する名前です。 この値は、テーブルのキーとしても使用され `Strings` ます。この名前は、などのツールが [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] パッケージの記述に使用するローカライズされた名前を取得するために使用されます。 |
+| `HomeSite` | 省略可能。 リモートサーバー上のパッケージの場所 (インストーラーに含まれていない場合)。 |
+| `CopyOnBuild` | 省略可能。 ブートストラップがビルド時にパッケージファイルをディスクにコピーするかどうかを指定します。 既定値は true です。 |
+| `PublicKey` | パッケージの証明書署名者の暗号化された公開キー。 を使用する場合は必須。 `HomeSite` それ以外の場合は省略可能。 |
+| `Hash` | 省略可能。 パッケージファイルの SHA1 ハッシュ。 これは、インストール時にファイルの整合性を確認するために使用されます。 パッケージファイルから同じハッシュを計算できない場合、パッケージはインストールされません。 |
 
 ## <a name="example"></a>例
- 次のコード例では、.NET Framework 再頒布可能パッケージ、および Windows インストーラーなど、その依存関係パッケージを定義します。
+ 次のコード例では、.NET Framework 再頒布可能パッケージとその依存関係 (Windows インストーラーなど) のパッケージを定義します。
 
 ```xml
 <PackageFiles>
@@ -74,6 +74,6 @@ ms.locfileid: "66747513"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<製品 > 要素](../deployment/product-element-bootstrapper.md)
-- [\<パッケージ > 要素](../deployment/package-element-bootstrapper.md)
-- [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
+- [\<Product> element](../deployment/product-element-bootstrapper.md)
+- [\<Package> element](../deployment/package-element-bootstrapper.md)
+- [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

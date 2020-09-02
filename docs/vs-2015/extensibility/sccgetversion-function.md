@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200045"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この関数は、ソース管理プラグインでサポートされているソース管理プラグイン API のバージョン番号を取得します。  
+この関数は、ソース管理プラグインによってサポートされているソース管理プラグイン API のバージョン番号を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -31,18 +31,18 @@ LONG SccGetVersion(void);
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- なし。  
+ [なし] :  
   
 ## <a name="return-value"></a>戻り値  
- A`LONG`サポートされているソース管理プラグイン API のバージョン番号を含むデータ型。  
+ `LONG`サポートされているソース管理プラグイン API のバージョン番号を含むデータ型。  
   
 |WORD|説明|  
 |----------|-----------------|  
 |HIWORD|メジャー バージョン|  
-|LOWORD マクロ|［マイナー バージョン］|  
+|LOWORD|マイナー バージョン|  
   
-## <a name="remarks"></a>Remarks  
- ソース管理プラグインは、ソース管理プラグイン API のバージョン 1.3 をサポートする場合など、この関数では、0x0103 に返します。  
+## <a name="remarks"></a>注釈  
+ たとえば、ソース管理プラグインがソース管理プラグイン API のバージョン1.3 をサポートしている場合、この関数は0x0103 を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

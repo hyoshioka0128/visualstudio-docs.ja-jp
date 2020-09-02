@@ -1,5 +1,5 @@
 ---
-title: 切り離しとデタッチ |Microsoft Docs
+title: 終了とデタッチ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,21 +12,21 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d92fe88826baf19ba66b200990aee7797e91f87b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176675"
 ---
 # <a name="termination-and-detaching"></a>切り離しとデタッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-次に、通常の終了を示します。  
+通常の終了について次に説明します。  
   
-## <a name="discussion"></a>説明  
- 後に、 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)または[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)インターフェイスは、ブレークポイント、例外、実行時エラー、またはデバッグするには、アプリケーションで無限ループがない場合デバッグ中のプログラムは、完了まで実行されます。 これは、正常に終了します。  
+## <a name="discussion"></a>考察 (Discussion)  
+ [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)または[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)インターフェイスが続行されると、デバッグ対象のアプリケーションにブレークポイント、例外、実行時エラー、または無限ループがない場合は、デバッグ中のプログラムが完了するまで実行されます。 これは通常の終了です。  
   
- 送信する必要があります、 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)正常終了を実装します。 実装する必要があります、 [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)メソッド。  
+ 通常の終了を実装するには、 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) を送信する必要があります。 このためには、 [IDebugProgramDestroyEvent2:: GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) メソッドを実装する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [カスタム デバッグ エンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)

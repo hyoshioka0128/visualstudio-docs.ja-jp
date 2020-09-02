@@ -1,5 +1,5 @@
 ---
-title: I列挙型ポートサプライヤー2::クローン |マイクロソフトドキュメント
+title: 'IEnumDebugPortSuppliers2:: Clone |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bc6dc6c055f9821c9c7f02312762d3dd0a44bc58
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716086"
 ---
 # <a name="ienumdebugportsuppliers2clone"></a>IEnumDebugPortSuppliers2::Clone
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[アウト]この列挙体のコピーを個別のオブジェクトとして返します。
+入出力この列挙体のコピーを別のオブジェクトとして返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 列挙型のコピーは、このメソッドが呼び出された時点で元の状態と同じです。 ただし、コピーと元の状態は別々に行われ、個別に変更できます。
+## <a name="remarks"></a>注釈
+ 列挙体のコピーは、このメソッドが呼び出されたときの元の状態と同じ状態になります。 ただし、コピーと元の状態は別々であり、個別に変更できます。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

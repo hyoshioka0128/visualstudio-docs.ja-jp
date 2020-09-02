@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d471a73205383f0f23c5016872712a3ba2c578d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153621"
 ---
-# <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
+# <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-プロセス ID を解釈する方法を指定します、 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体。  
+[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体でプロセス ID を解釈する方法を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,21 +43,21 @@ public enum enum_AD_PROCESS_ID {
   
 ## <a name="members"></a>メンバー  
  AD_PROCESS_ID_SYSTEM  
- プロセス ID は、システム識別子です。 使用して、`ProcessId.dwProcessId`のフィールド、 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体。  
+ プロセス ID はシステム識別子です。 `ProcessId.dwProcessId` [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体のフィールドを使用します。  
   
  AD_PROCESS_ID_GUID  
- プロセス ID は GUID です。 使用して、`ProcessId.guidProcessId`のフィールド、`AD_PROCESS_ID`構造体。  
+ プロセス ID は GUID です。 `ProcessId.guidProcessId`構造体のフィールドを使用し `AD_PROCESS_ID` ます。  
   
-## <a name="remarks"></a>Remarks  
- 使用、`ProcessIdType`のメンバー、 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造に含まれているプロセス ID の種類を識別する構造体。 解釈する方法の決定、`ProcessId`共用体、構造体の。  
+## <a name="remarks"></a>注釈  
+ `ProcessIdType`構造体に含まれているプロセス ID の種類を識別するために、 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体のメンバーに使用されます。 構造体の共用体を解釈する方法を決定し `ProcessId` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

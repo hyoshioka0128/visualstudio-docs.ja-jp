@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7e485bc6289634e1bb6d4b4106d54c8dc82096b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683700"
 ---
 # <a name="profiling-and-windows-vista-security"></a>プロファイルと Windows Vista のセキュリティ
@@ -45,7 +45,7 @@ ms.locfileid: "65683700"
   
      このオプションを選択していない場合、一覧には、現在のセッションのプロセスが表示されます。 このオプションを選択すると、一覧には、すべてのセッションのプロセスが表示されます。  
   
-## <a name="see-also"></a>関連項目  
- [概要](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>参照  
+ [概念](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [方法: 実行中のプロセスにアタッチします。](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [方法: 実行中のプロセスにアタッチする](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

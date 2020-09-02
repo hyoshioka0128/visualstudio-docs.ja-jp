@@ -1,5 +1,5 @@
 ---
-title: エラーブレークポイントの解像度2をデバッグする |マイクロソフトドキュメント
+title: IDebugErrorBreakpointResolution2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d922259034d4e99c43fc06cfef8228b013fb180f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730012"
 ---
 # <a name="idebugerrorbreakpointresolution2"></a>IDebugErrorBreakpointResolution2
-このインターフェイスは、ブレークポイント エラーの解決を表します。
+このインターフェイスは、ブレークポイントエラーの解決を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,26 +28,26 @@ ms.locfileid: "80730012"
 IDebugErrorBreakpointResolution2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジンは、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 このインターフェイスは、ブレークポイントがバインドできなかった場所を報告するために使用されます。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジンは、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 このインターフェイスは、ブレークポイントのバインドに失敗した場所を報告するために使用されます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- [ブレークポイントの解像度](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)への呼び出しは、ブレークポイントがバインドに失敗した場所に関する情報を提供するこのインターフェイスを返します。 メソッド[は](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)、[インターフェイス](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)を取得します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [Getbreakpointresolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)の呼び出しは、ブレークポイントのバインドに失敗した場所に関する情報を提供するために、このインターフェイスを返します。 [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)メソッドは、 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)インターフェイスを取得します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugErrorBreakpointResolution2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugErrorBreakpointResolution2` ます。
 
 |Method|説明|
 |------------|-----------------|
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|ブレークポイントの種類を取得します。|
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|ブレークポイントの解像度情報を取得します。|
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|ブレークポイントの解決情報を取得します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

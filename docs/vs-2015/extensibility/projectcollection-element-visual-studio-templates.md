@@ -14,10 +14,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9457b1142c94658da489ce7401b7c22d28df903d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193922"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 要素 (Visual Studio Templates)
@@ -26,8 +26,8 @@ ms.locfileid: "68193922"
 複数プロジェクトのテンプレートの構成と内容を指定します。  
   
  \<VSTemplate>  
- \<TemplateContent >  
- \<ProjectCollection >  
+ \<TemplateContent>  
+ \<ProjectCollection>  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,7 +48,7 @@ ms.locfileid: "68193922"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 複数プロジェクトのテンプレートでは、プロジェクトを指定します。|  
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 複数プロジェクトのテンプレート内のプロジェクトを指定します。|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 複数プロジェクトのテンプレートをグループ化します。|  
   
 ### <a name="parent-elements"></a>親要素  
@@ -57,8 +57,8 @@ ms.locfileid: "68193922"
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートの内容を指定します。|  
   
-## <a name="remarks"></a>Remarks  
- 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `ProjectCollection`要素を使用して、テンプレートが含まれているプロジェクトを指定します。 複数プロジェクトのテンプレートの詳細については、次を参照してください。[方法。複数のプロジェクト テンプレートを作成する](../ide/how-to-create-multi-project-templates.md)します。  
+## <a name="remarks"></a>注釈  
+ 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `ProjectCollection`要素は、テンプレートに含めるプロジェクトを指定するために使用されます。 複数プロジェクトのテンプレートの詳細については、「 [方法: 複数プロジェクトのテンプレートを作成する](../ide/how-to-create-multi-project-templates.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  簡単なマルチプロジェクトのルート .vstemplate ファイルの例を次に示します。 この例では、テンプレートには `My Windows Application` と `My Class Library` の 2 つのプロジェクトが含まれています。 `ProjectName` 要素の `ProjectTemplateLink` 属性は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がこのプロジェクトに割り当てる名前を設定します。 `ProjectName` 属性が存在しない場合、.vstemplate ファイルの名前がプロジェクト名として使用されます。  
@@ -85,7 +85,7 @@ ms.locfileid: "68193922"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [方法: 複数プロジェクトのテンプレートを作成する](../ide/how-to-create-multi-project-templates.md)

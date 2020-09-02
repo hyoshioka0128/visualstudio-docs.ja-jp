@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847995"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール
@@ -24,10 +24,10 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
 > [!NOTE]
 > その他のサポートされている Windows バージョン (Windows 7、Windows Server 2008 R2) でのパフォーマンス ツールに変更点はありません。  
   
-## <a name="BKMK_In_this_topic"></a> このトピックの内容  
- [Visual Studio IDE から Windows ストア アプリ上のデータを収集する](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> このトピックの内容  
+ [Visual Studio IDE から Windows ストアアプリのデータを収集する](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
- [Windows 8 デスクトップまたは Windows Server 2012 で実行中のアプリ上のデータを Visual Studio IDE から収集する](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
+ [Windows 8 デスクトップまたは Windows Server 2012 で実行されているアプリのデータを Visual Studio IDE から収集する](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
 - [Windows 8 デスクトップまたは Windows Server 2012 で実行中のアプリ上のデータを Visual Studio IDE からサンプリングを使用して収集する](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
   
@@ -35,7 +35,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
   [階層の相互作用 (TIP) データを収集する](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>Visual Studio IDE から Windows ストア アプリ上のデータを収集する  
+## <a name="collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>Visual Studio IDE から Windows ストア アプリ上のデータを収集する  
  JavaScript および HTML 5 で記述された Windows ストア アプリのプロファイリングを行う場合は、JavaScript コードのインストルメンテーション データを収集します。 Visual C++、Visual C#、または Visual Basic で記述された Windows ストア アプリまたはコンポーネントのプロファイリングを行う場合は、ネイティブ コードおよびマネージド コードのサンプリング データを収集します。 ローカル コンピューターまたはリモート コンピューター上のアプリをプロファイリングすることもできます。  
   
  Windows ストア アプリのプロファイリングを行う場合、次のプロファイル機能およびオプションはサポートされていません。  
@@ -76,19 +76,19 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
   [このトピックの内容](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Windows 8 デスクトップまたは Windows Server 2012 で実行中のアプリ上のデータを Visual Studio IDE から収集する  
+## <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Windows 8 デスクトップまたは Windows Server 2012 で実行中のアプリ上のデータを Visual Studio IDE から収集する  
  インストルメンテーション メソッドを使用したプロファイリングについては、Windows 8 での変更点はありません。  
   
  サンプリング メソッドを使用した階層相互作用プロファイリング (TIP) は、サポートされていません。  
   
-### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Windows 8 デスクトップまたは Windows Server 2012 で実行中のアプリ上のデータを Visual Studio IDE からサンプリングを使用して収集する  
+### <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Visual Studio IDE からサンプリングを使用して、Windows 8 デスクトップまたは Windows Server 2012 で実行されているアプリのデータを収集する  
  サンプリング メソッドを使用して Windows 8 デスクトップ アプリケーションまたは Windows Server 2012 アプリケーションのプロファイリングを行う場合、次のプロファイル機能およびオプションはサポートされていません。  
   
 - 階層相互作用プロファイリング (TIP)。 インストルメンテーションを使用した TIP データの収集はサポートされます。  
   
 - サンプリング イベントや時間間隔の設定、追加のパフォーマンス カウンター データの収集などのサンプリング オプション。  
   
-## <a name="BKMK_Profiling_from_the_command_line"></a> コマンド ラインからのプロファイリング  
+## <a name="profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> コマンドラインからのプロファイリング  
  Visual Studio がインストールされていないデバイスを含めて、Windows 8 デバイスおよび Windows Server 2012 デバイスでプロファイル データを収集するには、次の 2 つのコマンド ライン ツールを使用します。  
   
 |ツール名|説明|  
@@ -102,7 +102,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
 - [MSDN Web サイト](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software)から、Visual Studio 用のリモート ツールの一部としてツールをダウンロードします。  
   
-- 既存の Visual Studio コンピューターから、スタンドアロンのプロファイラー ツール インストール プログラムをコピーして実行します。 インストールプログラムは *% VSInstallDir%* **\ Team ツールパフォーマンスツールセットアップ**フォルダーにあります。 リモート コンピューターのオペレーティング システム (x86/x64) に対応するセットアップ プログラムを選択します。  
+- 既存の Visual Studio コンピューターから、スタンドアロンのプロファイラー ツール インストール プログラムをコピーして実行します。 インストール プログラムは *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** フォルダーにあります。 リモート コンピューターのオペレーティング システム (x86/x64) に対応するセットアップ プログラムを選択します。  
   
 > [!NOTE]
 > TIP プロファイル データを収集するには、Visual Studio コンピューターにあるスタンドアロン プロファイラーをリモート コンピューターにインストールする必要があります。  
@@ -115,14 +115,14 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
 - サンプリング イベントや時間間隔の設定、追加のパフォーマンス カウンター データの収集などのサンプリング オプション。  
   
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 階層の相互作用 (TIP) データを収集する  
+## <a name="collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 階層相互作用 (TIP) データを収集しています  
  階層相互作用プロファイリングにより、ADO.NET サービスを通じてデータベースと通信する多階層アプリケーションの関数の実行時間に関する追加情報が提供されます。 データは同期の関数呼び出しについてのみ収集されます。  
   
  **Visual Studio のエディション**  
   
- 階層相互作用プロファイル データは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] のみです。  
+ 階層相互作用プロファイル データは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]のみです。  
   
- **Windows 8 と Windows Server 2012**  
+ **Windows 8、Windows Server 2012**  
   
 1. Windows 8 デスクトップまたは Windows Server 2012 で実行されるアプリから相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。  
   
@@ -136,7 +136,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
    **リモート コンピューターでの TIP データの収集**  
   
-   リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_** _\<プラットフォーム>_ **\_** _\<言語>_ **.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
+   リモートコンピューター上の階層相互作用データを収集するには、 ** \_ \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio コンピューターの _% VSInstallDir%_**\ Team ツールパフォーマンス**ツールの [セットアップ] フォルダーから vs profiler **.exe**ファイルをリモートコンピューターにコピーして、インストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
   
    プロファイル データを収集するには、[VSPerfCmd](../profiling/vsperfcmd.md) または [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) を使用できます。  
   
@@ -146,5 +146,5 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
 ## <a name="see-also"></a>参照  
  [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)   
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
+ [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)

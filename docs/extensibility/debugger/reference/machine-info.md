@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO |マイクロソフトドキュメント
+title: MACHINE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714548"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
-特定のコンピュータについて説明します。
+特定のコンピューターについて説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,23 +45,23 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>メンバー
  `Fields`\
- 構造体のどのフィールドを初期化するかを指定する[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)列挙体のフラグの組み合わせ。
+ 構造体のどのフィールドが初期化されるかを指定する、 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 列挙型のフラグの組み合わせ。
 
  `bstrName`\
- コンピューター名。 呼び出しと同じ名前[を取得します](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)。
+ コンピューター名。 [Getmachinename](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)の呼び出しと同じです。
 
  `Flags`\
- マシン属性を記述する[MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)列挙体のフラグの組み合わせ。
+ コンピューターの属性を記述する [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) 列挙型のフラグの組み合わせ。
 
-## <a name="remarks"></a>Remarks
- この構造体は[、GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッドの呼び出しによって返されます。
+## <a name="remarks"></a>注釈
+ この構造体は、 [Getmachineinfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) メソッドの呼び出しによって返されます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

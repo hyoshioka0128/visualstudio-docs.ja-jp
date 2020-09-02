@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d24ae48df790e452145e5aa8c67998d55760bb24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153418"
 ---
-# <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
+# <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-特定の位置にブレークポイントの解決方法をについて説明します。  
+特定の位置にあるブレークポイントの解決方法について説明します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,19 +34,19 @@ typedef struct _BP_LOCATION_RESOLUTION { 
   
 ## <a name="members"></a>メンバー  
  pResolution  
- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)ブレークポイントとその解決策情報の種類を決定するオブジェクト。  
+ ブレークポイントの種類とその解決情報を決定する [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) オブジェクト。  
   
-## <a name="remarks"></a>Remarks  
- この構造体のメンバーである、 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造体、共用体の一部として。  
+## <a name="remarks"></a>注釈  
+ この構造体は、共用体の一部として [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 構造体のメンバーになります。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

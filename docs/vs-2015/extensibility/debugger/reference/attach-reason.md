@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153589"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-プログラム ノードにアタッチするデバッグ エンジン (DE) の理由を指定します。  
+デバッグエンジン (DE) がプログラムノードにアタッチされる理由を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,25 +45,25 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="members"></a>メンバー  
  ATTACH_REASON_AUTO  
- プロセスがデバッグ モードでは現在ためにをアタッチします。  
+ プロセスは現在デバッグモードであるため、アタッチします。  
   
  ATTACH_REASON_LAUNCH  
- プロセスが起動されているため、接続します。  
+ プロセスが起動されたため、アタッチします。  
   
  ATTACH_REASON_USER  
- ユーザーの要求によりアタッチします。  
+ ユーザー要求のためにアタッチします。  
   
-## <a name="remarks"></a>Remarks  
- これらの値がパラメーターとして使用される、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)と[アタッチ](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ これらの値は、 [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドと [attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) メソッドのパラメーターとして使用されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [添付](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [外付け](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [[アタッチ]](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: プロジェクト内の参照の管理 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1f2f3c26d89616f083c218c6b11610fe5e329a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651313"
 ---
 # <a name="managing-references-in-a-project"></a>プロジェクト内の参照の管理
@@ -35,9 +35,9 @@ ms.locfileid: "72651313"
 
 外部コンポーネントまたは接続しているサービスを使用するためにコードを記述する前に、あらかじめプロジェクトにそのコンポーネントへの参照を追加しておく必要があります。 参照は、本質的には、Visual Studio がコンポーネントまたはサービスを検索するために必要な情報を含むプロジェクト ファイル内のエントリです。
 
- 参照を追加するには、ソリューション エクスプローラーで参照ノードを右クリックして **[参照の追加]** を選択します。 詳細については、「 [方法: 参照マネージャーを使用して参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)」を参照してください。
+ 参照を追加するには、ソリューション エクスプローラーで参照ノードを右クリックして **[参照の追加]** を選択します。 詳細については、「[方法: 参照マネージャーを使用して参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)」を参照してください。
 
- ![Visual C&#43;&#43; での参照の追加](../ide/media/vs2015-cpp-add-reference.png "|::ref1::|")
+ ![Visual C&#43;&#43; での参照の追加](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")
 
  参照は、次の種類のコンポーネント/サービスに対して行うことができます。
 
@@ -63,7 +63,7 @@ ms.locfileid: "72651313"
 
  アプリで参照している拡張 SDK がサポートされていないことがわかった場合、次の手順を実行する必要があります。
 
-1. エラーの原因となっているプロジェクトの名前を確認します。 プロジェクトのターゲット プラットフォームはプロジェクト名の横にあるかっこ内に表示されます。 たとえば、**MyProjectName (Windows 8.1)** は、プロジェクト **MyProjectName** がプラットフォーム バージョン [!INCLUDE[win81](../includes/win81-md.md)] を対象としていることを意味します。
+1. エラーの原因となっているプロジェクトの名前を確認します。 プロジェクトのターゲット プラットフォームはプロジェクト名の横にあるかっこ内に表示されます。 たとえば、" **MyProjectName (Windows 8.1)** " は、プロジェクト **MyProjectName** がプラットフォーム バージョン [!INCLUDE[win81](../includes/win81-md.md)]を対象としていることを意味します。
 
 2. サポートされていない拡張 SDK の販売元のサイトにアクセスして、プロジェクトのターゲット プラットフォームのバージョンと互換性のある依存関係を持つ拡張 SDK のバージョンをインストールします。
 
@@ -77,12 +77,12 @@ ms.locfileid: "72651313"
 
 4. Visual Studio を再起動し、アプリを開きます。
 
-5. エラーの原因となったプロジェクト内の **[参照]** ノードを右クリックして **[参照の追加]** を選択します。
+5. エラーの原因となったプロジェクト内の [**参照**] ノードを右クリックし、[**参照の追加**] を選択します。
 
-6. **[Windows]** タブをクリックし、 **[Extensions] (拡張機能)** サブタブをクリックしてから、古い拡張 SDK に対応するチェック ボックスをオフにし、新しい拡張 SDK に対応するチェック ボックスをオンにします。 **[OK]** をクリックします。
+6. [ **Windows** ] タブをクリックし、[ **拡張機能** ] サブタブをクリックします。次に、古い拡張 sdk のチェックボックスをオフにし、新しい拡張 sdk のチェックボックスをオンにします。 **[OK]** をクリックします。
 
 ## <a name="adding-a-reference-at-design-time"></a>デザイン時の参照の追加
- プロジェクトでアセンブリを参照すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は次の場所でアセンブリを検索します。
+ プロジェクトでアセンブリを参照すると、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は次の場所でアセンブリを検索します。
 
 - 現在のプロジェクト ディレクトリ。 ここにあるアセンブリは、 **[参照]** タブに表示されます。
 
@@ -94,21 +94,21 @@ ms.locfileid: "72651313"
 > Visual Studio 内のすべてのプロジェクトでは、 `System.Core`が参照のリストから削除された場合でも、すべてのプロジェクトに `System.Core` への暗黙的な参照が含まれます。
 
 ## <a name="references-to-shared-components-at-run-time"></a>実行時の共有コンポーネントへの参照
- 実行時には、コンポーネントがプロジェクトの出力パスまたは GAC ( [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) ) のどちらかにある必要があります。 どちらの場所にも存在しないオブジェクトへの参照がプロジェクトに含まれている場合は、プロジェクトをビルドするときに、その参照をプロジェクトの出力パスにコピーする必要があります。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは、コピーを作成する必要があるかどうかを示します。 値が **True**の場合は、プロジェクトをビルドするときに参照がプロジェクト ディレクトリにコピーされます。 値が **False**の場合は、参照はコピーされません。
+ 実行時には、コンポーネントがプロジェクトの出力パスまたは [グローバルアセンブリキャッシュ](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 内にある必要があります。 どちらの場所にも存在しないオブジェクトへの参照がプロジェクトに含まれている場合は、プロジェクトをビルドするときに、その参照をプロジェクトの出力パスにコピーする必要があります。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは、コピーを作成する必要があるかどうかを示します。 値が **True**の場合は、プロジェクトをビルドするときに参照がプロジェクト ディレクトリにコピーされます。 値が **False**の場合は、参照はコピーされません。
 
  GAC に登録されているカスタム コンポーネントへの参照を含むアプリケーションを配置した場合、 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> の設定に関係なく、そのコンポーネントはアプリケーションと共に配置されません。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の旧バージョンでは、参照に <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティを設定して、アセンブリを確実に配置することができました。 現バージョンでは、アセンブリを \Bin フォルダーに手動で追加する必要があります。 これにより、すべてのカスタム コードを監視下に置いて、見覚えのないカスタム コードを公開するリスクを軽減します。
 
  アセンブリまたはコンポーネントがグローバル アセンブリ キャッシュまたはフレームワーク コンポーネントである場合、既定では、 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは **False** に設定されます。 それ以外の場合、値は **True**に設定されます。 プロジェクト間参照は、常に **True**に設定されます。
 
 ## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>異なるバージョンの .NET Framework を対象とするプロジェクトまたはアセンブリへの参照
- 異なるバージョンの .NET Framework を対象にしたプロジェクトまたはアセンブリを参照するアプリケーションを作成できます。 たとえば、[!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] を対象とするアプリケーションを作成し、そのアプリケーションで [!INCLUDE[dnprdnext](../includes/dnprdnext-md.md)] を対象とするアセンブリを参照できます。 以前のバージョンの [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] を対象とするプロジェクトを作成した場合、そのプロジェクトでは、[!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] または .NET Framework Version 4 を対象とするプロジェクトまたはアセンブリを参照することはできません。
+ 異なるバージョンの .NET Framework を対象にしたプロジェクトまたはアセンブリを参照するアプリケーションを作成できます。 たとえば、 [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] を対象とするアプリケーションを作成し、そのアプリケーションで [!INCLUDE[dnprdnext](../includes/dnprdnext-md.md)]を対象とするアセンブリを参照できます。 以前のバージョンの [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]を対象とするプロジェクトを作成した場合、そのプロジェクトでは、 [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] または .NET Framework Version 4 を対象とするプロジェクトまたはアセンブリを参照することはできません。
 
  詳細については、「[対象となる特定の .NET Framework のバージョンの指定](../ide/targeting-a-specific-dotnet-framework-version.md)」を参照してください。
 
 ## <a name="project-to-project-references"></a>プロジェクト間参照
- プロジェクト間参照とは、アセンブリを格納するプロジェクトへの参照です。これは **[プロジェクト]** タブを使用して作成します。Visual Studio は、プロジェクトへのパスが指定されると、アセンブリを見つけることができます。
+ プロジェクト間参照は、アセンブリを含むプロジェクトへの参照です。プロジェクトを作成するには、[ **プロジェクト** ] タブを使用します。 Visual Studio は、プロジェクトへのパスが指定されると、アセンブリを見つけることができます。
 
- アセンブリを生成するプロジェクトがある場合は、ファイル参照 (下記参照) を使用せず、プロジェクトを参照してください。 プロジェクト間参照の利点は、ビルド システム内のプロジェクト間に依存関係が作成されることです。 参照元のプロジェクトの前回のビルド以降に依存プロジェクトが変更されていると、依存プロジェクトのビルドが行われます。 ファイル参照ではビルド依存関係が作成されないため、依存プロジェクトをビルドせずに参照元のプロジェクトをビルドできます。したがって、参照が古くなる可能性があります。 つまり、プロジェクトから、同じプロジェクトの以前にビルドされたバージョンが参照される場合があります。その結果、bin ディレクトリ内に 1 つの DLL の複数のバージョンが求められる場合がありますが、これを実現するのは不可能です。 この矛盾が生じた場合は、"[警告: プロジェクト 'project' の依存関係 'file' は、参照 'file' を上書きするため、実行ディレクトリにコピーできません](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md)" などのメッセージが表示されます。 詳細については、「[壊れた参照のトラブルシューティング](../ide/troubleshooting-broken-references.md)」および「[方法: プロジェクトの依存関係を作成および削除する](../ide/how-to-create-and-remove-project-dependencies.md)」を参照してください。
+ アセンブリを生成するプロジェクトがある場合は、ファイル参照 (下記参照) を使用せず、プロジェクトを参照してください。 プロジェクト間参照の利点は、ビルド システム内のプロジェクト間に依存関係が作成されることです。 参照元のプロジェクトの前回のビルド以降に依存プロジェクトが変更されていると、依存プロジェクトのビルドが行われます。 ファイル参照ではビルド依存関係が作成されないため、依存プロジェクトをビルドせずに参照元のプロジェクトをビルドできます。したがって、参照が古くなる可能性があります。 つまり、プロジェクトから、同じプロジェクトの以前にビルドされたバージョンが参照される場合があります。その結果、bin ディレクトリ内に 1 つの DLL の複数のバージョンが求められる場合がありますが、これを実現するのは不可能です。 この競合が発生すると、"警告" というメッセージが表示されます。 [プロジェクト ' project ' の依存関係 ' file ' は、参照 ' file ' を上書きするため、実行ディレクトリにコピーできません](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md)。 詳細については、「 [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) 」および「 [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md)」を参照してください。
 
 > [!NOTE]
 > あるプロジェクトが対象とする .NET Framework のバージョンが Version 4.5 であり、他のプロジェクトが対象とする .NET Framework が Version 2、3.0、3.5、または 4.0 である場合は、プロジェクト間参照ではなくファイル参照が作成されます。
@@ -116,5 +116,5 @@ ms.locfileid: "72651313"
 ## <a name="file-references"></a>ファイル参照
  ファイル参照とは、Visual Studio プロジェクトのコンテキスト外にあるアセンブリへの直接参照です。これは、 **[参照マネージャー]** の **[参照]** タブを使用して作成します。 アセンブリまたはコンポーネントだけが手元にあり、それを出力として作成したプロジェクトがない場合は、ファイル参照を使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [壊れた参照のトラブルシューティング](../ide/troubleshooting-broken-references.md)[アセンブリを使用したプログラミング](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)[方法: 参照マネージャーを使用して参照を追加または削除](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)する

@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca0b6b7e9753b346b8a995ffd8ddcb6cc53fe7c0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697512"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、ポートのサーバーおよび通知の機能にアクセスするためのいくつかのメソッドを提供します。  
+このインターフェイスには、ポートのサーバーと通知機能にアクセスするためのメソッドがいくつか用意されています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -30,31 +30,31 @@ ms.locfileid: "65697512"
 IDebugDefaultPort2 : IDebugPort2  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- Visual Studio では、プログラムにアクセスするためのデバッグ ポートを表すためには、このインターフェイスを実装します。 カスタム ポート サプライヤーは、リモート デバッグを処理する場合、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ Visual Studio は、プログラムにアクセスするためのデバッグポートを表すために、このインターフェイスを実装します。 カスタムポート供給業者は、リモートデバッグを処理する場合にこのインターフェイスを実装することもできます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- メソッドの引数、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイスは、このインターフェイスを提供します。 呼び出す[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイスは、このインターフェイスを取得できます。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイスのメソッドの引数によって、このインターフェイスが提供されます。 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイスで[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)を呼び出すと、このインターフェイスを取得することもできます。  
   
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド  
- 定義されている方法だけでなく[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)、このインターフェイスは、次のメソッドを実装します。  
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド  
+ このインターフェイスは、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)で定義されているメソッドに加えて、次のメソッドを実装します。  
   
-|メソッド|説明|  
+|Method|説明|  
 |------------|-----------------|  
 |[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|このポートからポート通知インターフェイスを取得します。|  
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|このポートをホストするサーバーに、インターフェイスを取得します。|  
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|このポートが、ローカル コンピューターで実行されているかどうかを判断します。|  
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|このポートをホストしているサーバーへのインターフェイスを取得します。|  
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|このポートがローカルコンピューター上で実行されているかどうかを判断します。|  
   
-## <a name="remarks"></a>Remarks  
- 名前"`IDebugDefaultPort2`"不適切な名称、少しは既定のポートはありません。 "IDebugPort3"が呼び出される可能性があります。  
+## <a name="remarks"></a>解説  
+ 名前 " `IDebugDefaultPort2` " は、既定のポートを表すものではないため、名称の1つです。 "IDebugPort3" という名前を指定することもできます。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

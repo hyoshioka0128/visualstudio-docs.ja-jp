@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703690"
 ---
 # <a name="uidmanager-task"></a>UidManager タスク
@@ -57,10 +57,10 @@ ms.locfileid: "65703690"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)   
+ [タスクリファレンス](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
- [WPF アプリケーション (WPF) のビルド](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [方法: アプリケーションをローカライズします。](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
+ [WPF アプリケーションのビルド (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [方法: アプリケーションをローカライズする](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

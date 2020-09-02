@@ -1,5 +1,5 @@
 ---
-title: IDebug 式エバリュエーター2::Pリロードモジュール |マイクロソフトドキュメント
+title: IDebugExpressionEvaluator2::P reloadModules |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729322"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-指定したシンボル プロバイダーによって指定されたモジュールをプリロードします。
+指定したシンボルプロバイダーによって指定されたモジュールをプリロードします。
 
 ## <a name="syntax"></a>構文
 
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>パラメーター
 `pSym`\
-[in]モジュールがプリロードされるシンボル プロバイダー。
+からモジュールがプリロードされるシンボルプロバイダー。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-このオプションのメソッドは、ホスティング プロセスアタッチを行う場合に使用されます。 これは、EEにアタッチの一部として「ウォームアップ」する機会を与えます。
+## <a name="remarks"></a>解説
+この省略可能なメソッドは、ホストプロセスのアタッチを行うときに使用されます。 これにより、接続の一部として "ウォームアップ" する機会が得られます。
 
 ## <a name="example"></a>例
-次の例は[、IDebug](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) **式エバリュエーター** 2 インターフェイスを公開するオブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)インターフェイスを公開する**式 evaluatorpackage**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

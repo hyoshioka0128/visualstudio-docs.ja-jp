@@ -14,18 +14,18 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204399"
 ---
 # <a name="extern-element"></a>Extern 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Extern 要素は、コンパイル時に、.vsct ファイルとマージする外部ヘッダー (.h) ファイルを参照します。 VSCT コンパイラに指定されたかによって参照されるインクルード パスにファイルをマージする必要があります、 [Include 要素](../extensibility/include-element.md)します。 ファイルには、他の .vsct ファイルまたは C++ ヘッダー ファイルがあります。  
+Extern 要素は、コンパイル時に、vsct ファイルとマージする外部ヘッダー (.h) ファイルを参照します。 マージするファイルは、VSCT コンパイラに指定されたインクルードパスに存在するか、 [Include 要素](../extensibility/include-element.md)によって参照されている必要があります。 ファイルは、他の vsct ファイルまたは C++ ヘッダーファイルにすることができます。  
   
- フォームのヘッダー ファイル内の定義がある必要があります"# [Value] の [記号] define"値は、以前に定義されている場合、別のシンボル可能性があります。 コマンドの項目の条件付きステートメントでは、定義を使用することがあります。 実際に使用される任意のシンボルは破棄されます。  
+ ヘッダーファイル内の定義は、"#define [シンボル] [値]" の形式にする必要があります。以前に定義されている場合は、値が別のシンボルである可能性があります。 定義は、コマンド項目の条件付きステートメントで使用できます。 実際に使用されていないシンボルはすべて破棄されます。  
   
  CommandTable 要素  
 Extern 要素  
@@ -43,9 +43,9 @@ Extern 要素
   
 |属性|説明|  
 |---------------|-----------------|  
-|href|必須。 ヘッダー ファイルへのパス:<br /><br /> href="stdidcmd.h"|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
-|language|任意。 すべての既定の言語[\<文字列 >](../extensibility/strings-element.md)コマンド テーブル内の要素。<br /><br /> language="en-us"|  
+|href|必須です。 ヘッダーファイルのパス:<br /><br /> href = "stdidcmd"|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
+|language|省略可能。 コマンドテーブル内のすべての要素の既定の言語 [\<Strings>](../extensibility/strings-element.md) :<br /><br /> language = "en-us"|  
   
 ### <a name="child-elements"></a>子要素  
   
@@ -57,7 +57,7 @@ Extern 要素
   
 |要素|説明|  
 |-------------|-----------------|  
-|[CommandTable 要素](../extensibility/commandtable-element.md)|すべてのコマンドを表す要素の定義: メニュー項目、メニューのツールバー、およびコンボ ボックスは、-、IDE に VSPackage を提供します。|  
+|[CommandTable 要素](../extensibility/commandtable-element.md)|VSPackage が IDE に提供するコマンド (メニュー項目、メニュー、ツールバー、およびコンボボックス) を表すすべての要素を定義します。|  
   
 ## <a name="example"></a>例  
   
@@ -71,7 +71,7 @@ Extern 要素
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Vspackage がユーザー インターフェイス要素を追加する方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>参照  
+ [Visual Studio コマンドテーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Vspackage のユーザーインターフェイス要素の追加方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)
