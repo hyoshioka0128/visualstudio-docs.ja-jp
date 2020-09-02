@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382446"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>方法: CD インストールの自動開始を有効にする
@@ -36,13 +36,13 @@ ms.locfileid: "85382446"
 
 3. **[オプション]** ボタンをクリックします。
 
-     [**発行オプション**] ダイアログボックスが表示されます。
+     [ **発行オプション** ] ダイアログボックスが表示されます。
 
 4. **[デプロイ]** をクリックします。
 
-5. [Cd**インストールの場合、cd の挿入時にセットアップを自動的に開始する**] チェックボックスをオンにします。
+5. [Cd **インストールの場合、cd の挿入時にセットアップを自動的に開始する** ] チェックボックスをオンにします。
 
-     アプリケーションが発行されると、自動実行の *.inf*ファイルが発行場所にコピーされます。
+     アプリケーションが発行されると、自動実行の *.inf* ファイルが発行場所にコピーされます。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

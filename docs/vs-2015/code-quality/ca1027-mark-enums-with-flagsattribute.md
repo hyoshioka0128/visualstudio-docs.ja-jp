@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 774279dd05bd14c34df7f1d450f00599812d6a5b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544509"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:列挙型を FlagsAttribute に設定します
@@ -38,7 +38,7 @@ ms.locfileid: "85544509"
 ## <a name="rule-description"></a>ルールの説明
  列挙型は、関連する名前付き定数が複数定義された値型です。 <xref:System.FlagsAttribute>名前付き定数を明確に結合できる場合は、列挙体に適用します。 たとえば、アプリケーションの曜日を列挙して、使用可能なリソースを追跡する場合を考えてみます。 各リソースの可用性が、存在する列挙体を使用してエンコードされている場合は <xref:System.FlagsAttribute> 、日付の任意の組み合わせを表すことができます。 属性を指定しない場合は、1週間の曜日のみを表すことができます。
 
- 組み合わせ可能な列挙体を格納するフィールドの場合、個々の列挙値はフィールド内のビットのグループとして扱われます。 そのため、このようなフィールドは、*ビットフィールド*と呼ばれることもあります。 ビットフィールドに格納する列挙値を結合するには、ブール条件演算子を使用します。 ビットフィールドをテストして特定の列挙値が存在するかどうかを判断するには、ブール型の論理演算子を使用します。 ビットフィールドで結合された列挙値を正しく格納および取得するには、列挙体に定義されている各値が2の累乗である必要があります。 そうでない限り、ブール型の論理演算子は、フィールドに格納されている個々の列挙値を抽出できません。
+ 組み合わせ可能な列挙体を格納するフィールドの場合、個々の列挙値はフィールド内のビットのグループとして扱われます。 そのため、このようなフィールドは、 *ビットフィールド*と呼ばれることもあります。 ビットフィールドに格納する列挙値を結合するには、ブール条件演算子を使用します。 ビットフィールドをテストして特定の列挙値が存在するかどうかを判断するには、ブール型の論理演算子を使用します。 ビットフィールドで結合された列挙値を正しく格納および取得するには、列挙体に定義されている各値が2の累乗である必要があります。 そうでない限り、ブール型の論理演算子は、フィールドに格納されている個々の列挙値を抽出できません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、を <xref:System.FlagsAttribute> 列挙体に追加します。
@@ -54,5 +54,5 @@ ms.locfileid: "85544509"
 ## <a name="related-rules"></a>関連規則
  [CA2217:列挙型を FlagsAttribute に設定しません](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.FlagsAttribute?displayProperty=fullName>

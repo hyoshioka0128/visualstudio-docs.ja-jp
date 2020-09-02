@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148220"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -41,7 +41,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Windows セッション全体でプロファイリングを有効にします。 **Start**、**Attach**、**Launch** との併用でのみ使用します。|  
 |[User](../profiling/user-vsperfcmd.md) **:** [`domain\`]`username`|プロファイラー サービスへの指定アカウント アクセスを有効にします。 **Start** との併用でのみ使用します。|  
 |[WaitStart](../profiling/waitstart.md)[ **:** `n`]|データ コレクション ロガーの初期化を待ちます。 `n` が指定されている場合、**VSPerfCmd** は最大 `n` 秒待機します。 `n` が指定されていない場合、**VSPerfCmd** は無期限に待機します。 これで、バッチ プロセスの一部として **VSPerfCmd** の使い勝手が良くなります。|  
-|[Counter](../profiling/counter.md) **:** `cfg`|サンプル プロファイル方法が使用されるとき、サンプリング間隔として利用する CPU カウンターとイベント数を指定します。 サンプリングできるカウンター値は 1 つだけです。<br /><br /> インストルメンテーション プロファイル方法を使用するときに、各インストルメンテーション ポイントで収集する CPU カウンターを指定します。 **Start**`Trace`、**Attach**、**Launch** との併用でのみ使用します。|  
+|[Counter](../profiling/counter.md) **:** `cfg`|サンプル プロファイル方法が使用されるとき、サンプリング間隔として利用する CPU カウンターとイベント数を指定します。 サンプリングできるカウンター値は 1 つだけです。<br /><br /> インストルメンテーション プロファイル方法を使用するときに、各インストルメンテーション ポイントで収集する CPU カウンターを指定します。 **Start:** `Trace` 、 **Attach**、または**Launch**と共にのみ使用します。|  
 |[QueryCounters](../profiling/querycounters.md)|現在のマシンで有効な CPU カウンターの一覧を表示します。|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|プロファイル マーク データと共に含める Windows パフォーマンス カウンター イベントを指定します。 **Start** との併用でのみ使用します。|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Windows パフォーマンス カウンター データ コレクション イベントの間隔をミリ秒単位で指定します。 **WinCounter** と併用します。|  
@@ -52,8 +52,8 @@ VSPerfCmd [/U] [/options]
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|すべてのデータ コレクションを停止するが、プロファイリング セッションは終了しません。|  
 |[ProcessOn](../profiling/processon-and-processoff.md) **:** `pid`|**VSPerfCmdProcessOff** を呼び出し、プロファイリングを一時停止した後、指定したプロセスのデータ コレクションを再開します。|  
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|指定したプロセスのデータ コレクションを停止します。|  
-|[ThreadOn と ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|**VSPerfCmdThreadOff** を呼び出し、プロファイリングを一時停止した後、指定したプロセスのプロファイリングを再開します。 インストルメンテーション メソッドでプロファイリングするときにのみ、**ThreadOn** を使用します。|  
-|[ThreadOn と ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|指定したスレッドのプロファイリングを一時停止します。 インストルメンテーション方法でプロファイリングするときにのみ、**ThreadOff** を使用します。|  
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|**VSPerfCmdThreadOff** を呼び出し、プロファイリングを一時停止した後、指定したプロセスのプロファイリングを再開します。 インストルメンテーション メソッドでプロファイリングするときにのみ、**ThreadOn** を使用します。|  
+|[ThreadOn and ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|指定したスレッドのプロファイリングを一時停止します。 インストルメンテーション方法でプロファイリングするときにのみ、**ThreadOff** を使用します。|  
 |[Mark](../profiling/mark.md) **:** _MarkNum_[ **,** _MarkText_ **]**|プロファイリング データ ファイルにマークと任意のテキストを挿入します。|  
   
 ## <a name="sampling-method-options"></a>サンプリング メソッド オプション  
@@ -84,7 +84,7 @@ VSPerfCmd [/U] [/options]
   
 |オプション|説明|  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|プロファイリング サービスへの指定のユーザーまたはグループ アクセスを許可または拒否します。<br /><br /> `Right` には以下があります。<br /><br /> CrossSession - セッション間プロファイリングを行うために、サービスへのアクセス権をユーザーに与えます。<br /><br /> SampleProfiling - サンプリング プロファイリングを有効にするために、ドライバーへのアクセス権をユーザーに与えます。 トレース プロファイリング中、カーネル遷移情報にアクセスするためにも使用されます。<br /><br /> FullAccess - CrossSession アクセスと SampleProfiling アクセスの両方をユーザーに与えます。|  
+|**管理者: セキュリティ** \<**ALLOW&#124;DENY**>*Right*[ *right*]\<*User*&#124;*Group*>|プロファイリング サービスへの指定のユーザーまたはグループ アクセスを許可または拒否します。<br /><br /> `Right` には以下があります。<br /><br /> CrossSession - セッション間プロファイリングを行うために、サービスへのアクセス権をユーザーに与えます。<br /><br /> SampleProfiling - サンプリング プロファイリングを有効にするために、ドライバーへのアクセス権をユーザーに与えます。 トレース プロファイリング中、カーネル遷移情報にアクセスするためにも使用されます。<br /><br /> FullAccess - CrossSession アクセスと SampleProfiling アクセスの両方をユーザーに与えます。|  
 |**Admin:Security, List**|プロファイリング サービスの現在の状態を一覧表示し、ユーザー アクセス許可を一覧表示します。|  
 |**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|プロファイリング サービス コンポーネント (サービス) またはカーネル モード デバイス ドライバー (ドライバー) を開始、停止、インストール、アンインストールします。|  
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|再起動後、プロファイリング サービス (サービス) またはカーネル モード デバイス ドライバー (ドライバー) の自動開始を有効または無効にします。|  
@@ -92,7 +92,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  **VSPerfCmd /Driver** オプションは現在使われていません。 この機能には **VsPerfCmdAdmin** オプションを使用してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSInstr](../profiling/vsinstr.md)   
- [VSPerfMon](../profiling/vsperfmon.md)   
+ [Vsperfmon.exe](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
