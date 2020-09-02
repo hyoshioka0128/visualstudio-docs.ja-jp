@@ -1,5 +1,5 @@
 ---
-title: 16 bpp レンダリング ターゲット フォーマット バリアント |Microsoft Docs
+title: 16 bpp レンダリング ターゲット フォーマット バリアント | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157571"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp レンダリング ターゲット フォーマット バリアント
@@ -47,7 +47,7 @@ ms.locfileid: "68157571"
  B5G6R5 形式ではアルファ チャネルを持たないため、アルファ コンテンツはこのバリアントでは保存されません。 アプリケーションのレンダリングで、レンダー ターゲットのアルファ チャネルが必要な場合、B5G6R5 形式に切り替えることはできません。  
   
 ## <a name="example"></a>例  
- **16 bpp Render Target Format**を使用して作成したレンダー ターゲットのバリアントを再現できる`CreateTexture2D`このようなコードを使用しています。  
+ 次のようなコードを使用して、を使用して作成されたレンダーターゲットに対して、 **16bpp レンダーターゲット形式** バリアントを再現でき `CreateTexture2D` ます。  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

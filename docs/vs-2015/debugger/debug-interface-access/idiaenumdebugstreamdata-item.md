@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata::item |Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: Item |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b80f71b2ca5d718f2de834389b4caab728e1f1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197886"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
@@ -38,23 +38,23 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>パラメーター  
  インデックス  
- [in]取得するレコードのインデックス。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される[idiaenumdebugstreamdata::get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)します。  
+ から取得するレコードのインデックス。 インデックスの範囲は 0 ~ `count` -1 です。ここで `count` 、は [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)によって返されます。  
   
  cbData  
- [in]データバッファのサイズ（バイト単位）。  
+ からデータバッファーのサイズ (バイト単位)。  
   
  pcbData  
- [out]返されるバイト数を返します。 場合`data`は`NULL`、し`pcbData`指定されたレコードで使用できるデータのバイト数合計にはが含まれています。  
+ 入出力返されたバイト数を返します。 がの場合 `data` 、には、 `NULL` `pcbData` 指定されたレコードで使用可能なデータの合計バイト数が含まれます。  
   
  data[]  
- [out]デバッグ ストリーム レコードのデータが入力バッファー。  
+ 入出力デバッグストリームレコードデータを格納するバッファー。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_INVALIDARG`無効なパラメーターの場合、`index`パラメーターが範囲外です。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_INVALIDARG`無効なパラメーターの場合はを返し、 `index` パラメーターが範囲外の場合はを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
- [IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
+ [IDiaEnumDebugStreamData:: 次へ](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)   
+ [IDiaEnumDebugStreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)   
  [IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538139"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>方法: Visual Studio 内のワークシートにスキーマをマップする
@@ -41,29 +41,29 @@ ms.locfileid: "85538139"
 3. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「 [方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
-4. [ **XML** ] グループの [**ソース**] をクリックします。
+4. [ **XML** ] グループの [ **ソース**] をクリックします。
 
-     [ **XML ソース**] ウィンドウが開きます。
+     [ **XML ソース** ] ウィンドウが開きます。
 
-5. [ **Xml ソース**] ウィンドウで、[ **xml マップ**] をクリックします。
+5. [ **Xml ソース** ] ウィンドウで、[ **xml マップ**] をクリックします。
 
-     [ **XML マップ**] ダイアログボックスが表示されます。
+     [ **XML マップ** ] ダイアログボックスが表示されます。
 
-6. [ **XML マップ**] ダイアログボックスで、[**追加**] をクリックします。
+6. [ **XML マップ** ] ダイアログボックスで、[ **追加**] をクリックします。
 
-7. スキーマファイルを参照して選択し、[**開く**] をクリックします。
+7. スキーマファイルを参照して選択し、[ **開く**] をクリックします。
 
 8. **[OK]** をクリックします。
 
-     スキーマは、[ **XML ソース**] ウィンドウに表示されます。 プロジェクトでは、スキーマに基づいて型指定されたが生成され、 <xref:System.Data.DataSet> <xref:System.Windows.Forms.BindingSource> が作成されます。
+     スキーマは、[ **XML ソース** ] ウィンドウに表示されます。 プロジェクトでは、スキーマに基づいて型指定されたが生成され、 <xref:System.Data.DataSet> <xref:System.Windows.Forms.BindingSource> が作成されます。
 
 9. **XML ソース**ウィンドウから、対応するコントロールを作成するワークシート内の場所に要素をドラッグします。
 
      非繰り返しスキーマ要素をドラッグすると、に <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 自動的にバインドされるコントロールが Office プロジェクトによって生成され <xref:System.Windows.Forms.BindingSource> ます。
 
-     繰り返しスキーマ要素をドラッグすると、Office プロジェクトによって、 <xref:Microsoft.Office.Tools.Excel.ListObject> 自動的にデータソースにバインドされていないコントロールが生成されます。 詳細については、「[ドキュメントレベルのカスタマイズの XML スキーマとデータ](../vsto/xml-schemas-and-data-in-document-level-customizations.md)」を参照してください。
+     繰り返しスキーマ要素をドラッグすると、Office プロジェクトによって、 <xref:Microsoft.Office.Tools.Excel.ListObject> 自動的にデータソースにバインドされていないコントロールが生成されます。 詳細については、「 [ドキュメントレベルのカスタマイズの XML スキーマとデータ](../vsto/xml-schemas-and-data-in-document-level-customizations.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Studio 内で Word 文書にスキーマを割り当てる](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)

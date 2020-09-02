@@ -1,5 +1,5 @@
 ---
-title: '列挙型フィールド: 列挙型 |マイクロソフトドキュメント'
+title: 'IDebugClassField:: EnumConstructors |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 607f4f4af3021389628fcc1be446ebbe95628b7c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734456"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
@@ -43,18 +43,18 @@ int EnumConstructors(
 
 ## <a name="parameters"></a>パラメーター
 `cMatch`\
-[in]列挙体のコンストラクターの型を指定する[CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)列挙体の値。
+から列挙するコンストラクターの型を指定する [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) 列挙の値。
 
 `ppEnum`\
-[アウト]コンストラクターの[一](../../../extensibility/debugger/reference/ienumdebugfields.md)覧を表すオブジェクトを返します。 コンストラクターがない場合は、null 値を返します。
+入出力コンストラクターのリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。 コンストラクターが存在しない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OKを返すか、コンストラクターがない場合はS_FALSEを返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、S_OK を返すか、コンストラクターが存在しない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>Remarks
- 列挙体の各要素は、コンストラクター メソッドを記述する[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)オブジェクトです。
+## <a name="remarks"></a>解説
+ 列挙体の各要素は、コンストラクターメソッドを記述する [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) オブジェクトです。
 
- 通常、コンストラクターのリストには、コンパイラによって提供される既定のコンストラクターは含まれません。
+ 通常、コンストラクターの一覧には、コンパイラによって提供される既定のコンストラクターは含まれません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

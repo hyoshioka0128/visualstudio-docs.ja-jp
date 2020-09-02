@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143017"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-デバッグ プロセスを起動した理由を指定します。  
+デバッグのためにプロセスが起動された理由を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -49,30 +49,30 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>パラメーター  
  DEBUG_REASON_ERROR  
- 特定できないエラーが発生しました (このとして提供される既定の条件を合わせる上の理由から、もう一方のいずれの場合)。  
+ 特定できないエラーが発生しました (これは、他の理由がいずれも満たされていない場合の既定の条件として使用されます)。  
   
  DEBUG_REASON_USER_LAUNCHED  
- ユーザーの要求プロセスが開始されました。  
+ ユーザーの要求でプロセスが起動されました。  
   
  DEBUG_REASON_USER_ATTACHED  
- 既に実行中のプロセスは、ユーザーに関連付けられました。  
+ 既に実行中のプロセスが、ユーザーによってにアタッチされました。  
   
  DEBUG_REASON_AUTO_ATTACHED  
- プロセスが起動したときに自動的にアタッチします。  
+ プロセスは、起動されたときに自動的にアタッチされました。  
   
  DEBUG_REASON_CAUSALITY  
- プロセスを起動したために、*ジャスト イン タイム*(JIT) デバッグ イベント。  
+ *ジャストインタイム*(JIT) デバッグイベントが発生したため、プロセスが起動されました。  
   
-## <a name="remarks"></a>Remarks  
- 返される、 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッドから返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

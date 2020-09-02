@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816125"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>条件付きコンパイルは無効になっています。
@@ -39,6 +39,6 @@ ms.locfileid: "85816125"
 ## <a name="see-also"></a>関連項目  
  [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on諸表](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if諸表](../../javascript/reference/at-if-statement-javascript.md)   
+ [@cc_on 諸表](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if 諸表](../../javascript/reference/at-if-statement-javascript.md)   
  [@set ステートメント](../../javascript/reference/at-set-statement-javascript.md)

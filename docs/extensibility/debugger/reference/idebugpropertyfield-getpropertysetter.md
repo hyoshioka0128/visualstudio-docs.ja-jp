@@ -1,5 +1,5 @@
 ---
-title: プロパティフィールド::プロパティセッター |マイクロソフトドキュメント
+title: 'IDebugPropertyField:: GetPropertySetter |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 76834b3d4d61f0a58d7a0d2c36f8e30c444ddca2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720849"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
@@ -41,13 +41,13 @@ int GetPropertySetter(
 
 ## <a name="parameters"></a>パラメーター
 `ppField`\
-[アウト]プロパティを[設定](../../../extensibility/debugger/reference/idebugmethodfield.md)するメソッドを表すオブジェクトを返します。
+入出力プロパティを設定するメソッドを表す [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- プロパティを取得するメソッドを取得するには[、GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)メソッドを呼び出します。
+## <a name="remarks"></a>解説
+ プロパティを取得するメソッドを取得するには、 [Getpropertygetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)

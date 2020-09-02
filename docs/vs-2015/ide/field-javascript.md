@@ -1,4 +1,4 @@
-﻿---
+---
 title: '&lt;field &gt; (JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3fc786e4d99d1eaff4a8b152ea9496ce8400ff1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663851"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;field &gt; (JavaScript)
@@ -66,13 +66,13 @@ ms.locfileid: "72663851"
 
   `helpKeyword` 省略可能。 F1 ヘルプのキーワード。
 
-  `locid` 省略可能。 フィールドに関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 この識別子の型は、[\<loc>](../ide/loc-javascript.md) タグで指定された形式によって異なります。
+  `locid` 省略可能。 フィールドに関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 識別子の型は、タグに指定されている形式によって異なり [\<loc>](../ide/loc-javascript.md) ます。
 
-  `value` 省略可能。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 `<field>` では、コンストラクター関数でこの属性がサポートされますが、オブジェクト リテラルではサポートされません。 フィールドの型が定義されていない場合に、この属性を使用して型情報を提供できます。 たとえば、`value=’1’` を使用して、フィールドの種類を数値として扱うことができます。
+  `value` 省略可能。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 `<field>` では、コンストラクター関数でこの属性がサポートされますが、オブジェクト リテラルではサポートされません。 フィールドの型が定義されていない場合に、この属性を使用して型情報を提供できます。 たとえば、を使用し `value=’1’` て、フィールドの種類を数値として扱うことができます。
 
   `description` 省略可能。 フィールドの説明。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  コンストラクター関数内のフィールドをドキュメント化する場合は、`name` 属性が必要です。 それ以外のすべてのシナリオでは、`<field>` 要素の属性はすべて省略可能です。
 
  コンストラクター関数をドキュメント化する場合は、`<field>` 要素をフィールド宣言の直前に記述する必要があります。 `name` 属性は、ソース コードで使用されているフィールド名と一致する必要があります。 オブジェクトのメンバーの場合、`name` 要素がオブジェクト メンバー宣言の直前にあれば、`<field>` 属性は省略できます。
@@ -141,5 +141,5 @@ new calculator().f.   // Completion list for a Number.
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

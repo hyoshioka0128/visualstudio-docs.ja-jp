@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93813aa734c615e7f045c98c776e600be4ee3fab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663937"
 ---
 # <a name="working-with-textures-and-images"></a>テクスチャおよびイメージの使用
@@ -45,5 +45,5 @@ ms.locfileid: "72663937"
 
 |Title|説明|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|イメージ エディターを使用してテクスチャとイメージを操作する方法について説明します。|
-|[イメージ エディターの例](../designers/image-editor-examples.md)|イメージ エディターを使用した一般的なイメージ処理タスクの実行方法について説明するトピックへのリンクがあります。|
+|[イメージエディター](../designers/image-editor.md)|イメージ エディターを使用してテクスチャとイメージを操作する方法について説明します。|
+|[イメージエディターの例](../designers/image-editor-examples.md)|イメージ エディターを使用した一般的なイメージ処理タスクの実行方法について説明するトピックへのリンクがあります。|

@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816177"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小数の桁数が有効範囲を超えています。
-関数**番号. prototype. toExponential**に無効な引数を渡そうとしました。 関数**Toexponential ()** の引数は、0 ~ 20 (両端を含む) である必要があります。  
+関数 **番号. prototype. toExponential**に無効な引数を渡そうとしました。 関数 **Toexponential ()** の引数は、0 ~ 20 (両端を含む) である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
