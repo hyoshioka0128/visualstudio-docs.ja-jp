@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176079"
 ---
 # <a name="usage-warnings"></a>使用法に関する警告
@@ -77,4 +77,4 @@ ms.locfileid: "89176079"
 |[CA2246: 同じステートメントにシンボルとそのメンバーを割り当てません](../code-quality/ca2246.md)|同じステートメントで、シンボルとそのメンバー (フィールドまたはプロパティ) を割り当てることは推奨されていません。 メンバーアクセスが、割り当ての前にシンボルの古い値を使用するのか、またはこのステートメントの代入の新しい値を使用するのかは明確ではありません。|
 |[CA2247:TaskCompletionSource コンストラクターに渡された引数は、TaskContinuationOptions 列挙型ではなく、TaskCreationOptions 列挙型にする必要があります](../code-quality/ca2246.md)|Taskて Source には、タスクに格納されているオブジェクトの状態を取得する、基になるタスクとコンストラクターを制御する Task/Options を受け取るコンストラクターがあります。  Task/options ではなく Task続行 Ationoptions を渡した場合、オプションが状態として扱われます。|
 |[CA2248: 正しい ' enum ' 引数を ' Enum. HasFlag ' に指定してください](../code-quality/ca2248.md)|メソッド呼び出しの引数として渡された列挙型 `HasFlag` が、呼び出し元の列挙型と異なります。|
-|[CA2249: string. IndexOf の代わりに Contains を使用することを検討してください。](../code-quality/ca2249.md)|結果を `string.IndexOf` 使用して部分文字列が存在するかどうかを確認するための呼び出しは、で置き換えることができ `string.Contains` ます。|
+|[CA2249:String.IndexOf の代わりに String.Contains を使用することを検討します](../code-quality/ca2249.md)|結果を `string.IndexOf` 使用して部分文字列が存在するかどうかを確認するための呼び出しは、で置き換えることができ `string.Contains` ます。|

@@ -1,5 +1,5 @@
 ---
-title: IDebugエンジンの打ち上げ2::起動中断 |マイクロソフトドキュメント
+title: 'IDebugEngineLaunch2:: LaunchSuspended |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e802c17d0a93aabbe5c6c0a8573abc6a551944ae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730542"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
-このメソッドは、デバッグ エンジン (DE) を使用してプロセスを起動します。
+このメソッドは、デバッグエンジン (DE) を介してプロセスを起動します。
 
 ## <a name="syntax"></a>構文
 
@@ -65,51 +65,51 @@ int LaunchSuspended(
 
 ## <a name="parameters"></a>パラメーター
 `pszMachine`\
-[in]プロセスを起動するマシンの名前。 ローカル マシンを指定するには、NULL 値を使用します。
+からプロセスを起動するコンピューターの名前。 ローカルコンピューターを指定するには、null 値を使用します。
 
 `pPort`\
-[in]プログラムが実行されるポートを表す[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイス。
+からプログラムが実行されるポートを表す [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) インターフェイス。
 
 `pszExe`\
-[in]起動する実行可能ファイルの名前。
+から起動する実行可能ファイルの名前。
 
 `pszArgs`\
-[in]実行可能ファイルに渡す引数。 引数がない場合は、null 値になることがあります。
+から実行可能ファイルに渡す引数。 引数がない場合は、null 値を指定できます。
 
 `pszDir`\
-[in]実行可能ファイルで使用される作業ディレクトリの名前。 作業ディレクトリが不要な場合は、NULL 値になることがあります。
+から実行可能ファイルによって使用される作業ディレクトリの名前。 作業ディレクトリが不要な場合は、null 値を指定できます。
 
 `bstrEnv`\
-[in]NULL で終わる文字列の環境ブロック、続いて追加の NULL 終端文字。
+からNULL で終わる文字列の環境ブロックの後に、追加の NULL ターミネータが続きます。
 
 `pszOptions`\
-[in]実行可能ファイルのオプション。
+から実行可能ファイルのオプションです。
 
 `dwLaunchFlags`\
-[in]セッションの[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)を指定します。
+からセッションの [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) を指定します。
 
 `hStdInput`\
-[in]代替入力ストリームへのハンドル。 リダイレクトが不要な場合は 0 になることがあります。
+から代替入力ストリームを処理します。 リダイレクトが不要な場合は0を指定できます。
 
 `hStdOutput`\
-[in]代替出力ストリームへのハンドル。 リダイレクトが不要な場合は 0 になることがあります。
+から代替出力ストリームへのハンドル。 リダイレクトが不要な場合は0を指定できます。
 
 `hStdError`\
-[in]代替エラー出力ストリームへのハンドル。 リダイレクトが不要な場合は 0 になることがあります。
+から代替エラー出力ストリームへのハンドル。 リダイレクトが不要な場合は0を指定できます。
 
 `pCallback`\
-[in]デバッガー イベントを受け取る[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)オブジェクト。
+からデバッガーイベントを受け取る [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) オブジェクト。
 
 `ppDebugProcess`\
-[アウト]起動されたプロセスを表す結果の[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)オブジェクトを返します。
+入出力起動されたプロセスを表す結果の [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 通常[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)][、LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)メソッドを使用してプログラムを起動し、中断されたプログラムにデバッガーをアタッチします。 ただし、デバッグ エンジンがプログラムを起動する必要がある場合 (たとえば、デバッグ エンジンがインタープリターの一部であり、デバッグ中のプログラムがインタープリタ言語である場合)、その場合[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]はメソッドを`IDebugEngineLaunch2::LaunchSuspended`使用します。
+## <a name="remarks"></a>解説
+ 通常、は、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] [launchsuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) メソッドを使用してプログラムを起動し、中断されたプログラムにデバッガーをアタッチします。 ただし、デバッグエンジンでプログラムの起動が必要になる状況があります (たとえば、デバッグエンジンがインタープリターの一部であり、デバッグ中のプログラムが解釈された言語である場合など)。この場合は、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] メソッドを使用し `IDebugEngineLaunch2::LaunchSuspended` ます。
 
- [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)メソッドは、プロセスが中断状態で正常に起動した後にプロセスを開始するために呼び出されます。
+ [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)メソッドは、プロセスが中断状態で正常に起動された後にプロセスを開始するために呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

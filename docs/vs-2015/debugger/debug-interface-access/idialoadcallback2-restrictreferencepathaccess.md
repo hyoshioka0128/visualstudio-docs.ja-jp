@@ -1,5 +1,5 @@
 ---
-title: Idialoadcallback 2::restrictreferencepathaccess |Microsoft Docs
+title: 'IDiaLoadCallback2:: RestrictReferencePathAccess |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce0f2b896b60a13635818249e9faf552f3070828
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187308"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-.Exe ファイルが配置されるパスで .pdb ファイルを検索が許可されているかどうかを決定します。  
+.Exe ファイルが配置されているパスで .pdb ファイルを検索するかどうかを決定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -32,10 +32,10 @@ HRESULT RestrictReferencePathAccess();
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- すべてのコード以外のリターン`S_OK`.exe ファイルの場所のパスで .pdb ファイルを検索しないようにします。  
+## <a name="remarks"></a>注釈  
+ `S_OK`.Exe ファイルが配置されているパスで .pdb ファイルを検索しないようにする以外のリターンコード。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

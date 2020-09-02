@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893269"
 ---
 # <a name="customize-a-rule-set"></a>規則セットをカスタマイズする
@@ -51,7 +51,7 @@ ms.locfileid: "88893269"
 4. [ **開く** ] を選択すると、ルールセットエディターにルールが表示されます。
 
 > [!NOTE]
-> .NET Core または .NET Standard プロジェクトがある場合、プロセスは少し異なります。これは、[ **コード分析** ] プロパティタブがないためです。手順に従って、 [定義済みのルールセットをプロジェクトにコピーし、アクティブなルールセットと](analyzer-rule-sets.md)して設定します。 規則セットをコピーした後は、 [Visual Studio の規則セットエディターで](working-in-the-code-analysis-rule-set-editor.md)**ソリューションエクスプローラー**から開くことで編集できます。
+> .NET Core または .NET Standard プロジェクトがある場合、そのプロセスは少し異なります。これは、[ **コード分析** ] プロパティタブがないためです。手順に従って、 [定義済みの規則セットをプロジェクトにコピーし、アクティブな規則セットとして設定](analyzer-rule-sets.md)します。 規則セットをコピーした後は、 [Visual Studio の規則セットエディターで](working-in-the-code-analysis-rule-set-editor.md)**ソリューションエクスプローラー**から開くことで編集できます。
 
 ## <a name="create-a-new-rule-set"></a>新しい規則セットを作成する
 

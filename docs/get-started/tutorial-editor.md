@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595268"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
@@ -54,7 +54,7 @@ ms.locfileid: "75595268"
 
 ::: moniker-end
 
-2. メニュー バーの **[ファイル]** メニューから、 **[新規作成]**  >  **[ファイル]** を選択します。
+2. メニュー バーの **[ファイル]** メニューから、**[新規作成]** > **[ファイル]** を選択します。
 
 3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、 **[Visual C# クラス]** を選択し、 **[開く]** を選択します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "75595268"
 
 Visual Studio で提供されている便利な*コード スニペット*を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../ide/code-snippets.md)は、C#、Visual Basic、C++ など、さまざまなプログラミング言語で使用することができます。 C# `void Main` スニペットをファイルに追加してみましょう。
 
-1. ファイル内の最後の閉じかっこ **}** のすぐ上にカーソルを置き、`svm` という文字を入力します (`svm` は `static void Main` の略です。[Main()](/dotnet/csharp/programming-guide/main-and-command-args/) メソッドは、C# アプリケーションのエントリ ポイントです)。
+1. ファイル内の最後の閉じかっこ **}** のすぐ上にカーソルを置き、`svm` という文字を入力します  (`svm` は `static void Main` の略です。[Main()](/dotnet/csharp/programming-guide/main-and-command-args/) メソッドは、C# アプリケーションのエントリ ポイントです)。
 
    ポップアップ ダイアログ ボックスが `svm` コード スニペットに関する情報を伴って表示されます。
 

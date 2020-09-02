@@ -13,10 +13,10 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186453"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 要素 (Visual Studio テンプレート)
@@ -49,37 +49,37 @@ ms.locfileid: "68186453"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|必須の要素です。<br /><br /> いずれかで表示されるテンプレートの名前を指定、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|  
-|[説明](../extensibility/description-element-visual-studio-templates.md)|必須の要素です。<br /><br /> いずれかで表示されるテンプレートの説明を指定、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|  
-|[アイコン](../extensibility/icon-element-visual-studio-templates.md)|必須の要素です。<br /><br /> パスと、いずれかで表示されるアイコンとして使用するイメージ ファイルのファイル名を指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックスで、テンプレート。|  
-|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|必須の要素です。<br /><br /> 指定されたグループの下に表示されるように、プロジェクト テンプレートの分類、**新しいプロジェクト** ダイアログ ボックス。|  
-|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 指定したサブカテゴリに表示されるように、プロジェクト テンプレートは、分類、**新しいプロジェクト** ダイアログ ボックス。|  
-|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレート ID を指定します|  
-|[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレート グループの ID を指定します|  
-|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> いずれかに表示される、同じカテゴリ内の他のテンプレート間で、テンプレートの配置に使用する値を指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|  
-|[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトのインスタンス化時に含まれるフォルダーを作成するかどうかを指定します。|  
-|[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 作成時にそのプロジェクトまたは項目の Visual Studio プロジェクト システムにより生成される名前を指定します。|  
-|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 作成時に、Visual Studio プロジェクト システムがプロジェクトまたは項目の既定の名前を生成するかどうかを指定します。|  
-|[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 一時プロジェクトとして、プロジェクトを作成できるかどうかを指定します。|  
-|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 指定するかどうか、**参照**ボタンが表示されます、**新しいプロジェクト**ダイアログ ボックスで新しいプロジェクトが保存されている既定のディレクトリを簡単に変更できるようにします。|  
-|[[非表示]](../extensibility/hidden-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> いずれかで、テンプレートを表示するかどうかを指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。|  
-|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 親カテゴリ内のテンプレートを表示する数を指定します、**新しいプロジェクト** ダイアログ ボックス。|  
+|[名前](../extensibility/name-element-visual-studio-templates.md)|必須の要素です。<br /><br /> **新しいプロジェクト**または [**新しい項目の追加**] ダイアログボックスに表示されるテンプレートの名前を指定します。|  
+|[説明](../extensibility/description-element-visual-studio-templates.md)|必須の要素です。<br /><br /> **新しいプロジェクト**または [**新しい項目の追加**] ダイアログボックスに表示されるテンプレートの説明を指定します。|  
+|[Icon](../extensibility/icon-element-visual-studio-templates.md)|必須の要素です。<br /><br /> アイコンとして機能するイメージファイルのパスとファイル名を指定します。このアイコンは、 **新しいプロジェクト** または [ **新しい項目の追加** ] ダイアログボックスで、テンプレートに対して表示されます。|  
+|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|必須の要素です。<br /><br /> [ **新しいプロジェクト** ] ダイアログボックスの指定したグループの下に表示されるように、プロジェクトテンプレートを分類します。|  
+|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトテンプレートを分類して、[ **新しいプロジェクト** ] ダイアログボックスの指定したサブカテゴリの下に表示されるようにします。|  
+|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレート ID を指定します。|  
+|[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートグループ ID を指定します。|  
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートを、同じカテゴリの他のテンプレートの中に配置するために使用される値を指定します。|  
+|[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトのインスタンス化で、格納フォルダーを作成するかどうかを指定します。|  
+|[Defaultname,](../extensibility/defaultname-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトまたはアイテムの作成時に Visual Studio プロジェクトシステムによって生成される名前を指定します。|  
+|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトまたは項目の作成時に、Visual Studio プロジェクトシステムで既定の名前を生成するかどうかを指定します。|  
+|[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトを一時プロジェクトとして作成できるかどうかを指定します。|  
+|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> [**新しいプロジェクト**] ダイアログボックスで [**参照**] ボタンを使用できるようにするかどうかを指定します。これにより、新しいプロジェクトを保存する既定のディレクトリをユーザーが簡単に変更できるようになります。|  
+|[[非表示]](../extensibility/hidden-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスのいずれかにテンプレートを表示するかどうかを指定します。|  
+|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|省略可能な要素です。<br /><br /> [ **新しいプロジェクト** ] ダイアログボックスにテンプレートを表示する親カテゴリの数を指定します。|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|省略可能な要素です。|  
-|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|省略可能な要素です。<br /><br /> 指定するかどうか、**場所**テキスト ボックスに、**新しいプロジェクト** ダイアログ ボックスが有効になっている、無効になっている、またはプロジェクトのテンプレートの非表示になります。|  
-|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートは、特定の最小バージョンと .NET Framework の存在する場合、以降のバージョンのみがサポートする場合は、この要素を使用します。|  
-|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートが web プロジェクト用のマスター ページをサポートしているかどうかを指定します。|  
-|[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 指定の web プロジェクト、テンプレートがコードの分離、または分離コード ページ モデルをサポートするかどうか。|  
-|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> かどうかと、テンプレートが複数の言語では、まったく同じかどうかを指定します、**言語**オプションはから利用可能な**新しいプロジェクト** ダイアログ ボックス。|  
-|[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクト テンプレートの対象となるプラットフォームを指定します。 この要素が作成するプロジェクト テンプレートを使用することを指定[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]アプリ。|  
+|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|省略可能な要素です。<br /><br /> [**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスが、プロジェクトテンプレートに対して [有効]、[無効]、または [非表示] のどちらであるかを指定します。|  
+|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートが、.NET Framework の特定の最小バージョン、およびそれ以降のバージョンをサポートしている場合にのみ、この要素を使用します。|  
+|[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートが web プロジェクトのマスターページをサポートするかどうかを指定します。|  
+|[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートが web プロジェクトのコード分離または分離コードページモデルをサポートするかどうかを指定します。|  
+|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> テンプレートが複数の言語に対して同一であるかどうか、および [**新しいプロジェクト**] ダイアログボックスから**言語**オプションを使用できるかどうかを指定します。|  
+|[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクト テンプレートの対象となるプラットフォームを指定します。 この要素は、アプリを作成するためにプロジェクトテンプレートを使用することを指定し [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] ます。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクト テンプレート、項目テンプレート、またはスタート キットのすべてのメタデータが含まれています。|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクトテンプレート、項目テンプレート、またはスタートキットのすべてのメタデータが含まれます。|  
   
-## <a name="remarks"></a>Remarks  
- `TemplateData` 必要な要素です。  
+## <a name="remarks"></a>注釈  
+ `TemplateData` は必須の要素です。  
   
  省略可能な要素を含めない場合は、その要素の既定値が使用されます。  
   
@@ -110,6 +110,6 @@ ms.locfileid: "68186453"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

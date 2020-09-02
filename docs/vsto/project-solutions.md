@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985638"
 ---
 # <a name="project-solutions"></a>プロジェクトソリューション
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] には、Microsoft Office Project の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用すると、Project の自動化、Project 機能の拡張、Project ユーザー インターフェイス (UI) のカスタマイズが可能です。
 
- VSTO アドインの詳細については、「vsto アドインの[プログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)」と「 [Vsto アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。Microsoft Office を使用したプログラミングの初心者の場合は、「 [Visual Studio &#40;&#41;での Office 開発の概要](../vsto/getting-started-office-development-in-visual-studio.md)」を参照してください。
+ VSTO アドインの詳細については、「vsto アドインの [プログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md) 」と「 [Vsto アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。Microsoft Office を使用したプログラミングの初心者の場合は、「 [Visual Studio で &#40;Office 開発を開始 ](../vsto/getting-started-office-development-in-visual-studio.md)する」&#41;を参照してください。
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
@@ -36,14 +36,14 @@ ms.locfileid: "72985638"
 ## <a name="automate-project-by-using-the-project-object-model"></a>Project オブジェクトモデルを使用してプロジェクトを自動化する
  Project オブジェクト モデルでは、Project の自動化に使用できる型が多数公開されています。 これらの型により、プロジェクト内のタスクをプログラムによって作成したり変更したりするなど、一般的なタスクを行うコードを記述できます。
 
- VSTO アドインから Project オブジェクトモデルにアクセスするには、プロジェクトの `ThisAddIn` クラスの [`Application`] フィールドを使用します。 `Application` フィールドは、Project の現在のインスタンスを表す `Microsoft.Office.Interop.MsProject.Application` オブジェクトを返します。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
+ VSTO アドインから Project オブジェクトモデルにアクセスするには、 `Application` プロジェクトのクラスのフィールドを使用し `ThisAddIn` ます。 この `Application` フィールドは、 `Microsoft.Office.Interop.MsProject.Application` Project の現在のインスタンスを表すオブジェクトを返します。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
- Project オブジェクト モデルを呼び出すときには、Project のプライマリ相互運用機能アセンブリに用意された型を使用します。 プライマリ相互運用機能アセンブリは、VSTO アドインのマネージド コードと Project の COM オブジェクト モデルとの仲介役を果たします。 Project プライマリ相互運用機能アセンブリ内の型は、すべて `Microsoft.Office.Interop.MSProject` 名前空間に定義されています。 プライマリ相互運用機能アセンブリの詳細については、「 [ &#40;office&#41;ソリューション開発の概要 VSTO](../vsto/office-solutions-development-overview-vsto.md)と[office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。
+ Project オブジェクト モデルを呼び出すときには、Project のプライマリ相互運用機能アセンブリに用意された型を使用します。 プライマリ相互運用機能アセンブリは、VSTO アドインのマネージド コードと Project の COM オブジェクト モデルとの仲介役を果たします。 Project プライマリ相互運用機能アセンブリ内の型は、すべて `Microsoft.Office.Interop.MSProject` 名前空間に定義されています。 プライマリ相互運用機能アセンブリの詳細については、「 [office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) と [office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。
 
 ## <a name="use-the-project-object-model-documentation"></a>プロジェクトオブジェクトモデルのドキュメントを使用する
- Project オブジェクト モデルの詳細については、Project の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Project オブジェクト モデルについて説明しています。 詳細については、「[プロジェクトオブジェクトモデルのリファレンス](/office/vba/api/project.object)」を参照してください。
+ Project オブジェクト モデルの詳細については、Project の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンスでは、Visual Basic for Applications (VBA) コードに公開される Project オブジェクト モデルについて説明しています。 詳細については、「 [プロジェクトオブジェクトモデルのリファレンス](/office/vba/api/project.object)」を参照してください。
 
- VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Project プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンスの Calendar オブジェクトは、Project PIA の `Microsoft.Office.Interop.MSProject.Calendar` 型に対応しています。 VBA オブジェクトモデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例が提供されていますが、この参照のC# vba コードを、で作成した Project VSTO アドインプロジェクトで使用する場合は、Visual Basic または Visual に変換する必要があります。Visual Studio を使用する。
+ VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Project プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンス内の Calendar オブジェクトは、Project PIA の型に対応して `Microsoft.Office.Interop.MSProject.Calendar` います。 VBA オブジェクトモデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を示していますが、Visual Studio を使用して作成した Project VSTO アドインプロジェクトで使用する場合は、この参照の VBA コードを Visual Basic または Visual C# に変換する必要があります。
 
 > [!NOTE]
 > 現在のところ、Project プライマリ相互運用機能アセンブリに関するリファレンス ドキュメントは提供されていません。
@@ -62,11 +62,11 @@ ms.locfileid: "72985638"
 
  プロジェクトおよびその他の Microsoft Office アプリケーションの UI をカスタマイズする方法の詳細については、「 [OFFICE ui のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チュートリアル: 初めての project 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
+- [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Architecture of VSTO Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
 - [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)

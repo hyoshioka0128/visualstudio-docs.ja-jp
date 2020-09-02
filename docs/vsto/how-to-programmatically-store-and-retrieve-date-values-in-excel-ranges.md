@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e4cea02af59b6b6a8457d964bdce802e1e2b2b84
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546966"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>方法: プログラムによって Excel の範囲内の日付値を格納および取得する
@@ -34,7 +34,7 @@ ms.locfileid: "85546966"
  Visual Studio の Office 開発ツールを使用して、範囲内で1/1/1900 以降の日付値を格納すると、その値は OLE オートメーション (OA) 形式で格納されます。 <xref:System.DateTime.FromOADate%2A>OLE オートメーション (OA) の日付の値を取得するには、メソッドを使用する必要があります。 日付が1/1/1900 より前の場合は、文字列として格納されます。
 
 > [!NOTE]
-> Excel の日付は、1900の最初の2か月の OLE オートメーション日付とは異なります。 また、1904の [**日付システム**] オプションがオンになっている場合にも違いがあります。 以下のコード例では、これらの違いについては説明しません。
+> Excel の日付は、1900の最初の2か月の OLE オートメーション日付とは異なります。 また、1904の [ **日付システム** ] オプションがオンになっている場合にも違いがあります。 以下のコード例では、これらの違いについては説明しません。
 
 ## <a name="use-a-namedrange-control"></a>NamedRange コントロールを使用する
 

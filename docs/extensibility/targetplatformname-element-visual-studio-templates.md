@@ -1,5 +1,5 @@
 ---
-title: ターゲットプラットフォーム名要素 (ビジュアル スタジオ テンプレート) |マイクロソフトドキュメント
+title: TargetPlatformName 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699275"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 要素 (Visual Studio テンプレート)
@@ -31,7 +31,7 @@ ms.locfileid: "80699275"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
 
@@ -48,7 +48,7 @@ ms.locfileid: "80699275"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
  テキストは、 **Windows**である必要があります。
 
 ## <a name="example"></a>例
@@ -64,6 +64,6 @@ ms.locfileid: "80699275"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

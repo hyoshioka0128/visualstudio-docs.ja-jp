@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata::next |Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: Next |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bdbf58321426890bffd45a08818dc5341bdfc3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187394"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定した列挙型のシーケンス内のレコード数を取得します。  
+列挙されたシーケンス内の指定した数のレコードを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,23 +39,23 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>パラメーター  
  celt  
- [in]取得するレコードの数。  
+ から取得するレコードの数。  
   
  cbData  
- [in]データバッファのサイズ（バイト単位）。  
+ からデータバッファーのサイズ (バイト単位)。  
   
  pcbData  
- [out]返されるバイト数を返します。 場合`data`が null の場合、`pcbData`要求されたすべてのレコードの合計使用可能なデータのバイト数が含まれています。  
+ 入出力返されたバイト数を返します。 `data`が NULL の場合、には、 `pcbData` 要求されたすべてのレコードで使用可能なデータの合計バイト数が格納されます。  
   
  data[]  
- [out]デバッグ ストリーム レコードのデータを格納するバッファー。  
+ 入出力デバッグストリームレコードデータを格納するバッファー。  
   
  pceltFetched  
- [入力、出力]内のレコードの数を返します`data`します。  
+ [入力、出力]内のレコードの数を返し `data` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`レコードがある場合。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`それ以上レコードがない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
