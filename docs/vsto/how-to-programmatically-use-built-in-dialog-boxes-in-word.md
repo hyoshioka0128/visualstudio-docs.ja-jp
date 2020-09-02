@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537619"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>方法: プログラムによって Word の組み込みダイアログボックスを使用する
@@ -28,7 +28,7 @@ ms.locfileid: "85537619"
 ## <a name="display-dialog-boxes"></a>ダイアログボックスの表示
  ダイアログボックスを表示するには、列挙のいずれかの値を使用して、 <xref:Microsoft.Office.Interop.Word.WdWordDialog> <xref:Microsoft.Office.Interop.Word.Dialog> 表示するダイアログボックスを表すオブジェクトを作成します。 次に、 <xref:Microsoft.Office.Interop.Word.Dialog.Show%2A> オブジェクトのメソッドを呼び出し <xref:Microsoft.Office.Interop.Word.Dialog> ます。
 
- 次のコード例は、[ファイルを**開く**] ダイアログボックスを表示する方法を示しています。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
+ 次のコード例は、[ファイルを **開く** ] ダイアログボックスを表示する方法を示しています。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
  [!code-vb[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#100)]
  [!code-csharp[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#100)]

@@ -1,4 +1,4 @@
-﻿---
+---
 title: .NET Framework ベースの国際対応アプリケーションの概要 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0d57cee8591196d12e51e58fb0e5e6a4a2cdf94a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848374"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>.NET Framework ベースの国際対応アプリケーションの概要
@@ -46,8 +46,8 @@ ms.locfileid: "75848374"
 
  Windows フォームと Web フォームの両方のプロジェクト システムで、アセンブリ リソース ファイル テンプレートを使用してリソース ファイルをビルドし、リソースにアクセスしてプロジェクトをビルドすることができます。 サテライト アセンブリはメイン アセンブリと共に作成されます。
 
- ローカライズされたアプリケーションの実行時の外観は 2 つのカルチャ値によって決まります (*カルチャ*とは、ユーザーの言語、環境、および文化的な慣習に関連する、一連のユーザー設定情報です)。読み込まれるリソースは、UI カルチャ設定によって決まります。 UI カルチャは、Web.config ファイルとページ ディレクティブの `UICulture` として設定され、Visual Basic または Visual C# コードでは <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> として設定されます。 カルチャ設定によって、日付、数値、通貨などの値の形式が決まります。 カルチャは、Web.config ファイルとページ ディレクティブでは `Culture` として設定され、Visual Basic または Visual C# コードでは <xref:System.Globalization.CultureInfo.CurrentCulture%2A> として設定されます。
+ ローカライズされたアプリケーションの実行時の外観は 2 つのカルチャ値によって決まります  ( *カルチャ* とは、ユーザーの言語、環境、および文化の規則に関連する一連のユーザー設定情報のことです)。読み込まれるリソースは、UI カルチャの設定によって決まります。 UI カルチャは、Web.config ファイルとページ ディレクティブの `UICulture` として設定され、Visual Basic または Visual C# コードでは <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> として設定されます。 カルチャ設定によって、日付、数値、通貨などの値の形式が決まります。 カルチャは、Web.config ファイルとページ ディレクティブでは `Culture` として設定され、Visual Basic または Visual C# コードでは <xref:System.Globalization.CultureInfo.CurrentCulture%2A> として設定されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Globalization> <xref:System.Resources>
  [アプリケーションのグローバライズとローカライズアプリケーション](../ide/globalizing-and-localizing-applications.md)の[セキュリティおよびローカライズ](../ide/security-and-localized-satellite-assemblies.md)されたサテライトアセンブリ

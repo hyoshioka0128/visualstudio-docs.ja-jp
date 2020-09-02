@@ -12,31 +12,31 @@ ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698685"
 ---
 # <a name="upgrading-project-items"></a>プロジェクト項目のアップグレード
-追加またはを実装していないプロジェクト システム内の項目を管理する場合は、プロジェクトのアップグレード プロセスに参加する必要があります。 Crystal Reports は、プロジェクト システムに追加できる項目の例を示します。  
+を実装していないプロジェクトシステム内の項目を追加または管理する場合は、プロジェクトのアップグレードプロセスに参加する必要があります。 Crystal Reports は、プロジェクトシステムに追加できるアイテムの例です。  
   
- 通常、プロジェクト項目の実装者は、参照は、どのようなプロジェクトとその他のプロジェクトのプロパティは何がアップグレードの決定を行う必要があるため、既に完全インスタンス化とアップグレードされたプロジェクトを活用します。  
+ 通常、プロジェクト項目の実装者は、既に完全にインスタンス化され、アップグレードされたプロジェクトを活用する必要があります。これは、プロジェクトが参照している内容と、アップグレードを決定するためにどのようなプロジェクトプロパティがあるかを把握する必要があるためです。  
   
 ### <a name="to-get-the-project-upgrade-notification"></a>プロジェクトのアップグレード通知を取得するには  
   
-1. 設定、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading>プロジェクト項目の実装では、(vsshell80.idl で定義されている) フラグ。 これにより、プロジェクト項目を auto に VSPackage を読み込むときに、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト システムは、アップグレードの過程において、シェルを決定します。  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading>プロジェクト項目の実装でフラグ (vsshell80 で定義) を設定します。 これにより、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトシステムがアップグレード中であることがシェルによって判断されたときに、プロジェクト項目 VSPackage が自動読み込みされます。  
   
-2. お勧め、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>インターフェイスを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A>メソッド。  
+2. メソッドを使用してインターフェイスをアドバイスし <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> ます。  
   
-3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>プロジェクト システムの実装のアップグレード操作が完了したら、新しいアップグレードされたプロジェクトが作成した後、インターフェイスが発生します。 シナリオによっては、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>インターフェイスが発生した後、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>、または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A>メソッド。  
+3. この <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> インターフェイスは、プロジェクトシステムの実装がアップグレード操作を完了し、アップグレードされた新しいプロジェクトが作成された後に発生します。 シナリオによっては、、、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> またはメソッドの後にインターフェイスが起動され <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> ます。  
   
-### <a name="to-upgrade-the-project-item-files"></a>プロジェクト項目のファイルをアップグレードするには  
+### <a name="to-upgrade-the-project-item-files"></a>プロジェクト項目ファイルをアップグレードするには  
   
-1. プロジェクト項目の実装で、ファイルのバックアップ プロセスを慎重に管理する必要があります。 サイド バイ サイドでバックアップの場合は、具体的には適用される場所、`fUpgradeFlag`のパラメーター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドに設定されている<xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS>".old"として指定される側のファイルにバックアップされたファイルを配置する場所。 プロジェクトがアップグレードされたシステム時刻よりも古いバックアップ ファイルは、古いものとして指定できます。 さらに、これを防ぐために特定の手順を実行していない限り、このを上書き可能性があります。  
+1. プロジェクト項目の実装では、ファイルのバックアッププロセスを慎重に管理する必要があります。 これは、並列バックアップの場合に特に当てはまります。この場合、 `fUpgradeFlag` <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS> バックアップされたファイルは、".old" として指定されたファイルに従って配置されます。 プロジェクトをアップグレードしたときのシステム時刻より古いバックアップファイルは、古いものとして指定できます。 また、これを回避する特定の手順を実行しない限り、上書きされる可能性があります。  
   
-2. プロジェクト項目がプロジェクトのアップグレードの通知を取得時に、 **Visual Studio 変換ウィザード**が引き続き表示されます。 そのためのメソッドを使用する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>ウィザードの UI にアップグレード メッセージを提供するインターフェイス。  
+2. プロジェクト項目がプロジェクトのアップグレードの通知を受け取ると、 **Visual Studio 変換ウィザード** が引き続き表示されます。 したがって、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> ウィザードの UI にアップグレードメッセージを提供するには、インターフェイスのメソッドを使用する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio 変換ウィザード](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [カスタム プロジェクトのアップグレード](../misc/upgrading-custom-projects.md)

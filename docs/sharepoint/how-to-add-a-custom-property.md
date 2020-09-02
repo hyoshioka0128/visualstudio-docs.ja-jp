@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017075"
 ---
 # <a name="how-to-add-a-custom-property"></a>方法: カスタムプロパティを追加する
@@ -32,15 +33,15 @@ ms.locfileid: "86017075"
 
 2. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
 
-3. [**プロパティ**] ウィンドウで、[**カスタムプロパティ**] プロパティを選択し、省略記号ボタン (![ASP.NET Mobile Designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
+3. [ **プロパティ** ] ウィンドウで、[ **カスタムプロパティ** ] プロパティを選択し、省略記号ボタン (![ASP.NET Mobile Designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
 
-     [**プロパティエディター** ] ダイアログボックスが表示されます。
+     [ **プロパティエディター** ] ダイアログボックスが表示されます。
 
-4. [**名前**] 列のテキストボックスで、プロパティの名前を指定します。
+4. [ **名前** ] 列のテキストボックスで、プロパティの名前を指定します。
 
-5. カスタムプロパティの**type**フィールドで、適切なデータ型を選択します。
+5. カスタムプロパティの **type** フィールドで、適切なデータ型を選択します。
 
-6. カスタムプロパティの [**値**] フィールドに値を指定し、[ **OK** ] をクリックします。
+6. カスタムプロパティの [ **値** ] フィールドに値を指定し、[ **OK** ] をクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
