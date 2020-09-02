@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145364"
 ---
 # <a name="utilization-view"></a>使用状況ビュー
@@ -25,7 +25,7 @@ ms.locfileid: "68145364"
 
 **使用状況ビュー**には、現在のプロセスによって使用されている CPU、GPU、その他のシステム リソースに関する情報が表示されます。 このビューには、分析対象のプロセス、アイドル プロセス、システム プロセス、一定期間システム上で実行中のその他のプロセスによる平均コア使用状況が表示されます。 任意の時点でどのコアがアクティブなのかは表示されません。 たとえば、特定の期間、2 つのコアがそれぞれキャパシティの 50% で動作している場合、このビューには 1 つの論理コアが使用されているものとして表示されます。 このビューは、プロファイル時間を短い時間セグメントに分割して生成されます。 セグメントごとに、その期間中、論理コアで実行されているプロセス スレッドの平均数がグラフに示されます。  
   
- ![CPU 使用率ビュー](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![CPU 使用状況ビュー](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
  このグラフの x 軸には時間が示され、対象プロセス、アイドル プロセス、システム プロセスが使用する平均論理コア数が表示されます。 (アイドル プロセスはアイドル状態のコアを示します。 システム プロセスは他のプロセスに代わって処理を実行できる Windows のプロセスです。)システム アカウントで実行されているその他のプロセスは、残りのコアの使用状況に相当します。  
   
@@ -51,6 +51,6 @@ ms.locfileid: "68145364"
 ## <a name="zooming"></a>ズーム  
  CPU 使用状況グラフまたは GPU アクティビティ グラフをズームするには、セクションを選択するか、グラフ上部のズーム スライダー ツールを使用します。 ズーム設定は、他のビューに切り替えてもそのままになります。 また縮小するには、ズーム スライダー ツールを使用します。 Ctrl キーを押しながらスクロールしてズームすることもできます。  
   
-## <a name="see-also"></a>関連項目  
- [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)   
+## <a name="see-also"></a>参照  
+ [同時実行ビジュアライザー](../profiling/concurrency-visualizer.md)   
  [コア ビュー](../profiling/cores-view.md)

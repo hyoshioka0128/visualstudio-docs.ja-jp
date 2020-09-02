@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4d363b554babfbac994d9ec71eddbefd68f38d50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562817"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series デストラクター
+# <a name="marker_seriesmarker_series-destructor"></a>marker_series::~marker_series デストラクター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 marker_series オブジェクトを破棄し、割り当てられているすべてのリソースを解放します。  
@@ -31,10 +31,10 @@ marker_series オブジェクトを破棄し、割り当てられているすべ
 ~marker_series();  
 ```  
   
-## <a name="requirements"></a>要件  
+## <a name="requirements"></a>必要条件  
  **ヘッダー:** cvmarkersobj.h  
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [marker_series クラス](../profiling/marker-series-class.md)

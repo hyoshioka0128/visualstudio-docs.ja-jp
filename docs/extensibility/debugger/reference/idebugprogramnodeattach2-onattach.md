@@ -1,5 +1,5 @@
 ---
-title: Iデバッグプログラムノードアタッチ2::オンアタッチ |マイクロソフトドキュメント
+title: 'IDebugProgramNodeAttach2:: OnAttach |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dfb8a39af3c030dadddcb148a79a96b57f20e183
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721878"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
-関連付けられたプログラムにアタッチするか[、Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドへのアタッチ プロセスを延期します。
+関連付けられているプログラムにアタッチするか、アタッチプロセスを [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドに従います。
 
 ## <a name="syntax"></a>構文
 
@@ -41,14 +41,14 @@ int OnAttach(
 
 ## <a name="parameters"></a>パラメーター
 `guidProgramId`\
-[in]`GUID`をクリックして、関連付けられたプログラムに割り当てます。
+[入力] `GUID` 関連付けられたプログラムに割り当てる場合は。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 Attach`S_FALSE`メソッド[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)を呼び出さない場合に返します。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE` [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドを呼び出さない場合は、を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは[、Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッドが呼び出される前に、アタッチ プロセス中に呼び出されます。 この`OnAttach`メソッドは、アタッチ プロセス自体を実行できます (このメソッドは`S_FALSE`返す) か、アタッチ`IDebugEngine2::Attach`プロセスをメソッド`OnAttach`に遅延`S_OK`させる (メソッドが返す)。 どちらの場合も、メソッド`OnAttach`はデバッグ中の`GUID`プログラムの を指定`GUID`された .
+## <a name="remarks"></a>解説
+ [Attach メソッドが](../../../extensibility/debugger/reference/idebugengine2-attach.md)呼び出される前に、アタッチ処理中にこのメソッドが呼び出されます。 メソッドは、 `OnAttach` アタッチプロセス自体を実行できます (この場合、このメソッドはを返し `S_FALSE` ます)。また、メソッドにアタッチプロセスを遅延させ `IDebugEngine2::Attach` `OnAttach` ます (メソッドはを返し `S_OK` ます)。 どちらの場合も、 `OnAttach` メソッドは、 `GUID` デバッグされているプログラムのを指定されたに設定でき `GUID` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
-- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)

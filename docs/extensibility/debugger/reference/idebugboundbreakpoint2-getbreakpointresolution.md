@@ -1,5 +1,5 @@
 ---
-title: IDebug バインドブレークポイント2::ブレークポイントの解像度を取得する |マイクロソフトドキュメント
+title: 'IDebugBoundBreakpoint2:: GetBreakpointResolution |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735575"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-このブレークポイントを記述するブレークポイントの解像度を取得します。
+このブレークポイントを説明するブレークポイントの解決を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,20 +42,20 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>パラメーター
 `ppBPResolution`\
-[アウト]次のいずれかを表[すインターフェイスを](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)返します。
+入出力次のいずれかを表す [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) インターフェイスを返します。
 
-- コード のブレークポイントがバインドされているコード内の位置を記述するブレークポイントの解決オブジェクト。
+- コードのブレークポイントがバインドされているコード内の場所を記述するブレークポイント解決オブジェクト。
 
-- データ ブレークポイントがバインドされているデータの場所。
+- データブレークポイントがバインドされているデータの場所。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 バインド`E_BP_DELETED`されたブレークポイント オブジェクトの状態が[(BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙`BPS_DELETED`の一部) に設定されているかどうかを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_BP_DELETED`バインドされたブレークポイントオブジェクトの状態が `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙体の一部) に設定されている場合は、を返します。
 
-## <a name="remarks"></a>Remarks
-ブレークポイントの[解決](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)がコードまたはデータのかどうかを判断するメソッドを呼び出します。
+## <a name="remarks"></a>解説
+[Getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)メソッドを呼び出して、ブレークポイントの解決がコードとデータのどちらであるかを判断します。
 
 ## <a name="example"></a>例
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)インターフェイスを公開する単純な`CBoundBreakpoint`オブジェクトに対してこのメソッドを実装する方法を次の例に示します。
+次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

@@ -1,5 +1,5 @@
 ---
-title: プロパティ 2::メモリコンテキストを取得する |マイクロソフトドキュメント
+title: 'IDebugProperty2:: GetMemoryContext |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8fa610af3ae00d30462c1a3a0c825e5a85722cdc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721459"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
-プロパティ値のメモリ コンテキストを取得します。
+プロパティ値のメモリコンテキストを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>パラメーター
 `ppMemory`\
-[アウト]このプロパティ[に関連](../../../extensibility/debugger/reference/idebugmemorycontext2.md)付けられているメモリを表すオブジェクトを返します。
+入出力このプロパティに関連付けられているメモリを表す [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 取得`S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`するメモリ コンテキストがない場合に返します。
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`取得するメモリコンテキストが存在しない場合は、を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

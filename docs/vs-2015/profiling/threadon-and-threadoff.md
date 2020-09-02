@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145556"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn と ThreadOff
@@ -31,7 +31,7 @@ VSPerfCmd.exe の **ThreadOff** および **ThreadOn** サブコマンドは、�
   
 - **ThreadOn** は、スレッドの開始/停止数を直ちに 1 に設定して、プロファイリングを再開します。  
   
-  詳細については、[「プロファイリング ツールの API」](../profiling/profiling-tools-apis.md) を参照してください。  
+  詳細については、「 [プロファイルツール api](../profiling/profiling-tools-apis.md)」を参照してください。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,13 +47,13 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>有効なオプション  
  **ThreadOn** と **ThreadOff** は、次のサブコマンドも含むコマンド ラインで指定できます。  
   
- **Start:** `Method`  
+ **開始:**`Method`  
  コマンド ライン プロファイル セッションを初期化し、指定されたプロファイル方法を設定します。  
   
  **GlobalOff**&#124;**GlobalOn**  
  コマンド ライン プロファイル セッションのすべてのプロセスのプロファイリングを停止または開始します。  
   
- {**ProcessOff**&#124;**ProcessOn**} **:** `TID`  
+ {**ProcessOff**&#124;**processon**}**:**`TID`  
  指定されたプロセスのプロファイリングを停止または開始します。  
   
 ## <a name="example"></a>例  
@@ -71,8 +71,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)
