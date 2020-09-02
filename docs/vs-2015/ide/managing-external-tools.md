@@ -1,4 +1,4 @@
-﻿---
+---
 title: 外部ツールの管理 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651350"
 ---
 # <a name="managing-external-tools"></a>Visual Studio の外部ツール
@@ -88,7 +88,7 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 > 表示される外部ツールの一覧は、インストールされている Visual Studio のエディションおよび適用されている設定プロファイルによって異なります。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="adding-new-tools"></a>新しいツールの追加
- **[ツール]** メニューに外部ツールを追加することができます。 **[外部ツール]** ダイアログ ボックスを開き、 **[追加]** をクリックして、情報を入力します。 たとえば、次のエントリを指定すると、Visual Studio で現在開いているファイルのディレクトリでエクスプローラーが開きます。
+ **[ツール]** メニューに外部ツールを追加することができます。 [ **外部ツール** ] ダイアログボックスを開き、[ **追加**] をクリックして、情報を入力します。 たとえば、次のエントリを指定すると、Visual Studio で現在開いているファイルのディレクトリでエクスプローラーが開きます。
 
 1. タイトル: 開いているファイルの場所
 
@@ -102,7 +102,7 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 > [!NOTE]
 > IDE のステータス バーに、アクティブなコード エディターの挿入位置を示す、Current Line 変数および Current Column 変数が表示されます。 Current Text 変数は、その場所で選択されているテキストまたはコードを返します。
 
-|名|引数|説明|
+|名前|引数|説明|
 |----------|--------------|-----------------|
 |項目のパス|$(ItemPath)|現在のファイルの完全なファイル名 (ドライブ + パス + ファイル名)。|
 |項目のディレクトリ|$(ItemDir)|現在のファイルのディレクトリ (ドライブ + パス)。|
@@ -115,11 +115,11 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 |ターゲット ディレクトリ|$(TargetDir)|作成するアイテムのディレクトリ。|
 |ターゲット名|$(TargetName)|作成するアイテムのファイル名。|
 |ターゲットの拡張子|$(TargetExt)|作成するアイテムのファイル名拡張子。|
-|バイナリ ディレクトリ|$(BinDir)|作成中のバイナリの最終的な場所 (ドライブ + パスとして定義されます)。 例: **\\...\My Documents\Visual Studio \<Version>\\<ProjectName\>\bin\debug**|
+|バイナリ ディレクトリ|$(BinDir)|作成中のバイナリの最終的な場所 (ドライブ + パスとして定義されます)。 例:** \\ . ..\My Documents\Visual Studio \<Version> \\<ProjectName \> \bin\debug**|
 |プロジェクト ディレクトリ|$(ProjDir)|現在のプロジェクトのディレクトリ (ドライブ + パス)。|
 |プロジェクト ファイル名|$(ProjFileName)|現在のプロジェクトのファイル名 (ドライブ + パス + ファイル名)。|
 |ソリューション ディレクトリ|$(SolutionDir)|現在のソリューションのディレクトリ (ドライブ + パス)。|
 |ソリューション ファイル名|$(SolutionFileName)|現在のソリューションのファイル名 (ドライブ + パス + ファイル名)。|
 
 ## <a name="see-also"></a>参照
- [C/C++ のビルド ツール](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/c + + ビルドツール](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

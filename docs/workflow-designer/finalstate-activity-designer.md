@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875593"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState アクティビティ デザイナー
@@ -27,13 +27,13 @@ ms.locfileid: "86875593"
 
 次の表に、<xref:System.Activities.Core.Presentation.FinalState> デザイナーを使用して設定できるプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティの中には、プロパティ グリッドで編集できるものがあります。また、その一部はデザイナー画面で編集できます。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|誤り|ヘッダーの <xref:System.Activities.Statements.State> アクティビティ デザイナーの表示名を指定します。 既定値は**State**です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。 <xref:System.Activities.Statements.State.DisplayName%2A> は、ワークフロー デザイナーの上部に表示される階層リンク バーで使用されます。<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.State.Entry%2A>|誤り|この状態の遷移時に発生するアクションを指定します。 この値を設定するには、**ツールボックス**からアクティビティをドラッグし、 <xref:System.Activities.Statements.State.Entry%2A> 状態のセクションにドロップします。|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|×|ヘッダーの <xref:System.Activities.Statements.State> アクティビティ デザイナーの表示名を指定します。 既定値は **State**です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。 <xref:System.Activities.Statements.State.DisplayName%2A> は、ワークフロー デザイナーの上部に表示される階層リンク バーで使用されます。<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.State.Entry%2A>|×|この状態の遷移時に発生するアクションを指定します。 この値を設定するには、 **ツールボックス** からアクティビティをドラッグし、 <xref:System.Activities.Statements.State.Entry%2A> 状態のセクションにドロップします。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
-- [状態](../workflow-designer/state-activity-designer.md)
+- [State](../workflow-designer/state-activity-designer.md)
 - [移行](../workflow-designer/transition-activity-designer.md)

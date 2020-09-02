@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb8074317e52b43806a61d6486c53d7409333e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153401"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 ブレークポイント要求のブレークポイントの場所の種類を指定します。  
@@ -72,62 +72,62 @@ public enum enum_BP_LOCATION_TYPE { 
  ブレークポイントの位置を指定しません。  
   
  BPLT_FILE_LINE  
- ファイルの行として、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をファイル行として指定します。  
   
  BPLT_FUNC_OFFSET  
- 関数のオフセットとして、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類を関数オフセットとして指定します。  
   
  BPLT_CONTEXT  
- コンテキストとしては、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をコンテキストとして指定します。  
   
  BPLT_STRING  
  ブレークポイントの場所の種類を文字列として指定します。  
   
  BPLT_ADDRESS  
- アドレス ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をアドレスとして指定します。  
   
  BPLT_RESOLUTION  
- 解決方法としては、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類を解決として指定します。  
   
  BPLT_CODE_FILE_LINE  
- ソース コードの行として、ブレークポイントの場所の種類を指定します。  
+ ソースコードの行として、ブレークポイントの場所の種類を指定します。  
   
  BPLT_CODE_FUNC_OFFSET  
- コードの関数のオフセットとして、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をコード関数オフセットとして指定します。  
   
  BPLT_CODE_CONTEXT  
- コードのコンテキストとしては、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をコードコンテキストとして指定します。  
   
  BPLT_CODE_STRING  
- コード文字列としては、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をコード文字列として指定します。  
   
  BPLT_CODE_ADDRESS  
- コードのアドレスとして、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をコードアドレスとして指定します。  
   
  BPLT_DATA_STRING  
- データの文字列としては、ブレークポイントの場所の種類を指定します。  
+ ブレークポイントの場所の種類をデータ文字列として指定します。  
   
  BPLT_TYPE_MASK  
- ブレークポイントの種類は、値から抽出できるように、ビット マスクを指定します。  
+ 値からブレークポイントの種類を抽出できるように、ビットマスクを指定します。  
   
  BPLT_LOCATION_TYPE_MASK  
- ブレークポイントの場所の種類は、値から抽出できるように、ビット マスクを指定します。  
+ ブレークポイントの位置の種類を値から抽出できるように、ビットマスクを指定します。  
   
-## <a name="remarks"></a>Remarks  
- パラメーターとして渡される、 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)メソッドにパラメーターとして渡されます。  
   
- ブレークポイントの場所の種類は、ブレークポイントの種類と場所の種類で構成されます。 つまり、ブレークポイントの場所の種類は、ブレークポイントの種類だけではありません (たとえば、 `BPT_CODE`) または場所の種類 (たとえば、 `BPLT_FILE_LINE`)。 現在サポートされているすべてのブレークポイントの場所の種類の定義済み定数は、この列挙体に含まれる (`BPLT_CODE_FILE_LINE`を通じて`BPLT_DATA_STRING`)。  
+ ブレークポイントの位置の種類は、ブレークポイントの種類と場所の種類で構成されます。 つまり、ブレークポイントの場所の種類は、ブレークポイントの種類 (など `BPT_CODE` ) または場所の種類 (たとえば、) にすぎません `BPLT_FILE_LINE` 。 現在サポートされているすべてのブレークポイントの場所の型の定義済み定数は、この列挙に含まれてい `BPLT_CODE_FILE_LINE` ます (から `BPLT_DATA_STRING` )。  
   
- `BPT_CODE` `BPT_DATA`のメンバーである、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列挙体。  
+ `BPT_CODE` および `BPT_DATA` は [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列挙型のメンバーです。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
