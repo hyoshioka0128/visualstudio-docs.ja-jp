@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドのローカライズ |Microsoft Docs
+title: メニューコマンドのローカライズ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -16,39 +16,39 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c879072b55729e249b1aecd665d6f470f4138a75
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686134"
 ---
 # <a name="localizing-menu-commands"></a>メニュー コマンドのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-メニューのローカライズされたテキストを行うことができ、ツールバーのコマンドのローカライズされた .vsct ファイルを作成して、変更を反映する、VSPackage とし、プロジェクト ファイルの更新のローカライズされた .resx ファイル。  
+ローカライズされた vsct ファイルと VSPackage のローカライズされた .resx ファイルを作成し、プロジェクトファイルを更新して変更内容を反映することで、メニューとツールバーのコマンドにローカライズされたテキストを提供できます。  
   
- インストール エクスペリエンスをローカライズする方法については、次を参照してください。 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)します。  
+ インストールエクスペリエンスをローカライズする方法の詳細については、「 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)」を参照してください。  
   
 ## <a name="localizing-command-names"></a>コマンド名のローカライズ  
- Vspackage では、メニュー コマンドやツールバーのボタンは、.vsct ファイルで定義されます。  
+ Vspackage では、メニューコマンドとツールバーボタンは、vsct ファイルで定義されています。  
   
-1. **ソリューション エクスプ ローラー**から .vsct ファイルの名前を変更*filename*に .vsct *filename*.en US.vsct します。  
+1. **ソリューションエクスプローラー**で、vsct ファイルの名前を*filename*. vsct から*filename*. en-us. vsct に変更します。  
   
-2. コピーを作成*filename*.en-US.vsct 各ローカライズ言語。  
+2. ローカライズされた言語ごとに、 *ファイル名*. en-us. vsct のコピーを作成します。  
   
-    各コピーを名前*filename*.*ロケール*.vsct、場所*ロケール*は特定のカルチャの名前です。 カルチャ名の値の一覧は、次を参照してください。 [Microsoft によるロケール Id 割り当て](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx)します。  
+    各コピー *ファイル*名に名前を指定します。*Locale*. vsct。ここで、 *locale* は特定のカルチャ名です。 カルチャ名の値の一覧については、「 [Microsoft によって割り当てられたロケール id](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx)」を参照してください。  
   
-    これら*filename*.*ロケール*.vsct ファイル、パッケージのローカライズされたメニュー テキストが含まれます。  
+    これらの *ファイル名*。*ロケール*の vsct ファイルには、パッケージのローカライズされたメニューテキストが含まれます。  
   
-3. 各を開きます*filename*。 *。ロケール*.vsct ファイルをテキストをローカライズします。  
+3. 各 *ファイル名*を開きます。テキストをローカライズするための*ロケール*の vsct ファイル。  
   
-   1. 変更、 [ButtonText](../extensibility/buttontext-element.md)要素が特定の言語のとして適切な値します。  
+   1. [Buttontext](../extensibility/buttontext-element.md)要素の値を、特定の言語に合わせて変更します。  
   
-   2. ローカライズされたアイコンを提供する場合は、変更、[ビットマップ](../extensibility/bitmap-element.md)ターゲット ファイルを指定する値。  
+   2. ローカライズされたアイコンを指定する場合は、ターゲットファイルを指すように [ビットマップ](../extensibility/bitmap-element.md) 値を変更します。  
   
-      次の例では、コマンドのファミリ ツリー エクスプ ローラー ツール ウィンドウを開きを英語とスペイン語のボタンのテキストを示します。  
+      次の例では、ファミリツリーエクスプローラーのツールウィンドウを開くコマンドの英語とスペイン語のボタンテキストを示しています。  
   
-      [FamilyTree.en US.vsct]  
+      [FamilyTree。 vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -61,7 +61,7 @@ ms.locfileid: "65686134"
    </Button>  
    ```  
   
-    [FamilyTree.es-ES.vsct]  
+    [FamilyTree.es。 vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -75,24 +75,24 @@ ms.locfileid: "65686134"
   
    ```  
   
-## <a name="localizing-other-text-resources"></a>その他のテキストのリソースをローカライズします。  
- コマンド名以外の文字列リソースは、リソース (.resx) ファイルで定義されます。  
+## <a name="localizing-other-text-resources"></a>他のテキストリソースのローカライズ  
+ コマンド名以外のテキストリソースは、リソース (.resx) ファイルで定義されています。  
   
-1. VSPackage.en US.resx VSPackage.resx に変更します。  
+1. VSPackage の名前を VSPackage に変更します。  
   
-2. ローカライズされた言語ごとに VSPackage.en US.resx ファイルのコピーを作成します。  
+2. ローカライズされた各言語の VSPackage ファイルのコピーを作成します。  
   
-     各コピーの VSPackage の名前を付けます。*ロケール*、.resx、*ロケール*は特定のカルチャの名前です。  
+     各コピー VSPackage に名前を指定します。*Locale*.resx。ここで、 *locale* は特定のカルチャ名です。  
   
-3. 各カルチャ用 US.resx Resources.resx に変更します。  
+3. リソースの名前を .Resources. en-us. .resx に変更します。  
   
-4. ローカライズされた言語ごとに各カルチャ用 US.resx ファイルのコピーを作成します。  
+4. 各ローカライズされた言語のリソースのコピーを作成します。  
   
-     各コピー リソースの名前を付けます。*ロケール*、.resx、*ロケール*は特定のカルチャの名前です。  
+     各コピーリソースに名前を指定します。*Locale*.resx。ここで、 *locale* は特定のカルチャ名です。  
   
-5. 特定の言語とカルチャに適した文字列値を変更するには、各 .resx ファイルを開きます。 次の例では、ツール ウィンドウのタイトル バーのローカライズされたリソースの定義を示します。  
+5. 各 .resx ファイルを開き、特定の言語とカルチャに合わせて文字列値を変更します。 次の例は、ツールウィンドウのタイトルバーのローカライズされたリソース定義を示しています。  
   
-     [各カルチャ用 US.resx]  
+     [Resources. en-us. .resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -100,7 +100,7 @@ ms.locfileid: "65686134"
     </data>  
     ```  
   
-     [Resources.es ES.resx]  
+     [Resources.es]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -110,9 +110,9 @@ ms.locfileid: "65686134"
     ```  
   
 ## <a name="incorporating-localized-resources-into-the-project"></a>ローカライズされたリソースをプロジェクトに組み込む  
- Assemblyinfo.cs ファイルとローカライズされたリソースを組み込むプロジェクト ファイルを変更する必要があります。  
+ ローカライズされたリソースを組み込むには、assemblyinfo.cs ファイルとプロジェクトファイルを変更する必要があります。  
   
-1. **プロパティ**ノード**ソリューション エクスプ ローラー**、assemblyinfo.cs または assemblyinfo.vb をエディターで開きます。  
+1. **ソリューションエクスプローラー**の [**プロパティ**] ノードで、エディターの assemblyinfo.cs または assemblyinfo を開きます。  
   
 2. 次のエントリを追加します。  
   
@@ -120,15 +120,15 @@ ms.locfileid: "65686134"
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
     ```  
   
-     これは既定の言語として英語 (米国) 設定します。  
+     これにより、既定の言語として英語 (米国) が設定されます。  
   
 3. プロジェクトをアンロードします。  
   
-4. エディターでプロジェクト ファイルを開きます。  
+4. エディターでプロジェクトファイルを開きます。  
   
-5. 検索、`ItemGroup`要素を含む`EmbeddedResource`要素。  
+5. 要素を `ItemGroup` 含む要素を探し `EmbeddedResource` ます。  
   
-6. `EmbeddedResource`を呼び出す VSPackage.en US.resx、要素を交換して、`ManifestResourceName`を持つ要素を`LogicalName`に設定されている要素`VSPackage.en-US.Resources`、次のようにします。  
+6. VSPackage を呼び出す要素で、要素を `EmbeddedResource` 要素に置き換え、次のよう `ManifestResourceName` `LogicalName` にをに設定し `VSPackage.en-US.Resources` ます。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -137,9 +137,9 @@ ms.locfileid: "65686134"
     </EmbeddedResource>  
     ```  
   
-7. ローカライズされた言語ごとに、コピー、 `EmbeddedResource` VsPackage.en 米国、およびセットの要素、 **Include**属性と**LogicalName**コピーでは、次に示すように、対象のロケールの要素例です。  
+7. 次の例に示すように、ローカライズされた言語ごとに、  `EmbeddedResource` VsPackage の要素をコピーし、コピーの **Include** 属性と **logicalname** 要素をターゲットのロケールに設定します。  
   
-8. ローカライズされた各`VSCTCompile`要素を追加、`ResourceName`要素を指す`Menus.ctmenu`次の例のようにします。  
+8. `VSCTCompile` `ResourceName` 次の `Menus.ctmenu` 例に示すように、ローカライズされた各要素に、を指す要素を追加します。  
   
     ```xml  
     <ItemGroup>  
@@ -149,13 +149,13 @@ ms.locfileid: "65686134"
     </ItemGroup>  
     ```  
   
-9. プロジェクト ファイルを保存し、プロジェクトの再読み込みします。  
+9. プロジェクトファイルを保存し、プロジェクトを再度読み込みます。  
   
 10. プロジェクトをビルドします。  
   
-     これは、メイン アセンブリでは、および各言語のリソース アセンブリを作成します。 展開プロセスをローカライズする方法の詳細については、次を参照してください[VSIX パッケージのローカライズ。](../extensibility/localizing-vsix-packages.md)  
+     これにより、各言語のメインアセンブリとリソースアセンブリが作成されます。 配置プロセスのローカライズの詳細については、「 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [拡張メニューとコマンド](../extensibility/extending-menus-and-commands.md)   
- [MenuCommand と OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
+## <a name="see-also"></a>参照  
+ [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)   
+ [MenuCommands と OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [グローバライズとローカライズ](https://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
