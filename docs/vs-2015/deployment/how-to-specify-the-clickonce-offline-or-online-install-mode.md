@@ -1,5 +1,5 @@
 ---
-title: '方法: 指定の ClickOnce のオフラインまたはオンライン モードのインストール |Microsoft Docs'
+title: '方法: ClickOnce のオフラインまたはオンラインのインストールモードを指定する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,40 +20,40 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d4111ca5aee4a405a4a797dbfee14a3d4b50435f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149754"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>方法: ClickOnce のオフラインまたはオンラインのインストール モードを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Install Mode`の[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションがオフラインまたはオンライン、アプリケーションが利用できるかどうかを判断します。 選択すると**アプリケーションはオンラインでのみ使用可能な**に、ユーザーがアクセスする必要があります、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]発行場所 (Web ページまたはファイル共有のいずれか)、アプリケーションを実行するためにします。 選択すると**アプリケーションはオフラインでも利用可能な**、アプリケーションへのエントリを追加します、**開始**メニューと**プログラム追加と削除** ダイアログ ボックスは、ユーザーは、接続されていないときに、アプリケーションを実行することができます。  
+アプリケーションのは、 `Install Mode` [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションがオフラインでもオンラインでも利用できるかどうかを決定します。 [アプリケーションを **オンラインでのみ利用可能**にする] を選択した場合、ユーザーは [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを実行するために、発行場所 (Web ページまたはファイル共有) にアクセスできる必要があります。 [アプリケーションを **オフラインでも使用できる**] を選択すると、アプリケーションによって [ **スタート** ] メニューと [ **プログラムの追加と削除** ] ダイアログボックスにエントリが追加されます。ユーザーは、接続されていないときにアプリケーションを実行できます。  
   
- `Install Mode`に設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
+ は、 `Install Mode` **プロジェクトデザイナー**の [**発行**] ページで設定できます。  
   
- **注**、`Install Mode`発行ウィザードを使用して設定できます。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。  
+ **メモ** は、 `Install Mode` 発行ウィザードを使用して設定することもできます。 詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。  
   
-### <a name="to-make-a-clickonce-application-available-online-only"></a>ClickOnce アプリケーションを使用できるようにするオンラインのみ  
+### <a name="to-make-a-clickonce-application-available-online-only"></a>ClickOnce アプリケーションをオンラインでのみ使用できるようにするには  
   
-1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2. **発行**タブをクリックします。  
+2. **[公開]** タブをクリックします。  
   
-3. **モードのインストールと設定**領域で、をクリックして、**アプリケーションはオンラインでのみ使用可能な**オプション ボタンをクリックします。  
+3. [ **インストールモードと設定** ] 領域で、[ **アプリケーションはオンラインのみで利用可能** ] オプションボタンをクリックします。  
   
-### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>オンラインまたはオフラインのために、ClickOnce アプリケーションを使用できるようにするには  
+### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>ClickOnce アプリケーションをオンラインまたはオフラインで使用できるようにするには  
   
-1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。  
   
-2. **発行**タブをクリックします。  
+2. **[公開]** タブをクリックします。  
   
-3. **モードのインストールと設定**領域で、をクリックして、**アプリケーションはオフラインでも利用可能な**オプション ボタンをクリックします。  
+3. [ **インストールモードと設定** ] 領域で、[ **アプリケーションはオフラインでも利用でき** ます] オプションボタンをクリックします。  
   
-     アプリケーションにエントリを追加インストールすると、**開始**メニューと**プログラム追加と削除**コントロール パネルの します。  
+     アプリケーションをインストールすると、[ **スタート** ] メニューと [コントロールパネル] の [ **プログラムの追加と削除** ] にエントリが追加されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行します。](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)

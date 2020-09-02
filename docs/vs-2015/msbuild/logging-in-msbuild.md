@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162327"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild でのログ
@@ -24,21 +24,21 @@ ms.locfileid: "68162327"
 ログを使用すると、ビルドの進行状況を監視できます。 ログは、ログ ファイルにイベント、メッセージ、警告、エラーをキャプチャします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)  
+ [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] でのログのさまざまな面を説明します。  
   
- [ビルド ロガー](../msbuild/build-loggers.md)  
+ [ビルドロガー](../msbuild/build-loggers.md)  
  シングル プロセッサ ロガーの作成に必要な手順について説明します。  
   
- [マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)  
+ [マルチプロセッサ環境でのログ記録](../msbuild/logging-in-a-multi-processor-environment.md)  
  マルチプロセッサ環境でのログの仕組みと、マルチプロセッサ ログの 2 つのモデルについて説明します。  
   
- [マルチプロセッサ対応のロガーの記述](../msbuild/writing-multi-processor-aware-loggers.md)  
+ [マルチプロセッサ対応の Logger の記述](../msbuild/writing-multi-processor-aware-loggers.md)  
  マルチプロセッサ対応のロガーの作成方法および ConfigurableForwardingLogger の使用方法について説明します。  
   
- [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)  
+ [転送 Logger の作成](../msbuild/creating-forwarding-loggers.md)  
  カスタム転送ロガーを作成する方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [MSBuild での複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+ [複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  複数のプロジェクトを並列に実行して、これらのプロジェクトをより速くビルドする方法について説明します。

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282125"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>方法: テーブルとビューにマップされた LINQ to SQL クラスを作成する (O/R デザイナー)
@@ -24,9 +24,9 @@ ms.locfileid: "85282125"
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>データベース テーブルまたはビューにマップされる LINQ to SQL クラスの作成
 
-テーブルまたはビューを**サーバーエクスプローラー**または**データベースエクスプローラー**から**O/R デザイナー**にドラッグすると、 <xref:System.Data.Linq.DataContext> 更新の実行に使用されるメソッドに加えて、エンティティクラスが作成されます。
+テーブルまたはビューを **サーバーエクスプローラー** または **データベースエクスプローラー** から **O/R デザイナー** にドラッグすると、 <xref:System.Data.Linq.DataContext> 更新の実行に使用されるメソッドに加えて、エンティティクラスが作成されます。
 
-既定では、[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ランタイムによって、更新可能なエンティティ クラスの変更をデータベースに保存するロジックが作成されます。 このロジックは、テーブルのスキーマ (列定義と主キー情報) に基づいています。 この動作が不要な場合は、既定の実行時の動作を使用する代わりに、ストアドプロシージャを使用して挿入、更新、および削除を実行するようにエンティティクラスを構成でき [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ます。 詳細については、「[方法: 更新、挿入、および削除を実行するストアドプロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)」を参照してください。
+既定では、[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ランタイムによって、更新可能なエンティティ クラスの変更をデータベースに保存するロジックが作成されます。 このロジックは、テーブルのスキーマ (列定義と主キー情報) に基づいています。 この動作が不要な場合は、既定の実行時の動作を使用する代わりに、ストアドプロシージャを使用して挿入、更新、および削除を実行するようにエンティティクラスを構成でき [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ます。 詳細については、「 [方法: 更新、挿入、および削除を実行するストアドプロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)」を参照してください。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "85282125"
 
 1. **サーバー エクスプローラー**または**データベース エクスプローラー**で、**[テーブル]** または **[ビュー]** を展開し、アプリケーションで使用するデータベース テーブルまたはビューを探します。
 
-2. テーブルまたはビューを**O/R デザイナー**にドラッグします。
+2. テーブルまたはビューを **O/R デザイナー**にドラッグします。
 
      エンティティ クラスが作成され、デザイン サーフェイスに表示されます。 このエンティティ クラスには、選択されたテーブルまたはビューの列にマップされるプロパティが含まれています。
 
@@ -46,7 +46,7 @@ ms.locfileid: "85282125"
 
 1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックしてプロジェクトをビルドします。
 
-2. [データ**ソース**] ウィンドウを開くには、[**データ**] メニューの [**データソースの表示**] をクリックします。
+2. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
 3. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。
 

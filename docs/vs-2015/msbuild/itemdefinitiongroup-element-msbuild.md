@@ -1,4 +1,4 @@
-﻿---
+---
 title: ItemDefinitionGroup 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5aea9c7c7868dfdd9726b86bb344456ebe707d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162449"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`ItemDefinitionGroup` 要素を使うと、一連の項目定義を定義できます。これは、プロジェクト内のすべての項目に既定で適用されるメタデータ値です。 ItemDefinitionGroup は、[CreateItem タスク](../msbuild/createitem-task.md)および [CreateProperty タスク](../msbuild/createproperty-task.md)を使う必要性より優先されます。 詳細については、「[項目定義](../msbuild/item-definitions.md)」を参照してください。  
+`ItemDefinitionGroup` 要素を使うと、一連の項目定義を定義できます。これは、プロジェクト内のすべての項目に既定で適用されるメタデータ値です。 ItemDefinitionGroup は、 [CreateItem タスク](../msbuild/createitem-task.md) と [CreateProperty タスク](../msbuild/createproperty-task.md)を使用する必要があることよりも優先されます。 詳細については、「[項目定義](../msbuild/item-definitions.md)」を参照してください。  
   
  \<Project>  
  \<ItemDefinitionGroup>  
@@ -85,6 +85,6 @@ ms.locfileid: "68162449"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
+## <a name="see-also"></a>参照  
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
  [項目](../msbuild/msbuild-items.md)

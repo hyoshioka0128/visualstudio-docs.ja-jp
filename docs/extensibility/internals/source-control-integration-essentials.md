@@ -50,7 +50,7 @@ ms.locfileid: "80705233"
 
    詳細については、「 [ソース管理の作成 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [概要](../../extensibility/internals/source-control-integration-overview.md)
 - [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [ソース管理 VSPackage の作成](../../extensibility/internals/creating-a-source-control-vspackage.md)

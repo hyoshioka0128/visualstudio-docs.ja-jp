@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df93a87285bdf1172e75b63ed956c1aa978fc71e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545536"
 ---
 # <a name="channels-threads-view"></a>チャネル (スレッド ビュー)
@@ -50,5 +50,5 @@ ms.locfileid: "85545536"
 ## <a name="gpu-channels"></a>GPU チャネル  
  GPU チャネルは、システム上の DirectX 11 の活動に関する情報を表示します。  グラフィックス カードに関連付けられている各 DirectX エンジンに個別のチャネルがあります。  個々のセグメントは、DMA パケットの処理に費やした時間を表します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [スレッドビュー](../profiling/threads-view-parallel-performance.md)
