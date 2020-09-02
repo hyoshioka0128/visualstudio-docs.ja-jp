@@ -1,5 +1,5 @@
 ---
-title: 相互運用機能アセンブリ コマンド ハンドラーの登録 |Microsoft Docs
+title: 相互運用機能アセンブリの登録コマンドハンドラー |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705813"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) は、そのコマンドを正しくルーティングされるようにします。  
+VSPackage は、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 統合開発環境 (IDE) によってコマンドが適切にルーティングされるように、に登録する必要があります。  
   
- 手動で編集するか、Registrar (.rgs) ファイルを使用して、レジストリを更新できます。 詳細については、「 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
+ レジストリを更新するには、手動で編集するか、レジストラー (.rgs) ファイルを使用します。 詳細については、「 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
   
- 管理パッケージ フレームワーク (MPF) は、この機能によって、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>クラス。  
+ マネージパッケージフレームワーク (MPF) は、クラスを通じてこの機能を提供し <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> ます。  
   
- [コマンドの表形式のリファレンス](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)アンマネージ サテライト dll の UI ではリソースがあります。  
+ [コマンドテーブル形式の参照](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) リソースは、アンマネージサテライト UI dll にあります。  
   
-## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンド ハンドラーの登録  
- ユーザー インターフェイス (UI) のハンドラーとして機能する VSPackage-ベースのコマンドは、VSPackage にちなんだ名前のレジストリ エントリを必要と`GUID`します。 このレジストリ エントリには、VSPackage の UI のリソース ファイルとそのファイル内でメニュー リソースの場所を指定します。 Hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ自体も\\ *\<バージョン >* \Menus、場所 *\<バージョン >* バージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]たとえば 9.0、します。  
+## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンドハンドラーの登録  
+ ユーザーインターフェイス (UI) ベースのコマンドのハンドラーとして機能する VSPackage には、VSPackage の後にという名前のレジストリエントリが必要です `GUID` 。 このレジストリエントリは、VSPackage の UI リソースファイルとそのファイル内の menu リソースの場所を指定します。 レジストリエントリ自体は HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \ メニューの下にあり \\ *\<Version>* ます。ここで、 *\<Version>* は9.0 などののバージョンです [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
 > [!NOTE]
-> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\ *\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]シェルが初期化されます。 ルート パスの詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)します。  
+> シェルが初期化されると、HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio のルートパスを \\ *\<Version>* 代替ルートでオーバーライドでき [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 ルートパスの詳細については、「 [Windows インストーラーを使用した Vspackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」を参照してください。  
   
-### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU のリソースのレジストリ エントリ  
- レジストリ エントリの構造です。  
+### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU リソースレジストリエントリ  
+ レジストリエントリの構造は次のとおりです。  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\  
@@ -44,22 +44,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>  
 ```  
   
- \<*GUID*> は、 `GUID` {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX} の形式で、VSPackage の。  
+ \<*GUID*> は、 `GUID` {VSPackage} という形式の、XXXXXXXXX の形式です。  
   
- *\<リソース情報 >* コンマで区切られた 3 つの要素で構成されます。 これらの要素の順序では。  
+ *\<Resource Information>* コンマで区切られた3つの要素で構成されます。 これらの要素の順序は次のとおりです。  
   
- \<*リソース DLL へのパス*>、 \< *] メニューの [リソース ID*>、 \<*メニュー バージョン*>  
+ \<*Path to Resource DLL*>, \<*Menu Resource ID*>, \<*Menu Version*>  
   
- 次の表は、フィールドの\<*リソース情報*>。  
+ 次の表では、のフィールドについて説明し \<*Resource Information*> ます。  
   
 |要素|説明|  
 |-------------|-----------------|  
-|\<*リソース DLL へのパス*>|これは、リソース メニュー リソースを含む DLL への完全パスまたはこれが空白のまま、VSPackage のリソース DLL が使用することを示す (自体、VSPackage が登録されているパッケージのサブキーで、指定した)。<br /><br /> このフィールドを空白になります。|  
-|\<*メニュー リソース ID*>|これはのリソース ID、`CTMENU`からがコンパイルされると、VSPackage のすべての UI 要素が含まれるリソースを[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)ファイル。|  
-|\<*メニューのバージョン*>|これは、バージョンとして使用する数値、`CTMENU`リソース。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 内容を再マージに必要なかどうかを決定する値を使用して、 `CTMENU` 、キャッシュのすべてを持つリソース`CTMENU`リソース。 再マージは、devenv の setup コマンドを実行することによってトリガーされます。<br /><br /> この値が 1 に設定されで変更のたびにインクリメントされます。 最初にする必要がありますする、`CTMENU`リソース、を再マージが発生する前にします。|  
+|\<*Path to Resource DLL*>|これは、メニューリソースを含むリソース DLL への完全なパスです。これは、VSPackage のリソース DLL が使用されることを示します。これは、VSPackage 自体が登録されている Packages サブキーで指定されています。<br /><br /> 慣例として、このフィールドは空白にしておきます。|  
+|\<*Menu Resource ID*>|これは、 `CTMENU` VSPackage ファイルからコンパイルされた、すべての UI 要素を含むリソースのリソース ID[です。](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|  
+|\<*Menu Version*>|これは、リソースのバージョンとして使用される番号です `CTMENU` 。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、この値を使用して、リソースの内容を `CTMENU` すべてのリソースのキャッシュと再マージする必要があるかどうかを判断し `CTMENU` ます。 Devenv のセットアップコマンドを実行すると、再マージがトリガーされます。<br /><br /> この値は、最初に1に設定し、リソースのすべての変更の後、再 `CTMENU` マージが発生する前にインクリメントする必要があります。|  
   
 ### <a name="example"></a>例  
- リソースのエントリをいくつかの例を次に示します。  
+ いくつかのリソースエントリの例を次に示します。  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  
@@ -68,6 +68,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>参照  
+ [Vspackage のユーザーインターフェイス要素の追加方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [相互運用機能アセンブリを使用するコマンドとメニュー](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

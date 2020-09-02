@@ -27,10 +27,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a553f77e352b16ba1a0709e13e8893cf0f57a43d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704897"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>チュートリアル: Windows フォームのデバッグ
@@ -55,11 +55,11 @@ Windows フォームは、最も一般的なマネージド アプリケーシ�
   
 2. [プロジェクトの種類] ペインで、 **[Visual Basic]** ノード、 **[Visual C#]** ノード、または **[Visual C++]** ノードを開き、次の手順を行います。  
   
-    1. Visual Basic または Visual c# を選択、 **Windows**ノードを選択し、 **Windows フォーム アプリケーション**で、**テンプレート**ウィンドウ。  
+    1. Visual Basic または Visual C# の場合は、[ **windows** ] ノードを選択し、[**テンプレート**] ペインで [ **windows フォームアプリケーション**] を選択します。  
   
-    2. Visual C は、選択、 **CLR**ノードを選択し、 **Windows フォーム アプリケーション**で、**テンプレート**ウィンドウ.  
+    2. Visual C++ には、[ **CLR** ] ノードを選択し、[**テンプレート**] ペインで [ **Windows フォームアプリケーション**] を選択します。  
   
-3. **テンプレート**ペインで、 **Windows アプリケーション**します。  
+3. **[テンプレート]** ウィンドウで **[Windows アプリケーション]** を選択します。  
   
 4. **[プロジェクト名]** ボックスに、一意のプロジェクト名 (Walkthrough_SimpleDebug など) を入力します。  
   
@@ -129,7 +129,7 @@ Windows フォームは、最も一般的なマネージド アプリケーシ�
   
 4. **[デバッグ]** メニューの **[ウィンドウ]** 、 **[ウォッチ]** を順にクリックし、 **[ウォッチ 1]** をクリックします。  
   
-5. **[ウォッチ 1]** ウィンドウで、空白行をクリックします。 **名前**列に「 `textBox1.Text` (かどうかまたは使用する Visual Basic、Visual c#、j#) または`textBox1->Text`(使用する場合 C++)、ENTER キーを押します。  
+5. **[ウォッチ 1]** ウィンドウで、空白行をクリックします。 [ **名前** ] 列に「」 `textBox1.Text` (Visual Basic、Visual C#、または J# を使用している場合) または `textBox1->Text` (C++ を使用している場合) を入力し、enter キーを押します。  
   
      **[ウォッチ 1]** ウィンドウに、引用符で囲まれたこの変数の値が表示されます。  
   
@@ -139,7 +139,7 @@ Windows フォームは、最も一般的なマネージド アプリケーシ�
   
 6. **[デバッグ]** メニューの **[ステップ イン]** をクリックします。  
   
-     TextBox1.Text の変更の値、 **[ウォッチ 1]** ウィンドウ。  
+     **[ウォッチ 1]** ウィンドウの textBox1.Text の値が次の値に変わります。  
   
     ```  
     Button was clicked!  
@@ -175,22 +175,22 @@ Windows フォームは、最も一般的なマネージド アプリケーシ�
     textBox1->Text = "Button was clicked!";  
     ```  
   
-2. **デバッグ**メニューの **デバッグなしで開始**します。  
+2. **[デバッグ]** メニューの **[デバッグなしで開始]** を選択します。  
   
      Windows フォームは、実行可能ファイルをダブルクリックしたときと同様に、Windows で実行を開始します。 デバッガーはアタッチされていません。  
   
-3. **デバッグ**メニューの **プロセスにアタッチ**します。 (このコマンドはできるも、**ツール**メニュー)。  
+3. **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします (このコマンドは、 **[ツール]** メニューで選択することもできます)。  
   
      **[プロセスにアタッチ]** ダイアログ ボックスが表示されます。  
   
-4. **選択可能なプロセス** ウィンドウで、プロセス名 (Walkthrough_SimpleDebug.exe) 検索、**プロセス**列をクリックします。  
+4. **[選択可能なプロセス]** ペインの **[プロセス]** 列で、プロセス名 (Walkthrough_SimpleDebug.exe) を探してクリックします。  
   
-5. をクリックして、**アタッチ**ボタンをクリックします。  
+5. **[アタッチ]** をクリックします。  
   
 6. Windows フォームで、1 つだけあるボタンをクリックします。  
   
      ブレークポイントの位置で、Windows フォームの実行が中断します。  
   
-## <a name="see-also"></a>関連項目  
- [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
+## <a name="see-also"></a>参照  
+ [マネージコードのデバッグ](../debugger/debugging-managed-code.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

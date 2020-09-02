@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875931"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope アクティビティ デザイナー
@@ -27,7 +27,7 @@ ms.locfileid: "86875931"
 
 ### <a name="using-the-transactedreceivescope-activity-designer"></a>TransactedReceiveScope アクティビティ デザイナーの使用
 
-**ツールボックス**の [**メッセージング**] カテゴリの**TransactedReceiveScope**アクティビティデザイナーにアクセスします。 **TransactedReceiveScope**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所のワークフローデザイナー画面にドロップできます。 これ <xref:System.ServiceModel.Activities.TransactedReceiveScope> により、TransactedReceiveScope という既定の**DisplayName**を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **TransactedReceiveScope**アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**ツールボックス**の [**メッセージング**] カテゴリの**TransactedReceiveScope**アクティビティデザイナーにアクセスします。 **TransactedReceiveScope**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所のワークフローデザイナー画面にドロップできます。 これ <xref:System.ServiceModel.Activities.TransactedReceiveScope> により、TransactedReceiveScope という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **TransactedReceiveScope** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 **TransactedReceiveScope**デザイナーには、[**要求**] ボックスと [**本文**] ボックスがあります。 これらは、<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> プロパティを構成するために使用します。このプロパティでは、<xref:System.ServiceModel.Activities.Receive> アクティビティと、他の <xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> を指定する <xref:System.Activities.Activity> プロパティを指定します。 <xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A> によって、トランザクションが作成されます。 その後、トランザクションはこのスコープのアンビエント トランザクションになり、<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A> のスコープ内のあらゆるアクティビティは、このトランザクション内で実行されます。
 
@@ -35,13 +35,13 @@ ms.locfileid: "86875931"
 
 次の表に、<xref:System.ServiceModel.Activities.TransactedReceiveScope> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、 <xref:System.Activities.Activity.DisplayName%2A> プロパティグリッドまたはワークフローデザイナー画面で編集できますが、他のプロパティはデザインサーフェイスで編集する必要があります。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|誤り|<xref:System.ServiceModel.Activities.TransactedReceiveScope> アクティビティの省略可能な表示名。 既定値は、TransactedReceiveScope です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> 名は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|正しい|アクティビティ <xref:System.ServiceModel.Activities.Receive> デザイナー画面の**要求**ブロックにアクティビティをドロップします。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|誤り|を <xref:System.Activities.Activity> アクティビティデザイナー画面の**Body**ブロックにドロップします。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.ServiceModel.Activities.TransactedReceiveScope> アクティビティの省略可能な表示名。 既定値は、TransactedReceiveScope です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> 名は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|○|アクティビティ <xref:System.ServiceModel.Activities.Receive> デザイナー画面の **要求** ブロックにアクティビティをドロップします。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|×|を <xref:System.Activities.Activity> アクティビティデザイナー画面の **Body** ブロックにドロップします。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

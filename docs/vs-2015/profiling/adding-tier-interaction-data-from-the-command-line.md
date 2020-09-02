@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705831"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>コマンド ラインからの階層相互作用データの追加
@@ -30,11 +30,11 @@ ms.locfileid: "65705831"
   
  **Visual Studio のエディション**  
   
- 階層相互作用プロファイル データは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] のみです。  
+ 階層相互作用プロファイル データは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]のみです。  
   
  **リモート コンピューターでの TIP データの収集**  
   
- リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
+ リモートコンピューター上の階層相互作用データを収集するには、 ** \_ \_ ** _\<Platform>_ **\_** _\<Language>_ Visual Studio コンピューターの _% VSInstallDir%_**\ Team ツールパフォーマンス**ツールの [セットアップ] フォルダーから vs profiler **.exe**ファイルをリモートコンピューターにコピーして、インストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
   
  **TIP レポート**  
   
@@ -50,7 +50,7 @@ ms.locfileid: "65705831"
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Windows デスクトップ アプリケーションのプロファイルの例  
   
-1. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、**[すべてのプログラム]**、**[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、**[管理者として実行]** をクリックします。  
+1. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、 **[管理者として実行]** をクリックします。  
   
 2. .NET プロファイル環境変数と TIP を環境変数初期化します。 次のコマンドを入力します。  
   
@@ -92,7 +92,7 @@ ms.locfileid: "65705831"
   
 1. インストールの必要なサービスがあればインストールします。  
   
-2. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、**[すべてのプログラム]**、**[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、**[管理者として実行]** をクリックします。  
+2. 管理者特権を使用して、コマンド プロンプト ウィンドウを開きます。 **[スタート]** ボタンをクリックし、 **[すべてのプログラム]** 、 **[アクセサリ]** の順にポイントします。 **[コマンド プロンプト]** を右クリックしてから、 **[管理者として実行]** をクリックします。  
   
 3. .NET プロファイル環境変数を初期化します。 次のコマンドを入力します。  
   
@@ -142,15 +142,15 @@ ms.locfileid: "65705831"
   
     [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
-    [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)  
+    [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd に階層相互作用データを追加する  
  VSPerfASPNETCmd コマンド ライン ツールを使用すると、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションを簡単にプロファイルできます。 **VSPerfCmd** コマンド ライン ツールと比較すると、オプションが減り、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 VSPerfASPNETCmd のこれらの機能により、階層相互作用データの収集が非常に簡単になります。  
   
- VSPerfASPNETCmd を使用して収集されたデータのプロファイリングに階層相互作用を追加するには、**/TIP** オプションをコマンド ラインに追加します。 たとえば、インストルメンテーション メソッドを使用して [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーション用に階層相互作用データを収集するには、次のコマンド ラインを使用します。  
+ VSPerfASPNETCmd を使用して収集されたデータのプロファイリングに階層相互作用を追加するには、 **/TIP** オプションをコマンド ラインに追加します。 たとえば、インストルメンテーション メソッドを使用して [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーション用に階層相互作用データを収集するには、次のコマンド ラインを使用します。  
   
 ```  
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- VSPerfASPNETCmd の詳細については、「[VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)」を参照してください。
+ VSPerfASPNETCmd の詳細については、「 [VSPerfASPNETCmd を使用した迅速な Web サイトプロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)」を参照してください。

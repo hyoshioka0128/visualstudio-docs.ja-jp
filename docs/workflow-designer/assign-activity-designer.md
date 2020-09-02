@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875944"
 ---
 # <a name="assign-activity-designer"></a>Assign アクティビティ デザイナー
@@ -29,19 +29,19 @@ ms.locfileid: "86875944"
 
 **Assign**アクティビティデザイナーは、[**ツールボックス]** の [**プリミティブ**] カテゴリにあります。このカテゴリにアクセスするには、[**ツール**ボックス] タブをクリックします (または、[**表示**] メニューの [**ツールボックス**] を選択するか、CTRL + ALT + X キーを押します)。
 
-**Assign**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されているワークフローデザイナー画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 **Assign**アクティビティデザイナーを削除する <xref:System.Activities.Statements.Assign> と、assign という既定の**DisplayName**を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Assign**アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**Assign**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されているワークフローデザイナー画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 **Assign**アクティビティデザイナーを削除する <xref:System.Activities.Statements.Assign> と、assign という既定の**DisplayName**を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Assign** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-assign-properties"></a>Assign のプロパティ
 
 次の表に、<xref:System.Activities.Statements.Assign> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティグリッドで編集することができ、一部のプロパティはワークフローデザイナー画面で編集できます。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|誤り|<xref:System.Activities.Statements.Assign> アクティビティの表示名。 既定値は Assign です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.Assign.To%2A>|正しい|<xref:System.Activities.Statements.Assign.Value%2A> を割り当てる変数または引数。 この値は、有効な Visual Basic 識別子である必要があります。 プロパティを設定するには、 **Assign**アクティビティデザイナーまたはプロパティグリッドの [ **To** ] ボックスに Visual Basic 式を入力します。|
-|<xref:System.Activities.Statements.Assign.Value%2A>|正しい|変数に割り当てられる値。 を設定するに <xref:System.Activities.Statements.Assign.Value%2A> は、 **Assign**アクティビティデザイナーまたはプロパティグリッドの [**値**] ボックスに Visual Basic 式を入力します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.Assign> アクティビティの表示名。 既定値は Assign です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.Assign.To%2A>|○|<xref:System.Activities.Statements.Assign.Value%2A> を割り当てる変数または引数。 この値は、有効な Visual Basic 識別子である必要があります。 プロパティを設定するには、 **Assign**アクティビティデザイナーまたはプロパティグリッドの [ **To** ] ボックスに Visual Basic 式を入力します。|
+|<xref:System.Activities.Statements.Assign.Value%2A>|○|変数に割り当てられる値。 を設定するに <xref:System.Activities.Statements.Assign.Value%2A> は、 **Assign**アクティビティデザイナーまたはプロパティグリッドの [**値**] ボックスに Visual Basic 式を入力します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 - [[遅延]](../workflow-designer/delay-activity-designer.md)
