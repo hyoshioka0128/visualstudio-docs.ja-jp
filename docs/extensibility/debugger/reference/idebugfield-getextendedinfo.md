@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugField:: GetExtendedInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728869"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>パラメーター
 `guidExtendedInfo`\
-[in]返される情報を選択します。 有効な値は次のとおりです。
+から返される情報を選択します。 有効な値は次のとおりです。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |`guidConstantValue`|バイトシーケンスとしての値。|
-|`guidConstantType`|型シグネチャとしての型。|
+|`guidConstantType`|型のシグネチャとしての型。|
 
 `prgBuffer`\
-[アウト]拡張情報を返します。
+入出力拡張された情報を返します。
 
 `pdwLen`\
-[イン、アウト]拡張情報のサイズをバイト単位で返します。
+[入力、出力]拡張情報のサイズをバイト単位で返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 現在、このメソッドは定数の型または値のみを返します。 呼び出し元は、COM`prgBuffer`の`CoTaskMemFree`関数 (C++) または<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(C#) を呼び出すことによって、返されたバッファーを解放する必要があります。
+## <a name="remarks"></a>解説
+ 現在、このメソッドは定数の型または値のみを返します。 呼び出し元は、 `prgBuffer` COM の `CoTaskMemFree` 関数 (C++) または (C#) を呼び出すことによって、で返されたバッファーを解放する必要があり <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

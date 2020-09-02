@@ -1,5 +1,5 @@
 ---
-title: Iプロパティプロキシーサイド |マイクロソフトドキュメント
+title: IPropertyProxyEESide |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714856"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
@@ -28,33 +28,33 @@ ms.locfileid: "80714856"
 IPropertyProxyEESide : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- 式エバリュエーターは、型のビジュアライザーをサポートするためにこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ 式エバリュエーターは、型ビジュアライザーをサポートするためにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- このインターフェイスを取得するには[、GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)を呼び出します。 インターフェイスを取得するには、[インターフェイス](../../../extensibility/debugger/reference/idebugproperty3.md)[を呼び](/cpp/atl/queryinterface)出[します](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ このインターフェイスを取得するには、 [Getpropertyproxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) を呼び出します。 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出して、 [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)インターフェイスを取得します。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
- このインターフェイスでは、次のメソッドが実装されています。
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
+ このインターフェイスには、次のメソッドが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|オブジェクトのデータにアクセスできるように、データ ソース プロバイダーを初期化します。|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|オブジェクトのデータにアクセスできるように、データソースプロバイダーを初期化します。|
 |[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|オブジェクトのアセンブリに関する情報を取得します。|
 |[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|オブジェクトの初期データを取得します。|
-|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|既存のデータ ストレージのコピーを作成します。|
-|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|既存のデータ ストレージへの参照を作成します。|
-|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|このオブジェクトを含むアセンブリのコンテキスト内の特定のアセンブリに関する情報を取得します。|
+|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|既存のデータストレージのコピーを作成します。|
+|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|既存のデータストレージへの参照を作成します。|
+|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|このオブジェクトを含むアセンブリのコンテキストで、特定のアセンブリに関する情報を取得します。|
 
-## <a name="remarks"></a>Remarks
- 型ビジュアライザーは、このインターフェイスを使用して、このインターフェイスが属するオブジェクトに関連付けられた値にアクセスします。 データは、データの読み取り専用ビューを提供する[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)インターフェイスを介してアクセスされます。
+## <a name="remarks"></a>注釈
+ 型ビジュアライザーは、このインターフェイスを使用して、このインターフェイスが含まれているオブジェクトに関連付けられている値にアクセスします。 データは、 [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) インターフェイスを介してアクセスされます。このインターフェイスは、データの読み取り専用ビューを提供します。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

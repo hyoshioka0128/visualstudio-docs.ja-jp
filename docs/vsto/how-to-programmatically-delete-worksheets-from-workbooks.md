@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38aa92ae1c320ae9eb5ad4bdb1e43b761048661f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547135"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>方法: プログラムによってブックからワークシートを削除する
@@ -36,7 +36,7 @@ ms.locfileid: "85547135"
 > - Excel 2010 ブック
 > - Excel 2010 テンプレート
 >
->   このタスクを他の種類のプロジェクトで実行する場合は、そのアセンブリへの参照を追加する必要があり**ます。その**後、そのアセンブリのクラスを使用してブックを開き、ワークシートを削除する必要があります。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md)」および「 [Excel 2010 プライマリ相互運用機能アセンブリのリファレンス](office-primary-interop-assemblies.md)」を参照してください。
+>   このタスクを他の種類のプロジェクトで実行する場合は、そのアセンブリへの参照を追加する必要があり **ます。その** 後、そのアセンブリのクラスを使用してブックを開き、ワークシートを削除する必要があります。 詳細については、「 [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md) 」および「 [Excel 2010 プライマリ相互運用機能アセンブリのリファレンス](office-primary-interop-assemblies.md)」を参照してください。
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Worksheet ホスト項目を使用してワークシートを削除するには
 
@@ -52,10 +52,10 @@ ms.locfileid: "85547135"
 
 - 削除するワークシートがドキュメント レベルのカスタマイズで実行時に作成された場合。
 
-  次のコードで**は、シートコレクションの**インデックス番号を使用してシートを参照することにより、ブックからワークシートを削除します。 このコードは、新しいワークシートがプログラミングによって作成されたことを前提としています。
+  次のコードで **は、シートコレクションの** インデックス番号を使用してシートを参照することにより、ブックからワークシートを削除します。 このコードは、新しいワークシートがプログラミングによって作成されたことを前提としています。
 
 > [!IMPORTANT]
-> このタスクを他の種類のプロジェクトで実行する場合は、そのアセンブリへの参照を追加する必要があり**ます。その**後、そのアセンブリのクラスを使用してブックを開き、ワークシートを削除する必要があります。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md)」および「 [Excel 2010 プライマリ相互運用機能アセンブリのリファレンス](office-primary-interop-assemblies.md)」を参照してください。
+> このタスクを他の種類のプロジェクトで実行する場合は、そのアセンブリへの参照を追加する必要があり **ます。その** 後、そのアセンブリのクラスを使用してブックを開き、ワークシートを削除する必要があります。 詳細については、「 [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md) 」および「 [Excel 2010 プライマリ相互運用機能アセンブリのリファレンス](office-primary-interop-assemblies.md)」を参照してください。
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Excel ブックの Sheets コレクションを使用してワークシートを削除するには
 

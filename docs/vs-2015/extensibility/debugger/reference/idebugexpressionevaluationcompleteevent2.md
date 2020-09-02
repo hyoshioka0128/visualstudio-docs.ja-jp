@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7692a06004a1f9d31a31f91c081c6168d89a8dc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65694389"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、非同期式の評価が完了すると、セッション デバッグ マネージャー (SDM) にデバッグ エンジン (DE) によって送信されます。  
+このインターフェイスは、非同期式の評価が完了したときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -30,33 +30,33 @@ ms.locfileid: "65694389"
 IDebugExpressionEvaluationCompleteEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デへの呼び出しによって開始された式の評価の完了をレポートするには、このインターフェイスを実装する[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ DE は、このインターフェイスを実装して、 [Evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)への呼び出しによって開始された式の評価の完了を報告します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は、 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) を使用してインターフェイスにアクセスし `IDebugEvent2` ます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デは作成し、式の評価の完了を報告するには、このイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって指定されたコールバック関数。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ DE は、このイベントオブジェクトを作成して送信し、式の評価の完了を報告します。 イベントは、デバッグ対象のプログラムにアタッチされたときに SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugExpressionEvaluationCompleteEvent2`します。  
+ 次の表に、のメソッドを示し `IDebugExpressionEvaluationCompleteEvent2` ます。  
   
-|メソッド|説明|  
+|Method|説明|  
 |------------|-----------------|  
 |[GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)|元の式を取得します。|  
 |[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|式の評価の結果を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- 評価の成功または失敗かどうか、デはこのイベントを送信する必要があります。  
+## <a name="remarks"></a>解説  
+ DE は、評価が成功したかどうかにかかわらず、このイベントを送信する必要があります。  
   
- 評価が、失敗した場合、`DEBUG_PROPINFO_VALUE`と`DEBUG_PROPINFO_ATTRIB`フラグを設定できませんが、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)によって返される構造[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトは、DE によって作成されで返される、`IDebugExpressionEvaluationCompleteEvent2`イベント評価に失敗した場合)。  
+ 評価が成功しなかった場合、 `DEBUG_PROPINFO_VALUE` `DEBUG_PROPINFO_ATTRIB` [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)によって返される[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造では、フラグとフラグは設定されません ( [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトは DE によって作成され、評価が失敗した場合はイベントに返され `IDebugExpressionEvaluationCompleteEvent2` ます)。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   

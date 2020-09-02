@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType |Microsoft Docs
+title: 'IDebugBinder:: ResolveRuntimeType |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69b1418c76e01b87bcd6d992a82ce58287e79ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192294"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
@@ -42,18 +42,18 @@ int ResolveRuntimeType(
   
 #### <a name="parameters"></a>パラメーター  
  `pObject`  
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)を解決できます。  
+ から解決する [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 。  
   
  `ppResolved`  
- [out]オブジェクトの型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)します。  
+ 入出力オブジェクトの型を [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)として返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- オブジェクトの実行時の型はコンパイル時に常には認識されません。 たとえば、ポリモーフィズムを使用して、引数ことができます関数として渡すボタン クラスなど、基本クラス。 実際の引数は、ラジオ ボタン クラスなどの派生クラスで可能性があります。  
+## <a name="remarks"></a>注釈  
+ オブジェクトのランタイム型は、コンパイル時には常にわからないということです。 たとえば、ポリモーフィズムを使用すると、引数は、ボタンクラスなどの基本クラスとして関数に渡すことができます。 実際の引数は、オプションボタンクラスなどの派生クラスである場合があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

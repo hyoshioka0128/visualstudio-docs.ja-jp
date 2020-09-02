@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::put_registerValue |Microsoft Docs
+title: IDiaStackWalkHelper::p ut_registerValue |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97494f2180d0aede2dfd8e1a539a0d957f9a0bcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150073"
 ---
-# <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
+# <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 レジスタの値を設定します。  
@@ -36,17 +36,17 @@ HRESULT put_registerValue ( 
   
 #### <a name="parameters"></a>パラメーター  
  `index`  
- [in]値、 [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)への書き込みにレジスタを指定する列挙体。  
+ から書き込み先のレジスタを指定する [CV_HREG_e 列挙](../../debugger/debug-interface-access/cv-hreg-e.md) 列挙の値。  
   
  `NewVal`  
- [in]新しい値を登録します。  
+ から新しいレジスタ値。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 値のサイズに関係なく、実装はのみ何レジスタは、通常は保持を格納する必要があります。 たとえば、のみ、最下位 8 ビット指定された値の 8 ビット レジスタを保持します。  
+## <a name="remarks"></a>注釈  
+ 値のサイズにかかわらず、実装には、通常、レジスタが保持しているものだけを格納する必要があります。 たとえば、8ビットレジスタは、指定された値のうち最も下位の8ビットだけを保持します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 列挙型](../../debugger/debug-interface-access/cv-hreg-e.md)

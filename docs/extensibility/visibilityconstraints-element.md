@@ -1,5 +1,5 @@
 ---
-title: 可視性制約要素 |マイクロソフトドキュメント
+title: VisibilityConstraints 要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698193"
 ---
-# <a name="visibilityconstraints-element"></a>可視性制約要素
-VisibilityConstraints要素は、コマンドとツールバーのグループの静的な可視性を決定します。 可視性は、VSPackage を[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]読み込まずに統合開発環境 (IDE) によって制御されます。
+# <a name="visibilityconstraints-element"></a>VisibilityConstraints 要素
+VisibilityConstraints 要素は、コマンドおよびツールバーのグループの静的表示を決定します。 可視性は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage を読み込まずに、統合開発環境 (IDE) によって最初に制御されます。
 
 ## <a name="syntax"></a>構文
 
@@ -39,20 +39,20 @@ VisibilityConstraints要素は、コマンドとツールバーのグループ�
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[可視性項目要素](../extensibility/visibilityitem-element.md)|コマンドとツール バーの静的な表示を決定します。|
-|[可視性制約](../extensibility/visibilityconstraints-element.md)|コマンドとツールバーのグループの静的な表示を決定します。|
+|[VisibilityItem 要素](../extensibility/visibilityitem-element.md)|コマンドおよびツールバーを静的に表示するかどうかを決定します。|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|コマンドおよびツールバーのグループを静的に表示するかどうかを決定します。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[コマンド テーブル要素](../extensibility/commandtable-element.md)|VSPackage が IDE に提供するコマンド (メニュー項目、メニュー、ツールバー、コンボ ボックスなど) を表す要素をすべて定義します。|
+|[CommandTable 要素](../extensibility/commandtable-element.md)|VSPackage が IDE に提供するコマンド (メニュー項目、メニュー、ツールバー、コンボボックスなど) を表すすべての要素を定義します。|
 
 ## <a name="example"></a>例
 
@@ -64,5 +64,5 @@ VisibilityConstraints要素は、コマンドとツールバーのグループ�
 ```
 
 ## <a name="see-also"></a>関連項目
-- [可視性項目要素](../extensibility/visibilityitem-element.md)
-- [コマンド テーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [VisibilityItem 要素](../extensibility/visibilityitem-element.md)
+- [Visual Studio コマンドテーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: 関数オブジェクト::評価 |マイクロソフトドキュメント
+title: 'IDebugFunctionObject:: Evaluate |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728513"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
@@ -47,22 +47,22 @@ int Evaluate(
 
 ## <a name="parameters"></a>パラメーター
 `ppParams`\
-[in]入力パラメーターを表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトの配列。 これらの各パラメーターは[、IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) `Create`インターフェイスのメソッドの 1 つを使用して作成されました。
+から入力パラメーターを表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトの配列。 これらの各パラメーターは、IDebugFunctionObject インターフェイスのメソッドのいずれかを使用して作成されてい `Create` ます。 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
 `dwParams`\
-[in]配列内のパラメーターの`ppParams`数。
+から配列内のパラメーターの数 `ppParams` 。
 
 `dwTimeout`\
-[in]このメソッドから戻るまでの最大待機時間をミリ秒単位で指定します。 無期限`INFINITE`に待機するために使用します。
+からこのメソッドから制御が戻るまでに待機する最大時間をミリ秒単位で指定します。 `INFINITE`無期限に待機するには、を使用します。
 
 `ppResult`\
-[アウト]オブジェクトとして関数の値を表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)を返します。
+入出力関数の値をオブジェクトとして表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは[、IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)オブジェクトによって表される関数の呼び出しを設定して実行します。
+## <a name="remarks"></a>解説
+ このメソッドは、 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) オブジェクトによって表される関数の呼び出しを設定して実行します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

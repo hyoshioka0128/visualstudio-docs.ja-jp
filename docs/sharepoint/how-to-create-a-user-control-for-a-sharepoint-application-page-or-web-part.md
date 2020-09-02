@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2fbf1b646ae9e7fb697fcab93adfb8661a4372c6
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016974"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>方法: SharePoint アプリケーションページまたは web パーツのユーザーコントロールを作成する
@@ -34,22 +35,22 @@ ms.locfileid: "86016974"
 
      **[新しい項目の追加]** ダイアログ ボックスが開きます。
 
-4. [**インストール済み**] ウィンドウで、[ **Office/SharePoint** ] ノードを選択します。
+4. [ **インストール済み** ] ウィンドウで、[ **Office/SharePoint** ] ノードを選択します。
 
-5. SharePoint テンプレートの一覧で、[**ユーザーコントロール (ファームソリューションのみ)**] を選択します。
+5. SharePoint テンプレートの一覧で、[ **ユーザーコントロール (ファームソリューションのみ)**] を選択します。
 
     > [!NOTE]
     > ユーザー コントロールはファーム ソリューションでのみ機能します。
 
-6. [**名前**] ボックスにユーザーコントロールの名前を指定し、[**追加**] をクリックします。
+6. [ **名前** ] ボックスにユーザーコントロールの名前を指定し、[ **追加** ] をクリックします。
 
-     複数のフォルダーとファイルがプロジェクトに追加されます。 これらのファイルの詳細について[は、「web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)」を参照してください。
+     複数のフォルダーとファイルがプロジェクトに追加されます。 これらのファイルの詳細について [は、「web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)」を参照してください。
 
-     既定では、ユーザーコントロールファイルは Visual Web Developer デザイナーの**ソース**ビューに表示されます。 このビューで、コントロールの XML マークアップを編集できます。 [**ツールボックス**] からコントロールをドラッグしてコントロールを視覚的にデザインする場合は、[**デザイン**] ビューに切り替えることができます。 「[デザインビュー、Web ページデザイナー」を](/previous-versions/aspnet/ms178149\(v\=vs.100\))参照してください。
+     既定では、ユーザーコントロールファイルは Visual Web Developer デザイナーの **ソース** ビューに表示されます。 このビューで、コントロールの XML マークアップを編集できます。 [**ツールボックス**] からコントロールをドラッグしてコントロールを視覚的にデザインする場合は、[**デザイン**] ビューに切り替えることができます。 「 [デザインビュー、Web ページデザイナー」を](/previous-versions/aspnet/ms178149\(v\=vs.100\))参照してください。
 
 7. コントロールで発生するイベントを処理する場合は、ユーザー コントロールのコード ファイルにコードを追加します。
 
-     このファイルは、プロジェクトの言語に応じて、ユーザーコントロールファイルの下の**ソリューションエクスプローラー**に表示され、 *.cs*または *.vb*の拡張子が付いています。
+     このファイルは、プロジェクトの言語に応じて、ユーザーコントロールファイルの下の **ソリューションエクスプローラー** に表示され、 *.cs* または *.vb* の拡張子が付いています。
 
 ## <a name="see-also"></a>関連項目
 - [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

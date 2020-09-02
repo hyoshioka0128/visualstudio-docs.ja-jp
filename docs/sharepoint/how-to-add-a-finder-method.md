@@ -18,34 +18,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1fa8f8eb34943cc17bc6cabca8e93ea7569a7ba6
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016722"
 ---
 # <a name="how-to-add-a-finder-method"></a>方法: Finder メソッドを追加する
-  Business Data Connectivity (BDC) サービスで、web パーツまたはリスト内のエンティティの一覧を表示できるようにするには、 *Finder*メソッドを作成する必要があります。 Finder メソッドは、エンティティインスタンスのコレクションを返す特殊なメソッドです。 詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  Business Data Connectivity (BDC) サービスで、web パーツまたはリスト内のエンティティの一覧を表示できるようにするには、 *Finder* メソッドを作成する必要があります。 Finder メソッドは、エンティティインスタンスのコレクションを返す特殊なメソッドです。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-create-a-finder-method"></a>Finder メソッドを作成するには
 
 1. **BDC デザイナー**で、エンティティを選択します。
 
-    詳細については、「[方法: モデルにエンティティを追加](../sharepoint/how-to-add-an-entity-to-a-model.md)する」を参照してください。
+    詳細については、「 [方法: モデルにエンティティを追加](../sharepoint/how-to-add-an-entity-to-a-model.md)する」を参照してください。
 
 2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細**を表示] を選択します。
 
-    [ **BDC メソッドの詳細**] ウィンドウが開きます。 [ **Bdc メソッドの詳細**] ウィンドウの詳細については、「 [bdc モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
+    [ **BDC メソッドの詳細** ] ウィンドウが開きます。 [ **Bdc メソッドの詳細** ] ウィンドウの詳細については、「 [bdc モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
-3. [**メソッドの追加**] の一覧で、[ **Finder メソッドの作成**] を選択します。
+3. [ **メソッドの追加** ] の一覧で、[ **Finder メソッドの作成**] を選択します。
 
     Visual Studio によって、メソッド、戻りパラメーター、および型記述子が追加されます。
 
-4. 型記述子をエンティティコレクション型記述子として構成します。 エンティティコレクション型記述子を作成する方法の詳細については、「[方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
+4. 型記述子をエンティティコレクション型記述子として構成します。 エンティティコレクション型記述子を作成する方法の詳細については、「 [方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
 
    > [!NOTE]
    > 特定の Finder メソッドをエンティティに追加した場合、この手順を実行する必要はありません。 Visual Studio では、特定の Finder メソッドで定義した型記述子が使用されます。
 
-5. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。 サービスコードファイルの詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
+5. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。 サービスコードファイルの詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
 6. Finder メソッドにコードを追加します。 このコードは、以下のタスクを実行します。
 

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d072f54dfe351d54e3e115dca7a91bec77fbb9e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844927"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>シミュレーターでの Windows ストア アプリの実行
@@ -35,26 +35,26 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
 > [!IMPORTANT]
 > Visual Studio 2015 シミュレーターには、位置情報ボタンがありません。 これは、Windows 10 シミュレーターに位置情報シミュレーションが含まれていないためです。 この種のシミュレーションを行う必要がある場合は、Windows 8.1 以前のオペレーティング システム上で Visual Studio 2013 シミュレーターを使用できます。  
   
-## <a name="BKMK_Set_the_simulator_as_the_target"></a> シミュレーターをターゲットとして設定する  
+## <a name="set-the-simulator-as-the-target"></a><a name="BKMK_Set_the_simulator_as_the_target"></a> シミュレーターをターゲットとして設定する  
  Windows ストア アプリをシミュレーターで実行するには、デバッガーの **標準** ツールバーの **[デバッグの開始]** ボタンの横にあるドロップダウン リストの **[シミュレーター]** をクリックします。  
   
  ![シミュレーターでの実行](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
-## <a name="BKMK_Choose_an_interaction_mode"></a> 対話モードを選択する  
+## <a name="choose-an-interaction-mode"></a><a name="BKMK_Choose_an_interaction_mode"></a> 対話モードを選択する  
  次の対話モードを選択できます。  
   
-- ![マウスモードボタン](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn")マウスモード: 対話モードをマウスジェスチャに設定します。 マウス ジェスチャには、クリック、ダブルクリック、およびドラッグがあります。  
+- ![マウス モード ボタン](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") マウス モード: 対話モードをマウス ジェスチャに設定します。 マウス ジェスチャには、クリック、ダブルクリック、およびドラッグがあります。  
   
-- ![タッチエミュレーションの開始ボタン](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn")タッチエミュレーションの開始: 対話モードを1本の指のタッチジェスチャに設定します。 1 本指のイベントには、タップ、ドラッグ、およびスワイプがあります。  
+- ![タッチ エミュレーション開始ボタン](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") タッチ エミュレーションを開始: 対話モードを 1 本の指によるタッチ ジェスチャに設定します。 1 本指のイベントには、タップ、ドラッグ、およびスワイプがあります。  
   
-     ![シミュレーター1本指ターゲット](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger")1つのターゲットアイコンは、シミュレーター内のイベントの場所を示します。 ポインターを配置するには、マウスを使用します。  
+     ![シミュレーター1本指ターゲット](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") 1つのターゲットアイコンは、シミュレーター内のイベントの場所を示します。 ポインターを配置するには、マウスを使用します。  
   
-     ![1 本指タッチターゲット](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged")マウスの左ボタンを押して、タッチモードをアクティブにします。 たとえば、タップをシミュレートする場合はボタンをクリックし、ドラッグまたはスワイプする場合はボタンを長押しします。  
+     ![1 本指タッチターゲット](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") マウスの左ボタンを押して、タッチモードをアクティブにします。 たとえば、タップをシミュレートする場合はボタンをクリックし、ドラッグまたはスワイプする場合はボタンを長押しします。  
   
 ## <a name="pinch-and-zoom"></a>ピンチとズーム  
  対話モードを、2 本の指によるピンチ ジェスチャとズーム ジェスチャに設定します。  
   
-- ![シミュレーター2本指ターゲット](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![シミュレーターの 2 本指のターゲット](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
 
   - ダブル ターゲット アイコンは、デバイス画面上の 2 本の指の位置を示します。  
 
@@ -79,10 +79,10 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
 
   - オブジェクトを時計回りに回転させる場合は、左ボタンを押し、マウス ホイールを前方 (奥) に回転させます。  
 
-## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> [常に手前に表示] モードを有効または無効にする  
+## <a name="enable-or-disable-always-on-top-mode"></a><a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> [常に手前に表示] モードを有効または無効にする  
  シミュレーター ウィンドウが常に他のウィンドウの上に表示されるように設定できます。 **[最前面に表示するウィンドウの切り替え]** ボタンは、シミュレーター ウィンドウの **[常に手前に表示]** モードを有効または無効にします。  
   
-## <a name="BKMK_Change_the_device_orientation"></a> デバイスの方向を変更する  
+## <a name="change-the-device-orientation"></a><a name="BKMK_Change_the_device_orientation"></a> デバイスの方向を変更する  
  シミュレーターを任意の方向に 90 度回転させることで、デバイスの方向を縦長と横長の間で切り替えることができます。  
   
 > [!NOTE]
@@ -91,7 +91,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
 > [!NOTE]
 > シミュレーターを回転させたときに、シミュレーターの 1 つの辺がシミュレーターを表示している画面よりも大きくなる場合、シミュレーターのサイズは画面に収まるように自動的に変更されます。 シミュレーターは、再度回転させた場合でも、元のサイズに戻ることはありません。  
   
-## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> シミュレートされる画面のサイズと解像度を変更する  
+## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> シミュレートされる画面のサイズと解像度を変更する  
  シミュレートされる画面のサイズと解像度を変更するには、パレットの **[解像度の変更]** ボタンをクリックし、一覧から新しいサイズと解像度を選択します。  
   
  画面サイズと解像度は *画面の幅 (インチ)、ピクセル幅 X ピクセル高さ*で一覧表示されます。 画面のサイズと解像度の両方がシミュレートされます。 シミュレーター上の位置座標は、選択したデバイスのサイズと解像度の座標に変換されます。  
@@ -99,7 +99,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
 > [!NOTE]
 > ビットマップ イメージのスケーリングされたバージョンをアプリに保存できます。Windows は、現在のスケールで正しいイメージを読み込みます。 詳細については、「 [レスポンシブ デザイン 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)」をご覧ください。 ただし、Windows によって解像度に合ったイメージが選択されるようにシミュレーターの解像度を変更した場合、新しいイメージを表示するにはデバッグ セッションを停止して再度開始する必要があります。  
   
-## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Windows ストアに送信するアプリのスクリーンショットをキャプチャする  
+## <a name="capture-a-screenshot-of-your-app-for-submission-to-the-windows-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Windows ストアに送信するアプリのスクリーンショットをキャプチャする  
  Windows アプリ ストアにアプリを送信するときは、アプリのスクリーンショットを含める必要があります。  
   
 > [!NOTE]
@@ -109,12 +109,12 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
   
 - スクリーンショットの配置場所を設定するには、 **[スクリーンショットの設定]** ボタンをクリックし、ショートカット メニューから場所を選択します。  
   
-     ![スクリーンショットの設定のショートカットメニュー](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
+     ![スクリーンショットの設定のコンテキスト メニュー](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-## <a name="BKMK_Simulate_network_connection_properties"></a> ネットワーク接続のプロパティをシミュレートする  
- アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API を使用すると、 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) および署名を行うイベント [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) に応答できます。 「 [従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)」をご覧ください。  
+## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> ネットワーク接続のプロパティをシミュレートする  
+ アプリケーションのユーザーがネットワーク接続コストやデータ プランの状態の変化を認識し、アプリケーションがその情報を使用して、ローミングや指定されたデータ転送の制限の超過による追加コストの発生を避けることにより、アプリケーションのユーザーが従量制課金接続のコストを管理できるようにします。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API を使用すると、 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) および署名を行うイベント [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) に応答できます。 例については、「[クイック スタート:従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)」を参照してください。  
   
- ネットワーク コストを認識するコードをデバッグまたはテストするには、シミュレーターを使って、 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) によって返される [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)オブジェクトを通じて公開されるネットワークのプロパティを模倣します。  
+ ネットワークコストを認識するコードをデバッグまたはテストするには、シミュレーターを使用して、 [Getinternetconnectionprofile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)によって返される[connectionprofile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx)オブジェクトを通じて公開されるネットワークのプロパティを模倣します。  
   
  ネットワークのプロパティをシミュレートするには、次のようにします。  
   
@@ -136,7 +136,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
   
    **ネットワーク接続の管理の詳細について**  
   
-   [従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [クイック スタート:従量制課金接続のコスト制約を管理する方法 (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [ネットワーク情報のサンプル](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -148,7 +148,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
   
    [Windows ストア アプリの中断イベント、再開イベント、およびバックグラウンド イベントをトリガーする方法](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> キーボードを使用してシミュレーター内を移動する  
+## <a name="navigate-the-simulator-with-the-keyboard"></a><a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> キーボードを使用してシミュレーター内を移動する  
  **Ctrl + Alt + 上矢印キー** を押してシミュレーター ウィンドウからシミュレーター ツールバーにフォーカスを切り替えて、シミュレーター ツールバーをナビゲートできます。 ツール バーのボタンの間を移動するには、 **上向きの矢印** と **下向きの矢印** を使用します。  
   
  シミュレーターを終了するには、 **CTRL+ALT+F4**キーを押します。  
