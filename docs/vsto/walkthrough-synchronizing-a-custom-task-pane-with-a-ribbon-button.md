@@ -1,5 +1,5 @@
 ---
-title: リボンのボタンとカスタム作業ウィンドウを同期します。
+title: カスタム作業ウィンドウとリボンボタンの同期
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -24,14 +24,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67328337"
 ---
-# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>チュートリアル: リボン ボタンとカスタム作業ウィンドウを同期します。
-  このチュートリアルでは、ユーザーがリボンのトグル ボタンをクリックして表示または非表示にできるカスタム作業ウィンドウを作成する方法を示します。 Microsoft Office アプリケーションには、既定では、カスタム作業ウィンドウの表示/非表示を切り替える機能が用意されていないため、ユーザーのクリックによりカスタム作業ウィンドウの表示/非表示が切り替えられる、ユーザー インターフェイス (UI) 要素 (ボタンなど) を常に作成する必要があります。
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>チュートリアル: カスタム作業ウィンドウとリボンボタンの同期
+  このチュートリアルでは、ユーザーがリボンのトグルボタンをクリックして表示/非表示を切り替えることができるカスタム作業ウィンドウを作成する方法について説明します。 Microsoft Office アプリケーションには、既定では、カスタム作業ウィンドウの表示/非表示を切り替える機能が用意されていないため、ユーザーのクリックによりカスタム作業ウィンドウの表示/非表示が切り替えられる、ユーザー インターフェイス (UI) 要素 (ボタンなど) を常に作成する必要があります。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -55,19 +55,19 @@ ms.locfileid: "67328337"
 
 - Microsoft Excel または Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]。
 
-## <a name="create-the-add-in-project"></a>アドイン プロジェクトを作成します。
- この手順では、Excel 用 VSTO アドイン プロジェクトを作成します。
+## <a name="create-the-add-in-project"></a>アドインプロジェクトを作成する
+ この手順では、Excel 用の VSTO アドインプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. Excel アドイン プロジェクト テンプレートを使用して、 **SynchronizeTaskPaneAndRibbon**という名前の Excel アドイン プロジェクトを作成します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. Excel アドイン プロジェクト テンプレートを使用して、 **SynchronizeTaskPaneAndRibbon**という名前の Excel アドイン プロジェクトを作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 **ThisAddIn.cs** コード ファイルまたは **ThisAddIn.vb** コード ファイルが開かれ、 **ソリューション エクスプローラー** に **SynchronizeTaskPaneAndRibbon**プロジェクトが追加されます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs**または**ThisAddIn**コードファイルを開き、**ソリューションエクスプローラー**に**SynchronizeTaskPaneAndRibbon**プロジェクトを追加します。
 
-## <a name="add-a-toggle-button-to-the-ribbon"></a>リボンにトグル ボタンを追加します。
- Office アプリケーションのデザイン ガイドラインの 1 つとして、ユーザーが常に Office アプリケーションの UI を操作できなければならないことがあります。 ユーザーがカスタム作業ウィンドウを制御できるようにするために、そのウィンドウの表示/非表示を切り替えるトグル ボタンをリボンに追加します。 トグル ボタンを作成するには、プロジェクトに **リボン (ビジュアル デザイナー)** 項目を追加します。 デザイナーでは、コントロールの追加と配置、コントロールのプロパティの設定、およびコントロール イベントの処理を行うことができます。 詳細については、次を参照してください。[リボン デザイナー](../vsto/ribbon-designer.md)します。
+## <a name="add-a-toggle-button-to-the-ribbon"></a>リボンへのトグルボタンの追加
+ Office アプリケーションのデザイン ガイドラインの 1 つとして、ユーザーが常に Office アプリケーションの UI を操作できなければならないことがあります。 ユーザーがカスタム作業ウィンドウを制御できるようにするために、そのウィンドウの表示/非表示を切り替えるトグル ボタンをリボンに追加します。 トグル ボタンを作成するには、プロジェクトに **リボン (ビジュアル デザイナー)** 項目を追加します。 デザイナーでは、コントロールの追加と配置、コントロールのプロパティの設定、およびコントロール イベントの処理を行うことができます。 詳細については、「 [リボンデザイナー](../vsto/ribbon-designer.md)」を参照してください。
 
-### <a name="to-add-a-toggle-button-to-the-ribbon"></a>リボンにトグル ボタンを追加するには
+### <a name="to-add-a-toggle-button-to-the-ribbon"></a>トグルボタンをリボンに追加するには
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -87,8 +87,8 @@ ms.locfileid: "67328337"
 
 8. **[プロパティ]** ウィンドウで、 **[ラベル]** プロパティを **[作業ウィンドウの表示]** に設定します。
 
-## <a name="design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザー インターフェイスをデザインします。
- カスタム作業ウィンドウにはビジュアルなデザイナーはありませんが、好みに合わせたレイアウトでユーザー コントロールを設計できます。 このチュートリアルの後半では、カスタム作業ウィンドウにユーザー コントロールを追加します。
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザーインターフェイスの設計
+ カスタム作業ウィンドウにはビジュアルなデザイナーはありませんが、好みに合わせたレイアウトでユーザー コントロールを設計できます。 この後に説明するチュートリアルでは、ユーザー コントロールをカスタム作業ウィンドウに追加します。
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザー インターフェイスを設計するには
 
@@ -98,10 +98,10 @@ ms.locfileid: "67328337"
 
      ユーザー コントロールがデザイナーで開きます。
 
-3. **[ツールボックス]** の **[コモン コントロール]** タブから、 **TextBox** コントロールをユーザー コントロールにドラッグします。
+3. **[ツールボックス]** の **[コモン コントロール]** タブから **TextBox** コントロールをユーザー コントロールにドラッグします。
 
-## <a name="create-the-custom-task-pane"></a>カスタム作業ウィンドウを作成します。
- VSTO アドインの起動時にカスタム作業ウィンドウを作成するには、VSTO アドインの <xref:Microsoft.Office.Tools.AddIn.Startup> イベント ハンドラーで、ユーザー コントロールを作業ウィンドウに追加します。 既定では、カスタム作業ウィンドウは表示されません。 このチュートリアルの後半では、表示、またはユーザーがリボンに追加したトグル ボタンをクリックすると、作業ウィンドウを非表示にするコードを追加します。
+## <a name="create-the-custom-task-pane"></a>カスタム作業ウィンドウを作成する
+ VSTO アドインの起動時にカスタム作業ウィンドウを作成するには、VSTO アドインの <xref:Microsoft.Office.Tools.AddIn.Startup> イベント ハンドラーで、ユーザー コントロールを作業ウィンドウに追加します。 既定では、カスタム作業ウィンドウは表示されません。 このチュートリアルの後半では、リボンに追加したトグルボタンをユーザーがクリックしたときに作業ウィンドウを表示または非表示にするコードを追加します。
 
 ### <a name="to-create-the-custom-task-pane"></a>カスタム作業ウィンドウを作成するには
 
@@ -109,7 +109,7 @@ ms.locfileid: "67328337"
 
 2. **ThisAddIn.cs** または **ThisAddIn.vb** を右クリックして、 **[コードの表示]** をクリックします。
 
-3. `ThisAddIn` クラスに次のコードを追加します。 このコードでは、 `TaskPaneControl` のインスタンスを `ThisAddIn`のメンバーとして宣言しています。
+3. 次のコードを `ThisAddIn` クラスに追加します。 このコードでは、 `TaskPaneControl` のインスタンスを `ThisAddIn`のメンバーとして宣言しています。
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]
@@ -129,7 +129,7 @@ ms.locfileid: "67328337"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]
 
-## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>非表示にして、トグル ボタンを使用して、カスタム作業ウィンドウを表示します。
+## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>トグルボタンを使用してカスタム作業ウィンドウの表示と非表示を切り替える
  最後の手順では、ユーザーがリボン上のトグル ボタンをクリックしたときにカスタム作業ウィンドウの表示/非表示を切り替えるコードを追加します。
 
 ### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>トグル ボタンを使用してカスタム作業ウィンドウの表示/非表示を切り替えるには
@@ -143,16 +143,16 @@ ms.locfileid: "67328337"
      [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]
 
-## <a name="test-the-add-in"></a>アドインのテストします。
- プロジェクトを実行すると、Excel が開きます。カスタム作業ウィンドウは表示されません。 コードをテストするには、リボンのトグル ボタンをクリックします。
+## <a name="test-the-add-in"></a>アドインのテスト
+ プロジェクトを実行すると、Excel が開きます。カスタム作業ウィンドウは表示されません。 リボンのトグルボタンをクリックして、コードをテストします。
 
 ### <a name="to-test-your-vsto-add-in"></a>VSTO アドインをテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
-     Excel が開くことを確認し、**アドイン**リボンのタブが表示されます。
+     Excel が開き、リボンに [ **アドイン** ] タブが表示されることを確認します。
 
-2. をクリックして、**アドイン**リボンのタブ。
+2. リボンの [ **アドイン** ] タブをクリックします。
 
 3. **[作業ウィンドウ マネージャー]** グループの **[作業ウィンドウの表示]** トグル ボタンをクリックします。
 
@@ -162,18 +162,18 @@ ms.locfileid: "67328337"
 
      トグル ボタンが押されていない状態であることを確認します。
 
-## <a name="next-steps"></a>次の手順
- カスタム作業ウィンドウを作成する方法の詳細については、次のトピックで説明します。
+## <a name="next-steps"></a>次のステップ
+ カスタム作業ウィンドウの作成方法の詳細については、次のトピックを参照してください。
 
-- 別のアプリケーションの VSTO アドインでカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+- 別のアプリケーション用の VSTO アドインにカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、「 [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」を参照してください。
 
-- カスタム作業ウィンドウからアプリケーションを自動化する。 詳細については、「[チュートリアル:カスタム作業ウィンドウからアプリケーションを自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)します。
+- カスタム作業ウィンドウからアプリケーションを自動化する。 詳細については、「 [チュートリアル: カスタム作業ウィンドウからのアプリケーションの自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)」を参照してください。
 
-- Outlook で開いたそれぞれの電子メール メッセージ用に、カスタム作業ウィンドウを作成する。 詳細については、「[チュートリアル:Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)します。
+- Outlook で開いたそれぞれの電子メール メッセージ用に、カスタム作業ウィンドウを作成する。 詳細については、「 [チュートリアル: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)
-- [方法: アプリケーションにカスタム作業ウィンドウを追加します。](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [チュートリアル: カスタム作業ウィンドウからアプリケーションを自動化します。](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [方法: カスタム作業ウィンドウをアプリケーションに追加する](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [チュートリアル: カスタム作業ウィンドウからのアプリケーションの自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [チュートリアル: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
 - [リボンの概要](../vsto/ribbon-overview.md)

@@ -182,7 +182,7 @@ Visual Studio デザイナーで Excel ワークシートまたは Word 文書�
 
 ActiveX コントロールを含む既存の Word 文書または Excel ブックを使用するドキュメントレベルの Office プロジェクトを作成する場合、ActiveX コントロールの機能は失われません。ただし、Visual Studio 内からドキュメントに新しい ActiveX コントロールを追加することはサポートされていません。 たとえば、Word 文書に Visual Basic for Applications (VBA) マクロを実行する **コントロール** ツールボックスのボタンがある場合、Office プロジェクトでドキュメントが使用された後も、マクロは引き続き実行されます。 ただし、ActiveX コントロールと VBA マクロを削除して、Windows フォームコントロールとマネージコードに置き換えることをお勧めします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)
