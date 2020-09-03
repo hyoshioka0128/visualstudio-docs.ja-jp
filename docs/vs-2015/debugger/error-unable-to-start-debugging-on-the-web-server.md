@@ -1,5 +1,5 @@
 ---
-title: エラー :Web サーバーでデバッグを開始できません |。Microsoft Docs
+title: エラー :Web サーバー上でデバッグを開始できません | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -29,65 +29,65 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185481"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web サーバーで実行されている ASP.NET アプリケーションをデバッグしようとすると、このエラー メッセージが表示することがあります。Web サーバーでデバッグを開始できません。
+Web サーバーで実行されている ASP.NET アプリケーションをデバッグしようとする場合、次のエラー メッセージが表示されることがあります。Web サーバーでデバッグを開始できません。
   
-多くの場合、IIS が正しく構成されていないためにこのエラーが発生します。
+多くの場合、このエラーは IIS が正しく構成されていないことが原因で発生します。
 
-## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
+## <a name="check-your-iis-configuration"></a><a name="vxtbshttpservererrorsthingstocheck"></a> IIS 構成を確認する
 
-詳細なここでは、およびデバッグをもう一度試す前に、問題を解決する手順を実行するには後、は、IIS をリセットする必要がありますも。 管理者のコマンド プロンプトを開き、入力を行うことができます`iisreset`、またはこれを行う IIS マネージャーでします。 
+ここで説明した問題を解決する手順を実行してから、デバッグを再試行する前に、IIS のリセットが必要になる場合があります。 これを行うには、管理者のコマンドプロンプトを開き、「」と入力する `iisreset` か、IIS マネージャーでこの操作を実行します。 
 
-* 停止し、アプリケーション プールを再起動してから、再試行してください。
+* アプリケーションプールを停止して再起動してから、もう一度やり直してください。
 
-    アプリケーション プールを停止した可能性があります。 または中止し、アプリケーション プールを再起動することに行った他の構成の変更が必要があります。
+    アプリケーションプールが停止したか、アプリケーションプールを停止して再起動する必要がある場合があります。
     
     > [!NOTE]
-    > アプリケーション プールを停止していますが場合、は、コントロール パネルから URL リライト モジュールをアンインストールしてから Web プラットフォーム インストーラー (WPI) を使用して、再インストールする必要があります。 大量のシステムのアップグレード後にこの問題がある可能性があります。
+    > アプリケーションプールが停止し続ける場合は、コントロールパネルから URL リライトモジュールをアンインストールし、Web Platform Installer (WPI) を使用して再インストールする必要がある場合があります。 この問題は、システムの大規模なアップグレード後に発生する可能性があります。
 
-* アプリケーション プール構成を確認、修正が必要な場合、再試行してください。
+* アプリケーション プールの構成を確認し、必要に応じて修正してから、やり直します。
 
-    パスワードの資格情報が変更されている場合は、アプリケーション プールでそれらを更新する必要があります。 また、ASP.NET を最近インストールした場合、間違ったバージョンの ASP.NET のアプリケーション プールを構成する可能性があります。 問題を修正し、アプリケーション プールを再起動します。
+    パスワードの資格情報が変更されている場合は、アプリケーションプールでそれらを更新する必要がある場合があります。 また、ASP.NET を最近インストールした場合は、アプリケーションプールが間違ったバージョンの ASP.NET 用に構成されている可能性があります。 問題を解決してから、アプリケーションプールを再起動してください。
     
-* Web アプリケーションのフォルダーが適切なアクセス許可を持つことを確認します。
+* Web アプリケーション フォルダーに適切なアクセス許可があることを確認します。
 
-    IIS_IUSRS に付けることまたは IUSR (またはアプリケーション プールに関連付けられている特定のユーザー) は、読み取りし、実行権限 Web アプリケーション フォルダーの権限を確認します。 問題を修正し、アプリケーション プールを再起動します。
+    IIS_IUSRS または IUSR (または、アプリケーションプールに関連付けられている特定のユーザー) に Web アプリケーションフォルダーの読み取りおよび実行権限を付与してください。 問題を解決し、アプリケーション プールを再起動します。
 
-* ローカル アドレスを持つホスト ファイルを使用する場合は、マシンの IP アドレスの代わりに、ループバック アドレスを使用してみてください。
+* ローカル アドレスを含む HOSTS ファイルを使用している場合は、コンピューターの IP アドレスの代わりにループバック アドレスを使用してみてください。
 
 * ブラウザーで localhost ページを表示します。
 
      IIS が正しくインストールされていない場合、ブラウザーに `http://localhost` を入力するとエラーが表示されます。
      
-     IIS への配置方法の詳細については、次を参照してください。 [Remote Debugging ASP.NET on a Remote IIS Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)または ASP.NET Core, [IIS への発行](https://docs.asp.net/en/latest/publishing/iis.html))。
+     IIS への展開の詳細については、リモート [Iis コンピューターのリモートデバッグ ASP.NET に](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 関する説明、ASP.NET Core の場合は [Iis への発行](https://docs.asp.net/en/latest/publishing/iis.html)に関する説明を参照してください。
 
-* IIS で ASP.NET の正しいバージョンがインストールされていることを確認します。  参照してください[ASP.NET アプリケーションをデプロイ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md#BKMK_deploy_asp_net)または ASP.NET Core, [IIS への発行](https://docs.asp.net/en/latest/publishing/iis.html))。
+* ASP.NET の正しいバージョンが IIS にインストールされていることを確認します。  「 [Deploy an ASP.NET Application](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md#BKMK_deploy_asp_net) 」を参照するか、ASP.NET CORE、 [IIS に発行](https://docs.asp.net/en/latest/publishing/iis.html)してください)。
 
-* サーバー上の基本的な ASP.NET アプリケーションを作成します。
+* サーバー上に基本的な ASP.NET アプリケーションを作成します。
 
-     デバッガーを使用するアプリを取得できない場合は、ローカル サーバーで、基本的な ASP.NET アプリケーションを作成してみてくださいし、基本的なアプリをデバッグしようとしてください。 基本的なアプリをデバッグする場合、2 つの構成間で異なるを判断することに役立つ可能性があります。
+     アプリとデバッガーを連携できない場合は、基本の ASP.NET アプリケーションをサーバー上にローカルに作成してみて、基本のアプリのデバッグを試してください。 基本的なアプリをデバッグできる場合は、2つの構成の違いを特定するのに役立ちます。
   
 * IP アドレスのみを使用している場合は、認証エラーを解決します
 
-     既定では、IP アドレスはインターネットの一部と見なされ、インターネット上では NTLM 認証が行われません。 認証を要求するように IIS の web サイトを構成する場合は、この認証は失敗します。 この問題を修正するには、IP アドレスではなくリモート コンピューターの名前を指定できます。
+     既定では、IP アドレスはインターネットの一部と見なされ、インターネット上では NTLM 認証が行われません。 Web サイトが IIS で認証を要求するように構成されている場合、この認証は失敗します。 この問題を解決するには、IP アドレスではなくリモート コンピューターの名前を指定することができます。
      
 ## <a name="other-causes"></a>その他の原因
 
-: 以前のバージョンの Visual Studio を使用する場合
+以前のバージョンの Visual Studio を使用している場合は、次のようになります。
 
-- 昇格した特権で Visual Studio を再起動してもう一度やり直してください。
+- 昇格した特権で Visual Studio を再起動して、もう一度やり直してください。
 
-    (後ほど修正) 以前のバージョンのバグには、ASP.NET のデバッグ シナリオの一部で管理者特権が必要です。
+    以前のバージョンのバグ (後で修正) では、一部の ASP.NET デバッグシナリオで昇格された特権が必要でした。
     
-- Visual Studio の複数のインスタンスが実行されている場合、Visual Studio の 1 つのインスタンスでプロジェクトを再び開くもう一度やり直してください。
+- Visual Studio の複数のインスタンスが実行されている場合は、Visual Studio の1つのインスタンスでプロジェクトを再度開き、もう一度やり直してください。
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

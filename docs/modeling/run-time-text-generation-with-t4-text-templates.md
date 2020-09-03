@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520836"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 テキスト テンプレートを使用した実行時テキスト生成
@@ -55,7 +55,7 @@ This report is Company Confidential.
 
 1. ソリューションエクスプローラーのプロジェクトのショートカットメニューで、[ **Add**  >  **新しい項目**の追加] を選択します。
 
-2. [**新しい項目の追加**] ダイアログボックスで、[**ランタイムテキストテンプレート**] を選択します。 (Visual Basic**共通項目**  >  の表示 **[全般**]。)
+2. [ **新しい項目の追加** ] ダイアログボックスで、[ **ランタイムテキストテンプレート**] を選択します。 (Visual Basic**共通項目**  >  の表示 **[全般**]。)
 
 3. テンプレートファイルの名前を入力します。
 
@@ -64,7 +64,7 @@ This report is Company Confidential.
 
 4. **[追加]** をクリックします。
 
-    拡張子が **.tt**の新しいファイルが作成されます。 その**カスタムツール**プロパティは、 **Texttemplatingfilepreprocessor プロセッサ**に設定されています。 次の行が含まれています。
+    拡張子が **.tt**の新しいファイルが作成されます。 その **カスタムツール** プロパティは、 **Texttemplatingfilepreprocessor プロセッサ**に設定されています。 次の行が含まれています。
 
     ```
     <#@ template language="C#" #>
@@ -82,10 +82,10 @@ This report is Company Confidential.
 
 1. ファイルを Visual Studio プロジェクトに含めます。 ソリューションエクスプローラーのプロジェクトのショートカットメニューで、[ **Add**  >  **既存項目**の追加] を選択します。
 
-2. ファイルの**カスタムツール**プロパティを**Texttemplatingfilepreprocessor プロセッサ**に設定します。 ソリューションエクスプローラーのファイルのショートカットメニューで、[**プロパティ**] を選択します。
+2. ファイルの **カスタムツール** プロパティを **Texttemplatingfilepreprocessor プロセッサ**に設定します。 ソリューションエクスプローラーのファイルのショートカットメニューで、[ **プロパティ**] を選択します。
 
     > [!NOTE]
-    > プロパティが既に設定されている場合は、Texttemplatingfilepreprocessor では**TextTemplatingFileGenerator**なく**texttemplatingfilepreprocessor**であることを確認します。 これは、既に拡張子が .tt のファイルをインクルードした場合に発生する可能性があり**ます**。
+    > プロパティが既に設定されている場合は、Texttemplatingfilepreprocessor では**TextTemplatingFileGenerator**なく**texttemplatingfilepreprocessor**であることを確認します。 これは、既に拡張子が .tt のファイルをインクルードした場合に発生する可能性があり **ます**。
 
 3. ファイル名拡張子を **.tt**に変更します。 この手順は省略可能ですが、正しくないエディターでファイルを開くことを避けるのに役立ちます。
 
@@ -107,7 +107,7 @@ This report is Company Confidential.
 
 ### <a name="plain-content"></a>プレーンコンテンツ
 
-アプリケーションで生成するテキストが含まれるように .tt ファイルを編集し**ます**。 次に例を示します。
+アプリケーションで生成するテキストが含まれるように .tt ファイルを編集し **ます** 。 たとえば、次のように入力します。
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>埋め込みプログラムコード
 
-プログラムコードは、との間に挿入でき `<#` `#>` ます。 次に例を示します。
+プログラムコードは、との間に挿入でき `<#` `#>` ます。 たとえば、次のように入力します。
 
 ```csharp
 <table>
@@ -150,7 +150,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>テンプレートから作成されたコード
 
-**.Tt**ファイルを保存すると、関連する **.cs**または **.vb**ファイルが生成されます。 このファイルを**ソリューションエクスプローラー**で表示するには、[.tt ファイル] ノードを展開し**ます**。 Visual Basic プロジェクトで、最初に [**ソリューションエクスプローラー** ] ツールバーの [**すべてのファイルを表示**] を選択します。
+**.Tt**ファイルを保存すると、関連する **.cs**または **.vb**ファイルが生成されます。 このファイルを **ソリューションエクスプローラー**で表示するには、[.tt ファイル] ノードを展開し **ます** 。 Visual Basic プロジェクトで、最初に [**ソリューションエクスプローラー** ] ツールバーの [**すべてのファイルを表示**] を選択します。
 
 この場合、関連するファイルには、というメソッドを含む部分クラスが含まれていることに注意 `TransformText()` してください。 このメソッドは、アプリケーションから呼び出すことができます。
 
@@ -170,7 +170,7 @@ Dim pageContent = page.TransformText()
 System.IO.File.WriteAllText("outputPage.html", pageContent)
 ```
 
-生成されたクラスを特定の名前空間に配置するには、テキストテンプレートファイルの "**カスタムツールの名前空間**" プロパティを設定します。
+生成されたクラスを特定の名前空間に配置するには、テキストテンプレートファイルの " **カスタムツールの名前空間** " プロパティを設定します。
 
 ### <a name="debugging-runtime-text-templates"></a>ランタイムテキストテンプレートのデバッグ
 
@@ -191,7 +191,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-テンプレートファイル**MyWebPage.tt**で、次のように記述できます。
+テンプレートファイル **MyWebPage.tt**で、次のように記述できます。
 
 ```html
 <h2>Sales figures</h2>
@@ -217,7 +217,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent);
 
 #### <a name="constructor-parameters-in-visual-basic"></a>Visual Basic のコンストラクターパラメーター
 
-Visual Basic では、個別のファイル**Mywebpagecode**に次のものが含まれます。
+Visual Basic では、個別のファイル **Mywebpagecode** に次のものが含まれます。
 
 ```vb
 Namespace My.Templates
@@ -272,7 +272,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 ### <a name="assemblies-and-references"></a>アセンブリと参照
 
-テンプレートコードで .NET またはその他のアセンブリ ( **System.Xml.dll**など) を参照する場合は、通常の方法でプロジェクトの**参照**に追加します。
+テンプレートコードで .NET またはその他のアセンブリ ( **System.Xml.dll**など) を参照する場合は、通常の方法でプロジェクトの **参照** に追加します。
 
 ステートメントと同じ方法で名前空間をインポートする場合は、 `using` ディレクティブを使用してこれを行うことができ `import` ます。
 
@@ -310,7 +310,7 @@ Include ディレクティブは、テンプレートファイルまたはイン
 
 - アプリケーションは `TextTransform()` 派生クラスのメソッドを呼び出しますが、基底クラスを変換しません `SharedFragments` 。
 
-- 基本クラスと派生クラスは、どちらもランタイムテキストテンプレートです。つまり、**カスタムツール**プロパティは**Texttemplatingfilepreprocessor プロセッサ**に設定されます。
+- 基本クラスと派生クラスは、どちらもランタイムテキストテンプレートです。つまり、 **カスタムツール** プロパティは **Texttemplatingfilepreprocessor プロセッサ**に設定されます。
 
 **SharedFragments.tt:**
 

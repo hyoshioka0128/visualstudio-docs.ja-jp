@@ -1,5 +1,5 @@
 ---
-title: 港湾サプライヤー |マイクロソフトドキュメント
+title: ポートサプライヤー |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6313a7afce9ed272177a26d8da1a9d1516c8022e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738296"
 ---
-# <a name="port-suppliers"></a>港湾サプライヤー
-デバッガアーキテクチャでは、*ポートサプライヤー*:
+# <a name="port-suppliers"></a>ポートサプライヤー
+デバッガーアーキテクチャでは、 *ポート供給業者*は次のようになります。
 
-- サーバーに含まれ、そのサーバーに要求に応じてポートを提供します。
+- はサーバーに含まれており、そのサーバーに要求するポートを提供します。
 
-- 含まれているサーバーにポートを追加したり、ポートを削除したりできます。
+- 含まれているサーバーのポートを追加および削除できます。
 
-- サーバーに提供したすべてのポートを列挙できます。
+- では、サーバーに提供されたすべてのポートを列挙できます。
 
-- レジストリを通じて Visual Studio に登録されている[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)インターフェイスによって表されます。 このインターフェイスは[、GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)を呼び出すことによって取得できます。
+- は、 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) インターフェイスによって表されます。これは、レジストリを使用して Visual Studio に登録されます。 このインターフェイスは、 [Getportsupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)を呼び出すことによって取得できます。
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、デフォルトのポートサプライヤーとデフォルトポートを提供します。 カスタム ポートを実装する必要がある場合は、カスタム ポートサプライヤーも実装して、カスタム ポートを提供する必要があります。
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 既定のポートサプライヤーと既定のポートを提供します。 カスタムポートを実装する必要がある場合は、カスタムポート供給業者を実装してカスタムポートを提供する必要もあります。
 
 ## <a name="see-also"></a>関連項目
 - [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88695511d22e38262dc969d66e469441c9c3ac47
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985481"
 ---
 # <a name="visio-object-model-overview"></a>Visio オブジェクトモデルの概要
@@ -34,27 +34,27 @@ ms.locfileid: "72985481"
 - [Visio 図形を操作する](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Visio オブジェクトモデルについて
- Visio では、多くのオブジェクトが操作対象になります。 これらのオブジェクトは、ユーザー インターフェイスとほぼ同様の階層形式で編成されています。 階層の最上位にあるのは、 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) オブジェクトです。 このオブジェクトは、Visio の現在のインスタンスを表します。 `Microsoft.Office.Interop.Visio.Application` オブジェクトには、`Microsoft.Office.Interop.Visio.Document` および `Microsoft.Office.Interop.Visio.Page` のオブジェクトだけでなく、`Microsoft.Office.Interop.Visio.Documents` および `Microsoft.Office.Interop.Visio.Pages` のコレクションが含まれています。 これらのオブジェクトとコレクションにはそれぞれ数多くのメソッドとプロパティがあり、それらにアクセスしてオブジェクトを処理したり、オブジェクトと対話したりできます。
+ Visio では、多くのオブジェクトが操作対象になります。 これらのオブジェクトは、ユーザー インターフェイスとほぼ同様の階層形式で編成されています。 階層の最上位にあるのは、 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) オブジェクトです。 このオブジェクトは、Visio の現在のインスタンスを表します。 オブジェクトには、 `Microsoft.Office.Interop.Visio.Application` オブジェクトとオブジェクト、およびコレクションとコレクションが含まれてい `Microsoft.Office.Interop.Visio.Document` `Microsoft.Office.Interop.Visio.Page` `Microsoft.Office.Interop.Visio.Documents` `Microsoft.Office.Interop.Visio.Pages` ます。 これらのオブジェクトとコレクションにはそれぞれ数多くのメソッドとプロパティがあり、それらにアクセスしてオブジェクトを処理したり、オブジェクトと対話したりできます。
 
  詳細については、 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application)、 [Microsoft.Office.Interop.Visio.Document](/office/vba/api/Visio.Document)、および [Microsoft.Office.Interop.Visio.Page](/office/vba/api/Visio.Page) の各オブジェクト、 [Microsoft.Office.Interop.Visio.Documents](/office/vba/api/Visio.Documents) および [Microsoft.Office.Interop.Visio.Pages](/office/vba/api/Visio.Pages) の各コレクションの VBA リファレンス ドキュメントを参照してください。
 
  この後のセクションでは、最上位レベルのオブジェクトとそれらの相互関係について、簡単に説明します。 このようなオブジェクトには次の 4 つがあります。
 
-- Application オブジェクト
+- アプリケーション オブジェクト
 
 - Document オブジェクト
 
 - Page オブジェクト
 
-### <a name="application-object"></a>Application オブジェクト
- Microsoft. Interop. Visio アプリケーションは Visio アプリケーションを表し、他のすべてのオブジェクトの親となります。 そのメンバーは、通常、Visio 全体に適用されます。 Visio 環境を制御するには、アプリケーションのプロパティとメソッドを使用して、`Microsoft.Office.Interop.Visio.ApplicationSettings` オブジェクトを使用します。
+### <a name="application-object"></a>アプリケーション オブジェクト
+ Microsoft. Interop. Visio アプリケーションは Visio アプリケーションを表し、他のすべてのオブジェクトの親となります。 そのメンバーは、通常、Visio 全体に適用されます。 `Microsoft.Office.Interop.Visio.ApplicationSettings`Visio 環境を制御するには、Microsoft のアプリケーションおよびオブジェクトのプロパティとメソッドを使用します。
 
- VSTO アドインプロジェクトでは、`ThisAddIn` クラスの [`Application`] フィールドを使用して、[...] オブジェクトにアクセスできます。 詳細については、「 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。
+ VSTO アドインプロジェクトでは、 `Application` クラスのフィールドを使用することによって、アプリケーションオブジェクトにアクセスできます。 `ThisAddIn` 詳細については、「 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
 ### <a name="document-object"></a>Document オブジェクト
- Visio は、Visio をプログラミングするための中心的なオブジェクトです。 これは、図面、ステンシル、またはテンプレート ファイルを表します。 Visio 図面を開くか、新しいドキュメントを作成するときに、新しい "Microsoft.................... アプリケーションオブジェクトのコレクションに追加された" という新しいオブジェクトを作成します.
+ Microsoft.Office.Interop.Visio.Document オブジェクトは、Visio をプログラミングするための中心的なオブジェクトです。 これは、図面、ステンシル、またはテンプレート ファイルを表します。 Visio 図面を開くか、新しいドキュメントを作成すると、新しい Microsoft.Office.Interop.Visio.Document オブジェクトが作成されます。このオブジェクトは、Microsoft.Office.Interop.Visio.Documents のコレクションに追加されます。
 
- フォーカスがある文書は、作業中の文書と呼ばれます。 これは、`Microsoft.Office.Interop.Visio.Application.ActiveDocument` のオブジェクトのプロパティによって表されます。
+ フォーカスがある文書は、作業中のドキュメントと呼ばれます。 これは `Microsoft.Office.Interop.Visio.Application.ActiveDocument` 、Microsoft. Interop. Visio. Application オブジェクトのプロパティによって表されます。
 
 ### <a name="page-object"></a>Page オブジェクト
  Microsoft. Interop. Visio オブジェクトは、前景ページまたは背景ページの描画領域を表します。 `Microsoft.Office.Interop.Visio.Page.Background` プロパティを使用すると、ページが前景ページと背景ページのどちらであるかを判定できます。
@@ -64,7 +64,7 @@ ms.locfileid: "72985481"
 ## <a name="use-the-visio-object-model-documentation"></a>Visio オブジェクトモデルのドキュメントを使用する
  Visio オブジェクト モデルの詳細については、Visio の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンス ドキュメントでは、Visual Basic for Applications (VBA) コードに公開される Visio オブジェクト モデルについて説明しています。 詳細については、「 [Visio オブジェクトモデルのリファレンス](/office/vba/api/overview/visio/object-model)」を参照してください。
 
- VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Visio プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、VBA オブジェクトモデルのリファレンス内の `Document` オブジェクトは、Visio PIA の "Microsoft..." の種類に対応しています。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Visio VSTO アドイン プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
+ VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Visio プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、 `Document` VBA オブジェクトモデルのリファレンス内のオブジェクトは、VISIO PIA の Microsoft.Office.Interop.Visio.Document 型に対応しています。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Visio VSTO アドイン プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
 
 > [!NOTE]
 > 現在のところ、Visio プライマリ相互運用機能アセンブリに関するリファレンス ドキュメントは提供されていません。
@@ -74,9 +74,9 @@ ms.locfileid: "72985481"
 ### <a name="additional-types-in-primary-interop-assemblies"></a>プライマリ相互運用機能アセンブリの追加の型
  実装の違いにより VBA には表示されないプライマリ相互運用機能アセンブリの型があります。 VBA では、直接使用できるオブジェクトとメンバーだけを含む Visio オブジェクト モデルのビューが提供されます。 プライマリ相互運用機能アセンブリは同じオブジェクト モデルを公開しますが、それには、COM オブジェクト モデルのオブジェクトをマネージド コードに変換する、その他のインターフェイス、クラス、およびメンバーも含まれています。 これらの追加の項目は、コードで直接使用するためのものではありません。
 
- 詳細については、「 [office プライマリ相互運用機能](/previous-versions/office/office-12/ms247299(v=office.12))アセンブリと[office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)のクラスとインターフェイスの概要」を参照してください。
+ 詳細については、「 [office プライマリ相互運用機能](/previous-versions/office/office-12/ms247299(v=office.12)) アセンブリと [office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)のクラスとインターフェイスの概要」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visio ソリューション](../vsto/visio-solutions.md)
 - [Visio 図面を操作する](../vsto/working-with-visio-documents.md)
 - [Visio 図形を操作する](../vsto/working-with-visio-shapes.md)

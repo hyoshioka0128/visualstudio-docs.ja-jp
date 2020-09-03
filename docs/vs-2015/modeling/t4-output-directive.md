@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652314"
 ---
 # <a name="t4-output-directive"></a>T4 出力ディレクティブ
@@ -21,11 +21,11 @@ ms.locfileid: "72652314"
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テキスト テンプレートでは、`output` ディレクティブを使用してファイル名の拡張子と変換ファイルのエンコードを定義します。
 
- たとえば、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトに、次のディレクティブを含む**MyTemplate.tt**という名前のテンプレートファイルが含まれているとします。
+ たとえば、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトに **MyTemplate.tt** という名前のテンプレートファイルが含まれていて、次のディレクティブが含まれているとします。
 
  `<#@output extension=".cs"#>`
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に、 **MyTemplate.cs**という名前のファイルが生成されます。
+ 次 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に、 **MyTemplate.cs**という名前のファイルが生成されます。
 
  `output` ディレクティブは、実行時 (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
@@ -53,7 +53,7 @@ ms.locfileid: "72652314"
  使用できる値: 任意の有効なファイル名拡張子。
 
 ## <a name="encoding-attribute"></a>encoding 属性
- 出力ファイルが生成されるときに使用するエンコードを指定します。 (例:
+ 出力ファイルが生成されるときに使用するエンコードを指定します。 次に例を示します。
 
  `<#@ output encoding="utf-8"#>`
 

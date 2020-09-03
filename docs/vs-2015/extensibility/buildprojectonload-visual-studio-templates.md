@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnLoad (Visual Studio テンプレート) |Microsoft Docs
+title: Buildプロジェクターの読み込み (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184609"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-作成後すぐにプロジェクトをビルドするかどうかを指定します。  
+プロジェクトを作成した直後にビルドするかどうかを指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -53,9 +53,9 @@ ms.locfileid: "68184609"
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- テキストがいずれかにする必要があります`true`または`false`、作成後すぐにプロジェクトをビルドするかどうかを示します。  
+ テキストはまたはのいずれかである必要があり `true` `false` ます。これは、プロジェクトを作成した直後にビルドするかどうかを示します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  `BuildProjectOnLoad` は省略可能な属性です。 既定値は `false` です。  
   
 ## <a name="example"></a>例  
@@ -86,7 +86,7 @@ ms.locfileid: "68184609"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [TemplateContent 要素 (Visual Studio テンプレート)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

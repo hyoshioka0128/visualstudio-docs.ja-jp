@@ -1,5 +1,5 @@
 ---
-title: メソッドを通知する |マイクロソフトドキュメント
+title: Notifycompletion の完了メソッド |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738335"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>メソッドを通知します。
-デバッガーによってブレークポイント ターゲットとして使用されるプレースホルダー メソッド。 このメソッドは、インライン化または最適化しないでください。
+# <a name="notifydebuggerofwaitcompletion-method"></a>Notifycompletion の Waitcompletion メソッド
+デバッガーによってブレークポイントターゲットとして使用されるプレースホルダーメソッド。 このメソッドは、インライン化または最適化することはできません。
 
- **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib *(mscorlib.dll*内)
+ **アセンブリ:** mscorlib ( *mscorlib.dll*)
 
 ## <a name="syntax"></a>構文
 
@@ -30,8 +30,8 @@ ms.locfileid: "80738335"
 private void NotifyDebuggerOfWaitCompletion()
 ```
 
-## <a name="remarks"></a>Remarks
- タスクを使用するすべての結合操作は、デバッガー通知ビットが設定されている場合、このメソッドを呼び出す必要があります。
+## <a name="remarks"></a>解説
+ デバッガーの通知ビットが設定されている場合、タスクを使用するすべての結合操作は、このメソッドを呼び出す必要があります。
 
 ## <a name="requirements"></a>必要条件
 

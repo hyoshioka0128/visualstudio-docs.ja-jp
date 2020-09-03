@@ -16,24 +16,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520069"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>方法: リボンのカスタマイズを開始する
-  Microsoft Office アプリケーションのリボンをカスタマイズするには、Office プロジェクトに**リボン (ビジュアルデザイナー)** または**リボン (XML)** 項目を追加します。
+  Microsoft Office アプリケーションのリボンをカスタマイズするには、Office プロジェクトに **リボン (ビジュアルデザイナー)** または **リボン (XML)** 項目を追加します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-a-ribbon-to-a-project"></a>プロジェクトにリボンを追加するには
 
-1. [**プロジェクト**] メニューの [**新しい項目の追加**] をクリックします。
+1. [ **プロジェクト** ] メニューの [ **新しい項目の追加**] をクリックします。
 
-2. [**新しい項目の追加**] ダイアログボックスで、**リボン (ビジュアルデザイナー)** または**リボン (XML)** を選択します。 これらのテンプレートの詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
+2. [ **新しい項目の追加** ] ダイアログボックスで、 **リボン (ビジュアルデザイナー)** または **リボン (XML)** を選択します。 これらのテンプレートの詳細については、「 [リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
-3. [**名前**] ボックスに、リボン項目の名前を入力します。
+3. [ **名前** ] ボックスに、リボン項目の名前を入力します。
 
     次の文字は名前に使用できません。
 
@@ -67,7 +67,7 @@ ms.locfileid: "85520069"
 
 4. **[OK]** をクリックします。
 
-   リボン項目が**ソリューションエクスプローラー**に表示されます。 次の手順の詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
+   リボン項目が **ソリューションエクスプローラー**に表示されます。 次の手順の詳細については、「 [リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)

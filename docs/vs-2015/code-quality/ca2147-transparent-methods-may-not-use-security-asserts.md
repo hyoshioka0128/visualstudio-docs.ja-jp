@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 45639afc9946aa43df121a5a1881174371413c25
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546381"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147:透過コードは、セキュリティ アサートを使用してはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
@@ -63,5 +63,5 @@ ms.locfileid: "85546381"
 
  もう1つの方法として、コードからアサートを削除し、後続のファイル i/o のアクセス許可要求を SecurityTransparentMethod を超えて呼び出し元に渡すこともできます。 これにより、セキュリティチェックが有効になります。 この場合、アクセス許可要求は呼び出し元またはアプリケーションドメインにフローするため、セキュリティ監査は通常必要ありません。 アクセス許可の要求は、セキュリティポリシー、ホスト環境、およびコードソースのアクセス許可の付与によって厳密に制御されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [セキュリティの警告](../code-quality/security-warnings.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800217"
 ---
 # <a name="enable-a-category-of-rules"></a>ルールのカテゴリを有効にする
@@ -38,7 +38,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 - FxCop からの移植
 - [信頼性]
 - セキュリティ
-- 使用
+- 使用法
 
 これらの規則の各カテゴリには、次のように EditorConfig ファイルまたは規則セットファイルがあります。
 

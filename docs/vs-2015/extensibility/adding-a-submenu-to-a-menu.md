@@ -1,5 +1,5 @@
 ---
-title: サブメニューのメニューへの追加 |Microsoft Docs
+title: メニューにサブメニューを追加する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,29 +14,29 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184890"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>サブメニューのメニューへの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルのデモ」に基づいて[Visual Studio のメニュー バーにメニューを追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)にサブメニューを追加する方法を表示することによって、 **TestMenu**メニュー。  
+このチュートリアルでは、[ **Testmenu** ] メニューにサブメニューを追加する方法を示して、 [Visual Studio のメニューバーにメニュー](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)を追加する方法のデモについて説明します。  
   
- サブメニューは、別のメニューに表示されるセカンダリ メニューです。 サブメニューは、その名の後の矢印で識別できます。 名前をクリックすると、サブメニューで開くと表示するには、そのコマンド。  
+ サブメニューは、別のメニューに表示されるセカンダリメニューです。 サブメニューは、名前の後に続く矢印で識別できます。 名前をクリックすると、サブメニューとそのコマンドが表示されます。  
   
- このチュートリアルでは、Visual Studio のメニュー バーのメニューにサブメニューを作成し、サブメニューで、新しいコマンドを配置します。 このチュートリアルでは、新しいコマンドも実装します。  
+ このチュートリアルでは、Visual Studio のメニューバーのメニューにサブメニューを作成し、サブメニューに新しいコマンドを配置します。 このチュートリアルでは、新しいコマンドも実装しています。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+## <a name="prerequisites"></a>前提条件  
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>サブメニューのメニューへの追加  
   
-1. 手順に従って[Visual Studio のメニュー バーにメニューを追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)プロジェクトとメニュー項目を作成します。 このチュートリアルの手順では、VSIX プロジェクトの名前があると仮定`TopLevelMenu`します。  
+1. 「 [Visual Studio のメニューバーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) する」の手順に従って、プロジェクトとメニュー項目を作成します。 このチュートリアルの手順では、VSIX プロジェクトの名前がであることを前提として `TopLevelMenu` います。  
   
-2. TestCommandPackage.vsct を開きます。 `<Symbols>`セクションで、追加、 `<IDSymbol>` 、サブメニューで開くグループとすべてのコマンドは、サブメニューの要素、 `<GuidSymbol>` "guidTopLevelMenuCmdSet"という名前のノード。 これは、同じノードを含む、 `<IDSymbol>`  メニューの最上位の要素。  
+2. TestCommandPackage. vsct を開きます。 セクションで、サブ `<Symbols>` `<IDSymbol>` メニューの要素、サブメニューグループ、および `<GuidSymbol>` "guidTopLevelMenuCmdSet" という名前のノード内のコマンドの要素を追加します。 これは、 `<IDSymbol>` トップレベルメニューの要素を含むノードと同じです。  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -44,7 +44,7 @@ ms.locfileid: "68184890"
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>  
     ```  
   
-3. 新しく作成したサブメニューを追加、`<Menus>`セクション。  
+3. 新しく作成したサブメニューをセクションに追加し `<Menus>` ます。  
   
     ```xml  
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">  
@@ -56,9 +56,9 @@ ms.locfileid: "68184890"
     </Menu>  
     ```  
   
-     親の GUID と ID のペアが生成されたメニュー グループを指定します[Visual Studio のメニュー バーにメニューを追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)、トップレベルのメニューの子であるとします。  
+     親の GUID/ID ペアは、メニューを [Visual Studio のメニューバーに追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)ときに生成されたメニューグループを指定し、トップレベルメニューの子です。  
   
-4. 手順 2 で定義されているメニュー グループの追加、`<Groups>`セクションし、サブメニューの子になります。  
+4. 手順2で定義したメニューグループをセクションに追加 `<Groups>` し、サブメニューの子にします。  
   
     ```xml  
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">  
@@ -66,7 +66,7 @@ ms.locfileid: "68184890"
     </Group>  
     ```  
   
-5. 新しい追加`<Button>`要素を`<Buttons>`サブメニューの項目として手順 2 で作成したコマンドを定義するセクション。  
+5. セクションに新しい要素を追加し `<Button>` `<Buttons>` て、手順 2. で作成したコマンドをサブメニューの項目として定義します。  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -79,19 +79,19 @@ ms.locfileid: "68184890"
     </Button>  
     ```  
   
-6. ソリューションをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
+6. ソリューションをビルドし、デバッグを開始します。 実験用のインスタンスが表示されます。  
   
-7. クリックして**TestMenu**という名前の新しいサブメニューを表示する**サブメニュー**します。 クリックして**サブメニュー**をサブメニューを開き、新しいコマンドを参照してください**テスト サブ コマンド**します。 クリックをする**テスト サブ コマンド**何も行われません。  
+7. [ **Testmenu** ] をクリックすると、 **サブメニュー**という名前の新しいサブメニューが表示されます。 [ **サブメニュー** ] をクリックしてサブメニューを開き、新しいコマンド [ **Test Sub command**] を表示します。 [ **テストサブコマンド]** をクリックしても何も行われないことに注意してください。  
   
 ## <a name="adding-a-command"></a>コマンドの追加  
   
-1. TestCommand.cs を開いて、既存のコマンド ID の後に、次のコマンド ID を追加  
+1. TestCommand.cs を開き、既存のコマンド ID の後に次のコマンド ID を追加します。  
   
     ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2. サブ コマンドを追加します。 コマンドのコンス トラクターを検索します。 呼び出し直後に次の行を追加、`AddCommand`メソッド。  
+2. サブコマンドを追加します。 コマンドコンストラクターを検索します。 メソッドの呼び出しの直後に、次の行を追加し `AddCommand` ます。  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
@@ -101,7 +101,7 @@ ms.locfileid: "68184890"
   
     ```  
   
-     `SubItemCallback`コマンド ハンドラーは後で定義されます。 コンス トラクターは、次のようになります。  
+     `SubItemCallback`コマンドハンドラーは、後で定義します。 コンストラクターは次のようになります。  
   
     ```csharp  
     private TestCommand(Package package)  
@@ -126,7 +126,7 @@ ms.locfileid: "68184890"
                 }  
     ```  
   
-3. SubItemCallback() を追加します。 これは、サブメニューで新しいコマンドがクリックされたときに呼び出されるメソッドです。  
+3. SubItemCallback () を追加します。 これは、サブメニューの新しいコマンドがクリックされたときに呼び出されるメソッドです。  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -154,8 +154,8 @@ ms.locfileid: "68184890"
   
 4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
-5. **TestMenu**  メニューのをクリックして**サブメニュー**順にクリックします**テスト サブ コマンド**します。 メッセージ ボックスが表示され、"テスト コマンド内で TestCommand.SubItemCallback()"のテキストを表示する必要があります。  
+5. [ **Testmenu** ] メニューの [ **sub menu** ] をクリックし、[ **Test sub Command**] をクリックします。 メッセージボックスが表示され、"Test Command in TestCommand. SubItemCallback ()" というテキストが表示されます。  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio のメニュー バーにメニューを追加します。](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
+## <a name="see-also"></a>参照  
+ [Visual Studio のメニューバーへのメニューの追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)

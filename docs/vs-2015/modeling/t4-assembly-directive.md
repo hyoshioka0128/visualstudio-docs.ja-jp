@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672334"
 ---
 # <a name="t4-assembly-directive"></a>T4 アセンブリ ディレクティブ
@@ -24,7 +24,7 @@ ms.locfileid: "72672334"
  テキストテンプレートの記述の概要については、「 [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)」を参照してください。
 
 > [!NOTE]
-> 実行時 (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに、必要なアセンブリを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトの**参照**に追加します。
+> 実行時 (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに、必要なアセンブリをプロジェクトの **参照** に追加し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
 ## <a name="using-the-assembly-directive"></a>assembly ディレクティブの使用
  ディレクティブの構文は次のとおりです。
@@ -39,13 +39,13 @@ ms.locfileid: "72672334"
 
 - アセンブリの絶対パス。
 
-  `$(variableName)` 構文を使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の変数 (`$(SolutionDir)` など) を参照し、`%VariableName%` を使用して環境変数を参照できます。 (例:
+  `$(variableName)` 構文を使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の変数 (`$(SolutionDir)` など) を参照し、`%VariableName%` を使用して環境変数を参照できます。 次に例を示します。
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- assembly ディレクティブは、前処理されたテキスト テンプレートでは無効です。 代わりに、必要な参照を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトの **[参照]** セクションに含めます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+ assembly ディレクティブは、前処理されたテキスト テンプレートでは無効です。 代わりに、必要な参照をプロジェクトの [ **参照** ] セクションに含め [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 ## <a name="standard-assemblies"></a>標準アセンブリ
  次のアセンブリは自動的に読み込まれるので、これらのアセンブリのアセンブリ ディレクティブを記述する必要はありません。
@@ -66,7 +66,7 @@ ms.locfileid: "72672334"
 
 - DSL を含むアセンブリ
 
-## <a name="msbuild"></a>MSBuild と Visual Studio の両方でのプロジェクトプロパティの使用
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> MSBuild と Visual Studio の両方でのプロジェクトプロパティの使用
  $(SolutionDir) などの Visual Studio のマクロは、MSBuild では動作しません。 ビルド コンピューターでテンプレートを変換する場合、代わりにプロジェクトのプロパティを使用する必要があります。
 
  .csproj ファイルまたは .vbproj ファイルを編集してプロジェクトのプロパティを定義します。 この例では、`myLibFolder` という名前のプロパティを定義します。

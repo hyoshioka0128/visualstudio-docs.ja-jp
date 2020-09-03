@@ -1,5 +1,5 @@
 ---
-title: ポートへの通知 |マイクロソフトドキュメント
+title: ポートへの通知 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738318"
 ---
 # <a name="notify-the-port"></a>ポートに通知する
-プログラムを起動した後、ポートに次のように通知する必要があります。
+プログラムを起動した後、次のようにポートに通知する必要があります。
 
-1. ポートは、新しいプログラム ノードを受信すると、プログラム作成イベントをデバッグ セッションに送り返します。 イベントは、プログラムを表すインターフェイスを持ちます。
+1. ポートは、新しいプログラムノードを受け取ると、デバッグセッションにプログラム作成イベントを送り返します。 このイベントには、プログラムを表すインターフェイスが含まれています。
 
-2. デバッグ セッションは、アタッチできるデバッグ エンジン (DE) の識別子をプログラムに照会します。
+2. デバッグセッションは、にアタッチできるデバッグエンジン (DE) の識別子をプログラムに対して照会します。
 
-3. デバッグ セッションは、DE がそのプログラムで許容される DE の一覧にあるかどうかを確認します。 デバッグ セッションは、デバッグ パッケージによって元々渡される、ソリューションのアクティブなプログラム設定からこの一覧を取得します。
+3. デバッグセッションは、そのプログラムの使用可能な DEs の一覧に DE があるかどうかを確認します。 デバッグセッションでは、ソリューションのアクティブなプログラム設定からこのリストを取得します。この設定は、最初はデバッグパッケージによって渡されます。
 
-    DE は許容リストに含める必要があります。
+    DE は許可リストに存在する必要があります。そうでない場合、DE はプログラムにアタッチされません。
 
-   プログラムを使用すると、ポートが最初に新しいプログラム ノードを受信したときに、プログラムを表す[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスが作成されます。
-
-> [!NOTE]
-> これは、デバッグ エンジン (DE) によって後で`IDebugProgram2`作成されるインターフェイスと混同しないでください。
-
- ポートは、COM`IConnectionPoint`インターフェイスを使用してセッション デバッグ マネージャー (SDM) に[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)プログラム作成イベントを送信します。
+   プログラムによって、ポートが最初に新しいプログラムノードを受け取ると、プログラムを表す [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスが作成されます。
 
 > [!NOTE]
-> これは、後で`IDebugProgramCreateEvent2`DE によって送信されるインターフェイスと混同しないでください。
+> これは、 `IDebugProgram2` 後でデバッグエンジン (DE) によって作成されたインターフェイスと混同しないようにしてください。
 
- イベント インターフェイス自体と共に、ポートは、それぞれポート、プロセス、およびプログラムを表す[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) [、IDebugProcess2、](../../extensibility/debugger/reference/idebugprocess2.md)および[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスを送信します。 SDM は、プログラムをデバッグできる DE の GUID を取得するために[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)を呼び出します。 GUID はもともと[IDebug プログラムノード2](../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイスから取得されました。
+ ポートは、COM インターフェイスを介して [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) プログラム作成イベントをセッションデバッグマネージャー (SDM) に送り返し `IConnectionPoint` ます。
 
- SDM は、DE が許容可能な DE のリストにあるかどうかを確認します。 SDM は、ソリューションのアクティブなプログラム設定からこのリストを取得します。 DE は許容リストに含める必要があります。
+> [!NOTE]
+> これは、 `IDebugProgramCreateEvent2` 後で DE によって送信されるインターフェイスと混同しないようにしてください。
 
- DE の ID が認識されると、SDM はプログラムにアタッチする準備が整います。
+ ポートは、イベントインターフェイス自体と共に、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)、 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)、および [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) の各インターフェイスを送信します。これらのインターフェイスは、それぞれポート、プロセス、およびプログラムを表します。 SDM は [IDebugProgram2:: GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) を呼び出して、プログラムをデバッグできる DE の GUID を取得します。 GUID はもともと、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) インターフェイスから取得されています。
+
+ SDM は、DE が許可されている DEs の一覧にあるかどうかを確認します。 SDM は、ソリューションのアクティブなプログラム設定からこのリストを取得します。この設定は、最初はデバッグパッケージによって渡されます。 DE は許可リストに存在する必要があります。そうでない場合は、プログラムにアタッチされません。
+
+ DE の id がわかったら、SDM はプログラムにアタッチする準備ができています。
 
 ## <a name="see-also"></a>関連項目
 - [プログラムの起動](../../extensibility/debugger/launching-a-program.md)
 - [起動後のアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)
-- [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)
+- [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

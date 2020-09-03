@@ -1,5 +1,5 @@
 ---
-title: プログラムノード |マイクロソフトドキュメント
+title: プログラムノード |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,29 +14,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738219"
 ---
 # <a name="program-nodes"></a>プログラムノード
-デバッガアーキテクチャでは、*プログラムノード*:
+デバッガーアーキテクチャでは、 *プログラムノード*は次のようになります。
 
-- プログラムの軽量説明です。
+- は、プログラムの簡易な説明です。
 
-- 自分自身とそれが実行されているプロセスを識別できます。 プログラム ノードは、アタッチ、デタッチ、およびデバッグ エンジン (存在する場合) を作成したデバッグ エンジン (DE) を記述できます。
+- は、自身と、それが実行されているプロセスを識別できます。 プログラムノードをアタッチしてからデタッチし、それを作成したデバッグエンジン (DE) を記述することができます (存在する場合)。
 
-- 通常は DE またはポートによって作成される[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイスによって表されます。 プログラム ノードは[、AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)を呼び出すことによってポートに追加されます。 プログラム ノードがポートに追加されると、このプログラム ノードが表すプログラムを含むプロセスに追加されます。
+- は、通常、DE またはポートによって作成される [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) インターフェイスによって表されます。 プログラムノードは、 [Addprogramnode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)を呼び出すことによってポートに追加されます。 プログラムノードがポートに追加されると、このプログラムノードが表すプログラムを含むプロセスに追加されます。
 
-  デバッグ・セッションが開始された後、デバッグ・パッケージの実装に応じて、プログラム・ノードを使用して対応するプログラムが作成されます。 プロセスがプログラムに対して照会されると、プログラムはプログラム ノードごとに 1 つずつ列挙されます。
+  デバッグセッションの開始後、デバッグパッケージの実装によっては、プログラムノードを使用して対応するプログラムが作成されます。 プログラムのプロセスが照会されると、プログラムが列挙されます。プログラムノードごとに1つのプログラムが列挙されます。
 
-  プログラムがアタッチされる前に、IDE はプログラムの軽量説明のみを必要とします。 この情報はプログラム・ノードから取得できます。 プログラムがアタッチされると、IDE は、プログラムで実行されているすべてのスレッドの一覧など、より詳細な情報を表示します。 この情報はプログラム自体から取得されます。
+  プログラムをにアタッチする前に、IDE には、プログラムの簡易記述のみが必要です。 この情報は、プログラムノードから取得できます。 プログラムがにアタッチされると、IDE では、プログラムで実行されているすべてのスレッドの一覧など、より詳細な情報が表示されます。 この情報は、プログラム自体から取得されます。
 
 ## <a name="see-also"></a>関連項目
 - [Programs](../../extensibility/debugger/programs.md)
-- [プロセス](../../extensibility/debugger/processes.md)
-- [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)
+- [処理](../../extensibility/debugger/processes.md)
+- [デバッグエンジン](../../extensibility/debugger/debug-engine.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

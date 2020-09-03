@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 目次内のトピックを検索する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651880"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>方法 : 目次でトピックを検索する
@@ -32,7 +32,7 @@ ms.locfileid: "72651880"
 > TOC で使用できるトピックの範囲は、選択したフィルターによって異なります。
 
 ## <a name="filter-the-toc"></a>TOC のフィルター処理
- 目次をフィルター処理して、 **[目次]** タブに表示されるトピックの範囲を絞り込むことができます。タイトルは、指定した用語のルートが含まれている場合にのみ一覧に表示されます。 たとえば、フィルターとして「troubleshooting」を指定すると、「troubleshoot」または「troubleshooting」を含むタイトルのみが表示されます。 タイトルに用語が含まれないノードは、省略記号 (...) と共に単一のノードに折りたたまれます。
+ 目次をフィルター処理して、[ **目次** ] タブに表示されるトピックの範囲を絞り込むことができます。タイトルは、指定した用語のルートが含まれている場合にのみ、一覧に表示されます。 たとえば、フィルターとして「troubleshooting」を指定すると、「troubleshoot」または「troubleshooting」を含むタイトルのみが表示されます。 タイトルに用語が含まれないノードは、省略記号 (...) と共に単一のノードに折りたたまれます。
 
 #### <a name="to-filter-the-toc"></a>TOC をフィルター処理するには
 
