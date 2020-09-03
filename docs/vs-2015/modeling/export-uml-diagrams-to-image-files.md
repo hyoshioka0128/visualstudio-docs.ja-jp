@@ -10,26 +10,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669655"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>UML 図をイメージ ファイルにエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UML ドキュメントを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] からプログラムコントロールの下にあるイメージにエクスポートできます。 たとえば、このエクスポートをドキュメントの自動生成の一部として実行できます。
+から、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プログラムコントロールの下にあるイメージに UML ドキュメントをエクスポートできます。 たとえば、このエクスポートをドキュメントの自動生成の一部として実行できます。
 
- ドキュメントをイメージに手動でエクスポートする場合は、図から図形をコピーして Word などの他のプログラムに貼り付けることができます。 ドキュメントを XPS 形式にして印刷することもできます。 詳細については、「[イメージとしてダイアグラムをエクスポート](../modeling/export-diagrams-as-images.md)する」を参照してください。
+ ドキュメントをイメージに手動でエクスポートする場合は、図から図形をコピーして Word などの他のプログラムに貼り付けることができます。 ドキュメントを XPS 形式にして印刷することもできます。 詳細については、「 [イメージとしてダイアグラムをエクスポート](../modeling/export-diagrams-as-images.md)する」を参照してください。
 
 ## <a name="saving-an-image"></a>イメージの保存
  次のコードでは、イメージをファイルに保存するショートカット メニュー コマンド ("コンテキスト メニュー コマンド" とも呼ばれる) を定義しています。
 
 > [!NOTE]
-> このコードをメニュー コマンドとして機能させるには、このコードを MEF コンポーネントに組み込む必要があります。 詳細については、「[モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
+> このコードをメニュー コマンドとして機能させるには、このコードを MEF コンポーネントに組み込む必要があります。 詳細については、「 [モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
 
- このコードでは、まず[Ishape. GetObject](/previous-versions/ee789371(v=vs.140))を使用して、基になる実装の <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> を取得します。 この型には <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> メソッドがあります。
+ このコードでは、まず [Ishape. GetObject](/previous-versions/ee789371(v=vs.140)) を使用して、 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 基になる実装のを取得します。 この型には <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> メソッドがあります。
 
 ```
 namespace SaveToImage

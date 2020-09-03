@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: エディター拡張機能でショートカット キーの使用 |Microsoft Docs'
+title: 'チュートリアル: エディター拡張機能でのショートカットキーの使用 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,44 +11,44 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201940"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でショートカット キーを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エディター拡張機能で、ショートカット キーに応答することができます。 次のチュートリアルでは、テキスト ビューにショートカット キーを使用してビューの表示要素を追加する方法を示します。 このチュートリアルは、ビューポート adornment エディター テンプレートに基づいており、使用して、表示要素を追加することができます、+ 文字。  
+エディター拡張機能のショートカットキーに応答できます。 次のチュートリアルでは、ショートカットキーを使用して、ビューの表示要素をテキストビューに追加する方法について説明します。 このチュートリアルは、ビューポートの表示要素エディターテンプレートに基づいており、+ 文字を使用して表示要素を追加できます。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトの作成  
   
-1. C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `KeyBindingTest`の名前を指定します。  
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `KeyBindingTest` します。  
   
-2. エディターのテキストの表示要素の項目テンプレートをプロジェクトに追加し、名前`KeyBindingTest`します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
+2. エディターのテキスト表示項目テンプレートをプロジェクトに追加し、という名前を指定 `KeyBindingTest` します。 詳細については、「 [エディター項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)」を参照してください。  
   
-3. 次の参照を追加し、設定**CopyLocal**に`false`:  
+3. 次の参照を追加し、 **CopyLocal** をに設定し `false` ます。  
   
-    Microsoft.VisualStudio.Editor  
+    VisualStudio  
   
     Microsoft.VisualStudio.OLE.Interop  
   
-    Microsoft.VisualStudio.Shell.14.0  
+    VisualStudio. 14.0  
   
-    Microsoft.VisualStudio.TextManager.Interop  
+    VisualStudio。相互運用  
   
-   KeyBindingTest クラス ファイルでは、PurpleCornerBox にクラス名を変更します。 左余白に表示される電球を使用して、他の適切な変更を行います。 コンス トラクター内から装飾層の名前を変更する**KeyBindingTest**に**PurpleCornerBox**:  
+   KeyBindingTest クラスファイルで、クラス名を PurpleCornerBox に変更します。 左余白に表示される電球を使用して、その他の適切な変更を行います。 コンストラクター内で、装飾層の名前を **Keybindingtest** から **PurpleCornerBox**に変更します。  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
   
-## <a name="defining-the-command-filter"></a>コマンドのフィルターを定義します。  
- コマンドのフィルターの実装は、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>、表示要素をインスタンス化して、コマンドを処理します。  
+## <a name="defining-the-command-filter"></a>コマンドフィルターの定義  
+ コマンドフィルターは、を実装したもので <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 、装飾をインスタンス化することによってコマンドを処理します。  
   
 1. クラス ファイルを追加し、その名前を `KeyBindingCommandFilter`にします。  
   
@@ -63,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3. KeyBindingCommandFilter という名前のクラスを継承する必要があります<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。  
+3. KeyBindingCommandFilter という名前のクラスは、から継承する必要があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4. コマンドのチェーン、およびコマンド フィルターが既に追加されているかどうかを表すフラグで、テキスト ビューのプライベート フィールドを次のコマンドを追加します。  
+4. テキストビューのプライベートフィールド、コマンドチェーンの次のコマンド、およびコマンドフィルターが既に追加されているかどうかを示すフラグを追加します。  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -78,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5. テキスト ビューを設定するコンス トラクターを追加します。  
+5. テキストビューを設定するコンストラクターを追加します。  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -88,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6. 実装、`QueryStatus()`メソッドとして、次のとおりです。  
+6. 次のように、メソッドを実装し `QueryStatus()` ます。  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -97,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7. 実装、`Exec()`メソッドため場合、ビューに追加します紫色のボックスをその it のを + 文字を入力します。  
+7. `Exec()`+ 文字が入力されている場合に、ビューに紫色のボックスを追加するように、メソッドを実装します。  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -121,10 +121,10 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>コマンドのフィルターを追加します。  
- Adornment プロバイダーは、テキスト ビューにコマンド フィルターを追加する必要があります。 この例で、プロバイダーを実装して<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>テキスト ビューの作成イベントをリッスンするようにします。 この表示要素のプロバイダーには、表示要素の Z オーダーを定義する装飾層もエクスポートされます。  
+## <a name="adding-the-command-filter"></a>コマンドフィルターを追加する  
+ 表示要素プロバイダーは、コマンドフィルターをテキストビューに追加する必要があります。 この例では、プロバイダーがを実装して、 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> テキストビュー作成イベントをリッスンします。 この装飾プロバイダーは、装飾の Z オーダーを定義する、装飾層もエクスポートします。  
   
-1. 次の追加、KeyBindingTestTextViewCreationListener ファイルでステートメントを使用します。  
+1. Keybindingtesttextviewのファイルに、次の using ステートメントを追加します。  
   
     ```csharp  
     using System;  
@@ -139,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2. 装飾層の定義でから AdornmentLayer の名前を変更する**KeyBindingTest**に**PurpleCornerBox**します。  
+2. 装飾層の定義で、AdornmentLayer の名前を **Keybindingtest** から **PurpleCornerBox**に変更します。  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -148,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3. テキスト ビュー アダプターを取得するには、インポートする必要があります、<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>します。  
+3. テキストビューアダプターを取得するには、をインポートする必要があり <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> ます。  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4. 変更、<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>メソッドを追加するため、`KeyBindingCommandFilter`します。  
+4. を <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 追加するようにメソッドを変更し `KeyBindingCommandFilter` ます。  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5. `AddCommandFilter`ハンドラーがテキスト ビュー アダプターを取得し、コマンドのフィルターを追加します。  
+5. `AddCommandFilter`ハンドラーはテキストビューアダプターを取得し、コマンドフィルターを追加します。  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -189,10 +189,10 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-## <a name="making-the-adornment-appear-on-every-line"></a>表示要素を行うすべての行に表示されます。  
- すべての文字で表示されていた元の表示要素の ' a' のテキスト ファイル。 '+' 文字への応答の表示要素を追加するコードを変更しましたが、これで、行にのみ表示要素を追加で、'+' は型指定します。 1 回以上表示要素が表示されるように、表示要素のコードを変更できますすべて 'a'。  
+## <a name="making-the-adornment-appear-on-every-line"></a>すべての行に表示要素を表示する  
+ 元の表示要素は、テキストファイル内のすべての文字 "a" に表示されます。 これで、' + ' 文字に応答して装飾を追加するようにコードを変更したので、' + ' が入力された行にのみ、装飾を追加します。 表示要素のコードを変更して、すべての "a" に表示されるようになります。  
   
- KeyBindingTest.cs ファイルでは、'a' 文字の装飾にビュー内のすべての行を反復処理する CreateVisuals() メソッドを変更します。  
+ KeyBindingTest.cs ファイルで、CreateVisuals () メソッドを変更して、' a ' 文字を修飾するビュー内のすべての行を反復処理します。  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  
@@ -240,6 +240,6 @@ private void CreateVisuals(ITextViewLine line)
   
 1. KeyBindingTest ソリューションをビルドし、実験用インスタンスで実行します。  
   
-2. 作成するか、テキスト ファイルを開きます。 文字を含む一部の単語の入力 'a' と入力し、+、テキスト ビューで任意の場所。  
+2. テキストファイルを作成するか、開きます。 文字 "a" を含む単語を入力し、テキストビューの任意の場所に「+」と入力します。  
   
-     紫色の四角形は、ファイル内のすべての 'a' 文字に表示する必要があります。
+     紫色の四角形は、ファイル内のすべての ' a ' 文字に表示されます。

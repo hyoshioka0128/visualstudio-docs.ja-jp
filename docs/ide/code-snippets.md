@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585419"
 ---
 # <a name="code-snippets"></a>コード スニペット
@@ -31,7 +31,7 @@ ms.locfileid: "75585419"
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[コード スニペット (Visual Studio for Mac)](/visualstudio/mac/snippets)」を参照してください。
 
-コード スニペットは、C#、C++、Visual Basic、XML、T-SQL など、多数の言語で利用できます。 ある言語で使用可能なすべてのインストール済みスニペットを表示するには、 **[ツール]** メニューの **[コード スニペット マネージャー]** を開き (または、**Ctrl**+**K** キー、**Ctrl**+**B** キーを押して)、上部のドロップダウン メニューから言語を選択します。
+コード スニペットは、C#、C++、Visual Basic、XML、T-SQL など、多数の言語で利用できます。 ある言語で使用可能なすべてのインストール済みスニペットを表示するには、**[ツール]** メニューの **[コード スニペット マネージャー]** を開き (または、**Ctrl**+**K** キー、**Ctrl**+**B** キーを押して)、上部のドロップダウン メニューから言語を選択します。
 
 ![[コード スニペット マネージャー] ダイアログ ボックス](media/code-snippets-manager.png)
 

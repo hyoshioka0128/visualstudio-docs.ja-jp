@@ -18,31 +18,31 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281631"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>チュートリアル: トランザクションにデータを保存する
 
 このチュートリアルでは、名前空間を使用してトランザクションにデータを保存する方法について説明 <xref:System.Transactions> します。 このチュートリアルでは、Windows フォームアプリケーションを作成します。 データソース構成ウィザードを使用して、Northwind サンプルデータベースに2つのテーブルのデータセットを作成します。 データバインドコントロールを Windows フォームに追加し、BindingNavigator の [保存] ボタンのコードを変更して、TransactionScope 内のデータベースを更新します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 Visual Studio インストーラーでは、SQL Server Express LocalDB を **.net デスクトップ開発**ワークロードの一部としてインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 Visual Studio インストーラーでは、SQL Server Express LocalDB を **.net デスクトップ開発** ワークロードの一部としてインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの**データストレージと処理**ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[**新しいクエリ**] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
     2. [Northwind transact-sql スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにコピーします。 この T-sql スクリプトでは、Northwind データベースを最初から作成し、データを設定します。
 
-    3. T-sql スクリプトをクエリエディターに貼り付け、[**実行**] ボタンをクリックします。
+    3. T-sql スクリプトをクエリエディターに貼り付け、[ **実行** ] ボタンをクリックします。
 
        しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
@@ -52,37 +52,37 @@ ms.locfileid: "85281631"
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic**を展開し、[ **Windows デスクトップ**] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
-4. プロジェクトに**SavingDataInATransactionWalkthrough**という名前を入力し、[ **OK]** をクリックします。
+4. プロジェクトに **SavingDataInATransactionWalkthrough**という名前を入力し、[ **OK]** をクリックします。
 
      **SavingDataInATransactionWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
 
 ## <a name="create-a-database-data-source"></a>データベースデータソースの作成
 
-この手順では、**データソース構成ウィザード**を使用して、 `Customers` Northwind サンプルデータベースのテーブルとテーブルに基づいてデータソースを作成し `Orders` ます。
+この手順では、 **データソース構成ウィザード** を使用して、 `Customers` Northwind サンプルデータベースのテーブルとテーブルに基づいてデータソースを作成し `Orders` ます。
 
-1. [データ**ソース**] ウィンドウを開くには、[**データ**] メニューの [**データソースの表示**] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
-2. [**データソース**] ウィンドウで [**新しいデータソースの追加**] を選択して、**データソース構成ウィザード**を開始します。
+2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード**を開始します。
 
-3. [**データソースの種類を選択**] 画面で、[**データベース**] を選択し、[**次へ**] を選択します。
+3. [ **データソースの種類を選択** ] 画面で、[ **データベース**] を選択し、[ **次へ**] を選択します。
 
-4. [**データ接続の選択**] 画面で、次のいずれかの操作を行います。
+4. [ **データ接続の選択** ] 画面で、次のいずれかの操作を行います。
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-         \- または -
+         - または -
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。
 
-5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[**次へ**] を選択します。
+5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ**] を選択します。
 
-6. [**アプリケーション構成ファイルへの接続文字列の保存**] 画面で、[**次へ**] を選択します。
+6. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ**] を選択します。
 
-7. [**データベースオブジェクトの選択**] 画面で、[**テーブル**] ノードを展開します。
+7. [ **データベースオブジェクトの選択** ] 画面で、[ **テーブル** ] ノードを展開します。
 
 8. `Customers`テーブルとテーブルを選択し、[ `Orders` **完了**] を選択します。
 
@@ -90,9 +90,9 @@ ms.locfileid: "85281631"
 
 ## <a name="add-controls-to-the-form"></a>フォームへのコントロールの追加
 
-データバインドコントロールを作成するには、[**データソース**] ウィンドウからフォームに項目をドラッグします。
+データバインドコントロールを作成するには、[ **データソース** ] ウィンドウからフォームに項目をドラッグします。
 
-1. [**データソース**] ウィンドウで、[ **Customers** ] ノードを展開します。
+1. [ **データソース** ] ウィンドウで、[ **Customers** ] ノードを展開します。
 
 2. **[データ ソース]** ウィンドウから **Form1** にメインの **[Customers]** ノードをドラッグします。
 
@@ -122,7 +122,7 @@ ms.locfileid: "85281631"
 
 1. **顧客 Sbindingnavigator**の [**保存**] ボタン (フロッピーディスクのアイコンが付いたボタン) を選択します。
 
-2. `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードで置き換えます。
+2. `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードに置き換えます。
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]

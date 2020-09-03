@@ -9,21 +9,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: cf30e3294c1a96e64efd47ffd14f03328ebec62c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75573185"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>マネージド コードの "基本デザイン ガイドライン規則" 規則セット
 
 Microsoft の "基本デザインガイドライン規則" 規則セットを使用して、コードの理解と使用を容易にすることができます。 この規則セットは、プロジェクトにライブラリコードが含まれている場合や、保守が簡単なコードにベストプラクティスを適用する場合に使用してください。
 
-基本的な設計ガイドライン規則には、"[マネージ推奨規則](managed-recommended-rules-rule-set-for-managed-code.md)" 規則セット内のすべての規則が含まれます。
+基本的な設計ガイドライン規則には、" [マネージ推奨規則](managed-recommended-rules-rule-set-for-managed-code.md) " 規則セット内のすべての規則が含まれます。
 
 次の表では、Microsoft 基本デザインガイドライン規則の規則セットに含まれるすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1000](../code-quality/ca1000.md)|ジェネリック型の静的メンバーを宣言しません|
 |[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|

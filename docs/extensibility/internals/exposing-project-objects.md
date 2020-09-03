@@ -1,5 +1,5 @@
 ---
-title: プロジェクト オブジェクトの公開 |マイクロソフトドキュメント
+title: プロジェクトオブジェクトの公開 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81446fa582524872b03199ae707f658776787961
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708471"
 ---
-# <a name="expose-project-objects"></a>プロジェクト オブジェクトを公開する
+# <a name="expose-project-objects"></a>プロジェクトオブジェクトの公開
 
-カスタム プロジェクトの種類は、オートメーション インターフェイスを使用してプロジェクトにアクセスできるようにするためにオートメーション オブジェクトを提供できます。 すべてのプロジェクトの種類は、IDE で<xref:EnvDTE.Project>開かれているすべてのプロジェクトのコレクション<xref:EnvDTE.Solution>を含む からアクセスされる標準のオートメーション オブジェクトを提供する必要があります。 プロジェクト内の各項目は、 で<xref:EnvDTE.ProjectItem>`Project.ProjectItems`アクセスされるオブジェクトによって公開される必要があります。 これらの標準オートメーションオブジェクトに加えて、プロジェクト固有のオートメーションオブジェクトを提供することもできます。
+カスタムプロジェクトの種類でオートメーションオブジェクトを提供して、オートメーションインターフェイスを使用してプロジェクトにアクセスできるようにすることができます。 すべてのプロジェクトの種類は <xref:EnvDTE.Project> 、からアクセスされる標準のオートメーションオブジェクトを提供することを想定しています。このオブジェクトには <xref:EnvDTE.Solution> 、IDE で開いているすべてのプロジェクトのコレクションが含まれています。 プロジェクト内の各項目は、でアクセスされるオブジェクトによって公開されることが想定されてい <xref:EnvDTE.ProjectItem> `Project.ProjectItems` ます。 これらの標準オートメーションオブジェクトに加えて、プロジェクトはプロジェクト固有のオートメーションオブジェクトを提供するように選択できます。
 
-または を使用して`DTE.<customObjectName>`ルート DTE オブジェクトから遅延バインディングにアクセスできるカスタム ルート レベルのオートメーション`DTE.GetObject("<customObjectName>")`オブジェクトを作成できます。 たとえば、Visual C++ では *、C++* プロジェクト固有のプロジェクト コレクション VCProjects を`DTE.VCProjects`作成`DTE.GetObject("VCProjects")`します。 また、プロジェクトの種類`Project.Object`に対して一意である、 、最`Project.CodeModel`派生オブジェクト`ProjectItem`を照会できる 、 を作成`ProjectItem.Object`することもできます。 `ProjectItem.FileCodeModel`
+またはを使用してルート DTE オブジェクトから遅延バインディングにアクセスできる、カスタムルートレベルのオートメーションオブジェクトを作成でき `DTE.<customObjectName>` `DTE.GetObject("<customObjectName>")` ます。 たとえば、Visual C++ は、またはを使用してアクセスできる *Vcprojects* という C++ プロジェクト固有のプロジェクトコレクションを作成し `DTE.VCProjects` `DTE.GetObject("VCProjects")` ます。 を作成することもできます `Project.Object` 。これは、プロジェクトの種類に対して一意であり、 `Project.CodeModel` 最も派生したオブジェクトに対してクエリを実行できる、およびを公開するを作成し `ProjectItem` `ProjectItem.Object` `ProjectItem.FileCodeModel` ます。
 
-プロジェクトでは、プロジェクト固有のカスタム プロジェクト コレクションを公開するのが一般的な規則です。 たとえば、[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]または を使用して`DTE.VCProjects`アクセスできる C++ 固有のプロジェクト`DTE.GetObject("VCProjects")`コレクションを作成します。 また、プロジェクトの種類`Project.Object`に対して一意である、 、`Project.CodeModel`その最派生オブジェクト、を公開する`ProjectItem`、 を照会する 、`ProjectItem.Object`を作成することもできます。 `ProjectItem.FileCodeModel`
+プロジェクトは、プロジェクト固有のカスタムプロジェクトコレクションを公開するための一般的な規則です。 たとえば、 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] は、またはを使用してアクセスできる C++ 特定のプロジェクトコレクションを作成し `DTE.VCProjects` `DTE.GetObject("VCProjects")` ます。 また、 `Project.Object` プロジェクトの種類に対して一意のを作成することもできます。これは、最も派生したオブジェクト、、を公開する、およびを照会することができ `Project.CodeModel` `ProjectItem` `ProjectItem.Object` `ProjectItem.FileCodeModel` ます。
 
-## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>プロジェクトに VSPackage 固有のオブジェクトを提供するには
+## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>プロジェクトの VSPackage 固有のオブジェクトを投稿するには
 
-1. VS パッケージの *.pkgdef*ファイルに適切なキーを追加します。
+1. VSPackage の *pkgdef* ファイルに適切なキーを追加します。
 
-     たとえば、C++ 言語プロジェクトの *.pkgdef*設定を次に示します。
+     たとえば、C++ 言語プロジェクトの *pkgdef* 設定を次に示します。
 
     ```
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
@@ -39,7 +39,7 @@ ms.locfileid: "80708471"
     "VCProjectEngineEventsObject"=""
     ```
 
-2. 次の例のように、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>メソッドにコードを実装します。
+2. 次の例のように、メソッドにコードを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ます。
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(
@@ -69,7 +69,7 @@ ms.locfileid: "80708471"
     }
     ```
 
-     コード内の`g_wszAutomationProjects`プロジェクト コレクションの名前です。 この`GetAutomationProjects`メソッドは、インターフェイスを実装するオブジェクト`Projects`を作成し、`IDispatch`呼び出し元のオブジェクトへのポインターを返します。
+     コードでは、 `g_wszAutomationProjects` はプロジェクトコレクションの名前です。 メソッドは、 `GetAutomationProjects` `Projects` 次のコード例に示すように、インターフェイスを実装し、 `IDispatch` 呼び出し元のオブジェクトへのポインターを返すオブジェクトを作成します。
 
     ```cpp
     HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)
@@ -87,9 +87,9 @@ ms.locfileid: "80708471"
     }
     ```
 
-     オートメーションオブジェクトの一意の名前を選択します。 名前の競合は予測不能であり、複数のプロジェクトの種類が同じ名前を使用している場合、競合するオブジェクト名が任意にスローされます。 オートメーション オブジェクトの名前には、会社名またはその製品名の一意の側面を含める必要があります。
+     オートメーションオブジェクトの一意の名前を選択します。 名前の競合は予測できません。また、複数のプロジェクトの種類で同じ名前を使用している場合は、競合するオブジェクト名が任意にスローされます。 オートメーションオブジェクトの名前に、会社名または製品名の固有の側面を含める必要があります。
 
-     カスタム`Projects`コレクション オブジェクトは、プロジェクトオートメーションモデルの残りの部分の便利なエントリポイントです。 プロジェクト オブジェクトには、<xref:EnvDTE.Solution>プロジェクト コレクションからもアクセスできます。 コンシューマーに`Projects`コレクション オブジェクトを提供する適切なコードとレジストリ エントリを作成したら、実装でプロジェクト モデルの残りの標準オブジェクトを提供する必要があります。 詳細については、「[プロジェクトモデリング](../../extensibility/internals/project-modeling.md)」を参照してください。
+     カスタム `Projects` コレクションオブジェクトは、プロジェクトオートメーションモデルの残りの部分の便利なエントリポイントです。 プロジェクトオブジェクトは、プロジェクトコレクションからアクセスすることもでき <xref:EnvDTE.Solution> ます。 コンシューマーにコレクションオブジェクトを提供する適切なコードとレジストリエントリを作成したら `Projects` 、その実装でプロジェクトモデルの残りの標準オブジェクトを提供する必要があります。 詳細については、「 [プロジェクトモデリング](../../extensibility/internals/project-modeling.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

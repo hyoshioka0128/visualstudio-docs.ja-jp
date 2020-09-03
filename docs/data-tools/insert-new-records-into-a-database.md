@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281995"
 ---
 # <a name="insert-new-records-into-a-database"></a>データベースに新しいレコードを挿入する
 
 新しいレコードをデータベースに挿入するには、メソッド、 `TableAdapter.Update` または TableAdapter の DBDirect メソッド (具体的にはメソッド) のいずれかを使用でき `TableAdapter.Insert` ます。 詳細については、「 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
-アプリケーションで Tableadapter を使用しない場合は、コマンドオブジェクト (など) を使用し <xref:System.Data.SqlClient.SqlCommand> てデータベースに新しいレコードを挿入できます。
+アプリケーションで Tableadapter を使用しない場合は、コマンドオブジェクト (など) を使用し  <xref:System.Data.SqlClient.SqlCommand> てデータベースに新しいレコードを挿入できます。
 
 アプリケーションでデータセットを使用してデータを格納する場合は、メソッドを使用し `TableAdapter.Update` ます。 メソッドは、 `Update` すべての変更 (更新、挿入、および削除) をデータベースに送信します。
 

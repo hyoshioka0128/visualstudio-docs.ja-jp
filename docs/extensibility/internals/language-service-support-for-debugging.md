@@ -1,5 +1,5 @@
 ---
-title: デバッグのための言語サービスサポート |マイクロソフトドキュメント
+title: デバッグのための言語サービスサポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c80e8e1f584b1728f342cb596b689f6a22c9297
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707428"
 ---
 # <a name="language-service-support-for-debugging"></a>デバッグのための言語サービスのサポート
-言語サービスは、インターフェイスを介してデバッガーをサポートする<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>機能を提供できます。 これらの機能には、ブレークポイントの検証と**Autos**ウィンドウへの式の一覧の指定が含まれます。
+言語サービスは、インターフェイスを介してデバッガーをサポートする機能を提供でき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> ます。 これらの機能には、ブレークポイントの検証や、[ **自動変数** ] ウィンドウへの式の一覧の指定が含まれます。
 
- ただし、言語をデバッグするには、式エバリュエーターが必要です。 式エバリュエーターは、デバッグ中に値を生成する式を評価します。 CLR 式エバリュエーターの実装については、次の Web サイトを参照してください。
+ ただし、言語をデバッグするには、式エバリュエーターが必要です。 式エバリュエーターは、デバッグ中に値を生成する式を評価します。 CLR 式エバリュエーターの実装の詳細については、以下を参照してください。
 
 - [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)
 
 - [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
 
 ## <a name="compiler-output"></a>コンパイラの出力
- コンパイラの種類によって、言語のデバッグを実装するために必要な処理が決まります。 コンパイラが Windows オペレーティング システムを対象とし、.pdb ファイルを書き込む場合は、Visual Studio に統合されたネイティブ コード デバッグ エンジンを使用してプログラムをデバッグできます。 コンパイラが Microsoft 中間言語 (MSIL) を生成する場合は、マネージ コード デバッグ エンジンを使用してプログラムをデバッグできます。 コンパイラが独自のオペレーティング システムまたは別のランタイム環境を対象とする場合は、独自のデバッグ エンジンを記述する必要があります。
+ コンパイラの種類によって、言語のデバッグを実装するために必要なものが決まります。 コンパイラが Windows オペレーティングシステムを対象として .pdb ファイルを書き込む場合は、Visual Studio に統合されているネイティブコードデバッグエンジンを使用してプログラムをデバッグできます。 コンパイラが Microsoft 中間言語 (MSIL) を生成する場合は、マネージコードデバッグエンジンを使用してプログラムをデバッグできます。これは、Visual Studio にも統合されています。 コンパイラが独自のオペレーティングシステムまたは別のランタイム環境を対象としている場合は、独自のデバッグエンジンを作成する必要があります。
 
- 使用言語のデバッグの実装の詳細については、「Visual Studio デバッグ SDK の[概要](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)」を参照してください。
+ 言語のデバッグの実装の詳細については、Visual Studio デバッグ SDK の「 [はじめに](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) 」を参照してください。

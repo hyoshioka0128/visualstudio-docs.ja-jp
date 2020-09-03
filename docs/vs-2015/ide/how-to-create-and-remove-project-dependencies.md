@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : プロジェクトの依存関係を作成および削除する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -19,20 +19,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1403beccdb6bf9b938787f62cb3da2e5bb5c259
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668133"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>方法 : プロジェクトの依存関係を作成および削除する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-複数のプロジェクトを含むソリューションをビルドするとき、最初に特定のプロジェクトをビルドし、他のプロジェクトで使われるコードを生成することが必要な場合があります。 別のプロジェクトによって生成された実行可能コードをプロジェクトで使用するとき、コードを生成するプロジェクトは、そのコードを使うプロジェクトのプロジェクトの依存関係と呼ばれます。 このような依存関係は、 **[プロジェクトの依存関係]** ダイアログ ボックスで定義できます。
+複数のプロジェクトを含むソリューションをビルドするとき、最初に特定のプロジェクトをビルドし、他のプロジェクトで使われるコードを生成することが必要な場合があります。 別のプロジェクトによって生成された実行可能コードをプロジェクトで使用するとき、コードを生成するプロジェクトは、そのコードを使うプロジェクトのプロジェクトの依存関係と呼ばれます。 このような依存関係は、[ **プロジェクトの依存** 関係] ダイアログボックスで定義できます。
 
 ### <a name="to-assign-dependencies-to-projects"></a>プロジェクトに依存関係を割り当てるには
 
-1. ソリューション エクスプローラーでプロジェクトを選択します。
+1. ソリューション エクスプローラーで、プロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[プロジェクトの依存関係]** を選びます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72668133"
 
 ### <a name="to-remove-dependencies-from-projects"></a>プロジェクトから依存関係を削除するには
 
-1. ソリューション エクスプローラーでプロジェクトを選択します。
+1. ソリューション エクスプローラーで、プロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[プロジェクトの依存関係]** を選びます。
 
@@ -62,5 +62,5 @@ ms.locfileid: "72668133"
 
 4. **[依存先]** フィールドで、このプロジェクトの依存関係ではなくなった他のプロジェクトの横にあるチェック ボックスをオフにします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio でのプロジェクトとソリューションのビルドとクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)[ビルド構成](../ide/understanding-build-configurations.md)の[コンパイルと](../ide/compiling-and-building-in-visual-studio.md)ビルド[NIB 方法: プロジェクトプロパティと構成設定を変更する](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

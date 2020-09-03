@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 276ae20887eca4f023bd8934ef3c7e416fbd995c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68190311"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89326591"
 ---
-  **適用対象:** このトピックの情報は、VSTO の追加に適用されます\-で Excel 用のプロジェクト。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
+  **適用対象:** このトピックの情報は、Excel の VSTO アドインのプロジェクトに適用され \- ます。 詳細については、「 [Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。

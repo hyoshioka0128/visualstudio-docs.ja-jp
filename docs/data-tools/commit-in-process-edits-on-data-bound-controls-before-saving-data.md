@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f0369f4410c1eaf5a168a5291feebf64dbc9ee65
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282710"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>データの保存前にデータ バインド コントロールで実行中の編集をコミットする
 
-データバインドコントロールの値を編集する場合、ユーザーは現在のレコードから移動して、更新された値をコントロールがバインドされている基になるデータソースにコミットする必要があります。 [[データソース] ウィンドウ](add-new-data-sources.md)からフォームに項目をドラッグすると、ドロップした最初の項目によって、の [**保存**] ボタンクリックイベントにコードが生成され <xref:System.Windows.Forms.BindingNavigator> ます。 このコード <xref:System.Windows.Forms.BindingSource.EndEdit%2A> は、のメソッドを呼び出し <xref:System.Windows.Forms.BindingSource> ます。 したがって、メソッドの呼び出し <xref:System.Windows.Forms.BindingSource.EndEdit%2A> は、フォームに追加された最初のに対してのみ生成され <xref:System.Windows.Forms.BindingSource> ます。
+データバインドコントロールの値を編集する場合、ユーザーは現在のレコードから移動して、更新された値をコントロールがバインドされている基になるデータソースにコミットする必要があります。 [ [データソース] ウィンドウ](add-new-data-sources.md) からフォームに項目をドラッグすると、ドロップした最初の項目によって、の [ **保存** ] ボタンクリックイベントにコードが生成され <xref:System.Windows.Forms.BindingNavigator> ます。 このコード <xref:System.Windows.Forms.BindingSource.EndEdit%2A> は、のメソッドを呼び出し <xref:System.Windows.Forms.BindingSource> ます。 したがって、メソッドの呼び出し <xref:System.Windows.Forms.BindingSource.EndEdit%2A> は、フォームに追加された最初のに対してのみ生成され <xref:System.Windows.Forms.BindingSource> ます。
 
 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは、現在編集中のデータ バインド コントロールで実行されている変更をコミットします。 したがって、あるデータ バインド コントロールにフォーカスがある状態で **[保存]** ボタンをクリックすると、実際の保存 (`TableAdapterManager.UpdateAll` メソッド) が実行される前に、そのコントロール内のすべての保留中の編集がコミットされます。
 
@@ -36,7 +36,7 @@ ms.locfileid: "85282710"
 > [!NOTE]
 > デザイナーは、 `BindingSource.EndEdit` フォームにドロップされた最初の項目に対してのみコードを追加します。 したがって、 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> フォーム上の各に対してメソッドを呼び出すコード行を追加する必要があり <xref:System.Windows.Forms.BindingSource> ます。 コード行を手動で追加 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> して、それぞれに対してメソッドを呼び出すことができ <xref:System.Windows.Forms.BindingSource> ます。 または、 `EndEditOnAllBindingSources` メソッドをフォームに追加して、保存を実行する前に呼び出すこともできます。
 
-次のコードでは、 [LINQ (統合言語クエリ)](/dotnet/csharp/linq/)クエリを使用し <xref:System.Windows.Forms.BindingSource> てすべてのコンポーネントを反復処理し、 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> フォーム上の各に対してメソッドを呼び出し <xref:System.Windows.Forms.BindingSource> ます。
+次のコードでは、 [LINQ (統合言語クエリ)](/dotnet/csharp/linq/) クエリを使用し <xref:System.Windows.Forms.BindingSource> てすべてのコンポーネントを反復処理し、 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> フォーム上の各に対してメソッドを呼び出し <xref:System.Windows.Forms.BindingSource> ます。
 
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>フォーム上のすべての BindingSource コンポーネントに対して EndEdit を呼び出すには
 

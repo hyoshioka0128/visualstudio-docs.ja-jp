@@ -1,5 +1,5 @@
 ---
-title: Iデバッグブレークポイントバインドイベント2::GetReason |マイクロソフトドキュメント
+title: 'IDebugBreakpointUnboundEvent2:: GetReason |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734723"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-ブレークポイントがバインドされなかった理由を取得します。
+ブレークポイントがバインド解除された理由を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ int GetReason(
 
 ## <a name="parameters"></a>パラメーター
 `pdwUnboundReason`\
-[アウト]ブレークポイントがバインドされていない理由を指定する[BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)列挙体から値を返します。
+入出力ブレークポイントがバインド解除された理由を指定する [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 列挙から値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-理由としては、エディット コンティニュ操作後にブレークポイントが別の場所に再バインドされたり、ブレークポイントが誤ってバインドされたことが判断されたりします。
+## <a name="remarks"></a>解説
+理由として、エディットコンティニュ操作の後にブレークポイントが別の場所に再バインドされているか、ブレークポイントがバインドされたことを示すエラーがあります。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CBreakpointUnboundDebugEventBase**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)示します。
+次の例は、 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)インターフェイスを公開する**Cbreakpointunbounddebugeventbase**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
