@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugArrayField:: GetElementType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3870f28ffb62239d0a092093d28c83d25e92bd31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736335"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
@@ -41,13 +41,13 @@ int GetElementType(
 
 ## <a name="parameters"></a>パラメーター
 `ppType`\
-[アウト]要素の型を記述する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトを返します。
+入出力要素の型を記述する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- オブジェクト[は](../../../extensibility/debugger/reference/idebugarrayfield.md)、配列のすべての要素が同じ型であることを前提としています。
+## <a name="remarks"></a>解説
+ [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)オブジェクトは、配列のすべての要素が同じ型であることを前提としています。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

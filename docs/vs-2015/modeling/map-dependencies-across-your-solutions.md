@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548084"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>ソリューション間の依存関係をマップする
@@ -51,7 +51,7 @@ ms.locfileid: "85548084"
 
 - [コード マップで複雑なコードを理解する](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
-## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a>コードマップを使ってみる
+## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a> コードマップを使ってみる
  **コード マップを使用するには、次のいずれかが必要です**。
 
 - Visual Studio Enterprise: コード エディター、ソリューション エクスプローラー、クラス ビュー、またはオブジェクト ブラウザーからコード マップを生成できます。
@@ -115,9 +115,9 @@ ms.locfileid: "85548084"
 
      空のマップが作成されますが、現在のソリューションのフォルダーには表示されません。
 
-## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a>全体的な依存関係の表示
+## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a> 全体的な依存関係の表示
 
-### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a>ソリューション間の依存関係を表示する
+### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a> ソリューション間の依存関係を表示する
 
 1. **[アーキテクチャ]** メニューで、 **[ソリューションのコード マップを生成]** をクリックします。
 
@@ -142,7 +142,7 @@ ms.locfileid: "85548084"
     または、キーボードを使用して項目を選択し、プラスキー () を押し **+** ます。 さらに深いレベルのコードを確認するには、名前空間、型、およびメンバーに対して同じ操作を行います。
 
    > [!TIP]
-   > マウス、キーボード、およびタッチを使用したコードマップの操作の詳細については、「[コードマップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)」を参照してください。
+   > マウス、キーボード、およびタッチを使用したコードマップの操作の詳細については、「 [コードマップの参照および再配置](../modeling/browse-and-rearrange-code-maps.md)」を参照してください。
 
 5. マップを簡略化し個々の部分に注目するには、コード マップ ツールバーで **[フィルター]** を選択し、必要なノードおよびリンクの種類だけを選択します。 たとえば、すべてのソリューション フォルダーとアセンブリのコンテナーを非表示にできます。
 
@@ -230,7 +230,7 @@ ms.locfileid: "85548084"
 
      ![クラスとメンバーのレベルにグループを展開する](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")
 
-     コードに含まれるがマップに表示されないメンバーを表示するには、グループの左上隅にある**再フェッチ children**アイコン![再フェッチ children アイコン](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon")をクリックします。
+     コードに含まれるがマップに表示されないメンバーを表示するには、グループの左上隅にある **再フェッチ children** アイコン ![再フェッチ children アイコン](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") をクリックします。
 
 6. マップ上の項目に関連する項目をさらに表示するには、1 つを選択し、コード マップ ツールバーで **[関連表示]** を選択して、マップに追加する関連項目の種類を選択します。 あるいは、1 つまたは複数の項目を選択し、ショートカット メニューを開き、マップに追加する関連項目の種類の **[表示...]** オプションを選択します。 次に例を示します。
 
@@ -298,7 +298,7 @@ ms.locfileid: "85548084"
 
      ![.H ファイルの最初の&#45;レベルの依存関係グラフ](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
-### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a>C および C++ コードのマップのトラブルシューティング
+### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a> C および C++ コードのマップのトラブルシューティング
  これらの項目は C および C++ コードではサポートされていません。
 
 - 基本型は、親階層を含むマップには表示されません。
@@ -307,16 +307,16 @@ ms.locfileid: "85548084"
 
   C および C++ のコードのコード マップを生成するときに、次の問題が発生する場合があります。
 
-|**問題点**|**考えられる原因**|**解決策**|
+|**問題点**|**考えられる原因**|**解像度**|
 |---------------|------------------------|--------------------|
 |コード マップを生成できませんでした。|ソリューション内のプロジェクトが正常にビルドされませんでした。|発生したビルド エラーを修正してから、マップを再生成します。|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [アーキテクチャ] **メニューからコード マップを生成しようとすると、** が応答しなくなる。|プログラム データベース (.pdb) ファイルが壊れている可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|ソリューションをリビルドしてから、もう一度実行します。|
-|IntelliSense 参照データベースの特定の設定が無効になる。|IntelliSense の特定の設定が、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**[オプション]** ダイアログ ボックスで無効になっている可能性があります。|設定をオンにして有効にします。<br /><br /> 「[オプション」、「テキストエディター」、「C/c + +」、「詳細](../ide/reference/options-text-editor-c-cpp-advanced.md)」を参照してください。|
+|IntelliSense 参照データベースの特定の設定が無効になる。|IntelliSense の特定の設定が、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**[オプション]** ダイアログ ボックスで無効になっている可能性があります。|設定をオンにして有効にします。<br /><br /> 「 [オプション」、「テキストエディター」、「C/c + +」、「詳細](../ide/reference/options-text-editor-c-cpp-advanced.md)」を参照してください。|
 |" **不明なメソッド** " という内容のメッセージがメソッド ノードで表示される。<br /><br /> この問題は、メソッドの名前を解決できないために発生します。|バイナリ ファイルにベース再配置テーブルがない可能性があります。|リンカーで **/FIXED:NO** オプションをオンにします。<br /><br /> 「 [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)」を参照してください。|
 ||プログラム データベース (.pdb) ファイルがビルドされていない可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|リンカーで **/DEBUG** オプションをオンにします。<br /><br /> 「 [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)」を参照してください。|
 ||予想される場所で .pdb ファイルを開くことができないか、ファイルが見つかりません。|.pdb ファイルが予想される場所にあることを確認します。|
 ||デバッグ情報が .pdb ファイルから取り除かれています。|**/PDBSTRIPPED** オプションをリンカーで使用した場合は、代わりに完全な .pdb ファイルを使用します。<br /><br /> 「 [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|
-||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [一般的な規則と制限事項](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec (dllimport) を使用した関数呼び出しのインポート](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照:<br /><br /> -   [一般的な規則と制限事項](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec (dllimport) を使用した関数呼び出しのインポート](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a> コード マップをよりすばやく表示する
  マップを初めて生成したときに、Visual Studio は、見つかったすべての依存関係のインデックスを作成します。 このプロセスには、特に大規模なソリューションの場合に時間がかかることがありますが、以降のパフォーマンスは向上します。 コードを変更すると、Visual Studio は、更新されたコードのインデックスだけを再作成します。 マップの表示にかかる時間を最小限に抑えたい場合は、次の作業を検討してください。
@@ -344,7 +344,7 @@ ms.locfileid: "85548084"
 ### <a name="share-the-map-with-other-visual-studio-users"></a>マップを他の Visual Studio ユーザーと共有する
  マップを保存するには、 **[ファイル]** メニューを使用します。
 
- \- または -
+ - または -
 
  マップを特定のプロジェクトの一部として保存するには、マップのツールバーで、[**共有**]、[.dgml の**移動**] の順に選択し、 \<*CodeMapName*> **.dgml into**マップを保存するプロジェクトを選択します。
 
@@ -373,7 +373,7 @@ ms.locfileid: "85548084"
 
 2. ファイルを保存する場所を参照します。
 
-3. コード マップの名前を付けます。 [**名前を付けて保存**] ボックスが**xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選びます。
+3. コード マップの名前を付けます。 [ **名前を付けて保存** ] ボックスが **xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選びます。
 
 ## <a name="what-else-can-i-do"></a>その他にできること
 

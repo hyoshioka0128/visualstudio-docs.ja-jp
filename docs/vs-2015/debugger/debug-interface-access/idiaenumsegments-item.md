@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsegments::item |Microsoft Docs
+title: 'IDiaEnumSegments:: Item |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e69c8123af3ac9061141058d5eb41178e5cd0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189895"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-インデックスを使用してセグメントを取得します。  
+インデックスを使ってセグメントを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,14 +36,14 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>パラメーター  
  インデックス  
- [in]インデックス、 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)を取得するオブジェクト。 インデックスは 0 ~ の範囲内で、 `count`-1 の場合、`count`によって返される、 [idiaenumsegments::get_count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)メソッド。  
+ から取得する [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) オブジェクトのインデックス。 インデックスの範囲は 0 ~ `count` -1 です。ここで `count` 、は [IDiaEnumSegments:: get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) メソッドによって返されます。  
   
  segment  
- [out]返します、 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)必要なセグメントを表すオブジェクト。  
+ 入出力目的のセグメントを表す [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

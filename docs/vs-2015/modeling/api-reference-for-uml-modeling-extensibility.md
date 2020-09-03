@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e48bf723b8b1cb77cc1f7f4de9cfb562caccde84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672808"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>UML モデリング機能拡張の API リファレンス
@@ -27,10 +27,10 @@ ms.locfileid: "72672808"
 
 ## <a name="assemblies"></a>アセンブリ
 
-|Assembly|実行できる操作|
+|アセンブリ|実行できる操作|
 |--------------|--------------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces.dll|-IUseCase、IAssociation などのモデル要素の読み取りと変更を行います。<br />-要素間のリレーションシップをナビゲートします。<br /><br /> 名前空間と型は、UML 仕様で定義されたものに対応しています。|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|-モデル要素の新しいインスタンスを作成します<br />-図形と図にアクセスして変更します。|
 
 ## <a name="see-also"></a>参照
- [UML モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する[Visual STUDIO のモデリング SDK の API リファレンス](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
+ [UML モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)する [Visual STUDIO のモデリング SDK の API リファレンス](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
