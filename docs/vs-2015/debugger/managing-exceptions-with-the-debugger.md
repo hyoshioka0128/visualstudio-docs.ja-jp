@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918956"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>デバッガーでの例外の管理
@@ -67,13 +67,13 @@ ms.locfileid: "75918956"
 ### <a name="setting-the-debugger-to-break-when-an-exception-is-thrown"></a>例外がスローされたときに中断されるようにデバッガーを設定する  
  例外がスローされた時点でデバッガーは実行を中断することができます。これにより、例外ハンドラーが呼び出される前に例外を調査する機会が与えられます。  
   
- **[例外設定]** ウィンドウで、例外のカテゴリのノード (たとえば、 **[共通言語ランタイム例外]** 、すなわち、.NET に関する例外) を展開し、そのカテゴリ内の特定の例外 (たとえば、 **[System.AccessViolationException]** ) のチェックボックスをオンにします。 例外のカテゴリ全体を選択することもできます。  
+ **[例外設定]** ウィンドウで、例外のカテゴリのノード (たとえば、 **[共通言語ランタイム例外]**、すなわち、.NET に関する例外) を展開し、そのカテゴリ内の特定の例外 (たとえば、 **[System.AccessViolationException]**) のチェックボックスをオンにします。 例外のカテゴリ全体を選択することもできます。  
   
- ![チェックされた AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![チェック済みの AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  特定の例外を選択した場合、その例外がスローされるたびに、処理するか処理しないかに関係なく、デバッガーの実行は停止されます。 この時点で、例外は初回例外と呼ばれます。 例として、いくつかのシナリオを以下に示します。  
   
-1. 次の C# コンソール アプリケーションで、Main メソッドは **try/catch** ブロック内で `try/catch` をスローします。  
+1. 次の C# コンソールアプリケーションでは、Main メソッドはブロック内で **accessて Ationexception** をスローし `try/catch` ます。  
   
    ```csharp  
    static void Main(string[] args)  
@@ -135,13 +135,13 @@ ms.locfileid: "75918956"
    }  
    ```  
   
-    **例外設定**で **[access違反 ationexception]** がオンになっている場合、デバッガーでこのコードを実行すると、 **ThrowHandledException ()** と**ThrowUnhandledException ()** の両方の `throw` 行で実行が中断されます。  
+    **例外設定**で [ **access違反 ationexception** ] がオンになっている場合、デバッガーでこのコードを実行すると、 `throw` **ThrowHandledException ()** と**ThrowUnhandledException ()** の両方の行で実行が中断されます。  
   
    例外設定を既定値に戻す場合は、ツールバーの **[復元]** ボタンをクリックします。  
   
-   ![例外設定の既定値に戻す](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![[例外設定] を既定に戻す](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>ユーザーに処理されない例外で続行するようにデバッガーを設定する  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> ユーザーに処理されない例外で続行するようにデバッガーを設定する  
  [ [Just My Code](../debugger/just-my-code.md)] を使用して .NET コードまたは JavaScript コードをデバッグする場合、ユーザー コードで処理されないが他の場所で処理される例外について、中断しないようにデバッガーを設定することができます。  
   
 1. **[例外設定]** ウィンドウでコンテキスト メニューを開くには、ウィンドウで右クリックし、 **[列の表示]** を選択します ( **[マイ コードのみ]** を選択していない場合、このコマンドは表示されません)。  
@@ -152,17 +152,17 @@ ms.locfileid: "75918956"
   
    たとえば、ASP.NET Web アプリケーションは、例外を HTTP 500 状態コードに変換して処理します ([ASP.NET API での例外の処理](/aspnet/web-api/overview/error-handling/exception-handling))。この場合、例外の原因を特定できないことがあります。 次の例では、ユーザー コードは、 `String.Format()` をスローする <xref:System.FormatException>を呼び出します。 実行は次のように中断されます。  
   
-   ![ユーザー&#45;による例外の発生時に中断する](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![ユーザーの&#45;中断される例外](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>例外の追加と削除  
  例外は追加および削除することができます。 任意のカテゴリから任意の種類の例外を削除するには、例外を選択し、 **[例外設定]** ツールバーの **[削除]** ボタン (マイナス記号) をクリックするか、または例外を右クリックし、コンテキスト メニューから **[削除]** をクリックします。 例外を削除することは、例外をオフにするのと同じ結果になります。すなわち、該当する例外がスローされたとき、デバッガーは中断されません。  
   
- 例外を追加するには、 **[例外設定]** ウィンドウで、例外カテゴリの 1 つ (たとえば、 **[共通言語ランタイム]** ) を選択し、 **[追加]** ボタンをクリックします。 例外の名前を入力します (たとえば、 **System.UriTemplateMatchException**)。 例外は一覧 (アルファベット順の) に追加され、自動的にオンになります。  
+ 例外を追加するには、 **[例外設定]** ウィンドウで、例外カテゴリの 1 つ (たとえば、 **[共通言語ランタイム]**) を選択し、 **[追加]** ボタンをクリックします。 例外の名前を入力します (たとえば、 **System.UriTemplateMatchException**)。 例外は一覧 (アルファベット順の) に追加され、自動的にオンになります。  
   
  GPU メモリ アクセス例外、JavaScript ランタイム例外、または Win32 例外というカテゴリに例外を追加する場合は、エラー コードと説明を含める必要があります。  
   
 > [!TIP]
-> スペルを確認してください。 **[例外設定]** ウィンドウでは、追加された例外の存在について確認が行われません。 したがって、「 **Sytem.UriTemplateMatchException**」と入力した場合は、その例外のエントリ ( **System.UriTemplateMatchException**のエントリではなく) が表示されます。  
+> スペルを確認してください。 [ **例外設定** ] ウィンドウでは、追加された例外があるかどうかは確認されません。 そのため、「 **system.uritemplatematchexception**」と入力すると、( **system.uritemplatematchexception**ではなく) その例外のエントリが取得されます。  
   
  例外の設定はソリューションの .suo ファイルに保持され、特定のソリューションに適用されます。 複数のソリューションの間で、特定の例外設定を再利用することはできません。 この時点では、追加された例外だけが保存されます。削除された例外は保持されません。 すなわち、例外を追加してから、ソリューションをいったん閉じて、再度開いた場合、その例外は表示されたままです。 しかし、例外を削除してから、ソリューションをいったん閉じて、再度開いた場合、例外は再表示されます。  
   
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  **[例外設定]** に例外を次のように追加できます。  
   
- ![汎用例外を追加しています](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![一般的な例外の追加](../debugger/media/addgenericexception.png "AddGenericException")  
   
 ## <a name="see-also"></a>参照  
- [例外  後の実行の継続](../debugger/continuing-execution-after-an-exception.md)  
+ [例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)   
  [方法: 例外の後にシステムコードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [方法: ネイティブランタイムチェックを使用](../debugger/how-to-use-native-run-time-checks.md)する   
+ [方法: ネイティブランタイムチェックを使用する](../debugger/how-to-use-native-run-time-checks.md)   
  [C ランタイムライブラリなしのランタイムチェックの使用](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [例外処理アシスタント](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)

@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419277"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションを開発する際に使用できるさまざまなツール、ダイアログ ボックス、およびデザイナーの使用方法を習得できます。 "Hello, World" アプリケーションの作成、UI の設計、コードの追加、エラーのデバッグを行いながら、統合開発環境 ([IDE](visual-studio-ide.md)) での作業方法について学習します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 ::: moniker range="vs-2017"
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?) ページに移動し、無料試用版をインストールしてください。
@@ -64,9 +64,9 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
 1. 新しいプロジェクトを作成します。 メニュー バーから、 **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します。
 
-     ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../media/exploreide-filenewproject.png "[ファイル]、[新規作成]、[プロジェクト] を選択するメニュー バーのスクリーンショット")
+     ![メニュー バーで [ファイル]、[新規作成]、[プロジェクト] を順にクリックします。](../media/exploreide-filenewproject.png "[ファイル]、[新規作成]、[プロジェクト] を選択するメニュー バーのスクリーンショット")
 
-1. **[新しいプロジェクト]** ダイアログで、 **[インストール済み]**  >  **[Visual C#]**  >  **[Windows デスクトップ]** カテゴリを選択し、 **[WPF アプリ (.NET Framework)]** テンプレートを選択します。 プロジェクトに **HelloWPFApp** という名前を付けて、 **[OK]** を選択します。
+1. **[新しいプロジェクト]** ダイアログで、**[インストール済み]** > **[Visual C#]** > **[Windows デスクトップ]** カテゴリを選択し、**[WPF アプリ (.NET Framework)]** テンプレートを選択します。 プロジェクトに **HelloWPFApp** という名前を付けて、 **[OK]** を選択します。
 
      ![Visual Studio の [新しいプロジェクト] ダイアログの WPF アプリ テンプレート](media/exploreide-newprojectcsharp.png "[新しいプロジェクト] ダイアログの WPF アプリ テンプレートのスクリーンショット")
 
@@ -76,11 +76,11 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
 1. Visual Studio 2019 を開きます。
 
-1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/start-window-create-new-project.png "[新しいプロジェクトの作成] ウィンドウのスクリーンショット")
 
-1. **[新しいプロジェクトの作成]** 画面で、"WPF" を検索し、 **[WPF アプリ (.NET Core)]** を選択してから、 **[次へ]** を選択します。
+1. **[新しいプロジェクトの作成]** 画面で、"WPF" を検索し、**[WPF アプリ (.NET Core)]** を選択してから、**[次へ]** を選択します。
 
    ![[新しいプロジェクトの作成] ダイアログの WPF アプリ テンプレート](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "[新しいプロジェクトの作成] ダイアログの WPF アプリ テンプレートのスクリーンショット")
 
@@ -100,9 +100,9 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 > [!NOTE]
 > XAML (eXtensible Application Markup Language) について詳しくは、[WPF のための XAML の概要](/dotnet/framework/wpf/advanced/xaml-overview-wpf)に関するページをご覧ください。
 
-プロジェクトは、作成後にカスタマイズできます。 これを行うには、 **[表示]** メニューの **[プロパティ ウィンドウ]** を選択するか、または **F4** キーを押します。 これで、アプリケーションのプロジェクト項目やコントロールなどの項目のオプションを表示および変更できます。
+プロジェクトは、作成後にカスタマイズできます。 これを行うには、**[表示]** メニューの **[プロパティ ウィンドウ]** を選択するか、または **F4** キーを押します。 これで、アプリケーションのプロジェクト項目やコントロールなどの項目のオプションを表示および変更できます。
 
-   ![プロパティ ウィンドウ](../media/exploreide-hellowpfappfiles.png "WPF ファイル アプリ名が表示されたプロパティ ウィンドウのスクリーンショット")   
+   ![[プロパティ] ウィンドウ](../media/exploreide-hellowpfappfiles.png "WPF ファイル アプリ名が表示されたプロパティ ウィンドウのスクリーンショット")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml の名前を変更する
 
@@ -120,7 +120,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 1. **[ツールボックス]** で、 **[コモン WPF コントロール]** ノードを展開し、TextBlock コントロールを表示します。
 
-     ![TextBlock コントロールが強調表示されたツールボックス](../media/exploreide-textblocktoolbox.png "TextBlock コントロールが強調表示されている [ツールボックス] ウィンドウのスクリーンショット")
+     ![TextBlock コントロールを強調表示したツールボックス](../media/exploreide-textblocktoolbox.png "TextBlock コントロールが強調表示されている [ツールボックス] ウィンドウのスクリーンショット")
 
 1. **TextBlock** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。 ウィンドウの上部付近の中央にコントロールを配置します。 Visual Studio 2019 以降では、赤いガイドラインを使用してコントロールを中央揃えにすることができます。
 
@@ -148,7 +148,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
    </Grid>
    ```
 
-1. 必要に応じて、TextBlock をもう一度中央揃えし、**Ctrl + S** キーを押すか、 **[ファイル]** メニュー項目を使って、変更を保存します。
+1. 必要に応じて、TextBlock をもう一度中央揃えし、**Ctrl + S** キーを押すか、**[ファイル]** メニュー項目を使って、変更を保存します。
 
 次に、2 つの [RadioButton](/dotnet/framework/wpf/controls/radiobutton) コントロールをフォームに追加します。
 
@@ -300,7 +300,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 1. *Greetings.xaml.cs* を開き、`MessageBox.Show("Hello.")` という行を選択します。
 
-1. **[デバッグ]** 、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
+1. **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 
      コード行の横の、エディター ウィンドウの左端の余白部分に、赤い円が表示されます。
 

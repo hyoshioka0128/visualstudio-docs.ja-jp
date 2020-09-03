@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633292"
 ---
 # <a name="msbuild-properties"></a>MSBuild プロパティ
@@ -31,7 +31,7 @@ ms.locfileid: "77633292"
 </PropertyGroup>
 ```
 
- プロジェクト ファイルでプロパティを参照するには、$(\<プロパティ名>) という構文を使用します。 たとえば、前の例に示したプロパティを参照するには、$(BuildDir) と記述します。
+ プロジェクト ファイルでプロパティを参照するには、$(\<PropertyName>) という構文を使用します。 たとえば、前の例に示したプロパティを参照するには、$(BuildDir) と記述します。
 
  プロパティ値を変更するには、プロパティを再定義します。 `BuildDir` プロパティに新しい値を設定するには、次の XML を使用します。
 
