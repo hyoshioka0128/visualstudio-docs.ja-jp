@@ -14,45 +14,45 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255053"
 ---
 # <a name="walkthroughs-using-excel"></a>Excel を使用したチュートリアル
   次のチュートリアルでは、ドキュメント レベルのカスタマイズと VSTO アドインを使用して Microsoft Office Excel を自動化し、ユーザー インターフェイス (UI) をカスタマイズする方法について説明します。
 
 ## <a name="document-level-walkthroughs"></a>ドキュメントレベルのチュートリアル
-- [チュートリアル: Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)用の最初のドキュメントレベルのカスタマイズを作成する excel 用の基本的なドキュメントレベルのカスタマイズを作成する方法について説明します。
+- [チュートリアル: 初めての Excel 用ドキュメントレベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) Excel 用の基本的なドキュメントレベルのカスタマイズを作成する方法を示します。
 
-- [チュートリアル: リボンデザイナー](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)を使用してカスタムタブを作成する Excel ブックのリボンにカスタムタブを追加する方法を示します。
+- [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) Excel ブックのリボンにカスタムタブを追加する方法を示します。
 
-- [チュートリアル: Windows フォーム](../vsto/walkthrough-collecting-data-using-a-windows-form.md)を使用してデータを収集する windows フォームを使用してユーザー入力を収集し、その入力を Excel ワークシートのセルに送信する方法について説明します。
+- [チュートリアル: Windows フォームを使用したデータの収集](../vsto/walkthrough-collecting-data-using-a-windows-form.md) Windows フォームを使用してユーザー入力を収集し、その入力を Excel ワークシートのセルに送信する方法について説明します。
 
-- [チュートリアル: チェックボックスコントロール](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)を使用してワークシートの書式を変更する Excel ワークシートでチェックボックスを使用して書式を変更する方法の基本について説明します。
+- [チュートリアル: CheckBox コントロールを使用したワークシートの書式設定の変更](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) Excel ワークシートでチェックボックスを使用して書式を変更する方法の基本について説明します。
 
-- [チュートリアル: ボタン](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)を使用してワークシートのテキストボックスにテキストを表示する Excel ワークシートでボタンやテキストボックスを使用する方法の基本について説明します。
+- [チュートリアル: ボタンを使用してワークシートのテキストボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md) するExcel ワークシートでボタンとテキストボックスを使用する方法の基本について説明します。
 
-- [チュートリアル: NamedRange コントロール](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)のイベントに対してプログラムを実行すると、ワークシートに<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールを追加し、そのイベントに対してプログラムを実行するための詳細な手順が示されます。
+- [チュートリアル: NamedRange コントロールのイベントに対するプログラミング](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)<xref:Microsoft.Office.Tools.Excel.NamedRange>ワークシートにコントロールを追加し、そのイベントに対してプログラムを実行する手順について説明します。
 
-- [チュートリアル: ドキュメントレベルのプロジェクト](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)の単純データバインディングは、SQL Server データベースの単一のデータフィールドを Excel の名前付き範囲にバインドする方法の基本を示します。
+- [チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) SQL Server データベースの単一のデータフィールドを Excel の名前付き範囲にバインドする方法の基本について説明します。
 
-- [チュートリアル: ドキュメントレベルのプロジェクト](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)での複合データバインディング Excel ワークシートの複数のセルを Northwind SQL Server データベースのフィールドにバインドする方法の基本について説明します。
+- [チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) Excel ワークシートの複数のセルを Northwind SQL Server データベースのフィールドにバインドする方法の基本について説明します。
 
-- [チュートリアル: キャッシュされたデータセット](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)を使用してマスター詳細関係を作成するワークシートでマスター/詳細関係を作成し、ソリューションをオフラインで使用できるようにデータをキャッシュする方法を示します。
+- [チュートリアル: キャッシュされたデータセットを使用したマスター詳細関係の作成](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) ワークシートでマスター/詳細関係を作成し、ソリューションをオフラインで使用できるようにデータをキャッシュする方法を示します。
 
-- [チュートリアル: オプションボタン](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)を使用してワークシートのグラフを更新する Excel ワークシートでオプションボタンを使用してグラフのスタイルを変更する方法の基本について説明します。
+- [チュートリアル: オプションボタンを使用してワークシートのグラフを更新](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) するExcel ワークシートでオプションボタンを使用してグラフのスタイルを変更する方法の基本について説明します。
 
-- [チュートリアル: [Excel 操作] ウィンドウ](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)のコントロールにデータをバインドするデータソースにバインドされているコントロールを excel の操作ウィンドウに追加する方法について説明します。
+- [チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) データソースにバインドされているコントロールを Excel の操作ウィンドウに追加する方法について説明します。
 
 ## <a name="application-level-walkthroughs"></a>アプリケーションレベルのチュートリアル
-- [チュートリアル: Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)用の最初の vsto アドインを作成する excel 用の基本的な vsto アドインを作成する方法を示します。
+- [チュートリアル: 初めての Excel 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) Excel 用の基本的な VSTO アドインを作成する方法を示します。
 
-- [チュートリアル: 実行時に vsto アドインプロジェクト](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)のワークシートにコントロールを追加する vsto アドインを使用してワークシートにコントロールを追加する方法を示します。
+- [チュートリアル: 実行時における VSTO アドインプロジェクトのワークシートへのコントロールの追加](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) VSTO アドインを使用してワークシートにコントロールを追加する方法を示します。
 
-- [チュートリアル: 「Vba](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)から vsto アドインのコードを呼び出す」では、vsto アドインのオブジェクトをブックの vba コードに公開する方法を示します。
+- [チュートリアル: VSTO アドインのコードを VBA から呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md) VSTO アドインのオブジェクトをブックの VBA コードに公開する方法について説明します。
 
-- [チュートリアル: カスタム作業ウィンドウとリボンボタン](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)の同期ユーザーがリボンのトグルボタンをクリックして表示/非表示を切り替えることができるカスタム作業ウィンドウを作成する方法を示します。
+- [チュートリアル: カスタム作業ウィンドウとリボンボタンの同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) リボンのトグルボタンをクリックしてユーザーが表示/非表示を切り替えることができるカスタム作業ウィンドウを作成する方法を示します。
 
-- [チュートリアル: Vsto アドインプロジェクト](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)での複合データバインディングについては、 <xref:Microsoft.Office.Tools.Excel.ListObject> SQL Server データベースのテーブルを Excel 用の vsto アドインのにバインドする方法を示しています。
+- [チュートリアル: VSTO アドインプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) SQL Server データベースのテーブルを Excel 用の VSTO アドインのにバインドする方法を示し <xref:Microsoft.Office.Tools.Excel.ListObject> ます。
