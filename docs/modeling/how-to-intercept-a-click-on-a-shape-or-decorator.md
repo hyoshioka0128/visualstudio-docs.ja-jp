@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532523"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
@@ -123,7 +123,7 @@ public partial class MyShape // change
 
     コンパートメントシェイプを含む独自のソリューションを使用することもできます。 このコードは、図形によって表されるモデル要素と、コンパートメントリスト項目で表される要素の間に埋め込みリレーションシップがあることを前提としています。
 
-2. コンパートメントシェイプの**Double 派生**プロパティを生成するように設定します。
+2. コンパートメントシェイプの **Double 派生** プロパティを生成するように設定します。
 
 3. **Dsl**プロジェクト内のファイルに次のコードを追加します。
 
