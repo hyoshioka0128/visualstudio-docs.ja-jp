@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: 職場または学校アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
 ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906133"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>職場または学校アカウントを使用して Visual Studio サブスクリプションにサインインする 

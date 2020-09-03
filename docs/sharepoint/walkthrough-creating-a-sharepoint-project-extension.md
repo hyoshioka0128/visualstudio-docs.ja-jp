@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015079"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能の作成
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクト拡張機能を使用して、プロジェクトが追加、削除、または名前変更されたときなどのプロジェクトレベルのイベントに応答できます。 また、カスタムプロパティを追加したり、プロパティ値が変更したときに応答したりすることもできます。 プロジェクト項目の拡張機能とは異なり、プロジェクトの拡張機能を特定の SharePoint プロジェクトの種類に関連付けることはできません。 プロジェクト拡張機能を作成すると、で任意の種類の SharePoint プロジェクトが開かれたときに、拡張機能が読み込まれ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
- このチュートリアルでは、「」で作成した任意の SharePoint プロジェクトに追加されるカスタムのブール型プロパティを作成し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 **True**に設定すると、新しいプロパティによって、Images リソースフォルダーがプロジェクトに追加またはマップされます。 **False**に設定すると、Images フォルダーが存在する場合は削除されます。 詳細については、「[方法: マップされたフォルダーを追加および削除](../sharepoint/how-to-add-and-remove-mapped-folders.md)する」を参照してください。
+ このチュートリアルでは、「」で作成した任意の SharePoint プロジェクトに追加されるカスタムのブール型プロパティを作成し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 **True**に設定すると、新しいプロパティによって、Images リソースフォルダーがプロジェクトに追加またはマップされます。 **False**に設定すると、Images フォルダーが存在する場合は削除されます。 詳細については、「 [方法: マップされたフォルダーを追加および削除](../sharepoint/how-to-add-and-remove-mapped-folders.md)する」を参照してください。
 
  このチュートリアルでは、次のタスクについて説明します。
 
@@ -44,7 +45,7 @@ ms.locfileid: "86015079"
 
 - 、SharePoint、およびのサポートされているエディション [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、の**Vsix プロジェクト**テンプレートを使用して、 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] プロジェクトのプロパティ拡張機能を配置するための vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 このチュートリアルでは、の **Vsix プロジェクト** テンプレートを使用して、 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] プロジェクトのプロパティ拡張機能を配置するための vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="create-the-projects"></a>プロジェクトを作成する
  このチュートリアルを完了するには、次の2つのプロジェクトを作成する必要があります。
@@ -61,14 +62,14 @@ ms.locfileid: "86015079"
 
 2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-3. [**新しいプロジェクト**] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[**機能拡張**] ノードを選択します。
+3. [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **機能拡張** ] ノードを選択します。
 
     > [!NOTE]
     > このノードは、Visual Studio SDK をインストールした場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
-4. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 4.5** ] を選択し、[ **VSIX プロジェクト**] テンプレートを選択します。
+4. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 4.5** ] を選択し、[ **VSIX プロジェクト** ] テンプレートを選択します。
 
-5. [**名前**] ボックスに「 **projectextensionpackage**」と入力し、[ **OK** ] をクリックします。
+5. [ **名前** ] ボックスに「 **projectextensionpackage**」と入力し、[ **OK** ] をクリックします。
 
      **Projectextensionpackage**プロジェクトが**ソリューションエクスプローラー**に表示されます。
 
@@ -76,11 +77,11 @@ ms.locfileid: "86015079"
 
 1. **ソリューションエクスプローラー**で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
 
-2. [**新しいプロジェクト**] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **Windows**] を選択します。
+2. [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **Windows**] を選択します。
 
-3. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 4.5** ] を選択し、[**クラスライブラリ**] プロジェクトテンプレートを選択します。
+3. ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 4.5** ] を選択し、[ **クラスライブラリ** ] プロジェクトテンプレートを選択します。
 
-4. [**名前**] ボックスに「 **projectextension**」と入力し、[ **OK** ] をクリックします。
+4. [ **名前** ] ボックスに「 **projectextension**」と入力し、[ **OK** ] をクリックします。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Projectextension**プロジェクトをソリューションに追加し、既定の Class1 コードファイルを開きます。
 
@@ -95,13 +96,13 @@ ms.locfileid: "86015079"
 
 2. **Projectextension**プロジェクトのショートカットメニューを開き、[参照の**追加**] を選択します。
 
-3. [**参照マネージャー-CustomProperty** ] ダイアログボックスで、[ **Framework** ] ノードを選択し、system.componentmodel アセンブリおよび system.string アセンブリの横にあるチェックボックスをオンにします。
+3. [ **参照マネージャー-CustomProperty** ] ダイアログボックスで、[ **Framework** ] ノードを選択し、system.componentmodel アセンブリおよび system.string アセンブリの横にあるチェックボックスをオンにします。
 
-4. [**拡張機能**] ノードを選択し、VisualStudio アセンブリと EnvDTE アセンブリの横にあるチェックボックスをオンにして、[ **OK** ] をクリックします。
+4. [ **拡張機能** ] ノードを選択し、VisualStudio アセンブリと EnvDTE アセンブリの横にあるチェックボックスをオンにして、[ **OK** ] をクリックします。
 
 5. **ソリューションエクスプローラー**で、 **projectextension**プロジェクトの [**参照**] フォルダーの下にある [ **EnvDTE**] を選択します。
 
-6. [**プロパティ**] ウィンドウで、[**相互運用機能型の埋め込み**] プロパティを**False**に変更します。
+6. [ **プロパティ** ] ウィンドウで、[ **相互運用機能型の埋め込み** ] プロパティを **False**に変更します。
 
 ## <a name="define-the-new-sharepoint-project-property"></a>新しい SharePoint プロジェクトプロパティの定義
  プロジェクトの拡張機能と新しいプロジェクトプロパティの動作を定義するクラスを作成します。 新しいプロジェクトの拡張機能を定義するために、クラスはインターフェイスを実装し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> ます。 SharePoint プロジェクトの拡張機能を定義する場合は、常にこのインターフェイスを実装します。 また、を <xref:System.ComponentModel.Composition.ExportAttribute> クラスに追加します。 この属性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を使用すると、で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 属性のコンストラクターに渡します。
@@ -127,30 +128,30 @@ ms.locfileid: "86015079"
 
 1. **ソリューションエクスプローラー**で、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[**開く**] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]マニフェストデザイナーでファイルを開きます。 [**メタデータ**] タブに表示される情報は、**拡張機能と更新プログラム**にも表示されます。 すべての VSIX パッケージには source.extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マニフェストデザイナーでファイルを開きます。 [ **メタデータ** ] タブに表示される情報は、 **拡張機能と更新プログラム**にも表示されます。 すべての VSIX パッケージには source.extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
 
-2. [**製品名**] ボックスに、「**カスタムプロジェクトプロパティ**」と入力します。
+2. [ **製品名** ] ボックスに、「 **カスタムプロジェクトプロパティ**」と入力します。
 
-3. [**作成者**] ボックスに「 **Contoso**」と入力します。
+3. [ **作成者** ] ボックスに「 **Contoso**」と入力します。
 
-4. [**説明**] ボックスに、 **Images リソースフォルダーのプロジェクトへのマッピングを切り替えるカスタム SharePoint プロジェクトプロパティ**を入力します。
+4. [ **説明** ] ボックスに、 **Images リソースフォルダーのプロジェクトへのマッピングを切り替えるカスタム SharePoint プロジェクトプロパティ**を入力します。
 
-5. [**アセット**] タブを選択し、[**新規作成**] をクリックします。
+5. [ **アセット** ] タブを選択し、[ **新規作成** ] をクリックします。
 
-     [**新しい資産の追加**] ダイアログボックスが表示されます。
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-6. [**種類**] ボックスの一覧で、[ **VisualStudio**] を選択します。
+6. [ **種類** ] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
     > [!NOTE]
     > この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-7. [**ソース**] ボックスの一覧で、[**現在のソリューション内のプロジェクトを表示する**] オプションボタンをクリックします。
+7. [ **ソース** ] ボックスの一覧で、[ **現在のソリューション内のプロジェクトを表示する** ] オプションボタンをクリックします。
 
-8. [**プロジェクト**] ボックスの一覧で、[ **projectextension**] を選択します。
+8. [ **プロジェクト** ] ボックスの一覧で、[ **projectextension**] を選択します。
 
      この値は、プロジェクトでビルドしているアセンブリの名前を識別します。
 
-9. [ **OK]** を選択して [**新しい資産の追加**] ダイアログボックスを閉じます。
+9. [ **OK]** を選択して [ **新しい資産の追加** ] ダイアログボックスを閉じます。
 
 10. メニューバーで、[**ファイル**] [すべてを保存] の順に選択し、完了したら  >  **Save All**マニフェストデザイナーを閉じます。
 
@@ -171,29 +172,29 @@ ms.locfileid: "86015079"
 
 2. **F5**キーを押すか、メニューバーで [**デバッグ**] [  >  **デバッグの開始**] の順に選択して、プロジェクトのデバッグビルドを開始します。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom プロジェクトの Property/1.0 に拡張機能をインストールし、の実験用インスタンスを開始し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom プロジェクトの Property/1.0 に拡張機能をインストールし、の実験用インスタンスを開始し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
 3. の実験用インスタンスで、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ファームソリューション用の SharePoint プロジェクトを作成し、ウィザードのその他の値に既定値を使用します。
 
     1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-    2. [**新しいプロジェクト**] ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 3.5** ] を選択します。
+    2. [ **新しいプロジェクト** ] ダイアログボックスの上部にある .NET Framework のバージョンの一覧で [ **.NET Framework 3.5** ] を選択します。
 
          SharePoint ツール拡張機能には、このバージョンのの機能が必要 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] です。
 
-    3. [**テンプレート**] ノードで、[ **Visual C#** ] または [ **Visual Basic** ] ノードを展開し、[ **SharePoint** ] ノードを選択してから、[ **2010** ] ノードを選択します。
+    3. [ **テンプレート** ] ノードで、[ **Visual C#** ] または [ **Visual Basic** ] ノードを展開し、[ **SharePoint** ] ノードを選択してから、[ **2010** ] ノードを選択します。
 
-    4. [ **SharePoint 2010] プロジェクト**テンプレートを選択し、プロジェクトの名前として「 **moduletest** 」と入力します。
+    4. [ **SharePoint 2010] プロジェクト** テンプレートを選択し、プロジェクトの名前として「 **moduletest** 」と入力します。
 
 4. **ソリューションエクスプローラー**で、 **moduletest**プロジェクトノードを選択します。
 
-     新しいカスタムプロパティ**マップイメージフォルダー**が [**プロパティ**] ウィンドウに表示され、既定値は**False**になります。
+     新しいカスタムプロパティ **マップイメージフォルダー** が [ **プロパティ** ] ウィンドウに表示され、既定値は **False**になります。
 
-5. そのプロパティの値を**True**に変更します。
+5. そのプロパティの値を **True**に変更します。
 
      Images リソースフォルダーが SharePoint プロジェクトに追加されます。
 
-6. そのプロパティの値を**False**に戻します。
+6. そのプロパティの値を **False**に戻します。
 
      [**画像フォルダーを削除しますか?** ] ダイアログボックスの **[はい**] をクリックすると、Images リソースフォルダーが SharePoint プロジェクトから削除されます。
 

@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633045"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 要素 (MSBuild)
 
 すべての `When` 要素が `false` と評価された場合にのみ実行するコード ブロックを指定します。
 
- \<Project> \<Choose> \<When> \<Choose> ...\<Otherwise> \<Choose> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>構文
 
@@ -63,7 +68,7 @@ ms.locfileid: "77633045"
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
  1 つの `Choose` 要素が持つことのできる `Otherwise` 要素の数は 1 つだけです。また、これは最後の要素である必要があります。
 

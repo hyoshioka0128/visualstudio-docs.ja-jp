@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536098"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
@@ -105,7 +105,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|Type|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|
+|型|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|
 |source|必要16進数で表される色の値|
 
  __VSCOLORTYPE 列挙体によってサポートされるすべての値は、Type 属性のスキーマでサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。
@@ -147,7 +147,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 - VsixColorCompiler D:\xml\colors.xml/noLogo
 
-## <a name="notes"></a>メモ
+## <a name="notes"></a>Notes
 
 - このツールを使用するには、最新バージョンの VC + + ランタイムがインストールされている必要があります。
 
