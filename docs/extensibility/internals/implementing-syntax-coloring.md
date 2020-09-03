@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905208"
 ---
 # <a name="implementing-syntax-coloring"></a>構文の色分け表示の実装
-言語サービスが構文の色付けを提供すると、パーサーはテキスト行を装飾 items の配列に変換し、これらの装飾 items に対応するトークンの種類を返します。 パーサーは、装飾 items のリストに属するトークン型を返す必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]colorizer オブジェクトによって割り当てられた属性に従って、コードウィンドウ内の各装飾項目を適切なトークンの種類に表示します。
+言語サービスが構文の色付けを提供すると、パーサーはテキスト行を装飾 items の配列に変換し、これらの装飾 items に対応するトークンの種類を返します。 パーサーは、装飾 items のリストに属するトークン型を返す必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] colorizer オブジェクトによって割り当てられた属性に従って、コードウィンドウ内の各装飾項目を適切なトークンの種類に表示します。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]はパーサーインターフェイスを指定せず、パーサーの実装は完全にユーザーに対して行われます。 ただし、Visual Studio 言語パッケージプロジェクトでは、既定のパーサー実装が用意されています。 マネージコードの場合、managed package framework (MPF) は、色分けテキストを完全にサポートします。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] はパーサーインターフェイスを指定せず、パーサーの実装は完全にユーザーに対して行われます。 ただし、Visual Studio 言語パッケージプロジェクトでは、既定のパーサー実装が用意されています。 マネージコードの場合、managed package framework (MPF) は、色分けテキストを完全にサポートします。
 
- 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 新しい構文の色分けを実装する方法の詳細については、「[チュートリアル: テキストの強調](../../extensibility/walkthrough-highlighting-text.md)表示」を参照してください。
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 新しい構文の色分けを実装する方法の詳細については、「 [チュートリアル: テキストの強調](../../extensibility/walkthrough-highlighting-text.md)表示」を参照してください。
 
 > [!NOTE]
 > できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
@@ -60,7 +60,7 @@ ms.locfileid: "85905208"
     4. 装飾項目の情報を使用して、テキストを画面に表示します。
 
 ## <a name="managed-package-framework-colorizer"></a>マネージパッケージフレームワークの色計
- Managed package framework (MPF) には、colorizer 実装するために必要なすべてのクラスが用意されています。 言語サービスクラスは、クラスを継承し、必要なメソッドを実装する必要があり <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 インターフェイスを実装し、 <xref:Microsoft.VisualStudio.Package.IScanner> そのインターフェイスのインスタンスを <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> メソッド (クラスに実装する必要があるメソッドの1つ) から返すことによって、スキャナーとパーサーを提供する必要があり <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 詳細については、「[従来の言語サービスの構文色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。
+ Managed package framework (MPF) には、colorizer 実装するために必要なすべてのクラスが用意されています。 言語サービスクラスは、クラスを継承し、必要なメソッドを実装する必要があり <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 インターフェイスを実装し、 <xref:Microsoft.VisualStudio.Package.IScanner> そのインターフェイスのインスタンスを <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> メソッド (クラスに実装する必要があるメソッドの1つ) から返すことによって、スキャナーとパーサーを提供する必要があり <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 詳細については、「 [従来の言語サービスの構文色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

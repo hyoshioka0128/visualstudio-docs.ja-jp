@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName |Microsoft Docs
+title: 'IDebugProcessSecurity:: GetUserName |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a6ef52d7df1c60b0cb6581a7e15eeaf67e7875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202786"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ポート サプライヤーからユーザー名を取得します。  
+ポートサプライヤーからユーザー名を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,13 +38,13 @@ int GetUserName (
   
 #### <a name="parameters"></a>パラメーター  
  `pbstrUserName`  
- [out]ユーザー名を表す文字列。  
+ 入出力ユーザー名を表す文字列です。  
   
 ## <a name="return-value"></a>戻り値  
- 返します、メソッドが成功したかどうかは`S_OK`します。 それ以外の場合、エラー コードを返します。  
+ メソッドが成功した場合は `S_OK` を返します。 それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- `GetUserName` 表示されるユーザー名を返します、**ユーザー名**の列、**プロセスにアタッチ** ダイアログ ボックス。 表示する、**プロセスにアタッチ**ダイアログ ボックスで、をクリックして**プロセスにアタッチ**で、**ツール**でメニュー、[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]統合開発環境 (IDE)。  
+## <a name="remarks"></a>注釈  
+ `GetUserName`[**プロセスにアタッチ**] ダイアログボックスの [**ユーザー名**] 列に表示されるユーザー名を返します。 [**プロセスにアタッチ**] ダイアログボックスを表示するには、統合開発環境 (IDE) の [**ツール**] メニューの [**プロセスにアタッチ**] をクリックし [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300135"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>方法: Visual Studio で使用するフォントと色を変更する
@@ -25,15 +25,15 @@ ms.locfileid: "74300135"
 Visual Studio の中にある IDE のフレームおよびツール ウィンドウの色を、複数の方法でカスタマイズできます。
 
 > [!TIP]
-> コード エディターの色を変更する方法について詳しくは、「[方法 : エディターで使用するフォントのフォント フェイス、サイズ、色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)」をご覧ください。
+> コードエディターの色を変更する方法の詳細については、「 [方法: エディターでフォントおよび色を変更](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)する」を参照してください。
 
 ### <a name="change-the-color-theme-of-the-ide"></a>IDE の配色テーマの変更
 
-1. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
+1. メニューバーで、[ **ツール**]、[ **オプション**] の順に選択します。
 
-2. オプションの一覧で、 **[環境]** 、 **[全般]** の順に選びます。
+2. オプションの一覧で、**[環境]**、**[全般]** の順に選びます。
 
-3. **[配色テーマ]** 一覧で、既定値の **[青]** テーマ、 **[濃色]** 、または **[淡色]** のいずれかを選びます。
+3. [ **配色テーマ** ] の一覧で、既定の **青** のテーマ ( **濃い** または **Light**) を選択します。
 
     > [!IMPORTANT]
     > テーマの色を変更すると、IDE のテキストは既定値または前にカスタマイズしたフォントとサイズに戻ります。
@@ -52,18 +52,18 @@ Visual Studio の中にある IDE のフレームおよびツール ウィンド
 
 #### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>IDE 内のすべてのテキストのフォントとサイズを変更するには
 
-1. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
+1. メニューバーで、[ **ツール**]、[ **オプション**] の順に選択します。
 
-2. オプションの一覧で、 **[環境]** 、 **[フォントおよび色]** の順に選びます。
+2. オプションの一覧で、**[環境]**、**[フォントおよび色]** の順に選びます。
 
-3. **[設定の表示]** の一覧で、 **[環境フォント]** を選びます。
+3. **[設定の表示]** の一覧で、**[環境フォント]** を選びます。
 
     > [!TIP]
-    > ツール ウィンドウのみのフォントを変更するには、 **[設定の表示]** の一覧で、 **[すべてのテキスト ツール ウィンドウ]** を選びます。
+    > ツールウィンドウのみのフォントを変更する場合は、[ **設定の表示** ] の一覧で **[すべてのテキストツールウィンドウ]** を選択します。
 
 4. **[フォント]** の一覧でいずれかのフォントを選びます。
 
-5. **[サイズ]** の一覧でテキスト サイズを選び、 **[OK]** を選びます。
+5. **[サイズ]** の一覧でテキスト サイズを選び、**[OK]** を選びます。
 
-## <a name="see-also"></a>関連項目
- [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)[方法: エディターでフォントおよび色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+## <a name="see-also"></a>参照
+ [Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md) [方法: エディターのフォントと色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

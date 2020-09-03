@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue |Microsoft Docs
+title: 'IDebugObject:: SetValue |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d898852c6bcca42cb0df1e7fab1597df74427a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203264"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-連続した一連のバイトから、オブジェクトの値を設定します。  
+オブジェクトの値を連続する一連のバイトから設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,17 +42,17 @@ int SetValue(
   
 #### <a name="parameters"></a>パラメーター  
  `pValue`  
- [in]新しい値を表すバイトの配列。  
+ から新しい値を表すバイト配列。  
   
  `nSize`  
- [in]値をバイト単位のサイズ。  
+ から値のサイズ (バイト単位)。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 配列内の値は、これにコピーされます[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)既存の値を置き換えるオブジェクト。 新しい値のサイズは、既存の値より大きくまたは小さくできます。 これは、`IDebugObject`の参照を null にすることはできません。  
+## <a name="remarks"></a>注釈  
+ 配列内の値は、既存の値を置き換えて、この [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトにコピーされます。 新しい値のサイズは、既存の値より大きくしたり小さくしたりすることができます。 `IDebugObject`Null 参照を指定することはできません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

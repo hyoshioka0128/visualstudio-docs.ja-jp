@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3cf7308b3302c682f32a2db9837f86cd0173260
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203285"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>IA64 プロセスの混合モードのデバッグはサポートされていません。
@@ -32,7 +32,7 @@ Visual Studio では、IA64 プロセスでマネージド コードとネイテ
   
 - マネージド コードとネイティブ コードを個別のデバッガー セッション内でデバッグする。  
   
-     または  
+     \- または -  
   
      次の手順に示すように、混合コードを 32 ビット プロセスとしてデバッグする。  
   
@@ -52,5 +52,5 @@ Visual Studio では、IA64 プロセスでマネージド コードとネイテ
   
 2. プロパティ ページで **[プラットフォーム]** をクリックし、プラットフォームの一覧の [Win32] をクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

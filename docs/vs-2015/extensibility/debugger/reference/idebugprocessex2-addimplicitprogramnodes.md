@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes |Microsoft Docs
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: faca728144bde572d8a1d3424fbfcf908403d679
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202819"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、指定された各デバッグ エンジン (DE) のプログラムのノードを追加します。  
+このメソッドは、指定された各デバッグエンジン (DE) のプログラムノードを追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,20 +44,20 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>パラメーター  
  `guidLaunchingEngine`  
- [in]`GUID`プログラムを起動するために使用するのには (および独自のプログラムのノードを追加すると見なされます) を DE の。  
+ からプログラムを起動するために使用される `GUID` (および、独自のプログラムノードを追加すると想定される) の。  
   
  `rgguidSpecificEngines`  
- [in]配列の`GUID`の DEs ノードを追加するプログラムを選択します。  
+ から `GUID`プログラムノードが追加される DEs のの配列。  
   
  `celtSpecificEngines`  
- [in]数`GUID`内、`rgguidSpecificEngines`配列。  
+ から配列内のの数 `GUID` `rgguidSpecificEngines` 。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- [プログラム ノード](../../../extensibility/debugger/program-nodes.md)各 DE の記載に追加`rgguidSpecificEngines`-起動エンジンを除外 (で指定されている`guidLaunchingEngine`)、プログラムを起動するときに、独自のプログラム ノードを追加すると見なされます。  
+## <a name="remarks"></a>注釈  
+ に示されている各 DE に対して[プログラムノード](../../../extensibility/debugger/program-nodes.md)が追加されます。これは、 `rgguidSpecificEngines` `guidLaunchingEngine` プログラムを起動したときに、独自のプログラムノードを追加することを前提としています (で指定されているように)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [プログラム ノード](../../../extensibility/debugger/program-nodes.md)

@@ -12,60 +12,60 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e32778e6c1ab82eddb50bbac1e79430d827716e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203252"
 ---
 # <a name="project-types"></a>プロジェクトの種類
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] などの言語のいくつかのプロジェクトの種類が含まれている[!INCLUDE[csprcs](../../includes/csprcs-md.md)]と[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] また、独自のプロジェクトの種類を作成してできます。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] には、やなどの言語用のプロジェクトの種類がいくつか含まれてい [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、独自のプロジェクトの種類を作成することもできます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [基本情報](../../extensibility/internals/project-type-essentials.md)  
- プロジェクトの種類を始めるために必要な重要な情報を表示します。  
+ [Essentials](../../extensibility/internals/project-type-essentials.md)  
+ プロジェクトの種類の操作を開始するために必要な重要な情報を示します。  
   
  [プロジェクト タイプの作成](../../extensibility/internals/creating-project-types.md)  
  プロジェクトの種類のデザインについて説明します。  
   
  [ソリューション エクスプローラーのツールバーへのコマンドの追加](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
- ボタンを追加する場合の手順の詳細、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **ソリューション エクスプ ローラー**ツールバー。  
+ ソリューションエクスプローラーツールバーにボタンを追加するために従う必要がある手順について詳しく説明し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Solution Explorer**ます。  
   
  [プロジェクト システムへの Web サービスの追加](../../misc/adding-web-services-to-project-systems.md)  
- Web サービス、VSPackage プロジェクト システムを統合する方法を示します。  
+ Web サービスを VSPackage プロジェクトシステムに統合する方法について説明します。  
   
  [プロジェクト階層ノード (C++) の名前の変更](../../misc/renaming-project-hierarchy-nodes-cpp.md)  
- プロジェクト フォルダーの階層ノードの名前を変更する方法を示します。  
+ プロジェクトフォルダーの階層ノードの名前を変更する方法について説明します。  
   
  [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)  
- 追加する方法のテンプレート プロジェクトの種類に新しいプロジェクトとプロジェクト項目のパターンに従ってユーザーを作成できるようにするについて説明します。  
+ プロジェクトの種類にテンプレートを追加して、ユーザーがパターンに従って新しいプロジェクトとプロジェクト項目を作成できるようにする方法について説明します。  
   
  [プロジェクト項目のオープンと保存](../../extensibility/internals/opening-and-saving-project-items.md)  
- プロジェクトの種類のアイテムを管理する方法について説明します。  
+ プロジェクトの種類でサポートされる項目の管理方法について説明します。  
   
  [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)  
- プロジェクトの種類がデバッグとリリースを制御するプロジェクトのビルド方法、デバッグなどのような構成オプションをサポートする方法について説明します。  
+ プロジェクトのビルド、デバッグなどの方法を制御する、デバッグやリリースなどの構成オプションがプロジェクトの種類によってどのようにサポートされるかについて説明します。  
   
  [ソース管理のサポート](../../extensibility/internals/supporting-source-control.md)  
- プロジェクトの種類をソース管理システムのサポートを追加する方法について説明します。  
+ プロジェクトの種類にソース管理システムのサポートを追加する方法について説明します。  
   
  [入れ子になったプロジェクト](../../extensibility/internals/nesting-projects.md)  
- プロジェクトの種類をサポートする方法について説明します。*入れ子*プロジェクトはにまとめることができるように、**ソリューション エクスプ ローラー**します。  
+ プロジェクトを**ソリューションエクスプローラー**にまとめてグループ化できるように、プロジェクトの種類で*入れ子*をサポートする方法について説明します。  
   
  [プロジェクトのアップグレード](../../extensibility/internals/upgrading-projects.md)  
- 以前のバージョンからプロジェクト ファイルをアップグレードするアップグレード ウィザードで、プロジェクトの種類が参加できる方法について説明します。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+ 以前のバージョンのからプロジェクトファイルをアップグレードするために、アップグレードウィザードにプロジェクトの種類を参加させる方法について説明し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
  [アーキテクチャ](../../extensibility/internals/project-types-architecture.md)  
  プロジェクトの種類に関する詳細な技術情報を提供します。  
   
 ## <a name="related-sections"></a>関連項目  
  [階層と選択](../../extensibility/internals/hierarchies-and-selection.md)  
- 方法の概要を示します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) の階層としてプロジェクトを表示します。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE: integrated development environment) がプロジェクトを階層として表示する方法の概要について説明します。  
   
  [プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)  
- プロジェクト サブタイプのトピックへのリンクを提供します。 プロジェクト サブタイプは、ほとんどの種類のプロジェクトの種類など、独自の拡張機能を有効にします。  
+ プロジェクトのサブタイプに関するトピックへのリンクを示します。 プロジェクトのサブタイプを使用すると、独自の種類のプロジェクトを含むほとんどの種類のプロジェクトを拡張できます。  
   
  [プロジェクト](../../extensibility/internals/projects.md)  
- 拡張する方法について説明します、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクト システム。
+ プロジェクトシステムを拡張する方法について説明し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。
