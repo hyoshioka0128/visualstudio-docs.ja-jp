@@ -1,5 +1,5 @@
 ---
-title: CreateExpInstance ユーティリティ |Microsoft Docs
+title: Createのインスタンスユーティリティ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,16 +15,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196981"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance ユーティリティ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-リセットするを作成するには、CreateExpInstance ユーティリティを使用するか、Visual Studio の実験用インスタンスを削除します。 実験用インスタンスを使用して、デバッグおよび基になる製品を変更することがなく Visual Studio 拡張機能をテストすることができます。  
+Createのインスタンスユーティリティを使用して、Visual Studio の実験用インスタンスを作成、リセット、または削除します。 実験用インスタンスを使用して、基になる製品を変更せずに Visual Studio 拡張機能のデバッグとテストを行うことができます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -33,33 +33,33 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- /作成します。  
+ /Create  
  実験用インスタンスを作成します。  
   
- /リセットします。  
- 実験用のインスタンスを削除し、新しく作成します。  
+ /Reset  
+ 実験用インスタンスを削除し、新しいインスタンスを作成します。  
   
  /Clean  
  実験用インスタンスを削除します。  
   
- /VSInstance  
- コピーする基本の Visual Studio インスタンスが含まれているディレクトリの名前。  
+ /Vsinstance  
+ コピーする基本 Visual Studio インスタンスが格納されているディレクトリの名前。  
   
  /RootSuffix  
- 実験用インスタンス ディレクトリの名前に付加するサフィックス。  
+ 実験用インスタンスディレクトリの名前に追加するサフィックス。  
   
-## <a name="remarks"></a>Remarks  
- Visual Studio 拡張機能を使用しているときに既定の実験用インスタンスを開き、現在の拡張機能をインストールして F5 キーを押します。 実験用インスタンスが使用できない場合、既定の設定である Visual Studio を作成します。  
+## <a name="remarks"></a>注釈  
+ Visual Studio 拡張機能を使用しているときに、F5 キーを押して既定の実験用インスタンスを開き、現在の拡張機能をインストールできます。 実験用インスタンスが使用できない場合は、既定の設定を持つものが Visual Studio によって作成されます。  
   
- 実験用インスタンスの既定の場所は、Visual Studio のバージョン番号に依存します。 たとえば、Visual Studio 2015 で、場所は、%localappdata%\Microsoft\VisualStudio\14.0Exp\ ディレクトリの場所のすべてのファイルがそのインスタンスの一部と見なされます。 既定の場所にディレクトリ名が変更されない限り、任意の追加の実験用インスタンスは Visual Studio によって読み込まれません。  
+ 実験用インスタンスの既定の場所は、Visual Studio のバージョン番号によって異なります。 たとえば、Visual Studio 2015 の場合、場所は%localappdata%\Microsoft\VisualStudio\14.0Exp\ で、ディレクトリの場所にあるすべてのファイルがそのインスタンスの一部と見なされます。 ディレクトリ名が既定の場所に変更されていない限り、追加の実験用インスタンスは Visual Studio によって読み込まれません。  
   
- Visual Studio 実験用インスタンスを開くときに、システム レジストリにアクセスしません。 これは、レジストリ ハイブの実験用のバージョンを使用すると、Visual Studio の以前のバージョンによって異なります。  
+ 実験用インスタンスを開いたときに、Visual Studio がシステムレジストリにアクセスすることはありません。 これは、以前のバージョンの Visual Studio とは異なり、以前のバージョンのレジストリハイブが使用されていました。  
   
- CreateExpInstance ユーティリティには、VsRegEx ユーティリティが置き換えられます。  
+ Createのインスタンスユーティリティは、VsRegEx ユーティリティに代わるものです。  
   
  次の例では、Visual Studio の既定の実験用インスタンスをリセットします。  
   
- **CreateExpInstance.exe/Reset/VSInstance = 14.0/RootSuffix Exp を =**  
+ **CreateExpInstance.exe/リセット/vsinstance = 14.0/rootsuffix = Exp**  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [製品のリリース](../../misc/releasing-a-visual-studio-integration-product.md)

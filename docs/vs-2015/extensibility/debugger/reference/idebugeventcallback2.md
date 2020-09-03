@@ -13,50 +13,50 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6114a31701e5abc4714f315b4e4f1ecf022c401c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163824"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、デバッグ イベントをセッション デバッグ マネージャー (SDM) に送信するデバッグ エンジン (DE) によって使用されます。  
+このインターフェイスは、デバッグエンジン (DE) がデバッグイベントをセッションデバッグマネージャー (SDM) に送信するために使用されます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugEventCallback2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] デバッグ エンジンからイベントを受信するには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] デバッグエンジンからイベントを受信するために、このインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デバッグ エンジンが通常、SDM を呼び出すときにこのインターフェイスが受信[アタッチ](../../../extensibility/debugger/reference/idebugprogram2-attach.md)、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)、または[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)します。 デバッグ エンジンは、呼び出すことによって、SDM にイベントを送信[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ 通常、デバッグエンジンは、SDM が [attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)、 [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)、または [launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)を呼び出したときに、このインターフェイスを受け取ります。 デバッグエンジンは、 [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)を呼び出すことによって、イベントを SDM に送信します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugEventCallback2`します。  
+ 次の表に、のメソッドを示し `IDebugEventCallback2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|デバッグ、SDM をイベントの通知を送信します。|  
+|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|SDM にデバッグイベントの通知を送信します。|  
   
-## <a name="remarks"></a>Remarks  
- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)と[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)には、指定、`IDebugEventCallback2`インターフェイス、そうでないし、インターフェイス ポインターが null 値を必ずします。 代わりに、デバッグ エンジンを使用する必要があります、`IDebugEventCallback2`インターフェイスへの呼び出しで受け取った[アタッチ](../../../extensibility/debugger/reference/idebugprogram2-attach.md)、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)、または[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)します。  
+## <a name="remarks"></a>注釈  
+ [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)および[evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)はインターフェイスを受け取ることを指定します `IDebugEventCallback2` が、これは当てはまりません。インターフェイスポインターは常に null 値になります。 代わりに、デバッグエンジンは、 `IDebugEventCallback2` [attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)、 [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)、または [launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)の呼び出しで受信したインターフェイスを使用する必要があります。  
   
- パッケージを実装している場合[IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md)マネージ コードで強くお勧めする<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>に渡されるさまざまなインターフェイスで呼び出される[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)します。  
+ パッケージがマネージコードで [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) を実装している場合は、 <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に渡されるさまざまなインターフェイスで呼び出されることを強くお勧めします。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [アタッチ](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   
- [添付](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [外付け](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   
+ [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)
