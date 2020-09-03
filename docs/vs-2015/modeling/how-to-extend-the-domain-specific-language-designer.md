@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916798"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
@@ -26,33 +26,33 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL デザイナー拡張機能ソリューションを作成するには
 
-1. クラスライブラリプロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 **[新しいプロジェクト]** ダイアログボックスで、 **[ C#ビジュアル**] をクリックし、中央のウィンドウで **[クラスライブラリ]** をクリックします。
+1. クラスライブラリプロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual C#** ] をクリックし、中央のウィンドウで [ **クラスライブラリ**] をクリックします。
 
      このプロジェクトには、拡張機能のコードが含まれます。
 
-2. VSIX プロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 **[新しいプロジェクト]** ダイアログボックスで、 **[ C#ビジュアル**] を展開し、 **[機能拡張]** をクリックします。次に、中央のウィンドウで **[VSIX プロジェクト]** を選択します。
+2. VSIX プロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 [ **新しいプロジェクト** ] ダイアログボックスで、 **[Visual C#**] を展開し、[ **機能拡張**] をクリックします。次に、中央のウィンドウで [ **VSIX プロジェクト**] を選択します。
 
-     **[ソリューションに追加]** を選択します。
+     [ **ソリューションに追加**] を選択します。
 
      Source.extension.vsixmanifest が VSIX マニフェストエディターで開きます。
 
-3. コンテンツ フィールドの上にある **コンテンツの追加** をクリックします。
+3. [コンテンツ] フィールドの上にある [ **コンテンツの追加**] をクリックします。
 
-4. **[コンテンツの追加]** ダイアログボックスで、 **[コンテンツの種類**を**MEF コンポーネント**に選択] を設定し、 **[プロジェクト]** をクラスライブラリプロジェクトに設定します。
+4. [ **コンテンツの追加** ] ダイアログボックスで、 **[コンテンツの種類** を **MEF コンポーネント**に選択] を設定し、[ **プロジェクト** ] をクラスライブラリプロジェクトに設定します。
 
-5. **[エディションの選択]** をクリックし、 **Visual Studio Enterprise**がオンになっていることを確認します。
+5. [ **エディションの選択** ] をクリックし、 **Visual Studio Enterprise** がオンになっていることを確認します。
 
 6. VSIX プロジェクトがソリューションのスタートアッププロジェクトであることを確認します。
 
 7. クラスライブラリプロジェクトで、次のアセンブリへの参照を追加します。
 
-     Microsoft.VisualStudio.CoreUtility
+     VisualStudio. CoreUtility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     VisualStudio. 11.0. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     VisualStudio (Microsoft. モデル図)
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     VisualStudio (Microsoft. モデルの作成)
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -67,24 +67,24 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 ## <a name="testing-and-deployment"></a>テストと展開
  このトピックのすべての拡張機能をテストするには、ソリューションをビルドして実行します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスが開きます。 このインスタンスでは、DSL ソリューションを開きます。 DslDefinition ダイアグラムを編集します。 拡張機能の動作を確認できます。
 
- 拡張機能をメイン [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、および他のコンピューターに展開するには、次の手順を実行します。
+ 拡張機能をメイン [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、および他のコンピューターに展開するには、次の手順を実行します。
 
-1. VSIX プロジェクトの箱で、VSIX のインストール ファイルを見つける\\*\*\\\*.vsix
+1. .Vsix の vsix プロジェクトで、vsix のインストールファイルを見つけ \\ * \\ \* ます。
 
 2. このファイルを対象のコンピュータにコピーし、Windows エクスプローラ (またはファイルエクスプローラー) でダブルクリックします。
 
-    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能マネージャーが開き、拡張機能がインストールされていることを確認できます。
+    拡張機能 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] マネージャーが開き、拡張機能がインストールされていることを確認できます。
 
    拡張機能をアンインストールするには、次の手順を実行します。
 
-3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ツール** メニューのをクリックして**拡張機能マネージャー**です。
+3. で、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [ **ツール** ] メニューの [ **拡張機能マネージャー**] をクリックします。
 
 4. 拡張機能を選択して削除します。
 
 ## <a name="adding-a-shortcut-menu-command"></a>ショートカットメニューコマンドの追加
  DSL デザイナー画面または DSL エクスプローラーウィンドウにショートカットメニューコマンドを表示するには、次のようなクラスを記述します。
 
- クラスは `ICommandExtension` を実装し、属性 `DslDefinitionModelCommandExtension`を持つ必要があります。
+ クラスはを実装 `ICommandExtension` し、属性を持つ必要があり `DslDefinitionModelCommandExtension` ます。
 
 ```
 using System.Collections.Generic;

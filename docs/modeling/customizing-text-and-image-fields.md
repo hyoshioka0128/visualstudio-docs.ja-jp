@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542715"
 ---
 # <a name="customizing-text-and-image-fields"></a>テキストおよびイメージ フィールドのカスタマイズ
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  それ以外の場合は、 `InitializeShapeFields` shape クラスのメソッドをオーバーライドし、テキストフィールドの適切なプロパティに値を割り当て `Default...` ます。
 
 > [!WARNING]
-> をオーバーライドするには、 `InitializeShapeFields()` DSL 定義で、shape クラスの**Double 派生**プロパティの生成をに設定する必要があり `true` ます。
+> をオーバーライドするには、 `InitializeShapeFields()` DSL 定義で、shape クラスの **Double 派生** プロパティの生成をに設定する必要があり `true` ます。
 
  この例では、ユーザーのコメントに使用されるテキストフィールドが図形に含まれています。 標準のコメントフォントを使用します。 スタイルセットの標準フォントであるため、既定のフォント id を設定できます。
 
@@ -110,9 +110,9 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 
  次の例では、テキストフィールドのフォントを、図形のモデル要素のブール型ドメインプロパティの状態に依存します。
 
- このコード例を実行するには、[最小言語] テンプレートを使用して新しい DSL ソリューションを作成します。 ブール型ドメインプロパティを例 `AlternateState` の要素ドメインクラスに追加します。 ExampleShape クラスにアイコンデコレータを追加し、そのイメージをビットマップファイルに設定します。 [**すべてのテンプレートの変換**] をクリックします。 DSL プロジェクトに新しいコードファイルを追加し、次のコードを挿入します。
+ このコード例を実行するには、[最小言語] テンプレートを使用して新しい DSL ソリューションを作成します。 ブール型ドメインプロパティを例 `AlternateState` の要素ドメインクラスに追加します。 ExampleShape クラスにアイコンデコレータを追加し、そのイメージをビットマップファイルに設定します。 [ **すべてのテンプレートの変換**] をクリックします。 DSL プロジェクトに新しいコードファイルを追加し、次のコードを挿入します。
 
- コードをテストするには、F5 キーを押し、デバッグソリューションでサンプルダイアグラムを開きます。 アイコンの既定の状態が表示されます。 図形を選択し、プロパティウィンドウで**Alternatestate**プロパティの値を変更します。 要素名のフォントが変更されます。
+ コードをテストするには、F5 キーを押し、デバッグソリューションでサンプルダイアグラムを開きます。 アイコンの既定の状態が表示されます。 図形を選択し、プロパティウィンドウで **Alternatestate** プロパティの値を変更します。 要素名のフォントが変更されます。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -181,7 +181,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>ImageField のサブクラスを作成するには
 
-1. DSL 定義で親図形クラスの**Double 派生**プロパティを生成するように設定します。
+1. DSL 定義で親図形クラスの **Double 派生** プロパティを生成するように設定します。
 
 2. `InitializeShapeFields`Shape クラスのメソッドをオーバーライドします。
 
@@ -197,9 +197,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 > [!WARNING]
 > この例では、動的イメージデコレータを作成する方法を示します。 ただし、モデル変数の状態に応じて1つまたは2つのイメージを切り替えるだけの場合は、複数のイメージデコレーターを作成して、図形上の同じ位置に配置し、モデル変数の特定の値に依存するように表示フィルターを設定する方が簡単です。 このフィルターを設定するには、DSL 定義でシェイプマップを選択し、DSL の詳細ウィンドウを開いて、[デコレーター] タブをクリックします。
 
- このコード例を実行するには、[最小言語] テンプレートを使用して新しい DSL ソリューションを作成します。 ブール型ドメインプロパティを例 `AlternateState` の要素ドメインクラスに追加します。 ExampleShape クラスにアイコンデコレータを追加し、そのイメージをビットマップファイルに設定します。 [**すべてのテンプレートの変換**] をクリックします。 DSL プロジェクトに新しいコードファイルを追加し、次のコードを挿入します。
+ このコード例を実行するには、[最小言語] テンプレートを使用して新しい DSL ソリューションを作成します。 ブール型ドメインプロパティを例 `AlternateState` の要素ドメインクラスに追加します。 ExampleShape クラスにアイコンデコレータを追加し、そのイメージをビットマップファイルに設定します。 [ **すべてのテンプレートの変換**] をクリックします。 DSL プロジェクトに新しいコードファイルを追加し、次のコードを挿入します。
 
- コードをテストするには、F5 キーを押し、デバッグソリューションでサンプルダイアグラムを開きます。 アイコンの既定の状態が表示されます。 図形を選択し、プロパティウィンドウで**Alternatestate**プロパティの値を変更します。 このアイコンは、その図形に対して90度回転して表示されます。
+ コードをテストするには、F5 キーを押し、デバッグソリューションでサンプルダイアグラムを開きます。 アイコンの既定の状態が表示されます。 図形を選択し、プロパティウィンドウで **Alternatestate** プロパティの値を変更します。 このアイコンは、その図形に対して90度回転して表示されます。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
