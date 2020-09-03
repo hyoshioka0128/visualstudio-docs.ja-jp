@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d24fc7a01a8eebe356f37704c1a821332f5dca1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850761"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
@@ -47,22 +47,22 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  **Events** オプションは、プロバイダー名として次のカーネル キーワードを理解します。  
   
- **Process**  
- プロセス イベント  
+ **[処理]**  
+ イベントの処理  
   
  **スレッド**  
  スレッド イベント  
   
- **イメージ**  
+ **Image**  
  イメージのロードとアンロード イベント  
   
- **Disk**  
+ **ディスク**  
  ディスク I/O イベント  
   
  **ファイル**  
  ファイル I/O イベント  
   
- **Hardfault**  
+ **ハードフォールト**  
  ハード ページ フォールト  
   
  **Pagefault**  
@@ -71,12 +71,12 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Network**  
  ネットワーク イベント  
   
- **Registry**  
+ **レジストリ**  
  レジストリ アクセス イベント  
   
  カーネル プロバイダーのみを有効にできます。 モニターがシャットダウンするまで、無効にできません。そのフラグを変更することもできません。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
   
 > [!NOTE]
 > CLR ETW イベントが有効になっていると、追加のスタートアップ データがトレース ビュー レポートでも集められます。 スタートアップ イベントがレポートに表示されないようにするには、次のコマンドを使用します。  
@@ -86,10 +86,10 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> スタートアップ イベントを除外しない場合、スタートアップ イベントはマネージド オブジェクト フォーマット (MOF) ファイルに一覧表示されないため、レポートに GUID として表示されます。 詳細については、Microsoft Web サイトの「[Sample Managed Object Format (MOF) File](https://msdn.microsoft.com/library/default.aspx)」 (マネージド オブジェクト フォーマット (MOF) ファイルのサンプル) を参照してください。  
+> スタートアップ イベントを除外しない場合、スタートアップ イベントはマネージド オブジェクト フォーマット (MOF) ファイルに一覧表示されないため、レポートに GUID として表示されます。 詳細については、Microsoft Web サイトの「 [Sample 管理オブジェクトフォーマット (MOF) ファイル](https://msdn.microsoft.com/library/default.aspx)」のページを参照してください。  
   
 ## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

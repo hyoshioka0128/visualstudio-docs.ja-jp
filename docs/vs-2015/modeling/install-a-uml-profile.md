@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850661"
 ---
 # <a name="install-a-uml-profile"></a>UML プロファイルのインストール
@@ -35,15 +35,15 @@ UML プロファイルを使用して Visual Studio を拡張できます。 プ
 
 2. Windows エクスプローラー (またはエクスプローラー) で `.vsix` ファイルをダブルクリックするか、このファイルを [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 内で開きます。
 
-3. 表示されるダイアログボックスで **[インストール]** をクリックします。
+3. 表示されるダイアログボックスで [ **インストール** ] をクリックします。
 
-4. 拡張機能をアンインストールするか、一時的に無効にするには、 **[ツール]** メニューの **[拡張機能マネージャー]** を開きます。
+4. 拡張機能をアンインストールするか、一時的に無効にするには、[**ツール**] メニューの [**拡張機能マネージャー** ] を開きます。
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>プロファイルの拡張機能をアンインストールまたは無効にするには
 
-1. Visual Studio の **[ツール]** メニューで、 **[拡張機能マネージャー]** をクリックします。
+1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能マネージャー**] をクリックします。
 
-2. 削除する拡張機能をクリックし、 **[無効化]** または **[アンインストール]** をクリックします。
+2. 削除する拡張機能をクリックし、[ **無効化** ] または [ **アンインストール**] をクリックします。
 
 ## <a name="see-also"></a>参照
  プロファイル[とステレオタイプを使用してモデルをカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)[するプロファイルを定義して UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)

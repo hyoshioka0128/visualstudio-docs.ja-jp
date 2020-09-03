@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e56618138fccf6ac431741769b1d4b5ebe7bad4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295133"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
@@ -26,7 +26,7 @@ InstallShield Limited Edition を使用し、セットアップ ファイルを�
   
 ### <a name="to-enable-installshield-limited-edition"></a>InstallShield Limited Edition を有効にするには  
   
-1. メニュー バーで、 **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
+1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
 2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** ノードを選択します。  
   

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800945"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio での Office および SharePoint 開発
@@ -82,7 +82,7 @@ ms.locfileid: "88800945"
 |SharePoint ソリューションと SharePoint アドインのどちらを構築するかを選択する。|[SharePoint アドインと SharePoint ソリューションの決定](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> VSTO アドインを作成する
- Office 2007 または Office 2010 を対象とする VSTO アドインを作成するか、office のアドインでは実現できない office 2013 と Office 2016 を拡張します。 VSTO アドインはデスクトップ上でのみ実行されます。 ユーザーは VSTO アドインをインストールする必要があるため、通常は配置とサポートが難しくなります。  ただし、VSTO アドインは、より密接に Office に統合できます。 たとえば、Office リボンにタブやコントロールを追加し、文書の結合やグラフの変更などの高度な自動化タスクを実行できます。 また、.NET Framework を活用し、C# および Visual Basic を使用して、Office オブジェクトと対話することもできます。
+ Office 2007 または Office 2010 を対象とする VSTO アドインを作成するか、office 2013 と office 2016 を拡張して、office アドインでは実現できないようにします。VSTO アドインはデスクトップ上でのみ実行されます。 ユーザーは VSTO アドインをインストールする必要があるため、通常は配置とサポートが難しくなります。  ただし、VSTO アドインは、より密接に Office に統合できます。 たとえば、Office リボンにタブやコントロールを追加し、文書の結合やグラフの変更などの高度な自動化タスクを実行できます。 また、.NET Framework を活用し、C# および Visual Basic を使用して、Office オブジェクトと対話することもできます。
 
  VSTO アドインで実行できる機能の例を次に示します。 この VSTO アドインは、PowerPoint にリボン コントロール、カスタム作業ウィンドウ、およびダイアログ ボックスを追加します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "88800945"
 
  **詳細情報**
 
-|終了|Read|
+|目的|Read|
 |--------|----------|
 |Office のさまざまな拡張方法を比較し、VSTO アドインと Office アドインのどちらを使用する必要があるかを判断する。|[Office アドイン、VSTO、および VBA のロードマップ](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |VSTO アドインを作成する。|[Visual Studio で作成した VSTO アドイン](create-vsto-add-ins-for-office-by-using-visual-studio.md)|

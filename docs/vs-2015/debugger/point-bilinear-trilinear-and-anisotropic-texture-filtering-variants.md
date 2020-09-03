@@ -1,5 +1,5 @@
 ---
-title: ポイント、バイリニア、トリリニア、およびアニソトロ ピック テクスチャ フィルタ リング バリアント |Microsoft Docs
+title: ポイント、バイリニア、トライリニア、および異形のテクスチャフィルタリングバリアント |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c53f3b0633ec8938de210cb518d9fae1937eb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185404"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>ポイント、バイリニア、トリリニア、およびアニソトロピック テクスチャ フィルタリング バリアント

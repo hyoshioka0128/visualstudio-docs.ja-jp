@@ -12,10 +12,10 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850320"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>方法: Windows フォームを使用するツールボックス コントロールを作成する
@@ -29,7 +29,7 @@ ms.locfileid: "75850320"
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Windows フォームのツールボックス コントロール プロジェクトを作成するには  
   
-1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
+1. **[ファイル]** メニューの **[新規作成]** をクリックし、**[プロジェクト]** をクリックします。  
   
 2. **[新しいプロジェクト]** ダイアログ ボックスの **[Visual Studio にインストールされたテンプレート]** で、使用するプログラミング言語のノードをクリックして、 **[拡張機能]** をクリックします。 プロジェクトの種類の一覧で、 **[Windows フォーム ツールボックス コントロール]** を選びます。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "75850320"
   
 1. **[ソリューション エクスプローラー]** で ToolboxControl.cs を右クリックし、 **[コードの表示]** をクリックしてコード ビューでファイルを開きます。  
   
-2. コントロールを実装する部分クラスの定義でクラス名を右クリックし、 **[リファクター]** 、 **[名前の変更]** の順にクリックします。 クラスの名前を、コントロールがインストールされるときに **[ツールボックス]** で表示される名前に変更します。  
+2. コントロールを実装する部分クラスの定義でクラス名を右クリックし、 **[リファクター]**、 **[名前の変更]** の順にクリックします。 クラスの名前を、コントロールがインストールされるときに **[ツールボックス]** で表示される名前に変更します。  
   
 3. クラス定義のすぐ上の `ProvideToolboxControl` 属性宣言で、最初のパラメーターの値を、 **[ツールボックス]** のコントロールをホストする項目グループの名前に変更します。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "75850320"
   
 #### <a name="to-build-and-test-the-control"></a>コントロールをビルドおよびテストするには  
   
-1. F5 キーを押します。  
+1. F5 キーを押す。  
   
 2. Visual Studio の新しいインスタンスで、Windows フォーム アプリケーション プロジェクトを作成します。  
   
@@ -87,7 +87,7 @@ ms.locfileid: "75850320"
   
 2. .vsix ファイルをネットワークまたは Web サイトにアップロードします。  
   
-     ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは Visual Studio の**拡張機能マネージャー**を使用してコントロールを検索してインストールできます。  
+     ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは Visual Studio の **拡張機能マネージャー** を使用してコントロールを検索してインストールできます。  
   
 ## <a name="see-also"></a>参照  
  [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)

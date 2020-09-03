@@ -1,5 +1,5 @@
 ---
-title: プロパティ 2::セットバリューアスストリング |マイクロソフトドキュメント
+title: 'IDebugProperty2:: SetValueAsString |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 112ded163f38b93e9918387d8ca6beafb8282647
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721240"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
@@ -45,18 +45,18 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>パラメーター
 `pszValue`\
-[in]設定する値を含む文字列。
+から設定する値を格納している文字列。
 
 `nRadix`\
-[in]数値情報の解釈に使用する基数。 これは、基数を自動的に決定する場合に 0 を指定できます。
+から数値情報の解釈に使用される基数。 0を指定すると、基数を自動的に決定できます。
 
 `dwTimeout`\
-[in]このメソッドから戻るまでの最大待機時間をミリ秒単位で指定します。 無期限`INFINITE`に待機するために使用します。
+からこのメソッドから制御が戻るまでに待機する最大時間をミリ秒単位で指定します。 `INFINITE`無期限に待機するには、を使用します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 次の表に、その他の値を示します。
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 次の表に、その他の使用可能な値を示します。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|文字列をプロパティ値に変換できなかったか、プロパティ値を設定できませんでした。|
 |`E_SETVALUE_VALUE_IS_READONLY`|このプロパティは読み取り専用です。|

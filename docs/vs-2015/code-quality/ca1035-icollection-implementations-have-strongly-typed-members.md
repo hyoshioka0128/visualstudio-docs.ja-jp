@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2e679fb3cc62ba80cfb7b56dfd7fa6590375565e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546615"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035:ICollection の実装は、厳密に型指定されたメンバーを含んでいます
@@ -38,7 +38,7 @@ ms.locfileid: "85546615"
 ## <a name="rule-description"></a>ルールの説明
  この規則 <xref:System.Collections.ICollection> <xref:System.Object> では、インターフェイスによって提供される機能を使用するときに、ユーザーが引数を型にキャストする必要がないように、厳密に型指定されたメンバーを実装する必要があります。 この規則は、を実装する型が、 <xref:System.Collections.ICollection> より強力な型のインスタンスのコレクションを管理するためにそれを行うことを前提としてい <xref:System.Object> ます。
 
- <xref:System.Collections.ICollection> は、<xref:System.Collections.IEnumerable?displayProperty=fullName> インターフェイスを実装します。 コレクション内のオブジェクトがを拡張 <xref:System.ValueType?displayProperty=fullName> する場合は、 <xref:System.Collections.IEnumerable.GetEnumerator%2A> ボックス化によって発生するパフォーマンスの低下を回避するために、厳密に型指定されたメンバーをに提供する必要があります。 コレクションのオブジェクトが参照型である場合、これは必要ありません。
+ <xref:System.Collections.ICollection> では、<xref:System.Collections.IEnumerable?displayProperty=fullName> インターフェイスを実装します。 コレクション内のオブジェクトがを拡張 <xref:System.ValueType?displayProperty=fullName> する場合は、 <xref:System.Collections.IEnumerable.GetEnumerator%2A> ボックス化によって発生するパフォーマンスの低下を回避するために、厳密に型指定されたメンバーをに提供する必要があります。 コレクションのオブジェクトが参照型である場合、これは必要ありません。
 
  インターフェイスメンバーの厳密に型指定されたバージョンを実装するには、のように、形式の名前を使用してインターフェイスメンバーを明示的に実装し `InterfaceName.InterfaceMemberName` <xref:System.Collections.ICollection.CopyTo%2A> ます。 明示的なインターフェイスメンバーは、インターフェイスによって宣言されたデータ型を使用します。 などのインターフェイスメンバー名を使用して、厳密に型指定されたメンバーを実装し <xref:System.Collections.ICollection.CopyTo%2A> ます。 厳密に型指定されたメンバーをパブリックとして宣言し、コレクションによって管理される厳密な型のパラメーターと戻り値を宣言します。 厳密な型は、 <xref:System.Object> <xref:System.Array> インターフェイスによって宣言されているやなどの弱い型を置き換えます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "85546615"
 
  [CA1039:リストは厳密に型指定されています](../code-quality/ca1039-lists-are-strongly-typed.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.ICollection?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>

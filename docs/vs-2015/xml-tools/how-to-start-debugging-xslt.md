@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656328"
 ---
-# <a name="how-to-start-debugging-xslt"></a>方法: XSLT のデバッグを開始する
+# <a name="how-to-start-debugging-xslt"></a>方法 : XSLT のデバッグを開始する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XSLT デバッガーを使用すると、XSLT スタイル シートや XSLT アプリケーションをデバッグすることができます。 デバッグの際には、コードのステップ イン、ステップ オーバー、またはステップ アウトを行って、コードを一度に 1 行ずつ実行できます。 コードのステップ実行機能を使用するためのコマンドは、XSLT デバッガーを使用する場合と、他の Visual Studio デバッガーを使用する場合とで変わりません。 デバッグを開始すると、XSLT デバッガーのウィンドウが開き、入力ドキュメントと XSLT 出力が表示されます。
@@ -28,16 +28,16 @@ XSLT デバッガーを使用すると、XSLT スタイル シートや XSLT ア
 
 1. XML エディターでスタイル シートを開きます。
 
-2. **[XML]** メニューの **[XSL のデバッグ]** を選択します。
+2. [ **XML** ] メニューの [ **XSL のデバッグ**] を選択します。
 
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>XML 入力ドキュメントからデバッグを開始するには
 
 1. XML エディターで XML ドキュメントを開きます。
 
-2. **[XML]** メニューの **[XSL のデバッグ]** を選択します。
+2. [ **XML** ] メニューの [ **XSL のデバッグ**] を選択します。
 
 ## <a name="xslt-from-other-languages"></a>他の言語の XSLT
- アプリケーションのデバッグ中に XSLT にステップ インすることもできます。 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 呼び出しで F11 キーを押すと、デバッガーは XSLT コードにステップ インできます。
+ アプリケーションのデバッグ中に XSLT にステップ インすることもできます。  呼び出しで F11 キーを押すと、デバッガーは XSLT コードにステップ インできます。
 
 > [!NOTE]
 > <xref:System.Xml.Xsl.XslTransform> クラスから XSLT へのステップ インは、サポートされていません。 デバッグ中の XSLT へのステップ インをサポートしている XSLT プロセッサは、<xref:System.Xml.Xsl.XslCompiledTransform> クラスだけです。
@@ -87,5 +87,5 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>関連項目
- [チュートリアル: XSLT スタイルシートのデバッグ ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)[コードステップ](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)実行の概要
+## <a name="see-also"></a>参照
+ [チュートリアル: XSLT スタイルシートのデバッグ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)[コードのステップ](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)実行の概要

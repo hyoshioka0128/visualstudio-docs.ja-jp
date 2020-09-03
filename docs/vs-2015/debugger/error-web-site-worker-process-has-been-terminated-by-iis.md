@@ -1,5 +1,5 @@
 ---
-title: エラー :Web サイトのワーカー プロセスが IIS によって停止されました |Microsoft Docs
+title: エラー :Web サイトのワーカー プロセスが IIS によって停止されました | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185463"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
@@ -34,7 +34,7 @@ ms.locfileid: "68185463"
   
 1. **[管理ツール]** ウィンドウを開きます。  
   
-   1. をクリックして**開始**を選択し**コントロール パネルの**です。  
+   1. **[スタート]** ボタンをクリックし、 **[コントロール パネル]** をクリックします。  
   
    2. **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、 **[管理ツール]** をダブルクリックします。  
   
@@ -60,5 +60,5 @@ ms.locfileid: "68185463"
   
 8. IIS マネージャーと **[管理ツール]** ウィンドウを閉じます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)
