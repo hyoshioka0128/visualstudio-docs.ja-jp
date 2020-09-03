@@ -62,10 +62,10 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850972"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>エディット コンティニュのエラーと警告 (C#)
@@ -75,13 +75,13 @@ Visual C# エディット コンティニュで許可されていないコード
   
  通常、クラスのパブリック構造体に影響を及ぼす宣言コードの編集は禁止されています。また、クラス内のメソッド、プロパティ本体、プライベート宣言に対する一部の編集も禁止されています。 可能な場合、エディット コンティニュで編集できないコードは明るい灰色で示され、エラー メッセージが表示されます。  
   
- [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]のエディットコンティニュでサポートされている編集の詳細については、「[サポートされてC#いるコード変更 ()](../debugger/supported-code-changes-csharp.md)」を参照してください。 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)で質問を投稿したり、回答を検索したりできます。  
+ のエディットコンティニュでサポートされている編集の詳細について [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] は、「 [サポートされているコード変更 (C#)](../debugger/supported-code-changes-csharp.md)」を参照してください。 特定のエラーや警告に関する詳細情報が必要な場合は、MSDN の [Visual C# IDE フォーラム](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)で質問を投稿したり、回答を検索したりできます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 1. **[デバッグ]** メニューの **[元に戻す]** をクリックし、変更を元に戻します。  
   
-     -または-  
+     - または -  
   
 2. デバッグ セッションを停止し、編集を加えた後で新しいデバッグ セッションを開始します。  
   

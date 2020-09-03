@@ -1,5 +1,5 @@
 ---
-title: Windows インストーラ パッケージを作成する |マイクロソフトドキュメント
+title: Windows インストーラーパッケージを作成する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,42 +12,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710039"
 ---
-# <a name="author-a-windows-installer-package"></a>Windows インストーラ パッケージを作成する
-データは Windows インストーラ モデルを駆動します。 たとえば、ファイルをコピーしてレジストリ エントリを書き込むプロシージャ スクリプトを記述するのではなく、ファイルとレジストリ データを含むデータベース テーブルで行と列を作成します。
+# <a name="author-a-windows-installer-package"></a>Windows インストーラーパッケージを作成する
+データは Windows インストーラーモデルを駆動します。 たとえば、ファイルをコピーしてレジストリエントリを書き込むための手続き型スクリプトを記述するのではなく、ファイルとレジストリデータを格納するデータベーステーブルの行と列を作成します。
 
 ## <a name="database-entries"></a>データベースエントリ
-VSPackage をインストールするには、Windows インストーラー パッケージには、次のタスクを実行するデータベース エントリが含まれている必要があります。
+VSPackage をインストールするには、Windows インストーラーパッケージに次のタスクを実行するためのデータベースエントリが含まれている必要があります。
 
-- システムを検索して VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]サポートされているバージョンを見つけます (アプリサーチ、コンパケータ、RegLocator、DrLocator、およびシグネチャを含む Windows インストーラー テーブルを使用)。
+- システムを検索して、サポートされている VSPackage のバージョンを探し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます (AppSearch、CompLocator、RegLocator、DrLocator、署名を含む Windows インストーラーテーブルを使用します)。
 
-- サポートされているバージョンがインストールされていない場合、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]または VSPackage の別のシステム要件が満たされていない場合は、インストールをキャンセルします (LaunchCondition テーブルを使用)。
+- サポートされているのバージョンがインストールされていない場合、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] または VSPackage の別のシステム要件が満たされていない場合 (LaunchCondition テーブルを使用)、インストールをキャンセルします。
 
-- VSPackage と依存ファイルをインストールします (ディレクトリ、コンポーネント、およびファイル テーブルを使用)。
+- ディレクトリ、コンポーネント、およびファイルテーブルを使用して、VSPackage ファイルと依存ファイルをインストールします。
 
-- VSPackage の適切な情報をレジストリに追加します (レジストリ テーブルを使用)。
+- VSPackage の適切な情報をレジストリに追加します (レジストリテーブルを使用します)。
 
-- (カスタムアクション テーブル[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を使用して) **devenv.exe /setup**を呼び出すことによって、VSPackage を統合します。
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](CustomAction テーブルを使用して) **devenv.exe のセットアップ**を呼び出して、の VSPackage を統合します。
 
-詳細については、「 [Windows インストーラ](/windows/desktop/Msi/windows-installer-portal)」を参照してください。
+詳細については、「 [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)」を参照してください。
 
-## <a name="setup-tools"></a>セットアップ ツール
-Windows インストーラ パッケージの開発環境には、さまざまなサードパーティ製のセットアップ ツールが用意されています。 以下の無料ツールを利用できます。
+## <a name="setup-tools"></a>セットアップツール
+さまざまなサードパーティ製セットアップツールは、Windows インストーラーパッケージの開発環境を提供します。 次の無料ツールを利用できます。
 
-- インストールシールド限定版
+- InstallShield 制限付きエディション
 
-   Visual Studio の **[新しいプロジェクト**] ダイアログ ボックスでは、インストール シールドの限定バージョンを取得できます。 **[その他のプロジェクトの種類]** を展開し、[**セットアップと配置**] を選択します。 インストールシールドテンプレートを選択します。
+   Visual Studio の [ **新しいプロジェクト** ] ダイアログボックスでは、InstallShield の限定バージョンを取得できます。 [ **その他のプロジェクトの種類** ] を展開し、[ **セットアップと配置**] を選択します。 InstallShield テンプレートを選択します。
 
-- Windows インストーラ XML ツールセット
+- Windows インストーラー XML ツールセット
 
-   Windows インストーラ XML (WiX) ツールセットは、XML ソース ファイルから Windows インストーラ パッケージをビルドします。 WiX ツールセットは、マイクロソフトのオープン ソース プロジェクトです。 ソース コードと実行可能ファイルは[、Wix ツールセット](https://sourceforge.net/projects/wix/)からダウンロードできます。
+   Windows インストーラー XML (WiX) ツールセットは、XML ソースファイルからパッケージを Windows インストーラービルドします。 WiX ツールセットは、Microsoft オープンソースプロジェクトです。 [Wix ツールセット](https://sourceforge.net/projects/wix/)からソースコードと実行可能ファイルをダウンロードできます。
 
-   を使用して に[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合する商用製品については、「 [Visual Studio マーケットプレース](https://marketplace.visualstudio.com/)」を参照してください。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]
+   を使用してに統合する商用製品の場合は [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 、「 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [Windows インストーラーを使用して VS パッケージをインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [Windows インストーラーと共に Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

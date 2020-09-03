@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536293"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce アプリケーションの発行
@@ -43,7 +43,7 @@ ms.locfileid: "85536293"
 
 - 更新間隔 - 新しい更新プログラムをアプリケーションがチェックする頻度。
 
-  詳細については、「[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
+  詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
 
 ## <a name="publish-page"></a>ページの発行
  **プロジェクト デザイナー** の **[発行]** ページは、ClickOnce 配置用のプロパティを構成する場合に使用します。 次の表にトピックを示します。
@@ -61,13 +61,13 @@ ms.locfileid: "85536293"
 ### <a name="application-files-dialog-box"></a>[アプリケーション ファイル] ダイアログ ボックス
  このダイアログ ボックスでは、発行、動的ダウンロード、および更新のために、プロジェクト内のファイルを分類する方法を指定できます。 このダイアログ ボックスには、既定では除外されないプロジェクト ファイル、またはダウンロード グループのあるプロジェクト ファイルを一覧にしたグリッドが含まれています。
 
- ファイルを除外する、ファイルをデータファイルまたは前提条件としてマークする、Visual Studio UI で条件付きインストール用のファイルグループを作成する方法については、「[方法: ClickOnce によって発行されるファイルを指定](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)する」を参照してください。 また、Mage.exe を使用してデータ ファイルにマークすることもできます。 詳しくは、「[方法: ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」をご覧ください。
+ ファイルを除外する、ファイルをデータファイルまたは前提条件としてマークする、Visual Studio UI で条件付きインストール用のファイルグループを作成する方法については、「 [方法: ClickOnce によって発行されるファイルを指定](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)する」を参照してください。 また、Mage.exe を使用してデータ ファイルにマークすることもできます。 詳細については、「 [方法: ClickOnce アプリケーションにデータファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
 
 ### <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス
- このダイアログ ボックスでは、必須コンポーネントとしてインストールするコンポーネントおよびそのインストール方法を指定します。 詳細については、「[方法: ClickOnce アプリケーション](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)と[必須コンポーネント](../ide/reference/prerequisites-dialog-box.md)をインストールする」を参照してください。
+ このダイアログ ボックスでは、必須コンポーネントとしてインストールするコンポーネントおよびそのインストール方法を指定します。 詳細については、「 [方法: ClickOnce アプリケーション](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) と [必須コンポーネント](../ide/reference/prerequisites-dialog-box.md)をインストールする」を参照してください。
 
 ### <a name="application-updates-dialog-box"></a>[アプリケーションの更新] ダイアログ ボックス
- このダイアログ ボックスでは、アプリケーションのインストール時に更新プログラムをチェックする方法を指定します。 詳細については、「[方法: ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)」を参照してください。
+ このダイアログ ボックスでは、アプリケーションのインストール時に更新プログラムをチェックする方法を指定します。 詳細については、「 [方法: ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)」を参照してください。
 
 ### <a name="publish-options-dialog-box"></a>[発行オプション] ダイアログ ボックス
  [発行オプション] ダイアログ ボックスでは、アプリケーションの配置オプションを指定します。
