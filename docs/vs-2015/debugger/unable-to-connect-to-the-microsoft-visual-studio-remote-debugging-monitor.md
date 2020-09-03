@@ -1,5 +1,5 @@
 ---
-title: Microsoft Visual Studio リモートデバッグモニター | に接続できませんMicrosoft Docs
+title: Microsoft Visual Studio リモート デバッグ モニターに接続できません | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477066"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
@@ -38,7 +38,7 @@ ms.locfileid: "77477066"
   
 ## <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- Visual Studio リモート デバッグ モニターがリモート コンピューターにインストールされ、実行されていることを確認します。 リモートデバッガーとそのインストール方法の詳細については、「[リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。  
+- Visual Studio リモート デバッグ モニターがリモート コンピューターにインストールされ、実行されていることを確認します。 リモートデバッガーとそのインストール方法の詳細については、「 [リモートデバッグ](../debugger/remote-debugging.md)」を参照してください。  
   
 - Visual Studio で、プロジェクトのプロパティ (**プロジェクト/プロパティ/デバッグ**) を確認します。 **[リモート サーバー名]** が正しいことを確認します。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "77477066"
  リモート コンピューターに [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) してみてください。 ping に応答しない場合は、リモート ツールも接続できません。 リモート コンピューターを再起動するか、またはネットワークでリモート コンピューターが正しく構成されていることを確認してください。  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>リモート デバッガーのバージョンが Visual Studio のバージョンと一致していない  
- ローカルで実行している Visual Studio のバージョンは、リモート コンピューターで実行されているリモート デバッグ モニターのバージョンと一致している必要があります。 これを解決するには、リモート デバッグ モニターの一致するバージョンをダウンロードして、インストールします。 Visual [studio サブスクリプション](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)にアクセスして、使用している visual studio のバージョンに対応する適切なバージョンのリモートデバッガーを検索します。
+ ローカルで実行している Visual Studio のバージョンは、リモート コンピューターで実行されているリモート デバッグ モニターのバージョンと一致している必要があります。 これを解決するには、リモート デバッグ モニターの一致するバージョンをダウンロードして、インストールします。 Visual [studio サブスクリプション](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) にアクセスして、使用している visual studio のバージョンに対応する適切なバージョンのリモートデバッガーを検索します。
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>ローカル コンピューターとリモート コンピューターの認証モードが異なる  
 
@@ -61,9 +61,9 @@ ms.locfileid: "77477066"
   
 - リモート デバッガーを停止し、ローカル コンピューターで使用しているアカウントで再起動します。  
   
-- コマンド ラインで **/allow \<ユーザー名>** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。  
+- コマンド ラインで **/allow \<username>** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。  
   
-- リモート デバッガーのアクセス許可に該当ユーザーを追加します (リモート デバッガーのウィンドウで **[ツール] / [アクセス許可]** を選択)。  
+- リモートデバッガーのアクセス許可にユーザーを追加することができます (リモートデバッガーウィンドウで、[ **ツール]/[アクセス許可**])。  
   
 - 前の手順の方法を使用できない場合は、すべてのユーザーにリモート デバッグの実行を許可します。 リモート デバッガー ウィンドウで、 **[ツール] / [オプション]** ダイアログに移動します。 **[認証なし]** を選択すると、 **[すべてのユーザーにデバッグを許可する]** をチェックできるようになります。 ただし、このオプションの使用は、他に選択肢がない場合、またはプライベート ネットワーク上で作業している場合に限る必要があります。  
   
@@ -85,4 +85,4 @@ ms.locfileid: "77477066"
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>参照  
- [リモート デバッグ](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

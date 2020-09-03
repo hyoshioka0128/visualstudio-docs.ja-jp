@@ -26,7 +26,7 @@
               href: securing-clickonce-applications.md
             - name: ClickOnce と Authenticode
               href: clickonce-and-authenticode.md
-            - name: 信頼されたアプリケーションの配置の概要
+            - name: Trusted Application Deployment Overview
               href: trusted-application-deployment-overview.md
             - name: ClickOnce アプリケーションのコード アクセス セキュリティ
               href: code-access-security-for-clickonce-applications.md
@@ -120,7 +120,7 @@
               items:
                 - name: デザイナーを使用し、ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: 'チュートリアル : ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする'
+                - name: ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: デザイナーを使用し、ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロードする
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
@@ -180,7 +180,7 @@
                   href: dependency-element-clickonce-application.md
                 - name: \<file> 要素
                   href: file-element-clickonce-application.md
-                - name: \<fileAssociation > 要素
+                - name: \<fileAssociation> 要素
                   href: fileassociation-element-clickonce-application.md
             - name: ClickOnce 配置マニフェスト
               items:

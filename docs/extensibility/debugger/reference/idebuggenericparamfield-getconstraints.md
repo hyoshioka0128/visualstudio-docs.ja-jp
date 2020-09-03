@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugGenericParamField:: GetConstraints |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728010"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-このジェネリック パラメーターに関連付けられている制約を取得します。
+このジェネリックパラメーターに関連付けられている制約を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,19 +44,19 @@ int GetConstraints(
 
 ## <a name="parameters"></a>パラメーター
 `cConstraints`\
-[in]制約の数。
+から制約の数。
 
 `ppConstraints`\
-[アウト]このフィールドに関連付けられている制約を含む配列を返します。
+入出力このフィールドに関連付けられている制約を格納している配列を返します。
 
 `pcConstraints`\
-[イン、アウト]配列内の制約の`ppConstraints`数。
+[入力、出力]配列内の制約の数 `ppConstraints` 。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**オブジェクト**に対してこの[メソッドを実装](../../../extensibility/debugger/reference/idebuggenericparamfield.md)する方法を次の例に示します。
+次の例は、 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)インターフェイスを公開する**CDebugGenericParamFieldType**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

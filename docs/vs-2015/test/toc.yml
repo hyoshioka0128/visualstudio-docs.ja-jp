@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: PropertyProvider クラス
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: 要素クラス
+                - name: Element クラス
                   href: sample-excel-extension-element-classes.md
                 - name: ActionFilter クラス
                   href: sample-excel-extension-actionfilter-class.md
@@ -152,13 +152,13 @@
       items:
         - name: Visual Studio でのストア アプリのテスト
           href: testing-store-apps-with-visual-studio.md
-        - name: 単体テストの作成および実行
+        - name: 単体テストを作成して実行する
           items:
-            - name: 単体テストの作成および実行
+            - name: 単体テストを作成して実行する
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
             - name: C++ DLL の単体テスト
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'C# コードの単体テスト'
+            - name: C# コードの単体テスト
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: テスト エクスプローラーでの単体テストの実行
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -166,7 +166,7 @@
           items:
             - name: 静的コード分析によるコード品質の分析
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Visual Basic および C# のコード品質の分析'
+            - name: Visual Basic および C# のコード品質の分析
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: C++ コード品質の分析
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

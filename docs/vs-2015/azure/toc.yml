@@ -52,7 +52,7 @@
       items:
         - name: Azure クラウド サービスまたは仮想マシンのデバッグ
           href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Azure クラウド サービスをデバッグするさまざまな方法
+        - name: Azure クラウド サービスをデバッグするためのさまざまな方法を理解する
           href: vs-azure-tools-debugging-cloud-services-overview.md
         - name: Azure クラウド サービスと仮想マシンに対する診断を設定する
           href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
@@ -96,7 +96,7 @@
           href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Microsoft Azure Storage Explorer のリリース ノート
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: ストレージ エクスプローラーのアクセシビリティ
+        - name: Storage Explorer のアクセシビリティ
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:

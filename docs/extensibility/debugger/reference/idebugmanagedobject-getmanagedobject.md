@@ -1,5 +1,5 @@
 ---
-title: マネージオブジェクトを取得します。マイクロソフトドキュメント
+title: 'IDebugManagedObject:: GetManagedObject |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727742"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
-マネージ オブジェクトを表すインターフェイスを返します。
+マネージオブジェクトを表すインターフェイスを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>パラメーター
 `ppManagedObject`\
-[アウト]マネージ オブジェクトを表すインターフェイスを返します。
+入出力マネージオブジェクトを表すインターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドから返されるインターフェイスは、マネージ クラスによって実装されるインターフェイスに対してクエリを実行でき、メソッドを呼び出すことができます。
+## <a name="remarks"></a>解説
+ このメソッドから返されるインターフェイスは、マネージクラスによって実装されたインターフェイスに対してクエリを実行できるため、そのメソッドを呼び出すことができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

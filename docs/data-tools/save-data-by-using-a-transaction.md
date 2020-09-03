@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281696"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>方法: トランザクションを使用してデータを保存する
 
 トランザクションにデータを保存するには、 <xref:System.Transactions> 名前空間を使用します。 オブジェクトを使用して、 <xref:System.Transactions.TransactionScope> 自動的に管理されるトランザクションに参加します。
 
-プロジェクト*は、system.string アセンブリへ*の参照を使用して作成されるわけではないため、トランザクションを使用するプロジェクトへの参照を手動で追加する必要があります。
+プロジェクト *は、system.string アセンブリへ* の参照を使用して作成されるわけではないため、トランザクションを使用するプロジェクトへの参照を手動で追加する必要があります。
 
 トランザクションを実装する最も簡単な方法は、ステートメントでオブジェクトをインスタンス化することです <xref:System.Transactions.TransactionScope> `using` 。 (詳細については、「 [using ステートメント](/dotnet/visual-basic/language-reference/statements/using-statement)」および「 [using ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)」を参照してください)。ステートメント内で実行されるコードは、 `using` トランザクションに参加します。
 

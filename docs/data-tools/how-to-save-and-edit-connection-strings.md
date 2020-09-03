@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282021"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>方法: 接続文字列を保存および編集する
@@ -21,7 +21,7 @@ Visual Studio アプリケーションの接続文字列は、アプリケーシ
 接続文字列内に機密情報 (パスワードなど) を格納すると、アプリケーションのセキュリティに影響を及ぼすことがあります。 アプリケーション構成ファイルに保存された接続文字列は暗号化も難読化もされないため、第三者がファイルにアクセスしてコンテンツを表示する可能性があります。 データベースへのアクセスを制御する方法としては、Windows 統合セキュリティを使用する方が安全です。
 
 Windows 統合セキュリティを使用しない環境で、データベースにユーザー名とパスワードが必要な場合、接続文字列からユーザー名とパスワードを削除できます。ただし、データベースに正常に接続するには、この情報をアプリケーションから提供する必要があります。 たとえば、ユーザーにこの情報を要求するダイアログ ボックスを作成し、実行時に接続文字列を動的にビルドできます。 この方法でも、情報がデータベースに送信される途中で傍受された場合は、セキュリティの問題が発生する可能性があります。
-詳細については、「[接続情報の保護](/dotnet/framework/data/adonet/protecting-connection-information)」を参照してください。
+詳細については、「 [接続情報の保護](/dotnet/framework/data/adonet/protecting-connection-information)」を参照してください。
 
 ## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>データソース構成ウィザード内から接続文字列を保存するには
 **データソース構成ウィザード**で、[**アプリケーション構成ファイルに接続文字列を保存**] ページで接続を保存するオプションを選択します。
@@ -40,7 +40,7 @@ Windows 統合セキュリティを使用しない環境で、データベース
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>アプリケーション設定に格納された接続文字列を編集するには
 1. **ソリューション エクスプローラーで**、**[My Project]** アイコン (Visual Basic) または **[プロパティ]** アイコン (C#) をダブルクリックして、**プロジェクト デザイナー**を開きます。
 1. **[設定]** タブを選択します。
-1. 編集する接続を見つけて、[**値**] フィールドのテキストを選択します。
+1. 編集する接続を見つけて、[ **値** ] フィールドのテキストを選択します。
 1. [**値**] フィールドの接続文字列を編集するか、[**値**] フィールドの**省略記号**ボタン ([...]) をクリックして、[**接続プロパティ**] ダイアログボックスで接続を編集します。
 
 ## <a name="edit-connection-strings-for-datasets"></a>データセットの接続文字列の編集
@@ -48,13 +48,13 @@ Windows 統合セキュリティを使用しない環境で、データベース
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>データセット内の TableAdapter の接続文字列を編集するには
 1. **ソリューションエクスプローラー**で、編集する接続が含まれているデータセット (**.xsd**ファイル) をダブルクリックします。
-1. 編集する接続が含まれている**TableAdapter**またはクエリを選択します。
-1. [**プロパティ**] ウィンドウで、[**接続] ノード**を展開します。
-1. 接続文字列をすばやく変更するには、 **ConnectionString**プロパティを編集するか、**接続**プロパティの下矢印をクリックして [**新しい接続**] を選択します。
+1. 編集する接続が含まれている **TableAdapter** またはクエリを選択します。
+1. [ **プロパティ** ] ウィンドウで、[ **接続] ノード**を展開します。
+1. 接続文字列をすばやく変更するには、 **ConnectionString** プロパティを編集するか、 **接続** プロパティの下矢印をクリックして [ **新しい接続**] を選択します。
 
-## <a name="security"></a>Security
+## <a name="security"></a>セキュリティ
 接続文字列内に機密情報 (パスワードなど) を格納すると、アプリケーションのセキュリティに影響を及ぼすことがあります。 データベースへのアクセスを制御する方法としては、Windows 統合セキュリティを使用する方が安全です。
-詳細については、「[接続情報の保護](/dotnet/framework/data/adonet/protecting-connection-information)」を参照してください。
+詳細については、「 [接続情報の保護](/dotnet/framework/data/adonet/protecting-connection-information)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

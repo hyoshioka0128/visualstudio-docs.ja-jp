@@ -1,5 +1,5 @@
 ---
-title: イベント2::PassToDebugジー |マイクロソフトドキュメント
+title: IDebugExceptionEvent2::P assToDebuggee |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729837"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
-実行が再開されるときに、デバッグ中のプログラムに例外を渡すか、または例外を破棄するかを指定します。
+例外を、実行の再開時にデバッグされるプログラムに渡すか、または例外を破棄する必要があるかを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +41,15 @@ int PassToDebuggee(
 
 ## <a name="parameters"></a>パラメーター
 `fPass`\
-[in]実行が`TRUE`再開されるときに、デバッグ中のプログラムに例外を渡す場合は 0 以外 ( ) 、`FALSE`例外を破棄する場合は 0 ( ) を返します。
+から`TRUE`実行が再開されたときにデバッグ対象のプログラムに例外を渡す必要がある場合は0以外 ()、例外を破棄する必要がある場合は 0 ( `FALSE` )。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドを呼び出しても、実際にはデバッグ中のプログラムでコードが実行されるわけではありません。 呼び出しは、次のコード実行の状態を設定するだけです。 たとえば[、CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)メソッドの呼び出し`S_OK`は[、EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)で返される場合があります。`dwState` フィールドを`EXCEPTION_STOP_SECOND_CHANCE`に設定します。
+## <a name="remarks"></a>解説
+ このメソッドを呼び出すと、実際には、デバッグ中のプログラムでコードが実行されることはありません。 呼び出しは、次のコード実行の状態を設定するだけです。 たとえば、 [canパスワード](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)を使用するメソッドを呼び出すと、EXCEPTION_INFO が返される場合があり `S_OK` ます。 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)`dwState` フィールドをに設定 `EXCEPTION_STOP_SECOND_CHANCE` します。
 
- IDE は[、イベント](../../../extensibility/debugger/reference/idebugexceptionevent2.md)を受け取り[、Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)メソッドを呼び出す可能性があります。 デバッグ エンジン (DE) は、メソッドが呼び出されない場合`PassToDebuggee`、ケースを処理する既定の動作を持っている必要があります。
+ IDE は、 [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) イベントを受け取り、 [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) メソッドを呼び出すことができます。 デバッグエンジン (DE) には、メソッドが呼び出されない場合にそのケースを処理するための既定の動作が必要です `PassToDebuggee` 。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

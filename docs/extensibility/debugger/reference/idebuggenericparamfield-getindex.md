@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugGenericParamField:: GetIndex |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6b31acd57685058795186fcecb73164218d5ad15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727987"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-このジェネリック パラメーターのインデックスを取得します。
+このジェネリックパラメーターのインデックスを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,16 +39,16 @@ int GetIndex(
 
 ## <a name="parameters"></a>パラメーター
 `pIndex`\
-[アウト]このジェネリック パラメーターのインデックス値。
+入出力このジェネリックパラメーターのインデックス値。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-例えば、辞書(K,V)の場合、Kはインデックス0、Vはインデックス1です。
+## <a name="remarks"></a>解説
+たとえば、辞書 (K, V) の場合、K はインデックス0、V はインデックス1です。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**オブジェクト**に対してこの[メソッドを実装](../../../extensibility/debugger/reference/idebuggenericparamfield.md)する方法を次の例に示します。
+次の例は、 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)インターフェイスを公開する**CDebugGenericParamFieldType**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)

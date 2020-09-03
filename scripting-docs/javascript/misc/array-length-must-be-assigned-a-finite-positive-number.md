@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 30e02f4f90300e2c05076553419cda5f8c353ab0
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817685"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>配列の長さは、割り当てられた有限の正数でなければなりません。
-既存の**配列**オブジェクトの**length**プロパティを設定するときに、正の数または0ではない配列の長さを指定しました。 このエラーは、負の値または非数 () のオブジェクトの**length**プロパティに値を代入したときに発生し `Array` `NaN` ます。 は、 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 小数部を整数に自動的に変換することに注意してください。  
+既存の**配列**オブジェクトの**length**プロパティを設定するときに、正の数または0ではない配列の長さを指定しました。 このエラーは、負の値または非数 () のオブジェクトの **length** プロパティに値を代入したときに発生し `Array` `NaN` ます。 は、 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 小数部を整数に自動的に変換することに注意してください。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

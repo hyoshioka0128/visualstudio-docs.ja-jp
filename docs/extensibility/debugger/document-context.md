@@ -1,5 +1,5 @@
 ---
-title: ドキュメントコンテキスト |マイクロソフトドキュメント
+title: ドキュメントコンテキスト |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 48fe651e69e5e2c97756788cc30e54454c26e51e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738922"
 ---
 # <a name="document-context"></a>ドキュメントのコンテキスト
-デバッグ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]では、*ドキュメントコンテキスト*:
+デバッグでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、 *ドキュメントコンテキスト*は次のようになります。
 
-- ソース ファイル内の位置を表します。 ソース ファイルが存在しない言語では、ドキュメント コンテキストは、通常、実行時環境によって生成されるドキュメント内の位置を識別します。 たとえば、スクリプト エンジンはスクリプトからドキュメントを生成する場合があります。 詳細については、「[ドキュメントの位置」を](../../extensibility/debugger/document-position.md)参照してください。
+- ソースファイル内の位置を表します。 ソースファイルが存在しない可能性がある言語の場合、ドキュメントコンテキストは、通常、ランタイム環境によって生成されるドキュメント内の位置を識別します。 たとえば、スクリプトエンジンは、スクリプトからドキュメントを生成する場合があります。 詳細については、「 [ドキュメントの位置](../../extensibility/debugger/document-position.md)」を参照してください。
 
-- コード コンテキストに対応するソース ドキュメント内の位置を記述します。 シンボル ハンドラーは、コンパイラまたはインタプリタによって生成された情報を使用して、コード コンテキストをドキュメント コンテキストにマップします。
+- コードコンテキストに対応するソースドキュメント内の位置を記述します。 シンボルハンドラーは、コンパイラまたはインタープリターによって生成された情報を使用して、コードコンテキストをドキュメントコンテキストにマップします。
 
-- インターフェイスによって実装されます。 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- は、 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) インターフェイスによって実装されます。
 
 ## <a name="see-also"></a>関連項目
-- [コード コンテキスト](../../extensibility/debugger/code-context.md)
-- [シンボル プロバイダー](../../extensibility/debugger/symbol-provider.md)
-- [シンボル プロバイダー インターフェイス](../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-- [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)
+- [コードコンテキスト](../../extensibility/debugger/code-context.md)
+- [シンボルプロバイダー](../../extensibility/debugger/symbol-provider.md)
+- [シンボルプロバイダーインターフェイス](../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md)

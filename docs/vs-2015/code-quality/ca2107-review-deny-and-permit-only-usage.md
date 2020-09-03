@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7f273ea5f58babf7a0c04f6b0758732d43aab7db
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547772"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:拒否および許可のみの使用を確認します
@@ -42,7 +42,7 @@ ms.locfileid: "85547772"
 
  これらのアクションに依存するコードは、有用性と微妙な動作が制限されているため、セキュリティの脆弱性に対して慎重に評価する必要があります。 以下、具体例に沿って説明します。
 
-- [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)は、Deny または PermitOnly の影響を受けません。
+- [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) は、Deny または PermitOnly の影響を受けません。
 
 - スタックウォークを発生させる要求と同じスタックフレームで Deny または PermitOnly が発生した場合、セキュリティアクションは無効です。
 
@@ -76,7 +76,7 @@ ms.locfileid: "85547772"
 **Linkdemand: 呼び出し元の Deny は、アサートされたアクセス許可を持つ LinkDemand には影響しません。** 
 **Linkdemand: 呼び出し元の拒否は、LinkDemand で保護されたコードには影響しません。** 
 **Linkdemand: この拒否は、linkdemand で保護されたコードには影響しません。**
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>

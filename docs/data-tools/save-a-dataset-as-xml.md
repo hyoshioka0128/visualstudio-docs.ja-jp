@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281735"
 ---
 # <a name="save-a-dataset-as-xml"></a>データセットを XML として保存する
@@ -33,7 +33,7 @@ ms.locfileid: "85281735"
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>データセットのデータを XML として変数に保存するには
 
-- <xref:System.Data.DataSet.GetXml%2A> メソッドは <xref:System.String> を返します。 型の変数を宣言 <xref:System.String> し、メソッドの結果を代入し <xref:System.Data.DataSet.GetXml%2A> ます。
+- <xref:System.Data.DataSet.GetXml%2A> メソッドが <xref:System.String> を返します。 型の変数を宣言 <xref:System.String> し、メソッドの結果を代入し <xref:System.Data.DataSet.GetXml%2A> ます。
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]

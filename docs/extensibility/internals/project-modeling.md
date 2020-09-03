@@ -1,5 +1,5 @@
 ---
-title: プロジェクトモデリング |マイクロソフトドキュメント
+title: プロジェクトモデリング |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706554"
 ---
 # <a name="project-modeling"></a>プロジェクトのモデリング
-プロジェクトのオートメーションを提供する次の手順は、標準プロジェクト オブジェクト<xref:EnvDTE.Projects>を`ProjectItems`実装することです。と`Project`<xref:EnvDTE.ProjectItem>オブジェクト。実装に固有の残りのオブジェクト。 これらの標準オブジェクトは、Dteinternal.h ファイルで定義されます。 標準オブジェクトの実装は、BscPrj サンプルで提供されています。 これらのクラスをモデルとして使用して、他のプロジェクト タイプのプロジェクト オブジェクトと並んで立つ独自の標準プロジェクト オブジェクトを作成できます。
+プロジェクトの自動化を提供する次の手順では、標準のプロジェクトオブジェクトを実装します。これは、 <xref:EnvDTE.Projects> との `ProjectItems` コレクション、 `Project` オブジェクトとオブジェクト、および <xref:EnvDTE.ProjectItem> 実装に固有の残りのオブジェクトです。 これらの標準オブジェクトは、Dteinternal .h ファイルで定義されています。 標準オブジェクトの実装は、BscPrj サンプルに用意されています。 これらのクラスをモデルとして使用して、他のプロジェクトの種類のプロジェクトオブジェクトとサイドバイサイドで実行する独自の標準プロジェクトオブジェクトを作成できます。
 
- オートメーション コンシューマは<xref:EnvDTE.Solution>、(" と`<UniqueProjName>")`)<xref:EnvDTE.ProjectItems>`n`を呼び出すことができると推測されます。 このオートメーション呼び出しを行うと<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>、環境は適切なプロジェクト階層を呼び出し、VSITEMID_ROOT ItemID パラメーターとして渡し、VSHPROPID パラメーターとしてVSHPROPID_ExtObjectします。 `IVsHierarchy::GetProperty`は、`IDispatch`実装したコア`Project`インターフェイスを提供するオートメーション オブジェクトへのポインタを返します。
+ オートメーションコンシューマーは、("と () を呼び出すことができることを前提としてい <xref:EnvDTE.Solution> `<UniqueProjName>")` <xref:EnvDTE.ProjectItems> `n` ます。ここで、n は、ソリューション内の特定のプロジェクトを取得するためのインデックス番号です。 このオートメーション呼び出しを行うと、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> 適切なプロジェクト階層で環境が呼び出され、ItemID パラメーターとして VSITEMID_ROOT が渡され、VSHPROPID パラメーターとして VSHPROPID_ExtObject されます。 `IVsHierarchy::GetProperty``IDispatch`実装したコアインターフェイスを提供するオートメーションオブジェクトへのポインターを返し `Project` ます。
 
- 次に、 の構文`IVsHierarchy::GetProperty`を示します。
+ の構文を次に示し `IVsHierarchy::GetProperty` ます。
 
  `HRESULT GetProperty (`
 
@@ -35,7 +35,7 @@ ms.locfileid: "80706554"
 
  `);`
 
- プロジェクトは入れ子に対応し、コレクションを使用してプロジェクト項目のグループを作成します。 階層は次のようになります。
+ プロジェクトは、入れ子にすることができ、コレクションを使用してプロジェクト項目のグループを作成します。 階層は次のようになります。
 
 ```
 Projects
@@ -44,13 +44,13 @@ Projects
           |- ProjectItem (single object) or ProjectItems (another collection)
 ```
 
- 入れ子とは<xref:EnvDTE.ProjectItem>、入れ<xref:EnvDTE.ProjectItems>子になったオブジェクトをコレクションに含`ProjectItems`めることができるので、オブジェクトを同時にコレクションにできることを意味します。 基本プロジェクトのサンプルでは、この入れ子の例は示されていません。 オブジェクトを`Project`実装すると、オートメーション モデル全体の設計を特徴付けたツリーのような構造に参加できます。
+ 入れ子とは、 <xref:EnvDTE.ProjectItem> <xref:EnvDTE.ProjectItems> `ProjectItems` コレクションに入れ子になったオブジェクトを含めることができるため、オブジェクトを同時にコレクションにすることができることを意味します。 基本的なプロジェクトのサンプルでは、この入れ子については説明しません。 オブジェクトを実装することにより `Project` 、オートメーションモデル全体の設計を特徴とするツリーのような構造に関与します。
 
- プロジェクトの自動化は、次の図のパスに従います。
+ プロジェクトオートメーションは、次の図のパスに従います。
 
- ![プロジェクト オブジェクト](../../extensibility/internals/media/projectobjects.gif "ProjectObjects")プロジェクトの自動化
+ ![Visual Studio プロジェクトオブジェクト](../../extensibility/internals/media/projectobjects.gif "ProjectObjects") プロジェクトの自動化
 
- オブジェクトを`Project`実装しない場合でも、環境はプロジェクトの名前のみを含む`Project`ジェネリック オブジェクトを返します。
+ オブジェクトを実装しない場合 `Project` でも、プロジェクトの名前のみを含む汎用オブジェクトが環境によって返され `Project` ます。
 
 ## <a name="see-also"></a>関連項目
 - <xref:EnvDTE.Projects>

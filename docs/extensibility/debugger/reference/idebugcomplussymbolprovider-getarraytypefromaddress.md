@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider:: GetArrayTypeFromAddress |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 048a086bae946b5ce730bdfe2c343b6cde1b29e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733993"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-指定した配列のデバッグ アドレスに関する型情報を取得します。
+デバッグアドレスを指定して、指定した配列に関する型情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,22 +46,22 @@ int GetArrayTypeFromAddress(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]インターフェイスによって表されるデバッグ[アドレス](../../../extensibility/debugger/reference/idebugaddress.md)。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるデバッグアドレス。
 
 `pSig`\
-[in]検査する配列。
+から調べる配列。
 
 `dwSigLength`\
-[in]配列のバイト単位の`pSig`長さ。
+から配列の長さ (バイト単位) `pSig` 。
 
 `ppField`\
-[アウト][インターフェイスによって](../../../extensibility/debugger/reference/idebugclassfield.md)表される配列の型を返します。
+入出力 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) インターフェイスによって表される配列型を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(

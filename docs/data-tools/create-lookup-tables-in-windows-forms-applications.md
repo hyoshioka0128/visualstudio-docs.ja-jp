@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282658"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows フォーム アプリケーションでルックアップ テーブルを作成する
 
 *ルックアップ テーブル*という用語は、関連する 2 つのデータ テーブルにバインドされているコントロールを表します。 この検索コントロールは、2 番目のテーブルで選択されている値に基づいて最初のテーブルからデータを表示します。
 
-参照テーブルを作成するには、([[データソース] ウィンドウ](add-new-data-sources.md#data-sources-window)から) 親テーブルのメインノードを、関連付けられている子テーブルの列に既にバインドされているフォーム上のコントロールにドラッグします。
+参照テーブルを作成するには、([ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window)から) 親テーブルのメインノードを、関連付けられている子テーブルの列に既にバインドされているフォーム上のコントロールにドラッグします。
 
-たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 `Orders` テーブルの各レコードには、注文した顧客を表す `CustomerID` が含まれます。 `CustomerID` は、`Customers` テーブルの顧客レコードを指す外部キーです。 このシナリオでは、[ `Orders` **データソース**] ウィンドウでテーブルを展開し、メインノードを [**詳細**] に設定します。 次に、 `CustomerID` <xref:System.Windows.Forms.ComboBox> (または参照バインドをサポートするその他のコントロール) を使用するように列を設定し、ノードをフォームにドラッグし `Orders` ます。 最後に、 `Customers` 関連する列にバインドされているコントロール (この場合は列にバインドされている) にノードをドラッグし <xref:System.Windows.Forms.ComboBox> `CustomerID` ます。
+たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 `Orders` テーブルの各レコードには、注文した顧客を表す `CustomerID` が含まれます。 `CustomerID` は、`Customers` テーブルの顧客レコードを指す外部キーです。 このシナリオでは、[ `Orders` **データソース** ] ウィンドウでテーブルを展開し、メインノードを [ **詳細**] に設定します。 次に、 `CustomerID` <xref:System.Windows.Forms.ComboBox> (または参照バインドをサポートするその他のコントロール) を使用するように列を設定し、ノードをフォームにドラッグし `Orders` ます。 最後に、 `Customers` 関連する列にバインドされているコントロール (この場合は列にバインドされている) にノードをドラッグし <xref:System.Windows.Forms.ComboBox> `CustomerID` ます。
 
 ## <a name="to-databind-a-lookup-control"></a>検索コントロールをデータバインドするには
 
 1. プロジェクトを開いた状態で、[ **View**他の Windows データソースの表示] を選択して [**データソース**] ウィンドウを開き  >  **Other Windows**  >  **Data Sources**ます。
 
     > [!NOTE]
-    > 検索テーブルを作成するには、関連付けられた 2 つのテーブルまたはオブジェクトが **[データ ソース]** ウィンドウで使用可能になっている必要があります。 詳細については、「[データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
+    > 検索テーブルを作成するには、関連付けられた 2 つのテーブルまたはオブジェクトが **[データ ソース]** ウィンドウで使用可能になっている必要があります。 詳細については、「 [データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
 
 2. **[データ ソース]** ウィンドウで、親テーブルとそのすべての列および関連する子テーブルとそのすべて列が表示されるまでノードを展開します。
 
     > [!NOTE]
     > 子テーブルのノードは、展開可能な子ノードとして親テーブルに表示されます。
 
-3. 子テーブルのノードのコントロール一覧の **[詳細]** を選択し、子テーブルのドロップ タイプを **[詳細]** に変更します。 詳細については、「[[データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
+3. 子テーブルのノードのコントロール一覧の **[詳細]** を選択し、子テーブルのドロップ タイプを **[詳細]** に変更します。 詳細については、「[ [データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
 
 4. 2つのテーブルを関連付けるノード (前の `CustomerID` 例ではノード) を見つけます。 <xref:System.Windows.Forms.ComboBox>コントロールリストから**ComboBox**を選択して、ドロップタイプをに変更します。
 

@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c38d8bc2eefe9c6116f9bde93e475cf332591471
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75573236"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "基本正確性規則" 規則セット
 
-"基本的な正確性規則" 規則セットは、フレームワーク Api の使用におけるロジックエラーと一般的な誤りに焦点を当てます。 基本的な正確性規則には、"[マネージ推奨規則](managed-recommended-rules-rule-set-for-managed-code.md)" 規則セットの規則が含まれます。
+"基本的な正確性規則" 規則セットは、フレームワーク Api の使用におけるロジックエラーと一般的な誤りに焦点を当てます。 基本的な正確性規則には、" [マネージ推奨規則](managed-recommended-rules-rule-set-for-managed-code.md) " 規則セットの規則が含まれます。
 
 次の表では、Microsoft の基本的な正確性規則の規則セットに含まれるすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009.md)|イベント ハンドラーを正しく宣言します|

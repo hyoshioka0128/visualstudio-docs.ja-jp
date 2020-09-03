@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667128"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
@@ -25,22 +25,22 @@ ms.locfileid: "72667128"
 
  使用するプログラミング言語に関する具体的な情報については、次のトピックを参照してください。
 
-- Visual Basic-- [方法 : ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic--[方法: ビルドイベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
 - Visual C# および F# -- [方法: ビルド イベントの指定 (C#)](../ide/how-to-specify-build-events-csharp.md)
 
 - Visual C++ -- [ビルド イベントの指定](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)
 
 ## <a name="syntax"></a>構文
- ビルド イベントは、DOS コマンドと同じ構文に従いますが、マクロを使用すると、ビルド イベントをより簡単に作成することができます。 使用可能なマクロの一覧については、「[[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)」を参照してください。
+ ビルド イベントは、DOS コマンドと同じ構文に従いますが、マクロを使用すると、ビルド イベントをより簡単に作成することができます。 使用可能なマクロの一覧については、「 [ビルド前のイベント/ビルド後のコマンドラインダイアログボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)」を参照してください。
 
  最適な結果を得るには、次のような書式のヒントに従います。
 
 - .bat ファイルを実行するすべてのビルド イベントの前に `call` ステートメントを追加します。
 
-     例 : `call C:\MyFile.bat`
+     例: `call C:\MyFile.bat`
 
-     例 : `call C:\MyFile.bat call C:\MyFile2.bat`
+     例: `call C:\MyFile.bat call C:\MyFile2.bat`
 
 - ファイルのパスを引用符で囲みます。
 
@@ -56,4 +56,4 @@ ms.locfileid: "72667128"
     > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
 ## <a name="see-also"></a>参照
- [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ラインダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドするを参照してください](../ide/walkthrough-building-an-application.md)
+ [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md) [ビルド前のコマンド ラインダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md) [チュートリアル。アプリケーションをビルドするを参照してください](../ide/walkthrough-building-an-application.md)

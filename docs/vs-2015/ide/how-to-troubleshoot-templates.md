@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : テンプレートの問題を解決する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477084"
 ---
 # <a name="how-to-troubleshoot-templates"></a>方法 : テンプレートの問題を解決する
@@ -32,7 +32,7 @@ ms.locfileid: "77477084"
 
 2. .zip ファイルを展開します。
 
-3. ** の **[ファイル][!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メニューの **[開く]** をクリックし、**[ファイル]** をクリックします。
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[ファイル]** メニューの **[開く]** をクリックし、**[ファイル]** をクリックします。
 
 4. テンプレートの .vstemplate ファイルを選択し、**[開く]** をクリックします。
 
