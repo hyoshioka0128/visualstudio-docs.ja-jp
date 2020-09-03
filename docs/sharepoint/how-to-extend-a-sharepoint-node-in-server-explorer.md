@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015019"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>方法: サーバーエクスプローラーで SharePoint ノードを拡張する
-  **サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下でノードを拡張できます。 これは、新しい子ノード、ショートカットメニュー項目、またはプロパティを既存のノードに追加する場合に便利です。 詳細については、[サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
+  **サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下でノードを拡張できます。 これは、新しい子ノード、ショートカットメニュー項目、またはプロパティを既存のノードに追加する場合に便利です。 詳細については、 [サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
 
 ### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>サーバーエクスプローラーで SharePoint ノードを拡張するには
 
@@ -42,17 +43,17 @@ ms.locfileid: "86015019"
 
      Visual Studio によって提供される組み込みのノード型を指定するには、次の列挙値のいずれかを属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: これらの値を使用して、**サーバーエクスプローラー**内のサイト接続ノード (サイトの url を表示するノード)、サイトノード、またはその他のすべての親ノードを指定します。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: これらの値を使用して、 **サーバーエクスプローラー**内のサイト接続ノード (サイトの url を表示するノード)、サイトノード、またはその他のすべての親ノードを指定します。
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: リスト、フィールド、コンテンツタイプを表すノードなど、SharePoint サイト上の個々のコンポーネントを表す組み込みノードの1つを指定するには、次の値を使用します。
 
-6. メソッドの実装では、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> *nodeType*パラメーターのメンバーを使用して、ノードに機能を追加します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> インターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。 たとえば、次のイベントを処理できます。
+6. メソッドの実装では、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> *nodeType* パラメーターのメンバーを使用して、ノードに機能を追加します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> インターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。 たとえば、次のイベントを処理できます。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: ノードに新しい子ノードを追加するには、このイベントを処理します。 詳細については、「[方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)する」を参照してください。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: ノードに新しい子ノードを追加するには、このイベントを処理します。 詳細については、「 [方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)する」を参照してください。
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: このイベントを処理して、カスタムショートカットメニュー項目をノードに追加します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: ノードにカスタムプロパティを追加するには、このイベントを処理します。 ノードが選択されると、プロパティが [**プロパティ**] ウィンドウに表示されます。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: ノードにカスタムプロパティを追加するには、このイベントを処理します。 ノードが選択されると、プロパティが [ **プロパティ** ] ウィンドウに表示されます。
 
 ## <a name="example"></a>例
  次のコード例は、2つの異なる種類のノード拡張を作成する方法を示しています。
@@ -64,7 +65,7 @@ ms.locfileid: "86015019"
   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
   [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]
 
-  この拡張機能により、編集可能な文字列プロパティがノードに追加されます。 SharePoint サーバーから読み取り専用のデータを表示するカスタムプロパティを作成することもできます。 これを行う方法を示す例については、「[チュートリアル: web パーツを表示するためのサーバーエクスプローラーの拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)」を参照してください。
+  この拡張機能により、編集可能な文字列プロパティがノードに追加されます。 SharePoint サーバーから読み取り専用のデータを表示するカスタムプロパティを作成することもできます。 これを行う方法を示す例については、「 [チュートリアル: web パーツを表示するためのサーバーエクスプローラーの拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。

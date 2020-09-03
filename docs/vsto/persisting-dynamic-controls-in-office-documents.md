@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71256004"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office ドキュメントでのダイナミックコントロールの永続化
 
 実行時に追加されたコントロールは、ドキュメントまたはブックを保存するとき、および閉じるときに永続化されません。 厳密な動作は、ホスト コントロールと Windows フォーム コントロールで違いがあります。 どちらの場合も、ソリューションにコードを追加すれば、ユーザーが同じドキュメントを再び開く時点でコントロールが再作成されるようにできます。
 
-実行時にドキュメントに追加するコントロールのことを、 *ダイナミック コントロール*といいます。 動的コントロールの詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+実行時にドキュメントに追加するコントロールのことを、 *ダイナミック コントロール*といいます。 動的コントロールの詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "71256004"
 
 ユーザーがドキュメントを開くたびに、既存のネイティブ コントロールの代わりにダイナミック ホスト コントロールを再作成することができます。 ドキュメントを開いたときにこの方法でホスト コントロールを作成すれば、ユーザーが期待するとおりの動作をシミュレートできます。
 
-<xref:Microsoft.Office.Tools.Excel.NamedRange> Word のホストコントロール、または Excel <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> `Add` \<用または<xref:Microsoft.Office.Tools.Excel.ListObject>ホストコントロールを再作成するには、*コントロールクラス*> オブジェクトまた<xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName>はオブジェクトのメソッドを使用します。 ネイティブ Office オブジェクトのパラメーターを持つメソッドを使用します。
+Word のホストコントロール、また <xref:Microsoft.Office.Tools.Excel.NamedRange> は Excel 用またはホストコントロールを再作成するに <xref:Microsoft.Office.Tools.Excel.ListObject> は、 `Add` \<*control class*> オブジェクトまたはオブジェクトのメソッドを使用し <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> ます。 ネイティブ Office オブジェクトのパラメーターを持つメソッドを使用します。
 
 たとえば、ドキュメントが開かれた時点で既存のネイティブ <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> から <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> ホスト コントロールを作成するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> メソッドを使用し、既存の <xref:Microsoft.Office.Interop.Excel.ListObject>を渡します。 これを Excel のドキュメント レベルのプロジェクトで実行する方法を、次のコード例に示します。 このコードでは、 <xref:Microsoft.Office.Tools.Excel.ListObject> クラスの <xref:Microsoft.Office.Interop.Excel.ListObject> という名前の既存の `MyListObject` に基づいてダイナミック `Sheet1` を再作成します。
 
@@ -60,9 +60,9 @@ ms.locfileid: "71256004"
 
 ### <a name="re-create-chart"></a>グラフの再作成
 
-<xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>ホストコントロールを再作成するには、まずネイティブ<xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>のを削除してから、 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A>メソッドを使用してを再作成する必要があります。 既存`Add` \< <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>のに基づいて新しいを作成できるコントロールクラス > メソッドはありません。 <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>
+ホストコントロールを再作成するには、 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> まずネイティブのを削除して <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> から、メソッドを使用してを再作成する必要があり <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> ます。 既存のに `Add` \<*control class*> 基づいて新しいを作成できる方法はありません <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> 。
 
-ネイティブ<xref:Microsoft.Office.Interop.Excel.Chart>のを最初に削除しない場合は、 <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>を再作成するときに、2つ目の重複したグラフを作成します。
+ネイティブのを最初に削除しない場合は <xref:Microsoft.Office.Interop.Excel.Chart> 、を再作成するときに、2つ目の重複したグラフを作成し <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> ます。
 
 ## <a name="persist-windows-forms-controls-in-documents"></a>ドキュメント内の Windows フォームコントロールを保持する
 
@@ -70,7 +70,7 @@ ms.locfileid: "71256004"
 
 ドキュメント レベルのカスタマイズの場合、コントロールとその基になる ActiveX ラッパー (ドキュメント上でコントロールをホストするために使用される) は、ドキュメントを次回に開いた時点で削除されます。 かつてコントロールがあったことを示すものは何も残りません。
 
-VSTO アドインの場合、コントロールは削除されますが、ActiveX ラッパーが文書内に残ります。 ユーザーがドキュメントを次回に開くと、その ActiveX ラッパーが表示されます。 Excel では、最後にドキュメントを保存した時点で表示されていたコントロールの画像が ActiveX ラッパーに表示されます。 Word では、ActiveX ラッパーは最初は表示されませんが、ユーザーがラッパーをクリックすると、コントロールの境界を表す点線が表示されます。 ActiveX ラッパーを削除するには、いくつかの方法があります。 詳細については、「[アドインの ActiveX ラッパーを削除する](#removingActiveX)」を参照してください。
+VSTO アドインの場合、コントロールは削除されますが、ActiveX ラッパーが文書内に残ります。 ユーザーがドキュメントを次回に開くと、その ActiveX ラッパーが表示されます。 Excel では、最後にドキュメントを保存した時点で表示されていたコントロールの画像が ActiveX ラッパーに表示されます。 Word では、ActiveX ラッパーは最初は表示されませんが、ユーザーがラッパーをクリックすると、コントロールの境界を表す点線が表示されます。 ActiveX ラッパーを削除するには、いくつかの方法があります。 詳細については、「 [アドインの ActiveX ラッパーを削除する](#removingActiveX)」を参照してください。
 
 ### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>ドキュメントを開いたときに Windows フォームコントロールを再作成する
 
@@ -78,9 +78,9 @@ VSTO アドインの場合、コントロールは削除されますが、Active
 
 1. ドキュメントを保存するか閉じるときに、コントロールのサイズ、場所、状態に関する情報を保管します。 ドキュメントレベルのカスタマイズでは、データをドキュメントのデータキャッシュに保存できます。 VSTO アドインでは、ドキュメント内のカスタム XML 部分にデータを保存できます。
 
-2. ドキュメントを開いたときに発生するイベントで、コントロールを再作成します。 ドキュメント レベルのプロジェクトでは、 `Sheet`*n*`_Startup` または `ThisDocument_Startup` のイベント ハンドラーでこの処理を実行できます。 VSTO アドイン プロジェクトでは、 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> または <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> イベントのイベント ハンドラーでこの処理を実行できます。
+2. ドキュメントを開いたときに発生するイベントで、コントロールを再作成します。 ドキュメントレベルのプロジェクトでは、 `Sheet` *n* `_Startup` またはイベントハンドラーでこれを行うことができ `ThisDocument_Startup` ます。 VSTO アドイン プロジェクトでは、 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> または <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> イベントのイベント ハンドラーでこの処理を実行できます。
 
-### <a name="removingActiveX"></a>アドインの ActiveX ラッパーを削除する
+### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> アドインの ActiveX ラッパーを削除する
 
 VSTO アドインを使用してドキュメントに動的な Windows フォームコントロールを追加すると、次にそのコントロールを次に開いたときに、そのコントロールの ActiveX ラッパーがドキュメントに表示されないようにすることができます。
 
@@ -95,9 +95,9 @@ VSTO アドインを使用してドキュメントに動的な Windows フォー
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-`GetVstoObject` メソッドは主として実行時に新しいホスト項目を生成するために使用しますが、ドキュメントに対してこのメソッドを初めて呼び出したときに、ドキュメントからすべての ActiveX ラッパーがクリアされるという効果もあります。 メソッドの`GetVstoObject`使用方法の詳細については、「[実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
+`GetVstoObject`メソッドは、主に実行時に新しいホスト項目を生成するために使用されますが、このメソッドは、特定のドキュメントに対して初めて呼び出されたときに、ドキュメントからすべての ActiveX ラッパーもクリアします。 メソッドの使用方法の詳細については `GetVstoObject` 、「 [実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
-ドキュメントを開いたときに vsto アドインによってダイナミックコントロールが作成された場合、vsto アドインは、 `GetVstoObject`コントロールを作成するプロセスの一部として既にメソッドを呼び出します。 このシナリオでは、ActiveX ラッパーを削除するために `GetVstoObject` メソッドに対する別個の呼び出しを追加する必要はありません。
+ドキュメントを開いたときに VSTO アドインによってダイナミックコントロールが作成された場合、VSTO アドインは、 `GetVstoObject` コントロールを作成するプロセスの一部として既にメソッドを呼び出します。 このシナリオでは、ActiveX ラッパーを削除するために `GetVstoObject` メソッドに対する別個の呼び出しを追加する必要はありません。
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>ドキュメントを閉じる前にダイナミックコントロールを削除する
 

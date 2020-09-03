@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280545"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
@@ -35,7 +35,7 @@ Visual Studio の Azure クラウド サービス プロジェクトには、`Se
 
 変更の影響を受ける `ServiceConfiguration.*.cscfg` ファイルを選択します。 既定では、ローカルとクラウドという種類があり、**[管理...]** コマンドを使用して構成ファイルのコピー、名前の変更、および削除ができます。 これらのファイルがクラウド サービス プロジェクトに追加され、**[ソリューション エクスプローラー]** に表示されます。 ただし、構成の名前変更や削除は、このコントロールからのみ実行できます。
 
-### <a name="instances"></a>インスタンス
+### <a name="instances"></a>Instances
 
 **[インスタンス数]** プロパティに、このロールに対してサービスが実行するインスタンスの数を設定します。
 
@@ -45,7 +45,7 @@ Visual Studio の Azure クラウド サービス プロジェクトには、`Se
 
 このプロパティを設定して、デバッグの開始時に Visual Studio が HTTP エンドポイントと HTTPS エンドポイントのいずれか、または両方のエンドポイント用に Web ブラウザーを起動するように指定します。
 
-[ **Https エンドポイント**] オプションは、ロールに対して https エンドポイントを既に定義している場合にのみ使用できます。 HTTPS エンドポイントは、 **[エンドポイント]** プロパティ ページで定義できます。
+[ **Https エンドポイント** ] オプションは、ロールに対して https エンドポイントを既に定義している場合にのみ使用できます。 HTTPS エンドポイントは、 **[エンドポイント]** プロパティ ページで定義できます。
 
 HTTPS エンドポイントを既に追加している場合は、既定で [HTTPS エンドポイント] オプションが有効になり、Visual Studio はデバッグ開始時にこのエンドポイント用のブラウザーと HTTP エンドポイント用のブラウザーを起動します (どちらのスタート アップ オプションも有効であることが前提です)。
 
@@ -53,9 +53,9 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 既定では、Web ロールに対して診断が有効になっています。 Azure クラウド サービス プロジェクトとストレージ アカウントは、ローカル ストレージ エミュレーターを使用するように設定されています。 Azure にデプロイする準備ができたら、ビルダーのボタン (**[…]**) を選択すると、Azure Storage を代わりに使用できます。 要求時に、または自動的にスケジュールされた間隔で、ストレージ アカウントに診断データを転送できます。 Azure Diagnostics の詳細については、[Azure Cloud Services および Virtual Machines での診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
 
-## <a name="settings-page"></a>[設定] ページ
+## <a name="settings-page"></a>設定ページ
 
-**[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](/previous-versions/azure/dn602775(v=azure.11))によって提供されるクラス (具体的には[GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100))メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
+**[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](/previous-versions/azure/dn602775(v=azure.11))によって提供されるクラス (具体的には [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>ストレージ アカウントの接続文字列の構成
 

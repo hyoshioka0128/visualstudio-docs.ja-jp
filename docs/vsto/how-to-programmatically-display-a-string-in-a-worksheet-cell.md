@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545926"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>方法: プログラムによってワークシートのセルに文字列を表示する
@@ -30,7 +30,7 @@ ms.locfileid: "85545926"
 
 ### <a name="to-display-text-in-a-namedrange-control"></a>NamedRange コントロールにテキストを表示するには
 
-1. コントロールの値 <xref:Microsoft.Office.Tools.Excel.NamedRange> を**Hello World**に設定します。
+1. コントロールの値 <xref:Microsoft.Office.Tools.Excel.NamedRange> を **Hello World**に設定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
@@ -40,7 +40,7 @@ ms.locfileid: "85545926"
 
 ### <a name="to-display-text-in-an-excel-range"></a>Excel 範囲にテキストを表示するには
 
-1. のセル**A1**で範囲を取得 `Sheet1` し、値を**Hello World**に設定します。
+1. のセル **A1** で範囲を取得 `Sheet1` し、値を **Hello World**に設定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]

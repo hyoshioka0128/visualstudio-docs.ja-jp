@@ -1,5 +1,5 @@
 ---
-title: プロジェクトタイプ要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
+title: ProjectType 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,19 +14,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701804"
 ---
-# <a name="projecttype-element-visual-studio-templates"></a>プロジェクトの種類要素
-[**新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目の追加**] ダイアログ ボックスで、指定したグループの下に表示されるようにプロジェクト テンプレートを分類します。
+# <a name="projecttype-element-visual-studio-templates"></a>ProjectType 要素 (Visual Studio テンプレート)
+[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスで指定したグループの下に表示されるように、プロジェクトテンプレートを分類します。
 
 > [!WARNING]
 > プロジェクト テンプレートは、Visual Studio 2012 以降の C++ でサポートされています。 これらは、Visual Studio 2010 以前のバージョンの C++ ではサポートされていません。
 
- \<VS テンプレート\<>\<テンプレートデータ>プロジェクトタイプ>
+ \<VSTemplate> \<TemplateData>
+ \<ProjectType>
 
 ## <a name="syntax"></a>構文
 
@@ -38,10 +39,10 @@ ms.locfileid: "80701804"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -58,14 +59,14 @@ ms.locfileid: "80701804"
 
 - `VisualBasic` : テンプレートが [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のプロジェクトまたはアイテムを作成するよう指定します。
 
-- `Web`: テンプレートが Web プロジェクトまたは Web 項目を作成することを指定します。 要素に`ProjectType`この値が含まれている場合、プロジェクトまたは項目の言語は[、プロジェクトサブタイプ要素 (Visual Studio テンプレート)](../extensibility/projectsubtype-element-visual-studio-templates.md)で定義されます。
+- `Web`: テンプレートが Web プロジェクトまたは項目を作成するように指定します。 要素に `ProjectType` この値が含まれている場合は、プロジェクトまたは項目の言語が [Projectsubtype 要素 (Visual Studio テンプレート)](../extensibility/projectsubtype-element-visual-studio-templates.md)で定義されます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  `ProjectType` は `TemplateData` に必須の子要素です。
 
- 要素の`ProjectType`値は、**新しいプロジェクトまたは新****しい項目の追加**] ダイアログ ボックスでのテンプレートの場所を指定します。 たとえば、値`ProjectType`がの`CSharp`テンプレートは、[**新しいプロジェクト**] ダイアログ ボックスの **[Visual C#]** ノードの下に表示されます。
+ 要素の値は、 `ProjectType` [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスでテンプレートを配置する場所を指定します。 たとえば、値がのテンプレートは、 `ProjectType` `CSharp` [**新しいプロジェクト**] ダイアログボックスの [ **Visual C#** ] ノードの下に表示されます。
 
- テンプレートのサブタイプは[、プロジェクトサブタイプ](../extensibility/projectsubtype-element-visual-studio-templates.md)要素を使用して指定できます。
+ テンプレートのサブタイプは、 [Projectsubtype](../extensibility/projectsubtype-element-visual-studio-templates.md) 要素を使用して指定できます。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。
@@ -95,6 +96,6 @@ ms.locfileid: "80701804"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
-- [プロジェクトサブタイプ要素](../extensibility/projectsubtype-element-visual-studio-templates.md)
+- [ProjectSubType 要素 (Visual Studio テンプレート)](../extensibility/projectsubtype-element-visual-studio-templates.md)

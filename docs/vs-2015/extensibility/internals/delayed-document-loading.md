@@ -9,27 +9,25 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196871"
 ---
 # <a name="delayed-document-loading"></a>ドキュメントの読み込みの遅延
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ユーザーは、Visual Studio ソリューションを再度開き、ときに関連付けられているドキュメントのほとんどはすぐに読み込まれません。 ドキュメント ウィンドウ フレームが初期化保留中の状態で作成され、(スタブ フレームと呼ばれます) のプレース ホルダーのドキュメントには、実行されているドキュメント テーブル (RDT) では配置されます。  
+ユーザーが Visual Studio ソリューションを再び開くと、関連付けられているドキュメントのほとんどはすぐに読み込まれません。 ドキュメントウィンドウフレームは、保留中の初期化状態で作成され、プレースホルダードキュメント (スタブフレームと呼ばれます) が実行中のドキュメントテーブル (RDT) に配置されます。  
   
- プロジェクトのドキュメントに読み込まれる前に、ドキュメント内の要素のクエリを実行して不必要に読み込まれる拡張機能があります。 これにより、Visual Studio の全体的なメモリ フット プリントが向上します。  
+ ドキュメント内の要素を読み込んだ後にクエリを実行することで、拡張機能によってプロジェクトドキュメントが不必要に読み込まれる場合があります。 これにより、Visual Studio の総メモリ使用量が増加します。  
   
 ## <a name="document-loading"></a>ドキュメントの読み込み  
- スタブのフレームとドキュメントは、ユーザーにアクセスすると、ドキュメントなど、ウィンドウ フレームのタブをクリックして完全に初期化されます。 ドキュメントは、ドキュメントのデータを取得するには、直接 RDT へのアクセスまたはない、RDT に直接アクセスする、次の呼び出しの 1 つのいずれかのドキュメントのデータを要求する拡張機能でも初期化できます。  
+ スタブフレームとドキュメントは、ユーザーがドキュメントにアクセスしたときに完全に初期化されます。たとえば、ウィンドウフレームのタブを選択します。 ドキュメントは、ドキュメントデータを取得するために RDT に直接アクセスするか、次のいずれかの呼び出しを行うことによって間接的に RDT にアクセスすることによって、ドキュメントのデータを要求する拡張機能によって初期化することもできます。  
   
-- ウィンドウ フレームの表示方法:<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>します。  
+- ウィンドウフレーム表示メソッド: <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> 。  
   
-- ウィンドウ フレームの GetProperty メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>で、次のプロパティのいずれか。  
-  
-  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>次のいずれかのプロパティのウィンドウフレーム GetProperty メソッド。  
   
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
@@ -41,27 +39,29 @@ ms.locfileid: "68196871"
   
   - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  場合は、拡張機能は、マネージ コードを使用して、呼び出す必要はありません<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>が特定される場合は、初期化保留中の状態では、ドキュメントまたはドキュメントが完全に初期化する. これは、このメソッドは常にドキュメントを返すために必要な場合は作成、データ オブジェクト。 代わりに、メソッドのいずれかを IVsRunningDocumentTable4 インターフェイスで呼び出す必要があります。  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  拡張機能は、C++ を使用している場合は、渡す`null`したくないパラメーター。  
+  拡張機能でマネージコードを使用する場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> ドキュメントが保留中の初期化状態でないことがわかっているか、ドキュメントを完全に初期化する必要がある場合を除き、を呼び出さないでください。 これは、このメソッドは常に doc データオブジェクトを返し、必要に応じて作成するためです。 代わりに、IVsRunningDocumentTable4 インターフェイスのメソッドのいずれかを呼び出す必要があります。  
   
-  関連するプロパティを要求する前に、次のメソッドのいずれかを呼び出すことによって、不要なドキュメントの読み込みを回避できます。 その他のプロパティを要求する前にします。  
+  拡張機能で C++ が使用されている場合は、 `null` 必要のないパラメーターにを渡すことができます。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 使用して<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>します。  
+  関連するプロパティを要求する前に、次のいずれかのメソッドを呼び出すことによって、不要なドキュメントの読み込みを回避できます。  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>。 このメソッドが戻る、<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>オブジェクトの値を含む<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>ドキュメントが初期化されていない場合。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> を使用し <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6> ます。  
   
-  ドキュメントが完全に初期化されるときに発生する RDT イベントをサブスクライブして、ドキュメントが読み込まれたときに確認できます。 これには 2 つの可能性があります。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. このメソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> ドキュメントがまだ初期化されていない場合は、の値を含むオブジェクトを返します。  
   
-- イベント シンクが実装されている場合<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2>、購読できる<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>、  
+  ドキュメントが読み込まれたタイミングは、ドキュメントが完全に初期化されたときに発生する RDT イベントをサブスクライブすることによって確認できます。 次の2つの可能性があります。  
   
-- サブスクライブする場合は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>します。  
+- イベントシンクがを実装している場合は、を <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2> サブスクライブできます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents2.OnAfterAttributeChangeEx%2A>  
   
-  仮定のドキュメントへのアクセスのシナリオを次に示します。 拡張機能が開いているドキュメントに関する情報を表示する Visual Studio、インスタンスの編集をロック カウントとドキュメントのデータについて何か。 RDT を使用して、ドキュメントに列挙<xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>、呼び出して<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>ドキュメントごとに、編集のロック カウントとドキュメント データを取得するためにします。 ドキュメントが、初期化保留中の状態にある場合、ドキュメント データを要求が不必要に初期化されます。  
+- それ以外の場合は、にサブスクライブでき <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A> ます。  
   
-  使用するにはこれより効率的な<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A>編集のロック カウントを取得し、使用して<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>ドキュメントが初期化されているかどうかを判断します。 フラグが含まれない場合<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>、ドキュメントは既に初期化されていると、ドキュメント データを要求し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A>不要な初期化は行われません。 フラグが含まれる場合<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>、拡張機能では、ドキュメントが初期化されるまでドキュメント データを要求しないようにする必要があります。 これは、OnAfterAttributeChange(Ex) イベント ハンドラーで検出できます。  
+  次に示すのは、架空のドキュメントアクセスシナリオです。 Visual Studio 拡張機能では、開いているドキュメントに関する情報を表示する必要があります。たとえば、編集ロック数やドキュメントデータに関する情報が表示されます。 を使用して RDT 内のドキュメントを列挙し <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments> 、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 各ドキュメントを呼び出して、編集ロック数とドキュメントデータを取得します。 ドキュメントが保留中の初期化状態にある場合、ドキュメントデータを要求すると、不要に初期化されます。  
   
-## <a name="testing-extensions-to-see-if-they-force-initialization"></a>かどうか、強制的に初期化して拡張機能のテスト  
- 初期化かどうか、拡張機能で強制的に確認することは難しいために、ドキュメントが初期化されているかどうかを示すためにキューを表示することはありません。 テキストを完全に初期化されていないすべてのドキュメントのタイトルが発生するために、容易に確認するレジストリ キーを設定できます`[Stub]`タイトルにします。  
+  これをより効率的に行うには、を使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> 編集ロック数を取得し、を使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> ドキュメントが初期化されているかどうかを確認します。 フラグにが含まれていない場合 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> 、ドキュメントは既に初期化されており、を使用してドキュメントデータを要求して <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> も、不要な初期化は行われません。 フラグにが含ま <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> れる場合、ドキュメントが初期化されるまで、拡張子はドキュメントデータを要求しないようにする必要があります。 これは、OnAfterAttributeChange (Ex) イベントハンドラーで検出できます。  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** 設定**StubTabTitleFormatString**に **{0} [Stub]** します。
+## <a name="testing-extensions-to-see-if-they-force-initialization"></a>拡張機能をテストして、初期化を強制的に実行するかどうかを確認する  
+ ドキュメントが初期化されているかどうかを示す手掛かりはありません。そのため、拡張機能が強制的に初期化されているかどうかを確認するのが困難な場合があります。 完全に初期化されていないすべてのドキュメントのタイトルにタイトルのテキストが含まれるようにするため、検証を簡単にするレジストリキーを設定でき `[Stub]` ます。  
+  
+ **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload]** で、 **StubTabTitleFormatString**を** {0} [スタブ]** に設定します。
