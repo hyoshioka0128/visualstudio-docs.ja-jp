@@ -1,5 +1,5 @@
 ---
-title: 2::ゲットペアレント |マイクロソフトドキュメント
+title: 'IDebugReference2:: GetParent |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8af5f08ae0b06e508794851ff0fff238f19519b4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720430"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
-参照の親参照を取得します。 将来利用するために予約されています。
+参照の親参照を取得します。 将来使用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +41,7 @@ int GetParent ( 
 
 ## <a name="parameters"></a>パラメーター
 `ppParent`\
-[アウト]このプロパティの親を表す[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクトを返します。
+入出力このプロパティの親を表す [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

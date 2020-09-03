@@ -1,4 +1,4 @@
-﻿---
+---
 title: 転送 logger の作成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184027"
 ---
 # <a name="creating-forwarding-loggers"></a>転送 logger の作成
@@ -41,7 +41,7 @@ ms.locfileid: "68184027"
 ## <a name="multi-processor-aware-loggers"></a>マルチプロセッサ対応の logger  
  マルチプロセッサ システムでプロジェクトをビルドする場合、各プロセッサからのビルド メッセージが自動的に一貫した順序でインタリーブされるわけではありません。 したがって、各メッセージにアタッチされる <xref:Microsoft.Build.Framework.BuildEventContext> クラスを使用して、メッセージ グループ化の優先順位を確立する必要があります。 マルチプロセッサ ビルドの詳細については、「[マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目
- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [ビルド ロガー](../msbuild/build-loggers.md)   
- [マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)
+## <a name="see-also"></a>参照  
+ [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [ビルドロガー](../msbuild/build-loggers.md)   
+ [マルチプロセッサ環境でのログ記録](../msbuild/logging-in-a-multi-processor-environment.md)

@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985512"
 ---
 # <a name="visio-solutions"></a>Visio ソリューション
   Visual Studio には、Microsoft Office Visio の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用して、Visio の自動化、Visio 機能の拡張、または Visio ユーザー インターフェイス (UI) のカスタマイズが可能です。
 
- VSTO アドインの詳細については、「vsto アドインの[プログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)」と「 [Vsto アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。Microsoft Office を使用したプログラミングの初心者の場合は、「 [Visual Studio &#40;&#41;での Office 開発の概要](../vsto/getting-started-office-development-in-visual-studio.md)」を参照してください。
+ VSTO アドインの詳細については、「vsto アドインの [プログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md) 」と「 [Vsto アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。Microsoft Office を使用したプログラミングの初心者の場合は、「 [Visual Studio で &#40;Office 開発を開始 ](../vsto/getting-started-office-development-in-visual-studio.md)する」&#41;を参照してください。
 
  **対象:** このトピックの情報は、Visio 2010 の VSTO アドインのプロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
@@ -46,14 +46,14 @@ ms.locfileid: "72985512"
 
 - 外部データを Visio にインポートし、図形にリンクしてページ上にグラフィカルに表示する。
 
-  Visio のオブジェクトモデルを使用して visio[図面](../vsto/working-with-visio-documents.md)を操作し、 [visio 図形](../vsto/working-with-visio-shapes.md)を操作するためのステップバイステップの手順とコード例を確認できます。
+  Visio のオブジェクトモデルを使用して visio [図面](../vsto/working-with-visio-documents.md) を操作し、 [visio 図形](../vsto/working-with-visio-shapes.md)を操作するためのステップバイステップの手順とコード例を確認できます。
 
-  VSTO アドインから Visio オブジェクト モデルにアクセスするには、プロジェクト内の `Application` クラスの `ThisAddIn` フィールドを使用します。 `Application` フィールドは、Visio の現在のインスタンスを表す `Microsoft.Office.Interop.Visio.Application` オブジェクトを返します。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
+  VSTO アドインから Visio オブジェクト モデルにアクセスするには、プロジェクト内の `Application` クラスの `ThisAddIn` フィールドを使用します。 `Application` フィールドは、Visio の現在のインスタンスを表す `Microsoft.Office.Interop.Visio.Application` オブジェクトを返します。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
-  Visio オブジェクト モデルを呼び出すときは、Visio のプライマリ相互運用機能アセンブリ (PIA) に用意された型を使用します。 PIA は、VSTO アドインのマネージド コードと Visio の COM オブジェクト モデルとの橋渡し役として機能します。 Visio PIA のすべての型は、`Microsoft.Office.Interop.Visio` 名前空間で定義されます。 プライマリ相互運用機能アセンブリの詳細については、「 [ &#40;office&#41;ソリューション開発の概要 VSTO](../vsto/office-solutions-development-overview-vsto.md)と[office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。
+  Visio オブジェクト モデルを呼び出すときは、Visio のプライマリ相互運用機能アセンブリ (PIA) に用意された型を使用します。 PIA は、VSTO アドインのマネージド コードと Visio の COM オブジェクト モデルとの橋渡し役として機能します。 Visio PIA のすべての型は、`Microsoft.Office.Interop.Visio` 名前空間で定義されます。 プライマリ相互運用機能アセンブリの詳細については、「 [office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md) と [office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。
 
 ## <a name="visio-object-model-overview"></a>Visio オブジェクトモデルの概要
- Visio オブジェクトモデルの概要については、visio オブジェクトモデルのリファレンスと Sdk へのリンクを含む、visio オブジェクトモデルの[概要](../vsto/visio-object-model-overview.md)に関するページを参照してください。
+ Visio オブジェクトモデルの概要については、visio オブジェクトモデルのリファレンスと Sdk へのリンクを含む、visio オブジェクトモデルの [概要](../vsto/visio-object-model-overview.md)に関するページを参照してください。
 
 ## <a name="customize-the-user-interface-of-visio"></a>Visio のユーザーインターフェイスのカスタマイズ
  Visio の UI には、次のようなカスタマイズ オプションがあります。
@@ -64,10 +64,10 @@ ms.locfileid: "72985512"
 
  Visio の UI をカスタマイズする方法の詳細については、 [Visio.UIObject](/office/vba/api/Visio.UIObject) クラスの VBA リファレンス ドキュメントを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
+- [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Architecture of VSTO Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
 - [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)

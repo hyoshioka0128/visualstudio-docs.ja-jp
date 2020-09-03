@@ -1,5 +1,5 @@
 ---
-title: レガシ API を使用してビューの設定の変更 |Microsoft Docs
+title: 従来の API を使用して表示設定を変更する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,40 +11,40 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184464"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>レガシ API を使用する表示設定の変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ユーザーによってワード ラップ、選択余白、および仮想の領域などのコア エディター機能の設定を変更することができます、**オプション** ダイアログ ボックス。 ただし、これらの設定を変更することはもプログラムを使用します。  
+ユーザーは、[ **オプション** ] ダイアログボックスを使用して、[右端での折り返し]、[選択範囲の余白]、[仮想空間] などの主要なエディター機能の設定を変更できます。 ただし、これらの設定はプログラムによって変更することもできます。  
   
-## <a name="changing-settings-by-using-the-legacy-api"></a>レガシ API を使用して設定を変更します。  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>インターフェイスが一連のテキスト エディターのプロパティを公開します。 テキスト ビューには、テキスト ビューの変更をプログラムで設定のグループを表すカテゴリ プロパティ (GUID_EditPropCategory_View_MasterSettings) にはが含まれています。 ビューの設定をこの方法で変更された後で変更できません、**オプション**リセットされるまで、ダイアログ ボックス。  
+## <a name="changing-settings-by-using-the-legacy-api"></a>レガシ API を使用した設定の変更  
+ インターフェイスは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> テキストエディターの一連のプロパティを公開します。 テキストビューには、プログラムによってテキストビューの設定が変更されたグループを表すプロパティ (GUID_EditPropCategory_View_MasterSettings) のカテゴリが含まれています。 この方法で表示設定を変更すると、リセットされるまで [ **オプション** ] ダイアログボックスで変更することはできません。  
   
- コア エディターのインスタンスの表示設定を変更するための一般的なプロセスを次に示します。  
+ コアエディターのインスタンスのビュー設定を変更する一般的な手順を次に示します。  
   
-1. 呼び出す`QueryInterface`で、(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>インターフェイス。  
+1. `QueryInterface` <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> インターフェイスの () でを呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> ます。  
   
-2. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>の GUID_EditPropCategory_View_MasterSettings の値を指定して、メソッド、`rguidCategory`パラメーター。  
+2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>パラメーターに GUID_EditPropCategory_View_MasterSettings の値を指定して、メソッドを呼び出し `rguidCategory` ます。  
   
-     これを行うにポインターを返します、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>インターフェイスでは、一連ビューの強制プロパティにはが含まれています。 このグループ内のすべての設定を完全に実行されます。 このグループで、設定がないかどうかで指定されたオプションに従います、**オプション** ダイアログ ボックスまたはユーザーのコマンド。  
+     この操作を行うと、インターフェイスへのポインターが返されます。このインターフェイスには、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> ビューの強制プロパティのセットが含まれています。 このグループの設定は完全に強制されます。 このグループに設定されていない設定は、[ **オプション** ] ダイアログボックスまたはユーザーのコマンドで指定されたオプションに従って実行されます。  
   
-3. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>で適切な設定値を指定して、メソッド、`idprop`パラメーター。  
+3. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>パラメーターに適切な設定値を指定して、メソッドを呼び出し `idprop` ます。  
   
-     たとえば、ワード ラップを強制的に呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>VSEDITPROPID_ViewLangOpt_WordWrap の値を指定して`vt`の`idprop`パラメーター。 この呼び出しで`vt`VT_BOOL 型のバリアントと`vt.boolVal`は VARIANT_TRUE です。  
+     たとえば、ワードラップを強制的に実行するには、を呼び出し、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> パラメーターに VSEDITPROPID_ViewLangOpt_WordWrap の値を指定し `vt` `idprop` ます。 この呼び出しで、 `vt` は VT_BOOL 型のバリアントで、 `vt.boolVal` は VARIANT_TRUE です。  
   
-## <a name="resetting-changed-view-settings"></a>変更されたビューの設定をリセットします。  
- コア エディターのインスタンスの設定の変更された任意のビューをリセットするには、呼び出し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>メソッドの適切な設定値を指定し、`idprop`パラメーター。  
+## <a name="resetting-changed-view-settings"></a>変更されたビュー設定のリセット  
+ コアエディターのインスタンスに対して変更されたビュー設定をリセットするには、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> パラメーターに適切な設定値を指定し `idprop` ます。  
   
- たとえば、ワード ラップを自由にフロートを許可するのにはから削除するプロパティのカテゴリを呼び出して<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>VSEDITPROPID_ViewLangOpt_WordWrap の値を指定して、`idprop`パラメーター。  
+ たとえば、単語の折り返しを自由にフローティングできるようにするには、を呼び出し、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> パラメーターに VSEDITPROPID_ViewLangOpt_WordWrap の値を指定して、プロパティカテゴリからそれを削除し `idprop` ます。  
   
- コア エディターの設定が変更されたすべてを一度に削除するには、VSEDITPROPID_ViewComposite_AllCodeWindowDefaults の vt の値を指定、`idprop`パラメーター。 この呼び出しで vt は VT_BOOL 型のバリアントと vt.boolVal は VARIANT_TRUE です。  
+ コアエディターに対して変更された設定をすべて一度に削除するには、パラメーターに VSEDITPROPID_ViewComposite_AllCodeWindowDefaults、vt の値を指定し `idprop` ます。 この呼び出しでは、vt は VT_BOOL 型のバリアントで、vt は VARIANT_TRUE です。  
   
-## <a name="see-also"></a>関連項目  
- [コア エディター内で](../extensibility/inside-the-core-editor.md)   
- [レガシ API を使用してテキスト ビューにアクセスします。](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
- [[オプション] ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)
+## <a name="see-also"></a>参照  
+ [コアエディター内](../extensibility/inside-the-core-editor.md)   
+ [レガシ API を使用したテキストビューへのアクセス](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+ [[オプション] ダイアログボックス](../ide/reference/options-dialog-box-visual-studio.md)

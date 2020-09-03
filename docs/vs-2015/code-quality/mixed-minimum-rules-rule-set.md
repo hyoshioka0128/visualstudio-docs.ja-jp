@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654856"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Mixed Minimum ルールは、潜在的なセキュリティホールやアプリケーションのC++クラッシュなど、共通言語ランタイムをサポートするプロジェクトの最も重大な問題に焦点を当てています。 共通言語ランタイムをサポートする C++ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。
+Microsoft Mixed Minimum 規則は、共通言語ランタイムをサポートする C++ プロジェクトの最も重大な問題 (潜在的なセキュリティホールやアプリケーションのクラッシュなど) に焦点を当てています。 共通言語ランタイムをサポートする C++ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。
 
-|                                            規則                                             |                                                  説明                                                  |
+|                                            ルール                                             |                                                  説明                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                              [C6001](../code-quality/c6001.md)                              |                                          初期化されていないメモリの使用                                           |
 |                              [C6011](../code-quality/c6011.md)                              |                                          Null ポインターの逆参照                                           |
