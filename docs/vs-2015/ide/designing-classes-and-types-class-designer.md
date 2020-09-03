@@ -1,4 +1,4 @@
-﻿---
+---
 title: クラスおよび型のデザイン (クラス デザイナー) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03fae58a902da5bc9432c9ed2ed587dd7ddb4f5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665766"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>クラスおよび型のデザイン (クラス デザイナー)

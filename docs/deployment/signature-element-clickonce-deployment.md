@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835421"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature &gt; 要素 (ClickOnce 配置)
@@ -33,7 +33,7 @@ ms.locfileid: "85835421"
 </Signature>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  エンベロープ署名を使用した配置マニフェストへの署名はオプションですが、推奨されます。 XML ファイルに署名する方法の詳細については、「」で説明されている World Wide Web コンソーシアムの推奨事項「XML 署名の構文と処理」を参照してください [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) 。
 
  マニフェストに署名する場合は、すべてのファイルに対してハッシュを指定する必要があります。 ハッシュされていないファイルを含むマニフェストに署名することはできません。これは、ハッシュされていないファイルの内容をユーザーが確認できないためです。

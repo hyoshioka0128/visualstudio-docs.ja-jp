@@ -27,7 +27,7 @@ ms.locfileid: "75566138"
 |-|-|-|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|折りたたみデコレータの展開|
 |名前|デコレータの名前。|ExpandCollapseDecorator|
-|メモ|このデコレータに関連付けられている非公式のメモ。|\<none>|
+|Notes|このデコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
@@ -41,7 +41,7 @@ ms.locfileid: "75566138"
 |DefaultIcon|表示するアイコンまたはイメージファイルのパス。|\<none>|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|アイコンデコレータ|
 |名前|デコレータの名前。|IconDecorator|
-|メモ|デコレータに関連付けられている非公式のメモ。|\<none>|
+|Notes|デコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
@@ -57,13 +57,13 @@ ms.locfileid: "75566138"
 |フォントサイズ|デコレータに表示されるテキストのフォントサイズ。|8|
 |FontStyle|デコレータに表示されるテキストのフォントスタイル。|Regular|
 |名前|デコレータの名前。|ラベル|
-|メモ|デコレータに関連付けられている非公式のメモ。|\<none>|
+|Notes|デコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
 |OffsetFromShape|形状からの、既定の位置を基準とする、インチ単位の、デコレータのオフセット。 (コネクタの場合のみ)。|0|
 |[位置]|デコレータの既定の位置。|Microsoft.visualstudio.modeling.diagrams.connectordecoratorposition.targetbottom|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: IDebugPointerField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a69797cc513b96c364f0357f22788fc9bcd65657
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725600"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
@@ -28,28 +28,28 @@ ms.locfileid: "80725600"
 IDebugPointerField : IDebugContainerField
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- シンボル プロバイダーは、ポインターを表すこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ シンボルプロバイダーは、ポインターを表すためにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)が返された`FIELD_TYPE_POINTER`[場合は、](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスからこのインターフェイスを取得するのには[、クエリ インターフェイス](/cpp/atl/queryinterface)を使用します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)がを返す場合は、 [QueryInterface](/cpp/atl/queryinterface)を使用して、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスからこのインターフェイスを取得し `FIELD_TYPE_POINTER` ます。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
- インターフェイス`IDebugField`と`IDebugContainerField`インターフェイスのメソッドに加えて、このインターフェイスは次のメソッドを実装します。
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
+ インターフェイスとインターフェイスのメソッドに加え `IDebugField` て `IDebugContainerField` 、このインターフェイスは次のメソッドを実装します。
 
 |Method|説明|
 |------------|-----------------|
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|ポインターのターゲットを記述する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)を返します。|
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|ポインターのターゲットを記述する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。|
 
-## <a name="remarks"></a>Remarks
- C/C++ では、ポインターを配列表記と共に使用する場合、ポインターをコンテナーにすることができます。 たとえば、`char *pString`は、`pString`へのポインター型を`char`持っています。 `pString[3]`は、そのコンテナーの 4 番目の要素`char`を参照するポインターであるコンテナーの型を持ちます。
+## <a name="remarks"></a>解説
+ C/c + + では、配列が配列表記で使用されている場合、ポインターをコンテナーにすることができます。 たとえば、指定されたは `char *pString` 、 `pString` へのポインターの型を持ってい `char` ます。 `pString[3]` は、 `char` そのコンテナーの4番目の要素を参照するへのポインターであるコンテナーの型を持ちます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: sh.h
+ ヘッダー: sh. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [シンボル プロバイダーのインターフェイス](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

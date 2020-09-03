@@ -58,7 +58,7 @@
       href: debugging-r-in-visual-studio.md
 - name: リファレンス
   items:
-    - name: オプション
+    - name: Options
       href: options-for-r-tools-in-visual-studio.md
     - name: よく寄せられる質問
       href: faq.md

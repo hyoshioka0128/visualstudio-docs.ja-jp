@@ -1,5 +1,5 @@
 ---
-title: オブジェクト2::ゲットフィールド |マイクロソフトドキュメント
+title: 'IDebugObject2:: GetField |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726214"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
@@ -41,13 +41,13 @@ int GetField(
 
 ## <a name="parameters"></a>パラメーター
 `ppField`\
-[アウト]Null 値でない場合[は、IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトを返します。
+入出力Null 値でない場合は、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- フィールドは、オブジェクトのタイプを表します。
+## <a name="remarks"></a>解説
+ オブジェクトの種類を示すフィールドです。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

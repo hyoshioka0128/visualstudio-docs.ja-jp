@@ -84,7 +84,7 @@ ms.locfileid: "75566177"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- リンクにアクセスするための他の方法もあります。 次に例を示します。
+ リンクにアクセスするための他の方法もあります。 たとえば、次のように入力します。
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ ms.locfileid: "75566177"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> クラス情報へのアクセス
- DSL 定義のクラス、リレーションシップ、およびその他の側面に関する情報を取得できます。 次に例を示します。
+ DSL 定義のクラス、リレーションシップ、およびその他の側面に関する情報を取得できます。 たとえば、次のように入力します。
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -129,7 +129,7 @@ ms.locfileid: "75566177"
 - ElementLink-すべてのリレーションシップは Elementlink です
 
 ## <a name="perform-changes-inside-a-transaction"></a><a name="transaction"></a> トランザクション内で変更を実行する
- プログラムコードによってストア内の何かが変更されるたびに、トランザクション内で実行する必要があります。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそれらのプロパティに適用されます。 詳細については、「<xref:Microsoft.VisualStudio.Modeling.Transaction>」を参照してください。
+ プログラムコードによってストア内の何かが変更されるたびに、トランザクション内で実行する必要があります。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそれらのプロパティに適用されます。 詳細については、 <xref:Microsoft.VisualStudio.Modeling.Transaction> を参照してください。
 
  トランザクションを管理する最も便利な方法は、ステートメントでステートメントを使用することです `using` `try...catch` 。
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  リレーションシップのインスタンスを作成するには、次の3つの方法があります。 これら3つのメソッドは、それぞれ同じ効果を持ちます。
 
-- ソースロールプレーヤーのプロパティを設定します。 次に例を示します。
+- ソースロールプレーヤーのプロパティを設定します。 たとえば、次のように入力します。
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- ターゲットロールプレーヤーのプロパティを設定します。 次に例を示します。
+- ターゲットロールプレーヤーのプロパティを設定します。 たとえば、次のように入力します。
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        このロールの多重度は `0..*` であるため、コレクションにを追加します。
 
-- リレーションシップのインスタンスを明示的に構築します。 次に例を示します。
+- リレーションシップのインスタンスを明示的に構築します。 たとえば、次のように入力します。
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -482,7 +482,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>パーティションの格納
  モデルが読み込まれると、付随する図が同時に読み込まれます。 通常、モデルは DefaultPartition ストアに読み込まれ、図のコンテンツは別のパーティションに読み込まれます。 通常、各パーティションの内容が読み込まれ、別のファイルに保存されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)

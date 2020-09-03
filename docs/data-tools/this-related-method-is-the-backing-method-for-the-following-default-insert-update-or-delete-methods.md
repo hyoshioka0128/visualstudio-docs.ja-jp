@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 252303c4933501dd3a4672329d66ef4910238a08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535253"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>この関連メソッドは、次の既定の挿入、更新、または削除メソッドのバッキング メソッドです
@@ -23,11 +23,11 @@ ms.locfileid: "85535253"
 
 ## <a name="selected-method-options"></a>選択されたメソッドのオプション
 
-- 選択したメソッドを削除して、エンティティクラスがランタイムの更新プログラムを使用するようにするには、[**はい**] をクリックします。
+- 選択したメソッドを削除して、エンティティクラスがランタイムの更新プログラムを使用するようにするには、[ **はい**] をクリックします。
 
    選択したメソッドが削除され、このメソッドを使用して更新動作をオーバーライドしたクラスは、既定の LINQ to SQL の実行時の動作を使用するように戻されます。
 
-- 選択した方法を変更せずにメッセージボックスを閉じるには、[**いいえ**] をクリックします。
+- 選択した方法を変更せずにメッセージボックスを閉じるには、[ **いいえ**] をクリックします。
 
    メッセージ ボックスが閉じ、変更は行われません。
 
