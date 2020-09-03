@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876048"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach アクティビティ デザイナー
@@ -25,9 +25,9 @@ ms.locfileid: "86876048"
 
 ## <a name="the-parallelforeacht-activity"></a>ParallelForEach<T \> アクティビティ
 
-<xref:System.Activities.Statements.ParallelForEach%601>値を列挙し、列挙される <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> すべての値のをスケジュールします。 スケジュールされるのは <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> のみです。 本文の実行方法は、<xref:System.Activities.Statements.ParallelForEach%601.Body%2A> がアイドル状態になるかどうかによって異なります。
+<xref:System.Activities.Statements.ParallelForEach%601> 値を列挙し、列挙される <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> すべての値のをスケジュールします。 スケジュールされるのは <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> のみです。 本文の実行方法は、<xref:System.Activities.Statements.ParallelForEach%601.Body%2A> がアイドル状態になるかどうかによって異なります。
 
-<xref:System.Activities.Statements.ParallelForEach%601.Body%2A> がアイドル状態にならない場合は、スケジュールされたアクティビティがスタックとして扱われるため、逆の順序で実行されます。つまり、最後にスケジュールされたアクティビティが最初に実行されます。 たとえば、内ののコレクションがあり、 {1,2,3,4} <xref:System.Activities.Statements.ParallelForEach%601> **WriteLine**を本文として使用して値を書き込む場合などです。コンソールには、4、3、2、1が出力されています。 これは、 **writeline**がアイドル状態にならず、4つの**writeline**アクティビティがスケジュールされた後で、スタック動作 (最初は最後の出力) を使用して実行されたためです。
+<xref:System.Activities.Statements.ParallelForEach%601.Body%2A> がアイドル状態にならない場合は、スケジュールされたアクティビティがスタックとして扱われるため、逆の順序で実行されます。つまり、最後にスケジュールされたアクティビティが最初に実行されます。 たとえば、内ののコレクションがあり、 {1,2,3,4} <xref:System.Activities.Statements.ParallelForEach%601> **WriteLine** を本文として使用して値を書き込む場合などです。コンソールには、4、3、2、1が出力されています。 これは、 **writeline** がアイドル状態にならず、4つの **writeline** アクティビティがスケジュールされた後で、スタック動作 (最初は最後の出力) を使用して実行されたためです。
 
 ただし、<xref:System.Activities.Statements.ParallelForEach%601.Body%2A> アクティビティや <xref:System.ServiceModel.Activities.Receive> アクティビティのように、アイドル状態になる可能性のあるアクティビティが <xref:System.Activities.Statements.Delay> に含まれている場合は、 それぞれのアクティビティが完了するまで待機する必要はありません。 <xref:System.Activities.Statements.ParallelForEach%601> は、スケジュールされている次の本文アクティビティに進み、実行を試みます。 そのアクティビティもアイドル状態になる場合は、<xref:System.Activities.Statements.ParallelForEach%601> が、さらに次の本文アクティビティに進みます。
 
@@ -41,17 +41,17 @@ ms.locfileid: "86876048"
 
 次の表に、最も役に立つ <xref:System.Activities.Statements.ParallelForEach%601> アクティビティのプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|誤り|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は**Parallelforeach \<Int32> **です。 この値は、必要に応じて、[**プロパティ**] グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|誤り|コレクション内の各項目に対して実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**parallelforeach \<T> **アクティビティデザイナーの [**本文**] ボックスに、[ツールボックス] からアクティビティをドロップします。|
-|**TypeArgument**|正しい|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>ジェネリックパラメーター *T*によって指定されたコレクション内の項目の型。既定では、 **Typeargument**は**Int32**に設定されています。 **Parallelforeach<t \> **アクティビティデザイナーで t 型を変更するには、プロパティグリッドの**typeargument**コンボボックスの値を変更します。|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|正しい|反復処理を行う項目のコレクション。 を設定するには、 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> ** \> ForEach<T**アクティビティデザイナーの [**値**] ボックスに、"VB の式を入力してください" または [**プロパティ**] ウィンドウの [**値**] ボックスに、Visual Basic 式を入力します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は**Parallelforeach \<Int32> **です。 この値は、必要に応じて、[ **プロパティ** ] グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|×|コレクション内の各項目に対して実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**parallelforeach \<T> **アクティビティデザイナーの [**本文**] ボックスに、[ツールボックス] からアクティビティをドロップします。|
+|**TypeArgument**|○|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>ジェネリックパラメーター *T*によって指定されたコレクション内の項目の型。既定では、 **Typeargument**は**Int32**に設定されています。 **Parallelforeach<t \> **アクティビティデザイナーで t 型を変更するには、プロパティグリッドの**typeargument**コンボボックスの値を変更します。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|○|反復処理を行う項目のコレクション。 を設定するには、 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> ** \> ForEach<T**アクティビティデザイナーの [**値**] ボックスに、"VB の式を入力してください" または [**プロパティ**] ウィンドウの [**値**] ボックスに、Visual Basic 式を入力します。|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||各イテレーションの完了後に評価されます。 true であると評価する場合、スケジュールされた保留イテレーションはキャンセルされます。 このプロパティが設定されていない場合、スケジュールされたすべてのステートメントは、完了するまで実行されます。|
 
 既定では、ループ反復子には、item という名前が付けられます。 反復子変数の名前は、 **parallelforeach \<T> **アクティビティデザイナーの [ **ForEach** ] ボックスで変更できます。 ループ反復子は、<xref:System.Activities.Statements.ParallelForEach%601> アクティビティの子の式で使用できます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

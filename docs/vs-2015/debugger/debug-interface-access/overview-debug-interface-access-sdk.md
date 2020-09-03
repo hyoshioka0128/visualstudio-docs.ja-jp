@@ -23,19 +23,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7374b03da42e34e8ac3be8c7cc570769d9cfd1ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179209"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概要 (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-DIA SDK を使用して、Microsoft のデバッグ情報にアクセスします。 DIA SDK では、COM ベースの Microsoft デバッグ情報の形式が変更されるたびにコードを書き直す必要がなくなります API セットを提供します。 DIA SDK では以前のバージョンによって生成される .pdb ファイルと .dbg ファイルで設定されているデバッグ情報の一部から読み取ることもできます[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]5.0 以降のバージョン。  
+Microsoft デバッグ情報にアクセスするには、DIA SDK を使用します。 DIA SDK には、Microsoft がデバッグ情報の形式を変更するたびにコードを書き直す必要がなくなり、COM ベースの API セットが用意されています。 DIA SDK では、バージョン5.0 以降で生成される .pdb ファイルと dbg ファイルにある、以前のバージョンのデバッグ情報のセットから読み取ることもでき [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] ます。  
   
- DIA SDK 内の各インターフェイスは、それ以外の場合に記載されている場合を除く別の COM オブジェクトを表します。 追加のインターフェイス、およびその他のオブジェクトが作成、明示的なクエリを使用してなど[idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)または[idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)を呼び出すことではなく、`QueryInterface`で既存のインターフェイス ポインター。  
+ DIA SDK 内の各インターフェイスは、特に指定されていない場合を除き、異なる COM オブジェクトを表します。 追加のインターフェイス (つまり、追加のオブジェクト) は、既存のインターフェイスポインターでを呼び出すのではなく、明示的なクエリ ( [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) や [IDiaSession:: findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)など) によって作成され `QueryInterface` ます。  
   
-## <a name="see-also"></a>関連項目  
- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+## <a name="see-also"></a>参照  
+ [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876113"
 ---
 # <a name="delay-activity-designer"></a>Delay アクティビティ デザイナー
@@ -29,18 +29,18 @@ ms.locfileid: "86876113"
 
 **Delay**アクティビティデザイナーは、[**ツールボックス**] の [**プリミティブ**] カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの [**ツールボックス**] タブをクリックします。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X**キーを押します。
 
-**Delay**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Delay> と、既定値の Delay を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Delay**アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**Delay**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Delay> と、既定値の Delay を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Delay** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-delay-properties"></a>Delay プロパティ
 
 次の表は、 <xref:System.Activities.Statements.Delay> プロパティと、デザイナーでのそれらの使用方法を示しています。 これらのプロパティは、プロパティグリッドで編集できます。また、一部のプロパティは、ワークフローデザイナー画面で編集できます。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|誤り|<xref:System.Activities.Statements.Delay> アクティビティの表示名。 既定値は Delay です。 値は <xref:System.Activities.Activity.DisplayName%2A> 厳密には必須ではありませんが、ベストプラクティスとして使用することをお勧めします。|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|正しい|ワークフローの実行を遅らせる時間の長さ。 このプロパティは、プロパティ グリッドで設定します。 時間の長さを指定するには、00:00:00 という形式のリテラル <xref:System.TimeSpan>、または Visual Basic の式を入力します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.Delay> アクティビティの表示名。 既定値は Delay です。 値は <xref:System.Activities.Activity.DisplayName%2A> 厳密には必須ではありませんが、ベストプラクティスとして使用することをお勧めします。|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|○|ワークフローの実行を遅らせる時間の長さ。 このプロパティは、プロパティ グリッドで設定します。 時間の長さを指定するには、00:00:00 という形式のリテラル <xref:System.TimeSpan>、または Visual Basic の式を入力します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)

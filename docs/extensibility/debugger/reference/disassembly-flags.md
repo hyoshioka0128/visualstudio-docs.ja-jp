@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS |マイクロソフトドキュメント
+title: DISASSEMBLY_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ba6d9db3ad2cb1f9bbc9e3cea27aba939c6dd499
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737375"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
@@ -52,34 +52,34 @@ public enum enum_DISASSEMBLY_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `DF_DOCUMENTCHANGE`\
-この命令が前のドキュメントとは異なるドキュメント内にあることを示します。
+この命令が前のドキュメントとは異なるドキュメントにあることを示します。
 
 `DF_DISABLED`\
 この命令が実行されないことを示します。
 
 `DF_INSTRUCTION_ACTIVE`\
-この命令が、次に実行される命令の 1 つであることを示します (複数の命令が存在する可能性があります)。
+この命令が、次に実行される命令の1つであることを示します (複数存在する場合もあります)。
 
 `DF_DATA`\
-この命令が実際にはデータであることを示します (コードではありません)。
+この命令が (コードではなく) 実際のデータであることを示します。
 
 `DF_HASSOURCE`\
-この命令にソースがあることを示します。 プロファイリングやガベージ コレクション コードなどの一部の命令には、対応するソースがありません。
+この命令にソースがあることを示します。 プロファイルやガベージコレクションコードなどの一部の命令には、対応するソースがありません。
 
 `DF_DOCUMENT_CHECKSUM`\
-ドキュメント`bstrDocumentUrl`URL の後にチェックサム データが含まれるフィールドを示します。 チェックサム データの格納方法については[、DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体の「解説」セクションを参照してください。
+フィールドに `bstrDocumentUrl` 、ドキュメントの URL の後にチェックサムデータが格納されていることを示します。 チェックサムデータの格納方法については、 [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 構造体の「解説」を参照してください。
 
-## <a name="remarks"></a>Remarks
-構造体の`dwFlags`メンバーとして使用[されます](../../../extensibility/debugger/reference/disassemblydata.md)。
+## <a name="remarks"></a>解説
+`dwFlags` [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md)構造体のメンバーとして使用されます。
 
-これらのフラグはビット単位`OR`で組み合わせることができる。
+これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

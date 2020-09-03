@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの種類 |マイクロソフトドキュメント
+title: プロジェクトの種類 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706259"
 ---
 # <a name="project-types"></a>プロジェクトの種類
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]には、 や などの言語用[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]のいくつかの[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]プロジェクトの種類が含まれています。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]また、独自のプロジェクトタイプを作成することもできます。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、やなどの言語用のプロジェクトの種類がいくつか含まれてい [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、独自のプロジェクトの種類を作成することもできます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Essentials](../../extensibility/internals/project-type-essentials.md)
@@ -32,19 +32,19 @@ ms.locfileid: "80706259"
 
 - [ソリューション エクスプローラーのツールバーへのコマンドの追加](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- ソリューション エクスプローラーのツール バーにボタンを追加するために必要[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]な手順について詳**しく説明**します。
+ ソリューションエクスプローラーツールバーにボタンを追加するために従う必要がある手順について詳しく説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Solution Explorer**ます。
 
 - [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- ユーザーがパターンに従って新しいプロジェクトやプロジェクト項目を作成できるように、プロジェクトの種類にテンプレートを追加する方法について説明します。
+ プロジェクトの種類にテンプレートを追加して、ユーザーがパターンに従って新しいプロジェクトとプロジェクト項目を作成できるようにする方法について説明します。
 
 - [プロジェクト項目のオープンと保存](../../extensibility/internals/opening-and-saving-project-items.md)
 
- プロジェクトの種類がサポートする項目を管理する方法について説明します。
+ プロジェクトの種類でサポートされる項目の管理方法について説明します。
 
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 
- プロジェクトの種類がデバッグやリリースなどの構成オプションをサポートして、プロジェクトのビルド方法やデバッグ方法などを制御する方法について説明します。
+ プロジェクトのビルド、デバッグなどの方法を制御する、デバッグやリリースなどの構成オプションがプロジェクトの種類によってどのようにサポートされるかについて説明します。
 
 - [ソース管理のサポート](../../extensibility/internals/supporting-source-control.md)
 
@@ -52,25 +52,25 @@ ms.locfileid: "80706259"
 
 - [入れ子になったプロジェクト](../../extensibility/internals/nesting-projects.md)
 
- プロジェクトの種類が*入れ子を*サポートする方法について説明**します。**
+ プロジェクトを**ソリューションエクスプローラー**にまとめてグループ化できるように、プロジェクトの種類で*入れ子*をサポートする方法について説明します。
 
 - [プロジェクトのアップグレード](../../extensibility/internals/upgrading-projects.md)
 
- アップグレード ウィザードでプロジェクトの種類を使用して、以前のバージョンの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]からプロジェクト ファイルをアップグレードする方法について説明します。
+ 以前のバージョンのからプロジェクトファイルをアップグレードするために、アップグレードウィザードにプロジェクトの種類を参加させる方法について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
-- [Architecture](../../extensibility/internals/project-types-architecture.md)
+- [アーキテクチャ](../../extensibility/internals/project-types-architecture.md)
 
  プロジェクトの種類に関する詳細な技術情報を提供します。
 
 ## <a name="related-sections"></a>関連項目
 - [階層と選択](../../extensibility/internals/hierarchies-and-selection.md)
 
- 統合開発環境 (IDE)[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]でプロジェクトを階層として表示する方法の概要を示します。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE: integrated development environment) がプロジェクトを階層として表示する方法の概要について説明します。
 
 - [プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)
 
- プロジェクト のサブタイプのトピックへのリンクを提供します。 プロジェクトのサブタイプを使用すると、独自のプロジェクトを含むほとんどの種類のプロジェクトの拡張が可能になります。
+ プロジェクトのサブタイプに関するトピックへのリンクを示します。 プロジェクトのサブタイプを使用すると、独自の種類のプロジェクトを含むほとんどの種類のプロジェクトを拡張できます。
 
 - [プロジェクト](../../extensibility/internals/projects.md)
 
- プロジェクト システムを拡張する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]方法について説明します。
+ プロジェクトシステムを拡張する方法について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。

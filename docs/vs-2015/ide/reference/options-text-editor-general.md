@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[オプション]、[テキスト エディター]、[全般] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -49,19 +49,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662263"
 ---
 # <a name="options-text-editor-general"></a>[オプション]、[テキスト エディター]、[全般]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-このダイアログ ボックスでは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コード/テキスト エディターのグローバル設定を変更できます。 このダイアログ ボックスを表示するには、 **[ツール]** メニューの **[オプション]** をクリックし、 **[テキスト エディター]** フォルダーを展開し、 **[全般]** をクリックします。
+このダイアログ ボックスでは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コード/テキスト エディターのグローバル設定を変更できます。 このダイアログ ボックスを表示するには、**[ツール]** メニューの **[オプション]** をクリックし、**[テキスト エディター]** フォルダーを展開し、**[全般]** をクリックします。
 
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="settings"></a>設定
  ドラッグアンドドロップによるテキスト編集を選択すると、テキストを選択して、現在のドキュメントまたは開いている他のドキュメント内の別の場所にドラッグすることによってテキストを移動できます。
@@ -72,12 +72,12 @@ ms.locfileid: "72662263"
 
  既定では、署名なしの UTF-8 エンコードが自動的に検出されます。エディターは、バイト順マークまたは文字セットタグを検索することによってエンコードを検出します。 現在の文書でいずれも見つからない場合、コード エディターはバイト順序をスキャンし、UTF-8 エンコードを自動検出します。 エンコードの自動検出を無効にするには、このオプションをオフにします。
 
-## <a name="display"></a>表示
+## <a name="display"></a>ディスプレイ
  [選択範囲] 選択すると、エディターのテキスト領域の左端に沿った縦方向の余白が表示されます。 この余白をクリックしてテキスト行全体を選択したり、クリックしてドラッグし、連続するテキスト行を選択したりできます。
 
 |マージン オン|マージン オフ|
 |-------------------------|--------------------------|
-|![HTMLpageSelectionMarginOn のスクリーンショット](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![HTMLpageSelectionMarginOff のスクリーンショット](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+|![HTMLpageSelectionMarginOn スクリーンショット](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff スクリーンショット](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
 
  [インジケーターの余白] 選択すると、エディターのテキスト領域の左端の外側に垂直方向の余白が表示されます。 この余白をクリックすると、アイコンとテキストに関連付けられているヒントが表示されます。 たとえば、インジケーター マージンにブレークポイントやタスク一覧のショートカットが表示されます。 インジケーター マージンの情報は印刷されません。
 
@@ -87,5 +87,5 @@ ms.locfileid: "72662263"
 
  選択したときに現在の行を強調表示すると、カーソルが置かれているコード行の周りに灰色のボックスが表示されます。
 
-## <a name="see-also"></a>関連項目
- [[オプション]、[テキストエディター]、[すべての言語 ](../../ide/reference/options-text-editor-all-languages.md) [Options]、[テキストエディター]、[すべての言語]、[タブ ](../../ide/reference/options-text-editor-all-languages-tabs.md) [Options]、[テキストエディター]、[ファイル拡張子 ](../../ide/reference/options-text-editor-file-extension.md) [Identifying]、[キーボードショートカットのカスタマイズ] ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) エディター [Customizing](../../ide/customizing-the-editor.md) [Using IntelliSense](../../ide/using-intellisense.md)
+## <a name="see-also"></a>参照
+ [[オプション]、[テキストエディター]、[すべての言語](../../ide/reference/options-text-editor-all-languages.md)]、 [[テキストエディター]、[すべての言語]、[タブ](../../ide/reference/options-text-editor-all-languages-tabs.md)[オプション]、[テキストエディター]、[ファイル拡張子](../../ide/reference/options-text-editor-file-extension.md)]、[[キーボードショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)]、 [IntelliSense を使用し](../../ide/using-intellisense.md)[たエディターのカスタマイズ](../../ide/customizing-the-editor.md)
