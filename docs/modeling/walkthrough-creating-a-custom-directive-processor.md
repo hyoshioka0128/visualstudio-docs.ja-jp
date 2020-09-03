@@ -14,15 +14,15 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532237"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>チュートリアル: カスタム ディレクティブ プロセッサを作成する
 
-*ディレクティブプロセッサ*は、*生成された変換クラス*にコードを追加することで機能します。 *テキストテンプレート*から*ディレクティブ*を呼び出す場合、テキストテンプレートに記述する残りのコードは、ディレクティブによって提供される機能に依存する可能性があります。
+*ディレクティブプロセッサ* は、 *生成された変換クラス*にコードを追加することで機能します。 *テキストテンプレート*から*ディレクティブ*を呼び出す場合、テキストテンプレートに記述する残りのコードは、ディレクティブによって提供される機能に依存する可能性があります。
 
 独自のカスタム ディレクティブ プロセッサを記述できます。 これにより、テキスト テンプレートをカスタマイズすることができます。 カスタム ディレクティブ プロセッサを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> を継承するクラスを作成します。
 
@@ -80,7 +80,7 @@ End Property
 1. Visual Studio で、CustomDP という名前の C# クラス ライブラリ プロジェクトまたは Visual Basic クラス ライブラリ プロジェクトを作成します。
 
     > [!NOTE]
-    > 複数のコンピューターにディレクティブプロセッサをインストールする場合は、Visual Studio 拡張機能 (VSIX) プロジェクトを使用し、拡張子に pkgdef ファイルを含めることをお勧めします。 詳細については、「[カスタムディレクティブプロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)」を参照してください。
+    > 複数のコンピューターにディレクティブプロセッサをインストールする場合は、Visual Studio 拡張機能 (VSIX) プロジェクトを使用し、拡張子に pkgdef ファイルを含めることをお勧めします。 詳細については、「 [カスタムディレクティブプロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)」を参照してください。
 
 2. 次のアセンブリへの参照を追加します。
 
@@ -599,7 +599,7 @@ End Property
     End Namespace
     ```
 
-4. Visual Basic のみの場合は、[**プロジェクト**] メニューを開き、[ **customdp プロパティ**] をクリックします。 [**アプリケーション**] タブの [**ルート名前空間**] で、既定値のを削除し `CustomDP` ます。
+4. Visual Basic のみの場合は、[ **プロジェクト** ] メニューを開き、[ **customdp プロパティ**] をクリックします。 [ **アプリケーション** ] タブの [ **ルート名前空間**] で、既定値のを削除し `CustomDP` ます。
 
 5. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
@@ -614,7 +614,7 @@ End Property
 Visual Studio でテキストテンプレートからディレクティブを呼び出すには、その前にディレクティブプロセッサのレジストリキーを追加する必要があります。
 
 > [!NOTE]
-> 複数のコンピューターにディレクティブプロセッサをインストールする場合は、アセンブリと共に、 *pkgdef*ファイルが含まれている Visual Studio 拡張機能 (VSIX) を定義することをお勧めします。 詳細については、「[カスタムディレクティブプロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)」を参照してください。
+> 複数のコンピューターにディレクティブプロセッサをインストールする場合は、アセンブリと共に、 *pkgdef* ファイルが含まれている Visual Studio 拡張機能 (VSIX) を定義することをお勧めします。 詳細については、「 [カスタムディレクティブプロセッサの配置](../modeling/deploying-a-custom-directive-processor.md)」を参照してください。
 
 ディレクティブ プロセッサのキーは次の場所のレジストリにあります。
 
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>ディレクティブ プロセッサのテストに使用する XML ファイルを作成するには
 
-1. 任意のテキストエディター (メモ帳など) を使用して、 *DocFile.xml*という名前のファイルを作成します。
+1. 任意のテキストエディター (メモ帳など) を使用して、 *DocFile.xml* という名前のファイルを作成します。
 
     > [!NOTE]
     > このファイルは任意の場所に作成できます (たとえば、 *C:\Test\DocFile.xml*)。
@@ -732,12 +732,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 2. TestDP.tt という名前の新しいテキスト テンプレート ファイルを追加します。
 
-3. TestDP.tt の [**カスタムツール**] プロパティがに設定されていることを確認し `TextTemplatingFileGenerator` ます。
+3. TestDP.tt の [ **カスタムツール** ] プロパティがに設定されていることを確認し `TextTemplatingFileGenerator` ます。
 
 4. TestDP.tt の内容を次のテキストに変更します。
 
     > [!NOTE]
-    > 文字列 `<YOUR PATH>` を*DocFile.xml*ファイルのパスに置き換えます。
+    > 文字列 `<YOUR PATH>` を *DocFile.xml* ファイルのパスに置き換えます。
 
     テキスト テンプレートの言語は、ディレクティブ プロセッサの言語と同じでなくてもかまいません。
 
@@ -826,13 +826,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     > この例では、`Processor` パラメーターの値は `CustomDirectiveProcessor` です。 `Processor` パラメーターの値は、プロセッサのレジストリ キーの名前に一致する必要があります。
 
-5. [**ファイル**] メニューの [**すべてを保存**] をクリックします。
+5. [ **ファイル** ] メニューの [ **すべてを保存**] をクリックします。
 
 ### <a name="to-test-the-directive-processor"></a>ディレクティブ プロセッサをテストするには
 
 1. **ソリューションエクスプローラー**で、[TestDP.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-   Visual Basic ユーザーの場合、既定では TestDP.txt が**ソリューションエクスプローラー**に表示されない可能性があります。 プロジェクトに割り当てられているすべてのファイルを表示するには、[**プロジェクト**] メニューを開き、[**すべてのファイルを表示**] をクリックします。
+   Visual Basic ユーザーの場合、既定では TestDP.txt が **ソリューションエクスプローラー** に表示されない可能性があります。 プロジェクトに割り当てられているすべてのファイルを表示するには、[ **プロジェクト** ] メニューを開き、[ **すべてのファイルを表示**] をクリックします。
 
 2. **ソリューションエクスプローラー**で、[TestDP.txt] ノードを展開し、[TestDP.txt] をダブルクリックしてエディターで開きます。
 
@@ -874,7 +874,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-html-to-the-generated-text"></a>生成されたテキストに HTML を追加するには
 
-1. *TestDP.tt*のコードを次のコードに置き換えます。 HTML は強調表示されています。 文字列を `YOUR PATH` *DocFile.xml*ファイルのパスに置き換えてください。
+1. *TestDP.tt*のコードを次のコードに置き換えます。 HTML は強調表示されています。 文字列を `YOUR PATH` *DocFile.xml* ファイルのパスに置き換えてください。
 
     > [!NOTE]
     > 開いているタグを追加すると、 \<# and close #> ステートメントコードが HTML タグから分離されます。
@@ -959,8 +959,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. [**ファイル**] メニューの [ **TestDP.txtの保存**] をクリックします。
+2. [ **ファイル** ] メニューの [ **TestDP.txtの保存 **] をクリックします。
 
-3. ブラウザーで出力を表示するには、**ソリューションエクスプローラー**で [TestDP.htm] を右クリックし、[**ブラウザーで表示**] をクリックします。
+3. ブラウザーで出力を表示するには、 **ソリューションエクスプローラー**で [TestDP.htm] を右クリックし、[ **ブラウザーで表示**] をクリックします。
 
    HTML 形式が適用されている場合を除き、出力は元のテキストと同じである必要があります。 各項目名は太字で表示されます。

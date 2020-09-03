@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535851"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 配置
 
-分離シェルを使用すると、ドメイン固有言語と対話するために必要な Visual Studio の機能と、そのソリューションをどのように表示するかを決定できます。 Visual Studio の分離シェルの詳細については、「[分離シェルのカスタマイズ](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell)」を参照してください。
+分離シェルを使用すると、ドメイン固有言語と対話するために必要な Visual Studio の機能と、そのソリューションをどのように表示するかを決定できます。 Visual Studio の分離シェルの詳細については、「 [分離シェルのカスタマイズ](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell)」を参照してください。
 
 Visual Studio シェルを配置ターゲットとして設定するには、次のようにします。
 

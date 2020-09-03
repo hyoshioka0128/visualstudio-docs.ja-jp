@@ -20,9 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015400"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>方法: リソースファイルを使用してローカライズされた名前、プロパティ、およびアクセス許可を指定する
@@ -36,15 +37,15 @@ ms.locfileid: "86015400"
 
 3. [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
-4. [**新しい項目の追加**] ダイアログボックスで、[**ビジネスデータ接続リソース項目**] を選択します。
+4. [ **新しい項目の追加** ] ダイアログボックスで、[ **ビジネスデータ接続リソース項目**] を選択します。
 
-5. [**名前**] ボックスにリソースファイルの名前を指定し、[**追加**] をクリックします。
+5. [ **名前** ] ボックスにリソースファイルの名前を指定し、[ **追加** ] をクリックします。
 
      拡張子が bdcr のリソースファイルがプロジェクトに追加され、編集用に開かれます。
 
 6. XML を追加して、BDC モデルを適用するローカライズされた名前、プロパティ、およびアクセス許可を定義します。
 
-     これらの要素を定義する方法の詳細については、「[モデルファイルとリソースファイル](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14))」を参照してください。
+     これらの要素を定義する方法の詳細については、「 [モデルファイルとリソースファイル](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [方法: 既存の BDC モデルファイルを SharePoint プロジェクトに追加する](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5fab56a7738ed7b52760cf20a5bfcc8542ee5a23
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919056"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 定義への拡張機能の追加
@@ -38,4 +38,4 @@ DSL 定義の拡張機能を使用すると、ドメイン固有言語 (DSL) に
   サンプルコードとこの機能の詳細については、「 [Visual Studio の視覚化とモデリング SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148) 」 Web サイトを参照してください。
 
 ## <a name="see-also"></a>参照
- [Visual Studio の視覚化およびモデリング SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)
+ [Visual Studio Visualization and Modeling SDK](https://www.microsoft.com/en-us/download/details.aspx?id=48148)

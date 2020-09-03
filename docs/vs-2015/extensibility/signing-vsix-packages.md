@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918740"
 ---
 # <a name="signing-vsix-packages"></a>VSIX パッケージの署名
@@ -38,15 +38,15 @@ ms.locfileid: "75918740"
   
 1. プロジェクトに VSIX を追加します。  
   
-2. ソリューションエクスプローラーのプロジェクトノードを右クリックし、[**追加&#124; ] [NuGet パッケージの管理**] の順に選択します。  Nuget と NuGet パッケージの追加の詳細については、「 [nuget の概要](/nuget/)」および「[ダイアログを使用した Nuget パッケージの管理](/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。  
+2. ソリューションエクスプローラーでプロジェクトノードを右クリックし、[ **&#124; 追加] [NuGet パッケージの管理**] の順に選択します。  Nuget と NuGet パッケージの追加の詳細については、「 [nuget の概要](/nuget/) 」および「 [ダイアログを使用した Nuget パッケージの管理](/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。  
   
 3. VisualStudioExtensibility から VSIXSignTool を検索し、NuGet パッケージをインストールします。  
   
-4. これで、プロジェクトのローカルパッケージの場所から VSIXSignTool を実行できるようになりました。 署名シナリオ (VSIXSignTool/?) については、ツールのコマンドラインヘルプを参照してください。  
+4. これで、プロジェクトのローカルパッケージの場所から VSIXSignTool を実行できるようになりました。 署名シナリオ (VSIXSignTool.exe/?) については、ツールのコマンドラインヘルプを参照してください。  
   
    たとえば、パスワードで保護された証明書ファイルで署名するには、次のようにします。  
   
-   VSIXSignTool sign/f \<certfile >/p \<password > \<VSIXfile >  
+   VSIXSignTool.exe サインイン/f \<certfile> /p \<password>\<VSIXfile>  
   
 ## <a name="see-also"></a>参照  
  [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)

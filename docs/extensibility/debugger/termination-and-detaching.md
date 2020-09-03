@@ -1,5 +1,5 @@
 ---
-title: 終了とデタッチ |マイクロソフトドキュメント
+title: 終了とデタッチ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b88255d618ce42fa55d878f192d31523ba3f83b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712488"
 ---
 # <a name="termination-and-detaching"></a>終了とデタッチ
 次のセクションでは、通常の終了について説明します。
 
-## <a name="discussion"></a>ディスカッション
- [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)または[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)インターフェイスが続行された後、デバッグするアプリケーションにブレークポイント、例外、ランタイム エラー、または無限ループがない場合、デバッグ中のプログラムは完了まで実行されます。 このプロセスは正常終了です。
+## <a name="discussion"></a>考察 (Discussion)
+ [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)または[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)インターフェイスが続行されると、デバッグ対象のアプリケーションにブレークポイント、例外、実行時エラー、または無限ループがない場合は、デバッグ中のプログラムが完了するまで実行されます。 このプロセスは通常の終了です。
 
- 通常の終了を実装するには[、IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)を送信する必要があります。 通常の終了には、メソッドを実行[する必要があります](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)。
+ 通常の終了を実装するには、 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) を送信する必要があります。 通常の終了では、 [IDebugProgramDestroyEvent2:: GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) メソッドを実行する必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [カスタム デバッグ エンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [カスタムデバッグエンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)

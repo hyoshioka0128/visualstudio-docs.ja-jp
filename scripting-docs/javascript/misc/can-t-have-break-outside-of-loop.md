@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817659"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' をループの外に設定できません。
-ループの外側で**break**キーワードを使用しようとしました。 **Break**キーワードは、ループまたはステートメントを終了するために使用され `switch` ます。 ループまたはステートメントの本体に埋め込まれている必要があり `switch` ます。 ただし、**ラベル**は break キーワードに従うことができます。  
+ループの外側で **break** キーワードを使用しようとしました。 **Break**キーワードは、ループまたはステートメントを終了するために使用され `switch` ます。 ループまたはステートメントの本体に埋め込まれている必要があり `switch` ます。 ただし、 **ラベル** は break キーワードに従うことができます。  
   
 ```js
 break labelname;  

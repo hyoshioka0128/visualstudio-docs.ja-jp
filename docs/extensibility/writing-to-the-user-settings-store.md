@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec4d9cdda975d0f80e9d8523ec18a19c24c9418a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906206"
 ---
 # <a name="writing-to-the-user-settings-store"></a>ユーザー設定ストアへの書き込み
-ユーザー設定は、[ツール]、[**オプション**] ダイアログボックス、[プロパティ] ウィンドウ、およびその他の特定のダイアログボックスのような書き込み可能な設定です。 Visual Studio 拡張機能では、これらを使用して少量のデータを格納できます。 このチュートリアルでは、ユーザー設定ストアからの読み取りと書き込みによって、Visual Studio にメモ帳を外部ツールとして追加する方法について説明します。
+ユーザー設定は、[ツール]、[ **オプション** ] ダイアログボックス、[プロパティ] ウィンドウ、およびその他の特定のダイアログボックスのような書き込み可能な設定です。 Visual Studio 拡張機能では、これらを使用して少量のデータを格納できます。 このチュートリアルでは、ユーザー設定ストアからの読み取りと書き込みによって、Visual Studio にメモ帳を外部ツールとして追加する方法について説明します。
 
 ## <a name="writing-to-the-user-settings-store"></a>ユーザー設定ストアへの書き込み
 
@@ -104,6 +104,6 @@ ms.locfileid: "85906206"
 
 7. コードをビルドし、デバッグを開始します。
 
-8. [**ツール**] メニューの [ **UserSettingsStoreCommand の呼び出し**] をクリックします。 これにより、[**ツール**] メニューにメモ帳が追加されます。
+8. [ **ツール** ] メニューの [ **UserSettingsStoreCommand の呼び出し**] をクリックします。 これにより、[ **ツール** ] メニューにメモ帳が追加されます。
 
-9. [ツール] メニューの [オプション] メニューにメモ帳が表示され **、メモ帳をクリックする**とメモ帳のインスタンスが表示されます。
+9. [ツール] メニューの [オプション] メニューにメモ帳が表示され **、メモ帳をクリックする** とメモ帳のインスタンスが表示されます。

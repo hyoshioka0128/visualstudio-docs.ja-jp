@@ -1,4 +1,4 @@
-﻿---
+---
 title: ヘルプ コンテンツ マネージャーのコマンド ライン引数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619684"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>ヘルプ コンテンツ マネージャーのコマンド ライン引数
@@ -44,7 +44,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 ## <a name="switches-and-arguments"></a>スイッチおよび引数
  次の表に、ヘルプ コンテンツ マネージャーのコマンド ライン ツールで使用できるスイッチと引数の定義を示します。
 
-|切り替え|必須?|引数|
+|Switch|必須|引数|
 |------------|---------------|---------------|
 |/operation|はい|-   **Install** -- 指定されたインストール ソースからローカル コンテンツ ストアにブックを追加します。<br />     このスイッチには、/booklist 引数、/sourceURI 引数、または両方が必要です。 /sourceURI 引数を指定しない場合、Visual Studio の既定の URI がインストール ソースとして使用されます。 /booklist 引数を指定しない場合、/sourceUri のすべてのブックがインストールされます。<br />-   **Uninstall** -- 指定するブックをローカル コンテンツ ストアから削除します。<br />     このスイッチには、/booklist 引数または /sourceURI 引数が必要です。  /sourceURI 引数を指定すると、すべてのブックが削除され、/booklist 引数は無視されます。<br />-   **Move** -- 指定するパスにローカル ストアを移動します。 既定のローカル ストア パスは、ヘルプのセットアップによって %PROGRAMDATA% の下に設定されます。<br />     このスイッチには、/locationPath 引数と /catalogName 引数が必要です。 有効でないパスを指定した場合、またはドライブにコンテンツを保持するのに十分な空き領域がない場合は、エラー メッセージがイベント ログに記録されます。<br />-   **Refresh** -- インストール後または最近の更新後に変更されたトピックを更新します。<br />     このスイッチには /sourceURI 引数が必要です。|
 |/catalogName|はい|コンテンツ カタログの名前を指定します。|
@@ -55,11 +55,11 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/productName|いいえ|削除されるブックの製品名を指定します。 製品名は、コンテンツに付属する helpcontentsetup.msha または books.html ファイルに示されています。 一度に 1 つの製品からのみブックを削除できます。 複数の製品からブックを削除するには、複数のインストールを実行する必要があります。|
 |/booklist|いいえ|管理するブックの名前をスペースで区切って指定します。 値は、インストール メディアに示されたブック名と一致する必要があります。<br /><br /> この引数を指定しない場合、インストール ソースが [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ファイル形式である場合は、/sourceURI で指定された製品の推奨されるブックがすべてインストールされます。<br /><br /> ブック名にスペースが 1 つ以上含まれている場合は、リストが適切に区切られるようにブック名を二重引用符 (") で囲みます。<br /><br /> 有効でないか到達可能でない /sourceURI を指定した場合は、エラー メッセージが記録されます。|
 |/skuId|いいえ|インストール ソースから製品の在庫管理単位 (SKU) を指定し、/SourceURI スイッチで識別されるブックにフィルターを適用します。|
-|/membership|Ｘ|-   **Minimum** -- /skuId スイッチで指定する SKU に基づいて、最小限のヘルプ コンテンツ セットをインストールします。 SKU とコンテンツ セットの間のマッピングは、サービス API で公開されます。<br />-   **Recommended** -- /skuId 引数で指定する SKU の推奨ブック セットをインストールします。 インストール ソースは、サービス API または .MSHA です。<br />-   **Full** -- /skuId 引数で指定する SKU のすべてのブック セットをインストールします。 インストール ソースは、サービス API または .MSHA です。|
+|/membership|いいえ|-   **Minimum** -- /skuId スイッチで指定する SKU に基づいて、最小限のヘルプ コンテンツ セットをインストールします。 SKU とコンテンツ セットの間のマッピングは、サービス API で公開されます。<br />-   **Recommended** -- /skuId 引数で指定する SKU の推奨ブック セットをインストールします。 インストール ソースは、サービス API または .MSHA です。<br />-   **Full** -- /skuId 引数で指定する SKU のすべてのブック セットをインストールします。 インストール ソースは、サービス API または .MSHA です。|
 |/locationpath|いいえ|ローカル ヘルプ コンテンツの既定のフォルダーを指定します。 このスイッチは、コンテンツをインストールまたは移動する場合にのみ使用する必要があります。 このスイッチを指定する場合は、/silent スイッチも指定する必要があります。|
 |/silent|いいえ|ユーザーに確認せずに、または状態通知領域のアイコンなどの UI を表示せずに、ヘルプ コンテンツをインストールまたは削除します。 %Temp% ディレクトリ内のファイルに出力が記録されます。 **重要:** コンテンツをサイレント モードでインストールするには、.mshc ファイルではなく、デジタル署名された .cab ファイルを使用する必要があります。|
 |/launchingApp|いいえ|ヘルプ ビューアーが親アプリケーションなしで起動されるときのアプリケーションおよびカタログ コンテキストを定義します。 このスイッチの引数は、*CompanyName*、*ProductName*、および *VersionNumber* です (例: `/launchingApp Microsoft,VisualStudio,11.0`)。<br /><br /> これは、/silent パラメーター付きでコンテンツをインストールするために必要です。|
-|/wait *秒数*|いいえ|インストール、アンインストール、および更新操作を一時停止します。 操作が既にカタログに対して進行中の場合、プロセスは特定の秒数が経過するまで続行を待機します。 無期限に待機するには 0 を使用します。|
+|/wait *秒数*|いいえ|インストール、アンインストール、および更新操作を一時停止します。 操作が既にカタログに対して進行中の場合、プロセスは特定の秒数が経過するまで続行を待機します。 無期限に待機するには、0 を使用します。|
 |/?|いいえ|ヘルプ コンテンツ マネージャーのコマンド ライン ツールのスイッチとその説明を一覧表示します。|
 
 ### <a name="exit-codes"></a>終了コード
@@ -88,5 +88,5 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ヘルプビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)[ヘルプコンテンツマネージャーのオーバーライド](../ide/help-content-manager-overrides.md)

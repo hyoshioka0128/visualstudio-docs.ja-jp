@@ -1,5 +1,5 @@
 ---
-title: レガシー言語サービスの基本 |マイクロソフトドキュメント
+title: レガシ言語サービスの要点 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707417"
 ---
 # <a name="legacy-language-service-essentials"></a>従来の言語サービスの基本情報
 プログラミング言語を Visual Studio に統合するには、言語サービスを提供する必要があります。 このトピックでは、従来の言語サービスで使用できる機能について説明します。
 
- レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 言語サービスを実装する新しい方法の詳細については、「[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)」を参照してください。
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 言語サービスを実装する新しい方法の詳細については、「 [エディターと言語サービスの拡張機能](../../extensibility/editor-and-language-service-extensions.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
 
- 従来の言語サービスには、次の機能があります。
+ 従来の言語サービスでは、次の機能が提供されます。
 
 |機能|説明|
 |-------------|-----------------|
-|構文の色分け表示|言語の要素ごとに、エディター ビューに異なる色とフォント スタイルを表示させます。 この違いにより、ファイルの読み取りと編集が容易になります。<br /><br /> 一般的な情報については、「[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)」を参照してください。<br /><br /> 管理パッケージ フレームワーク (MPF) のこの機能については、[レガシー言語サービスでの構文の色分けを](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)参照してください。|
-|ステートメント入力候補|ユーザーが入力を開始したステートメントまたはキーワードを完了します。 ステートメント入力候補は、ユーザーが入力が少なく、エラーの可能性が少なく、難しいステートメントをより簡単に入力するのに役立ちます。<br /><br /> 一般的な情報については、「[レガシ言語サービスでのステートメントの補完](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)」を参照してください。<br /><br /> MPF のこの機能の詳細については、「[レガシ言語サービスでの Word の入力候補](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)」を参照してください。|
-|かっこの一致|中かっこなどのペア文字を強調表示します。 ユーザーが「}」などの終了文字を入力すると、中かっこの一致は対応する開始文字 ("{" など) を強調表示します。 囲む文字が複数のレベルにある場合、この機能を使用すると、囲む文字が正しくペアになっていることをユーザーが確認できます。<br /><br /> MPF のこの機能の詳細については、「[レガシ言語サービスでのブレースの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)」を参照してください。|
-|パラメータ情報ツールチップ|ユーザーが現在入力しているオーバーロードされたメソッドのシグネチャの一覧を表示します。<br /><br /> 一般的な情報については、「[レガシ言語サービスのパラメータ情報](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)」を参照してください。<br /><br /> MPF のこの機能の詳細については、「[レガシ言語サービスのパラメーター情報](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)」を参照してください。|
-|エラー マーカー|構文が正しくないテキストの下に、波状の赤い下線 (波線とも呼ばれる) を表示します。 エラー マーカーは、通常、ユーザーに、スペルミスのキーワード、閉じられていないかっこ、無効な文字、および類似のエラーをユーザーに知させるために使用されます。<br /><br /> MPF クラスでは、エラー マーカーはクラスの<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A>メソッドで自動的に<xref:Microsoft.VisualStudio.Package.AuthoringSink>処理されます。|
+|構文の色分け表示|エディタービューで、言語のさまざまな要素に対して異なる色とフォントスタイルを表示します。 このような違いにより、ファイルの読み取りと編集が容易になります。<br /><br /> 一般的な情報については、「 [従来の言語サービスの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)表示」を参照してください。<br /><br /> Managed package framework (MPF) のこの機能の詳細については、「 [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。|
+|ステートメント入力候補|ユーザーが入力を開始したステートメントまたはキーワードを完了します。 ステートメント入力候補を使用すると、入力が少なく、エラーが発生する可能性が少なくなるため、ユーザーは複雑なステートメントを簡単に入力できます。<br /><br /> 一般的な情報については、「 [従来の言語サービスでのステートメント入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)」を参照してください。<br /><br /> MPF のこの機能の詳細については、「 [従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)」を参照してください。|
+|かっこの一致|中かっこなどのペアの文字を強調表示します。 ユーザーが "}" などの終了文字を入力すると、かっこの照合では、対応する開始文字 ("{" など) が強調表示されます。 囲み文字が複数ある場合、この機能を使用すると、ユーザーは、囲んでいる文字が正しくペアになっていることを確認できます。<br /><br /> MPF のこの機能の詳細については、「 [従来の言語サービスでの中かっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)」を参照してください。|
+|パラメーター情報のヒント|ユーザーが現在入力しているオーバーロードされたメソッドに使用できるシグネチャの一覧を表示します。<br /><br /> 一般的な情報については、「 [従来の言語サービスのパラメーターヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)」を参照してください。<br /><br /> MPF のこの機能の詳細については、「 [従来の言語サービスのパラメーターヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)」を参照してください。|
+|エラーマーカー|構文が間違っているテキストの下に赤い波線 (波線) を表示します。 通常、エラーマーカーは、スペルが間違っているキーワード、閉じていないかっこ、無効な文字、および類似したエラーをユーザーに認識させるために使用されます。<br /><br /> MPF クラスでは、エラーマーカーはクラスのメソッドで自動的に処理され <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink> ます。|
 
- これらの機能の多くは、ソース コードを解析するために言語サービスを必要とします。 多くの場合、コンパイラまたはインタプリタのトークン化と解析のコードを再利用できます。
+ これらの機能の多くでは、言語サービスでソースコードを解析する必要があります。 多くの場合、コンパイラまたはインタープリターのトークン化と解析コードを再利用できます。
 
- 以下の機能は、プログラミング言語のサポートに関連していますが、言語サービスには含まれません。
+ 次の機能は、プログラミング言語のサポートに関連していますが、言語サービスには含まれていません。
 
 | 機能 | 説明 |
 |-----------------------| - |
-| 式エバリュエーター | ブレークポイントを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]検証し **、Autos**デバッグ ウィンドウに表示される式の一覧を指定することで、デバッガーをサポートします。<br /><br /> 詳細については、「[デバッグ用の言語サービス サポート](../../extensibility/internals/language-service-support-for-debugging.md)」を参照してください。 |
-| シンボル参照ツール | **オブジェクト ブラウザ**、**クラス ビュー**、**呼び出しブラウザ**、および**シンボル結果の検索**をサポートしています。 |
+| 式エバリュエーター | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ブレークポイントを検証し、[**自動変数**デバッグ] ウィンドウに表示される式の一覧を指定することにより、デバッガーをサポートします。<br /><br /> 詳細については、「 [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)」を参照してください。 |
+| シンボル参照ツール | **シンボル結果**の**オブジェクトブラウザー**、**クラスビュー**、**呼び出しブラウザー**、および検索をサポートします。 |

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e21f266cc0dea39cfbaba660ef3557af6023c104
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536124"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
@@ -45,7 +45,7 @@ Manifest to Code ツールは、Visual Studio イメージサービスの imagem
 
 - ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: VSCT/imageidclass: MyImageIds
 
-## <a name="notes"></a>メモ
+## <a name="notes"></a>Notes
 
 - このツールは、Manifest from Resources ツールで生成されたイメージマニフェストと共に使用することをお勧めします。
 

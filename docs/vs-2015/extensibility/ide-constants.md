@@ -17,80 +17,80 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204041"
 ---
 # <a name="ide-constants"></a>IDE 定数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-<xref:Microsoft.VisualStudio.VSConstants>クラスは、統合開発環境 (IDE) に固有し、ヘッダー ファイルでのみを以前に定義された定数を提供します。  
+クラスは、 <xref:Microsoft.VisualStudio.VSConstants> 以前にヘッダーファイルでのみ定義されていた統合開発環境 (IDE) に固有の定数を提供します。  
   
-## <a name="logical-and-physical-views"></a>論理および物理ビュー  
-  
-|値|説明|  
-|-----------|-----------------|  
-|[LOGVIEWID_Code_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.code_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、この例では、選択可能なコード ビュー。|  
-|[LOGVIEWID_Debugging_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.debugging_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、ここで設定可能な限り<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>デバッグ ビューと同じビューにマップされる<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>。|  
-|[LOGVIEWID_Designer_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.designer_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、この場合**ビュー フォーム**デザイナーのビュー。|  
-|[LOGVIEWID_Primary_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.primary_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、この場合、エディター ファクトリの既定/プライマリ ビュー。|  
-|[LOGVIEWID_TextView_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.textview_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、このドキュメントまたはデータのテキスト エディターの表示。|  
-|[LOGVIEWID_UserChooseView_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.userchooseview_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>メソッドを使用するユーザー定義ビューを選択するユーザーを求められます。|  
-  
-## <a name="editor-factory-flags"></a>エディター ファクトリ フラグ  
+## <a name="logical-and-physical-views"></a>論理ビューと物理ビュー  
   
 |値|説明|  
 |-----------|-----------------|  
-|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|最初のパラメーターとしてには、ビットごとに、古いフラグが結合、<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッド。|  
-|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|最初のパラメーターのビットごとに結合、<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッド、エディター ファクトリが必要な修正プログラムを実行する必要がありますこれを示します。|  
-|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|最初のパラメーターのビットごとに結合、<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッドでは、このフラグは、相互排他の[CEF します。CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)します。|  
-|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|最初のパラメーターのビットごとに結合、<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッド、エディター ファクトリは、ユーザー インターフェイス (UI) を表示せず、エディターを作成する必要がありますこれを示します。|  
+|[LOGVIEWID_Code_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.code_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション**の選択] ダイアログボックス (この場合は、可能なコードビュー) を取得する必要があります。|  
+|[LOGVIEWID_Debugging_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.debugging_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して [ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> **ファイルを開くアプリケーション**の選択] ダイアログボックスを取得します。この場合は、 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> と同じビューにマップされるデバッグビューが設定され <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> ます。|  
+|[LOGVIEWID_Designer_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.designer_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション**の選択] ダイアログボックス (この場合は**フォーム**デザイナービュー) を取得します。|  
+|[LOGVIEWID_Primary_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.primary_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション**の選択] ダイアログボックス (この場合は、エディターファクトリの既定/プライマリビュー) を取得します。|  
+|[LOGVIEWID_TextView_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.textview_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>ハンドラーは、この `cmdidOpenWith` 値をメソッドに渡して [ファイル <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> **を開くアプリケーション** の選択] ダイアログボックスを取得します。これは、ドキュメントエディターまたはデータテキストエディタービューに使用します。|  
+|[LOGVIEWID_UserChooseView_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.userchooseview_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> ユーザーが使用するユーザー定義ビューを選択するように要求します。|  
+  
+## <a name="editor-factory-flags"></a>エディターファクトリフラグ  
+  
+|値|説明|  
+|-----------|-----------------|  
+|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|メソッドの最初のパラメーターとしてビットごとに結合された古いフラグ <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 。|  
+|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|メソッドの最初のパラメーターとしてビットごとに結合され <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> ます。これは、エディターファクトリが必要な修正を実行することを示します。|  
+|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|メソッドの最初のパラメーターとしてビットごと <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> に結合されます。このフラグは、Cef と相互に排他的です [。CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)。|  
+|[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|メソッドの最初のパラメーターとしてビットごとに結合さ <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> れます。これは、エディターファクトリがユーザーインターフェイス (UI) を表示せずにエディターを作成することを示します。|  
   
 ## <a name="visual-studio-errors"></a>Visual Studio のエラー  
   
 |値|説明|  
 |-----------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|非同期動作をインターフェイスによって返される定数と対象のオブジェクト ビジーです|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|エラーの「互換性のないドキュメント データ」の Visual Studio に固有である hresult 値。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|エラーの Visual Studio に固有である hresult 値が「パッケージが読み込まれていない」ことを示します|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Visual Studio に固有である HRESULT エラーが示す、「プロジェクトは既に存在します」。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|エラーの hresult 値は、Visual Studio に固有では、"プロジェクト構成に失敗しました"ことを示します|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|エラーの Visual Studio に固有である hresult 値が「プロジェクトが読み込まれていない」ことを示します|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Visual Studio に固有である HRESULT エラーは、「ソリューション既に開いている」ことを示します|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|エラーの hresult 値は、Visual Studio に固有では、「ソリューションを開けません」ことを示します|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|配列を指定するためのパラメーターを持つビルド インターフェイスによって返される、<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput>インターフェイスが実装にのみ適用できるメソッドのすべての出力。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッドは、ドキュメントがエディターで開くことができない形式にこの値を返します。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|ユーザーが Visual Studio のウィザードの [戻る] ボタンをヒットすることを示す HRESULT 値。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|内の問題のオブジェクトが既にビジー状態である場合に、インターフェイスによって非同期動作に返される定数。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"互換性のないドキュメントデータ" の Visual Studio に固有のエラー HRESULT。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|"パッケージが読み込まれていません" ことを示す、Visual Studio に固有のエラー HRESULT。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|Visual Studio に固有のエラー HRESULT。 "プロジェクトは既に存在します" ことを示します。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|Visual Studio に固有のエラー HRESULT。 "プロジェクトの構成に失敗しました。" を示します。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|Visual Studio に固有の、"プロジェクトが読み込まれていません" を示すエラー HRESULT。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|Visual Studio に固有のエラー HRESULT。 "ソリューションは既に開いています" を示します。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|Visual Studio に固有のエラー HRESULT。 "ソリューションが開いていません" を示します。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|インターフェイスから配列を指定するためのパラメーターを持つビルドインターフェイスによって返され <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> ますが、実装では、メソッドのみをすべての出力に適用できます。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>ドキュメントの形式がエディターで開けない場合、メソッドはこの値を返します。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|ユーザーが Visual Studio ウィザードの [戻る] ボタンにヒットしたことを示す HRESULT 値。|  
   
 ## <a name="visual-studio-constants"></a>Visual Studio の定数  
   
 |値|説明|  
 |-----------|-----------------|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|エラーの Visual Studio に固有である hresult 値が「プロジェクトが転送された」ことを示します|  
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|「ツールボックス マーカー」for Visual Studio に固有である定数|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|使用して通知メッセージを配信するために Visual Studio 固有の定数、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>メソッド モダリティの先頭を示します。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|使用して通知メッセージを配信するために Visual Studio 固有の定数、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>モダリティの終了位置を示すメソッド。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|使用して通知メッセージを配信するために Visual Studio 固有の定数、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>コマンド バーのメトリックが変更されたことを示すメソッド。|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Cookie が設定されていないことを示す Visual Studio に固有の定数。|  
-|[VSITEMID します。Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|プロジェクト項目がないことを表す Visual Studio の項目の識別子です。 この値は、現在選択されていないときに使用されます。|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|プロジェクト階層のルートを表し、1 つの項目ではなく、階層全体を識別するために使用されますが、Visual Studio 項目識別子です。|
-|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|現在選択されている項目または階層のルートを含めることができますの項目を表す Visual Studio 項目の識別子です。| 
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio に固有のエラー HRESULT で、"プロジェクトが転送された" ことを示します。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|"ツールボックスマーカー" の Visual Studio に固有の定数。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|モーダルの開始を示すメソッドを介して通知メッセージをブロードキャストするために Visual Studio に固有の定数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|モーダルの終了を示すメソッドを介して通知メッセージをブロードキャストするために Visual Studio に固有の定数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>コマンドバーのメトリックが変更されたことを示すメソッドを介して通知メッセージをブロードキャストするために Visual Studio に固有の定数。|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Cookie が設定されていないことを示す Visual Studio 固有の定数。|  
+|[VSITEMID.しない](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|プロジェクト項目が存在しないことを表す Visual Studio 項目識別子。 この値は、現在選択されていない場合に使用されます。|
+|[VSITEMID.ルート](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|プロジェクト階層のルートを表す Visual Studio 項目識別子。1つの項目ではなく、階層全体を識別するために使用されます。|
+|[VSITEMID.項目](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|現在選択されている項目 (階層のルートを含むことができる項目) を表す Visual Studio の項目識別子。| 
   
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
- IDE のコンポーネントだけが選択されているでについて説明します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>を呼び出します。  
+ 選択された IDE のコンポーネントについて、などの呼び出しで説明し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> ます。  
   
 |定数|値|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
-|[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
-|[SelectionElement.StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
-|[SelectionElement.UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
-|[SelectionElement.UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
-|[SelectionElement.WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1| 
+|[SelectionElement. PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
+|[SelectionElement. StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
+|[SelectionElement. UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
+|[SelectionElement. UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
+|[SelectionElement. WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1| 
   
-## <a name="vsselelemid"></a>VSSELELEMID  
+## <a name="vsselelemid"></a>VSSELの ID  
  新しい選択状態を示すために使用される定数。  
   
 |定数|値|  
@@ -104,7 +104,7 @@ ms.locfileid: "68204041"
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|5|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|1|  
   
-## <a name="component-selector-dialog-constants"></a>コンポーネント セレクター ダイアログ定数  
+## <a name="component-selector-dialog-constants"></a>コンポーネントセレクターダイアログ定数  
   
 |定数|値|  
 |--------------|-----------|  
@@ -117,5 +117,5 @@ ms.locfileid: "68204041"
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクト システムを拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016685"
 ---
 # <a name="how-to-localize-code"></a>方法: コードをローカライズする
@@ -28,7 +29,7 @@ ms.locfileid: "86016685"
 
 1. **ソリューションエクスプローラー**で、プロジェクト項目のショートカットメニューを開き、[モジュールの**追加**] を選択し  >  **Module**ます。
 
-     [**リソースファイル**] テンプレートを選択します。
+     [ **リソースファイル** ] テンプレートを選択します。
 
     > [!NOTE]
     > Deployment Type プロパティを使用できるように、SharePoint プロジェクト項目にリソース ファイルを必ず追加します。 このプロパティは、後で必要になります。
@@ -37,13 +38,13 @@ ms.locfileid: "86016685"
 
 3. ローカライズ言語ごとに手順 1. と 2. を繰り返して、SharePoint プロジェクト項目にそれぞれのリソース ファイルを追加します。
 
-     ローカライズされた各リソース ファイルに対しては、同じ基本名にカルチャ ID を加えた名前を使用します  たとえば、ドイツ語のローカライズされたリソースに*MyAppResources.de*という名前を指定します。
+     ローカライズされた各リソース ファイルに対しては、同じ基本名にカルチャ ID を加えた名前を使用します  たとえば、ドイツ語のローカライズされたリソースに *MyAppResources.de*という名前を指定します。
 
 4. 各リソース ファイルを開いて、ローカライズされた文字列を追加します。 各ファイルで同じ文字列 ID を使用します。
 
-5. 各リソースファイルの [**展開の種類**] プロパティの値を**appglobalresource**に変更すると、各ファイルがサーバーの App_GlobalResources フォルダーに配置されます。
+5. 各リソースファイルの [ **展開の種類** ] プロパティの値を **appglobalresource** に変更すると、各ファイルがサーバーの App_GlobalResources フォルダーに配置されます。
 
-6. 各ファイルの "**ビルドアクション**" プロパティの値は、**埋め込みリソース**としてそのままにします。
+6. 各ファイルの " **ビルドアクション** " プロパティの値は、 **埋め込みリソース**としてそのままにします。
 
      埋め込みリソースはプロジェクトの DLL にコンパイルされます。
 
@@ -61,7 +62,7 @@ ms.locfileid: "86016685"
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")
     ```
 
-12. F5 キーを**押し**て、アプリケーションをビルドして実行します。
+12. F5 キーを **押し** て、アプリケーションをビルドして実行します。
 
 13. SharePoint で、表示言語を既定の言語から変更します。
 

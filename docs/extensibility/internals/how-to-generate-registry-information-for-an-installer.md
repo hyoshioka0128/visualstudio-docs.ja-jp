@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905466"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラーのレジストリ情報を生成する
@@ -24,7 +24,7 @@ ms.locfileid: "85905466"
 *RegPkg.exe*ユーティリティを使用して、マネージ VSPackage の登録マニフェストを生成できます。 マニフェストは、Windows インストーラーセットアップパッケージに組み込むことができます。 RegPkg では、 [WINDOWS インストーラー XML ツールセット](https://wixtoolset.org/)に基づいてセットアップのソースファイルに含めることができるファイルを生成することもできます。
 
 > [!IMPORTANT]
-> RegPkg では、開発システムに固有のパス名が生成されるため、RegPkg を使用するたびに、適切な Windows インストーラー書式設定されたプロパティを使用するように出力を編集する必要があります。 たとえば、値は `InprocServer32` * \<SystemFolder\>mscoree.dll*し、パスにはとを使用する必要があり *\<#filekey\>* *\<$componentkey\>* ます。 この方法で出力を調整すると、別のドライブまたは別のディレクトリに Windows がインストールされているコンピューター、ローカライズされたディレクトリ名、およびユーザーが選択できるパスがサポートされます。 詳細については、「Windows インストーラー SDK での[書式設定](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp)」を参照してください。 開発システムパスの RegPkg 規則 (たとえば、フォーム*File_ \<filename\> *のファイル id) に従う場合は、変更を減らす必要があります。
+> RegPkg では、開発システムに固有のパス名が生成されるため、RegPkg を使用するたびに、適切な Windows インストーラー書式設定されたプロパティを使用するように出力を編集する必要があります。 たとえば、値は `InprocServer32` * \<SystemFolder\>mscoree.dll*し、パスにはとを使用する必要があり *\<#filekey\>* *\<$componentkey\>* ます。 この方法で出力を調整すると、別のドライブまたは別のディレクトリに Windows がインストールされているコンピューター、ローカライズされたディレクトリ名、およびユーザーが選択できるパスがサポートされます。 詳細については、「Windows インストーラー SDK での [書式設定](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 」を参照してください。 開発システムパスの RegPkg 規則 (たとえば、フォーム*File_ \<filename\> *のファイル id) に従う場合は、変更を減らす必要があります。
 
 ## <a name="to-create-a-registration-manifest"></a>登録マニフェストを作成するには
 
@@ -181,7 +181,7 @@ ms.locfileid: "85905466"
     </Include>
     ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Vspackage の登録](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackages](../../extensibility/internals/vspackages.md)

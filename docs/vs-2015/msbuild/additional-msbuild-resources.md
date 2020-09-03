@@ -1,4 +1,4 @@
-﻿---
+---
 title: 追加の MSBuild リソース | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -600,10 +600,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa25e4e15406c9091e90dfd8be5c2efd0a19e41b
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445052"
 ---
 # <a name="additional-msbuild-resources"></a>追加の MSBuild リソース
@@ -612,7 +612,7 @@ ms.locfileid: "81445052"
 問題を解決しようとした場合にドキュメントで必要な情報が見つからないときは、サポート技術情報の文書、開発者コミュニティ、製品サポートなど、他のリソースを参照してください。  
   
 ## <a name="knowledge-base-articles"></a>サポート技術情報の文書  
- サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 [サポート](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)情報 Web サイトのサポート技術情報の記事にアクセスできます。  
+ サポート技術情報 (KB) で、製品の問題に関する文書をオンラインで検索できます。 問題に該当する KB の文書が存在しないこともありますが、多数のユーザーが経験したエラーについては、その多くが文書化されています。 [サポート技術情報](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)の Web サイトでは、サポート技術情報の記事にアクセスできます。  
   
 ## <a name="community-forums"></a>コミュニティ フォーラム  
  フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。 Visual Studio MSBuild フォーラムには、[MSDN フォーラム](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)の Web サイトでアクセスできます。  

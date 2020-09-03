@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a585aa64fec565a58a3af245ff3d3beaa9dc8af3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173929"
 ---
 # <a name="design-warnings"></a>デザインの警告
@@ -93,6 +93,6 @@ ms.locfileid: "84173929"
 | [CA1066: Equals をオーバーライドする際に IEquatable を実装します](../code-quality/ca1066.md) | 値型は <xref:System.Object.Equals%2A> メソッドをオーバーライドしますが、はを実装しません <xref:System.IEquatable%601> 。 |
 | [CA1067: IEquatable を実装するときに Equals をオーバーライドします](../code-quality/ca1067.md) | 型はを実装し <xref:System.IEquatable%601> ますが、メソッドをオーバーライドしません <xref:System.Object.Equals%2A> 。 |
 | [CA1068:CancellationToken パラメーターは最後に指定する必要があります](../code-quality/ca1068.md) | メソッドに、最後のパラメーターではない CancellationToken パラメーターが指定されています。 |
-| [CA1069: 列挙型には重複する値を指定することはできません](../code-quality/ca1069.md) | 列挙には、同じ定数値が明示的に割り当てられている複数のメンバーがあります。 |
-| [CA1070: イベントフィールドを仮想として宣言しません](../code-quality/ca1070.md) | [フィールドに似たイベント](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)が virtual として宣言されました。 |
+| [CA1069: 列挙型には重複する値を指定できません](../code-quality/ca1069.md) | 列挙には、同じ定数値が明示的に割り当てられている複数のメンバーがあります。 |
+| [CA1070: イベント フィールドを virtual として宣言しません](../code-quality/ca1070.md) | [フィールドに似たイベント](/dotnet/csharp/language-reference/language-specification/classes#field-like-events)が virtual として宣言されました。 |
 | [CA2210:アセンブリには有効な厳密な名前が必要です](../code-quality/ca2210.md) | 厳密な名前によって、改ざんされたアセンブリを、クライアントが無意識のうちに読み込む問題を防ぐことができます。 厳密な名前のないアセンブリが配置される状況は、限定されます。 適切に署名されていないアセンブリを共有または配布すると、アセンブリが改ざんされる場合、共通言語ランタイムでアセンブリを読み込むことができない場合、またはユーザーのコンピューターで検証を無効にする必要がある場合などの問題が考えられます。 |

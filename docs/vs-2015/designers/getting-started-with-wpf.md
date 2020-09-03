@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b005b55e0079b7db6486a8cde08f81f62ac7399
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542039"
 ---
 # <a name="getting-started-with-wpf"></a>WPF の概要
@@ -31,5 +31,5 @@ Windows Presentation Foundation (WPF) は、デスクトップ クライアン�
 |WPF の詳細な説明...|[WPF の概要](../designers/introduction-to-wpf.md)<br /><br /> [XAML の概要 (WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [コントロール](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [データ バインディングの概要](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml.md)|
 |Windows フォームの開発者向け|[Windows フォーム コントロールおよび同等の WPF コントロール](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [WPF と Windows フォームの相互運用性に関してサポートするシナリオ](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [クラスライブラリ (WPF)](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx) [アプリケーション開発の概要](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx) [.NET Framework Developer Center](https://dotnet.microsoft.com/) [で Windows Presentation Foundation を使用して最新のデスクトップアプリケーションを作成する](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

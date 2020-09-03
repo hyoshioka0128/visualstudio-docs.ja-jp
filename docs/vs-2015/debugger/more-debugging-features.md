@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300532"
 ---
 # <a name="more-debugging-features"></a>その他のデバッグ機能
@@ -28,7 +28,7 @@ ms.locfileid: "74300532"
   
  デバッグを迅速かつ容易に行うためのヒントとテクニックの一覧については、「 [デバッグのヒントとテクニック](https://devblogs.microsoft.com/visualstudio/debugging-tips-and-tricks/)」をご覧ください。  
   
-## <a name="additional-features"></a>その他の機能  
+## <a name="additional-features"></a>追加機能  
  [デバッグ中にXAML のプロパティを調べる](../debugger/inspect-xaml-properties-while-debugging.md)  
  **Live Visual Tree** と **Live Property Explorer** ツールの使用方法について説明します。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "74300532"
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)  
  さまざまなデバッグ ウィンドウについて説明します。  
   
- [Just-In-Time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)  
+ [Just-in-time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Just-In-Time デバッグについて説明します。Visual Studio の外部での実行時にプログラムがクラッシュした場合、デバッガーを自動的に起動できます。  
   
  [チュートリアル: デザイン時のデバッグ](../debugger/walkthrough-debugging-at-design-time.md)  
@@ -47,7 +47,7 @@ ms.locfileid: "74300532"
  [エディット コンティニュ](../debugger/edit-and-continue.md)  
  エディット コンティニュについて説明し、この機能の有効と無効を切り替える方法を示します。エディット コンティニュを使用すると、中断モードになっているプログラムのソース コードを変更し、デバッグ セッションを終了したりプログラムを再度ビルドしたりせずにその変更内容を適用できます。  
   
- [ダンプファイルの使用](../debugger/using-dump-files.md)保存および開く手順を含む、ダンプファイルについて説明します。 ダンプ ファイルには、ある時点 (通常、クラッシュ後) におけるプログラム状態のスナップショットが含まれます。 ソース ファイルまたは PDB がインストールされていないコンピューターでプログラムをテストしている場合、クラッシュが発生したときにダンプ ファイルを保存します。そのダンプ ファイルを使用して、ソース ファイルと PDB がインストールされているビルド コンピューターで、クラッシュの原因をデバッグします。 
+ [ダンプファイルの使用](../debugger/using-dump-files.md) 保存および開く手順を含む、ダンプファイルについて説明します。 ダンプ ファイルには、ある時点 (通常、クラッシュ後) におけるプログラム状態のスナップショットが含まれます。 ソース ファイルまたは PDB がインストールされていないコンピューターでプログラムをテストしている場合、クラッシュが発生したときにダンプ ファイルを保存します。そのダンプ ファイルを使用して、ソース ファイルと PDB がインストールされているビルド コンピューターで、クラッシュの原因をデバッグします。 
   
  [方法: 非表示のデバッガー コマンドを復元する](../debugger/how-to-restore-hidden-debugger-commands.md)  
  IDE の既定の設定によって非表示にされているデバッガー コマンドを表示する方法について説明します。

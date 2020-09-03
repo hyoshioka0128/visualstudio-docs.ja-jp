@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField |Microsoft Docs
+title: 'IDebugPointerField:: GetDereferencedField |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02197f660189d4caf374fc5927f349fd5fc6b8b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201014"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、このポインター オブジェクトが指すオブジェクトの型を返します。  
+このメソッドは、このポインターオブジェクトが指すオブジェクトの型を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,14 +40,14 @@ int GetDereferencedField(
   
 #### <a name="parameters"></a>パラメーター  
  `ppField`  
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)ターゲット オブジェクトの型を記述します。  
+ 入出力対象オブジェクトの型を記述する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 例については、場合、 [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)オブジェクトが、整数を指す、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)このメソッドによって返される型が整数型について説明します。  
+## <a name="remarks"></a>注釈  
+ たとえば、 [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) オブジェクトが整数を指している場合、このメソッドによって返される [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 型によってその整数型が記述されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200906"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この関数は、現在開いているプロジェクトをソース管理からファイルの一覧を追加します。  
+この関数は、ソース管理から現在開いているプロジェクトにファイルの一覧を追加します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,42 +42,42 @@ SCCRTN SccAddFilesFromSCC(
   
 #### <a name="parameters"></a>パラメーター  
  pContext  
- [in]ソース管理プラグインのコンテキストのポインター。  
+ からソース管理プラグインのコンテキストポインター。  
   
  hWnd  
- [in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。  
+ からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。  
   
  lpUser  
- [入力、出力] (最大 SCC_USER_SIZE、null 終端文字を含む) ユーザー名。  
+ [入力、出力]ユーザー名 (null 終端文字を含む SCC_USER_SIZE まで)。  
   
  lpAuxProjPath  
- [入力、出力]プロジェクトを識別する、補助型の文字列 (最大`SCC_PRJPATH_`サイズは、null 終端文字を含めて)。  
+ [入力、出力]プロジェクトを識別する補助文字列 ( `SCC_PRJPATH_` null 終端文字を含む、最大サイズまで)。  
   
  cFiles  
- [in]指定されたファイルの数`lpFilePaths`します。  
+ からによって指定されたファイルの数 `lpFilePaths` 。  
   
  lpFilePaths  
  [入力、出力]現在のプロジェクトに追加するファイル名の配列。  
   
  lpDestination  
- [in]ファイルが書き込まれる先のパス。  
+ からファイルの書き込み先のパス。  
   
  lpComment  
- [in]追加されるファイルのそれぞれに適用されるコメントです。  
+ から追加する各ファイルに適用されるコメント。  
   
  pbResults  
- [入力、出力]エラーまたは (0 以外の場合、または TRUE) に成功した場合に設定できるフラグの配列 (0 または FALSE) ファイルごとに (配列のサイズは以上である必要があります`cFiles`長い)。  
+ [入力、出力]各ファイルに対して成功 (0 以外または TRUE) または失敗 (0 または FALSE) を示すフラグの配列 (配列のサイズは、少なくとも long である必要があり `cFiles` ます)。  
   
 ## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|プロジェクトが開いていません。|  
-|SCC_E_OPNOTPERFORMED|接続では、同じプロジェクトで指定したとおりにありません。 `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|ユーザーは、データベースを更新する権限がありません。|  
+|SCC_E_OPNOTPERFORMED|接続は、によって指定されたプロジェクトと同じではありません `lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|ユーザーには、データベースを更新する権限がありません。|  
 |SCC_E_NONSPECIFICERROR|不明なエラー。|  
-|SCC_I_RELOADFILE|ファイルまたはプロジェクトを再読み込みする必要があります。|  
+|SCC_I_RELOADFILE|ファイルまたはプロジェクトを再度読み込む必要があります。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

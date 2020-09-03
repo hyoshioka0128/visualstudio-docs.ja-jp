@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542858"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Visual Studio での ストア アプリの単体テストの実行
@@ -34,7 +34,7 @@ ms.locfileid: "85542858"
 
  [テスト エクスプローラーでテストを実行する](#BKMK_Running_tests_in_Test_Explorer)
 
-- [テストの実行](#BKMK_Running_tests)
+- [テストを実行する](#BKMK_Running_tests)
 
   [テスト結果の表示](#BKMK_Viewing_test_results)
 
@@ -53,7 +53,7 @@ ms.locfileid: "85542858"
 ## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 単体テスト フレームワークとテスト プロジェクト
  Visual Studio Express for Windows Store Apps には、マネージド コードとネイティブ C++ コード用の Microsoft 単体テスト フレームワークが含まれています。 テスト エクスプローラーは、ソリューション内の複数のテスト プロジェクト、および運用コード プロジェクトに含まれるテスト クラスからテストを実行できます。 テスト プロジェクトには、Visual C++ または Visual C# と Visual Basic の単体テスト フレームワークを自由に組み合わせることができます。 テスト対象のコードを .NET Framework 用に記述する場合、対象コードの言語にかかわらず、テスト プロジェクトをどの .NET Framework 言語でも記述できます。 ネイティブ C/C++ コード プロジェクトは、C++ の単体テスト フレームワークを使用してテストする必要があります。
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>テストエクスプローラーでのテストの実行
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> テストエクスプローラーでのテストの実行
  テスト プロジェクトをビルドすると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
  ![単体テスト エクスプローラー](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,18 +64,18 @@ ms.locfileid: "85542858"
 
  ![テスト エクスプローラー ツールバーからテストを実行](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>テストの実行
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> テストの実行
  ソリューション内のすべてのテスト、グループ内のすべてのテスト、または選択した一連のテストを実行できます。 次のいずれかの操作を行います。
 
 - ソリューション内のすべてのテストを実行するには、 **[すべて実行]** をクリックします。
 
-- 既定のグループ内のすべてのテストを実行するには、[**実行.** ..] を選択し、メニューの [グループ] を選択します。
+- 既定のグループ内のすべてのテストを実行するには、[ **実行.** ..] を選択し、メニューの [グループ] を選択します。
 
 - 実行する個々のテストを選択し、選択したテストのショートカット メニューを開いて、**[選択したテストの実行]** を選択します。
 
   テストの実行中、テスト エクスプローラー ウィンドウの一番上にある成功/失敗ステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテストが成功した場合は、成功/失敗ステータス バーが緑色に変わり、いずれかのテストが失敗した場合は、赤色に変わります。
 
-## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>テスト結果の表示
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a> テスト結果の表示
  テストを実行して、記述し、再実行すると、テスト エクスプローラーに **[失敗したテスト]** 、 **[成功したテスト]** 、 **[スキップされたテスト]** 、および **[テストを実行しない]** のグループの結果が表示されます。 テスト エクスプローラーの下部の詳細ペインに、テストの実行の概要が表示されます。
 
 ### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> テストの詳細を表示する

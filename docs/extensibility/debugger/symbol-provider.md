@@ -1,5 +1,5 @@
 ---
-title: シンボルプロバイダー |マイクロソフトドキュメント
+title: シンボルプロバイダー |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712821"
 ---
-# <a name="symbol-provider"></a>シンボル プロバイダー
-式エバリュエーターの実装は、変数と式を評価するために、言語コンパイラによって生成されたシンボリック デバッグ情報にアクセスする必要があります。 これは、シンボル・ハンドラーとも呼ばれるシンボル・プロバイダー (SP) のインターフェースを使用することによって行われます。
+# <a name="symbol-provider"></a>シンボルプロバイダー
+式エバリュエーターの実装は、変数と式を評価するために、言語コンパイラによって生成されるシンボリックデバッグ情報にアクセスする必要があります。 これを行うには、シンボルプロバイダー (SP) のインターフェイスを使用します。これは、シンボルハンドラーとも呼ばれます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、プログラムのデータ ベース (PDB) シンボル ファイル形式を使用して、マネージ コードとネイティブ コードの SP を提供します。 プログラムでカスタム形式で保存されたシンボルを使用する必要が強い場合を除き、 によって[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供される SP を使用することをお勧めします。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] マネージコード用の Sp と、プログラムデータベース (PDB) シンボルファイル形式を使用するネイティブコードを提供します。 カスタム形式で格納されているシンボルをプログラムで使用する必要がある場合を除き、によって提供される SPs を使用することをお勧め [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。
 
 ## <a name="implementation-notes"></a>実装に関するメモ
- デバッグ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]エンジンは、共通言語ランタイム (CLR) インターフェイスを使用して SP と対話することを期待します。 その結果、Visual Studio のデバッグ エンジンで動作する SP が CLR をサポートしている必要があります。 すべての CLR デバッグ インターフェイスの完全な一覧は、 の一部である debugref.doc にあります[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグエンジンは、共通言語ランタイム (CLR) インターフェイスを使用して SPs と通信することを想定しています。 そのため、Visual Studio デバッグエンジンで動作する SP は、CLR をサポートしている必要があります。 すべての CLR デバッグインターフェイスの完全な一覧については、「」の一部である debugref.doc を参照 [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] してください。
 
- SP がカスタム デバッグ エンジンでのみ動作する場合は、デバッグ エンジンのニーズに応じて、SP を適切に実装できます。
+ SP がカスタムデバッグエンジンでのみ動作する場合は、デバッグエンジンのニーズに応じて、必要に応じて SP を実装できます。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)
+- [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)

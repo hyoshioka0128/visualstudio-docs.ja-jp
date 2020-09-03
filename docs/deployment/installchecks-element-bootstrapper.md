@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536306"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; 要素 (ブートストラップ)
@@ -78,13 +78,13 @@ ms.locfileid: "85536306"
 |`Name`|必須。 確認するアセンブリの完全修飾名。|
 |`PublicKeyToken`|必須。 この厳密な名前を持つアセンブリに関連付けられている公開キーの省略形。 GAC に格納されているすべてのアセンブリは、名前、バージョン、および公開キーを持っている必要があります。|
 |`Version`|必須。 アセンブリのバージョン。<br /><br /> バージョン番号の形式は... \<*major version*> \<*minor version*> \<*build version*> \<*revision version*> です。|
-|`Language`|省略可能。 ローカライズされたアセンブリの言語。 既定値は `neutral` です。|
-|`ProcessorArchitecture`|省略可能。 このインストールの対象となるコンピュータープロセッサ。 既定値は `msil` です。|
+|`Language`|省略可能。 ローカライズされたアセンブリの言語。 既定値は `neutral`です。|
+|`ProcessorArchitecture`|省略可能。 このインストールの対象となるコンピュータープロセッサ。 既定値は `msil`です。|
 
 ## <a name="externalcheck"></a>ExternalCheck
- この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `ExternalCheck` 指定された外部プログラムを別のプロセスで実行し、によって示されるプロパティにその終了コードを格納し `Property` ます。 `ExternalCheck`は、複雑な依存関係のチェックを実装する場合や、コンポーネントの存在を確認する唯一の方法が、インスタンスをインスタンス化する場合に便利です。
+ この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `ExternalCheck` 指定された外部プログラムを別のプロセスで実行し、によって示されるプロパティにその終了コードを格納し `Property` ます。 `ExternalCheck` は、複雑な依存関係のチェックを実装する場合や、コンポーネントの存在を確認する唯一の方法が、インスタンスをインスタンス化する場合に便利です。
 
- `ExternalCheck`には要素が含まれておらず、には次の属性があります。
+ `ExternalCheck` には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
@@ -95,7 +95,7 @@ ms.locfileid: "85536306"
 ## <a name="filecheck"></a>FileCheck
  この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `FileCheck` 指定されたファイルが存在するかどうかを判断し、そのファイルのバージョン番号を返します。 ファイルにバージョン番号がない場合、ブートストラップはによって指定されたプロパティを `Property` 0 に設定します。 ファイルが存在しない場合、 `Property` は何の値にも設定されません。
 
- `FileCheck`には要素が含まれておらず、には次の属性があります。
+ `FileCheck` には要素が含まれておらず、には次の属性があります。
 
 | 属性 | 説明 |
 |-----------------| - |
@@ -108,7 +108,7 @@ ms.locfileid: "85536306"
 ## <a name="msiproductcheck"></a>MsiProductCheck
  この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `MsiProductCheck` 指定した Microsoft Windows インストーラーのインストールが完了するまで実行されているかどうかを確認します。 プロパティ値は、インストールされている製品の状態に応じて設定されます。 正の値は、製品がインストールされていることを示します。0または-1 は、インストールされていないことを示します。 (詳細については、Windows インストーラー SDK 関数 MsiQueryFeatureState を参照してください)。. コンピューターに Windows インストーラーがインストールされていない場合、 `Property` は設定されません。
 
- `MsiProductCheck`には要素が含まれておらず、には次の属性があります。
+ `MsiProductCheck` には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
@@ -119,28 +119,28 @@ ms.locfileid: "85536306"
 ## <a name="registrycheck"></a>RegistryCheck
  この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについ `RegistryCheck` て、指定されたレジストリキーが存在するかどうか、または指定された値があるかどうかを確認します。
 
- `RegistryCheck`には要素が含まれておらず、には次の属性があります。
+ `RegistryCheck` には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
 |`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
 |`Key`|必須。 レジストリ キーの名前。|
-|`Value`|省略可能。 取得するレジストリ値の名前です。 既定では、既定値のテキストが返されます。 `Value`文字列または DWORD のいずれかである必要があります。|
+|`Value`|省略可能。 取得するレジストリ値の名前です。 既定では、既定値のテキストが返されます。 `Value` 文字列または DWORD のいずれかである必要があります。|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、指定された `RegistryFileCheck` ファイルのバージョンを取得します。最初に、指定したレジストリキーからファイルへのパスを取得しようとします。 これは、レジストリで値として指定されたディレクトリ内のファイルを検索する場合に特に便利です。
 
- `RegistryFileCheck`には要素が含まれておらず、には次の属性があります。
+ `RegistryFileCheck` には要素が含まれておらず、には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
 |`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、要素の子である、要素の下にあるテストから参照でき `InstallConditions` `Command` ます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
 |`Key`|必須。 レジストリ キーの名前。 属性が設定されていない場合、その値はファイルへのパスとして解釈され `File` ます。 このキーが存在しない場合、 `Property` は設定されません。|
-|`Value`|省略可能。 取得するレジストリ値の名前です。 既定では、既定値のテキストが返されます。 `Value`は文字列である必要があります。|
+|`Value`|省略可能。 取得するレジストリ値の名前です。 既定では、既定値のテキストが返されます。 `Value` は文字列である必要があります。|
 |`FileName`|省略可能。 ファイルの名前。 指定した場合、レジストリキーから取得した値はディレクトリパスと見なされ、この名前が追加されます。 指定しない場合、レジストリから返される値は、ファイルへの完全パスであると見なされます。|
 |`SearchDepth`|省略可能。 名前付きファイルのサブフォルダーを検索する深さ。 検索は深さ優先です。 既定値は0で、レジストリキーの値によって指定された最上位フォルダーまで検索を制限します。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  の下にある要素は、 `InstallChecks` 実行するテストを定義しますが、実行されません。 テストを実行するには、要素の下に要素を作成する必要があり `Command` `Commands` ます。
 
 ## <a name="example"></a>例
@@ -180,5 +180,5 @@ ms.locfileid: "85536306"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<Commands>element](../deployment/commands-element-bootstrapper.md)
+- [\<Commands> element](../deployment/commands-element-bootstrapper.md)
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

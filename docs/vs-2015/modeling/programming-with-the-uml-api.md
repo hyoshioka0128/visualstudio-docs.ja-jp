@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852128"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API を使用したプログラミング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の UML API を使用すると、UML モデルおよび図を作成、読み取り、および更新するためのコードを記述できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+Visual Studio の UML API を使用すると、UML モデルおよび図の生成、読み取り、および更新を実行するためのコードを作成できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
  API については、API リファレンス ページのほか、次のトピックで説明されています。
 
@@ -51,12 +51,12 @@ Visual Studio の UML API を使用すると、UML モデルおよび図を作�
 ## <a name="the-api-assemblies"></a>API アセンブリ
  この表は、UML ツールに機能拡張をもたらすアセンブリと、推奨される名前空間を示します。
 
-|Assembly|名前空間|アクセス先|
+|アセンブリ|名前空間|アクセス先|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(すべて)|UML の種類|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio (Microsoft. アーキテクチャのアーキテクチャ)|[作成方法](../modeling/create-elements-and-relationships-in-uml-models.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[ダイアグラムと図形](../modeling/display-a-uml-model-on-diagrams.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[モデリングプロジェクト](../modeling/read-a-uml-model-in-program-code.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[図と図形](../modeling/display-a-uml-model-on-diagrams.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[モデリング プロジェクト](../modeling/read-a-uml-model-in-program-code.md)|
 |Microsoft.VisualStudio.Modeling.Sdk.[バージョン]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[メニューコマンドの拡張機能](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。<br /><br /> リンクされた[元に戻すトランザクション](../modeling/link-uml-model-updates-by-using-transactions.md)。|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[検証](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(その他の名前空間)|高度な用途向け|

@@ -22,16 +22,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535539"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>高性能コンピューティング (HPC) クラスターでのプロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsPreExt](../includes/vspreext-md.md)] プロファイリング ツールまたは [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] プロファイリング ツールのサンプリング メソッドを使用して、Microsoft Windows HPC クラスターの計算ノード上でプロファイリングを実行できます。 HPC の詳細については、Microsoft Web サイトの「[ビッグコンピューティング: hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) 」を参照してください。  
+[!INCLUDE[vsPreExt](../includes/vspreext-md.md)] プロファイリング ツールまたは [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] プロファイリング ツールのサンプリング メソッドを使用して、Microsoft Windows HPC クラスターの計算ノード上でプロファイリングを実行できます。 HPC の詳細については、Microsoft Web サイトの「 [ビッグコンピューティング: hpc & Batch](https://azure.microsoft.com/solutions/big-compute/) 」を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  HPC 計算ノード上でプロファイリングを実行する前に、次の操作を実行する必要があります。  

@@ -1,5 +1,5 @@
 ---
-title: グループ要素 |マイクロソフトドキュメント
+title: Group 要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711229"
 ---
 # <a name="group-element"></a>Group 要素
-VSPackage コマンド グループを定義します。
+VSPackage コマンドグループを定義します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,23 +36,23 @@ VSPackage コマンド グループを定義します。
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須。 GUID/ID コマンド識別子の GUID です。|
-|id|必須。 GUID/ID コマンド ID の ID。|
-|priority|省略可能。 優先順位を指定する数値。|
-|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|guid|必須です。 GUID/ID コマンド識別子の GUID。|
+|id|必須です。 GUID/ID コマンド識別子の ID。|
+|priority|省略可能。 優先度を示す数値です。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
 |Parent|省略可能。 ボタンの親要素。|
-|Annotation|オプションのコメント。|
+|Annotation|コメント (省略可能)。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[Groups 要素](../extensibility/groups-element.md)|VSPackage のコマンド グループを定義するエントリが含まれています。|
+|[Groups 要素](../extensibility/groups-element.md)|VSPackage のコマンドグループを定義するエントリが含まれています。|
 
 ## <a name="example"></a>例
 
@@ -63,4 +63,4 @@ VSPackage コマンド グループを定義します。
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

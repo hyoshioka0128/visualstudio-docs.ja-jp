@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284959"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>ヘルプ ビューアーのインデックスの使用によるトピックの検索
@@ -35,7 +35,7 @@ ms.locfileid: "85284959"
     タブの上部にあるフィルター ボタンを選ぶと、指定したテキストを含むすべてのエントリ、または指定したテキストで始まるエントリだけを表示できます。
 
     > [!NOTE]
-    > [フィルター] ボタンが境界線のある濃い色の背景に表示されている場合は、指定したテキストがエントリに_含ま_れている必要があります。 背景と境界線が表示されない場合、エントリは指定したテキスト_で始まる_必要があります。
+    > [フィルター] ボタンが境界線のある濃い色の背景に表示されている場合は、指定したテキストがエントリに _含ま_ れている必要があります。 背景と境界線が表示されない場合、エントリは指定したテキスト _で始まる_ 必要があります。
 
 - インデックスをスクロールし、キーワードを選びます。
 

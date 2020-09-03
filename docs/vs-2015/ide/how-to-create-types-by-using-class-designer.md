@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533147"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>方法: クラス デザイナーを使用して型を作成する
@@ -36,7 +36,7 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
 
 - [カスタム属性を型のメンバーに適用する](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>新しい型を作成する
+## <a name="create-a-new-type"></a><a name="CreateType"></a> 新しい型を作成する
 
 1. クラス デザイナーのツールボックスから、いずれかをクラス ダイアグラムにドラッグします。
 
@@ -50,7 +50,7 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
 
     - **Delegate**
 
-    - **モジュール**(VB のみ)
+    - **モジュール** (VB のみ)
 
 2. 型の名前を付けます。 それからアクセス レベルを選択します。
 
@@ -69,8 +69,8 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
     |クラス、抽象クラス、構造体|型を定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、デストラクター (メソッド)、および定数|
     |列挙型|列挙型を構成するフィールド値|
     |インターフェイス|インターフェイスを構成するメソッド、プロパティ、イベント|
-    |Delegate|デリゲートを定義するパラメーター|
-    |Module|モジュールを定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、および定数|
+    |代理人|デリゲートを定義するパラメーター|
+    |モジュール|モジュールを定義するメソッド、プロパティ、フィールド、イベント、コンストラクター (メソッド)、および定数|
 
      「[メンバーの作成](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)」をご覧ください。
 
@@ -84,7 +84,7 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
 
      終了後、カスタム属性が型に適用されます。
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>カスタム属性を型のメンバーに適用する
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> カスタム属性を型のメンバーに適用する
 
 1. クラス ダイアグラムの型の図形でメンバーの名前をクリックするか、[クラスの詳細] ウィンドウでその行をクリックします。
 
@@ -94,5 +94,5 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
 
      終了後、カスタム属性が型に適用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [方法: 型の間の継承を作成する (クラスデザイナー)](../ide/how-to-create-inheritance-between-types-class-designer.md) [方法: 型の間の関連付けを作成する (クラスデザイナー) 型の](../ide/how-to-create-associations-between-types-class-designer.md)[メンバーの作成と構成 (クラスデザイナー)](../ide/creating-and-configuring-type-members-class-designer.md) [クラスダイアグラムの操作 (クラスデザイナー)](../ide/working-with-class-diagrams-class-designer.md)クラス[と型のデザイン (クラスデザイナー)](../ide/designing-classes-and-types-class-designer.md)

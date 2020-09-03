@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532731"
 ---
 # <a name="function-details-view"></a>関数の詳細ビュー
@@ -73,9 +73,9 @@ ms.locfileid: "85532731"
 ## <a name="function-performance-details"></a>関数のパフォーマンスの詳細  
  [関数のパフォーマンスの詳細] 表には、選択した関数のパフォーマンス メトリックの概要データが示されます。 値と割合の両方が表示されます。 グラフと詳細表に表示するプロファイル データは、 **[パフォーマンス メトリック]** ボックスで指定します。  
   
-|Column|[説明]|  
+|Column|説明|  
 |------------|-----------------|  
-|**[Exclusive]**|-   関数本体の実行で発生したパフォーマンス メトリックの合計。|  
+|**[排他]**|-   関数本体の実行で発生したパフォーマンス メトリックの合計。|  
 |**[呼び出し内]**|-   選択した関数から呼び出された関数内で発生したパフォーマンス メトリックの合計。|  
 |**[包括の合計]**|-   **[排他]** 値と **[呼び出し内]** 値の合計。|  
   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: ヘルプビューアーのユーザー補助機能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,21 +13,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621107"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>ヘルプ ビューアーのユーザー補助機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 このトピックでは、広範な範囲の能力を持つユーザーが Microsoft ヘルプ ビューアー 2.2 をさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明します。
+Microsoft は、あらゆるユーザーの皆様に使いやすい製品とサービスをお届けできるように努めています。 このトピックでは、広範な範囲の能力を持つユーザーが Microsoft ヘルプ ビューアー 2.2 をさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明します。
 
 ## <a name="keyboard-access"></a>キーボード アクセス
  キーボードを使用してヘルプ ビューアーのすべての機能にアクセスできます。 詳細については、「[ショートカット キー (ヘルプ ビューアー)](../ide/shortcut-keys-help-viewer.md)」を参照してください。
 
-## <a name="font-size"></a>Font Size
+## <a name="font-size"></a>フォント サイズ
  トピックのテキストがドキュメント ウィンドウに表示されるときのフォント サイズを変更できます。 詳細については、「[ヘルプ ビューアーのカスタマイズ](../ide/customize-the-help-viewer.md)」を参照してください。
 
 ## <a name="window-size"></a>ウィンドウ サイズ
@@ -39,5 +39,5 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 ## <a name="internet-explorer-options"></a>Internet Explorer オプション
  Web ページがどのように表示されるかに関連する Internet Explorer オプションを変更することによって、ヘルプ ビューアーをより使いやすくすることができます。 詳細については、「[ヘルプ ビューアーのカスタマイズ](../ide/customize-the-help-viewer.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+## <a name="see-also"></a>参照
+ [Microsoft ヘルプ ビューアー](../ide/microsoft-help-viewer.md)

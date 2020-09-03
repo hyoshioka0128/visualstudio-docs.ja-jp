@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク |Microsoft Docs'
+title: 'チュートリアル: コンテンツの種類をファイル名拡張子にリンクする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201993"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-独自のコンテンツの種類を定義し、エディターの Managed Extensibility Framework (MEF) 拡張機能を使用して、ファイル名拡張子をリンクできます。 場合によっては、ファイル名拡張子が言語サービスでは; で定義されて既にそれにもかかわらず、MEF を使用してもする必要がありますをリンクするコンテンツの種類。  
+独自のコンテンツの種類を定義し、エディター Managed Extensibility Framework (MEF) 拡張機能を使用してファイル名拡張子をリンクすることができます。 場合によっては、ファイル名拡張子が言語サービスによって既に定義されていることがあります。それでも MEF で使用する場合は、コンテンツの種類にリンクする必要があります。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
-## <a name="creating-a-mef-project"></a>MEF プロジェクトを作成します。  
+## <a name="creating-a-mef-project"></a>MEF プロジェクトの作成  
   
-1. C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `ContentTypeTest`の名前を指定します。  
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `ContentTypeTest` します。  
   
-2. **Source.extension.vsixmanifest**に移動して、ファイル、**資産**タブをクリックし、設定、**型**フィールドを **[microsoft.visualstudio.mefcomponent]** 、**ソース**フィールドを**現在のソリューションでプロジェクトを**、および**プロジェクト**フィールドをプロジェクトの名前。  
+2. **Source.extension.vsixmanifest**ファイルで、[**資産**] タブにアクセスし、[**種類**] フィールドを [ **VisualStudio**] に、[**ソース**] フィールドを [現在の**ソリューションのプロジェクト**] に、[**プロジェクト**] フィールドをプロジェクトの名前に設定します。  
   
-## <a name="defining-the-content-type"></a>コンテンツの種類を定義します。  
+## <a name="defining-the-content-type"></a>コンテンツの種類の定義  
   
 1. クラス ファイルを追加し、その名前を `FileAndContentTypes`にします。  
   
@@ -39,11 +39,11 @@ ms.locfileid: "68201993"
   
     1. System.ComponentModel.Composition  
   
-    2. Microsoft.VisualStudio.Text.Logic  
+    2. VisualStudio. Logic  
   
-    3. Microsoft.VisualStudio.CoreUtility  
+    3. VisualStudio. CoreUtility  
   
-3. 次の追加`using`ディレクティブ。  
+3. 次のディレクティブを追加 `using` します。  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -59,7 +59,7 @@ ms.locfileid: "68201993"
     {. . .}  
     ```  
   
-5. このクラスは、エクスポート、<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>という名前の「非表示」と"text"をその基本定義を宣言します。  
+5. このクラスでは、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> "hid" という名前のをエクスポートし、その基本定義を "text" に宣言します。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -71,9 +71,9 @@ ms.locfileid: "68201993"
     }  
     ```  
   
-## <a name="linking-a-file-name-extension-to-a-content-type"></a>コンテンツの種類に、ファイル名拡張子をリンク  
+## <a name="linking-a-file-name-extension-to-a-content-type"></a>コンテンツタイプへのファイル名拡張子のリンク  
   
-- ファイル名拡張子には、このコンテンツの種類をマップするには、エクスポート、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ".hid"を拡張機能を持つし、コンテンツの種類"hid"。  
+- このコンテンツの種類をファイル名拡張子にマップするには、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 拡張子 ". hid" とコンテンツタイプ "hid" を持つをエクスポートします。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -90,18 +90,18 @@ ms.locfileid: "68201993"
     }  
     ```  
   
-## <a name="adding-the-content-type-to-an-editor-export"></a>エディターのエクスポートへのコンテンツの種類の追加  
+## <a name="adding-the-content-type-to-an-editor-export"></a>エディターエクスポートへのコンテンツタイプの追加  
   
-1. エディター拡張機能を作成します。 たとえばで説明されている余白のグリフの拡張機能を使用することができます[チュートリアル。余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)です。  
+1. エディター拡張機能を作成します。 たとえば、「 [チュートリアル: 余白グリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)」で説明されている余白グリフ拡張機能を使用できます。  
   
 2. この手順で定義したクラスを追加します。  
   
-3. 追加の拡張機能クラスをエクスポートするときに、<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>に"hid"型の。  
+3. 拡張クラスをエクスポートするときに、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "hid" 型のを追加します。  
   
     ```csharp  
     [Export]  
     [ContentType("hid")]  
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c668172ca318000068fb4e90f4848e456c32208d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543625"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します
@@ -53,14 +53,14 @@ ms.locfileid: "85543625"
   除外する前に、他のメッセージを慎重に確認してください。 このルールは、再現およびデバッグが困難なエラーを検出します。
 
 ## <a name="example"></a>例
- 次の例で `BadMethod` は、にの呼び出しが含まれていないため、規則に違反し `GC.KeepAlive` ます。 `GoodMethod`修正されたコードが含まれています。
+ 次の例で `BadMethod` は、にの呼び出しが含まれていないため、規則に違反し `GC.KeepAlive` ます。 `GoodMethod` 修正されたコードが含まれています。
 
 > [!NOTE]
 > この例は擬似コードですが、コードをコンパイルして実行しますが、アンマネージリソースが作成または解放されないため、警告は発生しません。
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>

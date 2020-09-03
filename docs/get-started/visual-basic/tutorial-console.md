@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579937"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
@@ -47,7 +47,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *WhatIsYourName* という名前を付けます。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *WhatIsYourName* という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -57,7 +57,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Studio インストーラーを開く]** リンクをクリックします。
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Studio インストーラーを開く]** リンクをクリックします。
 
    ![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクをクリックする](../media/vs-open-visual-studio-installer-generic.png)
 
@@ -111,7 +111,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="create-a-what-is-your-name-application"></a>"What Is Your Name" アプリケーションを作成する
 
-名前の入力を求めた後に、日付と時刻と共にそれを表示するアプリを作成してみましょう。 次の手順に従います。
+名前の入力を求めた後に、日付と時刻と共にそれを表示するアプリを作成してみましょう。 以下にその方法を示します。
 
  ::: moniker range="vs-2017"
 
@@ -175,7 +175,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開き、上部のメニュー バーから **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに *CalculateThis* という名前を付けます。
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに *CalculateThis* という名前を付けます。
 
 1. `Module Program` 行と `End Module` 行の間に次のコードを入力します。
 
@@ -212,7 +212,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. 言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   次に、 **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*CalculateThis*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+   次に、**[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*CalculateThis*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
 
 1. `Module Program` 行と `End Module` 行の間に次のコードを入力します。
 
@@ -259,7 +259,7 @@ Visual Studio は、開発者向け生産性向上ツールの統合開発スイ
 
 ### <a name="what-is-net-core"></a>.NET Core とは何ですか?
 
-.NET Core は、.NET Framework の次の進化段階です。 .NET Framework ではプログラミング言語間でコードを共有できましたが、.NET Core ではプラットフォーム間でコードを共有する機能が追加されました。 さらに良い点は、オープン ソースであるという点です (.NET Framework および .NET Core の両方にビルド済みの機能のライブラリと、コードを実行する仮想マシンとして機能する、共通言語ランタイム (CLR) が含まれています)。
+.NET Core は、.NET Framework の次の進化段階です。 .NET Framework ではプログラミング言語間でコードを共有できましたが、.NET Core ではプラットフォーム間でコードを共有する機能が追加されました。 さらに良い点は、オープン ソースであるという点です  (.NET Framework および .NET Core の両方にビルド済みの機能のライブラリと、コードを実行する仮想マシンとして機能する、共通言語ランタイム (CLR) が含まれています)。
 
 ## <a name="next-steps"></a>次の手順
 

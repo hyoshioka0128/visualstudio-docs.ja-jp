@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906155"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows インストーラー展開の拡張機能を準備する
@@ -37,7 +37,7 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
 5. [ **VSIX** ] タブを選択します。
 
-6. [ **VSIX コンテンツを次の場所にコピーする**] チェックボックスをオンにし、セットアッププロジェクトがファイルを取得するパスを入力します。
+6. [ **VSIX コンテンツを次の場所にコピーする** ] チェックボックスをオンにし、セットアッププロジェクトがファイルを取得するパスを入力します。
 
 ## <a name="extract-files-from-an-existing-vsix-package"></a>既存の VSIX パッケージからファイルを抽出する
  ソースファイルがない場合に既存の VSIX パッケージの内容をセットアッププロジェクトに追加するには、次の手順を実行します。
@@ -48,7 +48,7 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
 2. *.Zip*ファイルの内容をディレクトリにコピーします。
 
-3. ディレクトリから *[Content_types] .xml*ファイルを削除します。
+3. ディレクトリから *[Content_types] .xml* ファイルを削除します。
 
 4. 前の手順で示したように、VSIX マニフェストを編集します。
 

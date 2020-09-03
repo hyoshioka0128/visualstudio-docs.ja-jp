@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586721"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
@@ -38,17 +38,17 @@ ms.locfileid: "82586721"
 
 - [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)。
 
-## <a name="profiles"></a>プロファイル
+## <a name="profiles"></a>Profiles
  プロファイルを使用すると、UML 要素のステレオタイプと追加のプロパティを定義できます。
 
  Fabrikam 社のツール開発者は、アクティビティ図のオブジェクト ノードにステレオタイプ (たとえば、«コンベヤ ベルト»、«チェックイン デスク») を定義します。 チーム メンバーがアクティビティ図を使用して荷物取り扱いスキームを作成すると、ツール開発者はステレオタイプを設定して各ノードが表す設備の種類を示すことができるようになります。 ツール開発者は、いくつかのステレオタイプに対して追加のプロパティを定義して、ユーザーがコンベヤ ベルトの容量やチェックイン デスクの左右の区別などの値を記録できるようにします。
 
- 詳細については、「プロファイルを定義して[UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)」を参照してください。
+ 詳細については、「プロファイルを定義して [UML を拡張する](../modeling/define-a-profile-to-extend-uml.md)」を参照してください。
 
 ## <a name="custom-toolbox-items"></a>カスタム ツールボックス項目
  カスタム ツールボックス項目は、図で定義するプロトタイプから要素や要素グループを作成します。 たとえば、特定の色またはステレオタイプのユース ケースを作成するツールや、設計パターンを表すクラスと関連のグループを作成することもできます。 これらのツールボックス項目を Visual Studio 拡張機能に追加し、他のユーザーに配布できます。
 
- 詳細については、「[カスタムモデリングツールボックスアイテムの定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
+ 詳細については、「 [カスタムモデリングツールボックスアイテムの定義](../modeling/define-a-custom-modeling-toolbox-item.md)」を参照してください。
 
 ## <a name="validation"></a>検証
  UML モデルが指定の制約に確実に準拠するようにするための規則を定義できます。
@@ -62,21 +62,21 @@ ms.locfileid: "82586721"
 
  Fabrikam 社では、"チェックイン デスクを作成した後で選択したベルト コンベヤに接続する"、"会社のレイアウト規則に従って図を配置し直す" などのよく実行される操作を自動化するためのメニュー コマンドを定義します。
 
- 「[モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
+ 「 [モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
 
 ## <a name="gestures"></a>ジェスチャ
  ユーザーが図の要素をダブルクリックするか、要素を図や図内の要素にドラッグすることで起動されるコマンドを定義できます。 他の UML 図、Visual Studio の他の部分、または他のアプリケーションや Windows エクスプローラー (またはエクスプローラー) からドラッグされた項目を処理できるコマンドを定義できます。
 
  Fabrikam 社のチーム メンバーは、仕様などのファイルを、Windows デスクトップからドラッグすることで、任意のモデル要素に関連付けることができます。 ツール開発者は、任意の要素にファイル パス プロパティを提供するステレオタイプと、ファイルが要素上にドロップされたときにステレオタイプとファイル パスを設定するジェスチャを定義しました。
 
- 詳細については、「[モデリング図でジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する」を参照してください。
+ 詳細については、「 [モデリング図でジェスチャハンドラーを定義](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)する」を参照してください。
 
 ## <a name="responding-to-changes"></a>変更への対応
  モデル内の変更が、ユーザー アクションに起因するものか、他のプログラム コードに起因するものかにかかわらず、変更に対応するコードを作成できます。
 
  Fabrikam 社の開発者は、要素の色をそのステレオタイプに応じて自動的に設定するコードを作成します。 これにより、ユーザーはモデル内の要素のそれぞれ異なる役割を簡単に区別できるようになります。
 
- 詳細については、「[方法: UML モデルの変更に対応する](../misc/how-to-respond-to-changes-in-a-uml-model.md)」を参照してください。
+ 詳細については、「 [方法: UML モデルの変更に対応する](../misc/how-to-respond-to-changes-in-a-uml-model.md)」を参照してください。
 
 ## <a name="model-bus"></a>モデル バス
  モデル バスを使用すると、別の図や別の [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能から、図やモデルにアクセスできます。 特に、複数のモデルに情報を伝達することができるため、結合されたモデルで複数の人が同時に作業できます。
@@ -97,17 +97,17 @@ ms.locfileid: "82586721"
 
  Fabrikam 社のツール開発者は、それぞれの空港プロジェクトの作業スケジュールを生成するツールを作成します。 スケジュールされた作業項目は、モデル要素にリンクされます。
 
- 詳細については、「[作業項目リンクハンドラーを定義する](../modeling/define-a-work-item-link-handler.md)」を参照してください。
+ 詳細については、「 [作業項目リンクハンドラーを定義する](../modeling/define-a-work-item-link-handler.md)」を参照してください。
 
 ## <a name="tools-that-update-models"></a>モデルを更新するツール
  UML モデルの読み込みを行えるスタンドアロン アプリケーションと Visual Studio 拡張機能を作成できます。
 
  Fabrikam 社の開発者は、モデルを読み取り、モデルの各要素での作業の進捗状況についてレポートを生成するツールを作成します。
 
- 詳細については、「[プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
+ 詳細については、「 [プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
 
 ## <a name="domain-specific-languages"></a>ドメイン固有の言語
- 特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、「[モデリング SDK For Visual Studio-ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)」を参照してください。
+ 特定の種類のモデルを頻繁に使用する場合は、ドメイン固有の言語を作成しておくと便利です。 このようにすると UML モデルより密接にビジネス ニーズに合うものを作成できますが、それを構築して保守するには多大の労力が必要です。 詳細については、「 [モデリング SDK For Visual Studio-ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)」を参照してください。
 
 ## <a name="external-resources"></a>外部リソース
 

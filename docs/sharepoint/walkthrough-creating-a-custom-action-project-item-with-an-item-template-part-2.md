@@ -12,15 +12,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016100"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 2)
   SharePoint プロジェクト項目のカスタムの種類を定義し、Visual Studio の項目テンプレートに関連付けると、テンプレートのウィザードを指定することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクトにプロジェクト項目の新しいインスタンスを追加するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
 
- このチュートリアルでは、「[チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)」で説明されているカスタム動作プロジェクト項目にウィザードを追加します。 ユーザーがカスタム動作プロジェクト項目を SharePoint プロジェクトに追加すると、ウィザードによってカスタム動作に関する情報 (場所や、エンドユーザーが選択したときに移動する URL など) が収集され、この情報が新しいプロジェクト項目の*Elements.xml*ファイルに追加されます。
+ このチュートリアルでは、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)」で説明されているカスタム動作プロジェクト項目にウィザードを追加します。 ユーザーがカスタム動作プロジェクト項目を SharePoint プロジェクトに追加すると、ウィザードによってカスタム動作に関する情報 (場所や、エンドユーザーが選択したときに移動する URL など) が収集され、この情報が新しいプロジェクト項目の *Elements.xml* ファイルに追加されます。
 
  このチュートリアルでは、次のタスクについて説明します。
 
@@ -33,25 +34,25 @@ ms.locfileid: "86016100"
 - ウィザードをデバッグおよびテストします。
 
 > [!NOTE]
-> ワークフローのカスタムアクティビティを作成する方法を示すサンプルを[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)からダウンロードできます。
+> ワークフローのカスタムアクティビティを作成する方法を示すサンプルを [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) からダウンロードできます。
 
 ## <a name="prerequisites"></a>前提条件
- このチュートリアルを実行するには、まず「[チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 1)」](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)を完了して、CustomActionProjectItem ソリューションを作成する必要があります。
+ このチュートリアルを実行するには、まず「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 1)」](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)を完了して、CustomActionProjectItem ソリューションを作成する必要があります。
 
  また、このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
 
 - サポート対象エディションの Windows、SharePoint、Visual Studio。
 
-- Visual Studio SDK。 このチュートリアルでは、SDK の**Vsix プロジェクト**テンプレートを使用して、プロジェクト項目を配置する vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
+- Visual Studio SDK。 このチュートリアルでは、SDK の **Vsix プロジェクト** テンプレートを使用して、プロジェクト項目を配置する vsix パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
   次の概念に関する知識があると役に立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- Visual Studio のプロジェクトおよび項目テンプレート用のウィザード。 詳細については、「[方法: プロジェクトテンプレート](../extensibility/how-to-use-wizards-with-project-templates.md)とインターフェイスを使用してウィザードを使用する」を参照してください <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 。
+- Visual Studio のプロジェクトおよび項目テンプレート用のウィザード。 詳細については、「 [方法: プロジェクトテンプレート](../extensibility/how-to-use-wizards-with-project-templates.md) とインターフェイスを使用してウィザードを使用する」を参照してください <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 。
 
-- SharePoint のカスタム動作。 詳細については、「[カスタムアクション](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14))」を参照してください。
+- SharePoint のカスタム動作。 詳細については、「 [カスタムアクション](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14))」を参照してください。
 
 ## <a name="create-the-wizard-project"></a>ウィザードプロジェクトの作成
- このチュートリアルを完了するには、「[チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)」で作成した CustomActionProjectItem ソリューションにプロジェクトを追加する必要があります。 このプロジェクトで、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスを実装し、ウィザードの UI を定義します。
+ このチュートリアルを完了するには、「 [チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)」で作成した CustomActionProjectItem ソリューションにプロジェクトを追加する必要があります。 このプロジェクトで、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> インターフェイスを実装し、ウィザードの UI を定義します。
 
 #### <a name="to-create-the-wizard-project"></a>ウィザードプロジェクトを作成するには
 
@@ -59,11 +60,11 @@ ms.locfileid: "86016100"
 
 2. **ソリューションエクスプローラー**で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
 
-3. [**新しいプロジェクト**] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **Windows** ] ノードをクリックします。
+3. [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **Windows** ] ノードをクリックします。
 
-4. [**新しいプロジェクト**] ダイアログボックスの上部で、.NET Framework のバージョンの一覧で **.NET Framework 4.5**が選択されていることを確認します。
+4. [ **新しいプロジェクト** ] ダイアログボックスの上部で、.NET Framework のバージョンの一覧で **.NET Framework 4.5** が選択されていることを確認します。
 
-5. [ **WPF ユーザーコントロールライブラリ**] プロジェクトテンプレートを選択し、プロジェクトの**itemtemplatewizard**という名前を指定して、[ **OK** ] をクリックします。
+5. [ **WPF ユーザーコントロールライブラリ** ] プロジェクトテンプレートを選択し、プロジェクトの **itemtemplatewizard**という名前を指定して、[ **OK** ] をクリックします。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Itemtemplatewizard**プロジェクトをソリューションに追加します。
 
@@ -78,7 +79,7 @@ ms.locfileid: "86016100"
 
 2. **プロジェクトデザイナー**で、ターゲットフレームワークが .NET Framework 4.5 に設定されていることを確認します。
 
-     Visual C# プロジェクトの場合は、[**アプリケーション**] タブでこの値を設定できます。Visual Basic プロジェクトの場合は、[**コンパイル**] タブでこの値を設定できます。詳細については、「[方法: .NET Framework のバージョンをターゲット](../ide/visual-studio-multi-targeting-overview.md)にする」を参照してください。
+     Visual C# プロジェクトの場合は、[ **アプリケーション** ] タブでこの値を設定できます。Visual Basic プロジェクトの場合は、[ **コンパイル** ] タブでこの値を設定できます。詳細については、「 [方法: .NET Framework のバージョンをターゲット](../ide/visual-studio-multi-targeting-overview.md)にする」を参照してください。
 
 3. **Itemtemplatewizard**プロジェクトで、**ウィンドウ (WPF)** 項目をプロジェクトに追加し、その項目に**wizardwindow**という名前を指定します。
 
@@ -86,7 +87,7 @@ ms.locfileid: "86016100"
 
 5. **Itemtemplatewizard**プロジェクトのショートカットメニューを開き、[参照の**追加**] を選択します。
 
-6. [**参照マネージャー-ItemTemplateWizard** ] ダイアログボックスの [**アセンブリ**] ノードで、[**拡張機能**] ノードを選択します。
+6. [ **参照マネージャー-ItemTemplateWizard** ] ダイアログボックスの [ **アセンブリ** ] ノードで、[ **拡張機能** ] ノードを選択します。
 
 7. 次のアセンブリの横にあるチェックボックスをオンにし、[ **OK** ] をクリックします。
 
@@ -98,12 +99,12 @@ ms.locfileid: "86016100"
 
 8. **ソリューションエクスプローラー**の ItemTemplateWizard プロジェクトの [**参照**] フォルダーで、 **EnvDTE**参照を選択します。
 
-9. [**プロパティ**] ウィンドウで、[**相互運用機能型の埋め込み**] プロパティの値を**False**に変更します。
+9. [ **プロパティ** ] ウィンドウで、[ **相互運用機能型の埋め込み** ] プロパティの値を **False**に変更します。
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>カスタムアクションの既定の場所と ID 文字列を定義する
- すべてのカスタムアクションには、 `GroupID` `Location`Elements.xmlファイル内の要素の属性と属性に指定された場所と ID があり `CustomAction` ます。 *Elements.xml* この手順では、ItemTemplateWizard プロジェクトでこれらの属性の有効な文字列をいくつか定義します。 このチュートリアルを完了すると、ユーザーがウィザードで場所と ID を指定したときに、これらの文字列がカスタム動作プロジェクト項目の*Elements.xml*ファイルに書き込まれます。
+ すべてのカスタムアクションには、 `GroupID` `Location`Elements.xmlファイル内の要素の属性と属性に指定された場所と ID があり `CustomAction` ます。 *Elements.xml* この手順では、ItemTemplateWizard プロジェクトでこれらの属性の有効な文字列をいくつか定義します。 このチュートリアルを完了すると、ユーザーがウィザードで場所と ID を指定したときに、これらの文字列がカスタム動作プロジェクト項目の *Elements.xml* ファイルに書き込まれます。
 
- わかりやすくするために、このサンプルでは、使用可能な既定の場所と Id のサブセットのみをサポートしています。 完全な一覧については、「[既定のカスタムアクションの場所と id](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))」を参照してください。
+ わかりやすくするために、このサンプルでは、使用可能な既定の場所と Id のサブセットのみをサポートしています。 完全な一覧については、「 [既定のカスタムアクションの場所と id](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))」を参照してください。
 
 #### <a name="to-define-the-default-location-and-id-strings"></a>既定の場所と ID 文字列を定義するには
 
@@ -129,7 +130,7 @@ ms.locfileid: "86016100"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > この XAML で作成されるウィンドウは、 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基本クラスから派生します。 カスタム WPF ダイアログボックスを Visual Studio に追加する場合は、Visual Studio の他のダイアログボックスとの一貫性のあるスタイルを持つように、このクラスからダイアログボックスを派生させ、モーダルダイアログボックスで発生する可能性のある問題を回避することをお勧めします。 詳細については、「[モーダルダイアログボックスの作成と管理](../extensibility/creating-and-managing-modal-dialog-boxes.md)」を参照してください。
+    > この XAML で作成されるウィンドウは、 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基本クラスから派生します。 カスタム WPF ダイアログボックスを Visual Studio に追加する場合は、Visual Studio の他のダイアログボックスとの一貫性のあるスタイルを持つように、このクラスからダイアログボックスを派生させ、モーダルダイアログボックスで発生する可能性のある問題を回避することをお勧めします。 詳細については、「 [モーダルダイアログボックスの作成と管理](../extensibility/creating-and-managing-modal-dialog-boxes.md)」を参照してください。
 
 3. Visual Basic プロジェクトを開発している場合は、 `ItemTemplateWizard` 要素の属性のクラス名から名前空間を削除し `WizardWindow` `x:Class` `Window` ます。 この要素は XAML の 1 行目にあります。 完了すると、最初の行は次のコードのようになります。
 
@@ -160,7 +161,7 @@ ms.locfileid: "86016100"
 1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>ウィザードを項目テンプレートに関連付ける
- ウィザードの実装が完了したので、次の3つの主要な手順を実行して、このウィザードを**カスタムアクション**項目テンプレートに関連付ける必要があります。
+ ウィザードの実装が完了したので、次の3つの主要な手順を実行して、このウィザードを **カスタムアクション** 項目テンプレートに関連付ける必要があります。
 
 1. ウィザード アセンブリに厳密な名前で署名します。
 
@@ -174,15 +175,15 @@ ms.locfileid: "86016100"
 
 2. **[署名]** タブの **[アセンブリの署名]** チェック ボックスをオンにします。
 
-3. [**厳密な名前のキーファイルを選択**してください] ボックスの一覧で、を選択し **\<New...>** ます。
+3. [ **厳密な名前のキーファイルを選択** してください] ボックスの一覧で、を選択し **\<New...>** ます。
 
-4. [**厳密な名前キーの作成**] ダイアログボックスで、名前を入力し、[**キーファイルをパスワードで保護**する] チェックボックスをオフにして、[ **OK** ] をクリックします。
+4. [ **厳密な名前キーの作成** ] ダイアログボックスで、名前を入力し、[ **キーファイルをパスワードで保護** する] チェックボックスをオフにして、[ **OK** ] をクリックします。
 
 5. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>ウィザード アセンブリの公開キー トークンを取得するには
 
-1. Visual Studio のコマンドプロンプトウィンドウで、次のコマンドを実行します。 *PathToWizardAssembly*は、開発用コンピューターの ItemTemplateWizard プロジェクトのビルドされた ItemTemplateWizard.dll アセンブリへの完全パスに置き換えます。
+1. Visual Studio のコマンドプロンプトウィンドウで、次のコマンドを実行します。 *PathToWizardAssembly* は、開発用コンピューターの ItemTemplateWizard プロジェクトのビルドされた ItemTemplateWizard.dll アセンブリへの完全パスに置き換えます。
 
     ```xml
     sn.exe -T PathToWizardAssembly
@@ -196,7 +197,7 @@ ms.locfileid: "86016100"
 
 1. **ソリューションエクスプローラー**で、[ **itemtemplate** ] プロジェクトノードを展開し、 *itemtemplate .vstemplate*ファイルを開きます。
 
-2. ファイルの末尾の近くで、次の `WizardExtension` 要素を `</TemplateContent>` タグと `</VSTemplate>` タグの間に追加します。 属性の自分の*トークン*値を、 `PublicKeyToken` 前の手順で取得した公開キートークンに置き換えます。
+2. ファイルの末尾の近くで、次の `WizardExtension` 要素を `</TemplateContent>` タグと `</VSTemplate>` タグの間に追加します。 属性の自分の *トークン* 値を、 `PublicKeyToken` 前の手順で取得した公開キートークンに置き換えます。
 
     ```xml
     <WizardExtension>
@@ -209,14 +210,14 @@ ms.locfileid: "86016100"
 
 3. ファイルを保存して閉じます。
 
-## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>置換可能なパラメーターを項目テンプレートの*Elements.xml*ファイルに追加する
- ItemTemplate プロジェクトの*Elements.xml*ファイルに置き換え可能なパラメーターをいくつか追加します。 これらのパラメーターは、前に定義した `PopulateReplacementDictionary` クラスの `CustomActionWizard` メソッドで初期化されます。 ユーザーがプロジェクトにカスタムアクションプロジェクト項目を追加すると、Visual Studio によって、新しいプロジェクト項目の*Elements.xml*ファイル内のこれらのパラメーターがウィザードで指定した値に自動的に置き換えられます。
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>置換可能なパラメーターを項目テンプレートの *Elements.xml* ファイルに追加する
+ ItemTemplate プロジェクトの *Elements.xml* ファイルに置き換え可能なパラメーターをいくつか追加します。 これらのパラメーターは、前に定義した `PopulateReplacementDictionary` クラスの `CustomActionWizard` メソッドで初期化されます。 ユーザーがプロジェクトにカスタムアクションプロジェクト項目を追加すると、Visual Studio によって、新しいプロジェクト項目の *Elements.xml* ファイル内のこれらのパラメーターがウィザードで指定した値に自動的に置き換えられます。
 
- 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置換可能なパラメーターを定義するだけでなく、SharePoint プロジェクトシステムで定義および初期化する組み込みパラメーターを使用することもできます。 詳細については、「[置換可能なパラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
+ 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置換可能なパラメーターを定義するだけでなく、SharePoint プロジェクトシステムで定義および初期化する組み込みパラメーターを使用することもできます。 詳細については、「 [置換可能なパラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
 
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置換可能なパラメーターを*Elements.xml*ファイルに追加するには
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置換可能なパラメーターを *Elements.xml* ファイルに追加するには
 
-1. ItemTemplate プロジェクトで、 *Elements.xml*ファイルの内容を次の XML に置き換えます。
+1. ItemTemplate プロジェクトで、 *Elements.xml* ファイルの内容を次の XML に置き換えます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -243,15 +244,15 @@ ms.locfileid: "86016100"
 
 1. **ソリューションエクスプローラー**で、CustomActionProjectItem プロジェクトの**source.extension.vsixmanifest**ファイルからショートカットメニューを開き、[**開く**] をクリックして、マニフェストエディターでファイルを開きます。
 
-2. マニフェストエディターで [**アセット**] タブを選択し、[**新規作成**] をクリックします。
+2. マニフェストエディターで [ **アセット** ] タブを選択し、[ **新規作成** ] をクリックします。
 
-     [**新しい資産の追加**] ダイアログボックスが表示されます。
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-3. [**種類**] ボックスの一覧で、[ **VisualStudio**] を選択します。
+3. [ **種類** ] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
-4. [**ソース**] ボックスの一覧で、**現在のソリューション内のプロジェクト**を選択します。
+4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
 
-5. [**プロジェクト**] ボックスの一覧で [ **itemtemplatewizard**] を選択し、[ **OK** ] をクリックします。
+5. [ **プロジェクト** ] ボックスの一覧で [ **itemtemplatewizard**] を選択し、[ **OK** ] をクリックします。
 
 6. メニューバーで [ビルド] [ソリューションの**ビルド**] の順に選択し、  >  **Build Solution**ソリューションがエラーなしでコンパイルされることを確認します。
 
@@ -278,15 +279,15 @@ ms.locfileid: "86016100"
 
 2. [ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開します (項目テンプレートでサポートされている言語によって異なります)。次に、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
-3. プロジェクトテンプレートの一覧で [ **SharePoint 2010 プロジェクト**] を選択し、プロジェクトに**CustomActionWizardTest**という名前を指定して、[ **OK** ] をクリックします。
+3. プロジェクトテンプレートの一覧で [ **SharePoint 2010 プロジェクト**] を選択し、プロジェクトに **CustomActionWizardTest**という名前を指定して、[ **OK** ] をクリックします。
 
 4. **SharePoint カスタマイズウィザード**で、デバッグに使用するサイトの URL を入力し、[**完了**] をクリックします。
 
 5. **ソリューションエクスプローラー**で、プロジェクトノードのショートカットメニューを開き、[**追加**]、[**新しい項目**] の順に選択します。
 
-6. [**新しい項目の追加-CustomItemWizardTest** ] ダイアログボックスで、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを展開します。
+6. [ **新しい項目の追加-CustomItemWizardTest** ] ダイアログボックスで、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを展開します。
 
-7. プロジェクト項目の一覧で、[**カスタム動作**] 項目を選択し、[**追加**] をクリックします。
+7. プロジェクト項目の一覧で、[ **カスタム動作** ] 項目を選択し、[ **追加** ] をクリックします。
 
 8. Visual Studio のもう一方のインスタンスで、先ほど `RunStarted` メソッドに設定したブレークポイントで、コードが停止していることを確認します。
 
@@ -294,36 +295,36 @@ ms.locfileid: "86016100"
 
      SharePoint カスタマイズ ウィザードが表示されます。
 
-10. [**場所**] で、[**リストの編集**] オプションボタンを選択します。
+10. [ **場所**] で、[ **リストの編集** ] オプションボタンを選択します。
 
-11. [**グループ ID** ] ボックスの一覧で、[**通信**] を選択します。
+11. [ **グループ ID** ] ボックスの一覧で、[ **通信**] を選択します。
 
-12. [**タイトル**] ボックスに「 **SharePoint デベロッパーセンター**」と入力します。
+12. [ **タイトル** ] ボックスに「 **SharePoint デベロッパーセンター**」と入力します。
 
-13. [**説明**] ボックスに「」と入力すると、 **SharePoint デベロッパーセンターの Web サイトが開き**ます。
+13. [  **説明** ] ボックスに「」と入力すると、 **SharePoint デベロッパーセンターの Web サイトが開き**ます。
 
-14. [ **URL** ] ボックスに **https://docs.microsoft.com/sharepoint/dev/** 「」と入力し、[**完了**] をクリックします。
+14. [ **URL** ] ボックスに **https://docs.microsoft.com/sharepoint/dev/** 「」と入力し、[ **完了** ] をクリックします。
 
-     Visual Studio によって、 **[customaction1]** という名前の項目がプロジェクトに追加され、エディターで*Elements.xml*ファイルが開きます。 ウィザードで指定した値が*Elements.xml*に含まれていることを確認します。
+     Visual Studio によって、 **[customaction1]** という名前の項目がプロジェクトに追加され、エディターで *Elements.xml* ファイルが開きます。 ウィザードで指定した値が *Elements.xml* に含まれていることを確認します。
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>SharePoint のカスタム動作をテストするには
 
 1. Visual Studio の実験用インスタンスで、 **F5**キーを押すか、メニューバーで [**デバッグ**] [  >  **デバッグの開始**] の順に選択します。
 
-     カスタムアクションがパッケージ化され、プロジェクトの [**サイト URL** ] プロパティで指定された SharePoint サイトに配置されます。 web ブラウザーが開き、このサイトの既定のページが表示されます。
+     カスタムアクションがパッケージ化され、プロジェクトの [ **サイト URL** ] プロパティで指定された SharePoint サイトに配置されます。 web ブラウザーが開き、このサイトの既定のページが表示されます。
 
     > [!NOTE]
-    > [**スクリプトデバッグを無効**にする] ダイアログボックスが表示されたら、[**はい**] をクリックします。
+    > [ **スクリプトデバッグを無効** にする] ダイアログボックスが表示されたら、[ **はい** ] をクリックします。
 
-2. SharePoint サイトの [リスト] 領域で、[**タスク**] リンクを選択します。
+2. SharePoint サイトの [リスト] 領域で、[ **タスク** ] リンクを選択します。
 
-     [**タスク-すべてのタスク**] ページが表示されます。
+     [ **タスク-すべてのタスク** ] ページが表示されます。
 
-3. リボンの [**リストツール**] タブで、[**リスト**] タブを選択し、[**設定**] グループで [**リストの設定**] を選択します。
+3. リボンの [ **リストツール** ] タブで、[ **リスト** ] タブを選択し、[ **設定** ] グループで [ **リストの設定**] を選択します。
 
-     [**リストの設定**] ページが表示されます。
+     [ **リストの設定** ] ページが表示されます。
 
-4. ページの上部にある [**通信**] 見出しの下にある [ **SharePoint デベロッパーセンター** ] リンクを選択し、ブラウザーが web サイトを開いていることを確認 https://docs.microsoft.com/sharepoint/dev/ してから、ブラウザーを閉じます。
+4. ページの上部にある [ **通信** ] 見出しの下にある [ **SharePoint デベロッパーセンター** ] リンクを選択し、ブラウザーが web サイトを開いていることを確認 https://docs.microsoft.com/sharepoint/dev/ してから、ブラウザーを閉じます。
 
 ## <a name="cleaning-up-the-development-computer"></a>開発用コンピューターのクリーンアップ
  プロジェクト項目のテストが終わったら、プロジェクト項目テンプレートを Visual Studio の実験用インスタンスから削除します。
@@ -334,9 +335,9 @@ ms.locfileid: "86016100"
 
      **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
-2. 拡張機能の一覧で、**カスタム動作プロジェクト項目**の拡張機能を選択し、[**アンインストール**] をクリックします。
+2. 拡張機能の一覧で、 **カスタム動作プロジェクト項目** の拡張機能を選択し、[ **アンインストール** ] をクリックします。
 
-3. 表示されるダイアログボックスで、[**はい**] をクリックして拡張機能をアンインストールすることを確認し、[**今すぐ再起動**] ボタンをクリックしてアンインストールを完了します。
+3. 表示されるダイアログボックスで、[ **はい** ] をクリックして拡張機能をアンインストールすることを確認し、[ **今すぐ再起動** ] ボタンをクリックしてアンインストールを完了します。
 
 4. Visual Studio の両方のインスタンス (実験用インスタンスと、CustomActionProjectItem ソリューションが開いている Visual Studio のインスタンス) を閉じます。
 
