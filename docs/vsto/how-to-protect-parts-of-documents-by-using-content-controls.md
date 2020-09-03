@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541350"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>方法: コンテンツコントロールを使用して文書の一部を保護する
@@ -34,20 +34,20 @@ ms.locfileid: "85541350"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>コンテンツコントロールを保護する
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> コンテンツコントロールを保護する
  デザイン時または実行時に文書レベルのプロジェクト内のコントロールのプロパティを設定することにより、ユーザーがコンテンツ コントロールを編集したり削除したりしないようにすることができます。
 
- VSTO アドイン プロジェクトを使用して、実行時にドキュメントに追加したコンテンツ コントロールを保護することもできます。 詳細については、「[方法: Word 文書にコンテンツコントロールを追加](../vsto/how-to-add-content-controls-to-word-documents.md)する」を参照してください。
+ VSTO アドイン プロジェクトを使用して、実行時にドキュメントに追加したコンテンツ コントロールを保護することもできます。 詳細については、「 [方法: Word 文書にコンテンツコントロールを追加](../vsto/how-to-add-content-controls-to-word-documents.md)する」を参照してください。
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>デザイン時に、コンテンツ コントロールを保護するには
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デザイナーでホストされているドキュメントで、保護するコンテンツ コントロールを選択します。
 
-2. [**プロパティ**] ウィンドウで、次のプロパティのいずれかまたは両方を設定します。
+2. [ **プロパティ** ] ウィンドウで、次のプロパティのいずれかまたは両方を設定します。
 
-    - ユーザーがコントロールを編集できないようにするには、 **Lockcontents**を**True**に設定します。
+    - ユーザーがコントロールを編集できないようにするには、 **Lockcontents** を **True**に設定します。
 
-    - ユーザーがコントロールを削除できないようにするには、 **Lockcontentcontrol**を**True**に設定します。
+    - ユーザーがコントロールを削除できないようにするには、 **Lockcontentcontrol** を **True**に設定します。
 
 3. **[OK]** をクリックします。
 
@@ -73,7 +73,7 @@ ms.locfileid: "85541350"
 - 既にコンテンツ コントロールが含まれている領域だが、保護対象のテキストまたはその他のアイテムが、コンテンツ コントロールに含まれていない場合。
 
 > [!NOTE]
-> 埋め込みコンテンツ コントロールを含む <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成する場合、埋め込みコンテンツ コントロールは自動的には保護されません。 ユーザーが埋め込みコンテンツコントロールを編集できないようにするには、コントロールの**Lockcontents**プロパティを使用します。
+> 埋め込みコンテンツ コントロールを含む <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成する場合、埋め込みコンテンツ コントロールは自動的には保護されません。 ユーザーが埋め込みコンテンツコントロールを編集できないようにするには、コントロールの **Lockcontents** プロパティを使用します。
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>デザイン時にドキュメントのある領域を保護するには
 
@@ -82,9 +82,9 @@ ms.locfileid: "85541350"
 2. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「 [方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
-3. [**コントロール**] グループの [**グループ**] ドロップダウンボタンをクリックし、[**グループ**] をクリックします。
+3. [ **コントロール** ] グループの [ **グループ** ] ドロップダウンボタンをクリックし、[ **グループ**] をクリックします。
 
      保護された領域を含む <xref:Microsoft.Office.Tools.Word.GroupContentControl> が、プロジェクト内の `ThisDocument` クラスに自動的に生成されます。 グループ コントロールを表す枠線は、デザイン時に表示されますが、実行時に表示される枠線はありません。
 

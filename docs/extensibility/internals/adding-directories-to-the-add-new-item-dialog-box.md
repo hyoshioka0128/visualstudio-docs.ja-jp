@@ -1,5 +1,5 @@
 ---
-title: '[新しい項目の追加] ダイアログ ボックスにディレクトリを追加する |マイクロソフトドキュメント'
+title: '[新しい項目の追加] ダイアログボックスにディレクトリを追加する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d4af79f95c87271e9a10eece6c728daa9a81305
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710250"
 ---
-# <a name="add-directories-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログ ボックスにディレクトリを追加する
-次のコード例は、[**新しい項目の追加**] ダイアログ ボックスのディレクトリの新しいセットを登録する方法を示しています。 **[新しい項目の追加**] ダイアログ ボックスのディレクトリは、プロジェクトごとに異なります。 したがって、ディレクトリは **、HKEY_LOCAL_MACHINE\ソフトウェア\VisualStudio\8.0Exp\プロジェクト**にある**プロジェクト**サブキーの下に登録されます。
+# <a name="add-directories-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログボックスにディレクトリを追加する
+次のコード例は、[ **新しい項目の追加** ] ダイアログボックスのディレクトリの新しいセットを登録する方法を示しています。 [ **新しい項目の追加** ] ダイアログボックスのディレクトリは、プロジェクトごとに異なります。 そのため、ディレクトリは、 **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp\projects**にある**Projects**サブキーの下に登録されます。
 
-## <a name="registry-script"></a>レジストリ スクリプト
+## <a name="registry-script"></a>レジストリスクリプト
 
 ```
 NoRemove Projects
@@ -45,16 +45,16 @@ NoRemove Projects
 }
 ```
 
- 値`%Template_Path%`は、プロジェクト テンプレートを含むディレクトリの完全パスを指定します。 これらのテンプレートは、複製する *.vsz*ファイルまたはプロトタイプ テンプレート ファイルのいずれかです。
+ 値は、 `%Template_Path%` プロジェクトテンプレートが格納されているディレクトリの完全パスを指定します。 これらのテンプレートには、 *.vsz* ファイルまたは複製する典型的なテンプレートファイルを指定できます。
 
- 値`SortPriority`は、並べ替えの優先順位を指定します。
+ `SortPriority`値は並べ替えの優先順位を指定します。
 
-## <a name="add-items-to-an-existing-project"></a>既存のプロジェクトに項目を追加する
- 既存のプロジェクトに項目を追加することもできます。 たとえば、プロジェクトの[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]場合は、*\<ルート>\プログラム ファイル\Microsoft Visual Studio\VC#\CSharpProjectItems\LocalProjectItems*フォルダーに項目を追加できます。 この場合、C#`%GUID_Project%`プロジェクトの GUID です ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC})。
+## <a name="add-items-to-an-existing-project"></a>既存のプロジェクトへの項目の追加
+ 既存のプロジェクトに項目を追加することもできます。 たとえば、プロジェクトの場合は、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] * \<root> Studio\VC # \CSharpProjectItems\LocalProjectItems*フォルダーに項目を追加できます。 この場合、 `%GUID_Project%` は C# プロジェクト ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) の GUID です。
 
- プロジェクトのサブタイプをプログラミングして、既存のプロジェクトを拡張することもできます。 プロジェクトのサブタイプを使用すると、新しいプロジェクトタイプを書き込まずにプロジェクトを拡張できます。 プロジェクトのサブタイプの詳細については、「[プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。
+ また、プロジェクトのサブタイプをプログラミングすることによって、既存のプロジェクトを拡張することもできます。 プロジェクトのサブタイプを使用すると、新しいプロジェクトの種類を記述せずにプロジェクトを拡張できます。 プロジェクトのサブタイプの詳細については、「 [プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [プロジェクトおよび項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
-- [[新しい項目の追加] ダイアログ ボックスに項目を追加する](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [[新しいプロジェクト] ダイアログ ボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+- [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
+- [[新しい項目の追加] ダイアログボックスへの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [[新しいプロジェクト] ダイアログボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

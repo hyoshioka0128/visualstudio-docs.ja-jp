@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54dee9c25fc9b8ddf1f8cf6c54c40d68ce53dc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671853"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題の作成
@@ -22,13 +22,13 @@ ms.locfileid: "72671853"
 このチュートリアルの第 2 部では、乱数に基づく計算問題を追加して、クイズに挑みます。 また、`StartTheQuiz()` という名前の、問題に記入して、カウントダウン タイマーを開始するメソッドを作成します。 このチュートリアルの後半では、減算、乗算、除算問題を追加します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「 [チュートリアル 2: 時間指定の計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ### <a name="to-create-a-random-addition-problem"></a>ランダムな加算問題を作成するには
 
 1. フォーム デザイナーで、フォーム (Form1) を選択します。
 
-2. メニュー バーで **[表示]** 、 **[コード]** の順に選択します。
+2. メニュー バーで **[表示]**、 **[コード]** の順に選択します。
 
      使用しているプログラミング言語によって Form1.cs または Form1.vb が表示されるため、フォームの分離コードを表示できます。
 
@@ -74,7 +74,7 @@ ms.locfileid: "72671853"
 
      これらのステートメントでは、**plusLeftLabel** および **plusRightLabel** の **Text** プロパティを設定し、2 つの乱数が表示されるようになっています。 数値をテキストに変換するには、整数の `ToString()` メソッドを使用する必要があります。 (プログラミングでは、文字列はテキストを意味します。 ラベル コントロールには、数ではなく、テキストのみが表示されます。
 
-6. デザイン ウィンドウで、 **[Start]** ボタンをダブルクリックするか、または [Start] ボタンをクリックして、Enter キーを押します。
+6. デザイン ウィンドウで、**[Start]** をダブルクリックするか、または [Start] をクリックして、Enter キーを押します。
 
      クイズの受け手がこのボタンをクリックすると、クイズが開始され、その動作を実装する Click イベント ハンドラーが追加されました。
 
@@ -85,7 +85,7 @@ ms.locfileid: "72671853"
 
      最初のステートメントは新しい `StartTheQuiz()` メソッドを呼び出します。 2 番目のステートメントは **startButton** コントロールの **Enabled** プロパティを **False** に設定するため、クイズの受け手はクイズ中にこのボタンをクリックできません。
 
-8. コードを保存し、実行して、 **[Start]** ボタンをクリックします。
+8. コードを保存し、実行して、**[Start]** ボタンをクリックします。
 
      次の図に示すように、ランダムな加算問題が表示されます。
 
@@ -95,6 +95,6 @@ ms.locfileid: "72671853"
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 3: カウントダウン タイマーの追加](../ide/step-3-add-a-countdown-timer.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 [手順 3: カウントダウンタイマーの追加](../ide/step-3-add-a-countdown-timer.md)」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 1: プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 1: プロジェクトを作成し、フォームにラベルを追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)する」を参照してください。

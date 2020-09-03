@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH |マイクロソフトドキュメント
+title: NAME_MATCH |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714295"
 ---
 # <a name="name_match"></a>NAME_MATCH
-名前を一致させる大文字と小文字のオプションを選択します。
+一致する名前の case オプションを選択します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  オプションは指定されていません。
 
  `nmCaseSensitive`\
- 一致する名前で大文字と小文字が区別されることを示します。
+ 照合する名前が大文字と小文字を区別することを示します。
 
  `nmCaseInsensitive`\
- 一致する名前で大文字と小文字が区別されないことを示します。
+ 照合する名前が大文字と小文字を区別しないことを示します。
 
-## <a name="remarks"></a>Remarks
- 引数として次のメソッドに渡されます。
+## <a name="remarks"></a>注釈
+ 次のメソッドに引数として渡されます。
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -65,11 +65,11 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: sh.h
+ ヘッダー: sh. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

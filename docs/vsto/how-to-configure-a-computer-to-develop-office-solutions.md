@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546173"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>方法: Office ソリューションを開発するようにコンピューターを構成する
@@ -25,11 +25,11 @@ ms.locfileid: "85546173"
 
 ### <a name="to-configure-the-development-computer"></a>開発コンピューターを構成するには
 
-1. Office Developer Tools が含まれているバージョンの Visual Studio をインストールします。 Office 開発者ツールは既定でインストールされます。 インストールする機能を選択して Visual Studio のインストールをカスタマイズする場合は、セットアップ時に**Microsoft Office 開発者ツール**が選択されていることを確認してください。 Office developer tools を含む Visual Studio のバージョンの詳細については、「 [office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」を参照してください。
+1. Office Developer Tools が含まれているバージョンの Visual Studio をインストールします。 Office 開発者ツールは既定でインストールされます。 インストールする機能を選択して Visual Studio のインストールをカスタマイズする場合は、セットアップ時に **Microsoft Office 開発者ツール** が選択されていることを確認してください。 Office developer tools を含む Visual Studio のバージョンの詳細については、「 [office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」を参照してください。
 
 2. Visual Studio の Office Developer Tools によってサポートされているバージョンの Office をインストールします。 詳細については、「 [Office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」を参照してください。
 
-     インストールするバージョンの Office の PIA もインストールされることを確認してください。 PIA は、既定では Office と共にインストールされます。 Office セットアップを変更する場合は、対象とするアプリケーションに対して [ **.Net プログラミングサポート**] 機能が選択されていることを確認してください。
+     インストールするバージョンの Office の PIA もインストールされることを確認してください。 PIA は、既定では Office と共にインストールされます。 Office セットアップを変更する場合は、対象とするアプリケーションに対して [ **.Net プログラミングサポート** ] 機能が選択されていることを確認してください。
 
 3. 英語版の Visual Studio を使用していて、Windows に英語以外の設定を使用している場合は、言語パックをインストールして、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] windows と同じ言語のメッセージを表示することができ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 英語版以外の Visual Studio では、この言語パックが自動的にインストールされます。 言語パックは、 [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=54246)から入手できます。
 

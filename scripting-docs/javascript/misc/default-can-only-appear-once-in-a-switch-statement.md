@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0fdce6a86665b942098e4542dc237bc1ef22ad8a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815514"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' は 'switch' ステートメントのなかに、一度のみ表示できます。
-Switch ステートメント内で**default**ステートメントを複数回使用しようとしました。 既定のケースでは、switch ステートメントの最後の case ステートメント (フォールスルーケース) になります。  
+Switch ステートメント内で **default** ステートメントを複数回使用しようとしました。 既定のケースでは、switch ステートメントの最後の case ステートメント (フォールスルーケース) になります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- ステートメントから余分な**既定**の case ステートメントを削除 `switch` します (switch ステートメントでは、既定の case ステートメントを1つだけ使用します)。  
+- ステートメントから余分な **既定** の case ステートメントを削除 `switch` します (switch ステートメントでは、既定の case ステートメントを1つだけ使用します)。  
   
 ## <a name="see-also"></a>関連項目  
  [switch ステートメント](../../javascript/reference/switch-statement-javascript.md)   

@@ -1,5 +1,5 @@
 ---
-title: インテッリセンスホストフラグ |マイクロソフトドキュメント
+title: IntelliSenseHostFlags |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710269"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-IntelliSense ホスト フラグを指定します。
+IntelliSense ホストフラグを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,14 +40,14 @@ enum IntellisenseHostFlags
 
 |メンバー|説明|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|コンテキスト バッファーは読み取り専用です。|
-|`IHF_NOSEPARATESUBJECT`|件名テキストがありません。 コンテキスト バッファーには、IntelliSense ターゲットが`!IHF_READONLYCONTEXT`含まれています (暗黙的)。|
-|`IHF_SINGLELINESUBJECT`|件名テキストは複数行対応ではありません。|
+|`IHF_READONLYCONTEXT`|コンテキストバッファーは読み取り専用です。|
+|`IHF_NOSEPARATESUBJECT`|件名のテキストはありません。 コンテキストバッファーに IntelliSense-target (を意味します) が含まれてい `!IHF_READONLYCONTEXT` ます。|
+|`IHF_SINGLELINESUBJECT`|件名のテキストは、複数行に対応していません。|
 |`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer` と同じ。|
-|`IHF_OVERTYPE`|(件名またはコンテキストでの) 編集は、上のタイプ モードで行う必要があります。|
+|`IHF_OVERTYPE`|編集 (件名またはコンテキスト) は、上書きモードで実行する必要があります。|
 
 ## <a name="requirements"></a>必要条件
- シングルファイルエディタ.idl
+ SingleFileeditor .idl
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

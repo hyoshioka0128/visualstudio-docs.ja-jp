@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ece4788a277bfc4d16568d4014f9eae2ed4de33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545276"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:値型フィールドはポータブルでなければなりません
@@ -27,7 +27,7 @@ ms.locfileid: "85545276"
 
 Visual Studio の最新のドキュメントについては、「 [CA1900: 値型フィールドはポータブルである必要があり](/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)ます」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|

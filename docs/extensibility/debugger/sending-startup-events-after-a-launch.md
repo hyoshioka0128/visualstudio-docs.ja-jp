@@ -1,5 +1,5 @@
 ---
-title: 起動後のスタートアップ イベントの送信 |マイクロソフトドキュメント
+title: 起動後のスタートアップイベントの送信 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,38 +11,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713010"
 ---
-# <a name="send-startup-events-after-a-launch"></a>起動後にスタートアップ イベントを送信する
-デバッグ エンジン (DE) がプログラムにアタッチされると、一連のスタートアップ イベントがデバッグ セッションに送り返されます。
+# <a name="send-startup-events-after-a-launch"></a>起動後にスタートアップイベントを送信する
+デバッグエンジン (DE) がプログラムにアタッチされると、一連のスタートアップイベントがデバッグセッションに返されます。
 
- デバッグ セッションに返されるスタートアップ イベントには、次のものがあります。
+ デバッグセッションに返されるスタートアップイベントには次のものがあります。
 
 - エンジン作成イベント。
 
 - プログラム作成イベント。
 
-- スレッドの作成とモジュールの読み込みイベント。
+- スレッド作成イベントとモジュール読み込みイベント。
 
-- ロード完了イベント。
+- 読み込み完了イベント。コードが読み込まれ、実行の準備ができたときに、コードが実行される前に送信されます。
 
   > [!NOTE]
-  > このイベントが続くと、グローバル変数が初期化され、スタートアップ ルーチンが実行されます。
+  > このイベントが続行されると、グローバル変数が初期化され、スタートアップルーチンが実行されます。
 
-- 他のスレッド作成イベントおよびモジュールロードイベントが発生する可能性があります。
+- 他のスレッド作成イベントとモジュール読み込みイベント。
 
-- Main**や**`WinMain`など、メイン エントリ ポイントに達したことを示すエントリ ポイント イベントです。 このイベントは、既に実行中のプログラムに DE がアタッチされている場合、通常は送信されません。
+- エントリポイントイベント。プログラム **がメインの** エントリポイントに到達したことを通知し `WinMain` ます。 このイベントは、通常、既に実行されているプログラムに DE をアタッチした場合には送信されません。
 
-  プログラムを使用して、DE はまず、エンジン作成イベントを表すセッション デバッグ マネージャー (SDM) [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)インターフェイスを送信し、次にプログラム作成イベントを表す[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)を送信します。
+  プログラムによって、DE は最初にセッションデバッグマネージャー (SDM) の [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) インターフェイスを送信します。このインターフェイスはエンジン作成イベントを表し、その後にプログラム作成イベントを表す [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)が続きます。
 
-  通常、これらのイベントの後には、1 つ以上[の IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)スレッド作成イベントと[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)モジュールの読み込みイベントが続きます。
+  これらのイベントの後には、通常、1つ以上の [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) thread 作成イベントと [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) モジュール読み込みイベントが続きます。
 
-  コードが読み込まれ、実行する準備が整っているとき、コードが実行される前に、DE は SDM を[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)読み込み完了イベントを送信します。 最後に、プログラムがまだ実行されていない場合、DE は[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)エントリ ポイント イベントを送信し、プログラムがメイン エントリ ポイントに到達し、デバッグの準備ができていることを示します。
+  コードが読み込まれ、実行の準備が整うと、コードが実行される前に、DE は SDM a [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) load complete イベントを送信します。 最後に、プログラムがまだ実行されていない場合、DE は [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) entry point イベントを送信し、プログラムがメインエントリポイントに到達し、デバッグの準備ができたことを通知します。
 
 ## <a name="see-also"></a>関連項目
 - [実行の制御](../../extensibility/debugger/control-of-execution.md)
-- [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)
+- [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2628d8929a0d2b6fd3561f88c81cfaa3b62564f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542104"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
@@ -32,11 +32,11 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 ビット オペレーティング システムのリモート デバッガーのポート  
  TCP 4020 (Visual Studio 2015 の場合) がメイン ポートであり、すべてのシナリオにこれが必要です。 これは、コマンド ラインまたはリモート デバッガー ウィンドウのいずれかから構成できます。  
   
- リモートデバッガーウィンドウで、[ツール]、[**オプション**] の順にクリックし、tcp/ip ポート番号を設定します。  
+ リモートデバッガーウィンドウで、[ツール]、[ **オプション**] の順にクリックし、tcp/ip ポート番号を設定します。  
   
  コマンドラインで、 **/port**スイッチ: **msvsmon/port \<port number> **を使用してリモートデバッガーを起動します。  
   
- リモートデバッグのヘルプでは、リモートデバッガーのすべてのコマンドラインスイッチを見つけることができます (リモートデバッガーウィンドウで**F1**キーを押すか、[**ヘルプ]/[使用状況**] をクリックします)。  
+ リモートデバッグのヘルプでは、リモートデバッガーのすべてのコマンドラインスイッチを見つけることができます (リモートデバッガーウィンドウで **F1** キーを押すか、[ **ヘルプ]/[使用状況** ] をクリックします)。  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 ビット オペレーティング システムのリモート デバッガーのポート  
  64 ビット バージョンのリモート デバッガーを開始すると、既定でポート 4020 が使用されます。  32 ビット プロセスをデバッグする場合は、64 ビット バージョンのリモート デバッガーにより、ポート 4021 で 32 ビット バージョンのリモート デバッガーが開始されます。 32 ビットのリモート デバッガーを実行する場合は、4020 が使用され、4021 は使用されません。  
@@ -57,5 +57,5 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Remote Debugging](../debugger/remote-debugging.md)

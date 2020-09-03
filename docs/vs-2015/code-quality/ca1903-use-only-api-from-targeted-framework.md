@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545250"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:対象のフレームワークから API のみを使用します
@@ -27,7 +27,7 @@ ms.locfileid: "85545250"
 
 Visual Studio の最新のドキュメントについては、「 [CA1903: ターゲットフレームワークから API のみを使用する](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
@@ -42,7 +42,7 @@ Visual Studio の最新のドキュメントについては、「 [CA1903: タ�
 
  **ターゲットフレームワークと Service Pack の依存関係**
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |ターゲットフレームワークが|で導入されたメンバーの使用時に発生します|
 |.NET Framework 2.0|.NET Framework 2.0 SP1、.NET Framework 2.0 SP2|
@@ -50,7 +50,7 @@ Visual Studio の最新のドキュメントについては、「 [CA1903: タ�
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|該当なし|
 
- プロジェクトのターゲットフレームワークを変更するには、「[特定の .NET Framework バージョンをターゲット](../ide/targeting-a-specific-dotnet-framework-version.md)にする」を参照してください。
+ プロジェクトのターゲットフレームワークを変更するには、「 [特定の .NET Framework バージョンをターゲット](../ide/targeting-a-specific-dotnet-framework-version.md)にする」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  Service Pack の依存関係を削除するには、新しいメンバーまたは型のすべての使用を削除します。 これが意図的な依存関係である場合は、警告を抑制するか、この規則を無効にします。
@@ -68,5 +68,5 @@ Visual Studio の最新のドキュメントについては、「 [CA1903: タ�
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [特定の .NET Framework バージョンをターゲットとする](../ide/targeting-a-specific-dotnet-framework-version.md)[移植性の警告](../code-quality/portability-warnings.md)

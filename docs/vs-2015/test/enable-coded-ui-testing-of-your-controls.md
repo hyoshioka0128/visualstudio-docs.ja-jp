@@ -9,10 +9,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851802"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストの有効化
@@ -20,7 +20,7 @@ ms.locfileid: "75851802"
 
 コード化された UI テスト フレームワークのサポートを実装している場合は、コントロールをより簡単にテストできます。 サポート レベルを徐々に上げることができます。 記録と再生およびプロパティの検証のサポートから始めることができます。 この最初のサポートに加えて、コード化された UI テスト ビルダーがコントロールのカスタム プロパティを認識し、生成されたコードからそれらのプロパティにアクセスするためのカスタム クラスを提供できるようにすることができます。 また、コード化された UI テスト ビルダーが、記録される操作の目的に近い方法で操作をキャプチャできるようにすることもできます。
 
- **このトピックの内容**
+ **このトピックの内容:**
 
 1. [アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
 
@@ -28,14 +28,14 @@ ms.locfileid: "75851802"
 
 3. [カスタム プロパティにアクセスするためのクラスを実装してコード生成をサポートする](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)
 
-4. [操作フィルターの実装によって目的に応じた操作をサポートする](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
+4. [アクションフィルターを実装することにより、インテント対応のアクションをサポートする](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
-   ![CUIT&#95;全体](../test/media/cuit-full.png "CUIT_Full")
+   ![CUIT&#95;完全](../test/media/cuit-full.png "CUIT_Full")
 
-## <a name="recordandplayback"></a>アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする
+## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a><a name="recordandplayback"></a> アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする
  コード化された UI テスト ビルダーは、記録時に出現したコントロールに関する情報をキャプチャし、そのセッションを再生するコードを生成します。 コントロールがユーザー補助をサポートしていない場合、コード化された UI テスト ビルダーは画面座標を使用して操作 (マウス クリックなど) をキャプチャします。 テストの再生時、生成されたコードは同じ画面座標にそれらのマウス クリックを表示します。 テストの再生時にコントロールが画面上の別の場所に表示される場合、生成されたコードはコントロールに対するその操作の実行に失敗します。 テストが異なる画面構成や異なる環境で再生される場合、または UI レイアウトが変更された後に再生される場合、これは失敗する可能性があります。
 
- ![CUIT&#95;recordnosupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
 
  しかし、ユーザー補助を実装している場合は、コード化された UI テスト ビルダーがテストを記録してコードを生成するときに、コントロールに関する情報をキャプチャするためにそれを使用します。 その後、テストを実行すると、コントロールがユーザー インターフェイスの別の場所にあっても、生成されたコードがコントロールに対してそれらのイベントを再生します。 テストの作成者は、コントロールの基本的なプロパティを使用してアサートを作成することもできます。
 
@@ -78,12 +78,12 @@ ms.locfileid: "75851802"
 4. 子コントロールのユーザー補助オブジェクトの <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A>、および <xref:System.Windows.Forms.AccessibleObject.Select%2A> プロパティおよびメソッドをオーバーライドします。
 
 > [!NOTE]
-> このトピックでは、まずこのプロシージャの <xref:System.Windows.Forms.AccessibleObject> でユーザー補助のサンプルを作成し、それを基に残りのプロシージャで他の要素を作成します。 ユーザー補助サンプルの作業バージョンを作成する場合は、コンソール アプリケーションを作成し、Program.cs のコードをサンプル コードで置き換えます。 ユーザー補助、System.Drawing、および System.Windows.Forms への参照を追加する必要があります。 ビルド警告を除去するために、アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更してください。 アプリケーションの実行時にコンソール ウィンドウが表示されないように、プロジェクトの出力の種類を **[コンソール アプリケーション]** から **[Windows アプリケーション]** に変更できます。
+> このトピックでは、まずこのプロシージャの <xref:System.Windows.Forms.AccessibleObject> でユーザー補助のサンプルを作成し、それを基に残りのプロシージャで他の要素を作成します。 ユーザー補助サンプルの作業バージョンを作成する場合は、コンソール アプリケーションを作成し、Program.cs のコードをサンプル コードで置き換えます。 ユーザー補助、System.Drawing、および System.Windows.Forms への参照を追加する必要があります。 ビルド警告を除去するために、アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更してください。 アプリケーションの実行時にコンソールウィンドウが表示されないように、プロジェクトの出力の種類を [ **コンソールアプリケーション** ] から [ **Windows アプリケーション** ] に変更できます。
 
-## <a name="customproprties"></a>プロパティ プロバイダーの実装によってカスタム プロパティの検証をサポートする
+## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a><a name="customproprties"></a> プロパティプロバイダーの実装によってカスタムプロパティの検証をサポートする
  記録と再生およびプロパティの検証の基本的なサポートを実装したら、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> プラグインを実装して、コントロールのカスタム プロパティをコード化された UI テストから使用できるようにすることができます。 たとえば、次のプロシージャでは、コード化された UI テストがグラフ コントロールの CurveLegend 子コントロールの State プロパティにアクセスできるようにするプロパティ プロバイダーを作成します。
 
- ![CUIT&#95;customprops](../test/media/cuit-customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>カスタム プロパティの検証をサポートするには
  ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")
@@ -321,12 +321,12 @@ ms.locfileid: "75851802"
     }
     ```
 
-11. バイナリをビルドし、 **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages** にコピーします。
+11. バイナリをビルドし、**%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages** にコピーします。
 
 > [!NOTE]
 > この拡張パッケージは、"Text" 型であるすべてのコントロールに適用されます。 同じ種類の複数のコントロールをテストしている場合は、別々にテストし、テストを記録するときにどの拡張パッケージが配置されているかを管理する必要があります。
 
-## <a name="codegeneration"></a>カスタム プロパティにアクセスするためのクラスを実装してコード生成をサポートする
+## <a name="support-code-generation-by-implementing-a-class-to-access-custom-properties"></a><a name="codegeneration"></a> カスタムプロパティにアクセスするクラスを実装してコード生成をサポートする
  コード化された UI テスト ビルダーはセッションの記録からコードを生成するとき、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> クラスを使用してコントロールにアクセスします。
 
 ```csharp
@@ -406,13 +406,13 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-## <a name="intentawareactions"></a>操作フィルターの実装によって目的に応じた操作をサポートする
+## <a name="support-intent-aware-actions-by-implementing-an-action-filter"></a><a name="intentawareactions"></a>操作フィルターの実装によって目的に応じた操作をサポートする
  Visual Studio はテストを記録するとき、各マウス イベントとキーボード イベントをキャプチャします。 ただし、一連のマウス イベントとキーボード イベントで操作の目的が失われる場合があります。 たとえば、コントロールがオートコンプリートをサポートしている場合は、テストを別の環境で再生すると、同じマウス イベントとキーボード イベントのセットで別の値になることがあります。 一連のキーボード イベントとマウス イベントを単一の操作に置き換える操作フィルター プラグインを追加できます。 こうすることで、結果として値を選択することになる一連のマウス イベントとキーボード イベントを、値を設定する単一の操作に置き換えることができます。 これによって、コード化された UI テストは環境の違いによるオートコンプリートの結果の違いから保護されます。
 
 ### <a name="to-support-intent-aware-actions"></a>目的に応じた操作をサポートするには
  ![CUIT&#95;アクション](../test/media/cuit-actions.png "CUIT_Actions")
 
-1. [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)、[Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、[Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、[FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、[Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110))、および [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)) の各プロパティをオーバーライドして、[uitestactionfilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))から派生したアクションフィルタークラスを実装します。
+1. Udtimeout、 [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、 [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、 [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、 [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) 、 [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110))の各プロパティをオーバーライドし[ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)て、 [uitestactionfilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))から派生したアクションフィルタークラスを実装します。
 
     ```csharp
     internal class MyActionFilter : UITestActionFilter

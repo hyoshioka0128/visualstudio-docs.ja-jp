@@ -1,4 +1,4 @@
-﻿---
+---
 title: フォルダーを指定して検索コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 831a67fe567c2e6ae1e288d1bc7ee91026ff2273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651038"
 ---
 # <a name="find-in-files-command"></a>FindinFiles コマンド
@@ -73,5 +73,5 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>関連項目
- [[フォルダーを検索](../../ide/find-in-files.md) [] コマンドウィンドウ](../../ide/reference/command-window.md)の [[検索]/[コマンド] ボックス](../../ide/find-command-box.md) [Visual studio](../../ide/reference/visual-studio-commands.md)コマンド[visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>参照
+ [[フォルダーを検索](../../ide/find-in-files.md) [] コマンドウィンドウ](../../ide/reference/command-window.md)の [ [検索]/[コマンド] ボックス](../../ide/find-command-box.md) [Visual studio](../../ide/reference/visual-studio-commands.md)コマンド [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

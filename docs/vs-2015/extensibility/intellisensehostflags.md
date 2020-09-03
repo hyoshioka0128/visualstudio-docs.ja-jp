@@ -14,16 +14,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12945998b215e9082591fad514bd9c16ab789405
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203888"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense のホストのフラグを指定します。  
+IntelliSense ホストフラグを指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,14 +42,14 @@ enum IntellisenseHostFlags
   
 |メンバー|説明|  
 |-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|コンテキスト バッファーとは、読み取り専用です。|  
-|`IHF_NOSEPARATESUBJECT`|件名テキストはありません。 コンテキスト バッファーには、IntelliSense とターゲットが含まれています (意味`!IHF_READONLYCONTEXT`)。|  
-|`IHF_SINGLELINESUBJECT`|件名のテキストは、マルチ ラインことはできません。|  
+|`IHF_READONLYCONTEXT`|コンテキストバッファーは読み取り専用です。|  
+|`IHF_NOSEPARATESUBJECT`|件名のテキストはありません。 コンテキストバッファーに IntelliSense-target (を意味します) が含まれてい `!IHF_READONLYCONTEXT` ます。|  
+|`IHF_SINGLELINESUBJECT`|件名のテキストは、複数行に対応していません。|  
 |`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer` と同じ。|  
-|`IHF_OVERTYPE`|編集 (サブジェクトまたはコンテキスト) では、上書きモードで行う必要があります。|  
+|`IHF_OVERTYPE`|編集 (件名またはコンテキスト) は、上書きモードで実行する必要があります。|  
   
-## <a name="requirements"></a>必要条件  
- SingleFileeditor.idl  
+## <a name="requirements"></a>要件  
+ SingleFileeditor .idl  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543612"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117:APTCA 型は APTCA 基本型のみを拡張することができます
@@ -36,13 +36,13 @@ ms.locfileid: "85543612"
  属性を持つアセンブリ内のパブリック型またはプロテクト型が、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> 属性を持たないアセンブリで宣言されている型から継承されています。
 
 ## <a name="rule-description"></a>ルールの説明
- 既定では、厳密な名前を持つアセンブリ内のパブリック型またはプロテクト型は、完全信頼の[継承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)によって暗黙的に保護されます。 (APTCA) 属性でマークされた厳密な名前付きのアセンブリには、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> この保護はありません。 属性は、継承の要求を無効にします。 これにより、完全に信頼されていない型によって継承可能なアセンブリ内で宣言された型が作成されます。
+ 既定では、厳密な名前を持つアセンブリ内のパブリック型またはプロテクト型は、完全信頼の [継承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) によって暗黙的に保護されます。 (APTCA) 属性でマークされた厳密な名前付きのアセンブリには、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> この保護はありません。 属性は、継承の要求を無効にします。 これにより、完全に信頼されていない型によって継承可能なアセンブリ内で宣言された型が作成されます。
 
  APTCA 属性が完全に信頼されたアセンブリに存在し、アセンブリ内の型が部分的に信頼された呼び出し元を許可しない型から継承する場合、セキュリティ上の脆弱性が発生する可能性があります。 2つの型が `T1` `T2` あり、次の条件を満たす場合、悪意のある呼び出し元は型を使用して、を `T1` 保護する暗黙的な完全信頼の継承要求をバイパスでき `T2` ます。
 
-- `T1`は、APTCA 属性を持つ、完全に信頼されたアセンブリで宣言されたパブリック型です。
+- `T1` は、APTCA 属性を持つ、完全に信頼されたアセンブリで宣言されたパブリック型です。
 
-- `T1`アセンブリ外の型から継承 `T2` します。
+- `T1` アセンブリ外の型から継承 `T2` します。
 
 - `T2`のアセンブリには APTCA 属性がないため、部分的に信頼されたアセンブリの型によって継承できません。
 
@@ -83,5 +83,5 @@ ms.locfileid: "85543612"
 ## <a name="related-rules"></a>関連規則
  [CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  部分的に信頼されたコード[継承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)[からライブラリを使用して](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [、部分的に信頼されたコードによって呼び出すことができる](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177).NET Framework

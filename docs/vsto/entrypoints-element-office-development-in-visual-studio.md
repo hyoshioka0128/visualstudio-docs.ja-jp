@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543573"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints &gt; 要素 (Visual Studio での Office 開発)
@@ -49,7 +49,7 @@ ms.locfileid: "85543573"
  `entryPoints` には、次の要素があります。
 
 ### <a name="entrypoint"></a>entryPoint
- 必須。 名前空間の要素のロールは、 `entryPoint` `vstav3` [Visual Studio&#41;で &#40;Office 開発の&#60;entryPoint&#62; 要素](../vsto/entrypoint-element-office-development-in-visual-studio.md)で定義されています。
+ 必須。 名前空間の要素のロールは、 `entryPoint` `vstav3` [ Visual Studio&#41;で &#40;Office 開発の&#60;entryPoint&#62; 要素 ](../vsto/entrypoint-element-office-development-in-visual-studio.md)で定義されています。
 
 ## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 

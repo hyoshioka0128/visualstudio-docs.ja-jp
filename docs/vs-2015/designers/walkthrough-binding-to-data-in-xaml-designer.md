@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'チュートリアル: XAML デザイナーでデータにバインドする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 38434d89544ed290f9adfd077593d7de9bdc1231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664012"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>チュートリアル: XAML デザイナーでデータにバインドする
@@ -25,11 +25,11 @@ XAML デザイナーで、アートボードと [プロパティ] ウィンド�
 
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>データ ソースとして使用するクラスを作成するには
 
-1. **[ファイル]** メニューで、 **[新規]** 、 **[プロジェクト]** をクリックします。
+1. **[ファイル]** メニューで、**[新規作成]**、**[プロジェクト]** の順に選択します。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** ノードまたは **[Visual Basic]** ノードを選びます。次に、 **[Windows デスクトップ]** ノードを展開し、 **[WPF アプリケーション]** テンプレートを選びます。
+2. **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** ノードまたは **[Visual Basic]** ノードを選びます。次に、**[Windows デスクトップ]** ノードを展開し、**[WPF アプリケーション]** テンプレートを選びます。
 
-3. プロジェクトに **BindingTest** という名前を付けて、 **[OK]** をクリックします。
+3. プロジェクトに **BindingTest** という名前を付けて、**[OK]** をクリックします。
 
 4. MainWindow.xaml.cs (または MainWindow.xaml.vb) ファイルを開き、次のコードを追加します。 C# では、このコードを `BindingTest` 名前空間 (ファイルの最後の閉じかっこの前) に追加します。 Visual Basic では、新しいクラスを追加します。
 
@@ -68,33 +68,33 @@ XAML デザイナーで、アートボードと [プロパティ] ウィンド�
 
      このコードでは、[PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) オブジェクトを使って、既定の項目数の値を 0 に設定しています。
 
-5. **[ファイル]** メニューで、 **[ビルド]** 、 **[ソリューションのビルド]** の順に選びます。
+5. **[ファイル]** メニューで、**[ビルド]**、**[ソリューションのビルド]** の順に選びます。
 
 ### <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>ItemCount プロパティを TextBlock コントロールにバインドするには
 
-1. ソリューション エクスプローラーで、MainWindow.xaml のショートカット メニューを開き、 **[デザイナーの表示]** を選びます。
+1. ソリューション エクスプローラーで、MainWindow.xaml のショートカット メニューを開き、**[デザイナーの表示]** を選びます。
 
 2. ツールボックスで、[グリッド](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) コントロールを選んでフォームに追加します。
 
 3. `Grid` を選んだ状態で、[プロパティ] ウィンドウの **[DataContext]** プロパティの横にある **[新規作成]** ボタンを選びます。
 
-4. **[オブジェクトの選択]** ダイアログ ボックスで、 **[すべてのアセンブリを表示する]** チェック ボックスがオフであることを確認し、**BindingTest** 名前空間の下にある **ShoppingCart** を選んで、 **[OK]** ボタンを選びます。
+4. **[オブジェクトの選択]** ダイアログ ボックスで、**[すべてのアセンブリを表示する]** チェック ボックスがオフであることを確認し、**BindingTest** 名前空間の下にある **ShoppingCart** を選んで、**[OK]** ボタンを選びます。
 
-     次の図は、 **[オブジェクトの選択]** ダイアログ ボックスで **ShoppingCart** 選んだ状態を示しています。
+     次の図は、**[オブジェクトの選択]** ダイアログ ボックスで **ShoppingCart** 選んだ状態を示しています。
 
-     ![[オブジェクトの選択] ダイアログボックス](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![[オブジェクトの選択] ダイアログ ボックス](../designers/media/blendselectobject.PNG "BlendSelectObject")
 
 5. **[ツールボックス]** で、`TextBlock` コントロールを選んでフォームに追加します。
 
-6. `TextBlock` コントロールを選んだ状態で、[プロパティ] ウィンドウで **[Text]** プロパティの右側にあるプロパティ マーカーを選んでから、 **[データ バインディングの作成]** を選びます。 (プロパティ マーカーは小さいボックスで表示されています。)
+6. `TextBlock` コントロールを選んだ状態で、[プロパティ] ウィンドウで **[Text]** プロパティの右側にあるプロパティ マーカーを選んでから、**[データ バインディングの作成]** を選びます。 (プロパティ マーカーは小さいボックスで表示されています。)
 
-7. [データ バインディングを作成] ダイアログ ボックスの **[パス]** ボックスで、 **[ItemCount: (int32)]** プロパティを選び、 **[OK]** を選びます。
+7. [データ バインディングを作成] ダイアログ ボックスの **[パス]** ボックスで、**[ItemCount: (int32)]** プロパティを選び、**[OK]** を選びます。
 
-     次の図は、 **[ItemCount]** プロパティを選んだ **[データ バインディングの作成]** ダイアログ ボックスです。
+     次の図は、**[ItemCount]** プロパティを選んだ **[データ バインディングの作成]** ダイアログ ボックスです。
 
-     ![[データバインディングの作成] ダイアログボックス](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
+     ![[データ バインディングの作成] ダイアログ ボックス](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
 
-8. F5 キーを押してアプリを実行します。
+8. F5 キーを押して、アプリを実行します。
 
      `TextBlock` コントロールにより、既定値の 0 がテキストとして表示されます。
 

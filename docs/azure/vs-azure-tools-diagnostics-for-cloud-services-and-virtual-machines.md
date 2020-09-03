@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911855"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426734"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
@@ -28,7 +28,7 @@ Azure Diagnostics を設定するには、次のオプションのいずれか�
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Azure SDK 2.6 での診断の変更
 Visual Studio では、Azure SDK 2.6 以降のプロジェクトには、次の変更が適用されます。
 
-* ローカル エミュレーターで診断がサポートされるようになりました。 つまり、Visual Studio での開発およびテスト時に診断データを収集し、開発中のアプリケーションが正しくトレースを作成することを確認できます。 接続文字列 `UseDevelopmentStorage=true` は、Visual Studio で Azure ストレージ エミュレーターを使用してクラウド サービス プロジェクトを実行している間に行われる診断データの収集を有効にします。 すべての診断データは、開発ストレージのストレージ アカウントに収集されます。
+* ローカル エミュレーターで診断がサポートされるようになりました。 つまり、Visual Studio での開発およびテスト時に診断データを収集し、開発中のアプリケーションが正しくトレースを作成することを確認できます。 この接続文字列は、 `UseDevelopmentStorage=true` Visual Studio で Azure Storage エミュレーターを使用してクラウドサービスプロジェクトを実行しているときに、診断データの収集を有効にします。 すべての診断データは、開発ストレージのストレージ アカウントに収集されます。
 * 診断ストレージ アカウントの接続文字列 `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` は、サービス構成 (.cscfg) ファイルに格納されます。 Azure SDK 2.5 では、診断ストレージ アカウントは diagnostics.wadcfgx ファイルに指定されます。
 
 接続文字列は、Azure SDK 2.6 以降と Azure SDK 2.4 以前では、いくつかの重要な点で動作が異なります。
@@ -73,11 +73,11 @@ Azure SDK 2.5 から Azure SDK 2.6 以降に移行するとき、.wadcfgx ファ
 3. 診断データ用のストレージ アカウントを指定するには、省略記号 (...) ボタンを選択します。
 
     ![Specify the storage account to use](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. Azure ストレージ エミュレーター、Azure サブスクリプション、手動で入力した資格情報のうち、どれを使って接続するかを **[ストレージ接続文字列の作成]** ダイアログ ボックスで指定します。
+4. [ **ストレージ接続文字列の作成** ] ダイアログボックスで、Azure Storage エミュレーター、Azure サブスクリプション、または手動で入力した資格情報を使用して接続するかどうかを指定します。
 
     ![Storage account dialog box](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * **[Microsoft Azure ストレージ エミュレーター]** を選択した場合、接続文字列は `UseDevelopmentStorage=true` に設定されます。
+   * [ **Microsoft Azure ストレージエミュレーター**] を選択した場合、接続文字列はに設定され `UseDevelopmentStorage=true` ます。
    * **[サブスクリプション]** オプションを選択した場合は、使用する Azure サブスクリプションを選択し、アカウント名を入力できます。 Azure サブスクリプションを管理するには、**[アカウントの管理]** を選択します。
    * **[手動で入力された資格情報]** オプションを選択した場合は、使用する Azure アカウントの名前とキーを入力します。
 5. **[診断構成]** ダイアログ ボックスを表示するには、**[構成]** を選択します。 **[全般]** と **[ログ ディレクトリ]** を除く各タブは、収集できる診断データのソースを表します。 既定の **[全般]** タブでは、診断データの収集オプションとして、**[エラーのみ]**、**[すべての情報]**、**[カスタム プラン]** を指定できます。 既定の **[エラーのみ]** オプションでは、警告またはトレース メッセージが転送されないため、必要とするストレージ容量が最小限で済みます。 **[すべての情報]** オプションは最も多くの情報を転送し、最も多くのストレージを使用するため、コストが最も高いオプションです。

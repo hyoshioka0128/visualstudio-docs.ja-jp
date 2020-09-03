@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173566"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -44,12 +44,12 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
  Visual Studio SDK は、Visual Studio セットアップのオプション機能です。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="whats-new-in-the-visual-studio-sdk"></a>Visual Studio SDK の新機能
- Visual Studio SDK には、同期的に自動読み込みされる拡張機能の警告と VSIX v3 形式、および拡張機能の更新が必要になる可能性がある重大な変更など、いくつかの新機能があります。 詳細については、「 [Visual studio 2019 sdk の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)」および「 [VISUAL studio 2017 Sdk の新機能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)」を参照してください。
+ Visual Studio SDK には、同期的に自動読み込みされる拡張機能の警告と VSIX v3 形式、および拡張機能の更新が必要になる可能性がある重大な変更など、いくつかの新機能があります。 詳細については、「 [Visual studio 2019 sdk の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md) 」および「 [VISUAL studio 2017 Sdk の新機能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)」を参照してください。
 
 ## <a name="visual-studio-user-experience-guidelines"></a>Visual Studio ユーザーエクスペリエンスガイドライン
  [Visual Studio のユーザーエクスペリエンスガイドライン](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)で、拡張機能の UI を設計するためのヒントを入手します。
 
- また、高 DPI デバイス[での拡張](../extensibility/addressing-dpi-issues2.md)機能の外観を確認する方法についても説明します。
+ また、高 DPI デバイス [での拡張](../extensibility/addressing-dpi-issues2.md) 機能の外観を確認する方法についても説明します。
 
  [イメージサービスとカタログ](../extensibility/image-service-and-catalog.md)を活用して、優れたイメージ管理と高 DPI とテーマのサポートを実現します。
 
@@ -63,9 +63,9 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
  VS SDK 拡張機能のオープンソースの例については、GitHub の「 [Visual Studio のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)」を参照してください。 この GitHub リポジトリには、Visual Studio のさまざまな拡張機能を示すサンプルが含まれています。
 
 ## <a name="other-visual-studio-sdk-resources"></a>その他の Visual Studio SDK リソース
- VSSDK に関する質問がある場合、または拡張機能の開発経験を共有する場合は、 [Visual Studio 機能拡張フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)または[ExtendVS Gitter チャットルーム](https://gitter.im/Microsoft/extendvs)を使用できます。
+ VSSDK に関する質問がある場合、または拡張機能の開発経験を共有する場合は、 [Visual Studio 機能拡張フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) または [ExtendVS Gitter チャットルーム](https://gitter.im/Microsoft/extendvs)を使用できます。
 
- 詳細については、 [VSX Arcana ブログ](https://blogs.msdn.microsoft.com/vsx/)と、Microsoft mvp によって作成された多数のブログを参照してください。
+ 詳細については、 [VSX Arcana ブログ](https://blogs.msdn.microsoft.com/vsx/) と、Microsoft mvp によって作成された多数のブログを参照してください。
 
 - [お気に入りの Visual Studio 拡張機能](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -85,7 +85,7 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
 - [エディターと言語サービスの拡張機能](../extensibility/editor-and-language-service-extensions.md)
 - [プロジェクトの拡張](../extensibility/extending-projects.md)
 - [ユーザー設定とオプションの拡張](../extensibility/extending-user-settings-and-options.md)
-- [カスタムプロジェクトと項目テンプレートの作成](../extensibility/creating-custom-project-and-item-templates.md)
+- [プロジェクトと項目のカスタム テンプレートを作成する](../extensibility/creating-custom-project-and-item-templates.md)
 - [プロパティとプロパティウィンドウの拡張](../extensibility/extending-properties-and-the-property-window.md)
 - [Visual Studio の他の部分を拡張する](../extensibility/extending-other-parts-of-visual-studio.md)
 - [サービスの使用と提供](../extensibility/using-and-providing-services.md)

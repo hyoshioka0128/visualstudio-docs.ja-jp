@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : アプリケーション アイコンを指定する (Visual Basic、C#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136fd00bea736af0f0c589c28eae597ff8fd558e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670703"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>方法 : アプリケーション アイコンを指定する (Visual Basic、C#)
@@ -34,13 +34,13 @@ ms.locfileid: "72670703"
 
 1. **ソリューション エクスプローラー**で、 **[ソリューション]** ノードではなくプロジェクト ノードを選びます。
 
-2. メニュー バーで、 **[プロジェクト]** 、 **[プロパティ]** の順に選びます。
+2. メニューバーで、[ **プロジェクト**]、[ **プロパティ**] の順に選択します。
 
 3. **プロジェクト デザイナー**が表示されたら、 **[アプリケーション]** タブを選びます。
 
-4. **(Visual Basic)** **[アイコン]** 一覧で、アイコン (.ico) ファイルを選びます。
+4. **(Visual Basic)****[アイコン]** 一覧で、アイコン (.ico) ファイルを選びます。
 
-     **(C#)** **[アイコン]** 一覧の近くにある **\<[参照]** ボタンを選び、使うアイコン ファイルの場所を参照します。
+     **C#****アイコン**の一覧の近くにあるボタンをクリックし、 **\<Browse...>** 目的のアイコンファイルの場所を参照します。
 
 ## <a name="see-also"></a>参照
- [[アプリケーション] ページ (プロジェクトデザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [[アプリケーション]C#ページ、プロジェクトデザイナー () アプリケーションの](../ide/reference/application-page-project-designer-csharp.md)[プロパティの管理](../ide/application-properties.md)[方法: リソースを追加または削除](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)する
+ [[アプリケーション] ページ (プロジェクトデザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [[アプリケーション] ページ (プロジェクトデザイナー) (C#) アプリケーションのプロパティの](../ide/reference/application-page-project-designer-csharp.md)[管理](../ide/application-properties.md)[方法: リソースを追加または削除](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)する

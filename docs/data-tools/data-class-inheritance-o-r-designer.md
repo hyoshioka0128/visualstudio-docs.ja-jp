@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7172c868780aec61de8688614fbb93627dc23bf5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462396"
 ---
 # <a name="data-class-inheritance-or-designer"></a>データ クラスの継承 (O/R デザイナー)
@@ -27,11 +27,11 @@ ms.locfileid: "85462396"
 
 継承プロパティとその説明については、次の表を参照してください。
 
-|プロパティ|[説明]|
+|プロパティ|説明|
 |--------------|-----------------|
 |**識別子プロパティ**|現在のレコードが属するクラスを判別するプロパティ (列にマップされる)。|
-|**基本クラスの識別子の値**|レコードが基本クラスであることを判断する値 (**識別子プロパティ**として指定された列)。|
-|**派生クラスの識別子の値**|レコードが派生クラスであることを決定する値 (**識別子プロパティ**として指定されたプロパティ)。|
+|**基本クラスの識別子の値**|レコードが基本クラスであることを判断する値 ( **識別子プロパティ**として指定された列)。|
+|**派生クラスの識別子の値**|レコードが派生クラスであることを決定する値 ( **識別子プロパティ**として指定されたプロパティ)。|
 |**継承の既定値**|**識別子プロパティ**として指定されたプロパティの値が、**基本クラスの識別子**の値または**派生クラスの識別子の値**のいずれとも一致しない場合に設定されるクラス。|
 
 継承を使用し、リレーショナル データに対応するオブジェクト モデルの作成は、混乱しやすい場合があります。 このトピックでは、継承を構成する場合に必要な基本的な概念と個々のプロパティについて説明します。 次のトピックでは、 **O/R デザイナー**を使用して継承を構成する方法について、より明確に説明します。
@@ -46,4 +46,4 @@ ms.locfileid: "85462396"
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [チュートリアル: LINQ to SQL クラスの作成 (O-R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
-- [作業の開始](/dotnet/framework/data/adonet/sql/linq/getting-started)
+- [はじめに](/dotnet/framework/data/adonet/sql/linq/getting-started)
