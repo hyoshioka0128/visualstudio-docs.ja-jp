@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: 管理者が期限切れの Visual Studio サブスクリプションを処理する方法を説明します。
 ms.openlocfilehash: 50fffc186ab3135077418eb29f849918db664290
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232469"
 ---
 # <a name="expired-subscriptions"></a>有効期限が切れたサブスクリプション
