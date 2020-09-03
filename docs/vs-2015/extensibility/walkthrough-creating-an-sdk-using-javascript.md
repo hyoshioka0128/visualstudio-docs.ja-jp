@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: JavaScript を使用して SDK の作成 |Microsoft Docs'
+title: 'チュートリアル: JavaScript を使用した SDK の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,39 +9,39 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148832"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>チュートリアル: JavaScript を使用して SDK を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、JavaScript を使用して単純な算術 SDK と Visual Studio Extension (VSIX) を作成する方法について説明します。  このチュートリアルは、これらの部分に分かれています。  
+このチュートリアルでは、JavaScript を使用して、Visual Studio 拡張機能 (VSIX) として簡単な数値演算 SDK を作成する方法について説明します。  このチュートリアルは、次の部分に分かれています。  
   
-- [SimpleMathVSIX 拡張機能 SDK のプロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [Simplem、Vsix 拡張機能 SDK プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
-- [SDK を使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [SDK を使用するサンプルアプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
-  の JavaScript 用クラス ライブラリ プロジェクトの種類はありません。 このチュートリアルでは、VSIX プロジェクトに直接サンプル arithmetic.js ファイルが作成されます。 実際を最初にビルドしてテストする JavaScript と CSS ファイルを Windows ストア アプリとしてお勧め — などを使用して、**空のアプリ**テンプレート、VSIX プロジェクトに配置する前にします。  
+  JavaScript の場合、クラスライブラリプロジェクトの種類はありません。 このチュートリアルでは、サンプルの arithmetic.js ファイルを VSIX プロジェクトに直接作成します。 実際には、最初に、VSIX プロジェクトに配置する前に、JavaScript と CSS ファイルを Windows ストアアプリとして作成し、テストすることをお勧めします。たとえば、 **空のアプリケーション** テンプレートを使用します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+ このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。  
   
-## <a name="createSimpleMathVSIX"></a> SimpleMathVSIX 拡張機能 SDK のプロジェクトを作成するには  
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Simplem、Vsix 拡張機能 SDK プロジェクトを作成するには  
   
 1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
-2. テンプレートのカテゴリの一覧で  **Visual c#** を選択します**拡張**を選び、 **VSIX プロジェクト**テンプレート。  
+2. テンプレートカテゴリの一覧で、[ **Visual C#**] の下の [ **機能拡張**] を選択し、[ **VSIX プロジェクト** ] テンプレートを選択します。  
   
-3. **名前**テキスト ボックスで、指定`SimpleMathVSIX`を選択し、 **OK**ボタン。  
+3. [ **名前** ] テキストボックスで、を指定し、[ `SimpleMathVSIX` **OK** ] をクリックします。  
   
-4. 場合、 **Visual Studio パッケージ ウィザード**が表示されたら、選択、**次**ボタンを**へようこそ**  ページで、し**7 のページ 1**、選択、**完了**ボタンをクリックします。  
+4. **Visual Studio パッケージウィザード**が表示されたら、[**ようこそ**] ページの [**次へ**] をクリックします。次に、 **7 ページ目**の [**完了**] ボタンをクリックします。  
   
-     ただし、**マニフェスト デザイナー**が開き、スクリプトを紹介するこのチュートリアル単純なマニフェスト ファイルを直接変更することで。  
+     **マニフェストデザイナー**が開きますが、マニフェストファイルを直接変更することで、このチュートリアルを簡単に行うことができます。  
   
-5. **ソリューション エクスプ ローラー**、source.extension.vsixmanifest ファイルのショートカット メニューを開き、選択し、**コードの表示**します。 このコードを使用して、ファイルの既存のコンテンツを置き換えます。  
+5. **ソリューションエクスプローラー**で、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[**コードの表示**] を選択します。 このコードを使用して、ファイル内の既存のコンテンツを置き換えます。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -63,13 +63,13 @@ ms.locfileid: "68148832"
     </PackageManifest>  
     ```  
   
-6. **ソリューション エクスプ ローラー**SimpleMathVSIX プロジェクトのショートカット メニューを開き、選択し、**追加**、**新しい項目の**します。  
+6. **ソリューションエクスプローラー**で、Simplemの vsix プロジェクトのショートカットメニューを開き、[**追加**]、[**新しい項目**] の順に選択します。  
   
-7. **データ**カテゴリで、 **XML ファイル**、ファイルに名前を`SDKManifest.xml`を選択し、**追加**ボタンをクリックします。  
+7. [ **データ** ] カテゴリで [ **XML ファイル**] を選択し、ファイルに名前 `SDKManifest.xml` を指定して、[ **追加** ] ボタンをクリックします。  
   
-8. **ソリューション エクスプ ローラー**SDKManifest.xml ファイルのショートカット メニューを開き、選択し、**開く**でファイルを表示する、 **XML エディター**します。  
+8. **ソリューションエクスプローラー**で、SDKManifest.xml ファイルのショートカットメニューを開き、[**開く**] をクリックして、 **XML エディター**でファイルを表示します。  
   
-9. SDKManifest.xml ファイルに次のコードを追加します。  
+9. 次のコードを SDKManifest.xml ファイルに追加します。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -86,21 +86,21 @@ ms.locfileid: "68148832"
   
     ```  
   
-10. **ソリューション エクスプ ローラー**、SDKManifest.xml ファイルのショートカット メニューで**プロパティ**します。  
+10. **ソリューションエクスプローラー**の SDKManifest.xml ファイルのショートカットメニューで、[**プロパティ**] を選択します。  
   
-11. **プロパティ**ウィンドウで、設定、 **VSIX に含める**プロパティを**True**します。  
+11. [ **プロパティ** ] ウィンドウで、[ **VSIX に含める** ] プロパティを [ **True**] に設定します。  
   
-12. **ソリューション エクスプ ローラー**、SimpleMathVSIX プロジェクトのショートカット メニューで**追加**、**新しいフォルダー**、フォルダーの名前と`Redist`します。  
+12. **ソリューションエクスプローラー**で、Simplemの vsix プロジェクトのショートカットメニューで、[**追加**]、[**新しいフォルダー**] の順に選択し、フォルダーに名前を指定し `Redist` ます。  
   
-13. このフォルダー構造を作成する再頒布可能パッケージ内のサブフォルダーを追加します。  
+13. [Redist] の下にサブフォルダーを追加して、このフォルダー構造を作成します。  
   
      \Redist\CommonConfiguration\Neutral\SimpleMath\js\  
   
-14. \Js\ フォルダーのショートカット メニューで**追加**、**新しい項目の**します。  
+14. \Js\ フォルダーのショートカットメニューで、[ **追加**]、[ **新しい項目**] の順に選択します。  
   
-15. **Visual c# アイテム**を選択、 **Web**カテゴリ、および選択し、 **JavaScript ファイル**項目。 ファイルに名前を`arithmetic.js`を選択し、**追加**ボタンをクリックします。  
+15. [ **Visual C# アイテム**] で、[ **Web** ] カテゴリを選択し、[ **JavaScript ファイル** ] 項目を選択します。 ファイルに名前を指定し、 `arithmetic.js` [ **追加** ] ボタンをクリックします。  
   
-16. Arithmetic.js には、次のコードを挿入します。  
+16. arithmetic.js に次のコードを挿入します。  
   
     ```  
     (function (global) {  
@@ -126,37 +126,37 @@ ms.locfileid: "68148832"
   
     ```  
   
-17. **ソリューション エクスプ ローラー**、arithmetic.js ファイルのショートカット メニューで**プロパティ**します。 これらのプロパティの変更を加えます。  
+17. **ソリューションエクスプローラー**の arithmetic.js ファイルのショートカットメニューで、[**プロパティ**] を選択します。 次のプロパティを変更します。  
   
-    - 設定、 **VSIX に含める**プロパティを**True**します。  
+    - [ **VSIX に含める (VSIX に含める** ) プロパティを **True**に設定します。  
   
-    - 設定、**出力ディレクトリにコピー**プロパティを**常にコピー**します。  
+    - [ **出力ディレクトリにコピーする** "プロパティ" を " **常にコピー**する" に設定します。  
   
-18. **ソリューション エクスプ ローラー**、SimpleMathVSIX プロジェクトのショートカット メニューで**ビルド**します。  
+18. **ソリューションエクスプローラー**で、Simplemの vsix プロジェクトのショートカットメニューで、[**ビルド**] を選択します。  
   
-19. プロジェクトのショートカット メニューで、ビルドが正常に完了した後は、選択**ファイル エクスプ ローラーでフォルダーを開く**します。 \Bin\debug に移動します\\、および実行`SimpleMathVSIX.vsix`をインストールします。  
+19. ビルドが正常に完了したら、プロジェクトのショートカットメニューで、[ **エクスプローラーでフォルダーを開く**] を選択します。 [\Bin\debug] に移動し、を \\ 実行し `SimpleMathVSIX.vsix` てインストールします。  
   
-20. 選択、**インストール**ボタンをクリックし、インストールが完了しました。  
+20. [ **インストール** ] をクリックし、インストールを完了します。  
   
 21. Visual Studio を再起動します。  
   
-## <a name="createSampleApp"></a> SDK を使用するサンプル アプリを作成するには  
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> SDK を使用するサンプルアプリを作成するには  
   
 1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
-2. テンプレートのカテゴリの一覧で  **JavaScript**を選択します**Windows ストア**を選び、**空のアプリ**テンプレート。  
+2. テンプレートカテゴリの一覧で、[ **JavaScript**] の下にある [ **Windows ストア**] を選択し、[ **空のアプリケーション** ] テンプレートを選択します。  
   
-3. **名前**ボックスで、指定`ArithmeticUI`します。 **[OK]** を選択します。  
+3. [ **名前** ] ボックスに、を指定し `ArithmeticUI` ます。 **[OK]** を選択します。  
   
-4. **ソリューション エクスプ ローラー**ArithmeticUI プロジェクトのショートカット メニューを開き、選択し、**追加**、**参照**します。  
+4. **ソリューションエクスプローラー**で、ArithmeticUI プロジェクトのショートカットメニューを開き、[**追加**]、[**参照**] の順に選択します。  
   
-5. **Windows**、選択**拡張**、ことに注意して**単純な算術**が表示されます。  
+5. [ **Windows**] の下で [ **拡張機能**] を選択し、 **単純な数値演算** が表示されることを確認します。  
   
-6. 選択、**単純な算術**チェック ボックスをオンにして、 **OK**ボタン。  
+6. [ **単純な数値演算** ] チェックボックスをオンにし、[ **OK** ] をクリックします。  
   
-7. **ソリューション エクスプ ローラー** **参照**、注意、**単純な算術**参照が表示されます。 展開し、を含む arithmetic.js \js\ フォルダーがあることに注意してください。 Arithmetic.js、ソース コードがインストールされていることを確認するを開くことができます。  
+7. **ソリューションエクスプローラー**の [**参照**] で、**単純な数値演算**参照が表示されていることに注意してください。 それを展開し、arithmetic.js を含む \js\ フォルダーがあることを確認します。 arithmetic.js を開いて、ソースコードがインストールされていることを確認できます。  
   
-8. Default.htm の内容を置き換えるには、次のコードを使用します。  
+8. 次のコードを使用して、default.htm の内容を置き換えます。  
   
     ```  
     <!DOCTYPE html>  
@@ -194,7 +194,7 @@ ms.locfileid: "68148832"
     </html>  
     ```  
   
-9. 次のコードを使用して \js\default.js の内容を置き換えます。  
+9. 次のコードを使用して、\js\default.js の内容を置き換えます。  
   
     ```  
     (function () {  
@@ -252,7 +252,7 @@ ms.locfileid: "68148832"
     })();  
     ```  
   
-10. このコードでは、\css\default.css の内容を置き換えます。  
+10. \Css\default.css の内容を次のコードに置き換えます。  
   
     ```  
     form {  
@@ -311,9 +311,9 @@ ms.locfileid: "68148832"
   
     ```  
   
-11. ビルドして、アプリを実行するには、F5 キーを選択します。  
+11. F5 キーを押して、アプリをビルドして実行します。  
   
-12. アプリケーションの UI で、2 つの数値を入力します。、、の操作を選択し、選択、 **=** ボタンをクリックします。 正しい結果が表示されます。  
+12. アプリ UI で、任意の2つの数値を入力し、操作を選択して、ボタンをクリックし **=** ます。 正しい結果が表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)
