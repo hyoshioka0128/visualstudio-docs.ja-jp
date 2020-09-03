@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 48c3f55b60add1691fe31c764f31673bbf1ab47b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546355"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName||
 |CheckId|CA2151|
@@ -27,7 +27,7 @@ ms.locfileid: "85546355"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 次に例を示します。
+ 透過的セキュリティ フィールドまたはセーフ クリティカル フィールドが宣言されました。 その型は、セキュリティ クリティカルとして指定されています。 たとえば、次のように入力します。
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -80,4 +80,4 @@ ms.locfileid: "85546355"
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2145.transparentmethodsshouldnotusesuppressunmanagedcodesecurity/cs/ca2145.cs#1)]
 
-### <a name="comments"></a>コメント
+### <a name="comments"></a>説明

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843889"
 ---
 # <a name="wpf-community-resources"></a>WPF コミュニティ リソース
@@ -24,7 +24,7 @@ Microsoft は、Windows Presentation Foundation (WPF) について学習した�
 ## <a name="community"></a>コミュニティ
  [WPF フォーラム](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [スタック オーバーフロー](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [WPF チーム ブログ](https://devblogs.microsoft.com/wpf/)
 
@@ -32,6 +32,6 @@ Microsoft は、Windows Presentation Foundation (WPF) について学習した�
 
  [Windows Presentation Foundation デベロッパー センター](https://www.visualstudio.com/features/wpf-vs)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
