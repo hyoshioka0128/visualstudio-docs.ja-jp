@@ -1,5 +1,5 @@
 ---
-title: Idiaenumframedata::skip |Microsoft Docs
+title: 'IDiaEnumFrameData:: Skip |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ff8b58f6d36e9ce9759e2672f7e438bc0019fc1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179498"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定された数の列挙体シーケンス内のデータ要素のフレームをスキップします。  
+列挙シーケンス内の指定された数のフレームデータ要素をスキップします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>パラメーター  
  celt  
- [in]スキップする列挙体シーケンス内のデータ要素のフレームの数。  
+ からスキップする列挙シーケンス内のフレームデータ要素の数。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップするレコードがある場合。  
+ 成功した場合はを返します。 `S_OK` それ以外の場合は、 `S_FALSE` スキップするレコードがなくなった場合はを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 27f69a3295deb8d3335878acc865314635af7c0e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387305"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
@@ -23,7 +23,7 @@ ms.locfileid: "86387305"
 > [!WARNING]
 > エミュレーターがインストールされている場合は、セットアップ プログラムがソフトウェア実行の前提条件をチェックします。 前提条件が存在しない場合、警告が表示されますが、インストールでは必要ありません。
 
- このトピックの内容は次のとおりです。
+ このトピックは、次のセクションで構成されています。
 
 - [開始する前に](#BeforeYouStart)
 
@@ -43,7 +43,7 @@ ms.locfileid: "86387305"
 
 - [Visual Studio がエミュレーターにアプリを配置しようとして行き詰まっているか、エミュレーターが他の IDE でデバッグ ターゲットとして表示されません。](#ADB)
 
-- [エミュレーターが UDP ポートを設定できなかったため、応答を停止します](#XamarinPlayer)
+- [UDP ポートを設定できなかったため、エミュレーターが応答しません](#XamarinPlayer)
 
 - [Xamarin プロジェクトにデバッガーをアタッチできません](#Skylake)
 
@@ -59,7 +59,7 @@ ms.locfileid: "86387305"
 
 - [サポート リソース](#Support)
 
-## <a name="before-you-start"></a><a name="BeforeYouStart"></a> 開始前の準備
+## <a name="before-you-start"></a><a name="BeforeYouStart"></a> 開始する前に
  トラブルシューティングを開始する前に、次のトピックを参照すると便利です。
 
 - [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -72,7 +72,7 @@ ms.locfileid: "86387305"
 > [!NOTE]
 > このメッセージは、Visual Studio Emulator for Android と Windows Phone エミュレーターの両方に適用されます。 Windows 8.1 と Windows 10 はエミュレーターをサポートします。
 
- このメッセージが表示された場合は、 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) を確認して、エミュレーターを実行できるかどうかを確認します。
+ このメッセージが表示された場合は、 [Visual Studio emulator For Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) を確認して、エミュレーターを実行できるかどうかを確認してください。
 
 ## <a name="cannot-connect-to-network-destinations-on-a-domain-or-corporate-network"></a><a name="DomainNetwork"></a> ドメインまたは企業ネットワーク上のネットワーク接続先に接続できません
  Visual Studio Emulator for Android は、独自の IP アドレスを持つ独立したデバイスとしてネットワーク上に表示されます。 これは Windows ドメインに参加せず、ドメインやワークグループの資格情報をホスト コンピューターと共有しません。
@@ -134,7 +134,7 @@ ms.locfileid: "86387305"
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     セットアップに誤りがあり、Windows 10 を使用している場合は、 [netcfg – d コマンドを使用してネットワークデバイスを再インストール](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues)することをお勧めします (セクション 6)。
+     セットアップに誤りがあり、Windows 10 を使用している場合は、 [netcfg – d コマンドを使用してネットワークデバイスを再インストール](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) することをお勧めします (セクション 6)。
 
 - これらの手順を実行しても問題が解決しない場合は、エミュレーターに干渉している可能性のあるサード パーティ ソフトウェアの情報について、「 [Emulator fails to start (first use)](#NoStart) 」をご覧ください。
 
@@ -173,7 +173,7 @@ ms.locfileid: "86387305"
 
      - Trusted Execution を無効にする
 
-       詳細については、TechNet の記事「Hyper-v を有効にして BIOS エラーを修正する方法」を参照してください。
+       詳細については、TechNet 記事「Hyper-V: How to Fix BIOS Errors Enabling Hyper-V」 (Hyper-V を有効にして BIOS エラーを修正する方法) を参照してください。
 
   5. 少なくとも 4 GB のシステム メモリがあり、リソースを大量に消費する他のプログラムおよびプロセスによって消費されていないことを確認します。
 
@@ -191,9 +191,9 @@ ms.locfileid: "86387305"
 
    一般に、Windows 8 および Hyper-V と互換性のあるソフトウェアを更新するかどうかは、製品の開発者の責任となります。
 
-   Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性がある製品には、VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、一部のバージョンの Cisco VPN クライアント、およびその他の仮想化システムがあります。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
+   次の製品は、Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性があります: VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、Cisco VPN クライアントの一部のバージョン、およびその他の仮想化システム。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
 
-   **回避策**として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには次が含まれます。
+   **回避策**として、Visual Studio との通信にエミュレーターで使用される仮想ネットワークに干渉する可能性があるすべてのサードパーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには以下のようなものがあります。
 
   - ウイルス対策アプリケーション (ネットワーク スタックにフックする)
 
@@ -237,7 +237,7 @@ ms.locfileid: "86387305"
 
      この手法を使用する場合の欠点は、新しいサード パーティ製品でサポートされていないドライバーがインストールされるたび、またはエミュレーターがインストールされるたびに、これらの手順を繰り返す必要があることです。
 
-     サード パーティ製品をアンインストールした後で、Windows Phone Emulator Internal Switch を復元する必要があります。 その手順を次に示します。
+     サード パーティ製品をアンインストールした後で、Windows Phone Emulator Internal Switch を復元する必要があります。 これを行うには、次のようにします。
 
   - Hyper V を開き、仮想スイッチ マネージャーに移動します。 「Windows Phone Emulator Internal Switch」という名前の仮想スイッチを作成し、その接続の種類を **内部ネットワーク**に設定します。
 
@@ -254,7 +254,7 @@ ms.locfileid: "86387305"
 
   この問題を解決するには、マザーボードの BIOS 設定で USB3 を無効にして、コンピューターを再起動します。 次に、Gigabyte からマザーボードの BIOS の更新プログラムがリリースされているかどうかを確認します。
 
-  詳細については、サポート技術情報の記事「 [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/kb/2693144)」を参照してください。
+  詳細については、次の内容に関するサポート技術情報の記事を参照してください: [Gigabyte システムで Hyper-V ロールのインストール後に起動できない](https://support.microsoft.com/kb/2693144)。
 
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio がエミュレーターにアプリを配置しようとして行き詰まっているか、エミュレーターが他の IDE でデバッグ ターゲットとして表示されません。
  エミュレーターが実行されていても、ADB (Android Debug Bridge) に接続されているように見えない、または ADB を利用する Android ツール (Android Studio や Eclipse など) 内で見えない場合は、エミュレーターが ADB を検索する場所を調整する必要があります。 エミュレーターはレジストリ キーを使用して、Android SDK の基本場所を識別し、そのディレクトリで \platform-tools\adb.exe ファイルを検索します。 エミュレーターで使用される Android SDK パスを変更するには、次のようにします。
@@ -267,7 +267,7 @@ ms.locfileid: "86387305"
 
   エミュレーターを再起動します。これで、ADB と関連する Android ツールにエミュレーターが接続されていることを確認できるはずです。
 
-## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>エミュレーターが UDP ポートを設定できなかったため、応答を停止します
+## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>UDP ポートを設定できなかったため、エミュレーターが応答しません
  Xamarin Player との互換性がないためにこの問題が発生する可能性があります。 エミュレーターが応答を停止しているように見える場合、または "エミュレーターはデバイスのオペレーティングシステムに接続できません: UDP ポートを設定できませんでした。  一部の機能が無効になっている可能性があります。" というエラー メッセージが表示されたりした場合は、この問題が発生している可能性があります。 次の手順を実行します。
 
 1. Xamarin Player をアンインストールします。
