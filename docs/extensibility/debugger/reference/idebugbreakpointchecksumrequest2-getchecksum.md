@@ -1,5 +1,5 @@
 ---
-title: Iデバッグブレークポイントチェックサムリクエスト2::GetChecksum |マイクロソフトドキュメント
+title: 'IDebugBreakpointChecksumRequest2:: GetChecksum |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735175"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-使用するチェックサム アルゴリズムの一意の識別子を指定して、ブレークポイント要求のドキュメント チェックサムを取得します。
+使用するチェックサムアルゴリズムの一意の識別子を指定して、ブレークポイント要求のドキュメントチェックサムを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>パラメーター
 `guidAlgorithm`\
-[in]チェックサム アルゴリズムを表す一意の識別子です。
+からチェックサムアルゴリズムの一意識別子。
 
 `pChecksumData`\
-[アウト]ブレークポイント要求のドキュメントチェックサム。
+入出力ブレークポイント要求のドキュメントチェックサム。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-バインドされるドキュメントのチェックサムが UI のチェックサムと一致するかどうかを確認する関数を次の例に示します。
+次の例は、バインドされるドキュメントのチェックサムが UI と一致するかどうかをチェックする関数を示しています。
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

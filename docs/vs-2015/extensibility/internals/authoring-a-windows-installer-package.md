@@ -12,10 +12,10 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58529dabbb52ceb751c67be24beb1d21285a1de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301133"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows インストーラー パッケージの編集
@@ -26,15 +26,15 @@ ms.locfileid: "74301133"
 ## <a name="database-entries"></a>[データベース エントリ]  
  VSPackage をインストールするには、Windows インストーラーパッケージに次のタスクを実行するためのデータベースエントリが含まれている必要があります。  
   
-- システムを検索して、VSPackage がサポートしている [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のバージョンを探します (AppSearch、CompLocator、RegLocator、DrLocator、署名を含むテーブル Windows インストーラーを使用します)。  
+- システムを検索して、サポートされている VSPackage のバージョンを探し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます (AppSearch、CompLocator、RegLocator、DrLocator、署名を含む Windows インストーラーテーブルを使用します)。  
   
-- サポートされているバージョンの [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がインストールされていない場合、または VSPackage の別のシステム要件 (LaunchCondition テーブルを使用) が満たされていない場合は、インストールをキャンセルします。  
+- サポートされているのバージョンがインストールされていない場合、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] または VSPackage の別のシステム要件が満たされていない場合 (LaunchCondition テーブルを使用)、インストールをキャンセルします。  
   
 - ディレクトリ、コンポーネント、およびファイルテーブルを使用して、VSPackage ファイルと依存ファイルをインストールします。  
   
 - VSPackage の適切な情報をレジストリに追加します (レジストリテーブルを使用します)。  
   
-- **Devenv.exe/セットアップ**を呼び出して (CustomAction テーブルを使用して) [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の VSPackage を統合します。  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](CustomAction テーブルを使用して) **devenv.exe のセットアップ**を呼び出して、の VSPackage を統合します。  
   
   詳細については、「 [Windows インストーラー](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)」を参照してください。  
   
@@ -43,13 +43,13 @@ ms.locfileid: "74301133"
   
 - InstallShield Limited Edition  
   
-   Visual Studio の **[新しいプロジェクト]** ダイアログボックスでは、InstallShield の限定バージョンを取得できます。 **[その他のプロジェクトの種類]** を展開し、 **[セットアップと配置]** を選択します。 InstallShield テンプレートを選択します。  
+   Visual Studio の [ **新しいプロジェクト** ] ダイアログボックスでは、InstallShield の限定バージョンを取得できます。 [ **その他のプロジェクトの種類** ] を展開し、[ **セットアップと配置**] を選択します。 InstallShield テンプレートを選択します。  
   
 - Windows Installer XML Toolset  
   
-   ツールセットは、XML ソースファイルから Windows インストーラーパッケージをビルドします。 ツールセットは、Microsoft オープンソースプロジェクトです。 ソースコードと実行可能ファイルは[http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/)からダウンロードできます。  
+   ツールセットは、XML ソースファイルから Windows インストーラーパッケージをビルドします。 ツールセットは、Microsoft オープンソースプロジェクトです。 ソースコードと実行可能ファイルはからダウンロードでき [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/) ます。  
   
-  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]を使用して [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] に統合される商用製品の場合は、「 [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)」を参照してください。  
+  を使用してに統合する商用製品の場合は [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 、「」を参照してください [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/) 。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Windows インストーラーによる VSPackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

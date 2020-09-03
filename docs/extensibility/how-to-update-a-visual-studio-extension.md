@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905622"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>方法: Visual Studio 拡張機能を更新する
@@ -30,13 +30,13 @@ ms.locfileid: "85905622"
 
 1. **[ツール]** メニューの **[拡張機能と更新プログラム]** をクリックします。
 
-2. 左側のウィンドウで、[**更新**] をクリックします。
+2. 左側のウィンドウで、[ **更新**] をクリックします。
 
 3. 中央のウィンドウで、インストールする更新プログラムをクリックします。
 
      更新された拡張機能のバージョン番号が、その他の情報と共に右側のウィンドウに表示されます。
 
-4. 右側のウィンドウの下部にある [**更新**] をクリックします。
+4. 右側のウィンドウの下部にある [ **更新**] をクリックします。
 
 ## <a name="to-publish-an-update-of-an-extension"></a>拡張機能の更新プログラムを公開するには
 
@@ -47,13 +47,13 @@ ms.locfileid: "85905622"
 
 2. **ソリューションエクスプローラー**で、[*ソース] 拡張子 .manifest*を開きます。
 
-3. マニフェストデザイナーで、[**バージョン**] フィールドの値を大きくします。
+3. マニフェストデザイナーで、[ **バージョン** ] フィールドの値を大きくします。
 
 4. ソリューションを保存してビルドします。
 
-5. 新しい *.vsix*ファイル ( \* プロジェクトの * \bin\debug フォルダー内) を[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web サイトにアップロードします。
+5. 新しい *.vsix* ファイル ( \* プロジェクトの * \bin\debug フォルダー内) を [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web サイトにアップロードします。
 
-     以前のバージョンの拡張機能を使用しているユーザーが**拡張機能と更新プログラム**を開くと、ツールが自動的に更新プログラムを検索するように設定されている場合、新しいバージョンが**更新プログラム**の一覧に表示されます。
+     以前のバージョンの拡張機能を使用しているユーザーが **拡張機能と更新プログラム**を開くと、ツールが自動的に更新プログラムを検索するように設定されている場合、新しいバージョンが **更新プログラム** の一覧に表示されます。
 
      更新プログラムの自動確認を有効または無効にすることが**Updates**できます (**利用可能な更新プログラムの自動検出を有効**または無効にします)。これにより、[**ツール**オプション] の [ **Check for updates**  >  **Options**  >  **環境**  >  **拡張機能と更新プログラム**] で [更新プログラムのチェック] 設定が変更されます。
 
