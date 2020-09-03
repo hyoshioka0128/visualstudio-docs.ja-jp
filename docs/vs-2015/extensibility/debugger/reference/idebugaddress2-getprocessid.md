@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress2::GetProcessID |Microsoft Docs
+title: 'IDebugAddress2:: GetProcessID |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e41e7768432f8b014edef01e80a8e85a4dc200fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165169"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-これによって表されるオブジェクトを所有するプロセスの ID を取得[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)インターフェイス。  
+この [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) インターフェイスによって表されるオブジェクトを所有するプロセスの ID を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,10 +40,10 @@ int GetProcessID (
   
 #### <a name="parameters"></a>パラメーター  
  `pProcID`  
- [out]プロセス id です。  
+ 入出力プロセス ID。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

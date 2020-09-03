@@ -1,5 +1,5 @@
 ---
-title: キーバインディング要素 |マイクロソフトドキュメント
+title: キーバインド要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703134"
 ---
-# <a name="keybindings-element"></a>キーバインディング要素
-KeyBindings 要素グループキーバインド要素およびその他のキーバインドグループ。
+# <a name="keybindings-element"></a>キーバインド要素
+キーバインド要素は、キーバインド要素とその他のキーバインドグループをグループ化します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,20 +39,20 @@ KeyBindings 要素グループキーバインド要素およびその他のキ�
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[キーバインド要素](../extensibility/keybinding-element.md)|コマンドのキーボード ショートカットを指定します。|
-|[Keybindings](../extensibility/keybindings-element.md)|グループキーバインド要素とその他のキーバインドグループ。|
+|[キーバインド要素](../extensibility/keybinding-element.md)|コマンドのキーボードショートカットを指定します。|
+|[キーバインド](../extensibility/keybindings-element.md)|キーバインド要素とその他のキーバインドグループをグループ化します。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[コマンド テーブル要素](../extensibility/commandtable-element.md)|コマンドを表す要素をすべて定義します。|
+|[CommandTable 要素](../extensibility/commandtable-element.md)|コマンドを表すすべての要素を定義します。|
 
 ## <a name="example"></a>例
 
@@ -67,4 +67,4 @@ KeyBindings 要素グループキーバインド要素およびその他のキ�
 
 ## <a name="see-also"></a>関連項目
 - [キーバインド要素](../extensibility/keybinding-element.md)
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

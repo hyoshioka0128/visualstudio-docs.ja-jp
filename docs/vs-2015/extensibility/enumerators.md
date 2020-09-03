@@ -11,42 +11,42 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65a03a8dc741ec86aca3137f49cd753722ede215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204563"
 ---
 # <a name="enumerators"></a>列挙子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このセクションでは、ソース管理プラグインが認識する必要がありますソース コントロールのプラグイン API で列挙子のデータ型を示します。  
+このセクションでは、ソース管理プラグインが認識する必要があるソース管理プラグイン API の列挙子データ型について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [コマンド コード](../extensibility/command-code-enumerator.md)  
- オプションを列挙、 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)と[SccPopulateList](../extensibility/sccpopulatelist-function.md)関数。  
+ [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)関数と[SccPopulateList](../extensibility/sccpopulatelist-function.md)関数のオプションを列挙します。  
   
  [メッセージ](../extensibility/message-enumerator.md)  
- 印刷のコールバックを使用するフラグの列挙[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)します。  
+ 印刷コールバック、 [Lptextoutproc](../extensibility/lptextoutproc.md)に使用されるフラグを列挙します。  
   
  [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)  
- ソース管理下にあるファイルの状態を指定する名前付き定数の値が含まれています。  
+ ソース管理下にあるファイルの状態を指定する名前付き定数値を格納します。  
   
  [ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)  
- ソース管理下のディレクトリの状態を指定する名前付き定数の値が含まれています。  
+ ソース管理下にあるディレクトリの状態を指定する名前付き定数値を格納します。  
   
 ## <a name="related-sections"></a>関連項目  
  [ソース管理プラグインの作成](../extensibility/internals/creating-a-source-control-plug-in.md)  
- ソース管理プラグインの SDK を定義し、含まれているリソースについて説明します。  
+ ソース管理プラグイン SDK を定義し、含まれているリソースについて説明します。  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- 指定したコマンドの詳細設定オプションのユーザーに求めます。  
+ 指定されたコマンドの詳細オプションをユーザーに表示します。  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- 現在の状態のファイルの一覧を検証します。 また、使用して、`pfnPopulate`ファイルでの条件が一致しない場合に、呼び出し元に通知するため、`nCommand`します。  
+ ファイルの一覧を調べて、現在の状態を確認します。 さらに、は関数を使用して、 `pfnPopulate` ファイルがの条件に一致しない場合に呼び出し元に通知し `nCommand` ます。  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- によって使用されるコールバック関数について説明します[SccOpenProject](../extensibility/sccopenproject-function.md) ide プラグインのソース管理からのメッセージを表示します。  
+ IDE を介してソース管理プラグインからのメッセージを表示するために [Sccopenproject](../extensibility/sccopenproject-function.md) によって使用されるコールバック関数について説明します。  
   
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)  
  ソース管理プラグイン API のすべての要素の完全な一覧を提供します。

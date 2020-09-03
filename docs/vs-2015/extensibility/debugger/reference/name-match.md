@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 742328802af7097fa0c48c82b35688ed0784ce34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205165"
 ---
-# <a name="namematch"></a>NAME_MATCH
+# <a name="name_match"></a>NAME_MATCH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-一致する名前の大文字と小文字のオプションを選択します。  
+一致する名前の case オプションを選択します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,12 +47,12 @@ public enum NameMatchOptions { 
  オプションは指定されていません。  
   
  nmCaseSensitive  
- 一致する名前が区別されることを示します。  
+ 照合する名前が大文字と小文字を区別することを示します。  
   
  nmCaseInsensitive  
- 一致する名前が大文字小文字を区別しないことを示します。  
+ 照合する名前が大文字と小文字を区別しないことを示します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  次のメソッドに引数として渡されます。  
   
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
@@ -63,15 +63,15 @@ public enum NameMatchOptions { 
   
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)   
  [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   

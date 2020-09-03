@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539764"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:参照可能なインスタンス フィールドを宣言しません
@@ -44,15 +44,15 @@ ms.locfileid: "85539764"
  この規則違反を修正するには、フィールドを `private` またはに設定 `internal` し、外部から参照できるプロパティを使用して公開します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- この規則による警告は抑制しないでください。 外部から参照できるフィールドには、プロパティで使用できない利点はありません。 また、パブリックフィールドを[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)で保護することはできません。 「 [CA2112: セキュリティで保護された型はフィールドを公開しない」を](../code-quality/ca2112-secured-types-should-not-expose-fields.md)参照してください。
+ この規則による警告は抑制しないでください。 外部から参照できるフィールドには、プロパティで使用できない利点はありません。 また、パブリックフィールドを [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)で保護することはできません。 「 [CA2112: セキュリティで保護された型はフィールドを公開しない」を](../code-quality/ca2112-secured-types-should-not-expose-fields.md)参照してください。
 
 ## <a name="example"></a>例
- 次の例は、 `BadPublicInstanceFields` この規則に違反する型 () を示しています。 `GoodPublicInstanceFields`修正されたコードを表示します。
+ 次の例は、 `BadPublicInstanceFields` この規則に違反する型 () を示しています。 `GoodPublicInstanceFields` 修正されたコードを表示します。
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
  [CA2112:セキュリティで保護された型はフィールドを公開してはなりません](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの種類に対するマネージ パッケージ フレームワークの使用 (C#) |マイクロソフトドキュメント
+title: プロジェクトの種類に対するマネージパッケージフレームワークの使用 (C#) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca9dda0b699e0f70b0c945ab9ecfe9f9f4dcda6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704119"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
-マネージ パッケージ フレームワーク (MPF) には、独自のプロジェクトの種類を実装するために使用または継承できる C# クラスが用意されています。 MPF は、Visual Studio が提供するプロジェクトの種類を期待するインターフェイスの多くを実装し、プロジェクトの種類の詳細を実装することに集中できます。
+Managed Package Framework (MPF) には、独自のプロジェクトの種類を実装するために使用または継承できる C# クラスが用意されています。 MPF は、Visual Studio が提供するプロジェクトの種類を想定している多くのインターフェイスを実装しているため、プロジェクトの種類の詳しい実装に専念することができます。
 
-## <a name="using-the-mpf-project-source-code"></a>MPF プロジェクトソースコードの使用
- プロジェクト用管理パッケージ フレームワーク (MPFProj) には、新しいプロジェクト システムを作成および管理するためのヘルパー クラスが用意されています。 MPF の他のクラスとは異なり、プロジェクト クラスは Visual Studio に付属するアセンブリには含まれません。 代わりに、プロジェクト クラスは[、プロジェクト 2013 の MPF](https://github.com/tunnelvisionlabs/MPFProj10)でソース コードとして提供されます。
+## <a name="using-the-mpf-project-source-code"></a>MPF プロジェクトのソースコードを使用する
+ プロジェクト用の Managed Package Framework (MPFProj) には、新しいプロジェクトシステムを作成および管理するためのヘルパークラスが用意されています。 MPF の他のクラスとは異なり、プロジェクトクラスは、Visual Studio に付属しているアセンブリには含まれていません。 代わりに、プロジェクトのクラスは、 [MPF でプロジェクト2013の](https://github.com/tunnelvisionlabs/MPFProj10)ソースコードとして提供されています。
 
- VSPackage ソリューションにこのプロジェクトを追加するには、次の操作を行います。
+ このプロジェクトを VSPackage ソリューションに追加するには、次の手順を実行します。
 
-1. MPFProj ファイルを*MPF プロジェクトディレクトリ*にダウンロードします。
+1. MPFProj ファイルを *Mpfprojectdir*にダウンロードします。
 
-2. *次*のブロックを変更します。
+2. *Mpfprojectdir*\Dev10\Src\CSharp\ProjectBase.file で、次のブロックを変更します。
 
 ```
 <!-- Provide a default value for $(ProjectBasePath) -->
@@ -42,7 +42,7 @@ ms.locfileid: "80704119"
 
 2. VSPackage プロジェクトをアンロードします。
 
-3. 他`<Import>`のブロックの前に次のブロックを追加して VSPackage .csproj ファイルを編集します。
+3. 他のブロックの前に次のブロックを追加して、VSPackage ファイルを編集し `<Import>` ます。
 
 ```
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />
@@ -56,18 +56,18 @@ ms.locfileid: "80704119"
 
 1. プロジェクトを保存します。
 
-2. VSPackage ソリューションを閉じてから再度開きます。
+2. VSPackage ソリューションを閉じて再度開きます。
 
-3. VSPackage プロジェクトを再度開きます。 プロジェクトベースという名前の新しいディレクトリが表示されます。
+3. VSPackage プロジェクトを再度開きます。 ProjectBase という名前の新しいディレクトリが表示できます。
 
 4. VSPackage プロジェクトに次の参照を追加します。
 
-     タスク.4.0
+     Microsoft. Build. Tasks. 4.0
 
 5. プロジェクトをビルドします。
 
 ## <a name="hierarchy-classes"></a>階層クラス
- 次の表は、プロジェクト階層をサポートする MPFProj のクラスをまとめたものです。 詳細については、「[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)」を参照してください。
+ 次の表は、プロジェクト階層をサポートする MPFProj のクラスをまとめたものです。 詳細については、「 [階層と選択](../../extensibility/internals/hierarchies-and-selection.md)」を参照してください。
 
 |クラス名|
 |----------------|
@@ -84,7 +84,7 @@ ms.locfileid: "80704119"
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
 ## <a name="document-handling-classes"></a>ドキュメント処理クラス
- 次の表は、ドキュメントの処理をサポートする MPF のクラスを示しています。 詳細については、「[プロジェクト項目を開くおよび保存](../../extensibility/internals/opening-and-saving-project-items.md)する 」を参照してください。
+ 次の表は、ドキュメントの処理をサポートする MPF のクラスを示しています。 詳細については、「 [プロジェクト項目を開いて保存](../../extensibility/internals/opening-and-saving-project-items.md)する」を参照してください。
 
 |クラス名|
 |----------------|
@@ -92,7 +92,7 @@ ms.locfileid: "80704119"
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|
 
 ## <a name="configuration-and-output-classes"></a>構成クラスと出力クラス
- 次の表は、デバッグやリリースなどの複数の構成、およびプロジェクト出力のコレクションをプロジェクトの種類でサポートできるようにする MPF のクラスを示しています。 詳細については、「[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)」を参照してください。
+ 次の表に、プロジェクトの種類がデバッグとリリース、プロジェクト出力のコレクションなどの複数の構成をサポートする MPF のクラスを示します。 詳細については、「 [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)」を参照してください。
 
 |クラス名|
 |----------------|
@@ -102,8 +102,8 @@ ms.locfileid: "80704119"
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>オートメーションサポートクラス
- 次の表は、オートメーションをサポートする MPF のクラスの一覧です。
+## <a name="automation-support-classes"></a>オートメーション-サポートクラス
+ 次の表に、プロジェクトの種類のユーザーがアドインを記述できるように、自動化をサポートする MPF のクラスを示します。
 
 |クラス名|
 |----------------|
@@ -113,8 +113,8 @@ ms.locfileid: "80704119"
 |`Microsoft.VisualStudio.Package.Automation.OAProjectItem`|
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|
 
-## <a name="properties-classes"></a>プロパティ クラス
- 次の表は、ユーザーがプロパティ ブラウザーで参照および変更できるプロパティをプロジェクトの種類に追加できるようにする、MPF のクラスを示しています。
+## <a name="properties-classes"></a>Properties クラス
+ 次の表に、ユーザーがプロパティブラウザーで参照および変更できるプロパティをプロジェクトの種類で追加できるようにする、MPF 内のクラスの一覧を示します。
 
 |クラス名|
 |----------------|

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547902"
 ---
 # <a name="safecontrols-element"></a>SafeControls 要素
@@ -46,17 +46,17 @@ ms.locfileid: "85547902"
 
 |要素|説明|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクトアイテムを表します。 この要素は、 *sharepointprojectitem.spdata*ファイルの必須のルート要素です。|
+|[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクトアイテムを表します。 この要素は、 *sharepointprojectitem.spdata* ファイルの必須のルート要素です。|
 
-## <a name="remarks"></a>Remarks
- 安全なコントロールの詳細については、「[プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
+## <a name="remarks"></a>解説
+ 安全なコントロールの詳細については、「 [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
 
 ## <a name="element-information"></a>要素情報
 
 |プロパティ|値|
 |-|-|
 |**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**スキーマ名**|SharePoint プロジェクトアイテムスキーマ|
 |**検証ファイル**|ProjectItemModelSchema|
 |**空にすることができます**|いいえ|
 

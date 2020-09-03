@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551847"
 ---
 # <a name="build-office-solutions"></a>Office ソリューションのビルド
@@ -48,21 +48,21 @@ ms.locfileid: "69551847"
 
 - プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
 
-- アプリケーションマニフェスト。ファイル名拡張子が*manifest*です。 詳細については、「 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)」を参照してください。
+- アプリケーションマニフェスト。ファイル名拡張子が *manifest*です。 詳細については、「 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)」を参照してください。
 
 - ファイル名拡張子が *.vsto*の配置マニフェスト。 詳細については、「 [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)」を参照してください。
 
 - プログラムデータベース (*PDB*) ファイル。
 
 > [!NOTE]
-> ドキュメント レベルのソリューションを、ローカル コンピューターではなくリモートの場所に作成する場合は、アプリケーションのセキュリティ センターにある信頼できる場所のリストに完全修飾パスを追加します。 詳細については、「[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)でドキュメントへの信頼を付与する」を参照してください。
+> ドキュメント レベルのソリューションを、ローカル コンピューターではなくリモートの場所に作成する場合は、アプリケーションのセキュリティ センターにある信頼できる場所のリストに完全修飾パスを追加します。 詳細については、「 [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)でドキュメントへの信頼を付与する」を参照してください。
 
 ### <a name="application-level-projects"></a>アプリケーションレベルのプロジェクト
  VSTO アドインプロジェクトをビルドすると、次の項目がプロジェクト出力に含まれます。
 
 - プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
 
-- アプリケーションマニフェスト。ファイル名拡張子が*manifest*です。 詳細については、「 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)」を参照してください。
+- アプリケーションマニフェスト。ファイル名拡張子が *manifest*です。 詳細については、「 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)」を参照してください。
 
 - ファイル名拡張子が *.vsto*の配置マニフェスト。 詳細については、「 [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)」を参照してください。
 
@@ -79,24 +79,24 @@ ms.locfileid: "69551847"
   この情報は、Outlook がフォーム領域を読み込むために必要になります。
 
 ## <a name="referenced-assemblies"></a>参照アセンブリ
- Office ソリューションのビルド プロジェクトからアセンブリ (クラス ライブラリ プロジェクトを含む) を参照できます。 各参照先アセンブリには、 **［ローカル コピー］** というプロパティがあります。 **［ローカル コピー］** では、アセンブリを出力ディレクトリにコピーするかどうかを指定します。 既定では **true**に設定されています。 **［ローカル コピー］** が **true** に設定されている参照先アセンブリは、すべて出力ディレクトリにコピーされます。
+ Office ソリューションのビルド プロジェクトからアセンブリ (クラス ライブラリ プロジェクトを含む) を参照できます。 各参照先アセンブリには、 **［ローカル コピー］** というプロパティがあります。 **［ローカル コピー］** では、アセンブリを出力ディレクトリにコピーするかどうかを指定します。 既定では、 **true**に設定されています。 **［ローカル コピー］** が **true** に設定されている参照先アセンブリは、すべて出力ディレクトリにコピーされます。
 
 ## <a name="security-during-the-build-process"></a>ビルド処理中のセキュリティ
  ビルド処理中、Visual Studio は、ソリューションに信頼を付与するように、開発用コンピューター上のセキュリティ設定を自動的に構成します。 これにより、デバッグしながらソリューションを実行できるようになります。
 
  Office プロジェクトでは、発行者を確認するために証明書が使用されます。 Visual Studio は、Office ソリューションを識別するための一時的な証明書を自動的に作成し、その一時的な証明書を信頼するように開発コンピューターを構成します。
 
- 詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
+ 詳細については、「 [Office ソリューションのセキュリティ保護](../vsto/securing-office-solutions.md)」を参照してください。
 
 ### <a name="network-projects"></a>ネットワークプロジェクト
  アセンブリまたはドキュメントの場所がネットワーク共有上に存在している場合は、ローカル (User レベル) セキュリティ ポリシーを更新するだけでは、ソリューションを実行できるようになりません。 管理者は、ソリューションの実行前に、コンピューター (Machine) レベルで、ネットワーク共有上のアセンブリとドキュメントに完全な信頼を付与する必要があります。 セキュリティポリシーを設定する方法の詳細については、「 [Office ソリューションのセキュリティ保護](../vsto/securing-office-solutions.md)」を参照してください。
 
- ドキュメント レベルのプロジェクトでは、Office の信頼できるフォルダーのリストに、ドキュメントの完全修飾位置を追加する必要もあります。 詳細については、「[ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
+ ドキュメント レベルのプロジェクトでは、Office の信頼できるフォルダーのリストに、ドキュメントの完全修飾位置を追加する必要もあります。 詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
 ## <a name="change-the-platform-target"></a>プラットフォームターゲットの変更
  既定では、Office プロジェクトのプラットフォーム ターゲットは **Any CPU**です。 通常、この設定を変更する必要はありません。 **Any CPU** プラットフォーム ターゲット設定でビルドされた Officeソリューションは、32 ビット バージョンと 64 ビット バージョンの Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] または [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]で実行するようになります。
 
- 64 ビット バージョンの Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] または [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]でのみ実行するソリューションを作成していて、そのソリューションからネイティブの 64 ビット API を呼び出す場合は、プラットフォーム ターゲットを x64 に限定して設定する必要があります。 プラットフォームターゲット設定の変更の詳細については[、「方法:ターゲットプラットフォーム](../ide/how-to-configure-projects-to-target-platforms.md)にプロジェクトを構成します。
+ 64 ビット バージョンの Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] または [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]でのみ実行するソリューションを作成していて、そのソリューションからネイティブの 64 ビット API を呼び出す場合は、プラットフォーム ターゲットを x64 に限定して設定する必要があります。 プラットフォームターゲット設定の変更の詳細については、「 [方法: プロジェクトをターゲットプラットフォームに構成](../ide/how-to-configure-projects-to-target-platforms.md)する」を参照してください。
 
  プラットフォーム ターゲットを x64 に設定すると、そのソリューションは 32 ビット バージョンの Windows または Office では実行できなくなります。 x64 プラットフォーム ターゲットには、64 ビット プロセスで実行するソリューションが必要になります。
 
@@ -105,9 +105,9 @@ ms.locfileid: "69551847"
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |[Office プロジェクトのデバッグ](../vsto/debugging-office-projects.md)|Office プロジェクトのデバッグに関する問題について説明します。|
-|[チュートリアル: Excel 用のドキュメントレベルのカスタマイズを初めて作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。|
+|[チュートリアル: 初めての Excel 用ドキュメントレベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。|
 |[方法: 無効になっている VSTO アドインを再度有効にする](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|ハードまたはソフトに無効化された VSTO アドインを再度有効にする方法について説明します。|
 |[Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)|Office ソリューションの作成に関する情報と、ソリューション内のアセンブリの役割に関する情報へのリンクが掲載されています。|

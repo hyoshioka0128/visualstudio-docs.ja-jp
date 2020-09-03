@@ -1,5 +1,5 @@
 ---
-title: ウィザード インターフェイス (IDTWizard) |マイクロソフトドキュメント
+title: Wizard インターフェイス (IDTWizard) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb1c8d728a76097321e4e1f16640cab97599d6ba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703274"
 ---
 # <a name="wizard-interface-idtwizard"></a>ウィザード インターフェイス (IDTWizard)
-統合開発環境 (IDE) は、<xref:EnvDTE.IDTWizard>ウィザードとの通信にインターフェイスを使用します。 ウィザードは、IDE にインストールするためにこのインターフェイスを実装する必要があります。
+統合開発環境 (IDE: integrated development environment) は、インターフェイスを使用し <xref:EnvDTE.IDTWizard> てウィザードと通信します。 ウィザードは、IDE にインストールするために、このインターフェイスを実装する必要があります。
 
- <xref:EnvDTE.IDTWizard.Execute%2A>このメソッドは、インターフェイスに関連付けられている<xref:EnvDTE.IDTWizard>唯一のメソッドです。 ウィザードはこのメソッドを実装し、IDE はインターフェイスでメソッドを呼び出します。 メソッドのシグネチャを次の例に示します。
+ メソッドは、 <xref:EnvDTE.IDTWizard.Execute%2A> インターフェイスに関連付けられている唯一のメソッドです <xref:EnvDTE.IDTWizard> 。 ウィザードはこのメソッドを実装し、IDE はインターフェイスに対してメソッドを呼び出します。 次の例は、メソッドのシグネチャを示しています。
 
 ```
 /* IDTWizard Method */
@@ -34,27 +34,27 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- 開始メカニズムは、**新しいプロジェクト**ウィザードと**新しい項目の追加**ウィザードの両方で似ています。 開始するには、Dteinternal.h で定義された<xref:EnvDTE.IDTWizard>インターフェイスを呼び出します。 唯一の違いは、インターフェイスが呼び出されたときにインターフェイスに渡されるコンテキストとカスタム パラメータのセットです。
+ 開始メカニズムは、 **新しいプロジェクト** と **新しい項目の追加** ウィザードの両方で似ています。 どちらかを開始するには、 <xref:EnvDTE.IDTWizard> Dteinternal. h で定義されているインターフェイスを呼び出します。 唯一の違いは、インターフェイスが呼び出されたときにインターフェイスに渡されるコンテキストとカスタムパラメーターのセットです。
 
- 以下の情報は、ウィザード<xref:EnvDTE.IDTWizard>が IDE で動作するために実装する必要[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]があるインターフェイスについて説明します。 IDE は、<xref:EnvDTE.IDTWizard.Execute%2A>ウィザードでメソッドを呼び出し、次のメソッドを渡します。
+ ここでは、 <xref:EnvDTE.IDTWizard> IDE で動作するためにウィザードで実装する必要があるインターフェイスについて説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 IDE は、 <xref:EnvDTE.IDTWizard.Execute%2A> ウィザードでメソッドを呼び出し、次のように渡します。
 
 - DTE オブジェクト
 
-     DTE オブジェクトは、オートメーション モデルのルートです。
+     DTE オブジェクトは、オートメーションモデルのルートです。
 
-- コード セグメントに示すように、ウィンドウ ダイアログ ボックスのハンドル`hwndOwner ([in] long)`。
+- コードセグメントに示されているように、ウィンドウダイアログボックスを表示するハンドル `hwndOwner ([in] long)` 。
 
-     ウィザードでは、ウィザード`hwndOwner`ダイアログ ボックスの親としてこれを使用します。
+     ウィザードでは、これを `hwndOwner` ウィザードダイアログボックスの親として使用します。
 
-- コード セグメントに示すように、SAFEARRAY のバリアントとしてインターフェイスに渡されるコンテキスト`[in] SAFEARRAY (VARIANT)* ContextParams`パラメータです。
+- コードセグメントに示されているように、SAFEARRAY のバリアントとしてインターフェイスに渡されるコンテキストパラメーター `[in] SAFEARRAY (VARIANT)* ContextParams` 。
 
-     コンテキスト パラメーターには、開始するウィザードの種類とプロジェクトの現在の状態に固有の値の配列が含まれます。 IDE は、コンテキストパラメータをウィザードに渡します。 詳細については、「コンテキスト[パラメータ](../../extensibility/internals/context-parameters.md)」を参照してください。
+     コンテキストパラメーターには、開始するウィザードの種類とプロジェクトの現在の状態に固有の値の配列が含まれます。 IDE は、コンテキストパラメーターをウィザードに渡します。 詳細については、「 [コンテキストパラメーター](../../extensibility/internals/context-parameters.md)」を参照してください。
 
-- コード セグメントに示すように、SAFEARRAY のバリアントとしてインターフェイスに渡されるカスタム`[in] SAFEARRAY (VARIANT)* CustomParams`パラメータです。
+- コードセグメントに示されているように、SAFEARRAY のバリアントとしてインターフェイスに渡されるカスタムパラメーター `[in] SAFEARRAY (VARIANT)* CustomParams` 。
 
-     カスタム パラメータには、ユーザー定義パラメータの配列が含まれます。 vsz ファイルは、IDE にカスタム パラメータを渡します。 値はステートメントによって`Param=`決定されます。 詳細については、「[カスタム パラメータ](../../extensibility/internals/custom-parameters.md)」を参照してください。
+     カスタムパラメーターには、ユーザー定義パラメーターの配列が含まれています。 .Vsz ファイルは、IDE にカスタムパラメーターを渡します。 値は、ステートメントによって決定され `Param=` ます。 詳細については、「 [カスタムパラメーター](../../extensibility/internals/custom-parameters.md)」を参照してください。
 
-- インターフェイスの戻り値は次のとおりです。
+- インターフェイスの戻り値は、
 
     ```
     wizardResultSuccess = -1,
@@ -63,7 +63,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)
 - [カスタム パラメーター](../../extensibility/internals/custom-parameters.md)
 - [ウィザード](../../extensibility/internals/wizards.md)

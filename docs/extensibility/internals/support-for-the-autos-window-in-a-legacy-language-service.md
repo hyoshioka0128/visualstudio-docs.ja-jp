@@ -1,5 +1,5 @@
 ---
-title: 旧式言語サービスの自動ウィンドウのサポート |マイクロソフトドキュメント
+title: 従来の言語サービスでの [自動変数] ウィンドウのサポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704884"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>従来の言語サービスでの自動変数ウィンドウのサポート
-**Autos**ウィンドウには、デバッグ中のプログラムが一時停止したとき (ブレークポイントまたは例外が原因で) スコープ内の変数やパラメーターなどの式が表示されます。 式には、ローカルまたはグローバル変数、およびローカル スコープで変更されたパラメーターを含めることができます。 **また、[自動**変数] ウィンドウには、クラス、構造体、またはその他の型のインスタンス化を含めることもできます。 式エバリュエーターが評価できるものは **、[自動**変数] ウィンドウに表示される可能性があります。
+[ **自動変数** ] ウィンドウには、デバッグ中のプログラムが一時停止されている場合 (ブレークポイントまたは例外によって)、スコープ内にある変数やパラメーターなどの式が表示されます。 式には、変数、ローカルまたはグローバル、およびローカルスコープで変更されたパラメーターを含めることができます。 [ **自動変数** ] ウィンドウには、クラス、構造体、またはその他の型のインスタンス化を含めることもできます。 式エバリュエーターで評価できるものは、[ **自動変数** ] ウィンドウに表示される可能性があります。
 
- 管理パッケージ フレームワーク (MPF) は **、[自動**変数] ウィンドウを直接サポートしません。 ただし、メソッドをオーバーライドした<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>場合は、[自動変数] ウィンドウに表示される式の一覧**を**返すことができます。
+ Managed package framework (MPF) では、[ **自動変数** ] ウィンドウの直接サポートは提供されません。 ただし、メソッドをオーバーライドする場合は、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> [ **自動変数** ] ウィンドウに表示される式の一覧を返すことができます。
 
-## <a name="implementing-support-for-the-autos-window"></a>自動ウィンドウのサポートの実装
- **Autos**ウィンドウをサポートするために必要なのは、<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A><xref:Microsoft.VisualStudio.Package.LanguageService>クラスにメソッドを実装することだけです。 ソース ファイル内の場所を指定して、どの式を **[自動**変数] ウィンドウに表示するかを実装で決定する必要があります。 このメソッドは、各文字列が 1 つの式を表す文字列のリストを返します。 の戻り値<xref:Microsoft.VisualStudio.VSConstants.S_OK>は、リストに式が含まれていること<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>を示し、表示する式がないことを示します。
+## <a name="implementing-support-for-the-autos-window"></a>[自動変数] ウィンドウのサポートの実装
+ [ **自動変数** ] ウィンドウをサポートするために必要なのは、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> クラスにメソッドを実装することだけです <xref:Microsoft.VisualStudio.Package.LanguageService> 。 の実装では、ソースファイル内の場所を指定して、[ **自動変数** ] ウィンドウに式を表示する必要があることを決定する必要があります。 メソッドは、各文字列が単一の式を表す文字列のリストを返します。 戻り値は、 <xref:Microsoft.VisualStudio.VSConstants.S_OK> リストに式が含まれていることを示し、 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> は表示する式が存在しないことを示します。
 
- 返される実際の式は、コード内のその位置に表示される変数またはパラメーターの名前です。 これらの名前は式エバリュエーターに渡され、値と型を取得し、その後**Autos**ウィンドウに表示されます。
+ 実際に返される式は、コード内のその場所に表示される変数またはパラメーターの名前です。 これらの名前は、式エバリュエーターに渡され、値と型を取得して、[ **自動変数** ] ウィンドウに表示されます。
 
 ### <a name="example"></a>例
- 次の例は、解析の理由<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A><xref:Microsoft.VisualStudio.Package.ParseReason>を使用してメソッドから式のリストを<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>取得するメソッドの実装を示しています。 各式は、インターフェイスを実装する`TestVsEnumBSTR`としてラップされます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>。
+ 次の例は、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 解析理由を使用してメソッドから式のリストを取得するメソッドの実装を示して <xref:Microsoft.VisualStudio.Package.ParseReason> います。 各式は、インターフェイスを実装するとしてラップされ `TestVsEnumBSTR` <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> ます。
 
- メソッドと`GetAutoExpressionsCount``GetAutoExpression`メソッドはオブジェクトの`TestAuthoringSink`カスタム メソッドであり、この例をサポートするために追加されました。 パーサーによってオブジェクトに追加された式に (`TestAuthoringSink`<xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>メソッドを呼び出すことによって) パーサーの外部からアクセスできる方法を表します。
+ `GetAutoExpressionsCount` `GetAutoExpression` メソッドとメソッドは、オブジェクトのカスタムメソッドであり、 `TestAuthoringSink` この例をサポートするために追加されています。 これは、パーサーに `TestAuthoringSink` よって (メソッドを呼び出すことによって) オブジェクトに追加された式 <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> がパーサーの外部でアクセスできる1つの方法を表します。
 
 ```csharp
 using Microsoft.VisualStudio;

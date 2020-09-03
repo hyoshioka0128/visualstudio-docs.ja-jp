@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY |マイクロソフトドキュメント
+title: GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736646"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
-使用可能なデバッグ エンジンの一意の識別子の配列について説明します。
+使用可能なデバッグエンジンの一意の識別子の配列を記述します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,17 +46,17 @@ public struct GUID_ARRAY
 配列内の一意の識別子の数。
 
 `Members`\
-一意の識別子を含む配列。
+一意の識別子を格納している配列。
 
-## <a name="remarks"></a>Remarks
-この構造体は、[メソッド](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)によって返されます。
+## <a name="remarks"></a>解説
+この構造体は、 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) メソッドによって返されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: Msdbg.h
+ヘッダー: Msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

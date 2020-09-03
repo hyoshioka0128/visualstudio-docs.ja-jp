@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672725"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules によってシェイプの位置とサイズが制限される
@@ -25,7 +25,7 @@ ms.locfileid: "72672725"
 
  次の例では、四角形の形状を固定サイズのバー (水平または垂直) に制限しています。 ユーザーが角または辺をドラッグすると、[高さ] と [幅] の2つの許可された構成が反転されます。
 
- 境界ルールは <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> から派生したクラスです。 ルールのインスタンスは、次のような形で作成されます。
+ 境界規則は、から派生したクラスです <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> 。 ルールのインスタンスは、次のような形で作成されます。
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -68,4 +68,4 @@ public class BarBoundsRule: BoundsRules
  必要に応じて、場所とサイズの両方を制限できることに注意してください。
 
 ## <a name="see-also"></a>参照
- [変更に応答して反映する](../modeling/responding-to-and-propagating-changes.md)<xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [変更内容への対応および変更内容の反映](../modeling/responding-to-and-propagating-changes.md)

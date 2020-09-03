@@ -1,5 +1,5 @@
 ---
-title: レガシー言語サービスでの単語補完 |マイクロソフトドキュメント
+title: 従来の言語サービスでの単語補完 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703173"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>従来の言語サービスでの単語補完
-単語補完は、部分的に入力された単語の欠落している文字を埋めます。 完了可能な入力が 1 つだけの場合は、入力時に単語が完了します。 部分単語が複数の可能性に一致する場合は、候補の一覧が表示されます。 完了文字は、識別子に使用されない任意の文字にすることができます。
+単語入力補完は、部分的に入力された単語の不足している文字を入力します。 候補が1つしかない場合は、入力候補文字が入力されると、その単語が完成します。 単語の一部が複数の可能性に一致する場合、候補の一覧が表示されます。 完了文字には、識別子に使用されない任意の文字を指定できます。
 
- レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 詳細については、「[エディタと言語サービスの拡張](../../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 詳細については、「 [エディターと言語サービスの拡張](../../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
 
 ## <a name="implementation-steps"></a>実装手順
 
-1. ユーザーが**IntelliSense**メニューから**完全な単語**を選択すると<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>、コマンドが言語サービスに送信されます。
+1. ユーザーが**IntelliSense**メニューから [ **Complete Word** ] を選択すると、 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> コマンドが言語サービスに送信されます。
 
-2. この<xref:Microsoft.VisualStudio.Package.ViewFilter>クラスはコマンドをキャッチし、<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>の解析理由を使用<xref:Microsoft.VisualStudio.Package.ParseReason>してメソッドを呼び出します。
+2. クラスは、 <xref:Microsoft.VisualStudio.Package.ViewFilter> コマンドをキャッチし、 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> の解析の理由でメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.ParseReason> ます。
 
-3. 次<xref:Microsoft.VisualStudio.Package.Source>に、このクラス<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>はメソッドを呼び出して、可能な単語補完のリストを取得し、クラスを使用して<xref:Microsoft.VisualStudio.Package.CompletionSet>ツール ヒント リストに単語を表示します。
+3. <xref:Microsoft.VisualStudio.Package.Source>次に、クラスはメソッドを呼び出して、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 使用可能な単語入力候補の一覧を取得し、クラスを使用して、ツールヒントの一覧に単語を表示し <xref:Microsoft.VisualStudio.Package.CompletionSet> ます。
 
-    一致する単語が 1 つだけ<xref:Microsoft.VisualStudio.Package.Source>の場合、クラスは単語を完成させます。
+    一致する単語が1つしかない場合、 <xref:Microsoft.VisualStudio.Package.Source> クラスは単語を完了します。
 
-   または、識別子の最初の文字が入力されたときに<xref:Microsoft.VisualStudio.Package.TokenTriggers>スキャナーがトリガ値を返す場合、<xref:Microsoft.VisualStudio.Package.Source>クラスはこれを検出し、解析理由を<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>指定してメソッドを呼び出<xref:Microsoft.VisualStudio.Package.ParseReason>します。 この場合、パーサーはメンバー選択文字の存在を検出し、メンバーのリストを提供する必要があります。
+   また、 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 識別子の最初の文字が入力されたときにスキャナーがトリガーの値を返す場合、 <xref:Microsoft.VisualStudio.Package.Source> クラスはこれを検出し、 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> の解析の理由でメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.ParseReason> ます。 この場合、パーサーはメンバー選択文字の存在を検出し、メンバーの一覧を提供する必要があります。
 
-## <a name="enabling-support-for-the-complete-word"></a>完全な単語のサポートを有効にする
- 単語補完のサポートを有効にするには、`CodeSense`言語パッケージに関連付<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>けられたユーザー属性に渡される名前付きパラメーターを設定します。 これにより、クラス<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>のプロパティが<xref:Microsoft.VisualStudio.Package.LanguagePreferences>設定されます。
+## <a name="enabling-support-for-the-complete-word"></a>入力候補のサポートを有効にする
+ Word 入力候補のサポートを有効にするには、 `CodeSense` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 言語パッケージに関連付けられたユーザー属性に渡される名前付きパラメーターを設定します。 これにより、クラスのプロパティが設定され <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ます。
 
- パーサーは、ワード完了が動作するために、解析理由値<xref:Microsoft.VisualStudio.Package.ParseReason>に応答して宣言のリストを返す必要があります。
+ ワードコンプリートを操作するには、解析の理由値に応じて、パーサーが宣言の一覧を返す必要があり <xref:Microsoft.VisualStudio.Package.ParseReason> ます。
 
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>解析ソース メソッドで完全な単語を実装する
- 単語補完の場合、<xref:Microsoft.VisualStudio.Package.Source>クラスはクラス<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>のメソッドを<xref:Microsoft.VisualStudio.Package.AuthoringScope>呼び出して、一致する可能性のある単語のリストを取得します。 リストは、クラスから派生したクラスで実装する<xref:Microsoft.VisualStudio.Package.Declarations>必要があります。 実装する<xref:Microsoft.VisualStudio.Package.Declarations>必要があるメソッドの詳細については、クラスを参照してください。
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>ParseSource メソッドに Complete Word を実装する
+ 単語の補完のために、クラスはクラスのメソッドを呼び出して、 <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> 単語の一致候補のリストを取得します。 クラスから派生したクラスにリストを実装する必要があり <xref:Microsoft.VisualStudio.Package.Declarations> ます。 実装する <xref:Microsoft.VisualStudio.Package.Declarations> 必要のあるメソッドの詳細については、クラスを参照してください。
 
- リストに単語が 1 つだけ含まれている場合<xref:Microsoft.VisualStudio.Package.Source>、クラスは単語の一部の代わりに自動的にその単語を挿入します。 リストに複数の単語が含まれている場合、<xref:Microsoft.VisualStudio.Package.Source>クラスはツール ヒント リストを表示し、ユーザーが適切な選択肢を選択できます。
+ リストに1つの単語だけが含まれている場合、クラスは、 <xref:Microsoft.VisualStudio.Package.Source> その単語を部分語の代わりに自動的に挿入します。 リストに複数の単語が含まれている場合、クラスは、 <xref:Microsoft.VisualStudio.Package.Source> ユーザーが適切な選択を選択できるツールヒントリストを提示します。
 
- また、「<xref:Microsoft.VisualStudio.Package.Declarations>[レガシー言語サービスのメンバー完了」で](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)のクラス実装の例も参照してください。
+ また、「 <xref:Microsoft.VisualStudio.Package.Declarations> [従来の言語サービスでのメンバー入力候補](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)」にあるクラス実装の例も参照してください。

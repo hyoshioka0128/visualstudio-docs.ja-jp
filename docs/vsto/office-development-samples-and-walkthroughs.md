@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551681"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 開発のサンプルとチュートリアル
@@ -51,7 +51,7 @@ ms.locfileid: "69551681"
 
 |トピック|説明|
 |-----------|-----------------|
-|[はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|セットアップ、プロジェクト テンプレート、Office プライマリ相互運用機能アセンブリ、および Office 開発の新機能に関する情報へのリンクが掲載されています。|
+|[Visual Studio で &#40;Office 開発を開始する&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|セットアップ、プロジェクト テンプレート、Office プライマリ相互運用機能アセンブリ、および Office 開発の新機能に関する情報へのリンクが掲載されています。|
 |[Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)|マネージド コードを使用する Office ソリューションの動作について開発者とエンド ユーザーの視点から説明し、マネージド コードと Office ドキュメントや Office アプリケーションの連携に関する情報を示します。|
 |[Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)|Visual Studio の Office 開発を使用したプログラミングについてよく寄せられる質問の一覧と、一般的な問題の解決に役立つトピックへのリンクを示します。|
 |[Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)|Microsoft Office ソリューションの作成方法に関する情報、およびソリューション内のアセンブリの役割に関する情報へのリンクを示します。|

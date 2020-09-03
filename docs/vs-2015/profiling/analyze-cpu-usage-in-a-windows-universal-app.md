@@ -16,10 +16,10 @@ ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: def581f547db19a8db4cebc4d63739ff09bb5fab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531665"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Windows ユニバーサル アプリでの CPU 使用率の分析
@@ -27,7 +27,7 @@ ms.locfileid: "85531665"
 
 Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- アプリのパフォーマンスの問題を調査する必要がある場合、まず CPU の使用状況を理解することから始めることができます。 **CPU 使用率** ツールは、CPU がコードを実行する際、どこで時間を費やしているかを示します。 特定のシナリオに重点を置いて、1つの診断セッションで CPU 使用率を[XAML UI 応答性](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)ツール、 [Cpu 使用率ツール](../profiling/cpu-usage.md)ツール、または両方のツールで実行できます。  
+ アプリのパフォーマンスの問題を調査する必要がある場合、まず CPU の使用状況を理解することから始めることができます。 **CPU 使用率** ツールは、CPU がコードを実行する際、どこで時間を費やしているかを示します。 特定のシナリオに重点を置いて、1つの診断セッションで CPU 使用率を [XAML UI 応答性](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) ツール、 [Cpu 使用率ツール](../profiling/cpu-usage.md) ツール、または両方のツールで実行できます。  
   
 > [!NOTE]
 > **CPU 使用率**ツールは、Windows Phone Silverlight 8.1 アプリには使用できません。  
@@ -47,7 +47,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
   
 4. アプリをビルドして、試してみてください。アプリは、CPU 使用率データ分析の一般的なケースを示すのに十分です。  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>CPU 使用率データの収集  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> CPU 使用率データの収集  
  ![シミュレーターでアプリのリリース ビルドを実行する](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Visual Studio で、配置ターゲットを [**シミュレーター**] に設定し、ソリューション構成を [**リリース**] に設定します。  
@@ -72,7 +72,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
   
    ![CpuUsage レポート](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a><a name="BKMK_Analyze_the_CPU_Usage_report"></a>CPU 使用率レポートの分析  
+## <a name="analyze-the-cpu-usage-report"></a><a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 使用率レポートの分析  
   
 ### <a name="cpu-utilization-timeline-graph"></a><a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 使用状況タイムライン グラフ  
  ![Cpu 使用率 &#40;% &#41; タイムライングラフ](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
@@ -105,7 +105,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 |![ステップ 3](../profiling/media/procguid-3.png "ProcGuid_3")|セカンド レベル ノードの子はユーザー コード メソッドおよび非同期ルーチンで、セカンド レベル システムとフレームワーク コードによって呼び出される、または作成されます。|  
 |![ステップ 4](../profiling/media/procguid-4.png "ProcGuid_4")|メソッドの子ノードには、親メソッドの呼び出しのみのデータが含まれます。 **[外部コードの表示]** がオフのとき、アプリ メソッドには **[外部コード]** ノードが含まれる場合もあります。|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>外部コード  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> 外部コード  
  外部コードは、作成したコードによって実行されるシステムおよびフレームワーク コンポーネント内の関数で構成されます。 外部コードには、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行う関数が含まれます。 ほとんどの場合、外部コードに関心がなく、CPU 使用率コールツリーはユーザーメソッドの外部関数を1つの **[外部コード]** ノードに収集します。  
   
  外部コードのコール パスを表示する場合、 **[フィルター ビュー]** リストから **[外部コードの表示]** をクリックし、 **[適用]** をクリックします。  
@@ -128,9 +128,9 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 |**セルフ CPU (%)**|![自己 % 演算式](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 選択した時間範囲におけるアプリの CPU アクティビティのうち、関数の呼び出しが使用した割合です。ただし、関数から呼び出された関数のアクティビティは除きます。|  
 |**合計 CPU (ミリ秒)**|選択した時間範囲内で、関数への呼び出しおよび関数が呼び出した関数によって使用されたミリ秒です。|  
 |**セルフ CPU (ミリ秒)**|選択した時間範囲内で、関数への呼び出しおよび関数が呼び出した関数によって使用されたミリ秒です。|  
-|**モジュール**|関数が含まれるモジュールの名前です。あるいは、[外部コード] ノード内の関数が含まれるモジュールの数です。|  
+|**[Module]**|関数が含まれるモジュールの名前です。あるいは、[外部コード] ノード内の関数が含まれるモジュールの数です。|  
   
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>CPU 使用率コールツリー内の非同期関数  
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コールツリー内の非同期関数  
  コンパイラが非同期メソッドを検出すると、メソッドの実行を制御するために非表示のクラスを作成します。 概念的に言って、クラスとはコンパイラによって生成された関数のリストを含んだステート マシンです。これらの関数は、元のメソッドの操作を非同期で呼び出したり、それに必要なコールバック、スケジューラ、および反復子を正しく呼び出したりします。 元のメソッドが親メソッドによって呼び出されると、ランタイムは親の実行コンテキストからメソッドを削除し、アプリの実行を制御するシステムとフレームワーク コードのコンテキストにある非表示のクラスのメソッドを実行します。 非同期のメソッドは、多くの場合、1 つ以上の異なるスレッドで実行されます (必ずそうなるわけではありません)。 このコードは、CPU 使用率コール ツリーで、ツリーのトップ ノードのすぐ下にある **[外部コード]** ノードの子として表示されます。  
   
  これをこの例で表示するには、タイムラインで `GetMaxNumberAsyncButton_Click` セグメントを再度選択します。  
@@ -156,7 +156,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
   
      診断とパフォーマンス ハブで新しいセッションを作成し、XAML UI 応答性ツールと CPU 使用率ツールの両方を追加します。 コレクション シナリオを実行します。 ここまで読み進めることができた場合、レポートには既にわかっていること以外の情報はないでしょう。しかし、2 つのメソッドの **UI スレッド使用状況**のタイムライン グラフの違いは歴然としています。 複雑な実世界のアプリでは、ツールを組み合わせて使用することは非常に役立ちます。  
   
-## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a>Mainpage.xaml  
+## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> Mainpage.xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
   
 ```  
   
-## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a>MainPage.xaml.cs  
+## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

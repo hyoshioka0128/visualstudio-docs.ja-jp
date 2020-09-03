@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference |Microsoft Docs
+title: 'IDebugObject:: IsNullReference |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd116b236eb57e2fab638cfaa8412167a6d1180f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188887"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
@@ -40,13 +40,13 @@ int IsNullReference(
   
 #### <a name="parameters"></a>パラメーター  
  `pfIsNull`  
- [out]0 以外を返します (`TRUE`) 0 を返しますそれ以外の場合、このオブジェクトが null 参照。 場合 (`FALSE`)。  
+ 入出力`TRUE`このオブジェクトが null 参照の場合は0以外 () を返します。それ以外の場合は 0 () を返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- Null 参照は、空のオブジェクトまたはオブジェクトに割り当てられていないを意味します。  
+## <a name="remarks"></a>注釈  
+ Null 参照は、空のオブジェクト、またはに割り当てられていないオブジェクトを意味します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

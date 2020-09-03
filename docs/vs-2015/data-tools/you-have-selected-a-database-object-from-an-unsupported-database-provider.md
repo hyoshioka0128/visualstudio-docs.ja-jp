@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 05a4407eba52ec3940b70ffab220ef354af90e9d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657785"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>サポートされていないデータベース プロバイダーのデータベース オブジェクトが選択されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) では、SQL Server (<xref:System.Data.SqlClient>) の .NET Framework Data Provider のみがサポートされています。 **[OK]** をクリックし、サポートされないデータベース プロバイダーからオブジェクトの処理を続けることもできますが、実行時に予期しない動作が発生することがあります。
+() では、 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] SQL Server () の .NET Framework Data Provider のみがサポートされてい <xref:System.Data.SqlClient> ます。 **[OK]** をクリックし、サポートされないデータベース プロバイダーからオブジェクトの処理を続けることもできますが、実行時に予期しない動作が発生することがあります。
 
 > [!NOTE]
 > .NET Framework Data Provider for SQL Server を使用するデータ接続のみがサポートされます。
@@ -28,7 +28,7 @@ ms.locfileid: "72657785"
 
 - **[OK]** をクリックして、サポートされないデータベース プロバイダーを使用する接続にマップされるエンティティ クラスのデザインを続行します。 サポートされないデータベース プロバイダーを使用すると、予期しない動作が発生することがあります。
 
-     -または-
+     \- または -
 
 - **[キャンセル]** をクリックします。
 

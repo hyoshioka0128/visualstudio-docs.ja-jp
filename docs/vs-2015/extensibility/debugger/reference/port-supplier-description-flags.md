@@ -11,18 +11,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9a66ff327659ab44958c412f6f5b1f4a6390de39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205047"
 ---
-# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+# <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ポート サプライヤーについて取得できるメタデータを定義します。  
+ポートサプライヤーに関する取得可能なメタデータを定義します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS  
@@ -41,18 +41,18 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
   
 ## <a name="terms"></a>用語  
  PSDFLAG_SHOW_WARNING_ICON  
- 選択した場合、UI に警告アイコンが表示されます。  
+ この設定を選択すると、UI に警告アイコンが表示されます。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体は、によって返される、 [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体は、 [Getdescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

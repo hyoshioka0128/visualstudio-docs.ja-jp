@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155498"
 ---
-# <a name="performance-explorer"></a>パフォーマンス エクスプローラー
+# <a name="performance-explorer"></a>パフォーマンス エクスプ ローラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールによって、開発者は、コード内のパフォーマンス関連の問題を計測、評価、および特定することができます。 これらのツールは IDE に完全に統合されており、シームレスでわかりやすいユーザー エクスペリエンスを提供します。  
@@ -34,19 +34,19 @@ ms.locfileid: "68155498"
   
 ## <a name="common-tasks"></a>一般的なタスク  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
-|**Windows 8 向けの新しい手法**|[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
+|**Windows 8 向けの新しい手法**|[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンスツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**プロファイリングの概念を理解する:** プロファイリング ツールを使用してコード パフォーマンスの収集、表示、分析を行う場合の概念と用語について説明します。|[概要](../profiling/overviews-performance-tools.md)|  
 |**操作を行う:** プロファイリング ツールを使用してコード パフォーマンスの収集、表示、分析を行う場合に使用する基本的な手順について説明します。 チュートリアルに従って操作します。|[はじめに](../profiling/getting-started-with-performance-tools.md)|  
-|**プロファイリング セッションを構成する:** プロファイリングを行うプロジェクトまたはバイナリを指定する方法、プロファイリング方式を選択する方法、収集するパフォーマンス データを選択する方法、およびその他のプロファイリング セッションのオプションを設定する方法の詳細について説明します。|[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)|  
-|**プロファイラーが収集するデータを制御する:** パフォーマンス セッションのプロパティおよび対話形式の手順を使用してプロファイリングを開始および停止する方法と、収集するパフォーマンス データを必要な情報だけに制限する方法について説明します。|[データ コレクションの制御](../profiling/controlling-data-collection.md)|  
-|**パフォーマンスの問題を特定する:** 収集したパフォーマンス データをプロファイリング ツールのレポート ビュー ウィンドウに表示して分析する方法について説明します。|[パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)|  
+|**プロファイリング セッションを構成する:** プロファイリングを行うプロジェクトまたはバイナリを指定する方法、プロファイリング方式を選択する方法、収集するパフォーマンス データを選択する方法、およびその他のプロファイリング セッションのオプションを設定する方法の詳細について説明します。|[パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)|  
+|**プロファイラーが収集するデータを制御する:** パフォーマンス セッションのプロパティおよび対話形式の手順を使用してプロファイリングを開始および停止する方法と、収集するパフォーマンス データを必要な情報だけに制限する方法について説明します。|[データコレクションの制御](../profiling/controlling-data-collection.md)|  
+|**パフォーマンスの問題を特定する:** 収集したパフォーマンス データをプロファイリング ツールのレポート ビュー ウィンドウに表示して分析する方法について説明します。|[パフォーマンス ツール データを分析する](../profiling/analyzing-performance-tools-data.md)|  
 |**パフォーマンスの変化を分析する:** 2 つのプロファイラー データ ファイルを比較して、パフォーマンスの変化を分析する方法について説明します。|[パフォーマンス データ ファイルの比較](../profiling/comparing-performance-data-files.md)|  
 |**結果を保存して共有する:** プロファイリング データを保存してアーカイブまたは共有する方法について説明します。|[パフォーマンス ツール データの保存とエクスポート](../profiling/saving-and-exporting-performance-tools-data.md)|  
-|**プロファイリングを自動化する:** コマンド プロンプトからプロファイリング ツールを使用する方法について説明します。|[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
+|**プロファイリングを自動化する:** コマンド プロンプトからプロファイリング ツールを使用する方法について説明します。|[コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
 |**プロファイリングをプログラムで制御する:** プロファイリング ツールのマネージド API とネイティブ API を使用して、ソース コードから直接データ コレクションを制御する方法について説明します。|[プロファイリング ツールの API](../profiling/profiling-tools-apis.md)|  
-|**プロファイリングに関する問題のトラブルシューティング**|[パフォーマンス ツールに関する問題のトラブルシューティング](../profiling/troubleshooting-performance-tools-issues.md)|  
+|**プロファイリングに関する問題のトラブルシューティング**|[パフォーマンスツールに関する問題のトラブルシューティング](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>関連項目  
- [プロファイリング ツール](../profiling/profiling-tools.md)
+## <a name="see-also"></a>参照  
+ [プロファイル ツール](../profiling/profiling-tools.md)

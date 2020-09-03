@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 78c80bc015ffbf39949b5295d85396dc84154208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189586"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio でのデバッグ
@@ -31,23 +31,23 @@ Visual Studio デバッガーを使用すると、プログラムの実行時の
 
  Visual Studio でのデバッグと診断の概要については、「 [デバッグ、プロファイル、および診断](https://www.visualstudio.com/features/debugging-and-diagnostics-vs)」を参照してください。
 
-- [Windows のデバッガー](../debugger/debugger-windows.md)さまざまなデバッガー ウィンドウを一覧表示されます。
+- [デバッガーウィンドウ](../debugger/debugger-windows.md) さまざまなデバッガーウィンドウを一覧表示します。
 
-- [デバッガーの基本事項](../debugger/debugger-basics.md)Visual Studio デバッガーを使用しての基礎について説明します。 デバッグの基本知識、実行の制御、実行中のプログラムへのアタッチ、Just-In-Time デバッグ、デバッガーの自動起動、ダンプ、ブレークポイント、プログラムの検査、例外処理、エディット コンティニュ、およびデバッガーにおける式の使用についての説明が含まれます。
+- [デバッガーの基本](../debugger/debugger-basics.md) Visual Studio デバッガーの基本的な使用方法について説明します。 デバッグの基本知識、実行の制御、実行中のプログラムへのアタッチ、Just-In-Time デバッグ、デバッガーの自動起動、ダンプ、ブレークポイント、プログラムの検査、例外処理、エディット コンティニュ、およびデバッガーにおける式の使用についての説明が含まれます。
 
-- [その他のデバッグ機能](../debugger/more-debugging-features.md)さまざまなデバッグ機能について説明します。
+- [その他のデバッグ機能](../debugger/more-debugging-features.md) さまざまなデバッグ機能について説明します。
 
-- [リモート デバッグ](../debugger/remote-debugging.md)を設定して、リモート デバッグを使用する方法について説明します。
+- [リモートデバッグ](../debugger/remote-debugging.md) リモートデバッグを設定して使用する方法について説明します。
 
-- [マルチ スレッド アプリケーションをデバッグする](../debugger/debug-multithreaded-applications-in-visual-studio.md)マルチ スレッド アプリケーションをデバッグする方法について説明します。
+- [マルチスレッドアプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md) マルチスレッドアプリケーションをデバッグする方法について説明します。
 
-- [IntelliTrace](../debugger/intellitrace.md) IntelliTrace の機能について説明します。
+- [IntelliTrace](../debugger/intellitrace.md) IntelliTrace 機能について説明します。
 
-- [アプリケーションのデバッグ](../debugger/debugging-applications.md)さまざまな種類のアプリケーションをデバッグする方法について説明します。
+- [アプリケーションのデバッグ](../debugger/debugging-applications.md) さまざまな種類のアプリケーションをデバッグする方法について説明します。
 
-- [デバッグ用ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)参照情報を提供ウィンドウとダイアログ ボックスで、アプリケーションをデバッグするときに使用します。 ここで扱うトピックは、 **[ブレークポイント]** ウィンドウなどのデバッグ ユーザー インターフェイス要素にフォーカスがあるときに、F1 キーを押すことによっても参照できます。
+- [デバッグユーザーインターフェイスリファレンス](../debugger/debugging-user-interface-reference.md) アプリケーションのデバッグ時に使用するウィンドウおよびダイアログボックスに関するリファレンス情報を提供します。 ここで扱うトピックは、 **[ブレークポイント]** ウィンドウなどのデバッグ ユーザー インターフェイス要素にフォーカスがあるときに、F1 キーを押すことによっても参照できます。
 
-- [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) Microsoft デバッグ インターフェイス アクセス ソフトウェア開発キット (DIA SDK) について説明します。 DIA SDK は、Microsoft ポストコンパイラ ツールで生成されたプログラム データベース (.pdb) ファイルに保存されているデバッグ情報へのアクセスを提供します。
+- [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) Microsoft Debug Interface Access ソフトウェア開発キット (DIA SDK) について説明します。 DIA SDK は、Microsoft ポストコンパイラ ツールで生成されたプログラム データベース (.pdb) ファイルに保存されているデバッグ情報へのアクセスを提供します。
 
-## <a name="see-also"></a>関連項目
- [プロファイリング ツール](../profiling/profiling-tools.md) [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>参照
+ [プロファイルツール](../profiling/profiling-tools.md) [Visual Studio IDE](../ide/visual-studio-ide.md)

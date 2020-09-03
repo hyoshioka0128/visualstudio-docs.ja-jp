@@ -1,5 +1,5 @@
 ---
-title: C++静的コード分析ストアアプリ
+title: C++ スタティックコード分析ストアアプリ
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,10 +12,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672712"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの C++ コード品質の分析
@@ -28,57 +28,57 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 > [!NOTE]
 > Visual Studio Ultimate、Visual Studio Premium、および Visual Studio Professional では、コード分析ツールの全機能を使用できます。 MSDN ライブラリの「[コード分析ツールを使用したアプリケーション品質の分析](https://msdn.microsoft.com/library/dd264897.aspx)」を参照してください。
 
-## <a name="BKMK_Run"></a> コード分析の実行
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> コード分析の実行
  Visual Studio ソリューションでコード分析を実行するには:
 
-- **[ビルド]** メニューの **[ソリューションでコード分析を実行]** をクリックします。
+- [**ビルド**] メニューの [**ソリューションでコード分析を実行**] をクリックします。
 
   プロジェクトをビルドするたびに自動的にコード分析を実行するには:
 
-1. ソリューション エクスプローラーでプロジェクト名を選択し、 **[プロパティ]** をクリックします。
+1. ソリューション エクスプローラーでプロジェクト名を選択し、[**プロパティ**] をクリックします。
 
-2. プロジェクトのプロパティ ページで **[コード分析]** 、 **[ビルド時に C/C++ のコード分析を有効化]** の順に選択します。
+2. プロジェクトのプロパティ ページで [**コード分析**]、[**ビルド時に C/C++ のコード分析を有効化**] の順に選択します。
 
    ソリューションがコンパイルされ、コード分析が実行されます。 結果は、[コード分析] ウィンドウに表示されます。
 
-   ![コード分析ウィンドウ](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![[コード分析] ウィンドウ](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> コード分析警告の分析と解決
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> コード分析警告の分析と解決
  特定の警告を分析するには、[コード分析] ウィンドウで警告のタイトルを選択します。 警告が展開され、問題に関する詳細情報が表示されます。 コード分析は、可能な場合は警告につながる行番号と分析ロジックを表示します。
 
  ![展開されたコード分析の警告](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  警告を展開すると、警告の原因となったコード行が Visual Studio のコード エディターで強調表示されます。
 
- ![強調表示されたソースコード](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
+ ![強調表示されたソース コード](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
  問題を理解した後は、コード内で解決できます。 その後、コード分析に戻り、[コード分析] ウィンドウに警告が表示されなくなったことと、修正によって新たな警告が発生していないことを確認します。
 
 > [!TIP]
-> コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** ボタンをクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
+> コード分析は、[コード分析] ウィンドウから再実行できます。 [**分析**] ボタンをクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
 
-## <a name="BKMK_Suppress"></a> コード分析警告の抑制
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> コード分析警告の抑制
  コード分析警告の修正を行わないことを決定する場合があります。 コードを実装したときの警告の発生確率と、警告を解決するためのコード変更の量を比較して、解決しないことを選択できます。 または、警告で使用された分析が特定のコンテキストでは不適切であると判断できます。 個々の警告を抑制して、[コード分析] ウィンドウに表示されないように設定できます。
 
  警告を抑制するには:
 
 1. 詳細情報が表示されない場合は、警告のタイトルを展開します。
 
-2. 警告の下部にある **[アクション]** リンクをクリックします。
+2. 警告の下部にある [**アクション**] リンクをクリックします。
 
-3. **[メッセージの非表示]** 、 **[ソース内]** の順に選択します。
+3. [**メッセージの非表示**]、[**ソース内**] の順に選択します。
 
-   メッセージを非表示にすると、コードの該当行に対して警告を抑制する`#pragma(warning:`*警告 ID*`)` が挿入されます。
+   メッセージを非表示にすると、 `#pragma(warning:` *WarningId* `)` コード行の警告を抑制する警告 id が挿入されます。
 
-## <a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> コード分析結果の検索とフィルター処理
  警告メッセージの長い一覧の検索と、複数のプロジェクトから成るソリューションの警告をフィルター処理できます。
 
  ![[コード分析] ウィンドウの検索とフィルター処理](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> C++ のコード分析の警告
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> C++ コード分析の警告
  コード分析は、C++ コードに次の警告を発生させます。
 
-|                                      規則                                      |                                                  説明                                                  |
+|                                      ルール                                      |                                                  説明                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          初期化されていないメモリの使用                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          Null ポインターの逆参照                                           |
