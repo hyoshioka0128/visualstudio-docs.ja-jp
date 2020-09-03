@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546771"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:GC.SuppressFinalize を正しく呼び出します
@@ -29,7 +29,7 @@ ms.locfileid: "85546771"
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|
 |CheckId|CA1816|
-|カテゴリ|Microsoft. 使用方法|
+|カテゴリ|Microsoft. 使用法|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
@@ -74,5 +74,5 @@ ms.locfileid: "85546771"
 
  [CA2216:破棄可能な型はファイナライザーを宣言しなければなりません](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

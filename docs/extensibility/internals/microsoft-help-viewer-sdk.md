@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168737"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
@@ -131,22 +131,22 @@ ContosoTopic4.htm という名前の新しい XHTML ドキュメントを作成�
 
 トピックの本文 (ヘッダーとフッターを除く) には、ページリンク、メモセクション、折りたたみ可能な領域、コードスニペット、および言語固有のテキストのセクションが含まれます。  表示されるトピックの領域については、「ブランド化」セクションを参照してください。
 
-1. トピックタイトルタグを追加します。`<div class="title">Contoso Topic 4</div>`
+1. トピックタイトルタグを追加します。  `<div class="title">Contoso Topic 4</div>`
 
-2. メモセクションを追加します。`<div class="alert"> add your table tag and text </div>`
+2. メモセクションを追加します。 `<div class="alert"> add your table tag and text </div>`
 
-3. 折りたたみ可能な領域の追加:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 折りたたみ可能な領域の追加:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. コードスニペットを追加します。`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. コードスニペットを追加します。  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. コード言語固有のテキストを追加する: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` では `devLangnu=` 、他の言語を入力できます。 たとえば、 `devLangnu="Fortran"` コードスニペット DisplayLanguage = fortran の場合、は fortran を表示します。
+5. コード言語固有のテキストを追加する:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` では `devLangnu=` 、他の言語を入力できます。 たとえば、 `devLangnu="Fortran"` コードスニペット DisplayLanguage = fortran の場合、は fortran を表示します。
 
-6. ページリンクの追加:`<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. ページリンクの追加: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > 注: サポートされていない新しい "表示言語" (例、F #、Cobol、Fortran) では、コードスニペットのコードの色付けはモノクロになります。
 
-**ヘルプビューアーのトピックの例**このコードは、メタデータ、コードスニペット、折りたたみ可能な領域、および言語固有のテキストを定義する方法を示しています。
+**ヘルプビューアーのトピックの例** このコードは、メタデータ、コードスニペット、折りたたみ可能な領域、および言語固有のテキストを定義する方法を示しています。
 
 ```html
 <?xml version="1.0" encoding="utf-8"?>
@@ -292,7 +292,7 @@ F1 フローダイアグラム:
 
 次のレジストリ値を設定して、ベンダーのヘルプコンテンツの F1 フォールバックを有効にします。 F1 フォールバックは、ヘルプビューアーが F1 ヘルプコンテンツをオンラインで検索するように設定されており、ベンダーのコンテンツがユーザーのハードドライブにローカルでインストールされていることを意味します。 ヘルプビューアーは、既定の設定がオンラインヘルプの場合でも、コンテンツのローカルヘルプを確認する必要があります。
 
-1. Help 2.3 レジストリキーの下に**VendorContent**値を設定します。
+1. Help 2.3 レジストリキーの下に **VendorContent** 値を設定します。
 
    - 32ビットオペレーティングシステムの場合:
 
@@ -354,13 +354,13 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 
 値: 製品データにデバッグ出力を表示します: はい
 
-IDE の [ヘルプ] メニュー項目で、[**ヘルプコンテキストのデバッグ**] を選択します。
+IDE の [ヘルプ] メニュー項目で、[ **ヘルプコンテキストのデバッグ**] を選択します。
 
 **コンテンツのメタデータ**
 
 次の表では、角かっこで囲まれた文字列は、認識された値に置き換える必要があるプレースホルダーです。 たとえば、では \<meta name="Microsoft.Help.Locale" content="[language code]" /> 、"[言語コード]" を "en-us" などの値に置き換える必要があります。
 
-| Property (HTML 表現) | Description |
+| Property (HTML 表現) | 説明 |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | このトピックのロケールを設定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があり、その他の Microsoft ヘルプタグの上に挿入する必要があります。 このタグが使用されていない場合、指定されている場合、製品のロケールに関連付けられているワードブレーカーを使用して、トピックの本文のインデックスが作成されます。それ以外の場合は、en-us ワードブレーカーが使用されます。 このタグは ISOC RFC 4646 に準拠しています。 Microsoft ヘルプが正しく動作するようにするには、一般言語属性ではなく、このプロパティを使用します。 |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 他のロケールも使用されている場合に、このトピックのロケールを設定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があります。 このタグは、カタログに複数の言語のコンテンツが含まれている場合に使用します。 カタログ内の複数のトピックは同じ ID を持つことができますが、それぞれが一意のトピックのロケールを指定する必要があります。 カタログのロケールに一致するトピックのロケールを指定するトピックは、目次に表示されるトピックです。 ただし、検索結果には、トピックのすべての言語バージョンが表示されます。 |
@@ -459,7 +459,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | ViewColorizedText | 色分け表示 |
 | 連結 Edvbtabdisplaylanguage | Visual Basic (サンプル) |
 | VBDeclaration | 宣言 |
-| VBUsage | 使用 |
+| VBUsage | 使用法 |
 | 機能: | **フィードバック、フッター、ロゴ** |
 | 次のコマンドを使用します。 | 顧客が電子メールで現在のトピックに関するフィードバックを提供するフィードバックコントロールを提供します。  コンテンツの著作権テキスト。  ロゴの定義。 |
 | **Element** | **値 (これらの文字列は、コンテンツの導入者のニーズに合わせて変更できます。)** |
@@ -534,7 +534,7 @@ branding.js ファイルには、Visual Studio ヘルプビューアーのブラ
 |Cookie 値の設定と取得|getCookie、setCookie||
 |継承されたメンバー|changeMembersLabel|継承されたメンバーの展開/折りたたみ|
 |SelfBranded = False の場合|onLoad|クエリ文字列を読み取り、それが印刷要求かどうかを確認します。  すべての codesnippets を設定して、ユーザーの優先タブにフォーカスを設定します。 印刷要求の場合は、isPrinterFriendly を true に設定します。 ハイコントラストモードを確認します。|
-|コードスニペット|addSpecificTextLanguageTagSet||
+|コード スニペット|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||[ChangeTab]||
 ||setCodesnippetLang||
@@ -563,25 +563,25 @@ branding.js ファイルには、Visual Studio ヘルプビューアーのブラ
 
 ブランド化パッケージには、ユーザーのために重要な情報を提供するための一連の HTM ファイルが含まれています。たとえば、インストールされているコンテンツセットを示すセクションを含むホームページや、トピックのローカルセットにトピックが見つからない場合にユーザーに通知するページなどがあります。 これらの HTM ファイルは製品ごとに変更できます。  ISO シェルベンダーは、既定のブランドパッケージを取得し、これらのページの動作とコンテンツを必要に応じて変更できます。  これらのファイルは、ブランド化タグが branding.xml ファイルから対応するコンテンツを取得するために、それぞれのブランドパッケージを参照します。
 
-|**[最近使ったファイル]**|**用途**|**表示されるコンテンツソース**|
+|**ファイル**|**用途**|**表示されるコンテンツソース**|
 |-|-|-|
 |homepage.htm|これは、現在インストールされているコンテンツと、そのコンテンツについてユーザーに提示するのに適したその他のメッセージを表示するページです。  このファイルには、追加のメタデータ属性 "Microsoft.Help.Id" content = "-1" があります。これにより、このコンテンツはローカルコンテンツ TOC の先頭に配置されます。||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml、タグ\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml、タグ\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml、タグ\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|見出しセクション Branding.xml、 \<HomePageInstalledBooks> \<HomePageNoBooksInstalled> ブックがインストールされていない場合にアプリケーションから生成されるデータです。|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml、タグ \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml、タグ \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml、タグ \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|見出しセクション Branding.xml、 \<HomePageInstalledBooks>  \<HomePageNoBooksInstalled> ブックがインストールされていない場合にアプリケーションから生成されるデータです。|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|見出しセクション Branding.xml タグ \<HomePageHelpSettings> 、セクションテキスト \<HomePageHelpSettingsText> です。|
 |topiccorrupted.htm|トピックがローカルセット内に存在するが、何らかの理由で表示できない場合 (破損したコンテンツ)。||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml、タグ\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml、タグ\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml、タグ \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml、タグ \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|トピックがローカルコンテンツセットに見つからない場合、またはオンラインで利用できない場合||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml、タグ\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml、タグ\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml、タグ\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml、タグ \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml、タグ \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml、タグ \<TopicNotFoundText>|
 |contentnotinstalled.htm|製品用にローカルコンテンツがインストールされていない場合。||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml、タグ\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml、タグ\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml、タグ\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml、タグ \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml、タグ \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml、タグ \<ContentNotInstalledText>|
 
 **CSS ファイル**
 
@@ -597,7 +597,7 @@ Visual Studio ヘルプビューアーのブランド化パッケージには、
 
 Visual Studio のコンテンツには、Visual Studio のロゴとその他のグラフィックスが表示されます。  Visual Studio ヘルプビューアーのブランド化パッケージに含まれるグラフィックファイルの完全な一覧を次に示します。
 
-|**[最近使ったファイル]**|**用途**|**使用例**|
+|**ファイル**|**用途**|**使用例**|
 |-|-|-|
 |clear.gif|折りたたみ可能な領域を表示するために使用されます||
 |footer_slice.gif|フッタープレゼンテーション||
@@ -741,11 +741,11 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
 分離シェル拡張機能を作成するには、次のようにします。
 
-1. Visual Studio の [**ファイル**] で、[**新しいプロジェクト**] を選択し、[**その他のプロジェクトの種類] の**[**拡張機能**] を選択し、[ **visual studio Shell 分離**] を選択します。 プロジェクトに名前を指定して、 `ContosoHelpShell` Visual Studio の分離シェルテンプレートに基づく機能拡張プロジェクトを作成します。
+1. Visual Studio の [ **ファイル**] で、[ **新しいプロジェクト**] を選択し、[ **その他のプロジェクトの種類] の** [ **拡張機能**] を選択し、[  **visual studio Shell 分離**] を選択します。 プロジェクトに名前を指定して、 `ContosoHelpShell` Visual Studio の分離シェルテンプレートに基づく機能拡張プロジェクトを作成します。
 
-2. ソリューションエクスプローラーの ContosoHelpShellUI プロジェクトで、[リソースファイル] フォルダーの [ApplicationCommands] を開きます。 この行がコメントアウトされていることを確認します ("No_Help" を検索してください)。`<!-- <define name="No_HelpMenuCommands"/> -->`
+2. ソリューションエクスプローラーの ContosoHelpShellUI プロジェクトで、[リソースファイル] フォルダーの [ApplicationCommands] を開きます。 この行がコメントアウトされていることを確認します ("No_Help" を検索してください)。 `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. F5 キーを押してコンパイルし、**デバッグ**を実行します。 分離シェル IDE の実験用インスタンスで、[**ヘルプ**] メニューを選択します。 [ヘルプの**表示**]、[ヘルプ**コンテンツの追加と削除**]、および [ヘルプ設定の**設定**] の各コマンドが表示されていることを確認します。
+3. F5 キーを押してコンパイルし、 **デバッグ**を実行します。 分離シェル IDE の実験用インスタンスで、[ **ヘルプ** ] メニューを選択します。 [ヘルプの **表示**]、[ヘルプ **コンテンツの追加と削除**]、および [ヘルプ設定の **設定** ] の各コマンドが表示されていることを確認します。
 
 4. ソリューションエクスプローラーの ContosHelpShell プロジェクトで、[シェルのカスタマイズ] フォルダーの ContosoHelpShell を開きます。 Contoso ヘルプカタログを定義するには、次の行を追加します。
 
@@ -773,7 +773,7 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6. ソリューションエクスプローラーの ContosoHelpShell ソリューションのコンテキストメニューで、[**プロパティ**] メニュー項目を選択します。 [**構成プロパティ**] で [ **Configuration Manager**] を選択します。 [**構成**] 列で、[デバッグ] の値を [リリース] に変更します。
+6. ソリューションエクスプローラーの ContosoHelpShell ソリューションのコンテキストメニューで、[ **プロパティ** ] メニュー項目を選択します。 [ **構成プロパティ**] で [ **Configuration Manager**] を選択します。 [ **構成** ] 列で、[デバッグ] の値を [リリース] に変更します。
 
 7. ソリューションをビルドします。 これにより、リリースフォルダーに一連のファイルが作成されます。これは次のセクションで使用します。
 
@@ -785,7 +785,7 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
 3. ContosoHelpShell release フォルダーの内容を、\Contoso\ フォルダーにコピーし \\ ます。
 
-4. [**スタート**] メニューの [**実行**] をクリックし、「」と入力して、レジストリエディターを起動し `Regedit` ます。 レジストリエディターで、[**ファイル**]、[**インポート**] の順に選択します。 ContosoHelpShell プロジェクトフォルダーを参照します。 ContosoHelpShell サブフォルダーで、ContosoHelpShell を選択します。
+4. [**スタート**] メニューの [**実行**] をクリックし、「」と入力して、レジストリエディターを起動し `Regedit` ます。 レジストリエディターで、[ **ファイル**]、[ **インポート**] の順に選択します。 ContosoHelpShell プロジェクトフォルダーを参照します。 ContosoHelpShell サブフォルダーで、ContosoHelpShell を選択します。
 
 5. コンテンツストアを作成します。
 
@@ -808,7 +808,7 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15
 
-    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]統合シェル:
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 統合シェル:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
@@ -820,9 +820,9 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
      "C:\Program Files (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe"/catalogName VisualStudio15/helpquery method = "page&id = ContosoTopic0"/launchingapp Microsoft, VisualStudio, 12.0
 
-10. (Contoso アプリのルートから) Contoso アプリケーションを起動します。 ISO シェル内で [**ヘルプ**] メニュー項目を選択し、[**ヘルプ**設定の設定] を [**ローカルヘルプを使用**する] に変更します。
+10. (Contoso アプリのルートから) Contoso アプリケーションを起動します。 ISO シェル内で [ **ヘルプ** ] メニュー項目を選択し、[ **ヘルプ** 設定の設定] を [ **ローカルヘルプを使用**する] に変更します。
 
-11. シェル内で [**ヘルプ**] メニュー項目を選択し、[**ヘルプの表示**] をクリックします。 ローカルヘルプビューアーが起動します。 [**コンテンツの管理**] タブを選択します。[**インストールソース**] で、[**ディスク**] オプションボタンをクリックします。 [ **...** ] ボタンをクリックして、(前の手順でローカルフォルダーにコピーした) Contoso コンテンツを含むローカルフォルダーを参照します。 [HelpContentSetup. msha] を選択します。 Contoso は、選択した書籍に書籍として表示されます。 [**追加**] を選択し、[**更新**] ボタン (右下隅) を選択します。
+11. シェル内で [ **ヘルプ** ] メニュー項目を選択し、[ **ヘルプの表示**] をクリックします。 ローカルヘルプビューアーが起動します。 [ **コンテンツの管理** ] タブを選択します。[ **インストールソース**] で、[ **ディスク** ] オプションボタンをクリックします。 [ **...** ] ボタンをクリックして、(前の手順でローカルフォルダーにコピーした) Contoso コンテンツを含むローカルフォルダーを参照します。 [HelpContentSetup. msha] を選択します。 Contoso は、選択した書籍に書籍として表示されます。 [ **追加**] を選択し、[ **更新** ] ボタン (右下隅) を選択します。
 
 12. Contoso IDE 内で f1 キーを押して、F1 機能をテストします。
 
@@ -830,6 +830,6 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
 ランタイム API については、「 [Windows ヘルプ API](/previous-versions/windows/desktop/helpapi/helpapi-portal)」を参照してください。
 
-ヘルプ API を活用する方法の詳細については、「[ヘルプビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)」を参照してください。
+ヘルプ API を活用する方法の詳細については、「 [ヘルプビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)」を参照してください。
 
 [開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で機能の提案を送信できます。

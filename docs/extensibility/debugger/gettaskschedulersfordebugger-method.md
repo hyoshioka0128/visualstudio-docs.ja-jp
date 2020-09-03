@@ -1,5 +1,5 @@
 ---
-title: メソッドを取得します。マイクロソフトドキュメント
+title: GetTaskSchedulersForDebugger メソッド |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738648"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger メソッド
-現在アクティブなすべての<xref:System.Threading.Tasks.TaskScheduler>オブジェクトの配列を取得します。
+現在アクティブなすべてのオブジェクトの配列を取得 <xref:System.Threading.Tasks.TaskScheduler> します。
 
- **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib *(mscorlib.dll*内)
+ **アセンブリ:** mscorlib ( *mscorlib.dll*)
 
- この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
+ .NET Framework からこの内部メンバーにアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +33,10 @@ ms.locfileid: "80738648"
 ```
 
 ## <a name="return-value"></a>戻り値
- この<xref:System.AppDomain>で現在アクティブ<xref:System.Threading.Tasks.TaskScheduler>になっているすべてのオブジェクトの配列。
+ <xref:System.Threading.Tasks.TaskScheduler>こので現在アクティブなすべてのオブジェクトの配列 <xref:System.AppDomain> 。
 
-## <a name="remarks"></a>Remarks
- このメソッドはスレッド セーフではないため、他の<xref:System.Threading.Tasks.TaskScheduler>インスタンスと同時に使用しないでください。 デバッガーが他のすべてのスレッドを中断した場合にのみ、デバッガーからこのメソッドを呼び出します。
+## <a name="remarks"></a>解説
+ このメソッドはスレッドセーフではなく、の他のインスタンスと同時に使用することはできません <xref:System.Threading.Tasks.TaskScheduler> 。 デバッガーが他のすべてのスレッドを中断した場合にのみ、このメソッドをデバッガーから呼び出します。
 
 ## <a name="see-also"></a>関連項目
-- [タスクスケジューラクラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+- [TaskScheduler クラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)

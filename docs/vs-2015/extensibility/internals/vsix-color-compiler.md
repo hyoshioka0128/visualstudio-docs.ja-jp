@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c92fb2ad45bc0fb09c7e9bd8e87db38c13a99736
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546745"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
@@ -105,7 +105,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
   
 |**属性**|**定義**|  
 |-|-|  
-|Type|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
+|型|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
 |source|必要16進数で表される色の値|  
   
  __VSCOLORTYPE 列挙体によってサポートされるすべての値は、Type 属性のスキーマでサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。  
@@ -136,9 +136,9 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
 |-|-|-|  
 |名前のない (.xml ファイル)|これは、最初の名前のないパラメーターで、は変換する XML ファイルへのパスです。|必須|  
-|名前のない (pkgdef ファイル)|これは2番目の名前のないパラメーターで、は生成された pkgdef ファイルの出力パスです。<br /><br /> 既定値: \<XML Filename> pkgdef|省略可能|  
-|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|省略可能|  
-|/?|ヘルプ情報を印刷します。|省略可能|  
+|名前のない (pkgdef ファイル)|これは2番目の名前のないパラメーターで、は生成された pkgdef ファイルの出力パスです。<br /><br /> 既定値: \<XML Filename> pkgdef|オプション|  
+|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|オプション|  
+|/?|ヘルプ情報を印刷します。|オプション|  
 |/help|ヘルプ情報を印刷します。|オプション|  
   
  **例**  

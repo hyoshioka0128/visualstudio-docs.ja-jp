@@ -1,5 +1,5 @@
 ---
-title: プロパティ 3::取得文字列の文字 |マイクロソフトドキュメント
+title: 'IDebugProperty3:: GetStringChars |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721086"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-このプロパティに関連付けられている文字列を取得し、ユーザーが指定したバッファーに格納します。
+このプロパティに関連付けられている文字列を取得し、ユーザー指定のバッファーに格納します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>パラメーター
 `buflen`\
-[in]ユーザーが指定したバッファーが保持できる最大文字数。
+からユーザー指定のバッファーが保持できる最大文字数。
 
 `rgString`\
-[アウト]文字列を返します。
+入出力文字列を返します。
 
- [C++のみ]は`rgString`、文字列の Unicode 文字を受け取るバッファへのポインタです。 このバッファーは、バイトではなく`buflen`少なくとも文字でなければなりません。
+ [C++ のみ]、 `rgString` は、文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーのサイズは、少なくともバイトではなく文字である必要があり `buflen` ます。
 
 `pceltFetched`\
-[アウト]バッファーに実際に格納されている文字数が返されます。 (C++`NULL`でも可能です。
+入出力バッファーに実際に格納されている文字数が返されます。 ( `NULL` C++ でもかまいません)。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-C++ では、バッファーが少なくとも`buflen`Unicode 文字長であることを確認する必要があります。 Unicode 文字の長さは 2 バイトです。
+## <a name="remarks"></a>解説
+C++ では、バッファーの長さが Unicode 文字以上であることを保証するために注意する必要があり `buflen` ます。 Unicode 文字は2バイト長であることに注意してください。
 
 > [!NOTE]
-> C++ では、返される文字列には終端の null 文字は含まれません。 指定した場合`pceltFetched`は、文字列の文字数を指定します。
+> C++ では、返される文字列に終端の null 文字は含まれません。 指定されている場合、 `pceltFetched` は文字列の文字数を指定します。
 
 ## <a name="example"></a>例
 
