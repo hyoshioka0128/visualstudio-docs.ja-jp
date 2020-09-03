@@ -1,5 +1,5 @@
 ---
-title: をクリックしてブレークポイントを要求します。マイクロソフトドキュメント
+title: 'IDebugBreakpointRequest2:: GetRequestInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734938"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-このブレークポイント要求を記述するブレークポイント要求情報を取得します。
+このブレークポイント要求を説明するブレークポイント要求情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int GetRequestInfo( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]パラメーター内のどのフィールドに入力するかを決定する[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列挙体のフラグ`pBPRequestInfo`の組み合わせ。
+からパラメーター内のどのフィールドを入力するかを決定する、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列挙のフラグの組み合わせ `pBPRequestInfo` 。
 
 `pBPRequestInfo`\
-[アウト]ブレークポイント要求の説明を入力する[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造を指定します。
+入出力ブレークポイント要求の説明と共に入力する [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 構造体を指定します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
- 次の例は[、IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)インターフェイス`CDebugBreakpointRequest`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
+ 次の例は、IDebugBreakpointRequest2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointRequest` います。 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(

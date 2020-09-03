@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519900"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>方法: プログラムによって既存のドキュメントを開く
@@ -34,7 +34,7 @@ ms.locfileid: "85519900"
 
 ## <a name="to-open-a-document-as-read-only"></a>ドキュメントを読み取り専用として開くには
 
-- メソッドを呼び出し <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 、ドキュメントへのパスを指定し、メソッド呼び出しで*ReadOnly*引数を**True**に設定します。
+- メソッドを呼び出し <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 、ドキュメントへのパスを指定し、メソッド呼び出しで *ReadOnly* 引数を **True** に設定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]

@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: 'IDebugCanStopEvent2:: GetCodeContext |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734566"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-このイベントの場所を記述するコード コンテキストを取得します。
+このイベントの場所を記述するコードコンテキストを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +41,15 @@ int GetCodeContext( 
 
 ## <a name="parameters"></a>パラメーター
 `ppCodeContext`\
-[アウト]現在のコードの場所[を](../../../extensibility/debugger/reference/idebugcodecontext2.md)表すオブジェクトを返します。
+入出力現在のコードの場所を表す [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- ほとんどの実行時アーキテクチャでは、コード コンテキストは、特定の命令を指すプログラムの実行ストリームのアドレスと考えることができます。
+## <a name="remarks"></a>解説
+ ほとんどのランタイムアーキテクチャでは、コードコンテキストは、特定の命令を指すプログラムの実行ストリームのアドレスと考えることができます。
 
- ソース コードの行に向けてドキュメント コンテキストを取得するには[、GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)メソッドを呼び出します。
+ ソースコードの行の方向にあるドキュメントコンテキストを取得するには、 [Getdocumentcontext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

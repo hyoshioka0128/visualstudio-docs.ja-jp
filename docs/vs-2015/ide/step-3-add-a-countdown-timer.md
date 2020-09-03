@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671839"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーの追加
@@ -22,7 +22,7 @@ ms.locfileid: "72671839"
 このチュートリアルの第 3 部では、クイズの受け手が完了するまでの残り秒数を追跡するためのカウントダウン タイマーを追加します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「 [チュートリアル 2: 時間指定の計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ### <a name="to-add-a-countdown-timer"></a>カウントダウン タイマーを追加するには
 
@@ -52,7 +52,7 @@ ms.locfileid: "72671839"
 
      追加されたステートメントに基づいて、タイマーは毎秒、**timeLeft** 整数変数が 0 より大きいかどうかを確認することで、残り時間がなくなっていないかどうかを確認します。 0 より大きい場合、時間はそのまま残ります。 タイマーは、まず timeLeft から 1 を減算し、次に残り秒数をクイズの受け手に示すために `timeLabel` コントロールの **Text** プロパティを更新します。
 
-     残り時間がなくなると、タイマーは停止し、"**Time's up!** " と表示されるように `timeLabel` コントロールのテキストを変更します。 メッセージ ボックスはクイズが終了したことを知らせ、この場合、解答は addend1 と addend2 を加算することによって表示されます。 `startButton` コントロールの **Enabled** プロパティは、クイズの受け手が別の問題を開始できるように `true` に設定されます。
+     残り時間がなくなると、タイマーは停止し、"**Time's up!**" と表示されるように `timeLabel` コントロールのテキストを変更します。 メッセージ ボックスはクイズが終了したことを知らせ、この場合、解答は addend1 と addend2 を加算することによって表示されます。 `startButton` コントロールの **Enabled** プロパティは、クイズの受け手が別の問題を開始できるように `true` に設定されます。
 
      ここでは、`if else` ステートメントを追加しました。これは、プログラムで条件判断を行うように指定するためのステートメントです。 `if else` ステートメントは次のようになります。
 
@@ -96,7 +96,7 @@ ms.locfileid: "72671839"
      [!code-csharp[VbExpressTutorial3Step3#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial3Step3#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#7)]
 
-     これで、クイズの開始時に、**timeLeft** 変数が 30 に設定され、`timeLabel` コントロールの **Text** プロパティが 30 seconds に変更されます。 次に、`Timer` コントロールの `Start()` メソッドがカウントダウンを開始します (解答の確認は次の手順で設定するため、まだ行われません)。
+     これで、クイズの開始時に、**timeLeft** 変数が 30 に設定され、`timeLabel` コントロールの **Text** プロパティが 30 seconds に変更されます。 次に、`Timer` コントロールの `Start()` メソッドがカウントダウンを開始します  (解答の確認は次の手順で設定するため、まだ行われません)。
 
 7. プログラムを保存し、実行して、フォームの **[Start]** ボタンをクリックします。
 
@@ -106,6 +106,6 @@ ms.locfileid: "72671839"
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 4: CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 [手順 4: CheckTheAnswer () メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 2: ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 2: ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)」を参照してください。

@@ -1,5 +1,5 @@
 ---
-title: デバッガー コンテキスト |Microsoft Docs
+title: デバッガーコンテキスト |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200629"
 ---
 # <a name="debugger-contexts"></a>デバッガー コンテキスト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグ、デバッグ エンジン (DE) の動作を同時にいくつかの異なるコンテキスト内で。  
+デバッグでは、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] デバッグエンジン (DE) は、次のように複数の異なるコンテキスト内で同時に動作します。  
   
-- コード コンテキスト、プログラムの実行のストリームの現在の場所について説明します。  
+- プログラムの実行ストリーム内の現在の位置を記述するコードコンテキスト。  
   
-- ドキュメントのコンテキストまたは位置で、ソース ドキュメント内の現在位置をについて説明します。  
+- ドキュメントコンテキストまたは位置。ソースドキュメント内の現在位置を記述します。  
   
-- 式の評価は行わコンテキストを記述する式の評価のコンテキスト。  
+- 式の評価コンテキスト。式の評価が行われるコンテキストを記述します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [コード コンテキスト](../../extensibility/debugger/code-context.md)  
- 場所コードは表現できない手順については、他の手段で、従来とは異なる言語ではなく現在の実行時のアーキテクチャでプログラムの命令ストリーム内のアドレスとして、コードのコンテキストについて説明します。  
+ コードコンテキストについては、今日の実行時アーキテクチャにおけるプログラムの命令ストリームのアドレスとして、また、コードが命令によって表されない場合がありますが、他の方法では nontraditional 言語について説明します。  
   
  [ドキュメントの位置](../../extensibility/debugger/document-position.md)  
- Visual Studio の IDE に既知のソース ファイル内の位置の抽象化を使用してデバッグ ドキュメントの位置を定義します。  
+ IDE で認識されているソースファイル内の位置を抽象化することによって、Visual Studio のデバッグでのドキュメントの位置を定義します。  
   
  [ドキュメントのコンテキスト](../../extensibility/debugger/document-context.md)  
- 説明で、Visual Studio のデバッグ ソース ファイルに関連ドキュメント コンテキストを表します。 また、シンボル ハンドラーがドキュメントのコンテキストにコードのコンテキストをマップする方法について説明します。  
+ ソースファイルに関連して Visual Studio のデバッグで表現されるドキュメントコンテキストについて説明します。 また、シンボルハンドラーがコードコンテキストをドキュメントコンテキストにマップする方法についても説明します。  
   
  [式の評価のコンテキスト](../../extensibility/debugger/expression-evaluation-context.md)  
- Visual Studio で使用する式の評価コンテキストについてを説明します。 たとえば、スタック フレームに関連付けられている式の評価のコンテキストでは、ローカル変数、メソッド パラメーター、およびクラス メンバーを評価するため、コンテキストを提供します。  
+ Visual Studio の式の評価コンテキストに関する情報を提供します。 たとえば、スタックフレームに関連付けられている式の評価コンテキストでは、ローカル変数、メソッドパラメーター、およびクラスメンバーを評価するためのコンテキストが提供されます。  
   
 ## <a name="related-sections"></a>関連項目  
  [デバッグの概念](../../extensibility/debugger/debugger-concepts.md)  
- デバッグ アーキテクチャの主要な概念をについて説明します。  
+ デバッグアーキテクチャの主要概念について説明します。  
   
- [コンポーネントのデバッグ](../../extensibility/debugger/debugger-components.md)  
- デバッグ エンジン (DE)、式エバリュエーター (EE) およびシンボル ハンドラー (SH) を含む Visual Studio のデバッグ コンポーネントの概要を示します。  
+ [デバッグ (コンポーネントを)](../../extensibility/debugger/debugger-components.md)  
+ デバッグエンジン (DE)、式エバリュエーター (EE)、およびシンボルハンドラー (SH) など、Visual Studio のデバッグコンポーネントの概要について説明します。  
   
  [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)  
- プログラムを起動して、式の評価などのさまざまなデバッグ タスクへのリンクが含まれています。
+ プログラムの起動や式の評価など、さまざまなデバッグタスクへのリンクが含まれています。

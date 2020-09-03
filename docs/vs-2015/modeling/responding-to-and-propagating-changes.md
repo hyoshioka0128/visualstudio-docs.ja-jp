@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b216e89e6a04fb38537f9c45336d07cf6df4abdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671270"
 ---
 # <a name="responding-to-and-propagating-changes"></a>変更内容への対応および変更内容の反映
@@ -26,7 +26,7 @@ ms.locfileid: "72671270"
 ## <a name="in-this-section"></a>このセクションの内容
  ガイドラインとして、これらの手法を次の順序で検討します。
 
-|技術|監視プロセス|詳細情報|
+|手法|シナリオ|詳細情報|
 |---------------|---------------|--------------------------|
 |計算されるドメインプロパティを定義します。|モデル内の他のプロパティから計算された値を持つドメインプロパティ。 たとえば、関連する要素の価格の合計である価格です。|[計算プロパティおよびカスタム格納プロパティ](../modeling/calculated-and-custom-storage-properties.md)|
 |カスタムストレージドメインプロパティを定義します。|モデルの他の部分または外部に格納されているドメインプロパティ。 たとえば、式文字列をモデル内のツリーに解析することができます。|[計算プロパティおよびカスタム格納プロパティ](../modeling/calculated-and-custom-storage-properties.md)|
@@ -45,13 +45,13 @@ ms.locfileid: "72671270"
 
  ストアイベントを使用して、モデルをストアの外部のオブジェクトと同期し、ストア内の一貫性を維持するルールを使用します。
 
-- **カスタムルールの作成**派生クラスとして、抽象ルールからカスタムルールを作成します。 また、カスタム規則についてフレームワークに通知する必要があります。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+- **カスタムルールの作成** 派生クラスとして、抽象ルールからカスタムルールを作成します。 また、カスタム規則についてフレームワークに通知する必要があります。 詳細については、「 [ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
-- **サブスクライブ (イベントを**)イベントをサブスクライブする前に、イベントハンドラーとデリゲートを作成します。 次に、<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property を使用して、イベントをサブスクライブします。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
+- **サブスクライブ (イベントを** )イベントをサブスクライブする前に、イベントハンドラーとデリゲートを作成します。 次に、プロパティを使用して <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A> 、イベントをサブスクライブします。 詳細については、「 [イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
-- **変更を元に戻す**トランザクションを元に戻すと、イベントが発生しますが、ルールは適用されません。 規則によって値が変更され、その変更を元に戻すと、元に戻す操作中に値が元の値にリセットされます。 イベントが発生した場合は、値を元の値に手動で変更する必要があります。 Transactons undo の詳細については、「[方法: トランザクションを使用](../modeling/how-to-use-transactions-to-update-the-model.md)してモデルを更新する」を参照してください。
+- **変更を元に戻す** トランザクションを元に戻すと、イベントが発生しますが、ルールは適用されません。 規則によって値が変更され、その変更を元に戻すと、元に戻す操作中に値が元の値にリセットされます。 イベントが発生した場合は、値を元の値に手動で変更する必要があります。 Transactons undo の詳細については、「 [方法: トランザクションを使用](../modeling/how-to-use-transactions-to-update-the-model.md)してモデルを更新する」を参照してください。
 
-- **ルールとイベントへのイベント引数の引き渡し**イベントとルールの両方に、モデルがどのように変更されたかに関する情報を含む `EventArgs` パラメーターが渡されます。
+- **ルールとイベントへのイベント引数の引き渡し** イベントとルールの両方に `EventArgs` 、モデルがどのように変更されたかに関する情報を含むパラメーターが渡されます。
 
 ## <a name="see-also"></a>参照
  方法:[ドメイン固有言語をカスタマイズするためのコードを記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)する[図形またはデコレータをインターセプト](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)する

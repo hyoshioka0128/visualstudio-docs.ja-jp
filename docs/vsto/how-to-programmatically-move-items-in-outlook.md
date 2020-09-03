@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 97f686a47d18fa91909de489f12f9c7a8c1306d1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519913"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>方法: プログラムによって Outlook で項目を移動する
-  この例では、未読の電子メールメッセージを**受信トレイ**から**Test**という名前のフォルダーに移動します。 この例では、フィールドに**Test**という単語が含まれているメッセージのみを移動し `Subject` ます。
+  この例では、未読の電子メールメッセージを **受信トレイ** から **Test**という名前のフォルダーに移動します。 この例では、フィールドに **Test** という単語が含まれているメッセージのみを移動し `Subject` ます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "85519913"
 
 - **Test**という名前の Outlook mail フォルダー。
 
-- フィールドに**Test**という単語が含まれている電子メールメッセージ `Subject` 。
+- フィールドに **Test** という単語が含まれている電子メールメッセージ `Subject` 。
 
 ## <a name="see-also"></a>関連項目
 - [フォルダーの操作](../vsto/working-with-folders.md)
