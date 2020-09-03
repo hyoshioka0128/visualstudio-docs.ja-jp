@@ -1,5 +1,5 @@
 ---
-title: の GUID と定数の SDK|マイクロソフトドキュメント
+title: Visual Studio SDK の Guid と定数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ecb443f3b5d6dd7b45d8dd77a8739b12b8891832
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711144"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>の GUID と定数の SDK
-この<xref:Microsoft.VisualStudio.VSConstants>クラスは、環境 GUID と定数の選択にアクセスできるようにします。
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Visual Studio SDK の Guid と定数
+<xref:Microsoft.VisualStudio.VSConstants>クラスを使用すると、選択した環境の guid と定数にアクセスできます。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [IDE GUID](../extensibility/ide-guids.md)によって提供される GUID<xref:Microsoft.VisualStudio.VSConstants>の一覧が表示されます。
+- [IDE guid](../extensibility/ide-guids.md) によって提供される Guid の一覧を示し <xref:Microsoft.VisualStudio.VSConstants> ます。
 
-- [IDE 定数](../extensibility/ide-constants.md)によって<xref:Microsoft.VisualStudio.VSConstants>提供される SDK 定数の一覧です。
+- [IDE 定数](../extensibility/ide-constants.md) によって提供される SDK 定数を一覧表示 <xref:Microsoft.VisualStudio.VSConstants> します。
 
 ## <a name="related-sections"></a>関連項目
-- [マネージ コード内の COM 定数](../extensibility/com-constants-in-managed-code.md)マネージ パッケージ フレームワーク (MPF) からマネージ コードで使用できる標準 COM 定数を示します。
+- [マネージコードの COM 定数](../extensibility/com-constants-in-managed-code.md) マネージパッケージフレームワーク (MPF) からマネージコードで使用できる標準 COM 定数を一覧表示します。
 
-- [プロジェクトシステムを拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)プロジェクト システムの拡張に使用されるさまざまな種類のコマンド項目を示します。
+- [プロジェクトシステムを拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) プロジェクトシステムの拡張に使用されるさまざまな種類のコマンド項目を一覧表示します。

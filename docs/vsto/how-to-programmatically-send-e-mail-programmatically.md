@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543261"
 ---
 # <a name="how-to-programmatically-send-email"></a>方法: プログラムによって電子メールを送信する
-  この例では、電子メールアドレスにドメイン名**example.com**がある連絡先に電子メールメッセージを送信します。
+  この例では、電子メールアドレスにドメイン名 **example.com** がある連絡先に電子メールメッセージを送信します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "85543261"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
-- メールアドレスにドメイン名が**example.com**されている連絡先。
+- メールアドレスにドメイン名が **example.com** されている連絡先。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- ドメイン名**example.com**を検索するフィルターコードは削除しないでください。 フィルターを削除すると、ソリューションからすべての連絡先に電子メールメッセージが送信されます。
+ ドメイン名 **example.com**を検索するフィルターコードは削除しないでください。 フィルターを削除すると、ソリューションからすべての連絡先に電子メールメッセージが送信されます。
 
 ## <a name="see-also"></a>関連項目
 - [メールアイテムの操作](../vsto/working-with-mail-items.md)

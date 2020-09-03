@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544730"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Iwefデバッグサポートインターフェイス
@@ -39,7 +39,7 @@ interface IWefDebuggingSupport : IUnknown
 ## <a name="methods"></a>メソッド
  次の表は、Iwefデバッグサポートインターフェイスで定義されるメソッドを示しています。
 
-|名前|説明|
+|名前|[説明]|
 |----------|-----------------|
 |[GetAutoInsertExtensions メソッド](../vsto/getautoinsertextensions-method.md)|デバッグ中に自動的に挿入される Office 用アプリに関する情報を取得します。|
 |[SetWefProcessId メソッド](../vsto/setwefprocessid-method.md)|Web Extensions Framework (WEF) コンテンツを実行するプロセス識別子を提供します。|

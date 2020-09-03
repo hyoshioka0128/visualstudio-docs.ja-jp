@@ -1,5 +1,5 @@
 ---
-title: 中断モードでのステップ実行 |マイクロソフトドキュメント
+title: 中断モードでステップインする |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712853"
 ---
 # <a name="stepping-in-break-mode"></a>中断モードでのステップ実行
-次のセクションでは、デバッガーが中断モードで、コードをステップ実行する必要がある場合に発生するプロセスについて説明します。
+次のセクションでは、デバッガーが中断モードであり、コードをステップ実行する必要がある場合に発生するプロセスについて説明します。
 
-## <a name="stepping-process"></a>ステッピングプロセス
+## <a name="stepping-process"></a>ステップ実行プロセス
 
-1. [ステップを実行するには](../../extensibility/debugger/reference/idebugprogram2-step.md)、[ステップKIND](../../extensibility/debugger/reference/stepkind.md)引数と[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)引数を指定してステップを呼び出します。
+1. ステップを実行するには、 [Stepkind](../../extensibility/debugger/reference/stepkind.md)引数と[stepkind](../../extensibility/debugger/reference/stepunit.md)引数を指定して[IDebugProgram2:: step](../../extensibility/debugger/reference/idebugprogram2-step.md)を呼び出します。
 
-2. 手順が完了したら、停止イベントとして[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)を送信します。
+2. ステップが完了したら、停止イベントとして [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) を送信します。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガ イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
+- [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)

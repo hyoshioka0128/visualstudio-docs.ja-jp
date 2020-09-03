@@ -1,5 +1,5 @@
 ---
-title: サーバー ( ビジュアル スタジオ SDK) |マイクロソフトドキュメント
+title: サーバー (Visual Studio SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712893"
 ---
 # <a name="servers-visual-studio-sdk"></a>サーバー (Visual Studio SDK)
-デバッガアーキテクチャでは、*サーバ*:
+デバッガーアーキテクチャでは、 *サーバー*は次のようになります。
 
-- ポートとポートのサプライヤーのコンテナーであり、ポートとポートサプライヤーをセッションデバッグ マネージャー (SDM) とデバッグ エンジンに通信します。
+- はポートおよびポートサプライヤーのコンテナーであり、ポートとポートサプライヤーをセッションデバッグマネージャー (SDM) およびデバッグエンジンに伝えます。
 
-- 名前で自身を識別し、そのポートとポートのサプライヤーを列挙できます。
+- では、名前によって自身を識別し、そのポートとポートサプライヤーを列挙できます。
 
-- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)インターフェイスによって表され、Visual Studio によってのみ実装されます (実行中の Visual Studio の各インスタンスに対してサーバーのインスタンスが 1 つ)。
+- は、 [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) インターフェイスによって表されます。これは、visual studio (を実行している visual studio のインスタンスごとにサーバーの1つのインスタンス) によってのみ実装されます。
 
 ## <a name="see-also"></a>関連項目
 - [ポート](../../extensibility/debugger/ports.md)
-- [港湾サプライヤー](../../extensibility/debugger/port-suppliers.md)
+- [ポートサプライヤー](../../extensibility/debugger/port-suppliers.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

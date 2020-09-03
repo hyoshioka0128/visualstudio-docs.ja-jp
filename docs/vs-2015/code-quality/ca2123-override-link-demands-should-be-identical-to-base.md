@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a722eb95561a1a81b0d17b8876df8b4bac048b5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544262"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123:オーバーライドのリンク要求はベースと同一でなければなりません
@@ -33,7 +33,7 @@ ms.locfileid: "85544262"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリック型またはプロテクトメソッドがメソッドをオーバーライドしているか、インターフェイスを実装しています。また、インターフェイスまたは仮想メソッドと同じ[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)がありません。
+ パブリック型またはプロテクトメソッドがメソッドをオーバーライドしているか、インターフェイスを実装しています。また、インターフェイスまたは仮想メソッドと同じ [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) がありません。
 
 ## <a name="rule-description"></a>ルールの説明
  この規則は、メソッドをその基本メソッド (別の型のインターフェイスまたは仮想メソッド) とマッチングし、それぞれについてリンク確認要求を比較します。 メソッドまたは基本メソッドにリンク確認要求があり、もう一方のメソッドではない場合、違反が報告されます。
@@ -51,5 +51,5 @@ ms.locfileid: "85544262"
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.OverridesAndSecurity/cs/FxCop.Security.OverridesAndSecurity.cs#1)]
 
-## <a name="see-also"></a>関連項目
- [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)の[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+## <a name="see-also"></a>参照
+ [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)の [リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

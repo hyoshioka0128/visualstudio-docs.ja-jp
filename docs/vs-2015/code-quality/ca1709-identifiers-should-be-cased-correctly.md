@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 14c50ed94f05401cc5575af9f8b98472c35b261d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544002"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:識別子では、大文字と小文字が正しく区別されなければなりません
@@ -27,7 +27,7 @@ ms.locfileid: "85544002"
 
 Visual Studio の最新のドキュメントについては、「 [CA1709: identifier は大文字にする必要があり](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly)ます」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|

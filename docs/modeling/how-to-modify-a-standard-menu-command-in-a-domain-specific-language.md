@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532497"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>方法: ドメイン固有言語における標準のメニュー コマンドを修正する
 
-DSL で自動的に定義される標準コマンドのいくつかの動作を変更できます。 たとえば、重要な情報を除外するように**切り取り**を変更することができます。 そのためには、コマンド セット クラス内でメソッドをオーバーライドします。 これらのクラスは DslPackage プロジェクト内の CommandSet.cs ファイルで定義され、<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> から派生します。
+DSL で自動的に定義される標準コマンドのいくつかの動作を変更できます。 たとえば、重要な情報を除外するように **切り取り** を変更することができます。 そのためには、コマンド セット クラス内でメソッドをオーバーライドします。 これらのクラスは DslPackage プロジェクト内の CommandSet.cs ファイルで定義され、<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> から派生します。
 
 > [!NOTE]
-> 独自のメニューコマンドを作成する場合は、「[方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
+> 独自のメニューコマンドを作成する場合は、「 [方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
 ## <a name="what-commands-can-you-modify"></a>変更可能なコマンド
 
@@ -123,7 +123,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }
 ```
 
-要素またはリンクの作成、削除、または更新など、コードがストアに対して変更を加える場合、トランザクション内でそれを実行する必要があります。 詳細については、「[モデル要素を作成および更新する方法](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)」を参照してください。
+要素またはリンクの作成、削除、または更新など、コードがストアに対して変更を加える場合、トランザクション内でそれを実行する必要があります。 詳細については、「 [モデル要素を作成および更新する方法](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)」を参照してください。
 
 ### <a name="write-the-code-of-the-methods"></a>メソッドのコードを記述する
 
@@ -131,17 +131,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. ユーザーが右クリックした図形は常にこの図形およびコネクタの一覧に含まれます。 ユーザーが図の空白部分をクリックした場合、このリストのメンバーは図のみになります。
 
-- `this.IsDiagramSelected()` - `true`ユーザーが図の空白部分をクリックした場合。
+- `this.IsDiagramSelected()` - `true` ユーザーが図の空白部分をクリックした場合。
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-ユーザーが複数の図形を選択しませんでした
+- `this.IsSingleSelection()` -ユーザーが複数の図形を選択しませんでした
 
-- `this.SingleSelection`-ユーザーが右クリックした図形または図
+- `this.SingleSelection` -ユーザーが右クリックした図形または図
 
-- `shape.ModelElement as MyLanguageElement`-図形によって表されるモデル要素。
+- `shape.ModelElement as MyLanguageElement` -図形によって表されるモデル要素。
 
-要素間の移動方法、およびオブジェクトとリンクの作成方法の詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
+要素間の移動方法、およびオブジェクトとリンクの作成方法の詳細については、「 [プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
