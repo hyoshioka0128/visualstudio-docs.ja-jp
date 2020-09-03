@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281475"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>接続文字列にはクリア テキスト パスワード付きの資格情報が含まれていて、統合セキュリティは使用されていません
@@ -26,11 +26,11 @@ ms.locfileid: "85281475"
 
 ## <a name="save-options"></a>保存オプション
 
-- 接続文字列を機密情報と共に保存するには、[**はい]** を選択します。
+- 接続文字列を機密情報と共に保存するには、[ **はい]** を選択します。
 
    接続文字列がアプリケーション設定として格納されます。 接続文字列には、プレーンテキストの機密情報が含まれます。 DBML ファイルには機密情報は含まれません。
 
-- 機密情報を使用せずに接続文字列を保存するには、[**いいえ**] を選択します。
+- 機密情報を使用せずに接続文字列を保存するには、[ **いいえ**] を選択します。
 
    接続文字列がアプリケーション設定として格納されますが、パスワードは含まれません。
 

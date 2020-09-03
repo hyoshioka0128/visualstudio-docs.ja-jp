@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bef208dbcb4c1017840602d198b5099267b25a99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667640"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張正確性規則" 規則セット
@@ -25,7 +25,7 @@ Microsoft 拡張正確性規則の規則セットは、コード分析によっ�
 
  次の表では、Microsoft 拡張正確性規則の規則セットに含まれるすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|
@@ -150,7 +150,7 @@ Microsoft 拡張正確性規則の規則セットは、コード分析によっ�
 |[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|オーバーライドする Equals で GetHashCode をオーバーライドします|
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|exception 句に例外を発生させないでください|
 |[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|演算子オーバーロードには名前付けされた代替が存在します|
-|[CA2228: 未公開](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|未公開のリソース形式を出荷しません|
+|[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|未公開のリソース形式を出荷しません|
 |[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|可変引数に対して param を使用します|
 |[CA2233](../code-quality/ca2233-operations-should-not-overflow.md)|操作はオーバーフローできません|
 |[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|文字列の代わりに System.Uri オブジェクトを渡します|
