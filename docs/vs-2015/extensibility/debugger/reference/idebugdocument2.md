@@ -13,48 +13,48 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2cd6afb417de4d8a362916f91593d0d0e67d307c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156506"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、ソース ドキュメントを表します。  
+このインターフェイスは、ソースドキュメントを表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugDocument2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 一般にこのインターフェイスを実装します。 デバッグ エンジン (DE) は、ソース コードを指定する必要があるあり、ソースがディスクに存在しない場合にも、このインターフェイスに実装できます。  このような場合、DE は実装にも[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)と[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)で追加のメソッドと同様に、インターフェイス、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)と[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] は、通常、このインターフェイスを実装します。 デバッグエンジン (DE) は、ソースコードを指定する必要があり、ソースがディスク上に存在しない場合にも、このインターフェイスを実装できます。  このような場合、DE は [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) および [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) インターフェイスを実装するほか、 [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) および [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) インターフェイスにいくつかの追加のメソッドを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 上のメソッド、 `IDebugDocumentContext2`、 `IDebugDisassemblyStream2`、 `IDebugDocumentPosition2`、および`IDebugActivateDocumentEvent2`インターフェイスは、このインターフェイスを返します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ `IDebugDocumentContext2`、、、およびインターフェイスのメソッドは、 `IDebugDisassemblyStream2` `IDebugDocumentPosition2` `IDebugActivateDocumentEvent2` このインターフェイスを返します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugDocument2`します。  
+ 次の表に、のメソッドを示し `IDebugDocument2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|いくつかの形式のいずれかで、ドキュメントの名前を取得します。|  
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|複数の形式のいずれかで文書の名前を取得します。|  
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|ドキュメントのクラス識別子を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- このインターフェイスは、DE、ソース コードを提供する場合にのみ実装されます。 たとえば、HTML ページ上のスクリプトをデバッグする場合、DE を提供ソース コード、ソースをダウンロードまたは動的に生成されるため、ディスク ファイルとして存在しません。 C++ などの従来の言語をデバッグするときに、このインターフェイスを実装する必要はありません。  
+## <a name="remarks"></a>注釈  
+ このインターフェイスは、DE がソースコードを提供する場合にのみ実装されます。 たとえば、HTML ページでスクリプトをデバッグする場合、ソースは動的にダウンロードまたは生成され、ディスクファイルとして存在しないため、DE によってソースコードが提供されます。 C++ などの従来の言語をデバッグする場合は、このインターフェイスを実装する必要はありません。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)   
  [GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)   

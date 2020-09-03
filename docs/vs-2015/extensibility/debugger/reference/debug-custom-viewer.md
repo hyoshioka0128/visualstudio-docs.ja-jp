@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d10e0811044d7169eaf46f48f53389fa7b3076ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179161"
 ---
-# <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
+# <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-カスタム ビューアーを識別する構造またはビジュアライザーを入力します。  
+カスタムビューアーまたは型ビジュアライザーを識別する構造体。  
   
 ## <a name="syntax"></a>構文  
   
@@ -50,34 +50,34 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>メンバー  
  dwID  
- 複数の閲覧者またはビジュアライザーで 1 つ実装を区別するために ID`GUID`します。  
+ 1つのユーザーによって実装された複数のビューアーまたはビジュアライザーを区別する ID `GUID` 。  
   
  bstrMenuName  
- ドロップダウン メニューに表示されるテキスト。  
+ ドロップダウンメニューに表示されるテキスト。  
   
  bstrDescription  
- カスタム ビューアーまたは型のビジュアライザーが (あります null 値を使用しない場合) の説明。  
+ カスタムビューアーまたは型ビジュアライザーの説明。使用されていない場合は、null 値を指定する必要があります。  
   
  guidLang  
- 提供する式エバリュエーターの言語です。  
+ 式エバリュエーターを提供するの言語。  
   
  guidVendor  
- 提供する式エバリュエーターのベンダー。  
+ 式エバリュエーターを提供するのベンダ。  
   
  bstrMetric  
- メトリックをカスタム ビューアーまたは型のビジュアライザー`CLSID`格納されます。  
+ カスタムビューアーまたは型ビジュアライザーが格納されるメトリック `CLSID` 。  
   
-## <a name="remarks"></a>Remarks  
- この構造体のリストがへの呼び出しによって返される、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)メソッド (と拡張機能によって、 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)メソッド)。  
+## <a name="remarks"></a>注釈  
+ この構造体のリストは、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) メソッドの呼び出し (および拡張による [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) メソッド) によって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

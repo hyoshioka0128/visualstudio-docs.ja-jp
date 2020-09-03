@@ -1,5 +1,5 @@
 ---
-title: メソッドフィールドの名前 |マイクロソフトドキュメント
+title: 'IDebugSymbolProvider:: GetMethodFieldsByName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf123c1e7e83264a2ae4a8ef8c2b4b3207a62a5d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719219"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
@@ -45,19 +45,19 @@ int GetMethodFieldsByName(
 
 ## <a name="parameters"></a>パラメーター
 `pszFullName`\
-[in]メソッド名。
+からメソッド名。
 
 `nameMatch`\
-[in]大文字と小文字を区別する、一致の種類を選択します。
+から一致の種類 (大文字と小文字を区別するなど) を選択します。
 
 `ppEnum`\
-[アウト]このメソッド[に関連](../../../extensibility/debugger/reference/ienumdebugfields.md)付けられているフィールドの列挙子を返します。
+入出力このメソッドに関連付けられているフィールドの [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 列挙子を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- メソッドは、オーバーロードされている場合など、複数のフィールドに関連付けることができます。
+## <a name="remarks"></a>注釈
+ たとえば、オーバーロードされている場合、メソッドを複数のフィールドに関連付けることができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
