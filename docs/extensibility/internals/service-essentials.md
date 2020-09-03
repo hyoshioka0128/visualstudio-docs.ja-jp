@@ -92,7 +92,7 @@ ms.locfileid: "80705502"
 
     このコードは、SVsActivityLog サービスを取得し、それを IVsActivityLog インターフェイスにキャストします。これを使用してアクティビティログに書き込むことができます。 例については、「 [方法: アクティビティログを使用する](../../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [使用可能なサービスの一覧](../../extensibility/internals/list-of-available-services.md)
 - [サービスの使用と提供](../../extensibility/using-and-providing-services.md)

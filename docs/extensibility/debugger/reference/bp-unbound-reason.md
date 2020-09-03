@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON |マイクロソフトドキュメント
+title: BP_UNBOUND_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737777"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-ブレークポイントがバインドされなかった理由を示します。
+ブレークポイントがバインド解除された理由を示します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,26 +48,26 @@ public enum enum_BP_UNBOUND_REASON {
 
 ## <a name="fields"></a>フィールド
 `BPUR_UNKNOWN`\
-その理由は不明です。
+理由は不明です。
 
 `BPUR_CODE_UNLOADED`\
-ブレークポイントを含むコードがアンロードされました。
+ブレークポイントを含むコードはアンロードされました。
 
 `BPUR_BREAKPOINT_REBIND`\
-ブレークポイントが別の場所に再バインドされました。 これは、ブレークポイントが移動したとき、または無効になったパスを持つファイルにブレークポイントがバインドされているときに、エディット コンティニュ操作の後に発生します。
+ブレークポイントは別の場所に再バインドされています。 これは、ブレークポイントが移動したとき、または無効になったパスを持つファイルにブレークポイントがバインドされたときに発生する可能性があります。
 
 `BPUR_ BREAKPOINT_ERROR`\
-ブレークポイントは、バインド後にエラーと判断されます。 これは、条件が無効になったマネージ ブレークポイントに発生します。
+ブレークポイントは、バインド後にエラーが発生していると判断されます。 これは、条件が有効でなくなったマネージブレークポイントに発生します。
 
-## <a name="remarks"></a>Remarks
-[メソッドによって](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)返されます。
+## <a name="remarks"></a>解説
+[Getreason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)メソッドによって返されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

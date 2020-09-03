@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsegments::next |Microsoft Docs
+title: 'IDiaEnumSegments:: Next |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e00f85d4b3a111f3a68b934006a32197245d4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189874"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定した列挙体シーケンス内のセグメント数を取得します。  
+列挙シーケンス内の指定された数のセグメントを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,17 +37,17 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>パラメーター  
  celt  
- [in]取得する列挙子内のセグメントの数。  
+ から取得する列挙子内のセグメントの数。  
   
  rgelt  
- [out]情報を格納する目的である配列[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)セグメントを表すオブジェクト。  
+ 入出力セグメントを表す目的の [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) オブジェクトを使用して入力する配列。  
   
  pceltFetched  
- [out]フェッチされた列挙子のセグメントの数を返します。  
+ 入出力フェッチされた列挙子内のセグメントの数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`ない他のセグメントがある場合。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 これ `S_FALSE` 以上セグメントがない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

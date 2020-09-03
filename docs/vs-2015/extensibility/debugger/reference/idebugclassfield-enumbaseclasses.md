@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses |Microsoft Docs
+title: 'IDebugClassField:: EnumBaseClasses |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acfdc872ba5f7cf1989ea1d9ec67f82f1c0419b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191048"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このクラスの基底クラスの列挙子を作成します。  
+このクラスの基本クラスの列挙子を作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,13 +40,13 @@ int EnumBaseClasses(
   
 #### <a name="parameters"></a>パラメーター  
  `ppEnum`  
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)基底クラスの一覧を表すオブジェクト。 基底クラスがない場合は、null 値を返します。  
+ 入出力基底クラスのリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。 基底クラスがない場合は、null 値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合は S_OK を返します、基底クラスがない場合に、S_SH_NO_BASE_CLASSES を返します (および`ppEnum`パラメーターが null 値に設定されている)、それ以外のエラー コードを返します。  
+ 正常に終了した場合は S_OK を返し、基本クラスがない場合は S_SH_NO_BASE_CLASSES を返します ( `ppEnum` パラメーターが null 値に設定されている場合)。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 列挙子オブジェクトの基底クラスは、ほとんどのリモートの基本クラスに最も直接的な (または最も派生) の基本クラスの順序で指定されます。 たとえば、C++ クラスを考えてみます。  
+## <a name="remarks"></a>注釈  
+ 列挙子オブジェクトの基底クラスは、最も直接的な (または最も派生した) 基底クラスから最もリモートの基底クラスまで、順に指定されます。 たとえば、次の C++ クラスがあるとします。  
   
 ```  
 class Root { }  
@@ -55,8 +55,8 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- 列挙は順で基底クラスを返す`Level2`、 `Level1`、`Root`します。  
+ 列挙型では、基本クラスが、、の順に返され `Level2` `Level1` `Root` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

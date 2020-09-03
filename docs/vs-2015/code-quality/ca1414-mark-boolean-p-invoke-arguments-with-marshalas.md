@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 783f7fad05cad18efea2f83b6d76c4c9e644f119
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548383"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: ブール型の P/Invoke 引数を MarshalAs に設定します
@@ -36,9 +36,9 @@ ms.locfileid: "85548383"
  プラットフォーム呼び出しメソッドの宣言に <xref:System.Boolean?displayProperty=fullName> パラメーターまたは戻り値が含まれていますが、 <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> パラメーターまたは戻り値に属性が適用されていません。
 
 ## <a name="rule-description"></a>ルールの説明
- プラットフォーム呼び出しメソッドはアンマネージコードにアクセスし、 `Declare` またはのキーワードを使用して定義され [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> ます。 <xref:System.Runtime.InteropServices.MarshalAsAttribute>マネージコードとアンマネージコードの間でデータ型を変換するために使用されるマーシャリング動作を指定します。 やなどの多くの単純なデータ型は、 <xref:System.Byte?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> アンマネージコードで1つの表現を持ち、マーシャリング動作の指定を必要としません。共通言語ランタイムは、自動的に正しい動作を提供します。
+ プラットフォーム呼び出しメソッドはアンマネージコードにアクセスし、 `Declare` またはのキーワードを使用して定義され [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> ます。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> マネージコードとアンマネージコードの間でデータ型を変換するために使用されるマーシャリング動作を指定します。 やなどの多くの単純なデータ型は、 <xref:System.Byte?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> アンマネージコードで1つの表現を持ち、マーシャリング動作の指定を必要としません。共通言語ランタイムは、自動的に正しい動作を提供します。
 
- <xref:System.Boolean>データ型には、アンマネージコード内の複数の表現があります。 が指定されて <xref:System.Runtime.InteropServices.MarshalAsAttribute> いない場合、データ型の既定のマーシャリング動作 <xref:System.Boolean> はに <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> なります。 これは32ビットの整数であり、すべての状況に適しているわけではありません。 アンマネージメソッドによって必要とされるブール値は、適切なに決定して照合する必要があり <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> ます。 Unmanagedtype.bool は、常に4バイトの Win32 BOOL 型です。 Unmanagedtype.bool は、C++ `bool` または他の1バイト型に使用する必要があります。 詳細については、「[ブール型の既定のマーシャリング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)」を参照してください。
+ <xref:System.Boolean>データ型には、アンマネージコード内の複数の表現があります。 が指定されて <xref:System.Runtime.InteropServices.MarshalAsAttribute> いない場合、データ型の既定のマーシャリング動作 <xref:System.Boolean> はに <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> なります。 これは32ビットの整数であり、すべての状況に適しているわけではありません。 アンマネージメソッドによって必要とされるブール値は、適切なに決定して照合する必要があり <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> ます。 Unmanagedtype.bool は、常に4バイトの Win32 BOOL 型です。 Unmanagedtype.bool は、C++ `bool` または他の1バイト型に使用する必要があります。 詳細については、「 [ブール型の既定のマーシャリング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、 <xref:System.Runtime.InteropServices.MarshalAsAttribute> <xref:System.Boolean> パラメーターまたは戻り値にを適用します。 属性の値を適切なに設定し <xref:System.Runtime.InteropServices.UnmanagedType> ます。
@@ -58,5 +58,5 @@ ms.locfileid: "85548383"
 
  [CA2101: P/Invoke 文字列引数のマーシャリングを指定します。](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>[アンマネージコードとの相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)[を行うブール型に対する既定のマーシャリング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)

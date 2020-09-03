@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876035"
 ---
 # <a name="pick-activity-designer"></a>Pick アクティビティ デザイナー
@@ -29,15 +29,15 @@ ms.locfileid: "86876035"
 
 [**ツールボックス**] の [**制御フロー** ] カテゴリにある**Pick**アクティビティデザイナーにアクセスします。 **Pick**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence**アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.Pick> れます。このアクティビティには、既定で、 <xref:System.Activities.Statements.PickBranch> Branch1 と Branch2 の表示名を持つ要素として2つの空のアクティビティが含まれます。 これらの <xref:System.Activities.Statements.PickBranch.DisplayName%2A> プロパティ値は、各分岐の**PickBranch** [**プロパティ**] ウィンドウ内で、または分岐アクティビティデザイナーヘッダーで編集できます。
 
-オブジェクトのコレクションにアクティビティを追加するには、 <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> [**ツールボックス**] から [ピックアップ**分岐**] デザイナーをドラッグアンドドロップする方法と、 **Pick**デザイン画面内から右クリックメニューを使用する方法の2つの方法があります。 詳細については、「[ピック分岐](../workflow-designer/pickbranch-activity-designer.md)」を参照してください。 Pick アクティビティデザイナー内に配置できる項目は、 **Pick** **branch**アクティビティデザイナーのみであることに注意してください。
+オブジェクトのコレクションにアクティビティを追加するには、 <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> [**ツールボックス**] から [ピックアップ**分岐**] デザイナーをドラッグアンドドロップする方法と、 **Pick**デザイン画面内から右クリックメニューを使用する方法の2つの方法があります。 詳細については、「 [ピック分岐](../workflow-designer/pickbranch-activity-designer.md) 」を参照してください。 Pick アクティビティデザイナー内に配置できる項目は、 **Pick** **branch** アクティビティデザイナーのみであることに注意してください。
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの Pick アクティビティのプロパティ
 
 次の表に、<xref:System.Activities.Statements.Pick> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドまたはデザイナー画面で編集できます。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|誤り|ヘッダーの <xref:System.Activities.Statements.Pick> アクティビティ デザイナーの表示名を指定します。 既定値は Pick です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|ヘッダーの <xref:System.Activities.Statements.Pick> アクティビティ デザイナーの表示名を指定します。 既定値は Pick です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
 
 ## <a name="see-also"></a>関連項目
 

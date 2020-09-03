@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e660b1af58dca8d0d69ce2844076382c4a5a1f12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548266"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列挙子は厳密に型指定されていなければなりません
@@ -60,7 +60,7 @@ ms.locfileid: "85548266"
 
  [CA1039:リストは厳密に型指定されています](../code-quality/ca1039-lists-are-strongly-typed.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName>
  <xref:System.Collections.DictionaryBase?displayProperty=fullName>
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

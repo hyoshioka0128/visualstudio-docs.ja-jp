@@ -12,22 +12,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 57bb08abf555e26603f4464e0971ce40fd02f65d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661696"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>ドメイン固有言語エクスプローラーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**DSL エクスプローラー**では、ツリービューに複数の種類の情報が表示されます。 DSL エクスプローラーのほとんどの項目の詳細については、「[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
+**DSL エクスプローラー**では、ツリービューに複数の種類の情報が表示されます。 DSL エクスプローラーのほとんどの項目の詳細については、「 [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
 
  以下のようなノードがあります。
 
-- **接続ビルダー**。 モデル内の接続ビルダーの一覧。 接続ビルダーの詳細については、「[リンク作成のカスタマイズ-リダイレクト](../misc/customizing-link-creation-redirection.md)」を参照してください。
+- **接続ビルダー**。 モデル内の接続ビルダーの一覧。 接続ビルダーの詳細については、「 [リンク作成のカスタマイズ-リダイレクト](../misc/customizing-link-creation-redirection.md)」を参照してください。
 
-- **コネクタ**。 モデル内のコネクタ図要素の一覧。 コネクタの詳細については、「[図形とコネクタの種類-リダイレクト](../misc/types-of-shapes-and-connectors-redirect.md)」を参照してください。
+- **コネクタ**。 モデル内のコネクタ図要素の一覧。 コネクタの詳細については、「 [図形とコネクタの種類-リダイレクト](../misc/types-of-shapes-and-connectors-redirect.md)」を参照してください。
 
 - **ダイアグラム**。 図を定義するプロパティとコネクタ マップおよび図形マップの一覧のセット。
 
@@ -37,9 +37,9 @@ ms.locfileid: "72661696"
 
 - **ドメインの種類**。 モデル内で使用される組み込み型および外部型の一覧。
 
-- **エディター**。 **ツールボックス**のタブとそれに含まれる項目、およびモデルの検証設定の一覧。 検証の詳細については、「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
+- **エディター**。 **ツールボックス**のタブとそれに含まれる項目、およびモデルの検証設定の一覧。 検証の詳細については、「 [ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 
-- **エクスプローラーの動作**。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプローラーをカスタマイズする方法の詳細については、「[モデルエクスプローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)」を参照してください。
+- **エクスプローラーの動作**。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプローラーをカスタマイズする方法の詳細については、「 [モデルエクスプローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)」を参照してください。
 
 - **図形**。 モデル内の図形図要素の一覧。
 

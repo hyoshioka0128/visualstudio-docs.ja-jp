@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459295"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
@@ -33,7 +33,7 @@ ms.locfileid: "86459295"
 
 行と列にオブジェクトを配置します。
 
-![Grid レイアウト パネル](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![グリッド レイアウト パネル](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
@@ -43,11 +43,11 @@ ms.locfileid: "86459295"
 
 ![UniformGrid レイアウト パネル](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>キャンバス
 
 任意の方法でオブジェクトを配置します。 ユーザーがアプリを実行しているとき、これらの要素は画面上の固定位置にあります。
 
-![Canvas レイアウト パネル](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![キャンバス レイアウト パネル](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 
@@ -79,7 +79,7 @@ ms.locfileid: "86459295"
 
 次のレイアウト コントロールは最もよく利用されますが、他にもレイアウト コントロールがあります。 Visual Studio の**ツールボックス**または Blend for Visual Studio の **[資産]** パネルでこれらすべてを見つけることができます。
 
-### <a name="border"></a>Border
+### <a name="border"></a>境界線
 
 罫線、背景、またはその両方をオブジェクトの周りに作成します。 **境界線**に対して追加できるオブジェクトは 1 つのみです。 複数のオブジェクトに境界線や背景を適用する場合は、レイアウト パネルを**境界線**に追加します。 次に、オブジェクトをそのパネルまたはコントロールに追加します。
 

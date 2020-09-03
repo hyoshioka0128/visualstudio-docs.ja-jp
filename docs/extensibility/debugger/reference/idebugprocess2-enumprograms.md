@@ -1,5 +1,5 @@
 ---
-title: IDebugプロセス2::列挙プログラム |マイクロソフトドキュメント
+title: 'IDebugProcess2:: EnumPrograms |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 56b1c939802406394bdf09e3cfa8c76f5103d974
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724090"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
@@ -41,10 +41,10 @@ int EnumPrograms( 
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[アウト]プロセス内のすべてのプログラムの一覧を含[むオブジェクトを](../../../extensibility/debugger/reference/ienumdebugprograms2.md)返します。
+入出力プロセス内のすべてのプログラムの一覧を含む [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum |Microsoft Docs
+title: Stackフレーム Typeenum |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 655911bac1efbafe1838e24e2056282f9036479b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179192"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-スタック フレームの種類を指定します。  
+スタックフレームの種類を指定します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 enum StackFrameTypeEnum {  
@@ -38,31 +38,31 @@ enum StackFrameTypeEnum {
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  `FrameTypeFPO`  
- フレーム ポインターを指定します。FPO 情報を使用できます。  
+ フレームポインターを省略します。FPO info を利用できます。  
   
  `FrameTypeTrap`  
- カーネル トラップ フレーム。  
+ カーネルトラップフレーム。  
   
  `FrameTypeTSS`  
- カーネル トラップ フレーム。  
+ カーネルトラップフレーム。  
   
  `FrameTypeStandard`  
- 標準 EBP スタック フレーム。  
+ 標準 EBP スタックフレーム。  
   
  `FrameTypeFrameData`  
- フレーム ポインターを指定します。フレーム データ情報は利用可能です。  
+ フレームポインターを省略します。使用可能なフレームデータ情報です。  
   
  `FrameTypeUnknown`  
- すべてのデバッグ情報がないフレーム。  
+ デバッグ情報が含まれていないフレーム。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値が呼び出しによって返される、 [idiastackframe::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、 [IDiaStackFrame:: get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) メソッドへの呼び出しによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

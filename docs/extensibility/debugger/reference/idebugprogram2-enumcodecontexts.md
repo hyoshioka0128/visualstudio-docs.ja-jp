@@ -1,5 +1,5 @@
 ---
-title: Iデバッグプログラム2::列挙体コンテキスト |マイクロソフトドキュメント
+title: 'IDebugProgram2:: EnumCodeContexts |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c22a5ce398e76ee97b2f0448900fd4e38f996615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723041"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-ソース ファイル内の指定した位置のコード コンテキストの一覧を取得します。
+ソースファイル内の指定された位置のコードコンテキストのリストを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,15 +43,15 @@ int EnumCodeContexts( 
 
 ## <a name="parameters"></a>パラメーター
 `pDocPos`\
-[in]IDE に認識されているソース ファイル内の抽象位置を表す[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)オブジェクト。
+からIDE で認識されているソースファイル内の抽象位置を表す [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) オブジェクト。
 
-`ppEnum`[アウト]コード[コンテキスト](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)の一覧を含むオブジェクトを返します。
+`ppEnum` 入出力コードコンテキストのリストを格納している [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドを使用すると、セッション デバッグ マネージャー (SDM) または IDE は、ソース ファイルの位置をコードの位置にマップできます。 ソースが複数のコード ブロック (たとえば、C++ テンプレート) を生成する場合は、複数のコード コンテキストが返されます。
+## <a name="remarks"></a>解説
+ このメソッドを使用すると、セッションデバッグマネージャー (SDM) または IDE でソースファイルの位置をコードの位置にマップできます。 ソースが複数のコードブロック (C++ テンプレートなど) を生成した場合、複数のコードコンテキストが返されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

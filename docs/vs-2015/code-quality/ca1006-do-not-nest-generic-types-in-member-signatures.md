@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 00992fc71f07d820620cecbe57eac4f3b3702701
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539647"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006:ジェネリック型をメンバー シグネチャ内で入れ子にしません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
@@ -65,5 +65,5 @@ ms.locfileid: "85539647"
 
  [CA1007:適切な場所にジェネリックを使用します](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ジェネリック](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

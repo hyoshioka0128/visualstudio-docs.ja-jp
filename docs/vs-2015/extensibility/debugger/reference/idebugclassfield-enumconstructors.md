@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumConstructors |Microsoft Docs
+title: 'IDebugClassField:: EnumConstructors |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd93f4867221f0b42f91fe1f96b8a8b464bf5aa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191037"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このクラスのコンス トラクターの列挙子を作成します。  
+このクラスのコンストラクターの列挙子を作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,20 +42,20 @@ int EnumConstructors(
   
 #### <a name="parameters"></a>パラメーター  
  `cMatch`  
- [in]値、 [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)列挙体にコンス トラクターの型を指定する列挙体。  
+ から列挙するコンストラクターの型を指定する [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) 列挙の値。  
   
  `ppEnum`  
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)コンス トラクターの一覧を表すオブジェクト。 コンス トラクターがない場合は、null 値を返します。  
+ 入出力コンストラクターのリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。 コンストラクターが存在しない場合は、null 値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合は S_OK を返します。 またはコンス トラクターがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。  
+ 成功した場合は、S_OK を返すか、コンストラクターが存在しない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 列挙体の各要素は、 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)コンス トラクター メソッドを記述するオブジェクト。  
+## <a name="remarks"></a>注釈  
+ 列挙体の各要素は、コンストラクターメソッドを記述する [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) オブジェクトです。  
   
- 通常、コンス トラクターの一覧では、コンパイラによって提供される既定のコンス トラクターは含まれません。  
+ 通常、コンストラクターの一覧には、コンパイラによって提供される既定のコンストラクターは含まれません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

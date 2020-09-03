@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9dbd245edd81907197e23c0d193a01cc07424b4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548110"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターでの他の言語のサポートの追加
@@ -102,13 +102,13 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 |フォルダー名|説明|
 |-----------------|-----------------|
-|\\*\<language name>*|言語のフォルダーです。 *\<language name>* 言語の名前で置き換えます。 たとえば、 **\Matlab** などに置き換えます。|
+|\\*\<language name>*|言語のフォルダーです。 *\<language name>* は、言語の名前に置き換えます。 たとえば、 **\Matlab** などに置き換えます。|
 |\Syntaxes|文法のフォルダーです。 Matlab.json などの、言語に対応する文法の **.json** ファイルが含まれています。|
 |\Snippets|スニペットのフォルダーです。 言語のスニペットが含まれています。|
 
  Windows では、% userprofile% はパス: c:\Users に解決さ \\ *\<user name>* れます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
- TextMate 文法を作成する方法の詳細については、「Textmate –言語文法の概要」を参照してください。 [HTML に埋め込まれたソースコード構文の強調表示を追加する方法](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)については、「 [Textmate バンドルの言語文法とカスタムテーマを作成する方法](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」を参照してください。
+ TextMate 文法を作成する方法の詳細については、「Textmate –言語文法の概要」を参照してください。 [HTML に埋め込まれたソースコード構文の強調表示を追加する方法](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) については、「 [Textmate バンドルの言語文法とカスタムテーマを作成する方法](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio 2013 の移動機能の強化](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [チュートリアル: コード スニペットを作成](../ide/walkthrough-creating-a-code-snippet.md) [チュートリアル: 候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)

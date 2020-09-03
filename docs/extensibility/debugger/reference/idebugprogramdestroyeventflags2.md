@@ -1,5 +1,5 @@
 ---
-title: イベントフラグ2 |マイクロソフトドキュメント
+title: IDebugProgramDestroyEventFlags2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722504"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-デバッグ セッションを終了するときに、デバッグ エンジンが[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI の既定の動作をオーバーライドできるようにします。
+デバッグセッションを終了するときに、デバッグエンジンが UI の既定の動作をオーバーライドできるようにし [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。
 
 ## <a name="syntax"></a>構文
 
@@ -26,22 +26,22 @@ ms.locfileid: "80722504"
 IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- このインターフェイスは、デバッグ エンジンによって実装されます。 これは、プロセスの存続期間にわたって複数のプログラムを作成および破棄するホストに役立ちます。
+## <a name="notes-for-implementers"></a>実装側の注意
+ このインターフェイスは、デバッグエンジンによって実装されます。 これは、プロセスの有効期間中に複数のプログラムを作成して破棄する可能性のあるホストに便利です。
 
 ## <a name="methods"></a>メソッド
- 次の表に`IDebugProgramDestroyEventFlags2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugProgramDestroyEventFlags2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|プログラム破棄フラグを取得します。|
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|プログラムの破棄フラグを取得します。|
 
-## <a name="remarks"></a>Remarks
- UI の既定の[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]動作では、すべてのプログラムがプログラム破棄イベントを送信した後にデザイン モードに戻ります。 このインターフェイスを使用すると、デバッグ エンジンがその動作を変更できます。
+## <a name="remarks"></a>注釈
+ UI の既定の動作で [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] は、すべてのプログラムがプログラム破棄イベントを送信した後にデザインモードに戻ります。 このインターフェイスを使用すると、デバッグエンジンでその動作を変更できます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: Msdbg.h
+ ヘッダー: Msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

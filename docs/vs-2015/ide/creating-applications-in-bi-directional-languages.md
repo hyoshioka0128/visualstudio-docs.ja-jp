@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Studio による双方向言語用アプリケーションの作成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3d8649484178a537ed4af7bdde044a29893275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619264"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Visual Studio による双方向言語用アプリケーションの作成
@@ -32,7 +32,7 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 
 1. Windows アプリケーション。 双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳しくは、「[Windows フォーム アプリケーションの双方向サポート](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)」をご覧ください。
 
-2. Web アプリケーション。 Web サービスは UTF-8 および Unicode のテキストの送受信をサポートしているため、双方向言語を使用するアプリケーションに適しています。 Web クライアント アプリケーションのユーザー インターフェイスはブラウザーに依存しているため、Web アプリケーションでの双方向サポートの内容は、ユーザーのブラウザーが双方向機能をどの程度サポートしているかによって異なります。 Visual Studio では、アラビア語またはヘブライ語のテキスト、右から左への読み取り順序、ファイルのエンコーディング、およびローカル カルチャ設定をサポートするアプリケーションを作成できます。 詳しくは、「[ASP.NET Web アプリケーションに対する双方向サポート](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)」をご覧ください。
+2. Web アプリケーションとも接続できます。 Web サービスは UTF-8 および Unicode のテキストの送受信をサポートしているため、双方向言語を使用するアプリケーションに適しています。 Web クライアント アプリケーションのユーザー インターフェイスはブラウザーに依存しているため、Web アプリケーションでの双方向サポートの内容は、ユーザーのブラウザーが双方向機能をどの程度サポートしているかによって異なります。 Visual Studio では、アラビア語またはヘブライ語のテキスト、右から左への読み取り順序、ファイルのエンコーディング、およびローカル カルチャ設定をサポートするアプリケーションを作成できます。 詳しくは、「[ASP.NET Web アプリケーションに対する双方向サポート](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)」をご覧ください。
 
 3. コンソール アプリケーション コンソール アプリケーションでは、双方向言語のテキストがサポートされません。 これは、Windows におけるコンソール アプリケーションの動作のしくみによるものです。
 
@@ -46,7 +46,7 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 - **ファイルのエンコーディング** 言語固有のエンコーディングまたは Unicode エンコーディングでファイルを保存したり開いたりすることができます。 詳しくは、「[方法 : エンコーディングを使用してファイルを保存および開く](../ide/how-to-save-and-open-files-with-encoding.md)」をご覧ください。
 
 ## <a name="features-with-limited-or-no-support"></a>制限付きの機能、およびサポートされていない機能
- 双方向言語アプリケーションで一般的に使用される機能の中には、Visual Studio では完全にはサポートされていないものや、まったくサポートされていないものもあります。 次の設定があります。
+ 双方向言語アプリケーションで一般的に使用される機能の中には、Visual Studio では完全にはサポートされていないものや、まったくサポートされていないものもあります。 これには以下が含まれます。
 
 - **右から左への読み取り順序** 既定では、Visual Studio で使用するテキスト入力コントロールでは左から右への読み取り順序が使用されます。 ほとんどの場合は、Windows の標準のジェスチャを使用して読み取り順序を切り替えることができます。 たとえば、Ctrl キーを押しながら RightShift キーを押すことにより、プロパティ ウィンドウが右から左への読み取り順序のプロパティ値をサポートするように切り替えることができます。
 
@@ -87,4 +87,4 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 - コードのコメント。 アラビア語およびヘブライ語は、コメントに使用できます。 また、コメント ビルダー ツールでもこれらの言語を使用できます。
 
 ## <a name="see-also"></a>参照
- [Windows フォームアプリケーションの双方向サポート](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2) [ASP.NET Web アプリケーションの双](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)方向のサポートアプリケーションの[グローバル](../ide/globalizing-applications.md)化アプリケーションの[ローカライズ](../ide/localizing-applications.md)
+ [Windows フォームアプリケーションの双方向サポート](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2) [ASP.NET Web アプリケーションの双](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)方向のサポートアプリケーションの [グローバル](../ide/globalizing-applications.md)化アプリケーションの [ローカライズ](../ide/localizing-applications.md)

@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387240"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 ステップを実行します。
 
 > [!NOTE]
-> このメソッドは非推奨とされます。 代わりに、 [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッドを使用してください。
+> このメソッドは非推奨とされます。 代わりに、 [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
@@ -48,13 +48,13 @@ int Step( 
 
 ## <a name="parameters"></a>パラメーター
 `pThread`\
-から階段状のスレッドを表す[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)オブジェクト。
+から階段状のスレッドを表す [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) オブジェクト。
 
 `sk`\
-からステップの種類を指定する[stepkind](../../../extensibility/debugger/reference/stepkind.md)列挙の値です。
+からステップの種類を指定する [stepkind](../../../extensibility/debugger/reference/stepkind.md) 列挙の値です。
 
 `step`\
-からステップの単位 (ステートメントや命令など) を指定する[stepunit](../../../extensibility/debugger/reference/stepunit.md)列挙の値です。
+からステップの単位 (ステートメントや命令など) を指定する [stepunit](../../../extensibility/debugger/reference/stepunit.md) 列挙の値です。
 
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
@@ -63,7 +63,7 @@ int Step( 
  スレッド間の同期またはスレッド間の通信がある場合、プログラム内の他のスレッドは、特定のスレッドのステップ実行時に実行されます。
 
 > [!WARNING]
-> この呼び出しの処理中に、停止イベントまたは即時 (同期) イベントを[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に送信しないでください。それ以外の場合、デバッガーは応答を停止する可能性があります。
+> この呼び出しの処理中に、停止イベントまたは即時 (同期) イベントを [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) に送信しないでください。それ以外の場合、デバッガーは応答を停止する可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

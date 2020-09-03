@@ -1,5 +1,5 @@
 ---
-title: プログラムの数2 |マイクロソフトドキュメント
+title: IDebugProgramEx2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722332"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
-このインターフェイスを使用すると、セッション デバッグ マネージャー (SDM) は、プログラムにアタッチし、プログラムに関連付けられているプログラム ノードを取得します。
+このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) をプログラムにアタッチし、プログラムに関連付けられたプログラムノードを取得できます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,29 +28,29 @@ ms.locfileid: "80722332"
 IDebugProgramEx2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- カスタム ポート サプライヤーは、このインターフェイスを[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスと同じオブジェクトに実装し、SDM をプログラムにアタッチすると同時に、ポート サプライヤーがプログラムにアタッチされているすべてのセッションを追跡できるようにします。 カスタム ポートサプライヤーは、このインターフェイスを実装できます (選択した場合)。
+## <a name="notes-for-implementers"></a>実装側の注意
+ カスタムポートサプライヤーは、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスと同じオブジェクトにこのインターフェイスを実装して、SDM がプログラムにアタッチされるようにします。同時に、ポートサプライヤーがプログラムにアタッチされているすべてのセッションを追跡できるようにします。 カスタムポート供給業者は、選択した場合、このインターフェイスを実装できます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- SDM は、インターフェイスで`IDebugProgram2`[QueryInterface](/cpp/atl/queryinterface)を呼び出して、このインターフェイスを取得して、プログラムに接続されているセッションを追跡します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ SDM は、インターフェイスの [QueryInterface](/cpp/atl/queryinterface) を呼び出して、 `IDebugProgram2` プログラムにアタッチされたセッションを追跡するために、このインターフェイスを取得します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugProgramEx2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugProgramEx2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|プログラムをセッションにアタッチします。|
-|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|プログラムに関連付けられているプログラム ノードを取得します。|
+|[[アタッチ]](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)|セッションにプログラムをアタッチします。|
+|[GetProgramNode](../../../extensibility/debugger/reference/idebugprogramex2-getprogramnode.md)|プログラムに関連付けられているプログラムノードを取得します。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
  このインターフェイスは、SDM とプログラムの間でプライベートです。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: ポートプリフ.h
+ ヘッダー: Portpriv. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

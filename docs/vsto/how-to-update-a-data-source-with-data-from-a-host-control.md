@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541246"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>方法: ホストコントロールのデータを使用してデータソースを更新する
@@ -29,7 +29,7 @@ ms.locfileid: "85541246"
 
 2. メモリ内データ ソースで変更されたデータを使用して、データベースを更新します。 これは、データ ソースが SQL Server や Microsoft Office Access データベースなどのバックエンド データベースに接続されている場合にのみ有効です。
 
-   ホストコントロールとデータバインディングの詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」および「 [Office ソリューションのコントロールへのデータのバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
+   ホストコントロールとデータバインディングの詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md) 」および「 [Office ソリューションのコントロールへのデータのバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -90,7 +90,7 @@ ms.locfileid: "85541246"
 6. **[フォーマットと詳細バインド]** ダイアログ ボックスを閉じます。
 
 ## <a name="update-the-database"></a>データベースを更新する
- メモリ内データ ソースがデータベースに関連付けられている場合、データ ソースへの変更内容を使用して、データベースを更新する必要があります。 データベースの更新の詳細については、「[データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)し、TableAdapter を使用して[データを更新](../data-tools/update-data-by-using-a-tableadapter.md)する」を参照してください。
+ メモリ内データ ソースがデータベースに関連付けられている場合、データ ソースへの変更内容を使用して、データベースを更新する必要があります。 データベースの更新の詳細については、「 [データをデータベースに保存](../data-tools/save-data-back-to-the-database.md)  し、TableAdapter を使用して [データを更新](../data-tools/update-data-by-using-a-tableadapter.md) する」を参照してください。
 
 ### <a name="to-update-the-database"></a>データベースを更新するには
 

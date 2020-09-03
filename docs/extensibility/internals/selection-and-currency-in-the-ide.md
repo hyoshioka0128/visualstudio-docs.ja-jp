@@ -62,6 +62,6 @@ ms.locfileid: "80705580"
 
 - ウィンドウのフレーム選択コンテキスト内でトレースされた要素を変更するイベント。 例としては、DocObject 内での選択の変更や、プロジェクトタイプウィンドウでの選択の変更などがあります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)
 - [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)

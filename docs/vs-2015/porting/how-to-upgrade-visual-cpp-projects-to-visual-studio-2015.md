@@ -13,10 +13,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278731"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>方法: Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする
@@ -53,5 +53,5 @@ Visual Studio 2017 の最新ドキュメントについては、「[Visual C++ �
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>カスタム PlatformToolset の使用の継続
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]でカスタム PlatformToolset を引き続き使用する場合、ツールセットは、x86 コンピューターでは %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ の下、x64 コンピューターでは %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ の下に格納されている必要があります。 カスタム PlatformToolset を作成する方法については、Visual C++ チーム ブログの「 [C++ ネイティブ マルチ ターゲット](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) 」を参照してください。
 
-## <a name="see-also"></a>関連項目
- Visual [Studio プロジェクトの移植、移行、およびアップグレードに](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)関する[ビジュアルC++な移植とアップグレードのガイド](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)
+## <a name="see-also"></a>参照
+ [Visual C++ Porting and Upgrading Guide](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Visual Studio プロジェクトの移植、移行、およびアップグレードガイドの](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)Visual C++

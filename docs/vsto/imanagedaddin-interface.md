@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541129"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin インターフェイス
@@ -48,7 +48,7 @@ interface IManagedAddin : IUnknown
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Microsoft Office アプリケーションがマネージド VSTO アドインを読み込むときに呼び出されます。|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Microsoft Office アプリケーションがマネージド VSTO アドインをアンロードする直前に呼び出されます。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  2007 Microsoft Office システムから Microsoft Office アプリケーションでは、IManagedAddin インターフェイスを使用して Office VSTO アドインを読み込むことができます。IManagedAddin インターフェイスを実装して、VSTO アドインローダー (*VSTOLoader.dll*) およびを使用する代わりに、マネージ vsto アドイン用の独自の vsto アドインローダーとランタイムを作成でき [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 詳細については、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
 
 ## <a name="how-managed-add-ins-are-loaded"></a>マネージアドインの読み込み方法
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Microsoft Office アプリケーションは、この CLSID を使用して、IManagedAddin を実装する COM オブジェクトを作成します。
 
 > [!CAUTION]
-> この CLSID は、の*VSTOLoader.dll*によっても使用され [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 そのため、IManagedAddin を使用して独自の VSTO アドインローダーとランタイムコンポーネントを作成する場合、に依存する VSTO アドインを実行しているコンピューターにコンポーネントを配置することはできません [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
+> この CLSID は、の *VSTOLoader.dll* によっても使用され [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 そのため、IManagedAddin を使用して独自の VSTO アドインローダーとランタイムコンポーネントを作成する場合、に依存する VSTO アドインを実行しているコンピューターにコンポーネントを配置することはできません [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio での Office 開発 &#40;アンマネージ API リファレンス&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

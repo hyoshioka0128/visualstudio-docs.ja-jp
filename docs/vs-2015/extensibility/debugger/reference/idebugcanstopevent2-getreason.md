@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetReason |Microsoft Docs
+title: 'IDebugCanStopEvent2:: GetReason |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 707488abed004adaa75c84f16358bdd8a979eb71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191156"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-なぜデバッグ エンジン (DE) を停止する必要がある理由を取得します。  
+デバッグエンジン (DE) が停止する理由を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,17 +40,17 @@ int GetReason( 
   
 #### <a name="parameters"></a>パラメーター  
  `pcr`  
- [out]値を返します、 [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)このイベントの理由を説明する列挙体。  
+ 入出力このイベントの理由を説明する [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) 列挙から値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドの呼び出しの前に通常、 [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)メソッドの呼び出し元は、0 以外を渡すかどうかを判断できるように (`TRUE`) に、`IDebugCanStopEvent2::CanStop`メソッド。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、通常、呼び出し元がゼロ以外 () をメソッドに渡すかどうかを判断できるように、 [Canstop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) メソッドの前に呼び出され `TRUE` `IDebugCanStopEvent2::CanStop` ます。  
   
- 停止の理由には、いずれかを指定できる`CANSTOP_ENTRYPOINT`、エントリ ポイントに達した、DE つまりまたは`CANSTOP_STEPIN`関数にステップ インは、DE つまりします。  
+ 停止の理由として、DE がエントリポイントに到達したことを意味します `CANSTOP_ENTRYPOINT` `CANSTOP_STEPIN` 。つまり、de が関数にステップインされたことを意味します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)   
  [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)
