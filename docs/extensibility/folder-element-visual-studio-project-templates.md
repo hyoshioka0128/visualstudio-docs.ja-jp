@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769583"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 要素 (Visual Studio プロジェクトテンプレート)
@@ -44,13 +44,13 @@ ms.locfileid: "85769583"
 |属性|説明|
 |---------------|-----------------|
 |`Name`|必須の属性です。<br /><br /> プロジェクトフォルダーの名前。|
-|`TargetFolderName`|省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されるときにフォルダーに付ける名前を指定します。 この属性は、パラメーター置換を使用してフォルダー名を作成したり、 *.zip*ファイルで直接使用できない国際文字列を使用してフォルダーに名前を付けたりする場合に便利です。|
+|`TargetFolderName`|省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されるときにフォルダーに付ける名前を指定します。 この属性は、パラメーター置換を使用してフォルダー名を作成したり、 *.zip* ファイルで直接使用できない国際文字列を使用してフォルダーに名前を付けたりする場合に便利です。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|`Folder`|プロジェクトに追加するフォルダーを指定します。 `Folder`要素には子要素を含めることができ `Folder` ます。|
+|`Folder`|プロジェクトに追加するフォルダーを指定します。 `Folder` 要素には子要素を含めることができ `Folder` ます。|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|プロジェクトに追加するファイルを指定します。|
 
 ### <a name="parent-elements"></a>親要素
@@ -59,12 +59,12 @@ ms.locfileid: "85769583"
 |-------------|-----------------|
 |[プロジェクト](../extensibility/project-element-visual-studio-templates.md)|[Templatecontent](../extensibility/templatecontent-element-visual-studio-templates.md)子要素 (省略可能)。|
 
-## <a name="remarks"></a>Remarks
- `Folder`は、の省略可能な子です `Project` 。
+## <a name="remarks"></a>解説
+ `Folder` は、の省略可能な子です `Project` 。
 
  次のいずれかの方法を使用して、プロジェクト項目をテンプレート内のフォルダーに整理できます。
 
-- テンプレートの *.zip*ファイルにフォルダーを含めて、 *.vstemplate*ファイル内のプロジェクトに追加します。これには、要素内のファイルへのパスを `ProjectItem` 要素を指定せずに指定します `Folder` 。 これが推奨される方法です。 次に例を示します。
+- テンプレートの *.zip* ファイルにフォルダーを含めて、 *.vstemplate* ファイル内のプロジェクトに追加します。これには、要素内のファイルへのパスを `ProjectItem` 要素を指定せずに指定します `Folder` 。 これが推奨される方法です。 次に例を示します。
 
      `...`
 
@@ -88,7 +88,7 @@ ms.locfileid: "85769583"
 
      `...`
 
-- テンプレート *.zip*ファイルにはフォルダーを含めないでください。ただし、 `TargetFileName` 要素の属性を使用してフォルダーを追加してください `ProjectItem` 。 次に例を示します。
+- テンプレート *.zip* ファイルにはフォルダーを含めないでください。ただし、 `TargetFileName` 要素の属性を使用してフォルダーを追加してください `ProjectItem` 。 次に例を示します。
 
      `...`
 
