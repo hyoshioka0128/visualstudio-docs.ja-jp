@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671745"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加
@@ -22,7 +22,7 @@ ms.locfileid: "72671745"
 このチュートリアルの第 5 部では、クイズ問題の解答の入力が少し楽になるように Enter イベント ハンドラーを追加します。 このコードは、クイズの受け手が選択して別の値の入力を開始するとすぐに、各 NumericUpDown コントロールの現在の値を選択し、クリアします。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「 [チュートリアル 2: 時間指定の計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
 
 ### <a name="to-verify-the-default-behavior"></a>既定の動作を確認するには
 
@@ -40,13 +40,13 @@ ms.locfileid: "72671745"
 
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>NumericUpDown コントロールの Enter イベント ハンドラーを追加するには
 
-1. フォームの最初の NumericUpDown コントロール ("sum") を選択し、次に、 **[プロパティ]** ダイアログ ボックスでツール バーの **[イベント]** アイコンをクリックします。
+1. フォームの最初の NumericUpDown コントロール ("sum") を選択し、次に、**[プロパティ]** ダイアログ ボックスでツール バーの **[イベント]** アイコンをクリックします。
 
      **[プロパティ]** ダイアログ ボックスの **[イベント]** タブには、フォーム上で選択した項目に対して応答 (処理) できるイベントがすべて表示されます。 NumericUpDown コントロールを選択したため、そのコントロールに関係のあるすべてのイベントが一覧に表示されます。
 
 2. **Enter** イベントをクリックし、「`answer_Enter`」と入力して、Enter キーを押します。
 
-     ![[プロパティ] ダイアログボックス](../ide/media/express-answerenter.png "Express_AnswerEnter")[プロパティ] ダイアログボックス
+     ![[プロパティ] ダイアログボックス](../ide/media/express-answerenter.png "Express_AnswerEnter") [プロパティ] ダイアログボックス
 
      sum NumericUpDown コントロールの Enter イベント ハンドラーを追加し、そのハンドラーに **answer_Enter** という名前を付けます。
 
@@ -55,7 +55,7 @@ ms.locfileid: "72671745"
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
 
-     このコードは複雑に見えますが、順番に見ていけば理解できます。 まず、メソッドの先頭の部分 (C# の場合は `object sender`、Visual Basic の場合は `sender As System.Object`) を見てください。 このパラメーターは、sender と呼ばれる、イベントが発生しているオブジェクトを参照します。 この場合、sender オブジェクトは NumericUpDown コントロールです。 したがって、メソッドの 1 行目で、sender が汎用オブジェクトではなく、具体的に NumericUpDown コントロールであると指定します。 (すべての NumericUpDown コントロールはオブジェクトですが、すべてのオブジェクトが NumericUpDown コントロールであるとは限りません)。NumericUpDown コントロールは、sum NumericUpDown コントロールだけでなく、フォーム上のすべての NumericUpDown コントロールに使用されるため、このメソッドでは [応答 **] ボックス**に名前が付けられます。 このメソッドで answerBox 変数を宣言するため、そのスコープはこのメソッドにのみ適用されます。 つまり、変数はこのメソッド内でのみ使用できます。
+     このコードは複雑に見えますが、順番に見ていけば理解できます。 まず、メソッドの先頭の部分 (C# の場合は `object sender`、Visual Basic の場合は `sender As System.Object`) を見てください。 このパラメーターは、sender と呼ばれる、イベントが発生しているオブジェクトを参照します。 この場合、sender オブジェクトは NumericUpDown コントロールです。 したがって、メソッドの 1 行目で、sender が汎用オブジェクトではなく、具体的に NumericUpDown コントロールであると指定します。 (すべての NumericUpDown コントロールはオブジェクトですが、すべてのオブジェクトが NumericUpDown コントロールであるとは限りません)。NumericUpDown コントロールは、sum NumericUpDown コントロールだけでなく、フォーム上のすべての NumericUpDown コントロールに使用されるため、このメソッドでは [応答 **] ボックス** に名前が付けられます。 このメソッドで answerBox 変数を宣言するため、そのスコープはこのメソッドにのみ適用されます。 つまり、変数はこのメソッド内でのみ使用できます。
 
      次の行では、answerBox がオブジェクトから NumericUpDown コントロールに正常に変換 (キャスト) されたかどうかを確認しています。 変換が成功しなかったときは、変数は `null` (C#) または `Nothing` (Visual Basic) の値になります。 3 行目は NumericUpDown コントロールに表示される解答の長さを取得し、4 行目はこの長さに基づいてコントロールの現在の値を選択します。 これで、クイズの受け手がコントロールを選択すると、Visual Studio がこのイベントを発生させ、現在の解答が選択されます。 クイズの受け手が別の解答の入力を開始するとすぐに、前の解答がクリアされて新しい解答に置き換えられます。
 
@@ -71,6 +71,6 @@ ms.locfileid: "72671745"
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 6: 減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 [手順 6: 減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 4: CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 4: CheckTheAnswer () メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。

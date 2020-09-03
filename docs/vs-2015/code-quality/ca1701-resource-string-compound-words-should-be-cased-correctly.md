@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7c1c3b0fd6cf3a25d5db9e3039d4dc5d8364a18e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544106"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません
@@ -46,7 +46,7 @@ ms.locfileid: "85544106"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  複合語の両方の部分がスペル辞書によって認識され、目的が2つの単語を使用する場合は、この規則による警告を抑制しても安全です。
 
- また、スペルチェック用のカスタム辞書に複合単語を追加することもできます。 カスタム辞書内の単語は、違反を発生させません。 詳細については、「[方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)」を参照してください。
+ また、スペルチェック用のカスタム辞書に複合単語を追加することもできます。 カスタム辞書内の単語は、違反を発生させません。 詳細については、「 [方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)」を参照してください。
 
 ## <a name="related-rules"></a>関連規則
  [CA1702:複合語では、大文字と小文字が正しく区別されなければなりません](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
@@ -55,5 +55,5 @@ ms.locfileid: "85544106"
 
  [CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>関連項目
- [大文字と小文字の規則](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)の[名前付けのガイドライン](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)
+## <a name="see-also"></a>参照
+ [大文字と小文字の規則](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)の [名前付けのガイドライン](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)

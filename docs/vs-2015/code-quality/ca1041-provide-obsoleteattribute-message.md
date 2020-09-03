@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d738cf15ebe734cb74e553f38f6eb26af17e8cfd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542312"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041:ObsoleteAttribute メッセージを指定します
@@ -36,7 +36,7 @@ ms.locfileid: "85542312"
  型またはメンバーが、プロパティが指定されていない属性を使用してマークされてい <xref:System.ObsoleteAttribute?displayProperty=fullName> <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> ます。
 
 ## <a name="rule-description"></a>ルールの説明
- <xref:System.ObsoleteAttribute>は、非推奨のライブラリの型とメンバーをマークするために使用されます。 ライブラリコンシューマーは、古い形式に設定されている型またはメンバーを使用しないようにする必要があります。 これは、サポートされていない可能性があり、最終的にはライブラリの新しいバージョンから削除されるためです。 を使用してマークされている型またはメンバーがコンパイルされると <xref:System.ObsoleteAttribute> 、 <xref:System.ObsoleteAttribute.Message%2A> 属性のプロパティが表示されます。 これによって、ユーザーは旧式の型またはメンバーに関する情報を知ることができます。 通常、この情報には、ライブラリデザイナーによって使用されていない型またはメンバーがサポートされる期間、および使用する代わりに使用する代替の長さが含まれます。
+ <xref:System.ObsoleteAttribute> は、非推奨のライブラリの型とメンバーをマークするために使用されます。 ライブラリコンシューマーは、古い形式に設定されている型またはメンバーを使用しないようにする必要があります。 これは、サポートされていない可能性があり、最終的にはライブラリの新しいバージョンから削除されるためです。 を使用してマークされている型またはメンバーがコンパイルされると <xref:System.ObsoleteAttribute> 、 <xref:System.ObsoleteAttribute.Message%2A> 属性のプロパティが表示されます。 これによって、ユーザーは旧式の型またはメンバーに関する情報を知ることができます。 通常、この情報には、ライブラリデザイナーによって使用されていない型またはメンバーがサポートされる期間、および使用する代わりに使用する代替の長さが含まれます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、 `message` コンストラクターにパラメーターを追加し <xref:System.ObsoleteAttribute> ます。
@@ -51,5 +51,5 @@ ms.locfileid: "85542312"
  [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ObsoleteAttributeOnMember/cs/FxCop.Design.ObsoleteAttributeOnMember.cs#1)]
  [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ObsoleteAttributeOnMember/vb/FxCop.Design.ObsoleteAttributeOnMember.vb#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.ObsoleteAttribute?displayProperty=fullName>

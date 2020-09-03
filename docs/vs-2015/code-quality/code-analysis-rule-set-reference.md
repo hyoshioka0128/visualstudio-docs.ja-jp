@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e480869d5b13ecc051deaa97b0bfd2532519d18f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535721"
 ---
 # <a name="code-analysis-rule-set-reference"></a>コード分析規則セットの参照
@@ -26,7 +26,7 @@ ms.locfileid: "85535721"
 ## <a name="available-rule-sets"></a>使用できる規則セット
  既定の規則セット一覧を次の表に示します。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |["すべての規則" 規則セット](../code-quality/all-rules-rule-set.md)|この規則セットにはすべての規則が含まれます。 この規則セットを実行すると、多数の警告が報告される可能性があります。 この規則セットは、コード内のすべての問題を全体的に把握する場合に使用してください。 これは、用途を絞った各規則セットのうち、どれがプロジェクトに対して最も適切かを判断するのに役立ちます。|
 |[マネージド コードの "基本正確性規則" 規則セット](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)|これらの規則は、フレームワーク API の使用の際の論理エラー、およびよくある失敗に関するものです。 この規則セットは、最小推奨規則で報告された警告の一覧から、さらに詳しい情報へと掘り下げる必要がある場合に使用してください。|
