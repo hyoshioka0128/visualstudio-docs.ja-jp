@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542988"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio のヒントとテクニック
@@ -30,7 +30,7 @@ Visual Studio では、このトピックのショートカットを使用して
 
 - [エディター検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
-- [コードエディター](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [コード エディター](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
 - [[ツール バー]](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
@@ -49,7 +49,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |開いているファイル リストを表示|Ctrl + Alt + Down|
 |すべてのフローティング ウィンドウを表示|Ctrl + Shift + M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>ウィンドウのショートカット
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> ウィンドウのショートカット
 
 |コマンド|ショートカット|
 |-|-|
@@ -59,7 +59,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |新しいインスタンスを開始|Win + Shift + n|
 |ウィンドウの切り替え|Win + n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Visual Studio の検索
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Visual Studio の検索
 
 |コマンド|ショートカット|
 |-|-|
@@ -69,7 +69,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |スコープ結果のクイック起動|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
 |ツール オプションの検索|Ctrl+E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>エディターの検索
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> エディターの検索
 
 |コマンド|ショートカット|
 |-|-|
@@ -84,7 +84,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |[フォルダーを指定して検索]|Ctrl + Shift + F|
 |[フォルダーを指定して置換]|Ctrl + Shift + H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>コードエディター
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> コードエディター
 
 |コマンド|ショートカット|
 |-|-|
@@ -109,7 +109,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |複数のピーク結果の間を移動する|F8 と Shift + F8|
 |コード エディター ウィンドウと [定義をここに表示] ウィンドウの間で切り替える|Shift + Esc|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>ツールバー
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> ツールバー
 
 |コマンド|ショートカット|
 |-|-|
@@ -137,11 +137,11 @@ Visual Studio では、このトピックのショートカットを使用して
 |イミディエイト ウィンドウのバッファーをクリア|>cls|
 |イミディエイト ウィンドウの値の印刷|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>アプリケーションライフサイクル管理
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> アプリケーションライフサイクル管理
 
 「[キーボード ショートカット: Visual Studio Online、TFS Web ポータル、およびチーム エクスプローラー](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio ブログ](https://devblogs.microsoft.com/visualstudio/)
 - [Visual Studio のヒントとテクニックに関するブログ](https://blogs.msdn.microsoft.com/zainnab/)

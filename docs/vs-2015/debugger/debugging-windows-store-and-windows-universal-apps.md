@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545562"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Windows ストアと Windows ユニバーサル アプリのデバッグ
@@ -38,5 +38,5 @@ Visual Studio デバッガーでは、Windows ストアアプリのデバッグ�
 |[Visual Studio でのアプリのデバッグ](../debugger/debug-store-apps-in-visual-studio.md)|Visual Studio デバッガーを使用して、ストア アプリのバグを見つけて修正します。|  
 |[Windows ストア アプリ用コンテンツのプリフェッチ](../debugger/prefetch-content-for-windows-store-apps.md)|Windows ストア アプリでの ContentPrefetcher クラスの効果を分析します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [静的コード分析によるコード品質の分析](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

@@ -1,5 +1,5 @@
 ---
-title: SEEK_START |マイクロソフトドキュメント
+title: SEEK_START |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca1c38027123ca5147a6a7ab1fa6a3f92966409a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713600"
 ---
 # <a name="seek_start"></a>SEEK_START
-逆アセンブリ ストリームでシークを開始する位置を指定します。
+逆アセンブリストリームでシークを開始する位置を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -56,23 +56,23 @@ public enum enum_SEEK_START { 
  現在のドキュメントの末尾からシークを開始します。
 
  `SEEK_START_CURRENT`\
- 現在のドキュメントの現在位置でシークを開始します。
+ 現在のドキュメントの現在位置からシークを開始します。
 
  `SEEK_START_CODECONTEXT`\
- 現在のドキュメントの指定されたコード コンテキストでシークを開始します。
+ 現在のドキュメントの指定されたコードコンテキストでシークを開始します。
 
  `SEEK_START_CODELOCID`\
- 指定されたコードの場所識別子でシークを開始します。 コードの場所の識別子は[、GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)を呼び出すことによって取得されます。
+ 指定されたコード位置識別子でシークを開始します。 コードの場所の識別子は、 [Getcurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)を呼び出すことによって取得されます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
  [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)メソッドに引数として渡されます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

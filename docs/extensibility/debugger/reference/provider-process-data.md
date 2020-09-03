@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA |マイクロソフトドキュメント
+title: PROVIDER_PROCESS_DATA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713777"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
-この構造体は、マシン上で実行されているプロセスに関する情報を提供します。
+この構造体は、コンピューター上で実行されているプロセスに関する情報を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,23 +45,23 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>メンバー
  `Fields`\
- [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)列挙体のフラグの組み合わせで、どのフィールドが入力されているかを示します。
+ [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)列挙のフラグの組み合わせ。入力されているフィールドを示します。
 
  `ProgramNodes`\
- プログラム ノードの配列を含む[PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)構造体。
+ プログラムノードの配列を格納する [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 構造体。
 
  `fIsDebuggerPresent`\
- デバッガーが`TRUE`[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]実行されている場合は 0 以外 (`FALSE`) 以外の場合はゼロ ( ) 。
+ `TRUE`デバッガーが実行されている場合は0以外 () [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 、そうでない場合は 0 () `FALSE` です。
 
-## <a name="remarks"></a>Remarks
- この構造体は、埋め込まれる[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッドに渡されます。
+## <a name="remarks"></a>解説
+ この構造体は、 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) メソッドに渡されます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

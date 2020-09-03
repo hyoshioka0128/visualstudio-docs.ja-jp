@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: トピックを検索する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5830bb71f66b27acf2ba63133a130c2ea24a9c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670765"
 ---
 # <a name="how-to-search-for-topics"></a>方法 : トピックを検索する
@@ -23,7 +23,7 @@ ms.locfileid: "72670765"
 
 ### <a name="to-open-the-search-tab"></a>[検索] タブを開くには
 
-- ヘルプビューアー ウィンドウで **検索** タブを選択するか、Ctrl キーを押しながら E キーを押します。
+- [ヘルプビューアー] ウィンドウで [ **検索** ] タブを選択するか、Ctrl キーを押しながら E キーを押します。
 
 ### <a name="to-perform-a-full-text-search"></a>フルテキスト検索を実行するには
 
