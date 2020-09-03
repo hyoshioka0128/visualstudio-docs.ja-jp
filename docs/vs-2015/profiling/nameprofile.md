@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7cac308de96c3edc2dfe5c7577b0bee8077bf9e7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548439"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   パフォーマンス データ収集を適用できるプロファイル レベルを示します。 次の **PROFILE_CONTROL_LEVEL** 値を使用して、パフォーマンス データ収集を適用できる 3 つのレベルのいずれかを指定できます。  
   
-|列挙子|[説明]|  
+|列挙子|説明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|グローバル レベル設定は、プロファイル実行のすべてのプロセスとスレッドに影響します。|  
 |PROFILE_PROCESSLEVEL|プロセス レベル設定は、指定されたプロセスの一部であるスレッドすべてに影響します。|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値  
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。  
   
-|列挙子|[説明]|  
+|列挙子|説明|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|指定されたプロファイル要素が存在しません。|  
 |NAME_ERROR_INVALID_NAME|名前が無効です。|  
@@ -76,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|名前のテキストが null 文字を含めて 32 文字を超えていたため、切り詰められました。|  
 |NAME_OK|名前は正常に登録されました。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  各プロセスまたはスレッドには、名前を 1 つのみ割り当てることができます。 プロファイル要素に名前を付けた後で、その要素の NameProfile を呼び出しても無視されます。  
   
  異なるスレッドまたはプロセスに同じ名前が指定されている場合、その名前を持つそのレベルのすべての要素のデータがレポートに含まれます。  
@@ -91,10 +91,10 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 ## <a name="function-information"></a>関数の情報  
   
-|項目|説明|  
+|アイテム|説明|  
 |-|-|  
-|**ヘッダー**|VSPerf.h をインクルードします。|  
-|**ライブラリ**|VSPerf.lib を使用します。|  
+|**Header**|VSPerf.h をインクルードします。|  
+|**Library**|VSPerf.lib を使用します。|  
 |**Unicode**|`NameProfileW` (Unicode) および `NameProfileA` (ANSI) として実装します。|  
   
 ## <a name="example"></a>例  
@@ -135,5 +135,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Profiler API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
