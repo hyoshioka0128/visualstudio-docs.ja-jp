@@ -1,5 +1,5 @@
 ---
-title: を使用して、2:::イベントを使用して、コーのモジュールを使用する |マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider2:: Loadシンボル Withcormodule |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef4750de223b133e30e620f5dc0eec526e98526d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733319"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-オブジェクトを指定してデバッグ シンボル**を**読み込みます。
+は、コードオブジェクトを **指定して** デバッグシンボルを読み込みます。
 
 ## <a name="syntax"></a>構文
 
@@ -52,31 +52,31 @@ int LoadSymbolsWithCorModule(
 
 ## <a name="parameters"></a>パラメーター
 `ulAppDomainID`\
-[in]アプリケーション ドメインの識別子。
+からアプリケーションドメインの識別子。
 
 `guidModule`\
-[in]モジュールを表す一意の識別子です。
+からモジュールの一意識別子。
 
 `baseAddress`\
-[in]ベース メモリ アドレス。
+からベースメモリアドレス。
 
 `pUnkMetadataImport`\
-[in]デバッグ シンボルのメタデータを含むオブジェクト。
+からデバッグシンボルメタデータを格納しているオブジェクト。
 
 `pUnkCorDebugModule`\
-[in]インターフェイスを実装する[オブジェクト](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
+からの [モジュールインターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)を実装するオブジェクト。
 
 `bstrModuleName`\
-[in]モジュールの名前。
+からモジュールの名前。
 
 `bstrSymSearchPath`\
-[in]シンボル ファイルを検索するためのパス。
+からシンボルファイルを検索するパス。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)示します。
+次の例は、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(

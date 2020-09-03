@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider:: Loadシンボル Fromstream |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d208f8ce04e884c9dfb3b8b272271e686e3b2762
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733614"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-データ ストリームに指定されたデバッグ シンボルを読み込みます。
+データストリームを指定してデバッグシンボルを読み込みます。
 
 ## <a name="syntax"></a>構文
 
@@ -48,25 +48,25 @@ int LoadSymbolsFromStream(
 
 ## <a name="parameters"></a>パラメーター
 `ulAppDomainID`\
-[in]アプリケーション ドメインの識別子。
+からアプリケーションドメインの識別子。
 
 `guidModule`\
-[in]モジュールを表す一意の識別子です。
+からモジュールの一意識別子。
 
 `baseAddress`\
-[in]ベース メモリ アドレス。
+からベースメモリアドレス。
 
 `pUnkMetadataImport`\
-[in]シンボル メタデータを含むオブジェクト。
+からシンボルメタデータを格納しているオブジェクト。
 
 `pStream`\
-[in]シンボルを含むデータ ストリーム。
+からシンボルを格納しているデータストリーム。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。 メソッドは、メソッドを呼び出[します](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。 メソッドは、 [Loadシンボル Fromstreamwithcormodule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) メソッドを呼び出します。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
