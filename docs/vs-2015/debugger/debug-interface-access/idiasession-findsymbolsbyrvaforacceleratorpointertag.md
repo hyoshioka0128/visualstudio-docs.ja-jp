@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
+title: 'IDiaSession:: findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0711c95310d4d3613d8b82bccbecab122bf19ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196360"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-対応するタグの値を指定すると、このメソッドは、指定の相対仮想アドレスにある指定した親アクセラレータ スタブ関数に含まれているシンボルの列挙体を返します。  
+このメソッドは、対応するタグ値を指定して、指定された相対仮想アドレスで、指定された親アクセラレータのスタブ関数に含まれるシンボルの列挙体を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,24 +36,24 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
   
 #### <a name="parameters"></a>パラメーター  
  `parent`  
- [in]`IDiaSymbol`検索するアクセラレータのスタブ関数に対応します。  
+ から `IDiaSymbol` 検索するアクセラレータスタブ関数に対応する。  
   
  `tagValue`  
- [in]ポインターのタグ値。  
+ からポインターのタグ値。  
   
  `rva`  
- [in]相対仮想アドレス。  
+ から相対仮想アドレス。  
   
  `ppResult`  
- [out]ポインター、`IDiaEnumSymbols`インターフェイス ポインターでは、結果を使用して初期化します。  
+ 入出力結果を使用し `IDiaEnumSymbols` て初期化されるインターフェイスポインターへのポインター。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- のみこのメソッドを呼び出し、`IDiaSymbol`アクセラレータのスタブ関数に対応するインターフェイス。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、 `IDiaSymbol` アクセラレータスタブ関数に対応するインターフェイスでのみ呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

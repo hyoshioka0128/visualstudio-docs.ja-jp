@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ae254f85b00c47ba00250641f7afe0a638ceabc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660421"
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>Excel 拡張子のサンプル: PropertyProvider クラス

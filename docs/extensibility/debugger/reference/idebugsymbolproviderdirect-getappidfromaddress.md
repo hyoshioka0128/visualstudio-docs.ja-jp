@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugSymbolProviderDirect:: GetAppIDFromAddress |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719160"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-デバッグ アドレスを指定したアプリケーション ドメイン識別子を取得します。
+デバッグアドレスに指定されたアプリケーションドメイン識別子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,13 +42,13 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]インターフェイスによって表される[デバッグ アドレス](../../../extensibility/debugger/reference/idebugaddress.md)。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるデバッグアドレス。
 
 `pAppID`\
-[アウト]アプリケーション ドメインの識別子。
+入出力アプリケーションドメインの識別子。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532042"
 ---
 # <a name="memory-usage-without-debugging"></a>デバッグなしのメモリ使用量
@@ -34,7 +34,7 @@ ms.locfileid: "85532042"
   
   このトピックでは、メモリ使用量ツールを使って Windows Universal XAML アプリを分析する方法について説明します。 JavaScript と HTML を使用する Windows ユニバーサル アプリでのメモリ使用量を分析する場合、「[メモリ使用量の分析 (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx)」を参照してください。  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>メモリ使用量診断セッションの開始  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> メモリ使用量診断セッションの開始  
   
 1. Visual Studio で、C# のユニバーサル Windows プロジェクトを開きます。  
   
@@ -44,10 +44,10 @@ ms.locfileid: "85532042"
   
      ![メモリ使用量診断セッションの開始](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>メモリ使用量の監視  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> メモリ使用量の監視  
  **[メモリ使用量]** ツールを使って、問題の検出と修正に使える詳しいレポートを生成できますが、現に開発中のシナリオがメモリに及ぼす影響をリアルタイムで調べることもできます。  
   
- 診断セッションを開始すると、アプリが起動し、[**診断ツール**] ウィンドウにアプリのメモリ使用量のタイムライングラフが表示されます。  
+ 診断セッションを開始すると、アプリが起動し、[ **診断ツール** ] ウィンドウにアプリのメモリ使用量のタイムライングラフが表示されます。  
   
  ![メモリ使用量の概要ページ](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
@@ -63,7 +63,7 @@ ms.locfileid: "85532042"
   
  スナップショットを収集するには、新しい診断セッションを開始します。 メモリのデータをキャプチャしたいときは **[スナップショットの取得]** をクリックします。 レポートを生成するには、**[停止]** をクリックします。  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>メモリ使用量の概要ページ  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> メモリ使用量の概要ページ  
  データ コレクションを停止すると、メモリ使用量ツールはアプリを停止し、概要レポートが表示されます。  
   
  ![メモリ使用量の概要ページ](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -112,23 +112,23 @@ ms.locfileid: "85532042"
   
  ![並べ替えとフィルターのオプション](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>フィルター  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> フィルター  
  **[フィルター]** ボックスに文字列を入力して、指定したテキストを含む型だけをツリーに表示するよう制限します。 このフィルターでは、大文字と小文字は区別されず、指定された文字列が型名のどこかに含まれていれば認識されます。  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> 小さいオブジェクトの非表示  
  このフィルターを適用すると、**[サイズ (バイト)]** がスナップショット メモリの合計サイズの 0.5% を下回る型が **[マネージド ヒープ]** リストで非表示になります。  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>マイ コードのみ  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> マイ コードのみ  
  **[マイ コードのみ]** フィルターを適用すると、外部コードによって生成されたほとんどのインスタンスが非表示になります。 外部の型は、オペレーティング システムまたは Framework コンポーネントによって所有されるか、コンパイラによって生成されます。  
   
-## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a>スナップショットの詳細レポート  
+## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> スナップショットの詳細レポート  
  診断セッションで得られた 1 つのスナップショットに注目する場合は、スナップショットの詳細レポートを使います。 詳細レポートを開くには、次の画像に示すように、スナップショット ビューに含まれるいずれかのリンクをクリックします。 どちらのリンクからも同じレポートが開きますが、レポート内の **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 どちらの場合も、レポートが開いた後で並べ替え順序を変更できます。  
   
  ![スナップショット ビューにあるスナップショット レポートへのリンク](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
 - **[MB]** リンクをクリックすると、**[包括サイズ (バイト)]** 列でレポートが並べ替えられます。  
   
-- [**オブジェクト**のリンクを作成すると、**カウント**列によってレポートが並べ替えられます。  
+- [ **オブジェクト** のリンクを作成すると、 **カウント** 列によってレポートが並べ替えられます。  
   
 ### <a name="managed-heap-tree-snapshot-details"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [マネージド ヒープ] ツリー (スナップショットの詳細)  
  **[マネージド ヒープ]** ツリーには、メモリ内に保持されているオブジェクトの種類が一覧表示されます。 型名を展開すると、サイズ順に、その型の最大のインスタンス 10 個が表示されます。 種類またはインスタンスを選ぶと、選んだ項目の **[ルートのパス]** ツリーと **[参照されたオブジェクト]** ツリーが表示されます。  
@@ -160,14 +160,14 @@ ms.locfileid: "85532042"
 |**サイズ (バイト)**|型の場合は、その型の全インスタンスのサイズ (型に含まれているオブジェクトのサイズは除く)。<br /><br /> インスタンスの場合は、オブジェクトのサイズ (オブジェクトに含まれているオブジェクトのサイズは除く)。|  
 |**包括サイズ (バイト)**|型のインスタンスの合計サイズまたはインスタンスのサイズ (含まれているオブジェクトのサイズを含む)。|  
   
-## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a>スナップショットの相違 (diff) レポート  
+## <a name="snapshot-difference-diff-reports"></a><a name="BKMK_Snapshot_difference__diff__reports"></a> スナップショットの相違 (diff) レポート  
  スナップショットの相違 (diff) レポートには、指定したスナップショットとその直前に取られたスナップショットの変更点が表示されます。 相違レポートを開くには、次の画像に示すように、スナップショット ビューに含まれるいずれかのリンクをクリックします。 どちらのリンクからも同じレポートが開きますが、レポート内の **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 レポートが開いた後で並べ替え順序を変更できます。  
   
  ![スナップショット ビューにある差分レポートへのリンク](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
 - **[MB]** リンクをクリックすると、**[包括サイズ (バイト)]** 列でレポートが並べ替えられます。  
   
-- [**オブジェクト**のリンクを作成すると、**カウント**列によってレポートが並べ替えられます。  
+- [ **オブジェクト** のリンクを作成すると、 **カウント** 列によってレポートが並べ替えられます。  
   
 ### <a name="managed-heap-tree-snapshot-diff"></a><a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [マネージド ヒープ] ツリー (スナップショットの相違)  
  **[マネージド ヒープ]** ツリーには、メモリ内に保持されているオブジェクトの種類が一覧表示されます。 型名を展開すると、サイズ順に、その型の最大のインスタンス 10 個が表示されます。 種類またはインスタンスを選ぶと、選んだ項目の **[ルートのパス]** ツリーと **[参照されたオブジェクト]** ツリーが表示されます。  
@@ -202,7 +202,7 @@ ms.locfileid: "85532042"
 |**サイズ (バイト)**|インスタンスの場合は、指定したスナップショットに含まれるオブジェクトのサイズ (インスタンスに含まれているオブジェクトのサイズは除く)。<br /><br /> 型の場合は、指定したスナップショットに含まれるその型のインスタンスの合計サイズ (インスタンスに含まれているオブジェクトのサイズは除く)。|  
 |**包括サイズ (バイト)**|指定したスナップショットに含まれているオブジェクトのサイズ (オブジェクトに含まれているオブジェクトのサイズを含む)。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [JavaScript メモリ](../profiling/javascript-memory.md)   
  [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [パフォーマンスと診断ツールの実行](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
