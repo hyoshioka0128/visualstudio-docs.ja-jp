@@ -1,5 +1,5 @@
 ---
-title: デバッガーのプロジェクトの設定 |Microsoft Docs
+title: デバッガー プロジェクトの設定 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189567"
 ---
 # <a name="debugger-project-settings"></a>デバッガーに関連するプロジェクト設定
@@ -63,5 +63,5 @@ ms.locfileid: "68189567"
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)  
  デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備作業について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

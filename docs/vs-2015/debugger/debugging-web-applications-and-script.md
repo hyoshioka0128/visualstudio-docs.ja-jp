@@ -23,18 +23,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155902"
 ---
 # <a name="debugging-web-applications-and-script"></a>Web アプリケーションとスクリプトのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-表の凡例 :  
+表の凡例 :   
   
- ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、次を参照してください。[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
+ ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、「 [デバッガーの基本](../debugger/debugger-basics.md)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)  
@@ -59,6 +59,6 @@ ms.locfileid: "68155902"
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace でアプリの実行履歴を記録することにより、すばやく簡単にバグを検索します。 記録されたイベントと呼び出しを前後にステップ実行して重要な時点でのアプリの状態を調べます。 多くのブレークポイントを設定することも、アプリを頻繁に再起動することもなく、コードをデバッグします。 Visual Studio Ultimate が必要です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)
