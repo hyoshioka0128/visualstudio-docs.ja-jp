@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543924"
 ---
 # <a name="intellitrace"></a>[IntelliTrace]
@@ -46,7 +46,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 ## <a name="what-do-you-want-to-do"></a>実行する操作  
   
-|シナリオ|記事|  
+|シナリオ|[アーティクル]|  
 |-|-|  
 |**IntelliTrace を使用してアプリケーションをデバッグする:**<br /><br /> -過去のイベントを表示します。<br />-過去のイベントを含む呼び出し情報を表示します。<br />-IntelliTrace セッションを保存します。<br />-IntelliTrace が収集するデータを制御します。|-   [チュートリアル: IntelliTrace](../debugger/walkthrough-using-intellitrace.md) の使用<br />     [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />-   [IntelliTrace の構成](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [デバッグ履歴](../debugger/historical-debugging.md)|  
 |**テスト マネージャーのテスト セッション中に IntelliTrace データを収集する**|-   [手動テストでのその他の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
@@ -57,7 +57,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 |サポート レベル|アプリの種類|  
 |-|-|  
-|**サポート状況**|-.NET Framework 2.0 以降のバージョンを使用する Visual Basic および Visual C# アプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用して SharePoint アプリケーションをデバッグするには、「[チュートリアル: IntelliTrace を使用した SharePoint アプリケーションのデバッグ](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)」を参照してください。<br />     IntelliTrace を使用して Microsoft Azure アプリをデバッグするには、「[IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)」を参照してください。|  
+|**サポートされています**|-.NET Framework 2.0 以降のバージョンを使用する Visual Basic および Visual C# アプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用して SharePoint アプリケーションをデバッグするには、「[チュートリアル: IntelliTrace を使用した SharePoint アプリケーションのデバッグ](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)」を参照してください。<br />     IntelliTrace を使用して Microsoft Azure アプリをデバッグするには、「[IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)」を参照してください。|  
 |**限定されたサポート**|-F # アプリの実験ベース<br />-イベントのみがサポートされている Windows ストアアプリ|  
 |**サポートされていません**|-C++、その他の言語、スクリプト<br />-Windows サービス、Silverlight、Xbox、または [!INCLUDE[winmobile](../includes/winmobile-md.md)] アプリ|  
   
@@ -77,7 +77,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 - Microsoft Test Manager のテスト セッション  
   
-- Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 「 [IntelliTrace スタンドアロンコレクターの使用](../debugger/using-the-intellitrace-stand-alone-collector.md)」および「 [Microsoft Monitoring Agent での監視](https://technet.microsoft.com/library/dn465153.aspx)」を参照してください。  
+- Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 「 [IntelliTrace スタンドアロンコレクターの使用](../debugger/using-the-intellitrace-stand-alone-collector.md) 」および「 [Microsoft Monitoring Agent での監視](https://technet.microsoft.com/library/dn465153.aspx)」を参照してください。  
   
   IntelliTrace を使用したデバッグがどのように役立つかの例を次に示します。  
   
@@ -91,7 +91,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 - アプリケーションは、テスト コンピューターではクラッシュしますが、開発用コンピューターでは正常に実行されます。  
   
-   Microsoft Test Manager から IntelliTrace データを収集して、.iTrace ファイルにデータを保存し、後日確認できるようにこのファイルを Team Foundation Server の作業項目に添付することができます。 「[手動テストでのその他の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)」および「[保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)」を参照してください。  
+   Microsoft Test Manager から IntelliTrace データを収集して、.iTrace ファイルにデータを保存し、後日確認できるようにこのファイルを Team Foundation Server の作業項目に添付することができます。 「 [手動テストでのその他の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) 」および「 [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)」を参照してください。  
   
 - 展開されたアプリケーションでバグまたはクラッシュが発生しています。  
   

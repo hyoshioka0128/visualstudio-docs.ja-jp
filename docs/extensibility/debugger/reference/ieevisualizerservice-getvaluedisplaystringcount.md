@@ -1,5 +1,5 @@
 ---
-title: サービス::値を表示文字列カウント |マイクロソフトドキュメント
+title: 'IEEVisualizerService:: GetValueDisplayStringCount |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c1a664594e55b8db21562a650c2c750668c2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717991"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-指定したプロパティまたはフィールドに表示する値の文字列の数を取得します。
+指定したプロパティまたはフィールドに表示する値文字列の数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,16 +44,16 @@ int GetValueDisplayStringCount (
 
 ## <a name="parameters"></a>パラメーター
 `displayKind`\
-[in][列挙](../../../extensibility/debugger/reference/displaykind.md)体の値。
+から [Displaykind](../../../extensibility/debugger/reference/displaykind.md) 列挙子の値。
 
 `propertyOrField`\
-[in]プロパティまたはフィールドを表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイス。
+からプロパティまたはフィールドを表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイス。
 
 `pcelt`\
-[アウト]表示する文字列の数を返します。
+入出力表示する値文字列の数を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

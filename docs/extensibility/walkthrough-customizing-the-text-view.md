@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904936"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>チュートリアル: テキストビューのカスタマイズ
@@ -32,14 +32,14 @@ ms.locfileid: "85904936"
 
 - 参照可能な空白
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `ViewPropertyTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `ViewPropertyTest` します。
 
-2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
 3. 既存のクラス ファイルを削除します。
 
@@ -54,9 +54,9 @@ ms.locfileid: "85904936"
 
 3. を継承するという名前のクラスを宣言 `TestViewCreationListener` <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> します。 次の属性を使用して、このクラスをエクスポートします。
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>このリスナーが適用されるコンテンツの種類を指定します。
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> このリスナーが適用されるコンテンツの種類を指定します。
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>このリスナーのロールを指定します。
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> このリスナーのロールを指定します。
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]
@@ -89,7 +89,7 @@ ms.locfileid: "85904936"
 
 4. テキストが選択された状態で、テキストウィンドウの外側の任意の場所をクリックします。 選択したテキストの色は濃いピンクにする必要があります。
 
-5. 参照可能な空白を有効にします。 ([**編集**] メニューの [**詳細設定**] をポイントし、[**空白の表示**] をクリックします)。 テキストにいくつかのタブを入力します。 タブを表す赤色の矢印が表示されます。
+5. 参照可能な空白を有効にします。 ([ **編集** ] メニューの [ **詳細設定** ] をポイントし、[ **空白の表示**] をクリックします)。 テキストにいくつかのタブを入力します。 タブを表す赤色の矢印が表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)

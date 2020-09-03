@@ -14,33 +14,33 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904794"
 ---
 # <a name="walkthrough-display-statement-completion"></a>チュートリアル: 入力候補の表示
 入力候補を提供する識別子を定義し、完了セッションをトリガーすることによって、言語ベースのステートメント入力候補を実装できます。 言語サービスのコンテキストでステートメント入力候補を定義し、独自のファイル名の拡張子とコンテンツの種類を定義して、その型の入力候補だけを表示することができます。 または、既存のコンテンツの種類 ("プレーンテキスト" など) の完了をトリガーすることもできます。 このチュートリアルでは、テキストファイルのコンテンツタイプである "プレーンテキスト" コンテンツタイプに対してステートメント入力候補をトリガーする方法について説明します。 "Text" コンテンツタイプは、コードファイルや XML ファイルなど、他のすべてのコンテンツタイプの先祖です。
 
- 通常、ステートメント入力候補は特定の文字を入力することによってトリガーされます。たとえば、"using" などの識別子の先頭を入力します。 通常、 **space**、 **Tab**、または**enter**キーを押すと、選択範囲がコミットされます。 キーストローク (インターフェイス) のコマンドハンドラー <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> と、インターフェイスを実装するハンドラープロバイダーを使用して、文字を入力するときにトリガーされる IntelliSense 機能を実装でき <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ます。 完了に参加する識別子の一覧である完了ソースを作成するには、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> インターフェイスと完了ソースプロバイダー (インターフェイス) を実装し <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> ます。 プロバイダーは、Managed Extensibility Framework (MEF) コンポーネントのパートです。 ソースとコントローラーのクラスをエクスポートし、サービスとブローカーをインポートする役割を担い <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> ます。たとえば、テキストバッファー内の移動を可能にするや、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 完了セッションをトリガーするなどです。
+ 通常、ステートメント入力候補は特定の文字を入力することによってトリガーされます。たとえば、"using" などの識別子の先頭を入力します。 通常、 **space**、 **Tab**、または **enter** キーを押すと、選択範囲がコミットされます。 キーストローク (インターフェイス) のコマンドハンドラー <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> と、インターフェイスを実装するハンドラープロバイダーを使用して、文字を入力するときにトリガーされる IntelliSense 機能を実装でき <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ます。 完了に参加する識別子の一覧である完了ソースを作成するには、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> インターフェイスと完了ソースプロバイダー (インターフェイス) を実装し <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> ます。 プロバイダーは、Managed Extensibility Framework (MEF) コンポーネントのパートです。 ソースとコントローラーのクラスをエクスポートし、サービスとブローカーをインポートする役割を担い <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> ます。たとえば、テキストバッファー内の移動を可能にするや、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 完了セッションをトリガーするなどです。
 
  このチュートリアルでは、ハードコーディングされた識別子のセットに対してステートメント入力候補を実装する方法について説明します。 完全な実装では、言語サービスと言語ドキュメントにそのコンテンツを提供する役割があります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する
 
 #### <a name="to-create-a-mef-project"></a>MEF プロジェクトを作成するには
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `CompletionTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `CompletionTest` します。
 
-2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
 3. 既存のクラス ファイルを削除します。
 
-4. 次の参照をプロジェクトに追加し、 **CopyLocal**がに設定されていることを確認し `false` ます。
+4. 次の参照をプロジェクトに追加し、 **CopyLocal** がに設定されていることを確認し `false` ます。
 
      VisualStudio
 
@@ -81,7 +81,7 @@ ms.locfileid: "85904794"
      [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
      [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]
 
-6. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>コンテキストで指定する入力候補を含む完了セットを追加して、メソッドを実装します。 各入力候補セットには入力候補のセットが含まれて <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> おり、完了ウィンドウのタブに対応しています。 (Visual Basic プロジェクトでは、[完了] ウィンドウのタブの名前は "**共通**" と "**すべて**" になります)。`FindTokenSpanAtPosition`メソッドは、次の手順で定義します。
+6. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>コンテキストで指定する入力候補を含む完了セットを追加して、メソッドを実装します。 各入力候補セットには入力候補のセットが含まれて <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> おり、完了ウィンドウのタブに対応しています。 (Visual Basic プロジェクトでは、[完了] ウィンドウのタブの名前は " **共通** " と " **すべて**" になります)。 `FindTokenSpanAtPosition` メソッドは、次の手順で定義します。
 
      [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
      [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]
@@ -172,7 +172,7 @@ ms.locfileid: "85904794"
 
    - 文字がバッファーに書き込まれることを許可し、その後、完了をトリガーまたはフィルター処理します。 (印刷文字はこれを行います)。
 
-   - 完了をコミットしますが、バッファーへの文字の書き込みは許可しません。 (空白、**タブ**、 **Enter キー**を押したときに入力します。
+   - 完了をコミットしますが、バッファーへの文字の書き込みは許可しません。 (空白、 **タブ**、 **Enter キー** を押したときに入力します。
 
    - コマンドを次のハンドラーに渡すことを許可します。 (その他のすべてのコマンド)。
 
@@ -202,7 +202,7 @@ ms.locfileid: "85904794"
 
 3. テキストファイルを作成し、"add" という単語を含むテキストを入力します。
 
-4. 最初の "a" と "d" を入力すると、"加算" と "アダプテーション" を含む一覧が表示されます。 追加が選択されていることを確認します。 別の "d" と入力した場合、一覧には [追加] のみが表示されます。これは現在選択されています。 "追加" をコミットするには、 **space**キー、 **tab**キー、または**enter**キーを押すか、Esc キーまたは他のキーを入力して一覧を閉じます。
+4. 最初の "a" と "d" を入力すると、"加算" と "アダプテーション" を含む一覧が表示されます。 追加が選択されていることを確認します。 別の "d" と入力した場合、一覧には [追加] のみが表示されます。これは現在選択されています。 "追加" をコミットするには、 **space**キー、 **tab**キー、または **enter** キーを押すか、Esc キーまたは他のキーを入力して一覧を閉じます。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

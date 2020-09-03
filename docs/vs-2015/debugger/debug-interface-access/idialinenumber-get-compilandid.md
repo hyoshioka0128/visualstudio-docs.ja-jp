@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1210276728e40e43f8ae40eef78de4d53cf6262d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152081"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-この行を提供するコンパイル単位の一意の識別子を取得します。  
+この行を提供したコンパイル単位の一意の識別子を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ HRESULT get_compilandId ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`DWORD`この行を提供するコンパイル単位の一意の識別子を格納しています。  
+ 入出力 `DWORD` この行を提供したコンパイル単位の一意の識別子を含むを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72806832"
 ---
 # <a name="trusted-application-deployment-overview"></a>信頼されたアプリケーションの配置の概要
@@ -36,11 +36,11 @@ ms.locfileid: "72806832"
 
 |オブジェクトまたはロール|説明|
 |--------------------|-----------------|
-|管理者|クライアント コンピューターの更新と保守を担当する組織エンティティです。|
+|administrator|クライアント コンピューターの更新と保守を担当する組織エンティティです。|
 |信頼マネージャー|クライアント アプリケーションに対するセキュリティ処理を実施する、共通言語ランタイム (CLR) 内のサブシステムです。|
-|発行元|アプリケーションに関する記述と保守を実行するエンティティです。|
+|publisher|アプリケーションに関する記述と保守を実行するエンティティです。|
 |配置元|アプリケーションをパッケージ化し、ユーザーに配布するエンティティです。|
-|証明書|公開キーと秘密キーで構成される暗号化署名です。一般には、その信頼性を保証できる証明機関 (CA: Certification Authority) から発行されます。|
+|証明書 (certificate)|公開キーと秘密キーで構成される暗号化署名です。一般には、その信頼性を保証できる証明機関 (CA: Certification Authority) から発行されます。|
 |Authenticode 証明書|この証明書を使用できるユーザーの情報などを記述したメタデータを埋め込んだ証明書です。|
 |証明機関|発行元の ID を検査し、それらの発行元に、発行元のメタデータを埋め込んだ証明書を発行する組織です。|
 |root authority|他の証明機関が証明書を発行することを承認する証明機関です。|
@@ -66,7 +66,7 @@ ms.locfileid: "72806832"
 5. アプリケーション配置をクライアント コンピューターに発行します。
 
 ### <a name="obtain-a-certificate-for-the-publisher"></a>発行元の証明書を取得する
- デジタル証明書は、Microsoft Authenticode 認証およびセキュリティ システムの主要なコンポーネントです。 Authenticode は、Windows オペレーティング システムの標準機能です。 すべての [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションには、信頼されたアプリケーションの配置の対象であるかどうかにかかわらず、デジタル証明書によって署名する必要があります。 Authenticode と [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]の連携の詳細については、「 [ClickOnce と authenticode](../deployment/clickonce-and-authenticode.md)」を参照してください。
+ デジタル証明書は、Microsoft Authenticode 認証およびセキュリティ システムの主要なコンポーネントです。 Authenticode は、Windows オペレーティング システムの標準機能です。 すべての [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションには、信頼されたアプリケーションの配置の対象であるかどうかにかかわらず、デジタル証明書によって署名する必要があります。 での Authenticode の動作の詳細につい [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ては、「 [ClickOnce と authenticode](../deployment/clickonce-and-authenticode.md)」を参照してください。
 
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>発行元を信頼された発行元ストアに追加する
  開発した [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに高いレベルの信頼を与えるには、そのアプリケーションを実行する各クライアント コンピューターに対して、発行元の証明書を信頼された発行元として追加する必要があります。 これは 1 回だけ実行する構成タスクです。 この構成が完了すると、同じ発行元の証明書で署名された [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを必要なだけ配置し、そのすべてに高い信頼を与えて実行できます。
@@ -77,22 +77,22 @@ ms.locfileid: "72806832"
 
 - <xref:System.Security.Cryptography?displayProperty=fullName> 名前空間。
 
-- *CertMgr.exe*。これは、Internet Explorer のコンポーネントであるため、Windows 98 以降の全バージョンに含まれています。 詳細については、「 [certmgr.exe (証明書マネージャーツール)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)」を参照してください。
+- *CertMgr.exe*。これは、Internet Explorer のコンポーネントであるため、Windows 98 以降の全バージョンに含まれています。 詳細については、「 [Certmgr.exe (証明書マネージャーツール)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)」を参照してください。
 
 ### <a name="create-a-clickonce-application"></a>ClickOnce アプリケーションを作成する
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、アプリケーションを記述し、インストールパラメーターを提供するマニフェストファイルと組み合わせた .NET Framework クライアントアプリケーションです。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の **[発行]** コマンドを使用すると、開発したプログラムを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]アプリケーションに変換できます。 または、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] に含まれているツールを使用して、 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]配置に必要なすべてのファイルを生成することもできます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置の詳細な手順については、「[チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションとは、アプリケーションを記述し、インストールパラメーターを提供するマニフェストファイルと組み合わされた .NET Framework クライアントアプリケーションのことです。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の **[発行]** コマンドを使用すると、開発したプログラムを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]アプリケーションに変換できます。 または、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] に含まれているツールを使用して、 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]配置に必要なすべてのファイルを生成することもできます。 配置の詳細な手順につい [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ては、「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。
 
  信頼されたアプリケーションの配置は [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]に特有の機能であり、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに対してのみ使用できます。
 
 ### <a name="sign-the-deployment"></a>配置に署名する
- 使用する証明書を取得したら、この証明書を使用して配置に署名する必要があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の発行ウィザードを使用してアプリケーションを配置する場合は、独自に証明書を指定しなければ、ウィザードが自動的にテスト証明書を生成します。 また、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の [プロジェクト デザイナー] ウィンドウを使用して、CA から取得した証明書を指定することもできます。  「[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」も参照してください。
+ 使用する証明書を取得したら、この証明書を使用して配置に署名する必要があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の発行ウィザードを使用してアプリケーションを配置する場合は、独自に証明書を指定しなければ、ウィザードが自動的にテスト証明書を生成します。 また、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の [プロジェクト デザイナー] ウィンドウを使用して、CA から取得した証明書を指定することもできます。  「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」も参照してください。
 
 > [!CAUTION]
 > テスト証明書を使用してアプリケーションを配置することはお勧めできません。
 
- また、SDK の *Mage.exe* ツールまたは *MageUI.exe* ツールを使用してアプリケーションに署名することもできます。 詳細については、「[チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。 配置の署名に関連するコマンドラインオプションの完全な一覧については、「 [mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」を参照してください。
+ また、SDK の *Mage.exe* ツールまたは *MageUI.exe* ツールを使用してアプリケーションに署名することもできます。 詳細については、「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。 展開の署名に関連するコマンドラインオプションの完全な一覧については、「 [Mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」を参照してください。
 
-### <a name="publish-the-application"></a>アプリケーションを発行する
+### <a name="publish-the-application"></a>アプリケーションの発行
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] マニフェストに署名した後は、すぐにアプリケーションをインストール場所に発行できます。 インストール場所には、Web サーバー、ファイル共有、またはローカル ディスクを使用できます。 信頼マネージャーは、クライアントが配置マニフェストに初めてアクセスした時点で、インストール済みの信頼された発行元を参照して、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの実行時に高いレベルの権限を与えるかどうかを判断する必要があります。 信頼マネージャーは、配置に署名する際に使用された証明書と、クライアントの信頼された発行元ストアに格納されている証明書とを比較することによって、この判断をします。 信頼マネージャーが一致する証明書を検出した場合は、アプリケーションの実行時に高い信頼が与えられます。
 
 ## <a name="trusted-application-deployment-and-permission-elevation"></a>信頼されたアプリケーションの配置とアクセス許可の昇格

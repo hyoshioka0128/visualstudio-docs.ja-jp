@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904684"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>チュートリアル: コンテンツの種類をファイル名拡張子にリンクする
 エディター Managed Extensibility Framework (MEF) 拡張機能を使用して、独自のコンテンツの種類を定義し、ファイル名拡張子をリンクすることができます。 場合によっては、言語サービスによってファイル名の拡張子が既に定義されていることがあります。 ただし、MEF で使用するには、コンテンツの種類にリンクする必要があります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `ContentTypeTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `ContentTypeTest` します。
 
 2. **Source.extension.vsixmanifest**ファイルで、[**資産**] タブにアクセスし、[**種類**] フィールドを [ **VisualStudio**] に、[**ソース**] フィールドを [現在の**ソリューションのプロジェクト**] に、[**プロジェクト**] フィールドをプロジェクトの名前に設定します。
 
@@ -71,7 +71,7 @@ ms.locfileid: "85904684"
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>ファイル名拡張子をコンテンツタイプにリンクする
 
-- このコンテンツの種類をファイル名拡張子にマップするには、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 拡張子が*hid*でコンテンツタイプが "hid" のをエクスポートします。
+- このコンテンツの種類をファイル名拡張子にマップするには、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 拡張子が *hid* でコンテンツタイプが "hid" のをエクスポートします。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -90,7 +90,7 @@ ms.locfileid: "85904684"
 
 ## <a name="add-the-content-type-to-an-editor-export"></a>エディターのエクスポートにコンテンツの種類を追加する
 
-1. エディター拡張機能を作成します。 たとえば、「[チュートリアル: 余白グリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)」で説明されている余白グリフ拡張機能を使用できます。
+1. エディター拡張機能を作成します。 たとえば、「 [チュートリアル: 余白グリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)」で説明されている余白グリフ拡張機能を使用できます。
 
 2. この手順で定義したクラスを追加します。
 
