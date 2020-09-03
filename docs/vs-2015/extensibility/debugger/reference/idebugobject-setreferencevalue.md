@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue |Microsoft Docs
+title: 'IDebugObject:: SetReferenceValue |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1da0e152d536e9bed47dfb3964df60634c017bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180506"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
@@ -40,14 +40,14 @@ int SetReferenceValue(
   
 #### <a name="parameters"></a>パラメーター  
  `pObject`  
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)新しい参照の値を表すオブジェクト。  
+ から新しい参照値を表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、この[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトで指定されたオブジェクトの値への参照、`pObject`パラメーターは、前の参照することになります。 注この`IDebugObject`オブジェクトは参照型に既にあります。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、この [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトを、パラメーターに指定されたオブジェクトの値への参照として使用し `pObject` 、前の参照をすべて破棄します。 このオブジェクトは `IDebugObject` 、既に参照型である必要があることに注意してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

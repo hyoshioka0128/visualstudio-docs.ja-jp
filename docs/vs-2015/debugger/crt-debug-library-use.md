@@ -1,5 +1,5 @@
 ---
-title: CRT デバッグ ライブラリの使用方法 |Microsoft Docs
+title: CRT デバッグ ライブラリの使用方法 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,16 +31,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7e14a181b432dede3f00a4465d40154fdb393bb0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697858"
 ---
 # <a name="crt-debug-library-use"></a>CRT デバッグ ライブラリの使用方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-C ランタイム ライブラリには、広範なデバッグ支援機能が用意されています。 CRT デバッグ ライブラリのいずれかを使用するとリンクする必要があります[/debug](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)を指定してコンパイル **/MDd**、 **/MTd**、または **/LDd**します。  
+C ランタイム ライブラリには、広範なデバッグ支援機能が用意されています。 CRT デバッグ ライブラリを使用するには、[/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) を指定してリンクし、 **/MDd**、 **/MTd**、または **/LDd** を指定してコンパイルする必要があります。  
   
 ## <a name="remarks"></a>Remarks  
  CRT のデバッグに使用する主な定義とマクロは、CRTDBG.h ヘッダー ファイルに記述されています。  
@@ -51,6 +51,6 @@ C ランタイム ライブラリには、広範なデバッグ支援機能が�
   
  使用できる各種ランタイム ライブラリの詳細については、[C ランタイム ライブラリ](https://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f)に関するページを参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)   
  [/MD、/MT、/LD (ランタイム ライブラリの使用)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)

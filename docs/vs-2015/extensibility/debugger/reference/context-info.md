@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4e8c1b438cd2fa2721e81f055695e5836c26d12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179944"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
+# <a name="context_info"></a>CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-この構造体には、メモリのコンテキストまたはコードのコンテキストについて説明します。  
+この構造体は、メモリコンテキストまたはコードコンテキストを記述します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -52,7 +52,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>メンバー  
  dwFields  
- 彼からフラグの組み合わせ[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)フィールドが記入を指定する列挙体<strong>します。</strong>  
+ 入力するフィールドを指定する、 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 列挙型のフラグの組み合わせ<strong>。</strong>  
   
  bstrModuleUrl  
  コンテキストが配置されているモジュールの名前。  
@@ -61,30 +61,30 @@ public struct CONTEXT_INFO {
  コンテキストが配置されている関数の名前。  
   
  posFunctionOffset  
- A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)コードのコンテキストに関連付けられている関数の行と列のオフセットを識別する構造体。  
+ コードコンテキストに関連付けられている関数の行と列のオフセットを識別する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。  
   
  bstrAddress  
- 指定されたコンテキストが配置されているコード内のアドレス。  
+ 指定したコンテキストが配置されているコード内のアドレス。  
   
  bstrAddressOffset  
- 指定されたコンテキストが配置されているコード内のアドレスのオフセット。  
+ 指定したコンテキストが配置されているコード内のアドレスのオフセット。  
   
  bstrAddressAbsolute  
- 指定されたコンテキストが配置されているメモリ内で絶対アドレスです。  
+ 指定したコンテキストが配置されているメモリ内の絶対アドレス。  
   
-## <a name="remarks"></a>Remarks  
- この構造体がへの呼び出しから返される、 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) メソッドの呼び出しから返されます。  
   
- この構造体の一般的な用途は、のサポートには、**メモリ**デバッグ ウィンドウ。  
+ この構造体の一般的な用途は、 **メモリ** デバッグウィンドウをサポートすることです。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   

@@ -11,38 +11,38 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690315"
 ---
 # <a name="editor-imports"></a>エディターのインポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エディター サービス、ファクトリ、およびコア エディターをさまざまな種類のアクセスの拡張機能を提供するブローカーの数値をインポートすることができます。 たとえば、インポート、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>を提供するために、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>の特定のコンテンツ タイプ。 (このナビゲーターは、テキスト バッファーにさまざまな検索を実行します。)  
+拡張機能を提供するさまざまなエディターサービス、ファクトリ、ブローカーを、コアエディターへのさまざまな種類のアクセスでインポートできます。 たとえば、をインポートして、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 特定のコンテンツタイプのを提供できます。 (このナビゲーターを使用すると、テキストバッファーに対してさまざまな種類の検索を実行できます)。  
   
- エディター インポートを使用するには、フィールドまたは Managed Extensibility Framework コンポーネントの一部をエクスポートするクラスのプロパティとしてインポートします。  
+ エディターインポートを使用するには、Managed Extensibility Framework コンポーネントパーツをエクスポートするクラスのフィールドまたはプロパティとしてインポートします。  
   
 > [!NOTE]
-> Managed Extensibility Framework の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
+> Managed Extensibility Framework の詳細については、「 [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)」を参照してください。  
   
-## <a name="import-syntax"></a>構文をインポートします。  
- 次の例では、オプションのファクトリ サービス、エディターにインポートする方法を示します。  
+## <a name="import-syntax"></a>インポート構文  
+ 次の例は、エディターオプションのファクトリサービスをインポートする方法を示しています。  
   
 ```  
 [Import]  
 internal IEditorOptionsFactoryService EditorOptions { get; set; }  
 ```  
   
- フィールドとプロパティではなく、サービスをインポートする場合に設定する必要があります`null`変数に割り当てないに関するコンパイラの警告を回避するために、宣言で。  
+ サービスをプロパティではなくフィールドとしてインポートする場合は、 `null` 変数に割り当てられていないことに関するコンパイラの警告が表示されないように、宣言でをに設定する必要があります。  
   
 ```  
 [Import]  
 internal IEditorOptionsFactoryService m_editorOptions = null;  
 ```  
   
- インポートを使用する例については、次のチュートリアルを参照してください。  
+ インポートの使用例については、次のチュートリアルを参照してください。  
   
  [チュートリアル: 余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
@@ -58,69 +58,69 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [チュートリアル: スマート タグの表示](../misc/walkthrough-displaying-smarttags.md)  
   
-## <a name="importing-the-service-provider"></a>サービス プロバイダーをインポートします。  
- インポートすることも、 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (アセンブリ Microsoft.VisualStudio.Shell.Immutable.10.0 内で見つかった) Visual Studio services にアクセスするために同じ方法で。  
+## <a name="importing-the-service-provider"></a>サービスプロバイダーをインポートしています  
+ また、 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 同じ方法で (アセンブリ VisualStudio にある) をインポートして、Visual Studio サービスへのアクセスを取得することもできます。  
   
 ```  
 [Import]  
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 「[チュートリアル:エディター拡張機能から DTE オブジェクトにアクセスする](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)詳細についてはします。  
+ 詳細については、「 [チュートリアル: エディター拡張機能から DTE オブジェクトにアクセス](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) する」を参照してください。  
   
-## <a name="services"></a>Services  
- エディター サービスは、サービスを提供し、複数のコンポーネント間で共有される通常の 1 つのエンティティです。  
+## <a name="services"></a>サービス  
+ 通常、エディターサービスは1つのエンティティであり、サービスを提供し、複数のコンポーネント間で共有されます。  
   
-|インポート|提供します|  
+|[インポート]|ここ|  
 |------------|--------------|  
-|<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|ファイル拡張子の間のリレーションシップと<xref:Microsoft.VisualStudio.Utilities.IContentType>オブジェクト。|  
+|<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|ファイル拡張子とオブジェクトの間のリレーションシップ <xref:Microsoft.VisualStudio.Utilities.IContentType> 。|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|<xref:Microsoft.VisualStudio.Utilities.IContentType> オブジェクトのコレクション。|  
 |<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> オブジェクト|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|多くのエディター アダプター オブジェクト。<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
-|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch>テキストを指定したビューのオブジェクト。|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|エディターアダプターの多くのオブジェクト:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
+|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch>指定されたテキストビューのオブジェクト。|  
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>。|  
 |<xref:Microsoft.VisualStudio.Text.ITextDocumentFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextDocument>。|  
-|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceCollection%601>の相違点。|  
-|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalStringDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalDifferenceCollection>の相違点。|  
-|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>または<xref:Microsoft.VisualStudio.Text.Projection.IElisionBuffer>します。|  
-|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph>一連の<xref:Microsoft.VisualStudio.Text.ITextBuffer>オブジェクト。|  
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>の<xref:Microsoft.VisualStudio.Text.ITextBuffer>します。|  
-|<xref:Microsoft.VisualStudio.Text.Classification.IViewClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>の<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>の<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
-|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap>の<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>|コレクションを保持<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>オブジェクト。|  
-|<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>テキスト バッファー。|  
-|<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>テキスト表示。|  
-|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptionsFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptions>指定されたスコープの。|  
-|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMapFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMap>テキスト表示。|  
-|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent>の<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
-|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|自動インデントを取得、<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider>オブジェクト。|  
-|<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|管理、<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>の<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>します。|  
+|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceCollection%601>相違点のです。|  
+|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalStringDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalDifferenceCollection>相違点のです。|  
+|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>または <xref:Microsoft.VisualStudio.Text.Projection.IElisionBuffer> 。|  
+|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph>オブジェクトのセットの <xref:Microsoft.VisualStudio.Text.ITextBuffer> 。|  
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>の <xref:Microsoft.VisualStudio.Text.ITextBuffer> 。|  
+|<xref:Microsoft.VisualStudio.Text.Classification.IViewClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>の <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>の <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
+|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap>の <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>|オブジェクトのコレクションを保持 <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> します。|  
+|<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>テキストバッファーの。|  
+|<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>テキストビューの。|  
+|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptionsFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptions>指定したスコープの。|  
+|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMapFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMap>テキストビューの。|  
+|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent>の <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
+|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|オブジェクトを使用した自動インデントを取得し <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> ます。|  
+|<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|のを管理 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> します。|  
 |<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>。|  
-|<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|スナップショットの範囲のセットから RTF 形式のテキストを生成します。|  
-|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer>の<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
-|<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|A<xref:System.Windows.Media.TextFormatting.TextParagraphProperties>ビュー内のテキスト行を書式設定します。|  
-|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>|A<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperations>オブジェクト、<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>|テキストのスナップショットを検索します。|  
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>の<xref:Microsoft.VisualStudio.Text.ITextBuffer>によって<xref:Microsoft.VisualStudio.Utilities.IContentType>します。|  
-|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>テキスト表示。|  
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IGlyphService>|グリフの標準セットです。|  
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStackMapService>|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStack>の<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
+|<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|一連のスナップショットから RTF 形式のテキストを生成します。|  
+|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer>の <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
+|<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|<xref:System.Windows.Media.TextFormatting.TextParagraphProperties>ビュー内のテキスト行を書式設定するための。|  
+|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperations>のオブジェクト <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>|テキストスナップショットを検索します。|  
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>|に <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> よるの <xref:Microsoft.VisualStudio.Text.ITextBuffer> <xref:Microsoft.VisualStudio.Utilities.IContentType> 。|  
+|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>テキストビューの。|  
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IGlyphService>|グリフの標準セット。|  
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStackMapService>|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStack>の <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IWpfKeyboardTrackingService>|キーボード処理を追跡します。|  
-|<xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>|標準<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>オブジェクト。|  
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistoryRegistry>|テキスト バッファー間の関係を維持し、<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistory>オブジェクト。|  
+|<xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>|標準 <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> オブジェクト。|  
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistoryRegistry>|テキストバッファーとオブジェクトの間のリレーションシップを維持し  <xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistory> ます。|  
   
-## <a name="other-imports"></a>他のインポート  
- プロバイダー ファクトリとブローカーは、通常、複数のコンポーネントで複数のインスタンスがエンティティです。  
+## <a name="other-imports"></a>その他のインポート  
+ プロバイダーファクトリとブローカーは、通常、複数のコンポーネントに複数のインスタンスを持つことができるエンティティです。  
   
-|インポート|提供します|  
+|[インポート]|ここ|  
 |------------|--------------|  
-|<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601>型の<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) の指定したバッファー。|  
-|<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|テキスト マーカー タガー (、<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601>型の<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>)。|  
-|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProviderFactory>|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProvider>の指定された<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。|  
+|<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> 指定されたバッファーの型の。|  
+|<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|テキストマーカーのタガー ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> 型の a <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> )。|  
+|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProviderFactory>|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProvider>指定したの <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|  
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>。|  
 |<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>。|  
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)

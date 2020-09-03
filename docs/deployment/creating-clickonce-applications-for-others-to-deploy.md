@@ -97,7 +97,7 @@ ClickOnce 配置を作成するすべての開発者が、アプリケーショ�
 
  この方法の欠点は、お客様が .NET Framework SDK ツールをインストールする必要があることと、開発者またはシステム管理者がその使用についてのスキルを持っていることです。 一部のお客様は、技術的な労力をほとんどまたはまったく必要としないソリューションを要求する場合があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [テストサーバーおよび運用サーバー用の ClickOnce アプリケーションを、署名せずに配置する](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 - [チュートリアル: ClickOnce アプリケーションの手動配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [チュートリアル: 再署名が不要で商標を保持する ClickOnce アプリケーションの手動配置](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
