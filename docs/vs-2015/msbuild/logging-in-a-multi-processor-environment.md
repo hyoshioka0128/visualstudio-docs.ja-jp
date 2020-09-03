@@ -1,4 +1,4 @@
-﻿---
+---
 title: マルチプロセッサ環境でのログ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205976"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>マルチプロセッサ環境でのログ
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  転送 logger 内のイベントを転送するには、<xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> インターフェイスの <xref:Microsoft.Build.Framework.IEventRedirector> メソッドを呼び出します。 パラメーターとして、適切な <xref:Microsoft.Build.Framework.BuildEventArgs> または派生クラスを渡します。  
   
- 詳細については、「[転送 logger の作成](../msbuild/creating-forwarding-loggers.md)」を参照してください。  
+ 詳細については、「 [転送 logger の作成](../msbuild/creating-forwarding-loggers.md)」を参照してください。  
   
 ### <a name="attaching-a-distributed-logger"></a>分散 logger のアタッチ  
  コマンド ラインでのビルドで分散 logger をアタッチするには、`/distributedlogger` (短縮形は `/dl`) スイッチを使用します。 logger の型名およびクラス名の形式は、`/logger` スイッチの場合と同じです。ただし、分散 logger は転送 logger と中央 logger という 2 つのログ記録クラスから成ります。 分散 logger をアタッチするコードの例を次に示します。  
@@ -73,6 +73,6 @@ Culture=neutral
   
  `/dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切っています。  
   
-## <a name="see-also"></a>関連項目
- [ビルド ロガー](../msbuild/build-loggers.md)   
- [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>参照  
+ [ビルドロガー](../msbuild/build-loggers.md)   
+ [転送 Logger の作成](../msbuild/creating-forwarding-loggers.md)

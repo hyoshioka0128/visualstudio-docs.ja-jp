@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659465"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>バックグラウンド スレッドから UML モデルを更新する
@@ -32,7 +32,7 @@ ms.locfileid: "72659465"
 
 #### <a name="to-run-the-example"></a>例を実行するには
 
-1. 「 C# [モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」の説明に従って、プロジェクトにコマンドハンドラーを作成します。
+1. 「 [モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」の説明に従って、C# プロジェクトでコマンドハンドラーを作成します。
 
 2. 次のアセンブリへの参照がプロジェクトに含まれていることを確認します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "72659465"
 
    - System.Windows.Forms
 
-3. プロジェクトに、"**進行形式**" という名前の Windows フォームを追加します。 このフォームには、更新が実行中であることを示すメッセージが表示されます。 他のコントロールを追加する必要はありません。
+3. プロジェクトに、" **進行形式**" という名前の Windows フォームを追加します。 このフォームには、更新が実行中であることを示すメッセージが表示されます。 他のコントロールを追加する必要はありません。
 
 4. 手順 7. の後に記載されているコードを格納している C# ファイルを追加します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72659465"
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用のインスタンスで UML クラス図を作成するか、または開きます。
 
-7. UML クラス図の任意の場所を右クリックし、 **[いくつかの Uml クラスの追加]** をクリックします。
+7. UML クラス図の任意の場所を右クリックし、[ **いくつかの Uml クラスの追加**] をクリックします。
 
    複数の新しいクラス ボックスが 0.5 秒間隔で図に順次表示されます。
 

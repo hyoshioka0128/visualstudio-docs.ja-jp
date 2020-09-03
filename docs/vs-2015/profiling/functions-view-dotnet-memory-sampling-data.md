@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e77c6c2b3bf079e8aae88c9779c3b487ff97fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141868"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>関数ビュー - .NET メモリ サンプリング データ
@@ -23,13 +23,13 @@ ms.locfileid: "68141868"
 
 サンプリング メソッドを使用して収集された .NET メモリの割り当てプロファイル データの関数ビューには、プロファイル実行中にメモリを割り当てた関数が一覧表示され、割り当てのサイズと数が報告されます。  
   
-|Column|説明|  
+|Column|[説明]|  
 |------------|-----------------|  
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|  
 |**プロセス名**|プロセスの名前です。|  
 |**モジュール名**|関数を含むモジュールの名前です。|  
 |**モジュール パス**|関数を含むモジュールのパスです。|  
-|**ソース ファイル**|この関数の定義を含むソース ファイルです。|  
+|**[転送元ファイル]**|この関数の定義を含むソース ファイルです。|  
 |**関数名**|関数の完全修飾名です。|  
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|  
 |**関数アドレス**|関数のアドレス。|  
@@ -42,7 +42,7 @@ ms.locfileid: "68141868"
 |**割り当てバイト数 (関数のみ)**|この関数によって割り当てられたメモリのバイト数。その子関数によるものは含まれません。|  
 |**割り当てバイト数 % (関数のみ)**|プロファイル実行で割り当てられたすべてのメモリのバイト数に対する、この関数の排他バイトであったバイト数の割合。|  
   
-## <a name="see-also"></a>関連項目  
- [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+## <a name="see-also"></a>参照  
+ [関数ビュー-インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [関数ビュー](../profiling/functions-view-sampling-data.md)   
- [関数ビュー](../profiling/functions-view-instrumentation-data.md)
+ [関数 ビュー](../profiling/functions-view-instrumentation-data.md)
