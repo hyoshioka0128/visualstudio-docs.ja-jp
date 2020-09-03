@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE |マイクロソフトドキュメント
+title: BP_COND_STYLE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738115"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
-保留中のブレークポイントとバインドされたブレークポイントのブレークポイント条件スタイルを指定します。
+保留中のブレークポイントとバインドされたブレークポイントのブレークポイントの条件スタイルを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,23 +46,23 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>フィールド
 `BP_COND_NONE`\
-ブレークポイントの位置に達すると、ブレークポイントを起動します。 ブレークポイントの条件が指定されていません。
+ブレークポイントの位置に達したときにブレークポイントを発生させます。 ブレークポイント条件が指定されていません。
 
 `BP_COND_WHEN_TRUE`\
-ブレークポイントに関連付けられた条件式が に評価された場合にのみ、`true`ブレークポイントを起動します。
+ブレークポイントに関連付けられている条件式がと評価された場合にのみ、ブレークポイントを発生させ `true` ます。
 
 `BP_COND_WHEN_CHANGED`\
-ブレークポイントを起動するのは、ブレークポイントに関連付けられている条件式の値が前回の評価から変更された場合だけです。
+ブレークポイントに関連付けられている条件式の値が以前の評価から変更された場合にのみ、ブレークポイントを発生させます。
 
-## <a name="remarks"></a>Remarks
-BP_CONDITION構造体の`styleCondition`メンバーに使用[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)されます。
+## <a name="remarks"></a>解説
+`styleCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)構造体のメンバーに使用されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

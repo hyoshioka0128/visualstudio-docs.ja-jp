@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS |マイクロソフトドキュメント
+title: BP_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738061"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
-ブレークポイントを設定するときに追加情報を指定するために使用できるオプションのフラグを提供します。
+には、ブレークポイントを設定するときに追加情報を指定するために使用できるオプションのフラグが用意されています。
 
 ## <a name="syntax"></a>構文
 
@@ -46,25 +46,25 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `BP_FLAG_NONE`\
-ブレークポイント フラグを指定しません。
+ブレークポイントフラグを指定しません。
 
 `BP_FLAG_MAP_DOCPOSITION`\
-デバッグ エンジン (DE) がドキュメントの位置を使用してブレークポイントをマップする必要があることを指定します。 これは、スクリプト指向のソース ファイル (アクティブ サーバー ページ (ASP) など) に設定されたブレークポイントにのみ適用されます。
+デバッグエンジン (DE) がドキュメントの位置を使用してブレークポイントをマップするように指定します。 これは、Active Server ページ (ASP) などのスクリプト指向のソースファイルに設定されているブレークポイントにのみ適用できます。
 
 `BP_FLAG_DONT_STOP`\
-ブレークポイントはデバッグ エンジンによって処理される必要がありますが、デバッグ エンジンは最終的にそこで停止しないように指定します (つまり[、IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しないでください)。 このフラグは、主にトレースポイントで使用するように設計されています。
+ブレークポイントがデバッグエンジンによって処理される必要があることを指定します。ただし、デバッグエンジンは、最終的にはそれを停止しないようにする必要があります (つまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) イベントオブジェクトを送信することはできません)。 このフラグは、主にトレースポイントで使用されるように設計されています。
 
-## <a name="remarks"></a>Remarks
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造体および`dwFlags`[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバーに使用されます。
+## <a name="remarks"></a>解説
+`dwFlags` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)および[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバーに使用されます。
 
-これらの値はビット単位`OR`で組み合わせることができる。
+これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
