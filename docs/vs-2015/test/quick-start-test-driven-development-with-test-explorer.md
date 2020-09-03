@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672257"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>クイック スタート: テスト エクスプローラーによるテスト駆動開発
@@ -29,7 +29,7 @@ ms.locfileid: "72672257"
 - 必要な情報をすべて、1 つのウィンドウで確認できます。
 
 ## <a name="using-test-explorer"></a>テスト エクスプローラーの使用
- ![[すべて実行] ボタンを示す単体テストエクスプローラー](../test/media/unittestexplorer-beta.png "UnitTestExplorer (ベータ)")
+ ![[すべて実行] ボタンを示す単体テスト エクスプローラー](../test/media/unittestexplorer-beta.png "UnitTestExplorer (ベータ)")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行するには
 
@@ -39,7 +39,7 @@ ms.locfileid: "72672257"
 
    1. テスト プロジェクトを作成します。
 
-        **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]** 、 **[Visual C#]** 、または **[Visual C++]** を展開し、 **[テスト]** をクリックします。
+        **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]**、 **[Visual C#]**、または **[Visual C++]** を展開し、 **[テスト]** をクリックします。
 
         **[単体テスト プロジェクト]** を選択します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "72672257"
 
 2. 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
-3. メニュー バーで、 **[テスト]** 、 **[単体テストの実行]** 、 **[すべてのテスト]** の順にクリックします。
+3. メニュー バーで、 **[テスト]**、 **[単体テストの実行]**、 **[すべてのテスト]** の順にクリックします。
 
     ソリューションがビルドされ、テストが実行されます。
 
@@ -65,10 +65,10 @@ ms.locfileid: "72672257"
 > 最新のテスト実行の結果が表示されます。 色分けされた結果バーに表示されるのは、実行されたテストの結果のみです。 たとえば、複数のテストを実行してそのいくつかに失敗し、次に成功したテストのみを実行した場合は、結果バーには緑色のみが表示されます。
 
 > [!NOTE]
-> テストが表示されない場合は、使用するテスト フレームワークにテスト エクスプローラーを接続するためのアダプターがインストールされていることを確認してください。 詳細については、「[別のテストフレームワークを使用する](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)」を参照してください。
+> テストが表示されない場合は、使用するテスト フレームワークにテスト エクスプローラーを接続するためのアダプターがインストールされていることを確認してください。 詳細については、「 [別のテストフレームワークを使用する](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)」を参照してください。
 
-## <a name="walkthrough"></a> チュートリアル: 単体テストを使用してメソッドを開発する
- このチュートリアルでは、Microsoft 単体テスト フレームワークを使用して、テスト済みメソッドを C# で開発する方法を示します。 他の言語に適合させることも、NUnit など他のテスト フレームワークを使用することも、容易です。 詳細については、「[別のテストフレームワークを使用する](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)」を参照してください。
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> チュートリアル: 単体テストを使用したメソッドの開発
+ このチュートリアルでは、Microsoft 単体テスト フレームワークを使用して、テスト済みメソッドを C# で開発する方法を示します。 他の言語に適合させることも、NUnit など他のテスト フレームワークを使用することも、容易です。 詳細については、「 [別のテストフレームワークを使用する](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)」を参照してください。
 
 #### <a name="creating-the-test-and-method"></a>テストとメソッドを作成する
 
@@ -76,9 +76,9 @@ ms.locfileid: "72672257"
 
 2. テスト プロジェクトを作成します。
 
-   - **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** 、 **[テスト]** 、 **[単体テスト プロジェクト]** の順にクリックします。
+   - **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]**、 **[テスト]** 、 **[単体テスト プロジェクト]** の順にクリックします。
 
-        ![新しいコードとテストプロジェクト](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+        ![新しいコードとテスト プロジェクト](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
 3. 基本的なテスト メソッドを記述します。 特定の入力に対して生じた結果を確認します。
 
@@ -102,15 +102,15 @@ ms.locfileid: "72672257"
 
 4. テストからメソッドを生成します。
 
-   1. `Rooter`にカーソルを置き、ショートカット メニューで **[生成]** 、 **[新しい型]** の順にクリックします。
+   1. `Rooter`にカーソルを置き、ショートカット メニューで **[生成]**、 **[新しい型]** の順にクリックします。
 
-   2. **[新しい型の生成]** ダイアログ ボックスで、 **[プロジェクト]** をクラス ライブラリ プロジェクトに設定します。 この例では、 `MyMath`です。
+   2. **[新しい型の生成]** ダイアログ ボックスで、 **[プロジェクト]** をクラス ライブラリ プロジェクトに設定します。 この例では `MyMath` です。
 
-   3. `SquareRoot`にカーソルを置き、ショートカット メニューで **[生成]** 、 **[メソッド スタブ]** の順にクリックします。
+   3. `SquareRoot`にカーソルを置き、ショートカット メニューで **[生成]**、 **[メソッド スタブ]** の順にクリックします。
 
 5. 単体テストを実行します。
 
-   1. **[テスト]** メニューで、 **[単体テストの実行]** 、 **[すべてのテスト]** の順にクリックします。
+   1. **[テスト]** メニューで、 **[単体テストの実行]**、 **[すべてのテスト]** の順にクリックします。
 
         ソリューションがビルドされ、実行されます。
 
@@ -124,7 +124,7 @@ ms.locfileid: "72672257"
 
 7. テストに失敗した箇所を確認するには、 **[スタック トレース]** の下に表示されている項目を選択します。
 
-   ![失敗したテストを示す単体テストエクスプローラー。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![テストの失敗を示す単体テスト エクスプローラー。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    この時点で、テストとスタブが作成されています。テストに合格するには、これらを修正する必要があります。
 
@@ -139,13 +139,13 @@ ms.locfileid: "72672257"
      }
     ```
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
      テストがビルドされ、テストが実行されます。
 
-     テストに合格します。
+     テストは成功します。
 
-     ![成功テストを示す単体テストエクスプローラー。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![テストの成功を示す単体テスト エクスプローラー。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>テストを追加して入力の範囲を拡張する
 
@@ -180,7 +180,7 @@ ms.locfileid: "72672257"
     }
     ```
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
      最初のテストには今回も合格しますが、新しいテストには失敗します。
 
@@ -202,7 +202,7 @@ ms.locfileid: "72672257"
     }
     ```
 
-4. テスト エクスプローラーで **[すべて実行]** をクリックします。
+4. テストエクスプローラーで [ **すべて実行**] を選択します。
 
      今回は、両方のテストに合格します。
 
@@ -227,7 +227,7 @@ ms.locfileid: "72672257"
      }
     ```
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
      テスト対象のメソッドはループするため、実行を手動で取り消す必要があります。
 
@@ -248,7 +248,7 @@ ms.locfileid: "72672257"
     ...
     ```
 
-5. テスト エクスプローラーで **[すべて実行]** をクリックします。
+5. テストエクスプローラーで [ **すべて実行**] を選択します。
 
      すべてのテストに合格します。
 
@@ -287,4 +287,4 @@ ms.locfileid: "72672257"
 
      今回もすべてのテストに合格します。
 
-     ![3個のテストが成功したことを示す単体テストエクスプローラー。](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![3 つのテストが成功したことを示す単体テスト エクスプローラー。](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

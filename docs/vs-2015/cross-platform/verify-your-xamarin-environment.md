@@ -7,10 +7,10 @@ caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918751"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin 環境を検証する
@@ -25,20 +25,20 @@ ms.locfileid: "75918751"
 - [Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
   
 ## <a name="all-platforms"></a>すべてのプラットフォーム  
- 最初に、 **[ツール] > [オプション]** を選択し、 **[Xamarin] > [その他]** を展開して、 **[今すぐ確認]** リンクをクリックして更新プログラムを確認します。 以前のライセンスの問題を回避するには、Xamarin 4.0.3.214 以降を使用する必要があります。  
+ 最初に、**[ツール] > [オプション]** を選択し、**[Xamarin] > [その他]** を展開して、**[今すぐ確認]** リンクをクリックして更新プログラムを確認します。 以前のライセンスの問題を回避するには、Xamarin 4.0.3.214 以降を使用する必要があります。  
   
- その後、 **[ファイル] > [新しいプロジェクト]** を使って Visual Studio で新しい Xamarin ソリューションを作成し、ダイアログで **[テンプレート] > [他の言語] > [Visual C#] > [クロスプラットフォーム]** の順に展開して、 **[空のアプリ (ネイティブ ポータブル)]** を選び、[OK] をクリックします。 これによって、共有ポータブル クラス ライブラリ プロジェクトと Android、iOS、Windows の個々のプロジェクトを含むソリューションが作成されます。  
+ その後、**[ファイル] > [新しいプロジェクト]** を使って Visual Studio で新しい Xamarin ソリューションを作成し、ダイアログで **[テンプレート] > [他の言語] > [Visual C#] > [クロスプラットフォーム]** の順に展開して、**[空のアプリ (ネイティブ ポータブル)]** を選び、[OK] をクリックします。 これによって、共有ポータブル クラス ライブラリ プロジェクトと Android、iOS、Windows の個々のプロジェクトを含むソリューションが作成されます。  
   
- ![空のアプリ&#40;のネイティブポータブル&#41;テンプレートから新しいプロジェクトを作成した結果](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin 検証1")  
+ ![空のアプリ &#40;ネイティブポータブル&#41; テンプレートから新しいプロジェクトを作成した結果](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin 検証1")  
   
 > [!NOTE]
 > テンプレートがない場合は、このページの下部にある「 [Are the Xamarin project templates missing? Try this](#missing) 」をご覧ください。  
   
 ## <a name="android"></a>Android  
   
-1. 最新の Android SDK ツールがインストールされていることを確認するには、 **[ツール] > [Android] > [Android SDK Manager]** に移動し、最新バージョンの Android SDK ツール、Android SDK プラットフォーム ツール、Android SDK ビルド ツール コンポーネントがインストールされていることをご確認ください。 最新の Android API レベルを必ずインストールする必要はないことにご注意ください。必要な API は、対象となるプラットフォームのレベルによって異なります。 通常、Xamarin をインストールすると、必要なプラットフォームのレベルがインストールされます。  
+1. 最新の Android SDK ツールがインストールされていることを確認するには、**[ツール] > [Android] > [Android SDK Manager]** に移動し、最新バージョンの Android SDK ツール、Android SDK プラットフォーム ツール、Android SDK ビルド ツール コンポーネントがインストールされていることをご確認ください。 最新の Android API レベルを必ずインストールする必要はないことにご注意ください。必要な API は、対象となるプラットフォームのレベルによって異なります。 通常、Xamarin をインストールすると、必要なプラットフォームのレベルがインストールされます。  
 
-2. Android デザイナーの検証: ソリューション エクスプローラーの Android プロジェクトで、 **[リソース] > [レイアウト] > [Main.axml]** ファイルを開きます。 (このファイルが直接参照されない場合、ソリューション エクスプローラーで検索してください。Android プロジェクトにのみ存在し、iOS プロジェクトには存在しません)。  
+2. Android デザイナーの検証: ソリューション エクスプローラーの Android プロジェクトで、**[リソース] > [レイアウト] > [Main.axml]** ファイルを開きます。 (このファイルが直接参照されない場合、ソリューション エクスプローラーで検索してください。Android プロジェクトにのみ存在し、iOS プロジェクトには存在しません)。  
   
     - 「インストールされている Android SDK が古すぎます」というエラーが発生した場合は、そのメッセージ内の **[Android SDK を開く]** をクリックして、上記の手順 1 に従って利用可能な最新の SDK バージョンを選んでインストールします。 
   
@@ -46,20 +46,20 @@ ms.locfileid: "75918751"
   
     - ソリューション エクスプローラーで Android プロジェクトを右クリックして **[スタートアップ プロジェクトに設定]** をクリックします。  
   
-         ![Visual Studio をスタートアッププロジェクトとして設定するオプション](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Xamarin Verify 2")  
+         ![Visual Studio はスタートアップ プロジェクト オプションとして設定されています](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Xamarin Verify 2")  
   
     - 対象の Android バージョンに基づき、適切なエミュレーターを選びます。コンピューターに Android 開発デバイスが接続されている場合は、エミュレーターと共にそれもここに一覧表示されます。  
   
-        - Windows 8+: 次に示すように、Visual Studio のデバッグ ドロップダウン リストで **VS エミュレーター** のターゲットを選び、 **F5**キーを押してデバッガーを開始します。 詳細については、「 [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM ブログ)」をご覧ください。 エミュレーターを機能させるときに問題が発生する場合は、「[Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)」をご覧ください。 **[ツール] > [Visual Studio Emulator for Android...]** を選択して、エミュレーターの新しいデバイス プロファイルを作成することもできます。  
+        - Windows 8 +: 次に示すように、Visual Studio のデバッグドロップダウンで **VS Emulator** ターゲットを選択し、 **F5**キーを押してデバッガーを開始します。 詳細については、「 [Visual studio の Android 用エミュレーターの概要](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (VISUAL studio ALM ブログ)」を参照してください。 エミュレーターを機能させるときに問題が発生する場合は、「[Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)」をご覧ください。 **[ツール] > [Visual Studio Emulator for Android...]** を選択して、エミュレーターの新しいデバイス プロファイルを作成することもできます。  
   
-             ![デバッグターゲットとしての Visual Studio Emulator for Android の選択](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")  
+             ![デバッグ ターゲットとして Visual Studio Emulator for Android を選択します](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")  
   
-             注: **[ツール] > [Visual Studio Emulator for Android...]** メニュー オプションが表示されない場合、エミュレーター自体がインストールされていない可能性があります。 **[コントロール パネル] > [プログラムと機能]** に移動し、 **[Microsoft Visual Studio]** を選択して、 **[変更]** をクリックすると、インストーラーを再実行できます。 インストーラーで **[変更]** をクリックし、 **[Cross Platform Mobile Development] > [Microsoft Visual Studio Emulator for Android]** のボックスにチェックマークを付け、 **[更新]** をクリックします。  
+             注: **[ツール] > [Visual Studio Emulator for Android...]** メニュー オプションが表示されない場合、エミュレーター自体がインストールされていない可能性があります。 **[コントロール パネル] > [プログラムと機能]** に移動し、**[Microsoft Visual Studio]** を選択して、**[変更]** をクリックすると、インストーラーを再実行できます。 インストーラーで **[変更]** をクリックし、**[Cross Platform Mobile Development] > [Microsoft Visual Studio Emulator for Android]** のボックスにチェックマークを付け、**[更新]** をクリックします。  
   
         - Windows 7 以前: ドロップダウン リストで Xamarin Player for Android を代わりに選び、F5 キーを押して実行します。 Xamarin プレーヤー、そのデバイス マネージャー、トラブルシューティングのヒントについて詳しくは、「 [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) 」(xamarin.com) をご覧ください。  
   
 > [!NOTE]
-> Visual Studio では、ツール バーに Android エミュレーター マネージャー (AVD) ボタンが表示される場合があります (以下に示します)。これは、特に Google Android エミュレーターを構成するために使用されるデバイス マネージャーを開くものです。  これは、Visual Studio Emulator for Android と Xamarin Player のどちらにも影響しません。それぞれプロファイルを構成するための独自のデバイス マネージャーを持ちます。  詳しくは、「 [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) 」(Visual Studio ALM ブログ) と「 [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) の概要」をご覧ください。  
+> Visual Studio では、ツール バーに Android エミュレーター マネージャー (AVD) ボタンが表示される場合があります (以下に示します)。これは、特に Google Android エミュレーターを構成するために使用されるデバイス マネージャーを開くものです。  これは、Visual Studio Emulator for Android と Xamarin Player のどちらにも影響しません。それぞれプロファイルを構成するための独自のデバイス マネージャーを持ちます。  詳細については、「 [Visual studio の Emulator For Android の概要](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (VISUAL studio ALM ブログ)」と「 [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) 」 (xamarin.com) を参照してください。  
 > ![CrossPlat Xamarin Verify 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
@@ -70,9 +70,9 @@ ms.locfileid: "75918751"
   
     - ソリューション エクスプローラーで Windows Phone プロジェクトを右クリックして **[スタートアップ プロジェクトに設定]** をクリックします。  
   
-    - 次に示すように、Visual Studio のデバッグ ドロップダウンで **エミュレーター 8.1** のターゲットまたは接続されたデバイスを選び、F5 キーを押してデバッガーを開始します。  
+    - 次に示すように、Visual Studio のデバッグドロップダウンで **エミュレーター 8.1** のターゲットまたは接続されているデバイスを選択し、F5 キーを押してデバッガーを開始します。  
   
-         ![デバッグターゲットとして Windows Phone エミュレーターを選択する](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
+         ![デバッグ ターゲットとして Windows Phone エミュレーターを選択します](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
     - エミュレーターを機能させる際に問題が発生した場合は、「 [Windows Phone 8 エミュレーターのトラブルシューティング](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx)」をご覧ください。  
   
@@ -86,13 +86,13 @@ ms.locfileid: "75918751"
   
     1. ソリューション エクスプローラーで iOS プロジェクトを右クリックして **[スタートアップ プロジェクトに設定]** を選択します。  
   
-    2. 次に示すように、Visual Studio のビルド ドロップダウン リストで **iPhoneSimulator** のターゲットを選ぶか、テザリングされたデバイスがある場合には、 **iPhone** のターゲットを選びます。 シミュレーターが表示されていない場合は、Mac で Xcode を起動し、 **[Xcode] > [ユーザー設定]** の順に選び、 **[ダウンロード]** をクリックします。 **[コンポーネント]** の下に、ダウンロード可能なシミュレーターのバージョンが表示されます。 デバッグに関する詳しい説明については、Xamarin の「 [デバッグ](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) 」ページ (xamarin.com) をご覧ください。  
+    2. 次に示すように、Visual Studio の [ビルド] ドロップダウンから **リストで iphonesimulator** ターゲットを選択するか、テザリングさデバイスがある場合は **iPhone** ターゲットを選択します。 シミュレーターが一覧に表示されない場合は、Mac で Xcode を起動し、[ **Xcode->の基本設定**] を選択して、[ **ダウンロード**] をクリックします。 **[コンポーネント]** の下に、ダウンロード可能なシミュレーターのバージョンが表示されます。 デバッグに関するその他の手順については、Xamarin の [デバッグ](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) ページ (xamarin.com) を参照してください。  
   
-         ![リストで iphonesimulator ビルドターゲットの選択](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 確認5")  
+         ![iPhoneSimulator ビルド ターゲットを選択します](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 確認5")  
   
-    3. 次に示すように、Visual Studio のデバッグ ドロップダウン リストで iPhone のターゲットを選び、F5 キーを押してデバッガーを開始します。 これによって、Mac 上のシミュレーターが起動し、Visual Studio でのデバッグ中にアプリを操作できるようになります。 iPhone または iPad の実機を Mac に接続した場合は、ここに表示され、代わりに選択できます。 いずれかのデバイスまたはシミュレーターが一覧に表示されない場合は、上記の手順 1 にあるリンク先のトピックを参照するか、 **[ツール]**  >**iOS** > **[Xamarin Mac エージェント]**  
+    3. 次に示すように、Visual Studio のデバッグ ドロップダウン リストで iPhone のターゲットを選び、F5 キーを押してデバッガーを開始します。 これによって、Mac 上のシミュレーターが起動し、Visual Studio でのデバッグ中にアプリを操作できるようになります。 iPhone または iPad の実機を Mac に接続した場合は、ここに表示され、代わりに選択できます。 デバイスまたはシミュレーターが一覧に表示されない場合は、上記の手順 1. でリンクされているトピックを確認するか、[**ツール**] [iOS] [  > **iOS**  > **Xamarin Mac エージェント**] に移動して、Mac への接続を確認します。  
   
-         ![IPhone デバッグターゲットの選択](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 検証6")  
+         ![iPhone のデバッグ ターゲットを選択します](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 検証6")  
   
     4. Mac に接続する際に問題が発生した場合は、「 [接続のトラブルシューティング](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) 」(xamarin.com) をご覧ください。  
   
@@ -104,8 +104,8 @@ ms.locfileid: "75918751"
   
         - iOS バンドル署名タブの iOS プロジェクト プロパティで、アクティブなデバッグ構成のカスタム権利フィールドが空であることを確認します。  注: 上記のエラー メッセージが表示された場合は、この設定の削除だけを試してみる必要があります。  
   
-## <a name="missing"></a> Xamarin プロジェクト テンプレートが見当たりませんか? 次の操作を試してみてください  
- Xamarin の Web サイトから直接 Xamarin をインストールして、Visual Studio 2013 と Visual Studio 2015 が同時にインストールされていると、テンプレートが見つからないことがあります。 直すのは簡単: Xamarin セットアップ プログラムで **[Xamarin for Visual Studio 2015]** 機能を有効にするだけです。  
+## <a name="are-the-xamarin-project-templates-missing-try-this"></a><a name="missing"></a> Xamarin プロジェクト テンプレートが見当たりませんか? これを試します  
+ Xamarin の Web サイトから直接 Xamarin をインストールして、Visual Studio 2013 と Visual Studio 2015 が同時にインストールされていると、テンプレートが見つからないことがあります。 これは簡単に修正できます。ただし、Xamarin セットアッププログラムで **xamarin For Visual Studio 2015** 機能を有効にするだけです。  
   
 1. コントロール パネルで **[プログラムと機能]** を開き、 **[Xamarin]** の項目を選択してから **[変更]** をクリックします。  
   
