@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfRows |Microsoft Docs
+title: 'IDiaSymbol:: get_numberOfRows |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e2654747ab074a4157e2334e35d0fa7fe6ae748f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183107"
 ---
-# <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
+# <a name="idiasymbolget_numberofrows"></a>IDiaSymbol::get_numberOfRows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-マトリックス内の行の数を取得します。  
+行列内の行の数を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -32,10 +32,10 @@ HRESULT get_numberOfRows(
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]ポインターを`DWORD`マトリックスの行の数を保持しています。  
+ 入出力 `DWORD` 行列内の行の数を保持するへのポインター。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE |マイクロソフトドキュメント
+title: BP_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737792"
 ---
 # <a name="bp_type"></a>BP_TYPE
@@ -51,23 +51,23 @@ public enum enum_BP_TYPE {
 ブレークポイントの種類を指定しません。
 
 `BPT_CODE`\
-コード ブレークポイントを指定します。
+コードのブレークポイントを指定します。
 
 `BPT_DATA`\
-データ ブレークポイントを指定します。
+データブレークポイントを指定します。
 
 `BPT_SPECIAL`\
-コードでもデータ型でもないブレークポイントを指定します。 この型は非推奨であるため、使用しないでください。
+コードでもデータ型でもないブレークポイントを指定します。 この型は非推奨とされているため、使用しないでください。
 
-## <a name="remarks"></a>Remarks
-パラメーターとして渡されます、[ブレークポイントの種類](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)と[ブレークポイントの種類の取得します](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)。
+## <a name="remarks"></a>解説
+[Getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)メソッドおよび[getbreakpointtype](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッドにパラメーターとして渡されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
