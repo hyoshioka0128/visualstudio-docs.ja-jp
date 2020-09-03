@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
-ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86418068"
 ---
 # <a name="walkthrough-highlight-text"></a>チュートリアル: テキストの強調表示
@@ -25,9 +25,9 @@ Managed Extensibility Framework (MEF) コンポーネントパーツを作成す
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `HighlightWordTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `HighlightWordTest` します。
 
-2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
 3. 既存のクラス ファイルを削除します。
 

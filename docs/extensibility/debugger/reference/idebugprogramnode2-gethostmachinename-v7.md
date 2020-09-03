@@ -1,5 +1,5 @@
 ---
-title: プログラムノード2::GetHostMachineName_V7 |マイクロソフトドキュメント
+title: 'IDebugProgramNode2:: GetHostMachineName_V7 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722085"
 ---
 # <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> 廃止。 使用しないでください。
+> れ. 使用しないでください。
 
 ## <a name="syntax"></a>構文
 
@@ -44,16 +44,16 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>パラメーター
 
 `pbstrHostMachineName`\
-[アウト]プログラムが実行されているマシンの名前を返します。
+入出力プログラムが実行されているコンピューターの名前を返します。
 
 ## <a name="return-value"></a>戻り値
 
-実装は常に`E_NOTIMPL`を返す必要があります。
+実装は常にを返す必要があり `E_NOTIMPL` ます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
 > [!WARNING]
-> Visual Studio 2005 以降では、このメソッドは使用されなくなり、`E_NOTIMPL`常に を返す必要があります。
+> Visual Studio 2005 の時点では、このメソッドは使用されなくなり、常にを返す必要があり `E_NOTIMPL` ます。
 
 ## <a name="see-also"></a>関連項目
 

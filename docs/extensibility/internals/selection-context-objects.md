@@ -39,7 +39,7 @@ ms.locfileid: "80705509"
 
 3. VSPackage は、階層を更新したり、ツールを再アクティブ化したり、その他の同様のタスクを実行したりすることによって、受信するイベントに対して動作します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

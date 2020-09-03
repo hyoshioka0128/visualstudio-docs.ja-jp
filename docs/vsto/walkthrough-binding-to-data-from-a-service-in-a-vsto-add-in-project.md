@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72381312"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでサービスからのデータにバインドする
@@ -30,13 +30,13 @@ ms.locfileid: "72381312"
 
 - 実行時にドキュメントに <xref:Microsoft.Office.Tools.Word.RichTextContentControl> コントロールを追加する
 
-- @No__t 0 コントロールを web サービスのデータにバインドします。
+- コントロールを <xref:Microsoft.Office.Tools.Word.RichTextContentControl> web サービスのデータにバインドする。
 
 - <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> コントロールの <xref:Microsoft.Office.Tools.Word.RichTextContentControl> イベントに応答する
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "72381312"
 
 1. Visual Basic または C# のいずれかを使用して、「 **MTPS コンテンツ サービス**」という名前の Word VSTO アドイン プロジェクトを作成します。
 
-     詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      `ThisAddIn.vb` または `ThisAddIn.cs` ファイルが Visual Studio で開かれ、プロジェクトが **ソリューション エクスプローラー**に追加されます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "72381312"
 
    `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
-4. **[検索]** をクリックします。
+4. **[Go]** をクリックします。
 
 5. **[名前空間]** フィールドに「 **ContentService**」と入力し、 **[OK]** をクリックします。
 
@@ -114,5 +114,5 @@ ms.locfileid: "72381312"
 
      MTPS コンテンツ サービスから情報がダウンロードされて、コンテンツ コントロール内部に表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)

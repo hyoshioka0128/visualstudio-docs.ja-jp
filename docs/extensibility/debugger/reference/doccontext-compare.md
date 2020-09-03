@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE |マイクロソフトドキュメント
+title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737231"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
-2 つのドキュメント コンテキストを比較するための基準を指定します。
+2つのドキュメントコンテキストを比較するための条件を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,28 +48,28 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>フィールド
 `DOCCONTEXT_EQUAL`\
-リスト内の、ターゲットドキュメントコンテキストと等しい最初のドキュメントコンテキストを検索します。
+リスト内でターゲットドキュメントコンテキストと同じ最初のドキュメントコンテキストを検索します。
 
 `DOCCONTEXT_LESS_THAN`\
-リスト内の、対象のドキュメント コンテキストよりも小さい最初のドキュメント コンテキストを検索します。
+リスト内でターゲットドキュメントコンテキストより小さい最初のドキュメントコンテキストを検索します。
 
 `DOCCONTEXT_GREATER_THAN`\
-ターゲットドキュメントのコンテキストよりも大きいリスト内の最初のドキュメントコンテキストを検索します。
+リスト内でターゲットドキュメントコンテキストよりも大きい最初のドキュメントコンテキストを検索します。
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-ターゲットドキュメントコンテキストと同じドキュメント内にあるリスト内の最初のドキュメントコンテキストを検索します。
+リスト内で、ターゲットドキュメントコンテキストと同じドキュメント内にある最初のドキュメントコンテキストを検索します。
 
-## <a name="remarks"></a>Remarks
-[引数として引数](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)として渡されます、 Compare メソッド。
+## <a name="remarks"></a>解説
+[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)メソッドに引数として渡されます。
 
-これらの値は、リスト内の最初のドキュメント コンテキストを検索するための比較基準を指定するために使用されます。 ドキュメントコンテキストには、メソッドを通じてそれ自体を比較するドキュメントコンテキストのリスト`IDebugDocumentContext2::Compare`が与えられます。 次に、比較演算子が返されるリスト内の最初の`true`ドキュメント コンテキスト。
+これらの値は、リスト内の最初のドキュメントコンテキストを検索するための比較条件を指定するために使用されます。 ドキュメントコンテキストには、メソッドを通じて比較するドキュメントコンテキストのリストが与えられ `IDebugDocumentContext2::Compare` ます。 次に、比較演算子があるリスト内の最初のドキュメントコンテキスト `true` が返されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

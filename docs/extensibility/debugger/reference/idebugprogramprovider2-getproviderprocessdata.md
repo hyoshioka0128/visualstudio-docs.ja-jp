@@ -1,5 +1,5 @@
 ---
-title: プログラムプロバイダ2:::ゲットプロバイダプロセスデータ |マイクロソフトドキュメント
+title: 'IDebugProgramProvider2:: GetProviderProcessData |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4e958900307f5f7915f58679709c88f80c2abfc9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721857"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
-指定したプロセスから実行中のプログラムの一覧を取得します。
+指定されたプロセスから実行中のプログラムの一覧を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,32 +49,32 @@ int GetProviderProcessData(
 
 ## <a name="parameters"></a>パラメーター
 `Flags`\
-[in][PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体のフラグの組み合わせ。 この呼び出しでは、次のフラグが一般的です。
+から [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 列挙型のフラグの組み合わせ。 この呼び出しでは、次のフラグが一般的に使用されます。
 
 |フラグ|説明|
 |----------|-----------------|
-|`PFLAG_REMOTE_PORT`|呼び出し元はリモート コンピューターで実行されています。|
-|`PFLAG_DEBUGGEE`|現在、呼び出し元はデバッグ中です (マーシャリングに関する追加情報は各ノードに返されます)。|
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元は、デバッガーにアタッチされましたが、起動されませんでした。|
-|`PFLAG_GET_PROGRAM_NODES`|呼び出し元は、返されるプログラム・ノードのリストを要求しています。|
+|`PFLAG_REMOTE_PORT`|リモートコンピューターで呼び出し元が実行されています。|
+|`PFLAG_DEBUGGEE`|呼び出し元は現在デバッグ中です (各ノードに対してマーシャリングに関する追加情報が返されます)。|
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元はにアタッチされましたが、デバッガーによって起動されませんでした。|
+|`PFLAG_GET_PROGRAM_NODES`|呼び出し元が、返されるプログラムノードの一覧を要求しています。|
 
 `pPort`\
-[in]呼び出し側プロセスが実行されているポート。
+から呼び出しプロセスが実行されているポート。
 
 `processId`\
-[in]問題のプログラムを含むプロセスの ID を保持する[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造体。
+から対象のプログラムを含むプロセスの ID を保持する [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 構造体。
 
 `EngineFilter`\
-[in]このプロセスをデバッグするために割り当てられたデバッグ エンジン用の GUID の配列 (これらは、提供されたエンジンがサポートする内容に基づいて実際に返されるプログラムをフィルター処理するために使用されます。
+からこのプロセスをデバッグするために割り当てられたデバッグエンジンの Guid の配列 (これらは、指定されたエンジンがサポートしているものに基づいて実際に返されるプログラムをフィルター処理するために使用されます。エンジンが指定されていない場合は、すべてのプログラムが返されます)。
 
 `pProcess`\
-[アウト]要求された情報を入力する[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造体。
+入出力要求された情報を格納する [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 構造体。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、通常、プロセスによって呼び出され、そのプロセスで実行されているプログラムの一覧を取得します。 返される情報は[、IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトのリストです。
+## <a name="remarks"></a>解説
+ 通常、このメソッドはプロセスによって呼び出され、そのプロセスで実行されているプログラムの一覧を取得します。 返される情報は、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) オブジェクトの一覧です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

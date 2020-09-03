@@ -24,5 +24,5 @@ ms.locfileid: "80705406"
 ## <a name="the-source-control-service"></a>ソース管理サービス
  Visual Studio には、IDE レベルのサービスとパッケージレベルのサービスの2つの層が用意されています。 IDE レベルのサービスは、Visual Studio IDE によってネイティブに提供されます。 ソース管理パッケージは、これらのサービスの一部を消費します。 VSPackage としてのソース管理パッケージは、独自のソース管理サービスを提供することによって、ソース管理機能を共有します。 ソース管理パッケージは、Visual Studio IDE で使用できるコントラクトの形式で、このによって実装されたソース管理関連のインターフェイスのセットをカプセル化します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [デザイン要素](../../extensibility/internals/source-control-vspackage-design-elements.md)

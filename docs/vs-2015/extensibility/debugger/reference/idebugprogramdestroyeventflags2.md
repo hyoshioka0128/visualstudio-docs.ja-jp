@@ -11,39 +11,39 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 86f7e211c742e4d95f3459d058139854874e7d85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182217"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-既定の動作をオーバーライドするデバッグ エンジンを有効、 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] UI のデバッグ セッションを終了するとします。  
+デバッグセッションを終了するときに、デバッグエンジンが UI の既定の動作をオーバーライドできるようにし [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProgramDestroyEventFlags2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- このインターフェイスは、デバッグ エンジンによって実装されます。 ホストを作成し、プロセスの有効期間にわたって複数のプログラムを破棄すると便利です。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ このインターフェイスは、デバッグエンジンによって実装されます。 これは、プロセスの有効期間中に複数のプログラムを作成して破棄する可能性のあるホストに便利です。  
   
 ## <a name="methods"></a>メソッド  
- 次の表は、メソッドの`IDebugProgramDestroyEventFlags2`します。  
+ 次の表に、のメソッドを示し `IDebugProgramDestroyEventFlags2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|プログラムの取得フラグを破棄します。|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|プログラムの破棄フラグを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- 既定の動作、 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] UI は、すべてのプログラムには、プログラムが送信後に、デザイン モードに戻るにはイベントを破棄します。 このインターフェイスは、その動作を変更するデバッグ エンジンを使用します。  
+## <a name="remarks"></a>注釈  
+ UI の既定の動作で [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] は、すべてのプログラムがプログラム破棄イベントを送信した後にデザインモードに戻ります。 このインターフェイスを使用すると、デバッグエンジンでその動作を変更できます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
