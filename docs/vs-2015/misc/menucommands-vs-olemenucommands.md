@@ -1,5 +1,5 @@
 ---
-title: MenuCommand とOleMenuCommands |Microsoft Docs
+title: MenuCommands と OleMenuCommands |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,19 +12,19 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624452"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>MenuCommand とOleMenuCommand
-メニュー コマンドを作成するにはいずれかから派生することによって<xref:System.ComponentModel.Design.MenuCommand>またはから<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>オブジェクト、および適切なイベント ハンドラーを実装します。 ほとんどのケースでは、VSPackage プロジェクト テンプレートの場合と同様に <xref:System.ComponentModel.Design.MenuCommand>を使用できますが、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>を使用することが必要になることもあります。  
+# <a name="menucommands-vs-olemenucommands"></a>MenuCommands と OleMenuCommands
+メニューコマンドは、から、 <xref:System.ComponentModel.Design.MenuCommand> またはオブジェクトから派生させ、適切なイベントハンドラーを実装することによって作成でき <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ます。 ほとんどのケースでは、VSPackage プロジェクト テンプレートの場合と同様に <xref:System.ComponentModel.Design.MenuCommand>を使用できますが、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>を使用することが必要になることもあります。  
   
- VSPackage によって IDE で使用可能になるコマンドをユーザーが使用するには、そのコマンドを表示し、有効にする必要があります。 Visual Studio パッケージ プロジェクト テンプレートを使用して .vsct ファイルにコマンドを作成すると、そのコマンドは既定で表示され、有効になります。 一部のコマンド フラグ (`DynamicItemStart` など) を設定すると、この既定の動作を変更できます。 コマンドの可視性や有効な状態などのプロパティは、コマンドに関連付けられている <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトにアクセスすることによって、コードで実行時に変更することもできます。  
+ VSPackage によって IDE で使用可能になるコマンドをユーザーが使用するには、そのコマンドを表示し、有効にする必要があります。 Visual Studio パッケージ プロジェクト テンプレートを使用して .vsct ファイルにコマンドを作成すると、そのコマンドは既定で表示され、有効になります。 一部のコマンド フラグ ( `DynamicItemStart`など) を設定すると、この既定の動作を変更できます。 コマンドの可視性や有効な状態などのプロパティは、コマンドに関連付けられている <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトにアクセスすることによって、コードで実行時に変更することもできます。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+## <a name="prerequisites"></a>前提条件  
+ このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Visual Studio パッケージ テンプレートの場所  
  Visual Studio パッケージ テンプレートは、 **Visual Basic / 機能拡張** 、 **C# / 機能拡張**、または **その他のプロジェクトの種類 / 機能拡張**の **[新しいプロジェクト]** ダイアログ ボックスにあります。  
@@ -32,7 +32,7 @@ ms.locfileid: "67624452"
 ## <a name="creating-a-command"></a>コマンドの作成  
  すべてのコマンド、コマンド グループ、メニュー、ツール バー、およびツール ウィンドウは、.vsct ファイルで定義します。 詳細については、「 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。  
   
- パッケージ テンプレートを使用して VSPackage を作成する場合は、 **[メニュー コマンド]** を選択して、.vsct ファイルを作成し、既定のメニュー コマンドを定義します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
+ パッケージ テンプレートを使用して VSPackage を作成する場合は、 **[メニュー コマンド]** を選択して、.vsct ファイルを作成し、既定のメニュー コマンドを定義します。 詳細については、「 [メニューコマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。  
   
 #### <a name="to-add-a-command-to-the-ide"></a>IDE にコマンドを追加するには  
   
@@ -49,7 +49,7 @@ ms.locfileid: "67624452"
    </GuidSymbol>
    ```
       
-    `name` 要素と `GuidSymbol` 要素の `IDSymbol` 属性は、新規のメニュー、グループ、またはコマンドごとに GUID:ID のペアを提供します。 `guid` は、VSPackage に対して定義されているコマンド セットを表します。 複数のコマンド セットを定義できます。 GUID:ID の各ペアは、一意である必要があります。  
+    `name` 要素と `GuidSymbol` 要素の `IDSymbol` 属性は、新規のメニュー、グループ、またはコマンドごとに GUID:ID のペアを提供します。 `guid` は、VSPackage に対して定義されているコマンド セットを表します。 複数のコマンド セットを定義できます。 GUID:ID ペアは、それぞれ一意である必要があります。  
   
 4. [[ボタン]](../extensibility/buttons-element.md) セクションで、次の例に示すように、コマンドを定義する [Button](../extensibility/button-element.md) 要素を作成します。  
   
@@ -115,9 +115,9 @@ ms.locfileid: "67624452"
    </CommandPlacements>
    ```
       
-      GUID:ID が同じで親が異なるコマンド配置を複数作成すると、メニューが複数の場所に表示されます。 詳細については、「 [CommandPlacements](../extensibility/commandplacements-element.md) 要素」を参照してください。  
+      GUID:ID が同じで親が異なる複数のコマンド配置を作成すると、メニューが複数の場所に表示されます。 詳細については、「 [CommandPlacements](../extensibility/commandplacements-element.md) 要素」を参照してください。  
   
-    コマンド グループおよびペアレンティングの詳細については、次を参照してください。[ボタンの再利用可能なグループの作成](../extensibility/creating-reusable-groups-of-buttons.md)です。  
+    コマンドグループと親の詳細については、「 [再利用可能なボタンのグループの作成](../extensibility/creating-reusable-groups-of-buttons.md)」を参照してください。  
   
    この時点で、コマンドは IDE に表示されますが、機能はありません。 パッケージ テンプレートによってコマンドを作成した場合、既定ではメッセージを表示するクリック ハンドラーがコマンドに設定されます。  
   
@@ -170,7 +170,7 @@ ms.locfileid: "67624452"
   
 #### <a name="to-implement-querystatus"></a>QueryStatus を実装するには  
   
-1. コマンドが表示される前に、QueryStatus イベントが発生します。 これにより、コマンドがユーザーに到達する前に、そのコマンドのプロパティをイベント ハンドラーに設定できます。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトとして追加したコマンドのみが、このメソッドにアクセスできます。  
+1. コマンドが表示される前に、QueryStatus イベントが発生します。 これにより、イベント ハンドラーがユーザーに到達する前に、そのコマンドのプロパティをイベント ハンドラーに設定できます。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトとして追加したコマンドのみが、このメソッドにアクセスできます。  
   
     次の例に示すように、コマンドを処理するために作成する `EventHandler` オブジェクト内の <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> イベントに <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトを追加します (`menuItem` は <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> インスタンスです)。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "67624452"
   
     `EventHandler` オブジェクトには、メニュー コマンドの状態を照会するときに呼び出すメソッドの名前を付けます。  
   
-2. コマンドの状態照会ハンドラー メソッドを実装します。 `object` `sender` パラメーターは、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトにキャストできます。これは、テキストなどメニュー コマンドのさまざまな属性を設定するために使用します。 次の表に、 <xref:System.ComponentModel.Design.MenuCommand> フラグに対応する <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> クラス (MPF クラス <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> の派生元) のプロパティを示します。  
+2. コマンドの状態照会ハンドラー メソッドを実装します。 `object` `sender` パラメーターをオブジェクトにキャストすることができます <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 。これは、テキストなど、メニューコマンドのさまざまな属性を設定するために使用されます。 次の表に、 <xref:System.ComponentModel.Design.MenuCommand> フラグに対応する <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> クラス (MPF クラス <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> の派生元) のプロパティを示します。  
   
    |MenuCommand プロパティ|OLECMDF フラグ|  
    |--------------------------|------------------|  
@@ -192,12 +192,12 @@ ms.locfileid: "67624452"
     [!code-csharp[MenuText#11](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#11)]
     [!code-vb[MenuText#11](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#11)]  
   
-   MPF は、グループがサポートされていないか不明な場合、自動的に処理します。 コマンドは、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> メソッドを使用して <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> に追加しない限り、サポートされません。  
+   MPF は、サポートされていないか不明なグループの大文字と小文字を自動的に処理します。 コマンドは、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> メソッドを使用して <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> に追加しない限り、サポートされません。  
   
 ### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>IOleCommandTarget インターフェイスを使用したコマンドの処理  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> インターフェイスを直接使用するコードの場合、VSPackage は <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> インターフェイスの <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドと <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> メソッドの両方を実装する必要があります。 VSPackage がプロジェクト階層を実装する場合は、代わりに <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> インターフェイスの <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> メソッドと <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> メソッドを実装する必要があります。  
   
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドと <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドの両方が、入力として 1 つのコマンド セット `GUID` とコマンド ID の配列とを受け取るように設計されています。 1 回の呼び出しで複数の ID というこの概念を VSPackage で完全にサポートすることをお勧めします。 ただし、VSPackage を他の VSPackage から呼び出さない限り、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドと <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドは適切に定義された順序で実行されるため、コマンド配列には 1 つのコマンド ID のみが含まれていると見なすことができます。 ルーティングの詳細については、次を参照してください。 [Vspackage でのコマンド ルーティング](../extensibility/internals/command-routing-in-vspackages.md)します。  
+ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドと <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドの両方が、入力として 1 つのコマンド セット `GUID` とコマンド ID の配列とを受け取るように設計されています。 1 回の呼び出しで複数の ID というこの概念を VSPackage で完全にサポートすることをお勧めします。 ただし、VSPackage を他の VSPackage から呼び出さない限り、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドと <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> メソッドは適切に定義された順序で実行されるため、コマンド配列には 1 つのコマンド ID のみが含まれていると見なすことができます。 ルーティングの詳細については、「 [vspackage でのコマンドルーティング](../extensibility/internals/command-routing-in-vspackages.md)」を参照してください。  
   
  コマンド処理のために直接 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> インターフェイスを使用するコードの場合、コマンドを処理するには、次のように VSPackage に <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドを実装する必要があります。  
   
@@ -223,7 +223,7 @@ ms.locfileid: "67624452"
   
       `prgCmds[0].cmdf |= OLECMDF_LATCHED;`  
   
-      型 `MenuControllerLatched`のメニューにホストされているコマンドを処理する場合、 `OLECMDF_LATCHED` フラグでマークされている最初のコマンドが、起動時にメニューに表示される既定のコマンドです。 詳細については`MenuController`種類のメニューを参照してください[メニュー要素](../extensibility/menu-element.md)します。  
+      型 `MenuControllerLatched`のメニューにホストされているコマンドを処理する場合、 `OLECMDF_LATCHED` フラグでマークされている最初のコマンドが、起動時にメニューに表示される既定のコマンドです。 メニューの種類の詳細について `MenuController` は、「 [menu 要素](../extensibility/menu-element.md)」を参照してください。  
   
    - コマンドが現在有効になっている場合:  
   
@@ -251,6 +251,6 @@ ms.locfileid: "67624452"
   
 - `GUID` とコマンド ID が .vsct ファイル内のコマンドで使用される GUID:ID のペアと一致する場合は、コマンドに関連付けられているコードを実行し、 <xref:Microsoft.VisualStudio.VSConstants.S_OK>を返します。  
   
-## <a name="see-also"></a>関連項目  
- [VSCT XML スキーマ リファレンス](../extensibility/vsct-xml-schema-reference.md)   
+## <a name="see-also"></a>参照  
+ [VSCT XML スキーマリファレンス](../extensibility/vsct-xml-schema-reference.md)   
  [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)

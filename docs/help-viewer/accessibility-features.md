@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825130"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Visual Studio ヘルプ ビューアーのユーザー補助機能
-Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 このトピックでは、広範な範囲の能力を持つユーザーが Microsoft ヘルプ ビューアーをさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明します。
+Microsoft は、あらゆるユーザーの皆様に使いやすい製品とサービスをお届けできるように努めています。 このトピックでは、広範な範囲の能力を持つユーザーが Microsoft ヘルプ ビューアーをさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明します。
 
 ## <a name="keyboard-access"></a>キーボード アクセス
 キーボードを使用してヘルプ ビューアーのすべての機能にアクセスできます。 詳細については、「[ショートカット キー (ヘルプ ビューアー)](../help-viewer/shortcut-keys.md)」を参照してください。
 
-## <a name="font-size"></a>Font Size
+## <a name="font-size"></a>フォント サイズ
 トピックのテキストがドキュメント ウィンドウに表示されるときのフォント サイズを変更できます。 詳細については、「[ヘルプ ビューアーのカスタマイズ](../help-viewer/customize.md)」を参照してください。
 
 ## <a name="window-size"></a>ウィンドウ サイズ
@@ -35,5 +35,5 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Help Viewer](../help-viewer/overview.md)
+- [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)
 - [ショートカット キー (ヘルプ ビューアー)](../help-viewer/shortcut-keys.md)
