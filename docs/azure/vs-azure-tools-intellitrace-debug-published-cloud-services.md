@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
 ms.openlocfilehash: 1e4de25f3d1b00459128b89bc5559f55cec8f077
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280597"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ
@@ -21,7 +21,7 @@ IntelliTrace を使用すると、ロール インスタンスを Azure で実�
 
 Visual Studio Enterprise がインストールされており、Azure アプリケーションが .NET Framework 4 以降のバージョンを対象としている場合に IntelliTrace を使用することができます。 IntelliTrace は、Azure ロールの情報を収集します。 これらのロールの仮想マシンは、常に 64 ビット オペレーティング システムを実行します。
 
-別の方法として、[リモートデバッグ](vs-azure-tools-debugging-cloud-services-overview.md)を使用して、Azure で実行されているクラウドサービスに直接接続することもできます。
+別の方法として、 [リモートデバッグ](vs-azure-tools-debugging-cloud-services-overview.md) を使用して、Azure で実行されているクラウドサービスに直接接続することもできます。
 
 > [!IMPORTANT]
 > IntelliTrace は、デバッグ シナリオのみを対象としており、運用環境のデプロイには使用できません。
@@ -74,6 +74,6 @@ IntelliTrace ログのダウンロード中も、Visual Studio での作業を�
 >
 >
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [Azure クラウド サービスのデバッグのオプション](vs-azure-tools-debugging-cloud-services-overview.md)
 - [Visual Studio を使用した Azure クラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)

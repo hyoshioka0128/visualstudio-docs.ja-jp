@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d5f86eb40e1401f98a4c66d0b971fb006762cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659695"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>ストア アプリ用の Visual C++ DLL の単体テスト
@@ -25,38 +25,38 @@ ms.locfileid: "72659695"
 
  このトピックでは、テストする単体テストと DLL に 1 つの Visual Studio ソリューションと個別のプロジェクトも作成します。 また、DLL プロジェクトに単体テストを直接含めることも、単体テストと DLL ごとに個別のソリューションを作成することもできます。 使用できる構造体のヒントについては、「[テスト エクスプローラーを使用した既存の C++ アプリケーションの単体テスト](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)」をご覧ください。
 
-## <a name="BKMK_In_this_topic"></a> このトピックの内容
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> このトピックの内容
  このトピックでは、次のタスクを実行します。
 
- [ソリューションと単体テスト プロジェクトを作成する](#BKMK_Create_the_solution_and_the_unit_test_project)
+ [ソリューションと単体テストプロジェクトを作成する](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [テストがテスト エクスプ ローラーで実行されることを確認する](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [テストエクスプローラーでテストが実行されていることを確認する](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
  [DLL プロジェクトをソリューションに追加する](#BKMK_Add_the_DLL_project_to_the_solution)
 
- [DLL プロジェクトにテスト プロジェクトを結合する](#BKMK_Couple_the_test_project_to_the_dll_project)
+ [Dll プロジェクトにテストプロジェクトを結合する](#BKMK_Couple_the_test_project_to_the_dll_project)
 
  [テストを繰り返し増やして成功させる](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
- [失敗したテストをデバッグする](#BKMK_Debug_a_failing_test)
+ [失敗したテストのデバッグ](#BKMK_Debug_a_failing_test)
 
  [テストを変更せずにコードをリファクタリングする](#BKMK_Refactor_the_code_without_changing_tests)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
 
-1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[新しいプロジェクト]** をクリックします。
+1. **[ファイル]** メニューの **[新規作成]** をポイントし、**[新しいプロジェクト]** をクリックします。
 
-2. [新しいプロジェクト] ダイアログで **[インストール済み]** 、 **[Visual C++]** の順に展開し、 **[Windows ストア]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト ライブラリ (Windows ストア アプリ)]** をクリックします。
+2. [新しいプロジェクト] ダイアログで **[インストール済み]**、**[Visual C++]** の順に展開し、**[Windows ストア]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト ライブラリ (Windows ストア アプリ)]** をクリックします。
 
-     ![C&#43; &#43;単体テストライブラリを作成する](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
+     ![C&#43;&#43; 単体テストライブラリを作成する](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
 
 3. プロジェクトに `RooterLibTests` という名前を付けます。場所を指定します。ソリューションに `RooterLib` という名前を付けます。 **[ソリューションのディレクトリを作成]** チェックボックスがオンになっていることを確認します。
 
-     ![ソリューションとプロジェクトの名前と場所を指定します](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![ソリューション、プロジェクト名、および場所の指定](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
 
 4. 新しいプロジェクトで、**unittest1.cpp** を開きます。
 
-     ![unittest1](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
 
      次の点に注意してください。
 
@@ -68,7 +68,7 @@ ms.locfileid: "72659695"
 
          テストが実行されると、各テスト クラスのインスタンスが作成されます。 テスト メソッドが呼び出される順序は決まっていません。 各モジュール、クラス、またはメソッドの前後に呼び出される特殊なメソッドを定義することができます。 詳細については、MSDN ライブラリの「[Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)」をご覧ください。
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> テストがテスト エクスプローラーで実行されることを確認する
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> テストがテスト エクスプローラーで実行されることを確認する
 
 1. 幾らかのテスト コードを挿入します。
 
@@ -87,11 +87,11 @@ ms.locfileid: "72659695"
 
      ![テスト エクスプローラー](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> DLL プロジェクトをソリューションに追加する
+## <a name="add-the-dll-project-to-the-solution"></a><a name="BKMK_Add_the_DLL_project_to_the_solution"></a> DLL プロジェクトをソリューションに追加する
 
-1. ソリューション エクスプローラーでソリューション名を選択します。 ショートカット メニューの **[追加]** をポイントし、 **[新しいプロジェクトの追加]** を選択します。
+1. ソリューション エクスプローラーでソリューション名を選択します。 ショートカット メニューの **[追加]** をポイントし、**[新しいプロジェクトの追加]** を選択します。
 
-     ![RooterLib プロジェクトを作成する](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![RooterLib プロジェクトの作成](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
 
 2. **[新しいプロジェクトの追加]** ダイアログ ボックスの **[DLL (Windows ストア アプリ)]** を選択します。
 
@@ -123,13 +123,13 @@ ms.locfileid: "72659695"
 
 4. コマンド ラインに ROOTERLIB_EXPORTS のシンボルを追加します。
 
-    1. ソリューション エクスプローラーで **RooterLib** プロジェクトを選択し、ショートカット メニューの **[プロパティ]** を選択します。
+    1. ソリューションエクスプローラーで、 **RooterLib** プロジェクトを選択し、ショートカットメニューの [ **プロパティ** ] をクリックします。
 
-         ![プリプロセッサシンボル定義の追加](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![プロプロセッサ シンボル定義の追加](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
 
     2. RooterLib の [プロパティ ページ] ダイアログ ボックスで **[構成プロパティ]** 、 **[C++]** の順に展開し、 **[プリプロセッサ]** を選択します。
 
-    3. **[プリプロセッサの定義]** ボックスの一覧の **[\<編集...>]** を選択し、[プリプロセッサの定義] ダイアログ ボックスに `ROOTERLIB_EXPORTS` を追加します。
+    3. **[プリプロセッサの定義]\<Edit...> ボックスの一覧の** [ **]** を選択し、 [プリプロセッサの定義] ダイアログ ボックスに `ROOTERLIB_EXPORTS` を追加します。
 
 5. 宣言された関数の最小限の実装を追加します。 **RooterLib.cpp** を開き、次のコードを追加します。
 
@@ -147,17 +147,17 @@ ms.locfileid: "72659695"
 
     ```
 
-## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> DLL プロジェクトにテスト プロジェクトを結合する
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Dll プロジェクトにテストプロジェクトを結合する
 
 1. RooterLibTests プロジェクトに RooterLib を追加します。
 
-   1. ソリューション エクスプローラーで **RooterLibTests** プロジェクトを選択し、ショートカット メニューの **[参照...]** を選択します。
+   1. ソリューションエクスプローラーで、 **RooterLibTests** プロジェクトを選択し、ショートカットメニューの [ **参照** ] をクリックします。
 
-   2. RooterLib の [プロジェクトのプロパティ] ダイアログ ボックスで **[共通プロパティ]** を展開し、 **[Framework と参照]** を選択します。
+   2. RooterLib の [プロジェクトのプロパティ] ダイアログ ボックスで **[共通プロパティ]** を展開し、**[Framework と参照]** を選択します。
 
-   3. **[新しい参照の追加...]** をクリックします。
+   3. [**新しい参照の追加**] を選択します。
 
-   4. **[参照の追加]** ダイアログ ボックスで **[ソリューション]** を展開し、 **[プロジェクト]** を選択します。 次に **[RouterLib]** 項目を選択します。
+   4. **[参照の追加]** ダイアログ ボックスで **[ソリューション]** を展開し、**[プロジェクト]** を選択します。 次に **[RouterLib]** 項目を選択します。
 
 2. **unittest1.cpp** に RooterLib のヘッダー ファイルをインクルードします。
 
@@ -194,13 +194,13 @@ ms.locfileid: "72659695"
 
     新しいテストがテスト エクスプローラーの **[テストを実行しない]** ノードに表示されます。
 
-5. テスト エクスプローラーで **[すべて実行]** をクリックします。
+5. テストエクスプローラーで [ **すべて実行**] を選択します。
 
-    ![基本テストに成功しました](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![基本テスト成功](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    テストとコード プロジェクトをセット アップして、コード プロジェクトで関数を実行するテストを実行できることを確認しました。 ここで、実際のテストおよびコードの記述を開始できます。
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> テストを繰り返し増やして成功させる
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> テストを繰り返し増やして成功させる
 
 1. 新しいテストを追加します。
 
@@ -224,11 +224,11 @@ ms.locfileid: "72659695"
     >
     >  ユーザーが要件を変更したら、正しくなくなったテストを無効にします。 新しいテストを作成し、一度に 1 つずつ、同じ増分方式で処理するようにします。
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
 3. テストが失敗します。
 
-     ![RangeTest が失敗する](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 失敗](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > 各テストが記述した後すぐに失敗することを確認します。 これは、絶対に失敗しないテストを記述するという簡単なミスを避けることに役立ちます。
@@ -254,14 +254,14 @@ ms.locfileid: "72659695"
 
     ```
 
-5. ソリューションをビルドし、テスト エクスプ ローラーで **[すべて実行]** を選択します。
+5. ソリューションをビルドし、テストエクスプローラーで [ **すべて実行**] を選択します。
 
      両方のテストが合格します。
 
 > [!TIP]
 > 一度に 1 つのテストを追加してコードを開発します。 各反復処理の後にすべてのテストが合格することを確認します。
 
-## <a name="BKMK_Debug_a_failing_test"></a> 失敗したテストをデバッグする
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> 失敗したテストをデバッグする
 
 1. **unittest1.cpp** に別のテストを追加します。
 
@@ -295,11 +295,11 @@ ms.locfileid: "72659695"
 
    ```
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
     テストが失敗します。 テスト エクスプローラーでテスト名を選択します。 失敗したアサーションが強調表示されます。 エラー メッセージは、テスト エクスプ ローラーの [詳細] ウィンドウに表示されます。
 
-    ![Negativerangetest 失敗](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![NegativeRangeTest 失敗](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. テストが失敗した理由を表示するには、関数をステップ実行します。
 
@@ -325,13 +325,13 @@ ms.locfileid: "72659695"
 
        ```
 
-   1. テスト エクスプローラーで **[すべて実行]** をクリックして、修正されたメソッドをテストし、回帰が生じていないことを確認します。
+   1. テストエクスプローラーで [ **すべて実行** ] をクリックして、修正されたメソッドをテストし、回帰が導入されていないことを確認します。
 
    今回は、すべてのテストに合格します。
 
-   ![すべてのテストに合格](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+   ![すべてのテストの成功](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_without_changing_tests"></a> テストを変更せずにコードをリファクタリングする
+## <a name="refactor-the-code-without-changing-tests"></a><a name="BKMK_Refactor_the_code_without_changing_tests"></a> テストを変更せずにコードをリファクタリングする
 
 1. `SquareRoot` 関数の計算全体を簡略化します。
 

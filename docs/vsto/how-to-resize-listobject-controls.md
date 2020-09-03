@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545835"
 ---
 # <a name="how-to-resize-listobject-controls"></a>方法: ListObject コントロールのサイズを変更する
@@ -37,14 +37,14 @@ ms.locfileid: "85545835"
 
   コントロールの詳細について <xref:Microsoft.Office.Tools.Excel.ListObject> は、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
 
-## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a>デザイン時に ListObject コントロールのサイズを変更する
+## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a> デザイン時に ListObject コントロールのサイズを変更する
  リストのサイズを変更するには、サイズ変更ハンドルのいずれかをクリックしてドラッグでき、また **[リストのサイズ変更]** ダイアログ ボックスでそのサイズを再定義することもできます。
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>[リストのサイズ変更] ダイアログ ボックスを使用してリストのサイズを変更するには
 
-1. テーブル内の任意の場所をクリックし <xref:Microsoft.Office.Tools.Excel.ListObject> ます。 リボンの [**テーブルツール**の  >  **デザイン**] タブが表示されます。
+1. テーブル内の任意の場所をクリックし  <xref:Microsoft.Office.Tools.Excel.ListObject> ます。 リボンの [**テーブルツール**の  >  **デザイン**] タブが表示されます。
 
-2. [プロパティ] セクションで、[**テーブルのサイズ変更**] をクリックします。
+2. [プロパティ] セクションで、[ **テーブルのサイズ変更**] をクリックします。
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "85545835"
 
 4. **[OK]** をクリックします。
 
-## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>実行時にドキュメントレベルのプロジェクトの ListObject コントロールのサイズを変更する
+## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 実行時にドキュメントレベルのプロジェクトの ListObject コントロールのサイズを変更する
  <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールのサイズは、実行時に <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> メソッドを使用して変更できます。 このメソッドは、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールをワークシート上の新しい位置に移動するためには使用できません。 ヘッダーは同じ行のままである必要があり、サイズを変更した <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは元のリスト オブジェクトに重なる必要があります。 サイズ変更した <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールには、ヘッダー行および少なくとも 1 つのデータ行が含まれている必要があります。
 
 ### <a name="to-resize-a-list-object-programmatically"></a>リスト オブジェクトのサイズをプログラムで変更するには
@@ -67,8 +67,8 @@ ms.locfileid: "85545835"
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>実行時に VSTO アドインプロジェクトの ListObject のサイズを変更する
- 実行時に、任意の開いているワークシート上の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールのサイズを変更できます。 VSTO アドインを使用してワークシートにコントロールを追加する方法の詳細について <xref:Microsoft.Office.Tools.Excel.ListObject> は、「[方法: ワークシートに ListObject コントロールを追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)する」を参照してください。
+## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 実行時に VSTO アドインプロジェクトの ListObject のサイズを変更する
+ 実行時に、任意の開いているワークシート上の <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールのサイズを変更できます。 VSTO アドインを使用してワークシートにコントロールを追加する方法の詳細について <xref:Microsoft.Office.Tools.Excel.ListObject> は、「 [方法: ワークシートに ListObject コントロールを追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)する」を参照してください。
 
 ### <a name="to-resize-a-list-object-programmatically"></a>リスト オブジェクトのサイズをプログラムで変更するには
 

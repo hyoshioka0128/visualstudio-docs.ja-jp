@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Resume |Microsoft Docs
+title: 'IDebugThread2:: Resume |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5bdec7338864926187b3d5056ffd2f2c4e1d7824
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152990"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
@@ -40,16 +40,16 @@ int Resume ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pdwSuspendCount`  
- [out]再開操作の後に、中断カウントを返します。  
+ 入出力再開操作後の中断回数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドをデクリメントする中断カウントを呼び出して各実行が再開に実際には 0 に達すると、どの時点で、までです。 この中断の数が表示されます、**スレッド**デバッグ ウィンドウ。  
+## <a name="remarks"></a>注釈  
+ このメソッドを呼び出すたびに、0に達するまで中断回数が減少します。この時間が経過すると、実行は実際に再開されます。 この中断回数は、[ **スレッド** デバッグ] ウィンドウに表示されます。  
   
- このメソッドを呼び出すたびに、必要があります、前回の呼び出し、 [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)メソッド。 何回中断カウントの決定、`IDebugThread2::Suspend`メソッドがこれまでに呼び出されます。  
+ このメソッドを呼び出すたびに、前に [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) メソッドを呼び出す必要があります。 中断カウントは、これ `IDebugThread2::Suspend` までにメソッドが呼び出された回数を決定します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+ [[中断]](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
