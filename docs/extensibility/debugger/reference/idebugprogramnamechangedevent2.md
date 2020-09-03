@@ -1,5 +1,5 @@
 ---
-title: イベント 2 |マイクロソフトドキュメント
+title: IDebugProgramNameChangedEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae58728601c3adbe6e37a00fd0694a5d71eef0b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722151"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
-プログラムの名前が変更されたときに、デバッグ エンジン (DE) からセッション デバッグ マネージャー (SDM) に送信されます。
+プログラムの名前が変更されたときに、デバッグエンジン (DE) からセッションデバッグマネージャー (SDM) に送信されます。
 
 ## <a name="syntax"></a>構文
 
@@ -26,15 +26,15 @@ ms.locfileid: "80722151"
 IDebugProgramNameChangedEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- DE は、プログラムの名前が変更されたことを報告するために、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は[、クエリ インターフェイス](/cpp/atl/queryinterface)を使用して**IDebugEvent2**インターフェイスにアクセスします。
+## <a name="notes-for-implementers"></a>実装側の注意
+ DE は、プログラムの名前が変更されたことを報告するために、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は、 [QueryInterface](/cpp/atl/queryinterface) を使用して **IDebugEvent2** インターフェイスにアクセスします。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- DE は、プログラム名の変更を報告するために、このイベント オブジェクトを作成して送信します。 DE は、デバッグ中のプログラムにアタッチするときに、SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して、このイベントを送信します。 カスタム ポート サプライヤーは、I インターフェイスを使用してこのイベントを送信します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ DE は、このイベントオブジェクトを作成して送信し、プログラム名の変更を報告します。 このイベントは、デバッグ対象のプログラムにアタッチされたときに SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。 カスタムポート供給業者は、I インターフェイスを使用してこのイベントを送信します。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: Msdbg.h
+ ヘッダー: Msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

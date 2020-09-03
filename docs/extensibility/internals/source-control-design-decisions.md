@@ -34,7 +34,7 @@ ms.locfileid: "80705254"
 
 3. プロジェクトまたはエディターがファイルを呼び出すと <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 、そのファイルに関連付けられている特殊なファイルは自動的にはチェックアウトされません。で、特別なファイルを親ファイルと共に渡します。 環境によって、渡されたすべてのファイルの関係が検出され、チェックアウト UI の特殊ファイルが適切に非表示になります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

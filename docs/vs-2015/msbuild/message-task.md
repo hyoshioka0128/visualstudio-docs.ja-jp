@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190896"
 ---
 # <a name="message-task"></a>Message タスク
@@ -39,14 +39,14 @@ ms.locfileid: "68190896"
 |`Importance`|省略可能な `String` 型のパラメーターです。<br /><br /> メッセージの重要度を指定します。 このパラメーターの値には、`high`、`normal`、または `low` を指定できます。 既定値は `normal` です。|  
 |`Text`|省略可能な `String` 型のパラメーターです。<br /><br /> ログに記録するエラー テキスト。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  `Message` タスクを使用すると、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトで、ビルド処理のさまざまな段階でロガーにメッセージを発行できます。  
   
- `Condition` パラメーターが `true` と評価されると、`Text` パラメーターの値がログに記録され、ビルド処理が継続されます。 `Condition` パラメーターが存在しない場合は、メッセージ テキストがログに記録されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。  
+ `Condition` パラメーターが `true` と評価されると、`Text` パラメーターの値がログに記録され、ビルド処理が継続されます。 `Condition` パラメーターが存在しない場合は、メッセージ テキストがログに記録されます。 ログ記録の詳細については、「 [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」を参照してください。  
   
  既定では、メッセージは MSBuild のコンソール ロガーに送信されます。 これは、<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> プロパティを設定することにより変更できます。 ロガーによって `Importance` パラメーターが解釈されます。  
   
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加パラメーターとその説明の一覧については、「 [Taskextension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のコード例は、登録されているすべてのロガーにメッセージをログ記録します。  
@@ -61,6 +61,6 @@ ms.locfileid: "68190896"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
+ [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)

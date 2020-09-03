@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO_FIELDS |マイクロソフトドキュメント
+title: FIELD_INFO_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736911"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
-[オブジェクトに](../../../extensibility/debugger/reference/idebugfield.md)関して取得する情報を指定します。
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトについて取得する情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -52,30 +52,30 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>フィールド
 `FIF_FULLNAME`\
-FIELD_INFO構造体のフィールド`bstrFullName`を初期化/[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)使用します。
+FIELD_INFO 構造体のフィールドを初期化/使用し `bstrFullName` ます。 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
 
 `FIF_NAME`\
-構造体のフィールドを`bstrName`初期化/使用`FIELD_INFO`します。
+構造体のフィールドを初期化/使用し `bstrName` `FIELD_INFO` ます。
 
 `FIF_TYPE`\
-構造体のフィールドを`bstrType`初期化/使用`FIELD_INFO`します。
+構造体のフィールドを初期化/使用し `bstrType` `FIELD_INFO` ます。
 
 `FIF_MODIFIERS`\
-構造体のフィールドを`bstrModifiers`初期化/使用`FIELD_INFO`します。
+構造体のフィールドを初期化/使用し `bstrModifiers` `FIELD_INFO` ます。
 
-## <a name="remarks"></a>Remarks
-これらの値は、[初期化するFIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体のフィールドを指定する引数として[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドにも渡されます。
+## <a name="remarks"></a>解説
+また、これらの値は、 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体を初期化するフィールドを指定するために、 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドに引数として渡されます。
 
-これらの値は、`dwFields``FIELD_INFO`構造体のメンバーで使用され、どのフィールドが使用され、有効かを示すためにも使用されます。
+これらの値は `dwFields` 、使用される `FIELD_INFO` フィールドと有効なフィールドを示すために、構造体のメンバーでも使用されます。
 
-これらのフラグはビット単位`OR`で組み合わせることができる。
+これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: sh.h
+ヘッダー: sh. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
