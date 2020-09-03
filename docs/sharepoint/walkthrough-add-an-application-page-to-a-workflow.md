@@ -16,13 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015491"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>チュートリアル: ワークフローへのアプリケーションページの追加
-  このチュートリアルでは、ワークフローから派生したデータを表示するアプリケーションページをワークフロープロジェクトに追加する方法について説明します。 このプロジェクトは、「[チュートリアル: 関連付けフォームと開始フォームを使用したワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」で説明されているプロジェクトに基づいています。
+  このチュートリアルでは、ワークフローから派生したデータを表示するアプリケーションページをワークフロープロジェクトに追加する方法について説明します。 このプロジェクトは、「 [チュートリアル: 関連付けフォームと開始フォームを使用したワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」で説明されているプロジェクトに基づいています。
 
  このチュートリアルでは、次のタスクについて説明します。
 
@@ -41,14 +42,14 @@ ms.locfileid: "86015491"
 
 - 見ることができます。
 
-- また、「[チュートリアル: 関連付けフォームと開始フォームを使用](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)したワークフローの作成」でもプロジェクトを完了する必要があります。
+- また、「 [チュートリアル: 関連付けフォームと開始フォームを使用](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)したワークフローの作成」でもプロジェクトを完了する必要があります。
 
 ## <a name="ammend-the-workflow-code"></a>ワークフローコードの Ammend
  まず、ワークフローにコード行を追加して、結果列の値を経費報告書の金額に設定します。 この値は、経費報告書の概要計算で後で使用されます。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>ワークフローの結果列の値を設定するには
 
-1. 「[チュートリアル: 関連付けと開始フォームを持つワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」から完成したプロジェクトを読み込み [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
+1. 「 [チュートリアル: 関連付けと開始フォームを持つワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) 」から完成したプロジェクトを読み込み [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
 2. *Workflow1.cs*または*workflow1.xaml*のコードを開きます (プログラミング言語によって異なります)。
 
@@ -71,7 +72,7 @@ ms.locfileid: "86015491"
 
 1. ExpenseReport プロジェクトを選択し、メニューバーで [**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-2. [**テンプレート**] ペインで、[**アプリケーションページ**] テンプレートを選択し、プロジェクト項目の既定の名前 (**ApplicationPage1**) を使用して、[**追加**] をクリックします。
+2. [ **テンプレート** ] ペインで、[ **アプリケーションページ** ] テンプレートを選択し、プロジェクト項目の既定の名前 (**ApplicationPage1**) を使用して、[ **追加** ] をクリックします。
 
 3. [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]ApplicationPage1 ので、 `PlaceHolderMain` セクションを次のように置き換えます。
 
@@ -102,7 +103,7 @@ ms.locfileid: "86015491"
 
 1. **ApplicationPage1**ノードを選択し、メニューバーで [コードの**表示**] を選択して、  >  **Code**アプリケーションページの背後にあるコードを表示します。
 
-2. クラスの先頭にある**using**ステートメントまたは**Import**ステートメント (プログラミング言語によって異なります) を、次のように置き換えます。
+2. クラスの先頭にある **using** ステートメントまたは **Import** ステートメント (プログラミング言語によって異なります) を、次のように置き換えます。
 
     ```vb
     Imports System
@@ -130,7 +131,7 @@ ms.locfileid: "86015491"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3. 次のコードを `Page_Load` メソッドに追加します。
+3. `Page_Load` メソッドに次のコードを追加します。
 
     ```vb
     Try
@@ -303,7 +304,7 @@ ms.locfileid: "86015491"
 
 1. **F5**キーを押して、プロジェクトを実行し、SharePoint に配置します。
 
-2. [**ホーム**] ボタンをクリックし、クイック起動バーの [**共有ドキュメント**] リンクをクリックして、SharePoint サイトに [共有ドキュメント] の一覧を表示します。
+2. [ **ホーム** ] ボタンをクリックし、クイック起動バーの [ **共有ドキュメント** ] リンクをクリックして、SharePoint サイトに [共有ドキュメント] の一覧を表示します。
 
 3. この例の経費報告書を表すには、ページの上部にある [ **Librarytools** ] タブの [**ドキュメント**] リンクを選択してから、ツールリボンの [**ドキュメントのアップロード**] ボタンを選択して、新しいドキュメントをドキュメントの一覧にアップロードします。
 
@@ -311,23 +312,23 @@ ms.locfileid: "86015491"
 
 5. [**ドキュメントライブラリの設定**] ページで、[**権限と管理**] セクションの [**ワークフロー設定**] リンクを選択します。
 
-6. [**ワークフロー設定**] ページで、[**ワークフローの追加**] リンクを選択します。
+6. [ **ワークフロー設定** ] ページで、[ **ワークフローの追加** ] リンクを選択します。
 
-7. [**ワークフローの追加**] ページで、[ **ExpenseReport-workflow1.xaml** ] ワークフローを選択し、「 **ExpenseTest**」などのワークフローの名前を入力して、[**次へ**] をクリックします。
+7. [ **ワークフローの追加** ] ページで、[ **ExpenseReport-workflow1.xaml** ] ワークフローを選択し、「 **ExpenseTest**」などのワークフローの名前を入力して、[ **次へ** ] をクリックします。
 
     ワークフローの関連付けフォームが表示されます。 この値を使用して、経費の上限を報告します。
 
 8. 関連付けフォームで、[**自動承認の制限**] ボックスに「 **1000** 」と入力し、[**ワークフローの関連付け**] ボタンを選択します。
 
-9. [**ホーム**] ボタンをクリックして、SharePoint のホームページに戻ります。
+9. [ **ホーム** ] ボタンをクリックして、SharePoint のホームページに戻ります。
 
-10. クイック起動バーの [**共有ドキュメント**] リンクをクリックします。
+10. クイック起動バーの [ **共有ドキュメント** ] リンクをクリックします。
 
-11. アップロードされたドキュメントのいずれかを選択してドロップダウン矢印を表示し、それを選択して、[**ワークフロー** ] 項目を選択します。
+11. アップロードされたドキュメントのいずれかを選択してドロップダウン矢印を表示し、それを選択して、[ **ワークフロー** ] 項目を選択します。
 
 12. ExpenseTest の横にある画像を選択して、ワークフロー開始フォームを表示します。
 
-13. [**支出合計**] テキストボックスに1000より大きい値を入力し、[**ワークフローの開始**] をクリックします。
+13. [ **支出合計** ] テキストボックスに1000より大きい値を入力し、[ **ワークフローの開始** ] をクリックします。
 
      報告された経費が割り当てられた経費額を超えると、タスクがタスク一覧に追加されます。 "**完了**" という値を持つ**ExpenseTest**という名前の列も、[共有ドキュメント] の一覧の経費報告書項目に追加されます。
 

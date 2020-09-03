@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814825"
 ---
-# <a name="expected-"></a>' ' が必要です。 \@
+# <a name="expected-"></a>'\@' が必要です
 ステートメントを使用して条件付きコンパイルステートメントで使用する変数を作成しようとしました `@set` が、 **@** 変数名の前にアットマーク "" を配置しませんでした。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
@@ -33,6 +33,6 @@ ms.locfileid: "85814825"
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [@set諸表](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set 諸表](../../javascript/reference/at-set-statement-javascript.md)   
  [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)

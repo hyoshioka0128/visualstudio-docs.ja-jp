@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535058"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:属性を AttributeUsageAttribute に設定します
@@ -47,7 +47,7 @@ ms.locfileid: "85535058"
  メッセージを除外するのではなく、このルールの違反を修正する必要があります。 属性が継承されている場合でも <xref:System.AttributeUsageAttribute> 、コードの保守を簡素化するために属性が存在している必要があります。
 
 ## <a name="example"></a>例
- 次の例では、2つの属性を定義します。 `BadCodeMaintainerAttribute`ステートメントを誤っ <xref:System.AttributeUsageAttribute> て省略し、 `GoodCodeMaintainerAttribute` このセクションの前半で説明した属性を正しく実装します。 このプロパティは、 `DeveloperName` デザイン規則[CA1019: 属性引数に対してアクセサーを定義](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)する必要があり、完全を期すために含まれています。
+ 次の例では、2つの属性を定義します。 `BadCodeMaintainerAttribute` ステートメントを誤っ <xref:System.AttributeUsageAttribute> て省略し、 `GoodCodeMaintainerAttribute` このセクションの前半で説明した属性を正しく実装します。 このプロパティは、 `DeveloperName` デザイン規則 [CA1019: 属性引数に対してアクセサーを定義](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) する必要があり、完全を期すために含まれています。
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]
@@ -57,5 +57,5 @@ ms.locfileid: "85535058"
 
  [CA1813:アンシールド属性を使用しません](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

@@ -1,5 +1,5 @@
 ---
-title: '方法 : レジストリ設定を使用してプライベート ギャラリーを管理する |マイクロソフトドキュメント'
+title: '方法: レジストリ設定を使用してプライベートギャラリーを管理する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710934"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>方法: レジストリ設定を使用してプライベート ギャラリーを管理する
-分離シェル拡張機能の管理者または開発者は、Visual Studio ギャラリー、サンプル ギャラリー、またはプライベート ギャラリーのコントロール、テンプレート、およびツールへのアクセスを制御できます。 ギャラリーを使用または使用不可にするには、変更されたレジストリ キーとその値を記述する *.pkgdef*ファイルを作成します。
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>方法: レジストリ設定を使用してプライベートギャラリーを管理する
+分離シェル拡張機能の管理者または開発者は、Visual Studio ギャラリー、サンプルギャラリー、またはプライベートギャラリーで、コントロール、テンプレート、およびツールへのアクセスを制御できます。 ギャラリーを利用できるようにする、または使用できないようにするには、変更されたレジストリキーとその値を記述する、 *pkgdef* ファイルを作成します。
 
-## <a name="manage-private-galleries"></a>プライベート ギャラリーの管理
- 複数のコンピュータ上のギャラリーへのアクセスを制御する *.pkgdef*ファイルを作成できます。 このファイルは、次の形式である必要があります。
+## <a name="manage-private-galleries"></a>プライベートギャラリーの管理
+ 複数のコンピューター上のギャラリーへのアクセスを制御するために、 *pkgdef* ファイルを作成できます。 このファイルの形式は次のとおりである必要があります。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -36,22 +36,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- キー`Repositories`は、有効または無効にするギャラリーを指します。 Visual Studio ギャラリーとサンプル ギャラリーでは、次のリポジトリ GUID を使用します。
+ キーは、 `Repositories` 有効または無効にするギャラリーを参照します。 Visual Studio ギャラリーとサンプルギャラリーでは、次のリポジトリ Guid を使用します。
 
-- ビジュアルスタジオギャラリー: 0F45E408-7995-4375-9485-86B8DB553DC9
+- Visual Studio ギャラリー: 0F45E408-7995-4375-9485-86B8DB553DC9
 
-- サンプルギャラリー : AEB9CB40-D8E6-4615-B52C-27E307F8506C
+- サンプルギャラリー: AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  値`Disabled`は省略可能です。 既定では、ギャラリーは有効になっています。
+  この `Disabled` 値は省略可能です。 既定では、ギャラリーが有効になっています。
 
-  この`Priority`値によって、[**オプション]** ダイアログ ボックスにギャラリーが表示される順序が決まります。 Visual Studio ギャラリーには優先度 10 があり、サンプル ギャラリーには優先度 20 があります。 プライベート ギャラリーは優先度 100 から始まります。 複数のギャラリーの優先度の値が同じである場合、表示される順序はローカライズされた`DisplayName`属性の値によって決まります。
+  この `Priority` 値は、[ **オプション** ] ダイアログボックスでギャラリーが表示される順序を決定します。 Visual Studio ギャラリーの優先度は10で、サンプルギャラリーの優先度は20です。 プライベートギャラリーは、優先順位100で開始します。 複数のギャラリーに同じ優先順位値が設定されている場合、それらが表示される順序は、ローカライズされた属性の値によって決まり `DisplayName` ます。
 
-  この`Protocol`値は、Atom ベースまたは SharePoint ベースのギャラリーに必要です。
+  この `Protocol` 値は、Atom ベースまたは SharePoint ベースのギャラリーに必須です。
 
-  のいずれか`DisplayName`、または`DisplayNameResourceID` `DisplayNamePackageGuid`、のいずれか、または の を指定する必要があります。 すべて指定されている場合は、`DisplayNameResourceID`と`DisplayNamePackageGuid`のペアが使用されます。
+  `DisplayName`、、またはの両方を `DisplayNameResourceID` `DisplayNamePackageGuid` 指定する必要があります。 All を指定した場合は、 `DisplayNameResourceID` との `DisplayNamePackageGuid` ペアが使用されます。
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>pkgdef ファイルを使用して Visual Studio ギャラリーを無効にする
- *.pkgdef*ファイルのギャラリーを無効にすることができます。 次のエントリは、Visual Studio ギャラリーを無効にします。
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Pkgdef ファイルを使用して Visual Studio ギャラリーを無効にする
+ *Pkgdef*ファイルでギャラリーを無効にすることができます。 次のエントリは、Visual Studio ギャラリーを無効にします。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -59,7 +59,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- 次のエントリは、サンプル ギャラリーを無効にします。
+ 次のエントリは、サンプルギャラリーを無効にします。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]

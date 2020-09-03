@@ -1,4 +1,4 @@
-﻿---
+---
 title: XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90c30f27ada6673608a1c5cf9500207f9aeb2d72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664193"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
@@ -21,7 +21,7 @@ ms.locfileid: "72664193"
 
 イメージ、ボタン、ビデオなどのオブジェクトをどこに表示させたいか想像してください。 縦か横の単一行の行列、または固定位置に表示させたいのではないでしょうか。
 
- ページをどのように表示するかについて考える機会が得られたら、レイアウト パネルを選択します。 オブジェクトを追加するための何かが必要になるため、すべてのページはあるものから開始します。 これは既定では**グリッド**ですが、変更しても構いません。
+ ページをどのように表示するかについて考える機会が得られたら、レイアウト パネルを選択します。 オブジェクトを追加するための何かが必要になるため、すべてのページはあるものから開始します。 既定では **グリッド** ですが、変更することができます。
 
  レイアウト パネルでは、ページ上にオブジェクトを配置できますが、それ以上のことができます。 さまざまな画面サイズと解像度で設計するのに役立ちます。 ユーザーが自分のアプリを実行する際、デバイスの実際の画面と一致させるためにレイアウト パネル内のすべてのものがサイズ変更されます。 もちろん、レイアウトのサイズ変更をしたくない場合は、レイアウトの一部または全体の動作をオーバーライドできます。 これを制御するには、高さと幅のプロパティを使用します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "72664193"
 
 - [UniformGrid](#Uniform)
 
-- [Canvas](#Canvas)
+- [キャンバス](#Canvas)
 
 - [StackPanel](#Stack)
 
@@ -47,14 +47,14 @@ ms.locfileid: "72664193"
 
 - [DockPanel](#Dock)
 
-### <a name="Grid"></a> グリッド
+### <a name="grid"></a><a name="Grid"></a> 行列
  行と列にオブジェクトを配置します。
 
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")
 
  **短いビデオを見る:** [グリッドを使用し](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)![てインストール済みの機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")
 
-### <a name="Uniform"></a> UniformGrid
+### <a name="uniformgrid"></a><a name="Uniform"></a> UniformGrid
  オブジェクトを等しい、統一されたグリッド領域に配置します。 このパネルは、イメージの一覧を配置するのに適しています。
 
  ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")
@@ -63,21 +63,21 @@ ms.locfileid: "72664193"
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [UniformGrid での作業](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)
 
-### <a name="Canvas"></a> キャンバス
+### <a name="canvas"></a><a name="Canvas"></a> エリア
  任意の方法でオブジェクトを配置します。 ユーザーがアプリを実行しているとき、これらの要素は画面上の固定位置にあります。
 
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[キャンバスでの作業](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)
 
-### <a name="Stack"></a> StackPanel
+### <a name="stackpanel"></a><a name="Stack"></a> StackPanel
  横方向または縦方向の単一行にオブジェクトを配置します。
 
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [StackPanel と WrapPanel の](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)使用
 
-### <a name="Wrap"></a> WrapPanel
+### <a name="wrappanel"></a><a name="Wrap"></a> WrapPanel
  左から右へ順番にオブジェクトを配置します。 パネルの右端に余地がない場合、コンテンツを次の行に*折り返し*ます。同様に左から右、上から下へ実行します。 上から下、左から右へオブジェクトが流れるよう、[折り返し] パネルの向きを縦方向にすることもできます。
 
  (WPF プロジェクトでのみ使用可能)
@@ -86,7 +86,7 @@ ms.locfileid: "72664193"
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [StackPanel と WrapPanel の](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)使用
 
-### <a name="Dock"></a> DockPanel
+### <a name="dockpanel"></a><a name="Dock"></a> System.windows.controls.dockpanel>
  オブジェクトをパネルの 1 辺に沿うように (*ドッキング*して) 整列します。
 
  (WPF プロジェクトでのみ使用可能)
@@ -102,7 +102,7 @@ ms.locfileid: "72664193"
 
 - [Border](#Border)
 
-- [ポップアップ](#Popup)
+- [Popup](#Popup)
 
 - [ScrollViewer](#Scroll)
 
@@ -110,22 +110,22 @@ ms.locfileid: "72664193"
 
 - [Viewbox](#View)
 
-### <a name="Border"></a> 境界線
+### <a name="border"></a><a name="Border"></a> 境界線
  罫線、背景、またはその両方をオブジェクトの周りに作成します。 **境界線**に対して追加できるオブジェクトは 1 つのみです。 複数のオブジェクトに境界線や背景を適用する場合は、レイアウト パネルを**境界線**に追加します。 次に、オブジェクトをそのパネルまたはコントロールに追加します。
 
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")
 
  **短いビデオを見る:** ![インストール済みの機能を構成する](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[境界線を使用](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)する
 
-### <a name="Popup"></a> ポップアップ
- ウィンドウで情報またはオプションをユーザーに表示します。 **ポップアップ**に対して追加できるオブジェクトは 1 つのみです。 既定では、**ポップアップ**には**グリッド**が含まれていますが、これは変更することができます。
+### <a name="popup"></a><a name="Popup"></a> Popup
+ ウィンドウで情報またはオプションをユーザーに表示します。 **ポップアップ**に対して追加できるオブジェクトは 1 つのみです。 既定では、 **ポップアップ** には **グリッド** が含まれていますが、これは変更することができます。
 
-### <a name="Scroll"></a> ScrollViewer
+### <a name="scrollviewer"></a><a name="Scroll"></a> ScrollViewer
  ページまたはページの領域を下にスクロールできるようになります。 **ScrollViewer** に追加できるオブジェクトは 1 つのみであるため、**グリッド**や **StackPanel** などのレイアウト パネルを追加することには大きな意味があります。
 
  ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")
 
-### <a name="View"></a> Viewbox
+### <a name="viewbox"></a><a name="View"></a> Viewbox
  ズーム コントロールのようにオブジェクトを拡大または縮小します。 **ViewBox** に対して追加できるオブジェクトは 1 つのみです。 複数のオブジェクトにその効果を適用する場合は、レイアウト パネルを **ViewBox** に追加してから、コントロールをそのレイアウト パネルに追加します。
 
  (WPF プロジェクトでのみ使用可能)

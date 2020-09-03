@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545237"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:操作はオーバーフローできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
@@ -47,7 +47,7 @@ ms.locfileid: "85545237"
 ## <a name="example-of-a-violation"></a>違反の例
 
 ### <a name="description"></a>説明
- 次の例のメソッドは、この規則に違反する整数を操作します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]このを起動するには、[整数オーバーフローを**削除**する] オプションを無効にする必要があります。
+ 次の例のメソッドは、この規則に違反する整数を操作します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] このを起動するには、[整数オーバーフローを **削除** する] オプションを無効にする必要があります。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]
@@ -111,7 +111,7 @@ End Sub
 
 2. **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
 
-3. [**算術オーバーフローまたはアンダーフローのチェック**] を選択し、[ **OK**] をクリックします。
+3. [ **算術オーバーフローまたはアンダーフローのチェック** ] を選択し、[ **OK**] をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.OverflowException?displayProperty=fullName>[C# 演算子](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43)[のチェックとオフ](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION |マイクロソフトドキュメント
+title: TEXT_POSITION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713411"
 ---
 # <a name="text_position"></a>TEXT_POSITION
-指定されたテキストの行と列の位置を記述します。
+指定されたテキスト内の行と列の位置を記述します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,16 +44,16 @@ public struct TEXT_POSITION { 
 ## <a name="members"></a>メンバー
 
 `dwLine`\
-ソース ファイル内の行のインデックス。
+ソースファイル内の行のインデックス。
 
 `dwColumn`\
-行への文字オフセット。
+直線への文字オフセット。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
-この構造体は[、CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)および[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体で使用されます。
+この構造体は、 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) と [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 構造体で使用されます。
 
-この構造体は、次のメソッドの呼び出しによって埋められます。
+この構造体は、次のメソッドの呼び出しによって入力されます。
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,7 +63,7 @@ public struct TEXT_POSITION { 
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-この構造体は、次のメソッドにパラメーターとして渡されます。
+この構造体は、パラメーターとして次のメソッドに渡されます。
 
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
@@ -77,11 +77,11 @@ public struct TEXT_POSITION { 
 
 ## <a name="requirements"></a>必要条件
 
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 
@@ -92,5 +92,5 @@ public struct TEXT_POSITION { 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
-- [Context_info](../../../extensibility/debugger/reference/context-info.md)
+- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

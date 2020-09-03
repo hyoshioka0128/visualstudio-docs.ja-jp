@@ -1,5 +1,5 @@
 ---
-title: ブレークポイントがバインドまたはバインド解除されたとき |マイクロソフトドキュメント
+title: ブレークポイントがバインドまたはバインド解除した場合 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712331"
 ---
-# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>ブレークポイントがバインドまたはバインド解除されたとき
-呼び出しが行われたときにブレークポイントをバインドできない場合、 [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)メソッド、バインド時間とブレークポイントの作成時間が異なります。
+# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>ブレークポイントがバインドまたはバインド解除したとき
+[IDebugPendingBreakpoint2:: CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)メソッドに対して呼び出しが行われたときにブレークポイントがバインドできない場合、バインド時間とブレークポイントの作成時間は異なります。
 
-## <a name="methods-called"></a>呼び出されたメソッド
- セッション デバッグ マネージャー (SDM) は、次のメソッドを呼び出します。
+## <a name="methods-called"></a>呼び出されるメソッド
+ セッションデバッグマネージャー (SDM) は、次のメソッドを呼び出します。
 
-1. [IDebugEngine2::保留中のブレークポイントを作成します](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)。 デは[、IDebugPendingブレークポイント2を](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)返します。
+1. [IDebugEngine2:: CreatePendingBreakpoint ポイント](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)。 DE は、 [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)を返します。
 
-2. [Iデバッグ保留中のブレークポイント2::有効に](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)します。
+2. [IDebugPendingBreakpoint2:: Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)。
 
-3. [IDebug保留中のブレークポイント2::仮想化](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
+3. [IDebugPendingBreakpoint2:: 仮想](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)化。
 
-4. [メソッドを返](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)し、S_OK返します。 デは[、IDebug ブレークポイントバインド イベント 2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)または[I デバッグ ブレークポイントエラー イベント 2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)を送信します。
+4. [IDebugPendingBreakpoint2:: Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)メソッドと S_OK を返します。 DE は、 [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) または [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)を送信します。
 
-5. 検証[し、](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)バインド[されたブレークポイント](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)を取得するメソッドをメソッド。
+5. [IDebugBreakpointBoundEvent2:: GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) ポイントと [IDebugBreakpointBoundEvent2:: enumboundbreakpoints ブレーク](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) ポイントメソッドを検証し、バインドされたブレークポイントを取得します。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガ イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
+- [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)
