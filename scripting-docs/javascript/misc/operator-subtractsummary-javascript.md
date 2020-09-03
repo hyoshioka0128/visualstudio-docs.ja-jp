@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816788"
 ---
 # <a name="operator-summary-javascript"></a>演算子の一覧 (JavaScript)
@@ -29,8 +29,8 @@ ms.locfileid: "85816788"
 |[加わっ](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Decrement](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[事業部](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[許容](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Increment](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[剰余](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[数学](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[減算](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[単項否定](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,16 +39,16 @@ ms.locfileid: "85816788"
   
 |演算子|Symbol|  
 |--------------|------------|  
-|[コンマ](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[傍点](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[条件 (三項)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[等式](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[より大きい](../../javascript/reference/comparison-operators-javascript.md)|>|  
 |[以上](../../javascript/reference/comparison-operators-javascript.md)|>=|  
 |[ID](../../javascript/reference/comparison-operators-javascript.md)|===|  
-|[等しく](../../javascript/reference/comparison-operators-javascript.md)|!=|  
+|[不等式](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[より小さい](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[以下](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[論理 AND](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[論理積](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[論理 NOT](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[論理和](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[非一致演算子](../../javascript/reference/comparison-operators-javascript.md)|!==|  

@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e3de3246980ead0b20d471321a9696451aed81ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534772"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:スコープを失う前にオブジェクトを破棄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DisposeObjectsBeforeLosingScope|
 |CheckId|CA2000|
@@ -50,7 +50,7 @@ ms.locfileid: "85534772"
 
 - 破棄可能オブジェクトのメンバーは、using ステートメントのコンストラクターでは初期化できません。
 
-- 1 つの例外ハンドラーによってのみ保護された入れ子のコンストラクター。 例:
+- 1 つの例外ハンドラーによってのみ保護された入れ子のコンストラクター。 たとえば、次のように入力します。
 
     ```
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
@@ -93,9 +93,9 @@ ms.locfileid: "85534772"
 
  これを修正するには、プロジェクトで Visual Basic コンパイラによるオーバーフロー チェックの実施を無効にするか、または次の CreateReader2 関数のようにコードを変更します。
 
- オーバーフローチェックの出力を無効にするには、ソリューションエクスプローラーでプロジェクト名を右クリックし、[**プロパティ**] をクリックします。 [**コンパイル**] をクリックし、[**詳細コンパイルオプション**] をクリックして、[**整数オーバーフローのチェックを削除**] をオンにします。
+ オーバーフローチェックの出力を無効にするには、ソリューションエクスプローラーでプロジェクト名を右クリックし、[ **プロパティ**] をクリックします。 [ **コンパイル**] をクリックし、[ **詳細コンパイルオプション**] をクリックして、[ **整数オーバーフローのチェックを削除**] をオンにします。
 
 <!-- TODO: review snippet reference  [!CODE [FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1](FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1)]  -->
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.IDisposable> [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

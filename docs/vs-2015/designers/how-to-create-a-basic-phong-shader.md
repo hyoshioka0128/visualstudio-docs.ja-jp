@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 基本フォン シェーダーを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664544"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>方法: 基本フォン シェーダーを作成する
@@ -34,28 +34,28 @@ ms.locfileid: "72664544"
 
  ランバート ライティング モデルの詳細については、「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。
 
- 開始する前に、 **[プロパティ]** ウィンドウと**ツールボックス**が表示されていることを確認します。
+ 開始する前に、**[プロパティ]** ウィンドウと**ツールボックス**が表示されていることを確認します。
 
 #### <a name="to-create-a-phong-shader"></a>フォン シェーダーを作成するには
 
 1. 「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」の説明に従って、ランバート シェーダーを作成します。
 
-2. **[最終的な色]** ノードから **[ランバート]** ノードを接続解除します。 **[ランバート]** ノードの **[RGB]** ターミナルを選択し、 **[リンクの解除]** を選択します。 これにより、次の手順で追加するノードのための領域を確保できます。
+2. **[最終的な色]** ノードから **[ランバート]** ノードを接続解除します。 **[ランバート]** ノードの **[RGB]** ターミナルを選択し、**[リンクの解除]** を選択します。 これにより、次の手順で追加するノードのための領域を確保できます。
 
 3. グラフに **[追加]** ノードを追加します。 **ツールボックス**の **[数式]** で **[追加]** を選択し、デザイン サーフェイスに移動します。
 
 4. グラフに **[反射]** ノードを追加します。 **ツールボックス**の **[ユーティリティ]** で **[反射]** を選択し、デザイン サーフェイスに移動します。
 
-5. 反射の効果を追加します。 **[反射]** ノードの **[出力]** ターミナルを **[追加]** ノードの **[X]** ターミナルに移動し、 **[ランバート]** ノードの **[出力]** ターミナルを **[追加]** ノードの **[Y]** ターミナルに移動します。 これらの接続により、ピクセルに対する総拡散色効果と総反射色効果が組み合わされます。
+5. 反射の効果を追加します。 **[反射]** ノードの **[出力]** ターミナルを **[追加]** ノードの **[X]** ターミナルに移動し、**[ランバート]** ノードの **[出力]** ターミナルを **[追加]** ノードの **[Y]** ターミナルに移動します。 これらの接続により、ピクセルに対する総拡散色効果と総反射色効果が組み合わされます。
 
-6. 計算された色の値を最終的な色に接続します。 **[追加]** ノードの **[出力]** ターミナルを、 **[最終的な色]** ノードの **[RGB]** ターミナルに移動します。
+6. 計算された色の値を最終的な色に接続します。 **[追加]** ノードの **[出力]** ターミナルを、**[最終的な色]** ノードの **[RGB]** ターミナルに移動します。
 
    次の図は、完成したシェーダー グラフと、ティーポット モデルに適用されるシェーダーのプレビューを示しています。
 
 > [!NOTE]
 > この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。また、**MaterialSpecular** パラメーターと **MaterialSpecularPower** パラメーターを使用して、金属のような仕上がりが指定されています。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。
 
- ![シェーダーグラフとその効果のプレビュー](../designers/media/digit-lighting-graph.png "数字-光源-グラフ")
+ ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-lighting-graph.png "数字-光源-グラフ")
 
  特定の図形を使用すると、一部のシェーダーをより適切にプレビューできる可能性があります。 シェーダー デザイナーでシェーダーをプレビューする方法の詳細については、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。
 
@@ -66,9 +66,9 @@ ms.locfileid: "72664544"
 >
 > **MaterialSpecularPower** プロパティは、反射ハイライトの輝度を決定します。 反射輝度が高い場合は、よりくすんだ、より局部的なハイライトがシミュレートされます。 反射輝度が非常に低い場合は、広範囲に及ぶ強いハイライトがシミュレートされ、サーフェイス全体の色が過飽和状態になり隠されます。
 
- ![モデルに適用された phong](../designers/media/digit-lighting-model.png "数字-光源-モデル")
+ ![モデルに適用されたフォン光源](../designers/media/digit-lighting-model.png "数字-光源-モデル")
 
- 3-D モデルにシェーダーを適用する方法の詳細については、「[方法: シェーダーを 3-D モデルに適用する](../designers/how-to-apply-a-shader-to-a-3-d-model.md)」を参照してください。
+ シェーダーを3-d モデルに適用する方法の詳細については、「 [方法: シェーダーを3-D モデルに適用](../designers/how-to-apply-a-shader-to-a-3-d-model.md)する」を参照してください。
 
 ## <a name="see-also"></a>参照
- [方法: シェーダーを3-D モデルに適用](../designers/how-to-apply-a-shader-to-a-3-d-model.md)する方法[: シェーダーをエクスポート](../designers/how-to-export-a-shader.md)する[方法: 基本的なランバートシェーダー](../designers/how-to-create-a-basic-lambert-shader.md) [シェーダーデザイナー](../designers/shader-designer.md)を作成するシェーダー[デザイナーノード](../designers/shader-designer-nodes.md)
+ [方法: シェーダーを3-D モデルに適用](../designers/how-to-apply-a-shader-to-a-3-d-model.md)する方法 [: シェーダーをエクスポート](../designers/how-to-export-a-shader.md)する [方法: 基本的なランバートシェーダー](../designers/how-to-create-a-basic-lambert-shader.md) [シェーダーデザイナー](../designers/shader-designer.md)を作成するシェーダー [デザイナーノード](../designers/shader-designer-nodes.md)

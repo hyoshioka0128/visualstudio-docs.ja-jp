@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 基本テクスチャを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664570"
 ---
 # <a name="how-to-create-a-basic-texture"></a>方法: 基本テクスチャを作成する
@@ -52,7 +52,7 @@ ms.locfileid: "72664570"
 
 4. 前景色を完全に透明な黒色に設定します。 **[プロパティ]** ウィンドウの、 **[色]** プロパティ グループで、 **[前景]** を選択します。 カラー ピッカーの横の **[R]** 、 **[G]** 、 **[B]** 、 **[A]** プロパティの値を `0` に設定します。
 
-5. イメージ エディターのツール バーで、 **[塗りつぶし]** ツールを選択してから、Shift キーを押したままにして、イメージ内のポイントを選択します。 Shift キーを使用すると、塗りつぶしの色のアルファ値がイメージ内の色と置き換わります。Shift キーを使用しないと、アルファ値とイメージ内の色が混ぜ合わされて塗りつぶしの色になります。
+5. イメージ エディターのツール バーで、**[塗りつぶし]** ツールを選択してから、Shift キーを押したままにして、イメージ内のポイントを選択します。 Shift キーを使用すると、塗りつぶしの色のアルファ値がイメージ内の色と置き換わります。Shift キーを使用しないと、アルファ値とイメージ内の色が混ぜ合わされて塗りつぶしの色になります。
 
    > [!IMPORTANT]
    > この手順と、前の手順で選択した色を組み合わせて、描画対象の "bullseye" ターゲットのテクスチャの基本イメージが準備されることになります。 イメージが透明な黒色で塗りつぶされると、ターゲットの罫線は黒色になりますが、ターゲットの周囲の成果物にエイリアシングは発生しません。
@@ -86,9 +86,9 @@ ms.locfileid: "72664570"
 
     "bullseye" ターゲットのテクスチャが完成しました。 表示される最終的なイメージと透明度を次に示します。
 
-    ![完全な "bullseye" ターゲットテクスチャ](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
+    !["bullseye" ターゲットのテクスチャ全体](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
 
     次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。
 
 ## <a name="see-also"></a>参照
- [Image Editor](../designers/image-editor.md)
+ [イメージ エディター](../designers/image-editor.md)

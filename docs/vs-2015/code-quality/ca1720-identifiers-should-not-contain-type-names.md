@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f6d228b0fbf5507ba135f9ddc35d6d8b161f0011
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534850"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別子には型名を含めないでください
@@ -35,7 +35,7 @@ ms.locfileid: "85534850"
 ## <a name="cause"></a>原因
  外部から参照できるメンバーのパラメーターの名前にデータ型の名前が含まれています。
 
- \- または -
+ - または -
 
  外部から参照できるメンバーの名前には、言語固有のデータ型名が含まれます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "85534850"
 
 - UShort
 
-- Int
+- int
 
 - UInt
 
@@ -84,7 +84,7 @@ ms.locfileid: "85534850"
 
 - Obj
 
-- ブール型
+- Boolean
 
 - Char
 
@@ -124,9 +124,9 @@ ms.locfileid: "85534850"
 
 - Double
 
-- Decimal (10 進数型)
+- Decimal
 
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  **パラメーターに対してが発生した場合:**
