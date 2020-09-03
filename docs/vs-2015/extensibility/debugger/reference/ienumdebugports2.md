@@ -13,53 +13,53 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c30e42592af4d34765951b5e229555556c9b57b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155017"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、コンピューターまたはポートのサプライヤーのポートを列挙します。  
+このインターフェイスは、コンピューターまたはポートの供給元のポートを列挙します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEnumDebugPorts2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- カスタム ポート サプライヤーは、供給業者によって作成されたポートの一覧を表すためには、このインターフェイスを実装します。 Visual Studio では、独自のポート サプライヤーをサポートするためには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ カスタムポートサプライヤーは、このインターフェイスを実装して、サプライヤーによって作成されたポートの一覧を表します。 Visual Studio は、独自のポート供給業者をサポートするためにこのインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)ポート サプライヤーによって作成されたポートの一覧を表す、このインターフェイスを取得します。 呼び出す[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)保存されたポートの一覧を表す、このインターフェイスを取得するディスクにします。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [Enumports](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)を呼び出して、ポートサプライヤーによって作成されたポートの一覧を表すこのインターフェイスを取得します。 [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)を呼び出して、ディスクに保存されたポートの一覧を表すこのインターフェイスを取得します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IEnumDebugPorts2`します。  
+ 次の表に、のメソッドを示し `IEnumDebugPorts2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[次へ](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|指定された数の列挙体シーケンス内のポートを取得します。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|指定された数の列挙体シーケンス内のポートをスキップします。|  
-|[リセット](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|列挙子では、ポートの数を取得します。|  
+|[次へ](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|列挙シーケンス内の指定された数のポートを取得します。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|列挙シーケンス内の指定された数のポートをスキップします。|  
+|[リセット](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|列挙シーケンスを先頭にリセットします。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|列挙子内のポートの数を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- Visual Studio では、このインターフェイスを使用して、プロセスにアタッチするために使用されるポートの一覧を設定します。  
+## <a name="remarks"></a>注釈  
+ Visual Studio は、このインターフェイスを使用して、プロセスへのアタッチに使用されるポートの一覧を作成します。  
   
- 通常、デバッグ エンジンでは、このインターフェイスは使用しません。  
+ 通常、デバッグエンジンはこのインターフェイスを使用しません。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)   
  [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

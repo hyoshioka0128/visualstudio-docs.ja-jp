@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658478"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>レイヤー図の拡張機能のトラブルシューティング
@@ -24,11 +24,11 @@ ms.locfileid: "72658478"
 
 このトピックでは、レイヤー モデル拡張機能を作成するときに発生する可能性のある問題について説明します。
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>F5 キーを押して拡張機能をデバッグするとき、コマンド、ジェスチャ ハンドラー、検証拡張機能、またはカスタム プロパティが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスのレイヤー図に表示されない
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>F5 キーを押して拡張機能をデバッグするとき、コマンド、ジェスチャ ハンドラー、検証拡張機能、またはカスタム プロパティが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスのレイヤー図に表示されない
 
-1. @No__t_0 の実験用インスタンスで拡張機能ソリューションを開き、 **[ビルド]** メニューの **[ソリューションのリビルド]** をクリックします。
+1. の実験用インスタンスで拡張機能ソリューションを開き、[ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ビルド** ] メニューの [ **ソリューションのリビルド**] をクリックします。
 
-2. **F5**キーまたは**CTRL + F5**キーを押して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスを開始します。 レイヤー図を開き、拡張機能をテストします。
+2. **F5**キーまたは CTRL キーを押し**ながら f5**キーを押して、の実験用インスタンスを開始し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。 レイヤー図を開き、拡張機能をテストします。
 
    必要に応じて、次の手順に進みます。
 
@@ -39,19 +39,19 @@ ms.locfileid: "72658478"
 2. 次のフォルダーを削除します:%LocalAppData%\Microsoft\VisualStudio \\ [バージョン]、componentmodelcache
 
    > [!NOTE]
-   > % LocalAppData% は通常*DriveName*: \ Users \\*UserName*\appdata\local です。
+   > % LocalAppData% は通常、 *DriveName*: \ Users \\ *UserName*\appdata\local です。
 
    必要に応じて、次の手順に進みます。
 
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>古いバージョンの検証結果が表示される、または検証メソッドが呼び出されない
 
-1. @No__t_0 の実験用インスタンスで、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。 これにより、前に行った検証分析のキャッシュされている結果がクリアされます。
+1. の実験用インスタンスで、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [ **ビルド** ] メニューの [ **ソリューションのクリーン**] をクリックします。 これにより、前に行った検証分析のキャッシュされている結果がクリアされます。
 
 2. モデルのレイヤーがコード要素と関連付けられていること、および少なくとも 1 つの依存関係リンクがモデルに存在することを確認します。 検証する項目がない場合、検証は呼び出されません。
 
 3. 検証メソッドは別のプロセスで実行するので、標準のブレークポイントは検証メソッドでは機能しない場合があります。 メソッドをステップ実行する場合は、`System.Diagnostics.Debugger.Launch()` の呼び出しを挿入する必要があります。
 
-4. レイヤー検証プロジェクトの**source.extension.vsixmanifest**で、 **MEF コンポーネント**項目と**カスタム拡張機能の種類**の両方の項目を **[コンテンツ]** の下に追加したことを確認します。
+4. レイヤー検証プロジェクトの **source.extension.vsixmanifest** で、 **MEF コンポーネント** 項目と **カスタム拡張機能の種類** の両方の項目を [ **コンテンツ**] の下に追加したことを確認します。
 
 ## <a name="see-also"></a>参照
  [レイヤー図を拡張する](../modeling/extend-layer-diagrams.md)

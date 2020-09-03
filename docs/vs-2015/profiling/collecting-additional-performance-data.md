@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef6e65c9d180119d9270c292e30e619d94836175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154069"
 ---
 # <a name="collecting-additional-performance-data"></a>追加のパフォーマンス データの収集
@@ -21,10 +21,10 @@ ms.locfileid: "68154069"
 
 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] プロファイリング ツールでは、プロファイル方法を使用して収集するデータ以外に、追加のデータを記録および表示できます。  
   
-## <a name="common-tasks"></a>よく使う機能  
+## <a name="common-tasks"></a>一般的なタスク  
   
 |タスク|関連コンテンツ|  
 |----------|---------------------|  
 |**アプリケーションの ADO.NET 呼び出しのパフォーマンス データを収集する。** アプリケーションがデータベースに対して行う同期呼び出しに関するデータを追加します。|-   [階層相互作用データの収集](../profiling/collecting-tier-interaction-data.md)|  
-|**Windows パフォーマンス カウンター データを収集する。** システム パフォーマンス カウンターをプロファイル マークとしてプロファイル データに追加します。 マークは、レポートをフィルター処理するために使用できます。|-   [方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)|  
-|**ETW (Event Tracing for Windows) データを収集する。** ETW データを収集して、プロファイル データに加えてアプリケーション イベントおよびシステム イベントも記録します。|-   [方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|**Windows パフォーマンス カウンター データを収集する。** システム パフォーマンス カウンターをプロファイル マークとしてプロファイル データに追加します。 マークは、レポートをフィルター処理するために使用できます。|-   [方法: Windows カウンターデータを収集する](../profiling/how-to-collect-windows-counter-data.md)|  
+|**ETW (Event Tracing for Windows) データを収集する。** ETW データを収集して、プロファイル データに加えてアプリケーション イベントおよびシステム イベントも記録します。|-   [方法: Windows イベントトレーシング (ETW) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|

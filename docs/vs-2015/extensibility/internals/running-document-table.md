@@ -1,5 +1,5 @@
 ---
-title: Document テーブルを実行している |。Microsoft Docs
+title: Document Table | を実行していますMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,49 +15,49 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155558"
 ---
 # <a name="running-document-table"></a>ドキュメント テーブルの実行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-IDE では、実行中のドキュメント テーブル (RDT) と呼ばれる内部構造内のすべての現在開いているドキュメントの一覧を保持します。 この一覧には、これらのドキュメントの現在編集されているかどうかに関係なく、メモリ内のすべての開いているドキュメントが含まれています。 ドキュメントでは、プロジェクトまたはメイン プロジェクト ファイル (.vcxproj ファイルなど) でファイルを含む、保存されている任意の項目です。  
+IDE では、現在開いているすべてのドキュメントの一覧が、実行中のドキュメントテーブル (RDT) と呼ばれる内部構造で保持されます。 この一覧には、これらのドキュメントが現在編集されているかどうかに関係なく、メモリ内のすべての開いているドキュメントが含まれます。 ドキュメントは、プロジェクトまたはメインプロジェクトファイル (.vcxproj ファイルなど) 内のファイルを含む、永続化された任意の項目です。  
   
-## <a name="elements-of-the-running-document-table"></a>実行中の Document テーブルの要素  
- 実行中のドキュメント テーブルには、次のエントリが含まれています。  
+## <a name="elements-of-the-running-document-table"></a>実行中のドキュメントテーブルの要素  
+ 実行中のドキュメントテーブルには、次のエントリが含まれています。  
   
 |要素|説明|  
 |-------------|-----------------|  
-|ドキュメント モニカー|ドキュメント データ オブジェクトを一意に識別する文字列。 ファイル (たとえば、C:\MyProject\MyFile) を管理するプロジェクト システムのファイルの絶対パスになります。 この文字列は、データベース内のストアド プロシージャなど、ファイル システム以外のストアに保存されているプロジェクトに対しても使用されます。 この場合、プロジェクト システムが認識してドキュメントを格納する方法を決定する可能性がある解析する一意の文字列の在庫のことができます。|  
-|階層の所有者|によって表される、ドキュメントを所有する hierarchy オブジェクト、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>インターフェイス。|  
-|項目 ID|階層内の特定の項目の項目の識別子。 この値はこのドキュメントを所有している階層内のすべてのドキュメント間で一意ですが、この値は、さまざまな階層間で一意であることは保証されません。|  
-|ドキュメント データ オブジェクト|これは、少なくとも、 `IUnknown`<br /><br /> オブジェクト。 IDE は、特定のインターフェイスを超えるを必要としない、`IUnknown`カスタム エディターのドキュメント データ オブジェクトのインターフェイス。 ただし、標準のエディター用のエディターの実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>インターフェイスは、プロジェクトからファイルの永続化の呼び出しを処理するために必要です。 詳細については、次を参照してください。[標準ドキュメントの保存](../../extensibility/internals/saving-a-standard-document.md)します。|  
-|フラグ|ドキュメントを保存するかどうか、読み取りまたは編集のロックが適用されるかどうかを制御するフラグは、RDT にエントリを追加指定できます。 詳細については、<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列挙型のページをご覧ください。|  
-|ロックの数を編集します。|編集のロックの数。 編集のロックをするには、いくつかのエディターがドキュメントを開いて編集することを示します。 編集のロックの数を 0 にへの移行が変更された場合、ドキュメントを保存する、ユーザーが表示されます。 たとえばを使用して、エディターでドキュメントを開くたびに、**新しいウィンドウ**コマンドを RDT でそのドキュメントの編集のロックが追加されます。 編集のロックを設定するためには、ドキュメントか必要があります階層がある項目の id。|  
-|読み取りロック数|読み取りロックを数します。 読み取りロックでは、ウィザードなどのメカニズムによって、ドキュメントが読み取られることを示します。 読み取りロックでは、ドキュメントを編集できないことを示すときに、RDT では有効なドキュメントを保持します。 ドキュメントから階層があるまたは項目の id。 ない場合でも、読み取りロックを設定できます。 この機能を使用すると、メモリ内、ドキュメントを開き、任意の階層によって所有されているドキュメントなし、RDT に入力できます。 この機能はほとんど使用されません。|  
-|ロックの所有者|インスタンス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>インターフェイス。 ロックの所有者は、ウィザードを開き、エディター外でドキュメントを編集するなどの機能によって実装されます。 ロックの所有者は、ドキュメントがまだ編集中に閉じられていることを防ぐためにドキュメントに、編集のロックを追加する機能を使用できます。 通常、編集のロックはドキュメント ウィンドウ (つまり、エディター) でのみ追加されます。|  
+|ドキュメントモニカー|ドキュメントデータオブジェクトを一意に識別する文字列。 これは、ファイルを管理するプロジェクトシステムの絶対ファイルパスです (たとえば、C:\MyProject\MyFile)。 この文字列は、データベース内のストアドプロシージャなど、ファイルシステム以外のストアに保存されたプロジェクトにも使用されます。 この場合、プロジェクトシステムは、ドキュメントを格納する方法を決定するために認識して解析できる一意の文字列を指定できます。|  
+|階層の所有者|ドキュメントを所有する階層オブジェクト。インターフェイスによって表さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> れます。|  
+|項目 ID|階層内の特定の項目の項目識別子。 この値は、このドキュメントを所有する階層内のすべてのドキュメント間で一意ですが、この値は異なる階層間で一意であるとは限りません。|  
+|ドキュメントデータオブジェクト|少なくとも、これは `IUnknown`<br /><br /> オブジェクト。 IDE では、 `IUnknown` カスタムエディターのドキュメントデータオブジェクトのインターフェイスを超える特定のインターフェイスは必要ありません。 ただし、標準のエディターでは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> プロジェクトからのファイルの永続化呼び出しを処理するために、エディターのインターフェイスの実装が必要です。 詳細については、「 [標準ドキュメントの保存](../../extensibility/internals/saving-a-standard-document.md)」を参照してください。|  
+|フラグ|ドキュメントを保存するかどうかを制御するフラグ (読み取りロックまたは編集ロックを適用するかどうかなど) は、RDT にエントリを追加するときに指定できます。 詳細については、<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 列挙型のページをご覧ください。|  
+|ロック数の編集|編集ロックの数。 編集ロックは、一部のエディターでドキュメントが編集用に開かれていることを示します。 編集ロックの数が0に遷移すると、ドキュメントが変更されている場合は、保存するように求められます。 たとえば、[ **新しいウィンドウ** ] コマンドを使用してエディターでドキュメントを開くたびに、rdt にそのドキュメントの編集ロックが追加されます。 編集ロックを設定するには、ドキュメントに階層または項目 ID が必要です。|  
+|読み取りロック数|読み取りロックの数。 読み取りロックは、ドキュメントがウィザードなどの何らかのメカニズムによって読み取られていることを示します。 読み取りロックは、ドキュメントを編集できないことを示すために、RDT でドキュメントを保持します。 ドキュメントに階層または項目 ID がない場合でも、読み取りロックを設定できます。 この機能を使用すると、メモリ内のドキュメントを開いて、ドキュメントが階層によって所有されていなくても、RDT に入力できます。 この機能はほとんど使用されません。|  
+|ロックホルダー|インターフェイスのインスタンス <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 。 ロックホルダーは、エディター以外でドキュメントを開いたり編集したりするためのウィザードなどの機能によって実装されます。 ロックの所有者は、編集ロックを文書に追加して、編集中のドキュメントが閉じられるのを防ぐことができます。 通常、編集ロックは、ドキュメントウィンドウ (つまり、エディター) によってのみ追加されます。|  
   
- RDT の各エントリは、一意の階層をまたはそれに関連付けられている、一般的に、プロジェクトの 1 つのノードに対応する項目 ID があります。 編集に利用できるすべてのドキュメントでは、階層通常が所有します。 RDT で作成されたエントリは、プロジェクトを制御または -より正確に、どの階層が現在編集対象のドキュメント データ オブジェクトを所有しています。 RDT の情報を使用して、IDE は、一度に 1 つ以上のプロジェクトで開かれているからドキュメントを防ぐことができます。  
+ RDT 内の各エントリには、一意の階層または項目 ID が関連付けられています。これは、通常、プロジェクト内の1つのノードに対応しています。 編集に使用できるすべてのドキュメントは、通常、階層によって所有されます。 RDT で作成されたエントリは、どの階層が、現在編集中のドキュメントデータオブジェクトを所有しているかをより正確に制御します。 IDE では、RDT の情報を使用して、一度に複数のプロジェクトによってドキュメントが開かれないようにすることができます。  
   
- 階層データの永続化を制御して更新する、RDT の情報を使用しても、**保存**と**付けて** ダイアログ ボックス。 ユーザーがドキュメントの変更し、選択し、**終了**コマンドから、**ファイル**メニュー、IDE でプロンプト、**変更の保存**それらのすべてのプロジェクトを表示する ダイアログ ボックスプロジェクトの変更は現在の項目。 これにより、保存するドキュメントの中から選択できます。 保存するドキュメントの一覧 (つまり、変更が存在するそれらのドキュメント)、RDT から生成されます。 すべての項目を参照するくださいと想定している、**変更の保存**アプリケーションの終了時にダイアログ ボックスで、RDT のレコードがあります。 どのドキュメントが保存され、保存についてユーザーに求めるかどうかを調整する、RDT 各ドキュメントのフラグのエントリで指定された値を使用して操作します。 RDT フラグの詳細については、次を参照してください。、<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>列挙体。  
+ 階層では、データの永続性も制御され、RDT の情報を使用して [ **保存** ] ダイアログボックスと [ **名前を付けて保存** ] ダイアログボックスが更新されます。 ユーザーがドキュメントを変更した後、[**ファイル**] メニューから [**終了**] コマンドを選択すると、[**変更の保存**] ダイアログボックスが表示され、現在変更されているすべてのプロジェクトとプロジェクト項目が表示されます。 これにより、ユーザーは保存するドキュメントを選択できます。 保存するドキュメントの一覧 (変更されたドキュメント) は、RDT から生成されます。 アプリケーションの終了時に [ **変更の保存** ] ダイアログボックスに表示されるはずの項目には、rdt のレコードが含まれている必要があります。 RDT では、保存されるドキュメントと、各ドキュメントの Flags エントリに指定された値を使用して保存操作についてユーザーに確認を求めるかどうかを調整します。 RDT フラグの詳細については、列挙体を参照してください <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 。  
   
-## <a name="edit-locks-and-read-locks"></a>編集のロックとロックの読み取り  
- 編集のロックと読み取りロックが、RDT 内に存在します。 ドキュメント ウィンドウのインクリメントとデクリメント、編集をロックします。 そのため、ユーザーでは、新しいドキュメント ウィンドウが開いたら、編集のロックは 1 つずつをカウントします。 編集のロックの数がゼロに達すると、永続化または関連付けられているドキュメントのデータを保存する階層が通知されます。 階層は、次に、ファイル、またはリポジトリ内の項目として永続化など、何らかの方法でデータを保持できます。 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.LockDocument%2A>メソッドで、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>編集のロックを追加し、読み取りロックでは、インターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A>これらのロックを削除する方法。  
+## <a name="edit-locks-and-read-locks"></a>ロックと読み取りロックの編集  
+ Edit locks と read locks は RDT に存在します。 ドキュメントウィンドウは、編集ロックを増減します。 このため、ユーザーが新しいドキュメントウィンドウを開くと、編集ロックカウントは1ずつ増加します。 編集ロックの数が0になると、階層は、関連付けられているドキュメントのデータを永続化または保存するように通知されます。 階層では、ファイルとして永続化したり、リポジトリ内の項目として保持するなど、任意の方法でデータを永続化することができます。 インターフェイスでメソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.LockDocument%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> 編集ロックと読み取りロックを追加したり、メソッドを使用してこれらのロックを解除したりでき <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> ます。  
   
- 通常、エディターのドキュメント ウィンドウがインスタンス化されるときにウィンドウ フレーム自動的に追加のドキュメントの編集のロックを RDT の。 ただし、ドキュメントのカスタム ビューを作成する場合を使用しない標準のドキュメント ウィンドウ (つまり、実装していない、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>インターフェイス)、独自の編集のロックを設定する必要があります。 たとえば、ウィザードで文書をエディターで開かれることがなく編集します。 ウィザードと同種のエンティティによって開かれているドキュメントのロックのためには、これらのエンティティを実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>インターフェイス。 ドキュメント ロックの保持者を登録するには、呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A>メソッド、およびパスで、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>実装します。 これにより、ドキュメント ロック ホルダーを RDT に追加します。 ドキュメント ロック ホルダーを実装するためのもう 1 つのシナリオでは、特別なツール ウィンドウを使用してドキュメントを開くかどうかです。 このインスタンスでできないドキュメントを閉じるツール ウィンドウにします。 ただしに、RDT のドキュメント ロック ホルダーとして登録する IDE は実装を呼び出すの<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder.CloseDocumentHolder%2A>ドキュメントの終了を要求するメソッド。  
+ 通常、エディターのドキュメントウィンドウがインスタンス化されると、ウィンドウフレームによって、RDT 内のドキュメントの編集ロックが自動的に追加されます。 ただし、標準のドキュメントウィンドウを使用しない (つまり、インターフェイスを実装しない) ドキュメントのカスタムビューを作成する場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> 独自の編集ロックを設定する必要があります。 たとえば、ウィザードでは、エディターで開かずにドキュメントが編集されます。 ウィザードと同様のエンティティによってドキュメントロックが開かれるようにするには、これらのエンティティがインターフェイスを実装する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> ます。 ドキュメントのロックホルダーを登録するには、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> 実装を渡し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> ます。 これにより、ドキュメントのロックホルダーが RDT に追加されます。 ドキュメントロックホルダーを実装するもう1つのシナリオは、特別なツールウィンドウでドキュメントを開く場合です。 このインスタンスでは、ツールウィンドウでドキュメントを閉じることはできません。 ただし、RDT でドキュメントのロックの所有者として登録することにより、IDE はメソッドの実装を呼び出して、ドキュメントを閉じるように求めることができ <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder.CloseDocumentHolder%2A> ます。  
   
-## <a name="other-uses-of-the-running-document-table"></a>実行中の Document テーブルの他の使用  
- IDE の他のエンティティは、ドキュメントに関する情報を取得、RDT を使用します。 たとえば、ソース コントロールのマネージャーは、ファイルの最新バージョンを取得した後に、エディターでドキュメントを再読み込みするのにシステムに指示するのに、RDT を使用します。 これを行うには、ソース コントロールのマネージャーは、これらのいずれかが開いている RDT 内のファイルを検索します。 ソース コントロール マネージャーは、まず、階層を実装することを確認する場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>メソッド。 プロジェクトが実装していない場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>メソッド、そのソース制御マネージャーのチェックの実装については、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>ドキュメント データ オブジェクトを直接のメソッド。  
+## <a name="other-uses-of-the-running-document-table"></a>実行中のドキュメントテーブルのその他の使用  
+ IDE 内の他のエンティティは、RDT を使用してドキュメントに関する情報を取得します。 たとえば、ソース管理マネージャーは RDT を使用して、ファイルの最新バージョンを取得した後に、エディターでドキュメントを再読み込みするようにシステムに指示します。 これを行うには、ソース管理マネージャーが RDT 内のファイルを検索して、いずれかが開いているかどうかを確認します。 指定されている場合、ソース管理マネージャーはまず、階層がメソッドを実装していることを確認し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> ます。 プロジェクトがメソッドを実装していない場合 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> 、ソース管理マネージャーは、ドキュメントデータオブジェクトに対してメソッドの実装を直接確認し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> ます。  
   
- IDE が再び表面化することも、RDT を使用 (、最前面へ移動)、ユーザーがそのドキュメントを要求した場合、開いているドキュメント。 詳細については、次を参照してください。 [Open File コマンドを使用してファイルを表示する](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)します。 ファイルが、RDT で開いているかどうかを判断するには、1 つは、以下します。  
+ また、ユーザーがドキュメントを要求した場合、IDE は RDT を使用して開いているドキュメントを resurface (前面に移動) します。 詳細については、「[ [ファイルを開く] コマンドを使用したファイルの表示](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)」を参照してください。 ファイルが RDT で開かれているかどうかを確認するには、次のいずれかの操作を行います。  
   
-- 項目が開いているを確認するには、ドキュメント モニカー (つまり、ドキュメントの完全パス) を照会します。  
+- ドキュメントモニカー (つまり、完全なドキュメントパス) を照会して、アイテムが開いているかどうかを確認します。  
   
-- 階層または項目の ID を使用して、プロジェクト システムを完全なドキュメントのパス、要求を RDT を項目を検索します。  
+- 階層または項目 ID を使用して、プロジェクトシステムに完全なドキュメントパスを要求してから、RDT で項目を確認します。  
   
-## <a name="see-also"></a>関連項目  
- [RDT_ReadLock の使用法](../../extensibility/internals/rdt-readlock-usage.md)   
+## <a name="see-also"></a>参照  
+ [RDT_ReadLock の使用状況](../../extensibility/internals/rdt-readlock-usage.md)   
  [ドキュメント テーブルの保存と実行](../../extensibility/internals/persistence-and-the-running-document-table.md)

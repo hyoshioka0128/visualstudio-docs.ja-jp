@@ -1,4 +1,4 @@
-﻿---
+---
 title: -Edit (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c81f59f2dadf535af4e9a76949a29fd1355c33f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657745"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -47,5 +47,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs
 ```
 
-## <a name="see-also"></a>関連項目
- [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>参照
+ [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md)

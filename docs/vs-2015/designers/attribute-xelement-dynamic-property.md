@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 551e072b05e7a88ff9624c5d16e4aa199a6afd66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657982"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (XElement 動的プロパティ)
@@ -34,4 +34,4 @@ elem.Attribute[{namespaceName}attribName]
  このプロパティは、<xref:System.Xml.Linq.XElement.Attribute%2A> クラスの <xref:System.Xml.Linq.XElement?displayProperty=fullName> メソッドに相当します。
 
 ## <a name="see-also"></a>参照
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName> [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)[値](../designers/value-xattribute-dynamic-property.md)
+ <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>[XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)[値](../designers/value-xattribute-dynamic-property.md)

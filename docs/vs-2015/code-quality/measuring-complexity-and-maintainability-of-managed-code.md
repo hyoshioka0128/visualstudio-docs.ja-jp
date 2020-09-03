@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658073"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>マネージド コードの複雑さと保守性の測定
@@ -31,9 +31,9 @@ ms.locfileid: "72658073"
 
 また、最新のソフトウェアアプリケーションが複雑になるほど、コードの信頼性と保守性が向上します。 最近では、コードメトリックスと呼ばれる多くのソフトウェア測定が開発されており、開発者がコードを再作成したりテストを増やしたりする場所を理解するのに役立ちます。
 
- 開発者は、[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] を使用して、マネージコードの複雑さと保守性を測定するコードメトリックスデータを生成できます。 コードメトリックスデータは、ソリューション全体または単一のプロジェクトに対して生成できます。
+ 開発者は [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 、を使用して、マネージコードの複雑さと保守性を測定するコードメトリックスデータを生成できます。 コードメトリックスデータは、ソリューション全体または単一のプロジェクトに対して生成できます。
 
- このセクションでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でコードメトリックスを生成して使用する方法について説明します。
+ ここでは、でコードメトリックスを生成して使用する方法について説明し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [コード メトリックス値](../code-quality/code-metrics-values.md)

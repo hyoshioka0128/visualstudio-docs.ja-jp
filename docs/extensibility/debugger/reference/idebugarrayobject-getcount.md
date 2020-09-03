@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugArrayObject:: GetCount |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d9d5e322b7bcd5238335c74caa21989f1f1962ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736201"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>パラメーター
 `pdwElements`\
-[アウト]カウントを返します。
+入出力カウントを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、配列オブジェクトが多次元であっても、配列オブジェクトのすべての要素を 1 次元配列として認識します。 たとえば、配列`myarray[3][2][6]`を指定すると、このメソッドはパラメータの 36`pdwElements`を返します。 [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)メソッドを使用して、個々の要素を一度に 1 つずつ取得します。
+## <a name="remarks"></a>解説
+ このメソッドは、配列オブジェクトが多次元であっても、配列オブジェクトのすべての要素を1次元配列として表示します。 たとえば、配列の場合 `myarray[3][2][6]` 、このメソッドはパラメーターで36を返し `pdwElements` ます。 [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)メソッドを使用して、一度に1つずつ個別の要素を取得します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
