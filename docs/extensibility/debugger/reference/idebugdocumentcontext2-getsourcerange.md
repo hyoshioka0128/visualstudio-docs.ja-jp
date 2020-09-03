@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: 'IDebugDocumentContext2:: GetSourceRange |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731790"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
-このドキュメント コンテキストのソース コード範囲を取得します。
+このドキュメントコンテキストのソースコードの範囲を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,18 +43,18 @@ int GetSourceRange( 
 
 ## <a name="parameters"></a>パラメーター
 `pBegPosition`\
-[イン、アウト]開始位置で埋め込まれる[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体。 この情報が必要ない場合は、この引数を null 値に設定します。
+[入力、出力]開始位置を格納する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。 この情報が不要な場合は、この引数を null 値に設定します。
 
 `pEndPosition`\
-[イン、アウト]終了位置で埋め込まれる[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体。 この情報が必要ない場合は、この引数を null 値に設定します。
+[入力、出力]終了位置を格納する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。 この情報が不要な場合は、この引数を null 値に設定します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- ソース範囲は、ソース コードの範囲全体で、現在のステートメントから、コードを提供した直前のステートメントの直後までさかのぼります。 ソース範囲は通常、ソースステートメント (コメントを含む) と逆アセンブリウィンドウのコードを混在させる場合に使用されます。
+## <a name="remarks"></a>解説
+ ソース範囲は、ソースコードの範囲全体であり、現在のステートメントから、コードを提供した前のステートメントの直後に戻ります。 ソース範囲は、通常、コメントなどのソースステートメントと、[逆アセンブル] ウィンドウのコードを組み合わせるために使用されます。
 
- このドキュメント コンテキストに含まれるコード ステートメントの範囲だけを取得するには[、GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)メソッドを呼び出します。
+ このドキュメントコンテキスト内に含まれるコードステートメントの範囲だけを取得するには、 [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

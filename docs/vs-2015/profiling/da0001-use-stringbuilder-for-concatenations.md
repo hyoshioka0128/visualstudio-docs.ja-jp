@@ -15,24 +15,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531405"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: StringBuilder を使用して連結してください
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001:連結には StringBuilder を使用してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新のドキュメントについては、「 [DA0001: StringBuilder を使用](/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)した連結」を参照してください。  
   
-|Item|値|  
+|Item|[値]|  
 |-|-|  
 |規則 ID|DA0001|  
 |カテゴリ|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション|  
-|Message|文字列の連結に StringBuilder を使用することを検討してください。|  
-|メッセージ型|警告|  
+|メッセージ|文字列の連結に StringBuilder を使用することを検討してください。|  
+|メッセージの種類|警告|  
   
 ## <a name="cause"></a>原因  
  System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。  

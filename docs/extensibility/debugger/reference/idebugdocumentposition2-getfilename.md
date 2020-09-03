@@ -1,5 +1,5 @@
 ---
-title: ドキュメントの位置 2::ファイル名を取得する |マイクロソフトドキュメント
+title: 'IDebugDocumentPosition2:: GetFileName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7cc194c43b0a95ad92e9421334be7af2cd6073b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731682"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-ドキュメントの位置を含むソース ファイルのファイル名を取得します。
+ドキュメントの位置を格納しているソースファイルのファイル名を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetFileName( 
 
 ## <a name="parameters"></a>パラメーター
 `pbstrFileName`\
-[アウト]ソース ファイルのファイル名を返します。
+入出力ソースファイルのファイル名を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- ソース ファイルにファイル名が常に含まれていない場合があります (たとえば、ソース ファイルがディスク上に存在しない場合など)。
+## <a name="remarks"></a>解説
+ ソースファイルには、常にファイル名が含まれているとは限りません (ソースファイルがディスク上に存在しない場合など)。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

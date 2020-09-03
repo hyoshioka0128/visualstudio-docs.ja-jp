@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905284"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスで拡張されたアウトラインサポートを提供する
-[**定義に折りたたむ**] コマンドをサポートしていないと、言語のアウトラインサポートを拡張するためのオプションが2つあります。 エディターによって制御されるアウトライン領域を追加し、クライアントによって制御されるアウトライン領域を追加できます。
+[ **定義に折りたたむ** ] コマンドをサポートしていないと、言語のアウトラインサポートを拡張するためのオプションが2つあります。 エディターによって制御されるアウトライン領域を追加し、クライアントによって制御されるアウトライン領域を追加できます。
 
 ## <a name="adding-editor-controlled-outline-regions"></a>エディターで制御されるアウトライン領域の追加
  この方法を使用してアウトライン領域を作成し、その領域が展開されているか折りたたまれているかをエディターが処理できるようにします。 アウトラインサポートを提供する2つのオプションのうち、このオプションは最も堅牢なものです。 このオプションでは、を使用して、指定したテキスト範囲で新しいアウトライン領域を作成し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> ます。 この領域が作成されると、その動作はエディターによって制御されます。 エディターで制御されるアウトライン領域を実装するには、次の手順に従います。

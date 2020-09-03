@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148228"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -45,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` は有効な .vsp ファイルまたは .vsps ファイルである必要があります。  
   
 ## <a name="symbol-files"></a>シンボル ファイル  
- 関数名や行番号などのシンボル情報を表示するには、VSPerfReport が、プロファイルしたコンポーネントのシンボル (.pdb) ファイルおよび Windows シンボル ファイルにアクセスできる必要があります。 詳細については、「[方法 :コマンドラインからシンボル ファイルの場所を指定](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)します。  
+ 関数名や行番号などのシンボル情報を表示するには、VSPerfReport が、プロファイルしたコンポーネントのシンボル (.pdb) ファイルおよび Windows シンボル ファイルにアクセスできる必要があります。 詳細については、「 [方法: コマンドラインからシンボルファイルの場所を指定する](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)」を参照してください。  
   
 ## <a name="general-report-options"></a>一般的なレポート オプション  
  次の表では、一般的なレポートの書式指定オプションと、報告対象のデータを選択するためのオプションについて説明します。  
@@ -92,5 +92,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:** [*columnname*]|この列を使用して、値を比較します。 既定では排他サンプルのパーセント列が使用されます。|  
 |**QueryDiffTables**|指定された 2 つのレポート ファイルに関する有効なテーブルおよび列をリストします。|  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンスレポートのビュー](../profiling/performance-report-views.md)

@@ -1,5 +1,5 @@
 ---
-title: MSSCCPRJ.SCC ファイル |マイクロソフトドキュメント
+title: MSSCCPRJ.SCC.SCC ファイル |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,66 +12,66 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702463"
 ---
-# <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC ファイル
-IDE を使用して Visual Studio のソリューションまたはプロジェクトをソース管理下に配置すると、IDE は 2 つの重要な情報を受け取ります。 この情報は、ソース管理プラグインから文字列形式で取得されます。 これらの文字列 "AuxPath" および "ProjName" は IDE に対して不透明ですが、バージョン管理のソリューションまたはプロジェクトを見つけるためにプラグインによって使用されます。 IDE は通常[、SccGetProjPath](../extensibility/sccgetprojpath-function.md)を呼び出すことによってこれらの文字列を初めて取得し、その後[SccOpenProject](../extensibility/sccopenproject-function.md)を呼び出すためにソリューション ファイルまたはプロジェクト ファイルに保存します。 ソリューション ファイルとプロジェクト ファイルに埋め込まれている場合、バージョン管理のソリューション ファイルやプロジェクト ファイルを分岐、フォーク、またはコピーしたときに、"AuxPath" および "ProjName" 文字列は自動的に更新されません。 ソリューション ファイルとプロジェクト ファイルがバージョン管理の正しい場所を指していることを確認するには、ユーザーが文字列を手動で更新する必要があります。 文字列は不透明であるため、更新方法が明確であるとは限りません。
+# <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC.SCC ファイル
+IDE を使用して Visual Studio ソリューションまたはプロジェクトをソース管理下に配置すると、IDE は2つの重要な情報を受け取ります。 この情報は、ソース管理プラグインから文字列の形式で取得されます。 これらの文字列 "/" は IDE に対して不透明ですが、プラグインによって使用され、バージョン管理でソリューションまたはプロジェクトを検索します。 通常、IDE では [Sccgetprojpath](../extensibility/sccgetprojpath-function.md)を呼び出してこれらの文字列を最初に取得し、次に [Sccopenproject](../extensibility/sccopenproject-function.md)への後続の呼び出しのためにソリューションまたはプロジェクトファイルに保存します。 ソリューションファイルとプロジェクトファイルに埋め込まれている場合、ユーザーがバージョン管理されているソリューションやプロジェクトファイルを分岐、分岐、またはコピーしても、"" 更新 "と" ProjName "の文字列は自動的に更新されません。 ソリューションファイルとプロジェクトファイルがバージョンコントロールの正しい位置を指していることを確認するには、ユーザーが文字列を手動で更新する必要があります。 文字列は不透明であるため、常に更新方法が明確であるとは限りません。
 
- ソース管理プラグインは、"AuxPath" および "ProjName" 文字列を*MSSCCPRJ.SCC*ファイルと呼ばれる特別なファイルに格納することで、この問題を回避できます。 これは、プラグインによって所有および管理されるローカルのクライアント側ファイルです。 このファイルはソース管理下に置かれることはありませんが、ソース管理されたファイルを含むすべてのディレクトリのプラグインによって生成されます。 どのファイルが Visual Studio ソリューション ファイルとプロジェクト ファイルかを判断するために、ソース管理プラグインは、標準またはユーザー指定のリストとファイル拡張子を比較できます。 プラグインが*MSSCCPRJ.SCC*ファイルをサポートしていることを検出すると、"AuxPath" および "ProjName" 文字列がソリューション ファイルとプロジェクト ファイルに埋め込まれなくなり、代わりに*MSSCCPRJ.SCC*ファイルからそれらの文字列が読み込まれます。
+ ソース管理プラグインは、Mssccprj.scc ファイルと呼ばれる特殊なファイルに " *MSSCCPRJ.SCC* " 文字列と "ProjName" 文字列を格納することで、この問題を回避できます。 これは、プラグインによって所有および管理されるローカルのクライアント側ファイルです。 このファイルはソース管理下には配置されませんが、ソース管理されたファイルを含むすべてのディレクトリのプラグインによって生成されます。 どのファイルが Visual Studio ソリューションとプロジェクトファイルであるかを判断するために、ソース管理プラグインは、ファイル拡張子を標準またはユーザーが指定したリストと比較できます。 プラグインが*mssccprj.scc*ファイルをサポートしていることが IDE によって検出されると、"mssccprj.scc" という文字列がソリューションとプロジェクトファイルに埋め込まれなくなり、それらの文字列が*MSSCCPRJ.SCC*ファイルから読み込まれます。
 
- *MSSCCPRJ.SCC*ファイルをサポートするソース管理プラグインは、次のガイドラインに従う必要があります。
+ *Mssccprj.scc*ファイルをサポートするソース管理プラグインは、次のガイドラインに従う必要があります。
 
-- ディレクトリごとに 1 つの*MSSCCPRJ.SCC*ファイルしか存在できません。
+- *Mssccprj.scc*ファイルは、ディレクトリごとに1つだけ指定できます。
 
-- *MSSCCPRJ.SCC*ファイルには、特定のディレクトリ内でソース管理下にある複数のファイルの "AuxPath" および "ProjName" を含めることができます。
+- Mssccprj.scc ファイルには、指定されたディレクトリ内のソース管理下にある複数のファイルの " *MSSCCPRJ.SCC* xpath" と "ProjName" を含めることができます。
 
-- "AuxPath" 文字列の中に引用符を含んではなりません。 引用符を区切り文字として囲むことができます (たとえば、二重引用符のペアを使用して空の文字列を示すことができます)。 IDE は *、MSSCCPRJ.SCC*ファイルから読み取られると、"AuxPath" 文字列からすべての引用符を削除します。
+- "/Xpath" 文字列の中に引用符を含めることはできません。 区切り記号として引用符を付けることができます (たとえば、二重引用符のペアを使用して空の文字列を示すことができます)。 IDE では、Mssccprj.scc ファイルから読み取られるときに、" *MSSCCPRJ.SCC* xpath" 文字列からすべての引用符が削除されます。
 
-- MSSCCPRJ の "ProjName" 文字列 *。SCC ファイル*は、関数から返された文字列`SccGetProjPath`と完全に一致する必要があります。 関数によって返される文字列に引用符が含まれる場合 *、MSSCCPRJ.SCC*ファイル内の文字列は引用符を含む必要があります。
+- Mssccprj.scc の "ProjName" 文字列 *。SCC ファイル* は、関数から返された文字列と正確に一致している必要があり `SccGetProjPath` ます。 関数によって返される文字列が引用符で囲まれている場合、 *mssccprj.scc* ファイル内の文字列は引用符で囲む必要があります。その逆も同様です。
 
-- *MSSCCPRJ.SCC*ファイルは、ソース管理下に置かれるたびに作成または更新されます。
+- ファイルがソース管理下に配置されるたびに、 *mssccprj.scc* ファイルが作成または更新されます。
 
-- *MSSCCPRJ.SCC*ファイルが削除された場合、プロバイダは、そのディレクトリに関するソース管理操作を次回実行する時に、ファイルを再生成する必要があります。
+- *Mssccprj.scc*ファイルが削除された場合、プロバイダーは、そのディレクトリに関するソース管理操作を次回実行するときに、このファイルを再生成する必要があります。
 
-- *MSSCCPRJ.SCC*ファイルは、定義された形式に厳密に従う必要があります。
+- *Mssccprj.scc*ファイルは、定義された形式に厳密に従う必要があります。
 
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ の図。SCC ファイル形式
- 以下は*MSSCCPRJ.SCC*ファイル形式のサンプルです (行番号はガイドとしてのみ提供され、ファイル本文に含めるべきではありません)。
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ.SCC の図。SCC ファイル形式
+ 次に示すのは、 *mssccprj.scc* ファイル形式のサンプルです (行番号はガイドとしてのみ提供されており、ファイル本文に含めることはできません)。
 
-- [1行目]`SCC = This is a Source Code Control file`
+- [行 1] `SCC = This is a Source Code Control file`
 
-- [2行目]
+- [2 行目]
 
-- [3行目]`[TestApp.sln]`
+- [行 3] `[TestApp.sln]`
 
-- [4行目]`SCC_Aux_Path = "\\server\vss\"`
+- [4 行目] `SCC_Aux_Path = "\\server\vss\"`
 
-- [5行目]`SCC_Project_Name = "$/TestApp"`
+- [行 5] `SCC_Project_Name = "$/TestApp"`
 
-- [6行目]
+- [6 行目]
 
-- [7行目]`[TestApp.csproj]`
+- [7 行目] `[TestApp.csproj]`
 
-- [8行目]`SCC_Aux_Path = "\\server\vss\"`
+- [行 8] `SCC_Aux_Path = "\\server\vss\"`
 
-- [9行目]`SCC_Project_Name = "$/TestApp"`
+- [9 行目] `SCC_Project_Name = "$/TestApp"`
 
- 最初の行は、ファイルの目的を示し、この種類のすべてのファイルの署名として機能します。 この行は、すべての*MSSCCPRJ.SCC*ファイルで次のように表示されます。
+ 最初の行は、ファイルの目的を示すもので、この種類のすべてのファイルの署名として機能します。 この行は、すべての *mssccprj.scc* ファイルで次のように表示されます。
 
  `SCC = This is a Source Code Control file`
 
- 次のセクションでは、ファイル名が角かっこで囲まれた各ファイルの設定について詳しく説明します。 このセクションは、追跡対象のファイルごとに繰り返されます。 この行は、ファイル名のサンプルです`[TestApp.csproj]`。 IDE では、次の 2 行が想定されます。 ただし、定義された値のスタイルは定義されません。 変数は`SCC_Aux_Path`と`SCC_Project_Name`です。
+ 次のセクションでは、ファイル名が角かっこで囲まれた各ファイルの設定について詳しく説明します。 このセクションは、追跡されるファイルごとに繰り返されます。 この行は、ファイル名のサンプルです (つまり、) `[TestApp.csproj]` 。 IDE では、次の2行が必要です。 ただし、定義されている値のスタイルは定義されません。 変数は `SCC_Aux_Path` と `SCC_Project_Name` です。
 
  `SCC_Aux_Path = "\\server\vss\"`
 
  `SCC_Project_Name = "$/TestApp"`
 
- このセクションには終了区切り記号はありません。 ファイルの名前と、ファイルに含まれるすべてのリテラルは、scc.h ヘッダー ファイルで定義されます。 詳細については、「[ソース管理プラグインを検索するためのキーとして使用される文字列](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)」を参照してください。
+ このセクションには、末尾の区切り記号がありません。 ファイルの名前、およびファイルに表示されるすべてのリテラルは、scc ヘッダーファイルで定義されています。 詳細については、「 [ソース管理プラグインを検索するためのキーとして使用される文字列](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [ソース管理プラグインを検索するためのキーとして使用される文字列](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

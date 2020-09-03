@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381705"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>方法: ClickOnce を使用して、複数のバージョンの .NET Framework で実行できるアプリケーションを配置する
@@ -35,7 +35,7 @@ ClickOnce 配置テクノロジを使用して、複数のバージョンの .NE
 
 2. 複数の .NET Framework バージョンを一覧表示するように配置マニフェストを変更します。
 
-3. 互換性のある .NET Framework ランタイムバージョンを一覧表示するように*app.config*ファイルを変更します。
+3. 互換性のある .NET Framework ランタイムバージョンを一覧表示するように *app.config* ファイルを変更します。
 
 4. 依存アセンブリを .NET Framework アセンブリとしてマークするようにアプリケーションマニフェストを変更します。
 
@@ -49,7 +49,7 @@ ClickOnce 配置テクノロジを使用して、複数のバージョンの .NE
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>複数の .NET Framework バージョンを一覧表示するように配置マニフェストを変更するには
 
-1. 発行ディレクトリで、Visual Studio の XML エディターを使用して配置マニフェストを開きます。 配置マニフェストには、*アプリケーション*のファイル名拡張子が付いています。
+1. 発行ディレクトリで、Visual Studio の XML エディターを使用して配置マニフェストを開きます。 配置マニフェストには、 *アプリケーション* のファイル名拡張子が付いています。
 
 2. 要素と要素の間の XML コードを、 `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` `</compatibleFrameworks>` アプリケーションでサポートされている .NET Framework バージョンを示す xml に置き換えます。
 
@@ -65,7 +65,7 @@ ClickOnce 配置テクノロジを使用して、複数のバージョンの .NE
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>互換性のある .NET Framework ランタイムバージョンを一覧表示するように app.config ファイルを変更するには
 
-1. ソリューションエクスプローラーで、Visual Studio の XML エディターを使用して、 *app.config*ファイルを開きます。
+1. ソリューションエクスプローラーで、Visual Studio の XML エディターを使用して、 *app.config* ファイルを開きます。
 
 2. 要素と要素の間の XML コードを、 `<startup>` `</startup>` アプリケーションでサポートされている .NET Framework ランタイムの一覧を示す xml に置き換えます (または追加します)。
 
@@ -80,7 +80,7 @@ ClickOnce 配置テクノロジを使用して、複数のバージョンの .NE
 
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>依存アセンブリを .NET Framework アセンブリとしてマークするようにアプリケーションマニフェストを変更するには
 
-1. 発行ディレクトリで、Visual Studio の XML エディターを使用して、アプリケーションマニフェストを開きます。 配置マニフェストには、 *.manifest*というファイル名拡張子が付いています。
+1. 発行ディレクトリで、Visual Studio の XML エディターを使用して、アプリケーションマニフェストを開きます。 配置マニフェストには、 *.manifest* というファイル名拡張子が付いています。
 
 2. `group="framework"`Sentinel アセンブリ ( `System.Core` 、、 `WindowsBase` `Sentinel.v3.5Client` 、および) の dependency XML にを追加し `System.Data.Entity` ます。 たとえば、XML は次のようになります。
 
@@ -100,11 +100,11 @@ ClickOnce 配置テクノロジを使用して、複数のバージョンの .NE
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>アプリケーションマニフェストと配置マニフェストを更新して再署名するには
 
-- アプリケーションマニフェストと配置マニフェストを更新し、再署名します。 詳細については、「[方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
+- アプリケーションマニフェストと配置マニフェストを更新し、再署名します。 詳細については、「 [方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
-- [\<compatibleFrameworks>element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
-- [\<dependency>element](../deployment/dependency-element-clickonce-application.md)
+- [\<compatibleFrameworks> element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<dependency> element](../deployment/dependency-element-clickonce-application.md)
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
 - [構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)

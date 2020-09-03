@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
 ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280376"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio での Azure クラウド サービス プロジェクトの作成
@@ -60,10 +60,10 @@ Visual Studio には、 [azure クラウドサービス](/azure/cloud-services/c
 
 Visual Studio の Azure プロジェクトは、ソリューション内のロール プロジェクトに関連付けられています。 また、プロジェクトには、*サービス定義ファイル*と*サービス構成ファイル*が含まれます。
 
-- **サービス定義ファイル**-必要なロール、エンドポイント、仮想マシンのサイズなど、アプリケーションのランタイム設定を定義します。
+- **サービス定義ファイル** -必要なロール、エンドポイント、仮想マシンのサイズなど、アプリケーションのランタイム設定を定義します。
 - **サービス構成ファイル** - 実行されるロールのインスタンス数とロールに定義されている設定の値を構成します。
 
 これらのファイルの詳細については、[Visual Studio を使用した Azure クラウド サービスのロールの構成](vs-azure-tools-configure-roles-for-cloud-service.md)に関する記事をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [Visual Studio での Azure クラウド サービス プロジェクトのロールの管理](./vs-azure-tools-cloud-service-project-managing-roles.md)

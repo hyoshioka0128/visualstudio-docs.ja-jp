@@ -1,5 +1,5 @@
 ---
-title: 2::取得名 |マイクロソフトドキュメント
+title: 'IDebugDocumentContext2:: GetName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 253ef509a60e8bb2ce177235f4b93b370e66f484
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731812"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
-このドキュメント コンテキストを含むドキュメントの表示名を取得します。
+このドキュメントコンテキストを含むドキュメントの表示可能な名前を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,19 +43,19 @@ int GetName(
 
 ## <a name="parameters"></a>パラメーター
 `gnType`\
-[in]取得する名前の型を指定する[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列挙体の値。
+から返される名前の型を指定する [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 列挙の値です。
 
 `pbstrFileName`\
-[アウト]ファイルの名前を返します。
+入出力ファイルの名前を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-通常、このメソッドは、ドキュメントコンテキストがドキュメント名自体を格納するように書かれている場合を除き、呼び出しを[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)メソッドに転送します (例示のように)。
+## <a name="remarks"></a>解説
+このメソッドは、通常、ドキュメントの名前そのものを格納するためにドキュメントコンテキストが記述されている場合 (例のように)、 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) メソッドへの呼び出しを転送します。
 
 ## <a name="example"></a>例
-次の例は[、IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)インターフェイス`CDebugContext`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)

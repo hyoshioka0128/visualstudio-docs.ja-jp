@@ -13,54 +13,54 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f94fe0301777a615fa6dc567311c493ff55a90a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196295"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、式エバリュエーターでどのような形式は必要なプロパティの値を表示するには、(EE) を使用します。  
+このインターフェイスにより、式エバリュエーター (EE) は、必要な形式でプロパティの値を表示できます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCustomViewer : IUknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- EE は、カスタム形式でプロパティの値を表示するには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ EE は、このインターフェイスを実装して、プロパティの値をカスタム書式で表示します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- COM の呼び出し`CoCreateInstance`関数は、このインターフェイスをインスタンス化します。 `CLSID`に渡される`CoCreateInstance`レジストリから取得されます。 呼び出し[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)レジストリの場所を取得します。 詳細と例では、「解説」を参照してください。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ COM の関数を呼び出すと、 `CoCreateInstance` このインターフェイスがインスタンス化されます。 に渡されたは、 `CLSID` `CoCreateInstance` レジストリから取得されます。 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)を呼び出すと、レジストリ内の場所が取得されます。 詳細と例については、「解説」を参照してください。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
  このインターフェイスは、次のメソッドを実装します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|指定された値を表示するために必要なことすべてを実行します。|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|指定された値を表示するために必要なすべてのことを行います。|  
   
-## <a name="remarks"></a>Remarks  
- プロパティの値は、通常の方法で表示できない場合、このインターフェイスを使用: などのデータ テーブルまたは別の複合プロパティの型。 によって表されるとしてのカスタム ビューアー、`IDebugCustomViewer`インターフェイス、EE に関係なく、特定の種類のデータを表示するための外部のプログラムである型のビジュアライザーとは異なります。 EE は、その EE に固有のカスタム ビューアーを実装します。 ユーザーは、型のビジュアライザーやカスタム ビューアーを使用するビジュアライザーの種類を選択します。 参照してください[視覚化してデータの表示](../../../extensibility/debugger/visualizing-and-viewing-data.md)このプロセスの詳細について。  
+## <a name="remarks"></a>注釈  
+ このインターフェイスは、通常の方法でプロパティの値を表示できない場合に使用されます。たとえば、データテーブルやその他の複合プロパティ型を使用します。 インターフェイスによって表されるカスタムビューアー `IDebugCustomViewer` は、型ビジュアライザーとは異なります。これは、EE に関係なく特定の型のデータを表示するための外部プログラムです。 EE には、その EE に固有のカスタムビューアーが実装されています。 ユーザーは、使用するビジュアライザーの種類として、型ビジュアライザーまたはカスタムビューアーを選択します。 このプロセスの詳細については [、「データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md) 」を参照してください。  
   
- カスタム ビューアーは、EE と同じ方法で登録され、そのため、言語の GUID と仕入先の GUID が必要です。 正確なメトリック (またはレジストリ エントリ名) は、EE にだけ呼ばれます。 このメトリックが返されます、 [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 、構造体への呼び出しによって返される順番[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)します。 メトリックに格納されている値は、 `CLSID` COM に渡される`CoCreateInstance`関数 (例を参照してください)。  
+ カスタムビューアーは、EE と同じ方法で登録されるため、言語 GUID とベンダー GUID が必要です。 正確なメトリック (またはレジストリエントリ名) は、EE にのみ認識されます。 このメトリックは [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) 構造で返され、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)の呼び出しによって返されます。 メトリックに格納される値は、 `CLSID` COM の関数に渡されるです `CoCreateInstance` (例を参照)。  
   
- [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)関数、 `SetEEMetric`、カスタム ビューアーの登録に使用することができます。 「の式エバリュエーター」レジストリ セクションを参照してください。`Debugging SDK Helpers`特定のレジストリ キーのカスタム ビューアー必要があります。 カスタム ビューアーでは、式エバリュエーターには、いくつかの定義済みのメトリックが必要ですが、(EE の実装者が定義されます) を 1 つだけのメトリックが必要があることに注意してください。  
+ [デバッグ機能の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) () を使用して、 `SetEEMetric` カスタムビューアーを登録できます。 `Debugging SDK Helpers`カスタムビューアーで必要な特定のレジストリキーについては、「」の「式エバリュエーター」レジストリセクションを参照してください。 カスタムビューアーに必要なメトリックは1つだけで、式エバリュエーターにはいくつかの定義済みのメトリックが必要です。  
   
- 通常、データの読み取り専用ビューは、カスタム ビューアーのため、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)に指定されたインターフェイス[値](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)以外を文字列としてのプロパティの値を変更するためのメソッドがありません。 データの任意のブロックの変更をサポートするために、EE を実装する同一のオブジェクトにカスタム インターフェイスを実装して、`IDebugProperty3`インターフェイス。 このカスタム インターフェイスは、データの任意のブロックを変更するために必要なメソッドを提供しは。  
+ 通常、カスタムビューアーには、データの読み取り専用ビューが用意されています。 [Displayvalue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)に渡される[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスには、文字列以外のプロパティ値を変更するためのメソッドがないためです。 データの任意のブロックの変更をサポートするために、EE は、インターフェイスを実装するのと同じオブジェクトにカスタムインターフェイスを実装し `IDebugProperty3` ます。 このカスタムインターフェイスは、任意のデータブロックを変更するために必要なメソッドを提供します。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>例  
- この例では、そのプロパティに任意のカスタム ビューアーがある場合、最初のカスタム ビューアーをプロパティから取得する方法を示します。  
+ この例では、プロパティにカスタムビューアーが含まれている場合に、プロパティから最初のカスタムビューアーを取得する方法を示します。  
   
 ```cpp#  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
@@ -106,8 +106,8 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

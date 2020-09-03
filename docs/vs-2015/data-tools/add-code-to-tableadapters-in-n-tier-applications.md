@@ -18,26 +18,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 942850e776cdd493afaad56b782b417db2040625
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673105"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 の機能を拡張するには、コードを*DatasetName*に追加するのではなく、`TableAdapter` の部分クラスファイルを作成し、そのファイルにコードを追加します。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[partial (型)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)」を参照してください。
+の機能を拡張するには `TableAdapter` 、の部分クラスファイルを作成し、DatasetName にコードを追加するのでは `TableAdapter` なく、 *DatasetName*そのクラスにコードを追加します。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) または [partial (型)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)」を参照してください。
 
- @No__t_1 に変更が加えられるたびに、`TableAdapter` を定義するコードが生成されます。 このコードは、`TableAdapter` の構成を変更するウィザードの実行中に変更が加えられた場合にも生成されます。 @No__t_0 の再生成時にコードが削除されないようにするには、`TableAdapter` の部分クラスファイルにコードを追加します。
+ を定義するコード `TableAdapter` は、に変更が行われるたびに生成され `TableAdapter` ます。 このコードは、の構成を変更するウィザードの実行中に変更が行われた場合にも生成され `TableAdapter` ます。 の再生成時にコードが削除されないようにするには、 `TableAdapter` の部分クラスファイルにコードを追加し `TableAdapter` ます。
 
- 既定では、データセットと `TableAdapter` コードを分離すると、結果としてプロジェクトごとに別個のクラス ファイルが生成されます。 元のプロジェクトには、 *DatasetName*という名前のファイルがあります。デザイナー .vb (または*DatasetName*)。Designer.cs) に `TableAdapter` コードが含まれています。 " **Dataset プロジェクト**" プロパティに指定されているプロジェクトには、 *DatasetName*という名前のファイルがあります。*DatasetName*(または。DataSet.Designer.cs)。データセットコードが含まれています。
-
-> [!NOTE]
-> データセットと `TableAdapter`s ( **Dataset プロジェクト**プロパティを設定することによって) を分離すると、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
+ 既定では、データセットと `TableAdapter` コードを分離すると、結果としてプロジェクトごとに別個のクラス ファイルが生成されます。 元のプロジェクトには、 *DatasetName*という名前のファイルがあります。デザイナー .vb (または *DatasetName*)。Designer.cs) のコードが含まれてい `TableAdapter` ます。 " **Dataset プロジェクト** " プロパティに指定されているプロジェクトには、 *DatasetName*という名前のファイルがあります。 *DatasetName*(または。DataSet.Designer.cs)。データセットコードが含まれています。
 
 > [!NOTE]
-> データセットデザイナーには、検証が必要な場合に <xref:System.Data.DataTable.ColumnChanging> および <xref:System.Data.DataTable.RowChanging> のイベントハンドラーを生成する機能が用意されています。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
+> `TableAdapter`( **Dataset プロジェクト**プロパティを設定して) データセットとを分離すると、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
+
+> [!NOTE]
+> データセットデザイナーには、 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 検証が必要な場合にイベントハンドラーを生成する機能が用意されています。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -47,13 +47,13 @@ ms.locfileid: "72673105"
 
 2. **.Xsd**ファイルをダブルクリックして、データセットを開きます。
 
-3. コードを追加する `TableAdapter` を右クリックし、 **[コードの表示]** を選択します。
+3. コードを追加するを右クリックし、[ `TableAdapter` **コードの表示**] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 
 4. 部分クラス宣言内にコードを追加します。
 
-5. 次の例は、`NorthwindDataSet` 内の `CustomersTableAdapter` にコードを追加する場所を示しています。
+5. 次の例では、でコードをに追加する方法を示し `CustomersTableAdapter` `NorthwindDataSet` ます。
 
     ```vb
     Partial Public Class CustomersTableAdapter

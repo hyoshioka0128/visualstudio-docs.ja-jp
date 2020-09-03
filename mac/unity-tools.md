@@ -7,17 +7,17 @@ ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.topic: overview
 ms.openlocfilehash: 03cae287f3b7094e61504d3baef7bfbd6a3575cd
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950679"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
 ![図案化された Unity and Visual Studio for Mac の画像](media/vsmac-tools-unity-image1.png)
 
-Visual Studio for Mac Tools for Unity は無料の Visual Studio 拡張機能であり、Visual Studio for Mac を Unity プラットフォームでクロスプラットフォームのゲームとアプリを開発するための強力なツールにします。
+Visual Studio for Mac Tools for Unity は、無料の Visual Studio 拡張機能であり、Visual Studio for Mac を Unity プラットフォームでクロスプラットフォームのゲームとアプリを開発するための強力なツールにします。
 
 Visual Studio for Mac には Unity の統合が既に含まれており、Unity 2018.1 以降では、Visual Studio for Mac が Unity プロジェクト用の既定の C# IDE です。
 

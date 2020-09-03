@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280851"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure クラウド サービスの固定仮想 IP アドレスを保持する
@@ -35,7 +35,7 @@ Azure でホストされているクラウド サービスを更新するとき�
 
     ![[Azure アプリケーションの公開] の [サインイン] ページ](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. [**共通設定**] タブで、デプロイ先のクラウドサービスの名前、[**環境**]、[**ビルド構成**]、および [**サービス構成**] がすべて正しいことを確認します。
+4. [ **共通設定** ] タブで、デプロイ先のクラウドサービスの名前、[ **環境**]、[ **ビルド構成**]、および [ **サービス構成** ] がすべて正しいことを確認します。
 
     ![[Azure アプリケーションの公開] の [共通設定] タブ](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 

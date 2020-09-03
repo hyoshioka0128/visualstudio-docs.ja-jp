@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206082"
 ---
-# <a name="constructorenum"></a>CONSTRUCTOR_ENUM
+# <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-さまざまな種類のコンス トラクターを選択します。  
+さまざまな種類のコンストラクターを選択します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,24 +44,24 @@ public enum ConstructorMatchOptions { 
   
 ## <a name="members"></a>メンバー  
  crAll  
- すべてのコンス トラクターを選択します。  
+ すべてのコンストラクターを選択します。  
   
  crNonStatic  
- 非静的コンス トラクターを選択します。  
+ 非静的コンストラクターを選択します。  
   
  crStatic  
- 静的コンス トラクターを選択します。  
+ 静的コンストラクターを選択します。  
   
-## <a name="remarks"></a>Remarks  
- 引数として渡される、 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [Enumconstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッドに引数として渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドのメッセージ |Microsoft Docs
+title: '[メッセージ] メニューのコマンド | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 689ae78a5409a37fa6251044172f9108f296235b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206118"
 ---
 # <a name="messages-menu-commands"></a>[メッセージ] メニューのコマンド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**メッセージ**] メニューの [メッセージ ビューを制御するためのコマンドを提供します。  
+**[メッセージ]** メニューには、メッセージ ビューを制御するためのコマンドが用意されています。  
   
- **ログ記録の開始/停止**  
- 開始またはメッセージの表示を停止します。  
+ **ログの開始/停止**  
+ メッセージビューを開始または停止します。  
   
- **ログ オプション**  
- 開く、**メッセージ** ダイアログ ボックスで、メッセージの検索条件を指定できます。  
+ **ログオプション**  
+ [ **Messageoptions** ] ダイアログボックスを開きます。このダイアログボックスでは、メッセージの検索条件を指定できます。  
   
  **ログのクリア**  
- アクティブなメッセージ ビューの内容を消去します。
+ アクティブなメッセージビューの内容を消去します。

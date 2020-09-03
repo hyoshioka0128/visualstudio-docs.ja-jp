@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161351"
 ---
 # <a name="special-characters-to-escape"></a>エスケープする特殊文字
@@ -40,11 +40,11 @@ ms.locfileid: "68161351"
 |@|アット マークは、項目一覧を参照するために使用します。|  
 |(|左かっこは、一覧で使用します。|  
 |)|右かっこは、一覧で使用します。|  
-|`|アポストロフィ (または目盛) は、条件やその他の式で使用します。|  
+|`|アポストロフィは、条件やその他の式で使用します。|  
 |;|セミコロンは、リスト区切り記号です。|  
 |?|疑問符は、項目の Include/Exclude セクションでファイルの仕様を記述する場合のワイルドカード文字です。|  
 |*|アスタリスクは、項目の Include/Exclude セクションでファイルの仕様を記述する場合のワイルドカード文字です。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: MSBuild で特殊文字をエスケープします。](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+## <a name="see-also"></a>参照  
+ [方法: MSBuild で特殊文字をエスケープする](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)

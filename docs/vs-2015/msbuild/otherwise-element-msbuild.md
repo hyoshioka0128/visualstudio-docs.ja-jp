@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154791"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 要素 (MSBuild)
@@ -60,7 +60,7 @@ ms.locfileid: "68154791"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|省略可能な要素です。<br /><br /> 子要素を評価して、実行するコードのセクションを 1 つ選びます。 `Choose` 要素に 0 個以上の `Otherwise` 要素があります。|  
+|[し](../msbuild/choose-element-msbuild.md)|省略可能な要素です。<br /><br /> 子要素を評価して、実行するコードのセクションを 1 つ選びます。 `Choose` 要素に 0 個以上の `Otherwise` 要素があります。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|省略可能な要素です。<br /><br /> ユーザー定義 [Item](../msbuild/item-element-msbuild.md) 要素のセットが含まれます。 `ItemGroup` 要素に 0 個以上の `Otherwise` 要素があります。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|省略可能な要素です。<br /><br /> ユーザー定義の [Property](../msbuild/property-element-msbuild.md) 要素のセットを格納します。 `PropertyGroup` 要素に 0 個以上の `Otherwise` 要素があります。|  
   
@@ -68,12 +68,12 @@ ms.locfileid: "68154791"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|  
+|[し](../msbuild/choose-element-msbuild.md)|子要素を評価して、実行するコードのセクションを 1 つ選びます。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>注釈  
  1 つの `Choose` 要素が持つことのできる `Otherwise` 要素の数は 1 つだけです。また、これは最後の要素である必要があります。  
   
- `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。  
+ `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「 [条件付き構成体](../msbuild/msbuild-conditional-constructs.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のプロジェクトでは、`Choose` 要素を使って、設定する `When` 要素のプロパティ値のセットを選んでいます。 両方の `When` 要素の `Condition` 属性が `false` と評価された場合、`Otherwise` 要素のプロパティ値が設定されます。  
@@ -123,6 +123,6 @@ ms.locfileid: "68154791"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [条件構造](../msbuild/msbuild-conditional-constructs.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)

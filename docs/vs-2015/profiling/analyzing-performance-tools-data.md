@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156441"
 ---
 # <a name="analyzing-performance-tools-data"></a>パフォーマンス データを分析する
@@ -31,10 +31,10 @@ ms.locfileid: "68156441"
   
 ## <a name="common-tasks"></a>一般的なタスク  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
-|**パフォーマンス ルールを使用して、問題をすばやく識別する:** プロファイリング ツールのパフォーマンス ルールは、一般的な問題を識別し、問題が含まれるソース コードに簡単に移動することができます。 詳細なヘルプ トピックで解決策が見つかることがよくあります。|-   [パフォーマンス規則を使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**レポート ビューの詳細を理解する:** プロファイリング ツールのレポート ビューは、プロファイリング実行のプロセス、スレッド、モジュール、および関数に関する集計されたパフォーマンス データを提供します。 表示されるデータは、データの収集に使用されたプロファイル方法によって異なります。|-   [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)|  
+|**パフォーマンス ルールを使用して、問題をすばやく識別する:** プロファイリング ツールのパフォーマンス ルールは、一般的な問題を識別し、問題が含まれるソース コードに簡単に移動することができます。 詳細なヘルプ トピックで解決策が見つかることがよくあります。|-   [パフォーマンスルールを使用したデータの分析](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**レポート ビューの詳細を理解する:** プロファイリング ツールのレポート ビューは、プロファイリング実行のプロセス、スレッド、モジュール、および関数に関する集計されたパフォーマンス データを提供します。 表示されるデータは、データの収集に使用されたプロファイル方法によって異なります。|-   [パフォーマンスレポートのビュー](../profiling/performance-report-views.md)|  
 |**レポート ビューの構成、並べ替え、およびフィルター:** レポートに表示するデータ列の指定と順序付け、レポート行の並べ替え、および指定した時間セグメントのみを含めるようにデータをフィルター処理することができます。|-   [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>関連項目  
@@ -42,5 +42,5 @@ ms.locfileid: "68156441"
   
  [パフォーマンス ツール データの保存とエクスポート](../profiling/saving-and-exporting-performance-tools-data.md)  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)

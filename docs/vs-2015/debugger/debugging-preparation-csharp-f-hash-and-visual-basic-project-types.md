@@ -1,5 +1,5 @@
 ---
-title: デバッグの準備:C#、 F#、および Visual Basic プロジェクトの種類 |Microsoft Docs
+title: 'デバッグの準備: C#、F #、および Visual Basic プロジェクトの種類 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,21 +24,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195320"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備:C#、F#、Visual Basic プロジェクト タイプ
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備:C#、F#、および Visual Basic のプロジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクト テンプレートで作成した C#、F#、および [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のプロジェクトをデバッグする方法について説明します。  
   
- 出力として Dll を作成するプロジェクトの種類に分類された注[DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)共有している一般的な機能のため。  
+ 出力として DLL を作成するプロジェクトは、共通する特徴があるため、「[DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)」にグループ化されています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [プロパティの推奨設定](../debugger/managed-debugging-recommended-property-settings.md)  
+ [推奨されるプロパティの設定](../debugger/managed-debugging-recommended-property-settings.md)  
  C#、F#、および Visual Basic プロジェクトに推奨されるデバッグ関連のプロパティ設定について説明します。  
   
  [Windows フォーム アプリケーション](../debugger/debugging-preparation-windows-forms-applications.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "68195320"
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)  
  マネージド コードで記述されたアプリケーションのデバッグに関する一般的な問題と手法について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

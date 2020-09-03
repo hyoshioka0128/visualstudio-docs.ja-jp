@@ -11,10 +11,10 @@ caps.latest.revision: 41
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660688"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
@@ -33,7 +33,7 @@ ms.locfileid: "72660688"
 
 - `UIMap.designer.cs` ファイルは直接変更しないでください。 このファイルを直接変更すると、その変更内容が上書きされます。
 
-- 記録されたメソッドのシーケンスとしてテストを作成します。 メソッドを記録する方法の詳細については、「[コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)」を参照してください。
+- 記録されたメソッドのシーケンスとしてテストを作成します。 メソッドを記録する方法の詳細については、「コード化された [UI テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)」を参照してください。
 
 - 記録された各メソッドは、単一のページ、フォーム、またはダイアログ ボックスで動作する必要があります。 新しいページ、フォーム、またはダイアログ ボックスごとに新しいテスト メソッドを作成してください。
 
@@ -45,11 +45,11 @@ ms.locfileid: "72660688"
 
 - ユーザー インターフェイス (UI) が変更された場合は、テスト メソッドまたはアサーション メソッドを再記録するか、既存のテスト メソッドの、影響を受けるセクションを再記録します。
 
-- テスト対象のアプリケーションのモジュールごとに、個別の [UIMap](/previous-versions/dd580454(v=vs.140)) ファイルを作成します。 詳細については、「[複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」をご覧ください。
+- テスト対象のアプリケーションのモジュールごとに、個別の [UIMap](/previous-versions/dd580454(v=vs.140)) ファイルを作成します。 詳細については、「 [複数の UI マップを使用した大規模なアプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」を参照してください。
 
 - テスト対象のアプリケーションの UI コントロールを作成するときは、わかりやすい名前を使用します。 これにより、自動生成されたコントロール名に意味が加えられて使いやすくなります。
 
-- API を使用してコーディングすることによってアサーションを作成する場合は、`UIMap.cs` ファイル内の[Uimap](/previous-versions/dd580454(v=vs.140))クラスの部分にあるアサーションごとにメソッドを作成します。 このメソッドをテスト メソッドから呼び出してアサーションを実行します。
+- API を使用してコーディングすることによってアサーションを作成する場合は、ファイル内にある [Uimap](/previous-versions/dd580454(v=vs.140)) クラスの部分でアサーションごとにメソッドを作成し `UIMap.cs` ます。 このメソッドをテスト メソッドから呼び出してアサーションを実行します。
 
 - API を使用してコーディングを直接行う場合は、可能な限り、`UIMap.Designer.cs` ファイルに生成されたクラスのプロパティとメソッドをコードで使用します。 これらのクラスを使用すると、作業が楽になり、信頼性と生産性が高まります。
 
@@ -70,7 +70,7 @@ ms.locfileid: "72660688"
 
   - 十字線のボタンを UI コントロールにドラッグすることで新しいアサーションを追加し、UI マップを開いて新しいアサーションを追加します。
 
-  コード化された UI テストを記録する方法の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」を参照してください。
+  コード化された UI テストを記録する方法の詳細については、「 [Ui オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」を参照してください。
 
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>バック グラウンド プロセスが完了しないとテストを継続できない場合の作業
  プロセスが完了するまで待機しないと、次の UI 操作に進むことができない場合があります その場合は、次のサンプルに示すように、テストを継続できるようになるまで、<xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> を使用して待機できます。
@@ -86,11 +86,11 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
-- [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
+- [コード化された UI テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [コード化された UI テストと操作の記録でサポートされる構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

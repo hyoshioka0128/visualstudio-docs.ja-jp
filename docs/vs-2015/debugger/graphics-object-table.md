@@ -1,5 +1,5 @@
 ---
-title: グラフィックス オブジェクト テーブル |Microsoft Docs
+title: グラフィックス オブジェクト テーブル | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161163"
 ---
 # <a name="graphics-object-table"></a>グラフィックス オブジェクト テーブル
@@ -27,7 +27,7 @@ Visual Studio のグラフィックス分析に含まれるグラフィックス
   
  グラフィックス オブジェクト テーブルを次に示します。  
   
- ![アプリによって作成された Direct3D オブジェクト](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
+ ![アプリによって作成された Direct3D オブジェクト。](../debugger/media/gfx-diag-demo-object-table-orientation.png "gfx_diag_demo_object_table_orientation")  
   
 ## <a name="understanding-the-graphics-object-table"></a>グラフィックス オブジェクト テーブルについて  
  オブジェクト テーブルを使用すると、特定のフレームのレンダリングをサポートする Direct3D のオブジェクトを解析できます。 プロパティとデータを調べることによってレンダリングの問題を特定のオブジェクトに絞り込むことができます (その時点までの診断で使用した他のグラフィックス診断ツールにより、リストを絞り込んで不要と思われるオブジェクトを除外できます)。問題のあるオブジェクトが見つかったら、その種類に固有の視覚化ツールを使用して調査できます。たとえば、テクスチャを表示するにはイメージ エディターを、バッファーの内容を表示するには*バッファー ビジュアライザー*を使用できます。  
@@ -37,9 +37,9 @@ Visual Studio のグラフィックス分析に含まれるグラフィックス
 ### <a name="graphics-object-table-format"></a>グラフィックス オブジェクト テーブルの形式  
  オブジェクト テーブルには、選択したイベントに関連付けられたフレームをサポートする Direct3D のオブジェクトとリソース (状態オブジェクト、バッファー、シェーダー、テクスチャなど) が表示されます。 前のフレームで作成され、キャプチャされたフレームの間に使用されないオブジェクトは、オブジェクト テーブルから除外されます。 キャプチャされたフレームの間に、前のイベントによって破棄されたオブジェクトは、後続のイベントで除外されます。 D3D10Device または D3D11DeviceContext に設定されていないオブジェクトは灰色のテキストで表示されます。 オブジェクトは、テーブル形式で表示されます。  
   
-|[列]|説明|  
+|Column|説明|  
 |------------|-----------------|  
-|**[Identifier]**|オブジェクト ID。|  
+|**識別子**|オブジェクト ID。|  
 |**Name**|Direct3D 関数 `SetPrivateData` を使用してオブジェクトに設定されたアプリケーション固有の情報。通常は、オブジェクトに関する追加の識別情報が表示されます。|  
 |**Type**|オブジェクトの型。|  
 |**Active**|キャプチャされたフレームの間に D3D10Device または D3D11DeviceContext に設定されたオブジェクトの場合は "*" が表示されます。<br /><br /> これは灰色のテキストで表示されるオブジェクトに対応しますが、オブジェクト テーブルを並べ替えるのに役立つ列エントリが用意されています。|  
@@ -110,6 +110,6 @@ Visual Studio のグラフィックス分析に含まれるグラフィックス
 |**uint64**|64 ビットの符号なし整数値。 **u8byte** と同じです。|  
 |**bool**|ブール型 (`true` または `false`) の値。 それぞれのブール値は 32 ビット値によって表されます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [グラフィックス診断 (DirectX グラフィックスのデバッグ)](../debugger/visual-studio-graphics-diagnostics.md)   
  [チュートリアル: デバイス状態によるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-device-state.md)

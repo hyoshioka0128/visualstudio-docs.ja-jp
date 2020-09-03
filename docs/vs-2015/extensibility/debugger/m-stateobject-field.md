@@ -1,5 +1,5 @@
 ---
-title: m_stateObject フィールド |Microsoft Docs
+title: m_stateObject Field |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149054"
 ---
-# <a name="mstateobject-field"></a>m_stateObject フィールド
+# <a name="m_stateobject-field"></a>m_stateObject フィールド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-アクションを使用するデータを表すオブジェクト。  
+アクションが使用するデータを表すオブジェクト。  
   
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **アセンブリ:** mscorlib (mscorlib.dll 内)  
+ **アセンブリ:** mscorlib (mscorlib.dll)  
   
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。  
+ .NET Framework からこの内部メンバーにアクセスすることはできないため、次の構文は、共通中間言語 (CIL) で提供されています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,8 +34,8 @@ ms.locfileid: "68149054"
 .field assembly object m_stateObject  
 ```  
   
-## <a name="remarks"></a>Remarks  
- これは、`state`パラメーター、<xref:System.Threading.Tasks.Task.%23ctor%2A>コンス トラクター。 バッキング フィールドも、<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>プロパティ。  
+## <a name="remarks"></a>解説  
+ これは、 `state` コンストラクターのパラメーターです <xref:System.Threading.Tasks.Task.%23ctor%2A> 。 これは、プロパティのバッキングフィールドでも <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> あります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Task クラス](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties |Microsoft Docs
+title: 'IDebugThread2:: GetThreadProperties |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd32c32d2ccdb041ea34ce8d9d7ca72f2035db94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153005"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
@@ -42,19 +42,19 @@ int GetThreadProperties ( 
   
 #### <a name="parameters"></a>パラメーター  
  `dwFields`  
- [in]フラグの組み合わせ、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)のどのフィールドを決定する列挙型`ptp`入力します。  
+ からに入力するフィールドを決定する、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 列挙のフラグの組み合わせ `ptp` 。  
   
  `ptp`  
- [入力、出力]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体のスレッドのプロパティが入力されます。  
+ [入力、出力]スレッドのプロパティを使用して入力される [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md) 構造体。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドから返される情報は、一般的で示されます、**スレッド**デバッグ ウィンドウ。  
+## <a name="remarks"></a>注釈  
+ このメソッドから返される情報は、通常、[ **スレッド** デバッグ] ウィンドウに表示されます。  
   
 ## <a name="example"></a>例  
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CProgram`を実装するオブジェクト、 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)インターフェイス。  
+ 次の例は、IDebugThread2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
   
 ```cpp#  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  
@@ -92,7 +92,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }    
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

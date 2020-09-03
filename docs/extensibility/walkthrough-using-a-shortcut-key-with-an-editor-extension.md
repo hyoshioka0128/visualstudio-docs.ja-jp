@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 094cb590d5b2a3bf062916985bfc61b1cf76d365
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904399"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でのショートカットキーの使用
 エディター拡張機能のショートカットキーに応答できます。 次のチュートリアルでは、ショートカットキーを使用して、ビューの表示要素をテキストビューに追加する方法について説明します。 このチュートリアルは、ビューポートの表示要素エディターテンプレートに基づいており、+ 文字を使用して表示要素を追加できます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `KeyBindingTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `KeyBindingTest` します。
 
-2. エディターのテキスト表示項目テンプレートをプロジェクトに追加し、という名前を指定 `KeyBindingTest` します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. エディターのテキスト表示項目テンプレートをプロジェクトに追加し、という名前を指定 `KeyBindingTest` します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
-3. 次の参照を追加し、 **CopyLocal**をに設定し `false` ます。
+3. 次の参照を追加し、 **CopyLocal** をに設定し `false` ます。
 
     VisualStudio
 
@@ -39,13 +39,13 @@ ms.locfileid: "85904399"
 
     VisualStudio。相互運用
 
-   KeyBindingTest クラスファイルで、クラス名を PurpleCornerBox に変更します。 左余白に表示される電球を使用して、その他の適切な変更を行います。 コンストラクター内で、装飾層の名前を**Keybindingtest**から**PurpleCornerBox**に変更します。
+   KeyBindingTest クラスファイルで、クラス名を PurpleCornerBox に変更します。 左余白に表示される電球を使用して、その他の適切な変更を行います。 コンストラクター内で、装飾層の名前を **Keybindingtest** から **PurpleCornerBox**に変更します。
 
 ```csharp
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-KeyBindingTestTextViewCreationListener.cs クラスファイルで、AdornmentLayer の名前を**Keybindingtest**から**PurpleCornerBox**に変更します。
+KeyBindingTestTextViewCreationListener.cs クラスファイルで、AdornmentLayer の名前を **Keybindingtest** から **PurpleCornerBox**に変更します。
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]

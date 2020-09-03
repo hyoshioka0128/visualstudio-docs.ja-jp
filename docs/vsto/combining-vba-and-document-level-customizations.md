@@ -83,7 +83,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]
 > この機能は、Word テンプレート プロジェクトでは使用できません。 Word 文書、Excel ブック、または Excel テンプレートの各プロジェクトでのみ使用できます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  VBA コードでカスタマイズ アセンブリを呼び出すことができるためには、プロジェクトが次の要件を満たしている必要があります。
 
 - ドキュメントは、次のいずれかのファイル名拡張子であることが必要です。
@@ -249,7 +249,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |**EnableVbaCallers**または**ReferenceAssemblyFromVbaProject**プロパティを設定した後、によって指定されたバージョン番号が無効であることを示すエラーメッセージが表示され <xref:System.Reflection.AssemblyVersionAttribute> ます。|<xref:System.Reflection.AssemblyVersionAttribute>プロジェクトの*AssemblyInfo.cs*または*AssemblyInfo*ファイル内の宣言が、有効なアセンブリバージョン番号に設定されていることを確認します。 有効なアセンブリのバージョン番号については、 <xref:System.Reflection.AssemblyVersionAttribute> クラスを参照してください。|
 |カスタマイズ アセンブリの名前を変更した後、カスタマイズ アセンブリを呼び出す VBA コードが動作を停止する。|VBA コードに公開した後でカスタマイズ アセンブリの名前を変更すると、ドキュメントの VBA プロジェクトとカスタマイズ アセンブリの間のリンクが切れます。 この問題を解決するには、プロジェクトで **ReferenceFromVbaAssembly** プロパティを **False** に変更した後、 **True**に戻して、VBA コード内にある古いアセンブリ名への参照を新しいアセンブリ名に置き換えます。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: Visual Basic プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [方法: Visual C&#35; プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371782"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトのチェックインポリシーを使用してコードプロジェクト規則セットを同期する
@@ -37,13 +37,13 @@ ms.locfileid: "85371782"
 
 ::: moniker range="vs-2017"
 
-3. [**この規則セットを実行**する] の一覧で、チェックインポリシー規則セットを選択します。
+3. [ **この規則セットを実行** する] の一覧で、チェックインポリシー規則セットを選択します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. [**アクティブな規則**] の一覧で、[チェックインポリシー] 規則セットを選択します。
+3. [ **アクティブな規則** ] の一覧で、[チェックインポリシー] 規則セットを選択します。
 
 ::: moniker-end
 
@@ -57,18 +57,18 @@ ms.locfileid: "85371782"
 
 ::: moniker range="vs-2017"
 
-4. [**この規則セットを実行**する] の一覧で、をクリックし **\<Browse>** ます。
+4. [ **この規則セットを実行** する] の一覧で、をクリックし **\<Browse>** ます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. [**アクティブな規則**] の一覧で、をクリックし **\<Browse>** ます。
+4. [ **アクティブな規則** ] の一覧で、をクリックし **\<Browse>** ます。
 
 ::: moniker-end
 
-5. [**開く**] ダイアログボックスで、チェックインポリシー規則セットファイルを指定します。
+5. [ **開く** ] ダイアログボックスで、チェックインポリシー規則セットファイルを指定します。
 
 ## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>コードプロジェクトのカスタム規則セットを作成するには
 
-カスタム規則セットの作成の詳細については、「[規則セットをカスタマイズする](how-to-create-a-custom-rule-set.md)」を参照してください。
+カスタム規則セットの作成の詳細については、「 [規則セットをカスタマイズする](how-to-create-a-custom-rule-set.md)」を参照してください。

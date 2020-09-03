@@ -1,4 +1,4 @@
-﻿---
+---
 title: '&lt;var&gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f72b403d4c6c9cc71bc2a3fdbff8f778a44b3b55
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663063"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
@@ -60,7 +60,7 @@ ms.locfileid: "72663063"
 
   `helpKeyword` 省略可能。 F1 ヘルプのキーワード。
 
-  `locid` 省略可能。 変数に関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 この識別子の型は、[\<loc>](../ide/loc-javascript.md) タグで指定された形式によって異なります。
+  `locid` 省略可能。 変数に関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 識別子の型は、タグに指定されている形式によって異なり [\<loc>](../ide/loc-javascript.md) ます。
 
   `description` 省略可能。 変数の説明。
 
@@ -81,5 +81,5 @@ var Rectangle = {
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

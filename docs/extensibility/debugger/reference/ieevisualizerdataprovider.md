@@ -1,5 +1,5 @@
 ---
-title: データプロバイダ |マイクロソフトドキュメント
+title: IEEVisualizerDataProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a10f306b6c507f6db7add17931b8a38d926a37d9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718053"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については、「 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- このインターフェイスは、型のビジュアライザーを使用してオブジェクトの値を変更する機能を提供します。
+ このインターフェイスは、型ビジュアライザーを使用してオブジェクトの値を変更する機能を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -34,30 +34,30 @@ ms.locfileid: "80718053"
 IEEVisualizerDataProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- 式エバリュエーターは、型ビジュアライザーを使用してプロパティ オブジェクトのデータを変更するサポートをこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ 式エバリュエーターは、このインターフェイスを実装して、型ビジュアライザーを使用してプロパティオブジェクトのデータを変更できるようにします。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- このインターフェイスは、CreateVisualizerService の呼び出しを通じて[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)オブジェクトを[作成](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)するときに使用されます。 詳細については[、データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md)を参照してください。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ このインターフェイスは、 [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)の呼び出しを通じて[ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md)オブジェクトを作成するときに使用されます。 詳細については [、「データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md) 」を参照してください。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|ビジュアライザーが表しているオブジェクト (およびその後の値) を更新できるかどうかを判断します。|
-|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|このビジュアライザーのオブジェクトの再評価を強制します。|
+|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|このビジュアライザーが表すオブジェクト (およびその後の値) を更新できるかどうかを判断します。|
+|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|このビジュアライザーのオブジェクトを強制的に再評価します。|
 |[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|このビジュアライザーの既存のオブジェクトを取得します (評価は行われません)。|
-|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|ビジュアライザーのオブジェクトを更新し、ビジュアライザーが提示する値を変更します。|
+|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|ビジュアライザーによって表示される値を変更して、このビジュアライザーのオブジェクトを更新します。|
 
-## <a name="remarks"></a>Remarks
- ビジュアライザー サービス[(IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)インターフェイスによって表され[、CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)によって返される) は、`IEEVisualizerDataProvider`インターフェイスを実装するオブジェクトへの参照を保持します。 その結果、`IEEVisualizerDataProvider`オブジェクトが`IEEVisualizerService`オブジェクトへの参照を保持している場合[、IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)を実装するオブジェクトと同じオブジェクトにインターフェイスを実装しないでください。 推奨される方法は、オブジェクト`IEEVisualizerDataProvider`を呼び出`IUnknown::AddRef`さずに委任`IDebugProperty2`する別のオブジェクトに実装することです。
+## <a name="remarks"></a>解説
+ ビジュアライザーサービス ( [Ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md) インターフェイスによって表され、 [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)によって返される) は、インターフェイスを実装するオブジェクトへの参照を保持し `IEEVisualizerDataProvider` ます。 その結果、 `IEEVisualizerDataProvider` そのオブジェクトがオブジェクトへの参照を保持している場合、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) を実装するオブジェクトにインターフェイスを実装することはできません `IEEVisualizerService` 。循環参照の結果と、オブジェクトが破棄されるとデッドロックが発生します。 を `IEEVisualizerDataProvider` 呼び出さずにオブジェクトがデリゲートする別のオブジェクトにを実装する方法をお勧めし `IDebugProperty2` `IUnknown::AddRef` ます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: ee.h
+ ヘッダー: ee
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

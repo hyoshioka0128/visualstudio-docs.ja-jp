@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 325bbecf3a34a00664a9f63cdbf995bd14138d7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194876"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-仮想アドレス (VA) で検索を実行して、列挙子を配置します。  
+仮想アドレス (VA) による検索を実行して、列挙子を配置します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,14 +36,14 @@ HRESULT symbolByVA ( 
   
 #### <a name="parameters"></a>パラメーター  
  virtualAddress  
- [in]仮想アドレス。  
+ から仮想アドレス。  
   
  ppsymbol  
- [out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)シンボルを表すオブジェクト。  
+ 入出力見つかったシンボルを表す [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合は、シンボルが見つかりませんでした。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 シンボルが見つからなかった `S_FALSE` 場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

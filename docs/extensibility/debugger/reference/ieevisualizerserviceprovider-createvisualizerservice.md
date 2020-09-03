@@ -1,5 +1,5 @@
 ---
-title: IEEビジュアライザーサービスプロバイダー::ビジュアライザーサービスの作成 |マイクロソフトドキュメント
+title: 'IEEVisualizerServiceProvider:: CreateVisualizerService |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717910"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
-このメソッドは、ビジュアライザー サービスを作成します。
+このメソッドは、ビジュアライザーサービスを作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -49,25 +49,25 @@ int CreateVisualizerService(
 
 ## <a name="parameters"></a>パラメーター
 `binder`\
-[in][評価同期](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)に渡される[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)オブジェクト。
+から[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)に渡される[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)オブジェクト。
 
 `pSymProv`\
-[in]に[渡](../../../extensibility/debugger/reference/idebugsymbolprovider.md)されたオブジェクト。 `IDebugParsedExpression::EvaluateSync`
+からに渡される [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) オブジェクト `IDebugParsedExpression::EvaluateSync` 。
 
 `pAddress`\
-[in]に渡[されるオブジェクト。](../../../extensibility/debugger/reference/idebugaddress.md) `IDebugParsedExression::EvaluateSync`
+からに渡される [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) オブジェクト `IDebugParsedExression::EvaluateSync` 。
 
 `dataProvider`\
-[in][インターフェイス](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)を実装するオブジェクト (式エバリュエーターによって提供されます)。
+から [Ieevisualizerdataprovider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) インターフェイス (式エバリュエーターによって提供される) を実装するオブジェクト。
 
 `ppService`\
-[アウト]作成されたサービス。
+入出力作成されたサービス。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- `binder`、 `pSymProv`、および`pAddress`パラメーターはすべてメソッドに`IDebugParsedExpression::EvaluateSync`渡されました。 `CreateVisualizerService`は、式エバリュ`IDebugParsedExpression::EvaluateSync`エーターが型ビジュアライザーをサポートする一部としてのみ呼び出されます。
+## <a name="remarks"></a>注釈
+ 、、およびの各パラメーターは、 `binder` `pSymProv` `pAddress` すべてメソッドに渡されました `IDebugParsedExpression::EvaluateSync` 。 `CreateVisualizerService` は `IDebugParsedExpression::EvaluateSync` 、式エバリュエーターによる型ビジュアライザーのサポートの一部として、からのみ呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)

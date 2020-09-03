@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014554"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>方法: パッケージングエクスプローラーを使用してパッケージに機能と項目を追加および削除する
   SharePoint のアイテムとフィーチャーを配置するようにパッケージを構成するには、パッケージングエクスプローラーを使用します。 SharePoint プロジェクトの項目と機能は、.wsp ファイル内で調整できます。
 
- または、パッケージングデザイナーを使用して、機能を表示して順序を変更し、アクティベーションの順序を変更することもできます。 詳細については、「[方法: パッケージデザイナーを使用して、パッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)」を参照してください。
+ または、パッケージングデザイナーを使用して、機能を表示して順序を変更し、アクティベーションの順序を変更することもできます。 詳細については、「 [方法: パッケージデザイナーを使用して、パッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)」を参照してください。
 
 ## <a name="open-the-packaging-explorer"></a>パッケージングエクスプローラーを開く
  Visual Studio ソリューションに少なくとも1つの SharePoint プロジェクトがある場合は、次の手順を使用して、パッケージングエクスプローラーを開くことができます。 また、機能またはパッケージデザイナーを表示すると、パッケージングエクスプローラーが自動的に開きます。 すべての機能とパッケージデザイナーを閉じた後、パッケージングエクスプローラーも閉じます。
@@ -47,7 +48,7 @@ ms.locfileid: "86014554"
 
     - **フィーチャー**をあるプロジェクトから別のプロジェクトにドラッグします。
 
-    - 機能のショートカットメニューを開き、[**切り取り**] を選択し、フィーチャーの移動先となるプロジェクトのショートカットメニューを開き、[**貼り付け**] を選択します。
+    - 機能のショートカットメニューを開き、[ **切り取り**] を選択し、フィーチャーの移動先となるプロジェクトのショートカットメニューを開き、[ **貼り付け**] を選択します。
 
     > [!NOTE]
     > ソリューションに複数の SharePoint プロジェクトがある場合は、この手順を使用します。
@@ -59,7 +60,7 @@ ms.locfileid: "86014554"
 
 1. **パッケージングエクスプローラー**を開きます。
 
-2. 機能またはパッケージのショートカットメニューを開き、[**検証**] を選択します。
+2. 機能またはパッケージのショートカットメニューを開き、[ **検証**] を選択します。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

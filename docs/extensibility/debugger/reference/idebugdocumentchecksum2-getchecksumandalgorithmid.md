@@ -1,5 +1,5 @@
 ---
-title: 2::GetChecksum とアルゴリズムId |マイクロソフトドキュメント
+title: 'IDebugDocumentChecksum2:: GetChecksumAndAlgorithmId |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731940"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-使用する最大バイト数を指定して、ドキュメントチェックサムとアルゴリズム識別子を取得します。
+使用する最大バイト数を指定して、ドキュメントのチェックサムとアルゴリズム識別子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>パラメーター
 `pRetVal`\
-[アウト]チェックサム アルゴリズムの一意の識別子です。
+入出力チェックサムアルゴリズムの一意識別子。
 
 `cMaxBytes`\
-[in]チェックサムに使用される最大バイト数。
+からチェックサムに使用する最大バイト数。
 
 `pChecksum`\
-[アウト]チェックサムの値。
+入出力チェックサムの値。
 
 `pcNumBytes`\
-[アウト]チェックサムに使用された実際のバイト数。
+入出力チェックサムに使用される実際のバイト数。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例では、このメソッドを使用してドキュメントのチェックサムとアルゴリズムを取得します。
+次の例では、このメソッドを使用して、ドキュメントのチェックサムとアルゴリズムを取得します。
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

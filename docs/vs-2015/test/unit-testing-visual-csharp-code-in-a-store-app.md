@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81876493d48407549237ed626fc6ec5d2175fcd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659606"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>ストア アプリの Visual C# コードの単体テスト
@@ -34,34 +34,34 @@ ms.locfileid: "72659606"
 >
 >   詳細については、MSDN ライブラリの「[単体テストを使用したコードの検証](https://msdn.microsoft.com/library/dd264975.aspx)」を参照してください。
 
-## <a name="BKMK_In_this_topic"></a> このトピックの内容
- [ソリューションと単体テスト プロジェクトを作成する](#BKMK_Create_the_solution_and_the_unit_test_project)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> このトピックの内容
+ [ソリューションと単体テストプロジェクトを作成する](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [テストがテスト エクスプ ローラーで実行されることを確認する](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [テストエクスプローラーでテストが実行されていることを確認する](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Maths プロジェクトに Rooter クラスを追加します。](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
+ [Rooter クラスを Maths プロジェクトに追加する](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
 
- [アプリケーション プロジェクトにテスト プロジェクトを結合する](#BKMK_Couple_the_test_project_to_the_app_project)
+ [アプリケーションプロジェクトにテストプロジェクトを結合する](#BKMK_Couple_the_test_project_to_the_app_project)
 
  [テストを繰り返し増やして成功させる](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
- [失敗したテストをデバッグする](#BKMK_Debug_a_failing_test)
+ [失敗したテストのデバッグ](#BKMK_Debug_a_failing_test)
 
  [コードをリファクタリングする](#BKMK_Refactor_the_code_)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
 
-1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[新しいプロジェクト]** をクリックします。
+1. **[ファイル]** メニューの **[新規作成]** をポイントし、**[新しいプロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスで **[インストール済み]** 、 **[Visual C#]** の順に展開し、 **[Windows ストア]** をクリックします。 プロジェクト テンプレートの一覧の **[新しいアプリケーション]** をクリックします。
+2. **[新しいプロジェクト]** ダイアログ ボックスで **[インストール済み]**、**[Visual C#]** の順に展開し、**[Windows ストア]** をクリックします。 プロジェクト テンプレートの一覧の **[新しいアプリケーション]** をクリックします。
 
-3. プロジェクトに「`Maths`」という名前を付け、 **[ソリューションのディレクトリを作成]** チェックボックスがオンになっていることを確認します。
+3. プロジェクトに「`Maths`」という名前を付け、**[ソリューションのディレクトリを作成]** チェックボックスがオンになっていることを確認します。
 
-4. ソリューション エクスプローラーでソリューション名をクリックし、ショートカット メニューの **[追加]** をクリックし、 **[新しい項目]** をクリックします。
+4. ソリューション エクスプローラーでソリューション名をクリックし、ショートカット メニューの **[追加]** をクリックし、**[新しい項目]** をクリックします。
 
-5. **[新しいプロジェクト]** ダイアログ ボックスで **[インストール済み]** 、 **[Visual C#]** の順に展開し、 **[Windows ストア]** をクリックします。 プロジェクト テンプレートの一覧の **[単体テスト ライブラリ (Windows ストア アプリ)]** をクリックします。
+5. **[新しいプロジェクト]** ダイアログ ボックスで **[インストール済み]**、**[Visual C#]** の順に展開し、**[Windows ストア]** をクリックします。 プロジェクト テンプレートの一覧の **[単体テスト ライブラリ (Windows ストア アプリ)]** をクリックします。
 
-     ![単体テストプロジェクトを作成する](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")
+     ![単体テスト プロジェクトの作成](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")
 
 6. Visual Studio エディターで UnitTest1.cs を開きます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "72659606"
 
     ```
 
-     次の点に注意してください。
+     以下の点に注意してください。
 
     1. 各テストは `[TestMethod]` を使用して定義されます。 テスト メソッドは void を返す必要があり、パラメーターをとることはできません。
 
@@ -97,7 +97,7 @@ ms.locfileid: "72659606"
 
     3. 各モジュール、クラス、またはメソッドの前後に呼び出される特殊なメソッドを定義することができます。 詳細については、MSDN ライブラリの「[単体テストでの Microsoft.VisualStudio.TestTools.UnitTesting のメンバーの使用](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)」を参照してください。
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> テストがテスト エクスプローラーで実行されることを確認する
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> テストがテスト エクスプローラーで実行されることを確認する
 
 1. **UnitTest1.cs** ファイルの `TestMethod1` のテスト コードを挿入します。
 
@@ -119,9 +119,9 @@ ms.locfileid: "72659606"
 
      ![テスト エクスプローラー](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Maths プロジェクトに Rooter クラスを追加します。
+## <a name="add-the-rooter-class-to-the-maths-project"></a><a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Maths プロジェクトに Rooter クラスを追加します。
 
-1. ソリューション エクスプローラーでプロジェクト名の **[Maths]** を選択します。 ショートカット メニューの **[追加]** をポイントし、 **[クラス]** をクリックします。
+1. ソリューション エクスプローラーでプロジェクト名の **[Maths]** を選択します。 ショートカット メニューの **[追加]** をポイントし、**[クラス]** をクリックします。
 
 2. クラス ファイルに `Rooter.cs` という名前を付けます。
 
@@ -145,13 +145,13 @@ ms.locfileid: "72659606"
 
 4. `SqareRoot` メソッドは、テスト設定の基本的な構造をテストするための必要最小限の実装にすぎません。
 
-## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> アプリケーション プロジェクトにテスト プロジェクトを結合する
+## <a name="couple-the-test-project-to-the-app-project"></a><a name="BKMK_Couple_the_test_project_to_the_app_project"></a> アプリケーション プロジェクトにテスト プロジェクトを結合する
 
 1. RooterTests プロジェクトに Maths アプリケーションへの参照を追加します。
 
    1. ソリューション エクスプローラーで、**RooterTests** プロジェクトを選択し、ショートカット メニューの **[参照の追加...]** をクリックします。
 
-   2. **[参照の追加 - RooterTests]** ダイアログ ボックスの **[ソリューション]** を展開し、 **[プロジェクト]** をクリックします。 次に **[Maths]** 項目を選択します。
+   2. **[参照の追加 - RooterTests]** ダイアログ ボックスの **[ソリューション]** を展開し、**[プロジェクト]** をクリックします。 次に **[Maths]** 項目を選択します。
 
         ![Maths プロジェクトへの参照の追加](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
 
@@ -165,7 +165,7 @@ ms.locfileid: "72659606"
        using Maths;
        ```
 
-3. Rooter 関数を使用するテストを追加します。 **UnitTest1.cpp** に次のコードを追加します。
+3. Rooter 関数を使用するテストを追加します。 **UnitTest1**に次のコードを追加します。
 
    ```csharp
    [TestMethod]
@@ -184,13 +184,13 @@ ms.locfileid: "72659606"
 
     新しいテストがテスト エクスプローラーの **[テストを実行しない]** ノードに表示されます。
 
-5. テスト エクスプローラーで **[すべて実行]** をクリックします。
+5. テストエクスプローラーで [ **すべて実行**] を選択します。
 
-    ![基本テストに成功しました](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![基本テスト成功](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    テストとコード プロジェクトをセット アップして、コード プロジェクトで関数を実行するテストを実行できることを確認しました。 ここで、実際のテストおよびコードの記述を開始できます。
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> テストを繰り返し増やして成功させる
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> テストを繰り返し増やして成功させる
 
 1. 新しいテストを追加します。
 
@@ -215,11 +215,11 @@ ms.locfileid: "72659606"
     >
     >  ユーザーが要件を変更したら、正しくなくなったテストを無効にします。 新しいテストを作成し、一度に 1 つずつ、同じ増分方式で処理するようにします。
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
 3. テストが失敗します。
 
-     ![RangeTest が失敗する](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest 失敗](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > そのテストを作成した直後に、各テストが失敗することを検証します。 これは、絶対に失敗しないテストを記述するという簡単なミスを避けることに役立ちます。
@@ -242,14 +242,14 @@ ms.locfileid: "72659606"
 
     ```
 
-5. ソリューションをビルドし、テスト エクスプ ローラーで **[すべて実行]** を選択します。
+5. ソリューションをビルドし、テストエクスプローラーで [ **すべて実行**] を選択します。
 
      3 つのテストはすべて成功しました。
 
 > [!TIP]
 > 一度に 1 つのテストを追加してコードを開発します。 各反復処理の後にすべてのテストが合格することを確認します。
 
-## <a name="BKMK_Debug_a_failing_test"></a> 失敗したテストをデバッグする
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> 失敗したテストをデバッグする
 
 1. **UnitTest1.cs** に別のテストを追加します。
 
@@ -284,11 +284,11 @@ ms.locfileid: "72659606"
 
    ```
 
-2. テスト エクスプローラーで **[すべて実行]** をクリックします。
+2. テストエクスプローラーで [ **すべて実行**] を選択します。
 
     テストが失敗します。 テスト エクスプローラーでテスト名を選択します。 失敗したアサーションが強調表示されます。 エラー メッセージは、テスト エクスプ ローラーの [詳細] ウィンドウに表示されます。
 
-    ![Negativerangetest 失敗](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![NegativeRangeTest 失敗](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. テストが失敗した理由を表示するには、関数をステップ実行します。
 
@@ -310,13 +310,13 @@ ms.locfileid: "72659606"
 
        ```
 
-   1. テスト エクスプローラーで **[すべて実行]** をクリックして、修正されたメソッドをテストし、回帰が生じていないことを確認します。
+   1. テストエクスプローラーで [ **すべて実行** ] をクリックして、修正されたメソッドをテストし、回帰が導入されていないことを確認します。
 
    今回は、すべてのテストに合格します。
 
-   ![すべてのテストに合格](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+   ![すべてのテストの成功](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_"></a> コードをリファクタリングする
+## <a name="refactor-the-code"></a><a name="BKMK_Refactor_the_code_"></a> コードをリファクターする
  **SquareRoot 関数の中心的な計算を簡素化します。**
 
 1. 結果の実装を変更する

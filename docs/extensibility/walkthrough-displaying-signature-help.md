@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904815"
 ---
 # <a name="walkthrough-display-signature-help"></a>チュートリアル: 署名のヘルプを表示する
-シグネチャヘルプ (*パラメーターヒント*とも呼ばれます) は、ユーザーがパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、ツールヒントにメソッドの署名を表示します。 パラメーターとパラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。 シグネチャヘルプは、次の方法で定義できます。言語サービスのコンテキストでは、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類の署名のヘルプを表示します。または、既存のコンテンツの種類 (たとえば、"text") の署名のヘルプを表示します。 このチュートリアルでは、"text" コンテンツタイプのシグネチャヘルプを表示する方法について説明します。
+シグネチャヘルプ ( *パラメーターヒント*とも呼ばれます) は、ユーザーがパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、ツールヒントにメソッドの署名を表示します。 パラメーターとパラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。 シグネチャヘルプは、次の方法で定義できます。言語サービスのコンテキストでは、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類の署名のヘルプを表示します。または、既存のコンテンツの種類 (たとえば、"text") の署名のヘルプを表示します。 このチュートリアルでは、"text" コンテンツタイプのシグネチャヘルプを表示する方法について説明します。
 
  シグネチャヘルプは、通常、特定の文字 (左かっこ) を入力することによってトリガーされ、別の文字 (")" (右かっこ) を入力することによって無視されます。 文字の入力によってトリガーされる IntelliSense 機能を実装するには、キーストローク (インターフェイス) のコマンドハンドラー <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> と、インターフェイスを実装するハンドラープロバイダーを使用し <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ます。 シグネチャヘルプに参加する署名の一覧である Signature ヘルプソースを作成するには、インターフェイス <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> と、インターフェイスを実行するソースプロバイダーを実装し <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> ます。 プロバイダーは Managed Extensibility Framework (MEF) コンポーネントのパーツであり、ソースとコントローラーのクラスをエクスポートし、サービスとブローカーをインポートし <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> ます。たとえば、テキストバッファー内を移動できるようにしたり、 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> 署名ヘルプセッションをトリガーするを使用したりします。
 
  このチュートリアルでは、ハードコーディングされた識別子のセットの署名のヘルプを設定する方法について説明します。 完全な実装では、言語がそのコンテンツを提供する必要があります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="creating-a-mef-project"></a>MEF プロジェクトの作成
 
 #### <a name="to-create-a-mef-project"></a>MEF プロジェクトを作成するには
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `SignatureHelpTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `SignatureHelpTest` します。
 
-2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. エディター分類子項目テンプレートをプロジェクトに追加します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
 3. 既存のクラス ファイルを削除します。
 
-4. 次の参照をプロジェクトに追加し、 **CopyLocal**がに設定されていることを確認し `false` ます。
+4. 次の参照をプロジェクトに追加し、 **CopyLocal** がに設定されていることを確認し `false` ます。
 
      VisualStudio
 

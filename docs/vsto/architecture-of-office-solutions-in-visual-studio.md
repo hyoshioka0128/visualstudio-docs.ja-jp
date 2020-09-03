@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551879"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio での Office ソリューションのアーキテクチャ
@@ -33,7 +33,7 @@ ms.locfileid: "69551879"
 
 ドキュメントレベル カスタマイズのしくみと開発者とエンド ユーザーのカスタマイズの認識の違いについて説明します。
 
-[VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
+[Architecture of VSTO Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
 
 VSTO アドインのコンポーネントとそれらがアプリケーションにより読み込まれるしくみについて説明します。
 
@@ -51,11 +51,11 @@ Office ソリューションに使用されるランタイムのさまざまな�
 
 ## <a name="related-sections"></a>関連項目
 
-[Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 ビジネス ソリューションの開発で Microsoft Office をプラットフォームとして使用する方法について紹介します。
 
-[はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Visual Studio で &#40;Office 開発を開始する&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Office ソリューションの作成用に開発コンピューターを構成する方法、Office ソリューションの作成を開始する方法、Visual Studio の Office 開発ツールの初期バージョンからの変更点に関する情報のリンクを提供します。
 
@@ -63,6 +63,6 @@ Office ソリューションの作成用に開発コンピューターを構成�
 
 Office ソリューションの作成に関する情報のリンクを提供します。
 
-[一般的な&#40;リファレンス (Visual Studio での Office 開発)&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Visual Studio での Office 開発に関する一般的なリファレンス &#40;&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
 Office プロジェクトのユーザー インターフェイス要素、Office プロジェクトのアプリケーション マニフェストと展開マニフェスト、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]の API に関する情報のリンクを提供します。

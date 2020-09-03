@@ -1,5 +1,5 @@
 ---
-title: KeyBindings 要素 |Microsoft Docs
+title: キーバインド要素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2649dee6bbf87b43caee260ddb2b6bbd217c7ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180308"
 ---
 # <a name="keybindings-element"></a>KeyBindings 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-KeyBindings 要素には、キー バインド要素とその他の KeyBindings グループがグループ化します。  
+キーバインド要素は、キーバインド要素とその他のキーバインドグループをグループ化します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,14 +41,14 @@ KeyBindings 要素には、キー バインド要素とその他の KeyBindings 
   
 |属性|説明|  
 |---------------|-----------------|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[KeyBinding 要素](../extensibility/keybinding-element.md)|コマンドのキーボード ショートカットを指定します。|  
-|[キー バインド](../extensibility/keybindings-element.md)|KeyBinding 要素をグループ化し、他の KeyBindings グループ化します。|  
+|[KeyBinding 要素](../extensibility/keybinding-element.md)|コマンドのキーボードショートカットを指定します。|  
+|[キーバインド](../extensibility/keybindings-element.md)|キーバインド要素とその他のキーバインドグループをグループ化します。|  
   
 ### <a name="parent-elements"></a>親要素  
   
@@ -67,6 +67,6 @@ KeyBindings 要素には、キー バインド要素とその他の KeyBindings 
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [KeyBinding 要素](../extensibility/keybinding-element.md)   
+## <a name="see-also"></a>参照  
+ [キーバインド要素](../extensibility/keybinding-element.md)   
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

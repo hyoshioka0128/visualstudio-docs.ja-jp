@@ -1,5 +1,5 @@
 ---
-title: IDebugdisアセンブリストリーム2::取得コードコンテキスト |マイクロソフトドキュメント
+title: 'IDebugDisassemblyStream2:: GetCodeContext |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a6b3864528ee90c22a1e7122eeaf1969f613cc8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732287"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
-指定したコードの場所識別子に対応するコード コンテキスト オブジェクトを返します。
+指定されたコードの場所の識別子に対応するコードコンテキストオブジェクトを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,18 +43,18 @@ int GetCodeContext( 
 
 ## <a name="parameters"></a>パラメーター
 `uCodeLocationId`\
-[in]コードの場所の識別子を指定します。 コードの場所識別子の説明については[、GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドの解説セクションを参照してください。
+からコードの場所の識別子を指定します。 コードの場所の識別子の説明については、「 [Getcodelocationid](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) メソッド」の「解説」を参照してください。
 
 `ppCodeContext`\
-[アウト]関連付けられたコード コンテキストを表す[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)オブジェクトを返します。
+入出力関連付けられているコードコンテキストを表す [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- コードの場所の識別子は[、GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)メソッドの呼び出しから返され[、DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体に表示できます。
+## <a name="remarks"></a>解説
+ コードの場所の識別子は、 [Getcurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) メソッドの呼び出しから返され、 [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 構造に含めることができます。
 
- コード コンテキストをコードの場所識別子に変換するには、[メソッド](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)を呼び出します。
+ コードコンテキストをコードロケーション識別子に変換するには、 [Getcodelocationid](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

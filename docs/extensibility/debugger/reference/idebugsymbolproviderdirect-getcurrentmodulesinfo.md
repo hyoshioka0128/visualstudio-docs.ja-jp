@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugSymbolProviderDirect:: Getcurrentモジュール Info |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719121"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
-シンボル グループ内のモジュールに関する情報を取得します。
+シンボルグループ内のモジュールに関する情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,22 +48,22 @@ int GetCurrentModulesInfo(
 
 ## <a name="parameters"></a>パラメーター
 `pCount`\
-[in]配列内のモジュールの`ppGuids`数。
+から配列内のモジュールの数 `ppGuids` 。
 
 `ppGuids`\
-[in]モジュールの一意の識別子を含む配列。
+からモジュールの一意の識別子を格納している配列。
 
 `pADIds`\
-[in]アプリケーション ドメインの識別子。
+からアプリケーションドメインの識別子。
 
 `pCurrentState`\
-[in]シンボル グループの現在の状態。
+からシンボルグループの現在の状態。
 
 `ppCDModItfs`\
-[アウト]シンボル グループ内のモジュールを含むオブジェクトを返します。
+入出力シンボルグループ内のモジュールを含むオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

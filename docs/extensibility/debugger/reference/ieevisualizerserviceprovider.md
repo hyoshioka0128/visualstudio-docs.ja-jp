@@ -1,5 +1,5 @@
 ---
-title: IEEビジュアライザーサービスプロバイダ |マイクロソフトドキュメント
+title: IEEVisualizerServiceProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717883"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については、「 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- このインターフェイスは、IDE のビジュアライザーの種類のタスクを処理するために使用されるビジュアライザー サービスを作成できるメソッドへのアクセスを提供します。
+ このインターフェイスは、ビジュアライザーサービスを作成できるメソッドへのアクセスを提供します。このメソッドは、IDE の型ビジュアライザータスクを処理するために使用されます。
 
 ## <a name="syntax"></a>構文
 
@@ -31,29 +31,29 @@ ms.locfileid: "80717883"
 IEEVisualizerServiceProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- Visual Studio では、ビジュアライザーサービス オブジェクトを作成するためにこのインターフェイスを実装します`CLSID`。
+## <a name="notes-for-implementers"></a>実装側の注意
+ Visual Studio は、ビジュアライザーサービスオブジェクトを作成するためにこのインターフェイスを実装します。ビジュアライザーサービスオブジェクトは、 `CLSID` Visual STUDIO IDE に型ビジュアライザーのクラス id を提供するために使用されます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- 式エバリュエーター (EE) は、このインターフェイスを取得するために[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)を呼び出します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ 式エバリュエーター (EE) は、このインターフェイスを取得するために [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) を呼び出します。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|ビジュアライザー サービスを作成します。|
+|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|ビジュアライザーサービスを作成します|
 
-## <a name="remarks"></a>Remarks
- インターフェイス`IEEVisualizerServiceProvider`は[、EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)の実装中に取得されます。 このインターフェイスが作成するビジュアライザー サービスは、EE が実装を担当する[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスに機能を提供するために使用されます。 EE は、型ビジュアライザーがプロパティの値を表示および変更できるようにする[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)インターフェイスの実装も担当します。
+## <a name="remarks"></a>注釈
+ `IEEVisualizerServiceProvider`インターフェイスは、 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)の実装中に取得されます。 このインターフェイスによって作成されるビジュアライザーサービスは、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) インターフェイスに機能を提供するために使用されます。このインターフェイスは、EE が実装する役割を担います。 EE は、型ビジュアライザーがプロパティの値を表示および変更できるようにする [Ieevisualizerdataprovider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) インターフェイスを実装する役割も担います。
 
- これらのインターフェイスの相互作用の詳細については、「[データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md)」を参照してください。
+ これらのインターフェイスの相互作用の詳細については [、「データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md) 」を参照してください。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: ee.h
+ ヘッダー: ee
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

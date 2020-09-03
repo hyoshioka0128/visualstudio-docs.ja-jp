@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65734f5397bae8c35fb8e312041d0600b8fa84e9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254343"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>拡張オブジェクトを使用して Excel を自動化する
@@ -32,16 +32,16 @@ ms.locfileid: "71254343"
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ホスト項目とホスト コントロールは、VSTO アドインとドキュメント レベルのカスタマイズの両方で使用できます。ただし、使用できるコンテキストはそれおぞれのソリューションの種類で異なります。 詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+ ホスト項目とホスト コントロールは、VSTO アドインとドキュメント レベルのカスタマイズの両方で使用できます。ただし、使用できるコンテキストはそれおぞれのソリューションの種類で異なります。 詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 ## <a name="excel-host-items"></a>Excel ホスト項目
  Excel プロジェクトでは、次のホスト項目にアクセスできます。
 
-- <xref:Microsoft.Office.Tools.Excel.Worksheet>。 このホスト項目にはが含まれ、プロジェクト内のワークシートを表します。 また、ホスト コントロールや Windows フォーム コントロールなどのマネージド コントロールを格納するコンテナーの役割も果たし、画面のコントロールに関する情報を保持します。 詳細については、「[ワークシートホスト項目](../vsto/worksheet-host-item.md)」を参照してください。
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. このホスト項目にはが含まれ、プロジェクト内のワークシートを表します。 また、ホスト コントロールや Windows フォーム コントロールなどのマネージド コントロールを格納するコンテナーの役割も果たし、画面のコントロールに関する情報を保持します。 詳細については、「 [ワークシートホスト項目](../vsto/worksheet-host-item.md)」を参照してください。
 
-- <xref:Microsoft.Office.Tools.Excel.Workbook>。 このホスト項目はプロジェクトのブックを表し、ブック内のすべてのワークシートで共有されるコンポーネントを格納するコンテナーとして動作します。 詳細については、「 [Workbook host item](../vsto/workbook-host-item.md)」を参照してください。
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. このホスト項目はプロジェクトのブックを表し、ブック内のすべてのワークシートで共有されるコンポーネントを格納するコンテナーとして動作します。 詳細については、「 [Workbook host item](../vsto/workbook-host-item.md)」を参照してください。
 
-- <xref:Microsoft.Office.Tools.Excel.ChartSheet>。 このホスト項目はグラフのみを含む Excel ワークシートを表し、イベントを公開します。
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. このホスト項目はグラフのみを含む Excel ワークシートを表し、イベントを公開します。
 
      Microsoft Office Excel のドキュメント レベルのカスタマイズ プロジェクトで、デザイン時に新しいシートとしてグラフ シートを追加した場合、Visual Studio によって自動的に <xref:Microsoft.Office.Tools.Excel.ChartSheet> ホスト項目が作成されます。
 
@@ -61,16 +61,16 @@ ms.locfileid: "71254343"
 - [XmlMappedRange コントロール](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>関連項目
-- [方法: データを使用した ListObject コントロールの塗りつぶし](../vsto/how-to-fill-listobject-controls-with-data.md)
-- [方法: ワークシートへのグラフコントロールの追加](../vsto/how-to-add-chart-controls-to-worksheets.md)
-- [方法: ワークシートへの ListObject コントロールの追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [方法: ワークシートへの NamedRange コントロールの追加](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
-- [方法: ワークシートへの XMLMappedRange コントロールの追加](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
-- [方法: NamedRange コントロールのサイズ変更](../vsto/how-to-resize-namedrange-controls.md)
-- [方法: ListObject コントロールのサイズ変更](../vsto/how-to-resize-listobject-controls.md)
+- [方法: ListObject コントロールにデータを読み込む](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [方法: ワークシートにグラフコントロールを追加する](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [方法: ワークシートに ListObject コントロールを追加する](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [方法: ワークシートに NamedRange コントロールを追加する](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [方法: ワークシートに XMLMappedRange コントロールを追加する](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [方法: NamedRange コントロールのサイズを変更する](../vsto/how-to-resize-namedrange-controls.md)
+- [方法: ListObject コントロールのサイズを変更する](../vsto/how-to-resize-listobject-controls.md)
 - [方法: ListObject コントロールに新しい行が追加されたときにデータを検証する](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
-- [方法: ListObject 列をデータにマップする](../vsto/how-to-map-listobject-columns-to-data.md)
-- [チュートリアル: NamedRange コントロールのイベントに対してプログラムを実行する](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [方法: データに ListObject 列をマップする](../vsto/how-to-map-listobject-columns-to-data.md)
+- [チュートリアル: NamedRange コントロールのイベントに対するプログラミング](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [実行時に VSTO アドインの Word 文書と Excel ブックを拡張する](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161529"
 ---
 # <a name="context-operator-c"></a>context 演算子 (C++)
@@ -35,7 +35,7 @@ ms.locfileid: "68161529"
 
 C++ のコンテキスト演算子を使用して、ブレークポイントの場所、変数名、または式を修飾できます。 コンテキスト演算子は、ローカル名で隠されていてほかにアクセス方法がない外部スコープから名前を指定するために利用できます。  
   
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 構文  
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 構文  
  コンテキストを指定する 2 つの方法があります。  
   
 1. {,,[*module*] } *expression*  
@@ -56,7 +56,7 @@ C++ のコンテキスト演算子を使用して、ブレークポイントの�
   
 - *module* は、モジュールの名前です。 完全パスを使用することで、同じ名前のモジュールのあいまいさを解消することができます。  
   
-   *module* のパスにコンマ、埋め込みスペース、または中かっこが含まれる場合は、コンテキスト パーサーが文字列を適切に認識できるように、パスを引用符で囲む必要があります。 単一引用符は Windows ファイル名の一部として解釈されるので、二重引用符を使用する必要があります。 例えば以下のようにします。  
+   *module* のパスにコンマ、埋め込みスペース、または中かっこが含まれる場合は、コンテキスト パーサーが文字列を適切に認識できるように、パスを引用符で囲む必要があります。 単一引用符は Windows ファイル名の一部として解釈されるので、二重引用符を使用する必要があります。 たとえば、オブジェクトに適用された  
   
   ```cpp  
   {,,"a long, long, library name.dll"} g_Var  

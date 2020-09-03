@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586631"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
@@ -67,4 +67,4 @@ ms.locfileid: "82586631"
  ロック コンボイは、早い者勝ちの順序でアプリケーションがロックを取得したときと、ロックの到着率が取得率よりも高いときに発生します。 これら 2 つの条件が組み合わさると、ロックの要求によってバックアップが開始されます。 この問題を解決するには、"不公平な" ロック (最初のスレッドにロック解除状態で検索するアクセス権を与えるロック) を使用する方法があります。 前の図は、このコンボイ動作を示しています。 この問題を解決するには、同期オブジェクトの競合を減らし、不公平なロックを使用してみてください。  
   
 ## <a name="see-also"></a>参照  
- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
+ [スレッドビュー](../profiling/threads-view-parallel-performance.md)

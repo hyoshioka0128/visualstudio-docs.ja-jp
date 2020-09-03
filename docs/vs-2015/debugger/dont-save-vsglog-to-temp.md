@@ -1,5 +1,5 @@
 ---
-title: DONT_SAVE_VSGLOG_TO_TEMP |Microsoft Docs
+title: DONT_SAVE_VSGLOG_TO_TEMP | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 449c6c1ecdb0644b9b52b6ec12ce867dc34d66c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156100"
 ---
-# <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
+# <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 その存在によって、グラフィックス ログ ファイルがユーザーの一時ファイル ディレクトリに保存されるかどうかを定義します。  
@@ -27,13 +27,13 @@ ms.locfileid: "68156100"
 #define DONT_SAVE_VSGLOG_TO_TEMP  
 ```  
   
-## <a name="value"></a>値  
+## <a name="value"></a>[値]  
  その有無によって、グラフィックス ログ ファイルがユーザーの一時ファイル ディレクトリに保存されるかどうかが決まるプリプロセッサ シンボル。 このシンボルが定義されている場合、`VSG_DEFAULT_RUN_FILENAME` で定義されるファイル名は、キャプチャされるアプリケーションの現在のディレクトリに対する相対パスになるか、または絶対パスです。それ以外の場合、`VSG_DEFAULT_RUN_FILENAME` で定義されるファイル名は、ユーザーの一時ファイル ディレクトリに対する相対パスになり、絶対パスにすることはできません。  
   
 ## <a name="remarks"></a>Remarks  
  ユーザーの特権によっては、グラフィック ログ ファイルを任意の場所に保存できないことがあります。 選択した場所にユーザーが書き込むことができるかどうかがわからない場合は、ユーザーの一時ファイル ディレクトリ、または別の既知の場所にグラフィックス ログを保存することをお勧めします。  
   
- グラフィックス ログ ファイルが一時ファイル ディレクトリに保存されていることを防ぐために定義する必要があります`DONT_SAVE_VSGLOG_TO_TEMP`インクルードする前に`vsgcapture.h`します。  
+ グラフィックス ログ ファイルを一時ファイル ディレクトリに保存することを防ぐには、`vsgcapture.h` をインクルードする前に `DONT_SAVE_VSGLOG_TO_TEMP` を定義する必要があります。  
   
 ## <a name="example"></a>例  
  次の例に、グラフィックス ログ ファイルをホスト コンピューターの絶対パスに保存する方法を示します。  
@@ -47,5 +47,5 @@ ms.locfileid: "68156100"
   
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)

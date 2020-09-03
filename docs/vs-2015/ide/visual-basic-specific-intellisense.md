@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Basic 固有の IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663031"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Visual Basic 固有の IntelliSense
@@ -51,5 +51,5 @@ Visual Basic ソース コード エディターでは、次の IntelliSense 機
 
   詳細については、「[ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [IntelliSense の使用](../ide/using-intellisense.md)

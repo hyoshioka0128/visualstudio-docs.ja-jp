@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eef99509048b1dd54576a20449b9d4f51c11439e
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014876"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する
-  カスタム SharePoint プロジェクト項目の種類を定義すると、ショートカットメニュー項目をプロジェクト項目に追加できます。 メニュー項目は、ユーザーが**ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
+  カスタム SharePoint プロジェクト項目の種類を定義すると、ショートカットメニュー項目をプロジェクト項目に追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
 
- 次の手順では、独自の SharePoint プロジェクトアイテムの種類が既に定義されていることを前提としています。 詳細については、「[方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。
+ 次の手順では、独自の SharePoint プロジェクトアイテムの種類が既に定義されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。
 
 ### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>ショートカットメニュー項目をカスタムプロジェクト項目の種類に追加するには
 
@@ -34,12 +35,12 @@ ms.locfileid: "86014876"
 3. <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新しいオブジェクトのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> 、ユーザーがショートカットメニュー項目を選択したときに実行するタスクを実行します。
 
 ## <a name="example"></a>例
- 次のコード例は、カスタムプロジェクト項目の種類にコンテキストメニュー項目を追加する方法を示しています。 ユーザーが**ソリューションエクスプローラー**のプロジェクト項目からショートカットメニューを開き、[**出力ウィンドウにメッセージを書き込む**] メニュー項目を選択すると、Visual Studio によって**出力**ウィンドウにメッセージが表示されます。
+ 次のコード例は、カスタムプロジェクト項目の種類にコンテキストメニュー項目を追加する方法を示しています。 ユーザーが **ソリューションエクスプローラー** のプロジェクト項目からショートカットメニューを開き、[ **出力ウィンドウにメッセージを書き込む** ] メニュー項目を選択すると、Visual Studio によって **出力** ウィンドウにメッセージが表示されます。
 
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs#4)]
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb#4)]
 
- この例では、SharePoint プロジェクトサービスを使用して、**出力**ウィンドウにメッセージを書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
+ この例では、SharePoint プロジェクトサービスを使用して、 **出力** ウィンドウにメッセージを書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照を含むクラスライブラリプロジェクトが必要です。

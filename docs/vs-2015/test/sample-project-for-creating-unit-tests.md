@@ -12,10 +12,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d495d0bf12c900d34a04a84e950b002494b7b5c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660398"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>単体テストを作成するサンプル プロジェクト
@@ -23,9 +23,9 @@ ms.locfileid: "72660398"
 
 このサンプル コードは、次のチュートリアルで使用するために用意されています。
 
-- [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 このチュートリアルでは、単体テストの作成とカスタマイズ、実行、およびテスト結果の検討の手順について説明します。
+- [チュートリアル: マネージコードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 このチュートリアルでは、単体テストの作成とカスタマイズ、実行、およびテスト結果の検討の手順について説明します。
 
-- [チュートリアル: テストの実行とコード カバレッジの表示](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 このチュートリアルでは、テストされているプロジェクトのコードの割合を示すコード カバレッジ データを表示する方法を説明します。
+- [チュートリアル: テストの実行とコードカバレッジの表示](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 このチュートリアルでは、テストされているプロジェクトのコードの割合を示すコード カバレッジ データを表示する方法を説明します。
 
 - [チュートリアル: コマンド ライン テスト ユーティリティの使用](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 このチュートリアルでは、MSTest.exe コマンドライン ユーティリティを使用してテストを実行し、結果を表示します。
 

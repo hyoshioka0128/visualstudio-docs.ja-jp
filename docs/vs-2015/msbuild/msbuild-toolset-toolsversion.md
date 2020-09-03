@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf22fdf3d0cd9196794aa3929e9952f57bbfa2f0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871996"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
@@ -38,7 +38,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 
  `ToolsVersion` の値をプロジェクト ファイルで定義すると、MSBuild ではその値に基づいて、プロジェクトで使用できるツールセットのプロパティの値を判別します。 ツールセットのプロパティの 1 つに `$(MSBuildToolsPath)` があります。このプロパティは、.NET Framework ツールのパスを指定します。 このツールセットのプロパティ (または `$(MSBuildBinPath)`) は、唯一の必須のプロパティです。
 
- Visual Studio 2013 以降、MSBuild ツールセットのバージョンは Visual Studio のバージョン番号と同じになりました。 プロジェクト ファイルで指定されたツールセットのバージョンにかかわりなく、MSBuild は Visual Studio 内とコマンド ラインでこのツールセットを既定として使用します。  この動作は、/ToolsVersion フラグを使用してオーバーライドできます。 詳細については、「[ToolsVersion 設定をオーバーライドする](../msbuild/overriding-toolsversion-settings.md)」を参照してください。
+ Visual Studio 2013 以降、MSBuild ツールセットのバージョンは Visual Studio のバージョン番号と同じになりました。 プロジェクト ファイルで指定されたツールセットのバージョンにかかわりなく、MSBuild は Visual Studio 内とコマンド ラインでこのツールセットを既定として使用します。  この動作は、/ToolsVersion フラグを使用してオーバーライドできます。 詳細については、「 [ToolsVersion 設定のオーバーライド](../msbuild/overriding-toolsversion-settings.md)」を参照してください。
 
  次の例では、MSBuild は `MSBuildToolsPath` 予約済みプロパティを使用して Microsoft.CSharp.targets ファイルを検索します。
 
@@ -46,9 +46,9 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- `MSBuildToolsPath` の値を変更するには、カスタム ツールセットを定義します。 詳細については、「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。
+ `MSBuildToolsPath` の値を変更するには、カスタム ツールセットを定義します。 詳細については、「[標準およびカスタムツールセットの構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。
 
- ソリューションをコマンド ラインでビルドするとき、msbuild.exe に対して `ToolsVersion` を指定すると、すべてのプロジェクトとそのプロジェクト間の依存関係がその `ToolsVersion` に基づいてビルドされます。ソリューション内の各プロジェクトで固有の `ToolsVersion` が指定されていても、その値は無視されます。 プロジェクトごとに `ToolsVersion` 値を定義する場合は、「[ToolsVersion 設定のオーバーライド](../msbuild/overriding-toolsversion-settings.md)」を参照してください。
+ ソリューションをコマンド ラインでビルドするとき、msbuild.exe に対して `ToolsVersion` を指定すると、すべてのプロジェクトとそのプロジェクト間の依存関係がその `ToolsVersion` に基づいてビルドされます。ソリューション内の各プロジェクトで固有の `ToolsVersion` が指定されていても、その値は無視されます。 プロジェクトごとに値を定義するには `ToolsVersion` 、「 [ToolsVersion 設定のオーバーライド](../msbuild/overriding-toolsversion-settings.md)」を参照してください。
 
  `ToolsVersion` 属性はプロジェクトの移行でも使用されます。 たとえば、Visual Studio 2010 で Visual Studio 2008 プロジェクトを開く場合、プロジェクト ファイルは ToolsVersion="4.0" を含むように更新されます。 次に、そのプロジェクトを Visual Studio 2008 で開こうとすると、アップグレードされた `ToolsVersion` は認識されず、プロジェクトは属性が 3.5 に設定された場合と同様にビルドされます。
 
@@ -71,7 +71,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper> メソッドの使用
 
-  ツールセットのプロパティは、ツールのパスを指定します。 MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使用して、対応するレジストリ キーを検索します。その後で、レジストリ キーの情報を使用して、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild ではレジストリ キー Hklm\software\microsoft\msbuild\toolsversions\12.0)
+  ツールセットのプロパティは、ツールのパスを指定します。 MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使用して、対応するレジストリ キーを検索します。その後で、レジストリ キーの情報を使用して、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild は、レジストリ キー (HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0) に従ってツールセットのプロパティを設定します。
 
   ツールセットのプロパティを次に示します。
 
@@ -91,7 +91,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>: マネージド ツール フォルダーに通常格納されているファイルのパスを返します。
 
-- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121))は、ビルドツールのパスを返します。
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)): ビルド ツールのパスを返します。
 
 ### <a name="sub-toolsets"></a>サブツールセット
  このトピックで既に説明したように、MSBuild ではレジストリ キーを使用して、基本ツールのパスを指定します。 キーにサブキーがある場合、MSBuild ではそのサブキーを使用して、追加のツールを含むサブツールセットのパスを指定します。 この場合、ツールセットは両方のキーで定義されたプロパティ定義を組み合わせることによって定義されます。
@@ -117,5 +117,5 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 
 ## <a name="see-also"></a>関連項目
 
-- [標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)
+- [標準およびカスタムツールセットの構成](../msbuild/standard-and-custom-toolset-configurations.md)
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)

@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545627"
 ---
 # <a name="debugger-windows"></a>デバッガー ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-プログラムのデバッグ中に、ほとんどのデバッガー ウィンドウを開くことができます。 デバッガー ウィンドウの一覧を表示するには、ブレークポイントを設定し、デバッグを開始します。 ブレークポイントにヒットし、実行が停止したら、[デバッグ]、[**ウィンドウ**] の順にクリックします。  
+プログラムのデバッグ中に、ほとんどのデバッガー ウィンドウを開くことができます。 デバッガー ウィンドウの一覧を表示するには、ブレークポイントを設定し、デバッグを開始します。 ブレークポイントにヒットし、実行が停止したら、[デバッグ]、[ **ウィンドウ**] の順にクリックします。  
   
-|**Window**|**ホット キー**|**トピックを参照**|  
+|**ウィンドウ**|**ホット キー**|**トピックを参照**|  
 |-|-|-|  
 |ブレークポイント|Ctrl + Alt + B|[ブレークポイントの使用](../debugger/using-breakpoints.md)|  
 |例外設定|Ctrl + Alt + E|[デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)|  
@@ -32,7 +32,7 @@ ms.locfileid: "85545627"
 |並列ウォッチ|Ctrl + Shift + D、(1、2、3、4)|[[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|Ctrl + Alt + W、(1、2、3、4)|[ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)|  
 |クイック ウォッチ|Shift + F9|[ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)|  
-|自動|Ctrl + Alt + V、A|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|Ctrl + Alt + V、A|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |ローカル|Ctrl + Alt + V、L|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |イミディエイト|Ctrl + Alt + I|[イミディエイト ウィンドウ](../ide/reference/immediate-window.md)|  
 |Python 対話形式デバッグ|Shift + Alt + I|[PTVS の概要: 対話型の Python](../python/getting-started-with-ptvs-interactive-python.md)|  
@@ -48,5 +48,5 @@ ms.locfileid: "85545627"
 |逆アセンブリ|Ctrl + Alt + D|[方法: [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)|  
 |レジスタ|Ctrl + Alt + G|[方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーの基本事項](../debugger/debugger-basics.md)

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: カスタム エディターの作成 |Microsoft Docs'
+title: 'チュートリアル: カスタムエディターの作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b1b4e59e43a4a5aeb129464a34b96ef3f665e72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148865"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>チュートリアル: カスタム エディターを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage プロジェクト テンプレートは、C++ では、単純なカスタム エディターを作成できます。  VSPackage プロジェクト テンプレートは、c# または Visual Basic のプロジェクトをサポートしていません。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+VSPackage プロジェクトテンプレートでは、C++ で単純なカスタムエディターを作成できます。  VSPackage プロジェクトテンプレートでは、C# または Visual Basic プロジェクトはサポートされなくなりました。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+ このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
-## <a name="the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレート  
- Visual Studio パッケージ プロジェクト テンプレートが記載されて、**新しいプロジェクト**C++ 拡張機能フォルダーのダイアログ  
+## <a name="the-visual-studio-package-project-template"></a>Visual Studio パッケージプロジェクトテンプレート  
+ Visual Studio パッケージプロジェクトテンプレートは、C++ 機能拡張フォルダーの [ **新しいプロジェクト** ] ダイアログにあります。  
   
-### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Visual Studio パッケージ テンプレートを使用して VSPackage を作成するには  
+### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Visual Studio パッケージテンプレートを使用して VSPackage を作成するには  
   
-1. Visual Studio パッケージ テンプレートを使用してプロジェクトを作成します。  
+1. Visual Studio パッケージテンプレートを使用してプロジェクトを作成します。  
   
-2. 選択、**カスタム エディター**オプションを選択し、をクリックして**次**します。 **エディター オプション**ページが表示されます。  
+2. [ **カスタムエディター** ] オプションを選択し、[ **次へ**] をクリックします。 [ **エディターオプション** ] ページが表示されます。  
   
-3. エディターの名前を入力、**エディター名**ボックス。 エディターに関連付けるファイル拡張子を入力、**ファイル拡張子**ボックス。 エディターでは、この拡張機能を持つファイル使用できます。 ファイル拡張機能は Windows ではなくのみ、Visual Studio の登録します。 エディターで作成された新しいドキュメントの既定のファイル名を入力、**既定のファイル名**ボックス。  
+3. [ **エディター名** ] ボックスにエディターの名前を入力します。 エディターに関連付けるファイル拡張子を [ **ファイル拡張子** ] ボックスに入力します。 エディターは、この拡張子を持つファイルに対して使用できます。 ファイル拡張子は Visual Studio に対してのみ登録され、Windows では登録されません。 エディターで作成した新しいドキュメントの既定のファイル名を [ **既定のファイル名** ] ボックスに入力します。  
   
 4. **[完了]** をクリックして、指定したフォルダーに VSPackage を作成します。  
   
-### <a name="to-test-your-custom-editor"></a>カスタム エディターをテストするには  
+### <a name="to-test-your-custom-editor"></a>カスタムエディターをテストするには  
   
-1. **ファイル**メニューで、**新規** をクリックし、**ファイル**します。  
+1. [ **ファイル** ] メニューの [ **新規作成** ] をポイントし、[ **ファイル**] をクリックします。  
   
-2. **インストールされたテンプレート**のウィンドウ、**新しいファイル**ダイアログ ボックスを選択し、ファイル テンプレート、ファイルの種類を登録します。  
+2. [**新しいファイル**] ダイアログボックスの [**インストールされたテンプレート**] ペインで、ファイルテンプレートを選択し、先ほど登録したファイルの種類を選択します。  
   
-3. クリックして**オープン**ドキュメントを表示および編集します。  
+3. ドキュメントを表示および編集するには、[ **開く** ] をクリックします。  
   
-     エディターには、切り取りと貼り付け、検索と置換、およびオープン アンド ロード操作がサポートしています。  
+     このエディターでは、切り取りと貼り付け、検索と置換、および開く操作と読み込み操作をサポートしています。  
   
-## <a name="see-also"></a>関連項目  
- [VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>参照  
+ [VSPackages](../extensibility/internals/vspackages.md)

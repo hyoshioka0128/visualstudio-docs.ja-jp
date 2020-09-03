@@ -1,5 +1,5 @@
 ---
-title: VS パッケージの管理 |マイクロソフトドキュメント
+title: Vspackage の管理 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702652"
 ---
 # <a name="manage-vspackages"></a>VSPackage を管理する
-ほとんどの場合、プロジェクトテンプレートと項目テンプレートはパッケージを自動的に登録してロードするため、VSPackages の管理について心配する必要はありません。 ただし、状況によっては、パッケージを管理するためにもう少し学習する必要があります。
+ほとんどの場合、Vspackage の管理について心配する必要はありません。プロジェクトと項目テンプレートによってパッケージが登録され、自動的に読み込まれるためです。 ただし、状況によっては、パッケージを管理するためにもう少し学習が必要になる場合があります。
 
-## <a name="use-the-experimental-instance"></a>実験用インスタンスの使用
- 実験インスタンスの詳細については、「[実験](../extensibility/the-experimental-instance.md)インスタンス」を参照してください。
+## <a name="use-the-experimental-instance"></a>実験用インスタンスを使用する
+ 実験用インスタンスの詳細については、 [実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
-## <a name="register-and-unregister-vspackages"></a>VS パッケージの登録と登録解除
- VSPackages およびその他の種類の拡張機能を登録および登録解除する方法については、「 [VSPackages の登録と登録解除](../extensibility/registering-and-unregistering-vspackages.md)」を参照してください。
+## <a name="register-and-unregister-vspackages"></a>Vspackage の登録と登録解除
+ Vspackage とその他の種類の拡張機能を登録および登録解除する方法については、「 [vspackage の登録と登録解除](../extensibility/registering-and-unregistering-vspackages.md)」を参照してください。
 
-## <a name="load-a-vspackage"></a>VS パッケージを読み込む
- VS パッケージは、特定の CMDUICONTEXT GUID がオンになっているときに自動読み込みに設定できます。 詳細については、「 [VS パッケージの読み込み](../extensibility/loading-vspackages.md)」を参照してください。
+## <a name="load-a-vspackage"></a>VSPackage を読み込む
+ Vspackage は、特定の CMDUICONTEXT GUID が有効になっている場合に自動読み込みするように設定できます。 詳細については、「 [Load vspackage](../extensibility/loading-vspackages.md)」を参照してください。
 
-## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>非同期パッケージを使用して VS パッケージをバックグラウンドで読み込む
- この`AsyncPackage`クラスは、Visual Studio で UI の応答性を向上するために、バックグラウンド スレッドでパッケージを読み込む機能を有効にします。 詳細については、「[方法 : AsyncPackage を使用して VSPackage をバックグラウンドで読み込む](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)」を参照してください。
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage を使用してバックグラウンドで Vspackage を読み込む
+ クラスは、 `AsyncPackage` Visual Studio での UI の応答性を向上させるために、バックグラウンドスレッドでのパッケージの読み込みを有効にします。 詳細については、「 [方法: AsyncPackage を使用してバックグラウンドで vspackage を読み込む](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)」を参照してください。
 
-## <a name="rule-based-ui-context-for-extensions"></a>拡張機能のルール ベースの UI コンテキスト
- ルール ベースの UI コンテキストでは、拡張機能の作成者は、UI コンテキストがアクティブ化され、関連付けられた VSPackages が読み込まれる正確な条件を定義できます。 詳細については、「[方法 : Visual Studio 拡張機能に対してルール ベースの UI コンテキストを使用する](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)」を参照してください。
+## <a name="rule-based-ui-context-for-extensions"></a>拡張機能のルールベースの UI コンテキスト
+ ルールベースの UI コンテキストを使用すると、拡張機能の作成者は、UI コンテキストがアクティブ化され、関連付けられている Vspackage が読み込まれる正確な条件を定義できます。 詳細については、「 [方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)」を参照してください。
 
 ## <a name="diagnose-extension-performance"></a>拡張機能のパフォーマンスを診断する
-拡張機能は、起動とソリューションの読み込みのパフォーマンスに影響を与える可能性があります。 Visual Studio 拡張機能の影響を計算する方法と、拡張機能がパフォーマンスに影響を与える拡張機能として表示されるかどうかをテストするためにローカルで分析する方法について説明します。 詳細については、「方法[: 拡張機能のパフォーマンスを診断する](how-to-diagnose-extension-performance.md)」を参照してください。
+拡張機能は、起動時およびソリューションの読み込みのパフォーマンスに影響を与える可能性があります。 Visual Studio 拡張機能の影響がどのように計算されるか、および拡張機能がパフォーマンスに影響する拡張機能として表示されるかどうかをテストするためにローカルで分析する方法について説明します。 詳細については、「 [方法: 拡張機能のパフォーマンスを診断する](how-to-diagnose-extension-performance.md)」を参照してください。
 
-## <a name="troubleshoot-vspackages"></a>VS パッケージのトラブルシューティング
- 読み込まない、またはエラーが発生している VSPackage のトラブルシューティングのテクニックを見つける: [VSPackage のトラブルシューティング](../extensibility/troubleshooting-vspackages.md)
+## <a name="troubleshoot-vspackages"></a>Vspackage のトラブルシューティング
+ ロードできない、またはエラーが発生している Vspackage のトラブルシューティングの手法については、 [vspackage のトラブルシューティング](../extensibility/troubleshooting-vspackages.md)に関するものをご覧ください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSPackages](../extensibility/internals/vspackages.md)

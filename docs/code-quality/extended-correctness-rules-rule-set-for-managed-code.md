@@ -9,21 +9,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6f8ceada30f66967de1a0c792d59275a851938e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587655"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張正確性規則" 規則セット
 
 Microsoft 拡張正確性規則の規則セットは、コード分析によって報告されるロジックおよびフレームワークの使用エラーを最大化します。 COM 相互運用性やモバイルアプリケーションなど、特定のシナリオに重点が置かれています。 これらのシナリオのいずれかがプロジェクトに適用される場合、またはプロジェクトの追加の問題を検出する場合は、この規則セットを含めることを検討してください。
 
-"Microsoft 拡張正確性規則" 規則セットには、"[基本正確性規則](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)" 規則セットに含まれる規則が含まれます。この規則には、"管理されている[推奨規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)" 規則セットに含まれる規則が含まれています。
+"Microsoft 拡張正確性規則" 規則セットには、" [基本正確性規則](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) " 規則セットに含まれる規則が含まれます。この規則には、"管理されている [推奨規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) " 規則セットに含まれる規則が含まれています。
 
 次の表では、Microsoft 拡張正確性規則の規則セットに含まれるすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009.md)|イベント ハンドラーを正しく宣言します|
@@ -148,7 +148,7 @@ Microsoft 拡張正確性規則の規則セットは、コード分析によっ�
 |[CA2218](../code-quality/ca2218.md)|オーバーライドする Equals で GetHashCode をオーバーライドします|
 |[CA2219](../code-quality/ca2219.md)|exception 句に例外を発生させないでください|
 |[CA2225](../code-quality/ca2225.md)|演算子オーバーロードには名前付けされた代替が存在します|
-|[CA2228: 未公開](../code-quality/ca2228.md)|未公開のリソース形式を出荷しません|
+|[CA2228](../code-quality/ca2228.md)|未公開のリソース形式を出荷しません|
 |[CA2230](../code-quality/ca2230.md)|可変引数に対して param を使用します|
 |[CA2233](../code-quality/ca2233.md)|操作はオーバーフローできません|
 |[CA2234](../code-quality/ca2234.md)|文字列の代わりに System.Uri オブジェクトを渡します|

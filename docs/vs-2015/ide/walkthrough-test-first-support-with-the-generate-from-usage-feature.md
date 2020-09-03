@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'チュートリアル: 使用法から生成機能のテスト ファーストのサポート | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662673"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファーストのサポート
@@ -38,15 +38,15 @@ ms.locfileid: "72662673"
 
 2. **ソリューション エクスプローラー**の上部にあるソリューション アイコンを右クリックし、 **[追加]** をポイントして **[新しいプロジェクト]** をクリックします。 **[新しいプロジェクト]** ダイアログ ボックスの左側にある **[プロジェクトの種類]** ペインで、 **[テスト]** をクリックします。
 
-3. **[テンプレート]** ペインで、 **[単体テスト プロジェクト]** をクリックして UnitTestProject1 の既定の名前をそのまま使用します。 [!INCLUDE[csprcs](../includes/csprcs-md.md)] で表示されるダイアログ ボックスを次の図に示します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] のダイアログ ボックスも同様です。
+3. **[テンプレート]** ペインで、 **[単体テスト プロジェクト]** をクリックして UnitTestProject1 の既定の名前をそのまま使用します。 [!INCLUDE[csprcs](../includes/csprcs-md.md)] で表示されるダイアログ ボックスを次の図に示します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]のダイアログ ボックスも同様です。
 
      [![新しいテストプロジェクト] ダイアログ](../ide/media/newproject-test.png "NewProject_Test")[新しいプロジェクト] ダイアログボックス
 
 4. **[OK]** をクリックして、 **[新しいプロジェクト]** ダイアログ ボックスを閉じます。
 
-5. クラス プロジェクトの **ソリューション エクスプローラー**で、 **[参照]** エントリを右クリックし、 **[参照の追加]** をクリックします。
+5. クラス プロジェクトの **ソリューション エクスプローラー**で、**[参照]** エントリを右クリックし、**[参照の追加]** をクリックします。
 
-6. **[参照マネージャー]** ダイアログ ボックスで、 **[プロジェクト]** を選択してから単体テスト プロジェクトを選択します。
+6. **[参照マネージャー]** ダイアログ ボックスで、**[プロジェクト]** を選択してから単体テスト プロジェクトを選択します。
 
 7. **[OK]** をクリックして **[参照マネージャー]** ダイアログ ボックスを閉じます。
 
@@ -67,23 +67,23 @@ ms.locfileid: "72662673"
     > [!NOTE]
     > 現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード*の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 [IntelliSense] ウィンドウが開いているときに、Ctrl キーと Alt キーを押しながら Space キーを押すと完了モードと提案モードを切り替えることができます。 詳しくは、「[IntelliSense の使用](../ide/using-intellisense.md)」をご覧ください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。
 
-3. `TestMethod1()` メソッドを検索して、この名前を `DefaultAutomobileIsInitializedCorrectly()`に変更します。 次の図に示すように、このメソッド内に、 `Automobile`というクラスの新しいインスタンスを作成します。 コンパイル時のエラーを示す波下線が表示され、型名の下にスマート タグが表示されます。 スマート タグの正確な場所は、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または [!INCLUDE[csprcs](../includes/csprcs-md.md)] のどちらを使っているかにより異なります。
+3. `TestMethod1()` メソッドを検索して、この名前を `DefaultAutomobileIsInitializedCorrectly()`に変更します。 次の図に示すように、このメソッド内に、 `Automobile`というクラスの新しいインスタンスを作成します。 コンパイル時のエラーを示す波下線が表示され、型名の下にスマート タグが表示されます。 スマート タグの正確な場所は、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または [!INCLUDE[csprcs](../includes/csprcs-md.md)]のどちらを使用しているかによって異なります。
 
      ![スマートタグの下線 (Visual Basic](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") )Visual Basic
 
-     ![スマートタグの下線 (&#35; C](../ide/media/genclass-underline.png "GenClass_Underline") )見た目C#
+     ![スマートタグの下線 (C&#35;](../ide/media/genclass-underline.png "GenClass_Underline") )Visual C#
 
 4. スマート タグの上にマウス ポインターを置くと、 `Automobile` という名前の型がまだ定義されていないことを示すエラー メッセージが表示されます。 スマート タグをクリックするか、Ctrl キーを押しながら . キー (Ctrl + ピリオド) を押して、次の図に示す [使用法から生成] ショートカット メニューを開きます。
 
      ![スマートタグのコンテキストメニュー (Visual Basic](../ide/media/genclass-smartvb.png "GenClass_SmartVB") )Visual Basic
 
-     ![スマートタグのコンテキストメニュー (&#35; C](../ide/media/genclass-smartcs.png "GenClass_SmartCS") )見た目C#
+     ![スマートタグのコンテキストメニュー (C&#35;](../ide/media/genclass-smartcs.png "GenClass_SmartCS") )Visual C#
 
 5. ここで、2 つの選択肢があります。 **['Automobile' のクラスを生成する]** をクリックしてテスト プロジェクトに新しいファイルを作成し、これに `Automobile`という名前の空のクラスを追加できます。 この方法では、現在のプロジェクト内の新しいファイルに既定のアクセス修飾子を持つ新しいクラスをすぐに作成できます。 **[新しい型の生成]** をクリックして **[新しい型の生成]** ダイアログ ボックスを開くこともできます。 これには、既存のファイルにクラスを配置し、このファイルを別のプロジェクトに追加するなどのオプションがあります。
 
-     **[新しい型の生成]** をクリックして、次の図に示す **[新しい型の生成]** ダイアログ ボックスを開きます。 **[プロジェクト]** の一覧で、 **[GFUDemo_VB]** または **[GFUDemo_CS]** をクリックして、テスト プロジェクトではなくソース コード プロジェクトにファイルを追加するように [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に指示します。
+     **[新しい型の生成]** をクリックして、次の図に示す **[新しい型の生成]** ダイアログ ボックスを開きます。 **[プロジェクト]** の一覧で、**[GFUDemo_VB]** または **[GFUDemo_CS]** をクリックして、テスト プロジェクトではなくソース コード プロジェクトにファイルを追加するように [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に指示します。
 
-     ![[新しい型の生成] ダイアログボックス](../ide/media/genotherdialog.png "GenOtherDialog")[新しい型の生成] ダイアログボックス
+     ![[新しい型の生成] ダイアログボックス](../ide/media/genotherdialog.png "GenOtherDialog") [新しい型の生成] ダイアログボックス
 
 6. **[OK]** をクリックしてダイアログ ボックスを閉じ、新しいファイルを作成します。
 
@@ -104,9 +104,9 @@ ms.locfileid: "72662673"
 
      スマート タグのショートカット メニューを次の図に示します。
 
-     ![Visual Basic の [プロパティの生成] コンテキストメニュー](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")Visual Basic
+     ![Visual Basic の [プロパティの生成] コンテキストメニュー](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB") Visual Basic
 
-     ![[プロパティの生成] コンテキスト&#35;メニュー (C](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") )見た目C#
+     ![C&#35;の [プロパティの生成] コンテキストメニュー ](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") Visual C#
 
 ### <a name="to-locate-the-source-code"></a>ソース コードを検索するには
 
@@ -153,7 +153,7 @@ ms.locfileid: "72662673"
 
      次の図に **[テスト結果]** ウィンドウを示します。
 
-     ![失敗したテスト結果](../ide/media/testsfailed.png "TestsFailed")テスト結果ウィンドウ
+     ![失敗したテスト結果](../ide/media/testsfailed.png "TestsFailed") テスト結果ウィンドウ
 
 2. **[テスト結果]** ウィンドウで、各テスト結果の行をダブルクリックして、各テストのエラーの発生場所に移動します。
 
@@ -173,7 +173,7 @@ ms.locfileid: "72662673"
 
 1. **[テスト]** メニューの **[実行]** をポイントし、 **[ソリューションのすべてのテスト]** をクリックします。 今回はテストに合格します。 次の図に **[テスト結果]** ウィンドウを示します。
 
-     ![成功したテスト結果](../ide/media/testspassed.png "TestsPassed")テスト結果ウィンドウ
+     ![成功したテスト結果](../ide/media/testspassed.png "TestsPassed") テスト結果ウィンドウ
 
 ## <a name="see-also"></a>参照
  [使用状況から生成](../misc/generate-from-usage.md)IntelliSense[単体テスト](../test/unit-test-your-code.md)[を使用して](../ide/using-intellisense.md)コードを[作成](../ide/writing-code-in-the-code-and-text-editor.md)する

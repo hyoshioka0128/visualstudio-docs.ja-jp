@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825126"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアーの管理者ガイド
 
 ヘルプ ビューアーを使用すると、インターネット アクセスの有無に関係なく、ネットワーク環境のローカル ヘルプのインストールを管理できます。 ローカル ヘルプ コンテンツは、コンピューターごとに構成されます。 既定では、ユーザーがローカル ヘルプのインストールを更新するには、そのユーザーに管理者権限が必要です。
 
-ご利用のネットワーク環境でクライアントがインターネットにアクセスできる場合、**ヘルプ コンテンツ マネージャー**の実行可能ファイルを利用し、インターネットからローカル ヘルプ コンテンツを配置できます。 *HlpCtntMgr.exe* のコマンド ライン構文の詳細については、「[ヘルプ コンテンツ マネージャーのコマンド ライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
+ネットワーク環境でクライアントがインターネットにアクセスできるようにする場合は、 **ヘルプコンテンツマネージャー** の実行可能ファイルを使用して、インターネットからローカルヘルプコンテンツを展開できます。 *HlpCtntMgr.exe*のコマンドライン構文の詳細については、「[ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
 
 コンテンツの作成、イントラネット サービスのエンドポイントの作成、類似した種類のアクティビティの詳細については、[ヘルプ ビューアー SDK](../extensibility/internals/microsoft-help-viewer-sdk.md) を参照してください。
 
@@ -35,13 +35,13 @@ ms.locfileid: "67825126"
 
 ## <a name="deploy-local-help-content-from-the-internet"></a>インターネットからローカル ヘルプ コンテンツを配置する
 
-**ヘルプ コンテンツ マネージャー** (*HlpCtntMgr.exe*) を利用し、インターネットからクライアント コンピューターにローカル ヘルプ コンテンツを配置できます。 このコマンドの構文は次のとおりです。
+**ヘルプ コンテンツ マネージャー** (*HlpCtntMgr.exe*) を利用し、インターネットからクライアント コンピューターにローカル ヘルプ コンテンツを配置できます。 次の構文を使用します。
 
 ```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-*HlpCtntMgr.exe* のコマンド ライン構文の詳細については、「[ヘルプ コンテンツ マネージャーのコマンド ライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
+*HlpCtntMgr.exe*のコマンドライン構文の詳細については、「[ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
 
 要件:
 
@@ -59,7 +59,7 @@ ms.locfileid: "67825126"
 
 #### <a name="to-install-english-content-from-the-internet"></a>インターネットから英語のコンテンツをインストールするには
 
-1. **[スタート]** を選択し、 **[ファイル名を指定して実行]** を選択します。
+1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
 
 2. 次のように入力します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "67825126"
 - インストール後にユーザーがローカル ヘルプ コンテンツを更新、追加、または削除するには、そのユーザーに管理者権限が必要です。
 
     > [!TIP]
-    > ユーザーに管理者権限がない場合は、ヘルプ ビューアーで **[コンテンツの管理]** タブを無効にすることをお勧めします。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../help-viewer/behavior-overrides.md)」を参照してください。
+    > ユーザーに管理者権限がない場合は、ヘルプ ビューアーで **[コンテンツの管理]** タブを無効にすることをお勧めします。 詳細については、「 [ヘルプコンテンツマネージャーのオーバーライド](../help-viewer/behavior-overrides.md)」を参照してください。
 
 注意事項:
 
@@ -90,7 +90,7 @@ ms.locfileid: "67825126"
 
 #### <a name="to-uninstall-local-help"></a>ローカル ヘルプをアンインストールするには
 
-1. ヘルプ ビューアーで、 **[コンテンツの管理]** タブを選択します。
+1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。
 
 2. Visual Studio ドキュメント セットに移動します。
 
@@ -98,15 +98,15 @@ ms.locfileid: "67825126"
 
 4. **[更新]** を選択し、アンインストールします。
 
-5. *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* に移動し、フォルダーに *catalogType.xml* ファイルだけが含まれていることを確認します。
+5. *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*を参照し、フォルダーにファイル*catalogType.xml*のみが含まれていることを確認します。
 
    前にインストールされた Visual Studio のローカル ヘルプ コンテンツをすべて削除したら、基本コンテンツ セットをダウンロードする準備が整いました。
 
 #### <a name="to-download-the-content"></a>コンテンツをダウンロードするには
 
-1. ヘルプ ビューアーで、 **[コンテンツの管理]** タブを選択します。
+1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。
 
-2. **[推奨されるドキュメント]** または **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、 **[追加]** を選択します。
+2. **[推奨されるドキュメント]** または **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、**[追加]** を選択します。
 
 3. **[更新]** を選択します。
 
@@ -114,7 +114,7 @@ ms.locfileid: "67825126"
 
 #### <a name="to-package-the-content"></a>コンテンツをパッケージ化するには
 
-1. 後の配置でコンテンツをコピーするフォルダーを作成します。 次に例を示します。*C:\VSHelp*。
+1. 後の配置でコンテンツをコピーするフォルダーを作成します。 例: *\myserver\vshelp*。
 
 2. 管理者のアクセス許可で *cmd.exe* を開きます。
 
@@ -130,7 +130,7 @@ ms.locfileid: "67825126"
 
 1. ネットワーク共有を作成し、その場所にヘルプ コンテンツをコピーします。
 
-     たとえば、*C:\VSHelp* のコンテンツを *\\\myserver\VSHelp* にコピーします。
+     たとえば、 *\myserver\vshelp*の内容を* \\ \myserver\VSHelp*にコピーします。
 
 2. ヘルプ コンテンツの配置スクリプトを含める *.bat* ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。 次に例を示します。
 
@@ -140,11 +140,11 @@ ms.locfileid: "67825126"
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. ヘルプ コンテンツをインストールするローカル コンピューターで *.bat* ファイルを実行します。
+3. ヘルプコンテンツをインストールするローカルコンピューターで *.bat* ファイルを実行します。
 
 ## <a name="see-also"></a>関連項目
 
-- [ヘルプ コンテンツ マネージャーのコマンド ライン引数](../help-viewer/command-line-arguments.md)
-- [ヘルプ コンテンツ マネージャーのオーバーライド](../help-viewer/behavior-overrides.md)
-- [Microsoft Help Viewer](../help-viewer/overview.md)
+- [ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)
+- [ヘルプコンテンツマネージャーのオーバーライド](../help-viewer/behavior-overrides.md)
+- [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)
 - [ヘルプ ビューアー SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

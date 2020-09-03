@@ -1,4 +1,4 @@
-﻿---
+---
 title: -DebugExe (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660801"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -36,7 +36,7 @@ Devenv /debugexe ExecutableFile
 
  .exe ファイルが見つからない場合、または存在しない場合、警告やエラーは表示されず、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は通常どおり起動します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `ExecutableFile` パラメーターに続くどの文字列もそのファイルに引数として渡されます。
 
 ## <a name="example"></a>例
@@ -46,5 +46,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>関連項目
- [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>参照
+ [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md)

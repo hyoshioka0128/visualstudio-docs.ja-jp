@@ -8,10 +8,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155284"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
@@ -31,4 +31,4 @@ iOS、Android、Windows デバイスで動作するアプリをビルドし、�
   
 これらのツールを考慮しているものの、まだ試す準備ができていないという場合は、 [機能](https://www.visualstudio.com/explore/cordova-vs) ページをご覧ください。ツールに関する詳しく説明をご確認いただけます。  
   
-表示を開始する準備ができたら、 [JavaScript によるモバイル開発](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)します。
+開始する準備ができたら、「 [JavaScript によるモバイル開発](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)」を参照してください。

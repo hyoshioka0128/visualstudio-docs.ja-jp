@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 88a20d9f29ae86f7946389cafd26d67c244caea7
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183692"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>メニューコマンドのテキストを変更する
@@ -24,9 +24,9 @@ ms.locfileid: "84183692"
 
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>IMenuCommandService を使用してメニューコマンドのラベルを変更する
 
-1. `MenuText` **ChangeMenuText**という名前のメニューコマンドを使用して、という名前の VSIX プロジェクトを作成します。 詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+1. `MenuText` **ChangeMenuText**という名前のメニューコマンドを使用して、という名前の VSIX プロジェクトを作成します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. 次の例に示すように、 *vsct*ファイルで、 `TextChanges` メニューコマンドにフラグを追加します。
+2. 次の例に示すように、 *vsct* ファイルで、 `TextChanges` メニューコマンドにフラグを追加します。
 
     ```xml
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">
@@ -73,6 +73,6 @@ ms.locfileid: "84183692"
 
 5. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。
 
-6. [**ツール**] メニューに、 **Invoke ChangeMenuText**という名前のコマンドが表示されます。
+6. [ **ツール** ] メニューに、 **Invoke ChangeMenuText**という名前のコマンドが表示されます。
 
-7. コマンドをクリックします。 **Menuitemcallback**が呼び出されたことを示すメッセージボックスが表示されます。 メッセージボックスを閉じると、[ツール] メニューのコマンドの名前が**新しいテキスト**になっていることがわかります。
+7. コマンドをクリックします。 **Menuitemcallback**が呼び出されたことを示すメッセージボックスが表示されます。 メッセージボックスを閉じると、[ツール] メニューのコマンドの名前が **新しいテキスト**になっていることがわかります。
