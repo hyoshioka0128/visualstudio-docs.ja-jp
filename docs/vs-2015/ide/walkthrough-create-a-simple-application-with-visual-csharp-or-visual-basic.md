@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74296859"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成
@@ -21,18 +21,18 @@ ms.locfileid: "74296859"
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションを開発する際に使用できるさまざまなツール、ダイアログ ボックス、およびデザイナーの使用方法を習得できます。 簡単な "Hello, World" スタイルのアプリケーションの作成、UI の設計、コードの追加、およびエラーのデバッグを行いながら、統合開発環境 (IDE) での作業方法について学習します。
 
- このトピックは、次のセクションで構成されています。
+ このトピックには、次のセクションが含まれます。
 
  [IDE の構成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)
 
- [簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)
+ [単純なアプリケーションを作成する](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)
 
  [アプリケーションのデバッグとテスト](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
 > このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](https://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
 
-## <a name="BKMK_ConfigureIDE"></a> IDE の構成
+## <a name="configure-the-ide"></a><a name="BKMK_ConfigureIDE"></a> IDE を構成する
  Visual Studio を初めて起動すると、Visual Studio から、Microsoft サービス アカウント (MSA) でサインイン ( [Visual Studio にサインイン](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/)) するように求められます。 サインインは必須ではなく、後で実行することもできます。
 
  Visual Studio が起動すると、次に IDE に定義済みの一連のカスタマイズを適用する設定の組み合わせを選択する必要があります。 各設定の組み合わせは、アプリケーションを簡単に開発できるように設計されています。
@@ -43,13 +43,13 @@ ms.locfileid: "74296859"
 
  図 2: Visual Studio IDE
 
- ![全般設定が適用された IDE](../ide/media/exploreide-idewithgeneralsettings.png "|::ref1::|")
+ ![全般設定が適用された IDE](../ide/media/exploreide-idewithgeneralsettings.png "Exploreide-newprojectcsharp-Ide の全般設定")
 
  **[オプション]** ダイアログ ボックスを使用すると、Visual Studio をさらにカスタマイズできます。たとえば、エディターのテキストのフォント フェイスとサイズや IDE の配色テーマを変更できます。 適用した設定の組み合わせによっては、そのダイアログ ボックスに自動的に表示されない項目があります。 **[すべての設定を表示]** チェック ボックスをオンにすると、使用可能なすべてのオプションを表示できます。
 
  図 3: [オプション] ダイアログ ボックス
 
- ![[すべての設定を表示] オプションをオンにした [オプション] ダイアログ ボックス](../ide/media/exploreide-optionsdialogbox.png "|::ref2::|")
+ ![[すべての設定を表示] オプションをオンにした [オプション] ダイアログ ボックス](../ide/media/exploreide-optionsdialogbox.png "Exploreide-newprojectcsharp-オプションダイアログ")
 
  この例では、IDE の配色テーマを淡色から濃色に変更します。  望むなら、プロジェクトの作成に進むこともできます。
 
@@ -57,46 +57,46 @@ ms.locfileid: "74296859"
 
 1. 上部の **[オプション]** メニューを選択してから **[オプション]** 項目を選択し、 **[オプション] …** ダイアログ ボックスを開きます。
 
-    ![[ツール] メニューの [オプション] コマンド](../ide/media/exploreide-toolsoptionsmenu.png "|::ref3::|")
+    ![[ツール] メニューの [オプション] コマンド](../ide/media/exploreide-toolsoptionsmenu.png "Exploreide-newprojectcsharp-ToolsOptionsmenu")
 
 2. **[配色テーマ]** を **[濃色]** に変更して、 **[OK]** をクリックします。
 
-    ![暗い配色テーマが選択されています](../ide/media/exploreide-darkthemeoptionsdlgbox.png "|::ref4::|")
+    ![暗い配色テーマが選択されています](../ide/media/exploreide-darkthemeoptionsdlgbox.png "Exploreide-newprojectcsharp-Darkthemeoptionsdlgbox")
 
    Visual Studio の配色が次のイメージと一致する必要があります。
 
-   ![ダーク テーマを適用した IDE](../ide/media/exploreide-darkthemeide.png "|::ref5::|")
+   ![ダーク テーマを適用した IDE](../ide/media/exploreide-darkthemeide.png "Exploreide-newprojectcsharp-DarkThemeIDE")
 
-   このチュートリアルの残りの画像で使用する配色テーマは淡色テーマです。 IDE のカスタマイズの詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+   このチュートリアルの残りの画像で使用する配色テーマは淡色テーマです。 IDE のカスタマイズの詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
-## <a name="BKMK_CreateApp"></a> 簡単なアプリケーションの作成
+## <a name="create-a-simple-application"></a><a name="BKMK_CreateApp"></a> 単純なアプリケーションを作成する
 
 ### <a name="create-the-project"></a>プロジェクトの作成
  Visual Studio でアプリケーションを作成するには、最初にプロジェクトおよびソリューションを作成します。 この例では、Windows Presentation Foundation (WPF) プロジェクトを作成します。
 
 ##### <a name="to-create-the-wpf-project"></a>WPF プロジェクトを作成するには
 
-1. 新しいプロジェクトを作成します。 メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順に選択します。
+1. 新しいプロジェクトを作成します。 メニューバーで、[ **ファイル**]、[ **新規作成**]、[ **プロジェクト...**] の順に選択します。
 
-    ![メニュー バーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択する](../ide/media/exploreide-filenewproject.png "|::ref6::|")
+    ![メニューバーで、[ファイル]、[新規作成]、[プロジェクト] の順に選択します。](../ide/media/exploreide-filenewproject.png "Exploreide-newprojectcsharp-FileNewProject")
 
-    また、 **[クイック起動]** ボックスに「 **新しいプロジェクト** 」と入力しても、同じことができます。
+    また、[ **クイック起動** ] ボックスに「 **新しいプロジェクト** 」と入力しても、同じことができます。
 
-    ![クイック起動ボックスで新しいプロジェクトを指定](../ide/media/exploreide-quicklaunchnewprojectsmall.png "|::ref7::|")
+    ![クイック起動ボックスで新しいプロジェクトを指定](../ide/media/exploreide-quicklaunchnewprojectsmall.png "Exploreide-newprojectcsharp-QuickLaunchNewProjectsmall")
 
-2. たとえば、左側のペインで **[インストール済み]** 、 **[テンプレート]** 、 **[Visual C#]** 、 **[Windows]** の順に選択してから、中央のペインで [WPF アプリケーション] を選択して、Visual Basic か Visual C# の WPF アプリケーション テンプレートを選択します。  下部の [新しいプロジェクト] ダイアログで、プロジェクトに HelloWPFApp という名前を付けます。
+2. たとえば、左側のペインで **[インストール済み]**、 **[テンプレート]**、 **[Visual C#]**、 **[Windows]** の順に選択してから、中央のペインで [WPF アプリケーション] を選択して、Visual Basic か Visual C# の WPF アプリケーション テンプレートを選択します。  下部の [新しいプロジェクト] ダイアログで、プロジェクトに HelloWPFApp という名前を付けます。
 
-    ![Visual Basic WPF プロジェクトの作成、HelloWPFApp](../ide/media/exploreide-newprojectvb.png "|::ref8::|")
+    ![Visual Basic WPF プロジェクトの作成、HelloWPFApp](../ide/media/exploreide-newprojectvb.png "Exploreide-newprojectcsharp-NewProjectVB")
 
     OR
 
-    ![Visual C&#35; WPF プロジェクトを作成する](../ide/media/exploreide-newprojectcsharp.png "|::ref9::|")
+    ![Visual C&#35; WPF プロジェクト、アプリケーションの作成](../ide/media/exploreide-newprojectcsharp.png "Exploreide-newprojectcsharp-NewProjectcsharp")
 
-   Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、 **ソリューション エクスプローラー** は各種ファイルを表示します。 WPF デザイナーは、MainWindow.xaml のデザイン ビューと XAML ビューを分割ビューに表示します。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。  ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 (詳細については、「 [Windows フォーム開発者向け WPF デザイナー](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)」を参照してください)。 次の項目が **ソリューション エクスプローラー**に表示されます。
+   Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、 **ソリューション エクスプローラー** は各種ファイルを表示します。 WPF デザイナーは、MainWindow.xaml のデザイン ビューと XAML ビューを分割ビューに表示します。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。  ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 (詳細については、「 [Windows フォーム開発者向けの WPF デザイナー](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)」を参照してください)。 次の項目が **ソリューション エクスプローラー**に表示されます。
 
    図 5: プロジェクト項目
 
-   ![HelloWPFApp ファイルを読み込んだソリューション エクスプローラー](../ide/media/exploreide-hellowpfappfiles.png "|::ref10::|")
+   ![HelloWPFApp ファイルを読み込んだソリューション エクスプローラー](../ide/media/exploreide-hellowpfappfiles.png "Exploreide-newprojectcsharp--------ファイル")
 
    プロジェクトは、作成後にカスタマイズできます。 **[プロパティ]** ウィンドウ ( **[表示]** メニュー上) を使って、プロジェクト項目、コントロール、およびアプリケーション内のその他の項目に関するオプションを表示して変更できます。 プロジェクトのプロパティおよびプロパティ ページを使用すると、プロジェクトおよびソリューションのオプションを表示および変更できます。
 
@@ -104,7 +104,7 @@ ms.locfileid: "74296859"
 
 1. 次の手順では、MainWindow にもっと具体的な名前を付けます。 **ソリューション エクスプローラー**で、MainWindow.xaml を選択します。 **[プロパティ]** ウィンドウが表示されているはずですが、表示されない場合は、 **[表示]** メニューをクリックし、 **[プロパティ ウィンドウ]** 項目をクリックします。 **[File Name]** プロパティを `Greetings.xaml`に変更します。
 
-    ![ファイル名が強調表示されたプロパティ ウィンドウ](../ide/media/exploreide-filenameinpropertieswindow.png "|::ref11::|")
+    ![ファイル名が強調表示されたプロパティ ウィンドウ](../ide/media/exploreide-filenameinpropertieswindow.png "Exploreide-newprojectcsharp-FilenameinPropertiesWindow")
 
     ファイルの名前が Greetings.xaml になったことが**ソリューション エクスプローラー** に示され、MainWindow.xaml ノードを展開する (ノードにフォーカスを設定し、右矢印キーを押す) と、MainWindow.xaml.vb または MainWindow.xaml.cs の名前が Greetings.xaml.vb または Greetings.xaml.cs になったことが示されます。 このコード ファイルは、.xaml ファイル ノードの下に入れ子になっており、相互に非常に密接に関連していることが示されます。
 
@@ -126,7 +126,7 @@ ms.locfileid: "74296859"
 
 2. **[ツールボックス]** で、TextBlock コントロールを探します。
 
-    ![TextBlock コントロールが強調表示されたツールボックス](../ide/media/exploreide-textblocktoolbox.png "|::ref12::|")
+    ![TextBlock コントロールを強調表示したツールボックス](../ide/media/exploreide-textblocktoolbox.png "Exploreide-newprojectcsharp-TextBlockToolbox")
 
 3. TextBlock 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。  ウィンドウの上部付近の中央にコントロールを配置します。
 
@@ -134,7 +134,7 @@ ms.locfileid: "74296859"
 
    図 7: TextBlock コントロールが配置されている Greetings ウィンドウ
 
-   ![グリーティング フォームの TextBlock コントロール](../ide/media/exploreide-greetingswithtextblockonly.png "|::ref13::|")
+   ![グリーティング フォームの TextBlock コントロール](../ide/media/exploreide-greetingswithtextblockonly.png "Exploreide-newprojectcsharp-GreetingswithTextblockonly")
 
    XAML マークアップは、次のようになります。
 
@@ -150,13 +150,13 @@ ms.locfileid: "74296859"
 
 3. Ctrl-s を押すか **[ファイル]** メニュー項目を使って、変更を保存します。
 
-   次に、2 つの [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) コントロールをフォームに追加します。
+   次に、2つの [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) コントロールをフォームに追加します。
 
 ##### <a name="to-add-radio-buttons"></a>オプション ボタンを追加するには
 
 1. **[ツールボックス]** で、RadioButton コントロールを探します。
 
-    ![RadioButton コントロールをオンにした [ツールボックス] ウィンドウ](../ide/media/exploreide-radiobuttontoolbox.png "|::ref14::|")
+    ![RadioButton コントロールをオンにした [ツールボックス] ウィンドウ](../ide/media/exploreide-radiobuttontoolbox.png "Exploreide-newprojectcsharp-RadioButtonToolbox")
 
 2. 2 回 RadioButton 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、2 個の RadioButton コントロールをデザイン サーフェイスに追加して、TextBlock コントロールの下に横に並んで表示されるように (選択して矢印キーを使って) ボタンを移動します。
 
@@ -164,7 +164,7 @@ ms.locfileid: "74296859"
 
     図 8: Greetings ウィンドウの RadioButton
 
-    ![テキストブロックと 2 つのオプション ボタンのあるグリーティング フォーム](../ide/media/exploreide-greetingswithradiobuttons.png "|::ref15::|")
+    ![テキストブロックと 2 つのオプション ボタンのあるグリーティング フォーム](../ide/media/exploreide-greetingswithradiobuttons.png "Exploreide-newprojectcsharp-Greetingswithradiobuttons")
 
 3. 左側の RadioButton コントロールの **[プロパティ]** ウィンドウで、 **[Name]** プロパティ ( **[プロパティ]** ウィンドウの一番上のプロパティ) を `RadioButton1`に変更します。  フォーム上で Radiobutton を選択し、背景のグリッドを選択していないことを確認します。 [プロパティ] ウィンドウの [Name] フィールドの下の [Type] フィールドに Radiobutton が表示されるはずです。
 
@@ -178,7 +178,7 @@ ms.locfileid: "74296859"
 
 2. RadioButton2 を選択しながら右マウス ボタンを押して RadioButton2 のショートカット メニューを開き、 **[テキストの編集]** を選択し、「 `Goodbye`」と入力します。
 
-   最後に追加する UI 要素は、[Button](https://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) コントロールです。
+   最後に追加する UI 要素は、 [ボタン](https://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) コントロールです。
 
 ##### <a name="to-add-the-button-control"></a>Button コントロールを追加するには
 
@@ -192,7 +192,7 @@ ms.locfileid: "74296859"
 
    図 9: Greetings の最後の UI
 
-   ![コントロール ラベルのあるグリーティング フォーム](../ide/media/exploreide-greetingswithconrollabels.png "|::ref16::|")
+   ![コントロール ラベルのあるグリーティング フォーム](../ide/media/exploreide-greetingswithconrollabels.png "Exploreide-newprojectcsharp-Greetingswithconrollabels")
 
 ### <a name="add-code-to-the-display-button"></a>Display ボタンのコードの追加
  このアプリケーションを実行すると、ユーザーがオプション ボタンを選択した後で **[Display]** ボタンを選択したときに、メッセージ ボックスが表示されます。 1 つのメッセージ ボックスには "Hello" と表示され、もう 1 つメッセージ ボックスには "Goodbye" と表示されます。 この動作を作成するために、Greetings.xaml.vb または Greetings.xaml.cs の Button_Click イベントにコードを追加します。
@@ -247,7 +247,7 @@ ms.locfileid: "74296859"
 
 3. アプリケーションを保存します。
 
-## <a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト
+## <a name="debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト
  次に、アプリケーションをデバッグしてエラーを探し、両方のメッセージ ボックスが正しく表示されることをテストします。 以下の指示にデバッガーをビルドして起動する方法が示されていますが、詳細については、後で「[WPF アプリケーション (WPF) のビルド](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)」および「[Debugging WPF](../debugger/debugging-wpf.md)」(WPF のデバッグ) を参照することもできます。
 
 ### <a name="find-and-fix-errors"></a>エラーの検出と修正
@@ -255,15 +255,15 @@ ms.locfileid: "74296859"
 
 ##### <a name="to-start-debugging-and-find-the-error"></a>デバッグを開始し、エラーを見つけるには
 
-1. **[デバッグ]** 、 **[デバッグの開始]** の順に選択して、デバッガーを起動します。
+1. **[デバッグ]**、 **[デバッグの開始]** の順に選択して、デバッガーを起動します。
 
-    ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "|::ref17::|")
+    ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "Exploreide-newprojectcsharp-StartDebugging")
 
     ダイアログ ボックスが表示され、IOException が発生し、リソース 'mainwindow.xaml' を見つけることができないことが示されます。
 
 2. **[OK]** を選択し、デバッガーを停止します。
 
-    ![[デバッグ] メニューの [デバッグの停止] コマンド](../ide/media/exploreide-stopdebugging.png "|::ref18::|")
+    ![[デバッグ] メニューの [デバッグの停止] コマンド](../ide/media/exploreide-stopdebugging.png "Exploreide-newprojectcsharp-StopDebugging")
 
    このチュートリアルの最初で Mainwindow.xaml の名前を Greetings.xaml に変更しましたが、このコードではアプリケーションのスタートアップ URI として Mainwindow.xaml が指定されたままになっているため、プロジェクトを起動できません。
 
@@ -282,9 +282,9 @@ ms.locfileid: "74296859"
 
 1. Greetings.xaml.vb または Greetings.xaml.cs を開き、`MessageBox.Show("Hello.")` という行を選択します。
 
-2. **[デバッグ]** 、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
+2. **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 
-     ![[デバッグ] メニューの [ブレークポイントの設定/解除] コマンド](../ide/media/exploreide-togglebreakpoint.png "|::ref19::|")
+     ![[デバッグ] メニューの [ブレークポイントの設定/解除] コマンド](../ide/media/exploreide-togglebreakpoint.png "Exploreide-newprojectcsharp-ToggleBreakpoint")
 
      コード行の横の、エディター ウィンドウの左端の余白部分に、赤い円が表示されます。
 
@@ -296,7 +296,7 @@ ms.locfileid: "74296859"
 
      `MessageBox.Show("Hello.")` という行が黄色で強調表示されます。 IDE の下部では、[自動変数]、[ローカル]、 [ウォッチ] の各ウィンドウが左側にまとめてドッキングされ、[呼び出し履歴]、[ブレークポイント]、[コマンド]、[イミディエイト]、 [出力] の各ウィンドウが右側にまとめてドッキングされます。
 
-6. メニュー バーで **[デバッグ]** 、 **[ステップ アウト]** の順に選択します。
+6. メニュー バーで **[デバッグ]**、 **[ステップ アウト]** の順に選択します。
 
      アプリケーションの実行が再開され、メッセージ ボックスに "Hello" と表示されます。
 
@@ -310,26 +310,26 @@ ms.locfileid: "74296859"
 
 10. Shift キーと F5 キーを押して (最初に Shift を押し、押したままの状態で F5 を押す) 、デバッグを停止します。
 
-11. メニュー バーで、 **[デバッグ]** 、 **[すべてのブレークポイントを無効にする]** の順に選択します。
+11. メニュー バーで、 **[デバッグ]**、 **[すべてのブレークポイントを無効にする]** の順に選択します。
 
 ### <a name="build-a-release-version-of-the-application"></a>アプリケーションのリリース バージョンのビルド
  すべてが機能することを確認したら、アプリケーションのリリース ビルドを準備できます。
 
 ##### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>ソリューション ファイルをクリーンアップし、リリース バージョンをビルドするには
 
-1. メイン メニューで、 **[ビルド]** 、 **[ソリューションのクリーン]** の順に選択して、前のビルドで作成された中間ファイルと出力ファイルを削除します。  この作業は必須ではありませんが、デバッグ ビルドの出力がクリーンアップされます。
+1. メイン メニューで、 **[ビルド]**、 **[ソリューションのクリーン]** の順に選択して、前のビルドで作成された中間ファイルと出力ファイルを削除します。  この作業は必須ではありませんが、デバッグ ビルドの出力がクリーンアップされます。
 
-    ![[ビルド] メニューの [ソリューションのクリーン] コマンド](../ide/media/exploreide-cleansolution.png "|::ref20::|")
+    ![[ビルド] メニューの [ソリューションのクリーン] コマンド](../ide/media/exploreide-cleansolution.png "Exploreide-newprojectcsharp-CleanSolution")
 
-2. ツールバー上のドロップダウン コントロール (現時点で [デバッグ] になっている) を使って、HelloWPFApp のビルド構成を **[デバッグ]** から **[リリース]** に変更します。
+2. ツールバーのドロップダウンコントロール (現在は "デバッグ" と表示されています) を使用して、"、" のビルド構成を [ **デバッグ** ] から [ **リリース** ] に変更します。
 
-    ![[リリース] を選択した標準ツール バー](../ide/media/exploreide-releaseversion.png "|::ref21::|")
+    ![[リリース] を選択した標準ツール バー](../ide/media/exploreide-releaseversion.png "Exploreide-newprojectcsharp-ReleaseVersion")
 
 3. **[ビルド]** を選択し、 **[ソリューションのビルド]** を選択するか F6 キーを押して、ソリューションをビルドします。
 
-    ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "|::ref22::|")
+    ![[ビルド] メニューの [ソリューションのビルド] コマンド](../ide/media/exploreide-buildsolution.png "Exploreide-newprojectcsharp-BuildSolution")
 
    このチュートリアルは完了しました。 ビルドした .exe は、ソリューションとプロジェクトのディレクトリ (…\HelloWPFApp\HelloWPFApp\bin\Release\\) の下にあります。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  Visual [studio 2015 の新機能](../what-s-new-in-visual-studio-2015.md)visual studio の[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)[を使用した開発の開始](../ide/get-started-developing-with-visual-studio.md)
