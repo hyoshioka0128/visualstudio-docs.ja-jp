@@ -1,5 +1,5 @@
 ---
-title: 有効に場所の参照ボタン要素マイクロソフトドキュメント
+title: EnableLocationBrowseButton 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711986"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>有効に場所の参照ボタン要素
-[**新しいプロジェクト**] ダイアログ ボックスで **[参照**] ボタンを使用できるように設定します。
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 要素 (Visual Studio テンプレート)
+[**新しいプロジェクト**] ダイアログボックスで [**参照**] ボタンを使用できるようにするかどうかを指定します。これにより、新しいプロジェクトを保存する既定のディレクトリをユーザーが簡単に変更できるようになります。
 
- \<>>有効\<にするデータ\<を有効にするテンプレート> テンプレートデータ
+ \<VSTemplate> \<TemplateData>
+ \<EnableLocationBrowseButton>
 
 ## <a name="syntax"></a>構文
 
@@ -35,10 +36,10 @@ ms.locfileid: "80711986"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -49,12 +50,12 @@ ms.locfileid: "80711986"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、 または`true``false`のいずれかで、**新しいプロジェクト**ダイアログ ボックスの **[参照**] ボタンを表示するかどうかを示す必要があります。
+ テキストは、[ `true` `false` **新しいプロジェクト**] ダイアログボックスに [**参照**] ボタンを表示するかどうかを示す、またはのいずれかである必要があります。
 
-## <a name="remarks"></a>Remarks
- `EnableLocationBrowseButton` は省略可能な要素です。 既定値は`true`、 で、[**新しいプロジェクト**] ダイアログ ボックスの **[参照**] ボタンを表示します。
+## <a name="remarks"></a>注釈
+ `EnableLocationBrowseButton` は省略可能な要素です。 既定値はで、[ `true` **新しいプロジェクト**] ダイアログボックスの [**参照**] ボタンが表示されます。
 
- [**新しいプロジェクト**] ダイアログ ボックスの [**場所**] テキスト ボックスに、新しいプロジェクトを保存するディレクトリを指定します。 [**参照]** ボタンをクリックすると、[**プロジェクトの場所**] ダイアログ ボックスが表示され、コンピュータから使用できる別のディレクトリに簡単に移動し、新しいプロジェクトが保存されているディレクトリとして選択できます。
+ [ **新しいプロジェクト** ] ダイアログボックスの [ **場所** ] テキストボックスで、新しいプロジェクトを保存するディレクトリを指定します。 [ **参照** ] ボタンをクリックすると、[ **プロジェクトの場所** ] ダイアログボックスが表示され、このディレクトリを変更できます。このダイアログボックスでは、コンピューターから使用できる別のディレクトリに移動して、新しいプロジェクトを保存するディレクトリとして選択することができます。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows アプリケーションでのメタデータの例を次に示します。
@@ -85,5 +86,5 @@ ms.locfileid: "80711986"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

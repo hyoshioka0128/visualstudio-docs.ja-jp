@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114673"
 ---
 # <a name="control-flow-activity-designers"></a>制御フロー アクティビティ デザイナー
 
 ワークフローデザイナーには、ワークフローを構築するときに使用できるシステム指定のアクティビティが多数含まれています。 このセクションでは、ワークフロー内のフローの制御を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。
 
-## <a name="reference"></a>参照先
+## <a name="reference"></a>関連項目
 
  <xref:System.Activities.Activity>
 
@@ -43,7 +43,7 @@ ms.locfileid: "76114673"
 
  <xref:System.Activities.Statements.While>
 
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目
 
 その他の種類のアクティビティデザイナーについては、次のトピックを参照してください。
 
@@ -51,11 +51,11 @@ ms.locfileid: "76114673"
 
  [フローチャート](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 
  [トランザクション](../workflow-designer/transaction-activity-designers.md)
 
@@ -63,6 +63,6 @@ ms.locfileid: "76114673"
 
  [エラー処理](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)
