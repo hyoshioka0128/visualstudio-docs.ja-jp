@@ -1,5 +1,5 @@
 ---
-title: Iデバッグイベント2 |マイクロソフトドキュメント
+title: IDebugEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729912"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-このインターフェイスは、ブレークポイントで停止するなどの重要なデバッグ情報と、デバッグ メッセージなどの重要でない情報の両方を通信するために使用されます。
+このインターフェイスは、ブレークポイントでの停止などの重要なデバッグ情報と、デバッグメッセージなどの重要でない情報の両方を通知するために使用されます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,28 +28,28 @@ ms.locfileid: "80729912"
 IDebugEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジン (DE) とカスタム ポート サプライヤーは、他のすべてのイベント インターフェイスと同じオブジェクトにこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジン (DE) とカスタムポート供給業者は、他のすべてのイベントインターフェイスと同じオブジェクトにこのインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)または[イベント](../../../extensibility/debugger/reference/idebugportevents2-event.md)に指定されたインターフェイス ID (IID) 引数を使用して、セッション デバッグ マネージャー (SDM) は`IDebugEvent2`、適切なイベント インターフェイスを取得するインターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)または[イベント](../../../extensibility/debugger/reference/idebugportevents2-event.md)に指定されたインターフェイス ID (IID) 引数を使用して、セッションデバッグマネージャー (SDM) はインターフェイスの[QueryInterface](/cpp/atl/queryinterface)を呼び出し、 `IDebugEvent2` 適切なイベントインターフェイスを取得します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugEvent2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugEvent2` ます。
 
 |Method|説明|
 |------------|-----------------|
-|[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|このデバッグ イベントの属性を取得します。|
+|[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|このデバッグイベントの属性を取得します。|
 
-## <a name="remarks"></a>Remarks
- [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)などのより具体的なイベント インターフェイスは、IDebugEvent2 インターフェイスから派生するのではなく、同じオブジェクトに対して別のインターフェイスとして実装されます`IDebugEvent2`。
+## <a name="remarks"></a>解説
+ [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)など、より具体的なイベントインターフェイスは IDebugEvent2 インターフェイスから派生していませんが、代わりにと同じオブジェクトに個別のインターフェイスとして実装され `IDebugEvent2` ます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

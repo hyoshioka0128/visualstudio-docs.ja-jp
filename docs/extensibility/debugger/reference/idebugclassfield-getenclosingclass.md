@@ -1,5 +1,5 @@
 ---
-title: Iデバッグクラスフィールド::ゲットエンクロージングクラス |マイクロソフトドキュメント
+title: 'IDebugClassField:: GetEnclosingClass |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734395"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>パラメーター
 `ppClassField`\
-[アウト]外側の[クラス](../../../extensibility/debugger/reference/idebugclassfield.md)を表すオブジェクトを返します。 外側のクラスがない場合は、null 値を返します。
+入出力外側のクラスを表す [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) オブジェクトを返します。 外側のクラスがない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-この[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)オブジェクトによって表されるクラスが入れ子になったクラスである`ppClassField`場合、パラメーター`IDebugClassField`は外側のクラスを表すオブジェクトを返します。 たとえば、次のクラス定義を指定します。
+## <a name="remarks"></a>解説
+この [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) オブジェクトによって表されるクラスが入れ子になったクラスである場合、パラメーターは、 `ppClassField` `IDebugClassField` 外側のクラスを表すオブジェクトを返します。 たとえば、次のクラス定義があるとします。
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-クラスを`GetEnclosingClass``IDebugClassField`表すオブジェクトのメソッドを呼`NestedClass`び出すと`IDebugClassField`、 クラス`RootClass`を表すオブジェクトが返されます。
+クラスを表すオブジェクトのメソッドを呼び出すと `GetEnclosingClass` `IDebugClassField` `NestedClass` `IDebugClassField` 、クラスを表すオブジェクトが返さ `RootClass` れます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

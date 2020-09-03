@@ -1,5 +1,5 @@
 ---
-title: メモリバイト2をデバッグする |マイクロソフトドキュメント
+title: IDebugMemoryBytes2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56cb234e2295c5c9c08c2a2e9271e1c173524875
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727506"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
-このインターフェイスは、メモリのバイトを表します。
+このインターフェイスは、メモリのバイト数を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,32 +28,32 @@ ms.locfileid: "80727506"
 IDebugMemoryBytes2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジン (DE) は、メモリ内のバイトを表すこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジン (DE) は、メモリ内のバイトを表すために、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
-- [システム メモリ](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)へのアクセスを提供するために、このインターフェイスを返します。 [オブジェクトのバイトへの](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)アクセスを提供するために、このインターフェイス[を返します](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+- [Getmemorybytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) は、システムメモリへのアクセスを提供するために、このインターフェイスを返します。 [Getmemorybytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) と [getmemorybytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md) は、オブジェクトのバイトへのアクセスを提供するために、このインターフェイスを返します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugMemoryBytes2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugMemoryBytes2` ます。
 
 |Method|説明|
 |------------|-----------------|
-|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|指定された位置から開始して、バイトシーケンスを読み取ります。|
-|[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|バイト`dwCount`を書き込`pStartContext`みます。|
+|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|指定された位置から始まるバイトシーケンスを読み取ります。|
+|[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|`dwCount`で始まるバイトを書き込み `pStartContext` ます。|
 |[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|このインターフェイスによって表されるメモリのサイズ (バイト単位) を取得します。|
 
-## <a name="remarks"></a>Remarks
- プロパティの場合、配列を表す[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス`IDebugMemoryBytes2`は、その配列内の値にアクセスするためのインターフェイスを提供します。
+## <a name="remarks"></a>解説
+ プロパティの場合、配列を表す [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) インターフェイスは、 `IDebugMemoryBytes2` その配列内の値にアクセスするためのインターフェイスを提供します。
 
- システム メモリにアクセスするためのインターフェイスを取得するために[、メモリ](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)`IDebugMemoryBytes2`**ビュー**を呼び出します。 アクセスするアドレスは、メモリ ビューにアドレスとして入力された式を解析し、次に[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)を使用して解析された式を評価して`IDebugProperty2`インターフェイスを取得することによって取得されます。 呼び出しは[、](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)メモリ アドレスを記述する[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)を返します。 このメモリ コンテキストは[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)と[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)に渡されます。
+ Visual Studio の **メモリビュー** は、 [getmemorybytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) を呼び出し `IDebugMemoryBytes2` て、システムメモリにアクセスするためのインターフェイスを取得します。 アクセスするアドレスを取得するには、アドレスとして入力された式をメモリビューに解析し、 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) を使用して解析された式を評価して、インターフェイスを取得し `IDebugProperty2` ます。 [Getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)を呼び出すと、メモリアドレスを説明する[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)が返されます。 このメモリコンテキストは、 [readat](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) および [writeat](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)に渡されます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: ジェネリックフィールドインスタンス::取得型引数 |マイクロソフトドキュメント
+title: 'IDebugGenericFieldInstance:: GetTypeArguments |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728183"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-このインスタンスの型パラメーター引数を取得します。
+このインスタンスの型パラメーターの引数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,16 +44,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>パラメーター
 `cArgs`\
-[in]型パラメーターの数。
+から型パラメーターの数。
 
 `ppArgs`\
-[アウト]型パラメーターの配列を返します。
+入出力型パラメーターの配列を返します。
 
 `pcArgs`\
-[イン、アウト]配列内のメンバーの`ppArgs`数。
+[入力、出力]配列内のメンバーの数 `ppArgs` 。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 483267e2e570efbcc3cc1842560014ee9ba73d11
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281449"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>デバッグ中はデザイナーを変更できません
 
-このメッセージは、アプリケーションがデバッグモードで実行されているときに、 **O/R デザイナー**で項目を変更しようとしたときに表示されます。 アプリケーションがデバッグモードで実行されている場合、 **O/R デザイナー**は読み取り専用です。
+このメッセージは、アプリケーションがデバッグモードで実行されているときに、 **O/R デザイナー** で項目を変更しようとしたときに表示されます。 アプリケーションがデバッグモードで実行されている場合、 **O/R デザイナー** は読み取り専用です。
 
 このエラーを修正するには、[**デバッグ**] メニューの [**デバッグの停止**] をクリックします。 アプリケーションのデバッグが停止し、 **O/R デザイナー**で項目を変更できます。
 

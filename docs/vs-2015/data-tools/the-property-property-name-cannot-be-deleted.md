@@ -1,5 +1,5 @@
 ---
-title: プロパティ &lt;property 名 &gt; を削除することはできません |Microsoft Docs
+title: プロパティの &lt; プロパティ名を &gt; 削除することはできません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aca36919cb4c82d6ca76e0f3eecbbacd48cde768
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667243"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>プロパティ &lt;property 名 &gt; を削除できません
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>プロパティの &lt; プロパティ名を &gt; 削除できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-プロパティ \<property 名 > は、\<class 名 > と \<class 名の間の継承の識別子プロパティとして設定されているため、削除できません >
+プロパティは、 \<property name> との間の継承の識別子プロパティとして設定されているため、削除できません \<class name>\<class name>
 
  選択されたプロパティは、エラー メッセージに示されているクラス間の継承に対する**識別子のプロパティ**として設定されています。 プロパティがデータ クラス間の継承構成に関与している場合、そのプロパティを削除することはできません。
 
@@ -34,4 +34,4 @@ ms.locfileid: "72667243"
 3. プロパティの削除を再試行します。
 
 ## <a name="see-also"></a>参照
- [方法: o/r デザイナーのデータクラスの継承を使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する[(o/r デザイナー)](../data-tools/data-class-inheritance-o-r-designer.md) [チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (o/r デザイナー)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+ [方法: o/r デザイナーのデータクラスの継承を使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する [(o/r デザイナー)](../data-tools/data-class-inheritance-o-r-designer.md) [チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (o/r デザイナー)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
