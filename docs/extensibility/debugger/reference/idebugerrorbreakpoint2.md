@@ -1,5 +1,5 @@
 ---
-title: エラーブレークポイント2をデバッグする |マイクロソフトドキュメント
+title: IDebugErrorBreakpoint2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17b20d0f3545b0f7266ad6d0c6423d581233dd3c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730085"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
-このインターフェイスは、無効な場所、無効な式、保留中のブレークポイントがバインドされていない理由 (コードがまだ読み込まれていないなど) などのエラーまたは警告のブレークポイントを表します。
+このインターフェイスは、無効な場所、無効な式、保留中のブレークポイントがバインドされていない理由 (まだコードが読み込まれていないなど) などの、エラーまたは警告のブレークポイントを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,26 +28,26 @@ ms.locfileid: "80730085"
 IDebugErrorBreakpoint2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジンは、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 このインターフェイスは、ブレークポイントのバインドに関する問題を報告するために使用されます。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジンは、ブレークポイントのサポートの一部としてこのインターフェイスを実装します。 このインターフェイスは、ブレークポイントのバインドに関する問題を報告するために使用されます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- [呼](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)び出しは、このインターフェイスを取得します。 このインターフェイスは[、CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)または列挙エラー[ブレークポイント](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)の呼び出しによって[(IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)インターフェイスによって表されるリストの一部として) 返すこともできます。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)を呼び出すと、このインターフェイスが取得されます。 このインターフェイスは、 [Canbind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)または[enumerrorbreakpoints ポイント](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)の呼び出しによって、( [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)インターフェイスによって表されるリストの一部として) 返すこともできます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugErrorBreakpoint2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugErrorBreakpoint2` ます。
 
 |Method|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|エラーの原因となった保留中のブレークポイントを取得します。|
-|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|エラーを記述するブレークポイント エラー解決を取得します。|
+|[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|エラーを説明するブレークポイントエラーの解決方法を取得します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
