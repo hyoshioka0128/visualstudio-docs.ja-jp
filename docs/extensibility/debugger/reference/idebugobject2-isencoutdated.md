@@ -1,5 +1,5 @@
 ---
-title: IDebug オブジェクト2::イセンクアウト日付 |マイクロソフトドキュメント
+title: 'IDebugObject2:: IsEncOutdated |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a90ff97b87ec2abaab87dfece5b2a2ac1cabb28c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726104"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-このメソッドは、このオブジェクトまたは親コンテナのエディット コンティニュのステータスが期限切れかどうかを判断します。 カスタム式エバリュエーターはこのメソッドを実装せず、`E_NOTIMPL`常にを返します。
+このメソッドは、このオブジェクトまたは親コンテナーのエディットコンティニュの状態が古いかどうかを判断します。 カスタム式エバリュエーターでは、このメソッドは実装されず、常にを返し `E_NOTIMPL` ます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int IsEncOutdated(
 
 ## <a name="parameters"></a>パラメーター
 `pfEncOutdated`\
-[アウト]エディット`TRUE`コンティニュ状態が期限切れの場合は 0`FALSE`以外 ( ) 、 それ以外の場合は 0 ( ) 。
+入出力`TRUE`エディットコンティニュの状態が古い場合は0以外 ()。それ以外の場合は 0 ( `FALSE` )。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 > [!NOTE]
-> カスタム式エバリュエーターは`E_NOTIMPL`常に を返す必要があります。
+> カスタム式エバリュエーターは常にを返す必要があり `E_NOTIMPL` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

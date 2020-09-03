@@ -9,23 +9,23 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4eba7fb1274b36a6a6f2454f4642c1c78505719e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535201"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません
 
 警告。 [動作の構成] ダイアログ ボックスで行った変更が適用されていません。 変更を適用しますか?
 
-[**動作の構成**] ダイアログボックスでは `Insert` 、 `Update` `Delete` 使用可能なすべてのクラスの、、およびの動作を構成できます。 このメッセージは、新しい **[クラス]** と **[動作]** の組み合わせを選択したときに、前の変更がまだ適用されていない場合に表示されます。
+[ **動作の構成** ] ダイアログボックスでは `Insert` 、 `Update` `Delete` 使用可能なすべてのクラスの、、およびの動作を構成できます。 このメッセージは、新しい **[クラス]** と **[動作]** の組み合わせを選択したときに、前の変更がまだ適用されていない場合に表示されます。
 
 ## <a name="change-options"></a>オプションの変更
 
-- 変更を適用して続行するには、[**はい**] をクリックします。 この変更は、選択した**クラス**と**動作**に適用されます。
+- 変更を適用して続行するには、[ **はい**] をクリックします。 この変更は、選択した **クラス** と **動作**に適用されます。
 
-- 以前の変更を取り消して続行するには、[**いいえ**] をクリックします。
+- 以前の変更を取り消して続行するには、[ **いいえ**] をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

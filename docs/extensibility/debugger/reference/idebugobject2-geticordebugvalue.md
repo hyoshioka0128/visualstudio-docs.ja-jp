@@ -1,5 +1,5 @@
 ---
-title: オブジェクト2::取得コーデバッグ値 |マイクロソフトドキュメント
+title: 'IDebugObject2:: Ge Ordebugvalue |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726120"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-このオブジェクトに関連付けられている値を表すマネージ コード オブジェクトを取得します。
+このオブジェクトに関連付けられている値を表すマネージコードオブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>パラメーター
 `ppUnk`\
-[アウト]`IUnknown`このエイリアスを表すインターフェイスです。 このインターフェイスは、インターフェイスに対して`ICorDebugValue`クエリを実行できます。
+[出力] `IUnknown` このエイリアスを表すインターフェイス。 このインターフェイスは、インターフェイスに対してクエリを実行でき `ICorDebugValue` ます。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- オブジェクト`ICorDebugValue`は、値を表す共通言語ランタイム インターフェイスです。
+## <a name="remarks"></a>解説
+ `ICorDebugValue`オブジェクトは、値を表す共通言語ランタイムインターフェイスです。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

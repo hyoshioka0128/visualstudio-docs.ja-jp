@@ -1,5 +1,5 @@
 ---
-title: オブジェクト::IsProxy |マイクロソフトドキュメント
+title: 'IDebugObject:: IsProxy |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726474"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
@@ -40,13 +40,13 @@ int IsProxy (
 
 ## <a name="parameters"></a>パラメーター
 `pfIsProxy`\
-[アウト]`TRUE`オブジェクトが透過プロキシである場合。それ以外`FALSE`の場合は、 .
+[出力] `TRUE` オブジェクトが透過プロキシである場合は。それ以外の場合は `FALSE` 。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、既定の C++ デバッグ エンジンによって実装されます。
+## <a name="remarks"></a>解説
+ このメソッドは、既定の C++ デバッグエンジンによって実装されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
