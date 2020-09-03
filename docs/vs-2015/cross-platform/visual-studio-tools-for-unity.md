@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155268"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -24,7 +24,7 @@ ms.locfileid: "68155268"
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity  
  **Unity** は、クロスプラット フォームのゲームを作成するためのゲームのエンジンおよび開発環境です。 Unity エンジンは多数のプラットフォーム上で実行可能で、高性能な PC から、ゲーム コンソール、タッチ対応タブレットや携帯電話、さらには Web に至るまで多くのプラットフォームに対応します。 Unity エディターは、充実したゲームの世界を作り上げるための使いやすいインターフェイスを備えています。 機能、使いやすさ、および対象範囲の広さによって、Unity は今日のゲーム開発者から広く支持されています。  
   
- Unity エディターは、ゲームの世界をまとめ上げるのに適していますが、それ自体の中でコードを記述することはできません。 **Visual Studio Tools for Unity** を使用すると、Visual Studio の使い慣れたコードの編集、デバッグ、生産性の機能を使用して、C# で Unity プロジェクト用のエディターおよびゲーム スクリプトを作成できます。その後、Visual Studio の強力なデバッグ機能によってデバッグできます。  
+ Unity エディターは、ゲームの世界をまとめ上げるのに適していますが、それ自体の中でコードを記述することはできません。 **Visual Studio Tools for Unity**では、visual studio の使い慣れたコード編集、デバッグ、生産性の機能を使用して、C# を使用して Unity プロジェクト用のエディターおよびゲームスクリプトを作成できます。また、visual studio の強力なデバッグ機能を使用してデバッグすることができます。  
   
  しかし、Visual Studio Tools for Unity が行えるのはそれだけではありません。Unity エディターと緊密に統合されているため、簡単なタスクを行うために両者を行ったり来たりする時間が短縮されます。また、Unity 特有の生産性拡張機能を利用でき、Unity ドキュメントを簡単に利用できます。  
   
