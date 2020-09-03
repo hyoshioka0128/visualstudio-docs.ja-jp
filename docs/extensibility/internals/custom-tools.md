@@ -1,5 +1,5 @@
 ---
-title: カスタム ツール |マイクロソフトドキュメント
+title: カスタムツール |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,42 +13,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708960"
 ---
 # <a name="custom-tools"></a>カスタム ツール
-*カスタム ツール*を使用すると、ツールをプロジェクト内の項目に関連付け、ファイルが保存されるたびにそのツールを実行できます。 一部のカスタム ツールは *、単一ファイル ジェネレーター*とも呼ばれますが、データからコードを生成するトランスレータを実装するためによく使用されます。 たとえば、単一ファイル ジェネレーターは[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]*、.settings*ファイルと[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *.resx*ファイルからコードを作成およびソース化します。 生成されたソース コードは *、.settings*ファイルと *.resx*ファイル内のデータに厳密に型指定されたアクセスを提供します。 および[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)][!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]プロジェクトの種類は、カスタム ツールをサポートします。[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]プロジェクトの種類は使用しません。 独自のプロジェクトの種類は、カスタム ツールもサポートできます。
+*カスタムツール* を使用すると、プロジェクト内の項目にツールを関連付け、ファイルが保存されるたびにそのツールを実行できます。 特定のカスタムツール ( *単一ファイルジェネレーター*と呼ばれることもあります) は、データからコードを生成したり、その逆の変換を行ったりするために頻繁に使用されます。 たとえば、単一ファイルジェネレーターは、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *設定* ファイルと *.resx* ファイルからソースコードを作成します。 生成されたソースコードは、 *設定* ファイルおよび *.resx* ファイル内のデータへの厳密に型指定されたアクセスを提供します。 およびプロジェクトの種類では、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] カスタムツールがサポート [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] されます。プロジェクトの種類には対応していません。 独自のプロジェクトの種類で、カスタムツールをサポートすることもできます。
 
- カスタム ツールは、インターフェイスを実装`IVsSingleFileGenerator`する登録済みコンポーネントです。
+ カスタムツールは、インターフェイスを実装する登録済みのコンポーネントです `IVsSingleFileGenerator` 。
 
- カスタム ツールは、インターフェイス`ProjectItem`オブジェクトに関連付けられており、デザイナーやエディターと同様です。 カスタム ツールは、 a で`ProjectItem`表されるファイルを入力として受け取り、メソッドによってファイル`DefaultExtension`名が指定された新しいファイルを書き込みます。
+ カスタムツールはインターフェイスオブジェクトに関連付けられて `ProjectItem` おり、デザイナーやエディターに似ています。 カスタムツールは、によって表されるファイルを `ProjectItem` 入力として受け取り、そのファイル名がメソッドによって提供される新しいファイルを書き込み `DefaultExtension` ます。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [単一ファイル ジェネレーターの実装](../../extensibility/internals/implementing-single-file-generators.md)
+- [単一ファイルジェネレーターを実装する](../../extensibility/internals/implementing-single-file-generators.md)
 
- インターフェイスを使用してカスタム<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>ツールを実装する方法について説明します。
+ インターフェイスを使用してカスタムツールを実装する方法について説明し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> ます。
 
-- [単一ファイル ジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)
+- [1つのファイルジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)
 
- カスタム ツールのすべてのレジストリ エントリについて説明します。
+ カスタムツールのすべてのレジストリエントリについて説明します。
 
-- [ビジュアル デザイナーに型を公開する](../../extensibility/internals/exposing-types-to-visual-designers.md)
+- [ビジュアルデザイナーに型を公開する](../../extensibility/internals/exposing-types-to-visual-designers.md)
 
- プロジェクト システムが、生成されたクラスおよび型に一時ポータブル実行可能 (PE) ファイルを介してアクセスするビジュアル デザイナーをサポートする方法について説明します。
+ プロジェクトシステムが、生成されたクラスと型に一時的なポータブル実行可能 (PE) ファイルを介してアクセスするためのサポートを提供する方法について説明します。
 
-- [プロジェクト項目のプロパティを永続化する](../../extensibility/persisting-the-property-of-a-project-item.md)
+- [プロジェクト項目のプロパティを保持する](../../extensibility/persisting-the-property-of-a-project-item.md)
 
- ソース ファイルの作成者など、プロジェクト項目のプロパティをプロジェクト ファイルに永続化する方法について説明します。
+ ソースファイルの作成者などのプロジェクト項目のプロパティをプロジェクトファイルに保存する方法について説明します。
 
 ## <a name="reference"></a>リファレンス
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>単一の<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>入力ファイルを、コンパイルまたはプロジェクトに追加できる単一の出力ファイルに変換する、 の詳細を提供します。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator><xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>1 つの入力ファイルをコンパイルしたりプロジェクトに追加したりできる1つの出力ファイルに変換する、の詳細について説明します。
 
- <xref:EnvDTE.ProjectItem>プロジェクト内`ProjectItem`の項目を表すインターフェイスについて説明します。
+ <xref:EnvDTE.ProjectItem>`ProjectItem`プロジェクト内の項目を表すインターフェイスについて説明します。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>出力ファイル名に`DefaultExtension`指定されたファイル名拡張子を取得するメソッドの詳細を提供します。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>`DefaultExtension`出力ファイル名に指定されたファイル名拡張子を取得するメソッドについて詳しく説明します。
 
 ## <a name="related-sections"></a>関連項目
 - [プロジェクトの拡張](../../extensibility/extending-projects.md)

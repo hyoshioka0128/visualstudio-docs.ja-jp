@@ -1,5 +1,5 @@
 ---
-title: VSPackage のインストール ディレクトリを選択する |マイクロソフトドキュメント
+title: VSPackage | のインストールディレクトリを選択するMicrosoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,55 +11,55 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709762"
 ---
-# <a name="choose-the-installation-directory-for-a-vspackage"></a>VS パッケージのインストール ディレクトリを選択します。
-VSPackage とそのサポート ファイルは、ユーザーのファイル システム上になければなりません。 場所は、VSPackage がマネージかアンマネージか、サイド バイ サイドのバージョン管理スキーム、およびユーザーの選択によって異なります。
+# <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage のインストールディレクトリを選択してください
+VSPackage とそのサポートファイルは、ユーザーのファイルシステム上にある必要があります。 場所は、VSPackage が管理されているかどうか、サイドバイサイドのバージョン管理スキーム、およびユーザーの選択によって異なります。
 
-## <a name="unmanaged-vspackages"></a>アンマネージ VS パッケージ
- アンマネージ VSPackage は、任意の場所にインストールできる COM サーバーです。 登録情報は、その場所を正確に反映する必要があります。 インストーラーのユーザー インターフェイス (UI) は、Windows インストーラーのプロパティ値`ProgramFilesFolder`のサブディレクトリとして既定の場所を提供する必要があります。 次に例を示します。
+## <a name="unmanaged-vspackages"></a>アンマネージド Vspackage
+ アンマネージ VSPackage は、任意の場所にインストールできる COM サーバーです。 その登録情報は、その場所を正確に反映している必要があります。 インストーラーのユーザーインターフェイス (UI) は、Windows インストーラープロパティ値のサブディレクトリとして既定の場所を提供する必要があり `ProgramFilesFolder` ます。 次に例を示します。
 
-*&lt;\\&lt;&gt;マイカンパニー\\マイブス&lt;パッケージ製品 \V1.0&gt;&gt;\\*
+*&lt;Programfilesfolder &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct &gt;\\*
 
- ユーザーは、小さなブート パーティションを保持し、別のボリュームにアプリケーションやツールをインストールすることを好むユーザーに対応するために、既定のディレクトリを変更できるようにする必要があります。
+ ユーザーは、小さいブートパーティションを保持し、別のボリュームにアプリケーションやツールをインストールすることを希望するユーザーに対応するために、既定のディレクトリを変更できるようにする必要があります。
 
- サイド バイ サイド スキームでバージョン対応の VSPackage を使用する場合は、サブディレクトリを使用して異なるバージョンを格納できます。 次に例を示します。
+ サイドバイサイドスキームでバージョン管理された VSPackage が使用されている場合は、サブディレクトリを使用して異なるバージョンを格納できます。 次に例を示します。
 
- *&lt;プログラムファイルフォルダ&gt;\\&lt;マイカンパニー&gt;\\&lt;マイVSパッケージ製品&gt;\\V1.0\\2002\\*
+ *&lt;Programfilesfolder &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2002\\*
 
- *&lt;\\&lt;&gt;マイカンパニー&lt;\\マイブスパッケージ製品 V1.0\\2003&gt;\\&gt;\\*
+ *&lt;Programfilesfolder &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2003\\*
 
- *&lt;プログラムファイルフォルダ&gt;\\&lt;マイカンパニー&gt;\\&lt;マイVSパッケージ製品&gt;\\V1.0\\2005\\*
+ *&lt;Programfilesfolder &gt; \\ &lt; &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2005\\*
 
 ## <a name="managed-vspackages"></a>マネージド VSPackage
- 管理 VSPackages は、任意の場所にインストールすることもできます。 ただし、アセンブリの読み込み時間を短縮するために、常にグローバル アセンブリ キャッシュ (GAC) にインストールすることを検討する必要があります。 マネージ VSPackages は常に厳密な名前を持つアセンブリであるため、GAC にアセンブリをインストールすると、厳密な名前の署名の検証はインストール時にのみ行われます。 ファイル システムの他の場所にインストールされている厳密な名前のアセンブリは、読み込まれるたびに署名を検証する必要があります。 GAC にマネージ VSPackages をインストールする場合は、regpkg ツールの **/assembly**スイッチを使用して、アセンブリの厳密な名前を指すレジストリ エントリを書き込みます。
+ マネージ Vspackage は、任意の場所にインストールすることもできます。 ただし、アセンブリの読み込み時間を短縮するには、グローバルアセンブリキャッシュ (GAC) にインストールすることを常に考慮する必要があります。 マネージ Vspackage は常に厳密な名前を持つアセンブリなので、GAC にインストールすると、厳密な名前の署名の検証はインストール時にのみ行われることになります。 ファイルシステム内の他の場所にインストールされている厳密な名前付きのアセンブリは、読み込まれるたびに署名を検証する必要があります。 マネージ Vspackage を GAC にインストールする場合は、regpkg ツールの **/assembly** スイッチを使用して、アセンブリの厳密な名前を指すレジストリエントリを書き込みます。
 
- GAC 以外の場所に管理 VSPackages をインストールする場合は、ディレクトリ階層を選択するためのアンマネージ VSPackages に関する前述のアドバイスに従ってください。 regpkg ツールの **/codebase**スイッチを使用して、VSPackage アセンブリのパスを指すレジストリ エントリを書き込みます。
+ Managed Vspackage を GAC 以外の場所にインストールする場合は、「管理されていない Vspackage に対するディレクトリ階層の選択」に記載されている前述のアドバイスに従ってください。 Regpkg ツールの **/codebase** スイッチを使用して、VSPackage アセンブリのパスを指すレジストリエントリを書き込みます。
 
- 詳細については、「 [VSPackages の登録と登録解除](../../extensibility/registering-and-unregistering-vspackages.md)」を参照してください。
+ 詳細については、「 [Register And Register vspackage](../../extensibility/registering-and-unregistering-vspackages.md)」を参照してください。
 
 ## <a name="satellite-dlls"></a>サテライト DLL
- 慣例により、特定のロケールのリソースを含む VSPackage サテライト DLL は *、VSPackage*ディレクトリのサブディレクトリに配置されます。 サブディレクトリはロケール ID (LCID) 値に対応します。
+ 慣例により、特定のロケールのリソースを含む VSPackage サテライト Dll は、 *VSPackage* ディレクトリのサブディレクトリに配置されます。 サブディレクトリはロケール ID (LCID) 値に対応します。
 
- [VSPackages](../../extensibility/managing-vspackages.md)の管理の記事は、レジストリ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]エントリが実際に VSPackage のサテライト DLL を検索する場所を制御することを示します。 ただし、LCID[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]値の名前が付けられたサブディレクトリに、次の順序でサテライト DLL を読み込もうとします。
+ [Manage vspackage](../../extensibility/managing-vspackages.md)記事は、レジストリエントリが [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPACKAGE のサテライト DLL を実際に検索する場所を制御することを示します。 ただし、では、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] LCID 値がという名前のサブディレクトリに、次の順序でサテライト DLL の読み込みが試行されます。
 
-1. 既定の LCID (Visual Studio LCID;英語の場合は*\1033*など)
+1. 既定の LCID (たとえば、英語の場合は *\ 1033* )
 
-2. 既定のサブ言語を使用する既定の LCID。
+2. 既定のサブ言語を持つ既定の LCID。
 
 3. システムの既定の LCID。
 
-4. システムの既定の LCID と既定のサブ言語。
+4. 既定のサブ言語を持つシステムの既定の LCID。
 
-5. 米国英語 (*.\1033*または *.\0x409*) 。
+5. 米国英語 (*. \ 1033* または *.\0x409*)。
 
-VSPackage DLL にリソースが含まれており **、SatelliteDll\DllName**レジストリ エントリ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]がリソースを指している場合は、上記の順序で読み込みを試みます。
+VSPackage DLL にリソースと **SatelliteDll\DllName** レジストリエントリが含まれている場合、はこれらの DLL を [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 上記の順序で読み込もうとします。
 
 ## <a name="see-also"></a>関連項目
-- [共有 VS パッケージとバージョン対応 VS パッケージの間で選択](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+- [共有バージョンとバージョン付き Vspackage を選択する](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage を管理する](../../extensibility/managing-vspackages.md)
 - [パッケージ登録の管理](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

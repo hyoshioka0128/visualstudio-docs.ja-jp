@@ -1,5 +1,5 @@
 ---
-title: 複数のプロジェクト接続にわたる設定の適用 |マイクロソフトドキュメント
+title: 複数のプロジェクト接続での設定の適用 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710059"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>複数のプロジェクト接続に設定を適用
-ソース管理プラグイン API バージョン 1.2 を使用してビルドされたソース管理プラグインは、バッチ操作を使用して、複数のプロジェクトまたは複数の接続コンテキストで同じソース管理操作を実行できます。 バッチを使用すると、プロジェクトごとの冗長なダイアログ ボックスをユーザー エクスペリエンスから排除できます。
+# <a name="application-of-settings-across-multiple-project-connections"></a>複数のプロジェクト接続での設定の適用
+ソース管理プラグイン API バージョン1.2 を使用して構築されたソース管理プラグインは、バッチ操作を使用して、複数のプロジェクトまたは複数の接続コンテキストで同じソース管理操作を実行できます。 バッチを使用すると、ユーザーエクスペリエンスから、プロジェクトごとの冗長なダイアログボックスを削除できます。
 
- ソース管理プラグイン API バージョン 1.1 を使用してビルドされたソース管理プラグインで複数の接続に属する複数の項目を選択し (たとえば、異なるファイル共有マシン上の 2 つの Web プロジェクト)、それらをチェックアウトすると、ユーザーは同じダイアログ ボックスを繰り返し表示します。 このシナリオは、IDE が各接続コンテキストの状態をリセットするため、ユーザーがダイアログ ボックスの **[すべてに適用**] チェック ボックスをクリックした場合でも発生します。
+ ソース管理プラグイン API バージョン 1.1 (異なるファイル共有マシン上の2つの web プロジェクトなど) を使用してビルドされたソース管理プラグイン内の複数の接続に属する複数の項目をユーザーが選択した場合、ユーザーは同じダイアログボックスを繰り返し表示します。 このシナリオは、ユーザーがダイアログボックスの [ **すべてに適用** ] チェックボックスをクリックした場合にも発生します。これは、IDE によって各接続コンテキストの状態がリセットされるためです。
 
 ## <a name="new-capability-flag"></a>新しい機能フラグ
- この`SccBeginBatch`関数は、`SCC_CAP_BATCH`バッチ操作が進行中であることを示すフラグを設定します。
+ 関数は、 `SccBeginBatch` `SCC_CAP_BATCH` バッチ操作が進行中であることを示すフラグを設定します。
 
 ## <a name="new-functions"></a>新しい関数
-次の新機能は、バッチ操作をサポートします。
+次の新しい関数では、バッチ操作をサポートしています。
 
 - [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 - [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
-この`SCCBeginBatch`関数は、ソース管理操作のグループを開始します。 この`SccEndBatch`関数はグループを閉じます。 グループはネストできません。
+関数は、 `SCCBeginBatch` ソース管理操作のグループを開始します。 関数は、 `SccEndBatch` グループを閉じます。 グループを入れ子にすることはできません。
 
 ## <a name="see-also"></a>関連項目
-- [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [ソース管理プラグイン API バージョン1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
