@@ -9,10 +9,10 @@ caps.latest.revision: 28
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9779dd685ad662cd0761dc85be58d0dbb3ccf0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660662"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings ファイルを使用して単体テストを構成する
@@ -39,11 +39,11 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 
 3. **[テスト]** メニューの **[テストの設定]** をクリックし、 **[テスト設定ファイルの選択]** をクリックします。
 
-   ソリューション内に複数の \*.runsettings ファイルを作成し、 **[テストの設定]** メニューを使用して状況に応じてそれらを有効または無効にすることができます。
+   ソリューション内に複数の \*.runsettings ファイルを作成し、**[テストの設定]** メニューを使用して状況に応じてそれらを有効または無効にすることができます。
 
-   ![実行設定ファイルを有効にする](../test/media/runsettings-1.png "RunSettings-1")
+   ![実行設定ファイルの有効化](../test/media/runsettings-1.png "RunSettings-1")
 
-## <a name="example"></a> このサンプル .runsettings ファイルをコピーする
+## <a name="copy-this-example-runsettings-file"></a><a name="example"></a> このサンプル .runsettings ファイルをコピーする
  一般的な *.runsettings ファイルを示します。 すべての値には既定値があるため、ファイルの各要素は省略可能です。
 
 ```xml
@@ -123,7 +123,7 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 
 ### <a name="test-run-configuration"></a>テストの実行の構成
 
-|ノード|既定|値|
+|ノード|Default|値|
 |----------|-------------|------------|
 |`ResultsDirectory`||テスト結果が配置されるディレクトリ。|
 |`TargetFrameworkVersion`|Framework40|Framework35、Framework40、Framework45<br /><br /> テストを検出して実行するために、どのバージョンの単体テスト フレームワークを使用するかを指定します。 これは、単体テスト プロジェクトのビルド プロパティで指定した .NET プラットフォームのバージョンと異なっていてもかまいません。|
@@ -149,17 +149,17 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 ### <a name="mstest-run-settings"></a>MSTest の実行設定
  これらは、 `[TestMethod]` 属性を持つテスト メソッドを実行するテスト アダプターに固有の設定です。
 
-|構成|既定|値|
+|構成|Default|値|
 |-------------------|-------------|------------|
-|ForcedLegacyMode|False|Visual Studio 2012 で、MSTest アダプターは処理速度と拡張性を高めるために最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を `true` に設定します。<br /><br /> たとえば、単体テスト用に指定された app.config ファイルがある場合は、これを使用することがあります。<br /><br /> より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
+|ForcedLegacyMode|false|Visual Studio 2012 で、MSTest アダプターは処理速度と拡張性を高めるために最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を `true` に設定します。<br /><br /> たとえば、単体テスト用に指定された app.config ファイルがある場合は、これを使用することがあります。<br /><br /> より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
 |IgnoreTestImpact|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[方法: コードの変更後に実行するテストをチェックするためのデータを収集する](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)」を参照してください。|
-|SettingsFile||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 **[テスト]** メニューの **[テストの設定]** 、 **[テスト設定ファイルの選択]** を使用してテスト設定ファイルを指定することもできます。<br /><br /> この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|
+|SettingsFile||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 **[テスト]** メニューの **[テストの設定]**、 **[テスト設定ファイルの選択]** を使用してテスト設定ファイルを指定することもできます。<br /><br /> この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|
 |KeepExecutorAliveAfterLegacyRun|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスは、現時点で中止されます。 テスト実行プログラムを中止しない場合は、この構成を true に切り替えます。<br /><br /> たとえば、コード化された UI テストの間にブラウザーの実行を維持するためにこれを使用できます。|
-|DeploymentEnabled|TRUE|これを false に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|
-|CaptureTraceOutput|TRUE|Trace.WriteLine を使用して、テスト メソッドからデバッグ トレースに書き込むことができます。 この構成を使用して、これらのデバッグ トレースをオフにできます。|
-|DeleteDeploymentDirectoryAfterTestRunIsComplete|TRUE|この値を false に設定することで、テストの実行後に配置ディレクトリを保持できます。|
+|DeploymentEnabled|true|これを false に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|
+|CaptureTraceOutput|true|Trace.WriteLine を使用して、テスト メソッドからデバッグ トレースに書き込むことができます。 この構成を使用して、これらのデバッグ トレースをオフにできます。|
+|DeleteDeploymentDirectoryAfterTestRunIsComplete|true|この値を false に設定することで、テストの実行後に配置ディレクトリを保持できます。|
 |MapInconclusiveToFailed|False|テストが結果不確定の状態で返された場合、通常はテスト エクスプローラーで [スキップ] 状態にマップされます。 結果不確定のテストを [失敗] として表示する場合は、この構成を使用します。|
-|InProcMode|False|テストを MSTest アダプターと同じプロセスで実行する場合は、この値を true に設定します。 この設定で、わずかにパフォーマンスが向上します。 ただし、あるテストが例外で終了した場合、他のテストは続行されません。|
+|InProcMode|false|テストを MSTest アダプターと同じプロセスで実行する場合は、この値を true に設定します。 この設定で、わずかにパフォーマンスが向上します。 ただし、あるテストが例外で終了した場合、他のテストは続行されません。|
 |AssemblyResolution|False|単体テストを検索して実行する場合、追加のアセンブリへのパスを指定できます。  たとえば、テスト アセンブリと同じディレクトリに存在しない依存関係アセンブリにこれらのパスを使用します。  パスを指定するには、"ディレクトリ パス" 要素を使用します。  パスには、環境変数を含めることができます。<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>参照

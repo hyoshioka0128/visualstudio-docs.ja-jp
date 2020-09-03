@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545809"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>方法: Office ソリューションの構成情報を設定する
@@ -31,11 +31,11 @@ ms.locfileid: "85545809"
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-2. [**カテゴリ**] ペインで、[**全般**] をクリックします。
+2. [ **カテゴリ** ] ペインで、[ **全般**] をクリックします。
 
-3. [**テンプレート**] ペインで、[**アプリケーション構成ファイル**] を選択します。
+3. [ **テンプレート** ] ペインで、[ **アプリケーション構成ファイル**] を選択します。
 
-4. [**名前**] ボックスに、アセンブリと拡張子 *.config*を加えた名前を入力します。たとえば、 *ExcelWorkbook1.dll*という名前の Excel プロジェクトアセンブリの構成ファイルに*ExcelWorkbook1.dll.config*という名前が付けられます。
+4. [ **名前** ] ボックスに、アセンブリと拡張子 *.config*を加えた名前を入力します。たとえば、 *ExcelWorkbook1.dll* という名前の Excel プロジェクトアセンブリの構成ファイルに *ExcelWorkbook1.dll.config*という名前が付けられます。
 
 5. **[追加]** をクリックします。
 

@@ -1,5 +1,5 @@
 ---
-title: ステートメントを設定します。マイクロソフトドキュメント
+title: 'IDebugThread2:: CanSetNextStatement |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718862"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-現在の命令ポインターを指定されたスタック フレームに設定できるかどうかを判断します。
+現在の命令ポインターを特定のスタックフレームに設定できるかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int CanSetNextStatement ( 
 
 ## <a name="parameters"></a>パラメーター
 `pStackFrame`\
-将来の使用のために予約されています。null 値に設定されます。 これが null 値の場合は、現在のスタック フレームを使用します。
+将来使用するために予約されています。を null 値に設定します。 Null 値の場合は、現在のスタックフレームを使用します。
 
 `pCodeContext`\
-[in]実行されるコードの場所とそのコンテキストを記述する[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)オブジェクト。
+から実行されるコードの場所とそのコンテキストを記述する [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドが戻`S_OK`る場合は[、SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)メソッドを呼び出して、実際に次のステートメントを設定します。
+## <a name="remarks"></a>解説
+ このメソッドがを返す場合は `S_OK` 、 [setnextstatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) メソッドを呼び出して、次のステートメントを実際に設定します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -20,28 +20,28 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68740216"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> タスクは、[!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト (*プロジェクト名*.exe.manifest) に追加するために実行されます。  
+<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>プロジェクトがビルドされると、タスクが実行され、 **\<hostInBrowser />** アプリケーションマニフェスト (*projectname*. .manifest) に要素が追加され [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] ます。  
   
 ## <a name="task-parameters"></a>タスク パラメーター  
   
 |パラメーター|説明|  
 |---------------|-----------------|  
 |`ApplicationManifest`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> `<hostInBrowser />` 要素を追加するアプリケーション マニフェスト ファイルのパスと名前を指定します。|  
-|`HostInBrowser`|必須の **Boolean** 型のパラメーターです。<br /><br /> **\<hostInBrowser />** 要素を含めるようにアプリケーション マニフェストを変更するかどうかを指定します。 **true** の場合、新しい `<`**hostInBrowser />** 要素が **\<entryPoint />** 要素に含められます。 要素の挿入は累積的に行われることに注意してください。 **\<hostInBrowser />** 要素が既に存在していても、それが削除または上書きされることはありません。 代わりに、追加の **\<hostInBrowser />** 要素が作成されます。 **false** の場合、アプリケーション マニフェストは変更されません。|  
+|`HostInBrowser`|必須の **Boolean** 型のパラメーターです。<br /><br /> 要素を含めるようにアプリケーションマニフェストを変更するかどうかを指定し **\<hostInBrowser />** ます。 **True**の場合、新しい `<` **hostInBrowser/>** 要素が要素に含まれ **\<entryPoint />** ます。 要素インクルードは累積的であることに注意してください。 **\<hostInBrowser />** 要素が既に存在する場合、その要素は削除または上書きされません。 代わりに、追加の **\<hostInBrowser />** 要素が作成されます。 **false** の場合、アプリケーション マニフェストは変更されません。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] は、[!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] 配置を使用して実行されるため、サポート用の配置マニフェストおよびアプリケーション マニフェストと一緒に発行する必要があります。 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] では [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest) タスクを使用して、アプリケーション マニフェストを生成します。  
   
- ブラウザーからホストされるようにアプリケーションを構成する場合は、 **\<hostInBrowser />** 要素をアプリケーション マニフェストに追加する必要があります。次に例を示します。  
+ 次に、ブラウザーからホストされるようにアプリケーションを構成するには、次の例に示すように、追加の要素を **\<hostInBrowser />** アプリケーションマニフェストに追加する必要があります。  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -75,10 +75,10 @@ ms.locfileid: "68740216"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)   
+ [タスクリファレンス](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
- [WPF アプリケーション (WPF) のビルド](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
+ [WPF アプリケーションのビルド (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [WPF XAML ブラウザー アプリケーションの概要](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
