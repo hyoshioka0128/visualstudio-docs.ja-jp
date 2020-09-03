@@ -1,5 +1,5 @@
 ---
-title: ウィザードデータ要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
+title: WizardData 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740383"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 要素 (Visual Studio テンプレート)
 
-カスタム XML を指定します。
+カスタム XML を指定します
 
 ```xml
 \<VSTemplate>
@@ -45,33 +45,33 @@ ms.locfileid: "80740383"
 
 ### <a name="attributes"></a>属性
 
-[なし] :
+なし。
 
 ### <a name="child-elements"></a>子要素
 
-[なし] :
+なし。
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクト テンプレート、項目テンプレート、またはスタート キットのすべてのメタデータが含まれます。|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクトテンプレート、項目テンプレート、またはスタートキットのすべてのメタデータが含まれます。|
 
 ## <a name="text-value"></a>テキスト値
 
 テキスト値は省略可能です。
 
-このテキストは[、WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)要素で指定されたカスタム ウィザード拡張機能に渡すカスタム XML を指定します。
+このテキストは、 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 要素で指定されたカスタムウィザード拡張機能に渡すカスタム XML を指定します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
-この要素では、任意の XML を指定できます。 XML はカスタム ウィザード拡張機能にパラメーターとして渡され、この要素の内容を使用できます。 このデータに対する検証は行われません。
+この要素には、任意の XML を指定できます。 XML は、カスタムウィザード拡張機能にパラメーターとして渡されます。これにより、拡張機能はこの要素の内容を使用できるようになります。 このデータに対する検証は行われません。
 
-**WizardData**要素の内容は、メソッド内のパラメーターの文字列ディクショナリ内のパラメーターとして、変更されずに`IWizard.RunStarted`渡されます。 ディクショナリ キーの名前`$wizarddata$`は です。
+**Wizarddata**要素の内容は、メソッドのパラメーターの文字列辞書内のパラメーターとして、変更されずに渡され `IWizard.RunStarted` ます。 ディクショナリキーにはという名前が付けられ `$wizarddata$` ます。
 
 ## <a name="example"></a>例
 
-C# Windows アプリケーションの標準プロジェクト テンプレートのメタデータを次の例に示します。
+次の例は、C# Windows アプリケーションの標準プロジェクトテンプレートのメタデータを示しています。
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -106,7 +106,7 @@ C# Windows アプリケーションの標準プロジェクト テンプレー�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [WizardExtension 要素 (Visual Studio テンプレート)](../extensibility/wizardextension-element-visual-studio-templates.md)
 - [方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)

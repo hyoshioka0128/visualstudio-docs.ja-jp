@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534239"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio で頻繁に使用するコマンドには、ここで示している既定のショートカット キーを押すことでアクセスできます。 既定のショートカットを持つコマンドの完全な一覧については、「[既定のキーボードショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
+Visual Studio で頻繁に使用するコマンドには、ここで示している既定のショートカット キーを押すことでアクセスできます。 既定のショートカットを持つコマンドの完全な一覧については、「 [既定のキーボードショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
 
 > [!NOTE]
 > **[オプション]** ダイアログ ボックスを開き、**[環境]** ノードを展開して、**[キーボード]** を選択することで、任意のコマンドのショートカットを調べることができます。
@@ -28,23 +28,23 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 
 - [ビルド](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
-- [[編集]](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
+- [編集](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
 
 - [プロジェクト](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)
 
 - [ツール](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)
 
-- [Window](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
+- [ウィンドウ](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)
 
 - [Debug](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
 
-- [[最近使ったファイル]](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
+- [ファイル](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
 
 - [リファクター](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
 
 - [モード](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>建設
+## <a name="build"></a><a name="bkmk_build"></a> ビルド
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------|-------------------------------------|
@@ -53,7 +53,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Build.Compile|Ctrl + F7 [全体]|
 |Build.RunCodeAnalysisonSolution|Alt + F11 [全体]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>デバック
+## <a name="debug"></a><a name="bkmk_debug"></a> デバッグ
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------|-------------------------------------|
@@ -124,7 +124,7 @@ dit.SurroundWith|Ctrl + K、Ctrl + S [全体]|
 |Edit.WordDeleteToEnd|Ctrl + Delete [テキスト エディター]|
 |Edit.WordDeleteToStart|Ctrl + Backspace [テキスト エディター]|
 
-## <a name="file"></a><a name="bkmk_file"></a>拡張子
+## <a name="file"></a><a name="bkmk_file"></a> ファイル
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------|-------------------------------------|
@@ -147,7 +147,7 @@ dit.SurroundWith|Ctrl + K、Ctrl + S [全体]|
 |Project.AddExistingItem|Shift + Alt + A [全体]|
 |Project.AddNewItem|Ctrl + Shift + A [全体]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>リファクタリング
+## <a name="refactor"></a><a name="bkmk_refactor"></a> リファクター
 
 |コマンド|ショートカット キー [コンテキスト]|
 |-------------|-----------------------------------|
@@ -159,7 +159,7 @@ dit.SurroundWith|Ctrl + K、Ctrl + S [全体]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl + Alt + P [全体]|
 
-## <a name="view"></a><a name="bkmk_view"></a>モード
+## <a name="view"></a><a name="bkmk_view"></a> 表示
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------|-------------------------------------|
@@ -180,7 +180,7 @@ iew.TfsTeamExplorer|Ctrl + \\、Ctrl + M [全体]|
 |View.ViewCode|Enter [クラス図]<br /><br /> または F7 [設定デザイナー]|
 |View.ViewDesigner|Shift + F7 [HTML エディター ソース ビュー]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Windows
+## <a name="window"></a><a name="bkmk_window"></a> ウィンドウ
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------|-------------------------------------|
