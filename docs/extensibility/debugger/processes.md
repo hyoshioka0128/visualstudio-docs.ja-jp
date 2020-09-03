@@ -1,5 +1,5 @@
 ---
-title: プロセス |マイクロソフトドキュメント
+title: プロセス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c59b90bb117dded0f528bc33a617370b091a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738240"
 ---
 # <a name="processes"></a>処理
-デバッガアーキテクチャでは、*プロセス*:
+デバッガーのアーキテクチャでは、 *プロセス*は次のようになります。
 
-- プログラムのセットのコンテナーです。 これは、スレッドのセットのコンテナーである Windows プロセスとよく似ています。
+- は、一連のプログラムのコンテナーです。 これは、スレッドのセットのコンテナーである Windows プロセスによく似ています。
 
-- 名前、識別子、または物理識別子で自分自身を識別できます。
+- 名前、識別子、または物理識別子を使用して識別できます。
 
 - 実行中のすべてのプログラム (およびそのスレッド) を列挙できます。
 
-- 自分自身、それが実行されているポート、およびそれを含むマシンを記述できます。
+- 自体、それが実行されているポート、およびそれを含むコンピューターを記述できます。
 
-- 1 つ以上のプログラムを作成したり、プログラムを終了したり、プログラムを停止したりします。
+- 1つまたは複数のプログラムを作成したり、作成したプログラムを終了したり、プログラムを停止させたりすることができます。
 
-- プロセスが起動されたときに作成される[IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)インターフェイスによって表されます。 プロセスは、セッション デバッグ マネージャー (SDM) または[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)によって起動されます。
+- は、プロセスの起動時に作成される [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) インターフェイスによって表されます。 プロセスは、セッションデバッグマネージャー (SDM) または [Launchsuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)のいずれかによって起動されます。
 
-  デバッグ パッケージは[、Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)を呼び出すことによってプロセスにデバッグ エンジン (DE) をアタッチできます。 たとえば、共通言語ランタイム DE がプロセスにアタッチする場合、マネージ コードを実行しているプログラムにのみアタッチされます。
+  デバッグパッケージは、 [attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)を呼び出すことによってプロセスにデバッグエンジン (de) をアタッチできます。これは、処理可能なプロセスで実行されているすべてのプログラムに、de がアタッチされることを意味します。 たとえば、共通言語ランタイムがプロセスにアタッチされていない場合は、マネージコードを実行しているプログラムのみにアタッチされます。
 
 ## <a name="see-also"></a>関連項目
 - [Programs](../../extensibility/debugger/programs.md)
 - [スレッド](../../extensibility/debugger/threads.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
-- [デバッグ パッケージ](../../extensibility/debugger/debug-package.md)
-- [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)
+- [パッケージのデバッグ](../../extensibility/debugger/debug-package.md)
+- [デバッグエンジン](../../extensibility/debugger/debug-engine.md)
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
-- [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+- [[アタッチ]](../../extensibility/debugger/reference/idebugprocess2-attach.md)

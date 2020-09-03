@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985401"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでの単純データバインディング
@@ -37,7 +37,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
@@ -45,11 +45,11 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] または [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。
 
-- `AdventureWorksLT` サンプル データベースがアタッチされた SQL Server 2005 または SQL Server 2005 Express の実行中のインスタンスへのアクセス。 `AdventureWorksLT` データベースは、 [SQL Server Samples github リポジトリ](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)からダウンロードできます。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
+- `AdventureWorksLT` サンプル データベースがアタッチされた SQL Server 2005 または SQL Server 2005 Express の実行中のインスタンスへのアクセス。 `AdventureWorksLT`データベースは[SQL Server Samples GitHub リポジトリ](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)からダウンロードできます。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
 
-  - SQL Server Management Studio または SQL Server Management Studio Express を使用してデータベースをアタッチする方法については、「[データベースをアタッチする方法 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)」を参照してください。
+  - SQL Server Management Studio または SQL Server Management Studio Express を使用してデータベースをアタッチする方法については、「 [データベースをアタッチする方法 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)」を参照してください。
 
-  - コマンドラインを使用してデータベースをアタッチする方法については、「[方法: SQL Server Express にデータベースファイルをアタッチ](/previous-versions/sql/)する」を参照してください。
+  - コマンドラインを使用してデータベースをアタッチする方法については、「 [方法: SQL Server Express にデータベースファイルをアタッチ](/previous-versions/sql/)する」を参照してください。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
@@ -59,19 +59,19 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 1. Visual Basic または C# を使用して、 **Populating Documents from a Database**という名前の Word VSTO アドイン プロジェクトを作成します。
 
-     詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio によって、 *ThisAddIn*ファイルまたは*ThisAddIn.cs*ファイルが開かれ、データベースプロジェクトの**ドキュメント**が**ソリューションエクスプローラー**に追加されます。
+     Visual Studio によって、 *ThisAddIn* ファイルまたは *ThisAddIn.cs* ファイルが開かれ、データベースプロジェクトの **ドキュメント** が **ソリューションエクスプローラー**に追加されます。
 
-2. プロジェクトが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]を対象としている場合は、 *Microsoft. Office. app-v 4.0*アセンブリへの参照を追加します。 この参照は、このチュートリアルの後半でプログラムを使用して Windows フォーム コントロールをドキュメントに追加するのに必要です。
+2. プロジェクトがまたはを対象としている場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* アセンブリへの参照を追加します。 この参照は、このチュートリアルの後半でプログラムを使用して Windows フォーム コントロールをドキュメントに追加するのに必要です。
 
-## <a name="create-a-data-source"></a>データ ソースの作成
+## <a name="create-a-data-source"></a>データ ソースを作成する
 
 **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>型指定されたデータセットをプロジェクトに追加するには
 
-1. **[データソース]** ウィンドウが表示されていない場合は、メニューバーで [ > **他の Windows** > **データソース**の**表示**] をクリックして表示します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
 
 2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
 
@@ -79,7 +79,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 4. `AdventureWorksLT` データベースへの既存の接続がある場合は、その接続を選んで **[次へ]** をクリックします。
 
-    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
+    それ以外の場合は、 **[新しい接続]** をクリックし、 **[接続の追加]** ダイアログ ボックスを使用して新しい接続を作成します。 詳細については、「 [新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
 5. **[アプリケーション構成ファイルへの接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
@@ -91,7 +91,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの **Customer (SalesLT)** テーブルの内容を表します。
 
-   - `CustomerTableAdapter`という名前の TableAdapter。 この TableAdapter を使用して、`AdventureWorksLTDataSet`のデータの読み取りと書き込みを行うことができます。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
+   - という名前の TableAdapter `CustomerTableAdapter` 。 この TableAdapter を使用して、のデータの読み取りと書き込みを行うことができ `AdventureWorksLTDataSet` ます。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
 
      これらのオブジェクトは、どちらもこのチュートリアルの後半で使用します。
 
@@ -99,7 +99,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 このチュートリアルでは、データベースレコードを表示するためのインターフェイスは基本的なものであり、ドキュメント内に作成されます。 1 つの <xref:Microsoft.Office.Tools.Word.ContentControl> には一度に 1 つのデータベース レコードが表示されます。2 つの <xref:Microsoft.Office.Tools.Word.Controls.Button> コントロールを使用してレコードを前後にスクロールできます。 コンテンツ コントロールは <xref:System.Windows.Forms.BindingSource> を使用して、データベースに接続します。
 
-コントロールをデータにバインドする方法の詳細については、「[データを Office ソリューションのコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
+コントロールをデータにバインドする方法の詳細については、「 [データを Office ソリューションのコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
 ### <a name="to-create-the-interface-in-the-document"></a>ドキュメントでインターフェイスを作成するには
 

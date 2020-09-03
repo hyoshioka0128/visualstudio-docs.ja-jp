@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 71f18fbbf9f2d5c587c2cd0961c6625467f4f298
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652450"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>カスタム ホストを使用したテキスト テンプレートの処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-*テキストテンプレート変換*プロセスでは、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 テキスト変換エンジンは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能か、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がインストールされているコンピューターで実行中のスタンドアロン アプリケーションから呼び出すことができます。 ただし、*テキストテンプレートホスト*を指定する必要があります。 このクラスは、テンプレートを環境に接続し、アセンブリやインクルード ファイルなどのリソースの検索と、出力およびエラー メッセージの処理を行います。
+*テキストテンプレート変換*プロセスでは、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 テキスト変換エンジンは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能か、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がインストールされているコンピューターで実行中のスタンドアロン アプリケーションから呼び出すことができます。 ただし、 *テキストテンプレートホスト*を指定する必要があります。 このクラスは、テンプレートを環境に接続し、アセンブリやインクルード ファイルなどのリソースの検索と、出力およびエラー メッセージの処理を行います。
 
 > [!TIP]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内で実行されるパッケージまたは拡張機能を作成する場合は、独自のホストを作成するのではなく、テキスト テンプレート サービスを使用することを検討します。 詳細については、「 [VS 拡張機能でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください。
@@ -46,19 +46,19 @@ string output = engine.ProcessTemplate(templateString, host);
 
  アプリケーションでは、テンプレートを見つけて提供すると共に、出力を処理する必要があります。
 
- `host` パラメーターでは、[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) を実装するクラスを指定する必要があります。 これはエンジンによってコールバックされます。
+ パラメーターでは `host` 、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))を実装するクラスを指定する必要があります。 これはエンジンによってコールバックされます。
 
  ホストは、エラーのログ記録、アセンブリとインクルード ファイルへの参照の解決、テンプレートを実行できるアプリケーション ドメインの指定、各ディレクティブの適切なプロセッサの呼び出しを実行できる必要があります。
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は、ITextTemplatingEngineHost で定義されており、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))は**Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll**で定義されています。また、 **Microsoft.VisualStudio.TextTemplating.\*.0.dll**で定義されています。
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は ** \*.0.dllVisualStudio **で定義されており、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) は VisualStudio で定義されています。また、 ** \*.0.dll**で定義されています。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [チュートリアル: カスタムテキストテンプレートホストを作成する ](../modeling/walkthrough-creating-a-custom-text-template-host.md)、テキストテンプレート機能を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部で使用できるようにするカスタムテキストテンプレートホストを作成する方法について説明します。
+ [チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md) テキストテンプレート機能を外部で使用できるようにするカスタムテキストテンプレートホストを作成する方法について説明し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>リファレンス
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>関連項目
- [テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)テキスト変換のしくみと、カスタマイズできる部分について説明します。
+ [テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md) テキスト変換のしくみと、カスタマイズできる部分について説明します。
 
- [カスタム T4 テキストテンプレートディレクティブプロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)テキストテンプレートディレクティブプロセッサの概要について説明します。
+ [カスタム T4 テキストテンプレートディレクティブプロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md) テキストテンプレートディレクティブプロセッサの概要について説明します。

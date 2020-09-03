@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85519991"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>方法: プログラムによって Visio 図面を開く
@@ -46,7 +46,7 @@ ms.locfileid: "85519991"
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。
 
-- という名前の Visio 図面は、 `myDrawing.vsd` `Test` *[マイドキュメント*] フォルダー (windows XP 以前の場合) または [*ドキュメント*] フォルダー (windows Vista の場合) のという名前のディレクトリに配置する必要があります。
+- という名前の Visio 図面は、 `myDrawing.vsd` `Test` *[マイドキュメント* ] フォルダー (windows XP 以前の場合) または [ *ドキュメント* ] フォルダー (windows Vista の場合) のという名前のディレクトリに配置する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)

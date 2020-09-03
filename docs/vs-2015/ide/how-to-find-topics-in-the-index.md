@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : インデックスでトピックを検索する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651938"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>方法 : インデックスでトピックを検索する
@@ -43,5 +43,5 @@ ms.locfileid: "72651938"
 
      指定したキーワードが 1 つのトピックだけに関連付けられている場合は、そのトピックが表示されます。 それ以外の場合は、そのキーワードに関連付けられているすべてのトピックの一覧が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [インデックス検索のヒント](../ide/index-search-tips.md)

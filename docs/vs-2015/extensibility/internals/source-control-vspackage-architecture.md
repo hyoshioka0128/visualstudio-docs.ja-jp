@@ -1,5 +1,5 @@
 ---
-title: ソース管理 VSPackage アーキテクチャ |Microsoft Docs
+title: ソース管理 VSPackage Architecture |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,44 +11,44 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3cca9e39714f87024b01ab2c925189aacbe22785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183404"
 ---
 # <a name="source-control-vspackage-architecture"></a>ソース管理 VSPackage アーキテクチャ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソース管理パッケージとは、VSPackage を使用するサービスを[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE を提供します。 代わりに、ソース管理パッケージのソース管理のサービスとしての機能を提供します。 さらに、ソース管理パッケージには、ソース管理プラグインをソース管理を統合するためのより汎用性の高い代替[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+ソース管理パッケージは、IDE によって提供されるサービスを使用する VSPackage です [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 戻り値として、ソース管理パッケージの機能がソース管理サービスとして提供されます。 また、ソース管理パッケージは、ソース管理をに統合するためのソース管理プラグインよりも汎用性の高い方法です [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
- ソース管理プラグインのソース管理プラグイン API を実装する、コントラクトの厳密な保管します。 たとえば、プラグインを置き換えることはできません、既定[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ユーザー インターフェイス (UI)。 さらに、ソース管理プラグイン API は、独自のソース管理モデルを実装するプラグイン、できません。 ただし、ソース管理パッケージでは、これらの制限の両方は解決します。 ソース管理パッケージのソース コントロールのエクスペリエンスを完全に制御を持つ、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ユーザー。 また、ソース管理パッケージは、独自のソース管理モデルと、ロジックを使用でき、すべてのソース コントロールに関連するユーザー インターフェイスを定義できます。  
+ ソース管理プラグイン API を実装するソース管理プラグインは、厳密なコントラクトに準拠しています。 たとえば、既定の [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ユーザーインターフェイス (UI) をプラグインで置き換えることはできません。 さらに、ソース管理プラグイン API では、プラグインが独自のソース管理モデルを実装することはできません。 ただし、ソース管理パッケージでは、これらの両方の制限が解消します。 ソース管理パッケージは、ユーザーのソース管理エクスペリエンスを完全に制御 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] できます。 さらに、ソース管理パッケージは、独自のソース管理モデルとロジックを使用して、ソース管理に関連するすべてのユーザーインターフェイスを定義できます。  
   
 ## <a name="source-control-package-components"></a>ソース管理パッケージのコンポーネント  
- アーキテクチャの図に示すように、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ソース コントロールのスタブをという名前のコンポーネントを使用してソース管理パッケージを統合する VSPackage は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+ アーキテクチャ図に示されているように、ソース管理 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] スタブという名前のコンポーネントは、ソース管理パッケージとを統合する VSPackage です [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
- ソース コントロールのスタブは、次のタスクを処理します。  
+ ソース管理スタブは、次のタスクを処理します。  
   
-- ソース管理パッケージ登録のために必要な一般的な UI を提供します。  
+- ソース管理のパッケージ登録に必要な共通の UI を提供します。  
   
 - ソース管理パッケージを読み込みます。  
   
-- ソース管理パッケージをアクティブまたは非アクティブとして設定します。  
+- ソース管理パッケージをアクティブ/非アクティブとして設定します。  
   
-  ソース コントロールのスタブは、ソース管理パッケージのアクティブなサービスを検索し、そのパッケージを IDE から受信したすべてのサービス呼び出しをルーティングします。  
+  ソース管理スタブは、ソース管理パッケージのアクティブなサービスを検索し、IDE からのすべての受信サービス呼び出しをそのパッケージにルーティングします。  
   
-  コントロール アダプターのソースのパッケージは、特殊なソース管理パッケージを[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を提供します。 このパッケージは、ソース管理プラグインをソース管理プラグイン API に基づくをサポートするための中核となるコンポーネントです。 ソース管理プラグインがプラグインのアクティブな場合、ソース コントロールのスタブは、ソース コントロール アダプターのパッケージにそのイベントを送信します。 さらに、ソース コントロール アダプターのパッケージを使用して、ソース管理プラグイン API を使用して、ソース管理プラグインの通信も、既定値はすべてソース管理プラグインの一般的な UI を提供します。  
+  ソース管理アダプターパッケージは、に用意されている特殊なソース管理パッケージです [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 このパッケージは、ソース管理プラグイン API に基づいたソース管理プラグインをサポートするための中心的なコンポーネントです。 ソース管理プラグインがアクティブプラグインの場合、ソース管理スタブはそのイベントをソース管理アダプターパッケージに送信します。 さらに、ソース管理アダプターパッケージは、ソース管理プラグイン API を使用してソース管理プラグインと通信します。また、すべてのソース管理プラグインに共通の既定の UI も提供します。  
   
-  ソース管理パッケージは、アクティブなパッケージが、その一方で、ソース コントロールのスタブと直接通信する、パッケージを使用して、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]パッケージのソース管理のインターフェイスします。 ソース管理パッケージは、独自のソース管理 UI をホストします。  
+  一方、ソース管理パッケージがアクティブパッケージの場合、ソース管理スタブは、ソース管理のパッケージインターフェイスを使用して、パッケージと直接通信し [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ます。 ソース管理パッケージは、独自のソース管理 UI をホストします。  
   
-  ![ソース コントロールのアーキテクチャのグラフィック](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+  ![ソース管理アーキテクチャのグラフィック](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
-  ソース管理パッケージの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]コントロールのソース コードまたは統合のための API が用意されていません。 説明されているアプローチとは対照的[をソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)ソース管理プラグインが厳密な一連の関数とコールバックの実装にします。  
+  ソース管理パッケージの場合、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は、ソース管理コードまたは統合用の API を提供しません。 これは、「ソース管理プラグインの [作成](../../extensibility/internals/creating-a-source-control-plug-in.md) 」で説明されている方法と同じです。ソース管理プラグインは、厳密な一連の関数とコールバックを実装する必要があります。  
   
-  ソース管理パッケージとは、COM オブジェクトを使用して作成できるすべての VSPackage のような`CoCreateInstance`します。 VSPackage、自体利用できるように、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]実装することによって IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>します。 VSPackage が、サイトのポインターを受け取るインスタンスが作成されると、および<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>VSPackage アクセス、利用可能なサービスと、IDE でインターフェイスを提供するインターフェイス。  
+  VSPackage と同様に、ソース管理パッケージは、を使用して作成できる COM オブジェクトです `CoCreateInstance` 。 VSPackage を実装することにより、IDE でそれ自体を使用できるようになり [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> ます。 インスタンスが作成されると、VSPackage は、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> IDE で使用可能なサービスとインターフェイスへの VSPackage アクセスを提供するサイトポインターとインターフェイスを受け取ります。  
   
-  ソース管理プラグイン API ベースを作成するよりもより高度なプログラミングの専門知識を必要とソース管理 VSPackage に基づくパッケージの書き込みプラグイン。  
+  VSPackage ベースのソース管理パッケージを作成するには、ソース管理プラグイン API ベースのプラグインを記述するよりも高度なプログラミングの専門知識が必要です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
- [作業の開始](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
+ [はじめに](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

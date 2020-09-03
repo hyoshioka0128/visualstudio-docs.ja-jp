@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183787"
 ---
 # <a name="cores-view-zoom-tool"></a>コア ビューのズーム ツール
@@ -27,9 +27,9 @@ ms.locfileid: "68183787"
   
 ## <a name="other-ways-to-zoom"></a>その他のズーム方法  
   
-- 拡大:ドラッグでタイムライン ビュー内の領域を選択します。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。  
+- 拡大: ドラッグでタイムライン ビュー内の領域を選択します。 マウス ボタンを離すと、タイムライン ビューの選択した範囲が拡大されます。  
   
-- 拡大と縮小:タイムラインを合わせるし、ctrl キーを押しながらマウス ホイールを動かします。  
+- 拡大と縮小: タイムラインの上にマウス ポインターを置き、CTRL を押しながらマウス ホイールを動かします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コア ビュー](../profiling/cores-view.md)
