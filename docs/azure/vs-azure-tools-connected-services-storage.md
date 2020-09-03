@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
 ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800516"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加

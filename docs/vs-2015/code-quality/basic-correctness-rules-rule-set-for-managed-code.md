@@ -10,20 +10,20 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 65d0fdfbc864ca1ac847d896d8b9118cd07141da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655102"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "基本正確性規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-"基本的な正確性規則" 規則セットは、フレームワーク Api の使用におけるロジックエラーと一般的な誤りに焦点を当てます。 基本的な正確性規則には、"最小推奨規則" 規則セットの規則が含まれます。 詳細については、「マネージ[コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」を参照してください。この規則セットを追加して、推奨される最小規則によって報告される警告の一覧を展開する必要があります。
+"基本的な正確性規則" 規則セットは、フレームワーク Api の使用におけるロジックエラーと一般的な誤りに焦点を当てます。 基本的な正確性規則には、"最小推奨規則" 規則セットの規則が含まれます。 詳細については、「マネージ [コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) 」を参照してください。この規則セットを追加して、推奨される最小規則によって報告される警告の一覧を展開する必要があります。
 
  次の表では、Microsoft の基本的な正確性規則の規則セットに含まれるすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|

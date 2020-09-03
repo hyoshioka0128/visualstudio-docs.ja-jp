@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655022"
 ---
 # <a name="customizing-element-tools"></a>要素ツールのカスタマイズ
@@ -24,7 +24,7 @@ DSL 定義によっては、単一の概念を要素のグループとして表�
  また、ツールを図または要素にドラッグしたときの動作をオーバーライドすることもできます。
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>要素ツールのコンテンツのカスタマイズ
- 各要素ツールは、1つまたは複数のモデル要素とリンクのシリアル化されたバージョンを含む <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) のインスタンスを格納します。 既定では、要素ツールの EGP には、ツールに指定したクラスのインスタンスが1つ含まれています。 これは、*言語*`ToolboxHelper.CreateElementToolPrototype` をオーバーライドすることによって変更できます。 このメソッドは、DSL パッケージが読み込まれるときに呼び出されます。
+ 各要素ツールは、 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 1 つまたは複数のモデル要素とリンクのシリアル化されたバージョンを含む (EGP) のインスタンスを格納します。 既定では、要素ツールの EGP には、ツールに指定したクラスのインスタンスが1つ含まれています。 これを変更するには、*言語*をオーバーライドし `ToolboxHelper.CreateElementToolPrototype` ます。 このメソッドは、DSL パッケージが読み込まれるときに呼び出されます。
 
  メソッドのパラメーターは、DSL 定義で指定したクラスの ID です。 目的のクラスを使用してメソッドを呼び出すと、EGP に追加の要素を追加できます。
 
