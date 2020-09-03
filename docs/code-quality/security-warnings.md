@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b5a03c9cb7ae7c5a5c81bd452dbb04d8db4c09d
-ms.sourcegitcommit: ed17ca9ae5f92c229c4e46233bcfe0a49d29ec43
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88052623"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
@@ -96,8 +96,8 @@ ms.locfileid: "88052623"
 |[CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2354.md)|シリアル化されたを使用して逆シリアル <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 化すると、キャストされた型のオブジェクトグラフにまたはを含めることができ <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](ca2355.md)|キャストまたは指定された型のオブジェクトグラフがまたはを含むことができる場合、逆シリアル化し <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA2356: web 逆シリアル化されたオブジェクトグラフ内の安全でないデータセットまたは DataTable](ca2356.md)|またはを持つメソッドには、 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> またはを参照できるパラメーターがあり <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
-|[CA2361: データセットを含む自動生成されたクラスを確認します。 ReadXml () は信頼されていないデータでは使用されません](ca2361.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
-|[CA2362: 自動生成されたシリアル化可能な型の Unsafe データセットまたは DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2362.md)|で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。|
+|[CA2361:DataSet.ReadXml() を含む自動生成クラスが信頼されていないデータで使用されていないことを確認してください](ca2361.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2362:シリアル化可能な自動生成型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2362.md)|で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。|
 |[CA3001:SQL インジェクションの脆弱性のコード レビュー](../code-quality/ca3001.md)|信頼されていない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃に注意してください。 SQL インジェクション攻撃によって、悪意のある SQL コマンドを実行し、アプリケーションのセキュリティと整合性を損なう可能性があります。|
 |[CA3002:XSS の脆弱性のコード レビュー](../code-quality/ca3002.md)|Web 要求から信頼されていない入力を処理する場合は、クロスサイトスクリプティング (XSS) 攻撃に注意する必要があります。 XSS 攻撃によって、信頼できない入力が未加工の HTML 出力に挿入され、攻撃者が悪意のあるスクリプトを実行したり、web ページのコンテンツを改ざんしたりする可能性があります。|
 |[CA3003:ファイル パス インジェクションの脆弱性のコード レビュー](../code-quality/ca3003.md)|Web 要求から信頼されていない入力を使用する場合は、ファイルへのパスを指定するときにユーザーが制御する入力を使用することに注意してください。|
@@ -129,8 +129,8 @@ ms.locfileid: "88052623"
 |[CA5370:読み取りの検証に XmlReader を使用します](../code-quality/ca5370.md)|信頼されていない DTD と XML スキーマを処理すると、危険な外部参照を読み込むことができます。 この危険な読み込みは、セキュリティで保護された競合回避モジュールで XmlReader を使用するか、DTD および XML インラインスキーマ処理を無効にして制限できます。|
 |[CA5371:スキーマの読み取りに XmlReader を使用します](../code-quality/ca5371.md)|信頼されていない DTD と XML スキーマを処理すると、危険な外部参照を読み込むことができます。 セキュリティで保護された競合回避モジュールで XmlReader を使用するか、DTD および XML インラインスキーマ処理を使用すると、この制限は無効になります。|
 |[CA5372:XPathDocument に XmlReader を使用します](../code-quality/ca5372.md)|信頼されていないデータから XML を処理すると、危険な外部参照が読み込まれる可能性があります。これは、セキュリティで保護された競合回避モジュールを使用するか、DTD 処理を無効にして、XmlReader|
-|[CA5373:廃止されたキー派生関数を使用しません](../code-quality/ca5373.md)|このルールは、弱いキー派生メソッドとの呼び出しを検出し <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> `Rfc2898DeriveBytes.CryptDeriveKey` ます。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName>弱いアルゴリズム PBKDF1 が使用されていました。|
-|[CA5374: XslTransform を使用しません](../code-quality/ca5374.md)|このルール <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> では、がコード内でインスタンス化されているかどうかを確認します。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType>は互換性のために残されているため、使用しないでください。|
+|[CA5373:廃止されたキー派生関数を使用しません](../code-quality/ca5373.md)|このルールは、弱いキー派生メソッドとの呼び出しを検出し <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> `Rfc2898DeriveBytes.CryptDeriveKey` ます。 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 弱いアルゴリズム PBKDF1 が使用されていました。|
+|[CA5374: XslTransform を使用しません](../code-quality/ca5374.md)|このルール <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> では、がコード内でインスタンス化されているかどうかを確認します。 <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> は互換性のために残されているため、使用しないでください。|
 |[CA5375: アカウントの Shared Access Signature を使用しないでください](../code-quality/ca5375.md)|アカウント SAS は、blob コンテナー、テーブル、キュー、およびサービス SAS で許可されていないファイル共有に対する読み取り、書き込み、および削除操作へのアクセスを委任できます。 ただし、コンテナーレベルのポリシーはサポートされておらず、付与されるアクセス許可をより柔軟に制御することはできません。 悪意のあるユーザーがアクセスすると、ストレージアカウントが簡単に侵害されます。|
 |[CA5376: SharedAccessProtocol HttpsOnly を使用します](../code-quality/ca5376.md)|SAS は、HTTP でプレーンテキストで転送できない機密データです。|
 |[CA5377: コンテナー レベルのアクセス ポリシーを使用します](../code-quality/ca5377.md)|コンテナーレベルのアクセスポリシーは、いつでも変更または失効できます。 これにより、付与されるアクセス許可をより柔軟に制御できるようになります。|

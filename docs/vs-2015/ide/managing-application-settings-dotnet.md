@@ -1,4 +1,4 @@
-﻿---
+---
 title: アプリケーションの設定の管理 (.NET) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293867"
 ---
 # <a name="managing-application-settings-net"></a>アプリケーションの設定の管理 (.NET)
@@ -70,7 +70,7 @@ ms.locfileid: "74293867"
 
 たとえば、SpecialSettings.settings という名前のファイルをプロジェクトに追加できます。 `SpecialSettings` クラスは `My` 名前空間に公開されませんが、 **[コードの表示]** では、 `Partial Class SpecialSettings`が格納されているカスタムの設定ファイルを読み込むことができます。
 
-設定デザイナーでは、プロジェクト システムによって作成される Settings.settings ファイルがまず検索されます。これは、プロジェクト デザイナーによって **[設定]** タブに表示される既定のファイルです。Settings.settings は [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトでは My Project フォルダーに、 [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクトでは Properties フォルダーにあります。 プロジェクト デザイナーは、その次にプロジェクトのルート フォルダーで他の設定ファイルを検索します。 したがって、カスタム設定ファイルはここに置いておく必要があります。 プロジェクト内の他の場所に .settings ファイルを追加しても、プロジェクト デザイナーはそのファイルを見つけることができません。
+設定デザイナーは、プロジェクトシステムによって作成された設定の設定ファイルを最初に検索します。これは、プロジェクトデザイナーによって [**設定**] タブに表示される既定のファイルです。設定は、プロジェクトの [マイプロジェクト] フォルダー [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] およびプロジェクトの [プロパティ] フォルダーにあります。 [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクト デザイナーは、その次にプロジェクトのルート フォルダーで他の設定ファイルを検索します。 したがって、カスタム設定ファイルはここに置いておく必要があります。 プロジェクト内の他の場所に .settings ファイルを追加しても、プロジェクト デザイナーはそのファイルを見つけることができません。
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>実行時におけるアプリケーション設定へのアクセスまたは変更 (Visual Basic)
 
@@ -86,7 +86,7 @@ ms.locfileid: "74293867"
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>実行時におけるアプリケーション設定へのアクセスまたは変更 (Visual C#)
 <!-- markdownlint-enable MD003 MD020 -->
 
-次の [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]の例に示すように、 [!INCLUDE[csprcs](../includes/csprcs-md.md)]などの `Settings` 以外の言語では、 [!INCLUDE[csprcs](../includes/csprcs-md.md)] クラスに直接アクセスする必要があります。
+次の [!INCLUDE[csprcs](../includes/csprcs-md.md)] の例に示すように、[!INCLUDE[csprcs](../includes/csprcs-md.md)] などの [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 以外の言語では、`Settings` クラスに直接アクセスする必要があります。
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -100,6 +100,6 @@ Properties.Settings.Default.Save();
 
 `Settings` クラスを使用してアプリケーション設定にアクセスする方法の一般情報については、「[アプリケーション設定の概要](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)」を参照してください。 設定の反復処理については、この [フォーラム ポスト](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [アプリケーション設定へのアクセス](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

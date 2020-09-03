@@ -20,30 +20,30 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce987f5ef90448c41da45a39c62710b968e11199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655421"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect メソッドを使用してデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、TableAdapter の DBDirect メソッドを使用してデータベースに対して SQL ステートメントを直接実行するための詳細な手順について説明します。 TableAdapter の DBDirect メソッドを使用すると、データベースの更新をきめ細かいレベルで制御できます。 これらのメソッドを使用すると、アプリケーションで必要に応じて個々の `Insert`、`Update`、および `Delete` メソッドを呼び出すことによって、特定の SQL ステートメントおよびストアドプロシージャを実行できます (更新を実行するオーバーロードされた `Update` メソッドではなく、挿入、、および DELETE ステートメントはすべて1回の呼び出しで)。
+このチュートリアルでは、TableAdapter の DBDirect メソッドを使用してデータベースに対して SQL ステートメントを直接実行するための詳細な手順について説明します。 TableAdapter の DBDirect メソッドを使用すると、データベースの更新をきめ細かいレベルで制御できます。 これらのメソッドを使用すると、 `Insert` `Update` `Delete` ( `Update` UPDATE、INSERT、および DELETE ステートメントをすべて1回の呼び出しで実行するオーバーロードされたメソッドではなく) 個々の、、およびメソッドを呼び出すことによって、特定の SQL ステートメントおよびストアドプロシージャを実行できます。
 
  このチュートリアルでは、次の作業を行う方法について説明します。
 
-- 新しい**Windows アプリケーション**を作成します。
+- 新しい **Windows アプリケーション**を作成します。
 
 - [データソース構成ウィザード](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)を使用して、データセットを作成および構成します。
 
-- **[データ ソース]** ウィンドウから項目をドラッグしたときにフォーム上に作成されるコントロールを選択します。 詳細については、「[[データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
+- **[データ ソース]** ウィンドウから項目をドラッグしたときにフォーム上に作成されるコントロールを選択します。 詳細については、「[ [データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
 
 - **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド フォームを作成します。
 
 - データベースに直接アクセスして、挿入、更新、および削除を実行するメソッドを追加します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを完了するための要件は次のとおりです。
 
 - Northwind サンプル データベースにアクセスします。
@@ -53,11 +53,11 @@ ms.locfileid: "72655421"
 
 #### <a name="to-create-the-new-windows-project"></a>新しい Windows プロジェクトを作成するには
 
-1. Visual Studio の **[ファイル]** メニューで、新しい**プロジェクト**を作成します。
+1. Visual Studio の [ **ファイル** ] メニューで、新しい **プロジェクト**を作成します。
 
-2. プロジェクトに**TableAdapterDbDirectMethodsWalkthrough**という名前を指定します。
+2. プロジェクトに **TableAdapterDbDirectMethodsWalkthrough**という名前を指定します。
 
-3. **[Windows アプリケーション]** を選択し、[ **OK]** を選択します。 詳細については、「[クライアントアプリケーション](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)」を参照してください。
+3. [ **Windows アプリケーション**] を選択し、[ **OK]** を選択します。 詳細については、「 [クライアントアプリケーション](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)」を参照してください。
 
      **TableAdapterDbDirectMethodsWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
 
@@ -66,38 +66,38 @@ ms.locfileid: "72655421"
 
 #### <a name="to-create-the-data-source"></a>データ ソースを作成するには
 
-1. **[データ]** メニューの **[データソースの表示]** をクリックします。
+1. [ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
-2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして**データ ソース構成ウィザード**を起動します。
+2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード**を開始します。
 
-3. **[データソースの種類を選択]** 画面で、 **[データベース]** を選択し、 **[次へ]** を選択します。
+3. [ **データソースの種類を選択** ] 画面で、[ **データベース**] を選択し、[ **次へ**] を選択します。
 
-4. **[データ接続の選択]** 画面で、次のいずれかの操作を行います。
+4. [ **データ接続の選択** ] 画面で、次のいずれかの操作を行います。
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-         -または-
+         - または -
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、 **[次へ]** を選択します。
+5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ**] を選択します。
 
-6. **[アプリケーション構成ファイルへの接続文字列の保存]** 画面で、 **[次へ]** を選択します。
+6. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ**] を選択します。
 
-7. **[データベースオブジェクトの選択]** 画面で、 **[テーブル]** ノードを展開します。
+7. [ **データベースオブジェクトの選択** ] 画面で、[ **テーブル** ] ノードを展開します。
 
-8. @No__t_0 テーブルを選択し、 **[完了]** を選択します。
+8. テーブルを選択し、[ `Region` **完了**] を選択します。
 
-     プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Region` テーブルが表示されます。
+     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Region` テーブルが表示されます。
 
 ## <a name="addcontrols-to-the-form-to-display-the-data"></a>データを表示するためのフォームへの addcontrols
  **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Windows フォームにデータバインドコントロールを作成するには
 
-- **[データソース]** ウィンドウからフォームにメイン**領域**ノードをドラッグします。
+- [**データソース**] ウィンドウからフォームにメイン**領域**ノードをドラッグします。
 
-     レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 コンポーネントトレイに、 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、regiontableadapter、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> が表示されます。
+     レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、regiontableadapter、 <xref:System.Windows.Forms.BindingSource> 、およびが <xref:System.Windows.Forms.BindingNavigator> コンポーネントトレイに表示されます。
 
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>個々の TableAdapter DbDirect メソッドを呼び出すボタンを追加するには
 
@@ -105,15 +105,15 @@ ms.locfileid: "72655421"
 
 2. 各ボタンの **[名前]** および **[テキスト]** プロパティを設定します。
 
-    |名|テキスト|
+    |名前|テキスト|
     |----------|----------|
-    |`InsertButton`|**[挿入]**|
-    |`UpdateButton`|**更新**|
+    |`InsertButton`|**挿入**|
+    |`UpdateButton`|**アップデート**|
     |`DeleteButton`|**削除**|
 
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>データベースに新しいレコードを挿入するコードを追加するには
 
-1. **[Insertbutton]** を選択して、クリックイベントのイベントハンドラーを作成し、コードエディターでフォームを開きます。
+1. [ **Insertbutton** ] を選択して、クリックイベントのイベントハンドラーを作成し、コードエディターでフォームを開きます。
 
 2. `InsertButton_Click` イベント ハンドラーを次のコードで置き換えます。
 
@@ -131,7 +131,7 @@ ms.locfileid: "72655421"
 
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>データベースからレコードを削除するコードを追加するには
 
-1. **[Deletebutton]** を選択して、クリックイベントのイベントハンドラーを作成し、コードエディターでフォームを開きます。
+1. [ **Deletebutton** ] を選択して、クリックイベントのイベントハンドラーを作成し、コードエディターでフォームを開きます。
 
 2. `DeleteButton_Click` イベント ハンドラーを次のコードで置き換えます。
 
@@ -144,16 +144,16 @@ ms.locfileid: "72655421"
 
 - **F5 キーを押し**てアプリケーションを実行します。
 
-- **[挿入]** ボタンを選択し、新しいレコードがグリッドに表示されていることを確認します。
+- [ **挿入** ] ボタンを選択し、新しいレコードがグリッドに表示されていることを確認します。
 
-- **[更新]** ボタンを選択し、グリッドでレコードが更新されていることを確認します。
+- [ **更新** ] ボタンを選択し、グリッドでレコードが更新されていることを確認します。
 
-- **[削除]** ボタンを選択し、レコードがグリッドから削除されていることを確認します。
+- [ **削除** ] ボタンを選択し、レコードがグリッドから削除されていることを確認します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  アプリケーションの要件によっては、データバインドフォームの作成後に実行する必要があるいくつかの手順があります。 このチュートリアルで行うことができる拡張には次のものがあります。
 
-- フォームに検索機能を追加します。 詳細については、「[方法: Windows フォームアプリケーションにパラメーター化クエリを追加](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)する」を参照してください。
+- フォームに検索機能を追加します。 詳細については、「 [方法: Windows フォームアプリケーションにパラメーター化クエリを追加](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)する」を参照してください。
 
 - **[データ ソース]** ウィンドウの **[ウィザードで DataSet を構成]** を選択して、データセットにテーブルを追加します。 関連するコードをフォームにドラッグすることによって、関連するデータを表示するコントロールを追加できます。
 

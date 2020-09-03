@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655144"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
@@ -29,17 +29,17 @@ ms.locfileid: "72655144"
 
  メモリ不足の状態では、次の処理が行われます。
 
-- ビジュアルC#と Visual Basic の完全なソリューション分析が無効になっています。
+- Visual C# および Visual Basic の完全なソリューション分析は無効になっています。
 
-- ビジュアルC#および Visual Basic の[ガベージコレクション](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) の低待機時間モードは無効になっています。
+- Visual C# および Visual Basic の[ガベージコレクション](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) の低待機時間モードは無効になっています。
 
 - Visual Studio キャッシュがフラッシュされます。
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio のパフォーマンスの向上
- 大規模なソリューションやメモリ不足の状況に対処するときに Visual Studio のパフォーマンスを向上させる方法に関するヒントとテクニックについては、「[大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)」を参照してください。
+ 大規模なソリューションやメモリ不足の状況に対処するときに Visual Studio のパフォーマンスを向上させる方法に関するヒントとテクニックについては、「 [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)」を参照してください。
 
 ## <a name="full-solution-analysis-suspended"></a>完全なソリューション分析が中断されました
- 既定では、完全なソリューション分析は Visual Basic に対して有効C#になり、ビジュアルに対して無効になります。 ただし、メモリ不足の状態では、[オプション] ダイアログボックスの設定に関係なくC#、完全なソリューション分析が Visual Basic とビジュアルの両方で自動的に無効になります。 ただし、オプション ダイアログボックスの **完全なソリューション分析を有効にする** チェックボックスをオンにするか、Visual Studio を再起動して、情報バーに表示されたときに **再有効化** ボタンを選択することで、完全なソリューション分析を再び有効にすることができます。 [オプション] ダイアログボックスには、常に現在の完全なソリューション分析の設定が表示されます。 詳細については、「[方法: 完全なソリューション分析を有効または無効](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)にする」を参照してください。
+ 既定では、完全なソリューション分析は Visual Basic に対して有効になり、Visual C# では無効になります。 ただし、メモリ不足の状態では、[オプション] ダイアログボックスの設定に関係なく、完全なソリューション分析が Visual Basic と Visual C# の両方で自動的に無効になります。 ただし、[オプション] ダイアログボックスの [**完全なソリューション分析を有効にする**] チェックボックスをオンにするか、Visual Studio を再起動して、情報バーに表示されたときに [**再有効化**] ボタンを選択することで、完全なソリューション分析を再び有効にすることができます。 [オプション] ダイアログボックスには、常に現在の完全なソリューション分析の設定が表示されます。 詳細については、「 [方法: 完全なソリューション分析を有効または無効](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)にする」を参照してください。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低待機時間の無効化
  GC 低待機時間モードを再度有効にするには、Visual Studio を再起動します。  既定では、入力で GC 操作をブロックしないように入力すると、Visual Studio は GC 低待機時間モードを有効にします。 ただし、メモリ不足の状態が原因で、Visual Studio によって自動中断の警告が表示される場合、そのセッションの GC 低待機時間モードは無効になります。 Visual Studio を再起動すると、既定の GC 動作が再度有効になります。 詳細については、「<xref:System.Runtime.GCLatencyMode>」を参照してください。
@@ -50,14 +50,14 @@ ms.locfileid: "72655144"
 
 - [すべての参照の検索]
 
-- 移動
+- [移動]
 
 - Using の追加
 
 また、Visual Studio の内部操作に使用されるキャッシュもクリアされます。
 
 > [!NOTE]
-> 自動機能の中断の警告は、セッションごとではなく、ソリューションごとに1回だけ発生します。 つまり、Visual Basic からビジュアルC# (またはその逆) に切り替えて、別のメモリ不足の状態になった場合、別の自動機能中断警告が表示される可能性があります。
+> 自動機能の中断の警告は、セッションごとではなく、ソリューションごとに1回だけ発生します。 つまり、Visual Basic から Visual C# (またはその逆) に切り替えて、別のメモリ不足の状態になった場合、別の自動機能中断警告が表示される可能性があります。
 
 ## <a name="see-also"></a>関連項目
 

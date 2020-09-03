@@ -33,7 +33,7 @@ Visual Studio では、ユーザーはプロジェクトのソース コード�
 > [!WARNING]
 > 検証プロジェクトを作成したら、このトピックの最後にある [コード例](#example) をコピーし、各自のニーズに合わせて編集してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  「 [要件](../modeling/extend-layer-diagrams.md#prereqs)」を参照してください。
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>新しい VSIX でレイヤー検証コントロールを定義する
