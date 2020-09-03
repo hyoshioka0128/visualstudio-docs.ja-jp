@@ -1,5 +1,5 @@
 ---
-title: '方法: オブジェクト マネージャーにライブラリの登録 |Microsoft Docs'
+title: '方法: オブジェクトマネージャーを使用してライブラリを登録する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,30 +15,30 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162030"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>方法: オブジェクト マネージャーを使用したライブラリの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-などのシンボル参照ツール**クラス ビュー**、**オブジェクト ブラウザー**、**呼び出しブラウザー**と**シンボルの検索結果**、表示することを有効にします。シンボル、プロジェクトや外部コンポーネントです。 シンボルには、名前空間、クラス、インターフェイス、メソッド、およびその他の言語要素が含まれます。 ライブラリはこれらのシンボルを追跡し、それらを公開、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]オブジェクト マネージャー、データを使用して、ツールを設定します。  
+シンボルを参照することができます。たとえば、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** **シンボルの検索結果**などがあります。これにより、プロジェクトまたは外部コンポーネントでシンボルを表示できます。 シンボルには、名前空間、クラス、インターフェイス、メソッド、およびその他の言語要素が含まれます。 これらのシンボルは、ライブラリによって追跡され、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ツールにデータを設定するオブジェクトマネージャーに公開されます。  
   
- オブジェクト マネージャーは、使用可能なすべてのライブラリを追跡します。 各ライブラリは、シンボル参照ツールのシンボルを提供する前に、オブジェクト マネージャーを登録する必要があります。  
+ オブジェクトマネージャーは、使用可能なすべてのライブラリを追跡します。 各ライブラリは、シンボル参照ツールのシンボルを提供する前に、オブジェクトマネージャーに登録する必要があります。  
   
- 通常、VSPackage の読み込み時に、ライブラリを登録します。 ただし、その実行できます別の時点で、必要に応じて。 VSPackage がシャット ダウン時に、ライブラリが登録解除します。  
+ 通常は、VSPackage の読み込み時にライブラリを登録します。 ただし、必要に応じて、別のタイミングで行うことができます。 VSPackage がシャットダウンしたときにライブラリの登録を解除します。  
   
- ライブラリを登録するには、使用、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A>メソッド。 マネージ コードのライブラリを使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>メソッド。  
+ ライブラリを登録するには、メソッドを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> ます。 マネージコードライブラリの場合は、メソッドを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> ます。  
   
- ライブラリの登録を解除するには、使用、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>メソッド。  
+ ライブラリの登録を解除するには、メソッドを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> ます。  
   
- オブジェクト マネージャーへの参照を取得する<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>、渡す、<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>サービス ID を`GetService`メソッド。  
+ オブジェクトマネージャーへの参照を取得するには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> サービス ID をメソッドに渡し `GetService` ます。  
   
-## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>登録とオブジェクト マネージャーにライブラリを登録解除  
+## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>オブジェクトマネージャーを使用したライブラリの登録と登録解除  
   
-#### <a name="to-register-a-library-with-the-object-manager"></a>オブジェクト マネージャーにライブラリを登録するには  
+#### <a name="to-register-a-library-with-the-object-manager"></a>ライブラリをオブジェクトマネージャーに登録するには  
   
 1. ライブラリを作成します。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "68162030"
   
     ```  
   
-2. オブジェクトへの参照を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>を呼び出すし、入力、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>メソッド。  
+2. 型のオブジェクトへの参照を取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> し、メソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> ます。  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -111,9 +111,9 @@ ms.locfileid: "68162030"
   
     ```  
   
-#### <a name="to-unregister-a-library-with-the-object-manager"></a>オブジェクト マネージャーで、ライブラリの登録を解除するには  
+#### <a name="to-unregister-a-library-with-the-object-manager"></a>オブジェクトマネージャーを使用してライブラリの登録を解除するには  
   
-1. オブジェクトへの参照を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>を呼び出すし、入力、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>メソッド。  
+1. 型のオブジェクトへの参照を取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> し、メソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> ます。  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -166,7 +166,7 @@ ms.locfileid: "68162030"
   
     ```  
   
-## <a name="see-also"></a>関連項目  
- [従来の言語サービス拡張機能](../../extensibility/internals/legacy-language-service-extensibility.md)   
+## <a name="see-also"></a>参照  
+ [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

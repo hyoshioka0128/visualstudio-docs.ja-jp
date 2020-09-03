@@ -1,4 +1,4 @@
-﻿---
+---
 title: List Registers コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659500"
 ---
 # <a name="list-registers-command"></a>List Registers コマンド
@@ -36,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>スイッチ
- /Display [{`register`&#124; `registerGroup`}...]指定した `register` または `registerGroup` の値を表示します。 `register` も `registerGroup` も指定されていない場合は、レジスタの既定の一覧が表示されます。 スイッチが指定されていない場合、動作は同じです。 (例:
+ /Display [{ `register`&#124;`registerGroup` }...]指定したまたはの値を表示し `register` `registerGroup` ます。 `register` も `registerGroup` も指定されていない場合は、レジスタの既定の一覧が表示されます。 スイッチが指定されていない場合、動作は同じです。 次に例を示します。
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,11 +46,11 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List すべてのレジスタグループを一覧に表示します。
 
- /Watch [{`register`&#124; `registerGroup`}...]リストに1つ以上の `register` または `registerGroup` 値を追加します。
+ /Watch [{ `register`&#124;`registerGroup` }...]リストに1つ以上の `register` またはの `registerGroup` 値を追加します。
 
- /Unwatch [{`register`&#124; `registerGroup`}...]1つ以上の `register` または `registerGroup` 値を一覧から削除します。
+ /Unwatch [{ `register`&#124;`registerGroup` }...]リストから1つ以上の `register` またはの `registerGroup` 値を削除します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  エイリアス `r` を `Debug.ListRegisters` の代わりに使用できます。
 
 ## <a name="example"></a>例

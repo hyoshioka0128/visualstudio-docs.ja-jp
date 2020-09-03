@@ -11,20 +11,20 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162110"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-いずれかで表示されるテンプレートの説明を指定、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。  
+[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートの説明を指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<説明 >  
+ \<Description>  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,8 +45,8 @@ ms.locfileid: "68162110"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Package`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|  
-|`ID`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のリソース ID を指定します。|  
+|`Package`|高度なユーザーシナリオ用の省略可能な属性です。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|  
+|`ID`|高度なユーザーシナリオ用の省略可能な属性です。<br /><br /> Visual Studio のリソース ID を指定します。|  
   
 ### <a name="child-elements"></a>子要素  
  なし。  
@@ -62,8 +62,8 @@ ms.locfileid: "68162110"
   
  テキストは、テンプレートの説明を提供します。  
   
-## <a name="remarks"></a>Remarks  
- `Description` は `TemplateData` 要素に必須の子要素です。  
+## <a name="remarks"></a>注釈  
+ `Description` は、要素の必須の子要素です `TemplateData` 。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。  
@@ -92,6 +92,6 @@ ms.locfileid: "68162110"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

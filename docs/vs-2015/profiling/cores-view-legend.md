@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161308"
 ---
 # <a name="cores-view-legend"></a>コア ビューの凡例
@@ -38,5 +38,5 @@ ms.locfileid: "68161308"
 |合計コンテキスト スイッチ数|サンプリング期間中に特定のスレッドでのコンテキスト スイッチの合計回数。 スレッドのコンテキストが変わるたびに (たとえば、実行から同期に)、コンテキスト スイッチが 1 回カウントされます。|  
 |クロス コアのコンテキスト スイッチの割合|クロスコア コンテキスト スイッチの回数をコンテキスト スイッチの合計回数で割った割合として計算されます。 この割合が高いほど、この特定のスレッドのパフォーマンスに対するクロスコア コンテキスト スイッチのオーバーヘッドの全体的な影響が大きくなります。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コア ビュー](../profiling/cores-view.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545601"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別子は正しいプレフィックスを含んでいなければなりません
@@ -27,7 +27,7 @@ ms.locfileid: "85545601"
 
 Visual Studio の最新のドキュメントについては、「 [CA1715: identifier は正しいプレフィックスを持つ必要が](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix)あります」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
@@ -37,7 +37,7 @@ Visual Studio の最新のドキュメントについては、「 [CA1715: ident
 ## <a name="cause"></a>原因
  外部から参照できるインターフェイスの名前の先頭が大文字の ' I ' ではありません。
 
- \- または -
+ - または -
 
  外部から参照可能な型またはメソッドのジェネリック型パラメーターの名前の先頭が大文字の ' t ' ではありません。
 
