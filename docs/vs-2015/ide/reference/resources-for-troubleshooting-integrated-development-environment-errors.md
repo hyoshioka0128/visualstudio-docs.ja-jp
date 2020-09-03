@@ -95,10 +95,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 07a84648a24a709b47b60ee9e2a6e5d342777d77
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851649"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
@@ -114,5 +114,5 @@ ms.locfileid: "75851649"
 
  フォーラム、ブログ、チャットなどのリソースには、[マイクロソフト コミュニティ](https://techcommunity.microsoft.com/) Web サイトでアクセスできます。
 
-## <a name="product-support"></a>製品サポート
+## <a name="product-support"></a>製品のサポート
  他のリソースを参照しても問題が解決しない場合は、[Microsoft サポート](https://support.microsoft.com/) Web サイトにアクセスして、Microsoft サポート サービスに問い合わせることができます。 お住まいの地域で利用できる製品サポートについては、「[ご意見](../../ide/talk-to-us.md)」をご覧ください。

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769605"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 要素 (Visual Studio テンプレートウィザード拡張)
@@ -50,9 +50,9 @@ ms.locfileid: "85769605"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- このテキストは、インターフェイスを実装するクラスを指定し `IWizard` ます。 指定されたクラスは、 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)要素によって指定されたアセンブリ内に存在する必要があります。
+ このテキストは、インターフェイスを実装するクラスを指定し `IWizard` ます。 指定されたクラスは、 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 要素によって指定されたアセンブリ内に存在する必要があります。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  `FullClassName` は `WizardExtension` に必須の子要素です。
 
 ## <a name="example"></a>例

@@ -10,48 +10,54 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/18/2020
+  ms.locfileid: "74316437"
 landingContent:
-  - title: プロジェクトを開く、または作成する
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 新しいプロジェクトを作成する
-            url: create-new-project.md
-          - text: リポジトリからプロジェクトを開く
-            url: ../get-started/tutorial-open-project-from-repo.md
-      - linkListType: how-to-guide
-        links:
-          - text: プロジェクトまたはソリューションなしで Visual Studio を使用する
-            url: develop-code-in-visual-studio-without-projects-or-solutions.md
-  - title: 編集機能を使用する
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: コード エディターを使用する
-            url: writing-code-in-the-code-and-text-editor.md
-          - text: コード間の移動
-            url: navigating-code.md
-          - text: コードを生成し、修正する
-            url: code-generation-in-visual-studio.md
-          - text: コード補完に IntelliSense を使用する
-            url: using-intellisense.md
-          - text: コード スタイルの優先設定を管理する
-            url: code-styles-and-code-cleanup.md
-          - text: コード分析
-            url: ../code-quality/roslyn-analyzers-overview.md
-          - text: IntelliCode
-            url: /visualstudio/intellicode/intellicode-visual-studio
-  - title: プログラミング言語の概要
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: 'Visual Studio での C# および ASP.NET Core の概要'
-            url: tutorial-csharp-aspnet-core.md
-          - text: Visual Studio での C++ コンソール アプリの作成
-            url: /cpp/get-started/tutorial-console-cpp
-          - text: Visual Studio での Python の概要
-            url: quickstart-python.md
-          - text: Visual Basic でのコンソール アプリの作成
-            url: quickstart-visual-basic-console.md
-          - text: Node.js での Web アプリの作成
-            url: quickstart-nodejs.md
+- title: プロジェクトを開く、または作成する
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 新しいプロジェクトを作成する
+      url: create-new-project.md
+    - text: リポジトリからプロジェクトを開く
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: プロジェクトまたはソリューションなしで Visual Studio を使用する
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: 編集機能を使用する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: コード エディターを使用する
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: コード間の移動
+      url: navigating-code.md
+    - text: コードを生成し、修正する
+      url: code-generation-in-visual-studio.md
+    - text: コード補完に IntelliSense を使用する
+      url: using-intellisense.md
+    - text: コード スタイルの優先設定を管理する
+      url: code-styles-and-code-cleanup.md
+    - text: コード分析
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
+- title: プログラミング言語の概要
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio での C# および ASP.NET Core の概要
+      url: tutorial-csharp-aspnet-core.md
+    - text: Visual Studio での C++ コンソール アプリの作成
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Studio での Python の概要
+      url: quickstart-python.md
+    - text: Visual Basic でのコンソール アプリの作成
+      url: quickstart-visual-basic-console.md
+    - text: Node.js での Web アプリの作成
+      url: quickstart-nodejs.md

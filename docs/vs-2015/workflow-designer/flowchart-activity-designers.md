@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dc13bb3c27507070d829ce9a9600de983e273f43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656678"
 ---
 # <a name="flowchart-activity-designers"></a>フローチャート アクティビティ デザイナー
-[!INCLUDE[wfd1](../includes/wfd1-md.md)]には、システムによって提供されるさまざまなアクティビティが用意されており、これらを、ワークフローの構築時に使用できます。 このセクションでは、ワークフロー内のフローチャートの管理を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] には、ワークフローを構築するときに使用できるシステム指定のアクティビティが多数含まれています。 このセクションでは、ワークフロー内のフローチャートの管理を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- **複雑なフロー制御を定義および管理するワークフローを作成するために使用される**[フローチャート](../workflow-designer/flowchart-activity-designer.md)。  [Flowdecision](../workflow-designer/flowdecision-activity-designer.md)指定された条件が満たされているかどうかに基づいて、制御フローの分岐を2つの代替手段のいずれかに提供します。
+ **複雑なフロー制御を定義および管理するワークフローを作成するために使用される**[フローチャート](../workflow-designer/flowchart-activity-designer.md)。  [Flowdecision](../workflow-designer/flowdecision-activity-designer.md) 指定された条件が満たされているかどうかに基づいて、制御フローの分岐を2つの代替手段のいずれかに提供します。
 
- [FlowSwitch \<T >](../workflow-designer/flowswitch-t-activity-designer.md)2つ以上の代替分岐が必要な場合に、一致条件に基づいて制御フローの分岐を提供します。
+ [FlowSwitch \<T> ](../workflow-designer/flowswitch-t-activity-designer.md)2つ以上の代替分岐が必要な場合に、一致条件に基づいて制御フローの分岐を提供します。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>関連項目
  <xref:System.Activities.Activity>
 
  <xref:System.Activities.Statements.Flowchart>
@@ -40,11 +40,11 @@ ms.locfileid: "72656678"
 
  [アクティビティ デザイナーの使用](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 
  [トランザクション](../workflow-designer/transaction-activity-designers.md)
 

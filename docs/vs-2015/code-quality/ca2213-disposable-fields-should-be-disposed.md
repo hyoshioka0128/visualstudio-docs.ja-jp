@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534577"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213:破棄可能なフィールドは破棄されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
@@ -50,9 +50,9 @@ ms.locfileid: "85534577"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>例
- 次の例では、フィールド `TypeB` `aFieldOfADisposableType` に対してを呼び出さずに (前の説明の) フィールドを破棄可能 `F` な型 () として宣言することによって、この規則に違反する型を示して `TypeA` い <xref:System.IDisposable.Dispose%2A> ます。 `TypeB`前の説明のに対応 `T` します。
+ 次の例では、フィールド `TypeB` `aFieldOfADisposableType` に対してを呼び出さずに (前の説明の) フィールドを破棄可能 `F` な型 () として宣言することによって、この規則に違反する型を示して `TypeA` い <xref:System.IDisposable.Dispose%2A> ます。 `TypeB` 前の説明のに対応 `T` します。
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.IDisposable?displayProperty=fullName> [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

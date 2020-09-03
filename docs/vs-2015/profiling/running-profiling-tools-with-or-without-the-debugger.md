@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fb07e9bc6c308e27e3ad054c5aeb0b12c092054
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534005"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
@@ -49,7 +49,7 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
     セッションの実行中に、イベント、プロセスのメモリおよび CPU 使用率に関する情報を確認できます。  
   
-    次の図は、Visual Studio 2015 Update 1 の [**診断ツール**] ウィンドウを示しています。  
+    次の図は、Visual Studio 2015 Update 1 の [ **診断ツール** ] ウィンドウを示しています。  
   
     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -74,7 +74,7 @@ Visual Studio ではパフォーマンス ツールを選ぶことができま�
   
 1. Visual Studio でプロジェクトを開きます。  
   
-2. [**デバッグ**] メニューの [**パフォーマンスプロファイラー...** ] をクリックします (ショートカットキー: Alt + F2)。  
+2. [ **デバッグ** ] メニューの [ **パフォーマンスプロファイラー...** ] をクリックします (ショートカットキー: Alt + F2)。  
   
 3. 診断の起動ページで、セッションで実行する 1 つ以上のツールを選択します。 プロジェクトの種類、オペレーティング システム、およびプログラミング言語に適用されるツールのみが表示されます。 ある診断ツールを選択すると、同じ診断セッションで実行できないツールの選択肢が無効になります。 C# Windows ユニバーサル アプリでの選択例を次に示します。  
   
