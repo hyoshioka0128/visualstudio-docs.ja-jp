@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : 項目テンプレートを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668073"
 ---
 # <a name="how-to-create-item-templates"></a>方法 : 項目テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックの[最初の手順](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)では、**テンプレートのエクスポート** ウィザードを使って項目テンプレートを作成する方法を示します。 テンプレートを複数のファイルで構成する場合は、「[方法 : 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」をご覧ください。
+このトピックの[最初の手順](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)では、**テンプレートのエクスポート** ウィザードを使って項目テンプレートを作成する方法を示します。 テンプレートが複数のファイルで構成される場合は、「 [方法: 複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」を参照してください。
 
  ウィザードはさまざまな作業を実行して基本テンプレートを作成しますが、多くの場合、テンプレートをエクスポートした後で .vstemplate ファイルを手動で変更する必要があります。 たとえば、[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ プロジェクトの **[新しい項目の追加]** ダイアログに項目を表示する場合、追加の手順をいくつか実行する必要があります。 このトピックの [2 つ目の手順](#to-enable-the-item-template-to-be-used-in-a-store-project)では、このタスクの実行方法を説明します。
 
@@ -38,22 +38,22 @@ ms.locfileid: "72668073"
 
 2. 項目をプロジェクトに追加し、必要に応じて変更します。
 
-3. コード ファイルを変更して、パラメーター置換を行う場所を示します。 詳しくは、「[方法 : テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」をご覧ください。
+3. コード ファイルを変更して、パラメーター置換を行う場所を示します。 詳細については、「 [方法: テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
 
 4. **[ファイル]** メニューの **[テンプレートのエクスポート]** をクリックします。
 
-5. **[項目テンプレート]** をクリックし、項目を含むプロジェクトを選んで、 **[次へ]** をクリックします。
+5. **[項目テンプレート]** をクリックし、項目を含むプロジェクトを選んで、**[次へ]** をクリックします。
 
-6. テンプレートを作成する項目を選び、 **[次へ]** をクリックします。
+6. テンプレートを作成する項目を選び、**[次へ]** をクリックします。
 
-7. テンプレートに含めるアセンブリ参照を選び、 **[次へ]** をクリックします。
+7. テンプレートに含めるアセンブリ参照を選び、**[次へ]** をクリックします。
 
-8. アイコン ファイル名、プレビュー イメージ、テンプレート名、およびテンプレートの説明を入力し、 **[完了]** をクリックします。
+8. アイコン ファイル名、プレビュー イメージ、テンプレート名、およびテンプレートの説明を入力し、**[完了]** をクリックします。
 
-     テンプレートのファイルは .zip ファイルに追加され、ダイアログで指定した任意のディレクトリにコピーされます。 規定の場所は、 **..\Users\\<ユーザー名\>\Documents\Visual Studio \<バージョン>\My Exported Templates\\** フォルダーです。
+     テンプレートのファイルは .zip ファイルに追加され、ダイアログで指定した任意のディレクトリにコピーされます。 既定の場所は **. です。\ ユーザー \\<username \> \Documents\Visual Studio \<Version> \My のエクスポート \\ **されたテンプレートフォルダー。
 
     > [!WARNING]
-    > 旧バージョンの Visual Studio での規定の場所は、 **..\Users\\<ユーザー名\>\Documents\Visual Studio \<バージョン>\Templates\ItemTemplates** です。
+    > 以前のバージョンの Visual Studio では、既定の場所は **. です。\ ユーザー \\<username \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**。
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>ストア プロジェクトで項目テンプレートを使用できるようにするには
 
@@ -67,7 +67,7 @@ ms.locfileid: "72668073"
 
     Windows 8.1 ストア用の C++ プロジェクトでは、値として `WinRT-Native-6.3` を使用します。 Windows 10 およびその他の種類のプロジェクトの場合については、「[TemplateGroupID 要素 (Visual Studio テンプレート)](../extensibility/templategroupid-element-visual-studio-templates.md)」をご覧ください。
 
-    次の例は、XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` が追加された後の .vstemplate ファイルの内容全体を示しています。 この例は、C# プロジェクトに固有です。 @No__t_0ProjectType > と \< [Templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)> 要素を変更して、他の言語およびプロジェクトの種類を指定することができます。
+    次の例は、XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` が追加された後の .vstemplate ファイルの内容全体を示しています。 この例は、C# プロジェクトに固有です。 要素と要素を変更して、 \<ProjectType> \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 他の言語およびプロジェクトの種類を指定することができます。
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -96,7 +96,7 @@ ms.locfileid: "72668073"
 
     **[ファイルのコピー]** ダイアログ ボックスが表示されたら、 **[コピーして置き換える]** をクリックします。
 
-   これで、 **[新しい項目の追加]** ダイアログ ボックスを使って、このテンプレートに基づく項目を [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] プロジェクトに追加できます。
+   これで、**[新しい項目の追加]** ダイアログ ボックスを使って、このテンプレートに基づく項目を [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] プロジェクトに追加できます。
 
    パラメーター名の詳細については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669737"
 ---
 # <a name="domain-path-syntax"></a>ドメイン パス構文
@@ -27,13 +27,13 @@ DSL 定義は XPath に似た構文を使用して、モデル内の特定の要
 
  ドメイン パスは次のような形式になります。
 
- *RelationshipName果たす*
+ *RelationshipName.PropertyName/!Role*
 
- ![コメント参照サブジェクトの参照リレーションシップ](../modeling/media/dsl-reference.png "dsl_reference")
+ ![CommentReferencesSubjects 参照リレーションシップ](../modeling/media/dsl-reference.png "dsl_reference")
 
- 構文はモデルのツリーを走査します。 たとえば、上の図のように、ドメインリレーションシップに関する**コメント**を示すトピックには、**サブジェクト**ロールがあります。 パスセグメント **/!Subjectt**は、**サブジェクト**ロールを介してアクセスされる要素でパスが終了することを指定します。
+ 構文はモデルのツリーを走査します。 たとえば、上の図のように、ドメインリレーションシップに関する **コメント** を示すトピックには、 **サブジェクト** ロールがあります。 パスセグメント **/!Subjectt** は、 **サブジェクト** ロールを介してアクセスされる要素でパスが終了することを指定します。
 
- 各セグメントの先頭はドメイン リレーションシップの名前になっています。 要素からリレーションシップへの走査の場合、パスセグメントは*relationship. PropertyName*として表示されます。 ホップが要素へのリンクからのものである場合、パスセグメントは Relationship/! として表示されます *。RoleName*。
+ 各セグメントの先頭はドメイン リレーションシップの名前になっています。 要素からリレーションシップへの走査の場合、パスセグメントは *relationship. PropertyName*として表示されます。 ホップが要素へのリンクからのものである場合、パスセグメントは Relationship/! として表示されます *。RoleName*。
 
  スラッシュはパスの構文を区切ります。 各パス セグメントは要素からリンク (リレーションシップのインスタンス) へのホップか、リンクから要素へのホップのどちらかです。 パス セグメントは多くの場合、ペアで表示されます。 1 つのパス セグメントは要素からリンクへのホップを表し、次のセグメントはリンクから他端の要素へのホップを表します。 (どのリンクもリレーションシップ自体のソースまたはターゲットになりえます)。
 

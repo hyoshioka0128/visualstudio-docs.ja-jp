@@ -1,4 +1,4 @@
-﻿---
+---
 title: 64 ビット サポート | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667115"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE の 64 ビット サポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] での 64 ビット プラットフォームのサポートについて詳しくは、「[64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 での64ビットプラットフォームのサポートの詳細につい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ては、「 [64 ビットアプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。
 
 ## <a name="deploying-a-64-bit-application"></a>64 ビット アプリケーションの配置
  次のトピックでは、64 ビット アプリケーションの配置について説明しています。
@@ -35,7 +35,7 @@ ms.locfileid: "72667115"
 ## <a name="configuring-projects-as-64-bit-applications"></a>プロジェクトを 64 ビット アプリケーションとして構成
  次のトピックでは、64 ビット アプリケーションにビルドするプロジェクトの構成について説明しています。
 
-- [方法 : プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
+- [方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>64 ビット アプリケーションのデバッグ
  [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] を 64 ビット Windows オペレーティング システムで実行している場合、エディット コンティニュは機能しません。 次のトピックでは、64 ビット アプリケーションのデバッグについて説明しています。
@@ -46,5 +46,5 @@ ms.locfileid: "72667115"
 
 - [ダンプ ファイルの使用](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>関連項目
- [方法 : プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
+## <a name="see-also"></a>参照
+ [方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669462"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML エディターの IntelliSense 機能
@@ -22,7 +22,7 @@ ms.locfileid: "72669462"
 XML エディターでは、Visual Studio で提供されている他の言語のエディターに相当する、フル機能の IntelliSense を利用できます。 このセクションでは、XML スキーマ定義言語 (XSD) ドキュメントと XSLT ドキュメントで IntelliSense を使用する方法について説明します。
 
 ## <a name="intellisense-in-an-xsd-document"></a>XSD ドキュメントでの IntelliSense
- ドキュメントにスキーマが関連付けられると、XML エディター ツールバーの **オブジェクトメンバーリストを表示** ボタンを `"<"` またはクリックするたびに、期待される要素のドロップダウンリストが表示されます。 スキーマを XML ドキュメントに関連付ける方法の詳細については、「 [Xml ドキュメントの検証](../xml-tools/xml-document-validation.md)」を参照してください。
+ ドキュメントにスキーマを関連付けた後は、「`"<"`」と入力するか、XML エディターのツール バーの **[オブジェクトのメンバー一覧を表示します]** ボタンをクリックすれば、予測される要素のドロップダウン リストをいつでも表示できます。 スキーマを XML ドキュメントに関連付ける方法の詳細については、「 [Xml ドキュメントの検証](../xml-tools/xml-document-validation.md)」を参照してください。
 
  開始タグの内部で「SPACE」と入力しても、現在の要素に追加できる属性をすべて示したドロップダウン リストを表示できます。
 
@@ -45,14 +45,14 @@ XML エディターでは、Visual Studio で提供されている他の言語�
 
 - 特定の名前付きテンプレートのパラメーター名。
 
-  詳細については、「[チュートリアル: XSLT IntelliSense の使用](../xml-tools/walkthrough-using-xslt-intellisense.md)」を参照してください。
+  詳細については、「[チュートリアル:XSLT IntelliSense の使用](../xml-tools/walkthrough-using-xslt-intellisense.md)」トピックを参照してください。
 
 ## <a name="auto-completion"></a>オートコンプリート
  XML エディターでは、必要な XML 構文が自動的に入力されるため、XML の編集も容易になっています。 たとえば、次の開始タグを入力します。
 
  `<book>`
 
- XML エディターにより終了タグが入力され、カーソルが開始タグの後に置かれます。 この例を次に示します ("&#124;" カーソル位置に注意してください)。
+ XML エディターにより終了タグが入力され、カーソルが開始タグの後に置かれます。 この動作の例を次に示します ("&#124;" はカーソルの位置を示します)。
 
  `<book>`&#124;`</book>`
 
@@ -85,9 +85,9 @@ XML エディターでは、Visual Studio で提供されている他の言語�
 
  XML エディターは、この動作を次の項目に対して行います。
 
-- 対応する開始タグと終了タグ
+- 照合の開始タグと終了タグ。
 
-- "@No__t_0" または ">" 山かっこのペア。
+- ペアの "\<" or ">" の山かっこ。
 
 - コメントの開始と終了
 
@@ -104,7 +104,7 @@ XML エディターでは、Visual Studio で提供されている他の言語�
 
  **[その他]** ページの **[自動挿入]** セクションでは、次の動作を制御します。
 
-|名|説明|
+|名前|説明|
 |----------|-----------------|
 |終了タグ|新しい要素の終了タグを挿入します。|
 |属性値の引用符|新しい属性の名前を入力するときに属性値の引用符を挿入します。|
@@ -114,9 +114,9 @@ XML エディターでは、Visual Studio で提供されている他の言語�
 
 1. **[ツール]** メニューの **[オプション]** を選択します。
 
-2. **[テキストエディター]** 、 **[XML]** の順に展開し、 **[その他]** を選択します。
+2. **[テキスト エディター]** を展開し、 **[XML]** を展開します。次に、 **[その他]** を選択します。
 
-3. **[自動挿入]** セクションに変更を加え、 **[OK]** をクリックします。
+3. **[自動挿入]** セクションに必要な変更を加え、 **[OK]** をクリックします。
 
 ## <a name="see-also"></a>参照
  [Intellisense を使用し](../ide/using-intellisense.md)た[XML エディター](../xml-tools/xml-editor.md) [チュートリアル: XSLT IntelliSense の使用](../xml-tools/walkthrough-using-xslt-intellisense.md)
