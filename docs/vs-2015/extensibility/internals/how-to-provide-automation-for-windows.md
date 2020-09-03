@@ -1,5 +1,5 @@
 ---
-title: '方法: Windows のオートメーションの提供 |Microsoft Docs'
+title: '方法: Windows の自動化を提供する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ea7b79df4e7f3748ec2bc7f5e57c6ecb7dfca5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191849"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>方法: Windows 向けのオートメーションの提供
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ドキュメントとツール ウィンドウのための自動化を行うことができます。 オートメーション オブジェクトをウィンドウで使用できるようにして、環境が存在しないときに、オートメーションが勧めを提供するタスクの一覧は、既製のオートメーション オブジェクトを提供します。  
+ドキュメントとツールウィンドウの自動化を提供できます。 オートメーションオブジェクトをウィンドウで使用できるようにする場合は常にオートメーションを提供することをお勧めします。また、作業リストの場合と同様に、事前に作成されたオートメーションオブジェクトが環境に用意されていません。  
   
-## <a name="automation-for-tool-windows"></a>ツールの Windows のオートメーション  
- 環境の標準を返すことでツール ウィンドウでオートメーションを提供します<xref:EnvDTE.Window>次の手順で説明したようにオブジェクトします。  
+## <a name="automation-for-tool-windows"></a>ツールウィンドウの自動化  
+ 環境では、次の手順で説明するように標準のオブジェクトを返すことによって、ツールウィンドウの自動化を提供し <xref:EnvDTE.Window> ます。  
   
-#### <a name="to-provide-automation-for-tool-windows"></a>自動化ツール windows 用に提供するには  
+#### <a name="to-provide-automation-for-tool-windows"></a>ツールウィンドウの自動化を提供するには  
   
-1. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>で環境を使用してメソッド<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>として`VSFPROPID`を取得するパラメーター、`Window`オブジェクト。  
+1. オブジェクトを <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 取得するには、as パラメーターを指定して環境でメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> `VSFPROPID` `Window` ます。  
   
-2. 呼び出し元が、ツール ウィンドウの VSPackage に固有のオートメーション オブジェクトを要求したとき<xref:EnvDTE.Window.Object%2A>、環境は`QueryInterface`の`IExtensibleObject`、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>、または`IDispatch`インターフェイス。 両方`IExtensibleObject`と`IVsExtensibleObject`提供、<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A>メソッド。  
+2. 呼び出し元がを通じて、ツールウィンドウの VSPackage 固有のオートメーションオブジェクトを要求すると、 <xref:EnvDTE.Window.Object%2A> 環境は `QueryInterface` `IExtensibleObject` 、、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject> またはインターフェイスを呼び出し `IDispatch` ます。 `IExtensibleObject`と `IVsExtensibleObject` の両方がメソッドを提供し <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A> ます。  
   
-3. 環境を呼び出すと、`GetAutomationObject`メソッド`NULL`、バックアップ、VSPackage に固有のオブジェクトを渡すことによって応答します。  
+3. その後、環境がメソッドを渡すときに `GetAutomationObject` `NULL` 、VSPackage 固有のオブジェクトを返すことによって応答します。  
   
-4. 呼び出す場合`QueryInterface`の`IExtensibleObject`と`IVsExtensibleObject`環境を呼び出しますが、失敗した`QueryInterface`の`IDispatch`します。  
+4. `QueryInterface`との呼び出し `IExtensibleObject` が失敗した場合 `IVsExtensibleObject` 、環境は `QueryInterface` を呼び出し `IDispatch` ます。  
   
-## <a name="automation-for-document-windows"></a>Windows のドキュメントのための自動化  
- 標準的な<xref:EnvDTE.Document>オブジェクトは、エディターは、独自の実装を持つことができますが、環境からも、`T:EnvDTE.Document`実装することによってオブジェクト`IExtensibleObject`インターフェイスに応答して`GetAutomationObject`します。  
+## <a name="automation-for-document-windows"></a>ドキュメントウィンドウの自動化  
+ 標準 <xref:EnvDTE.Document> オブジェクトは環境からも使用できますが、 `T:EnvDTE.Document` インターフェイスを実装してに応答することによって、エディターはオブジェクトの独自の実装を持つことができ `IExtensibleObject` `GetAutomationObject` ます。  
   
- さらに、エディターを使用して取得、VSPackage に固有のオートメーション オブジェクトを提供できます、<xref:EnvDTE.Document.Object%2A>メソッドを実装することによって、`IVsExtensibleObject`または`IExtensibleObject`インターフェイス。 [VSSDK のサンプル](../../misc/vssdk-samples.md)RTF ドキュメントに固有のオートメーション オブジェクトを提供します。  
+ また、エディターは、 <xref:EnvDTE.Document.Object%2A> インターフェイスまたはインターフェイスを実装することによって、メソッドを通じて取得される VSPackage 固有のオートメーションオブジェクトを提供でき `IVsExtensibleObject` `IExtensibleObject` ます。 [Vssdk サンプル](../../misc/vssdk-samples.md)は、RTF ドキュメント固有のオートメーションオブジェクトを提供します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

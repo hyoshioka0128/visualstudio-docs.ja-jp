@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233275"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity アプリを使用したアプリケーション ライフサイクル管理 (ALM)
@@ -41,7 +41,7 @@ ms.locfileid: "80233275"
 ## <a name="modeling"></a>モデリング  
  参照リンク: **[アーキテクチャの分析およびモデリング](../modeling/analyze-and-model-your-architecture.md)**  
   
- 一般的なコメント: これらのデザイン機能は、コーディング言語に関係がないか、C# などの .NET 言語と共に使用されますが、オブジェクト階層およびクラスのリレーションシップを含む従来のアプリケーションのパラダイムで動作します。 Unity 内でのゲームの設計には、さまざまなパラダイムが含まれ、たとえばグラフィカル オブジェクト、サウンド、シェーダー、スクリプトなどのリレーションシップがあります。 このため、Visual Studio モデリング ダイアグラム ツールが、Unity プロジェクト全体に特に関連するわけではありません。 C# スクリプト内でのリレーションシップを管理するために使用することもできますが、それは全体の中の一部にすぎません。  
+ 一般的なコメント:これらのデザイン機能は、コーディング言語に関係がないか、C# などの .NET 言語と共に使用されますが、オブジェクト階層およびクラスのリレーションシップを含む従来のアプリケーションのパラダイムで動作します。 Unity 内でのゲームの設計には、さまざまなパラダイムが含まれ、たとえばグラフィカル オブジェクト、サウンド、シェーダー、スクリプトなどのリレーションシップがあります。 このため、Visual Studio モデリング ダイアグラム ツールが、Unity プロジェクト全体に特に関連するわけではありません。 C# スクリプト内でのリレーションシップを管理するために使用することもできますが、それは全体の中の一部にすぎません。  
   
 |機能|Unity でサポートされているかどうか|その他のコメント|  
 |-------------|--------------------------|-------------------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "80233275"
   
 3. テクスチャやオーディオ ファイルなど、Unity プロジェクトでのバイナリの資産が、大量のストレージを消費することがあります。 Git などのさまざまなソース管理システムは、変更がファイルのごく一部のみに影響する場合でも、すべての変更個所のファイルの一意のコピーを格納します。 これにより、Git リポジトリがいっぱいになる可能性があります。 これに対処するために、Unity 開発者は多くの場合、リポジトリに最終資産のみを追加し、OneDrive、DropBox、git の添付など、資産の作業履歴を保持するために様々な手段を使用しています。 通常このような資産は、ソース コードの変更に伴うバージョン管理を必要としないため、このアプローチが有効です。 また、開発者は、プロジェクト エディターの資産のシリアル化モードを、シーンファイルをバイナリ形式ではなくテキストで保存するためにテキストを強制するよう設定し、これによりソース管理でのマージが可能になります。 詳細については、「[Editor Settings](https://docs.unity3d.com/Manual/class-EditorManager.html)」 (エディターの設定) (Unity ドキュメント) を参照してください。  
   
-## <a name="build"></a>Build  
+## <a name="build"></a>ビルド  
  参照リンク: **[ビルド](/azure/devops/pipelines/index)**  
   
 |機能|Unity でサポートされているかどうか|その他のコメント|  
@@ -91,12 +91,12 @@ ms.locfileid: "80233275"
 |テストの計画、テスト ケースの作成、およびテスト スイートの編成|はい||  
 |手動テスト|はい||  
 |テスト マネージャー (テストの記録と再生)|Windows デバイスと Android エミュレーターのみ||  
-|コード カバレッジ|300|単体テストとしての該当なしは、Unity と Visual Studio で発生します。以下を参照してください。|  
-|[コードの単体テスト](../test/unit-test-your-code.md)|Unity 内。Visual Studio 内ではありません。|Unity は、独自の単体テスト フレームワークを [Unity テスト ツール](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store) の一部として提供しています。 単体テストの結果は、Unity 内でレポートされ、Visual Studio 内では表示されません。|  
+|コード カバレッジ|N/A|単体テストとしての該当なしは、Unity と Visual Studio で発生します。以下を参照してください。|  
+|[コードの単体テスト](../test/unit-test-your-code.md)|Unity 内。Visual Studio 内ではありません。|Unity では、unity [テストツール](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store) の一部として独自の単体テストフレームワークが提供されています。 単体テストの結果は、Unity 内でレポートされ、Visual Studio 内では表示されません。|  
 |[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)|いいえ|コード化された UI テストは、アプリの UI で読み取り可能なコントロールに依存します。Unity アプリケーションは本質的にはグラフィカルであるため、コンテンツはコード化された UI テストのツールで読み取ることはありません。|  
   
 ## <a name="improve-code-quality"></a>コード品質の向上  
- 参照リンク: **[コードの品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ 参照リンク: **[コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |機能|Unity でサポートされているかどうか|その他のコメント|  
 |-------------|--------------------------|-------------------------|  
@@ -104,7 +104,7 @@ ms.locfileid: "80233275"
 |[コード クローン検出を使用した重複コードの検出](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|  
 |[マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|はい|Visual Studio 内の C# スクリプト コードを分析できます。|  
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity Web サイト)。|  
-|[.Net Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|  
+|[.NET Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、(Unity で使用するような) プロファイリング用の Mono フレームワークへのフックはありません。 [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) の使用 (Unity ドキュメント)。|  
   
 ## <a name="release-management"></a>リリース管理  
  参照リンク: **[リリース管理による配置の自動化](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
