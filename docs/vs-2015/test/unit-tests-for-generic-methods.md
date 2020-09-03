@@ -12,10 +12,10 @@ caps.latest.revision: 49
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2619e975dbfd22d96db2cc382a7cebbf04a05223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657278"
 ---
 # <a name="unit-tests-for-generic-methods"></a>ジェネリック メソッドの単体テスト
@@ -26,14 +26,14 @@ ms.locfileid: "72657278"
 ## <a name="type-arguments-and-type-constraints"></a>型引数と型制約
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で、`MyList<T>` など、ジェネリック クラスの単体テストが生成されると、ジェネリック ヘルパー メソッドとテスト メソッドの 2 つのメソッドが生成されます。 `MyList<T>` に 1 つ以上の型制約がある場合、型引数はすべての型制約を満たす必要があります。 テスト対象のジェネリック コードが許容されたすべての入力に対して予想どおりに動作することを確認するには、テスト メソッドで、テストするすべての制約を指定して、ジェネリック ヘルパー メソッドを呼び出します。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
  ジェネリックの単体テストの例を次に示します。
 
-- [生成されたテスト コードの編集](#EditingGeneratedTestCode)。 この例には、「生成後のテスト コード」と「編集後のテスト コード」という 2 つのセクションがあります。 ここでは、ジェネリック メソッドから生成される未加工のテスト コードを編集して有用なテスト メソッドにする方法を示します。
+- [生成されたテストコードを編集](#EditingGeneratedTestCode)しています。 この例には、「生成後のテスト コード」と「編集後のテスト コード」という 2 つのセクションがあります。 ここでは、ジェネリック メソッドから生成される未加工のテスト コードを編集して有用なテスト メソッドにする方法を示します。
 
-- [型制約の使用](#TypeConstraintNotSatisfied)。 この例では、型制約を使用するジェネリック メソッドの単体テストを示します。 この例では、型制約が満たされていません。
+- [型制約を使用](#TypeConstraintNotSatisfied)します。 この例では、型制約を使用するジェネリック メソッドの単体テストを示します。 この例では、型制約が満たされていません。
 
-### <a name="EditingGeneratedTestCode"></a> 例 1: 生成されたテスト コードの編集
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> 例 1: 生成されたテストコードの編集
  このセクションのテスト コードでは、`SizeOfLinkedList()` という名前のテスト対象コードのメソッドをテストします。 このメソッドは、リンク リスト内のノード数を示す整数を返します。
 
  「生成後のテスト コード」にある最初のコード例では、Visual Studio Enterprise で生成された編集前のテスト コードを示しています。 「編集後のテスト コード」にある 2 番目のコード例では、2 つのデータ型 `int` と `char` に対して SizeOfLinkedList メソッドの機能をテストする方法を示しています。
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「[方法 : ASP.NET ソリューションでのテスト中にデバッグする](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)」を参照してください。
+> SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「 [方法: ASP.NET ソリューションでのテストの実行中にデバッグ](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)する」を参照してください。
 
-### <a name="TypeConstraintNotSatisfied"></a> 例 2: 型制約の使用
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> 例 2: 型制約の使用
  この例では、満たされていない型制約を使用するジェネリック メソッドの単体テストを示します。 最初のセクションでは、テスト対象コード プロジェクトのコードを示します。 型制約が強調表示されています。
 
  2 番目のセクションでは、テスト プロジェクトのコードを示します。

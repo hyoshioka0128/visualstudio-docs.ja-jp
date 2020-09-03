@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce5b21f92eecf2e8929c142bc1ee32e20d386335
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299256"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>プログラムの実行中にデバッガーの外部で発生するアクセス違反をデバッグするには
@@ -33,11 +33,11 @@ ms.locfileid: "74299256"
 問題の説明  
  プログラムが Visual Studio 環境では正しく動作するのに、Windows オペレーティング システムでスタンドアロンで実行するとアクセス違反が発生します。 どのようにデバッグしたらいいのでしょうか。  
   
-## <a name="solution"></a>解決策:  
+## <a name="solution"></a>ソリューション  
  [[Just-In-Time デバッグ]](../debugger/just-in-time-debugging-in-visual-studio.md) オプションを設定し、アクセス違反が発生するまでプログラムをスタンドアロンで実行します。 その後、 **[アクセス違反です]** ダイアログ ボックスが表示されたら、 **[キャンセル]** をクリックしてデバッガーを起動します。  
   
- サポート技術情報の文書「How to Locate Where a General Protection (GP) Fault Occurs (Q133174)」も参照してください。 サポート技術情報の記事については、MSDN ライブラリ CD を参照するか、 [http://support.microsoft.com/](https://support.microsoft.com/)を検索してください。  
+ サポート技術情報の文書「How to Locate Where a General Protection (GP) Fault Occurs (Q133174)」も参照してください。 サポート技術情報の記事については、MSDN ライブラリ CD または「」を参照 [http://support.microsoft.com/](https://support.microsoft.com/) してください。  
   
-## <a name="see-also"></a>関連項目  
- [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>参照  
+ [ネイティブコードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

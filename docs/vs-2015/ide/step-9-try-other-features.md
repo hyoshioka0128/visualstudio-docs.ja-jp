@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 379fc9c28b8d36f7bd606719a443b16108f0095d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299980"
 ---
 # <a name="step-9-try-other-features"></a>手順 9: その他の機能を試す
@@ -38,7 +38,7 @@ ms.locfileid: "74299980"
     > [!TIP]
     > サウンドを再生するには、System.Media 名前空間を使用できます。 詳細については、「[Windows フォーム アプリでサウンドを再生する (C# .NET)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be)」または「[Visual Basic でオーディオを再生する](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be)」を参照してください。
 
-- ボードを拡大して、ゲームをより難しくします
+- ボードを拡大して、ゲームをより難しくします 
 
     > [!TIP]
     > TableLayoutPanel に行や列を追加する以上のことを行う必要があります。作成するアイコンの数を検討する必要もあります。
@@ -49,6 +49,6 @@ ms.locfileid: "74299980"
 
 - プログラミングに行き詰まった場合や疑問がある場合は、MSDN フォーラムのいずれかに質問を投稿してみてください。 [Visual Basic フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home)、および [Visual C# フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home)を参照してください。
 
-- 無料で利用できる便利なビデオ学習リソースがあります。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。 Visual C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。
+- 無料で利用できる便利なビデオ学習リソースがあります。 Visual Basic でのプログラミングの詳細については、「 [Visual Basic の基礎: 絶対初心者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。 Visual C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 8: プレーヤーが勝利したかどうかを確認するメソッドを追加](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)する」を参照してください。
