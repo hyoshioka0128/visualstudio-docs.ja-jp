@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider:: Get住所 Inmodulefromposition |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734038"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-指定したモジュール内のドキュメントの位置をデバッグ アドレスの配列に割り当てします。
+指定したモジュール内のドキュメント位置をデバッグアドレスの配列にマップします。
 
 ## <a name="syntax"></a>構文
 
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>パラメーター
 `ulAppDomainID`\
-[in]アプリケーション ドメイン識別子。
+からアプリケーションドメイン識別子。
 
 `guidModule`\
-[in]モジュールを表す一意の識別子です。
+からモジュールの一意識別子。
 
 `pDocPos`\
-[in]ドキュメントの位置。
+からドキュメントの位置。
 
 `fStatmentOnly`\
-[in]の`TRUE`場合、デバッグ アドレスは 1 つのステートメントに制限されます。
+から `TRUE`の場合、デバッグアドレスを1つのステートメントに限定します。
 
 `ppEnumBegAddresses`\
-[アウト]このステートメントまたは行に関連付けられている開始デバッグ アドレスの列挙子を返します。
+入出力このステートメントまたは行に関連付けられている開始デバッグアドレスの列挙子を返します。
 
 `ppEnumEndAddresses`\
-[アウト]このステートメントまたは行に関連付けられている終了デバッグ アドレスの列挙子を返します。
+入出力このステートメントまたは行に関連付けられている終了デバッグアドレスの列挙子を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
- インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
+ 次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778246"
 ---
 # <a name="status"></a>Status
-*VSPerfCmd.exe* の **Status** オプションでは、プロファイラーの状態、および現在プロファイルを実行中の任意のプロセスに関する情報を表示します。
+*VSPerfCmd.exe の * **Status** オプションでは、プロファイラーの状態、および現在プロファイルを実行中の任意のプロセスに関する情報が表示されます。
 
- コマンド ラインで指定するオプションは **Status** オプションのみにする必要があります。 状態を表示するには、*VSPerfCmd.exe* の **Start** オプションを使用してプロファイラーを初期化しておく必要があります。
+ コマンド ラインで指定するオプションは **Status** オプションのみにする必要があります。 状態を表示するには、*VSPerfCmd.exe の * **Start** オプションを使用してプロファイラーを初期化しておく必要があります。
 
 ## <a name="syntax"></a>構文
 
@@ -28,9 +28,9 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>パラメーター
- None
+ なし
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  **Status** オプションでは、プロファイラーに関して、次の状態情報を表示します。
 
  **出力ファイル名**現在のプロファイラー データ ファイルのパスとファイル名。

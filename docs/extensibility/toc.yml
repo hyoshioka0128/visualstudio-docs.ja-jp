@@ -808,9 +808,9 @@
           href: adding-command-line-switches.md
     - name: エラー処理と戻り値
       href: error-handling-and-return-values.md
-    - name: Objects
+    - name: オブジェクト
       items:
-        - name: Objects
+        - name: オブジェクト
           href: objects.md
         - name: VSCodeWindow オブジェクト
           href: vscodewindow-object.md

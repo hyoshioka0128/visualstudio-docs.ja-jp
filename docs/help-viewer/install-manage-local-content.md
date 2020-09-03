@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284907"
 ---
 # <a name="install-and-manage-local-content"></a>ローカル コンテンツのインストールと管理
@@ -51,7 +51,7 @@ Microsoft ヘルプ ビューアーを使用すると、ソフトウェア開発
 
     - *.msha* ファイルのパスまたはサービス エンドポイントの URL を入力します。
 
-    - 参照ボタン ([.**..**]) をクリックして、 *msha*ファイルに移動します。
+    - 参照ボタン ([.**..**]) をクリックして、 *msha* ファイルに移動します。
 
     - 一覧で、最後に使用されたエントリを選択します。
 

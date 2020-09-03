@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905769"
 ---
 # <a name="how-to-provide-a-service"></a>方法: サービスを提供する
 VSPackage は、他の Vspackage が使用できるサービスを提供できます。 サービスを提供するには、VSPackage がサービスを Visual Studio に登録し、サービスを追加する必要があります。
 
- <xref:Microsoft.VisualStudio.Shell.Package>クラスは、との両方を実装し <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer> ます。 <xref:System.ComponentModel.Design.IServiceContainer>要求時にサービスを提供するコールバックメソッドを格納します。
+ <xref:Microsoft.VisualStudio.Shell.Package>クラスは、との両方を実装し <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer> ます。 <xref:System.ComponentModel.Design.IServiceContainer> 要求時にサービスを提供するコールバックメソッドを格納します。
 
  サービスの詳細については、「 [Service essentials](../extensibility/internals/service-essentials.md) 」を参照してください。
 
