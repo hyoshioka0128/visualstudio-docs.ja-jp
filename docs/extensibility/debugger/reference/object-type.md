@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE |マイクロソフトドキュメント
+title: OBJECT_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714126"
 ---
-# <a name="object_type"></a>Object_Type
-式エバリュエーターのオブジェクトの型を指定します。
+# <a name="object_type"></a>OBJECT_TYPE
+式エバリュエーターからオブジェクトの型を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -76,34 +76,34 @@ public enum enum_OBJECT_TYPE { 
  オブジェクトが文字であることを示します。
 
  `OBJECT_TYPE_I1`\
- オブジェクトが 1 バイト符号付き整数であることを示します。
+ オブジェクトが1バイトの符号付き整数であることを示します。
 
  `OBJECT_TYPE_U1`\
- オブジェクトが 1 バイト符号なし整数であることを示します。
+ オブジェクトが1バイトの符号なし整数であることを示します。
 
  `OBJECT_TYPE_I2`\
- オブジェクトが 2 バイトの符号付き整数であることを示します。
+ オブジェクトが2バイト符号付き整数であることを示します。
 
  `OBJECT_TYPE_U2`\
- オブジェクトが 2 バイト符号なし整数であることを示します。
+ オブジェクトが2バイト符号なし整数であることを示します。
 
  `OBJECT_TYPE_I4`\
- オブジェクトが 4 バイトの符号付き整数であることを示します。
+ オブジェクトが4バイト符号付き整数であることを示します。
 
  `OBJECT_TYPE_U4`\
- オブジェクトが 4 バイト符号なし整数であることを示します。
+ オブジェクトが4バイトの符号なし整数であることを示します。
 
  `OBJECT_TYPE_I8`\
- オブジェクトが 8 バイトの符号付き整数であることを示します。
+ オブジェクトが8バイト符号付き整数であることを示します。
 
  `OBJECT_TYPE_U8`\
- オブジェクトが 8 バイト符号なし整数であることを示します。
+ オブジェクトが8バイト符号なし整数であることを示します。
 
  `OBJECT_TYPE_R4`\
- オブジェクトが 4 バイト浮動小数点数であることを示します。
+ オブジェクトが4バイトの浮動小数点数であることを示します。
 
  `OBJECT_TYPE_R8`\
- オブジェクトが 8 バイトの浮動小数点数であることを示します。
+ オブジェクトが8バイトの浮動小数点数であることを示します。
 
  `OBJECT_TYPE_OBJECT`\
  オブジェクトがオブジェクトであることを示します。
@@ -114,15 +114,15 @@ public enum enum_OBJECT_TYPE { 
  `OBJECT_TYPE_CLASS`\
  オブジェクトがクラスであることを示します。
 
-## <a name="remarks"></a>Remarks
- メソッドに引数として渡[されます](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)。 [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)
+## <a name="remarks"></a>注釈
+ [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)メソッドおよび[createarrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)メソッドに引数として渡されます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: ee.h
+ ヘッダー: ee
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

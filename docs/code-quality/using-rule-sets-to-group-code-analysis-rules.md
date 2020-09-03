@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77506467"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>規則セットを使用したコード分析規則のグループ化
 
-Visual Studio でコード分析を構成するときに、組み込みの*規則セット*の一覧から選択できます。 ルールセットは、対象となる問題とそのプロジェクトの特定の条件を識別するコード分析ルールをグループ化したものです。 たとえば、公開されている Api のコードをスキャンするように設計された規則セットを適用できます。 また、使用可能なすべての規則を含む規則セットを適用することもできます。
+Visual Studio でコード分析を構成するときに、組み込みの *規則セット*の一覧から選択できます。 ルールセットは、対象となる問題とそのプロジェクトの特定の条件を識別するコード分析ルールをグループ化したものです。 たとえば、公開されている Api のコードをスキャンするように設計された規則セットを適用できます。 また、使用可能なすべての規則を含む規則セットを適用することもできます。
 
-ルールセットをカスタマイズするには、ルールを追加または削除するか、ルールの重大度を変更して**エラー一覧**で警告またはエラーとして表示されるようにします。 カスタマイズした規則セットで、特定の開発環境の要件を満たすことができます。 規則セットをカスタマイズするときに、規則セット エディターは、検索とフィルター処理、プロセスに役立つツールを提供します。
+ルールセットをカスタマイズするには、ルールを追加または削除するか、ルールの重大度を変更して **エラー一覧**で警告またはエラーとして表示されるようにします。 カスタマイズした規則セットで、特定の開発環境の要件を満たすことができます。 規則セットをカスタマイズすると、そのプロセスに役立つ検索とフィルター処理のツールがルールセットエディターに表示されます。
 
-規則セットは、[マネージコード分析](analyzer-rule-sets.md)、[マネージコードのレガシ分析](how-to-configure-code-analysis-for-a-managed-code-project.md)、および[ C++コード分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)に使用できます。
+規則セットは、 [マネージコード分析](analyzer-rule-sets.md)、 [マネージコードのレガシ分析](how-to-configure-code-analysis-for-a-managed-code-project.md)、および [C++ コード分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)に使用できます。
 
 ## <a name="rule-set-format"></a>規則セットの形式
 
-ルールセットは、規則*セットファイルで*XML 形式で指定されます。 ID と*アクション*で構成されるルールは、アナライザーの id とファイル内の名前空間によってグループ化されます。
+ルールセットは、規則 *セットファイルで* XML 形式で指定されます。 ID と *アクション*で構成されるルールは、アナライザーの id とファイル内の名前空間によってグループ化されます。
 
-規則セットファイルの内容は、次の XML のように*なり*ます。
+規則セットファイルの内容は、次の XML のように *なり* ます。
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -58,7 +58,7 @@ Visual Studio でコード分析を構成するときに、組み込みの*規�
 
 ## <a name="specify-a-rule-set-for-a-project"></a>プロジェクトの規則セットを指定する
 
-プロジェクトの規則セットは、Visual Studio プロジェクトファイルの**CodeAnalysisRuleSet**プロパティによって指定されます。 例 :
+プロジェクトの規則セットは、Visual Studio プロジェクトファイルの **CodeAnalysisRuleSet** プロパティによって指定されます。 次に例を示します。
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -67,6 +67,6 @@ Visual Studio でコード分析を構成するときに、組み込みの*規�
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード分析規則セットの参照](../code-quality/rule-set-reference.md)

@@ -12,9 +12,9 @@
       items:
         - name: Visual Studio を使用した開発の開始
           href: get-started-developing-with-visual-studio.md
-        - name: 'Visual C# と Visual Basic の概要'
+        - name: Visual C# と Visual Basic の概要
           items:
-            - name: 'Visual C# と Visual Basic の概要'
+            - name: Visual C# と Visual Basic の概要
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: シンプルなアプリケーションを作成する
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -122,7 +122,7 @@
               href: managing-assembly-and-manifest-signing.md
             - name: アプリケーションおよび配置マニフェストに署名する
               href: how-to-sign-application-and-deployment-manifests.md
-        - name: 'アプリケーション アイコンを指定する (Visual Basic、C#)'
+        - name: アプリケーション アイコンを指定する (Visual Basic、C#)
           href: how-to-specify-an-application-icon-visual-basic-csharp.md
         - name: 対象となる特定の .NET Framework バージョンの指定
           items:
@@ -184,7 +184,7 @@
               href: replace-in-files.md
         - name: エンコーディングと改行
           href: encodings-and-line-breaks.md
-        - name: '[アウトライン]'
+        - name: アウトライン
           href: outlining.md
         - name: リファクタリング
           href: refactoring-in-visual-studio.md
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Visual Basic でのフィルター処理されたコンプリート リスト
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'Visual C# の IntelliSense'
+            - name: Visual C# の IntelliSense
               href: visual-csharp-intellisense.md
             - name: 使用法から生成機能によるテスト ファーストのサポート
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -248,11 +248,11 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<値>
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
-            - name: 'Visual C# の IntelliSense'
+            - name: Visual C# の IntelliSense
               href: visual-cpp-intellisense.md
             - name: XML コード コメントの追加
               href: supplying-xml-code-comments.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: コード スニペットを配布する
               href: how-to-distribute-code-snippets.md
-            - name: 'Visual C# のコード スニペット'
+            - name: Visual C# のコード スニペット
               href: visual-csharp-code-snippets.md
             - name: Visual C++ コード スニペット
               href: visual-cpp-code-snippets.md
             - name: コード スニペットの関数
               href: code-snippet-functions.md
-            - name: 'C# リファクタリング スニペットを復元する'
+            - name: C# リファクタリング スニペットを復元する
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: surround-with コード スニペットを使用する
               href: how-to-use-surround-with-code-snippets.md
@@ -384,39 +384,39 @@
           href: setting-bookmarks-in-code.md
         - name: タスク一覧の使用
           href: using-the-task-list.md
-        - name: コード変更およびその他の履歴の検索
+        - name: コード変更およびその他の履歴を検索する
           items:
-            - name: コード変更およびその他の履歴の検索
+            - name: コード変更およびその他の履歴を検索する
               href: find-code-changes-and-other-history-with-codelens.md
             - name: CodeIndex コマンド
               href: codeindex-command.md
-        - name: 'C# 用 Visual Studio 開発環境の使用'
+        - name: C# 用 Visual Studio 開発環境の使用
           items:
-            - name: 'C# 用 Visual Studio 開発環境の使用'
+            - name: C# 用 Visual Studio 開発環境の使用
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'C# プロジェクトにアプリケーション構成ファイルを追加する'
+            - name: C# プロジェクトにアプリケーション構成ファイルを追加する
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: ソースとしてのメタデータ
               href: ../csharp-ide/metadata-as-source.md
-            - name: 'リファクタリング (C#)'
+            - name: リファクタリング (C#)
               items:
-                - name: 'リファクタリング (C#)'
+                - name: リファクタリング (C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: 'メソッドの抽出リファクタリング (C#)'
+                - name: メソッドの抽出リファクタリング (C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: '名前の変更リファクタリング (C#)'
+                - name: 名前の変更リファクタリング (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: 'フィールドのカプセル化リファクタリング (C#)'
+                - name: フィールドのカプセル化リファクタリング (C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: 'インターフェイスの抽出リファクタリング (C#)'
+                - name: インターフェイスの抽出リファクタリング (C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: 'パラメーターの削除リファクタリング (C#)'
+                - name: パラメーターの削除リファクタリング (C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: 'パラメーター順序の再変更リファクタリング (C#)'
+                - name: パラメーター順序の再変更リファクタリング (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Visual Studio でのデバッグ
       href: ../debugger/debugging-in-visual-studio.md
-    - name: プロファイリング
+    - name: プロファイル
       href: ../profiling/profiling-tools.md
     - name: コードの品質向上
       href: ../test/unit-test-your-code.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: ビルド イベントを指定する (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: 'ビルド イベントを指定する (C#)'
+        - name: ビルド イベントを指定する (C#)
           href: how-to-specify-build-events-csharp.md
         - name: Visual Basic での警告の構成
           href: configuring-warnings-in-visual-basic.md
@@ -486,7 +486,7 @@
       href: ../deployment/deploying-applications-services-and-components.md
     - name: Visual Studio IDE の 64 ビット サポート
       href: visual-studio-ide-64-bit-support.md
-    - name: Visual Studio Samples
+    - name: Visual Studio のサンプル
       href: visual-studio-samples.md
     - name: ユーザー アカウントと更新プログラム
       items:
@@ -510,7 +510,7 @@
           href: how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: ウィンドウ レイアウトをカスタマイズする
           href: customizing-window-layouts-in-visual-studio.md
-        - name: カスタム スタート ページ
+        - name: スタート ページのカスタマイズ
           href: customizing-the-start-page-for-visual-studio.md
         - name: Visual Studio の外部ツール
           href: managing-external-tools.md
@@ -528,7 +528,7 @@
           href: user-permissions-and-visual-studio.md
         - name: セキュリティ参考文献
           href: security-bibliography.md
-    - name: Visual Studio Samples
+    - name: Visual Studio のサンプル
       href: visual-studio-samples.md
     - name: Microsoft ヘルプ ビューアー
       items:
@@ -658,33 +658,33 @@
                   href: reference/extensions-and-updates-environment-options-dialog-box.md
                 - name: '[検索と置換] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/find-and-replace-environment-options-dialog-box.md
-                - name: '[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[フォントおよび色]\([オプション] ダイアログ ボックス - [環境])'
                   href: reference/fonts-and-colors-environment-options-dialog-box.md
                 - name: '[設定のインポートとエクスポート] \([オプション] ダイアログ ボックス - [環境])'
                   href: reference/import-and-export-settings-environment-options-dialog-box.md
-                - name: '[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[国際対応の設定] \([オプション] ダイアログ ボックス - [環境])'
                   href: reference/international-settings-environment-options-dialog-box.md
-                - name: '[キーボード] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[キーボード] \([オプション] ダイアログ ボックス - [環境])'
                   href: reference/keyboard-environment-options-dialog-box.md
                 - name: '[通知] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/notifications-environment-options-dialog-box.md
-                - name: '[クイック起動] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[クイック起動] \([オプション] ダイアログ ボックス - [環境])'
                   href: reference/quick-launch-environment-options-dialog-box.md
                 - name: '[スタートアップ] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/startup-environment-options-dialog-box.md
-                - name: '[同期された設定]\([オプション] ダイアログ ボックス - [環境])'
+                - name: '[同期された設定] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/synchronized-settings-environment-options-dialog-box.md
-                - name: '[タブとウィンドウ] ([オプション] ダイアログ ボックス - [環境])'
+                - name: '[タブとウィンドウ]\ ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/tabs-and-windows-environment-options-dialog-box.md
                 - name: '[タスク一覧] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/task-list-environment-options-dialog-box.md
-                - name: '[Web ブラウザー]\([オプション] ダイアログ ボックス - [環境])'
+                - name: '[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境])'
                   href: reference/web-browser-environment-options-dialog-box.md
                 - name: '[環境] ノード プロパティ ([オプション] ページ)'
                   href: reference/options-page-environment-node-properties.md
-            - name: '[テキスト エディター]\([オプション] ダイアログ ボックス)'
+            - name: '[テキスト エディター] ([オプション] ダイアログ ボックス)'
               items:
-                - name: '[テキスト エディター]\([オプション] ダイアログ ボックス)'
+                - name: '[テキスト エディター] ([オプション] ダイアログ ボックス)'
                   href: reference/text-editor-options-dialog-box.md
                 - name: エディターのフォントと色を変更する
                   href: reference/how-to-change-fonts-and-colors-in-the-editor.md
@@ -718,7 +718,7 @@
                   href: reference/options-text-editor-csharp-advanced.md
                 - name: '[オプション]、[テキスト エディター]、[C#]、[IntelliSense]'
                   href: reference/options-text-editor-csharp-intellisense.md
-                - name: '[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]'
+                - name: 'Options, Text Editor, JavaScript, Formatting'
                   href: reference/options-text-editor-javascript-formatting.md
                 - name: '[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]'
                   href: reference/options-text-editor-javascript-intellisense.md
@@ -794,7 +794,7 @@
                   href: reference/signing-page-project-designer.md
                 - name: '[Visual Basic の既定値] ([オプション] ダイアログ ボックス - [プロジェクト])'
                   href: reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: '[VC++ プロジェクトの設定][オプション] ダイアログ ボックス - [プロジェクトおよびソリューション]'
+                - name: '[VC++ プロジェクトの設定] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
                   href: reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
             - name: プロジェクト ファイルとソリューション ファイルの種類
               href: reference/project-and-solution-file-types.md
@@ -804,15 +804,15 @@
                   href: reference/projects-and-solutions-options-dialog-box.md
                 - name: '[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]'
                   href: reference/options-dialog-box-projects-and-solutions-build-and-run.md
-                - name: '[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
+                - name: '[Web プロジェクト]\([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
                   href: reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: プロパティ ページ、JavaScript
               href: reference/property-pages-javascript.md
             - name: '[プロパティ] ウィンドウ'
               href: reference/properties-window.md
-            - name: '[ツールボックス]'
+            - name: ツールボックス
               items:
-                - name: '[ツールボックス]'
+                - name: ツールボックス
                   href: reference/toolbox.md
                 - name: 'ツールボックス、[コンポーネント] タブ'
                   href: reference/toolbox-components-tab.md

@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO |マイクロソフトドキュメント
+title: MODULE_SYMBOL_SEARCH_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714253"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-検索されたシンボル検索パスに関するステータス情報を格納します。
+検索されたシンボル検索パスに関する状態情報が含まれます。
 
 ## <a name="syntax"></a>構文
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>メンバー
 
 `dwValidFields`\
-この構造体で説明されている検索情報の種類を指定する[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)列挙体のフラグの組み合わせ。
+この構造体で記述されている検索情報の種類を指定する、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列挙のフラグの組み合わせ。
 
 `bstrVerboseSearchInfo`\
-検索パスと結果を 1 つの文字列に連結します。
+検索パスと結果が1つの文字列に連結されます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
-この構造体は[、GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)メソッドの呼び出しから返されます。
+この構造体は、 [Getシンボル情報](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) メソッドの呼び出しから返されます。
 
-フィールドが`bstrVerboseSearchInfo`空でない場合は、検索されたパスとその検索の結果のリストが含まれます。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパス結果ペアがある場合、各ペアは"\r\n"(復帰/改行)ペアで区切られます。 パターンは次のようになります。
+`bstrVerboseSearchInfo`フィールドが空でない場合は、検索したパスとその検索結果の一覧が含まれています。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパスの結果のペアがある場合、各ペアは "\r\n" (キャリッジリターン/ラインフィード) ペアで区切られます。 パターンは次のようになります。
 
-\<パス>.\<>\r\n\<パス>.\<結果>\r\n\<パス>.\<結果>
+\<path>...\<result>\r\n \<path> . \<result> .\r\n \<path> ..\<result>
 
-最後のエントリには \r\n シーケンスがありません。
+最後のエントリには \r\n シーケンスがないことに注意してください。
 
-標準出力に送信`bstrVerboseSearchInfo`された可能性のある文字列を次に示します。
+次に示すのは、 `bstrVerboseSearchInfo` 標準出力に送信された文字列です。
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -71,11 +71,11 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 
 ## <a name="requirements"></a>必要条件
 
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 

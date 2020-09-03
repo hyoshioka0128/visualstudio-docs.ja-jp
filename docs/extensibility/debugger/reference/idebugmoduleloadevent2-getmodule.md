@@ -1,5 +1,5 @@
 ---
-title: を読み込むイベント 2::GetModule |マイクロソフトドキュメント
+title: 'IDebugModuleLoadEvent2:: GetModule |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726724"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-読み込みまたはアンロードされているモジュールを取得します。
+読み込まれている、またはアンロードされているモジュールを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,16 +45,16 @@ int GetModule( 
 
 ## <a name="parameters"></a>パラメーター
 `pModule`\
-[アウト]読み込み中またはアンロード中のモジュールを表す[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)オブジェクトを返します。
+入出力読み込み中またはアンロード中のモジュールを表す [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) オブジェクトを返します。
 
 `pbstrDebugMessage`\
-[イン、アウト]このイベントを説明するオプションのメッセージを返します。 このパラメーターが NULL 値の場合、メッセージは要求されません。
+[入力、出力]このイベントを記述するオプションのメッセージを返します。 このパラメーターが null 値の場合、メッセージは要求されません。
 
 `pbLoad`\
-[イン、アウト]モジュールが`TRUE`ロード中の場合は 0 以外`FALSE`( ) 、 モジュールがアンロード中の場合は 0 ( ) 以外の値を指定します。 このパラメーターが NULL 値の場合、状況は要求されません。
+[入力、出力]モジュールが読み込み中の場合は0以外 ( `TRUE` ) `FALSE` 。モジュールがアンロード中の場合は 0 ()。 このパラメーターが null 値の場合、状態は要求されません。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)

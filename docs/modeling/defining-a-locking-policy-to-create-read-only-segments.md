@@ -8,21 +8,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536085"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 Visual Studio の視覚化およびモデリング SDK の不変 API を使用すると、プログラムはドメイン固有言語 (DSL) モデルの一部またはすべてをロックすることができます。これにより、プログラムはそのモデルを読み取ることができますが、変更することはできません。 たとえば、この読み取り専用オプションを使用すると、ユーザーは DSL モデルに注釈を付けて確認することができますが、元のを変更できないようにすることができます。
 
- さらに、DSL の作成者は、ロックポリシーを定義でき*ます。* ロックポリシーでは、許可されているロック、許可されていないロック、必須のロックを定義します。 たとえば、DSL を発行するときに、サードパーティの開発者が新しいコマンドで拡張できるようにすることができます。 ただし、ロックポリシーを使用して、モデルの指定した部分の読み取り専用の状態を変更できないようにすることもできます。
+ さらに、DSL の作成者は、ロックポリシーを定義でき *ます。* ロックポリシーでは、許可されているロック、許可されていないロック、必須のロックを定義します。 たとえば、DSL を発行するときに、サードパーティの開発者が新しいコマンドで拡張できるようにすることができます。 ただし、ロックポリシーを使用して、モデルの指定した部分の読み取り専用の状態を変更できないようにすることもできます。
 
 > [!NOTE]
 > ロックポリシーは、リフレクションを使用することによって回避できます。 サードパーティの開発者には明確な境界が用意されていますが、強力なセキュリティは提供されていません。
 
- 詳細とサンプルについては、Visual Studio の[視覚化およびモデリング SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)の web サイトを参照してください。
+ 詳細とサンプルについては、Visual Studio の [視覚化およびモデリング SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) の web サイトを参照してください。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -79,15 +79,15 @@ partition.SetLocks(Locks.Delete);
 |-|-|
 |なし|制限はありません。|
 |プロパティ|要素のドメインプロパティは変更できません。 これは、リレーションシップのドメインクラスの役割によって生成されるプロパティには適用されません。|
-|追加|パーティションまたはストアに新しい要素とリンクを作成することはできません。<br /><br /> には適用されません `ModelElement` 。|
-|移動|`element.IsLocked(Move)`が true の場合、またはが true の場合、パーティション間で要素を移動することはできません `targetPartition.IsLocked(Move)` 。|
+|[追加]|パーティションまたはストアに新しい要素とリンクを作成することはできません。<br /><br /> には適用されません `ModelElement` 。|
+|詳細ビュー|`element.IsLocked(Move)`が true の場合、またはが true の場合、パーティション間で要素を移動することはできません `targetPartition.IsLocked(Move)` 。|
 |削除|要素自体、または削除が反映される要素 (埋め込み要素や図形など) に対してこのロックが設定されている場合、要素を削除することはできません。<br /><br /> を使用すると、 `element.CanDelete()` 要素を削除できるかどうかを検出できます。|
 |並び|Roleplayer でのリンクの順序を変更することはできません。|
 |RolePlayer|この要素をソースとするリンクのセットは変更できません。 たとえば、新しい要素をこの要素の下に埋め込むことはできません。 これは、この要素がターゲットであるリンクには影響しません。<br /><br /> この要素がリンクの場合、ソースとターゲットは影響を受けません。|
 |All|他の値のビットごとの OR。|
 
 ## <a name="locking-policies"></a>ロックポリシー
- DSL の作成者は、*ロックポリシー*を定義できます。 ロックポリシーは、特定のロックが設定されないようにするか、特定のロックを設定する必要があるように、SetLocks () の操作を軽減します。 通常、ロックポリシーを使用して、ユーザーまたは開発者が誤って DSL の使用を contravening ことを防ぐことができます。これは、変数を宣言する場合と同じ `private` です。
+ DSL の作成者は、 *ロックポリシー*を定義できます。 ロックポリシーは、特定のロックが設定されないようにするか、特定のロックを設定する必要があるように、SetLocks () の操作を軽減します。 通常、ロックポリシーを使用して、ユーザーまたは開発者が誤って DSL の使用を contravening ことを防ぐことができます。これは、変数を宣言する場合と同じ `private` です。
 
  また、ロックポリシーを使用して、要素の型に依存するすべての要素にロックを設定することもできます。 これは、 `SetLocks(Locks.None)` 要素が最初に作成されたとき、またはファイルから逆シリアル化されたときにが常に呼び出されるためです。
 
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - このクラスを、DSL の DocData で利用できるサービスに追加します。
 
 ### <a name="to-define-a-locking-policy"></a>ロックポリシーを定義するには
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>には次の定義があります。
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> には次の定義があります。
 
 ```csharp
 public interface ILockingPolicy
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- 他のコードがを呼び出す場合でも、ユーザーが常に要素を削除できるようにするには`SetLocks(Lock.Delete):`
+ 他のコードがを呼び出す場合でも、ユーザーが常に要素を削除できるようにするには `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 

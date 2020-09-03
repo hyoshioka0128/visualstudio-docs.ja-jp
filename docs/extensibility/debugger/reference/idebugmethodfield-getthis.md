@@ -1,5 +1,5 @@
 ---
-title: フィールドを取得します。マイクロソフトドキュメント
+title: 'IDebugMethodField:: GetThis |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727167"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-メソッドを`this`含`Me`む[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]オブジェクトの ( で ) ポインターを取得します。
+`this` `Me` メソッドを格納しているオブジェクトの (の) ポインターを取得し [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] ます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetThis(
 
 ## <a name="parameters"></a>パラメーター
 `ppClass`\
-[アウト]"this"[ポインターを表](../../../extensibility/debugger/reference/idebugclassfield.md)すオブジェクトを返します。
+入出力"This" ポインターを表す [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- オブジェクト指向言語では、通常、クラスの現在のインスタンス化への暗黙のポインタがあります。 これは C#/C++ および`this``Me`として知られています[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]。
+## <a name="remarks"></a>解説
+ オブジェクト指向言語では、通常、クラスの現在のインスタンス化への暗黙的なポインターが存在します。 これは、「 `this` 」のように、C# の/c + + ととして知られてい `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

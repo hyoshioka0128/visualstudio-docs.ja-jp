@@ -1,5 +1,5 @@
 ---
-title: フィールド::列挙静的ローカル |マイクロソフトドキュメント
+title: 'IDebugMethodField:: EnumStaticLocals |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727155"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
@@ -41,13 +41,13 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>パラメーター
 `ppLocals`\
-[アウト]静的ローカル[の一](../../../extensibility/debugger/reference/ienumdebugfields.md)覧を表すオブジェクトを返します。 静的ローカル変数がない場合は、null 値を返します。
+入出力静的ローカル変数のリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。 静的ローカル変数がない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、静的なローカルが存在しない場合は、S_OKを返すかS_FALSEを返します。 それ以外の場合はエラー コードを返します。
+ 正常に終了した場合は、S_OK を返すか、静的ローカル変数がない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>Remarks
- 各要素は、さまざまな種類の静的ローカル変数を表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトです。 各オブジェクトに対して[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドを呼び出して、そのオブジェクトが表す静的ローカルの種類を正確に判断します。
+## <a name="remarks"></a>解説
+ 各要素は、さまざまな種類の静的ローカル変数を表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトです。 各オブジェクトの [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) メソッドを呼び出して、オブジェクトが表す静的ローカルの種類を正確に特定します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
