@@ -1,5 +1,5 @@
 ---
-title: ストアドのフォントと色の設定へのアクセス |Microsoft Docs
+title: 格納されているフォントと色の設定にアクセスする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,72 +13,72 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821836"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>格納されたフォントと色の設定へのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE) フォントの変更された設定を格納し、レジストリの色します。 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>これらの設定にアクセスするインターフェイス。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE: integrated development environment) には、フォントおよび色の変更された設定がレジストリに保存されます。 インターフェイスを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> これらの設定にアクセスできます。  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>フォントおよび色の状態の永続化を開始するには  
- 次のレジストリの場所にカテゴリ別のフォントと色の情報が格納されます [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<Visual Studio のバージョン >* \FontAndColors\\ 。 *\<CategoryGUID >* ] ここで、  *\<CategoryGUID >* カテゴリの GUID です。  
+ フォントおよび色の情報は、次のレジストリの場所にカテゴリ別に格納されています: [HKCU\SOFTWARE\Microsoft]、[Visual Studio \\ *\<Visual Studio version>* ]、[色]。ここで、 \\ *\<CategoryGUID>* *\<CategoryGUID>* はカテゴリ GUID です。  
   
- そのため、永続化を開始するには、VSPackage が必要です。  
+ したがって、永続化を開始するには、VSPackage で次のことを行う必要があります。  
   
-- 取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>呼び出してインターフェイス`QueryService`に対してグローバル サービス プロバイダー。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>グローバルサービスプロバイダーに対してを呼び出すことによって、インターフェイスを取得 `QueryService` します。  
   
-     `QueryService` サービス ID の引数を使用して呼び出す必要があります`SID_SVsFontAndColorStorage`とのインターフェイス ID 引数`IID_IVsFontAndColorStorage`します。  
+     `QueryService` は、のサービス ID 引数 `SID_SVsFontAndColorStorage` とのインターフェイス ID 引数を使用して呼び出す必要があり `IID_IVsFontAndColorStorage` ます。  
   
-- 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>メソッドを引数として、カテゴリの GUID とモード フラグを使用して永続化するカテゴリを開きます。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>カテゴリの GUID とモードフラグを引数として使用して、永続化するカテゴリを開くには、メソッドを使用します。  
   
-  指定したモード、`fFlags`引数が値から構築された、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列挙体。 このモードを制御します。  
+  引数で指定されたモードは、 `fFlags` 列挙体の値から構築され <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> ます。 このモードは、次のことを制御します。  
 
-  - 経由でアクセスできる設定、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
+  - インターフェイスを使用してアクセスできる設定 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 。  
 
-  - すべての設定またはだけを使用して取得するユーザーを変更して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
+  - すべての設定、またはユーザーが変更したすべての設定またはインターフェイスで取得可能な <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 。  
 
   - ユーザー設定に変更を反映する方法。  
 
-  - 使用される色の値の形式です。  
+  - 使用される色の値の形式。  
 
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>フォントおよび色の状態の永続化を使用するには  
- 永続化するフォントと色が含まれます。  
+ フォントと色の保持には次のものが含まれます。  
   
-- IDE 設定をレジストリに格納されている設定を同期しています。  
+- IDE 設定とレジストリに格納されている設定との同期。  
   
-- レジストリの変更情報を伝達します。  
+- レジストリの変更情報を伝達しています。  
   
-- 設定して、レジストリに格納されている設定を取得します。  
+- レジストリに格納されている設定の設定および取得。  
   
-  IDE 設定と記憶域の設定の同期は、きわめて透過的です。 基になる IDE が自動的に更新された設定を書き込みます**表示項目**カテゴリのレジストリ エントリにします。  
+  ストレージ設定と IDE 設定の同期は、ほぼ透過的です。 基になる IDE は、 **表示項目** の更新された設定をカテゴリのレジストリエントリに自動的に書き込みます。  
   
-  VSPackage が、イベントが生成される必要があります複数 Vspackage では、特定のカテゴリを共有している場合場合のメソッド、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイスを使用してストアドのレジストリ設定を変更します。  
+  複数の Vspackage が特定のカテゴリを共有する場合、VSPackage は、インターフェイスのメソッドを使用して格納されている <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> レジストリ設定を変更するときに、イベントを生成する必要があります。  
   
-  既定では、イベントの生成は有効になっていません。 イベントの生成を有効にするを使用して、カテゴリを開く<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>します。 これにより、IDE を呼び出して、適切な<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage を実装するメソッド。  
-  
-> [!NOTE]
-> によって変更、**フォントおよびカラー**プロパティ ページの独立したイベントを生成する<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>します。 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスのメソッドを呼び出す前にキャッシュされているフォントおよび色の設定の更新が必要かどうかを判断、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>クラス。  
-  
-### <a name="storing-and-retrieving-information"></a>格納して、情報の取得  
- Vspackage を呼び出してユーザーを変更できるオープンのカテゴリの名前付きの表示項目の情報を構成またはを取得する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A>メソッド。  
-  
- フォントに関する情報の属性を使用して、特定のカテゴリが取得したは<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A>メソッド。  
+  既定では、イベント生成は有効になっていません。 イベントの生成を有効にするには、を使用してカテゴリを開く必要があり <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> ます。 これにより、IDE は VSPackage が実装する適切なメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ます。  
   
 > [!NOTE]
-> `fFlags`に渡される引数、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>そのカテゴリを開いたときに、メソッドの動作を定義する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>メソッド。 既定では、これらのメソッドの情報を返すのみ aboutdisplay itemsthat が変更されました。 ただしを使用して、カテゴリが開かれている場合、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>更新両方のフラグし、そのまま表示項目からアクセスできる<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>します。  
+> [ **フォントおよび色** ] プロパティページを使用して変更すると、に依存しないイベントが生成さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> れます。 インターフェイスを使用すると、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> クラスのメソッドを呼び出す前に、キャッシュされたフォントと色の設定を更新する必要があるかどうかを判断でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> ます。  
   
- 既定でのみ変更**表示項目**レジストリの情報が保持されます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>フォントと色のすべての設定を取得するインターフェイスを使用することはできません。  
+### <a name="storing-and-retrieving-information"></a>情報の格納と取得  
+ 開いているカテゴリの名前付き表示項目に対してユーザーが変更できる情報を取得または構成するには、Vspackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> メソッドとメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> ます。  
+  
+ 特定のカテゴリのフォント属性に関する情報は、メソッドとメソッドを使用して取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> ます。  
   
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>メソッドが変更されていないについて REGDB_E_KEYMISSING、情報を取得するために使用するときに (0x80040152L) を返す**表示項目**します。  
+> この `fFlags` カテゴリが開かれたときにメソッドに渡される引数は、メソッド <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> とメソッドの動作を定義し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> ます。 既定では、これらのメソッドは、変更された表示 itemsthat 関する情報のみを返します。 ただし、フラグを使用してカテゴリが開かれている場合、 <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> 更新された表示項目と変更されていない表示項目は、およびでアクセスでき <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> ます。  
   
- すべての設定**表示項目**特定**カテゴリ**のメソッドを使用して取得できます、`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults`インターフェイス。  
+ 既定では、変更された **表示項目** の情報だけがレジストリに保持されます。 インターフェイスを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> フォントおよび色のすべての設定を取得することはできません。  
   
-## <a name="see-also"></a>関連項目  
+> [!NOTE]
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>メソッドとメソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> 変更されていない**表示項目**に関する情報を取得するために使用するときに、REGDB_E_KEYMISSING、(0x80040152L) を返します。  
+  
+ 特定の**カテゴリ**のすべての**表示項目**の設定は、インターフェイスのメソッドを使用して取得でき `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` ます。  
+  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>   
  [カスタム カテゴリと表示項目の実装](../extensibility/implementing-custom-categories-and-display-items.md)

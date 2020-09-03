@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek |Microsoft Docs
+title: 'IDebugDocumentContext2:: Seek |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a17a845275a39954a42839d54af14e37fe0bd06c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144985"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ステートメントまたは行の番号を指定して、ドキュメントのコンテキストに移動します。  
+指定された数のステートメントまたは行によってドキュメントコンテキストを移動します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,13 +42,13 @@ int Seek( 
   
 #### <a name="parameters"></a>パラメーター  
  `nCount`  
- [in]ステートメントまたは順方向に移動、ドキュメントのコンテキストに応じて行の数。  
+ からドキュメントコンテキストに応じて、前に移動するステートメントまたは行の数。  
   
  `ppDocContext`  
- [out]新しいを返します[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)新しい位置を持つオブジェクト。  
+ 入出力新しい位置を持つ新しい [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

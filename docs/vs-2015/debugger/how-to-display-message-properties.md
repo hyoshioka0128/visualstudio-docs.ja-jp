@@ -1,5 +1,5 @@
 ---
-title: '方法: メッセージのプロパティの表示 |Microsoft Docs'
+title: '方法: メッセージのプロパティを表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205374"
 ---
 # <a name="how-to-display-message-properties"></a>方法: メッセージのプロパティを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-記載されているメッセージの詳細を確認する[メッセージ ビュー](../debugger/messages-view.md)を使用して、[メッセージのプロパティ ダイアログ ボックス](../debugger/message-properties-dialog-box.md)します。  
+[メッセージ ビュー](../debugger/messages-view.md)に一覧表示されているメッセージの詳細を確認するには、[[メッセージ プロパティ] ダイアログ ボックス](../debugger/message-properties-dialog-box.md) を使用します。  
   
-### <a name="to-open-a-message-properties-dialog-box"></a>メッセージのプロパティのダイアログ ボックスを開く  
+### <a name="to-open-a-message-properties-dialog-box"></a>[メッセージ プロパティ] ダイアログボックスを開くには  
   
-1. メッセージ ビューで表示されるツリーからメッセージを選択します。  
+1. メッセージ ビューに表示されているツリーからメッセージを選択します。  
   
-2. **ビュー** ] メニューの [選択**プロパティ**します。  
+2. **[表示]** メニューの **[プロパティ]** をクリックします。  
   
-   プロパティのダイアログ ボックスはモーダルではないため、表示ウィンドウで他のアイテムをクリックして、ダイアログ ボックスの選択項目に関する情報が表示されます。
+   [プロパティ] ダイアログ ボックスはモーダルではないため、ビュー ウィンドウで別の項目をクリックして、選択した項目に関する情報をダイアログ ボックスに表示することができます。

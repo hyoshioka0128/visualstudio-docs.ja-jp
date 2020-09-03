@@ -1,5 +1,5 @@
 ---
-title: 直接プログラムへのアタッチ |Microsoft Docs
+title: プログラムに直接アタッチする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab49163fc1474b541df3bc1b54d336574761baa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148000"
 ---
 # <a name="attaching-directly-to-a-program"></a>プログラムへ直接アタッチする
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-通常は既に実行されているプロセスでプログラムをデバッグする必要のあるユーザーでは、このプロセスに従います。  
+既に実行中のプロセスでプログラムをデバッグする場合は、通常、次のプロセスに従います。  
   
-1. IDE では、選択、**デバッグ プロセス**コマンドから、**ツール**メニュー。  
+1. IDE で、[**ツール**] メニューの [**プロセスのデバッグ**] をクリックします。  
   
     **[プロセス]** ダイアログ ボックスが表示されます。  
   
-2. プロセスを選択およびクリックして、**アタッチ**ボタンをクリックします。  
+2. プロセスを選択し、[ **アタッチ** ] ボタンをクリックします。  
   
-    **プロセスにアタッチ** ダイアログ ボックスが表示されたら、コンピューターにインストールされたすべてのデバッグ エンジン (DEs) を一覧表示します。  
+    コンピューターにインストールされているすべてのデバッグエンジン (DEs) を一覧表示 **する [プロセスにアタッチ** ] ダイアログボックスが表示されます。  
   
-3. 指定を使用して、選択したプロセスをデバッグおよびクリックして DEs **OK**します。  
+3. 選択したプロセスのデバッグに使用する DEs を指定し、[ **OK]** をクリックします。  
   
-   デバッグ パッケージは、デバッグ セッションを開始し、DEs の一覧を渡します。 デバッグ セッションを選択したプロセスへのコールバック関数と共に、このリストを渡しのその実行中のプログラムを列挙するプロセスを尋ねます。  
+   デバッグパッケージによってデバッグセッションが開始され、DEs の一覧が渡されます。 次に、デバッグセッションがコールバック関数と共にこの一覧を選択されたプロセスに渡し、実行中のプログラムを列挙するようにプロセスに指示します。  
   
-   プログラムでは、ユーザー要求に応答してで、デバッグ パッケージはセッション デバッグ マネージャー (SDM) をインスタンス化して、選択した DEs の一覧を渡します。 デバッグ パッケージは、リスト、および、SDM を渡す、 [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)インターフェイス。 呼び出してデバッグ パッケージが選択したプロセスに DEs の一覧を渡します[IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)します。 SDM を呼び出して[IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)プロセスで実行されているプログラムを列挙するポート。  
+   プログラムでは、ユーザーの要求に応じて、デバッグパッケージによってセッションデバッグマネージャー (SDM) がインスタンス化され、選択した DEs の一覧が渡されます。 リストと共に、デバッグパッケージは SDM を [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) インターフェイスに渡します。 デバッグパッケージは、 [IDebugProcess2:: Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)を呼び出して、選択されたプロセスに DEs のリストを渡します。 次に、SDM はポートで [IDebugProcess2:: EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) を呼び出し、プロセスで実行されているプログラムを列挙します。  
   
-   」で詳しく説明とまったく同じプログラムにこの時点から各デバッグ エンジンが接続されている[、起動後にアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)、2 つの例外。  
+   この時点から、各デバッグエンジンは、「 [起動後のアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)」で詳しく説明されているように、2つの例外を含むプログラムにアタッチされます。  
   
-   効率性のため、各 DE がある一連のプログラムに接続できるように、DEs、SDM とアドレス空間を共有する実装されているにグループ化されます。 この場合、 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)呼び出し[IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)し、それにアタッチするプログラムの配列を渡します。  
+   効率を高めるために、SDM とアドレス空間を共有するために実装されている DEs は、各 DE に、アタッチされるプログラムのセットが含まれるようにグループ化されています。 この場合、 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) は [IDebugEngine2:: attach](../../extensibility/debugger/reference/idebugengine2-attach.md) を呼び出して、アタッチするプログラムの配列を渡します。  
   
-   2 つ目の例外は、スタートアップ イベントが既に実行されているプログラムにアタッチ DE によって送信されるは通常含まれていないこと、エントリ ポイント イベントです。  
+   2つ目の例外は、既に実行されているプログラムへのアタッチ解除によって送信されたスタートアップイベントには、通常、エントリポイントイベントが含まれないことです。  
   
-## <a name="see-also"></a>関連項目  
- [起動の後のスタートアップ イベントを送信します。](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
+## <a name="see-also"></a>参照  
+ [起動後のスタートアップイベントの送信](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)

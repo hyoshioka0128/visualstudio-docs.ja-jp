@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183718"
 ---
 # <a name="change-the-appearance-of-a-command"></a>コマンドの外観を変更する
@@ -34,7 +34,7 @@ ms.locfileid: "84183718"
 
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>メニューコマンドの外観を変更するには
 
-1. 「[メニューコマンドのテキストを変更](../extensibility/changing-the-text-of-a-menu-command.md)する」の指示に従って、という名前のメニュー項目を作成 `New Text` します。
+1. 「 [メニューコマンドのテキストを変更](../extensibility/changing-the-text-of-a-menu-command.md) する」の指示に従って、という名前のメニュー項目を作成 `New Text` します。
 
 2. *ChangeMenuText.cs*ファイルで、次の using ステートメントを追加します。
 
@@ -80,9 +80,9 @@ ms.locfileid: "84183718"
 
 6. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。
 
-7. [**ツール**] メニューの [ **ChangeMenuText の呼び出し**] をクリックします。 この時点で、コマンド名は**Invoke ChangeMenuText**であるため、コマンドハンドラーは**changemycommand ()** を呼び出しません。
+7. [ **ツール** ] メニューの [ **ChangeMenuText の呼び出し** ] をクリックします。 この時点で、コマンド名は **Invoke ChangeMenuText**であるため、コマンドハンドラーは **changemycommand ()** を呼び出しません。
 
-8. [**ツール**] メニューに、**新しいテキスト**が表示されます。 [**新しいテキスト**] をクリックします。 これで、コマンドが淡色表示されます。
+8. [ **ツール** ] メニューに、 **新しいテキスト**が表示されます。 [ **新しいテキスト**] をクリックします。 これで、コマンドが淡色表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
