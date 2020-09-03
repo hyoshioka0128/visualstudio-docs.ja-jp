@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381731"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法: ClickOnce 配置で個々の必要条件にサポート URL を指定する
@@ -31,7 +31,7 @@ ms.locfileid: "85381731"
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>個々の前提条件のサポート URL を指定する
 
-1. アプリケーションのアプリケーションマニフェスト ( *.manifest*ファイル) を [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] テキストエディターで開きます。
+1. アプリケーションのアプリケーションマニフェスト ( *.manifest* ファイル) を [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] テキストエディターで開きます。
 
 2. オペレーティングシステムの前提条件として、 `supportUrl` 属性を要素に追加し `dependentOS` ます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "85381731"
      </dependency>
    ```
 
-5. 省略可能。 .NET Framework 4 を対象とするアプリケーションでは、アプリケーションの配置マニフェスト (*アプリケーション*ファイル) を [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] テキストエディターで開きます。
+5. 省略可能。 .NET Framework 4 を対象とするアプリケーションでは、アプリケーションの配置マニフェスト ( *アプリケーション* ファイル) を [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] テキストエディターで開きます。
 
 6. .NET Framework 4 の前提条件として、 `supportUrl` 属性を要素に追加し `compatibleFrameworks` ます。
 
@@ -76,7 +76,7 @@ ms.locfileid: "85381731"
    </compatibleFrameworks>
    ```
 
-7. アプリケーションマニフェストを手動で変更したら、デジタル証明書を使用してアプリケーションマニフェストに再署名してから、配置マニフェストも更新して再署名する必要があります。 このタスクを実行するには、 *Mage.exe*または*MageUI.exe* SDK ツールを使用します。手動による変更を消去して、これらのファイルを再生成することも [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] できます。 Mage.exe を使用したマニフェストの再署名の詳細については、「[方法: アプリケーションマニフェストと配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
+7. アプリケーションマニフェストを手動で変更したら、デジタル証明書を使用してアプリケーションマニフェストに再署名してから、配置マニフェストも更新して再署名する必要があります。 このタスクを実行するには、 *Mage.exe* または *MageUI.exe* SDK ツールを使用します。手動による変更を消去して、これらのファイルを再生成することも [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] できます。 Mage.exe を使用したマニフェストの再署名の詳細については、「 [方法: アプリケーションマニフェストと配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
 
 ## <a name="net-framework-security"></a>.NET Framework のセキュリティ
  アプリケーションが部分信頼で実行するようにマークされている場合、このサポート URL はダイアログボックスに表示されません。
@@ -84,6 +84,6 @@ ms.locfileid: "85381731"
 ## <a name="see-also"></a>関連項目
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks>element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
 - [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545770"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする
@@ -36,13 +36,13 @@ ms.locfileid: "85545770"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>プライマリ相互運用機能アセンブリに参照を追加するには
 
-1. Office プロジェクトを開き、**ソリューションエクスプローラー**でプロジェクト名を選択します。
+1. Office プロジェクトを開き、 **ソリューションエクスプローラー**でプロジェクト名を選択します。
 
 2. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
 
-3. [ **Framework** ] タブで、[**コンポーネント名**] ボックスの一覧から目的の PIA を選択します。 使用可能な Microsoft Office プライマリ相互運用機能アセンブリの詳細については、「 [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。
+3. [ **Framework** ] タブで、[ **コンポーネント名** ] ボックスの一覧から目的の PIA を選択します。 使用可能な Microsoft Office プライマリ相互運用機能アセンブリの詳細については、「 [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。
 
-     プロジェクトが以降を対象としている場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] アセンブリ参照の [**相互運用機能型の埋め込み**] プロパティが既定で**True**に設定されます。 この設定を使用すると、ソリューションはエンド ユーザーのコンピューターに PIA を必要としません。 詳細については、「 [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)」を参照してください。
+     プロジェクトが以降を対象としている場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] アセンブリ参照の [ **相互運用機能型の埋め込み** ] プロパティが既定で **True** に設定されます。 この設定を使用すると、ソリューションはエンド ユーザーのコンピューターに PIA を必要としません。 詳細については、「 [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)」を参照してください。
 
     > [!NOTE]
     > Office プロジェクトでは、[ **COM** ] タブではなく [**参照の追加**] ダイアログの [ **.net** ] タブを使用して、常に office pia への参照を追加します。詳細については、「 [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)」を参照してください。

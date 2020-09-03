@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545874"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>方法: ワークシートのセル内のコントロールのサイズを変更する
@@ -29,19 +29,19 @@ ms.locfileid: "85545874"
 
  デザイン時にコントロールを追加する場合は、各コントロールの配置オプションを設定する必要があります。
 
- プログラムを使用して Windows フォームコントロールを追加し、範囲引数を指定すると、範囲内のセルのサイズが変更されたときにコントロールのサイズが自動的に変更されます。 詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+ プログラムを使用して Windows フォームコントロールを追加し、範囲引数を指定すると、範囲内のセルのサイズが変更されたときにコントロールのサイズが自動的に変更されます。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
 ## <a name="resize-controls-at-design-time"></a>デザイン時にコントロールのサイズを変更する
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>デザイン時にコントロールのサイズをセルに合わせて変更するには
 
-1. [**ツールボックス**] から Windows フォームコントロールをワークシートにドラッグします。
+1. [ **ツールボックス**] から Windows フォームコントロールをワークシートにドラッグします。
 
-2. コントロールを右クリックし、[コントロールの**書式設定**] をクリックします。
+2. コントロールを右クリックし、[コントロールの **書式設定**] をクリックします。
 
-3. [**コントロールの書式設定**] ダイアログボックスで、[**プロパティ**] タブをクリックします。
+3. [ **コントロールの書式設定** ] ダイアログボックスで、[ **プロパティ** ] タブをクリックします。
 
-4. [**オブジェクトの配置**] で、[**セルの移動とサイズ**変更] オプションを選択し、[ **OK**] をクリックします。
+4. [ **オブジェクトの配置**] で、[ **セルの移動とサイズ** 変更] オプションを選択し、[ **OK**] をクリックします。
 
      コントロールを含むセルのサイズを変更すると、セルに合わせてコントロールのサイズが変更されます。
 

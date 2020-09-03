@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587356"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>マネージド コードの "マネージ最小規則" 規則セット
 
 マネージ最小規則は、潜在的なセキュリティホール、アプリケーションのクラッシュ、その他の重要な論理エラーやデザインエラーなど、コードの最も重大な問題に焦点を当てています。 この規則セットは、プロジェクト用に作成するカスタム規則セットに含めます。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
 |[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2231](../code-quality/ca2231.md)|オーバーライド `ValueType.Equals` で、演算子 equals をオーバーロードします|
+|[CA2231](../code-quality/ca2231.md)|オーバーライド時に演算子 equals をオーバーロードします `ValueType.Equals`|
