@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b4c0ac8cff82250169171e1d842e64a34a4523ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282112"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>方法: O/R デザイナーで生成されたコードを拡張する
-**O/R デザイナー**によって生成されるコードは、デザイナー画面でエンティティクラスやその他のオブジェクトに変更が加えられたときに再生成されます。 このコードの再生成により、通常、生成されたコードに追加したコードは、デザイナーがコードを再生成するときに上書きされます。 **O/R デザイナー**には、部分クラスファイルを生成する機能が用意されており、上書きされないコードを追加できます。 **O/R デザイナー**によって生成されるコードに独自のコードを追加する1つの例は、LINQ to SQL (エンティティ) クラスにデータ検証を追加することです。 詳細については、「[方法: エンティティクラスに検証を追加](../data-tools/how-to-add-validation-to-entity-classes.md)する」を参照してください。
+**O/R デザイナー**によって生成されるコードは、デザイナー画面でエンティティクラスやその他のオブジェクトに変更が加えられたときに再生成されます。 このコードの再生成により、通常、生成されたコードに追加したコードは、デザイナーがコードを再生成するときに上書きされます。 **O/R デザイナー**には、部分クラスファイルを生成する機能が用意されており、上書きされないコードを追加できます。 **O/R デザイナー**によって生成されるコードに独自のコードを追加する1つの例は、LINQ to SQL (エンティティ) クラスにデータ検証を追加することです。 詳細については、「 [方法: エンティティクラスに検証を追加](../data-tools/how-to-add-validation-to-entity-classes.md)する」を参照してください。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282320"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
@@ -59,7 +59,7 @@ ms.locfileid: "85282320"
 10. **[OK]** または **[適用]** をクリックします。
 
     > [!NOTE]
-    > 各変更を行った後で [**適用**] をクリックしている限り、各クラスと動作の組み合わせの動作を構成し続けることができます。 [**適用**] をクリックする前にクラスまたは動作を変更すると、警告ダイアログボックスが表示され、変更を適用することができます。
+    > 各変更を行った後で [ **適用** ] をクリックしている限り、各クラスと動作の組み合わせの動作を構成し続けることができます。 [ **適用**] をクリックする前にクラスまたは動作を変更すると、警告ダイアログボックスが表示され、変更を適用することができます。
 
 更新時に既定のランタイム ロジックを使用するように戻すには、**[プロパティ]** ウィンドウで、**[Insert]**、**[Update]**、または **[Delete]** の各コマンドの横にある省略記号をクリックし、**[動作の構成]** ダイアログ ボックスで **[ランタイムを使用]** を選択します。
 
