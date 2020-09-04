@@ -60,7 +60,7 @@
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
-            - name: Sequence
+            - name: シーケンス
               href: sequence-activity-designer.md
             - name: Switch\<T>
               href: switch-t-activity-designer.md
@@ -86,7 +86,7 @@
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
-            - name: Transition
+            - name: 切り替え効果
               href: transition-activity-designer.md
         - name: メッセージング
           items:
@@ -110,7 +110,7 @@
           items:
             - name: ランタイム
               href: runtime-activity-designers.md
-            - name: 永続化
+            - name: 保持
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
@@ -118,7 +118,7 @@
           items:
             - name: プリミティブ
               href: primitives-activity-designers.md
-            - name: 割り当て
+            - name: 代入
               href: assign-activity-designer.md
             - name: 遅延
               href: delay-activity-designer.md
@@ -138,7 +138,7 @@
               href: compensableactivity-activity-designer.md
             - name: Compensate
               href: compensate-activity-designer.md
-            - name: Confirm
+            - name: 確認
               href: confirm-activity-designer.md
             - name: TransactionScope
               href: transactionscope-activity-designer.md
