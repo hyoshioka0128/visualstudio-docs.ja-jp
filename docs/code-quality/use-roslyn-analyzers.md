@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219778"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490288"
 ---
 # <a name="use-code-analyzers"></a>コードアナライザーを使用する
 
@@ -76,6 +76,13 @@ ms.locfileid: "89219778"
 次のスクリーンショットは、エラー一覧に表示されるのと同じ3つの違反を示しています。
 
 ![エラー一覧のエラー、警告、および情報の違反](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>' Hidden ' 重大度と ' None ' 重大度
+
+`Hidden` 既定で有効になっている重要度の規則は、 `None` いくつかの方法で、無効または重要度の規則と異なります。
+
+- 重大度規則に対してコード修正が登録されている場合は、 `Hidden` 非表示の診断がユーザーに表示されない場合でも、Visual Studio の電球コードのリファクタリングアクションとして修正プログラムが提供されます。 これは、無効になっている重要度の規則には当てはまりません `None` 。
+- `Hidden` 重大度ルールは、 [EditorConfig ファイル内で一度に複数のアナライザールールのルールの重要度を設定](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file)するエントリによって一括構成できます。 `None` 重要度ルールをこのように構成することはできません。 代わりに、 [各ルール ID に対して EditorConfig ファイルでルールの重要度を設定](#set-rule-severity-in-an-editorconfig-file)するエントリを使用して構成する必要があります。
 
 ::: moniker range=">=vs-2019"
 
