@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283009"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508549"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへの Windows フォーム コントロールのバインド
 
@@ -53,7 +53,7 @@ ms.locfileid: "85283009"
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>DataGridView コントロールのデータにバインドする
 
-[DataGridView コントロール](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)の場合、テーブル全体がその1つのコントロールにバインドされます。 **DataGridView**をフォームにドラッグすると、レコード間を移動するためのツールストリップ ( <xref:System.Windows.Forms.BindingNavigator> ) も表示されます。 [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。 次の図では、Customers テーブルが Orders テーブルに関連付けられているので、 [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) も追加されています。 これらの変数はすべて、自動的に生成されるコードでは、フォームクラスのプライベートメンバーとして宣言されます。 **DataGridView**を埋めるための自動生成されたコードは、 `Form_Load` イベントハンドラーにあります。 データベースを更新するためにデータを保存するコードは、 `Save` **BindingNavigator**のイベントハンドラーにあります。 必要に応じて、このコードを移動または変更できます。
+[DataGridView コントロール](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)の場合、テーブル全体がその1つのコントロールにバインドされます。 **DataGridView**をフォームにドラッグすると、レコード間を移動するためのツールストリップ ( <xref:System.Windows.Forms.BindingNavigator> ) も表示されます。 [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。 次の図では、Customers テーブルが Orders テーブルに関連付けられているので、 [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) も追加されています。 これらの変数はすべて、自動的に生成されるコードでは、フォームクラスのプライベートメンバーとして宣言されます。 **DataGridView**を埋めるための自動生成されたコードは、 `Form_Load` イベントハンドラーにあります。 データベースを更新するためにデータを保存するコードは、 `Save` **BindingNavigator**のイベントハンドラーにあります。 必要に応じて、このコードを移動または変更できます。
 
 ![BindingNavigator を使用した GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 

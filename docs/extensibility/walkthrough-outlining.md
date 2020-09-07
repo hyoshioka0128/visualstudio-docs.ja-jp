@@ -10,17 +10,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906178"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508926"
 ---
 # <a name="walkthrough-outlining"></a>チュートリアル: アウトライン
 展開または折りたたむテキスト領域の種類を定義することで、アウトラインなどの言語ベースの機能を設定します。 言語サービスのコンテキストでリージョンを定義することも、独自のファイル名の拡張子とコンテンツの種類を定義して、その型にのみ領域の定義を適用することもできます。また、既存のコンテンツの種類 ("text" など) に領域の定義を適用することもできます。 このチュートリアルでは、アウトライン領域を定義および表示する方法について説明します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトを作成する

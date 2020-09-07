@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1dddc235131322a61cdb0106d866b138040d8c18
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72655144"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508212"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "72655144"
 - Visual Studio キャッシュがフラッシュされます。
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio のパフォーマンスの向上
- 大規模なソリューションやメモリ不足の状況に対処するときに Visual Studio のパフォーマンスを向上させる方法に関するヒントとテクニックについては、「 [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)」を参照してください。
+ 大規模なソリューションやメモリ不足の状況に対処するときに Visual Studio のパフォーマンスを向上させる方法に関するヒントとテクニックについては、「 [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)」を参照してください。
 
 ## <a name="full-solution-analysis-suspended"></a>完全なソリューション分析が中断されました
  既定では、完全なソリューション分析は Visual Basic に対して有効になり、Visual C# では無効になります。 ただし、メモリ不足の状態では、[オプション] ダイアログボックスの設定に関係なく、完全なソリューション分析が Visual Basic と Visual C# の両方で自動的に無効になります。 ただし、[オプション] ダイアログボックスの [**完全なソリューション分析を有効にする**] チェックボックスをオンにするか、Visual Studio を再起動して、情報バーに表示されたときに [**再有効化**] ボタンを選択することで、完全なソリューション分析を再び有効にすることができます。 [オプション] ダイアログボックスには、常に現在の完全なソリューション分析の設定が表示されます。 詳細については、「 [方法: 完全なソリューション分析を有効または無効](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)にする」を参照してください。
@@ -63,4 +63,4 @@ ms.locfileid: "72655144"
 
 - [方法: 完全ソリューション分析を有効/無効にする](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [ガベージ コレクションの基礎](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
-- [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

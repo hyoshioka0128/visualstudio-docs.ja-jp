@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769480"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508380"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
 
@@ -40,7 +40,7 @@ Visual Studio はメモリ不足の状態を検出すると、安定した状態
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio のパフォーマンスの向上
 
-大規模なソリューションやメモリ不足の状況に対処するときに Visual Studio のパフォーマンスを向上させる方法に関するヒントとテクニックについては、「 [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)」を参照してください。
+大規模なソリューションやメモリ不足の状況に対処するときに Visual Studio のパフォーマンスを向上させる方法に関するヒントとテクニックについては、「 [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)」を参照してください。
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>ライブコード分析が最小スコープに縮小される
 
@@ -69,4 +69,4 @@ GC 低待機時間モードを再度有効にするには、Visual Studio を再
 
 - [方法: マネージコードのライブコード分析スコープを構成する](./configure-live-code-analysis-scope-managed-code.md)
 - [ガベージ コレクションの基礎](/dotnet/standard/garbage-collection/fundamentals)
-- [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)
