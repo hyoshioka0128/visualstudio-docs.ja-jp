@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219687"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509849"
 ---
 # <a name="globalization-warnings"></a>グローバリゼーションの警告
 グローバリゼーションの警告は、国際対応のライブラリとアプリケーションをサポートします。
@@ -29,9 +29,6 @@ ms.locfileid: "89219687"
 
 |ルール|説明|
 |----------|-----------------|
-|[CA1300:MessageBoxOption を指定します](../code-quality/ca1300.md)|テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。|
-|[CA1301:重複するアクセラレータを使用しません](../code-quality/ca1301.md)|Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールが重複するアクセスキーを持っている場合、アクセスキーの動作は適切に定義されていません。|
-|[CA1302:ロケール特有の文字列をハードコードしません](../code-quality/ca1302.md)|System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 System.environment.specialfolder 列挙型に関連付けられている場所は、GetFolderPath メソッドによって返されます。これは、現在実行中のコンピューターに適しています。|
 |[CA1303:ローカライズされるパラメーターとしてリテラルを渡さない](../code-quality/ca1303.md)|外部から参照できるメソッドは、.NET コンストラクターまたはメソッドにパラメーターとして文字列リテラルを渡し、その文字列はローカライズ可能である必要があります。|
 |[CA1304:CultureInfo を指定します](../code-quality/ca1304.md)|System.Globalization.CultureInfo パラメーターを受け入れるオーバーロードを持つメンバーを呼び出しているメソッドまたはコンストラクターが、CultureInfo パラメーターを使用するオーバーロードを呼び出していません。 CultureInfo オブジェクトまたは System.IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。|
 |[CA1305:IFormatProvider を指定します](../code-quality/ca1305.md)|System.IFormatProvider パラメーターを受け入れるオーバーロードを持つメンバーを 1 つ以上呼び出しているメソッドまたはコンストラクターが、IFormatProvider パラメーターを使用するオーバーロードを呼び出していません。 System.Globalization.CultureInfo オブジェクトまたは IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。|
