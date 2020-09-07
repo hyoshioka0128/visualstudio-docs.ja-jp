@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272087"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509836"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Visual Studio でのデータの使用
 
@@ -89,7 +89,7 @@ JavaScript、Python、PHP、Ruby、または C++ のアプリケーションで�
 
 ASP.NET に関連するデータアクセスドキュメントについては、ASP.NET サイトの [データの操作](https://www.asp.net/web-forms/overview/presenting-and-managing-data) に関するページを参照してください。 ASP.NET MVC での Entity Framework の使用に関するチュートリアルについては、「 [mvc 5 を使用した Entity Framework 6 Code First のはじめに](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)」を参照してください。
 
-C# または Visual Basic のユニバーサル Windows プラットフォーム (UWP) アプリは、Microsoft Azure SDK for .NET を使用して Azure Storage およびその他の Azure サービスにアクセスできます。 Windows の Web. HttpClient クラスは、任意の RESTful サービスとの通信を可能にします。 詳細については、「 [Windows を使用して http サーバーに接続する方法](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)」を参照してください。
+C# または Visual Basic のユニバーサル Windows プラットフォーム (UWP) アプリは、Microsoft Azure SDK for .NET を使用して Azure Storage およびその他の Azure サービスにアクセスできます。 Windows の Web. HttpClient クラスは、任意の RESTful サービスとの通信を可能にします。 詳細については、「 [Windows を使用して http サーバーに接続する方法](/previous-versions/windows/apps/dn469430(v=win.10))」を参照してください。
 
 ローカルコンピューター上のデータストレージの場合、推奨される方法は、アプリケーションと同じプロセスで実行される SQLite を使用することです。 オブジェクトリレーショナルマッピング (ORM) レイヤーが必要な場合は、Entity Framework を使用できます。 詳細については、Windows デベロッパーセンターの「 [データアクセス](/windows/uwp/data-access/index) 」を参照してください。
 

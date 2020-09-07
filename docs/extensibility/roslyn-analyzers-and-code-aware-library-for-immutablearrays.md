@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444571"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509407"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays 用の roslyn アナライザーとコード対応ライブラリ
 
@@ -25,7 +25,7 @@ ms.locfileid: "81444571"
 
 * Visual Studio 2015 (Express Edition ではない) 以降のバージョン。 無料の[Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)を使用できます。
 * [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)。 また、Visual Studio をインストールするときに、[**共通ツール**] の**Visual Studio Extensibility Tools**をオンにして SDK を同時にインストールすることもできます。 Visual Studio を既にインストールしている場合は、メインメニュー**ファイル**[新しいプロジェクト] に移動し  >  **New**  >  **Project**、左側のナビゲーションウィンドウで [ **C#** ] を選択し、[**拡張機能**] を選択して、この SDK をインストールすることもできます。 [**Visual Studio Extensibility Tools のインストール**] 階層リンクプロジェクトテンプレートを選択すると、SDK をダウンロードしてインストールするように求められます。
-* [.NET Compiler Platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 この SDK をインストールするには、メインメニュー**ファイル**[新しいプロジェクト] に移動し  >  **New**  >  **Project**、左側のナビゲーションウィンドウで [ **C#** ] を選択し、[**機能拡張**] を選択します。 [**.NET COMPILER PLATFORM sdk のダウンロード**] 階層リンクプロジェクトテンプレートを選択すると、sdk をダウンロードしてインストールするように求められます。 この SDK には、 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)が含まれています。 この便利なツールを使用すると、アナライザーでどのような種類のコードモデルを検索する必要があるかを判断できます。 Analyzer インフラストラクチャは、特定のコードモデル型に対してコードを呼び出すので、コードは必要なときにのみ実行され、関連するコードの分析にのみ集中できます。
+* [.NET Compiler Platform ("Roslyn") SDK](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)。 この SDK をインストールするには、メインメニュー**ファイル**[新しいプロジェクト] に移動し  >  **New**  >  **Project**、左側のナビゲーションウィンドウで [ **C#** ] を選択し、[**機能拡張**] を選択します。 [**.NET COMPILER PLATFORM sdk のダウンロード**] 階層リンクプロジェクトテンプレートを選択すると、sdk をダウンロードしてインストールするように求められます。 この SDK には、 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md)が含まれています。 この便利なツールを使用すると、アナライザーでどのような種類のコードモデルを検索する必要があるかを判断できます。 Analyzer インフラストラクチャは、特定のコードモデル型に対してコードを呼び出すので、コードは必要なときにのみ実行され、関連するコードの分析にのみ集中できます。
 
 ## <a name="whats-the-problem"></a>何がそんなに問題ですか。
 
