@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250857"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508510"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio で Azure クラウド サービスのロールを構成する
 Azure クラウド サービスには、worker ロールまたは Web ロールを割り当てることができます。 それぞれのロールについて、そのセットアップ方法を定義すると共に、実行方法を構成する必要があります。 クラウド サービスのロールの詳細については、 [Azure Cloud Services の概要](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)を紹介した動画をご覧ください。
@@ -140,7 +140,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Azure クラウド サービスで使用するカスタム設定を追加する
-特定のサービス構成に使用する文字列の名前と値は、サービス構成ファイルのカスタム設定で追加できます。 コードの中でカスタム設定の値を読み取ってその値を基にロジックを制御することで、クラウド サービスの機能を構成することができます。 これらのサービス構成の値を変更するために、サービス パッケージをリビルドする必要はありません。クラウド サービスの実行中に値を変更することもできます。 設定が変更されたことは、その通知をコードで受け取ることによって確認できます。 「[RoleEnvironment.Changing イベント](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx)」を参照してください。
+特定のサービス構成に使用する文字列の名前と値は、サービス構成ファイルのカスタム設定で追加できます。 コードの中でカスタム設定の値を読み取ってその値を基にロジックを制御することで、クラウド サービスの機能を構成することができます。 これらのサービス構成の値を変更するために、サービス パッケージをリビルドする必要はありません。クラウド サービスの実行中に値を変更することもできます。 設定が変更されたことは、その通知をコードで受け取ることによって確認できます。 「[RoleEnvironment.Changing イベント](/previous-versions/azure/reference/ee758134(v=azure.100))」を参照してください。
 
 カスタム設定は、目的のサービス構成を対象に追加、削除、変更することができます。 文字列の値はサービス構成ごとに使い分けることができます。
 
@@ -269,4 +269,4 @@ using (FileStream writeStream = File.Create(filePath))
 1. Windows エクスプローラー ウィンドウが表示されたら、**[検索]** ボックスに「`MyLocalStorageTest.txt``」と入力し、**Enter** キーを押して検索を開始します。
 
 ## <a name="next-steps"></a>次のステップ
-Visual Studio における Azure プロジェクトの詳細については、「 [Azure プロジェクトの構成](vs-azure-tools-configuring-an-azure-project.md)」を参照してください。 クラウド サービスのスキーマの詳細については、「 [スキーマ リファレンス](https://msdn.microsoft.com/library/azure/dd179398)」を参照してください。
+Visual Studio における Azure プロジェクトの詳細については、「 [Azure プロジェクトの構成](vs-azure-tools-configuring-an-azure-project.md)」を参照してください。 クラウド サービスのスキーマの詳細については、「 [スキーマ リファレンス](/previous-versions/azure/dd179398(v=azure.100))」を参照してください。

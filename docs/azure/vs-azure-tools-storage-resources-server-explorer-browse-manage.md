@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800477"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508445"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 
@@ -126,7 +126,7 @@ BLOB をアップロードするには、コンテナーを開き、BLOB コン�
 
 Azure Diagnostics を使用して Azure アプリケーションのデータをログに記録し、ログをストレージ アカウントに転送した場合、Azure によってこれらのログ用に作成されたコンテナーが表示されます。 サーバー エクスプローラーでこれらのログを表示すれば、アプリケーション、特に Azure にデプロイされたアプリケーションの問題を簡単に特定できます。
 
-Azure Diagnostics の詳細については、「 [Azure Diagnostics を使用したログ データの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)」を参照してください。
+Azure Diagnostics の詳細については、「 [Azure Diagnostics を使用したログ データの収集](/azure/cloud-services/cloud-services-dotnet-diagnostics)」を参照してください。
 
 ### <a name="to-get-the-url-for-a-blob"></a>BLOB の URL を取得するには
 
@@ -262,7 +262,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
    ![Azure のストレージ アカウントの作成](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. **［作成］** を選択します
+1. **[作成]** を選択します。
 
 新しいストレージ アカウントがソリューション エクスプローラーの **[Storage]** ボックスの一覧に表示されます。
 
@@ -275,7 +275,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
    * 接続する既存のストレージ アカウントの名前。
    * 選択したストレージ アカウントのキー。 この値は通常、ストレージ アカウントを選択したときに提供されます。 ストレージ アカウント キーを Visual Studio に記憶させる場合は、**[アカウント キーを記憶する]** チェック ボックスをオンにします。
-   * HTTP、HTTPS、カスタム エンドポイントなど、ストレージ アカウントへの接続に使用するプロトコル。 カスタム エンドポイントの詳細については、[接続文字列の構成方法](https://msdn.microsoft.com/library/azure/ee758697.aspx)に関する記事をご覧ください。
+   * HTTP、HTTPS、カスタム エンドポイントなど、ストレージ アカウントへの接続に使用するプロトコル。 カスタム エンドポイントの詳細については、[接続文字列の構成方法](/azure/storage/common/storage-configure-connection-string)に関する記事をご覧ください。
 
 ### <a name="to-view-the-secondary-endpoints"></a>セカンダリ エンドポイントを表示するには
 

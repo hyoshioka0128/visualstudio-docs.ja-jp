@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84179961"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508406"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -22,7 +22,7 @@ Visual Studio で Web アプリケーションを作成するときに、Azure �
 
 これらのスクリプトを使用すると、サイトのカスタマイズされたバージョン (開発およびテスト環境とも呼ばれます) を、一時的に使用するためにプロビジョニングできます。 たとえば、テスト スイートの実行、バグの再現、バグ修正のテスト、提案された変更の試験的な適用を行うために、Azure 仮想マシンまたは Web サイトのステージング スロットで Web サイトの特定のバージョンをセットアップしたり、デモまたはプレゼンテーション用にカスタム環境をセットアップしたりできます。 プロジェクトを発行するスクリプトを作成したら、必要に応じてそのスクリプトを再実行することで、同一の環境を再作成できます。また、Web アプリケーションの独自のビルドでスクリプトを実行して、テスト用のカスタム環境を作成することもできます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
 
 * **Azure ワークロード**がインストールされた Visual Studio 2015 以降、または Visual Studio 2013 と Azure SDK 2.3 以降。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
 * Azure PowerShell 0.7.4 以降。 「 [Azure PowerShell のインストールと構成の方法](/powershell/azure/overview)」を参照してください。
@@ -154,7 +154,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    ![Web 配置パッケージの作成](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   詳細については、「 [方法: Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」をご覧ください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
+   詳細については、「 [方法: Visual Studio で Web 配置パッケージを作成する](/previous-versions/aspnet/dd465323(v=vs.110))」をご覧ください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
 1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。

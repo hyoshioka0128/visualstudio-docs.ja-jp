@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904994"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508952"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>チュートリアル: 電球の提案を表示する
 電球は、Visual Studio エディターのアイコンです。これは、組み込みのコードアナライザーまたはコードリファクタリングで特定された問題の修正など、一連のアクションを表示するために展開されます。
 
  Visual C# と Visual Basic エディターでは、.NET Compiler Platform ("Roslyn") を使用して、電球を自動的に表示するアクションを使用して独自のコードアナライザーを記述し、パッケージ化することもできます。 詳細については、次を参照してください。
 
-- [方法: C# 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [方法: C# 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [方法: Visual Basic 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [方法: Visual Basic 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   C++ などの他の言語では、その機能のスタブ実装を作成するための提案など、いくつかのクイックアクションの電球も用意されています。
 
@@ -36,7 +36,7 @@ ms.locfileid: "85904994"
 
   電球を使用すると、独自の推奨アクションを提供できます。 たとえば、左中かっこを新しい行に移動したり、前の行の末尾に移動したりするアクションを指定できます。 次のチュートリアルでは、現在の単語に表示される電球を作成する方法を説明します。また、[ **大文字に変換** ] と [ **小文字に**変換] の2つの推奨アクションがあります。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトを作成する

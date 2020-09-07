@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62572286"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508419"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell スクリプト)
 仮想マシンに Web アプリケーションをデプロイします。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
@@ -53,7 +53,7 @@ Publish-WebApplicationVM
 | ワイルドカード文字の受け入れ |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-仮想マシンに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [方法: Visual Studio で Web デプロイ パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」をご覧ください。
+仮想マシンに発行する Web デプロイ パッケージへのパス。 Visual Studio で Web の発行ウィザードを使用して、このパッケージを作成できます。 詳細については、「 [方法: Visual Studio で Web デプロイ パッケージを作成する](/previous-versions/aspnet/dd465323(v=vs.110))」をご覧ください。
 
 | エイリアス | なし |
 | --- | --- |

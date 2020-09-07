@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800490"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508484"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
 
@@ -75,7 +75,7 @@ Azure コンピューティング エミュレーターを使用してローカ�
 
     ![[デバッガーのアタッチ]](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. デバッガーがインスタンスにアタッチされた後、通常どおりにデバッグします。 デバッガーは、ロールの適切なホスト プロセスに自動的にアタッチされます。 ロール応じて、w3wp.exe、WaWorkerHost.exe、または WaIISHost.exe にアタッチします。 デバッガーがアタッチされるプロセスを検証するには、サーバー エクスプローラーでインスタンス ノードを展開します。 Azure プロセスの詳細については、[Azure ロールのアーキテクチャ](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)に関するページを参照してください。
+3. デバッガーがインスタンスにアタッチされた後、通常どおりにデバッグします。 デバッガーは、ロールの適切なホスト プロセスに自動的にアタッチされます。 ロール応じて、w3wp.exe、WaWorkerHost.exe、または WaIISHost.exe にアタッチします。 デバッガーがアタッチされるプロセスを検証するには、サーバー エクスプローラーでインスタンス ノードを展開します。 Azure プロセスの詳細については、[Azure ロールのアーキテクチャ](/archive/blogs/kwill/windows-azure-role-architecture)に関するページを参照してください。
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Azure 仮想マシンで実行されているプログラムをデバッグす�
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. 仮想マシンでデバッグするプロセスを選択し、[ **アタッチ**] を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「[Visual Studio での 1 つ以上のプロセスのデバッグ](https://msdn.microsoft.com/library/jj919165.aspx)」および [Azure ロールのアーキテクチャ](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/)に関するページを参照してください。
+5. 仮想マシンでデバッグするプロセスを選択し、[ **アタッチ**] を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「[Visual Studio での 1 つ以上のプロセスのデバッグ](../debugger/debug-multiple-processes.md)」および [Azure ロールのアーキテクチャ](/archive/blogs/kwill/windows-azure-role-architecture)に関するページを参照してください。
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>デバッグ用の Web プロジェクトと仮想マシンを作成する
 
@@ -167,7 +167,7 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
     ![Azure activity log](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. [Visual Studio でワンクリック発行を使用して Web プロジェクトをデプロイする方法](https://msdn.microsoft.com/library/dd465337.aspx)に関するページの説明に従って、プロジェクトを発行します。 ここでは、仮想マシンでデバッグするため、**Web の発行**ウィザードの [**設定**] ページで、構成として [**デバッグ**] を選択します。 このように設定することで、デバッグ中もコードのシンボルを使用できます。
+6. [Visual Studio でワンクリック発行を使用して Web プロジェクトをデプロイする方法](/previous-versions/aspnet/dd465337(v=vs.110))に関するページの説明に従って、プロジェクトを発行します。 ここでは、仮想マシンでデバッグするため、**Web の発行**ウィザードの [**設定**] ページで、構成として [**デバッグ**] を選択します。 このように設定することで、デバッグ中もコードのシンボルを使用できます。
 
     ![Publish settings](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 仮想マシンでデバッグするプロセスを選択し、[ **アタッチ**] を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「 [Visual Studio での 1 つ以上のプロセスのデバッグ](https://msdn.microsoft.com/library/jj919165.aspx) 」を参照してください。
+10. 仮想マシンでデバッグするプロセスを選択し、[ **アタッチ**] を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「 [Visual Studio での 1 つ以上のプロセスのデバッグ](../debugger/debug-multiple-processes.md) 」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

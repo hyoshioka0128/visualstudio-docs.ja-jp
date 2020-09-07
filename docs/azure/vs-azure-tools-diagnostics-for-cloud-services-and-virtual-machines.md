@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426734"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508497"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
@@ -156,18 +156,18 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 ```
 
 ### <a name="performance-counters"></a>パフォーマンス カウンター
-パフォーマンス カウンターの情報は、システムのボトルネックを特定して、システムとアプリケーションのパフォーマンスを微調整するのに役立ちます。 詳細については、「[Azure アプリケーションでのパフォーマンス カウンターの作成と使用](https://msdn.microsoft.com/library/azure/hh411542.aspx)」を参照してください。 パフォーマンス カウンターを取り込むには、**[パフォーマンス カウンターの転送を有効にする]** チェック ボックスをオンにします。 ストレージ アカウントへのイベント ログの転送間隔を増減するには、**[転送間隔 (分)]** の値を変更します。 追跡するパフォーマンス カウンターに該当するチェック ボックスをオンにしてください。
+パフォーマンス カウンターの情報は、システムのボトルネックを特定して、システムとアプリケーションのパフォーマンスを微調整するのに役立ちます。 詳細については、「[Azure アプリケーションでのパフォーマンス カウンターの作成と使用](/azure/cloud-services/diagnostics-performance-counters)」を参照してください。 パフォーマンス カウンターを取り込むには、**[パフォーマンス カウンターの転送を有効にする]** チェック ボックスをオンにします。 ストレージ アカウントへのイベント ログの転送間隔を増減するには、**[転送間隔 (分)]** の値を変更します。 追跡するパフォーマンス カウンターに該当するチェック ボックスをオンにしてください。
 
 ![パフォーマンス カウンター](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-リストにないパフォーマンス カウンターを追跡するには、構文の候補を使用してパフォーマンス カウンターを入力し、 **[追加]** を選択します。 仮想マシン上のオペレーティングシステムによって、追跡できるパフォーマンスカウンターが決まります。構文の詳細については、「 [カウンターパスの指定](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx)」を参照してください。
+リストにないパフォーマンス カウンターを追跡するには、構文の候補を使用してパフォーマンス カウンターを入力し、 **[追加]** を選択します。 仮想マシン上のオペレーティングシステムによって、追跡できるパフォーマンスカウンターが決まります。構文の詳細については、「 [カウンターパスの指定](/windows/win32/perfctrs/specifying-a-counter-path)」を参照してください。
 
 ### <a name="infrastructure-logs"></a>インフラストラクチャ ログ
 インフラストラクチャ ログには、Azure 診断インフラストラクチャ、RemoteAccess モジュール、および RemoteForwarder モジュールに関する情報があります。 インフラストラクチャ ログに関する情報を収集するには、**[インフラストラクチャ ログの転送を有効にする]** チェック ボックスをオンします。 ストレージ アカウントへのインフラストラクチャ ログの転送間隔を増減するには、**[転送間隔 (分)]** の値を変更します。
 
 ![診断インフラストラクチャ ログ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-詳細については、「 [Azure 診断を使用したログデータの収集](https://msdn.microsoft.com/library/azure/gg433048.aspx)」を参照してください。
+詳細については、「 [Azure 診断を使用したログデータの収集](/azure/cloud-services/cloud-services-dotnet-diagnostics)」を参照してください。
 
 ### <a name="log-directories"></a>[ログ ディレクトリ]
 ログ ディレクトリには、インターネット インフォメーション サービス (IIS) の要求、失敗した要求、または選択したフォルダーのログ ディレクトリから収集されたデータがあります。 ログ ディレクトリを取り込むには、**[ログ ディレクトリの転送を有効にする]** チェック ボックスをオンにします。 ストレージ アカウントへのログの転送間隔を増減するには、**[転送間隔 (分)]** の値を変更します。
@@ -185,7 +185,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 ![ETW ログ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-[System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) 名前空間のクラスを通して ASP.NET で ETW フレームワークがサポートされています。 Microsoft.WindowsAzure.Diagnostics は、標準の [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) クラスを継承して拡張する名前空間です。この名前空間では、Azure 環境のログ記録フレームワークとして [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) を使用できます。 詳細については、[Microsoft Azure でログ記録とトレースを制御する方法](https://msdn.microsoft.com/magazine/ff714589.aspx)と [Azure クラウドサービスと仮想マシンでの診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
+[System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 名前空間のクラスを通して ASP.NET で ETW フレームワークがサポートされています。 Microsoft.WindowsAzure.Diagnostics は、標準の [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) クラスを継承して拡張する名前空間です。この名前空間では、Azure 環境のログ記録フレームワークとして [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) を使用できます。 詳細については、[Microsoft Azure でログ記録とトレースを制御する方法](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure)と [Azure クラウドサービスと仮想マシンでの診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
 
 ### <a name="crash-dumps"></a>クラッシュ ダンプ
 ロール インスタンスがクラッシュしたときの情報を取り込むには、**[クラッシュ ダンプの転送を有効にする]** チェック ボックスをオンにします。 (ASP.NET ではほとんどの例外が処理されるため、この方法は一般に worker ロールに対してのみ有効です)。クラッシュダンプに割り当てるストレージ領域の割合を増減するには、[ **ディレクトリクォータ (%)** ] の値を変更します。 クラッシュ ダンプが保存されるストレージ コンテナーを変更でき、ダンプの種類として **[フル]** または **[ミニ]** を選択できます。
@@ -194,7 +194,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
 
 ![クラッシュ ダンプ](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-詳細については、[Microsoft Azure でログ記録とトレースを制御する方法](https://msdn.microsoft.com/magazine/ff714589.aspx)と [Microsoft Azure Diagnostics (第 4 部: カスタム ログ コンポーネントと Azure Diagnostics 1.3 の変更点)](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/) に関するページを参照してください。
+詳細については、[Microsoft Azure でログ記録とトレースを制御する方法](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure)と [Microsoft Azure Diagnostics (第 4 部: カスタム ログ コンポーネントと Azure Diagnostics 1.3 の変更点)](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/) に関するページを参照してください。
 
 ## <a name="view-the-diagnostics-data"></a>診断データの表示
 クラウド サービスまたは仮想マシンの診断データを収集したら、そのデータを表示することができます。
@@ -256,7 +256,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
     サーバー エクスプローラーでデータ収集を変更した場合、その変更は、クラウド サービスを再度フル デプロイするまで有効になります。 既定の発行設定を使用する場合、変更は上書きされません。 既定の発行設定は、再度のフル デプロイを行うためではなく、既存のデプロイを更新するためのものです。 デプロイ時に設定が消去されるようにするには、発行ウィザードの **[詳細設定]** タブに移動し、**[配置の更新]** チェック ボックスをオフにします。 このチェック ボックスをオフにした状態で再デプロイすると、ロールの **[プロパティ]** エディターで行った .wadcfgx (または .wadcfg) ファイルの設定に戻ります。 デプロイを更新した場合、Azure は前の設定を保持します。
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Azure クラウド サービスの問題のトラブルシューティング
-クラウド サービス プロジェクトで、ロールが "ビジー" 状態のままになる、リサイクルを繰り返す、内部サーバー エラーをスローするなどの問題が発生した場合、問題を診断して修正するために使用できる各種のツールと手法があります。 一般的な問題とソリューションの具体例や、エラーを診断して修正するために使用できる概念とツールの概要については、[Azure PaaS 計算診断データ](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/)に関するページを参照してください。
+クラウド サービス プロジェクトで、ロールが "ビジー" 状態のままになる、リサイクルを繰り返す、内部サーバー エラーをスローするなどの問題が発生した場合、問題を診断して修正するために使用できる各種のツールと手法があります。 一般的な問題とソリューションの具体例や、エラーを診断して修正するために使用できる概念とツールの概要については、[Azure PaaS 計算診断データ](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data)に関するページを参照してください。
 
 ## <a name="q--a"></a>Q & A
 **バッファー サイズとは何ですか。その大きさはどのくらいが適切ですか。**
