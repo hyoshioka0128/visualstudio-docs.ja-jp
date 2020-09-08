@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595619"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])
@@ -196,12 +196,12 @@ ms.locfileid: "75595619"
 |**XML 属性**|属性名。|
 |**XML 属性の引用符**|XML 属性に使用する引用符。|
 |**XML 属性値**|XML 属性の内容。|
-|**XML CData セクション**|\<![CDATA[…]]> の内容。|
+|**XML CData セクション**|\<![CDATA[...]]> の内容。|
 |**XML コメント**|\<!-- --> の内容。|
-|**XML 区切り文字**|XML 構文の区切り記号 (<、<?、<!、\<!--、-->、?\>、\<![、]]>、および [、] など)。|
-|**XML ドキュメント属性**|XML ドキュメントの属性の値。たとえば、\<param name="I"> です。"I" は別の色で表示されます。|
+|**XML 区切り文字**|XML 構文の区切り記号 (<、<?、<!、\<!--, -->、?\>、\<![, ]]>、[, ] など)。|
+|**XML ドキュメント属性**|XML ドキュメントの属性の値。(\<param name="I"> など。"I" は色づけされます。)|
 |**XML ドキュメント コメント**|XML ドキュメント コメントで囲まれたコメント。|
-|**XML ドキュメント タグ**|XML ドキュメント コメントのタグ。次に例を示します。<br /><br /> /// \<summary>|
+|**XML ドキュメント タグ**|XML ドキュメント コメントのタグ。次に例を示します。<br /><br /> /// \<summary>.|
 |**XML キーワード**|DTD キーワード (CDATA、IDREF、NDATA など)。|
 |**XML 名**|要素名および処理命令のターゲット名。|
 |**XML 処理命令**|処理命令の内容 (ターゲット名を除く)。|

@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279316"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
@@ -38,7 +38,7 @@ Visual Studio IDE の外部でビルドを実行し、ビルドは成功した�
 
 ![VC++ インクルード ディレクトリ](media/vcpp-intellisense-include-paths.png)
 
-**VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<編集>]** を選択し、 **[マクロ]** ボタンをクリックします。
+**VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<Edit>]** を選択し、 **[マクロ]** ボタンをクリックします。
 
 ### <a name="makefile-projects"></a>メイクファイル プロジェクト
 

@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154895"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>手順 5: ポーリング Flask Web プロジェクト テンプレートを使用する
@@ -296,9 +296,9 @@ def details(key):
 {% endblock %}
 ```
 
-**[投票]** ボタンには `type="submit"` があるため、選択すると、もう一度 `details` 関数にルーティングされるのと同じ URL に戻される POST 要求が生成されます。 ただし今回は、フォーム データから選択肢が抽出され、/results/\<choice\> にリダイレクトされます。
+**[投票]** ボタンには `type="submit"` があるため、選択すると、もう一度 `details` 関数にルーティングされるのと同じ URL に戻される POST 要求が生成されます。 しかし、今回は、フォーム データから選択肢が抽出され、/results/\<choice\> にリダイレクトされます。
 
-/results/\<key\> URL はその後、*views.py* の `results` 関数にルーティングされます。この関数はその後、ポーリングの `calculate_stats` メソッドを呼び出し、*templates\results.html* を使用してレンダリングします。
+その後、/results/\<key\> URL は *views.py* の `results` 関数にルーティングされます。これはその後、ポーリングの `calculate_stats` メソッドを呼び出し、レンダリングに *templates\results.html* を使用します。
 
 ```python
 @app.route('/results/<key>')

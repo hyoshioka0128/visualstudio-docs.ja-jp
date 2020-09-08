@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75404277"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>コード エディターでデータヒントのデータ値を表示する
@@ -75,7 +75,7 @@ DataTips は、デバッグ中にプログラムの変数に関する情報を�
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>特定のファイルのすべてのデータヒントを閉じる
 
-特定のファイルのすべてのデータヒントを閉じるには、 **[デバッグ]** メニューで **[\<ファイル名> にピン設定されたすべてのデータヒントをクリア]** を選択します。
+特定のファイルのすべてのデータヒントを閉じるには、 **[デバッグ]** メニューで **[\<Filename> にピン設定されたすべてのデータヒントをクリア]** を選択します。
 
 ## <a name="expand-and-edit-information"></a>情報を展開して編集する
 データヒントを使用すると、配列、構造体、またはオブジェクトを展開して、メンバーを表示できます。 DataTip の変数値を編集することもできます。

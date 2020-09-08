@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: c3b92a9912a5816f16c6059d1738dbc833851346
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81397377"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
@@ -152,7 +152,7 @@ Visual Studio でプロジェクトのプロパティを調べて、サーバー
     > [!NOTE]
     > リモート サーバー上でリモート デバッガーを実行している場合は、リモート デバッガー アプリを右クリックし、 **[管理者として実行]** を選択します (または、リモート デバッガーをサービスとして実行できます)。 リモート サーバー上で実行していない場合は、通常どおり起動します。
 
-- コマンド ラインで **/allow \<username** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始します。
+- コマンド ラインで **/allow \<username>** パラメーターに `msvsmon /allow <username@computer>` を指定してリモート デバッガーを開始できます。
 
 - または、任意のユーザーがリモート デバッグを実行できるようにすることもできます。 リモート デバッガー ウィンドウで、 **[ツール] > [オプション]** ダイアログに移動します。 **[認証なし]** を選択すると、 **[すべてのユーザーにデバッグを許可する]** をチェックできるようになります。 ただし、他のオプションが失敗した場合、またはプライベート ネットワーク上の場合にのみ、このオプションを試します。
 
