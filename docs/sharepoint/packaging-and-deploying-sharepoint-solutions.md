@@ -1,5 +1,5 @@
 ---
-title: SharePoint ソリューションのパッケージ化と配置 |Microsoft Docs
+title: SharePoint ソリューションのパッケージ化と配置 | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,90 +15,91 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015594"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>SharePoint ソリューションのパッケージ化と配置
-  通常、SharePoint ソリューションは、ソリューションパッケージ (.wsp) ファイルを使用して SharePoint サーバーに配置されます。 Visual Studio を使用して、SharePoint プロジェクトアイテムをフィーチャーに整理し、SharePoint 機能を配置するためのパッケージを作成することができます。
+  通常、SharePoint ソリューションは、ソリューション パッケージ (.wsp) ファイルを使用して SharePoint サーバーに配置されます。 Visual Studio を使用して、SharePoint プロジェクト項目をフィーチャーに整理したり、パッケージを作成して SharePoint フィーチャーを配置したりできます。
 
  このトピックでは次の情報について説明します。
 
-- [機能とパッケージの作成](#create-features-and-packages)
+- [フィーチャーとパッケージを作成する](#create-features-and-packages)
 
-- [機能およびパッケージ化ツールのサポート](#feature-and-packaging-tool-support)
+- [フィーチャーとパッケージング ツールのサポート](#feature-and-packaging-tool-support)
 
-- [SharePoint ソリューションの配置](#deploy-sharepoint-solutions)
+- [SharePoint ソリューションを配置する](#deploy-sharepoint-solutions)
 
-- [SharePoint ソリューションでのファイルの配置](#deploy-files-in-sharepoint-solutions)
+- [SharePoint ソリューションにファイルを配置する](#deploy-files-in-sharepoint-solutions)
 
-## <a name="create-features-and-packages"></a>機能とパッケージの作成
- Visual Studio を使用して、関連する SharePoint 要素を*機能*にグループ化することができます。 たとえば、連絡先リスト定義の機能には、リストインスタンスとリスト定義を含めることができます。 これらの2つの要素を組み合わせて、デプロイの目的で1つの機能にすることができます。 機能の詳細については、「[ビルディングブロック: features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14))」を参照してください。
+## <a name="create-features-and-packages"></a>フィーチャーとパッケージを作成する
+ Visual Studio を使用して、関連する SharePoint 要素を "*フィーチャー*" にグループ化できます。 たとえば、連絡先リスト定義のフィーチャーに、リスト インスタンスとリスト定義を含めることができます。 これらの 2 つの要素を組み合わせて、配置の目的で 1 つのフィーチャーにすることができます。 フィーチャーの詳細については、「[文書パーツ: フィーチャー](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14))」を参照してください。
 
- 次に、複数の機能、サイト定義、アセンブリ、およびその他のファイルを1つのパッケージにバンドルする SharePoint ソリューションパッケージ (*.wsp*) を作成できます。これにより、ファイルを sharepoint がサーバーに配置するために必要な形式でファイルが格納されます。 詳細については、「[ビルディングブロック: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14))」を参照してください。
+ 次に、SharePoint ソリューション パッケージ ( *.wsp*) を作成して、複数のフィーチャー、サイト定義、アセンブリ、およびその他のファイルを 1 つのパッケージにバンドルすることができます。これには、SharePoint でファイルをサーバーに配置するために必要な形式でファイルが保存されます。 詳細については、「[文書パーツ: 「解決方法」](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14))を参照してください。
 
-## <a name="feature-and-packaging-tool-support"></a>機能およびパッケージ化ツールのサポート
- Visual Studio の SharePoint 開発ツールを使用すると、簡単に配置できるように SharePoint ファイルを機能やソリューションパッケージにすばやく整理できます。 機能とソリューションパッケージを構成するには、次のツールを使用できます。
+## <a name="feature-and-packaging-tool-support"></a>フィーチャーとパッケージング ツールのサポート
+ Visual Studio の SharePoint 開発ツールを使用すると、配置を簡単に行うために SharePoint ファイルをフィーチャーやソリューション パッケージにすばやく整理できます。 フィーチャーとソリューション パッケージを構成するには、次のツールを使用します。
 
-- フィーチャーデザイナーとパッケージデザイナー。
+- フィーチャー デザイナーとパッケージ デザイナー。
 
-- ツールウィンドウであるパッケージングエクスプローラー。
+- ツール ウィンドウであるパッケージング エクスプローラー。
 
 - ソリューション エクスプローラー。
 
-### <a name="feature-designer-and-package-designer"></a>フィーチャーデザイナーとパッケージデザイナー
- フィーチャーデザイナーを使用して、機能を作成し、スコープを設定し、他の機能を依存関係としてマークできます。 また、デザイナーには、各機能について記述した最終的な XML ファイルも表示されます。 詳細については、「 [SharePoint 機能の作成](../sharepoint/creating-sharepoint-features.md)」を参照してください。
+### <a name="feature-designer-and-package-designer"></a>フィーチャー デザイナーとパッケージ デザイナー
+ フィーチャー デザイナーを使用して、フィーチャーを作成したり、スコープを設定したり、他のフィーチャーを依存関係としてマークしたりできます。 また、このデザイナーには、各フィーチャーについて記述する最終的な XML ファイルも表示されます。 詳細については、「[SharePoint フィーチャーの作成](../sharepoint/creating-sharepoint-features.md)」を参照してください。
 
- フィーチャーデザイナーで*スコープ*を設定して、特定の web サイトまたは web サイトのグループに機能を適用します。 1つの機能が個々の Web サイトに対してアクティブ化されている場合、機能はその特定の Web サイトでのみ機能します。 サイトコレクションに対して機能がアクティブになっている場合、その機能の項目はサイトコレクション全体に適用されます。 詳細については、「 [Element Scope](/previous-versions/office/developer/sharepoint-2010/ms476615(v=office.14))」を参照してください。
+ フィーチャー デザイナーで "*スコープ*" を設定して、特定の Web サイト、または Web サイトのグループにフィーチャーを適用します。 フィーチャーが個々の Web サイトに対してアクティブ化されている場合、フィーチャーはその特定の Web サイトでのみ機能します。 フィーチャーがサイト コレクションに対してアクティブ化されている場合、フィーチャーの項目はサイト コレクション全体に適用されます。 詳細については、「[要素のスコープ](/previous-versions/office/developer/sharepoint-2010/ms476615(v=office.14))」を参照してください。
 
- 機能が他の機能に依存している場合は、機能を使用できるようにする前に、機能の*アクティブ化の依存関係*を設定して、依存する機能をマークすることができます。 フィーチャーのアクティブ化依存関係は、依存する機能がそのスコープで既にアクティブ化されているかどうかを確認します。 詳細については、「[アクティブ化の依存関係とスコープ](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14))」を参照してください。
+ フィーチャーが他のフィーチャーに依存している場合は、フィーチャーを使用できるようにする前に、*フィーチャー アクティブ化依存関係*を設定して、依存しているフィーチャーをマークすることができます。 フィーチャー アクティブ化依存関係では、依存しているフィーチャーがそのスコープで既にアクティブ化されているかどうかが確認されます。 詳細については、「[アクティブ化依存関係とスコープ](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14))」を参照してください。
 
- パッケージデザイナーでは、SharePoint 要素を1つのソリューションパッケージにグループ化し、配置時に Web サーバーをリセットするかどうかを構成できます。 配置サーバーの種類を設定するには、[**プロパティ**] ウィンドウを使用します。 また、デザイナーは、パッケージの内容を記述する XML ファイルも生成します。 詳細については、「 [SharePoint ソリューションパッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)」を参照してください。
+ パッケージ デザイナーでは、SharePoint 要素を 1 つのソリューション パッケージにグループ化し、配置時に Web サーバーをリセットするかどうかを構成することができます。 配置サーバーの種類を設定するには、 **[プロパティ]** ウィンドウを使用します。 また、このデザイナーでは、パッケージの内容を記述する XML ファイルも生成されます。 詳細については、「[SharePoint ソリューション パッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)」を参照してください。
 
- デプロイ中に、インターネットインフォメーションサービス (IIS) サービスが停止して、ソリューションファイルが SharePoint サーバーにコピーされます。 Visual Studio のパッケージデザイナーを使用して、Web サーバーを再起動するかどうかを選択できます。 ソリューションをフロントエンド Web サーバーまたはアプリケーションサーバーに配置するかどうかを構成するには、[**プロパティ**] ウィンドウを使用します。 詳細については、「 [Solution Element (solution)](/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14))」を参照してください。
+ 配置時に、インターネット インフォメーション サービス (IIS) サービスが停止されて、ソリューション ファイルが SharePoint サーバーにコピーされます。 Visual Studio のパッケージ デザイナーを使用して、Web サーバーを再起動するかどうかを選択できます。 ソリューションをフロントエンド Web サーバーとアプリケーション サーバーのどちらに配置するかを構成するには、 **[プロパティ]** ウィンドウを使用します。 詳細については、「[Solution 要素 (ソリューション)](/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14))」を参照してください。
 
-### <a name="packaging-explorer"></a>パッケージングエクスプローラー
- フィーチャーデザイナーとパッケージデザイナーを補完するには、パッケージングエクスプローラーを使用して、SharePoint ファイルを機能やパッケージにグループ化します。 さらに、パッケージ、機能、SharePoint プロジェクトアイテム、およびファイルの階層ビューを表示できます。 パッケージングエクスプローラーは、次のタスクを完了するために使用できるツールウィンドウです。
+### <a name="packaging-explorer"></a>パッケージング エクスプローラー
+ フィーチャー デザイナーとパッケージ デザイナーを補完するには、パッケージング エクスプローラーを使用して、SharePoint ファイルをフィーチャーやパッケージにグループ化します。 さらに、パッケージ、フィーチャー、SharePoint プロジェクト項目、およびファイルの階層ビューを表示できます。 パッケージング エクスプローラーは、次のタスクを実行するために使用できるツール ウィンドウです。
 
-- SharePoint プロジェクトのアイテムとファイルを開きます。
+- SharePoint プロジェクト項目とファイルを開く。
 
-- SharePoint プロジェクトアイテムをフィーチャー間でドラッグアンドドロップします。
+- SharePoint プロジェクト項目をフィーチャー間でドラッグ アンド ドロップする。
 
-- SharePoint プロジェクトのアイテムとフィーチャーをパッケージ間でドラッグアンドドロップします。
+- SharePoint プロジェクト項目とフィーチャーをパッケージ間でドラッグ アンド ドロップする。
 
-- パッケージに新しい機能を追加します。
+- 新しいフィーチャーをパッケージに追加する。
 
-- 機能またはパッケージデザイナーを開きます。
+- フィーチャーまたはパッケージ デザイナーを開く。
 
-- 機能とパッケージを検証します。
+- フィーチャーとパッケージを検証する。
 
-  Visual Studio の SharePoint 開発ツールには、ソリューションパッケージの形式が正しいことを確認するための検証規則が用意されています。 また、このルールによって、 *.wsp*ソリューションファイルが SharePoint サーバーで正常に配置およびアクティブ化できることが確認されます。 機能の XML スキーマの詳細については、「[機能スキーマ](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))」を参照してください。
+  Visual Studio の SharePoint 開発ツールには、ソリューション パッケージの形式が正しいことを確認するための検証規則が用意されています。 また、この規則では、SharePoint サーバーで *.wsp* ソリューション ファイルを正常に配置およびアクティブ化できることが検証されます。 フィーチャーの XML スキーマの詳細については、「[フィーチャー スキーマ](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))」を参照してください。
 
-  SharePoint プロジェクトシステムには、カスタム機能およびパッケージ検証規則を追加できます。 詳細については、「[方法: SharePoint ソリューションのカスタム機能およびパッケージ検証規則を作成する](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)」を参照してください。
+  SharePoint プロジェクト システムには、フィーチャーとパッケージのカスタム検証規則を追加できます。 詳細については、「[方法:SharePoint ソリューションのフィーチャーとパッケージのカスタム検証規則を作成する](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)」を参照してください。
 
-  パッケージングエクスプローラーの詳細については、「[方法: パッケージングエクスプローラーを使用してパッケージに機能と項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)」を参照してください。
+  パッケージング エクスプローラーの詳細については、「[方法: パッケージング エクスプローラーを使用してパッケージのフィーチャーおよび項目を追加および削除する](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)」を参照してください。
 
 ### <a name="solution-explorer"></a>ソリューション エクスプローラー
- ソリューションエクスプローラーを使用すると、SharePoint プロジェクトのファイルを移動して開くことができます。 ソリューションエクスプローラーのコンテキストメニューを使用して、機能、機能イベントレシーバー、および機能リソースを追加します。 さらに、フィーチャーデザイナーとパッケージデザイナーを開いて、デプロイ用の機能とパッケージを構成することもできます。
+ ソリューション エクスプローラーを使用すると、SharePoint プロジェクトのファイルに移動して開くことができます。 ソリューション エクスプローラーのコンテキスト メニューを使用して、フィーチャー、フィーチャー イベント レシーバー、およびフィーチャー リソースを追加します。 さらに、フィーチャー デザイナーとパッケージ デザイナーを開いて、配置のためにフィーチャーとパッケージを構成することもできます。
 
-## <a name="deploy-sharepoint-solutions"></a>SharePoint ソリューションの配置
- Visual Studio で機能とパッケージをカスタマイズした後、SharePoint サーバーに配置する *.wsp*ファイルを作成できます。 Visual Studio を使用して、のデバッグとテストを行うことができます。開発用コンピューター上の SharePoint サーバー上の*wsp*のみ。 SharePoint ソリューションをリモート SharePoint サーバーに配置する方法の詳細については、「[ソリューションの配置](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14))」を参照してください。
+## <a name="deploy-sharepoint-solutions"></a>SharePoint ソリューションを配置する
+ Visual Studio でフィーチャーとパッケージをカスタマイズした後、 *.wsp* ファイルを作成して SharePoint サーバーに配置することができます。 Visual Studio を使用して、開発用コンピューター上の SharePoint サーバーでのみ、*wsp* のデバッグとテストを行うことができます。 SharePoint ソリューションをリモート SharePoint サーバーに配置する方法の詳細については、[ソリューションの配置](/previous-versions/office/developer/sharepoint-2010/aa544500(v=office.14))に関するページを参照してください。
 
- 開発用コンピューターの配置手順をカスタマイズすることもできます。 詳細については、「 [SharePoint ソリューションパッケージの配置、発行、およびアップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)」を参照してください。
+ また、開発用コンピューターでの配置手順をカスタマイズすることもできます。 詳細については、「[SharePoint ソリューション パッケージの配置、発行、アップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)」を参照してください。
 
-## <a name="deploy-files-in-sharepoint-solutions"></a>SharePoint ソリューションでのファイルの配置
- 通常、sharepoint プロジェクトアイテムを SharePoint ソリューションに追加すると、必要なすべてのファイルが含まれます。 コンパイルできるファイル (コードファイル) は、ソリューションの出力アセンブリに組み込まれています。 ただし、 *.xml*、 *.txt*、リソースファイルなど、コンパイルできないファイルを SharePoint プロジェクトに追加することが必要になる場合もあります。 これらのファイルは、ソリューションに自動的にパッケージ化されません。 パッケージが確実にパッケージ化されるようにするには、マップされたフォルダーまたは SharePoint プロジェクトアイテムにファイルを追加します。
+## <a name="deploy-files-in-sharepoint-solutions"></a>SharePoint ソリューションにファイルを配置する
+ 通常、SharePoint プロジェクト項目を SharePoint ソリューションに追加すると、必要なすべてのファイルが含まれます。 コンパイルできるファイル (コード ファイル) は、ソリューションの出力アセンブリに組み込まれています。 ただし、コンパイルできないファイル ( *.xml*、 *.txt*、リソース ファイルなど) を SharePoint プロジェクトに追加することが必要になる場合もあります。 これらのファイルは、ソリューションに自動的にパッケージ化されません。 パッケージが確実にパッケージ化されるようにするには、マップされたフォルダーまたは SharePoint プロジェクト項目にファイルを追加します。
 
- マップされたフォルダーに追加されたファイルは、ソリューションの配置時に SharePoint hive に自動的にコピーされます。 SharePoint プロジェクト項目に追加されたファイルは、各ファイルの [**配置場所**] プロパティで指定された場所に配置されます。これは、"**展開の種類**" プロパティに基づいて部分的に設定されます。 既定では、[**展開の種類**] プロパティの値は**nodeployment**です。これは、ファイルがソリューションと共に配置されないことを意味します。 パッケージにファイルを含めるには、プロパティに別の値を設定する必要があります。
+ マップされたフォルダーに追加されたファイルは、ソリューションの配置時に SharePoint hive に自動的にコピーされます。 SharePoint プロジェクト項目に追加されたファイルは、各ファイルの **[配置場所]** プロパティで指定された場所に配置されます。これは、部分的に **[配置の種類]** プロパティに基づいて設定されます。 既定では、 **[配置の種類]** プロパティ値は **NoDeployment** (ファイルがソリューションと共に配置されない) になります。 パッケージにファイルを含めるには、プロパティに別の値を設定する必要があります。
 
- たとえば、 *.xml*ファイルを SharePoint プロジェクトに追加するには、次のいずれかの操作を実行します。
+ たとえば、 *.xml* ファイルを SharePoint プロジェクトに追加するには、次のいずれかの操作を実行します。
 
-- SharePoint "レイアウト" のマップされたフォルダーをプロジェクトに追加します。 これにより、プロジェクトのサブフォルダーを持つ**レイアウト**という名前のフォルダー**ソリューションエクスプローラー**に作成されます。 *.Xml*ファイルを新しいサブフォルダーに追加します。 既定では、ファイルは、の下の SharePoint ファイルシステムに配置されます *。\ テンプレート \ レイアウト \\ \<Folder Name> *。 マップされたフォルダーを追加する方法については、「[方法: マップされたフォルダーを追加および削除](../sharepoint/how-to-add-and-remove-mapped-folders.md)する」を参照してください。
+- SharePoint "Layouts" のマップされたフォルダーをプロジェクトに追加します。 これにより、**ソリューション エクスプローラー**に、プロジェクトのサブフォルダーを含む **Layouts** という名前のフォルダーが作成されます。 *.xml* ファイルを新しいサブフォルダーに追加します。 既定では、このファイルは *..\TEMPLATE\LAYOUTS\\\<Folder Name>* の下にある SharePoint ファイル システムに配置されます。 マップされたフォルダーを追加する方法の詳細については、「[方法: マップされたフォルダーを追加および削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)」を参照してください。
 
-- *.Xml*ファイルを SharePoint プロジェクトアイテムのフォルダーに追加し、 *.xml*ファイルの [配置の**種類**] プロパティを [ **nodeployment** ] から [ **rootfile** ] や [ **elementfile**] などの別の設定に変更します。 適切な**展開の種類**の設定は、ファイルとプロジェクトによって異なります。 **展開の種類**のプロパティ設定の詳細については、「 [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」を参照してください。
+- *.xml* ファイルを SharePoint プロジェクト項目のフォルダーに追加します。次に、 *.xml* ファイルの **[配置の種類]** プロパティを **NoDeployment** から別の設定 (**RootFile** や **ElementFile** など) に変更します。 **[配置の種類]** の適切な設定は、ファイルとプロジェクトによって異なります。 **[配置の種類]** プロパティ設定の詳細については、「[SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」を参照してください。
 
-  追加したファイルがソリューション内の特定のプロジェクトに適用されない場合は、ソリューションに空の SharePoint プロジェクトを追加して、追加のファイルを追加することができます。 また、SharePoint にファイルを配置する別の方法として、特にコンテンツデータベースにモジュールを追加する方法もあります。そのためには、モジュールをプロジェクトに追加し、ファイルをモジュールに追加します。 詳細については、「[モジュールを使用してソリューションにファイルを含める](../sharepoint/using-modules-to-include-files-in-the-solution.md)」を参照してください。
+  追加したファイルがソリューション内の特定のプロジェクトに適用されない場合は、空の SharePoint プロジェクトをソリューションに追加してから、追加のファイルを追加することができます。 また、ファイルを SharePoint (特にコンテンツ データベース) に配置する別の方法として、モジュールをプロジェクトに追加してから、ファイルをモジュールに追加します。 詳細については、「[モジュールを使用してソリューションにファイルを含める](../sharepoint/using-modules-to-include-files-in-the-solution.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

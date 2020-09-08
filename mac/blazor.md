@@ -11,13 +11,13 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: 86a8c35d2a379d6afbbe6cf55f53346223e7c462
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86211585"
 ---
-# <a name="create-blazor-web-apps"></a>Blazor Web アプリを作成する
+# <a name="create-no-locblazor-web-apps"></a>Blazor Web アプリを作成する
 
 このガイドでは、最初の Blazor Web アプリの作成に関する概要について説明します。 詳細なガイダンスについては、「[ASP.NET Core Blazor の概要](/aspnet/core/blazor/index)」を参照してください。
 
@@ -32,7 +32,7 @@ Blazor の概要 Blazor は、.NET を使って対話型のクライアント側
 * PC、Linux、macOS 上の Visual Studio を使って生産性を維持します。
 * 多機能で使いやすい安定した言語、フレームワーク、およびツールの共通セットに基づいて構築します。
 
-## <a name="creating-a-new-blazor-server-project"></a>新しい Blazor Server プロジェクトの作成
+## <a name="creating-a-new-no-locblazor-server-project"></a>新しい Blazor Server プロジェクトの作成
 
 1. **[スタート ウィンドウ]** で、 **[新規]** を選択して新しいプロジェクトを作成します。
 
@@ -50,9 +50,9 @@ Blazor の概要 Blazor は、.NET を使って対話型のクライアント側
 
    Visual Studio によって [Kestrel](/aspnet/core/fundamentals/servers/kestrel) が起動され、ブラウザーで`https://localhost:5001` が開かれ、Blazor Web アプリが表示されます。
 
-   Safari での ![Blazor Web アプリ](media/blazor-new-app-in-edge.png)
+   ![Safari での Blazor Web アプリ](media/blazor-new-app-in-edge.png)
 
-## <a name="blazor-support-in-visual-studio-for-mac"></a>Visual Studio for Mac での Blazor のサポート
+## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Visual Studio for Mac での Blazor のサポート
 
 Visual Studio for Mac (バージョン 8.4 以降) には、新しい Blazor Server プロジェクトを作成するための新機能が含まれています。 また、Blazor プロジェクトのビルド、実行、デバッグなど、期待される標準サポートが提供されます。 Visual Studio for Mac 8.6 では、Blazor WebAssembly プロジェクトの作成、ビルド、実行のサポートが追加されました。
 
@@ -63,7 +63,7 @@ Visual Studio for Mac には、Blazor アプリケーションの作成時に使
 
 ![Blazor の Intellisense を表示する Visual Studio for Mac エディター ウィンドウ](media/blazor-intellisense.png)
 
-### <a name="publishing-blazor-applications-to-azure-app-service"></a>Blazor アプリケーションの Azure App Service への発行
+### <a name="publishing-no-locblazor-applications-to-azure-app-service"></a>Blazor アプリケーションの Azure App Service への発行
 Blazor アプリケーションを Azure App Service に直接発行することもできます。 Azure 上で Blazor アプリを実行するための Azure アカウントをお持ちでない場合は、いつでも[ここから無料でサインアップ](https://azure.microsoft.com/free)することができます。サインアップすると、人気のあるサービスへの 12 か月間無料のアクセス、200 ドル分の無料 Azure クレジット、25 以上のサービスへの常時無料のアクセスの特典を受けることができます。
 
 ![Azure の発行エクスペリエンスを示す Visual Studio for Mac](media/blazor-azure-publish.png)

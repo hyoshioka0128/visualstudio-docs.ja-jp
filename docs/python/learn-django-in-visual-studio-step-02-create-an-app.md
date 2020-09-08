@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300889"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89314174"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>手順 2: ビューおよびページ テンプレートを使用して Django アプリを作成する
 
@@ -111,7 +111,7 @@ class HelloDjangoAppConfig(AppConfig):
 
     ![Visual Studio ステータス バーにあるソース管理の変更ボタン](media/django/step02-source-control-changes-button.png)
 
-1. **チーム エクスプローラー**で "最初の Django アプリの作成" などのコミット メッセージを入力して、 **[Commit All]\(すべてコミットする\)** を選択します。 コミットが完了すると、" **\<hash> のコミットがローカルで作成されました。変更をサーバーと共有するには、同期を使用してください。** " というメッセージが表示されます。 リモート リポジトリに変更をプッシュする場合は、 **[同期]** を選択して、 **[出力方向のコミット]** にある **[プッシュ]** を選択します。 リモートにプッシュする前に、複数のローカル コミットを蓄積しておくことも可能です。
+1. **チーム エクスプローラー**で "最初の Django アプリの作成" などのコミット メッセージを入力して、 **[Commit All]\(すべてコミットする\)** を選択します。 コミットが完了したら、" **\<hash> のコミットがローカルで作成されました。変更をサーバーと共有するには、同期を使用してください。** " というメッセージが表示されます。 リモート リポジトリに変更をプッシュする場合は、 **[同期]** を選択して、 **[出力方向のコミット]** にある **[プッシュ]** を選択します。 リモートにプッシュする前に、複数のローカル コミットを蓄積しておくことも可能です。
 
     ![チーム エクスプローラーでリモートにコミットをプッシュする](media/django/step02-source-control-push-to-remote.png)
 
