@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865337"
 ---
 # <a name="cl-task"></a>CL タスク
@@ -48,7 +48,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な String 型のパラメーター。
 
-   コマンド ライン オプションのリスト。 例: "/\<option1> /\<option2> /\<option#>" 他のタスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。
+   コマンド ライン オプションのリスト。 たとえば、"/\<option1> /\<option2> /\<option#>" のようになります。 他のタスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。
 
    詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」を参照してください。
 
@@ -80,7 +80,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **NoListing** -  *\<なし>*
+  - **NoListing** -  *\<none>*
 
   - **AssemblyCode** -  **/FA**
 
@@ -180,7 +180,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **false** -  *\<なし>*
+  - **false** -  *\<none>*
 
   - **true** -  **/clr**
 
@@ -288,7 +288,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **false** -  *\<なし>*
+  - **false** -  *\<none>*
 
   - **Async** -  **/EHa**
 
@@ -314,7 +314,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **Neither** -  *\<なし>*
+  - **Neither** -  *\<none>*
 
   - **Size** -  **/Os**
 
@@ -500,7 +500,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-  - **NotUsing** -  *\<なし>*
+  - **NotUsing** -  *\<none>*
 
   - **Create** -  **/Yc**
 

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779551"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU カウンターと Windows カウンター
@@ -124,9 +124,9 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
 2. 種類
 
-     「 **\<Visual Studio パフォーマンス ツール ディレクトリ>\VSPerfCmd /querycounters**」と入力します。
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     ここで、\<*Visual Studio パフォーマンス ツール ディレクトリ*> は、Visual Studio インストールのパフォーマンス ツール ディレクトリへのパスです。 パフォーマンス ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。
+     ここで、 *\<Visual Studio Performance Tools Directory>* は、Visual Studio インストールのパフォーマンス ツール ディレクトリへのパスです。 パフォーマンス ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

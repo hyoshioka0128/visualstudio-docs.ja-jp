@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633708"
 ---
 # <a name="item-definitions"></a>項目定義
@@ -80,7 +80,7 @@ ItemDefinitionGroup に定義されたメタデータには、以下のさまざ
 
 - ItemDefinitionGroup 内の項目の既知のメタデータ
 
-- CDATA セクション \<\!\[CDATA\[この部分は解析されない\]\]\>
+- CDATA セクション \<\!\[CDATA\[anything here is not parsed\]\]\>
 
 > [!NOTE]
 > ItemDefinitionGroup 要素は ItemGroup 要素より先に処理されるため、ItemGroup の項目メタデータは ItemDefinitionGroup メタデータの宣言では役に立ちません。

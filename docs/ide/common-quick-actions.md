@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585523"
 ---
 # <a name="common-quick-actions"></a>共通のクイック アクション
@@ -30,7 +30,7 @@ ms.locfileid: "75585523"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>記号やキーワードのスペルミスの修正
 
-Visual Studio で型やキーワードのスペルを誤って入力した場合、このクイック アクションは自動的にそれを修正します。 電球メニューでは **["Change '\<misspelled word>' to '\<correct word>'"]** \('スペルが正しくない単語' を 'スペルが正しい単語' に変更\) と表示されます。 次に例を示します。
+Visual Studio で型やキーワードのスペルを誤って入力した場合、このクイック アクションは自動的にそれを修正します。 これらの項目は電球メニューで **"Change '\<misspelled word>' to '\<correct word>'"** と表示されます。 次に例を示します。
 
 ```csharp
 // Before

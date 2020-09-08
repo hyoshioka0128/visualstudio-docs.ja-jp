@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532406"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>ドメイン固有言語ツールのユーザー インターフェイスの概要
-Visual Studio でドメイン固有言語ツール (DSL ツール) ソリューションを初めて開くと、次の図のようなユーザーインターフェイスが表示されます。
+Visual Studio でドメイン固有言語ツール (DSL ツール) ソリューションを初めて開いたとき、ユーザー インターフェイスは、次の図のようになります。
 
  ![DSL デザイナー](../modeling/media/dsl_designer.png)
 

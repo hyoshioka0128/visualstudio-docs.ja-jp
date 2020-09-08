@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183808"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルを指定します (C#、C++、Visual Basic、F#)
@@ -182,7 +182,7 @@ Visual Studio IDE で標準の **[デバッグ]** ビルド構成を使用して
 
 ### <a name="cc-options"></a>C/C++ オプション
 
-- *VC\<x>.pdb* ファイルと *\<project>.pdb* ファイル
+- *VC\<x>.pdb* と *\<project>.pdb* ファイル
 
   [/ZI または /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) でビルドすると、C/C++ 用の *.pdb* ファイルが作成されます。 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] では、コンパイラにより作成される *.pdb* ファイルの名前を [/Fd](/cpp/build/reference/fd-program-database-file-name) オプションで指定します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で IDE を使用してプロジェクトを作成する場合は、 *\<project>.pdb* という名前の *.pdb* ファイルを作成するように **/Fd** オプションが設定されます。
 
@@ -190,13 +190,13 @@ Visual Studio IDE で標準の **[デバッグ]** ビルド構成を使用して
 
   - *VC\<x>.pdb*。 *\<x>* は Microsoft C++ コンパイラのバージョン (*VC11.pdb* など) を表します
 
-    *VC\<x>.pdb* ファイルには、個別のオブジェクト ファイルのあらゆるデバッグ情報が格納されます。このファイルは、プロジェクトのメイクファイルと同じディレクトリに配置されます。 オブジェクト ファイルが作成されるたびに、C/C++ コンパイラはデバッグ情報を *VC\<x>.pdb* に挿入します。 このため、すべてのソース ファイルに *\<windows.h>* などの共通ヘッダー ファイルをインクルードしている場合でも、これらのヘッダーの typedef は一度格納されるだけで、すべてのオブジェクト ファイルに格納されるわけではありません。 挿入される情報には、型情報が含まれますが、関数定義などのシンボル情報は含まれません。
+    *VC\<x>.pdb* ファイルには、個別のオブジェクト ファイルのあらゆるデバッグ情報が格納され、プロジェクトのメイクファイルと同じディレクトリに配置されます。 オブジェクト ファイルが作成されるたびに、C/C++ コンパイラはデバッグ情報を *VC\<x>.pdb* にマージします。 このため、すべてのソース ファイルに *\<windows.h>* などの共通ヘッダー ファイルが含まれている場合でも、これらのヘッダーの typedef は、すべてのオブジェクト ファイルにではなく、一度だけ格納されます。 挿入される情報には、型情報が含まれますが、関数定義などのシンボル情報は含まれません。
 
-  - *\<プロジェクト>.pdb*
+  - *\<project>.pdb*
 
-    *\<project>.pdb* ファイルには、プロジェクトの *.exe* ファイルのあらゆるデバッグ情報が格納されます。このファイルは *\debug* サブディレクトリに配置されます。 *\<プロジェクト>.pdb* ファイルには、*VC\<x>.pdb* に含まれる型情報だけでなく、関数プロトタイプなどのあらゆるデバッグ情報が含まれます。
+    *\<project>.pdb* ファイルには、プロジェクトの *.exe* ファイルのあらゆるデバッグ情報が格納され、 *\debug* サブディレクトリに配置されます。 *\<project>.pdb* ファイルには、*VC\<x>.pdb* に含まれる型情報だけでなく、関数プロトタイプなどのあらゆるデバッグ情報が含まれます。
 
-  *VC\<x>.pdb* ファイルと *\<project>.pdb* ファイルは、どちらもインクリメンタル更新が可能です。 リンカーも、作成する *.exe* ファイルや *.dll* ファイルに *.pdb* ファイルへのパスを埋め込みます。
+  *VC\<x>.pdb* と *\<project>.pdb* ファイルは、どちらもインクリメンタル更新が可能です。 リンカーも、作成する *.exe* ファイルや *.dll* ファイルに *.pdb* ファイルへのパスを埋め込みます。
 
 - <a name="use-dumpbin-exports"></a>DLL エクスポート テーブル
 
