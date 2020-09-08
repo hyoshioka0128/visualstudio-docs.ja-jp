@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: 'CA1833: 配列の Span または Memory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します'
                   href: ca1833.md
+                - name: 'CA1834:1 文字の文字列に対して StringBuilder.Append(char) を使用する'
+                  href: ca1834.md
                 - name: 'CA1835: Stream ReadAsync/WriteAsync メソッドのメモリ オーバーロードを優先します'
                   href: ca1835.md
                 - name: 'CA1836:使用可能な場合は、Count よりも IsEmpty を優先します'

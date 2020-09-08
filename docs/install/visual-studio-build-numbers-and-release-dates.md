@@ -5,19 +5,19 @@ description: Visual Studio の現在までのリリース済みバージョン�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/18/2020
+ms.date: 08/31/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 284237edf805ba4d41bbeb17b3675d662efcbd89
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.openlocfilehash: c836c101280da1884345dd5e95def383226942fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88584516"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285737"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -29,9 +29,11 @@ ms.locfileid: "88584516"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.7.2 | Release | 2020 年 8 月 18 日 | 16.7.30413.136 |
-| 16.7.1 | Release | 2020 年 8 月 11 日 | 16.7.30406.217 |
-| 16.4.12 | リリース | 2020 年 8 月 11 日 | 16.4.30406.169 |
+| 16.8.0 | Preview 2.1 | 2020 年 8 月 31 日 | 16.8.30428.66 |
+| 16.8.0 | Preview 2 | 2020 年 8 月 25 日 | 16.8.30420.98 |
+| 16.7.2 | リリース | 2020 年 8 月 18 日 | 16.7.30413.136 |
+| 16.7.1 | リリース | 2020 年 8 月 11 日 | 16.7.30406.217 |
+| 16.4.12 | Release | 2020 年 8 月 11 日 | 16.4.30406.169 |
 | 16.0.17 | リリース | 2020 年 8 月 11 日 | 16.0.28803.806 |
 | 16.8.0 | Preview 1 | 2020 年 8 月 5 日 | 16.8.30404.54 |
 | 16.7.0 | リリース | 2020 年 8 月 5 日 | 16.7.30330.147 |
