@@ -55,66 +55,6 @@
           items:
             - name: 生成されたコードに対するレガシ分析の警告を表示しない
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: レガシ分析のアプリケーション エラー
-          items:
-            - name: レガシ分析のポリシー エラー
-              href: code-analysis-policy-errors.md
-            - name: 概要
-              href: code-analysis-application-errors.md
-            - name: CA0001
-              href: ca0001.md
-            - name: CA0051
-              href: ca0051.md
-            - name: CA0052
-              href: ca0052.md
-            - name: CA0053
-              href: ca0053.md
-            - name: CA0054
-              href: ca0054.md
-            - name: CA0055
-              href: ca0055.md
-            - name: CA0056
-              href: ca0056.md
-            - name: CA0057
-              href: ca0057.md
-            - name: CA0058
-              href: ca0058.md
-            - name: CA0059
-              href: ca0059.md
-            - name: CA0060
-              href: ca0060.md
-            - name: CA0061
-              href: ca0061.md
-            - name: CA0062
-              href: ca0062.md
-            - name: CA0063
-              href: ca0063.md
-            - name: CA0064
-              href: ca0064.md
-            - name: A0065
-              href: ca0065.md
-            - name: CA0066
-              href: ca0066.md
-            - name: CA0067
-              href: ca0067.md
-            - name: CA0068
-              href: ca0068.md
-            - name: CA0069
-              href: ca0069.md
-            - name: CA0070
-              href: ca0070.md
-            - name: CA0501
-              href: ca0501.md
-            - name: CA0502
-              href: ca0502.md
-            - name: CA0503
-              href: ca0503.md
-            - name: CA0504
-              href: ca0504.md
-            - name: CA0505
-              href: ca0505.md
-            - name: FxCopCmd エラー
-              href: fxcopcmd-errors.md
         - name: チェックイン ポリシー
           items:
             - name: チェックイン ポリシーを作成または更新する方法
@@ -137,40 +77,6 @@
                   href: migrate-from-legacy-analysis-to-fxcop-analyzers.md
                 - name: よくあるご質問
                   href: fxcop-analyzers-faq.md
-                - name: 移植された規則
-                  href: fxcop-rule-port-status.md
-            - name: FxCop アナライザーの構成
-              items:
-                - name: 規則セット
-                  items:
-                    - name: 概要
-                      href: rule-set-reference.md
-                    - name: すべての規則
-                      href: all-rules-rule-set.md
-                    - name: 基本正確性規則
-                      href: basic-correctness-rules-rule-set-for-managed-code.md
-                    - name: 基本デザイン ガイドライン規則
-                      href: basic-design-guideline-rules-rule-set-for-managed-code.md
-                    - name: 拡張正確性規則
-                      href: extended-correctness-rules-rule-set-for-managed-code.md
-                    - name: 拡張デザイン ガイドライン規則
-                      href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-                    - name: '[グローバリゼーション規則]'
-                      href: globalization-rules-rule-set-for-managed-code.md
-                    - name: マネージド最小規則
-                      href: managed-minimum-rules-rule-set-for-managed-code.md
-                    - name: マネージド推奨規則
-                      href: managed-recommended-rules-rule-set-for-managed-code.md
-                    - name: 混合最小規則
-                      href: mixed-minimum-rules-rule-set.md
-                    - name: 混合推奨規則
-                      href: mixed-recommended-rules-rule-set.md
-                    - name: ネイティブ最小規則
-                      href: native-minimum-rules-rule-set.md
-                    - name: ネイティブ推奨規則
-                      href: native-recommended-rules-rule-set.md
-                    - name: '[セキュリティ規則]'
-                      href: security-rules-rule-set-for-managed-code.md
         - name: 規則セット
           items:
             - name: 概要
@@ -181,6 +87,347 @@
               href: how-to-create-a-custom-rule-set.md
             - name: 規則セット エディターの使用
               href: working-in-the-code-analysis-rule-set-editor.md
+        - name: 関連項目
+          items:
+            - name: 移植された規則
+              href: fxcop-rule-port-status.md
+            - name: 非移植規則
+              href: fxcop-unported-rules.md
+              items:
+                - name: 移植される可能性がある非移植規則
+                  href: fxcop-unported-rules-may-get-ported.md
+                  items:
+                    - name: 'CA1004:ジェネリック メソッドは型パラメーターを指定しなければなりません'
+                      href: ca1004.md
+                    - name: 'CA1006:ジェネリック型をメンバー シグネチャ内で入れ子にしません'
+                      href: ca1006.md
+                    - name: 'CA1007:適切な場所にジェネリックを使用します'
+                      href: ca1007.md
+                    - name: 'CA1011:基本型をパラメーターとして渡すことを考慮します'
+                      href: ca1011.md
+                    - name: 'CA1013:オーバーロードする加算および減算で、演算子 equals をオーバーロードします'
+                      href: ca1013.md
+                    - name: 'CA1023:インデクサーを多次元にすることはできません'
+                      href: ca1023.md
+                    - name: 'CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません'
+                      href: ca1049.md
+                    - name: 'CA1057:文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します'
+                      href: ca1057.md
+                    - name: 'CA1300:MessageBoxOption を指定します'
+                      href: ca1300.md
+                    - name: 'CA1301:重複するアクセラレータを使用しません'
+                      href: ca1301.md
+                    - name: 'CA1306:データ型のロケールを設定します'
+                      href: ca1306.md
+                    - name: 'CA1402:COM 参照可能インターフェイスでのオーバーロードを避けてください'
+                      href: ca1402.md
+                    - name: 'CA1403:Auto 配置の型を COM 参照可能にすることはできません'
+                      href: ca1403.md
+                    - name: 'CA1404:P/Invoke の直後に GetLastError を呼び出します'
+                      href: ca1404.md
+                    - name: 'CA1405:COM 参照可能な型の基本型は COM 参照可能でなければなりません'
+                      href: ca1405.md
+                    - name: 'CA1407:Com 参照可能な型で静的メンバーを使用しません'
+                      href: ca1407.md
+                    - name: 'CA1408:AutoDual ClassInterfaceType を使用しないでください'
+                      href: ca1408.md
+                    - name: 'CA1409:COM 参照可能な型は作成可能でなければなりません'
+                      href: ca1409.md
+                    - name: 'CA1410:COM 登録メソッドは一致しなければなりません'
+                      href: ca1410.md
+                    - name: 'CA1411:COM 登録メソッドは参照可能であることはできません'
+                      href: ca1411.md
+                    - name: 'CA1412:ComSource インターフェイスを IDispatch として設定します'
+                      href: ca1412.md
+                    - name: 'CA1413:Com 参照可能な値型ではパブリックでないフィールドを使用しません'
+                      href: ca1413.md
+                    - name: 'CA1414:ブール型の P/Invoke 引数を MarshalAs に設定します'
+                      href: ca1414.md
+                    - name: 'CA1415:P/Invoke を正しく宣言します'
+                      href: ca1415.md
+                    - name: 'CA1500:変数名はフィールド名と同一にすることはできません'
+                      href: ca1500.md
+                    - name: 'CA1600:アイドル状態のプロセス優先度を使用しません'
+                      href: ca1600.md
+                    - name: 'CA1601:電源の状態の変更を妨げるタイマーを使用しません'
+                      href: ca1601.md
+                    - name: 'CA1704:識別子は正しく入力されなければなりません'
+                      href: ca1704.md
+                    - name: 'CA1709:識別子では、大文字と小文字が正しく区別されなければなりません'
+                      href: ca1709.md
+                    - name: 'CA1719:パラメーター名はメンバー名と同一にすることはできません'
+                      href: ca1719.md
+                    - name: 'CA1722:識別子は不適切なプレフィックスを含むことはできません'
+                      href: ca1722.md
+                    - name: 'CA1726:適切な用語を使用します'
+                      href: ca1726.md
+                    - name: 'CA1900:値型フィールドはポータブルでなければなりません'
+                      href: ca1900.md
+                    - name: 'CA2001:問題が発生する可能性のあるメソッドは呼び出しません'
+                      href: ca2001.md
+                    - name: 'CA2004:GC.KeepAlive への呼び出しを削除します'
+                      href: ca2004.md
+                    - name: 'CA2006:SafeHandle を使用して、ネイティブ リソースを要約します'
+                      href: ca2006.md
+                    - name: 'CA2204:リテラルに正しいスペルを要求'
+                      href: ca2204.md
+                    - name: 'CA2205:Win32 API に相当するマネージド API を使用します'
+                      href: ca2205.md
+                    - name: 'CA2212:サービス コンポーネントを WebMethod に設定しません'
+                      href: ca2212.md
+                    - name: 'CA2218:オーバーライドする Equals で GetHashCode をオーバーライドします'
+                      href: ca2218.md
+                    - name: 'CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします'
+                      href: ca2224.md
+                    - name: 'CA2232:Windows フォームのエントリ ポイントを STAThread に設定します'
+                      href: ca2232.md
+                    - name: 'CA2236:ISerializable 型で基底クラス メソッドを呼び出します'
+                      href: ca2236.md
+                    - name: 'CA2238:シリアル化メソッドを正しく実装します'
+                      href: ca2238.md
+                    - name: 'CA2239:省略可能なフィールドに、逆シリアル化メソッドを指定します'
+                      href: ca2239.md
+                    - name: 'CA2240:ISerializable を正しく実装します'
+                      href: ca2240.md
+                - name: 非推奨の規則
+                  href: fxcop-unported-deprecated-rules.md
+                  items:
+                    - name: 'CA1009:イベント ハンドラーを正しく宣言します'
+                      href: ca1009.md
+                    - name: 'CA1020:型をほとんど含まない名前空間を使用しません'
+                      href: ca1020.md
+                    - name: 'CA1025:反復する引数を params 配列で置き換えます'
+                      href: ca1025.md
+                    - name: 'CA1026:既定パラメーターを使用することはできません'
+                      href: ca1026.md
+                    - name: 'CA1035:ICollection の実装は、厳密に型指定されたメンバーを含んでいます'
+                      href: ca1035.md
+                    - name: 'CA1038:列挙子は厳密に型指定されていなければなりません'
+                      href: ca1038.md
+                    - name: 'CA1039:リストは厳密に型指定されています'
+                      href: ca1039.md
+                    - name: 'CA1048:シールド型の仮想メンバーを宣言しません'
+                      href: ca1048.md
+                    - name: 'CA1059:メンバーは特定の具象型を公開できません'
+                      href: ca1059.md
+                    - name: 'CA1302:ロケール特有の文字列をハードコードしません'
+                      href: ca1302.md
+                    - name: 'CA1400:P/Invoke エントリ ポイントは存在しなければなりません'
+                      href: ca1400.md
+                    - name: 'CA1406:Visual Basic 6 クライアントに対しては Int64 引数を使用しません'
+                      href: ca1406.md
+                    - name: 'CA1504:紛らわしいフィールド名を確認します'
+                      href: ca1504.md
+                    - name: 'CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません'
+                      href: ca1701.md
+                    - name: 'CA1702:複合語では、大文字と小文字が正しく区別されなければなりません'
+                      href: ca1702.md
+                    - name: 'CA1703:リソース文字列は正しく入力されなければなりません'
+                      href: ca1703.md
+                    - name: 'CA1800:不必要にキャストしません'
+                      href: ca1800.md
+                    - name: 'CA1804:使用されていないローカルを削除します'
+                      href: ca1804.md
+                    - name: 'CA1809:ローカルを使用しすぎないでください'
+                      href: ca1809.md
+                    - name: 'CA1811:呼び出されていないプライベート コードを使用しません'
+                      href: ca1811.md
+                    - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
+                      href: ca1901.md
+                    - name: 'CA1903:対象のフレームワークから API のみを使用します'
+                      href: ca1903.md
+                    - name: 'CA2003:ファイバーをスレッドとして扱いません'
+                      href: ca2003.md
+                    - name: 'CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします'
+                      href: ca2102.md
+                    - name: 'CA2103:命令型のセキュリティを確認します'
+                      href: ca2103.md
+                    - name: 'CA2104:読み取り専用の変更可能な参照型を宣言しません'
+                      href: ca2104.md
+                    - name: 'CA2105:配列フィールドを読み取り専用にすることはできません'
+                      href: ca2105.md
+                    - name: 'CA2106:アサートをセキュリティで保護します'
+                      href: ca2106.md
+                    - name: 'CA2107:拒否および許可のみの使用を確認します'
+                      href: ca2107.md
+                    - name: 'CA2108:値型での宣言セキュリティを確認します'
+                      href: ca2108.md
+                    - name: 'CA2111:ポインターは参照可能にすることはできません'
+                      href: ca2111.md
+                    - name: 'CA2112:セキュリティで保護された型はフィールドを公開してはなりません'
+                      href: ca2112.md
+                    - name: 'CA2114:メソッド セキュリティは型のスーパーセットでなければなりません'
+                      href: ca2114.md
+                    - name: 'CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します'
+                      href: ca2115.md
+                    - name: 'CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます'
+                      href: ca2116.md
+                    - name: 'CA2117:APTCA 型は APTCA 基本型のみを拡張することができます'
+                      href: ca2117.md
+                    - name: 'CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください'
+                      href: ca2118.md
+                    - name: 'CA2120:シリアル化コンストラクターをセキュリティで保護します'
+                      href: ca2120.md
+                    - name: 'CA2121:静的コンストラクターはプライベートでなければなりません'
+                      href: ca2121.md
+                    - name: 'CA2122:リンク要求を含むメソッドを間接的に公開しません'
+                      href: ca2122.md
+                    - name: 'CA2123:オーバーライドのリンク要求はベースと同一でなければなりません'
+                      href: ca2123.md
+                    - name: 'CA2124:脆弱性のある finally 句を外側の try でラップします'
+                      href: ca2124.md
+                    - name: 'CA2126:型のリンク要求には継承要求が必要です'
+                      href: ca2126.md
+                    - name: 'CA2130:セキュリティ上重要な定数は透過的である必要がある'
+                      href: ca2130.md
+                    - name: 'CA2131:セキュリティ上重要な型は型等価性に参加してはならない'
+                      href: ca2131.md
+                    - name: 'CA2132:既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要'
+                      href: ca2132.md
+                    - name: 'CA2133:デリゲートは透過性の整合がとれたメソッドにバインドする必要がある'
+                      href: ca2133.md
+                    - name: 'CA2134:メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある'
+                      href: ca2134.md
+                    - name: 'CA2135:レベル 2 のアセンブリは LinkDemand を含んではならない'
+                      href: ca2135.md
+                    - name: 'CA2136:メンバーには、透過性注釈の競合があってはならない'
+                      href: ca2136.md
+                    - name: 'CA2137:透過的メソッドは、検証可能な IL のみを含まなければならない'
+                      href: ca2137.md
+                    - name: 'CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない'
+                      href: ca2138.md
+                    - name: 'CA2139:透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない'
+                      href: ca2139.md
+                    - name: 'CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない'
+                      href: ca2140.md
+                    - name: 'CA2141: 透過的メソッドは、LinkDemand を満たしてはならない'
+                      href: ca2141.md
+                    - name: 'CA2142:透過的コードは、LinkDemand を使用して保護されてはならない'
+                      href: ca2142.md
+                    - name: 'CA2143:透過的メソッドは、セキュリティ確認要求を使用してはならない'
+                      href: ca2143.md
+                    - name: 'CA2144:透過的コードは、バイト配列からアセンブリを読み込んではならない'
+                      href: ca2144.md
+                    - name: 'CA2145:透過的メソッドを SuppressUnmanagedCodeSecurityAttribute で修飾してはならない'
+                      href: ca2145.md
+                    - name: 'CA2146:型は、基本型およびインターフェイスと同程度以上、重要でなければならない'
+                      href: ca2146.md
+                    - name: 'CA2147:透過コードは、セキュリティ アサートを使用してはならない'
+                      href: ca2147.md
+                    - name: 'CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない'
+                      href: ca2149.md
+                    - name: 'CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります'
+                      href: ca2151.md
+                    - name: 'CA2202:オブジェクトを複数回破棄しない'
+                      href: ca2202.md
+                    - name: 'CA2210:アセンブリには有効な厳密な名前が必要です'
+                      href: ca2210.md
+                    - name: 'CA2220:ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません'
+                      href: ca2220.md
+                    - name: 'CA2221:ファイナライザーは保護されなければなりません'
+                      href: ca2221.md
+                    - name: 'CA2222:継承されたメンバーの参照範囲を縮小しません'
+                      href: ca2222.md
+                    - name: 'CA2223:メンバーは、戻り値の型以外にも異なる点がなければなりません'
+                      href: ca2223.md
+                    - name: 'CA2228:未公開のリソース形式を出荷しません'
+                      href: ca2228.md
+                    - name: 'CA2230:可変引数に対して param を使用します'
+                      href: ca2230.md
+                    - name: 'CA2233:操作はオーバーフローできません'
+                      href: ca2233.md
+                    - name: CA5122 P/Invoke 宣言をセーフ クリティカルにしないでください
+                      href: ca5122.md
+                - name: レガシ分析のアプリケーション エラー
+                  items:
+                    - name: レガシ分析のポリシー エラー
+                      href: code-analysis-policy-errors.md
+                    - name: 概要
+                      href: code-analysis-application-errors.md
+                    - name: CA0001
+                      href: ca0001.md
+                    - name: CA0051
+                      href: ca0051.md
+                    - name: CA0052
+                      href: ca0052.md
+                    - name: CA0053
+                      href: ca0053.md
+                    - name: CA0054
+                      href: ca0054.md
+                    - name: CA0055
+                      href: ca0055.md
+                    - name: CA0056
+                      href: ca0056.md
+                    - name: CA0057
+                      href: ca0057.md
+                    - name: CA0058
+                      href: ca0058.md
+                    - name: CA0059
+                      href: ca0059.md
+                    - name: CA0060
+                      href: ca0060.md
+                    - name: CA0061
+                      href: ca0061.md
+                    - name: CA0062
+                      href: ca0062.md
+                    - name: CA0063
+                      href: ca0063.md
+                    - name: CA0064
+                      href: ca0064.md
+                    - name: A0065
+                      href: ca0065.md
+                    - name: CA0066
+                      href: ca0066.md
+                    - name: CA0067
+                      href: ca0067.md
+                    - name: CA0068
+                      href: ca0068.md
+                    - name: CA0069
+                      href: ca0069.md
+                    - name: CA0070
+                      href: ca0070.md
+                    - name: CA0501
+                      href: ca0501.md
+                    - name: CA0502
+                      href: ca0502.md
+                    - name: CA0503
+                      href: ca0503.md
+                    - name: CA0504
+                      href: ca0504.md
+                    - name: CA0505
+                      href: ca0505.md
+                    - name: FxCopCmd エラー
+                      href: fxcopcmd-errors.md
+            - name: 規則セット
+              items:
+                - name: 概要
+                  href: rule-set-reference.md
+                - name: すべての規則
+                  href: all-rules-rule-set.md
+                - name: 基本正確性規則
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: 基本デザイン ガイドライン規則
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: 拡張正確性規則
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: 拡張デザイン ガイドライン規則
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: '[グローバリゼーション規則]'
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: マネージド最小規則
+                  href: managed-minimum-rules-rule-set-for-managed-code.md
+                - name: マネージド推奨規則
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: 混合最小規則
+                  href: mixed-minimum-rules-rule-set.md
+                - name: 混合推奨規則
+                  href: mixed-recommended-rules-rule-set.md
+                - name: ネイティブ最小規則
+                  href: native-minimum-rules-rule-set.md
+                - name: ネイティブ推奨規則
+                  href: native-recommended-rules-rule-set.md
+                - name: '[セキュリティ規則]'
+                  href: security-rules-rule-set-for-managed-code.md
     - name: コード メトリックス
       items:
         - name: 概要
@@ -198,15 +445,6 @@
               href: code-analysis-for-managed-code-warnings.md
             - name: コード品質ルールの概要
               href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: 暗号化警告
-              items:
-                - name: 概要
-                  displayName: cryptography warnings
-                  href: cryptography-warnings.md
-                - name: 'CA5350:脆弱な暗号アルゴリズムを使用しないでください'
-                  href: ca5350.md
-                - name: CA5351 破られた暗号アルゴリズムを使用しないでください
-                  href: ca5351.md
             - name: デザインの警告
               items:
                 - name: 概要
@@ -220,26 +458,14 @@
                   href: ca1002.md
                 - name: 'CA1003:汎用イベント ハンドラーのインスタンスを使用します'
                   href: ca1003.md
-                - name: 'CA1004:ジェネリック メソッドは型パラメーターを指定しなければなりません'
-                  href: ca1004.md
                 - name: 'CA1005:ジェネリック型でパラメーターを使用しすぎないでください'
                   href: ca1005.md
-                - name: 'CA1006:ジェネリック型をメンバー シグネチャ内で入れ子にしません'
-                  href: ca1006.md
-                - name: 'CA1007:適切な場所にジェネリックを使用します'
-                  href: ca1007.md
                 - name: 'CA1008:Enums は 0 値を含んでいなければなりません'
                   href: ca1008.md
-                - name: 'CA1009:イベント ハンドラーを正しく宣言します'
-                  href: ca1009.md
                 - name: 'CA1010:コレクションは、ジェネリック インターフェイスを実装しなければなりません'
                   href: ca1010.md
-                - name: 'CA1011:基本型をパラメーターとして渡すことを考慮します'
-                  href: ca1011.md
                 - name: 'CA1012:抽象型にはコンストラクターを含めません'
                   href: ca1012.md
-                - name: 'CA1013:オーバーロードする加算および減算で、演算子 equals をオーバーロードします'
-                  href: ca1013.md
                 - name: 'CA1014:アセンブリに CLSCompliantAttribute を設定します'
                   href: ca1014.md
                 - name: 'CA1016:アセンブリに AssemblyVersionAttribute を設定します'
@@ -250,18 +476,10 @@
                   href: ca1018.md
                 - name: 'CA1019:属性引数にアクセサーを定義します'
                   href: ca1019.md
-                - name: 'CA1020:型をほとんど含まない名前空間を使用しません'
-                  href: ca1020.md
                 - name: 'CA1021:out パラメーターを使用しません'
                   href: ca1021.md
-                - name: 'CA1023:インデクサーを多次元にすることはできません'
-                  href: ca1023.md
                 - name: 'CA1024:適切な場所にプロパティを使用します'
                   href: ca1024.md
-                - name: 'CA1025:反復する引数を params 配列で置き換えます'
-                  href: ca1025.md
-                - name: 'CA1026:既定パラメーターを使用することはできません'
-                  href: ca1026.md
                 - name: 'CA1027:列挙型を FlagsAttribute に設定します'
                   href: ca1027.md
                 - name: 'CA1028:列挙ストレージは Int32 でなければなりません'
@@ -276,14 +494,8 @@
                   href: ca1033.md
                 - name: 'CA1034:入れ子にされた型を参照可能にすることはできません'
                   href: ca1034.md
-                - name: 'CA1035:ICollection の実装は、厳密に型指定されたメンバーを含んでいます'
-                  href: ca1035.md
                 - name: 'CA1036:比較可能な型でメソッドをオーバーライドします'
                   href: ca1036.md
-                - name: 'CA1038:列挙子は厳密に型指定されていなければなりません'
-                  href: ca1038.md
-                - name: 'CA1039:リストは厳密に型指定されています'
-                  href: ca1039.md
                 - name: 'CA1040:空のインターフェイスは使用しません'
                   href: ca1040.md
                 - name: 'CA1041:ObsoleteAttribute メッセージを指定します'
@@ -298,10 +510,6 @@
                   href: ca1046.md
                 - name: 'CA1047:シールド型の保護されたメンバーを宣言しません'
                   href: ca1047.md
-                - name: 'CA1048:シールド型の仮想メンバーを宣言しません'
-                  href: ca1048.md
-                - name: 'CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません'
-                  href: ca1049.md
                 - name: 'CA1050:名前空間で型を宣言します'
                   href: ca1050.md
                 - name: 'CA1051:参照可能なインスタンス フィールドを宣言しません'
@@ -316,12 +524,8 @@
                   href: ca1055.md
                 - name: 'CA1056:URI プロパティを文字列にすることはできません'
                   href: ca1056.md
-                - name: 'CA1057:文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します'
-                  href: ca1057.md
                 - name: 'CA1058:型は、一定の基本型を拡張することはできません'
                   href: ca1058.md
-                - name: 'CA1059:メンバーは特定の具象型を公開できません'
-                  href: ca1059.md
                 - name: 'CA1060:P/Invoke を NativeMethods クラスに移動します'
                   href: ca1060.md
                 - name: 'CA1061:基底クラス メソッドを非表示にしません'
@@ -344,8 +548,6 @@
                   href: ca1069.md
                 - name: 'CA1070: イベント フィールドを virtual として宣言しません'
                   href: ca1070.md
-                - name: 'CA2210:アセンブリには有効な厳密な名前が必要です'
-                  href: ca2210.md
             - name: ドキュメントの警告
               items:
                 - name: 概要
@@ -358,20 +560,12 @@
                 - name: 概要
                   displayName: globalization warnings
                   href: globalization-warnings.md
-                - name: 'CA1300:MessageBoxOption を指定します'
-                  href: ca1300.md
-                - name: 'CA1301:重複するアクセラレータを使用しません'
-                  href: ca1301.md
-                - name: 'CA1302:ロケール特有の文字列をハードコードしません'
-                  href: ca1302.md
                 - name: 'CA1303:ローカライズされるパラメーターとしてリテラルを渡さない'
                   href: ca1303.md
                 - name: 'CA1304:CultureInfo を指定します'
                   href: ca1304.md
                 - name: 'CA1305:IFormatProvider を指定します'
                   href: ca1305.md
-                - name: 'CA1306:データ型のロケールを設定します'
-                  href: ca1306.md
                 - name: 'CA1307:意味を明確にするための StringComparison の指定'
                   href: ca1307.md
                 - name: 'CA1308:文字列を大文字に標準化します'
@@ -382,43 +576,13 @@
                   href: ca1310.md
                 - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
                   href: ca2101.md
-            - name: 相互運用性に関する警告
+            - name: 移植性と相互運用性に関する警告
               items:
                 - name: 概要
-                  displayName: interoperability warnings
+                  displayName: portability and interoperability warnings
                   href: interoperability-warnings.md
-                - name: 'CA1400:P/Invoke エントリ ポイントは存在しなければなりません'
-                  href: ca1400.md
                 - name: 'CA1401:P/Invoke は参照可能になりません'
                   href: ca1401.md
-                - name: 'CA1402:COM 参照可能インターフェイスでのオーバーロードを避けてください'
-                  href: ca1402.md
-                - name: 'CA1403:Auto 配置の型を COM 参照可能にすることはできません'
-                  href: ca1403.md
-                - name: 'CA1404:P/Invoke の直後に GetLastError を呼び出します'
-                  href: ca1404.md
-                - name: 'CA1405:COM 参照可能な型の基本型は COM 参照可能でなければなりません'
-                  href: ca1405.md
-                - name: 'CA1406:Visual Basic 6 クライアントに対しては Int64 引数を使用しません'
-                  href: ca1406.md
-                - name: 'CA1407:Com 参照可能な型で静的メンバーを使用しません'
-                  href: ca1407.md
-                - name: 'CA1408:AutoDual ClassInterfaceType を使用しないでください'
-                  href: ca1408.md
-                - name: 'CA1409:COM 参照可能な型は作成可能でなければなりません'
-                  href: ca1409.md
-                - name: 'CA1410:COM 登録メソッドは一致しなければなりません'
-                  href: ca1410.md
-                - name: 'CA1411:COM 登録メソッドは参照可能であることはできません'
-                  href: ca1411.md
-                - name: 'CA1412:ComSource インターフェイスを IDispatch として設定します'
-                  href: ca1412.md
-                - name: 'CA1413:Com 参照可能な値型ではパブリックでないフィールドを使用しません'
-                  href: ca1413.md
-                - name: 'CA1414:ブール型の P/Invoke 引数を MarshalAs に設定します'
-                  href: ca1414.md
-                - name: 'CA1415:P/Invoke を正しく宣言します'
-                  href: ca1415.md
                 - name: 'CA1417:P/Invoke の文字列パラメーターに OutAttribute を使用しません'
                   href: ca1417.md
             - name: 保守性に関する警告
@@ -426,14 +590,10 @@
                 - name: 概要
                   displayName: maintainability warnings
                   href: maintainability-warnings.md
-                - name: 'CA1500:変数名はフィールド名と同一にすることはできません'
-                  href: ca1500.md
                 - name: 'CA1501:継承を使用しすぎないでください'
                   href: ca1501.md
                 - name: 'CA1502:メソッドの実装を複雑にしすぎないでください'
                   href: ca1502.md
-                - name: 'CA1504:紛らわしいフィールド名を確認します'
-                  href: ca1504.md
                 - name: 'CA1505:メンテナンスできないコードを使用しないでください'
                   href: ca1505.md
                 - name: 'CA1506:クラス結合度を大きくしすぎないでください'
@@ -444,15 +604,6 @@
                   href: ca1508.md
                 - name: 'CA1509: コード メトリック構成ファイルのエントリが無効です'
                   href: ca1509.md
-            - name: モビリティに関する警告
-              items:
-                - name: 概要
-                  displayName: mobility warnings
-                  href: mobility-warnings.md
-                - name: 'CA1600:アイドル状態のプロセス優先度を使用しません'
-                  href: ca1600.md
-                - name: 'CA1601:電源の状態の変更を妨げるタイマーを使用しません'
-                  href: ca1601.md
             - name: 名前付けに関する警告
               items:
                 - name: 概要
@@ -460,20 +611,10 @@
                   href: naming-warnings.md
                 - name: 'CA1700:列挙型値に ''Reserved'' という名前を指定しません'
                   href: ca1700.md
-                - name: 'CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません'
-                  href: ca1701.md
-                - name: 'CA1702:複合語では、大文字と小文字が正しく区別されなければなりません'
-                  href: ca1702.md
-                - name: 'CA1703:リソース文字列は正しく入力されなければなりません'
-                  href: ca1703.md
-                - name: 'CA1704:識別子は正しく入力されなければなりません'
-                  href: ca1704.md
                 - name: 'CA1707:識別子はアンダースコアを含むことはできません'
                   href: ca1707.md
                 - name: 'CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません'
                   href: ca1708.md
-                - name: 'CA1709:識別子では、大文字と小文字が正しく区別されなければなりません'
-                  href: ca1709.md
                 - name: 'CA1710:識別子は、正しいサフィックスを含んでいなければなりません'
                   href: ca1710.md
                 - name: 'CA1711:識別子は、不適切なサフィックスを含むことはできません'
@@ -490,43 +631,27 @@
                   href: ca1716.md
                 - name: 'CA1717:FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません'
                   href: ca1717.md
-                - name: 'CA1719:パラメーター名はメンバー名と同一にすることはできません'
-                  href: ca1719.md
                 - name: 'CA1720:識別子には型名を含めないでください'
                   href: ca1720.md
                 - name: 'CA1721:プロパティ名は get メソッドと同一にすることはできません'
                   href: ca1721.md
-                - name: 'CA1722:識別子は不適切なプレフィックスを含むことはできません'
-                  href: ca1722.md
-                - name: 'CA1725:パラメーター名は基本宣言と同一でなければなりません'
-                  href: ca1725.md
                 - name: 'CA1724:型名は名前空間と同一にすることはできません'
                   href: ca1724.md
-                - name: 'CA1726:適切な用語を使用します'
-                  href: ca1726.md
+                - name: 'CA1725:パラメーター名は基本宣言と同一でなければなりません'
+                  href: ca1725.md
             - name: パフォーマンスに関する警告
               items:
                 - name: 概要
                   displayName: performance warnings
                   href: performance-warnings.md
-                - name: 'CA1800:不必要にキャストしません'
-                  href: ca1800.md
-                - name: 'CA1801:使用されていないパラメーターの確認'
-                  href: ca1801.md
                 - name: 'CA1802:適切な場所にリテラルを使用します'
                   href: ca1802.md
-                - name: 'CA1804:使用されていないローカルを削除します'
-                  href: ca1804.md
                 - name: 'CA1805:不必要に初期化しない'
                   href: ca1805.md
                 - name: 'CA1806:メソッドの結果を無視しない'
                   href: ca1806.md
-                - name: 'CA1809:ローカルを使用しすぎないでください'
-                  href: ca1809.md
                 - name: 'CA1810:参照型の静的フィールドをインラインで初期化します'
                   href: ca1810.md
-                - name: 'CA1811:呼び出されていないプライベート コードを使用しません'
-                  href: ca1811.md
                 - name: 'CA1812:インスタンス化されていない内部クラスを使用しません'
                   href: ca1812.md
                 - name: 'CA1813:アンシールド属性を使用しません'
@@ -535,8 +660,6 @@
                   href: ca1814.md
                 - name: 'CA1815:equals および operator equals を値型でオーバーライドします'
                   href: ca1815.md
-                - name: 'CA1816:GC.SuppressFinalize を正しく呼び出します'
-                  href: ca1816.md
                 - name: 'CA1819:プロパティは、配列を返すことはできません'
                   href: ca1819.md
                 - name: 'CA1820:文字列の長さを使用して空の文字列をテストします'
@@ -577,17 +700,6 @@
                   href: ca1837.md
                 - name: 'CA1838: P/Invokes の StringBuilder パラメーターを使用しません'
                   href: ca1838.md
-            - name: 移植性に関する警告
-              items:
-                - name: 概要
-                  displayName: portability warnings
-                  href: portability-warnings.md
-                - name: 'CA1900:値型フィールドはポータブルでなければなりません'
-                  href: ca1900.md
-                - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
-                  href: ca1901.md
-                - name: 'CA1903:対象のフレームワークから API のみを使用します'
-                  href: ca1903.md
             - name: 信頼性に関する警告
               items:
                 - name: 概要
@@ -595,16 +707,8 @@
                   href: reliability-warnings.md
                 - name: 'CA2000:スコープを失う前にオブジェクトを破棄'
                   href: ca2000.md
-                - name: 'CA2001:問題が発生する可能性のあるメソッドは呼び出しません'
-                  href: ca2001.md
                 - name: 'CA2002:弱い ID を伴うオブジェクト上でロックしません'
                   href: ca2002.md
-                - name: 'CA2003:ファイバーをスレッドとして扱いません'
-                  href: ca2003.md
-                - name: 'CA2004:GC.KeepAlive への呼び出しを削除します'
-                  href: ca2004.md
-                - name: 'CA2006:SafeHandle を使用して、ネイティブ リソースを要約します'
-                  href: ca2006.md
                 - name: 'CA2007:タスクを直接待機しないでください'
                   href: ca2007.md
                 - name: 'CA2008:TaskScheduler を渡さずにタスクを作成しない'
@@ -630,92 +734,12 @@
                   href: security-warnings.md
                 - name: 'CA2100:SQL クエリのセキュリティ脆弱性を確認'
                   href: ca2100.md
-                - name: 'CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします'
-                  href: ca2102.md
-                - name: 'CA2103:命令型のセキュリティを確認します'
-                  href: ca2103.md
-                - name: 'CA2104:読み取り専用の変更可能な参照型を宣言しません'
-                  href: ca2104.md
-                - name: 'CA2105:配列フィールドを読み取り専用にすることはできません'
-                  href: ca2105.md
-                - name: 'CA2106:アサートをセキュリティで保護します'
-                  href: ca2106.md
-                - name: 'CA2107:拒否および許可のみの使用を確認します'
-                  href: ca2107.md
-                - name: 'CA2108:値型での宣言セキュリティを確認します'
-                  href: ca2108.md
                 - name: 'CA2109:表示するイベント ハンドラーを確認します'
                   href: ca2109.md
-                - name: 'CA2111:ポインターは参照可能にすることはできません'
-                  href: ca2111.md
-                - name: 'CA2112:セキュリティで保護された型はフィールドを公開してはなりません'
-                  href: ca2112.md
-                - name: 'CA2114:メソッド セキュリティは型のスーパーセットでなければなりません'
-                  href: ca2114.md
-                - name: 'CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します'
-                  href: ca2115.md
-                - name: 'CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます'
-                  href: ca2116.md
-                - name: 'CA2117:APTCA 型は APTCA 基本型のみを拡張することができます'
-                  href: ca2117.md
-                - name: 'CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください'
-                  href: ca2118.md
                 - name: 'CA2119:プライベート インターフェイスを満たすメソッドをシールします'
                   href: ca2119.md
-                - name: 'CA2120:シリアル化コンストラクターをセキュリティで保護します'
-                  href: ca2120.md
-                - name: 'CA2121:静的コンストラクターはプライベートでなければなりません'
-                  href: ca2121.md
-                - name: 'CA2122:リンク要求を含むメソッドを間接的に公開しません'
-                  href: ca2122.md
-                - name: 'CA2123:オーバーライドのリンク要求はベースと同一でなければなりません'
-                  href: ca2123.md
-                - name: 'CA2124:脆弱性のある finally 句を外側の try でラップします'
-                  href: ca2124.md
-                - name: 'CA2126:型のリンク要求には継承要求が必要です'
-                  href: ca2126.md
-                - name: 'CA2130:セキュリティ上重要な定数は透過的である必要がある'
-                  href: ca2130.md
-                - name: 'CA2131:セキュリティ上重要な型は型等価性に参加してはならない'
-                  href: ca2131.md
-                - name: 'CA2132:既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要'
-                  href: ca2132.md
-                - name: 'CA2133:デリゲートは透過性の整合がとれたメソッドにバインドする必要がある'
-                  href: ca2133.md
-                - name: 'CA2134:メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある'
-                  href: ca2134.md
-                - name: 'CA2135:レベル 2 のアセンブリは LinkDemand を含んではならない'
-                  href: ca2135.md
-                - name: 'CA2136:メンバーには、透過性注釈の競合があってはならない'
-                  href: ca2136.md
-                - name: 'CA2137:透過的メソッドは、検証可能な IL のみを含まなければならない'
-                  href: ca2137.md
-                - name: 'CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない'
-                  href: ca2138.md
-                - name: 'CA2139:透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない'
-                  href: ca2139.md
-                - name: 'CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない'
-                  href: ca2140.md
-                - name: 'CA2141: 透過的メソッドは、LinkDemand を満たしてはならない'
-                  href: ca2141.md
-                - name: 'CA2142:透過的コードは、LinkDemand を使用して保護されてはならない'
-                  href: ca2142.md
-                - name: 'CA2143:透過的メソッドは、セキュリティ確認要求を使用してはならない'
-                  href: ca2143.md
-                - name: 'CA2144:透過的コードは、バイト配列からアセンブリを読み込んではならない'
-                  href: ca2144.md
-                - name: 'CA2145:透過的メソッドを SuppressUnmanagedCodeSecurityAttribute で修飾してはならない'
-                  href: ca2145.md
-                - name: 'CA2146:型は、基本型およびインターフェイスと同程度以上、重要でなければならない'
-                  href: ca2146.md
-                - name: 'CA2147:透過コードは、セキュリティ アサートを使用してはならない'
-                  href: ca2147.md
-                - name: 'CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない'
-                  href: ca2149.md
-                - name: 'CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります'
-                  href: ca2151.md
-                - name: CA5122 P/Invoke 宣言をセーフ クリティカルにしないでください
-                  href: ca5122.md
+                - name: 'CA2153:破損状態の例外の処理を回避する'
+                  href: ca2153.md
                 - name: 'CA2153:破損状態例外の処理を回避する'
                   href: ca2153.md
                 - name: 'CA2300:安全ではないデシリアライザー BinaryFormatter を使用しないでください'
@@ -800,6 +824,10 @@
                   href: ca3077.md
                 - name: 'CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします'
                   href: ca3147.md
+                - name: 'CA5350:脆弱な暗号アルゴリズムを使用しないでください'
+                  href: ca5350.md
+                - name: CA5351 破られた暗号アルゴリズムを使用しないでください
+                  href: ca5351.md
                 - name: 'CA5358:安全ではない暗号モードを使用しないでください'
                   href: ca5358.md
                 - name: 'CA5359: 証明書の検証を無効にしません'
@@ -899,28 +927,18 @@
                   href: usage-warnings.md
                 - name: 'CA1801:使用されていないパラメーターの確認'
                   href: ca1801.md
-                - name: 'CA1806:メソッドの結果を無視しない'
-                  href: ca1806.md
                 - name: 'CA1816:GC.SuppressFinalize を正しく呼び出します'
                   href: ca1816.md
                 - name: 'CA2200:スタック詳細を保持するために再度スローします'
                   href: ca2200.md
                 - name: 'CA2201:予約された例外の種類を発生させません'
                   href: ca2201.md
-                - name: 'CA2202:オブジェクトを複数回破棄しない'
-                  href: ca2202.md
-                - name: 'CA2204:リテラルに正しいスペルを要求'
-                  href: ca2204.md
-                - name: 'CA2205:Win32 API に相当するマネージド API を使用します'
-                  href: ca2205.md
                 - name: 'CA2207:値型のスタティック フィールドのインラインを初期化します'
                   href: ca2207.md
                 - name: 'CA2208:引数の例外を正しくインスタンス化します'
                   href: ca2208.md
                 - name: 'CA2211:非定数フィールドは表示されません'
                   href: ca2211.md
-                - name: 'CA2212:サービス コンポーネントを WebMethod に設定しません'
-                  href: ca2212.md
                 - name: 'CA2213:破棄可能なフィールドは破棄されなければなりません'
                   href: ca2213.md
                 - name: 'CA2214:コンストラクターのオーバーライド可能なメソッドを呼び出しません'
@@ -931,52 +949,24 @@
                   href: ca2216.md
                 - name: 'CA2217:列挙型を FlagsAttribute に設定しません'
                   href: ca2217.md
-                - name: 'CA2218:オーバーライドする Equals で GetHashCode をオーバーライドします'
-                  href: ca2218.md
                 - name: 'CA2219:exception 句に例外を発生させないでください'
                   href: ca2219.md
-                - name: 'CA2220:ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません'
-                  href: ca2220.md
-                - name: 'CA2221:ファイナライザーは保護されなければなりません'
-                  href: ca2221.md
-                - name: 'CA2222:継承されたメンバーの参照範囲を縮小しません'
-                  href: ca2222.md
-                - name: 'CA2223:メンバーは、戻り値の型以外にも異なる点がなければなりません'
-                  href: ca2223.md
-                - name: 'CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします'
-                  href: ca2224.md
                 - name: 'CA2225:演算子オーバーロードには名前付けされた代替が存在します'
                   href: ca2225.md
                 - name: 'CA2226:演算子は対称型オーバーロードを含まなければなりません'
                   href: ca2226.md
                 - name: 'CA2227:Collection プロパティは読み取り専用でなければなりません'
                   href: ca2227.md
-                - name: 'CA2228:未公開のリソース形式を出荷しません'
-                  href: ca2228.md
                 - name: 'CA2229:シリアル化コンストラクターを実装します'
                   href: ca2229.md
-                - name: 'CA2230:可変引数に対して param を使用します'
-                  href: ca2230.md
                 - name: 'CA2231:ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします'
                   href: ca2231.md
-                - name: 'CA2232:Windows フォームのエントリ ポイントを STAThread に設定します'
-                  href: ca2232.md
-                - name: 'CA2233:操作はオーバーフローできません'
-                  href: ca2233.md
                 - name: 'CA2234:文字列の代わりに System.Uri オブジェクトを渡します'
                   href: ca2234.md
                 - name: 'CA2235:すべてのシリアル化不可能なフィールドを設定します'
                   href: ca2235.md
-                - name: 'CA2236:ISerializable 型で基底クラス メソッドを呼び出します'
-                  href: ca2236.md
                 - name: 'CA2237:ISerializable 型を SerializableAttribute に設定します'
                   href: ca2237.md
-                - name: 'CA2238:シリアル化メソッドを正しく実装します'
-                  href: ca2238.md
-                - name: 'CA2239:省略可能なフィールドに、逆シリアル化メソッドを指定します'
-                  href: ca2239.md
-                - name: 'CA2240:ISerializable を正しく実装します'
-                  href: ca2240.md
                 - name: 'CA2241:書式設定メソッドに正しい引数を提供'
                   href: ca2241.md
                 - name: 'CA2242:NaN に対して正しくテストします'
@@ -1001,6 +991,7 @@
               items:
                 - name: 概要
                   displayName: publish warnings
+                  href: publish-warnings.md
                 - name: 'IL3000:単一ファイルとして発行するときにアセンブリ ファイル パスにアクセスしない'
                   href: il3000.md
                 - name: 'IL3001:単一ファイルとして発行するときにアセンブリ ファイル パスにアクセスしない'
