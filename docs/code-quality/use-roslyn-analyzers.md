@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490288"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599985"
 ---
 # <a name="use-code-analyzers"></a>コードアナライザーを使用する
 
@@ -118,7 +118,7 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 - ID による個々のルールの重大度エントリは、カテゴリの重要度エントリよりも優先されます。
 - カテゴリの重大度エントリは、すべてのアナライザールールの重大度エントリよりも優先されます。
 
-次の EditorConfig の例を考えてみます。 [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) には "Performance" というカテゴリがあります。
+次の EditorConfig の例を考えてみます。 [CA1822](./ca1822.md) には "Performance" というカテゴリがあります。
 
    ```ini
    [*.cs]

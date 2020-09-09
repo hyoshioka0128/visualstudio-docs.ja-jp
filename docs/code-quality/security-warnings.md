@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509459"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599960"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
 
@@ -33,7 +33,7 @@ ms.locfileid: "89509459"
 |[CA2100:SQL クエリのセキュリティ脆弱性を確認](../code-quality/ca2100.md)|メソッドに渡された文字列引数から構築された文字列を使用して System.Data.IDbCommand.CommandText プロパティが設定されています。 この規則では、文字列引数にユーザー入力が含まれていることが想定されています。 ユーザー入力から構築された SQL コマンド文字列には、SQL 注入攻撃に対する脆弱性があります。|
 |[CA2109:表示するイベント ハンドラーを確認します](../code-quality/ca2109.md)|パブリックまたはプロテクトのイベント ハンドラー メソッドが検出されました。 イベント ハンドラー メソッドは、絶対に必要な場合を除き公開しないでください。|
 |[CA2119:プライベート インターフェイスを満たすメソッドをシールします](../code-quality/ca2119.md)|継承可能なパブリック型により、internal (Visual Basic では Friend) インターフェイスのオーバーライド可能なメソッド実装が提供されます。 この規則違反を修正するには、アセンブリの外側でメソッドがオーバーライドされないようにします。|
-|[CA2153:破損状態例外の処理を回避する](../code-quality/ca2153.md)|[破損状態例外 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) は、メモリの破損がプロセス内に存在していることを示します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。|
+|[CA2153:破損状態例外の処理を回避する](../code-quality/ca2153.md)|[破損状態例外 (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) は、メモリの破損がプロセス内に存在していることを示します。 プロセスをクラッシュさせるのではなくこれらの例外をキャッチすることは、攻撃者が破損したメモリ領域にセキュリティ上の弱点を見出すことができた場合に、セキュリティ上の脆弱性となる可能性があります。|
 |[CA2300:安全ではないデシリアライザー BinaryFormatter を使用しないでください](../code-quality/ca2300.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2301:最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください](../code-quality/ca2301.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2302:BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します](../code-quality/ca2302.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
@@ -51,13 +51,13 @@ ms.locfileid: "89509459"
 |[CA2330: 逆シリアル化の際に、JsonSerializer の構成は確実にセキュリティで保護してください](../code-quality/ca2330.md)|安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。|
 |[CA2350:DataTable.ReadXml() の入力が信頼されていることを確認してください](ca2350.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataTable> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
 |[CA2351:DataSet.ReadXml() の入力が信頼されていることを確認してください](ca2351.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
-|[CA2352: 安全でないデータセットまたはシリアル化可能な型の DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2352.md)|でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。|
-|[CA2353: Unsafe データセットまたはシリアル化可能な型の DataTable](ca2353.md)|XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
+|[CA2352:シリアル化可能な型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2352.md)|でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。|
+|[CA2353:シリアル化可能な型の安全でない DataSet または DataTable](ca2353.md)|XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2354.md)|シリアル化されたを使用して逆シリアル <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 化すると、キャストされた型のオブジェクトグラフにまたはを含めることができ <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](ca2355.md)|キャストまたは指定された型のオブジェクトグラフがまたはを含むことができる場合、逆シリアル化し <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
 |[CA2356: web 逆シリアル化されたオブジェクトグラフ内の安全でないデータセットまたは DataTable](ca2356.md)|またはを持つメソッドには、 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> またはを参照できるパラメーターがあり <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。|
-|[CA2361: データセットを含む自動生成されたクラスを確認します。 ReadXml () は信頼されていないデータでは使用されません](ca2361.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
-|[CA2362: 自動生成されたシリアル化可能な型の Unsafe データセットまたは DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2362.md)|で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。|
+|[CA2361:DataSet.ReadXml() を含む自動生成クラスが信頼されていないデータで使用されていないことを確認してください](ca2361.md)|信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。|
+|[CA2362:シリアル化可能な自動生成型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2362.md)|で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。|
 |[CA3001:SQL インジェクションの脆弱性のコード レビュー](../code-quality/ca3001.md)|信頼されていない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃に注意してください。 SQL インジェクション攻撃によって、悪意のある SQL コマンドを実行し、アプリケーションのセキュリティと整合性を損なう可能性があります。|
 |[CA3002:XSS の脆弱性のコード レビュー](../code-quality/ca3002.md)|Web 要求から信頼されていない入力を処理する場合は、クロスサイトスクリプティング (XSS) 攻撃に注意する必要があります。 XSS 攻撃によって、信頼できない入力が未加工の HTML 出力に挿入され、攻撃者が悪意のあるスクリプトを実行したり、web ページのコンテンツを改ざんしたりする可能性があります。|
 |[CA3003:ファイル パス インジェクションの脆弱性のコード レビュー](../code-quality/ca3003.md)|Web 要求から信頼されていない入力を使用する場合は、ファイルへのパスを指定するときにユーザーが制御する入力を使用することに注意してください。|

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b060ae550fd0188728c827cac01c12d51930b57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711548"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599618"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -92,7 +92,7 @@ ms.locfileid: "88711548"
 
 **Q**: ソリューションのコード分析プロパティページはどこにありますか。
 
-**A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、CodeAnalysisRuleSet プロパティを使用して、プロパティグループを共有 props/targets ファイルまたはディレクトリに定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、その [ようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。このディレクトリは、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされ](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets)ます。
+**A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、CodeAnalysisRuleSet プロパティを使用して、プロパティグループを共有 props/targets ファイルまたはディレクトリに定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、その [ようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。このディレクトリは、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされ](../msbuild/customize-your-build.md)ます。
 
 ## <a name="see-also"></a>関連項目
 
