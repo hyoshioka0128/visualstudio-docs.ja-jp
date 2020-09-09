@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250519"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509927"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>パフォーマンスの問題が修正される可能性を高める方法
 
@@ -171,7 +171,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 **高度なパフォーマンス トレース**
 
-ほとんどのシナリオでは、[問題の報告] ツールのトレース コレクション機能で十分です。 ただし、トレース コレクションをさらに制御する必要がある場合は (たとえば、バッファー サイズが大きいトレース)、PerfView ツールを使用するのが適切です。 PerfView ツールを使用してパフォーマンス トレースを手動で記録する手順については、[PerfView を使用したパフォーマンス トレースの記録](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView)に関するページを参照してください。
+ほとんどのシナリオでは、[問題の報告] ツールのトレース コレクション機能で十分です。 ただし、トレース コレクションをさらに制御する必要がある場合は (たとえば、バッファー サイズが大きいトレース)、PerfView ツールを使用するのが適切です。 PerfView ツールを使用してパフォーマンス トレースを手動で記録する手順については、[PerfView を使用したパフォーマンス トレースの記録](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md)に関するページを参照してください。
 
 ## <a name="out-of-process-issues"></a>アウトプロセスの問題
 

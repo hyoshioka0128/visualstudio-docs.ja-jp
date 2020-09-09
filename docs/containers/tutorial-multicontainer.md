@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711665"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490314"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>チュートリアル: Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -86,7 +86,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
    ```
    
     > [!NOTE]
-    > 実際のコードでは、各要求の後で `HttpClient` を破棄しないでください。 ベスト プラクティスについては、「[HttpClientFactory を使用して回復力の高い HTTP 要求を実装する](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)」を参照してください。
+    > 実際のコードでは、各要求の後で `HttpClient` を破棄しないでください。 ベスト プラクティスについては、「[HttpClientFactory を使用して回復力の高い HTTP 要求を実装する](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)」を参照してください。
 
    Visual Studio 2019 以降の .NET Core 3.1 では、Web API テンプレートで WeatherForecast API が使用されるため、この行のコメントを解除し、ASP.NET 2.x 用の行をコメント アウトします。
 
@@ -195,4 +195,4 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 ## <a name="see-also"></a>関連項目
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[コンテナー ツール](/visualstudio/containers/)
+[コンテナー ツール](./index.yml)

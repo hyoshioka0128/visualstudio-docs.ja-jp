@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283126"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490301"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 
@@ -110,6 +110,6 @@ Visual Studio で使用できるコンテナー ツールの詳細について�
 
 ## <a name="see-also"></a>関連項目
 
-[Visual Studio でのコンテナーの開発](/visualstudio/containers)
+[Visual Studio でのコンテナーの開発](./index.yml)
 
 [Visual Studio 用の拡張機能のマーケットプレース](https://marketplace.visualstudio.com/)

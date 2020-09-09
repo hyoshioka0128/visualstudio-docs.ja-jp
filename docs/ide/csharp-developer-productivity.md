@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567503"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509940"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 開発者のための Visual Studio 生産性ガイド
 
@@ -139,7 +139,7 @@ Visual Studio には、多くのリファクタリング、コード生成アク
 
 詳しくは、[コード生成機能](code-generation-in-visual-studio.md)に関する記事をご覧ください。
 
-[FxCop アナライザーをインストール](../code-quality/install-fxcop-analyzers.md)して、コードの問題にフラグを設定できます。 または、[Roslyn アナライザー](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)を使用して、独自のリファクタリングまたはコード修正を記述します。
+[FxCop アナライザーをインストール](../code-quality/install-fxcop-analyzers.md)して、コードの問題にフラグを設定できます。 または、[Roslyn アナライザー](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md)を使用して、独自のリファクタリングまたはコード修正を記述します。
 
 さまざまなコミュニティのメンバーが、さらにコードの検査を追加する無料の拡張機能を作成しています。
 
