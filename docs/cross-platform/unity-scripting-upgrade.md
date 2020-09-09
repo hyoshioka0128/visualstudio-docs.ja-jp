@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815137"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508978"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity で.NET 4.x を使用する
 
@@ -233,7 +233,7 @@ Unity 固有のニュアンスでは、TAP は開発者が考慮すべき複雑�
 * タスクを戻す非同期関数には、その名前に **"Async"** のサフィックスが設定されている必要があります。 "Async" のサフィックスは、関数が常に待機している必要があることを示します。
 * 従来の同期コードから非同期関数を実行する関数には、`async void` の戻り値の型のみを使用します。 このような関数は、それだけでは待機できず、名前に "Async" のサフィックスがあるべきではありません。
 * Unity は UnitySynchronizationContext を使用し、既定でメインのスレッドで async 関数が実行されるのを保証します。 Unity の API には、メインのスレッド外ではアクセスできません。
-* [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) や [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) などのメソッドを使用し、バックグラウンド スレッドでタスクを実行することが可能です。 この手法は、パフォーマンスの向上のためにメインのスレッドからコストの高い操作をオフロードする場合に便利です。 ただし、バックグラウンド スレッドを使用すると、[競合状態](https://wikipedia.org/wiki/Race_condition)など、デバッグが困難な問題につながる可能性があります。
+* [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) や [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) などのメソッドを使用し、バックグラウンド スレッドでタスクを実行することが可能です。 この手法は、パフォーマンスの向上のためにメインのスレッドからコストの高い操作をオフロードする場合に便利です。 ただし、バックグラウンド スレッドを使用すると、[競合状態](https://wikipedia.org/wiki/Race_condition)など、デバッグが困難な問題につながる可能性があります。
 * Unity の API には、メインのスレッド外ではアクセスできません。
 * スレッドを使用するタスクは、Unity WebGL のビルドではサポートされていません。
 
