@@ -1,5 +1,6 @@
 ---
-title: データセットと TableAdapters を別々のプロジェクトに分離する
+title: 個別のプロジェクトの使用エラー
+description: データセットと TableAdapters を別々のプロジェクトに分離する
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281553"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743113"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>データセットと TableAdapters を別々のプロジェクトに分離する
 型指定されたデータセットが拡張され、 [tableadapter](create-and-configure-tableadapters.md) とデータセットクラスを別々のプロジェクトに生成できるようになりました。 これにより、アプリケーション層を分離して、n 層データ アプリケーションをすばやく生成できるようになります。
@@ -59,7 +60,7 @@ ms.locfileid: "85281553"
 
 ## <a name="see-also"></a>関連項目
 
-- [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
+- [n 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
 - [チュートリアル: N 層データアプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [階層更新](../data-tools/hierarchical-update.md)
 - [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)
