@@ -1,5 +1,5 @@
 ---
-title: DataRelation を使用してデータセット間のリレーションシップを作成する
+title: データセット間にリレーションシップを作成する
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281761"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739227"
 ---
 # <a name="create-relationships-between-datasets"></a>データセット間にリレーションシップを作成する
 関連するデータテーブルを含むデータセット <xref:System.Data.DataRelation> は、オブジェクトを使用して、テーブル間の親子関係を表し、相互に関連するレコードを返します。 **データソース構成ウィザード**または**データセットデザイナー**を使用して、関連テーブルをデータセットに追加すると、オブジェクトが作成および構成さ <xref:System.Data.DataRelation> れます。

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル : データセット デザイナーでの DataTable の作成'
+title: データセットデザイナーに DataTable を作成する
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0b10fae4717f30f30fd98cb0ad1b5f5b8da4d35
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586004"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741912"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>チュートリアル: データセットデザイナーでの DataTable の作成
 
@@ -81,7 +81,7 @@ ms.locfileid: "75586004"
 
 **Datatablewalkthrough**プロジェクトを保存するには、[**ファイル**] メニューの [**すべてを保存**] をクリックします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でデータセットを作成および構成する](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)

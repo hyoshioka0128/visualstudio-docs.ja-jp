@@ -1,5 +1,5 @@
 ---
-title: サイドバイサイド配置のためにファイル名拡張子を登録する |Microsoft Docs
+title: サイドバイサイド Ide 用のファイル名拡張子の登録
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701549"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741707"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>サイドバイサイド配置のためにファイル名拡張子を登録する
 サイドバイサイドの環境で展開された Vspackage では、ファイル名拡張子を登録して、ファイルを正しいバージョンのに関連付ける必要があり [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 バージョン固有のファイル名拡張子を使用しない限り、登録によって、ユーザーは適切なバージョンのでプロジェクトおよびプロジェクト項目ファイルを開くことができ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
@@ -29,5 +29,5 @@ ms.locfileid: "80701549"
 
 - [Side-by-side ファイルの関連付けの管理](../extensibility/managing-side-by-side-file-associations.md) ファイルを開くために、特定のバージョンのを呼び出すサイドバイサイドインストールを処理する方法について説明し [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目
 - [複数バージョンの Visual Studio のサポート](../extensibility/supporting-multiple-versions-of-visual-studio.md)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]エンドユーザーへの開発およびデプロイ中に、の複数のバージョンと VSPackage に関連する問題について説明します。

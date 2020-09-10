@@ -1,5 +1,6 @@
 ---
-title: アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません
+title: 接続プロパティがありません
+description: アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afbe2f813f0bba881f85463777c704c30a45d9ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78732eded3936a31099c871120406fff3929880c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281501"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89737016"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません
 

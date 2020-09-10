@@ -1,5 +1,5 @@
 ---
-title: 複数のサービス構成を使用した Azure プロジェクトを構成する
+title: 複数の構成を使用したクラウドサービスの構成
 description: ServiceDefinition.csdef、ServiceConfiguration.Local.cscfg および ServiceConfiguration.Cloud.cscfg ファイルを変更して、Azure クラウド サービス プロジェクトを構成する方法について説明します。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790d0090bd5f4c24303afbb72082a05702064071
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280545"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739963"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
 
@@ -53,7 +53,7 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 既定では、Web ロールに対して診断が有効になっています。 Azure クラウド サービス プロジェクトとストレージ アカウントは、ローカル ストレージ エミュレーターを使用するように設定されています。 Azure にデプロイする準備ができたら、ビルダーのボタン (**[…]**) を選択すると、Azure Storage を代わりに使用できます。 要求時に、または自動的にスケジュールされた間隔で、ストレージ アカウントに診断データを転送できます。 Azure Diagnostics の詳細については、[Azure Cloud Services および Virtual Machines での診断の有効化](/azure/cloud-services/cloud-services-dotnet-diagnostics)に関するページを参照してください。
 
-## <a name="settings-page"></a>設定ページ
+## <a name="settings-page"></a>[設定] ページ
 
 **[設定]** ページで、名前と値のペアからなる設定を構成に追加できます。 ロールで実行されているコードは、 [Azure マネージライブラリ](/previous-versions/azure/dn602775(v=azure.11))によって提供されるクラス (具体的には [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) メソッド) を使用して、実行時に構成設定の値を読み取ることができます。
 

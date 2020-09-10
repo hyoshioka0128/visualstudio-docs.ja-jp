@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの種類に対するマネージパッケージフレームワークの使用 (C#) |Microsoft Docs
+title: プロジェクトの種類に対してマネージパッケージフレームワークを使用する (C#)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ca9dda0b699e0f70b0c945ab9ecfe9f9f4dcda6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 496a2528ae70d06696ef25b1adc6255622be3b2f
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704119"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741357"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
 Managed Package Framework (MPF) には、独自のプロジェクトの種類を実装するために使用または継承できる C# クラスが用意されています。 MPF は、Visual Studio が提供するプロジェクトの種類を想定している多くのインターフェイスを実装しているため、プロジェクトの種類の詳しい実装に専念することができます。

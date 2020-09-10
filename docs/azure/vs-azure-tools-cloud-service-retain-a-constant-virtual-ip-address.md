@@ -1,5 +1,5 @@
 ---
-title: Azure クラウド サービスの固定仮想 IP アドレスを保持する
+title: Azure クラウドサービスの固定仮想 IP を保持する
 description: Azure クラウド サービスの仮想 IP アドレス (VIP) が変化しないようにする方法について説明します。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcc39c4321a6f9a081d2a0479ee60d3e56b8eb04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280851"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89740115"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure クラウド サービスの固定仮想 IP アドレスを保持する
 Azure でホストされているクラウド サービスを更新するとき、サービスの仮想 IP アドレス (VIP) が変更されないようにしなければならない場合があります。 ドメイン管理サービスの多くは、ドメイン ネーム システム (DNS) を使用してドメイン名の登録を行います。 DNS が正しく機能するためには、VIP が不変であることが必要です。 Azure ツールの **公開ウィザード** を使用すると、クラウド サービスを更新するときに、その VIP が変更されないようにすることができます。 Cloud Services で DNS ドメイン管理を使用する方法の詳細については、「[Azure クラウド サービスのカスタム ドメイン名の構成](/azure/cloud-services/cloud-services-custom-domain-name-portal)」を参照してください。
@@ -51,5 +51,5 @@ Azure でホストされているクラウド サービスを更新するとき�
 
     ![[Azure アプリケーションの公開] の [概要] ページ](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [Visual Studio の Azure アプリケーションの公開ウィザードの使用](vs-azure-tools-publish-azure-application-wizard.md)

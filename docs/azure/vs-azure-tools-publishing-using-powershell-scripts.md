@@ -1,5 +1,5 @@
 ---
-title: 開発およびテスト環境に発行する PowerShell スクリプト
+title: PowerShell を使用して開発環境とテスト環境に発行する
 description: Visual Studio から Windows PowerShell スクリプトを使用して、開発環境とテスト環境に発行する方法について説明します。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cec8f700e3ba4ce4b08bc57599570e2ef40bef2c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508406"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739976"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -22,7 +22,7 @@ Visual Studio で Web アプリケーションを作成するときに、Azure �
 
 これらのスクリプトを使用すると、サイトのカスタマイズされたバージョン (開発およびテスト環境とも呼ばれます) を、一時的に使用するためにプロビジョニングできます。 たとえば、テスト スイートの実行、バグの再現、バグ修正のテスト、提案された変更の試験的な適用を行うために、Azure 仮想マシンまたは Web サイトのステージング スロットで Web サイトの特定のバージョンをセットアップしたり、デモまたはプレゼンテーション用にカスタム環境をセットアップしたりできます。 プロジェクトを発行するスクリプトを作成したら、必要に応じてそのスクリプトを再実行することで、同一の環境を再作成できます。また、Web アプリケーションの独自のビルドでスクリプトを実行して、テスト用のカスタム環境を作成することもできます。
 
-## <a name="prerequisites"></a>[前提条件]
+## <a name="prerequisites"></a>前提条件
 
 * **Azure ワークロード**がインストールされた Visual Studio 2015 以降、または Visual Studio 2013 と Azure SDK 2.3 以降。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
 * Azure PowerShell 0.7.4 以降。 「 [Azure PowerShell のインストールと構成の方法](/powershell/azure/overview)」を参照してください。
