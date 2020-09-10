@@ -1,5 +1,5 @@
 ---
-title: '&apos;ソース管理プラグイン API バージョン 1.2 | の新機能Microsoft Docs'
+title: '&apos;ソース管理プラグイン API 1.2 の新機能'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a3d81c3a03f4a8dcb8236057e931993f06f6ec
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711756"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741542"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>ソース管理プラグイン API バージョン1.2 の新機能&#39;
 このセクションでは、ソース管理プラグイン API バージョン1.2 のソースコード管理機能の詳細について説明します。 バージョン1.2 の新機能を次に示します。

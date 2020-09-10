@@ -1,5 +1,5 @@
 ---
-title: DataContext メソッドの戻り値の型を変更する (O/R デザイナー)
+title: DataContext メソッドの戻り値の型を変更する
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c232e3e4261008fa736377801183d92420ffbf4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40851323efdf3c2cbf0900ae323f3c9c0a1ec17
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282268"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89737043"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>方法: DataContext メソッドの戻り値の型を変更する (O/R デザイナー)
 ストアドプロシージャまたは関数に基づいて作成されたメソッドの戻り値の型は、 <xref:System.Data.Linq.DataContext> **O/R デザイナー**でストアドプロシージャまたは関数を削除した場所によって異なります。 既存のエンティティ クラスに項目を直接ドロップすると、そのエンティティ クラスを戻り値の型とする <xref:System.Data.Linq.DataContext> メソッドが作成されます (ストアド プロシージャまたは関数によって返されるデータのスキーマがエンティティ クラスの形状と一致する場合)。 **O/R デザイナー**の空の領域に項目をドロップすると、 <xref:System.Data.Linq.DataContext> 自動的に生成された型を返すメソッドが作成されます。 <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、**[プロパティ]** ウィンドウでそのメソッドを選択し、**[Return Type]** プロパティをクリックします。

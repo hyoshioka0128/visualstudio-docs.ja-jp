@@ -1,5 +1,5 @@
 ---
-title: エンティティクラスの挿入、更新、削除の動作をカスタマイズする
+title: 挿入/更新/削除の動作をカスタマイズする
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585952"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741818"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: エンティティクラスの挿入、更新、および削除の動作のカスタマイズ
 
@@ -189,7 +189,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
 
 3. 3つのストアドプロシージャをすべて **O/R デザイナー**にドラッグします。
 
-     各ストアド プロシージャが <xref:System.Data.Linq.DataContext> のメソッドとしてメソッド ペインに追加されます。 詳細については、「 [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
+     各ストアド プロシージャが <xref:System.Data.Linq.DataContext> のメソッドとしてメソッド ペインに追加されます。 詳細については、「[DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
 
 4. **O/R デザイナー**で**Customer**エンティティクラスを選択します。
 
@@ -261,7 +261,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
     > [!NOTE]
     > アプリケーションで SQL Server Express Edition を使用している場合、データベース ファイルの **[出力ディレクトリにコピー]** プロパティの値によっては、手順 10 で **F5** キーを押したときに変更が表示されない場合があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリケーションの要件によっては、LINQ to SQL エンティティクラスを作成した後に実行する必要があるいくつかの手順があります。 このアプリケーションで行うことができる拡張には次のものがあります。
 
@@ -269,7 +269,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
 
 - LINQ クエリを追加してデータをフィルター処理します。 詳細については、「 [LINQ クエリの概要 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext メソッド](../data-tools/datacontext-methods-o-r-designer.md)

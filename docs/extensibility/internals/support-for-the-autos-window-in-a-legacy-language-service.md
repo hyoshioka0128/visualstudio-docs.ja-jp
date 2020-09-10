@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでの [自動変数] ウィンドウのサポート |Microsoft Docs
+title: 従来の言語サービスで [自動変数] ウィンドウをサポートする
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704884"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741456"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>従来の言語サービスでの自動変数ウィンドウのサポート
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>従来の言語サービスの [自動変数] ウィンドウのサポート
+
 [ **自動変数** ] ウィンドウには、デバッグ中のプログラムが一時停止されている場合 (ブレークポイントまたは例外によって)、スコープ内にある変数やパラメーターなどの式が表示されます。 式には、変数、ローカルまたはグローバル、およびローカルスコープで変更されたパラメーターを含めることができます。 [ **自動変数** ] ウィンドウには、クラス、構造体、またはその他の型のインスタンス化を含めることもできます。 式エバリュエーターで評価できるものは、[ **自動変数** ] ウィンドウに表示される可能性があります。
 
  Managed package framework (MPF) では、[ **自動変数** ] ウィンドウの直接サポートは提供されません。 ただし、メソッドをオーバーライドする場合は、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> [ **自動変数** ] ウィンドウに表示される式の一覧を返すことができます。
 
 ## <a name="implementing-support-for-the-autos-window"></a>[自動変数] ウィンドウのサポートの実装
+
  [ **自動変数** ] ウィンドウをサポートするために必要なのは、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> クラスにメソッドを実装することだけです <xref:Microsoft.VisualStudio.Package.LanguageService> 。 の実装では、ソースファイル内の場所を指定して、[ **自動変数** ] ウィンドウに式を表示する必要があることを決定する必要があります。 メソッドは、各文字列が単一の式を表す文字列のリストを返します。 戻り値は、 <xref:Microsoft.VisualStudio.VSConstants.S_OK> リストに式が含まれていることを示し、 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> は表示する式が存在しないことを示します。
 
  実際に返される式は、コード内のその場所に表示される変数またはパラメーターの名前です。 これらの名前は、式エバリュエーターに渡され、値と型を取得して、[ **自動変数** ] ウィンドウに表示されます。

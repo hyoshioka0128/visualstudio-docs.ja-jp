@@ -1,5 +1,5 @@
 ---
-title: DataContext メソッドを sprocs および関数にマップする (O/R デザイナー)
+title: DataContext メソッドを sprocs および関数にマップする
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -8,19 +8,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c1545313ba6852765bc86d57f2149b4481e5f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21ea455e6cc29d17f9050e54dd2f8d11033320ac
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282138"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742904"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>方法: ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)
 
 ストアドプロシージャおよび関数をメソッドとして **O/R デザイナー** に追加でき <xref:System.Data.Linq.DataContext> ます。 メソッドを呼び出して必要なパラメーターを渡すと、データベースでストアド プロシージャまたは関数が実行され、<xref:System.Data.Linq.DataContext> メソッドの戻り値の型のデータが返されます。 メソッドの詳細について <xref:System.Data.Linq.DataContext> は、「 [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
 
 > [!NOTE]
-> また、ストアドプロシージャを使用すると、 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] エンティティクラスからデータベースに変更が保存されるときに、挿入、更新、および削除を実行する既定の実行時の動作をオーバーライドすることもできます。 詳細については、「 [方法: 更新、挿入、および削除を実行するストアドプロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)」を参照してください。
+> また、ストアドプロシージャを使用すると、 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] エンティティクラスからデータベースに変更が保存されるときに、挿入、更新、および削除を実行する既定の実行時の動作をオーバーライドすることもできます。 詳細については、「[方法:更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)」を参照してください。
 
 ## <a name="create-datacontext-methods"></a>DataContext メソッドの作成
 

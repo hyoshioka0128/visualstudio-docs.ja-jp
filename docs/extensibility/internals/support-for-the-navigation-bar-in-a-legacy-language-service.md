@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでのナビゲーションバーのサポート |Microsoft Docs
+title: 従来の言語サービスでのナビゲーションバーのサポート
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704857"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741899"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>従来の言語サービスでのナビゲーション バーのサポート
 エディタービューの上部にあるナビゲーションバーには、ファイル内の型とメンバーが表示されます。 型は左のドロップダウンリストに表示され、メンバーは右のドロップダウンリストに表示されます。 ユーザーが型を選択すると、カレットが型の最初の行に配置されます。 ユーザーがメンバーを選択すると、そのメンバーの定義にカレットが配置されます。 ドロップダウンボックスは、カレットの現在位置を反映して更新されます。

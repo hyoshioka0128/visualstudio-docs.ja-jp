@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスのカスタムドキュメントプロパティ |Microsoft Docs
+title: 従来の言語サービスでのカスタムドキュメントプロパティ
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708966"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741811"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>従来の言語サービスでのカスタムドキュメントプロパティ
 ドキュメントのプロパティは、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **プロパティ** ] ウィンドウに表示できます。 プログラミング言語には、通常、個々のソースファイルに関連付けられたプロパティはありません。 ただし、XML では、エンコード、スキーマ、およびスタイルシートに影響するドキュメントプロパティがサポートされています。

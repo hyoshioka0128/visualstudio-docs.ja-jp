@@ -1,5 +1,6 @@
 ---
-title: 拡張パック項目テンプレートを使用して拡張パックを作成する |Microsoft Docs
+title: 拡張機能パックを作成する
+description: 拡張パック項目テンプレートを使用して拡張パックを作成する方法について説明します
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697751"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742916"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>チュートリアル: 拡張機能パックを作成する
 
