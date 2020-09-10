@@ -1,5 +1,6 @@
 ---
-title: 関連付けを作成できません - プロパティが 2 回リストされています
+title: プロパティが2回表示されます
+description: 関連付けを作成できません - プロパティが 2 回リストされています
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.technology: vs-data-tools
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 50c9311ef09172ea082d2419495f26b51ff1d6a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c496a25b093c88cca68d31bd22ccc6deca9a33a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536800"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743203"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>関連付け &lt;関連付けの名前&gt; を作成できません - プロパティが 2 回リストされています
 
