@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176743"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485442"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>ToDo サンプル アプリをビルドして実行する
 
@@ -56,6 +56,8 @@ ms.locfileid: "89176743"
     docker build -t getting-started .
     ```
 
+    または、Dockerfile を右クリックして **[Build Image...]\(イメージのビルド...\)** を選択した後、プロンプトでタグを指定することもできます。
+
     このコマンドでは、新しいコンテナー イメージを作成するのに Dockerfile が使用されました。 "レイヤー" が多数ダウンロードされていることに気付いたかもしれません。 これは、`node:12-alpine` イメージから開始するようにビルダーに指示したからです。 しかし、ご利用のコンピューター上にそのイメージはなかったため、ダウンロードする必要がありました。
 
     イメージがダウンロードされた後、アプリケーションにコピーし、`yarn` を使用してアプリケーションの依存関係をインストールしました。 `CMD` ディレクティブでは、このイメージからコンテナーを起動する際に実行される既定のコマンドが指定されます。
@@ -95,7 +97,7 @@ VS Code 拡張機能を簡単に見てみると、現在ご自分の 2 つのコ
 
 次に、アプリに変更を加え、実行中のアプリケーションを新しいイメージで更新する方法について学習します。 その過程で、他のいくつかの便利なコマンドについても学習します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 チュートリアルを続行します。
 
