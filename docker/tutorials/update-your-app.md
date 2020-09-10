@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 4a1cba71481608803522336ad5c0f6b6354bca32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176751"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485429"
 ---
 # <a name="update-the-app"></a>アプリの更新
 
@@ -82,7 +82,7 @@ docker: Error response from daemon: driver failed programming external connectiv
 > [!TIP]
 > `docker rm` コマンドに "force" フラグを追加すれば、コンテナーの停止と削除を 1 つのコマンドで行うことができます。 例: `docker rm -f <the-container-id>`
 
-### <a name="remove-a-container-using-the-docker-dashboard"></a>Docker ダッシュボードを使用してコンテナーを削除する
+### <a name="remove-a-container-using-the-docker-view"></a>Docker ビューを使用してコンテナーを削除する
 
 VS Code 拡張機能を開けば、2 回のクリックでコンテナーを削除することができます。 コンテナー ID を検索してから削除する必要がある場合よりも、はるかに簡単です。
 
@@ -92,7 +92,7 @@ VS Code 拡張機能を開けば、2 回のクリックでコンテナーを削�
 
 1. 削除を確認すれば完了です。
 
-![Docker ダッシュボード - コンテナーの削除](media/vs-removing-container.png)
+![Docker ビュー - コンテナーの削除](media/vs-removing-container.png)
 
 ### <a name="start-the-updated-app-container"></a>更新されたアプリ コンテナーを開始する
 
@@ -115,7 +115,7 @@ VS Code 拡張機能を開けば、2 回のクリックでコンテナーを削�
 
 永続化について学習する前に、これらのイメージを他のユーザーと共有する方法を簡単に説明します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 チュートリアルを続行します。
 

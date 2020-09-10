@@ -21,11 +21,11 @@
 - name: チュートリアル
   items:
     - name: C# のデバッグ方法を学習する
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: C++ のデバッグ方法を学習する
       href: getting-started-with-the-debugger-cpp.md
     - name: Visual Basic のデバッグ方法を学習する
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: デバッガーで Python コードを実行する...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: ライブ Azure アプリをデバッグする
@@ -313,7 +313,7 @@
             - name: ターゲット コンピューターで DNS が正しく構成されていることを確認してください
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: Microsoft Visual Studio リモート デバッグ モニターに接続できません
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: DCOM 通信を初期化できません。
@@ -445,7 +445,7 @@
             - name: インストールされているアプリケーション パッケージをデバッグする
               href: debug-installed-app-package.md
             - name: デバッグ中に XAML のプロパティを調べます。
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: 実行中の XAML コードを記述およびデバッグする
               href: ../xaml-tools/xaml-hot-reload.md
             - name: Blend での XAML のデバッグ
@@ -505,7 +505,7 @@
                 - name: WPF のデバッグ
                   href: debugging-wpf.md
                 - name: デバッグ中に XAML のプロパティを調べます。
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: 実行中の XAML コードを記述およびデバッグする
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: WPF ツリー ビジュアライザーを使用する

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d5bd7a2d79bf6da710fd0f5803c2415781160143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176747"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485536"
 ---
 # <a name="share-your-app"></a>アプリを共有する
 
@@ -64,6 +64,8 @@ ms.locfileid: "89176747"
     docker push <username>/getting-started
     ```
 
+    コマンド ラインの代わりに、Docker ビューの **[Images]\(イメージ\)** セクションでイメージ タグを右クリックし、 **[Push...]\(プッシュ...\)** を選択した後、 **[Connect registry...]\(レジストリの接続...\)** 、 **[Docker Hub]** の順に選択することもできます。
+
 ## <a name="run-the-image-on-a-new-instance"></a>新しいインスタンスでイメージを実行する
 
 イメージがビルドされ、レジストリにプッシュされたので、このコンテナー イメージを認識したことがない新しいインスタンス上でアプリを実行してみてください。 これを行うには、Play with Docker を使用します。
@@ -92,7 +94,7 @@ ms.locfileid: "89176747"
 
 理解できたところで、すぐ前のセクションの終わりで、アプリを再起動したところ、すべての ToDo リスト項目が失われたことを思い出してください。 これが優れたユーザー エクスペリエンスではないのは明らかなので、次に、再起動後もデータを保持できる方法を学習します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 チュートリアルを続行します。
 

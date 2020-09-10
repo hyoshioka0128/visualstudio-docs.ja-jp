@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176724"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485587"
 ---
 # <a name="persist-your-data"></a> データを保持する
 
@@ -86,7 +86,7 @@ todo アプリの既定では、そのデータが [SQLite Database](https://www
     docker volume create todo-db
     ```
 
-1. まだ永続ボリュームを使用しない状態で実行されているため、ダッシュボードで (または `docker rm -f <id>` を使用して) todo アプリ コンテナーをもう一度停止します。
+1. まだ永続ボリュームを使用しない状態で実行されているため、Docker ビューで (または `docker rm -f <id>` を使用して) todo アプリ コンテナーをもう一度停止します。
 
 1. todo アプリ コンテナーを起動しますが。ただし、ボリューム マウントを指定するには `-v` フラグを追加します。 名前付きボリュームを使用して、それを `/etc/todos` にマウントします。これにより、パスで作成されたすべてのファイルがキャプチャされます。
 
@@ -98,7 +98,7 @@ todo アプリの既定では、そのデータが [SQLite Database](https://www
 
     ![todo リストに追加された項目](media/items-added.png)
 
-1. todo アプリのコンテナーを削除します。 ダッシュボードまたは `docker ps` を使用して ID を取得し、`docker rm -f <id>` を使用して削除します。
+1. todo アプリのコンテナーを削除します。 Docker ビューまたは `docker ps` を使用して ID を取得し、`docker rm -f <id>` を使用して削除します。
 
 1. 上記と同じコマンドを使用して、新しいコンテナーを開始します。
 
@@ -141,7 +141,7 @@ docker volume inspect todo-db
 
 ただし、前に説明したように、変更ごとにイメージを再構築するにはかなりの時間がかかります。 変更を加えるには、もっと良い方法があるのではないでしょうか。 (以前に触れましたが) バインド マウントを使用することをお勧めします。 次はこれを見てみましょう。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 チュートリアルを続行します。
 
