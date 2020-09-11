@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6673ad8f26c94165635b5f1bc652b91dcbbfd24f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709302"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012452"
 ---
 # <a name="context-parameters"></a>コンテキスト パラメーター
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、[**新しいプロジェクト**]、[**新しい項目の追加**]、または [**サブプロジェクトの追加**] ダイアログボックスにウィザードを追加できます。 追加したウィザードは、[ **ファイル** ] メニューまたは **ソリューションエクスプローラー**でプロジェクトを右クリックして表示できます。 IDE は、ウィザードの実装にコンテキストパラメーターを渡します。 IDE がウィザードを呼び出すと、コンテキストパラメーターによってプロジェクトの状態が定義されます。
@@ -64,4 +64,4 @@ ms.locfileid: "80709302"
 - [カスタムパラメーター](../../extensibility/internals/custom-parameters.md)
 - [ウィザード](../../extensibility/internals/wizards.md)
 - [ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)
-- [ウィザードを起動するためのコンテキストパラメーター](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+- [ウィザードを起動するためのコンテキストパラメーター](/previous-versions/tz690efs(v=vs.140))

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705812"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012036"
 ---
 # <a name="registering-single-file-generators"></a>単一ファイル ジェネレーターの登録
 でカスタムツールを使用できるようにするには、そのツールを [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] インスタンス化して特定のプロジェクトの種類に関連付けることができるように、登録する必要があります。
@@ -44,11 +44,11 @@ ms.locfileid: "80705812"
 
    - CLSID
 
-        必須です。 を実装する COM コンポーネントのクラスライブラリの識別子を指定し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> ます。
+        必須。 を実装する COM コンポーネントのクラスライブラリの識別子を指定し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> ます。
 
    - GeneratesDesignTimeSource
 
-        必須です。 このカスタムツールによって生成されたファイルの型をビジュアルデザイナーで使用できるようにするかどうかを示します。 このパラメーターの値は、ビジュアルデザイナーで使用できない型の場合は (0) 0、ビジュアルデザイナーで使用できる型の場合は (1) 0 である必要があります。
+        必須。 このカスタムツールによって生成されたファイルの型をビジュアルデザイナーで使用できるようにするかどうかを示します。 このパラメーターの値は、ビジュアルデザイナーで使用できない型の場合は (0) 0、ビジュアルデザイナーで使用できる型の場合は (1) 0 である必要があります。
 
    > [!NOTE]
    > カスタムツールを使用する言語ごとに、カスタムツールを個別に登録する必要があります。
@@ -71,4 +71,4 @@ ms.locfileid: "80705812"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [単一ファイル ジェネレーターの実装](../../extensibility/internals/implementing-single-file-generators.md)
 - [ビジュアル デザイナーへのタイプの公開](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [BuildManager オブジェクトの概要](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [BuildManager オブジェクトの概要](/previous-versions/8f9kffa8(v=vs.140))

@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711275"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012244"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn アナライザーを使ってみる
 
@@ -25,7 +25,7 @@ Visual Studio のプロジェクトベースのコードアナライザーを使
 
 [チュートリアル: 最初のアナライザーとコード修正を作成する](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[コード修正の追加チュートリアル: アナライザーの問題についてユーザーに修正プログラムを提供する](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[コード修正の追加チュートリアル: アナライザーの問題についてユーザーに修正プログラムを提供する](/archive/msdn-magazine/2015/february/csharp-adding-a-code-fix-to-your-roslyn-analyzer)
 
 [リアルワールド Roslyn アナライザー](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) 。[話す](https://channel9.msdn.com/events/Build/2015/3-725)こともできます。
 

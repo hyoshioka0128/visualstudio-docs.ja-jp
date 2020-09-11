@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703973"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012114"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage のセットアップ シナリオ
 
@@ -74,7 +74,7 @@ ms.locfileid: "80703973"
 
 ![VS サイドバイサイド VS パッケージ更新インストーラー](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Side-by-side アセンブリの配置の詳細については、「展開の [簡略化と、.NET Framework による DLL の使用の解決](https://msdn.microsoft.com/library/ms973843.aspx)」を参照してください。
+Side-by-side アセンブリの配置の詳細については、「展開の [簡略化と、.NET Framework による DLL の使用の解決](/previous-versions/dotnet/articles/ms973843(v=msdn.10))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

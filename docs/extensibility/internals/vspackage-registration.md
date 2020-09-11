@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05dec8fbef40143f31f2c0ac484824717ea2e32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703928"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012127"
 ---
 # <a name="vspackage-registration"></a>VSPackage の登録
 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、インストールされていることを通知し、読み込む必要があります。 このプロセスは、レジストリに情報を書き込むことによって行われます。 これは、一般的なインストーラーのジョブです。
@@ -57,4 +57,4 @@ Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、イ
 
 ## <a name="see-also"></a>関連項目
 - [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)
-- [マネージドパッケージの登録](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [マネージドパッケージの登録](/previous-versions/bb166783(v=vs.100))

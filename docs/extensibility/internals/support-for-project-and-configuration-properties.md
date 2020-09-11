@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21d552e26add3a5159febd666c1f60573697535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704901"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012023"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティのサポート
 統合開発環境 (IDE: integrated development environment) の [ **プロパティ** ] ウィンドウでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] プロジェクトと構成のプロパティを表示できます。 ユーザーがアプリケーションのプロパティを設定できるように、独自のプロジェクトの種類のプロパティページを提供できます。
 
- **ソリューションエクスプローラー**でプロジェクトノードを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックすると、プロジェクトと構成のプロパティを含むダイアログボックスを開くことができます。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]と [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 、およびこれらの言語から派生したプロジェクトの種類では、このダイアログボックスは、 [[全般] ([オプション] ダイアログボックス-[環境](../../ide/reference/general-environment-options-dialog-box.md)]) のタブ付きページとして表示されます。 詳細については、「 [ビルド内にありません: チュートリアル: プロジェクトおよび構成プロパティの公開 (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)」を参照してください。
+ **ソリューションエクスプローラー**でプロジェクトノードを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックすると、プロジェクトと構成のプロパティを含むダイアログボックスを開くことができます。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]と [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 、およびこれらの言語から派生したプロジェクトの種類では、このダイアログボックスは、 [[全般] ([オプション] ダイアログボックス-[環境](../../ide/reference/general-environment-options-dialog-box.md)]) のタブ付きページとして表示されます。 詳細については、「 [ビルド内にありません: チュートリアル: プロジェクトおよび構成プロパティの公開 (C#)](/previous-versions/bb166517(v=vs.100))」を参照してください。
 
  プロジェクト用の Managed Package Framework (MPFProj) には、新しいプロジェクトシステムを作成および管理するためのヘルパークラスが用意されています。 ソースコードとコンパイルの手順については、「 [MPF For Projects-Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10)」を参照してください。
 
@@ -90,7 +90,7 @@ ms.locfileid: "80704901"
 
  構成プロパティは、[構成] プロパティページの [カテゴリ] カテゴリの [my `MyConfigProp` **Config] プロパティ**として表示されます。 **My Category** このオプションが選択されている場合は、説明パネルに " **My description**" という説明が表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロパティ ページの追加と削除](../../extensibility/adding-and-removing-property-pages.md)
 - [プロジェクト](../../extensibility/internals/projects.md)
 - [テンプレート ディレクトリの説明 (.Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

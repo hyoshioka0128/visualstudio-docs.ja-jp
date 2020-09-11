@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706399"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011854"
 ---
 # <a name="project-property-user-interface"></a>プロジェクト プロパティのユーザー インターフェイス
 
@@ -55,9 +55,9 @@ ms.locfileid: "80706399"
 
 プロジェクトのサブタイプによってオブジェクトが集約されるため <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 、これらのプロパティの定義をオーバーライドして、どの **プロパティページ** のダイアログボックスを表示するかを制御できます。 プロジェクトのサブタイプは、これらのプロパティを内部基本プロジェクトから取得し、必要に応じて Clsid を追加または削除できます。
 
-プロジェクトのサブタイプによって追加された新しいプロパティページには、プロジェクト構成の参照オブジェクトが基本プロジェクトの実装から渡されます。 このプロジェクト構成の参照オブジェクトは、オートメーションエクステンダーをサポートしています。 AutomationExtenders の詳細については、「 [オートメーションエクステンダーの実装と使用](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356)」を参照してください。 プロジェクトのサブタイプの呼び出しによって実装されるプロパティページでは、 <xref:EnvDTE.Project.Extender%2A> 基本プロジェクトの構成参照オブジェクトを拡張する独自のプロジェクトサブタイプの構成参照オブジェクトを取得します。
+プロジェクトのサブタイプによって追加された新しいプロパティページには、プロジェクト構成の参照オブジェクトが基本プロジェクトの実装から渡されます。 このプロジェクト構成の参照オブジェクトは、オートメーションエクステンダーをサポートしています。 AutomationExtenders の詳細については、「 [オートメーションエクステンダーの実装と使用](/previous-versions/0y92k2w2(v=vs.140))」を参照してください。 プロジェクトのサブタイプの呼び出しによって実装されるプロパティページでは、 <xref:EnvDTE.Project.Extender%2A> 基本プロジェクトの構成参照オブジェクトを拡張する独自のプロジェクトサブタイプの構成参照オブジェクトを取得します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - <xref:EnvDTE.IFilterProperties>
 - [[プロパティページ] ダイアログボックス](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

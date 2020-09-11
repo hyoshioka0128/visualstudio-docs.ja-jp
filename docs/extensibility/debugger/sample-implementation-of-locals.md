@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b70e0f9091d40ed6b5fc44934606f42ccd84b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713074"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011893"
 ---
 # <a name="sample-implementation-of-locals"></a>ローカルの実装のサンプル
 > [!IMPORTANT]
@@ -58,7 +58,7 @@ ms.locfileid: "80713074"
 ## <a name="related-sections"></a>関連項目
  [評価コンテキスト](../../extensibility/debugger/evaluation-context.md) DE が式エバリュエーター (EE) を呼び出すときに渡される引数を提供します。
 
- [MyCEE サンプル](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f) MyC 言語の式エバリュエーターを作成するための1つの実装方法を示します。
+ [MyCEE サンプル](/previous-versions/) MyC 言語の式エバリュエーターを作成するための1つの実装方法を示します。
 
 ## <a name="see-also"></a>関連項目
 - [表示 (ローカルを)](../../extensibility/debugger/displaying-locals.md)
