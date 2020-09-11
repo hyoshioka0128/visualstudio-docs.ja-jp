@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713147"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011828"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>デバッガーを拡張するためのロードマップ
 このドキュメントでは、を使用してデバッガーを拡張するためのガイドとリファレンス情報を提供し [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ます。
@@ -43,7 +43,7 @@ ms.locfileid: "80713147"
 
    [カスタムデバッグエンジンを作成する](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [チュートリアル: ATL COM を使用してデバッグエンジンをビルドする](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [チュートリアル: ATL COM を使用してデバッグエンジンをビルドする](/previous-versions/bb147024(v=vs.90))
 
    [ポートサプライヤーを実装する](../../extensibility/debugger/implementing-a-port-supplier.md)
 

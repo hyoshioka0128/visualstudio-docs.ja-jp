@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6d402b6605f2e01a20d400c2c33573c686a1cdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e87b33d9b4b3863b89ecd06c3ea959c6e35ec7c0
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701817"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011984"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 要素 (Visual Studio テンプレート)
 複数プロジェクトのテンプレート内の1つのプロジェクトの *.vstemplate* ファイルへのパスを指定します。
@@ -49,7 +49,7 @@ ms.locfileid: "80701817"
 |属性|説明|
 |---------------|-----------------|
 |`ProjectName`|省略可能な属性です。<br /><br /> 複数プロジェクトのテンプレートにある各プロジェクトに個別の名前を指定します。 [ **新しいプロジェクト** ] ダイアログボックスでは、個々のプロジェクトに名前を割り当てることはできません。|
-|`CopyParameters`|メインのグループ テンプレート内のすべての変数を、リンクされたテンプレートそれぞれにコピーできるようにします。<br /><br /> リンクされたテンプレート内のパラメーターには、プレフィックス `"$ext_*$"` が付きます。 たとえば、親グループテンプレートのパラメーターの `$projectname$` 値が **ExampleProject1**である場合、リンクされたテンプレートの実行が開始されると、 `$ext_projectname$` 親グループテンプレートからのパラメーターのコピーであるパラメーターが取得され `$projectname$` ます。<br /><br /> これにより、リンクされたテンプレートは、親のグループ テンプレートでのみ簡単に作成できる一部の共通パラメーターを共有できるようになります。<br /><br /> この属性は省略可能であり、省略した場合は自動的に `false` に設定されます。<br /><br /> Visual Studio 2013 更新プログラム 2 で導入されました。 正しい製品バージョンを参照するには、「 [VISUAL STUDIO 2013 SDK Update 2 で配信される参照アセンブリ](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)」を参照してください。|
+|`CopyParameters`|メインのグループ テンプレート内のすべての変数を、リンクされたテンプレートそれぞれにコピーできるようにします。<br /><br /> リンクされたテンプレート内のパラメーターには、プレフィックス `"$ext_*$"` が付きます。 たとえば、親グループテンプレートのパラメーターの `$projectname$` 値が **ExampleProject1**である場合、リンクされたテンプレートの実行が開始されると、 `$ext_projectname$` 親グループテンプレートからのパラメーターのコピーであるパラメーターが取得され `$projectname$` ます。<br /><br /> これにより、リンクされたテンプレートは、親のグループ テンプレートでのみ簡単に作成できる一部の共通パラメーターを共有できるようになります。<br /><br /> この属性は省略可能であり、省略した場合は自動的に `false` に設定されます。<br /><br /> Visual Studio 2013 更新プログラム 2 で導入されました。 正しい製品バージョンを参照するには、「 [VISUAL STUDIO 2013 SDK Update 2 で配信される参照アセンブリ](/previous-versions/dn632168(v=vs.120))」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし。

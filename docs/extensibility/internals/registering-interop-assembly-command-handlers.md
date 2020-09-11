@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705858"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012049"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) によってコマンドが適切にルーティングされるように、に登録する必要があります。
@@ -25,7 +25,7 @@ VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] �
 
  マネージパッケージフレームワーク (MPF) は、クラスを通じてこの機能を提供し <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> ます。
 
-- [コマンドテーブル形式の参照](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) リソースは、アンマネージサテライト UI dll にあります。
+- [コマンドテーブル形式の参照](/previous-versions/bb164647(v=vs.100)) リソースは、アンマネージサテライト UI dll にあります。
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンドハンドラーの登録
  ユーザーインターフェイス (UI) ベースのコマンドのハンドラーとして機能する VSPackage には、VSPackage の後にという名前のレジストリエントリが必要です `GUID` 。 このレジストリエントリは、VSPackage の UI リソースファイルとそのファイル内の menu リソースの場所を指定します。 レジストリエントリ自体は HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \ メニューの下にあり \\ *\<Version>* ます。ここで、 *\<Version>* は9.0 などののバージョンです [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -66,6 +66,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [相互運用機能アセンブリを使用するコマンドとメニュー](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707462"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012205"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows インストーラーによる VSPackage のインストール
 VSPackage をに統合するに [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、ユーザーのコンピューターにファイルをコピーするだけではありません。 VSPackage のインストーラーは、VSPackage とその依存ファイルをインストールし、それらをに登録して統合する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] スプラッシュスクリーンと [バージョン情報] ダイアログボックスにアイコンを表示するなどの統合機能を利用できます。
 
- Vspackage を配布するには、Microsoft Windows インストーラーファイルを使用することをお勧めします。 使いやすい Windows インストーラーパッケージは、でサポートされている任意の Windows オペレーティングシステムで実行でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 詳細については、「 [Windows インストーラー](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)」を参照してください。
+ Vspackage を配布するには、Microsoft Windows インストーラーファイルを使用することをお勧めします。 使いやすい Windows インストーラーパッケージは、でサポートされている任意の Windows オペレーティングシステムで実行でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 詳細については、「 [Windows インストーラー](/previous-versions/2kt85ked(v=vs.120))」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)

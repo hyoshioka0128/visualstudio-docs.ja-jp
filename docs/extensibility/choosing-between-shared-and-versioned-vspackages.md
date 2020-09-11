@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739876"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011932"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>共有バージョンとバージョン付き Vspackage を選択する
 異なるバージョンの Visual Studio を同じコンピューターに共存させることができます。 Vspackage は、すべてのバージョンをサポートでき [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
@@ -35,7 +35,7 @@ ms.locfileid: "80739876"
 
   - 実行中ののバージョンに合わせて VSPackage をプログラムし [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 その後、新しいサービスのクエリが失敗した場合、VSPackage は、以前のバージョンのでサポートされている他のサービスを提供でき [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
-- VSPackage を適切に登録します。 詳細については、「 [VSPackage registration](../extensibility/internals/vspackage-registration.md) And [Managed VSPackage registration](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)」を参照してください。
+- VSPackage を適切に登録します。 詳細については、「 [VSPackage registration](../extensibility/internals/vspackage-registration.md) And [Managed VSPackage registration](/previous-versions/bb166783(v=vs.100))」を参照してください。
 
 - ファイル拡張子を適切に登録します。 詳細については、「 [サイドバイサイド配置のファイル名拡張子の登録](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)」を参照してください。
 

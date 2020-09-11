@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704023"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012348"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio Command Table (.Vsct) ファイル
 コマンドテーブル構成ファイルは、VSPackage に含まれる一連のコマンドを記述したテキストファイルです。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドテーブル (vsct) コンパイラは、XML ベースの構成ファイル (vsct ファイル) をバイナリコマンドテーブル出力 (cto) ファイルにコンパイルします。 結果として得られる cto ファイルは、コマンドテーブル (CTC) コンパイラを使用して ctc 構成ファイルをコンパイルすることによって作成されるファイルと同じです。 ただし、xml ベースの vsct ファイルには、XML エディターや XML IntelliSense など、いくつかの利点があります。
@@ -37,7 +37,7 @@ ms.locfileid: "80704023"
 
  コマンドテーブルの XML 構成ファイルの各セクションの詳細について説明します。
 
- [コマンドテーブルの構成 (を実行します。Ctc) ファイル](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) には、非推奨の ctc ファイル形式の概要が示されています。
+ [コマンドテーブルの構成 (を実行します。Ctc) ファイル](/previous-versions/bb165153(v=vs.100)) には、非推奨の ctc ファイル形式の概要が示されています。
 
  [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 

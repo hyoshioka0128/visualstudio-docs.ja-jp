@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905947"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012088"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタムエディターへの機能の追加
 カスタムエディターを作成したら、それにさらに機能を追加できます。
@@ -34,11 +34,11 @@ ms.locfileid: "85905947"
 
 3. インターフェイスを設定して、エディターファクトリを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> ます。
 
-     詳細については、「 [エディターファクトリ](/visualstudio/extensibility/editor-factories?view=vs-2015)」を参照してください。
+     詳細については、「 [エディターファクトリ](../vs-2015/extensibility/editor-factories.md?view=vs-2015)」を参照してください。
 
 4. エディターでドキュメントビューのオブジェクトウィンドウを管理するために、埋め込み先でのアクティブ化または簡略化された埋め込みを使用するかどうかを決定します。
 
-     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された [埋め込み](../extensibility/simplified-embedding.md) と [インプレースアクティブ化](/visualstudio/misc/in-place-activation?view=vs-2015)」を参照してください。
+     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された [埋め込み](../extensibility/simplified-embedding.md) と [インプレースアクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015)」を参照してください。
 
 5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドを処理するインターフェイスを実装します。
 
@@ -115,7 +115,7 @@ ms.locfileid: "85905947"
 
 12. 状況依存のヘルプサポートを実装します。
 
-     この手順では、エディターの項目に対して F1 ヘルプとダイナミックヘルプウィンドウのサポートを提供できます。 詳細については、「 [方法: エディターのコンテキストを指定する](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015)」を参照してください。
+     この手順では、エディターの項目に対して F1 ヘルプとダイナミックヘルプウィンドウのサポートを提供できます。 詳細については、「 [方法: エディターのコンテキストを指定する](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015)」を参照してください。
 
 13. インターフェイスを実装することによって、エディターからオートメーションオブジェクトモデルを公開し `IDispatch` ます。
 

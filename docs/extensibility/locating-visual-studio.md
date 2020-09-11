@@ -9,16 +9,16 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64878144"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012478"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio を探す
 
-Visual Studio 2017 以降では、同じバージョンまたはエディションの複数のインスタンスをインストールできます。 これは、以前のインストールを維持しながら、プライマリ開発用コンピューターで新しい機能をプレビューする場合に便利です。 これらの変更のため、インスタンスの検索に使用できる1つの環境変数またはレジストリ値はありません。 代わりに、 [COM クエリ API](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) を使用して、拡張機能に関連する条件に基づいてインスタンスを検索することができます。
+Visual Studio 2017 以降では、同じバージョンまたはエディションの複数のインスタンスをインストールできます。 これは、以前のインストールを維持しながら、プライマリ開発用コンピューターで新しい機能をプレビューする場合に便利です。 これらの変更のため、インスタンスの検索に使用できる1つの環境変数またはレジストリ値はありません。 代わりに、 [COM クエリ API](/dotnet/api/microsoft.visualstudio.setup.configuration) を使用して、拡張機能に関連する条件に基づいてインスタンスを検索することができます。
 
 これは、ネイティブコードとマネージコードで使用できる NuGet パッケージを含む高速で読み取り専用の API です。
 

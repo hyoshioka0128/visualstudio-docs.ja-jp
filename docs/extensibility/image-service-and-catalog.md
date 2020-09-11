@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536332"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011958"
 ---
 # <a name="image-service-and-catalog"></a>イメージサービスとカタログ
 このクックブックには、visual studio イメージサービスと Visual Studio 2015 で導入されたイメージカタログを採用するためのガイダンスとベストプラクティスが含まれています。
@@ -103,9 +103,9 @@ ms.locfileid: "85536332"
 
 |**サブ要素**|**定義**|
 |-|-|
-|[インポート]|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
+|インポート|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
 |Guid|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|
-|ID|シンボルは ID を表し、負でない整数である必要があります|
+|id|シンボルは ID を表し、負でない整数である必要があります|
 |String|シンボルは任意の文字列値を表します。|
 
  シンボルは大文字と小文字が区別され、$ (symbol-name) 構文を使用して参照されます。
@@ -144,7 +144,7 @@ ms.locfileid: "85536332"
 |**属性**|**定義**|
 |-|-|
 |Guid|必要イメージモニカーの GUID 部分|
-|ID|必要イメージモニカーの ID 部分|
+|id|必要イメージモニカーの ID 部分|
 |AllowColorInversion|[省略可能、既定値は true]画像の色を、濃色の背景で使用するときにプログラムによって反転するかどうかを示します。|
 
  **ソース**
@@ -160,11 +160,11 @@ ms.locfileid: "85536332"
 |**属性**|**定義**|
 |-|-|
 |Uri|必要イメージの読み込み元となる場所を定義する URI。 次のいずれかを指定できます。<br /><br /> -Application:///機関を使用する[パック URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-コンポーネントの絶対リソース参照<br />-ネイティブリソースを含むファイルへのパス|
-|背景|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> *ダーク:* ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark**の場合*、ソースの色は反転されません。 Background が省略されている場合、または *systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの **allowcolorinversion** 属性によって制御されます。|
+|バックグラウンド|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> *ダーク:* ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark**の場合*、ソースの色は反転されません。 Background が省略されている場合、または *systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの **allowcolorinversion** 属性によって制御されます。|
 
 \<Source>要素は、次の省略可能なサブ要素のうち1つだけを持つことができます。
 
-|**Element**|**属性 (すべて必須)**|**定義**|
+|**要素**|**属性 (すべて必須)**|**定義**|
 |-|-|-|
 |\<Size>|値|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|
 |\<SizeRange>|MinSize、MaxSize|ソースは、MinSize から MaxSize (デバイスユニット単位) のイメージに使用されます。 画像は正方形になります。|
@@ -179,8 +179,8 @@ ms.locfileid: "85536332"
 
 |**属性**|**定義**|
 |-|-|
-|型|必要ネイティブリソースの型 (XAML または PNG)|
-|ID|必要ネイティブリソースの整数の ID 部分|
+|Type|必要ネイティブリソースの型 (XAML または PNG)|
+|id|必要ネイティブリソースの整数の ID 部分|
 
  **リスト**
 
@@ -196,7 +196,7 @@ ms.locfileid: "85536332"
 |**属性**|**定義**|
 |-|-|
 |Guid|必要イメージモニカーの GUID 部分|
-|ID|必要イメージモニカーの ID 部分|
+|id|必要イメージモニカーの ID 部分|
 |外部|[省略可能、既定値は false]イメージモニカーが現在のマニフェスト内のイメージを参照しているかどうかを示します。|
 
  含まれているイメージのモニカーは、現在のマニフェストで定義されているイメージを参照する必要がありません。 含まれているイメージがイメージライブラリに見つからない場合は、空白のプレースホルダーイメージが代わりに使用されます。
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. イメージサービスを使用して、更新されたマッピングによってモニカーを要求するようにコードを更新します。 (これは、マネージコードの **CrispImages** を更新したり、イメージサービスから hbitmaps や hbitmaps を要求したり、ネイティブコードの周囲に渡したりすることを意味します)。
 
 ## <a name="testing-your-images"></a>イメージのテスト
- イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは [Visual Studio 2015 SDK](visual-studio-sdk.md)で入手できます。 このツールとその他のドキュメントについては、 [こちら](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)を参照してください。
+ イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは [Visual Studio 2015 SDK](visual-studio-sdk.md)で入手できます。 このツールとその他のドキュメントについては、 [こちら](./internals/vssdk-utilities.md?view=vs-2015)を参照してください。
 
 ## <a name="additional-resources"></a>その他のリソース
 
@@ -1009,7 +1009,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||関連項目|
+    |GlyphAssembly||参照先|
     |GlyphLibrary||ライブラリ|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

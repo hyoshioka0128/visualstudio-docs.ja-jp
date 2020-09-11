@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706379"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012062"
 ---
 # <a name="project-type-essentials"></a>プロジェクト タイプの基本情報
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、やなどの言語用のプロジェクトの種類がいくつか含まれてい [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、独自のプロジェクトの種類を作成することもできます。
@@ -52,7 +52,7 @@ ms.locfileid: "80706379"
 
 - プロジェクトの種類は、に必要な一連のインターフェイスを実装する VSPackage 内のオブジェクトです [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 C# を使用してプロジェクトの種類を開発している場合は、マネージパッケージフレームワークプロジェクトクラスによって必要なインターフェイスが実装され、その実装を継承できるようになります。 詳細については、「 [マネージパッケージフレームワークを使用したプロジェクトの種類の実装 (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)」を参照してください。
 
-- C++ 開発者にとって、HierUtil ライブラリのクラスは同様の方法で動作します。 詳細については、「 [ビルド内にありません: HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)」を参照してください。
+- C++ 開発者にとって、HierUtil ライブラリのクラスは同様の方法で動作します。 詳細については、「 [ビルド内にありません: HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](/previous-versions/bb166212(v=vs.100))」を参照してください。
 
 - プロジェクトの種類では、.exe または .dll アセンブリに組み込まれている一般的なソースコードファイル以外のデータをサポートできます。 たとえば、データベースプロジェクトには、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ディスクに格納されているスクリプトおよびクエリファイルへの参照が含まれています。また、データベースに対してスクリプトとクエリを実行するために **ソリューションエクスプローラー** にコマンドを追加していますが、プロジェクトでビルド動作がサポートされていません。 詳細については、「 [プロジェクト項目を開いて保存](../../extensibility/internals/opening-and-saving-project-items.md)する」を参照してください。
 

@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739969"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011789"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 の拡張機能の変更点
 
@@ -70,7 +70,7 @@ Visual studio のプロセス内で実行されているコードは、Visual St
   * GAC のコピーがセットアップから削除されました。
   * アセンブリのコードベースエントリを指定するために、 *pkgdef* ファイルが追加されました。
 
-    たとえば、次のように入力します。
+    次に例を示します。
 
     ```
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
@@ -97,7 +97,7 @@ Visual studio のプロセス内で実行されているコードは、Visual St
 
 ### <a name="global-com-registration"></a>グローバル COM 登録
 
-* 以前は、Visual Studio では、ネイティブ COM 登録をサポートするために、多くのレジストリキーが HKEY_CLASSES_ROOT および HKEY_LOCAL_MACHINE ハイブにインストールされていました。 この影響を避けるために、Visual Studio では、 [COM コンポーネントの登録を不要にしたアクティベーション](https://msdn.microsoft.com/library/ms973913.aspx)が使用されるようになりました。
+* 以前は、Visual Studio では、ネイティブ COM 登録をサポートするために、多くのレジストリキーが HKEY_CLASSES_ROOT および HKEY_LOCAL_MACHINE ハイブにインストールされていました。 この影響を避けるために、Visual Studio では、 [COM コンポーネントの登録を不要にしたアクティベーション](/previous-versions/dotnet/articles/ms973913(v=msdn.10))が使用されるようになりました。
 * その結果、既定では、Visual Studio によって、% ProgramFiles (x86)% \ Common .OLB v の下にあるほとんどの TLB//DLL ファイルがインストールされなくなりました。 これらのファイルは、Visual Studio ホストプロセスによって使用される、対応する登録不要の COM マニフェストと共に [INSTALLDIR] の下にインストールされるようになりました。
 * その結果、Visual Studio COM インターフェイスのグローバル COM 登録に依存する外部コードは、これらの登録を見つけることができなくなります。 Visual Studio プロセス内で実行されているコードに違いはありません。
 

@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699017"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012518"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types] .xml ファイルの構造
 VSIX パッケージ内のコンテンツの種類に関する情報を格納します。 Visual Studio では、[Content_Types] .xml ファイルを使用してパッケージをインストールしますが、ファイル自体はインストールしません。
 
 > [!NOTE]
-> このトピックは、VSIX パッケージで使用される [Content_Type] .xml ファイルにのみ適用されますが、[Content_Types] .xml ファイルの種類は、 *Open パッケージング規則 (OPC)* 標準の一部です。 詳細については、MSDN Web サイトの「 [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx) 」を参照してください。
+> このトピックは、VSIX パッケージで使用される [Content_Type] .xml ファイルにのみ適用されますが、[Content_Types] .xml ファイルの種類は、 *Open パッケージング規則 (OPC)* 標準の一部です。 詳細については、MSDN Web サイトの「 [OPC: データをパッケージ化するための新しい標準](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) 」を参照してください。
 
 ## <a name="attributes-and-elements"></a>属性および要素
  次のセクションでは、ルート要素とその属性および子要素について説明します。
@@ -64,7 +64,7 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
 ### <a name="attribute-name-attribute"></a>{属性名}属性
  Visual Studio は `ContentType` 、関連付けられている型の次の値を認識 `Extension` します。
 
-|拡張子|ContentType|
+|拡張機能|ContentType|
 |---------------|-----------------|
 |txt|text/plain|
 |.pkgdef|text/plain|
@@ -101,5 +101,5 @@ VSIX パッケージ内のコンテンツの種類に関する情報を格納し
 
 ## <a name="see-also"></a>関連項目
 - [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)
-- [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: データをパッケージ化するための新しい標準](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))
+- [OPC: データをパッケージ化するための新しい標準](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173566"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012361"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK を使用すると、visual Studio の機能を拡張したり、新しい機能を Visual Studio に統合したりできます。 拡張機能は、他のユーザーや Visual Studio Marketplace にも配布できます。 Visual Studio を拡張する方法の一部を次に示します。
@@ -65,7 +65,7 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
 ## <a name="other-visual-studio-sdk-resources"></a>その他の Visual Studio SDK リソース
  VSSDK に関する質問がある場合、または拡張機能の開発経験を共有する場合は、 [Visual Studio 機能拡張フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) または [ExtendVS Gitter チャットルーム](https://gitter.im/Microsoft/extendvs)を使用できます。
 
- 詳細については、 [VSX Arcana ブログ](https://blogs.msdn.microsoft.com/vsx/) と、Microsoft mvp によって作成された多数のブログを参照してください。
+ 詳細については、 [VSX Arcana ブログ](/archive/blogs/vsx/) と、Microsoft mvp によって作成された多数のブログを参照してください。
 
 - [お気に入りの Visual Studio 拡張機能](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
@@ -77,7 +77,7 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
 
 - [メニューコマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ: アドインを VSPackage 拡張機能に変換する](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [FAQ: アドインを VSPackage 拡張機能に変換する](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [マネージコード内の複数のスレッドを管理する](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [メニューとコマンドを拡張する](../extensibility/extending-menus-and-commands.md)
 - [ツールバーにコマンドを追加する](../extensibility/adding-commands-to-toolbars.md)

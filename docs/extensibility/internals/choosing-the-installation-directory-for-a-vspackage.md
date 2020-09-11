@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709762"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011906"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage のインストールディレクトリを選択してください
 VSPackage とそのサポートファイルは、ユーザーのファイルシステム上にある必要があります。 場所は、VSPackage が管理されているかどうか、サイドバイサイドのバージョン管理スキーム、およびユーザーの選択によって異なります。
@@ -62,4 +62,4 @@ VSPackage DLL にリソースと **SatelliteDll\DllName** レジストリエン�
 ## <a name="see-also"></a>関連項目
 - [共有バージョンとバージョン付き Vspackage を選択する](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage を管理する](../../extensibility/managing-vspackages.md)
-- [パッケージ登録の管理](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [パッケージ登録の管理](/previous-versions/bb166783(v=vs.100))
