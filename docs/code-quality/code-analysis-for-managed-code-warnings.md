@@ -15,19 +15,19 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509017"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034105"
 ---
 # <a name="net-code-analysis-rules"></a>.NET コード分析規則
-マネージド コード分析ツールには、マネージド コード ライブラリの規則違反を示す警告機能があります。 警告は、デザイン、ローカリゼーション、パフォーマンス、セキュリティなどの規則の区分に分類されています。 個々の警告によって、マネージド コード分析規則の違反がわかります。 ここでは、マネージド コード分析の各警告について、詳細な説明と例を紹介します。
+.NET コード分析では、コード品質違反やコード品質向上の提案を示すルールが提供されます。 ルールは、設計、ローカライズ、パフォーマンス、セキュリティなどのルール領域に分類されます。 特定の規則は .NET API の使用に固有であり、残りの規則は汎用コードの品質に関するものです。 ここでは、各ルールの詳細な説明と例を示します。
 
- 次の表に、各警告で示される情報の種類を示しています。
+ 次の表は、診断ごとに提供される情報の種類を示しています。
 
-|Item|説明|
+|項目|説明|
 |----------|-----------------|
 |Type|規則の TypeName。|
 |CheckId|規則の一意の識別子。 CheckId とカテゴリは、ソース内で警告の省略表記として使用されます。|
@@ -54,5 +54,5 @@ ms.locfileid: "89509017"
 |[移植性と相互運用性の規則](../code-quality/interoperability-warnings.md)|さまざまなプラットフォーム間の移植性と COM クライアントとの相互作用をサポートする規則。|
 |[規則の発行](../code-quality/publish-warnings.md)|.NET アプリケーションの適切な発行をサポートする規則。|
 |[信頼性の規則](../code-quality/reliability-warnings.md)|メモリやスレッドの適切な使用など、ライブラリとアプリケーションの信頼性をサポートする規則。|
-|[[セキュリティ規則]](../code-quality/security-warnings.md)|より安全なライブラリとアプリケーションをサポートする規則。|
+|[セキュリティ規則](../code-quality/security-warnings.md)|より安全なライブラリとアプリケーションをサポートする規則。|
 |[使用規則](../code-quality/usage-warnings.md)|.NET の適切な使用をサポートする規則。|

@@ -1,6 +1,7 @@
 ---
 title: LocationFieldMRUPrefix 要素 (Visual Studio テンプレート)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af2c295fa1a69d7815d117a99506a91f08c29aae
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741351"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034053"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 要素 (Visual Studio テンプレート)
 
@@ -50,7 +51,7 @@ ms.locfileid: "89741351"
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  この要素は、を使用して生成されたテンプレートに対してのみ使用してください [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] 。
 

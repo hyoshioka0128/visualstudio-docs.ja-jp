@@ -1,6 +1,7 @@
 ---
 title: 未適用の変更
 description: 警告 - [動作の構成] ダイアログ ボックスで行った変更が適用されていません
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fbdf4e252df1063610964aaa1df37fa9bfc94132
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 02a94c7038e0825a9793521ed57eefd3a61d9e39
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743150"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036731"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません
 
@@ -28,6 +29,6 @@ ms.locfileid: "89743150"
 
 - 以前の変更を取り消して続行するには、[ **いいえ**] をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

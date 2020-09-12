@@ -1,5 +1,6 @@
 ---
 title: 従来の言語サービスでのカスタムドキュメントプロパティ
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741811"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036835"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>従来の言語サービスでのカスタムドキュメントプロパティ
 ドキュメントのプロパティは、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **プロパティ** ] ウィンドウに表示できます。 プログラミング言語には、通常、個々のソースファイルに関連付けられたプロパティはありません。 ただし、XML では、エンコード、スキーマ、およびスタイルシートに影響するドキュメントプロパティがサポートされています。
@@ -397,5 +398,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)
