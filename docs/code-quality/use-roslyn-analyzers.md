@@ -1,54 +1,34 @@
 ---
-title: Analyzer ルールの重要度と抑制
-ms.date: 03/04/2020
+title: コード品質の分析
+ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599985"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036370"
 ---
-# <a name="use-code-analyzers"></a>コードアナライザーを使用する
+# <a name="configure-code-quality-analysis"></a>コード品質分析の構成
 
-.NET Compiler Platform ("Roslyn") コードアナライザーは、入力に応じて C# または Visual Basic コードを分析します。 各 *診断* または規則には、プロジェクトで上書きできる既定の重大度と抑制状態があります。 この記事では、ルールの重要度の設定、ルールセットの使用、および違反の抑制について説明します。
+.NET 5.0 以降では、.NET SDK にコード品質アナライザーが含まれています。 (以前は、これらのアナライザーを NuGet パッケージとしてインストールしました)。.NET 5.0 以降を対象とするプロジェクトでは、コード分析が既定で有効になっています。 以前のバージョンの .NET を対象とするプロジェクトでは、 [Enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) プロパティをに設定することにより、コード分析を有効にすることができ `true` ます。 をに設定することにより、プロジェクトのコード分析を無効にすることもでき `EnableNETAnalyzers` `false` ます。
 
-## <a name="analyzers-in-solution-explorer"></a>ソリューションエクスプローラーのアナライザー
+各コード品質アナライザーの *診断* または規則には、プロジェクトに対して上書きおよびカスタマイズできる既定の重大度と抑制状態があります。 この記事では、code quality analyzer の重大度を設定し、アナライザーの違反を抑制する方法について説明します。
 
-**ソリューションエクスプローラー**から、analyzer 診断のカスタマイズの多くを行うことができます。 アナライザーを NuGet パッケージとして[インストール](../code-quality/install-roslyn-analyzers.md)すると、**ソリューションエクスプローラー**の [**参照**] ノードまたは [**依存関係**] ノードの下に [**アナライザー** ] ノードが表示されます。 [アナライザー] を展開して **から、いずれ**かのアナライザーアセンブリを展開すると、アセンブリ内のすべての診断が表示されます。
-
-![ソリューションエクスプローラーのアナライザーノード](media/analyzers-expanded-in-solution-explorer.png)
-
-[ **プロパティ** ] ウィンドウでは、診断のプロパティや既定の重要度などを表示できます。 プロパティを表示するには、ルールを右クリックして [**プロパティ**] を選択するか、ルールを選択して、 **Alt**キーを押し + **Enter**ます。
-
-![プロパティウィンドウの診断プロパティ](media/analyzer-diagnostic-properties.png)
-
-診断のオンラインドキュメントを表示するには、診断を右クリックし、[ **ヘルプの表示**] を選択します。
-
-**ソリューションエクスプローラー**の各診断の横にあるアイコンは、エディターで開いたときにルールセットに表示されるアイコンに対応します。
-
-- 円の "x" は**エラー**の[重大度](#rule-severity)を示します。
-- 三角形の "!" は**警告**の[重大度](#rule-severity)を示します。
-- 円の "i" は**情報**の[重大度](#rule-severity)を示します。
-- 明るい色の背景にある円の "i" は、**非表示**の[重要度](#rule-severity)を示します。
-- 円の下向き矢印は、診断が抑制されていることを示します。
-
-![ソリューションエクスプローラーの診断アイコン](media/diagnostics-icons-solution-explorer.png)
-
-## <a name="rule-severity"></a>ルールの重要度
+## <a name="configure-severity-levels"></a>重大度レベルの構成
 
 ::: moniker range=">=vs-2019"
 
-アナライザーを NuGet パッケージとして[インストール](../code-quality/install-roslyn-analyzers.md)した場合は、analyzer ルールまたは*診断*の重大度を構成できます。 Visual Studio 2019 バージョン16.3 以降では、 [EditorConfig ファイルで](#set-rule-severity-in-an-editorconfig-file)ルールの重要度を構成できます。 また、ソリューションエクスプローラーまたは[ルールセットファイル](#set-rule-severity-in-the-rule-set-file)[から](#set-rule-severity-from-solution-explorer)、ルールの重要度を変更することもできます。
+Visual Studio 2019 バージョン16.3 以降では、アナライザーの規則または *診断*の重大度を、 [editorconfig ファイル](#set-rule-severity-in-an-editorconfig-file)、 [電球のメニュー](#set-rule-severity-from-the-light-bulb-menu)、およびエラー一覧から構成できます。
 
 ::: moniker-end
 
@@ -69,13 +49,19 @@ ms.locfileid: "89599985"
 | なし | `none` | 完全に抑制されます。 | 完全に抑制されます。 |
 | Default | `default` | ルールの既定の重要度に対応します。 ルールの既定値を確認するには、プロパティウィンドウを調べます。 | ルールの既定の重要度に対応します。 |
 
-次のコードエディターのスクリーンショットは、重大度が異なる3種類の違反を示しています。 波線の色と、右側のスクロールバーの小さな色付きの正方形に注目してください。
+アナライザーでルール違反が見つかった場合は、コード エディター (問題のあるコードの下の "*波線*" として) および [エラー一覧] ウィンドウで報告されます。
 
-![コードエディターのエラー、警告、および情報の違反](media/diagnostics-severity-colors.png)
+エラー一覧で報告されたアナライザーの違反は、ルールの [重大度レベルの設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) と一致します。 アナライザーの違反は、問題のあるコードの下の波線としてコードエディターにも表示されます。 次の図は、3つの違反 &mdash; 1 つのエラー (赤い波線)、1つの警告 (緑の波線)、および1つの候補 (3 つの灰色のドット) を示しています。
+
+![Visual Studio でのコード エディターの波線](media/diagnostics-severity-colors.png)
 
 次のスクリーンショットは、エラー一覧に表示されるのと同じ3つの違反を示しています。
 
 ![エラー一覧のエラー、警告、および情報の違反](media/diagnostics-severities-in-error-list.png)
+
+多くのアナライザー規則 ( *診断*) には、規則違反を修正するために適用できる *コード修正プログラム* が1つ以上含まれています。 コード修正は、電球アイコン メニューに、他の種類の[クイック アクション](../ide/quick-actions.md)と共に示されます。 これらのコード修正については、「[共通のクイック アクション](../ide/quick-actions.md)」を参照してください。
+
+![アナライザーの違反とクイック アクションのコード修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ### <a name="hidden-severity-versus-none-severity"></a>' Hidden ' 重大度と ' None ' 重大度
 
@@ -94,7 +80,7 @@ ms.locfileid: "89599985"
 
 `dotnet_diagnostic.<rule ID>.severity = <severity>`
 
-EditorConfig ファイルでのルールの重要度の設定は、ルールセットまたはソリューションエクスプローラーで設定されている重要度よりも優先されます。 EditorConfig ファイルで重大度を [手動で](#manually-configure-rule-severity) 構成することも、違反の隣に表示される電球を介して [自動的に](#automatically-configure-rule-severity) 構成することもできます。
+EditorConfig ファイルでのルールの重要度の設定は、ルールセットまたはソリューションエクスプローラーで設定されている重要度よりも優先されます。 EditorConfig ファイルで重大度を [手動で](#manually-configure-rule-severity-in-an-editorconfig-file) 構成することも、違反の隣に表示される電球を介して [自動的に](#set-rule-severity-from-the-light-bulb-menu) 構成することもできます。
 
 ### <a name="set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file"></a>EditorConfig ファイルで一度に複数のアナライザールールのルールの重要度を設定する
 
@@ -129,7 +115,7 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 
 前の例では、3つのエントリすべてが CA1822 に適用されます。 ただし、指定した優先順位規則を使用すると、最初の規則 ID ベースの重要度エントリが次のエントリに優先されます。 この例では、CA1822 の有効度が "error" になります。 "パフォーマンス" カテゴリの残りのすべてのルールの重大度は "warning" になります。 "Performance" カテゴリのないすべての analyzer ルールには、重要度 "提案" があります。
 
-#### <a name="manually-configure-rule-severity"></a>規則の重要度を手動で構成する
+#### <a name="manually-configure-rule-severity-in-an-editorconfig-file"></a>EditorConfig ファイルで規則の重要度を手動で構成する
 
 1. プロジェクトの EditorConfig ファイルがまだない場合は、プロジェクトを [追加](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)します。
 
@@ -142,6 +128,68 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 
 > [!NOTE]
 > IDE コードスタイルのアナライザーの場合は、別の構文を使用して、EditorConfig ファイルで構成することもできます (例:) `dotnet_style_qualification_for_field = false:suggestion` 。 ただし、構文を使用して重要度を設定した場合は、 `dotnet_diagnostic` それが優先されます。 詳細については、「 [EditorConfig の言語規則](../ide/editorconfig-language-conventions.md)」を参照してください。
+
+### <a name="set-rule-severity-from-the-light-bulb-menu"></a>電球メニューから [ルールの重要度] を設定する
+
+Visual Studio には、 [クイックアクション](../ide/quick-actions.md) の電球メニューからルールの重要度を構成する便利な方法が用意されています。
+
+1. 違反が発生した後、エディターで違反波線をポイントし、電球メニューを開きます。 または、行にカーソルを置き、 **ctrl**キーを押し + **ます。** (ピリオド) を押します。
+
+2. 電球メニューの [問題の構成] **または**[ > ** \<rule ID> 重要度の構成**] を選択します。
+
+   ![Visual Studio の電球メニューからルールの重要度を構成する](media/configure-rule-severity.png)
+
+3. そこから、重大度オプションのいずれかを選択します。
+
+   ![規則の重要度を提案として構成する](media/configure-rule-severity-suggestion.png)
+
+   Visual Studio によって EditorConfig ファイルにエントリが追加され、[プレビュー] ボックスに示されているように、要求されたレベルに規則が構成されます。
+
+   > [!TIP]
+   > プロジェクトに EditorConfig ファイルがまだない場合は、Visual Studio によって作成されます。
+
+### <a name="set-rule-severity-from-the-error-list-window"></a>[エラー一覧] ウィンドウで規則の重要度を設定する
+
+また、Visual Studio では、[エラー一覧] コンテキストメニューからルールの重要度を構成する便利な方法も提供されています。
+
+1. 違反が発生した後、[エラー一覧] の診断エントリを右クリックします。
+
+2. コンテキストメニューから、[ **重大度の設定**] を選択します。
+
+   ![Visual Studio の [エラー一覧] から規則の重要度を構成する](media/configure-rule-severity-error-list.png)
+
+3. そこから、重大度オプションのいずれかを選択します。
+
+   Visual Studio は、EditorConfig ファイルにエントリを追加して、要求されたレベルに規則を構成します。
+
+   > [!TIP]
+   > プロジェクトに EditorConfig ファイルがまだない場合は、Visual Studio によって作成されます。
+
+::: moniker-end
+
+### <a name="set-rule-severity-from-solution-explorer"></a>ルールの重要度をソリューションエクスプローラーから設定
+
+**ソリューションエクスプローラー**から、analyzer 診断のカスタマイズの多くを行うことができます。 アナライザーを NuGet パッケージとして[インストール](../code-quality/install-roslyn-analyzers.md)すると、**ソリューションエクスプローラー**の [**参照**] ノードまたは [**依存関係**] ノードの下に [**アナライザー** ] ノードが表示されます。 [アナライザー] を展開して **から、いずれ**かのアナライザーアセンブリを展開すると、アセンブリ内のすべての診断が表示されます。
+
+![ソリューションエクスプローラーのアナライザーノード](media/analyzers-expanded-in-solution-explorer.png)
+
+[ **プロパティ** ] ウィンドウでは、診断のプロパティや既定の重要度などを表示できます。 プロパティを表示するには、ルールを右クリックして [**プロパティ**] を選択するか、ルールを選択して、 **Alt**キーを押し + **Enter**ます。
+
+![プロパティウィンドウの診断プロパティ](media/analyzer-diagnostic-properties.png)
+
+診断のオンラインドキュメントを表示するには、診断を右クリックし、[ **ヘルプの表示**] を選択します。
+
+**ソリューションエクスプローラー**の各診断の横にあるアイコンは、エディターで開いたときにルールセットに表示されるアイコンに対応します。
+
+- 円の "x" は**エラー**の[重大度](#configure-severity-levels)を示します。
+- 三角形の "!" は**警告**の[重大度](#configure-severity-levels)を示します。
+- 円の "i" は**情報**の[重大度](#configure-severity-levels)を示します。
+- 明るい色の背景にある円の "i" は、**非表示**の[重要度](#configure-severity-levels)を示します。
+- 円の下向き矢印は、診断が抑制されていることを示します。
+
+![ソリューションエクスプローラーの診断アイコン](media/diagnostics-icons-solution-explorer.png)
+
+::: moniker range=">=vs-2019"
 
 #### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>既存のルールセットファイルを EditorConfig ファイルに変換する
 
@@ -209,45 +257,6 @@ dotnet_diagnostic.CA2213.severity = warning
 
 dotnet_diagnostic.CA2231.severity = warning
 ```
-
-#### <a name="automatically-configure-rule-severity"></a>規則の重要度を自動的に構成する
-
-##### <a name="configure-from-light-bulb-menu"></a>電球メニューから構成する
-
-Visual Studio には、 [クイックアクション](../ide/quick-actions.md) の電球メニューからルールの重要度を構成する便利な方法が用意されています。
-
-1. 違反が発生した後、エディターで違反波線をポイントし、電球メニューを開きます。 または、行にカーソルを置き、 **ctrl**キーを押し + **ます。** (ピリオド) を押します。
-
-2. 電球メニューの [問題の構成] **または**[ > ** \<rule ID> 重要度の構成**] を選択します。
-
-   ![Visual Studio の電球メニューからルールの重要度を構成する](media/configure-rule-severity.png)
-
-3. そこから、重大度オプションのいずれかを選択します。
-
-   ![規則の重要度を提案として構成する](media/configure-rule-severity-suggestion.png)
-
-   Visual Studio によって EditorConfig ファイルにエントリが追加され、[プレビュー] ボックスに示されているように、要求されたレベルに規則が構成されます。
-
-   > [!TIP]
-   > プロジェクトに EditorConfig ファイルがまだない場合は、Visual Studio によって作成されます。
-
-##### <a name="configure-from-error-list"></a>[エラー一覧から構成する]
-
-また、Visual Studio では、[エラー一覧] コンテキストメニューからルールの重要度を構成する便利な方法も提供されています。
-
-1. 違反が発生した後、[エラー一覧] の診断エントリを右クリックします。
-
-2. コンテキストメニューから、[ **重大度の設定**] を選択します。
-
-   ![Visual Studio の [エラー一覧] から規則の重要度を構成する](media/configure-rule-severity-error-list.png)
-
-3. そこから、重大度オプションのいずれかを選択します。
-
-   Visual Studio は、EditorConfig ファイルにエントリを追加して、要求されたレベルに規則を構成します。
-
-   > [!TIP]
-   > プロジェクトに EditorConfig ファイルがまだない場合は、Visual Studio によって作成されます。
-
 ::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>ルールの重要度をソリューションエクスプローラーから設定
@@ -377,7 +386,7 @@ Visual Studio 2019 16.5 以降では、エンドユーザーは、 [Editorconfig
 
 - プロジェクトのコードで1つ以上の規則に違反しています。
 
-- 違反しているルールの [重要度](#rule-severity) は、いずれかの **警告**に設定されます。この場合、違反が発生してもビルドは失敗しません。 **エラー**の場合は、違反が発生してもビルドは失敗します。
+- 違反しているルールの [重要度](#configure-severity-levels) は、いずれかの **警告**に設定されます。この場合、違反が発生してもビルドは失敗しません。 **エラー**の場合は、違反が発生してもビルドは失敗します。
 
 ビルド出力の詳細度は、規則違反が表示されるかどうかには影響しません。 **低**レベルの詳細度でも、ルール違反はビルド出力に表示されます。
 
@@ -402,7 +411,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio のコードアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [コードアナライザーのバグを送信する](https://github.com/dotnet/roslyn-analyzers/issues)

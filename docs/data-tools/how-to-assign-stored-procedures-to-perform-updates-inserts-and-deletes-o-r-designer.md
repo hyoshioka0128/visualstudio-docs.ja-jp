@@ -1,5 +1,6 @@
 ---
 title: LINQ to SQL でストアドプロシージャを使用してデータを更新する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743008"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036315"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
 
@@ -63,7 +64,7 @@ ms.locfileid: "89743008"
 
 更新時に既定のランタイム ロジックを使用するように戻すには、**[プロパティ]** ウィンドウで、**[Insert]**、**[Update]**、または **[Delete]** の各コマンドの横にある省略記号をクリックし、**[動作の構成]** ダイアログ ボックスで **[ランタイムを使用]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext メソッド](../data-tools/datacontext-methods-o-r-designer.md)

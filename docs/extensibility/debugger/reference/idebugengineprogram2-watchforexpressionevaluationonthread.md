@@ -1,6 +1,7 @@
 ---
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1328423cd81db6e55964795ef9da23c5bb29811
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89737001"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036120"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 プログラムが停止している場合でも、指定したスレッドで式の評価を実行できるようにします (または禁止します)。
@@ -67,12 +68,12 @@ int WatchForExpressionEvaluationOnThread( 
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  セッションデバッグマネージャー (SDM) が、パラメーターで識別されるプログラムに対して、式を評価するように要求すると `pOriginatingProgram` 、このメソッドを呼び出すことによって、添付されている他のすべてのプログラムに通知します。
 
  1つのプログラムでの式の評価では、関数の評価やプロパティの評価により、コードが別のプログラムで実行される場合があり `IDispatch` ます。 このため、このメソッドでは、このプログラムでスレッドが停止していても、式の評価を実行して完了することができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

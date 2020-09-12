@@ -1,6 +1,7 @@
 ---
 title: EnableLocationBrowseButton 要素 (Visual Studio テンプレート)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742992"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036653"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 要素 (Visual Studio テンプレート)
 [**新しいプロジェクト**] ダイアログボックスで [**参照**] ボタンを使用できるようにするかどうかを指定します。これにより、新しいプロジェクトを保存する既定のディレクトリをユーザーが簡単に変更できるようになります。
@@ -53,7 +54,7 @@ ms.locfileid: "89742992"
 
  テキストは、[ `true` `false` **新しいプロジェクト**] ダイアログボックスに [**参照**] ボタンを表示するかどうかを示す、またはのいずれかである必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `EnableLocationBrowseButton` は省略可能な要素です。 既定値はで、[ `true` **新しいプロジェクト**] ダイアログボックスの [**参照**] ボタンが表示されます。
 
  [ **新しいプロジェクト** ] ダイアログボックスの [ **場所** ] テキストボックスで、新しいプロジェクトを保存するディレクトリを指定します。 [ **参照** ] ボタンをクリックすると、[ **プロジェクトの場所** ] ダイアログボックスが表示され、このディレクトリを変更できます。このダイアログボックスでは、コンピューターから使用できる別のディレクトリに移動して、新しいプロジェクトを保存するディレクトリとして選択することができます。

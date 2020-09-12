@@ -1,6 +1,7 @@
 ---
 title: スキーマが一致しません
 description: 1 つ以上の選択されたデータベース オブジェクトがターゲット データ クラスのスキーマに一致しないスキーマを返しました
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 907b4d5c63d0e97839149576f518804cf6f8481b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742806"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034092"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>1 つ以上の選択されたデータベース オブジェクトがターゲット データ クラスのスキーマに一致しないスキーマを返しました
 
@@ -28,6 +29,6 @@ ms.locfileid: "89742806"
 
 2. ターゲットクラス ( **O/R デザイナー**でデータベースオブジェクトがドロップされているクラス) のスキーマに一致するデータを返すデータベースオブジェクトを選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

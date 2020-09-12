@@ -1,20 +1,20 @@
 ---
 title: PowerShell スクリプトを使用した web アプリの発行
 description: Web プロジェクトを Azure Web サイトに発行する方法について説明します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
+ms.custom: vs-azure
 author: ghogen
 manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 3d8a6a73f50c331c516f1e433d7d9b1104731380
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: e91fed105ce61dfc7e1cd2779ebcca0b33a06c97
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739879"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036497"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -90,7 +90,7 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 この中には、Web サイトの名前やユーザー名など、プロジェクトの作成時に指定した情報が含まれます。 また、プロビジョニングを行うデータベースがある場合はそれも含まれます。 次のコードは JSON 構成ファイルの例を示しています。
