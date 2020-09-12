@@ -1,6 +1,7 @@
 ---
 title: サポートされていないデータベースプロバイダー
 description: 選択した接続では、サポートされていないデータベース プロバイダーが使用されています
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9ff4120796a40da00e258026d8db84ba6e9dbb21
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c8fa073b47927f673914156c586bf27a121e53ea
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743271"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037570"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>選択した接続では、サポートされていないデータベース プロバイダーが使用されています
 
@@ -24,7 +25,7 @@ ms.locfileid: "89743271"
 
 このエラーを修正するには、SQL Server の .NET Framework Data Provider を使用するデータ接続から、 **O/R デザイナー**に項目のみを追加します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - <xref:System.Data.SqlClient>
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

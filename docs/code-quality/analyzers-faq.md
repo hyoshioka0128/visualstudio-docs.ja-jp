@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599618"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037251"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -61,7 +61,7 @@ ms.locfileid: "89599618"
 
 **Q**: 従来の分析と .NET Compiler Platform ベースのコード分析の違いは何ですか。
 
-**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) 」と「従来の分析と [FxCop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
+**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析とレガシ分析](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)」を参照してください。
 
 ## <a name="treat-warnings-as-errors"></a>警告をエラーとして扱う
 
@@ -94,7 +94,7 @@ ms.locfileid: "89599618"
 
 **A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、CodeAnalysisRuleSet プロパティを使用して、プロパティグループを共有 props/targets ファイルまたはディレクトリに定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、その [ようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。このディレクトリは、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされ](../msbuild/customize-your-build.md)ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [アナライザーの概要](roslyn-analyzers-overview.md)
 - [EditorConfig の .NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)

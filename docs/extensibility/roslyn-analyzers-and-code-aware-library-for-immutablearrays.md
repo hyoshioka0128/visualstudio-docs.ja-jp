@@ -1,6 +1,7 @@
 ---
 title: ImmutableArrays 用の roslyn アナライザーとコード対応ライブラリ
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -9,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc40d229b911500cb6c196dba34546ed9ede206
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741664"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037648"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays 用の roslyn アナライザーとコード対応ライブラリ
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") を使用すると、コード対応のライブラリをビルドできます。 コード対応ライブラリは、ツール (Roslyn アナライザー) を使用して、最適な方法でライブラリを使用したり、エラーを回避したりするための機能を提供します。 このトピックでは、 [システムコレクション](https://www.nuget.org/packages/System.Collections.Immutable) の NuGet パッケージを使用するときに、一般的なエラーをキャッチするために、実際の Roslyn アナライザーを構築する方法について説明します。 また、この例では、アナライザーによって検出されたコードの問題に対してコード修正を行う方法も示しています。 ユーザーは、Visual Studio 電球 UI にコード修正プログラムを表示し、コードの修正を自動的に適用できます。
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業開始
 
 この例をビルドするには、次のものが必要です。
 
@@ -307,7 +308,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 完成したすべてのコードを [ここで](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)確認できます。 サブフォルダー *DoNotUseImmutableArrayCollectionInitializer* と *DoNotUseImmutableArrayCtor* にはそれぞれ、問題を見つけるための C# ファイルと、Visual Studio 電球 UI に表示されるコード修正を実装する c# ファイルがあります。 完成したコードでは、ImmutableArray type オブジェクトが過剰にフェッチされないように、もう少し抽象化されてい \<T> ます。 入れ子になった登録済みのアクションを使用して、サブアクション (オブジェクトの分析の分析とコレクションの分析の分析) を実行するたびに使用可能なコンテキストに型オブジェクトを保存します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 * [\\\ ビルド2015トーク](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub の完成したコード](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

@@ -1,5 +1,6 @@
 ---
 title: プロジェクトとエディターのソース管理のガイドライン
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743403"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037635"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>プロジェクトとエディターの追加ソース管理ガイドライン
 ソース管理をサポートするためにプロジェクトとエディターが従う必要があるガイドラインがいくつかあります。
@@ -33,5 +34,5 @@ ms.locfileid: "89743403"
 |オブジェクトとプロパティを予測可能な順序で永続化する|x|x|マージを容易にするために、ファイルをアルファベット順などの予測可能な順序で保存します。|
 |再読み込み|x|x|ディスク上のファイルが変更された場合、エディターは再読み込みできなければなりません。 ソース管理に参加すると、環境はの実装を呼び出すことによって、データを再読み込みし <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> ます。 再読み込みが最も困難なケースは、IVsQueryEditQuerySave:: を呼び出し、情報を処理しているときにチェックアウトが発生した場合です <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 。 ただし、このような状況では、再読み込みコードを実行できる必要があります。<br /><br /> 環境では、プロジェクトファイルが自動的に再読み込みされます。 ただし、入れ子になった <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> プロジェクトファイルの再読み込みをサポートするために、入れ子になった階層がある場合は、プロジェクトを実装する必要があります。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [ソース管理のサポート](../../extensibility/internals/supporting-source-control.md)
