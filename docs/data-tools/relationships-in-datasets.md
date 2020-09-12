@@ -1,5 +1,6 @@
 ---
 title: データセット間にリレーションシップを作成する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739227"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037687"
 ---
 # <a name="create-relationships-between-datasets"></a>データセット間にリレーションシップを作成する
 関連するデータテーブルを含むデータセット <xref:System.Data.DataRelation> は、オブジェクトを使用して、テーブル間の親子関係を表し、相互に関連するレコードを返します。 **データソース構成ウィザード**または**データセットデザイナー**を使用して、関連テーブルをデータセットに追加すると、オブジェクトが作成および構成さ <xref:System.Data.DataRelation> れます。
@@ -94,7 +95,7 @@ Visual Studio のデータデザインツールを使用してデータテーブ
 
 8. [ **入れ子になったリレーション** ] ボックスをオンまたはオフにします。 このオプションを選択すると、プロパティがに設定され、 <xref:System.Data.DataRelation.Nested%2A> `true` これらの行が XML データとして書き込まれるか、と同期されるときに、リレーションシップの子行が親列内に入れ子になり <xref:System.Xml.XmlDataDocument> ます。 詳しくは、「[DataRelation の入れ子化](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)」をご覧ください。
 
-9. これらのテーブルのレコードに変更を加えるときに適用されるルールを設定します。 詳細については、 <xref:System.Data.Rule> を参照してください。
+9. これらのテーブルのレコードに変更を加えるときに適用されるルールを設定します。 詳細については、「<xref:System.Data.Rule>」を参照してください。
 
 10. [ **OK** ] をクリックしてリレーションシップを作成します。 2つのテーブル間の関係線がデザイナーに表示されます。
 
@@ -104,6 +105,6 @@ Visual Studio のデータデザインツールを使用してデータテーブ
 
 2. [ **データ** ] メニューの [ **リレーションシップラベルの表示** ] をクリックして、リレーションシップ名を表示します。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でデータセットを作成および構成する](../data-tools/create-and-configure-datasets-in-visual-studio.md)

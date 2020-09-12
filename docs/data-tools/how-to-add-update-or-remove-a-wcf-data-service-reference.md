@@ -1,6 +1,7 @@
 ---
 title: WCF データ サービス参照を追加、更新、または削除する
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - service references [Visual Studio]
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c09b2d487e58e6da2b4aaf62179784d96bdfe783
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: d9a05924bd7c790d2a1cc9ffd96d66eb905acb39
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741385"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037316"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>方法: WCF データ サービス参照を追加、更新、または削除する
 
@@ -156,6 +157,6 @@ Entity Data Model が変更される [!INCLUDE[ssAstoria](../data-tools/includes
     > [!NOTE]
     > サービス参照を参照するコードは、手動で削除する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio での Windows Communication Foundation Services と WCF data services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

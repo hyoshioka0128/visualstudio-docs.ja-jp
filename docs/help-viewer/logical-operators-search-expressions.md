@@ -1,5 +1,6 @@
 ---
 title: 検索式の論理演算子 (ヘルプビューアー)
+ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741658"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038635"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>検索式の論理演算子と高度な演算子
 
@@ -66,7 +67,7 @@ ms.locfileid: "89741658"
 > [!NOTE]
 > `code:` 演算子は、コードとして一般的にマークされているコンテンツではなく、プログラミング言語ラベルでマークされているコンテンツのみを検索します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: トピックを検索する](../help-viewer/find-topics.md)
 - [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)

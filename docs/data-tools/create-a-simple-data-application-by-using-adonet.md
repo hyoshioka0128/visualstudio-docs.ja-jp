@@ -1,5 +1,6 @@
 ---
 title: ADO.NET を使用した単純なデータ アプリケーションの作成
+ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586875"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037433"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
@@ -84,7 +85,7 @@ ms.locfileid: "75586875"
 
    ![ナビゲーション ダイアログ ボックス](../data-tools/media/simpleappnav.png)
 
-|Navigation フォームのコントロール|Properties|
+|Navigation フォームのコントロール|プロパティ|
 | - |----------------|
 |Button|Name = btnGoToAdd|
 |Button|Name = btnGoToFillOrCancel|
@@ -94,7 +95,7 @@ ms.locfileid: "75586875"
 
 ![新しい顧客を追加して注文を作成する](../data-tools/media/simpleappnewcust.png)
 
-|NewCustomer フォームのコントロール|Properties|
+|NewCustomer フォームのコントロール|プロパティ|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +110,7 @@ ms.locfileid: "75586875"
 
 ![注文の入力または取り消し](../data-tools/media/simpleappcancelfill.png)
 
-|FillOrCancel フォームのコントロール|Properties|
+|FillOrCancel フォームのコントロール|プロパティ|
 | - |----------------|
 |TextBox|Name = txtOrderID|
 |Button|Name = btnFindByOrderID|
@@ -233,6 +234,6 @@ FillOrCancel フォームロジックを完了するには、次の手順を実�
 
 各クリック イベント ハンドラーをコードし、コードの記述を完了した後、**F5** キーを押してアプリケーションのビルドとテストを実行します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

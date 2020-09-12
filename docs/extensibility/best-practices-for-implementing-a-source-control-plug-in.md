@@ -1,5 +1,6 @@
 ---
 title: ソース管理プラグインの実装に関するベストプラクティス
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739157"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038453"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>ソース管理プラグインを実装するためのベストプラクティス
 次の技術的な詳細は、でソース管理プラグインを確実に実装するのに役立ち [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
@@ -57,6 +58,6 @@ ms.locfileid: "89739157"
 
  ユーザーが構成できるほとんどの設定オプションは、ソース管理プラグインによって大きく異なるため、この方法で定義されていません。このため、推奨されるメカニズムは **[詳細設定** ] ボタンです。 たとえば、[ **取得** ] ダイアログボックスでは、IDE には認識している情報のみが表示されますが、プラグインにこのコマンドのオプションがある場合は **[詳細設定** ] ボタンも表示されます。 ユーザーが **[詳細設定** ] ボタンをクリックすると、IDE は [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) を呼び出して、ソース管理プラグインによって、ビットフラグや日付/時刻などの情報の入力をユーザーに求めることができるようにします。 このプラグインは、コマンドの実行中に返される構造体にこの情報を返し `SccGet` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [ソース管理プラグインを作成する](../extensibility/internals/creating-a-source-control-plug-in.md)

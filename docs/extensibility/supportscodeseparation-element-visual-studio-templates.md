@@ -1,6 +1,7 @@
 ---
 title: SupportsCodeSeparation 要素 (Visual Studio テンプレート)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b5e03e7ea01b6e6f75c18da44c0233660c17f8e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741753"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038466"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 要素 (Visual Studio テンプレート)
 [**新しい項目の追加**] ダイアログボックスで [**別のファイルにコードを配置**する] チェックボックスをオンにするかどうかを指定します。
@@ -54,7 +55,7 @@ ms.locfileid: "89741753"
 
  テキストは、[ `true` `false` **新しい項目の追加**] ダイアログボックスで [**別のファイルにコードを配置**する] チェックボックスがオンになっているかどうかを示す、またはのいずれかである必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `SupportsCodeSeparation` は省略可能な要素です。 既定値は `false` です。
 
  `SupportsCodeSeparation`要素は、Web 項目テンプレートでのみ使用できます。
@@ -86,6 +87,6 @@ ms.locfileid: "89741753"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

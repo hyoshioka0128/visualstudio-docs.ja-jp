@@ -1,6 +1,6 @@
 ---
 title: コード品質ルールの概要
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509446"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037238"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>マネージコードのコード分析警告 (CheckId 別)
+# <a name="code-quality-analysis-rules-by-rule-id"></a>ルール ID 別のコード品質分析ルール
 
-次の表に、マネージド コードのコード分析警告を警告の CheckId 識別子別に示します。
+次の表に、ルール識別子別のコード品質分析ルールを示します。
 
 | CheckId | 警告 | 説明 |
 |---------| - | - |
@@ -372,7 +372,7 @@ ms.locfileid: "89509446"
 | CA1831 |[CA1831: 該当する場合、文字列に範囲ベースのインデクサーの代わりに AsSpan を使用します](../code-quality/ca1831.md) | 文字列に対して範囲インデクサーを使用し、その値を暗黙的に ReadOnlySpan char 型に割り当てると、 &lt; &gt; の代わりにメソッドが <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> 使用され、 <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> 文字列の要求された部分のコピーが生成されます。 |
 | CA1832 |[CA1832: 配列の ReadOnlySpan または ReadOnlyMemory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1832.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
 | CA1833 |[CA1833: 配列の Span または Memory 部分を取得するために、範囲ベースのインデクサーの代わりに AsSpan または AsMemory を使用します](../code-quality/ca1833.md) | 配列に対して範囲インデクサーを使用し、その値を型または型に暗黙的に割り当てると、 <xref:System.Span%601> <xref:System.Memory%601> の代わりにメソッドが <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> 使用され <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> ます。これにより、配列の要求された部分のコピーが生成されます。 |
-| CA1834 |[CA1834: 1 つの文字列に対して StringBuilder (char) を使用します。](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> には `Append` 、引数としてを受け取るオーバーロードがあり `char` ます。 `char`パフォーマンス上の理由から、オーバーロードの呼び出しを優先します。 |
+| CA1834 |[CA1834:1 文字の文字列に対して StringBuilder.Append(char) を使用する](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> には `Append` 、引数としてを受け取るオーバーロードがあり `char` ます。 `char`パフォーマンス上の理由から、オーバーロードの呼び出しを優先します。 |
 | CA1835 |[CA1835: ' ReadAsync ' と ' WriteAsync ' に対して ' Memory' に基づくオーバーロードを優先します](../code-quality/ca1835.md) | ' Stream ' には、最初の引数として ' Memory byte ' を受け取る ' ReadAsync ' オーバーロード &lt; &gt; と、 &lt; &gt; 1 番目の引数として ' ReadOnlyMemory Byte ' を受け取る ' WriteAsync ' オーバーロードがあります。 より効率的なメモリベースのオーバーロードを呼び出すことをお勧めします。 |
 | CA1836 |[CA1836: `IsEmpty` `Count` 使用可能な場合は優先します。](../code-quality/ca1836.md) | `IsEmpty` `Count` `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> オブジェクトに項目が含まれているかどうかを判断するために、、、またはよりも効率的なプロパティを優先します。 |
 | CA1837 | [CA1837: `Environment.ProcessId` の代わりにを使用します。 `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` はより単純で高速です `Process.GetCurrentProcess().Id` 。 |
@@ -438,13 +438,13 @@ ms.locfileid: "89509446"
 | CA2330 | [CA2330: 逆シリアル化の際に、JsonSerializer の構成は確実にセキュリティで保護してください](../code-quality/ca2330.md) | 安全でないデシリアライザーは、信頼できないデータを逆シリアル化するときに脆弱です。 攻撃者は、悪意のある副作用を持つオブジェクトを挿入するために、シリアル化されたデータを変更し、予期しない型を含めることができます。 |
 | CA2350 | [CA2350:DataTable.ReadXml() の入力が信頼されていることを確認してください](ca2350.md) | 信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataTable> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。 |
 | CA2351 | [CA2351:DataSet.ReadXml() の入力が信頼されていることを確認してください](ca2351.md) | 信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。 |
-| CA2352 | [CA2352: 安全でないデータセットまたはシリアル化可能な型の DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2352.md) | でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。 |
-| CA2353 | [CA2353: Unsafe データセットまたはシリアル化可能な型の DataTable](ca2353.md) | XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。 |
+| CA2352 | [CA2352:シリアル化可能な型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2352.md) | でマークされたクラスまたは構造体に、 <xref:System.SerializableAttribute> フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> ますが、が <xref:System.Data.DataTable> ありません <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 。 |
+| CA2353 | [CA2353:シリアル化可能な型の安全でない DataSet または DataTable](ca2353.md) | XML シリアル化属性またはデータコントラクト属性でマークされたクラスまたは構造体に、フィールドまたはプロパティが含まれてい <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。 |
 | CA2354 | [CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2354.md) | シリアル化されたを使用して逆シリアル <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> 化すると、キャストされた型のオブジェクトグラフにまたはを含めることができ <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。 |
 | CA2355 | [CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](ca2355.md) | キャストまたは指定された型のオブジェクトグラフがまたはを含むことができる場合、逆シリアル化し <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。 |
 | CA2356 | [CA2356: web 逆シリアル化されたオブジェクトグラフ内の安全でないデータセットまたは DataTable](ca2356.md) | またはを持つメソッドには、 <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> またはを参照できるパラメーターがあり <xref:System.Data.DataSet> <xref:System.Data.DataTable> ます。 |
-| CA2361 | [CA2361: データセットを含む自動生成されたクラスを確認します。 ReadXml () は信頼されていないデータでは使用されません](ca2361.md) | 信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。 |
-| CA2362 | [CA2362: 自動生成されたシリアル化可能な型の Unsafe データセットまたは DataTable は、リモートのコード実行攻撃に対して脆弱になる可能性があります](ca2362.md) | で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。 |
+| CA2361 | [CA2361:DataSet.ReadXml() を含む自動生成クラスが信頼されていないデータで使用されていないことを確認してください](ca2361.md) | 信頼されていない入力を使用してを逆シリアル化すると <xref:System.Data.DataSet> 、攻撃者は悪意のある入力を行ってサービス拒否攻撃を仕掛けることができます。 不明なリモートコード実行の脆弱性がある可能性があります。 |
+| CA2362 | [CA2362:シリアル化可能な自動生成型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](ca2362.md) | で信頼できない入力を逆シリアル <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 化し、逆シリアル化されたオブジェクトグラフにまたはが含まれている場合 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、攻撃者は悪意のあるペイロードを使用してリモートのコード実行攻撃を行うことができます。 |
 | CA3001 | [CA3001:SQL インジェクションの脆弱性のコード レビュー](../code-quality/ca3001.md) | 信頼されていない入力と SQL コマンドを使用する場合は、SQL インジェクション攻撃に注意してください。 SQL インジェクション攻撃によって、悪意のある SQL コマンドを実行し、アプリケーションのセキュリティと整合性を損なう可能性があります。 |
 | CA3002 | [CA3002:XSS の脆弱性のコード レビュー](../code-quality/ca3002.md) | Web 要求から信頼されていない入力を処理する場合は、クロスサイトスクリプティング (XSS) 攻撃に注意する必要があります。 XSS 攻撃によって、信頼できない入力が未加工の HTML 出力に挿入され、攻撃者が悪意のあるスクリプトを実行したり、web ページのコンテンツを改ざんしたりする可能性があります。 |
 | CA3003 | [CA3003:ファイル パス インジェクションの脆弱性のコード レビュー](../code-quality/ca3003.md) | Web 要求から信頼されていない入力を使用する場合は、ファイルへのパスを指定するときにユーザーが制御する入力を使用することに注意してください。 |
@@ -466,7 +466,7 @@ ms.locfileid: "89509446"
 | CA5358 | [CA5358:安全ではない暗号モードを使用しないでください](../code-quality/ca5358.md) | 安全ではない暗号モードを使用しないでください |
 | CA5359 | [CA5359 証明書の検証を無効にしない](../code-quality/ca5359.md) | 証明書は、サーバーの id を認証するのに役立ちます。 クライアントはサーバー証明書を検証して、要求が目的のサーバーに送信されるようにする必要があります。 ServerCertificateValidationCallback が常にを返す場合 `true` 、すべての証明書が検証に合格します。 |
 | CA5360 | [CA5360 は、逆シリアル化で危険なメソッドを呼び出さないでください。](../code-quality/ca5360.md) | 安全でない逆シリアル化は、信頼されていないデータを使用してアプリケーションのロジックを不適切に悪用したり、サービス拒否 (DoS) 攻撃を受けたり、逆シリアル化の際に任意のコードを実行したりする場合に発生する脆弱性です。 悪意のあるユーザーが、制御下にある信頼されていないデータを逆シリアル化するときに、これらの逆シリアル化機能を不正使用する可能性があります。 具体的には、逆シリアル化のプロセスで危険なメソッドを呼び出します。 安全に安全でない逆シリアル化攻撃によって、攻撃者は DoS 攻撃、認証バイパス、リモートコード実行などの攻撃を仕掛けることができます。 |
-| CA5361 | [CA5361: 強力な暗号の SChannel の使用を無効にしません](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`をに設定すると `true` 、発信トランスポート層セキュリティ (TLS) 接続で使用される暗号化が弱くなります。 弱い暗号化を使用すると、アプリケーションとサーバーの間の通信の機密性が低下する可能性があるため、攻撃者が機微なデータを簡単に盗聴ことができます。 |
+| CA5361 | [CA5361: Schannel の強力な暗号の使用を無効にしない](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`をに設定すると `true` 、発信トランスポート層セキュリティ (TLS) 接続で使用される暗号化が弱くなります。 弱い暗号化を使用すると、アプリケーションとサーバーの間の通信の機密性が低下する可能性があるため、攻撃者が機微なデータを簡単に盗聴ことができます。 |
 | CA5362 | [逆シリアル化されたオブジェクトグラフでの可能性のある参照サイクルの CA5362](../code-quality/ca5362.md) | 信頼されていないデータを逆シリアル化する場合、逆シリアル化されたオブジェクトグラフを処理するコードは、無限ループに入ることなく参照サイクルを処理する必要があります。 これには、逆シリアル化のコールバックの一部であるコードと、逆シリアル化の完了後にオブジェクトグラフを処理するコードの両方が含まれます。 そうしないと、攻撃者は参照サイクルを含む悪意のあるデータを使用してサービス拒否攻撃を実行する可能性があります。 |
 | CA5363 | [CA5363:要求の検証を無効にしません](../code-quality/ca5363.md) | 要求の検証は、ASP.NET の機能の1つで、HTTP 要求を調べて、クロスサイトスクリプトを含む注入攻撃につながる可能性がある危険性のあるコンテンツが含まれているかどうかを判断します。 |
 | CA5364 | [CA5364: 非推奨のセキュリティ プロトコルを使用しないでください](../code-quality/ca5364.md) | トランスポート層セキュリティ (TLS) は、通常、ハイパーテキスト転送プロトコルセキュア (HTTPS) を使用して、コンピューター間の通信をセキュリティで保護します。 Tls の古いプロトコルバージョンは、TLS 1.2 および TLS 1.3 よりも安全性が低く、新しい脆弱性が発生する可能性が高くなります。 リスクを最小限に抑えるために、古いプロトコルバージョンを避けてください。 |

@@ -1,5 +1,6 @@
 ---
 title: レジストリ設定を使用してプライベートギャラリーを管理する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 989426feaab04c62c31bf09ddb0431f18222e115
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742870"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038544"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>方法: レジストリ設定を使用してプライベートギャラリーを管理する
 分離シェル拡張機能の管理者または開発者は、Visual Studio ギャラリー、サンプルギャラリー、またはプライベートギャラリーで、コントロール、テンプレート、およびツールへのアクセスを制御できます。 ギャラリーを利用できるようにする、または使用できないようにするには、変更されたレジストリキーとその値を記述する、 *pkgdef* ファイルを作成します。
@@ -67,5 +68,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [プライベート ギャラリー](../extensibility/private-galleries.md)
