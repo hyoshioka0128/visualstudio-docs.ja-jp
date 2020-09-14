@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: Web サイトに配置する
       href: quickstart-deploy-to-a-web-site.md
-    - name: ローカル フォルダーに配置する
+    - name: デバイスに配置する
       href: quickstart-deploy-to-local-folder.md
 - name: チュートリアル
   items:

@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの Pluralsight 特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 04/20/2020
+ms.date: 08/04/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375899"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509758"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -23,47 +23,62 @@ ms.locfileid: "87375899"
  所有しているサブスクリプションの種類によっては、以前に Visual Studio サブスクリプションを通じて提供された Pluralsight サブスクリプションを使用していたすべてのサブスクライバーが、新しい Pluralsight 特典オファーを利用できるわけではありません。 追加の Pluralsight トレーニング特典を引き換える権利がない場合、Pluralsight web サイトで特典をアクティブ化しようとしたときに通知が表示されます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
-1. サブスクリプションをアクティブ化するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) に接続し、[専門能力開発] セクションにある Pluralsight 特典タイトルの **[コードを取得]** リンクをクリックします。
+1. サブスクリプションをアクティブ化するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) に接続し、Pluralsight 特典タイルの **[アクティブ化]** リンクをクリックします。  表示されるタイルの一覧を絞り込むには、グループ フィルターを選択します。  Pluralsight は、[Professional Development]\(プロフェッショナル開発\) 特典グループにあります。
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight 特典タイル](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
-   >
-   > [!IMPORTANT]
-   > Pluralsight 特典タイルの [コードを取得] リンクをクリックすると、次のような内容のメッセージが表示される可能性があります。
-   >
-   > **"注: 以前に Visual Studio サブスクリプションで別の Pluralsight オファーをアクティブにした場合は、このコードで新しい Pluralsight アカウントを作成できない可能性があります。"**
+   > ![Pluralsight 特典タイル](_img/vs-pluralsight/vs-pluralsight-tile.png "[アクティブ化] をクリックして特典を要求します")
 
-2. クーポン コードが正常に取得された通知を受け取ります。  **[アクティブ化]** をクリックします。
-
-3. Visual Studio サブスクリプションに含まれる特典の Pluralsight ページにリダイレクトされます。
+(上のタイルは、Visual Studio Enterprise サブスクライバーに表示されるものの例です。  別の Visual Studio サブスクリプションを使用している場合、Pluralsight 特典の期間が異なります。  詳細については、「特典を受ける条件」の表を参照してください。)
+1. Visual Studio サブスクリプションに含まれる特典の Pluralsight ページにリダイレクトされます。
    - フォームで要求された連絡先情報を入力します
-   - チェック ボックスをオンにして、使用条件とプライバシー ポリシーに同意します
-   - **[I agree, activate benefit]\(特典のアクティブ化に同意します\)** をクリックします。
+   - 使用条件に同意するチェック ボックスをオンにします
+   - **[REDEEM]\(利用\)** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Pluralsight で特典をアクティブ化する](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Pluralsight の登録](_img/vs-pluralsight/vs-pluralsight-registration.png "登録フォームに入力し、条件に同意するチェック ボックスをオンにして、[Redeem]\(利用\) をクリックします")
 
-5. アカウントの設定にはしばらく時間がかかる場合があります。  完了すると、ページに確認メッセージが表示され、ログイン情報を示すメールが届きます。  メールは、アカウントを作成したときに指定した別名に送信されます。  メッセージが見つからない場合は、必ず、迷惑メール フォルダーまたはスパム メール フォルダーをご確認ください。
+   > [!NOTE]
+   > 登録ページの有効期限は数分後に切れます。  ページの有効期限が切れる前に登録プロセスが完了しない場合は、<https://my.visualstudio.com/benefits> ページの Pluralsight タイルに戻り、 **[アクティブ化]** をもう一度クリックします。 
+
+1. アカウントの設定にはしばらく時間がかかる場合があります。  完了すると、ページに確認メッセージが表示され、ログイン情報を示すメールが届きます。  メールは、アカウントを作成したときに指定した別名に送信されます。  メッセージが見つからない場合は、必ず、迷惑メール フォルダーまたはスパム メール フォルダーをご確認ください。
 
    > [!NOTE]
    > ご利用のアカウントに新しいプランを利用する資格がない場合、アカウントに資格がないため、作成中に問題が発生したことが受信メールで説明されます。  また、アカウントに関する質問に回答できる Pluralsight のサポート チームへの連絡先情報も含まれます。
-   
 
-6. アカウントが正常に作成された後は、受信するメールにユーザー名が含まれ、パスワードを作成するよう求められます。  パスワードを入力し、確認のためもう一度入力して **[Log in to Pluralsight]\(Pluralsight にログイン\)** をクリックします。
+1. **[パスワードの設定]** をクリックします。
 
-7. ウェルカム メールに示されているユーザー名と、作成したパスワードを入力して、 **[サインイン]** をクリックします。
+1. **[新しいパスワード]** フィールドに任意のパスワードを入力し、 **[パスワードの確認]** フィールドにもう一度入力して、 **[保存]** をクリックします。
 
-8. これで完了です。  数千の Pluralsight コースで学習を開始する準備ができました。
+1. これで完了です。  数千の Pluralsight コースで学習を開始する準備ができました。
+
+## <a name="status-of-your-pluralsight-subscription"></a>Pluralsight サブスクリプションの状態
+Pluralsight の特典をアクティブにすると、Visual Studio サブスクリプション ポータルでのタイルの外観が変わり、サブスクリプションの状態を追跡できるようになります。  
+
+### <a name="while-your-subscription-is-active"></a>サブスクリプションがアクティブになっているとき
+[アクティブ化] ボタンの代わりに、小さい円形のボタンが表示されます。それをクリックすると、Pluralsight ポータルに直接移動し、トレーニングにサインインして続行することができます。  
+
+Pluralsight タイトルの下のタイル上部に、Pluralsight サブスクリプションの残り時間を示すテキストが表示されます。  サブスクリプションの有効期限が 60 日以下になると、テキストは月数ではなく残り日数を示すように切り替わります。  
+
+タイルの下部には、Pluralsight サブスクリプションのアクティブ化日と有効期限の両方を示すテキストが表示されます。
+
+   > [!div class="mx-imgBorder"]
+   > ![アクティブ化後の Pluralsight タイル](_img/vs-pluralsight/vs-pluralsight-activated.png "アクティブ化が完了すると、タイルには、サブスクリプションの残り日数と、有効期限の日付および Pluralsight ポータルへのリンクが表示されます。")
+
+### <a name="when-your-subscription-expires"></a>サブスクリプションの有効期限が切れたとき
+Pluralsight サブスクリプションの有効期限が切れると、状態は "残り 0 日" に変わり、Pluralsight ポータルへのリンクは削除されます。 その後も、サブスクリプションをアクティブ化した日付と有効期限が切れた日付を確認することはできます。  
+   > [!div class="mx-imgBorder"]
+   > ![有効期限が切れた後の Pluralsight タイル](_img/vs-pluralsight/vs-pluralsight-expired.png "有効期限が切れると、Pluralsight へのリンクは表示されなくなり、サブスクリプションがアクティブ化された日付がタイルの下部に表示されます。")
+
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-|                          サブスクリプション レベル                          |     チャネル      |    特長    |   更新可能かどうか   |
+|                          サブスクリプション レベル                          |     チャンネル      |    特長    |   更新可能かどうか   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL、Azure、リテール |   6 か月    | はい<sup>2</sup> |
 |          Visual Studio Enterprise with GitHub Enterprise          | VL  |   6 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL、Azure、リテール |   3 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional with GitHub Enterprise          | VL  |   3 か月    | はい<sup>2</sup> |
-|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用できません    | N/A  |
-|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用できません    | N/A  |
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用できません |       N/A       |
+|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用不可    | N/A  |
+|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用不可    | N/A  |
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用不可 |       N/A       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       N/A       |
 ||
 
@@ -83,6 +98,9 @@ A: すべての Visual Studio Enterprise サブスクリプションに Pluralsi
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q:任意のカスタマイズされた学習のプレイリストやチャネルへのアクセス権はありますか。
 A: はい。 Visual Studio サブスクライバーは、このサービスの呼び物であるロール、ラーニング パス、カスタム チャネル (プレイリスト) を Pluralsight トレーニング特典として利用できます。 このサービスの呼び物であるコンテンツは Microsoft と Pluralsight が特別に編集しており、重要な関心領域が学習できるように調整されています。 Pluralsight ホーム ページで Pluralsight 特典やその他のコンテンツを利用するには、Visual Studio サブスクリプション ポータル <https://my.visualstudio.com/benefits> でそれをアクティベートします。
+
+### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>Q:Pluralsight タイルに "アクティブ化" リンクがありません。 特典をアクティブ化するにはどうすればよいですか?
+A: Pluralsight 特典を既にアクティブ化している場合は、[アクティブ化] リンクは、Pluralsight のサインイン ページに移動するリンクに置き換えられます。  また、特典をアクティブにした日付と、サブスクリプションの残り期間に関する情報も表示されます。  既にサブスクリプションを使用している場合、別のものをアクティブ化することはできません。
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q:Pluralsight サブスクリプションがなくなるとどうなりますか。
 A: Pluralsight 無料サブスクリプションの終了時、Pluralsight から直接、サブスクリプションを購入できます。  詳細については、[Pluralsight](https://www.pluralsight.com) にお問い合わせください。

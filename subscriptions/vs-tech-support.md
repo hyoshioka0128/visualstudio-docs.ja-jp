@@ -2,17 +2,17 @@
 title: テクニカル サポート特典
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 03/26/2020
+ms.date: 09/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 247a2b9d4649aae6f3a32a6156e2f9558c481e68
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387292"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508939"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -31,6 +31,15 @@ Visual Studio IDE や Azure DevOps Server などの開発者ツールでは、Vi
 Visual Studio サブスクリプションからダウンロードされた開発者以外の製品 (SQL、Windows、SharePoint など) は、メインストリーム サポートのみの対象となります。 これらの製品は、アプリケーションを設計、開発、テスト、またはデモンストレーションする開発環境に対してのみライセンスされます。 これらの製品は、運用環境に対してはライセンスされません。
 
 製品レベルの説明: **[Unavailable support plans]\(使用不可のサポート プラン\)** を展開します。 **[Support plan cannot be used for support on the specified product (Code: 8)]\(サポート プランは指定した製品のサポートには使用できません (コード: 8)\)** が表示される場合、お客様のサポート契約は、選択した製品バージョンには使用できません。
+
+> [!IMPORTANT]
+> 提供されるサポート インシデントは、障害対応のサポート用です。  以下の製品でのコーディングや開発に関する問題の支援には使用できません。
+> - Microsoft Teams
+> - Microsoft Office
+> - Microsoft SharePoint
+> - Microsoft Exchange
+> - Microsoft Graph
+> - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
 1. <https://my.visualstudio.com/Benefits> に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
@@ -110,7 +119,7 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 4 つのインシデント       |  はい|
 | Visual Studio Enterprise with GitHub Enterprise | VL | 4 つのインシデント       |  はい|
@@ -118,7 +127,7 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 | Visual Studio Professional with GitHub Enterprise | VL                                     | 2 つのインシデント                                                          |はい         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 2 つのインシデント                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 2 つのインシデント                                               | はい         |
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用不可                                                           |N/A|
 ||
 
 <sup>1</sup> *次のものが含まれます: Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*

@@ -127,6 +127,8 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure 仮想マシンから Visual Studio を使用する
       href: install/using-visual-studio-vm.md
+    - name: ARM デバイスで Visual Studio を使用する
+      href: install/visual-studio-on-arm-devices.md
     - name: コンテナー
       items:
         - name: Build Tools をコンテナーにインストールする

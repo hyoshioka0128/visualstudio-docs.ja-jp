@@ -2,21 +2,23 @@
 title: サブスクリプション管理者ポータルの使用を開始する | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249859"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426877"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 
 Visual Studio サブスクリプション管理ポータルには、組織のサブスクリプションを 1 か所で管理するためのツールが用意されています。 
+
+ポータルのツアーを開始します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,7 +36,7 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - 割り当てられているサブスクリプション レベル。
 - サブスクリプションが割り当てられた日付。
 - サブスクリプションの有効期限。
-- オプションの説明テキスト。
+- 追加メモの参照フィールド。
 - サブスクライバーのダウンロードが有効か無効かを示す情報。
 - 居住している国。
 - 管理ポータルからの割り当て通信電子メールで優先される言語。
@@ -42,7 +44,7 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 
 ページの左上には、選択すると、サブスクリプション割り当ての概要、契約の詳細、および最大使用量レポートが表示されるアイコンがいくつかあります。
 
-購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報を表示するには、上部にあるアイコンを選択してスライド式のパネルを有効にします。
+購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報を表示するには、上部にあるアイコンをクリックしてスライド式のパネルを有効にします。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクリプションの管理ポータルのサブスクライバー ページ](_img/using-admin-portal/subscribers-page.png)
 

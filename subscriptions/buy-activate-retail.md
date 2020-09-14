@@ -1,18 +1,18 @@
 ---
-title: Microsoft Store で購入できる Visual Studio のサブスクリプションをアクティブ化する方法 | Microsoft Docs
+title: Microsoft Store で利用できる Visual Studio サブスクリプション | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Microsoft Store で Visual Studio サブスクリプションを購入し、Visual Studio サブスクリプション ポータルでそれをアクティブ化する方法について説明します。
-ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247480"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561576"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio のサブスクリプションは、Microsoft ストアを通して入手できます。
 Visual Studio サブスクリプションは、[ボリューム ライセンス](https://www.microsoft.com/licensing/default)、クラウド ソリューション プロバイダー、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)、Microsoft Store など、さまざまなチャネルを通じて利用できます。  この記事では、[Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) を使用したサブスクリプションの購入とアクティブ化について説明します。  

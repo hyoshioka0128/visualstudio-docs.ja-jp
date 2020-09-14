@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738200"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509771"
 ---
 # <a name="debugging-linq"></a>LINQ のデバッグ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、統合言語クエリ (LINQ) コードのデバッグがサポートされていますが、いくつかの制約事項があります。 ステップ実行、ブレークポイントの設定、デバッガー ウィンドウでの結果の表示など、ほとんどのデバッグ機能を、LINQ ステートメントと組み合わせて使用することができます。 このトピックでは、LINQ のデバッグに伴う主要な制限事項について説明します。
@@ -105,7 +105,7 @@ End Function
  修正したクエリは、`IsEven` のパスごとに関数 `items` を呼び出します。 デバッガー ウィンドウで各項目が指定された条件を満たすかどうかを確認し、`IsEven` 内のコードをステップ実行できます。 この例の述語コードはきわめて単純です。 もっと複雑な述語コードをデバッグする場合にも、この方法が十分役に立つことがあります。
 
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a>LINQ でサポートされないエディット コンティニュ
- エディット コンティニュでは、LINQ クエリに対する変更が制限付きでサポートされます。 詳細については、「[EnC でサポートされる変更](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)」を参照してください。
+ エディット コンティニュでは、LINQ クエリに対する変更が制限付きでサポートされます。 詳細については、[EnC でサポートされる変更](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)に関するページを参照してください
 
 ## <a name="see-also"></a>関連項目
 

@@ -3,19 +3,19 @@ title: Visual Studio for Mac ツアー
 description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 12/13/2019
+ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75405829"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402614"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac ツアー
 
-Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_です。 Visual Studio for Mac には、期待されている標準エディターおよびデバッガーなどの機能に加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
+Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_です。 Visual Studio for Mac には、コード エディターやデバッガーに加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
 
 Visual Studio for Mac は、`.csproj`、`.fsproj`、または `.sln` など、対応する Windows 版と同じ種類のファイルを多くサポートしています。また、EditorConfig などの機能もサポートしており、これはご自分に最適な IDE を使用できることを意味しています。
 Windows で Visual Studio を使用したことがあれば、使い慣れた方法でアプリの作成、起動、開発を行うことができます。 また、Visual Studio for Mac は、Windows 版を強力な IDE にしている強力なツールの多くを採用しています。 Roslyn コンパイラ プラットフォームは、リファクタリングと IntelliSense に使用されます。 そのプロジェクト システムとビルド エンジンでは MSBuild が使用されており、ソース エディターでは、Windows での Visual Studio と同じ基盤が使用されています。 Xamarin アプリと .NET Core アプリに同じデバッグ エンジンを使用し、Xamarin.iOS と Xamarin.Android に同じデザイナーを使用しています。
@@ -38,15 +38,15 @@ Visual Studio for Mac は、アプリケーションのファイルと設定の�
 
 ## <a name="getting-started"></a>作業の開始
 
-Visual Studio 2019 for Mac を起動すると、新規ユーザーにはサインイン ウィンドウが表示されます。 ご自分の Microsoft アカウントでサインインして、有料ライセンス (ある場合) をアクティブ化するか、Azure サブスクリプションにリンクします。 **[後で行う]** を押し、**Visual Studio > [サインイン]** メニュー項目を使用して、後でサインインすることができます。
+Visual Studio 2019 for Mac を初めて起動すると、新規ユーザーにはサインイン ウィンドウが表示されます。 ご自分の Microsoft アカウントでサインインして、有料ライセンス (ある場合) をアクティブ化するか、Azure サブスクリプションにリンクします。 **[後で行う]** を押し、**Visual Studio > [サインイン]** メニュー項目を使用して、後でサインインすることができます。
 
-![Microsoft アカウントにサインインする](media/ide-tour-2019-start-signin.png)
+![Microsoft アカウントへのサインイン](media/ide-tour-2019-start-signin.png)
 
 次に、優先するキーボード ショートカットを選択すると、IDE をカスタマイズするためのオプションが表示されます: Visual Studio for Mac、Visual Studio、Visual Studio Code、または Xcode。
 
 ![お気に入りのキーボード ショートカットを選択する](media/ide-tour-2019-keyboard-shortcut.png)
 
-サインインしたユーザーには、新しい_スタート ウィンドウ_が表示されます。このウィンドウには、最近使用したプロジェクトの一覧と、既存のプロジェクトを開いたり、新しいプロジェクトを作成するためのボタンが表示されます。
+この初期セットアップ エクスペリエンスの後は、Visual Studio 2019 for Mac を開くと常に "_開始ウィンドウ_" が表示され、最近使用したプロジェクトの一覧と、既存のプロジェクトを開いたり新しいプロジェクトを作成したりするためのボタンが表示されます。
 
 ![最近使用したプロジェクトから選択するか、新しいものを作成する](media/ide-tour-2019-start-projects.png)
 
@@ -74,7 +74,7 @@ Visual Studio for Mac でプロジェクトとソリューションを使用す�
 
 ![Solution Pad の [参照] フォルダー](media/ide-tour-image19.png)
 
-その他の参照は、 **[参照の編集]** ダイアログを使用して追加されます。このダイアログを表示するには、[参照] フォルダーをダブルクリックするか、コンテキスト メニュー操作で **[参照の編集]** を選択します。
+その他の参照は、**[参照の編集]** ダイアログを使用して追加されます。このダイアログを表示するには、[参照] フォルダーをダブルクリックするか、コンテキスト メニュー操作で **[参照の編集]** を選択します。
 
 ![[参照の編集] ダイアログ](media/ide-tour-image20.png)
 
@@ -82,11 +82,11 @@ Visual Studio for Mac で参照を使用する方法については、「[プロ
 
 ## <a name="dependencies--packages"></a>依存関係/パッケージ
 
-アプリで使用されるすべての外部依存関係は、[依存関係] フォルダーまたは [パッケージ] フォルダーに格納されます。格納される場所は、.NET Core プロジェクトか Xamarin.iOS/Xamarin.Android プロジェクトかによって変わります。 通常、NuGet の形式で提供されます。
+アプリで使用されるすべての外部依存関係は、.NET Core プロジェクトか Xamarin.iOS/Xamarin.Android プロジェクトかに応じて、[依存関係] フォルダーまたは [パッケージ] フォルダーに格納されます。 通常、NuGet の形式で提供されます。
 
 NuGet は、.NET 開発用の最も人気のあるパッケージ マネージャーです。 Visual Studio は NuGet をサポートしているので、簡単にパッケージを検索し、プロジェクトをアプリケーションに追加できます。
 
-依存関係をアプリケーションに追加するには、[依存関係]/[パッケージ] フォルダーを右クリックし、 **[パッケージの追加]** を選択します。
+依存関係をアプリケーションに追加するには、[依存関係]/[パッケージ] フォルダーを右クリックし、**[パッケージの追加]** を選択します。
 
 ![NuGet パッケージの追加](media/ide-tour-image21.png)
 
@@ -94,7 +94,7 @@ NuGet は、.NET 開発用の最も人気のあるパッケージ マネージ�
 
 ## <a name="source-editor"></a>ソース エディター
 
-C#、XAML、Javascript のいずれで作成するかに関係なく、コード エディターは、完全にネイティブなユーザー インターフェイスを備え、Visual Studio Windows と同じコア コンポーネントを共有します。
+C#、XAML、JavaScript のいずれで作成するかに関係なく、コード エディターでは、完全にネイティブなユーザー インターフェイスが提供され、Visual Studio Windows と同じコア コンポーネントが共有されます。
 
 これには、次のような利点がいくつかあります。
 
@@ -119,7 +119,7 @@ Visual Studio for Mac でのソース エディターの使用に関する詳細
 
 ## <a name="refactoring"></a>リファクタリング
 
-Visual Studio for Mac には、コードをリファクターする 2 つの便利な方法があります。コンテキスト アクションとソース分析です。 詳細については、「[リファクタリング](/visualstudio/mac/refactoring)」を参照してください。
+Visual Studio for Mac には、コンテキスト アクションとソース分析という、コードをリファクターする 2 つの便利な方法があります。 詳細については、「[リファクタリング](/visualstudio/mac/refactoring)」を参照してください。
 
 ## <a name="debugging"></a>デバッグ
 
@@ -129,7 +129,7 @@ Visual Studio for Mac には、.NET Core、.NET Framework、Unity、および Xa
 
 デバッガーのデータの視覚化の詳細については、「[データの視覚化](/visualstudio/mac/data-visualizations)」を参照してください。
 
-## <a name="version-control"></a>バージョン管理
+## <a name="version-control"></a>バージョン コントロール
 
 Visual Studio for Mac は、Git と Subversion ソース管理システムと統合されています。 ソース管理下にあるプロジェクトは、ソリューション名の横にブランチとして一覧表示されます。
 
@@ -141,7 +141,7 @@ Visual Studio for Mac は、Git と Subversion ソース管理システムと統
 
 Visual Studio でバージョン管理を使用する方法については、「[バージョン管理](/visualstudio/mac/version-control)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Visual Studio for Mac をインストールする](installation.md)
 - [使用できるワークロードを確認する](workloads.md)

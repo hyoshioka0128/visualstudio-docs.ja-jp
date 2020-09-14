@@ -1,18 +1,18 @@
 ---
 title: 管理ポータルでのスーパー管理者と管理者ロール
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 04/07/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 description: スーパー管理者と管理者ロール、および管理者を割り当てる方法について説明します。
-ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248451"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426760"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
 
@@ -22,23 +22,24 @@ ms.locfileid: "88248451"
 
 **管理者:** スーパー管理者のみが管理者を割り当てることができます。管理者は、スーパー管理者に割り当てられた契約のサブスクライバーのみを管理できます。
 
+管理者の管理方法についてのデモをご覧ください。 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-administrators"></a>管理者の割り当て
 新しい管理者 (管理者) を割り当てるには:
 1. サブスクリプションを購入した契約でスーパー管理者に割り当てられるメール アドレスを使用し、 https://manage.visualstudio.com にサインインします。
-2. **[管理者の管理]** というラベルのタブを選択します。
-3. **[追加]** を選択します。
+2. **[管理者の管理]** というラベルのタブをクリックします。
+3. **[追加]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![管理者の追加](_img/admin-roles/add-admins.png "[管理者の管理] ブレードを選択し、[追加] を選択して新しい管理者を割り当てます。")
+   > ![管理者の追加](_img/admin-roles/add-admins.png "[管理者の管理] ブレードをクリックし、[追加] をクリックして新しい管理者を割り当てます。")
 4. 新しい管理者の情報でフォームを完成させます。  
    > [!div class="mx-imgBorder"]
-   > ![[管理者の追加] フォーム](_img/admin-roles/add-form.png "新しい管理者のサインイン情報を入力し、その管理者をスーパー管理者にするかどうかを選択します。次に、[追加] を選択します。")
+   > ![[管理者の追加] フォーム](_img/admin-roles/add-form.png "新しい管理者のサインイン情報を入力し、その管理者をスーパー管理者にするかどうかを選択します。次に [追加] をクリックします。")
 
    > [!NOTE]
    > この管理者が管理者をさらに割り当てることができるようにするには、 **[スーパー管理者]** チェックボックスをオンにすることを忘れないでください。
 
-5. **[追加]** を選択すると、新規に割り当てられた管理者は、ポータルにサインインする招待メールを受信します。  
+5. **[追加]** をクリックすると、新規に割り当てられた管理者は、ポータルにサインインする招待メールを受信します。  
 
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise ベネフィット | Microsoft Docs
+title: Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Microsoft 365 Apps for enterprise に関する説明を読み、インストールする
-ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800815"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561253"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise
 Microsoft 365 Apps for enterprise (以前の Office 365 Pro Plus) は、一部の Visual Studio サブスクリプションで利用できます。 
@@ -28,7 +28,7 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 1. [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) で Visual Studio サブスクリプションにサインインします。
 1. [Microsoft 365 Apps for enterprise] タイルを見つけ、 **[アクティブにする]** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 Apps for enterprise タイル](_img/microsoft-365-apps-for-enterprise/tile-activate.png "アクティブにする を選択し、サブスクリプションを開始します。")
+   > ![[Microsoft 365 Apps for enterprise] タイル](_img/microsoft-365-apps-for-enterprise/tile-activate.png ""アクティブにする" を選択し、サブスクリプションを開始します。")
 
 1. [Welcome, let's get to know you]\(ようこそ。情報を入力してください\) ダイアログで、求められた個人の連絡先情報を入力し、 **[次へ]** を選択します。
    > [!div class="mx-imgBorder"]

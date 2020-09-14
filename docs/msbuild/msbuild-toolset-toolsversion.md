@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633123"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426964"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
 
@@ -45,7 +45,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 ::: moniker-end
 
 > [!NOTE]
-> 一部のプロジェクトの種類は、`ToolsVersion` の代わりに `sdk` 属性を使います。 詳細については、「[パッケージ、メタパッケージ、フレームワーク](/dotnet/core/packages)」および「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
+> 一部のプロジェクトの種類は、`ToolsVersion` の代わりに `sdk` 属性を使います。 詳細については、「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 属性の動作
 

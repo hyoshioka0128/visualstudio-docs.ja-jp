@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508081"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561589"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 
-Visual Studio には、パフォーマンス測定とプロファイルのための選り抜きのツールが備わっています。 CPU 使用率やメモリ使用量など、一部のツールはデバッガーと使用して実行することも、使用せずに実行することもできます。また、リリース ビルド構成かデバッグ ビルド構成で実行できます。 アプリケーション タイムラインのようなパフォーマンス プロファイラー ツールは、デバッグ ビルドまたはリリース ビルドで実行できます。 診断ツール ウィンドウや [イベント] タブなど、デバッガー統合ツールはデバッギング セッション中のみ実行されます。
+Visual Studio には、パフォーマンス測定とプロファイルのための選り抜きのツールが備わっています。 CPU 使用率やメモリ使用量など、一部のツールはデバッガーと使用して実行することも、使用せずに実行することもできます。また、リリース ビルド構成かデバッグ ビルド構成で実行できます。 [診断ツール ウィンドウ](../profiling/profiling-feature-tour.md#view-performance-while-debugging)に表示されるツールは、デバッグ セッションの間だけ実行できます。 [パフォーマンス プロファイラー](../profiling/profiling-feature-tour.md#post_mortem)に表示されるツールは、デバッガーがなくても実行でき、停止してデータを収集した後で結果を分析します (事後分析用)。
 
 >[!NOTE]
 >デバッガーなしのパフォーマンス ツールは Windows 7 以降で使用できます。 Windows 8 以降の場合、デバッガー統合プロファイリング ツールを実行する必要があります。
@@ -46,6 +46,11 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 - Visual Studio Enterprise を実行している場合は、 **[ツール]**  >  **[オプション]**  >  **[IntelliTrace]** に移動して IntelliTrace を有効または無効にすることができます。
 
 診断セッションは、デバッグを停止すると終了します。
+
+詳細については次を参照してください:
+
+- [CPU 使用率を分析することでアプリケーションのパフォーマンスを測定する](../profiling/beginners-guide-to-performance-profiling.md)
+- [Visual Studio でのメモリ使用量の測定](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>[イベント] タブ
 
@@ -86,6 +91,15 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 レポートを保存し、診断ツールの起動ページの **[最近開いたセッション]** 一覧から開くことができます。
 
 ![診断ツールの [最近開いたセッション] リストのスクリーンショット](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+詳細については次を参照してください:
+
+- [CPU 使用率の分析](../profiling/cpu-usage.md)
+- [.NET コードのメモリ使用量の分析](../profiling/dotnet-alloc-tool.md)
+- [メモリ使用量の分析](../profiling/analyze-memory-usage.md)
+- [.NET 非同期コードのパフォーマンスを分析する](../profiling/analyze-async.md)
+- [データベースのパフォーマンスを分析する](../profiling/analyze-database.md)
+- [GPU の使用率の分析](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>コマンド ラインからプロファイル データを収集する
 
