@@ -1,18 +1,20 @@
 ---
-title: Windows フォームに基づくドメイン固有言語の作成
+title: Windows フォームに基づくドメイン固有言語を作成する
+description: Windows フォームを使用して、ドメイン固有言語モデルの状態を表示する方法について説明します。
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238362"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100454"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows フォームベースのドメイン固有言語を作成する
 
@@ -67,9 +69,9 @@ Dsl 定義ファイルを更新して独自の DSL を定義する場合は、DS
 
 ## <a name="update-the-dsl-definition"></a>DSL 定義を更新する
 
-このチュートリアルでは、次の DSL 定義を使用します。
+次の図は、このチュートリアルで使用する DSL 定義を示しています。
 
-![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+![DSL 定義](../modeling/media/dsl-wpf-1.png)
 
 1. DSL デザイナーで DslDefinition. dsl を開きます。
 
@@ -127,7 +129,7 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
 
      [データソース] ウィンドウに、モデルクラスのプロパティとリレーションシップが表示されます。
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![データソースウィンドウ](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>モデルをフォームに接続する
 
@@ -172,7 +174,9 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
 
 - これにより、ユーザーが行を選択したときに、データグリッド行ではなく、対応するモデル要素のプロパティがプロパティウィンドウ表示されるようになります。
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) データソースとビュー間のリンクのスキーマ。
+  ![DSL バインドのスキーマ](../modeling/media/dslwpf4.png)
+  
+  データソースとビューの間のリンクのスキーマ。
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>DSL へのバインドを完了します。
 
@@ -298,7 +302,7 @@ DSL ソリューションを構築して実行できるようになりました�
 
     データグリッドビューで要素の名前を編集できるようになります。 そこから削除することもできます。
 
-   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![サンプルデータグリッドビュー](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>要素を追加するコードについて
 
