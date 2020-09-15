@@ -178,6 +178,6 @@ Windows フォームにデータバインドコントロールを作成するに
 
 - レコード間を移動し、`LookupBox` コントロールに `CompanyName` が表示されることを確認します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
