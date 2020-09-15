@@ -1,5 +1,5 @@
 ---
-title: コード品質の分析
+title: アナライザーの構成
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036370"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560750"
 ---
-# <a name="configure-code-quality-analysis"></a>コード品質分析の構成
+# <a name="overview"></a>概要
 
-.NET 5.0 以降では、.NET SDK にコード品質アナライザーが含まれています。 (以前は、これらのアナライザーを NuGet パッケージとしてインストールしました)。.NET 5.0 以降を対象とするプロジェクトでは、コード分析が既定で有効になっています。 以前のバージョンの .NET を対象とするプロジェクトでは、 [Enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) プロパティをに設定することにより、コード分析を有効にすることができ `true` ます。 をに設定することにより、プロジェクトのコード分析を無効にすることもでき `EnableNETAnalyzers` `false` ます。
-
-各コード品質アナライザーの *診断* または規則には、プロジェクトに対して上書きおよびカスタマイズできる既定の重大度と抑制状態があります。 この記事では、code quality analyzer の重大度を設定し、アナライザーの違反を抑制する方法について説明します。
+各 Roslyn アナライザーの *診断* または規則には、プロジェクトに対して上書きおよびカスタマイズできる既定の重大度と抑制状態があります。 この記事では、アナライザーの重大度の設定と、アナライザーの違反の抑制について説明します。
 
 ## <a name="configure-severity-levels"></a>重大度レベルの構成
 
@@ -411,7 +409,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコードアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [コードアナライザーのバグを送信する](https://github.com/dotnet/roslyn-analyzers/issues)
