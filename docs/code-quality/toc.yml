@@ -10,12 +10,10 @@
         - name: 構成
           expanded: true
           items:
+            - name: 概要
+              href: use-roslyn-analyzers.md
             - name: コード品質
-              items:
-                - name: 概要
-                  href: use-roslyn-analyzers.md
-                - name: EditorConfig を使用したコード品質分析の構成
-                  href: configure-fxcop-analyzers.md
+              href: configure-fxcop-analyzers.md
             - name: ライブ コード分析の構成
               href: configure-live-code-analysis-scope-managed-code.md
             - name: 手動でのコード分析の実行
