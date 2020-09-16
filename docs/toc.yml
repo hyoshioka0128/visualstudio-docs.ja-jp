@@ -509,6 +509,8 @@
             - name: コード スタイルに関する EditorConfig ファイルの使用
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
+            - name: C++ EditorConfig の書式規則
+              href: ide/cpp-editorconfig-properties.md
             - name: .NET のコーディング規則
               items:
                 - name: 概要
