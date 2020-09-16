@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596958"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036523"
 ---
 # <a name="quick-actions"></a>クイック アクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "75596958"
 
 ::: moniker range=">=vs-2019"
 
-- コード アナライザーの規則違反を[抑制する](../code-quality/use-roslyn-analyzers.md#suppress-violations)か、その重要度を[構成する](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)
+- コード アナライザーの規則違反を[抑制する](../code-quality/use-roslyn-analyzers.md#suppress-violations)か、その重要度を[構成する](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)
 
 ::: moniker-end
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348952"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599852"
 ---
 # <a name="how-to-stop-code-changes"></a>方法: コード変更を停止する
 エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。
@@ -40,4 +40,4 @@ ms.locfileid: "85348952"
 
 ## <a name="see-also"></a>関連項目
 - [エディット コンティニュ](../debugger/edit-and-continue.md)
-- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](./edit-and-continue.md)

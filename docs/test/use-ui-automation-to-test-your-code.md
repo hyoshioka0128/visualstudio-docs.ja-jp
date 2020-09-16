@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80880365"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035743"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>コード化された UI テストを使用してコードをテストする
 
@@ -446,7 +446,7 @@ myWinCheckBox.Checked = true;
 
 - [ビルド プロセスでのテストの実行](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [方法: テスト エージェントを設定して、デスクトップと対話するテストを実行する](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [方法: テスト エージェントを設定して、デスクトップと対話するテストを実行する](/previous-versions/ee291332(v=vs.140))
 
 **カスタム コントロールに対するサポートを追加する:** コード化された UI テスト フレームワークは使用可能な UI すべてをサポートしているわけではなく、テスト対象の UI をサポートしない場合もあります。 たとえば、Microsoft Excel の UI 用のコード化された UI テストをすぐに作成することはできません。 ただし、コード化された UI テスト フレームワークでカスタム コントロールをサポートするための拡張機能を作成することはできます。
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348939"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600165"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリをデバッグするときに、中断、再開、およびバックグラウンド イベントをトリガーする方法
 
@@ -48,7 +48,7 @@ ms.locfileid: "85348939"
      **[Suspend and terminate]\(中断して終了\)** を選択すると、アプリが閉じられ、デバッグ セッションは終了します。
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> バックグラウンド タスクをトリガーする
- すべてのアプリは、アプリが実行されていない場合でも特定のシステム イベントに応答するためのバックグラウンド タスクを登録できます。 バックグラウンド タスクは、UI を直接更新するコードは実行できません。代わりに、タイルの更新、バッジの更新、およびトースト通知を使用して、ユーザーに情報を表示します。 詳細については、「[バックグラウンド タスクによるアプリのサポート](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)」を参照してください。
+ すべてのアプリは、アプリが実行されていない場合でも特定のシステム イベントに応答するためのバックグラウンド タスクを登録できます。 バックグラウンド タスクは、UI を直接更新するコードは実行できません。代わりに、タイルの更新、バッジの更新、およびトースト通知を使用して、ユーザーに情報を表示します。 詳細については、「[バックグラウンド タスクによるアプリのサポート](/previous-versions/windows/apps/hh977046(v=win.10))」を参照してください。
 
  アプリのバックグラウンド タスクを開始するイベントをデバッガーからトリガーできます。
 
@@ -110,7 +110,7 @@ ms.locfileid: "85348939"
 4. **診断** ログを選択します。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio での UWP アプリのテスト](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Visual Studio での UWP アプリのテスト](../test/unit-test-your-code.md)
 - [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)
 - [アプリケーションのライフサイクル](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

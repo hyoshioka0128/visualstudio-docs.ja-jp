@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144689"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037225"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>DevOps でラボ環境を使用する
 
@@ -129,23 +129,23 @@ SCVMM の詳細については、「[Virtual Machine Manager](/azure/devops/pipe
 
 Lab Management の詳細については、以下を参照してください。
 
-* [ラボを計画する](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
-* [ラボを管理する](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
-* [SCVMM 環境用の設定を行う](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [アクセス許可を管理する](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
-* [構成を変更する](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-* [トラブルシューティング](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [ラボを計画する](/previous-versions/ff756575(v=vs.140))
+* [ラボを管理する](/previous-versions/dd936084(v=vs.140))
+* [SCVMM 環境用の設定を行う](/previous-versions/dd380687(v=vs.140))
+* [アクセス許可を管理する](/previous-versions/dd380760(v=vs.140))
+* [構成を変更する](/previous-versions/ee704508(v=vs.140))
+* [トラブルシューティング](/previous-versions/ee853230(v=vs.140))
 
 環境の設定については、以下を参照してください。
 
 * [ビルドとリリース クラウド環境](use-build-or-rm-instead-of-lab-management.md)
-* [標準ラボ環境](https://msdn.microsoft.com/library/ee390842.aspx)
-* [SCVMM (仮想) 環境](https://msdn.microsoft.com/library/ee943322.aspx)
-* [ネットワーク分離環境の作成および使用](https://msdn.microsoft.com/library/ee518924.aspx)
+* [標準ラボ環境](/previous-versions/ee390842(v=vs.140))
+* [SCVMM (仮想) 環境](/previous-versions/ee943322(v=vs.140))
+* [ネットワーク分離環境の作成および使用](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
 ## <a name="see-also"></a>参照
 
 * [テスト エージェントをインストールして構成する](../../test/lab-management/install-configure-test-agents.md)
-* [Visual Studio Lab Management Guide (Visual Studio ラボ管理ガイド)](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
+* [Visual Studio Lab Management Guide (Visual Studio ラボ管理ガイド)](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)
 * [Microsoft DevOps ブログ](https://devblogs.microsoft.com/devops/)

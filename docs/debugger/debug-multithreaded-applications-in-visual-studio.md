@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431810"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600334"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio でマルチスレッド アプリケーションをデバッグする
 スレッドは、オペレーティング システムでプロセッサ時間を許可する命令のシーケンスです。 オペレーティング システムで実行されているプロセスは、いずれも 1 つ以上のスレッドで構成されます。 複数のスレッドで構成されるプロセスをマルチスレッド プロセスといいます。
@@ -102,7 +102,7 @@ Visual Studio には、強力なブレークポイントとトレースポイン
 
 - [ブレークポイントの使用](../debugger/using-breakpoints.md)
 - [スレッド化](/dotnet/standard/threading/index)
-- [コンポーネントのマルチスレッド](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [コンポーネントのマルチスレッド](/previous-versions/3es4b6yy(v=vs.140))
 - [旧形式のコードのためのマルチスレッド サポート](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [スレッドとプロセスをデバッグする](../debugger/debug-threads-and-processes.md)
 - [リモート デバッグ](../debugger/remote-debugging.md)

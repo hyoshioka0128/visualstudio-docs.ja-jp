@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585562"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038622"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>単体テストでの MSTest フレームワークの使用
 
@@ -43,7 +43,7 @@ ms.locfileid: "75585562"
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>呼び出し順序を確立するために使用する属性
 
-次のいずれかの属性で装飾されたコード要素は、指定した時点で呼び出されます。 詳細については、「[単体テストの構造](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)」を参照してください。
+次のいずれかの属性で装飾されたコード要素は、指定した時点で呼び出されます。 詳細については、「[単体テストの構造](/previous-versions/ms182517(v=vs.110))」を参照してください。
 
 ### <a name="attributes-for-assemblies"></a>アセンブリの属性
 
@@ -69,7 +69,7 @@ ClassInitialize がクラスの読み込みの直後に、ClassCleanup がクラ
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>テスト クラスとテスト メソッドの識別に使用する属性
 
-すべてのテスト クラスには `TestClass` 属性が必要であり、すべてのテスト メソッドには `TestMethod` 属性が必要です。 詳細については、「[単体テストの構造](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)」を参照してください。
+すべてのテスト クラスには `TestClass` 属性が必要であり、すべてのテスト メソッドには `TestMethod` 属性が必要です。 詳細については、「[単体テストの構造](/previous-versions/ms182517(v=vs.110))」を参照してください。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

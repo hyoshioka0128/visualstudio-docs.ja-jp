@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbe2b18b9edd6f2d4634ede41d676519f1b80ad3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533459"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035721"
 ---
 # <a name="language-conventions"></a>言語規則
 
@@ -76,7 +76,7 @@ Visual Studio 2019 バージョン 16.3 以降、スタイル違反後、[[ク�
 
    Visual Studio では、次のボックスに示されているように、EditorConfig ファイルで構成設定が追加または修正されます。
 
-コード スタイル違反の重要度を変更するには、同じ手順に従いますが、 **[\<rule ID> コード スタイルの構成]** の代わりに **[Configure \<rule ID> severity]\(\<rule ID> 重要度の構成\)** を選択します。 詳細については、「[規則の重要度を自動的に構成する](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)」を参照してください。
+コード スタイル違反の重要度を変更するには、同じ手順に従いますが、 **[\<rule ID> コード スタイルの構成]** の代わりに **[Configure \<rule ID> severity]\(\<rule ID> 重要度の構成\)** を選択します。 詳細については、「[規則の重要度を自動的に構成する](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)」を参照してください。
 
 ::: moniker-end
 
@@ -1049,6 +1049,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **該当言語** | C# 6.0+ および Visual Basic 14+ |
 | **値** | `true` - 参照の等価性メソッドよりも null 検査を優先します<br /><br />`false` - null 検査よりも参照の等値性メソッドを優先します |
 | **Visual Studio の既定値** | `true:silent` |
+
+コード例:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
 
 ## <a name="net-code-quality-settings"></a>.NET コードの品質の設定
 

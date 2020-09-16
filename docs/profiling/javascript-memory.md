@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331271"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037485"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP アプリでの JavaScript のメモリ使用量を分析する
 Visual Studio に用意されている JavaScript メモリ アナライザーは、メモリ使用量を把握し、JavaScript を使用して Windows 用に開発された UWP アプリのメモリ リークを検出するのに役立ちます。 サポートされるアプリには、ユニバーサル Windows アプリのアプリが含まれます。
@@ -363,7 +363,7 @@ if (performance && performance.mark) {
 
 - JavaScript メモリ アナライザーについては、この Build 2013 カンファレンスの [ビデオ](https://channel9.msdn.com/Events/Build/2013/3-316) の後半部分をご覧ください。
 
-- 「[Managing memory in UWP apps](https://msdn.microsoft.com/magazine/jj651575.aspx)」(UWP アプリでのメモリの管理) をお読みください。
+- 「[Managing memory in UWP apps](/archive/msdn-magazine/2012/windows-8-special-issue/javascript-managing-memory-in-windows-store-apps)」(UWP アプリでのメモリの管理) をお読みください。
 
 - 問題を特定するためにコードを一時的に変更することを検討してください。 たとえば、次の操作を行います。
 

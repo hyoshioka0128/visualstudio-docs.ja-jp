@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460277670d76ddcc1001ba2d6060107ea405601e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ccca00387e701d62e47eee0a93adff44a4765fa2
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350525"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600070"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>データ連結 ActiveX コントロールのデバッグ
 データ ソース コントロールに連結する ActiveX コントロールを開発している場合、独自のコンテナー アプリケーションを作成し、そのコンテナーを使用して ActiveX コントロールをデバッグできます。
@@ -32,7 +32,7 @@ ms.locfileid: "85350525"
 ## <a name="using-the-test-container"></a>テスト コンテナーの使用
  簡単に変更できるコンテナーでコントロールまたはコンテナーのさまざまなインターフェイスをサポートする場合は、デバッグ セッションの実行可能ファイルとして ActiveX テスト コンテナーを使用します。 ActiveX テスト コンテナーで、 **[コンテナー]** メニューの **[オプション]** をクリックしてさまざまなインターフェイスを有効にします。 詳細については、「[テスト コンテナーでのプロパティとイベントのテスト](/cpp/mfc/testing-properties-and-events-with-test-container)」を参照してください。
 
- デバッグ中にコンテナーのコードにステップ インする必要がある場合は、デバッグ バージョンのコンテナーを使用するか、デバッグ バージョンの ActiveX テスト コンテナーを使用します。 詳細については、「[TSTCON のサンプル: ActiveX コントロール テスト コンテナー](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600)」を参照してください。
+ デバッグ中にコンテナーのコードにステップ インする必要がある場合は、デバッグ バージョンのコンテナーを使用するか、デバッグ バージョンの ActiveX テスト コンテナーを使用します。 詳細については、「[TSTCON のサンプル: ActiveX コントロール テスト コンテナー](/previous-versions/f9adb5t5(v=vs.100))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)

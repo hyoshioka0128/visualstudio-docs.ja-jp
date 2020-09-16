@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75845809"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036900"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム
 
@@ -59,11 +59,11 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 | Windows フォーム 2.0 以降 | 完全にサポートされます。 **注:** NetFx コントロールは完全にサポートされていますが、一部のサードパーティ コントロールはサポートされていません。 |
 | WPF 3.5 以降 | 完全にサポートされます。<br /><br /> **メモ** NetFx コントロールは完全にサポートされていますが、一部のサードパーティ コントロールはサポートされていません。 |
 | Windows Win32 | 既知の問題がいくつか存在しますが、動作する可能性があります。ただし、公式にはサポートされていません。 |
-| MFC | 一部サポートされています。 サポートされている機能について詳しくは、「[UITest framework](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/)」(UITest フレームワーク) をご覧ください。 |
+| MFC | 一部サポートされています。 サポートされている機能について詳しくは、「[UITest framework](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010)」(UITest フレームワーク) をご覧ください。 |
 | SharePoint | 完全にサポートされます。 |
 | Office クライアント アプリケーション | サポートされていません。 |
 | Dynamics CRM Web クライアント | 完全にサポートされます。 |
-| Dynamics (Ax) 2012 クライアント | 操作の記録と再生が部分的にサポートされています。 詳しくは、「[Visual Studio 10 Coded UI / Action Recordings support for Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/)」(Visual Studio 10 のコード化された UI/Microsoft Dynamics の操作の記録のサポート) をご覧ください。 |
+| Dynamics (Ax) 2012 クライアント | 操作の記録と再生が部分的にサポートされています。 詳しくは、「[Visual Studio 10 Coded UI / Action Recordings support for Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012)」(Visual Studio 10 のコード化された UI/Microsoft Dynamics の操作の記録のサポート) をご覧ください。 |
 | SAP | サポートされていません。 |
 | Citrix およびターミナル サービス | ターミナル サーバーに対する操作の記録はお勧めしません。 レコーダーは、複数のインスタンスの同時実行をサポートしていません。 |
 | PowerBuilder | 一部サポートされています。<br /><br /> サポートは、PowerBuilder コントロールに対してユーザー補助が有効である程度までです。 |

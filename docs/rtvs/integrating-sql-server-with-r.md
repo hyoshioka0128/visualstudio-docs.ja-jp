@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144715"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011880"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server と R の使用
 
@@ -50,7 +50,7 @@ SQL クエリ ファイルを追加するには、ソリューション エク�
 ![SQL ウィンドウのクエリ結果](media/sql-query-results.png)
 
 Transact-SQL エディターは他のさまざまな機能をサポートしており、たとえばクエリやクエリ デバッガーの実行プランを表示することなどができます。
-詳しくは、「[Transact-SQL エディターを使用したスクリプトの編集と実行](https://msdn.microsoft.com/library/hh272706.aspx)」をご覧ください。
+詳しくは、「[Transact-SQL エディターを使用したスクリプトの編集と実行](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103))」をご覧ください。
 
 ## <a name="work-with-sql-server-stored-procedures"></a>SQL Server ストアド プロシージャの使用
 

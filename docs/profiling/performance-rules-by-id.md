@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778441"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037329"
 ---
 # <a name="performance-rules-by-id"></a>ID 別のパフォーマンス規則
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778441"
 | [DA0006: 値の型で Equals() をオーバーライドしてください](../profiling/da0006-override-equals-parens-for-value-types.md) | パブリック値型の Equals メソッドまたは等値演算子の呼び出しが、プロファイリング データの大きな割合を占めています。 さらに効率的な方法を実装することを検討してください。 |
 | [DA0007: 制御フローでの例外の使用を避けてください](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | .NET Framework 例外ハンドラーの多くの部分が、プロファイリング データで呼び出されました。 他の制御フロー ロジックを使用して、スローされる例外の数を減らすことを検討してください。 |
 | [DA0008: 少数のサンプルしか収集されていません](../profiling/da0008-few-samples-collected.md) | プロファイリング実行で少数のサンプルしか収集されませんでした。 収集されるサンプル数を増やすには、実行時間を長くするか、サンプリング速度を上げてください。 |
-| [DA0009: JIT に費やされる時間の割合が高くなっています](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | アプリケーションの実行時間のかなりの割合が、Just-In-Time (JIT) コンパイラで使用されました。 |
+| [DA0009: JIT に費やされる時間の割合が高くなっています](/previous-versions/dd264972(v=vs.100)) | アプリケーションの実行時間のかなりの割合が、Just-In-Time (JIT) コンパイラで使用されました。 |
 | [DA0010: GetHashCode の負荷が高くなっています](../profiling/da0010-expensive-gethashcode.md) | 型の GetHashCode メソッドの呼び出しがプロファイリング データの大きな割合を占めているか、またはそのメソッドがメモリを割り当てています。 |
 | [DA0011: CompareTo の負荷が高くなっています](../profiling/da0011-expensive-compareto.md) | 型の CompareTo メソッドが高コストであるか、またはメモリを割り当てています。 |
 | [DA0012: リフレクションが頻繁に実行されています](../profiling/da0012-significant-amount-of-reflection.md) | InvokeMember および GetMember などの System.Reflection メソッドまたは MemberInvoke などの Type メソッドへの呼び出しが、プロファイリング データの大きな割合を占めています。 可能な場合は、事前バインディングを使用するこれらのメソッドを、依存アセンブリのメソッドに置き換えることを検討してください。 |

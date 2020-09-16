@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183808"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599589"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルを指定します (C#、C++、Visual Basic、F#)
 
@@ -46,7 +46,7 @@ Visual Studio IDE で標準の [デバッグ] ビルド構成を使用してプ�
 
 - [Understand symbol files and Visual Studio symbol settings (シンボル ファイルと Visual Studio のシンボル設定について)](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with? (ビルドに使用したバイナリ ファイルと完全に一致させるために、Visual Studio でデバッガー シンボル ファイルが必要な理由)](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with? (ビルドに使用したバイナリ ファイルと完全に一致させるために、Visual Studio でデバッガー シンボル ファイルが必要な理由)](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>シンボル ファイルのしくみ
 
@@ -57,7 +57,7 @@ Visual Studio IDE で標準の [デバッグ] ビルド構成を使用してプ�
 
 シンボル ファイルには、ソース ファイルの場所と (必要に応じて) ソース ファイルの取得先のサーバーも示されます。
 
-デバッガーは、アプリがビルドされたときに作成された *.pdb* ファイル (つまり、元の *.pdb* ファイルまたはコピー) と完全に一致する *.pdb* ファイルのみを読み込みます。 この[正確な複製](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)が必要とされるのは、コード自体が変更されていない場合でも、アプリのレイアウトが変更される可能性があるためです。
+デバッガーは、アプリがビルドされたときに作成された *.pdb* ファイル (つまり、元の *.pdb* ファイルまたはコピー) と完全に一致する *.pdb* ファイルのみを読み込みます。 この[正確な複製](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)が必要とされるのは、コード自体が変更されていない場合でも、アプリのレイアウトが変更される可能性があるためです。
 
 > [!TIP]
 > プロジェクト ソース コードの外部にあるコード (プロジェクトから呼び出す Windows コードやサード パーティのコードなど) をデバッグするには、外部コードの *.pdb* ファイル (および必要に応じてソース ファイル) の場所を指定する必要があり、これらはアプリのビルドと完全に一致する必要があります。

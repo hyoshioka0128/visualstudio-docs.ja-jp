@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350499"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600300"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>例外ヘルパーを使用して例外を調べる 
 
@@ -50,7 +50,7 @@ Visual Studio 2017 以降 (.Net と C/C++ コードの両方)、`NullReferenceEx
 例外ヘルパーの **[例外設定]** セクションでは、現在の種類の例外がスローされたときに中断するようにデバッガーを構成できます。 スローされた例外でデバッガーが一時停止した場合、チェック ボックスを使用して、その例外の種類が将来スローされたときの中断を無効にすることができます。 この特定のモジュールでこの特定の例外がスローされたときに中断しないようにする場合は、 **[例外設定]** ウィンドウの **[次からスローされた場合を除く:]** でモジュール名のチェック ボックスをオンにします。 
 
 ## <a name="inspect-inner-exceptions"></a>内部例外を調べる 
-例外に内部例外 ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception)) が含まれる場合は、例外ヘルパーでそれらを表示できます。 複数の例外が存在する場合は、呼び出し履歴の上に表示される左右の矢印を使用して、それらの間を移動できます。
+例外に内部例外 ([InnerException](/dotnet/api/system.exception.innerexception)) が含まれる場合は、例外ヘルパーでそれらを表示できます。 複数の例外が存在する場合は、呼び出し履歴の上に表示される左右の矢印を使用して、それらの間を移動できます。
 
 ![例外ヘルパーと内部例外](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ Visual Studio 2017 以降 (.Net と C/C++ コードの両方)、`NullReferenceEx
 ![例外ヘルパーと再スローされた例外](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>デバッグ セッションを Live Share と共有する
-**[Live Share セッションを開始]** リンクを使用して、例外ヘルパーから [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) セッションを開始できます。Live Share セッションに参加しているすべてのユーザーは、他のすべてのデバッグ情報と共に例外ヘルパーを見ることができます。
+**[Live Share セッションを開始]** リンクを使用して、例外ヘルパーから [Live Share](/visualstudio/liveshare/) セッションを開始できます。Live Share セッションに参加しているすべてのユーザーは、他のすべてのデバッグ情報と共に例外ヘルパーを見ることができます。
