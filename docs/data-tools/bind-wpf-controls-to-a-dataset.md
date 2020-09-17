@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2344c9331b8fe253077b6bbc8c3cdba01ea9731
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282918"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713491"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -42,7 +42,7 @@ ms.locfileid: "85282918"
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
-- Visual Studio
+- Visual Studio
 
 - AdventureWorks Light (AdventureWorksLT) サンプルデータベースがアタッチされている SQL Server または SQL Server Express の実行中のインスタンスへのアクセス。 AdventureWorksLT データベースは、 [CodePlex アーカイブ](https://archive.codeplex.com/?p=awlt2008dbscript)からダウンロードできます。
 
@@ -52,7 +52,7 @@ ms.locfileid: "85282918"
 
 - WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」をご覧ください。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 新しい WPF プロジェクトを作成して、製品レコードを表示します。
 
@@ -149,8 +149,8 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
        <RowDefinition Height="75" />
        <RowDefinition Height="625" />
    </Grid.RowDefinitions>
-   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75">&lt;</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">&gt;</Button>
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
@@ -250,7 +250,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 5. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 このチュートリアルを完了すると、次の関連タスクを試すことができます。
 
@@ -261,5 +261,5 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でデータに WPF コントロールをバインドする](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
 - [データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)

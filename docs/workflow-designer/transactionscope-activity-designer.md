@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114823"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713478"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope アクティビティ デザイナー
 
@@ -33,13 +33,13 @@ ms.locfileid: "76114823"
 
 次の表に、<xref:System.Activities.Statements.TransactionScope> のプロパティと、デザイナーでのその使用方法を示します。 <xref:System.Activities.Activity.DisplayName%2A>プロパティと <xref:System.Activities.Statements.TransactionScope.Body%2A> プロパティはワークフローデザイナー画面で編集できます。 ただし、他のプロパティは、プロパティ グリッドで編集する必要があります。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.TransactionScope> アクティビティの省略可能な表示名。 既定値は、TransactionScope です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|○|単一のトランザクションで実行するアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.TransactionScope.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**TransactionScope**アクティビティデザイナーの [ **Body** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|○|この <xref:System.Transactions.IsolationLevel> の <xref:System.Activities.Statements.TransactionScope> を指定します。|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|×|トランザクションが完了するまでの時間間隔を "00:00:00" (時:分:秒) という形式で指定します。 既定値は 1 分 (00:01:00) です。|
-|[AbortInstanceOnTransactionFailure を処理します。](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|○|トランザクションが中止した場合にワークフローを中止する必要があるかどうかを示す値を指定します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> アクティビティの省略可能な表示名。 既定値は、TransactionScope です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|単一のトランザクションで実行するアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.TransactionScope.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**TransactionScope**アクティビティデザイナーの [ **Body** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|この <xref:System.Transactions.IsolationLevel> の <xref:System.Activities.Statements.TransactionScope> を指定します。|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|トランザクションが完了するまでの時間間隔を "00:00:00" (時:分:秒) という形式で指定します。 既定値は 1 分 (00:01:00) です。|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|トランザクションが中止した場合にワークフローを中止する必要があるかどうかを示す値を指定します。|
 
 ## <a name="see-also"></a>関連項目
 
