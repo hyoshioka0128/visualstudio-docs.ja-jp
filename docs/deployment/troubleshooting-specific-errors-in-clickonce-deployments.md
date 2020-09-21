@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 配置における特定のエラーのトラブルシューティング |Microsoft Docs
+title: エラーのトラブルシューティング (ClickOnce 配置)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235161"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809454"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 この記事では、アプリケーションを展開するときに発生する可能性がある一般的なエラー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] と、それぞれの問題を解決するための手順を示します。
@@ -136,7 +137,7 @@ ms.locfileid: "87235161"
 | ネットワーク経由でショートカットをアクティブ化することはできません。 | アプリケーションへのショートカットは [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、ローカルハードディスク上でのみ開始できます。 リモートサーバー上のショートカットファイルを指す URL を開くことによって開始することはできません。 |
 | アプリケーションが大きすぎて、部分信頼でオンラインで実行できません。 詳細については、アプリケーションベンダーまたはシステム管理者にお問い合わせください。 | 部分信頼で実行されるアプリケーションは、オンラインアプリケーションクォータの半分 (既定では 250 MB) より大きくすることはできません。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

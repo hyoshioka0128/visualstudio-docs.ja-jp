@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247791"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075419"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>.NET オブジェクト割り当てツールを使用してメモリ使用量を分析する
 
@@ -24,7 +24,7 @@ ms.locfileid: "88247791"
 
 ## <a name="setup"></a>セットアップ
 
-1. **Alt + F2** キーを押して Visual Studio にパフォーマンス プロファイラーを開きます。
+1. **Alt + F2** キーを押して Visual Studio でパフォーマンス プロファイラーを開きます。
 
 1. **[.NET オブジェクト割り当て追跡]** チェック ボックスをオンにします。
 

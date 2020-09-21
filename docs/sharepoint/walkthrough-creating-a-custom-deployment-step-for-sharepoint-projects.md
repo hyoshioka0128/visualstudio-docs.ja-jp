@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015901"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740020"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順の作成
   SharePoint プロジェクトを配置すると、Visual Studio は一連の配置手順を特定の順序で実行します。 Visual Studio には多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
@@ -190,7 +190,7 @@ ms.locfileid: "86015901"
 
 1. **ソリューションエクスプローラー**の**upgradedeploymentstep**プロジェクトで、 **source.extension.vsixmanifest**ファイルのショートカットメニューを開き、[**開く**] を選択します。
 
-     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
+     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))」を参照してください。
 
 2. [ **製品名** ] ボックスに、「 **SharePoint プロジェクトのアップグレードの配置手順**」と入力します。
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015901"
 10. [種類] ボックスの一覧で、 **「** **SharePoint. コマンド. v4**」と入力します。
 
     > [!NOTE]
-    > この要素は、Visual Studio 拡張機能に追加するカスタム拡張機能を指定します。 詳細については、「 [Asset 要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)」を参照してください。
+    > この要素は、Visual Studio 拡張機能に追加するカスタム拡張機能を指定します。 詳細については、「 [Asset 要素 (VSX Schema)](/previous-versions/dd393737(v=vs.110))」を参照してください。
 
 11. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234979"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90806734"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションの配置のトラブルシューティング
   このトピックでは、Office ソリューションを配置するときに発生する可能性がある一般的な問題を解決する方法について説明します。
@@ -121,11 +121,11 @@ ms.locfileid: "87234979"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Web から配置マニフェストを開いて ClickOnce ソリューションをインストールすることはできません
  ユーザーは、Web で配置マニフェストを開くことにより、Office ソリューションをインストールできます。 ただし、インターネットインフォメーションサービス (IIS) の一部のインストールでは、 *.vsto* ファイル名拡張子はブロックされます。 Office ソリューションの配置に使用する前に、IIS で MIME の種類を定義する必要があります。
 
- IIS 7 で MIME の種類を定義する方法の詳細については、「 [mime の種類を追加する (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx)」を参照してください。
+ IIS 7 で MIME の種類を定義する方法の詳細については、「 [mime の種類を追加する (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10))」を参照してください。
 
  拡張子を **.vsto** に、MIME の種類を " **application/x-ms-vsto**" に設定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)

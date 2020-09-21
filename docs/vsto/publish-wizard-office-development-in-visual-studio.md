@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558174"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810981"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>発行ウィザード (Visual Studio での Office 開発)
   **発行ウィザード**を使用して、ソリューションファイルを指定した場所にコピーし、マニフェストファイルを作成して、セットアッププログラムを作成します。
@@ -49,7 +49,7 @@ ms.locfileid: "77558174"
 > ターゲットコンピューターで Windows Vista が実行されている場合は、さらに考慮すべき点があります。 ローカル発行オプションを使用するには、Windows Vista コンピューターの管理者である必要があります。 また、IIS がインストールされているかどうかに関係なく、既定の場所は常に*発行 \\ *ディレクトリになります。
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>エンドユーザーのコンピューターの既定のインストールパスは何ですか。
- インストールパスは省略可能です。 必要に応じて、後でインストールパスを設定できます。 詳細については、「 [方法: Office ソリューションのインストールパスを変更する](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)」を参照してください。
+ インストールパスは省略可能です。 必要に応じて、後でインストールパスを設定できます。 詳細については、「 [方法: Office ソリューションのインストールパスを変更する](/previous-versions/bb608626(v=vs.110))」を参照してください。
 
  インストールパスは、エンドユーザーがカスタマイズをインストールするディレクトリです。 このディレクトリは、ソリューションで更新プログラムを確認するために使用するパスでもあります。 前のページの [**このアプリケーションを公開する場所を指定**してください] ボックスに入力したパスと同じパスでない限り、**発行ウィザード**ではこの場所にソリューションが配置されません。
 
@@ -61,7 +61,7 @@ ms.locfileid: "77558174"
 
  Visual Studio は CD または DVD に書き込みません。 出力を CD または DVD に手動でコピーする必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce を使用して Office ソリューションを配置する](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [[発行] ページ、プロジェクトデザイナー &#40;Visual Studio での Office 開発&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)

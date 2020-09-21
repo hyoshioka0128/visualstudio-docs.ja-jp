@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015825"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740059"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>チュートリアル: ビジネスデータを使用した SharePoint での外部リストの作成
 
@@ -80,7 +80,7 @@ Business Data Connectivity (BDC) サービスを使用すると、SharePoint で
 
 2. SQL Server AdventureWorks サンプルデータベースへの接続を追加します。
 
-     詳細については、「 [接続の追加/変更 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)」を参照してください。
+     詳細については、「 [接続の追加/変更 (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140))」を参照してください。
 
 3. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
@@ -237,12 +237,12 @@ BDC サービスが連絡先を一覧に表示できるようにするには、F
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
 
 プロジェクトを実行すると、SharePoint サイトが開き、Visual Studio によってモデルがビジネスデータ接続サービスに追加されます。 連絡先エンティティを参照する外部リストを SharePoint に作成します。 AdventureWorks データベースの連絡先のデータが一覧に表示されます。
 
 > [!NOTE]
-> ソリューションをデバッグする前に、SharePoint でセキュリティ設定を変更することが必要になる場合があります。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+> ソリューションをデバッグする前に、SharePoint でセキュリティ設定を変更することが必要になる場合があります。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 1. **F5** キーを押します。
 

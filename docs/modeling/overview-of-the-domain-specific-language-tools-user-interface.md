@@ -13,12 +13,12 @@ manager: jillfra
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100723"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808104"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>ドメイン固有言語ツールのユーザー インターフェイスの概要
 Visual Studio でドメイン固有言語ツール (DSL ツール) ソリューションを初めて開いたとき、ユーザー インターフェイスは、次の図のようになります。
@@ -51,5 +51,5 @@ Visual Studio でドメイン固有言語ツール (DSL ツール) ソリュー�
 ## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの概要](../modeling/overview-of-domain-specific-language-tools.md)
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))
 - [ドメイン固有言語のカスタマイズおよび拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)

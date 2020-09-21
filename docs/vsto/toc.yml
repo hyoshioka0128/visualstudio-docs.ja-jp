@@ -51,7 +51,7 @@
                 - name: Excel プロジェクトおよび Word プロジェクトの更新
                   href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Office プロジェクトのリボンのカスタマイズの更新
-                  href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
+                  href: ./update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md
                 - name: Outlook プロジェクトのフォーム領域の更新
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Visual Studio の Office ソリューションのアーキテクチャ

@@ -1,5 +1,6 @@
 ---
-title: 'チュートリアル: ClickOnce アプリケーションを手動で配置する |Microsoft Docs'
+title: ClickOnce アプリを手動でデプロイする
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249974"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809480"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で配置する
 Visual Studio を使用してアプリケーションを配置できない場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] または、信頼されたアプリケーションの配置などの高度な配置機能を使用する必要がある場合は、 *Mage.exe* コマンドラインツールを使用してマニフェストを作成する必要があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 このチュートリアル [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、コマンドラインバージョン (*Mage.exe*) またはマニフェスト生成および編集ツールのグラフィカルバージョン (*MageUI.exe*) のいずれかを使用して、展開を作成する方法について説明します。
@@ -192,7 +193,7 @@ Visual Studio を使用してアプリケーションを配置できない場合
 ## <a name="next-steps"></a>次のステップ
  新しいバージョンのアプリケーションを展開する必要がある場合は、新しいバージョン (たとえば、1.0.0.1) の後にという名前の新しいディレクトリを作成し、新しいディレクトリに新しいアプリケーションファイルをコピーします。 次に、前の手順に従って、新しいアプリケーションマニフェストを作成して署名し、配置マニフェストを更新して署名する必要があります。 *Mage.exe*との呼び出しの両方で同じ上位バージョンを指定するように注意し `-New` てください。一番左の整数が `-Update` 最も重要なのは、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上位バージョンの更新のみです。 *MageUI.exe*を使用した場合は、配置マニフェストを開き、[**アプリケーション参照**] タブを選択し、[**マニフェストの選択**] ボタンをクリックして、更新されたアプリケーションマニフェストを選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

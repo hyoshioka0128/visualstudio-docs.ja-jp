@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328995"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810994"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>[発行] ページ (プロジェクトデザイナー) (Visual Studio での Office 開発)
   **プロジェクト デザイナー** の **[発行]** ページは、配置用のプロパティを構成する場合に使用します。
@@ -29,7 +29,7 @@ ms.locfileid: "67328995"
  このページにアクセスするには、 **ソリューションエクスプローラー**でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ *Projectname*の **プロパティ**] を選択します。 **[発行]** ページが表示されない場合は、 **[発行]** タブをクリックします。
 
 > [!NOTE]
-> **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「 [方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)」を参照してください。
+> **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「 [方法: ClickOnce を使用して Office ソリューションを発行する](/previous-versions/bb386095(v=vs.110))」を参照してください。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **発行フォルダーの場所 (web サイト、ftp サーバー、またはファイルパス)** 必須。
@@ -50,7 +50,7 @@ ms.locfileid: "67328995"
 
  CD オプションの場合のように、インストール ファイルがドキュメントまたはセットアップ プログラムを基準とする相対的な場所に存在する場合は、このボックスを空白のままにします。
 
- この値は、管理者が後で割り当てることができます。 詳細については、「 [方法: Office ソリューションのインストールパスを変更する](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)」を参照してください。
+ この値は、管理者が後で割り当てることができます。 詳細については、「 [方法: Office ソリューションのインストールパスを変更する](/previous-versions/bb608626(v=vs.110))」を参照してください。
 
  **前提条件** 必須コンポーネントは、セットアッププログラムに含めることも、インストール時に必要に応じてダウンロードすることもできます。
 
@@ -98,8 +98,8 @@ ms.locfileid: "67328995"
 
   **今すぐ発行** 現在の設定を使用してアプリケーションを発行します。 **[発行ウィザード]** の **[完了]** ボタンと同じです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [ClickOnce を使用して Office ソリューションを配置する](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Office ソリューションの配置の前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Office ソリューションの配置の前提条件](/previous-versions/bb608617(v=vs.110))

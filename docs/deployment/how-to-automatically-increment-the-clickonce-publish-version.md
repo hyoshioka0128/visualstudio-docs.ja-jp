@@ -1,5 +1,6 @@
 ---
-title: '方法: ClickOnce の発行バージョンを自動的にインクリメントする |Microsoft Docs'
+title: ClickOnce 発行バージョンの自動インクリメント
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710f2d045af4da92116334e64efa5ce528563d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6267e75db2e2a23d01368cdaa822d835cb8b844
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382602"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809795"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>方法: ClickOnce の発行するバージョンを自動的にインクリメントする
 
@@ -41,7 +42,7 @@ ms.locfileid: "85382602"
 
 3. [ **発行バージョン** ] セクションで、[ **リリースごとにリビジョンを自動的にインクリメント** する] チェックボックスをオフにします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [方法: ClickOnce の発行バージョンを設定する](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

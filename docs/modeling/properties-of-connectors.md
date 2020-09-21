@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d2d3d747c128cfa2afbb63ae43289e0b50519b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532276"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810068"
 ---
 # <a name="properties-of-connectors"></a>コネクタのプロパティ
 コネクタは、生成されたデザイナーのドメインリレーションシップを表します。
@@ -25,7 +25,7 @@ ms.locfileid: "85532276"
 
 |プロパティ|説明|Default|
 |-|-|-|
-|色|このコネクタの色。|Black|
+|Color|このコネクタの色。|Black|
 |破線のスタイル|このコネクタの線の破線スタイル (実線、ダッシュ、ドット、ダッシュドット、ダッシュ Dotドット、またはカスタム)。|[実線]|
 |ソースエンドのスタイル|このコネクタのソースエンドのスタイル (Microsoft.visualstudio.modeling.diagrams.connectorarrowstyle.hollowarrow、EmptyArrow、Fil Arrow、Emptyarrow、Fil 菱形、または None)。|なし|
 |ターゲットエンドのスタイル|このコネクタのターゲットエンドのスタイル (Microsoft.visualstudio.modeling.diagrams.connectorarrowstyle.hollowarrow、EmptyArrow、Fil Arrow、Emptyarrow、Fil 菱形、または None)。|なし|
@@ -40,7 +40,7 @@ ms.locfileid: "85532276"
 |名前|このコネクタの名前。|現在の名前|
 |名前空間|このコネクタに関連付けられている名前空間。|現在の名前空間|
 |ツールヒントの種類|ツールヒントがどのように定義されているか (fixed、variable、none)。 固定されている場合は、 `Fixed Tooltip Text` プロパティの値がツールヒントとして使用されます。変数の場合は、ツールヒントがカスタムコードで定義されます。|\<none>|
-|Notes|このコネクタに関連付けられている非公式のメモ。|\<none>|
+|ノート|このコネクタに関連付けられている非公式のメモ。|\<none>|
 |ルーティングのスタイル|コネクタのルーティングに使用されるスタイルです。 コネクタは、必要に応じて直角になるようにします。 `Rectilinear` コネクタは無効になり `Straight` ます。|直角|
 |プロパティとして公開された色<br /><br /> プロパティとして公開される破線のスタイル<br /><br /> プロパティとして公開された太さ<br /><br /> テキストの色を公開します|の場合 `True` 、ユーザーは図形の指定されたプロパティを設定できます。 これを設定するには、図形定義を右クリックし、[ **公開の追加**] をクリックします。|×|
 |説明|生成されたデザイナーを文書化するために使用します。|\<none>|
@@ -48,6 +48,6 @@ ms.locfileid: "85532276"
 |固定ツールヒントのテキスト|固定のツールヒントに使用されるテキスト。|\<none>|
 |ヘルプ キーワード|この要素の F1 ヘルプのインデックスを作成するために使用されるキーワード。|\<none>|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))
