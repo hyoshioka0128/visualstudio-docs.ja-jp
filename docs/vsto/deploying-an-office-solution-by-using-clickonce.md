@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416563"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809350"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce を使用して Office ソリューションを配置する
   ClickOnce を使用する場合は、少しの手順で Office ソリューションを配置できます。 更新プログラムを発行する場合は、ソリューションはそれらを自動的に検出してインストールします。 ただし、ClickOnce を使用する場合は、コンピューターのユーザーごとに、ソリューションを個別にインストールする必要があります。 そのため、複数のユーザーが同じコンピューターでソリューションを実行する場合は、Windows インストーラー (*.msi*) の使用を検討する必要があります。
@@ -358,7 +358,7 @@ ms.locfileid: "79416563"
 |エラー コード|定義|
 |----------------|----------------|
 |0|ソリューションが正常にインストールまたはアンインストールされたか、VSTOInstaller ヘルプが表示されました。|
-|-100|1つ以上のコマンドラインオプションが無効であるか、または複数回設定されました。 詳細については、「vstoinstaller/?」と入力してください。 または、「 [ClickOnce Office ソリューションのカスタムインストーラーを作成する](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)」を参照してください。|
+|-100|1つ以上のコマンドラインオプションが無効であるか、または複数回設定されました。 詳細については、「vstoinstaller/?」と入力してください。 または、「 [ClickOnce Office ソリューションのカスタムインストーラーを作成する](/previous-versions/bb772078(v=vs.110))」を参照してください。|
 |-101|1つ以上のコマンドラインオプションが無効です。 詳細については、"vstoinstaller /?" と入力してください。|
 |-200|配置マニフェストの URI が無効です。 詳細については、"vstoinstaller /?" と入力してください。|
 |-201|配置マニフェストが有効ではないため、ソリューションをインストールできませんでした。 「 [Office ソリューションの配置マニフェスト」を](../vsto/deployment-manifests-for-office-solutions.md)参照してください。|
@@ -456,11 +456,11 @@ ms.locfileid: "79416563"
 > [!NOTE]
 > ローカル データは、ソリューションの 1 つ前のバージョンについてのみ保存されます。 2つのバージョンをロールバックした場合、ローカルデータは保持されません。 ローカルデータの詳細については、「 [ClickOnce アプリケーションでローカルデータおよびリモートデータにアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)する」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [Office ソリューションの発行](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [方法: ClickOnce Office ソリューションをインストールする](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [方法: ClickOnce を使用してドキュメントレベルの Office ソリューションを SharePoint サーバーに発行する](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [ClickOnce office ソリューションのカスタムインストーラーを作成する](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [方法: ClickOnce を使用して Office ソリューションを発行する](/previous-versions/bb386095(v=vs.110))
+- [方法: ClickOnce Office ソリューションをインストールする](/previous-versions/bb608592(v=vs.110))
+- [方法: ClickOnce を使用してドキュメントレベルの Office ソリューションを SharePoint サーバーに発行する](/previous-versions/bb608595(v=vs.110))
+- [ClickOnce office ソリューションのカスタムインストーラーを作成する](/previous-versions/bb772078(v=vs.110))

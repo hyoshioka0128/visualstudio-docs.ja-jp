@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115367"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807847"
 ---
 # <a name="properties-of-swimlanes"></a>スイムレーンのプロパティ
 スイムレーンを図に追加できます。 スイムレーンは、図を垂直方向または水平方向の領域に分割します。 スイムレーン内に表示される他の図形を定義できます。 詳細については、「 [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。 これらのプロパティの使用方法の詳細については、「 [ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -25,7 +25,7 @@ ms.locfileid: "76115367"
 
 |プロパティ|説明|Default|
 |-|-|-|
-|本文の塗りつぶしの色|スイムレーンの本体の塗りつぶしの色。|White|
+|本文の塗りつぶしの色|スイムレーンの本体の塗りつぶしの色。|白|
 |ヘッダーの塗りつぶしの色|スイムレーンのヘッダーの塗りつぶしの色。|濃い灰色|
 |区切り記号の色|区切り線の色。|グレー灰色|
 |区切り線のスタイル|区切り線のスタイル (、、 `Solid` `Dash` 、、 `Dot` `DashDot` `DashDotDot` 、または `Custom` )。|`Dash`|
@@ -40,7 +40,7 @@ ms.locfileid: "76115367"
 |名前|このスイムレーンの名前。|現在の名前|
 |名前空間|このスイムレーンに関連する名前空間。|現在の名前空間|
 |ツールヒントの種類|ツールヒントの定義方法 ( `fixed` 、 `variable` 、または `none` )。 の場合、 `fixed` プロパティの値 `Fixed Tooltip Text` が使用されます。の場合 `variable` 、ツールヒントはカスタムコードで定義されます。|\<none>|
-|Notes|このスイムレーンに関連付けられている非公式のメモ。|\<none>|
+|ノート|このスイムレーンに関連付けられている非公式のメモ。|\<none>|
 |Alignment|水平方向または垂直方向の配置。|Vertical|
 |初期の高さ|このスイムレーンの初期の高さ (インチ単位)。 水平スイムレーンにのみ適用されます。|0|
 |初期の幅|このスイムレーンの初期の幅 (インチ単位)。 縦方向のスイムレーンにのみ適用されます。|0|
@@ -50,6 +50,6 @@ ms.locfileid: "76115367"
 |固定ツールヒントのテキスト|固定のツールヒントに使用されるテキスト。|\<none>|
 |ヘルプ キーワード|このスイムレーンの F1 ヘルプのインデックス作成に使用されるキーワードです。|\<none>|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

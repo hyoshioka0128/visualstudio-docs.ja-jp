@@ -1,29 +1,29 @@
 ---
-title: デザイン上の警告
+title: 設計規則
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
 helpviewer_keywords:
-- design warnings
-- managed code analysis warnings, design warnings
-- warnings, design
+- design rules
+- managed code analysis rules, design rules
+- rules, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f9a5ed6a7e9bab7031009d66bacf56a878fe41
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 1d626231bcfe298a225cc916c356290a94042992
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508562"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808666"
 ---
-# <a name="design-warnings"></a>デザインの警告
+# <a name="design-rules"></a>設計規則
 
-デザイン警告は、 [.NET Framework デザインガイドライン](/dotnet/standard/design-guidelines/)への準拠をサポートします。
+設計規則は、 [.NET Framework 設計ガイドライン](/dotnet/standard/design-guidelines/)への準拠をサポートします。
 
 ## <a name="in-this-section"></a>このセクションの内容
 

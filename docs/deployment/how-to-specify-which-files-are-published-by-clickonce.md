@@ -1,5 +1,6 @@
 ---
-title: '方法: ClickOnce で発行されるファイルを指定する |Microsoft Docs'
+title: 発行するファイルを指定する (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ab6d724b40168f84227edb6ccfafc6245c30e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381783"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809493"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>方法: ClickOnce で発行されるファイルを指定する
 アプリケーションを発行すると [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、プロジェクト内のコード以外のすべてのファイルがアプリケーションと共に配置されます。 場合によっては、特定のファイルを公開する必要がない場合や、条件に基づいて特定のファイルをインストールする場合があります。 Visual Studio には、ファイルを除外したり、ファイルをデータファイルまたは前提条件としてマークしたり、条件付きインストール用のファイルのグループを作成したりする機能が用意されています。
@@ -113,6 +114,6 @@ ms.locfileid: "85381783"
     > [!NOTE]
     > アプリケーションを実行するために必要なファイルの **ダウンロードグループ** を変更することはできません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

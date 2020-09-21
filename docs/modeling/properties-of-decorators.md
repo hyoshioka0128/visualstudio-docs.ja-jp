@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14965f829530ba5a2f6a7797291e9d1cfab0ae2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566138"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810055"
 ---
 # <a name="properties-of-decorators"></a>デコレーターのプロパティ
 デコレーターは、図の図形またはコネクタに表示されるアイコン、テキスト、または展開/折りたたみの山かっこです。 次の表は、3種類のデコレータのプロパティを示しています。 一部のプロパティは、図形デコレーターまたはコネクタデコレーターにのみ表示されます。
@@ -27,7 +27,7 @@ ms.locfileid: "75566138"
 |-|-|-|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|折りたたみデコレータの展開|
 |名前|デコレータの名前。|ExpandCollapseDecorator|
-|Notes|このデコレータに関連付けられている非公式のメモ。|\<none>|
+|ノート|このデコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
@@ -41,7 +41,7 @@ ms.locfileid: "75566138"
 |DefaultIcon|表示するアイコンまたはイメージファイルのパス。|\<none>|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|アイコンデコレータ|
 |名前|デコレータの名前。|IconDecorator|
-|Notes|デコレータに関連付けられている非公式のメモ。|\<none>|
+|ノート|デコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
@@ -57,13 +57,13 @@ ms.locfileid: "75566138"
 |フォントサイズ|デコレータに表示されるテキストのフォントサイズ。|8|
 |FontStyle|デコレータに表示されるテキストのフォントスタイル。|Regular|
 |名前|デコレータの名前。|ラベル|
-|Notes|デコレータに関連付けられている非公式のメモ。|\<none>|
+|ノート|デコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
 |OffsetFromShape|形状からの、既定の位置を基準とする、インチ単位の、デコレータのオフセット。 (コネクタの場合のみ)。|0|
 |[位置]|デコレータの既定の位置。|Microsoft.visualstudio.modeling.diagrams.connectordecoratorposition.targetbottom|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

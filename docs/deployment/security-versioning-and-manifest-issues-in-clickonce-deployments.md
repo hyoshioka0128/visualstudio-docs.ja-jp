@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 配置でのセキュリティ、バージョン管理、マニフェストの問題
+title: セキュリティ/バージョン管理/マニフェストに関する問題 (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745604"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811248"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 
@@ -94,7 +95,7 @@ ms.locfileid: "66745604"
 > [!NOTE]
 > マニフェストを更新するたびに、再度署名する必要もあります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 [ClickOnce 配置](../deployment/troubleshooting-clickonce-deployments.md) 
  のトラブルシューティング[ClickOnce アプリケーション](../deployment/securing-clickonce-applications.md) 

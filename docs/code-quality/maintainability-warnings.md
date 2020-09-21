@@ -1,29 +1,29 @@
 ---
-title: 保守性に関する警告
+title: 保守容易性の規則
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509901"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808585"
 ---
-# <a name="maintainability-warnings"></a>保守性に関する警告
+# <a name="maintainability-rules"></a>保守容易性の規則
 
-保守容易性の警告により、ライブラリとアプリケーションのメンテナンスがサポートされます。
+保守容易性の規則により、ライブラリとアプリケーションのメンテナンスがサポートされます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -37,6 +37,6 @@ ms.locfileid: "89509901"
 | [CA1508:使用されない条件付きコードを回避する](../code-quality/ca1508.md) | メソッドには、常にまたは実行時に評価される条件付きコードがあり `true` `false` ます。 これにより、条件の分岐でコードが停止し `false` ます。 |
 | [CA1509: コード メトリック構成ファイルのエントリが無効です](../code-quality/ca1509.md) | [CA1501](ca1501.md)、 [CA1502](ca1502.md)、 [CA1505](ca1505.md) 、 [CA1506](ca1506.md)などのコードメトリックス規則には、無効なエントリを持つという名前の構成ファイルが指定されてい `CodeMetricsConfig.txt` ます。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [マネージコードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)

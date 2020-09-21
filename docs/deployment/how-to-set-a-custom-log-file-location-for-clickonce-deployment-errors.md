@@ -1,5 +1,6 @@
 ---
-title: ClickOnce 配置エラー用にカスタムログファイルの場所を設定する
+title: カスタムログファイルの場所の設定 (ClickOnce 配置エラー)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b5cf73a685eb68e389e6531022200acbefbfd2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382173"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809743"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>方法: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] すべての配置のアクティブ化ログファイルを保持します。 これらのログには、展開のインストールと初期化に関連するエラーが記録さ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] れます。 既定では、は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] デプロイのアクティブ化ごとに1つのログファイルを作成します。 これらのログファイルは、Temporary Internet Files フォルダーに格納されます。 アクティブ化エラーが発生すると、展開のログファイルがユーザーに表示され、ユーザーは結果のエラーダイアログボックスで [ **詳細** ] をクリックします。
@@ -46,5 +47,5 @@ ms.locfileid: "85382173"
 
      この場所は、ユーザーが書き込みアクセス権を持っているディレクトリに存在する必要があります。 たとえば、Windows Vista では、次のフォルダー構造を作成し、 `LogFilePath` を*C:\Users \\ \<username> \Documents\Logs\ClickOnce\installation.log*に設定します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)

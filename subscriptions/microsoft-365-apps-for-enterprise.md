@@ -28,7 +28,7 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 1. [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) で Visual Studio サブスクリプションにサインインします。
 1. [Microsoft 365 Apps for enterprise] タイルを見つけ、 **[アクティブにする]** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![[Microsoft 365 Apps for enterprise] タイル](_img/microsoft-365-apps-for-enterprise/tile-activate.png ""アクティブにする" を選択し、サブスクリプションを開始します。")
+   > ![Microsoft 365 Apps for enterprise タイル](_img/microsoft-365-apps-for-enterprise/tile-activate.png "'アクティブにする' を選択し、サブスクリプションを開始します。")
 
 1. [Welcome, let's get to know you]\(ようこそ。情報を入力してください\) ダイアログで、求められた個人の連絡先情報を入力し、 **[次へ]** を選択します。
    > [!div class="mx-imgBorder"]

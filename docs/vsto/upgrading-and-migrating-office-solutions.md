@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e421d6e4ee94d9974c0a0583db1fb495c72593e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416537"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808790"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office ソリューションのアップグレードと移行
   旧バージョンの Visual Studio で作成された Microsoft Office プロジェクトがある場合、現在のバーションの Visual Studio で使用するには、そのプロジェクトをアップグレードする必要があります。 Microsoft Office プロジェクトをアップグレードするには、Microsoft Office 開発ツールが含まれているバージョンの Visual Studio でそれを開きます。 Microsoft Office 開発者ツールを含む Visual Studio のバージョンの詳細については、「 [Office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」を参照してください。
@@ -83,7 +83,7 @@ ms.locfileid: "79416537"
 
  ClickOnce を使用して VSTO アドインを配置する場合には、セットアップ プロジェクトまたは InstallShield Limited Edition プロジェクトを完全に削除できます。 ClickOnce を使用した VSTO アドインの配置の詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
-- [方法: Office ソリューションをアップグレードする](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+## <a name="see-also"></a>こちらもご覧ください
+- [方法: Office ソリューションをアップグレードする](/previous-versions/4bez6837(v=vs.140))
 - [Office ソリューションを .NET Framework 4 以降に移行する](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [[プロジェクトのアップグレード] ([オプション] ダイアログボックス)](../vsto/project-upgrade-options-dialog-box.md)

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544184"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810029"
 ---
 # <a name="properties-of-domain-classes"></a>ドメイン クラスのプロパティ
 ドメインクラスには、次の表に示すプロパティがあります。 ドメインクラスの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -29,11 +29,11 @@ ms.locfileid: "85544184"
 |基本クラス|このドメインクラスが派生している場合は、基本クラスの名前。|\<none>|
 |名前|このドメインクラスの名前。|現在の名前|
 |名前空間|このドメインクラスの名前空間。|現在の名前空間|
-|Notes|このドメインクラスに関連付けられている非公式のメモ。|\<none>|
+|ノート|このドメインクラスに関連付けられている非公式のメモ。|\<none>|
 |説明|生成されたデザイナーの UI を文書化するために使用される説明。|\<none>|
 |表示名|このドメインクラスの生成されたデザイナーに表示される名前。|\<none>|
 |ヘルプ キーワード|このドメインクラスの F1 ヘルプのインデックス作成に使用される省略可能なキーワードです。|\<none>|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

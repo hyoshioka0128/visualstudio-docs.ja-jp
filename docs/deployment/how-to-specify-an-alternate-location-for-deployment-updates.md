@@ -1,5 +1,6 @@
 ---
-title: '方法: 配置の更新用に別の場所を指定する |Microsoft Docs'
+title: 展開の更新の代替の場所を指定する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381913"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808751"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>方法: 配置の更新用に別の場所を指定する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]最初に CD またはファイル共有からアプリケーションをインストールできますが、アプリケーションでは Web 上の定期的な更新プログラムを確認する必要があります。 配置マニフェストで更新プログラムの別の場所を指定して、アプリケーションが最初のインストール後に Web から自身を更新できるようにすることができます。
@@ -60,7 +61,7 @@ ms.locfileid: "85381913"
 
  を使用するすべてのアプリケーションは、アプリケーション [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `<deploymentProvider>` マニフェストで必要なアクセス許可を明示的に宣言する必要があります。これにより、アプリケーションが異なるコンピューター上で異なる信頼レベルを受け取ることはありません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)

@@ -505,7 +505,7 @@
         - name: コード スタイル
           items:
             - name: コードのスタイル設定
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: コード スタイルに関する EditorConfig ファイルの使用
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md

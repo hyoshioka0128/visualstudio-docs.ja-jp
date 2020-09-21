@@ -12,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a9fc3c2d9c7f3f30f035eed036d2a9fb63d667
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d05b82a74fba4273838d378bc52822653bb6bfa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520849"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811176"
 ---
 # <a name="properties-of-image-shapes"></a>イメージ シェイプのプロパティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "85520849"
 
 |プロパティ|説明|Default|
 |-|-|-|
-|[塗りつぶしの色]|この図形の塗りつぶしの色。|White|
+|[塗りつぶしの色]|この図形の塗りつぶしの色。|白|
 |塗りつぶしのグラデーションモード|この図形の塗りつぶしのグラデーションモード。|水平|
 |既定の接続ポイントがある|の場合 `True` 、図形は生成されたデザイナーで top、bottom、left、および right の各接続ポイントを使用します。|×|
 |輪郭の色|この図形の輪郭の色。|Black|
@@ -61,7 +61,7 @@ ms.locfileid: "85520849"
 |名前|この図形の名前。|現在の名前|
 |名前空間|この図形に関連付けられている名前空間。|現在の名前空間|
 |ツールヒントの種類|ツールヒントが定義されている場所 (fixed、variable、none)。 固定されている場合は、 `Fixed Tooltip Text` プロパティの値がツールヒントとして使用されます。変数の場合は、ツールヒントがカスタムコードで定義されます。|なし|
-|Notes|この図形に関連付けられている非公式のメモ。|\<none>|
+|ノート|この図形に関連付けられている非公式のメモ。|\<none>|
 |初期の高さ|この図形の初期の高さ (インチ単位)。|1|
 |初期の幅|この図形の初期の幅 (インチ単位)。|1.5|
 |プロパティとして塗りつぶされた塗りつぶしの色<br /><br /> 露出塗りつぶしのグラデーションモード<br /><br /> プロパティとして公開されたアウトラインの色<br /><br /> プロパティとしてアウトラインの破線のスタイルを公開<br /><br /> プロパティとしてアウトラインの太さを公開<br /><br /> テキストの色を公開します|の場合 `True` 、ユーザーは図形の指定されたプロパティを設定できます。 これを設定するには、図形定義を右クリックし、[ **公開の追加**] をクリックします。|×|
@@ -71,6 +71,6 @@ ms.locfileid: "85520849"
 |ヘルプ キーワード|この要素の F1 ヘルプのインデックスを作成するために使用されるキーワード。|\<none>|
 |Image|この図形に使用されるイメージファイルのパス。|\<none>|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

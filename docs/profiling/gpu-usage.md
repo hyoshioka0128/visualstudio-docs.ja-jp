@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279882"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074970"
 ---
 # <a name="gpu-usage"></a>GPU 使用率
 
-Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU 使用率ツールを使用すると、Direct3D アプリのハードウェア使用率の概要を適切に把握できます。 アプリのパフォーマンスが CPU バインドまたは GPU バインドのどちらであるかを判断し、プラットフォームのハードウェアをより効率的に使用する方法について分析情報を得ることができます。 GPU 使用率では、Direct3D 12、Direct3D 11、および Direct3D 10 を使用するアプリがサポートされます。 Direct2D や OpenGL などの他のグラフィック API はサポートされません。
+パフォーマンス プロファイラーに含まれる GPU 使用率ツールを使用すると、Direct3D アプリのハードウェア使用率の概要を適切に把握できます。 アプリのパフォーマンスが CPU バインドまたは GPU バインドのどちらであるかを判断し、プラットフォームのハードウェアをより効率的に使用する方法について分析情報を得ることができます。 GPU 使用率では、Direct3D 12、Direct3D 11、および Direct3D 10 を使用するアプリがサポートされます。 Direct2D や OpenGL などの他のグラフィック API はサポートされません。
 
 **[GPU 使用率レポート]** ウィンドウの外観を次に示します。
 
@@ -43,7 +43,7 @@ GPU 使用率ツールを開始するには:
 
 2. **[パフォーマンスと診断]** ハブで、 **[GPU 使用率]** の横にあるチェック ボックスをオンにします。 必要に応じて、調査するその他のツールの横のチェック ボックスをオンにします。 複数のパフォーマンスと診断ツールを同時に実行して、アプリのパフォーマンスをさらに多面的に把握することもできます。
 
-    ![[GPU 使用率] が選択されているパフォーマンスと診断ハブのスクリーンショット](media/gpuusageselected.png "GPU 使用率を選択")
+    ![[GPU 使用率] が選択されているパフォーマンス プロファイラーのスクリーンショット](media/gpuusageselected.png "GPU 使用率を選択")
 
    > [!NOTE]
    > すべてのパフォーマンスと診断ツールを同時に使用することはできません。

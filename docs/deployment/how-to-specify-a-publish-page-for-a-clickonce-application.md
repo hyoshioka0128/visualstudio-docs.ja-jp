@@ -1,5 +1,6 @@
 ---
-title: '方法: ClickOnce アプリケーションの発行ページを指定する |Microsoft Docs'
+title: '[発行] ページの指定 (ClickOnce アプリ)'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf7178a6b5456d048421533b8497682d69c2ee0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f9853f6e15cb6d960e02491539f031bc1c44a1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381965"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808777"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの発行ページを指定する
 アプリケーションを発行すると [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、既定の Web ページ (publish.htm) が生成され、アプリケーションと共に発行されます。 このページには、アプリケーションの名前、アプリケーションをインストールするためのリンク、前提条件、およびを説明するヘルプトピックへのリンクが表示され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 プロジェクトの [ **発行ページ]** プロパティを使用すると、アプリケーションの Web ページの名前を指定でき [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
@@ -57,7 +58,7 @@ ms.locfileid: "85381965"
 
 5. [ **発行オプション** ] ダイアログボックスで、[ **発行後に配置 Web ページを開く** ] チェックボックスをオフにします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [方法: ClickOnce の既定の Web ページをカスタマイズする](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

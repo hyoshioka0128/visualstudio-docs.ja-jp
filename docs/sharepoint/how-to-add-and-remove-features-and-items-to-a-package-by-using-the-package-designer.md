@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd712eafb6061da89367c247475904886579d2de
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014610"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740085"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>方法: パッケージデザイナーを使用してパッケージに機能と項目を追加および削除する
   SharePoint ソリューションを作成すると、Visual Studio によって既定の SharePoint 機能がソリューションのパッケージに追加されます。 最終的な配置の前に、sharepoint プロジェクトの項目と機能を追加および削除して、SharePoint パッケージを変更することができます。
@@ -59,4 +59,4 @@ ms.locfileid: "86014610"
 ## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションパッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)
 - [方法: SharePoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [方法: パッケージを作成する](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
+- [方法: パッケージを作成する](/previous-versions/ee231585(v=vs.110))

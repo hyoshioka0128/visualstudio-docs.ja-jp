@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015079"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739929"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能の作成
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクト拡張機能を使用して、プロジェクトが追加、削除、または名前変更されたときなどのプロジェクトレベルのイベントに応答できます。 また、カスタムプロパティを追加したり、プロパティ値が変更したときに応答したりすることもできます。 プロジェクト項目の拡張機能とは異なり、プロジェクトの拡張機能を特定の SharePoint プロジェクトの種類に関連付けることはできません。 プロジェクト拡張機能を作成すると、で任意の種類の SharePoint プロジェクトが開かれたときに、拡張機能が読み込まれ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
@@ -128,7 +128,7 @@ ms.locfileid: "86015079"
 
 1. **ソリューションエクスプローラー**で、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[**開く**] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マニフェストデザイナーでファイルを開きます。 [ **メタデータ** ] タブに表示される情報は、 **拡張機能と更新プログラム**にも表示されます。 すべての VSIX パッケージには source.extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マニフェストデザイナーでファイルを開きます。 [ **メタデータ** ] タブに表示される情報は、 **拡張機能と更新プログラム**にも表示されます。 すべての VSIX パッケージには source.extension.vsixmanifest ファイルが必要です。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))」を参照してください。
 
 2. [ **製品名** ] ボックスに、「 **カスタムプロジェクトプロパティ**」と入力します。
 

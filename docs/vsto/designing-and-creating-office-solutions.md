@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189716"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808221"
 ---
 # <a name="design-and-create-office-solutions"></a>Office ソリューションの設計と作成
 
@@ -50,7 +50,7 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 
   ただし、プロジェクトで特定の機能を使用している場合は、Visual Studio によるターゲット フレームワークの変更後に、プロジェクトのコードの一部を変更することが必要になる場合があります。 ターゲットフレームワークを変更する方法の詳細については、「 [方法: .NET Framework のバージョンをターゲット](../ide/visual-studio-multi-targeting-overview.md)にする」を参照してください。 プロジェクトで行う必要がある変更の詳細については、「 [.NET Framework 4 以降への Office ソリューションの移行](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)」を参照してください。
 
-  Visual Studio によってプロジェクトのターゲット .NET Framework が変更され、ClickOnce を使用してソリューションを配置している場合は、[ **必須コンポーネント** ] ダイアログボックスでも、対応するバージョンの .NET Framework を選択してください。 プロジェクトのターゲット フレームワークを変更しても、この選択内容は自動的には変わりません。 詳細については、「 [方法: Office ソリューションを実行するためにエンドユーザーのコンピューターに必須コンポーネントをインストールする](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)」を参照してください。
+  Visual Studio によってプロジェクトのターゲット .NET Framework が変更され、ClickOnce を使用してソリューションを配置している場合は、[ **必須コンポーネント** ] ダイアログボックスでも、対応するバージョンの .NET Framework を選択してください。 プロジェクトのターゲット フレームワークを変更しても、この選択内容は自動的には変わりません。 詳細については、「 [方法: Office ソリューションを実行するためにエンドユーザーのコンピューターに必須コンポーネントをインストールする](/previous-versions/bb608608(v=vs.110))」を参照してください。
 
 > [!NOTE]
 > .NET Framework 3.5 以前を [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] を使用して作成した Office プロジェクトの対象にすることはできません。 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] を使用して作成した Office プロジェクトには、[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] で導入された機能が必要です。
@@ -58,7 +58,7 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>エンドユーザーのコンピューターで Office Pia が必要になるタイミングを理解する
  既定では、プロジェクト内の各 Office PIA 参照の [ **相互運用機能型の埋め込み** ] プロパティが既定値である [ **True**] に設定されている場合、エンドユーザーのコンピューターに office プライマリ相互運用機能アセンブリ (pia) をインストールする必要はありません。 この場合、プロジェクトをビルドすると、ソリューションが使用する PIA 型の型情報がソリューション アセンブリに埋め込まれます。 実行時に、埋め込まれた型情報が PIA の代わりに使用され、Office アプリケーションの COM ベースのオブジェクト モデルが呼び出されます。 Pia の型をソリューションに埋め込む方法の詳細については、「 [型の等価性と埋め込み相互運用機能型](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)」を参照してください。
 
- プロジェクト内の各 Office PIA 参照の [ **相互運用型の埋め込み** ] プロパティが [ **False**] に設定されている場合は、ソリューションを実行する各エンドユーザーコンピューターのグローバルアセンブリキャッシュに office pia をインストールし、登録する必要があります。 ほとんどの場合、PIA は既定で Office と共にインストールされますが、ソリューションの必須コンポーネントとして再頒布可能な PIA を含めることもできます。 詳細については、「 [Office ソリューションの配置の前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)」を参照してください。
+ プロジェクト内の各 Office PIA 参照の [ **相互運用型の埋め込み** ] プロパティが [ **False**] に設定されている場合は、ソリューションを実行する各エンドユーザーコンピューターのグローバルアセンブリキャッシュに office pia をインストールし、登録する必要があります。 ほとんどの場合、PIA は既定で Office と共にインストールされますが、ソリューションの必須コンポーネントとして再頒布可能な PIA を含めることもできます。 詳細については、「 [Office ソリューションの配置の前提条件](/previous-versions/bb608617(v=vs.110))」を参照してください。
 
 ### <a name="understand-the-client-profile"></a>クライアントプロファイルについて
  .NET Framework Client Profile は、完全な .NET Framework のサブセットです。 .NET Framework のクライアント機能のみを使用し、Office ソリューションをできる限り迅速に配置する必要がある場合は、.NET Framework Client Profile を対象にすることができます。 詳細については、「 [.NET Framework client profile](/dotnet/framework/deployment/client-profile)」を参照してください。
