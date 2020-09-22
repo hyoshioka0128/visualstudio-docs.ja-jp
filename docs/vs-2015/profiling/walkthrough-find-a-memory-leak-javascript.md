@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: メモリ リーク (JavaScript) の検出 |Microsoft Docs'
+title: 'チュートリアル: メモリ リークの検出 (JavaScript)| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841441"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リーク (JavaScript) の検出します。
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リークの検出 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  このチュートリアルでは、JavaScript メモリ アナライザーを使用し、単純なメモリの問題を特定して修復するプロセスについて説明します。 JavaScript メモリ アナライザーは、Visual Studio で、JavaScript を使用して Windows 用に開発された Windows ストア アプリに対して使用できます。 このシナリオでは、作成されるのと同じペースで破棄されるはずの DOM 要素がメモリに保持されてしまうアプリを作成します。  
   
@@ -34,7 +34,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>JavaScript メモリ アナライザーのテスト アプリの実行  
   
-1. Visual Studio で、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. Visual Studio で、**[ファイル]**、**[新規]**、**[プロジェクト]** の順に選択します。  
   
 2. 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、 **[Windows 8]** の順に選択してから、 **[ユニバーサル]** または **[Windows Phone アプリ]** を選択します。  
   
@@ -45,7 +45,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 4. **[名前]** ボックスに `JS_Mem_Tester`などの名前を指定し、 **[OK]** をクリックします。  
   
-5. **ソリューション エクスプローラー**で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
+5. **ソリューションエクスプローラー**で default.html を開き、タグの間に次のコードを貼り付け \<body> ます。  
   
     ```html  
     <div class="wrapper">  
@@ -203,7 +203,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 13. スナップショット #3 で、右側のリンク テキスト (赤い上矢印の横の +1 / -0 という値) を選択します。  
   
-     ![ヒープ オブジェクトの別のビューへのリンク](../profiling/media/js-mem-app-link.png "JS_Mem_App_Link")  
+     ![ヒープ オブジェクトの別のビューにリンク](../profiling/media/js-mem-app-link.png "JS_Mem_App_Link")  
   
      ヒープのオブジェクトの差分ビュー ( **[スナップショット #3 - スナップショット #2]**) が開き、既定で種類ビューが表示されます。 既定で、スナップショット #2 とスナップショット #3 の間でヒープに追加されたオブジェクトの一覧が表示されます。  
   
@@ -219,12 +219,12 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
     - このオブジェクトは、スナップショット #2 から残されたオブジェクトで、メモリ リークの可能性があるものを表しています。  
   
-      この時点でのアプリの知識が役立ちます。選択、 **Leak Memory**ボタンの DIV 要素を削除して、コードが正しく動作してないようですので、要素を追加する必要があります (つまり、メモリがリークする)。 次のセクションでは、その修正方法について説明します。  
+      ここでこのアプリについて少し説明しておくと、 **[Leak Memory] (メモリ リーク)** をクリックすると DIV 要素が削除され、要素の追加されます。したがって、このコードは正しく動作していないと思われます (つまり、メモリがリークする)。 次のセクションでは、その修正方法について説明します。  
   
     > [!TIP]
     > `Global` オブジェクトに対する相対的な位置を特定することによってオブジェクトを識別できる場合があります。 これを行うには、その識別子のショートカット メニューを開き、 **[ルート ビューで表示]** をクリックします。  
   
-## <a name="FixingMemory"></a> メモリの問題の修正  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> メモリの問題の修正  
   
 1. プロファイラーで公開されたデータを使用して、"項目" の ID と共に DOM 要素の削除を担当するコードを確認します。 これは `initialize()` 関数で発生します。  
   
@@ -286,5 +286,5 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
       ![修正されたメモリ リークを示すスナップショット](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>関連項目  
- [[JavaScript メモリ]](../profiling/javascript-memory.md)
+## <a name="see-also"></a>参照  
+ [JavaScript メモリ](../profiling/javascript-memory.md)

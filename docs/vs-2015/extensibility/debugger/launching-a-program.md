@@ -12,52 +12,52 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430205"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842243"
 ---
 # <a name="launching-a-program"></a>プログラムの起動
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プログラムをデバッグする必要のあるユーザーには、IDE からデバッガーを実行する f5 キーを押すことができます。 これには、一連の最終的に接続されている、または接続されているプログラムに次のようにさらにデバッグ エンジン (DE) への接続を IDE のイベントが開始されます。  
+プログラムをデバッグするユーザーは、F5 キーを押して、IDE からデバッガーを実行できます。 これにより、次のように、最終的に IDE がデバッグエンジン (DE) に接続されるか、またはアタッチされてからプログラムに接続されるようになる一連のイベントが開始されます。  
   
-1. IDE は、ソリューションのアクティブなプロジェクトのデバッグの設定を取得するプロジェクトのパッケージを最初に呼び出します。 設定には、開始ディレクトリ、環境変数、プログラムを実行するポートおよび指定されている場合に使用して、プログラムを作成する DE が含まれます。 これらの設定は、パッケージのデバッグに渡されます。  
+1. IDE では、最初にプロジェクトパッケージを呼び出して、ソリューションのアクティブなプロジェクトデバッグ設定を取得します。 設定には、開始ディレクトリ、環境変数、プログラムが実行されるポート、およびプログラムの作成に使用する DE (指定されている場合) が含まれます。 これらの設定は、デバッグパッケージに渡されます。  
   
-2. デが指定されている場合、DE、プログラムを起動するオペレーティング システムを呼び出します。 プログラムを起動するには、結果として、プログラムの実行時環境が読み込まれます。 たとえば、プログラムが MSIL で書き込まれた場合、プログラムを実行する共通言語ランタイムが呼び出されます。  
+2. DE が指定されている場合、DE はオペレーティングシステムを呼び出してプログラムを起動します。 プログラムを起動した結果として、プログラムの実行時環境が読み込まれます。 たとえば、プログラムが MSIL で記述されている場合、プログラムを実行するために共通言語ランタイムが呼び出されます。  
   
     - または -  
   
-    デが指定されていない場合、ポートは、プログラムでは、読み込まれる、プログラムの実行時環境を起動するオペレーティング システムを呼び出します。  
+    DE が指定されていない場合、ポートはオペレーティングシステムを呼び出してプログラムを起動します。これにより、プログラムの実行時環境が読み込まれます。  
   
    > [!NOTE]
-   > プログラムを起動する、DE を使用する場合は、同じ DE をプログラムにアタッチすることが高くなります。  
+   > DE を使用してプログラムを起動する場合、同じ DE がプログラムにアタッチされる可能性があります。  
   
-3. かどうか、DE またはポートは、プログラムを起動することによって、DE または実行時環境プログラムの説明、またはノードを作成し、プログラムを実行しているポートを通知します。  
+3. De またはポートがプログラムを起動したかどうかによって、DE またはランタイム環境によってプログラムの説明またはノードが作成され、プログラムが実行されていることがポートに通知されます。  
   
    > [!NOTE]
-   > プログラム ノードがデバッグ可能なプログラムの簡易表現であるために、実行時環境が、[プログラム] ノードを作成することをお勧めします。 作成し、[プログラム] ノードを登録するだけの全体の DE を読み込む必要はありません。 デが設計されている場合は、IDE が IDE のプロセスで実行するが実際に実行されている、ポートに、[プログラム] ノードを追加できるコンポーネントを使用する必要がありません。  
+   > 実行時環境では、プログラムノードを作成することをお勧めします。これは、プログラムノードは、デバッグ可能なプログラムの簡易表現であるためです。 プログラムノードを作成および登録するためだけに、DE 全体を読み込む必要はありません。 DE が IDE のプロセスで実行されるように設計されていても、実際には IDE が実行されていない場合は、プログラムノードをポートに追加できるコンポーネントが必要です。  
   
-   他のすべてのプログラムと共に、新しく作成されたプログラムは、関連、関係のないまたは起動、または、同じ IDE からデバッグ セッションを作成する接続を。  
+   新しく作成されたプログラムは、同じ IDE から起動した、または関連付けられていない他のプログラムと共に、デバッグセッションを作成します。  
   
-   プログラムでは、最初に押されたとき**F5**、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]のデバッグ パッケージがプロジェクト パッケージ (これに関連付けられた起動されるプログラムの種類) を呼び出しを通じて、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>メソッドで、順番に入力し、<xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2>ソリューションのアクティブなプロジェクトのデバッグ設定を含む構造体。 この構造体に戻されるデバッグ パッケージを呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A>メソッド。 パッケージのデバッグには、セッション デバッグ マネージャー (SDM) がデバッグし、関連するデバッグ エンジンをされているプログラムを起動し、インスタンス化します。  
+   プログラムによって、ユーザーが最初に **F5 キー**を押したときに、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のデバッグパッケージがメソッドを使用してプロジェクトパッケージ (起動されているプログラムの種類に関連付けられている) を呼び出します。その後 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 、 <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> ソリューションのアクティブなプロジェクトデバッグ設定を使用して構造体が入力されます。 この構造体は、メソッドの呼び出しによってデバッグパッケージに戻され <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> ます。 デバッグパッケージは、セッションデバッグマネージャー (SDM) をインスタンス化します。これにより、デバッグ中のプログラムと、関連付けられているデバッグエンジンが起動されます。  
   
-   使用して、プログラムの起動を DE の GUID では、SDM に渡される引数のいずれか。  
+   SDM に渡される引数の1つに、プログラムを起動するために使用される DE の GUID があります。  
   
-   DE GUID がない場合`GUID_NULL`、SDM は併置、DE を作成しを呼び出してその[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッドは、プログラムを起動します。 たとえば、プログラムは、ネイティブ コードで記述されて`IDebugEngineLaunch2::LaunchSuspended`が呼び出す可能性があります`CreateProcess`と`ResumeThread`(Win32 関数) をプログラムを実行します。  
+   DE の GUID がでない場合 `GUID_NULL` 、SDM は de を共存させ、その [launchsuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) メソッドを呼び出してプログラムを起動します。 たとえば、プログラムがネイティブコードで記述されている場合、 `IDebugEngineLaunch2::LaunchSuspended` は `CreateProcess` 、プログラムを `ResumeThread` 実行するためにと (Win32 関数) を呼び出すことがあります。  
   
-   プログラムを起動するには、結果として、プログラムの実行時環境が読み込まれます。 デまたはランタイム環境を作成し、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)プログラムを記述するインターフェイスし、このインターフェイスを渡します[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)にポートがあるプログラムを通知するには実行中です。  
+   プログラムを起動した結果として、プログラムの実行時環境が読み込まれます。 その後、DE または実行時の環境では、プログラムを記述する [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) インターフェイスを作成し、このインターフェイスを [addprogramnode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) に渡して、プログラムが実行されていることをポートに通知します。  
   
-   場合`GUID_NULL`ポートがプログラムを起動し、渡されます。 実行時環境を作成、プログラムが実行されている、`IDebugProgramNode2`プログラムを記述するインターフェイスし、それを`IDebugPortNotify2::AddProgramNode`します。 これには、プログラムを実行しているポートに通知します。 SDM は、デバッグ エンジンを実行中のプログラムにアタッチします。  
+   `GUID_NULL`が渡されると、ポートはプログラムを起動します。 プログラムが実行されると、実行時環境によって、 `IDebugProgramNode2` プログラムを記述してに渡すインターフェイスが作成され `IDebugPortNotify2::AddProgramNode` ます。 これにより、プログラムが実行されていることがポートに通知されます。 次に、SDM は、実行中のプログラムにデバッグエンジンをアタッチします。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ポートへの通知](../../extensibility/debugger/notifying-the-port.md)  
- プログラムが起動し、ポートの通知後の動作について説明します。  
+ プログラムが起動し、ポートに通知された後の動作について説明します。  
   
  [起動後のアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)  
- ドキュメント、デバッグ セッションが、DE をプログラムにアタッチする準備ができたときです。  
+ デバッグセッションがプログラムに DE をアタッチする準備ができたときにドキュメントを追加します。  
   
 ## <a name="related-sections"></a>関連項目  
  [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)  
- プログラムを起動して、式の評価などのさまざまなデバッグ タスクへのリンクが含まれています。
+ プログラムの起動や式の評価など、さまざまなデバッグタスクへのリンクが含まれています。

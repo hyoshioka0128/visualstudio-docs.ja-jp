@@ -12,46 +12,46 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f060f6c49fc02c75b3fe9f792133c9ee88c6d56c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441590"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841380"
 ---
 # <a name="command-availability"></a>コマンドの可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio のコンテキストでは、コマンドが使用可能な判断します。 コンテキストによっては、現在のプロジェクト、現在のエディター、読み込まれる Vspackage および統合開発環境 (IDE) の他の側面を変更できます。  
+Visual Studio のコンテキストによって、使用できるコマンドが決まります。 コンテキストは、現在のプロジェクト、現在のエディター、読み込まれている Vspackage、および統合開発環境 (IDE) のその他の側面によって変わります。  
   
-## <a name="command-contexts"></a>コマンドのコンテキスト  
- 次のコマンドのコンテキストは、最も一般的なです。  
+## <a name="command-contexts"></a>コマンドコンテキスト  
+ 最も一般的なコマンドコンテキストは次のとおりです。  
   
-- **IDE** IDE によって提供されるコマンドは常に利用します。  
+- **IDE** IDE によって提供されるコマンドは、常に使用できます。  
   
-- **VSPackage**コマンドを表示または非表示にするのにはときに Vspackage を定義できます。  
+- **VSPackage** Vspackage では、コマンドを表示するか非表示にするかを定義できます。  
   
-- **プロジェクト**プロジェクトのコマンドは、現在選択されているプロジェクトにのみ表示されます。  
+- **プロジェクト** プロジェクトコマンドは、現在選択されているプロジェクトに対してのみ表示されます。  
   
-- **エディター**一度にアクティブにできるエディターの 1 つだけです。 アクティブなエディターからのコマンドを利用できます。 エディターは、言語サービスと密接に連携します。 言語サービスでは、関連付けられているエディターのコンテキストでは、そのコマンドを処理する必要があります。  
+- **エディター** 一度にアクティブにできるエディターは1つだけです。 アクティブなエディターのコマンドを使用できます。 エディターは言語サービスと密接に連携します。 言語サービスは、関連付けられているエディターのコンテキストでコマンドを処理する必要があります。  
   
-- **ファイルの種類**エディターは、1 つ以上の種類のファイルを読み込むことができます。 使用可能なコマンドは、ファイルの種類に応じて変更できます。  
+- **ファイルの種類** エディターでは、複数の種類のファイルを読み込むことができます。 使用可能なコマンドは、ファイルの種類によって変わることがあります。  
   
-- **アクティブなウィンドウ**最後のアクティブなドキュメント ウィンドウは、キー バインドのユーザー インターフェイス (UI) のコンテキストを設定します。 ただし、内部 Web ブラウザーのようなキー バインドのテーブルのあるツール ウィンドウでは、UI コンテキストが設定もできます。 HTML エディターなどの複数タブ付きドキュメント ウィンドウ、各タブは別のコマンド コンテキストの GUID を持っています。 常にで使用できるツール ウィンドウは、登録後、**ビュー**メニュー。  
+- **アクティブウィンドウ** 最後のアクティブなドキュメントウィンドウは、キーバインドのユーザーインターフェイス (UI) コンテキストを設定します。 ただし、内部 Web ブラウザーに似たキーバインドテーブルを持つツールウィンドウでは、UI コンテキストを設定することもできます。 HTML エディターなどの複数タブのドキュメントウィンドウでは、すべてのタブに異なるコマンドコンテキスト GUID があります。 ツールウィンドウが登録されると、常に [ **表示** ] メニューから使用できるようになります。  
   
-- **UI コンテキスト**UI コンテキストがの値によって識別される、<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>クラス、たとえば、<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>ソリューションが構築されるときにまたは<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>デバッガーがアクティブな場合。 同時にアクティブにできる複数の UI コンテキストです。  
+- **UI コンテキスト** UI コンテキストは、クラスの値によって識別され <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> ます。たとえば、ソリューションがビルドされている場合や、 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> デバッガーがアクティブな場合などです。 複数の UI コンテキストを同時にアクティブにすることができます。  
   
-## <a name="defining-custom-context-guids"></a>カスタム コンテキストの Guid を定義します。  
- 適切なコマンドは、GUID が定義されていないコンテキスト場合、VSPackage のいずれかを定義し、アクティブまたはコマンドの表示を制御する必要に応じて非アクティブにすることをプログラムできます。  
+## <a name="defining-custom-context-guids"></a>定義 (カスタムコンテキスト Guid を)  
+ 適切なコマンドコンテキスト GUID がまだ定義されていない場合は、VSPackage で定義してから、コマンドの可視性を制御するために必要に応じてアクティブまたは非アクティブにするようにプログラムを設定できます。  
   
-1. 呼び出してコンテキストの Guid を登録、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド。  
+1. メソッドを呼び出してコンテキスト Guid を登録 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> します。  
   
-2. 呼び出してコンテキストの GUID の状態を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド。  
+2. メソッドを呼び出して、コンテキスト GUID の状態を取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> ます。  
   
-3. 呼び出してコンテキストの Guid のオンとオフ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド。  
+3. メソッドを呼び出して、コンテキスト Guid のオンとオフを切り替え <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> ます。  
   
     > [!CAUTION]
-    > 確認して、VSPackage 影響を及ぼさないように既存のコンテキストの Guid の他の Vspackage がそれらに依存している可能性があります。  
+    > VSPackage が既存のコンテキスト Guid に影響しないことを確認してください。他の Vspackage が依存している可能性があります。  
   
-## <a name="see-also"></a>関連項目  
- [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)   
+## <a name="see-also"></a>参照  
+ [選択コンテキストオブジェクト](../../extensibility/internals/selection-context-objects.md)   
  [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

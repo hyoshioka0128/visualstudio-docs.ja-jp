@@ -1,5 +1,5 @@
 ---
-title: ローカルの値を変更する |Microsoft Docs
+title: ローカル | の値を変更するMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,42 +12,42 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 516725510c5f5bc7baa8bd96d3f7fb969b6589e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383454"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841400"
 ---
 # <a name="changing-the-value-of-a-local"></a>ローカルの値の変更
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- 値フィールドに新しい値を入力するときに、**ローカル**ウィンドウで、パッケージのデバッグ、文字列、ように入力すると、式エバリュエーター (EE)。 EE は、この文字列は、単純な値、または式に含めることができ、関連付けられているローカルを結果の値を評価します。  
+ [ **ローカル** ] ウィンドウの [値] フィールドに新しい値が入力されると、デバッグパッケージは、式エバリュエーター (EE) に文字列を渡します。 EE はこの文字列を評価します。この文字列には、単純な値または式のいずれかを含めることができ、結果の値は、関連付けられたローカルに格納されます。  
   
- これは、ローカルの値を変更するプロセスの概要を示します。  
+ 次に、ローカルのの値を変更するプロセスの概要を示します。  
   
-1. 新しい値を入力すると、Visual Studio は呼び出し[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)ローカルに関連付けられているオブジェクト。  
+1. ユーザーが新しい値を入力すると、Visual Studio はローカルに関連付けられている[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトで[Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)を呼び出します。  
   
 2. `IDebugProperty2::SetValueAsString` では次のタスクを実行します。  
   
-   1. 値を生成する文字列を評価します。  
+   1. 文字列を評価して値を生成します。  
   
-   2. 関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトを取得する、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
+   2. 関連付けられている [IDebugField](../../extensibility/debugger/reference/idebugfield.md) オブジェクトをバインドして、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) オブジェクトを取得します。  
   
-   3. 一連のバイト値に変換します。  
+   3. 値を一連のバイトに変換します。  
   
-   4. 呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)デバッグ中のプログラムがアクセスできるように、メモリに、値のバイトを格納します。  
+   4. は [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) を呼び出して値のバイトをメモリに格納し、デバッグ中のプログラムがアクセスできるようにします。  
   
-3. Visual Studio の更新、**ローカル**表示 (を参照してください[を表示するローカル](../../extensibility/debugger/displaying-locals.md)詳細については)。  
+3. Visual Studio は **ローカル** 表示を更新します (詳細については、「 [ローカル](../../extensibility/debugger/displaying-locals.md) の表示」を参照してください)。  
   
-   内の変数の値を変更するこの手順を使用しても、**ウォッチ**それ以外のウィンドウは、`IDebugProperty2`の代わりに使用されるローカル変数の値に関連付けられているオブジェクト、`IDebugProperty2`オブジェクトに関連付けられたローカル自体。  
+   このプロシージャは、ローカルに**Watch** `IDebugProperty2` `IDebugProperty2` 関連付けられているオブジェクトの代わりに使用されるローカルの値に関連付けられたオブジェクトであることを除いて、ウォッチウィンドウで変数の値を変更するためにも使用されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [値の変更の実装のサンプル](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
- 値を変更するプロセスをステップ MyCEE サンプルを使用します。  
+ MyCEE サンプルを使用して、値を変更するプロセスを段階的に実行します。  
   
-## <a name="see-also"></a>関連項目  
- [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+## <a name="see-also"></a>参照  
+ [CLR 式エバリュエーターの記述](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [ローカルの表示](../../extensibility/debugger/displaying-locals.md)

@@ -1,5 +1,5 @@
 ---
-title: Format Specifiers in C++ |Microsoft Docs
+title: C++ の書式指定子 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -29,11 +29,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440074"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842254"
 ---
 # <a name="format-specifiers-in-c"></a>C++ の書式指定子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ int main() {
 }  
 ```  
   
- `my_var1` 変数を **ウォッチ** ウィンドウ (デバッグ中に **[デバッグ]/[ウィンドウ]/[ウォッチ]/[ウォッチ 1]** を選択) に追加し、表示を 16 進数に設定します ( **ウォッチ** ウィンドウで変数を右クリックし、 **[16 進数で表示]** を選択します)。 これで、ウォッチ ウィンドウに、変数に値 0x0065 が格納されていることが示されます。 この値を整数ではなく文字として表示するには、[名前] 列で変数名の後に文字書式指定子 **c**を追加します。 これにより、 **[値]** 列に **101 'e'** と表示されるようになります。  
+ 変数を [ `my_var1` **ウォッチ** ] ウィンドウに追加し (デバッグ中、[デバッグ]/[ウィンドウ]/[ウォッチ] **/[ウォッチ 1**])、表示を16進数に設定します ([ **ウォッチ** ] ウィンドウで変数を右クリックし、[ **16 進数で表示**] を選択します)。 これで、ウォッチ ウィンドウに、変数に値 0x0065 が格納されていることが示されます。 この値を整数ではなく文字として表示するには、[名前] 列で変数名の後に文字書式指定子 **c**を追加します。 これにより、 **[値]** 列に **101 'e'** と表示されるようになります。  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 書式指定子  
+## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 書式指定子  
  次の表に、Visual Studio で使用できる書式指定子を記載します。 太字で示されている指定子は、C++/CLI での相互運用機能デバッグではサポートされていません。  
   
 |指定子|形式|元の [ウォッチ] の値|表示される値|  
@@ -73,42 +73,42 @@ int main() {
 |x<br /><br /> **h**|16 進整数|102|0xcccccccc|  
 |x<br /><br /> **H**|16 進整数|102|0xcccccccc|  
 |c|単一文字|0x0065, c|101 'e'|  
-|s|const char* 文字列|\<場所 >"hello world"|"hello world"|  
-|**sb**|const char* 文字列|\<場所 >"hello world"|hello world|  
-|s8|const char* 文字列|\<場所 >"hello world"|"hello world"|  
-|**s8b**|const char* 文字列|\<場所 >"hello world"|"hello world"|  
-|su|const wchar_t*  const<br /><br /> char16_t\*文字列|\<location> L”hello world”|L"hello world"<br /><br /> u"hello world"|  
-|sub|const wchar_t*  const<br /><br /> char16_t\*文字列|\<location> L”hello world”|hello world|  
-|bstr|BSTR 文字列|\<location> L”hello world”|L”hello world”|  
-|**s32**|UTF-32 文字列|\<location> U”hello world”|U”hello world”|  
-|**s32b**|UTF-32 文字列 (引用符なし)|\<location> U”hello world”|hello world|  
+|s|const char* 文字列|\<location> "hello world"|"hello world"|  
+|**sb**|const char* 文字列|\<location> "hello world"|hello world|  
+|s8|const char* 文字列|\<location> "hello world"|"hello world"|  
+|**s8b**|const char* 文字列|\<location> "hello world"|"hello world"|  
+|su|const wchar_t * const<br /><br /> char16_t \* 文字列|\<location> L "hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|const wchar_t * const<br /><br /> char16_t \* 文字列|\<location> L "hello world"|hello world|  
+|bstr|BSTR 文字列|\<location> L "hello world"|L”hello world”|  
+|**s32**|UTF-32 文字列|\<location> U "hello world"|U”hello world”|  
+|**s32b**|UTF-32 文字列 (引用符なし)|\<location> U "hello world"|hello world|  
 |**en**|enum|Saturday(6)|土曜日|  
-|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<位置>{\<最初のメンバー>}|\<位置 > {\<最初のメンバー >、 \<2 番目のメンバー >,…}|  
-|**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<場所 >、{メンバー = value…}|{member=value…}|  
+|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, …}|  
+|**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<location>, {member = value...}|{member=value…}|  
 |**nd**|基底クラスの情報だけを表示し、派生クラスは無視します。|`(Shape*) square` には基底クラスおよび派生クラスの情報が含まれます。|基底クラスの情報だけを表示します。|  
 |hr|HRESULT または Win32 エラー コード。 デバッガーが HRESULT を自動的にデコードする場合、この指定子は不要です。|S_OK|S_OK|  
 |wc|Windows クラス フラグ|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows メッセージ番号|16|WM_CLOSE|  
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<カスタマイズされた表現>|4|  
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<customized representation>|4|  
   
 > [!NOTE]
 > **hv** 書式指定子が存在する場合、デバッガーはバッファーの長さを判断して適切な数の要素を表示しようと試みます。 デバッガーは配列の正確なバッファー サイズを常に判断できるとは限らないため、可能な場合には必ずサイズ指定子 `(pBuffer,[bufferSize])` を使用してください。 **hv** 書式指定子は、バッファー サイズをすぐに入手できないシナリオ用に意図されています。  
   
-### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 配列としてのポインターのサイズ指定子  
+### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 配列としてのポインターのサイズ指定子  
  オブジェクトに対するポインターを配列として表示する場合、整数または式で配列要素数を指定できます。  
   
 |指定子|形式|元の [ウォッチ] の値|表示される値|  
 |---------------|------------|---------------------------|---------------------|  
-|n|10 進数または **16 進数** の整数|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|`pBuffer` を 32 要素の配列として表示します。|  
+|n|10 進数または **16 進数** の整数|pBuffer,[32]<br /><br /> pBuffer, **[0x20]**|`pBuffer` を 32 要素の配列として表示します。|  
 |**[exp]**|整数に評価される有効な C++ 式|pBuffer,[bufferSize]|pBuffer を `bufferSize` 要素の配列として表示します。|  
 |**expand(n)**|整数に評価される有効な C++ 式|pBuffer, expand(2)|`pBuffer` の 3 番目の要素を表示します。|  
   
-## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグ用の書式指定子  
+## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグ用の書式指定子  
  **太字** で示されている指定子は、ネイティブおよび C++/CLI コードをデバッグする場合にのみサポートされます。  
   
 |指定子|形式|元の [ウォッチ] の値|表示される値|  
 |---------------|------------|--------------------------|---------------------|  
-|**d,i**|符号付き 10 進整数。|0xF000F065|-268373915|  
+|**d, i**|符号付き 10 進整数。|0xF000F065|-268373915|  
 |**u**|符号なし 10 進整数。|0x0065|101|  
 |o|符号なし 8 進整数。|0xF065|0170145|  
 |x,X|16 進整数|61541|0x0000f065|  
@@ -124,9 +124,9 @@ int main() {
 |hr|HRESULT または Win32 エラー コード。 デバッガーが HRESULT を自動的にデコードする場合、この指定子は不要です。|S_OK|S_OK|  
 |wc|Windows クラス フラグ。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows メッセージ番号|0x0010|WM_CLOSE|  
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<カスタマイズされた表現>|4|  
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<customized representation>|4|  
   
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでのメモリ位置の書式指定子  
+### <a name="format-specifiers-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI を使用した相互運用機能デバッグでのメモリ位置の書式指定子  
  メモリ位置を表すために使われる書式シンボルを次の表に示します。 メモリ位置指定子は、任意の値、または位置を評価する式に使用できます。  
   
 |シンボル|形式|元の [ウォッチ] の値|表示される値|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 クワドワード。|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2 バイト文字 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでの配列としてのポインターのサイズ指定子  
+### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-cclit"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> C++/Cli でを使用した相互運用機能デバッグでの配列としてのポインターのサイズ指定子  
  オブジェクトに対するポインターを配列として表示する場合、整数で配列要素数を指定できます。  
   
 |指定子|形式|正規表現|表示される値|  

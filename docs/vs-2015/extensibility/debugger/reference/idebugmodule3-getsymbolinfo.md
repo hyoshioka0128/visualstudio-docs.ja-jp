@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo |Microsoft Docs
+title: 'IDebugModule3:: Getシンボル Info |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426356"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842251"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-各パスの検索の結果と同様にシンボルを検索するパスの一覧を取得します。  
+シンボルを検索するパスの一覧と、各パスを検索した結果を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,29 +44,29 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `dwFields`  
- [in]フラグの組み合わせ、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)のどのフィールドを指定する列挙体`pInfo`入力します。  
+ からどのフィールドを入力するかを指定する、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列挙のフラグの組み合わせ `pInfo` 。  
   
  `pInfo`  
- [out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)構造体のメンバーは、指定した情報が入力されます。 このメソッドが戻るかどうかは、null 値と、`E_INVALIDARG`します。  
+ 入出力指定された情報を格納するメンバーを持つ [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 構造体。 Null 値の場合、このメソッドはを返し `E_INVALIDARG` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 返します、メソッドが成功したかどうかは`S_OK`、それ以外のエラー コードを返します。  
+ メソッドが成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 > [!NOTE]
-> 返される文字列 (で、`MODULE_SYMBOL_SEARCH_INFO`構造) 空にすることも`S_OK`が返されます。 この場合、返される検索情報がありませんでした。  
+> が返された場合でも、返された文字列 ( `MODULE_SYMBOL_SEARCH_INFO` 構造体内) は空になる可能性があり `S_OK` ます。 この場合、返される検索情報がありませんでした。  
   
-## <a name="remarks"></a>Remarks  
- 場合、`bstrVerboseSearchInfo`のフィールド、`MODULE_SYMBOL_SEARCH_INFO`構造体が空ではありませんし、検索するパスと検索結果の一覧が含まれています。 一覧には、省略記号 (「...」)、結果の後に続く、パスが表示されます。 1 つ以上のパスの結果のペアがある場合は、各ペアは"\r\n"(復帰と改行) のペアによって区切られます。 パターンのようになります。  
+## <a name="remarks"></a>注釈  
+ `bstrVerboseSearchInfo` `MODULE_SYMBOL_SEARCH_INFO` 構造体のフィールドが空でない場合は、検索対象のパスと検索結果の一覧が含まれています。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパスの結果のペアがある場合、各ペアは "\r\n" (キャリッジリターン/ラインフィード) ペアで区切られます。 パターンは次のようになります。  
   
- \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
+ \<path>...\<result>\r\n \<path> . \<result> .\r\n \<path> ..\<result>  
   
- 最後のエントリに \r\n シーケンスがないことに注意してください。  
+ 最後のエントリには \r\n シーケンスがないことに注意してください。  
   
 ## <a name="example"></a>例  
- この例では、このメソッドは、3 つの別の検索結果に 3 つのパスを返します。 各行は復帰と改行のペアで終了します。 出力の例では、1 つの文字列として、検索結果だけ印刷します。  
+ この例では、このメソッドは3つの異なる検索結果を持つ3つのパスを返します。 各行は、復帰とラインフィードのペアで終了します。 この例では、単に検索結果を1つの文字列として出力します。  
   
 > [!NOTE]
-> 状態の結果は、行の末尾まで「...」の直後に続くれます。  
+> 状態の結果は、"..." の直後に続くものです。行の最後まで。  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -84,10 +84,10 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }  
 ```  
   
- **c:\symbols\user32.pdb...ファイルが見つかりませんでした。**  
+ **c:\symbols\user32.pdb...ファイルが見つかりません。**  
 **c:\winnt\symbols\user32.pdb...バージョンが一致しません。**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...シンボルが読み込まれます。**   
-## <a name="see-also"></a>関連項目  
+**\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb...シンボルが読み込まれました。**   
+## <a name="see-also"></a>参照  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

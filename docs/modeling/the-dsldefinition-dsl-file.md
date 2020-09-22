@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114922"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808956"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 
@@ -62,7 +62,7 @@ ms.locfileid: "76114922"
 
 このセクションでは、各コネクタ ツール (接続可能な 2 つのクラスを結ぶリンクを作成するツール) の接続ビルダーを定義します。 このセクションでは、ソース クラスとターゲット クラスを接続できるかどうかを決定します。
 
-### <a name="diagram"></a>ダイアグラム
+### <a name="diagram"></a>図
 
 このセクションでは図を定義します。このセクションを使用して、背景色やルート クラスなどのプロパティを指定できます。 (ルートクラスは、図全体で表されるドメインクラスです)。また、[ダイアグラム] セクションには、各ドメインクラスまたはリレーションシップを表す図形またはコネクタを指定する、[のマップ] 要素と [端子] マップ要素も含まれています。
 
@@ -577,8 +577,8 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 コネクタ マップにはデコレータ マップを含めることもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))
 - [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
 - [モデル、クラス、およびリレーションシップについて](../modeling/understanding-models-classes-and-relationships.md)

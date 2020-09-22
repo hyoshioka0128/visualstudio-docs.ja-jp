@@ -1,5 +1,5 @@
 ---
-title: RegPkg ユーティリティ |Microsoft Docs
+title: RegPkg Utility |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,59 +12,59 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1895d3b57e5109f824728021cb1d64f0c527384b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436583"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842029"
 ---
 # <a name="regpkg-utility"></a>RegPkg ユーティリティ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
-> .Pkgdef ファイルを使用する Visual Studio でパッケージを登録することをお勧めです。 これにより、拡張機能の配置、VSIX 展開の要件であるシステム レジストリにアクセスする必要はありません。 Pkgdef ファイルを使用して作成された、 [CreatePkgDef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)します。 Visual Studio パッケージの配置の詳細については、次を参照してください。 [Visual Studio 拡張機能の配布](../../extensibility/shipping-visual-studio-extensions.md)します。  
+> Visual Studio でパッケージを登録するには、pkgdef ファイルを使用することをお勧めします。 これにより、システムレジストリにアクセスしなくても拡張機能をデプロイできます。これは、VSIX 配置に必要です。 Pkgdef ファイルは、 [Createpkgdef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)を使用して作成されます。 Visual Studio パッケージの配置の詳細については、「 [Visual Studio 拡張機能の配布](../../extensibility/shipping-visual-studio-extensions.md)」を参照してください。  
   
- RegPkg.exe ユーティリティによる VSPackage の登録[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]して展開用に準備します。 VSPackage 開発中にバック グラウンドでこのユーティリティを使用します。 ビルドして、実験用ハイブで VSPackage を実行できるように、ビルド プロセスの一部として実行されます。  
+ RegPkg.exe ユーティリティは、VSPackage をに登録 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] し、デプロイ用に準備します。 このユーティリティは、VSPackage の開発中にバックグラウンドで使用されます。 実験用 hive で VSPackage をビルドして実行できるように、ビルドプロセスの一部として実行されます。  
   
- RegPkg は、複数の形式でシステム レジストリのスクリプトを生成できます。 .Msi プロジェクトや Windows Installer XML Toolset ファイルなどの展開プロジェクトでこれらのスクリプトを組み込むことができます。  
+ RegPkg では、複数の形式でシステムレジストリスクリプトを生成できます。 これらのスクリプトは、.msi プロジェクトや Windows インストーラー XML ツールセットファイルなどの配置プロジェクトに組み込むことができます。  
   
- RegPkg.exe は通常\< *Visual Studio SDK インストール パス*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe します。 RegPkg は、この構文を次に示します。  
+ RegPkg.exe は通常、\VisualStudioIntegration\Tools\Bin\RegPkg.exe にあり \<*Visual Studio SDK installation path*> ます。 RegPkg は、次の構文に従います。  
   
 ```  
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
 ```  
   
- /root:root  
- 指定された名前の登録を実行します。  
+ /root: ルート  
+ 指定されたの下で登録を実行します  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ルート。  
   
- /regfile:FileName  
- レジストリを更新するのではなく、.reg ファイルを作成します。  /Vrgfile または/rgsfile/wixfile では使用できません。  
+ /regfile: ファイル名  
+ レジストリを更新するのではなく、.reg ファイルを作成します。  /Vrgfile または/rgsfile または/wixfile. と共に使用することはできません。  
   
- /rgsfile:FileName  
- レジストリを更新するのではなく、.rgs ファイルを作成します。  /Vrgfile または/regfile/wixfile では使用できません。  
+ /rgsfile: ファイル名  
+ レジストリを更新するのではなく、.rgs ファイルを作成します。  /Vrgfile または/regfile または/wixfile. と共に使用することはできません。  
   
- /vrgfile:FileName  
- レジストリを更新するのではなく、.vrg ファイルを作成します。  /Regfile または/rgsfile/wixfile では使用できません。  
+ /vrgfile: ファイル名  
+ レジストリを更新するのではなく、vrg ファイルを作成します。  /Regfile または/rgsfile または/wixfile. と共に使用することはできません  
   
  /rgm  
- Rgs ファイルだけでなく .rgm ファイルを作成します。  /Rgsfile と組み合わせる必要があります。  
+ Rgs ファイルに加えて、rgm ファイルを作成します。  /Rgsfile. と組み合わせる必要があります。  
   
- /wixfile:FileName  
- レジストリを更新するのではなく、Windows Installer XML ツールセットと互換性のあるファイルを作成します。  /Regfile または/rgsfile/vrgfile では使用できません。  
+ /wixfile: ファイル名  
+ レジストリを更新するのではなく、Windows インストーラー XML ツールセット互換ファイルを作成します。  /Regfile または/rgsfile または/vrgfileと共に使用することはできません。  
   
  /codebase  
- アセンブリではなく、コードベースで強制的に登録します。  
+ アセンブリではなく、コードベースで登録を強制します。  
   
  /assembly  
- コードベースではなく、アセンブリを強制的に登録します。  
+ コードベースではなく、アセンブリに強制的に登録します。  
   
  /unregister  
- このパッケージを登録解除します。  使用することはできません。  
+ このパッケージの登録を解除します。  使用できません  
   
- /regfile または/vrgfile または/rgsfile または/wixfile します。  
+ with/regfile または/vrgfile または/rgsfile または/wixfile.  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [製品のリリース](../../misc/releasing-a-visual-studio-integration-product.md)   
  [RegPkg パッケージ登録のトラブルシューティング](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

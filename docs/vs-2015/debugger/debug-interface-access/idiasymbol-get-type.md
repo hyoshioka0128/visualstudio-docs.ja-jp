@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_type |Microsoft Docs
+title: 'IDiaSymbol:: get_type |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9bec7cdbf0641bbd1bba1e70c2f21ec232a18e6a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787554"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841472"
 ---
-# <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
+# <a name="idiasymbolget_type"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-この記号の型を表すシンボルを取得します。  
+この記号の型を表す記号を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,16 +35,16 @@ HRESULT get_type ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)この記号の型を表すオブジェクト。  
+ 入出力この記号の型を表す [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- シンボルの種類を判断するには、このメソッドを呼び出すし、結果を確認する必要があります[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)オブジェクト。 可能なシンボルには、型であるに注意してください。 たとえば、構造体の名前の型はありませんが、子のシンボルがあります (を使用して、 [idiasymbol::findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)これらの子をチェックするメソッド)。  
+## <a name="remarks"></a>注釈  
+ シンボルに含まれる型を特定するには、このメソッドを呼び出し、結果の [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) オブジェクトを確認する必要があります。 シンボルに型がない可能性があることに注意してください。 たとえば、構造体の名前に型はありませんが、子シンボルがある可能性があります ( [IDiaSymbol:: findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) メソッドを使用してこれらの子を確認します)。  
   
 ## <a name="example"></a>例  
   
@@ -59,7 +59,7 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

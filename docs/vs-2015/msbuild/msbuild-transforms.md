@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426032"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841568"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 変換
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63426032"
 変換とは、1 つの項目一覧を別の項目コレクションに一対一で変換することです。 プロジェクトで項目一覧を変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 このトピックでは、変換と、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] で変換を利用してプロジェクトを効率的にビルドする方法について説明します。  
   
 ## <a name="transform-modifiers"></a>変換修飾子  
- 変換は任意ではなく、特別な構文により制限されています。変換修飾子はすべて %(*ItemMetaDataName*) という形式にする必要があります。 あらゆる項目メタデータを変換修飾子として使用できます。 これには、作成時にすべての項目に割り当てられる既知の項目メタデータが含まれます。 既知の項目メタデータの一覧については、「[既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)」をご覧ください。  
+ 変換は任意ではなく、特別な構文により制限されています。変換修飾子はすべて %(*ItemMetaDataName*) という形式にする必要があります。 あらゆる項目メタデータを変換修飾子として使用できます。 これには、作成時にすべての項目に割り当てられる既知の項目メタデータが含まれます。 既知の項目メタデータの一覧については、「 [既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)」を参照してください。  
   
  次の例では、.resx ファイルの一覧が .resources ファイルの一覧に変換されます。 %(filename) 変換修飾子は、各 .resources ファイルに対応する .resx ファイルと同じファイル名が与えられることを指定します。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "63426032"
 ## <a name="dependency-analysis"></a>依存関係の分析  
  変換では、変換後の項目一覧と元の項目一覧の間に存在する一対一のマッピングか維持されます。 そのため、入力の変換である出力がターゲットによって作成される場合、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は、入力と出力のタイムスタンプを分析し、ターゲットをスキップ、ビルド、部分的再ビルドするかどうかを決定します。  
   
- 次の例の [[タスクをコピー]](../msbuild/copy-task.md) では、`BuiltAssemblies` 項目一覧のすべてのファイルが、`Outputs` 属性の変換によって指定される、タスクのターゲット フォルダーにマッピングされます。 `BuiltAssemblies` 項目一覧のファイルが変更されると、`Copy` タスクは変更されたファイルにだけ実行され、他のファイルはすべてスキップされます。 依存関係分析と変換の使用方法に関する詳細については、「[方法:インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)します。  
+ 次の例の [コピータスク](../msbuild/copy-task.md) では、項目リスト内のすべてのファイルが、 `BuiltAssemblies` 属性の変換を使用して指定された、タスクのコピー先フォルダー内のファイルにマップされ `Outputs` ます。 `BuiltAssemblies` 項目一覧のファイルが変更されると、`Copy` タスクは変更されたファイルにだけ実行され、他のファイルはすべてスキップされます。 依存関係の分析および変換の使用方法の詳細については、「 [方法: インクリメンタルビルドを実行](../msbuild/how-to-build-incrementally.md)する」を参照してください。  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -108,7 +108,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
- [方法: インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)
+ [方法: インクリメンタルビルドを実行する](../msbuild/how-to-build-incrementally.md)

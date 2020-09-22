@@ -12,119 +12,119 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437613"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842137"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>チェックリスト: 従来の言語サービスの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-基本的な手順の言語サービスを作成するために行う必要がありますが、次のチェックリストにまとめたものです、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]のコア エディター。 言語サービスに統合する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグの式エバリュエーターを作成する必要があります。 詳細については、次を参照してください。 [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)で、 [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)します。  
+次のチェックリストは、コアエディターの言語サービスを作成するために実行する必要がある基本的な手順の概要を示して [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] います。 言語サービスをに統合するには [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、デバッグ式エバリュエーターを作成する必要があります。 詳細については、「 [Visual Studio デバッガーの機能拡張](../../extensibility/debugger/visual-studio-debugger-extensibility.md)での[CLR 式エバリュエーターの記述](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)」を参照してください。  
   
-## <a name="steps-for-creating-a-language-service"></a>言語サービスを作成するための手順  
+## <a name="steps-for-creating-a-language-service"></a>言語サービスを作成する手順  
   
 1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> インターフェイスを実装します。  
   
-    - VSPackage、実装、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>言語サービスを提供するインターフェイス。  
+    - VSPackage で、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 言語サービスを提供するためのインターフェイスを実装します。  
   
-    - 言語サービスを統合開発環境 (IDE) で使用できるように、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>実装します。  
+    - 実装の統合開発環境 (IDE) で言語サービスを使用できるように <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> します。  
   
-2. 実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>主要言語サービス クラスのインターフェイス。  
+2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>Main language service クラスにインターフェイスを実装します。  
   
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイスは、コア エディターと言語サービスの間の相互作用の開始ポイントです。  
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイスは、コアエディターと言語サービスの間の対話の開始点です。  
   
-### <a name="optional-features"></a>省略可能な機能  
- 次の機能は、省略可能な任意の順序で実装することができます。 これらの機能では、言語サービスの機能が向上します。  
+### <a name="optional-features"></a>オプション機能  
+ 次の機能は省略可能であり、任意の順序で実装できます。 これらの機能により、言語サービスの機能が向上します。  
   
 - 構文の色分け表示  
   
-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> インターフェイスを実装します。 このインターフェイスの実装では、パーサーについては、適切な色の情報を返す必要があります。  
+   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> インターフェイスを実装します。 このインターフェイスの実装では、パーサー情報を使用して適切な色情報を返す必要があります。  
   
-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>メソッドが返す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。 実装する必要があるため各テキスト バッファーの個別 colorizer インスタンスが作成された、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイスとは別にします。 詳細については、次を参照してください。[従来の言語サービスでの構文の色分け表示](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)します。  
+   メソッドは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> インターフェイスを返し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ます。 テキストバッファーごとに個別の colorizer インスタンスが作成されるため、インターフェイスを個別に実装する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ます。 詳細については、「 [従来の言語サービスの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)表示」を参照してください。  
   
-- コード ウィンドウ  
+- [コード ウィンドウ]  
   
-   実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>新しい code ウィンドウが作成されたときの通知を受け取る言語サービスを有効にするインターフェイス。  
+   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>新しいコードウィンドウが作成されたときに、言語サービスが通知を受け取ることができるように、インターフェイスを実装します。  
   
-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>メソッドが返す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>インターフェイス。 言語サービスでのコード ウィンドウに特別な UI を追加できます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>します。 言語サービスは内のテキスト ビュー フィルターの追加など、特別な処理を行うことができますも<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>します。  
+   メソッドは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> インターフェイスを返し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> ます。 言語サービスは、のコードウィンドウに特殊な UI を追加でき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> ます。 言語サービスでは、でテキストビューフィルターを追加するなど、特別な処理を行うこともでき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A> ます。  
   
-- テキスト ビュー フィルター  
+- テキストビューフィルター  
   
-   言語サービスでの IntelliSense ステートメント入力候補を提供するには、テキスト ビューの処理とそれ以外の場合、コマンドの一部をインターセプトする必要があります。 これらのコマンドを受信するには、次の手順を完了します。  
+   言語サービスで IntelliSense ステートメント入力候補を提供するには、テキストビューで処理されるコマンドの一部をインターセプトする必要があります。 これらのコマンドをインターセプトするには、次の手順を実行します。  
   
-  - 実装<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンド チェーンとハンドルのエディター コマンドに参加します。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドチェーンに参加し、エディターのコマンドを処理するには、を実装します。  
   
-  - 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>メソッドを渡します、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>実装します。  
+  - メソッドを呼び出し、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 実装を渡し <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。  
   
-  - 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A>メソッドいるため、これらのコマンドに渡す不要になったビューからデタッチするとします。  
+  - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A>ビューからデタッチするときにメソッドを呼び出して、これらのコマンドが渡されないようにします。  
   
-    処理する必要がありますコマンドは、提供されているサービスによって異なります。 詳細については、次を参照してください。[言語サービス フィルターの重要なコマンド](../../extensibility/internals/important-commands-for-language-service-filters.md)します。  
+    処理する必要があるコマンドは、提供されているサービスによって異なります。 詳細については、「 [言語サービスフィルターの重要なコマンド](../../extensibility/internals/important-commands-for-language-service-filters.md)」を参照してください。  
   
   > [!NOTE]
-  > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>と同じオブジェクトでインターフェイスを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。  
+  > インターフェイスは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> インターフェイスと同じオブジェクトに実装する必要があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。  
   
-- 入力候補  
+- ステートメント入力候補  
   
    <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> インターフェイスを実装します。  
   
-   ステートメント入力候補のコマンドをサポートして (つまり、 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>) を呼び出すと、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>メソッドで、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>渡すインターフェイス、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>インターフェイス。 詳細については、次を参照してください。[従来の言語サービスで入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)します。  
+   ステートメント入力候補コマンド (つまり、) をサポートし、インターフェイスの <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> メソッドを呼び出して <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 、インターフェイスを渡し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ます。 詳細については、「 [従来の言語サービスでのステートメント入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)」を参照してください。  
   
 - メソッドのヒント  
   
-   実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>メソッドのヒント ウィンドウのデータを提供するインターフェイス。  
+   インターフェイスを実装して <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 、メソッドのヒントウィンドウにデータを提供します。  
   
-   メソッドのデータ ヒント ウィンドウを表示するタイミングを把握するようにコマンドを適切に処理するために、テキスト ビューのフィルターをインストールします。 詳細については、次を参照してください。[従来の言語サービスでのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)します。  
+   テキストビューフィルターをインストールして、コマンドを適切に処理します。これにより、メソッドのデータヒントウィンドウをいつ表示するかがわかります。 詳細については、「 [従来の言語サービスのパラメーターヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)」を参照してください。  
   
-- エラーのマーカー  
+- エラーマーカー  
   
    <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> インターフェイスを実装します。  
   
-   実装するオブジェクトをマーカーを作成するには、エラー、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイスと呼び出し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>渡して、メソッド、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>エラー マーカー オブジェクトのインターフェイス。  
+   インターフェイスを実装するエラーマーカーオブジェクトを作成 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> し、メソッドを呼び出して <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> 、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> エラーマーカーオブジェクトのインターフェイスを渡します。  
   
-   通常各エラーのマーカーは、タスク一覧 ウィンドウ内の項目を管理します。  
+   通常、各エラーマーカーは、[タスク一覧] ウィンドウの項目を管理します。  
   
-- タスク一覧の項目  
+- タスク一覧項目  
   
-   提供する作業アイテム クラスを実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem>インターフェイス。  
+   インターフェイスを提供するタスク項目クラスを実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> します。  
   
-   提供するタスク プロバイダー クラスを実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider>インターフェイスと<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>インターフェイス。  
+   インターフェイスとインターフェイスを提供するタスクプロバイダークラスを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> ます。  
   
-   提供するタスク列挙子クラスを実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems>インターフェイス。  
+   インターフェイスを提供するタスク列挙子クラスを実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> します。  
   
-   タスク一覧のタスク プロバイダーを登録<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A>メソッド。  
+   タスクプロバイダーをタスク一覧のメソッドに登録し <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> ます。  
   
-   取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList>サービス GUID と、言語サービスのサービス プロバイダーを呼び出すことによってインターフェイス<xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>します。  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList>サービス GUID を使用して言語サービスのサービスプロバイダーを呼び出すことによって、インターフェイスを取得し <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> ます。  
   
-   作業項目のオブジェクトと呼び出しを作成、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A>メソッドで、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList>インターフェイスの新しいがある場合またはタスクを更新します。  
+   タスク項目オブジェクトを作成し、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> 新規または更新されたタスクがある場合は、インターフェイスでメソッドを呼び出します。  
   
-- コメント タスク項目  
+- タスク項目のコメント化  
   
-   使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo>インターフェイスと<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens>コメント タスクのトークンを取得するインターフェイス。  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> コメントタスクトークンを取得するには、インターフェイスとインターフェイスを使用します。  
   
-   取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo>からインターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>サービス。  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo>サービスからインターフェイスを取得 <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> します。  
   
-   取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens>からインターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A>メソッド。  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens>メソッドからインターフェイスを取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> します。  
   
-   実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents>トークン リスト に変更をリッスンするインターフェイス。  
+   インターフェイスを実装して <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> 、トークンリストの変更をリッスンします。  
   
 - アウトライン  
   
-   アウトライン表示をサポートするためのいくつかのオプションがあります。 たとえば、サポート、**定義に折りたたむ**コマンド、エディター コントロールのアウトライン領域、またはクライアントによって制御された領域をサポートします。 詳細については、「[方法 :従来の言語サービスでのアウトラインの拡張のサポートを提供](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)します。  
+   アウトラインをサポートするには、いくつかのオプションがあります。 たとえば、[ **定義に折りたたむ** ] コマンドをサポートしたり、エディターで制御されるアウトライン領域を指定したり、クライアント制御領域をサポートしたりできます。 詳細については、「 [方法: 従来の言語サービスで拡張されたアウトラインサポートを提供する](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)」を参照してください。  
   
 - 言語サービスの登録  
   
-   言語サービスを登録する方法の詳細については、次を参照してください。[従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service2.md)と[管理 Vspackage](../../extensibility/managing-vspackages.md)します。  
+   言語サービスを登録する方法の詳細については、「 [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service2.md) 」および「 [vspackage の管理](../../extensibility/managing-vspackages.md)」を参照してください。  
   
 - 状況依存のヘルプ  
   
-   次の方法のいずれかで、エディターにコンテキストを提供します。  
+   次のいずれかの方法で、エディターにコンテキストを提供します。  
   
-  - テキスト マーカーのコンテキストを提供するを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>インターフェイス。  
+  - インターフェイスを実装して、テキストマーカーのコンテキストを指定 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> します。  
   
-  すべてのユーザー コンテキストを提供するを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>インターフェイス。  
+  インターフェイスを実装して、すべてのユーザーコンテキストを指定 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [CLR 式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

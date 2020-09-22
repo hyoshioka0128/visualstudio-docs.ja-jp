@@ -1,5 +1,5 @@
 ---
-title: デバッグ セッション |Microsoft Docs
+title: デバッグセッション |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,22 +10,22 @@ ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 81867f413a5e631d1831fdb342487acb13cb75a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eeacd639dff8b22e23711702d1b113a49b8e5b9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963524"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842325"
 ---
 # <a name="debug-session"></a>デバッグ セッション
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーのアーキテクチャの観点から、**セッション**:  
+デバッガーアーキテクチャに関しては、 **セッション**は次のようになります。  
   
--   すべてのセットを処理する関連または関連のないを起動または IDE の 1 つのインスタンスに接続です。  
+- は、IDE の1つのインスタンスから起動またはアタッチされた、関連、または関連性のないすべてのプロセスのセットです。  
   
--   セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、次を参照してください。[セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)します。  
+- は、セッションデバッグマネージャー (SDM) によって実装されます。 詳細については、「 [セッションデバッグマネージャー](../../extensibility/debugger/session-debug-manager.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)   
+## <a name="see-also"></a>参照  
+ [セッションデバッグマネージャー](../../extensibility/debugger/session-debug-manager.md)   
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)

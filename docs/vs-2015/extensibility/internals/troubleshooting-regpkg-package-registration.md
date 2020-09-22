@@ -11,22 +11,22 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 241975e475252a18d5e5a91c6e8c4fb40c067a95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441181"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841812"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg パッケージ登録のトラブルシューティング
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
-> .Pkgdef ファイルを使用する Visual Studio でパッケージを登録することをお勧めです。 これにより、拡張機能の配置、システム レジストリにアクセスする必要はありません。 Pkgdef ファイルを使用して作成された、 [CreatePkgDef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)します。  
+> Visual Studio でパッケージを登録するには、pkgdef ファイルを使用することをお勧めします。 これにより、システムレジストリにアクセスしなくても拡張機能を展開できます。 Pkgdef ファイルは、 [Createpkgdef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)を使用して作成されます。  
   
- RegPkg でを使用してパッケージを登録する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、RegPkg パッケージに適しているのバージョンを使用する必要があります。  
+ で RegPkg を使用してパッケージを登録するには [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、パッケージに適したバージョンの RegPkg を使用する必要があります。  
   
-## <a name="regpkg-versions-related-to-package-versions"></a>パッケージのバージョンに関連する RegPkg バージョン  
- RegPkg の 2 つのバージョンがあります。 1 つのバージョンが含まれている[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 使用して、次のアセンブリのいずれかによって作成されたパッケージを登録するのにには、このバージョンを使用します。  
+## <a name="regpkg-versions-related-to-package-versions"></a>パッケージのバージョンに関連する RegPkg のバージョン  
+ RegPkg には2つのバージョンがあります。 には1つのバージョンが含まれてい [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 このバージョンを使用して、次のいずれかのアセンブリを使用して作成されたパッケージを登録します。  
   
 1. Microsoft.VisualStudioShell.9.0.dll  
   
@@ -34,9 +34,9 @@ ms.locfileid: "63441181"
   
 3. Microsoft.VisualStudioShell.11.0.dll  
   
-   以前の Microsoft.VisualStudio.Shell.dll assembly を使用して作成されたパッケージを登録することはできません。  
+   以前の Microsoft.VisualStudio.Shell.dll アセンブリを使用してビルドされたパッケージを登録することはできません。  
   
-   RegPkg の以前のバージョンでは、Microsoft.VisualStudio.Shell.dll assembly を使用して作成されたパッケージを登録できます。 ただし、そのアセンブリのそれ以降のバージョンを使用してビルドされたパッケージを登録することはできません。  
+   以前のバージョンの RegPkg では、Microsoft.VisualStudio.Shell.dll アセンブリを使用してビルドされたパッケージを登録できます。 ただし、新しいバージョンのアセンブリを使用してビルドされたパッケージを登録することはできません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [製品のリリース](../../misc/releasing-a-visual-studio-integration-product.md)

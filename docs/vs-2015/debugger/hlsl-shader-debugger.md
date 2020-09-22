@@ -1,5 +1,5 @@
 ---
-title: HLSL シェーダー デバッガー |Microsoft Docs
+title: HLSL シェーダー デバッガー | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410185"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842204"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL シェーダーのデバッガー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
   
  HLSL デバッガーを次に示します。  
   
- ![使用した HLSL のデバッグを見るし、呼び出し履歴ウィンドウ。](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
+ ![ウォッチおよび呼び出し履歴ウィンドウを使用した HLSL のデバッグ。](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
   
 ## <a name="understanding-the-hlsl-debugger"></a>HLSL デバッガーについて  
  HLSL デバッガーは、シェーダー コードで発生する問題を把握するのに役立ちます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] における HLSL コードのデバッグは、C++、C#、Visual Basic などの他の言語で作成されたコードのデバッグと同様です。 他の言語のデバッグ時と同じように、変数の内容の確認、ブレークポイントの設定、コードのステップ実行、および呼び出し履歴の確認を行うことができます。  
@@ -43,7 +43,7 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
   一方、HLSL デバッガーでは、他のデバッガーよりも優れた、より CPU に近いデバッグができます。  
   
 ## <a name="hlsl-shader-edit--apply"></a>HLSL シェーダーの編集および適用機能  
- HLSL シェーダー デバッガーでは、CPU デバッガーのようなエディット コンティニュがサポートされていません。これは、GPU の実行モデルで、シェーダーの状態を元に戻す操作が許可されていないためです。 その代わりに、HLSL デバッガーでは、HLSL ソース ファイルを編集した後、**[適用]** を選択してフレームを再生成し、変更の効果を確認できる、編集および適用機能がサポートされています。 変更後のシェーダー コードがプロジェクトの元の HLSL ソース ファイルの整合性を保持するために別のファイルに格納されているが、選択することができます、変更が完成したら**にコピーしています.** 変更をプロジェクトにコピーします。 この機能を使用すると、エラーを含むシェーダー コードをすばやく反復処理できるため、HLSL デバッグ ワークフローから、コストのかかるリビルドおよびキャプチャ手順を実行する必要がなくなります。  
+ HLSL シェーダー デバッガーでは、CPU デバッガーのようなエディット コンティニュがサポートされていません。これは、GPU の実行モデルで、シェーダーの状態を元に戻す操作が許可されていないためです。 その代わりに、HLSL デバッガーでは、HLSL ソース ファイルを編集した後、 **[適用]** を選択してフレームを再生成し、変更の効果を確認できる、編集および適用機能がサポートされています。 変更したシェーダーコードは、プロジェクトの元の HLSL ソースファイルの整合性を維持するために別のファイルに格納されますが、変更内容に問題がなければ、[**コピー先**] を選択できます。 を使用して、変更内容をプロジェクトにコピーします。 この機能を使用すると、エラーを含むシェーダー コードをすばやく反復処理できるため、HLSL デバッグ ワークフローから、コストのかかるリビルドおよびキャプチャ手順を実行する必要がなくなります。  
   
 ## <a name="hlsl-disassembly"></a>HLSL の逆アセンブル  
  HLSL シェーダー デバッガーでは、HLSL ソース コードの一覧の右側に、HLSL シェーダー アセンブリの一覧が表示されます。  
@@ -66,16 +66,16 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
   
 2. 描画呼び出しの詳細で、結果の色の効果がシェーダー コードのバグを示しているプリミティブを展開します。 複数のプリミティブがバグを示している場合は、問題の診断をさらに難しくすることがあるエラー累積を回避できるように、そのバグを示す最初のプリミティブを選択します。  
   
-3. プリミティブの詳細で、**[頂点シェーダー]** をデバッグするか、**[ピクセル シェーダー]** をデバッグするかを選択します。 ピクセル シェーダーは正しいが、頂点シェーダーが正しくない定数を渡すために正しくない色の効果を生成していると思われる場合は、頂点シェーダーをデバッグします。 それ以外の場合は、ピクセル シェーダーをデバッグします。  
+3. プリミティブの詳細で、 **[頂点シェーダー]** をデバッグするか、 **[ピクセル シェーダー]** をデバッグするかを選択します。 ピクセル シェーダーは正しいが、頂点シェーダーが正しくない定数を渡すために正しくない色の効果を生成していると思われる場合は、頂点シェーダーをデバッグします。 それ以外の場合は、ピクセル シェーダーをデバッグします。  
   
     選択したシェーダーの右側で、小さい緑色の矢印として表示される **[デバッグの開始]** をクリックします。  
   
    > [!NOTE]
    > HLSL デバッガーへのこのエントリ ポイントでは、選択した描画呼び出し、プリミティブ、およびピクセルに対応するピクセル シェーダー スレッド、または選択した描画呼び出し、プリミティブ、およびピクセルによって結果が補間される頂点シェーダー スレッドをデバッグします。 頂点シェーダーの場合、頂点シェーダーの詳細を展開することで、特定の頂点へのエントリ ポイントを絞り込むことができます。  
   
-   HLSL デバッガーを使用して、シェーダーのエラーをデバッグする方法の例については、次を参照してください。[例](../debugger/graphics-diagnostics-examples.md)または「参照」セクションで、チュートリアルのリンク先。  
+   HLSL デバッガーを使用してシェーダーのエラーをデバッグする方法の例については、[例](../debugger/graphics-diagnostics-examples.md)または「関連項目」セクションのリンク先のチュートリアルを参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: 頂点の網かけによるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
- [チュートリアル: 網かけによるレンダリング エラーのデバッグ](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
+ [チュートリアル: 網掛けによるレンダリングエラーのデバッグ](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

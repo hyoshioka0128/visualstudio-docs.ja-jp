@@ -1,5 +1,5 @@
 ---
-title: ローカライズされたブートストラップパッケージを作成する方法 |Microsoft Docs
+title: ローカライズされたブートストラップパッケージを作成する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382563"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852486"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートストラップ パッケージを作成する
 ブートストラップパッケージを作成した後、ロケールごとに2つのファイルを作成して、ブートストラップパッケージのローカライズバージョンを作成できます。これには、ソフトウェアライセンス条項ファイル ( *eula .rtf*など) とパッケージマニフェスト (*package.xml*) があります。
@@ -45,7 +45,7 @@ ms.locfileid: "85382563"
 
      次の表は、ロケールに合わせるために使用できるフォルダー名を示します。
 
-    |Locale|フォルダー名|
+    |ロケール|フォルダー名|
     |------------|-----------------|
     |簡体中国語|zh-Hans|
     |繁体中国語|zh-Hant|
@@ -90,7 +90,7 @@ ms.locfileid: "85382563"
 
 6. *package.xml* ファイルを保存します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ブートストラップ パッケージの作成](../deployment/creating-bootstrapper-packages.md)
 - [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)
 - [方法: パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)
