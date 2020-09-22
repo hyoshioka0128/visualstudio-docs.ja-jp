@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440590"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842316"
 ---
-# <a name="how-to-set-permissions"></a>方法: アクセス許可を設定
+# <a name="how-to-set-permissions"></a>方法: アクセス許可を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、コンピューターの管理者が、プロファイリングに必要なセキュリティ アクセス許可を、そのコンピューター上で管理者アクセス許可を持たないユーザーまたはグループに付与する方法について説明します。  
@@ -31,7 +31,7 @@ ms.locfileid: "63440590"
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   Users グループのメンバーの場合は、チームの他のメンバーとの間で共有されるディスク上のフォルダーおよびファイルにアクセスする必要があります。 2 番目の手順「共有プロジェクト ファイルへのアクセスを許可するには」では、そのアクセスを許可する方法を説明します。  
   
@@ -48,13 +48,13 @@ ms.locfileid: "63440590"
   
 2. **[ローカル ユーザーとグループ]** を展開します。  
   
-3. **[ユーザー]** フォルダーを右クリックし、**[新しいユーザー]** をクリックします。  
+3. **[ユーザー]** フォルダーを右クリックし、 **[新しいユーザー]** をクリックします。  
   
      **[新しいユーザー]** ダイアログ ボックスが表示されます。  
   
 4. 作成するユーザー アカウントの情報をこのダイアログ ボックスのフィールドに入力します。 パスワードを指定します。 必要に応じて、ユーザーが次のログオン時にパスワードを変更することを求めるチェック ボックスを選択します。  
   
-5. **[作成]** をクリックし、**[閉じる]** をクリックします。  
+5. **[作成]** をクリックし、 **[閉じる]** をクリックします。  
   
      Users グループに新しいユーザーが作成されます。このグループのユーザーには、管理者アクセス許可が与えられていません。  
   
@@ -68,15 +68,15 @@ ms.locfileid: "63440590"
     D:\ourProject  
     ```  
   
-2. フォルダーを右クリックし、**[プロパティ]** をクリックします。  
+2. フォルダーを右クリックし、 **[プロパティ]** をクリックします。  
   
-     **[\<フォルダー名> のプロパティ]** ダイアログ ボックスが表示されます。  
+     **[\<folder name> プロパティ]** ダイアログ ボックスが表示されます。  
   
 3. **[セキュリティ]** タブをクリックします。  
   
 4. **[グループ名またはユーザー名]** ボックスにあるユーザーのアカウント名をクリックします。  
   
-5. **[\<ユーザー名> のアクセス許可]** ボックスで、**[フル コントロール]** のチェック ボックスを選択します。  
+5. **[\<user name> のアクセス許可]** ボックスで、 **[フル コントロール]** のチェック ボックスを選択します。  
   
 6. **[OK]** をクリックします。  
   
@@ -110,7 +110,7 @@ ms.locfileid: "63440590"
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    このコマンドにより、\<ユーザー名> または \<グループ名> アカウントにプロファイリング ツールへのアクセス許可が付与されます。 \<権限> オプションは、ユーザーがアクセスできるプロファイリング機能を決定します。 \<権限> オプションには次の値の 1 つ以上を指定できます。  
+    このコマンドにより、\<user name> または \<group name> アカウントにプロファイリング ツールへのアクセス許可が付与されます。 \<right> オプションは、ユーザーがアクセスできるプロファイリング機能を決定します。 \<right> オプションには次の値の 1 つ以上を指定できます。  
   
    - FullAccess - サービスからのパフォーマンス データの収集、サンプリング、セッション間のプロファイリングを含むすべてのプロファイリング メソッドへのアクセスを許可します。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "63440590"
   
    指定されたユーザーは、ログオン後に、管理者アクセス許可なしにプロファイリング ツールを使用できるようになります。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [プロファイルと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md)

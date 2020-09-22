@@ -1,5 +1,5 @@
 ---
-title: Vspackage の読み込み |Microsoft Docs
+title: Vspackage | を読み込んでいますMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439776"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841700"
 ---
 # <a name="loading-vspackages"></a>VSPackage の読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vspackage は、それらの機能が必要な場合にのみ、Visual Studio に読み込まれます。 たとえば、Visual Studio がプロジェクト ファクトリや VSPackage を実装するサービスを使用するときに VSPackage が読み込まれます。 この機能には、パフォーマンスを向上させるために可能な場合に使用される、遅延読み込みが呼び出されます。  
+Vspackage は、機能が必要な場合にのみ、Visual Studio に読み込まれます。 たとえば、VSPackage は、Visual Studio がプロジェクトファクトリまたは VSPackage が実装するサービスを使用するときに読み込まれます。 この機能は遅延読み込みと呼ばれます。これは、パフォーマンス向上のために可能な場合に使用されます。  
   
 > [!NOTE]
-> Visual Studio では、VSPackage を読み込むことがなく、VSPackage を提供するコマンドなどの VSPackage の情報を確認できます。  
+> Visual Studio では、VSPackage を読み込まずに VSPackage が提供するコマンドなど、特定の VSPackage 情報を確認できます。  
   
- Vspackage に設定できます、特定のユーザー インターフェイス (UI) のコンテキストでの自動読み込みなど、ソリューションが開いているとき。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>属性は、このコンテキストを設定します。  
+ Vspackage は、ソリューションが開いているときなど、特定のユーザーインターフェイス (UI) コンテキストで自動読み込みするように設定できます。 属性は、 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> このコンテキストを設定します。  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>特定のコンテキストで VSPackage を自動読み込み  
+### <a name="autoloading-a-vspackage-in-a-specific-context"></a>特定のコンテキストで VSPackage を自動読み込みします。  
   
-- 追加、 `ProvideAutoLoad` VSPackage 属性に属性します。  
+- `ProvideAutoLoad`属性を VSPackage 属性に追加します。  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -41,22 +41,22 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
     {. . .}  
     ```  
   
-     列挙型のフィールドを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI コンテキストとその GUID 値の一覧についてはします。  
+     <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>UI コンテキストとその GUID 値の一覧については、の列挙型フィールドを参照してください。  
   
-- ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
+- メソッドにブレークポイントを設定 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> します。  
   
-- VSPackage をビルドしてデバッグを開始します。  
+- VSPackage をビルドし、デバッグを開始します。  
   
-- ソリューションを読み込むか、1 つを作成します。  
+- ソリューションを読み込むか、ソリューションを作成します。  
   
-     VSPackage では、読み込みをブレークポイントで停止します。  
+     VSPackage は、ブレークポイントで読み込みと停止を行います。  
   
-## <a name="forcing-a-vspackage-to-load"></a>強制的に VSPackage を読み込む  
- 状況によっては、VSPackage を強制的に別の VSPackage を読み込む必要があります。 たとえば、軽量の VSPackage では、つまり、CMDUIContext として使用できないコンテキストでより大きな VSPackage を読み込む可能性があります。  
+## <a name="forcing-a-vspackage-to-load"></a>VSPackage を強制的に読み込む  
+ 状況によっては、VSPackage が別の VSPackage を強制的に読み込む必要がある場合があります。 たとえば、簡易 VSPackage は、CMDUIContext として使用できないコンテキストで、より大きな VSPackage を読み込む場合があります。  
   
- 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>をロードするために VSPackage を強制する方法。  
+ メソッドを使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> 、VSPackage に強制的に読み込むことができます。  
   
-- 次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。  
+- 次のコードを <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> VSPackage のメソッドに挿入して、別の VSPackage を強制的に読み込みます。  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -69,15 +69,15 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
   
     ```  
   
-     により、VSPackage が初期化されると、`PackageToBeLoaded`を読み込めません。  
+     VSPackage が初期化されると、強制的 `PackageToBeLoaded` に読み込まれます。  
   
-     強制読み込みは、VSPackage 通信しないに使用する必要があります。 使用[を使用して、サービスを提供する](../extensibility/using-and-providing-services.md)代わりにします。  
+     VSPackage 通信には、強制読み込みを使用しないでください。 代わりに [、を使用してサービスを提供して](../extensibility/using-and-providing-services.md) ください。  
   
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>カスタム属性を使用して、VSPackage を登録するには  
- 場合によっては、拡張機能の新しい登録属性を作成する必要があります。 新しいレジストリ キーを追加したり既存のキーに新しい値を追加する登録属性を使用することができます。 新しい属性が派生する必要があります<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>、それをオーバーライドする必要があり、<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>と<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>メソッド。  
+## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>カスタム属性を使用して VSPackage を登録する  
+ 場合によっては、拡張機能の新しい登録属性を作成する必要があります。 登録属性を使用して、新しいレジストリキーを追加したり、既存のキーに新しい値を追加したりすることができます。 新しい属性はから派生する必要があり、 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> メソッドとメソッドをオーバーライドする必要があり <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> ます。  
   
-## <a name="creating-a-registry-key"></a>レジストリ キーの作成  
- 次のコードでは、カスタム属性を作成、**カスタム**登録される VSPackage のキーの下のサブキー。  
+## <a name="creating-a-registry-key"></a>レジストリキーの作成  
+ 次のコードでは、カスタム属性によって、登録されている VSPackage のキーの下に **カスタム** サブキーが作成されます。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -102,8 +102,8 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>既存のレジストリ キーの下の新しい値を作成します。  
- カスタム値は、既存のキーを追加できます。 次のコードでは、VSPackage の登録キーを新しい値を追加する方法を示します。  
+## <a name="creating-a-new-value-under-an-existing-registry-key"></a>既存のレジストリキーの下に新しい値を作成する  
+ 既存のキーにカスタム値を追加できます。 次のコードは、VSPackage 登録キーに新しい値を追加する方法を示しています。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -127,5 +127,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [VSPackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>参照  
+ [VSPackages](../extensibility/internals/vspackages.md)

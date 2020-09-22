@@ -1,5 +1,5 @@
 ---
-title: ブレークポイントの削除 |Microsoft Docs
+title: ブレークポイントを削除する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42cd353c216c21d14c4f6592da809c72acdba664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409406"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841800"
 ---
 # <a name="deleting-a-breakpoint"></a>ブレークポイントの削除
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-次に示します保留中のブレークポイントを削除するときのプロセスを。  
+保留中のブレークポイントを削除するプロセスを次に示します。  
   
 ## <a name="deletion-process"></a>削除プロセス  
- セッション デバッグ マネージャー (SDM) を呼び出す、 [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)から保留中のブレークポイントとバインドされたすべてのブレークポイントを削除するメソッドにバインドされています。  
+ セッションデバッグマネージャー (SDM) は、 [IDebugPendingBreakpoint2::D e)](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) メソッドを呼び出して、保留中のブレークポイントとバインドされているすべてのブレークポイントを削除します。  
   
 > [!NOTE]
-> 呼び出して 1 つのバインドされたブレークポイントを削除することも[IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)します。  
+> [IDebugBoundBreakpoint2::D e)](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)を呼び出すことによって、1つのバインドされたブレークポイントを削除することもできます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのイベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_lexicalparent |Microsoft Docs
+title: 'IDiaSymbol:: get_lexicalParent |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b5f9da456282daca52d6c924b62f21e13545928
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809817"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841852"
 ---
-# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
+# <a name="idiasymbolget_lexicalparent"></a>IDiaSymbol::get_lexicalParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-シンボルの構文の親への参照を取得します。  
+記号の構文上の親への参照を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,19 +35,19 @@ HRESULT get_lexicalParent ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)シンボルの構文の親を表すオブジェクト。  
+ 入出力記号の構文上の親を表す [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- シンボルの構文の親は、外側の関数またはモジュールにです。 たとえば、関数パラメーターまたはローカル変数の構文の親は、関数の構文の親は、モジュールで定義されている、関数自体です。  
+## <a name="remarks"></a>注釈  
+ シンボルの構文上の親は、外側の関数またはモジュールです。 たとえば、関数パラメーターまたはローカル変数の構文の親は、関数自体です。関数の構文の親は、定義されているモジュールです。  
   
- 親の構文が記載されているように表示される可能なシンボル[シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)します。  
+ 構文の親として使用できるシンボルは、 [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)に記載されています。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

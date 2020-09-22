@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: ビルドで環境変数を使用する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437892"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841564"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>方法: ビルドで環境変数を使用する
+# <a name="how-to-use-environment-variables-in-a-build"></a>方法 : ビルドで環境変数を使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロジェクトをビルドするとき、プロジェクト ファイルまたはプロジェクトを構成するファイルに含まれていない情報を使用してビルド オプションを設定する必要がある場合があります。 通常、この情報は環境変数に格納されます。  
@@ -65,10 +65,10 @@ ms.locfileid: "63437892"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
 
 [MSBuild](msbuild.md)
 
 [MSBuild プロパティ](../msbuild/msbuild-properties1.md)
 
-[方法: 同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[方法: 同じソースファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

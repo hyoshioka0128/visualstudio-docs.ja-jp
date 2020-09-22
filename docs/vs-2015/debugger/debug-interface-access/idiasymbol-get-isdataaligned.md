@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_isdataaligned |Microsoft Docs
+title: 'IDiaSymbol:: get_isDataAligned |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64810730"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841869"
 ---
-# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
+# <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ユーザー定義型 (UDT) がいくつかの特定のメモリ境界に配置されたかどうかを指定するフラグを取得します。  
+ユーザー定義型 (UDT) が特定のメモリ境界に固定されているかどうかを指定するフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,23 +35,23 @@ HRESULT get_isDataAligned(
   
 #### <a name="parameters"></a>パラメーター  
  `pFlag`  
- [out]返します`TRUE`UDT がいくつかメモリ境界に配置された場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` UDT が一部のメモリ境界に固定されている場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- 既定以外のデータの配置で実行可能ファイルがコンパイルされるとき、このプロパティは設定一般にします。 Microsoft C コンパイラがコマンド ライン オプションをデータの配置を変更するなど、/Zp<em>#</em>ここで、 *#* はバイト値です。  
+## <a name="remarks"></a>注釈  
+ このプロパティは、通常、既定以外のデータ配置で実行可能ファイルがコンパイルされるときに設定されます。 たとえば、Microsoft C++ コンパイラでは、コマンドラインオプションである/Zp を使用してデータの配置を変更できます <em>#</em> 。ここで、 *#* はバイト値です。  
   
-## <a name="requirements"></a>必要条件  
+## <a name="requirements"></a>要件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK バージョン 8.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

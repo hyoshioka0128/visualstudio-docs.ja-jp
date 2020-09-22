@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 502ab8dbafd12f3b00949b5b52609c4c8c8ddce9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433926"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842025"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>命令ポインター (IP) ビュー - サンプリング データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "63433926"
 > [!NOTE]
 > Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
-|Column|説明|  
+|Column|[説明]|  
 |------------|-----------------|  
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|  
 |**プロセス名**|プロセスの名前です。|  
 |**モジュール名**|命令を含むモジュールの名前。|  
 |**モジュール パス**|命令を含むモジュールのパスです。|  
-|**ソース ファイル**|命令を含むソース ファイルです。|  
+|**[転送元ファイル]**|命令を含むソース ファイル。|  
 |**関数名**|命令を含む関数の名前です。|  
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|  
 |**関数アドレス**|読み込まれたバイナリ内の関数の開始メモリ アドレス。|  
@@ -41,8 +41,8 @@ ms.locfileid: "63433926"
 |**ソース開始文字番号**|このサンプルが収集されたソース ファイル行内の開始文字のオフセットです。|  
 |**ソース終了文字番号**|このサンプルが収集されたソース ファイル行内の終了文字のオフセットです。|  
 |**命令ポインター アドレス**|読み込まれたバイナリ内の命令のアドレスです。|  
-|**サンプル数 (関数のみ)**|命令を実行していたときに収集されたサンプルの合計数です。|  
-|**サンプル % (関数のみ)**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|  
+|**排他サンプル数**|命令を実行していたときに収集されたサンプルの合計数です。|  
+|**排他サンプル %**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|  
   
-## <a name="see-also"></a>関連項目  
- [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+## <a name="see-also"></a>参照  
+ [命令ポインター (Ip) ビュー-サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

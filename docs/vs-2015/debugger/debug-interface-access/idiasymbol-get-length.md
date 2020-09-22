@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_length |Microsoft Docs
+title: 'IDiaSymbol:: get_length |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8c757d3da3049c29f7da13b13985dc2c50b4b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837661"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842296"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-この記号によって表されるオブジェクトによって使用されるメモリのバイトまたはビット数を取得します。  
+このシンボルによって表されるオブジェクトによって使用されるメモリのビット数またはバイト数を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,16 +35,16 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]この記号によって表されるオブジェクトによって使用されるメモリのビットまたはバイト数を返します。  
+ 入出力このシンボルによって表されるオブジェクトによって使用されるメモリのバイト数またはビット数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- 場合、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)のシンボルは`LocIsBitField`、このメソッドによって返される文字数は bits では、文字数はそれ以外の場合、その他のすべての場所の種類のバイト数でします。  
+## <a name="remarks"></a>注釈  
+ シンボルの [LocationType 列挙](../../debugger/debug-interface-access/locationtype.md) がの場合 `LocIsBitField` 、このメソッドによって返される長さはビット単位になります。それ以外の場合、他のすべての場所の種類の長さはバイト単位になります。  
   
 ## <a name="example"></a>例  
   
@@ -54,13 +54,13 @@ ULONGLONG   length;
 pSymbol->get_length( &length );  
 ```  
   
-## <a name="requirements"></a>必要条件  
+## <a name="requirements"></a>要件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK v7.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)

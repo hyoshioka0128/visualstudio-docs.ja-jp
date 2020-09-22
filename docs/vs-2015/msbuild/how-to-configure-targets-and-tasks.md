@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: ターゲットとタスクを構成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440052"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841780"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>方法 : ターゲットとタスクを構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,5 +110,5 @@ ms.locfileid: "63440052"
 > [!NOTE]
 > タスク パラメーターは、タスク ホストのコンテキストではなく、親ノードのコンテキストで評価されます。ランタイムまたはアーキテクチャに依存する環境変数は (プログラム ファイルの場所など)、親ノードに一致する値として評価されます。  一方、同じ環境変数がタスクによって直接読み取られた場合は、タスク ホストのコンテキストで正しく評価されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [ターゲットとタスクの構成](../msbuild/configuring-targets-and-tasks.md)

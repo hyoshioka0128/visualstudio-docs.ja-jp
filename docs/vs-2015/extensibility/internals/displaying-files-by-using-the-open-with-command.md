@@ -1,5 +1,5 @@
 ---
-title: 開く を使用してコマンド ファイルの表示 |Microsoft Docs
+title: Open With Command | を使用したファイルの表示Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,27 +13,27 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de43b6c4f441f8c6bde2d6c248274aed3937a7ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408811"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841504"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>プログラムから開くコマンドを使用したファイルの表示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロジェクトを表示するための IDE を問い合わせることができる、**プログラムから開く** ダイアログ ボックス。 この要求には、ユーザーを標準のエディターの選択範囲を持つファイルを開くことが求められます。 次の手順では、このプロセスについて説明します。  
+プロジェクトでは、[ **ファイルを開くアプリケーション** の選択] ダイアログボックスを表示するよう IDE に要求できます。 この要求は、標準エディターを選択したファイルを開くようにユーザーに求めます。 次に、このプロセスの手順を説明します。  
   
-1. プロジェクト呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>、OSE_UseOpenWithDialog の値を指定する、`OSEOpenDocEditor`パラメーター。  
+1. プロジェクトが <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出し、パラメーターに OSE_UseOpenWithDialog の値を指定 `OSEOpenDocEditor` します。  
   
-2. IDE、ドキュメントのファイル名拡張子に基づいて、レジストリに一覧表示するエディターは、指定されたドキュメントを開くかを決定およびでは、この情報が表示されます、**ファイルを開く** ダイアログ ボックス。  
+2. IDE では、ドキュメントのファイル名拡張子に基づいて、指定されたドキュメントを開くことができるエディターを特定し、その情報を [ファイル **を開くアプリケーション** の選択] ダイアログボックスに表示します。  
   
     > [!NOTE]
-    > プロジェクトに含める必要がある組み込みのエディターを**プログラムから開く** ダイアログ ボックスはそのような各エディターのエディター ファクトリを登録する必要があります。 組み込みエディター機能の実装で実施されるプロジェクトの特定の種類と共に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 IDE では、コアのテキスト エディターとバイナリ エディターの組み込みエディター ファクトリがあります。 IDE には、各登録済みの Windows ファイルの関連付けの代わりには、エディター ファクトリのインスタンスも作成します。 このようなファイルの例は、Microsoft Word です。  
+    > [ **ファイルを開くアプリケーション** の選択] ダイアログボックスに含める必要がある固有のエディターを持つプロジェクトでは、そのようなエディターごとにエディターファクトリを登録する必要があります。 固有のエディターは、特定の種類のプロジェクトと共にのみ機能します。これは、メソッドの実装に適用され <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> ます。 IDE には、コアテキストエディターとバイナリエディター用の組み込みエディターファクトリが用意されています。 IDE では、登録されている各 Windows ファイルの関連付けに代わって、エディターファクトリのインスタンスも作成されます。 このようなファイルの例として、Microsoft Word があります。  
   
-3. ユーザーがから項目を選択するとすぐ、**プログラムから開く** ダイアログ ボックスで、IDE が呼び出すことによってドキュメントを開く<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>メソッド。 詳細については、「[方法 :標準のエディターを開く](../../extensibility/how-to-open-standard-editors.md)します。  
+3. ユーザーが [ **ファイルを開くアプリケーション** の選択] ダイアログボックスから項目を選択するとすぐに、IDE はメソッドを呼び出してドキュメントを開き <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> ます。 詳細については、「 [方法: 標準エディターを開く](../../extensibility/how-to-open-standard-editors.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [開くと、プロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)   
- [ファイルを開くコマンドを使用してファイルを表示します。](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
+## <a name="see-also"></a>参照  
+ [プロジェクト項目を開いて保存する](../../extensibility/internals/opening-and-saving-project-items.md)   
+ [[ファイルを開く] コマンドを使用したファイルの表示](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
  [方法: 標準のエディターを開く](../../extensibility/how-to-open-standard-editors.md)

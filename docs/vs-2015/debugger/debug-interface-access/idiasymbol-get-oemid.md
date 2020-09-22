@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 406645893803094ce0ebdd4679d9809d7645401f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798072"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841632"
 ---
-# <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
+# <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-シンボルの供給元 (OEM) の ID 値を取得します。  
+シンボルの相手先ブランド供給 (OEM) ID 値を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,17 +35,17 @@ HRESULT get_oemId ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]OEM を識別する一意の値を返します。  
+ 入出力OEM を識別する一意の値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- このプロパティを使用したシンボルにのみ適用されます、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)の入力`SymTagCustomType`します。  
+## <a name="remarks"></a>注釈  
+ このプロパティは、 [Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md) 型がのシンボルにのみ適用さ `SymTagCustomType` れます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)

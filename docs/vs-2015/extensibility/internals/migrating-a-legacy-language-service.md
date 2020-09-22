@@ -11,73 +11,73 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434373"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842088"
 ---
 # <a name="migrating-a-legacy-language-service"></a>従来の言語サービスの移行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-以降のバージョンの Visual Studio に従来の言語サービスを移行するには、プロジェクトを更新して、source.extension.vsixmanifest ファイルをプロジェクトに追加します。 言語サービス自体は引き続き機能と同様に、Visual Studio エディターで適応させるのでします。  
+レガシ言語サービスを Visual Studio の新しいバージョンに移行するには、プロジェクトを更新し、source.extension.vsixmanifest ファイルをプロジェクトに追加します。 言語サービス自体は以前と同様に機能します。これは、Visual Studio エディターによってそれが適応されるためです。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 言語サービスを実装する新しい方法の詳細についてを参照してください。[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)します。  
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 言語サービスを実装する新しい方法の詳細については、「 [エディターと言語サービスの拡張機能](../../extensibility/editor-and-language-service-extensions.md)」を参照してください。  
   
 > [!NOTE]
-> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。  
   
-## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>以降のバージョンに、Visual Studio 2008 の言語サービス ソリューションを移行します。  
- 次の手順では、RegExLanguageService という名前の Visual Studio 2008 サンプルを適合させる方法を示します。 Visual Studio 2008 SDK のインストールでこのサンプルを見つけることができます、 *Visual Studio SDK インストール パス*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ フォルダー。  
+## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Visual Studio 2008 言語サービスソリューションを新しいバージョンに移行する  
+ 次の手順では、RegExLanguageService という名前の Visual Studio 2008 サンプルを適合させる方法を示します。 このサンプルは、visual studio 2008 SDK のインストールで、 *Visual STUDIO sdk のインストールパス*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ フォルダーにあります。  
   
 > [!IMPORTANT]
-> 明示的に設定する必要がある、言語サービスが色を定義していない場合<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A>に`true`を VSPackage に。  
+> 言語サービスで色が定義されていない場合は、VSPackage でを明示的にに設定する必要があり <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> `true` ます。  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  
 ```  
   
-#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>以降のバージョンの Visual Studio 2008 の言語サービスに移行するには  
+#### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Visual Studio 2008 言語サービスを新しいバージョンに移行するには  
   
-1. Visual Studio と Visual Studio SDK の新しいバージョンをインストールします。 SDK をインストールする方法の詳細については、次を参照してください。 [Visual Studio SDK をインストールする](../../extensibility/installing-the-visual-studio-sdk.md)します。  
+1. 新しいバージョンの Visual Studio と Visual Studio SDK をインストールします。 SDK のインストール方法の詳細については、「 [Visual STUDIO sdk のインストール](../../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
-2. (Visual Studio に読み込んでなし、RegExLangServ.csproj ファイルを編集します。  
+2. RegExLangServ ファイルを編集します (Visual Studio に読み込まれません)。  
   
-     `Import` Microsoft.VsSDK.targets ファイルを参照するノードは、値を次のテキストに置き換えます。  
+     次のテキストを使用して、この `Import` ファイルを参照するノードで値をに置き換えます。  
   
     ```  
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets  
     ```  
   
-3. ファイルを保存して、閉じます。  
+3. ファイルを保存して閉じます。  
   
-4. RegExLangServ.sln ソリューションを開きます。  
+4. RegExLangServ ソリューションを開きます。  
   
-5. **一方向のアップグレード**ウィンドウが表示されます。 **[OK]** をクリックします。  
+5. [ **一方向のアップグレード** ] ウィンドウが表示されます。 **[OK]** をクリックします。  
   
-6. プロジェクトのプロパティを更新します。 開く、**プロジェクト プロパティ**ウィンドウでプロジェクト ノードを選択して、**ソリューション エクスプ ローラー**、右クリックし、および選択**プロパティ**します。  
+6. プロジェクトのプロパティを更新します。 [ **プロジェクトのプロパティ** ] ウィンドウを開くには、 **ソリューションエクスプローラー**でプロジェクトノードを選択し、右クリックして、[ **プロパティ**] を選択します。  
   
-    - **アプリケーション** タブで、変更**ターゲット フレームワーク**に**4.6.1**します。  
+    - [ **アプリケーション** ] タブで、[ **ターゲットフレームワーク** ] を **4.6.1**に変更します。  
   
-    - **デバッグ** タブで、**外部プログラムの開始**ボックスに「  **\<Visual Studio インストール パス > \Common7\IDE\devenv.exe。** します。  
+    - [**デバッグ**] タブの [**外部プログラムの開始**] ボックスに「 ** \<Visual Studio installation path>\Common7\IDE\devenv.exe**」と入力します。  
   
-         **コマンドライン引数**ボックスに、入力/ **/rootsuffix Exp**します。  
+         [ **コマンドライン引数** ] ボックスに、「/**rootsuffix Exp**」と入力します。  
   
 7. 次の参照を更新します。  
   
-    - Microsoft.VisualStudio.Shell.9.0.dll への参照を削除し、Microsoft.VisualStudio.Shell.14.0.dll および Microsoft.VisualStudio.Shell.Immutable.11.0.dll への参照を追加します。  
+    - Microsoft.VisualStudio.Shell.9.0.dll への参照を削除し、Microsoft.VisualStudio.Shell.14.0.dll と Microsoft.VisualStudio.Shell.Immutable.11.0.dll への参照を追加します。  
   
     - Microsoft.VisualStudio.Package.LanguageService.9.0.dll への参照を削除し、Microsoft.VisualStudio.Package.LanguageService.14.0.dll への参照を追加します。  
   
     - Microsoft.VisualStudio.Shell.Interop.10.0.dll への参照を追加します。  
   
-8. VsPkg.cs ファイルを開きの値を変更、`DefaultRegistryRoot`属性を  
+8. VsPkg.cs ファイルを開き、属性の値をに変更します。 `DefaultRegistryRoot`  
   
     ```  
     "Software\\Microsoft\\VisualStudio\\14.0Exp"  
     ```  
   
-9. 元のサンプルでは、VsPkg.cs し、次の属性を追加する必要があります、その言語サービスは登録されません。  
+9. 元のサンプルでは言語サービスが登録されていないため、次の属性を VsPkg.cs に追加する必要があります。  
   
     ```  
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]  
@@ -85,29 +85,29 @@ ms.locfileid: "63434373"
   
 10. Source.extension.vsixmanifest ファイルを追加する必要があります。  
   
-    - 既存の拡張機能から、プロジェクト ディレクトリにこのファイルをコピーします。 (このファイルを取得する方法の 1 つは、VSIX プロジェクトを作成することです。 (**ファイル**、 をクリック**新規**、 をクリックし、**プロジェクト**。 Visual Basic または c# のクリック**拡張**を選択し、 **VSIX プロジェクト**)。  
+    - このファイルを既存の拡張機能からプロジェクトディレクトリにコピーします。 (このファイルを取得する方法の1つとして、VSIX プロジェクトを作成します ([ **ファイル**] の下にある [ **新規**] をクリックし、[ **プロジェクト**] をクリックします)。 Visual Basic または C# の [ **拡張機能**] をクリックし、[ **VSIX プロジェクト**] を選択します)。  
   
     - ファイルをプロジェクトに追加します。  
   
-    - ファイルの**プロパティ**設定**ビルド アクション**に**None**します。  
+    - ファイルの **プロパティ**で、[ **ビルドアクション** ] を **[なし**] に設定します。  
   
-    - ファイルを開く、 **VSIX マニフェスト エディター**します。  
+    - **VSIX マニフェストエディター**を使用してファイルを開きます。  
   
     - 次のフィールドを変更します。  
   
-    - **ID**:RegExLangServ  
+    - **ID**: RegExLangServ  
   
-    - **製品名**:RegExLangServ  
+    - **製品名**: RegExLangServ  
   
-    - **説明**: 正規表現の言語サービス。  
+    - **説明**: 正規表現言語サービス。  
   
-    - [**資産**、] をクリックして**新規**を選択します、**型**に**Microsoft.VisualStudio.VsPackage**、設定、**ソース**に**現在のソリューションでプロジェクトを**、し、設定、**プロジェクト**に**RegExLangServ**します。  
+    - [ **アセット**] の下にある [ **新規**] をクリックし、[ **種類** ] を [ **VisualStudio**] に選択します。次に、[ **ソース** ] を [ **現在のソリューションのプロジェクト**] に設定し、 **プロジェクト** を [ **RegExLangServ**] に設定します。  
   
     - ファイルを保存して閉じます。  
   
-11. ソリューションをビルドします。 ビルドされたファイルに配置されます **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** します。  
+11. ソリューションをビルドします。 ビルドされたファイルは **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **に配置されます。  
   
-12. デバッグを開始します。 Visual Studio の 2 番目のインスタンスが開かれます。  
+12. デバッグを開始します。 Visual Studio の2番目のインスタンスが開かれました。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)

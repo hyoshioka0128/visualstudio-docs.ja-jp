@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName |Microsoft Docs
+title: 'IDebugCoreServer3:: GetServerFriendlyName |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa81daf7ab1d592e6a2cd460268e5d66925f61e1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445274"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841505"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ int GetServerFriendlyName(
   
 #### <a name="parameters"></a>パラメーター  
  `pbstrName`  
- [out]サーバーのフレンドリ名を返します。  
+ 入出力サーバーのフレンドリ名を返します。  
   
 > [!NOTE]
-> 呼び出し元は、文字列を解放します。  
+> 呼び出し元は、文字列を解放する必要があります。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- サーバーのユーザーにリリースされた、このメソッドによって返される名前は、サーバーの完全名です。 サーバーの自動起動の名前は、マシンのサーバーが実行されていることします。  
+## <a name="remarks"></a>注釈  
+ ユーザーが起動したサーバーの場合、このメソッドによって返される名前はサーバーの完全な名前になります。 自動起動サーバーの場合は、サーバーが実行されているコンピューターの名前です。  
   
- コンピューター対象の名前では、呼び出し、 [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)メソッド。  
+ コンピューター指向の名前の場合は、 [Getservername](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) メソッドを呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

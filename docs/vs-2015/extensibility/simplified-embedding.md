@@ -11,32 +11,32 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447191"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841376"
 ---
 # <a name="simplified-embedding"></a>簡略化された埋め込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-(つまりの子を作成する) のドキュメント ビュー オブジェクトの親がある場合、エディターで有効には、簡略化された埋め込み[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、および<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>インターフェイスは、そのウィンドウのコマンドを処理するために実装されます。 簡略化された埋め込みエディターには、アクティブなコントロールをホストできません。 簡略化された埋め込みエディターを作成するために使用するオブジェクトは、次の図に表示されます。  
+簡略化された埋め込みは、ドキュメントビューオブジェクトが親 (つまり、の子) であり、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> そのウィンドウコマンドを処理するためにインターフェイスが実装されている場合に、エディターで有効になります。 簡略化された埋め込みエディターは、アクティブなコントロールをホストできません。 簡略化された埋め込みを使用してエディターを作成するために使用するオブジェクトを次の図に示します。  
   
  ![簡略化された埋め込みエディター グラフィック](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
-簡略化された埋め込みエディター  
+簡略化された埋め込みのエディター  
   
 > [!NOTE]
-> のみ、この図では、オブジェクトの`CYourEditorFactory`標準的なファイル ベースのエディターを作成するオブジェクトが必要です。 カスタム エディターを作成する場合は、実装する必要はありません<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>エディター、独自のプライベートの永続化メカニズムがないためです。 非カスタム エディターに対し、ただしを行う必要があります。  
+> この図のオブジェクトのうち、 `CYourEditorFactory` 標準的なファイルベースのエディターを作成するために必要なのはオブジェクトだけです。 カスタムエディターを作成する場合、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> エディターは独自のプライベート永続化メカニズムを持つ可能性があるため、を実装する必要はありません。 ただし、カスタムエディター以外の場合は、これを行う必要があります。  
   
- 含まれるすべてのインターフェイスを簡素化された埋め込みエディターを作成するために実装、`CYourEditorDocument`オブジェクト。 ただし、ドキュメント データの複数のビューをサポートするために分割データとビューのオブジェクトを個別にインターフェイス、次の表に記載されています。  
+ 簡略化された埋め込みを使用してエディターを作成するために実装されるすべてのインターフェイスは、オブジェクトに含まれてい `CYourEditorDocument` ます。 ただし、ドキュメントデータの複数のビューをサポートするには、次の表に示すように、インターフェイスを別のデータに分割し、オブジェクトを表示します。  
   
-|Interface|インターフェイスの場所|用途|  
+|インターフェイス|インターフェイスの場所|用途|  
 |---------------|---------------------------|---------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|表示|親ウィンドウへの接続を提供します。|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|表示|コマンドを処理します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|表示|ステータス バーを更新できるようにします。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|表示|により、**ツールボックス**項目。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|データ|ファイルが変更されたときに通知を送信します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|データ|ファイルの種類の名前を付けて保存機能を有効にします。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|データ|ドキュメントの永続性を有効にします。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|データ|再読み込みをトリガーするなどのファイル変更イベントの抑制を使用できます。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|View|親ウィンドウへの接続を提供します。|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|View|コマンドを処理します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|View|ステータス バーを更新できるようにします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|View|**ツールボックス**項目を有効にします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Data|ファイルが変更されたときに通知を送信します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Data|ファイルの種類に対して名前を付けて保存機能を有効にします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Data|ドキュメントの永続性を有効にします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Data|再読み込みのトリガーなど、ファイル変更イベントの抑制を許可します。|

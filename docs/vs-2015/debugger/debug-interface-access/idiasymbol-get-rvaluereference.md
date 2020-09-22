@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_rvaluereference |Microsoft Docs
+title: 'IDiaSymbol:: get_RValueReference |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f20eed63b91714854320ef6bb311ca75f14de62e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64838162"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842320"
 ---
-# <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
+# <a name="idiasymbolget_rvaluereference"></a>IDiaSymbol::get_RValueReference
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ポインター型が右辺値参照かどうかを指定するフラグを取得します。 使用する場合、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)ポインター型に設定されます。  
+ポインター型が右辺値参照であるかどうかを指定するフラグを取得します。 [Symtagenum 列挙体](../../debugger/debug-interface-access/symtagenum.md)がポインター型に設定されている場合は、を使用します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,22 +35,22 @@ HRESULT get_RValueReference (
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`ポインターが、右辺値参照である場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` ポインターが右辺値参照である場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

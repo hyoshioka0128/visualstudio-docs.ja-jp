@@ -1,5 +1,5 @@
 ---
-title: 機能拡張インターフェイスによる UI 機能をカスタマイズします。
+title: 機能拡張インターフェイスを使用した UI 機能のカスタマイズ
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445482"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841413"
 ---
-# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>機能拡張インターフェイスによる UI 機能をカスタマイズします。
+# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>機能拡張インターフェイスを使用した UI 機能のカスタマイズ
   Visual Studio に含まれる Office 開発ツールは、VSTO アドインにおけるカスタム作業ウィンドウ、リボンのカスタマイズ、および Outlook フォーム領域の作成に使用可能な、多数の実装の詳細を処理するクラスとデザイナーを提供します。 ただし、特別な要件がある場合、各機能の *拡張インターフェイス* を自分で実装することもできます。
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
@@ -37,23 +37,23 @@ ms.locfileid: "63445482"
 
  Visual Studio に含まれる Office プロジェクト テンプレートを使用して VSTO アドインを作成する場合、リボンなどの機能をカスタマイズするために機能拡張インターフェイスを実装する必要はありません。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] はこれらのインターフェイスを実装します。 代わりに、Visual Studio が提供する、より直観的なクラスおよびデザイナーを使用することもできます。 ただし、必要に応じて、機能拡張インターフェイスを直接 VSTO アドインに実装することもできます。
 
- クラスとこれらの機能に関して Visual Studio が提供されるデザイナーの詳細については、次を参照してください[カスタム作業ウィンドウの](../vsto/custom-task-panes.md)、[リボン デザイナー](../vsto/ribbon-designer.md)、および[作成 Outlook フォーム領域の](../vsto/creating-outlook-form-regions.md)。
+ これらの機能のために Visual Studio に用意されているクラスとデザイナーの詳細については、「 [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」、「 [リボンデザイナー](../vsto/ribbon-designer.md)」、および「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
 
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>VSTO アドインに実装できる機能拡張インターフェイス
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>VSTO アドインで実装できる機能拡張インターフェイス
  次の表に、実装可能な機能拡張インターフェイスとそれらをサポートするアプリケーションを示します。
 
-|Interface|説明|アプリケーション|
+|インターフェイス|説明|アプリケーション|
 |---------------|-----------------|------------------|
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|このインターフェイスを実装してリボン UI をカスタマイズします。 **注:** 追加することができます、**リボン (XML)** 、既定値を生成するプロジェクトに項目<xref:Microsoft.Office.Core.IRibbonExtensibility>VSTO アドインに実装します。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|このインターフェイスを実装してリボン UI をカスタマイズします。 **注:**  プロジェクトに **リボン (XML)** 項目を追加して、VSTO アドインで既定の実装を生成でき <xref:Microsoft.Office.Core.IRibbonExtensibility> ます。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|このインターフェイスを実装してカスタム作業ウィンドウを作成します。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|このインターフェイスを実装して Outlook フォーム領域を作成します。|Outlook|
 
  Microsoft Office で定義されている機能拡張インターフェイスには他に、 <xref:Microsoft.Office.Core.IBlogExtensibility>、 <xref:Microsoft.Office.Core.EncryptionProvider>、および <xref:Microsoft.Office.Core.SignatureProvider>があります。 Visual Studio では、Office プロジェクト テンプレートを使用して VSTO アドインにこれらのインターフェイスを実装することはサポートされていません。
 
-## <a name="use-extensibility-interfaces"></a>機能拡張インターフェイスを使用して、
+## <a name="use-extensibility-interfaces"></a>機能拡張インターフェイスの使用
  機能拡張インターフェイスを使用して UI をカスタマイズするには、VSTO アドイン プロジェクトに適切なインターフェイスを実装します。 次に、そのインターフェイスを実装するクラスのインスタンスを返すために、 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドをオーバーライドします。
 
- 実装する方法を示すサンプル アプリケーションについて、 <xref:Microsoft.Office.Core.IRibbonExtensibility>、 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>、および<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>Outlook 用 VSTO アドインでインターフェイスの UI マネージャーのサンプルを参照してください[Office 開発のサンプル](../vsto/office-development-samples.md)します。
+ Outlook 用の VSTO アドインで、、およびの各インターフェイスを実装する方法を示すサンプルアプリケーションについ <xref:Microsoft.Office.Core.IRibbonExtensibility> <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> ては <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> 、「 [Office 開発](../vsto/office-development-samples.md)のサンプル」の UI マネージャーのサンプルを参照してください。
 
 ### <a name="example-of-implementing-an-extensibility-interface"></a>機能拡張インターフェイスの実装の例
  次のコード例は、カスタム作業ウィンドウを作成するための <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> インターフェイスの簡単な実装を示します。 この例では、2 つのクラスを定義しています。
@@ -68,18 +68,18 @@ ms.locfileid: "63445482"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]
 
-  実装の詳細については<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>を参照してください[、2007 Office system でカスタム作業ウィンドウを作成する](/previous-versions/office/developer/office-2007/aa338197(v=office.12))Microsoft Office ドキュメントにします。
+  の実装の詳細については <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 、Microsoft Office のドキュメントの「 [2007 Office システムでのカスタム作業ウィンドウの作成](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) 」を参照してください。
 
-### <a name="example-of-overriding-the-requestservice-method"></a>RequestService メソッドをオーバーライドする例
+### <a name="example-of-overriding-the-requestservice-method"></a>RequestService メソッドのオーバーライドの例
  次のコード例は、前のコード例から <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> クラスのインスタンスを返すために `TaskPaneHelper` メソッドをオーバーライドする方法を示します。 *serviceGuid* パラメーターの値を検査し、要求されているインターフェイスを特定して、そのインターフェイスを実装するオブジェクトを返します。
 
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
-- [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)
+- [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
-- [他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
+- [他の Office ソリューションから VSTO アドインのコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Architecture of VSTO Add-Ins](../vsto/architecture-of-vsto-add-ins.md)

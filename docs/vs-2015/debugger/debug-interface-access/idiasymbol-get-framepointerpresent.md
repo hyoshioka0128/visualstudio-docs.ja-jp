@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_framepointerpresent |Microsoft Docs
+title: 'IDiaSymbol:: get_framePointerPresent |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51b5f8c24dd4109d8760ffeede4184daf06037f1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793117"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841553"
 ---
-# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+# <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-フレーム ポインターが存在するかどうかを指定するフラグを取得します。 使用する場合、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)に設定されている`SymTagFunction`します。  
+フレームポインターが存在するかどうかを指定するフラグを取得します。 [Symtagenum 列挙型](../../debugger/debug-interface-access/symtagenum.md)がに設定されている場合は、を使用し `SymTagFunction` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,22 +35,22 @@ HRESULT get_framePointerPresent( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`フレーム ポインターが存在するそれ以外の場合は、返す`FALSE`します。  
+ [out]] `TRUE` フレームポインターが存在する場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

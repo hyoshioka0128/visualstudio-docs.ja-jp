@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID |Microsoft Docs
+title: 'IDebugProperty3:: CreateObjectID |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0035faad9078acd70886d597f039c0d8de5ee12f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403198"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841481"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-その他のすべてのプロパティ間で一意であることを確認するこのプロパティの一意の ID を作成します。  
+このプロパティの一意の ID を作成して、他のすべてのプロパティ間で一意であることを確認します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,16 +37,16 @@ int CreateObjectID();
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- セッション デバッグ マネージャーがこのプロパティは、その他のすべてのプロパティの間で一意に識別することを確認するときに、このメソッドが呼び出されます。 デバッグ エンジン (DE) は、処理プロパティが既に一意に識別される場合を除き、このメソッドをサポートしています。 返すかどうか、DE は、このメソッドをサポートしていません、`E_NOTIMPL`します。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、セッションデバッグマネージャーが、このプロパティが他のすべてのプロパティで一意に識別されるようにする必要があるときに呼び出されます。 デバッグエンジン (DE) は、対応するプロパティが既に一意に識別されている場合を除き、このメソッドをサポートします。 DE がこのメソッドをサポートしていない場合は、を返し `E_NOTIMPL` ます。  
   
- 一意の ID が作成された`CreateObjectID`が破棄されるときに、 [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)メソッドが呼び出される; も、このプロパティを一意に識別するための必要性の終端を表すこれです。  
+ で作成された一意の ID `CreateObjectID` は、 [destroyobjectid](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) メソッドが呼び出されたときに破棄されます。これにより、このプロパティを一意に識別する必要があることが通知されます。  
   
 > [!NOTE]
-> 一意の Id にして必要な DE を行うことができます、この一意の ID を取得するメソッドがないときに、`CreateObjectID`メソッドが呼び出されます。  
+> この一意の ID を取得する方法はありません。そのため、メソッドが呼び出されたときに、DE は一意の Id に必要な操作を実行でき `CreateObjectID` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

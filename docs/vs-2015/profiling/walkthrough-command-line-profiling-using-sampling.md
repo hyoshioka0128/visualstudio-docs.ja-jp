@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439684"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842037"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>チュートリアル: コマンドラインのサンプリングを使用したプロファイリング
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>チュートリアル: サンプリングを使ったコマンド ライン プロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、コマンド ライン ツールを使用したアプリケーションのプロファイリング方法と、パフォーマンス上の問題をサンプリングによって特定する方法について説明します。  
@@ -33,7 +33,7 @@ ms.locfileid: "63439684"
   
 - サンプリングしたプロファイリング結果を分析して、パフォーマンス上の問題を特定および修正します。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
+## <a name="prerequisites"></a>前提条件  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、または [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -105,9 +105,9 @@ ms.locfileid: "63439684"
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  
         ```  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)   
- [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの概要](../profiling/performance-session-overview.md)   
+ [コマンドラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
- [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
+ [サンプリングデータ値について](../profiling/understanding-sampling-data-values.md)   
+ [パフォーマンスレポートのビュー](../profiling/performance-report-views.md)

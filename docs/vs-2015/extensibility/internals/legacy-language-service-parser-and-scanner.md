@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービス パーサーとスキャナー |Microsoft Docs
+title: 従来の言語サービスパーサーとスキャナー |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434363"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842144"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-パーサーは、言語サービスの中核です。 マネージ パッケージ フレームワーク (MPF) 言語のクラスには、表示されているコードに関する情報を選択する言語のパーサーが必要です。 パーサーは、テキストを構文トークンに分割し、し、それらのトークンの種類と機能を識別します。  
+パーサーは言語サービスの中核です。 Managed Package Framework (MPF) 言語クラスでは、表示されているコードに関する情報を選択する言語パーサーが必要です。 パーサーはテキストを字句トークンに分割し、型と機能によってそれらのトークンを識別します。  
   
-## <a name="discussion"></a>説明  
- C# メソッドを次に示します。  
+## <a name="discussion"></a>考察 (Discussion)  
+ C# のメソッドを次に示します。  
   
 ```csharp  
 namespace MyNamespace  
@@ -39,102 +39,102 @@ namespace MyNamespace
 }  
 ```  
   
- この例で、トークンは、単語および区切り記号です。 トークンの種類は次のとおりです。  
+ この例では、トークンは単語と句読点です。 トークンの種類は次のとおりです。  
   
-|トークン名|トークン型|  
+|Token Name (トークン名)|トークンの種類|  
 |----------------|----------------|  
-|名前空間、クラス、パブリック、void、int|keyword|  
+|namespace、class、public、void、int|キーワード (keyword)|  
 |=|operator|  
-|{ } ( ) ;|区切り記号|  
-|MyNamespace, MyClass, MyFunction, arg1, var1|identifier|  
+|{ } ( ) ;|delimiter|  
+|MyNamespace、MyClass、MyFunction、arg1、var1|identifier|  
 |MyNamespace|namespace|  
 |MyClass|class|  
 |MyFunction|メソッド|  
-|arg1|パラメーター|  
-|var1|ローカル変数|  
+|arg1|パラメーター (parameter)|  
+|var1|ローカル変数 (local variable)|  
   
- パーサーのロールでは、トークンを特定します。 一部のトークンには、1 つ以上の型を持つことができます。 パーサーがトークンを特定した後、言語サービスは、照合、かっこの構文の強調表示などの便利な機能を提供する情報と IntelliSense の操作に使用できます。  
+ パーサーの役割は、トークンを識別することです。 トークンによっては、複数の型を持つことができます。 パーサーによってトークンが識別された後、言語サービスでは、構文の強調表示、かっこの一致、IntelliSense 操作などの有用な機能を提供するために情報を使用できます。  
   
 ## <a name="types-of-parsers"></a>パーサーの種類  
- 言語サービス パーサーは、コンパイラの一部として使用されるパーサーと同じではありません。 ただし、この種のパーサーは、コンパイラのパーサーと同様に、スキャナーとパーサーの両方を使用する必要があります。  
+ 言語サービスパーサーは、コンパイラの一部として使用されるパーサーと同じではありません。 ただし、この種のパーサーでは、コンパイラパーサーと同じ方法でスキャナーとパーサーの両方を使用する必要があります。  
   
-- スキャナーを使用して、トークンの種類を識別します。 この情報は、構文の強調表示に使用されたり、トークンの種類をすばやく特定して、かっこの照合のような他の操作を行うために使用されます。 このスキャナーがによって表される、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイス。  
+- スキャナーは、トークンの種類を識別するために使用されます。 この情報は、構文の強調表示に使用されたり、トークンの種類をすばやく特定して、かっこの照合のような他の操作を行うために使用されます。 このスキャナーは、インターフェイスによって表され <xref:Microsoft.VisualStudio.Package.IScanner> ます。  
   
-- パーサーを使用して、機能と、トークンのスコープを記述します。 この情報は、メソッド、変数、パラメーター、および宣言などの言語要素を識別するために、メンバーおよびメソッド シグネチャのコンテキストに基づいての一覧を指定して、IntelliSense の操作で使用されます。 このパーサーは、中かっこおよびかっこなどの一致する言語要素ペアを検索するも使用されます。 このパーサーは、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。  
+- パーサーは、トークンの機能とスコープを記述するために使用されます。 この情報は、メソッド、変数、パラメーター、宣言などの言語要素を識別したり、コンテキストに基づいてメンバーとメソッドシグネチャのリストを提供したりするために、IntelliSense 操作で使用されます。 このパーサーは、中かっこやかっこなど、一致する言語要素のペアを検索するためにも使用されます。 このパーサーには、クラスのメソッドを使用してアクセスし <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> ます。  
   
-  言語サービス スキャナーとパーサーを実装する方法は自由です。 利用できるいくつかのリソースは、パーサーのしくみと、独自のパーサーを作成する方法について説明します。 また、いくつかの無償および商用製品は使用可能なパーサーを作成するのに役立ちます。  
+  言語サービスに対してスキャナーとパーサーを実装する方法は、お客様によって設定されます。 パーサーの動作と独自のパーサーの記述方法を説明するいくつかのリソースが用意されています。 また、パーサーの作成に役立つ、いくつかの無料および商用の製品が用意されています。  
   
 ### <a name="the-parsesource-parser"></a>ParseSource パーサー  
- (場所、トークンから実行可能コードのいくつかの形式に変換されます) コンパイラの一部として使用されるパーサーとは異なりさまざまな理由と、多数の異なるコンテキストで、言語サービス パーサーを呼び出すことができます。 このアプローチを実装する方法、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスは自由です。 留意することが重要です、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>バック グラウンド スレッドでメソッドを呼び出すことがあります。  
+ コンパイラの一部として使用されるパーサー (トークンがなんらかの形式の実行可能コードに変換される) とは異なり、言語サービスパーサーはさまざまな理由やさまざまなコンテキストで呼び出すことができます。 クラスのメソッドにこの方法を実装する方法 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> は、ユーザーによって設定されます。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドがバックグラウンドスレッドで呼び出される可能性があることに注意してください。  
   
 > [!CAUTION]
-> <xref:Microsoft.VisualStudio.Package.ParseRequest>構造体にはへの参照が含まれています、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>オブジェクト。 これは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>バック グラウンド スレッドでオブジェクトを使用することはできません。 実際には、バック グラウンド スレッドでの基本の MPF クラスの多くは使用できません。 以下の<xref:Microsoft.VisualStudio.Package.Source>、 <xref:Microsoft.VisualStudio.Package.ViewFilter>、<xref:Microsoft.VisualStudio.Package.CodeWindowManager>クラス、およびその他のビューとの直接または間接的に通信するクラス。  
+> 構造体には、 <xref:Microsoft.VisualStudio.Package.ParseRequest> オブジェクトへの参照が含まれてい <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ます。 この <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> オブジェクトをバックグラウンドスレッドで使用することはできません。 実際、基本 MPF クラスの多くをバックグラウンドスレッドで使用することはできません。 これには <xref:Microsoft.VisualStudio.Package.Source> 、、、の各クラス、 <xref:Microsoft.VisualStudio.Package.ViewFilter> <xref:Microsoft.VisualStudio.Package.CodeWindowManager> およびビューと直接または間接的に通信するその他のクラスが含まれます。  
   
- このパーサーは通常呼び出されたまたは解析がの値を判断するときに全体のソース ファイルの最初の時間を解析して<xref:Microsoft.VisualStudio.Package.ParseReason>が与えられます。 後続の呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドは、解析されたコードのごく一部を処理し、前の完全な解析操作の結果を使用してより迅速に実行できることができます。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドによって解析操作の結果を通信する、<xref:Microsoft.VisualStudio.Package.AuthoringSink>と<xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクト。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>オブジェクトは特定解析のため、中かっこまたはパラメーターのリストを持つメソッドのシグネチャに一致する範囲に関する情報などの情報を収集するために使用します。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>宣言とメソッドのシグネチャおよびサポートのコレクションを移動する高度な編集オプションを提供します (**定義へ移動**、**宣言へ移動**、**に移動参照**)。  
+ このパーサーは、通常、最初に呼び出されたとき、またはの解析理由値が指定されたときに、ソースファイル全体を解析し <xref:Microsoft.VisualStudio.Package.ParseReason> ます。 メソッドへの後続の呼び出しで <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> は、解析されたコードの一部を処理します。前の完全解析操作の結果を使用することにより、より短時間で実行できます。 メソッドは、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> オブジェクトとオブジェクトを使用して解析操作の結果を通信し <xref:Microsoft.VisualStudio.Package.AuthoringSink> <xref:Microsoft.VisualStudio.Package.AuthoringScope> ます。 オブジェクトは、特定の解析の理由に関する <xref:Microsoft.VisualStudio.Package.AuthoringSink> 情報を収集するために使用されます。たとえば、パラメーターリストを持つ一致する中かっこまたはメソッドのシグネチャの範囲に関する情報などです。 には、 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 宣言とメソッドシグネチャのコレクションが用意されています。また、[高度な編集に進む] オプション ([**定義へ**]、[ **宣言へ**]、[ **参照へジャンプ**]) もサポートされています。  
   
 ### <a name="the-iscanner-scanner"></a>IScanner スキャナー  
- 実装するスキャナーを実装することも必要があります。<xref:Microsoft.VisualStudio.Package.IScanner>します。 ただしで 1 行ずつごとにこのスキャナーが動作するため、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスでは通常より簡単に実装します。 MPF は、各行の先頭には、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスの値が、スキャナーに渡される状態変数として使用します。 各行の末尾には、スキャナーは、更新された状態変数を返します。 MPF は、スキャナーがソース ファイルの先頭から開始することがなく、任意の行から解析を開始できるように、それぞれの行の場合は、この状態情報をキャッシュします。 この 1 行のスキャンを高速には、ユーザーに迅速なフィードバックを提供する、エディターが使用できます。  
+ を実装するスキャナーも実装する必要があり <xref:Microsoft.VisualStudio.Package.IScanner> ます。 ただし、このスキャナーはクラスによって1行ずつ実行されるため、 <xref:Microsoft.VisualStudio.Package.Colorizer> 通常は実装が簡単です。 各行の先頭で、MPF は、 <xref:Microsoft.VisualStudio.Package.Colorizer> スキャナーに渡される状態変数として使用する値をクラスに提供します。 各行の最後で、更新された状態変数がスキャナーから返されます。 MPF は各行のこの状態情報をキャッシュするため、スキャナーは、ソースファイルの先頭から開始することなく、任意の行から解析を開始できます。 この1行の高速スキャンにより、エディターはユーザーに迅速なフィードバックを提供できます。  
   
-## <a name="parsing-for-matching-braces"></a>対応するかっこの解析  
- この例では、ユーザーが入力する終わりかっこの一致の制御のフローを示します。 このプロセスで色付けに使用するスキャナーもトークンとトークンが中かっこの一致操作をトリガーするかどうかの種類を決定する使用されます。 トリガーが見つかった場合、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドが呼び出され、対応するかっこを検索します。 最後に、2 つの中かっこが強調表示されます。  
+## <a name="parsing-for-matching-braces"></a>一致する中かっこの解析  
+ この例は、ユーザーが入力した右中かっこと照合するための制御フローを示しています。 このプロセスでは、色付けに使用されるスキャナーを使用して、トークンの種類と、トークンが対応する中かっこの操作をトリガーできるかどうかを判断します。 トリガーが見つかった場合は、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> メソッドが呼び出され、対応する中かっこが検索されます。 最後に、2つの中かっこが強調表示されます。  
   
- 場合でも、中かっこは、トリガーの名前で使用され、解析上の理由から、このプロセスは実際の中かっこに限定されません。 一致するペアに指定されている文字のペアがサポートされています。 例としては、(と)、 \< >、および [と]。  
+ トリガーの名前と解析の理由で中かっこが使用されている場合でも、このプロセスは実際の中かっこに限定されません。 一致するペアとして指定されている文字のペアはすべてサポートされています。 例として、(and)、 \< and > 、および [and] があります。  
   
- 言語サービスに対応する中かっこがサポートするいると仮定します。  
+ 言語サービスでは、対応する中かっこがサポートされているものとします。  
   
 1. ユーザーは、右中かっこ (}) を入力します。  
   
-2. カーソルのソース ファイル内に中かっこが挿入され、いずれかによって、カーソルが高度な。  
+2. 中かっこは、ソースファイルのカーソル位置に挿入され、カーソルは1つ進められます。  
   
-3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスは、型指定された右中かっこで呼び出されます。  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>クラスのメソッド <xref:Microsoft.VisualStudio.Package.Source> は、型指定された右中かっこで呼び出されます。  
   
-4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスを現在のカーソル位置の直前の位置でトークンを取得します。 このトークンに対応する型指定された右中かっこ)。  
+4. メソッドは、 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> クラスのメソッドを呼び出して、 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 現在の <xref:Microsoft.VisualStudio.Package.Source> カーソル位置の直前の位置にあるトークンを取得します。 このトークンは、型指定された右中かっこに対応します)。  
   
-    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Colorizer>現在の行にすべてのトークンを取得するオブジェクト。  
+    1. メソッドは、オブジェクトのメソッドを呼び出して、 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 現在の <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 行の <xref:Microsoft.VisualStudio.Package.Colorizer> すべてのトークンを取得します。  
   
-    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>メソッドを<xref:Microsoft.VisualStudio.Package.IScanner>現在の行のテキストを含むオブジェクト。  
+    2. メソッドは、 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> 現在の <xref:Microsoft.VisualStudio.Package.IScanner> 行のテキストを使用して、オブジェクトのメソッドを呼び出します。  
   
-    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドを繰り返し呼び出す、<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>メソッドを<xref:Microsoft.VisualStudio.Package.IScanner>オブジェクトを現在の行からすべてのトークンを収集します。  
+    3. メソッドは、 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> オブジェクトのメソッドを繰り返し呼び出して、現在の <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> <xref:Microsoft.VisualStudio.Package.IScanner> 行からすべてのトークンを収集します。  
   
-    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッド プライベート メソッドの呼び出しで、<xref:Microsoft.VisualStudio.Package.Source>目的の位置を含むトークンを取得するクラスし、から取得したトークンの一覧で、パス、<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッド。  
+    4. メソッドは、 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> クラスのプライベートメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.Source> て、目的の位置を含むトークンを取得し、メソッドから取得したトークンのリストを渡し <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> ます。  
   
-5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドのトークンのトリガーのフラグは検索<xref:Microsoft.VisualStudio.Package.TokenTriggers>から返されるトークンで、<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッド、つまり右中かっこを表すトークン)。  
+5. メソッドは、 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> <xref:Microsoft.VisualStudio.Package.TokenTriggers> メソッドから返されたトークン、 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> つまり、右中かっこを表すトークンのトークントリガーフラグを検索します。  
   
-6. トリガーのフラグを付ける場合<xref:Microsoft.VisualStudio.Package.TokenTriggers>が見つかると、<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスが呼び出されます。  
+6. のトリガーフラグが見つかった場合 <xref:Microsoft.VisualStudio.Package.TokenTriggers> は、 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> クラスのメソッド <xref:Microsoft.VisualStudio.Package.Source> が呼び出されます。  
   
-7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドでは、解析操作を開始の解析の理由の値を持つ<xref:Microsoft.VisualStudio.Package.ParseReason>します。 この操作は最終的に呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 この呼び出しによってに非同期の解析が有効になっている場合、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドがバック グラウンド スレッドで発生します。  
+7. メソッドは、解析 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> の理由値をとして解析操作を開始し <xref:Microsoft.VisualStudio.Package.ParseReason> ます。 この操作 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> では、最終的にクラスのメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 非同期解析が有効になっている場合、メソッドへのこの呼び出しは <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> バックグラウンドスレッドで発生します。  
   
-8. 解析操作が終了すると、という名前の内部の完了ハンドラー (コールバック メソッドとも呼ばれます)`HandleMatchBracesResponse`で呼び出される、<xref:Microsoft.VisualStudio.Package.Source>クラス。 この呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService>パーサーではなく基本クラス。  
+8. 解析操作が完了すると、という内部完了ハンドラー (コールバックメソッドとも呼ばれ `HandleMatchBracesResponse` ます) がクラスで呼び出され <xref:Microsoft.VisualStudio.Package.Source> ます。 この呼び出しは、 <xref:Microsoft.VisualStudio.Package.LanguageService> パーサーによってではなく、基本クラスによって自動的に行われます。  
   
-9. `HandleMatchBracesResponse`から範囲の一覧を取得するメソッド、<xref:Microsoft.VisualStudio.Package.AuthoringSink>オブジェクトに格納されている、<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクト。 (範囲は、<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>ソース ファイル内の行や文字の範囲を指定する構造体)。通常、この範囲の一覧には、開始タグと右中かっこの 1 つずつ、2 つの範囲が含まれています。  
+9. メソッドは、 `HandleMatchBracesResponse` <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトに格納されているオブジェクトから範囲のリストを取得し <xref:Microsoft.VisualStudio.Package.ParseRequest> ます。 (スパンは、 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> ソースファイル内の行と文字の範囲を指定する構造体です)。この範囲の一覧には、通常、左中かっこと終わりかっこの2つの範囲が含まれています。  
   
-10. `HandleBracesResponse`メソッドの呼び出し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A>メソッドを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>オブジェクトに格納されている、<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクト。 これは、指定されたスパンを示しています。  
+10. メソッドは、 `HandleBracesResponse` <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> オブジェクトに格納されているオブジェクトに対してメソッドを呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> <xref:Microsoft.VisualStudio.Package.ParseRequest> ます。 これにより、指定された範囲が強調表示されます。  
   
-11. 場合、<xref:Microsoft.VisualStudio.Package.LanguagePreferences>プロパティ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>が有効になって、`HandleBracesResponse`メソッドは一致する範囲に包含され、ステータス バーにその範囲の最初の 80 文字を表示するテキストを取得します。 これは、場合に最適の<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドに一致するペアに付属している言語要素が含まれています。 詳細については、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> プロパティを参照してください。  
+11. <xref:Microsoft.VisualStudio.Package.LanguagePreferences>プロパティが有効になっている場合 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> 、メソッドは、 `HandleBracesResponse` 一致するスパンに含まれるテキストを取得し、そのスパンの最初の80文字をステータスバーに表示します。 これは、メソッドに、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 一致するペアに付随する言語要素が含まれている場合に最適です。 詳細については、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A> プロパティを参照してください。  
   
-12. 完成です。  
+12. 完了しました。  
   
 ### <a name="summary"></a>まとめ  
- 中かっこの一致操作では、通常、言語要素のペアを単純に制限されます。 3 要素に一致するようより複雑な要素 ("`if(…)`「,」`{`「と」`}`"、または"`else`「,」`{`「と」`}`")、単語補完操作の一環として強調表示されることができます。 たとえば、"else"という単語が完了すると、一致する"`if`"ステートメントを強調表示されます。 一連があった場合`if` / `else if`中かっこの一致するものと同じメカニズムを使用して、それらのすべてのステートメントを強調表示でした。 <xref:Microsoft.VisualStudio.Package.Source>基本クラスは、次のように、このサポート既に。スキャナーがトークンのトリガーの値を返す必要があります<xref:Microsoft.VisualStudio.Package.TokenTriggers>トリガー値と組み合わせると<xref:Microsoft.VisualStudio.Package.TokenTriggers>カーソル位置の前にあるトークンです。  
+ 通常、対応する中かっこの演算は、単純な言語要素のペアに限定されます。 3要素の一致 (""、""、""、""、"" など) など、より複雑な要素を、 `if(…)` `{` `}` `else` `{` `}` 単語入力補完操作の一部として強調表示することができます。 たとえば、"else" という単語が終了した場合、対応する " `if` " ステートメントを強調表示できます。 一連のステートメントがある場合は `if` / `else if` 、対応するかっこと同じメカニズムを使用してすべてのステートメントを強調表示できます。 <xref:Microsoft.VisualStudio.Package.Source>基本クラスでは、次のように、この機能が既にサポートされています。スキャナーは、トークントリガーの値と、 <xref:Microsoft.VisualStudio.Package.TokenTriggers> <xref:Microsoft.VisualStudio.Package.TokenTriggers> カーソル位置の前にあるトークンのトリガー値を返す必要があります。  
   
- 詳細については、次を参照してください。[従来の言語サービスでかっこの照合](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)します。  
+ 詳細については、「 [従来の言語サービスでの中かっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)」を参照してください。  
   
-## <a name="parsing-for-colorization"></a>色づけの解析  
- ソース コードの色分けは簡単です、その型に関する情報をトークンと戻り値の色の種類を識別するだけです。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、エディターとスキャナーの色のすべてのトークン情報を提供する間の仲介役として機能します。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスで使用、<xref:Microsoft.VisualStudio.Package.IScanner>オブジェクトのヘルプで、行の色分けし、ソース ファイル内のすべての行の状態情報を収集します。 MPF の言語サービス クラスで、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、スキャナーと通信するためにオーバーライドする必要はありませんを通してのみ、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイス。 実装するオブジェクトを指定する、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスをオーバーライドすることで、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。  
+## <a name="parsing-for-colorization"></a>色付けの解析  
+ 色分けソースコードは簡単です。トークンの種類を特定し、その型に関する色情報を返すだけです。 クラスは、 <xref:Microsoft.VisualStudio.Package.Colorizer> エディターとスキャナー間の仲介役として機能し、すべてのトークンに関する色情報を提供します。 クラスは、オブジェクトを使用して、 <xref:Microsoft.VisualStudio.Package.Colorizer> <xref:Microsoft.VisualStudio.Package.IScanner> 行を色分けしたり、ソースファイル内のすべての行の状態情報を収集したりします。 MPF 言語サービスクラスでは、 <xref:Microsoft.VisualStudio.Package.Colorizer> インターフェイスを介してのみスキャナーと通信するため、クラスをオーバーライドする必要はありません <xref:Microsoft.VisualStudio.Package.IScanner> 。 <xref:Microsoft.VisualStudio.Package.IScanner>クラスのメソッドをオーバーライドすることによって、インターフェイスを実装するオブジェクトを指定し <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> ます。  
   
- <xref:Microsoft.VisualStudio.Package.IScanner>スキャナーがソース コードの行を指定した、<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>メソッド。 呼び出し、<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>トークンの行がなくなるまで、行では、次のトークンを取得するメソッドが繰り返されます。 色付け、MPF はすべてのソース コードは行のシーケンスとして扱います。 そのため、スキャナーは、ソース行として受信してそれに対処できる必要があります。 さらに、任意の行は、いつでもでも、スキャナーに渡すことができ、唯一の保証は、スキャナーがスキャンされる直前の行の前に、の行から、状態変数を受け取っています。  
+ <xref:Microsoft.VisualStudio.Package.IScanner>スキャナーには、メソッドを使用してソースコードの行が指定されてい <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> ます。 メソッドの呼び出し <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> は、行がトークンを使い果たすまで行の次のトークンを取得するために繰り返されます。 色付けの場合、MPF はすべてのソースコードを行のシーケンスとして扱います。 そのため、スキャナーは、ソースを行として扱うことができる必要があります。 また、任意の行をいつでもスキャナーに渡すことができ、保証されるのは、スキャナーがスキャン対象の行の前の状態変数を受け取ることだけです。  
   
- <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、トークンのトリガーを識別するためにも使用します。 これらのトリガーは、特定のトークンが単語補完などのより複雑な操作を開始できること、MPF を指示または中かっこの一致します。 このようなトリガーを識別すると、高速である必要があるあり、任意の場所で行う必要があります、ため、スキャナーはこのタスクに最適です。  
+ クラスは、 <xref:Microsoft.VisualStudio.Package.Colorizer> トークントリガーを識別するためにも使用されます。 これらのトリガーは、特定のトークンが単語の補完や対応する中かっこなどのより複雑な操作を開始できることを MPF に伝えます。 このようなトリガーは高速である必要があり、任意の場所に配置する必要があるため、スキャナーはこのタスクに最適です。  
   
- 詳細については、次を参照してください。[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)します。  
+ 詳細については、「 [従来の言語サービスの構文色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。  
   
 ## <a name="parsing-for-functionality-and-scope"></a>機能とスコープの解析  
- 機能とスコープの解析中には、多くの労力が発生したトークンの種類を識別するだけが必要です。 パーサーは、トークンの種類だけでなく、トークンが使用されている機能を識別する必要があります。 たとえば、識別子は名だけですが、言語、識別子のクラス、名前空間、メソッド、または、コンテキストに応じて、変数の名前可能性があります。 トークンの一般的な種類の識別子、可能性がありますが、識別子には何によって異なりますしが定義されているその他の意味があります。 この id は、パーサーが解析される言語に関するより広範な知識が必要です。 これは、ような場合、<xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスを受信します。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスは、識別子、メソッド、(中かっこやかっこを使用)、一致する言語および言語の 3 要素に関する情報を収集します (たとえば、3 つの部分があること以外の言語の組み合わせに似ています"`foreach()`""`{`「と」`}`")。 さらに、オーバーライドすることができます、<xref:Microsoft.VisualStudio.Package.AuthoringSink>デバッガーが読み込まれる必要があるないように、ブレークポイントの事前検証に使用される、コードの識別をサポートするクラスと **[自動変数]** デバッグ ウィンドウで、ローカルの表示変数とパラメーターに自動的にプログラムがデバッグ中と適切なローカル変数と、デバッガーの表示に加えてパラメーターを識別するために、パーサーが必要です。  
+ 機能とスコープの解析には、発生したトークンの種類を特定するだけではなく、より多くの労力が必要になります。 パーサーは、トークンの種類だけでなく、トークンを使用する機能も識別する必要があります。 たとえば、識別子は単なる名前ですが、お使いの言語では、コンテキストに応じて、クラス、名前空間、メソッド、または変数の名前を識別子として使用できます。 トークンの一般的な型は識別子である場合がありますが、識別子の内容や定義されている場所によっては、識別子に他の意味がある場合もあります。 この id を設定するには、解析対象の言語についての豊富な知識をパーサーに追加する必要があります。 ここ <xref:Microsoft.VisualStudio.Package.AuthoringSink> で、クラスが登場します。 クラスは、 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 識別子、メソッド、一致する言語のペア (中かっこやかっこなど)、言語の3要素 ("" "、" "など、3つの部分がある点を除いて、言語のペアに似ています) に関する情報を収集し `foreach()` `{` `}` ます。 さらに、クラスをオーバーライドして <xref:Microsoft.VisualStudio.Package.AuthoringSink> コード id をサポートすることもできます。これは、デバッガーを読み込む必要がないように、ブレークポイントを事前に検証するために使用されます。 **また、** プログラムがデバッグされているときに、パーサーがデバッガーによって表示されるローカル変数とパラメーターを識別する必要があります。  
   
- <xref:Microsoft.VisualStudio.Package.AuthoringSink>の一部としてオブジェクトが、パーサーに渡される、<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクト、および新しい<xref:Microsoft.VisualStudio.Package.AuthoringSink>オブジェクトがするたびに作成される新しい<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクトが作成されます。 さらに、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドが返す必要があります、 <xref:Microsoft.VisualStudio.Package.AuthoringScope> IntelliSense のさまざまな操作を処理するために使用するオブジェクト。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクト宣言の一覧と維持方法については、一覧か、うちが作成されますが、解析の理由によって。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスを実装する必要があります。  
+ オブジェクトは <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトの一部としてパーサーに渡され、新しいオブジェクトが作成されるたびに <xref:Microsoft.VisualStudio.Package.ParseRequest> 新しい <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトが作成され <xref:Microsoft.VisualStudio.Package.ParseRequest> ます。 また、メソッドは、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> さまざまな IntelliSense 操作を処理するために使用されるオブジェクトを返す必要があります。 オブジェクトは、 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 解析の理由に応じて、宣言のリストとメソッドのリストを保持します。これらのメソッドのいずれかに設定されます。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスを実装する必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [従来の言語サービスを実装します。](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+## <a name="see-also"></a>参照  
+ [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [従来の言語サービスの概要](../../extensibility/internals/legacy-language-service-overview.md)   
  [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [従来の言語サービスでのかっこの一致](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)

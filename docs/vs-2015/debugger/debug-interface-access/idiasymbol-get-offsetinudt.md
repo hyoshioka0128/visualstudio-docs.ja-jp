@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_offsetinudt |Microsoft Docs
+title: 'IDiaSymbol:: get_offsetInUdt |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d5d6a365a7f8455b62e6144f212d853a5f57e2f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64782141"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841385"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-UDT のメンバーのユーザー定義型 (UDT) の先頭までのオフセットを取得します。  
+UDT 内のメンバーのユーザー定義型 (UDT) の先頭へのオフセットを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,23 +35,23 @@ HRESULT get_offsetInUdt( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]シンボルの場所のバイト オフセットを返します。  
+ 入出力シンボルの場所のオフセット (バイト単位) を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- この関数は、最適化されたビルドでレコードをローカルでのみ使用されます。  
+## <a name="remarks"></a>注釈  
+ この関数は、最適化されたビルドのローカルレコードでのみ使用されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

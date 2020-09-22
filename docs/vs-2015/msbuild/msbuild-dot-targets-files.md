@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439385"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841876"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63439385"
  `$(MSBuildToolsPath)` 値によって、これらの共通 .targets ファイルのパスが指定されます。 `ToolsVersion` が 4.0 の場合、ファイルは `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\` に格納されます。  
   
 > [!NOTE]
-> 独自のターゲットを作成する方法については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。 使用する方法については、`Import`プロジェクト ファイルを別のプロジェクト ファイルに挿入する要素を参照してください[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)と[方法。複数のプロジェクト ファイルで同じターゲットを使用して](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)します。  
+> 独自のターゲットを作成する方法については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。 要素を使用して `Import` プロジェクトファイルを別のプロジェクトファイルに挿入する方法については、「 [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md) 」および「 [方法: 複数のプロジェクトファイルで同じターゲットを使用](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)する」を参照してください。  
   
 ## <a name="common-targets-files"></a>共通 .Targets ファイル  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63439385"
 |Microsoft.CSharp.targets|Visual C# プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual C# プロジェクト ファイル (.csproj) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
 |Microsoft.VisualBasic.targets|Visual Basic プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual Basic プロジェクト ファイル (.vbproj) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

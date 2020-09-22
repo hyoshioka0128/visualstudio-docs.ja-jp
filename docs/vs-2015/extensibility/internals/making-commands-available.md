@@ -14,25 +14,25 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436247"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841369"
 ---
 # <a name="making-commands-available"></a>コマンドを使用可能にする
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio には、複数の Vspackage を追加するときにユーザー インターフェイス (UI) をコマンドで overcrowded になる可能性があります。 次のように、この問題を軽減するためにパッケージをプログラムすることができます。  
+複数の Vspackage が Visual Studio に追加されると、ユーザーインターフェイス (UI) がコマンドで過剰に使用されることがあります。 次のように、この問題を軽減するためにパッケージをプログラミングできます。  
   
-- パッケージをプログラムするときにのみが読み込まれるように必要があります。  
+- ユーザーが必要としたときにのみ読み込まれるようにパッケージをプログラムします。  
   
-- 統合開発環境 (IDE) の現在の状態のコンテキストで、必要な場合にのみ、そのコマンドが表示されるように、パッケージをプログラムします。  
+- 統合開発環境 (IDE: integrated development environment) の現在の状態のコンテキストで必要になる可能性がある場合にのみ、コマンドが表示されるようにパッケージをプログラミングします。  
   
 ## <a name="delayed-loading"></a>遅延読み込み  
- 有効にするには、一般的な方法としては、UI では、そのコマンドが表示されますが、パッケージ自体では、ユーザーが、コマンドのいずれかをクリックするまでは読み込まれませんように VSPackage を設計するには遅延読み込み。 .Vsct ファイルで、これを実現するには、コマンドのフラグが設定されていないコマンドを作成します。  
+ 遅延読み込みを有効にする一般的な方法は、UI にコマンドが表示されるように VSPackage をデザインすることですが、ユーザーがいずれかのコマンドをクリックするまでパッケージ自体は読み込まれません。 これを実現するには、vsct ファイルで、コマンドフラグを持たないコマンドを作成します。  
   
- 次の例では、.vsct ファイルからのメニュー コマンドの定義を示します。 これは、Visual Studio パッケージ テンプレートによって生成されるコマンドと、**メニュー コマンド**テンプレートのオプションを選択します。  
+ 次の例は、vsct ファイルからのメニューコマンドの定義を示しています。 これは、テンプレートの **[メニューコマンド** ] オプションが選択されている場合に Visual Studio パッケージテンプレートによって生成されるコマンドです。  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -46,23 +46,23 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
   
 ```  
   
- 例では場合、親グループ`MyMenuGroup`などトップレベルのメニューの子である、**ツール**メニューのコマンドは、そのメニューに表示されますが、コマンドを実行するパッケージは、コマンドがクリックされるまで読み込まれませんユーザー。 ただしを実装するためにコマンドをプログラミング、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス、最初のコマンドを含むメニューが展開されている場合に読み込まれるパッケージ有効にすることができます。  
+ この例では、親グループが [ `MyMenuGroup` **ツール** ] メニューなどのトップレベルメニューの子である場合、そのメニューにコマンドが表示されますが、コマンドを実行するパッケージは、ユーザーがコマンドをクリックするまで読み込まれません。 ただし、コマンドをプログラミングしてインターフェイスを実装することで、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> コマンドを含むメニューを最初に展開したときにパッケージを読み込むことができます。  
   
- 遅延読み込みが起動時のパフォーマンスを向上させることがありますもことを確認します。  
+ 遅延読み込みによって起動パフォーマンスが向上する場合もあることに注意してください。  
   
 ## <a name="current-context-and-the-visibility-of-commands"></a>現在のコンテキストとコマンドの可視性  
- VSPackage のコマンドを表示または非表示で、VSPackage のデータまたは現在に関連するアクションの現在の状態に応じてをプログラミングできます。 VSPackage の実装を使用して、通常、そのコマンドの状態を設定することができます、<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>からメソッド、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>が、このコードを実行するには読み込まれる VSPackage が必要です。 代わりに、パッケージを読み込むことがなく、コマンドの可視性を管理するための IDE を有効にすることをお勧めします。 .Vsct ファイルで、これには、特別な UI コンテキストが 1 つまたは複数のコマンドを関連付けます。 これらの UI コンテキストと呼ばれる GUID によって識別されます、*コマンド コンテキスト GUID*します。  
+ VSPackage データの現在の状態または現在の関連するアクションに応じて、表示または非表示にする VSPackage コマンドをプログラミングできます。 VSPackage を有効にすると、通常はインターフェイスからのメソッドの実装を使用して、コマンドの状態を設定できます。ただし、そのためには、 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> コードを実行する前に VSPackage を読み込む必要があります。 代わりに、パッケージを読み込まずにコマンドの可視性を管理するように IDE を有効にすることをお勧めします。 これを行うには、vsct ファイルで、コマンドを1つ以上の特殊な UI コンテキストに関連付けます。 これらの UI コンテキストは、 *コマンドコンテキスト guid*と呼ばれる guid によって識別されます。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクトの読み込みまたはビルドから編集しようとしてなどのユーザー アクションの結果として変更を監視します。 変更が発生すると、IDE の外観が自動的に変更します。 次の表は、IDE の 4 つの主要なコンテキストを変更する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]モニター。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクトの読み込み、編集、ビルドなどのユーザー操作によって発生した変更を監視します。 変更が発生すると、IDE の外観が自動的に変更されます。 次の表は、が監視する IDE 変更の主な4つのコンテキストを示して [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] います。  
   
-|コンテキストの種類|説明|  
+|コンテキストの種類|Description|  
 |---------------------|-----------------|  
-|アクティブなプロジェクトの種類|ほとんどの種類のプロジェクトのこの`GUID`値は、プロジェクトを実装する VSPackage の GUID と同じです。 ただし、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト、プロジェクトの種類を使用して、`GUID`値として。|  
-|アクティブなウィンドウ|通常、これは、現在の UI コンテキスト キー バインドを確立する最後のアクティブなドキュメント ウィンドウです。 ただし、ツール ウィンドウを内部 Web ブラウザーのようなキー バインドのテーブルを持つ可能性があります。 HTML エディターなどの複数タブ付きドキュメント ウィンドウ、すべてのタブが別のコマンド コンテキスト`GUID`します。|  
-|アクティブな言語サービス|テキスト エディターで現在表示されているファイルに関連付けられている言語サービス。|  
-|アクティブなツール ウィンドウ|開いていて、フォーカスのあるツール ウィンドウです。|  
+|アクティブなプロジェクトの種類|ほとんどの種類のプロジェクトで `GUID` は、この値は、プロジェクトを実装する VSPackage の GUID と同じになります。 ただし、プロジェクトでは、 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトの種類を `GUID` 値として使用します。|  
+|アクティブウィンドウ|通常、これは、キーバインドの現在の UI コンテキストを確立する最後のアクティブなドキュメントウィンドウです。 ただし、内部の Web ブラウザーに似たキーバインドテーブルを持つツールウィンドウである場合もあります。 HTML エディターなどの複数タブのドキュメントウィンドウでは、すべてのタブに異なるコマンドコンテキストがあり `GUID` ます。|  
+|アクティブな言語サービス|テキストエディターで現在表示されているファイルに関連付けられている言語サービス。|  
+|アクティブなツールウィンドウ|開いているツールウィンドウでフォーカスがあります。|  
   
- 5 番目のコンテキストの主要な領域は、IDE の UI 状態です。 UI コンテキストがアクティブなコマンドのコンテキストによって識別される`GUID`s は、次のようにします。  
+ 5番目の主要なコンテキスト領域は、IDE の UI 状態です。 UI コンテキストは、次のように、アクティブなコマンドコンテキストによって識別され `GUID` ます。  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
@@ -86,27 +86,27 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
-  これらの Guid は、アクティブまたは IDE の現在の状態に応じて、非アクティブとしてマークされます。 同時にアクティブにできる複数の UI コンテキストです。  
+  これらの Guid は、IDE の現在の状態に応じて、アクティブまたは非アクティブとしてマークされます。 複数の UI コンテキストを同時にアクティブにすることができます。  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>コンテキストに基づいたコマンドの表示と非表示  
- 表示したり、パッケージ自体を読み込むことがなく、IDE でパッケージのコマンドを非表示にすることができます。 これを行うを使用して、パッケージの .vsct ファイルで、コマンドを定義します、 `DefaultDisabled`、 `DefaultInvisible`、および`DynamicVisibility`フラグと追加する 1 つ以上のコマンド[VisibilityItem](../../extensibility/visibilityitem-element.md)要素を、 [ 。VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)セクション。 ときに指定されたコマンド コンテキスト`GUID`がアクティブで、コマンドが表示されます、パッケージを読み込むことがなく。  
+ パッケージ自体を読み込まずに、IDE でパッケージコマンドを表示または非表示にすることができます。 これを行うには、パッケージの vsct ファイルで `DefaultDisabled` 、、、およびの各コマンドフラグを使用し、 `DefaultInvisible` `DynamicVisibility` 1 つ以上の [VisibilityItem](../../extensibility/visibilityitem-element.md) 要素を [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) セクションに追加して、コマンドを定義します。 指定されたコマンドコンテキストがアクティブになると、 `GUID` パッケージを読み込まずにコマンドが表示されます。  
   
-### <a name="custom-context-guids"></a>カスタム コンテキストの Guid  
- 適切なコマンドは、GUID が定義されていないコンテキスト場合、VSPackage のいずれかを定義し、アクティブまたはコマンドの表示を制御する必要に応じて非アクティブにすることをプログラムできます。 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービス。  
+### <a name="custom-context-guids"></a>カスタムコンテキスト Guid  
+ 適切なコマンドコンテキスト GUID がまだ定義されていない場合は、VSPackage で定義してから、コマンドの可視性を制御するために必要に応じてアクティブまたは非アクティブにするようにプログラムを設定できます。 サービスを使用して次のこと <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> を行います。  
   
-- コンテキストの Guid を登録する (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド)。  
+- (メソッドを呼び出すことによって) コンテキスト Guid を登録 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> します。  
   
-- コンテキストの状態を取得する`GUID`(呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド)。  
+- `GUID`(メソッドを呼び出すことによって) コンテキストの状態を取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> します。  
   
-- コンテキストを有効にする`GUID`s のオンとオフ (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド)。  
+- コンテキストをオン `GUID` またはオフにします (メソッドを呼び出すことによって <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> )。  
   
     > [!CAUTION]
-    > 確認して、VSPackage 影響を及ぼさないように既存のコンテキストの GUID の状態の他の Vspackage がそれらに依存している可能性があります。  
+    > VSPackage が既存のコンテキスト GUID の状態に影響しないことを確認してください。これは、他の Vspackage が依存している可能性があるためです。  
   
 ## <a name="example"></a>例  
- VSPackage のコマンドの次の例では、VSPackage を読み込むことがなく、コマンドのコンテキストで管理されているコマンドの動的な可視性を示します。  
+ 次の VSPackage コマンドの例は、VSPackage を読み込まずにコマンドコンテキストによって管理されるコマンドを動的に表示する方法を示しています。  
   
- コマンドが有効にし、ソリューションが存在するときに表示するのに設定されています。つまり、次のコマンド コンテキストの Guid のいずれかがアクティブなときに。  
+ このコマンドは、ソリューションが存在するときに有効になり、表示されるように設定されています。つまり、次のいずれかのコマンドコンテキスト Guid がアクティブになっているとします。  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
@@ -114,7 +114,7 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
-  例では、すべてのコマンド フラグが個別に注意してください[コマンド フラグ](../../extensibility/command-flag-element.md)要素。  
+  この例では、すべてのコマンドフラグが個別の [コマンドフラグ](../../extensibility/command-flag-element.md) 要素であることに注意してください。  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   
@@ -132,7 +132,7 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
   
 ```  
   
- 別のすべての UI コンテキストを指定する必要がありますに注意も`VisibilityItem`要素は、次のようにします。  
+ また、次のように、すべての UI コンテキストに個別の要素を指定する必要があることにも注意し `VisibilityItem` てください。  
   
 ```xml  
 <VisibilityConstraints>  
@@ -146,8 +146,8 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
   
 ```  
   
-## <a name="see-also"></a>関連項目  
- [MenuCommand と OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
- [Vspackage がユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Vspackage のコマンド ルーティング](../../extensibility/internals/command-routing-in-vspackages.md)   
+## <a name="see-also"></a>参照  
+ [MenuCommands と OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
+ [Vspackage のユーザーインターフェイス要素の追加方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Vspackage でのコマンドルーティング](../../extensibility/internals/command-routing-in-vspackages.md)   
  [メニュー項目の動的な追加](../../extensibility/dynamically-adding-menu-items.md)

@@ -14,18 +14,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445391"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841689"
 ---
 # <a name="task-writing"></a>タスクの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-タスクでは、ビルド プロセスの間に実行するコードを指定します。 タスクはターゲットに含まれます。 一般的なタスクのライブラリは [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属します。独自のタスクを作成することもできます。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属するタスク ライブラリの詳細については、[タスク リファレンス](../msbuild/msbuild-task-reference.md)を参照してください。  
+タスクでは、ビルド プロセスの間に実行するコードを指定します。 タスクはターゲットに含まれます。 一般的なタスクのライブラリは [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属します。独自のタスクを作成することもできます。 に含まれるタスクのライブラリの詳細については [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 、「 [タスクリファレンス](../msbuild/msbuild-task-reference.md)」を参照してください。  
   
-## <a name="tasks"></a>[タスク]  
+## <a name="tasks"></a>タスク  
  タスクには、1 つまたは複数のファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、[!INCLUDE[csprcs](../includes/csprcs-md.md)] ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などがあります。 各タスクは、Microsoft.Build.Framework.dll アセンブリで定義されている <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装する .NET クラスとして実装されます。  
   
  タスクを実装するには 2 つの方法があります。  
@@ -100,7 +100,7 @@ namespace MyTasks
 ```  
   
 ## <a name="registering-tasks"></a>タスクの登録  
- プロジェクトがタスクを実行する場合、タスク クラスが含まれるアセンブリを見つける方法を [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に与えている必要があります。 タスクは [UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md) で登録されます。  
+ プロジェクトがタスクを実行する場合、タスク クラスが含まれるアセンブリを見つける方法を [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に与えている必要があります。 タスクは [UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)を使用して登録されます。  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ファイルの Microsoft.Common.Tasks は、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属するすべてのタスクを登録する `UsingTask` 要素の一覧が含まれるプロジェクト ファイルです。 このファイルは、あらゆるプロジェクトのビルド時に自動的に追加されます。 Microsoft.Common.Tasks に登録されているタスクが現在のプロジェクト ファイルにも登録されている場合、現在のプロジェクト ファイルに優先権が与えられます。つまり、既定のタスクが、同じ名前を持つ独自のタスクでオーバーライドされます。  
   
@@ -268,6 +268,6 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)

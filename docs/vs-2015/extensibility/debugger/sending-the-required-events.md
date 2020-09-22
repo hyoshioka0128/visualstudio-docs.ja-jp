@@ -1,5 +1,5 @@
 ---
-title: 必要なイベントの送信 |Microsoft Docs
+title: 必要なイベントを送信する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,32 +11,32 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446245"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842217"
 ---
 # <a name="sending-the-required-events"></a>必要なイベントの送信
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-必要なイベントを送信するためには、この手順を使用します。  
+必要なイベントを送信するには、次の手順に従います。  
   
 ## <a name="process-for-sending-required-events"></a>必要なイベントを送信するためのプロセス  
- 次のイベントは、この順序は、エンジン (DE) の作成、デバッグおよびプログラムへのアタッチ、必要があります。  
+ デバッグエンジン (DE) を作成してプログラムにアタッチするときは、次のイベントがこの順序で必要になります。  
   
-1. 送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)セッション デバッグ マネージャー (SDM) のプロセスで 1 つまたは複数のプログラムをデバッグするため、DE が初期化されるときにイベント オブジェクト。  
+1. プロセス内の1つまたは複数のプログラムをデバッグするために DE を初期化するときに、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) イベントオブジェクトをセッションデバッグマネージャー (SDM) に送信します。  
   
-2. デバッグするプログラムに関連付けられている場合は、送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM にイベント オブジェクト。 このイベントによっては、エンジン設計の停止イベントがあります。  
+2. デバッグ対象のプログラムがにアタッチされている場合は、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) イベントオブジェクトを SDM に送信します。 このイベントは、エンジンの設計によっては停止イベントである可能性があります。  
   
-3. プロセスを起動するときに、プログラムが接続されている場合は、送信、 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)に新しいスレッドの IDE に通知する SDM イベント オブジェクト。 このイベントによっては、エンジン設計の停止イベントがあります。  
+3. プロセスが起動されたときにプログラムがにアタッチされている場合は、 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) イベントオブジェクトを SDM に送信して、新しいスレッドを IDE に通知します。 このイベントは、エンジンの設計によっては停止イベントである可能性があります。  
   
-4. 送信、 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) SDM デバッグ中のプログラムが完成した読み込みまたはプログラムへのアタッチが完了したときにイベント オブジェクト。 このイベントは stopping イベントである必要があります。  
+4. デバッグ中のプログラムの読み込みが終了したとき、またはプログラムへのアタッチが完了したときに、 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) イベントオブジェクトを SDM に送信します。 このイベントは、停止イベントである必要があります。  
   
-5. デバッグするアプリケーションを起動する場合は、送信、 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) SDM ランタイム アーキテクチャ内のコードの最初の命令が実行するときにイベント オブジェクト。 このイベントは、常に、停止イベントです。 デバッグ セッションをステップ実行、IDE は、このイベントで停止します。  
+5. デバッグ対象のアプリケーションが起動された場合は、実行時アーキテクチャのコードの最初の命令が実行されるときに、 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) イベントオブジェクトを SDM に送信します。 このイベントは、常に停止イベントです。 デバッグセッションにステップインすると、IDE はこのイベントを停止します。  
   
 > [!NOTE]
-> 多くの言語では、グローバル初期化子 (CRT ライブラリまたは _Main) からの外部のプリコンパイル済みの関数を使用して、そのコードの先頭にします。 デバッグ中のプログラムの言語には、これらの種類の最初のエントリ ポイントの前に要素のいずれかが含まれています、し、このコードが実行され、エントリ ポイント イベントが送信される場合、ユーザーのエントリ ポイントなど**メイン**または`WinMain`、達した。  
+> 多くの言語では、コードの先頭でグローバル初期化子または外部プリコンパイル済み関数 (CRT ライブラリまたは _Main) が使用されます。 デバッグしているプログラムの言語に、最初のエントリポイントの前にこれらの種類の要素のいずれかが含まれている場合は、このコードが実行され、 **main** やなどのユーザーエントリポイントに達したときに、エントリポイントイベントが送信され `WinMain` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッグするプログラムの有効化](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

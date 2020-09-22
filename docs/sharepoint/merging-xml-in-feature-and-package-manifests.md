@@ -1,5 +1,5 @@
 ---
-title: マニフェストの XML 機能およびパッケージのマージ |Microsoft Docs
+title: フィーチャーマニフェストとパッケージマニフェストの XML のマージ |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,71 +13,71 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429285"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841792"
 ---
-# <a name="merge-xml-in-feature-and-package-manifests"></a>フィーチャーとパッケージ マニフェストでの XML をマージします。
-  フィーチャーとパッケージがによって定義されている[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト ファイル。 これらのパッケージ マニフェストは生成されたデザイナーとカスタム データの組み合わせ[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト テンプレートにユーザーを入力します。 パッケージ実行時、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]カスタム マージ[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]ステートメントとデザイナーの[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]パッケージを形成する[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト ファイル。 同様の要素の例外を除き、例外のマージで後でマージを避けるために[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]、sharepoint、ファイルをデプロイすると、マニフェストを作成するファイルより小さいとより効率的に検証エラー。
+# <a name="merge-xml-in-feature-and-package-manifests"></a>フィーチャーマニフェストとパッケージマニフェストの XML のマージ
+  フィーチャーとパッケージは、マニフェストファイルによって定義され [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 これらのパッケージマニフェストは、デザイナーから生成されたデータと、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ユーザーによってマニフェストテンプレートに入力されたカスタムデータの組み合わせです。 パッケージ化時に、は、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] パッケージ化された [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] マニフェストファイルを形成するために用意されているカスタムステートメントとデザイナーをマージし [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 同様の要素は、後の「マージ例外」で説明されている例外を使用してマージされ、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] SharePoint にファイルを配置した後に検証エラーが発生しないようにし、マニフェストファイルを小さく、効率的にします。
 
-## <a name="modify-the-manifests"></a>マニフェストを変更します。
- フィーチャーまたはパッケージ デザイナーを無効にするまでは、パッケージ マニフェスト ファイルを直接変更することはできません。 ユーザー設定を手動で追加するただし、[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]要素マニフェスト テンプレートを機能とパッケージ デザイナーを使用するかまたは[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]エディター。 詳細については、「[方法 :SharePoint フィーチャーをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-feature.md)と[方法。SharePoint ソリューション パッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)します。
+## <a name="modify-the-manifests"></a>マニフェストを変更する
+ パッケージマニフェストファイルは、機能またはパッケージデザイナーを無効にするまで、直接変更することはできません。 ただし、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 機能およびパッケージデザイナーまたはエディターを使用して、カスタム要素をマニフェストテンプレートに手動で追加することができ [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 詳細については、「 [方法: Sharepoint 機能をカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-feature.md) する」および「 [方法: sharepoint ソリューションパッケージをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)」を参照してください。
 
-## <a name="feature-and-package-manifest-merge-process"></a>機能およびパッケージ マニフェストのマージ プロセス
- デザイナーが提供の要素と共にカスタム要素を結合するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]は次のプロセスを使用します。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 各要素に一意のキー値があるかどうかを確認します。 一意のキー値を持つ要素がない場合は、パッケージ マニフェスト ファイルに追加されます。 同様に、複数のキーを持つ要素をマージできません。 そのため、マニフェスト ファイルに、それらが追加されます。
+## <a name="feature-and-package-manifest-merge-process"></a>機能とパッケージのマニフェストのマージプロセス
+ カスタム要素とデザイナーで提供される要素を組み合わせる場合、で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は次のプロセスを使用します。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 各要素に一意のキー値があるかどうかを確認します。 要素に一意のキー値がない場合は、パッケージマニフェストファイルに追加されます。 同様に、複数のキーを持つ要素をマージすることはできません。 そのため、マニフェストファイルに追加されます。
 
- 要素に一意のキーが[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーとカスタムのキーの値を比較します。 値が一致した場合、単一の値にマージします。 値が異なる場合、デザイナーのキー値が破棄され、カスタムのキー値が使用されます。 コレクションもマージされます。 たとえば場合、デザイナーで生成された[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]にカスタム[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]両方のアセンブリのコレクションを含めることが、パッケージ マニフェストには、1 つだけのアセンブリのコレクションが含まれています。
+ 要素に一意のキーがある場合、は [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デザイナーとカスタムキーの値を比較します。 値が一致する場合は、1つの値にマージされます。 値が異なる場合、デザイナーのキー値は破棄され、カスタムキー値が使用されます。 コレクションもマージされます。 たとえば、デザイナーで生成された [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] とカスタムの [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 両方にアセンブリコレクションが含まれている場合、パッケージ化されたマニフェストにはアセンブリコレクションが1つだけ含まれます。
 
-## <a name="merge-exceptions"></a>例外をマージします。
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ほとんどのデザイナーをマージ[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]要素および同様のカスタム[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]要素の 1 つの一意の識別属性がある限りです。 ただし、必要な一意の識別子のないいくつかの要素[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マージします。 これらの要素と呼ばれる*例外をマージ*します。 このような場合は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]カスタム マージしない[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]要素およびデザイナーの[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]要素が代わりにそれらをパッケージ マニフェスト ファイルに追加されます。
+## <a name="merge-exceptions"></a>例外のマージ
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 、一意の識別属性が1つしかない限り、ほとんどのデザイナー要素を類似したカスタム要素とマージします。 ただし、マージに必要な一意の識別子を持たない要素もあり [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 これらの要素は *マージ例外*と呼ばれます。 このような場合、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は、カスタム要素とデザイナーで提供される要素をマージせずに、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] パッケージマニフェストファイルに追加します。
 
- 機能およびパッケージのマージの例外の一覧を次に[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト ファイル。
+ フィーチャーマニフェストファイルとパッケージマニフェストファイルのマージ例外の一覧を次に示し [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。
 
 |Designer|XML 要素|
 |--------------|-----------------|
-|フィーチャー デザイナー|ActivationDependency|
-|フィーチャー デザイナー|UpgradeAction|
-|パッケージ デザイナー|SafeControl|
-|パッケージ デザイナー|CodeAccessSecurity|
+|フィーチャーデザイナー|ActivationDependency|
+|フィーチャーデザイナー|UpgradeAction|
+|パッケージデザイナー|SafeControl|
+|パッケージデザイナー|CodeAccessSecurity|
 
-## <a name="feature-manifest-elements"></a>フィーチャー マニフェスト要素
- 次の表では、マージできるすべての機能のマニフェスト要素と、その照合に使用される一意キーの一覧を示します。
+## <a name="feature-manifest-elements"></a>フィーチャーマニフェストの要素
+ 次の表に、マージ可能なすべてのフィーチャーマニフェスト要素と、一致に使用される一意のキーの一覧を示します。
 
-|要素名|一意のキー|
+|要素名|一意キー|
 |------------------|----------------|
-|機能 (すべての属性)|*属性名*(機能の要素の各属性名は一意のキーです)。|
+|機能 (すべての属性)|*属性名* (フィーチャー要素の各属性名は一意のキーです)。|
 |ElementFile|場所|
-|ElementManifests/ElementManifest|場所|
+|ElementManifests/Elementmanifests|場所|
 |プロパティ/プロパティ|キー|
-|CustomUpgradeAction|名前|
-|CustomUpgradeActionParameter|名前|
+|CustomUpgradeAction|Name|
+|CustomUpgradeActionParameter|Name|
 
 > [!NOTE]
-> CustomUpgradeAction 要素を変更する唯一の方法が、カスタムのため、[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]エディター、いないをマージした効果が低い。
+> CustomUpgradeAction 要素を変更する唯一の方法はカスタムエディターであるため [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 、マージしない場合の効果は低くなります。
 
-## <a name="package-manifest-elements"></a>パッケージ マニフェスト要素
- 次の表では、マージ可能なすべてのパッケージ マニフェスト要素とその照合に使用される一意キーの一覧を示します。
+## <a name="package-manifest-elements"></a>パッケージマニフェスト要素
+ 次の表に、マージ可能なすべてのパッケージマニフェスト要素と、一致に使用される一意のキーの一覧を示します。
 
-|要素名|一意のキー|
+|要素名|一意キー|
 |------------------|----------------|
-|ソリューション (すべての属性)|*属性名*(ソリューションの要素の各属性名は一意のキーです)。|
+|ソリューション (すべての属性)|*属性名* (ソリューション要素の各属性名は一意のキーです)。|
 |ApplicationResourceFiles/ApplicationResourceFile|場所|
 |アセンブリ/アセンブリ|場所|
-|ClassResources/ClassResource|場所|
-|DwpFiles/DwpFile|場所|
-|FeatureManifests/FeatureManifest|場所|
+|ClassResources/Classresources|場所|
+|DwpFiles/Dwpfiles|場所|
+|FeatureManifests/Featuremanifests|場所|
 |リソース/リソース|場所|
-|RootFiles/RootFile|場所|
-|SiteDefinitionManifests/SiteDefinitionManifest|場所|
+|RootFiles/Rootfiles|場所|
+|SiteDefinitionManifests/Sitedefinitionmanifests|場所|
 |WebTempFile|場所|
 |TemplateFiles/TemplateFile|場所|
 |SolutionDependency|SolutionID|
 
-## <a name="manually-add-deployed-files"></a>配置済みのファイルを手動で追加します。
- ApplicationResourceFile DwpFiles などのいくつかのマニフェスト要素は、ファイル名が含まれている場所を指定します。 ただし、マニフェスト テンプレートへのファイル名のエントリの追加はない基になるファイル パッケージに追加します。 パッケージに含めるし、その展開の種類プロパティを適宜設定をプロジェクトにファイルを追加する必要があります。
+## <a name="manually-add-deployed-files"></a>展開されたファイルを手動で追加する
+ ApplicationResourceFile や DwpFiles などのマニフェスト要素の中には、ファイル名を含む場所を指定するものがあります。 ただし、マニフェストテンプレートにファイル名のエントリを追加しても、基になるファイルはパッケージに追加されません。 このファイルをパッケージに含めるには、ファイルをプロジェクトに追加し、その展開の種類のプロパティを適宜設定する必要があります。
 
-## <a name="see-also"></a>関連項目
-- [パッケージ化し、SharePoint ソリューションのデプロイ](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)

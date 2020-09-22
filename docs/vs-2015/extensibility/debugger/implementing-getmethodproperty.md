@@ -1,5 +1,5 @@
 ---
-title: Getmethodproperty の実装 |Microsoft Docs
+title: GetMethodProperty | を実装するMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f125db668d240200e94539167381931898c75135
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430308"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842181"
 ---
 # <a name="implementing-getmethodproperty"></a>GetMethodProperty の実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- Visual Studio はデバッグ エンジン (DE) を呼び出して[GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)、この[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)スタック フレーム上の現在のメソッドに関する情報を取得します。  
+ Visual Studio は、デバッグエンジンの (DE) [Getdebugproperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)を呼び出します。このプロパティは [getdebugproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) を呼び出して、スタックフレームの現在のメソッドに関する情報を取得します。  
   
- この実装の`IDebugExpressionEvaluator::GetMethodProperty`は、次のタスクを実行します。  
+ のこの実装で `IDebugExpressionEvaluator::GetMethodProperty` は、次のタスクを実行します。  
   
-1. 呼び出し[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)で渡し、 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。 シンボル プロバイダー (SP) を返します、 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)を指定したアドレスを含むメソッドを表します。  
+1. [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)を呼び出し、 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)オブジェクトを渡します。 シンボルプロバイダー (SP) は、指定されたアドレスを含むメソッドを表す [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) を返します。  
   
-2. 取得、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)から、`IDebugContainerField`します。  
+2. から [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) を取得し `IDebugContainerField` ます。  
   
-3. クラスをインスタンス化します (と呼ばれる`CFieldProperty`この例では) を実装する、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスし、が含まれています、 `IDebugMethodField` SP から返されたオブジェクト  
+3. `CFieldProperty` [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスを実装し、 `IDebugMethodField` SP から返されたオブジェクトを格納するクラス (この例ではと呼ばれます) をインスタンス化します。  
   
-4. 返します、`IDebugProperty2`からインターフェイス、`CFieldProperty`オブジェクト。  
+4. `IDebugProperty2`オブジェクトからインターフェイスを返し `CFieldProperty` ます。  
   
 ## <a name="managed-code"></a>マネージド コード  
- この例の実装を示しています。`IDebugExpressionEvaluator::GetMethodProperty`マネージ コードでします。  
+ この例は、マネージコードでのの実装を示して `IDebugExpressionEvaluator::GetMethodProperty` います。  
   
 ```csharp  
 namespace EEMC  
@@ -69,7 +69,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>アンマネージ コード  
- この例の実装を示しています。`IDebugExpressionEvaluator::GetMethodProperty`アンマネージ コードにします。  
+ この例は、アンマネージコードでのの実装を示して `IDebugExpressionEvaluator::GetMethodProperty` います。  
   
 ```  
 [CPP]  
@@ -126,5 +126,5 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ローカルの実装のサンプル](../../extensibility/debugger/sample-implementation-of-locals.md)

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439354"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842169"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   
 - `Type` の値が `Fragment` の場合、コードは `Execute` メソッドの内容を定義します。ただし、シグネチャや `return` ステートメントは含まれません。  
   
-  コード自体は通常、`<![CDATA[` マーカーと `]]>` マーカーの間に記述します。 コードは CDATA セクション内に記述するため、"\<" や ">" などの予約文字のエスケープを気にする必要はありません。  
+  コード自体は通常、`<![CDATA[` マーカーと `]]>` マーカーの間に記述します。 コードは CDATA セクション内に記述するため、"\<" or ">" などの予約文字のエスケープを気にする必要はありません。  
   
   また、`Source` 要素の `Code` 属性を使用して、タスクのコードを含むファイルの場所を指定することもできます。 ソース ファイルのコードの種類は、`Type` 属性で指定された種類である必要があります。 `Source` 属性が指定されている場合、`Type` の既定値は `Class` です。 `Source` が指定されていない場合の既定値は `Fragment` です。  
   
@@ -139,11 +139,11 @@ Log.LogError("Hello, world!");
   
 - `Required` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターは必須で、タスクを呼び出す前に値を指定する必要があります。  
   
-- `ParameterType` は省略可能な属性で、既定値は `System.String` です。 System.Convert.ChangeType を使用して文字列との間で変換できる項目または値の完全修飾型に設定できます  (つまり、外部タスクとの受け渡しが可能なすべての型)。  
+- `ParameterType` は省略可能な属性で、既定値は `System.String` です。 System.Convert.ChangeType を使用して文字列との間で変換できる項目または値の完全修飾型に設定できます (つまり、外部タスクとの受け渡しが可能なすべての型)。  
   
 - `Output` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターの値を、Execute メソッドから戻る前に指定する必要があります。  
   
-  例えば以下のようにします。  
+  たとえば、オブジェクトに適用された  
   
 ```  
 <ParameterGroup>  
@@ -191,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
- [チュートリアル: インライン タスクの作成](../msbuild/walkthrough-creating-an-inline-task.md)
+ [チュートリアル: インラインタスクの作成](../msbuild/walkthrough-creating-an-inline-task.md)

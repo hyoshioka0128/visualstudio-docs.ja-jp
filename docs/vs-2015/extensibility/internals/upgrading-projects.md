@@ -13,49 +13,49 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441242"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841464"
 ---
 # <a name="upgrading-projects"></a>プロジェクトのアップグレード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロジェクト モデルの 1 つのバージョンから変更[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]へ必要があります、新しいバージョンで実行できるようにプロジェクトおよびソリューションをアップグレードします。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]独自のプロジェクトのアップグレードのサポートを実装するために使用できるインターフェイスを提供します。  
+プロジェクトモデルをのあるバージョンから [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 次のバージョンに変更すると、新しいバージョンで実行できるように、プロジェクトとソリューションをアップグレードすることが必要になる場合があります。 には、 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 独自のプロジェクトで upgrade support を実装するために使用できるインターフェイスが用意されています。  
   
-## <a name="upgrade-strategies"></a>アップグレードの戦略  
- アップグレードをサポートするには、プロジェクト システムの実装が定義し、アップグレードの戦略を実装する必要があります。 戦略を決定するのには、サイド バイ サイド (SxS) のバックアップ、バックアップのコピー、またはその両方をサポートするために選択できます。  
+## <a name="upgrade-strategies"></a>アップグレード戦略  
+ アップグレードをサポートするには、プロジェクトシステムの実装で、アップグレード戦略を定義して実装する必要があります。 戦略を決定する際には、サイドバイサイド (SxS) バックアップ、コピーバックアップ、またはその両方をサポートすることを選択できます。  
   
-- SxS バックアップでは、プロジェクトがアップグレード インプレースでは、たとえば、適切なファイル名サフィックスを追加".old"必要があるファイルのみをコピーを意味します。  
+- SxS バックアップとは、プロジェクトでは、アップグレードが必要なファイルのみをコピーし、適切なファイル名サフィックスを追加することを意味します。たとえば、".old" のようになります。  
   
-- コピー バックアップでは、プロジェクトが、ユーザーが指定したバックアップの場所へのすべてのプロジェクト項目をコピーすることを意味します。 元のプロジェクトの場所に関連するファイルは、アップグレードします。  
+- コピーバックアップとは、プロジェクトがすべてのプロジェクト項目をユーザー指定のバックアップの場所にコピーすることを意味します。 その後、元のプロジェクトの場所にある関連ファイルがアップグレードされます。  
   
-## <a name="how-upgrade-works"></a>アップグレードする方法の動作  
- 以前のバージョンで作成されたソリューションと[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]はソリューション ファイルにアップグレードする必要があるかどうかは決まりますを IDE の確認、新しいバージョンで開かれます。 アップグレードが必要な場合、**アップグレード ウィザード**がアップグレードのプロセスを順を追ってに自動的に起動します。  
+## <a name="how-upgrade-works"></a>アップグレードのしくみ  
+ 以前のバージョンので作成されたソリューションを [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 新しいバージョンで開くと、IDE はソリューションファイルをチェックして、アップグレードが必要かどうかを判断します。 アップグレードが必要な場合は、アップグレード **ウィザード** が自動的に起動して、アップグレードプロセスをユーザーに案内します。  
   
- ソリューションでは、アップグレードする必要があります、そのアップグレードの戦略の場合は、各プロジェクト ファクトリを照会します。 戦略は、プロジェクト ファクトリが、コピーまたは SxS のバックアップをサポートしているかどうかを判断します。 情報に送信、**アップグレード ウィザード**バックアップに必要な情報を収集およびユーザーに適切なオプションを表示します。  
+ ソリューションをアップグレードする必要がある場合は、各プロジェクトファクトリに対して、アップグレードの戦略についてクエリを行います。 この戦略では、プロジェクトファクトリがコピーバックアップと SxS バックアップのどちらをサポートするかを決定します。 この情報は **アップグレードウィザード**に送信され、バックアップに必要な情報が収集され、該当するオプションがユーザーに提示されます。  
   
-### <a name="multi-project-solutions"></a>マルチ プロジェクト ソリューション  
- ソリューションには、複数のプロジェクトが含まれています。 プロジェクト ファクトリがアップグレード戦略をネゴシエートする必要がありますのみ SxS のバックアップをサポートする C++ プロジェクトと Web プロジェクトのみバックアップ コピーをサポートするなど、アップグレードの戦略が異なる場合。  
+### <a name="multi-project-solutions"></a>複数のプロジェクトから成るソリューション  
+ ソリューションに複数のプロジェクトが含まれており、アップグレード戦略が異なる場合 (たとえば、SxS バックアップのみをサポートする C++ プロジェクトや、コピーバックアップのみをサポートする Web プロジェクトの場合など)、プロジェクトファクトリはアップグレード戦略をネゴシエートする必要があります。  
   
- ソリューションのクエリの各プロジェクト ファクトリ<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>します。 呼び出して<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A>グローバル プロジェクト ファイルのアップグレードに必要なかどうかを参照して、サポートされているアップグレードの戦略を決定します。 **アップグレード ウィザード**呼び出されます。  
+ ソリューションは、の各プロジェクトファクトリに対してクエリを <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 行います。 次に、を呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> グローバルプロジェクトファイルのアップグレードが必要かどうかを確認し、サポートされているアップグレード方法を確認します。 次に、 **アップグレードウィザード** が呼び出されます。  
   
- ユーザーが、ウィザードを完了した後<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>は実際のアップグレードを実行するには、各プロジェクト ファクトリに対して呼び出されます。 IVsProjectUpgradeViaFactory メソッドを提供するバックアップを容易に、<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>アップグレード プロセスの詳細を記録するサービス。 このサービスをキャッシュすることはできません。  
+ ユーザーがウィザードを完了すると、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 各プロジェクトファクトリでが呼び出され、実際のアップグレードが実行されます。 バックアップを容易にするために、IVsProjectUpgradeViaFactory メソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> アップグレードプロセスの詳細をログに記録するサービスを提供します。 このサービスをキャッシュすることはできません。  
   
- 関連するすべてのグローバル ファイルを更新した後は、各プロジェクト ファクトリは、プロジェクトをインスタンス化を選択できます。 プロジェクトの実装をサポートする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>すべての関連するプロジェクト項目のアップグレードにはメソッドが呼び出されます。  
+ 関連するすべてのグローバルファイルを更新した後、プロジェクトファクトリはプロジェクトのインスタンスを選択できます。 プロジェクトの実装では、をサポートする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> ます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>次に、メソッドを呼び出して、関連するすべてのプロジェクト項目をアップグレードします。  
   
 > [!NOTE]
-> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドが SVsUpgradeLogger サービスを提供できません。 このサービスを呼び出すことによって取得できる<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>します。  
+> メソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> SVsUpgradeLogger サービスを提供しません。 このサービスは、を呼び出すことによって取得でき <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> ます。  
   
-## <a name="best-practices"></a>ベスト プラクティス  
- 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>編集する前にファイルを編集することができ、保存する前に保存できるかどうかにチェックするサービス。 これにより、バックアップと、アップグレードの実装がソース管理下にあるプロジェクト ファイル、権限の不足などのファイルを処理します。  
+## <a name="best-practices"></a>推奨する運用方法  
+ サービスを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> ファイルを編集する前に編集できるかどうかを確認し、保存する前に保存しておくことができます。 これにより、バックアップとアップグレードの実装で、ソース管理下のプロジェクトファイル、十分なアクセス許可のないファイルなどを処理できます。  
   
- 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>バックアップのすべてのフェーズ中にサービスし、アップグレード、アップグレード処理の成否に関する情報を提供します。  
+ <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger>アップグレードプロセスの成功または失敗に関する情報を提供するために、バックアップとアップグレードのすべてのフェーズでサービスを使用します。  
   
- バックアップして、プロジェクトのアップグレードの詳細については、コメントを参照して IVsProjectUpgrade の vsshell2.idl でします。  
+ プロジェクトのバックアップとアップグレードの詳細については、vsshell2 での IVsProjectUpgrade に関するコメントを参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクト](../../extensibility/internals/projects.md)   
- [カスタム プロジェクトのアップグレード](../../misc/upgrading-custom-projects.md)   
+## <a name="see-also"></a>参照  
+ [イベント](../../extensibility/internals/projects.md)   
+ [カスタムプロジェクトのアップグレード](../../misc/upgrading-custom-projects.md)   
  [プロジェクト項目のアップグレード](../../misc/upgrading-project-items.md)

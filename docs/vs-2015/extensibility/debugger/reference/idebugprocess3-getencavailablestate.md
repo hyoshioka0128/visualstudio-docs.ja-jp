@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetENCAvailableState |Microsoft Docs
+title: 'IDebugProcess3:: Getenc State |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5cf5941ff75360c64add85e72a4c02c3ad716309
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405678"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841713"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、プロセスの現在のエディット コンティニュの状態を取得します。 カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。  
+このメソッドは、プロセスの現在のエディットコンティニュの状態を取得します。 カスタムポート供給業者は常にを返す必要があり `E_NOTIMPL` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,18 +40,18 @@ int GetENCAvailableState(
   
 #### <a name="parameters"></a>パラメーター  
  `pReason`  
- [out]値、 [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)列挙体。  
+ 入出力 [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) 列挙の値です。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 > [!NOTE]
-> カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。  
+> カスタムポート供給業者は常にを返す必要があり `E_NOTIMPL` ます。  
   
-## <a name="remarks"></a>Remarks  
- この状態は影響を受ける[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)します。  
+## <a name="remarks"></a>注釈  
+ この状態は、 [Disableenc](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)によって影響を受ける可能性があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

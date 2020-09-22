@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432830"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841341"
 ---
-# <a name="how-to-choose-sampling-events"></a>方法: サンプリング イベントを選択します。
+# <a name="how-to-choose-sampling-events"></a>方法 : サンプリング イベントを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 既定では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールは、プロファイリングされるプロセスによって使用されるプロセッサ サイクルの数として指定された間隔でパフォーマンス データを収集します。 既定の間隔のサイクル数は 10,000,000 です。これは、1 GHz のコンピューターで約 0.01 秒に相当します。 間隔のサイクル数とサンプル イベントは変更できます。 次のサンプル イベントを使用できます。  
@@ -46,24 +46,24 @@ ms.locfileid: "63432830"
   
 1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
   
-2. **[プロパティ ページ]** で、**[サンプリング]** プロパティをクリックします。  
+2. **[プロパティ ページ]** で、 **[サンプリング]** プロパティをクリックします。  
   
 3. **[サンプル イベント]** ドロップダウン リストで、アプリケーションのプロファイリングに使用するサンプル イベントを選択します。  
   
     > [!NOTE]
-    > **[利用可能なパフォーマンス カウンター]** は、**[サンプル イベント]** ドロップダウン リストの **[パフォーマンス カウンター]** を選択した場合のみ有効です。  
+    > **[利用可能なパフォーマンス カウンター]** は、 **[サンプル イベント]** ドロップダウン リストの **[パフォーマンス カウンター]** を選択した場合のみ有効です。  
   
-4. **[パフォーマンス カウンター]** を選択した場合、**[使用可能なパフォーマンス カウンター]** ツリー ビュー コントロールから、特定の CPU カウンターを選択します。  
+4. **[パフォーマンス カウンター]** を選択した場合、 **[使用可能なパフォーマンス カウンター]** ツリー ビュー コントロールから、特定の CPU カウンターを選択します。  
   
     - **[Portable Events]** ノードのカウンターは、すべての種類のプロセッサで使用できます。  
   
     - **[Platform Events]** ノードのカウンターは、現在のコンピューター上のプロセッサに固有であるため、他の種類のプロセッサでは使用できない場合があります。  
   
-5. サンプル イベントを選択すると、**[サンプリング間隔]** テキスト ボックスに既定のサンプリング間隔の値が表示されます。 必要に応じて、テキスト ボックスに希望の値を入力できます。  
+5. サンプル イベントを選択すると、 **[サンプリング間隔]** テキスト ボックスに既定のサンプリング間隔の値が表示されます。 必要に応じて、テキスト ボックスに希望の値を入力できます。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [方法: 収集方法を選択します。](../profiling/how-to-choose-collection-methods.md)   
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
+ [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)   
  [CPU カウンターと Windows カウンター](../profiling/cpu-and-windows-counters.md)   
- [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
- [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [サンプリングデータ値について](../profiling/understanding-sampling-data-values.md)   
+ [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)

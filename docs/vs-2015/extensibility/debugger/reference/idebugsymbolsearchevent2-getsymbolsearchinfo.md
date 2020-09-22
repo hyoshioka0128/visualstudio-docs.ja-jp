@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo |Microsoft Docs
+title: 'IDebugSymbolSearchEvent2:: Getシンボル Searchinfo |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8ef097ed02ae90b03289e3a2f3a1ad3f0ad8618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446043"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841484"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-シンボルの読み込みプロセスの結果を取得するためのイベント ハンドラーによって呼び出されます。  
+シンボルの読み込みプロセスに関する結果を取得するために、イベントハンドラーによって呼び出されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,24 +45,24 @@ int GetSymbolSearchInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `pModule`  
- [out]対象のシンボルが読み込まれたモジュールを表す IDebugModule3 オブジェクト。  
+ 入出力シンボルが読み込まれたモジュールを表す IDebugModule3 オブジェクト。  
   
  `pbstrDebugMessage`  
- [入力、出力]モジュールからすべてのエラー メッセージを含む文字列を返します。 エラーがない場合は、この文字列には、モジュールの名前にはだけが含まれますが、空ではありません。  
+ [入力、出力]モジュールからのエラーメッセージを含む文字列を返します。 エラーがない場合、この文字列にはモジュールの名前だけが含まれますが、空になることはありません。  
   
 > [!NOTE]
-> [C++]`pbstrDebugMessage`することはできません`NULL`を解放する必要がありますと`SysFreeString`します。  
+> [C++] `pbstrDebugMessage` をにすることはできません `NULL` 。また、で解放する必要があり `SysFreeString` ます。  
   
  `pdwModuleInfoFlags`  
- [out]フラグの組み合わせ、 [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)シンボルが読み込まれたかどうかを示す列挙値。  
+ 入出力シンボルが読み込まれたかどうかを示す、 [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) 列挙のフラグの組み合わせ。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。  
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ハンドラーが受信すると、 [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)イベント モジュールのデバッグ シンボルの読み込みを試行した後、ハンドラーは、その負荷の結果を判断するこのメソッドを呼び出すことができます。  
+## <a name="remarks"></a>注釈  
+ モジュールのデバッグシンボルの読み込みが試行された後にハンドラーが [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) イベントを受け取ると、ハンドラーは thismethod を呼び出してその読み込みの結果を確認できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
  [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

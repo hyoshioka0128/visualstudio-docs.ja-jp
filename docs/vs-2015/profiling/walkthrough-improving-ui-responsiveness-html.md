@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: UI 応答性 (HTML) の向上 |Microsoft Docs'
+title: 'チュートリアル: UI の応答性の向上 (HTML) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,29 +20,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433169"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841552"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>チュートリアル: UI 応答性 (HTML) の向上
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>チュートリアル: UI の応答性の向上 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、[HTML UI の応答性プロファイラー](../profiling/html-ui-responsiveness.md)を使って、パフォーマンスの問題を特定し修復するプロセスについて説明します。 このプロファイラーは、Visual Studio で、JavaScript を使用した Windows ユニバーサルおよび Windows ストアのアプリに対して使用できます。 このシナリオでは、DOM 要素の更新の頻度が高すぎるパフォーマンス テスト アプリを作成し、この問題をプロファイラーを使用して特定および修正します。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>パフォーマンス テスト アプリを作成して実行する  
   
-1. Visual Studio で、新しい Windows ユニバーサル JavaScript プロジェクトを作成します。 (**[ファイル]、[新規作成]、[プロジェクト] の順に選択します**。 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、**[Windows 10]** と選択してから、**[ユニバーサル]** または **[Windows Phone]** を選択します。  
+1. Visual Studio で、新しい Windows ユニバーサル JavaScript プロジェクトを作成します。 ([ **ファイル]、[新規作成]、[プロジェクト**] の順に選択します。 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、**[Windows 10]** と選択してから、**[ユニバーサル]** または **[Windows Phone]** を選択します。  
   
 2. > [!IMPORTANT]
     > このトピックで示す診断の結果は、Windows 8 アプリ用です。  
   
 3. 中央のペインで **[空のアプリケーション]** などの空のプロジェクト テンプレートの 1 つを選択します。  
   
-4. **[名前]** ボックスに `JS_Perf_Tester` などの名前を指定し、**[OK]** をクリックします。  
+4. **[名前]** ボックスに `JS_Perf_Tester`などの名前を指定し、 **[OK]** をクリックします。  
   
-5. **ソリューション エクスプローラー** で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
+5. **ソリューションエクスプローラー**で default.html を開き、タグの間に次のコードを貼り付け \<body> ます。  
   
     ```html  
     <div class="wrapper">  
@@ -150,13 +150,13 @@ ms.locfileid: "63433169"
   
 8. F5 キーを押してデバッグを開始します。 **[Waiting for values]\(値の待機)** ボタンがページに表示されることを確認します。  
   
-9. **[Waiting for values]\(値の待機)** を選択し、ボタンのテキストと色が 1 秒に 1 回更新されることを確認します。 これは仕様に基づく制限事項です。  
+9. **[Waiting for values]\(値の待機)** を選択し、ボタンのテキストと色が 1 秒に 1 回更新されることを確認します。 これは仕様です。  
   
 10. Visual Studio に戻り (Alt + Tab キー)、Shift キーを押しながら F5 キーを押してデバッグを停止します。  
   
      アプリが動作することは確認できたので、次にプロファイラーを使用してパフォーマンスをチェックします。  
   
-### <a name="analyzing-performance-data"></a>パフォーマンス データを分析する  
+### <a name="analyzing-performance-data"></a>パフォーマンス データの分析  
   
 1. **[デバッグ]** ツール バーの **[デバッグの開始]** の一覧で、いずれかの Windows Phone エミュレーターまたは **[シミュレーター]** を選択します。  
   
@@ -200,9 +200,9 @@ ms.locfileid: "63433169"
   
 9. コンテキスト メニュー (右クリック) を使用して、下部のペインの `Timer` イベントの 1 つを選択し、**[イベントのフィルター]** を選択します。 次の図に、このテスト アプリの `Timer` イベントの 1 つに一般的な詳細な例を示します。  
   
-     ![タイマー イベント](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
+     ![Timer イベント](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     このデータからはさまざまなことがわかります。 例:  
+     このデータからはさまざまなことがわかります。 次に例を示します。  
   
     - 各 `Timer` イベント (色分けからスクリプト イベントであることがわかります) には `document.createElement` の呼び出しが含まれており、その後にスタイルの計算と `style.backgroundColor` および `appendChild()` の呼び出しが続いています。  
   
@@ -242,5 +242,5 @@ ms.locfileid: "63433169"
   
 2. HTML UI の応答性プロファイラーを再度実行し、CPU 使用状況グラフを確認します。 過剰なイベントはなくなり、CPU 使用状況はゼロに近い値に下がっています。 問題は修正されました。  
   
-## <a name="see-also"></a>関連項目  
- [HTML UI の応答性](../profiling/html-ui-responsiveness.md)
+## <a name="see-also"></a>参照  
+ [HTML UI responsiveness](../profiling/html-ui-responsiveness.md)

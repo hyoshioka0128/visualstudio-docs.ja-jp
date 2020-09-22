@@ -1,5 +1,5 @@
 ---
-title: ミップマップ生成バリアント |Microsoft Docs
+title: ミップマップ生成バリアント | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383960"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842052"
 ---
 # <a name="mip-map-generation-variant"></a>ミップマップ生成バリアント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,12 +65,12 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- 完全な MIP チェーンを持つテクスチャを作成するには、`D3D11_TEXTURE2D_DESC::MipLevels` を 0 に設定します。 完全な mip チェーンの mip レベルの数は floor(log2(n) + 1)、n は、テクスチャの最大のディメンションです。  
+ 完全な MIP チェーンを持つテクスチャを作成するには、`D3D11_TEXTURE2D_DESC::MipLevels` を 0 に設定します。 完全な MIP チェーンの MIP レベルの数は floor(log2(n) + 1) となります。この n はテクスチャの最大のディメンションです。  
   
  `CreateTexture2D` に初期データを提供する場合は、各 MIP レベルに D3D11_SUBRESOURCE_DATA オブジェクトを提供しなければならないことに注意してください。  
   
 > [!NOTE]
 > MIP レベルを自動的に生成する代わりに独自の MIP レベル コンテンツを提供する場合は、MIP マップ テクスチャをサポートしているイメージ エディターを使用してテクスチャを作成し、ファイルをロードして、MIP レベルを `CreateTexture2D` へ渡す必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ハーフ/クォーター テクスチャ ディメンション バリアント](../debugger/half-quarter-texture-dimensions-variant.md)

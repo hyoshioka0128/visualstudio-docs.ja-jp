@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431642"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841465"
 ---
 # <a name="understanding-performance-collection-methods"></a>パフォーマンス収集方法について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
  一部のプロファイル方法では、ソフトウェアおよびハードウェアのパフォーマンス カウンターなど、ここで示した以外の情報も収集できます。 詳細については、「[追加のパフォーマンス データの収集](../profiling/collecting-additional-performance-data.md)」を参照してください。  
   
-## <a name="sampling"></a> サンプリング  
+## <a name="sampling"></a><a name="sampling"></a> サンプリング  
  サンプリング プロファイル方式では、プロファイリング実行中にアプリケーションが実行した作業に関する統計データを収集します。 サンプリング方式は負荷が少ないため、アプリケーション メソッドの実行にほとんど影響しません。  
   
  サンプリングは、Visual Studio プロファイリング ツールの既定の方式です。 サンプリング方式は、次のような用途に適しています。  
@@ -53,11 +53,11 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   [サンプリングを使用したパフォーマンス統計情報の収集](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-  [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)  
+  [サンプリングデータ値について](../profiling/understanding-sampling-data-values.md)  
   
-  [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)  
+  [サンプリングメソッドのデータビュー](../profiling/profiler-sampling-method-data-views.md)  
   
-## <a name="instrumentation"></a> インストルメンテーション  
+## <a name="instrumentation"></a><a name="instrumentation"></a> 機能  
  インストルメンテーション プロファイル方式では、プロファイル対象アプリケーションにおける関数呼び出しのタイミングに関する詳細情報を収集します。 インストルメンテーション プロファイル方式は、次のような用途に適しています。  
   
 - ディスク I/O などの入出力のボトルネックを調査する場合  
@@ -76,13 +76,13 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   インストルメンテーション方式を使用して、CPU およびソフトウェアの両方のパフォーマンス カウンターを収集することもできます。  
   
-  [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)  
+  [インストルメンテーションデータ値について](../profiling/understanding-instrumentation-data-values.md)  
   
   [インストルメンテーションを使用した詳細なタイミング データの収集](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
   [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)  
   
-## <a name="concurrency"></a> コンカレンシー  
+## <a name="concurrency"></a><a name="concurrency"></a> 多重  
  コンカレンシー プロファイルでは、マルチスレッド アプリケーションに関する情報が収集されます。 リソース競合プロファイルでは、競合するスレッドによる共有リソースへのアクセスで待機が発生するたびに、詳細な呼び出し履歴情報が収集されます。 また、コンカレンシーの視覚化では、マルチスレッド アプリケーションが、アプリケーション自体、ハードウェア、オペレーティング システム、およびホスト コンピューター上の他のプロセスと対話する方法に関する、より一般的な情報が収集されます。  
   
 - リソース競合レポートには、発生した競合の合計数と、リソースに対する合計待機時間 (待機が発生したモジュール、関数、ソース コード行、命令についての合計待機時間) が表示されます。 また、タイムライン グラフにも発生した競合が表示されます。  
@@ -93,11 +93,11 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
   [スレッドおよびプロセスのコンカレンシー データの収集](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
-  [リソース競合データのビュー](../profiling/resource-contention-data-views.md)  
+  [リソース競合データビュー](../profiling/resource-contention-data-views.md)  
   
   [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)  
   
-## <a name="net_memory"></a> .NET メモリ  
+## <a name="net-memory"></a><a name="net_memory"></a> .NET メモリ  
  .NET メモリ割り当てプロファイル方式では、プロファイリング対象アプリケーションで .NET Framework オブジェクトにメモリが割り当てられるたびに、コンピューター プロセッサに対して割り込みを行います。 オブジェクトの有効期間データも収集する場合は、.NET Framework のガベージ コレクションの実行後に、毎回プロファイラーがコンピューター プロセッサに対して割り込みを行います。  
   
  プロファイラーは、割り当てで作成されたオブジェクト、またはガベージ コレクションで破棄されたオブジェクトの型、サイズ、および数に関する情報を収集します。  
@@ -112,13 +112,13 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
 - .NET メモリのプロファイリングをインストルメンテーション モードで実行すると、タイミングに関する詳細情報と共に、包括的割り当て値および排他的割り当て値が収集されます。  
   
-  [メモリの割り当ておよびオブジェクトの有効期間のデータ値について](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+  [メモリの割り当てとオブジェクトの有効期間のデータ値について](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
   [.NET メモリの割り当ておよび有効期間データの収集](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
-  [.NET メモリのデータ ビュー](../profiling/dotnet-memory-data-views.md)  
+  [.NET メモリデータビュー](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="tier_interaction"></a> 階層の相互作用  
+## <a name="tier-interaction"></a><a name="tier_interaction"></a> 階層の相互作用  
  階層の相互作用のプロファイリングでは、[!INCLUDE[vstecado](../includes/vstecado-md.md)] ページまたはその他のアプリケーションと [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] データベースとの間で行われた同期的な [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 呼び出しに関する情報が、プロファイリング データ ファイルに追加されます。 データには、呼び出しの回数と時間、および最長時間と最短時間が含まれます。 階層の相互作用データは、サンプリング、インストルメンテーション、.NET メモリ、またはコンカレンシーの各方式で収集されたプロファイリング データに追加できます。  
   
  ![階層相互作用プロファイリング データ](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -128,6 +128,6 @@ Visual Studio プロファイリング ツールには、パフォーマンス �
   
  [階層相互作用のビュー](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>関連項目  
- [方法: Web サイトのパフォーマンス データを収集します。](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
- [パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)
+## <a name="see-also"></a>参照  
+ [方法: Web サイトのパフォーマンスデータを収集する](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+ [パフォーマンスプロファイルの初心者向けガイド](../profiling/beginners-guide-to-performance-profiling.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 項目定義 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433588"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841333"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63433588"
   
 - 項目の既定のグローバル メタデータをターゲットの外部で定義できます。 これにより、指定した種類のすべての項目に同じメタデータが適用されます。  
   
-- 項目の種類には複数の定義を指定できます。 項目の種類に複数のメタデータ指定を追加すると、最後の指定が優先されます  \(メタデータのインポート順序はプロパティの場合と同じです。\)  
+- 項目の種類には複数の定義を指定できます。 項目の種類に複数のメタデータ指定を追加すると、最後の指定が優先されます \(メタデータのインポート順序はプロパティの場合と同じです。\)  
   
 - メタデータは追加的に指定できます。 たとえば、CDefines の値は設定されるプロパティに応じて条件付きで累積されます。 たとえば、`MT;STD_CALL;DEBUG;UNICODE` のようにします。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "63433588"
   
 - ItemDefinitionGroup 内の項目の既知のメタデータ  
   
-- CDATA セクション \<\!\[CDATA\[この部分は解析されない\]\]\>  
+- CDATA セクション \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > ItemDefinitionGroup 要素は ItemGroup 要素より先に処理されるため、ItemGroup の項目メタデータは ItemDefinitionGroup メタデータの宣言では役に立ちません。  
@@ -239,5 +239,5 @@ ms.locfileid: "63433588"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [バッチ処理](../msbuild/msbuild-batching.md)

@@ -1,5 +1,5 @@
 ---
-title: '方法: 従来の言語サービスでの非表示のテキストのサポートを提供 |Microsoft Docs'
+title: '方法: 従来の言語サービスで非表示テキストのサポートを提供する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,39 +13,39 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82b8ae72fec0d13eb9da9226945d9a55b60ce186
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436165"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841756"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスでの隠し文字サポートの提供
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-アウトライン領域以外にも非表示のテキスト領域を作成できます。 非表示のテキスト領域は、クライアントが管理またはエディター コントロールとテキストの特定の領域を完全に非表示に使用されます。 エディターには、水平線として非表示の領域が表示されます。 この例では、HTML エディターのスクリプトのみのビューです。  
+アウトライン領域だけでなく、非表示のテキスト領域を作成することもできます。 非表示のテキスト領域は、クライアントコントロールまたはエディターで制御でき、テキスト領域を完全に非表示にするために使用されます。 エディターでは、非表示領域が水平線として表示されます。 この例として、HTML エディターのスクリプトのみのビューがあります。  
   
-## <a name="procedure"></a>プロシージャ  
+## <a name="procedure"></a>手順  
   
 #### <a name="to-implement-a-hidden-text-region"></a>非表示のテキスト領域を実装するには  
   
-1. 呼び出す`QueryService`の<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>します。  
+1. `QueryService`を呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> ます。  
   
-     ポインターが返されます<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>します。  
+     これにより、へのポインターが返さ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> れます。  
   
-2. 呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>テキストを指定したバッファーのポインターに渡します。 これは、バッファーの非表示のテキストのセッションを既にが存在するかどうかを示します。  
+2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>を呼び出し、特定のテキストバッファーへのポインターを渡します。 これにより、バッファーに対して非表示のテキストセッションが既に存在するかどうかが判断されます。  
   
-3. 既に存在するかどうかは、1 つと、既存のポインターを作成する必要はありません<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>オブジェクトが返されます。 このポインターを使用して、列挙し、非表示のテキスト領域を作成します。 それ以外の場合、呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>バッファーの非表示のテキストのセッションを作成します。  
+3. 既に存在する場合は、作成する必要はなく、既存のオブジェクトへのポインター <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> が返されます。 このポインターを使用して、非表示のテキスト領域を列挙および作成します。 それ以外の場合は、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> を呼び出して、バッファーの非表示テキストセッションを作成します。  
   
-     ポインター、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>オブジェクトが返されます。  
+     オブジェクトへのポインター <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> が返されます。  
   
     > [!NOTE]
-    > 呼び出すと`CreateHiddenTextSession`、非表示のテキストのクライアントを指定できます (つまり、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>)。 非表示のテキストのクライアントには、非表示のテキストまたはアウトラインが展開されたか、ユーザーが折りたたまれているときに通知します。  
+    > を呼び出すと `CreateHiddenTextSession` 、非表示のテキストクライアント (つまり、) を指定でき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> ます。 非表示のテキストまたはアウトラインがユーザーによって展開または折りたたまれている場合は、非表示のテキストクライアントによって通知されます。  
   
-4. 呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>を追加したりより新しいアウトライン領域を時では、次の情報を指定する、 `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) パラメーター。  
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>を呼び出し、() パラメーターで次の情報を指定して、一度に1つまたは複数の新しいアウトライン領域を追加し `reHidReg` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> ます。  
   
-    1. 値を指定`hrtConcealed`で、`iType`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体をアウトライン領域ではなく、非表示の領域を作成することを示します。  
+    1. `hrtConcealed` `iType` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> アウトライン領域ではなく、非表示領域を作成することを示すには、構造体のメンバーにの値を指定します。  
   
         > [!NOTE]
-        > 非表示の領域は表示されず、エディターに自動的にその存在は示すを非表示の領域の周りの線が表示されます。  
+        > 非表示の領域が非表示になっている場合は、表示されていない領域の周囲を示す線が自動的に表示されます。  
   
-    2. クライアントが管理またはでエディター制御領域は、かどうかを指定、`dwBehavior`のメンバー、<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>構造体。 スマート アウトライン実装は、さまざまなアウトラインのエディターとクライアントの制御、および非表示のテキスト領域を含めることができます。
+    2. 構造体のメンバーで、領域がクライアントによって制御されるか、またはエディターで制御されるかを指定し `dwBehavior` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> ます。 スマートアウトラインの実装には、エディターとクライアントによって制御されるアウトラインと非表示のテキスト領域を混在させることができます。

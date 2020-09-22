@@ -1,5 +1,5 @@
 ---
-title: VSCT コンパイラのコマンドライン フラグ |Microsoft Docs
+title: VSCT コンパイラのコマンドラインフラグ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440832"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842033"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT コンパイラのコマンドライン フラグ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio コマンド テーブル (VSCT) コンパイラでは、.vsct ファイルのコンパイルが成功したことを確認するコマンド ライン スイッチを提供します。  
+Visual Studio コマンドテーブル (VSCT) コンパイラには、vsct ファイルのコンパイルが正常に行われるようにするためのコマンドラインスイッチが用意されています。  
   
-## <a name="command-line-parameters"></a>コマンド ライン パラメーター  
- 基本的な VSCT ヘルプを表示する、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **コマンド**ウィンドウに移動、 *Visual Studio SDK インストール パス*\VisualStudioIntegration\Tools\Bin\ フォルダーとの種類。  
+## <a name="command-line-parameters"></a>コマンドラインパラメーター  
+ コマンドウィンドウから基本的な VSCT ヘルプを表示するには、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Command** *Visual Studio SDK のインストールパス*\VisualStudioIntegration\Tools\Bin\ フォルダーに移動し、次のように入力します。  
   
 ```  
 vsct /?  
 ```  
   
- 返されます。  
+ 次が返されます。  
   
 ```  
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000  
@@ -52,31 +52,31 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
-> -(ダッシュ) 文字および/(スラッシュ) はコマンド ライン パラメーターを示すための両方の受け入れられた表記します。  
+> 文字-(ダッシュ) と/(スラッシュ) はどちらも、コマンドラインパラメーターを示すために使用できます。  
   
- 許容可能なフラグとその意味は次のとおりです。  
+ 使用可能なフラグとその意味は次のとおりです。  
   
-|切り替え|説明|  
+|Switch|説明|  
 |------------|-----------------|  
-|-D|追加定義されたシンボルを指定します。|  
-|-|追加のインクルード ファイルの参照を解決するときに使用されるパスを指定します。|  
-|-L|指定、<xref:System.Globalization.CultureInfo>カルチャ名、たとえば"EN-US"です。|  
-|-E|出力C#コマンドの項目の指定した名前空間内のオブジェクトが続く [C&#124;H&#124;N]:*filename*場所 C = C#、H =C++ヘッダー、N = 名前空間。 名前空間は、c# に必要です。|  
-|-v|詳細な出力。|  
+|-d|定義されている追加のシンボルを指定します。|  
+|-I|ファイル参照を解決するときに使用する追加のインクルードパスを指定します。|  
+|-l|カルチャ名を指定し <xref:System.Globalization.CultureInfo> ます (例: "en-us")。|  
+|-E|コマンド項目に対して指定した名前空間の C# オブジェクトを出力し、その後に [C&#124;H&#124;N]:*filename*を生成します。 c = C#、H = C++ ヘッダー、N = 名前空間。 C# では名前空間が必要です。|  
+|-v|詳細出力。|  
   
- -L スイッチに対応するバイナリ .cto ファイルを生成するために文字列のグループを選択するようにコンパイラに指示、指定された<xref:System.Globalization.CultureInfo>カルチャ名。 指定されたカルチャ名は 1 つまたは複数の Language 属性と一致する必要があります[文字列要素](../../extensibility/strings-element.md).vsct ファイルでします。 親から継承されている言語の属性の文字列要素がない場合は、 [CommandTable 要素](../../extensibility/commandtable-element.md)します。  
+ -L スイッチは、文字列のグループを選択して、指定されたカルチャ名に対応するバイナリの cto ファイルを生成するようにコンパイラに指示します。 <xref:System.Globalization.CultureInfo> 指定されたカルチャ名は、vsct ファイル内の1つ以上の [文字列要素](../../extensibility/strings-element.md) の言語属性と一致する必要があります。 Strings 要素に言語属性がない場合は、それを含んでいる [Commandtable 要素](../../extensibility/commandtable-element.md)から継承されます。  
   
- .Vsct ファイルある複数の文字列要素は、別の言語属性があります。 グローバリゼーションは、VSCT コンパイラを複数回実行し、-l スイッチは、各カルチャ名の変更によって実現されます。  
+ Vsct ファイルには、複数の文字列要素を含めることができ、それぞれの言語属性が異なる場合があります。 グローバリゼーションは、VSCT コンパイラを複数回実行し、各カルチャ名の-L スイッチを変更することで実現されます。  
   
- -L スイッチで指定されたカルチャ名が文字列の任意の要素の Language 属性に一致しない場合、コンパイラは、言語と地域ではない一致を試みます。 たとえば、"EN-US"が見つからない場合、コンパイラは試します"en"代わりにします。 失敗すると、オペレーティング システムの現在のカルチャが試行されます。 失敗すると、その見つけた最初の文字列要素をコンパイルします。  
+ -L スイッチによって指定されたカルチャ名が文字列要素の Language 属性と一致しない場合、コンパイラは地域ではなく、言語との照合を試みます。 たとえば、"en-us" が見つからない場合、コンパイラは代わりに "en" を試行します。 失敗した場合、オペレーティングシステムの現在のカルチャが試行されます。 失敗した場合は、最初に見つかった文字列要素がコンパイルされます。  
   
- コマンド テーブルによって使用されているシンボルを格納する C スタイル ヘッダー ファイルを生成するコマンドのシンボルのオブジェクトを含む c# ファイルを生成するまたは-e スイッチを使用できます。  
+ -E スイッチを使用すると、コマンドテーブルによって使用されるシンボルを含む C スタイルのヘッダーファイルを出力したり、コマンドシンボルのオブジェクトを含む C# ファイルを生成したりできます。  
   
- -D と – スイッチと同じ名前を持つ Cl.exe C プリプロセッサ フラグの構文になっています。 – D X = Y という形式になっている定義を XML ベースの拡張の使用\<定義 > 内にあるテスト`Condition`属性。 – はインクルード パスを解決するために使用\<Include >、 \<Extern > と\<ビットマップ > ファイル参照。 詳細については、次を参照してください。、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)します。  
+ -D および– I スイッチには、同じ名前を持つ Cl.exe C プリプロセッサフラグの構文があります。 X = Y という形式の– D 定義は、属性で XML ベースのテストを展開するために使用され \<Defined> `Condition` ます。 – I パスは \<Include> 、およびファイル参照を解決するために使用され \<Extern> \<Bitmap> ます。 詳細については、「 [Vsct XML スキーマリファレンス](../../extensibility/vsct-xml-schema-reference.md)」を参照してください。  
   
- VSCT コンパイラは、以前にビルドされたバイナリ ファイルを逆もできます。 これを行うには、指定のバイナリ ファイル、 \<infile >。   バイナリ ファイル VSCT コンパイラによって生成されますが場合、は、埋め込まれているそのシンボルがされシンボリック名に出力が生成されます、\<シンボル > の出力セクション。 バイナリは、CTC コンパイラによって生成されたが、出力には、実際の Guid と Id が含まれます。 Ctc.exe の現在のバージョンによって生成される *.ctsym ファイルは、バイナリの入力ファイルと同じフォルダーには、シンボルがそのファイルから読み込まれ、出力に使用されます。  
+ VSCT コンパイラは、以前にビルドされたバイナリファイルを逆コンパイルすることもできます。 これを行うには、のバイナリファイルを指定し \<infile> ます。   バイナリファイルが VSCT コンパイラによって生成された場合、そのシンボルは既に埋め込まれており、出力のセクションにシンボリック名を含む出力が生成され \<Symbols> ます。 バイナリが CTC コンパイラによって生成された場合、出力には実際の Guid と Id が含まれます。 現在のバージョンの Ctc.exe によって生成された * ctsym ファイルがバイナリ入力ファイルと同じフォルダーにある場合、シンボルはそのファイルから読み込まれ、出力に使用されます。  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio コマンド テーブル (します。Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)   
+## <a name="see-also"></a>参照  
+ [Visual Studio コマンドテーブル (.Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [VSCT XML スキーマリファレンス](../../extensibility/vsct-xml-schema-reference.md)   
  [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: リボン XML を使用してカスタム タブを作成します。'
+title: 'チュートリアル: リボン XML を使用したカスタムタブの作成'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,22 +18,22 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438572"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841448"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>チュートリアル: リボン XML を使用してカスタム タブを作成します。
-  このチュートリアルを使用してカスタム リボン タブを作成する方法について説明、**リボン (XML)** 項目。
+# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>チュートリアル: リボン XML を使用したカスタムタブの作成
+  このチュートリアルでは、 **リボン (XML)** 項目を使用してカスタムリボンタブを作成する方法について説明します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
  このチュートリアルでは、次の作業について説明します。
 
-- ボタンの追加、**アドイン**タブ。**アドイン**タブがリボン XML ファイルで定義されている既定のタブ。
+- [ **アドイン** ] タブへのボタンの追加。[ **アドイン** ] タブは、リボン XML ファイルで定義されている既定のタブです。
 
-- Microsoft Office Word を自動化するボタンを使用して、**アドイン**タブ。
+- [ **アドイン** ] タブのボタンを使用して Microsoft Office Word を自動化する。
 
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
@@ -43,49 +43,49 @@ ms.locfileid: "63438572"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Microsoft Word。
+- Microsoft Word
 
 ## <a name="create-the-project"></a>プロジェクトの作成
- まず、Word VSTO アドイン プロジェクトを作成します。 カスタマイズ後で、**アドイン**このドキュメントのタブ。
+ まず、Word VSTO アドイン プロジェクトを作成します。 後で、このドキュメントの [ **アドイン** ] タブをカスタマイズします。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. 作成、 **Word アドイン**という名前のプロジェクト**MyRibbonAddIn**します。
+1. **Myribbonaddin**という名前の**Word アドイン**プロジェクトを作成します。
 
-     詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 表示されます、 **ThisAddIn.cs**または**ThisAddIn.vb**コード ファイルのほか、 **MyRibbonAddIn**プロジェクトを**ソリューション エクスプ ローラー**します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs**または**ThisAddIn**コードファイルを開き、 **myribbonaddin**プロジェクトを**ソリューションエクスプローラー**に追加します。
 
-## <a name="create-the-vsto-add-ins-tab"></a>VSTO [アドイン] タブを作成します。
- 作成する、**アドイン** タブで、追加、**リボン (XML)** 項目をプロジェクトにします。 このチュートリアルの後半で、このタブにボタンを追加します。
+## <a name="create-the-vsto-add-ins-tab"></a>[VSTO アドイン] タブを作成する
+ [ **アドイン** ] タブを作成するには、プロジェクトに **リボン (XML)** 項目を追加します。 このチュートリアルの後半で、このタブにボタンを追加します。
 
 ### <a name="to-create-the-add-ins-tab"></a>[アドイン] タブを作成するには
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-2. **新しい項目の追加**ダイアログ ボックスで、**リボン (XML)** します。
+2. [ **新しい項目の追加** ] ダイアログボックスで、[ **リボン (XML)**] を選択します。
 
 3. 新しいリボンの名前を " **MyRibbon**" に変更し、 **[追加]** をクリックします。
 
-     **MyRibbon.cs**または**MyRibbon.vb**ファイルは、デザイナーが開きます。 XML ファイルは、という**MyRibbon.xml**もプロジェクトに追加されます。
+     デザイナーで **MyRibbon.cs** または **myribbon.vb** ファイルが開きます。 **MyRibbon.xml**という名前の XML ファイルもプロジェクトに追加されます。
 
-4. **ソリューション エクスプ ローラー**を右クリックして**ThisAddin.cs**または**ThisAddin.vb**、 をクリックし、**コードの表示**します。
+4. **ソリューションエクスプローラー**で、 **ThisAddin.cs**または**ThisAddin**を右クリックし、[コードの**表示**] をクリックします。
 
 5. 次のコードを **ThisAddin** クラスに追加します。 このコードは、`CreateRibbonExtensibilityObject` メソッドをオーバーライドし、Office アプリケーションにリボン XML クラスを返します。
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. **ソリューション エクスプ ローラー**を右クリックし、 **MyRibbonAddIn**プロジェクトをクリックして**ビルド**します。 プロジェクトのビルドでエラーが発生しないことを確認します。
+6. **ソリューションエクスプローラー**で、 **myribbonaddin**プロジェクトを右クリックし、[**ビルド**] をクリックします。 プロジェクトのビルドでエラーが発生しないことを確認します。
 
-## <a name="add-buttons-to-the-add-ins-tab"></a>[アドイン] タブにボタンを追加します。
- この VSTO アドインの目的は、定型句や特定の表を作業中のドキュメントに追加する手段をユーザーに提供することです。 ユーザー インターフェイスを提供する 2 つのボタンを追加、**アドイン** タブをリボン XML ファイルを変更します。 このチュートリアルの後半で、これらのボタンのコールバック メソッドを定義します。 リボン XML ファイルの詳細については、次を参照してください。[リボン XML](../vsto/ribbon-xml.md)します。
+## <a name="add-buttons-to-the-add-ins-tab"></a>[アドイン] タブへのボタンの追加
+ この VSTO アドインの目的は、定型句や特定の表を作業中のドキュメントに追加する手段をユーザーに提供することです。 ユーザーインターフェイスを提供するには、リボン XML ファイルを変更して [ **アドイン** ] タブに2つのボタンを追加します。 このチュートリアルの後半で、これらのボタンのコールバック メソッドを定義します。 リボン XML ファイルの詳細については、「 [リボン xml](../vsto/ribbon-xml.md)」を参照してください。
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>[アドイン] タブにボタンを追加するには
 
-1. **ソリューション エクスプ ローラー**、右クリックして**MyRibbon.xml**順にクリックします**オープン**します。
+1. **ソリューションエクスプローラー**で、[ **MyRibbon.xml**を右クリックし、[**開く**] をクリックします。
 
-2. 内容を置き換える、**タブ**を次の XML 要素。 この XML に既定のコントロール グループのラベルを変更する**コンテンツ**、というラベルが付いた 2 つの新しいボタンを追加および**Insert Text**と**Insert Table**します。
+2. **Tab**要素の内容を次の XML に置き換えます。 この XML により、既定のコントロールグループのラベルが **コンテンツ**に変更され、ラベルの **挿入** とテーブルの **挿入**を含む2つの新しいボタンが追加されます。
 
     ```xml
     <tab idMso="TabAddIns">
@@ -100,61 +100,61 @@ ms.locfileid: "63438572"
     </tab>
     ```
 
-## <a name="automate-the-document-by-using-the-buttons"></a>ボタンを使用して、ドキュメントを自動化します。
- 追加する必要があります`onAction`のコールバック メソッド、 **Insert Text**と**Insert Table**にユーザーがクリックしたときにアクションを実行するボタン。 リボン コントロールのコールバック メソッドの詳細については、次を参照してください。[リボン XML](../vsto/ribbon-xml.md)します。
+## <a name="automate-the-document-by-using-the-buttons"></a>ボタンを使用してドキュメントを自動化する
+ [テキストの `onAction` **挿入** ] および [ **テーブルの挿入** ] ボタンのコールバックメソッドを追加して、ユーザーが操作をクリックしたときにアクションを実行する必要があります。 リボンコントロールのコールバックメソッドの詳細については、「 [リボン XML](../vsto/ribbon-xml.md)」を参照してください。
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>ボタンのコールバック メソッドを追加するには
 
-1. **ソリューション エクスプ ローラー**を右クリックして**MyRibbon.cs**または**MyRibbon.vb**、 をクリックし、**オープン**します。
+1. **ソリューションエクスプローラー**で、 **MyRibbon.cs**または**myribbon.vb**を右クリックし、[**開く**] をクリックします。
 
-2. 先頭に次のコードを追加、 **MyRibbon.cs**または**MyRibbon.vb**ファイル。 このコードによって、<xref:Microsoft.Office.Interop.Word> 名前空間のエイリアスが作成されます。
+2. **MyRibbon.cs**ファイルまたは**myribbon.vb**ファイルの先頭に次のコードを追加します。  このコードによって、<xref:Microsoft.Office.Interop.Word> 名前空間のエイリアスが作成されます。
 
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
 
-3. `MyRibbon` クラスに次のメソッドを追加します。 これは、コールバック メソッド、 **Insert Text**カーソルの現在の場所にアクティブなドキュメントに文字列を追加するボタン。
+3. `MyRibbon` クラスに次のメソッドを追加します。 これは、カーソルの現在位置にあるアクティブなドキュメントに文字列を追加する [ **テキストの挿入** ] ボタンのコールバックメソッドです。
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]
 
-4. `MyRibbon` クラスに次のメソッドを追加します。 これは、コールバック メソッド、 **Insert Table**カーソルの現在の場所にアクティブなドキュメントにテーブルを追加するボタン。
+4. `MyRibbon` クラスに次のメソッドを追加します。 これは、カーソルの現在位置にあるアクティブなドキュメントにテーブルを追加する [ **テーブルの挿入** ] ボタンのコールバックメソッドです。
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]
 
 ## <a name="testing-the-vsto-add-in"></a>VSTO アドインのテスト
- 実行中のプロジェクト、word およびという名前のタブ**アドイン**リボンが表示されます。 をクリックして、 **Insert Text**と**テーブルの挿入**ボタン、**アドイン**タブ コードをテストします。
+ プロジェクトを実行すると、Word が開き、リボンに [ **アドイン** ] というタブが表示されます。 [**アドイン**] タブの [**テキストの挿入**] ボタンと [**テーブルの挿入**] ボタンをクリックして、コードをテストします。
 
 ### <a name="to-test-your-vsto-add-in"></a>VSTO アドインをテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
-2. いることを確認、**アドイン**タブは、リボンに表示されます。
+2. リボンに [ **アドイン] タブ** が表示されていることを確認します。
 
 3. **[アドイン]** タブをクリックします。
 
-4. いることを確認、**コンテンツ**グループがリボンに表示されます。
+4. **コンテンツ**グループがリボンに表示されていることを確認します。
 
-5. をクリックして、 **Insert Text**ボタン、**コンテンツ**グループ。
+5. **コンテンツ**グループの [**テキストの挿入**] ボタンをクリックします。
 
      ドキュメント内のカーソルの現在位置に文字列が追加されます。
 
-6. をクリックして、 **Insert Table**ボタン、**コンテンツ**グループ。
+6. **コンテンツ**グループの [**テーブルの挿入**] ボタンをクリックします。
 
      ドキュメント内のカーソルの現在位置に表が追加されます。
 
 ## <a name="next-steps"></a>次の手順
  Office UI をカスタマイズする方法の詳細については、次のトピックで説明します。
 
-- 別の Office アプリケーションのリボンをカスタマイズします。 リボンのカスタマイズをサポートするアプリケーションの詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
+- 別の Office アプリケーションのリボンをカスタマイズします。 リボンのカスタマイズをサポートするアプリケーションの詳細については、「 [リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
-- Office アプリケーションのリボンをカスタマイズするには、リボン デザイナーを使用します。 詳細については、「 [Ribbon Designer](../vsto/ribbon-designer.md)」を参照してください。
+- リボンデザイナーを使用して Office アプリケーションのリボンをカスタマイズします。 詳細については、「 [Ribbon Designer](../vsto/ribbon-designer.md)」を参照してください。
 
-- カスタム操作ウィンドウを作成する。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
+- カスタム操作ウィンドウを作成する。 詳細については、「 [操作ウィンドウの概要](../vsto/actions-pane-overview.md)」を参照してください。
 
-- Outlook フォーム領域を使用して Microsoft Office Outlook の UI をカスタマイズする。 詳細については、「[チュートリアル:Outlook フォーム領域をデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)します。
+- Outlook フォーム領域を使用して Microsoft Office Outlook の UI をカスタマイズする。 詳細については、「 [チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [リボンの概要](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
-- [チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

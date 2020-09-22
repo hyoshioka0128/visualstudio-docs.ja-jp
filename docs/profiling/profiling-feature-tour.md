@@ -1,8 +1,8 @@
 ---
-title: プロファイリング ツールを使用してパフォーマンスを測定する
+title: プロファイリング ツールの使用を開始する
 description: Visual Studio で利用可能な各種診断ツールについて簡単に説明します。
-ms.custom: mvc
-ms.date: 06/03/2020
+ms.custom: ''
+ms.date: 09/08/2020
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,18 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507990"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100775"
 ---
 # <a name="first-look-at-profiling-tools"></a>プロファイリング ツールの概要
 
 Visual Studio にはさまざまなプロファイリング ツールがあります。各種アプリの多様な問題を診断できます。 この記事では、最も一般的なプロファイリング ツールを簡単に紹介します。
 
-## <a name="view-performance-while-debugging"></a>デバッグ中のパフォーマンスの表示
+プロファイリング ツールでサポートされるさまざまなアプリの種類については、「[使用するツール](#which-tool-should-i-use)」をご覧ください。
+
+## <a name="measure-performance-while-debugging"></a>デバッグ中にパフォーマンスを測定する
 
 [診断ツール] ウィンドウのプロファイリング ツールには、デバッグ セッション中にアクセスできます。 [診断ツール] ウィンドウは、オフにしていない限り自動的に表示されます。 このウィンドウを表示するには、 **[デバッグ]、[ウィンドウ]、[診断ツールの表示]** の順にクリックします。 ウィンドウを開いている状態で、データを収集するツールを選択できます。
 
@@ -37,10 +39,38 @@ Visual Studio にはさまざまなプロファイリング ツールがあり�
 
 ![[診断ツール] の [概要] ビュー](../profiling/media/prof-tour-cpu-and-memory-graph.gif "診断ツール: 概要")
 
-**[診断ツール]** ウィンドウはアプリをプロファイリングする一般的な方法ですが、リリース ビルドでは代わりにアプリの事後分析を行うこともできます。 各種手法の詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。 プロファイリング ツールがサポートする他のアプリの種類については、「[使用するツール](#which-tool-should-i-use)」のセクションをご覧ください。
+**[診断ツール]** ウィンドウはアプリをプロファイリングする一般的な方法ですが、リリース ビルドでは代わりにアプリの事後分析を行うこともできます。 各種手法の詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。 プロファイリング ツールでサポートされるさまざまなアプリの種類については、「[使用するツール](#which-tool-should-i-use)」をご覧ください。
+
+[診断ツール] ウィンドウまたはデバッグ セッション中に使用できるツールには、次のものがあります。
+- [CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)
+- [メモリ使用量](../profiling/memory-usage.md)
+- [パフォーマンスのヒント](../profiling/perftips.md)
 
 > [!NOTE]
-> Windows 7 以降では事後検証ツールを使用できます。 Windows 8 以降では、デバッガーを使用してプロファイル ツールを実行する必要があります ( **[診断ツール]** ウィンドウ)。
+> Windows 8 以降では、デバッガーを使用してプロファイル ツールを実行する必要があります ( **[診断ツール]** ウィンドウ)。 Windows 7 以降では[事後検証](#post_mortem)ツールを使用できます。 
+
+## <a name="measure-performance-in-release-builds"></a><a name="post_mortem"></a> リリース ビルドでパフォーマンスを測定する
+
+パフォーマンス プロファイラーのツールは、**リリース** ビルドの分析を提供することを目的としています。 パフォーマンス プロファイラーでは、アプリの実行中に診断情報を収集し、収集した情報をアプリの停止後に調査できます (事後分析)。
+
+**[デバッグ]**  >  **[パフォーマンス プロファイラー]** を選択して (または **Alt + F2** キーを押して)、パフォーマンス プロファイラーを開きます。
+
+![パフォーマンス プロファイラー](../profiling/media/prof-tour-performance-profiler.png "パフォーマンス プロファイラー")
+
+パフォーマンス プロファイラーとデバッガーに統合されているツールの CPU 使用率またはメモリ使用量ツールの使用の詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。 
+
+パフォーマンス プロファイラーで使用できるツールには、次のものがあります。
+
+- [CPU 使用率](../profiling/cpu-usage.md)
+- [.NET コードのメモリ使用量](../profiling/dotnet-alloc-tool.md)
+- [メモリ使用量](#analyze-memory-usage)
+- [.NET Async ツール](../profiling/analyze-async.md)
+- [データベース ツール](../profiling/analyze-database.md)
+- [GPU 使用率](../profiling/gpu-usage.md)
+
+プロファイリング ツールでサポートされるさまざまなアプリの種類については、「[使用するツール](#which-tool-should-i-use)」をご覧ください。
+
+シナリオによっては、このウィンドウで[複数のプロファイリング ツール](../profiling/use-multiple-profiler-tools-simultaneously.md)を選択できます。 CPU 使用率などのツールでは、補足データを提供できることがあります。分析に役立てることができます。 また、[コマンドライン プロファイラー](../profiling/profile-apps-from-command-line.md)を使用して、複数のプロファイリング ツールを使用するシナリオを有効にすることもできます。
 
 ## <a name="examine-performance-using-perftips"></a>PerfTips を使用してパフォーマンスを調べる
 
@@ -59,9 +89,9 @@ PerfTips には、診断ツールの **[イベント]** ビューに表示され
 
 ## <a name="analyze-cpu-usage"></a>CPU 使用率の分析
 
-アプリのパフォーマンスを分析するとき、CPU 使用率ツールから始めると効率的です。 アプリが使用している CPU リソースについて理解できます。 CPU 使用率ツールの詳しいチュートリアルについては、「[CPU 使用率を分析することでアプリケーションのパフォーマンスを測定する](../profiling/beginners-guide-to-performance-profiling.md)」を参照してください。
+アプリのパフォーマンスを分析するとき、CPU 使用率ツールから始めると効率的です。 アプリが使用している CPU リソースについて理解できます。 [デバッガーに統合されている CPU 使用率ツール](../profiling/beginners-guide-to-performance-profiling.md)または[事後分析の CPU 使用率ツール](../profiling/cpu-usage.md)を使用できます。
 
-診断ツールの **[概要]** ビューから、 **[CPU プロファイルの有効化]** を選択します (デバッグ セッションに入っている必要があります)。
+デバッガーに統合されている CPU 使用率ツールを使用する場合は、[診断ツール] ウィンドウを開きます (閉じている場合は、 **[デバッグ]、[Windows]、[診断ツールの表示]** の順に選択します)。 デバッグ中に、 **[概要]** ビューを開き、 **[CPU プロファイルの記録]** を選択します。
 
 ![[診断ツール] での CPU 使用率の有効化](../profiling/media/prof-tour-enable-cpu-profiling.png "診断ツール: CPU 使用率の有効化")
 
@@ -77,9 +107,9 @@ PerfTips には、診断ツールの **[イベント]** ビューに表示され
 
 ## <a name="analyze-memory-usage"></a>メモリ使用量の分析
 
-**[診断ツール]** ウィンドウでは、**メモリ使用率**ツールを使用してアプリのメモリ使用量を測定することもできます。 たとえば、ヒープのオブジェクトの数とサイズと数を確認できます。 メモリの分析方法の詳細については、[メモリ使用量の分析](../profiling/memory-usage.md)に関するページを参照してください。 別のメモリ分析ツールである [.NET オブジェクト割り当てツール](../profiling/dotnet-alloc-tool.md)を使用すると、.NET コード内の割り当てパターンと異常を識別できます。
+**[診断ツール]** ウィンドウでは、**メモリ使用率**ツールを使用してアプリのメモリ使用量を測定することもできます。 たとえば、ヒープのオブジェクトの数とサイズと数を確認できます。 [デバッガーに統合されているメモリ使用量ツール](../profiling/memory-usage.md)または[パフォーマンス プロファイラー](#post_mortem)の事後分析メモリ使用量ツールを使用できます。 別のメモリ分析ツールである [.NET オブジェクト割り当てツール](../profiling/dotnet-alloc-tool.md)を使用すると、.NET コード内の割り当てパターンと異常を識別できます。
 
-メモリ使用量とデバッガー統合メモリ使用量を分析するには、少なくとも 1 枚のメモリ スナップショットを取得する必要があります。 多くの場合、メモリを分析する最良の方法は 2 枚のスナップショットを取得することです。疑われるメモリ問題の発生直前に 1 枚、発生直後に 1 枚取得します。 それから、2 枚のスナップショットの違いを表示し、厳密に何が変化しているのか確認します。
+メモリ使用量を分析するには、メモリ スナップショットを少なくとも 1 つ取得する必要があります。 多くの場合、メモリを分析する最良の方法は 2 枚のスナップショットを取得することです。疑われるメモリ問題の発生直前に 1 枚、発生直後に 1 枚取得します。 それから、2 枚のスナップショットの違いを表示し、厳密に何が変化しているのか確認します。 次の図は、デバッガーに統合されているツールを使用してスナップショットを取得する方法を示しています。
 
 ![[診断ツール] の [スナップショットの作成]](../profiling/media/prof-tour-take-snapshots.gif "診断ツール: [スナップショットの作成]")
 
@@ -88,16 +118,6 @@ PerfTips には、診断ツールの **[イベント]** ビューに表示され
 ![[診断ツール] のヒープの相違ビュー](../profiling/media/prof-tour-mem-usage-diff-heap.png "診断ツール: ヒープの相違ビュー")
 
 **[メモリ使用量]** ビューで代わりに左のリンクをクリックすると、ヒープ ビューがオブジェクト数で整理されます。最も増えたオブジェクトが一番上に表示されます ( **[数の相違]** 列で並べ替えられます)。
-
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> デバッガーなしのプロファイル リリース ビルド
-
-CPU 使用量やメモリ使用量などのプロファイル ツールはデバッガーと併用できます (前のセクションを参照)。あるいは、パフォーマンス プロファイラーを利用して事後検証プロファイル ツールを実行できます。パフォーマンス プロファイラーは、**リリース** ビルドを分析するためのものです。 パフォーマンス プロファイラーでは、アプリの実行中に診断情報を収集し、アプリの停止後に収集した情報を調査できます。 各種手法の詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。 [.NET オブジェクト割り当てツール](../profiling/dotnet-alloc-tool.md)などの追加ツールは、パフォーマンス プロファイラーでも使用できます。
-
-![パフォーマンス プロファイラー](../profiling/media/prof-tour-performance-profiler.png "パフォーマンス プロファイラー")
-
-**[デバッグ]**  >  **[パフォーマンス プロファイラー]** を選択して (または **Alt + F2** キーを押して)、パフォーマンス プロファイラーを開きます。
-
-シナリオによっては、このウィンドウで[複数のプロファイリング ツール](../profiling/use-multiple-profiler-tools-simultaneously.md)を選択できます。 CPU 使用率などのツールでは、補足データを提供できることがあります。分析に役立てることができます。 また、[コマンドライン プロファイラー](../profiling/profile-apps-from-command-line.md)を使用して、複数のプロファイリング ツールを使用するシナリオを有効にすることもできます。
 
 ## <a name="analyze-resource-consumption-xaml"></a>リソース消費量を分析する (XAML)
 
@@ -147,7 +167,7 @@ UWP アプリの **[診断ツール]** ウィンドウで、 **[UI 分析]** を
 
 ## <a name="analyze-gpu-usage-direct3d"></a>GPU の使用状況を分析する (Direct3D)
 
-Direct3D アプリ (Direct3D コンポーネントは C++ である必要があります) では、GPU 上のアクティビティを調査し、パフォーマンス問題を分析できます。 詳細については、「[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)」を参照してください。 ツールを使用するには、パフォーマンス プロファイラーで **[GPU 使用量]** を選択し、 **[開始]** を選択します。 アプリで、プロファイリングしたいシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
+Direct3D アプリ (Direct3D コンポーネントは C++ である必要があります) では、GPU 上のアクティビティを調査し、パフォーマンス問題を分析できます。 詳細については、「[GPU 使用率](./gpu-usage.md)」を参照してください。 ツールを使用するには、パフォーマンス プロファイラーで **[GPU 使用量]** を選択し、 **[開始]** を選択します。 アプリで、プロファイリングしたいシナリオを実行し、 **[コレクションの停止]** を選択してレポートを生成します。
 
 グラフで期間を選択し、 **[詳細の表示]** を選択すると、下のウィンドウに詳細ビューが表示されます。 詳細ビューで、CPU と GPU でそれぞれ、どの程度のアクティビティが行われているのか調査できます。 一番下のウィンドウでイベントを選択すると、タイムラインにポップアップ表示されます。 たとえば、**Present** イベントを選択すると、**Present** 呼び出しポップアップが表示されます。 (薄い灰色の垂直同期線を参照すると、特定の **Present** 呼び出しで垂直同期に失敗しているかどうかを理解できます。 アプリが安定的に 60 FPS をヒットするには、2 つの垂直同期の間に **Present** が 1 つ存在する必要があります。)
 
@@ -202,26 +222,26 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 ::: moniker range=">=vs-2019"
 |パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[パフォーマンスのヒント](../profiling/perftips.md)|可|可|○|
-|[CPU 使用率](../profiling/cpu-usage.md)|可|可|○|
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|○|
-|[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|○|
-|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|必須|no|
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|必須|no|
-|[イベント ビューアー](../profiling/events-viewer.md)|可|可|○|
+|[パフォーマンスのヒント](../profiling/perftips.md)|○|はい|可|
+|[CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)|可|はい|可|
+|[メモリ使用量](../profiling/memory-usage.md)|可|はい|可|
+|[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|可|
+|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|はい|no|
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可 (XAML)|はい|Ｘ|
+|[イベント ビューアー](../profiling/events-viewer.md)|可|はい|可|
 |[.NET Async](../profiling/analyze-async.md)|はい (.NET のみ)|可|可|
 |[データベース](../profiling/analyze-database.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|Ｘ|Ｘ|Ｘ|
+|[パフォーマンス エクスプローラー](#analyze-performance-legacy-tools)|Ｘ|no|Ｘ|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 |パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[CPU 使用率](../profiling/cpu-usage.md)|可|可|○|
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|○|
-|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|必須|no|
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|必須|no|
+|[CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)|可|はい|可|
+|[メモリ使用量](../profiling/memory-usage.md)|可|はい|はい|
+|[GPU 使用率](/visualstudio/debugger/graphics/gpu-usage)|可|はい|no|
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可 (XAML)|はい|no|
 |[パフォーマンスのヒント](../profiling/perftips.md)|可|XAML の場合は可、HTML の場合は不可|可|
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|はい|no|可|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
