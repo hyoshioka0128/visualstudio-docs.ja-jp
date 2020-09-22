@@ -13,57 +13,57 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3bb741aa25cf6695f1dd1d8d66fc0c1846413b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435512"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841644"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- このインターフェイスは実装する機能を提供する主要なメソッド、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)と[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)インターフェイス。  
+ このインターフェイスは、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) インターフェイスと [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) インターフェイスに機能を提供するキーメソッドを実装します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEEVisualizerService : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- Visual Studio では、式エバリュエーターの種類のビジュアライザーをサポートするために (EE) を許可するには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ Visual Studio は、式エバリュエーター (EE) が型ビジュアライザーをサポートできるように、このインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- EE 呼び出し[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)型のビジュアライザーのサポートの一部としてこのインターフェイスを取得します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ EE は、型ビジュアライザーのサポートの一部として、このインターフェイスを取得するために [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) を呼び出します。  
   
-## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド  
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|このサービスを認識するカスタム ビューアーの数を取得します。|  
-|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|カスタム ビューアーの一覧を取得します。|  
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|プロパティのプロキシ オブジェクトを返します。|  
-|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|指定したプロパティまたはフィールドを表示する値の文字列の数を取得します。|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|このサービスが認識しているカスタムビューアーの数を取得します。|  
+|[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|カスタムビューアーの一覧を取得します。|  
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|プロパティのプロキシオブジェクトを返します。|  
+|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|指定したプロパティまたはフィールドに表示する値文字列の数を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- IDE を使用、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを任意のカスタム ビューアーがあるかを確認するか、プロパティのビジュアライザーを入力します。 ビジュアライザーのサービスを作成して (で[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md))、EE にするための機能を指定できます、`IDebugProperty3`と[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (の表示と変更をサポートする、プロパティの値) では、インターフェイスし、それによって型のビジュアライザーをサポートします。  
+## <a name="remarks"></a>注釈  
+ IDE では、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) インターフェイスを使用して、プロパティのカスタムビューアーまたは型ビジュアライザーがあるかどうかを判断します。 ビジュアライザーサービス ( [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)を使用) を作成することにより、EE は `IDebugProperty3` および [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (プロパティの値の表示と変更をサポートします) に機能を提供し、型ビジュアライザーをサポートできます。  
   
- その自体を実装して、EE にカスタム ビューアーがある場合は、EE を追加できる、`CLSID`によって返される一覧の末尾にこれらのカスタム ビューアーの[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)します。 これにより、型のビジュアライザーおよび独自のカスタム ビューアーの両方をサポートするために、EE できます。 同じことを確認します[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)任意のカスタム ビューアーの加算を反映します。  
+ EE が自身を実装するカスタムビューアーを持っている場合、EE は、 `CLSID` [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)によって返されたリストの末尾に、これらのカスタムビューアーのを追加できます。 これにより、EE は型ビジュアライザーと独自のカスタムビューアーの両方をサポートできます。 [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)にカスタムビューアーの追加が反映されていることを確認してください。  
   
- 参照してください[型のビジュアライザーとカスタム ビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)ビジュアライザーとビューアーの違いの詳細についてはします。  
+ ビジュアライザーとビューアーの違いについては、「 [型ビジュアライザーとカスタムビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 」を参照してください。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: ee.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: ee  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [式の評価インターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

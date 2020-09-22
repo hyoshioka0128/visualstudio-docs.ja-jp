@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2e5511e9e2e1c863db8f696a70195573d75429f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433873"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842241"
 ---
 # <a name="lines-view---sampling-data"></a>行ビュー - サンプリング データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "63433873"
 サンプリング データの [行] ビューには、プロファイリングを実行してサンプルを収集するときに実行したステートメントのパフォーマンス データが表示されます。  
   
 > [!NOTE]
-> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのプロファイリング](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
  ソース ファイルでは、1 つのステートメントを複数の行にわたって記述することも、複数のステートメントを 1 つの行に含めることもできます。 ステートメントは、次の項目によって識別されます。  
   
-- function ステートメントを含むソース ファイル。  
+- 関数のステートメントを含むソース ファイル。  
   
 - ステートメントを含む関数。  
   
@@ -44,23 +44,23 @@ ms.locfileid: "63433873"
   
   定義上、ステートメントは他の関数を呼び出しません。 そのため、排他的な値のみが一覧表示されます。  
   
-|Column|説明|  
+|Column|[説明]|  
 |------------|-----------------|  
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|  
 |**プロセス名**|プロセスの名前です。|  
 |**モジュール名**|関数行を含むモジュールの名前です。|  
 |**モジュール パス**|関数行を含むモジュールのパスです。|  
-|**ソース ファイル**|関数行を含むソース ファイルです。|  
-|**関数名**|関数の名前。|  
+|**[転送元ファイル]**|関数行を含むソース ファイルです。|  
+|**関数名**|関数の名前です。|  
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|  
 |**関数アドレス**|関数の開始アドレスです。|  
 |**ソース開始行**|このサンプルが収集されたソース ファイル内の開始行番号です。|  
 |**ソース終了行**|このサンプルが収集されたソース ファイル内の終了行番号です。|  
 |**ソース開始文字番号**|このサンプルが収集されたソース ファイル行内の開始文字のオフセットです。|  
 |**ソース終了文字番号**|このサンプルが収集されたソース ファイル行内の終了文字のオフセットです。|  
-|**ソース/行番号**|`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]** という構文を持つ、プロファイラーによって生成された行の識別子です。|  
-|**サンプル数 (関数のみ)**|関数行を実行していたときに収集されたサンプルの合計数です。|  
-|**サンプル % (関数のみ)**|関数行を実行していたときに収集された、プロファイリング実行内のすべてのサンプルの割合です。|  
+|**ソース/行番号**|`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number End` **,** `Character End` **]** という構文を持つ、プロファイラーによって生成された行の識別子です。|  
+|**排他サンプル数**|関数行を実行していたときに収集されたサンプルの合計数です。|  
+|**排他サンプル %**|関数行を実行していたときに収集された、プロファイリング実行内のすべてのサンプルの割合です。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b0856d3832d31dd7027b2f264dd0a9cd1d657ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007328"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809860"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office プログラミングにおける一般的なタスク
   このトピックは、Visual Studio を使用した Office ソリューションのプログラミングに共通する質問のうち、次のカテゴリの質問に対する回答を簡単に見つけることができるように構成されています。
@@ -44,7 +44,7 @@ ms.locfileid: "63007328"
 
 - [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-- [方法: Office ソリューションをアップグレードする](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。
+- [方法: Office ソリューションをアップグレードする](/previous-versions/4bez6837(v=vs.140))。
 
 - [方法: Office プライマリ相互運用機能アセンブリをインストールする](../vsto/how-to-install-office-primary-interop-assemblies.md)。
 
@@ -216,19 +216,19 @@ ms.locfileid: "63007328"
 
 ## <a name="deployment-tasks"></a><a name="deployment"></a> 展開タスク
 
-- [方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
+- [方法: ClickOnce を使用して Office ソリューションを発行する](/previous-versions/bb386095(v=vs.110))。
 
-- [方法: ClickOnce を使用してドキュメントレベルの Office ソリューションを SharePoint サーバーに発行](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)する。
+- [方法: ClickOnce を使用してドキュメントレベルの Office ソリューションを SharePoint サーバーに発行](/previous-versions/bb608595(v=vs.110))する。
 
-- [方法: ClickOnce Office ソリューションをインストール](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)する。
+- [方法: ClickOnce Office ソリューションをインストール](/previous-versions/bb608592(v=vs.110))する。
 
-- [方法: Office ソリューションを実行するために、エンドユーザーのコンピューターに必須コンポーネントをインストール](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)する。
+- [方法: Office ソリューションを実行するために、エンドユーザーのコンピューターに必須コンポーネントをインストール](/previous-versions/bb608608(v=vs.110))する。
 
-- [方法: Office ソリューションの配置用に IIS を準備する](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)
+- [方法: Office ソリューションの配置用に IIS を準備する](/previous-versions/bb608629(v=vs.110))
 
-- [方法: 配置した Office ソリューションを更新する](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。
+- [方法: 配置した Office ソリューションを更新する](/previous-versions/bb157871(v=vs.110))。
 
-- [方法: Office ソリューションのインストールパスを変更する](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。
+- [方法: Office ソリューションのインストールパスを変更する](/previous-versions/bb608626(v=vs.110))。
 
 ## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio で &#40;Office 開発を開始する&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

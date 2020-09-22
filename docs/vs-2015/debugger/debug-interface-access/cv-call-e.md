@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd1ee4c024894e5752277a5000d37745c88c4ac6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442098"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841861"
 ---
-# <a name="cvcalle"></a>CV_call_e
+# <a name="cv_call_e"></a>CV_call_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 関数の呼び出し規約を指定します。  
   
 > [!NOTE]
-> 最も一般的な列挙値のみがここに記載されています。 完全な列挙型は cvconst.h ヘッダー ファイルで使用できます。  
+> 最も一般的な列挙値のみがここに記載されています。 完全な列挙体は、cvconst .h ヘッダーファイルで使用できます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef enum CV_call_e {   
@@ -41,31 +41,31 @@ typedef enum CV_call_e { 
 } CV_call_e;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  CV_CALL_NEAR_C  
- ほぼ右から左へプッシュを使用して関数呼び出し規約を指定します。 呼び出し元の関数は、スタックをクリアします。  
+ 右端から左へのプッシュを使用して、関数呼び出し規約を指定します。 呼び出し元の関数は、スタックをクリアします。  
   
  CV_CALL_NEAR_FAST  
- ほぼ左から右プッシュを使用してレジスタと共に関数呼び出し規約を指定します。 呼び出された関数では、パラメーターのバイト数の合計を使用して、スタックをクリアします。  
+ 関数呼び出し規約を指定します。これは、レジスタを使用した左から右へのプッシュを使用します。 呼び出された関数は、パラメーターバイトの合計を使用してスタックをクリアします。  
   
  CV_CALL_NEAR_STD  
- Near の標準的な呼び出し (右から左へプッシュ) を使用して関数呼び出し規約を指定します。  
+ Near 標準呼び出し (右から左方向のプッシュ) を使用して、関数呼び出し規約を指定します。  
   
  CV_CALL_NEAR_SYS  
- ほぼシステム コールを使用して関数呼び出し規約を指定します。  
+ Near システム呼び出しを使用して、関数呼び出し規約を指定します。  
   
  CV_CALL_THISCALL  
- 使用して関数呼び出し規約を指定します。`this`呼び出し (`this`ポインターがレジスタに渡されます)。  
+ `this`Call ( `this` レジスタで渡されたポインター) を使用して関数呼び出し規約を指定します。  
   
  CV_CALL_CLRCALL  
- 共通言語ランタイム (CLR) (とも呼ばれる呼び出し規約マネージ コード) で使用される関数呼び出し規約を指定します。  
+ 共通言語ランタイム (CLR: Common Language Runtime) によって使用される関数呼び出し規約を指定します (マネージコードの呼び出し規約とも呼ばれます)。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値が呼び出しによって返される、 [idiasymbol::get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、 [IDiaSymbol:: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) メソッドへの呼び出しによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

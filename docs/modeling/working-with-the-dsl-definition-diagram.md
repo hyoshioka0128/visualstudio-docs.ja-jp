@@ -16,12 +16,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115287"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810797"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 定義図の使用
 定義の図は、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ドメイン固有言語を定義するための重要なツールです。 ドメイン モデルに要素を追加し、図で関係を定義し、図のレイアウトを読みやすいように変更できます。
@@ -70,6 +70,6 @@ ms.locfileid: "76115287"
 ### <a name="show-as-class"></a>クラスとして表示する
  ドメインリレーションシップに派生リレーションシップがある場合、または他のドメインリレーションシップとの埋め込みまたは参照リレーションシップがある場合は、リレーションシップを右クリックし、[ **クラスとして表示]** をクリックすることで、リレーションシップをクラスとして表示できます。 リレーションシップが [ **ドメインプロパティ** ] コンパートメントと共に表示され、継承ツリーとリレーションシップツリーが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

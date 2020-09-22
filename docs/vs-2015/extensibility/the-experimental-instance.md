@@ -1,36 +1,38 @@
 ---
 title: 実験用インスタンス |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: gregvanl
+caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: ee3c1ef0aed082a0e4e0fb519c744fda376fc8e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430140"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841532"
 ---
 # <a name="the-experimental-instance"></a>実験用インスタンス
-それに変わる可能性があるテストされていないアプリケーションから、Visual Studio 開発環境を保護するためには、VSSDK は実験に使用できる実験用の領域を提供します。 通常どおり、Visual Studio を使用して新しいアプリケーションを開発するが、この実験用インスタンスを使用して実行します。
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
- VSIX パッケージを持っているすべてのアプリケーションでは、デバッグ モードで Visual Studio の実験用インスタンスを起動します。
-
- 特定のソリューションの外部の Visual Studio の実験用インスタンスを開始する場合は、コマンド ウィンドウで次のコマンドを実行します。
-
- "*\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
-
+テストされていないアプリケーションから Visual Studio 開発環境を保護するために、VSSDK には実験に使用できる実験的な領域が用意されています。 通常どおり Visual Studio を使用して新しいアプリケーションを開発しますが、この実験用インスタンスを使用して実行します。  
+  
+ VSIX パッケージを持つすべてのアプリケーションは、Visual Studio の実験的なインスタンスをデバッグモードで起動します。  
+  
+ 特定のソリューション以外で Visual Studio の実験用インスタンスを開始する場合は、コマンドウィンドウで次のコマンドを実行します。  
+  
+ " *\<Visual studio installation path>* \Common7\IDE\devenv.exe"/rootsuffix Exp  
+  
 > [!NOTE]
-> 実験用インスタンスが下のレジストリに書き込まれる、`<version number>Exp`と`<version number>Exp_Config`ノード。 たとえば、Visual Studio 2015 の実験用のレジストリ領域は
->
-> `HKCU\Software\Microsoft\VisualStudio\14.0Exp` および `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
-
- 開発しているときに、実験用インスタンスで、拡張機能を実行することをお勧めします。 拡張機能をデプロイするときに、開発用インスタンスで実行されます。 アプリケーションの登録の詳細については、次を参照してください。 [Vspackage の登録](../extensibility/internals/registering-vspackages.md)します。
+> 実験用インスタンスは、ノードとノードの下のレジストリに書き込まれ `<version number>Exp` `<version number>Exp_Config` ます。 たとえば、Visual Studio 2015 の実験的なレジストリ領域は次のようになります。  
+>   
+> `HKCU\Software\Microsoft\VisualStudio\14.0Exp` および `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`  
+  
+ 開発中は、実験用インスタンスで拡張機能を実行することをお勧めします。 拡張機能を配置すると、開発インスタンスで実行されます。 アプリケーションの登録の詳細については、「 [vspackage の登録](../extensibility/internals/registering-vspackages.md)」を参照してください。

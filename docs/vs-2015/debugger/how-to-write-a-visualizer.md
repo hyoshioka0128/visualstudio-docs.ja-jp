@@ -22,19 +22,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce50276e4e83a1a055294c8e2b6e09cd0f93d54d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440162"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842246"
 ---
-# <a name="how-to-write-a-visualizer"></a>方法: ビジュアライザーを記述します。
+# <a name="how-to-write-a-visualizer"></a>方法 : ビジュアライザーを記述する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 <xref:System.Object> および <xref:System.Array> を除く任意のマネージド クラスのオブジェクトのカスタム ビジュアライザーを記述できます。  
   
 > [!NOTE]
-> **ストア**アプリ、標準のテキストのみ HTML、XML、および JSON ビジュアライザーがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
+> **ストア**アプリでは、標準のテキスト、HTML、XML、および JSON ビジュアライザーのみがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
   
  デバッガー ビジュアライザーのアーキテクチャには、次の 2 つの部分があります。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63440162"
   
   視覚化するデータ オブジェクト (String オブジェクトなど) は、デバッグ対象プロセスに存在します。 このためデバッグ対象側では、そのデータ オブジェクトをデバッガー側に送る必要があります。これによって、デバッガー側では、作成したユーザー インターフェイスを使ってデータ オブジェクトを表示できるようになります。  
   
-  デバッガー側から視覚化対象である場合は、このデータ オブジェクトを受け取る、*オブジェクト プロバイダー*を実装する、<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>インターフェイス。 デバッグ対象側の送信を使用してデータ オブジェクト、*オブジェクト ソース*から派生<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>します。 オブジェクト プロバイダーは、オブジェクト ソースにデータを戻すこともできます。このため、データの表示だけでなく編集もできるビジュアライザーを記述できます。 オブジェクト プロバイダーは、式エバリュエーターと通信することでオブジェクト ソースと通信するようにオーバーライドできます。  
+  デバッガー側は、インターフェイスを実装する *オブジェクトプロバイダー* から視覚化されるように、このデータオブジェクトを受け取り <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> ます。 デバッグ対象側は、から派生した *オブジェクトソース*を介してデータオブジェクトを送信し <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> ます。 オブジェクト プロバイダーは、オブジェクト ソースにデータを戻すこともできます。このため、データの表示だけでなく編集もできるビジュアライザーを記述できます。 オブジェクト プロバイダーは、式エバリュエーターと通信することでオブジェクト ソースと通信するようにオーバーライドできます。  
   
   デバッグ対象側とデバッガー側は、<xref:System.IO.Stream> を介して相互に通信します。 データ オブジェクトを <xref:System.IO.Stream> にシリアル化し、<xref:System.IO.Stream> をデータ オブジェクトに逆シリアル化するメソッドが用意されています。  
   
@@ -54,11 +54,11 @@ ms.locfileid: "63440162"
   
   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> を使用すると、Windows フォーム、ダイアログ、およびコントロールをビジュアライザーによって表示できます。  
   
-  ジェネリック型のサポートは制限されています。 ジェネリック型がオープン型の場合にのみ、そのジェネリック型のビジュアライザーを記述できます。 この制限は、`DebuggerTypeProxy` 属性を使用する場合の制限と同じです。 詳細については、次を参照してください。 [DebuggerTypeProxy 属性を使用して](../debugger/using-debuggertypeproxy-attribute.md)します。  
+  ジェネリック型のサポートは制限されています。 ジェネリック型がオープン型の場合にのみ、そのジェネリック型のビジュアライザーを記述できます。 この制限は、`DebuggerTypeProxy` 属性を使用する場合の制限と同じです。 詳細については、「 [デバッガー Typeproxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)」を参照してください。  
   
-  カスタムのビジュアライザーでは、セキュリティについての配慮が必要な場合があります。 参照してください[ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)します。  
+  カスタムのビジュアライザーでは、セキュリティについての配慮が必要な場合があります。 「 [ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)」を参照してください。  
   
-  以下の手順は、ビジュアライザーの作成に必要な作業の概要を示したものです。 詳細については、次を参照してください。[チュートリアル。C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)します。  
+  以下の手順は、ビジュアライザーの作成に必要な作業の概要を示したものです。 詳細については、「 [チュートリアル: C# でビジュアライザーを記述](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)する」を参照してください。  
   
 ### <a name="to-create-the-debugger-side"></a>デバッガー側を作成するには  
   
@@ -76,8 +76,8 @@ ms.locfileid: "63440162"
   
 2. ビジュアライザーでデータ オブジェクトを表示するだけでなく、編集できるようにする場合は、`TransferData` の `CreateReplacementObject` メソッドまたは <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> メソッドをオーバーライドする必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)   
+## <a name="see-also"></a>参照  
+ [カスタムビジュアライザーの作成](../debugger/create-custom-visualizers-of-data.md)   
  [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)   
- [方法: テストおよびデバッグのビジュアライザー](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [方法: ビジュアライザーをテストおよびデバッグする](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [ビジュアライザーのセキュリティに関する考慮事項](../debugger/visualizer-security-considerations.md)

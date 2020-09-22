@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング |Microsoft Docs'
+title: 'チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイル | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439695"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841981"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>チュートリアル: コマンドラインのインストルメンテーションを使用したプロファイリング
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のスタンドアロン アプリケーションのプロファイルにより、プロファイル ツールのインストルメンテーション メソッドを使用して、詳細なタイミング データおよび呼び出し数データを収集する方法を説明します。 このチュートリアルでは、次のタスクを行います。  
@@ -33,7 +33,7 @@ ms.locfileid: "63439695"
   
 - [VSPerfReport](../profiling/vsperfreport.md) ツールを使用して、プロファイル データのファイル ベースのレポートを生成する。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
+## <a name="prerequisites"></a>前提条件  
   
 - [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
@@ -43,7 +43,7 @@ ms.locfileid: "63439695"
   
 - [PeopleTrax サンプル](../profiling/peopletrax-sample-profiling-tools.md)のコピー  
   
-- プロファイリングによって得られた情報を操作するには、デバッグ シンボル情報を使用できるようにしておくことをお勧めします。 詳細については、「[方法 :参照 Windows シンボル情報](../profiling/how-to-reference-windows-symbol-information.md)します。  
+- プロファイリングによって得られた情報を操作するには、デバッグ シンボル情報を使用できるようにしておくことをお勧めします。 詳細については、「 [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)」を参照してください。  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>インストルメンテーション メソッドを使用したコマンド ライン プロファイル  
  インストルメンテーションとは、プローブ関数を含むプロファイルされたバイナリのバージョンを特別に構築するプロファイル方法です。プローブ関数はインストルメントされたモジュール内の関数に制御が渡されるときと、関数から制御が返されるときのタイミング情報を収集します。 このプロファイル方法は、サンプリングよりも深くプログラムに入り込むので、オーバーヘッドが大きくなります。 インストルメントされたバイナリはデバッグまたはリリース バイナリよりも大きく、配置向けではありません。  
@@ -123,9 +123,9 @@ ms.locfileid: "63439695"
   
      スプレッドシート プログラムで生成されたレポートを分析できます。または、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE を使用して、Report.vsp ファイル内のプロファイル データを分析することもできます。 詳細については、「[パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)   
- [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの概要](../profiling/performance-session-overview.md)   
+ [コマンドラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)   
- [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
+ [サンプリングデータ値について](../profiling/understanding-sampling-data-values.md)   
+ [パフォーマンスレポートのビュー](../profiling/performance-report-views.md)

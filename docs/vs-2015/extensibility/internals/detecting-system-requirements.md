@@ -12,40 +12,40 @@ caps.latest.revision: 51
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 467554b8e50878bcdf1029e4792bbf168a09fa11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445242"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841489"
 ---
 # <a name="detecting-system-requirements"></a>システム要件の検出
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio がインストールされていない場合、VSPackage は機能できません。 Microsoft Windows インストーラーを使用して、VSPackage のインストールを管理する場合は、Visual Studio がインストールされているかどうかを検出するインストーラーを構成できます。 など、システムの他の要件を確認して、特定のバージョンの Windows または特定の容量の RAM を構成することもできます。  
+VSPackage は、Visual Studio がインストールされていない場合は機能しません。 Microsoft Windows インストーラーを使用して VSPackage のインストールを管理する場合、Visual Studio がインストールされているかどうかを検出するようにインストーラーを構成できます。 また、特定のバージョンの Windows や特定の RAM 容量など、システムに他の要件がないかどうかを確認するように構成することもできます。  
   
-## <a name="detecting-visual-studio-editions"></a>Visual Studio のエディションを検出します。  
- Visual Studio のエディションがインストールされているかどうかを判断するには、ことを確認インストールのレジストリ キーの値 (REG_DWORD) で、適切なフォルダーでは、1 次の表に記載されています。 Visual Studio のエディションの階層があることに注意してください。  
+## <a name="detecting-visual-studio-editions"></a>Visual Studio のエディションの検出  
+ Visual Studio のエディションがインストールされているかどうかを確認するには、次の表に示すように、インストールレジストリキーの値が適切なフォルダーの (REG_DWORD) 1 であることを確認します。 Visual Studio の各エディションの階層があることに注意してください。  
   
-1. エンタープライズ  
+1. Enterprise  
   
 2. 2 次元形式  
   
 3. コミュニティ  
   
-   「高」のエディションがインストールされている場合、そのエディションを"lower"エディションの場合と同様のレジストリ キーが追加されます。 つまり、Enterprise edition がインストールされている場合は、インストール キーが 1 の Enterprise、および Professional および Community エディションに設定されます。 そのために、必要があります「最高」エディションのみを確認する必要があります。  
+   "高" エディションがインストールされている場合、そのエディションのレジストリキーと "lower" エディションのレジストリキーが追加されます。 つまり、Enterprise edition がインストールされている場合は、Enterprise、Professional、Community の各エディションのインストールキーが1に設定されます。 そのため、必要な "最高" エディションだけを確認する必要があります。  
   
 > [!NOTE]
-> レジストリ エディターの 64 ビット バージョンで 32 ビットのキーは hkey_local_machine \software\wow6432node 下に表示されて\\します。 Visual Studio のキーは HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\します。  
+> 64ビット版のレジストリエディターでは、32ビットのキーが HKEY_LOCAL_MACHINE] の下に表示され \\ ます。 Visual Studio のキーは HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing に \\ あります。  
   
 |製品|キー|  
 |-------------|---------|  
-|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|  
-|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|  
-|Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
-|Visual Studio 2015 Shell (統合シェルと分離)|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
+|Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|  
+|Visual Studio Professional 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|  
+|Visual Studio Community 2015|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
+|Visual Studio 2015 シェル (統合および分離)|HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
-## <a name="detecting-when-visual-studio-is-running"></a>Visual Studio が実行中の検出  
- VSPackage は、VSPackage のインストール時に Visual Studio が実行されている場合、正しく登録できません。 インストーラーは、Visual Studio が実行されているときに検出され、プログラムのインストールを拒否しする必要があります。 Windows インストーラーではテーブルのエントリを使用して、このような検出を有効にできます。 代わりに、ようカスタムの動作を作成する必要があります。使用して、`EnumProcesses`関数を devenv.exe プロセスを検出し、起動条件または条件付きで使用されるインストーラー プロパティを設定するかは、Visual Studio を終了するよう求めるダイアログ ボックスを表示します。  
+## <a name="detecting-when-visual-studio-is-running"></a>Visual Studio が実行中であることを検出する  
+ VSPackage がインストールされているときに Visual Studio が実行されている場合は、VSPackage を正しく登録できません。 インストーラーは、Visual Studio が実行されていることを検出してから、プログラムのインストールを拒否する必要があります。 Windows インストーラーでは、このような検出を有効にするためにテーブルエントリを使用することはできません。 代わりに、次のように、カスタムアクションを作成する必要があります。関数を使用して `EnumProcesses` devenv.exe プロセスを検出し、起動条件で使用されるインストーラープロパティを設定するか、Visual Studio を閉じるようユーザーに求めるダイアログボックスを条件付きで表示します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Windows インストーラーによる VSPackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

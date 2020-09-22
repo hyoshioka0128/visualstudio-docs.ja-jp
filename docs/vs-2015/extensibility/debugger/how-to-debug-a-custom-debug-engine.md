@@ -1,5 +1,5 @@
 ---
-title: '方法: カスタム デバッグ エンジンのデバッグ |Microsoft Docs'
+title: '方法: カスタムデバッグエンジンをデバッグする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,68 +12,68 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7e710cec4536a5a1327580e56c60cb23ca36f4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436372"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90841625"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタム デバッグ エンジンのデバッグ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロジェクトの種類からのデバッグ エンジン (DE) の起動、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>メソッド。 つまりのインスタンスの管理下にある、DE を起動する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトの種類を制御します。 ただし、そのインスタンスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]DE をデバッグすることはできません。 どのような次のようには、カスタム、DE をデバッグすることを許可する手順を示します。  
+プロジェクトの種類は、メソッドからデバッグエンジン (DE) を起動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> ます。 これは、プロジェクトの種類を制御するインスタンスの制御下で DE が起動されることを意味 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] します。 ただし、のインスタンスでは [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、DE をデバッグできません。 カスタム DE をデバッグするための手順を次に示します。  
   
 > [!NOTE]
-> :   「デバッグをカスタム デバッグ エンジン」の手順では、添付する前に開始するを待つ必要があります。 メッセージ ボックス、DE の開始時に表示される、ドイツの先頭近くに配置する場合は、その時点でアタッチし、引き続きメッセージ ボックスをオフにし。 そうすることを検出できますすべて DE イベント。  
+> : "カスタムデバッグエンジンのデバッグ" 手順では、このプロシージャにアタッチする前に、DE が開始されるまで待機する必要があります。 De の開始時に表示される DE の先頭付近にメッセージボックスを配置すると、その時点でアタッチして、メッセージボックスをクリアして続行することができます。 これにより、すべての DE イベントをキャッチできます。  
   
 > [!WARNING]
-> 次の手順を試行する前にインストールされているリモート デバッグが必要です。 参照してください[リモート デバッグ](../../debugger/remote-debugging.md)詳細についてはします。  
+> 次の手順を実行する前に、リモートデバッグがインストールされている必要があります。 詳細については、「 [リモートデバッグ](../../debugger/remote-debugging.md) 」を参照してください。  
   
-### <a name="debugging-a-custom-debug-engine"></a>カスタム デバッグ エンジンのデバッグ  
+### <a name="debugging-a-custom-debug-engine"></a>カスタムデバッグエンジンのデバッグ  
   
-1. Msvsmon.exe、リモート デバッグ モニターを起動します。  
+1. リモートデバッグモニターの msvsmon.exe を開始します。  
   
-2. **ツール**で msvsmon.exe を選択します メニューの **オプション**を開く、**オプション** ダイアログ ボックス。  
+2. msvsmon.exe の [ **ツール** ] メニューの [ **オプション** ] をクリックして、[ **オプション** ] ダイアログボックスを開きます。  
   
-3. [認証なし] オプションを選択し、クリックして**OK**します。  
+3. [認証なし] オプションを選択し、[ **OK]** をクリックします。  
   
-4. インスタンスを起動[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]カスタム DE プロジェクトを開きます。  
+4. のインスタンスを起動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] し、カスタムの DE プロジェクトを開きます。  
   
-5. 2 番目のインスタンスを開始[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]DE を起動するカスタム プロジェクトを開くと (開発、これは通常 VSIP のインストール時に設定されている実験用のレジストリ ハイブに)。  
+5. の2番目のインスタンスを起動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] し、DE を起動するカスタムプロジェクトを開きます (開発の場合、これは通常、VSIP をインストールするときに設定される実験用のレジストリハイブにあります)。  
   
-6. この 2 番目のインスタンスで[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、カスタム プロジェクトからソース ファイルを読み込み、およびデバッグするプログラムを起動します。 しばらく読み込み、または、ブレークポイントにヒットするまで待機する DE を許可するを待機します。  
+6. の2番目のインスタンスで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、カスタムプロジェクトからソースファイルを読み込み、デバッグするプログラムを開始します。 しばらく待ってから、DE の読み込みを許可するか、ブレークポイントにヒットするまで待機します。  
   
-7. 最初のインスタンスで[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](DE プロジェクト) と選択**プロセスにアタッチ**から、**デバッグ**メニュー。  
+7. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)](DE プロジェクトを含む) の最初のインスタンスで、[**デバッグ**] メニューの [**プロセスにアタッチ**] を選択します。  
   
-8. **プロセスにアタッチ** ダイアログ ボックスで、変更、**トランスポート**に**リモート (認証なしのネイティブのみ)** します。  
+8. [ **プロセスにアタッチ** ] ダイアログボックスで、[ **トランスポート** ] を [ **リモート (認証なしのネイティブのみ)**] に変更します。  
   
-9. 変更、**修飾子**コンピューターの名前に (注: この名前に 1 回だけ入力する必要があるため、エントリの履歴がある)。  
+9. **修飾子**をコンピューターの名前に変更します (メモ: エントリの履歴があるため、この名前を1回だけ入力する必要があります)。  
   
-10. **選択可能なプロセス**一覧を実行し、DE のインスタンスを選択、**アタッチ**ボタンをクリックします。  
+10. [選択 **可能なプロセス** ] ボックスの一覧で、実行している DE のインスタンスを選択し、[ **アタッチ** ] ボタンをクリックします。  
   
-11. DE でシンボルが読み込まれた後は、DE コードにブレークポイントを設定します。  
+11. シンボルを DE に読み込んだら、DE コードにブレークポイントを配置します。  
   
-12. 停止して、デバッグ プロセスを再起動するたびに、手順 6 ~ 10 を繰り返します。  
+12. デバッグプロセスを停止してから再起動するたびに、手順 6. ~ 10. を繰り返します。  
   
-### <a name="debugging-a-custom-project-type"></a>カスタム プロジェクトの種類をデバッグします。  
+### <a name="debugging-a-custom-project-type"></a>カスタムプロジェクトの種類のデバッグ  
   
-1. 開始[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトは、通常のレジストリ ハイブと負荷のプロジェクト (これは、ソースのプロジェクトの種類、プロジェクトの種類のインスタンス化ではありません) を入力します。  
+1. 通常のレジストリハイブから開始し、プロジェクトの種類のプロジェクト (プロジェクトの種類のインスタンス化ではなく、プロジェクトの種類 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のソース) を読み込みます。  
   
-2. プロジェクトのプロパティを開きに移動、**デバッグ**ページ。 **コマンド**へのパスを入力、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (これは、既定では、 *[ドライブ]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe)。  
+2. プロジェクトのプロパティを開き、[ **デバッグ** ] ページにアクセスします。 **コマンド**の場合は、IDE へのパスを入力し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます (既定では、 *[ドライブ 8\Common7\IDE\devenv.exe] は [ドライブ]* になり [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます)。  
   
-3. **コマンド引数**、型`/rootsuffix exp`(VSIP のインストール時に作成された) 実験用のレジストリ ハイブ。  
+3. コマンドの **引数**には、 `/rootsuffix exp` 実験的なレジストリハイブ (VSIP のインストール時に作成されたもの) を入力します。  
   
-4. **[OK]** をクリックして変更内容を確定します。  
+4. [ **OK** ] をクリックして変更内容を確定します。  
   
-5. F5 キーを押して、プロジェクトの種類を開始します。 2 番目のインスタンスが起動[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+5. F5 キーを押して、プロジェクトの種類を開始します。 これにより、の2番目のインスタンスが起動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] します。  
   
-6. この時点で、プロジェクトの種類のソース コードにブレークポイントを配置できます。  
+6. この時点で、プロジェクトの種類のソースコードにブレークポイントを配置できます。  
   
-7. 2 番目のインスタンスで[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、読み込みまたはプロジェクトの種類の新しいインスタンスを作成します。 読み込みまたは作成中に、ブレークポイントがヒットする可能性があります。  
+7. の2番目のインスタンスで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、プロジェクトの種類の新しいインスタンスを読み込むか作成します。 読み込み中または作成中に、ブレークポイントにヒットすることがあります。  
   
 8. プロジェクトの種類をデバッグします。  
   
-9. DE を起動するためのプロセスをデバッグする場合は、起動された後、DE にアタッチする「デバッグをカスタム デバッグ エンジン」の手順で、手順を実行できます。 3 つのインスタンスを提供[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を実行している: プロジェクト型のソースをインスタンス化されたプロジェクトの種類と、DE にアタッチされている 3 つ目の 2 つ目の 1 つ。  
+9. DE を起動するプロセスをデバッグする場合は、「カスタムデバッグエンジンのデバッグ」の手順を実行して、起動後に DE にアタッチできます。 これにより、3つのインスタンスが実行され [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。1つはプロジェクトの種類のソース、もう1つはインスタンス化されたプロジェクトの種類、もう1つは DE にアタッチされます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [カスタム デバッグ エンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)

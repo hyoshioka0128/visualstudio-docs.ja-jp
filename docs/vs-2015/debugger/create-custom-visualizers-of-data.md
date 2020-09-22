@@ -1,5 +1,5 @@
 ---
-title: データのカスタム ビジュアライザーを作成する |Microsoft Docs
+title: データのカスタムビジュアライザーを作成する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,23 +24,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434897"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842044"
 ---
-# <a name="create-custom-visualizers-of-data"></a>データのカスタム ビジュアライザーを作成します。
+# <a name="create-custom-visualizers-of-data"></a>データのカスタムビジュアライザーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ビジュアライザーのコンポーネントである、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]デバッガー ユーザー インターフェイス。 A*ビジュアライザー*  ダイアログ ボックスまたはそのデータ型に適した方法で変数またはオブジェクトを表示する別のインターフェイスを作成します。 たとえば、HTML ビジュアライザーは、HTML 文字列を解釈し、ブラウザー ウィンドウに表示されるとおりに結果を表示します。また、ビットマップ ビジュアライザーは、ビットマップ構造体を解釈し、ビットマップが表すグラフィックを表示します。 一部のビジュアライザーでは、データを表示するだけでなく、変更することもできます。  
+ビジュアライザーは、デバッガーの [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ユーザーインターフェイスのコンポーネントです。 *ビジュアライザー*は、データ型に適した方法で変数またはオブジェクトを表示するダイアログボックスまたは別のインターフェイスを作成します。 たとえば、HTML ビジュアライザーは、HTML 文字列を解釈し、ブラウザー ウィンドウに表示されるとおりに結果を表示します。また、ビットマップ ビジュアライザーは、ビットマップ構造体を解釈し、ビットマップが表すグラフィックを表示します。 一部のビジュアライザーでは、データを表示するだけでなく、変更することもできます。  
   
- [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] デバッガーには、6 つの標準的なビジュアライザーが用意されています。 これらは、テキスト、HTML、XML、および JSON ビジュアライザー、文字列オブジェクトのすべての作業WPF オブジェクトのビジュアル ツリー; のプロパティを表示するため、WPF ツリー ビジュアライザーで、データセット、データ ビュー、および DataTable オブジェクトの動作であるデータセット visualizer です。 その他のビジュアライザーは、今後 Microsoft Corporation からダウンロード可能になる場合があり、サード パーティやコミュニティからも入手できます。 また、独自のビジュアライザーを記述して、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] デバッガーにインストールすることもできます。  
+ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] デバッガーには、6 つの標準的なビジュアライザーが用意されています。 テキスト ビジュアライザー、HTML ビジュアライザー、XML ビジュアライザー、JSON ビジュアライザー: これらのすべてが文字列オブジェクトを処理します。WPF ツリー ビジュアライザー: WPF オブジェクトのビジュアル ツリーのプロパティを表示します。データセット ビジュアライザー: DataSet オブジェクト、DataView オブジェクト、および DataTable オブジェクトを処理します。 その他のビジュアライザーは、今後 Microsoft Corporation からダウンロード可能になる場合があり、サード パーティやコミュニティからも入手できます。 また、独自のビジュアライザーを記述して、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] デバッガーにインストールすることもできます。  
   
 > [!NOTE]
-> **ストア**アプリ、標準のテキストのみ HTML、XML、および JSON ビジュアライザーがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
+> **ストア**アプリでは、標準のテキスト、HTML、XML、および JSON ビジュアライザーのみがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
   
- デバッガーでは、ビジュアライザーは虫眼鏡アイコンで表されます。 虫眼鏡アイコンを表示、**データヒント**デバッガー変数ウィンドウ、または、 **[クイック ウォッチ]** ダイアログ ボックスで、データ型に適したビジュアライザーを選択する虫眼鏡をクリックすることができます対応するオブジェクト。  
+ デバッガーでは、ビジュアライザーは虫眼鏡アイコンで表されます。 データ **ヒント**に虫眼鏡アイコンが表示されている場合、[デバッガー変数] ウィンドウ、または [ **クイックウォッチ** ] ダイアログボックスで虫眼鏡をクリックすると、対応するオブジェクトのデータ型に適したビジュアライザーを選択できます。  
   
  ビジュアライザーは、.NET Compact Framework ではサポートされていません。  
   

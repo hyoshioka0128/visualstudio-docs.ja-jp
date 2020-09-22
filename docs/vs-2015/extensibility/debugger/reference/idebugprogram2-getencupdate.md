@@ -1,51 +1,52 @@
 ---
-title: IDebugProgram2::GetENCUpdate |Microsoft Docs
-ms.date: 11/04/2016
+title: 'IDebugProgram2:: GetENCUpdate |Microsoft Docs'
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugProgram2::GetENCUpdate
 helpviewer_keywords:
 - IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
-author: gregvanl
+caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: ac976232f2e92a7af1c8e0fabb7907e7164ba08a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386094"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842244"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-このメソッドは、このプログラムの編集と続行 (ENC) の更新プログラムを取得します。 カスタム デバッグ エンジンは常に返します`E_NOTIMPL`します。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>構文
-
-```cpp
-HRESULT GetENCUpdate( 
-   IUnknown** ppUpdate
-);
-```
-
-```csharp
-int GetENCUpdate(
-   out object ppUpdate
-);
-```
-
-#### <a name="parameters"></a>パラメーター
- `ppUpdate`
-
- [out]このプログラムを更新するために使用する内部インターフェイスを返します。
-
-## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
-
+このメソッドは、このプログラムのエディットコンティニュ (ENC) 更新プログラムを取得します。 カスタムデバッグエンジンは常にを返し `E_NOTIMPL` ます。  
+  
+## <a name="syntax"></a>構文  
+  
+```cpp#  
+HRESULT GetENCUpdate(   
+   IUnknown** ppUpdate  
+);  
+```  
+  
+```csharp  
+int GetENCUpdate(  
+   out object ppUpdate  
+);  
+```  
+  
+#### <a name="parameters"></a>パラメーター  
+ `ppUpdate`  
+ 入出力このプログラムを更新するために使用できる内部インターフェイスを返します。  
+  
+## <a name="return-value"></a>戻り値  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
+  
 > [!NOTE]
-> カスタム デバッグ エンジンは常に返す必要があります`E_NOTIMPL`します。
-
-## <a name="see-also"></a>関連項目
-- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+> カスタムデバッグエンジンは常にを返す必要があり `E_NOTIMPL` ます。  
+  
+## <a name="see-also"></a>参照  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

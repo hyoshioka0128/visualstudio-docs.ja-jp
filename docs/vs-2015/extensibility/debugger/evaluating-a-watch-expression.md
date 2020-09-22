@@ -12,30 +12,30 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fd33a7c225e0cdc14ac3f1af9f4c78a7c1459615
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444460"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841428"
 ---
 # <a name="evaluating-a-watch-expression"></a>ウォッチ式の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- Visual Studio のウォッチ式の値を表示する準備が呼び出す[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)をさらに呼び出し[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)します。 これを生成、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)値と式の型を含むオブジェクト。  
+ Visual Studio でウォッチ式の値を表示する準備が整うと、 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) が呼び出され、 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)が呼び出されます。 これにより、式の値と型を含む [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトが生成されます。  
   
- この実装で`IDebugParsedExpression::EvaluateSync`式が解析され、同時に評価されます。 この実装では、次のタスクを実行します。  
+ のこの実装では、 `IDebugParsedExpression::EvaluateSync` 式が解析され、同時に評価されます。 この実装では、次のタスクを実行します。  
   
-1. 解析し、値とその型を保持する汎用オブジェクトを生成するために、式を評価します。 C# の場合でとして表されます、`object`として C++ で表されます中に、 `VARIANT`。  
+1. 式を解析して評価し、値とその型を保持する汎用オブジェクトを生成します。 C# では、これはとして、C++ ではとして表され `object` ます。これは、として表され `VARIANT` ます。  
   
-2. クラスをインスタンス化します (と呼ばれる`CValueProperty`この例では) を実装する、`IDebugProperty2`インターフェイスし、クラスで返される値を格納します。  
+2. `CValueProperty`インターフェイスを実装 `IDebugProperty2` し、返される値をクラスに格納するクラス (この例ではと呼ばれる) をインスタンス化します。  
   
-3. 返します、`IDebugProperty2`からインターフェイス、`CValueProperty`オブジェクト。  
+3. `IDebugProperty2`オブジェクトからインターフェイスを返し `CValueProperty` ます。  
   
 ## <a name="managed-code"></a>マネージド コード  
- これは、実装、`IDebugParsedExpression::EvaluateSync`マネージ コードでします。 ヘルパー メソッド`Tokenize`解析ツリーには、式を解析します。 ヘルパー関数`EvalToken`トークンの値に変換します。 ヘルパー関数`FindTerm`再帰的には、解析ツリーを走査を呼び出す`EvalToken`の各ノードの値を表すと、式で任意の操作 (加算または減算) を適用します。  
+ これは、マネージコードでのの実装です `IDebugParsedExpression::EvaluateSync` 。 ヘルパーメソッドは、 `Tokenize` 式を解析ツリーに解析します。 ヘルパー関数は、 `EvalToken` トークンを値に変換します。 ヘルパー関数は、 `FindTerm` 解析ツリーを再帰的に走査し、 `EvalToken` 値を表す各ノードに対してを呼び出し、式に任意の操作 (加算または減算) を適用します。  
   
 ```csharp  
 namespace EEMC  
@@ -82,7 +82,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>アンマネージ コード  
- これは、実装、`IDebugParsedExpression::EvaluateSync`アンマネージ コードにします。 ヘルパー関数`Evaluate`を解析および評価を返す式、`VARIANT`結果の値を保持しています。 ヘルパー関数`VariantValueToProperty`バンドル、`VARIANT`に、`CValueProperty`オブジェクト。  
+ これは、 `IDebugParsedExpression::EvaluateSync` アンマネージコードでのの実装です。 ヘルパー関数は、 `Evaluate` 式を解析して評価し、 `VARIANT` 結果の値を保持するを返します。 ヘルパー関数は `VariantValueToProperty` 、を `VARIANT` オブジェクトにバンドルし `CValueProperty` ます。  
   
 ```  
 [C++]  
@@ -174,6 +174,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [ウォッチ ウィンドウ式の評価](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+## <a name="see-also"></a>参照  
+ [ウォッチウィンドウの式の評価](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [式の評価の実装のサンプル](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

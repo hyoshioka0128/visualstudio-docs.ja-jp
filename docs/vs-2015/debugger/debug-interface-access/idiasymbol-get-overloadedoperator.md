@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_overloadedoperator |Microsoft Docs
+title: 'IDiaSymbol:: get_overloadedOperator |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afd35cbc8d1ee27cdd0178cc234e26f66c18b765
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64804240"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841729"
 ---
-# <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
+# <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ユーザー定義データ型が演算子をオーバー ロードされたかどうかを指定するフラグを取得します。  
+ユーザー定義データ型にオーバーロードされた演算子があるかどうかを指定するフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,13 +35,13 @@ HRESULT get_overloadedOperator ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`場合は、ユーザー定義データ型が演算子をオーバー ロードを返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` ユーザー定義データ型にオーバーロードされた演算子が含まれている場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

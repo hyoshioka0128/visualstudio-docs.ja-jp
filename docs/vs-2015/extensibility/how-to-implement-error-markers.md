@@ -1,5 +1,5 @@
 ---
-title: '方法: エラーのマーカーの実装 |Microsoft Docs'
+title: '方法: エラーマーカーを実装する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,52 +11,52 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435964"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841705"
 ---
-# <a name="how-to-implement-error-markers"></a>方法: エラーのマーカーを実装します。
+# <a name="how-to-implement-error-markers"></a>方法: エラー マーカーを実装する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エラーのマーカー (または赤色の波下線) は、テキスト エディターのカスタマイズを実装するが最も難しいです。 ただし、VSPackage のユーザーに提供する利点は、提供するコストを上回るまでことができます。 エラーのマーカーは、微妙、言語のパーサーが波線または波状の赤い線で正しくないと判断されるテキストをマークします。 このインジケーターには、不適切なコードを視覚的に表示することでプログラマが役立ちます。  
+エラーマーカー (または赤色の波下線) は、実装するテキストエディターのカスタマイズの中で最も困難です。 ただし、VSPackage のユーザーに与えられるメリットは、それを提供するコストをはるかに上回る可能性があります。 エラーマーカーは、言語パーサーによって不適切と思われるテキストを波線または波線でマークします。 このインジケーターは、プログラマが間違ったコードを視覚的に表示するのに役立ちます。  
   
- テキスト マーカーを使用すると、赤い波線を実装します。 原則として、言語サービスに赤い波線がバッファーに追加テキスト、バック グラウンド パスとして、アイドル時、またはバック グラウンド スレッドでします。  
+ 赤色の波下線を実装するには、テキストマーカーを使用します。 ルールとして、言語サービスは、アイドル状態またはバックグラウンドスレッドで、テキストバッファーに赤色の波下線をバックグラウンドパスとして追加します。  
   
-### <a name="to-implement-the-red-wavy-underline-feature"></a>赤い波線の機能を実装するには  
+### <a name="to-implement-the-red-wavy-underline-feature"></a>赤色の波下線機能を実装するには  
   
-1. 赤い波線を配置するテキストを選択します。  
+1. 赤色の波線の下に配置するテキストを選択します。  
   
-2. 型のマーカーを作成`MARKER_CODESENSE_ERROR`です。 詳細については、「[方法 :標準のテキスト マーカーを追加](../extensibility/how-to-add-standard-text-markers.md)します。  
+2. 型のマーカーを作成 `MARKER_CODESENSE_ERROR` します。 詳細については、「 [方法: 標準テキストマーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)」を参照してください。  
   
-3. その後、渡す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス ポインター。  
+3. その後、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> インターフェイスポインターを渡します。  
   
-   このプロセスでは、特定のマーカーにツールヒントのテキストまたは特別なコンテキスト メニューを作成することもできます。 詳細については、「[方法 :標準のテキスト マーカーを追加](../extensibility/how-to-add-standard-text-markers.md)します。  
+   このプロセスでは、特定のマーカーにヒントテキストまたは特殊なコンテキストメニューを作成することもできます。 詳細については、「 [方法: 標準テキストマーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)」を参照してください。  
   
-   エラーのマーカーを表示する前に、次のオブジェクトが必要です。  
+   エラーマーカーを表示するには、次のオブジェクトが必要です。  
   
-- パーサーです。  
+- パーサー。  
   
-- タスク プロバイダー (の実装は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) 再解析する行を識別するために行情報の変更の記録を保持します。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>再解析される行を識別するために、行情報の変更の記録を保持するタスクプロバイダー (の実装)。  
   
-- カレットをキャプチャするテキスト ビューのフィルターを使用して、ビューからイベントを変更する、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) メソッドです。  
+- メソッドを使用してビューからカレット変更イベントをキャプチャするテキストビューフィルター <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A> 。  
   
-  パーサー、タスク プロバイダー、およびフィルターは、エラー マーカーを可能にするために必要なインフラストラクチャを提供します。 次の手順では、エラー マーカーを表示するため、プロセスを提供します。  
+  パーサー、タスクプロバイダー、およびフィルターは、エラーマーカーを可能にするために必要なインフラストラクチャを提供します。 次の手順では、エラーマーカーを表示するプロセスについて説明します。  
   
-1. フィルター選択されるビューでは、フィルターは、そのビューのデータに関連付けられているタスク プロバイダーへのポインターを取得します。  
+1. フィルター処理されているビューでは、フィルターは、そのビューのデータに関連付けられているタスクプロバイダーへのポインターを取得します。  
   
     > [!NOTE]
-    > メソッドのヒント、ステートメント入力候補、エラーのマーカーを同じコマンド フィルターを使用することができます。  
+    > メソッドのヒント、ステートメント入力候補、エラーマーカーなどに対して同じコマンドフィルターを使用できます。  
   
-2. フィルターは、別の行に移動したことを示すイベントを受信、エラーをチェックするタスクが作成されます。  
+2. 別の行に移動したことを示すイベントをフィルターが受信すると、エラーを確認するためのタスクが作成されます。  
   
-3. タスク ハンドラーでは、行のダーティを確認します。 そうである場合は、エラーの行を解析します。  
+3. タスクハンドラーは、行がダーティかどうかを確認します。 その場合は、エラーの行を解析します。  
   
-4. エラーが見つかった場合、タスク プロバイダーは、作業項目のインスタンスを作成します。 このインスタンスは、テキスト ビューでエラーのマーカーとして、環境を使用してテキスト マーカーを作成します。  
+4. エラーが検出された場合、タスクプロバイダーはタスク項目インスタンスを作成します。 このインスタンスは、環境がテキストビューのエラーマーカーとして使用するテキストマーカーを作成します。  
   
-## <a name="see-also"></a>関連項目  
- [レガシ API を使用したテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)   
- [方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)   
+## <a name="see-also"></a>参照  
+ [レガシ API でのテキストマーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [方法: 標準テキストマーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)   
+ [方法: カスタムテキストマーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)   
  [方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)

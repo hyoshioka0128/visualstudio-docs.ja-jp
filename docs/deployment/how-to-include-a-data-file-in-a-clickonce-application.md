@@ -1,5 +1,6 @@
 ---
-title: '方法: ClickOnce アプリケーションにデータファイルを含める |Microsoft Docs'
+title: ClickOnce アプリにデータファイルを含める
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7630d1b363afa7caeae361f607f4b73929fbba1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382407"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809147"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>方法: ClickOnce アプリケーションにデータ ファイルを含める
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]インストールする各アプリケーションには、対象のコンピューターのローカルディスクにデータディレクトリが割り当てられます。このディレクトリには、アプリケーションが独自のデータを管理できます。 データファイルには、任意の種類のファイル (テキストファイル、XML ファイル、または Microsoft Access データベース (*.mdb*) ファイルなど) を含めることができます。 次の手順では、任意の種類のデータファイルをアプリケーションに追加する方法について説明し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
@@ -82,5 +83,5 @@ ms.locfileid: "85382407"
 
      アプリケーションマニフェストのハッシュが変更されているため、配置マニフェストに再署名する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

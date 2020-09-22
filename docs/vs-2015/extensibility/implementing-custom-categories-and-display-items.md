@@ -1,5 +1,5 @@
 ---
-title: カスタム カテゴリと 表示項目を実装する |Microsoft Docs
+title: カスタムカテゴリの実装と項目の表示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,126 +12,126 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414605"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841605"
 ---
-# <a name="implementing-custom-categories-and-display-items"></a>カスタム カテゴリと 表示項目を実装します。
+# <a name="implementing-custom-categories-and-display-items"></a>カスタム カテゴリと表示項目の実装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage は、そのテキストの色とフォントの制御を提供できます、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE) でカスタム カテゴリとアイテムを表示します。  
+VSPackage は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] カスタムカテゴリと表示項目を使用して、統合開発環境 (IDE) にテキストのフォントと色を制御できます。  
   
- カスタム カテゴリと 表示項目が、**フォントおよび色**プロパティ ページ。 開くには、**フォントおよび色**プロパティ ページで、**ツール** メニューのをクリックして**オプション**します。 展開**環境**し**フォントおよび色**します。  
+ カスタムカテゴリと表示項目は、[ **フォントおよび色** ] プロパティページにあります。 [ **フォントおよび色** ] プロパティページを開くには、[ **ツール** ] メニューの [ **オプション**] をクリックします。 [ **環境** ] を展開し、[ **フォントおよび色**] をクリックします。  
   
- このメカニズムを使用して、Vspackage を実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>インターフェイスとその関連するインターフェイス。  
+ このメカニズムを使用する場合、Vspackage は <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> インターフェイスとそれに関連付けられたインターフェイスを実装する必要があります。  
   
- 原則として、このメカニズムを使用して既存のすべてを変更する**項目を表示**と**カテゴリ**を含めることができます。 ただし、この属性は変更することできません使用する必要があります、**テキスト EditorCategory**またはその**表示項目**します。 詳細については、次を参照してください。[フォントと色の概要](../extensibility/font-and-color-overview.md)します。  
+ 原則として、このメカニズムを使用して、既存のすべての **表示項目** とそれらを含む **カテゴリ** を変更できます。 ただし、 **Text EditorCategory** またはその **表示項目**の変更には使用しないでください。 詳細については、「 [フォントと色の概要](../extensibility/font-and-color-overview.md)」を参照してください。  
   
- ユーザー設定を実装する**カテゴリ**または**項目を表示**VSPackage にする必要があります。  
+ カスタム **カテゴリ** または **表示項目**を実装するには、VSPackage が次の条件を満たす必要があります。  
   
-- 作成するか、レジストリ内のカテゴリを特定します。  
+- レジストリでカテゴリを作成または識別します。  
   
-   IDE の実装、**フォントおよび色**プロパティ ページでは、この情報を使用して、特定のカテゴリをサポートしているサービスのクエリを正常にします。  
+   IDE の [ **フォントおよび色** ] プロパティページの実装では、この情報を使用して、特定のカテゴリをサポートするサービスを正しく照会します。  
   
-- 作成またはレジストリに (省略可能) グループを識別します。  
+- レジストリでグループを作成または指定します (省略可能)。  
   
-   2 つ以上のカテゴリの和集合を表すグループを定義することができます。 グループが定義されている場合、IDE によって自動的にサブカテゴリをマージし、配布グループ内のアイテムの表示。  
+   2つ以上のカテゴリの和集合を表すグループを定義すると便利な場合があります。 グループが定義されている場合、IDE はサブカテゴリを自動的にマージし、グループ内の表示項目を配布します。  
   
-- IDE のサポートを実装します。  
+- IDE サポートを実装します。  
   
 - フォントと色の変更を処理します。  
   
-  詳しくは、次を参照してください。[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)します。  
+  詳細については、「 [保存されたフォントと色の設定へのアクセス](../extensibility/accessing-stored-font-and-color-settings.md)」を参照してください  
   
-## <a name="to-create-or-identify-categories"></a>作成またはカテゴリを識別するには  
+## <a name="to-create-or-identify-categories"></a>カテゴリを作成または識別するには  
   
-- [カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\*\<Visual Studio のバージョン >* \FontAndColors\\`<Category>`]  
+- [HKLM\SOFTWARE\Microsoft \\ *\<Visual Studio version>* \\ `<Category>` ] の下に特別な種類のカテゴリレジストリエントリを作成します。  
   
-   *\<カテゴリ >* カテゴリのローカライズされていない名前を指定します。  
+   *\<Category>* カテゴリのローカライズされていない名前を指定します。  
   
-- 2 つの値を使用してレジストリを設定します。  
+- 次の2つの値を使用してレジストリを設定します。  
   
-  |名前|型|データ|説明|  
+  |Name|種類|Data|説明|  
   |----------|----------|----------|-----------------|  
   |カテゴリ|REG_SZ|GUID|カテゴリを識別するために作成された GUID。|  
-  |Package|REG_SZ|GUID|カテゴリをサポートする VSPackage のサービスの GUID です。|  
+  |パッケージ|REG_SZ|GUID|カテゴリをサポートする VSPackage サービスの GUID。|  
   
-  レジストリで指定されたサービスの実装を提供する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>の対応するカテゴリ。  
+  レジストリに指定されたサービスは、対応するカテゴリのの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> ます。  
   
-## <a name="to-create-or-identify-groups"></a>グループを作成または識別するのには  
+## <a name="to-create-or-identify-groups"></a>グループを作成または識別するには  
   
-- [カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\*\<Visual Studio のバージョン >* \FontAndColors\\  *\<グループ >*]  
+- [HKLM\SOFTWARE\Microsoft \\ *\<Visual Studio version>* \\ *\<group>* ] の下に特別な種類のカテゴリレジストリエントリを作成します。  
   
-   *\<グループ >* はローカライズされていないグループの名前です。  
+   *\<group>* グループのローカライズされていない名前を指定します。  
   
-- 2 つの値を使用してレジストリを設定します。  
+- 次の2つの値を使用してレジストリを設定します。  
   
-  |名前|型|データ|説明|  
+  |Name|種類|Data|説明|  
   |----------|----------|----------|-----------------|  
-  |カテゴリ|REG_SZ|GUID|グループを識別する GUID が作成されます。|  
-  |Package|REG_SZ|GUID|カテゴリをサポートするサービスの GUID です。|  
+  |カテゴリ|REG_SZ|GUID|グループを識別するために作成された GUID。|  
+  |パッケージ|REG_SZ|GUID|カテゴリをサポートするサービスの GUID。|  
   
-  レジストリで指定されたサービスの実装を提供する必要があります`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`の対応するグループ。  
+  レジストリに指定されたサービスは、対応するグループのの実装を提供する必要があり `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` ます。  
   
-## <a name="to-implement-ide-support"></a>IDE のサポートを実装するには  
+## <a name="to-implement-ide-support"></a>IDE サポートを実装するには  
   
-- 実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>、いずれかが返されます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>インターフェイスまたは`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`インターフェイスごとに、IDE に**カテゴリ**またはグループの GUID が指定されています。  
+- を実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A> ます。これにより、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 指定された `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` **カテゴリ** またはグループ GUID ごとに、インターフェイスまたはインターフェイスが IDE に返されます。  
   
-- すべて**カテゴリ**をサポートし、VSPackage の実装の別のインスタンス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>インターフェイス。  
+- サポートされているすべての **カテゴリ** に対して、VSPackage はインターフェイスの個別のインスタンスを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> ます。  
   
-- メソッドの実装を通じて<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>を使用して IDE を提供する必要があります。  
+- によって実装されるメソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> IDE に次のものを提供する必要があります。  
   
-  - リストの**表示項目**で、**カテゴリ。**  
+  - カテゴリ内の **表示項目** の一覧 **。**  
   
-  - ローカライズ可能な名前**表示項目**します。  
+  - **表示項目**のローカライズ可能な名前。  
   
-  - 各メンバーの情報を表示**カテゴリ**します。  
+  - **カテゴリ**の各メンバーの情報を表示します。  
   
   > [!NOTE]
-  > すべて**カテゴリ**少なくとも 1 つ含める必要があります**表示項目**します。  
+  > すべての **カテゴリ** には、少なくとも1つの **表示項目**を含める必要があります。  
   
-- IDE を使用して、`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`いくつかのカテゴリの共用体を定義するインターフェイス。  
+- IDE では、インターフェイスを使用して、 `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` 複数のカテゴリの和集合を定義します。  
   
-   その実装を使用して IDE を提供します。  
+   この実装では、IDE を次のように提供します。  
   
-  - 一覧、**カテゴリ**特定のグループを構成します。  
+  - 指定されたグループを構成する **カテゴリ** の一覧。  
   
-  - インスタンスへのアクセス<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>それぞれをサポートしている**カテゴリ**グループ内。  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>グループ内の各**カテゴリ**をサポートするのインスタンスへのアクセス。  
   
-  - ローカライズ可能なグループの名前。  
+  - ローカライズ可能なグループ名。  
   
-- IDE の更新。  
+- IDE を更新しています:  
   
-   IDE に関する情報をキャッシュする**フォントおよびカラー**設定します。 IDE の変更後にそのため、**フォントおよびカラー**構成では、キャッシュが最新であるかどうかを確認することをお勧めします。  
+   IDE では、 **フォントおよび色** の設定に関する情報がキャッシュされます。 そのため、IDE の **フォントと色** の構成を変更した後は、キャッシュが最新の状態になっていることを確認することをお勧めします。  
   
-  キャッシュの更新を行う、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスし、実行のグローバルまたはだけで選択した項目を指定できます。  
+  キャッシュの更新はインターフェイスを介して行われ、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> グローバルに、または選択した項目でのみ実行できます。  
   
-## <a name="to-handle-font-and-color-changes"></a>フォントと色を処理するために次のように変更します。  
- VSPackage を表示するテキストの色づけを正しくサポートする VSPackage のサポートの色づけサービスはを通じて行われたユーザーによる変更に応答する必要があります、**フォントおよび色**プロパティ ページ。 VSPackage では、、この検証を行います。  
+## <a name="to-handle-font-and-color-changes"></a>フォントと色の変更を処理するには  
+ VSPackage によって表示されるテキストの色付けを適切にサポートするには、VSPackage をサポートする色付けサービスが、[ **フォントおよび色** ] プロパティページでユーザーが開始した変更に応答する必要があります。 VSPackage は、次の方法でこれを実行します。  
   
-- 実装することによって IDE で生成されるイベントを処理、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>インターフェイス。  
+- インターフェイスを実装することによって、IDE によって生成されたイベントを処理 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> します。  
   
-     IDE は次のユーザーの変更の適切なメソッドを呼び出し、**フォントおよび色**ページ。 たとえば、呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>メソッドが新しいフォントが選択されている場合。  
+     IDE は、[ **フォントおよび色** ] ページをユーザーが変更した後、適切なメソッドを呼び出します。 たとえば、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> 新しいフォントが選択されている場合は、メソッドを呼び出します。  
   
      - または -  
   
-- IDE の変更をポーリングします。  
+- 変更のために IDE をポーリングしています。  
   
-     これは、システムによって実装されるを通して実行<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。 主に、永続化のサポートには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>のフォントと色の情報を取得するメソッドを使用できる**項目を表示**します。 詳細については、次を参照してください。[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)します。  
+     これは、システムによって実装されたインターフェイスを使用して行うことができ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> ます。 主に永続化のサポートのために、メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> **表示項目**のフォントと色の情報を取得できます。 詳細については、「 [格納されているフォントおよび色の設定へのアクセス](../extensibility/accessing-stored-font-and-color-settings.md)」を参照してください。  
   
     > [!NOTE]
-    > ポーリングによって得られた結果が正しいことに、使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
+    > ポーリングによって取得された結果が正しいことを確認するには、インターフェイスを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> インターフェイスの取得メソッドを呼び出す前にキャッシュのフラッシュと更新が必要かどうかを判断し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
- [フォントと色づけのテキストの色の情報を取得します。](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
- [ストアドのフォントと色の設定にアクセスします。](../extensibility/accessing-stored-font-and-color-settings.md)   
- [方法: 組み込みのフォントおよび色スキームへをアクセスします。](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [テキストの色付けに関するフォントと色の情報を取得する](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
+ [格納されているフォントと色の設定へのアクセス](../extensibility/accessing-stored-font-and-color-settings.md)   
+ [方法: 組み込みフォントおよび配色にアクセスする](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [フォントと色の概要](../extensibility/font-and-color-overview.md)
