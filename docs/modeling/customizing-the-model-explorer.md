@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548370"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807873"
 ---
 # <a name="customizing-the-model-explorer"></a>モデル エクスプローラーのカスタマイズ
 ドメイン固有言語デザイナーのエクスプローラーの外観と動作は、次のように変更できます。
@@ -111,6 +111,6 @@ ms.locfileid: "85548370"
 
      エクスプローラーには [ **アクター** ] ノードのみが表示され、[ **コメント** ] ノードは表示されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

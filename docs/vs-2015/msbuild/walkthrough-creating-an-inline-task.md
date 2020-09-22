@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445628"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842188"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>チュートリアル: インライン タスクの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 .NET Framework Version 4 以降では、プロジェクト ファイルでタスクをインラインで作成できます。 個別のアセンブリを作成してタスクをホストする必要はありません。 詳細については、「[インライン タスク](../msbuild/msbuild-inline-tasks.md)」を参照してください。  
+MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 .NET Framework Version 4 以降では、プロジェクト ファイルでタスクをインラインで作成できます。 個別のアセンブリを作成してタスクをホストする必要はありません。 詳細については、「 [インラインタスク](../msbuild/msbuild-inline-tasks.md)」を参照してください。  
   
  このチュートリアルでは、次のインライン タスクを作成し、実行する方法について説明します。  
   
@@ -43,19 +43,19 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 - **コマンド プロンプト ウィンドウ**を使用してプロジェクトをビルドし、結果を確認します。  
   
 ## <a name="creating-and-modifying-an-msbuild-project"></a>MSBuild プロジェクトの作成と変更  
- Visual Studio プロジェクト システムは MSBuild に基づいています。 したがって、ビルド プロジェクト ファイルは Visual Studio を使用して作成できます。 このセクションでは、Visual C# プロジェクト ファイルを作成します  (代わりに、Visual Basic プロジェクト ファイルを作成することもできます。 このチュートリアルのコンテキストでは、2 つのプロジェクト ファイルにはわずかな違いしかありません)。  
+ Visual Studio プロジェクト システムは MSBuild に基づいています。 したがって、ビルド プロジェクト ファイルは Visual Studio を使用して作成できます。 このセクションでは、Visual C# プロジェクト ファイルを作成します (代わりに、Visual Basic プロジェクト ファイルを作成することもできます。 このチュートリアルのコンテキストでは、2 つのプロジェクト ファイルにはわずかな違いしかありません)。  
   
 #### <a name="to-create-and-modify-a-project-file"></a>プロジェクト ファイルを作成および変更するには  
   
-1. Visual Studio で、**[ファイル]** メニューの **[新規作成]** をクリックし、**[プロジェクト]** をクリックします。  
+1. Visual Studio で、[ **ファイル** ] メニューの [ **新規作成** ] をクリックし、[ **プロジェクト**] をクリックします。  
   
 2. **[新しいプロジェクト]** ダイアログ ボックスで、プロジェクトの種類として Visual C# を選択し、**[Windows フォーム アプリケーション]** テンプレートをクリックします。 **[名前]** ボックスに「 `InlineTasks`」と入力します。 ソリューションの**場所**を入力します (`D:\` など)。 **[ソリューションのディレクトリを作成]** がオンになっていることと、**[ソース管理に追加]** がオフになっていること、さらに **[ソリューション名]** が `InlineTasks` になっていることを確認します。  
   
      **[OK]** をクリックして、プロジェクト ファイルを作成します。  
   
-3. **ソリューション エクスプローラー**で、[InlineTasks] プロジェクト ノードを右クリックし、**[プロジェクトのアンロード]** をクリックします。  
+3. **ソリューション エクスプローラー**で、 [InlineTasks] プロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** をクリックします。  
   
-4. プロジェクト ノードを再度右クリックし、**[InlineTasks.csproj の編集]** をクリックします。  
+4. プロジェクト ノードを再度右クリックし、 **[InlineTasks.csproj の編集]** をクリックします。  
   
      コード エディターにプロジェクト ファイルが表示されます。  
   
@@ -93,11 +93,11 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   
 ##### <a name="to-run-the-hello-task"></a>Hello タスクを実行するには  
   
-1. **[スタート]**、**[すべてのプログラム]** の順にクリックし、**[Visual Studio Tools]** フォルダーを見つけて **[Visual Studio コマンド プロンプト]** をクリックします。  
+1. **[スタート]** 、 **[すべてのプログラム]** の順にクリックし、 **[Visual Studio Tools]** フォルダーを見つけて **[Visual Studio コマンド プロンプト]** をクリックします。  
   
-2. **コマンド プロンプト ウィンドウ**で、プロジェクト ファイルが格納されているフォルダー (この場合は D:\InlineTasks\InlineTasks\\) を見つけます。  
+2. **コマンド プロンプト ウィンドウ**で、プロジェクト ファイルが格納されているフォルダー (この場合は D:\InlineTasks\InlineTasks\\ ) を見つけます。  
   
-3. コマンド スイッチを指定せずに「**msbuild**」と入力し、Enter キーを押します。 既定では、これによって InlineTasks.csproj ファイルがビルドされ、Hello タスクを呼び出す既定のターゲット TestBuild が処理されます。  
+3. コマンドスイッチを指定せずに「 **msbuild** 」と入力し、enter キーを押します。 既定では、これによって InlineTasks.csproj ファイルがビルドされ、Hello タスクを呼び出す既定のターゲット TestBuild が処理されます。  
   
 4. **コマンド プロンプト ウィンドウ**で出力を確認します。 次の行が表示されます。  
   
@@ -131,7 +131,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
    </Target>  
    ```  
   
-2. **コマンド プロンプト ウィンドウ**で、コマンド スイッチを指定せずに「**msbuild**」と入力し、Enter キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。  
+2. **コマンドプロンプトウィンドウ**で、コマンドスイッチを指定せずに「 **msbuild** 」と入力し、enter キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。  
   
 3. **コマンド プロンプト ウィンドウ**で出力を確認します。 次の行が表示されます。  
   
@@ -167,7 +167,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
    </Target>  
    ```  
   
-2. **コマンド プロンプト ウィンドウ**で、コマンド スイッチを指定せずに「**msbuild**」と入力し、Enter キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。  
+2. **コマンドプロンプトウィンドウ**で、コマンドスイッチを指定せずに「 **msbuild** 」と入力し、enter キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。  
   
 3. **コマンド プロンプト ウィンドウ**で出力を確認します。 次の行が表示されます。  
   
@@ -222,7 +222,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
    </Target>  
    ```  
   
-2. **コマンド プロンプト ウィンドウ**で、コマンド スイッチを指定せずに「**msbuild**」と入力し、Enter キーを押します。 既定では、これによって RegX タスクを呼び出す既定のターゲット TestBuild が処理されます。  
+2. **コマンドプロンプトウィンドウ**で、コマンドスイッチを指定せずに「 **msbuild** 」と入力し、enter キーを押します。 既定では、これによって RegX タスクを呼び出す既定のターゲット TestBuild が処理されます。  
   
 3. **コマンド プロンプト ウィンドウ**で出力を確認します。 次の行が表示されます。  
   
@@ -241,7 +241,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   入力パラメーターの値は、TestBuild ターゲットによって RegX タスクが呼び出されたときに設定されます。 RegX タスクによってすべてのファイルが読み取られ、正規表現と一致するファイルの一覧が返されます。 この一覧は `Result` 出力パラメーターとして返され、MSBuild 項目 `MatchedFiles` として生成されます。  
   
 ### <a name="handling-reserved-characters"></a>予約文字の処理  
- MSBuild パーサーによってインライン タスクが XML として処理されます。 XML で意味が予約されている文字 ("\<" や ">" など) は、.NET ソース コードではなく XML として検出されて処理されます。 コード式に予約文字を含めるには (`Files.Length > 0` など)、次のように `Code` 要素を記述して、その内容が CDATA 式に含まれるようにします。  
+ MSBuild パーサーによってインライン タスクが XML として処理されます。 XML で意味が予約されている文字 ("\<" and ">" など) は、.NET ソース コードではなく XML として検出されて処理されます。 コード式に予約文字を含めるには (`Files.Length > 0` など)、次のように `Code` 要素を記述して、その内容が CDATA 式に含まれるようにします。  
   
  `<Code Type="Fragment" Language="cs">`  
   
@@ -253,7 +253,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   
  `</Code>`  
   
-## <a name="see-also"></a>関連項目  
- [インライン タスク](../msbuild/msbuild-inline-tasks.md)   
+## <a name="see-also"></a>参照  
+ [インラインタスク](../msbuild/msbuild-inline-tasks.md)   
  [タスク](../msbuild/msbuild-tasks.md)   
  [ターゲット](../msbuild/msbuild-targets.md)

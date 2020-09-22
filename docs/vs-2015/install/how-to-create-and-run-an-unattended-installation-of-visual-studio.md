@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 無人インストールを作成して実行する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433048"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842248"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>方法: Visual Studio の無人インストールを作成して実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "63433048"
     > [!NOTE]
     > パスとファイル名の組み合わせが 260 文字を超えると、インストールに失敗する場合があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のパスの最大長は 221 文字です。  ローカル パス名は 70 文字、ネットワーク パス名は 39 文字を超えないようにしてください。
 
-     また、空白文字を含むフォルダー名をパスに指定した場合も、インストールに失敗する可能性があります (例: "\\\\*ServerName*\IDE install"、\\\\*ServerName*\Visual Studio\\)。
+     パス内のフォルダー名にスペースが埋め込まれている場合 (たとえば、" \\ \\ *servername*\ IDE install" や " \\ \\ *servername*/Visual Studio" など)、インストールに失敗することもあり \\ ます。
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>無人モードでの Visual Studio の配置
- 無人モードで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を配置するには、AdminDeployment.xml ファイルを変更する必要があります。 これを行うには、`/CreateAdminFile` "*\<ファイルの場所>*" コマンド ライン パラメーターを使用して、最初に AdminDeployment.xml ファイルを作成する必要があります。 次に、このファイルを *Drive*:\IDEinstall\packages ディレクトリに配置した場合は、そのファイルを使用して、Visual Studio 配置をネットワークにプッシュするか、インストール環境にプルすることができます。 AdminDeployment.xml ファイルは、オペレーティング システム、アーキテクチャ、Visual Studio のエディション、またはオペレーティング システムの言語に固有のものではありません。
+ 無人モードで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を配置するには、AdminDeployment.xml ファイルを変更する必要があります。 これを行うには、最初にコマンドラインパラメーターを使用して AdminDeployment.xml ファイルを作成する必要があり `/CreateAdminFile` *\<file location>* ます。 次に、このファイルを *Drive*:\IDEinstall\packages ディレクトリに配置した場合は、そのファイルを使用して、Visual Studio 配置をネットワークにプッシュするか、インストール環境にプルすることができます。 AdminDeployment.xml ファイルは、オペレーティング システム、アーキテクチャ、Visual Studio のエディション、またはオペレーティング システムの言語に固有のものではありません。
 
 > [!CAUTION]
 > 場合によっては、AdminDeployment.xml ファイルで選択済みとして表示されている項目はインストールされません。 この問題を解決するには、"Selected="yes"" とマークされている項目を AdminDeployment.xml ファイルの **最後** に配置します。
 >
 > 項目のオプションの依存関係をインストールしない場合は、以下のスクリーン ショットに示されているように、最初に親を選択し、次に親の後ろのオプションの依存関係を選択解除します。
 >
-> ![AdminDeployment.xml ファイルの末尾にあるインストール項目](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![AdminDeployment.xml ファイルの終わりにあるインストール項目](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
 > これを実行する別の方法は、親のオプションの子を単に省略する方法です。つまり、"Selected="no"" の項目を一切含めません。ただし、やはり、"Selected="yes"" の項目はすべて AdminDeployment.xml ファイルの最後に配置する必要があります。
 
@@ -59,11 +59,11 @@ ms.locfileid: "63433048"
 
  AdminDeployment ファイル スキーマには、次の要素が含まれています。
 
-|要素|属性|値|説明|
+|要素|属性|値|Description|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*パス*|インストール アプリケーションのユーザー インターフェイスでパスをオーバーライドした場合と同じように動作します。 Visual Studio が既にインストールされている場合、この要素は無視されます。|
 |BundleCustomizations|NoWeb|はい&#124;既定|この要素の値が yes の場合は、セットアップ中にインストール アプリケーションが Web にアクセスすることはありません。|
-|SelectableItemCustomization|非表示|はい&#124;なし|この要素の値が Yes の場合は、カスタマイズ ツリーの選択可能な項目が非表示になります。|
+|SelectableItemCustomization|[非表示]|はい&#124;なし|この要素の値が Yes の場合は、カスタマイズ ツリーの選択可能な項目が非表示になります。|
 |SelectableItemCustomization|選択済み|はい&#124;なし|カスタマイズ ツリーの選択可能な項目を選択または選択解除します。|
 |BundleCustomizations|フィード|パス|ユーザーが使用するフィードの場所。  これ以降のこのコンピューターに対する変更操作では、このフィードが使用されます (既定では "Default") 。|
 |BundleCustomizations|SuppressRefreshPrompt|はい&#124;既定|使用可能な新しいバージョンがある場合に、ユーザーにセットアップを更新するように要求しなくなります。|
@@ -77,7 +77,7 @@ ms.locfileid: "63433048"
 
 1. *Drive*:\IDEinstall\AdminDeployment.xml ファイルで、次の例に示すように、BundleCustomizations 要素の NoWeb の属性の値を "default" から "yes" に変更します。
 
-     `<BundleCustomizations TargetDir="default" NoWeb="default"/>` を `<BundleCustomizations TargetDir="default" NoWeb="yes"/>` に変更します
+     `<BundleCustomizations TargetDir="default" NoWeb="default"/>` を `<BundleCustomizations TargetDir="default" NoWeb="yes"/>` に変更します。
 
 2. 必要に応じてオプションのコンポーネントの SelectableItemCustomization 属性を変更し、ファイルを保存します。
 
@@ -131,14 +131,14 @@ ms.locfileid: "63433048"
 
 2. **[詳細]** タブをクリックした後、**[製品バージョン]** プロパティをメモしておきます。
 
-    ![Visual Studio の無人インストールにおける [プロパティ] ダイアログ ボックスの例](../install/media/unattended-install-properties-dialog-box.PNG "無人インストール - [プロパティ] ダイアログ ボックス")
+    ![Visual Studio の無人インストールでの [プロパティ] ダイアログボックスの例](../install/media/unattended-install-properties-dialog-box.PNG "[無人インストールのプロパティ] ダイアログボックス")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>製品のバージョンが 14.0.24720.0 または 14.0.24720.1 の場合は、次の手順に従います。
    1. インターネットにアクセスできるコンピューター上で *Product.exe* /Layout *Drive:* \IDEinstall を実行します。 (たとえば、`vs_enterprise.exe /Layout d:\IDEinstall` を実行します。)
 
    2. /Layout が完了したら、新しいイメージを新しい場所にコピーします。
 
-   3. AdminDeployment.xml ファイルを作成して変更します。 これを行うには、`/CreateAdminFile`"*\<ファイルの場所>*" コマンド ライン パラメーターを使います。 (詳細については、この記事の「無人モードでの Visual Studio の配置」セクションをご覧ください。)
+   3. AdminDeployment.xml ファイルを作成して変更します。 これを行うには、 `/CreateAdminFile` *\<file location>* コマンドラインパラメーターを使用します。 (詳細については、この記事の「無人モードでの Visual Studio の配置」セクションをご覧ください。)
 
    4. クライアント コンピューター上で次のコマンドを実行して、前にインストールした Visual Studio のコピーを更新します: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart"。
 
@@ -148,7 +148,7 @@ ms.locfileid: "63433048"
 
    2. /Layout が完了したら、新しいイメージを新しい場所にコピーします。 (または、代わりに既存のネットワーク イメージを上書きすることができます。)
 
-   3. AdminDeployment.xml ファイルを作成した後、変更します。 これを行うには、`/CreateAdminFile`"*\<ファイルの場所>*" コマンド ライン パラメーターを使います。 (詳細については、この記事の「無人モードでの Visual Studio の配置」セクションをご覧ください。)
+   3. AdminDeployment.xml ファイルを作成した後、変更します。 これを行うには、 `/CreateAdminFile` *\<file location>* コマンドラインパラメーターを使用します。 (詳細については、この記事の「無人モードでの Visual Studio の配置」セクションをご覧ください。)
 
    4. イメージを新しい場所にコピーする場合、クライアント コンピューター上で次のコマンドを実行して、前にインストールした Visual Studio のコピーを更新する必要があります: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart"。
 
@@ -166,7 +166,7 @@ ms.locfileid: "63433048"
 ## <a name="registering-the-product"></a>製品の登録
  インストールが完了したら、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内から [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコピーを登録できます。
 
-#### <a name="to-register"></a>登録するには
+#### <a name="to-register"></a>次の通り登録します
 
 1. **[ヘルプ]** メニューを開き、 **[製品の登録]** をクリックします。
 
@@ -174,5 +174,5 @@ ms.locfileid: "63433048"
 
      (詳細については、「[How to: Locate the Visual Studio Product Key (方法: Visual Studio プロダクト キーを検索する)](../install/how-to-locate-the-visual-studio-product-key.md)」と「[How to: Automatically apply product keys when deploying Visual Studio (方法: Visual Studio の展開時にプロダクト キーを自動的に適用する)](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)」トピックをご覧ください。)
 
-## <a name="see-also"></a>関連項目
- [Visual Studio のインストール](../install/install-visual-studio-2015.md)
+## <a name="see-also"></a>参照
+ [Visual Studio をインストールする](../install/install-visual-studio-2015.md)

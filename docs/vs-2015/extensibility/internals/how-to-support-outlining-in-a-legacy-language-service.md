@@ -1,5 +1,5 @@
 ---
-title: '方法: 従来の言語サービスでのアウトラインのサポート |Microsoft Docs'
+title: '方法: 従来の言語サービスでアウトラインをサポートする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,40 +13,40 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d92baa824dbb70dd591cadef99775f943c651aef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436145"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842280"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>方法: 従来の言語サービスでのアウトラインのサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-アウトライン表示は、展開または折りたたむテキストの異なるリージョンに使用されます。 使用方法のアウトラインはさまざまな言語によって別々 に定義できます。 詳細については、「[アウトライン](../../ide/outlining.md)」を参照してください。  
+アウトラインは、テキストのさまざまな領域を展開したり折りたたんだりするために使用されます。 アウトラインの使用方法は、言語によって異なる方法で定義できます。 詳細については、「[アウトライン](../../ide/outlining.md)」を参照してください。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 アウトライン表示を実装する新しい方法の詳細についてを参照してください。[チュートリアル。アウトライン](../../extensibility/walkthrough-outlining.md)」を参照してください。  
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 アウトラインを実装する新しい方法の詳細については、「 [チュートリアル: アウトライン](../../extensibility/walkthrough-outlining.md)」を参照してください。  
   
 > [!NOTE]
-> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。  
   
- 言語サービスのこのコマンドをサポートする方法を次に示します。  
+ 次に、このコマンドを言語サービスに対してサポートする方法を示します。  
   
-### <a name="to-support-outlining"></a>アウトライン表示をサポートするには  
+### <a name="to-support-outlining"></a>アウトラインをサポートするには  
   
-1. 実装<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>言語サービス オブジェクト。  
+1. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>言語サービスオブジェクトにを実装します。  
   
-2. 呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>新しいアウトライン領域を追加する現在のアウトライン セッション オブジェクトにします。  
+2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>新しいアウトライン領域を追加するには、現在のアウトラインセッションオブジェクトでを呼び出します。  
   
 ## <a name="robust-programming"></a>信頼性の高いプログラミング  
- ユーザーが選択すると**定義に縮小**上、**アウトライン**メニューで、IDE の呼び出し<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A>言語サービス。  
+ ユーザーが**アウトライン**メニューの [**定義を折りたたむ] を**選択すると、IDE は <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 言語サービスでを呼び出します。  
   
- このメソッドが呼び出されるに IDE が渡されます。、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> (テキスト バッファーへのポインター) と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>(現在のアウトラインのセッションへのポインター)。  
+ このメソッドが呼び出されると、IDE は <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> ポインター (テキストバッファーへのポインター) と <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (現在のアウトラインセッションへのポインター) を渡します。  
   
- 呼び出すことができます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>メソッドでこれらのリージョンを指定することで、複数のアウトライン領域に対する、`rgOutlnReg`パラメーター。 `rgOutlnReg`パラメーターは、<xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion>構造体。 このプロセスでは、非表示の領域の特定の地域の展開または折りたたまれているかどうかなどのさまざまな特性を指定できます。  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>パラメーターでこれらの領域を指定することで、複数のアウトライン領域に対してメソッドを呼び出すことができ `rgOutlnReg` ます。 `rgOutlnReg`パラメーターは <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> 構造体です。 このプロセスでは、特定の領域が展開されているか折りたたまれているかなど、非表示領域のさまざまな特性を指定できます。  
   
 > [!NOTE]
-> 改行文字を非表示について注意が必要です。 非表示のテキストを拡張する最初の行の先頭から最後のまま新しい行の最後の文字を表示、セクションの最後の行の文字。  
+> 改行文字の非表示については注意してください。 非表示のテキストは、最初の行の先頭からセクションの最後の行の最後の文字まで拡張する必要があり、最後の改行文字は表示されたままになります。  
   
-## <a name="see-also"></a>関連項目  
- [方法: 従来の言語サービスでの非表示のテキストのサポートを提供します。](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+## <a name="see-also"></a>参照  
+ [方法: 従来の言語サービスで非表示テキストのサポートを提供する](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
  [方法: 従来の言語サービスでのアウトラインの拡張サポートの提供](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

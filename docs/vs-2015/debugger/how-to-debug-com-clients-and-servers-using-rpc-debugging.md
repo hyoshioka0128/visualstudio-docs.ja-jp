@@ -1,5 +1,5 @@
 ---
-title: '方法: COM クライアントおよびサーバーの RPC デバッグを使用したデバッグ |Microsoft Docs'
+title: '方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,13 +27,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384033"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842285"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法 : RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 リモート プロシージャ コール (RPC: Remote Procedure Call) デバッグを使用して、COM クライアント/サーバー アプリケーションをデバッグできます。 このデバッグを行うには、あらかじめ RPC デバッグを有効にする必要があります。 RPC デバッグを有効にすると、ステップ実行でクライアントからサーバーを呼び出すときに、デバッガーがサーバーにアタッチし、コードのデバッグができるようになります。 デバッガーをアタッチすることにより、クライアントおよびサーバーのどちらのプロセスでも、デバッガーのすべての機能を使用できます。  
@@ -54,6 +54,6 @@ ms.locfileid: "63384033"
     > [!NOTE]
     > Microsoft Windows Vista が実行されているリモート サーバーへの RPC ステップ実行は、そのリモート サーバーにネイティブ デバッガーがアタッチされている場合のみ機能します。 それ以外の場合、エラー メッセージが表示されることなく RPC 呼び出しが失敗します。 何らかの方法で RPC 呼び出しに成功したとしても、RPC 呼び出しへのステップ インは正常に機能しません。  
   
-## <a name="see-also"></a>関連項目  
- [COM サーバーおよび COM コンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)   
+## <a name="see-also"></a>参照  
+ [COM サーバーとコンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

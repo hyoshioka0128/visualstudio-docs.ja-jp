@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars |Microsoft Docs
+title: 'IDebugProperty3:: GetStringChars |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419885"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842024"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このプロパティに関連付けられている文字列を取得し、ユーザーが指定したバッファーに格納します。  
+このプロパティに関連付けられている文字列を取得し、ユーザー指定のバッファーに格納します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,24 +44,24 @@ int GetStringChars(
   
 #### <a name="parameters"></a>パラメーター  
  `buflen`  
- [in]ユーザーが指定したバッファーが保持できる最大文字数。  
+ からユーザー指定のバッファーが保持できる最大文字数。  
   
  `rgString`  
- [out]文字列を返します。  
+ 入出力文字列を返します。  
   
- [C++のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。  
+ [C++ のみ]、 `rgString` は、文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーのサイズは、少なくともバイトではなく文字である必要があり `buflen` ます。  
   
  `pceltFetched`  
- [out]実際には、バッファーに格納されている文字数が返されます。 (できます`NULL`c++)。  
+ 入出力バッファーに実際に格納されている文字数が返されます。 ( `NULL` C++ でもかまいません)。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。  
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- C++ では、注意が必要、バッファーが少なくともがあることを保証する`buflen`文字の Unicode 文字。 Unicode 文字は 2 バイト長であることに注意してください。  
+## <a name="remarks"></a>注釈  
+ C++ では、バッファーの長さが Unicode 文字以上であることを保証するために注意する必要があり `buflen` ます。 Unicode 文字は2バイト長であることに注意してください。  
   
 > [!NOTE]
-> C++ では、返される文字列に終端の null 文字は含まれません。 与えられた場合、`pceltFetched`文字列の文字数を指定します。  
+> C++ では、返される文字列に終端の null 文字は含まれません。 指定されている場合、 `pceltFetched` は文字列の文字数を指定します。  
   
 ## <a name="example"></a>例  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  
@@ -88,7 +88,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
   
 <!-- TODO: review snippet reference  [!CODE [}](})]  -->  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

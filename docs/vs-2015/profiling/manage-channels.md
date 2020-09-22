@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443723"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842328"
 ---
 # <a name="manage-channels"></a>チャネルの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "63443723"
 ## <a name="sort-by"></a>並べ替え  
  [並べ替え] コントロールを使用して、現在のズーム レベルに基づいて、異なる基準でスレッドを並べ替えることができます。 これは、特定のパターンを探しているときに特に便利です。 次のような条件で並べ替えることができます。  
   
-|抽出条件|定義|  
+|条件|定義|  
 |--------------|----------------|  
-|開始時間|開始時刻でスレッドを並べ替えます。 これが既定の並べ替え順序です。|  
+|Start Time|開始時刻でスレッドを並べ替えます。 これが既定の並べ替え順序です。|  
 |終了時刻|終了時刻でスレッドを並べ替えます。|  
 |実行|実行に費やした時間の割合でスレッドを並べ替えます。|  
-|同期|同期に費やした時間の割合でスレッドを並べ替えます。|  
-|入出力|入出力 (データの読み取りと書き込み) に費やした時間の割合でスレッドを並べ替えます。|  
+|Synchronization|同期に費やした時間の割合でスレッドを並べ替えます。|  
+|I/O|入出力 (データの読み取りと書き込み) に費やした時間の割合でスレッドを並べ替えます。|  
 |Sleep|スリープに費やした時間の割合でスレッドを並べ替えます。|  
-|ページング|ページングに費やした時間の割合でスレッドを並べ替えます。|  
+|Paging|ページングに費やした時間の割合でスレッドを並べ替えます。|  
 |優先|優先処理に費やした時間の割合でスレッドを並べ替えます。|  
 |UI 処理|ユーザー インターフェイス処理に費やした時間の割合でスレッドを並べ替えます。|  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63443723"
 ## <a name="group-markers-by-thread"></a>スレッド別にマーカーをグループ化  
  トレースにマーカー イベントが含まれている場合は、このコマンドを使用して、それらのマーカー イベントを生成したスレッドの下にマーカーのチャネルをグループ化することができます。  ディスクのチャネルはチャネルの一覧の先頭に移動し、GPU チャネルは、一番下に移動します。  
   
-## <a name="see-also"></a>関連項目  
- [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)   
- [測定モード オン/オフ](../profiling/measure-mode-on-off.md)   
+## <a name="see-also"></a>参照  
+ [ズームコントロール (スレッドビュー)](../profiling/zoom-control-threads-view.md)   
+ [測定モードのオン/オフ](../profiling/measure-mode-on-off.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

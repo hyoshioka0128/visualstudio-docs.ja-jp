@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443503"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842136"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
+# <a name="cv_hreg_e"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ターゲットのレジスタを指定します。  
+ターゲットレジスタを指定します。  
   
 > [!NOTE]
-> `CV_HREG_e`列挙体が大きすぎて全体は、ここで、複製に、簡易バージョンが参照として提供されます。 存在しないエントリが斜体で記号を付けます。 完全な列挙型は cvconst.h ヘッダー ファイルで使用できます。  
+> `CV_HREG_e`列挙体が大きすぎて完全には複製できないため、省略されたバージョンが参照として提供されます。 欠落しているエントリは、斜体で区切っています。 完全な列挙体は、cvconst .h ヘッダーファイルで使用できます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum CV_HREG_e {   
@@ -411,42 +411,42 @@ enum CV_HREG_e { 
 } CV_HREG_e;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  CV_REG_*  
- 登録して、Intel 80x86 および ix86 プロセッサを p コードを使用します。  
+ Intel 80x86 および ix86 プロセッサによって使用されるレジスタと、p コード。  
   
  CV_R68_*  
- 68 K プロセッサによって使用されるレジスタ。  
+ 68K processor によって使用されるレジスタです。  
   
  CV_M4_ *  
- MIPS 4000 シリーズのプロセッサで使用される登録します。  
+ MIPS 4000 シリーズプロセッサによって使用されるレジスタ。  
   
  CV_ALPHA_*  
- Digital Equipment Corporation Alpha AXP シリーズのプロセッサで使用される登録します。  
+ デジタル機器 Corporation Alpha シリーズプロセッサによって使用されるレジスタ。  
   
  CV_PPC_*  
- 登録/IBM Motorola PowerPC プロセッサで使用します。  
+ Motorola/IBM PowerPC プロセッサによって使用されるレジスタ。  
   
  CV_SH3_ * と CV_SH_\*  
- 日立 SH3 と日立 SH シリーズのプロセッサで使用される登録します。  
+ Hitachi SH3 と Hitachi SH シリーズのプロセッサによって使用されるレジスタ。  
   
  CV_ARM_*  
- Advanced RISC Machine (ARM) プロセッサが使用を登録します。  
+ Advanced RISC Machine (ARM) プロセッサによって使用されるレジスタ。  
   
  CV_IA64_*  
- Intel の IA64 シリーズのプロセッサで使用される登録します。  
+ Intel IA64 シリーズプロセッサによって使用されるレジスタ。  
   
  CV_TRI_*  
- Infineon テクノロジ TriCore プロセッサによって使用されるレジスタ。  
+ Infineon Technologies TriCore processor によって使用されるレジスタ。  
   
  CV_AM33_*  
- レジスタは松下/Panasonic AM33 によって使用され、プロセッサに関連します。  
+ Matsushita/Panasonic AM33 と関連プロセッサによって使用されるレジスタ。  
   
  CV_M32R_*  
- 三菱 M32R プロセッサによって使用されるレジスタ。  
+ 三菱 M32R processor によって使用されるレジスタ。  
   
-## <a name="remarks"></a>Remarks  
- 各プロセッサの種類は、独自のレジスタのセットを使用します。  
+## <a name="remarks"></a>注釈  
+ 各プロセッサの種類は、独自の一意のレジスタセットを使用します。  
   
  この列挙体の値は、次のメソッドに渡されます。  
   
@@ -461,12 +461,12 @@ enum CV_HREG_e { 
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
   
 ## <a name="requirements"></a>要件:  
- ヘッダー: cvconst.h  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
+ [IDiaStackWalkFrame:: get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkHelper:: get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
+ [IDiaStackWalkHelper::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

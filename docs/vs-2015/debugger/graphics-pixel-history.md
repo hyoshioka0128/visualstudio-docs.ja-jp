@@ -1,5 +1,5 @@
 ---
-title: グラフィックス ピクセル履歴 |Microsoft Docs
+title: グラフィックス ピクセル履歴 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420084"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842221"
 ---
 # <a name="graphics-pixel-history"></a>グラフィックス ピクセル履歴
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
   
  [ピクセル履歴] ウィンドウを次に示します。  
   
- ![その履歴に次の 3 つの Direct3D イベントがあるピクセル。](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![その履歴に 3 つの Direct3D イベントがあるピクセル。](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>[ピクセル履歴] ウィンドウについて  
  [ピクセル履歴] を使用すると、レンダー ターゲットの特定のピクセルが、特定のフレームの処理で Direct3D イベントの影響をどのように受けたかを分析できます。 ピクセルの最終的なカラー値が、後続のイベントまたは同じイベント内の後続のプリミティブによって変更された場合でも、レンダリングに関する問題の発生元である Direct3D イベントを正確に特定できます。 たとえば、ピクセルが正しくレンダリングされず、その色がフレームバッファー内で別の半透明ピクセルの色と混ざり合うことによって、あいまいになる場合があります。 レンダー ターゲットの最終的な内容だけを手がかりに、このような問題を診断することは困難です。  
   
- [ピクセル履歴] ウィンドウには、選択したフレームの処理におけるピクセルの完全な履歴が表示されます。 ウィンドウの上部にある **[最終フレーム バッファー]** には、フレームの最後でフレーム バッファーに書き込まれた色だけでなく、レンダリング元のフレームや画面座標など、ピクセルに関する追加情報が表示されます。 この領域には、**[アルファの描画]** チェック ボックスも含まれています。 このチェック ボックスがオンになっている場合、**[最終フレーム バッファー]** の色と中間のカラー値が、チェッカー ボード パターンを使用して透明に表示されます。 このチェック ボックスがオフの場合、カラー値のアルファ チャネルは無視されます。  
+ [ピクセル履歴] ウィンドウには、選択したフレームの処理におけるピクセルの完全な履歴が表示されます。 ウィンドウの上部にある **[最終フレーム バッファー]** には、フレームの最後でフレーム バッファーに書き込まれた色だけでなく、レンダリング元のフレームや画面座標など、ピクセルに関する追加情報が表示されます。 この領域には、 **[アルファの描画]** チェック ボックスも含まれています。 このチェック ボックスがオンになっている場合、 **[最終フレーム バッファー]** の色と中間のカラー値が、チェッカー ボード パターンを使用して透明に表示されます。 このチェック ボックスがオフの場合、カラー値のアルファ チャネルは無視されます。  
   
  ウィンドウの下部には、ピクセルの色に影響を与える可能性があったイベントと、フレーム バッファー内のピクセルの初期カラー値と最終カラー値を表す **[初期]** および **[最終]** 擬似イベントが表示されます。 初期カラー値は、ピクセルの色を変更した最初のイベントによって決定されます (通常は `Clear` イベント)。 ピクセル履歴には、他のイベントがそのピクセルに影響を与えなかった場合でも、これら 2 つの擬似イベントが常に含まれます。 他のイベントがピクセルに影響を与える可能性があった場合、それらは **[初期]** イベントと **[最終]** イベントの間に表示されます。 イベントを展開すると、それらの詳細を表示できます。 レンダー ターゲットをクリアするイベントなど、単純なイベントが影響を与えるのはカラー値だけです。 描画呼び出しなどのより複雑なイベントは、ピクセルの色に影響を与える可能性がある、1 つ以上のプリミティブを生成します。  
   
@@ -38,14 +38,14 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
   
  各プリミティブを展開すると、ピクセル シェーダーの出力が、どのように既存のピクセルの色にマージされ、結果の色が作成されたかを調べることができます。 ここでは、プリミティブに関連付けられているピクセル シェーダーのコードを確認またはデバッグしたり、頂点シェーダー ノードをさらに展開して、頂点シェーダーの入力を確認したりすることもできます。  
   
-### <a name="exclusion"></a>プリミティブの除外  
+### <a name="primitive-exclusion"></a><a name="exclusion"></a>プリミティブの除外  
  プリミティブがピクセルの色に影響を与えるプリミティブから除外される場合、その除外の理由はさまざまです。 それぞれの理由は、次の表に記載されているアイコンで表されます。  
   
 |アイコン|除外の理由|  
 |----------|--------------------------|  
-|![深度テスト エラーのアイコン。](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|ピクセルは深度テストに失敗したため除外されました。|  
-|![ハサミ テスト エラーのアイコン。](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|ピクセルはハサミ テストに失敗したため除外されました。|  
-|![ステンシル テスト エラーのアイコン。](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|ピクセルはステンシル テストに失敗したため除外されました。|  
+|![深度テスト エラー アイコン。](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|ピクセルは深度テストに失敗したため除外されました。|  
+|![ハサミ テスト エラー アイコン。](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|ピクセルはハサミ テストに失敗したため除外されました。|  
+|![ステンシル テスト エラー アイコン。](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|ピクセルはステンシル テストに失敗したため除外されました。|  
   
 ### <a name="draw-call-exclusion"></a>描画呼び出しの除外  
  描画呼び出し内のすべてのプリミティブが、テストに失敗したことが原因で、レンダー ターゲットに影響を与えるプリミティブから除外された場合、その描画呼び出しは展開できず、除外の理由に対応するアイコンが、描画呼び出しの横に表示されます。 描画呼び出しの除外の理由は、プリミティブの除外の理由と似ており、そのアイコンも似ています。  
@@ -77,6 +77,6 @@ Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは�
 ### <a name="links-to-graphics-objects"></a>グラフィックス オブジェクトへのリンク  
  ピクセル履歴のグラフィック イベントについて理解するために、イベントの発生時点におけるデバイスの状態や、そのイベントで参照されている Direct3D オブジェクトに関する情報が必要になる場合があります。 **[グラフィックス ピクセル履歴]** では、ピクセル履歴内のイベントごとに、その時点のデバイスの状態と関連オブジェクトへのリンクが提供されます。  
   
-## <a name="see-also"></a>関連項目  
- [チュートリアル: デバイス状態によるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
+## <a name="see-also"></a>参照  
+ [チュートリアル: デバイスの状態によるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
  [チュートリアル: 網かけによるレンダリング エラーのデバッグ](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

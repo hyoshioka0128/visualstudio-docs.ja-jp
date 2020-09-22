@@ -10,33 +10,33 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431604"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841945"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>パフォーマンス ツールに関する問題のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロファイリング ツールを使用するときに、次の問題のいずれかが発生する場合があります。  
   
-- [プロファイリング ツールでデータが収集されない](#NoDataCollected)  
+- [プロファイルツールによって収集されるデータはありません](#NoDataCollected)  
   
-- [パフォーマンス ビューとレポートに関数名ではなく番号が表示される](#NoSymbols)  
+- [パフォーマンスビューとレポートに関数名の数値が表示される](#NoSymbols)  
   
-## <a name="NoDataCollected"></a> プロファイリング ツールでデータが収集されない  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a><a name="NoDataCollected"></a> プロファイルツールによって収集されるデータはありません  
  アプリケーションのプロファイリングを実行しても、プロファイリング データ (.vsp) ファイルが作成されず、出力ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。  
   
- PRF0025:データは収集されませんでした。  
+ PRF0025: データは収集されませんでした。  
   
  この問題は、次の複数の問題が原因で発生することがあります。  
   
 - サンプリングまたは .NET メモリ メソッドを使用してプロファイリングしたプロセスによって、子プロセスが起動されます。この子プロセスは、アプリケーションの作業を実行するプロセスになります。 たとえば、一部のアプリケーションでは、コマンド ラインを読み取り、Windows アプリケーションまたはコマンド ライン アプリケーションのどちらとして起動したかを決定します。 Windows アプリケーションが要求された場合、元のプロセスは Windows アプリケーションとして構成された新しいプロセスを起動し、元のプロセスは終了します。 プロファイリング ツールは子プロセスのデータを自動的に収集しないため、データは収集されません。  
   
-     この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、「[方法 :アタッチし、デタッチの実行中のプロセスのパフォーマンス ツール](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)と[Attach (VSPerfCmd)](../profiling/attach.md)  
+     この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、「[方法: 実行中のプロセスにパフォーマンスツールをアタッチおよびデタッチする](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) [(VSPerfCmd)](../profiling/attach.md) 」を参照してください。  
   
-## <a name="NoSymbols"></a>パフォーマンス ビューとレポートに関数名ではなく番号が表示される  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a><a name="NoSymbols"></a> パフォーマンスビューとレポートに関数名の数値が表示される  
  アプリケーションのプロファイリング後、レポートとビューに関数名ではなく番号が表示されます。  
   
  この問題の原因は、ソース コード情報 (関数名や行番号) をコンパイル済みのファイルにマップするシンボル情報を含む .pdb ファイルが、プロファイリング ツールの解析エンジンによって見つけられなかったことです。 既定では、アプリケーション ファイルのビルド時に、コンパイラによって .pdb ファイルが作成されます。 .pdb ファイルのローカル ディレクトリへの参照は、コンパイル済みのアプリケーションに格納されます。 解析エンジンは、参照されるディレクトリで .pdb ファイルを探し、次にアプリケーション ファイルを現在含んでいるファイルを検索します。 .pdb ファイルが見つからない場合、解析エンジンは関数名ではなく関数のオフセットを使用します。  

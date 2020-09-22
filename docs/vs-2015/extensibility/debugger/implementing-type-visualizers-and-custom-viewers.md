@@ -1,5 +1,5 @@
 ---
-title: 型のビジュアライザーおよびカスタム ビューアーを実装する |Microsoft Docs
+title: 型ビジュアライザーとカスタムビューアーの実装 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,30 +12,30 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430221"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842267"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>型のビジュアライザーおよびカスタム ビューアーの実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- 型のビジュアライザーおよびカスタム ビューアーは、数値の単純な 16 進ダンプよりもわかりやすい方法で特定の種類のデータを表示するユーザーを許可します。 式エバリュエーター (EE) は、カスタム ビューアーを特定の種類のデータまたは変数に関連付けることができます。 これらのカスタム ビューアーは、EE によって実装されます。 EE は、外部型のビジュアライザーは、別のサードパーティ ベンダーまたはでもエンドユーザーからもサポートできます。  
+ 型ビジュアライザーおよびカスタムビューアーを使用すると、数値の単純な16進数ダンプよりも意味のある方法で、特定の種類のデータを表示できます。 式エバリュエーター (EE) では、カスタムビューアーを特定の種類のデータまたは変数に関連付けることができます。 これらのカスタムビューアーは、EE によって実装されます。 EE は外部型ビジュアライザーもサポートしていますが、これは別のサードパーティベンダーまたはエンドユーザーからのものである可能性があります。  
   
-## <a name="discussion"></a>説明  
+## <a name="discussion"></a>考察 (Discussion)  
   
-### <a name="type-visualizers"></a>型のビジュアライザー  
- Visual Studio では、ウォッチ ウィンドウに表示するには、型のビジュアライザーおよびカスタム ビューアーのすべてのオブジェクトの一覧を要求します。 式エバリュエーター (EE) は、このような型のビジュアライザーおよびカスタム ビューアーをサポートするか、すべての種類の一覧を提供します。 呼び出す[GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)と[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)型のビジュアライザーおよびカスタム ビューアーにアクセスするプロセス全体を開始 (を参照してください[視覚化してデータの表示](../../extensibility/debugger/visualizing-and-viewing-data.md)詳細については、呼び出し元のシーケンスで)。  
+### <a name="type-visualizers"></a>型ビジュアライザー  
+ Visual Studio では、ウォッチウィンドウに表示されるすべてのオブジェクトについて、型ビジュアライザーとカスタムビューアーの一覧が要求されます。 式エバリュエーター (EE) は、型ビジュアライザーおよびカスタムビューアーをサポートするために必要なすべての型のリストを提供します。 [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)と[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)を呼び出すと、型ビジュアライザーとカスタムビューアーにアクセスするプロセス全体が開始されます (「呼び出し元のシーケンスの詳細については、「[データの視覚化と表示](../../extensibility/debugger/visualizing-and-viewing-data.md)」を参照してください)。  
   
-### <a name="custom-viewers"></a>カスタム ビューアー  
- カスタム ビューアーは特定のデータ型の EE で実装され、によって表されるが、 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)インターフェイス。 カスタム ビューアーはその特定のカスタム ビューアーを実装する EE を実行する場合にのみが利用できないために、型のビジュアライザーとしての柔軟性はありません。 カスタム ビューアーの実装は、型のビジュアライザーのサポートを実装するよりも簡単です。 ただし、型のビジュアライザーをサポートしているうえで最大限の柔軟性をユーザーが自分のデータを視覚化します。 この説明の残りの部分では、型のビジュアライザーのみに関するものです。  
+### <a name="custom-viewers"></a>カスタムビューアー  
+ カスタムビューアーは、特定のデータ型に対して EE で実装され、 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) インターフェイスによって表されます。 カスタムビューアーは、その特定のカスタムビューアーを実装する EE が実行されている場合にのみ使用できるため、型ビジュアライザーほど柔軟ではありません。 カスタムビューアーの実装は、型ビジュアライザーのサポートを実装するよりも簡単です。 ただし、型ビジュアライザーをサポートすると、エンドユーザーがデータを視覚化するための柔軟性が最大限に高まります。 この説明の残りの部分では、型ビジュアライザーのみを考慮します。  
   
 ## <a name="interfaces"></a>インターフェイス  
- EE は、Visual Studio で使用される、型のビジュアライザーをサポートするために、次のインターフェイスを実装します。  
+ EE は、Visual Studio で使用される型ビジュアライザーをサポートするために、次のインターフェイスを実装します。  
   
 - [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
@@ -49,7 +49,7 @@ ms.locfileid: "63430221"
   
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-  EE では、型のビジュアライザーをサポートするために、次のインターフェイスは使用します。  
+  EE は、型ビジュアライザーをサポートするために次のインターフェイスを使用します。  
   
 - [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
@@ -57,7 +57,7 @@ ms.locfileid: "63430221"
   
 - [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
-## <a name="see-also"></a>関連項目  
- [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [視覚化とデータを表示します。](../../extensibility/debugger/visualizing-and-viewing-data.md)   
+## <a name="see-also"></a>参照  
+ [CLR 式エバリュエーターの記述](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [データの視覚化と表示](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

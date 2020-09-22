@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_virtualaddress |Microsoft Docs
+title: 'IDiaSymbol:: get_virtualAddress |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6b7b1be1529374dbf4277ba75ca7b92267ef5d6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858013"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842164"
 ---
-# <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
+# <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-場所の仮想アドレス (VA) を取得します。 使用する場合、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)に設定されている`LocIsStatic`します。  
+場所の仮想アドレス (VA) を取得します。 [LocationType 列挙](../../debugger/debug-interface-access/locationtype.md)がに設定されている場合は、を使用し `LocIsStatic` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,14 +35,14 @@ HRESULT get_virtualAddress ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]場所の仮想アドレスを返します。  
+ 入出力場所の仮想アドレスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)

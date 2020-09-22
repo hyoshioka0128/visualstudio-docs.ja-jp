@@ -1,5 +1,5 @@
 ---
-title: ClickOnce の更新方法の選択 |Microsoft Docs
+title: ClickOnce の更新方法を選択する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442334"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842309"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce の更新方法の選択
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442334"
 > アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。  
   
 > [!NOTE]
-> .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または <xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 `deploymentProvider` 要素は、Visual Studio の **[発行]** タブの **[更新]** ダイアログ ボックスにある **[更新の場所]** に対応します。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)します。  
+> .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または <xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 要素は、 `deploymentProvider` Visual Studio の [**発行**] タブの [**更新プログラム**] ダイアログボックスの [**更新の場所**] フィールドに対応しています。このルールは .NET Framework 3.5 では緩和されています。 詳細については、「 [テストサーバーおよび運用サーバー用の ClickOnce アプリケーションの配置](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)」を参照してください。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>アプリケーション起動後の更新プログラムのチェック  
  この方法を使用した場合、アプリケーションは、実行中にバックグラウンドで配置マニフェスト ファイルの検索と読み取りを試みます。 更新が利用可能な場合は、ユーザーが次回アプリケーションを実行したときに、更新プログラムをダウンロードしてインストールするかどうかを確認するプロンプトが表示されます。  
@@ -117,12 +117,12 @@ ms.locfileid: "63442334"
 ## <a name="permission-elevation-and-updates"></a>アクセス許可の昇格と更新  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの新しいバージョンが、実行の際に以前のバージョンよりも高い信頼レベルを必要とする場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] はユーザーに対し、この高い信頼レベルをアプリケーションに付与するかどうかを確認します。 ユーザーが高い信頼レベルの付与を拒否した場合、更新プログラムはインストールされません。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] で、次回の起動時にアプリケーションを再インストールするように求めるメッセージが表示されます。 その時点でユーザーがより高い信頼レベルの付与を拒否し、更新が必須とマークされていない場合は、アプリケーションの古いバージョンが実行されます。 ただし、更新が必須である場合は、ユーザーがより高い信頼レベルを受け入れるまで、アプリケーションは実行されません。  
   
- 信頼されたアプリケーションの配置を使用する場合は、信頼レベルの要求が行われません。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
+ 信頼されたアプリケーションの配置を使用する場合は、信頼レベルの要求が行われません。 詳細については、「 [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:System.Deployment.Application>   
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)   
- [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
- [ClickOnce がアプリケーションの更新プログラムを実行する方法](../deployment/how-clickonce-performs-application-updates.md)   
+ [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)   
+ [ClickOnce でアプリケーションの更新を実行する方法](../deployment/how-clickonce-performs-application-updates.md)   
  [方法: ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

@@ -1,21 +1,21 @@
 ---
-title: プロジェクトの Python インタープリターと環境を選択する
+title: プロジェクトの Python 環境を選択する
 description: Anaconda や仮想環境を含む Python 環境を具体的に選択して、特定のプロジェクトに適用することができます。
 ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11808eeabee4d45d1d3d3b1b5cd5d6636249e7cb
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 46b0a8005ea76445a1d6205c8635963dbaedd0d4
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801205"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90097035"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>プロジェクトの Python 環境を選択する方法
 

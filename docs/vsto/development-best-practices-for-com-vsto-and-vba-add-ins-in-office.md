@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801504"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808208"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office での COM、VSTO、および VBA アドインの開発に関するベストプラクティス
   Office 用の COM、VSTO、または VBA アドインを開発している場合は、この記事で説明されている開発のベストプラクティスに従ってください。   これにより、次のメリットが得られます。
@@ -31,7 +31,7 @@ ms.locfileid: "88801504"
  アドインのインストールプロセス中に Office がインストールされているかどうかをアドインで検出することはお勧めしません。 Office がインストールされていない場合は、アドインをインストールできます。これにより、Office のインストール後にユーザーがアクセスできるようになります。
 
 ## <a name="use-embedded-interop-types-nopia"></a>埋め込み相互運用機能型を使用する (NoPIA)
-ソリューションで .NET 4.0 以降を使用している場合は、Office プライマリ相互運用機能アセンブリ (PIA) の再頒布可能パッケージに依存するのではなく、埋め込まれた相互運用機能型 (NoPIA) を使用します。 型の埋め込みを使用すると、ソリューションのインストールサイズが削減され、将来の互換性が確保されます。 Office 2010 は、PIA 再頒布可能パッケージに同梱されていた Office の最後のバージョンです。 詳細については、「 [チュートリアル: Microsoft Office アセンブリからの型情報の埋め](https://msdn.microsoft.com/library/ee317478.aspx) 込み」と「 [型の等価性と埋め込み相互運用機能型](/windows/uwp/porting/desktop-to-uwp-root)」を参照してください。
+ソリューションで .NET 4.0 以降を使用している場合は、Office プライマリ相互運用機能アセンブリ (PIA) の再頒布可能パッケージに依存するのではなく、埋め込まれた相互運用機能型 (NoPIA) を使用します。 型の埋め込みを使用すると、ソリューションのインストールサイズが削減され、将来の互換性が確保されます。 Office 2010 は、PIA 再頒布可能パッケージに同梱されていた Office の最後のバージョンです。 詳細については、「 [チュートリアル: Microsoft Office アセンブリからの型情報の埋め](/previous-versions/ee317478(v=vs.140)) 込み」と「 [型の等価性と埋め込み相互運用機能型](/windows/uwp/porting/desktop-to-uwp-root)」を参照してください。
 
 ソリューションで以前のバージョンの .NET を使用している場合は、.NET 4.0 以降を使用するようにソリューションを更新することをお勧めします。 .NET 4.0 以降を使用すると、新しいバージョンの Windows で実行時の前提条件を減らすことができます。
 

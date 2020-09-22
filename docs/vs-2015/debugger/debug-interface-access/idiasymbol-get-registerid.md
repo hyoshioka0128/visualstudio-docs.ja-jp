@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 580637cf1058c8bfbd10ac7812e59c802830d95e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817423"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841976"
 ---
-# <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
+# <a name="idiasymbolget_registerid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-場所のレジスタの指定子を取得するときに、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)に設定されている`LocIsEnregistered`します。  
+[LocationType 列挙](../../debugger/debug-interface-access/locationtype.md)がに設定されている場合の、場所のレジスタ指定子を取得し `LocIsEnregistered` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,17 +35,17 @@ HRESULT get_registerId ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]場所のレジスタの指定子を返します。  
+ 入出力場所のレジスタ指定子を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- 記号がつまりがレジスタを基準とした場合、場合、シンボルの[LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)に設定されている`LocIsRegRel`を使用して、`get_registerId`メソッドへの呼び出しに続けて、 [idiasymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)記号が配置されているレジスタからのオフセットを取得するメソッド。  
+## <a name="remarks"></a>注釈  
+ シンボルがレジスタに対して相対的な場合、つまり、シンボルの [LocationType 列挙](../../debugger/debug-interface-access/locationtype.md) がに設定されている場合は、メソッドを使用し、 `LocIsRegRel` `get_registerId` その後に [IDiaSymbol:: get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) メソッドを呼び出して、シンボルが配置されているレジスタからのオフセットを取得します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)

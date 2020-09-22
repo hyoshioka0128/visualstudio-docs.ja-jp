@@ -1,4 +1,4 @@
-﻿---
+---
 title: Microsoft Language Interface Pack (LIP) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432995"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841916"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Pack (LIP) および Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,5 +102,5 @@ Windows Language Interface Pack (LIP) を使用すると、1 つの言語バー�
 
    また、devenv コマンドを使用して、UI に使用される言語を設定することもできます。 詳細については、「[/lcid (devenv.exe)](../ide/reference/lcid-devenv-exe.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/international-settings-environment-options-dialog-box.md)

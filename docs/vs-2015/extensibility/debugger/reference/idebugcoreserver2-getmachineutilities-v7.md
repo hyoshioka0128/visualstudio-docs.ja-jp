@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | Microsoft Docs
+title: 'IDebugCoreServer2:: GetMachineUtilities_V7 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 131f5a5f276b3f93d2ede3d088556b6832cc3651
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445286"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842220"
 ---
-# <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
+# <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、サーバーのマシン ユーティリティを取得します。  
+このメソッドは、サーバーのマシンユーティリティを取得します。  
   
 > [!NOTE]
-> このメソッドは廃止されています。 使用しないでください ([!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]は常に返します`E_NOTIMPL`このメソッドが呼び出された場合)。 これは歴史的な理由から保持されます。  
+> このメソッドは互換性のために残されています。使用しないでください ( [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] `E_NOTIMPL` このメソッドが呼び出された場合は、常にを返します)。 この情報は、履歴上の理由で保持されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,13 +43,13 @@ int GetMachineUtilities_V7(
   
 #### <a name="parameters"></a>パラメーター  
  `ppUtil`  
- [out]返します、`IDebugMDMUtil2_V7`マシン ユーティリティの情報を表すインターフェイスです。  
+ 入出力 `IDebugMDMUtil2_V7` コンピューターユーティリティ情報を表すインターフェイスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 常に返します`E_NOTIMPL`メソッドが実装されていないことを示します。  
+ は常にを返し `E_NOTIMPL` ます。これは、メソッドが実装されていないことを示します。  
   
-## <a name="remarks"></a>Remarks  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 常に返します`E_NOTIMPL`場合、このメソッドが呼び出されます。  
+## <a name="remarks"></a>注釈  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]`E_NOTIMPL`このメソッドが呼び出された場合は、常にを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

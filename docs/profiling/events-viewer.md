@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330335"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075066"
 ---
 # <a name="events-viewer"></a>イベント ビューアー
 
@@ -22,7 +22,7 @@ ms.locfileid: "85330335"
 
 ## <a name="setup"></a>セットアップ
 
-1. **Alt + F2** キーを押して Visual Studio にパフォーマンス プロファイラーを開きます。
+1. **Alt + F2** キーを押して Visual Studio でパフォーマンス プロファイラーを開きます。
 
 1. **[イベント ビューアー]** チェック ボックスをオンにします。
 

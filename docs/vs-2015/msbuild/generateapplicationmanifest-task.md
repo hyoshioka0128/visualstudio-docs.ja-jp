@@ -1,4 +1,4 @@
-﻿---
+---
 title: GenerateApplicationManifest タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424131"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841957"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,23 +60,23 @@ ms.locfileid: "63424131"
 |`Publisher`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、[スタート] メニューに表示するフォルダー名として使用され、[プログラムの追加と削除] ダイアログ ボックスに表示される名前の一部としても使用されます。|  
 |`RequiresMinimumFramework35SP1`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、アプリケーションでは .NET Framework 3.5 SP1 またはそれ以降のバージョンが必要です。|  
 |`TargetCulture`|省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションのカルチャを示し、生成されるマニフェストのアセンブリ ID の `Language` フィールドを指定します。 このパラメーターを指定しなかった場合、アプリケーションは、カルチャに依存しないと仮定されます。|  
-|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> ターゲット フレームワーク モニカーを指定します。|  
-|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> ターゲット フレームワーク プロファイルを指定します。|  
-|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> 対象となる .NET Framework のサブセットの名前を指定します。|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> プロジェクトの対象の .NET Framework を指定します。|  
+|`TargetFrameworkMoniker`|オプション <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> %2!d! です。<br /><br /> ターゲット フレームワーク モニカーを指定します。|  
+|`TargetFrameworkProfile`|オプション <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> %2!d! です。<br /><br /> ターゲット フレームワーク プロファイルを指定します。|  
+|`TargetFrameworkSubset`|オプション <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> %2!d! です。<br /><br /> 対象となる .NET Framework のサブセットの名前を指定します。|  
+|`TargetFrameworkVersion`|オプション <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> %2!d! です。<br /><br /> プロジェクトの対象の .NET Framework を指定します。|  
 |`TrustInfoFile`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> アプリケーションのセキュリティを指定する XML ドキュメントを示します。 XML ドキュメントのルート要素は、asmv2 名前空間内の trustInfo ノードである必要があります。 タスクがネイティブ マニフェストを生成する場合には、このパラメーターは無視されます。|  
-|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> true の場合、`Product`、`Publisher`、および `SupportUrl` の各プロパティがアプリケーション マニフェストに書き込まれます。|  
+|`UseApplicationTrust`|オプション <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> %2!d! です。<br /><br /> true の場合、`Product`、`Publisher`、および `SupportUrl` の各プロパティがアプリケーション マニフェストに書き込まれます。|  
   
 ## <a name="remarks"></a>Remarks  
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、[「Task Base Class」](../msbuild/task-base-class.md) を参照してください。  
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.GenerateManifestBase> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 Task クラスのパラメーターの一覧については、「 [Task Base class](../msbuild/task-base-class.md)」を参照してください。  
   
- `GenerateDeploymentManifest` タスクの使用方法については、「[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)」を参照してください。  
+ タスクの使用方法の詳細については `GenerateDeploymentManifest` 、「 [Generateapplicationmanifest タスク](../msbuild/generateapplicationmanifest-task.md)」を参照してください。  
   
  各アイテムの配置状態に関するその他の情報を記述したアイテム メタデータを指定すると、依存関係やファイルについての情報をさらに詳細に入力することができます。  
   
 ## <a name="item-metadata"></a>アイテム メタデータ  
   
-|メタデータ名|説明|  
+|メタデータ名|Description|  
 |-------------------|-----------------|  
 |`DependencyType`|依存関係をアプリケーションと一緒に発行およびインストールするのか、依存関係があらかじめ必要であるのかを示します。 このメタデータは、すべての依存関係に対して有効ですが、ファイルには適用されません。 このメタデータで使用できる値は次のとおりです。<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> 既定値は Install です。|  
 |`AssemblyType`|依存関係が、マネージド アセンブリであるのかネイティブ アセンブリであるのかを示します。 このメタデータは、すべての依存関係に対して有効ですが、ファイルには適用されません。 このメタデータで使用できる値は次のとおりです。<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> 既定値は `Unspecified` です。この値は、このタスクで自動的にアセンブリの種類を判断することを意味します。|  
@@ -93,7 +93,7 @@ ms.locfileid: "63424131"
 > 次の例では、マニフェストの作成処理に着目するために、アプリケーションのバイナリはすべてビルド済みであると仮定してあります。 この例では、完全に実用的な [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置が作成されます。  
   
 > [!NOTE]
-> この例の `Thumbprint` タスクで使用されている `SignFile` プロパティの詳細については、「[SignFile タスク](../msbuild/signfile-task.md)」を参照してください。  
+> `Thumbprint`この例のタスクで使用されるプロパティの詳細につい `SignFile` ては、「 [signfile タスク](../msbuild/signfile-task.md)」を参照してください。  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -146,7 +146,7 @@ ms.locfileid: "63424131"
 > 次の例では、マニフェストの作成処理に着目するために、アプリケーションのバイナリはすべてビルド済みであると仮定してあります。 この例では、完全に実用的な [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置が作成されます。  
   
 > [!NOTE]
-> この例の `Thumbprint` タスクで使用されている `SignFile` プロパティの詳細については、「[SignFile タスク](../msbuild/signfile-task.md)」を参照してください。  
+> `Thumbprint`この例のタスクで使用されるプロパティの詳細につい `SignFile` ては、「 [signfile タスク](../msbuild/signfile-task.md)」を参照してください。  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -204,7 +204,7 @@ ms.locfileid: "63424131"
 > 次の例では、マニフェストの作成処理に着目するために、アプリケーションのバイナリはすべてビルド済みであると仮定してあります。 この例では、完全に実用的な [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置が作成されます。  
   
 > [!NOTE]
-> この例の `Thumbprint` タスクで使用されている `SignFile` プロパティの詳細については、「[SignFile タスク](../msbuild/signfile-task.md)」を参照してください。  
+> `Thumbprint`この例のタスクで使用されるプロパティの詳細につい `SignFile` ては、「 [signfile タスク](../msbuild/signfile-task.md)」を参照してください。  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -352,8 +352,8 @@ ms.locfileid: "63424131"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [タスク](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile タスク](../msbuild/signfile-task.md)   
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)

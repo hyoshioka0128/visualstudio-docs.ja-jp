@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_haseha |Microsoft Docs
+title: 'IDiaSymbol:: get_hasEHa |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87adaa2e43068784e5ec6488030f147891a027dd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817268"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841973"
 ---
-# <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
+# <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-関数が非同期 (構造化) 例外処理を含むかどうかを指定するフラグを取得します。  
+関数に非同期 (構造化) 例外処理が含まれているかどうかを指定するフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,23 +35,23 @@ HRESULT get_hasEHa(
   
 #### <a name="parameters"></a>パラメーター  
  `pFlag`  
- [out]返します`TRUE`場合は、関数は、非同期の例外処理では; を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` 関数に非同期例外処理がある場合はを、それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- 非同期または構造化例外が C++ スタイルの例外処理、処理を混在させることは、特定のコンパイラ スイッチを/EHa、有効にする必要しますが、あります。  
+## <a name="remarks"></a>注釈  
+ C++ スタイルの例外処理では、非同期または構造化された例外処理を混在させることができますが、これを有効にするには、特定のコンパイラスイッチ (/EHa) が必要です。  
   
-## <a name="requirements"></a>必要条件  
+## <a name="requirements"></a>要件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK バージョン 8.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015939"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739942"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)
   Visual Studio の SharePoint プロジェクト システムは、プロジェクト項目の種類を独自に作成することによって拡張することができます。 このチュートリアルでは、SharePoint プロジェクトに追加できるプロジェクト項目を作成します。これは SharePoint サイトにカスタム動作を作成するためのプロジェクト項目です。 カスタムアクションは、SharePoint サイトの [ **サイトの操作** ] メニューにメニュー項目を追加します。
@@ -295,7 +295,7 @@ ms.locfileid: "86015939"
 
 1. **ソリューションエクスプローラー**で、CustomActionProjectItem プロジェクトの**source.extension.vsixmanifest**ファイルのショートカットメニューを開き、[**開く**] を選択します。
 
-     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
+     Visual Studio によってマニフェスト エディターでファイルが開きます。 source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))」を参照してください。
 
 2. [ **Product Name** ] ボックスに、「 **Custom Action Project Item**」と入力します。
 
@@ -446,7 +446,7 @@ ms.locfileid: "86015939"
 
 5. Visual Studio の実験用インスタンスと、CustomActionProjectItem ソリューションが開いているインスタンスの両方を閉じます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了すると、項目テンプレートにウィザードを追加できるようになります。 ユーザーがカスタムアクションプロジェクト項目を SharePoint プロジェクトに追加すると、ウィザードによって、アクション (操作が選択されたときの移動先の場所や URL など) に関する情報が収集され、この情報が新しいプロジェクト項目の *Elements.xml* ファイルに追加されます。 詳細については、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 2)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目

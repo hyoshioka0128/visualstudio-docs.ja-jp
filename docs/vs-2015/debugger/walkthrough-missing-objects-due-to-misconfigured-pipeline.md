@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: シェーディングによるオブジェクトの不足 |Microsoft Docs'
+title: 'チュートリアル: パイプラインが正しく構成されていないためにオブジェクトが見つからないMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444279"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90842263"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>チュートリアル: パイプラインの構成が不適切なことによるオブジェクトの不足
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444279"
   
 2. **[フレーム一覧]** で、オブジェクトが表示されないことを示すフレームを選択します。 レンダー ターゲットが更新され、選択したフレームが反映されます。 このシナリオでは、グラフィックス ログのタブは次のように表示されます。  
   
-    ![Visual Studio のグラフィックス ログ ドキュメント](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
+    ![Visual Studio のグラフィックスログドキュメント](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
   
    問題を示しているフレームを選択したら、 **[グラフィックス イベント一覧]** を使ってそのフレームの診断を始めます。 **[グラフィックス イベント一覧]** には、アクティブなフレームをレンダリングするために実行されたすべての Direct3D API 呼び出しが含まれています。たとえば、デバイスの状態の設定、バッファーの作成と更新、フレームに表示するオブジェクトの描画などを行う呼び出しです。 Draw、Dispatch、Copy、Clear など、数多くの種類の呼び出しが関係しています。アプリが想定どおりに動作しているときは、それらの各呼び出しに対応する変化がレンダー ターゲットに表れることが多い (いつもとは限りません) からです。 Draw 呼び出しは、それぞれがアプリによってレンダリングされるジオメトリを表しているため、特に関心を向ける必要があります。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "63444279"
   
 4. 表示されないオブジェクトに対応する描画呼び出しに到達したら、停止します。 このシナリオで、 **[グラフィックス パイプライン ステージ]** ウィンドウは、ジオメトリが GPU に発行されたこと ( **[入力アセンブラー]** ステージが存在することによって示される)、そして変換されたこと ( **[頂点シェーダー]** ステージが存在することによって示される) を示していますが、アクティブなピクセル シェーダーが原因でオブジェクトがレンダー ターゲットに表示されないと考えられること ( **[ピクセル シェーダー]** ステージが存在しないことによって示される) も示しています。 このシナリオでは、さらに、表示されないオブジェクトのシルエットが **[出力マージャー]** ステージに表れています。  
   
-    ![DrawIndexed イベントと、パイプラインに与える影響](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![DrawIndexed イベントとパイプラインに対するその効果](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
    こうして、表示されないオブジェクトのジオメトリについてアプリが描画呼び出しを発行したことを確認し、ピクセル シェーダーのステージがアクティブでないことを検出できたので、次に、この発見を確認するためにデバイスの状態を調査することができます。 デバイス コンテキストやその他の Direct3D オブジェクト データを調べるには、 **[グラフィックス オブジェクト テーブル]** を利用できます。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "63444279"
   
 2. **[d3d11 デバイス コンテキスト]** タブに表示されているデバイス状態を調べて、描画呼び出し中にアクティブなピクセル シェーダーがなかったことを確認します。 このシナリオでは、 **[ピクセル シェーダーの状態]** の下に表示される **[シェーダーの一般情報]** に、そのシェーダーが **NULL**であることが示されます。  
   
-    ![D3d11 デバイス コンテキストは、ピクセル シェーダーの状態を示しています](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4。")  
+    ![D3D 11 デバイス コンテキストはピクセル シェーダーの状態を示します](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   
    ピクセル シェーダーがアプリによって null に設定されていることを確認した後は、次の手順として、アプリのソース コードでシェーダーが設定されている場所を探します。 **[グラフィックス イベント一覧]** を **[グラフィックス イベント呼び出し履歴]** と一緒に使うと、その場所を見つけることができます。  
   
@@ -100,8 +100,8 @@ ms.locfileid: "63444279"
   
    問題を修正するには、 `ID3D11DeviceContext::PSSetShader` API 呼び出しの最初のパラメーターを使って正しいピクセル シェーダーを割り当てます。  
   
-   ![修正された C&#43; &#43;ソース コード](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![修正された C&#43;&#43; ソースコード](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    コードを修正したら、アプリをリビルドし、アプリをもう一度実行してレンダリングの問題が解決されたことを確認します。  
   
-   ![オブジェクトが表示されるようになりました](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![オブジェクトが現在表示されています](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
