@@ -1,5 +1,6 @@
 ---
-title: ClickOnce アプリを手動でデプロイするブランド化を維持する
+title: ClickOnce アプリを手動でデプロイして、ブランドを維持 &
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263423"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809225"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>チュートリアル: 再署名が不要でブランド情報を保持する ClickOnce アプリケーションを手動で配置する
 アプリケーションを作成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] し、発行してデプロイするために顧客に提供する場合、従来はデプロイマニフェストを更新し、再署名する必要がありました。 ほとんどの場合、これは推奨される方法ですが、.NET Framework 3.5 では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 新しい配置マニフェストを再生成することなく、顧客がデプロイできるデプロイを作成することができます。 詳細については、「 [テストサーバーおよび運用サーバー用に ClickOnce アプリケーションを配置する](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)」を参照してください。
@@ -154,7 +155,7 @@ ms.locfileid: "66263423"
 
 22. 顧客は、アプリケーションをユーザーに展開します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [MakeCert](/windows/desktop/SecCrypto/makecert)

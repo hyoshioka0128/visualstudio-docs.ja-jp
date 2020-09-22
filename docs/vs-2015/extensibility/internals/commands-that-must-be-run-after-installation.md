@@ -1,5 +1,5 @@
 ---
-title: インストール後に実行する必要がありますコマンド |Microsoft Docs
+title: インストール後に実行する必要があるコマンド |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441527"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842141"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>インストール後に実行する必要があるコマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-実行する必要があります、.msi ファイルから拡張機能をデプロイする場合`devenv /setup`Visual Studio 拡張機能を検出するために、インストールの一部として。  
+.Msi ファイルを使用して拡張機能を展開する場合は、 `devenv /setup` Visual Studio で拡張機能を検出するために、インストールの一部としてを実行する必要があります。  
   
 > [!NOTE]
-> このトピックの情報は、Visual Studio 2008 以前のバージョンと DevEnv の検索に適用されます。 以降のバージョンの Visual Studio を DevEnv を検出する方法については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
+> このトピックの情報は、Visual Studio 2008 以前のバージョンで DevEnv を検索する場合に適用されます。 新しいバージョンの Visual Studio で DevEnv を検出する方法の詳細については、「 [システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)」を参照してください。  
   
-## <a name="finding-devenvexe"></a>Devenv.exe の検索  
- 各バージョンを見つけることができます値をレジストリから devenv.exe を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストーラーの書き込み、RegLocator テーブルおよび AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
+## <a name="finding-devenvexe"></a>検索 (devenv.exe を)  
+ インストーラーによって書き込まれたレジストリ値から各バージョンの devenv.exe を見つけることができ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 RegLocator テーブルと AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、「 [システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)」を参照してください。  
   
-### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator テーブルの行から異なるバージョンの Visual Studio の devenv.exe を検索するには  
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>さまざまなバージョンの Visual Studio から devenv.exe を検索するための RegLocator テーブル行  
   
-|Signature_|Root|キー|名前|型|  
+|Signature_|Root|キー|名前|Type|  
 |-----------------|----------|---------|----------|----------|  
-|RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
-|RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
-|RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|EnvironmentPath|2|  
-|RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|EnvironmentPath|2|  
+|RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|環境パス|2|  
+|RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|環境パス|2|  
+|RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|環境パス|2|  
+|RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|環境パス|2|  
   
-### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch RegLocator テーブルの行が対応するためのテーブルの行  
+### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch 対応する RegLocator テーブル行のテーブル行  
   
 |プロパティ|Signature_|  
 |--------------|-----------------|  
@@ -46,41 +46,41 @@ ms.locfileid: "63441527"
 |DEVENV_EXE_2005|RL_DevenvExe_2005|  
 |DEVENV_EXE_2008|RL_DevenvExe_2008|  
   
- たとえば、Visual Studio インストーラーがのレジストリ値を書き込む**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath**として**C:\VS2008\Common7\IDE\devenv.exe**、インストーラーを実行する必要があります、実行可能ファイルへの完全パス。  
+ たとえば、Visual Studio インストーラーは **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** のレジストリ値を **C:\VS2008\Common7\IDE\devenv.exe**として書き込みます。これはインストーラーが実行する必要のある実行可能ファイルへの完全なパスです。  
   
- **注**RegLocator 型の列が 2 であるためには、署名の表に、追加のバージョン情報を指定する必要はありません。  
+ **メモ** RegLocator Type 列は2であるため、署名テーブルで追加のバージョン情報を指定する必要はありません。  
   
-## <a name="running-devenvexe"></a>Devenv.exe を実行しています。  
- インストーラーで標準的なアクションを実行する AppSearch 後、は、AppSearch テーブル内の各プロパティは、対応するバージョンの Visual Studio の devenv.exe ファイルを指す値を持ちます。 指定されたレジストリ値のいずれかが存在しないかどうか、そのバージョンの Visual Studio がインストールされていないため-指定したプロパティを設定を null にします。  
+## <a name="running-devenvexe"></a>devenv.exe の実行  
+ AppSearch standard アクションがインストーラーで実行された後、AppSearch テーブル内の各プロパティには、対応するバージョンの Visual Studio の devenv.exe ファイルをポイントする値が含まれます。 指定したレジストリ値が存在しない場合は、そのバージョンの Visual Studio がインストールされていないため、指定したプロパティは null に設定されます。  
   
- カスタム アクションでプロパティをポイントする実行可能ファイルを実行している Windows インストーラーのサポートは、50 を入力します。 カスタム アクションに統合する前に、VSPackage が正常にインストールされていることを確認するには、スクリプトの実行オプション、msidbCustomActionTypeInScript (1024) および msidbCustomActionTypeCommit (512) を含める必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、CustomAction テーブルとカスタム アクション スクリプトの実行オプションを参照してください。  
+ Windows インストーラーは、カスタム動作の種類50を通じてプロパティが指す実行可能ファイルの実行をサポートしています。 カスタム動作には、に統合する前に VSPackage が正常にインストールされていることを確認するために、msidbCustomActionTypeInScript (1024) および msidbCustomActionTypeCommit (512) というスクリプト内実行オプションが含まれている必要があり [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 詳細については、「CustomAction Table」および「Custom Action In-Script Execution Options」を参照してください。  
   
- 50 種類のカスタム アクションは、ソース列と対象の列でコマンドライン引数の値として、実行可能ファイルを含むプロパティを指定します。  
+ 種類が50のカスタムアクションでは、実行可能ファイルを含むプロパティを、ターゲット列のソース列とコマンドライン引数の値として指定します。  
   
-### <a name="customaction-table-rows-to-run-devenvexe"></a>CustomAction テーブル行の devenv.exe を実行するには  
+### <a name="customaction-table-rows-to-run-devenvexe"></a>CustomAction を実行するテーブルの行の devenv.exe  
   
-|アクション|型|ソース|ターゲット|  
+|アクション|Type|source|移行先|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
 |CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
 |CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
- インストール中に実行をスケジュールして InstallExecuteSequence テーブルには、カスタム アクションを作成する必要があります。 カスタム動作をする場合に実行されるを防ぐために条件列の各列に対応するプロパティを使用してバージョンの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]システムがインストールされていません。  
+ インストール中に実行するようにスケジュールを設定するには、カスタムアクションを InstallExecuteSequence テーブルに作成する必要があります。 条件列の各行で対応するプロパティを使用して、そのバージョンのがシステムにインストールされていない場合にカスタムアクションが実行されないようにし [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
 > [!NOTE]
-> `Null` プロパティを評価する`False`条件で使用するとします。  
+> `Null` プロパティは、 `False` 条件で使用されるとに評価されます。  
   
- 各カスタム アクションのシーケンス列の値は、Windows インストーラー パッケージには、その他のシーケンス値によって異なります。 シーケンス値は、devenv.exe のカスタム アクションとして実行できるだけ近くに InstallFinalize の標準的な操作の前にすぐになるようになります。  
+ 各カスタムアクションのシーケンス列の値は、Windows インストーラーパッケージ内の他のシーケンス値によって異なります。 シーケンス値は、devenv.exe カスタムアクションが InstallFinalize 標準アクションの直前にできるだけ近い場所で実行されるようにする必要があります。  
   
-### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Devenv.exe のカスタム アクションをスケジュールする InstallExecuteSequence テーブル  
+### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>カスタムアクション devenv.exe をスケジュールするための InstallExecuteSequence テーブル  
   
-|アクション|条件|シーケンス|  
+|操作|条件|シーケンス|  
 |------------|---------------|--------------|  
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|  
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|  
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|  
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Windows インストーラーによる VSPackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

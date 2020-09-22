@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Windows フォームを使用してデータを収集します。'
+title: 'チュートリアル: Windows フォームを使用したデータの収集'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438588"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841516"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>チュートリアル: Windows フォームを使用してデータを収集します。
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>チュートリアル: Windows フォームを使用したデータの収集
   このチュートリアルでは、Microsoft Office Excel のドキュメント レベルのカスタマイズから Windows フォームを開き、ユーザーから情報を収集し、その情報をワークシートのセルに書き込む方法について説明します。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "63438588"
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. **WinFormInput**という名前で Excel ブック プロジェクトを作成し、ウィザードで **[新しいドキュメントの作成]** を選択します。 詳細については、次を参照してください。[方法: Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。
+1. **WinFormInput**という名前で Excel ブック プロジェクトを作成し、ウィザードで **[新しいドキュメントの作成]** を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      Visual Studio により新しい Excel ブックがデザイナーで開き、 **WinFormInput** プロジェクトが **ソリューション エクスプローラー**に追加されます。
 
-## <a name="add-a-namedrange-control-to-the-worksheet"></a>ワークシートに NamedRange コントロールを追加します。
+## <a name="add-a-namedrange-control-to-the-worksheet"></a>ワークシートに NamedRange コントロールを追加する
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>Sheet1 に名前付き範囲を追加するには
 
@@ -62,7 +62,7 @@ ms.locfileid: "63438588"
 
      <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールがセル **A1**に追加されます。 ワークシート上には表示されませんが、セル **A1** を選択すると、 **[名前]** ボックス (左側のワークシートの真上) および **[プロパティ]** ウィンドウに **formInput** と表示されます。
 
-## <a name="add-a-windows-form-to-the-project"></a>Windows フォームをプロジェクトに追加します。
+## <a name="add-a-windows-form-to-the-project"></a>Windows フォームをプロジェクトに追加する
  ユーザーに情報を要求するための Windows フォームを作成します。
 
 ### <a name="to-add-a-windows-form"></a>Windows フォームを追加するには
@@ -81,7 +81,7 @@ ms.locfileid: "63438588"
 
    次に、ユーザーの情報を収集するためのコードを `ThisWorkbook.vb` または `ThisWorkbook.cs` に追加します。
 
-## <a name="display-the-windows-form-and-collecting-information"></a>Windows フォームと収集情報を表示します。
+## <a name="display-the-windows-form-and-collecting-information"></a>Windows フォームを表示し、情報を収集する
  `GetInputString` Windows フォームのインスタンスを作成しそれを表示してから、ワークシート内のセルにユーザーの情報を書き込みます。
 
 #### <a name="to-display-the-form-and-collect-information"></a>フォームを表示し、情報を収集するには
@@ -91,7 +91,7 @@ ms.locfileid: "63438588"
 2. <xref:Microsoft.Office.Tools.Excel.Workbook.Open> の `ThisWorkbook`イベント ハンドラーで、次のコードを追加して、フォーム `GetInputString` の変数を宣言してから、フォームを表示します。
 
    > [!NOTE]
-   > C# では、次のようにイベント ハンドラーを <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> イベントに追加する必要があります。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+   > C# では、次のようにイベント ハンドラーを <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> イベントに追加する必要があります。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
@@ -103,7 +103,7 @@ ms.locfileid: "63438588"
 
    次に、ボタンのクリック イベントを処理するためのコードをフォームに追加します。
 
-## <a name="send-information-to-the-worksheet"></a>ワークシートに情報を送信します。
+## <a name="send-information-to-the-worksheet"></a>ワークシートに情報を送信する
 
 ### <a name="to-send-information-to-the-worksheet"></a>ワークシートに情報を送信するには
 
@@ -121,7 +121,7 @@ ms.locfileid: "63438588"
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
 2. Windows フォームが表示されることを確認します。
 
@@ -132,14 +132,14 @@ ms.locfileid: "63438588"
 ## <a name="next-steps"></a>次の手順
  このチュートリアルでは、Windows フォームを表示しワークシートにデータを渡すための基本操作を説明しました。 これ以外にも、次の操作が可能です。
 
-- Excel ブックまたは Word 文書で Windows フォーム コントロールを使用する。 詳細については、次を参照してください。 [Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)します。
+- Excel ブックまたは Word 文書で Windows フォーム コントロールを使用する。 詳細については、「 [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)」を参照してください。
 
-- ドキュメント レベルのカスタマイズまたは VSTO アドインから Microsoft Office アプリケーションのユーザー インターフェイスを変更します。 詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
+- ドキュメントレベルのカスタマイズまたは VSTO アドインから Microsoft Office アプリケーションのユーザーインターフェイスを変更します。 詳細については、「 [OFFICE UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
-- [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)
-- [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)
-- [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
+- [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)
+- [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
+- [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)

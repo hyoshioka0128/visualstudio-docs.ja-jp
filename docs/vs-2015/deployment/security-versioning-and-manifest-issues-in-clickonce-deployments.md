@@ -1,5 +1,5 @@
 ---
-title: セキュリティ、バージョン管理、および ClickOnce 配置マニフェストの問題 |Microsoft Docs
+title: ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -25,72 +25,72 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444992"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841628"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-さまざまな問題がある[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]セキュリティ、アプリケーションのバージョン管理とマニフェストの構文およびセマンティクスの原因となる、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開が失敗します。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]セキュリティ、アプリケーションのバージョン管理、マニフェストの構文とセマンティクスにはさまざまな問題があり、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] デプロイが成功しない可能性があります。  
   
-## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce と Windows Vista ユーザー アカウント制御  
- [!INCLUDE[windowsver](../includes/windowsver-md.md)]、場合でも、現在のユーザーが管理者のアクセス許可のあるアカウントでログインしているが標準ユーザーは、既定でアプリケーションを実行します。 アプリケーションでは、管理者のアクセス許可が必要なアクションを実行する必要がある場合は、ユーザーに管理者の資格情報の入力を求められますし、オペレーティング システムが通知されます。 この機能は、ユーザー アカウント制御 (UAC) の名前には、ユーザーの明示的な承認なくオペレーティング システム全体に影響する変更を行うアプリケーションができないようにします。 Windows アプリケーションは、指定することで、このアクセス許可の昇格を必要があることを宣言、`requestedExecutionLevel`属性、`trustInfo`アプリケーション マニフェストのセクション。  
+## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce と Windows Vista のユーザーアカウント制御  
+ では [!INCLUDE[windowsver](../includes/windowsver-md.md)] 、現在のユーザーが管理者のアクセス許可を持つアカウントでログインしている場合でも、既定では、アプリケーションは標準ユーザーとして実行されます。 アプリケーションで管理者のアクセス許可が必要なアクションを実行する必要がある場合は、オペレーティングシステムに対して、ユーザーに管理者の資格情報の入力を求めるメッセージが表示されます。 この機能は、ユーザーアカウント制御 (UAC) という名前であり、ユーザーが明示的に承認することなく、オペレーティングシステム全体に影響を与える可能性がある変更をアプリケーションが行うことを防止します。 Windows アプリケーションは、 `requestedExecutionLevel` アプリケーションマニフェストのセクションで属性を指定することによって、このアクセス許可の昇格が必要であることを宣言し `trustInfo` ます。  
   
- セキュリティの昇格攻撃にアプリケーションを公開するリスクのため[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]クライアントの UAC が有効になっている場合、アプリケーションがアクセス許可の昇格を要求できません。 任意[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]設定しようとするアプリケーションの`requestedExecutionLevel`属性を`requireAdministrator`または`highestAvailable`にインストールできない[!INCLUDE[windowsver](../includes/windowsver-md.md)]します。  
+ アプリケーションがセキュリティ昇格攻撃にさらされるリスクのため、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] UAC がクライアントに対して有効になっている場合、アプリケーションはアクセス許可の昇格を要求できません。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]属性をまたはに設定しようとするアプリケーションは、 `requestedExecutionLevel` にインストールされ `requireAdministrator` `highestAvailable` ません [!INCLUDE[windowsver](../includes/windowsver-md.md)] 。  
   
- 場合によってで、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]インストーラー検出ロジックのための管理者権限で実行するアプリケーションを試みる可能性があります[!INCLUDE[windowsver](../includes/windowsver-md.md)]します。 この場合、設定することができます、`requestedExecutionLevel`属性にアプリケーション マニフェストで`asInvoker`します。 これは、結果、アプリケーション自体を昇格なしでも実行します。 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] すべてのアプリケーション マニフェストにこの属性が自動的に追加します。  
+ 場合によっては、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] のインストーラー検出ロジックにより、管理者権限でアプリケーションを実行しようとすることがあり [!INCLUDE[windowsver](../includes/windowsver-md.md)] ます。 この場合、 `requestedExecutionLevel` アプリケーションマニフェストの属性をに設定でき `asInvoker` ます。 これにより、アプリケーション自体が昇格せずに実行されます。 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] は、この属性をすべてのアプリケーションマニフェストに自動的に追加します。  
   
- アプリケーションの有効期間にわたって管理者のアクセス許可を必要とするアプリケーションを開発している場合は、代わりに Windows インストーラー (MSI) テクノロジを使用して、アプリケーションの配置を検討してください。 詳細については、次を参照してください。 [Windows インストーラーの基本事項](../extensibility/internals/windows-installer-basics.md)します。  
+ アプリケーションの有効期間全体に対する管理者権限を必要とするアプリケーションを開発している場合は、代わりに Windows インストーラー (MSI) テクノロジを使用してアプリケーションを展開することを検討してください。 詳細については、「 [Windows インストーラーの基礎](../extensibility/internals/windows-installer-basics.md)」を参照してください。  
   
-## <a name="online-application-quotas-and-partial-trust-applications"></a>オンライン アプリケーションのクォータと部分信頼アプリケーション  
- 場合、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションがインストールからオンラインの代わりに実行され、オンライン アプリケーション用に確保クォータ内に収まるようにする必要があります。 また、制限された一連のセキュリティのアクセス許可など、部分信頼で実行するネットワーク アプリケーションは、クォータ サイズの半分よりも大きいすることはできません。  
+## <a name="online-application-quotas-and-partial-trust-applications"></a>オンラインアプリケーションクォータと部分信頼アプリケーション  
+ アプリケーションがインストールではなくオンラインで実行されている場合は、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] オンラインアプリケーション用に確保されているクォータに収まる必要があります。 また、部分信頼で実行されるネットワークアプリケーション (セキュリティアクセス許可の制限付きセットなど) は、クォータサイズの半分よりも大きくすることはできません。  
   
- 詳細については、および手順については、オンライン アプリケーションのクォータを変更する方法については、次を参照してください。 [ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)します。  
+ オンラインアプリケーションクォータを変更する方法の詳細と手順については、「 [ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)」を参照してください。  
   
 ## <a name="versioning-issues"></a>バージョン管理の問題  
- アプリケーションの更新プログラムを反映するようにアセンブリ バージョン番号をインクリメントし、アセンブリに厳密な名前を割り当てる場合、問題が発生する可能性があります。 厳密な名前のアセンブリへの参照でコンパイルされたアセンブリ自体を再コンパイルしなければ、または以前のバージョンを参照するアセンブリを試みます。 アセンブリが、バインド要求で古いバージョンの値を使用するため、このアセンブリが試行されます。  
+ アセンブリに厳密な名前を割り当て、アプリケーションの更新を反映するようにアセンブリのバージョン番号を増やすと、問題が発生することがあります。 厳密な名前のアセンブリへの参照を使用してコンパイルされたアセンブリ自体を再コンパイルする必要があります。それ以外の場合、アセンブリは古いバージョンを参照しようとします。 アセンブリは、そのバインド要求で古いバージョンの値を使用しているため、この操作を試みます。  
   
- たとえば、バージョン 1.0.0.0 と独自のプロジェクトで厳密な名前のアセンブリがあるとします。 アセンブリをコンパイルした後、メインのアプリケーションを含むプロジェクトへの参照として追加します。 バージョンを 1.0.0.1、インクリメント、アプリケーションを再コンパイルしないでデプロイしようし、アセンブリを更新、アプリケーションは実行時にアセンブリを読み込むことはできません。  
+ たとえば、独自のプロジェクトにバージョン1.0.0.0 の厳密な名前付きアセンブリがあるとします。 アセンブリをコンパイルした後、メインアプリケーションを含むプロジェクトへの参照として追加します。 アセンブリを更新し、そのバージョンを1.0.0.1 にインクリメントして、アプリケーションを再コンパイルせずに展開しようとすると、アプリケーションは実行時にアセンブリを読み込むことができなくなります。  
   
- 編集している場合にのみ、このエラーが発生することができます、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストに手動で展開を使用して、生成する場合にいないこのエラーが発生する必要があります[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]します。  
+ このエラーは、マニフェストを手動で編集している場合にのみ発生します。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] を使用して配置を生成すると、このエラーは発生しません [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 。  
   
-## <a name="specifying-individual-net-framework-assemblies-in-the-manifest"></a>マニフェストで個々 の .NET Framework アセンブリを指定します。  
- アプリケーションの手動で編集した場合の読み込みに失敗、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]の以前のバージョンを参照する展開を[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]アセンブリ。 バージョンの System.Net アセンブリへの参照を追加した場合など、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]マニフェストで指定されたバージョンを前に、エラーが発生します。 個人への参照を指定しないで一般に、する[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]のバージョンと、アセンブリ、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]に対してアプリケーションを実行するアプリケーション マニフェストで依存関係として指定されます。  
+## <a name="specifying-individual-net-framework-assemblies-in-the-manifest"></a>マニフェスト内の個々の .NET Framework アセンブリの指定  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]以前のバージョンのアセンブリを参照するように配置を手動で編集した場合、アプリケーションの読み込みは失敗し [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ます。 たとえば、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] マニフェストで指定されたバージョンよりも前のバージョンのの System.Net アセンブリへの参照を追加した場合、エラーが発生します。 一般に、アプリケーションの実行対象と [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] なるのバージョン [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] がアプリケーションマニフェストの依存関係として指定されているため、個々のアセンブリへの参照を指定しないでください。  
   
-## <a name="manifest-parsing-issues"></a>マニフェストの解析の問題  
- マニフェスト ファイルで使用される[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]XML ファイル、および整形式で有効なの両方があります:、XML 構文規則に従うし、要素および関連する XML スキーマで定義されている属性のみを使用する必要があります。  
+## <a name="manifest-parsing-issues"></a>マニフェスト解析の問題  
+ によって使用されるマニフェストファイル [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] は xml ファイルであり、適切な形式で有効である必要があります。 xml 構文規則に従う必要があり、関連する xml スキーマで定義されている要素と属性のみを使用する必要があります。  
   
- マニフェスト ファイルで問題を引き起こす可能性のあるものは単一引用符または二重引用符などの特殊文字を含む、アプリケーションの名前を選択します。 アプリケーションの名前の一部は、その[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]の id。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 現在の id に特殊文字を解析しません。 アクティブ化するアプリケーションが失敗した場合、名前のアルファベットと数字ののみを使用している、もう一度デプロイしようとするを確認します。  
+ マニフェストファイルで問題が発生する原因としては、単一引用符や二重引用符などの特殊文字を含むアプリケーションの名前を選択することが挙げられます。 アプリケーションの名前は id の一部です [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] では、特殊文字を含む id は現在解析されません。 アプリケーションのアクティブ化に失敗した場合は、名前にアルファベットと数字のみを使用していることを確認し、もう一度展開してみてください。  
   
- 配置またはアプリケーション マニフェストを手動で編集した場合を意図せず壊れていること。 正しいにより、破損したマニフェスト[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]インストールします。 クリックして、実行時にこのようなエラーをデバッグすることができます**詳細**上、 **ClickOnce エラー**ダイアログ ボックスで、およびログにエラー メッセージを読み取っています。 ログは、次のメッセージのいずれかの一覧に表示します。  
+ 配置マニフェストまたはアプリケーションマニフェストを手動で編集した場合は、意図せず破損している可能性があります。 マニフェストが破損していると、正しいインストールができなくなり [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ます。 実行時にこのようなエラーをデバッグするには、[ **ClickOnce エラー** ] ダイアログボックスの [**詳細**] をクリックし、ログのエラーメッセージを参照します。 ログには、次のいずれかのメッセージが表示されます。  
   
-- 構文エラー、および行の数と文字の説明、エラーが発生した位置。  
+- 構文エラーの説明、およびエラーが発生した行番号と文字位置。  
   
-- 要素またはマニフェストのスキーマの違反で使用される属性の名前。 場合は、マニフェストに XML を手動で追加した、マニフェストのスキーマに、追加機能を比較する必要があります。 詳細については、次を参照してください。 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)と[ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)します。  
+- マニフェストのスキーマの違反に使用される要素または属性の名前。 マニフェストに手動で XML を追加した場合は、追加したマニフェストをマニフェストスキーマと比較する必要があります。 詳細については、「 [Clickonce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md) 」と「 [clickonce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)」を参照してください。  
   
-- ID が競合します。 配置マニフェストとアプリケーション マニフェストで参照する依存関係は、両方で一意である必要があります、`name`と`publicKeyToken`属性。 両方の属性は、マニフェスト内で 2 つの要素間で一致、マニフェストの解析は成功しません。  
+- ID が競合しています。 配置マニフェストとアプリケーションマニフェストの依存関係の参照は、属性と属性の両方で一意である必要があり `name` `publicKeyToken` ます。 両方の属性がマニフェスト内の2つの要素間で一致する場合、マニフェストの解析は成功しません。  
   
-## <a name="precautions-when-manually-changing-manifests-or-applications"></a>マニフェストまたはアプリケーションを手動で変更するときの注意事項  
- アプリケーション マニフェストを更新するときに、アプリケーション マニフェストと配置マニフェストの両方を再署名する必要があります。 配置マニフェストには、そのファイルのハッシュとデジタル署名を含むアプリケーション マニフェストへの参照が含まれています。  
+## <a name="precautions-when-manually-changing-manifests-or-applications"></a>手動でマニフェストまたはアプリケーションを変更する際の注意事項  
+ アプリケーションマニフェストを更新するときは、アプリケーションマニフェストと配置マニフェストの両方に再署名する必要があります。 配置マニフェストには、そのファイルのハッシュとそのデジタル署名を含むアプリケーションマニフェストへの参照が含まれています。  
   
 ### <a name="precautions-with-deployment-provider-usage"></a>配置プロバイダーの使用に関する注意事項  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]配置マニフェスト、`deploymentProvider`アプリケーションをインストールおよびサービスを提供する必要がありますから場所の完全なパスを指すプロパティ。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]配置マニフェストには、 `deploymentProvider` アプリケーションをインストールしてサービスを実行する場所の完全パスを指すプロパティがあります。  
   
 ```  
 <deploymentProvider codebase="http://myserver/myapp.application" />  
 ```  
   
- 場合、このパスが設定[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションが作成され、インストールされているアプリケーションには必須です。 パスが標準の場所を指している、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]インストーラーからアプリケーションと更新プログラムの検索、インストールされます。 使用する場合、 **xcopy**コマンドをコピーする、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]別の場所にアプリケーションは変更しないでください、`deploymentProvider`プロパティ、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]でも参照元の場所にダウンロードするとき、アプリケーション。  
+ このパスは、がアプリケーションを作成するときに設定され [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 、インストールされているアプリケーションでは必須です。 このパスは、インストーラーによってアプリケーションがインストールされる標準の場所を指し、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 更新プログラムを検索します。 **Xcopy**コマンドを使用してアプリケーションを別の場所にコピーしても、プロパティを変更していない場合 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `deploymentProvider` で [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] も、はアプリケーションをダウンロードしようとしたときに元の場所を参照します。  
   
- 更新する必要があるアプリケーションをコピーまたは移動する場合、`deploymentProvider`パス、新しい場所から実際にクライアントをインストールできるようにします。 このパスを更新すると、アプリケーションをインストールしている場合にほとんどの場合に問題です。 設定元の URL から起動される常にオンライン アプリケーションの`deploymentProvider`は省略可能です。 場合`deploymentProvider`設定が受け入れられますはそれ以外の場合、アプリケーションを起動するための URL として使用するベース URL をアプリケーション ファイルをダウンロードします。  
+ アプリケーションを移動またはコピーする場合は、 `deploymentProvider` クライアントが実際に新しい場所からインストールされるように、パスも更新する必要があります。 アプリケーションがインストールされている場合は、このパスを更新することはほとんど問題になります。 常に元の URL を使用して起動されるオンラインアプリケーションの場合、の設定 `deploymentProvider` は省略可能です。 が設定されている場合は受け入れられます。それ以外の場合は、アプリケーションを起動するために使用される URL が、 `deploymentProvider` アプリケーションファイルをダウンロードするためのベース url として使用されます。  
   
 > [!NOTE]
-> マニフェストを更新するたびにする必要がありますも再度署名します。  
+> マニフェストを更新するたびに、再度署名する必要もあります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)   
- [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
+ [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)

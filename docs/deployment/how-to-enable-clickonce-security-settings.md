@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce のセキュリティ設定を有効にする |Microsoft Docs'
+title: ClickOnce セキュリティ設定を有効にする |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382433"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850931"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>方法: ClickOnce のセキュリティ設定を有効にする
 アプリケーションを発行するには、ClickOnce アプリケーションのコードアクセスセキュリティを有効にする必要があります。 これは、発行ウィザードを使用してアプリケーションを発行するときに自動的に実行されます。
@@ -56,6 +56,6 @@ ms.locfileid: "85382433"
     > [!NOTE]
     > アプリケーションが発行ウィザードを使用して発行されるたびに、このチェックボックスがオンになります。発行が成功するたびに、もう一度オフにする必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)

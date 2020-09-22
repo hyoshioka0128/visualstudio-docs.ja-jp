@@ -13,72 +13,72 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403269"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841736"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、スタック フレームのプロパティ、プログラムのドキュメント プロパティ、またはその他のいくつかのプロパティを表します。 プロパティは、通常は、式の評価の結果です。  
+このインターフェイスは、スタックフレームプロパティ、プログラムドキュメントプロパティ、またはその他のプロパティを表します。 通常、プロパティは、式の評価の結果です。  
   
 > [!NOTE]
-> この「プロパティ」を使用する必要がありますと混同しない、つまり、クラスのメンバー変数が、`IDebugProperty2`そのエンティティを表すことができます。  
+> この "property" の使用は、クラスのメンバー変数と混同しないようにしてください。ただし、は、この `IDebugProperty2` ようなエンティティを表すことができます。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProperty2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デでは、特定の種類の値を表すためには、このインターフェイスを実装します。 たとえば、値は、式の評価、メモリ、またはレジスタとその値の一覧を表示するためのメモリのコンテキストの結果として数値。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ DE は、特定の種類の値を表すために、このインターフェイスを実装します。 たとえば、値には、式の評価の結果としての数値、メモリの表示に使用されるメモリコンテキスト、レジスタとその値の一覧などがあります。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)または[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)評価の結果を表す、このインターフェイスを取得します。 `IDebugExpression2::EvaluateAsync` 送信することによってこのインターフェイスを返します、 [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)インターフェイスを呼び出して、SDM を[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)プロパティを取得します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)または[evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)を呼び出して、評価の結果を表すこのインターフェイスを取得します。 `IDebugExpression2::EvaluateAsync`[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)インターフェイスを SDM に送信することによって、このインターフェイスを返します。このインターフェイスは、 [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)を呼び出してプロパティを取得します。  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)関連付けられているスクリプト ドキュメントを提供するには、このインターフェイスを返します。  
+ [Getdebugproperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) は、関連付けられているスクリプトドキュメントを提供するために、このインターフェイスを返します。  
   
- [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)関数の戻り値を表すためには、このインターフェイスを返します。  
+ [Getreturnvalue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md) 値は、関数の戻り値を表すために、このインターフェイスを返します。  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)メモリ コンテキスト名など、プログラムのさまざまなプロパティを表すには、このインターフェイスを返します。  
+ [Getdebugproperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) は、名前やメモリコンテキストなど、プログラムのさまざまなプロパティを表すために、このインターフェイスを返します。  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)スタック フレームのローカル変数などのさまざまなプロパティを表すには、このインターフェイスを返します。  
+ [Getdebugproperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) は、ローカル変数などのスタックフレームのさまざまなプロパティを表すために、このインターフェイスを返します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugProperty2`します。  
+ 次の表に、のメソッドを示し `IDebugProperty2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|入力、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)プロパティを記述する構造体。|  
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|文字列からプロパティの値を設定します。|  
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|指定された参照の値から、プロパティの値を設定します。|  
+|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|プロパティを記述する [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 構造体を設定します。|  
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|文字列のプロパティの値を設定します。|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|指定された参照の値からプロパティの値を設定します。|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|プロパティの子を列挙します。|  
 |[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|プロパティの親を返します。|  
-|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|プロパティのほとんど派生プロパティを説明するプロパティを返します。|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|プロパティの値を構成するメモリのバイトを返します。|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|メモリ コンテキスト プロパティ値を返します。|  
-|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|プロパティの値のバイト単位のサイズを返します。|  
+|[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|プロパティの最も派生したプロパティを示すプロパティを返します。|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|プロパティの値を構成するメモリのバイト数を返します。|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|プロパティ値のメモリコンテキストを返します。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|プロパティ値のサイズ (バイト単位) を返します。|  
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|このプロパティの値への参照を返します。|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|拡張プロパティの情報を返します。|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|プロパティの拡張された情報を返します。|  
   
-## <a name="remarks"></a>Remarks  
- プロパティによって表される、`IDebugProperty2`インターフェイス、名前、種類、およびアドレスの値として考えることができます。 一般的な用語で、`IDebugProperty2`を持つ親と子ノードの階層構造を表すことができます。  
+## <a name="remarks"></a>注釈  
+ インターフェイスによって表されるプロパティは、 `IDebugProperty2` 名前、型、およびアドレスを持つ値と考えることができます。 一般的に、は、 `IDebugProperty2` 親ノードと子ノードを持つ階層構造を持つ任意のものを表すことができます。  
   
- プロパティは、通常は一時的なもの、たとえば継続時間だけ現在のスタック フレーム。 その一方で、参照によって表される、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)インターフェイスの場合は、値がメモリに残っている限り継続します。  
+ 通常、プロパティは一時的であり、現在のスタックフレームと同じ長さになります。たとえば、のようになります。 一方、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) インターフェイスによって表される参照は、値がメモリ内に保持されている限り継続します。  
   
- IDE を使用できる、`IDebugProperty2`ユーザー参照および実行時にプロパティを変更できるようにするインターフェイス。  
+ IDE では、インターフェイスを使用して、 `IDebugProperty2` ユーザーが実行時にプロパティを参照および変更できるようにすることができます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

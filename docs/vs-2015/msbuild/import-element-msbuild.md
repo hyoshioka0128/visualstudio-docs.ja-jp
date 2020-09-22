@@ -1,4 +1,4 @@
-﻿---
+---
 title: Import 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433549"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842250"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,21 +61,21 @@ ms.locfileid: "63433549"
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
 |[ImportGroup](../msbuild/importgroup-element.md)|オプションの条件下でグループ化された `Import` 要素のコレクションが格納されます。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
  `Import` 要素を使用すると、複数のプロジェクト ファイルに共通するコードを再利用できます。 これにより、共有されたコードに対する更新が、そのコードをインポートしたすべてのプロジェクトに反映されるため、コードの保守が容易になります。  
   
  慣例により、インポートされた共有プロジェクト ファイルは .targets ファイルとして保存されますが、これらは標準の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルです。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、別のファイル名拡張子を使用してプロジェクトをインポートすることもできますが、一貫性を持たせるために .targets 拡張子を使用することをお勧めします。  
   
  インポートされるプロジェクト内の相対パスは、インポートする側のプロジェクトのディレクトリからの相対パスであると解釈されます。 したがって、あるプロジェクト ファイルを別々の場所に存在する複数のプロジェクト ファイルにインポートする場合、インポートされるプロジェクト ファイル内の相対パスは、インポートされるプロジェクトごとに異なって解釈されます。  
   
- `MSBuildProjectDirectory`、`MSBuildProjectFile` など、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] で予約されている全プロパティは、プロジェクト ファイルに関連し、インポートされるプロジェクトで参照されますが、これらにはインポートするプロジェクト ファイルに基づいた値が代入されます。  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 、 `MSBuildProjectDirectory` など、 `MSBuildProjectFile`で予約されている全プロパティは、プロジェクト ファイルに関連し、インポートされるプロジェクトで参照されますが、これらにはインポートするプロジェクト ファイルに基づいた値が代入されます。  
   
- インポートされるプロジェクトに `DefaultTargets` 属性がない場合は、インポートされる各プロジェクトがインポート順にチェックされ、最初に検出された `DefaultTargets` 属性の値が使用されます。 たとえば、ProjectA で ProjectB および ProjectC を順番にインポートし、ProjectB で ProjectD をインポートする場合、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、ProjectA、ProjectB、ProjectD、ProjectC の順に `DefaultTargets` を検索します。  
+ インポートされるプロジェクトに `DefaultTargets` 属性がない場合は、インポートされる各プロジェクトがインポート順にチェックされ、最初に検出された `DefaultTargets` 属性の値が使用されます。 たとえば、ProjectA で ProjectB および ProjectC を順番にインポートし、ProjectB で ProjectD をインポートする場合、 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、ProjectA、ProjectB、ProjectD、ProjectC の順に `DefaultTargets` を検索します。  
   
  インポートされるプロジェクトのスキーマは、標準プロジェクトのスキーマと同じです。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] で、インポートされるプロジェクトをビルドできる場合もありますが、インポートされるプロジェクトには、設定するプロパティやターゲットを実行する順序に関する情報が通常は含まれていないため、ビルドできる可能性は低くなります。 インポートされるプロジェクトのこれらの情報は、インポートするプロジェクトに依存します。  
   
 > [!NOTE]
-> 条件付き import ステートメントがコマンド ライン MSBuilds で動作するときは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合開発環境 (IDE) の MSBuilds とは連携しません。 条件付きインポートは、プロジェクトを読み込むときに設定される構成およびプラットフォームの値を使用して評価されます。 その後、プロジェクト ファイルでの条件の再評価が必要となる変更 (プラットフォームの変更など) が加えられると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はプロパティと項目の条件を再評価します。ただし、インポートの条件の再評価は行いません。 インポート条件は再評価されないため、インポートはスキップされます。  
+> 条件付き import ステートメントがコマンド ライン MSBuilds で動作するときは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合開発環境 (IDE) の MSBuilds とは連携しません。 条件付きインポートは、プロジェクトを読み込むときに設定される構成およびプラットフォームの値を使用して評価されます。 その後、プロジェクト ファイルでの条件の再評価が必要となる変更 (プラットフォームの変更など) が加えられると、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はプロパティと項目の条件を再評価します。ただし、インポートの条件の再評価は行いません。 インポート条件は再評価されないため、インポートはスキップされます。  
 >   
 > このような状況が発生することを回避するには、.targets ファイルに条件付き import ステートメントを配置するか、または [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) ブロックなどの条件付きブロックにコードを配置します。  
   
@@ -114,6 +114,6 @@ ms.locfileid: "63433549"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
- [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+## <a name="see-also"></a>参照  
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
+ [方法: 複数のプロジェクトファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

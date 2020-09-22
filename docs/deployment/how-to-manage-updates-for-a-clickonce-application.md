@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce アプリケーションの更新プログラムを管理する |Microsoft Docs'
+title: ClickOnce アプリケーションの更新プログラムの管理 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382355"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851607"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの更新プログラムを管理する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションでは、更新プログラムを自動的にチェックするか、プログラムによって確認できます。 開発者は、更新プログラムのチェックを実行するタイミングと方法、更新プログラムが必須かどうか、アプリケーションが更新プログラムをチェックする場所などを柔軟に指定できます。
@@ -105,7 +105,7 @@ ms.locfileid: "85382355"
 
 7. アプリケーションをビルドします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [[アプリケーションの更新] ダイアログ ボックス](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)

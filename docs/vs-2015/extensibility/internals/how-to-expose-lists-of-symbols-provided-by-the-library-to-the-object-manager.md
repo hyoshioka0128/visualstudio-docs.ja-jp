@@ -1,5 +1,5 @@
 ---
-title: '方法: オブジェクト マネージャーにライブラリによって提供されるシンボルのリストを公開 |Microsoft Docs'
+title: '方法: ライブラリによって提供されるシンボルのリストをオブジェクトマネージャーに公開する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,29 +15,29 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431654"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841913"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-シンボル参照ツール、**クラス ビュー**、**オブジェクト ブラウザー**、**呼び出しブラウザー**と**シンボルの検索結果**を新しいデータの要求を渡す[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]オブジェクト マネージャー。 オブジェクト マネージャーは、適切なライブラリを検索し、シンボルの新しいリストを要求します。 ライブラリの応答を要求されたデータを提供することで、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]オブジェクト マネージャーを介して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]オブジェクト マネージャー メソッドを呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>データを取得するインターフェイスを使用して設定またはシンボル参照ツールのビューを更新します。  
+シンボル参照ツール、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** および **検索シンボルの結果**は、オブジェクトマネージャーに新しいデータの要求を渡し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 オブジェクトマネージャーは、適切なライブラリを検索し、シンボルの新しいリストを要求します。 ライブラリは、インターフェイスを介して要求されたデータをオブジェクトマネージャーに提供することによって応答し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> ます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]オブジェクトマネージャーは、インターフェイスのメソッドを呼び出して <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> データを取得し、それを使用してシンボル参照ツールのビューを設定または更新します。  
   
- ライブラリでは、ツールが呼び出され、ノードを展開すると、またはビューが更新されたとき、データの要求を取得することがあります。 シンボル参照ツールが初めて呼び出されると、オブジェクト マネージャーは、最上位レベルの一覧を提供するライブラリを要求します。 ユーザーは、一覧にノードを展開、ライブラリは、そのノードの下の子の一覧を提供します。 すべてのオブジェクト マネージャーの照会には、関心のある項目のインデックスが含まれています。 新しい一覧を表示するには、項目の数が、項目、その名前、アクセシビリティ、およびその他のプロパティの種類の一覧ではオブジェクト マネージャーを決定する必要があります。  
+ ライブラリは、ツールが呼び出されたとき、ノードが展開されたとき、またはビューが更新されたときに、データの要求を取得することがあります。 シンボル参照ツールが初めて呼び出されるとき、オブジェクトマネージャーは、最上位レベルの一覧を提供するようにライブラリに要求します。 ユーザーがリストノードを展開すると、そのノードの下にある子の一覧がライブラリに表示されます。 各オブジェクトマネージャーの問い合わせには、目的の項目のインデックスが含まれています。 新しい一覧を表示するには、オブジェクトマネージャーが、リスト内の項目の数、項目の種類、名前、アクセシビリティ、およびその他のプロパティを確認する必要があります。  
   
 > [!NOTE]
-> 実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。  
+> 次のマネージコード例は、インターフェイスの実装によってシンボルのリストを提供する方法を示して <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> います。 オブジェクトマネージャーは、このインターフェイスのメソッドを呼び出し、取得したデータを使用してシンボル参照ツールを設定または更新します。  
 >   
-> ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。  
+> ネイティブコードシンボルプロバイダーの実装の場合は、インターフェイスを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> ます。  
   
-## <a name="providing-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルの一覧が提供されます。  
+## <a name="providing-lists-of-symbols-to-the-object-manager"></a>オブジェクトマネージャーにシンボルのリストを提供する  
   
-#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルのリストを提供するには  
+#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>オブジェクトマネージャーにシンボルのリストを提供するには  
   
-1. 実装することで、シンボルの一覧で項目の数を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>メソッド。 次の例では、オブジェクト マネージャーが、リスト内の項目の数に関する情報を取得する方法を示します。  
+1. メソッドを実装して、シンボルのリスト内の項目の数を取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> ます。 次の例は、オブジェクトマネージャーがリスト内の項目の数に関する情報を取得する方法を示しています。  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ ms.locfileid: "63431654"
   
     ```  
   
-2. 実装することで、カテゴリおよび特定のリスト項目の属性に関する情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>メソッド。 指定された項目のカテゴリ、<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列挙体。 次の例では、オブジェクト マネージャーが特定のカテゴリの項目の属性を取得する方法を示します。  
+2. メソッドを実装することによって、指定されたリスト項目のカテゴリおよび属性に関する情報を取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> ます。 項目カテゴリは列挙体で指定され <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> ます。 次の例では、オブジェクトマネージャーが特定のカテゴリの項目の属性を取得する方法を示します。  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ ms.locfileid: "63431654"
   
     ```  
   
-3. 実装することによって指定されたリスト項目のテキスト表現を取得する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>メソッド。 次の例では、特定の項目の完全な名前を取得する方法を示します。  
+3. メソッドを実装して、指定されたリスト項目のテキスト表現を取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> ます。 次の例では、指定された項目の完全な名前を取得する方法を示します。  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ ms.locfileid: "63431654"
   
     ```  
   
-4. 実装することによって指定されたリスト項目のアイコンの情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>メソッド。 アイコンは、型 (クラス、メソッド、およびなど)、およびリスト項目のアクセシビリティ (プライベート、パブリック、およびなど) を表します。 次の例では、特定の項目の属性に基づいてアイコンの情報を取得する方法を示します。  
+4. メソッドを実装して、指定されたリスト項目のアイコン情報を取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> ます。 このアイコンは、リスト項目の型 (クラス、メソッドなど) とアクセシビリティ (プライベート、パブリックなど) を表します。 次の例では、特定の項目属性に基づいてアイコン情報を取得する方法を示します。  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ ms.locfileid: "63431654"
   
     ```  
   
-5. 特定のリスト項目は実装することで拡張可能なかどうかに関する情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>メソッド。 次の例では、特定の項目を展開するかどうかの情報を取得する方法を示します。  
+5. メソッドを実装することによって、特定のリスト項目が拡張可能かどうかに関する情報を取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> ます。 次の例は、特定の項目を展開できるかどうかに関する情報を取得する方法を示しています。  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ ms.locfileid: "63431654"
   
     ```  
   
-6. 実装することで特定のリスト項目のシンボルの子リストを取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>メソッド。 次の例は、子の指定した項目のシンボルの一覧を取得する方法を示します**呼び出す**または**呼び出し元**グラフ。  
+6. メソッドを実装して、指定されたリスト項目のシンボルの子リストを取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> ます。 次の例では、 **呼び出し** または **呼び出し元** のグラフの特定の項目の記号の子リストを取得する方法を示します。  
   
     ```vb  
     ' Call graph list.  
@@ -468,8 +468,8 @@ ms.locfileid: "63431654"
   
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [方法: オブジェクト マネージャーにライブラリを登録します。](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [方法: ライブラリ内のシンボルを識別します。](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [方法: オブジェクトマネージャーにライブラリを登録する](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [方法: ライブラリ内のシンボルを識別する](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)

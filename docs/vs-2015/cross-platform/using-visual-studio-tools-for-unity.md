@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443359"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841864"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63443359"
   
 ##### <a name="to-access-unity-documentation"></a>Unity のドキュメントにアクセスするには  
   
-- Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、**Ctrl + Alt + M、Ctrl + H** キーの順に押します。  
+- Visual Studio で、学習する Unity API の上にカーソルを強調表示するか、移動します。次に、 **ctrl + Alt + M、ctrl + H**の順に押します。  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior のスクリプト作成ウィザード  
  Unity では、ほとんどのスクリプトを、MonoBehavior クラスを継承し、そのメソッドの一部をオーバーライドすることにより実装します。 MonoBehavior ウィザードを使用すると、オーバーロード元にする MonoBehavior メソッドの空の定義を素早く作成できます。 このウィザードを使用して、使用可能なメソッドの一覧からオーバーロードする 1 つ以上のメソッドを指定し、それをコードのどの場所に挿入するかを選択し、使用方法についてのコメントを含めるかどうかを決定できます。  
@@ -46,7 +46,7 @@ ms.locfileid: "63443359"
   
 4. メソッドを挿入する場所を選択します。 既定では、メソッドはカーソルの位置に挿入されます。別の場所に挿入する場合は、クラスで既に実装されている任意のメソッドの後に挿入することができます。 これらの場所のいずれかを選択するには、**[挿入ポイント]** ドロップダウンの値を目的の場所に変更します。  
   
-5. 選択したメソッドについてウィザードがコメントを生成するように指定するには、**[メソッドのコメントを生成]** チェック ボックスをオンにします。 これらのコメントは、メソッドを呼び出すタイミングやメソッドの全般的な役割について説明するためのものです。  
+5. 選択したメソッドについてウィザードがコメントを生成するように指定するには、 **[メソッドのコメントを生成]** チェック ボックスをオンにします。 これらのコメントは、メソッドを呼び出すタイミングやメソッドの全般的な役割について説明するためのものです。  
   
 6. **[OK]** ボタンを選択すると、ウィザードが終了し、コードにメソッドが挿入されます。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63443359"
 #### <a name="quick-monobehavior-scripting-wizard"></a>クイック MonoBehavior スクリプト作成ウィザード  
  既に Unity API を使い慣れている場合は、クイック MonoBehavior ウィザードを使用すれば、オーバーロードされたメソッドをさらに迅速に実装できます。 このウィザードを使用すると、1 つのメソッドを指定して、カーソル位置に、メソッドのコメントなしで挿入できます。  
   
- ![クイック MonoBehavior ウィザード ダイアログ。](../cross-platform/media/vstu-monobehavior-wizard-quick.png "vstu_monobehavior_wizard_quick")  
+ ![クイック Monobehavior ウィザード ダイアログ。](../cross-platform/media/vstu-monobehavior-wizard-quick.png "vstu_monobehavior_wizard_quick")  
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>クイック MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定義を作成するには  
   
@@ -70,13 +70,13 @@ ms.locfileid: "63443359"
 ### <a name="unity-project-explorer"></a>Unity プロジェクト エクスプローラー  
  Unity プロジェクト エクスプローラーを使用すると、Visual Studio から Unity プロジェクト内を移動できます。  
   
- ![Unity プロジェクト エクスプローラー ウィンドウ。](../cross-platform/media/vstu-unity-project-explorer.png "vstu_unity_project_explorer")  
+ ![Unity プロジェクト エクスプ ローラー ウィンドウ。](../cross-platform/media/vstu-unity-project-explorer.png "vstu_unity_project_explorer")  
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Unity プロジェクト エクスプローラーを表示するには  
   
-- Visual Studio のメイン メニューで、**[表示]**、**[Unity Project Explorer]** の順に選択します。 キーボード:**Alt + Shift + E**  
+- Visual Studio のメイン メニューで、**[表示]**、**[Unity Project Explorer]** の順に選択します。 キーボードでは、**Alt + Shift + E** キーを押します。  
   
-   ![Unity プロジェクト エクスプローラー ウィンドウを表示します。](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
+   ![Unity プロジェクト エクスプ ローラー ウィンドウを表示します。](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
   Unity プロジェクト エクスプローラーには、Unity プロジェクトのすべてのファイルとディレクトリが Unity エディターと同じ方法で表示されます。この表示は、ソリューション エクスプローラーで Unity のスクリプトを移動する場合とは異なります。ソリューション エクスプローラーにはスクリプト ファイルのみが含まれており、Visual Studio Tools for Unity によって生成されたプロジェクトおよびソリューションとして整理されて表示されます。 大規模なプロジェクトの場合には特に、Unity プロジェクト エクスプローラーを使用したほうが、変更するスクリプトを簡単に見つけることができます。また、他の種類のファイル (たとえば、テキスト ベースの構成ファイル) を Visual Studio 内で変更する場合も、Visual Studio ソリューション内のプロジェクトの 1 つにそれらのファイルを追加せずに変更できるので、操作が簡単です。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "63443359"
 ## <a name="unity-debugging"></a>Unity のデバッグ  
  Visual Studio Tools for Unity では、Visual Studio の強力なデバッガーを使用して、Unity プロジェクトのエディター スクリプトとゲーム スクリプトの両方をデバッグできます。  
   
-### <a name="connecting-visual-studio-to-unity"></a> Visual Studio を Unity に接続する  
+### <a name="connecting-visual-studio-to-unity"></a><a name="connecting-visual-studio-to-unity"></a> Visual Studio を Unity に接続する  
  Visual Studio Tools for Unity は、UDP 接続を介して Unity と通信します。 そのため、ローカルで実行されている Unity インスタンスにも、ネットワーク上の任意の場所で実行されている Unity インスタンスにも、まったく同じ方法で接続できます。 ネットワーク上で参照できる Unity インスタンスのいずれかに接続するには、**[Unity のインスタンスの選択]** ダイアログを使用します。  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>[Select Unity Instance] ダイアログを開くには  
@@ -132,13 +132,13 @@ ms.locfileid: "63443359"
  **Type**  
  Unity のこのインスタンスが Unity エディターの一部として実行されている場合は **Editor** です。Unity のこのインスタンスがスタンドアロン プレーヤーの場合は **Player** です。  
   
- **ポート**  
+ **[ポート]**  
  Unity のこのインスタンスが通信に使用している UDP ソケットのポート番号。  
   
 > [!IMPORTANT]
 > Visual Studio Tools for Unity と Unity インスタンスは UDP ネットワーク ソケット上で通信を行っているため、ファイアウォールからメッセージが表示されることがあります。 その場合は、VSTU と Unity が通信できるように、接続を承認する必要があります。  
   
-### <a name="debugging-your-project-in-a-unity-player"></a> Unity プレーヤーでのプロジェクトのデバッグ  
+### <a name="debugging-your-project-in-a-unity-player"></a><a name="debugging-your-project-in-a-unity-player"></a> Unity プレーヤーでのプロジェクトのデバッグ  
  Unity エディターを実行していない場合、またはプラットフォーム固有の問題をデバッグする場合は、Visual Studio Tools for Unity を、スタンドアロン プレーヤーで実行されている Unity アプリケーションに直接接続できます。  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Unity プレーヤーでのスクリプトのデバッグを有効にするには  
@@ -174,7 +174,7 @@ ms.locfileid: "63443359"
   
     どちらの場合も Visual Studio Tools for Unity によってプロジェクト参照が保持されるため、プロジェクト ファイルとソリューション ファイルを再生成する必要がある場合でも、これらの手順は 1 回実行するだけ済みます。  
   
-2. DLL プロジェクトで、適切な Unity フレームワーク プロファイルを参照します。 Visual Studio では、DLL プロジェクトのプロパティで、**[対象のフレームワーク]** プロパティを、使用している Unity フレームワークのバージョンに設定します。 これは、Unity フル、Micro、または Web 基底クラス ライブラリなど、プロジェクトが対象とする API 互換性と一致する Unity 基底クラス ライブラリです。 この設定により、他のフレームワークまたは互換性レベルに存在するが、使用している Unity フレームワークのバージョンには存在しないフレームワーク メソッドを DLL が呼び出すことを防止できます。  
+2. DLL プロジェクトで、適切な Unity フレームワーク プロファイルを参照します。 Visual Studio では、DLL プロジェクトのプロパティで、 **[対象のフレームワーク]** プロパティを、使用している Unity フレームワークのバージョンに設定します。 これは、Unity フル、Micro、または Web 基底クラス ライブラリなど、プロジェクトが対象とする API 互換性と一致する Unity 基底クラス ライブラリです。 この設定により、他のフレームワークまたは互換性レベルに存在するが、使用している Unity フレームワークのバージョンには存在しないフレームワーク メソッドを DLL が呼び出すことを防止できます。  
   
     ![Unity フレームワークに、DLL のターゲット フレームワークを設定します。](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
   
