@@ -1,5 +1,6 @@
 ---
-title: '[ビルド/実行] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
+title: '[ビルド/実行] ([オプション] ダイアログ - [プロジェクトおよびソリューション])'
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff1ec236c85aeaeed655c611a88cead4380258f0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461392"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037713"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>[オプション] ダイアログ ボックス: [プロジェクトおよびソリューション] \> [ビルド/実行]
 

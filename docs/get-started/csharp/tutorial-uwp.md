@@ -1,8 +1,8 @@
 ---
-title: Visual Studio と C# でユニバーサル Windows プラットフォーム (UWP) アプリを作成する
+title: Visual Studio と C# で UWP アプリを作成する
 description: XAML と C# を使用して Visual Studio で UWP アプリを作成する
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249246"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037277"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
@@ -72,7 +72,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、 **[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
 
-   ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![[新しいユニバーサル Windows プラットフォーム プロジェクト] ダイアログ ボックスで、[ターゲット バージョン] と [最小バージョン] の既定の設定をそのまま使用します](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    **XAML エディター**でコードを参照すると、そこにもボタンが追加されていることを確認できます。
 
-   ![[ボタン] コントロールをクリックしデザイン キャンバスまでドラッグする](media/uwp-xaml-control-code-window.png)
+   ![XAML エディターでボタンを表示する](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>ボタンにラベルを追加する
 

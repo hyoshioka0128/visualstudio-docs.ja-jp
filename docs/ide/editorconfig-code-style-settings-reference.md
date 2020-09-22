@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402284"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741769"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig の .NET コーディング規則の設定
 
@@ -43,6 +43,14 @@ ms.locfileid: "89402284"
 - [名前付け規則](../ide/editorconfig-naming-conventions.md)
 
    コード要素の名前付けに関するルール。 たとえば、`async` メソッドは "Async" で終わる必要があるなどと指定できます。
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>ビルド時、コーディング規則を適用する
+
+.NET 5.0 RC2 SDK が含まれている Visual Studio 2019 バージョン 16.8 以降、すべての .NET プロジェクトに対して、[ビルド時、.NET のコーディング規則を適用](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis)できます。 ビルド時、.NET のスタイルに違反すると、"IDE" プレフィックスが付いた警告またはエラーが表示されます。 それにより、自分のコードベースで一貫性のあるコード スタイルを厳密に適用できます。
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>EditorConfig ファイルの例
 
@@ -261,7 +269,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 > [!NOTE]
 > サポートされている .NET コーディング規則カテゴリに関する詳細については、「[言語規則](../ide/editorconfig-language-conventions.md)」、「[書式規則](../ide/editorconfig-formatting-conventions.md)」、「[名前付け規則](../ide/editorconfig-naming-conventions.md)」ページを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイック アクション](../ide/quick-actions.md)
 - [移植可能なカスタム エディター オプションを作成する](../ide/create-portable-custom-editor-options.md)
