@@ -260,9 +260,21 @@
         - name: ビルドのカスタマイズとタスクのデバッグ
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Codespaces を使用した開発 (プレビュー)
+      items:
+        - name: 概要
+          href: ide/codespaces/codespaces-overview.md
+        - name: Codespace で Visual Studio を使用する
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: Codespace をカスタマイズする
+          href: ide/codespaces/customize-codespaces.md
+        - name: サポートされている Visual Studio の機能
+          href: ide/codespaces/supported-features-codespaces.md
     - name: プロジェクトまたはリポジトリへの接続
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
+    - name: Visual Studio での新しい Git エクスペリエンス (プレビュー)
+      href: ide/git-with-visual-studio.md
     - name: エディター
       items:
         - name: エディターを使用する
@@ -960,7 +972,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: リファレンス
+- name: 関連項目
   items:
     - name: キーボード ショートカット
       items:

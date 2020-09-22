@@ -48,9 +48,9 @@
   items:
     - name: Visual Studio での Kubernetes
       href: tutorial-kubernetes-tools.md
-    - name: Kubernetes を使用したローカル プロセス (プレビュー)
-      href: local-process-kubernetes.md
-    - name: Kubernetes を使用したローカル プロセスのしくみ (プレビュー)
-      href: overview-local-process-kubernetes.md
-    - name: Local Process with Kubernetes を構成する
-      href: configure-local-process-with-kubernetes.md
+    - name: Bridge to Kubernetes
+      href: bridge-to-kubernetes.md
+    - name: Bridge to Kubernetes のしくみ
+      href: overview-bridge-to-kubernetes.md
+    - name: Bridge to Kubernetes を構成する
+      href: configure-bridge-to-kubernetes.md
