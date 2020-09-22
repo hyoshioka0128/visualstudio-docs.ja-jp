@@ -1,5 +1,5 @@
 ---
-title: ClickOnce の更新方法の選択 |Microsoft Docs
+title: ClickOnce の更新方法を選択する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406821"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841665"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>ClickOnce の更新方法の選択
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、アプリケーションを自動的に更新できます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、配置マニフェスト ファイルを定期的に読み取り、アプリケーションに対する更新が利用可能かどうかを確認します。 利用可能であれば、アプリケーションの新しいバージョンがダウンロードされて実行されます。 効率性を高めるために、変更されたファイルだけがダウンロードされます。
@@ -34,9 +34,9 @@ ms.locfileid: "63406821"
 > アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。
 
 > [!NOTE]
-> .NET Framework 2.0 と .NET Framework 3.0 では、いつでも、アプリケーションのチェック、更新プログラムの前に、または開始の後、またはを使用して、 \<xref:System.Deployment.Application > Api を設定する必要がある`deploymentProvider`配置マニフェストにします。 `deploymentProvider` 要素は、Visual Studio の **[発行]** タブの **[更新]** ダイアログ ボックスにある **[更新の場所]** に対応します。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)します。
+> .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または \<xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 要素は、 `deploymentProvider` Visual Studio の [**発行**] タブの [**更新プログラム**] ダイアログボックスの [**更新の場所**] フィールドに対応しています。このルールは .NET Framework 3.5 では緩和されています。 詳細については、「 [テストサーバーおよび運用サーバー用の ClickOnce アプリケーションの配置](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)」を参照してください。
 
-## <a name="check-for-updates-after-application-startup"></a>アプリケーションの起動後の更新プログラムの確認
+## <a name="check-for-updates-after-application-startup"></a>アプリケーションの起動後に更新プログラムを確認する
  この方法を使用した場合、アプリケーションは、実行中にバックグラウンドで配置マニフェスト ファイルの検索と読み取りを試みます。 更新が利用可能な場合は、ユーザーが次回アプリケーションを実行したときに、更新プログラムをダウンロードしてインストールするかどうかを確認するプロンプトが表示されます。
 
  この方法は、低帯域幅のネットワーク接続や、ダウンロードに時間を要する可能性のあるサイズの大きなアプリケーションに最も適しています。
@@ -54,7 +54,7 @@ ms.locfileid: "63406821"
 </subscription>
 ```
 
-## <a name="check-for-updates-before-application-startup"></a>アプリケーションの起動前に更新プログラムの確認
+## <a name="check-for-updates-before-application-startup"></a>アプリケーションの起動前に更新プログラムを確認する
  既定の方法では、アプリケーションが起動される前に、配置マニフェストの検索と読み取りが試みられます。 この方法を使用した場合、ユーザーがアプリケーションを起動するたびに、アプリケーションは配置マニフェスト ファイルの検索と読み取りを試みます。 更新プログラムが利用可能な場合は、更新プログラムがダウンロードされ、起動されます。それ以外の場合は、アプリケーションの既存のバージョンが起動されます。
 
  この方法は、高帯域幅のネットワーク接続に最も適しています。低帯域幅の接続では、アプリケーション起動時の遅延が容認できないほど長くなる可能性があります。
@@ -72,7 +72,7 @@ ms.locfileid: "63406821"
 </subscription>
 ```
 
-## <a name="make-updates-required"></a>必要な更新を行う
+## <a name="make-updates-required"></a>更新が必要
  アプリケーションの最新バージョンを実行するようユーザーに要求することが必要な場合があります。 たとえば、Web サービスなどの外部リソースに変更を加えたことで、旧バージョンのアプリケーションが適切に動作できなくなるような場合です。 この場合、更新を必須としてマークし、ユーザーが旧バージョンを実行するのを防ぎます。
 
 > [!NOTE]
@@ -86,7 +86,7 @@ ms.locfileid: "63406821"
 <deployment install="true" minimumRequiredVersion="1.0.0.0">
 ```
 
-## <a name="specify-update-intervals"></a>更新間隔を指定します。
+## <a name="specify-update-intervals"></a>更新間隔の指定
  アプリケーションが更新プログラムをチェックする頻度を指定できます。 そのためには、前の「アプリケーション起動後の更新プログラムのチェック」で説明したように、アプリケーションが起動後に更新プログラムをチェックするように指定します。
 
  更新間隔を指定するには、**[アプリケーションの更新]** ダイアログ ボックスの **[アプリケーションの更新プログラムの確認を実行する頻度を指定してください]** プロパティを設定します。
@@ -95,17 +95,17 @@ ms.locfileid: "63406821"
 
  たとえば、アプリケーションを実行するたびにチェックしたり、週に 1 回または月に 1 回チェックしたりできます。 指定した時期にネットワーク接続されていない場合は、アプリケーションを次回実行したときに、更新プログラムのチェックが実行されます。
 
-## <a name="provide-a-user-interface-for-updates"></a>更新プログラムのユーザー インターフェイスを提供します。
+## <a name="provide-a-user-interface-for-updates"></a>更新プログラムのユーザーインターフェイスを提供する
  この方法を使用する場合、アプリケーション開発者は、アプリケーションが更新プログラムをチェックする場所と頻度をユーザーが選択できるようにするユーザー インターフェイスを提供します。 たとえば、[更新を今すぐ確認] コマンドや、別の更新間隔を選択できる [更新の設定] ダイアログ ボックスなどを提供できます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置 API には、独自の更新用ユーザー インターフェイスをプログラミングするためのフレームワークが用意されています。 詳細については、「<xref:System.Deployment.Application>」を参照してください。
 
  アプリケーションが配置 API を使用して自身の更新ロジックを制御する場合、次の「更新プログラムのチェックのブロッキング」で説明されているように更新プログラムのチェックをブロックする必要があります。
 
  この方法は、ユーザーごとに異なる更新方法が必要な場合に最も適しています。
 
-## <a name="block-update-checking"></a>更新プログラムのチェックをブロックします。
+## <a name="block-update-checking"></a>更新プログラムのチェックをブロックする
  アプリケーションが更新プログラムをチェックしないようにすることもできます。 たとえば、更新されることのない単純なアプリケーションがあるが、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の配置によって提供されるインストールの容易さは利用したい場合があります。
 
- 更新プログラムのアプリケーションでは、配置 Api を使用して、独自の更新を実行する場合にチェックをブロックすることも必要があります。このトピックの「"更新プログラムのユーザー インターフェイスを提供する"を参照してください。
+ アプリケーションが配置 Api を使用して独自の更新を実行する場合は、更新プログラムのチェックもブロックする必要があります。このトピックの「更新用のユーザーインターフェイスを提供する」を参照してください。
 
  更新プログラムのチェックをブロックするには、[アプリケーションの更新] ダイアログ ボックスの **[アプリケーションの更新プログラムを確認する]** チェック ボックスをオフにします。
 
@@ -116,7 +116,7 @@ ms.locfileid: "63406821"
 
  信頼されたアプリケーションの配置を使用する場合は、信頼レベルの要求が行われません。 詳細については、「[信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
  \<xref:System.Deployment.Application>
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)

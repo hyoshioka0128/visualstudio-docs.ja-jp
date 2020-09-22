@@ -1,5 +1,5 @@
 ---
-title: 分離シェル エントリ ポイントのパラメーター (C++) |Microsoft Docs
+title: 分離シェルエントリポイントパラメーター (C++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,28 +12,28 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439818"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842140"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>分離シェル エントリ ポイントのパラメーター (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio シェルベースのアプリケーションの起動時には、Visual Studio シェルの開始のエントリ ポイントを呼び出します。 シェルの開始のエントリ ポイントへの呼び出しでは、次の設定をオーバーライドできます。 各設定の説明は、次を参照してください。[します。Pkgdef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)します。  
+Visual Studio シェルベースのアプリケーションが起動すると、Visual Studio シェルの開始エントリポイントが呼び出されます。 次の設定は、シェルの開始エントリポイントへの呼び出しでオーバーライドできます。 各設定の説明については、「」を参照してください [。Pkgdef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
   
-- AddinsAllowed  
+- 許可された追加  
   
 - AllowsDroppedFilesOnMainWindow  
   
-- アプリ名  
+- AppName  
   
 - CommandLineLogo  
   
 - DefaultHomePage  
   
-- DefaultProjectsLocation  
+- Defaultプロジェクトの場所  
   
 - DefaultSearchPage  
   
@@ -45,9 +45,9 @@ Visual Studio シェルベースのアプリケーションの起動時には、
   
 - HideSolutionConcept  
   
-- NewProjDlgInstalledTemplatesHdr  
+- Newprojdlgexistingtemplates Hdr  
   
-- NewProjDlgSlnTreeNodeTitle  
+- Newprojdlgslntreのタイトル  
   
 - SolutionFileCreatorIdentifier  
   
@@ -57,27 +57,27 @@ Visual Studio シェルベースのアプリケーションの起動時には、
   
 - UserOptsFileExt  
   
-  Visual Studio 分離シェルのテンプレートは、ソース ファイルを作成します*solutionName*.cpp、場所*solutionName*は、アプリケーションのソリューションの名前です。 このファイルは、アプリケーション、_tWinMain 関数のメイン エントリ ポイントを定義します。 この関数は、シェルの開始のエントリ ポイントを呼び出します。  
+  Visual Studio Shell 分離テンプレートによってソースファイル *solutionName*が作成されます。 *solutionName* は、アプリケーションのソリューション名です。 このファイルは、アプリケーションのメインエントリポイントである _tWinMain 関数を定義します。 この関数は、シェルの開始エントリポイントを呼び出します。  
   
-  アプリケーションの起動時に、これらの設定を変更することで、アプリケーションの動作を変更できます。  
+  アプリケーションの起動時にこれらの設定を変更することによって、アプリケーションの動作を変更できます。  
   
 ## <a name="parameters"></a>パラメーター  
- Visual Studio シェルの開始のエントリ ポイントは、5 つのパラメーターを定義します。 最初の 4 つのパラメーターは変更しないでください。 5 番目のパラメーターは、設定の上書きの一覧を取得します。 シェルの開始のエントリ ポイントは、アプリケーションのメイン エントリ ポイントから呼び出されます。  
+ Visual Studio シェルの開始エントリポイントは、5つのパラメーターを定義します。 最初の4つのパラメーターは変更しないでください。 5番目のパラメーターは、設定のオーバーライドリストを受け取ります。 シェルの開始エントリポイントは、アプリケーションのメインエントリポイントから呼び出されます。  
   
- シェルの開始のエントリ ポイントは、次のシグネチャを持ちます。  
+ シェルの開始エントリポイントには、次のシグネチャがあります。  
   
 ```  
 typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);  
 ```  
   
- アプリケーション設定を上書き、設定の値をそのままにしたくない場合は、null ポインターとしてパラメーターをオーバーライドします。  
+ アプリケーション設定を上書きしない場合は、設定のオーバーライドパラメーターの値を null ポインターとしてそのままにします。  
   
- 1 つまたは複数の設定を無効にするには、オーバーライドする設定を含む Unicode 文字列を渡します。 文字列は、名前/値ペアのセミコロンで区切られた一覧を示します。 各ペアは、後に等号 (=) の後に、設定を適用する値を無効にすると、設定の名前を表します。  
+ 1つまたは複数の設定をオーバーライドするには、オーバーライドする設定を含む Unicode 文字列を渡します。 文字列は、名前と値のペアのセミコロン区切りのリストです。 各ペアには、オーバーライドする設定の名前、等号 (=)、およびその後に設定に適用する値が含まれます。  
   
 > [!NOTE]
-> Unicode 文字列に空白文字を含めないでください。  
+> Unicode 文字列に空白を含めないでください。  
   
- 次の文字列が値 true を表すブール値の設定その他のすべての文字列は、値 false を表します。 これらの文字列が、区別されます。  
+ ブール値の設定では、次の文字列は値 true を表します。他のすべての文字列は、値 false を表します。 これらの文字列は大文字と小文字が区別されません。  
   
 - \+  
   
@@ -85,15 +85,15 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
 - -1  
   
-- 日付  
+- on  
   
 - true  
   
-- 可  
+- はい  
   
 ## <a name="example"></a>例  
- アドインを無効にして、アプリケーションの既定のプロジェクトの場所を変更、最後の"AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp"パラメーターを設定できます。  
+ アドインを無効にして、アプリケーションの既定のプロジェクトの場所を変更するには、最後のパラメーターを "Addins Allowed = false; Defaultprojects Location =%USERPROFILE%\temp" に設定します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)   
  [.pkgdef ファイル](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

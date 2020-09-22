@@ -1,5 +1,5 @@
 ---
-title: アプリケーションマニフェストと配置マニフェストに再署名する方法 |Microsoft Docs
+title: アプリケーションマニフェストと配置マニフェストに再署名する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641599"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851685"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストおよび配置マニフェストに再署名する
 Windows フォームアプリケーション、Windows Presentation Foundation アプリケーション (xbap)、または Office ソリューションのアプリケーションマニフェストの配置プロパティを変更した後、アプリケーションマニフェストと配置マニフェストの両方に証明書を使用して再署名する必要があります。 このプロセスによって、改ざんされたファイルがエンド ユーザーのコンピューターにインストールされないようにすることができます。
@@ -112,11 +112,11 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
 
 7. 必要に応じて、マスター配置マニフェスト (*publish \\ \<appname> . application*) をバージョン配置ディレクトリ (*publish\Application Files \\ \<appname> _ \<version> *) にコピーします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
-- [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)
+- [信頼されたアプリケーションの展開の概要](../deployment/trusted-application-deployment-overview.md)
 - [方法: ClickOnce のセキュリティ設定を有効にする](../deployment/how-to-enable-clickonce-security-settings.md)
 - [方法: ClickOnce アプリケーションのセキュリティゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

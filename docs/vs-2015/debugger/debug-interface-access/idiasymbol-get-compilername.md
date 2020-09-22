@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_compilername |Microsoft Docs
+title: 'IDiaSymbol:: get_compilerName |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6276247bb93e7482dda713c95b40a68809c0237
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64815007"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841928"
 ---
-# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
+# <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-生成するために使用するコンパイラの名前を返します、[コンパイル単位](../../debugger/debug-interface-access/compiland.md)します。  
+[コンパイル単位](../../debugger/debug-interface-access/compiland.md)の生成に使用されるコンパイラの名前を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,22 +35,22 @@ HRESULT get_compilerName (
   
 #### <a name="parameters"></a>パラメーター  
  `pName`  
- コンパイラの Unicode の名前を格納する BSTR へのポインター。  
+ コンパイラの Unicode 名を格納する BSTR へのポインター。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
   
 ## <a name="requirements"></a>必要条件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK バージョン 8.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

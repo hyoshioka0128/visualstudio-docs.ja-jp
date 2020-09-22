@@ -1,5 +1,5 @@
 ---
-title: 実装して、ポートのサプライヤーの登録 |Microsoft Docs
+title: Port Supplier の実装と登録 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,21 +12,21 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430257"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842112"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>ポート サプライヤーの実装および登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ポート サプライヤーの役割は、追跡し、さらにプロセスの管理のポートを指定することです。 ポート サプライヤーは、ポートを作成する必要がある時に、(セッション デバッグ マネージャー [SDM] は、ユーザーが選択したポート サプライヤーまたはプロジェクト システムによって指定されたポート サプライヤーに使用されます) のポート サプライヤーの GUID を持つ CoCreate を使用してインスタンス化されます。 SDM を呼び出して[CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)を任意のポートを追加できるかどうかを参照してください。 呼び出すことによって、新しいポートが要求されたポートを追加できる場合[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)を渡す、 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)ポートをについて説明します。 `AddPort` によって表される新しいポートを返す、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)インターフェイス。  
+ポート供給業者の役割は、ポートを追跡して提供することで、プロセスを管理します。 ポートの作成が必要になった時点で、ポート供給業者の GUID と共に CoCreate を使用してポートサプライヤーがインスタンス化されます (セッションデバッグマネージャー [SDM] は、ユーザーが選択したポート供給業者、またはプロジェクトシステムによって指定されたポート供給元を使用します)。 その後、SDM は [Canaddport](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) を呼び出して、ポートを追加できるかどうかを確認します。 ポートを追加できる場合、 [Addport](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) を呼び出し、ポートを説明する [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) を渡すことによって、新しいポートが要求されます。 `AddPort` は、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) インターフェイスによって表される新しいポートを返します。  
   
-## <a name="discussion"></a>説明  
- ポートは、さらに、マシンまたはデバッグ サーバーと関連付けられているポートのサプライヤーによって作成されます。 サーバーからそのポート サプライヤーを列挙できる、[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)を介してそのポートを列挙できるメソッド、およびポート サプライヤー、 [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)メソッド。  
+## <a name="discussion"></a>考察 (Discussion)  
+ ポートは、コンピューターまたはデバッグサーバーに関連付けられているポート供給元によって作成されます。 サーバーは、[Enumportsuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) メソッドを使用してポートサプライヤーを列挙できます。また、ポート供給元は、 [enumports](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) メソッドを使用してポートを列挙できます。  
   
- 通常の COM 登録に加えてポート サプライヤーする必要がありますの登録に Visual Studio の CLSID、名前を特定のレジストリの場所に配置することで。 Debugging SDK ヘルパー関数を呼び出す`SetMetric`この雑務を処理します。 そのため、登録するには、各項目に対して 1 回呼び出されます。  
+ 一般的な COM の登録に加えて、ポート供給元は、CLSID と名前を特定のレジストリの場所に配置することによって、それ自体を Visual Studio に登録する必要があります。 というデバッグ SDK ヘルパー関数は、 `SetMetric` このような作業を処理します。これは、登録される項目ごとに1回呼び出されます。  
   
 ```cpp#  
 SetMetric(metrictypePortSupplier,  
@@ -43,7 +43,7 @@ SetMetric(metrictypePortSupplier,
           NULL);  
 ```  
   
- ポート サプライヤーは呼び出すことで登録解除`RemoveMetric`(別の SDK のデバッグ ヘルパー関数) ため、登録された各項目に対して 1 回。  
+ ポートサプライヤーは、 `RemoveMetric` 登録された項目ごとに1回 (別のデバッグ SDK ヘルパー関数) を呼び出すことによって、自身の登録を解除します。  
   
 ```cpp#  
 RemoveMetric(metrictypePortSupplier,  
@@ -57,11 +57,11 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
-> [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric`と`RemoveMetric`は静的関数 dbgmetric.h で定義され、ad2de.lib にコンパイルします。 `metrictypePortSupplier`、 `metricCLSID`、および`metricName`ヘルパーも dbgmetric.h で定義されます。  
+> [デバッグおよびデバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` は、 `RemoveMetric` dbgmetric .h で定義され、ad2de にコンパイルされた静的関数です。 、、およびの各 `metrictypePortSupplier` `metricCLSID` `metricName` ヘルパーは、dbgmetric. h でも定義されています。  
   
- ポート サプライヤーは、メソッドの名前と GUID を指定できます[GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)と[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)、それぞれします。  
+ ポートサプライヤーは、メソッド [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) と [getportsupplierid](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)先を使用して、それぞれの名前と GUID を指定できます。  
   
-## <a name="see-also"></a>関連項目  
- [ポート サプライヤーの実装](../../extensibility/debugger/implementing-a-port-supplier.md)   
+## <a name="see-also"></a>参照  
+ [ポートサプライヤーの実装](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)

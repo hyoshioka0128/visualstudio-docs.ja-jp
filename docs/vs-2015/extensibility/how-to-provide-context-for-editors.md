@@ -1,5 +1,5 @@
 ---
-title: '方法: エディターのコンテキストを提供 |Microsoft Docs'
+title: '方法: エディターのコンテキストを指定する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,77 +11,77 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435902"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841680"
 ---
-# <a name="how-to-provide-context-for-editors"></a>方法: エディターのコンテキストを提供します。
+# <a name="how-to-provide-context-for-editors"></a>方法: エディター用のコンテキストを提供する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エディターのコンテキストは、エディターにフォーカスがあるか、ツール ウィンドウにフォーカスが移動された直前にフォーカスがあった場合にのみアクティブです。 次の手順に従って、エディターのコンテキストを行うことができます。  
+エディターの場合、コンテキストは、エディターにフォーカスがあるとき、またはフォーカスがツールウィンドウに移動する直前にフォーカスがあったときにのみアクティブになります。 エディターのコンテキストを指定するには、次の手順を実行します。  
   
-1. コンテキスト バッグを作成します。  
+1. コンテキストバッグを作成します。  
   
-2. 選択範囲の要素の識別子 (SEID) コンテキスト バッグに発行します。  
+2. コンテキストバッグを選択要素識別子 (SEID) に発行します。  
   
 3. バッグ内のコンテキストを維持します。  
   
-   これらのタスクは、次の手順で説明します。 コンテキストを提供する詳細については、次を参照してください。**堅牢なプログラミング**このトピックで後述します。  
+   これらのタスクについては、次の手順で説明します。 コンテキストの提供の詳細については、このトピックで後述する「 **堅牢なプログラミング** 」を参照してください。  
   
-### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>エディターまたはデザイナーのコンテキスト バッグを作成するには  
+### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>エディターまたはデザイナーのコンテキストバッグを作成するには  
   
-1. 呼び出す`QueryService`上、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>のためのインターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext>サービス。  
+1. `QueryService` <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> サービスのインターフェイスでを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> ます。  
   
-     ポインター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext>インターフェイスが返されます。  
+     インターフェイスへのポインター <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> が返されます。  
   
-2. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A>新しいコンテキストまたはサブコンテキストのバッグを作成します。  
+2. メソッドを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> 新しいコンテキストまたは subcontext バッグを作成します。  
   
-     ポインター、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext>インターフェイスが返されます。  
+     インターフェイスへのポインター <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> が返されます。  
   
-3. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>コンテキストまたはサブコンテキスト バッグに、属性、検索キーワード、または F1 キーワードを追加するメソッド。  
+3. メソッドを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> コンテキストまたは subcontext バッグに属性、検索キーワード、または F1 キーワードを追加します。  
   
-4. サブコンテキスト バッグを作成する場合は、呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A>サブコンテキスト バッグを親のコンテキスト バッグにリンクするメソッド。  
+4. Subcontext バッグを作成する場合は、メソッドを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> subcontext バッグを親コンテキストバッグにリンクします。  
   
-5. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A>通知を受信するときに、**ダイナミック ヘルプ**ウィンドウが更新しようとしています。  
+5. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A>を呼び出して、[**ダイナミックヘルプ**] ウィンドウが更新されようとしているときに通知を受信します。  
   
-     **ダイナミック ヘルプ**ウィンドウは、エディターを呼び出すコンテキストに変更する、更新が行われるまで遅延することができますを更新する準備ができ次第です。 これを行うと、時間のかかるアルゴリズムを実行しているシステムのアイドル時間が利用可能になるまで遅延できるため、パフォーマンスを向上できます。  
+     [ **ダイナミックヘルプ** ] ウィンドウを更新する準備ができたらエディターを呼び出すと、更新が行われるまでコンテキストの変更を遅らせることができます。 これにより、システムのアイドル時間が使用可能になるまで、実行時間の長いアルゴリズムを遅延させることができるため、パフォーマンスが向上します。  
   
-### <a name="to-publish-the-context-bag-to-the-seid"></a>コンテキスト バッグを SEID に発行するには  
+### <a name="to-publish-the-context-bag-to-the-seid"></a>コンテキストバッグを SEID に発行するには  
   
-1. 呼び出す`QueryService`上、<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx>サービスへのポインターを返します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>インターフェイス。  
+1. サービスでを呼び出して、 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> インターフェイスへのポインターを返し <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> ます。  
   
-2. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>、要素の識別子を指定する (`elementid`パラメーター) をグローバル レベルにコンテキストを渡すことを示す SEID_UserContext の値。  
+2. を呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> 、SEID_UserContext の要素識別子 (パラメーター) 値を指定して、 `elementid` グローバルレベルにコンテキストを渡すことを示します。  
   
-3. 内の値、ときに、エディターまたはデザイナーがアクティブになるその<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>オブジェクトは、グローバルの選択に反映されます。 セッションごとに 1 回は、このプロセスを完了し、作成すると、呼び出されたときにグローバル コンテキストへのポインターを格納するだけで済みます<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>します。  
+3. エディターまたはデザイナーがアクティブになると、そのオブジェクト内の値 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> がグローバル選択に反映されます。 このプロセスは、セッションごとに1回だけ完了し、を呼び出したときに作成されたグローバルコンテキストへのポインターを格納するだけで済み <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> ます。  
   
-### <a name="to-maintain-the-context-bag"></a>コンテキスト バッグを維持するには  
+### <a name="to-maintain-the-context-bag"></a>コンテキストバッグを維持するには  
   
-1. 実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext>ことを確認する、**ダイナミック ヘルプ** ウィンドウの呼び出し、エディターまたはデザイナーの更新前にします。  
+1. を実装して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> 、 **動的ヘルプ** ウィンドウが更新前にエディターまたはデザイナーを呼び出すようにします。  
   
-     各コンテキスト バッグと呼ばれる<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A>コンテキスト バッグが作成され、インプリメント<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>、IDE 呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>コンテキスト プロバイダー コンテキスト バッグが更新されることを通知します。 この呼び出しを使用して、属性とキーワード コンテキスト バッグ、および任意のサブコンテキスト バッグを変更する前に、**ダイナミック ヘルプ**ウィンドウの更新が発生します。  
+     コンテキストバッグが作成され、実装された後に呼び出されたコンテキストバッグごとに、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate> を呼び出してコンテキストバッグが <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> 更新されることをコンテキストプロバイダーに通知します。 この呼び出しを使用して、コンテキストバッグ内の属性とキーワード、および subcontext バッグを変更してから、 **ダイナミックヘルプ** ウィンドウを更新することができます。  
   
-2. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>エディターまたはデザイナーが新しいコンテキストを持つことを示すコンテキスト バッグにします。  
+2. コンテキストバッグでを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> エディターまたはデザイナーに新しいコンテキストがあることを示します。  
   
-     ときに、**ダイナミック ヘルプ**ウィンドウ呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>を示すこと、更新するときは、エディターまたはデザイナーは、その時点で、親のコンテキスト バッグと任意のサブコンテキスト バッグの両方を適切にコンテキストを更新できます。  
+     [ **ダイナミックヘルプ** ] ウィンドウが更新中であることを <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> 示すためにを呼び出すと、エディターまたはデザイナーは、その時点で親コンテキストバッグと subcontext バッグの両方に対してコンテキストを適切に更新できます。  
   
     > [!NOTE]
-    > `SetDirty`にフラグが設定されて自動的に`true`コンテキストが追加またはコンテキスト バッグから削除されるたびにします。 **ダイナミック ヘルプ** ウィンドウの呼び出しのみ<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>コンテキスト バッグの場合、`SetDirty`にフラグが設定されている`true`します。 リセットされます`false`更新後にします。  
+    > コンテキスト `SetDirty` `true` がコンテキストバッグから追加または削除されるたびに、フラグは自動的にに設定されます。 [ **ダイナミックヘルプ** ] ウィンドウは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> `SetDirty` フラグがに設定されている場合にのみ、コンテキストバッグでを呼び出し `true` ます。 更新後ににリセットされ `false` ます。  
   
-3. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>アクティブ コンテキストのコレクションにコンテキストを追加または<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A>コンテキストを削除します。  
+3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>を呼び出して、アクティブなコンテキストコレクションにコンテキストを追加するか、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> コンテキストを削除します。  
   
 ## <a name="robust-programming"></a>信頼性の高いプログラミング  
- 独自のエディターを作成する場合は、エディターのコンテキストを提供するには、このトピックの手順の 3 つすべてを完了する必要があります。  
+ 独自のエディターを作成する場合は、エディターのコンテキストを提供するために、このトピックの3つの手順をすべて完了する必要があります。  
   
 > [!NOTE]
-> 呼び出す必要がある適切なエディターまたはデザイナー ウィンドウをアクティブにして、更新されるようにするコマンドのルーティングが正しく<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>フォーカス ウィンドウに、コンポーネントにします。  
+> エディターまたはデザイナーウィンドウを適切にアクティブにし、コマンドルーティングが適切に更新されるようにするには、コンポーネントでを呼び出してフォーカスを設定する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> ます。  
   
- SEID は、変更の選択に基づくプロパティのコレクションです。 SEID 情報は、グローバルの選択を利用します。 によってトリガーされるイベントに、グローバルの選択がワイヤード (有線)、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>インターフェイスであるすべての項目のリストを選択しています (現在のエディター、現在のツール ウィンドウ、現在の階層およびなど)。  
+ SEID は、選択内容に基づいて変更されるプロパティのコレクションです。 SEID 情報は、グローバル選択で利用できます。 グローバル選択は、インターフェイスによってトリガーされるイベントに接続され、選択されて <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> いるすべてのもの (現在のエディター、現在のツールウィンドウ、現在の階層など) の一覧があります。  
   
- エディターとデザイナー、たびにコンテキストを変更できますでカーソルが移動、単語内にあるコンテキスト バッグを常に更新する効率的ではありません。 効率的なエディターまたはデザイナー ウィンドウ内で移動カーソルを検出する任意の時点を更新するために、呼び出すことができます<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A>します。 これまでのアイドル時間があるし、エディターまたはデザイナーに IDE のコンテキストのサービスが通知を送信してコンテキストの変更を保持することができます、**ダイナミック ヘルプ**ウィンドウを更新します。 このアプローチは、このトピックのコンテキスト バッグの管理"するには」の手順で使用されます。  
+ エディターとデザイナーでは、カーソルが単語内で移動するたびにコンテキストが変更される可能性があるため、コンテキストバッグを絶えず更新するのは効率的ではありません。 エディターまたはデザイナーウィンドウ内でカーソルを移動するたびに、更新をより効率的に行うには、を呼び出すことができ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> ます。 これにより、アイドル時間が経過するまでコンテキストの変更を保持することができ、IDE のコンテキストサービスは、 **ダイナミックヘルプ** ウィンドウが更新中のエディターまたはデザイナーに通知を送信します。 この方法は、このトピックの「コンテキストバッグを維持するには」の手順で使用します。  
   
- 後、エディターやデザイナー内のアクティビティのコンテキストを提供する、エディターまたはデザイナー自体のヘルプを表示するユーザーを許可する特定の F1 キーワードを指定する必要があります。  
+ エディターまたはデザイナー内でアクティビティのコンテキストを指定した後、ユーザーがエディターまたはデザイナー自体のヘルプを取得できるように、特定の F1 キーワードを指定する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>   

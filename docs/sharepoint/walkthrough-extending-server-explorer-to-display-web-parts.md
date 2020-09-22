@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015640"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739994"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する
   Visual Studio では、**サーバーエクスプローラー**の [ **sharepoint 接続**] ノードを使用して、sharepoint サイトのコンポーネントを表示できます。 ただし、一部のコンポーネントは既定では **サーバーエクスプローラー** 表示されません。 このチュートリアルでは、接続されている各 SharePoint サイトに Web パーツギャラリーを表示するように **サーバーエクスプローラー** を拡張します。
@@ -275,7 +275,7 @@ ms.locfileid: "86015640"
 
 1. **ソリューションエクスプローラー**の [webpartnode] プロジェクトの下で、マニフェストエディターで**source.extension.vsixmanifest**ファイルを開きます。
 
-     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。
+     source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))」を参照してください。
 
 2. [ **製品名** ] ボックスに、 **サーバーエクスプローラーの Web パーツギャラリーノード**を入力します。
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015640"
 10. [ **種類** ] ボックスに「 **SharePoint. コマンド. v4**」と入力します。
 
     > [!NOTE]
-    > この要素は、Visual Studio 拡張機能に追加するカスタム拡張機能を指定します。 詳細については、「 [Asset 要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)」を参照してください。
+    > この要素は、Visual Studio 拡張機能に追加するカスタム拡張機能を指定します。 詳細については、「 [Asset 要素 (VSX Schema)](/previous-versions/dd393737(v=vs.110))」を参照してください。
 
 11. [ **ソース** ] ボックスの一覧で、[現在のソリューションリスト項目 **内のプロジェクト** ] を選択します。
 
@@ -370,7 +370,7 @@ ms.locfileid: "86015640"
 4. Visual Studio の両方のインスタンス (実験用インスタンスと、WebPartNode ソリューションが開いている Visual Studio のインスタンス) を閉じます。
 
 ## <a name="see-also"></a>関連項目
-- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [チュートリアル: サーバーエクスプローラーの拡張機能で SharePoint クライアントオブジェクトモデルを呼び出す](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 - [アイコン用イメージエディター](/cpp/windows/image-editor-for-icons)
 - [アイコンまたはその他のイメージを作成するアイコンのイメージエディター &#40;&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

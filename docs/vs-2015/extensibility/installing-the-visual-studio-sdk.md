@@ -1,5 +1,5 @@
 ---
-title: Visual Studio SDK のインストール |Microsoft Docs
+title: Visual Studio SDK のインストール | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: visual-studio-sdk
@@ -9,56 +9,56 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88a6266a3f5910def0bf5041a37f89c2b3d67416
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414467"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842332"
 ---
-# <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK をインストールします。
+# <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK のインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。  
+Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。  
   
-## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual Studio のインストールの一部として Visual Studio SDK をインストールします。  
- Visual Studio のインストールに VSSDK を含める場合は、カスタム インストールを実行する必要があります。  
+## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Visual studio インストールの一部としての Visual Studio SDK のインストール  
+ Visual Studio のインストールに VSSDK を含める場合は、カスタムインストールを行う必要があります。  
   
 > [!NOTE]
-> 実行可能ファイルのインストールで、Visual Studio SDK と呼びます**Visual Studio Extensibility Tools**します。  
+> インストール実行可能ファイルでは、Visual Studio SDK が **Visual Studio Extensibility Tools**と呼ばれます。  
   
-1. Visual Studio 2015 のインストールを開始します。 Visual Studio Express 以外の任意のエディションをインストールすることができます。  
+1. Visual Studio 2015 のインストールを開始します。 Express を除く任意のエディションの Visual Studio をインストールできます。  
   
-2. 最初の画面では、次のように選択します。**カスタム**ではなく、**既定**します。 **[次へ]** をクリックします。  
+2. 最初の画面で、[**既定**] ではなく [**カスタム**] を選択します。 **[次へ]** をクリックします。  
   
-3. カスタムの機能のツリー ビューが表示されます。 開いている**一般的なツール**します。 表示する必要があります**Visual Studio Extensibility Tools**します。  
+3. カスタム機能のツリービューが表示できます。 **共通ツール**を開きます。 **Visual Studio Extensibility Tools**が表示できます。  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4. 確認**Visual Studio Extensibility Tools** 、順にクリックします **[次へ]** インストールを続行します。  
+4. **Visual Studio Extensibility Tools**を確認し、[**次へ**] をクリックしてインストールを続行します。  
   
-## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Visual Studio をインストールした後、Visual Studio SDK をインストールします。  
- Visual Studio のインストールが完了した後、Visual Studio SDK をインストールする場合は、次の手順を実行する必要があります。  
+## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Visual Studio のインストール後に Visual Studio SDK をインストールする  
+ Visual Studio のインストールが完了した後に Visual Studio SDK をインストールする場合は、次の手順に従う必要があります。  
   
-1. 移動して**コントロール パネル]、[プログラム]、[プログラムし、機能**、探して**Visual Studio 2015**します。 Express を除く Visual Studio 2015 の任意のエディションの Visual Studio SDK をインストールすることができます。  
+1. [ **コントロールパネル]、[プログラム]、[プログラムと機能**] の順に開き、 **Visual Studio 2015**を探します。 Visual studio SDK は、Express を除くすべてのエディションの Visual Studio 2015 にインストールできます。  
   
-2. 右クリックして**Visual Studio 2015**、 をクリックし、**変更**します。 [インストール] ページが表示されます。  
+2. [ **Visual Studio 2015**] を右クリックし、[ **変更**] をクリックします。 [インストール] ページが表示されます。  
   
-3. 同じ手順に従って**Visual Studio のインストールの一部として、Visual Studio SDK をインストールする**上。  
+3. 上記の **visual Studio インストールの一部として Visual STUDIO SDK をインストールする場合** と同じ手順に従います。  
   
-4. をクリックして、 **Visual Studio Extensibility Tools** Visual Studio SDK のインストールへのリンク。  
+4. [ **Visual Studio Extensibility Tools** ] リンクをクリックして、VISUAL Studio SDK をインストールします。  
   
-## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>ソリューションから Visual Studio SDK をインストールします。  
- VSSDK を最初にインストールしなくても、拡張機能プロジェクトとソリューションを開く場合は、ソリューション エクスプ ローラーの上の強調表示された情報バーにより促されます。 次のようになります。  
+## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>ソリューションからの Visual Studio SDK のインストール  
+ 最初に VSSDK をインストールせずに、機能拡張プロジェクトでソリューションを開くと、ソリューションエクスプローラーの上に強調表示された情報バーが表示されます。 次のようになります。  
   
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
-## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>コマンドラインから Visual Studio SDK をインストールします。  
- 使用して、コマンドラインから VSSDK をインストールすることができます、 **/InstallSelectableItems** Visual Studio インストーラーに切り替えます。 インストーラーでのコマンド ライン パラメーターの使用に関する詳細については、次を参照してください。 [Visual Studio 2015 をインストールする](../install/install-visual-studio-2015.md)します。  
+## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>コマンドラインからの Visual Studio SDK のインストール  
+ Visual Studio インストーラーで **/InstallSelectableItems** スイッチを使用すると、コマンドラインから vssdk をインストールできます。 インストーラーでのコマンドラインパラメーターの使用の詳細については、「 [Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)」を参照してください。  
   
- Visual Studio 2015 Community インストーラーをサイレント モードで使用する VSSDK のインストール方法を次に示します。  
+ Visual Studio 2015 コミュニティインストーラーを使用して、VSSDK をサイレントモードでインストールする方法を次に示します。  
   
 ```  
 vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1  
 ```  
   
- インストールされているVisual Studio のバージョンに一致する Visual Studio インストーラーを使用する必要があることに注意してください。 たとえば、Visual Studio Enterprise がコンピューターにインストールした場合は、Visual Studio Enterprise インストーラー (vs_enterprise.exe) を実行する必要があります。
+ インストールされている Visual Studio のバージョンと一致する Visual Studio インストーラーを使用する必要があることにご注意ください。 たとえば、コンピューターに Visual Studio Enterprise がインストールされている場合は、Visual Studio Enterprise インストーラー (vs_enterprise.exe) を実行する必要があります。

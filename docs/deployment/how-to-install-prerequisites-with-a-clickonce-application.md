@@ -1,5 +1,6 @@
 ---
-title: '方法: ClickOnce アプリケーションを使用して必須コンポーネントをインストールする |Microsoft Docs'
+title: ClickOnce アプリを使用した必須コンポーネントのインストール
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382381"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809121"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする
 すべてのアプリケーションでは、実行する前に、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 正しいバージョンの .NET Framework がコンピューターにインストールされている必要があります。多くのアプリケーションには、その他の前提条件もあります。 アプリケーションを発行するときに [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、アプリケーションと共にパッケージ化する前提条件コンポーネントのセットを選択できます。 インストール時に、前提条件ごとにチェックが行われ、既に存在するかどうかが確認されます。インストールされていない場合は、アプリケーションをインストールする前にインストールされ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
@@ -67,6 +68,6 @@ ms.locfileid: "85382381"
     > [!NOTE]
     > 指定されたコンポーネントのインストーラーが指定された場所に存在することを確認する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

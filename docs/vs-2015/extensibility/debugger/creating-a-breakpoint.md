@@ -12,19 +12,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7cde6d660506e05195ef9f5c0825845cee10ae5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383476"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841765"
 ---
 # <a name="creating-a-breakpoint"></a>ブレークポイントの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 次に、ブレークポイントを作成するプロセスについて説明します。  
   
-## <a name="methods-in-breakpoint-creation"></a>ブレークポイントの作成方法  
- ブレークポイントをバインドするために必要なモジュールが読み込まれるときに、セッション デバッグ マネージャー (SDM) は、次のメソッドを呼び出します。  
+## <a name="methods-in-breakpoint-creation"></a>ブレークポイント作成時のメソッド  
+ ブレークポイントをバインドするために必要なモジュールが読み込まれると、セッションデバッグマネージャー (SDM) は次のメソッドを呼び出します。  
   
 1. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)  
   
@@ -33,11 +33,11 @@ ms.locfileid: "63383476"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)  
   
     > [!NOTE]
-    > **CanBind**ユーザーは、[ブレークポイント] ウィンドウからブレークポイントを作成時にのみ呼び出されます。  
+    > **Canbind** は、ユーザーが [ブレークポイント] ウィンドウからブレークポイントを作成した場合にのみ呼び出されます。  
   
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
   
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのイベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

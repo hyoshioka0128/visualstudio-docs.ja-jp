@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeLength |Microsoft Docs
+title: 'IDiaSymbol:: get_liveRangeLength |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825238"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842125"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ローカル シンボルの有効なアドレスの範囲の長さを返します。  
+ローカルシンボルが有効なアドレス範囲の長さを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,22 +35,22 @@ HRESULT get_liveRangeLength ( 
   
 #### <a name="parameters"></a>パラメーター  
  `length`  
- [out]アドレスの範囲の長さを返します。  
+ 入出力アドレス範囲の長さを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 > [!NOTE]
-> 返されたエラー コードは、シンボルにライブの範囲の情報がないことを意味します。  
+> 返されるエラーコードは、シンボルにライブ範囲情報が含まれていないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

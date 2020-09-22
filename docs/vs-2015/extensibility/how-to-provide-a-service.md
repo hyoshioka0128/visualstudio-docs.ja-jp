@@ -1,5 +1,5 @@
 ---
-title: '方法: サービスを提供 |Microsoft Docs'
+title: '方法: サービスを提供する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 565a8a91797c826b6419dc5a8488d7d3baf9cddc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435911"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841716"
 ---
 # <a name="how-to-provide-a-service"></a>方法: サービスを提供する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage では、その他の Vspackage を使用できるサービスを提供できます。 サービスを提供するには、VSPackage は Visual Studio でサービスを登録して、サービスの追加する必要があります。  
+VSPackage は、他の Vspackage が使用できるサービスを提供できます。 サービスを提供するには、VSPackage がサービスを Visual Studio に登録し、サービスを追加する必要があります。  
   
- <xref:Microsoft.VisualStudio.Shell.Package>両方を実装するクラス<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>と<xref:System.ComponentModel.Design.IServiceContainer>します。 <xref:System.ComponentModel.Design.IServiceContainer> オンデマンドでサービスを提供するコールバック メソッドが含まれています。  
+ <xref:Microsoft.VisualStudio.Shell.Package>クラスは、との両方を実装し <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> <xref:System.ComponentModel.Design.IServiceContainer> ます。 <xref:System.ComponentModel.Design.IServiceContainer> 要求時にサービスを提供するコールバックメソッドを格納します。  
   
- サービスの詳細については、次を参照してください。 [Service Essentials](../extensibility/internals/service-essentials.md)します。  
+ サービスの詳細については、「 [Service Essentials](../extensibility/internals/service-essentials.md) 」を参照してください。  
   
 > [!NOTE]
-> VSPackage は、アンロードしようとしていますが、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されたまでを待機します。 これらのサービスに対する新しい要求は許可されません。 明示的に呼び出す必要がありますいない、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>をアンロードするときに、サービスを取り消すメソッド。  
+> VSPackage がアンロードされるとき、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されるまで待機します。 これらのサービスに対して新しい要求を行うことはできません。 メソッドを明示的に呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> アンロード時にサービスを取り消すことはできません。  
   
 #### <a name="implementing-a-service"></a>サービスの実装  
   
-1. VSIX プロジェクトを作成 (**ファイル/新規、プロジェクト/Visual c#/呼び出/VSIX プロジェクト**)。  
+1. VSIX プロジェクトを作成します ([ファイル]、[新規作成]、[プロジェクト]、[Visual C#]、[Extensiblity]、[**Vsix プロジェクト**])。  
   
-2. VSPackage をプロジェクトに追加します。 プロジェクト ノードを選択、**ソリューション エクスプ ローラー**クリック**追加/新しい項目/Visual c# アイテム/機能拡張/Visual Studio パッケージ**。  
+2. VSPackage をプロジェクトに追加します。 **ソリューションエクスプローラー**でプロジェクトノードを選択し、[追加]、[新しい項目]、[Visual C# 項目]、[機能拡張]、[ **visual Studio パッケージ**] の順にクリックします。  
   
-3. サービスを実装するには次の 3 つの種類を作成する必要があります。  
+3. サービスを実装するには、次の3種類を作成する必要があります。  
   
-   - サービスを表すインターフェイスです。 これらのインターフェイスの多くは、空、つまり、どのメソッド。  
+   - サービスを説明するインターフェイス。 これらのインターフェイスの多くは空です。つまり、メソッドがありません。  
   
-   - サービス インターフェイスを記述するインターフェイスです。 このインターフェイスには、実装するメソッドが含まれています。  
+   - サービスインターフェイスを記述するインターフェイス。 このインターフェイスには、実装するメソッドが含まれています。  
   
-   - サービスと、サービス インターフェイスの両方を実装するクラス。  
+   - サービスとサービスインターフェイスの両方を実装するクラス。  
   
-     次の例では、3 種類の非常に基本的な実装を示します。 サービス クラスのコンス トラクターは、サービス プロバイダーを設定する必要があります。  
+     次の例は、3種類の基本的な実装を示しています。 サービスクラスのコンストラクターは、サービスプロバイダーを設定する必要があります。  
   
    ```csharp  
    public class MyService : SMyService, IMyService  
@@ -76,9 +76,9 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
   
    ```  
   
-### <a name="registering-a-service"></a>サービスを登録します。  
+### <a name="registering-a-service"></a>サービスの登録  
   
-1. サービスを登録するには、追加、<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>サービスを提供する VSPackage にします。 次に例を示します。  
+1. サービスを登録するには、 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> サービスを提供する VSPackage にを追加します。 たとえば次のようになります。  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -88,14 +88,14 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     {. . . }  
     ```  
   
-     この属性を登録`SMyService`Visual Studio を使用します。  
+     この属性は `SMyService` 、Visual Studio に登録されます。  
   
     > [!NOTE]
-    > 同じ名前の別のサービスを置換するサービスを登録するには、使用、<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>します。 注サービスの 1 つだけそのオーバーライドを許可します。  
+    > 同じ名前の別のサービスを置き換えるサービスを登録するには、を使用し <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> ます。 サービスのオーバーライドは1つしか許可されないことに注意してください。  
   
 ### <a name="adding-a-service"></a>サービスの追加  
   
-1. 1.  VSPackage の初期化子では、サービスを追加し、サービスを作成するコールバック メソッドを追加します。 に対する変更をここでは、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
+1. 1.  VSPackage 初期化子で、サービスを追加し、コールバックメソッドを追加してサービスを作成します。 メソッドに対して行う変更は <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 次のとおりです。  
   
     ```csharp  
     protected override void Initialize()  
@@ -107,7 +107,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     }  
     ```  
   
-2. 作成し、サービスを返す、または作成できない場合は null にする必要がありますコールバック メソッドを実装します。  
+2. サービスを作成して返す必要があるコールバックメソッドを実装します。または、作成できない場合は null を実装します。  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -119,9 +119,9 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     ```  
   
     > [!NOTE]
-    > Visual Studio では、サービスを提供する要求を拒否できます。 そうなった場合、別の VSPackage に、サービスが既に用意されています。  
+    > Visual Studio は、要求を拒否してサービスを提供できます。 これは、別の VSPackage が既にサービスを提供している場合に行います。  
   
-3. これで、サービスを取得し、そのメソッドを使用できます。 これで、初期化子を説明しますが、サービスを使用する任意の場所サービスを取得することができます。  
+3. これで、サービスを取得し、そのメソッドを使用できるようになりました。 これを初期化子に示しますが、サービスを使用する任意の場所でサービスを取得することができます。  
   
     ```csharp  
     protected override void Initialize()  
@@ -138,9 +138,9 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     }  
     ```  
   
-     値`helloString`「こんにちは」にする必要があります。  
+     の値は `helloString` "Hello" にする必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [方法: サービスを取得します。](../extensibility/how-to-get-a-service.md)   
- [使用して、サービスを提供します。](../extensibility/using-and-providing-services.md)   
+## <a name="see-also"></a>参照  
+ [方法: サービスを取得する](../extensibility/how-to-get-a-service.md)   
+ [サービスの使用と提供](../extensibility/using-and-providing-services.md)   
  [サービスの基本情報](../extensibility/internals/service-essentials.md)

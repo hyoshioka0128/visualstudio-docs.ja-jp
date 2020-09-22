@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425878"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841704"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>マルチプロセッサ対応の logger の記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63425878"
 ### <a name="central-logging-model"></a>中央ログ モデル  
  中央ログ モデルでは、MSBuild.exe の 1 つのインスタンスが "中央ノード" となり、中央ノードの子インスタンス ("セカンダリ ノード") が中央ノードにアタッチされ、それによってビルド タスクの実行が可能になります。  
   
- ![中央 logger モデル](../msbuild/media/centralnode.png "CentralNode")  
+ ![中央ロガー モデル](../msbuild/media/centralnode.png "CentralNode")  
   
  中央ノードにアタッチされる各種の logger を "中央 logger" といいます。 いずれの logger でも一度に 1 つのインスタンスのみ中央ノードにアタッチできます。  
   
@@ -71,7 +71,7 @@ public interface INodeLogger: ILogger
   
   ConfigurableForwardingLogger を実際の要件に合わせて変更できます。 これを行うには、この logger をコマンド ラインで MSBuild.exe を使用して呼び出し、この logger から中央ノードに転送するビルド イベントを指定します。  
   
-  また、カスタム転送 logger を作成することもできます。 カスタム転送 logger を作成すると、logger の動作を細かく調整できます。 ただし、カスタム転送 logger を作成する作業は ConfigurableForwardingLogger をカスタマイズする場合より複雑です。 詳細については、「[転送 logger の作成](../msbuild/creating-forwarding-loggers.md)」を参照してください。  
+  また、カスタム転送 logger を作成することもできます。 カスタム転送 logger を作成すると、logger の動作を細かく調整できます。 ただし、カスタム転送 logger を作成する作業は ConfigurableForwardingLogger をカスタマイズする場合より複雑です。 詳細については、「 [転送 logger の作成](../msbuild/creating-forwarding-loggers.md)」を参照してください。  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>ConfigurableForwardingLogger を使用した簡単な分散ログ  
  ConfigurableForwardingLogger またはカスタム転送 logger をアタッチするには、MSBuild.exe を使用したコマンド ライン ビルドに `/distributedlogger` スイッチ (短縮形は `/dl`) を指定します。 logger の型名およびクラス名の形式は、`/logger` スイッチの場合と同じです。ただし、分散 logger は常に転送 logger と中央 logger という 2 つのログ記録クラスから成ります。 XMLForwardingLogger というカスタム転送 logger をアタッチするコードの例を次に示します。  
@@ -114,5 +114,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>関連項目  
- [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>参照  
+ [転送 Logger の作成](../msbuild/creating-forwarding-loggers.md)

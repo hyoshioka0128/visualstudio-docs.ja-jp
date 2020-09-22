@@ -1,5 +1,5 @@
 ---
-title: '方法: ローカライズされたブートス トラップ パッケージを作成する |Microsoft Docs'
+title: '方法: ローカライズされたブートストラップパッケージを作成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440653"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842264"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートス トラップ パッケージを作成します。
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートストラップ パッケージを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ブートストラップ パッケージを作成したら、さらに 2 つのファイルをロケールごとに作成して、ローカライズ版のブートストラップ パッケージを作成できます。2 つのファイルとは、ソフトウェア ライセンス条項ファイル (eula.rtf など) とパッケージ マニフェスト (package.xml) です。  
   
  既定では、Visual Studio 2010 には .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0、および F# Runtime 4.0 用のローカライズ版のブートストラップ パッケージのみが用意されています。 3 つのステップを実行することにより、その他のブートストラップのローカライズ版パッケージを作成できます。  
   
-1. \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages のロケール名の後という名前のフォルダーを作成する\\*BootstrapperPackageName*します。  
+1. SDKs\Windows\v7.0A\Bootstrapper\Packages BootstrapperPackageName のロケール名の後に、という名前のフォルダーを作成し \\ *BootstrapperPackageName*ます。  
   
 2. ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。  
   
@@ -42,16 +42,16 @@ ms.locfileid: "63440653"
   
 1. ロケール名に基づいた名前のフォルダーを作成します。  
   
-     32 ビットのコンピューターで \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages でフォルダーを作成\\*BootstrapperPackageName*\ フォルダーです。  
+     32ビットのコンピューターで、SDKs\Windows\v7.0A\Bootstrapper\Packages BootstrapperPackageName \ フォルダーにフォルダーを作成し \\ *BootstrapperPackageName*ます。  
   
-     64 ビット コンピューターで、\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages でフォルダーを作成\\*BootstrapperPackageName*\ フォルダーです。  
+     64ビットのコンピューターで、\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages BootstrapperPackageName \ フォルダーにあるフォルダーを作成し \\ *BootstrapperPackageName*ます。  
   
      次の表は、ロケールに合わせるために使用できるフォルダー名を示します。  
   
     |ロケール|フォルダー名|  
     |------------|-----------------|  
-    |簡体字中国語|zh-Hans|  
-    |繁体字中国語|zh-Hant|  
+    |簡体中国語|zh-Hans|  
+    |繁体中国語|zh-Hant|  
     |チェコ語|cs|  
     |ドイツ語|de|  
     |英語|en|  
@@ -67,7 +67,7 @@ ms.locfileid: "63440653"
   
 2. ブートストラップ パッケージのソフトウェア ライセンス条項を示すファイルを作成し、新しいフォルダーに格納します。  
   
-3. package.xml という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、「[方法 :パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)します。  
+3. package.xml という名前のパッケージ マニフェストを作成し、新しいフォルダーに格納します。 詳細については、「 [方法: パッケージマニフェストを作成](../deployment/how-to-create-a-package-manifest.md)する」を参照してください。  
   
 4. パッケージ マニフェストの `<Strings>` セクションを更新して、文字列がロケールに対応する正しい言語で表示されるようにします。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "63440653"
   
 6. package.xml ファイルを保存します。  
   
-## <a name="see-also"></a>関連項目  
- [ブートストラップ パッケージの作成](../deployment/creating-bootstrapper-packages.md)   
- [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)   
- [方法: パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)
+## <a name="see-also"></a>参照  
+ [ブートストラップパッケージの作成](../deployment/creating-bootstrapper-packages.md)   
+ [アプリケーションの展開の前提条件](../deployment/application-deployment-prerequisites.md)   
+ [方法: パッケージマニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)

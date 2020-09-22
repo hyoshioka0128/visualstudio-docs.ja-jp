@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986149"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807964"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows インストーラーを使用した Office ソリューションの配置
 
@@ -502,9 +502,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
    ビルドが完了したら、 **Officeaddinsetup**プロジェクトの*setup.exe*ファイルを次の場所で見つけることができます。 <em>officeaddinsetupprojectroot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [Office ソリューションの配置の前提条件](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Office ソリューションの配置の前提条件](/previous-versions/bb608617(v=vs.110))
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)
 - [カスタムドキュメントプロパティの概要](../vsto/custom-document-properties-overview.md)

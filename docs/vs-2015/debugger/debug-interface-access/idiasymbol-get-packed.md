@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_packed |Microsoft Docs
+title: 'IDiaSymbol:: get_packed |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 90351c3319f8354685ae0d907379b8446f76cb7f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824134"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842097"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ユーザー定義データ型 (UDT) が搭載されたかどうかを指定するフラグを取得します。  
+ユーザー定義データ型 (UDT) がパックされているかどうかを指定するフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,16 +35,16 @@ HRESULT get_packed ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`UDT がパッキング; 場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` UDT がパックされている場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- パック手段をメモリ境界に揃えるの介在する埋め込みなしで、UDT のすべてのメンバーが、できるだけ近くに配置されます。  
+## <a name="remarks"></a>注釈  
+ [パック済み] は、UDT のすべてのメンバーができるだけ近い場所に配置されることを意味し、メモリ境界に合わせて埋め込みは行われません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442465"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90841877"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,26 +43,26 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>必須オプション  
  **PF** は、次のオプションのいずれかを含むコマンド ラインでのみ指定できます。  
   
- **Launch:** `AppName`  
+ **起動:**`AppName`  
  プロファイラーと、AppName で指定されたアプリケーションを起動します。  
   
- **Attach:** `PID`  
+ **アタッチ:**`PID`  
  プロファイラーを AppName で指定されたプロセスにアタッチします。  
   
 ## <a name="invalid-options"></a>無効なオプション  
  以下のオプションは、**PF** と同じコマンド ラインでは指定できません。  
   
- **Timer**[ **:** `Cycles`]  
+ **タイマー**[**:** `Cycles` ]  
  サンプリング イベントをプロセッサのクロック サイクルに設定し、必要に応じてサンプリング間隔を `Cycles` に設定します。 既定の Timer 間隔は 10,000,000 です。  
   
- **Sys**[ **:** `Events`]  
+ **Sys**[**:** `Events` ]  
  サンプリング イベントを、プロファイリングされたアプリケーションからオペレーティング システムのカーネル (syscalls) への呼び出しに設定し、必要に応じて、サンプリング間隔を `Events` に設定します。 既定の Sys 間隔は 10 です。  
   
- **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
+ **カウンター:** `Name`[`,Reload`[`,FriendlyName`]]  
  サンプリング イベントを、`Name` で指定された CPU パフォーマンス カウンターに設定し、サプリング間隔を `Reload` に設定します。  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ .NET メモリ データを収集します。 既定 (**割り当て**) では、すべてのメモリ割り当てイベントでデータが収集されます。 **Lifetime**パラメーターを指定すると、ガベージコレクションイベントごとにデータも収集されます。  
   
 ## <a name="example"></a>例  
  この例では、プロファイリング サンプル イベントをページ フォールトに設定し、サンプリング間隔を 20 のページ フォールトに設定する方法を示します。  
@@ -72,8 +72,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

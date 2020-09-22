@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2015 の複数のバージョンのサポート |Microsoft Docs
+title: 複数バージョンの Visual Studio 2015 のサポート |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,38 +13,38 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431368"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841349"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>複数バージョンの Visual Studio をサポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-用語*サイド バイ サイドで*をインストールして同じコンピューター上の製品の複数のバージョンを維持することを意味します。 つまり、Vspackage の場合、ユーザーが同じコンピューターにインストールされているいくつかの Visual Studio のバージョンを持つことができます。 ただし、1 つのバージョンの Visual Studio に読み込まれる Vspackage のサイド バイ サイドのバージョンを含めることはできません。
+この用語は、同じコンピューターに複数のバージョンの製品をインストール *して維持* することを意味します。 Vspackage では、ユーザーは複数の Visual Studio バージョンを同じコンピューターにインストールできます。 ただし、Vspackage のサイドバイサイドバージョンを1つのバージョンの Visual Studio に読み込むことはできません。
 
- VSPackage でサイド バイ サイドのバージョンの Visual Studio に読み込まれることを行う前に、次を検討してください。
+ VSPackage を Visual Studio のサイドバイサイドバージョンに読み込む前に、次のことを考慮してください。
 
-- サイド バイ サイドでの実装戦略に従うを決定する必要があります。
+- 実行する並列実装方法を決定する必要があります。
 
-     詳細については、次を参照してください。[共有間で選択するとバージョン管理 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)します。
+     詳細については、「 [共有バージョンとバージョン付き Vspackage の選択](../extensibility/choosing-between-shared-and-versioned-vspackages.md)」を参照してください。
 
-- ソリューションとプロジェクトのファイル形式は、実装戦略に収める必要があります。
+- ソリューションとプロジェクトファイルの形式は、実装戦略に適合している必要があります。
 
-     詳細については、次を参照してください。[カスタム プロジェクトのアップグレード](../misc/upgrading-custom-projects.md)と[サイド バイ サイドで配置のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)します。
+     詳細については、「 [カスタムプロジェクトのアップグレード](../misc/upgrading-custom-projects.md) 」および「 [サイドバイサイド配置用のファイル名拡張子の登録](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)」を参照してください。
 
-- バージョン管理されたコンポーネントは、またすべてのバージョン間で共有されるコンポーネントを正しくインストールおよび登録できるように、インストーラーは、実装戦略を処理する必要があります。
+- インストーラーは、バージョン管理されたコンポーネントと、すべてのバージョン間で共有されるコンポーネントが正しくインストールおよび登録されるように、実装戦略を処理する必要があります。
 
-     詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../extensibility/internals/installing-vspackages-with-windows-installer.md)また[コンポーネント管理](../extensibility/internals/component-management.md)します。
+     詳細については、「Windows インストーラーと[コンポーネント管理](../extensibility/internals/component-management.md)を[使用した vspackage のインストール](../extensibility/internals/installing-vspackages-with-windows-installer.md)」を参照してください。
 
     > [!NOTE]
-    > Visual Studio のバージョンをインストールするの対応するバージョンをインストールしても、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。 たとえば、バージョン 4.0 と 4.5 の Visual Studio 2010 および Visual Studio 2012 を同じコンピューターにインストールするインストールも、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、それぞれします。
+    > Visual Studio のバージョンをインストールすると、対応するバージョンのもインストールさ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] れます。 たとえば、同じコンピューターに Visual Studio 2010 と Visual Studio 2012 をインストールすると、それぞれのバージョン4.0 と4.5 もインストールさ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] れます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [共有との間で選択してバージョン管理 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md) VSPackage でのサイド バイ サイドで問題を解決する方法について説明します。
+ [共有バージョンとバージョン付き Vspackage の選択](../extensibility/choosing-between-shared-and-versioned-vspackages.md) VSPackage のサイドバイサイドの問題を解決する方法について説明します。
 
- [サイド バイ サイドで配置のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)サイド バイ サイドのシナリオでは、VSPackage がファイルの関連付けを登録する方法について説明します。
+ [サイドバイサイド配置のためにファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md) VSPackage がサイドバイサイドのシナリオでファイルの関連付けを登録する方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
- [Vspackage のインストール](../misc/installing-vspackages.md)ビルドし、Vspackage をインストールする方法と同時に複数のバージョンの Visual Studio を実行しているユーザーをサポートする方法について説明します。
+ [Vspackage のインストール](../misc/installing-vspackages.md) Vspackage をビルドしてインストールする方法と、複数のバージョンの Visual Studio を同時に実行しているユーザーをサポートする方法について説明します。

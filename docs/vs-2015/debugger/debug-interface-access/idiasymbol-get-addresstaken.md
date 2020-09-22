@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_addresstaken |Microsoft Docs
+title: 'IDiaSymbol:: get_addressTaken |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db28ad7fda7224c81bbf5bf4bfa772f6eaaa9800
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64829213"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842197"
 ---
-# <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
+# <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-別のシンボルがシンボルのアドレスを参照するかどうかを示すフラグを取得します。  
+別のシンボルがこのシンボルのアドレスを参照しているかどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,28 +35,28 @@ HRESULT get_addressTaken ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`別のシンボルは、このアドレスを参照している場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力 `TRUE` 別のシンボルがこのアドレスを参照している場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
 ## <a name="example"></a>例  
- 次の例では、`B`参照`A`します。 そのため、シンボル`A`の`get_addressTaken`メソッドを返します。`TRUE`します。  
+ 次の例では、が `B` 参照 `A` します。 そのため、シンボル `A` の `get_addressTaken` メソッドはを返し `TRUE` ます。  
   
 ```cpp#  
 int A  = 0;  
 int* B = &A;  
 ```  
   
-## <a name="requirements"></a>必要条件  
+## <a name="requirements"></a>要件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK v7.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

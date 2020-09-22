@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580645"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740145"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張機能の配置
 
@@ -234,11 +234,11 @@ SharePoint ツール拡張機能の VSIX パッケージを手動で作成する
 
     - 要素の `Microsoft.VisualStudio.MefComponent` 下に要素を追加 `Assets` し、新しい要素の値を、VSIX パッケージ内の拡張機能を実装するアセンブリの相対パスに設定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-    - SharePoint のサーバーオブジェクトモデルを呼び出す SharePoint コマンドが拡張機能に含まれている場合は、要素の下に要素を追加し `Microsoft.VisualStudio.Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内の SharePoint コマンドを実装するアセンブリの相対パスに設定します。 詳細については、「 [Asset 要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)」を参照してください。
+    - SharePoint のサーバーオブジェクトモデルを呼び出す SharePoint コマンドが拡張機能に含まれている場合は、要素の下に要素を追加し `Microsoft.VisualStudio.Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内の SharePoint コマンドを実装するアセンブリの相対パスに設定します。 詳細については、「 [Asset 要素 (VSX Schema)](/previous-versions/dd393737(v=vs.110))」を参照してください。
 
     - 拡張機能にプロジェクトテンプレートまたは項目テンプレートが含まれている場合は、要素の下に要素 `ProjectTemplate` または要素を追加し `ItemTemplate` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のテンプレートが格納されているフォルダーの相対パスに設定します。 詳細については、「 [Projecttemplate 要素 (VSX schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) 」および「 [ITEMTEMPLATE 要素 (VSX schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))」を参照してください。
 
-    - 拡張機能にプロジェクトテンプレートまたは項目テンプレートのカスタムウィザードが含まれている場合は、要素の下に要素を追加し `Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のアセンブリの相対パスに設定し、 `AssemblyName` 属性を完全なアセンブリ名 (バージョン、カルチャ、公開キートークンを含む) に設定します。 詳細については、「 [Dependency 要素 (VSX Schema)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)」を参照してください。
+    - 拡張機能にプロジェクトテンプレートまたは項目テンプレートのカスタムウィザードが含まれている場合は、要素の下に要素を追加し `Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のアセンブリの相対パスに設定し、 `AssemblyName` 属性を完全なアセンブリ名 (バージョン、カルチャ、公開キートークンを含む) に設定します。 詳細については、「 [Dependency 要素 (VSX Schema)](/previous-versions/dd393682(v=vs.110))」を参照してください。
 
 ### <a name="example"></a>例
 
@@ -264,9 +264,9 @@ SharePoint ツール拡張機能の VSIX パッケージを手動で作成する
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
-- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)
+- [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Visual Studio の SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio での SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

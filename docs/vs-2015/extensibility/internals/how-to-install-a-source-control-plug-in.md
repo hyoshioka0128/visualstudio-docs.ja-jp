@@ -1,5 +1,5 @@
 ---
-title: '方法: ソース管理プラグインのインストール |Microsoft Docs'
+title: '方法: ソース管理プラグインをインストールする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,111 +12,111 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 997e734f6d2ab6bcf70e3a4843ac66564683c79b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443310"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842247"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインのインストール
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソース管理プラグインを作成するには、3 つの手順が含まれます。  
+ソース管理プラグインの作成には、次の3つのステップが含まれます。  
   
-1. このドキュメントのソース管理プラグイン API リファレンスのセクションで定義された関数では、DLL を作成します。  
+1. このドキュメントの「ソース管理プラグイン API リファレンス」で定義されている関数を使用して、DLL を作成します。  
   
-2. ソース管理プラグイン API 定義の関数を実装します。 ときに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼び出し、インターフェイスとダイアログ ボックスから使用できるように、プラグイン。  
+2. ソース管理プラグイン API 定義関数を実装します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]が呼び出されたときに、プラグインからインターフェイスとダイアログボックスを使用できるようにします。  
   
-3. DLL を登録するには、適切なレジストリ エントリを作成します。  
+3. 適切なレジストリエントリを作成して、DLL を登録します。  
   
 ## <a name="integration-with-visual-studio"></a>Visual Studio との統合  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ソース管理プラグイン API に準拠するソース管理プラグインをサポートしています。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、ソース管理プラグイン API に準拠するソース管理プラグインがサポートされています。  
   
-### <a name="registering-the-source-control-plug-in"></a>ソース管理プラグインを登録します。  
- ソースをまず見つける必要があります、実行中の統合開発環境 (IDE) は、ソース管理システムを呼び出すことが、前に、API をエクスポートするプラグインの DLL を制御します。  
+### <a name="registering-the-source-control-plug-in"></a>ソース管理プラグインを登録しています  
+ 実行中の統合開発環境 (IDE) がソース管理システムを呼び出すことができるようにするには、まず、API をエクスポートするソース管理プラグイン DLL を見つける必要があります。  
   
-##### <a name="to-register-the-source-control-plug-in-dll"></a>ソース管理プラグインの DLL を登録するには  
+##### <a name="to-register-the-source-control-plug-in-dll"></a>ソース管理プラグイン DLL を登録するには  
   
-1. ソフトウェアのサブキー、製品名のサブキーを続けて、会社名のサブキーを指定するには、HKEY_LOCAL_MACHINE キーの下の 2 つのエントリを追加します。 パターンは、hkey_local_machine \software\\ *[会社名]*\\ *[製品名]*\\ *[entry]* = 値。 SCCServerName と SCCServerPath、2 つのエントリが常に呼び出されます。 それぞれは、通常の文字列です。  
+1. Company name サブキーの後に product name サブキーを指定して、SOFTWARE サブキーの HKEY_LOCAL_MACHINE キーの下に2つのエントリを追加します。 パターンは、\ ソフトウェア \\ *[会社名]* \\ *[製品名]* \\ *[entry]* = value HKEY_LOCAL_MACHINE ます。 2つのエントリは、常に SCCServerName および SCCServerPath と呼ばれます。 各は通常の文字列です。  
   
-     たとえば、会社名が Microsoft と、ソース管理製品である場合の名前は SourceSafe、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe するレジストリのパスとなります。 このサブキー、SCCServerName、最初のエントリは、製品の名前を付け、ユーザーが判読できる文字列です。 2 番目のエントリでは、SCCServerPath は、ソースへの完全パスに接続する IDE プラグインの DLL を制御します。 レジストリ エントリの例を次に示します。  
+     たとえば、会社名が Microsoft で、ソース管理製品に SourceSafe という名前が付いている場合、このレジストリパスは HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\SourceSafe. になります。 このサブキーでは、最初のエントリ SCCServerName は、ユーザーが判読できる、製品の名前付きの文字列です。 2番目のエントリである SCCServerPath は、IDE が接続するソース管理プラグイン DLL への完全パスです。 レジストリエントリの例を次に示します。  
   
-    |レジストリ エントリの例|サンプル値|  
+    |レジストリエントリのサンプル|値の例|  
     |---------------------------|------------------|  
-    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerName|Microsoft Visual SourceSafe|  
-    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|c:\vss\win32\ssscc.dll|  
+    |HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\SourceSafe\SCCServerName|Microsoft Visual SourceSafe|  
+    |HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\SourceSafe\SCCServerPath|c:\vss\win32\ssscc.dll|  
   
     > [!NOTE]
-    > SCCServerPath は、SourceSafe プラグインへの完全パスです。 ソース管理プラグインでは、同じレジストリ エントリのパスが異なる会社と製品の名前を使用します。  
+    > SCCServerPath は、SourceSafe プラグインへの完全なパスです。 ソース管理プラグインでは、異なる会社名と製品名が使用されますが、レジストリエントリのパスは同じです。  
   
-2. ソース管理プラグインの動作を変更するのには、次のオプションのレジストリ エントリを使用できます。 これらのエントリは、SccServerName と SccServerPath として同じサブキーに移動します。  
+2. 次のオプションのレジストリエントリを使用して、ソース管理プラグインの動作を変更できます。 これらのエントリは、SccServerName および SccServerPath と同じサブキーで実行されます。  
   
-    - コントロールのプラグ-でのプラグインの選択リストに表示される、ソースを設定したくない場合、HideInVisualStudioregistry エントリを使用できます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 ソース管理プラグインへの自動切り替えは、このエントリによっても影響します。 このエントリの用途の 1 つは、ソース管理プラグインを置換するソース管理パッケージを指定するが、ソース管理プラグインのソース管理パッケージを使用してから移行するユーザーを容易にできるようにするかどうかは。 ソース管理パッケージがインストールされている場合は、プラグインを非表示にこのレジストリ エントリを設定します。  
+    - HideInVisualStudioregistry エントリは、ソース管理プラグインがのプラグイン選択リストに表示されないようにする場合に使用でき [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 このエントリは、ソース管理プラグインへの自動切り替えにも影響します。 このエントリの使用方法の1つとして、ソース管理プラグインを置き換えるソース管理パッケージを指定する場合がありますが、ソース管理プラグインを使用するからソース管理パッケージへの移行を簡単に行うことをお勧めします。 ソース管理パッケージがインストールされると、このレジストリエントリが設定され、プラグインが非表示になります。  
   
-         HideInVisualStudio は、DWORD 値であり、プラグインを非表示にする 1 またはプラグインを表示するには 0 に設定されています。 レジストリ エントリが表示されない場合、既定の動作は、プラグインを表示するのには。  
+         HideInVisualStudio は DWORD 値で、プラグインを非表示にするには1に、プラグインを表示するには0に設定されています。 レジストリエントリが表示されない場合、既定の動作ではプラグインが表示されます。  
   
-    - DisableSccManager のレジストリ エントリを無効にするか、または非表示に使用できる、**起動\<ソース管理サーバー >** 通常下に表示されるメニュー オプション、**ファイル** ->  **ソース管理** をクリックします。 このメニューを選択するオプションを呼び出し、 [SccRunScc](../../extensibility/sccrunscc-function.md)関数。 外部プログラムのソース管理プラグインでは対応していないとする可能性がありますを無効または非表示にもそのため、**起動**メニュー オプション。  
+    - Disablesccmanager レジストリエントリを使用すると、[**ファイル**ソース管理] サブメニューに通常表示される [ ** \<Source Control Server> 起動**] メニューオプションを無効にしたり、非表示にしたりでき  ->  **Source Control**ます。 このメニューオプションを選択すると、 [SccRunScc](../../extensibility/sccrunscc-function.md) 関数が呼び出されます。 ソース管理プラグインが外部プログラムをサポートしていない可能性があるため、[ **起動** ] メニューオプションを無効にしたり、非表示にしたりすることもできます。  
   
-         DisableSccManager は DWORD 値が 0 に設定を有効にする、**起動\<ソース管理サーバー >** メニュー オプションを 1 に設定 メニュー オプションを無効にして、メニュー オプションを非表示には 2 に設定します。 このレジストリ エントリが表示されない場合、既定の動作では、メニュー オプションを説明します。  
+         DisableSccManager は、DWORD 値を0に設定すると、 **[ \<Source Control Server> 起動**] メニューオプションが有効になります。また、メニューオプションを無効にするには1に設定し、メニューオプションを非表示にするには [2] に設定します。 このレジストリエントリが表示されない場合、既定の動作ではメニューオプションが表示されます。  
   
-    |レジストリ エントリの例|サンプル値|  
+    |レジストリエントリのサンプル|値の例|  
     |---------------------------|------------------|  
-    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
-    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
+    |HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
+    |HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3. サブキー、SourceCodeControlProvider、ソフトウェアのサブキー HKEY_LOCAL_MACHINE キーの下に追加します。  
+3. ソフトウェアサブキーの HKEY_LOCAL_MACHINE キーの下に、サブキー SourceCodeControlProvider を追加します。  
   
-     このサブキーは、レジストリ エントリ ProviderRegKey を手順 1. でレジストリに配置したサブキーを表す文字列に設定してされます。 パターンは、HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey ソフトウェア =\\ *[会社名]*\\ *[製品名]* します。  
+     このサブキーの下で、レジストリエントリ ProviderRegKey は、手順 1. でレジストリに配置したサブキーを表す文字列に設定されます。 パターンは HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\providerregkey = SOFTWARE \\ *[company name]* \\ *[product name]* です。  
   
-     このサブキーのサンプルの内容を次に示します。  
+     このサブキーのサンプルコンテンツを次に示します。  
   
-    |レジストリ エントリ|サンプル値|  
+    |レジストリ エントリ|値の例|  
     |--------------------|------------------|  
-    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
+    |HKEY_LOCAL_MACHINE \SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    > ソース管理プラグインは、同じサブキーとエントリの名前を使用してが異なる値になります。  
+    > ソース管理プラグインでは同じサブキーとエントリ名が使用されますが、値は異なります。  
   
-4. SourceCodeControlProvider サブキー InstalledSCCProviders をという名前のサブキーを作成し、そのサブキーの下の 1 つのエントリを配置します。  
+4. SourceCodeControlProvider サブキーの下に、「」という名前のサブキーを作成し、そのサブキーの下に1つのエントリを配置します。  
   
-     このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[表示名]* ソフトウェア =\\ *[会社名]* \\ *[製品名]* します。  
+     このエントリの名前は、ユーザーが判読できるプロバイダーの名前 (SCCServerName エントリに指定された値と同じ) で、値は、手順 1. で作成したサブキーと同じになります。 パターンは HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders \\ *[表示名]* = ソフトウェア \\ *[company name]* \\ *[product name]* です。  
   
-     例えば:  
+     次に例を示します。  
   
-    |レジストリ エントリの例|サンプル値|  
+    |レジストリエントリのサンプル|値の例|  
     |---------------------------|------------------|  
-    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
+    |HKEY_LOCAL_MACHINE \SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    > 複数ソース管理プラグインをこの方法で登録されていることができます。 これは、どのように[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストールされているすべてのソース管理プラグイン API ベースのプラグインを検索します。  
+    > この方法では、複数のソース管理プラグインを登録できます。 これは、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] インストールされているすべてのソース管理プラグイン API ベースのプラグインを検索する方法です。  
   
 ## <a name="how-an-ide-locates-the-dll"></a>IDE が DLL を検索する方法  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE は、2 つのソースを見つける方法は、プラグインの DLL を制御します。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE には、ソース管理プラグイン DLL を検索する方法が2つあります。  
   
-- 既定のソース管理プラグインを検索しをサイレント モードで接続します。  
+- 既定のソース管理プラグインを検索し、サイレントモードで接続します。  
   
-- 検索登録されているすべてのソース管理プラグインを元のユーザーが 1 つ選択しました。  
+- ユーザーが選択した、登録されているすべてのソース管理プラグインを検索します。  
   
-  最初の方法で、DLL を検索するには、IDE はエントリ ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider サブキーの下で検索します。 このエントリの値は、別のサブキーを指します。 IDE は、その 2 つ目のサブキー HKEY_LOCAL_MACHINE の下で SccServerPath をという名前のエントリを検索します。 このエントリの値は、DLL を IDE を指します。  
-  
-> [!NOTE]
-> IDE では、相対パス (たとえば、.\NewProvider.DLL) から Dll が読み込まれません。 DLL への完全なパスを指定する必要があります (たとえば、c:\Providers\NewProvider.DLL)。 これは、承認されていないか、権限を借用したプラグインの Dll の読み込みを防止することで、IDE のセキュリティを強化します。  
-  
- 2 番目の方法で、DLL を検索する IDE ですべてのエントリの HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders サブキーの下で検索<em>します。</em> 各エントリは、名前と値があります。 IDE では、これらの名前の一覧を表示、ユーザーに<em>します。</em> ユーザーが 名前を IDE は、サブキーを指している選択した名前の値を検索します。 IDE は、そのサブキー hkey_local_machine SccServerPath をという名前のエントリを探します。 そのエントリの値は、適切な DLL を IDE を指します。  
-  
- ソース管理プラグインは、DLL が見つからないのどちらの方法をサポートして、その結果、ProviderRegKey、過去の設定の上書きを設定する必要があります。 さらに、その必要があります自体の一覧に追加 InstalledSccProviders のため、ユーザーが使用するには、ソース管理プラグインの選択を持つことができます。  
+  最初の方法で DLL を検索するために、IDE では、\Software\SourceCodeControlProvider サブキーのエントリ ProviderRegKey が HKEY_LOCAL_MACHINE 検索されます。 このエントリの値は、別のサブキーを指しています。 次に、HKEY_LOCAL_MACHINE の下の2番目のサブキーで SccServerPath という名前のエントリが検索されます。 このエントリの値により、IDE が DLL を参照します。  
   
 > [!NOTE]
-> 指定されたコンピューターでプラグイン既定のソース管理として 1 つだけのソース管理プラグインを登録できます HKEY_LOCAL_MACHINE キーを使用しているため (ただし、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]どのソース管理プラグインの実際に使用するかを決定できる、特定のソリューションです。) インストール プロセス中にかどうか、ソース管理プラグインは既に設定; を確認します。そうである場合、ユーザーに求めます新しいソース コントロールの既定値としてインストールされているプラグインを設定するかどうか。 アンインストール-インストール中に削除しないでくださいすべてソース管理プラグインで HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; に共通するその他のレジストリ サブキー特定の SCC サブキーのみを削除します。  
+> IDE は、相対パス (.\NewProvider.DLL など) から Dll を読み込みません。 DLL への完全なパスを指定する必要があります (たとえば、c:\Providers\NewProvider.DLL)。 これにより、未承認または偽装されたプラグイン Dll の読み込みを防ぐことができ、IDE のセキュリティが強化されます。  
   
-## <a name="how-the-ide-detects-version-1213-support"></a>IDE はバージョン 1.2 と 1.3 のサポートを検出する方法  
- 方法は[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プラグインがサポートのソース管理プラグイン API バージョン 1.2 と 1.3 機能かどうかを検出しますか? 高度な機能を宣言するには、ソース管理プラグインは対応する関数を実装する必要があります。  
+ 2番目の方法で DLL を検索するために、IDE では、すべてのエントリに対して HKEY_LOCAL_MACHINE \Software\SourceCodeControlProvider\InstalledSCCProviders サブキーが検索され<em>ます。</em> 各エントリには、名前と値があります。 IDE では、これらの名前の一覧がユーザーに表示され<em>ます。</em> ユーザーが名前を選択すると、選択した名前の値が IDE によって検索され、サブキーが参照されます。 IDE は、HKEY_LOCAL_MACHINE の下で、そのサブキーに SccServerPath という名前のエントリを検索します。 このエントリの値は、IDE で正しい DLL を指しています。  
   
- まず、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]呼び出しによって返される値をチェック、 [SccGetVersion](../../extensibility/sccgetversion-function.md)します。 1.2 以上があります。  
+ ソース管理プラグインは、DLL を検索するための両方の方法をサポートする必要があります。その結果、ProviderRegKey を設定して、以前の設定を上書きします。 さらに重要なこととして、ユーザーが使用するソース管理プラグインを選択できるように、それ自体をインストールされている Sccproviders の一覧に追加する必要があります。  
   
- 次に、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を調べることで、特定の新しい機能がサポートされているかどうか、`lpSccCaps`の引数、 [SccInitialize](../../extensibility/sccinitialize-function.md)します。  
+> [!NOTE]
+> HKEY_LOCAL_MACHINE キーが使用されるため、特定のコンピューターに既定のソース管理プラグインとして登録できるソース管理プラグインは1つだけです (ただし、ユーザーは、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 特定のソリューションに対して実際に使用するソース管理プラグインを決定できます)。 インストールプロセス中に、ソース管理プラグインが既に設定されているかどうかを確認します。その場合は、インストールする新しいソース管理プラグインを既定として設定するかどうかをユーザーに確認してください。 インストールの解除中に、HKEY_LOCAL_MACHINE \SOFTWARE\SourceCodeControlProvider; のすべてのソース管理プラグインに共通する他のレジストリサブキーを削除しないでください。特定の SCC サブキーのみを削除します。  
   
- 両方の条件が満たされた場合は、バージョン 1.2 および 1.3 でサポートされる新しい関数を呼び出すことできます。  
+## <a name="how-the-ide-detects-version-1213-support"></a>IDE がバージョン 1.2/1.3 サポートを検出する方法  
+ で [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プラグインがソース管理プラグイン API バージョン1.2 と1.3 の機能をサポートしているかどうかを検出する方法 高度な機能を宣言するには、ソース管理プラグインが対応する関数を実装する必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [作業の開始](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+ まず、は [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] [Sccgetversion](../../extensibility/sccgetversion-function.md)を呼び出して返された値をチェックします。 1.2 以上である必要があります。  
+  
+ 次に、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] `lpSccCaps` [sccinitialize](../../extensibility/sccinitialize-function.md)の引数を調べて、特定の新機能がサポートされているかどうかを判断します。  
+  
+ これら両方の条件が満たされている場合は、バージョン1.2 および1.3 でサポートされている新しい関数を呼び出すことができます。  
+  
+## <a name="see-also"></a>参照  
+ [はじめに](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978376"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810955"
 ---
 # <a name="secure-deployment"></a>セキュリティで保護されたデプロイ
   Office ソリューションを作成すると、開発用コンピューターが自動的に更新され、プロジェクト内のコードが実行できるようになります。 ただし、ソリューションを配置するときは、証明書を使用してソリューションに署名するか、信頼プロンプトキーを使用することによって、信頼の決定の基礎となる証拠を提供する必要があり [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 詳細については、「 [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)」を参照してください。
@@ -46,5 +46,5 @@ ms.locfileid: "62978376"
 
 ## <a name="see-also"></a>こちらもご覧ください
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
-- [Office ソリューションを実行またはホストするためのコンピューターの準備](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+- [Office ソリューションを実行またはホストするためのコンピューターの準備](/previous-versions/bb772092(v=vs.110))
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

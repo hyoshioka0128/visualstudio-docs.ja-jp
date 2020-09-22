@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce の発行バージョンを設定する |Microsoft Docs'
+title: ClickOnce の発行バージョンを設定する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5e1d91de14e3da4f188c276ef7dd74943d8978
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf99590bb78c425f570128ff7fae03c61d644b47
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382121"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851776"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを設定する
 プロパティは、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` 発行するアプリケーションが更新プログラムとして扱われるかどうかを決定します。 バージョンがインクリメントされるたびに、アプリケーションが更新プログラムとして発行されます。
@@ -42,7 +42,7 @@ ms.locfileid: "85382121"
     > [!NOTE]
     > バージョン番号を減らすことはできません。これを行うと、予測できない更新動作が発生する可能性があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)
 - [方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

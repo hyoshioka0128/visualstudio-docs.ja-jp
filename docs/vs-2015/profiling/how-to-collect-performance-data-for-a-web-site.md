@@ -1,5 +1,5 @@
 ---
-title: 方法:Web サイトのパフォーマンス データを収集する | Microsoft Docs
+title: '方法: Web サイトのパフォーマンス データを収集する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432798"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841456"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集します。
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**パフォーマンス ウィザード** を使用して、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションのパフォーマンス データを収集できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で開かれた Web アプリケーションをプロファイリングすることも、ローカル コンピューターに置かれ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE で開かれていない [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web サイトをプロファイリングすることもできます。  
+**パフォーマンスウィザード**を使用して、Web アプリケーションのパフォーマンスデータを収集でき [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で開かれた Web アプリケーションをプロファイリングすることも、ローカル コンピューターに置かれ、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] IDE で開かれていない [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Web サイトをプロファイリングすることもできます。  
   
 > [!NOTE]
 > **パフォーマンス ウィザード** を使用して、階層の相互作用(TIP) データ、JScript パフォーマンス データ、または両方を追加してプロファイル データを収集することができます。 TIP オプションは、サーバー側のプロセスからデータを収集します。 JScript プロファイリングは、ローカルまたはリモートの Web サイトで実行されているスクリプトからデータを収集します。 ほとんどの場合、1 つのオプションのみを選択する必要があります。  
@@ -42,7 +42,7 @@ ms.locfileid: "63432798"
   
 - 一部のユーザーが他のすべてのユーザーに対してプロファイリングへのアクセスを拒否することがあります。  
   
-  詳細については、「[プロファイルと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md)」および「[VSPerfCmd](../profiling/vsperfcmd.md)」の ADMIN オプションを参照してください。  
+  詳細については、「 [プロファイリングと Windows Vista のセキュリティ](../profiling/profiling-and-windows-vista-security.md) 」および「 [VSPerfCmd](../profiling/vsperfcmd.md)の管理オプション」を参照してください。  
   
 ### <a name="to-profile-a-web-site-project"></a>Web サイト プロジェクトをプロファイリングする  
   
@@ -80,11 +80,11 @@ ms.locfileid: "63432798"
   
 5. ウィザードの 3 番目のページの **[Web アプリケーションを実行する URL またはパス]** ボックスで、アプリケーションのホーム ページの URL を入力し、 **[次へ]** をクリックします。  
   
-   - サーバー (IIS) ベースの Web サイトの場合は、**http://localhost/MySite/default.aspx** などの URL を入力します。 これにより、ローカル コンピューターの MySite のアプリケーション ルートで [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションがプロファイリングされ、そのサイトの default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。  
+   - サーバー (IIS) ベースの Web サイトの場合は、 **http://localhost/MySite/default.aspx** などの URL を入力します。 これにより、ローカル コンピューターの MySite のアプリケーション ルートで [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションがプロファイリングされ、そのサイトの default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。  
   
-   - ファイル ベースの Web サイトの場合は、file///**c:\WebSites\MySite\default.aspx**のようなパスを入力します。 これにより、c:\webSites\MySite に置かれている [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションがプロファイリングされ、 http://localhost:nnnn/MySite/default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。  
+   - ファイル ベースの Web サイトの場合は、file///**c:\WebSites\MySite\default.aspx**のようなパスを入力します。 これにより、c:\webSites\MySite に置かれている [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションがプロファイリングされ、http://localhost:nnnn/MySite/default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。  
   
-   - たとえば http URL を入力、JavaScript データを収集する外部サイトで:\//www.contoso.com します。  
+   - JavaScript データを収集する外部サイトの場合は、URL を入力します。たとえば、「http: \/ /www.contoso.com」と入力します。  
   
      詳細については、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ターゲット バイナリのプロパティ ページを参照してください。  
   
@@ -100,10 +100,10 @@ ms.locfileid: "63432798"
   
 9. ASP.NET アプリケーションのパフォーマンス セッションが作成され、ブラウザーで Web サイトが起動します。 プロファイリングする機能を実行してからブラウザーを閉じます。  
   
-     プロファイラーで、データ ファイルが生成され、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
+     プロファイラーで、データ ファイルが生成され、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] メイン ウィンドウにデータの概要ビューが表示されます。  
   
-## <a name="see-also"></a>関連項目  
- [概要](../profiling/overviews-performance-tools.md)   
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [インストルメンテーション データ値について](../profiling/understanding-instrumentation-data-values.md)   
- [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>参照  
+ [概念](../profiling/overviews-performance-tools.md)   
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
+ [インストルメンテーションデータ値について](../profiling/understanding-instrumentation-data-values.md)   
+ [サンプリングデータ値について](../profiling/understanding-sampling-data-values.md)

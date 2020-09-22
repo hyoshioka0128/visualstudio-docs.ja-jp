@@ -1,5 +1,5 @@
 ---
-title: '方法: 元に戻す管理の実装 |Microsoft Docs'
+title: '方法: 元に戻す管理を実装する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435951"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842216"
 ---
-# <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
+# <a name="how-to-implement-undo-management"></a>方法: 元に戻すの管理を実装する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-元に戻すの管理に使用される主要なインターフェイスは<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>、環境によって実装されます。 元に戻す管理をサポートするには、実装元に戻す単位 (つまり、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>、複数の個々 のステップを含むことができます。  
+復元の管理に使用される主なインターフェイスは <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> で、環境によって実装されます。 元に戻す管理をサポートするには、個別の取り消し単位を実装します (つまり、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> 複数の個別の手順を含めることができます)。  
   
- 元に戻す管理を実装する方法は、エディターが複数のビューをサポートするかどうかどうかによって異なります。 各実装の手順は、次のセクションで詳細を示します。  
+ 元に戻す管理を実装する方法は、エディターで複数のビューがサポートされているかどうかによって異なります。 各実装の手順については、次のセクションで詳しく説明します。  
   
-## <a name="cases-where-an-editor-supports-a-single-view"></a>エディターが 1 つのビューをサポートしている場合  
- このシナリオでと、エディターでは複数のビューはサポートされていません。 1 つだけのエディターと 1 つのドキュメントがあるし、元に戻すをサポートします。 次の手順を使用すると、元に戻す管理を実装します。  
+## <a name="cases-where-an-editor-supports-a-single-view"></a>エディターが単一のビューをサポートする場合  
+ このシナリオでは、エディターは複数のビューをサポートしていません。 エディターとドキュメントは1つだけであり、元に戻す機能がサポートされています。 元に戻す管理を実装するには、次の手順に従います。  
   
-#### <a name="to-support-undo-management-for-a-single-view-editor"></a>単一ビュー エディターの元に戻す管理をサポートするには  
+#### <a name="to-support-undo-management-for-a-single-view-editor"></a>単一ビューエディターの元に戻す管理をサポートするには  
   
-1. 呼び出す`QueryInterface`上、`IServiceProvider`インターフェイスのウィンドウ フレームを`IOleUndoManager`、元に戻すマネージャーにアクセスするドキュメント ビュー オブジェクトから (`IID_IOLEUndoManager`)。  
+1. `QueryInterface` `IServiceProvider` `IOleUndoManager` ドキュメントビューオブジェクトから、元に戻すマネージャー () にアクセスするために、ウィンドウフレームのインターフェイスでを呼び出し `IID_IOLEUndoManager` ます。  
   
-2. ビューはウィンドウ フレームに配置された、場合に、呼び出しに使用できること、サイトのポインターを取得します。`QueryInterface`の`IServiceProvider`します。  
+2. ビューがウィンドウフレームに配置されると、の呼び出しに使用できるサイトポインターが取得され `QueryInterface` `IServiceProvider` ます。  
   
-## <a name="cases-where-an-editor-supports-multiple-views"></a>エディターが複数のビューをサポートしている場合  
- ドキュメントとビューの分離した場合は、ドキュメント自体に関連付けられている通常の 1 つの元に戻すマネージャーです。 すべての元に戻す単位は、ドキュメント データ オブジェクトに関連付けられている 1 つの元に戻すマネージャーに配置されます。  
+## <a name="cases-where-an-editor-supports-multiple-views"></a>エディターが複数のビューをサポートする場合  
+ ドキュメントとビューの分離がある場合は、通常、ドキュメント自体に関連付けられている元に戻すマネージャーが1つあります。 すべての取り消し単位は、ドキュメントデータオブジェクトに関連付けられた1つの取り消しマネージャーに配置されます。  
   
- ドキュメント データ オブジェクトの呼び出しのうち 1 つであるビューごとに元に戻すマネージャーには、ビューのクエリではなく<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>を元に戻すマネージャーをインスタンス化するには、CLSID_OLEUndoManager のクラス識別子を指定します。 クラス識別子は、OCUNDOID.h ファイルで定義されます。  
+ ビューに対してクエリを実行するのではなく、ビューごとに1つの元に戻すマネージャーに対してクエリデータオブジェクトを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> CLSID_OLEUndoManager のクラス識別子を指定して、元に戻すマネージャーをインスタンス化します。 クラス識別子は、OCUNDOID ファイルで定義されています。  
   
- 使用する場合<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>を元に戻すマネージャー インスタンスを作成するには、環境に、元に戻すマネージャーをフックする、次の手順を使用します。  
+ を使用して <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> 独自の undo マネージャーインスタンスを作成する場合は、次の手順を使用して、元に戻すマネージャーを環境にフックします。  
   
-#### <a name="to-hook-your-undo-manager-into-the-environment"></a>環境に、元に戻すマネージャーをフックするには  
+#### <a name="to-hook-your-undo-manager-into-the-environment"></a>Undo マネージャーを環境にフックするには  
   
-1. 呼び出す`QueryInterface`から返されるオブジェクトで<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>の`IID_IOleUndoManager`します。 ポインターを格納<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>します。  
+1. `QueryInterface`に対してから返されたオブジェクトに対してを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> `IID_IOleUndoManager` ます。 へのポインターを格納 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> します。  
   
-2. 呼び出す`QueryInterface`で`IOleUndoManager`の`IID_IOleCommandTarget`します。 ポインターを格納<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。  
+2. に `QueryInterface` 対してを呼び出し `IOleUndoManager` `IID_IOleCommandTarget` ます。 へのポインターを格納 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> します。  
   
-3. リレー、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>と<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>に格納されている呼び出し`IOleCommandTarget`StandardCommandSet97 コマンドを次のインターフェイス。  
+3. をリレー <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> し、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> `IOleCommandTarget` 次の StandardCommandSet97 コマンドのためにストアドインターフェイスに呼び出します。  
   
    - cmdidUndo  
   
@@ -60,26 +60,26 @@ ms.locfileid: "63435951"
   
    - cmdidMultiLevelRedoList  
   
-4. 呼び出す`QueryInterface`で`IOleUndoManager`の`IID_IVsChangeTrackingUndoManager`します。 ポインターを格納<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>します。  
+4. に `QueryInterface` 対してを呼び出し `IOleUndoManager` `IID_IVsChangeTrackingUndoManager` ます。 へのポインターを格納 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> します。  
   
-    ポインターを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>を呼び出す、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A>メソッド。  
+    、、およびメソッドを呼び出すには、へのポインターを使用し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> ます。  
   
-5. 呼び出す`QueryInterface`で`IOleUndoManager`の`IID_IVsLinkCapableUndoManager`します。  
+5. に `QueryInterface` 対してを呼び出し `IOleUndoManager` `IID_IVsLinkCapableUndoManager` ます。  
   
-6. 呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A>、ドキュメントを実装する必要も、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient>インターフェイス。 ドキュメントが閉じられたときに呼び出す`IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`します。  
+6. ドキュメントでを呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> ます。このとき、インターフェイスも実装する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> ます。 ドキュメントが閉じられたら、を呼び出し `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient` ます。  
   
-7. ドキュメントが閉じられたときに呼び出す`QueryInterface`で元に戻すマネージャー`IID_IVsLifetimeControlledObject`します。  
+7. ドキュメントを閉じるときに、 `QueryInterface` の undo マネージャーでを呼び出し `IID_IVsLifetimeControlledObject` ます。  
   
-8. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> を呼び出す。  
+8. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> を呼び出します。  
   
-9. 変更されたドキュメントをときに呼び出す<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>のマネージャーで、`OleUndoUnit`クラス。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>メソッドは、オブジェクトへの参照を解放する通常直後に、<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>します。  
+9. ドキュメントに変更が加えられたら、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> クラスを使用してマネージャーでを呼び出し `OleUndoUnit` ます。 メソッドは、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> オブジェクトへの参照を保持するため、通常は、の直後に解放し <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> ます。  
   
-   `OleUndoManager`クラスは、1 つの元に戻すスタックのインスタンスを表します。 したがって、undo または redo の追跡されているデータ エンティティごとに 1 つの元に戻すマネージャー オブジェクトがあります。  
+   クラスは、 `OleUndoManager` 単一の undo スタックインスタンスを表します。 このため、undo または redo の追跡対象となるデータエンティティごとに1つの undo manager オブジェクトがあります。  
   
 > [!NOTE]
-> 元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。  
+> 元に戻すマネージャーオブジェクトはテキストエディターによって広く使用されていますが、テキストエディターを特定の方法でサポートしていない一般的なコンポーネントです。 複数レベルの元に戻すまたはやり直しをサポートする場合は、このオブジェクトを使用できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
  [方法: 元に戻すスタックをクリアする](../extensibility/how-to-clear-the-undo-stack.md)

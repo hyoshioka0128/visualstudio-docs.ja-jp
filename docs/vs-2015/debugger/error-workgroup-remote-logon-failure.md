@@ -1,5 +1,5 @@
 ---
-title: エラー :ワークグループ リモート ログオン エラー |Microsoft Docs
+title: エラー :ワークグループ リモート ログオン エラー | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438349"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841641"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>エラー :ワークグループ リモート ログオン エラー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "63438349"
   
 4. **[ユーザー権利の割り当て]** をクリックします。  
   
-5. **[ポリシー]** 列の **[プログラムのデバッグ]** をダブルクリックして、**[ローカル セキュリティ ポリシーの設定]** ダイアログ ボックスに現在のローカル グループ ポリシーの割り当てを表示します。  
+5. **[ポリシー]** 列の **[プログラムのデバッグ]** をダブルクリックして、 **[ローカル セキュリティ ポリシーの設定]** ダイアログ ボックスに現在のローカル グループ ポリシーの割り当てを表示します。  
   
      ![ローカル セキュリティ ポリシーのユーザー権限](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-6. 新しいユーザーを追加するには、**[ユーザーまたはグループの追加]** をクリックします。  
+6. 新しいユーザーを追加するには、 **[ユーザーまたはグループの追加]** をクリックします。  
   
 ### <a name="to-change-the-sharing-and-security-model"></a>共有とセキュリティ モデルを変更するには  
   
@@ -76,12 +76,12 @@ ms.locfileid: "63438349"
   
 3. **[セキュリティ オプション]** をクリックします。  
   
-4. **ポリシー**列をダブルクリックして**ネットワーク アクセス。ローカル アカウントの共有とセキュリティ モデル**します。  
+4. **[ポリシー]** 列で、 **[ネットワークアクセス: ローカル アカウントの共有とセキュリティ モデル]** をダブルクリックします。  
   
-5. **ネットワーク アクセス。ローカル アカウントの共有とセキュリティ モデル** ダイアログ ボックスに、値を変更**クラシック - ローカル ユーザー自身として認証** をクリックし、**適用**ボタンをクリックします。  
+5. **[ネットワーク アクセス: 共有とローカル アカウントのセキュリティ モデル]** ダイアログ ボックスで、値を **[クラシック - ローカル ユーザーがローカル ユーザーとして認証する]** に変更し、 **[適用]** をクリックします。  
   
      ![ローカル セキュリティ ポリシーのセキュリティ オプション](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
-## <a name="see-also"></a>関連項目  
- [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>参照  
+ [リモートデバッグエラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

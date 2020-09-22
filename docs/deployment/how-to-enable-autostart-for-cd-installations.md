@@ -1,5 +1,5 @@
 ---
-title: CD インストールの自動開始を有効にする方法 |Microsoft Docs
+title: CD インストールの自動開始を有効にする |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fa4830c3ea5ff840e0d58f6d31f718c28ec3fb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382446"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850944"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>方法: CD インストールの自動開始を有効にする
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Cd-rom や dvd-rom などのリムーバブルメディアを使用してアプリケーションを展開する場合は、 `AutoStart` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] メディアが挿入されたときにアプリケーションが自動的に起動するように、を有効にすることができます。
@@ -44,6 +44,6 @@ ms.locfileid: "85382446"
 
      アプリケーションが発行されると、自動実行の *.inf* ファイルが発行場所にコピーされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

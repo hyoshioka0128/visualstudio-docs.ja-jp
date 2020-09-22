@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6821b6a6504fd82e0e6180149120b71bc2daf47c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444481"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841453"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ターゲット プロセッサを指定します。  
+ターゲットプロセッサを指定します。  
   
 > [!NOTE]
-> 列挙要素の後で、プロセッサが識別される、`CV_CFL_*`プレフィックス。  
+> プロセッサは、プレフィックスの後の列挙要素で識別され `CV_CFL_*` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -97,12 +97,12 @@ typedef enum CV_CPU_TYPE_e { 
 } CV_CPU_TYPE_e;  
 ```  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値が呼び出しによって返される、 [idiasymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)メソッド。  
+## <a name="remarks"></a>解説  
+ この列挙体の値は、 [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) メソッドへの呼び出しによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスで入力候補 |Microsoft Docs
+title: 従来の言語サービスでのステートメント入力候補 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408468"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90841696"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>従来の言語サービスでのステートメント入力補完
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ステートメント入力候補は、言語サービスにより、ユーザーの言語のキーワードやコア エディターでの入力が開始要素を完了するプロセスです。 このトピックでは、ステートメント入力候補のしくみと、言語サービスで実装する方法について説明します。  
+ステートメント入力候補は、ユーザーがコアエディターで入力を開始した言語キーワードまたは要素をユーザーが終了するのを言語サービスが支援するプロセスです。 このトピックでは、ステートメントの入力候補の動作と、言語サービスでのその実装方法について説明します。  
   
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 ステートメント入力候補を実装する新しい方法の詳細についてを参照してください。[チュートリアル。ステートメント入力候補を表示する](../../extensibility/walkthrough-displaying-statement-completion.md)します。  
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 ステートメント入力候補を実装する新しい方法の詳細については、「 [チュートリアル: ステートメント入力候補の表示](../../extensibility/walkthrough-displaying-statement-completion.md)」を参照してください。  
   
 > [!NOTE]
-> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。  
   
-## <a name="implementing-statement-completion"></a>ステートメント入力候補を実装します。  
- コア エディターでは、ステートメント入力候補より簡単に対話的に支援して、すばやくコードを記述する特別な UI がアクティブにします。 ステートメント入力候補は、表示することで関連するオブジェクトまたはクラスが必要なときを特定の要素を覚えておくか、ヘルプの参照トピックで確認することを回避するのに役立ちます。  
+## <a name="implementing-statement-completion"></a>ステートメント入力候補の実装  
+ コアエディターでは、ステートメント入力候補によって特殊な UI がアクティブ化され、コードを簡単に記述できるようになります。 ステートメント入力候補は、必要に応じて適切なオブジェクトまたはクラスを表示することによって役立ちます。これにより、特定の要素を記憶したり、ヘルプリファレンストピックで検索したりする必要がなくなります。  
   
- ステートメント入力候補を実装するには、お使いの言語のステートメント入力候補トリガー、解析できる必要があります。 たとえば、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]ドット (.) 演算子を使用して中に[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]矢印を使用して (->) 演算子。 言語サービスは、1 つ以上のトリガーを使用して、ステートメント入力候補を開始できます。 これらのトリガーは、コマンドのフィルターでプログラムを作成します。  
+ ステートメント入力候補を実装するには、解析可能なステートメント完了トリガーを使用する必要があります。 たとえば、は [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ドット (.) 演算子を使用し、は [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 矢印 (->) 演算子を使用します。 言語サービスでは、複数のトリガーを使用して、ステートメント入力候補を開始できます。 これらのトリガーは、コマンドフィルターでプログラミングされています。  
   
-## <a name="command-filters-and-triggers"></a>コマンドのフィルターとトリガー  
- コマンドのフィルターは、トリガーやトリガーの発生をインターセプトします。 ビューには、コマンドのフィルターを追加するには、実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスを呼び出すことによって、ビューにアタッチ、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>メソッド。 同じコマンド フィルターを使用することができます (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) のステートメント入力候補、エラー マーカー、およびメソッドのヒントなど、言語サービスのすべての側面です。 詳細については、次を参照してください。[レガシ言語サービス コマンドのインターセプト](../../extensibility/internals/intercepting-legacy-language-service-commands.md)します。  
+## <a name="command-filters-and-triggers"></a>コマンドフィルターとトリガー  
+ コマンドフィルターは、トリガーまたはトリガーの発生をインターセプトします。 コマンドフィルターをビューに追加するには、インターフェイスを実装 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> し、メソッドを呼び出してビューにアタッチし <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>ステートメント入力候補、エラーマーカー、メソッドヒントなど、言語サービスのすべての側面に対して同じコマンドフィルター () を使用できます。 詳細については、「 [従来の言語サービスコマンドのインターセプト](../../extensibility/internals/intercepting-legacy-language-service-commands.md)」を参照してください。  
   
- トリガーが、エディターに入力された場合、テキスト バッファーでは具体的には、-、言語サービスを呼び出して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>メソッド。 これにより、ステートメント入力候補の候補として、ユーザーが選択できるように、UI を起動するエディターです。 このメソッドでは、実装する必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>と<xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags>パラメーターとしてフラグします。 スクロール リスト ボックスに入力候補の項目の一覧が表示されます。 ユーザーは、入力は引き続き、最新の文字に最も近い一致が型指定を反映するように、リスト ボックス内の選択範囲が更新されます。 コア エディターには、ステートメント入力候補の UI が実装されていますが、言語サービスを実装する必要があります、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>一連のステートメント候補入力候補の項目を定義するインターフェイス。  
+ エディターでトリガーを入力すると (具体的にはテキストバッファー)、言語サービスはメソッドを呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> ます。 これにより、エディターによって UI が表示され、ユーザーはステートメント入力候補の候補から選択できるようになります。 このメソッド <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> では、パラメーターとしておよびフラグを実装する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> ます。 完了項目の一覧がスクロールリストボックスに表示されます。 ユーザーが入力を続けると、リストボックス内の選択内容が更新され、最後に入力された文字に最も近い一致が反映されます。 コアエディターは、ステートメント入力候補用の UI を実装しますが、言語サービスは、その <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ステートメントの候補となる候補項目のセットを定義するインターフェイスを実装する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [従来の言語サービスのコマンドの受信](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
