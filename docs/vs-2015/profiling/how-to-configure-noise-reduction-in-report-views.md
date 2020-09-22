@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432766"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842205"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>方法: レポート ビューでノイズ除去を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "63432766"
   
 ### <a name="to-configure-trimming-for-a-performance-report"></a>パフォーマンス レポートのトリミングを構成するには  
   
-1. 生成されたレポートの コール ツリー ビューまたは 割り当て ビューを表示している状態で、**[開発者]** メニューの **[プロファイラー]** をクリックし、**[不要項目の非表示オプション]** をクリックします。  
+1. 生成されたレポートの コール ツリー ビューまたは 割り当て ビューを表示している状態で、 **[開発者]** メニューの **[プロファイラー]** をクリックし、 **[不要項目の非表示オプション]** をクリックします。  
   
      **[不要項目の非表示]** ダイアログ ボックスが表示されます。  
   
@@ -50,15 +50,15 @@ ms.locfileid: "63432766"
   
     3. **[しきい値]** テキスト ボックスに割合の値を入力して、必要なしきい値の設定を構成します。  
   
-    4. 生成されたレポートでノイズ除去の警告を有効にするには、**[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。  
+    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。  
   
-3. トリミングを無効にするには、**[トリミングを有効にする]** をオフにします。  
+3. トリミングを無効にするには、 **[トリミングを有効にする]** をオフにします。  
   
 4. **[OK]** をクリックします。  
   
 ### <a name="to-configure-folding-for-a-performance-report"></a>パフォーマンス レポートの折りたたみを構成するには  
   
-1. **[開発者]** メニューで **[プロファイラー]** をクリックしてから、**[不要項目の非表示オプション]** をクリックします。  
+1. **[開発者]** メニューで **[プロファイラー]** をクリックしてから、 **[不要項目の非表示オプション]** をクリックします。  
   
      **[不要項目の非表示]** ダイアログ ボックスが表示されます。  
   
@@ -73,14 +73,14 @@ ms.locfileid: "63432766"
   
     3. **[しきい値]** テキスト ボックスに割合の値を入力して、必要なしきい値の設定を構成します。  
   
-    4. 生成されたレポートでノイズ除去の警告を有効にするには、**[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。  
+    4. 生成されたレポートでノイズ除去の警告を有効にするには、 **[不要項目の非表示が有効な場合に警告を表示する]** を選択します。 これは、既定の設定です。  
   
-3. 折りたたみを無効にするには、**[折りたたみを有効にする]** をオフにします。  
+3. 折りたたみを無効にするには、 **[折りたたみを有効にする]** をオフにします。  
   
 4. **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)   
- [方法: インストルメンテーションから短い関数を含めたり除外します。](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
- [コール ツリー ビュー](../profiling/call-tree-view.md)   
- [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンスツールのレポートビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)   
+ [方法: インストルメンテーションから短い関数を除外または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [コールツリービュー](../profiling/call-tree-view.md)   
+ [割り当て ビュー](../profiling/dotnet-memory-allocations-view.md)

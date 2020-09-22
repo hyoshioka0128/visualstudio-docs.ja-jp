@@ -1,5 +1,5 @@
 ---
-title: 方法-製品マニフェストを作成する |Microsoft Docs
+title: 製品マニフェストを作成する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382511"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852219"
 ---
 # <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成する
 アプリケーションの前提条件を展開するには、ブートストラップパッケージを作成します。 ブートストラップパッケージには、1つの製品マニフェストファイルが含まれていますが、各ロケールのパッケージマニフェストが含まれています。 パッケージマニフェストには、パッケージのローカライズ固有の側面が含まれています。 これには、文字列、エンドユーザーライセンス契約、および言語パックが含まれます。
@@ -158,5 +158,5 @@ ms.locfileid: "85382511"
 </Product>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 068944d3a8d9c3fd8d455602b03387903ccfa992
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431490"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90842165"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
  デバッガーの出力ウィンドウにメッセージを表示する式エバリュエーター (EE) を有効にします。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugIDECallback : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- このコールバックは、マネージ デバッグ エンジンによって実装されます。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ このコールバックはマネージデバッグエンジンによって実装されます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デバッガーの出力ウィンドウに出力を送信する、式エバリュエーターで使用できます。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ デバッガーの出力ウィンドウに出力を送信するために、式エバリュエーターによって使用される場合があります。  
   
 ## <a name="methods"></a>メソッド  
  このインターフェイスは、次のメソッドを実装します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|デバッガーの出力ウィンドウには、指定したメッセージ文字列を送信します。|  
+|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|指定したメッセージ文字列をデバッガーの出力ウィンドウに送信します。|  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Ee.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Ee  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
