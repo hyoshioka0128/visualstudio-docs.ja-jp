@@ -1,5 +1,5 @@
 ---
-title: エラー - ターゲット コンピューターで DNS が正しく構成されていることを確認してください | Microsoft Docs
+title: ターゲット コンピューターで DNS が正しく構成されていることを確認してください | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e374e75caca3dec28800a2eac86d921c861888ab
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: a6848363b3afa5c3216c242136c7909980f0ed60
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460826"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852759"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>エラー :ターゲット コンピューターで DNS が正しく構成されていることを確認してください
 リモート デバッグを行おうとすると、次のエラー メッセージが表示される場合があります。

@@ -1,5 +1,5 @@
 ---
-title: 方法 - 非表示のデバッガー コマンドを復元する | Microsoft Docs
+title: 非表示のデバッガー コマンドを復元する | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 295d04aa33f7f6602d536a69baafae9105a51fe5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349381"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852023"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>方法: 非表示のデバッガー コマンドを復元する
 Visual Studio をセット アップするときに、既定の IDE 設定で主要なプログラム言語を選択するように指示されます。 言語によっては、既定の IDE 設定で一部のデバッガー コマンドが非表示のことがあります。

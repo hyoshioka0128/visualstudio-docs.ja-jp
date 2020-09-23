@@ -1,5 +1,5 @@
 ---
-title: エラー - Web サービスのデバッグ中にタイムアウトしました | Microsoft Docs
+title: Web サービスのデバッグ中にタイムアウトしました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efb77689c33d263723f146f9b2484748505406b6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 7f3522b61c8d7d78a182036d3a1f66c0495f5081
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460274"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852447"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>エラー :Web サービスのデバッグ中にタイムアウトになりました
 呼び出し元のコードから XML Web サービスにステップ インしている場合は、呼び出しがタイムアウトになってデバッグを継続できなくなることがあります。 この場合は、次のエラー メッセージが表示されます。

@@ -1,5 +1,5 @@
 ---
-title: 方法 - プロセス ビューでプロセスを検索する | Microsoft Docs
+title: プロセス ビューでプロセスを検索する | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e823ecb1f7523c1a6f094d5669f4a37a72e84f60
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 3b94a052f7cb50df676140b45a43f49b92283903
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349290"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851997"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>方法: プロセス ビューでプロセスを検索する
 プロセス ID またはモジュール文字列を検索条件として使用することで、プロセス ビューで特定のプロセスを検索できます。 検索の最初の方向を指定することもできます。 ダイアログ ボックスのフィールドには、プロセス ツリー内の選択されたプロセスの属性が表示されます。

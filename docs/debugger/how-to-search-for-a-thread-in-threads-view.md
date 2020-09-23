@@ -1,5 +1,5 @@
 ---
-title: 方法 - スレッド ビューでスレッドを検索する | Microsoft Docs
+title: スレッド ビューでスレッドを検索する | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97d381fd0b1f6340035eec129e7304a8e73b03d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 99a2b4fe491939b6cf4224c211dcd03ec609be27
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349264"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851984"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>方法: スレッド ビューでスレッドを検索する
 スレッド ID またはモジュール文字列を検索条件として使用することで、スレッド ビューで特定のスレッドを検索できます。 検索の最初の方向を指定することもできます。 ダイアログ ボックスのフィールドには、スレッド ツリー内の選択されたスレッドの属性が表示されます。

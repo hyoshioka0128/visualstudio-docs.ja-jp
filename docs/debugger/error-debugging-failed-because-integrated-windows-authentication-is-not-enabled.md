@@ -1,5 +1,5 @@
 ---
-title: エラー - Windows 統合認証が無効になっているため、デバッグに失敗しました | Microsoft Docs
+title: Windows 統合認証が無効になっているため、デバッグに失敗しました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599634"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852785"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー :Windows 統合認証が無効になっているため、デバッグに失敗しました
 デバッグを要求したユーザーの認証が認証エラーで失敗しました。 このエラーは、Web アプリケーションまたは XML Web サービスにステップ インしようとするときに発生することがあります。 このエラーの原因の 1 つとして、統合 Windows 認証が有効ではないことが挙げられます。 その機能を有効にする場合は、「統合 Windows 認証を有効にするには」の手順を実行します。

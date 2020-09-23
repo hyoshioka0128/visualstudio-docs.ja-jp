@@ -1,5 +1,5 @@
 ---
-title: 方法 - メモリ内で 1 ページずつ上下に移動する | Microsoft Docs
+title: メモリ内で 1 ページずつ上下に移動する | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852049"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>方法: メモリ内で 1 ページずつ上下に移動する
 

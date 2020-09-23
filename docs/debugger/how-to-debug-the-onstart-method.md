@@ -1,5 +1,5 @@
 ---
-title: 方法 - OnStart メソッドをデバッグする | Microsoft Docs
+title: OnStart メソッドをデバッグする | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7392b4185def34f38f0e183f2626bd648bb4b4ea
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350018"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852375"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>方法: OnStart メソッドをデバッグする
 Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「[方法:Windows サービス アプリケーションをデバッグする](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。

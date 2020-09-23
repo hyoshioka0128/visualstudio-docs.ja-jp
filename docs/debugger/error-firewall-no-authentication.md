@@ -1,5 +1,5 @@
 ---
-title: エラー - ファイアウォールの認証が設定されていません | Microsoft Docs
+title: ファイアウォールの認証が設定されていません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199e3b203ff73397a49c19a736a447f5823e5422
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: a8548880df8c69fa59d58bf4c13f7f547ad359bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460766"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852720"
 ---
 # <a name="error-firewall-no-authentication"></a>エラー :ファイアウォールの認証が設定されていません
 リモート コンピューターのインターネット接続ファイアウォールが、リモート デバッグを許可するように設定されていません。 `No Authentication` を使用してリモート デバッグを実行するには、例外リストに msvsmon.exe を追加する必要があります。 また、IPSEC ポートを開く必要がある場合もあります。

@@ -1,5 +1,5 @@
 ---
-title: エラー - サイトで IP アドレスが使用されています | Microsoft Docs
+title: サイトで IP アドレスが使用されています |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460547"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852538"
 ---
 # <a name="error-site-uses-ip-address"></a>エラー :サイトは IP アドレスを使用しています
 このエラーは、IP アドレスを使用している Web アプリケーションに、デバッガーが自動アタッチしようとしたときに発生します。 これは、IIS で **[Web サイトの識別]** を **[特定の IP アドレスを使用]** に変更した場合に発生します。

@@ -1,5 +1,5 @@
 ---
-title: 方法 - エディット コンティニュを使用する (C#) | Microsoft Docs
+title: エディット コンティニュを使用する (C#) | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a88cff54679ac0deae32bfeeff1dd96526f19ea7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348861"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851854"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>方法: エディット コンティニュを使用する (C#)
 C# のエディット コンティニュを使用すると、デバッグ セッションを停止して再開することなく、デバッグ中に中断モードでコードに変更を加えることができます。

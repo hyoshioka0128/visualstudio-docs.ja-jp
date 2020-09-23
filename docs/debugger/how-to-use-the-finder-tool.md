@@ -1,5 +1,5 @@
 ---
-title: 方法 - ファインダー ツールを使用する | Microsoft Docs
+title: ファインダー ツールを使用する |　Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348731"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851841"
 ---
 # <a name="how-to-use-the-finder-tool"></a>方法: ファインダー ツールを使用する
 **[ウィンドウ検索]** ダイアログ ボックスで [ファインダー] ツールを使用して、ウィンドウのプロパティまたはメッセージを表示できます。 ファインダー ツールでは、無効になっている子ウィンドウを検索し、無効になっている子ウィンドウが重なっている場合にどのウィンドウを強調表示するかを識別することもできます。

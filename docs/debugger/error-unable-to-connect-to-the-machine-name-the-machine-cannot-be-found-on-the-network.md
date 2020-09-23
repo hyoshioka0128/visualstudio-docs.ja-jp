@@ -1,5 +1,5 @@
 ---
-title: エラー - コンピューター &lt;名前&gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。 | Microsoft Docs
+title: コンピューター &lt;name&gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8618a15ab4dcd6c9bbc0d9d8ab9bf347552883b1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: d1ab43773b4aa9d2535eb6ac157ec39333907731
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460144"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852512"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>エラー :コンピューター &lt;name&gt; に接続できません。 ネットワーク上にコンピューターが見つかりません。
 このエラーは、次の条件のいずれかが満たされると発生します。

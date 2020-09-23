@@ -1,5 +1,5 @@
 ---
-title: 方法 - WPF トレース情報を表示する | Microsoft Docs
+title: WPF トレース情報を表示する | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 086dc96051323941b25766fb836b5020bca0ec43
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349784"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852297"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>方法: WPF トレース情報を表示する
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] は、WPF アプリケーションからデバッグ トレース情報を受け取り、その情報を **[出力]** ウィンドウに表示することができます。 デバッグ トレース情報を表示するには、WPF トレースが有効になっている必要があります。

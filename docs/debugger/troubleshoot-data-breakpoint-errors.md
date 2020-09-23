@@ -1,5 +1,5 @@
 ---
-title: エラー - データ ブレークポイントを設定できません | Microsoft Docs
+title: データ ブレークポイントを設定できない | Microsoft Docs
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e3ea1cb0124e6bdfb93e023021673ca2e34602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248747"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852258"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>データ ブレークポイント エラーのトラブルシューティング
 このページでは、[値が変更されたときに中断] の使用時に発生する一般的なエラーを解決する手順を説明します。

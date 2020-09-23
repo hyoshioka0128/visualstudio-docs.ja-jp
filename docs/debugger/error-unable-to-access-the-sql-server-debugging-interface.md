@@ -1,5 +1,5 @@
 ---
-title: エラー - SQL Server デバッグ インターフェイスにアクセスできません | Microsoft Docs
+title: SQL Server デバッグ インターフェイスにアクセスできない | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c0c61fce7f20ea49547bc63a6e70eed284b016
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: ae2d0ba3abf66aefe56921c51669787186d49f12
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460209"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851516"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>エラー :SQL Server デバッグ インターフェイスにアクセスできません
 このメッセージは SQL デバッグが有効化されていないマシンで SQL デバッグを行おうとすると発生します。
