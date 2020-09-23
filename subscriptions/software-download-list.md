@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれているダウンロードできるソフトウェアの一覧を検索します。
-ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: dc1a3c607aa919bd2ad6c24a8ba6870433e9302b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250695"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004012"
 ---
 # <a name="what-software-is-available-for-download"></a>ダウンロードできるソフトウェア
 
@@ -31,10 +31,10 @@ ms.locfileid: "88250695"
 また、各サブスクリプションの種類で[利用可能なソフトウェア タイトル](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)の詳細な一覧を含む Excel スプレッドシートをダウンロードすることもできます。
 
 ## <a name="see-also"></a>参照
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次のステップ
 [ソフトウェアをダウンロードする](download-software.md)方法の詳細、または[プロダクト キー](product-keys.md)を取得して管理する方法の詳細を参照してください。

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641563"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005317"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -127,10 +127,10 @@ A: 別のクラウド サブスクリプション年間プランを購入する�
 - [CSP 向けの Visual Studio クラウド サブスクリプションの購入](vscloud-csp.md)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 クラウド サブスクリプションを購入する

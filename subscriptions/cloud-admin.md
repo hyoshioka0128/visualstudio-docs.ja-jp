@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: 月次サブスクリプションの管理者を設定する
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434302"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006112"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する
 
@@ -60,10 +60,10 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 Visual Studio 月次サブスクリプションについては、サブスクリプションの購入に関するページの[概要](vscloud-overview.md)を参照してください。 Visual Studio 月次サブスクリプションを購入するには、Visual Studio Marketplace ([https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)) にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
@@ -71,6 +71,3 @@ Visual Studio サブスクリプションの管理に関する詳細情報をご
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)
 - [サブスクリプションの編集](edit-license.md)
 - [最大使用量の確認](maximum-usage.md)
-
-
-

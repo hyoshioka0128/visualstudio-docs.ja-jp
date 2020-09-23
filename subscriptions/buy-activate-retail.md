@@ -7,12 +7,12 @@ ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Microsoft Store で Visual Studio サブスクリプションを購入し、Visual Studio サブスクリプション ポータルでそれをアクティブ化する方法について説明します。
-ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 244d6e6a0e5ccd6bf98b0e95d2165459cbe492c4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561576"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005964"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio のサブスクリプションは、Microsoft ストアを通して入手できます。
 Visual Studio サブスクリプションは、[ボリューム ライセンス](https://www.microsoft.com/licensing/default)、クラウド ソリューション プロバイダー、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)、Microsoft Store など、さまざまなチャネルを通じて利用できます。  この記事では、[Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) を使用したサブスクリプションの購入とアクティブ化について説明します。  
@@ -48,10 +48,10 @@ Microsoft Store で Visual Studio のサブスクリプションを購入した�
 Microsoft Store による購入についてご不明な点がある場合は、ヘルプをご利用いただけます。  [Microsoft Store サポート](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs)にお問い合わせてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 ご利用のサブスクリプションをアクティブ化したら、[[特典]](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ページにアクセスして、そのサブスクリプションに含まれるすべてのツール、サービス、トレーニング、サポートの特典を確認します。  開始するには、次の利点を設定することをお勧めします。

@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: 新しく購入した月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する方法について説明します
-ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561404"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005100"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>新しい月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する
 Azure サブスクリプションを使用して新しい月単位の Visual Studio サブスクリプションを購入するときに、それらをユーザーに割り当てるにはサブスクリプション管理ポータルへの追加が必要な場合があります。  
@@ -48,7 +48,7 @@ Azure サブスクリプションを使用して新しい月単位の Visual Stu
 - [特定のサブスクリプションを特定のユーザーに割り当てる](assign-guid.md)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)

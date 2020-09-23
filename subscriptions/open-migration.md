@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: パートナーがお客様の Visual Studio サブスクリプションを管理する方法について説明します。
-ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426552"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006060"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>お客様に代わってサブスクリプションを管理するパートナー
 Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーが従う手順がいくつかあります。 
@@ -65,10 +65,10 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 - Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)にアクセスして、サブスクリプションを管理します。

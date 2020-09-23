@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: eab8798dfb5c1666ef2829361adb8c48202c3981
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533641"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022218"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
@@ -35,7 +35,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 - [解析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [編集](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [プロジェクト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [アーキテクチャ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [エディター コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [プロジェクトとソリューション コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)

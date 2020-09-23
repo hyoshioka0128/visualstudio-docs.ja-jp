@@ -7,12 +7,12 @@ ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: プロダクト キーを使用してターミナル サービスによるインターネット デモンストレーションをサポートし、RDS アクセスを有効にする方法を説明します
-ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 428ccdb86ca93bbafa07dcf847e017b88183928f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561313"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005330"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>ターミナル サービスを介したインターネット デモンストレーション
 Visual Studio サブスクリプションがあれば、ターミナル サービス (Windows Server 2003 または Windows Server 2008) やリモート デスクトップ サービス (Windows Server 2008 R2 以降) を介してエンド ユーザーに自分のプログラムのインターネット デモンストレーションへアクセスしてもらうことができます。 この方法で、最大 200 人の匿名ユーザーが同時に会員のデモンストレーションにアクセスすることができます。 デモンストレーションに実稼動データを使用することはできません。 Visual Studio サブスクライバーは、自分のアプリケーションのデモンストレーションをエンド ユーザーに提供することができます。 ターミナル サービス (TS) またはリモート デスクトップ サービス (RDS) を使用したこのインターネット デモンストレーションのシナリオにおいてのみ、Visual Studio サブスクリプションを持たないエンド ユーザーがデモンストレーション アプリケーションを操作できます。これは、そのソフトウェアが Visual Studio サブスクリプションでライセンスを付与されている間に限ります。
@@ -36,11 +36,11 @@ Windows Server 2008 R2 では、種類ごとに 5 つのキーが利用でき、
 - ユーザー接続を有効にするプロダクト キーは Visual Studio サブスクライバーが取得しなければなりません。
 
 ## <a name="see-also"></a>関連項目
-- [Windows Server ドキュメント](https://docs.microsoft.com/windows-server/)
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Windows Server ドキュメント](/windows-server/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 RDS の配置に関するガイダンスが必要な場合は、 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf のマルチパート ブログ シリーズ「**Remote Desktop Services (RDS) 2012 session deployment (リモート デスクトップ サービス (RDS) 2012 セッションの配置)** 」をご覧ください。 

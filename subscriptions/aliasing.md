@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234641"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006216"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
@@ -86,16 +86,16 @@ Visual Studio プラットフォームでは、サブスクリプションの詳
 
 0. 1 人のユーザーを変更する場合は、テーブルでそのユーザーを選択し、右クリックして編集します。 これにより、サインインの電子メール アドレスを変更できるパネルが開きます。 サインイン電子メール アドレスのフィールドで必要な更新を行います。 [保存] をクリックすると、変更が有効になります。  
 
-0. このような変更を大量のユーザーに対して行う必要がある場合は、一括編集機能を利用できます。 詳細については、「[一括編集を使用して複数のサブスクライバーを編集する](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit)」を参照してください。
+0. このような変更を大量のユーザーに対して行う必要がある場合は、一括編集機能を利用できます。 詳細については、「[一括編集を使用して複数のサブスクライバーを編集する](./edit-license.md#edit-multiple-subscribers-using-bulk-edit)」を参照してください。
 
 > [!NOTE]
 > 個別変更および一括変更のどちらの場合も、サブスクライバーは、サインイン電子メール アドレスが変更されており、更新された電子メール アドレスを使用してサインインする必要があることを示した電子メールを受け取ります。 また、サブスクライバーが以前に他のサインイン アドレス下で特典を有効にした場合は、該当の他のサインイン アドレスを引き続き使用してアクセスする必要があることにも、注意してください。  
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>次の手順
@@ -104,5 +104,3 @@ Visual Studio サブスクリプションの管理に関する詳細情報をご
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)
 - [サブスクリプションの編集](edit-license.md)
 - [最大使用量の確認](maximum-usage.md)
-
-

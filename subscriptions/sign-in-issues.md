@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインするときに発生する可能性のある問題について説明します
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801881"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005278"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio サブスクリプションへのサインインに関する問題
 Visual Studio サブスクリプションを使用するには、最初にサインインする必要があります。  サブスクリプションによっては、Microsoft アカウント (MSA) または Azure Active Directory (AAD) ID を使用してセットアップされている場合があります。  この記事では、サブスクリプションにサインインするときに発生する可能性がある問題について説明します。
@@ -64,10 +64,10 @@ Visual Studio サブスクリプションを使用するには、最初にサイ
 サブスクライバーの観点からは、まず、管理者に問い合わせて、会社の ID の構成を理解することが重要です。 必要に応じて、管理者が管理ポータルから、サブスクライバーのアカウント設定を更新する必要がある場合や、サブスクライバーが自分の会社のメール アドレスを使用して Microsoft アカウント (MSA) を作成する必要がある場合があります。 MSA を作成する手順を実行する前に、この実行に関するポリシーまたは問題について管理者と話します。 
 
 ## <a name="see-also"></a>参照
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次のステップ
 - AAD 内で [MSA アカウントと AAD アカウントをリンクする](/azure/active-directory/b2b/add-users-administrator)方法を学習します。

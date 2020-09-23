@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: マイクロソフト製品とサービス契約 (MPSA) での Visual Studio サブスクリプションの管理について説明します
-ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561391"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006086"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 MPSA プログラムを使用して Visual Studio サブスクリプションを購入した場合、Visual Studio サブスクリプション管理者になってサブスクリプションをユーザーに割り当てる前に、いくつか注意が必要な点があります。 管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)に直接進むことができます。
@@ -63,10 +63,10 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 > ドメインの引き継ぎプロセスを完了したら、「テナントの関連付け前 (管理対象のテナント)」セクションの 5 つの手順の条件を満たす必要があります。 条件を満たした後に必要な手順は、MPSA サポートに連絡して追加の Visual Studio サブスクリプション管理者をプロビジョニングすることのみです。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。

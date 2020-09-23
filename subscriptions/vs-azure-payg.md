@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: Azure の従量課金アカウントを設定する方法を説明します。
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005074"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest の従量課金制のサブスクリプション
 クラウドでチームとコラボレーションしましょう。  開発テスト用の従量課金制サブスクリプションを複数作成し、チームと環境の間を分離しながら、他のサブスクライバーとのコラボレーションを可能にします。  Azure におけるサブスクリプション ソフトウェアの開発/テストおよびクラウドの使用権を、サブスクライバーだけの割引価格 (時間当たり) で利用できます。
@@ -45,13 +45,12 @@ A: Azure サブスクリプションを変更するには、次のようにし�
 4. サブスクリプションの管理またはキャンセル、名前の変更、ディレクトリの変更、または課金所有権の譲渡を行うためのオプションがあります。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 多くのサブスクリプションには、Azure DevOps や Azure DevTest の個人クレジットなど、その他の Azure 関連の特典が含まれています。  これらの特典の詳細については、次を参照してください。
 - [Azure DevOps](vs-azure-devops.md)
 - [Azure DevTest の個人クレジット](vs-azure.md)
-

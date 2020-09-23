@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f449d39866cb5891f2b378acffdd84b38b6408c7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801075"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005087"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -30,17 +30,17 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL| Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  はい          |
-| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                        | Azure Boards & Repos (Basic<sup>2</sup>) [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  はい          |
-| Visual Studio Professional with GitHub Enterprise | VL| Azure Boards & Repos (Basic<sup>2</sup>) [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  はい          |
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  はい          |
-| MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans [詳細](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  はい          |
+| Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ [詳細](/azure/devops/organizations/security/access-levels?view=azure-devops)     |  はい          |
+| Visual Studio Enterprise with GitHub Enterprise   | VL| Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ [詳細](/azure/devops/organizations/security/access-levels?view=azure-devops) |  はい          |
+| Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                        | Azure Boards & Repos (Basic<sup>2</sup>) [詳細](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  はい          |
+| Visual Studio Professional with GitHub Enterprise | VL| Azure Boards & Repos (Basic<sup>2</sup>) [詳細](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  はい          |
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans [詳細](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  はい          |
+| MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans [詳細](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  はい          |
 ||
 
 <sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark, MCT Software & Services Developer、FTE。除外:MCT Software & Services、Imagine は含まれません。*
 
-<sup>2</sup> *Basic プランでは、リリース パイプラインとマルチステージの継続的配置 (CD) パイプラインを定義し、承認とゲートを利用してデプロイを制御します。パイプライン プレビュー機能の Free アクセスが有効になっているとき、関係者はあらゆる Azure Pipelines 機能を利用できます。プランに含まれる機能に関する詳細については、Azure の[アクセス レベルに関するページ](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)をご覧ください。*
+<sup>2</sup> *Basic プランでは、リリース パイプラインとマルチステージの継続的配置 (CD) パイプラインを定義し、承認とゲートを利用してデプロイを制御します。パイプライン プレビュー機能の Free アクセスが有効になっているとき、関係者はあらゆる Azure Pipelines 機能を利用できます。プランに含まれる機能に関する詳細については、Azure の[アクセス レベルに関するページ](/azure/devops/organizations/security/access-levels?view=azure-devops)をご覧ください。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -58,10 +58,10 @@ A: はい。 Visual Studio Enterprise サブスクライバーには、Team Foun
 - [Azure DevOps ドキュメント](/azure/devops/)。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Azure DevOps 機能に関する詳細情報:

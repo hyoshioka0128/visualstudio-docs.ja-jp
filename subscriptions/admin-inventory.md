@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: 運用前環境のインベントリを実施する管理者の責任について説明します
-ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232755"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004158"
 ---
 # <a name="inventory-of-pre-production-environment"></a>運用前環境のインベントリ
 Visual Studio サブスクリプションは、デバイスではなくユーザーをカウントすることで、資産管理を簡略化します。
@@ -31,10 +31,10 @@ Visual Studio の管理者は、Visual Studio サブスクリプションを**�
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>参照
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
@@ -42,6 +42,3 @@ Visual Studio の管理者は、Visual Studio サブスクリプションを**�
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)
 - [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
-
-
-

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを使用して Microsoft Windows Virtual Desktop を活用する方法について説明します
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561365"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005047"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>サブスクリプション内で Windows Virtual Desktop にアクセスする 
 Visual Studio のサブスクライバーは、Microsoft Windows Virtual Desktop サービスで Azure Dev/Test の個人クレジットを使用できるようになりました。  
@@ -23,7 +23,7 @@ Azure 上の Windows Virtual Desktop でできることは次のとおりです�
 - Windows 7 仮想デスクトップに無料の延長セキュリティ更新プログラムを提供
 - 既存のリモート デスクトップ サービス (RDS) と Windows Server のデスクトップやアプリをあらゆるコンピューターで利用
 - デスクトップとアプリの両方を仮想化
-- 統合された管理エクスペリエンスで Windows 10、Windows Server、Windows 7 のデスクトップとアプリを管理 Windows Virtual Desktop でできることの詳細については、[紹介ビデオ](https://docs.microsoft.com/azure/virtual-desktop/overview)をご覧ください。
+- 統合された管理エクスペリエンスで Windows 10、Windows Server、Windows 7 のデスクトップとアプリを管理 Windows Virtual Desktop でできることの詳細については、[紹介ビデオ](/azure/virtual-desktop/overview)をご覧ください。
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Azure で Windows Virtual Desktop を使用する 
 Visual Studio のサブスクライバーは、いくつかの方法で Azure サブスクリプションを使用して Windows Virtual Desktop サービスの支払いを行えるようになりました。
@@ -35,13 +35,13 @@ Visual Studio のサブスクライバーは、いくつかの方法で Azure �
 Windows Virtual Desktop では、VM が参加する Azure Active Directory (Azure AD) が必要です。  ユーザーは、この Azure AD のメンバーである必要があります。  Azure AD を実装するには、次の 2 つのオプションがあります。
 - Azure AD ディレクトリ サービス。  ほとんどのユーザーにとっては、こちらの実装方法が簡単です。
 - ドメイン コントローラー キャンペーンを実行している仮想マシン。  このオプションでは、セットアップに多くの作業が必要ですが、ほとんどのユーザーの運用コストが低くなります。
-Windows Virtual Desktop を使用するための前提条件の完全な一覧については、Windows Virtual Desktop の [概要ページ](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)を参照してください。 
+Windows Virtual Desktop を使用するための前提条件の完全な一覧については、Windows Virtual Desktop の [概要ページ](/azure/virtual-desktop/overview#requirements)を参照してください。 
 
 ## <a name="get-started"></a>作業開始 
 すべての前提条件が満たされたら、いくつかのアクションを実行して、実装を適切な場所に配置します。  使用を開始するには、次のチュートリアルをご覧ください。
-- [Windows Virtual Desktop テナントを作成する](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- Azure portal を使用して[ホスト プールを作成する](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace)
-- Windows Virtual Desktop の[アプリ グループを管理する](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups)
+- [Windows Virtual Desktop テナントを作成する](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- Azure portal を使用して[ホスト プールを作成する](/azure/virtual-desktop/create-host-pools-azure-marketplace)
+- Windows Virtual Desktop の[アプリ グループを管理する](/azure/virtual-desktop/manage-app-groups)
 
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
@@ -63,11 +63,11 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Windows Virtual Desktop のドキュメント](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Azure ドキュメント](/azure/)
+- [Windows Virtual Desktop のドキュメント](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>次の手順
 -   Visual Studio サブスクリプションを購入する必要がある場合は、次のことを確認してください。
      - Microsoft Store での[小売価格](https://visualstudio.microsoft.com/vs/pricing/)
      - [ボリューム ライセンスのプログラム](https://www.microsoft.com/licensing/default)
--   [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) について 
+-   [Windows Virtual Desktop](/azure/virtual-desktop/overview) について

@@ -7,18 +7,18 @@ ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: overview
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2b79a1f4bedb9c6e04e7f764befd478e37222e3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902877"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005200"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 
 Visual Studio サブスクリプション ポータル ([https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)) は、Visual Studio サブスクリプションで提供されるあらゆる特典を利用できるオールインワン リソースです。
 
-ポータルを使用するには、サブスクリプションに関連付けられた ID を使用してサインインする必要があります。  Microsoft アカウント (MSA)、または勤務先や学校などの組織から提供された電子メール アドレスを使用できます。  詳細については、[サインイン](signing-in.md)に関するページを参照してください。
+ポータルを使用するには、サブスクリプションに関連付けられた ID を使用してサインインする必要があります。  Microsoft アカウント (MSA)、または勤務先や学校などの組織から提供された電子メール アドレスを使用できます。  詳細については、[サインイン](./index.yml)に関するページを参照してください。
 
 ポータルは 6 ページで構成されています。  各ページから、サブスクリプションに含まれるさまざまな製品やサービスにアクセスできます。  6 ページの内訳は、[特典]、[ダウンロード]、[プロダクト キー]、[サブスクリプション]、[サポート]、[Marketplace] です。
 
@@ -54,10 +54,10 @@ Azure についてわからないことがあったら、  Azure コミュニテ
 Visual Studio クラウド サブスクリプションを更新する必要がある場合や、  Visual Studio 製品ファミリの最新の拡張機能をダウンロードしたい場合があります。  Marketplace では、Azure DevOps、Azure DevOps Server、および Visual Studio Code の機能を向上させる拡張機能、ツール、サービスを見つけることができます。 公開元になり、Marketplace に独自の拡張機能を公開することもできます。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でポータルにサインインし、特典を確認します。  ご自分の [Microsoft アカウント](sign-in-msa.md) (MSA)、[職場または学校アカウント](sign-in-work.md)、[GitHub](sign-in-github.md) アカウントを使用して、ポータルにサインインする方法についても学習できます。 
+[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でポータルにサインインし、特典を確認します。  ご自分の [Microsoft アカウント](sign-in-msa.md) (MSA)、[職場または学校アカウント](sign-in-work.md)、[GitHub](sign-in-github.md) アカウントを使用して、ポータルにサインインする方法についても学習できます。

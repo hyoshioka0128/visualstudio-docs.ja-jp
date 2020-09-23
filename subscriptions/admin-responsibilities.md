@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426890"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006138"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
 管理者は組織のサブスクリプションを管理できます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。
@@ -37,10 +37,10 @@ Visual Studio サブスクリプションでは、開発者はソフトウェア
 | エンド ユーザーの例外                  | ソフトウェア開発プロジェクトの最後に、エンド ユーザーは通常、アプリケーションを確認し、リリースに必要な条件を満たしているかどうかを判断します。 このプロセスは、ユーザー受け入れテスト (UAT) と呼ばれます。 ビジネス スポンサーや製品マネージャーなどのチーム メンバーは、エンド ユーザーの代理としての役割を果たすことができます。 Visual Studio サブスクリプションがないエンド ユーザーは、ソフトウェアの使用が Visual Studio のすべてのライセンス条項に準拠していれば、UAT のためにソフトウェアにアクセスできます。 プライマリ ロールがソフトウェアの設計、開発、またはテストのユーザーが、"エンド ユーザー" にも該当する場合はほとんどありません。 |
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 管理者の責任について詳しくは、以下をご覧ください。

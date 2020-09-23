@@ -7,12 +7,12 @@ ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Microsoft アカウント (MSA) を使用して Visual Studio サブスクリプションにサインインする方法
-ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561443"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005938"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Microsoft アカウント (MSA) を使用して Visual Studio サブスクリプションにサインインする
 
@@ -43,10 +43,10 @@ A: 多くのユーザーが、複数のサブスクリプションを持って�
 それでも問題が解消しない場合は、[サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/) チームまでお問い合わせください。  
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-サブスクリプション ポータルに正常にサインインしたら、特典ページ (https://my.visualstudio.com/benefits ) にアクセスし、お客様が利用できる優れたツール、サービス、オファーを調査することをお勧めします。  
+サブスクリプション ポータルに正常にサインインしたら、特典ページ (https://my.visualstudio.com/benefits ) にアクセスし、お客様が利用できる優れたツール、サービス、オファーを調査することをお勧めします。

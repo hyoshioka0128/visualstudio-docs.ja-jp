@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法について説明します
-ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805613"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005239"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで接続済み ID を使用する方法
 職場または学校を介して Visual Studio サブスクリプションを受け取り、Microsoft アカウント (MSA) を使用してサインインする場合は、サブスクリプション管理者が組織の Azure Active Directory (Azure AD) の ID に MSA を接続できます。  これにより、サブスクリプションに含まれる特典の一部にアクセスする方法が変わります。 
@@ -43,10 +43,10 @@ A: 管理者に問い合わせる方法の詳細については、[サブスク�
 A: 接続された ID の実装は簡単です。  詳しくは、[この記事](personal-email-sign-ins.md)をご覧ください。 
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-管理者が Azure AD と MSA のアカウントを接続した後は、[サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)に正常にサインインできることと、Azure DevOps、Visual Studio、Azure DevTest の個人クレジットなどの特典にアクセスできることを確認することをお勧めします。 
+管理者が Azure AD と MSA のアカウントを接続した後は、[サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)に正常にサインインできることと、Azure DevOps、Visual Studio、Azure DevTest の個人クレジットなどの特典にアクセスできることを確認することをお勧めします。
