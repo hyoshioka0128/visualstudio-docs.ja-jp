@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3b21268b488eb0061c5c329e0afcb57ef1ec6e3a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62962263"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809925"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>チュートリアル: Visual Studio での Django Web フレームワークの概要
 
@@ -111,7 +111,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 回答: まず、ソース管理を最初から使用すると、リモート リポジトリも使用する場合は特に、プロジェクトの定期的なオフサイト バックアップが提供されます。 ローカル ファイル システムだけでプロジェクトを保持するのとは異なり、ソース管理では完全な変更履歴も提供されるので、1 つのファイルまたはプロジェクト全体を以前の状態に簡単に戻すことができます。 変更履歴は回帰 (テスト不合格) の原因の特定に役立ちます。 さらに、ソース管理は上書きを管理し、競合の解決を提供するので、複数の人がプロジェクトを作業している場合に重要です。 最後に、基本的にオートメーションの 1 つの形式であるソース管理は、ビルド、テスト、リリース管理の自動化も可能にします。 プロジェクトで DevOps を使用する際のまさに最初の手順であり、使用開始の障壁はかなり低いので、最初からソース管理を使用しない理由はありません。
 
-オートメーションとしてのソース管理について詳しくは、MSDN マガジンの記事「[The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232)」(信頼できる情報源: DevOps でのリポジトリの役割) をご覧ください。この記事はモバイル アプリ用に記述されていますが、Web アプリにも適用されます。
+オートメーションとしてのソース管理について詳しくは、MSDN マガジンの記事「[The Source of Truth: The Role of Repositories in DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops)」(信頼できる情報源: DevOps でのリポジトリの役割) をご覧ください。この記事はモバイル アプリ用に記述されていますが、Web アプリにも適用されます。
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>質問: Visual Studio が新しいプロジェクトを自動コミットしないようにすることはできますか?
 

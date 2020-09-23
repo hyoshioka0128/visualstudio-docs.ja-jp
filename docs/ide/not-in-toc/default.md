@@ -10,12 +10,12 @@ f1_keywords:
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2c62a10e87b3a866956e4818a3b279eb0d4b833e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800451"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808234"
 ---
 # <a name="f1-help"></a>F1 キー ヘルプ
 
@@ -25,7 +25,7 @@ ms.locfileid: "88800451"
 
 ウィンドウ、キーワード、または API 名に関する F1 ヘルプをお探しの場合:
 
-- [docs.microsoft.com](https://docs.microsoft.com) で検索してみてください
+- [docs.microsoft.com](/) で検索してみてください
 - 検索エンジンを使用して検索してみてください。
 
 ## <a name="find-help-on-a-keyword-or-api"></a>キーワードまたは API に関するヘルプを検索する

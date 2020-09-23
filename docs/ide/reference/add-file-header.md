@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801322"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810377"
 ---
 # <a name="add-file-header"></a>ファイル ヘッダーを追加する
 
@@ -22,7 +22,7 @@ ms.locfileid: "88801322"
 
 - Visual Basic
 
-**概要:** [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) を使用して、既存のファイル、プロジェクト、およびソリューションにファイル ヘッダーを追加します。
+**概要:** [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) を使用して、既存のファイル、プロジェクト、およびソリューションにファイル ヘッダーを追加します。
 
 **条件:** ファイル、プロジェクト、およびソリューションにファイル ヘッダーを簡単に追加したいとき。
 
@@ -30,7 +30,7 @@ ms.locfileid: "88801322"
 
 ## <a name="how-to"></a>方法
 
-1. プロジェクトまたはソリューションに [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) を追加します (まだ作成していない場合)。
+1. プロジェクトまたはソリューションに [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) を追加します (まだ作成していない場合)。
 
 2. お使いの EditorConfig ファイルに次の規則を追加します: *file_header_template*。
 

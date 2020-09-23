@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290832"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808117"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>構造体の Equals を生成するときに IEquatable 演算子を生成する
 
@@ -20,7 +20,7 @@ ms.locfileid: "85290832"
 
 - C#
 
-**概要:** [構造体](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/struct)の **Equals** および **IEquatable** 演算子を生成できます。
+**概要:** [構造体](/dotnet/csharp/language-reference/builtin-types/struct)の **Equals** および **IEquatable** 演算子を生成できます。
 
 **条件:** equals および not equals 演算子に加え、IEquatable 演算子が自動的に追加される構造体があること。
 

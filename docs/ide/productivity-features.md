@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219765"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808143"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio の生産性に関するガイド
 
@@ -32,9 +32,9 @@ ms.locfileid: "89219765"
 
 - **Visual Studio をより使いやすくする**。 Visual Studio には、スクリーン リーダーやその他の支援テクノロジと互換性を持つユーザー補助機能が組み込まれています。 利用可能なすべての機能の一覧については、「[Visual Studio の アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」を参照してください。 
 
-- **Visual Studio の製品ライフサイクルとサービスの確認**。 Visual Studio の更新プログラムを入手する方法、Enterprise および Professional のお客様向けのサポートオプション、Visual Studio の以前のバージョンのサポート、Visual studio サービスの対象ではないコンポーネントについては、「[Visual Studio の製品ライフサイクルとサービス](https://docs.microsoft.com/visualstudio/releases/2019/servicing)」を参照してください。 
+- **Visual Studio の製品ライフサイクルとサービスの確認**。 Visual Studio の更新プログラムを入手する方法、Enterprise および Professional のお客様向けのサポートオプション、Visual Studio の以前のバージョンのサポート、Visual studio サービスの対象ではないコンポーネントについては、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing)」を参照してください。 
 
-- **Visual Studio に NuGet パッケージをインストールして管理する**。 Windows 上の Visual Studio 内で NuGet パッケージ マネージャー UI を使用すると、プロジェクトやソリューション内で NuGet パッケージを簡単にインストール、アンインストール、更新することができます。 詳細については、「[NuGet パッケージ マネージャーを使用して Visual Studio にパッケージをインストールして管理する](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。
+- **Visual Studio に NuGet パッケージをインストールして管理する**。 Windows 上の Visual Studio 内で NuGet パッケージ マネージャー UI を使用すると、プロジェクトやソリューション内で NuGet パッケージを簡単にインストール、アンインストール、更新することができます。 詳細については、「[NuGet パッケージ マネージャーを使用して Visual Studio にパッケージをインストールして管理する](/nuget/consume-packages/install-use-packages-visual-studio)」を参照してください。
 
 ## <a name="write-code"></a>コードの記述
 
@@ -60,7 +60,7 @@ ms.locfileid: "89219765"
 
 - **サンプル アプリケーションを使用する**。 [Microsoft Developer Network](https://code.msdn.microsoft.com/) からサンプル アプリケーションをダウンロードしてインストールすると、アプリケーションの開発時間を短縮できます。 また、その分野のサンプル パックをダウンロードして調べることで、特定のテクノロジやプログラミング概念を学習することもできます。
 
-- **[書式設定]/[改行] を使用してかっこの書式を変更する**。 **[書式設定]** オプション ページを使って、改行など、コード エディターでのコード書式設定オプションを設定します。 C# でこの設定を使用する方法の詳細については、[オプション ダイアログボックスを参照してください。テキスト エディター > C# > コード スタイル > 書式設定](../ide/reference/options-text-editor-csharp-formatting.md)。 C++ の場合は、[Visual Studio での C++ コーディングの基本設定の設定に関する記事](https://docs.microsoft.com/cpp/ide/how-to-set-preferences)を参照してください。 Python の場合は、「[Python コードの書式を設定する](../python/formatting-python-code.md)」を参照してください。
+- **[書式設定]/[改行] を使用してかっこの書式を変更する**。 **[書式設定]** オプション ページを使って、改行など、コード エディターでのコード書式設定オプションを設定します。 C# でこの設定を使用する方法の詳細については、[オプション ダイアログボックスを参照してください。テキスト エディター > C# > コード スタイル > 書式設定](../ide/reference/options-text-editor-csharp-formatting.md)。 C++ の場合は、[Visual Studio での C++ コーディングの基本設定の設定に関する記事](/cpp/ide/how-to-set-preferences)を参照してください。 Python の場合は、「[Python コードの書式を設定する](../python/formatting-python-code.md)」を参照してください。
 
 - **タブでインデントを変更する**。 各コードベースに合わせたカスタム エディター設定を使用して、複数の開発者がさまざまなエディターや IDE で同じプロジェクトに取り組む場合に一貫したコーディング スタイルを適用します。 チーム全体が同じ言語規則、名前付け規則、書式設定規則に従っていることを確認します。 これらのカスタム設定は移植性があり、コードと共に移動するため、Visual Studio の外部でもコーディング スタイルを適用できます。 詳細については、「[[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../ide/reference/options-text-editor-all-languages-tabs.md#tabs)」を参照してください。
 
@@ -118,7 +118,7 @@ ms.locfileid: "89219765"
 
 - **Visual Studio デバッガー ツールを使用する**。 Visual Studio で*自分のアプリをデバッグする*とき、通常、それはデバッガー モードでアプリケーションを実行することを意味します。 デバッガーには、コードが実行されている間にそのコードによって何が行われているのかを確認するためのさまざまな方法が用意されています。 作業を開始するためのガイドについては、「[最初に Visual Studio デバッガーを見る](../debugger/debugger-feature-tour.md)」を参照してください。 
 
-- **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、 **[ブラウザーの選択]** ダイアログ ボックスを開かなくても、[Page Inspector (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
+- **さまざまなブラウザーで同じページ、アプリケーション、またはサイトをテストする**。 コードをデバッグする際に、 **[ブラウザーの選択]** ダイアログ ボックスを開かなくても、[Page Inspector (Visual Studio)](/previous-versions/hh974728(v=vs.140)) など、インストールされている Web ブラウザーを簡単に切り替えることができます。 **[標準]** ツール バーの **[デバッグ開始]** ボタンの横にある **[デバッグ ターゲット]** ボックスを使用すると、ページをデバッグまたは表示する際に使用しているブラウザーを即座に確認できます。
 
     ![Web ブラウザーのデバッグ オプションの選択](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ ms.locfileid: "89219765"
 
 - **[CodeLens によるコード変更とその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)** 。 CodeLens では、エディターを離れずにコードに関する情報を検索できるため、自分の作業に専念できます。 コードの参照、コードへの変更、リンクされたバグ、作業項目、コード レビュー、単体テストを検索できます。
 
-- **Live Share を使用して他のユーザーとリアルタイムでデバッグする**。 Live Share では、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集やデバッグができます。 詳細については、[Visual Studio Live Share とは何か](https://docs.microsoft.com/visualstudio/liveshare/)に関するページを参照してください。
+- **Live Share を使用して他のユーザーとリアルタイムでデバッグする**。 Live Share では、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集やデバッグができます。 詳細については、[Visual Studio Live Share とは何か](/visualstudio/liveshare/)に関するページを参照してください。
 
 - **対話型ウィンドウを使用して小規模のコードを記述してテストする**。 Visual Studio には、任意のコードを入力してすぐに結果を表示できる対話型の read-evaluate-print-loop (REPL) ウィンドウが用意されています。 このコーディング方法は、API とライブラリの学習と実習、およびプロジェクトに含める作業コードを対話形式で開発するのに役立ちます。 Python の場合は、「[Python 対話型ウィンドウの使用](../python/python-interactive-repl-in-visual-studio.md)」を参照してください。 対話型ウィンドウ機能は C# でも使用できます。 
 

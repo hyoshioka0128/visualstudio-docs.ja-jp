@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67a9a6f7ec63686003f6e6535b213e9c6fa606f0
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741769"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682645"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig の .NET コーディング規則の設定
 
@@ -48,7 +48,7 @@ ms.locfileid: "89741769"
 
 ## <a name="enforce-coding-conventions-on-build"></a>ビルド時、コーディング規則を適用する
 
-.NET 5.0 RC2 SDK が含まれている Visual Studio 2019 バージョン 16.8 以降、すべての .NET プロジェクトに対して、[ビルド時、.NET のコーディング規則を適用](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis)できます。 ビルド時、.NET のスタイルに違反すると、"IDE" プレフィックスが付いた警告またはエラーが表示されます。 それにより、自分のコードベースで一貫性のあるコード スタイルを厳密に適用できます。
+.NET 5.0 RC2 SDK が含まれている Visual Studio 2019 バージョン 16.8 以降、すべての .NET プロジェクトに対して、[ビルド時、.NET のコーディング規則を適用](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)できます。 ビルド時、.NET のスタイルに違反すると、"IDE" プレフィックスが付いた警告またはエラーが表示されます。 それにより、自分のコードベースで一貫性のあるコード スタイルを厳密に適用できます。
 
 ::: moniker-end
 

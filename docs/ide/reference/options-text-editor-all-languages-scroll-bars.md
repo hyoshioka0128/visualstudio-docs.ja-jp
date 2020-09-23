@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588799"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808091"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>[オプション]、[テキスト エディター]、[すべての言語]、[スクロール バー]
 このダイアログ ボックスでは、コード エディターのスクロール バーの既定の動作を変更できます。 オプションを表示するには、 **[ツール]** メニューから **[オプション]** を選択します。 **[テキスト エディター]** フォルダー内で **[すべての言語]** サブフォルダーを展開し、 **[スクロール バー]** を選択します。
@@ -69,7 +69,7 @@ ms.locfileid: "75588799"
 
 サイズの大きなコード ファイルを開き、ファイルの何か所かにあるテキストを置き換えて試してみてください。 スクロール バーに置き換えた結果が表示されるため、置き換えるべきでないものを置き換えた場合は変更を取り消すことができます。
 
-コードを編集するときのさまざまな色と記号の意味については、[強化されたスクロール バー](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/)のブログ記事をご覧ください。
+コードを編集するときのさまざまな色と記号の意味については、[強化されたスクロール バー](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar)のブログ記事をご覧ください。
 
 ## <a name="behavior"></a>動作
 

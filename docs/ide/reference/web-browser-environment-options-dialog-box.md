@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596503"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808679"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>[オプション] ダイアログ ボックス:[環境] \> [Web ブラウザー]
 
@@ -52,7 +52,7 @@ IDE Web ブラウザーを開いたときに表示されるページを設定し
 
 - **ソース エディター** 選択すると、[エディター](../../ide/writing-code-in-the-code-and-text-editor.md)にソースが表示されます。
 
-- **HTML エディター** 選択すると、[HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)にソースが表示されます。 この選択を使用し、Web ページを 2 つのビュー、デザイン ビューまたは標準のテキスト ベースのソース ビューのいずれかで編集します。
+- **HTML エディター** 選択すると、[HTML デザイナー](/previous-versions/ex0hkwbx(v=vs.140))にソースが表示されます。 この選択を使用し、Web ページを 2 つのビュー、デザイン ビューまたは標準のテキスト ベースのソース ビューのいずれかで編集します。
 
 - **外部エディター** 選択すると、別のエディターにソースが表示されます。 選択するエディター (Notepad.exe など) のパスを指定します。
 
@@ -66,4 +66,4 @@ IDE Web ブラウザーを開いたときに表示されるページを設定し
 ## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML デザイナー](/previous-versions/ex0hkwbx(v=vs.140))

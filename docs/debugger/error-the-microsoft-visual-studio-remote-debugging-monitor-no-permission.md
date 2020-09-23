@@ -1,5 +1,5 @@
 ---
-title: エラー - リモート コンピューター上の Microsoft Visual Studio リモート デバッグ モニタには、このコンピュータに接続するアクセス許可がありません
+title: リモート コンピューター上の Microsoft Visual Studio リモート デバッグ モニターには、このコンピューターに接続するアクセス許可がありません
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9304c999abb1401af8e524551a999556826062
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e7baed5cc2c4c8dbaa01cd3dfadc386b6db1834c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460457"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851087"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>エラー :リモート コンピューター上の Microsoft Visual Studio リモート デバッグ モニターには、このコンピューターに接続するアクセス許可がありません
 

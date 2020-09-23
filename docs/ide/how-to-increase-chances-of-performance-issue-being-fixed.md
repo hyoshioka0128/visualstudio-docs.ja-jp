@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038596"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810862"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>パフォーマンスの問題が修正される可能性を高める方法
 
-[[問題の報告]](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019) ツールは、さまざまな問題を報告するために Visual Studio ユーザーによって広く使用されています。 Visual Studio チームは、ユーザー フィードバックのクラッシュとパフォーマンス低下の傾向を把握し、広範なユーザーに影響を与える問題に対処します。 特定のフィードバック チケットがより実用的なものになれば、製品チームによって迅速に診断および解決される可能性が高まります。 このドキュメントでは、報告をより実用的なものにするために、クラッシュまたはパフォーマンス低下の問題を報告する際のベスト プラクティスについて説明します。
+[[問題の報告]](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019) ツールは、さまざまな問題を報告するために Visual Studio ユーザーによって広く使用されています。 Visual Studio チームは、ユーザー フィードバックのクラッシュとパフォーマンス低下の傾向を把握し、広範なユーザーに影響を与える問題に対処します。 特定のフィードバック チケットがより実用的なものになれば、製品チームによって迅速に診断および解決される可能性が高まります。 このドキュメントでは、報告をより実用的なものにするために、クラッシュまたはパフォーマンス低下の問題を報告する際のベスト プラクティスについて説明します。
 
 ## <a name="general-best-practices"></a>全般的なベスト プラクティス
 
@@ -56,7 +56,7 @@ Visual Studio は、多数の言語、プロジェクトの種類、プラット
 
 - フィードバックの一部としてリンク可能または提供可能なサンプル コードまたはプロジェクトで再現できる (手順でプロジェクトまたはドキュメントを開く場合)
 
-これらの問題については、[問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関するページの手順に従うとともに、次の項目を含めてください。
+これらの問題については、[問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)に関するページの手順に従うとともに、次の項目を含めてください。
 
 - 問題を再現する手順。
 
@@ -103,7 +103,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 2. 可能であれば、フィードバックを送信する前にファイルを zip 形式 (\*.zip) にしてサイズを小さくします。
 
-3. [問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関する手順に従って、新しいフィードバック項目にヒープ ダンプをアタッチします。
+3. [問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)に関する手順に従って、新しいフィードバック項目にヒープ ダンプをアタッチします。
 
 > [!NOTE] 
 > **最も有用なフィードバック:** このケースに対して最も有用なフィードバックは、クラッシュ時にキャプチャされたヒープ ダンプです。
@@ -118,7 +118,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 **不明な無応答**
 
 無応答が予期しない形で発生する場合は、次の発生時に Visual Studio の新しいインスタンスを起動し、そのインスタンスの問題を報告します。
-["記録" 画面](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)では、必ず応答しない Visual Studio セッションを選択してください。
+["記録" 画面](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro)では、必ず応答しない Visual Studio セッションを選択してください。
 
 応答しない Visual Studio インスタンスが管理者モードで起動された場合は、2 番目のインスタンスも管理者モードで起動する必要があります。
 
@@ -145,7 +145,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 3. Visual Studio の新しいコピーで、 **[問題の報告]** ツールを開きます。
 
-4. "トレースとヒープ ダンプを提供する (オプション)" 手順に到達するまで、[問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)に関する手順に従います。
+4. "トレースとヒープ ダンプを提供する (オプション)" 手順に到達するまで、[問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)に関する手順に従います。
 
 5. Visual Studio の最初のコピー (パフォーマンスの問題が発生したもの) を記録するよう選択し、記録を開始します。
 
@@ -165,7 +165,7 @@ Visual Studio がクラッシュするたびに、構成された場所にダン
 
 パフォーマンス トレースを記録しているときに、報告を作成する低速度操作または高 CPU 使用率イベントが終了したら、すぐに記録を停止します。 収集される情報が多すぎると、最も古い情報が上書きされます。 関心のある操作の後すぐに (数秒以内に) トレースが停止しない場合は、有用なトレース データが上書きされます。
 
-開発者コミュニティ Web サイトの既存のフィードバック項目に、パフォーマンス トレースを直接アタッチしないでください。 追加情報の要求/提供は、Visual Studio の組み込みの [問題の報告] ツールでサポートされているワークフローです。 以前のフィードバック項目を解決するためにパフォーマンス トレースが必要な場合は、フィードバック項目の状態を [さらに情報が必要です] に設定します。これにより、新しい問題を報告する場合と同じように応答できます。 詳細な手順については、[問題の報告] ツールのドキュメントにある [[さらに情報が必要です] に関するセクション](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info)を参照してください。
+開発者コミュニティ Web サイトの既存のフィードバック項目に、パフォーマンス トレースを直接アタッチしないでください。 追加情報の要求/提供は、Visual Studio の組み込みの [問題の報告] ツールでサポートされているワークフローです。 以前のフィードバック項目を解決するためにパフォーマンス トレースが必要な場合は、フィードバック項目の状態を [さらに情報が必要です] に設定します。これにより、新しい問題を報告する場合と同じように応答できます。 詳細な手順については、[問題の報告] ツールのドキュメントにある [[さらに情報が必要です] に関するセクション](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info)を参照してください。
 
 > [!NOTE] 
 > **最も有用なフィードバック:** ほとんどすべての低速度/高 CPU 使用率の問題について、最も有用なフィードバックは、試行していた操作の概要と、その間の動作をキャプチャしたパフォーマンス トレース (\*.etl.zip) です。

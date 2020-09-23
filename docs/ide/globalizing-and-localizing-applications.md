@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565124"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810902"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>グローバル化およびローカライズされたアプリの開発
 
@@ -43,7 +43,7 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 
 - Web Apps
 
-   Web サービスは UTF-8 および Unicode のテキストの送受信をサポートしているため、双方向言語を使用するアプリケーションに適しています。 Web クライアント アプリケーションのユーザー インターフェイスはブラウザーに依存しているため、Web アプリケーションでの双方向サポートの内容は、ユーザーのブラウザーが双方向機能をどの程度サポートしているかによって異なります。 Visual Studio では、アラビア語またはヘブライ語のテキスト、右から左への読み取り順序、ファイルのエンコーディング、およびローカル カルチャ設定をサポートするアプリケーションを作成できます。 詳しくは、「[ASP.NET Web アプリケーションに対する双方向サポート](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)」をご覧ください。
+   Web サービスは UTF-8 および Unicode のテキストの送受信をサポートしているため、双方向言語を使用するアプリケーションに適しています。 Web クライアント アプリケーションのユーザー インターフェイスはブラウザーに依存しているため、Web アプリケーションでの双方向サポートの内容は、ユーザーのブラウザーが双方向機能をどの程度サポートしているかによって異なります。 Visual Studio では、アラビア語またはヘブライ語のテキスト、右から左への読み取り順序、ファイルのエンコーディング、およびローカル カルチャ設定をサポートするアプリケーションを作成できます。 詳しくは、「[ASP.NET Web アプリケーションに対する双方向サポート](/previous-versions/6eedwbtt(v=vs.140))」をご覧ください。
 
 > [!NOTE]
 > コンソール アプリでは、双方向言語のテキストがサポートされません。 これは、Windows におけるコンソール アプリケーションの動作のしくみによるものです。

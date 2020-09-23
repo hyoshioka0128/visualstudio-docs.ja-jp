@@ -1,5 +1,5 @@
 ---
-title: エラー - ASP.NET がインストールされていません |Microsoft Docs
+title: ASP.NET がインストールされていません。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3a768a1a3a0295190701cacc9bbf017baee507b7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 1c4138b1f3d102e235bb03ebcfd5a80808d8762c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460906"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852798"
 ---
 # <a name="error-aspnet-not-installed"></a>エラー :ASP.NET がインストールされていません
 このエラーは、デバッグを実行しようとしているコンピューターに [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] が正しくインストールされていない場合に発生します。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] がインストールされていないか、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] がインストールされてから IIS がインストールされた可能性があります。

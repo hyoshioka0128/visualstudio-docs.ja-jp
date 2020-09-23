@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 89effbfd31e0194a88067a340c9332d888ef23df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81224551"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809060"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する
 
@@ -164,6 +164,6 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
 ## <a name="see-also"></a>関連項目
 
-* [その他の Visual Basic のチュートリアル](/visualstudio/get-started/visual-basic/)
-* [C# のチュートリアル](/visualstudio/get-started/csharp/)
+* [その他の Visual Basic のチュートリアル](../get-started/visual-basic/index.yml)
+* [C# のチュートリアル](../get-started/csharp/index.yml)
 * [C++ のチュートリアル](/cpp/get-started/tutorial-console-cpp)

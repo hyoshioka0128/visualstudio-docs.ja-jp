@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250254"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713465"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -50,7 +50,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 Visual Studio のあるマイナー バージョンから次のバージョンにアップグレードする場合、既定では、Visual Studio インストーラーによって、現在のインストールがそのチャネルの次のバージョンに更新されます。 たとえば、16.6.4 Preview をインストールすると、インストーラーでは現在の 16.6.3 Preview のインストールの置き換えが試行されます。これは、両方のバージョンが 16.6 Preview チャネルにあるためです。 これにより、古いバージョンの Visual Studio がマシンの領域を確実に占有しないようにすることができます。 場合によっては、複数のマイナー リリースをサイドバイサイドでインストールすると役立つ場合があります。 この例では、これは同じマシン上に 16.6.3 と 16.6.4 の両方が存在することを意味します。
 
-1. 既存のバージョンの Visual Studio と共にサイドバイサイドでインストールするマイナー バージョンの [Visual Studio ブートストラップ ファイル](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)をダウンロードします。
+1. 既存のバージョンの Visual Studio と共にサイドバイサイドでインストールするマイナー バージョンの [Visual Studio ブートストラップ ファイル](/visualstudio/releases/2019/history#installing-an-earlier-release)をダウンロードします。
 2. 管理者モードでコマンド プロンプトを開きます。 これを行うには、Windows のスタート メニューを開き、「cmd」と入力し、コマンド プロンプトの検索結果を右クリックし、 **[管理者として実行]** を選択します。 コマンド プロンプトで、Visual Studio ブートストラップ ファイルが配置されているフォルダーにディレクトリを変更します。
 3. 次のコマンドを実行して、インストール場所に新しいフォルダーのパスを指定し、.exe ファイル名を、インストールするバージョンの Visual Studio の適切なブートストラップ名に置き換えます。 .exe ファイル名は、以下のファイルと同じか、同様の名前にすることをお勧めします。
    * Visual Studio Community の場合は vs_community.exe

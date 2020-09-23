@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801569"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811046"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>手順 3: 対話型 REPL ウィンドウを使用する
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801569"
 Visual Studio の Python 用 **対話型**ウィンドウによって機能豊富な REPL (読み取り、評価、出力ループ) エクスペリエンスが実現され、通常の編集、ビルド、デバッグのサイクルが大幅に短縮されます。 **対話型**ウィンドウは、Python のコマンド ラインの REPL エクスペリエンスのすべての機能を提供します。 これは、コマンド ラインからでは面倒な、Visual Studio エディターのソース ファイルでのコード交換も容易にします。
 
 > [!NOTE]
-> REPL の問題については、確実に `ipython` パッケージと `ipykernel` パッケージをインストールしてください。また、パッケージのインストールのヘルプについては、[Python 環境のパッケージ タブ](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab)に関する記事を参照してください。
+> REPL の問題については、確実に `ipython` パッケージと `ipykernel` パッケージをインストールしてください。また、パッケージのインストールのヘルプについては、[Python 環境のパッケージ タブ](./python-environments-window-tab-reference.md#packages-tab)に関する記事を参照してください。
 
 1. **ソリューション エクスプローラー**で、(前の図で示した **Python 3.6 (32-bit)** などのような) プロジェクトの Python 環境を右クリックして、**[対話型ウィンドウを開く]** を選択して**対話型**ウィンドウを開きます。 Visual Studio のメイン メニューで、**[表示]** > **[その他のウィンドウ]** > **[Python Interactive ウィンドウ]** を選択することも可能です。
 

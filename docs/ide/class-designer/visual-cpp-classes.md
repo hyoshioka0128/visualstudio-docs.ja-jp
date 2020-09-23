@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590736"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808130"
 ---
 # <a name="c-classes-in-class-designer"></a>クラス デザイナーの C++ クラス
 
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、 **[クラス ビュー]** に移動し、型ノード、 **[派生型]** サブフォルダーの順に展開して、これらの型をクラス ダイアグラムにドラッグすることで表示できます。
 
-複数クラスの継承の詳細については、「[Multiple Inheritance](https://msdn.microsoft.com/library/6td5yws2.aspx)」 (多重継承) と「[Multiple Base Classes](/cpp/cpp/multiple-base-classes)」 (複数の基底クラス) を参照してください。
+複数クラスの継承の詳細については、「[Multiple Inheritance](/previous-versions/6td5yws2(v=vs.140))」 (多重継承) と「[Multiple Base Classes](/cpp/cpp/multiple-base-classes)」 (複数の基底クラス) を参照してください。
 
 ## <a name="abstract-classes"></a>抽象クラス
 
@@ -177,6 +177,6 @@ typedef struct
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
 - [クラスと構造体](/cpp/cpp/classes-and-structs-cpp)
 - [匿名クラス型](/cpp/cpp/anonymous-class-types)
-- [多重継承](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [多重継承](/previous-versions/6td5yws2(v=vs.140))
 - [複数の基本クラス](/cpp/cpp/multiple-base-classes)
 - [テンプレート](/cpp/cpp/templates-cpp)

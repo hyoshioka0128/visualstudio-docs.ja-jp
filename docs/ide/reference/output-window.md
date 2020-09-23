@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567984"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810364"
 ---
 # <a name="output-window"></a>[出力] ウィンドウ
 
@@ -76,7 +76,7 @@ C++ では、警告とエラー メッセージ、およびその合計数を**�
 ## <a name="see-also"></a>関連項目
 
 - [出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [方法: 出力ウィンドウを制御する](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [方法: 出力ウィンドウを制御する](/previous-versions/ht6z4e28(v=vs.140))
 - [コンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)
 - [ビルド構成について](../../ide/understanding-build-configurations.md)
 - [クラス ライブラリの概要](/dotnet/standard/class-library-overview)

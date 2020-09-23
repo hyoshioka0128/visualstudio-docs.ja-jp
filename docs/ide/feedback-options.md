@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769996"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807886"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio フィードバック オプション
 
@@ -71,7 +71,7 @@ Visual Studio の品質向上のためのアイデアやご提案をお持ちの
 ドキュメントの改善でご協力いただける場合、方法が 2 つあります。
 
 * ドキュメントページの右上にある、 **[このページはお役に立ちましたか?]** という応答ツールを使用します。
-* [docs.microsoft.com](/visualstudio/) の Visual Studio ページについてフィードバックをいただける場合、GitHub アカウントをご使用ください。 その場合は、ドキュメントページの下部にある **[次のフィードバックを送信]**  >  **[このページ]** ボタンを選択します。
+* [docs.microsoft.com](../index.yml) の Visual Studio ページについてフィードバックをいただける場合、GitHub アカウントをご使用ください。 その場合は、ドキュメントページの下部にある **[次のフィードバックを送信]**  >  **[このページ]** ボタンを選択します。
 
 ## <a name="contact-microsoft-support"></a>Microsoft サポートに問い合わせる
 

@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88584576"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810875"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -87,7 +87,7 @@ Visual Studio を使用して問題を報告したくない場合、またはで
 
 ## <a name="see-also"></a>関連項目
 
-* [開発者コミュニティのガイドライン](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
+* [開発者コミュニティのガイドライン](./developer-community-guidelines.md)
 * [Visual Studio フィードバック オプション](../ide/feedback-options.md)
 * [Visual Studio for Mac に関する問題を報告する](/visualstudio/mac/report-a-problem)
 * [C++ に関する問題を報告する](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)

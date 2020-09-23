@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427003"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810325"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
@@ -63,7 +63,7 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
     オプションを **[すべてのモジュール]** ではなく **[指定したモジュールのみ]** に設定した後、読み込むモジュールを指定します。 デバッグ中に、 **[モジュール]** ウィンドウで特定のモジュールを右クリックして、シンボルの読み込みにモジュールを明示的に含めることもできます (デバッグ中にウィンドウを開くには、 **[デバッグ]**  >  **[Windows]**  >  **[モジュール]** の順に選択します)。
 
-    詳細については、「[Understanding symbol files and Visual Studio’s symbol settings](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019)」(シンボル ファイルおよび Visual Studio のシンボルの設定について) を参照してください。
+    詳細については、「[Understanding symbol files and Visual Studio’s symbol settings](?view=vs-2019)」(シンボル ファイルおよび Visual Studio のシンボルの設定について) を参照してください。
 
 - **診断ツールを無効にする**
 

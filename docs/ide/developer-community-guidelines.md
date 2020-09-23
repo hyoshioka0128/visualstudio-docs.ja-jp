@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87972474"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810120"
 ---
 # <a name="developer-community-guidelines"></a>開発者コミュニティのガイドライン
 
@@ -57,7 +57,7 @@ Visual Studio Developer Community でイシューを検索して、それがま�
 
 イシューのトリアージは、複数の手順から成るプロセスであり、機能チーム内で共同作業によって実行されます。 トリアージには通常 1 週間かかりますが、それ以上かかる場合もあります。 トリアージの目的は、イシューのその後の状況について、明確に把握できるようにすることです。 たとえば、トリアージを行った後に、イシューに対して修正が計画されているのか、コミュニティからのフィードバックを待っているのかがわかります。
 
-問題を報告した後は、提出した問題がライフサイクルのどの段階にあるかが状態で示されます。 Visual Studio 製品チームがフィードバックを検討して、適切な状態に設定します。 [問題の状態とよくあるご質問](https://docs.microsoft.com/visualstudio/ide/report-a-problem)に関する記事を参照して、問題の報告の進行状況を追跡します。
+問題を報告した後は、提出した問題がライフサイクルのどの段階にあるかが状態で示されます。 Visual Studio 製品チームがフィードバックを検討して、適切な状態に設定します。 [問題の状態とよくあるご質問](./report-a-problem.md)に関する記事を参照して、問題の報告の進行状況を追跡します。
 
 Microsoft では、イシューに重要な情報が含まれていない場合、"_詳細情報が必要_" 状態を割り当てます。 必要な特定の情報と合わせてイシューについてコメントし、ユーザーは電子メール通知を受け取ります。 7 日以内に情報を受信しない場合は、ユーザーにリマインダーを送信します。 その後、14 日間の非アクティブ状態を経て、チケットを終了します。
 
@@ -78,8 +78,8 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 #### <a name="additional-information"></a>追加情報
 
-- [パフォーマンスの問題が修正される可能性を高める方法](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [MSBuild に関する問題のトラブルシューティングとログ記録](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [パフォーマンスの問題が修正される可能性を高める方法](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [MSBuild に関する問題のトラブルシューティングとログ記録](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>機能の提案の管理
 
@@ -91,7 +91,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 - 一般的な製品の方向性と一致しているか?
 - ビルドと管理を許容できるか?
-- 全体的な[ロードマップ](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)戦略に合っているか?
+- 全体的な[ロードマップ](/visualstudio/productinfo/vs-roadmap)戦略に合っているか?
 - 投票やコメントが示すとおりのコミュニティ サポートが得られるか?
 - コミュニティ サポートが低くても、Microsoft がそれを気に入るか?
 
@@ -99,7 +99,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 提案が製品の全体的な方向性と一致しない場合は、"*スコープ外*" として閉じます。 たとえば、Visual Studio ファミリ製品の他のメンバーに同様の投資がある場合があります。 または、提案された機能は少数の人にのみ関連しているため、拡張機能を提供する方が適していることがあります。
 
-[提案の状態とよくあるご質問](https://docs.microsoft.com/visualstudio/ide/report-a-problem)に関する記事を参照して、機能の提案の進行状況を追跡します。
+[提案の状態とよくあるご質問](./report-a-problem.md)に関する記事を参照して、機能の提案の進行状況を追跡します。
 
 ## <a name="discussion-etiquette"></a>ディスカッションのエチケット
 
@@ -111,7 +111,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 ## <a name="data-privacy"></a>データのプライバシー
 
-コメントと返信は公開されますが、添付ファイルはすべて、Microsoft とのみプライベートに共有されます。 この可視性は、他のユーザーによって発見されたイシューや解決策をコミュニティ全体で見ることができるという利点があります。 自分のデータや ID のプライバシーについて懸念がある場合は、いくつかのオプションがあります。 詳細については、「[開発者コミュニティのデータのプライバシー](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy)」を参照してください。
+コメントと返信は公開されますが、添付ファイルはすべて、Microsoft とのみプライベートに共有されます。 この可視性は、他のユーザーによって発見されたイシューや解決策をコミュニティ全体で見ることができるという利点があります。 自分のデータや ID のプライバシーについて懸念がある場合は、いくつかのオプションがあります。 詳細については、「[開発者コミュニティのデータのプライバシー](./developer-community-privacy.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
