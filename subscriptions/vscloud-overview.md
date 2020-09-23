@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248342"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641563"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -26,7 +26,7 @@ ms.locfileid: "88248342"
 購入に対する請求のため、[Azure サブスクリプション](https://azure.microsoft.com/pricing/purchase-options/)が必要になります。 Visual Studio Marketplace で初めて購入する前、または購入時に、[サインアップ](https://portal.azure.com)することができます。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Visual Studio クラウド サブスクリプションの購入条件
-Azure サブスクリプションに対して、[所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)、[サービス管理者または共同管理者](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator)アクセス権を持っているユーザーは、だれでもクラウド サブスクリプションを購入できます。
+クラウド サブスクリプションを購入するには、お使いの EA 用に作成された Azure サブスクリプションに対して共同作成者以上の権限が与えられている必要があります。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>クラウド サブスクリプションの購入方法
 

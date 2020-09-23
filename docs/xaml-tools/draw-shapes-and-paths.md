@@ -1,7 +1,8 @@
 ---
 title: 図形とパスの描画
+description: Blend for Visual Studio を使用して、図形とパスに詳細を追加する
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350824"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022510"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
 
@@ -26,7 +27,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 図形は **[アセット]** ウィンドウにあります。
 
-![[アセット] ウィンドウの [図形] カテゴリ](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Blend for Visual Studio の [アセット] ウィンドウの [図形] カテゴリのスクリーンショット":::
 
 目的の図形をアートボードにドラッグします。 次に、図形にあるハンドルを使用し、図形の拡大縮小、回転、移動、または傾斜を行います。
 
@@ -99,7 +100,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ![パスの結合](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|アクション|
+|番号|アクション|
 |-|-|
 |![結合前の 2 つの図形](../designers/media/b1_1.png)|結合前の 2 つの図形|
 |![合算](../designers/media/b1_2.png)|合算|
