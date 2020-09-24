@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ブックマークのショートカット メニューを作成します。'
+title: 'チュートリアル: ブックマークのショートカットメニューを作成する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,26 +16,26 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438537"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91146904"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>チュートリアル: ブックマークのショートカット メニューを作成します。
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>チュートリアル: ブックマークのショートカットメニューを作成する
   このチュートリアルでは、Word のドキュメント レベルのカスタマイズを使用して <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールのショートカット メニューを作成する方法を示します。 ユーザーがブックマーク内のテキストを右クリックすると、ショートカット メニューにテキストの書式設定オプションが表示されます。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
  このチュートリアルでは、次の作業について説明します。
 
-- [プロジェクトを作成する](#BKMK_CreateProject)します。
+- [プロジェクトを作成](#BKMK_CreateProject)します。
 
-- [文書にテキストとブックマークを追加](#BKMK_addtextandbookmarks)します。
+- [ドキュメントにテキストとブックマークを追加](#BKMK_addtextandbookmarks)します。
 
-- [ショートカット メニューにコマンドを追加](#BKMK_AddCmndsShortMenu)します。
+- [ショートカットメニューにコマンドを追加](#BKMK_AddCmndsShortMenu)します。
 
-- [ブックマークにテキストの書式設定](#BKMK_formattextbkmk)します。
+- [ブックマーク内のテキストの書式を設定](#BKMK_formattextbkmk)します。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -46,64 +46,64 @@ ms.locfileid: "63438537"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] または [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-## <a name="BKMK_CreateProject"></a> プロジェクトを作成します。
+## <a name="create-the-project"></a><a name="BKMK_CreateProject"></a> プロジェクトを作成する
  まず、Visual Studio で Word 文書プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-- 名前を持つ Word 文書プロジェクトを作成**My Bookmark Shortcut Menu**します。 ウィザードで、次のように選択します。**新しい文書を作成**です。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+- "My Bookmark" という名前の **ショートカットメニュー**を持つ Word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     デザイナーで新しい Word 文書を開き、 **My Bookmark Shortcut Menu**プロジェクトを**ソリューション エクスプ ローラー**します。
+     Visual Studio では、デザイナーで新しい Word 文書が開き、 **[マイブックマーク] ショートカットメニュー** プロジェクトが **ソリューションエクスプローラー**に追加されます。
 
-## <a name="BKMK_addtextandbookmarks"></a> 文書にテキストとブックマークを追加します。
+## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> ドキュメントにテキストとブックマークを追加する
  文書にテキストを追加し、部分的に重なった 2 つのブックマークを追加します。
 
 ### <a name="to-add-text-to-your-document"></a>文書にテキストを追加するには
 
 - プロジェクトのデザイナーで表示されているドキュメントに次のテキストを入力します。
 
-     **これは、ブックマーク内のテキストを右クリックすると、ショートカット メニューを作成する例です。**
+     **This is an example of creating a shortcut menu when you right-click the text in a bookmark.**
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>ドキュメントにブックマーク コントロールを追加するには
 
-1. **ツールボックス**から、 **Word コントロール** タブで、ドラッグ、<xref:Microsoft.Office.Tools.Word.Bookmark>コントロールをドキュメント。
+1. [ **ツールボックス**] の [ **Word コントロール** ] タブから、 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを文書にドラッグします。
 
-    **ブックマーク コントロールの追加** ダイアログ ボックスが表示されます。
+    [ **ブックマークコントロールの追加** ] ダイアログボックスが表示されます。
 
-2. 「テキストを右クリックするとショートカット メニューを作成する」単語を選択する、 をクリックし、 **OK**。
+2. "テキストを右クリックしてショートカットメニューを作成する" という語を選択し、[ **OK**] をクリックします。
 
     `bookmark1` がドキュメントに追加されます。
 
-3. もう 1 つ追加<xref:Microsoft.Office.Tools.Word.Bookmark>「ブックマーク内のテキストを右クリックして」単語を制御します。
+3. <xref:Microsoft.Office.Tools.Word.Bookmark>"ブックマーク内のテキストを右クリック" という単語に別のコントロールを追加します。
 
     `bookmark2` がドキュメントに追加されます。
 
    > [!NOTE]
-   > 両方に表示されます「テキストを右クリックして」単語`bookmark1`と`bookmark2`します。
+   > 「テキストを右クリック」という言葉は、との両方にあり `bookmark1` `bookmark2` ます。
 
    デザイン時に文書にブックマークを追加すると、<xref:Microsoft.Office.Tools.Word.Bookmark> コントロールが作成されます。 ブックマークの複数のイベントに対してプログラミングを行うことができます。 ブックマークの <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> イベントにコードを作成することで、ユーザーがブックマーク内のテキストを右クリックしたときにショートカット メニューを表示できます。
 
-## <a name="BKMK_AddCmndsShortMenu"></a> ショートカット メニューにコマンドを追加します。
+## <a name="add-commands-to-a-shortcut-menu"></a><a name="BKMK_AddCmndsShortMenu"></a> ショートカットメニューにコマンドを追加する
  ドキュメントを右クリックすると表示されるショートカット メニューにボタンを追加します。
 
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>ショートカット メニューにコマンドを追加するには
 
-1. 追加、**リボン XML**プロジェクト項目。 詳細については、「[方法 :リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。
+1. **リボン XML**項目をプロジェクトに追加します。 詳細については、「 [方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。
 
-2. **ソリューション エクスプ ローラー**、 **ThisDocument.cs**または**ThisDocument.vb**します。
+2. **ソリューションエクスプローラー**で、 **ThisDocument.cs**または**ThisDocument**を選択します。
 
-3. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+3. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
 
-     **ThisDocument**クラス ファイルがコード エディターでを開きます。
+     コードエディターで **ThisDocument** クラスファイルが開きます。
 
-4. 次のコードを追加、 **ThisDocument**クラス。 このコードでは、CreateRibbonExtensibilityObject メソッドをオーバーライドし、Office アプリケーションにリボン XML クラスを返します。
+4. **ThisDocument**クラスに次のコードを追加します。 このコードは、CreateRibbonExtensibilityObject メソッドをオーバーライドし、Office アプリケーションにリボン XML クラスを返します。
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
 5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには Ribbon1.xml という名前が付けられます。
 
-6. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+6. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
 
      コード エディターでリボン XML ファイルが開きます。
 
@@ -125,16 +125,16 @@ ms.locfileid: "63438537"
 
      このコードでは、ドキュメントを右クリックすると表示されるショートカット メニューに 2 つのボタンが追加されます。
 
-8. **ソリューション エクスプ ローラー**、右クリック`ThisDocument`、 をクリックし、**コードの表示**します。
+8. **ソリューションエクスプローラー**で、を右クリック `ThisDocument` し、[コードの**表示**] をクリックします。
 
 9. 次の変数とブックマーク変数をクラス レベルで宣言します。
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. **ソリューション エクスプ ローラー**、リボン コード ファイルを選択します。 既定では、リボン コード ファイルの名前は**Ribbon1.cs**または**Ribbon1.vb**します。
+10. **ソリューションエクスプローラー**で、リボンコードファイルを選択します。 既定では、リボンコードファイルには **Ribbon1.cs** または **ribbon1.vb**という名前が付けられます。
 
-11. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+11. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
 
      コード エディターでリボン コード ファイルが開きます。
 
@@ -143,7 +143,7 @@ ms.locfileid: "63438537"
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
 
-## <a name="BKMK_formattextbkmk"></a> ブックマークにテキストの書式設定します。
+## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> ブックマーク内のテキストの書式を設定する
 
 ### <a name="to-format-the-text-in-the-bookmark"></a>ブックマーク内のテキストに書式を設定するには
 
@@ -152,13 +152,13 @@ ms.locfileid: "63438537"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **ソリューション エクスプ ローラー**、 **ThisDocument.cs**または**ThisDocument.vb**します。
+2. **ソリューションエクスプローラー**には、 **ThisDocument.cs** または **ThisDocument**を選択します。
 
-3. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+3. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
 
-     **ThisDocument**クラス ファイルがコード エディターでを開きます。
+     コードエディターで **ThisDocument** クラスファイルが開きます。
 
-4. 次のコードを追加、 **ThisDocument**クラス。
+4. **ThisDocument**クラスに次のコードを追加します。
 
      [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
      [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
@@ -166,7 +166,7 @@ ms.locfileid: "63438537"
     > [!NOTE]
     > ブックマークが部分的に重なっている場合を処理するためのコードを作成する必要があります。 これを行わないと、既定でコードは選択範囲内にあるすべてのブックマークについて呼び出されます。
 
-5. C# では、次に示すように、ブックマーク コントロールのイベント ハンドラーを <xref:Microsoft.Office.Tools.Word.Document.Startup> イベントに追加する必要があります。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+5. C# では、次に示すように、ブックマーク コントロールのイベント ハンドラーを <xref:Microsoft.Office.Tools.Word.Document.Startup> イベントに追加する必要があります。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
 
@@ -175,26 +175,26 @@ ms.locfileid: "63438537"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
-2. 最初のブックマークを右クリックし、をクリックし、**太字**します。
+2. 最初のブックマークを右クリックし、[ **太字**] をクリックします。
 
 3. `bookmark1` 内のすべてのテキストが太字になることを確認します。
 
-4. ブックマークが重複してテキストを右クリックし、**斜体**。
+4. ブックマークが重なっているテキストを右クリックし、[ **斜体**] をクリックします。
 
 5. `bookmark2` ではすべてのテキストが斜体になるが、`bookmark1` では `bookmark2` と重なっている部分のテキストしか斜体にならないことを確認します。
 
-## <a name="next-steps"></a>次の手順
- ここでは、次のタスクを行います。
+## <a name="next-steps"></a>次のステップ
+ ここでは、次の作業を行います。
 
-- Excel 内のホスト コントロールのイベントに応答するコードを作成します。 詳細については、「[チュートリアル:NamedRange コントロールのイベントに対してプログラム](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)します。
+- Excel 内のホスト コントロールのイベントに応答するコードを作成します。 詳細については、「 [チュートリアル: NamedRange コントロールのイベントに対してプログラムを実行する](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)」を参照してください。
 
-- チェック ボックスを使用してブックマーク内の書式を変更します。 詳細については、「[チュートリアル:CheckBox コントロールを使用して書式設定の変更ドキュメント](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)します。
+- チェック ボックスを使用してブックマーク内の書式を変更します。 詳細については、「 [チュートリアル: CheckBox コントロールを使用してドキュメントの書式を変更する](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
-- [拡張オブジェクトを使用して Word を自動化します。](../vsto/automating-word-by-using-extended-objects.md)
+- [拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)
 - [Bookmark コントロール](../vsto/bookmark-control.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

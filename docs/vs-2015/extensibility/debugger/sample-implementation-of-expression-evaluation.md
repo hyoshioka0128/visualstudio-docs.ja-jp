@@ -1,5 +1,5 @@
 ---
-title: 式の評価の実装のサンプル |Microsoft Docs
+title: 式の評価の実装例 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,33 +13,33 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436691"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147240"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>式の評価の実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- **ウォッチ**ウィンドウ式、Visual Studio 呼び出し[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)生成するために、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。 `IDebugExpressionContext2::ParseText` 式エバリュエーター (EE) および呼び出しをインスタンス化[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)を取得する、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。  
+ **ウォッチ**ウィンドウ式の場合、Visual Studio は[parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)を呼び出して、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトを生成します。 `IDebugExpressionContext2::ParseText` 式エバリュエーター (EE) をインスタンス化し、 [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクトを取得します。  
   
- この実装の`IDebugExpressionEvaluator::Parse`は、次のタスクを実行します。  
+ のこの実装で `IDebugExpressionEvaluator::Parse` は、次のタスクを実行します。  
   
-1. [C++のみ]エラーを検索する式を解析します。  
+1. [C++ のみ]式を解析してエラーを探します。  
   
-2. クラスをインスタンス化します (と呼ばれる`CParsedExpression`この例では) を実装する、`IDebugParsedExpression`インターフェイスし、クラスで解析する式を格納します。  
+2. `CParsedExpression`インターフェイスを実装 `IDebugParsedExpression` し、解析する式をクラスに格納するクラス (この例ではと呼ばれる) をインスタンス化します。  
   
-3. 返します、`IDebugParsedExpression`からインターフェイス、`CParsedExpression`オブジェクト。  
+3. `IDebugParsedExpression`オブジェクトからインターフェイスを返し `CParsedExpression` ます。  
   
 > [!NOTE]
-> 以下の例と MyCEE サンプルでは、式エバリュエーターで分離されていない、評価を解析します。  
+> 次に示す MyCEE サンプルの例では、式エバリュエーターが評価から解析を分離していません。  
   
 ## <a name="managed-code"></a>マネージド コード  
- これは、実装の`IDebugExpressionEvaluator::Parse`マネージ コードでします。 このバージョンのメソッドは、解析を遅延に注意してください。 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)を解析するためのコードは、同時にも評価 (を参照してください[ウォッチ式の評価](../../extensibility/debugger/evaluating-a-watch-expression.md))。  
+ これは、マネージコードでのの実装です `IDebugExpressionEvaluator::Parse` 。 このバージョンのメソッドは、解析用のコードも同時に評価されるため、 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) への解析を延期することに注意してください (「 [ウォッチ式の評価](../../extensibility/debugger/evaluating-a-watch-expression.md)」を参照してください)。  
   
 ```csharp  
 namespace EEMC  
@@ -66,7 +66,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>アンマネージ コード  
- これは、実装の`IDebugExpressionEvaluator::Parse`アンマネージ コードにします。 このメソッドは、ヘルパー関数を呼び出したり`Parse`、解析した式とエラーをチェックするにはこのメソッドは、結果の値を無視します。 正式な評価の遅延を[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)が評価されるときに、式が解析される (を参照してください[ウォッチ式の評価](../../extensibility/debugger/evaluating-a-watch-expression.md))。  
+ これは、 `IDebugExpressionEvaluator::Parse` アンマネージコードでのの実装です。 このメソッドは、ヘルパー関数を呼び出し `Parse` て、式を解析し、エラーをチェックしますが、このメソッドは結果の値を無視します。 正式な評価は、評価時に式が解析される [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) に遅延されます (「 [ウォッチ式の評価](../../extensibility/debugger/evaluating-a-watch-expression.md)」を参照してください)。  
   
 ```cpp#  
 STDMETHODIMP CExpressionEvaluator::Parse(  
@@ -110,5 +110,5 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [ウォッチ ウィンドウ式の評価](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [ウォッチウィンドウの式の評価](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [ウォッチ式の評価](../../extensibility/debugger/evaluating-a-watch-expression.md)
