@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40da28cce9d2189b2f30ff6ea958926f3041836
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815891"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135080"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio での XAML ホットリロードを使用した実行中の XAML コードの作成とデバッグ
 
@@ -47,7 +47,7 @@ XAML ホットリロードは、次のような場合に特に役立ちます。
 
 XAML ホットリロードの既知の制限事項を次に示します。 に実行するすべての制限を回避するには、デバッガーを停止し、操作を完了します。
 
-|制限事項|WPF|UWP|Notes|
+|制限事項|WPF|UWP|メモ|
 |-|-|-|-|
 |アプリの実行中にイベントをコントロールに接続する|サポートされていません|サポートされていません|「エラー: *イベントを確認できませんでした*」を参照してください。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
 |リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポートされています|例: を `SolidColorBrush` として使用するために、をリソースディクショナリに追加 `StaticResource` します。</br>注: 静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリのプロパティを変更 `Source` しています。|
@@ -55,7 +55,7 @@ XAML ホットリロードの既知の制限事項を次に示します。 に�
 |NuGet パッケージの管理 (パッケージの追加/削除/更新)|サポートされていません|サポートされていません|なし|
 |{X:Bind} markup extension を使用するデータバインディングの変更|該当なし|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
 |X:Uid ディレクティブの変更はサポートされていません|なし|サポートしていません。|なし|
-|複数のプロセス | サポートされていません | サポートされていません | ホットリロードは、一度に1つのプロセスに対してのみ使用できます。 |
+|複数のプロセス | サポートされています | サポートされています | Visual Studio 2019 [バージョン 16.6](/visualstudio/releases/2019/release-notes-v16.6) 以降でサポートされています |
 
 ## <a name="error-messages"></a>エラー メッセージ
 
@@ -66,7 +66,7 @@ XAML ホットリロードの使用中に、次のエラーが発生する場合
 |イベントが失敗したことを確認する|[エラー] は、アプリケーションの実行中にサポートされていないコントロールの1つにイベントを送信しようとしていることを示します。|
 |この変更は、XAML ホットリロードではサポートされておらず、デバッグセッション中に適用されません。|エラーは、実行しようとしている変更が XAML ホットリロードでサポートされていないことを示します。 デバッグセッションを停止し、変更を加えてから、デバッグセッションを再開します。 サポートが必要なサポートされていないシナリオが見つかった場合は、 [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)の新しい [機能の提案] オプションを使用してください。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 * [XAML ホット リロードのトラブルシューティング](xaml-hot-reload-troubleshooting.md)
 * [Xamarin.Forms 用の XAML ホット リロード](/xamarin/xamarin-forms/xaml/hot-reload)
