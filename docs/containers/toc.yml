@@ -46,8 +46,6 @@
           href: container-launch-settings.md
 - name: Kubernetes を使用した開発
   items:
-    - name: Visual Studio での Kubernetes
-      href: tutorial-kubernetes-tools.md
     - name: Bridge to Kubernetes
       href: bridge-to-kubernetes.md
     - name: Bridge to Kubernetes のしくみ
