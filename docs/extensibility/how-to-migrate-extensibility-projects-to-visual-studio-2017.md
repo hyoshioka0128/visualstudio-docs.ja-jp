@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038557"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352284"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する
 
@@ -172,7 +172,7 @@ Visual Studio が最近開いた場合は、次のようなダイアログボッ
 
 さらにガイダンスを提供するために、いくつかの一般的な拡張機能の種類と推奨される前提条件を確認しました。
 
-拡張機能の種類 | 表示名 | id
+拡張機能の種類 | 表示名 | ID
 --- | --- | ---
 エディター | Visual Studio のコア エディター | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# および Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -181,7 +181,7 @@ WPF | Managed Desktop Workload コア | Microsoft.VisualStudio.Component.Managed
 
 ## <a name="find-component-ids"></a>コンポーネント Id の検索
 
-Visual Studio 製品によって並べ替えられたコンポーネントの一覧は、 [Visual studio 2017 のワークロードとコンポーネント id](../install/workload-and-component-ids.md?view=vs-2019)にあります。 マニフェスト内の前提条件 Id には、これらのコンポーネント Id を使用します。
+Visual Studio 製品によって並べ替えられたコンポーネントの一覧は、 [Visual studio 2017 のワークロードとコンポーネント id](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true)にあります。 マニフェスト内の前提条件 Id には、これらのコンポーネント Id を使用します。
 
 特定のバイナリが含まれているコンポーネントがわからない場合は、 [コンポーネント > バイナリマッピングスプレッドシート](https://aka.ms/vs2017componentid-binaries)をダウンロードしてください。
 
@@ -191,7 +191,7 @@ Excel シートには、 **コンポーネント名**、 **ComponentId**、 **�
 
 すべての参照について、まず、コアエディター (VisualStudio) コンポーネントに含まれているものを確認します。  少なくとも、すべての拡張機能の前提条件として、コアエディターコンポーネントを指定する必要があります。 コアエディターに含まれていない参照の場合は、[ **バイナリ/ファイル名** ] セクションにフィルターを追加して、これらの参照のいずれかのサブセットを持つコンポーネントを検索します。
 
-次に例を示します。
+例 :
 
 * デバッガー拡張機能があり、プロジェクトに *VSDebugEng.dll* と *VSDebug.dll*への参照が含まれていることがわかっている場合は、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをクリックします。  "VSDebugEng.dll" を検索し、[ *OK]* を選択します。  次に、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをもう一度クリックし、"VSDebug.dll" を検索します。  [現在の **選択項目をフィルターに追加する** ] チェックボックスをオンにして、[ **OK]** を選択します。  ここで、 **コンポーネント名** を調べて、拡張機能の種類に最も関係のあるコンポーネントを見つけます。 この例では、Just-in-time デバッガーを選択して、source.extension.vsixmanifest に追加します。
 * プロジェクトがデバッガー要素を扱うことがわかっている場合は、フィルター検索ボックスで "デバッガー" を検索して、名前にデバッガーが含まれているコンポーネントを確認できます。
