@@ -1,5 +1,5 @@
 ---
-title: 言語サービスとエディターの拡張ポイント |Microsoft Docs
+title: 言語サービスとエディターの拡張機能のポイント |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439799"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91403855"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張ポイント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エディターでは、ほとんどの言語サービスの機能を含む、Managed Extensibility Framework (MEF) コンポーネント パーツとして拡張する拡張ポイントを提供します。 これらには、主要な拡張機能ポイントのカテゴリです。  
+エディターには、Managed Extensibility Framework (MEF) コンポーネントパーツとして拡張できる拡張ポイントが用意されています。これには、ほとんどの言語サービス機能が含まれます。 拡張ポイントの主なカテゴリは次のとおりです。  
   
 - コンテンツの種類  
   
 - 分類の種類と分類の形式  
   
-- 余白とスクロール バー  
+- 余白とスクロールバー  
   
 - Tags  
   
 - 修飾  
   
-- マウスのプロセッサ  
+- マウスプロセッサ  
   
-- ハンドラーを削除します。  
+- ハンドラーの削除  
   
 - オプション  
   
 - IntelliSense  
   
 ## <a name="extending-content-types"></a>コンテンツの種類の拡張  
- コンテンツの種類は、たとえば、エディターによって処理されるテキスト、"text"、"code"または"CSharp"の種類の定義です。 型の変数を宣言することで新しいコンテンツ タイプを定義する<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>新しいコンテンツ タイプに一意の名前を提供します。 エディターを使用して、コンテンツの種類を登録するには、次の属性とエクスポートします。  
+ コンテンツの種類は、"text"、"code"、"CSharp" など、エディターによって処理されるテキストの種類の定義です。 新しいコンテンツの種類を定義するには、型の変数を宣言 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> し、新しいコンテンツの種類に一意の名前を付けます。 コンテンツタイプをエディターに登録するには、次の属性と一緒にエクスポートします。  
   
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute> コンテンツの種類の名前です。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute> コンテンツタイプの名前を指定します。  
   
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> このコンテンツの種類の派生元となるコンテンツの種類の名前です。 コンテンツ型は、その他の複数のコンテンツ タイプから継承することができます。  
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> このコンテンツタイプの派生元のコンテンツタイプの名前を指定します。 コンテンツの種類は、他の複数のコンテンツの種類から継承できます。  
   
-  <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>クラスはシールされている型のパラメーターなしでエクスポートすることができます。  
+  <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>クラスはシールされているため、型パラメーターを指定せずにエクスポートできます。  
   
-  次の例では、コンテンツ タイプの定義のエクスポート属性を示します。  
+  次の例では、コンテンツタイプ定義の export 属性を示します。  
   
 ```  
 [Export]  
@@ -59,27 +59,27 @@ ms.locfileid: "63439799"
 internal static ContentTypeDefinition TestContentTypeDefinition;  
 ```  
   
- コンテンツの種類は、0 個以上の既存のコンテンツ タイプに基づくことができます。 組み込みの型を次に示します。  
+ コンテンツの種類は、0個以上の既存のコンテンツの種類に基づいて作成できます。 組み込み型は次のとおりです。  
   
-- いずれか: 基本的なコンテンツの種類。 その他のすべてのコンテンツ タイプの親です。  
+- Any: 基本的なコンテンツの種類。 他のすべてのコンテンツタイプの親。  
   
-- テキスト: 基本的なプロジェクション以外のコンテンツの種類。 "Any"から継承されます。  
+- Text: 非投影コンテンツの基本型。 "Any" から継承します。  
   
-- : プレーン テキストのコード以外のテキスト。 "Text"から継承されます。  
+- Plaintext: 非コードテキストの場合。 "Text" から継承します。  
   
-- コード: すべての種類のコード。 "Text"から継承されます。  
+- Code: すべての種類のコードを対象としています。 "Text" から継承します。  
   
-- 模擬: は、処理の任意の種類からテキストを除外します。 このコンテンツの種類のテキストには、対象となる任意の拡張機能がなくなります。  
+- のみ: 任意の種類の処理からテキストを除外します。 このコンテンツの種類のテキストには、どのような拡張子も適用されません。  
   
-- 投影: の投影のバッファーの内容。 "Any"から継承されます。  
+- 射影: プロジェクションバッファーの内容。 "Any" から継承します。  
   
-- Intellisense: の IntelliSense の内容。 "Text"から継承されます。  
+- Intellisense: IntelliSense の内容。 "Text" から継承します。  
   
-- Sighelp: シグネチャ ヘルプ。 [Intellisense] から継承されます。  
+- Sighelp: シグネチャのヘルプ。 "Intellisense" から継承します。  
   
-- Sighelp doc: シグネチャ ヘルプが開きます。 [Intellisense] から継承されます。  
+- Sighelp-doc: シグネチャヘルプドキュメント。 "Intellisense" から継承します。  
   
-  これらは、一部の Visual Studio で定義されているコンテンツの種類と Visual Studio でホストされている言語の一部です。  
+  Visual Studio で定義されているコンテンツの種類と、Visual Studio でホストされている言語の一部を次に示します。  
   
 - Basic  
   
@@ -93,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 検索  
+- FindResults  
   
 - F#  
   
@@ -105,27 +105,27 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - XML  
   
-  使用可能なコンテンツの種類のリストを検出するには、インポート、<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>エディターのコンテンツの種類のコレクションを保持します。 次のコードは、このサービスをプロパティとしてインポートします。  
+  使用可能なコンテンツの種類の一覧を検出するには、 <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> エディターのコンテンツタイプのコレクションを保持するをインポートします。 次のコードでは、このサービスをプロパティとしてインポートします。  
   
 ```  
 [Import]  
 internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }  
 ```  
   
- ファイル名拡張子とコンテンツの種類を関連付けるには使用<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>します。  
+ コンテンツの種類をファイル名拡張子に関連付けるには、を使用し <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ます。  
   
 > [!NOTE]
-> 使用して Visual Studio で、ファイル名拡張子が登録されている、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>言語サービスのパッケージにします。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF コンテンツの種類をこの方法で登録されているファイル名拡張子を関連付けます。  
+> Visual Studio では、言語サービスパッケージでを使用してファイル名拡張子が登録され <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> ます。 は、 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> この方法で登録されたファイル名拡張子を持つ MEF コンテンツタイプを関連付けます。  
   
- ファイル名拡張子をコンテンツ タイプの定義をエクスポートするには、次の属性を含める必要があります。  
+ ファイル名の拡張子をコンテンツの種類の定義にエクスポートするには、次の属性を含める必要があります。  
   
 - <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>: ファイル名拡張子を指定します。  
   
 - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: コンテンツの種類を指定します。  
   
-  <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>クラスはシールされている型のパラメーターなしでエクスポートすることができます。  
+  <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>クラスはシールされているため、型パラメーターを指定せずにエクスポートできます。  
   
-  次の例では、コンテンツ タイプの定義をファイル名拡張子にエクスポート属性を示します。  
+  次の例では、ファイル名拡張子の属性をコンテンツタイプ定義にエクスポートする方法を示します。  
   
 ```  
 [Export]  
@@ -134,20 +134,20 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
 internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition;  
 ```  
   
- <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>ファイル名拡張子とコンテンツの種類間の関連付けを管理します。  
+ は、 <xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService> ファイル名拡張子とコンテンツタイプの間の関連付けを管理します。  
   
-## <a name="extending-classification-types-and-classification-formats"></a>形式の分類の種類と分類の拡張  
- 分類の種類を使用すると、さまざまな処理 (たとえば、緑「コメント」テキストと、青の「キーワード」テキストを色分け表示など) を提供するテキストの種類を定義します。 型の変数を宣言することで、新しい分類の種類を定義する<xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition>一意の名前を付けます。  
+## <a name="extending-classification-types-and-classification-formats"></a>分類の種類と分類の形式の拡張  
+ 分類の種類を使用すると、さまざまな処理を提供するテキストの種類を定義できます (たとえば、"keyword" というテキストを緑色にし、"comment" というテキストを緑色にするなど)。 型の変数を宣言し、それに一意の名前を付けることによって、新しい分類の種類を定義し <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition> ます。  
   
- エディターを使用して分類の種類を登録するには、次の属性と共にエクスポートします。  
+ エディターに分類の種類を登録するには、次の属性を使用して分類の種類をエクスポートします。  
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 分類の種類の名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: この分類の種類の継承元である分類の種類の名前。 すべての分類の種類が"text"から継承し、分類の種類を他の複数の分類の種類から継承できます。  
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>: この分類の種類の継承元となる分類の種類の名前。 すべての分類の種類は "テキスト" を継承し、分類の種類は他の複数の分類の種類から継承できます。  
   
-  <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition>クラスはシールされている型のパラメーターなしでエクスポートすることができます。  
+  <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition>クラスはシールされているため、型パラメーターを指定せずにエクスポートできます。  
   
-  次の例では、分類の種類の定義のエクスポート属性を示します。  
+  次の例では、分類の種類の定義に対する export 属性を示します。  
   
 ```  
 [Export]  
@@ -156,50 +156,50 @@ internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition
 internal static ClassificationTypeDefinition CSharpTestDefinition;  
 ```  
   
- <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>標準分類へのアクセスを提供します。 組み込みの分類の種類には、これらが含まれます。  
+ は、 <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService> 標準分類へのアクセスを提供します。 組み込みの分類の種類には、次のものが含まれます。  
   
-- 「テキスト」  
+- "text"  
   
-- 「自然言語」("text"から派生)  
+- "自然言語" ("テキスト" から派生)  
   
-- 「正式な言語」("text"から派生)  
+- "正式な言語" ("text" から派生)  
   
-- "string"("literal"から派生)  
+- "string" ("literal" から派生)  
   
-- "character"("literal"から派生)  
+- "character" ("literal" から派生)  
   
-- 「数値」("literal"から派生)  
+- "数値" ("literal" から派生)  
   
-  エラーの種類別のセットを継承<xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>します。 これらには、次のエラーの種類が含まれます。  
+  さまざまなエラーの種類のセットがから継承 <xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition> しています。 次のエラーの種類が含まれます。  
   
-- 「syntax error"  
+- "構文エラー"  
   
-- 「コンパイラ エラー」  
+- "コンパイラエラー"  
   
-- 「その他のエラー」  
+- "その他のエラー"  
   
-- 「警告」  
+- 要する  
   
-  使用可能な分類の種類のリストを検出するには、インポート、<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>エディターの分類の種類のコレクションを保持します。 次のコードは、このサービスをプロパティとしてインポートします。  
+  使用可能な分類の種類の一覧を確認するには、をインポートし <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> ます。これにより、エディターの分類の種類のコレクションが保持されます。 次のコードでは、このサービスをプロパティとしてインポートします。  
   
 ```  
 [Import]  
 internal IClassificationTypeRegistryService ClassificationTypeRegistryService { get; set; }  
 ```  
   
- 分類形式の定義は、新しい分類の種類を定義できます。 クラスを派生<xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition>型と共にエクスポートし、<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>と共に、次の属性。  
+ 新しい分類の種類の分類形式の定義を定義できます。 からクラスを派生させ、型を使用して <xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition> 、次の属性と共にエクスポートし <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition> ます。  
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 形式の名前。  
   
 - <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: 形式の表示名。  
   
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: の形式を表示するかどうかを指定します、**フォントおよび色**のページ、**オプション** ダイアログ ボックス。  
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: [**オプション**] ダイアログボックスの [**フォントおよび色**] ページに書式を表示するかどうかを指定します。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 形式の優先順位。 有効な値は<xref:Microsoft.VisualStudio.Text.Classification.Priority>します。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 形式の優先順位。 有効な値はから <xref:Microsoft.VisualStudio.Text.Classification.Priority> です。  
   
-- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: この形式をマップする、分類の名前を入力します。  
+- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: この形式のマップ先となる分類の種類の名前。  
   
-  次の例では、分類の形式の定義のエクスポート属性を示します。  
+  次の例では、分類形式の定義のエクスポート属性を示します。  
   
 ```  
 [Export(typeof(EditorFormatDefinition))]  
@@ -211,39 +211,39 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
 internal sealed class TestFormat : ClassificationFormatDefinition  
 ```  
   
- 使用可能な形式のリストを検出するには、インポート、<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>エディターの形式のコレクションを保持します。 次のコードは、このサービスをプロパティとしてインポートします。  
+ 使用可能な形式の一覧を検出するには、 <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService> エディターの形式のコレクションを保持するをインポートします。 次のコードでは、このサービスをプロパティとしてインポートします。  
   
 ```  
 [Import]  
 internal IEditorFormatMapService FormatMapService { get; set; }  
 ```  
   
-## <a name="extending-margins-and-scrollbars"></a>拡張の余白とスクロール バー  
- 余白とスクロール バーは、テキスト ビュー自体だけでなく、エディターのメイン ビューの要素です。 任意の数だけでなく、テキスト ビューの周囲に表示される標準の余白に余白を行うことができます。  
+## <a name="extending-margins-and-scrollbars"></a>余白とスクロールバーの拡張  
+ 余白とスクロールバーは、テキストビュー自体に加えて、エディターのメインビュー要素です。 テキストビューの周囲に表示される標準の余白に加えて、任意の数の余白を指定できます。  
   
- 実装を<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin>に余白を定義するインターフェイス。 実装することも必要があります、<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider>余白を作成するインターフェイス。  
+ <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMargin>余白を定義するインターフェイスを実装します。 また、 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> 余白を作成するには、インターフェイスも実装する必要があります。  
   
- エディターを使用して余白プロバイダーを登録するには次の属性とプロバイダーをエクスポートする必要があります。  
+ 余白プロバイダーをエディターに登録するには、次の属性を使用してプロバイダーをエクスポートする必要があります。  
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 余白の名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 余白が表示される、他の余白を基準とした順序。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 他の余白を基準とする余白の表示順序。  
   
-   これらは、組み込みの余白です。  
+   組み込みの余白は次のとおりです。  
   
-  - 「Wpf の水平スクロール バー」  
+  - "Wpf 水平スクロールバー"  
   
-  - 「Wpf の垂直スクロール バー」  
+  - "Wpf 垂直スクロールバー"  
   
-  - 「Wpf 行番号余白」  
+  - "Wpf の行番号の余白"  
   
-    水平方向の余白の順序属性を持つ`After="Wpf Horizontal Scrollbar"`、組み込みの余白と水平方向の余白の順序属性を持つ下に表示されます`Before ="Wpf Horizontal Scrollbar"`組み込みの余白が表示されます。 右の順序属性を持つ、左右の余白`After="Wpf Vertical Scrollbar"`がスクロール バーの右側に表示されます。 順序属性を持つ、左右の余白を左`After="Wpf Line Number Margin"`(表示されている) 場合に、行番号の余白の左側に表示されます。  
+    の order 属性を持つ水平余白 `After="Wpf Horizontal Scrollbar"` は、組み込みの余白の下に表示されます。また、order 属性がの水平余白は `Before ="Wpf Horizontal Scrollbar"` 、組み込みの余白の上に表示されます。 Order 属性がの右縦余白 `After="Wpf Vertical Scrollbar"` がスクロールバーの右側に表示されます。 順序の属性がの左の垂直方向の余白 `After="Wpf Line Number Margin"` は、行番号の余白の左側に表示されます (表示されている場合)。  
   
-- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: 余白 (左、右、上または下) の種類。  
+- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>: 余白の種類 (left、right、top、または bottom)。  
   
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>:、余白の有効期限 (たとえば、"text"または「コード」) のコンテンツの種類。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 余白が有効なコンテンツの種類 (たとえば、"text" または "code")。  
   
-  次の例では、行番号の余白の右側に表示される余白の余白のプロバイダーにエクスポート属性を示します。  
+  次の例は、行番号の余白の右側に表示される余白の余白プロバイダーに対するエクスポート属性を示しています。  
   
 ```  
 [Export(typeof(IWpfTextViewMarginProvider))]  
@@ -253,14 +253,14 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 [ContentType("text")]   
 ```  
   
-## <a name="extending-tags"></a>タグを拡張します。  
- タグは、さまざまな種類のテキスト データを関連付ける方法です。 多くの場合、関連付けられているデータは、視覚効果として表示されますがいないすべてのタグがある視覚的に。 実装することで、独自の種類のタグを定義する<xref:Microsoft.VisualStudio.Text.Tagging.ITag>します。 実装する必要がありますも<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>テキストの範囲の指定されたセットのタグを提供する、<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>タガーを提供します。 次の属性と共にタガー プロバイダーをエクスポートする必要があります。  
+## <a name="extending-tags"></a>タグの拡張  
+ タグを使用すると、データをさまざまな種類のテキストに関連付けることができます。 多くの場合、関連付けられたデータは視覚的な効果として表示されますが、すべてのタグが視覚的に表示されるわけではありません。 を実装することで、独自の種類のタグを定義でき <xref:Microsoft.VisualStudio.Text.Tagging.ITag> ます。 また、を実装して、 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 特定のテキスト範囲のセットにタグを指定し、を使用してタグを提供する必要があり <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> ます。 タガープロバイダーを次の属性と共にエクスポートする必要があります。  
   
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: タグの有効期限 (たとえば、"text"または「コード」) のコンテンツの種類。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: タグが有効なコンテンツの種類 (たとえば、"text" または "code")。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: タグの種類。  
   
-  次の例では、タガー プロバイダーにエクスポート属性を示します。  
+  次の例では、タグプロバイダーの export 属性を示します。  
   
 ```  
 [Export(typeof(ITaggerProvider))]  
@@ -269,24 +269,24 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 internal class TestTaggerProvider : ITaggerProvider  
 ```  
   
- タグの次のような組み込みのとおりです。  
+ 次の種類のタグが組み込まれています。  
   
-- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: に関連付けられている、<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>します。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: に関連付けられて <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> います。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: エラーの種類に関連付けられています。  
   
-- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 表示要素に関連付けられています。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 装飾に関連付けられています。  
   
   > [!NOTE]
-  > 例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
+  > の例につい <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> ては、「 [チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)」の HighlightWordTag の定義を参照してください。  
   
-- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: に関連付けられたリージョン展開またはアウトラインで折りたたまれていることができます。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: アウトラインで展開または折りたたむことができる領域に関連付けられています。  
   
-- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: テキスト ビューで表示要素が占める領域を定義します。 空間の表示要素の詳細については、次のセクションを参照してください。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: テキストビューでの表示要素の占有領域を定義します。 領域をネゴシエートする装飾の詳細については、次のセクションを参照してください。  
   
-- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: 自動間隔と、表示要素のサイズを提供します。  
+- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: 表示要素の間隔とサイズを自動調整します。  
   
-  検索し、バッファーとビューのタグを使用して、インポート、<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>または<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>を提供する、<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>要求された型。 次のコードは、このサービスをプロパティとしてインポートします。  
+  バッファーとビューのタグを検索して使用するに <xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService> は、またはをインポートし <xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService> ます。これにより、要求された型のが得られ <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> ます。 次のコードでは、このサービスをプロパティとしてインポートします。  
   
 ```  
 [Import]  
@@ -294,15 +294,15 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
 ```  
   
 #### <a name="tags-and-markerformatdefinitions"></a>タグと MarkerFormatDefinitions  
- 拡張することができます、<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>タグの外観を定義するクラス。 クラスをエクスポートする必要があります (として、 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>) で、次の属性。  
+ クラスを拡張し <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> て、タグの外観を定義できます。 次の属性を使用して、クラスを (として) エクスポートする必要があり <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition> ます。  
   
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: この形式を参照するための名前  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: この形式を参照するために使用される名前  
   
-- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: これにより、UI に表示する形式  
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: これにより、形式が UI に表示されます。  
   
-  コンス トラクターでは、表示名とタグの外観を定義します。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 塗りつぶしの色を定義し、<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>境界線の色を定義します。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>形式の定義のローカライズ可能な名前を指定します。  
+  コンストラクターでは、タグの表示名と外観を定義します。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 塗りつぶしの色を定義し、 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> 境界線の色を定義します。 は、 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> 形式定義のローカライズ可能な名前です。  
   
-  形式の定義の例を次に示します。  
+  書式定義の例を次に示します。  
   
 ```  
 [Export(typeof(EditorFormatDefinition))]  
@@ -321,21 +321,21 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 ```  
   
- タグには、この形式の定義を適用するには、クラス (表示名ではなく) の name 属性で設定した名前を参照します。  
+ この書式定義をタグに適用するには、(表示名ではなく) クラスの name 属性で設定した名前を参照します。  
   
 > [!NOTE]
-> 例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
+> の例につい <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition> ては、「 [チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)」の HighlightWordFormatDefinition クラスを参照してください。  
   
-## <a name="extending-adornments"></a>表示要素の拡張  
- 修飾は、テキスト ビューに表示されるテキストを追加できるかをテキスト自体を表示する視覚効果を定義します。 任意の型として、独自の表示要素を定義する<xref:System.Windows.UIElement>します。  
+## <a name="extending-adornments"></a>装飾の拡張  
+ 装飾は、テキストビューに表示されるテキストか、テキストビュー自体に追加できる視覚効果を定義します。 独自の表示形式は、任意の型として定義でき <xref:System.Windows.UIElement> ます。  
   
- 表示要素のクラスを宣言する必要があります、<xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>します。 装飾層に登録するには、次の属性と共にエクスポートします。  
+ 表示要素では、を宣言する必要があり <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition> ます。 装飾レイヤーを登録するには、次の属性を使用してそれをエクスポートします。  
   
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 表示要素の名前。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 装飾の名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: その他の装飾層に対して表示要素の順序付けします。 クラスは、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 4 つの既定の層を定義します。選択、アウトライン、カレット、およびテキスト。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 他の装飾層に対する装飾の順序。 クラスは、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 選択、アウトライン、キャレット、テキストという4つの既定のレイヤーを定義します。  
   
-  次の例では、装飾層定義のエクスポート属性を示します。  
+  次の例では、表示要素層の定義に対するエクスポート属性を示します。  
   
 ```  
 [Export]  
@@ -344,13 +344,13 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
 internal AdornmentLayerDefinition testLayerDefinition;  
 ```  
   
- 実装する 2 番目のクラスを作成する必要があります<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>処理とその<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>表示要素をインスタンス化するイベントです。 次の属性と共にこのクラスをエクスポートする必要があります。  
+ 表示要素をインスタンス化する <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> ことによって、そのイベントを実装して処理する2番目のクラスを作成する必要があり <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> ます。 このクラスは、次の属性と共にエクスポートする必要があります。  
   
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 表示要素の有効期限 (たとえば、"text"または「コード」) のコンテンツの種類。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 装飾が有効なコンテンツの種類 (例: "テキスト" または "コード")。  
   
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: テキスト ビューをこの表示要素の有効期限の種類。 クラスは、<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>は定義済みのテキスト ビュー ロールのセットがあります。 たとえば、<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>ファイルのテキスト ビューは主に使用します。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> ユーザーが編集またはマウスとキーボードを使用して移動できるテキスト ビューに使用されます。 例の<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>ビューは、エディターのテキスト ビューと**出力**ウィンドウ。  
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: この表示要素が有効なテキストビューの種類。 クラスには、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> 定義済みのテキストビューロールのセットがあります。 たとえば、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> は、主にファイルのテキストビューに使用されます。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> は、ユーザーがマウスやキーボードを使用して編集または移動できるテキストビューに使用されます。 ビューの例として <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> は、エディターのテキストビューや **出力** ウィンドウなどがあります。  
   
-  次の例では、表示要素のプロバイダーにエクスポート属性を示します。  
+  次の例は、表示要素のエクスポート属性を示しています。  
   
 ```  
 [Export(typeof(IWpfTextViewCreationListener))]  
@@ -359,9 +359,9 @@ internal AdornmentLayerDefinition testLayerDefinition;
 internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener  
 ```  
   
- 空間の表示要素とは、テキストと同じレベルで領域を占有します。 この種の表示要素を作成するから継承するクラスをタグを定義する必要があります<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>、表示要素が占める領域の量を定義します。  
+ スペースをネゴシエートする表示要素とは、テキストと同じレベルにある領域を占有するものです。 この種類の表示要素を作成するには、を継承するタグクラスを定義する必要があり <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> ます。これは、表示要素が占める領域の量を定義します。  
   
- すべての表示要素と同様には、レイヤーの表示要素の定義をエクスポートする必要があります。  
+ すべての修飾要素と同様に、表示要素レイヤーの定義をエクスポートする必要があります。  
   
 ```  
 [Export]  
@@ -370,17 +370,17 @@ internal sealed class TestAdornmentProvider : IWpfTextViewCreationListener
 internal AdornmentLayerDefinition testAdornmentLayer;  
 ```  
   
- 空間ネゴシエート表示要素をインスタンス化するを実装するクラスを作成する必要があります<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>、クラスを実装するだけでなく<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>(その他の表示要素と同様)。  
+ 領域をネゴシエートする装飾をインスタンス化するには、 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider> を実装するクラスに加えて、を実装するクラスを <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> (他の種類の装飾と同様に) 作成する必要があります。  
   
- タガー プロバイダーを登録するには、次の属性と共にエクスポートする必要があります。  
+ タガープロバイダーを登録するには、次の属性を使用して、そのプロバイダーをエクスポートする必要があります。  
   
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>:、表示要素の有効期限 (たとえば、"text"または「コード」) のコンテンツの種類。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 表示要素が有効なコンテンツの種類 (たとえば、"text" または "code")。  
   
-- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: このテキスト ビューの種類タグまたは表示要素が無効です。 クラスは、<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>は定義済みのテキスト ビュー ロールのセットがあります。 たとえば、<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>ファイルのテキスト ビューは主に使用します。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> ユーザーが編集またはマウスとキーボードを使用して移動できるテキスト ビューに使用されます。 例の<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>ビューは、エディターのテキスト ビューと**出力**ウィンドウ。  
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: このタグまたは装飾が有効なテキストビューの種類。 クラスには、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> 定義済みのテキストビューロールのセットがあります。 たとえば、 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> は、主にファイルのテキストビューに使用されます。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> は、ユーザーがマウスやキーボードを使用して編集または移動できるテキストビューに使用されます。 ビューの例として <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> は、エディターのテキストビューや **出力** ウィンドウなどがあります。  
   
-- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: タグまたは定義済みの表示要素の種類。 2 番目を追加する必要があります<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>の<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>します。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: 定義したタグまたは表示要素の種類。 の2つ目のを追加する必要があり <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> ます。  
   
-  次の例では、空間ネゴシエート adornment タグのタガー プロバイダーにエクスポート属性を示します。  
+  次の例では、スペースをネゴシエートする表示要素のタグについて、タガープロバイダーの export 属性を示しています。  
   
 ```  
 [Export(typeof(ITaggerProvider))]  
@@ -391,10 +391,10 @@ internal AdornmentLayerDefinition testAdornmentLayer;
 internal sealed class TestTaggerProvider : ITaggerProvider  
 ```  
   
-## <a name="extending-mouse-processors"></a>マウスのプロセッサを拡張します。  
- マウス入力の特別な処理を追加することができます。 継承するクラスを作成<xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>を処理する入力のマウス イベントをオーバーライドします。 実装する必要があります<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>2 番目のクラスでと共にエクスポートし、<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>マウス ハンドラーの有効期限 (たとえば、"text"または「コード」) のコンテンツの種類を指定します。  
+## <a name="extending-mouse-processors"></a>マウスプロセッサの拡張  
+ マウス入力の特別な処理を追加できます。 を継承するクラスを作成 <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> し、処理する入力のマウスイベントをオーバーライドします。 また <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> 、2番目のクラスでを実装し、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> マウスハンドラーが有効であるコンテンツの種類 (たとえば、"text" または "code") を指定するをと共にエクスポートする必要があります。  
   
- 次の例では、マウスのプロセッサのプロバイダーにエクスポート属性を示します。  
+ 次の例は、マウスプロセッサプロバイダーのエクスポート属性を示しています。  
   
 ```  
 [Export(typeof(IMouseProcessorProvider))]  
@@ -404,18 +404,18 @@ internal sealed class TestTaggerProvider : ITaggerProvider
 internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider  
 ```  
   
-## <a name="extending-drop-handlers"></a>ドロップ ハンドラーを拡張します。  
- 実装するクラスを作成して特定の種類のテキストのドロップのハンドラーの動作をカスタマイズすることができます<xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler>と 2 番目のクラスを実装する<xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider>ドロップ ハンドラーを作成します。 次の属性と共にドロップ ハンドラーをエクスポートする必要があります。  
+## <a name="extending-drop-handlers"></a>拡張 (ドロップハンドラーを)  
+ を実装するクラスを作成し、 <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler> <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider> ドロップハンドラーを作成するためにを実装する2番目のクラスを作成することによって、特定の種類のテキストのドロップハンドラーの動作をカスタマイズできます。 ドロップハンドラーは、次の属性と共にエクスポートする必要があります。  
   
-- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: このドロップ ハンドラーの有効なテキスト形式。 次の形式は、最上位から最下位までの優先順位で処理されます。  
+- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: このドロップハンドラーが有効なテキスト形式。 次の形式は、優先順位の高いものから順に処理されます。  
   
-  1. 任意のカスタム書式指定  
+  1. 任意のカスタム書式  
   
   2. FileDrop  
   
   3. EnhancedMetafile  
   
-  4. Waveaudio で  
+  4. WaveAudio  
   
   5. Riff  
   
@@ -425,11 +425,11 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   8. [パレット]  
   
-  9. PenData  
+  9. ペンデータ  
   
-  10. Serializable  
+  10. シリアル化可能  
   
-  11. シンボリック リンク  
+  11. SymbolicLink  
   
   12. Xaml  
   
@@ -437,11 +437,11 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   14. Tiff  
   
-  15. ビットマップ  
+  15. Bitmap  
   
-  16. Dib  
+  16. .Dib  
   
-  17. MetafilePicture  
+  17. メタファイルの画像  
   
   18. CSV  
   
@@ -453,13 +453,13 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   22. OEMText  
   
-  23. テキスト  
+  23. Text  
   
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ドロップ ハンドラーの名前。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ドロップハンドラーの名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 既定のドロップ ハンドラーの前後にドロップ ハンドラーの順序。 Visual Studio の既定のドロップ ハンドラーを"DefaultFileDropHandler"と呼びます。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 既定のドロップハンドラーの前または後のドロップハンドラーの順序。 Visual Studio の既定のドロップハンドラーには、"DefaultFileDropHandler" という名前が付けられています。  
   
-  次の例では、ドロップ ハンドラー プロバイダーにエクスポート属性を示します。  
+  次の例では、drop handler プロバイダーの export 属性を示します。  
   
 ```  
 [Export(typeof(IDropHandlerProvider))]  
@@ -469,10 +469,10 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 internal class TestDropHandlerProvider : IDropHandlerProvider  
 ```  
   
-## <a name="extending-editor-options"></a>エディターのオプションの拡張  
- テキスト ビューで、特定のスコープ、たとえばでのみ有効にするためのオプションを定義することができます。 エディターは、この定義済みオプションのセットを提供します。 エディターのオプション、表示オプション、および Windows Presentation Foundation (WPF) の表示オプション。 これらのオプションが記載<xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions>、 <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions>、および<xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions>します。  
+## <a name="extending-editor-options"></a>拡張 (エディターオプションを)  
+ たとえば、テキストビューでは、特定のスコープでのみ有効なオプションを定義できます。 エディターには、エディターオプション、表示オプション、および Windows Presentation Foundation (WPF) ビューオプションの一連の定義済みオプションが用意されています。 これらのオプションについては、「」、「」、および「」を参照し <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions> <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions> て <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions> ください。  
   
- 新しいオプションを追加するには、これらのオプション定義クラスの 1 つからクラスを派生します。  
+ 新しいオプションを追加するには、次のいずれかのオプション定義クラスからクラスを派生させます。  
   
 - <xref:Microsoft.VisualStudio.Text.Editor.EditorOptionDefinition%601>  
   
@@ -480,32 +480,32 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.WpfViewOptionDefinition%601>  
   
-  次の例では、ブール値を持つオプションの定義をエクスポートする方法を示します。  
+  次の例では、ブール値を持つオプション定義をエクスポートする方法を示します。  
   
 ```  
 [Export(typeof(EditorOptionDefinition))]  
 internal sealed class TestOption : EditorOptionDefinition<bool>  
 ```  
   
-## <a name="extending-intellisense"></a>IntelliSense の拡張  
- IntelliSense は、構造化テキスト、に関する情報を提供する機能のグループの一般的な用語とその入力候補です。 これらの機能には、ステートメント入力候補、シグネチャ ヘルプ、クイック ヒント、および電球が含まれます。 ステートメント入力候補を使用して、言語のキーワードまたはメンバーの名前を正確に入力できます。 署名または署名だけを入力したメソッドのシグネチャ ヘルプを表示します。 クイック ヒントでは、それにマウスを合わせると、型またはメンバー名の完全なシグネチャが表示されます。 電球は、たとえば、特定のコンテキストで特定の識別子が 1 つの名前が変更された後に出現するすべての変数の名前を変更する追加のアクションを提供します。  
+## <a name="extending-intellisense"></a>拡張 (IntelliSense を)  
+ IntelliSense は、構造化されたテキストに関する情報を提供する機能のグループと、それに対するステートメント入力候補に関する一般的な用語です。 これらの機能には、ステートメント入力候補、署名ヘルプ、クイックヒント、電球などがあります。 ユーザーは、ステートメント入力候補を使用して、言語キーワードまたはメンバー名を正しく入力できます。 署名のヘルプでは、ユーザーが入力したメソッドの署名または署名が表示されます。 クイックヒントを使用すると、型またはメンバー名の完全な署名が表示されます。 電球は、特定のコンテキストの特定の識別子に対して追加のアクションを提供します。たとえば、1回の出現後にすべての変数の名前を変更した場合などです。  
   
- IntelliSense の機能の設計は、常に同じです。  
+ IntelliSense 機能の設計は、どのような場合でもほぼ同じです。  
   
-- IntelliSense、 *broker*全体的なプロセスを担当します。  
+- IntelliSense *ブローカー* は、プロセス全体を担当します。  
   
-- IntelliSense、*セッション*プレゼンターとコミット、または選択範囲の取り消しのトリガーを起動する間のイベントのシーケンスを表します。 セッションは通常、一部ユーザー ジェスチャによってトリガーされます。  
+- IntelliSense *セッション* は、プレゼンターのトリガーと選択のコミットまたは取り消しの間のイベントのシーケンスを表します。 通常、セッションはユーザージェスチャによってトリガーされます。  
   
-- IntelliSense、*コント ローラー*はときに、セッションを開始および終了する必要がありますを決定します。 ときに情報をコミットにされ、セッションの取り消された場合にも決定します。  
+- IntelliSense *コントローラー* は、セッションの開始と終了のタイミングを決定する役割を担います。 また、情報をコミットするタイミングと、セッションをいつキャンセルするかを決定します。  
   
-- IntelliSense、*ソース*コンテンツを提供し、最適な一致を決定します。  
+- IntelliSense *ソース* はコンテンツを提供し、最も一致するものを決定します。  
   
-- IntelliSense、*プレゼンター*は内容を表示する責任を負います。  
+- IntelliSense *プレゼンター* は、コンテンツを表示する役割を担います。  
   
-  ほとんどの場合、少なくとも、ソースとコント ローラーを指定することをお勧めします。 表示をカスタマイズする場合は、発表者を指定することもできます。  
+  ほとんどの場合、少なくともソースとコントローラーを指定することをお勧めします。 表示をカスタマイズする場合は、プレゼンターを指定することもできます。  
   
-### <a name="implementing-an-intellisense-source"></a>IntelliSense のソースを実装します。  
- ソースをカスタマイズするには、次のソース インターフェイスの 1 つ (または複数) を実装する必要があります。  
+### <a name="implementing-an-intellisense-source"></a>IntelliSense ソースの実装  
+ ソースをカスタマイズするには、次のソースインターフェイスの1つ (または複数) を実装する必要があります。  
   
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>します。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> は、を優先するために非推奨とされました <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 。  
   
  さらに、同じ種類のプロバイダーを実装する必要があります。  
   
@@ -529,17 +529,17 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>します。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> は、を優先するために非推奨とされました <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。  
   
- 次の属性とプロバイダーをエクスポートする必要があります。  
+ 次の属性を使用して、プロバイダーをエクスポートする必要があります。  
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ソースの名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: ソースが適用されます (たとえば、"text"または「コード」) のコンテンツの種類。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: ソースが適用されるコンテンツの種類 (たとえば、"text" または "code")。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: (その他のソース) に関して、ソースを表示する順序。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: ソースが表示される順序 (他のソースに関して)。  
   
-- 次の例では、入力候補のソース プロバイダーでエクスポート属性を示します。  
+- 次の例は、完了ソースプロバイダーでのエクスポート属性を示しています。  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  
@@ -549,7 +549,7 @@ Export(typeof(ICompletionSourceProvider))]
 internal class TestCompletionSourceProvider : ICompletionSourceProvider  
 ```  
   
- IntelliSense のソースの実装の詳細については、次のチュートリアルを参照してください。  
+ IntelliSense ソースの実装の詳細については、次のチュートリアルを参照してください。  
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
@@ -557,16 +557,16 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)  
   
-### <a name="implementing-an-intellisense-controller"></a>IntelliSense のコント ローラーの実装  
- コント ローラーをカスタマイズすることを実装する必要があります、<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController>インターフェイス。 さらに、次の属性と共にコント ローラー プロバイダーを実装する必要があります。  
+### <a name="implementing-an-intellisense-controller"></a>IntelliSense コントローラーの実装  
+ コントローラーをカスタマイズするには、インターフェイスを実装する必要があり <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> ます。 さらに、次の属性と共にコントローラープロバイダーを実装する必要があります。  
   
-- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: コント ローラーの名前。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: コントローラーの名前。  
   
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: コント ローラーが適用されます (たとえば、"text"または「コード」) のコンテンツの種類。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: コントローラーが適用されるコンテンツの種類 (たとえば、"text" または "code")。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: (その他のコント ローラー) に関して、コント ローラーを表示する順序。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: コントローラーが表示される順序 (他のコントローラーに対して)。  
   
-  次の例では、完了コント ローラーのプロバイダーにエクスポート属性を示します。  
+  次の例は、完了コントローラープロバイダーのエクスポート属性を示しています。  
   
 ```  
 Export(typeof(IIntellisenseControllerProvider))]  
@@ -576,6 +576,6 @@ Export(typeof(IIntellisenseControllerProvider))]
 internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvider  
 ```  
   
- IntelliSense のコント ローラーの使用に関する詳細については、次のチュートリアルを参照してください。  
+ IntelliSense コントローラーの使用方法の詳細については、次のチュートリアルを参照してください。  
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
