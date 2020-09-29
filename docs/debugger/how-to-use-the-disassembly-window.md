@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348705"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808169"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーで逆アセンブリ コードを表示する (C#、C++、Visual Basic、F#)
 
@@ -58,7 +58,7 @@ ms.locfileid: "85348705"
 
 ## <a name="use-the-disassembly-window"></a>[逆アセンブル] ウィンドウを使用する
 
-**逆アセンブリ** ウィンドウを有効にするには、 **[ツール]**  >  **[オプション]** (または **[ツール]**  >  **[オプション]** ) > **[デバッグ]** で、 **[アドレスレベルのデバッグを有効にする]** を選択します。
+**逆アセンブリ** ウィンドウを有効にするには、 **[ツール]** 、 **[オプション]** 、 **[デバッグ]** の順に選択し、 **[アドレスレベルのデバッグを有効にする]** を選択します。
 
 デバッグ中に**逆アセンブリ** ウィンドウを開くには、 **[ウィンドウ]**  >  **[逆アセンブリ]** を選択するか、または **Alt**+**8** キーを押します。
 
