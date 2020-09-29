@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285050"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739903"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
@@ -42,7 +42,7 @@ Node.js プロジェクトでは、次のタスクを実行できます。
 
 ### <a name="prerequisites"></a>必須コンポーネント
 
-プロジェクトに npm サポートを追加するには、**Node.js 開発**ワークロードと Node.js ランタイムがインストールされている必要があります。 詳細な手順については、[Node.js プロジェクトの作成](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json)に関するページを参照してください。
+プロジェクトに npm サポートを追加するには、**Node.js 開発**ワークロードと Node.js ランタイムがインストールされている必要があります。 詳細な手順については、[Node.js プロジェクトの作成](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json)に関するページを参照してください。
 
 > [!NOTE]
 > 既存の Node.js プロジェクトの場合は、 **[既存の Node.js コードから]** というソリューション テンプレート、または [Open folder (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) プロジェクト タイプを使用して、ご利用のプロジェクトの npm を有効にします。
@@ -86,12 +86,12 @@ npm パッケージはソリューション エクスプローラーに表示さ
 
 * **新しい npm パッケージのインストール**: UI を開いて、新しいパッケージをインストールします。
 * **npm パッケージのインストール**: npm インストール コマンドを実行して、*package.json* にリストされているすべてのパッケージをインストールします (`npm install` を実行します)。
-* **npm パッケージを更新**: *package.json* に指定された semver 範囲に従って、パッケージを最新バージョンに更新します (`npm update --save` を実行します)。 semver 範囲は、通常、"~" または "^" を使用して指定します。 詳細については、「[package.json パッケージの構成](../javascript/configure-packages-with-package-json.md)」を参照してください。
+* **npm パッケージを更新**: *package.json* に指定されたセマンティック バージョニング (semver) 範囲に従って、パッケージを最新バージョンに更新します。 (`npm update --save` を実行します)。 semver 範囲は、通常、"~" または "^" を使用して指定します。 詳細については、「[package.json パッケージの構成](../javascript/configure-packages-with-package-json.md)」を参照してください。
 
 パッケージ ノードを右クリックして、次のいずれかのアクションを行います。
 
 * **npm パッケージのインストール**: npm インストール コマンドを実行して、*package.json* にリストされているパッケージ バージョンをインストールします (`npm install` を実行します)。
-* **npm パッケージを更新**: *package.json* に指定された semver 範囲に従って、パッケージを最新バージョンに更新します (`npm update --save` を実行します)。semver 範囲は、通常、"~" または "^" を使用して指定します。
+* **npm パッケージを更新**: *package.json* に指定された semver 範囲に従って、パッケージを最新バージョンに更新します。 (`npm update --save` を実行します)。semver 範囲は、通常、"~" または "^" を使用して指定します。
 * **npm パッケージのアンインストール**: パッケージをアンインストールし、*package.json* からそれを削除します (`npm uninstall --save` を実行します)。
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -126,7 +126,7 @@ ASP.NET Core プロジェクトなどのプロジェクトの場合は、プロ�
 * [package.json を使用してパッケージをインストールする](#npmInstallPackage)
 
 >[!NOTE]
-> ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
+> ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](/aspnet/core/client-side/libman/?view=aspnetcore-3.1)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> npm サポートをプロジェクトに追加する (ASP.NET Core)
 
@@ -164,7 +164,7 @@ npm が含まれているプロジェクトでは、`package.json` を使用し�
 
 *package.json* の IntelliSense を使用すると、npm パッケージの特定のバージョンを選択できます。
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="npm パッケージのバージョンを選択する" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="ソリューション エクスプローラーから新しい npm パッケージをインストールする" border="true":::
 
 ファイルを保存すると、Visual Studio によってソリューション エクスプローラーの **[依存関係] / [npm]** ノードの下にパッケージが追加されます。 ノードが表示されない場合は、 **[package.json]** を右クリックし、 **[パッケージの復元]** を選択します。
 
@@ -181,4 +181,3 @@ npm が含まれているプロジェクトでは、`package.json` を使用し�
 * シナリオによっては、[こちら](https://github.com/aspnet/Tooling/issues/479)に説明されている既知の問題が原因で、インストールされている npm パッケージの正しい状態がソリューション エクスプローラーに表示されないことがあります。 たとえば、パッケージのインストール時に、それがインストールされていないと表示される場合があります。 ほとんどの場合、この記事で先に説明したように、*package.json* を削除し、Visual Studio を再起動して、*package.json* ファイルを再度追加することで、ソリューション エクスプローラーを更新できます。 または、パッケージをインストールするとき、npm 出力ウィンドウを使用してインストールの状態を確認できます。
 
 * アプリのビルド時または TypeScript コードのトランスパイル時にエラーが表示される場合は、エラーの原因として npm パッケージの非互換性が考えられるので確認してください。 エラー特定するには、この記事で前述したように、パッケージをインストールするときに npm 出力ウィンドウを確認してください。 たとえば、1 つまたは複数の npm パッケージ バージョンが非推奨となっていて、これが原因でエラーが発生する場合、エラーを修正するにはより新しいバージョンをインストールする必要があります。 *package.json* を使用した npm パッケージのバージョン管理に関する詳細は、「[package.json configuration](../javascript/configure-packages-with-package-json.md)」 (package.json の構成) を参照してください。
-

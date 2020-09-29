@@ -1,6 +1,6 @@
 ---
-title: ASP.NET Web アプリにプロファイラーをアタッチし、アプリの統計情報を取得する
-ms.custom: seodec18
+title: ASP.NET にプロファイラーをアタッチし、アプリの統計情報を取得する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2944a6b84a7262c44b92584a41b25e8c7a751e17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 753213060ea3aaf1269509e65de8c70a71aec3a2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329411"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807860"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンドライン ツールを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。

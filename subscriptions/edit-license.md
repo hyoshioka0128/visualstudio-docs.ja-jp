@@ -1,18 +1,18 @@
 ---
 title: 管理者ポータルでのサブスクリプションの編集 | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453733"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022549"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 サブスクリプション管理者は、組織内の個人に割り当てられているサブスクリプションに変更を加えることができます。  この記事では、行うことができる変更の種類と、必要な手順について説明します。
@@ -34,6 +34,7 @@ ms.locfileid: "87453733"
 
 一括編集プロセスを使用して、一度に複数のサブスクライバーを編集することができます。 この機能は、会社の電子メール アドレスを変更している組織、または組織がダウンロードへのアクセスを制限することにした場合に主に使用されます。
 
+一括編集を利用して複数のサブスクライバーを編集する方法については、この動画を見るか、このまま読み進めてください。 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
@@ -56,10 +57,10 @@ ms.locfileid: "87453733"
 5. ファイルをアップロードしたら、成功したことを知らせる通知が表示されます。 この時点で、編集内容がサブスクライバーの情報に反映されます。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 - 特定のサブスクリプション ID を割り当てる必要がありますか? サブスクリプション ID の割り当てに関する記事を参照してください。 

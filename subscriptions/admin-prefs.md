@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 管理ポータルで言語、連絡先、サブスクリプション レベルなどの基本設定を設定する方法について説明します。
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426800"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022613"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>管理ポータルで契約の基本設定を設定する
 スーパー管理者は、各契約に対してグローバルに適用される特定の基本設定を、管理ポータルで設定できます。  これらの基本設定を行うと、管理者がサブスクライバーを追加するときには、その管理者用のサブスクリプションの詳細が自動的に設定されます。また、これらの基本設定は、スーパー管理者だけがグローバルに変更できます。  
@@ -76,10 +76,10 @@ A: **[Contact my Admin]\(管理者に問い合わせる\)** に特定の電子�
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。

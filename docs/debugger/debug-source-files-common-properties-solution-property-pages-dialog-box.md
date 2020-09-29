@@ -1,5 +1,6 @@
 ---
-title: '[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] - [共通プロパティ])'
+title: '[デバッグ ソース ファイル] ([ソリューション プロパティ ページ])'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735432db485277e2265479e625f5e8acaa2cc2e3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3057a6a94edb09018836493257e8d875d938b839
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738394"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809545"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])
 このプロパティ ページでは、ソリューションのデバッグ時にデバッガーによってソース ファイルが検索される場所を指定します。

@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038414"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739877"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
@@ -146,7 +146,7 @@ Fakes には 2 種類のフレーバーがあります。
 
     ```
 
-    ここでの特殊なマジックは、`StubIStockFeed` クラスです。 参照アセンブリのそれぞれのインターフェイスに対して、Microsoft Fakes のメカニズムによってスタブ クラスが生成されます。 スタブ クラスの名前はインターフェイスの名前から派生します。プレフィックスとして `Fakes.Stub` が付き、パラメーターの型名が加わります。
+    ここでの特殊なマジックは、`StubIStockFeed` クラスです。 参照アセンブリのそれぞれのインターフェイスに対して、Microsoft Fakes のメカニズムによってスタブ クラスが生成されます。 スタブ クラスの名前はインターフェイスの名前から派生します。プレフィックスとして "`Fakes.Stub`" が付き、パラメーターの型名が加わります。
 
     また、イベントおよびジェネリック メソッドについて、プロパティの getter および setter に対してもスタブが生成されます。 詳細については、「[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)」を参照してください。
 

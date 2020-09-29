@@ -1,5 +1,6 @@
 ---
-title: VSPerfCmd - プロファイラーをネイティブ サービスにアタッチしてアプリの統計を取得する
+title: プロファイラーをネイティブ サービスにアタッチしてアプリの統計を取得する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
@@ -9,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f45d08a82bdc3f6807f9a4d5a0cb31dc157e4c9c
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328662"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808016"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーをネイティブ サービスにアタッチし、アプリケーションの統計情報を収集する
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>方法: コマンド ライン (VSPerfCmd) を使用してプロファイラーをネイティブ サービスにアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、プロファイラーをネイティブ サービスにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。
 
 > [!NOTE]

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801062"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005370"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -214,17 +214,17 @@ Visual Studio 2019 は、より優れた開発を可能にする新機能で頻�
 
 ここでは、現在作業中の新機能をいくつか紹介します。
 
-- **Visual Studio 2019 による Visual Studio Codespaces のサポート (プレビュー)**
+- **Visual Studio 2019 による GitHub Codespaces のサポート (プレビュー)**
 
-  これまで以上に、開発者は職場や自宅で複数のプロジェクトの作業を行っています。 新機能、バグ修正、PR レビュー、プロトタイプのすべてに時間が奪われ、一定のコンテキスト切り替えが必要です。 [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) が役に立ちます。 すべてをクラウド内で開発でき、プロジェクトごとに専用のカスタム環境を数秒で作成できます。 Visual Studio 2019 を使用すると、コードスペースに接続して、ローカル環境と同じように作業できます。
+  これまで以上に、開発者は職場や自宅で複数のプロジェクトの作業を行っています。 新機能、バグ修正、PR レビュー、プロトタイプのすべてに時間が奪われ、一定のコンテキスト切り替えが必要です。 [GitHub Codespaces](https://github.com/features/codespaces) が役に立ちます。 すべてをクラウド内で開発でき、プロジェクトごとに専用のカスタム環境を数秒で作成できます。 Visual Studio 2019 を使用すると、コードスペースに接続して、ローカル環境と同じように作業できます。
 
-  詳細については、「[Visual Studio Codespaces の概要](/visualstudio/codespaces/overview/what-is-vsonline/)」を参照してください。
+  詳細については、[GitHub Codespaces の概要](codespaces/codespaces-overview.md)に関するページを参照してください。
 
 - **Visual Studio 2019 での Git エクスペリエンスの向上 (プレビュー)**
 
    GitHub、Azure Repos、その他のリモート ホスティング サービスでコードの作業を行うときの生産性を向上させるため、Git エクスペリエンスの改良が繰り返されています。 1 回の操作 (またはクリック) で、Visual Studio 2019 内から初期化およびプッシュすることができます。 また、新しい分岐の作成、現在のブランチの管理、マージの競合の解決を行うこともできます。
 
-   詳細については、「[Visual Studio での Git エクスペリエンスに関する新しい更新プログラム](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)」ブログ記事を参照してください。
+   詳細については、[Visual Studio の新しい Git 体験](git-with-visual-studio.md)に関するページを参照してください。
 
 プレビュー リリースの詳細および試したい場合のダウンロード リンクについては、「 **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** 」ページを参照してください。
 

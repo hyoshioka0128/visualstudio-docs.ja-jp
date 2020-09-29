@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74239457"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713504"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 Visual Studio リモート デバッガーは、アプリケーションまたはバック グラウンド サービスとして実行できます。 アプリケーションとして実行される際には、次のように既定で割り当てられているポートを使用します。
@@ -29,7 +29,7 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
 
 - Visual Studio 2012:4016
 
-つまり、リモート デバッガーに割り当てられるポート番号はリリースごとに 2 つずつ増えます。 別の任意のポート番号を設定することができます。 ポート番号の設定方法は、後のセクションで説明します。
+つまり、リモート デバッガーに割り当てられるポート番号はリリースごとに 2 つずつ増えます。 必要であれば、別のポート番号を設定できます。 ポート番号の設定方法は、後のセクションで説明します。
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 ビット オペレーティング システムのリモート デバッガーのポート
 

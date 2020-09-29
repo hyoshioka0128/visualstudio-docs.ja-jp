@@ -1,23 +1,23 @@
 ---
 title: Visual Studio サブスクリプションのライセンスをユーザーのグループに割り当てる | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249622"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022429"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
 
-大規模なユーザー グループを追加するには、一括追加機能を使用できます。または、所属する組織で Microsoft Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用することができます。 この記事では、両方のオプションの手順について説明します。 
+大規模なユーザー グループを追加するには、一括追加機能を使用できます。または、所属する組織で Microsoft Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用することができます。 この記事では、両方のオプションの手順について説明します。  一括追加機能の詳細については、この動画をご覧になるか、このまま読み進めてください。 
 
 <br>
 
@@ -64,7 +64,8 @@ ms.locfileid: "88249622"
 
    エラーが発生した場合は、次の手順を行います。
    1. 作成した Excel ファイルを開き、問題を修正して、ファイルを保存します。
-   0. 管理ポータルに戻り、 **[追加]** を選択します。
+   0. 管理ポータルに戻り、エラー メッセージを無視します。
+   0. **[追加]** をクリックします。
    0. **[一括追加]** を選択します。
    0. Excel ファイルは既に保存されているため、テンプレートをダウンロードする必要はありません。  **[参照]** を選択し、保存したばかりのファイルを検索し、 **[開く]** を選択します。
    0. **[OK]** を選択します。
@@ -89,6 +90,7 @@ ms.locfileid: "88249622"
 > - グループのすべてのメンバーが、Azure AD アカウントに関連付けられた電子メール アドレスを保持している必要があります。
 > - Azure AD グループを使用して追加されたサブスクリプションの場合、通知用の個別の電子メール アドレスはサポートされていません。  
 
+Azure Active Directory グループ機能を利用し、サブスクライバーを追加する方法については、この動画をご覧になるか、このまま読み進めてください。 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
@@ -130,10 +132,10 @@ A: いいえ -- 個々のサブスクライバーの情報を変更するには�
 A: 組織で Azure AD がどのように構成されているかに応じて、ユーザーが追加されるまでに最大 24 時間の遅延が発生することがあります。 24 時間以上経過している場合は、[サポートにお問い合わせください](https://visualstudio.microsoft.com/support/support-overview-vs)。  
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 - 追加するサブスクライバーは 1 人または 2 人だけですか?  [1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。

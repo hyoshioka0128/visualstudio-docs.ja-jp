@@ -1,5 +1,6 @@
 ---
-title: .NET メモリの割り当ておよび有効期間データの収集 | Microsoft Docs
+title: .NET メモリの割り当てと有効期間データの収集
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331716"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809428"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>.NET メモリの割り当てと有効期間データの収集
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>.NET Framework メモリの割り当てと有効期間データの収集
 
-Visual Studio プロファイリング ツールは、.NET メモリ割り当てとオブジェクト有効期間データの収集をサポートしています。アプリケーションのメモリに関連するパフォーマンスの問題を検出できます。
+Visual Studio プロファイリング ツールは、.NET Framework メモリ割り当てとオブジェクト有効期間データの収集をサポートしています。アプリケーションのメモリに関連するパフォーマンスの問題を検出できます。
 
 - .NET メモリ割り当てに関するデータには、割り当てられた .NET Framework メモリ オブジェクトのサイズと数が含まれています。
 

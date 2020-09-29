@@ -1,21 +1,23 @@
 ---
 title: 特定の GUID を Visual Studio サブスクライバーに割り当てる | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: 管理者が特定のサブスクリプション GUID をサブスクライバーに割り当てる方法について説明します
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235187"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022483"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルで特定のサブスクリプションを割り当てる
 
 管理者は、Visual Studio サブスクリプション管理ポータルを使用して、特定のサブスクリプションを個々のサブスクライバーに割り当てることができるようになりました。  これは、サブスクリプションへのアクセスを短期間だけ必要とする臨時スタッフやベンダーが組織に存在する場合に役立ちます。  管理者は、既に部分的に使用されているサブスクリプションを割り当てて、新しいサブスクリプションはより長期の使用のために残しておくことができます。  
+
+特定のサブスクリプション GUID をユーザーに割り当てる方法については、動画をご覧になるか、このまま読み進めてください。 
 
 <br>
 
@@ -57,7 +59,7 @@ ms.locfileid: "87235187"
 > - GUID が、エクスポート リスト内の別のユーザーにまだ割り当てられていない。 
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q: 個々のユーザーへのサブスクリプションの現在の割り当てを変更するにはどうすればよいですか。
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q:個々のユーザーへのサブスクリプションの現在の割り当てを変更するにはどうすればよいですか。
 A: ユーザーへの GUID の割り当てを変更する場合は、まずそのユーザーのサブスクリプションを削除する必要があります。  詳細については、[サブスクリプションの削除](delete-license.md)に関するページを参照してください。  そのユーザーのサブスクリプションを削除したら、上記のプロセスを使用してリストをエクスポートし、新しいサブスクリプション情報をアップロードします。  
 
 ## <a name="see-also"></a>関連項目

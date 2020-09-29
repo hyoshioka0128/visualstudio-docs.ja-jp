@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 頂点の網かけによるオブジェクトの不足 |Microsoft Docs'
+title: 'チュートリアル: 頂点の網かけによるオブジェクトの不足 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388601"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90843431"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>チュートリアル: 頂点の網かけによるオブジェクトの不足
 このチュートリアルでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断ツールを使用して、頂点シェーダー ステージの間に発生するエラーが原因で欠落しているオブジェクトを調査する方法を示します。
@@ -33,7 +33,7 @@ ms.locfileid: "63388601"
 
  このシナリオでは、テストのためにアプリを実行すると、背景は期待どおりにレンダリングされますが、オブジェクトの 1 つが表示されません。 グラフィックス診断を使うと、問題点をグラフィックス ログにキャプチャし、アプリのデバッグを実行できます。 問題は、アプリケーションでは次のように見えます。
 
- ![オブジェクトは見えないことができます。](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
+ ![オブジェクトを表示できません。](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
 
 ## <a name="investigation"></a>調査
  グラフィックス診断ツールを使うと、グラフィックス ログ ファイルを読み込んで、テスト中にキャプチャされたフレームを検査できます。
@@ -65,7 +65,7 @@ ms.locfileid: "63388601"
 
 4. 表示されないオブジェクトに対応する描画呼び出しに到達したら、停止します。 このシナリオで、 **[グラフィックス パイプライン ステージ]** ウィンドウは、ジオメトリが GPU に発行された (入力アセンブラー サムネイルによって示されます) にもかかわらず、頂点シェーダー ステージで何か問題が発生したためレンダー ターゲットに表示されなかった (頂点シェーダー サムネイルによって示されます) ことを示します。
 
-    ![DrawIndexed イベントと、パイプラインに与える影響](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")
+    ![DrawIndexed イベントとパイプラインに対するその効果](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")
 
    表示されないオブジェクトのジオメトリについてアプリによって描画呼び出しが発行され、問題が頂点シェーダー ステージの間に発生したことを確認したら、HLSL デバッガーを使用して頂点シェーダーを調べ、オブジェクトのジオメトリで何が起こったのかを確認できます。 HLSL デバッガーを使用して、実行中の HLSL 変数の状態を調べ、HLSL コードをステップスルーし、ブレークポイントを設定することによって、問題の診断に役立てることができます。
 
@@ -77,19 +77,19 @@ ms.locfileid: "63388601"
 
 3. 最初に `output` が変更されている部分には、メンバー `worldPos` が書き込まれています。
 
-    !["Output.worldPos"の値が妥当な](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")
+    !["output.worldPos" の値は妥当です](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")
 
     値は適切であるように見えるため、 `output`が変更される次の行までコードをステップスルーします。
 
 4. 次に `output` が変更されている部分には、メンバー `pos` が書き込まれています。
 
-    !["Output.pos"の値がゼロ (0) クリアされる](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")
+    !["output.pos" の値がゼロに設定されています](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")
 
     今回、 `pos` のメンバーの値はすべてゼロであるため、疑わしいように見えます。 次に、 `output.pos` の値がすべてゼロになった理由を確認します。
 
 5. `output.pos` は `temp`という名前の変数から値を受け取ることがわかります。 前の行から、 `temp` の値は、前の値と `projection`という名前の定数を乗算した結果であることがわかります。 `temp`の疑わしい値はこの乗算の結果であることが推察できます。 `projection`にポインターを置くと、この値もすべてゼロであることがわかります。
 
-    ![射影行列には、不適切な変換が含まれています](media/gfx_diag_demo_missing_object_shader_step_6.png "gfx_diag_demo_missing_object_shader_step_6。")
+    ![射影行列には不適切な変換が含まれています](media/gfx_diag_demo_missing_object_shader_step_6.png "gfx_diag_demo_missing_object_shader_step_6")
 
     このシナリオでは、 `temp`の疑わしい値が `projection`との乗算によって生じている可能性が高く、 `projection` は投影行列が含まれると見なされる定数であるため、含まれる値のすべてがゼロであってはならないことが調査によってわかりました。
 
@@ -101,7 +101,7 @@ ms.locfileid: "63388601"
 
 2. アプリのソース コードの呼び出し履歴の上へ移動します。 **[グラフィックス イベント呼び出し履歴]** ウィンドウで、最上位の呼び出しを選んで定数バッファーがそこに指定されているかどうかを確認します。 指定されていない場合、指定されている場所が見つかるまで呼び出し履歴の上へ検索を続けます。 このシナリオでは、 `UpdateSubresource` Direct3D API を使用して、定数バッファーが呼び出し履歴のさらに上にある `MarbleMaze::Render`という名前の関数に指定されていて、その値は `m_marbleConstantBufferData`という名前の定数バッファー オブジェクトから取得されたことがわかります。
 
-    ![オブジェクトの定数バッファーを設定するコードの](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
+    ![オブジェクトの定数バッファーを設定するコード](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
    > 同時にアプリのデバッグを行っている場合、この位置にブレークポイントを設定して次のフレームが表示されるとヒットするようにできます。 これで、定数バッファーが指定されたときに `m_marbleConstantBufferData` のメンバーを調べ、 `projection` メンバーの値がすべてゼロに設定されていることを確認できます。
@@ -116,12 +116,12 @@ ms.locfileid: "63388601"
 
    `m_marbleConstantBufferData.projection` が設定されている場所が見つかったら、周囲のソース コードを確認し、正しくない値の発生元を特定できます。 このシナリオでは、 `m_marbleConstantBufferData.projection` の値が `projection` というローカル変数に設定され、その後、次の行にあるコード `m_camera->GetProjection(&projection);` で指定された値に初期化されていることがわかります。
 
-   ![マーブル射影を初期化する前に設定されて](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")
+   ![マーブル射影を初期化前に設定します](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")
 
    この問題を解決するには、ローカル変数 `m_marbleConstantBufferData.projection` の値を初期化する行の後に `projection`の値を設定するコード行を移動します。
 
-   ![修正された C&#43; &#43;ソース コード](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
+   ![修正された C&#43;&#43; ソース コード](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")
 
    コードを修正したら、それをリビルドし、もう一度アプリを実行してレンダリングの問題が解決されたかどうかを確認します。
 
-   ![オブジェクトが現在が表示されます。](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+   ![現在表示されているオブジェクト。](media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")

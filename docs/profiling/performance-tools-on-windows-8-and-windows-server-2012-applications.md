@@ -1,5 +1,6 @@
 ---
-title: Windows 8 および Windows Server 2012 アプリでのパフォーマンス ツール
+title: Windows 8 & WS 2012 アプリのパフォーマンス ツール
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038609"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807834"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 と Windows Server 2012 アプリケーションのパフォーマンス ツール
 

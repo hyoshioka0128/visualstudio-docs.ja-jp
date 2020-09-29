@@ -1,5 +1,6 @@
 ---
-title: 適切に動作しないマルチスレッド アプリケーションの一般的なパターン | Microsoft Docs
+title: 適切に動作しないマルチスレッド アプリの一般的なパターン
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038505"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808943"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
 

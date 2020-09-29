@@ -1,5 +1,6 @@
 ---
-title: プロファイラーのコマンド ライン - サービスのタイミングの詳細を取得するためのインストルメント化
+title: プロファイラーのコマンド ライン - サービスの詳細なタイミング データの収集
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 502ae620dc8641fabc8a5f6225b5673d5530c7f0
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331792"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810758"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>プロファイラーのコマンド ラインからインストルメンテーション メソッドを使用した、サービスの詳細なタイミング データの収集
 このセクションでは、コマンド ラインからインストルメンテーション メソッドを使用して、Windows サービスの詳細なパフォーマンス データを収集する手順とオプションについて説明します。
