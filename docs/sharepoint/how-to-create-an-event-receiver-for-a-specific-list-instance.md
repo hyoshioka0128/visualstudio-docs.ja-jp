@@ -1,5 +1,6 @@
 ---
 title: '方法: 特定のリストインスタンスのイベントレシーバーを作成する |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54c384742afba3d5af7f08ee62a9ec56c7f1438c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016955"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585837"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>方法: 特定のリストインスタンスのイベントレシーバーを作成する
   リストインスタンスイベントレシーバーは、リスト定義の任意のインスタンスで発生するイベントに応答します。 イベントレシーバーテンプレートでは、特定のリストインスタンスのターゲット設定が有効になっていませんが、特定のリストインスタンスのイベントに応答するように、リスト定義にスコープ設定されているイベントレシーバーを変更することができます。

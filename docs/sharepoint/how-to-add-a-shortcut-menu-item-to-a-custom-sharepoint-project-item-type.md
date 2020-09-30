@@ -1,5 +1,6 @@
 ---
 title: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef99509048b1dd54576a20449b9d4f51c11439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39de735c09c97541684628c8e4140aa42d119500
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014876"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585876"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する
   カスタム SharePoint プロジェクト項目の種類を定義すると、ショートカットメニュー項目をプロジェクト項目に追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
