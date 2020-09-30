@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350642"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211116"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>UWP アプリでの WebView コントロールのデバッグ
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350642"
 
 - `WebView` インスタンスで [DOM Explorer](../debugger/quickstart-debug-html-and-css.md) を開き、DOM 要素を検査し、CSS スタイルの問題を調査し、スタイルに対する動的な変更をテストします。
 
-- [JavaScript コンソール](../debugger/javascript-console-commands.md?view=vs-2017) ウィンドウで `WebView` インスタンスに表示される Web ページまたは `iFrame` をターゲットとして選択し、コンソール コマンドを使用して Web ページと対話します。 コンソールは、現在のスクリプト実行コンテキストへのアクセスを提供します。
+- [JavaScript コンソール](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) ウィンドウで `WebView` インスタンスに表示される Web ページまたは `iFrame` をターゲットとして選択し、コンソール コマンドを使用して Web ページと対話します。 コンソールは、現在のスクリプト実行コンテキストへのアクセスを提供します。
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>デバッガーのアタッチ (C#、Visual Basic、C++)
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350642"
     > [!NOTE]
     > コンソールを使って、1 度に 1 つの `WebView`、`iFrame`、共有コントラクト、または Web ワーカーとやり取りできます。 各要素では、Web プラットフォーム ホストの個別のインスタンスが必要となります (WWAHost.exe)。 一度に 1 つのホストとやり取りできます。
 
-6. アプリの変数を表示および変更するか、コンソール コマンドを使用します。これは、[JavaScript のデバッグのためのクイックスタート](../debugger/quickstart-debug-javascript-using-the-console.md)および [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)に関するページで説明されています。
+6. アプリの変数を表示および変更するか、コンソール コマンドを使用します。これは、[JavaScript のデバッグのためのクイックスタート](../debugger/quickstart-debug-javascript-using-the-console.md)および [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)に関するページで説明されています。
 
 ## <a name="see-also"></a>関連項目
 

@@ -8,12 +8,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485386"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211051"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI の概要
 
@@ -23,7 +23,7 @@ Visual Studio Tools for AI は、ディープ ラーニング ソリューショ
 
 拡張機能をダウンロードし、インストールする方法については、「[Visual Studio Tools for AI のインストール](installation.md)」ページを参照してください。
 
-## <a name="5-minute-quickstart"></a>5 分間のクイック スタート 
+## <a name="5-minute-quickstart"></a>5 分間のクイック スタート
 
 [TensorFlow と Python](tensorflow-local.md) を使ったディープ ラーニング ソリューションの実行方法について説明します
 
@@ -40,4 +40,4 @@ Visual Studio Tools for AI は、ディープ ラーニング ソリューショ
 システム要件やサポート オプションなど、Visual Studio Tools for AI に関する詳細については、[Visual Studio Tools for AI](about-ai-tools.md) の概要ページを参照してください。
 
 ## <a name="see-also"></a>関連項目
-[Visual Studio 機能拡張](../extensibility/index.yml?view=vs-2017)
+[Visual Studio 機能拡張](../extensibility/index.yml?view=vs-2017&preserve-view=true)

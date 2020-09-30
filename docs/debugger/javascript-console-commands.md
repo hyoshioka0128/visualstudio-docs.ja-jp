@@ -14,16 +14,16 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731699"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211275"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio の JavaScript コンソール コマンド
 
-Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウの使用方法の例については、「[クイックスタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)」を参照してください。 このトピックの情報は、Node.js アプリ、UWP アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。
+Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウの使用方法の例については、「[クイックスタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)」を参照してください。 このトピックの情報は、Node.js アプリ、UWP アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。
 
 JavaScript コンソール ウィンドウが閉じている場合は、Visual Studio でのデバッグ中に **[デバッグ]**  >  **[ウィンドウ]**  >  **[JavaScript コンソール]** を選択することで、それを開くことができます。
 
@@ -127,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>関連項目
-- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
+- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)

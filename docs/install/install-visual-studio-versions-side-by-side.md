@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713465"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211314"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -28,7 +28,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 * Visual Studio 2015 で作成されたソリューションを Visual Studio 2017 を使用して開く場合、Visual Studio 2017 に固有の機能が実装されていない限り、後で以前のバージョンのソリューションを開き、再度変更することができます。
 
-* Visual Studio 2015 以前のバージョンで作成されたソリューションを Visual Studio 2017 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2017 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)に関するページを参照してください。
+* Visual Studio 2015 以前のバージョンで作成されたソリューションを Visual Studio 2017 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2017 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -75,17 +75,17 @@ Visual Basic、Visual C#、および Visual F# のプロジェクトでは、**�
 
 | 言語 | トピック |
 |--------------|-----------|
-| Visual Basic | [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
-| Visual F# | [Visual Studio で Visual F# を使用して開発する](../ide/fsharp-visual-studio.md?view=vs-2017) |
+| Visual Basic | [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
+| Visual C# | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
+| Visual F# | [Visual Studio で Visual F# を使用して開発する](../ide/fsharp-visual-studio.md?view=vs-2017&preserve-view=true) |
 |C++ | [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio のインストール](install-visual-studio.md?view=vs-2017)
-* [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
+* [Visual Studio のインストール](install-visual-studio.md?view=vs-2017&preserve-view=true)
+* [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)
 * [C/C++ 分離アプリケーションおよび side-by-side アセンブリのビルド](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

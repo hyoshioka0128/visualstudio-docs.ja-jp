@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809912"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352350"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio で Python 環境を作成および管理する方法
 
@@ -124,7 +124,7 @@ Visual Studio は、グローバル環境、仮想環境、および conda 環�
 
 Visual Studio には、プロジェクトの仮想環境を作成するための直接的なサポートが提供されています。 たとえば、*requirements.txt* を含むプロジェクトを開く場合、またはそのファイルを含むテンプレートからプロジェクトを作成する場合、Visual Studio では、自動的に仮想環境が作成され、それらの依存関係がインストールされるというメッセージが表示されます。
 
-開いているプロジェクト内には、いつでも新しい仮想環境を作成できます。 **ソリューション エクスプローラー**でプロジェクト ノードを展開し、 **[Python 環境]** ノードを右クリックし、[仮想環境を追加] を選択します。 詳細については、「[仮想環境を作成する](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1)」を参照してください。
+開いているプロジェクト内には、いつでも新しい仮想環境を作成できます。 **ソリューション エクスプローラー**でプロジェクト ノードを展開し、 **[Python 環境]** ノードを右クリックし、[仮想環境を追加] を選択します。 詳細については、「[仮想環境を作成する](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1)」を参照してください。
 
 Visual Studio には、仮想環境から *requirements.txt* ファイルを生成し、他のコンピューターで環境を簡単に再作成するためのコマンドも用意されています。 詳しくは、「[仮想環境を使用する](selecting-a-python-environment-for-a-project.md#use-virtual-environments)」をご覧ください。
 
@@ -239,7 +239,7 @@ Visual Studio 2017 バージョン 15.7 以降では、次のセクションに�
 
     ![[環境の追加] ダイアログのカスタム環境オプション](media/environments/environments-custom-2-2019.png)
 
-1. ダイアログ ボックスの **[プレフィックス パス]** フィールドで、インタープリターのパスを入力または参照 ( **[...]** を使用) します。これにより、他のほとんどのフィールドが設定されます。 それらの値を確認し、必要に応じて変更した後、 **[追加]** を選択します。 
+1. ダイアログ ボックスの **[プレフィックス パス]** フィールドで、インタープリターのパスを入力または参照 ( **[...]** を使用) します。これにより、他のほとんどのフィールドが設定されます。 それらの値を確認し、必要に応じて変更した後、 **[追加]** を選択します。
 
     ![[環境の追加] ダイアログのカスタム環境オプションの詳細を指定するためのフィールド](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Visual Studio で環境のレジストリ エントリが検出されたもの�
     - コンピューター上にまだ環境が存在する場合は、**ExecutablePath** の値を正しい場所に変更します。 また、必要に応じて、 **(Default)** と **WindowedExecutablePath** の値を修正します。
     - コンピューター上に環境が既に存在せず、 **[Python 環境]** ウィンドウから削除する場合は、上のイメージの **3.6** など、**InstallPath** の親ノードを削除します。
     - **HKEY_CURRENT_USER\SOFTWARE\Python** の無効な設定で、**HKEY_LOCAL_MACHINE\SOFTWARE\Python** の設定が上書きされます
-    
+
 ## <a name="see-also"></a>関連項目
 
 - [Python インタープリターのインストール](installing-python-interpreters.md)

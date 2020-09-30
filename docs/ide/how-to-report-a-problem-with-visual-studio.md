@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810875"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211176"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -51,11 +51,11 @@ Visual Studio またはそのインストーラーで発生した問題を報告
 
     スクリーンショットはブラウザー内で直接トリミングし、機密情報や関係のない部分を削除することもできます。
 
-4. Visual Studio エンジニアリング チームの問題解決を支援する最良の方法の 1 つは、チームが参照するためのトレースとヒープ ダンプのファイルを提供することです。 これは、バグを発生させた手順を記録するだけで簡単に行うことができます。 
+4. Visual Studio エンジニアリング チームの問題解決を支援する最良の方法の 1 つは、チームが参照するためのトレースとヒープ ダンプのファイルを提供することです。 これは、バグを発生させた手順を記録するだけで簡単に行うことができます。
 
     ![手順を記録する](../ide/media/feedback-recording.png) *Microsoft のエンジニアだけがこの記録を見ることができます*
 
-5. 添付ファイルを見直し、問題の診断に役立つと思われる場合は追加のファイルをアップロードします。   
+5. 添付ファイルを見直し、問題の診断に役立つと思われる場合は追加のファイルをアップロードします。
 
     ![添付ファイル](../ide/media/feedback-attachments.png) *Microsoft のエンジニアだけが添付ファイルを見ることができます*
 

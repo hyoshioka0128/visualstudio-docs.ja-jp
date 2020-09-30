@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851412"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211366"
 ---
 # <a name="how-to-install-a-visualizer"></a>方法: ビジュアライザーをインストールする
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
@@ -32,7 +32,7 @@ ms.locfileid: "90851412"
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Visual Studio 2019 用のビジュアライザーをインストールするには
-  
+
 1. 作成したビジュアライザーが含まれる DLL を探します。
 
    通常は、デバッガー側 DLL とデバッグ対象側 DLL の両方で、ターゲット プラットフォームとして**任意の CPU** が指定されている場合に最適です。 デバッガー側の DLL は、**任意の CPU** または **32 ビット**のいずれかである必要があります。 デバッグ対象側の DLL のターゲット プラットフォームは、デバッグ対象のプロセスに対応している必要があります。
@@ -42,7 +42,7 @@ ms.locfileid: "90851412"
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\`*VisualStudioVersion*`\Visualizers`
-    
+
 3. [デバッグ対象側](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side)の DLL を、次のいずれかの場所にコピーします。
 
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers\`*Framework*
@@ -61,7 +61,7 @@ ms.locfileid: "90851412"
 4. デバッグ セッションを再開します。
 
 > [!NOTE]
-> この手順は、Visual Studio 2017 およびそれ以前のバージョンでは異なります。 この記事の[前のバージョン](how-to-install-a-visualizer.md?view=vs-2017)をご覧ください。
+> この手順は、Visual Studio 2017 およびそれ以前のバージョンでは異なります。 この記事の[前のバージョン](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true)をご覧ください。
 ::: moniker-end
 
 ::: moniker range="vs-2017"

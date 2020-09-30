@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86bc2a1b73b492dc5f8d9977f05c3b2ba0dde6dc
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89324680"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91376700"
 ---
 Visual Studio マシンではなく、デバッグするリモート デバイスまたはサーバーで、次の表のリンクから適切なバージョンのリモート ツールをダウンロードしてインストールします。
 
@@ -36,7 +36,7 @@ Visual Studio マシンではなく、デバッグするリモート デバイ�
 
 |バージョン|Link|メモ|
 |-|-|-|
-|Visual Studio 2017|[リモート ツール](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|すべてのバージョンの Visual Studio 2017 と互換性があります。 デバイスのオペレーティング システム (x86、x64、または ARM64) に一致するバージョンをダウンロードします。 Windows Server の場合、リモート ツールのダウンロードについては、[ファイルのダウンロードのブロック解除](../../debugger/remote-debugging-unblock-file-download.md)に関するページを参照してください。 最新バージョンのリモート ツールについては、[Visual Studio 2019 ドキュメント](../../debugger/remote-debugging.md?view=vs-2019)を開きます。|
+|Visual Studio 2017|[リモート ツール](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|すべてのバージョンの Visual Studio 2017 と互換性があります。 デバイスのオペレーティング システム (x86、x64、または ARM64) に一致するバージョンをダウンロードします。 Windows Server の場合、リモート ツールのダウンロードについては、[ファイルのダウンロードのブロック解除](../../debugger/remote-debugging-unblock-file-download.md)に関するページを参照してください。 最新バージョンのリモート ツールについては、[Visual Studio 2019 ドキュメント](../../debugger/remote-debugging.md?view=vs-2019&preserve-view=true)を開きます。|
 |Visual Studio 2015|[リモート ツール](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 用のリモート ツールは My.VisualStudio.com で入手できます。 メッセージが表示されたら、無料の [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) プログラムに参加するか、または Visual Studio サブスクリプション ID でサインインします。 Windows Server の場合、リモート ツールのダウンロードについては、[ファイルのダウンロードのブロック解除](../../debugger/remote-debugging-unblock-file-download.md)に関するページを参照してください。|
 |Visual Studio 2013|[リモート ツール](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Visual Studio 2013 ドキュメントのダウンロード ページ|
 |Visual Studio 2012|[リモート ツール](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Visual Studio 2012 ドキュメントのダウンロード ページ|

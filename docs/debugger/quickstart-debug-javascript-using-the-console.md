@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348107"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211077"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio でコンソールを使用して JavaScript をデバッグする
 
-JavaScript コンソール ウィンドウを使用して、JavaScript を使用してビルドされた UWP アプリと対話したりデバッグすることができます。 これらの機能は、UWP アプリおよび Visual Studio Tools for Apache Cordova を使用して作成されたアプリでサポートされています。 コンソール コマンドのリファレンスの詳細については、「 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)」を参照してください。
+JavaScript コンソール ウィンドウを使用して、JavaScript を使用してビルドされた UWP アプリと対話したりデバッグすることができます。 これらの機能は、UWP アプリおよび Visual Studio Tools for Apache Cordova を使用して作成されたアプリでサポートされています。 コンソール コマンドのリファレンスの詳細については、「 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)」を参照してください。
 
 JavaScript コンソール ウィンドウを使うと次の作業ができます。
 
@@ -39,7 +39,7 @@ JavaScript コンソール ウィンドウを使うと次の作業ができま�
 
 - ドキュメント オブジェクト モデル (DOM) と Windows ランタイムの例外に加えて、JavaScript のエラーと例外も表示されます。
 
-- 画面のクリアなどの他のタスクを実行します。 コマンドの詳細については、「 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) 」を参照してください。
+- 画面のクリアなどの他のタスクを実行します。 コマンドの詳細については、「 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) 」を参照してください。
 
 > [!TIP]
 > 閉じた JavaScript コンソール ウィンドウを再び開くには、 **[デバッグ]** >  **[ウィンドウ]**  > **JavaScript コンソール** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。
@@ -251,9 +251,9 @@ JavaScript コンソール ウィンドウを使用すると、1 回につき、
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)
-- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)
 - [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)

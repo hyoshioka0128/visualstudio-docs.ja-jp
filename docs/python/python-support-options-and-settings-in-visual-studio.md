@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315136"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211129"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio での Python のオプション
 
@@ -51,7 +51,7 @@ Python のオプションを表示するには、 **[ツール]**  >  **[オプ�
 | **環境を作成するよう通知バーを表示する** | オン | *Visual Studio 2019 のみ。* このオプションを設定した場合、*requirements.txt* ファイルまたは *environment.yml* ファイルが含まれるプロジェクトをユーザーが開くと、Visual Studio では、既定のグローバル環境を使用する代わりに、それぞれ、仮想環境または Conda 環境を作成する提案を含む情報バーが表示されます。 |
 | **パッケージをインストールするよう通知バーを表示する** | オン | *Visual Studio 2019 のみ。* このオプションを設定した場合、*requirements.txt* ファイルが含まれる (そして、既定のグローバル環境が使われていない) プロジェクトをユーザーが開くと、Visual Studio では、ファイルの要件と現在の環境にインストールされているパッケージが比較されます。 足りないパッケージがあると、それらの依存関係のインストールを求めるメッセージが表示されます。 |
 | **常に管理者として pip を実行する** | オフ | すべての環境で、`pip install` およびそれに類似するパッケージ マネージャーの操作を、常に管理特権に昇格させます。 パッケージのインストール時に、環境が *c:\Program Files* などのファイル システムの保護領域にある場合、Visual Studio で管理者特権を求めるメッセージが表示されます。 そのメッセージでは、その 1 つの環境に対してのみ install コマンドを常に昇格させることを選択できます。 [[パッケージ] タブ](python-environments-window-tab-reference.md#packages-tab)を参照してください。 |
-| **初回使用時に完了 DB を自動的に生成する** | オン | *Visual Studio 2017 バージョン 15.5 以前、IntelliSense データベースを使用している場合はそれより後のバージョンに適用されます。* このオプションを使用するコードを記述すると、ライブラリのデータベースの入力候補が優先されます。 詳細については、[IntelliSense タブ](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab)に関するページをご覧ください。 |
+| **初回使用時に完了 DB を自動的に生成する** | オン | *Visual Studio 2017 バージョン 15.5 以前、IntelliSense データベースを使用している場合はそれより後のバージョンに適用されます。* このオプションを使用するコードを記述すると、ライブラリのデータベースの入力候補が優先されます。 詳細については、[IntelliSense タブ](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab)に関するページをご覧ください。 |
 | **システム全体の PYTHONPATH 変数を無視する** | オン | 既定では PYTHONPATH は無視されます。これは、Visual Studio では環境とプロジェクトに検索パスを指定するためのより直接的な手段が提供されるためです。 詳細については、「[検索パス](search-paths.md)」を参照してください。 |
 | **リンクされたファイルの追加時に検索パスを更新する** | オン | 設定時に[リンクされたファイル](managing-python-projects-in-visual-studio.md#linked-files)をプロジェクト更新ファイルの[検索パス](search-paths.md)に追加することで、IntelliSense にその入力候補データベースのリンクされたファイルのフォルダーの内容が含まれるようになります。 そのような内容を入力候補データベースから除外するには、このオプションをオフにします。 |
 | **インポートしたモジュールが見つからない場合に警告する** | オン | インポートしたモジュールを現在使用できないが、コードの操作に影響がないことがわかっている場合は、このオプションをオフにして警告を非表示にしてください。 |
