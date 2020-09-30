@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012088"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583594"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタムエディターへの機能の追加
 カスタムエディターを作成したら、それにさらに機能を追加できます。
@@ -34,11 +34,11 @@ ms.locfileid: "90012088"
 
 3. インターフェイスを設定して、エディターファクトリを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> ます。
 
-     詳細については、「 [エディターファクトリ](../vs-2015/extensibility/editor-factories.md?view=vs-2015)」を参照してください。
+     詳細については、「 [エディターファクトリ](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 4. エディターでドキュメントビューのオブジェクトウィンドウを管理するために、埋め込み先でのアクティブ化または簡略化された埋め込みを使用するかどうかを決定します。
 
-     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された [埋め込み](../extensibility/simplified-embedding.md) と [インプレースアクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015)」を参照してください。
+     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された [埋め込み](../extensibility/simplified-embedding.md) と [インプレースアクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドを処理するインターフェイスを実装します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "90012088"
         > [!NOTE]
         > へ `QueryService` の <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> ポインターを取得するには、を呼び出し `IVsFileChangeEx` ます。
 
-7. ドキュメントの編集イベントをソースコード管理で調整します。 次の手順に従います。
+7. ドキュメントの編集イベントをソースコード管理で調整します。 次の手順のようにします。
 
     1. でを呼び出して、へのポインターを取得 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> します。
 
@@ -63,13 +63,13 @@ ms.locfileid: "90012088"
 
          このメソッドは、ファイルが保存されていない場合、または最後の保存以降に変更された場合に、ファイルを保存するようにユーザーに要求します。
 
-8. [ **プロパティ** ] ウィンドウを有効にすると、エディターで選択したテキストのプロパティを表示できます。 次の手順に従います。
+8. [ **プロパティ** ] ウィンドウを有効にすると、エディターで選択したテキストのプロパティを表示できます。 次の手順のようにします。
 
     1. テキスト選択が変更されるたびに <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> を呼び出し、の実装を渡し <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます。
 
     2. `QueryService`サービスで <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> を呼び出して、へのポインターを取得 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> します。
 
-9. ユーザーがエディターと **ツールボックス**の間、または外部エディター (Microsoft Word など) と **ツールボックス**の間で項目をドラッグアンドドロップできるようにします。 次の手順に従います。
+9. ユーザーがエディターと **ツールボックス**の間、または外部エディター (Microsoft Word など) と **ツールボックス**の間で項目をドラッグアンドドロップできるようにします。 次の手順のようにします。
 
     1. エディター `IDropTarget` がドロップ先であることを IDE に警告するには、エディターでを実装します。
 
@@ -115,7 +115,7 @@ ms.locfileid: "90012088"
 
 12. 状況依存のヘルプサポートを実装します。
 
-     この手順では、エディターの項目に対して F1 ヘルプとダイナミックヘルプウィンドウのサポートを提供できます。 詳細については、「 [方法: エディターのコンテキストを指定する](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015)」を参照してください。
+     この手順では、エディターの項目に対して F1 ヘルプとダイナミックヘルプウィンドウのサポートを提供できます。 詳細については、「 [方法: エディターのコンテキストを指定する](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 13. インターフェイスを実装することによって、エディターからオートメーションオブジェクトモデルを公開し `IDispatch` ます。
 
