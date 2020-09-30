@@ -1,5 +1,6 @@
 ---
 title: Web パーツまたはアプリケーション ページの再利用できるコントロールの作成 | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b174e1e16802838f19cec6dce727ea3199df730f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3052b2eab3dc353cdccc991a793c47485037fe8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015135"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585094"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する
   Visual Studio では、SharePoint で実行されるアプリケーション ページと Web パーツで使用できる、再利用可能なカスタム コントロールを作成できます。 これらのコントロールは、ユーザー コントロールと呼ばれます。 ユーザー コントロールは、ASP.NET Web ページと同様に動作する一種の複合コントロールです。既存の Web サーバー コントロールやマークアップをユーザー コントロールに追加し、コントロールのプロパティとメソッドを定義することができます。 その後、それらを ASP.NET Web ページに埋め込むと、1 つの単位として機能します。

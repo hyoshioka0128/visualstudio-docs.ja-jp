@@ -1,5 +1,6 @@
 ---
-title: .NET Framework 4、4.5 に移行したプロジェクトで Outlook フォーム領域を更新する
+title: .NET Framework 4.5 に移行したときに Outlook フォーム領域を更新する
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836052"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584400"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Outlook プロジェクトのフォーム領域を更新する
+# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>.NET Framework 4.5 に移行したときに Outlook フォーム領域を更新する
+
   フォーム領域を含む Outlook VSTO アドイン プロジェクトのターゲット フレームワークを [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更する場合は、生成されるフォーム領域コードおよび実行時に特定のフォーム領域クラスをインスタンス化するすべてのコードに対して、いくつかの変更を加える必要があります。
 
 ## <a name="update-the-generated-form-region-code"></a>生成されたフォーム領域コードの更新
@@ -190,7 +192,7 @@ ms.locfileid: "66836052"
 
  次の表に、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とするプロジェクトのフォーム領域の型と、型のインスタンス化に使用するメソッドをリストします。
 
-|型|使用するファクトリ メソッド|
+|Type|使用するファクトリ メソッド|
 |----------|---------------------------|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionCustomAction>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionCustomAction%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|

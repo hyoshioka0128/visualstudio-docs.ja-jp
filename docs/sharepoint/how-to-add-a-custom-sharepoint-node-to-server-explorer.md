@@ -1,5 +1,6 @@
 ---
 title: '方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017053"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584886"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する
-  カスタムノードは、**サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下に追加できます。 これは、既定では **サーバーエクスプローラー** に表示されない追加の SharePoint コンポーネントを表示する場合に便利です。 詳細については、 [サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
+  カスタムノードは、**サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下に追加できます。 これは、既定では **サーバーエクスプローラー** に表示されない追加の SharePoint コンポーネントを表示する場合に便利です。 詳細については、「[サーバー エクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
 
  カスタムノードを追加するには、まず、新しいノードを定義するクラスを作成します。 次に、既存のノードの子としてノードを追加する拡張機能を作成します。
 
@@ -96,6 +97,6 @@ ms.locfileid: "86017053"
  **サーバーエクスプローラー**拡張機能を配置するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリおよび拡張機能と共に配布するその他のファイル用の拡張機能 (VSIX) パッケージを作成します。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [方法: サーバーエクスプローラーで SharePoint ノードを拡張する](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4f6214aa67040a4eb7a4b781cf1612762c87b2e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: dec1cf1e3ec4301b1f219f7345957877ea420528
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012426"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585642"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>カスタム エディターでの構文の色分け表示
 コアエディターなどの Visual Studio 環境 SDK エディターでは、言語サービスを使用して特定の構文項目を識別し、特定のドキュメントビューに対して指定した色で表示します。
@@ -52,7 +52,7 @@ ms.locfileid: "90012426"
 3. によって返された色付け情報を使用して、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> そのテキストを再描画して表示します。
 
 > [!NOTE]
-> 言語サービスの colorizer を使用するだけでなく、汎用的な Visual Studio 環境 SDK テキストの色分け機構を使用することもできます。 このメカニズムの詳細については、「 [フォントおよび色の使用](../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015)」を参照してください。
+> 言語サービスの colorizer を使用するだけでなく、汎用的な Visual Studio 環境 SDK テキストの色分け機構を使用することもできます。 このメカニズムの詳細については、「 [フォントおよび色の使用](../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

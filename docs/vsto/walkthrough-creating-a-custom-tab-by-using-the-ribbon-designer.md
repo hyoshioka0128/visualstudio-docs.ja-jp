@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: リボンデザイナーを使用したカスタムタブの作成'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255525"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585016"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>チュートリアル: リボンデザイナーを使用したカスタムタブの作成
   リボン デザイナーでは、カスタム タブを作成し、その後、カスタム タブの中でコントロールを追加して配置することができます。
@@ -151,7 +152,7 @@ ms.locfileid: "71255525"
 
      操作ウィンドウが表示されなくなります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Office UI をカスタマイズする方法の詳細については、次のトピックで説明します。
 
 - ドキュメント レベルのカスタマイズにコンテキスト ベースの UI を追加する。 詳細については、「 [操作ウィンドウの概要](../vsto/actions-pane-overview.md)」を参照してください。
@@ -161,7 +162,7 @@ ms.locfileid: "71255525"
 ## <a name="see-also"></a>関連項目
 - [実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [リボンデザイナー](../vsto/ribbon-designer.md)
+- [リボン デザイナー](../vsto/ribbon-designer.md)
 - [Outlook のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)
 - [方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [方法: リボンのタブの位置を変更する](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)

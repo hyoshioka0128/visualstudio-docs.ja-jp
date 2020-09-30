@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012270"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584730"
 ---
 # <a name="create-custom-editors-and-designers"></a>カスタムエディターとデザイナーを作成する
 
@@ -59,7 +59,7 @@ Visual Studio のコアエディターの詳細については、「 [エディ�
 
 - エディターで ActiveX コントロールをホストする必要がありますか。
 
-   エディターが ActiveX コントロールをホストしている場合は、「インプレース [アクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015)」で説明されているように、インプレースアクティブ化エディターを実装します。 ActiveX コントロールをホストしていない場合は、簡略化された埋め込みエディターを使用するか、既定のエディターをカスタマイズし [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
+   エディターが ActiveX コントロールをホストしている場合は、「インプレース [アクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)」で説明されているように、インプレースアクティブ化エディターを実装します。 ActiveX コントロールをホストしていない場合は、簡略化された埋め込みエディターを使用するか、既定のエディターをカスタマイズし [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
 - エディターは複数のビューをサポートしますか。 エディターのビューを既定のエディターと同時に表示する場合は、複数のビューをサポートする必要があります。
 
@@ -93,7 +93,7 @@ Visual Studio のコアエディターの詳細については、「 [エディ�
 
 ## <a name="related-sections"></a>関連項目
 
-[エディター内のレガシインターフェイス](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
+[エディター内のレガシインターフェイス](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
 レガシ API を使用してコアエディターにアクセスする方法について説明します。
 
 [従来の言語サービスを開発する](../extensibility/internals/developing-a-legacy-language-service.md)\

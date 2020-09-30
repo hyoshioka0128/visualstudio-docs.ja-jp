@@ -1,5 +1,6 @@
 ---
 title: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (パート 1)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739916"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585551"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -749,7 +750,7 @@ ms.locfileid: "90739916"
 
 5. Visual Studio の両方のインスタンス (実験用インスタンスと SiteColumnProjectItem ソリューションを開いたインスタンス) を閉じます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルを完了すると、プロジェクト テンプレートにウィザードを追加できるようになります。 ユーザーが Site Column プロジェクトを作成するときに、ウィザードが、デバッグに使用するサイトの URL と、新しいソリューションがサンドボックス ソリューションかどうかをユーザーに尋ね、この情報を使用して新しいプロジェクトを構成します。 また、このウィザードでは、列に関する情報 (基本データ型や、サイト列ギャラリーの列を一覧表示するグループなど) が収集され、この情報が新しいプロジェクトの *Elements.xml* ファイルに追加されます。 詳細については、「 [チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md))」を参照してください。
 
 ## <a name="see-also"></a>関連項目

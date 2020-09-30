@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムによって web ページを Outlook フォルダーに関連付ける'
+title: Web ページを Outlook フォルダーに関連付ける
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546147"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585341"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>方法: プログラムによって web ページを Outlook フォルダーに関連付ける
+# <a name="associate-a-web-page-with-an-outlook-folder"></a>Web ページを Outlook フォルダーに関連付ける
+
   この例では Microsoft Office Outlook でという名前のフォルダーがあるかどうかを確認 `HtmlView` します。 フォルダーが存在しない場合、コードによってフォルダーが作成され、そのフォルダーに Web ページが割り当てられます。 フォルダーが存在する場合は、このコードによってフォルダーの内容が表示されます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

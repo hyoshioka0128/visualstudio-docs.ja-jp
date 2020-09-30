@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871962"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584309"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成
   このチュートリアルでは Microsoft Office PowerPoint 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのプレゼンテーションが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -92,7 +93,7 @@ ms.locfileid: "68871962"
 
 - EApplication_Event のイベント `Sld` ハンドラーのイベントハンドラーの[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))パラメーターを指定します。このイベントは、 パラメーターは、 `Sld` 新しいスライドを表す [スライド](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) オブジェクトです。 詳細については、「 [PowerPoint ソリューション](../vsto/powerpoint-solutions.md)」を参照してください。
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  プロジェクトをビルドして実行するときに、プレゼンテーションに追加した新しいスライドに、テキスト ボックスが表示されることを確認します。
 
 ### <a name="to-test-the-project"></a>プロジェクトをテストするには
@@ -116,7 +117,7 @@ ms.locfileid: "68871962"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  これで PowerPoint 用の基本的な VSTO アドインが作成されました。VSTO アドインの開発方法の詳細について、以下のトピックを参照してください。
 
 - PowerPoint 用 VSTO アドインで実行できる一般的なプログラミング タスク。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。

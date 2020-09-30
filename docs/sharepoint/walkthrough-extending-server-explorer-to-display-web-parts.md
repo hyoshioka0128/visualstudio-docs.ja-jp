@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: Web パーツを表示するためのサーバーエクスプローラーの拡張 |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739994"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583854"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する
   Visual Studio では、**サーバーエクスプローラー**の [ **sharepoint 接続**] ノードを使用して、sharepoint サイトのコンポーネントを表示できます。 ただし、一部のコンポーネントは既定では **サーバーエクスプローラー** 表示されません。 このチュートリアルでは、接続されている各 SharePoint サイトに Web パーツギャラリーを表示するように **サーバーエクスプローラー** を拡張します。

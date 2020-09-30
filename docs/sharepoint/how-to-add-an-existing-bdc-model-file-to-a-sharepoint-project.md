@@ -1,5 +1,6 @@
 ---
 title: '方法: 既存の BDC モデルファイルを SharePoint プロジェクトに追加する |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016522"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584621"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>方法: 既存の BDC モデルファイルを SharePoint プロジェクトに追加する
-  Visual Studio を使用して、モデルファイル (*bdcm*) を任意の SharePoint ファームプロジェクトに追加することにより、ビジネスデータ接続 (BDC) モデルをカスタマイズ、パッケージ化、および再配置できます。 詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>方法: 既存の BDC モデル ファイルを SharePoint プロジェクトに追加する
+  Visual Studio を使用して、モデルファイル (*bdcm*) を任意の SharePoint ファームプロジェクトに追加することにより、ビジネスデータ接続 (BDC) モデルをカスタマイズ、パッケージ化、および再配置できます。 詳細については、「[ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>BDC モデルファイルを SharePoint プロジェクトに追加するには
 
@@ -46,8 +47,8 @@ ms.locfileid: "86016522"
      **ビジネスデータ接続モデル**項目がプロジェクトに追加されます。
 
 ## <a name="see-also"></a>関連項目
-- [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [方法: BDC モデルを作成する](../sharepoint/how-to-create-a-bdc-model.md)
-- [方法: リソースファイルを使用してローカライズされた名前、プロパティ、およびアクセス許可を指定する](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [方法: リソース ファイルを使用して、ローカライズした名前、プロパティ、およびアクセス許可を指定する](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
 - [方法: BDC 機能にカスタムアセンブリを含める](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)

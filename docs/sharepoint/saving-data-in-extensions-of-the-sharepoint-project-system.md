@@ -1,5 +1,6 @@
 ---
 title: SharePoint プロジェクトシステムの拡張機能におけるデータの保存 |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62827246"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583867"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクトシステムの拡張機能にデータを保存する
   SharePoint プロジェクトシステムを拡張すると、SharePoint プロジェクトを閉じた後も保持される文字列データを保存できます。 データは、通常、特定のプロジェクトアイテムまたはプロジェクト自体に関連付けられています。
@@ -53,7 +54,7 @@ ms.locfileid: "62827246"
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
 
-## <a name="see-also"></a>こちらもご覧ください
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
+## <a name="see-also"></a>関連項目
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)
 - [カスタムデータと SharePoint ツールの拡張機能の関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 - [SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

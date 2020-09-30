@@ -1,5 +1,6 @@
 ---
 title: サーバーエクスプローラー | の [SharePoint 接続] ノードの拡張Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967358"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584608"
 ---
-# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>サーバーエクスプローラーで SharePoint 接続ノードを拡張する
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する
   Visual Studio では、[**サーバーエクスプローラー** ] ウィンドウの [ **sharepoint 接続**] ノードを使用して、開発用コンピューターのローカル sharepoint サイトに接続できます。 このノードには、ローカル SharePoint サイトの多くのコンポーネントが階層ツリービューで表示されます。 たとえば、ローカルサイトのリスト、ドキュメントライブラリ、コンテンツの種類を表示できます。 **サーバーエクスプローラー**を使用してローカルの SharePoint サイトに接続する方法の詳細については、「[サーバーエクスプローラーを使用した Sharepoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)」を参照してください。
 
  既存のノードの拡張機能を作成するか、カスタムノードの種類を作成してノードの階層に追加することによって、[ **SharePoint 接続** ] ノードを拡張できます。
@@ -55,10 +56,10 @@ ms.locfileid: "62967358"
 |ノード型|データオブジェクトの種類|
 |---------------|----------------------|
 |SharePoint サイトノード|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
-|Content type|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
+|コンテンツ タイプ|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
 |機能|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |フィールド|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
-|リスト|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
+|List|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |リストテンプレート|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|
 |リストビュー (Microsoft. SharePoint. SPView)|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListViewNodeInfo>|
 |ワークフローの関連付け|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|
@@ -66,11 +67,11 @@ ms.locfileid: "62967358"
 
  プロパティの使用方法の詳細については <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [方法: サーバーエクスプローラーで SharePoint ノードを拡張する](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
 - [方法: サーバーエクスプローラーで組み込みの SharePoint ノードのデータを取得する](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)
 - [カスタムデータと SharePoint ツールの拡張機能の関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
-- [サーバーエクスプローラーを使用した SharePoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [サーバー エクスプローラーを使用して SharePoint 接続を参照する](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

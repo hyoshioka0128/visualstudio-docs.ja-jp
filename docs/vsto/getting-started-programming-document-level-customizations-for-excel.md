@@ -1,5 +1,6 @@
 ---
 title: 'Excel: ドキュメントレベルのカスタマイズのプログラミングを開始する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66402159"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585681"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel のドキュメントレベルのカスタマイズのプログラミングの概要
   Visual Studio を使用して Microsoft Office Excel のドキュメントレベルのカスタマイズの作成を開始するだけの場合は、次のことを理解しておく必要があります。
@@ -58,7 +59,7 @@ ms.locfileid: "66402159"
 ## <a name="use-data-binding"></a>データバインディングを使用する
  ホストコントロールは、[ **データソース** ] ウィンドウからドラッグできるコントロールの一覧にもあります。 この方法でホストコントロールを追加すると、ウィンドウを使用して設定したデータソースに自動的にバインドされます。 コードを記述しなくても、データベース、web サービス、およびビジネスオブジェクトのデータを表示できます。 詳細については、「 [データを Office ソリューションのコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Excel 用のドキュメントレベルのカスタマイズを作成する方法については、「 [チュートリアル: 初めての excel 用ドキュメントレベルのカスタマイズを作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)する」を参照してください。 このチュートリアルでは、Visual Studio の Office 開発ツールと Excel ドキュメントレベルのカスタマイズのプログラミングモデルについて説明します。
 
  Excel プロジェクトの一般的なタスクについて説明するトピックの一覧については、「 [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)」を参照してください。

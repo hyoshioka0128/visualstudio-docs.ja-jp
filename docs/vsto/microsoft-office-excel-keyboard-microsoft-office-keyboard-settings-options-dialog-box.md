@@ -1,5 +1,6 @@
 ---
-title: Office Excel キーボード、キーボード設定、[オプション] ダイアログボックス
+title: Office Excel キーボード、[設定]、[オプション] ダイアログボックス
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836037"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584517"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel キーボード、Microsoft Office キーボード設定、[オプション] ダイアログボックス
+# <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel キーボード、[設定]、[オプション] ダイアログボックス
   Microsoft Office Excel と Visual Studio の両方で、ショートカットキーが処理されます。 同じショートカットキーの組み合わせは、Excel や Visual Studio のさまざまなコマンドに使用できます。 Excel が Visual Studio のドキュメントレベルのプロジェクトで開かれている場合、一度に1つのアプリケーションだけがショートカットキーコマンドを受け取ります。 既定では、Visual Studio はすべてのショートカットキーコマンドを受け取りますが、[ **動的キーボードスキーム**] を選択して、ドキュメントにフォーカスがあるときに Excel を受け取るようにすることができます。
 
  現在ショートカットキーを処理しているアプリケーションのコマンドに割り当てられていないショートカットキーを使用すると、ショートカットキーが他のアプリケーションに渡されます。

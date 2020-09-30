@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: オプションボタンを使用してドキュメントのグラフを更新する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4b39949deb3bcbf3d9330ca8d820a5841b0f4c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981050"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584296"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>チュートリアル: オプションボタンを使用してドキュメントのグラフを更新する
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでオプション ボタンを使用して、文書上でグラフのスタイルを選択するオプションをユーザーに提供する方法を示します。
@@ -212,7 +213,7 @@ ms.locfileid: "62981050"
 
 - コンボ ボックスからスタイルを選択して書式を変更する。 詳細については、「 [チュートリアル: CheckBox コントロールを使用してドキュメントの書式を変更する](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
 - [Office ドキュメントの Windows フォームコントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -1,5 +1,6 @@
 ---
-title: Windows インストーラーを使用した Visual Studio Tools for Office ソリューションの配置
+title: Windows インストーラーを使用した VSTO ソリューションの配置
+titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +19,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bfa808cbf99e942d7aadd2802f51eecfcefae8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444907"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585694"
 ---
-# <a name="deploying-a-visual-studio-tools-for-office-solution-using-windows-installer"></a>Windows インストーラーを使用した Visual Studio Tools for Office ソリューションの配置
+# <a name="deploying-a-vsto-solution-using-windows-installer"></a>Windows インストーラーを使用した VSTO ソリューションの配置
 
 ## <a name="summary"></a>まとめ
 
@@ -580,7 +581,7 @@ s
 
 [方法: Visual Studio Tools for Office ランタイムをインストールする](how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 
-[Office プライマリ相互運用機能アセンブリ](office-primary-interop-assemblies.md)
+[Office Primary Interop Assemblies](office-primary-interop-assemblies.md)
 
 [VSTO アドインのレジストリエントリ](registry-entries-for-vsto-add-ins.md)
 

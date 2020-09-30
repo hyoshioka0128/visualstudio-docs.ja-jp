@@ -1,5 +1,6 @@
 ---
 title: SharePoint プロジェクト項目の項目テンプレート/プロジェクトテンプレート
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65bbd58bf9b3e0b399603a083615daccc382a98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec97eb2dfab7ab92c1e324c89fd044c1a50c2173
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981174"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585616"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する
 
@@ -81,7 +82,7 @@ ms.locfileid: "72981174"
 
  項目テンプレートとプロジェクトテンプレート用のウィザードを作成する方法を示すチュートリアルについては、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成」、「パート 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) 」、「 [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (第2部)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

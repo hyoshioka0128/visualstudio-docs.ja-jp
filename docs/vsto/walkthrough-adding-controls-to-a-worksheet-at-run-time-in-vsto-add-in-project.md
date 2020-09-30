@@ -1,5 +1,6 @@
 ---
 title: 実行時に VSTO アドインプロジェクトのワークシートにコントロールを追加する
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253894"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584348"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>チュートリアル: 実行時における VSTO アドインプロジェクトのワークシートへのコントロールの追加
   Excel VSTO アドインを使用して、任意の開いているワークシートにコントロールを追加できます。 このチュートリアルでは、リボンを使用してユーザーがワークシートに <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange>、および <xref:Microsoft.Office.Tools.Excel.ListObject> を追加できるようにする方法を説明します。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
@@ -72,8 +73,8 @@ ms.locfileid: "71253894"
 
     |プロパティ|値|
     |--------------|-----------|
-    |**名前**|**Button**|
-    |**Label**|**Button**|
+    |**名前**|**ボタン**|
+    |**Label**|**ボタン**|
 
 6. **group1**に 2 つ目のチェック ボックスを追加し、次のプロパティを変更します。
 
@@ -186,7 +187,7 @@ ms.locfileid: "71253894"
 
 - コントロールをワークシートに保存する方法の詳細については、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「Excel VSTO アドイン動的コントロールのサンプル」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Excel ソリューション](../vsto/excel-solutions.md)
 - [Office ドキュメントでの Windows フォームコントロールの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)

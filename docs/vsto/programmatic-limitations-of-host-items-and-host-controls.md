@@ -1,5 +1,6 @@
 ---
 title: ホスト項目とホストコントロールのプログラム上の制限事項
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +31,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97b94291a3fd057e82bd79aa4f6c3220020bc24a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 098145ca901b1f16974058513d3781fc4621f217
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255812"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584478"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>ホスト項目とホストコントロールのプログラム上の制限事項
   それぞれのホスト項目やホスト コントロールは、それに対応するネイティブな Microsoft Office Word オブジェクトや Microsoft Office Excel オブジェクトと同様に動作するように設計され、さらに追加の機能が備えられています。 ただし、ホスト項目やホスト コントロールと、ネイティブな Office オブジェクトの実行時の動作には、基本的な相違点がいくつかあります。

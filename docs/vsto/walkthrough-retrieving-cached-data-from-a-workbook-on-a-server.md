@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: サーバー上のブックからキャッシュされたデータを取得する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b70283e63a2f71c0c85bf26a24f2e6f4a3492880
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d5a9932a781260609a0b00c8576c9ecc85ad1d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985417"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584951"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックからキャッシュされたデータを取得する
   このチュートリアルでは、クラスを使用して Excel を起動することなく、Microsoft Office Excel ブックにキャッシュされているデータセットからデータを取得する方法について説明 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> します。
@@ -277,7 +278,7 @@ ms.locfileid: "72985417"
 
 10. [ **ビルド** ] メニューの [ **DataReader のビルド**] をクリックします。
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  コンソールアプリケーションを実行すると、ローカルデータセット内の行の数が表示されます。
 
 ### <a name="test-the-workbook"></a>ブックをテストする
@@ -293,7 +294,7 @@ ms.locfileid: "72985417"
 
 - Excel を起動せずに、キャッシュされたデータセット内のデータを変更する。 詳細については、「 [チュートリアル: サーバー上のブックにキャッシュされたデータを変更](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [チュートリアル: サーバー上のブックにデータを挿入する](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
 - [チュートリアル: サーバー上のブックでキャッシュされたデータを変更する](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

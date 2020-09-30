@@ -1,5 +1,6 @@
 ---
 title: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985451"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584283"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>チュートリアル: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する
   このチュートリアルでは、作成または開かれた各電子メールメッセージを使用して、カスタム作業ウィンドウの一意のインスタンスを表示する方法について説明します。 ユーザーは、各電子メール メッセージのリボンにあるボタンを使用して、カスタム作業ウィンドウを表示または非表示にすることができます。
@@ -220,7 +221,7 @@ ms.locfileid: "72985451"
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  プロジェクトのデバッグを開始すると、Outlook が開き、VSTO アドインが読み込まれます。 VSTO アドインでは、開いている各電子メールメッセージと共に、カスタム作業ウィンドウの一意のインスタンスが表示されます。 コードをテストする新しい電子メールメッセージをいくつか作成します。
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO アドインをテストするには
@@ -266,7 +267,7 @@ ms.locfileid: "72985451"
 
 - Excel にリボン ボタンを作成して、カスタム作業ウィンドウの非表示または表示に使用できるようにします。 詳細については、「 [チュートリアル: カスタム作業ウィンドウとリボンボタンの同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)
 - [方法: カスタム作業ウィンドウをアプリケーションに追加する](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [チュートリアル: カスタム作業ウィンドウからのアプリケーションの自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

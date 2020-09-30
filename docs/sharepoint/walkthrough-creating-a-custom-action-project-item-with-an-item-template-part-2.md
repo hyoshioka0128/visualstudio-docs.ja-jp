@@ -1,5 +1,6 @@
 ---
 title: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (第2部)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016100"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585472"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 2)
   SharePoint プロジェクト項目のカスタムの種類を定義し、Visual Studio の項目テンプレートに関連付けると、テンプレートのウィザードを指定することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクトにプロジェクト項目の新しいインスタンスを追加するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -213,7 +214,7 @@ ms.locfileid: "86016100"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>置換可能なパラメーターを項目テンプレートの *Elements.xml* ファイルに追加する
  ItemTemplate プロジェクトの *Elements.xml* ファイルに置き換え可能なパラメーターをいくつか追加します。 これらのパラメーターは、前に定義した `PopulateReplacementDictionary` クラスの `CustomActionWizard` メソッドで初期化されます。 ユーザーがプロジェクトにカスタムアクションプロジェクト項目を追加すると、Visual Studio によって、新しいプロジェクト項目の *Elements.xml* ファイル内のこれらのパラメーターがウィザードで指定した値に自動的に置き換えられます。
 
- 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置換可能なパラメーターを定義するだけでなく、SharePoint プロジェクトシステムで定義および初期化する組み込みパラメーターを使用することもできます。 詳細については、「 [置換可能なパラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
+ 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置換可能なパラメーターを定義するだけでなく、SharePoint プロジェクトシステムで定義および初期化する組み込みパラメーターを使用することもできます。 詳細については、「[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置換可能なパラメーターを *Elements.xml* ファイルに追加するには
 

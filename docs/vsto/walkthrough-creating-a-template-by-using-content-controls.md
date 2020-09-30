@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: コンテンツコントロールを使用してテンプレートを作成する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255582"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585029"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>チュートリアル: コンテンツコントロールを使用してテンプレートを作成する
   このチュートリアルでは、コンテンツ コントロールを使用して、Microsoft Office Word テンプレートで構造化された再利用可能なコンテンツを作成するための、ドキュメント レベルのカスタマイズを作成する方法について説明します。
@@ -76,7 +77,7 @@ ms.locfileid: "71255582"
    |**Employee Name**|
    |**Hire Date**|
    |**タイトル**|
-   |**図**|
+   |**画像**|
 
 4. 2番目の列の最初のセル ([ **Employee Name**] の横) をクリックします。
 
@@ -184,7 +185,7 @@ ms.locfileid: "71255582"
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  ユーザーはドキュメント内の文書パーツ ギャラリー コントロールをクリックして、従業員表や顧客フィードバック表を挿入できます。 ユーザーは、両方の表内のコンテンツ コントロールで、応答を入力または選択できます。 ユーザーは顧客フィードバック表の他の部分を変更できますが、従業員表の他の部分を変更できてはなりません。
 
 ### <a name="to-test-the-employee-table"></a>従業員表をテストするには
@@ -229,14 +230,14 @@ ms.locfileid: "71255582"
 
 7. テンプレートを閉じます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  コンテンツ コントロールの使用方法の詳細については、次の各トピックを参照してください。
 
 - コンテンツ コントロールを、文書に埋め込まれている XML の一部 (「カスタム XML 部分」とも呼ばれます) にバインドします。 詳細については、「 [チュートリアル: カスタム XML 部分へのコンテンツコントロールのバインド](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)
-- [コンテンツ コントロール](../vsto/content-controls.md)
+- [コンテンツコントロール](../vsto/content-controls.md)
 - [方法: Word 文書にコンテンツコントロールを追加する](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [方法: コンテンツコントロールを使用して文書の一部を保護する](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)

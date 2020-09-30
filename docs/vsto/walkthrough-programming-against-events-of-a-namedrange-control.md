@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: NamedRange コントロールのイベントに対するプログラミング'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842129"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584938"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>チュートリアル: NamedRange コントロールのイベントに対するプログラミング
   このチュートリアルでは、 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio の Office 開発ツールを使用して、Microsoft Office Excel ワークシートにコントロールを追加し、そのイベントに対してプログラムを作成する方法について説明します。
@@ -155,7 +156,7 @@ ms.locfileid: "90842129"
 
 - プロジェクトを配置しています。 詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
 - [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange コントロール](../vsto/namedrange-control.md)

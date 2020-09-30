@@ -1,5 +1,6 @@
 ---
 title: SharePoint ツールの拡張機能にカスタムデータを関連付ける |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f8aaf9303f3ee9a4008094b4e98c99d635e9f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987975"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584691"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>カスタムデータと SharePoint ツールの拡張機能の関連付け
   SharePoint ツールの拡張機能では、特定のオブジェクトにカスタムデータを追加できます。 これは、拡張機能の一部に、後で拡張機能の他のコードからアクセスするデータがある場合に便利です。 データを格納してアクセスするための独自の方法を実装する代わりに、拡張機能のオブジェクトにデータを関連付け、後で同じオブジェクトからデータを取得することができます。
@@ -79,8 +80,8 @@ ms.locfileid: "62987975"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>こちらもご覧ください
-- [SharePoint ツールの拡張機能のプログラミングの概念と機能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+## <a name="see-also"></a>関連項目
+- [SharePoint ツール拡張機能におけるプログラミングに関する概念および特徴](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [チュートリアル: web パーツを表示するためのサーバーエクスプローラーの拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [方法: SharePoint プロジェクトにプロパティを追加する](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

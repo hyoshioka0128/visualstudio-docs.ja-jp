@@ -1,5 +1,6 @@
 ---
 title: 実行時に VSTO アドインの Word 文書 & Excel ブックに拡張する
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80fc10690691e8bd923f9c98270b162e7063ffb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253665"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585446"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>実行時に VSTO アドインの Word 文書と Excel ブックを拡張する
   VSTO アドインを利用すれば、Word 文書と Excel ブックを次のようにカスタマイズできます。
@@ -120,7 +121,7 @@ ms.locfileid: "71253665"
 
  `HasVstoObject` メソッドは、指定した Office オブジェクトに拡張オブジェクトがある場合にのみ、コードの実行で便利です。 たとえば、イベントを処理して、 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 保存前にドキュメントからマネージコントロールを削除する WORD VSTO アドインがある場合は、メソッドを使用して `HasVstoObject` 、ドキュメントが拡張されているかどうかを確認します。 ドキュメントが拡張されていない場合は、マネージコントロールを持つことはできません。また、イベントハンドラーは、ドキュメント上のコントロールをクリーンアップせずに制御を戻すことができます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)

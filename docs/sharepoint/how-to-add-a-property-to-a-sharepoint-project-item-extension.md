@@ -1,5 +1,6 @@
 ---
 title: '方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015990"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584257"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する
   プロジェクト項目の拡張機能を使用して、Visual Studio に既にインストールされている SharePoint プロジェクト項目にプロパティを追加できます。 **ソリューションエクスプローラー**でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。

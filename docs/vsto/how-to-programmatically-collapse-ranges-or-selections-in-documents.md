@@ -1,5 +1,6 @@
 ---
 title: プログラムによってドキュメント内の範囲または選択項目を折りたたむ
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb22f97b6a876029ff5d984abf9bda32cfd3fbc
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546121"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585289"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>方法: プログラムによって文書内の範囲または選択項目を折りたたむ
   <xref:Microsoft.Office.Interop.Word.Range> または <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトを使用する場合、既存のテキストが上書きされないように、テキストを挿入する前に、選択範囲を挿入ポイントに変更できます。 <xref:Microsoft.Office.Interop.Word.Range>オブジェクトとオブジェクトの両方に <xref:Microsoft.Office.Interop.Word.Selection> Collapse メソッドがあり、列挙値を使用し <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> ます。

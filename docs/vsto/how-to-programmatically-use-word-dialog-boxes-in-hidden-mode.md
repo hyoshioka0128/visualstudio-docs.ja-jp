@@ -1,5 +1,6 @@
 ---
 title: '方法: プログラムによって Word のダイアログボックスを非表示モードで使用する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 923fc7ddec0350f254968fe17494ecbe27f76b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537580"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583763"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>方法: プログラムによって Word のダイアログボックスを非表示モードで使用する
   1つのメソッド呼び出しで複雑な操作を実行するには、Microsoft Office Word の組み込みダイアログボックスをユーザーに表示せずに呼び出します。 これを行うには、 <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> メソッドを呼び出さずにオブジェクトのメソッドを使用し <xref:Microsoft.Office.Interop.Word.Dialog> <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> ます。

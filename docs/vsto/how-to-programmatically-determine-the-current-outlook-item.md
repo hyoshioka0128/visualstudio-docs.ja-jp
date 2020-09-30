@@ -1,5 +1,6 @@
 ---
 title: '方法: プログラムによって現在の Outlook アイテムを確認する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 428dccf09235e2feea528bcdaef0a447e02ef58d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547161"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585237"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>方法: プログラムによって現在の Outlook アイテムを確認する
   この例では、イベントを使用して、 `Explorer.SelectionChange` 現在のフォルダーの名前と、選択した項目に関する情報を表示します。 次に、選択した項目がコードによって表示されます。

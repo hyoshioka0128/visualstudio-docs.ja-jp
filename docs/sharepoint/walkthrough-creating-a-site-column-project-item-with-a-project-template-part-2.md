@@ -1,5 +1,6 @@
 ---
 title: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016399"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585459"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)
   SharePoint プロジェクト項目のカスタム種類を定義し、Visual Studio でその種類をプロジェクト テンプレートと関連付けてから、テンプレート用のウィザードを用意することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクト項目を含む新しいプロジェクトを作成するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -410,7 +411,7 @@ ms.locfileid: "86016399"
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>置き換え可能パラメーターをプロジェクトテンプレートの Elements.xml ファイルに追加する
  SiteColumnProjectTemplate プロジェクトの *Elements.xml* ファイルに置き換え可能なパラメーターをいくつか追加します。 これらのパラメーターは、前に定義した `RunStarted` クラスの `SiteColumnProjectWizard` メソッドで初期化されます。 ユーザーがサイト列プロジェクトを作成すると、Visual Studio によって、新しいプロジェクトの *Elements.xml* ファイル内のこれらのパラメーターが、ウィザードで指定した値に自動的に置き換えられます。
 
- 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムによって定義されて初期化される組み込みパラメーターを使用することもできます。 詳細については、「 [置換可能なパラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
+ 置き換え可能パラメーターはトークンであり、先頭と末尾にはドル記号 ($) が付いています。 独自の置き換え可能パラメーターを定義するだけでなく、SharePoint プロジェクト システムによって定義されて初期化される組み込みパラメーターを使用することもできます。 詳細については、「[置き換え可能パラメーター](../sharepoint/replaceable-parameters.md)」を参照してください。
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>置き換え可能パラメーターを Elements.xml ファイルに追加するには
 

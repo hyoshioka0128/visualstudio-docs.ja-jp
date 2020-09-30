@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0387bc15e392d9e9035e4dd1c119fdc1ad00dba
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7b82353247776eb2dac8135a0a412b396d571a1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011971"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584717"
 ---
 # <a name="register-a-tool-window"></a>ツールウィンドウを登録する
 ツールウィンドウは、およびを使用して登録でき <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ます。
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 上記のコードでは、によって <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `PersistedWindowPane` と `DynamicWindowPane` ツールウィンドウが Visual Studio に登録されます。 永続化されたツールウィンドウはドッキングされ、 **ソリューションエクスプローラー**でタブが付けられます。また、動的ウィンドウには、既定の開始位置とサイズが指定されます。 動的ウィンドウは一時的に作成されます。これは、起動時に作成されないことを示します。 これにより、 `DontForceCreate` システムレジストリのキーに値が書き込ま `ToolWindows` れます。 詳細については、「 [ツールウィンドウの表示構成](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015)」を参照してください。
+ 上記のコードでは、によって <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `PersistedWindowPane` と `DynamicWindowPane` ツールウィンドウが Visual Studio に登録されます。 永続化されたツールウィンドウはドッキングされ、 **ソリューションエクスプローラー**でタブが付けられます。また、動的ウィンドウには、既定の開始位置とサイズが指定されます。 動的ウィンドウは一時的に作成されます。これは、起動時に作成されないことを示します。 これにより、 `DontForceCreate` システムレジストリのキーに値が書き込ま `ToolWindows` れます。 詳細については、「 [ツールウィンドウの表示構成](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015&preserve-view=true)」を参照してください。

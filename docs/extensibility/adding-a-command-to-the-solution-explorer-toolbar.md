@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08513ef67dfdffbf70b5ce2ff449a9ceb4250c37
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012296"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583698"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>ソリューションエクスプローラーツールバーにコマンドを追加する
 このチュートリアルでは、[ **ソリューションエクスプローラー** ] ツールバーにボタンを追加する方法について説明します。
@@ -114,7 +114,7 @@ ms.locfileid: "90012296"
 
 5. **[ファイル]** メニューの **[ソリューションを閉じる]** をクリックします。 ツールバーのボタンが消えます。
 
-   ボタンの表示は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage が読み込まれるまでによって制御されます。 VSPackage が読み込まれた後、ボタンの可視性は VSPackage によって制御されます。  詳細については、「 [Menucommands と OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)」を参照してください。
+   ボタンの表示は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage が読み込まれるまでによって制御されます。 VSPackage が読み込まれた後、ボタンの可視性は VSPackage によって制御されます。  詳細については、「 [Menucommands と OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692344"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584322"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでの複合データバインディングの基本について説明します。 Microsoft Office Excel ワークシートの複数のセルを、Northwind SQL Server データベースのフィールドにバインドできます。
@@ -214,7 +215,7 @@ ms.locfileid: "67692344"
 
      フィルター処理が削除され、すべての行が表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルでは、データベース内のテーブルをリストオブジェクトにバインドする方法の基本について説明します。 ここでは、次の作業を行います。
 
 - データをキャッシュして、オフラインで使用できるようにします。 詳細については、「 [方法: オフラインまたはサーバー上で使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)する」を参照してください。

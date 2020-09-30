@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: Outlook でデザインされたフォーム領域をインポートする'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a0de1a25a5309e99193b7be8bce2819808665b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985435"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584977"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>チュートリアル: Outlook でデザインされたフォーム領域をインポートする
   このチュートリアルでは、Microsoft Office Outlook でフォーム領域をデザインし、そのフォーム領域を **[新しいフォーム領域]** ウィザードを使用して Outlook VSTO アドイン プロジェクトにインポートする方法について説明します。 Outlook でフォーム領域をデザインすると、Outlook データにバインドされたネイティブ Outlook コントロールをフォーム領域に追加できます。 フォーム領域をインポートした後で、各コントロールのイベントを処理できます。
@@ -250,7 +251,7 @@ ms.locfileid: "72985435"
 
 - Outlook にカスタム作業ウィンドウを追加する方法の詳細については、「 [カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [実行時のフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
 - [Outlook フォーム領域を作成するためのガイドライン](../vsto/guidelines-for-creating-outlook-form-regions.md)

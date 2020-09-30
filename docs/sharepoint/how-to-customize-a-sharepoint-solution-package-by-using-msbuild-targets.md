@@ -1,5 +1,6 @@
 ---
 title: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016883"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585811"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>方法: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
   MSBuild ターゲットをコマンドプロンプトで使用することにより、Visual Studio が SharePoint パッケージファイル (*.wsp*) を作成する方法をカスタマイズできます。 たとえば、MSBuild のプロパティをカスタマイズして、パッケージ化された中間ディレクトリと、列挙されたファイルを指定する MSBuild 項目グループを変更できます。

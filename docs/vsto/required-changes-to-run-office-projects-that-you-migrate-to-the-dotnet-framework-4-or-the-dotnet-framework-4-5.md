@@ -1,5 +1,6 @@
 ---
-title: .NET Framework 4、4.5 に移行された Office プロジェクトに必要な変更
+title: .NET 4.5 に移行された Office プロジェクトに必要な変更
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810968"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584465"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Office プロジェクトの実行に必要な変更
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>.NET 4.5 に移行された Office プロジェクトに必要な変更
+
   Office プロジェクトのターゲットフレームワークを以前のバージョンの .NET Framework から以降に変更する場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 次のタスクを実行して、ソリューションを開発用コンピューターとエンドユーザーのコンピューターで確実に実行できるようにする必要があります。
 
 - Visual Studio 2008 からアップグレードした場合は、プロジェクトから <xref:System.Security.SecurityTransparentAttribute> を削除します。
@@ -69,5 +71,5 @@ ms.locfileid: "90810968"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>エンドユーザーのコンピューターにソリューションを再インストールする
  ClickOnce を使用して .NET Framework 3.5 を対象とする Office ソリューションを配置してから、プロジェクトの対象を [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更した場合、エンド ユーザーはソリューションをアンインストールし、再発行後のソリューションを再インストールする必要があります。 ターゲットソリューションを再発行し、エンドユーザーのコンピューターでソリューションが更新された場合、エンドユーザーは更新された <xref:System.Runtime.InteropServices.COMException> ソリューションを実行すると、を受け取ります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションを .NET Framework 4 以降に移行する](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

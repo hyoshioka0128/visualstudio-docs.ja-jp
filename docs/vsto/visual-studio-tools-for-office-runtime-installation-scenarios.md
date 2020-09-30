@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Office ランタイムのインストールシナリオ
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810929"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584374"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office ランタイムのインストールシナリオ
   Visual Studio 2010 Tools for Office runtime は、次の3つの方法でインストールできます。
@@ -66,6 +67,6 @@ ms.locfileid: "90810929"
 
  ClickOnce ソリューションに必須コンポーネントを含める方法の詳細については、「 [方法: Office ソリューションを実行するためにエンドユーザーのコンピューターに必須コンポーネントをインストールする](/previous-versions/bb608608(v=vs.110))」を参照してください。 再頒布可能パッケージからランタイムを手動でインストールする方法の詳細については、「 [方法: Visual Studio Tools for Office ランタイム再頒布可能](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)パッケージをインストールする」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio Tools for Office ランタイムの概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Visual Studio Tools for Office ランタイムのアセンブリ](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

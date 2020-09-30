@@ -1,5 +1,6 @@
 ---
 title: SharePoint ソリューションをリモートで配置、パブリッシュ、& アップグレードする
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016803"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585785"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>方法: リモートサーバー上で SharePoint ソリューションを配置、発行、およびアップグレードする
   SharePoint ソリューションをローカルシステムに配置するだけでなく、リモートサイトまたはローカル SharePoint サイトに対して、サンドボックス化された SharePoint ソリューションを発行できます。 リモート発行プロセスでは、SharePoint サーバーに *.wsp* ファイルがコピーされ、ソリューションがインストールされて、ソリューションのアクティブ化が可能になります。 リモート SharePoint ソリューションを変更した後に、そのインストールをアップグレードすることもできます。

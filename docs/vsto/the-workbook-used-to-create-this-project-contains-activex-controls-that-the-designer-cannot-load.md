@@ -1,5 +1,6 @@
 ---
-title: このプロジェクトの作成に使用されるブックには、デザイナーで読み込めない ActiveX コントロールが含まれています
+title: 読み込むことができない ActiveX コントロールがブックに含まれています
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,15 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537346"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584452"
 ---
-# <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>このプロジェクトの作成に使用されるブックには、デザイナーで読み込めない ActiveX コントロールが含まれています
-  このエラーは、Word 文書または Excel ワークシートにプログラムでコントロールを追加し、その文書またはブックを保存して、保存した文書またはブックに基づいて新たなドキュメント レベルのソリューションを作成すると表示されます。
+# <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>読み込むことができない ActiveX コントロールがブックに含まれています
+
+  プログラムによって Word 文書または Excel ワークシートにコントロールを追加し、ドキュメントまたはブックを保存して、ドキュメントまたはブックに基づいて新しいドキュメントレベルのソリューションを作成すると、"このプロジェクトの作成に使用されるブックには、デザイナーで読み込めない ActiveX コントロールが含まれています" というエラーが表示されます。
 
  コントロールのマネージド型を記述した情報は、文書またはブックと共に保存されません。 このような文書またはブックに基づいて新しいソリューションを作成すると、コントロールをホスト項目デザイナーに読み込むのに必要な情報が Visual Studio に提供されません。
 

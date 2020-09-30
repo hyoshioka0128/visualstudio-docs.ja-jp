@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012153"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583685"
 ---
 # <a name="author-vsct-files"></a>作成した vsct ファイル
 このドキュメントでは、メニュー項目、ツールバー、およびその他のユーザーインターフェイス (UI) 要素を Visual Studio 統合開発環境 (IDE) に追加するために、vsct ファイルを作成する方法について説明 *します* 。 この手順は、まだ *vsct* ファイルがない Visual Studio パッケージ (VSPackage) に UI 要素を追加する場合に使用します。
@@ -108,7 +108,7 @@ ms.locfileid: "90012153"
        > [!NOTE]
        > ツールバーのボタンにはアイコンが必要です。
 
-   詳細については、「 [Menucommands と OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)」を参照してください。
+   詳細については、「 [Menucommands と OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 4. いずれかのコマンドでアイコンが必要な場合は、要素に [ビットマップ](../../extensibility/bitmaps-element.md) 要素を追加し `Commands` ます。 次に、各アイコンに対して、要素に [Bitmap](../../extensibility/bitmap-element.md) 要素を追加し `Bitmaps` ます。 ここで、ビットマップリソースの場所を指定します。 詳細については、「 [メニューコマンドにアイコンを追加する](../../extensibility/adding-icons-to-menu-commands.md)」を参照してください。
 

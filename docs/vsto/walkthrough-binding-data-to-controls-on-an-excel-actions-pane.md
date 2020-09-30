@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253881"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585055"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする
   このチュートリアルでは Microsoft Office Excel の操作ウィンドウ上のコントロールへのデータバインドについて説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -183,7 +184,7 @@ ms.locfileid: "71253881"
 
 - プロジェクトを配置しています。 詳細については、「 [ClickOnce を使用した Office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [操作ウィンドウの概要](../vsto/actions-pane-overview.md)
 - [方法: 操作ウィンドウのコントロールのレイアウトを管理する](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)

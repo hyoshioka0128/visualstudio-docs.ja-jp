@@ -1,5 +1,6 @@
 ---
 title: '方法: プログラムによってワークシートのセルに文字列を表示する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545926"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585224"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>方法: プログラムによってワークシートのセルに文字列を表示する
   この例では、テキストをプログラムによってセルに表示する方法を示します。 セルにテキストを表示するには、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールまたはネイティブの Excel 範囲オブジェクトを使用します。

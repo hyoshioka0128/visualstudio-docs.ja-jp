@@ -1,5 +1,6 @@
 ---
 title: '方法: プログラムによって Word の組み込みダイアログボックスを使用する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c3273b22d98be1c22cf0c8cea2cb57e277b9b48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6edba0b1fe9f06dbf7dba8dd1a3d01c4041ba8fe
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537619"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585655"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>方法: プログラムによって Word の組み込みダイアログボックスを使用する
   Microsoft Office Word を使用する場合、ユーザー入力のダイアログボックスを表示する必要がある場合があります。 独自のものを作成することもできますが、Word の組み込みダイアログボックスを使用する方法をお勧めします。この方法は、 <xref:Microsoft.Office.Interop.Word.Dialogs> オブジェクトのコレクションで公開され <xref:Microsoft.Office.Interop.Word.Application> ます。 これにより、列挙として表現される、200の組み込みダイアログボックスにアクセスできます。

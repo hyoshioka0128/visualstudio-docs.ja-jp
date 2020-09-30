@@ -1,5 +1,6 @@
 ---
 title: Visual Studio での SharePoint ツールの拡張機能のデバッグ |Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785339"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584634"
 ---
-# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio の SharePoint ツールの拡張機能のデバッグ
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張機能のデバッグ
   Visual Studio の実験用インスタンスまたは通常のインスタンスで、SharePoint ツールの拡張機能をデバッグできます。 拡張機能の動作をトラブルシューティングする必要がある場合は、レジストリ値を変更して、追加のエラー情報を表示し、Visual Studio での SharePoint コマンドの実行方法を構成することもできます。
 
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Visual Studio の実験用インスタンスでの拡張機能のデバッグ

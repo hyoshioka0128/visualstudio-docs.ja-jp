@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71a38d6718c22419a0a61ffbab4fe2bf6fe6c552
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43048ee57e51b80becc12b282f86c971f65bef16
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012439"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584582"
 ---
 # <a name="editor-and-language-service-extensions"></a>エディターと言語サービスの拡張機能
 Visual Studio code エディターのほとんどの機能を拡張できます。 このエディターは Windows Presentation Foundation (WPF) に基づいており、マネージコードで記述されています。 この設計は、以前のバージョンの Visual Studio の設計とは異なりますが、ほとんど同じ機能を提供します。 エディターを拡張するには、Managed Extensibility Framework (MEF) を使用します。
@@ -28,7 +28,7 @@ Visual Studio code エディターのほとんどの機能を拡張できます�
 |-----------|-----------------|
 |[エディター項目テンプレートを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)|エディター項目テンプレートの使用方法について説明します。|
 |[エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)|コアエディターのデザインと機能を紹介するドキュメントへのリンクと、それを拡張する方法を示します。|
-|[エディター内のレガシインターフェイス](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)|既存のコードからコアエディターにアクセスする方法を説明するドキュメントへのリンクです。|
+|[エディター内のレガシインターフェイス](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)|既存のコードからコアエディターにアクセスする方法を説明するドキュメントへのリンクです。|
 |[カスタムエディターとデザイナーを作成する](../extensibility/creating-custom-editors-and-designers.md)|カスタムエディターを作成する方法を説明するドキュメントへのリンク。|
 |[従来の言語サービスの機能拡張](../extensibility/internals/legacy-language-service-extensibility.md)|プログラミング言語を Visual Studio に統合する方法について説明するドキュメントへのリンクです。|
 |[MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)|Managed Extensibility Framework (MEF) について説明します。|

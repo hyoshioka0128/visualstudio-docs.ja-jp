@@ -1,5 +1,6 @@
 ---
 title: Word のドキュメントレベルのカスタマイズのプログラミングの概要
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62971798"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585668"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word のドキュメントレベルのカスタマイズのプログラミングの概要
   Visual Studio を使用して Microsoft Office Word のドキュメントレベルのカスタマイズの作成を開始するだけの場合は、次のことを理解しておく必要があります。
@@ -63,7 +64,7 @@ ms.locfileid: "62971798"
 
  Word プロジェクトの一般的なタスクについて説明するトピックの一覧については、「 [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
 - [Word ソリューション](../vsto/word-solutions.md)

@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012101"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584270"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -340,7 +340,7 @@ Windows では、テキスト、背景、およびイメージの色のコント
 
 VSPackage は、カスタムカテゴリを使用してフォントや色を制御したり、[フォントおよび色] プロパティページで項目を表示したりできます。 このメカニズムを使用する場合、Vspackage は [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) インターフェイスとそれに関連するインターフェイスを実装する必要があります。
 
-原則として、このメカニズムを使用して、既存のすべての表示項目とそれらを含むカテゴリを変更できます。 ただし、テキストエディターのカテゴリまたはその表示項目の変更には使用しないでください。 [テキストエディター] カテゴリの詳細については、「 [フォントおよび色の概要](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015)」を参照してください。
+原則として、このメカニズムを使用して、既存のすべての表示項目とそれらを含むカテゴリを変更できます。 ただし、テキストエディターのカテゴリまたはその表示項目の変更には使用しないでください。 [テキストエディター] カテゴリの詳細については、「 [フォントおよび色の概要](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true)」を参照してください。
 
 カスタムカテゴリまたは表示項目を実装するには、VSPackage が次の条件を満たす必要があります。
 
@@ -358,10 +358,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | Data | 説明 |
+| 名前 | 種類 | データ | 説明 |
 | --- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
  レジストリに指定されたサービスは、対応するカテゴリの [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) の実装を提供する必要があります。
 
@@ -371,10 +371,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | Data | 説明 |
+| 名前 | 種類 | データ | 説明 |
 |--- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
 レジストリに指定されたサービスは、対応するグループのの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> ます。
 
@@ -423,7 +423,7 @@ VSPackage によって表示されるテキストの色付けを適切にサポ�
 
   **OR**
 
-- **変更については、IDE をポーリング**します。 これは、システムによって実装された [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) インターフェイスを使用して実行できます。 主に永続化のサポートのために、 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) メソッドは表示項目のフォントと色の情報を取得できます。 フォントと色の設定の詳細については、MSDN の記事「格納されている [フォントと色の設定にアクセス](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015)する」を参照してください。
+- **変更については、IDE をポーリング**します。 これは、システムによって実装された [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) インターフェイスを使用して実行できます。 主に永続化のサポートのために、 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) メソッドは表示項目のフォントと色の情報を取得できます。 フォントと色の設定の詳細については、MSDN の記事「格納されている [フォントと色の設定にアクセス](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true)する」を参照してください。
 
 > [!NOTE]
 > ポーリング結果が正しいことを確認するには、 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) インターフェイスを使用して、 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) インターフェイスの取得メソッドを呼び出す前に、キャッシュフラッシュと更新が必要かどうかを判断します。

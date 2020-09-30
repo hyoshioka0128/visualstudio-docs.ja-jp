@@ -1,5 +1,6 @@
 ---
 title: SharePoint ソリューションパッケージの配置、パブリッシュ、& アップグレード
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8e55b01173e749395f60d189366a08907bdaccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444971"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583880"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>SharePoint ソリューションパッケージの配置、発行、およびアップグレード
   Visual Studio で SharePoint ソリューションを開発した後、パッケージ (.wsp) ファイルをローカルの SharePoint サーバーに配置するか、リモートまたはローカルの SharePoint サーバーにパブリッシュすることができます。 ファイルを展開する場合は、パッケージファイル (.wsp) の展開方法をカスタマイズできます。
@@ -49,7 +50,7 @@ ms.locfileid: "81444971"
 |Default|既定の配置構成。 次の配置手順が実行されます。<br /><br /> 1. 配置前コマンドを実行します。<br />2. IIS アプリケーションプールをリサイクルします。<br />3. ソリューションを取り消します。<br />4. ソリューションを追加します。<br />5. 機能をアクティブにします。<br />6. 配置後コマンドを実行します。<br /><br /> パッケージがアンインストールされると、次の取り消し手順が実行されます。<br /><br /> 1. IIS アプリケーションプールをリサイクルします。<br />2. ソリューションを取り消します。|
 |アクティブ化なし|この展開構成では、既定の構成と同じ手順が実行されますが、アクティブ化の手順はスキップされます。|
 
- 独自の配置構成を作成して、1つの手順を完了したり、配置プロセスのステップの順序を変更したりすることができます。 詳細については、「 [方法: SharePoint の配置構成を編集](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)する」を参照してください。
+ 独自の配置構成を作成して、1つの手順を完了したり、配置プロセスのステップの順序を変更したりすることができます。 詳細については、「[方法:SharePoint の配置構成を編集する](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)」を参照してください。
 
  配置の前後に実行するコマンドを追加することもできます。 詳細については、「 [方法: SharePoint の配置コマンドを設定する](../sharepoint/how-to-set-sharepoint-deployment-commands.md)」を参照してください。
 

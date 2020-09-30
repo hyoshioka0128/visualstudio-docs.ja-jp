@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842276"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584964"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する
   このチュートリアルでは、Microsoft Office Word 文書に操作ウィンドウを作成する方法について説明します。 操作ウィンドウには、入力を収集し、そのテキストをドキュメントに送信する2つのコントロールが含まれています。
@@ -179,7 +180,7 @@ ms.locfileid: "90842276"
 
 - 操作ウィンドウ上のコントロールにデータをバインドします。 詳細については、「 [チュートリアル: Word の操作ウィンドウでコントロールにデータをバインドする](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [操作ウィンドウの概要](../vsto/actions-pane-overview.md)
 - [方法: Word 文書または Excel ブックに操作ウィンドウを追加する](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [方法: Excel ブックに操作ウィンドウを追加する](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

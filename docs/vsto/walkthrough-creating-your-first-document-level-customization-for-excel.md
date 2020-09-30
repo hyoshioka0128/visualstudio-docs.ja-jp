@@ -1,5 +1,6 @@
 ---
 title: Excel 用のドキュメントレベルのカスタマイズを初めて作成する
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74566985"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585003"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>チュートリアル: 初めての Excel 用ドキュメントレベルのカスタマイズの作成
 
@@ -140,7 +141,7 @@ ms.locfileid: "74566985"
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
@@ -182,7 +183,7 @@ ms.locfileid: "74566985"
 
 - Excel 用のドキュメントレベルのカスタマイズの配置: [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel ソリューション](../vsto/excel-solutions.md)

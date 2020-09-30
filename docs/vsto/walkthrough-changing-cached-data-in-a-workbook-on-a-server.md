@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: サーバー上のブックでキャッシュされたデータを変更する'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985513"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584335"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックでキャッシュされたデータを変更する
   このチュートリアルでは、クラスを使用して Excel を起動せずに Microsoft Office Excel ブックにキャッシュされているデータセットを変更する方法について説明 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> します。
@@ -310,6 +311,6 @@ ms.locfileid: "72985513"
 
 4. ブックを閉じます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [チュートリアル: サーバー上のブックにデータを挿入する](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

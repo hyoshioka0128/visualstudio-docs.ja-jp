@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981063"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584925"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでのデータバインディングの基本について説明します。 SQL Server データベースの単一のデータフィールドは、Microsoft Office Excel の名前付き範囲にバインドされます。 このチュートリアルでは、テーブル内のすべてのレコードをスクロールできるようにするコントロールを追加する方法についても説明します。
@@ -191,7 +192,7 @@ ms.locfileid: "62981063"
 
 - コントロールを使用し <xref:System.Windows.Forms.BindingNavigator> てレコードをスクロールします。 詳細については、「 [方法: Windows フォーム BindingNavigator コントロールを使用してデータを移動する](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office ソリューションのデータ](../vsto/data-in-office-solutions.md)
 - [チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

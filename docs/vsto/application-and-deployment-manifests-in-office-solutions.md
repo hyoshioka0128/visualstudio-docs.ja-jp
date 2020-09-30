@@ -1,5 +1,6 @@
 ---
 title: Office ソリューションのアプリケーションマニフェストと配置マニフェスト
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62942903"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584439"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office ソリューションのアプリケーションマニフェストと配置マニフェスト
   アプリケーション マニフェストは、Office ソリューションがアセンブリを特定して更新する際に使用する情報を提供する XML ファイルです。 アプリケーション マニフェストは配置マニフェストと共に使用できます。配置マニフェストは、サーバーに保存されている XML ファイルです。最新バージョンのアプリケーション マニフェストとアセンブリを特定するために必要な情報を提供します。
@@ -39,7 +40,7 @@ ms.locfileid: "62942903"
 
  Office ソリューションでのマニフェストの動作の詳細については、「 [office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ドキュメントレベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
 - [Architecture of VSTO Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
