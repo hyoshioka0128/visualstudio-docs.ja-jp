@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091439"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604635"
 ---
 # <a name="suppress-code-analysis-violations"></a>コード分析の違反を抑制する
 
@@ -183,12 +183,7 @@ public class Animal
 
 マネージコードコンパイラと一部のサードパーティツールでは、コードの迅速な開発を容易にするコードが生成されます。 ソースファイルに表示されるコンパイラで生成されたコードは、通常、属性でマークされ `GeneratedCodeAttribute` ます。
 
-ソースコード分析では、プロジェクトまたはソリューションのルートにある [editorconfig](../code-quality/configure-fxcop-analyzers.md) ファイルを使用して、生成されたコード内のメッセージを非表示にすることができます。 生成されたコードに一致するファイルパターンを使用します。 たとえば、**. designer.cs* ファイル内の CS1591 警告を除外するには、構成ファイルでこれを使用します。
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+ソースコード分析では、生成されたコード内のメッセージをファイル内で抑制でき `.editorconfig` ます。 詳細については、「 [生成されたコードを除外](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code)する」を参照してください。
 
 レガシコード分析では、生成されたコードのコード分析の警告とエラーを非表示にするかどうかを選択できます。 このような警告やエラーを抑制する方法の詳細については、「 [方法: 生成されたコードの警告を非](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)表示にする」を参照してください。
 
