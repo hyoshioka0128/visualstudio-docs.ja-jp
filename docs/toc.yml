@@ -524,15 +524,7 @@
             - name: C++ EditorConfig の書式規則
               href: ide/cpp-editorconfig-properties.md
             - name: .NET のコーディング規則
-              items:
-                - name: 概要
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: 言語規則
-                  href: ide/editorconfig-language-conventions.md
-                - name: 書式規則
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: 名前付け規則
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: スクロール バーのカスタマイズ
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: コードへのブックマークの設定
@@ -972,7 +964,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: キーボード ショートカット
       items:
