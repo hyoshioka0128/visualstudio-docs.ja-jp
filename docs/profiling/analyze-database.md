@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037531"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352317"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>データベース ツールを使用してデータベースのパフォーマンスを分析する
 
@@ -50,7 +50,7 @@ ms.locfileid: "90037531"
 
 ![[ソース ファイルに移動] が選択されている](./media/db-gotosource.png "[ソース ファイルに移動] が選択されている")
 
-グラフで時間の範囲を選択した場合、クエリ テーブルには、その時間の範囲中に発生したクエリのみが表示されます。 この動作は、[CPU 使用率ツール](./cpu-usage.md?view=vs-2019)も実行する場合に特に便利です。
+グラフで時間の範囲を選択した場合、クエリ テーブルには、その時間の範囲中に発生したクエリのみが表示されます。 この動作は、[CPU 使用率ツール](./cpu-usage.md?view=vs-2019&preserve-view=true)も実行する場合に特に便利です。
 
 ## <a name="see-also"></a>関連項目
 
