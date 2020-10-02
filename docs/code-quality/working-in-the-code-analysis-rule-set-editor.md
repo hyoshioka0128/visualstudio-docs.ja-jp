@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893308"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659180"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>コード分析規則セットエディターの使用
 
@@ -53,7 +53,7 @@ ms.locfileid: "88893308"
 |**すべて展開**|すべてのグループの規則を表示します。|
 |**すべて折りたたむ**|すべてのグループの規則を非表示にします。|
 |**Group By**|ルールをグループ化するフィールドを指定します。 クリック **\<None>** すると、グループのない規則が表示されます。|
-|**[列] のオプション**|表示するルールフィールドを指定します。|
+|**列のオプション**|表示するルールフィールドを指定します。|
 |**現在のソリューションに適用されない規則を非表示にする**|ソリューションと同じターゲットの種類ではない規則を表示または非表示にします。|
 |**コード分析エラーを生成する可能性のある規則を表示する**|エラーアクションが割り当てられているルールを表示または非表示にします。|
 |**コード分析警告を生成する可能性のある規則を表示する**|警告アクションが割り当てられている規則の表示と非表示を切り替えます。|
@@ -70,7 +70,7 @@ ms.locfileid: "88893308"
 |フィールド|説明|
 |-----------|-----------------|
 |**ID**|規則の識別子。|
-|**カテゴリ**|ルールセットのメンバーシップに加えて、コード分析ルールもカテゴリ別にグループ化されています。 詳細については、「 [コード分析の警告](../code-quality/code-analysis-for-managed-code-warnings.md)」を参照してください。|
+|**カテゴリ**|ルールセットのメンバーシップに加えて、コード分析ルールもカテゴリ別にグループ化されています。 詳細については、「 [コード分析の警告](/dotnet/fundamentals/code-analysis/quality-rules/index)」を参照してください。|
 |**名前**|ルールのタイトル。|
 |**Namespace**|ルールの名前空間です。|
 |**ターゲットの種類**|ルールがネイティブコードとマネージコードのどちらであるかを示します。|

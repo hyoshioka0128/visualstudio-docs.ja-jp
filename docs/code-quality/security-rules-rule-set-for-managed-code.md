@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c7ce330a8a2994f827234aae8b8db416da016b29
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 5f3205bf3c81bbb9dac19c810e3a89a5fcd2227b
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509875"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658400"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>マネージド コードの "セキュリティ規則" 規則セット
 
@@ -21,7 +21,7 @@ ms.locfileid: "89509875"
 
 |ルール|説明|
 |----------|-----------------|
-|[CA2100](../code-quality/ca2100.md)|SQL クエリのセキュリティ脆弱性を確認|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|SQL クエリのセキュリティ脆弱性を確認|
 |[CA2102](../code-quality/ca2102.md)|汎用ハンドラーの CLSCompliant でない例外をキャッチします|
 |[CA2103](../code-quality/ca2103.md)|命令型のセキュリティを確認します|
 |[CA2104](../code-quality/ca2104.md)|読み取り専用の変更可能な参照型を宣言しません|
@@ -29,7 +29,7 @@ ms.locfileid: "89509875"
 |[CA2106](../code-quality/ca2106.md)|アサートをセキュリティで保護します|
 |[CA2107](../code-quality/ca2107.md)|拒否および許可のみの使用を確認します|
 |[CA2108](../code-quality/ca2108.md)|値型での宣言セキュリティを確認します|
-|[CA2109](../code-quality/ca2109.md)|表示するイベント ハンドラーを確認します|
+|[CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109)|表示するイベント ハンドラーを確認します|
 |[CA2111](../code-quality/ca2111.md)|ポインターは参照可能にすることはできません|
 |[CA2112](../code-quality/ca2112.md)|セキュリティで保護された型はフィールドを公開してはなりません|
 |[CA2114](../code-quality/ca2114.md)|メソッド セキュリティは型のスーパーセットでなければなりません|
@@ -37,7 +37,7 @@ ms.locfileid: "89509875"
 |[CA2116](../code-quality/ca2116.md)|APTCA メソッドは APTCA メソッドのみを呼び出すことができます|
 |[CA2117](../code-quality/ca2117.md)|APTCA 型は APTCA 基本型のみを拡張することができます|
 |[CA2118](../code-quality/ca2118.md)|SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください|
-|[CA2119](../code-quality/ca2119.md)|プライベート インターフェイスを満たすメソッドをシールします|
+|[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119)|プライベート インターフェイスを満たすメソッドをシールします|
 |[CA2120](../code-quality/ca2120.md)|シリアル化コンストラクターをセキュリティで保護します|
 |[CA2121](../code-quality/ca2121.md)|静的コンストラクターはプライベートでなければなりません|
 |[CA2122](../code-quality/ca2122.md)|リンク要求を含むメソッドを間接的に公開しません|
@@ -64,27 +64,27 @@ ms.locfileid: "89509875"
 |[CA2147](../code-quality/ca2147.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
 |[CA2210](../code-quality/ca2210.md)|アセンブリには有効な厳密な名前が必要です|
-|[CA2300](ca2300.md)|安全ではないデシリアライザー BinaryFormatter を使用しないでください|
-|[CA2301](ca2301.md)|最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください|
-|[CA2302](ca2302.md)|BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します|
-|[CA2305](ca2305.md)|安全ではないデシリアライザー LosFormatter を使用しないでください|
-|[CA2310](ca2310.md)|安全ではないデシリアライザー NetDataContractSerializer を使用しないでください|
-|[CA2311](ca2311.md)|最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください|
-|[CA2312](ca2312.md)|NetDataContractSerializer.Binder を設定してから逆シリアル化してください|
-|[CA2315](ca2315.md)|安全ではないデシリアライザー ObjectStateFormatter を使用しないでください|
-|[CA2321](ca2321.md)|SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください|
-|[CA2322](ca2322.md)|逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください|
-|[CA3001](../code-quality/ca3001.md)|SQL インジェクションの脆弱性のコード レビュー|
-|[CA3002](../code-quality/ca3002.md)|XSS の脆弱性のコード レビュー|
-|[CA3003](../code-quality/ca3003.md)|ファイル パス インジェクションの脆弱性のコード レビュー|
-|[CA3004](../code-quality/ca3004.md)|情報漏えいの脆弱性のコード レビュー|
-|[CA3005](../code-quality/ca3005.md)|LDAP インジェクションの脆弱性のコード レビュー|
-|[CA3006](../code-quality/ca3006.md)|プロセス コマンド インジェクションの脆弱性のコード レビュー|
-|[CA3007](../code-quality/ca3007.md)|オープン リダイレクトの脆弱性のコード レビュー|
-|[CA3008](../code-quality/ca3008.md)|XPath インジェクションの脆弱性のコード レビュー|
-|[CA3009](../code-quality/ca3009.md)|XML インジェクションの脆弱性のコード レビュー|
-|[CA3010](../code-quality/ca3010.md)|XAML インジェクションの脆弱性のコード レビュー|
-|[CA3011](../code-quality/ca3011.md)|DLL インジェクションの脆弱性のコード レビュー|
-|[CA3012](../code-quality/ca3012.md)|RegEx インジェクションの脆弱性のコード レビュー|
-|[CA5358](../code-quality/ca5358.md)|安全ではない暗号モードを使用しないでください|
-|[CA5403](../code-quality/ca5403.md)|証明書をハードコーディングしない|
+|[CA2300](/dotnet/fundamentals/code-analysis/quality-rules/ca2300)|安全ではないデシリアライザー BinaryFormatter を使用しないでください|
+|[CA2301](/dotnet/fundamentals/code-analysis/quality-rules/ca2301)|最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください|
+|[CA2302](/dotnet/fundamentals/code-analysis/quality-rules/ca2302)|BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します|
+|[CA2305](/dotnet/fundamentals/code-analysis/quality-rules/ca2305)|安全ではないデシリアライザー LosFormatter を使用しないでください|
+|[CA2310](/dotnet/fundamentals/code-analysis/quality-rules/ca2310)|安全ではないデシリアライザー NetDataContractSerializer を使用しないでください|
+|[CA2311](/dotnet/fundamentals/code-analysis/quality-rules/ca2311)|最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください|
+|[CA2312](/dotnet/fundamentals/code-analysis/quality-rules/ca2312)|NetDataContractSerializer.Binder を設定してから逆シリアル化してください|
+|[CA2315](/dotnet/fundamentals/code-analysis/quality-rules/ca2315)|安全ではないデシリアライザー ObjectStateFormatter を使用しないでください|
+|[CA2321](/dotnet/fundamentals/code-analysis/quality-rules/ca2321)|SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください|
+|[CA2322](/dotnet/fundamentals/code-analysis/quality-rules/ca2322)|逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください|
+|[CA3001](/dotnet/fundamentals/code-analysis/quality-rules/ca3001)|SQL インジェクションの脆弱性のコード レビュー|
+|[CA3002](/dotnet/fundamentals/code-analysis/quality-rules/ca3002)|XSS の脆弱性のコード レビュー|
+|[CA3003](/dotnet/fundamentals/code-analysis/quality-rules/ca3003)|ファイル パス インジェクションの脆弱性のコード レビュー|
+|[CA3004](/dotnet/fundamentals/code-analysis/quality-rules/ca3004)|情報漏えいの脆弱性のコード レビュー|
+|[CA3005](/dotnet/fundamentals/code-analysis/quality-rules/ca3005)|LDAP インジェクションの脆弱性のコード レビュー|
+|[CA3006](/dotnet/fundamentals/code-analysis/quality-rules/ca3006)|プロセス コマンド インジェクションの脆弱性のコード レビュー|
+|[CA3007](/dotnet/fundamentals/code-analysis/quality-rules/ca3007)|オープン リダイレクトの脆弱性のコード レビュー|
+|[CA3008](/dotnet/fundamentals/code-analysis/quality-rules/ca3008)|XPath インジェクションの脆弱性のコード レビュー|
+|[CA3009](/dotnet/fundamentals/code-analysis/quality-rules/ca3009)|XML インジェクションの脆弱性のコード レビュー|
+|[CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010)|XAML インジェクションの脆弱性のコード レビュー|
+|[CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011)|DLL インジェクションの脆弱性のコード レビュー|
+|[CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012)|RegEx インジェクションの脆弱性のコード レビュー|
+|[CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358)|安全ではない暗号モードを使用しないでください|
+|[CA5403](/dotnet/fundamentals/code-analysis/quality-rules/ca5403)|証明書をハードコーディングしない|

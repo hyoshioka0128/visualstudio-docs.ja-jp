@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506467"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659206"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>規則セットを使用したコード分析規則のグループ化
 
@@ -24,7 +24,7 @@ Visual Studio でコード分析を構成するときに、組み込みの *規�
 
 ルールセットをカスタマイズするには、ルールを追加または削除するか、ルールの重大度を変更して **エラー一覧**で警告またはエラーとして表示されるようにします。 カスタマイズした規則セットで、特定の開発環境の要件を満たすことができます。 規則セットをカスタマイズすると、そのプロセスに役立つ検索とフィルター処理のツールがルールセットエディターに表示されます。
 
-規則セットは、 [マネージコード分析](analyzer-rule-sets.md)、 [マネージコードのレガシ分析](how-to-configure-code-analysis-for-a-managed-code-project.md)、および [C++ コード分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)に使用できます。
+規則セットは、 [マネージコード分析](/dotnet/fundamentals/code-analysis/code-quality-rule-options)、 [マネージコードのレガシ分析](how-to-configure-code-analysis-for-a-managed-code-project.md)、および [C++ コード分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)に使用できます。
 
 ## <a name="rule-set-format"></a>規則セットの形式
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604592"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659167"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "91604592"
 
 **Q**: コードのスタイルを確認するためにコード分析または editorconfig を使用する必要がありますか。
 
-**A**: コード分析と editorconfig ファイルは手動で機能します。 [EditorConfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用すると、アナライザーの規則を有効または無効にすることができます。また、NuGet アナライザーパッケージを構成することもできます。
+**A**: コード分析と editorconfig ファイルは手動で機能します。 [EditorConfig ファイル](/dotnet/fundamentals/code-analysis/code-style-rule-options)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用すると、アナライザーの規則を有効または無効にすることができます。また、NuGet アナライザーパッケージを構成することもできます。
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig とルールセット
 
@@ -35,7 +35,7 @@ ms.locfileid: "91604592"
 ただし、EditorConfig ファイルでは、ルールを構成するための追加の方法が提供されるようになります。
 
 - .NET コード品質アナライザーでは、EditorConfig ファイルを使用して、 [分析するコードの種類を定義](/dotnet/fundamentals/code-analysis/code-quality-rule-options)できます。
-- Visual Studio に組み込まれている .NET コードスタイルアナライザーの場合、EditorConfig ファイルを使用すると、コードベースに [適したコードスタイルを定義](../ide/editorconfig-code-style-settings-reference.md) できます。
+- Visual Studio に組み込まれている .NET コードスタイルアナライザーの場合、EditorConfig ファイルを使用すると、コードベースに [適したコードスタイルを定義](/dotnet/fundamentals/code-analysis/code-style-rule-options) できます。
 
 規則セットと EditorConfig ファイルに加えて、一部のアナライザーは、C# および VB コンパイラの [追加ファイル](../ide/build-actions.md#build-action-values) としてマークされたテキストファイルを使用して構成されます。
 
@@ -97,4 +97,4 @@ ms.locfileid: "91604592"
 ## <a name="see-also"></a>関連項目
 
 - [アナライザーの概要](roslyn-analyzers-overview.md)
-- [EditorConfig の .NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig の .NET コーディング規則の設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)

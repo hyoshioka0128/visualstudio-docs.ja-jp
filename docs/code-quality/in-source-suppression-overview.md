@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604635"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658517"
 ---
 # <a name="suppress-code-analysis-violations"></a>コード分析の違反を抑制する
 
@@ -68,7 +68,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 属性のプロパティは次のとおりです。
 
-- [**カテゴリ]** -ルールが定義されているカテゴリ。 コード分析規則のカテゴリの詳細については、「 [マネージコードの警告](../code-quality/code-analysis-for-managed-code-warnings.md)」を参照してください。
+- [**カテゴリ]** -ルールが定義されているカテゴリ。 コード分析規則のカテゴリの詳細については、「 [マネージコードの警告](/dotnet/fundamentals/code-analysis/quality-rules/index)」を参照してください。
 
 - **Checkid** -ルールの識別子。 サポートには、規則識別子の短い名前と長い名前の両方が含まれます。 短い名前は CAXXXX です。長い名前は CAXXXX: FriendlyTypeName です。
 

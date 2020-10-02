@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893269"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658556"
 ---
 # <a name="customize-a-rule-set"></a>規則セットをカスタマイズする
 
@@ -51,7 +51,7 @@ ms.locfileid: "88893269"
 4. [ **開く** ] を選択すると、ルールセットエディターにルールが表示されます。
 
 > [!NOTE]
-> .NET Core または .NET Standard プロジェクトがある場合、そのプロセスは少し異なります。これは、[ **コード分析** ] プロパティタブがないためです。手順に従って、 [定義済みの規則セットをプロジェクトにコピーし、アクティブな規則セットとして設定](analyzer-rule-sets.md)します。 規則セットをコピーした後は、 [Visual Studio の規則セットエディターで](working-in-the-code-analysis-rule-set-editor.md)**ソリューションエクスプローラー**から開くことで編集できます。
+> .NET Core または .NET Standard プロジェクトがある場合、そのプロセスは少し異なります。これは、[ **コード分析** ] プロパティタブがないためです。手順に従って、 [定義済みの規則セットをプロジェクトにコピーし、アクティブな規則セットとして設定](/dotnet/fundamentals/code-analysis/code-quality-rule-options)します。 規則セットをコピーした後は、 [Visual Studio の規則セットエディターで](working-in-the-code-analysis-rule-set-editor.md)**ソリューションエクスプローラー**から開くことで編集できます。
 
 ## <a name="create-a-new-rule-set"></a>新しい規則セットを作成する
 
@@ -61,7 +61,7 @@ ms.locfileid: "88893269"
 
 2. [ **新しいファイル** ] ダイアログボックスで、左側の [ **全般** ] カテゴリを選択し、[ **コード分析ルールセット**] を選択します。
 
-3. **[開く]** を選択します。
+3. **[Open (開く)]** を選択します。
 
    ルールセットエディターに新しい *ルール* セットファイルが開きます。
 
@@ -138,7 +138,7 @@ ms.locfileid: "88893269"
 
 エディターで開いている規則セットの表示名を変更するには、メニューバー **Properties**の**View**  >  [**プロパティウィンドウ**の表示] をクリックして、[プロパティ] ウィンドウを開きます。 [ **名前** ] ボックスに表示名を入力します。 また、規則セットの説明を入力することもできます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ルールセットが完成したので、次の手順では、ルールを追加または削除したり、ルール違反の重大度を変更したりして、ルールをカスタマイズします。
 

@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810208"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658478"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>レガシ分析 (FxCop) からソース分析への移行 (FxCop アナライザー)
 
@@ -36,6 +36,6 @@ ms.locfileid: "90810208"
 
 FxCop アナライザーの構成方法の詳細については、次を参照してください。
 
-- FxCop アナライザーを構成するには、「 [fxcop アナライザーの構成](../code-quality/configure-fxcop-analyzers.md)」を参照してください。
+- FxCop アナライザーを構成するには、「 [fxcop アナライザーの構成](/dotnet/fundamentals/code-analysis/code-quality-rule-options)」を参照してください。
 
-- EditorConfig またはルールセットファイルで定義済みのルールを使用してアナライザーを構成する方法については、「 [ルールのカテゴリを有効に](../code-quality/analyzer-rule-sets.md)する」を参照してください。
+- EditorConfig またはルールセットファイルで定義済みのルールを使用してアナライザーを構成する方法については、「 [ルールのカテゴリを有効に](/dotnet/fundamentals/code-analysis/code-quality-rule-options)する」を参照してください。

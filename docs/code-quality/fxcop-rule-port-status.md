@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28429b43295956d29bb9fc04f80ccf7ba1b1e720
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508367"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658582"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -29,174 +29,174 @@ Roslyn-アナライザーリポジトリの自動生成された [ドキュメ�
 
 ルールの ID | タイトル
 --------|---------
-[CA1000](ca1000.md) | ジェネリック型の静的メンバーを宣言しません
-[CA1001](ca1001.md) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
-[CA1002](ca1002.md) | ジェネリック リストを公開しません
-[CA1003](ca1003.md) | 汎用イベント ハンドラーのインスタンスを使用します
-[CA1005](ca1005.md) | ジェネリック型でパラメーターを使用しすぎないでください
-[CA1008](ca1008.md) | Enums は 0 値を含んでいなければなりません
-[CA1010](ca1010.md) | コレクションは、ジェネリック インターフェイスを実装しなければなりません
-[CA1012](ca1012.md) | 抽象型にはコンストラクターを含めません
-[CA1014](ca1014.md) | アセンブリを CLSCompliant にマークします
-[CA1016](ca1016.md) | アセンブリのバージョンをアセンブリにマークする
-[CA1017](ca1017.md) | アセンブリに ComVisible を設定します
-[CA1018](ca1018.md) | 属性を AttributeUsageAttribute に設定します
-[CA1019](ca1019.md) | 属性引数にアクセサーを定義します
-[CA1021](ca1021.md) | out パラメーターを使用しません
-[CA1024](ca1024.md) | 適切な場所にプロパティを使用します
-[CA1027](ca1027.md) | 列挙型を FlagsAttribute に設定します
-[CA1028](ca1028.md) | 列挙ストレージは Int32 でなければなりません
-[CA1030](ca1030.md) | 適切な場所にイベントを使用します
-[CA1031](ca1031.md) | 一般的な例外の種類はキャッチしません
-[CA1032](ca1032.md) | 標準例外コンストラクターを実装します
-[CA1033](ca1033.md) | インターフェイス メソッドは、子型によって呼び出し可能でなければなりません
-[CA1034](ca1034.md) | 入れ子にされた型を参照可能にすることはできません
-[CA1036](ca1036.md) | 比較可能な型でメソッドをオーバーライドします
-[CA1040](ca1040.md) | 空のインターフェイスは使用しません
-[CA1041](ca1041.md) | ObsoleteAttribute メッセージを指定します
-[CA1043](ca1043.md) | インデクサーに整数または文字列引数を使用する
-[CA1044](ca1044.md) | プロパティを書き込み専用にすることはできません
-[CA1045](ca1045.md) | 型を参照によって渡しません
-[CA1046](ca1046.md) | 参照型で、演算子 equals をオーバーロードしないでください
-[CA1047: SEALED](ca1047.md) | シールド型の保護されたメンバーを宣言しません
-[CA1050](ca1050.md) | 名前空間で型を宣言します
-[CA1051](ca1051.md) | 参照可能なインスタンス フィールドを宣言しません
-[CA1052](ca1052.md) | 静的ホルダー型は static または NotInheritable である必要があります
-[CA1053](ca1053.md) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの [CA1052](ca1052.md) に含まれています)
-[CA1054](ca1054.md) | Uri パラメーターを文字列にすることはできません
-[CA1055](ca1055.md) | Uri 戻り値を文字列にすることはできません
-[CA1056](ca1056.md) | Uri プロパティを文字列にすることはできません
-[CA1058](ca1058.md) | 型は、一定の基本型を拡張することはできません
-[CA1060](ca1060.md) | Pinvokes をネイティブメソッドクラスに移動する
-[CA1061](ca1061.md) | 基底クラス メソッドを非表示にしません
-[CA1062](ca1062.md) | パブリック メソッドの引数の検証
-[CA1063](ca1063.md) | IDisposable を正しく実装する
-[CA1064](ca1064.md) | 例外は public として設定する必要があります
-[CA1065](ca1065.md) | 予期しない場所に例外を発生させません
-[CA1066](ca1066.md) | Type {0} は Equals をオーバーライドするため、IEquatable を実装しなければなりませ \<T> ん
-[CA1067](ca1067.md) | IEquatable を実装するときに、Object.equals (object) をオーバーライドします。\<T>
-[CA1303](ca1303.md) | ローカライズされるパラメーターとしてリテラルを渡さない
-[CA1304](ca1304.md) | CultureInfo を指定します
-[CA1305](ca1305.md) | IFormatProvider を指定します
-[CA1307](ca1307.md) | 意味を明確にするための StringComparison の指定
-[CA1308](ca1308.md) | 文字列を大文字に標準化します
-[CA1309](ca1309.md) | 序数の文字列比較を使用する
-[CA1401](ca1401.md) | P/Invoke は参照可能であることはできません
-[CA1501](ca1501.md) | 継承を使用しすぎないでください
-[CA1502](ca1502.md) | メソッドの実装を複雑にしすぎないでください
-[CA1505](ca1505.md) | メンテナンスできないコードを使用しないでください
-[CA1506](ca1506.md) | クラス結合度を大きくしすぎないでください
-[CA1700](ca1700.md) | 列挙型値に 'Reserved' という名前を指定しません
-[CA1707](ca1707.md) | 識別子はアンダースコアを含むことはできません
-[CA1708](ca1708.md) | 識別子は、大文字と小文字の区別以外にも相違していなければなりません
-[CA1710](ca1710.md) | 識別子は、正しいサフィックスを含んでいなければなりません
-[CA1711](ca1711.md) | 識別子は、不適切なサフィックスを含むことはできません
-[CA1712](ca1712.md) | 列挙型値を型名のプレフィックスにしません
-[CA1713](ca1713.md) | イベントは、before または after プレフィックスを含むことはできません
-[CA1714](ca1714.md) | フラグ列挙型は、複数形の名前を含んでいなければなりません
-[CA1715](ca1715.md) | 識別子は正しいプレフィックスを含んでいなければなりません
-[CA1716](ca1716.md) | 識別子はキーワードと同一にすることはできません
-[CA1717](ca1717.md) | FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません
-[CA1720](ca1720.md) | 識別子に型名が含まれています
-[CA1721](ca1721.md) | プロパティ名は get メソッドと同一にすることはできません
-[CA1724](ca1724.md) | 型名を名前空間と一致させることはできません
-[CA1725](ca1725.md) | パラメーター名は基本宣言と同一でなければなりません
-[CA1801](ca1801.md) | 使用されていないパラメーターの確認
-[CA1802](ca1802.md) | 適切な場所にリテラルを使用する
-[CA1805](ca1805.md) | 不必要に初期化しない
-[CA1806](ca1806.md) | メソッドの結果を無視しない
-[CA1810](ca1810.md) | 参照型の静的フィールドをインラインで初期化します
-[CA1812](ca1812.md) | インスタンス化されていない内部クラスを使用しません
-[CA1813](ca1813.md) | アンシールド属性を使用しません
-[CA1814](ca1814.md) | 複数次元の配列ではなくジャグ配列を使用します
-[CA1815](ca1815.md) | equals および operator equals を値型でオーバーライドします
-[CA1816](ca1816.md) | Dispose メソッドは Gc.suppressfinalize を呼び出す必要があります
-[CA1819](ca1819.md) | プロパティは、配列を返すことはできません
-[CA1820](ca1820.md) | 文字列の長さを使用して空の文字列をテストします
-[CA1821](ca1821.md) | 空のファイナライザーの削除
-[CA1822](ca1822.md) | メンバーを static に設定します
-[CA1823](ca1823.md) | 使用されていないプライベート フィールドを使用しません
-[CA1824](ca1824.md) | アセンブリを NeutralResourcesLanguageAttribute に設定します
-[CA1825](ca1825.md) | 長さ0の配列を割り当てないようにします。
-[CA2000](ca2000.md) | スコープを失う前にオブジェクトを破棄
-[CA2002](ca2002.md) | 弱い ID を伴うオブジェクト上でロックしません
-[CA2100](ca2100.md) | SQL クエリのセキュリティ脆弱性を確認
-[CA2101](ca2101.md) | P/Invoke 文字列引数に対してマーシャリングを指定します
-[CA2109](ca2109.md) | 表示するイベント ハンドラーを確認します
-[CA2119](ca2119.md) | プライベート インターフェイスを満たすメソッドをシールします
-[CA2153](ca2153.md) | 破損状態の例外をキャッチしない
-[CA2200](ca2200.md) | スタックの詳細を保持するために再スローします。
-[CA2201](ca2201.md) | 予約された例外の種類を発生させません
-[CA2207](ca2207.md) | 値型のスタティック フィールドのインラインを初期化します
-[CA2208](ca2208.md) | 引数の例外を正しくインスタンス化します
-[CA2211](ca2211.md) | 非定数フィールドは表示されません
-[CA2213](ca2213.md) | 破棄可能なフィールドは破棄されなければなりません
-[CA2214](ca2214.md) | コンストラクターのオーバーライド可能なメソッドを呼び出しません
-[CA2215](ca2215.md) | Dispose メソッドが基底クラスの Dispose を呼び出す必要があります
-[CA2216](ca2216.md) | 破棄可能な型はファイナライザーを宣言しなければなりません
-[CA2217](ca2217.md) | 列挙型を FlagsAttribute に設定しません
-[CA2219](ca2219.md) | Finally 句で例外を発生させない
-[CA2225](ca2225.md) | 演算子オーバーロードには名前付けされた代替が存在します
-[CA2226](ca2226.md) | 演算子は対称型オーバーロードを含まなければなりません
-[CA2227](ca2227.md) | Collection プロパティは読み取り専用でなければなりません
-[CA2229](ca2229.md) | シリアル化コンストラクターを実装します
-[CA2231](ca2231.md) | 値型 Equals のオーバーライドで、演算子 equals をオーバーロードします
-[CA2234](ca2234.md) | 文字列ではなくシステム uri オブジェクトを渡す
-[CA2235](ca2235.md) | すべてのシリアル化不可能なフィールドを設定します
-[CA2237](ca2237.md) | ISerializable 型を Serializable に設定します
-[CA2241](ca2241.md) | 書式設定メソッドに正しい引数を提供
-[CA2242](ca2242.md) | NaN に対して正しくテストします
-[CA2243](ca2243.md) | 属性文字列リテラルは、正しく解析する必要があります
-[CA2300](ca2300.md) | 安全ではないデシリアライザー BinaryFormatter を使用しないでください
-[CA2301](ca2301.md) | 最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください
-[CA2302](ca2302.md) | BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します
-[CA2305](ca2305.md) | 安全ではないデシリアライザー LosFormatter を使用しないでください
-[CA2310](ca2310.md) | 安全ではないデシリアライザー NetDataContractSerializer を使用しないでください
-[CA2311](ca2311.md) | 最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください
-[CA2312](ca2312.md) | NetDataContractSerializer.Binder を設定してから逆シリアル化してください
-[CA2315](ca2315.md) | 安全ではないデシリアライザー ObjectStateFormatter を使用しないでください
-[CA2321](ca2321.md) | SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください
-[CA2322](ca2322.md) | 逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください
-[CA3001](ca3001.md) | SQL インジェクションの脆弱性のコード レビュー
-[CA3002](ca3002.md) | XSS の脆弱性のコード レビュー
-[CA3003](ca3003.md) | ファイル パス インジェクションの脆弱性のコード レビュー
-[CA3004](ca3004.md) | 情報漏えいの脆弱性のコード レビュー
-[CA3005](ca3005.md) | LDAP インジェクションの脆弱性のコード レビュー
-[CA3006](ca3006.md) | プロセス コマンド インジェクションの脆弱性のコード レビュー
-[CA3007](ca3007.md) | オープン リダイレクトの脆弱性のコード レビュー
-[CA3008](ca3008.md) | XPath インジェクションの脆弱性のコード レビュー
-[CA3009](ca3009.md) | XML インジェクションの脆弱性のコード レビュー
-[CA3010](ca3010.md) | XAML インジェクションの脆弱性のコード レビュー
-[CA3011](ca3011.md) | DLL インジェクションの脆弱性のコード レビュー
-[CA3012](ca3012.md) | RegEx インジェクションの脆弱性のコード レビュー
-[CA3061](ca3061.md) | URL でスキーマを追加しない
-[CA3075](ca3075.md) | XML での DTD 処理が安全ではありません
-[CA3076](ca3076.md) | 安全ではない XSLT スクリプトの処理。
-[CA3077](ca3077.md) | API 設計、XmlDocument、XmlTextReader で安全ではない処理
-[CA3147](ca3147.md) | アンチ偽造トークンを検証する動詞ハンドラーをマークします
-[CA5350](ca5350.md) | 脆弱な暗号アルゴリズムを使用しないでください
-[CA5351](ca5351.md) | 破損した暗号アルゴリズムを使用しない
-[CA5358](ca5358.md) | 安全ではない暗号モードを使用しないでください
+[CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | ジェネリック型の静的メンバーを宣言しません
+[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません
+[CA1002](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) | ジェネリック リストを公開しません
+[CA1003](/dotnet/fundamentals/code-analysis/quality-rules/ca1003) | 汎用イベント ハンドラーのインスタンスを使用します
+[CA1005](/dotnet/fundamentals/code-analysis/quality-rules/ca1005) | ジェネリック型でパラメーターを使用しすぎないでください
+[CA1008](/dotnet/fundamentals/code-analysis/quality-rules/ca1008) | Enums は 0 値を含んでいなければなりません
+[CA1010](/dotnet/fundamentals/code-analysis/quality-rules/ca1010) | コレクションは、ジェネリック インターフェイスを実装しなければなりません
+[CA1012](/dotnet/fundamentals/code-analysis/quality-rules/ca1012) | 抽象型にはコンストラクターを含めません
+[CA1014](/dotnet/fundamentals/code-analysis/quality-rules/ca1014) | アセンブリを CLSCompliant にマークします
+[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016) | アセンブリのバージョンをアセンブリにマークする
+[CA1017](/dotnet/fundamentals/code-analysis/quality-rules/ca1017) | アセンブリに ComVisible を設定します
+[CA1018](/dotnet/fundamentals/code-analysis/quality-rules/ca1018) | 属性を AttributeUsageAttribute に設定します
+[CA1019](/dotnet/fundamentals/code-analysis/quality-rules/ca1019) | 属性引数にアクセサーを定義します
+[CA1021](/dotnet/fundamentals/code-analysis/quality-rules/ca1021) | out パラメーターを使用しません
+[CA1024](/dotnet/fundamentals/code-analysis/quality-rules/ca1024) | 適切な場所にプロパティを使用します
+[CA1027](/dotnet/fundamentals/code-analysis/quality-rules/ca1027) | 列挙型を FlagsAttribute に設定します
+[CA1028](/dotnet/fundamentals/code-analysis/quality-rules/ca1028) | 列挙ストレージは Int32 でなければなりません
+[CA1030](/dotnet/fundamentals/code-analysis/quality-rules/ca1030) | 適切な場所にイベントを使用します
+[CA1031](/dotnet/fundamentals/code-analysis/quality-rules/ca1031) | 一般的な例外の種類はキャッチしません
+[CA1032](/dotnet/fundamentals/code-analysis/quality-rules/ca1032) | 標準例外コンストラクターを実装します
+[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033) | インターフェイス メソッドは、子型によって呼び出し可能でなければなりません
+[CA1034](/dotnet/fundamentals/code-analysis/quality-rules/ca1034) | 入れ子にされた型を参照可能にすることはできません
+[CA1036](/dotnet/fundamentals/code-analysis/quality-rules/ca1036) | 比較可能な型でメソッドをオーバーライドします
+[CA1040](/dotnet/fundamentals/code-analysis/quality-rules/ca1040) | 空のインターフェイスは使用しません
+[CA1041](/dotnet/fundamentals/code-analysis/quality-rules/ca1041) | ObsoleteAttribute メッセージを指定します
+[CA1043](/dotnet/fundamentals/code-analysis/quality-rules/ca1043) | インデクサーに整数または文字列引数を使用する
+[CA1044](/dotnet/fundamentals/code-analysis/quality-rules/ca1044) | プロパティを書き込み専用にすることはできません
+[CA1045](/dotnet/fundamentals/code-analysis/quality-rules/ca1045) | 型を参照によって渡しません
+[CA1046](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) | 参照型で、演算子 equals をオーバーロードしないでください
+[CA1047](/dotnet/fundamentals/code-analysis/quality-rules/ca1047) | シールド型の保護されたメンバーを宣言しません
+[CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | 名前空間で型を宣言します
+[CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | 参照可能なインスタンス フィールドを宣言しません
+[CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | 静的ホルダー型は static または NotInheritable である必要があります
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) に含まれています)
+[CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Uri パラメーターを文字列にすることはできません
+[CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Uri 戻り値を文字列にすることはできません
+[CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Uri プロパティを文字列にすることはできません
+[CA1058](/dotnet/fundamentals/code-analysis/quality-rules/ca1058) | 型は、一定の基本型を拡張することはできません
+[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060) | Pinvokes をネイティブメソッドクラスに移動する
+[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061) | 基底クラス メソッドを非表示にしません
+[CA1062](/dotnet/fundamentals/code-analysis/quality-rules/ca1062) | パブリック メソッドの引数の検証
+[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063) | IDisposable を正しく実装する
+[CA1064](/dotnet/fundamentals/code-analysis/quality-rules/ca1064) | 例外は public として設定する必要があります
+[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065) | 予期しない場所に例外を発生させません
+[CA1066](/dotnet/fundamentals/code-analysis/quality-rules/ca1066) | Type {0} は Equals をオーバーライドするため、IEquatable を実装しなければなりませ \<T> ん
+[CA1067](/dotnet/fundamentals/code-analysis/quality-rules/ca1067) | IEquatable を実装するときに、Object.equals (object) をオーバーライドします。\<T>
+[CA1303](/dotnet/fundamentals/code-analysis/quality-rules/ca1303) | ローカライズされるパラメーターとしてリテラルを渡さない
+[CA1304](/dotnet/fundamentals/code-analysis/quality-rules/ca1304) | CultureInfo を指定します
+[CA1305](/dotnet/fundamentals/code-analysis/quality-rules/ca1305) | IFormatProvider を指定します
+[CA1307](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) | 意味を明確にするための StringComparison の指定
+[CA1308](/dotnet/fundamentals/code-analysis/quality-rules/ca1308) | 文字列を大文字に標準化します
+[CA1309](/dotnet/fundamentals/code-analysis/quality-rules/ca1309) | 序数の文字列比較を使用する
+[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401) | P/Invoke は参照可能であることはできません
+[CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501) | 継承を使用しすぎないでください
+[CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) | メソッドの実装を複雑にしすぎないでください
+[CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505) | メンテナンスできないコードを使用しないでください
+[CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506) | クラス結合度を大きくしすぎないでください
+[CA1700](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) | 列挙型値に 'Reserved' という名前を指定しません
+[CA1707](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) | 識別子はアンダースコアを含むことはできません
+[CA1708](/dotnet/fundamentals/code-analysis/quality-rules/ca1708) | 識別子は、大文字と小文字の区別以外にも相違していなければなりません
+[CA1710](/dotnet/fundamentals/code-analysis/quality-rules/ca1710) | 識別子は、正しいサフィックスを含んでいなければなりません
+[CA1711](/dotnet/fundamentals/code-analysis/quality-rules/ca1711) | 識別子は、不適切なサフィックスを含むことはできません
+[CA1712](/dotnet/fundamentals/code-analysis/quality-rules/ca1712) | 列挙型値を型名のプレフィックスにしません
+[CA1713](/dotnet/fundamentals/code-analysis/quality-rules/ca1713) | イベントは、before または after プレフィックスを含むことはできません
+[CA1714](/dotnet/fundamentals/code-analysis/quality-rules/ca1714) | フラグ列挙型は、複数形の名前を含んでいなければなりません
+[CA1715](/dotnet/fundamentals/code-analysis/quality-rules/ca1715) | 識別子は正しいプレフィックスを含んでいなければなりません
+[CA1716](/dotnet/fundamentals/code-analysis/quality-rules/ca1716) | 識別子はキーワードと同一にすることはできません
+[CA1717](/dotnet/fundamentals/code-analysis/quality-rules/ca1717) | FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません
+[CA1720](/dotnet/fundamentals/code-analysis/quality-rules/ca1720) | 識別子に型名が含まれています
+[CA1721](/dotnet/fundamentals/code-analysis/quality-rules/ca1721) | プロパティ名は get メソッドと同一にすることはできません
+[CA1724](/dotnet/fundamentals/code-analysis/quality-rules/ca1724) | 型名を名前空間と一致させることはできません
+[CA1725](/dotnet/fundamentals/code-analysis/quality-rules/ca1725) | パラメーター名は基本宣言と同一でなければなりません
+[CA1801](/dotnet/fundamentals/code-analysis/quality-rules/ca1801) | 使用されていないパラメーターの確認
+[CA1802](/dotnet/fundamentals/code-analysis/quality-rules/ca1802) | 適切な場所にリテラルを使用する
+[CA1805](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) | 不必要に初期化しない
+[CA1806](/dotnet/fundamentals/code-analysis/quality-rules/ca1806) | メソッドの結果を無視しない
+[CA1810](/dotnet/fundamentals/code-analysis/quality-rules/ca1810) | 参照型の静的フィールドをインラインで初期化します
+[CA1812](/dotnet/fundamentals/code-analysis/quality-rules/ca1812) | インスタンス化されていない内部クラスを使用しません
+[CA1813](/dotnet/fundamentals/code-analysis/quality-rules/ca1813) | アンシールド属性を使用しません
+[CA1814](/dotnet/fundamentals/code-analysis/quality-rules/ca1814) | 複数次元の配列ではなくジャグ配列を使用します
+[CA1815](/dotnet/fundamentals/code-analysis/quality-rules/ca1815) | equals および operator equals を値型でオーバーライドします
+[CA1816](/dotnet/fundamentals/code-analysis/quality-rules/ca1816) | Dispose メソッドは Gc.suppressfinalize を呼び出す必要があります
+[CA1819](/dotnet/fundamentals/code-analysis/quality-rules/ca1819) | プロパティは、配列を返すことはできません
+[CA1820](/dotnet/fundamentals/code-analysis/quality-rules/ca1820) | 文字列の長さを使用して空の文字列をテストします
+[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821) | 空のファイナライザーの削除
+[CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) | メンバーを static に設定します
+[CA1823](/dotnet/fundamentals/code-analysis/quality-rules/ca1823) | 使用されていないプライベート フィールドを使用しません
+[CA1824](/dotnet/fundamentals/code-analysis/quality-rules/ca1824) | アセンブリを NeutralResourcesLanguageAttribute に設定します
+[CA1825](/dotnet/fundamentals/code-analysis/quality-rules/ca1825) | 長さ0の配列を割り当てないようにします。
+[CA2000](/dotnet/fundamentals/code-analysis/quality-rules/ca2000) | スコープを失う前にオブジェクトを破棄
+[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002) | 弱い ID を伴うオブジェクト上でロックしません
+[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100) | SQL クエリのセキュリティ脆弱性を確認
+[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | P/Invoke 文字列引数に対してマーシャリングを指定します
+[CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | 表示するイベント ハンドラーを確認します
+[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | プライベート インターフェイスを満たすメソッドをシールします
+[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | 破損状態の例外をキャッチしない
+[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | スタックの詳細を保持するために再スローします。
+[CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | 予約された例外の種類を発生させません
+[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | 値型のスタティック フィールドのインラインを初期化します
+[CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | 引数の例外を正しくインスタンス化します
+[CA2211](/dotnet/fundamentals/code-analysis/quality-rules/ca2211) | 非定数フィールドは表示されません
+[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213) | 破棄可能なフィールドは破棄されなければなりません
+[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214) | コンストラクターのオーバーライド可能なメソッドを呼び出しません
+[CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Dispose メソッドが基底クラスの Dispose を呼び出す必要があります
+[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | 破棄可能な型はファイナライザーを宣言しなければなりません
+[CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | 列挙型を FlagsAttribute に設定しません
+[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | Finally 句で例外を発生させない
+[CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | 演算子オーバーロードには名前付けされた代替が存在します
+[CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | 演算子は対称型オーバーロードを含まなければなりません
+[CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | Collection プロパティは読み取り専用でなければなりません
+[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | シリアル化コンストラクターを実装します
+[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 値型 Equals のオーバーライドで、演算子 equals をオーバーロードします
+[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 文字列ではなくシステム uri オブジェクトを渡す
+[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | すべてのシリアル化不可能なフィールドを設定します
+[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | ISerializable 型を Serializable に設定します
+[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | 書式設定メソッドに正しい引数を提供
+[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242) | NaN に対して正しくテストします
+[CA2243](/dotnet/fundamentals/code-analysis/quality-rules/ca2243) | 属性文字列リテラルは、正しく解析する必要があります
+[CA2300](/dotnet/fundamentals/code-analysis/quality-rules/ca2300) | 安全ではないデシリアライザー BinaryFormatter を使用しないでください
+[CA2301](/dotnet/fundamentals/code-analysis/quality-rules/ca2301) | 最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください
+[CA2302](/dotnet/fundamentals/code-analysis/quality-rules/ca2302) | BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します
+[CA2305](/dotnet/fundamentals/code-analysis/quality-rules/ca2305) | 安全ではないデシリアライザー LosFormatter を使用しないでください
+[CA2310](/dotnet/fundamentals/code-analysis/quality-rules/ca2310) | 安全ではないデシリアライザー NetDataContractSerializer を使用しないでください
+[CA2311](/dotnet/fundamentals/code-analysis/quality-rules/ca2311) | 最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください
+[CA2312](/dotnet/fundamentals/code-analysis/quality-rules/ca2312) | NetDataContractSerializer.Binder を設定してから逆シリアル化してください
+[CA2315](/dotnet/fundamentals/code-analysis/quality-rules/ca2315) | 安全ではないデシリアライザー ObjectStateFormatter を使用しないでください
+[CA2321](/dotnet/fundamentals/code-analysis/quality-rules/ca2321) | SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください
+[CA2322](/dotnet/fundamentals/code-analysis/quality-rules/ca2322) | 逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください
+[CA3001](/dotnet/fundamentals/code-analysis/quality-rules/ca3001) | SQL インジェクションの脆弱性のコード レビュー
+[CA3002](/dotnet/fundamentals/code-analysis/quality-rules/ca3002) | XSS の脆弱性のコード レビュー
+[CA3003](/dotnet/fundamentals/code-analysis/quality-rules/ca3003) | ファイル パス インジェクションの脆弱性のコード レビュー
+[CA3004](/dotnet/fundamentals/code-analysis/quality-rules/ca3004) | 情報漏えいの脆弱性のコード レビュー
+[CA3005](/dotnet/fundamentals/code-analysis/quality-rules/ca3005) | LDAP インジェクションの脆弱性のコード レビュー
+[CA3006](/dotnet/fundamentals/code-analysis/quality-rules/ca3006) | プロセス コマンド インジェクションの脆弱性のコード レビュー
+[CA3007](/dotnet/fundamentals/code-analysis/quality-rules/ca3007) | オープン リダイレクトの脆弱性のコード レビュー
+[CA3008](/dotnet/fundamentals/code-analysis/quality-rules/ca3008) | XPath インジェクションの脆弱性のコード レビュー
+[CA3009](/dotnet/fundamentals/code-analysis/quality-rules/ca3009) | XML インジェクションの脆弱性のコード レビュー
+[CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010) | XAML インジェクションの脆弱性のコード レビュー
+[CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011) | DLL インジェクションの脆弱性のコード レビュー
+[CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012) | RegEx インジェクションの脆弱性のコード レビュー
+[CA3061](/dotnet/fundamentals/code-analysis/quality-rules/ca3061) | URL でスキーマを追加しない
+[CA3075](/dotnet/fundamentals/code-analysis/quality-rules/ca3075) | XML での DTD 処理が安全ではありません
+[CA3076](/dotnet/fundamentals/code-analysis/quality-rules/ca3076) | 安全ではない XSLT スクリプトの処理。
+[CA3077](/dotnet/fundamentals/code-analysis/quality-rules/ca3077) | API 設計、XmlDocument、XmlTextReader で安全ではない処理
+[CA3147](/dotnet/fundamentals/code-analysis/quality-rules/ca3147) | アンチ偽造トークンを検証する動詞ハンドラーをマークします
+[CA5350](/dotnet/fundamentals/code-analysis/quality-rules/ca5350) | 脆弱な暗号アルゴリズムを使用しないでください
+[CA5351](/dotnet/fundamentals/code-analysis/quality-rules/ca5351) | 破損した暗号アルゴリズムを使用しない
+[CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358) | 安全ではない暗号モードを使用しないでください
 CA5359 | 証明書の検証を無効にしない
 CA5360 | 逆シリアル化で危険なメソッドを呼び出さないでください
-[CA5361](ca5361.md) | 強力な暗号の SChannel 使用を無効にしない
+[CA5361](/dotnet/fundamentals/code-analysis/quality-rules/ca5361) | 強力な暗号の SChannel 使用を無効にしない
 CA5362 | Serializable クラスの Self を参照しない
-[CA5363](ca5363.md) | 要求の検証を無効にしない
-[CA5364](ca5364.md) | 非推奨のセキュリティプロトコルを使用しない
+[CA5363](/dotnet/fundamentals/code-analysis/quality-rules/ca5363) | 要求の検証を無効にしない
+[CA5364](/dotnet/fundamentals/code-analysis/quality-rules/ca5364) | 非推奨のセキュリティプロトコルを使用しない
 CA5365 | HTTP ヘッダーチェックを無効にしない
 CA5366 | DataSet に XmlReader を使用する Xml の読み取り
 CA5367 | ポインターフィールドを持つ型をシリアル化しない
 CA5368 | ページから派生したクラスの ViewStateUserKey を設定する
-[CA5369](ca5369.md) | 逆シリアル化に XmlReader を使用する
-[CA5370](ca5370.md) | 読み取りの検証に XmlReader を使用する
-[CA5371](ca5371.md) | スキーマ読み取りに XmlReader を使用する
-[CA5372](ca5372.md) | Xpath ドキュメントに XmlReader を使用する
-[CA5373](ca5373.md) | 廃止されたキー派生関数を使用しません
+[CA5369](/dotnet/fundamentals/code-analysis/quality-rules/ca5369) | 逆シリアル化に XmlReader を使用する
+[CA5370](/dotnet/fundamentals/code-analysis/quality-rules/ca5370) | 読み取りの検証に XmlReader を使用する
+[CA5371](/dotnet/fundamentals/code-analysis/quality-rules/ca5371) | スキーマ読み取りに XmlReader を使用する
+[CA5372](/dotnet/fundamentals/code-analysis/quality-rules/ca5372) | Xpath ドキュメントに XmlReader を使用する
+[CA5373](/dotnet/fundamentals/code-analysis/quality-rules/ca5373) | 廃止されたキー派生関数を使用しません
 CA5374 | XslTransform を使用しない
 CA5375 | アカウントを使用しない Shared Access Signature
 CA5376 | SharedAccessProtocol HttpsOnly を使用する
 CA5377 | コンテナーレベルのアクセスポリシーを使用する
-[CA5378](ca5378.md) | ServicePointManagerSecurityProtocols を無効にしません
+[CA5378](/dotnet/fundamentals/code-analysis/quality-rules/ca5378) | ServicePointManagerSecurityProtocols を無効にしません
 CA5379 | 弱いキー派生関数アルゴリズムを使用しない
 CA9999 | アナライザーのバージョンが一致しません
 
