@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809519"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352178"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -104,7 +104,7 @@ Visual Studio の拡張機能の一覧を表示するには、 **[ツール]** �
 
 [拡張機能マネージャーのローミング] では、インストールするすべての拡張機能を追跡しますが、どの拡張機能をローミング リストに追加するかを選択することができます。
 
-![Visual Studio 2017 - [拡張機能と更新プログラム] ダイアログ ボックス](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017 - 拡張機能マネージャーのローミング](media/vs2017ide-RoamingExtensionManager.png)
 
 [拡張機能マネージャーのローミング] を使用する場合、リストに次の 3 つの種類のアイコンが表示されます。
 
@@ -222,7 +222,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 スナップショット間を移動して表示するには、**デバッグ** ツールバーの **[前に戻る]** ボタンと **[次へ進む]** ボタンを使用します。 これらのボタンを使用して、 **[診断ツール]** ウィンドウの **[イベント]** タブに表示されるイベント間を移動します。 あるイベントに戻るまたは進むと、選択したイベントの過去のデバッグが自動的に有効になります。
 
-![Visual Studio の新しい例外ヘルパー ダイアログ](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
+![Visual Studio での IntelliTrace ステップバックの例](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
 
 詳細については、「[IntelliTrace ステップ バックを使用してスナップショットを表示する](../debugger/view-historical-application-state.md)」のページ参照してください。
 

@@ -5,19 +5,19 @@ description: Visual Studio の現在までのリリース済みバージョン�
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/22/2020
+ms.date: 09/29/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6e7298a920a970205d336e1db792c7becbf89aec
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
+ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005252"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91544801"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -29,16 +29,18 @@ ms.locfileid: "91005252"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Preview 3.2 | 2020 年 9 月 29 日 | 16.8.30524.135 |
+| 16.7.5 | Release | 2020 年 9 月 29 日 |  16.7.30523.141 |
 | 16.8.0 | Preview 3.1 | 2020 年 9 月 22 日 | 16.8.30516.212 |
 | 16.7.4 | Release | 2020 年 9 月 21 日 | 16.7.30517.126 |
 | 16.8.0 | Preview 3 | 2020 年 9 月 14 日 | 16.8.30509.190 |
-| 16.7.3 | Release | 2020 年 9 月 8 日 | 16.7.30503.244 |
+| 16.7.3 | リリース | 2020 年 9 月 8 日 | 16.7.30503.244 |
 | 16.4.13 | Release | 2020 年 9 月 8 日 | 16.4.30427.197 |
 | 16.0.18 | リリース | 2020 年 9 月 8 日 | 16.0.28803.826 |
 | 16.8.0 | Preview 2.1 | 2020 年 8 月 31 日 | 16.8.30428.66 |
 | 16.8.0 | Preview 2 | 2020 年 8 月 25 日 | 16.8.30420.98 |
 | 16.7.2 | リリース | 2020 年 8 月 18 日 | 16.7.30413.136 |
-| 16.7.1 | Release | 2020 年 8 月 11 日 | 16.7.30406.217 |
+| 16.7.1 | リリース | 2020 年 8 月 11 日 | 16.7.30406.217 |
 | 16.4.12 | リリース | 2020 年 8 月 11 日 | 16.4.30406.169 |
 | 16.0.17 | リリース | 2020 年 8 月 11 日 | 16.0.28803.806 |
 | 16.8.0 | Preview 1 | 2020 年 8 月 5 日 | 16.8.30404.54 |
@@ -166,7 +168,7 @@ ms.locfileid: "91005252"
 | 16.0.0 | Preview 1 | 2018 年 12 月 4 日 | 16.0.28329.73 |
 
 > [!NOTE]
-> 以前のバージョンのビルド番号とリリース日の一覧については、[Visual Studio 2017 のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)に関するページを参照してください。
+> 以前のバージョンのビルド番号とリリース日の一覧については、[Visual Studio 2017 のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -350,7 +352,7 @@ ms.locfileid: "91005252"
 | 15.0.0 | リリース | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
 > [!NOTE]
-> 次のバージョンの Visual Studio のビルド番号とリリース日について詳しくは、[Visual Studio 2019 のビルド番号とリリース日](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019)に関するページをご覧ください。
+> 次のバージョンの Visual Studio のビルド番号とリリース日について詳しくは、[Visual Studio 2019 のビルド番号とリリース日](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true)に関するページをご覧ください。
 
 ::: moniker-end
 

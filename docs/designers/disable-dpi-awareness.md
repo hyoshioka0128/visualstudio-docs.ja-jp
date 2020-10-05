@@ -1,17 +1,17 @@
 ---
 title: Visual Studio の DPI 認識を無効にする
 description: HDPI モニターでの Windows フォーム デザイナーの制限事項と Visual Studio を DPI 非対応プロセスとして実行する方法について説明します。
-ms.date: 04/05/2019
+ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
+ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249963"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91493310"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio の DPI 認識を無効にする
 
@@ -43,6 +43,9 @@ HDPI モニターで Visual Studio の **Windows フォーム デザイナー**�
 - [Visual Studio を DPI 非対応プロセスとして再起動する](#restart-visual-studio-as-a-dpi-unaware-process)
 - [レジストリ エントリを追加する](#add-a-registry-entry)
 - [ディスプレイのスケーリングを 100% に設定する](#set-your-display-scaling-setting-to-100)
+
+> [!TIP]
+> コマンド ラインから設定を管理する場合、[`devenv.exe`](../ide/reference/devenv-command-line-switches.md) を 100% のスケール モードで実行するにはコマンド ライン パラメーターとして `/noscale` を渡します。
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Visual Studio を DPI 非対応プロセスとして再起動する
 
