@@ -7,15 +7,16 @@ metadata:
   titleSuffix: ''
   description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、任意のプラットフォームやデバイス向けに開発する方法について説明します。
   ms.topic: hub-page
+  ms.custom: contperfq1
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: b1fad4d2bf07ef8c7623dfe20ff2f20b3f154883
-  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+  ms.openlocfilehash: 3b2bab0fd939f35622d040c7f986bcdddf68c408
+  ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91211202"
+  ms.lasthandoff: 10/01/2020
+  ms.locfileid: "91621764"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -24,23 +25,17 @@ highlightedContent:
   - title: Visual Studio IDE へようこそ
     itemType: overview
     url: ../get-started/visual-studio-ide.md
-  - title: Visual Studio 2019 の新機能
-    itemType: get-started
-    url: ../ide/whats-new-visual-studio-2019.md
-  - title: 開発スキルを向上させる
+  - title: Visual Studio 2019 リリース ノート
+    itemType: whats-new
+    url: /visualstudio/releases/2019/release-notes/
+  - title: Visual Studio のスキルを高める
     itemType: learn
-    url: /learn/
+    url: /learn/browse/?products=vs
 conceptualContent:
   title: 作業開始
   items:
   - title: Visual Studio の使用方法を学ぶ
     links:
-    - text: ガイド ツアーを開始する
-      url: ../get-started/visual-studio-ide.md
-      itemType: overview
-    - text: リポジトリからコードを開く
-      url: ../get-started/tutorial-open-project-from-repo.md
-      itemType: tutorial
     - text: コードを作成して編集する
       url: ../ide/index-writing-code.yml
       itemType: tutorial
@@ -53,48 +48,51 @@ conceptualContent:
     - text: コードをテストする
       itemType: tutorial
       url: ../test/getting-started-with-unit-testing.md
-    - text: ローカルまたはクラウドでデータにアクセスする
+    - text: リポジトリからコードを開く
+      url: ../get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
-      url: ../data-tools/create-a-sql-database-by-using-a-designer.md
   - title: チュートリアルを実行する
     links:
-    - text: C#
-      url: ../get-started/csharp/index.yml
+    - text: シンプルな C# コンソール アプリを作成する
+      url: ../get-started/csharp/tutorial-console.md
       itemType: get-started
-    - text: F#
-      url: ../ide/quickstart-fsharp.md
-      itemType: get-started
-    - text: Visual Basic
-      url: ../get-started/visual-basic/index.yml
-      itemType: get-started
-    - text: C++
+    - text: C++ コンソール電卓を作成する
       url: /cpp/get-started/tutorial-console-cpp
       itemType: get-started
-    - text: Python
-      url: ../python/index.yml
+    - text: Visual Basic コンソール アプリを作成する
+      url: ../get-started/visual-basic//tutorial-console.md
       itemType: get-started
+    - text: Python を使い始める
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+      itemType: get-started
+    - text: Node.js と Express のアプリを作成する
+      url: ../javascript/tutorial-nodejs.md
+      itemType: get-started
+    - text: F# Web サービスを作成する
+      url: ../ide/quickstart-fsharp.md
+      itemType: get-started
+  - title: Visual Studio の言語のガイダンス
+    links:
+    - text: C#
+      itemType: get-started
+      url: ../get-started/csharp/index.yml
+    - text: C++
+      itemType: get-started
+      url: /cpp/overview/visual-cpp-in-visual-studio
+    - text: Visual Basic
+      itemType: get-started
+      url: ../get-started/visual-basic/index.yml
+    - text: Python
+      itemType: get-started
+      url: ../python/index.yml
     - text: JavaScript
       url: ../javascript/index.yml
       itemType: get-started
-  - title: アプリを作成する
-    links:
-    - text: Windows デスクトップ アプリ
-      itemType: tutorial
-      url: ../get-started/csharp/tutorial-wpf.md
-    - text: ユニバーサル Windows アプリ
-      itemType: tutorial
-      url: ../get-started/csharp/tutorial-uwp.md
-    - text: モバイル アプリ
-      itemType: overview
-      url: ../cross-platform/cross-platform-mobile-development-in-visual-studio.md
-    - text: Unity ゲーム
-      itemType: tutorial
-      url: ../cross-platform/getting-started-with-visual-studio-tools-for-unity.md
-    - text: ASP.NET Core Web アプリ
-      itemType: quickstart
-      url: /aspnet/core/tutorials/razor-pages/razor-pages-start
+    - text: F#
+      itemType: get-started
+      url: /dotnet/fsharp/get-started/get-started-visual-studio
 tools:
-  title: 言語
+  title: 言語のドキュメント
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -122,6 +120,53 @@ tools:
     url: ../rtvs/index.md?view=vs-2017&preserve-view=true
 additionalContent:
   sections:
+  - title: Visual Studio での開発
+    items:
+    - title: Web とクラウド
+      links:
+      - text: Web 開発
+        url: /aspnet/
+      - text: Azure 開発および管理
+        url: ../azure/index.yml
+      - text: Python
+        url: ../python/index.yml
+      - text: Node.js
+        url: ../javascript/index.yml
+      - text: データ ストレージとデータ処理
+        url: ../data-tools/index.yml
+      - text: データ サイエンス
+        url: ../python/data-science-and-analytical-applications-workload.md
+      - text: Office/Sharepoint 開発
+        url: https://developer.microsoft.com/office/docs
+    - title: デスクトップおよびモバイル
+      links:
+      - text: Windows アプリ開発
+        url: /windows/apps/
+      - text: .NET デスクトップ開発
+        url: /dotnet/framework/develop-client-apps
+      - text: C++ での Windows 開発
+        url: /cpp/windows/desktop-applications-visual-cpp
+      - text: .NET (Xamarin) によるモバイル開発
+        url: /xamarin/
+      - text: C++ でのモバイル開発
+        url: /visualstudio/cross-platform/
+      - text: JavaScript でのモバイル開発
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 および 2015 のみ)
+    - title: ゲーム
+      links:
+      - text: Unity でのゲーム開発
+        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: C++ によるゲーム開発
+        url: /windows/uwp/gaming/e2e
+    - title: 他のツールセット
+      links:
+      - text: Visual Studio 拡張機能の開発
+        url: ../extensibility/index.yml
+      - text: C++ による Linux 開発
+        url: /cpp/linux/
+      - text: .NET Core クロスプラットフォームの開発
+        url: /dotnet/core/
   - title: タスク
     items:
     - title: 開発
@@ -160,51 +205,4 @@ additionalContent:
     - title: Docker コンテナーを使用した開発
       summary: Docker コンテナーを使用してモジュラー コンポーネントを分離し、スケーラビリティを向上させます。
       url: ../containers/index.yml
-  - title: 作業負荷
-    items:
-    - title: Web とクラウド
-      links:
-      - text: Web 開発
-        url: /aspnet/
-      - text: Azure 開発および管理
-        url: ../azure/index.yml
-      - text: Python
-        url: ../python/index.yml
-      - text: Node.js
-        url: ../javascript/index.yml
-      - text: データ ストレージとデータ処理
-        url: ../data-tools/index.yml
-      - text: データ サイエンス
-        url: ../python/data-science-and-analytical-applications-workload.md
-      - text: Office/Sharepoint 開発
-        url: https://developer.microsoft.com/office/docs
-    - title: デスクトップおよびモバイル
-      links:
-      - text: .NET デスクトップ開発
-        url: /dotnet/framework/develop-client-apps
-      - text: ユニバーサル Windows プラットフォーム開発
-        url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
-      - text: C++ での Windows 開発
-        url: /cpp/windows/desktop-applications-visual-cpp
-      - text: .NET (Xamarin) によるモバイル開発
-        url: /xamarin/
-      - text: C++ でのモバイル開発
-        url: /visualstudio/cross-platform/
-      - text: JavaScript でのモバイル開発
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 および 2015 のみ)
-    - title: ゲーム
-      links:
-      - text: Unity でのゲーム開発
-        url: ../cross-platform/visual-studio-tools-for-unity.md
-      - text: C++ によるゲーム開発
-        url: /windows/uwp/gaming/e2e
-    - title: 他のツールセット
-      links:
-      - text: Visual Studio 拡張機能の開発
-        url: ../extensibility/index.yml
-      - text: C++ による Linux 開発
-        url: /cpp/linux/
-      - text: .NET Core クロスプラットフォームの開発
-        url: /dotnet/core/
   footer: '[ブログ](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題報告](../ide/feedback-options.md) - [開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html) - [トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio)'
