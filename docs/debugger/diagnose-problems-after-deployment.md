@@ -31,7 +31,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 
 - 診断データを確認して IntelliTrace でコードをデバッグするための Visual Studio Enterprise (ただし、Professional および Community Edition を除く)
 
-## <a name="step-1-include-build-information-with-your-release"></a><a name="SetUpBuild">手順 1:</a>リリースにビルド情報を含める
+## <a name="step-1-include-build-information-with-your-release"></a><a name="SetUpBuild"></a>手順 1:リリースにビルド情報を含める
  ビルド プロセスを設定して Web プロジェクトのビルド マニフェスト (*BuildInfo.config* ファイル) を作成し、このマニフェストをリリースに含めます。 このマニフェストには、特定のビルドを作成するために使用されたプロジェクト、ソース管理、およびビルド システムに関する情報が含まれます。 この情報は、IntelliTrace ログを開いて記録されたイベントを確認した後に、Visual Studio が対応するソースとシンボルを見つけるのに役立ちます。
 
 ### <a name="create-the-build-manifest-for-an-automated-build-using-team-foundation-server"></a><a name="AutomatedBuild"></a>Team Foundation Server を使用して自動ビルドのビルド マニフェストを作成する
