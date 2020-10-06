@@ -2,6 +2,8 @@
   href: visual-studio-graphics-diagnostics.md
 - name: Visual Studio グラフィックス診断の概要
   href: overview-of-visual-studio-graphics-diagnostics.md
+- name: Visual Studio での DirectX12 のサポート
+  href: visual-studio-graphics-diagnostics-directx-12.md
 - name: Visual Studio グラフィックス診断の使用を開始する
   href: getting-started-with-visual-studio-graphics-diagnostics.md
 - name: グラフィックス情報をキャプチャする
