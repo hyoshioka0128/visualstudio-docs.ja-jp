@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739903"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781029"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
@@ -126,7 +126,7 @@ ASP.NET Core プロジェクトなどのプロジェクトの場合は、プロ�
 * [package.json を使用してパッケージをインストールする](#npmInstallPackage)
 
 >[!NOTE]
-> ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](/aspnet/core/client-side/libman/?view=aspnetcore-3.1)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
+> ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> npm サポートをプロジェクトに追加する (ASP.NET Core)
 

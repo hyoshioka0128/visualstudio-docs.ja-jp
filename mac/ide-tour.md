@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402614"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584010"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac ツアー
 
@@ -66,7 +66,7 @@ Solution Pad では、ソリューション内のプロジェクトが整理さ�
 
 これは、ソース コード、リソース、ユーザー インターフェイス、および依存関係のファイルが、プラットフォーム固有のプロジェクトに整理されている場所です。
 
-Visual Studio for Mac でプロジェクトとソリューションを使用する方法の詳細については、「[プロジェクトおよびソリューション](/visualstudio/mac/projects-and-solutions)」を参照してください。
+Visual Studio for Mac でプロジェクトとソリューションを使用する方法の詳細については、「[プロジェクトおよびソリューション](./projects-and-solutions.md)」を参照してください。
 
 ## <a name="assembly-references"></a>アセンブリ参照
 
@@ -78,7 +78,7 @@ Visual Studio for Mac でプロジェクトとソリューションを使用す�
 
 ![[参照の編集] ダイアログ](media/ide-tour-image20.png)
 
-Visual Studio for Mac で参照を使用する方法については、「[プロジェクト内の参照の管理](/visualstudio/mac/managing-references-in-a-project)」を参照してください。
+Visual Studio for Mac で参照を使用する方法については、「[プロジェクト内の参照の管理](./managing-references-in-a-project.md)」を参照してください。
 
 ## <a name="dependencies--packages"></a>依存関係/パッケージ
 
@@ -90,7 +90,7 @@ NuGet は、.NET 開発用の最も人気のあるパッケージ マネージ�
 
 ![NuGet パッケージの追加](media/ide-tour-image21.png)
 
-アプリケーションで NuGet パッケージを使用する方法については、「[プロジェクトに NuGet パッケージを含める](/visualstudio/mac/nuget-walkthrough)」を参照してください。
+アプリケーションで NuGet パッケージを使用する方法については、「[プロジェクトに NuGet パッケージを含める](./nuget-walkthrough.md)」を参照してください。
 
 ## <a name="source-editor"></a>ソース エディター
 
@@ -111,7 +111,7 @@ C#、XAML、JavaScript のいずれで作成するかに関係なく、コード
 * 選択範囲のフォーマット
 * インラインの電球
 
-Visual Studio for Mac でのソース エディターの使用に関する詳細については、「[ソース エディター](/visualstudio/mac/source-editor)」のドキュメントを参照してください。
+Visual Studio for Mac でのソース エディターの使用に関する詳細については、「[ソース エディター](./source-editor.md)」のドキュメントを参照してください。
 
 タブを常に表示しておくには、ピン留めを利用できます。 これにより、プロジェクトを起動するたびに、必要なタブが常に表示されるようになります。 タブをピン留めするには、タブの上にマウス ポインターを移動し、_ピン_ アイコンをクリックします。
 
@@ -119,15 +119,15 @@ Visual Studio for Mac でのソース エディターの使用に関する詳細
 
 ## <a name="refactoring"></a>リファクタリング
 
-Visual Studio for Mac には、コンテキスト アクションとソース分析という、コードをリファクターする 2 つの便利な方法があります。 詳細については、「[リファクタリング](/visualstudio/mac/refactoring)」を参照してください。
+Visual Studio for Mac には、コンテキスト アクションとソース分析という、コードをリファクターする 2 つの便利な方法があります。 詳細については、「[リファクタリング](./refactoring.md)」を参照してください。
 
 ## <a name="debugging"></a>デバッグ
 
-Visual Studio for Mac には、.NET Core、.NET Framework、Unity、および Xamarin プロジェクトをサポートするデバッガーが用意されています。 Visual Studio for Mac では、.NET Core デバッガーと Mono Soft Debugger が使用されており、この IDE であらゆるプラットフォームにわたるマネージド コードをデバッグできます。 デバッグの詳細については、「[Xamarin を使ったデバッグ](/visualstudio/mac/debugging)」を参照してください。
+Visual Studio for Mac には、.NET Core、.NET Framework、Unity、および Xamarin プロジェクトをサポートするデバッガーが用意されています。 Visual Studio for Mac では、.NET Core デバッガーと Mono Soft Debugger が使用されており、この IDE であらゆるプラットフォームにわたるマネージド コードをデバッグできます。 デバッグの詳細については、「[Xamarin を使ったデバッグ](./debugging.md)」を参照してください。
 
 デバッガーには、文字列、色、URL だけでなく、サイズ、座標、ベジエ曲線などの特殊な種類の高機能なビジュアライザーが含まれています。
 
-デバッガーのデータの視覚化の詳細については、「[データの視覚化](/visualstudio/mac/data-visualizations)」を参照してください。
+デバッガーのデータの視覚化の詳細については、「[データの視覚化](./data-visualizations.md)」を参照してください。
 
 ## <a name="version-control"></a>バージョン コントロール
 
@@ -139,7 +139,7 @@ Visual Studio for Mac は、Git と Subversion ソース管理システムと統
 
 ![Solution Pad のコミットされていないファイル](media/ide-tour-image23.png)
 
-Visual Studio でバージョン管理を使用する方法については、「[バージョン管理](/visualstudio/mac/version-control)」を参照してください。
+Visual Studio でバージョン管理を使用する方法については、「[バージョン管理](./version-control.md)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

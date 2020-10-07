@@ -12,22 +12,22 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560737"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658439"
 ---
 # <a name="overview-of-source-code-analysis"></a>ソース コード分析の概要
 
-.NET Compiler Platform (Roslyn) アナライザーを使用して、C# または Visual Basic コードのスタイル、品質、保守容易性、設計、その他の問題を検査します。 この検査または分析は、開いているすべてのファイルの設計時に行われます。 
+.NET Compiler Platform (Roslyn) アナライザーを使用して、C# または Visual Basic コードのスタイル、品質、保守容易性、設計、その他の問題を検査します。 この検査または分析は、開いているすべてのファイルの設計時に行われます。
 
 アナライザーは、次のグループに分類できます。
 
-- [コード スタイル](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) アナライザーは、Visual Studio に組み込まれています。 これらのアナライザーの診断 ID (コード) は、IDE0067 のように、IDExxxx の形式です。 [テキスト エディターのオプション ページ](../ide/code-styles-and-code-cleanup.md)または [EditorConfig ファイル](../ide/editorconfig-code-style-settings-reference.md)で、ユーザー設定を構成できます。 .NET 5.0 以降、コード スタイル アナライザーは .NET SDK に含まれており、ビルドの警告またはエラーとして厳密に適用できます。 詳細については、[このページ](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)を参照してください。
+- [コード スタイル](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) アナライザーは、Visual Studio に組み込まれています。 これらのアナライザーの診断 ID (コード) は、IDE0067 のように、IDExxxx の形式です。 [テキスト エディターのオプション ページ](../ide/code-styles-and-code-cleanup.md)または [EditorConfig ファイル](/dotnet/fundamentals/code-analysis/code-style-rule-options)で、ユーザー設定を構成できます。 .NET 5.0 以降、コード スタイル アナライザーは .NET SDK に含まれており、ビルドの警告またはエラーとして厳密に適用できます。 詳細については、[このページ](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)を参照してください。
 
-- [コード品質](code-analysis-warnings-for-managed-code-by-checkid.md)アナライザーが .NET 5 SDK に含まれるようになり、既定で有効になりました。 これらのアナライザーの診断 ID (コード) は、CA1822 のように、CAxxxx の形式です。 詳細については、[.NET コード品質分析の概要](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)に関するページを参照してください。
+- [コード品質](/dotnet/fundamentals/code-analysis/quality-rules/index)アナライザーが .NET 5 SDK に含まれるようになり、既定で有効になりました。 これらのアナライザーの診断 ID (コード) は、CA1822 のように、CAxxxx の形式です。 詳細については、[.NET コード品質分析の概要](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)に関するページを参照してください。
 
 - サード パーティのアナライザーを NuGet パッケージまたは Visual Studio 拡張機能としてインストールできます。 サード パーティのアナライザーには、[StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/)、[XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)、[Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/) などがあります。
 
@@ -58,7 +58,7 @@ ms.locfileid: "90560737"
 
 ## <a name="configure-analyzer-severity-levels"></a>アナライザーの重要度レベルの構成
 
-アナライザー ルールの重要度 ("*診断*") は、[EditorConfig ファイル](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) で、または [電球メニュー](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)から構成できます。 
+アナライザー ルールの重要度 ("*診断*") は、[EditorConfig ファイル](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) で、または [電球メニュー](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu)から構成できます。
 
 ビルド時にコードを検査し、入力と同時にライブにするようにアナライザーを構成することもできます。 現在のドキュメントのみで実行するか、開いているすべてのドキュメントで実行するか、またはソリューション全体で実行するようにライブ コード分析のスコープを構成できます。 「[方法:ライブ コード分析スコープを構成する](./configure-live-code-analysis-scope-managed-code.md)」をご覧ください。
 

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57d95cd3f3dcf68e7af143bdde3a16474beda20c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312536"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659278"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>[オプション] ダイアログ ボックス:[テキスト エディター]、[C#]、[コード スタイル]、[書式設定]
 
@@ -62,19 +62,19 @@ Visual Studio 2017 の **[ドキュメントのフォーマット]** コマン�
 
 |group1|説明|対応する EditorConfig と [ツール] > [オプション] ルール|
 |-----------|-----------------|-----------------|-----------------|
-|**すべての C# 書式ルールを適用 (インデント、折り返し、スペースの設定)**|**[ドキュメントのフォーマット]** コマンドでは通常、書式設定に関する問題が修正されます。 この設定を変更することはできません。| [主な EditorConfig オプション](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig の書式設定オプション](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[書式設定]** > **[インデント]** または **[改行]** または **[行間]** または **[折り返し]**|
+|**すべての C# 書式ルールを適用 (インデント、折り返し、スペースの設定)**|**[ドキュメントのフォーマット]** コマンドでは通常、書式設定に関する問題が修正されます。 この設定を変更することはできません。| [主な EditorConfig オプション](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig の書式設定オプション](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[書式設定]** > **[インデント]** または **[改行]** または **[行間]** または **[折り返し]**|
 |**書式設定中に追加のコード クリーンアップを実行する**|選択すると、**Edit.FormatDocument** コマンドで以下に指定されたルールに対して修正が適用されます。| N/A |
 |**不要な using の削除**|選択すると、**Edit.FormatDocument** がトリガーされたときに不要な `using` ディレクティブが削除されます。| N/A |
 |**using の並べ替え**|選択すると、**Edit.FormatDocument** がトリガーされたときに `using` ディレクティブが並べ替えられます。| dotnet_sort_system_directives_first<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[詳細]**  >  **[using の並べ替えのとき、最初に 'System' ディレクティブを配置する]** |
 |**単一行のコントロール ステートメント用のかっこの追加と削除**|選択すると、**Edit.FormatDocument** がトリガーされたときに、単一行のコントロール ステートメントのかっこが追加または削除されます。| csharp_prefer_braces<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[コード ブロックの優先順位]**  >  **[波かっこを優先します]** |
 |**アクセシビリティ修飾子の追加**|選択すると、**Edit.FormatDocument** がトリガーされたときに、不足しているアクセシビリティ修飾子が追加されます。| dotnet_style_require_accessibility_modifiers |
 |**アクセシビリティ修飾子の並べ替え**|選択すると、**Edit.FormatDocument** がトリガーされたときに、アクセシビリティ修飾子が並べ替えられます。| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**式/ブロック本体の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、式形式のメンバーがブロック本体に変換されるか、その逆の変換が行われます。| [式形式のメンバーの EditorConfig オプション](../../ide/editorconfig-language-conventions.md#expression-bodied-members)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[式の優先順位]**  >  **[メソッドに式本体を使用する]、[コンストラクターに式本体を使用する] など** |
-|**暗黙的/明示的な型の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、`var` が明示的な型に変換されるか、その逆の変換が行われます。| [明示的な型の Core EditorConfig オプション](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **['var' を優先]** |
+|**式/ブロック本体の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、式形式のメンバーがブロック本体に変換されるか、その逆の変換が行われます。| [式形式のメンバーの EditorConfig オプション](/dotnet/fundamentals/code-analysis/style-rules/language-rules#expression-bodied-members)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[式の優先順位]**  >  **[メソッドに式本体を使用する]、[コンストラクターに式本体を使用する] など** |
+|**暗黙的/明示的な型の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、`var` が明示的な型に変換されるか、その逆の変換が行われます。| [明示的な型の Core EditorConfig オプション](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **['var' を優先]** |
 |**インラインの 'out' 変数の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、可能な場合は `out` 変数がインライン化されます。| csharp_style_inlined_variable_declaration<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[変数の優先順位]**  >  **[インライン変数宣言を優先する]** |
 |**言語/フレームワークの種類の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、言語の種類がフレームワークの種類に変換されるか、その逆の変換が行われます。| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[定義済みの型の設定]** |
 |**オブジェクト/コレクションの初期化の設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに、可能な場合はオブジェクトとコレクションの初期化子が使用されます。| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[式の優先順位]**  >  **[オブジェクト初期化子を優先する]** または **[コレクション初期化子を優先する]** |
-|**'this.' 修飾子の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに `this.` の初期設定が適用されます。| [this. 修飾子の EditorConfig オプション](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **['this.' の優先]** |
+|**'this.' 修飾子の初期設定の適用**|選択すると、**Edit.FormatDocument** がトリガーされたときに `this.` の初期設定が適用されます。| [this. 修飾子の EditorConfig オプション](/dotnet/fundamentals/code-analysis/style-rules/language-rules#this-and-me)<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **['this.' の優先]** |
 |**可能な場合はプライベート フィールドを読み取り専用にする**|選択すると、**Edit.FormatDocument** がトリガーされたときに、可能な場合はプライベート フィールドが `readonly` になります。| dotnet_style_readonly_field<br/><br/>**[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[フィールドの設定]**  >  **[読み取り専用を優先します]** |
 |**不要なキャストを削除する**|選択すると、**Edit.FormatDocument** がトリガーされたときに、可能な場合は不要なキャストが削除されます。| N/A |
 |**未使用の変数を削除する**|選択すると、**Edit.FormatDocument** がトリガーされたときに、未使用の変数が削除されます。| N/A |

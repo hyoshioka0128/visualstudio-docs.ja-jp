@@ -2,20 +2,20 @@
 title: コード スタイルのオプションとコードのクリーンアップ
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682689"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658387"
 ---
 # <a name="code-style-preferences"></a>コードのスタイル設定
 
@@ -26,7 +26,7 @@ ms.locfileid: "90682689"
 
 ## <a name="code-styles-in-editorconfig-files"></a>EditorConfig ファイルのコード スタイル
 
-.NET に対する[コード スタイルの設定](create-portable-custom-editor-options.md)は、[EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ファイルをプロジェクトに追加することで指定できます。 EditorConfig ファイルは、Visual Studio のパーソナル化アカウントではなく、コードベースに関連付けられます。 EditorConfig ファイル内の設定は、 **[オプション]** ダイアログ ボックスで指定されているコード スタイルよりも優先されます。 リポジトリまたはプロジェクトに対するすべての共同作成者にコーディング スタイルを適用する場合は、EditorConfig ファイルを使用します。
+.NET に対する[コード スタイルの設定](create-portable-custom-editor-options.md)は、[EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) ファイルをプロジェクトに追加することで指定できます。 EditorConfig ファイルは、Visual Studio のパーソナル化アカウントではなく、コードベースに関連付けられます。 EditorConfig ファイル内の設定は、 **[オプション]** ダイアログ ボックスで指定されているコード スタイルよりも優先されます。 リポジトリまたはプロジェクトに対するすべての共同作成者にコーディング スタイルを適用する場合は、EditorConfig ファイルを使用します。
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ C# コード ファイルの場合、Visual Studio 2019 では、エディター
 ## <a name="see-also"></a>参照
 
 - [クイック アクション](../ide/quick-actions.md)
-- [EditorConfig の .NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig の .NET コーディング規則の設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [エディターの動作 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

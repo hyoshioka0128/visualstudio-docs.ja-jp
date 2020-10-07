@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038674"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583997"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -84,7 +84,7 @@ services:
    ```
    
     > [!NOTE]
-    > 運用環境のコードでは、各要求の後で `HttpClient` を破棄しないでください。 ベスト プラクティスについては、「[HttpClientFactory を使用して回復力の高い HTTP 要求を実装する](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)」を参照してください。
+    > 運用環境のコードでは、各要求の後で `HttpClient` を破棄しないでください。 ベスト プラクティスについては、「[HttpClientFactory を使用して回復力の高い HTTP 要求を実装する](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)」を参照してください。
 
 1. *Index.cshtml* ファイルで、`ViewData["Message"]` を表示する行を追加し、ファイルを次のコードのようにします。
 
@@ -102,7 +102,7 @@ services:
       </div>
       ```
   
-1. フロントエンドと Web API の両方のプロジェクトで、*Startup.cs* 内の `Configure` メソッドでの [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) への呼び出しをコメントアウトしてください。このサンプル コードでは、Web API を呼び出すために HTTPS ではなく HTTP を使用するためです。
+1. フロントエンドと Web API の両方のプロジェクトで、*Startup.cs* 内の `Configure` メソッドでの [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) への呼び出しをコメントアウトしてください。このサンプル コードでは、Web API を呼び出すために HTTPS ではなく HTTP を使用するためです。
 
       ```csharp
                   //app.UseHttpsRedirection();

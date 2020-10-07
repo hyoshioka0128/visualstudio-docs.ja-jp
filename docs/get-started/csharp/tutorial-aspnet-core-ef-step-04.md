@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580041"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780938"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>手順 4: ASP.NET Core アプリから Web API を公開する
 
@@ -208,7 +208,7 @@ services.AddSwaggerGen(c =>
 // Enable middleware to serve generated Swagger as a JSON endpoint.
 app.UseSwagger();
 
-// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
 // specifying the Swagger JSON endpoint.
 app.UseSwaggerUI(c =>
 {
@@ -216,7 +216,7 @@ app.UseSwaggerUI(c =>
 });
 ```
 
-これで、アプリをビルドして実行できます。 ブラウザーのアドレス バーを使用して `/swagger` に移動します。 自分のアプリの API エンドポイントとモデルの一覧が表示されます。 
+これで、アプリをビルドして実行できます。 ブラウザーのアドレス バーを使用して `/swagger` に移動します。 自分のアプリの API エンドポイントとモデルの一覧が表示されます。
 
 ![Visual Studio 2019 - ブラウザーに表示された Swagger ページ](media/vs-2019/vs2019-swagger-browser.png)
 
@@ -230,5 +230,5 @@ Games の下のエンドポイント、`Try it out``Execute` の順にクリッ�
 
 ## <a name="see-also"></a>関連項目
 
-- [Swashbuckle と ASP.NET Core の概要](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [Swagger/OpenAPI を使用する ASP.NET Core Web API のヘルプ ページ](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Swashbuckle と ASP.NET Core の概要](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio&preserve-view=true)
+- [Swagger/OpenAPI を使用する ASP.NET Core Web API のヘルプ ページ](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2&preserve-view=true)

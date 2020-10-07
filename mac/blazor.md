@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402532"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584036"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Blazor Web アプリを作成する
 
 このガイドでは、最初の Blazor Web アプリの作成に関する概要について説明します。 詳細なガイダンスについては、「[ASP.NET Core Blazor の概要](/aspnet/core/blazor/index)」を参照してください。
 
-ASP.NET Core Blazor では、2 つの異なるホスティング オプションである Blazor WebAssembly (WASM) または Blazor サーバーがサポートされています。 Visual Studio for Mac では両方のホスティング モデルがサポートされています。 Visual Studio for Mac 8.4 + では Blazor Server がサポートされており、Visual Studio for Mac 8.6 + では両方がサポートされています。 Blazor ホスティング モデルの詳細については、「[ASP.NET Core Blazor のホスティング モデル](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)」を参照してください。 Visual Studio for Mac での Blazor WebAssembly プロジェクトのデバッグのサポートは、v8.8 のプレビュー リリースで利用できます ( **[Visual Studio] > [更新プログラムの確認]** メニューのプレビュー更新プログラム チャネルで利用可能)。
+ASP.NET Core Blazor では、2 つの異なるホスティング オプションである Blazor WebAssembly (WASM) または Blazor サーバーがサポートされています。 Visual Studio for Mac では両方のホスティング モデルがサポートされています。 Visual Studio for Mac 8.4 + では Blazor Server がサポートされており、Visual Studio for Mac 8.6 + では両方がサポートされています。 Blazor ホスティング モデルの詳細については、「[ASP.NET Core Blazor のホスティング モデル](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1)」を参照してください。 Visual Studio for Mac での Blazor WebAssembly プロジェクトのデバッグのサポートは、v8.8 のプレビュー リリースで利用できます ( **[Visual Studio] > [更新プログラムの確認]** メニューのプレビュー更新プログラム チャネルで利用可能)。
 
 Blazor の概要 Blazor は、.NET を使って対話型のクライアント側 Web UI を構築するためのフレームワークです。Web 開発者にとって次のような利点があります。
 

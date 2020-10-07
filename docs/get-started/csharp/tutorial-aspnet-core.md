@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580051"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780976"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -139,7 +139,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 ### <a name="about-your-solution"></a>ソリューションについて
 
-このソリューションは **Razor ページ** デザイン パターンに従っています。 これは [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) デザイン パターンとは異なり、モデルとコント ローラーのコードが Razor ページ自体の中に含まれるよう効率化されています。
+このソリューションは **Razor ページ** デザイン パターンに従っています。 これは [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) デザイン パターンとは異なり、モデルとコント ローラーのコードが Razor ページ自体の中に含まれるよう効率化されています。
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>ソリューションのツアーを体験する
@@ -366,7 +366,7 @@ Visual Studio は、開発者向け生産性向上ツールの統合開発スイ
 これでこのチュートリアルは完了です。 C#、ASP.NET Core、Visual Studio IDE について少しはご理解いただけたかと思います。 C# と ASP.NET を使用する Web アプリまたは Web サイトの作成方法の詳細については、以下のチュートリアルに進んで確認してください。
 
 > [!div class="nextstepaction"]
-> [ASP.NET Core で Razor ページ Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [ASP.NET Core で Razor ページ Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>関連項目
 

@@ -10,12 +10,12 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211657"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584062"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -23,7 +23,7 @@ ms.locfileid: "86211657"
 
 ## <a name="installing-net-core"></a>.NET Core のインストール
 
-.NET Core 3.1 は、Visual Studio for Mac をインストールすると自動的にインストールされます。 Visual Studio for Mac でサポートされている .NET Core のバージョンの詳細については、「[.NET Core のサポート](/visualstudio/mac/net-core-support)」を参照してください。
+.NET Core 3.1 は、Visual Studio for Mac をインストールすると自動的にインストールされます。 Visual Studio for Mac でサポートされている .NET Core のバージョンの詳細については、「[.NET Core のサポート](./net-core-support.md)」を参照してください。
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Visual Studio for Mac で ASP.NET Core を作成する
 

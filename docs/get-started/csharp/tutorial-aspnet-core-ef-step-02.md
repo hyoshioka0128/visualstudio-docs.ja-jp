@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580074"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780986"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>手順 2: 最初の ASP.NET Core Web アプリを作成する
 
@@ -100,7 +100,7 @@ public void OnGet()
 
 `Time` に値を割り当てている `OnGet` メソッドにブレークポイントを追加し、今度はアプリケーションのデバッグを開始します。
 
-実行がその行で停止し、`DateTime.Today` に日付が含まれていることを確認できますが、時刻データが含まれないため、時刻は常に午前 0 時です。 
+実行がその行で停止し、`DateTime.Today` に日付が含まれていることを確認できますが、時刻データが含まれないため、時刻は常に午前 0 時です。
 
 ![ブラウザーでの Visual Studio 2019 ASP.NET Core プロジェクト](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: ASP.NET Core で Razor Pages Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [チュートリアル: ASP.NET Core で Razor Pages Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

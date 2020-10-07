@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453702"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781059"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
-ASP.NET Core と TypeScript を使用した Visual Studio での開発に関するこのチュートリアルでは、単純な Web アプリケーションを作成し、いくつかの TypeScript コードを追加して、アプリを実行します。 
+ASP.NET Core と TypeScript を使用した Visual Studio での開発に関するこのチュートリアルでは、単純な Web アプリケーションを作成し、いくつかの TypeScript コードを追加して、アプリを実行します。
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 1. [npm パッケージの管理](../javascript/npm-package-management.md#aspnet-core-projects)の指示に従って、プロジェクトに `package.json` ファイルを追加します。 これにより、npm サポートがプロジェクトに追加されます。
 
    >[!NOTE]
-   > ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
+   > ASP.NET Core プロジェクトでは、npm の代わりに[ライブラリ マネージャー](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true)または yarn を使用して、クライアント側の JavaScript ファイルと CSS ファイルをインストールすることもできます。
 
 1. この例では、jQuery 用の TypeScript 定義ファイルをプロジェクトに追加します。 *package.json* ファイルに次の内容を含めます。
 

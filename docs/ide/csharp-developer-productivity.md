@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509940"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658413"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 開発者のための Visual Studio 生産性ガイド
 
@@ -101,7 +101,7 @@ EditorConfig ファイルを使って、コーディング規則を体系化し�
 
    ![エディターで直接コード スタイル ルールの重大度レベルを構成する](../ide/media/configure-severity-level.png)
 
-[.NET コーディング規則のオプション](editorconfig-code-style-settings-reference.md)に関するドキュメントをご覧ください。完全な EditorConfig ファイルの例も含まれます。
+[.NET コーディング規則のオプション](/dotnet/fundamentals/code-analysis/code-style-rule-options)に関するドキュメントをご覧ください。完全な EditorConfig ファイルの例も含まれます。
 
 ::: moniker range=">=vs-2019"
 

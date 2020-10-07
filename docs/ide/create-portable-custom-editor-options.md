@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402258"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659252"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig で移植可能なカスタム エディター設定を作成する
 
@@ -68,7 +68,7 @@ Visual Studio のエディターは、[EditorConfig プロパティ](https://edi
 - insert\_final_newline
 - root
 
-EditorConfig エディター設定は、XML を除き、Visual Studio 対応のすべての言語でサポートされています。 また、EditorConfig では、C# および Visual Basic に対する[言語](../ide/editorconfig-language-conventions.md)、[書式](../ide/editorconfig-formatting-conventions.md)、[名前付け](../ide/editorconfig-naming-conventions.md)の規則など、[コード スタイル](../ide/editorconfig-code-style-settings-reference.md)の規則がサポートされています。
+EditorConfig エディター設定は、XML を除き、Visual Studio 対応のすべての言語でサポートされています。 また、EditorConfig では、C# および Visual Basic に対する[言語](/dotnet/fundamentals/code-analysis/style-rules/language-rules)、[書式](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)、[名前付け](/dotnet/fundamentals/code-analysis/style-rules/naming-rules)の規則など、[コード スタイル](/dotnet/fundamentals/code-analysis/code-style-rule-options)の規則がサポートされています。
 
 ## <a name="add-and-remove-editorconfig-files"></a>EditorConfig ファイルの追加と削除
 
@@ -90,7 +90,7 @@ EditorConfig ファイルをプロジェクトまたはコードベースから�
 
    ![Visual Studio の EditorConfig ファイル項目テンプレート](media/editorconfig-item-templates.png)
 
-1. **editorconfig ファイル (既定)** テンプレートを選択し、インデント スタイルとサイズに対する 2 つのコア EditorConfig オプションが設定されている EditorConfig ファイルを追加します。 または、**editorconfig ファイル (.NET)** テンプレートを選択し、既定の [.NET コード スタイル、書式、および名前付けの規則](../ide/editorconfig-code-style-settings-reference.md)が設定されている EditorConfig ファイルを追加します。
+1. **editorconfig ファイル (既定)** テンプレートを選択し、インデント スタイルとサイズに対する 2 つのコア EditorConfig オプションが設定されている EditorConfig ファイルを追加します。 または、**editorconfig ファイル (.NET)** テンプレートを選択し、既定の [.NET コード スタイル、書式、および名前付けの規則](/dotnet/fundamentals/code-analysis/code-style-rule-options)が設定されている EditorConfig ファイルを追加します。
 
    ソリューション エクスプローラーに *.editorconfig* ファイルが表示されたら、エディターで開きます。
 
@@ -180,7 +180,7 @@ EditorConfig 規則の範囲を制御するには、リポジトリのルート�
 
 ## <a name="see-also"></a>関連項目
 
-- [.NET コード表記規則](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET コード表記規則](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [言語サービスの EditorConfig のサポート](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [コード エディターの機能](writing-code-in-the-code-and-text-editor.md)
