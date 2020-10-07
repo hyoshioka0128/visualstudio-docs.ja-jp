@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 350c32ea0904913b20f346243de9cb464667289a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113774"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659356"
 ---
 # <a name="code-analysis-project-designer"></a>コード分析 (プロジェクト デザイナー)
 
@@ -64,6 +64,6 @@ ms.locfileid: "76113774"
 
 ## <a name="see-also"></a>参照
 
-- [マネージド コードの警告に対応するコードの解析](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [マネージド コードの警告に対応するコードの解析](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [マネージド コードに対するコード分析の概要](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [チュートリアル: マネージド コードの分析によるコード障害の検出](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
