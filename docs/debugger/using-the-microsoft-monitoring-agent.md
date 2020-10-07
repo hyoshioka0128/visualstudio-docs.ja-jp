@@ -32,7 +32,7 @@ ms.locfileid: "89600003"
 
 3. [手順 3:記録されたイベントを保存する](#SaveEvents)
 
-## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring">手順 1:</a>Microsoft Monitoring Agent を設定する
+## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a>手順 1:Microsoft Monitoring Agent を設定する
 
  Web サーバーでスタンドアロン エージェントを設定して、アプリケーションを変更せずにローカルでの監視を実行します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent のインストール](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12))」をご覧ください。
 
