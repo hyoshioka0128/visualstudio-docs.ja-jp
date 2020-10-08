@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_pure |Microsoft Docs
+title: 'IDiaSymbol:: get_pure |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a7b95816ac594025b43487aecca8ca9ffe7a6e41
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803586"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838198"
 ---
-# <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
+# <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-関数が純粋なかどうかを指定するフラグを取得します。 仮想です。  
+関数が純粋仮想であるかどうかを指定するフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,13 +35,13 @@ HRESULT get_pure ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`関数が純粋な場合。 それ以外の場合、返します`FALSE`します。  
+ 入出力 `TRUE` 関数が純粋仮想の場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> の戻り値は、 `S_FALSE` そのシンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

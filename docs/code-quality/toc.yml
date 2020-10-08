@@ -14,7 +14,20 @@
             - name: 概要
               href: use-roslyn-analyzers.md
             - name: コード品質
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: コード品質のオプション
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: コード品質に関する EditorConfig ファイルの使用
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: コード スタイル
+              items:
+                - name: コードのスタイル設定
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: コード スタイルに関する EditorConfig ファイルの使用
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: ルール オプション
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: ライブ コード分析の構成
               href: configure-live-code-analysis-scope-managed-code.md
             - name: 手動でのコード分析の実行
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: コード メトリックス データの操作
           href: working-with-code-metrics-data.md
+- name: C++ コードの分析
+  items:
+    - name: C および C++ コードの分析
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: EditorConfig の書式規則
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: C++ のコード分析の警告
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings

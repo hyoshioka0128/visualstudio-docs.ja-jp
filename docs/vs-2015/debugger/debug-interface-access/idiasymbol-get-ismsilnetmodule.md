@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_ismsilnetmodule |Microsoft Docs
+title: 'IDiaSymbol:: get_isMSILNetmodule |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 75b4917d7678859e310d422be0279f733a25cfcb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64811677"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "91838208"
 ---
-# <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
+# <a name="idiasymbolget_ismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-モジュールは、.netmodule (メタデータおよびネイティブ シンボルのみを含む Microsoft Intermediate Language (MSIL) モジュール) かどうかを示すフラグを取得します。  
+モジュールが .netmodule (メタデータのみを含みネイティブシンボルを含まない Microsoft 中間言語 (MSIL) モジュール) かどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,24 +35,24 @@ HRESULT get_isMSILNetmodule(
   
 #### <a name="parameters"></a>パラメーター  
  `pFlag`  
- [out]返します`TRUE`; MSIL モジュールの場合を返しますそれ以外の場合、`FALSE`します。  
+ 入出力モジュールが MSIL の場合はを返します `TRUE` 。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="remarks"></a>Remarks  
- このプロパティは、`SymTagCompilandDetails`記号の型 (を参照してください[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md))。  
+## <a name="remarks"></a>注釈  
+ このプロパティは、シンボルの種類から使用でき `SymTagCompilandDetails` ます (「 [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)」を参照してください)。  
   
-## <a name="requirements"></a>必要条件  
+## <a name="requirements"></a>要件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK バージョン 8.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
