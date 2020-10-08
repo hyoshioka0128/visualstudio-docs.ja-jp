@@ -1,5 +1,5 @@
 ---
-title: Idiasymbol::get_datakind |Microsoft Docs
+title: 'IDiaSymbol:: get_dataKind |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a67a55ee5c25dc002d107815fb136420641159d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825928"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838457"
 ---
-# <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
+# <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-データ シンボルの変数の分類を取得します。  
+データシンボルの変数分類を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,21 +35,21 @@ HRESULT get_dataKind ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]値を返します、 [DataKind 列挙型](../../debugger/debug-interface-access/datakind.md)など、グローバル、静的、または定数などのデータの種類を指定する列挙体。  
+ 入出力Global、static、定数などのデータの種類を指定する [Datakind 列挙](../../debugger/debug-interface-access/datakind.md) 型の値を返します。たとえば、のようになります。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
 > [!NOTE]
-> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> の戻り値は、その `S_FALSE` シンボルに対してプロパティを使用できないことを意味します。  
   
-## <a name="requirements"></a>必要条件  
+## <a name="requirements"></a>要件  
   
-|必要条件|説明|  
+|要件|説明|  
 |-----------------|-----------------|  
-|ヘッダー:|Dia2.h|  
-|バージョン:|DIA SDK v7.0|  
+|ヘッダー:|dia2|  
+|バージョン:|DIA SDK v1.0|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [DataKind 列挙型](../../debugger/debug-interface-access/datakind.md)
