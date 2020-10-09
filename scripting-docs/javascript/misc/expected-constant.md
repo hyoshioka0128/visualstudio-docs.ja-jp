@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816645"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861973"
 ---
 # <a name="expected-constant"></a>定数が必要です。
 条件付きコンパイルのテストステートメントで (条件付きコンパイル以外の) 変数を使用しようとしました。 条件付きコンパイルのテストステートメントは、定数に評価される必要があります。  
@@ -31,5 +31,5 @@ ms.locfileid: "85816645"
 - 変数を条件付きコンパイル変数に置き換えます。  
   
 ## <a name="see-also"></a>関連項目  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
- [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [条件付きコンパイル](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [条件付きコンパイル変数](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2093915538f09f425fc961420c4a3078043c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740236"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860449"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能の追加
 
@@ -86,7 +86,7 @@ textDocument/documentLink |
 documentLink/解決 |
 textDocument/名前の変更 | はい
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業開始
 
 > [!NOTE]
 > Visual Studio 2017 バージョン15.8 以降では、共通言語サーバープロトコルのサポートが Visual Studio に組み込まれています。 プレビュー [言語サーバークライアントの VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) バージョンを使用して LSP 拡張機能をビルドした場合、バージョン15.8 以降にアップグレードすると、その拡張機能が動作しなくなります。 LSP 拡張機能を再び動作させるには、次の手順を実行する必要があります。
@@ -143,7 +143,7 @@ LSP には、言語のテキストの色付け方法に関する仕様は含ま�
 
 ## <a name="create-a-simple-language-client"></a>単純な言語クライアントを作成する
 
-### <a name="main-interface---ilanguageclient"></a>Main インターフェイス- [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
+### <a name="main-interface---ilanguageclient"></a>Main インターフェイス- [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true)
 
 VSIX プロジェクトを作成したら、次の NuGet パッケージをプロジェクトに追加します。
 
@@ -152,7 +152,7 @@ VSIX プロジェクトを作成したら、次の NuGet パッケージをプ�
 > [!NOTE]
 > 前の手順を完了した後に NuGet パッケージに対する依存関係を取得すると、Newtonsoft.Jsと StreamJsonRpc パッケージもプロジェクトに追加されます。 **拡張機能が対象とする Visual Studio のバージョンに新しいバージョンがインストールされることが確実である場合を除き、これらのパッケージは更新しないで**ください。 アセンブリは VSIX に含まれません。代わりに、Visual Studio のインストールディレクトリから選択されます。 ユーザーのコンピューターにインストールされているものより新しいバージョンのアセンブリを参照している場合、拡張機能は機能しません。
 
-次に、 [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) インターフェイスを実装する新しいクラスを作成できます。これは、LSP ベースの言語サーバーに接続する言語クライアントに必要な主要なインターフェイスです。
+次に、 [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true) インターフェイスを実装する新しいクラスを作成できます。これは、LSP ベースの言語サーバーに接続する言語クライアントに必要な主要なインターフェイスです。
 
 サンプルを次に示します。
 
@@ -215,11 +215,11 @@ namespace MockLanguageExtension
 }
 ```
 
-実装する必要のある主なメソッドは、 [Onロード async](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) と [アクティブ非同期](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)です。 [Onloaded async](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) は、Visual Studio によって拡張機能が読み込まれ、言語サーバーを開始する準備ができたときに呼び出されます。 このメソッドでは、 [starfinaldelegate](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) をすぐに呼び出して、言語サーバーを開始する必要があることを通知することも、追加のロジックを実行し [て後で](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) 起動することもできます。 **言語サーバーをアクティブ化するには、ある時点で StartAsync 呼び出す必要があります。**
+実装する必要のある主なメソッドは、 [Onロード async](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017&preserve-view=true) と [アクティブ非同期](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true)です。 [Onloaded async](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017&preserve-view=true) は、Visual Studio によって拡張機能が読み込まれ、言語サーバーを開始する準備ができたときに呼び出されます。 このメソッドでは、 [starfinaldelegate](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) をすぐに呼び出して、言語サーバーを開始する必要があることを通知することも、追加のロジックを実行し [て後で](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) 起動することもできます。 **言語サーバーをアクティブ化するには、ある時点で StartAsync 呼び出す必要があります。**
 
-"[アクティブな非同期](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017)" は、 [startasync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017)デリゲートを呼び出すことによって、最終的に呼び出されるメソッドです。 言語サーバーを起動して接続を確立するロジックが含まれています。 サーバーへの書き込みとサーバーからの読み取りのためのストリームを含む接続オブジェクトを返す必要があります。 ここでスローされた例外は、Visual Studio の情報バーメッセージを使用してキャッチされ、ユーザーに表示されます。
+"[アクティブな非同期](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true)" は、 [startasync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true)デリゲートを呼び出すことによって、最終的に呼び出されるメソッドです。 言語サーバーを起動して接続を確立するロジックが含まれています。 サーバーへの書き込みとサーバーからの読み取りのためのストリームを含む接続オブジェクトを返す必要があります。 ここでスローされた例外は、Visual Studio の情報バーメッセージを使用してキャッチされ、ユーザーに表示されます。
 
-### <a name="activation"></a>アクティベーション
+### <a name="activation"></a>アクティブ化
 
 言語クライアントクラスが実装されたら、それに対して2つの属性を定義して、Visual Studio への読み込み方法とアクティブ化方法を定義する必要があります。
 
@@ -248,7 +248,7 @@ VSIX マニフェストデザイナーを開き、[ **アセット** ] タブに
 
 ### <a name="content-type-definition"></a>コンテンツタイプの定義
 
-現在、LSP ベースの言語サーバー拡張機能を読み込む唯一の方法は、ファイルのコンテンツタイプです。 つまり、言語クライアントクラス ( [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)を実装) を定義する場合は、ファイルの種類を定義する必要があります。このクラスを開くと、拡張機能が読み込まれます。 定義されているコンテンツの種類に一致するファイルが開かれていない場合、拡張機能は読み込まれません。
+現在、LSP ベースの言語サーバー拡張機能を読み込む唯一の方法は、ファイルのコンテンツタイプです。 つまり、言語クライアントクラス ( [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true)を実装) を定義する場合は、ファイルの種類を定義する必要があります。このクラスを開くと、拡張機能が読み込まれます。 定義されているコンテンツの種類に一致するファイルが開かれていない場合、拡張機能は読み込まれません。
 
 これを行うには、1つまたは複数のクラスを定義し `ContentTypeDefinition` ます。
 
@@ -270,7 +270,7 @@ namespace MockLanguageExtension
 }
 ```
 
-前の例では、 *. bar* ファイル拡張子で終わるファイルに対して、コンテンツの種類の定義が作成されています。 コンテンツの種類の定義には "bar" という名前が付けられ、 [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017)から派生する必要があります。
+前の例では、 *. bar* ファイル拡張子で終わるファイルに対して、コンテンツの種類の定義が作成されています。 コンテンツの種類の定義には "bar" という名前が付けられ、 [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017&preserve-view=true)から派生する必要があります。
 
 コンテンツタイプの定義を追加した後、言語クライアントの拡張機能をどのような場合に言語クライアントクラスに読み込むかを定義できます。
 
@@ -373,11 +373,11 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 
 ### <a name="custom-messages"></a>カスタムメッセージ
 
-標準言語サーバープロトコルに含まれていない言語サーバーとのメッセージの送受信を容易にする Api が用意されています。 カスタムメッセージを処理するには、言語クライアントクラスで [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) インターフェイスを実装します。 [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) ライブラリは、言語クライアントと言語サーバーの間でカスタムメッセージを転送するために使用されます。 LSP 言語のクライアント拡張機能は他の Visual Studio 拡張機能と同じであるため、拡張機能のカスタムメッセージを使用して、(他の Visual Studio Api を使用して) Visual Studio に追加機能を追加することもできます。
+標準言語サーバープロトコルに含まれていない言語サーバーとのメッセージの送受信を容易にする Api が用意されています。 カスタムメッセージを処理するには、言語クライアントクラスで [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true) インターフェイスを実装します。 [VS-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) ライブラリは、言語クライアントと言語サーバーの間でカスタムメッセージを転送するために使用されます。 LSP 言語のクライアント拡張機能は他の Visual Studio 拡張機能と同じであるため、拡張機能のカスタムメッセージを使用して、(他の Visual Studio Api を使用して) Visual Studio に追加機能を追加することもできます。
 
 #### <a name="receive-custom-messages"></a>カスタムメッセージを受信する
 
-言語サーバーからカスタムメッセージを受信するには、 [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)に[custommessagetarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017)プロパティを実装し、カスタムメッセージの処理方法を認識するオブジェクトを返します。 次に例を示します。
+言語サーバーからカスタムメッセージを受信するには、 [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true)に[custommessagetarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017&preserve-view=true)プロパティを実装し、カスタムメッセージの処理方法を認識するオブジェクトを返します。 次に例を示します。
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -412,7 +412,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 #### <a name="send-custom-messages"></a>カスタムメッセージを送信する
 
-言語サーバーにカスタムメッセージを送信するには、 [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017)に[AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017)メソッドを実装します。 このメソッドは、言語サーバーが開始され、メッセージを受信する準備ができたときに呼び出されます。 [Jsonrpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs)オブジェクトはパラメーターとして渡されます。これにより、 [VS streamjsonrpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) api を使用して、メッセージを言語サーバーに送信することができます。 次に例を示します。
+言語サーバーにカスタムメッセージを送信するには、 [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true)に[AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017&preserve-view=true)メソッドを実装します。 このメソッドは、言語サーバーが開始され、メッセージを受信する準備ができたときに呼び出されます。 [Jsonrpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs)オブジェクトはパラメーターとして渡されます。これにより、 [VS streamjsonrpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) api を使用して、メッセージを言語サーバーに送信することができます。 次に例を示します。
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -447,7 +447,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 拡張機能の開発者が、言語サーバーとの間で送受信された LSP メッセージを傍受する場合があります。 たとえば、拡張機能の開発者は、特定の LSP メッセージに送信されるメッセージパラメーターを変更したり、LSP 機能の言語サーバーから返された結果を変更したりすることができます (入力候補など)。 これが必要な場合、拡張機能の開発者は MiddleLayer API を使用して LSP メッセージをインターセプトできます。
 
-各 LSP メッセージには、傍受のための独自の中間層インターフェイスがあります。 特定のメッセージをインターセプトするには、そのメッセージの中間層インターフェイスを実装するクラスを作成します。 次に、言語クライアントクラスに [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) インターフェイスを実装し、 [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) プロパティにオブジェクトのインスタンスを返します。 次に例を示します。
+各 LSP メッセージには、傍受のための独自の中間層インターフェイスがあります。 特定のメッセージをインターセプトするには、そのメッセージの中間層インターフェイスを実装するクラスを作成します。 次に、言語クライアントクラスに [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true) インターフェイスを実装し、 [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017&preserve-view=true) プロパティにオブジェクトのインスタンスを返します。 次に例を示します。
 
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage

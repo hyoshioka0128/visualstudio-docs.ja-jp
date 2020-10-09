@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91e32971013d2dfcf0ee2dc901d84681522c7e89
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816125"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861648"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>条件付きコンパイルは無効になっています。
 条件付きコンパイル変数を使用しようとしましたが、最初に条件付きコンパイルを有効にしませんでした。 条件付きコンパイルを有効に [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] すると、@ で始まる識別子を条件付きコンパイル変数として解釈するようにコンパイラに指示します。 これを行うには、次のステートメントを使用して条件付きコードを開始します。  
@@ -37,8 +37,8 @@ ms.locfileid: "85816125"
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [条件付きコンパイル](../../javascript/advanced/conditional-compilation-javascript.md)   
- [条件付きコンパイル変数](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on 諸表](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if 諸表](../../javascript/reference/at-if-statement-javascript.md)   
- [@set ステートメント](../../javascript/reference/at-set-statement-javascript.md)
+ [条件付きコンパイル](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [条件付きコンパイル変数](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))   
+ [@cc_on 諸表](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-cc-on)   
+ [@if 諸表](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-if)   
+ [@set ステートメント](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)

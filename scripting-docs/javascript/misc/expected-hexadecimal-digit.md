@@ -14,12 +14,12 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0797d44115fb5b44cb0c670153e8476356bd533
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c6be5302c0c4c6565884fa800da7cb9a002d151
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816567"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861924"
 ---
 # <a name="expected-hexadecimal-digit"></a>16 進数の数字が必要です。
 Unicode エスケープシーケンスが正しく作成されていません。 Unicode エスケープシーケンスは、\u で始まり、その後に4桁の16進数が続きます (それ以上はありません)。 Unicode 16 進数には、数字0-9、大文字の A ~ F、および小文字 (a ~ f) のみを含めることができます。 次の例は、正しい形式の Unicode エスケープシーケンスを示しています。  
@@ -36,4 +36,4 @@ z = "\u1A5F";
     > 文字列でリテラルテキスト \u を使用する場合は、2つの円記号 (\u) を使用し \\ て、最初の円記号をエスケープします。  
   
 ## <a name="see-also"></a>関連項目  
- [データの種類](../../javascript/data-types-javascript.md)
+ [データの種類](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)

@@ -14,12 +14,12 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34b44ed0bb1f1848ae37188aa642c6a4d2ce40e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55f91202184561aff5d0865b326415b3910b99b6
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817074"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862128"
 ---
 # <a name="expected-"></a>'}' が必要です。
 関数本体、ループ、コードブロック、またはオブジェクト初期化子の末尾を示す右中かっこが含まれていませんでした。 このエラーの例としては、ループの本体をマークする左中かっこだけを含む **for** ループが考えられます。  
@@ -29,5 +29,5 @@ ms.locfileid: "85817074"
 - 関数、ループ、ブロック、またはオブジェクト初期化子の終わりを示す右中かっこを追加します。  
   
 ## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
- [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)
+ [関数オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [プログラム フローの制御](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)

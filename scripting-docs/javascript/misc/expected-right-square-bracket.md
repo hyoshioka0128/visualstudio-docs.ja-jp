@@ -14,12 +14,12 @@ ms.assetid: 8a437ace-c73e-4340-885c-70ccb4bb2ee4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5ecc9f1129aff02c6c8e32e42f7e9babffab429
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64f03c48b2db8b91d368e5de6e8d24a2330ccf1b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817568"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861517"
 ---
 # <a name="expected-"></a>']' が必要です。
 配列要素への参照を作成しましたが、右かっこが含まれていませんでした。 配列要素を参照するすべての式には、左角かっこと右角かっこの両方を含める必要があります。  
@@ -29,5 +29,5 @@ ms.locfileid: "85817568"
 - 配列要素を参照する式に右角かっこを追加します。  
   
 ## <a name="see-also"></a>関連項目  
- [配列の使用](../../javascript/advanced/using-arrays-javascript.md)   
- [Array オブジェクト](../../javascript/reference/array-object-javascript.md)
+ [配列の使用](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Array オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)

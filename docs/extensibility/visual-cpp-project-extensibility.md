@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825568"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862457"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ プロジェクトシステムの拡張性とツールセットの統合
 
@@ -435,7 +435,7 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 </Target>
 ```
 
-を使用し `Task.HostObject` てソースファイルの保存されていないコンテンツを取得するには、ターゲットとタスクを、pkgdef 内の特定のプロジェクトの [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017) として登録する必要があります。
+を使用し `Task.HostObject` てソースファイルの保存されていないコンテンツを取得するには、ターゲットとタスクを、pkgdef 内の特定のプロジェクトの [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017&preserve-view=true) として登録する必要があります。
 
 ```reg
 \[$RootKey$\\Projects\\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}\\MSBuildHostObjects\]

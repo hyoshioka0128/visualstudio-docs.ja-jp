@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815332"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861850"
 ---
 # <a name="unexpected-quantifier-javascript"></a>予期しない量指定子です (JavaScript)
 正規表現の検索パターンを作成するときに、無効な繰り返し要素を含む pattern 要素を作成しました。 たとえば、  
@@ -48,5 +48,5 @@ ms.locfileid: "85815332"
 - 検索パターン要素に法的な繰り返し要素のみが含まれていることを確認します。  
   
 ## <a name="see-also"></a>関連項目  
- [正規表現オブジェクト](../../javascript/reference/regular-expression-object-javascript.md)   
- [正規表現の構文 (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [正規表現オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [正規表現の構文 (JavaScript)](/previous-versions/1400241x(v=vs.100))

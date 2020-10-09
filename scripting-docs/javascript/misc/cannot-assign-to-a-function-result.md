@@ -14,12 +14,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84ec3426c80da0578dda7cb99e9160b81e31ab87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aab43ec6a547982cf670d64c8ad8b752160839f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817633"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862341"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>関数の結果に割り当てられません。
 関数の結果に値を割り当てようとしました。 関数の結果を変数に代入することはできますが、変数として使用することはできません。 関数自体に新しい値を代入する場合は、かっこ (関数呼び出し演算子) を省略します。 次の例は、このエラーが生成される状況を示しています。  
@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>関連項目  
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
- [JavaScript コードの記述](../../javascript/writing-javascript-code.md)   
- [関数](../../javascript/functions-javascript.md)
+ [関数オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [JavaScript コードの記述](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)   
+ [関数](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

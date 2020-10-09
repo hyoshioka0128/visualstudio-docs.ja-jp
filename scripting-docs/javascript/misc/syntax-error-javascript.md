@@ -14,12 +14,12 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5026e2a09d673ab18102db1079ca4ddf8c0da268
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b31de0e2db822962642078ed16fa928ad474ea9
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817529"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862495"
 ---
 # <a name="syntax-error-javascript"></a>構文エラー (JavaScript)
 の文法規則の1つ以上に違反するステートメントが作成されました [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。  
@@ -31,4 +31,4 @@ ms.locfileid: "85817529"
 - 誘導かっこまたは中かっこを検索します。  
   
 ## <a name="see-also"></a>関連項目  
- [Error オブジェクト](../../javascript/reference/error-object-javascript.md)
+ [Error オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)
