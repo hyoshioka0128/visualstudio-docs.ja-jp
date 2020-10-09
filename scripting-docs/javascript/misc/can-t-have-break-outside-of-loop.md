@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817659"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862799"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' をループの外に設定できません。
 ループの外側で **break** キーワードを使用しようとしました。 **Break**キーワードは、ループまたはステートメントを終了するために使用され `switch` ます。 ループまたはステートメントの本体に埋め込まれている必要があり `switch` ます。 ただし、 **ラベル** は break キーワードに従うことができます。  
@@ -35,6 +35,6 @@ break labelname;
 - **Break**キーワードが外側のループまたは switch ステートメントの内側にあることを確認します。  
   
 ## <a name="see-also"></a>関連項目  
- [break ステートメント](../../javascript/reference/break-statement-javascript.md)   
- [プログラムフローの制御](../../javascript/controlling-program-flow-javascript.md)   
- [スクリプトのトラブルシューティング](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [break ステートメント](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [プログラムフローの制御](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [スクリプトのトラブルシューティング](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

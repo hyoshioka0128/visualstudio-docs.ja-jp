@@ -14,12 +14,12 @@ ms.assetid: dbe05d7d-fcf6-4823-9c61-4b814d1ad3c4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ede65345bdaab22b26274323ad08779313d186e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816177"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862738"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小数の桁数が有効範囲を超えています。
 関数 **番号. prototype. toExponential**に無効な引数を渡そうとしました。 関数 **Toexponential ()** の引数は、0 ~ 20 (両端を含む) である必要があります。  
@@ -29,4 +29,4 @@ ms.locfileid: "85816177"
 - **Toexponential ()** の引数が大きすぎるか、または小さすぎないことを確認します。  
   
 ## <a name="see-also"></a>関連項目  
- [toExponential メソッド (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
+ [toExponential メソッド (Number)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toexponential)
