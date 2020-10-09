@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
-  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/07/2020
-  ms.locfileid: "89509745"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860529"
 landingContent:
 - title: Azure App Service に配置する
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     - text: Visual Studio のコンテナー ツール
       url: ../containers/overview.md
     - text: Kubernetes のツール
-      url: ../containers/tutorial-kubernetes-tools.md
+      url: ../containers/bridge-to-kubernetes.md
 - title: Azure サービスのデバッグとパフォーマンスの分析
   linkLists:
   - linkListType: tutorial
@@ -81,7 +81,7 @@ landingContent:
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure SignalR
       url: azure-signalr-add-connected-service.md
-    - text: Azure SQL Database
+    - text: Azure SQL データベース
       url: azure-sql-database-add-connected-service.md
     - text: Azure Storage
       url: vs-azure-tools-connected-services-storage.md
@@ -107,7 +107,7 @@ landingContent:
       url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - text: Visual Studio から仮想マシンへのアクセス
       url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-- title: その他の参照情報
+- title: その他のリソース
   linkLists:
   - linkListType: how-to-guide
     links:

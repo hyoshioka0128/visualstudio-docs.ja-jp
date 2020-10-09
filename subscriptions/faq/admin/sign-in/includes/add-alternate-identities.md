@@ -7,13 +7,13 @@ ms.assetid: a8fa961b-4e81-4af4-9913-67dd2c28897e
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: e31cfc372b76fa8cbc0fce4d105c11da9c453fd0
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: c70ad4093de872ff25a9254d35bc1796a5dd95a4
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386101"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838308"
 ---
 ## <a name="what-does-it-mean-when-my-subscribers-add-alternate-identities"></a>サブスクライバーによる代替 ID の追加とはどういう意味ですか?
 
-代替アカウントを追加すると、開発者は、サブスクリプションが割り当てられているものとは異なる ID を利用して、Visual Studio サブスクリプションの特典の一部 (VS IDE、Azure DevOps、Azure) にアクセスすることができます。 サブスクリプションのコピーが他のアカウントに与えられるわけではなく、代替アカウントを利用して 2 つの特典にアクセスする機能のみが与えられます。 [Visual Studio Subscription の ID の詳細を確認してください](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)。
+代替アカウントを追加すると、開発者は、サブスクリプションが割り当てられているものとは異なる ID を利用して、Visual Studio サブスクリプションの特典の一部 (VS IDE、Azure DevOps、Azure) にアクセスすることができます。 サブスクリプションのコピーが他のアカウントに与えられるわけではなく、代替アカウントを利用して 2 つの特典にアクセスする機能のみが与えられます。 [Visual Studio Subscription の ID の詳細を確認してください](../../../../vs-alternate-identity.md)。

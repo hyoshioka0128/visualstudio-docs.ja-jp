@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91641224"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838389"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>特典はどのように利用できますか?
 
@@ -20,7 +20,7 @@ ms.locfileid: "91641224"
 
 サブスクライバー ポータルで利用できる各特典について、含まれているサブスクリプションや特典をアクティブにするための手順などの情報が含まれている記事をご用意しています。
 
-[詳細](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions)に関するドキュメントをご覧ください (左側のナビゲーション ペインで [サブスクリプション] をクリックして、[利点] を選択します)。
+[詳細](../../../../whats-new-in-subscriptions.md)に関するドキュメントをご覧ください (左側のナビゲーション ペインで [サブスクリプション] をクリックして、[利点] を選択します)。
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise の設定プロセスを使用した Visual Studio とは 
 
@@ -36,4 +36,4 @@ GitHub 組織の管理者から招待が送信されると、GitHub からメー
 
 GitHub 組織の招待を承諾すると、<https://my.visualstudio.com/benefits> でのベネフィット タイルの外観が "保留中" から "アクティブ化済み" に変わり、GitHub Enterprise の使用を開始できるようになります。 
 
-[GitHub Enterprise の設定プロセスに関する情報](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md)を参照してください。 
+[GitHub Enterprise の設定プロセスに関する情報](../../../../access-github.md)を参照してください。 
