@@ -16,9 +16,9 @@
             - name: コード品質
               items:
                 - name: コード品質のオプション
-                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
                 - name: コード品質に関する EditorConfig ファイルの使用
-                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: コード スタイル
               items:
                 - name: コードのスタイル設定
@@ -27,7 +27,7 @@
                   displayName: Configure code style analyzers
                   href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
                 - name: ルール オプション
-                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
             - name: ライブ コード分析の構成
               href: configure-live-code-analysis-scope-managed-code.md
             - name: 手動でのコード分析の実行

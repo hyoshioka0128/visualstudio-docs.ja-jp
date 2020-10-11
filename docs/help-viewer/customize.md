@@ -1,5 +1,6 @@
 ---
 title: ヘルプ ビューアーのカスタマイズ
+description: ヘルプビューアーをカスタマイズする方法について説明します。 レイアウト、フォントサイズ、最大結果数、英語のコンテンツを含めるかどうかを構成します。
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284973"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879035"
 ---
 # <a name="customize-the-help-viewer"></a>ヘルプ ビューアーのカスタマイズ
 フォント サイズ、結果の最大数、英語のコンテンツを含めるかどうかなどの他のオプションと同様に、[ヘルプ ビューアー] ウィンドウのレイアウトをカスタマイズすることができます。

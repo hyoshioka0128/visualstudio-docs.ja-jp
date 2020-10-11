@@ -1,5 +1,6 @@
 ---
 title: ヘルプ ビューアーの管理者ガイド
+description: Microsoft ヘルプビューアー管理者ガイドを参照してください。 インターネットからローカルヘルプコンテンツを展開するか、事前にインストールされたローカルヘルプコンテンツをクライアントコンピューターに展開します。
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825126"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878892"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアーの管理者ガイド
 
@@ -35,7 +36,7 @@ ms.locfileid: "67825126"
 
 ## <a name="deploy-local-help-content-from-the-internet"></a>インターネットからローカル ヘルプ コンテンツを配置する
 
-**ヘルプ コンテンツ マネージャー** (*HlpCtntMgr.exe*) を利用し、インターネットからクライアント コンピューターにローカル ヘルプ コンテンツを配置できます。 次の構文を使用します。
+**ヘルプ コンテンツ マネージャー** (*HlpCtntMgr.exe*) を利用し、インターネットからクライアント コンピューターにローカル ヘルプ コンテンツを配置できます。 使用する構文は以下のとおりです。
 
 ```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>

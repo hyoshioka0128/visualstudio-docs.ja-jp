@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238375"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927992"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でのマネージコードのレガシ分析の概要
 
@@ -84,7 +84,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>チームビルドの統合
 
-ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

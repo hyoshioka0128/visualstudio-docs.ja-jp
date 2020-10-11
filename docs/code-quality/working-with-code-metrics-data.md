@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587083"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927979"
 ---
 # <a name="use-the-code-metrics-results-window"></a>[コードメトリックスの結果] ウィンドウを使用する
 
@@ -82,9 +82,9 @@ ms.locfileid: "75587083"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>コードメトリックスの結果に基づいて作業項目を作成する
 
-[**コードメトリックスの結果**] ウィンドウの結果に基づいて、 [Azure Boards](/azure/devops/boards/index?view=vsts)作業項目を作成できます。 作業項目が作成されると、Visual Studio によって [ **タイトル** ] フィールドにタイトルとコードメトリックスデータが自動的に [ **履歴** ] タブに入力されます。
+[**コードメトリックスの結果**] ウィンドウの結果に基づいて、 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)作業項目を作成できます。 作業項目が作成されると、Visual Studio によって [ **タイトル** ] フィールドにタイトルとコードメトリックスデータが自動的に [ **履歴** ] タブに入力されます。
 
-作業項目の Azure Boards の詳細については、「 [作業項目](/azure/devops/boards/work-items/index?view=vsts)」を参照してください。
+作業項目の Azure Boards の詳細については、「 [作業項目](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)」を参照してください。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>結果に基づいて作業項目を作成するには
 
@@ -106,7 +106,7 @@ ms.locfileid: "75587083"
 
 4. [ **ファイル** ] メニューの [ **すべてを保存** ] をクリックして、作業項目を保存します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コードメトリックスの値](../code-quality/code-metrics-values.md)
 - [方法: コードメトリックスデータを生成する](../code-quality/how-to-generate-code-metrics-data.md)

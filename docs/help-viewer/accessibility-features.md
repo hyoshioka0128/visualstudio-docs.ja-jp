@@ -1,5 +1,6 @@
 ---
 title: ヘルプ ビューアーのユーザー補助機能
+description: Microsoft ヘルプビューアーのユーザー補助機能の一覧で、キーボードアクセス、フォントサイズ、ウィンドウサイズ、およびヘルプビューアーの位置を確認します。
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825130"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879074"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Visual Studio ヘルプ ビューアーのユーザー補助機能
 Microsoft は、あらゆるユーザーの皆様に使いやすい製品とサービスをお届けできるように努めています。 このトピックでは、広範な範囲の能力を持つユーザーが Microsoft ヘルプ ビューアーをさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明します。
