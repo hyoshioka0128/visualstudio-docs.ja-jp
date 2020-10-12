@@ -2,7 +2,7 @@
 title: 'Visual Studio のドキュメント:新機能の履歴 '
 titleSuffix: ''
 description: Visual Studio ドキュメントの新機能に関する履歴
-ms.date: 09/01/2020
+ms.date: 09/30/2020
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,41 +15,141 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8505f98163c57fe276bcf4c76195fe843300394f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809467"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659304"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio ドキュメントの新機能に関する履歴
 
-Visual Studio ドキュメントの新機能に関する履歴へようこそ。このトピックには、2020 年 8 月より前 (2020 年 7 月以降) のドキュメントに対する主な変更点が含まれます。 最新の新機能については、[Visual Studio の最新情報](whats-new-visual-studio-docs.md)に関するドキュメントを参照してください。
+Visual Studio ドキュメントの新機能に関する履歴へようこそ。このトピックには、2020 年 9 月より前 (2020 年 7 月以降) のドキュメントに対する主な変更点が含まれます。 最新の新機能については、[Visual Studio の最新情報](whats-new-visual-studio-docs.md)に関するドキュメントを参照してください。
+
+## <a name="august-2020"></a>2020 年 8 月
+### <a name="azure"></a>Azure
+
+**新しい記事**
+
+- [Visual Studio 接続済みサービスを使用して Azure Application Insights を追加する](../azure/azure-app-insights-add-connected-service.md) - VS 2019 16.7 の接続済みサービス
+- [Visual Studio 接続済みサービスを使用して Azure Cache for Redis を追加する](../azure/azure-cache-for-redis-add-connected-service.md) - VS 2019 16.7 の接続済みサービス
+- [Visual Studio 接続済みサービスを使用して Azure Cosmos DB をアプリに追加する](../azure/azure-cosmosdb-add-connected-service.md) - VS 2019 16.7 の接続済みサービス
+- [Visual Studio 接続済みサービスを使用して Azure SignalR を追加する](../azure/azure-signalr-add-connected-service.md) - VS 2019 16.7 の接続済みサービス
+- [Azure SQL Database への接続を追加する](../azure/azure-sql-database-add-connected-service.md) - VS 2019 16.7 の接続済みサービス
+
+**更新された記事**
+
+- [Visual Studio 接続済みサービスを使用した Azure ストレージの追加](../azure/vs-azure-tools-connected-services-storage.md)
+  - VS 2019 16.7 の接続済みサービス
+  - Azure Storage 接続済みサービスの記事: UI およびサポートされているプロジェクトの種類の更新
+
+### <a name="code-quality"></a>コード品質
+
+**新しい記事**
+
+- [CA1310: 正確さのために StringComparison を指定する](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) - CA1310 のドキュメントを追加、CA1307 のドキュメントを更新
+- [CA1837: Process.GetCurrentProcess().Id の代わりに Environment.ProcessId を使用する](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) - CA1837 のドキュメント
+- [CA1838: P/Invoke に対して `StringBuilder` パラメーターを使用しない](/dotnet/fundamentals/code-analysis/quality-rules/ca1838) - CA1838 のドキュメントを追加
+- [CA2008: TaskScheduler を渡さずにタスクを作成しない](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) - CA2008 のドキュメントを追加
+- [CA2249: String.IndexOf の代わりに String.Contains を使用することを検討する](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) - CA2249 のドキュメント
+- [CA2361: DataSet.ReadXml() を含む自動生成クラスが信頼されていないデータで使用されていないことを確認する](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) - DataSet/DataTable の規則の追加
+- [CA2362: シリアル化可能な自動生成型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性がある](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) - DataSet/DataTable の規則の追加
+- [IL3000: 単一ファイルとして発行するときにアセンブリ ファイル パスへのアクセスを使用しない](/dotnet/fundamentals/code-analysis/quality-rules/il3000) - IL3000 のドキュメントを追加
+- [IL3001: 単一ファイルとして発行するときにアセンブリ ファイル パスにアクセスしない](/dotnet/fundamentals/code-analysis/quality-rules/il3001) - IL3001 のドキュメントを追加
+
+**更新**
+
+- [CA1002: ジェネリック リストを公開しない](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) - 構成可能な項目の追加 - API サーフェス セクション
+- [CA1046: 参照型で演算子 equals をオーバーロードしない](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) - 構成可能な項目の追加 - API サーフェス セクション
+- [CA1307: 明確化のために StringComparison を指定する](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) - CA1310 のドキュメントを追加、CA1307 のドキュメントを更新
+- [CA1700: 列挙型の値に &#39;Reserved&#39; という名前を指定しない](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) - 構成可能な項目の追加 - API サーフェス セクション
+- [CA1707: 識別子にアンダースコアを含めることはできない](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) - 構成可能な項目の追加 - API サーフェス セクション
+- [CA1822: メンバーを static に設定する](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) - 構成可能な項目の追加 - API サーフェス セクション
+- [CA2351:DataSet.ReadXml() の入力が信頼されていることを確認する](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) - DataSet/DataTable の規則の追加
+- [サードパーティ製アナライザーのインストール](../code-quality/install-roslyn-analyzers.md) - コード分析のドキュメントの構造とタイトルの変更
+
+### <a name="containers"></a>コンテナー
+
+**更新された記事**
+
+- [Visual Studio を使用して ASP.NET Docker コンテナーをコンテナー レジストリにデプロイする](../containers/hosting-web-apps-in-docker.md) - Visual Studio 16.7 の発行 UI のコンテナー ツールの更新
+- [Visual Studio Kubernetes ツールの概要](../containers/bridge-to-kubernetes.md) - Kubernetes チュートリアル: 削除に対する手順の追加
+
+### <a name="deployment"></a>デプロイ
+
+**新しい記事**
+
+- [Visual Studio Installer Projects 拡張機能 と .NET Core 3.1](../deployment/installer-projects-net-core.md) - インストーラー プロジェクトの .NET Core 3.1 の機能に対する新しいヘルプ ページの作成
+
+**更新された記事**
+
+- [フォルダー、IIS、Azure、または別の場所にアプリを配置する](../deployment/deploying-applications-services-and-components-resources.md) - 配置に関する更新
+- [Visual Studio での配置](../deployment/index.yml) - 配置に関する更新
+
+### <a name="extensibility"></a>機能拡張
+
+**更新された記事**
+- [プロジェクトのサブタイプ](../extensibility/internals/project-subtypes.md) - リスト項目のインデントの修正
+- [Visual Studio の色の値の参照](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) - 列ヘッダーがない AB#1759333 の修正
+
+### <a name="get-started"></a>作業開始
+
+**更新された記事**
+
+- [手順 5:Azure に ASP.NET Core アプリをデプロイする](../get-started/csharp/tutorial-aspnet-core-ef-step-05.md) - 新しい接続済みサービスの UI に関するビデオ チュートリアルの更新
+
+### <a name="ide"></a>IDE
+
+**新しい記事**
+
+- [Visual Studio の F1 ヘルプ キーを変更する](./not-in-toc/change-f1-help-key.md) - 既定の F1 ヘルプ ページのリファクタリング
+- [テキスト エディターの F1 ヘルプ](./not-in-toc/default-f1-text-editor.md) - 既定の F1 ヘルプ ページのリファクタリング
+- [`typeof` を `nameof` に変換](./reference/convert-typeof-to-nameof.md) - typeof から nameof への変換のリファクタリング
+- [LINQ 式の簡略化](./reference/simplify-linq-expression.md) -LINQ 式簡略化のリファクタリング
+
+**更新された記事**
+
+- [Visual Studio のウィンドウ レイアウトをカスタマイズする](./customizing-window-layouts-in-visual-studio.md) - 「ウィンドウ レイアウトをカスタマイズする」トピックへのモニカーされた縦型のドキュメント タブの情報の追加
+- [Visual Studio または Visual Studio Installer に関する問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)
+  - NMI に詳細情報を追加しました
+  - [問題の報告] ページ全体を再作成しました
+- [F1 ヘルプ](./not-in-toc/default.md) - 既定の F1 ヘルプ ページのリファクタリング
+- [[自動バックアップ] ([オプション] ダイアログ ボックス - [環境])](./reference/autorecover-environment-options-dialog-box.md) - 更新された自動保存ファイルの場所に関する情報の追加
+- [[オプション]、[テキスト エディター]、[基本] (Visual Basic)、[詳細]](./reference/options-text-editor-basic-visual-basic.md) - インライン パラメーター名のヒントに関する基本的なドキュメントの追加
+- [[オプション]、[テキスト エディター]、[C#]、[詳細]](./reference/options-text-editor-csharp-advanced.md) - インライン パラメーター名のヒントに関する基本的なドキュメントの追加
+- [Visual Studio のパフォーマンスのヒントとテクニック](./visual-studio-performance-tips-and-tricks.md) - "マップ モードの無効化" と "右端での折り返しの無効化" の情報の追加
+- [Visual Studio 2019 の新機能](./whats-new-visual-studio-2019.md) - 16.7 GA 情報に関する Visual Studio 2019 の新機能の更新
+
+### <a name="rtvs"></a>RTVS
+
+**更新された記事**
+
+- [SQL Server と R の使用](../rtvs/integrating-sql-server-with-r.md) - 列ヘッダーを含むように表を修正
 
 ## <a name="july-2020"></a>2020 年 7 月
 ### <a name="code-quality"></a>コード品質
 
 **新しい記事**
 
-- [CA1417:P/Invoke の文字列パラメーターに `OutAttribute` を使用しない](../code-quality/ca1417.md) - CA1417 のドキュメントを追加
-- [CA1805:不必要に初期化しない。](../code-quality/ca1805.md) - CA1805 のドキュメントを追加
-- [CA1836:使用可能な場合は、Count よりも IsEmpty を優先します](../code-quality/ca1836.md) - CA1836 の記事を追加 (Count よりも IsEmpty を優先します)
-- [CA2016:CancellationToken パラメーターを 1 つのメソッドに転送する](../code-quality/ca2016.md) - ドキュメント CA2016 - CancellationToken パラメーターを 1 つのメソッドに転送する
-- [CA2350:DataTable.ReadXml() の入力が信頼されていることを確認してください](../code-quality/ca2350.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2351:DataSet.ReadXml() の入力が信頼されていることを確認してください](../code-quality/ca2351.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2352:シリアル化可能な型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](../code-quality/ca2352.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2353:シリアル化可能な型の安全でない DataSet または DataTable](../code-quality/ca2353.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](../code-quality/ca2354.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](../code-quality/ca2355.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2356:Web の逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable 型](../code-quality/ca2356.md) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA1417:P/Invoke の文字列パラメーターに `OutAttribute` を使用しない](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) - CA1417 のドキュメントを追加
+- [CA1805:不必要に初期化しない。](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) - CA1805 のドキュメントを追加
+- [CA1836:使用可能な場合は、Count よりも IsEmpty を優先します](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) - CA1836 の記事を追加 (Count よりも IsEmpty を優先します)
+- [CA2016:CancellationToken パラメーターを 1 つのメソッドに転送する](/dotnet/fundamentals/code-analysis/quality-rules/ca2016) - ドキュメント CA2016 - CancellationToken パラメーターを 1 つのメソッドに転送する
+- [CA2350:DataTable.ReadXml() の入力が信頼されていることを確認してください](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA2351:DataSet.ReadXml() の入力が信頼されていることを確認してください](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA2352:シリアル化可能な型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA2353:シリアル化可能な型の安全でない DataSet または DataTable](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [CA2356:Web の逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable 型](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
 
 ### <a name="containers"></a>コンテナー
 
 **新しい記事**
 
-- [Local Process with Kubernetes を構成する](../containers/configure-local-process-with-kubernetes.md) - Local Process with Kubernetes: yaml の構成
-- [Local Process with Kubernetes (プレビュー) の使用](../containers/local-process-kubernetes.md) - 開発スペースの移行
-- [Local Process with Kubernetes のしくみ](../containers/overview-local-process-kubernetes.md)
+- [Local Process with Kubernetes を構成する](../containers/configure-bridge-to-kubernetes.md) - Local Process with Kubernetes: yaml の構成
+- [Local Process with Kubernetes (プレビュー) の使用](../containers/bridge-to-kubernetes.md) - 開発スペースの移行
+- [Local Process with Kubernetes のしくみ](../containers/overview-bridge-to-kubernetes.md)
   - Local Process for Kubernetes:ルーティング セクションの追加
   - 開発スペースの移行
 

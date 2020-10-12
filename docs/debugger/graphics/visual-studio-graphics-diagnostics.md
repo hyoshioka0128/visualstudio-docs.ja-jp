@@ -1,5 +1,6 @@
 ---
 title: グラフィックス診断 | Microsoft Docs
+description: Visual Studio グラフィックス診断の概要。
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 829c51c0e2020a154dc485dbfc4db25e0b399e57
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187737"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671380"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
+>[!NOTE]
+> Visual Studio は、DirectX 12 ゲーム用に Windows の PIX を推奨しています。 [Windows の PIX](https://aka.ms/PIXonWindows) は、DirectX 12 を完全にサポートするパフォーマンス チューニングおよびデバッグ ツールです。 [詳細を参照する](visual-studio-graphics-diagnostics-directx-12.md)か、[こちらでダウンロード](https://aka.ms/downloadPIX)してください。
+
 Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレンダリングとパフォーマンスを記録し、問題を分析するためのツール セットです。 グラフィックス診断は、Windows PC でローカルに実行されているアプリ、Windows デバイス エミュレーターで実行されているアプリ、あるいはリモート PC またはデバイスで実行されているアプリに対して使用できます。
 
  グラフィックス診断のワークフローは、アプリが Direct3D を使用する方法の記録を、アプリの実行中にライブでキャプチャすることから始まります。記録したアプリの動作は、直ちに分析し、共有し、後で使用するために保存できます。 キャプチャ セッションは、Visual Studio から手動で開始して制御するか、コマンド ラインのキャプチャ ツール **dxcap.exe** を使用して開始できます。 また、グラフィックス診断キャプチャ API を使用してプログラムからキャプチャ セッションを開始し、制御することもできます。
@@ -68,3 +72,4 @@ Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレ
 | - | - |
 | [デバッガー機能ツアー](../debugger-feature-tour.md) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のデバッグ機能を紹介します。 |
 | [DirectX のグラフィックスとゲーム](/windows/win32/directx) | DirectX グラフィックスの手法を説明する文書を提供します。 |
+| [Visual Studio での DirectX 12 のサポート](visual-studio-graphics-diagnostics-directx-12.md) | Visual Studio での DirectX 12 の説明 |

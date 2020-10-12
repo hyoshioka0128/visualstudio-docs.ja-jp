@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862410"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749506"
 ---
 # <a name="supported-visual-studio-features-preview"></a>サポートされている Visual Studio の機能 (プレビュー)
 
@@ -42,15 +42,15 @@ IntelliSense、コードのナビゲーション、診断、提案などのス�
 * 構文の強調表示
 * クイック ヒント*
 * HTML、CSS、Razor エディター* - 部分的なサポート。
-* JavaScript エディター* - 部分的なサポート。
+* JavaScript および TypeScript エディター* - 部分的なサポート。
 
 まだ使用不可能:
 
-* IntelliSense* - オートコンプリート/メンバー一覧フィルターの一部が使用できません。 インポートされていない型と [ウォッチ] ウィンドウの Intellisense の入力候補はまだ使用できません。
-* コードのナビゲーション* - ほとんどのコマンドがサポートされていますが、[ベースに移動] とパスが指定された [フォルダーを指定して検索] は、まだサポートされていません。
+* IntelliSense* - オートコンプリート/メンバー一覧フィルターの一部が使用できません。 インポートされていない型と [ウォッチ] ウィンドウの IntelliSense の入力候補はまだ使用できません。
+* コード ナビゲーション* - ほとんどのコマンドがサポートされています。 パスの指定による [基本へ移動] および [複数のファイル内を検索] は、まだサポートされていません。
 * クイック ヒント* - クイック ヒントの色付けはサポートされていません。
-* HTML、CSS、Razor エディター* - 診断、Intellisense 入力候補、クイック ヒント、スマート インデント。 現在、セマンティックの色付け、ナビゲーション コマンドなどはサポートされていません。
-* JavaScript エディター* - スクリプト ブロック (たとえば、HTML と CSHTML ファイルの JavaScript コンテンツ) とセマンティックの強調表示はまだサポートされていません。 既知のイシューでの電球の機能とリンティング。
+* HTML、CSS、Razor エディター* - 診断、IntelliSense 入力候補、クイック ヒント、スマート インデント。 現在、セマンティックの色付け、ナビゲーション コマンドなどはサポートされていません。
+* JavaScript および TypeScript エディター* - スクリプト ブロック (たとえば、HTML と CSHTML ファイルの JavaScript コンテンツ) とセマンティックの強調表示はまだサポートされていません。 既知のイシューでの電球の機能とリンティング。
 * CMake ターゲット ビュー
 * CMake プロジェクト設定エディター
 * Ctrl + F7 (ファイルのコンパイル)
@@ -65,14 +65,14 @@ IntelliSense、コードのナビゲーション、診断、提案などのス�
 * プロジェクト テンプレートと項目テンプレート
 * .NET Core と ASP.NET Core のプロジェクト
 * C++ コンソール アプリ - CMake と .vcxproj がサポートされています
-* Linux をターゲットとする C++ アプリ - ほとんどは GUI 以外でサポートされています。 WSL、プラットフォーム固有の Intellisense、およびビルドをインストールしてプロビジョニングする機能。
+* Linux をターゲットとする C++ アプリ - ほとんどは GUI 以外でサポートされています。 WSL、プラットフォーム固有の IntelliSense、およびビルドをインストールしてプロビジョニングする機能。
 * プロジェクト ファイルの編集 - ほとんどがサポートされています。 一部の入力候補、構文の強調表示、高度な編集機能が不足しています。
 * GitHub アカウント - Codespaces を作成して接続し、GitHub のアカウントで利用可能なリソースにアクセスするために使用できます。
 * Azure CLI - サインインした Visual Studio ID またはキーチェーン アカウントは共有しません。 ブラウザーベースのログインはサポートされていませんが、`az login --use-device-code` を使用して、統合ターミナル内で認証できます。
 
 まだ使用不可能:
 
-* UI デザイナー - WinForms と WPF デザイナー
+* UI デザイナー - WinForms、WPF、およびリソース デザイナー
 * Visual Basic および F# のプロジェクト
 * .NET Framework をターゲットとするプロジェクト
 * Docker Compose プロジェクト

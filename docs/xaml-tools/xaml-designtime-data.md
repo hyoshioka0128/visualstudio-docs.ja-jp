@@ -1,0 +1,160 @@
+---
+title: Visual Studio の XAML デザイナーでデザイン時のデータを使用する
+description: XAML でデザイン時のデータを使用する方法について説明します。
+ms.date: 09/29/2020
+ms.topic: overview
+author: alihamie
+ms.author: tglee
+manager: jillfra
+monikerRange: vs-2019
+ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659475"
+---
+# <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio の XAML デザイナーでデザイン時のデータを使用する
+
+一部のレイアウトでは、データなしで視覚化するのが困難です。 このドキュメントでは、デスクトップ プロジェクトで作業している開発者が XAML デザイナーでデータをモック化するために使用できる方法の 1 つを確認します。 この方法は、既存の無視が可能な “d:” 名前空間を使用して行います。 この方法によって、完全なモックのビュー モデルを作成する必要なく、デザイン時のデータをページまたはコントロールにすばやく追加できます。また、この変更によるリリース ビルドへの影響を心配することなく、プロパティの変更がアプリケーションに与える影響をテストすることもできます。 すべての d: データは XAML デザイナーでのみ使用され、無視が可能な名前空間の値がアプリケーションにコンパイルされることはありません。
+
+> [!NOTE]
+> Xamarin.Forms を使用している場合は、[Xamarin.Forms のデザイン時のデータ](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)に関する記事を参照してください。
+
+## <a name="design-time-data-basics"></a>デザイン時のデータの基本
+
+デザイン時のデータは、XAML デザイナーでのコントロールの視覚化を容易にするために設定するモック データです。 開始するには、次のコード行を XAML ドキュメントのヘッダーに追加します (まだ存在していない場合)。
+
+```xml 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+mc:Ignorable="d"
+```
+
+名前空間を追加した後は、`d:` が実行時以外の XAML デザイナーにのみ表示されるように、これを属性またはコントロールの前に配置することができます。
+
+たとえば、通常はデータがバインドされている TextBlock にテキストを追加できます。
+
+```xml
+<TextBlock Text="{Binding Name}" d:Text="Name!" />
+```
+
+[![TextBlock 内のテキストを含むデザイン時のデータ](media\xaml-design-time-textblock.png "Label 内のテキストを含むデザイン時のデータ")](media\xaml-design-time-textblock.png#lightbox)
+
+この例で、`d:Text` がない場合、XAML デザイナーの TextBlock には何も表示されません。 代わりに、"Name!" と表示され、 TextBlock には実行時の実際のデータが含まれます。
+
+`d:` は、色、フォント サイズ、間隔など、任意の UWP または WPF .NET Core コントロールの属性と共に使用できます。 また、コントロール自体に追加することもできます。
+
+```xml
+<d:Button Content="Design Time Button" />
+```
+
+[![ボタン コントロールを使用したデザイン時のデータ](media\xaml-design-time-button.png "ボタン コントロールを使用したデザイン時のデータ")](media\xaml-design-time-button.png#lightbox)
+
+この例では、ボタンはデザイン時にのみ表示されます。 このメソッドを使用して、カスタム コントロールのプレースホルダーを配置するか、別のコントロールを試します。 `d:` のすべての属性とコントロールは、実行時に無視されます。
+
+## <a name="preview-images-at-design-time"></a>デザイン時に画像をプレビューする
+
+ページにバインドされている、または動的に読み込まれた画像に対して、デザイン時のソースを設定できます。 XAML デザイナーに表示する画像をプロジェクトに追加します。 これで、デザイン時にその画像を XAML デザイナーに表示できます。
+
+```xml
+<Image Source={Binding ProfilePicture} d:Source="DesignTimePicture.jpg" />
+```
+
+> [!NOTE]
+> この例の画像は、ソリューション内に存在している必要があります。
+
+## <a name="design-time-data-for-listviews"></a>ListView のデザイン時のデータ
+
+ListView は、デスクトップ アプリにデータを表示するための一般的な方法です。 ただし、データなしに視覚化することは困難です。 この機能を使用して、デザイン時のインライン データ ItemSource を作成できます。 XAML デザイナーには、デザイン時の ListView の配列の内容が表示されます。 WPF .NET Core の例を次に示します。 system:String 型を使用するには、XAML ヘッダーに `xmlns:system="clr-namespace:System;assembly=mscorlib` が含まれていることを確認してください。
+
+```xml
+<StackPanel>
+    <ListView ItemsSource="{Binding Items}">
+        <d:ListView.ItemsSource>
+            <x:Array Type="{x:Type system:String}">
+                <system:String>Item One</system:String>
+                <system:String>Item Two</system:String>
+                <system:String>Item Three</system:String>
+            </x:Array>
+        </d:ListView.ItemsSource>
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <TextBlock Text="{Binding ItemName}" d:Text="{Binding .}" />
+        </DataTemplate>
+    </ListView.ItemTemplate>
+   </ListView>
+</StackPanel>
+```
+
+[![ListView を使用したデザイン時のデータ](media\xaml-design-time-listview-strings.png "ListView を使用したデザイン時のデータ")](media\xaml-design-time-listview-strings.png#lightbox)
+
+前の例は、XAML デザイナーの 3 つの Textblock がある ListView を示しています。
+
+また、データ オブジェクトの配列を作成することもできます。 たとえば、`City` データ オブジェクトのパブリック プロパティは、デザイン時のデータとして構築できます。
+
+```csharp
+namespace Cities.Models
+{
+    public class City
+    {
+        public string Name { get; set; }
+        public string Country { get; set; }
+    }
+}
+```
+
+XAML でクラスを使用するには、ルート ノードで名前空間をインポートする必要があります。
+
+```xaml
+xmlns:models="clr-namespace:Cities.Models"
+```
+
+```xml
+<StackPanel>
+    <ListView ItemsSource="{Binding Items}">
+        <d:ListView.ItemsSource>
+            <x:Array Type="{x:Type models:City}">
+                <models:City Name="Seattle" Country="United States"/>
+                <models:City Name="London" Country="United Kingdom"/>
+                <models:City Name="Panama City" Country="Panama"/>
+            </x:Array>
+        </d:ListView.ItemsSource>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                 <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="{Binding Name}" Margin="0,0,5,0" />
+                    <TextBlock Text="{Binding Country}" />
+                 </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</StackPanel>
+```
+
+[![ListView を使用したデザイン時のデータの実際のモデル](media\xaml-design-time-listview-models.png "ListView を使用したデザイン時のデータの実際のモデル")](media\xaml-design-time-listview-models.png#lightbox)
+
+ここでのベネフィットは、コントロールをモデルのデザイン時の静的なバージョンにバインドできることです。
+
+## <a name="troubleshooting"></a>トラブルシューティング
+
+このセクションに記載されていない問題が発生した場合は、[[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) ツールを使用してお知らせください。
+
+### <a name="requirements"></a>要件
+
+- デザイン時のデータには、Visual Studio 2019 バージョン [16.7](/visualstudio/releases/2019/release-notes) 以降が必要です。
+
+- .NET Core および UWP 用の Windows Presentation Foundation (WPF) を対象とする Windows デスクトップ プロジェクトがサポートされている。 この機能は、".NET Framework 用の新しい WPF XAML デザイナー" プレビュー機能が有効になっている場合に .NET Framework でも使用できます。
+
+- Visual Studio 2019 バージョン 16.7 以降では、この機能は、WPF および UWP のフレームワークのすべての組み込みコントロールで動作します。 16.8 プレビュー リリースでは、サードパーティ製コントロールのサポートが提供されるようになりました。
+
+### <a name="the-xaml-designer-stopped-working"></a>XAML デザイナーの動作が停止した
+
+XAML ファイルを閉じて再度開き、プロジェクトのクリーンアップとリビルドを試してみてください。
+
+## <a name="see-also"></a>関連項目
+
+- [Xamarin.Forms プレビューアーを使用したデザイン時のデータ](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
+- [WPF アプリの XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
+- [UWP アプリの XAML](/windows/uwp/xaml-platform/xaml-overview)
+- [Xamarin.Forms アプリの XAML](/xamarin/xamarin-forms/xaml/)
