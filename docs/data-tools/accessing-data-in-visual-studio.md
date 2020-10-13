@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509836"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959823"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Visual Studio でのデータの使用
 
@@ -113,7 +113,7 @@ ADO.NET で使用するデータベースには、カスタム *ADO.NET デー�
 
 ## <a name="native-c"></a>ネイティブ C++
 
-SQL Server に接続する C++ アプリケーションでは、ほとんどの場合、 [SQL Server に Microsoft® ODBC ドライバー 13.1](https://www.microsoft.com/download/details.aspx?id=53339) を使用する必要があります。 サーバーがリンクされている場合は、OLE DB が必要です。そのためには、 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。 OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。 詳細については、「 [Visual C++ でのデータアクセス](/cpp/data/data-access-in-cpp)」を参照してください。
+SQL Server に接続する C++ アプリケーションでは、ほとんどの場合、 [SQL Server に Microsoft® ODBC ドライバー 13.1](https://www.microsoft.com/download/details.aspx?id=53339) を使用する必要があります。 サーバーがリンクされている場合は、OLE DB が必要です。そのためには、 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。 OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。 詳細については、「[Visual C++ でのデータ アクセス](/cpp/data/data-access-in-cpp)」を参照してください。
 
 REST サービスを使用する c++ プログラムでは、 [C++ REST SDK](https://github.com/Microsoft/cpprestsdk)を使用できます。
 
