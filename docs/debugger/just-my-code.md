@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 867477fd3e490f91e81fb91c8be267ede83c8d2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536566"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>"マイ コードのみ" を使用してユーザー コードのみをデバッグする
@@ -73,7 +73,7 @@ ms.locfileid: "85536566"
 
 それ以上のユーザー コードがない場合、デバッグはそれが終わるか、別のブレークポイントにヒットするか、エラーがスローされるまで続行されます。
 
-<a name="BKMK_NET_Breakpoint_behavior"></a> デバッガーが非ユーザー コードで中断した場合 (たとえば、 **[デバッグ]** ** > [すべて中断]** を使用して非ユーザー コードで一時停止する場合)、 **[No Source]\(ソースがありません\)** ウィンドウが表示されます。 次に、 **[デバッグ]**  >  **[ステップ]** コマンドを使用して、ユーザー コードの次の行に進むことができます。
+<a name="BKMK_NET_Breakpoint_behavior"></a> デバッガーが非ユーザー コードで中断した場合 (たとえば、 **[デバッグ]** > **[すべて中断]** を使用して非ユーザー コードで一時停止する場合)、 **[No Source]\(ソースがありません\)** ウィンドウが表示されます。 次に、 **[デバッグ]**  >  **[ステップ]** コマンドを使用して、ユーザー コードの次の行に進むことができます。
 
 ハンドルされない例外が非ユーザー コードで発生した場合、デバッガーは例外が生成されたユーザー コード行で停止します。
 
