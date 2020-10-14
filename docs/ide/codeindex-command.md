@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591165"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928490"
 ---
 # <a name="codeindex-command"></a>CodeIndex コマンド
 
@@ -25,7 +25,7 @@ ms.locfileid: "75591165"
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
-**CodeIndex** コマンドを使用するには、**Team Foundation 管理者**セキュリティ グループのメンバーである必要があります。 [Azure DevOps Services と TFS 向けに定義されているアクセス許可とグループ](/azure/devops/organizations/security/permissions?view=vsts)に関するページを参照してください。
+**CodeIndex** コマンドを使用するには、**Team Foundation 管理者**セキュリティ グループのメンバーである必要があります。 [Azure DevOps Services と TFS 向けに定義されているアクセス許可とグループ](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true)に関するページを参照してください。
 
 > [!NOTE]
 > 管理資格情報を使ってログオンしている場合でも、このコマンドを実行するには、昇格した特権でコマンド プロンプト ウィンドウを開く必要があります。 また、Team Foundation のアプリケーション層からこのコマンドを実行する必要があります。

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641670"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830778"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -50,7 +50,7 @@ ms.locfileid: "89641670"
 
 - **ASP.NET**、**ASP.NET Core**、**Python**、**Node.js**:次のいずれかの方法を使用して、Azure App Service または Azure App Service Linux (コンテナーを使用) に発行します。
 
-  - アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops) で Azure DevOps を使用します。
+  - アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true) で Azure DevOps を使用します。
 
   - アプリを一回だけ (手動で) 配置する場合、Visual Studio の **[発行]** ツールを使用します。
 
@@ -107,7 +107,7 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 - MSI ベースのインストーラー パッケージを [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) を使用して作成できます。 これはコマンドライン ツールセットです。
 
-- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 
+- MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。
 
   > [!NOTE]
   > InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていません。今後の使用可能性については、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
@@ -122,7 +122,7 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 ## <a name="continuous-deployment"></a>継続的配置
 
-Azure Pipelines を使用し、アプリの継続的配置を有効にできます。 詳細については、[Azure Pipelines](/azure/devops/pipelines/index?view=vsts) に関するページと [Azure に配置する](/azure/devops/deploy-azure/index?view=vsts)方法に関するページを参照してください。
+Azure Pipelines を使用し、アプリの継続的配置を有効にできます。 詳細については、[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) に関するページと [Azure に配置する](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true)方法に関するページを参照してください。
 
 ## <a name="deploy-a-sql-database"></a>SQL データベースを配置する
 

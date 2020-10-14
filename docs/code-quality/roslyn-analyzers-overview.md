@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658439"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860493"
 ---
 # <a name="overview-of-source-code-analysis"></a>ソース コード分析の概要
 
@@ -77,7 +77,7 @@ Visual Studio 拡張機能としてアナライザーをインストールする
 
 コマンド ラインから、または継続的インテグレーション (CI) ビルドの一部としてなど、ビルド時にルールを適用するには、次のいずれかのオプションを選択できます。
 
-- .Net SDK に既定でアナライザーが含まれている .NET 5.0 プロジェクトを作成します。 コード分析は、.NET 5.0 以降を対象とするプロジェクトで既定で有効になっています。 [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) プロパティを true に設定すると、以前の .NET バージョンを対象とするプロジェクトでコード分析を有効にできます。
+- .Net SDK に既定でアナライザーが含まれている .NET 5.0 プロジェクトを作成します。 コード分析は、.NET 5.0 以降を対象とするプロジェクトで既定で有効になっています。 [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) プロパティを true に設定すると、以前の .NET バージョンを対象とするプロジェクトでコード分析を有効にできます。
 
 - アナライザーを NuGet パッケージとしてインストールします。 拡張機能としてアナライザーをインストールする場合、アナライザーの警告とエラーはビルド レポートに示されません。
 

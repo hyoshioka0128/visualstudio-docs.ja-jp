@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035743"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928096"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>コード化された UI テストを使用してコードをテストする
 
@@ -444,7 +444,7 @@ myWinCheckBox.Checked = true;
 
 - [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)
 
-- [ビルド プロセスでのテストの実行](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [ビルド プロセスでのテストの実行](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [方法: テスト エージェントを設定して、デスクトップと対話するテストを実行する](/previous-versions/ee291332(v=vs.140))
 
@@ -458,7 +458,7 @@ myWinCheckBox.Checked = true;
 
 ## <a name="see-also"></a>関連項目
 
-- [手動テストの記録と再生](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [手動テストの記録と再生](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [チュートリアル: コード化された UI テストの作成、編集、保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

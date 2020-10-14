@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038440"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928672"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
 Visual Studio の単体テストは、 *.runsettings* ファイルを使用して構成できます。 たとえば、テストが実行される .NET のバージョン、テスト結果のディレクトリ、テストの実行中に収集されるデータを変更できます。 *.runsettings* ファイルをよく使うのは、[コード カバレッジ分析](../test/customizing-code-coverage-analysis.md)をカスタマイズする場合です。
 
-[コマンド ライン](vstest-console-options.md)から、IDE から、あるいは Azure Test Plans または Team Foundation Server (TFS) を使用する[ビルド ワークフロー](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)で実行されるテストを実行設定ファイルを使用して構成できます。
+[コマンド ライン](vstest-console-options.md)から、IDE から、あるいは Azure Test Plans または Team Foundation Server (TFS) を使用する[ビルド ワークフロー](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)で実行されるテストを実行設定ファイルを使用して構成できます。
 
 実行設定ファイルは省略可能です。 特殊な構成を行う必要がない場合、 *.runsettings* ファイルは不要です。
 
@@ -35,7 +35,7 @@ Visual Studio の単体テストは、 *.runsettings* ファイルを使用し�
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [コマンド ライン](#specify-a-run-settings-file-from-the-command-line)
-   - Azure Test Plans または Team Foundation Server (TFS) を使用する[ビルド ワークフロー](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+   - Azure Test Plans または Team Foundation Server (TFS) を使用する[ビルド ワークフロー](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 4. カスタムの実行設定を使用する単体テストを実行します。
 
@@ -83,20 +83,20 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 実行設定ファイルを自動検出するには、それをソリューションのルートに配置します。
 
 実行設定ファイルの自動検出が有効になっている場合、このファイル内の設定は実行されるすべてのテストに適用されます。 runsettings ファイルの自動検出は、次の 2 つの方法で有効にすることができます。
-  
+
 - **[ツール]** 、 **[オプション]** 、 **[テスト]** 、 **[runsettings ファイルの自動検出]** の順に選択する
 
    ![Visual Studio 2019 での [runsettings ファイルの自動検出] オプション](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - **[テスト]** 、 **[実行設定の構成]** 、 **[runsettings ファイルの自動検出]** を選択する
-    
+
    ![Visual Studio 2019 での [runsettings ファイルの自動検出] メニュー](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>実行設定ファイルを手動で選択する
 
 IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューション全体の runsettings ファイルの選択]** を選択し、 *.runsettings* ファイルを選択します。
 
-   - このソリューションのルートに *.runsettings* ファイルが存在する場合は、このファイルによりオーバーライドされます。このファイルは実行されるすべてのテストに適用されます。  
+   - このソリューションのルートに *.runsettings* ファイルが存在する場合は、このファイルによりオーバーライドされます。このファイルは実行されるすべてのテストに適用されます。
    - このファイルの選択は、ローカルにのみ保持されます。
 
 ![Visual Studio 2019 の [テスト] の [ソリューション全体の runsettings ファイルの選択] メニュー](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ IDE で、 **[テスト]** > **[実行設定の構成]** > **[ソリューショ
 
 - 現在、プロジェクト レベルの実行設定は、C#、VB、C++、および F# プロジェクトに対してサポートされています。
 - プロジェクトに対して指定したファイルにより、ソリューションで指定された他のあらゆる実行設定ファイルがオーバーライドされます。
-- [これらの MSBuild プロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)を使用し、runsettings ファイルのパスを指定できます。 
+- [これらの MSBuild プロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)を使用し、runsettings ファイルのパスを指定できます。
 
 プロジェクトに対して *.runsettings* ファイルを指定する例:
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -186,7 +186,7 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapter が配置されているディレクトリの 1 つまたは複数のパス|
 |**TestSessionTimeout**||指定されたタイムアウトを超えたときにユーザーがテスト セッションを終了できるようにします。 タイムアウトを設定すると、リソースが適切に消費され、テスト セッションが設定された時間に制限されます。 この設定は、**Visual Studio 2017 バージョン 15.5** 以降で使用できます。|
-|**DotnetHostPath**||testhost を実行するために使用される dotnet host へのカスタム パスを指定します。 これは、dotnet/runtime リポジトリをビルドする場合など、独自の dotnet をビルドするときに便利です。 このオプションを指定すると、testhost.exe の検索がスキップされ、常に testhost.dll が使用されます。 
+|**DotnetHostPath**||testhost を実行するために使用される dotnet host へのカスタム パスを指定します。 これは、dotnet/runtime リポジトリをビルドする場合など、独自の dotnet をビルドするときに便利です。 このオプションを指定すると、testhost.exe の検索がスキップされ、常に testhost.dll が使用されます。
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 要素 (診断データ アダプター)
 
@@ -231,7 +231,7 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
 
 ### <a name="blame-data-collector"></a>Blame データ コレクター
 
-このオプションは、テスト ホストがクラッシュする原因となる問題のあるテストを分離するのに役立ちます。 コレクターを実行すると、出力ファイル (*Sequence.xml*) が *TestResults* に作成されます。これには、クラッシュ前のテストの実行順序がキャプチャされます。 
+このオプションは、テスト ホストがクラッシュする原因となる問題のあるテストを分離するのに役立ちます。 コレクターを実行すると、出力ファイル (*Sequence.xml*) が *TestResults* に作成されます。これには、クラッシュ前のテストの実行順序がキャプチャされます。
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ public void HomePageTest()
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -392,10 +392,10 @@ public void HomePageTest()
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -462,4 +462,4 @@ public void HomePageTest()
 
 - [テスト実行を構成する](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio テスト タスク (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio テスト タスク (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)

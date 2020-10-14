@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: bddb3afb602416159c75a5be9923fce14c089fc2
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: ff2e78698bb9180a50a4c2c8014b88dfd07b0b77
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181054"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829903"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>チーム エクスプローラーのプロジェクトに接続する
 
@@ -45,4 +45,4 @@ ms.locfileid: "86181054"
 - [チュートリアル: リポジトリからプロジェクトを開く](../get-started/tutorial-open-project-from-repo.md)
 - [チーム エクスプローラーのリファレンス](reference/team-explorer-reference.md)
 - [プロジェクトに接続する (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)
-- [プロジェクトへの接続のトラブルシューティング](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)
+- [プロジェクトへの接続のトラブルシューティング](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops&preserve-view=true)

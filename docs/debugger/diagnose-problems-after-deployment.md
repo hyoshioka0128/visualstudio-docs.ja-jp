@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599568"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928057"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使って配置後に問題を診断します (C#、Visual Basic)
 
@@ -49,7 +49,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  ビルド パイプラインを設定して、ソース、ビルド、およびシンボルの場所をビルド マニフェスト (BuildInfo.config ファイル) に追加します。 Team Foundation ビルドは自動的にこのファイルを作成し、そのファイルをプロジェクトの出力フォルダーに配置します。
 
-1. [ビルド パイプラインを編集するか、新しいビルド パイプラインを作成します。](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [ビルド パイプラインを編集するか、新しいビルド パイプラインを作成します。](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![TFS 2013 でビルド パイプラインを表示する](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +63,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
      ![ビルド パイプライン TFS 2013 でシンボル パスを設定する](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     シンボルの詳細については、「 [シンボル データを発行する](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)」を参照してください。
+     シンボルの詳細については、「 [シンボル データを発行する](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true)」を参照してください。
 
 4. この MSBuild 引数を追加して、TFS とシンボルの場所をビルド マニフェスト ファイルに含めます。
 
@@ -319,7 +319,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
    ビルド システムに関する情報 ( `"TeamBuild"` または `"MSBuild"`) と以下の必須プロパティ:
 
-  - **BuildLabel** (TeamBuild の場合):ビルド名と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](/azure/devops/pipelines/build/options?view=vsts)」をご覧ください。
+  - **BuildLabel** (TeamBuild の場合):ビルド名と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true)」をご覧ください。
 
   - **SymbolPath** (推奨):セミコロンで区切られたシンボル (PDB ファイル) の場所の URI の一覧。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。
 
@@ -379,7 +379,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
      ![ソース管理から開く &#45; 移行済み](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。
- **A:** ご利用の[ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
+ **A:** ご利用の[ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> Q:信頼されていないシンボルに関する次のメッセージが表示されるのはなぜですか。
  ![信頼されていないシンボル パスでデバッグするか](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

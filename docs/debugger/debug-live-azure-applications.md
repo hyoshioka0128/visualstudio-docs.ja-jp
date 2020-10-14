@@ -1,5 +1,6 @@
 ---
 title: ライブ ASP.NET Azure アプリをデバッグする
+titleSuffix: Visual Studio Enterprise
 description: スナップショット デバッガーを使用してスナップポイントを設定し、スナップショットを表示する方法について説明します。
 ms.custom: ''
 ms.date: 03/16/2018
@@ -12,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 526f7b7cc1af3dd5a370c74baa09cbab50b3d866
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350668"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879087"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure アプリをデバッグする
 
