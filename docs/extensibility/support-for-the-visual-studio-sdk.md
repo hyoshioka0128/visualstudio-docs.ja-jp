@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699642"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099376"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK のサポート
 Visual Studio 統合開発環境 (IDE) を拡張する方法について質問があるお客様には、いくつかのサポートオプションが用意されています。
@@ -30,7 +30,7 @@ Visual Studio 統合開発環境 (IDE) を拡張する方法について質問�
  Visual studio 開発チームのメンバー、および Visual Studio を拡張するその他の開発者のメンバーは、多くの場合、microsoft. public. vstudio の機能拡張ニュースグループに参加します。 このニュースグループは、管理されたニュースグループです。 MSDN ユニバーサルサブスクライバーの場合は、Microsoft が応答できるように、スパムなしのエイリアスを登録するようにしてください。
 
 ### <a name="msdn-forums"></a>MSDN フォーラム
- [MSDN フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home)では、仲間や専門家とチャットする別の方法が提供されています。 フォーラムのグラフィカルユーザーインターフェイス (UI) は、ニュースグループよりも使いやすくするように設計されています。 [Visual Studio 機能拡張フォーラム](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)は、拡張性に関する質問への回答の検索を開始するのに最適な場所です。 他のユーザーが既に同じ質問をしている可能性があるため、質問する前に必ず検索してください。
+ [MSDN フォーラム](https://social.msdn.microsoft.com/Forums/en-US/home)では、仲間や専門家とチャットする別の方法が提供されています。 フォーラムのグラフィカルユーザーインターフェイス (UI) は、ニュースグループよりも使いやすくするように設計されています。 [Visual Studio 機能拡張フォーラム](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true)は、拡張性に関する質問への回答の検索を開始するのに最適な場所です。 他のユーザーが既に同じ質問をしている可能性があるため、質問する前に必ず検索してください。
 
 ### <a name="visual-studio-gallery"></a>Visual Studio ギャラリー
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/)は、拡張機能とサンプルコードを格納する場所です。 Visual Studio での生産性とユーザーエクスペリエンスを向上させるツール、Vspackage と Managed Extensibility Framework (MEF) の使用方法を示すサンプルアプリケーション、およびその他の種類のサンプルが用意されています。

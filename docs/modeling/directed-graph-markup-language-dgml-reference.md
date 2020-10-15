@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bef53e9288f04c9ed7fce6ff7e5ddd69020798f
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596637"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099285"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Directed Graph Markup Language (DGML) リファレンス
 
@@ -21,7 +21,7 @@ Directed Graph Markup Language (DGML) は、視覚化と、複雑性の分析を
 一部のバージョンの Visual Studio では、DGML 機能のサブセットのみがサポートされています。「 [アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 > [!NOTE]
-> .dgml ファイルを編集するときは、各要素とその値に使用できる属性が IntelliSense によって識別されます。 属性で色を指定するには、一般的な色の名前 ("Blue" など) または ARGB 16 進値 ("#ffa0b1c3" など) を使用してください。 DGML では、WPF (Windows Presentation Foundation) 色定義形式の小さいサブセットを使用します。 詳細については、「 [Colors クラス](/dotnet/api/system.windows.media.colors?view=netframework-4.8)」を参照してください。
+> .dgml ファイルを編集するときは、各要素とその値に使用できる属性が IntelliSense によって識別されます。 属性で色を指定するには、一般的な色の名前 ("Blue" など) または ARGB 16 進値 ("#ffa0b1c3" など) を使用してください。 DGML では、WPF (Windows Presentation Foundation) 色定義形式の小さいサブセットを使用します。 詳細については、「 [Colors クラス](/dotnet/api/system.windows.media.colors?view=netframework-4.8&preserve-view=true)」を参照してください。
 
 ## <a name="dgml-syntax"></a><a name="DGML"></a> DGML 構文
 

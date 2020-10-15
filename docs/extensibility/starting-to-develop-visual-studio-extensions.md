@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286194"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099389"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 拡張機能の開発を始める
 
@@ -91,7 +91,7 @@ Visual studio 拡張機能を開発するには、visual studio に加えて vis
 ## <a name="how-can-i-distribute-my-extension"></a>拡張機能を配布するにはどうすればよいですか。
  拡張機能を別のコンピューターにインストールしたり、vsix ファイルとして友人に送信したりすることができます。これは、ダブルクリックしてインストールできます。 VSIX パッケージの詳細については、「 [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)」を参照してください。
 
- また、拡張機能を Visual Studio Marketplace に発行することもできます。これにより、Visual Studio の多くのユーザーが表示できるようになります。 Marketplace に拡張機能をパッケージ化する例については、「 [チュートリアル: Visual Studio 拡張機能の発行](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)」を参照してください。 Marketplace で発行するために必要な作業の詳細については、「 [Visual Studio の製品と拡張機能](/azure/devops/extend/overview?view=vsts)」を参照してください。
+ また、拡張機能を Visual Studio Marketplace に発行することもできます。これにより、Visual Studio の多くのユーザーが表示できるようになります。 Marketplace に拡張機能をパッケージ化する例については、「 [チュートリアル: Visual Studio 拡張機能の発行](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)」を参照してください。 Marketplace で発行するために必要な作業の詳細については、「 [Visual Studio の製品と拡張機能](/azure/devops/extend/overview?view=vsts&preserve-view=true)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
