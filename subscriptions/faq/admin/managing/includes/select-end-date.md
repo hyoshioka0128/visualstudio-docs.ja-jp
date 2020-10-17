@@ -1,18 +1,18 @@
 ---
 title: サブスクリプションの終了日を選択するにはどうすればよいですか?
 description: サブスクリプションは常に、利用可能な最善の終了日を使用して割り当てられます。 たとえば、契約に終了日が...
-ms.faqid: group1_7
+ms.faqid: group1_8
 ms.topic: include
 ms.assetid: 387800f0-e420-496b-af7e-4f0cd7e4898b
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: efb6d2b7abfc145bb7cca3b092ae360a670db41d
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 30ed8269681a46650197f41664904c8aeac063a5
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386381"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92157828"
 ---
 ## <a name="how-can-i-select-an-end-date-for-a-subscription"></a>サブスクリプションの終了日を選択するにはどうすればよいですか?
 
