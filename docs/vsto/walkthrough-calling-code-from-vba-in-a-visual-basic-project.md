@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90842200"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298260"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Office Word 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `ThisDocument` ホスト項目クラスにメソッドを追加する、VBA コードにメソッドを公開する、および、ドキュメント内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -88,7 +89,7 @@ ms.locfileid: "90842200"
 
 7. ドキュメントを保存して、Word を終了します。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  これで、先ほど作成したマクロ対応のドキュメントを使用する、Word のドキュメント レベルのプロジェクトを作成できます。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
@@ -208,14 +209,14 @@ ms.locfileid: "90842200"
 
 7. 変更を保存せずに Word を終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Office ソリューションでの VBA からのコード呼び出しについて詳しくは、次のトピックを参照してください。
 
 - VBA から Visual C# カスタマイズのコードを呼び出します。 このプロセスは、Visual Basic のプロセスとは異なります。 詳細については、「 [チュートリアル: Visual C&#35; プロジェクトの VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)」を参照してください。
 
 - VBA から VSTO アドインのコードを呼び出します。 詳細については、「 [チュートリアル: VBA から VSTO アドインのコードを呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)
 - [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
 - [方法: Visual Basic プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

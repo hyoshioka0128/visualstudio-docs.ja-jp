@@ -1,5 +1,6 @@
 ---
 title: '方法: ドキュメントレベルのカスタマイズにカスタム XML 部分を追加する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92148a6f084a4cc04b4587781e750e4fd0df133f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538334"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298450"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>方法: ドキュメントレベルのカスタマイズにカスタム XML 部分を追加する
   ドキュメント レベルのカスタマイズにカスタム XML 部分を作成すると、Microsoft Office Excel ブックまたは Microsoft Office Word 文書に XML データを格納できます。 詳細については、「 [カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)」を参照してください。

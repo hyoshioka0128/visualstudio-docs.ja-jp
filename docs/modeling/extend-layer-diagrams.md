@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301489"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298423"
 ---
 # <a name="extend-dependency-diagrams"></a>依存関係図の拡張
 
-コードを記述して、依存関係図を作成および更新したり、Visual Studio の依存関係ダイアグラムに対してプログラム コードの構造を検証したりできます。 図のショートカット (コンテキスト) メニューに表示するコマンドを追加し、ドラッグ アンド ドロップ ジェスチャをカスタマイズし、テキスト テンプレートからレイヤー モデルにアクセスすることができます。 これらの拡張機能を VSIX (Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布することができます。
+コードを記述して、依存関係図を作成および更新したり、Visual Studio の依存関係図に対してプログラムコードの構造を検証したりすることができます。 図のショートカット (コンテキスト) メニューに表示するコマンドを追加し、ドラッグ アンド ドロップ ジェスチャをカスタマイズし、テキスト テンプレートからレイヤー モデルにアクセスすることができます。 これらの拡張機能を VSIX (Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布することができます。
 
 ## <a name="requirements"></a>必要条件
 
 レイヤー拡張機能を開発するコンピューターに以下の項目がインストールされている必要があります。
 
-- Visual Studio
+- Visual Studio
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- モデリング SDK のビジュアル スタジオ
+- Visual Studio のモデリング SDK
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-レイヤー拡張機能を実行するコンピューターに、適切なエディションの Visual Studio がインストールされている必要があります。 Visual Studio のどのエディションが依存関係図をサポートしているかを確認するには、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+レイヤー拡張機能を実行するコンピューターには、適切なエディションの Visual Studio がインストールされている必要があります。 依存関係図をサポートする Visual Studio のエディションについては、「 [アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

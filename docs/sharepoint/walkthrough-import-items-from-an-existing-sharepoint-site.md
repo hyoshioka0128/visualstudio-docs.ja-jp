@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: 既存の SharePoint サイトからのアイテムのインポート |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017113"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298638"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>チュートリアル: 既存の SharePoint サイトからの項目のインポート
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>チュートリアル: 既存の SharePoint サイトからのアイテムのインポート
   このチュートリアルでは、既存の SharePoint サイトから sharepoint プロジェクトに項目をインポートする方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
  このチュートリアルでは、次のタスクについて説明します。
@@ -143,4 +144,4 @@ ms.locfileid: "86017113"
 ## <a name="see-also"></a>関連項目
 - [既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
-- [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

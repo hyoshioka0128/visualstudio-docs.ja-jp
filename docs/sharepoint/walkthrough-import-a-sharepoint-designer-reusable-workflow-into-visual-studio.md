@@ -1,5 +1,6 @@
 ---
-title: 'チュートリアル: SharePoint Designer の再利用可能なワークフローを Visual Studio にインポートする |Microsoft Docs'
+title: 'チュートリアル: SharePoint Designer の再利用可能なワークフローのインポート |Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015699"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298032"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>チュートリアル: SharePoint Designer の再利用可能なワークフローを Visual Studio にインポートする
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>チュートリアル: SharePoint Designer の再利用可能なワークフローのインポート
+
   このチュートリアルでは、sharepoint Designer 2010 で作成された再利用可能なワークフローを sharepoint ワークフロープロジェクトにインポートする方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
  SharePoint デザイナーで作成したワークフロー、または *宣言型のワークフロー*は、コードではなくステートメントで構成され [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 SharePoint デザイナー2010では *再利用可能なワークフロー*が導入されています。これは、sharepoint サイトのさまざまなリストで使用できる、移植性のある、宣言型のワークフローです。
@@ -186,7 +188,7 @@ ms.locfileid: "86015699"
 
      これにより、プロジェクトのデバッグ時に一覧がすぐに表示されます。
 
-11. " **再利用可能な SharePoint 2010 のインポート" ワークフロー** テンプレートでは、インポートされたワークフローの関連付けプロパティの値がインポートされないため、これらの値を入力する必要があります。 手順は次のとおりです。
+11. " **再利用可能な SharePoint 2010 のインポート" ワークフロー** テンプレートでは、インポートされたワークフローの関連付けプロパティの値がインポートされないため、これらの値を入力する必要があります。 これを行うには、次の手順を実行します。
 
     1. **ソリューションエクスプローラー**で、[ **SPD_Workflow_TestFT** ] ノードを選択します。
 
@@ -263,4 +265,4 @@ ms.locfileid: "86015699"
 ## <a name="see-also"></a>関連項目
 - [既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
-- [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

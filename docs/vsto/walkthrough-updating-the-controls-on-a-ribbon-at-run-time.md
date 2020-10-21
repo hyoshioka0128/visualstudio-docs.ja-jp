@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: 実行時にリボンのコントロールを更新する'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255346"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298059"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>チュートリアル: 実行時にリボンのコントロールを更新する
 
@@ -155,7 +156,7 @@ ms.locfileid: "71255346"
 
     3. **Orders**
 
-    4. **製品**
+    4. **成果物**
 
 9. **[完了]** をクリックします。
 
@@ -301,7 +302,7 @@ Office UI をカスタマイズする方法の詳細については、次のト�
 - [リボンの概要](../vsto/ribbon-overview.md)
 - [統合言語クエリ (LINQ: Language-Integrated Query)](/dotnet/csharp/linq/index)
 - [方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [リボンデザイナー](../vsto/ribbon-designer.md)
+- [リボン デザイナー](../vsto/ribbon-designer.md)
 - [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [リボンオブジェクトモデルの概要](../vsto/ribbon-object-model-overview.md)
 - [Outlook のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)

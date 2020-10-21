@@ -13,27 +13,27 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541792"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298651"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 ドメイン固有言語 (DSL) は、特化した Visual Studio ソリューションを使用して作成されます。
 
-## <a name="prerequisites"></a>[前提条件]
+## <a name="prerequisites"></a>前提条件
 
 この手順を開始する前に、次のコンポーネントをインストールします。
 
-- Visual Studio
+- Visual Studio
 - Visual Studio SDK ( **Visual studio 拡張機能の開発** ワークロードの一部としてインストールされます)
 - モデリング SDK (Visual Studio コンポーネントとしてインストールされます)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
+## <a name="creating-a-domain-specific-language-solution"></a>Domain-Specific 言語ソリューションの作成
 
 1. 新しい **ドメイン固有言語デザイナー** プロジェクトを作成して、DSL ウィザードを起動します。
 
@@ -48,9 +48,9 @@ ms.locfileid: "85541792"
 
 2. DSL テンプレートを選択します。
 
-    [ **ドメイン固有言語オプションの選択** ] ページで、[ **最小言語**] などのソリューションテンプレートの1つを選択します。 作成する DSL に似たテンプレートを選択します。
+    [ **Domain-Specific 言語オプションの選択** ] ページで、[ **最小言語**] などのソリューションテンプレートの1つを選択します。 作成する DSL に似たテンプレートを選択します。
 
-    ソリューションテンプレートの詳細については、「 [ドメイン固有言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
+    ソリューションテンプレートの詳細については、「 [Domain-Specific 言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
 
 3. [ **ファイル拡張子** ] ページでファイル名拡張子を入力します。 コンピューターと DSL をインストールするすべてのコンピューターで一意である必要があります。 " **この拡張機能を使用しているアプリケーションまたは Visual Studio エディターはありません**" というメッセージが表示されます。
 
@@ -70,7 +70,7 @@ ms.locfileid: "85541792"
 
 ### <a name="solution-settings-page"></a>[ソリューションの設定] ページ
  **ドメイン固有言語の基になるテンプレートを選択してください。**
-作成する DSL に似たテンプレートを選択します。 さまざまなテンプレートは、便利な開始点を提供します。 ソリューションテンプレートを選択すると、ウィザードに説明が表示されます。 ソリューションテンプレートの詳細については、「 [ドメイン固有言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
+作成する DSL に似たテンプレートを選択します。 さまざまなテンプレートは、便利な開始点を提供します。 ソリューションテンプレートを選択すると、ウィザードに説明が表示されます。 ソリューションテンプレートの詳細については、「 [Domain-Specific 言語ソリューションテンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
 
  **ドメイン固有言語に名前を付けるにはどうすればよいですか?**
 既定では、ソリューション名になります。 この値からコードが生成されます。 これは、C# クラス名として有効である必要があります。
@@ -114,9 +114,9 @@ ms.locfileid: "85541792"
 
  **既存の厳密な名前のキーを使用する** DSL を別のアセンブリと統合する場合は、このオプションを使用します。
 
- 厳密な名前付けの詳細については、「 [厳密な名前付きアセンブリの作成と使用](/dotnet/standard/assembly/create-use-strong-named)」を参照してください。
+ 厳密な名前付けの詳細については、「 [Strong-Named アセンブリの作成と使用](/dotnet/standard/assembly/create-use-strong-named)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
 - [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

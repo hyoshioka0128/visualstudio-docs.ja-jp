@@ -1,5 +1,6 @@
 ---
 title: Silverlight web パーツを作成し、SharePoint の OData を表示する
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017163"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298502"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>チュートリアル: SharePoint の OData を表示する Silverlight web パーツの作成
   SharePoint 2010 では、OData によってリストデータが公開されます。 SharePoint では、OData サービスは RESTful サービス ListData .svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法について説明します。 Silverlight アプリケーションは、ListData. svc を使用して SharePoint アナウンスリストの情報を表示します。 詳細については、「 [SharePoint FOUNDATION REST インターフェイス](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 」と「 [Open Data Protocol](https://www.odata.org/)」を参照してください。
@@ -68,7 +69,7 @@ ms.locfileid: "86017163"
 
 #### <a name="to-customize-the-silverlight-application"></a>Silverlight アプリケーションをカスタマイズするには
 
-1. Silverlight アプリケーションの system.string にアセンブリ参照を追加します。 詳細については、「 [方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)する」を参照してください。
+1. Silverlight アプリケーションの system.string にアセンブリ参照を追加します。 詳細については、「 [方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除](/previous-versions/wkze6zky(v=vs.140))する」を参照してください。
 
 2. **ソリューションエクスプローラー**で、[**参照**] のショートカットメニューを開き、[**サービス参照の追加**] を選択します。
 
@@ -231,5 +232,5 @@ ms.locfileid: "86017163"
     > Silverlight では、ドメイン間でデータにアクセスするときに、web アプリケーションの悪用に使用できるセキュリティの脆弱性を防ぐことができます。 Silverlight でリモートデータにアクセスするときに問題が発生した場合は、「 [ドメインの境界を越えてサービスを利用できるよう](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))にする」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [SharePoint の Web パーツを作成する](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [SharePoint ソリューションパッケージの配置、発行、およびアップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

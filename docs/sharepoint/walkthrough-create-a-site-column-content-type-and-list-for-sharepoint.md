@@ -1,5 +1,6 @@
 ---
 title: SharePoint のサイト列、コンテンツタイプ、およびリストの作成
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,14 +20,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015268"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298373"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>チュートリアル: SharePoint のサイト列、コンテンツタイプ、およびリストの作成
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>チュートリアル: SharePoint のサイト列、コンテンツ タイプ、リストの作成
   次の手順では、カスタム SharePoint サイトの列 (または *フィールド*) と、サイト列を使用するコンテンツの種類を作成する方法について説明します。 また、新しいコンテンツタイプを使用するリストを作成する方法も示します。
 
  このチュートリアルでは、次のタスクについて説明します。
@@ -176,7 +177,7 @@ ms.locfileid: "86015268"
 
     - 医師名
 
-    - コメント
+    - 説明
 
 9. [ **列表示名**] で、空の行を選択し、カスタムリスト列を追加して、「 **病院**」という名前を指定します。 データ型 **は単一行のテキスト**としてそのままにします。
 
@@ -211,7 +212,7 @@ ms.locfileid: "86015268"
 
     - 所在
 
-    - コメント
+    - 説明
 
 14. [**プロパティ**] の一覧で、[**並べ替えとグループ化**] プロパティを選択し、省略記号ボタンをクリックして [**並べ替えとグループ化**] ダイアログ![ボックスを表示](../sharepoint/media/ellipsisicon.gif "省略記号アイコン")します。
 
@@ -239,7 +240,7 @@ ms.locfileid: "86015268"
      新しいレコードが一覧に表示されます。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint のサイト列、コンテンツタイプ、およびリストの作成](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
+- [SharePoint のサイト列、コンテンツ タイプ、リストの作成](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
 - [方法: カスタムフィールド型を作成する](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [コンテンツの種類](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))

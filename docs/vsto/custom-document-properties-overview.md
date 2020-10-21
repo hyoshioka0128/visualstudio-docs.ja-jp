@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951176"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298459"
 ---
 # <a name="custom-document-properties-overview"></a>カスタムドキュメントプロパティの概要
 
@@ -50,10 +50,10 @@ ms.locfileid: "62951176"
 
   *SolutionID*は、が [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ソリューションを識別するために使用する GUID です。 *SolutionID*は、プロジェクトのビルド時に自動的に生成されます。 **Vstolocal**用語は、アセンブリを [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ドキュメントと同じフォルダーから読み込む必要があることをに示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [ドキュメントレベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
 - [Office ソリューションのアプリケーションマニフェストと配置マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [方法: ClickOnce を使用して Office ソリューションを発行する](/previous-versions/bb386095(v=vs.110))
 - [方法: カスタムドキュメントプロパティを作成および変更する](../vsto/how-to-create-and-modify-custom-document-properties.md)

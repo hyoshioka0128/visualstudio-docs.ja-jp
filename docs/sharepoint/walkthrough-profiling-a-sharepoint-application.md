@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017098"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298628"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>チュートリアル: SharePoint アプリケーションのプロファイリング
   このチュートリアルでは、Visual Studio のプロファイル ツールを使用し、SharePoint アプリケーションのパフォーマンスを最適化する方法について説明します。 アプリケーション例は SharePoint フィーチャー イベント レシーバーで、これにはフィーチャー イベント レシーバーのパフォーマンスを低下させるアイドル ループが含まれています。 Visual Studio プロファイラーを使用すると、プロジェクトの最も負荷の高い (実行速度が遅い) 部分を特定し、除去することができます。これは、 *ホットパス*とも呼ばれます。
@@ -275,4 +275,4 @@ ms.locfileid: "86017098"
 ## <a name="see-also"></a>関連項目
 - [パフォーマンスセッションの概要](../profiling/performance-session-overview.md)
 - [パフォーマンスプロファイルの初心者向けガイド](../profiling/beginners-guide-to-performance-profiling.md)
-- [Visual Studio プロファイラーでアプリケーションのボトルネックを見つける](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Visual Studio プロファイラーでアプリケーションのボトルネックを見つける](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

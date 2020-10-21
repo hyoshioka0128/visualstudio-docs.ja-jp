@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841733"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297937"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>チュートリアル: Visual C# プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ブック内の Visual Basic for Applications (VBA) コードから Microsoft Office Excel 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `Sheet1` ホスト項目クラスにメソッドを追加する、ブックの VBA コードにメソッドを公開する、および、ブック内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -66,7 +66,7 @@ ms.locfileid: "90841733"
 
 1. Excel を起動します。
 
-2. 作業中のドキュメントを **Excel マクロ有効ブック ( \* .xlsm)** として **WorkbookWithVBA**という名前で保存します。 このブックは、デスクトップなどの便利な場所に保存します。
+2. **WorkbookWithVBA**という名前で、作業中のドキュメントを**Excel Macro-Enabled ブック ( \* .xlsm)** として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
 
 3. リボンの **[開発]** タブをクリックします。
 
@@ -90,7 +90,7 @@ ms.locfileid: "90841733"
 
 7. ドキュメントを保存して、Excel を終了します。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  これで、先ほど作成したマクロ対応のブックを使用する、Excel のドキュメント レベルのプロジェクトを作成できます。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
@@ -161,7 +161,7 @@ ms.locfileid: "90841733"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. `Sheet1` クラスに次のメソッドを追加します。 このメソッドは <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> メソッドをオーバーライドして、 `Sheet1` クラスの現在のインスタンスを返します。
+3. `Sheet1` クラスに次のメソッドを追加します。 このメソッドは <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> メソッドをオーバーライドして、 `Sheet1` クラスの現在のインスタンスを返します。
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -239,14 +239,14 @@ ms.locfileid: "90841733"
 
 7. 変更を保存せずに Excel を終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Office ソリューションでの VBA からのコード呼び出しについて詳しくは、次のトピックを参照してください。
 
 - VBA から Visual Basic カスタマイズのホスト項目のコードを呼び出します。 このプロセスは、Visual C# のプロセスとは異なります。 詳細については、「 [チュートリアル: Visual Basic プロジェクトの VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)」を参照してください。
 
 - VBA から VSTO アドインのコードを呼び出します。 詳細については、「 [チュートリアル: VBA から VSTO アドインのコードを呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)
 - [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
 - [方法: Visual Basic プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

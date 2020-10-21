@@ -1,5 +1,6 @@
 ---
 title: '方法: リボンをリボンデザイナーからリボン XML にエクスポートする'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543469"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298440"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>方法: リボンをリボンデザイナーからリボン XML にエクスポートする
   **リボン (ビジュアルデザイナー)** 項目は、すべての種類のリボンのカスタマイズをサポートしているわけではありません。 高度な方法でリボンをカスタマイズするには、リボンをデザイナーからリボン XML にエクスポートし、XML を直接編集します。
@@ -66,7 +67,7 @@ ms.locfileid: "85543469"
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [リボンデザイナー](../vsto/ribbon-designer.md)
+- [リボン デザイナー](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
