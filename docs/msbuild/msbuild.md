@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289197"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099272"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -47,7 +47,7 @@ Microsoft Build Engine は、アプリケーションをビルドするための
 Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、コマンド ラインから MSBuild を実行して、複数の開発者から取得して統合したコードをビルドすることもできます。 また、MSBuild を使用する [.NET Core コマンドライン インターフェイス (CLI)](/dotnet/core/tools/) を使用して、.NET Core プロジェクトをビルドすることもできます。
 
 > [!NOTE]
-> Azure Pipelines を使用して、アプリケーションを自動的にコンパイル、テスト、および配置することができます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Azure Pipelines では MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+> Azure Pipelines を使用して、アプリケーションを自動的にコンパイル、テスト、および配置することができます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Azure Pipelines では MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)」を参照してください。
 
 この記事では、MSBuild の概要について説明します。 入門チュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
 

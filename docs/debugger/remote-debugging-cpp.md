@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301087"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92298740"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio での C++ プロジェクトのリモート デバッグ
 別のコンピューター上の Visual Studio アプリケーションをデバッグするには、アプリを配置したコンピューターにリモート ツールをインストールして実行し、Visual Studio からリモート コンピューターに接続するようにプロジェクトを構成してから、アプリを配置して実行します。

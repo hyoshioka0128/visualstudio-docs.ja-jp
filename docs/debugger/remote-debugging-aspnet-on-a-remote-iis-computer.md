@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173886"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298757"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>リモートの IIS コンピューター上の Visual Studio 2017 で ASP.NET Core をリモート デバッグする
 
@@ -53,7 +53,7 @@ IIS に配置されている ASP.NET Core アプリケーションをデバッ�
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Visual Studio コンピューター上で ASP.NET Core アプリケーションを作成する
 
-1. 新しい ASP.NET Core Web アプリケーションを作成します。 
+1. 新しい ASP.NET Core Web アプリケーションを作成します。
 
     ::: moniker range=">=vs-2019"
     Visual Studio 2019 で **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力し、 **[テンプレート]** を選択してから、 **[新しい ASP.NET Core Web アプリケーションの作成]** を選択します。 表示されるダイアログ ボックスで、プロジェクトに「**MyASPApp**」という名前を付け、 **[作成]** を選択します。 次に、 **[Web アプリケーション (Model-View-Controller)]** を選択し、 **[作成]** を選択します。
@@ -209,7 +209,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 6. プロセス名の最初の文字を入力すると、アプリをすばやく見つけることができます。
 
-    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
+    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
 
     * それ以外の場合は、**dotnet.exe** プロセスを選択します (これはアウト プロセス ホスティング モデルです)。
 

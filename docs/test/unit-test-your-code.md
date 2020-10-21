@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565995"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099311"
 ---
 # <a name="unit-test-your-code"></a>コードの単体テスト
 
@@ -47,8 +47,8 @@ ms.locfileid: "75565995"
 |**C++ コードの単体テスト**|- [C/C++ 用の単体テストの記述](../test/writing-unit-tests-for-c-cpp.md)|
 |**単体テストの分離**|- [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**コード カバレッジを使用してテストされるプロジェクトのコードの割合を識別する:** Visual Studio のテスト ツールのコード カバレッジ機能について説明します。|- [コード カバレッジを使用した、テストされるコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**ロード テストを使用したストレスおよびパフォーマンスの分析の実行:** アプリケーションのパフォーマンスとストレスの問題を分離する目的で役立つロード テストの作成方法を説明します。|- [クイック スタート: ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)<br />- [ロード テスト (Azure Test Plans と TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**品質ゲートの設定:** コードがチェックインまたはマージされる前にテストが実行されるよう、品質ゲートを作成する方法について説明します。|- [チェックイン ポリシー (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**ロード テストを使用したストレスおよびパフォーマンスの分析の実行:** アプリケーションのパフォーマンスとストレスの問題を分離する目的で役立つロード テストの作成方法を説明します。|- [クイック スタート: ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)<br />- [ロード テスト (Azure Test Plans と TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**品質ゲートの設定:** コードがチェックインまたはマージされる前にテストが実行されるよう、品質ゲートを作成する方法について説明します。|- [チェックイン ポリシー (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**テストのオプションを設定する:** テスト結果の保存場所など、テスト オプションの構成方法について説明します。|[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API リファレンス ドキュメント

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536787"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298750"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Azure の Visual Studio で IIS 上の ASP.NET Core をリモート デバッグする
 
@@ -255,7 +255,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 6. プロセス名の最初の文字を入力すると、アプリをすばやく見つけることができます。
 
-    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
+    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
 
     * それ以外の場合は、**dotnet.exe** プロセスを選択します (これはアウト プロセス ホスティング モデルです)。
 

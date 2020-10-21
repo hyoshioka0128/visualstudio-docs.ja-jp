@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800763"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099428"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -124,7 +124,7 @@ Azure DevOps 組織または Team Foundation Server がネットワーク上に�
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
-チームの開発者がバージョン管理にチェックインしたコードをビルドするように、ビルド プロセスを自動化することもできます。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+チームの開発者がバージョン管理にチェックインしたコードをビルドするように、ビルド プロセスを自動化することもできます。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)」を参照してください。
 
 ## <a name="extend-visual-studio"></a>Visual Studio を拡張する
 

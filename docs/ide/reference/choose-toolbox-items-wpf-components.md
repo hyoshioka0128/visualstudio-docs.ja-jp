@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570558"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099350"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>ツールボックス アイテムの選択、WPF コンポーネント
 
@@ -41,7 +41,7 @@ ms.locfileid: "75570558"
 
 **名前空間**
 
-コンポーネントの構造を定義している [.NET API](/dotnet/api/?view=netframework-4.7) 名前空間の階層構造が表示されます。 コンピューターにインストールされている各 .NET 名前空間内で使用可能なコンポーネントを一覧表示するには、この列で並べ替えます。
+コンポーネントの構造を定義している [.NET API](/dotnet/api/?view=netframework-4.7&preserve-view=true) 名前空間の階層構造が表示されます。 コンピューターにインストールされている各 .NET 名前空間内で使用可能なコンポーネントを一覧表示するには、この列で並べ替えます。
 
 **アセンブリ名**
 

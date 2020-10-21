@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1f81c665bc742daf7e2b0e34a849aad566362a28
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75755583"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099337"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>手順 6: ポーリング Django Web プロジェクト テンプレートを使用する
 
@@ -376,4 +376,4 @@ Visual Studio で "空の Django Web プロジェクト"、"Django Web プロジ
 
 - SQLite から、PostgreSQL、MySQL、SQL Server など (これらはいずれも Azure でホストできます) の運用レベルのデータ ストアにアプリを変更します。 「[When to use SQLite](https://www.sqlite.org/whentouse.html)」(SQLite を使用する場合) (sqlite.org) で説明されているように、SQLite は、1 日あたり 100,000 ヒット未満のトラフィックが中小規模のサイトには適していますが、高ボリュームのサイトにはお勧めできません。 また、単一のコンピューターに制限されているため、負荷分散処理や geo レプリケーションなど、マルチサーバーのシナリオには使用できません。 他のデータベースに対する Django のサポートについては、「[Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)」(データベースの設定) を参照してください。 テーブルや BLOB のような Azure ストレージ サービスを使用する場合は、[Azure SDK for Python](/azure/python/) も使用できます。
 
-- Azure DevOps などのサービスに対して、継続的インテグレーション/継続的配置パイプラインを設定します。 (Azure Repos、GitHub、または他の場所で) ソース コード管理を使用するだけでなく、リリースの前提条件として単体テストを自動的に実行するよう、Azure DevOps プロジェクトを構成することができます。また、運用環境にデプロイする前に、追加テストのためにステージング サーバーにデプロイするパイプラインを構成することもできます。 さらに、Azure DevOps は App Insights などの監視ソリューションと統合されているので、アジャイル計画ツールを使用してサイクル全体に対応することができます。 詳細については、「[Azure DevOps プロジェクトで Python 用の CI/CD パイプラインを作成する](/azure/devops-project/azure-devops-project-python?view=vsts)」、および一般的な [Azure DevOps ドキュメント](/azure/devops/?view=vsts)を参照してください。
+- Azure DevOps などのサービスに対して、継続的インテグレーション/継続的配置パイプラインを設定します。 (Azure Repos、GitHub、または他の場所で) ソース コード管理を使用するだけでなく、リリースの前提条件として単体テストを自動的に実行するよう、Azure DevOps プロジェクトを構成することができます。また、運用環境にデプロイする前に、追加テストのためにステージング サーバーにデプロイするパイプラインを構成することもできます。 さらに、Azure DevOps は App Insights などの監視ソリューションと統合されているので、アジャイル計画ツールを使用してサイクル全体に対応することができます。 詳細については、「[Azure DevOps プロジェクトで Python 用の CI/CD パイプラインを作成する](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true)」、および一般的な [Azure DevOps ドキュメント](/azure/devops/?view=vsts&preserve-view=true)を参照してください。

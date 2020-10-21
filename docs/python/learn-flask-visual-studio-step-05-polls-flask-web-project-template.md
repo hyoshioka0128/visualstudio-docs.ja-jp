@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9adda5eb9edba5e1ba62097d55c033be6c85d2e
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70154895"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099363"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>手順 5: ポーリング Flask Web プロジェクト テンプレートを使用する
 
@@ -356,4 +356,4 @@ Visual Studio で "Blank Flask Web プロジェクト"、"Flask[/Jade] Web プ�
 
 - PostgreSQL、MySQL、SQL Server など (これらはいずれも Azure でホストできます) など、別の運用レベルのデータ ストアを使用するリポジトリの実装を追加します。 テーブルや BLOB のような Azure ストレージ サービスと Cosmos DB を使用する場合は、[Azure SDK for Python](/azure/python/) も使用できます。
 
-- Azure DevOps などのサービスに対して、継続的インテグレーション/継続的配置パイプラインを設定します。 (Azure Repos、GitHub、または他の場所で) ソース コード管理を使用するだけでなく、リリースの前提条件として単体テストを自動的に実行するよう、Azure DevOps プロジェクトを構成することができます。また、運用環境にデプロイする前に、追加テストのためにステージング サーバーにデプロイするパイプラインを構成することもできます。 さらに、Azure DevOps は App Insights などの監視ソリューションと統合されているので、アジャイル計画ツールを使用してサイクル全体に対応することができます。 詳細については、「[Azure DevOps Projects を使用して Python 用の CI/CD パイプラインを作成する](/azure/devops-project/azure-devops-project-python?view=vsts)」、および一般的な [Azure DevOps ドキュメント](/azure/devops/?view=vsts)を参照してください。
+- Azure DevOps などのサービスに対して、継続的インテグレーション/継続的配置パイプラインを設定します。 (Azure Repos、GitHub、または他の場所で) ソース コード管理を使用するだけでなく、リリースの前提条件として単体テストを自動的に実行するよう、Azure DevOps プロジェクトを構成することができます。また、運用環境にデプロイする前に、追加テストのためにステージング サーバーにデプロイするパイプラインを構成することもできます。 さらに、Azure DevOps は App Insights などの監視ソリューションと統合されているので、アジャイル計画ツールを使用してサイクル全体に対応することができます。 詳細については、「[Azure DevOps Projects を使用して Python 用の CI/CD パイプラインを作成する](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true)」、および一般的な [Azure DevOps ドキュメント](/azure/devops/?view=vsts&preserve-view=true)を参照してください。
