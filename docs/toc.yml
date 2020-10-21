@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: IDE 内で移動する
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Visual Studio Search を使用する
+      href: ide/visual-studio-search.md
     - name: ソリューションとプロジェクト
       items:
         - name: ソリューションとプロジェクトの使用

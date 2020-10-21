@@ -1,5 +1,6 @@
 ---
-title: 'シナリオ: 視覚化およびモデリングを使用したデザインの変更'
+title: 視覚化およびモデリングを使用して設計を変更する
+description: Visual Studio のビジュアル化およびモデリング ツールの概要
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238895"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298591"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ: 視覚化およびモデリングを使用したデザインの変更
 
@@ -214,9 +216,9 @@ Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やさ
 
 参照:
 
-- [アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [グラフ、ダッシュボード、ウィジェット (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [グラフ、ダッシュボード、ウィジェット (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Project を使用したバックログとタスクの作成](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Dinner Now には数多くの自動テストがあり、そのほとんどを引
 
 参照:
 
-- [アプリケーションのテスト](/azure/devops/test/overview?view=vsts)
+- [アプリケーションのテスト](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
 
-- [バージョン コントロールの使用](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [バージョン コントロールの使用](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>視覚化とモデリングを使用してシステムを更新する
 
@@ -484,5 +486,5 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - [コードの視覚化](../modeling/visualize-code.md)
 - [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)
-- [アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [アジャイル開発でのモデルの使用](/previous-versions/ff398061(v=vs.140))
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
