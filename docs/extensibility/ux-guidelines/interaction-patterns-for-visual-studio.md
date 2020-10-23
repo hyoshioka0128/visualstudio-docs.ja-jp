@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184407"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467649"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio のインタラクション パターン
 ## <a name="overview"></a>概要
  デザインパターンは、一般的には、特定の状況で適用して、同様の制約のセットに関する問題を解決できる設計の中核となります。 フィーチャーデザイナーとシステムデザイナーは、これらのデザインパターンを開始点として使用します。これは、特定の状況に合わせて調整できます。
 
- Visual Studio には、新しい機能を構築するときに考慮する必要がある一般的な相互作用パターンのライブラリが用意されています。 デザインパターンには、Visual Studio クライアント (devenv) と Visual Studio Codespaces (以前の Visual Studio Online) の2つのコアコンテキストがあります。 設計上の問題の中には、すべての状況に適したユビキタスパターンがあります。 ただし、多くの場合、このソリューションは、ブラウザー内に表示され、クライアントアプリケーションでホストされている UI では異なる場合があります。
+ Visual Studio には、新しい機能を構築するときに考慮する必要がある一般的な相互作用パターンのライブラリが用意されています。 デザインパターンには、Visual Studio クライアント (devenv) と GitHub Codespaces (以前の Visual Studio Online) という2つのコアコンテキストがあります。 設計上の問題の中には、すべての状況に適したユビキタスパターンがあります。 ただし、多くの場合、このソリューションは、ブラウザー内に表示され、クライアントアプリケーションでホストされている UI では異なる場合があります。
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio クライアントのパターンの種類
 
@@ -40,7 +40,7 @@ ms.locfileid: "84184407"
 
   - [ウィンドウの相互作用](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
-  - [ツール ウィンドウ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
+  - [ツールウィンドウ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
   - [ドキュメントエディターの規則](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 
