@@ -1,5 +1,5 @@
 ---
-title: キーバインド要素 |マイクロソフトドキュメント
+title: キーバインド要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703146"
 ---
 # <a name="keybinding-element"></a>キーバインド要素
-KeyBinding 要素は、コマンドのキーボード ショートカットを指定します。
+キーバインド要素は、コマンドのキーボードショートカットを指定します。
 
- コマンドには、単一キーとデュアルキーの両方のバインディングを関連付けることができます。 1 つのキー・バインディングの例として、「**保存**」コマンドの**Ctrl**+**S**があります。 デュアル・キー・バインディングでは、コマンドをトリガーするために 2 つの連続したキーの組み合わせが必要です。 二重キーバインドの例としては<strong>、Ctrl*+</strong>K<strong>+</strong><strong>、Ctrl</strong>K** を使用してブックマークを設定します。
+ コマンドには、単一キーバインドとデュアルキーバインドの両方を関連付けることができます。 1つのキーバインドの例と**Ctrl**しては、 + [**保存**] コマンドの Ctrl**S**があります。 デュアルキーバインドでは、コマンドをトリガーするために2つの連続するキーの組み合わせが必要です。 2つのキーのバインドの例として、 <strong>ctrl *+</strong> k、ctrl <strong>+</strong> k *<strong>、</strong>* ブックマークの設定などがあります。
 
 ## <a name="syntax"></a>構文
 
@@ -38,13 +38,13 @@ KeyBinding 要素は、コマンドのキーボード ショートカットを�
 |---------------|-----------------|
 |guid|必須。|
 |id|必須。|
-|エディター|必須。 エディター GUID は、このキーボード ショートカットがアクティブになる編集コンテキストを示します。 グローバル バインディング スコープの値は "guidVSStd97" です。|
-|key1|必須。 有効な値には、すべての入力可能な英数字、および 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)が付いた 2 桁の 16 進数値が含まれます。|
-|モッド1|省略可能。 **Ctrl** **、Alt、** および**Shift**の任意の組み合わせをスペースで区切ります。|
-|key2|省略可能。 有効な値には、すべての入力可能な英数字、および 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)が付いた 2 桁の 16 進数値が含まれます。|
-|モッズ2|省略可能。 **Ctrl** **、Alt、** および**Shift**の任意の組み合わせをスペースで区切ります。|
+|エディター|必須。 エディターの GUID は、このショートカットキーがアクティブになる編集コンテキストを示します。 グローバルバインドスコープの値は "guidVSStd97" です。|
+|key1|必須。 有効な値には、すべての種類の英数字を含めることができます。また、2桁の16進値の前に0x と [VK_constants](/windows/desktop/inputdev/virtual-key-codes)を指定します。|
+|mod1|省略可能。 スペースで区切られた **Ctrl**、 **Alt**、および **Shift** の任意の組み合わせ。|
+|key2|省略可能。 有効な値には、すべての種類の英数字を含めることができます。また、2桁の16進値の前に0x と [VK_constants](/windows/desktop/inputdev/virtual-key-codes)を指定します。|
+|mod2|省略可能。 スペースで区切られた **Ctrl**、 **Alt**、および **Shift** の任意の組み合わせ。|
 |エミュレーター|省略可能。|
-|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
@@ -57,7 +57,7 @@ KeyBinding 要素は、コマンドのキーボード ショートカットを�
 
 |要素|説明|
 |-------------|-----------------|
-|[キーバインディング要素](../extensibility/keybindings-element.md)|グループキーバインド要素とその他のキーバインドグループ。|
+|[キーバインド要素](../extensibility/keybindings-element.md)|キーバインド要素とその他のキーバインドグループをグループ化します。|
 
 ## <a name="example"></a>例
 
@@ -71,5 +71,5 @@ KeyBinding 要素は、コマンドのキーボード ショートカットを�
 ```
 
 ## <a name="see-also"></a>関連項目
-- [キーバインディング要素](../extensibility/keybindings-element.md)
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [キーバインド要素](../extensibility/keybindings-element.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

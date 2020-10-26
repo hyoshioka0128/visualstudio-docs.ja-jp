@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015990"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する
   プロジェクト項目の拡張機能を使用して、Visual Studio に既にインストールされている SharePoint プロジェクト項目にプロパティを追加できます。 **ソリューションエクスプローラー**でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
 
- 次の手順では、プロジェクト項目の拡張機能が既に作成されていることを前提としています。 詳細については、「[方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
+ 次の手順では、プロジェクト項目の拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
 
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>プロジェクト項目の拡張機能にプロパティを追加するには
 
@@ -42,18 +43,18 @@ ms.locfileid: "86015990"
 ### <a name="understand-the-code"></a>コードの理解
  イベントが発生するたびにクラスの同じインスタンスが使用されるようにするため、 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> このコード例では、 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> このイベントが初めて発生したときに、プロジェクト項目のプロパティにプロパティオブジェクトを追加します。 このコードは、このイベントが再び発生するたびにこのオブジェクトを取得します。 プロパティを使用してデータをプロジェクトアイテムに関連付ける方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ては、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
 
- プロパティ値の変更を保持するために、の**set**アクセサーは、 `ExampleProperty` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> プロパティが関連付けられているオブジェクトのプロパティに新しい値を保存します。 プロパティを使用してプロジェクトアイテムでデータを永続化する方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> ては、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
+ プロパティ値の変更を保持するために、の **set** アクセサーは、 `ExampleProperty` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> プロパティが関連付けられているオブジェクトのプロパティに新しい値を保存します。 プロパティを使用してプロジェクトアイテムでデータを永続化する方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> ては、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>カスタムプロパティの動作を指定する
- 名前空間からプロパティ定義に属性を適用することによって、[**プロパティ**] ウィンドウでカスタムプロパティの表示と動作を定義でき <xref:System.ComponentModel> ます。 次の属性は、多くのシナリオで役立ちます。
+ 名前空間からプロパティ定義に属性を適用することによって、[ **プロパティ** ] ウィンドウでカスタムプロパティの表示と動作を定義でき <xref:System.ComponentModel> ます。 次の属性は、多くのシナリオで役立ちます。
 
-- <xref:System.ComponentModel.DisplayNameAttribute>: [**プロパティ**] ウィンドウに表示されるプロパティの名前を指定します。
+- <xref:System.ComponentModel.DisplayNameAttribute>: [ **プロパティ** ] ウィンドウに表示されるプロパティの名前を指定します。
 
-- <xref:System.ComponentModel.DescriptionAttribute>: プロパティが選択されたときに [**プロパティ**] ウィンドウの下部に表示される説明文字列を指定します。
+- <xref:System.ComponentModel.DescriptionAttribute>: プロパティが選択されたときに [ **プロパティ** ] ウィンドウの下部に表示される説明文字列を指定します。
 
 - <xref:System.ComponentModel.DefaultValueAttribute>: プロパティの既定値を指定します。
 
-- <xref:System.ComponentModel.TypeConverterAttribute>: [**プロパティ**] ウィンドウに表示される文字列と、文字列以外のプロパティ値の間のカスタム変換を指定します。
+- <xref:System.ComponentModel.TypeConverterAttribute>: [ **プロパティ** ] ウィンドウに表示される文字列と、文字列以外のプロパティ値の間のカスタム変換を指定します。
 
 - <xref:System.ComponentModel.EditorAttribute>: プロパティの変更に使用するカスタムエディターを指定します。
 

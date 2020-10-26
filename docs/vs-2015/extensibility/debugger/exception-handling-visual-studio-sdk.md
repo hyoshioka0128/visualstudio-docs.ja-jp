@@ -11,44 +11,44 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 38e646f032a12de48bbfb55b089462c7f8a4dd26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152794"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外処理 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-次に、例外がスローされたときに発生するプロセスについて説明します。  
+次に、例外がスローされた場合に発生する処理について説明します。  
   
-## <a name="exception-handling-process"></a>例外処理のプロセス  
+## <a name="exception-handling-process"></a>例外処理プロセス  
   
-1. 例外がスローされた最初が、デバッグ エンジン (DE) を送信前に、デバッグ中のプログラム内の例外ハンドラーによって処理される、ときに、 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) stopping イベントとしてセッション デバッグ マネージャー (SDM)。 `IDebugExceptionEvent2` (デバッグ パッケージの [例外] ダイアログ ボックスで指定された) 例外の設定、ユーザーが初回例外通知を停止することを指定する場合のみ送信されます。  
+1. 例外が最初にスローされたときに、デバッグ中のプログラムの例外ハンドラーによって処理される前に、デバッグエンジン (DE) は [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) をセッションデバッグマネージャー (SDM) に停止イベントとして送信します。 は、 `IDebugExceptionEvent2` 例外の設定 (デバッグパッケージの [例外] ダイアログボックスで指定したもの) のみを使用して、ユーザーが初回例外通知を停止することを指定した場合に送信されます。  
   
-2. SDM コール[IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)例外のプロパティを取得します。  
+2. SDM は [IDebugExceptionEvent2:: GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) を呼び出して、例外のプロパティを取得します。  
   
-3. デバッグ パッケージ呼び出し[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)をユーザーに提示するオプションを決定します。  
+3. デバッグパッケージは、 [IDebugExceptionEvent2:: Can Stoデバッグ](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) を呼び出して、ユーザーに提示するオプションを決定します。  
   
-4. デバッグ パッケージは、ユーザーに初回例外ダイアログ ボックスを開くことで、例外を処理する方法を確認します。  
+4. デバッグパッケージは、初回例外のダイアログボックスを開いて、例外を処理する方法をユーザーに要求します。  
   
-5. ユーザーの続行を選択する場合、SDM を呼び出す[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)します。  
+5. ユーザーが続行を選択した場合、SDM は [IDebugExceptionEvent2:: Can Stoデバッグ](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)を呼び出します。  
   
-    - 場合は S_OK を返すと、メソッドを呼び出す[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)します。  
+    - メソッドが S_OK を返す場合、は [IDebugExceptionEvent2::P assToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)を呼び出します。  
   
          \- または -  
   
-         メソッドは、プログラムは S_FALSE を返す場合、デバッグ中は例外を処理するチャンスをもう 1 を付与します。  
+         メソッドが S_FALSE を返すと、デバッグ中のプログラムには、例外を処理するための2つ目の機会が与えられます。  
   
-6. デバッグ中のプログラムに次の例外のハンドラーがあるない場合、DE の送信、`IDebugExceptionEvent2`として SDM を**EVENT_SYNC_STOP**します。  
+6. デバッグ中のプログラムに2つ目の例外のハンドラーがない場合、DE は `IDebugExceptionEvent2` **EVENT_SYNC_STOP**として SDM にを送信します。  
   
-7. デバッグ パッケージは、ユーザーに初回例外ダイアログ ボックスを開くことで、例外を処理する方法を確認します。  
+7. デバッグパッケージは、初回例外のダイアログボックスを開いて、例外を処理する方法をユーザーに要求します。  
   
-8. デバッグ パッケージ呼び出し[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)をユーザーに提示するオプションを決定します。  
+8. デバッグパッケージは、 [IDebugExceptionEvent2:: Can Stoデバッグ](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) を呼び出して、ユーザーに提示するオプションを決定します。  
   
-9. デバッグ パッケージは、次の例外のダイアログ ボックスを開き、例外を処理する方法をユーザーに確認します。  
+9. デバッグパッケージは、2回目の例外ダイアログボックスを開いて、例外を処理する方法をユーザーに要求します。  
   
-10. 場合は S_OK を返すと、メソッドを呼び出す`IDebugExceptionEvent2::PassToDebuggee`します。  
+10. メソッドが S_OK を返す場合、はを呼び出し `IDebugExceptionEvent2::PassToDebuggee` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのイベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,6 +1,6 @@
 ---
-title: XAML コードエディター
-description: Visual Studio で XAML コードエディターを使ってみる
+title: XAML コード エディター
+description: Visual Studio の XAML コード エディターの概要を説明します
 ms.date: 06/16/2020
 ms.topic: overview
 monikerRange: vs-2019
@@ -8,192 +8,192 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329174"
 ---
-# <a name="xaml-code-editor"></a>XAML コードエディター
+# <a name="xaml-code-editor"></a>XAML コード エディター
 
-[Visual STUDIO IDE](../get-started/visual-studio-ide.md)の XAML コードエディターには、Windows プラットフォーム用の WPF アプリと UWP アプリを作成するために必要なすべてのツールと、 [Xamarin. フォーム](/xamarin/xamarin-forms/user-interface/text/editor/)が含まれています。 この記事では、XAML ベースのアプリを開発するときにコードエディターで果たす役割と、Visual Studio 2019 の XAML コードエディターに固有の機能の両方について説明します。
+[Visual Studio IDE](../get-started/visual-studio-ide.md) の XAML コード エディターには、Windows プラットフォーム用と [Xamarin.Forms](/xamarin/xamarin-forms/user-interface/text/editor/) 用の WPF と UWP アプリを作成するために必要なツールがすべて含まれています。 この記事では、XAML ベースのアプリを開発するときにコード エディターが果たす役割と、Visual Studio 2019 での XAML コード エディターに固有の機能の両方について説明します。
 
-まず、開いている WPF プロジェクトで IDE (統合開発環境) を見てみましょう。 次の図は、XAML コードエディターと共に使用する主要な IDE ツールのいくつかを示しています。
+まず、開いている WPF プロジェクトで IDE (統合開発環境) を見てみましょう。 次の図では、XAML コード エディターで使用するいくつかの主要な IDE ツールを示します。
 
-:::image type="content" source="media/xaml-code-editor-overview-sml.png" alt-text="XAML で WPF プロジェクトが開かれている Visual Studio 2019 IDE" lightbox="media/xaml-code-editor-overview-lrg.png":::
+:::image type="content" source="media/xaml-code-editor-overview-sml.png" alt-text="XAML の WPF プロジェクトが開かれている Visual Studio 2019 IDE" lightbox="media/xaml-code-editor-overview-lrg.png":::
 
-イメージの左下から時計回りに、主要な IDE ツールは次のようになります。
+主要な IDE ツールは、画像の左下から時計回りに次のようになります。
 
-- **[XAML コードエディター](#xaml-code-editor-ui)** ウィンドウで &mdash; は、コードを作成して編集するこの記事の内容が表示され &mdash; ます。
-- UI をデザインする**[XAML デザイナー](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)** ウィンドウ。
-- **[ツールボックス](../ide/reference/toolbox.md)** のドッキング可能ウィンドウ。 UI にコントロールを追加します。
-- [**[デバッグ](../debugger/debugger-feature-tour.md)**] ボタン。コードを実行してデバッグします。 <br>( [XAML ホットリロード](xaml-hot-reload.md)でデバッグしているときに、コードをリアルタイムで編集することもできます)。
-- [**[ソリューションエクスプローラー](../ide/solutions-and-projects-in-visual-studio.md)** ] ウィンドウ。ファイル、プロジェクト、およびソリューションを管理します。
-- [**[プロパティ](../ide/reference/properties-window.md)**] ウィンドウ。 ui の外観と ui コントロールの動作を変更します。
+- **[XAML コード エディター](#xaml-code-editor-ui)** ウィンドウ (この記事のテーマ) で、コードの作成と編集を行います。
+- **[XAML デザイナー](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)** ウィンドウで、UI のデザインを行います。
+- ドッキング可能な **[ツールボックス](../ide/reference/toolbox.md)** ウィンドウで、UI にコントロールを追加します。
+- **[デバッグ](../debugger/debugger-feature-tour.md)** ボタンによって、コードを実行してデバッグすることができます。 <br>([XAML ホット リロード](xaml-hot-reload.md)を使用してデバッグしている間は、コードをリアルタイムで編集することもできます)。
+- **[ソリューション エクスプローラー](../ide/solutions-and-projects-in-visual-studio.md)** ウィンドウで、ファイル、プロジェクト、ソリューションを管理します。
+- **[プロパティ](../ide/reference/properties-window.md)** ウィンドウで、UI の外観と UI コントロールの動作を変更します。
 
-続行するには、XAML コードエディターに関するページを参照してください。
+引き続き、XAML コード エディターについて詳しく学習しましょう。
 
-## <a name="xaml-code-editor-ui"></a>XAML コードエディターの UI
+## <a name="xaml-code-editor-ui"></a>XAML コード エディターの UI
 
-XAML アプリのコードエディターウィンドウは、標準 IDE にも表示されるいくつかの UI (ユーザーインターフェイス) 要素を共有しますが、XAML アプリの開発を簡単にするためのいくつかの固有の機能も含まれています。
+XAML アプリのコード エディター ウィンドウには、標準 IDE にも表示されるいくつかの共通 UI (ユーザー インターフェイス) 要素と、XAML アプリの開発を簡単にするためのいくつかの固有機能が含まれます。
 
-ここでは、XAML コードエディターウィンドウ自体について説明します。
+ここでは、XAML コード エディター ウィンドウ自体について説明します。
 
-![Visual Studio の [XAML コードエディター] ウィンドウ](media/xaml-code-editor-window.png "Visual Studio 2019 の [XAML コードエディター] ウィンドウのスクリーンショット")
+![Visual Studio での XAML コード エディター ウィンドウ](media/xaml-code-editor-window.png "Visual Studio 2019 での XAML コード エディター ウィンドウのスクリーンショット")
 
-次に、コードエディターで各 UI 要素の機能を見てみましょう。
+次に、コード エディターの各 UI 要素の機能を見てみましょう。
 
 ### <a name="first-row"></a>最初の行
 
-XAML コードウィンドウの上部にある最初の行の左側には、[**デザイン**] タブ、[**スワップウィンドウ**] ボタン、[ **xaml** ] タブ、および [**ポップアウト xaml** ] ボタンがあります。
+XAML コード ウィンドウの上部にある最初の行の左側には、 **[デザイン]** タブ、 **[ペインの交換]** ボタン、 **[XAML]** タブ、 **[Pop Out XAML]\(XAML のポップアウト\)** ボタンがあります。
 
-![Visual Studio の XAML コードエディターウィンドウの先頭の2行のうち、最初の行の左側が強調表示されているもの。](media/xaml-code-editor-top-row-left.png "左側の UI 要素が強調表示されている、Visual Studio 2019 の XAML コードエディターウィンドウの2つ目の先頭行のスクリーンショット")
+![Visual Studio の XAML コード エディター ウィンドウの先頭の 2 行のうち最初の行、最初の行の左側が強調表示されている](media/xaml-code-editor-top-row-left.png "Visual Studio 2019 の XAML コード エディター ウィンドウの先頭の 2 行のうち最初の行のスクリーンショット、左側の UI 要素が強調表示されている")
 
-そのしくみは次のとおりです。
+それぞれの機能は次のとおりです。
 
-- [**デザイン**] タブでは、XAML コードエディターのフォーカスを XAML デザイナーに変更します。
-- [**ペインの交換**] ボタンをクリックすると、IDE の XAML デザイナーと XAML コードエディターが反転されます。
-- Xaml**タブは**、フォーカスを xaml コードエディターに戻します。
-- [**ポップアウト xaml** ] ボタンをクリックすると、IDE の外部にある別の xaml コードエディターウィンドウが作成されます。
+- **[デザイン]** タブを選択すると、XAML コード エディターから XAML デザイナーにフォーカスが変更されます。
+- **[ペインの交換]** ボタンをクリックすると、IDE で XAML デザイナーと XAML コード エディターの位置が逆になります。
+- **[XAML]** タブを選択すると、XAML コード エディターにフォーカスが戻ります。
+- **[Pop Out XAML]\(XAML のポップアウト\)** ボタンをクリックすると、IDE の外部に別の XAML コード エディター ウィンドウが作成されます。
 
-右側には、**縦方向の分割**ボタン、**横方向の分割**ボタン、および [ペインの**折りたたみ**] ボタンがあります。
+右側には、 **[左右分割]** ボタン、 **[上下分割]** ボタン、 **[ペインを折りたたむ]** ボタンがあります。
 
-![Visual Studio の XAML コードエディターウィンドウの先頭の2行のうち、最初の行の右側が強調表示されているもの。](media/xaml-code-editor-top-row-right.png "右側の UI 要素が強調表示されている Visual Studio 2019 の XAML コードエディターウィンドウの最初の2つの行のスクリーンショット")
+![Visual Studio の XAML コード エディター ウィンドウの先頭の 2 行のうち最初の行、最初の行の右側が強調表示されている](media/xaml-code-editor-top-row-right.png "Visual Studio 2019 の XAML コード エディター ウィンドウの先頭の 2 行のうち最初の行のスクリーンショット、右側の UI 要素が強調表示されている")
 
-そのしくみは次のとおりです。
+それぞれの機能は次のとおりです。
 
-- **垂直分割**ボタンは、IDE の XAML デザイナーと XAML コードエディターの位置を水平方向の配置から垂直方向の配置に変更します。
-- [**水平分割**] ボタンをクリックすると、IDE の XAML デザイナーの場所と XAML コードエディターが垂直方向の配置から水平方向の配置に変わります。
-- [**ウィンドウの折りたたみ**] ボタンを使用すると、コードエディターであるかデザイナーであるかにかかわらず、下部のウィンドウの内容を折りたたむことができます。 (下のウィンドウを復元するには、もう一度同じボタンを選択します。これは、[**ウィンドウの展開**] ボタンという名前になっています)。
+- **[左右分割]** ボタンを使用すると、IDE での XAML デザイナーと XAML コード エディターの位置が、横配置から縦配置に変わります。
+- **[上下分割]** ボタンを使用すると、IDE での XAML デザイナーと XAML コード エディターの位置が、縦配置から横配置に変わります。
+- **[ペインを折りたたむ]** ボタンを使用すると、コード エディターまたはデザイナーが表示されている下部ペインの内容を折りたたむことができます。 (下部ペインを元に戻すには、もう一度同じボタンを選択します。ボタンの名前は **[ペインの展開]** になっています)。
 
 <!-- [!TIP]
 > You can run two parallel instances of the XAML code editor concurrently by using both the **Pop Out XAML** button and the **Expand Pane** button.
 >
 > You might find it useful to have one larger window open that reveals more of your code in context and a smaller pane open that has its focus directly on the code that you're working on. -->
 
-### <a name="second-row"></a>2番目の行
+### <a name="second-row"></a>2 番目の行
 
-XAML コードウィンドウの上部にある2番目の行には、2つのウィンドウのドロップダウンリストがあります。 ただし、これらの UI 要素のツールヒントを表示すると、さらに "Element: Window" と "Member: Window" として識別されます。
+XAML コード ウィンドウ上部の 2 番目の行には、2 つの [ウィンドウ] ドロップダウン リストがあります。 ただし、これらの UI 要素のツールヒントを表示すると、[Element: Window]\(要素: ウィンドウ\) および [Member: Window]\(メンバー: ウィンドウ\) と示されます。
 
-![Visual Studio の XAML コードエディターウィンドウの2つ目の行のうち、両方のウィンドウのドロップダウンリストが表示されます。](media/xaml-code-editor-top-row-windows.png "両方のウィンドウのドロップダウンリストが表示されている Visual Studio 2019 の XAML コードエディターウィンドウの2つ目の上位行のスクリーンショット")
+![Visual Studio の XAML コード エディター ウィンドウの先頭の 2 行のうち 2 番目の行、2 つの [ウィンドウ] ドロップダウン リストが表示されている](media/xaml-code-editor-top-row-windows.png "Visual Studio 2019 の XAML コード エディター ウィンドウの先頭の 2 行のうち 2 番目の行のスクリーンショット、両方の [ウィンドウ] ドロップダウン リストが表示されている")
 
-ウィンドウのドロップダウンリストには、次のようにさまざまな機能があります。
+[ウィンドウ] ドロップダウン リストの機能は次のように異なります。
 
-- 左側の [**要素:] ウィンドウ**を使用すると、兄弟または親要素を表示して移動できます。
+- **[Element: Window]\(要素: ウィンドウ\)** (左側) を使用すると、兄弟要素または親要素を表示してそれらに移動できます。
 
-  具体的には、コードのタグ構造を表示するアウトライン形式のビューが表示されます。 一覧から選択すると、コードエディターのフォーカスが、選択した要素を含むコード行にスナップされます。
+  具体的には、コードのタグ構造を示すアウトライン形式のビューが表示されます。 一覧から選択すると、コード エディターのフォーカスが、選択した要素を含むコード行にスナップされます。
 
-    ![要素: Visual Studio のウィンドウのドロップダウンリスト](media/xaml-element-window-dropdown.png "Visual Studio 2019 の [要素: ウィンドウ] ボックスの一覧のスクリーンショット")
+    ![Visual Studio の [Element: Window]\(要素: ウィンドウ\) ドロップダウン リスト](media/xaml-element-window-dropdown.png "要素: ウィンドウ ドロップダウン リストのスクリーンショット (Visual Studio 2019)")
 
-- 右側にある [**メンバー:] ウィンドウ**を使用すると、属性または子要素を表示して移動できます。
+- **[Member: Window]\(メンバー: ウィンドウ\)** (右側) を使用すると、属性または子要素を表示してそれらに移動できます。
 
-    具体的には、コード内のプロパティの一覧が表示されます。 一覧から選択すると、コードエディターのフォーカスが、選択したプロパティを含むコード行にスナップされます。
+    具体的には、コード内のプロパティの一覧が表示されます。 一覧から選択すると、コード エディターのフォーカスが、選択したプロパティを含むコード行にスナップされます。
 
-    ![Visual Studio の [メンバー: ウィンドウ] ドロップダウンリスト](media/xaml-member-window-dropdown.png "Visual Studio 2019 の [メンバー: ウィンドウ] ドロップダウンリストのスクリーンショット")
+    ![Visual Studio の [Member: Window]\(メンバー: ウィンドウ\) ドロップダウン リスト](media/xaml-member-window-dropdown.png "メンバー: ウィンドウ ドロップダウン リストのスクリーンショット (Visual Studio 2019)")
 
-### <a name="middle-pane-code-editor"></a>中央のペイン、コードエディター
+### <a name="middle-pane-code-editor"></a>中央のペイン、コード エディター
 
-中央のペインは、XAML コードエディターの "コード" 部分です。 これには、 [IDE コードエディター](../get-started/tutorial-editor.md)で確認できるほとんどの機能が含まれています。 ここでは、XAML コードの開発に役立つ、いくつかのユニバーサル IDE 機能について説明します。 また、IDE の固有の XAML 機能も強調表示します。
+中央のペインは、XAML コード エディターの "コード" 部分です。 ここには、[IDE コード エディター](../get-started/tutorial-editor.md)のほとんどの機能が含まれています。 XAML コードの開発に役立つ、いくつかのユニバーサル IDE 機能について説明します。 また、IDE の XAML 固有の機能についても説明します。
 
-![Visual Studio の [XAML コードエディター] (中央のウィンドウのみ)](media/xaml-code-editor-middle.png "Visual Studio 2019 の [XAML コードエディター] (中央のウィンドウのみ) のスクリーンショット")
+![Visual Studio の XAML コード エディターの中央ペインのみ](media/xaml-code-editor-middle.png "Visual Studio 2019 の XAML コード エディターの中央ペインのみのスクリーンショット")
 
 #### <a name="quick-actions"></a>クイック アクション
 
-[クイックアクション](../ide/quick-actions.md)を使用して、コードを1回の操作でリファクタリング、生成、または変更することができます。
+[クイック アクション](../ide/quick-actions.md)を使用すると、コードのリファクタリング、生成、その他の変更を、1 つの操作で行うことができます。
 
-たとえば、クイックアクションを使用して実行できる便利なタスクの1つは、[ **MainWindow.xaml.cs** ] タブの C# コードから**不要な using を削除**することです。
+たとえば、クイック アクションを使用して実行できる便利なタスクの 1 つは、**MainWindow.xaml.cs** タブでの C# コードからの **[不要な using の削除]** です。
 
-その方法は次のとおりです。
+以下にその方法を示します。
 
-1. Using ステートメントの上にマウスポインターを移動し、電球アイコンをクリックして、ドロップダウンリストから [**不要な using の削除**] を選択します。
+1. using ステートメントをマウスでポイントし、電球アイコンをクリックして、ドロップダウン リストから **[不要な using の削除]** を選択します。
 
-    ![IDE エディターの [クイックアクション] メニューの [不要な Using の削除] オプション](media/xaml-code-editor-remove-usings.png "[クイックアクション] メニューの IDE エディターの [不要な Using の削除] オプションのスクリーンショット")
+    ![IDE エディターのクイック アクション メニューの [不要な using の削除] オプション](media/xaml-code-editor-remove-usings.png "IDE エディターのクイック アクション メニューの [不要な using の削除] オプションのスクリーンショット")
 
-1. **ドキュメント**、**プロジェクト**、または**ソリューション**内のすべての発生箇所を修正するかどうかを選択します。
-1. [**プレビュー** ] ダイアログボックスを表示し、[**適用**] を選択します。
+1. **[ドキュメント]** 、 **[プロジェクト]** 、 **[ソリューション]** ですべての出現箇所を修正するかどうかを選択します。
+1. **[プレビュー]** ダイアログを確認した後、 **[適用]** を選択します。
 
-この機能には、メニューバーからアクセスすることもできます。 これを行うには、[**編集**] [IntelliSense] [using の  >  **IntelliSense**  >  **削除と並べ替え**] の順に選択します。
+この機能には、メニュー バーからアクセスすることもできます。 それには、 **[編集]**  >  **[IntelliSense]**  >  **[using の削除と並べ替え]** を選択します。
 
-Using の設定の詳細については、「 [using の並べ替え](../ide/reference/sort-usings.md)」ページを参照してください。 IntelliSense の詳細については、 [Visual Studio の intellisense](../ide/using-intellisense.md)に関するページを参照してください。 また、開発者がクイックアクションを使用する一般的な方法の詳細については、「[一般的なクイックアクション](../ide/common-quick-actions.md)」ページを参照してください。
+using の設定の詳細については、「[using を並べ替える](../ide/reference/sort-usings.md)」ページを参照してください。 IntelliSense の詳細については、「[Visual Studio での IntelliSense](../ide/using-intellisense.md)」ページを参照してください。 また、開発者がクイック アクションを使用する一般的な方法の詳細については、「[共通のクイック アクション](../ide/common-quick-actions.md)」ページを参照してください。
 
-#### <a name="change-tracking"></a>Change tracking
+#### <a name="change-tracking"></a>変更の追跡
 
-左余白の色を使用すると、ファイルに対する変更を追跡することができます。 次に、色が実行する操作にどのように関連しているかを示します。
+左余白の色を使用すると、ファイルに対する変更を追跡することができます。 ここでは、色が実行する操作にどのように関連しているかを示します。
 
-- ファイルが開かれた後に加えられた変更は保存されません。左余白 (選択余白と呼ばれます) に**黄色**のバーが表示されます。
+- ファイルを開いてから行った変更で保存していないものは、左余白 (選択余白と呼ばれます) に**黄色**のバーで示されます。
 
-    ![黄色いバーを使用したコードエディターの編集](media/code-editor-edit-yellow.png "選択範囲の黄色のバーでマークされた変更を含むコードエディターのスクリーンショット。")
+    ![コード エディターでの黄色いバーでの編集](media/code-editor-edit-yellow.png "選択余白の黄色のバーでマークされた変更を含むコード エディターのスクリーンショット。")
 
 - 変更を保存した後 (ファイルを閉じる前) は、バーが**緑色**に変わります。
 
-    ![緑色のバーでのコードエディターの編集](media/code-editor-edit-green.png "選択範囲の緑色のバーでマークされた変更があるコードエディターのスクリーンショット。")
+    ![コード エディターでの緑色のバーでの編集](media/code-editor-edit-green.png "選択余白の緑色のバーでマークされた変更を含むコード エディターのスクリーンショット。")
 
-この機能のオンとオフを切り替えるには、**[テキスト エディター]** (**[ツール]** > **[オプション]** > **[テキスト エディター]**) の設定の **[変更履歴を記録する]** オプションを変更します。
+この機能のオンとオフを切り替えるには、 **[テキスト エディター]** ( **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]** ) の設定の **[変更履歴を記録する]** オプションを変更します。
 
-変更の追跡の詳細については、「 &mdash; コード文字列」に表示される波線 ("波線" とも呼ばれます) については、 &mdash; 「 [Visual Studio コードエディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)」の「**[エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md#editor-features)**」セクションを参照してください。
+変更の追跡 (コード文字列の下に波線を表示する) の詳細については、[Visual Studio コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)に関するページの「 **[エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md#editor-features)** 」セクションを参照してください。
 
-#### <a name="right-click-context-menu"></a>ショートカットメニューを右クリック
+#### <a name="right-click-context-menu"></a>右クリックのショートカット メニュー
 
-XAML コードエディターでコードを編集しているときに、右クリックのコンテキストメニューを使用してアクセスできる機能がいくつかあります。 これらの機能のほとんどは Visual Studio IDE で汎用的に利用できますが、コードエディターとデザインウィンドウの使用に固有のものもあります。
+XAML コード エディターでコードを編集しているときに、右クリックのコンテキスト メニューを使用してアクセスできる機能がいくつかあります。 これらの機能のほとんどは Visual Studio IDE で普遍的に利用できますが、一部はコード エディターのデザイン ウィンドウ使用時に固有のものです。
 
-![Visual Studio の XAML コードエディターの右クリックコンテキストメニュー](media/xaml-code-editor-right-click-menu.png "Visual Studio 2019 の XAML コードエディターの右クリックコンテキストメニューのスクリーンショット")
+![Visual Studio の XAML コード エディターの右クリック コンテキスト メニュー](media/xaml-code-editor-right-click-menu.png "Visual Studio 2019 の XAML コード エディターの右クリック コンテキスト メニューのスクリーンショット")
 
-各機能の機能とその有用性は次のとおりです。
+各機能とその有用性は次のとおりです。
 
-- [**コードの表示**]-[プログラミング言語コード] ウィンドウを開きます。このウィンドウは通常、デザインウィンドウと XAML コードエディターを含む既定のビューの横にタブが表示されます。
-- **ビューデザイナー** : デザインウィンドウと XAML コードエディターを含む既定のビューを開きます。 (既に既定のビューになっている場合は、何も行われません)。
-- **クイックアクションとリファクタリング**-リファクタ、を生成するか、1つのアクションでコードを変更します。 コードにマウスポインターを合わせると、クイックアクションまたはリファクタリングが使用可能になったときに電球アイコンが表示されます。 <br>関連項目:[クイックアクション](../ide/quick-actions.md)と[リファクターコード](../ide/refactoring-in-visual-studio.md)
-- **名前の変更...**-名前空間の名前のみを変更します。 名前を変更する名前空間がない場合は、"名前空間プレフィックスのみを変更できる" というエラーメッセージが表示されます。
-- **名前空間の削除と並べ替え**-未使用の名前空間を削除し、残っている名前空間を並べ替えます。
-- [**定義**をここに表示-エディターで現在の場所を離れずに型の定義をプレビューします。 <br>関連[項目: [定義を](../ide/go-to-and-peek-definition.md#peek-definition)ここに表示] を使用して[コードを表示および編集する](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
-- **[定義へ移動**]-型またはメンバーのソースに移動し、結果を新しいタブで開きます。 <br>関連項目: 「[定義に進む](../ide/go-to-and-peek-definition.md#go-to-definition)」も参照してください。
-- **ブロックの挿入...**-選択したコードブロックの周囲に追加される、ブロックの挿入コードスニペットを使用します。 <br>参照:[拡張スニペットとブロックの挿入スニペット](../ide/code-snippets.md#expansion-snippets-and-surround-with-snippets)
-- [**スニペットの挿入**-カーソル位置にコードスニペットを挿入します。
-- **カット**-自己説明
-- **コピー** -自己説明
-- **貼り付け**-自己説明
-- **アウトライン**: コードのセクションを展開したり折りたたんだりします。 <br>「[アウトライン](../ide/outlining.md)」も参照してください。
-- **ソース管理**-オープンソースリポジトリに対するコードの投稿の履歴を表示します。
+- **[コードの表示]** - プログラミング言語コード ウィンドウが開きます。このウィンドウは通常、デザインウィンドウと XAML コード エディターが含まれる既定のビューの隣のタブです。
+- **[ビュー デザイナー]** - デザイン ウィンドウと XAML コード エディターが含まれる既定のビューが開きます。 (既に既定のビューになっている場合は、何も行われません)。
+- **[クイック アクションとリファクタリング]** - 1 つの操作で、コードのリファクター、生成、またはその他の変更が行われます。 コードをマウスでポイントすると、クイック アクションまたはリファクタリングを使用できるときは、電球アイコンが表示されます。 <br>参照:「[クイック アクション](../ide/quick-actions.md)」および「[コードのリファクタリング](../ide/refactoring-in-visual-studio.md)」。
+- **[名前の変更...]** - 名前空間の名前のみを変更します。 名前を変更する名前空間がない場合は、"名前を変更できるのは名前空間プレフィックスのみです" というエラー メッセージが表示されます。
+- **[名前空間の削除と並べ替え]** - 使用されていない名前空間を削除した後、残っている名前空間を並べ替えます。
+- **[定義をここに表示]** - エディターで現在の場所を離れずに、型の定義をプレビューします。 <br>参照:「[定義をここに表示](../ide/go-to-and-peek-definition.md#peek-definition)」および「[[定義をここに表示] を使用してコードを表示および編集する](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)」。
+- **[定義へ移動]** - 型またはメンバーのソースに移動し、新しいタブで結果を開きます。 <br>参照:「[[定義へ移動]](../ide/go-to-and-peek-definition.md#go-to-definition)」。
+- **[ブロックの挿入...]** - 選択したコード ブロックの周囲に追加される surround-with コード スニペットを使用します。 <br>参照:「[拡張スニペットとブロックの挿入用スニペット](../ide/code-snippets.md#expansion-snippets-and-surround-with-snippets)」。
+- **[スニペットの挿入]** - カーソル位置にコード スニペットを挿入します。
+- **[切り取り]** - 名前のとおりです
+- **[コピー]** - 名前のとおりです
+- **[貼り付け]** - 名前のとおりです
+- **[アウトライン]** - コードのセクションの展開と折りたたみを行います。 <br>参照:「[アウトライン](../ide/outlining.md)」。
+- **[ソース管理]** - オープンソース リポジトリに対するコードのコントリビューションの履歴を表示します。
 
-### <a name="middle-pane-scroll-bar"></a>中央のペイン、スクロールバー
+### <a name="middle-pane-scroll-bar"></a>中央のペイン、スクロール バー
 
-スクロールバーは、コードをスクロールするよりも多くのことができます。 また、別のコードエディターペインを開くためにも使用できます。 また、スクロールバーを使用して、注釈を追加したり、別の表示モードを使用したりすることにより、コードを効率的に作成できます。
+スクロール バーには、コードをスクロールすること以外の機能があります。 別のコード エディター ペインを開くためにも使用できます。 また、スクロール バーを使用すると、注釈を追加したり、別の表示モードを使用したりして、コードをより効率的に作成することができます。
 
-#### <a name="split-the-code-window"></a>コードウィンドウを分割する
+#### <a name="split-the-code-window"></a>コード ウィンドウを分割する
 
-コードエディターのスクロールバーには、右上に**分割**ボタンがあります。 このオプションを選択すると、別のコードエディターペインを開くことができます。 これは、互いに独立して動作するため便利です。そのため、さまざまな場所でコードを操作するために使用できます。
+コード エディターのスクロール バーの右上には、 **[分割]** ボタンがあります。 それを選択すると、別のコード エディター ペインを開くことができます。 それらは互いに独立して動作し、異なる場所のコードを作業できるため便利です。
 
-![Visual Studio の [XAML コードエディター] (中央のウィンドウのみ)](media/code-editor-split-window-button.png "Visual Studio 2019 の [XAML コードエディター] (中央のウィンドウのみ) のスクリーンショット")
+![Visual Studio の XAML コード エディターの中央ペインのみ](media/code-editor-split-window-button.png "Visual Studio 2019 の XAML コード エディターの中央ペインのみのスクリーンショット")
 
-エディターウィンドウを分割する方法の詳細については、「[エディター] ウィンドウの[管理](../ide/how-to-manage-editor-windows.md)」ページを参照してください。
+エディター ウィンドウを分割する方法の詳細については、「[エディター ウィンドウを管理する](../ide/how-to-manage-editor-windows.md)」ページを参照してください。
 
-#### <a name="use-annotations-or-map-mode"></a>注釈またはマップモードの使用
+#### <a name="use-annotations-or-map-mode"></a>注釈またはマップ モードを使用する
 
-スクロールバーの外観と、それに含まれるその他の機能を変更することもできます。 たとえば、多くの担当者がスクロールバーに*注釈*を含め、コードの変更、ブレークポイント、ブックマーク、エラー、カーソル位置などの視覚的な手掛かりを提供しています。
+スクロール バーの外観と、それに含まれるその他の機能を変更することもできます。 たとえば、スクロール バーに "*注釈*" を含めることが好まれます。それにより、コードの変更、ブレークポイント、ブックマーク、エラー、カーソルの位置などの視覚的な手掛かりを提供することができます。
 
-また、*マップモード*の使用に感謝します。このモードでは、スクロールバーにコード行が表示されます。 多くのコードをファイルに記述している開発者は、既定のスクロールバーよりも、マップモードでコード行をより効果的に追跡できます。
+"*マップ モード*" も便利で、コード行がスクロール バーに縮小表示されます。 ファイルのコードが多い場合、既定のスクロール バーより、マップ モードを使用した方が、コード行をより効率的に追跡できる場合があります。
 
-スクロールバーの既定の設定を変更する方法の詳細については、「[スクロールバーのカスタマイズ](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)」ページを参照してください。
+スクロール バーの既定の設定を変更する方法の詳細については、「[スクロール バーのカスタマイズ](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)」のページを参照してください。
 
 ## <a name="xaml-specific-features"></a>XAML 固有の機能
 
-次の機能のほとんどは Visual Studio IDE で一般公開されていますが、XAML 開発者にとってコーディングが容易になるディメンションがいくつか追加されています。
+以下の機能のほとんどは Visual Studio IDE のどこでも使用できますが、XAML のコーディングを容易にする機能がいくつか追加されています。
 
-### <a name="xaml-code-snippets"></a>XAML コードスニペット
+### <a name="xaml-code-snippets"></a>XAML コード スニペット
 
-コードスニペットは、再利用可能なコードの小さなブロックで、右クリックコンテキストメニューコマンドの**挿入スニペット**を使用するか、キーボードショートカットの組み合わせ (**ctrl** + **K**、 **ctrl** + **X**) を使用してコードファイルに挿入できます。 [IntelliSense](../ide/using-intellisense.md)が拡張され、組み込みのスニペットと手動で追加したカスタムスニペットの両方で機能する XAML スニペットの表示がサポートされるようになりました。 すぐに使える XAML スニペットには、、、 `#region` 、 `Column definition` `Row definition` 、およびがあり `Setter` `Tag` ます。
+コード スニペットは、コード ファイルに挿入できる、再利用可能なコードの小さなブロックです。これを行うには、右クリックしてコンテキスト メニューの **[スニペットの挿入]** コマンドを使用するか、キーボード ショートカットの組み合わせ (**Ctrl** + **K** と **Ctrl** + **X**) を使用します。 [IntelliSense](../ide/using-intellisense.md) が拡張されて、XAML スニペットの表示がサポートされるようになりました。これは、組み込みのスニペットと、手動で追加したカスタム スニペットの両方で機能します。 すぐに使用できる XAML スニペットとしては、`#region`、`Column definition`、`Row definition`、`Setter`、`Tag` などがあります。
 
-![IntelliSense で表示される XAML コードスニペットオプションを含む XAML コードエディター](media/xaml-code-snippets.png "IntelliSense で表示される XAML コードスニペットオプションを含む XAML コードエディターのスクリーンショット")
+![IntelliSense に XAML コード スニペット オプションが表示されている XAML コード エディター](media/xaml-code-snippets.png "IntelliSense に XAML コード スニペット オプションが表示されている XAML コード エディターのスクリーンショット")
 
-詳細については、「[コードスニペット](../ide/code-snippets.md)」と「 [C# コードスニペット](../ide/visual-csharp-code-snippets.md)」のページを参照してください。
+詳細については、「[コード スニペット](../ide/code-snippets.md)」と「[C# コード スニペット](../ide/visual-csharp-code-snippets.md)」のページを参照してください。
 
-### <a name="xaml-region-support"></a>XAML #region サポート
+### <a name="xaml-region-support"></a>XAML の #region のサポート
 
-Visual Studio 2015 以降では、WPF と UWP の XAML 開発者、さらには[Xamarin. Forms](/xamarin/xamarin-forms/user-interface/text/editor/)でも #region サポートを利用できるようになりました。 Visual Studio 2019 では、#region サポートを段階的に改善し続けます。 たとえば、[バージョン 16.4](/visualstudio/releases/2019/release-notes-v16.4/)以降では、入力を開始すると #region オプションが表示さ `<!` れます。
+Visual Studio 2015 以降では、WPF および UWP での XAML の開発に #region のサポートを利用できるようになり、最近 [Xamarin.Forms](/xamarin/xamarin-forms/user-interface/text/editor/) でも利用できるようになりました。 Visual Studio 2019 では、引き続き #region のサポートが段階的に改善されています。 たとえば、[バージョン 16.4](/visualstudio/releases/2019/release-notes-v16.4/) 以降では、「`<!`」と入力し始めると #region オプションが表示されます。
 
-![IntelliSense で表示される #region オプションを持つ XAML コードエディター](media/code-editor-xaml-region.png "IntelliSense で表示される #region オプションを含む XAML コードエディターのスクリーンショット")
+![IntelliSense に #region オプションが表示されている XAML コード エディター](media/code-editor-xaml-region.png "IntelliSense に #region オプションが表示されている XAML コード エディターのスクリーンショット")
 
-展開または折りたたみを行うコードのセクションをグループ化する場合は、領域を使用できます。
+領域は、展開したり折りたたんだりしたいコードのセクションをグループ化するときに使用できます。
 
 ```xaml
     <!--#region NameOfRegion-->
@@ -201,91 +201,91 @@ Visual Studio 2015 以降では、WPF と UWP の XAML 開発者、さらには[
     <!--#endregion-->
 ```
 
-領域の詳細については、「 [#region (C# リファレンス)](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region/) 」ページを参照してください。 また、コードのセクションの展開と折りたたみの詳細については、「[アウトライン](../ide/outlining.md)」ページを参照してください。
+領域の詳細については、「[#region (C# リファレンス)](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region/)」のページを参照してください。 また、コードのセクションの展開と折りたたみの詳細については、「[アウトライン](../ide/outlining.md)」のページを参照してください。
 
 ### <a name="xaml-comments"></a>XAML コメント
 
-開発者は、多くの場合、コメントを使用してコードを記述することをお勧めします。 **Mainwindow.xaml**タブにある xaml コードにコメントを追加するには、次の方法を使用します。
+開発者は、多くの場合、コメントを使用してコードを文書化することを好みます。 **MainWindow.xaml** タブの XAML コードに、次の方法でコメントを追加できます。
 
-- `<!--`コメントの前に「」と入力し `-->` 、コメントの後にを追加します。
-- 「」と入力し `<!` `!--` 、オプションの一覧から選択します。
+- コメントの前に「`<!--`」と入力し、コメントの後に「`-->`」を追加します。
+- 「`<!`」と入力し、オプションの一覧から `!--` を選択します。
 
-  ![XAML コードエディター右クリックによる [コメントの追加] ダイアログ](media/xaml-code-editor-comments.png "XAML コードエディターでコメントを追加するための右クリックコンテキストメニューのスクリーンショット")
+  ![XAML コード エディターの右クリックによるコメント追加ダイアログ](media/xaml-code-editor-comments.png "XAML コード エディターでコメントを追加するための右クリック コンテキスト メニューのスクリーンショット")
 
-- コメントで囲むコードを選択し、IDE のツールバーの [**コメント**] ボタンをクリックします。 操作を元に戻すには、[**コメント**解除] をクリックします。
+- コメントで囲むコードを選択し、IDE のツール バーで **[コメント]** ボタンをクリックします。 操作を元に戻すには、 **[コメント解除]** ボタンを選択します。
 
-  ![IDE ツールバーの [コメント] ボタンと [コメント解除] ボタン](media/comment-undo-comment-buttons.png "IDE ツールバーの [コメント] ボタンと [コメント解除] ボタンのスクリーンショット")
+  ![IDE ツール バーの [コメント] ボタンと [コメント解除] ボタン](media/comment-undo-comment-buttons.png "IDE ツール バーの [コメント] ボタンと [コメント解除] ボタンのスクリーンショット")
 
-- コメントで囲むコードを選択し、 **ctrl** + **K**キー、 **ctrl**C キーの順に押し + **C**ます。 選択したコードのコメントを解除するには、 **ctrl** + **K**キーを押し**ながら** + **U**キーを押します。
+- コメントで囲むコードを選択し、**Ctrl** + **K** キー、**Ctrl** + **C** キーの順に押します。 選択したコードのコメントを解除するには、**Ctrl** + **K** キー、**Ctrl** + **U** キーの順に押します。
 
-[ **MainWindow.xaml.cs** ] タブの C# コードでコメントを使用する方法の詳細については、[ドキュメントのコメント](/dotnet/csharp/language-reference/language-specification/documentation-comments/)に関するページを参照してください。
+**MainWindow.xaml.cs** タブ内の C# コードでコメントを使用する方法の詳細については、「[ドキュメント コメント](/dotnet/csharp/language-reference/language-specification/documentation-comments/)」のページを参照してください。
 
-### <a name="xaml-lightbulbs"></a>XAML ライト電球
+### <a name="xaml-lightbulbs"></a>XAML の電球
 
-XAML コードに表示される電球アイコンは、コードのリファクタリング、生成、または変更に使用できる[クイックアクション](../ide/quick-actions.md)の一部です。
+XAML コードに表示される電球アイコンは[クイック アクション](../ide/quick-actions.md)の一部であり、コードのリファクタリング、生成、またはその他の変更に使用できます。
 
-ここでは、XAML のコーディングエクスペリエンスを活用する方法の例をいくつか紹介します。
+ここでは、XAML のコーディング エクスペリエンスに対する利点の例をいくつか紹介します。
 
-- **不要な名前空間を削除**します。 XAML コードエディターでは、不要な名前空間が淡色表示のテキストで表示されます。 を使用しないでカーソルをポイントすると、電球が表示されます。 ドロップダウンリストから [**不要な名前空間を削除**する] オプションを選択すると、のプレビューが表示され、削除することができます。
+- **不要な名前空間を削除する**。 XAML コード エディターでは、不要な名前空間が淡色表示のテキストで表示されます。 不要な using をマウスでポイントすると、電球が表示されます。 ドロップダウン リストから **[不要な名前空間の削除]** オプションを選択すると、削除できるもののプレビューが表示されます。
 
-  ![XAML コードエディターの [クイックアクション] 電球の [不要な名前空間の削除] オプション](media/xaml-code-editor-dimmed-namespaces-preview.png "クイックアクション電球を使用して表示される XAML コードエディターの [不要な名前空間を削除する] オプションのスクリーンショット")
+  ![XAML コード エディターのクイック アクションの電球からの [不要な名前空間の削除] オプション](media/xaml-code-editor-dimmed-namespaces-preview.png "XAML コード エディターでクイック アクションの電球を使用して表示される [不要な名前空間の削除] オプションのスクリーンショット")
 
-- **名前空間の名前を変更**します。 この機能は、名前空間を強調表示した後、右クリックのコンテキストメニューから使用できます。これにより、一度に1つの設定の複数のインスタンスを簡単に変更できるようになります。 この機能にアクセスするには、メニューバーを使用するか、[リファクター名前の変更] を**編集**するか、ctrl r キーを押してから  >  **Refactor**  >  **Rename** **Ctrl** + **R**もう一度**ctrl +** + **r**キーを押します。
+- **名前空間の名前を変更する**。 この機能は、名前空間を強調表示した後で右クリックのコンテキスト メニューから使用でき、設定の複数のインスタンスを一度に簡単に変更できます。 また、この機能には、メニュー バーの **[編集]**  >  **[リファクター]**  >  **[名前の変更]** を使用して、または **Ctrl** + **R** キーを押してから、再度 **Ctrl** + **R** キーを押すことによって、アクセスすることもできます。
 
-  ![右クリックコンテキストメニューからの XAML コードエディターの名前空間の名前変更オプション](media/code-editor-rename-namespace.png "右クリックコンテキストメニューを使用して表示される XAML コードエディターの名前空間の名前変更オプションのスクリーンショット")
+  ![XAML コード エディターの右クリックのコンテキスト メニューからの [名前空間名の変更] オプション](media/code-editor-rename-namespace.png "XAML コード エディターの右クリック コンテキスト メニューを使用して表示される [名前空間名の変更] オプションのスクリーンショット")
 
-  詳細については、「[コードシンボルの名前変更](../ide/reference/rename.md)」のリファクタリングページを参照してください。
+  詳細については、「[コード シンボルの名前の変更のリファクタリング](../ide/reference/rename.md)」のページを参照してください。
 
 ### <a name="conditional-xaml-for-uwp"></a>UWP の条件付き XAML
 
 条件付き XAML は、XAML マークアップで [ApiInformation.IsApiContractPresent](/uwp/api/windows.foundation.metadata.apiinformation.isapicontractpresent/) メソッドを使う方法を提供するものです。 これにより、分離コードを使わなくても、API の有無に基づいてマークアップでプロパティの設定やオブジェクトのインスタンス化を行うことができます。
 
-詳細については、「[条件付き xaml](/windows/uwp/debug-test-perf/conditional-xaml/) 」ページと、「[デスクトップアプリ (XAML アイランド)」ページのホスト UWP XAML コントロールに](/windows/apps/desktop/modernize/xaml-islands/)関するページを参照してください。
+詳細については、「[条件付き XAML](/windows/uwp/debug-test-perf/conditional-xaml/)」のページ、および「[デスクトップ アプリで UWP XAML コントロールをホストする (XAML Islands)](/windows/apps/desktop/modernize/xaml-islands/)」のページを参照してください。
 
 ### <a name="xaml-structure-visualizer"></a>XAML 構造ビジュアライザー
 
-コードエディターの構造ビジュアライザー機能では、構造のガイド線が表示されます。これは、コード内の開いて閉じられたタグ要素と一致することを示す垂直破線です。 これらの垂直線を使用すると、論理ブロックの開始位置と終了位置を簡単に確認できます。
+コード エディターの構造ビジュアライザーでは、構造のガイド線、つまりコード内の対応する開始タグ要素と終了タグ要素を示す縦の破線が表示されます。 これらの縦線を使用すると、論理ブロックの開始位置と終了位置がわかりやすくなります。
 
-詳細については、「[コードの移動](../ide/navigating-code.md)」ページを参照してください。
+詳細については、「[コード間の移動](../ide/navigating-code.md)」のページを参照してください。
 
-### <a name="intellicode-for-xaml"></a>XAML の IntelliCode
+### <a name="intellicode-for-xaml"></a>XAML 用の IntelliCode
 
-XAML タグをコードに追加する場合、通常は左山かっこで始め `<` ます。 山かっこを入力すると、IntelliCode メニューが表示され、より一般的な XAML タグのいくつかが表示されます。 コードに簡単に追加するものを選択します。
+XAML タグをコードに追加するとき、通常は左山かっこ `<` で始めます。 その山かっこを入力すると、IntelliCode メニューが開き、より一般的ないくつかの XAML タグが表示されます。 目的のものを選択して、コードに簡単に追加することができます。
 
-IntelliCode の選択項目は、一覧の一番上に表示され、星付きであるため、認識できます。
+IntelliCode による選択項目は、一覧の一番上に星付きで表示されるため、見分けることができます。
 
-![XAML テキストエディターの IntelliCode リスト](media/xaml-intellicode-selection.png "XAML テキストエディターの IntelliCode リストのスクリーンショット")
+![XAML テキスト エディターでの IntelliCode の一覧](media/xaml-intellicode-selection.png "XAML テキスト エディターでの IntelliCode の一覧のスクリーンショット")
 
-詳細については、「 [IntelliCode の概要](/visualstudio/intellicode/overview/)」ページを参照してください。
+詳細については、「[IntelliCode の概要](/visualstudio/intellicode/overview/)」のページを参照してください。
 
 ### <a name="settings"></a>設定
 
-Visual Studio IDE の*すべて*の設定の詳細については、「[コードエディター」ページの機能](../ide/writing-code-in-the-code-and-text-editor.md)を参照してください。
+Visual Studio IDE での "*すべての*" 設定の詳細については、「[コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)」のページを参照してください。
 
-## <a name="xaml-optional-settings"></a>XAML オプションの設定
+## <a name="xaml-optional-settings"></a>XAML のオプションの設定
 
-[[オプション](../ide/reference/options-dialog-box-visual-studio.md)] ダイアログボックスを使用すると、XAML コードエディターの既定の設定を変更できます。 設定を表示するには、[**ツール**  >  **] [オプション]**[  >  **テキストエディター**] [  >  **XAML**] の順に選択します。
+[[オプション]](../ide/reference/options-dialog-box-visual-studio.md) ダイアログ ボックスを使用すると、XAML コード エディターの既定の設定を変更できます。 設定を表示するには、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[XAML]** を選択します。
 
-![XAML テキストエディターのオプションリスト](media/xaml-tools-options.png "XAML テキストエディターのオプション一覧のスクリーンショット")
+![XAML テキスト エディターでの [オプション] の一覧](media/xaml-tools-options.png "XAML テキスト エディターでの [オプション] の一覧のスクリーンショット")
 
 > [!NOTE]
-> また、キーボードショートカットを使用して [オプション] ダイアログボックスにアクセスすることもできます。 その方法は次のとおりです。 **Ctrl** + **Q**キーを押して IDE を検索し、「 **Options**」と入力して、 **enter**キーを押します。 次に、 **Ctrl**E キーを押して [ + **E**オプション] ダイアログボックスを検索し、「**テキストエディター**」と入力し**て enter**キーを押し、「 **XAML**」と入力して **、enter**キーを押します。
+> また、キーボード ショートカットを使用して [オプション] ダイアログ ボックスにアクセスすることもできます。 次の手順に従います。**Ctrl** + **Q** キーを押して IDE を検索し、「**オプション**」と入力して **Enter** キーを押します。 次に、**Ctrl** + **E** キーを押して [オプション] ダイアログ ボックスを検索し、「**テキスト エディター**」と入力して **Enter** キーを押し、「**XAML**」と入力して **Enter** キーを押します。
 >  
-> キーボードショートカットの詳細については、 [Visual Studio のショートカットヒント](../ide/productivity-shortcuts.md#code-editor)に関するページを参照してください。
+> キーボード ショートカットの詳細については、「[Visual Studio のショートカットに関するヒント](../ide/productivity-shortcuts.md#code-editor)」のページを参照してください。
 
-### <a name="universal-text-editor-options"></a>ユニバーサルテキストエディターオプション
+### <a name="universal-text-editor-options"></a>テキスト エディターの共通のオプション
 
-XAML の [[オプション](../ide/reference/options-text-editor-xaml-formatting.md)] ダイアログボックスで、次の最初の3つの項目は、VISUAL Studio IDE でサポートされているすべてのプログラミング言語に共通です。 これらのオプションとその使用方法の詳細については、次の表のリンク先の情報を参照してください。
+XAML の [[オプション]](../ide/reference/options-text-editor-xaml-formatting.md) ダイアログ ボックスで、次の最初の 3 項目は、Visual Studio IDE でサポートされているすべてのプログラミング言語に共通です。 これらのオプションの詳細とその使用方法については、次の表のリンク先の情報を参照してください。
 
 |名前  |詳細情報  |
 |---------|---------|
-|全般  | [[オプション] ダイアログボックス: すべての言語 > テキストエディター](../ide/reference/options-text-editor-all-languages.md) |
+|全般  | [[オプション] ダイアログ ボックス:[テキスト エディター] > [すべての言語]](../ide/reference/options-text-editor-all-languages.md) |
 |スクロール バー | [[オプション]、[テキスト エディター]、[すべての言語]、[スクロール バー]](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
 |タブ  |  [[オプション]、[テキスト エディター]、[すべての言語]、[タブ]](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
-### <a name="xaml-specific-text-editor-options"></a>XAML 固有のテキストエディターオプション
+### <a name="xaml-specific-text-editor-options"></a>テキスト エディターの XAML 固有のオプション
 
-次の表に、XAML ベースのアプリを開発するときの編集エクスペリエンスを向上させるための [[オプション](../ide/reference/options-text-editor-xaml-formatting.md)] ダイアログボックスの設定を示します。 これらのオプションとその使用方法の詳細については、リンクされた情報を参照してください。
+次の表では、XAML ベースのアプリを開発するときに編集エクスペリエンスを拡張できる [[オプション]](../ide/reference/options-text-editor-xaml-formatting.md) ダイアログ ボックスの設定の一覧を示します。 これらのオプションの詳細とその使用方法については、リンク先の情報を参照してください。
 
 |名前  |詳細情報  |
 |---------|---------|
@@ -293,16 +293,16 @@ XAML の [[オプション](../ide/reference/options-text-editor-xaml-formatting
 |その他 |  [[オプション]、[テキスト エディター]、[XAML]、[その他]](../ide/reference/options-text-editor-xaml-miscellaneous.md) |
 
 > [!TIP]
-> [**その他**] セクションの [**イベントハンドラーメソッド名の大文字**化] 設定は、XAML 開発者にとって特に便利です。 この設定は新しいため、既定では*オフ*になっていますが、コードでの適切な大文字と小文字の区別をサポートするには、 *[オン*] に設定することをお勧めします。
+> **[その他]** セクションの **[イベント ハンドラー メソッド名を大文字にする]** の設定は、XAML 開発者にとって特に便利です。 この設定は新しいので、既定では "*オフ*" になっていますが、コードで適切な大文字と小文字の区別がサポートされるため、"*オン*" に設定することをお勧めします。
 
 ## <a name="next-steps"></a>次のステップ
 
-デバッグモードでのアプリの実行中にリアルタイムでコードを編集する方法の詳細については、 [XAML のホットリロード](xaml-hot-reload.md)に関するページを参照してください。
+デバッグ モードでアプリを実行しながらリアルタイムでコードを編集する方法の詳細については、[XAML ホット リロード](xaml-hot-reload.md)に関するページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio code エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Visual Studio のコード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [UWP アプリの XAML](/windows/uwp/xaml-platform/xaml-overview/)
 - [Xamarin.Forms アプリの XAML](/xamarin/xamarin-forms/xaml/)
-- [Xamarin モバイルアプリ開発 (Mac)](/visualstudio/mac/xamarin/)
-- [Mac 用 Visual Studio 2019-IDE ツアー (Mac)](/visualstudio/mac/ide-tour/)
+- [Xamarin のモバイル アプリ開発 (Mac)](/visualstudio/mac/xamarin/)
+- [Visual Studio 2019 for Mac - IDE ツアー (Mac)](/visualstudio/mac/ide-tour/)

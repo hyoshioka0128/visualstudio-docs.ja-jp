@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ca58938a55330243315529e9c7990b59d1a6fe5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548344"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008:Enums は 0 値を含んでいなければなりません
@@ -30,7 +30,7 @@ ms.locfileid: "85548344"
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |カテゴリ|Microsoft Design|
-|互換性に影響する変更点|非ブレーク-フラグ以外の列挙に**None**値を追加するように求めるメッセージが表示されます。中断-列挙値の名前変更または削除を求めるメッセージが表示された場合。|
+|互換性に影響する変更点|非ブレーク-フラグ以外の列挙に **None** 値を追加するように求めるメッセージが表示されます。中断-列挙値の名前変更または削除を求めるメッセージが表示された場合。|
 
 ## <a name="cause"></a>原因
  が適用されていない列挙体 <xref:System.FlagsAttribute?displayProperty=fullName> は、0の値を持つメンバーを定義しません。または、適用されたを持つ列挙体は、 <xref:System.FlagsAttribute> 値が0でも名前が ' None ' であるメンバーを定義します。または、列挙体は、複数の0値のメンバーを定義します。
@@ -64,5 +64,5 @@ ms.locfileid: "85548344"
 
  [CA1027:列挙型を FlagsAttribute に設定します](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Enum?displayProperty=fullName>

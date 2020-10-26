@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::GetFormalTypeParams |Microsoft Docs
+title: 'IDebugGenericFieldDefinition:: GetFormalTypeParams |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e4595cd8a93c266d0eb70e91b8ab8ca8aeb8cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180839"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-パラメーターの数を指定された型パラメーターを取得します。  
+パラメーターの数を指定して、型パラメーターを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,19 +43,19 @@ int GetFormalTypeParams(
   
 #### <a name="parameters"></a>パラメーター  
  `cParams`  
- [in]パラメーターの数。  
+ からパラメーターの数。  
   
  `ppParams`  
- [out]型パラメーターの配列。  
+ 入出力型パラメーターの配列。  
   
  `pcParams`  
- [入力、出力]パラメーターの数、`ppParams`配列。  
+ [入力、出力]配列内のパラメーターの数 `ppParams` 。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 右の順序で左からの型パラメーターを返します。 例: Dictionary\<K, V > IDebugFormalGenericParameters {K, V} を返します。  
+## <a name="remarks"></a>注釈  
+ 型パラメーターを左から右へ順に返します。 たとえば、Dictionary は \<K,V> IDebugFormalGenericParameters {K, V} を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

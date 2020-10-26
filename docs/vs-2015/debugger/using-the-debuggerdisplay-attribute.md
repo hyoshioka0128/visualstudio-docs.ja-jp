@@ -1,5 +1,5 @@
 ---
-title: DebuggerDisplay 属性の使用 |Microsoft Docs
+title: デバッガーの表示属性 | を使用します。Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683937"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 属性を使用します
@@ -41,7 +41,7 @@ ms.locfileid: "65683937"
   
  次の表に、 `DebuggerDisplay` 属性の使用例と出力例を示します。  
   
-|属性|**[値]** 列に表示される出力|  
+|属性|[ **値** ] 列に表示される出力|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> `x` フィールドと `y`フィールドがある型で使用されます。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`パラメーターの構文は、言語によって異なります。 そのため、使用には注意が必要です。|`String value is [5, 6, 6]`|  
@@ -100,8 +100,8 @@ public sealed class MyClass
   
 |**Name**|**[値]**|**Type**|  
 |--------------|---------------|--------------|  
-|キー|"three"|object {string}|  
-|値|3|object {int}|  
+|Key|"three"|object {string}|  
+|[値]|3|object {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
@@ -179,5 +179,5 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [DebuggerTypeProxy 属性を使用して](../debugger/using-debuggertypeproxy-attribute.md)[デバッガー表示属性によるデバッグ機能の拡張](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+## <a name="see-also"></a>参照  
+ デバッガー[を使用して](../debugger/using-debuggertypeproxy-attribute.md)[デバッガーの表示属性を使用したデバッグの強化デバッグ](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)属性

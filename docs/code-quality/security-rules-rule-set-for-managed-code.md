@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: c7ce330a8a2994f827234aae8b8db416da016b29
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929223"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509875"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>マネージド コードの "セキュリティ規則" 規則セット
 
 レガシコード分析用の Microsoft セキュリティ規則セットを使用して、報告される潜在的なセキュリティ問題の数を最大化します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA2100](../code-quality/ca2100.md)|SQL クエリのセキュリティ脆弱性を確認|
 |[CA2102](../code-quality/ca2102.md)|汎用ハンドラーの CLSCompliant でない例外をキャッチします|
@@ -86,5 +86,5 @@ ms.locfileid: "75929223"
 |[CA3010](../code-quality/ca3010.md)|XAML インジェクションの脆弱性のコード レビュー|
 |[CA3011](../code-quality/ca3011.md)|DLL インジェクションの脆弱性のコード レビュー|
 |[CA3012](../code-quality/ca3012.md)|RegEx インジェクションの脆弱性のコード レビュー|
-|[CA5358](../code-quality/ca5358.md)|Unsafe 暗号モードを使用しない|
+|[CA5358](../code-quality/ca5358.md)|安全ではない暗号モードを使用しないでください|
 |[CA5403](../code-quality/ca5403.md)|証明書をハードコーディングしない|

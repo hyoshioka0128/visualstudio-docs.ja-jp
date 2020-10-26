@@ -1,5 +1,5 @@
 ---
-title: コンテキスト オブジェクトの選択 |Microsoft Docs
+title: 選択コンテキストオブジェクト |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,38 +12,38 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187429"
 ---
 # <a name="selection-context-objects"></a>コンテキスト オブジェクトの選択
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) が何を IDE に表示するかを判断するグローバルの選択コンテキスト オブジェクトを使用します。 IDE では、各ウィンドウは、独自の選択コンテキスト オブジェクトの選択のグローバル コンテキストにプッシュを持つことができます。 IDE は、そのウィンドウにフォーカスがあるウィンドウから値を持つグローバルの選択コンテキストを更新します。 詳細については、次を参照してください。[ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)します。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (ide: integrated development environment) は、グローバル選択コンテキストオブジェクトを使用して、ide に表示する内容を決定します。 IDE の各ウィンドウは、グローバル選択コンテキストにプッシュされた独自の選択コンテキストオブジェクトを持つことができます。 IDE は、ウィンドウにフォーカスがあるときに、グローバル選択コンテキストをウィンドウの値で更新します。 詳細については、「 [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)」を参照してください。  
   
- ウィンドウ フレームまたは IDE でのサイトごとと呼ばれるサービス<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>します。 ウィンドウ フレームに配置されている VSPackage によって作成されたオブジェクトを呼び出す必要があります、`QueryService`へのポインターを取得するメソッド、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>インターフェイス。  
+ IDE 内の各ウィンドウフレームまたはサイトには、というサービスがあり <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> ます。 ウィンドウフレーム内に配置されている VSPackage によって作成されたオブジェクトは、その `QueryService` インターフェイスへのポインターを取得するためにメソッドを呼び出す必要があり <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> ます。  
   
- フレーム ウィンドウには、開始するときに、グローバルの選択コンテキストを伝達されてから、選択コンテキスト情報の特定の部分を保持できます。 この機能は、空の選択範囲を開始する可能性のあるツール ウィンドウに便利です。  
+ フレームウィンドウを使用すると、選択コンテキスト情報の一部を、開始時にグローバル選択コンテキストに反映させることができます。 この機能は、空の選択によって開始する必要があるツールウィンドウに役立ちます。  
   
- Vspackage を監視するグローバルの選択コンテキストのトリガー イベントを変更します。 Vspackage が実装することで、次のタスクを実行できます`IVsTrackSelectionEx`と<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>インターフェイス。  
+ グローバル選択コンテキストを変更すると、Vspackage が監視できるイベントがトリガーされます。 Vspackage は、およびインターフェイスを実装することで、次のタスクを実行でき `IVsTrackSelectionEx` <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> ます。  
   
 - 階層内の現在アクティブなファイルを更新します。  
   
-- 特定の種類の要素への変更を監視します。 例では、VSPackage が特別なを使用している場合、**プロパティ**ウィンドウで、アクティブな変更を監視できます**プロパティ**ウィンドウし、必要な場合に自分を再起動します。  
+- 特定の種類の要素に対する変更を監視します。 たとえば、VSPackage で特別な **プロパティ** ウィンドウを使用する場合は、[アクティブな **プロパティ** ] ウィンドウで変更を監視し、必要に応じて自分で再起動できます。  
   
-  次の順序は、選択の追跡の一般的な手順を示しています。  
+  次のシーケンスは、選択の追跡の典型的な例を示しています。  
   
-1. IDE では、新しく開かれたウィンドウから選択コンテキストを取得し、グローバルの選択コンテキスト内に配置します。 HIERARCHY_DONTPROPAGATE または SELCONTAINER_DONTPROPAGATE を選択コンテキストを使用する場合、グローバルなコンテキストにその情報は反映されません。 詳細については、次を参照してください。[ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)します。  
+1. IDE は、新しく開いたウィンドウから選択コンテキストを取得し、グローバルな選択コンテキストに配置します。 選択コンテキストで HIERARCHY_DONTPROPAGATE または SELCONTAINER_DONTPROPAGATE が使用されている場合、その情報はグローバルコンテキストに反映されません。 詳細については、「 [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)」を参照してください。  
   
-2. 通知イベントは、それらを要求したすべての VSPackage にブロードキャストされます。  
+2. 通知イベントは、要求したすべての VSPackage にブロードキャストされます。  
   
-3. VSPackage は、階層には、ツール、またはその他の同様のタスクを再アクティブ化の更新などのアクティビティを実行することによって受信イベントに対して動作します。  
+3. VSPackage は、階層を更新したり、ツールを再アクティブ化したり、その他の同様のタスクを実行したりすることによって、受信するイベントに対して動作します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
  [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)   
- [選択と、IDE で通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [プロジェクト タイプ](../../extensibility/internals/project-types.md)
+ [IDE での選択と通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
+ [プロジェクトの種類](../../extensibility/internals/project-types.md)

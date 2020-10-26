@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError |Microsoft Docs
+title: 'IDebugProperty3:: SetValueAsStringWithError |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58b2c487e0259ec2381638c77608f8773af3e159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193386"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このプロパティの値を設定し、必要な場合に、エラー メッセージを返します。  
+このプロパティの値を設定し、必要に応じてエラーメッセージを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,25 +46,25 @@ int SetValueAsStringWithError(
   
 #### <a name="parameters"></a>パラメーター  
  `pszValue`  
- [in]設定する値。  
+ から設定する値。  
   
  `dwRadix`  
- [in]設定されている値の基数です。  
+ から設定される値の基数。  
   
  `dwTimeout`  
- [in]値を設定するを待機する時間の長さ (`INFINITE`手段が無期限に待機) します。  
+ から値が設定されるまで待機する時間の長さ ( `INFINITE` 無期限に待機することを意味します)。  
   
  `errorString`  
- [out]値の設定中にエラーがあった場合、これは失敗の理由を保持します。  
+ 入出力値の設定中にエラーが発生した場合は、失敗の原因が保持されます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 受信した値には、評価される式を使用できます。  
+## <a name="remarks"></a>注釈  
+ 入力値には、評価する式を指定できます。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CProperty**を公開するオブジェクト、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイス。  
+ 次の例は、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを公開する**cproperty**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 HRESULT CProperty::SetValueAsStringWithError(   
@@ -168,5 +168,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

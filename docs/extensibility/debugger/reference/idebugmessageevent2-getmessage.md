@@ -1,5 +1,5 @@
 ---
-title: メッセージイベント2::メッセージを取得する |マイクロソフトドキュメント
+title: 'IDebugMessageEvent2:: GetMessage |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727403"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
-表示するメッセージを取得します。
+表示されるメッセージを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -50,24 +50,24 @@ int GetMessage( 
 
 ## <a name="parameters"></a>パラメーター
 `pMessageType`\
-[アウト]メッセージの種類を記述する[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)列挙体から値を返します。
+入出力メッセージの種類を示す [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 列挙から値を返します。
 
 `pbstrMessage`\
-[アウト]メッセージを返します。
+入出力メッセージを返します。
 
 `pdwType`\
-[アウト]Win32`MessageBox`関数の規則を使用して、メッセージの種類を返します。 詳細については[、Afx メッセージ ボックス](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)関数を参照してください。
+入出力Win32 関数の規約を使用して、メッセージの型を返し `MessageBox` ます。 詳細については、 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 関数を参照してください。
 
 `pbstrHelpFileName`\
-[イン、アウト]ヘルプ ファイル名を返します。 ヘルプ ファイルがない場合は、null (C++) または空の値 (C#) を指定できます。
+[入力、出力]ヘルプファイル名を返します。 ヘルプファイルがない場合は、null (C++) または空 (C#) の値を指定できます。
 
 `pdwHelpId`\
-[イン、アウト]ヘルプ識別子を返します。 このメッセージに関連するヘルプがない場合は、0 になることがあります。
+[入力、出力]ヘルプ識別子を返します。 このメッセージにヘルプが関連付けられていない場合は0になることがあります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
-- [メッセージタイプ](../../../extensibility/debugger/reference/messagetype.md)
+- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

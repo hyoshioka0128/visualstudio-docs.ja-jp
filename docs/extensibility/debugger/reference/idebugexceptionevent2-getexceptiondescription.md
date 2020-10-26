@@ -1,5 +1,5 @@
 ---
-title: イベント 2:::例外説明 |マイクロソフトドキュメント
+title: 'IDebugExceptionEvent2:: GetExceptionDescription |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7a6ea64540eaeef5ec258bc54b118b3a0600584c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729851"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-例外の表示可能な説明を取得します。
+例外のわかり可能な説明を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetExceptionDescription( 
 
 ## <a name="parameters"></a>パラメーター
 `pbstrDescription`\
-[アウト]例外の表示可能な説明を返します。
+入出力例外のわかり可能な説明を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドから返される文字列は、通常、例外の名前であり、例外が発生したときに **[出力**] ウィンドウに表示されます。
+## <a name="remarks"></a>解説
+ このメソッドから返される文字列は、通常、例外の名前であり、例外が発生したときに [ **出力** ] ウィンドウに表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

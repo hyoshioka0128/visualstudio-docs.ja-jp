@@ -1,5 +1,5 @@
 ---
-title: ポート サプライヤーの実装 |Microsoft Docs
+title: Port Supplier | を実装するMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ffa6daa20c08bd236657c88e762b2f453554cb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152682"
 ---
 # <a name="implementing-a-port-supplier"></a>ポートのサプライヤーの実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ポート サプライヤーは、セッション デバッグ マネージャー (SDM) への要求でポートを提供します。 ポート サプライヤーは、DCOM ではないマシンをデバッグするときに、または新しいデバイスをサポートする必要がある場合に実装する必要があります。 たとえば、携帯電話へのデバッグを提供するに (おそらくによって IR またはセルの接続)、携帯電話に接続し、プロセスと、スマート フォンで実行されているプログラムを列挙するポートを提供するポートのサプライヤーを実装する可能性があります。  
+ポートサプライヤーは、セッションデバッグマネージャー (SDM) への要求時にポートを提供します。 DCOM 以外のコンピューターにデバッグする場合、または新しいデバイスをサポートする必要がある場合は、ポートサプライヤーを実装する必要があります。 たとえば、携帯電話にデバッグを提供するには、携帯電話に接続するポート (通常は IR またはセル接続) を提供し、電話で実行されているプロセスとプログラムを列挙するポート供給者を実装します。  
   
- (リモート デバッグも含めて)、Windows ベースのコンピューターでプログラムのデバッグのため、このような場合、独自のポート サプライヤーを実装する必要はありません、Visual Studio はネイティブ モードと共通言語ランタイム (CLR) のプロセス、ポート サプライヤーを提供します。  
+ Windows ベースのコンピューターでのデバッグプログラム (リモートデバッグを含む) の場合、Visual Studio にはネイティブおよび共通言語ランタイム (CLR) のプロセス用のポートサプライヤーが用意されているので、独自のポート供給業者を実装する必要はありません。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ポート サプライヤーの実装および登録](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
- ポート サプライヤーとそのポートで、SDM をやり取りする方法について説明します。  
+ SDM がポートサプライヤーとポートを操作する方法について説明します。  
   
  [必須のポート サプライヤー インターフェイス](../../extensibility/debugger/required-port-supplier-interfaces.md)  
- ポート サプライヤーを取得する実装する必要があるインターフェイスについて説明します。  
+ ポートサプライヤーを取得するために実装する必要があるインターフェイスについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)  
- デバッグ アーキテクチャの主要な概念をについて説明します。  
+ デバッグアーキテクチャの主要概念について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

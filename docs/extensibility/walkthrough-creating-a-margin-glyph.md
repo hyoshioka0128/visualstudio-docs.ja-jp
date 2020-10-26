@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905047"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>チュートリアル: 余白のグリフの作成
@@ -25,9 +25,9 @@ ms.locfileid: "85905047"
 
 ## <a name="create-a-mef-project"></a>MEF プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `TodoGlyphTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `TodoGlyphTest` します。
 
-2. エディター分類子プロジェクト項目を追加します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. エディター分類子プロジェクト項目を追加します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
 3. 既存のクラス ファイルを削除します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "85905047"
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5. `GenerateGlyph`グリフのユーザーインターフェイス (UI) 要素を定義してを実装します。 `TodoTag`は、このチュートリアルの後半で定義されています。
+5. `GenerateGlyph`グリフのユーザーインターフェイス (UI) 要素を定義してを実装します。 `TodoTag` は、このチュートリアルの後半で定義されています。
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]
@@ -134,7 +134,7 @@ ms.locfileid: "85905047"
 
 2. **F5**キーを押してプロジェクトを実行します。 Visual Studio の2番目のインスタンスが起動します。
 
-3. インジケーターマージンが表示されていることを確認します。 ([**ツール**] メニューの [**オプション**] をクリックします。 [**テキストエディター** ] ページで、[**インジケーターマージン**] が選択されていることを確認します。)
+3. インジケーターマージンが表示されていることを確認します。 ([ **ツール** ] メニューの [ **オプション**] をクリックします。 [ **テキストエディター** ] ページで、[ **インジケーターマージン** ] が選択されていることを確認します。)
 
 4. コメントが含まれているコードファイルを開きます。 コメントセクションのいずれかに "todo" という単語を追加します。
 

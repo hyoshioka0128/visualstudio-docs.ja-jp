@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでのコメント コード |Microsoft Docs
+title: 従来の言語サービスでのコードのコメント化 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,37 +12,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160913"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>従来の言語サービスのコメント コード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プログラミング言語は、通常の注釈を設定するか、コードをコメントするための手段を提供します。 コメントは、コードに関する追加情報を提供しますが、コンパイルまたは解釈中に無視されるテキストのセクションです。  
+プログラミング言語は、通常、コードに注釈を付けたり、コメントを付けたりするための手段を提供します。 コメントは、コードに関する追加情報を提供するテキストのセクションですが、コンパイル時または解釈時には無視されます。  
   
- マネージ パッケージ フレームワーク (MPF) クラスは、選択したテキストをコメント化とコメント解除のサポートを提供します。  
+ Managed package framework (MPF) クラスは、選択したテキストのコメント化とコメント解除のサポートを提供します。  
   
 ## <a name="comment-styles"></a>コメントのスタイル  
- コメントの 2 つの一般的なスタイルがあります。  
+ コメントには、次の2つの一般的なスタイルがあります。  
   
-1. 行のコメントを 1 行にコメントがあります。  
+1. 行コメント。コメントは1行にあります。  
   
-2. ブロックのコメント、コメントが複数の行を含めることができます。  
+2. コメントをブロックします。コメントには複数の行を含めることができます。  
   
-   行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、c# の場合は、行のコメントから始まります//、ブロックのコメントの始まりと/* で終わる\*/。  
+   行のコメントには、通常、開始文字 (または文字) がありますが、ブロックコメントには開始文字と終了文字の両方があります。 たとえば、C# では、行コメントは//で始まり、ブロックコメントは/* で始まり、は/で終わり \* ます。  
   
-   ユーザーがコマンドを選択すると**選択範囲のコメント**から、**編集** -> **詳細** メニューにコマンドがルーティングされます、<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Source>クラス。 ユーザーがコマンドを選択すると**選択範囲のコメントを解除します**にルーティングは、コマンド、<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>メソッド。  
+   ユーザーが [詳細の**編集**] メニューからコマンド**コメントを選択**すると、  ->  **Advanced**コマンドはクラスのメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> ます。 ユーザーがコマンドを選択して **選択**を解除すると、コマンドはメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> ます。  
   
-## <a name="supporting-code-comments"></a>コードのコメントをサポートしています。  
- 言語サービスのサポート コード コメントがあることができます、`EnableCommenting`名前付きのパラメーター、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>します。 これにより設定、<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>のプロパティ、<xref:Microsoft.VisualStudio.Package.LanguagePreferences>クラス。 サービス機能の言語を設定する方法についての詳細については、次を参照してください。[従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md))。  
+## <a name="supporting-code-comments"></a>サポートコードコメント  
+ の名前付きパラメーターを使用して、言語サービスでコードのコメントをサポートすることができ `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> ます。 これにより <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 、クラスのプロパティが設定され <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ます。 Language servicce 機能の設定の詳細については、「 [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください。  
   
- オーバーライドすることも必要があります、<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>を返すメソッドを<xref:Microsoft.VisualStudio.Package.CommentInfo>言語のコメント文字を含む構造体。 C#-行のコメント文字のスタイルは、既定値。  
+ また、メソッドをオーバーライドし <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> <xref:Microsoft.VisualStudio.Package.CommentInfo> て、言語のコメント文字を含む構造体を返す必要があります。 C# スタイルの行コメント文字が既定値です。  
   
 ### <a name="example"></a>例  
- 実装例を次に示します、<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>メソッド。  
+ メソッドの実装例を次に示し <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> ます。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -63,6 +63,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [従来の言語サービスの機能](../../extensibility/internals/legacy-language-service-features1.md)   
+## <a name="see-also"></a>参照  
+ [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)   
  [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)

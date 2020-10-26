@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b8f6ee192399c8af8a508b2f9c2817db954bb36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673011"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>データベースの画像にコントロールをバインドする
@@ -47,9 +47,9 @@ ms.locfileid: "72673011"
 
 3. イメージ データを含む列またはプロパティを選択し、ドロップダウン コントロール リストから次のいずれかのコントロールを選択します。
 
-    - WPF デザイナーが開いている場合は、 **[Image]** を選択します。
+    - WPF デザイナーが開いている場合は、**[Image]** を選択します。
 
-    - Windows フォーム デザイナーが開いている場合は、 **[PictureBox]** を選択します。
+    - Windows フォーム デザイナーが開いている場合は、**[PictureBox]** を選択します。
 
     - または、データ バインディングをサポートし、かつイメージを表示できる、別のコントロールを選択することもできます。 使用するコントロールが利用できるコントロールのリストに含まれていない場合は、そのコントロールをリストに追加してから選択できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
 

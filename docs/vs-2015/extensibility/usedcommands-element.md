@@ -1,5 +1,5 @@
 ---
-title: UsedCommands 要素 |Microsoft Docs
+title: Used Commands 要素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186289"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-UsedCommands 要素には、UsedCommand 要素とその他の UsedCommands グループがグループ化します。  
+Used Commands 要素は、実行されたコマンド要素とその他の実行されたコマンドグループをグループ化します。  
   
- UsedCommands 要素は省略可能です。 場合は、パッケージの外部で定義されているコマンドを呼び出すことはありません、.vsct ファイルにこのセクションを含めることはありません。  
+ Used Commands 要素は省略可能です。 パッケージの外部で定義されたコマンドを呼び出さない場合は、このセクションを vsct ファイルに含める必要はありません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,19 +42,19 @@ UsedCommands 要素には、UsedCommand 要素とその他の UsedCommands グ�
   
 |属性|説明|  
 |---------------|-----------------|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[UsedCommand 要素](../extensibility/usedcommand-element.md)|他のコードで実装されているコマンド。|  
+|[UsedCommand 要素](../extensibility/usedcommand-element.md)|他のコードによって実装されるコマンド。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[CommandTable 要素](../extensibility/commandtable-element.md)|統合開発環境 (IDE) には、VSPackage を提供するコマンド (たとえば、メニュー項目、メニューのツールバー、およびコンボ ボックスなど) を表すすべての要素を定義します。|  
+|[CommandTable 要素](../extensibility/commandtable-element.md)|VSPackage が統合開発環境 (IDE) に提供するコマンド (メニュー項目、メニュー、ツールバー、コンボボックスなど) を表すすべての要素を定義します。|  
   
 ## <a name="example"></a>例  
   
@@ -66,6 +66,6 @@ UsedCommands 要素には、UsedCommand 要素とその他の UsedCommands グ�
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [UsedCommand 要素](../extensibility/usedcommand-element.md)   
+## <a name="see-also"></a>参照  
+ [Used Command 要素](../extensibility/usedcommand-element.md)   
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

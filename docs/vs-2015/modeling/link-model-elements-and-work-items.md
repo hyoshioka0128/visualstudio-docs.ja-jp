@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4fea9e3fb1d5b4d27b1d520ac2ab036747f73d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657631"
 ---
 # <a name="link-model-elements-and-work-items"></a>モデル要素と作業項目とのリンク
@@ -63,13 +63,13 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 > [!WARNING]
 > 作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。
 
-- [チームプロジェクトへの接続](#ConnectTFS)
+- [チーム プロジェクトに接続します](#ConnectTFS)
 
 - [モデル要素を新しい作業項目にリンクする](#LinkNew)
 
 - [モデル要素を既存の作業項目にリンクする](#LinkExisting)
 
-- [モデル要素にリンクされた作業項目の表示](#OpenWorkItem)
+- [モデル要素にリンクされた作業項目を表示する](#OpenWorkItem)
 
 - [作業項目にリンクされたモデル要素を表示する](#ViewLinkedModels)
 
@@ -77,7 +77,7 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 
 - [トラブルシューティング](#Troubleshooting)
 
-## <a name="ConnectTFS"></a>チームプロジェクトへの接続
+## <a name="connect-to-a-team-project"></a><a name="ConnectTFS"></a> チームプロジェクトへの接続
  リンクを作成、表示、または削除するために、まず、チーム プロジェクトに接続する必要があります。
 
 1. **[チーム]** メニューで、 **[接続の管理]** をクリックして、チーム エクスプローラー ウィンドウを表示します。
@@ -86,7 +86,7 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 
 3. **チーム エクスプローラー**で、作業項目の生成、リンク、または表示を行うプロジェクトを選択します。
 
-## <a name="LinkNew"></a>モデル要素を新しい作業項目にリンクする
+## <a name="link-a-model-element-to-a-new-work-item"></a><a name="LinkNew"></a> モデル要素を新しい作業項目にリンクする
 
 1. 使用する TFS インスタンスに接続されていることを確認します。
 
@@ -101,7 +101,7 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 > [!WARNING]
 > 作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。
 
-## <a name="LinkExisting"></a>モデル要素を既存の作業項目にリンクする
+## <a name="link-a-model-element-to-an-existing-work-item"></a><a name="LinkExisting"></a> モデル要素を既存の作業項目にリンクする
  作業項目にモデル要素をリンクする場合は、作業項目からではなく、モデル要素から開始します。
 
 1. 使用する TFS インスタンスに接続されていることを確認します。
@@ -125,7 +125,7 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 > [!WARNING]
 > 作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。
 
-## <a name="OpenWorkItem"></a>モデル要素にリンクされた作業項目の表示
+## <a name="view-work-items-linked-to-a-model-element"></a><a name="OpenWorkItem"></a> モデル要素にリンクされた作業項目の表示
 
 1. **チーム エクスプローラー**で、作業項目がモデル要素にリンクされているチーム プロジェクトに接続していることを確認します。
 
@@ -134,7 +134,7 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
     > [!NOTE]
     > 現在接続しているサーバーの作業項目のみが表示されます。 作業項目が表示されない場合は、正しいサーバーに接続していることを **チーム エクスプローラー**で確認します。
 
-## <a name="ViewLinkedModels"></a>作業項目にリンクされたモデル要素を表示する
+## <a name="view-model-elements-linked-to-a-work-item"></a><a name="ViewLinkedModels"></a> 作業項目にリンクされたモデル要素を表示する
  Visual Studio Team Services および Team Foundation Server 2012 以降の作業項目にリンクされたモデリング図とモデリング要素を表示できます。 たとえば、実装される新しいクラスのデザインを示すクラス モデルに作業項目がリンクされている場合があります。
 
 1. **チーム エクスプローラー**で、モデル要素が作業項目にリンクされているチーム プロジェクトに接続していることを確認します。
@@ -144,9 +144,9 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 
 2. 作業項目を開き、 **[リンク]** をクリックします。 **[モデル リンク]** で、リンクされたモデル要素のショートカット メニューを開きます。 **[リンクされた項目を開く]** をクリックします。
 
-     ![リンクされたモデル要素を作業項目から開く](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")
+     ![作業項目からリンクされたモデル要素を開く](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")
 
-## <a name="RemoveLinks"></a>モデル要素と作業項目の間のリンクを削除する
+## <a name="delete-links-between-model-elements-and-work-items"></a><a name="RemoveLinks"></a> モデル要素と作業項目の間のリンクを削除する
  モデル要素を起点として、リンクされた作業項目を削除してください。 こうすると、そのモデル要素への作業項目からの相互リンクが正しく削除されます。 この方法以外では、作業項目から始めた場合でも、モデル要素から作業項目への相互リンクは削除されません。
 
 1. モデリング図または **UML モデル エクスプローラー**で、モデル要素のショートカット メニューを開きます。
@@ -157,16 +157,16 @@ Visual Studio のモデル要素と Team Foundation Server または Visual Stud
 
     1. **[プロパティ]** をクリックし、リンクされた作業項目の数が表示されている **[作業項目]** をクリックします。
 
-    2. **[作業項目]** プロパティで省略記号 ( **...** ) ボタンをクリックします。
+    2. **[作業項目]** プロパティで省略記号 ( **...**) ボタンをクリックします。
 
         > [!NOTE]
         > 現在のサーバー上の作業項目のみが表示されます。 リストが空で、作業項目の数が 0 ではない場合は、 **チーム エクスプローラー**で正しいサーバーに接続していることを確認してください。
 
-3. **[作業項目へのリンクの削除]** で、リンクを解除する選択済み項目をクリアします。 **[OK]** をクリックします。
+3. **[作業項目へのリンクの削除]** で、リンクを解除する選択済み項目をクリアします。 **[OK]** を選択します。
 
-## <a name="Troubleshooting"></a>行う
+## <a name="troubleshooting"></a><a name="Troubleshooting"></a> トラブルシューティング
 
-|**問題点**|**原因**|**解決策**|
+|**問題点**|**考えられる原因**|**解像度**|
 |---------------|------------------------|--------------------|
 |リンクするモデル要素が見つかりません。|要素が [!INCLUDE[esprscc](../includes/esprscc-md.md)]内にあるモデリング プロジェクトの図に含まれる可能性があります。 図にマップするワークスペースがない可能性があります。|ワークスペースをモデリング プロジェクトと図にマップします。 ワークスペースがない場合は、作成する必要があります。<br /><br /> この問題に対して表示されるエラー メッセージには、ワークスペースをマップするために使用できるパスが含まれます。<br /><br /> 「 [ワークスペースの作成と操作](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)」を参照してください。|
 |リンクされたモデル要素が見つかりません。|リンクされた要素が存在する図が、移動、名前変更、または削除されている可能性があります。|1. 作業項目で、モデル要素へのリンクを削除します。<br />2. 作業項目からモデル要素への新しいリンクを作成します。|

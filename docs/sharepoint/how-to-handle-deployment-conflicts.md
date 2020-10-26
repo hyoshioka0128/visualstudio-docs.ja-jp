@@ -10,9 +10,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015313"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>方法: 配置の競合を処理する
@@ -39,7 +40,7 @@ ms.locfileid: "86015313"
 ## <a name="example"></a>例
  次のコード例は、リスト定義プロジェクト項目のプロジェクト項目の拡張機能で配置の競合を処理するための基本的なプロセスを示しています。 別の種類のプロジェクトアイテムの配置の競合を処理するには、別の文字列をに渡し <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> ます。 詳細については、「 [SharePoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)」を参照してください。
 
- わかりやすくするために、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> この例のイベントハンドラーでは、配置の競合が存在することを前提としています (つまり、常に新しいオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> `Resolve` ます)。メソッドは、競合が解決されたことを示すために**true**を返します。 実際のシナリオでは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> イベントハンドラーは、現在のプロジェクト項目内のファイルと配置場所のファイルの間に競合があるかどうかを最初に判断し、競合が存在する場合にのみオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> ます。 たとえば、イベントハンドラーのプロパティを使用して `e.ProjectItem.Files` プロジェクト項目内のファイルを分析し、SharePoint コマンドを呼び出して配置場所でファイルを分析することができます。 同様に、実際のシナリオでは、メソッドは sharepoint `Resolve` コマンドを呼び出して sharepoint サイトの競合を解決することがあります。 SharePoint コマンドの作成の詳細については、「[方法: sharepoint コマンドを作成](../sharepoint/how-to-create-a-sharepoint-command.md)する」を参照してください。
+ わかりやすくするために、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> この例のイベントハンドラーでは、配置の競合が存在することを前提としています (つまり、常に新しいオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> `Resolve` ます)。メソッドは、競合が解決されたことを示すために **true** を返します。 実際のシナリオでは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> イベントハンドラーは、現在のプロジェクト項目内のファイルと配置場所のファイルの間に競合があるかどうかを最初に判断し、競合が存在する場合にのみオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> ます。 たとえば、イベントハンドラーのプロパティを使用して `e.ProjectItem.Files` プロジェクト項目内のファイルを分析し、SharePoint コマンドを呼び出して配置場所でファイルを分析することができます。 同様に、実際のシナリオでは、メソッドは sharepoint `Resolve` コマンドを呼び出して sharepoint サイトの競合を解決することがあります。 SharePoint コマンドの作成の詳細については、「 [方法: sharepoint コマンドを作成](../sharepoint/how-to-create-a-sharepoint-command.md)する」を参照してください。
 
  [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText |Microsoft Docs
+title: 'IDebugDocumentText2:: GetText |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200178"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>パラメーター  
  `pos`  
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体を取得するテキストの位置を示す。  
+ から取得するテキストの場所を示す [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。  
   
  `cMaxChars`  
- [in]取得するテキストの文字の最大数。  
+ から取得するテキストの最大文字数。  
   
  `pText`  
- [入力、出力]目的のテキストで格納されるバッファーへのポインター。 このバッファーは、少なくともできる必要があります`cMaxChars`ワイド文字の数。  
+ [入力、出力]目的のテキストを格納するバッファーへのポインター。 このバッファーには、少なくともワイド文字を含めることができる必要があり `cMaxChars` ます。  
   
  `pcNumChars`  
- [out]実際に取得される文字数を返します。  
+ 入出力実際に取得された文字数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 ## <a name="example"></a>例  
- この例では、c# からのこのメソッドの呼び出し方法を示します。  
+ この例は、C# からこのメソッドを呼び出す方法を示しています。  
   
 ```csharp  
 using System.Runtime.Interop.Services;  
@@ -99,6 +99,6 @@ namespace Mynamespace
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

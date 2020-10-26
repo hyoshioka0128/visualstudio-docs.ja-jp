@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745777"
 ---
 # <a name="assertions-in-managed-code"></a>マネージド コードのアサーション
@@ -154,7 +154,7 @@ Debug.Assert ( temp != 0 );
 
   C# または Visual Basic のリリース ビルドで Debug メソッドを使用する必要がある場合は、リリース構成にデバッグ シンボルを定義する必要があります。
 
-  C++ は、<xref:System.Diagnostics.Debug> クラスのメソッドをサポートしません。 ただし、<xref:System.Diagnostics.Trace> クラスを使って条件付きコンパイル (`#ifdef DEBUG`... `#endif` など) を行うことで、同じ効果が得られます。 これらのシンボルは **[\<プロジェクト> プロパティ ページ]** ダイアログ ボックスで定義できます。 詳細については、「[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)」または「[C または C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
+  C++ は、<xref:System.Diagnostics.Debug> クラスのメソッドをサポートしません。 ただし、<xref:System.Diagnostics.Trace> クラスを使って条件付きコンパイル (`#ifdef DEBUG`... `#endif` など) を行うことで、同じ効果が得られます。 これらのシンボルは **[\<Project> プロパティ ページ]** ダイアログ ボックスで定義できます。 詳細については、「[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)」または「[C または C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
 ## <a name="assert-arguments"></a><a name="BKMK_Assert_arguments"></a> Assert の引数
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> と <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> は、最大で 3 つの引数を受け取ります。 最初の引数は調べる条件です。これは必ず指定します。 1 つの引数だけを使用して <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> または <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> を呼び出した場合、`Assert` メソッドによって条件がチェックされ、結果が false である場合は呼び出し履歴の内容が **[出力]** ウィンドウに出力されます。 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> および <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> の使用例は、次のようになります。

@@ -1,5 +1,5 @@
 ---
-title: カスタムのカラー設定可能アイテム |マイクロソフトドキュメント
+title: カスタム装飾 Items |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,61 +12,61 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708995"
 ---
-# <a name="custom-colorable-items"></a>カスタムのカラー設定可能なアイテム
-カスタムの色付け可能な項目を言語サービスの一部として実装することで、キーワードやコメントなどの色分けの型のリストをオーバーライドできます。
+# <a name="custom-colorable-items"></a>カスタム装飾項目
+言語サービスの一部としてカスタム装飾項目を実装することで、キーワードやコメントなど、色分けの型の一覧をオーバーライドできます。
 
-## <a name="user-settings-of-colorable-items"></a>カラー設定可能なアイテムのユーザー設定
- [ツール **]** メニューの **[オプション]** をクリックし、[**環境**] の [**フォントと色**] をクリックすると、[**フォントと色**] ダイアログ ボックスを表示できます。 **[テキスト エディタ]** や **[コマンド ウィンドウ**] などの表示を選択すると、[**アイテムの表示**] リスト ボックスにその表示に使用されるすべての色付け可能なアイテムが表示されます。 色分け可能な項目ごとに、フォント、サイズ、前景色、背景色を表示および変更できます。 選択した項目は、レジストリのキャッシュに格納され、色付きの項目名によってアクセスされます。
+## <a name="user-settings-of-colorable-items"></a>装飾 items のユーザー設定
+ [**フォントおよび色**] ダイアログボックスを表示するには、[**ツール**] メニューの [**オプション**] を選択し、[**環境**] の [**フォントおよび色**] を選択します。 **テキストエディター**や**コマンドウィンドウ**などの表示を選択すると、[**表示項目**] ボックスに、その表示のすべての装飾項目が表示されます。 各装飾項目のフォント、サイズ、前景色、および背景色を表示および変更できます。 選択内容は、レジストリのキャッシュに格納され、装飾項目名によってアクセスされます。
 
-## <a name="presentation-of-colorable-items"></a>カラーアイテムのプレゼンテーション
- IDE は **[フォントと色**]ダイアログ ボックスでユーザーが色付け可能な項目を上書きする処理を行うため、各カスタムの色付け可能な項目に名前を付けるだけで済みます。 この名前は、[**表示項目**] ボックスの一覧に表示されます。 色付け可能な項目は、アルファベット順に表示されます。 言語サービスのカスタムの色指定可能な項目をグループ化するには、各名前を言語名で始**めることができます**。 **NewLanguage - Comment**
+## <a name="presentation-of-colorable-items"></a>装飾項目のプレゼンテーション
+ IDE では、[ **フォントおよび色** ] ダイアログボックスの装飾項目のユーザーオーバーライドが処理されるため、各カスタム装飾項目には名前を指定するだけで済みます。 この名前は、[ **表示項目** ] の一覧に表示されます。 装飾項目はアルファベット順に表示されます。 言語サービスのカスタム装飾アイテムをグループ化するには、それぞれの言語名で各名前を開始します ( **Newlanguage-Comment** や **Newlanguage-Keyword**など)。
 
 > [!CAUTION]
-> 既存の色付け可能な項目名との競合を避けるために、色付け可能な項目名に言語名を含める必要があります。 開発中にいずれかのカラー付け可能な項目の名前を変更した場合は、最初にカラーアイテムにアクセスするときに作成されたキャッシュをリセットする必要があります。 通常はディレクトリに Visual Studio SDK と共にインストールされる**CreateExpInstance**ツールを使用して、実験用キャッシュをリセットできます。
+> 既存の装飾項目名との競合を避けるために、装飾項目名に言語名を含める必要があります。 開発中にいずれかの装飾項目の名前を変更した場合は、装飾項目に初めてアクセスしたときに作成されたキャッシュをリセットする必要があります。 次に示すように、Visual Studio SDK と共にインストールされる **Createのインスタンス** ツールを使用して試験的なキャッシュをリセットできます。通常はディレクトリにあります。
 >
-> *C:\プログラム ファイル (x86)\マイクロソフト ビジュアル スタジオ 14.0\VSSDK\VisualStudio 統合\ツール\ビン*
+> *C:\Program Files (x86) \Microsoft Visual Studio 14.0 \ VSSDK\VisualStudioIntegration\Tools\Bin*
 >
-> キャッシュをリセットするには、**次のように**入力します。 **CreateExpInstance**の詳細については[、「CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)」を参照してください。
+> キャッシュをリセットするには、「 **Createexpinstance/reset**」と入力します。 **Createのインスタンス**の詳細については、「 [createのインスタンスユーティリティ](../../extensibility/internals/createexpinstance-utility.md)」を参照してください。
 
- カラー設定可能な項目のリストの最初の項目は参照できません。 最初の項目は、0 のカラー化可能な項目インデックスに[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]対応し、常にその項目の既定のテキストの色と属性を提供します。 この参照されていない項目を処理する最も簡単な方法は、最初の項目として、リスト内のプレースホルダーの色指定可能な項目を提供することです。
+ 装飾項目の一覧の最初の項目は参照されません。 最初の項目は、0の装飾 item インデックスに対応し、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] その項目の既定のテキストの色と属性を常に提供します。 この未参照の項目を処理する最も簡単な方法は、リスト内のプレースホルダー装飾項目を最初の項目として指定することです。
 
-## <a name="implement-custom-colorable-items"></a>カスタムのカラー対応アイテムを実装する
+## <a name="implement-custom-colorable-items"></a>カスタム装飾項目を実装する
 
-1. キーワード、演算子、識別子など、言語で色分けする必要があるものを定義します。
+1. キーワード、演算子、識別子など、お使いの言語で色付けが必要なものを定義します。
 
-2. これらの色付け可能な項目の列挙体を作成します。
+2. これらの装飾 items の列挙体を作成します。
 
-3. パーサーまたはスキャナーから返されるトークンの種類を列挙値に関連付けます。
+3. パーサーまたはスキャナーから返されたトークンの種類を列挙値に関連付けます。
 
-    たとえば、トークンの種類を表す値は、カスタムの色付け可能な項目の列挙体の値と同じである可能性があります。
+    たとえば、トークン型を表す値は、custom 装飾 items 列挙型の値と同じにすることができます。
 
-4. オブジェクト内のメソッドの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>実装で、パーサーまたはスキャナーから返されるトークンの種類に対応するカスタムの色付け可能な項目の列挙値を属性リストに入力します。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>オブジェクトのメソッドの実装で、[ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 属性] の一覧に、パーサーまたはスキャナーから返されたトークンの種類に対応するカスタム装飾 items 列挙子の値を入力します。
 
-5. インターフェイスを実装する同じクラスで<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>インターフェイスとその 2 つのメソッドを実装<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>し<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>、 .
+5. インターフェイスを実装するクラスと同じクラスで、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> インターフェイスと、との2つのメソッドを実装し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> ます。
 
 6. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> インターフェイスを実装します。
 
-7. 24 ビットまたは高色の値をサポートする場合は、インターフェイスも<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>実装します。
+7. 24ビットまたは高色の値をサポートする場合は、インターフェイスも実装し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> ます。
 
-8. 言語サービス オブジェクトで、オブジェクトを含むリストを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>作成します。
+8. 言語サービスオブジェクトで、オブジェクトを含むリストを作成し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> ます。このリストには、パーサーまたはスキャナーが識別できる各装飾項目が含まれます。
 
-    カスタムの色付け可能な項目の列挙体の対応する値を使用して、リスト内の各項目にアクセスできます。 列挙値をリストのインデックスとして使用します。 リストの最初の項目は、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]常に処理される既定のテキスト スタイルに対応するため、アクセスされることはありません。 これを補うためには、リストの先頭にプレースホルダの色付け可能な項目を挿入します。
+    リスト内の各項目には、custom 装飾 items 列挙子の対応する値を使用してアクセスできます。 列挙値は、一覧のインデックスとして使用します。 リスト内の最初の項目は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 常にそれ自体を処理する既定のテキストスタイルに対応しているため、アクセスされません。 このことを補うには、リストの先頭に装飾 item というプレースホルダーを挿入します。
 
-9. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>メソッドの実装で、カスタムの色付け可能な項目リスト内の項目の数を返します。
+9. メソッドの実装で <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 、カスタム装飾 items リスト内の項目数を返します。
 
-10. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>メソッドの実装で、要求された色付け可能な項目をリストから返します。
+10. メソッドの実装で <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> 、要求された装飾項目をリストから取得します。
 
-    <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>インターフェイスと<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>インターフェイスの実装方法の例については、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>を参照してください。
+    インターフェイスとインターフェイスを実装する方法の例につい <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> ては、「」を参照してください <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 。
 
 ## <a name="see-also"></a>関連項目
 - [従来の言語サービスのモデル](../../extensibility/internals/model-of-a-legacy-language-service.md)
-- [カスタム エディターでの構文の色分け](../../extensibility/syntax-coloring-in-custom-editors.md)
+- [カスタムエディターでの構文の色分け](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [構文の色分けを実装する](../../extensibility/internals/implementing-syntax-coloring.md)
-- [方法: 組み込みのカラー化可能なアイテムを使用する](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [方法: 組み込みの装飾項目を使用する](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

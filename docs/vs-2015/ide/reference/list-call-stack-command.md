@@ -1,4 +1,4 @@
-﻿---
+---
 title: 呼び出し履歴の一覧表示コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c44ac18468fbd26adab2cf973a21df58ebb28c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657655"
 ---
 # <a name="list-call-stack-command"></a>ListCallStack コマンド
@@ -42,29 +42,29 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="switches"></a>スイッチ
  各スイッチは、完全な形式または短い形式を使用して、呼び出すことができます。
 
- /カウント: `number` [または/C: `number` 省略可能です。 表示する呼び出し履歴の最大数。 既定値は無制限です。
+ /Count: `number` [or]/c: `number` 省略可能。 表示する呼び出し履歴の最大数。 既定値は無制限です。
 
- /ShowTypes: `yes`&#124; `no` [または]/t:&#124; `yes` `no` 省略可能です。 パラメーターの型を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+ /ShowTypes: `yes`&#124;`no` [または/t: `yes`&#124;`no` 省略可能です。 パラメーターの型を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
 
- /ShowNames: `yes`&#124; `no` [または]/n:&#124; `yes` `no` 省略可能です。 パラメーターの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+ /ShowNames: `yes`&#124;`no` [または]/n `yes` : `no`&#124;省略可能です。 パラメーターの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
 
- /ShowValues: `yes`&#124; `no` [または]/v:&#124; `yes` `no` 省略可能です。 パラメーターの値を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+ /ShowValues: `yes`&#124;`no` [または]/v `yes` : `no`&#124;省略可能です。 パラメーターの値を表示するかどうかを指定します。 既定値は `yes` です。
 
- /ShowModule: `yes`&#124; `no` [または/m: `yes`&#124; `no` 省略可能です。 モジュールの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
+ /ShowModule: `yes`&#124;`no` [または/m: `yes`&#124;`no` 省略可能です。 モジュールの名前を表示するかどうかを指定します。 既定値は `yes`にする必要があります。
 
- /ShowLineOffset: `yes`&#124; `no` [または]/#:&#124; `yes` `no` 省略可能です。 行オフセットを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+ /ShowLineOffset: `yes`&#124;`no` [または]/#: `yes`&#124;`no` 省略可能です。 行オフセットを表示するかどうかを指定します。 既定値は `no`にする必要があります。
 
- /ShowByteOffset: `yes`&#124; `no` [または]/b:&#124; `yes` `no` 省略可能です。 バイト オフセットを表示するかどうかを指定します。 既定値は `no`にする必要があります。
+ /ShowByteOffset: `yes`&#124;`no` [または]/b `yes` : `no`&#124;省略可能です。 バイト オフセットを表示するかどうかを指定します。 既定値は `no`にする必要があります。
 
- /ShowLanguage: `yes`&#124; `no` []/l: `yes`&#124; `no` 省略可能です。 言語を表示するかどうかを指定します。 既定値は `no`にする必要があります。
+ /ShowLanguage: `yes`&#124;`no` [または]/l `yes` : `no`&#124;省略可能です。 言語を表示するかどうかを指定します。 既定値は `no` です。
 
- /_ Decallsacrossthreads: `yes`&#124; `no` [または/i: `yes`&#124; `no` 省略可能です。 他のスレッドとの間の呼び出しを含めるかどうかを指定します。 既定値は `no`にする必要があります。
+ /_ Decallsacrossthreads: `yes`&#124;`no` [または]/i `yes` : `no`&#124;省略可能です。 他のスレッドとの間の呼び出しを含めるかどうかを指定します。 既定値は `no`にする必要があります。
 
- /ShowExternalCode: `yes`&#124; `no` 省略可能です。 呼び出し履歴で [マイ コードのみ] を表示するかどうかを指定します。 [マイ コードのみ] がオフの場合は、すべての非ユーザー コードが表示されます。 [マイ コードのみ] がオンの場合、非ユーザー コードは呼び出し履歴の出力で `[external]` として表示されます。
+ /ShowExternalCode: `yes`&#124;`no` 省略可能です。 呼び出し履歴で [マイ コードのみ] を表示するかどうかを指定します。 [マイ コードのみ] がオフの場合は、すべての非ユーザー コードが表示されます。 [マイ コードのみ] がオンの場合、非ユーザー コードは呼び出し履歴の出力で `[external]` として表示されます。
 
- Thread: `n` 省略可能です。 スレッド `n` の呼び出し履歴を表示します。 スレッドが指定されていない場合、現在のスレッドの呼び出し履歴が表示されます。
+ Thread: `n` 省略可能。 スレッド `n` の呼び出し履歴を表示します。 スレッドが指定されていない場合、現在のスレッドの呼び出し履歴が表示されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  引数やスイッチに加えられた変更は、以降のコマンドの呼び出しに適用されます。 Debug.ListCallStackby を単独で実行すると、呼び出し履歴全体が表示されます。 たとえば、次のようなインデックスを指定します。
 
 ```
@@ -87,5 +87,5 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)[一覧のスレッドコマンド](../../ide/reference/list-threads-command.md) [visual studio コマンド](../../ide/reference/visual-studio-commands.md)[コマンドウィンドウ](../../ide/reference/command-window.md)の[検索/コマンドボックス](../../ide/find-command-box.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

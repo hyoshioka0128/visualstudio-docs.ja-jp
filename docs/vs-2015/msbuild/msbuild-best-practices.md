@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181121"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild のベスト プラクティス
@@ -34,5 +34,5 @@ MSBuild スクリプトを記述するための次のベスト プラクティ�
   
 - 項目を選択するときに、ワイルドカードを避けます。 代わりに、ファイルを明示的に指定します。 ファイルを追加または削除する場合に発生する可能性のあるエラーを追跡しやすくなります。  
   
-## <a name="see-also"></a>関連項目  
- [詳細な概念](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>参照  
+ [高度な概念](../msbuild/msbuild-advanced-concepts.md)

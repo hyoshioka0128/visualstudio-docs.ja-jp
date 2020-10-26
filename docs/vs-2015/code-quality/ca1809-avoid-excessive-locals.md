@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d39c8d9d09cf457738df87e3c2e6e109f7bc1696
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543859"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809:ローカルを使用しすぎないでください
@@ -36,7 +36,7 @@ ms.locfileid: "85543859"
  メンバーに64個を超えるローカル変数が含まれており、その一部がコンパイラによって生成される可能性があります。
 
 ## <a name="rule-description"></a>ルールの説明
- 一般的なパフォーマンスの最適化では、メモリ内ではなくプロセッサレジスタに値を格納します。これは、値の*登録*と呼ばれます。 共通言語ランタイムは、enregistration 用に最大64のローカル変数を考慮します。 Enregistered ではない変数はスタックに配置され、操作の前にレジスタに移動する必要があります。 すべてのローカル変数が enregistered を取得できるようにするには、ローカル変数の数を64に制限します。
+ 一般的なパフォーマンスの最適化では、メモリ内ではなくプロセッサレジスタに値を格納します。これは、値の *登録* と呼ばれます。 共通言語ランタイムは、enregistration 用に最大64のローカル変数を考慮します。 Enregistered ではない変数はスタックに配置され、操作の前にレジスタに移動する必要があります。 すべてのローカル変数が enregistered を取得できるようにするには、ローカル変数の数を64に制限します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、64を超えるローカル変数を使用するように実装をリファクターします。

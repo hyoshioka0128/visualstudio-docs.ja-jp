@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235044"
 ---
 # <a name="troubleshooting-template-installation"></a>テンプレートインストールのトラブルシューティング
@@ -20,13 +20,13 @@ ms.locfileid: "87235044"
 
 ::: moniker range="vs-2017"
 
-1. インストール用の*Common7\IDE\CommonExtensions*フォルダーに .pkgdef ファイルを作成します。 たとえば、 *C:\Program files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*のようになります。
+1. インストール用の *Common7\IDE\CommonExtensions* フォルダーに .pkgdef ファイルを作成します。 たとえば、 *C:\Program files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*のようになります。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. インストール用の*Common7\IDE\CommonExtensions*フォルダーに .pkgdef ファイルを作成します。 たとえば、 *C:\Program files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*のようになります。
+1. インストール用の *Common7\IDE\CommonExtensions* フォルダーに .pkgdef ファイルを作成します。 たとえば、 *C:\Program files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef*のようになります。
 
 ::: moniker-end
 
@@ -37,21 +37,21 @@ ms.locfileid: "87235044"
     "EnableTemplateDiscoveryLog"=dword:00000001
     ```
 
-3. インストールの[開発者コマンドプロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)を開き、を実行 `devenv /updateConfiguration` します。
+3. インストールの [開発者コマンドプロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs) を開き、を実行 `devenv /updateConfiguration` します。
 
 ::: moniker range="vs-2017"
 
 4. Visual Studio を開き、[新しいプロジェクト] ダイアログボックスと [新しい項目] ダイアログボックスを起動して、両方のテンプレートツリーを初期化します。
 
-   テンプレートログが **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_ [instanceid] \VsTemplateDiagnosticsList.csv**に表示されるようになりました (Instanceid は Visual Studio のインスタンスのインストール ID に対応します)。 各テンプレートツリーの初期化で、エントリがこのログに追加されます。
+   テンプレートログが **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_ [instanceid] \VsTemplateDiagnosticsList.csv** に表示されるようになりました (Instanceid は Visual Studio のインスタンスのインストール ID に対応します)。 各テンプレートツリーの初期化で、エントリがこのログに追加されます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Visual Studio を開き、[**新しいプロジェクトの作成**] および [**新しい項目**] ダイアログボックスを起動して、両方のテンプレートツリーを初期化します。
+4. Visual Studio を開き、[ **新しいプロジェクトの作成** ] および [ **新しい項目** ] ダイアログボックスを起動して、両方のテンプレートツリーを初期化します。
 
-   テンプレートログが **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_ [instanceid] \VsTemplateDiagnosticsList.csv**に表示されるようになりました (Instanceid は Visual Studio のインスタンスのインストール ID に対応します)。 各テンプレートツリーの初期化で、エントリがこのログに追加されます。
+   テンプレートログが **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_ [instanceid] \VsTemplateDiagnosticsList.csv** に表示されるようになりました (Instanceid は Visual Studio のインスタンスのインストール ID に対応します)。 各テンプレートツリーの初期化で、エントリがこのログに追加されます。
 
 ::: moniker-end
 
@@ -73,4 +73,4 @@ ms.locfileid: "87235044"
 ## <a name="see-also"></a>関連項目
 
 - [カスタムプロジェクトテンプレートと項目テンプレートの作成](creating-custom-project-and-item-templates.md)
-- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

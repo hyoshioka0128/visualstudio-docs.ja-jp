@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671206"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>ダイアグラムへの背景イメージの設定
@@ -21,23 +21,23 @@ ms.locfileid: "72671206"
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK では、カスタム コードを使用して生成されるデザイナーの背景イメージを設定できます。
 
-## <a name="setting-the-background-image"></a>背景イメージの設定
+## <a name="setting-the-background-image"></a>背景画像を設定する
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>生成されるデザイナーの背景イメージを設定するには
 
 1. 図の背景として使用するイメージ ファイルを、現在のプロジェクトの Dsl\Resources ディレクトリにコピーします。
 
-2. **ソリューションエクスプローラー**で、Dsl\ Resources フォルダーを右クリックし、**追加** をポイントして、**既存の項目** をクリックします。
+2. **ソリューションエクスプローラー**で、[Dsl\ Resources] フォルダーを右クリックし、[**追加**] をポイントして、[**既存の項目**] をクリックします。
 
-3. **[既存項目の追加]** ダイアログボックスで、dsl¥ Resources フォルダーを参照します。
+3. [ **既存項目の追加** ] ダイアログボックスで、dsl¥ Resources フォルダーを参照します。
 
-4. **[ファイルの種類]** ボックスの一覧の **[イメージファイル]** をクリックします。
+4. [ **ファイルの種類** ] ボックスの一覧の [ **イメージファイル**] をクリックします。
 
-5. ディレクトリにコピーしたイメージファイルをクリックし、 **[追加]** をクリックします。
+5. ディレクトリにコピーしたイメージファイルをクリックし、[ **追加**] をクリックします。
 
-6. Dsl を右クリックし、**プロパティ** をクリックして dsl プロジェクトのプロパティを開きます。
+6. [Dsl] を右クリックし、[ **プロパティ** ] をクリックして dsl プロジェクトのプロパティを開きます。
 
-7. **[リソース]** タブで、[**このプロジェクトには既定のリソースファイルが含まれていません] をクリックします。ここをクリックして作成します。**
+7. [ **リソース** ] タブで、[ **このプロジェクトには既定のリソースファイルが含まれていません] をクリックします。ここをクリックして作成します。**
 
 8. **ソリューションエクスプローラー**から [リソース] ウィンドウに画像をドラッグして、リソースファイルにイメージファイルを追加します。
 
@@ -45,19 +45,19 @@ ms.locfileid: "72671206"
 
 10. ファイル Dsl\Properties\Resources.resx が存在しており、その下に Resources.Designer.cs ファイルがあることを確認します。
 
-11. Resources.Designer.cs がない場合は、**ソリューションエクスプローラー**でファイルリソース .resx をクリックします。
+11. Resources.Designer.cs がない場合は、 **ソリューションエクスプローラー**でファイルリソース .resx をクリックします。
 
 12. **[プロパティ]** ウィンドウで、 `Custom Tool` プロパティを `ResXFileCodeGenerator`に設定します。
 
-13. **ソリューションエクスプローラー**で、Dsl プロジェクトを右クリックし、 **[追加]** をポイントして、 **[新しいフォルダー]** をクリックします。
+13. **ソリューションエクスプローラー**で、Dsl プロジェクトを右クリックし、[**追加**] をポイントして、[**新しいフォルダー**] をクリックします。
 
 14. フォルダーに「 **Custom**」という名前を指定します。
 
-15. カスタムフォルダーを右クリックして **[追加]** をポイントし、 **[新しい項目]** をクリックします。
+15. カスタムフォルダーを右クリックして [ **追加**] をポイントし、[ **新しい項目**] をクリックします。
 
-16. **[新しい項目の追加]** ダイアログボックスの **[テンプレート]** ボックスの一覧で、 **[コードファイル]** をクリックします。
+16. [ **新しい項目の追加** ] ダイアログボックスの [ **テンプレート** ] ボックスの一覧で、[ **コードファイル**] をクリックします。
 
-17. **[名前]** ボックスに「`BackgroundImage.cs`」と入力し、 **[追加]** をクリックします。
+17. [ **名前** ] ボックスに「 `BackgroundImage.cs` 」と入力し、[ **追加**] をクリックします。
 
 18. 次のコードを BackgroundImage.cs ファイルにコピーし、名前空間、図クラス名、およびイメージ ファイル リソース名を調整します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "72671206"
     }
     ```
 
-     プログラムコードを使用したモデルのカスタマイズの詳細については、「[プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
+     プログラムコードを使用したモデルのカスタマイズの詳細については、「 [プログラムコードでのモデルのナビゲーションと更新](../modeling/navigating-and-updating-a-model-in-program-code.md)」を参照してください。
 
 ## <a name="see-also"></a>参照
  [図形とコネクタの定義](../modeling/defining-shapes-and-connectors.md)[テキストとイメージのフィールドのカスタマイズ](../modeling/customizing-text-and-image-fields.md)[プログラムコードでのモデルの移動と更新コードの](../modeling/navigating-and-updating-a-model-in-program-code.md)[記述ドメイン固有言語の](../modeling/writing-code-to-customise-a-domain-specific-language.md)カスタマイズ

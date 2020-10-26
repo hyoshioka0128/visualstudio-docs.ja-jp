@@ -1,5 +1,5 @@
 ---
-title: プロジェクト関数 |マイクロソフトドキュメント
+title: SccCloseProject 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701046"
 ---
-# <a name="scccloseproject-function"></a>関数を閉じる
-この関数は、特定のセッションの終了をマークしてプロジェクトを閉じます。
+# <a name="scccloseproject-function"></a>SccCloseProject 関数
+この関数は、プロジェクトを閉じて、特定のセッションの終了をマークします。
 
 ## <a name="syntax"></a>構文
 
@@ -34,19 +34,19 @@ SCCRTN SccCloseProject (
  pvContext ソース管理プラグインのコンテキスト構造。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|プロジェクトは正常に終了しました。|
 |SCC_E_PROJNOTOPEN|現在開いているプロジェクトはありません。|
 |SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|
-|SCC_E_NONSPECIFICERROR|非特異的なエラー。|
+|SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>Remarks
- [この](../extensibility/sccopenproject-function.md)関数の前に常に呼び出されます。 この関数の呼び出しの後に`SccOpenProject`、関数または[SccUninitialize](../extensibility/sccuninitialize-function.md)のいずれかの呼び出しが行われ、ソース管理システムへの接続が完全に終了します。
+## <a name="remarks"></a>注釈
+ [Sccopenproject](../extensibility/sccopenproject-function.md)は、この関数の前に常に呼び出されます。 その後、この関数の呼び出しの後に、 `SccOpenProject` 関数または [Sccuninitialize](../extensibility/sccuninitialize-function.md)解除の呼び出しが行われます。これにより、ソース管理システムへの接続が完全に終了します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

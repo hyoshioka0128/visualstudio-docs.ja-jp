@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157366"
 ---
 # <a name="modules-view---contention-data"></a>モジュール ビュー - 競合データ
@@ -45,10 +45,10 @@ ms.locfileid: "68157366"
 |**プロセス名**|プロセスの名前です。|  
 |**ソース ファイル**|この関数の定義を含むソース ファイルです。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
- [モジュール ビュー](../profiling/modules-view.md)   
- [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)   
+## <a name="see-also"></a>参照  
+ [方法: レポートビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
+ [モジュールビュー](../profiling/modules-view.md)   
+ [モジュールビュー-インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [モジュールビュー-サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [モジュールビュー](../profiling/modules-view-instrumentation-data.md)   
  [モジュール ビュー](../profiling/modules-view-sampling-data.md)

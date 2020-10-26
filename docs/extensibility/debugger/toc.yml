@@ -166,7 +166,7 @@
           href: control-of-execution.md
         - name: ブレークポイントのバインド
           href: binding-breakpoints.md
-        - name: 評価式
+        - name: 式の評価
           href: evaluating-expressions.md
         - name: データの視覚化と表示
           href: visualizing-and-viewing-data.md

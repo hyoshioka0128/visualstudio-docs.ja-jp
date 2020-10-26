@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : プロジェクトを構成して複数の対象プラットフォームを設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb759faff99b641f24df87f73bc1d3d52b6635cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663557"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>方法 : プロジェクトを構成して複数の対象プラットフォームを設定する
@@ -31,7 +31,7 @@ ms.locfileid: "72663557"
 
 1. **[ビルド]** メニューの **[構成マネージャー]** をクリックします。
 
-2. **[アクティブ ソリューション プラットフォーム]** ボックスでソリューションの対象にするプラットフォームを選ぶか、 **[\<新規作成>]** を選んで新しいプラットフォームを作成します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、 **[構成マネージャー]** ダイアログ ボックスでアクティブ プラットフォームとして設定されているプラットフォームを対象とするようにアプリケーションをコンパイルします。
+2. **[アクティブ ソリューション プラットフォーム]** ボックスでソリューションの対象にするプラットフォームを選ぶか、 **\<New>** を選んで新しいプラットフォームを作成します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、**[構成マネージャー]** ダイアログ ボックスでアクティブ プラットフォームとして設定されているプラットフォームを対象とするようにアプリケーションをコンパイルします。
 
 ## <a name="removing-a-platform"></a>プラットフォームを削除する
  対象とする必要がなくなったプラットフォームは、[構成マネージャー] ダイアログ ボックスを使って削除できます。 その構成と対象の組み合わせに対して構成されているすべてのソリューションとプロジェクトの設定が削除されます。
@@ -40,7 +40,7 @@ ms.locfileid: "72663557"
 
 1. **[ビルド]** メニューの **[構成マネージャー]** をクリックします。
 
-2. **[アクティブ ソリューション プラットフォーム]** ボックスで、 **[\<編集>]** を選びます。 **[ソリューション プラットフォームの編集]** ダイアログ ボックスが表示されます。
+2. **[アクティブ ソリューション プラットフォーム]** ボックスで、 **\<Edit>** を選びます。 **[ソリューション プラットフォームの編集]** ダイアログ ボックスが表示されます。
 
 3. 削除するプラットフォームをクリックし、 **[削除]** をクリックします。
 
@@ -64,4 +64,4 @@ ms.locfileid: "72663557"
    ソリューション レベルのプラットフォームをたとえば [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] に設定し、そのソリューション内のプロジェクトでは同じプラットフォームを対象としない、といったことができます。 また、ソリューション内の複数のプロジェクトで、それぞれ異なるプラットフォームを対象とすることもできます。 いずれかの状況の場合は、混乱を避けるためにわかりやすい名前で新しい構成を作成することをお勧めします。
 
 ## <a name="see-also"></a>参照
- [方法: 構成を作成および編集](../ide/how-to-create-and-edit-configurations.md)する[ビルド構成につい](../ide/understanding-build-configurations.md)て[Visual Studio でのプロジェクトとソリューションのビルドとクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+ [方法: 構成を作成および編集](../ide/how-to-create-and-edit-configurations.md)する [ビルド構成につい](../ide/understanding-build-configurations.md)て [Visual Studio でのプロジェクトとソリューションのビルドとクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

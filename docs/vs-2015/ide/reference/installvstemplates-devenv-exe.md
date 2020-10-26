@@ -1,4 +1,4 @@
-﻿---
+---
 title: -InstallVSTemplates (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2f019af21beba231a5f135c49fb00dcb463e110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671011"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-*\<Visual Studio インストール パス>* \Common7\IDE\ProjectTemplates\ または *\<Visual Studio インストール パス>* \Common7\IDE\ItemTemplates\ にあるプロジェクトや項目テンプレートを登録して、 **[新しいプロジェクト]** ダイアログ ボックスおよび **[新しい項目の追加]** ダイアログ ボックスからアクセスできるようにします。
+\Common7\IDE\ProjectTemplates\ または \Common7\IDE\ItemTemplates\ にあるプロジェクトまたは項目テンプレートを登録して *\<Visual Studio installation path>* *\<Visual Studio installation path>* 、[ **新しいプロジェクト** ] ダイアログボックスおよび [ **新しい項目の追加** ] ダイアログボックスからアクセスできるようにします。
 
 > [!WARNING]
 > このスイッチは、Visual Studio パートナーの開発用にのみサポートされており、Express エディションでは使用できません。 [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) スイッチおよび [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) スイッチを使用するには、管理者として devenv を実行する必要があります。 詳細については、[ユーザーのアクセス許可](../../ide/user-permissions-and-visual-studio.md)に関するページを参照してください。
@@ -36,5 +36,5 @@ devenv.exe /InstallVSTemplates
 
 ## <a name="remarks"></a>解説
 
-## <a name="see-also"></a>関連項目
- [Devenv コマンド ライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>参照
+ [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md)

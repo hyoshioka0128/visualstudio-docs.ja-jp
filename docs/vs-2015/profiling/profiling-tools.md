@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686243"
 ---
 # <a name="profiling-tools"></a>プロファイリング ツール
@@ -25,7 +25,7 @@ ms.locfileid: "65686243"
   
  一番下の概要を見ると、ある種類のプロジェクトで利用できるツールを確認できます (デスクトップ、UWP、ASP.NET など)。  
   
- プロファイリング ツールには次の方法でアクセスできます。デバッグ セッション中にツールを利用するには、 **[デバッグ]、[Windows]、[診断ツールの表示]** の順に選択します。重点的なパフォーマンス分析を行うには、 **[デバッグ]、[パフォーマンス プロファイラー...]** の順に選択します。  各種手法の詳細については、「 [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) 」を参照してください。  
+ プロファイリング ツールには次の方法でアクセスできます。デバッグ セッション中にツールを利用するには、 **[デバッグ]、[Windows]、[診断ツールの表示]** の順に選択します。重点的なパフォーマンス分析を行うには、 **[デバッグ]、[パフォーマンス プロファイラー...]** の順に選択します。  各種手法の詳細については、「[Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」(デバッガーを使用して、または使用せずにプロファイリング ツールを実行する) を参照してください。  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   
@@ -36,17 +36,17 @@ ms.locfileid: "65686243"
 ## <a name="memory-usage"></a>メモリ使用量  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- **メモリ使用量** ツールを使用したデバッグ中に、メモリ リークおよび非効率的なメモリを見つけます。 このツールを使用すると、マネージド メモリ ヒープとネイティブ メモリ ヒープのスナップショットを取得できます。 このツールはデスクトップ アプリ、Windows ユニバーサル アプリ、ASP.NET アプリで使用できます。 **メモリ使用量** ツールは、デバッグ中に **[診断ツール]** ウィンドウから (**[デバッグ]、[Windows]、[診断ツールの表示]**)、またはデバッガーの外部で (**[デバッグ]、[パフォーマンス プロファイラー...]**) 実行できます。詳細については、「[メモリ使用量](../profiling/memory-usage.md)」および「[デバッグなしのメモリ使用量の分析](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)」を参照してください。  
+ **メモリ使用量**ツールを使用したデバッグ中に、メモリリークおよび非効率的なメモリを見つけます。 このツールを使用すると、マネージド メモリ ヒープとネイティブ メモリ ヒープのスナップショットを取得できます。 このツールはデスクトップ アプリ、Windows ユニバーサル アプリ、ASP.NET アプリで使用できます。 **メモリ使用量**ツールは、デバッグ中に **[診断ツール**] ウィンドウから ([デバッグ]、[**Windows]、[表示診断ツール**)、またはデバッガーの外部 ([デバッグ]、[**パフォーマンスプロファイラー...**]) で実行できます。詳細については、「デバッグなしの[メモリ使用量](../profiling/memory-usage.md)と[メモリ使用量](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)」を参照してください。  
   
 ## <a name="cpu-usage"></a>CPU 使用率  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- **CPU 使用率** ツールは、CPU が C++、C#/VB、および JavaScript のコードを実行する際、どこで時間を費やしているかを示します。  このツールはデスクトップ、Windows ユニバーサル アプリ、Azure App Services アプリで使用できます。 **CPU 使用量** ツールは、デバッグ中に **[診断ツール]** ウィンドウから (**[デバッグ]、[Windows]、[診断ツールの表示]**)、またはデバッガーの外部で (**[デバッグ]、[パフォーマンス プロファイラー...]**) 実行できます。各種手法の詳細については、「 [CPU 使用率](../profiling/cpu-usage.md) 」を参照してください。  
+ **CPU 使用率** ツールは、CPU が C++、C#/VB、および JavaScript のコードを実行する際、どこで時間を費やしているかを示します。  このツールはデスクトップ、Windows ユニバーサル アプリ、Azure App Services アプリで使用できます。 **CPU 使用率**ツールは、デバッグ中に **[診断ツール**] ウィンドウから ([デバッグ]、[**Windows]、[表示診断ツール**)、またはデバッガーの外部 ([デバッグ]、[**パフォーマンスプロファイラー...**]) で実行できます。詳細については、「 [CPU 使用率](../profiling/cpu-usage.md)」を参照してください。  
   
 ## <a name="performance-explorer"></a>パフォーマンス エクスプローラー  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
   
- **パフォーマンス エクスプローラー** では (**[デバッグ]、[プロファイラー]、[パフォーマンス エクスプローラー]**)、 **CPU サンプリング**、  **インストルメンテーション**、 **.NET メモリ割り当て**、 **リソース競合**など、さまざまなツールを利用できます。 パフォーマンス エクスプローラーはデスクトップと ASP.NET アプリで使用できますが、Windows ユニバーサル アプリでは使用できません。 詳細については、「 [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)など、さまざまなツールを利用できます。  
+ **パフォーマンス エクスプローラー** では (**[デバッグ]、[プロファイラー]、[パフォーマンス エクスプローラー]**)、 **CPU サンプリング**、  **インストルメンテーション**、 **.NET メモリ割り当て**、 **リソース競合**など、さまざまなツールを利用できます。 パフォーマンス エクスプローラーはデスクトップと ASP.NET アプリで使用できますが、Windows ユニバーサル アプリでは使用できません。 詳細については、「[Performance Explorer](../profiling/performance-explorer.md)」(パフォーマンス エクスプローラー) を参照してください。  
   
 ## <a name="gpu-usage"></a>GPU 使用率  
  ![DiagGPUUsage](../profiling/media/diaggpuusage.png "DiagGPUUsage")  
@@ -86,15 +86,15 @@ ms.locfileid: "65686243"
   
 |パフォーマンス ツール|Windows デスクトップ|Windows ユニバーサル/ストア|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|Ｘ|  
-|[CPU 使用率](../profiling/cpu-usage.md)|可|可|Azure App Service のみ|  
-|[GPU 使用率](../debugger/gpu-usage.md)|可|可|Ｘ|  
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|可|Ｘ|  
+|[メモリ使用量](../profiling/memory-usage.md)|可|はい|Ｘ|  
+|[CPU 使用率](../profiling/cpu-usage.md)|可|はい|Azure App Service のみ|  
+|[GPU 使用率](../debugger/gpu-usage.md)|可|はい|Ｘ|  
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可|はい|Ｘ|  
 |[パフォーマンスのヒント](../profiling/perftips.md)|可|XAML の場合は可、HTML の場合は不可|Ｘ|  
-|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|可|Ｘ|可|  
+|[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|はい|Ｘ|可|  
 |[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise のみ|.NET Enterprise のみ|.NET Enterprise のみ|  
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ|  
 |[JavaScript メモリ](../profiling/javascript-memory.md)|Ｘ|HTML の場合は可、XAML の場合は不可|Ｘ|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -74,9 +74,9 @@
               href: how-to-build-incrementally.md
             - name: ビルドをクリーンする
               href: how-to-clean-a-build.md
-        - name: 処理手順
+        - name: タスク
           items:
-            - name: 処理手順
+            - name: タスク
               href: msbuild-tasks.md
             - name: タスクの作成
               href: task-writing.md
@@ -114,9 +114,9 @@
               href: item-metadata-in-target-batching.md
         - name: 変換
           href: msbuild-transforms.md
-        - name: Visual Studio との統合
+        - name: ' Visual Studio との統合'
           items:
-            - name: Visual Studio との統合
+            - name: ' Visual Studio との統合'
               href: visual-studio-integration-msbuild.md
             - name: Visual Studio ビルド処理を拡張する
               href: how-to-extend-the-visual-studio-build-process.md
@@ -396,7 +396,7 @@
           href: msbuild-command-line-reference.md
         - name: .Targets ファイル
           href: msbuild-dot-targets-files.md
-        - name: 既知の項目メタデータ
+        - name: 既知のアイテム メタデータ
           href: msbuild-well-known-item-metadata.md
         - name: 応答ファイル
           href: msbuild-response-files.md

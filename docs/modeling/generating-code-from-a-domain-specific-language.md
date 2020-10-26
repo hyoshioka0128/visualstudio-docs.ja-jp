@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596581"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>ドメイン固有言語からのコード生成
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] は、モデルで表されるデータからコード、ドキュメント、構成ファイル、およびその他の成果物を生成するための強力な方法を提供します。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]を使用すると、データを表すクラスのセットを作成できます。また、名前とプロパティにそのデータが反映されたクラスにテキストテンプレートを記述することもできます。
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] では、モデルで表されるデータからコード、ドキュメント、構成ファイル、およびその他の成果物を生成するための強力な方法を提供しています。 を使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] すると、データを表すクラスのセットを作成できます。また、名前とプロパティにそのデータが反映されたクラスにテキストテンプレートを記述することもできます。
 
 たとえば、Fabrikam には、顧客名と電子メールアドレスの XML ファイルがあります。 開発者は、顧客がクラスであり、プロパティ名と電子メールを含むモデルを作成します。 データを処理するために複数のテキストテンプレートを記述します。このフラグメントを使用すると、すべての顧客のテーブルが HTML ページの一部として生成されます。
 
@@ -28,11 +28,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] は、モデルで表�
 <# } #>  </table>
 ```
 
-顧客データベースが処理されると、XML ファイルがモデルストアに読み込まれます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]を使用して作成された*ディレクティブプロセッサ*を使用すると、テキストテンプレートのコードで Customer クラスを使用できるようになります。 多くのテキストテンプレートは、同じストアに対して実行できます。
+顧客データベースが処理されると、XML ファイルがモデルストアに読み込まれます。 を使用して作成された *ディレクティブプロセッサ*を使用すると、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] テキストテンプレート内のコードで Customer クラスを使用できるようになります。 多くのテキストテンプレートは、同じストアに対して実行できます。
 
-テキストテンプレートは、[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]するために不可欠です。 これらは、ツールを Visual Studio と統合するために使用される VSPackage およびコントロールに加えて、ドメインモデルの要素のソースコードを生成するために使用されます。
+テキストテンプレートは、に不可欠です [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 。 これらは、ツールを Visual Studio と統合するために使用される VSPackage およびコントロールに加えて、ドメインモデルの要素のソースコードを生成するために使用されます。
 
-ここでは、[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]で使用されるテキストテンプレートを作成、変更、およびデバッグする方法のいくつかについて説明します。
+ここでは、で使用されるテキストテンプレートを作成、変更、およびデバッグするためのいくつかの方法について説明し [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -48,14 +48,14 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] は、モデルで表�
 [DslTextTransform コマンド](../modeling/the-dsltexttransform-command.md)\
 ドメイン固有言語を参照するテキストテンプレートのコマンドラインで TextTransform 実行可能ファイルを実行するコマンドファイルについて説明します。
 
-## <a name="reference"></a>参照先
+## <a name="reference"></a>リファレンス
 
 [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)\
 テキストテンプレートディレクティブとコントロールブロックの構文を提供します。
 
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目
 
-[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
+[T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 テキストテンプレート変換プロセスについて説明します。
 
 [ビルドプロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)\

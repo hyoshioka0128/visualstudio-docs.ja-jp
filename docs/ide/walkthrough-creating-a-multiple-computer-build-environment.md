@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461534"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
@@ -130,7 +130,7 @@ ms.locfileid: "68461534"
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. 次に示す Visual C++ ランタイム ライブラリは、ビルド コンピューターで (たとえば自動テストの一部として) ビルド出力を実行する場合にのみ必要です。 これらのファイルは通常、システムのアーキテクチャに応じて *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* フォルダーまたは *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* フォルダー内のサブフォルダーに配置されます。 x86 システムの場合は、x86 バイナリを *Windows\System32* フォルダーにコピーします。 x64 システムでは、x86 バイナリを *Windows\SysWOW64* フォルダーに、x64 バイナリを *Windows\System32* フォルダーにコピーします。
+4. 次に示す Visual C++ ランタイム ライブラリは、ビルド コンピューターで (たとえば自動テストの一部として) ビルド出力を実行する場合にのみ必要です。 これらのファイルは通常、システムのアーキテクチャに応じて *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* または *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* フォルダー内のサブフォルダーに配置されます。 x86 システムの場合は、x86 バイナリを *Windows\System32* フォルダーにコピーします。 x64 システムでは、x86 バイナリを *Windows\SysWOW64* フォルダーに、x64 バイナリを *Windows\System32* フォルダーにコピーします。
 
     - \Microsoft.VC110.ATL\atl110.dll
 

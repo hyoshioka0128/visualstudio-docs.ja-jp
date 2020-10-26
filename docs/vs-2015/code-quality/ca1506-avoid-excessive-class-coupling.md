@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 07f19cb9d4aa2ed118898a1816092479cbd16565
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545705"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:クラス結合度を大きくしすぎないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
@@ -46,5 +46,5 @@ ms.locfileid: "85545705"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  他の型に対する依存関係の数が多いにもかかわらず、型またはメソッドが保守容易と見なされる場合は、この警告を除外します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [マネージコードの複雑さと保守性を測定する、](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [保守性](../code-quality/maintainability-warnings.md)に関する警告

@@ -1,5 +1,5 @@
 ---
-title: 起動ベースの添付ファイル |マイクロソフトドキュメント
+title: 起動ベースの添付ファイル |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4910a97350366500b56593ec0076fdf0990b6d8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738459"
 ---
 # <a name="launch-based-attachment"></a>起動ベースの添付ファイル
-プログラムへの起動ベースの添付ファイルは自動的に行われます。 プログラムをホストするプロセスが SDM によって起動されると、起動ベースの添付ファイルは手動添付方式と同様のパスに従います。 詳細については、[プログラムへのアタッチを](../../extensibility/debugger/attaching-to-the-program.md)参照してください。
+プログラムへの起動に基づく添付ファイルは自動的に実行されます。 プログラムをホストするプロセスが SDM によって起動されると、起動ベースの添付ファイルは、手動添付メソッドと同様のパスに従います。 詳細については、「 [プログラムへのアタッチ](../../extensibility/debugger/attaching-to-the-program.md)」を参照してください。
 
 ## <a name="the-attaching-process"></a>アタッチプロセス
- 主な違いは、**次のように、Attach**呼び出しに続く一連のイベントです。
+ 主な違いは、次のように、 **アタッチ** 呼び出しの後のイベントのシーケンスです。
 
-1. **イベント**オブジェクトを SDM に送信します。 詳細については、[イベントの送信](../../extensibility/debugger/sending-events.md)を参照してください。
+1. **IDebugEngineCreateEvent2**イベントオブジェクトを SDM に送信します。 詳細については、「 [イベントの送信](../../extensibility/debugger/sending-events.md)」を参照してください。
 
-2. メソッドを`IDebugProgram2::GetProgramId`呼び出す **、 IDebugProgram2**インターフェイスに**渡すメソッドに渡**します。
+2. `IDebugProgram2::GetProgramId` **Attach**メソッドに渡された**IDebugProgram2**インターフェイスでメソッドを呼び出します。
 
-3. **イベント**オブジェクトを送信して、プログラムを DE に表すためにローカル**IDebugProgram2**オブジェクトが作成されたことを SDM に通知します。
+3. **IDebugProgramCreateEvent2**イベントオブジェクトを送信して、ローカルの**IDebugProgram2**オブジェクトが作成されたことを SDM に通知します。
 
-4. イベント[オブジェクトを送信](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)して、起動したプロセスに対して新しいスレッドが作成されたことを SDM に通知します。
+4. [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)イベントオブジェクトを送信して、起動したプロセスに対して新しいスレッドが作成されたことを SDM に通知します。
 
 ## <a name="see-also"></a>関連項目
 - [必要なイベントを送信する](../../extensibility/debugger/sending-the-required-events.md)

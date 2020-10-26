@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2416eb24c21ef0e61bdb6db3de66c892e1eb699f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545341"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822:メンバーを static に設定します
@@ -27,7 +27,7 @@ ms.locfileid: "85545341"
 
 Visual Studio の最新のドキュメントについては、「 [CA1822: メンバーを静的としてマーク](/visualstudio/code-quality/ca1822-mark-members-as-static)する」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|

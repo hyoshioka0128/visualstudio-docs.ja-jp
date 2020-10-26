@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147241"
 ---
 # <a name="blocking-time-profile-report"></a>ブロック時間のプロファイル レポート
@@ -34,23 +34,23 @@ ms.locfileid: "68147241"
 ## <a name="blocking-time-report-columns"></a>ブロック時間レポートの列  
  次の表は、各ブロック時間レポートの列をまとめたものです。  
   
-|列名|説明|  
+|列名|[説明]|  
 |-----------------|-----------------|  
-|name|呼び出し履歴の各レベルの関数の名前。|  
-|インスタンス|表示された期間のブロック呼び出しのインスタンスの数。|  
+|名前|呼び出し履歴の各レベルの関数の名前。|  
+|Instances|表示された期間のブロック呼び出しのインスタンスの数。|  
 |包括的ブロック時間|呼び出し履歴ツリーのこのレベルまでのすべてのスタックに使われたブロック時間合計。 包括的な数字は、この関数の排他的ブロック時間とそのすべての子ノードの排他的ブロック時間の合計です。|  
 |排他的ブロック時間|この関数が呼び出し履歴の最下位レベルにあるときに使われたブロック時間合計。 排他的ブロック時間の値が高い一意の呼び出し履歴エントリが関心のある関数となる可能性があります。|  
 |API/待機カテゴリ|呼び出し履歴の最下位レベルの関数にのみ表示されます。 ブロック呼び出しのシグネチャが認識される箇所では、ブロック API が与えられます。 シグネチャが認識されない場合、カーネルにより報告された情報が与えられます。|  
-|説明|関数の完全修飾名。 これには、利用できる場合、行数が含まれます。|  
+|詳細|関数の完全修飾名。 これには、利用できる場合、行数が含まれます。|  
   
-### <a name="synchronization"></a>同期  
+### <a name="synchronization"></a>Synchronization  
  同期化レポートには、同期でブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[同期時間](../profiling/synchronization-time.md)」を参照してください。  
   
 ### <a name="sleep"></a>Sleep  
  スリープ レポートには、スリープ時間の原因となったブロック時間の原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[スリープ時間](../profiling/sleep-time.md)」を参照してください。  
   
 ### <a name="io"></a>I/O  
- I/O レポートには、I/O でブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[I/O 時間 (スレッド ビュー)](../profiling/i-o-time-threads-view.md)」を参照してください。  
+ I/O レポートには、I/O でブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「 [I/o 時間 (スレッドビュー)](../profiling/i-o-time-threads-view.md)」を参照してください。  
   
 ### <a name="memory-management"></a>メモリ管理  
  メモリ管理レポートには、メモリ管理操作でブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[メモリ管理時間](../profiling/memory-management-time.md)」を参照してください。  
@@ -61,5 +61,5 @@ ms.locfileid: "68147241"
 ### <a name="ui-processing"></a>UI 処理  
  UI 処理レポートには、UI 処理ブロックでブロックしているセグメントの原因となっている呼び出しと各呼び出し履歴のブロック時間の集計が表示されます。 詳細については、「[UI 処理時間](../profiling/ui-processing-time.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>参照  
+ [スレッドビュー](../profiling/threads-view-parallel-performance.md)

@@ -28,16 +28,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254910"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office ドキュメントのコントロールの Windows フォームの概要
   Windows フォーム コントロールは、データを入力または操作するときにユーザーが取り扱うオブジェクトです。 Microsoft Office Excel および Microsoft Office Word のドキュメント レベルのプロジェクトでは、デザイン時に Windows フォーム コントロールをプロジェクトのドキュメントまたはブックに追加したり、実行時にこれらのコントロールをプログラミングで追加したりできます。 これらのコントロールは、Excel または Word 用の VSTO アドインで、実行時に開いているドキュメントまたはワークシートにプログラムで追加できます。
 
- 詳細については、「[方法 :Windows フォームコントロールを Office ドキュメント](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)に追加します。
+ 詳細については、「 [方法: Office ドキュメントに Windows フォームコントロールを追加](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)する」を参照してください。
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -73,7 +73,7 @@ Windows フォーム上
 ## <a name="add-windows-forms-controls-programmatically"></a>プログラムによる Windows フォームコントロールの追加
  実行時に Windows フォーム コントロールを Word 文書や Excel ワークシートに追加できます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は最も一般的な Windows フォーム コントロールを追加するためのヘルパー メソッドを提供します。 これらのヘルパー メソッドを使用すると、コントロールを Office ドキュメントにすばやく追加して、Windows フォーム コントロールの機能とこれらのコントロールの Office 関連機能とを組み合わせたものにアクセスできます。
 
- 詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+ 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
 ## <a name="use-windows-forms-controls-in-document-level-projects"></a>ドキュメントレベルのプロジェクトで Windows フォームコントロールを使用する
  ドキュメントでの Windows フォーム コントロールの使用方法のいくつかは、ドキュメント レベルのプロジェクトに固有です。これらにより、Visual Studio デザイナーを使用してドキュメントの UI をデザインできます。
@@ -119,24 +119,24 @@ Windows フォーム上
  ユーザーがデザイン モードでブックを開くとなど特定の条件では、コードは読み込まれず、ビットマップのみが表示されます。 また、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] がインストールされていないコンピューターでユーザーがブックを開く場合、コントロールを読み込むためのカスタマイズは実行できず、コントロールのビットマップのみが表示されます。 個人情報が誤って公開されないようにするため、ブックを保存して別のユーザーに送信する前に、必ず個人情報をブックのコントロールから削除する必要があります。
 
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Excel ワークシートのコントロールサイズをセルサイズと一致させる
- 親のセルのサイズが変更されたときに、自動的にサイズ変更されるようにコントロールを設定することができます。 詳細については、「[方法 :ワークシートのセル](../vsto/how-to-resize-controls-within-worksheet-cells.md)内のコントロールのサイズを変更します。
+ 親のセルのサイズが変更されたときに、自動的にサイズ変更されるようにコントロールを設定することができます。 詳細については、「 [方法: ワークシートのセル内のコントロールのサイズを変更する](../vsto/how-to-resize-controls-within-worksheet-cells.md)」を参照してください。
 
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>すべてのワークシートで共有されるコンポーネントを追加する
  <xref:System.Data.DataSet>などすべてのワークシート間で共有するコンポーネントを、ワークシートではなくブックのデザイナーに追加することができます。 このコンポーネントは、コンポーネント トレイに表示されます。
 
 ### <a name="formula-for-embedding-controls-on-an-excel-worksheet"></a>Excel ワークシートにコントロールを埋め込むための式
- Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")** " と表示されます。 このテキストは必要なので、削除しないでください。
+ Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Word 文書上のコントロールのレイアウトスタイル
  Visual Studio デザイナーを使用してコントロールをドキュメント レベルのプロジェクトの Word 文書に追加する場合、コントロールは行内に追加されます。 コントロールのレイアウト スタイルを変更するには、コントロールを右クリックし、 **[コントロールの書式設定]** をクリックします。 **[オブジェクトの書式設定]** ダイアログ ボックスの **[レイアウト]** ページで折り返しのスタイルを選びます。
 
- 実行時にコントロールを Word 文書に`Add`追加する場合、 <xref:Microsoft.Office.Tools.Word.ControlCollection>クラスのさまざまな\<*コントロールクラス*> メソッドのオーバーロードを使用して、新しいコントロールのレイアウトスタイルを指定できます。
+ 実行時にコントロールを Word 文書に追加する場合は、クラスのさまざまなメソッドオーバーロードを使用して、新しいコントロールのレイアウトスタイルを指定でき `Add` \<*control class*> <xref:Microsoft.Office.Tools.Word.ControlCollection> ます。
 
 - 行内のコントロールを追加するには、コントロールの場所を指定する <xref:Microsoft.Office.Interop.Word.Range> を受け取るオーバーロードを使用します。
 
 - 固定されていない図形としてコントロールを追加するには、コントロールの左と上の座標を受け入れるオーバーロードを使用します。
 
-  詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+  詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
   Visual Studio デザイナーで Word テンプレートを開く場合、Visual Studio でテンプレートが **標準** 表示で開かれるために、テンプレートのインラインでないコントロールを表示できない可能性があります。 コントロールを表示するには、表示を **印刷レイアウト**に変更します。
 
@@ -156,10 +156,10 @@ Windows フォーム上
 - [方法: Office ドキュメントに Windows フォームコントロールを追加する](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [方法: ワークシートのセル内のコントロールのサイズを変更する](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [方法: 印刷時にワークシートのコントロールを非表示にする](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [チュートリアル: チェックボックスコントロールを使用してワークシートの書式を変更する](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [チュートリアル: CheckBox コントロールを使用してドキュメントの書式を変更する](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
-- [チュートリアル: ボタンを使用してワークシート内のテキストボックスにテキストを表示する](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [チュートリアル: CheckBox コントロールを使用したワークシートの書式設定の変更](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [チュートリアル: CheckBox コントロールを使用したドキュメント書式の変更](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
+- [チュートリアル: ボタンを使用してワークシートのテキストボックスにテキストを表示する](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
 - [チュートリアル: ボタンを使用してドキュメント内のテキストボックスにテキストを表示する](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
 - [Office ドキュメントの Windows フォームコントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [チュートリアル: オプションボタンを使用してドキュメント内のグラフを更新する](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
-- [チュートリアル: ラジオボタンを使用してワークシートのグラフを更新する](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+- [チュートリアル: オプションボタンを使用してドキュメントのグラフを更新する](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
+- [チュートリアル: オプションボタンを使用してワークシートのグラフを更新する](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

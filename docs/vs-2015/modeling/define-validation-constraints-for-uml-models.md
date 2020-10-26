@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547590"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML モデルの検証制約を定義する
@@ -23,7 +23,7 @@ ms.locfileid: "85547590"
 
 指定した条件をモデルが満たしているかどうかをテストする検証制約を定義できます。 たとえば、ユーザーが継承関係のループを作成していないことを確認するための制約を定義できます。 制約は、ユーザーがモデルを開くか、または保存しようとしたときに実行されるほか、手動で実行することもできます。 制約が失敗した場合は、ユーザー定義のエラー メッセージがエラー ウィンドウに追加されます。 これらの制約を[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension) にパッケージ化し、他の Visual Studio ユーザーに配布できます。
 
- また、モデルをデータベースなどの外部リソースに照らし合わせて検証する制約も定義できます。 レイヤー図に対してプログラムコードを検証する場合は、「[レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
+ また、モデルをデータベースなどの外部リソースに照らし合わせて検証する制約も定義できます。 レイヤー図に対してプログラムコードを検証する場合は、「 [レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
  UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -95,7 +95,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 3. VSIX プロジェクトをソリューションのスタートアップ プロジェクトとして設定します。
 
-    - ソリューションエクスプローラーで、VSIX プロジェクトのショートカットメニューの [**スタートアッププロジェクトに設定**] を選択します。
+    - ソリューションエクスプローラーで、VSIX プロジェクトのショートカットメニューの [ **スタートアッププロジェクトに設定**] を選択します。
 
 4. **source.extension.vsixmanifest**の **[コンテンツ]** で、クラス ライブラリ プロジェクトを MEF コンポーネントとして追加します。
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>検証制約の実行
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> 検証制約の実行
  テストを行う場合は、検証メソッドをデバッグ モードで実行します。
 
 #### <a name="to-test-the-validation-constraint"></a>検証制約をテストするには
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、[**デバッグ**] タブを選択します。 [**外部プログラムの開始**] フィールドの文字列がの完全なパス名であることを確認します。通常は次のようになります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+    - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、 **[プロパティ]** をクリックします。 プロジェクトのプロパティエディターで、[ **デバッグ** ] タブを選択します。[ **外部プログラムの開始** ] フィールドの文字列がの完全なパス名であることを確認します。通常は次のようになり [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - 適切な `Export` 属性と `ValidationMethod` 属性が検証メソッドに追加されている。
 
-    - `ValidationCategories.Menu`は、属性の引数に含まれて `ValidationMethod` おり、論理 OR (&#124;) を使用して他の値で構成されています。
+    - `ValidationCategories.Menu` は、属性の引数に含まれて `ValidationMethod` おり、論理 OR (&#124;) を使用して他の値で構成されています。
 
     - すべての `Import` 属性と `Export` 属性のパラメーターが有効である。
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>制約の評価
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> 制約の評価
  検証メソッドは、適用される検証制約が true と false のどちらかであるかを判定します。 true の場合、検証メソッドは何も行いません。 false の場合、検証メソッドは、 `ValidationContext` パラメーターによって提供されるメソッドを使用して、エラーを報告します。
 
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>複数の検証の調整
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> 複数の検証の調整
  たとえば、ユーザーによって図のメニューから検証が起動されると、それぞれのモデル要素にそれぞれの検証メソッドが適用されます。 これは、検証フレームワークの 1 回の起動において、同じメソッドが異なる要素に何度も適用される可能性があることを示します。
 
  これは、要素間の関係を対象とする検証において問題となります。 たとえば、ユース ケースから始まり、 **include** 関係までを対象として、ループが存在しないことを確認するための検証を記述したとします。 しかし、多くの **include** リンクを含むモデル内の各ユース ケースにこのメソッドを適用した場合、モデルの同じ領域が繰り返し処理される可能性があります。
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|値を取得します。|
 |`Context.GetValue<T>()`|指定した型の値を取得します。|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>拡張機能のインストールとアンインストール
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 拡張機能のインストールとアンインストール
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。
 
 #### <a name="to-install-an-extension"></a>拡張機能をインストールするには
@@ -473,5 +473,5 @@ private bool NoDependencyLoops(ValidationContext context,
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [UML API を使用して](../modeling/programming-with-the-uml-api.md)[モデリング拡張機能のプログラミングを定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md)

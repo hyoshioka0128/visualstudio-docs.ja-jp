@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 891a5c44159d10aacbb767cbc5376ae1d62252b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547057"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>方法: プログラムによって Visio 図面を保存する
@@ -72,7 +72,7 @@ ms.locfileid: "85547057"
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。
 
-- 新しい名前を持つドキュメントを保存するには、という名前のディレクトリを `Test` *[マイドキュメント*] フォルダー (windows XP 以前の場合) または [*ドキュメント*] フォルダー (windows Vista の場合) に配置する必要があります。
+- 新しい名前を持つドキュメントを保存するには、という名前のディレクトリを `Test` *[マイドキュメント* ] フォルダー (windows XP 以前の場合) または [ *ドキュメント* ] フォルダー (windows Vista の場合) に配置する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)

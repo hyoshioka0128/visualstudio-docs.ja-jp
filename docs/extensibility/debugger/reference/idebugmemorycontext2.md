@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: IDebugMemoryContext2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727426"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
-このインターフェイスは、デバッグ中のプログラムを実行しているコンピュータのアドレス空間内の位置を表します。
+このインターフェイスは、デバッグ中のプログラムを実行しているコンピューターのアドレス空間内の位置を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,32 +28,32 @@ ms.locfileid: "80727426"
 IDebugMemoryContext2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジン (DE) は、メモリ内のアドレスを表すこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジン (DE) は、メモリ内のアドレスを表すために、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- 呼び出しを[呼](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)び[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)出します。 また[、Add](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)と[Subtract](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)の呼び出しは、適切な算術演算が適用された後に、このインターフェイスの新しいコピーを返します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [Getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)または[getmemorycontext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)を呼び出すと、このインターフェイスが返されます。 また、 [加算](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md) および [減算](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md) の呼び出しは、適切な算術演算が適用された後に、このインターフェイスの新しいコピーを返します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugMemoryContext2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugMemoryContext2` ます。
 
 |Method|説明|
 |------------|-----------------|
-|[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|このコンテキストのユーザー表示可能な名前を取得します。|
+|[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|このコンテキストのユーザーが指定可能な名前を取得します。|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|このコンテキストを説明する情報を取得します。|
-|[追加](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|指定した値を現在のコンテキストのアドレスに追加して、新しいコンテキストを作成します。|
-|[減算](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|現在のコンテキストのアドレスから指定した値を減算して、新しいコンテキストを作成します。|
-|[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|比較フラグで示される方法で 2 つのコンテキストを比較します。|
+|[追加](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|新しいコンテキストを作成するために、指定した値を現在のコンテキストのアドレスに追加します。|
+|[減算](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|新しいコンテキストを作成するために、現在のコンテキストのアドレスから指定された値を減算します。|
+|[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Compare フラグによって示される方法で、2つのコンテキストを比較します。|
 
-## <a name="remarks"></a>Remarks
- メモリ アドレスに使用される評価された式を含むインターフェイス`IDebugMemoryContext2`を取得する[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)を取得する Visual Studio の**メモリ**ウィンドウを呼び出します。 このコンテキストは[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)と[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)に渡され、読み取りまたは書き込み先のアドレスを指定します。
+## <a name="remarks"></a>解説
+ Visual Studio の **メモリ** ウィンドウは、 [getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) を呼び出して、 `IDebugMemoryContext2` メモリアドレスに使用される評価済みの式を含むインターフェイスを取得します。 次に、このコンテキストを [readat](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) と [writeat](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) に渡して、読み取りまたは書き込みを行うアドレスを指定します。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

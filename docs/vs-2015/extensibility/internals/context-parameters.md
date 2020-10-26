@@ -1,5 +1,5 @@
 ---
-title: コンテキスト パラメーター |Microsoft Docs
+title: コンテキストパラメーター |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,58 +12,58 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 679bf567d2f44564d31d70b62c8663e665e1ea65
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697285"
 ---
 # <a name="context-parameters"></a>コンテキスト パラメーター
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) では、ウィザードを使用を追加することができます、**新しいプロジェクト**、**新しい項目の追加**、または**サブ プロジェクトの追加** ダイアログ ボックス。 追加のウィザードで使用できる、**ファイル**メニューでプロジェクトを右クリックして、または**ソリューション エクスプ ローラー**。 IDE では、ウィザードの実装にコンテキスト パラメーターを渡します。 コンテキスト パラメーターは、IDE は、ウィザードを呼び出すときに、プロジェクトの状態を定義します。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) では、[**新しいプロジェクト**]、[**新しい項目の追加**]、または [**サブプロジェクトの追加**] ダイアログボックスにウィザードを追加できます。 追加したウィザードは、[ **ファイル** ] メニューまたは **ソリューションエクスプローラー**でプロジェクトを右クリックして表示できます。 IDE は、ウィザードの実装にコンテキストパラメーターを渡します。 IDE がウィザードを呼び出すと、コンテキストパラメーターによってプロジェクトの状態が定義されます。  
   
- IDE 設定ウィザードの起動時に、<xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION>フラグを IDE の呼び出しで、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A>プロジェクトのメソッド。 設定すると、プロジェクトが発生する必要があります、`IVsExtensibility::RunWizardFile`登録ウィザードの名前または GUID およびその他の IDE が渡されるコンテキスト パラメーターを使用して実行するメソッド。  
+ IDE では、 <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> プロジェクトのメソッドに対する ide の呼び出しのフラグを設定することにより、ウィザードが起動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> ます。 設定した場合、プロジェクトは、 `IVsExtensibility::RunWizardFile` 登録されているウィザードの名前または GUID、および IDE によって渡されるその他のコンテキストパラメーターを使用して、メソッドを実行する必要があります。  
   
-## <a name="context-parameters-for-new-project"></a>新しいプロジェクトのコンテキスト パラメーター  
-  
-|パラメーター|説明|  
-|---------------|-----------------|  
-|`WizardType`|ウィザードの種類の登録 (<xref:EnvDTE.Constants.vsWizardNewProject>) またはウィザードの種類を示す GUID。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]実装では、ウィザードの GUID は {0f90e1d0-4999-11d1-b6d1-00a0c90f2744} します。|  
-|`ProjectName`|一意である文字列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトの名前。|  
-|`LocalDirectory`|プロジェクト ファイルの操作のローカルの場所。|  
-|`InstallationDirectory`|ディレクトリ パス、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストールです。|  
-|`FExclusive`|プロジェクトが開いているソリューションを閉じることを示すブール フラグです。|  
-|`SolutionName`|ディレクトリの部分や .sln 拡張子なしのソリューション ファイルの名前。 .Suo ファイルの名前を使用して作成も`SolutionName`します。 この引数が空の文字列でない場合は、ウィザードを使用して<xref:EnvDTE._Solution.Create%2A>でプロジェクトを追加する前に<xref:EnvDTE._Solution.AddFromTemplate%2A>します。 この名前が空の文字列の場合を使用して、<xref:EnvDTE._Solution.AddFromTemplate%2A>呼び出さず<xref:EnvDTE._Solution.Create%2A>します。|  
-|`Silent`|ウィザードをサイレント モードで実行する必要があるかどうかを示すブール値として**完了**クリックしてされた (`TRUE`)。|  
-  
-## <a name="context-parameters-for-add-new-item"></a>新しい項目の追加のコンテキスト パラメーター  
+## <a name="context-parameters-for-new-project"></a>新しいプロジェクトのコンテキストパラメーター  
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|`WizardType`|ウィザードの種類の登録 (<xref:EnvDTE.Constants.vsWizardAddItem>) またはウィザードの種類を示す GUID。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]実装、ウィザードの GUID は、{0F90E1D1-4999-11D1-B6D1-00A0C90F2744}。|  
-|`ProjectName`|一意である文字列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトの名前。|  
-|`ProjectItems`|プロジェクトの作業ファイルを格納しているローカルの場所。|  
-|`ItemName`|追加する項目の名前。 この名前は既定のファイル名またはファイル名から型のユーザーを**項目の追加** ダイアログ ボックス。 名前は、.vsdir ファイルで設定されているフラグに基づきます。 名前は、null 値を指定できます。|  
-|`InstallationDirectory`|ディレクトリ パス、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストールです。|  
-|`Silent`|ウィザードをサイレント モードで実行する必要があるかどうかを示すブール値として**完了**クリックしてされた (`TRUE`)。|  
+|`WizardType`|登録されたウィザードの種類 ( <xref:EnvDTE.Constants.vsWizardNewProject> )、またはウィザードの種類を示す GUID。 実装で [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] は、ウィザードの GUID は {0F90E1D0-4999-11D1-B6D1-00A0C90F2744} です。|  
+|`ProjectName`|一意のプロジェクト名を表す文字列 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。|  
+|`LocalDirectory`|作業プロジェクトファイルのローカルの場所。|  
+|`InstallationDirectory`|のディレクトリパス [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がインストールされています。|  
+|`FExclusive`|プロジェクトが開いているソリューションを閉じる必要があることを示すブール型のフラグ。|  
+|`SolutionName`|ディレクトリ部分または .sln 拡張子のないソリューションファイルの名前。 .Suo ファイル名は、を使用して作成することもでき `SolutionName` ます。 この引数が空の文字列でない場合、ウィザードは <xref:EnvDTE._Solution.Create%2A> を使用してプロジェクトをに追加 <xref:EnvDTE._Solution.AddFromTemplate%2A> します。 この名前が空の文字列の場合は、を呼び出さずにを使用し <xref:EnvDTE._Solution.AddFromTemplate%2A> <xref:EnvDTE._Solution.Create%2A> ます。|  
+|`Silent`|ウィザードを **[完了** ] がクリックされたかのようにサイレントモードで実行するかどうかを示すブール値 `TRUE` です ()。|  
   
-## <a name="context-parameters-for-add-sub-project"></a>追加のサブ プロジェクトのコンテキスト パラメーター  
+## <a name="context-parameters-for-add-new-item"></a>[新しい項目の追加] のコンテキストパラメーター  
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|`WizardType`|ウィザードの種類の登録 (<xref:EnvDTE.Constants.vsWizardAddSubProject>) またはウィザードの種類を示す GUID。 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]実装、ウィザードの GUID は、{0F90E1D2-4999-11D1-B6D1-00A0C90F2744}。|  
-|`ProjectName`|一意である文字列[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトの名前。|  
-|`ProjectItems`|ポインター、`ProjectItems`ウィザードが動作するコレクション。 このポインターは、プロジェクト階層の選択に基づいてウィザードに渡されます。 ユーザーは、通常、アイテムを配置するフォルダーを選択し、呼び出して、プロジェクトの**項目の追加** ダイアログ ボックス。|  
-|`LocalDirectory`|プロジェクト ファイルの操作のローカルの場所。|  
-|`ItemName`|追加する項目の名前。 この名前は既定のファイル名またはファイル名から型のユーザーを**項目の追加** ダイアログ ボックス。 名前は、.vsdir ファイルで設定されているフラグに基づきます。 名前は、null 値を指定できます。|  
-|`InstallationDirectory`|ディレクトリ パス、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストールです。|  
-|`Silent`|ウィザードをサイレント モードで実行する必要があるかどうかを示すブール値として**完了**クリックしてされた (`TRUE`)。|  
+|`WizardType`|登録されたウィザードの種類 ( <xref:EnvDTE.Constants.vsWizardAddItem> )、またはウィザードの種類を示す GUID。 実装で [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] は、ウィザードの GUID は {0F90E1D1-4999-11D1-B6D1-00A0C90F2744} です。|  
+|`ProjectName`|一意のプロジェクト名を表す文字列 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。|  
+|`ProjectItems`|作業中のプロジェクトファイルが格納されているローカルの場所。|  
+|`ItemName`|追加する項目の名前。 この名前は、[ **項目の追加** ] ダイアログボックスでユーザーが入力する既定のファイル名またはファイル名のいずれかになります。 この名前は、.vsdir ファイルに設定されているフラグに基づいています。 名前には null 値を指定できます。|  
+|`InstallationDirectory`|のディレクトリパス [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がインストールされています。|  
+|`Silent`|ウィザードを **[完了** ] がクリックされたかのようにサイレントモードで実行するかどうかを示すブール値 `TRUE` です ()。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="context-parameters-for-add-sub-project"></a>サブプロジェクトの追加のコンテキストパラメーター  
+  
+|パラメーター|説明|  
+|---------------|-----------------|  
+|`WizardType`|登録されたウィザードの種類 ( <xref:EnvDTE.Constants.vsWizardAddSubProject> )、またはウィザードの種類を示す GUID。 実装で [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] は、ウィザードの GUID は {0F90E1D2-4999-11D1-B6D1-00A0C90F2744} です。|  
+|`ProjectName`|一意のプロジェクト名を表す文字列 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。|  
+|`ProjectItems`|`ProjectItems`ウィザードが動作するコレクションへのポインター。 このポインターは、プロジェクト階層の選択に基づいてウィザードに渡されます。 ユーザーは、通常、項目を配置するフォルダーを選択してから、プロジェクトの [ **項目の追加** ] ダイアログボックスを呼び出します。|  
+|`LocalDirectory`|作業プロジェクトファイルのローカルの場所。|  
+|`ItemName`|追加する項目の名前。 この名前は、[ **項目の追加** ] ダイアログボックスでユーザーが入力する既定のファイル名またはファイル名のいずれかになります。 この名前は、.vsdir ファイルに設定されているフラグに基づいています。 名前には null 値を指定できます。|  
+|`InstallationDirectory`|のディレクトリパス [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がインストールされています。|  
+|`Silent`|ウィザードを **[完了** ] がクリックされたかのようにサイレントモードで実行するかどうかを示すブール値 `TRUE` です ()。|  
+  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>   
- [カスタム パラメーター](../../extensibility/internals/custom-parameters.md)   
+ [カスタムパラメーター](../../extensibility/internals/custom-parameters.md)   
  [ウィザード](../../extensibility/internals/wizards.md)   
- [ウィザード (します。Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [ウィザードを起動するためのコンテキスト パラメーター](https://msdn.microsoft.com/library/051a10f4-9e45-4604-b344-123044f33a24)
+ [ウィザード (..Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)   
+ [ウィザード起動用のコンテキスト パラメーター](https://msdn.microsoft.com/library/051a10f4-9e45-4604-b344-123044f33a24)

@@ -1,5 +1,5 @@
 ---
-title: Assembly 要素 (Visual Studio テンプレート ウィザード拡張) |Microsoft Docs
+title: Assembly 要素 (Visual Studio テンプレートウィザード拡張) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184734"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 要素 (Visual Studio テンプレート ウィザード拡張)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-名前または実装するアセンブリの厳密な名前を指定します、`IWizard`インターフェイス。  
+インターフェイスを実装するアセンブリの名前または厳密な名前を指定し `IWizard` ます。  
   
  \<VSTemplate>  
-\<WizardExtension >  
-\<アセンブリ >  
+\<WizardExtension>  
+\<Assembly>  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,18 +48,18 @@ ms.locfileid: "68184734"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|テンプレート ウィザードをカスタマイズするための登録の要素が含まれています。|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|テンプレートウィザードをカスタマイズするための登録要素が含まれています。|  
   
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- このテキストを実装するアセンブリを指定します、`IWizard`インターフェイス。 このアセンブリの名前は、完全なアセンブリ名として指定する必要があります。 たとえば、`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` のようにします。  
+ このテキストは、インターフェイスを実装するアセンブリを指定し `IWizard` ます。 このアセンブリ名は、完全なアセンブリ名として指定する必要があります。 たとえば、「 `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` 」のように入力します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>解説  
  `Assembly` は `WizardExtension` に必須の子要素です。  
   
 ## <a name="example"></a>例  
- 次の例では、標準的なプロジェクト テンプレートのメタデータを[!INCLUDE[csprcs](../includes/csprcs-md.md)]Windows アプリケーション。  
+ 次の例は、Windows アプリケーションの標準プロジェクトテンプレートのメタデータを示してい [!INCLUDE[csprcs](../includes/csprcs-md.md)] ます。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -89,7 +89,7 @@ ms.locfileid: "68184734"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [方法: プロジェクト テンプレートでウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+ [方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)

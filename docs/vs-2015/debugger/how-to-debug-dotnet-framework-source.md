@@ -1,5 +1,5 @@
 ---
-title: '方法: .NET Framework のソースをデバッグ |Microsoft Docs'
+title: '方法: .NET Framework ソースをデバッグする |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,42 +17,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205440"
 ---
-# <a name="how-to-debug-net-framework-source"></a>方法: .NET Framework ソースをデバッグする
+# <a name="how-to-debug-net-framework-source"></a>方法 : .NET Framework ソースをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-最新バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]向けの新機能を提供します。[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]デバッグします。 デバッグする[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ソース コードのデバッグ シンボルへのアクセスが必要です。 ステップ インを有効にする必要も[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]ソース。  
+最新バージョンのには、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッグのための新機能が用意されて [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] います。 ソースをデバッグするには [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 、コードのデバッグシンボルにアクセスできる必要があります。 また、ソースへのステップインを有効にする必要もあり [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ます。  
   
- 有効にできます[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]ステップ実行とシンボルのダウンロード、**オプション** ダイアログ ボックス。 シンボルのダウンロードを有効にする場合は、シンボルを即時にダウンロードするのか、後でダウンロードするのかを選択できます。 シンボルを即時にダウンロードしない場合、次にアプリケーションのデバッグを開始するときにシンボルはダウンロードされます。 また、手動でダウンロードを行うことができます、**モジュール**ウィンドウまたは**呼び出し履歴**ウィンドウ。  
+ [ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] **オプション** ] ダイアログボックスで、ステップ実行およびシンボルのダウンロードを有効にすることができます。 シンボルのダウンロードを有効にする場合は、シンボルを即時にダウンロードするのか、後でダウンロードするのかを選択できます。 シンボルを即時にダウンロードしない場合、次にアプリケーションのデバッグを開始するときにシンボルはダウンロードされます。 また、[ **モジュール** ] ウィンドウまたは [ **呼び出し履歴** ] ウィンドウから手動でダウンロードすることもできます。  
   
 ### <a name="to-enable-net-framework-source-debugging"></a>.NET Framework ソースのデバッグを有効にするには  
   
 1. **[ツール]** メニューの **[オプション]** をクリックします。  
   
-2. **オプション**ダイアログ ボックスで、をクリックして、**デバッグ**カテゴリ。  
+2. [ **オプション** ] ダイアログボックスで、[ **デバッグ** ] カテゴリをクリックします。  
   
-3. **全般**ボックスで、設定**を有効にする .NET Framework**ソースのステッピングします。  
+3. **[全般**] ボックスで、[.NET Framework ソースのステップ実行**を有効にする**] を設定します。  
   
     1. [マイ コードのみ] が有効だった場合、[マイ コードのみ] が無効になったことを示す警告ダイアログ ボックスが表示されます。 **[OK]** をクリックします。  
   
     2. シンボル キャッシュの場所が設定されていない場合は、既定のシンボル キャッシュの場所が設定されたことを示す別の警告ダイアログ ボックスが表示されます。 **[OK]** をクリックします。  
   
-4. 下、**デバッグ**カテゴリで、をクリックして**シンボル**します。  
+4. [ **デバッグ** ] カテゴリの [ **シンボル**] をクリックします。  
   
-5. シンボル キャッシュの場所を変更する場合:  
+5. シンボル キャッシュの場所を変更する場合:   
   
-    1. 開く、**デバッグ**左側にあるボックス内のノード。  
+    1. 左側のボックスで [ **デバッグ** ] ノードを開きます。  
   
-    2. 下、**デバッグ**ノード、をクリックして**シンボル**します。  
+    2. [ **デバッグ** ] ノードで、[ **シンボル**] をクリックします。  
   
-    3. 内の場所を編集**このディレクトリにシンボル サーバーからシンボルをキャッシュ** をクリックしてまたは**参照**場所を選択します。  
+    3. **シンボルサーバーからこのディレクトリにキャッシュシンボル**内の場所を編集するか、[**参照**] をクリックして場所を選択します。  
   
-6. シンボルを即時にダウンロードする場合は、クリックして**シンボルの読み込みは、上記の場所を使用して**します。  
+6. シンボルをすぐにダウンロードする場合は、[ **上記の場所を使用してシンボルを読み込む**] をクリックします。  
   
      このボタンはデザイン モードでは使用できません。  
   
@@ -62,16 +62,16 @@ ms.locfileid: "68205440"
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>[モジュール] ウィンドウを使用して Framework シンボルを読み込むには  
   
-1. **モジュール**ウィンドウで、シンボルが読み込まれていないモジュールを右クリックします。 シンボルが読み込まれている場合、またはしないを見てわかります、**シンボル ステータス**列。  
+1. [ **モジュール** ] ウィンドウで、シンボルが読み込まれていないモジュールを右クリックします。 シンボルが読み込まれているかどうかを判断するには、[ **シンボルの状態** 列を参照します。  
   
-2. をポイント**シンボルの読み込み元** をクリック**Microsoft シンボル サーバー** Microsoft パブリック シンボル サーバーからシンボルをダウンロードまたは**シンボル パス**ディレクトリから読み込む以前保存したシンボル。  
+2. [ **シンボルの読み込み元** ] をポイントし、[ **microsoft シンボルサーバー** ] をクリックして microsoft パブリックシンボルサーバーまたは **シンボルパス** からシンボルをダウンロードし、以前にシンボルを格納したディレクトリから読み込みます。  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>[呼び出し履歴] ウィンドウを使用して Framework シンボルを読み込むには  
   
-1. **呼び出し履歴**ウィンドウで、シンボルが読み込まれていないフレームを右クリックします。 フレームが淡色表示されます。  
+1. [ **呼び出し履歴** ] ウィンドウで、シンボルが読み込まれていないフレームを右クリックします。 フレームが淡色表示されます。  
   
-2. をポイント**シンボルの読み込み元**クリック**Microsoft シンボル サーバー**または**シンボル パス**します。  
+2. [ **シンボルの読み込み元** ] をポイントし、[ **Microsoft シンボルサーバー** ] または [ **シンボルパス**] をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
+## <a name="see-also"></a>参照  
+ [マネージコードのデバッグ](../debugger/debugging-managed-code.md)   
  [シンボルとソース コードの管理](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

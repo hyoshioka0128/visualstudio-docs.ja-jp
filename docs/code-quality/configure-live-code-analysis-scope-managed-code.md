@@ -1,34 +1,34 @@
 ---
-title: マネージコードのライブコード分析スコープを構成する
-ms.date: 03/23/2018
+title: .NET のライブコード分析スコープの構成
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249190"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035418"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>方法: マネージコードのライブコード分析スコープを構成する
+# <a name="configure-live-code-analysis-for-net"></a>.NET 用にライブコード分析を構成する
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>マネージコードの "ライブコード分析" とは何ですか?
 Visual Studio は、エディターでソースファイルを編集している間に、一連のライブコード分析 ( *バックグラウンド分析*とも呼ばれます) を実行します。 その一部は、Visual Studio IDE の編集操作を受け入れるために最小限必要な分析です。 その一部は、IDE の機能の応答性を向上させるためのものです。 その一部は、Roslyn アナライザーからの診断やコード修正など、追加の IDE 機能を有効にすることです。 これらの分析は、機能に基づいて次のようにグループ化できます。
 
 - **診断のバックグラウンド計算**: ソースファイル内のエラー、警告、および提案を計算するための分析。 これらの診断は、エディターの [エラー一覧] と [波線] として表示されます。 次の2つのカテゴリに分類できます。
   - C# および Visual Basic コンパイラ診断
   - Roslyn アナライザー診断: 次のものが含まれます。
 
-    - コードスタイルの提案用の組み込みの IDE アナライザーと
+    - コードスタイルの提案用の組み込みの IDE アナライザー
+    - コード品質提案用の組み込みの CA アナライザー
     - 現在のソリューションのプロジェクトに対し [てインストールされている](./install-roslyn-analyzers.md) サードパーティのアナライザーパッケージ。
 
 - **その他のバックグラウンド分析**: IDE 機能の応答性と Visual Studio の相互作用を向上させるための分析。 このような分析の例を次に示します。
@@ -74,7 +74,7 @@ Visual Studio で 200 MB 以下のシステムメモリが使用可能である�
 
 ![アラートテキストの分析範囲を最小化する](./media/fsa_alert.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [自動機能の中断](./automatic-feature-suspension.md)
 - [省電力モード機能の要求](https://github.com/dotnet/roslyn/issues/38429)

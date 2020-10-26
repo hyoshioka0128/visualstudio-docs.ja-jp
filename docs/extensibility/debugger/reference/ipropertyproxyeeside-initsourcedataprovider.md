@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IPropertyProxyEESide:: InitSourceDataProvider |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714907"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-このオブジェクトのソース データを初期化し、初期データを含むオブジェクトを返します。
+このオブジェクトのソースデータを初期化し、初期データを格納しているオブジェクトを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int InitSourceDataProvider(
 
 ## <a name="parameters"></a>パラメーター
 `dataOut`\
-[アウト]オブジェクトを返します[。](../../../extensibility/debugger/reference/ieedatastorage.md)
+入出力 [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、オブジェクトのデータに対して[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)インターフェイスを返すことができるように、オブジェクトを初期化するために必要な処理を行います。 これにより、オブジェクトのデータを表示したり、許可されている場合は型ビジュアライザーによって変更したりできます。
+## <a name="remarks"></a>注釈
+ このメソッドは、オブジェクトのデータに対して [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) インターフェイスを返すことができるように、オブジェクトを初期化するために必要なものをすべて実行します。 これにより、オブジェクトのデータを表示したり、許可されている場合は型ビジュアライザーによって変更したりできます。
 
 ## <a name="see-also"></a>関連項目
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Shell コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663541"
 ---
 # <a name="shell-command"></a>Shell コマンド
@@ -45,11 +45,11 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="switches"></a>スイッチ
  /commandwindow [または]/command [or]/c [または]/cmd 省略可能。 実行可能ファイルの出力が **[コマンド]** ウィンドウに表示されるように指定します。
 
- /dir: `folder` [または/d: `folder` 省略可能です。 プログラムの実行時に作業ディレクトリが設定されるように指定します。
+ /dir: `folder` [または]/d: `folder` 省略可能。 プログラムの実行時に作業ディレクトリが設定されるように指定します。
 
  /outputwindow [または]/output [または/out [または]/o 省略可能。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  /dir、/o、/c の各スイッチは、`Tools.Shell` の直後に指定する必要があります。 実行可能ファイルの名前の後に指定した内容は、その実行可能ファイルにコマンド ライン引数として渡されます。
 
  定義済みの `Shell` エイリアスは、`Tools.Shell` の代わりに使用できます。
@@ -77,5 +77,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)[のコマンドウィンドウ](../../ide/reference/command-window.md)[出力ウィンドウ](../../ide/reference/output-window.md)[検索/コマンドボックス](../../ide/find-command-box.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

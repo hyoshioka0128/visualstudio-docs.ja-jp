@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: グラフィックス情報のキャプチャ |Microsoft Docs'
+title: 'チュートリアル: グラフィックス情報のキャプチャ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151468"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>チュートリアル: グラフィックス情報をキャプチャする
@@ -54,12 +54,12 @@ ms.locfileid: "68151468"
   
    アプリケーションにフォーカスを置いた状態で、 **PrintScreen**キーを押します。  
   
-  フレームに関する情報をキャプチャするたびに、グラフィックス診断は Direct3D イベントおよび関連付けられた状態を記録し、グラフィックス ログにデータを追加します。 グラフィックス ログは、グラフィックス診断のセッションごとに新しく作成されます。 グラフィックス ログについては、次を参照してください。[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
+  フレームに関する情報をキャプチャするたびに、グラフィックス診断は Direct3D イベントおよび関連付けられた状態を記録し、グラフィックス ログにデータを追加します。 グラフィックス ログは、グラフィックス診断のセッションごとに新しく作成されます。 グラフィックス ログについては、「[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)」をご覧ください。  
   
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルでは、手動でグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。  
   
-- グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
+- グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 「[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

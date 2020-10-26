@@ -1,5 +1,5 @@
 ---
-title: グラフィックス ログ ドキュメント |Microsoft Docs
+title: グラフィックス ログ ドキュメント | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161238"
 ---
 # <a name="graphics-log-document"></a>グラフィックス ログ ドキュメント
@@ -27,7 +27,7 @@ ms.locfileid: "68161238"
   
  グラフィックス ログのドキュメントは Graphics Analyzer で次のように表示されます。  
   
- ![2 つのキャプチャされたフレームを含むグラフィックス ログ。](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
+ ![キャプチャされた 2 つのフレームを含むグラフィックス ログ。](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
   
 ## <a name="understanding-graphics-log-documents"></a>グラフィックス ログのドキュメントについて  
  Graphics Analyzer を使用してグラフィックス ログのドキュメントを調べることにより、キャプチャ中に発生した、レンダー ターゲットに対する Direct3D イベントの効果を視覚化できます。 予期しない出力を含むレンダー ターゲットの領域を特定できます。 影響を受けている領域のピクセルを選択すると、グラフィックス診断を使用してそのピクセル、シェーダー、影響を与えた Direct3D イベント、それらのイベントが発生したアプリケーションの呼び出し履歴、およびそれらのイベントをサポートする DirectX オブジェクトを検査できます。 この情報を使用して、ゲームまたはアプリケーションのレンダリングの問題を診断できます。  
@@ -40,12 +40,12 @@ ms.locfileid: "68161238"
   
 #### <a name="to-inspect-a-pixel"></a>ピクセルを検査するには  
   
-- グラフィックス ログのドキュメントの上部で、レンダー ターゲットの出力から目的のピクセルを選択します。 ピクセルを選択すると、 **[グラフィックス ピクセル履歴]** ウィンドウを使用して選択したピクセルについての詳細情報が参照できます。 詳細については、次を参照してください。[ピクセル履歴](../debugger/graphics-pixel-history.md)します。  
+- グラフィックス ログのドキュメントの上部で、レンダー ターゲットの出力から目的のピクセルを選択します。 ピクセルを選択すると、 **[グラフィックス ピクセル履歴]** ウィンドウを使用して選択したピクセルについての詳細情報が参照できます。 詳細については、「[ピクセル履歴](../debugger/graphics-pixel-history.md)」を参照してください。  
   
 ## <a name="playback-machine"></a>再生コンピューター  
  **[フレーム一覧]** の右上隅には、 **[再生コンピューター]** も表示されます。 再生コンピューターは、後のグラフィックス診断のセッション中にグラフィックス ログ ファイルからグラフィックス イベントを再生するために使用されるコンピューターまたはデバイスです。 開発用コンピューターの代わりに別のデバイスを使用し、キャプチャしたイベントを再生することにより、問題が発生する実行環境をより正確に再現できます。たとえば、開発用コンピューターとは異なるグラフィックス ハードウェアまたはドライバーを使用するコンピューター、または ARM ベースの Windows RT タブレットや Windows Phone デバイスなどのデバイスを使用できます。  
   
- 再生コンピューターを指定する方法については、次を参照してください。[方法。グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。  
+ 再生コンピューターを指定する方法の詳細については、「[方法: グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。  
   
 ## <a name="graphics-log-summary-information"></a>グラフィックス ログの概要情報  
  グラフィックス ログ ファイルがアクティブ ドキュメントの場合、 **[プロパティ]** ウィンドウには、グラフィックス診断キャプチャ セッションをホストしていた環境に関する情報が表示されます。 複数のカテゴリの情報が表示されます。  
@@ -95,7 +95,7 @@ ms.locfileid: "68161238"
 |**プロセッサ**|コンピューターにインストールされているプロセッサ。|  
 |**ターゲット アプリケーションのアーキテクチャ**|アプリケーションのターゲット CPU アーキテクチャ。 これは **OS のアーキテクチャ**とは異なります。|  
   
- **ターゲット アプリケーション**  
+ **ターゲットアプリケーション**  
  キャプチャ セッションの対象であるアプリケーションに関する情報を一覧表示します。  
   
 |プロパティ|説明|  
@@ -114,6 +114,6 @@ ms.locfileid: "68161238"
 |**セッション開始時刻**|キャプチャ セッションを開始した日付と時刻。|  
 |**Size**|グラフィックス ログのドキュメントのサイズ。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: 頂点の網かけによるオブジェクトの不足](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [チュートリアル: 網かけによるレンダリング エラーのデバッグ](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

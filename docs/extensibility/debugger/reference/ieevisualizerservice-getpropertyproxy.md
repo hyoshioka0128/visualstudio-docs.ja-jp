@@ -1,5 +1,5 @@
 ---
-title: サービス::プロパティプロキシ |マイクロソフトドキュメント
+title: 'IEEVisualizerService:: GetPropertyProxy |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f499b816b012c3b3a71e3e8ecafaa2c0f34586d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718003"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
-このメソッドは、プロパティ オブジェクトのプロキシを返します。
+このメソッドは、プロパティオブジェクトのプロキシを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int GetPropertyProxy(
 
 ## <a name="parameters"></a>パラメーター
 `dwID`\
-[in]取得するプロパティ プロキシの ID。
+から取得するプロパティプロキシの ID。
 
 `proxy`\
-[アウト]インターフェイスに実装されている必要な[プロキシ](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)。
+入出力 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) インターフェイスに必要なプロキシが実装されています。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)は、型ビジュアライザーのサポートの一部として、このメソッドに要求を渡します。
+## <a name="remarks"></a>注釈
+- [Getpropertyproxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) は、型ビジュアライザーのサポートの一部として、このメソッドに要求を渡します。
 
 ## <a name="see-also"></a>関連項目
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

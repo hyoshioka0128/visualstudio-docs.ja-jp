@@ -1,4 +1,4 @@
-﻿---
+---
 title: クラス ダイアグラムの使用 (クラス デザイナー) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602398"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>クラス ダイアグラムの使用 (クラス デザイナー)
@@ -50,15 +50,15 @@ ms.locfileid: "72602398"
 
  クラス ダイアグラムから Office ドキュメントへのコピーを行う方法について説明します。
 
- [方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [方法: クラスダイアグラムをイメージとしてエクスポートする (クラスデザイナー)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
 
  クラス ダイアグラムを画像としてエクスポートする方法について説明します。
 
- [方法: クラス ダイアグラムを印刷する (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)
+ [方法: クラスダイアグラムを印刷する (クラスデザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)
 
  クラス ダイアグラムを印刷する方法について説明します。
 
- [方法: クラス ダイアグラムにコメント追加する (クラス デザイナー)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
+ [方法: クラスダイアグラムにコメントを追加する (クラスデザイナー)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
 
  クラス ダイアグラムにコメントを追加する方法について説明します。
 

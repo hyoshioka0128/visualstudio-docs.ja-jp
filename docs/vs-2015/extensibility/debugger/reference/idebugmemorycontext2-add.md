@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Add |Microsoft Docs
+title: 'IDebugMemoryContext2:: Add |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2b1b4b236b438d5ff94120c00952d5cd3adfd590
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164081"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-現在のコンテキストに指定した値を追加し、新しいコンテキストを返します。  
+指定した値を現在のコンテキストに追加し、新しいコンテキストを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,18 +43,18 @@ int Add(
   
 #### <a name="parameters"></a>パラメーター  
  `dwCount`  
- [in]現在のコンテキストに追加する値。  
+ から現在のコンテキストに追加する値。  
   
  `ppMemCxt`  
- [out]新しいを返します[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクト。  
+ 入出力新しい [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- メモリのコンテキストは、コンテキストの新しいインターフェイスを必要とする新しいアドレスを生成するアドレスに値を追加するために、アドレスです。  
+## <a name="remarks"></a>注釈  
+ メモリコンテキストはアドレスであるため、アドレスに値を追加すると、新しいコンテキストインターフェイスを必要とする新しいアドレスが生成されます。  
   
- 結果として得られるアドレスがこのコンテキストに関連付けられたメモリ空間の外にある場合でも、新しいコンテキストをこのメソッドを生成することが常にする必要があります。 唯一の例外は、新しいコンテキストのメモリを割り当てることはできませんか場合`ppMemCxt`は (つまり、エラー)、null 値です。  
+ 生成されたアドレスがこのコンテキストに関連付けられているメモリ空間の範囲外であっても、このメソッドは常に新しいコンテキストを生成する必要があります。 唯一の例外は、新しいコンテキストにメモリを割り当てることができない場合、または `ppMemCxt` が null 値 (エラーの場合) である場合です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

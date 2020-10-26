@@ -1,5 +1,5 @@
 ---
-title: DebuggerTypeProxy 属性の使用 |Microsoft Docs
+title: デバッガーを使用して Typeproxy 属性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684070"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy 属性の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True)、プロキシを指定します。 または、デバッガー ウィンドウで、型と型の方法の変更の代役が表示されます。 プロキシを指定した変数を表示すると、元の型の代理としてプロキシが**表示**されます。 デバッガーの変数ウィンドウには、プロキシ型のパブリック メンバーのみが表示されます。 プライベート メンバーは表示されません。  
+デバッガーの Typeproxyattribute] (assetId: qualifyHint =&False の場合は autoUpgrade = True) プロキシ (またはスタンドイン) を型に対して指定し、デバッガーウィンドウでの型の表示方法を変更します。 プロキシを指定した変数を表示すると、元の型の代理としてプロキシが**表示**されます。 デバッガーの変数ウィンドウには、プロキシ型のパブリック メンバーのみが表示されます。 プライベート メンバーは表示されません。  
   
  この属性は次の対象に適用できます。  
   
@@ -46,7 +46,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
   <xref:System.Diagnostics.DebuggerTypeProxyAttribute> をアセンブリ レベルで使用する場合は、プロキシに置換される型を `Target` パラメーターで指定します。  
   
-  と共にこの属性を使用する方法の例については<xref:System.Diagnostics.DebuggerDisplayAttribute>と<xref:System.Diagnostics.DebuggerTypeProxyAttribute>を参照してください[DebuggerDisplay 属性を使用して](../debugger/using-the-debuggerdisplay-attribute.md)します。  
+  <xref:System.Diagnostics.DebuggerDisplayAttribute> および <xref:System.Diagnostics.DebuggerTypeProxyAttribute> と共にこの属性を使用する方法の例については、[DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)に関する記事を参照してください。  
   
 ## <a name="using-generics-with-debuggertypeproxy"></a>ジェネリックと DebuggerTypeProxy の使用  
  ジェネリックのサポートは限定的です。 C# では、`DebuggerTypeProxy` はオープン型のみをサポートします。 オープン型 (構築されていない型とも呼ばれます) とは、その型パラメーターの引数によってインスタンス化されていないジェネリック型のことです。 クローズ型 (構築された型とも呼ばれます) は、サポートされていません。  
@@ -57,12 +57,12 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  `DebuggerTypeProxy` 内でジェネリック型を対象として使用する場合は、この構文を使用する必要があります。 `DebuggerTypeProxy` の機構は、型パラメーターを推論します。  
   
- C# のオープンおよびクローズされた型の詳細については、次を参照してください。、 [c# 言語仕様](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)、セクション「20.5.2 を開くとクローズ型。  
+ C# のオープン型とクローズ型の詳細については、[C# 言語仕様](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)の「セクション 20.5.2 オープン型とクローズ型」を参照してください。  
   
  Visual Basic にはクローズ型の構文はないため、Visual Basic で同じ処理はできません。 代わりに、オープン型の名前の文字列形式を使用する必要があります。  
   
  `"Namespace.TypeName'2"`  
   
-## <a name="see-also"></a>関連項目  
- [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
+## <a name="see-also"></a>参照  
+ [デバッガーの表示属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
   [デバッガー表示属性によるデバッグ機能の拡張](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

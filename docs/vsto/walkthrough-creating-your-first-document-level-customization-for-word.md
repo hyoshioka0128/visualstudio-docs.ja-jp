@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567006"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>チュートリアル: 初めての Word 用ドキュメントレベルのカスタマイズの作成
@@ -41,7 +41,7 @@ ms.locfileid: "74567006"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
@@ -53,34 +53,34 @@ ms.locfileid: "74567006"
 
 ### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Visual Studio で新しい Word 文書プロジェクトを作成するには
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を起動します。
 
 2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 ::: moniker range="vs-2017"
 3. テンプレート ペインで、 **[Visual C#]** または **[Visual Basic]** を展開してから、 **[Office/SharePoint]** を展開します。
 
-4. 拡張された**Office/SharePoint**ノードの下で、 **[VSTO アドイン]** ノードを選択します。
+4. 拡張された **Office/SharePoint** ノードの下で、[ **VSTO アドイン** ] ノードを選択します。
 
 5. プロジェクトテンプレートの一覧で、Word VSTO ドキュメントプロジェクトを選択します。
 
-6. **[名前]** ボックスに、「 **firstdocumentcustomization**」と入力します。
+6. [ **名前** ] ボックスに、「 **firstdocumentcustomization**」と入力します。
 
 7. **[OK]** をクリックします。
 
-8. **Visual Studio Tools for Office プロジェクトウィザード**で **[新しいドキュメントの作成]** を選択し、 **[OK]** をクリックします。
+8. **Visual Studio Tools for Office プロジェクトウィザード**で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-3. **[新しいプロジェクトの作成]** ダイアログで、 **Word VSTO ドキュメント**プロジェクトを選択します。
+3. [ **新しいプロジェクトの作成** ] ダイアログで、 **Word VSTO ドキュメント** プロジェクトを選択します。
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. [次へ] をクリックします。
+4. **[次へ]** をクリックします。
 
-5. **[新しいプロジェクトの構成]** ダイアログの **[名前]** ボックスに「 **FirstWorkbookCustomization** 」と入力し、 **[作成]** をクリックします。
+5. [**新しいプロジェクトの構成**] ダイアログの [**名前**] ボックスに「 **FirstWorkbookCustomization** 」と入力し、[**作成**] をクリックします。
 
-6. **Visual Studio Tools for Office プロジェクトウィザード**で **[新しいドキュメントの作成]** を選択し、 **[OK]** をクリックします。
+6. **Visual Studio Tools for Office プロジェクトウィザード**で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって**firstdocumentcustomization**プロジェクトが作成され、 **firstdocumentcustomization**ドキュメントと ThisDocument コードファイルがプロジェクトに追加されます。 **Firstdocumentcustomization**ドキュメントは、デザイナーで自動的に開きます。
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**firstdocumentcustomization**プロジェクトを作成し、 **firstdocumentcustomization**ドキュメントと ThisDocument コードファイルをプロジェクトに追加します。 **Firstdocumentcustomization**ドキュメントは、デザイナーで自動的に開きます。
 
 ## <a name="close-and-reopen-the-document-in-the-designer"></a>デザイナーでドキュメントを閉じて再度開きます。
 
@@ -88,9 +88,9 @@ ms.locfileid: "74567006"
 
 ### <a name="to-close-and-reopen-the-document-in-the-designer"></a>デザイナーで文書を閉じ、再び開くには
 
-1. デザイナーウィンドウの **[閉じる]** ボタン (X) をクリックして、ドキュメントを閉じます。
+1. デザイナーウィンドウの [ **閉じる** ] ボタン (X) をクリックして、ドキュメントを閉じます。
 
-2. **ソリューションエクスプローラー**で、 **ThisDocument**コードファイルを右クリックし、 **[デザイナーの表示]** をクリックします。
+2. **ソリューションエクスプローラー**で、 **ThisDocument**コードファイルを右クリックし、[**デザイナーの表示**] をクリックします。
 
      \- または
 
@@ -110,13 +110,13 @@ ms.locfileid: "74567006"
 
  次に、ThisDocument コード ファイルにコードを追加します。 この新しいコードでは、Word のオブジェクト モデルを使用して、ドキュメントに 2 番目のテキスト段落を追加します。 ThisDocument コード ファイルには、既定で次の生成済みコードが含まれています。
 
-- `ThisDocument` クラスの部分定義。このクラスは、ドキュメントのプログラミング モデルを表し、Word のオブジェクト モデルへのアクセスを提供します。 詳細については、「[ドキュメントホスト項目](../vsto/document-host-item.md)」および「 [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)」を参照してください。 `ThisDocument` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
+- `ThisDocument` クラスの部分定義。このクラスは、ドキュメントのプログラミング モデルを表し、Word のオブジェクト モデルへのアクセスを提供します。 詳細については、「 [ドキュメントホスト項目](../vsto/document-host-item.md) 」および「 [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)」を参照してください。 `ThisDocument` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
 
 - `ThisDocument_Startup` および `ThisDocument_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、ドキュメントが開いたとき、および閉じたときに呼び出されます。 これらのイベント ハンドラーを使用して、ドキュメントが開いたときにカスタマイズを初期化し、ドキュメントが閉じたときにカスタマイズが使用したリソースをクリーンアップします。 詳細については、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>コードを使用してドキュメントに 2 番目のテキスト段落を追加するには
 
-1. **ソリューションエクスプローラー**で、 **[ThisDocument]** を右クリックし、 **[コードの表示]** をクリックします。
+1. **ソリューションエクスプローラー**で、[ **ThisDocument**] を右クリックし、[**コードの表示**] をクリックします。
 
      Visual Studio でコード ファイルが開かれます。
 
@@ -128,7 +128,7 @@ ms.locfileid: "74567006"
     > [!NOTE]
     > このコードでは、インデックス値 1 を使用して <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> プロパティ内の最初の段落にアクセスします。 Visual Basic および Visual C# ではインデックスが 0 から始まる配列が使用されますが、Word オブジェクト モデルのほとんどのコレクションでは配列の下限のインデックスが 1 から始まります。 詳細については、「 [Office ソリューションのコードの記述](../vsto/writing-code-in-office-solutions.md)」を参照してください。
 
-## <a name="test-the-project"></a>プロジェクトをテストする
+## <a name="test-the-project"></a>プロジェクトのテスト
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
@@ -152,11 +152,11 @@ ms.locfileid: "74567006"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次のステップ:
+## <a name="next-steps"></a>次の手順
 
  Word 用の基本的なドキュメント レベルのカスタマイズを作成した後は、カスタマイズの開発方法の詳細について、以下のトピックを参照してください。
 
-- ドキュメントレベルのカスタマイズで実行できる一般的なプログラミングタスク:[ドキュメントレベルのカスタマイズをプログラム](../vsto/programming-document-level-customizations.md)します。
+- ドキュメントレベルのカスタマイズで実行できる一般的なプログラミングタスク: [ドキュメントレベルのカスタマイズをプログラム](../vsto/programming-document-level-customizations.md)します。
 
 - Word: [word ソリューション](../vsto/word-solutions.md)のドキュメントレベルのカスタマイズに固有のプログラミングタスク。
 
@@ -164,15 +164,15 @@ ms.locfileid: "74567006"
 
 - Word の UI のカスタマイズ (リボンへのカスタムタブの追加や独自の操作ウィンドウの作成など): [OFFICE ui のカスタマイズ](../vsto/office-ui-customization.md)。
 
-- Visual Studio の Office ソリューションによって提供される拡張 Word オブジェクトを使用して、Word オブジェクトモデルを使用して不可能なタスクを実行します (たとえば、ドキュメントでマネージコントロールをホストし、Windows フォームデータバインディングモデルを使用して Word コントロールをデータにバインドする):[拡張オブジェクトを使用して word を自動化](../vsto/automating-word-by-using-extended-objects.md)します。
+- Visual Studio の Office ソリューションによって提供される拡張 Word オブジェクトを使用して、Word オブジェクトモデルを使用して不可能なタスクを実行します (たとえば、ドキュメントでマネージコントロールをホストし、Windows フォームデータバインディングモデルを使用して Word コントロールをデータにバインドする): [拡張オブジェクトを使用して word を自動化](../vsto/automating-word-by-using-extended-objects.md)します。
 
 - Word 用のドキュメントレベルのカスタマイズのビルドとデバッグ: [Office ソリューションのビルド](../vsto/building-office-solutions.md)。
 
 - Word のドキュメントレベルのカスタマイズの配置: [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 
-- [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word ソリューション](../vsto/word-solutions.md)
 - [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
 - [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)

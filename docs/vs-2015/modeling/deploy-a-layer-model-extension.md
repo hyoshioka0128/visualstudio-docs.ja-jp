@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669861"
 ---
 # <a name="deploy-a-layer-model-extension"></a>レイヤー モデル拡張機能の配置
@@ -29,9 +29,9 @@ Visual Studio の他のユーザーは、Visual Studio を使って作成され�
 
 #### <a name="to-install-the-extension"></a>拡張機能をインストールするには
 
-1. **ソース .vsix マニフェスト**が含まれているプロジェクトで、ファイルエクスプローラーで**bin \\ \\** * を開きます。
+1. **ソース .vsix**が含まれているプロジェクトで、ファイルエクスプローラー**で \\ \\ bin*** を開きます。
 
-2. 拡張機能をインストールするコンピューターに **\* の .vsix**ファイルをコピーします。
+2. 拡張機能をインストールするコンピューターに** \* .vsix**ファイルをコピーします。
 
 3. ターゲット コンピューターの Windows エクスプローラーで *.vsix をダブルクリックします。
 
@@ -39,16 +39,16 @@ Visual Studio の他のユーザーは、Visual Studio を使って作成され�
 
 #### <a name="to-uninstall-the-extension"></a>拡張機能をアンインストールするには
 
-1. Visual Studio の **[ツール]** メニューで、 **[拡張機能と更新プログラム]** をクリックします。
+1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能と更新プログラム**] をクリックします。
 
-2. 拡張機能の名前をクリックし、 **[アンインストール]** をクリックします。
+2. 拡張機能の名前をクリックし、[ **アンインストール**] をクリックします。
 
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Team Foundation ビルド サーバーへの拡張機能のインストール
- 通常、[!INCLUDE[esprbuild](../includes/esprbuild-md.md)] サーバーには Visual Studio はインストールされていないので、VSIX をダブルクリックしてインストールすることはできません。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] のインストールには VSIX 拡張機能を実行できるコンポーネントがいくつか含まれますが、拡張機能のインストールは手動で行う必要があります。
+ [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 通常、サーバーには Visual Studio がインストールされていないため、VSIX をダブルクリックしてインストールすることはできません。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] のインストールには VSIX 拡張機能を実行できるコンポーネントがいくつか含まれますが、拡張機能のインストールは手動で行う必要があります。
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>レイヤー拡張機能を [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] サーバーにインストールするには
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>レイヤー拡張機能を [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] サーバーにインストールするには
 
-1. 開発用コンピューターから [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] コンピューターに **.vsix**ファイルをコピーします。
+1. 開発用コンピューターからコンピューターに **.vsix**ファイルをコピーします。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
 
      VSIX ファイルを次のいずれかの場所に置きます。
 
@@ -65,11 +65,11 @@ Visual Studio の他のユーザーは、Visual Studio を使って作成され�
          %LocalAppData%\Microsoft\VisualStudio \\ [バージョン] \Extensions\Microsoft
 
         > [!NOTE]
-        > % LocalAppData% は通常*DriveName*: Users ユーザー*名*AppDataLocal です。
+        > % LocalAppData% は通常 *DriveName*: Users ユーザー*名*AppDataLocal です。
 
 2. 各 VSIX ファイルを同じ場所のフォルダーに展開します。
 
-    1. ファイル名拡張子を **.vsix**から **.zip**に変更します。
+    1. ファイル名拡張子を **.vsix** から **.zip**に変更します。
 
     2. .zip ファイルの内容をフォルダーに抽出します。
 

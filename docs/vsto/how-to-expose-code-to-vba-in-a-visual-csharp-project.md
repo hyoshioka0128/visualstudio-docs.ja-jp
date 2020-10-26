@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544834"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual C# プロジェクトでコードを VBA に公開する
   2種類のコードが相互に対話できるようにする場合は、Visual C# プロジェクトのコードを Visual Basic for Applications (VBA) コードに公開できます。
 
- Visual C# のプロセスは、Visual Basic プロセスとは異なります。 詳細については、「[方法: Visual Basic プロジェクトでコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)する」を参照してください。
+ Visual C# のプロセスは、Visual Basic プロセスとは異なります。 詳細については、「 [方法: Visual Basic プロジェクトでコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)する」を参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="expose-code-in-a-visual-c-project"></a>Visual C# プロジェクトでコードを公開する
- VBA コードが Visual C# プロジェクトのコードを呼び出せるようにするには、コードを変更して COM に表示されるようにし、デザイナーで**ReferenceAssemblyFromVbaProject**プロパティを**True**に設定します。
+ VBA コードが Visual C# プロジェクトのコードを呼び出せるようにするには、コードを変更して COM に表示されるようにし、デザイナーで **ReferenceAssemblyFromVbaProject** プロパティを **True** に設定します。
 
- VBA から Visual C# プロジェクトのメソッドを呼び出す方法を示すチュートリアルについては、「[チュートリアル: Visual C&#35; プロジェクトの vba からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)」を参照してください。
+ VBA から Visual C# プロジェクトのメソッドを呼び出す方法を示すチュートリアルについては、「 [チュートリアル: Visual C&#35; プロジェクトの vba からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)」を参照してください。
 
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Visual C# プロジェクトのコードを VBA に公開するには
 
@@ -46,7 +46,7 @@ ms.locfileid: "85544834"
 
 2. マクロを有効にするようユーザーに求めることなく、ドキュメント内の VBA コードの実行が許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
-3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを**パブリック**として宣言します。
+3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを **パブリック**として宣言します。
 
 4. 次の <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性と <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性を、VBA に公開するクラスに適用します。 これらの属性によってクラスが COM で表示されるようになりますが、クラスのインターフェイスは生成されません。
 
@@ -56,9 +56,9 @@ ms.locfileid: "85544834"
        System.Runtime.InteropServices.ClassInterfaceType.None)]
    ```
 
-5. プロジェクトのホスト項目クラスの**GetAutomationObject**メソッドをオーバーライドして、VBA に公開するクラスのインスタンスを返します。
+5. プロジェクトのホスト項目クラスの **GetAutomationObject** メソッドをオーバーライドして、VBA に公開するクラスのインスタンスを返します。
 
-   - ホスト項目クラスを VBA に公開する場合は、このクラスに属する**GetAutomationObject**メソッドをオーバーライドし、クラスの現在のインスタンスを返します。
+   - ホスト項目クラスを VBA に公開する場合は、このクラスに属する **GetAutomationObject** メソッドをオーバーライドし、クラスの現在のインスタンスを返します。
 
      ```csharp
      protected override object GetAutomationObject()
@@ -67,7 +67,7 @@ ms.locfileid: "85544834"
      }
      ```
 
-   - ホスト項目ではないクラスを VBA に公開する場合は、プロジェクト内の任意のホスト項目の**GetAutomationObject**メソッドをオーバーライドし、非ホスト項目クラスのインスタンスを返します。 たとえば、次のコードは、という名前のクラスを VBA に公開していることを前提としてい `DocumentUtilities` ます。
+   - ホスト項目ではないクラスを VBA に公開する場合は、プロジェクト内の任意のホスト項目の **GetAutomationObject** メソッドをオーバーライドし、非ホスト項目クラスのインスタンスを返します。 たとえば、次のコードは、という名前のクラスを VBA に公開していることを前提としてい `DocumentUtilities` ます。
 
      ```csharp
      protected override object GetAutomationObject()
@@ -76,9 +76,9 @@ ms.locfileid: "85544834"
      }
      ```
 
-     ホスト項目の詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+     ホスト項目の詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
-6. VBA に公開しているクラスからインターフェイスを抽出します。 [**インターフェイスの抽出**] ダイアログボックスで、インターフェイス宣言に含めるパブリックメンバーを選択します。 詳細については、「[インターフェイスの抽出リファクタリング](../ide/reference/extract-interface.md)」を参照してください。
+6. VBA に公開しているクラスからインターフェイスを抽出します。 [ **インターフェイスの抽出** ] ダイアログボックスで、インターフェイス宣言に含めるパブリックメンバーを選択します。 詳細については、「 [インターフェイスの抽出リファクタリング](../ide/reference/extract-interface.md)」を参照してください。
 
 7. **パブリック**キーワードをインターフェイス宣言に追加します。
 
@@ -93,7 +93,7 @@ ms.locfileid: "85544834"
 10. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
 
     > [!NOTE]
-    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject**プロパティを**True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 11. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、からプロジェクトを実行するときに、ブックまたはドキュメントに VBA コードを追加した場合、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 次回プロジェクトをビルドするときに vba コードが失われることを通知します。 これは、プロジェクトをビルドするたびに、ビルド出力フォルダー内のドキュメントが上書きされるためです。
 

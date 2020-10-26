@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597049"
 ---
 # <a name="error-messages-in-workflow-designer"></a>ワークフロー デザイナーでのエラー メッセージ
@@ -35,9 +35,9 @@ ms.locfileid: "75597049"
 
 4. ワークフローによる読み込み失敗を引き起こすエラーが XAML ファイルで発生している。
 
-無効な式や検証制約違反によって、ワークフローの構築が失敗することはありません。 ワークフローのビルドは成功しますが、実行時には <xref:System.Activities.InvalidWorkflowException> がスローされます。 XAML ファイルにエラーがある場合は、構築が失敗します。
+無効な式や検証制約違反によって、ワークフローの構築が失敗することはありません。 ワークフローのビルドは成功しますが、 <xref:System.Activities.InvalidWorkflowException> 実行時にがスローされます。 XAML ファイルにエラーがある場合は、構築が失敗します。
 
-Visual Studio 内では、ワークフローが読み込まれると、そのエラーが**エラー一覧**に表示されます。 エラーの原因となっているアクティビティに移動するには、**エラー一覧**でエラーをダブルクリックします。
+Visual Studio 内では、ワークフローが読み込まれると、そのエラーが **エラー一覧**に表示されます。 エラーの原因となっているアクティビティに移動するには、 **エラー一覧**でエラーをダブルクリックします。
 
 ### <a name="expression-errors"></a>式のエラー
  無効な式が赤い円で示され、その式の横に白い感嘆符が付いています。 このアイコンの上にカーソルを置くと、エラーの原因を表すツールヒントが表示されます。 Visual Studio 内で式をクリックすると、エラーの原因を示す行が表示されます。 下線が引かれたテキストの上にカーソルを置くと、エラーの発生元を示すツールヒントが表示されます。

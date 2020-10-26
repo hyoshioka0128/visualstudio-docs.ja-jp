@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202378"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-さまざまなユーザー定義型 (UDT) をについて説明します。  
+さまざまなユーザー定義型 (UDT) について説明します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum UdtKind {   
@@ -36,25 +36,25 @@ enum UdtKind { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  UdtStruct  
- UDT は、構造です。  
+ UDT は構造体です。  
   
  UdtClass  
- UDT は、クラスです。  
+ UDT はクラスです。  
   
  UdtUnion  
- UDT は、共用体です。  
+ UDT は共用体です。  
   
  UdtInterface  
- UDT は、インターフェイスです。  
+ UDT はインターフェイスです。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値がによって返される、 [idiasymbol::get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、 [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

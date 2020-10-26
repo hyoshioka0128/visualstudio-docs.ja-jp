@@ -1,5 +1,5 @@
 ---
-title: オブジェクト |マイクロソフトドキュメント
+title: オブジェクト |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 774a93e1accf67a9d97f00ce3a6dd3339f095d26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702269"
 ---
-# <a name="objects"></a>Objects
-以下の参照情報は、コア テキスト エディターのインスタンスを作成するために使用されるオブジェクトについて説明します。
+# <a name="objects"></a>オブジェクト
+次の参照情報は、コアテキストエディターのインスタンスを作成するために使用されるオブジェクトについて説明しています。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [オブジェクト](../extensibility/vscodewindow-object.md)コード ウィンドウ オブジェクト 、1 つ以上のテキスト ビューを囲むことができる特殊なドキュメント ウィンドウについて説明します。
+- [Vscodewindow オブジェクト](../extensibility/vscodewindow-object.md) 1つ以上のテキストビューを囲むことができる特殊なドキュメントウィンドウであるコードウィンドウオブジェクトについて説明します。
 
-- [オブジェクト](../extensibility/vscodewindowmanager-object.md)言語サービスによって実装され、表示要素の管理を担当するコード ウィンドウ マネージャー オブジェクトについて説明します。
+- [VSCodeWindowManager オブジェクト](../extensibility/vscodewindowmanager-object.md) 言語サービスによって実装され、修飾の管理を担当するコードウィンドウマネージャーオブジェクトについて説明します。
 
-- [オブジェクト](../extensibility/vstextbuffer-object.md)Unicode テキストのストリームを表すテキスト バッファー オブジェクト、ファイルのデータについて説明します。
+- [Vstextbuffer オブジェクト](../extensibility/vstextbuffer-object.md) Unicode テキストのストリーム (ファイルのデータ) を表すテキストバッファーオブジェクトについて説明します。
 
-- [オブジェクト](../extensibility/vstextview-object.md)テキスト ビュー、ユーザーが表示し、テキスト バッファーの Unicode テキストを編集できるウィンドウを説明します。
+- [Vstextview オブジェクト](../extensibility/vstextview-object.md) テキストバッファーの Unicode テキストをユーザーが表示および編集できるようにするウィンドウであるテキストビューについて説明します。
 
 ## <a name="related-sections"></a>関連項目
-- [ビジュアル スタジオ SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)参照トピックの一覧を示します。
+- [Visual STUDIO SDK リファレンス](../extensibility/visual-studio-sdk-reference.md) 参照トピックの一覧を示します。

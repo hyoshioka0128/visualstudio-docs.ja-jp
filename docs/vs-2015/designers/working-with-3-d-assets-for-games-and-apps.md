@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852192"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>ゲームとアプリケーション用の 3D アセットの操作
@@ -24,7 +24,7 @@ ms.locfileid: "75852192"
 このドキュメントでは、DirectX ベースのゲームおよびアプリケーション向けの 3-D モデル、テクスチャ、シェーダーの作成または変更に使用できる、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のツールについて説明します。
 
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio における DirectX アプリケーションの開発
- DirectX アプリケーションは、通常、プログラミング ロジック、DirectX API、および HLSL (High Level Shading Language) プログラムを、オーディオおよび 3-D ビジュアル アセットと組み合わせることによって、リッチで対話型のマルチメディア エクスペリエンスを提供します。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] には、イメージとテクスチャ、3-D モデル、シェーダーなどの操作を行うために使用できるツールが用意されています。そのため、別のツールを使用するために IDE を終了する必要がありません。 Visual Studio のツールは、*プレースホルダー* アセットの作成に特に適しています。プレースホルダーを使用すると、稼動準備のできたアセットをコミッションする前にコードのテストやプロトタイプの構築を行ったり、稼動準備のできたアセットをアプリケーションのデバッグ時に検査および変更したりすることができます。
+ DirectX アプリケーションは、通常、プログラミング ロジック、DirectX API、および HLSL (High Level Shading Language) プログラムを、オーディオおよび 3-D ビジュアル アセットと組み合わせることによって、リッチで対話型のマルチメディア エクスペリエンスを提供します。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  には、イメージとテクスチャ、3-D モデル、シェーダーなどの操作を行うために使用できるツールが用意されています。そのため、別のツールを使用するために IDE を終了する必要がありません。 Visual Studio のツールは、*プレースホルダー* アセットの作成に特に適しています。プレースホルダーを使用すると、稼動準備のできたアセットをコミッションする前にコードのテストやプロトタイプの構築を行ったり、稼動準備のできたアセットをアプリケーションのデバッグ時に検査および変更したりすることができます。
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用できるアセットの種類に関する詳細を以下に示します。
 
@@ -47,11 +47,11 @@ ms.locfileid: "75852192"
 > DirectX プログラミングの開始方法について詳しくは、[DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx) に関するページをご覧ください。 DirectX ベースのアプリをデバッグする方法について詳しくは、「[グラフィックス診断 (DirectX グラフィックスのデバッグ)](../debugger/visual-studio-graphics-diagnostics.md)」をご覧ください。
 
 ## <a name="directx-version-compatibility"></a>DirectX のバージョンの互換性
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、DirectX を使用して、2-d と3-d の資産をレンダリングします。 DirectX 11 のレンダラーと Windows Advanced Rasterization Platform (WARP) ソフトウェアのレンダラーのいずれかを選択できます。 DirectX 11 のレンダラーを使用すると、DirectX 11 および DirectX 10 の各 GPU 上でハードウェア アクセラレータによる高性能レンダリングを実行できます。 WARP レンダラーを使用すると、最新式のグラフィックス ハードウェアを搭載していないコンピューターからグラフィックス ハードウェアを内蔵しているコンピューターまで、多様な種類のコンピューターとアセットが確実に連動するようになります。 WARP について詳しくは、「[Windows Advanced Rasterization Platform (WARP) Guide](https://msdn.microsoft.com/library/gg615082(VS.85).aspx)」(Windows Advanced Rasterization Platform (WARP) ガイド) をご覧ください。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DirectX を使用して、2-d と3-d の資産をレンダリングします。 DirectX 11 のレンダラーと Windows Advanced Rasterization Platform (WARP) ソフトウェアのレンダラーのいずれかを選択できます。 DirectX 11 のレンダラーを使用すると、DirectX 11 および DirectX 10 の各 GPU 上でハードウェア アクセラレータによる高性能レンダリングを実行できます。 WARP レンダラーを使用すると、最新式のグラフィックス ハードウェアを搭載していないコンピューターからグラフィックス ハードウェアを内蔵しているコンピューターまで、多様な種類のコンピューターとアセットが確実に連動するようになります。 WARP について詳しくは、「[Windows Advanced Rasterization Platform (WARP) Guide](https://msdn.microsoft.com/library/gg615082(VS.85).aspx)」(Windows Advanced Rasterization Platform (WARP) ガイド) をご覧ください。
 
 ## <a name="related-topics"></a>関連トピック
 
-|[タイトル]|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[テクスチャおよびイメージの使用](../designers/working-with-textures-and-images.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用してイメージとテクスチャを操作する方法について説明します。|
 |[3-D モデルの操作](../designers/working-with-3-d-models.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用して 3-D モデルを操作する方法について説明します。|

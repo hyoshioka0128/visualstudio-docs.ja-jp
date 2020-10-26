@@ -1,5 +1,5 @@
 ---
-title: レガシ言語サービスでコードを再フォーマットする |マイクロソフトドキュメント
+title: 従来の言語サービスでコードを再フォーマットする |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705908"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>従来の言語サービスの再フォーマット コード
 
-ソース[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コードでは、インデントと空白の使用を正規化することで再フォーマットできます。 これには、各行の先頭にスペースやタブを挿入または削除する、行間に新しい行を追加する、スペースをタブまたはタブにスペースで置き換えることなどが含まれます。
+では [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、インデントと空白文字の使用を正規化することで、ソースコードを再フォーマットできます。 これには、各行の先頭にスペースやタブを挿入したり、行の間に新しい行を追加したり、スペースを含むタブまたはタブをスペースに置き換えたりすることができます。
 
 > [!NOTE]
-> 改行文字の挿入または削除は、ブレークポイントやブックマークなどのマーカーに影響を与えますが、スペースやタブを追加または削除してもマーカーには影響しません。
+> 改行文字を挿入または削除すると、ブレークポイントやブックマークなどのマーカーに影響を与える可能性がありますが、マーカーには影響しません。
 
-ユーザーは、[**編集**] メニューの [**詳細設定**] メニューから **[選択範囲の書式設定**] または [**文書の書式設定**] を選択して、再フォーマット操作を開始できます。 再フォーマット操作は、コード スニペットまたは特定の文字が挿入されたときにトリガーすることもできます。 たとえば、C# で右中かっこを入力すると、対応する左中かっこと右中かっこの間のすべてが自動的に適切なレベルにインデントされます。
+ユーザーは、[**編集**] メニューの [**詳細設定**] メニューから [**選択内容の書式設定**] または [**ドキュメントの書式**設定] を選択して、再フォーマット操作を開始できます。 また、コードスニペットまたは特定の文字が挿入されたときに、再フォーマット操作をトリガーすることもできます。 たとえば、C# で右中かっこを入力すると、一致する左中かっこと終わりかっこの間のすべてが自動的に適切なレベルにインデントされます。
 
-**[選択範囲の書式設定]** または [**ドキュメントの書式設定**] コマンド<xref:Microsoft.VisualStudio.Package.ViewFilter>を言語サービス<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>に送信すると<xref:Microsoft.VisualStudio.Package.Source>[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、クラスはクラス内のメソッドを呼び出します。 書式設定をサポートするには、メソッドを<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>オーバーライドし、独自の書式コードを指定する必要があります。
+によって、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **形式の選択** ] または [ **ドキュメントの書式設定** ] コマンドが言語サービスに送信されると、クラスは <xref:Microsoft.VisualStudio.Package.ViewFilter> クラスのメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> ます。 書式設定をサポートするには、メソッドをオーバーライドし、独自の書式設定コードを指定する必要があり <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> ます。
 
 ## <a name="enabling-support-for-reformatting"></a>再フォーマットのサポートの有効化
 
-書式設定をサポートするには、VSPackage `EnableFormatSelection` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>を登録するときに`true`のパラメーターを に設定する必要があります。 これにより、プロパティ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>が`true`に設定されます。 この<xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A>メソッドは、このプロパティの値を返します。 true を返す場合<xref:Microsoft.VisualStudio.Package.ViewFilter>、クラスは<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
+書式設定をサポートするには、 `EnableFormatSelection` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> VSPackage を登録するときにのパラメーターをに設定する必要があり `true` ます。 これにより、プロパティがに設定され <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> `true` ます。 メソッドは、 <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> このプロパティの値を返します。 True を返した場合、 <xref:Microsoft.VisualStudio.Package.ViewFilter> クラスはを呼び出し <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> ます。
 
 ## <a name="implementing-reformatting"></a>再フォーマットの実装
 
-再フォーマットを実装するには、<xref:Microsoft.VisualStudio.Package.Source>クラスからクラスを派生させ、メソッドをオーバーライド<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>する必要があります。 オブジェクト<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>はフォーマットする範囲を記述し、オブジェクト<xref:Microsoft.VisualStudio.Package.EditArray>はスパンで行われた編集を保持します。 このスパンはドキュメント全体にできます。 ただし、スパンに複数の変更が加えられる可能性があるため、すべての変更は 1 つのアクションで元に戻せる必要があります。 これを行うには、オブジェクト内のすべての変更を<xref:Microsoft.VisualStudio.Package.CompoundAction>ラップします (このトピックの「複合アクション クラスの使用」を参照してください)。
+再フォーマットを実装するには、クラスからクラスを派生させ、メソッドをオーバーライドする必要があり <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> ます。 オブジェクトは、 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> 書式設定するスパンを記述し、 <xref:Microsoft.VisualStudio.Package.EditArray> オブジェクトはスパンに加えられた編集を保持します。 このスパンはドキュメント全体であることに注意してください。 ただし、スパンに対して複数の変更が行われる可能性があるため、すべての変更を1回の操作で元に戻す必要があります。 これを行うには、すべての変更をオブジェクトにラップし <xref:Microsoft.VisualStudio.Package.CompoundAction> ます (このトピックの「CompoundAction クラスの使用」セクションを参照してください)。
 
 ### <a name="example"></a>例
 
-次の例では、コンマの後にタブが続くか行の末尾に入っていない限り、選択範囲内の各コンマの後にスペースが 1 つあるかどうかを確認します。 行の最後のコンマの後の末尾のスペースは削除されます。 このメソッドがメソッドからどのように呼び出されるのかについては、このトピックの「CompoundAction クラス<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>の使用」を参照してください。
+次の例では、コンマの後にタブが続く場合、または行の末尾にある場合を除き、すべてのコンマの後にスペースが1つあることを保証します。 行の最後のコンマの後の末尾のスペースが削除されます。 メソッドからこのメソッドを呼び出す方法については、このトピックの「CompoundAction クラスの使用」セクションを参照してください <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> 。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -153,13 +153,13 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="using-the-compoundaction-class"></a>複合アクションクラスの使用
+## <a name="using-the-compoundaction-class"></a>CompoundAction クラスの使用
 
-コードのセクションで行われるすべての再フォーマットは、1 回の操作で元に戻せる必要があります。 これは<xref:Microsoft.VisualStudio.Package.CompoundAction>クラスを使用して実行できます。 このクラスは、テキスト バッファーに対する一連の編集操作を 1 つの編集操作にラップします。
+コードのセクションで実行されるすべての再フォーマットは、1回の操作で元に戻す必要があります。 これは、クラスを使用して実現でき <xref:Microsoft.VisualStudio.Package.CompoundAction> ます。 このクラスは、テキストバッファーに対する一連の編集操作を1つの編集操作にラップします。
 
 ### <a name="example"></a>例
 
-クラスの使用方法の例を次に示<xref:Microsoft.VisualStudio.Package.CompoundAction>します。 メソッドの例については、このトピックの「書式設定のサポートの実装」の例を`DoFormatting`参照してください。
+クラスを使用する方法の例を次に示し <xref:Microsoft.VisualStudio.Package.CompoundAction> ます。 メソッドの例については、このトピックの「書式設定のサポートの実装」セクションの例を参照してください `DoFormatting` 。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -183,6 +183,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [従来の言語サービスの特徴](legacy-language-service-features1.md)

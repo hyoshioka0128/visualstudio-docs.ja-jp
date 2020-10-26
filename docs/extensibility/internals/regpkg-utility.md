@@ -1,5 +1,5 @@
 ---
-title: RegPkg ユーティリティ |マイクロソフトドキュメント
+title: RegPkg Utility |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,48 +12,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cebfd7a9782a2760eb33f7e56bfe16b126fc6251
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705638"
 ---
 # <a name="regpkg-utility"></a>RegPkg ユーティリティ
 > [!NOTE]
-> Visual Studio でパッケージを登録する場合は、.pkgdef ファイルを使用する方法が推奨されます。 これにより、VSIX の展開に必要なシステム レジストリにアクセスしなくても、拡張機能の展開が可能になります。 Pkgdef ファイルは[、CreatePkgDef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)を使用して作成されます。 Visual Studio パッケージの展開の詳細については、「 [Visual Studio 拡張機能の配布](../../extensibility/shipping-visual-studio-extensions.md)」を参照してください。
+> Visual Studio でパッケージを登録するには、pkgdef ファイルを使用することをお勧めします。 これにより、システムレジストリにアクセスしなくても拡張機能をデプロイできます。これは、VSIX 配置に必要です。 Pkgdef ファイルは、 [Createpkgdef ユーティリティ](../../extensibility/internals/createpkgdef-utility.md)を使用して作成されます。 Visual Studio パッケージの配置の詳細については、「 [Visual Studio 拡張機能の配布](../../extensibility/shipping-visual-studio-extensions.md)」を参照してください。
 
- RegPkg.exe ユーティリティは VSPackage を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]登録し、展開の準備をします。 このユーティリティは、VSPackage 開発の際にバックグラウンドで使用されます。 これは、テスト用ハイブで VSPackage をビルドして実行できるように、ビルド プロセスの一部として実行されます。
+ RegPkg.exe ユーティリティは、VSPackage をに登録 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] し、デプロイ用に準備します。 このユーティリティは、VSPackage の開発中にバックグラウンドで使用されます。 実験用 hive で VSPackage をビルドして実行できるように、ビルドプロセスの一部として実行されます。
 
- RegPkg は、システム レジストリ スクリプトを複数の形式で生成できます。 これらのスクリプトは、.msi プロジェクトや Windows インストーラ XML ツールセット ファイルなどの配置プロジェクトに組み込むことができます。
+ RegPkg では、複数の形式でシステムレジストリスクリプトを生成できます。 これらのスクリプトは、.msi プロジェクトや Windows インストーラー XML ツールセットファイルなどの配置プロジェクトに組み込むことができます。
 
- 通常\<*、Visual Studio SDK*のインストール パス>\VisualStudioIntegration\ツール\ビン\RegPkg.exe にあります。 RegPkg は次の構文に従います。
+ RegPkg.exe は通常、\VisualStudioIntegration\Tools\Bin\RegPkg.exe にあり \<*Visual Studio SDK installation path*> ます。 RegPkg は、次の構文に従います。
 
 ```
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /root:root 指定された下で登録を実行します
+ /root: ルートが指定された位置で登録を実行します
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ルート。
 
- /regfile:ファイル名 レジストリを更新するのではなく、.reg ファイルを作成します。  /vrgfile または /rgsfile または /wixfile では使用できません。
+ /regfile: FileName は、レジストリを更新するのではなく、.reg ファイルを作成します。  /Vrgfile または/rgsfile または/wixfile. と共に使用することはできません。
 
- /rgsfile:ファイル名 レジストリを更新するのではなく、.rgs ファイルを作成します。  /vrgfile または /regfile または /wixfile では使用できません。
+ /rgsfile: FileName は、レジストリを更新するのではなく、.rgs ファイルを作成します。  /Vrgfile または/regfile または/wixfile. と共に使用することはできません。
 
- /vrgfile:ファイル名 レジストリを更新するのではなく、.vrgファイルを作成します。  /regfile または /rgsfile または /wixfile では使用できません。
+ /vrgfile: FileName は、レジストリを更新するのではなく、vrg ファイルを作成します。  /Regfile または/rgsfile または/wixfile. と共に使用することはできません
 
- /rgm rgs ファイルに加えて .rgm ファイルを作成します。  /rgsfile と組み合わせる必要があります。
+ /rgm は、rgs ファイルに加えて、rgm ファイルを作成します。  /Rgsfile. と組み合わせる必要があります。
 
- /wixfile:ファイル名 レジストリを更新するのではなく、Windows インストーラ XML ツールセット互換ファイルを作成します。  /regfile または /rgsfile または /vrgfile では使用できません。
+ /wixfile: FileName は、レジストリを更新するのではなく、Windows インストーラー XML ツールセットと互換性のあるファイルを作成します。  /Regfile または/rgsfile または/vrgfileと共に使用することはできません。
 
- /コードベース アセンブリではなく、コードベースで登録を強制します。
+ /codebase は、アセンブリではなく、コードベースで登録を強制します。
 
- /assembly は、コードベースではなく、アセンブリで登録を強制します。
+ /アセンブリは、コードベースではなく、アセンブリに強制的に登録します。
 
- /登録解除 このパッケージの登録を解除します。  使用できません
+ /unregister このパッケージの登録を解除します。  使用できません
 
- を /regfile または /vrgfile または /rgsfile または /wixfile と共に使用します。
+ with/regfile または/vrgfile または/rgsfile または/wixfile.
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [RegPkg パッケージ登録のトラブルシューティング](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

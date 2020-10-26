@@ -12,27 +12,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655288"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>レイヤー図へのカスタム プロパティの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-レイヤー図の拡張コードを記述する際、レイヤー図の任意の要素と共に値を格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを **[プロパティ]** ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
+レイヤー図の拡張コードを記述する際、レイヤー図の任意の要素と共に値を格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを [ **プロパティ** ] ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
 
 ## <a name="properties-not-visible-to-the-user"></a>ユーザーに表示されないプロパティ
- レイヤー図の任意の要素に値をアタッチするコードが必要なだけの場合、MEF コンポーネントを定義する必要はありません。 [Ilayerelement](/previous-versions/ff644511(v=vs.140))には `Properties` という名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらの値は、レイヤー図の一部として保存されます。 詳細については、「[プログラムコードでのレイヤーモデルの移動と更新](../modeling/navigate-and-update-layer-models-in-program-code.md)」を参照してください。
+ レイヤー図の任意の要素に値をアタッチするコードが必要なだけの場合、MEF コンポーネントを定義する必要はありません。 `Properties` [Ilayerelement](/previous-versions/ff644511(v=vs.140))にという名前のディクショナリがあります。 マーシャリング可能な値を任意のレイヤー要素のディクショナリに単純に追加します。 これらの値は、レイヤー図の一部として保存されます。 詳細については、「 [プログラムコードでのレイヤーモデルの移動と更新](../modeling/navigate-and-update-layer-models-in-program-code.md)」を参照してください。
 
 ## <a name="properties-that-the-user-can-edit"></a>ユーザーが編集できるプロパティ
- **初期準備**
+ **最初の準備**
 
 > [!IMPORTANT]
 > プロパティが表示されるようにするには、レイヤーのプロパティが表示されるようにする必要のある各コンピューターで、次の変更を行う必要があります。
 >
->  1. "**管理者として実行**" を使用してメモ帳を実行します。 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest` を開きます
+>  1. " **管理者として実行**" を使用してメモ帳を実行します。 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest` を開きます。
 >
 >  2. `Content` 要素内で、次を追加します。
 >
@@ -40,9 +40,9 @@ ms.locfileid: "72655288"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
->  3. Visual Studio アプリケーションの スタート メニューの  **Visual Studio Tools** セクションで、**開発者コマンドプロンプト**を開きます。
+>  3. Visual Studio アプリケーションの [スタート] メニューの [ **Visual Studio Tools** ] セクションで、 **開発者コマンドプロンプト**を開きます。
 >
->     次のように入力します。
+>     次を入力します。
 >
 >     `devenv /rootSuffix /updateConfiguration`
 >
@@ -52,9 +52,9 @@ ms.locfileid: "72655288"
 
  **コードが VSIX プロジェクトに含まれていることを確認する**
 
- プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部である場合、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、「[レイヤー図へのコマンドおよびジェスチャの追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md)」または「[レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
+ プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部である場合、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、「 [レイヤー図へのコマンドおよびジェスチャの追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md) 」または「 [レイヤー図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
- **カスタムプロパティを定義する**
+ **カスタム プロパティを定義する**
 
  カスタム プロパティを作成するには、次のようなクラスを定義します。
 
@@ -69,9 +69,9 @@ public class MyProperty
 
  [Ilayerelement](/previous-versions/ff644511(v=vs.140))またはその派生クラスには、次のようなプロパティを定義できます。
 
-- `ILayerModel` - モデル
+- `ILayerModel` -モデル
 
-- `ILayer` - 各レイヤー
+- `ILayer` -各層
 
 - `ILayerDependencyLink` - レイヤー間のリンク
 

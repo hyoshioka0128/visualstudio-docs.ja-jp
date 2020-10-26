@@ -1,5 +1,5 @@
 ---
-title: イベント 2 を実行する |マイクロソフトドキュメント
+title: IDebugEntryPointEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 531ff846f2488193ed7f3d9f200a1a4ea04df6f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730333"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
-デバッグ エンジン (DE) は、プログラムがユーザー コードの最初の命令を実行する場合、セッション デバッグ マネージャー (SDM) にこのインターフェイスを送信します。
+デバッグエンジン (DE) は、プログラムがユーザーコードの最初の命令を実行しようとしているときに、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,23 +28,23 @@ ms.locfileid: "80730333"
 IDebugEntryPointEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- DE は、このインターフェイスを通常の操作の一部として実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は[、インターフェイス](/cpp/atl/queryinterface)にアクセスするのに`IDebugEvent2`クエリ インターフェイスを使用します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ DE は、通常の操作の一部としてこのインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は、 [QueryInterface](/cpp/atl/queryinterface) を使用してインターフェイスにアクセスし `IDebugEvent2` ます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- デは、デバッグ中のプログラムが読み込まれ、ユーザー コードの最初の命令を実行する準備ができたときに、このイベント オブジェクトを作成して送信します。 イベントは、デバッグ中のプログラムにアタッチされたときに SDM によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)コールバック関数を使用して送信されます。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ DE は、デバッグ中のプログラムが読み込まれ、ユーザーコードの最初の命令を実行する準備が整ったときに、このイベントオブジェクトを作成して送信します。 イベントは、デバッグ対象のプログラムにアタッチされたときに SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。
 
-## <a name="remarks"></a>Remarks
-- プログラムが最初の命令を実行しようとしているときに[、IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)が送信されます。 たとえば、`IDebugEntryPoint2`プログラムがユーザーの`main`機能を実行しようとしているときに送信されます。
+## <a name="remarks"></a>解説
+- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) は、プログラムが最初の命令を実行しようとしているときに送信されます。 たとえば、 `IDebugEntryPoint2` は、プログラムがユーザーの関数を実行しようとしているときに送信され `main` ます。
 
- DE が`IDebugEntryPointEvent2`送信する場合、現在のコード位置は、ユーザー コードの最初の`main`命令に置かれるべきです。
+ DE が送信されるとき `IDebugEntryPointEvent2` 、現在のコードの位置は、のようなユーザーコードの最初の命令である必要があり `main` ます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

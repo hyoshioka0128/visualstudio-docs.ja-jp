@@ -1,5 +1,5 @@
 ---
-title: '方法: 並列ウォッチ ウィンドウを使用して、|Microsoft Docs'
+title: '方法: 並列ウォッチウィンドウを使用する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697490"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>方法: 並列ウォッチ ウィンドウを使用します。
+# <a name="how-to-use-the-parallel-watch-window"></a>方法: 並列ウォッチ ウィンドウを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [並列ウォッチ] ウィンドウには、複数のスレッドで 1 つの式が保持している値を同時に表示できます。 各行は、1 つのアプリケーションで実行中のスレッドを表しますが、スレッドは複数の行に表示される場合があります。 具体的には、各行は関数シグネチャが現在のスタック フレーム上の関数に一致する関数呼び出しを表します。 列内の項目の並べ替え、順序変更、削除、およびグループ化を行うことができます。 スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 **[並列ウォッチ]** ウィンドウには次の列が表示されます。  
@@ -37,9 +37,9 @@ ms.locfileid: "65697490"
 - 構成可能な列。コンピューター、プロセス、タイル、タスク、スレッドを表示できます。  
   
   > [!TIP]
-  > 開く必要があります、**並列タスク**でタスク情報を表示するウィンドウ、**並列ウォッチ**ウィンドウ。  
+  > [並列**ウォッチ**] ウィンドウにタスク情報を表示するには、[**並列タスク**] ウィンドウを開く必要があります。  
   
-- **\<ウォッチ式の追加 >** 列、ウォッチする式を入力することができます。  
+- **\<Add Watch>** 列。ウォッチする式を入力できます。  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,19 +53,19 @@ ms.locfileid: "65697490"
   
 ### <a name="to-add-a-watch-expression"></a>ウォッチ式を追加するには  
   
-- 選択 **\<ウォッチ式の追加 >** し、ウォッチ式を指定します。  
+- を選択 **\<Add Watch>** し、ウォッチ式を指定します。  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>スレッドのフラグを設定または設定解除するには  
   
-- フラグ列、行の選択、スレッドのショートカット メニューを開きまたは選択**フラグ**または**フラグ解除**します。  
+- 行の [フラグ] 列を選択するか、スレッドのショートカットメニューを開き、[ **フラグ** ] または [フラグ解除] を **選択します**。  
   
 ### <a name="to-display-only-flagged-threads"></a>フラグが設定されたスレッドのみ表示するには  
   
-- 左上隅にあるのみのフラグが設定を表示するボタンを選択、**並列ウォッチ**ウィンドウ。  
+- [ **並列ウォッチ** ] ウィンドウの左上隅にある [フラグ付きののみ表示] ボタンをクリックします。  
   
 ### <a name="to-switch-frames"></a>フレームを切り替えるには  
   
-- フレーム列をダブルクリックします (キーボード:行を選択し、Enter キーを押します。)  
+- フレーム列をダブルクリックします  (キーボード:行を選択し、Enter キーを押します)。  
   
 ### <a name="to-sort-a-column"></a>列を並べ替えるには  
   
@@ -87,7 +87,7 @@ ms.locfileid: "65697490"
   
 - **[ブール式でフィルター]** ボックスにブール式を入力します。 デバッガーは、スレッド コンテキストの式を評価します。 値が `true` である行だけが表示されます。  
   
-## <a name="see-also"></a>関連項目  
- [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)   
+## <a name="see-also"></a>参照  
+ [マルチスレッドアプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [方法: GPU スレッドウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)   
  [チュートリアル: C++ AMP アプリケーションのデバッグ](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata::skip |Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: Skip |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e71d9631949fc9ae22f80b1b5be3b0662d918ddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187355"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定された数の列挙のシーケンス内のレコードをスキップします。  
+列挙されたシーケンス内の指定した数のレコードをスキップします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>パラメーター  
  celt  
- [in]列挙の順番をスキップするレコードの数。  
+ から列挙されたシーケンスでスキップするレコードの数。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`をスキップするレコードがある場合。  
+ 成功した場合はを返します。 `S_OK` それ以外の場合は、 `S_FALSE` スキップするレコードがなくなった場合はを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

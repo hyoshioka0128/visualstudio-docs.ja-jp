@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663446"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>方法: デバッグのステップ実行オプションを変更する (レガシ)
@@ -37,9 +37,9 @@ ms.locfileid: "72663446"
 
 2. 既存の従来のワークフロー プロジェクトを開くか、同時アクティビティを使用し、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とする新しいプロジェクトを作成します。
 
-3. 従来の [!INCLUDE[wfd2](../includes/wfd2-md.md)] の **[ワークフロー]** メニューで、 **[デバッグ]** をポイントし、[**ステップ実行オプション]** をポイントします。
+3. 従来のの [ **ワークフロー** ] メニューで、 [!INCLUDE[wfd2](../includes/wfd2-md.md)] [ **デバッグ**] をポイントし、[ **ステップ実行オプション]** をポイントします。
 
-4. **[インスタンス]** または **[分岐]** を選択します。
+4. [ **インスタンス** ] または [ **分岐**] を選択します。
 
 ## <a name="see-also"></a>参照
  [レガシワークフローのデバッグ](../workflow-designer/debugging-legacy-workflows.md)[ステップ実行オプションのデバッグ (レガシ)](../workflow-designer/debug-stepping-options-legacy.md)

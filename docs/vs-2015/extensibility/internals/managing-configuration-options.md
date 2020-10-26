@@ -11,39 +11,39 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d88cd0c20a8bbb29fee6b35d65813fd81f2eeb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192635"
 ---
 # <a name="managing-configuration-options"></a>構成オプションの管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-新しいプロジェクトの種類を作成するときに、プロジェクトの構築方法、パッケージ、展開、および実行を決定するプロジェクトとソリューションの構成設定を管理する必要があります。 次のトピックでは、プロジェクトとソリューションの構成について説明します。  
+新しいプロジェクトの種類を作成する場合は、プロジェクトのビルド、パッケージ化、配置、および実行の方法を決定するプロジェクトとソリューションの構成設定を管理する必要があります。 次のトピックでは、プロジェクトとソリューションの構成について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [概要](../../extensibility/internals/configuration-options-overview.md)  
- について説明する方法でプロジェクト[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]複数の構成をサポートすることができます。  
+ のプロジェクトで複数の構成をサポートする方法について説明し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
- [プロパティ ページ](../../extensibility/internals/property-pages.md)  
- ユーザーを表示およびプロパティ ページを使用して、プロジェクト構成の依存プロパティと独立したプロパティを変更できるについて説明します。  
+ [[プロパティ ページ]](../../extensibility/internals/property-pages.md)  
+ プロパティページを使用して、ユーザーがプロジェクト構成に依存するプロパティと独立したプロパティを表示および変更できることについて説明します。  
   
- [ソリューション構成](../../extensibility/internals/solution-configuration.md)  
- ソリューション構成内に格納され、ソリューション構成での動作を指示する方法について説明します、**開始**と**ビルド**コマンド。  
+ [ソリューションの構成](../../extensibility/internals/solution-configuration.md)  
+ ソリューション構成に格納されている内容と、ソリューション構成が **Start** コマンドと **Build** コマンドの動作をダイレクトする方法について説明します。  
   
  [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)  
- プロジェクトの構成オブジェクトが UI に構成情報の表示を管理する方法について説明します。  
+ プロジェクト構成オブジェクトが UI への構成情報の表示をどのように管理するかについて説明します。  
   
  [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)  
- によって、特定のソリューションのソリューション構成の一覧を管理する方法について説明します、**ソリューション構成** ダイアログ ボックス。  
+ [ **ソリューション構成** ] ダイアログボックスで、特定のソリューションのソリューション構成の一覧を管理する方法について説明します。  
   
  [展開の管理のためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
- 展開し、2 つの方法を定義します。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]配置をサポートするプロジェクトをサポートします。  
+ 配置の動作を定義し、2つの方法で [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 配置をサポートするプロジェクトをサポートします。  
   
  [出力のためのプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)  
- すべての構成をサポートするビルド プロセスとインターフェイス、およびどの出力によって項目が利用できるメソッドについて説明します。  
+ 各構成がサポートできるビルドプロセス、および出力項目を使用できるようにするためのインターフェイスとメソッドについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [プロジェクト タイプ](../../extensibility/internals/project-types.md)  
- 基本ビルディング ブロックとしてプロジェクトの概要、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です。 プロジェクトがビルドとコードのコンパイルを制御する方法を説明する追加のトピックへのリンクが提供されます。
+ [プロジェクトの種類](../../extensibility/internals/project-types.md)  
+ プロジェクトの概要を [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 統合開発環境 (IDE: integrated development environment) の基本的な構成要素として提供します。 プロジェクトがコードのビルドとコンパイルを制御する方法について説明する追加のトピックへのリンクが用意されています。

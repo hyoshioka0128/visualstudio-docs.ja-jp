@@ -1,5 +1,5 @@
 ---
-title: オブジェクト スタイルの変更
+title: オブジェクト スタイルを変更する
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921125"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Blend for Visual Studio のオブジェクト スタイルを変更する
@@ -101,6 +101,6 @@ ms.locfileid: "82921125"
 
 ![[色をリソースに変換] ボタン](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![[色リソースの作成] ダイアログ ボックス](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Blend for Visual Studio を使用して UI を作成する](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

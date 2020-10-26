@@ -1,5 +1,5 @@
 ---
-title: シンボル参照ツールのサポート |マイクロソフトドキュメント
+title: シンボル参照ツールのサポート |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,36 +19,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704764"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>シンボル参照ツールのサポート
-**オブジェクト ブラウザー**、**クラス ビュー**、**呼び出しブラウザー** 、**およびシンボルの結果の検索**ツールは、Visual Studio でシンボル参照機能を提供します。 これらのツールは、シンボルの階層ツリービューを表示し、ツリー内のシンボル間の関係を表示します。 シンボルは、名前空間、オブジェクト、クラス、クラス メンバー、およびさまざまなコンポーネントに含まれるその他の言語要素を表すことができます。 コンポーネントには、Visual Studio プロジェクト、外部 .NET Framework コンポーネント、および型 (.tlb) ライブラリが含まれます。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。
+**オブジェクトブラウザー**、 **クラスビュー**、 **呼び出しブラウザー** および **検索シンボル結果** ツールは、Visual Studio のシンボル参照機能を提供します。 これらのツールでは、シンボルの階層ツリービューが表示され、ツリー内のシンボル間の関係が表示されます。 シンボルは、さまざまなコンポーネントに含まれる名前空間、オブジェクト、クラス、クラスメンバー、およびその他の言語要素を表すことができます。 コンポーネントには、Visual Studio プロジェクト、外部 .NET Framework コンポーネント、および型 (.tlb) ライブラリが含まれます。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。
 
 ## <a name="symbol-browsing-libraries"></a>シンボル参照ライブラリ
- 言語実装者は、コンポーネント内のシンボルを追跡し、一連のインターフェイスを通じて Visual Studio オブジェクト マネージャーにシンボルのリストを提供するライブラリを作成することで、Visual Studio のシンボル参照機能を拡張できます。 ライブラリはインターフェイスによって記述されます<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2>。 Visual Studio オブジェクト マネージャーは、ライブラリからデータを取得し、それを整理することで、シンボル参照ツールから新しいデータの要求に応答します。 その後、要求されたデータを使用してツールを設定または更新します。 Visual Studio オブジェクト マネージャーへの参照を取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>するには、`GetService`サービス<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>ID をメソッドに渡します。
+ 言語の実装者は、コンポーネント内のシンボルを追跡するライブラリを作成し、一連のインターフェイスを使用して Visual Studio オブジェクトマネージャーにシンボルの一覧を提供することにより、Visual Studio のシンボル参照機能を拡張できます。 ライブラリは、インターフェイスによって記述され <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> ます。 Visual Studio オブジェクトマネージャーは、ライブラリからデータを取得して整理することにより、シンボル参照ツールからの新しいデータの要求に応答します。 その後、要求されたデータを使用してツールを設定または更新します。 Visual Studio オブジェクトマネージャーへの参照を取得するには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> サービス ID をメソッドに渡し `GetService` ます。
 
- 各ライブラリは Visual Studio オブジェクト マネージャーに登録する必要があります。 ライブラリを登録するには、メソッドを<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>呼び出します。 要求を開始するツールに応じて、Visual Studio オブジェクト マネージャーは適切なライブラリを検索し、データを要求します。 データは、インタフェースによって記述されたシンボルの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]リスト内のライブラリーとオブジェクト・マネージャーの<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>間を移動します。
+ 各ライブラリは、すべてのライブラリの情報を収集する Visual Studio オブジェクトマネージャーに登録する必要があります。 ライブラリを登録するには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> メソッドを呼び出します。 要求を開始するツールに応じて、Visual Studio オブジェクトマネージャーは適切なライブラリを検索し、データを要求します。 データは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] インターフェイスによって記述されたシンボルの一覧で、ライブラリとオブジェクトマネージャーの間を移動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> ます。
 
- オブジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージャは、ライブラリに含まれる最新のデータを反映するために、シンボル参照ツールを定期的に更新します。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクトマネージャーは、ライブラリに格納されている最新のデータを反映するために、シンボル参照ツールを定期的に更新する役割を担います。
 
- 次の図は、ライブラリと Visual Studio オブジェクト マネージャー間の要求/データ交換プロセスの主要な要素のサンプルを示しています。 ダイアグラム内のインターフェイスは、マネージ コード アプリケーションの一部です。
+ 次の図には、ライブラリと Visual Studio オブジェクトマネージャー間の要求/データ交換プロセスの主要要素のサンプルが含まれています。 図のインターフェイスは、マネージコードアプリケーションの一部です。
 
- ![ライブラリとオブジェクト マネージャー間のデータ フロー](../../extensibility/internals/media/callbrowserdiagram.gif "呼び出しブラウザ図")
+ ![ライブラリとオブジェクト マネージャー間のデータ フロー](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")
 
- Visual Studio オブジェクト マネージャーにシンボルの一覧を提供するには、まず、メソッドを呼び出すことによって、Visual Studio<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>オブジェクト マネージャーでライブラリを登録する必要があります。 ライブラリが登録されると、Visual Studio オブジェクト マネージャーは、ライブラリの機能に関する特定の情報を要求します。 たとえば、 と メソッドを呼び出すことによって、ライブラリ<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A>フラグ<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A>とサポートされているカテゴリを要求します。 ある時点で、ツールの 1 つがこのライブラリのデータを要求すると、オブジェクト マネージャーは、メソッドを呼び出すことによって<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A>シンボルの最上位のリストを要求します。 これに対して、ライブラリはシンボルの一覧を作成し、インターフェイスを通じて Visual Studio<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>オブジェクト マネージャーに公開します。 オブジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージャーは、メソッドを呼び出すことによって、リスト内<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>の項目の数を決定します。 次のすべての要求は、リスト内の特定の項目に関連し、各要求で項目のインデックス番号を指定します。 Visual Studio オブジェクト マネージャーは、メソッドを呼び出すことによって、項目の型、アクセシビリティ、およびその他のプロパティに<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>関する情報を収集します。
+ Visual Studio オブジェクトマネージャーにシンボルのリストを提供するには、最初にメソッドを呼び出して、Visual Studio オブジェクトマネージャーにライブラリを登録する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> ます。 ライブラリが登録されると、Visual Studio のオブジェクトマネージャーによって、ライブラリの機能に関する特定の情報が要求されます。 たとえば、メソッドとメソッドを呼び出すことによって、ライブラリフラグとサポートされるカテゴリを要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> ます。 ある時点で、いずれかのツールがこのライブラリからデータを要求すると、オブジェクトマネージャーはメソッドを呼び出して、最上位レベルのシンボルリストを要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> ます。 応答として、ライブラリによってシンボルのリストが製造され、インターフェイスを通じて Visual Studio オブジェクトマネージャーに公開され <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクトマネージャーは、メソッドを呼び出すことによって、リスト内の項目数を特定し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> ます。 次の要求はすべて、リスト内の特定の項目に関連付けられ、各要求に項目のインデックス番号を指定します。 Visual Studio オブジェクトマネージャーは、メソッドを呼び出すことによって、項目の型、アクセシビリティ、およびその他のプロパティに関する情報を収集し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> ます。
 
- メソッドを呼び出すことによって項目の名前を<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>判別し、メソッドを呼び出して<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>アイコン情報を要求します。 アイコンは、項目名の左側に表示され、項目の種類、アクセシビリティ、およびその他のプロパティが表示されます。
+ メソッドを呼び出して項目の名前を決定 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> し、メソッドを呼び出すことによってアイコン情報を要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> ます。 項目名の左側にアイコンが表示され、項目の種類、アクセシビリティ、およびその他のプロパティが示されます。
 
- オブジェクト[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージャーは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>メソッドを呼び出して、特定のリスト 項目が展開可能で子項目を持っているかどうかを判断します。 UI が要素を展開する要求を送信する場合、オブジェクト マネージャーは、メソッドを呼び<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>出すことによってシンボルの子リストを要求します。 このプロセスは、オンデマンドで構築されるツリーのさまざまな部分で続行されます。
+ オブジェクトマネージャーは、メソッドを呼び出して、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> 特定のリスト項目が展開可能で、子項目があるかどうかを確認します。 UI が要素を展開する要求を送信する場合、オブジェクトマネージャーはメソッドを呼び出すことによって、シンボルの子リストを要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> ます。 プロセスは、ツリーのさまざまな部分を必要に応じて構築し続けます。
 
 > [!NOTE]
-> ネイティブ コード シンボル プロバイダーを実装するには<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>および インターフェイスを使用します。
+> ネイティブコードシンボルプロバイダーを実装するには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> インターフェイスとインターフェイスを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [方法: オブジェクト マネージャーを使用したライブラリの登録](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [方法: ライブラリでのシンボルの識別](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

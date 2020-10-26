@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546225"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>方法: Word 文書または Excel ブックに操作ウィンドウを追加する
@@ -39,10 +39,10 @@ ms.locfileid: "85546225"
 
 2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-3. [**新しい項目の追加**] ダイアログボックスで [**操作ウィンドウコントロール**] を選択し、「 **HelloControl**」という名前を指定して、[**追加**] をクリックします。
+3. [ **新しい項目の追加** ] ダイアログボックスで [ **操作ウィンドウコントロール**] を選択し、「 **HelloControl**」という名前を指定して、[ **追加**] をクリックします。
 
     > [!NOTE]
-    > 別の方法として、**ユーザーコントロール**項目をプロジェクトに追加することもできます。 **操作ウィンドウコントロール**と**ユーザーコントロール**の項目によって生成されるクラスは、機能的には同等です。
+    > 別の方法として、 **ユーザーコントロール** 項目をプロジェクトに追加することもできます。 **操作ウィンドウコントロール**と**ユーザーコントロール**の項目によって生成されるクラスは、機能的には同等です。
 
 4. [**ツールボックス**] の [ **Windows フォーム**] タブで、**ボタン**コントロールをコントロールにドラッグします。
 
@@ -56,7 +56,7 @@ ms.locfileid: "85546225"
 
 6. C# では、ボタンクリック用のイベントハンドラーを追加する必要があります。 このコードは、の `HelloControl` 呼び出し後にコンストラクターに配置でき `InitializeComponent` ます。
 
-     イベントハンドラーの作成方法の詳細については、「[方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
+     イベントハンドラーの作成方法の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]
 

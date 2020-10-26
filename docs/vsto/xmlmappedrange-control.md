@@ -15,29 +15,29 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985361"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange コントロール
-  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールは、非繰り返しスキーマ要素が Microsoft Office Excel のセルにマップされている場合にのみ作成される範囲です。 たとえば、スキーマ要素の `maxOccurs` 属性が1と等しい場合です。 XML にマップされた範囲が Visual Studio によって作成された後は、Excel オブジェクトモデルを走査する必要なく、直接プログラミングできます。 要素のマッピングが削除された場合、Excel 内の <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールのみを削除できます。
+  コントロールは、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 非繰り返しスキーマ要素が Microsoft Office Excel のセルにマップされている場合にのみ作成される範囲です。 たとえば、 `maxOccurs` スキーマ要素の属性が1と等しい場合です。 XML にマップされた範囲が Visual Studio によって作成された後は、Excel オブジェクトモデルを走査する必要なく、直接プログラミングできます。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>要素のマッピングが削除された場合にのみ、Excel 内のコントロールを削除できます。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 ## <a name="bind-data-to-the-control"></a>コントロールにデータをバインドする
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールでは、単一のデータフィールド (単純データバインディング) へのバインドがサポートされています。 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは、複合データバインディングをサポートでき、繰り返しスキーマ要素がセルにマップされるときに自動的に作成されます。 詳細については、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールでは、単一のデータフィールドへのバインド (単純データバインディング) がサポートされています。 コントロールは、 <xref:Microsoft.Office.Tools.Excel.ListObject> 複合データバインディングをサポートでき、繰り返しスキーマ要素がセルにマップされるときに自動的に作成されます。 詳細については、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
 
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールは、<xref:System.Windows.Forms.Control.DataBindings%2A> プロパティを使用してデータソースにバインドされます。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> がワークシートセルに追加されると、Visual Studio は、マップされたセル内のデータからデータセットを自動的に生成し、そのデータセットにコントロールをバインドします。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> の既定のデータバインディングプロパティは <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>です。
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールは、プロパティを使用してデータソースにバインドされ <xref:System.Windows.Forms.Control.DataBindings%2A> ます。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>がワークシートセルに追加されると、Visual Studio は、マップされたセル内のデータからデータセットを自動的に生成し、そのデータセットにコントロールをバインドします。 の既定のデータバインディングプロパティ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> は <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A> です。
 
- バインドされたデータセット内のデータが任意のメカニズムによって更新されると、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 制御によって変更が反映されます。
+ バインドされたデータセット内のデータが任意のメカニズムによって更新された場合、コントロールには変更が反映され <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ます。
 
 ## <a name="formatting"></a>書式設定
- <xref:Microsoft.Office.Interop.Excel.Range>に適用できる <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールに同じ書式設定を適用できます。 これには、罫線、フォント、番号形式、スタイルが含まれます。
+ に適用できるコントロールには、同じ書式設定を適用でき <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> <xref:Microsoft.Office.Interop.Excel.Range> ます。 これには、罫線、フォント、番号形式、スタイルが含まれます。
 
 ## <a name="events"></a>イベント
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールで使用できるイベントは次のとおりです。
+ コントロールで使用できるイベント <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> は次のとおりです。
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 

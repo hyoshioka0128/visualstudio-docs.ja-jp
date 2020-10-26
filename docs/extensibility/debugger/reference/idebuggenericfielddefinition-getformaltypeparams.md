@@ -1,5 +1,5 @@
 ---
-title: ジェネリックフィールド定義::ゲットフォーマルタイプパラム |マイクロソフトドキュメント
+title: 'IDebugGenericFieldDefinition:: GetFormalTypeParams |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728247"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
-パラメーターの数を指定した型パラメーターを取得します。
+パラメーターの数を指定して、型パラメーターを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,19 +44,19 @@ int GetFormalTypeParams(
 
 ## <a name="parameters"></a>パラメーター
 `cParams`\
-[in]パラメーターの数。
+からパラメーターの数。
 
 `ppParams`\
-[アウト]型パラメーターの配列。
+入出力型パラメーターの配列。
 
 `pcParams`\
-[イン、アウト]配列内のパラメーターの`ppParams`数。
+[入力、出力]配列内のパラメーターの数 `ppParams` 。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 左から右の順に型パラメーターを返します。 たとえば、ディクショナリ\<K,V>は、IDebugFormal ジェネリックパラメーター {K,V} を返します。
+## <a name="remarks"></a>解説
+ 型パラメーターを左から右へ順に返します。 たとえば、Dictionary は \<K,V> IDebugFormalGenericParameters {K, V} を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

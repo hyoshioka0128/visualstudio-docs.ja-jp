@@ -8,12 +8,13 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: f1c02e1fdc0c72ac23cb65605f324608a7fc33d7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+monikerRange: '>=vs-2019'
+ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536891"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485139"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub に配置する
 
@@ -29,9 +30,13 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 
 1. プロジェクト ノードを右クリックし、 **[発行]** を選択します。デプロイ オプションを示す画面が表示されます。
 
-   ![デプロイ オプションのスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+   ![デプロイ オプションのスクリーンショット](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. **[発行先の選択]** で、 **[コンテナー レジストリ]** を選択し、 **[Docker Hub]** を選択します。 **[Docker Hub]** ダイアログが表示されます。
+1. **[Docker コンテナー レジストリ]** を選択し、 **[Docker Hub]** を選択します。
+
+   ![発行ダイアログのスクリーンショット - [Docker Hub] を選択する](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
+
+1. Docker 資格情報を入力します。
 
    ![[Docker Hub] ダイアログのスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
@@ -52,4 +57,4 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 ## <a name="see-also"></a>関連項目
 
 [Azure App Service への発行](deploy-app-service.md)
-[Visual Studio コンテナー ツール](/visualstudio/containers/).
+[Visual Studio コンテナー ツール](./index.yml).

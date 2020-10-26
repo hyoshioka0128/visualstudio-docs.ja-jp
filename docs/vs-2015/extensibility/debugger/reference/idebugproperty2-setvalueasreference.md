@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference |Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsReference |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a94e3767ee05e39e847af27dc5999fa8bbbe2d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193455"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このプロパティの値を指定された参照の値に設定します。  
+このプロパティの値を、指定された参照の値に設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,27 +46,27 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>パラメーター  
  `rgpArgs`  
- [in]マネージ コードのプロパティ set アクセス操作子に渡す引数の配列。 プロパティ set アクセス操作子が引数を受け取らない場合、またはこの[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトがこのようなプロパティ setter を参照しない`rgpArgs`null 値を指定する必要があります。 通常、このパラメーターは、null 値です。  
+ からマネージコードプロパティ setter に渡す引数の配列。 プロパティセッターが引数を取らない場合、またはこの [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトがこのようなプロパティセッターを参照しない場合、は `rgpArgs` null 値である必要があります。 通常、このパラメーターは null 値です。  
   
  `dwArgCount`  
- [in]引数の数、`rgpArgs`配列。  
+ から配列内の引数の数 `rgpArgs` 。  
   
  `pValue`  
- [in]形式での参照、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)を使用してこのプロパティを設定する値のオブジェクト。  
+ から [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) オブジェクトの形式で、このプロパティの設定に使用する値への参照。  
   
  `dwTimeout`  
- [in]時間 (ミリ秒単位)、値を設定するためにします。 一般的な値は`INFINITE`します。 これは、すべての可能な評価が実行できる時間の長さに影響します。  
+ から値を設定するためにかかる時間 (ミリ秒単位)。 一般的な値は `INFINITE` です。 これは、考えられる評価にかかる時間に影響します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`; エラーを返しますそれ以外の場合のコードは、通常、次のいずれか。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合は、次のいずれかのエラーコードを返します。  
   
-|Error|説明|  
+|エラー|説明|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|参照から値を設定することはサポートされていません。|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|このプロパティは、メソッドには、値を設定できません。|  
-|`E_SETVALUE_VALUE_IS_READONLY`|値は読み取り専用と、設定することはできません。|  
-|`E_NOTIMPL`|メソッドが実装されていません。|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|参照からの値の設定はサポートされていません。|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|このプロパティがメソッドを参照しているため、値を設定できません。|  
+|`E_SETVALUE_VALUE_IS_READONLY`|値は読み取り専用であるため、設定できません。|  
+|`E_NOTIMPL`|このメソッドは実装されていません。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

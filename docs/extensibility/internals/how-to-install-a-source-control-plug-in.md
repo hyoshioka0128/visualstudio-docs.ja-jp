@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905368"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインをインストールする
@@ -28,16 +28,16 @@ ms.locfileid: "85905368"
 3. 適切なレジストリエントリを作成して、DLL を登録します。
 
 ## <a name="integration-with-visual-studio"></a>Visual Studio との統合
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]では、ソース管理プラグイン API に準拠するソース管理プラグインがサポートされています。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、ソース管理プラグイン API に準拠するソース管理プラグインがサポートされています。
 
 ### <a name="register-the-source-control-plug-in"></a>ソース管理プラグインを登録する
  実行中の統合開発環境 (IDE) がソース管理システムを呼び出すことができるようにするには、まず、API をエクスポートするソース管理プラグイン DLL を見つける必要があります。
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>ソース管理プラグイン DLL を登録するには
 
-1. Company name サブキーの後に product name サブキーを指定して、 **SOFTWARE**サブキーの**HKEY_LOCAL_MACHINE**キーの下に2つのエントリを追加します。 パターンは、 **\ \\ \<company name> \\ \<product name> \\ ソフトウェア \<entry> **の  =  *値*HKEY_LOCAL_MACHINE ます。 2つのエントリは、常に**Sccservername**および**Sccserverpath**と呼ばれます。 各は通常の文字列です。
+1. Company name サブキーの後に product name サブキーを指定して、 **SOFTWARE**サブキーの**HKEY_LOCAL_MACHINE**キーの下に2つのエントリを追加します。 パターンは、 **\ \\ \<company name> \\ \<product name> \\ ソフトウェア \<entry> **の  =  *値*HKEY_LOCAL_MACHINE ます。 2つのエントリは、常に **Sccservername** および **Sccserverpath**と呼ばれます。 各は通常の文字列です。
 
-    たとえば、会社名が Microsoft で、ソース管理製品が SourceSafe という名前の場合、このレジストリパスは**\software\microsoft\sourcesafe HKEY_LOCAL_MACHINE**ます。 このサブキーでは、最初のエントリ**Sccservername**は、ユーザーが判読できる、製品の名前付きの文字列です。 2番目のエントリである**Sccserverpath**は、IDE が接続するソース管理プラグイン DLL への完全パスです。 レジストリエントリの例を次に示します。
+    たとえば、会社名が Microsoft で、ソース管理製品が SourceSafe という名前の場合、このレジストリパスは **\software\microsoft\sourcesafe HKEY_LOCAL_MACHINE**ます。 このサブキーでは、最初のエントリ **Sccservername**は、ユーザーが判読できる、製品の名前付きの文字列です。 2番目のエントリである **Sccserverpath**は、IDE が接続するソース管理プラグイン DLL への完全パスです。 レジストリエントリの例を次に示します。
 
    |レジストリエントリのサンプル|値の例|
    |---------------------------|------------------|
@@ -47,13 +47,13 @@ ms.locfileid: "85905368"
    > [!NOTE]
    > SCCServerPath は、SourceSafe プラグインへの完全なパスです。 ソース管理プラグインでは、異なる会社名と製品名が使用されますが、レジストリエントリのパスは同じです。
 
-2. 次のオプションのレジストリエントリを使用して、ソース管理プラグインの動作を変更できます。 これらのエントリは、 **Sccservername**および**Sccserverpath**と同じサブキーで実行されます。
+2. 次のオプションのレジストリエントリを使用して、ソース管理プラグインの動作を変更できます。 これらのエントリは、 **Sccservername** および **Sccserverpath**と同じサブキーで実行されます。
 
    - **HideInVisualStudioregistry**エントリは、ソース管理プラグインがの**プラグイン選択**リストに表示されないようにする場合に使用でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 このエントリは、ソース管理プラグインへの自動切り替えにも影響します。 このエントリの使用方法の1つとして、ソース管理プラグインを置き換えるソース管理パッケージを指定する場合がありますが、ソース管理プラグインを使用するからソース管理パッケージへの移行を簡単に行うことをお勧めします。 ソース管理パッケージがインストールされると、このレジストリエントリが設定され、プラグインが非表示になります。
 
-      **HideInVisualStudio**は DWORD 値で、プラグインを非表示にするには*1*に、プラグインを表示するには*0*に設定されています。 レジストリエントリが表示されない場合、既定の動作ではプラグインが表示されます。
+      **HideInVisualStudio** は DWORD 値で、プラグインを非表示にするには *1* に、プラグインを表示するには *0* に設定されています。 レジストリエントリが表示されない場合、既定の動作ではプラグインが表示されます。
 
-   - **Disablesccmanager**レジストリエントリを使用して、通常は [**ファイル**ソース管理] サブメニューに表示される [**起動 \<Source Control Server> ** ] メニューオプションを無効または非表示にすることができ  >  **Source Control**ます。 このメニューオプションを選択すると、 [SccRunScc](../../extensibility/sccrunscc-function.md)関数が呼び出されます。 ソース管理プラグインが外部プログラムをサポートしていない可能性があるため、[**起動**] メニューオプションを無効にしたり、非表示にしたりすることもできます。
+   - **Disablesccmanager**レジストリエントリを使用して、通常は [**ファイル**ソース管理] サブメニューに表示される [**起動 \<Source Control Server> ** ] メニューオプションを無効または非表示にすることができ  >  **Source Control**ます。 このメニューオプションを選択すると、 [SccRunScc](../../extensibility/sccrunscc-function.md) 関数が呼び出されます。 ソース管理プラグインが外部プログラムをサポートしていない可能性があるため、[ **起動** ] メニューオプションを無効にしたり、非表示にしたりすることもできます。
 
       **Disablesccmanager**は DWORD 値です。 *0*に設定すると、[**起動 \<Source Control Server> ** ] メニューオプションが有効になります。また、メニューオプションを無効にするには*1*に設定し、メニューオプションを非表示にするには [ *2* ] に設定します。 このレジストリエントリが表示されない場合、既定の動作ではメニューオプションが表示されます。
 
@@ -64,7 +64,7 @@ ms.locfileid: "85905368"
 
 3. **ソフトウェア**サブキーの**HKEY_LOCAL_MACHINE**キーの下に、サブキー **SourceCodeControlProvider**を追加します。
 
-    このサブキーの下で、レジストリエントリ**Providerregkey**は、手順 1. でレジストリに配置したサブキーを表す文字列に設定されます。 パターンは**HKEY_LOCAL_MACHINE**  =  *ソフトウェア \\<会社名 \> \\<製品名 \> *として指定されています。
+    このサブキーの下で、レジストリエントリ **Providerregkey** は、手順 1. でレジストリに配置したサブキーを表す文字列に設定されます。 パターンは**HKEY_LOCAL_MACHINE**  =  *ソフトウェア \\<会社名 \> \\<製品名 \> *として指定されています。
 
     このサブキーのサンプルコンテンツを次に示します。
 
@@ -100,9 +100,9 @@ ms.locfileid: "85905368"
 > [!NOTE]
 > IDE は、相対パス ( *.\NewProvider.DLL*など) から dll を読み込みません。 DLL への完全なパスを指定する必要があります (たとえば、 *c:\Providers\NewProvider.DLL*)。 これにより、未承認または偽装されたプラグイン Dll の読み込みを防ぐことができ、IDE のセキュリティが強化されます。
 
- 2番目の方法で DLL を検索するために、IDE では、すべてのエントリに対して**HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders**サブキーが検索されます。 各エントリには、名前と値があります。 IDE では、これらの名前の一覧がユーザーに表示されます。 ユーザーが名前を選択すると、選択した名前の値が IDE によって検索され、サブキーが参照されます。 IDE は、 **HKEY_LOCAL_MACHINE**の下で、そのサブキーに**Sccserverpath**という名前のエントリを検索します。 このエントリの値は、IDE で正しい DLL を指しています。
+ 2番目の方法で DLL を検索するために、IDE では、すべてのエントリに対して **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider\installedsccproviders** サブキーが検索されます。 各エントリには、名前と値があります。 IDE では、これらの名前の一覧がユーザーに表示されます。 ユーザーが名前を選択すると、選択した名前の値が IDE によって検索され、サブキーが参照されます。 IDE は、 **HKEY_LOCAL_MACHINE**の下で、そのサブキーに**Sccserverpath**という名前のエントリを検索します。 このエントリの値は、IDE で正しい DLL を指しています。
 
- ソース管理プラグインは、DLL を検索する両方の方法をサポートする必要があります。その結果、 **Providerregkey**が設定され、以前の設定が上書きされます。 さらに重要なこととして、ユーザーが使用するソース管理プラグインを選択できるように、それ自体をインストールされている**Sccproviders**の一覧に追加する必要があります。
+ ソース管理プラグインは、DLL を検索する両方の方法をサポートする必要があります。その結果、 **Providerregkey**が設定され、以前の設定が上書きされます。 さらに重要なこととして、ユーザーが使用するソース管理プラグインを選択できるように、それ自体をインストールされている **Sccproviders** の一覧に追加する必要があります。
 
 > [!NOTE]
 > **HKEY_LOCAL_MACHINE**キーが使用されるため、特定のコンピューターに既定のソース管理プラグインとして登録できるソース管理プラグインは1つだけです (ただし、ユーザーは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 特定のソリューションに対して実際に使用するソース管理プラグインを決定できます)。 インストールプロセス中に、ソース管理プラグインが既に設定されているかどうかを確認します。その場合は、インストールする新しいソース管理プラグインを既定として設定するかどうかをユーザーに確認してください。 アンインストール中に、 **HKEY_LOCAL_MACHINE \software\sourcecodecontrolprovider**; のすべてのソース管理プラグインに共通する他のレジストリサブキーを削除しないでください。特定の SCC サブキーのみを削除します。

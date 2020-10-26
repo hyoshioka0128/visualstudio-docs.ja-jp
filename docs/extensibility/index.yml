@@ -11,19 +11,19 @@ metadata:
   manager: jillfra
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: e37a713b133d76bbd3d0e3fa4363238d58407ce4
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: bbdd5a58411b6cee96eb8521e5339fcf7bdf24f8
+  ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "77910862"
+  ms.lasthandoff: 09/11/2020
+  ms.locfileid: "90011945"
 landingContent:
-- title: はじめに
+- title: 開始するには
   linkLists:
   - linkListType: get-started
     links:
     - text: Visual Studio SDK のインストール
-      url: /visualstudio/extensibility/installing-the-visual-studio-sdk/
+      url: ./installing-the-visual-studio-sdk.md
   - linkListType: overview
     links:
     - text: Visual Studio 拡張機能の作成
@@ -31,21 +31,21 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 初めての拡張機能の作成:Hello World
-      url: /visualstudio/extensibility/extensibility-hello-world
+      url: ./extensibility-hello-world.md
 - title: 拡張
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: メニューとコマンド
-      url: /visualstudio/extensibility/extending-menus-and-commands
+      url: ./extending-menus-and-commands.md
     - text: ツール ウィンドウ
-      url: /visualstudio/extensibility/extending-and-customizing-tool-windows
+      url: ./extending-and-customizing-tool-windows.md
     - text: エディターと言語
-      url: /visualstudio/extensibility/editor-and-language-service-extensions
+      url: ./editor-and-language-service-extensions.md
     - text: 言語サーバー プロトコル
-      url: /visualstudio/extensibility/language-server-protocol
+      url: ./language-server-protocol.md
     - text: 設定とオプション
-      url: /visualstudio/extensibility/extending-user-settings-and-options
+      url: ./extending-user-settings-and-options.md
 - title: リソース
   linkLists:
   - linkListType: sample
@@ -63,9 +63,9 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: 拡張機能を公開する
-      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension
+      url: ./walkthrough-publishing-a-visual-studio-extension.md
     - text: コマンド ラインによる公開
-      url: /visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension-via-command-line
+      url: ./walkthrough-publishing-a-visual-studio-extension-via-command-line.md
     - text: プライベート ギャラリー
       url: https://devblogs.microsoft.com/visualstudio/create-a-private-gallery-for-self-hosted-visual-studio-extensions
 - title: 新機能を見つける
@@ -73,6 +73,6 @@ landingContent:
   - linkListType: whats-new
     links:
     - text: Visual Studio 2019 SDK
-      url: /visualstudio/extensibility/whats-new-visual-studio-2019-sdk
+      url: ./whats-new-visual-studio-2019-sdk.md
     - text: Visual Studio 2017 SDK
-      url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk
+      url: ./what-s-new-in-the-visual-studio-2017-sdk.md

@@ -28,7 +28,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 > [!IMPORTANT]
 > エミュレーターのセットアップ プログラムでは、Visual Studio Emulator for Android を実行するための前提条件が確認されます。 前提条件が存在しない場合、警告が表示されますが、セットアップでは必要ありません。
 
-## <a name="Checklist"></a> クイック チェックリスト
+## <a name="quick-checklist"></a><a name="Checklist"></a> クイック チェックリスト
 
 Visual Studio Emulator for Android を実行するための要件を簡単に確認できるチェックリストです。 詳細については、このトピックの以下のセクションを参照してください。
 

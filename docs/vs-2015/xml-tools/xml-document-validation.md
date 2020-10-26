@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee5d3cff260346a5bcc1806b09b955642c608f14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669488"
 ---
 # <a name="xml-document-validation"></a>XML ドキュメントの検証
@@ -23,7 +23,7 @@ XML エディターは、ユーザーが入力するときに XML 1.0 の構文�
 
  検証で使用されるスキーマの検索は、コンパイル済みのスキーマの `targetNamespace` と、要素の xmlns 宣言とを照合して行われます。 コンパイル済みのスキーマが読み込まれる場所を、優先度の高い順に次に示します。
 
-- ドキュメントプロパティウィンドウの **[スキーマ]** フィールドで指定したファイル名から。
+- ドキュメントの [プロパティ] ウィンドウの **[スキーマ]** フィールドで名前が指定されているファイル。
 
 - インラインのスキーマまたは DTD。
 

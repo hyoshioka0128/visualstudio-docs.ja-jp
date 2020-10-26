@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917565"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce と Authenticode
@@ -36,7 +36,7 @@ Authenticode * は、業界標準の暗号化を使用して、アプリケー�
 ## <a name="authenticode-and-code-signing"></a>Authenticode とコード署名  
  *デジタル証明書* は、証明書の発行先であるアプリケーション発行者と証明書を発行した機関を示すメタデータと共に、暗号化公開キー/秘密キーのペアが格納されたファイルです。  
   
- Authenticode 証明書にはさまざまな種類があります。 それぞれの証明書は、異なる種類の署名用に構成されています。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの場合、コード署名で有効な Authenticode 証明書が必要です。 電子メールのデジタル証明書など、別の種類の証明書によって [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションへの署名を試みた場合、アプリケーションは動作しません。 詳細については、「 [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361.aspx)」 (コード署名の概要) を参照してください。  
+ Authenticode 証明書にはさまざまな種類があります。 それぞれの証明書は、異なる種類の署名用に構成されています。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの場合、コード署名で有効な Authenticode 証明書が必要です。 電子メールのデジタル証明書など、別の種類の証明書によって [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションへの署名を試みた場合、アプリケーションは動作しません。 詳しくは、「[コード署名の概要](https://msdn.microsoft.com/library/ms537361.aspx)」をご覧ください。  
   
  コード署名の証明書は、次の 3 つの方法のいずれかで取得することができます。  
   
@@ -47,11 +47,11 @@ Authenticode * は、業界標準の暗号化を使用して、アプリケー�
 - [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]に含まれている MakeCert.exe で独自の証明書を生成する。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>証明機関を使用してユーザーを支援する方法  
- MakeCert ユーティリティを使用して生成された証明書は、一般に*自己証明*書または*テスト証明*書と呼ばれます。この種の証明書は、.snk ファイルが .NET Framework で動作するのとほとんど同じ方法で動作します。 この証明書は、秘密/公開暗号化キーのペアのみで構成され、発行者に関する検証可能な情報を含んでいません。 自己証明書を使用すると、イントラネット上に信頼性の高い [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置できます。 ただし、これらのアプリケーションをクライアント コンピューターで実行した場合は、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] が、不明な発行元からのものとしてアプリケーションを識別します。 既定では、自己証明書によって署名され、インターネットを介して配置された [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、信頼されたアプリケーションの配置を利用できません。  
+ MakeCert.exe ユーティリティを使用して生成された証明書は、一般に *自己証明* 書または *テスト証明*書と呼ばれます。この種の証明書は、.snk ファイルが .NET Framework で動作するのとほとんど同じ方法で動作します。 この証明書は、秘密/公開暗号化キーのペアのみで構成され、発行者に関する検証可能な情報を含んでいません。 自己証明書を使用すると、イントラネット上に信頼性の高い [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションを配置できます。 ただし、これらのアプリケーションをクライアント コンピューターで実行した場合は、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] が、不明な発行元からのものとしてアプリケーションを識別します。 既定では、自己証明書によって署名され、インターネットを介して配置された [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、信頼されたアプリケーションの配置を利用できません。  
   
  これに対し、証明書販売元や企業内の部門などの CA から証明書を受け取る場合は、証明書によってユーザーのセキュリティが強化されます。 証明書によって、署名済みソフトウェアの発行者が識別されるだけでなく、署名を行った CA に問い合わせてその ID が検査されます。 CA がルート証明機関でない場合、Authenticode はルート証明機関まで "信頼チェーン" をたどって、その CA が証明書の発行を承認されているかどうかを検査します。 セキュリティを強化するために、可能であれば常に CA によって発行された証明書を使用することをお勧めします。  
   
- 自己証明書の生成の詳細については、「 [Makecert (証明書作成ツール)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)」を参照してください。  
+ 自己証明書の生成の詳細については、「 [Makecert.exe (証明書作成ツール)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)」を参照してください。  
   
 ### <a name="timestamps"></a>タイムスタンプ  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの署名に使用する証明書は、一定の期間 (通常は 12 か月) で期限切れになります。 新しい証明書を持つアプリケーションに再署名を繰り返さずに済むように、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ではタイムスタンプがサポートされています。 アプリケーションがタイムスタンプ付きで署名されると、タイムスタンプが有効な場合は、有効期限が過ぎていても、その証明書が受け付けられます。 これにより、期限切れの証明書と有効なタイムスタンプを持つ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションをダウンロードして実行できます。 また、期限切れの証明書を持つインストール済みのアプリケーションでは、引き続き、更新プログラムをダウンロードしてインストールできます。  
@@ -73,6 +73,6 @@ Authenticode * は、業界標準の暗号化を使用して、アプリケー�
   
 ## <a name="see-also"></a>参照  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
- [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
- [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
+ [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)   
+ [信頼されたアプリケーションの展開の概要](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

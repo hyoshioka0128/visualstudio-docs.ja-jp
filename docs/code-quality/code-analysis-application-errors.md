@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521317"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
@@ -47,7 +47,7 @@ ms.locfileid: "85521317"
 |[CA0066](ca0066.md)|**/Targetframeworkversion**に指定された値 '*VersionID*' は、認識されているバージョンではありません。|
 |[CA0067](ca0067.md)|ディレクトリが見つかりません。|
 |[CA0068](ca0068.md)|ターゲットアセンブリ *' AssemblyName '* のデバッグ情報が見つかりませんでした。|
-|[CA0069](ca0069.md)|代替プラットフォームを使用しています。 *FrameworkVersion1*が見つかりませんでした。 代わりに*FrameworkVersion2*を使用してください。 最適な分析結果を得るには、正しいバージョンの framework がインストールされていることを確認します。|
+|[CA0069](ca0069.md)|代替プラットフォームを使用しています。 *FrameworkVersion1* が見つかりませんでした。 代わりに *FrameworkVersion2* を使用してください。 最適な分析結果を得るには、正しいバージョンの framework がインストールされていることを確認します。|
 |[CA0070](ca0070.md)|セキュリティのアクセス許可により、アセンブリまたは型を読み込むことができません。|
 |[CA0501](ca0501.md)|出力レポートを読み取れません。|
 |[CA0502](ca0502.md)|サポートされていない言語です。|

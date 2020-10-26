@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195520"
 ---
 # <a name="performance-explorer-window"></a>[パフォーマンス エクスプローラー] ウィンドウ
@@ -28,7 +28,7 @@ ms.locfileid: "68195520"
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="performance-explorer-toolbar"></a>パフォーマンス エクスプローラーのツール バー  
  **パフォーマンス エクスプローラー**のツール バーでは以下のオプションを使用できます。  
@@ -54,7 +54,7 @@ ms.locfileid: "68195520"
   
 - **レポート** - セッションに対して生成されるプロファイラー データ ファイルの名前を表示します。 **[レポート]** を右クリックし、既存のレポートの追加、または 2 つのプロファイラー データ ファイルの比較を行います。 レポート名を右クリックし、プロファイラー データ ファイルを開くか、削除するか、エクスポートします。  
   
-## <a name="see-also"></a>関連項目  
- [概要](../profiling/overviews-performance-tools.md)   
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [データ コレクションの制御](../profiling/controlling-data-collection.md)
+## <a name="see-also"></a>参照  
+ [概念](../profiling/overviews-performance-tools.md)   
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
+ [データコレクションの制御](../profiling/controlling-data-collection.md)

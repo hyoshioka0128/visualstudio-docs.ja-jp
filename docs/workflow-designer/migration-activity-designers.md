@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189731"
 ---
 # <a name="migration-activity-designers"></a>移行アクティビティ デザイナー
@@ -21,7 +21,7 @@ ms.locfileid: "73189731"
 
 このセクションに含まれるトピックでは、ワークフローデザイナーアクティビティデザイナーの使用方法について説明します。
 
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション
 
 その他の種類のアクティビティデザイナーについては、次のトピックを参照してください。
 
@@ -31,11 +31,11 @@ ms.locfileid: "73189731"
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)
 
-- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
-- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+- [Runtime](../workflow-designer/runtime-activity-designers.md)
 
-- [Primitives](../workflow-designer/primitives-activity-designers.md)
+- [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 
 - [トランザクション](../workflow-designer/transaction-activity-designers.md)
 

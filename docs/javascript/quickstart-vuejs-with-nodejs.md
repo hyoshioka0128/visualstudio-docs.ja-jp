@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81744983"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート:Visual Studio を使用して初めての Vue.js アプリを作成する
@@ -116,7 +116,7 @@ ms.locfileid: "81744983"
 1. **[出力]** ウィンドウでビルド結果を確認し、 **[出力元]** の一覧から **[ビルド]** を選択します。
 ::: moniker-end
 
-JavaScript Vue.js プロジェクト テンプレート (および TypeScript テンプレートの旧バージョン) では、ビルド後イベントを構成して、`build` npm を使用します。 この設定を変更する場合、エクスプローラーからプロジェクト ファイル ( *\<プロジェクト名\>.njsproj*) を開き、次のコード行を検索します。
+JavaScript Vue.js プロジェクト テンプレート (および TypeScript テンプレートの旧バージョン) では、ビルド後イベントを構成して、`build` npm を使用します。 この設定を変更する場合、エクスプローラーからプロジェクト ファイル ( *\<projectname\>.njsproj*) を開き、次のコード行を検索します。
 
 ```xml
 <PostBuildEvent>npm run build</PostBuildEvent>

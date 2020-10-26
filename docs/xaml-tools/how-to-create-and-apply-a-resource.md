@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330109"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>リソースを作成して適用する方法
@@ -54,7 +54,7 @@ XAML デザイナーで、要素のスタイルとテンプレートは "リソ�
 
 2. 次のいずれかの操作を行います。
 
-   - リソースをプロパティに適用します。 [**プロパティ**] ウィンドウで、プロパティ値の横にあるプロパティマーカーを選択し、[**ローカルリソース**] または [**システムリソース**] を選択して、表示される一覧から使用可能なリソースを選択します。
+   - リソースをプロパティに適用します。 [ **プロパティ** ] ウィンドウで、プロパティ値の横にあるプロパティマーカーを選択し、[ **ローカルリソース** ] または [ **システムリソース**] を選択して、表示される一覧から使用可能なリソースを選択します。
 
       表示されるはずのリソースが表示されない場合は、リソースの種類がプロパティの種類と一致していない可能性があります。
 

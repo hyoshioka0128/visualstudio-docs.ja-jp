@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281865"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
@@ -68,7 +68,7 @@ ms.locfileid: "85281865"
 このページでは、型指定されたデータセットを使用する例を示します。 型指定されていないデータセット内のリレーションシップのナビゲートの詳細については、「 [datarelation のナビゲート](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations)
 
 > [!NOTE]
-> Windows フォームアプリケーションで作業していて、データバインディング機能を使用してデータを表示している場合は、デザイナーで生成されたフォームによってアプリケーションに十分な機能が提供されることがあります。 詳細については、「 [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 具体的には、「[データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
+> Windows フォームアプリケーションで作業していて、データバインディング機能を使用してデータを表示している場合は、デザイナーで生成されたフォームによってアプリケーションに十分な機能が提供されることがあります。 詳細については、「 [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 具体的には、「 [データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
 
 次のコード例は、型指定されたデータセット内の上下関係を移動する方法を示しています。 このコード例では、型 <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) および生成された FindBy*PrimaryKey* ( `FindByCustomerID` ) メソッドを使用して目的の行を検索し、関連レコードを返します。 これらの例は、次のものがある場合にのみ、正しくコンパイルされて実行されます。
 

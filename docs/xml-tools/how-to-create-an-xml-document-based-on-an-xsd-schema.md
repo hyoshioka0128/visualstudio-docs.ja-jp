@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 424b325b244499a18077cc1df0ff9164c41763d2
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 799d27716e7ab2dd621dce04375093f4aff375d7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815462"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88893360"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>方法: XSD スキーマに基づいて XML ドキュメントを作成する
 
@@ -43,7 +43,7 @@ ms.locfileid: "85815462"
 
 1. 「[方法:XSD スキーマ ファイルを作成して編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)」の手順に従います。
 
-2. [XML スキーマ エクスプローラー](../xml-tools/xml-schema-explorer.md)で、`PurchaseOrder` グローバル要素を右クリックします。 **[サンプル XML の生成]** をクリックします。
+2. [XML スキーマ エクスプローラー](../xml-tools/xml-schema-explorer.md)で `PurchaseOrder` グローバル要素を右クリックし、 **[サンプル XML の生成]** を選択します。
 
      このオプションを選択すると、次のサンプル XML コンテンツの PurchaseOrder.*xml* ファイルが生成され、XML エディターに表示されます。
 

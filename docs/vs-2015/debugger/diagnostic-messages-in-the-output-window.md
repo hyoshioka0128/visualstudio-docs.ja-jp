@@ -1,5 +1,5 @@
 ---
-title: 出力ウィンドウの診断メッセージ |Microsoft Docs
+title: 出力ウィンドウ | の診断メッセージMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60f8da2430e1c84af3c26be31c6de561291c8c6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695293"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>出力ウィンドウの診断メッセージ
@@ -46,11 +46,11 @@ ms.locfileid: "65695293"
   
 - 各種の `Write` メソッド。実行を中断せずに情報を出力します。 これらのメソッドは、Visual Basic の以前のバージョンで使用されていた `Debug.Print` メソッドに代わるものです。  
   
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> メソッドと <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> メソッド。指定された条件を満たさない場合は、実行を中断して情報を出力します。 既定では、`Assert` メソッドはダイアログ ボックスに情報を出力します。 詳細については、「[マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)」を参照してください。  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName><xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>メソッドとメソッド。指定された条件が失敗した場合に、実行を中断し、情報を出力します。 既定では、`Assert` メソッドはダイアログ ボックスに情報を出力します。 詳細については、「[マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)」を参照してください。  
   
 - <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> メソッドと <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> メソッド。常に実行を中断して情報を出力します。 既定では、`Fail` メソッドはダイアログ ボックスに情報を出力します。  
   
-  アプリケーションから、out プログラムだけでなく、**出力**ウィンドウに関する情報も表示できます。  
+  アプリケーションからのプログラムの作成に加えて、[ **出力** ] ウィンドウには次の情報が表示されます。  
   
 - デバッガーが読み込んだり、アンロードしたりしたモジュール  
   
@@ -60,10 +60,10 @@ ms.locfileid: "65695293"
   
 - 終了したスレッド  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
- [[出力] ウィンドウ](../ide/reference/output-window.md)   
+ [[出力ウィンドウ]](../ide/reference/output-window.md)   
  [アプリケーションのトレースとインストルメント](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [インストルメンテーションとトレースの概要](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
- [C#、F#、および Visual Basic のプロジェクトの種類](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#、F #、および Visual Basic プロジェクトの種類](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)

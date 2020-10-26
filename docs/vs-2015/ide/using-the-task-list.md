@@ -1,4 +1,4 @@
-﻿---
+---
 title: タスク一覧の使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7537c3007f54480874047f52f186996cf663508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656403"
 ---
 # <a name="using-the-task-list"></a>タスク一覧の使用
@@ -32,24 +32,24 @@ ms.locfileid: "72656403"
 
 - [[タスク一覧] ウィンドウ](../ide/using-the-task-list.md#taskListWindow)
 
-- [ユーザー タスク](../ide/using-the-task-list.md#userTasks)
+- [ユーザータスク](../ide/using-the-task-list.md#userTasks)
 
 - [トークンとコメント](../ide/using-the-task-list.md#tokensComments)
 
-- [カスタム トークン](../ide/using-the-task-list.md#customTokens)
+- [カスタムトークン](../ide/using-the-task-list.md#customTokens)
 
 - [C++ TODO コメント](../ide/using-the-task-list.md#cppComments)
 
-- [ショートカット](../ide/using-the-task-list.md#shortcuts)
+- [ショート](../ide/using-the-task-list.md#shortcuts)
 
-## <a name="taskListWindow"></a> [タスク一覧] ウィンドウ
+## <a name="the-task-list-window"></a><a name="taskListWindow"></a> タスク一覧ウィンドウ
  **[タスク一覧]** が開き、アプリケーション ウィンドウの下部に表示されます。
 
 #### <a name="to-open-the-task-list"></a>[タスク一覧] を開くには
 
 - **[表示]** メニューで、**[タスク一覧]** をクリックします (キーボード: Ctrl + \\、T)。
 
-     ![[タスク一覧] ウィンドウ](../ide/media/vs2015-task-list.png "|::ref1::|")
+     ![タスク一覧ウィンドウ](../ide/media/vs2015-task-list.png "vs2015_task_list")
 
 #### <a name="to-change-the-sort-order-of-the-list"></a>一覧の並べ替え順序を変更するには
 
@@ -65,12 +65,12 @@ ms.locfileid: "72656403"
 
 - 任意の列ヘッダーを目的の場所にドラッグします。
 
-## <a name="userTasks"></a> ユーザー タスク
+## <a name="user-tasks"></a><a name="userTasks"></a> ユーザータスク
  Visual Studio 2015 ではユーザー タスク機能が削除されました。 Visual Studio 2013 以前のバージョンからのユーザー タスク データを含むソリューションを Visual Studio 2015 で開くと、.suo ファイル内のユーザー タスク データは影響を受けませんが、ユーザー タスクはタスク一覧に表示されません。
 
  ユーザー タスク データに引き続きアクセスして更新する場合は、プロジェクトを Visual Studio 2013 で開き、好きなプロジェクト管理ツール (Team Foundation Server など) にユーザー タスクの内容をコピーする必要があります。
 
-## <a name="tokensComments"></a> トークンとコメント
+## <a name="tokens-and-comments"></a><a name="tokensComments"></a> トークンとコメント
  **[タスク一覧]** ウィンドウには、コメント マーカーが手前にあるコードのコメント、および定義済みのトークンも表示されます。 たとえば、次の C# コメントには 3 つの個別の部分があります。
 
 - コメント マーカー (`//`)
@@ -85,7 +85,7 @@ ms.locfileid: "72656403"
 
  `TODO` が事前に定義されたトークンであるため、このコメントは `TODO` タスクとして一覧に表示されます。
 
-### <a name="customTokens"></a> カスタム トークン
+### <a name="custom-tokens"></a><a name="customTokens"></a> カスタムトークン
  既定で、Visual Studio には、HACK、TODO、UNDONE、NOTE のトークンが含まれます。 大文字と小文字は区別されません。
 
  カスタム トークンを独自に作成することもできます。
@@ -98,14 +98,14 @@ ms.locfileid: "72656403"
 
      [Task List, Environment, Options Dialog Box](../ide/reference/task-list-environment-options-dialog-box.md) が表示されます。
 
-     ![Visual Studio タスク一覧](../ide/media/vs2015-task-list-options.png "|::ref2::|")
+     ![Visual Studio タスク一覧](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")
 
 3. **[トークン]** カテゴリの **[名前]** テキスト ボックスに、トークン名を入力します (例: バグ)。
 
-4. **[優先順位]** ドロップダウン リストで、新しいトークンの既定の優先順位を選択します。 **[追加]** ボタンをクリックします。
+4. **[優先順位]** ドロップダウン リストで、新しいトークンの既定の優先順位を選択します。 **[追加]** ボタンを選びます。
 
-### <a name="cppComments"></a> C++ TODO コメント
- 既定で、C++ TODO コメントは **[タスク一覧]** ウィンドウに表示されます。 この動作を変更できます。
+### <a name="c-todo-comments"></a><a name="cppComments"></a> C++ TODO コメント
+ 既定で、C++ TODO コメントは **[タスク一覧]** ウィンドウに表示されます。 この動作は変更できます。
 
 ##### <a name="to-turn-off-c-todo-comments"></a>C++ TODO コメントをオフにするには
 
@@ -115,10 +115,10 @@ ms.locfileid: "72656403"
 
 3. **[C/C++]** で **[表示]** を選択し、 **[コメント タスクの列挙]** を **[False]** に設定します。
 
-## <a name="shortcuts"></a> ショートカット
+## <a name="shortcuts"></a><a name="shortcuts"></a> ショート
  *ショートカット* は、 **[タスク一覧]** で追跡されるコード内のブックマークで、標準のブックマークとはアイコンが異なります。 コード内の対応する位置に移動するには、 **[タスク一覧]** にあるショートカットをダブルクリックします。
 
- ![Visual Studio タスク一覧へのショートカット アイコン](../ide/media/vs2015-task-list-bookmark.png "|::ref3::|")
+ ![Visual Studio タスク一覧へのショートカット アイコン](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")
 
 #### <a name="to-create-a-shortcut"></a>ショートカットを作成するには
 
@@ -126,5 +126,5 @@ ms.locfileid: "72656403"
 
      コード内のショートカットをナビゲートしていくには、一覧でショートカットを選択し、ショートカット メニューから **[次のタスク]** か **[前のタスク]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [[タスク一覧] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/task-list-environment-options-dialog-box.md)

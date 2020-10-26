@@ -12,35 +12,35 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422162"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件付き属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-条件付き属性は、すべてのリストとアイテムに適用可能性があります。 論理演算子およびシンボルの拡張の式は、true または false に評価されます。 True の場合、結果の出力で、関連付けられているリストまたは項目が含まれます。  
+条件付き属性は、すべてのリストおよび項目に適用できます。 論理演算子と記号の展開式は、true または false に評価されます。 True の場合、関連付けられているリストまたは項目が結果の出力に含まれます。  
   
- その他のトークンの拡張や定数に対してトークンの展開をテストできます。 知り関数は、値が存在しない場合でも、特定の名前が定義されているかどうかをテストに使用されます。  
+ トークンの展開は、他のトークンの展開または定数に対してテストできます。 関数 Defined () は、値がない場合でも、特定の名前が定義されているかどうかをテストするために使用されます。  
   
- Condition 属性がリストに適用されると、条件は、リスト内のすべての子要素に適用されます。 子要素自体に条件属性が含まれている場合、その条件が結合親式 AND 演算によって。  
+ 条件属性がリストに適用されると、条件はリスト内のすべての子要素に適用されます。 子要素自体に Condition 属性が含まれている場合、その条件は AND 演算によって親式と結合されます。  
   
- True の場合、値 1、'1' および 'true' に評価して 0、'0' および 'false' が false として評価されます。  
+ 値1、' 1 '、' true ' は true と評価され、0、' 0 '、および ' false ' が false と評価されます。  
   
 ## <a name="operators"></a>演算子  
- 次の演算子は、条件付きの式の評価に使用できます。  
+ 次の演算子は、条件式の評価に使用できます。  
   
 |演算子|定義|  
 |--------------|----------------|  
 |(,)|グループ化|  
 |!|論理 NOT|  
 |\<, >, \<=, >=, ==, !=|関係と比較|  
-|と、呼び出し|ブール型|  
-|または|ブール型|  
+|および|Boolean|  
+|または|Boolean|  
   
-## <a name="examples"></a>使用例  
+## <a name="examples"></a>例  
   
 ```  
 <Menu Condition="Defined(DEBUG)" …  
@@ -71,5 +71,5 @@ and !Defined(DEBUG)">
 </Menus>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e4ca52f631b3e2de9c01daab7e6268c42f20268
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145622"
 ---
 # <a name="targetclr"></a>TargetCLR
@@ -36,10 +36,10 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>必須オプション  
  **TargetCLR** オプションは、**Launch** オプションまたは **Attach** オプションと共に指定する場合にのみ使用できます。  
   
- **Launch:** `AppName`  
+ **起動:**`AppName`  
  指定したアプリケーションを起動し、プロファイリングを開始します。  
   
- **Attach:** `PID`  
+ **アタッチ:**`PID`  
  指定したプロセスのプロファイリングを開始します。  
   
 ## <a name="example"></a>例  

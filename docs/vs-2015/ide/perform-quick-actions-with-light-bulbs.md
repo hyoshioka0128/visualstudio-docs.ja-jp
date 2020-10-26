@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670347"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>電球を使ってクイック操作をする
@@ -31,14 +31,14 @@ ms.locfileid: "72670347"
 
 2. 行の任意の場所で **Ctrl キーを押しながら . キー**を押すと、 電球マークの表示を呼び出して修正候補のリストを直接表示できます。
 
-   ![電球とマウスカーソル](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+   ![電球でのマウス ホバー](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
 ## <a name="to-see-potential-fixes"></a>修正候補を表示するには
  下矢印をクリックするか、修正候補を表示するリンクをクリックすると、電球マークで実行可能なクイック操作のリストが表示されます。
 
- ![拡張された電球](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
+ ![拡大電球](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")
 
 ## <a name="to-do-a-refactoring"></a>リファクタリングを実行するには
  リファクタリングは、右クリックしてコンテキスト メニューを呼び出して実行することもできますが、Ctrl + . を押して リファクタリングのオプションを表示することもできます。 次の図では、 `Math.Abs` 呼び出しを含む行のどこかで Ctrl + . を押した後に、Extract Method のリファクタリングが表示されています。
 
- ![電球はリファクタリングオプションを示しています](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
+ ![電球でのリファクタリング オプションの表示](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetSize |Microsoft Docs
+title: 'IDebugProperty2:: GetSize |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e6c9118a9ce5a6dddb284d41b3c0b23ca8275f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193458"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-プロパティの値のバイト単位のサイズを取得します。  
+プロパティ値のサイズ (バイト単位) を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,10 +40,10 @@ int GetSize ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pdwSize`  
- [out]プロパティの値のバイト単位のサイズを返します。  
+ 入出力プロパティ値のサイズ (バイト単位) を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`; エラー コードを返します。 返します`S_GETSIZE_NO_SIZE`場合は、プロパティのサイズがあるありません。  
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 `S_GETSIZE_NO_SIZE`プロパティのサイズが指定されていない場合は、を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

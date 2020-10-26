@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594592"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Visual Studio 拡張機能でのテキスト変換の呼び出し
 
-メニュー コマンドや[ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)などの Visual Studio 拡張機能を記述しているならば、テキスト テンプレートを変換するテキスト テンプレート サービスを使用することができます。 [Stexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110))サービスを取得し、 [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))にキャストします。
+メニューコマンドや [ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)などの Visual Studio 拡張機能を作成する場合は、テキストテンプレートサービスを使用してテキストテンプレートを変換できます。 [Stexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110))サービスを取得し、 [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))にキャストします。
 
 ## <a name="get-the-text-templating-service"></a>テキストテンプレートサービスを取得する
 
@@ -38,7 +38,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 
  パラメーターをテンプレートに渡すことができます。 テンプレート内で、`<#@parameter#>` ディレクティブを使用してパラメーター値を取得できます。
 
- パラメーターの型については、シリアル化またはマーシャリング可能な型を使用する必要があります。 つまり、<xref:System.SerializableAttribute> を使用して型を宣言するか、<xref:System.MarshalByRefObject> から型を派生する必要があります。 この制限が必要なのは、テキスト テンプレートは別の AppDomain で実行されるためです。 **System.String**、**System.Int32** といったすべての組み込み型はシリアル化可能です。
+ パラメーターの型については、シリアル化またはマーシャリング可能な型を使用する必要があります。 つまり、<xref:System.SerializableAttribute> を使用して型を宣言するか、<xref:System.MarshalByRefObject> から型を派生する必要があります。 この制限が必要なのは、テキスト テンプレートは別の AppDomain で実行されるためです。 **System.string や system.string**など、**すべての組み込み**型がシリアル化可能です。
 
  パラメーター値を渡すために、呼び出し元のコードでは `Session` ディクショナリまたは <xref:System.Runtime.Remoting.Messaging.CallContext> に値を配置できます。
 
@@ -79,7 +79,7 @@ string result = t4.ProcessTemplate("",
 
 処理中に発生したエラーは、Visual Studio のエラーウィンドウに表示されます。 さらに、 [Itexttemplatingcallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))を実装するコールバックを指定することで、エラーを通知することができます。
 
-結果の文字列をファイルに書き込む場合は、テンプレートの `<#@output#>` ディレクティブで指定されているファイル拡張子とエンコードを確認できます。 この情報は、コールバックにも渡されます。 詳細については、「[T4 出力ディレクティブ](../modeling/t4-output-directive.md)」をご覧ください。
+結果の文字列をファイルに書き込む場合は、テンプレートの `<#@output#>` ディレクティブで指定されているファイル拡張子とエンコードを確認できます。 この情報は、コールバックにも渡されます。 詳細については、「 [T4 Output ディレクティブ](../modeling/t4-output-directive.md)」を参照してください。
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -130,16 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
-コンパイラの警告が Visual Studio のエラー ウィンドウに表示され、`ErrorCallback` への呼び出しも生成されます。
+コンパイラの警告が Visual Studio のエラーウィンドウに表示され、への呼び出しも生成され `ErrorCallback` ます。
 
 ## <a name="reference-parameters"></a>参照パラメーター
 
 <xref:System.MarshalByRefObject> から派生したパラメーター クラスを使用して、テキスト テンプレートの外部に値を渡すことができます。
 
-## <a name="related-articles"></a>関連トピック
+## <a name="related-articles"></a>関連記事
 
-前処理されたテキストテンプレートからテキストを生成するには、生成されたクラスの `TransformText()` メソッドを呼び出します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
+前処理されたテキストテンプレートからテキストを生成するには `TransformText()` 、生成されたクラスのメソッドを呼び出します。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
-Visual Studio 拡張機能の外部でテキストを生成するには: カスタムホストを定義します。 詳細については、「[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)」をご覧ください。
+Visual Studio 拡張機能の外部でテキストを生成するには: カスタムホストを定義します。 詳細については、「 [カスタムホストを使用したテキストテンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)」を参照してください。
 
 後でコンパイルして実行できるソースコードを生成するには、 [Itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))の[PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110))メソッドを呼び出します。

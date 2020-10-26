@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904064"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>複数インスタンスのツールウィンドウを作成する
@@ -25,10 +25,10 @@ ms.locfileid: "85904064"
 
 ## <a name="create-a-basic-single-instance-tool-window"></a>基本 (単一インスタンス) ツールウィンドウを作成する
 
-1. VSIX テンプレートを使用して**MultiInstanceToolWindow**という名前のプロジェクトを作成し、 **MIToolWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
+1. VSIX テンプレートを使用して **MultiInstanceToolWindow** という名前のプロジェクトを作成し、 **MIToolWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
 
     > [!NOTE]
-    > ツールウィンドウを使用した拡張機能の作成の詳細については、「[ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
+    > ツールウィンドウを使用した拡張機能の作成の詳細については、「 [ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
 ## <a name="make-a-tool-window-multi-instance"></a>ツールウィンドウを複数インスタンスにする
 

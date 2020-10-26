@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536020"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの配置
@@ -32,7 +32,7 @@ ms.locfileid: "85536020"
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX でのディレクティブ プロセッサの配置
 
-カスタムディレクティブプロセッサを[Visual Studio 拡張機能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md)に追加できます。
+カスタムディレクティブプロセッサを [Visual Studio 拡張機能 (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md)に追加できます。
 
  .vsix ファイルに次の 2 つのアイテムが格納されていることを確認する必要があります。
 
@@ -46,23 +46,23 @@ ms.locfileid: "85536020"
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>VSIX プロジェクトでカスタム ディレクティブ プロセッサを作成するには
 
-1. 新しい**VSIX プロジェクト**プロジェクトを作成します。
+1. 新しい **VSIX プロジェクト** プロジェクトを作成します。
 
 2. **Source.extension.vsixmanifest**で、コンテンツの種類とサポートされているエディションを設定します。
 
-    1. VSIX マニフェストエディターの [**アセット**] タブで、[**新規作成**] をクリックし、新しい項目のプロパティを設定します。
+    1. VSIX マニフェストエディターの [ **アセット** ] タブで、[ **新規作成** ] をクリックし、新しい項目のプロパティを設定します。
 
          **コンテンツの種類**  = **VSPackage**
 
          **ソースプロジェクト** = \<*the current project*>
 
-    2. [**選択されたエディション**] をクリックし、ディレクティブプロセッサを使用できるようにするインストールの種類を確認します。
+    2. [ **選択されたエディション** ] をクリックし、ディレクティブプロセッサを使用できるようにするインストールの種類を確認します。
 
 3. .pkgdef ファイルを追加し、そのプロパティが VSIX に含まれるように設定します。
 
     1. テキストファイルを作成し、「pkgdef」という名前を指定します。 \<*assemblyName*>
 
-         \<*assemblyName*>は、通常、プロジェクトの名前と同じです。
+         \<*assemblyName*> は、通常、プロジェクトの名前と同じです。
 
     2. ソリューション エクスプローラーでこのファイルを選択し、そのプロパティを次のように設定します。
 
@@ -113,9 +113,9 @@ ms.locfileid: "85536020"
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>カスタム ディレクティブ プロセッサをアンインストールするか、一時的に無効にするには
 
-1. Visual Studio の [**ツール**] メニューで、[**拡張機能マネージャー**] をクリックします。
+1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能マネージャー**] をクリックします。
 
-2. ディレクティブプロセッサが含まれている VSIX を選択し、[**アンインストール**] または [**無効**] をクリックします。
+2. ディレクティブプロセッサが含まれている VSIX を選択し、[ **アンインストール** ] または [ **無効**] をクリックします。
 
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>VSIX に含まれるディレクティブ プロセッサのトラブルシューティング
  ディレクティブ プロセッサが機能しない場合は、次のヒントを参考にしてください。
@@ -170,11 +170,11 @@ ms.locfileid: "85536020"
 
 3. ディレクティブ プロセッサ クラスと同じ名前のレジストリ キーを追加します。
 
-   - レジストリツリーで、[ **DirectiveProcessors** ] ノードを右クリックし、[**新規作成**] をポイントして、[**キー**] をクリックします。
+   - レジストリツリーで、[ **DirectiveProcessors** ] ノードを右クリックし、[ **新規作成**] をポイントして、[ **キー**] をクリックします。
 
 4. 新しいノードで、クラスとコードベース、またはクラスとアセンブリの文字列値を次の表に従って追加します。
 
-   1. 作成したノードを右クリックして [**新規**] をポイントし、[**文字列値**] をクリックします。
+   1. 作成したノードを右クリックして [ **新規**] をポイントし、[ **文字列値**] をクリックします。
 
    2. 値の名前を編集します。
 
@@ -186,7 +186,7 @@ ms.locfileid: "85536020"
 |-|-|-|
 |(既定)|REG_SZ|(値が設定されていません)|
 |クラス|REG_SZ|**\<Namespace Name>.\<Class Name>**|
-|CodeBase|REG_SZ|**\<Your Path>\\アセンブリ名の<\>**|
+|CodeBase|REG_SZ|**\<Your Path>\\ アセンブリ名の<\>**|
 
  アセンブリが GAC に含まれている場合は、レジストリ サブキーを次の表に従って設定します。
 

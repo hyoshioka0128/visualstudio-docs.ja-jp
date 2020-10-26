@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f23ca72f8251cca26e2b636978fdb25ab302962d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667938"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー)
@@ -27,7 +27,7 @@ ms.locfileid: "72667938"
 
 1. クラス ダイアグラム (.cd) ファイルを開きます。
 
-2. **[クラス ダイアグラム]** メニューまたはダイアグラム サーフェイスのショートカット メニューから、 **[イメージとしてダイアグラムをエクスポート]** を選択します。
+2. **[クラス ダイアグラム]** メニューまたはダイアグラム サーフェイスのショートカット メニューから、**[イメージとしてダイアグラムをエクスポート]** を選択します。
 
 3. ダイアグラムを選択します。
 

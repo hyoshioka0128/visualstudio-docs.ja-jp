@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82921095"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>XAML デザイナーで要素を操作する
@@ -107,8 +107,8 @@ XAML デザイナーの複数の要素をグループ化すると、新しいレ
 
 要素の特定のレイアウト プロパティを既定値に戻すには、レイアウトのリセットのコマンドを使用します。 このコマンドを使用すると、要素の余白、配置、幅、高さ、およびサイズを、個別に、またはまとめてリセットできます。
 
-要素のレイアウトをリセットするには、[ドキュメントアウトライン] ウィンドウまたはアートボードで要素を右クリックし、[**レイアウト** > **] reset** *PropertyName*を選択します。ここで、 *PropertyName*はリセットするプロパティです (または、[**レイアウト** > の**リセット**] を選択して要素のすべてのレイアウトプロパティをリセットします)。
+要素のレイアウトをリセットするには、[ドキュメントアウトライン] ウィンドウまたはアートボードで要素を右クリックし、[**レイアウト**]  >  **reset** *PropertyName*を選択します。ここで、 *PropertyName*はリセットするプロパティです (または、[**レイアウト**のリセット] を選択して  >  **Reset All**要素のすべてのレイアウトプロパティをリセットします)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [XAML デザイナーを使用して UI を作成する](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

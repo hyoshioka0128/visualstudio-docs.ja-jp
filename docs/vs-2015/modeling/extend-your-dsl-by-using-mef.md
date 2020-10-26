@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3257acde8d3c62aca64e3401ec18134601973e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669646"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
@@ -61,7 +61,7 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
 
     ファイル名: `ValidationExtensionRegistrar.tt`
 
-    このファイルを追加する場合は、DSL エクスプローラーで**Editorvalidation**のスイッチの少なくとも1つを使用して、dsl で検証を有効にする必要があります。
+    このファイルを追加する場合は、DSL エクスプローラーで **Editorvalidation** のスイッチの少なくとも1つを使用して、dsl で検証を有効にする必要があります。
 
    ```
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -98,86 +98,86 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
    <#@ include file="Dsl\GestureExtensionController.tt" #>
    ```
 
-3. 次の行を、 **Dslpackage\** ? という名前の既存のファイルに追加します。
+3. 次の行を、 **Dslpackage\**? という名前の既存のファイルに追加します。
 
    ```
    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
    ```
 
-    既存の `<Include>` ディレクティブの後に行を挿入します。
+    既存のディレクティブの後に行を挿入 `<Include>` します。
 
 4. `Open DslDefinition.dsl.`
 
-5. DSL エクスプローラーで、 **[Editor\ Validation]** を選択します。
+5. DSL エクスプローラーで、[ **Editor\ Validation**] を選択します。
 
-6. プロパティウィンドウで、[.. **.** ] という名前のプロパティの少なくとも1つが `true` であることを確認します。
+6. プロパティウィンドウで、という名前のプロパティの少なくとも1つを**使用**していることを確認します。 `true`
 
-7. ソリューションエクスプローラーツールバーで、 **[すべてのテンプレートの変換]** をクリックします。
+7. ソリューションエクスプローラーツールバーで、[ **すべてのテンプレートの変換**] をクリックします。
 
     追加した各ファイルの下に、関連ファイルが表示されます。
 
 8. ソリューションをビルドして実行し、まだ動作していることを確認します。
 
-   DSL が MEF 対応になりました。 メニューコマンド、ジェスチャハンドラー、および検証制約を MEF 拡張として記述できます。 これらの拡張機能は、他のカスタムコードと共に DSL ソリューションに書き込むことができます。 また、お客様や他の開発者は、DSL を拡張する個別の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能を作成できます。
+   DSL が MEF 対応になりました。 メニューコマンド、ジェスチャハンドラー、および検証制約を MEF 拡張として記述できます。 これらの拡張機能は、他のカスタムコードと共に DSL ソリューションに書き込むことができます。 また、お客様や他の開発者は、DSL を拡張する別の拡張機能を作成することもでき [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>MEF 対応 DSL 用の拡張機能の作成
- 自分または他のユーザーが作成した MEF 対応の DSL にアクセスできる場合は、そのための拡張機能を作成できます。 拡張機能を使用して、メニューコマンド、ジェスチャハンドラー、または検証制約を追加できます。 これらの拡張機能を作成するには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能 (VSIX) ソリューションを使用します。 このソリューションには、コードアセンブリをビルドするクラスライブラリプロジェクトと、アセンブリをパッケージ化する VSIX プロジェクトの2つの部分があります。
+ 自分または他のユーザーが作成した MEF 対応の DSL にアクセスできる場合は、そのための拡張機能を作成できます。 拡張機能を使用して、メニューコマンド、ジェスチャハンドラー、または検証制約を追加できます。 これらの拡張機能を作成するには、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能 (VSIX) ソリューションを使用します。 このソリューションには、コードアセンブリをビルドするクラスライブラリプロジェクトと、アセンブリをパッケージ化する VSIX プロジェクトの2つの部分があります。
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>DSL 拡張 VSIX を作成するには
 
-1. 新しいクラス ライブラリ プロジェクトを作成します。 これを行うには、 **[新しいプロジェクト]** ダイアログボックスで **[Visual Basic]** または **[ C#ビジュアル]** を選択し、 **[クラスライブラリ]** を選択します。
+1. 新しいクラス ライブラリ プロジェクトを作成します。 これを行うには、[ **新しいプロジェクト** ] ダイアログボックスで [ **Visual Basic** ] または [ **Visual C#** ] を選択し、[ **クラスライブラリ**] を選択します。
 
 2. 新しいクラスライブラリプロジェクトで、DSL のアセンブリへの参照を追加します。
 
-   - このアセンブリには、通常、"で終わる名前が付いています。Dsl .dll "。
+   - このアセンブリには、通常、".Dsl.dll" で終わる名前が付いています。
 
-   - DSL プロジェクトにアクセスできる場合は、ディレクトリ**dsl \\bin \\** の下にアセンブリファイルがあり \*
+   - DSL プロジェクトにアクセスできる場合は、ディレクトリ**dsl \\ ビン \\ \* **にあるアセンブリファイルを見つけることができます。
 
    - DSL VSIX ファイルにアクセスできる場合は、VSIX ファイルのファイル名拡張子を ".zip" に変更することで、アセンブリを見つけることができます。 .Zip ファイルを圧縮解除します。
 
 3. 次の .NET アセンブリへの参照を追加します。
 
-   - VisualStudio のようになります。
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - VisualStudio.........................
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - VisualStudio...........................
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
    - System.Windows.Forms.dll
 
-4. 同じソリューションで VSIX プロジェクトを作成します。 これを行うには、 **[新しいプロジェクト]** ダイアログボックスで、 **[Visual Basic]** または **[ビジュアルC# ]** を展開し、 **[機能拡張]** 、 **[VSIX プロジェクト]** の順にクリックします。
+4. 同じソリューションで VSIX プロジェクトを作成します。 これを行うには、[ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual Basic** ] または [ **Visual C#**] を展開し、[ **機能拡張**]、[ **VSIX プロジェクト**] の順にクリックします。
 
-5. ソリューションエクスプローラーで、VSIX プロジェクトを右クリックし、 **[スタートアッププロジェクトに設定]** をクリックします。
+5. ソリューションエクスプローラーで、VSIX プロジェクトを右クリックし、[ **スタートアッププロジェクトに設定**] をクリックします。
 
 6. 新しいプロジェクトで、 **source.extension.vsixmanifest**を開きます。
 
-7. **[コンテンツの追加]** をクリックします。 ダイアログボックスで、 **[コンテンツの種類]** を **[MEF コンポーネント]** に、 **[ソースプロジェクト]** をクラスライブラリプロジェクトに設定します。
+7. [ **コンテンツの追加**] をクリックします。 ダイアログボックスで、[ **コンテンツの種類** ] を [ **MEF コンポーネント**] に、[ **ソースプロジェクト** ] をクラスライブラリプロジェクトに設定します。
 
 8. DSL に VSIX 参照を追加します。
 
-   1. Source.extension.vsixmanifest で、 **[参照の追加]** をクリックし**ます**。
+   1. Source.extension.vsixmanifest で、[**参照の追加**] をクリックし**ます**。
 
-   2. ダイアログボックスで、 **[ペイロードの追加]** をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **\\bin \\ \* の Dslpackage**で DSL ソリューションに組み込まれています。
+   2. ダイアログボックスで、[ **ペイロードの追加** ] をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **Dslpackage \\ BIN \\ \* **の DSL ソリューションに組み込まれています。
 
        これにより、ユーザーは DSL と拡張機能を同時にインストールできるようになります。 ユーザーが既に DSL をインストールしている場合は、拡張機能のみがインストールされます。
 
-9. **Source.extension.vsixmanifest**の他のフィールドを確認し、更新します。 **[エディションの選択]** をクリックし、正しい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] エディションが設定されていることを確認します。
+9. **Source.extension.vsixmanifest**の他のフィールドを確認し、更新します。 [ **エディションの選択** ] をクリックし、正しいエディションが設定されていることを確認し [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
 10. クラスライブラリプロジェクトにコードを追加します。 次のセクションの例をガイドとして使用します。
 
      任意の数のコマンド、ジェスチャ、および検証クラスを追加できます。
 
-11. 拡張機能をテストするには、 **F5**キーを押します。 @No__t_0 の実験用インスタンスで、DSL のサンプルファイルを作成するか開きます。
+11. 拡張機能をテストするには、 **F5**キーを押します。 の実験用インスタンスで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、DSL のサンプルファイルを作成するか開きます。
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Dsl 用の MEF 拡張機能の作成
  拡張機能は、別の DSL 拡張ソリューションのアセンブリコードプロジェクトに記述できます。 また、コマンド、ジェスチャ、および検証コードを DSL の一部として記述する便利な方法として、DslPackage プロジェクトで MEF を使用することもできます。
 
 ### <a name="menu-commands"></a>メニュー コマンド
- メニューコマンドを記述するには、<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> を実装するクラスを定義し、dsl `CommandExtension` という名前の、DSL で定義されている属性を使用してクラスにプレフィックス*を付けます*。 複数のメニューコマンドクラスを記述することができます。
+ メニューコマンドを作成するには、を実装するクラスを定義し、dsl <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> で定義されている属性を使用して、クラスの前にという名前*を付け* `CommandExtension` ます。 複数のメニューコマンドクラスを記述することができます。
 
- `QueryStatus()` は、ユーザーが図を右クリックするたびに呼び出されます。 現在の選択範囲を検査し、コマンドが適用可能かどうかを示す `command.Enabled` を設定する必要があります。
+ `QueryStatus()` は、ユーザーが図を右クリックするたびに呼び出されます。 現在の選択範囲を検査し、 `command.Enabled` コマンドが適用可能かどうかを示すように設定する必要があります。
 
 ```
 using System.ComponentModel.Composition;
@@ -245,9 +245,9 @@ namespace MyMefExtension
 ```
 
 ### <a name="gesture-handlers"></a>ジェスチャハンドラー
- ジェスチャハンドラーは、任意の場所、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の内部または外部から図にドラッグしたオブジェクトを処理できます。 次の例では、ユーザーがエクスプローラーから図にファイルをドラッグできるようにします。 ファイル名を含む要素が作成されます。
+ ジェスチャハンドラーは、図にドラッグしたオブジェクトを、内部または外部のどこからでも処理でき [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。 次の例では、ユーザーがエクスプローラーから図にファイルをドラッグできるようにします。 ファイル名を含む要素が作成されます。
 
- 他の DSL モデルと UML モデルからのドラッグを処理するハンドラーを作成できます。 詳細については、「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
+ 他の DSL モデルと UML モデルからのドラッグを処理するハンドラーを作成できます。 詳細については、「 [方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」を参照してください。
 
 ```
 
@@ -322,9 +322,9 @@ namespace MefExtension
 ```
 
 ### <a name="validation-constraints"></a>検証制約
- 検証メソッドは、DSL によって生成される `ValidationExtension` の属性と、<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> によってマークされます。 メソッドは、属性でマークされていないクラスで使用できます。
+ 検証メソッドは、DSL によって `ValidationExtension` 生成される属性とによってマークされ <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> ます。 メソッドは、属性でマークされていないクラスで使用できます。
 
- 詳細については、「[ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
+ 詳細については、「 [ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 
 ```
 using Company.MyDsl;

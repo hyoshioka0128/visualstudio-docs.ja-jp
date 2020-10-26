@@ -1,5 +1,5 @@
 ---
-title: イベントの送信 |マイクロソフトドキュメント
+title: イベントの送信 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ec0d3aa29da562147b71b8efde49baf07d8ae0b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713039"
 ---
 # <a name="send-events"></a>送信イベント
-デバッガーとデバッグ エンジン (DE) の間の通信のメカニズムは、DCOM に基づくイベント モデルです。 イベントは COM オブジェクトとして送信され、各イベントには次のパラメータを指定します。
+デバッガーとデバッグエンジン (DE) 間の通信機構は、DCOM に基づくイベントモデルです。 イベントは COM オブジェクトとして送信され、各イベントには次のものを指定するパラメーターがあります。
 
 - イベントを呼び出した DE。
 
-- 何が起こったかの説明。
+- 何が起こったかについての説明。
 
-- イベントが発生した場所のコンテキストを識別するプロセス、プログラム、およびスレッド情報。 プロセスは DE から送信されるイベントに送信されません。
+- イベントが発生したコンテキストを識別するプロセス、プログラム、スレッド情報。 このプロセスは、DE から送信されたイベントに対しては送信されません。
 
-- イベントが同期か非同期かを示すイベントの種類。
+- イベントが同期または非同期のどちらであるかを示すイベントの種類。
 
-  すべてのデバッグ イベントは、メソッド[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)を使用して送信されます。
+  すべてのデバッグイベントは、メソッド [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)を使用して送信されます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [イベントソース](../../extensibility/debugger/event-sources-visual-studio-sdk.md)イベントの 2 つのソースについて説明します: デバッグ エンジン (DE) とセッション デバッグ マネージャー (SDM)。
+ [イベントソース](../../extensibility/debugger/event-sources-visual-studio-sdk.md) デバッグエンジン (DE) とセッションデバッグマネージャー (SDM) の2つのイベントソースについて説明します。
 
- [サポートされているイベントの種類](../../extensibility/debugger/supported-event-types.md)現在サポートされているイベントの種類 (非同期および同期) について説明します。
+ [サポートされるイベントの種類](../../extensibility/debugger/supported-event-types.md) 現在サポートされているイベントの種類 (非同期および同期) について説明します。
 
- [イベントの説明](../../extensibility/debugger/event-descriptions.md)イベントとその使用理由を定義します。
+ [イベントの説明](../../extensibility/debugger/event-descriptions.md) イベントとその用途の理由を定義します。
 
 ## <a name="related-sections"></a>関連項目
- [カスタム デバッグ エンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)デがインタプリタまたはオペレーティング システムと連携してデバッグ サービスを提供するしくみについて説明します。
+ [カスタムデバッグエンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md) インタープリターやオペレーティングシステムを使用してデバッグサービスを提供する方法について説明します。

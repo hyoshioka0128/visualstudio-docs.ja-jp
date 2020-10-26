@@ -1,4 +1,4 @@
-﻿---
+---
 title: '&lt;loc &gt; (JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf6016b2c12fd5ebe7cfb76c14c776508d99d2db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651478"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc &gt; (JavaScript)
@@ -34,7 +34,7 @@ ms.locfileid: "72651478"
 #### <a name="parameters"></a>パラメーター
  `filename` 省略可能。 ニュートラル カルチャのローカリゼーション情報を含むサイドカー ファイルのルート名。 Visual Studio は、ローカリゼーション情報を検索するとき、このファイルのカルチャ固有のバージョンを確認しようとします。 たとえば、`filename` が jquery.xml の場合、Visual Studio は `<loc>` 要素を格納する .js ファイルと同じ場所で正しいカルチャ固有のフォルダー (JA など) を検索します。 カルチャ固有のフォルダーが見つかった場合は、その中に jquery.xml ファイルがあるかどうかをチェックします。 正しいファイルを見つけることができない場合は、代わりにマネージド リソースの場所の規則を使用します。 `filename` の既定値は現在のファイルの名前ですが、拡張子は .js ではなく .xml です。
 
- `format` 省略可能。 ローカリゼーションに使用するサイドカー ファイルの種類。 `messagebundle` を使用して、Open Ajax メタデータによって定義されるメッセージ バンドルの使用を指定します。 `messagebundle` は推奨される形式です。 ただし、この形式は Microsoft Ajax または .winmd ファイルではサポートされません。 `vsdoc` を使用して、Microsoft Ajax および Windows ランタイムで使用される標準の .NET Framework のローカリゼーション形式を指定します。 この属性は省略できます。 `vsdoc` は既定の形式です。
+ `format` 省略可能。 ローカリゼーションに使用するサイドカー ファイルの種類。 `messagebundle` を使用して、Open Ajax メタデータによって定義されるメッセージ バンドルの使用を指定します。 `messagebundle` は推奨される形式です。 ただし、この形式は Microsoft Ajax または .winmd ファイルではサポートされません。 `vsdoc` を使用して、Microsoft Ajax および Windows ランタイムで使用される標準の .NET Framework のローカリゼーション形式を指定します。 この属性は省略可能です。 `vsdoc` は既定の形式です。
 
 ## <a name="remarks"></a>解説
  `<loc>` 要素は、`<reference>` 要素と同じセクションのファイルの先頭に記述する必要があります。 `<loc>` 要素の使い方の規則は `<reference>` 要素と同じです。 詳細については、「 [JavaScript IntelliSense](../ide/javascript-intellisense.md)」の「参照ディレクティブ」セクションを参照してください。
@@ -101,5 +101,5 @@ function illuminate(a)
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

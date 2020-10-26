@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: Null 許容型を作成する (クラス デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668159"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>方法: Null 許容型を作成する (クラス デザイナー)
@@ -44,11 +44,11 @@ ms.locfileid: "72668159"
 
 1. クラス ダイアグラムで、既存のクラスを展開するか、新しいクラスを作成します。
 
-2. プロジェクトにクラスを追加するには、 **[クラス ダイアグラム]** メニューの **[追加]** をクリックし、 **[クラスの追加]** をクリックします。
+2. プロジェクトにクラスを追加するには、**[クラス ダイアグラム]** メニューの **[追加]** をクリックし、**[クラスの追加]** をクリックします。
 
 3. クラスの図形を展開するには、 **[クラス ダイアグラム]** メニューの **[展開]** をクリックします。
 
-4. クラスの図形を選びます。 **[クラス ダイアグラム]** メニューの **[追加]** をクリックし、 **[フィールド]** をクリックします。 既定の "**フィールド**" という名前の新しいフィールドが、クラスの図形と **[クラスの詳細]** ウィンドウに表示されます。
+4. クラスの図形を選びます。 **[クラス ダイアグラム]** メニューの **[追加]** をクリックし、**[フィールド]** をクリックします。 既定の "**フィールド**" という名前の新しいフィールドが、クラスの図形と **[クラスの詳細]** ウィンドウに表示されます。
 
 5. **[クラスの詳細]** ウィンドウの **[名前]** 列 (または、クラスの図形自体) で、新しいフィールドの名前を有効でわかりやすい名前に変更します。
 
@@ -82,4 +82,4 @@ ms.locfileid: "72668159"
 5. クラスの図形を右クリックし、 **[クラスの詳細]** をクリックします。 **[クラスの詳細]** ウィンドウで、新しい型のプロパティを表示または変更できます。
 
 ## <a name="see-also"></a>参照
- null 許容型[を使用し](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)た[null](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)許容型の <xref:System.Nullable%601> 方法: null 許容型の[Null 許容値型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)[を識別する](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)
+ <xref:System.Nullable%601>Null 許容型[を使用し](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)た[null](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)許容型[の使用方法: null 許容型の](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [null 許容値型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)を識別する

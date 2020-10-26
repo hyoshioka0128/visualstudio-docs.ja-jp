@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetEnclosingClass |Microsoft Docs
+title: 'IDebugClassField:: GetEnclosingClass |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 896d3ecd5202bf85e6b9e86af31796c662a6eef1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191000"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このクラスの外側のクラスを取得します。  
+このクラスを囲むクラスを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,13 +40,13 @@ int GetEnclosingClass(
   
 #### <a name="parameters"></a>パラメーター  
  `ppClassField`  
- [out]返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)オブジェクト、それを囲むを表すクラスします。 外側のクラスが存在しない場合は、null 値を返します。  
+ 入出力外側のクラスを表す [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) オブジェクトを返します。 外側のクラスがない場合は、null 値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このクラスが表されている場合[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)オブジェクトが入れ子になったクラス、`ppClassField`パラメーターを返します、`IDebugClassField`オブジェクト、それを囲むを表すクラスします。 たとえば、このクラスの定義を考えてみます。  
+## <a name="remarks"></a>注釈  
+ この [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) オブジェクトによって表されるクラスが入れ子になったクラスである場合、パラメーターは、 `ppClassField` `IDebugClassField` 外側のクラスを表すオブジェクトを返します。 たとえば、次のクラス定義があるとします。  
   
 ```  
 class RootClass {  
@@ -54,7 +54,7 @@ class RootClass {
 };  
 ```  
   
- 呼び出す、`GetEnclosingClass`メソッドを`IDebugClassField`オブジェクトを表す、`NestedClass`クラスを返します、`IDebugClassField`クラスを表すオブジェクト`RootClass`します。  
+ クラスを表すオブジェクトのメソッドを呼び出すと `GetEnclosingClass` `IDebugClassField` `NestedClass` `IDebugClassField` 、クラスを表すオブジェクトが返さ `RootClass` れます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

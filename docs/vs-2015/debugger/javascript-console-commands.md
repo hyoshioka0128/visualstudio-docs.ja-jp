@@ -1,5 +1,5 @@
 ---
-title: JavaScript コンソール コマンド |Microsoft Docs
+title: JavaScript コンソール コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,20 +19,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690594"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 そのウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)します。 このトピックの情報は、Windows ストア アプリ、Windows Phone ストア アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)」を参照してください。 Internet Explorer F12 ツールのコンソールの使用については、 [このトピック](https://msdn.microsoft.com/library/ie/dn255006.aspx)を参照してください。  
+ Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウの使用方法を示す例については、「 [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)」を参照してください。 このトピックの情報は、Windows ストア アプリ、Windows Phone ストア アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)」を参照してください。 Internet Explorer F12 ツールのコンソールの使用については、 [このトピック](https://msdn.microsoft.com/library/ie/dn255006.aspx)を参照してください。  
   
- JavaScript コンソール ウィンドウが閉じられた場合開けることを選択して、Visual Studio でデバッグ中**デバッグ** > **Windows** > **JavaScriptコンソール**します。  
+ JavaScript コンソール ウィンドウが閉じている場合は、Visual Studio でのデバッグ中に **[デバッグ]**  >  **[ウィンドウ]**  >  **[JavaScript コンソール]** を選択することで、それを開くことができます。  
   
 > [!NOTE]
 > デバッグ セッション中にウィンドウが使用できない場合、プロジェクトのデバッグのプロパティで、デバッガーの種類が **Script** であることを確認してください。  
@@ -73,7 +73,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 |コマンド|説明|例|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|指定された要素をコンソール ウィンドウに返します。 `$0` は DOM Explorer で現在選択されている要素を返し、`$1` は DOM Explorer で直前に選択されていた要素を返します。同様に、最大で 4 つ前に選択されていた要素を返します。|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|指定された要素をコンソール ウィンドウに返します。 `$0` は DOM Explorer で現在選択されている要素を返し、`$1` は DOM Explorer で直前に選択されていた要素を返します。 同様に、最大で 4 つ前に選択されていた要素を返します。|$3|  
 |`$(id)`|要素を ID で返します。 これは `document.getElementById(id)`のショートカット コマンドであり、 `id` は要素の ID を表す文字列です。|`$("contenthost")`|  
 |`$$(selector)`|CSS セレクター構文を使用して、指定されたセレクターと一致する要素の配列を返します。 これは `document.querySelectorAll()`のショートカット コマンドです。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|式の評価のコンテキストを、既定であるページのトップレベル ウィンドウから指定したフレームのウィンドウに変更できます。 `cd()` をパラメーターの指定なしで呼び出すと、コンテキストがトップレベル ウィンドウに戻ります。|`cd();`<br /><br /> `cd(myframe);`|  
@@ -91,9 +91,9 @@ if (console && console.log) {
 ```  
   
 ## <a name="examining-objects-in-the-javascript-console-window"></a>JavaScript コンソール ウィンドウを使ったオブジェクトの検査  
- JavaScript コンソール ウィンドウを使用すると、スコープ内のオブジェクトと対話できます。 コンソール ウィンドウでスコープ外のオブジェクトを検査するには、コードから `console.log` 、 `console.dir`、または他のコマンドを使用します。 または、コードでブレークポイントを設定 (**[ブレークポイント]** > **Insert [ブレークポイント]** の順にクリック) すると、コンソール ウィンドウからスコープ内のオブジェクトと対話できます。  
+ JavaScript コンソール ウィンドウを使用すると、スコープ内のオブジェクトと対話できます。 コンソール ウィンドウでスコープ外のオブジェクトを検査するには、コードから `console.log` 、 `console.dir`、または他のコマンドを使用します。 または、コードでブレークポイントを設定 ( **[ブレークポイント]**  > **Insert [ブレークポイント]** の順にクリック) すると、コンソール ウィンドウからスコープ内のオブジェクトと対話できます。  
   
-## <a name="ConsoleLog"></a> console.log 出力のフォーマット  
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> console.log 出力のフォーマット  
  複数の引数を `console.log`に渡すと、コンソールはその引数を配列として処理し、出力を連結します。  
   
 ```javascript  
@@ -137,6 +137,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md)   
+## <a name="see-also"></a>参照  
+ [クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

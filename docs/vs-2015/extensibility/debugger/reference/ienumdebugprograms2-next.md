@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::Next |Microsoft Docs
+title: 'IEnumDebugPrograms2:: Next |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 356f1086c4490c45672c5f71e761bdfc6cbe762d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199594"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
@@ -44,17 +44,17 @@ int Next(
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。  
+ から取得する要素の数。 配列の最大サイズも指定し `rgelt` ます。  
   
  `rgelt`  
- [入力、出力]配列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)情報を格納する要素。  
+ [入力、出力]入力する [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 要素の配列。  
   
  `pceltFetched`  
- [out]実際に返される要素の数を返します`rgelt`します。  
+ 入出力で実際に返された要素の数を返し `rgelt` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`返される可能性があります、要求された要素数よりも少ない場合、それ以外の場合、エラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 要求された `S_FALSE` 数の要素を返すことができなかった場合は、を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -25,10 +25,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271574"
 ---
 # <a name="annotating-structs-and-classes"></a>構造体とクラスに注釈を付ける
@@ -40,25 +40,25 @@ ms.locfileid: "77271574"
   
 - `_Field_range_(low, high)`  
   
-     フィールドは、`low` から `high`までの範囲内にあります。  適切な事前条件または事後条件を使用して、注釈付きオブジェクトに適用される `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` と同じです。  
+     フィールドはからまでの範囲に `low` あります (を含む) `high` 。  `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`適切な事前条件または事後条件を使用して、注釈付きオブジェクトに適用されると同じです。  
   
-- `_Field_size_(size)`、`_Field_size_opt_(size)`、`_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
+- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     `size`によって指定された、要素 (またはバイト) に書き込み可能サイズを持つフィールド。  
+     で指定されたように、要素 (またはバイト) 内の書き込み可能サイズを持つフィールド `size` 。  
   
-- `_Field_size_part_(size, count)`、`_Field_size_part_opt_(size, count)`、`_Field_size_bytes_part_(size, count)`、`_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
-     `size`によって指定された要素 (またはバイト) 内の書き込み可能サイズを持つフィールド、および読み取り可能な要素の `count` (バイト)。  
+     によって指定された要素 (またはバイト) 内の書き込み可能サイズを持つフィールド、 `size` および `count` 読み取り可能な要素 (バイト) の。  
   
-- `_Field_size_full_(size)`、`_Field_size_full_opt_(size)`、`_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
+- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     `size`によって指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド。  
+     で指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド `size` 。  
   
 - `_Struct_size_bytes_(size)`  
   
-     `size`によって指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド。  
+     で指定された要素 (またはバイト) 内の読み取り可能なサイズと書き込み可能なサイズの両方を持つフィールド `size` 。  
   
-     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、`size`によって指定されたバイト数を持つ、宣言された型よりも大きい可能性があることを示します。  例 :  
+     構造体またはクラスの宣言に適用されます。  この型の有効なオブジェクトが、で指定されているバイト数を使用して、宣言された型よりも大きくなる可能性があることを示し `size` ます。  次に例を示します。  
   
     ```cpp  
   
@@ -70,18 +70,18 @@ ms.locfileid: "77271574"
   
     ```  
   
-     `MyStruct *` 型のパラメーター `pM` のバイト単位のバッファーサイズは次のようになります。  
+     次に、型のパラメーターのバッファーサイズ (バイト単位) を `pM` `MyStruct *` 次のように取得します。  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
 ## <a name="see-also"></a>参照  
- [SAL 注釈を使用して CC++ /コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL](../code-quality/understanding-sal.md)  について  
+ [SAL 注釈を使用して C/c + + コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL について](../code-quality/understanding-sal.md)   
  [関数のパラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)   
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   
  [ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)   
- [注釈を適用するタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する   
+ [注釈を適用するタイミングと場所の指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)

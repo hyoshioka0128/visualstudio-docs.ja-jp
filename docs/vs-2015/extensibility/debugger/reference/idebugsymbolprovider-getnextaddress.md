@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress |Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNextAddress |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421451"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-メソッドで指定されたデバッグ アドレスに続くデバッグ アドレスを取得します。  
+メソッド内の指定されたデバッグアドレスの後に続くデバッグアドレスを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,16 +44,16 @@ int GetNextAddress( 
   
 #### <a name="parameters"></a>パラメーター  
  `pAddress`  
- [in]デバッグ アドレスが指定されています。  
+ から指定されたデバッグアドレス。  
   
  `fStatementOnly`  
- [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。  
+ からTRUE の場合、デバッグアドレスを1つのステートメントに限定します。  
   
  `ppAddress`  
- [out][次へ] のデバッグ アドレスを返します。  
+ 入出力次のデバッグアドレスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 有効な返します`HRESULT`通常は、s_ok を返します。  
+ は、有効な (通常は S_OK) を返し `HRESULT` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

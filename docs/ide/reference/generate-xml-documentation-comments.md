@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77706396"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>方法: ドキュメント生成のための XML コメントを挿入する
@@ -38,7 +38,7 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 
    - コード要素の前面またはすぐ上に表示される右クリック メニューまたはコンテキスト メニューから、 **[スニペット]**  >  **[コメントの挿入]** の順に選択します
 
-   すぐに、XML テンプレートがコード要素の上に生成されます。 たとえば、メソッドのコメントを生成すると、 **\<summary\>** 要素、各パラメーターの **\<param\>** 要素、および戻り値を文書化するための **\<returns\>** 要素が生成されます。
+   すぐに、XML テンプレートがコード要素の上に生成されます。 たとえば、メソッドのコメントを生成すると、 **\<summary\>** 要素、各パラメーターの **\<param\>** 要素、戻り値を文書化するための **\<returns\>** 要素が生成されます。
 
    ![XML コメント テンプレート - C#](media/doc-preview-cs.png)
 

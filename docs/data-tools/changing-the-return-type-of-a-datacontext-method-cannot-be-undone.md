@@ -1,5 +1,7 @@
 ---
-title: DataContext メソッドの戻り値の型を変更すると、元に戻せなくなります
+title: 戻り値の型の変更を元に戻すことはできません
+description: DataContext メソッドの戻り値の型を変更すると、元に戻せなくなります
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80e7407472188ef25d6fd5127179c7ddbce54318
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: fc0c3d6c1ddeab3ee92414e1264912f8b9d24b22
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536709"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036471"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>DataContext メソッドの戻り値の型を変更すると、元に戻せなくなります
 
@@ -37,6 +39,6 @@ DataContext メソッドの戻り値の型を変更すると、元に戻せな�
 
     元の既定の戻り値の型で <xref:System.Data.Linq.DataContext> メソッドが作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,5 @@
 ---
-title: を参照します。マイクロソフトドキュメント
+title: 'IDebugReference2:: EnumChildren |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720625"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-参照の選択された子の一覧を取得します。 将来利用するために予約されています。
+参照の選択された子のリストを取得します。 将来使用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -51,22 +51,22 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]列挙された[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のフィールドを指定する[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列挙体のフラグの組み合わせ。
+から列挙された[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体に格納されるフィールドを指定する、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列挙のフラグの組み合わせ。
 
 `dwRadix`\
-[in]数値情報の書式設定に使用する基数。
+から数値情報の書式設定に使用される基数。
 
 `dwAttribFilter`\
-[in]列挙する構造体を選択する[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)`pszNameFilter`パラメーターと組み合わせてフィルターとして使用されるDBG_ATTRIB_FLAGS列挙体のフラグの組み合わせ。
+から列挙する構造を選択するためのパラメーターと組み合わせてフィルターとして使用される、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) 列挙のフラグの組み合わせ `pszNameFilter` 。
 
 `pszNameFilter`\
-[in]列挙する構造体を選択するためにパラメーターと組み合わせて使用されるフィルターを`dwAttribFilter`指定する文字列 ("MyX" など)。
+から `dwAttribFilter` 列挙する構造体を選択するためにパラメーターと組み合わせて使用される、"MyX" などのフィルターを指定する文字列。
 
 `dwTimeout`\
-[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
+からこのメソッドから戻る前に待機する最大時間 (ミリ秒単位)。 `INFINITE`無期限に待機するには、を使用します。
 
 `ppEnum`\
-[アウト]要求された[子](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)プロパティの一覧を含むオブジェクトを返します。
+入出力要求された子プロパティのリストを格納している [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

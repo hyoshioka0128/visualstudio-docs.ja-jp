@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS |マイクロソフトドキュメント
+title: DEBUGPROP_INFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa7e4a498188dc91f2a47b3ccf27f367f15ec77b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737395"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
-デバッグ プロパティ オブジェクトについて取得する情報を指定します。
+デバッグプロパティオブジェクトについて取得する情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -72,62 +72,62 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `DEBUGPROP_INFO_FULLNAME`\
-フィールドを初期化/`bstrFullName`使用します。
+フィールドを初期化/使用 `bstrFullName` します。
 
 `DEBUGPROP_INFO_NAME`\
-フィールドを初期化/`bstrName`使用します。
+フィールドを初期化/使用 `bstrName` します。
 
 `DEBUGPROP_INFO_TYPE`\
-フィールドを初期化/`bstrType`使用します。
+フィールドを初期化/使用 `bstrType` します。
 
 `DEBUGPROP_INFO_VALUE`\
-フィールドを初期化/`bstrValue`使用します。
+フィールドを初期化/使用 `bstrValue` します。
 
 `DEBUGPROP_INFO_ATTRIB`\
-フィールドを初期化/`dwAttrib`使用します。
+フィールドを初期化/使用 `dwAttrib` します。
 
 `DEBUGPROP_INFO_PROP`\
-`pProperty` [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスを含むフィールドを初期化/使用します。
+IDebugProperty2 インターフェイスを含むフィールドを初期化/使用し `pProperty` ます。 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 
 `DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
-値フィールドに、このタイプのオブジェクトの自動拡張値 (使用可能な場合) が含まれる必要があることを指定します。
+値フィールドに、この型のオブジェクトの自動展開値 (使用可能な場合) が含まれていることを指定します。
 
 `DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
 非推奨になりました。
 
 `DEBUGPROP_INFO_VALUE_RAW`\
-美しい値やメンバーを返しません (つまり、値の書式は設定しないでください)。
+Beautified 値またはメンバーを返さないでください (つまり、値を書式設定しません)。
 
 `DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
-特殊な合成値を返しません (たとえば、値を生成するために`ToString()`オブジェクトを呼び出さない)。
+特別に合成された値を返さないでください (たとえば、 `ToString()` 値を生成するためにオブジェクトでを呼び出さないでください)。
 
 `DEBUGPROP_INFO_NONE`\
-フラグが設定されていない場合に指定します。
+フラグが設定されていないことを指定します。
 
 `DEBUGPROP_INFO_STANDARD`\
-`dwAttrib`、 、、`bstrName``bstrType`および`bstrValue`の各フィールドを初期化/使用します。
+`dwAttrib`、、 `bstrName` `bstrType` 、およびの各フィールドを初期化/使用し `bstrValue` ます。
 
 `DEBUGPROP_INFO_All`\
 すべてのフラグのマスクを示します。
 
-## <a name="remarks"></a>Remarks
-これらの値は[、DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体を初期化するフィールドを示すために[GetPropertyInfo、](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)[列挙子](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)、および[列挙プロパティ](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)の各メソッドに渡されます。
+## <a name="remarks"></a>解説
+これらの値は、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体を初期化するフィールドを示すために、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)、 [Enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)、および[enumchildren](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)メソッドに渡されます。
 
-これらの値は、`dwFields``DEBUG_PROPERTY_INFO`構造体のメンバーに対しても使用され、構造体のどのフィールドが使用され、構造体が返されるときに有効かを示します。
+これらの値は、構造体のメンバーにも使用され、構造体 `dwFields` `DEBUG_PROPERTY_INFO` のどのフィールドが使用され、構造体が返されたときに有効であるかを示します。
 
-これらの値はビット単位`OR`で組み合わせることができる。
+これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
-- [プロパティ情報を取得します。](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+- [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
 - [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

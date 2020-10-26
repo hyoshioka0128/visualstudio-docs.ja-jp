@@ -1,5 +1,5 @@
 ---
-title: Visual Studio テンプレート スキーマ リファレンス |マイクロソフトドキュメント
+title: Visual Studio テンプレートスキーマ参照 |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,29 +14,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 49e41431938eed0078f6cbb241d3d62812899942
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697975"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Visual Studio テンプレート スキーマ リファレンス
-このセクションでは、プロジェクト テンプレート、項目テンプレート、およびスタート キットのメタデータを格納するファイルである *.vstemplate*ファイル内の XML 要素について説明します。
+# <a name="visual-studio-template-schema-reference"></a>Visual Studio テンプレート スキーマ参照
+このセクションでは、.vstemplate ファイルの XML 要素について説明します *。 .vstemplate* ファイルは、プロジェクトテンプレート、項目テンプレート、およびスタートキットのメタデータを格納するファイルです。
 
- *vstemplate.xsd*を使用して、カスタム *.vstemplate*ファイルを検証できます。 このファイルは *..\\Visual Studio のインストール フォルダー>\Xml\スキーマ\1033\vstemplate.xsd \<*。
+ *.Vstemplate*を使用して、カスタム *.vstemplate*ファイルを検証できます。 このファイルは *. \\ \<Visual Studio installation folder> で入手できます。\Xml\Schemas\1033\vstemplate.xsd*。
 
 |要素|子要素|属性|
 |-------------|--------------------|----------------|
-|[Appliesto](../extensibility/appliesto-element-visual-studio-templates.md)|なし|なし|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|なし|なし|
 |[Assembly (テンプレート)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Assembly (ウィザード拡張)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
 |[CustomDataSignature](../extensibility/customdatasignature-element-visual-studio-templates.md)|--|--|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名前<br /><br /> [値]|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名前<br /><br /> 値|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
-|[デフォルト名](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
+|[Defaultname,](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
 |[説明](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> id|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
@@ -44,7 +44,7 @@ ms.locfileid: "80697975"
 ||[非推奨]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
 |[[非表示]](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[アイコン](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> id|
+|[Icon](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> id|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
@@ -60,7 +60,7 @@ ms.locfileid: "80697975"
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
-|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
+|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|アセンブリ|--|
 |[参照](../extensibility/references-element-visual-studio-templates.md)|リファレンス|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|バージョン|
@@ -76,9 +76,9 @@ ms.locfileid: "80697975"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|名前<br /><br /> 説明<br /><br /> アイコン<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> [非表示]<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|
 |[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|--|--|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|種類<br /><br /> バージョン|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|TemplateData<br /><br /> TemplateContent<br /><br /> WizardExtension<br /><br /> WizardData|Type<br /><br /> Version|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|--|名前|
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|アセンブリ<br /><br /> FullClassName|--|
 
 ## <a name="see-also"></a>関連項目
 

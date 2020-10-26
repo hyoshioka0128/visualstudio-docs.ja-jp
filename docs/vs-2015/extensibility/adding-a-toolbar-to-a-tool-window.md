@@ -1,5 +1,5 @@
 ---
-title: ツール ウィンドウにツールバーの追加 |Microsoft Docs
+title: ツールウィンドウへのツールバーの追加 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,38 +12,38 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184878"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>ツール ウィンドウへのツールバーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、ツール ウィンドウにツールバーを追加する方法を示します。  
+このチュートリアルでは、ツールウィンドウにツールバーを追加する方法について説明します。  
   
- ツールバーは、水平方向または垂直方向のストリップで、コマンドにバインドされているボタンが含まれています。 ツール ウィンドウのツールバーの長さは、常に幅または、ツールバーのドッキング先に応じて、ツール ウィンドウの高さと同じです。  
+ ツールバーは、コマンドにバインドされたボタンを含む、水平または垂直のストリップです。 ツールウィンドウのツールバーの長さは、ツールバーがドッキングされている場所に応じて、ツールウィンドウの幅または高さと常に同じです。  
   
- IDE でツールバーとは異なりでツール ウィンドウのツールバーをする必要がありますドッキング、移動またはできませんカスタマイズ。 Umanaged コードで、VSPackage が書き込まれた場合、ツールバーがいずれかの端にドッキングできます。  
+ IDE のツールバーとは異なり、ツールウィンドウのツールバーはドッキングされている必要があり、移動またはカスタマイズすることはできません。 VSPackage が umanaged 切れのコードで記述されている場合、ツールバーは任意の端にドッキングできます。  
   
- ツールバーを追加する方法の詳細については、次を参照してください。[ツールバーの追加](../extensibility/adding-a-toolbar.md)します。  
+ ツールバーを追加する方法の詳細については、「 [ツールバーの追加](../extensibility/adding-a-toolbar.md)」を参照してください。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+## <a name="prerequisites"></a>前提条件  
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
-## <a name="creating-a-toolbar-for-a-tool-window"></a>ツール ウィンドウのツールバーの作成  
+## <a name="creating-a-toolbar-for-a-tool-window"></a>ツールウィンドウのツールバーの作成  
   
-1. という名前の VSIX プロジェクトを作成する`TWToolbar`という名前の両方をメニュー コマンドを持つ**TWTestCommand**というツール ウィンドウと**TestToolWindow**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)と[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。 ツール ウィンドウのテンプレートを追加する前に、コマンドの項目テンプレートを追加する必要があります。  
+1. `TWToolbar` **Twtestcommand**という名前のメニューコマンドと**TestToolWindow**という名前のツールウィンドウの両方を持つという名前の VSIX プロジェクトを作成します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md) する」および「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。 ツールウィンドウテンプレートを追加する前に、コマンド項目テンプレートを追加する必要があります。  
   
-2. TWTestCommandPackage.vsct の Symbols セクションを探します。 GuidTWTestCommandPackageCmdSet をという名前の GuidSymbol ノードで次のようにツールバーとツールバーのグループを宣言します。  
+2. TWTestCommandPackage. vsct で、[シンボル] セクションを探します。 Guidtwtestcommand蔵書 Ecmdset という GuidSymbol ノードで、次のようにツールバーとツールバーグループを宣言します。  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3. 上部にある、`Commands`セクションで、作成、`Menus`セクション。 追加、`Menu`ツールバーを定義する要素。  
+3. セクションの上部で `Commands` 、セクションを作成 `Menus` します。 要素を追加し `Menu` て、ツールバーを定義します。  
   
     ```xml  
     <Menus>  
@@ -57,9 +57,9 @@ ms.locfileid: "68184878"
     </Menus>  
     ```  
   
-     ツールバーは、サブメニューのような入れ子にすることはできません。 そのため、親を割り当てるにはありません。 またがありません、優先順位を設定するため、ユーザーがツールバーを移動できます。 通常、ツールバーの初期配置がプログラムで定義されているが、ユーザーがそれ以降の変更が保存されます。  
+     ツールバーは、サブメニューのように入れ子にすることはできません。 したがって、親を割り当てる必要はありません。 また、ユーザーはツールバーを移動できるため、優先度を設定する必要はありません。 通常、ツールバーの最初の配置はプログラムによって定義されますが、ユーザーによるその後の変更は保持されます。  
   
-4. Groups セクションでは、ツールバーのコマンドを格納するグループを定義します。  
+4. [グループ] セクションで、ツールバーのコマンドを含むグループを定義します。  
   
     ```xml  
   
@@ -68,7 +68,7 @@ ms.locfileid: "68184878"
     </Group>  
     ```  
   
-5. ボタンのセクションでは既存のボタン要素の親をツールバーのグループに変更して、ツールバーが表示されますようにします。  
+5. [ボタン] セクションで、既存の Button 要素の親をツールバーグループに変更して、ツールバーが表示されるようにします。  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -80,40 +80,40 @@ ms.locfileid: "68184878"
     </Button>  
     ```  
   
-     既定では、ツールバーにコマンドが存在しない場合に表示されません。  
+     既定では、ツールバーにコマンドがない場合、ツールバーは表示されません。  
   
-     新しいツールバーはツール ウィンドウに自動的に追加されませんが、ため、ツールバーを明示的に追加する必要があります。 これについては、次のセクションで説明します。  
+     ツールウィンドウに新しいツールバーが自動的に追加されないため、ツールバーを明示的に追加する必要があります。 これについては、次のセクションで説明します。  
   
-## <a name="adding-the-toolbar-to-the-tool-window"></a>ツール ウィンドウにツールバーを追加します。  
+## <a name="adding-the-toolbar-to-the-tool-window"></a>ツールウィンドウへのツールバーの追加  
   
-1. TWTestCommandPackageGuids.cs では、次の行を追加します。  
+1. TWTestCommandPackageGuids.cs で、次の行を追加します。  
   
     ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
-2. TestToolWindow.cs で次のコードを追加ステートメントを使用します。  
+2. TestToolWindow.cs で、次の using ステートメントを追加します。  
   
     ```csharp  
     using System.ComponentModel.Design;  
     ```  
   
-3. TestToolWindow コンス トラクターでは、次の行を追加します。  
+3. TestToolWindow コンストラクターで、次の行を追加します。  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
     ```  
   
-## <a name="testing-the-toolbar-in-the-tool-window"></a>ツール ウィンドウで、ツールバーのテスト  
+## <a name="testing-the-toolbar-in-the-tool-window"></a>ツールウィンドウでのツールバーのテスト  
   
 1. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。  
   
-2. **ビュー/その他の Windows**  メニューのをクリックして**テスト ToolWindow**ツール ウィンドウを表示します。  
+2. [表示] メニューの [ **その他のウィンドウ** ] メニューで、[ **テスト ToolWindow** ] をクリックしてツールウィンドウを表示します。  
   
-     上部のツールバーのような既定のアイコン) がツール ウィンドウのタイトルのすぐ下の左に表示されます。  
+     ツールウィンドウの左上にあるツールバー (既定のアイコン) が、タイトルのすぐ下に表示されます。  
   
-3. ツールバーで、メッセージを表示するアイコンをクリックします。 **TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()** します。  
+3. ツールバーで、アイコンをクリックして、 **Twtestcommandpackage 内に Twtestcommandpackage というメッセージを表示します。 TWTestCommand. MenuItemCallback ()**。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ツール バーの追加](../extensibility/adding-a-toolbar.md)

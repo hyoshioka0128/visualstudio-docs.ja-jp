@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'チュートリアル: リアルな 3-D のビリヤード ボールの作成 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf039695f342d58cd70a9859d73932e3a0100e01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664104"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>チュートリアル: リアルな 3-D のビリヤード ボールの作成
@@ -31,7 +31,7 @@ ms.locfileid: "72664104"
 
 - 環境を反映して空間感覚を作成する。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントとスキルが必要です。
 
 - キューブ マップにテクスチャを統合するためのツール (June 2010 DirectX SDK に含まれる DirectX テクスチャ ツールなど)。
@@ -49,7 +49,7 @@ ms.locfileid: "72664104"
 
 #### <a name="to-preview-the-shader-by-using-a-sphere"></a>球を使用してシェーダーをプレビューするには
 
-- シェーダー デザイナーのツール バーで、 **[球でプレビュー]** を選択します。
+- シェーダー デザイナーのツール バーで、**[球でプレビュー]** を選択します。
 
   次の手順では、テクスチャをモデルに適用するシェーダー プログラムを作成しますが、最初に、使用するテクスチャを作成する必要があります。 このチュートリアルでは、イメージ エディターを使用してテクスチャを作成する方法を説明します。これは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の一部ですが、適切な形式でテクスチャを保存できるすべてのイメージ エディターを使用できます。
 
@@ -59,13 +59,13 @@ ms.locfileid: "72664104"
 
 1. 操作するテクスチャを作成します。 プロジェクトにテクスチャを追加する方法については、「[イメージ エディター」](../designers/image-editor.md)の「作業の開始」を参照してください。
 
-2. イメージ サイズを設定し、幅が高さの 2 倍になるようにサイズを変更します。これは、ビリヤード ボールの球状のサーフェイスにテクスチャをマップする方法に必要となるためです。 イメージのサイズを変更するには、 **[プロパティ]** ウィンドウの **[幅]** と **[高さ]** プロパティに適切な値を指定します。 たとえば、幅を 512、高さを 256 に設定します。
+2. イメージ サイズを設定し、幅が高さの 2 倍になるようにサイズを変更します。これは、ビリヤード ボールの球状のサーフェイスにテクスチャをマップする方法に必要となるためです。 イメージのサイズを変更するには、**[プロパティ]** ウィンドウの **[幅]** と **[高さ]** プロパティに適切な値を指定します。 たとえば、幅を 512、高さを 256 に設定します。
 
 3. テクスチャが球にどのようにマップされるかに留意しながら、ビリヤード ボールのテクスチャを描画します。
 
     テクスチャは次のようになります。
 
-    ![ビリヤードボールのテクスチャ](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")
+    ![ビリヤードのボールのテクスチャ](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")
 
 4. 必要に応じて、このテクスチャのストレージ要件を減らすこともできます。 これを行うには、テクスチャの幅を高さに合わせて縮小します。 幅に従ってテクスチャが圧縮されますが、テクスチャを球にマップする方法のため、ビリヤード ボールをレンダリングすると拡大されます。 サイズを変更すると、テクスチャは次のようになります。
 
@@ -79,19 +79,19 @@ ms.locfileid: "72664104"
 
     既定では、シェーダー グラフは次のようになります。
 
-    ![既定のシェーダーグラフ](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")
+    ![既定のシェーダー グラフ](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")
 
 2. テクスチャ サンプルの値が現在のピクセルに適用されるように、既定のシェーダーを変更します。 シェーダー グラフは次のようになります。
 
-    ![テクスチャをオブジェクトに適用するシェーダーグラフ](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")
+    ![テクスチャをオブジェクトに適用するシェーダー グラフ](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")
 
 3. テクスチャのプロパティを構成して、前の手順で作成したテクスチャを適用します。 **[テクスチャ サンプル]** ノードの **[テクスチャ]** プロパティの値を **[Texture1]** に設定し、同じプロパティ ウィンドウで **[Texture1]** プロパティ グループの **[ファイル名]** プロパティを使用して、テクスチャ ファイルを指定します。
 
-   シェーダーでテクスチャを適用する方法の詳細については、「[方法: 基本テクスチャ シェーダーを作成する](../designers/how-to-create-a-basic-texture-shader.md)」を参照してください。
+   シェーダーにテクスチャを適用する方法の詳細については、「 [方法: 基本的なテクスチャシェーダーを作成](../designers/how-to-create-a-basic-texture-shader.md)する」を参照してください。
 
    ビリヤード ボールは、次のようになります。
 
-   ![テクスチャビリヤードボールのクローズアップ](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")
+   ![テクスチャ化したビリヤードのボールのクローズアップ](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")
 
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>ランバート照明モデルを使用した奥行の作成
  これまでは、簡単に認識できるビリヤード ボールを作成してきました。 ただし、フラットで面白味がなく、真に迫った複製ではなく漫画のビリヤード ボールのように見えます。 単純なシェーダーのため外観がフラットになり、ビリヤード ボールのサーフェイスの各ピクセルが同じ光量を受けているように見えます。
@@ -104,15 +104,15 @@ ms.locfileid: "72664104"
 
 - シェーダーを変更して、ランバートの照明値によってテクスチャ サンプルの値を調整します。 シェーダー グラフは、次のようになります。
 
-   ![ランバート照明が追加されたシェーダーグラフ](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")
+   ![ランバート光源が加えられたシェーダー グラフ](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")
 
-- 必要に応じて、シェーダー グラフの **MaterialDiffuse** プロパティを構成することによって、照明を動かす方法を調整することもできます。 シェーダー グラフのプロパティにアクセスするには、デザイン サーフェイス上の何もない領域を選択してから、 **[プロパティ]** ウィンドウでアクセスするプロパティをクリックします。
+- 必要に応じて、シェーダー グラフの **MaterialDiffuse** プロパティを構成することによって、照明を動かす方法を調整することもできます。 シェーダー グラフのプロパティにアクセスするには、デザイン サーフェイス上の何もない領域を選択してから、**[プロパティ]** ウィンドウでアクセスするプロパティをクリックします。
 
-  シェーダーでランバート照明を適用する方法の詳細については、「[方法: 基本ランバート シェーダーを作成する](../designers/how-to-create-a-basic-lambert-shader.md)」を参照してください。
+  シェーダーにランバート照明を適用する方法の詳細については、「 [方法: 基本ランバートシェーダーを作成](../designers/how-to-create-a-basic-lambert-shader.md)する」を参照してください。
 
   ランバート照明が適用されると、ビリヤード ボールは次のようになります。
 
-  ![テクスチャボールと点灯したビリヤードボールのクローズアップ](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")
+  ![テクスチャ化され、光が照射されたビリヤードのボールのクローズアップ](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")
 
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>反射の光源を使用した基本的な外観の強化
  ランバート照明モデルは、テクスチャのみのシェーダーにはない図形と次元の効果を与えます。 ただし、ビリヤード ボールの外観には多少鈍さが残っています。
@@ -125,15 +125,15 @@ ms.locfileid: "72664104"
 
 1. 追加のブレンドを使用して反射の効果を含めるようにシェーダーを変更します。 シェーダー グラフは、次のようになります。
 
-    ![反射光を追加したシェーダーグラフ](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")
+    ![反射光が加えられたシェーダー グラフ](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")
 
-2. 必要に応じて、シェーダー グラフの反射プロパティ (**MaterialSpecular** と **MaterialSpecularPower**) を構成することによって反射の光源の動きを調整できます。 シェーダー グラフのプロパティにアクセスするには、デザイン サーフェイス上の何もない領域を選択してから、 **[プロパティ]** ウィンドウでアクセスするプロパティをクリックします。
+2. 必要に応じて、シェーダー グラフの反射プロパティ (**MaterialSpecular** と **MaterialSpecularPower**) を構成することによって反射の光源の動きを調整できます。 シェーダー グラフのプロパティにアクセスするには、デザイン サーフェイス上の何もない領域を選択してから、**[プロパティ]** ウィンドウでアクセスするプロパティをクリックします。
 
-   シェーダーで反射の光源を適用する方法の詳細については、「[方法: 基本フォン シェーダーを作成する](../designers/how-to-create-a-basic-phong-shader.md)」を参照してください。
+   シェーダーで反射の光源を適用する方法の詳細については、「 [方法: 基本的なデータシェーダーを作成](../designers/how-to-create-a-basic-phong-shader.md)する」を参照してください。
 
    反射の光源が適用されると、ビリヤード ボールは次のようになります。
 
-   ![反射が追加されたビリヤードボールのクローズアップ](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")
+   ![反射が加えられたビリヤードのボールのクローズアップ](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")
 
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>環境を反映した空間感覚の作成
  反射の光源を適用すると、かなり真に迫ったビリヤード ボールに見えます。 これには、形、ペイント、および仕上げが正しく適用されています。 ただし、ビリヤード ボールが環境の一部であるように見せるもう 1 つの方法があります。
@@ -150,33 +150,33 @@ ms.locfileid: "72664104"
 
 1. 操作するテクスチャを作成します。 プロジェクトにテクスチャを追加する方法については、「[イメージ エディター」](../designers/image-editor.md)の「作業の開始」を参照してください。
 
-2. 幅と高さが等しくなるように、またそれぞれの値が 2 のべき乗になるようにイメージ サイズを設定します。これは、キューブのマップに対してインデックスを作成する場合に必要です。 イメージのサイズを変更するには、 **[プロパティ]** ウィンドウの **[幅]** と **[高さ]** プロパティに適切な値を指定します。 たとえば、 **[幅]** と **[高さ]** の各プロパティの値を 256 に設定します。
+2. 幅と高さが等しくなるように、またそれぞれの値が 2 のべき乗になるようにイメージ サイズを設定します。これは、キューブのマップに対してインデックスを作成する場合に必要です。 イメージのサイズを変更するには、**[プロパティ]** ウィンドウの **[幅]** と **[高さ]** プロパティに適切な値を指定します。 たとえば、**[幅]** と **[高さ]** の各プロパティの値を 256 に設定します。
 
 3. 単色を使用してテクスチャを塗ります。 このテクスチャはキューブ マップの下部になります。これは、ビリヤード台のサーフェイスに対応します。 次のテクスチャのために使用した色を覚えておいてください。
 
 4. 1 番目と同じサイズで 2 番目のテクスチャを作成します。 このテクスチャはキューブ マップの 4 面で繰り返されます。これは、ビリヤード台のサーフェイスおよび面と、ビリヤード台の周辺の領域に対応します。 下部のテクスチャと同じ色を使用して、このテクスチャでビリヤード台のサーフェイスを描画します。 テクスチャは次のようになります。
 
-    ![キューブマップの辺のテクスチャ](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")
+    ![キューブ マップの側面のテクスチャ](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")
 
     効果を得るために反射マップは写真のようにリアルである必要はありません。たとえば、この文書のイメージを作成するために使用したキューブ マップには、6 つではなく 4 つのポケットがあります。
 
 5. 他のテクスチャと同じサイズで 3 番目のテクスチャを作成します。 このテクスチャはキューブ マップの上部になります。これは、ビリヤード台の上にある天井に対応します。 この部分の反射をより目を引くものにするには、天井の照明を描画して、前の手順でシェーダーに追加した反射の光源を強めることができます。 テクスチャは次のようになります。
 
-    ![キューブマップの最上位のテクスチャ](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")
+    ![キューブ マップの上部のテクスチャ](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")
 
    キューブ マップの面について個々のテクスチャを作成したので、ツールを使用して、1 つの .dds のテクスチャに格納できるキューブ マップにそれらのテクスチャを統合できます。 キューブ マップを .dds テクスチャ形式で保存できれば、キューブ マップを作成するどのプログラムでも使用できます。 このチュートリアルでは、June 2010 DirectX SDK の一部である DirectX テクスチャ ツールを使用して、テクスチャを作成する方法を説明します。
 
 #### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>DirectX テクスチャ ツールを使用してキューブ マップを統合するには
 
-1. DirectX テクスチャ ツールのメイン メニューで、 **[ファイル]** 、 **[New Texture]** の順に選択します。 **[New Texture]** ダイアログ ボックスが表示されます。
+1. DirectX テクスチャ ツールのメイン メニューで、**[ファイル]**、**[New Texture]** の順に選択します。 **[New Texture]** ダイアログ ボックスが表示されます。
 
-2. **[Texture Type]** グループで、 **[Cubemap Texture]** を選択します。
+2. **[Texture Type]** グループで、**[Cubemap Texture]** を選択します。
 
-3. **[サイズ]** グループの **[幅]** と **[高さ]** に適切な値を入力し、 **[OK]** をクリックします。 新しいテクスチャ ドキュメントが表示されます。 既定では、テクスチャ ドキュメントに最初に表示されるテクスチャは、**Positive X** のキューブ面に対応します。
+3. **[サイズ]** グループの **[幅]** と **[高さ]** に適切な値を入力し、**[OK]** をクリックします。 新しいテクスチャ ドキュメントが表示されます。 既定では、テクスチャ ドキュメントに最初に表示されるテクスチャは、**Positive X** のキューブ面に対応します。
 
-4. テクスチャ キューブの面に作成したテクスチャを、キューブ面に読み込みます。 メイン メニューで、 **[ファイル]** 、 **[Open Onto This Cubemap Face]** の順に選択し、キューブの面に作成したテクスチャを選択したら、 **[開く]** を選択します。
+4. テクスチャ キューブの面に作成したテクスチャを、キューブ面に読み込みます。 メイン メニューで、**[ファイル]**、**[Open Onto This Cubemap Face]** の順に選択し、キューブの面に作成したテクスチャを選択したら、**[開く]** を選択します。
 
-5. **Negative X**、**Positive Z**、および **Negative Z** キューブ面について、手順 4. を繰り返します。 そのためには、読み込む面を表示する必要があります。 別のキューブ マップの面を表示するには、メイン メニューで、 **[表示]** 、 **[Cube Map Face]** の順に選択し、表示する面を選択します。
+5. **Negative X**、**Positive Z**、および **Negative Z** キューブ面について、手順 4. を繰り返します。 そのためには、読み込む面を表示する必要があります。 別のキューブ マップの面を表示するには、メイン メニューで、**[表示]**、**[Cube Map Face]** の順に選択し、表示する面を選択します。
 
 6. **Positive Y** キューブ面について、テクスチャ キューブの上部に作成したテクスチャを読み込みます。
 
@@ -186,7 +186,7 @@ ms.locfileid: "72664104"
 
    次のようなキューブ マップのレイアウトが想像されます。
 
-   ![環境キューブマップのレイアウト](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")
+   ![環境キューブ マップのレイアウト](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")
 
    上のイメージは +Y (正の Y) キューブ面、真ん中のイメージは、左から –X、+Z、+X、–Z キューブ面、下のイメージは –Y キューブ面です。
 
@@ -196,21 +196,21 @@ ms.locfileid: "72664104"
 
 1. 追加のブレンドを使用して環境マッピングの効果を含めるようにシェーダーを変更します。 シェーダー グラフは、次のようになります。
 
-    ![両方の種類の反射シェーダーノードのクローズアップ](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")
+    ![2 種類の反射型シェーダー ノードのクローズアップ](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")
 
-    シェーダー グラフを単純化するために、 **[積和演算]** ノードを使用できることに注目してください。
+    シェーダー グラフを単純化するために、**[積和演算]** ノードを使用できることに注目してください。
 
     環境マッピングを実装するシェーダー ノードの詳細なビューを次に示します。
 
-    ![環境マッピングが追加されたシェーダーグラフ](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")
+    ![環境マッピングが加えられたシェーダー グラフ](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")
 
-2. キューブ マップのテクスチャのプロパティを構成して、前の手順で作成したテクスチャを適用します。 **[キューブ マップのサンプル]** ノードの **[テクスチャ]** プロパティの値を **[Texture2]** に設定し、 **[Texture2]** プロパティ グループの **[ファイル名]** プロパティを使用して、テクスチャ ファイルを指定します。
+2. キューブ マップのテクスチャのプロパティを構成して、前の手順で作成したテクスチャを適用します。 **[キューブ マップのサンプル]** ノードの **[テクスチャ]** プロパティの値を **[Texture2]** に設定し、**[Texture2]** プロパティ グループの **[ファイル名]** プロパティを使用して、テクスチャ ファイルを指定します。
 
-3. 必要に応じて、 **[定数]** ノードの **[出力]** プロパティを構成して、ビリヤード ボールの反射を調整できます。 ノードのプロパティにアクセスするには、 **[プロパティ]** ウィンドウで目的のノードをクリックしてから、アクセスするプロパティをクリックします。
+3. 必要に応じて、**[定数]** ノードの **[出力]** プロパティを構成して、ビリヤード ボールの反射を調整できます。 ノードのプロパティにアクセスするには、**[プロパティ]** ウィンドウで目的のノードをクリックしてから、アクセスするプロパティをクリックします。
 
    環境マッピングが適用されると、ビリヤード ボールは次のようになります。
 
-   ![環境マップ済みビリヤードボールのクローズアップ](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")
+   ![環境マッピングが適用されたビリヤードのボールのクローズアップ](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")
 
    この最終的なイメージでは、真に迫ったビリヤード ボールを作成するために追加した効果がどのように連携しているかに注目してください。 図形、テクスチャ、および照明は、3-D オブジェクトの基本的な外観を作成し、反射の光源および景色の反射は、ビリヤード ボールをより目を引くものにして、環境の一部であるかのように見せます。
 

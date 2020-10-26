@@ -1,5 +1,5 @@
 ---
-title: フィールド::基になるシンボルを取得する |マイクロソフトドキュメント
+title: 'IDebugEnumField:: GetUnderlyingSymbol |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730274"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-このメソッドは、列挙体の名前を表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)を返します。
+このメソッドは、列挙体の名前を表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetUnderlyingSymbol(
 
 ## <a name="parameters"></a>パラメーター
 `ppField`\
-[アウト]この列挙体の名前を記述する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)を返します。
+入出力この列挙体の名前を記述する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 列挙体の名前には[、Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)を使用してメモリの場所にバインドされる列挙型も含まれています。
+## <a name="remarks"></a>解説
+ 列挙体の名前には、 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)を使用してメモリ位置にバインドされる列挙型も含まれます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

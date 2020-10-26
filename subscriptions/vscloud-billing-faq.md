@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273830"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249384"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 必ず[クラウド サブスクリプションの特典と価格を比較](https://visualstudio.microsoft.com/vs/pricing/)して、各 Visual Studio サブスクリプションの特典、クラウドと標準の Visual Studio サブスクリプションの比較、サブスクライバー特典の詳細などを理解してください。
@@ -34,7 +34,7 @@ A: まったくありません。 Azure で Visual Studio クラウド サブス
 A: はい、できます。 お使いの EA 用に作成された Azure サブスクリプションの所有者または共同作成者である必要があります。 Visual Studio クラウド サブスクリプションの購入は、Visual Studio Marketplace 内で直接行うようにしてください。 発注書を使って Visual Studio クラウド サブスクリプションを購入することはできません。
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Q:組織の Enterprise Agreement を使って Visual Studio Marketplace でサービスを購入するために必要な特権があるかどうかは、どうすれば確認できますか。
-A: 適切な特権があるかどうかを確認する最も簡単な方法は、Visual Studio Marketplace で提供されているサービスの **[購入]** ボタンをクリックしてみることです。
+A: 適切な特権があるかどうかを確認する最も簡単な方法は、Visual Studio Marketplace で提供されているサービスの **[購入]** ボタンを選択してみることです。
 お使いのログインに現在リンクされている Azure サブスクリプションの一覧が表示されるので、そこから Azure サブスクリプション (請求先アカウント) を選ぶ必要があります。
 Azure サブスクリプションの名前として既定で表示される種類は請求先アカウント ("従量課金制"、"Enterprise Agreement" など) なので、通常、Azure サブスクリプションが Enterprise Agreement の一部かどうかは明白です。
 

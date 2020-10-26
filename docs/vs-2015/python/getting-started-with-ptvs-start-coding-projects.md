@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537154"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>PTVS の概要: コーディングの開始 (プロジェクト)
@@ -21,7 +21,7 @@ ms.locfileid: "62537154"
 
 Python Tools for Visual Studio (PTVS) を使用すると、コードを管理できます。 
  
- これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)で視聴できます。 
+ これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)で視聴できます。 
  
  以前に Python を使用したことがあれば分かるとおり、プロジェクトはディスク上でのファイルのレイアウト方法で定義されます。 これは通常の Python プロジェクトでは便利ですが、ファイルの数が多い場合 (JavaScript のある Web ページ、単体テスト、ビルド スクリプト)、ファイル システムが制約となってきます。 Visual Studio は、プロジェクトを使用して 3 つの事柄を達成します。 
  
@@ -37,7 +37,7 @@ Python Tools for Visual Studio (PTVS) を使用すると、コードを管理で
  
   ソリューション エクスプローラーにドラッグ アンドドロップできます。 既にファイルをプロジェクトのディレクトリ構造にコピーした場合は、ソリューション エクスプローラーの上部にある [すべてのファイルを表示] を選択できます。 その後、追加する項目を選択して、コンテキスト メニューから [プロジェクトに含める] を選択できます。 
  
-  これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)で視聴できます。 
+  これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)で視聴できます。 
  
-## <a name="see-also"></a>関連項目 
+## <a name="see-also"></a>参照 
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

@@ -1,5 +1,5 @@
 ---
-title: Iデバッグモジュール2::ReloadSymbols_Deprecated |マイクロソフトドキュメント
+title: 'IDebugModule2:: ReloadSymbols_Deprecated |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e776434e17d90cd2c61c926bbf0100a44ecc524b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726918"
 ---
 # <a name="idebugmodule2reloadsymbols_deprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-廃止。 使用しないでください。 このモジュールのシンボルを再ロードします。
+互換性のために残されています。 使用しないでください。 このモジュールのシンボルを再読み込みします。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int ReloadSymbols( 
 
 ## <a name="parameters"></a>パラメーター
 `pszUrlToSymbols`\
-[in]シンボル ストアへのパス。
+からシンボルストアへのパス。
 
 `pbstrDebugMessage`\
-[アウト]モジュール名の右側に表示されるステータス やエラー メッセージなどの情報メッセージを [モジュール] ウィンドウに返します。
+入出力[モジュール] ウィンドウのモジュール名の右側に表示される情報メッセージ (状態やエラーメッセージなど) を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 デバッグ エンジンは常に`E_FAIL`を返す必要があります。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 デバッグエンジンは常にを返す必要があり `E_FAIL` ます。
 
-## <a name="remarks"></a>Remarks
- このメソッドはサポートされなくなりました。 代わりに[、メソッドを](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)実装します。
+## <a name="remarks"></a>解説
+ このメソッドはサポートされなくなりました。 代わりに、 [Loadsymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) メソッドを実装してください。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

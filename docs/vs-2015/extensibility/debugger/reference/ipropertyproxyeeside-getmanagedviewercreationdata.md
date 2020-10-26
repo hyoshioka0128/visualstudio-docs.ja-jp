@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft Docs
+title: 'IPropertyProxyEESide:: GetManagedViewerCreationData |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5161894875ac683e5a6e49ae623bd6025531006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199533"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-そのビューアーをインスタンス化するために、このプロパティの種類ビューアーに関する情報を取得します。  
+ビューアーをインスタンス化するために、このプロパティ型のビューアーに関する情報を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -50,30 +50,30 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>パラメーター  
  `assemName`  
- [out]このオブジェクトを保持しているアセンブリの名前を返します。  
+ 入出力このオブジェクトを保持しているアセンブリの名前を返します。  
   
  `assemBytes`  
- [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (これは、null 値をバイトが使用できない場合)、このオブジェクトのアセンブリのバイト数を格納しているオブジェクト。  
+ 入出力このオブジェクトのアセンブリバイトを格納している [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) オブジェクトを返します (バイトが使用できない場合は null 値です)。  
   
  `assemPdb`  
- [out]返します、`IEEDataStorage`シンボルを含むオブジェクトは、(これは、null 値をシンボル ストアが使用できない場合)、このオブジェクトの情報を格納します。  
+ 入出力 `IEEDataStorage` このオブジェクトのシンボルストア情報を格納しているオブジェクトを返します (シンボルストアが使用できない場合は null 値です)。  
   
  `className`  
- [out]このオブジェクトを含むクラスの名前を返します。  
+ 入出力このオブジェクトを格納しているクラス名を返します。  
   
  `alr`  
- [out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)アセンブリの場所を示す列挙値。  
+ 入出力アセンブリの場所を示す値を [Assemblylocresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) 列挙から返します。  
   
  `replacementOk`  
- [out]0 以外の値を返します (`TRUE`) このオブジェクトの値を変更できる場合は 0 (`FALSE`) オブジェクトが読み取り専用である場合。  
+ 入出力`TRUE`このオブジェクトの値を変更できる場合は0以外 () を返します。オブジェクトが読み取り専用の場合は 0 () を返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、管理対象のビューアーをインスタンス化する型のビジュアライザーによって使用されます。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、マネージビューアーをインスタンス化するために型ビジュアライザーによって使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

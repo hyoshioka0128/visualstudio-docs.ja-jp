@@ -1,4 +1,4 @@
-﻿---
+---
 title: Find コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ce0e4a3aaca752cbdeda0a83e469977306c3404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657680"
 ---
 # <a name="find-command"></a>Find コマンド
@@ -68,5 +68,5 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>関連項目
- [コマンドウィンドウ](../../ide/reference/command-window.md)の[[検索/コマンド] ボックス](../../ide/find-command-box.md) [Visual studio コマンド](../../ide/reference/visual-studio-commands.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>参照
+ [コマンドウィンドウ](../../ide/reference/command-window.md)の [[検索/コマンド] ボックス](../../ide/find-command-box.md) [Visual studio コマンド](../../ide/reference/visual-studio-commands.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

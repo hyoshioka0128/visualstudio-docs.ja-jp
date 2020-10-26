@@ -1,5 +1,5 @@
 ---
-title: テキストを取得します。マイクロソフトドキュメント
+title: 'IDebugDocumentText2:: GetText |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731574"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-文書内の指定した位置からテキストを取得します。
+ドキュメント内の指定した位置からテキストを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>パラメーター
 `pos`\
-[in]取得するテキストの位置を示す[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体。
+から取得するテキストの場所を示す [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。
 
 `cMaxChars`\
-[in]取得するテキストの最大文字数。
+から取得するテキストの最大文字数。
 
 `pText`\
-[イン、アウト]目的のテキストで埋めるバッファーへのポインター。 このバッファーには、ワイド文字を少なくとも`cMaxChars`いくつでも入れます。
+[入力、出力]目的のテキストを格納するバッファーへのポインター。 このバッファーには、少なくともワイド文字を含めることができる必要があり `cMaxChars` ます。
 
 `pcNumChars`\
-[アウト]実際に取得された文字数を返します。
+入出力実際に取得された文字数を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-この例では、このメソッドを C# から呼び出す方法を示します。
+この例は、C# からこのメソッドを呼び出す方法を示しています。
 
 ```csharp
 using System.Runtime.Interop.Services;

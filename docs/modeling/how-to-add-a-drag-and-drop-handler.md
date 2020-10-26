@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545666"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
-ドラッグアンドドロップイベントのハンドラーを DSL に追加して、ユーザーが他の図または Visual Studio の他の部分から図に項目をドラッグできるようにすることができます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 また、ドラッグアンドドロップとダブルクリックのハンドラーは、*ジェスチャハンドラー*と呼ばれます。
+ドラッグアンドドロップイベントのハンドラーを DSL に追加して、ユーザーが他の図または Visual Studio の他の部分から図に項目をドラッグできるようにすることができます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 また、ドラッグアンドドロップとダブルクリックのハンドラーは、 *ジェスチャハンドラー*と呼ばれます。
 
-このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、「[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。 DSL 定義をカスタマイズすることもできます。
+このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、「 [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。 DSL 定義をカスタマイズすることもできます。
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義
 
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-このメソッドは、 `OnDragOver(DiagramDragEventArgs e)` 以前に `e.Effect` 以外の値に設定されている場合に、マウスポインターがこの図形または図の上にあるときにユーザーがマウスボタンを離すと呼び出され `None` ます。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -このメソッドは、 `OnDragOver(DiagramDragEventArgs e)` 以前に `e.Effect` 以外の値に設定されている場合に、マウスポインターがこの図形または図の上にあるときにユーザーがマウスボタンを離すと呼び出され `None` ます。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,11 +66,11 @@ using System.Linq;
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-このメソッドは、ユーザーが図形または図をダブルクリックすると呼び出されます。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -このメソッドは、ユーザーが図形または図をダブルクリックすると呼び出されます。
 
-     詳細については、「[方法: 図形またはデコレータのクリックをインターセプト](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)する」を参照してください。
+     詳細については、「 [方法: 図形またはデコレータのクリックをインターセプト](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)する」を参照してください。
 
-`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、「ドラッグした[項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
+`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、「ドラッグした [項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>MEF を使用してジェスチャハンドラーを定義する
 
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      ドラッグしたオブジェクトの種類が複数ある場合などは、複数のジェスチャ ハンドラー コンポーネントを作成できます。
 
-3. ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、「[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
+3. ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、「 [ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
 
 ## <a name="how-to-decode-the-dragged-item"></a>ドラッグした項目をデコードする方法
 
@@ -124,15 +124,15 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ドラッグ ソース情報が使用可能な形式を見つけるには、コードをデバッグ モードで実行し、ブレークポイントを `OnDragOver()` または `CanDragDrop()` のエントリに設定します。 `DiagramDragEventArgs` パラメーターの値を確認します。 情報は次の 2 つの形式で提供されます。
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`-このプロパティは、通常、複数の形式で、ソースオブジェクトのシリアル化されたバージョンを格納します。 最も有用な関数は次のとおりです。
+- <xref:System.Windows.Forms.IDataObject>  `Data` -このプロパティは、通常、複数の形式で、ソースオブジェクトのシリアル化されたバージョンを格納します。 最も有用な関数は次のとおりです。
 
   - GetDataFormats ()-ドラッグしたオブジェクトをデコードできる形式が一覧表示されます。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
 
-  - `diagramEventArgs.Data.GetData(format)`-ドラッグしたオブジェクトを指定した形式でデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
+  - `diagramEventArgs.Data.GetData(format)` -ドラッグしたオブジェクトを指定した形式でデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-    ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、「[ドラッグアンドドロップでモデルバス参照を送信する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
+    ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、「 [ドラッグアンドドロップでモデルバス参照を送信する方法](#to-send-an-object-from-a-source-dsl)」を参照してください。
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`-ユーザーが DSL または UML モデルから項目をドラッグできるようにする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
 
@@ -148,7 +148,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      UML 図形を受け入れるには、実験で UML 図形クラスの Guid を確認します。 通常、どの図でも要素の種類には複数あることに注意してください。 また、DSL または UML 図からドラッグするオブジェクトは図形であり、モデル要素ではありません。
 
-`DiagramDragEventArgs`には、現在のマウスポインターの位置と、ユーザーが CTRL、ALT、または SHIFT キーを押しているかどうかを示すプロパティもあります。
+`DiagramDragEventArgs` には、現在のマウスポインターの位置と、ユーザーが CTRL、ALT、または SHIFT キーを押しているかどうかを示すプロパティもあります。
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>ドラッグした要素の元を取得する方法
 
@@ -162,7 +162,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 1. DSL デザイナーでソース DSL の DSL 定義ファイルを開きます。 デザイン画面を右クリックし、[ **Modelbus の有効化**] をクリックします。 ダイアログ ボックスで、オプションの片方または両方を選択します。  **[OK]** をクリックします。 新しいプロジェクト "ModelBus" が DSL ソリューションに追加されます。
 
-2. [**すべてのテンプレートの変換**] をクリックし、ソリューションをリビルドします。
+2. [ **すべてのテンプレートの変換** ] をクリックし、ソリューションをリビルドします。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>ソース DSL からオブジェクトを送信するには
 
@@ -322,7 +322,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 図形のフィールドに対してマウス操作をインターセプトするハンドラーを作成できます。 次の例では、ユーザーがマウスでドラッグしてコンパートメント内の項目を並べ替えることができます。
 
-この例をビルドするには、**クラスダイアグラム**のソリューションテンプレートを使用してソリューションを作成します。 コード ファイルを追加し、次のコードを追加します。 名前空間を調整して独自の名前空間と同じにします。
+この例をビルドするには、 **クラスダイアグラム** のソリューションテンプレートを使用してソリューションを作成します。 コード ファイルを追加し、次のコードを追加します。 名前空間を調整して独自の名前空間と同じにします。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

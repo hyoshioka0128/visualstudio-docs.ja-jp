@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6219acde1f62c946e08325f4764dc49dde461d2f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546576"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137:透過的メソッドは、検証可能な IL のみを含まなければならない
@@ -34,7 +34,7 @@ ms.locfileid: "85546576"
 ## <a name="rule-description"></a>ルールの説明
  この規則は、透過的セキュリティ コードが、検証できない MSIL (Microsoft Intermediate Language) を実行しようとすると適用されます。 ただし、規則には完全な IL 検証ツールは含まれていないため、代わりにヒューリスティックを使用して、ほとんどの MSIL 検証違反が検出されます。
 
- コードに検証可能な MSIL だけが含まれていることを確認するには、アセンブリで[Peverify.exe (PEVerify Tool)](https://msdn.microsoft.com/library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa)を実行します。 **/Transparent**オプションを指定して PEVerify を実行します。これにより、エラーの原因となる、検証不可能な透過的なメソッドのみに出力が制限されます。 /Transparent オプションが使用されていない場合、PEVerify は検証不可能なコードを含めることが許可されている重要なメソッドも検証します。
+ コードに検証可能な MSIL だけが含まれていることを確認するには、アセンブリで [Peverify.exe (PEVerify Tool)](https://msdn.microsoft.com/library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) を実行します。 **/Transparent**オプションを指定して PEVerify を実行します。これにより、エラーの原因となる、検証不可能な透過的なメソッドのみに出力が制限されます。 /Transparent オプションが使用されていない場合、PEVerify は検証不可能なコードを含めることが許可されている重要なメソッドも検証します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、メソッドを <xref:System.Security.SecurityCriticalAttribute> 属性または属性でマークする <xref:System.Security.SecuritySafeCriticalAttribute> か、検証不可能なコードを削除します。

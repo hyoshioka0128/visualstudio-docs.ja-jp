@@ -1,5 +1,5 @@
 ---
-title: 表現評価器3 |マイクロソフトドキュメント
+title: IDebugExpressionEvaluator3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d25cd8cd4aec351df2a483e930bf469fbc086a68
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729115"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については、「 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- 拡張パーサー ツリーを使用して式エバリュエーター (EE) を表します。
+ パーサーツリーが拡張された式エバリュエーター (EE) を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -29,19 +29,19 @@ ms.locfileid: "80729115"
 IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ```
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- このバージョンのパーサーは、評価フレームのシンボル プロバイダーとアドレスを渡します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ このバージョンのパーサーは、シンボルプロバイダーと、評価フレームのアドレスを渡します。
 
 ## <a name="methods"></a>メソッド
- このインターフェイスは[、IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)インターフェイスのメソッドに加えて、次のメソッドを実装します。
+ このインターフェイスは、 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
 |Method|説明|
 |------------|-----------------|
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|シンボル プロバイダーと評価フレームのアドレスを指定して、式文字列を解析された式に変換します。|
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|シンボルプロバイダーおよび評価フレームのアドレスを指定して、式文字列を解析済みの式に変換します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: Ee.h
+ ヘッダー: Ee
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

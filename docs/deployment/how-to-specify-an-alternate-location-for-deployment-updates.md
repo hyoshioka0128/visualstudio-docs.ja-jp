@@ -16,17 +16,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381913"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>方法: 配置の更新用に別の場所を指定する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]最初に CD またはファイル共有からアプリケーションをインストールできますが、アプリケーションでは Web 上の定期的な更新プログラムを確認する必要があります。 配置マニフェストで更新プログラムの別の場所を指定して、アプリケーションが最初のインストール後に Web から自身を更新できるようにすることができます。
 
 > [!NOTE]
-> この機能を使用するには、アプリケーションをローカルにインストールするように構成する必要があります。 詳細については、「[チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。 さらに、ネットワークからアプリケーションをインストールする場合 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、別の場所を設定すると、では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 初期インストールとそれ以降のすべての更新で、その場所が使用されます。 アプリケーションをローカルに (たとえば CD から) インストールする場合、最初のインストールは元のメディアを使用して実行され、それ以降のすべての更新では代替の場所が使用されます。
+> この機能を使用するには、アプリケーションをローカルにインストールするように構成する必要があります。 詳細については、「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。 さらに、ネットワークからアプリケーションをインストールする場合 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、別の場所を設定すると、では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 初期インストールとそれ以降のすべての更新で、その場所が使用されます。 アプリケーションをローカルに (たとえば CD から) インストールする場合、最初のインストールは元のメディアを使用して実行され、それ以降のすべての更新では代替の場所が使用されます。
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>MageUI.exe (Windows フォームベースのユーティリティ) を使用して、更新プログラムの別の場所を指定する
 
@@ -34,7 +34,7 @@ ms.locfileid: "85381913"
 
      **mageui.exe**
 
-2. [**ファイル**] メニューの [**開く**] をクリックして、アプリケーションの配置マニフェストを開きます。
+2. [ **ファイル** ] メニューの [ **開く** ] をクリックして、アプリケーションの配置マニフェストを開きます。
 
 3. **[配置オプション]** タブを選択します。
 
@@ -46,16 +46,16 @@ ms.locfileid: "85381913"
 
 1. .NET Framework コマンドプロンプトを開きます。
 
-2. 次のコマンドを使用して、更新プログラムの場所を設定します。 この例では、 *HelloWorld.exe*アプリケーションマニフェストへのパスを指定します。このパスは [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 常にアプリケーションの拡張子を持ち、 `http://adatum.com/Update/Path` は [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの更新プログラムをチェックする URL です。
+2. 次のコマンドを使用して、更新プログラムの場所を設定します。 この例では、 *HelloWorld.exe* アプリケーションマニフェストへのパスを指定します。このパスは [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 常にアプリケーションの拡張子を持ち、 `http://adatum.com/Update/Path` は [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの更新プログラムをチェックする URL です。
 
     **Mage.exe-ProviderUrl http:/adatum.com/Update/Path を HelloWorld.exe 更新します。 \/**
 
 3. ファイルを保存します。
 
    > [!NOTE]
-   > 次に、 *Mage.exe*を使用してファイルに再署名する必要があります。 詳細については、「[チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。
+   > 次に、 *Mage.exe*を使用してファイルに再署名する必要があります。 詳細については、「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。
 
-## <a name="net-framework-security"></a>.NET Framework セキュリティ
+## <a name="net-framework-security"></a>.NET Framework のセキュリティ
  CD などのオフラインメディアからアプリケーションをインストールし、コンピューターがオンラインの場合、はまず、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置マニフェストのタグで指定された URL を確認して、 `<deploymentProvider>` 更新プログラムの場所により新しいバージョンのアプリケーションが含まれているかどうかを確認します。 存在する場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 最初のインストールディレクトリからではなく、そこからアプリケーションを直接インストールします。また、を使用して、共通言語ランタイム (CLR) によってアプリケーションの信頼レベルが決定され `<deploymentProvider>` ます。 コンピューターがオフラインである場合、また `<deploymentProvider>` はアクセスできない場合は、が cd からインストールされます。また、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] この CLR は、インストールポイントに基づいて信頼を付与します。 CD のインストールの場合は、アプリケーションが完全な信頼を受け取ることを意味します。 それ以降のすべての更新は、その信頼レベルを継承します。
 
  を使用するすべてのアプリケーションは、アプリケーション [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `<deploymentProvider>` マニフェストで必要なアクセス許可を明示的に宣言する必要があります。これにより、アプリケーションが異なるコンピューター上で異なる信頼レベルを受け取ることはありません。

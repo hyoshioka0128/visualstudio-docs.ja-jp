@@ -12,39 +12,39 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcfba979ba7fce4aeffab1fe9e9a5a3728e513af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658997"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod アクティビティ デザイナー
-**InvokeMethod**デザイナーは、<xref:System.Activities.Statements.InvokeMethod> アクティビティを作成および構成するために使用します。
+**InvokeMethod** デザイナーは、アクティビティを作成および構成するために使用 <xref:System.Activities.Statements.InvokeMethod> します。
 
 ## <a name="the-invokemethod-activity"></a>InvokeMethod アクティビティ
  <xref:System.Activities.Statements.InvokeMethod> は、指定されたオブジェクトまたは型のパブリック メソッドを呼び出します。
 
 ### <a name="using-the-invokemethod-activity-designer"></a>InvokeMethod アクティビティ デザイナーの使用
- **InvokeMethod**アクティビティデザイナーは、**ツールボックス**の **[プリミティブ]** カテゴリにあります。 [**ツールボックス] タブ [!INCLUDE[wfd2](../includes/wfd2-md.md)]** (または、 **[表示]** メニューの **[ツールバー]** を選択してアクセスします)。CTRL + ALT + X
+ **InvokeMethod**アクティビティデザイナーは、[**ツールボックス]** の [**プリミティブ**] カテゴリにあります。このカテゴリにアクセスするには、[**ツールボックス**] タブをクリックします [!INCLUDE[wfd2](../includes/wfd2-md.md)] (または、[**表示**] メニューの [**ツールバー** ] を選択するか、ctrl + ALT + X キーを押します)。
 
- **InvokeMethod**アクティビティデザイナーは、 **[ツールボックス]** からドラッグして、アクティビティを通常配置している [!INCLUDE[wfd2](../includes/wfd2-md.md)] 画面にドロップできます (<xref:System.Activities.Statements.Sequence> 内など)。 この操作により、InvokeMethod という既定の <xref:System.Activities.Statements.InvokeMethod> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 @No__t_0 は、 **InvokeMethod**アクティビティデザイナーのヘッダー、またはプロパティグリッドの **[DisplayName]** ボックスで編集できます。
+ **InvokeMethod**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、 [!INCLUDE[wfd2](../includes/wfd2-md.md)] アクティビティを通常配置している画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 この操作により、InvokeMethod という既定の <xref:System.Activities.Statements.InvokeMethod> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **InvokeMethod** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod プロパティ
  次の表に、<xref:System.Activities.Statements.InvokeMethod> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドで編集できます。また、その一部は[!INCLUDE[wfd2](../includes/wfd2-md.md)]のデザイナー画面で編集できます。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> アクティビティの表示名。 既定値は InvokeMethod です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|アクティビティの実行時に呼び出すメソッドの名前。 呼び出されたメソッドは**パブリック**として宣言されなければなりません。 このプロパティは、デザイナー画面で設定することもできます。 これは必須プロパティです。|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|呼び出されたメソッドのパラメーター コレクション。 パラメーターは、メソッド シグネチャ内で出現する順序でコレクションに追加する必要があります。 プロパティグリッドで、 **[パラメーター]** フィールドの省略記号ボタンをクリックすると、 **[パラメーター]** ダイアログボックスが表示され、このプロパティを設定できます。 **[引数の作成]** ボタンをクリックして、パラメーターを追加します。|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|メソッド呼び出しの戻り値。|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|メソッドが非同期で呼び出されるかどうかを指定します。 既定値は**False**です。|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|呼び出すメソッドを格納するオブジェクト。 このプロパティは、デザイナー画面で設定することもできます。<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> および <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> のいずれかを設定する必要があります。|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> の型。 このプロパティは、デザイナー画面で編集できます。 このプロパティは、メソッド呼び出しが静的である場合にのみ設定する必要があります。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.InvokeMethod> アクティビティの表示名。 既定値は InvokeMethod です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|○|アクティビティの実行時に呼び出すメソッドの名前。 呼び出されたメソッドは **パブリック**として宣言されなければなりません。 このプロパティは、デザイナー画面で設定することもできます。 これは必須プロパティです。|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|×|呼び出されたメソッドのパラメーター コレクション。 パラメーターは、メソッド シグネチャ内で出現する順序でコレクションに追加する必要があります。 プロパティグリッドで、[ **パラメーター** ] フィールドの省略記号ボタンをクリックすると、[ **パラメーター** ] ダイアログボックスが表示され、このプロパティを設定できます。 [ **引数の作成** ] ボタンをクリックして、パラメーターを追加します。|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|×|メソッド呼び出しの戻り値。|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|○|メソッドが非同期で呼び出されるかどうかを指定します。 既定値は **False**です。|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|×|呼び出すメソッドを格納するオブジェクト。 このプロパティは、デザイナー画面で設定することもできます。<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> および <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> のいずれかを設定する必要があります。|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|×|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> の型。 このプロパティは、デザイナー画面で編集できます。 このプロパティは、メソッド呼び出しが静的である場合にのみ設定する必要があります。|
 
- パラメーターをC# **out**パラメーターとして渡すには (たとえば、`Method1(out myParam)),`、 **InOutArgument**の代わりに**outargument<int>** を使用する必要があります。
+ パラメーターを C# の**out**パラメーターとして渡すには (たとえば、 `Method1(out myParam)),` **InOutArgument**ではなく**outargument<int>** を使用する必要があります。
 
- **TargetObject**または**Result**という引数を持つメソッドは、<xref:System.Activities.Statements.InvokeMethod> アクティビティを使用して呼び出すことはできません。 これは、<xref:System.Activities.Statements.InvokeMethod> アクティビティによって <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>、<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>、および <xref:System.Activities.Statements.InvokeMethod.Result%2A> が <xref:System.Activities.Activity.CacheMetadata%2A> に登録されるためです。
+ **TargetObject**または**Result**という引数を持つメソッドは、アクティビティを使用して呼び出すことはできません <xref:System.Activities.Statements.InvokeMethod> 。 これは、<xref:System.Activities.Statements.InvokeMethod> アクティビティによって <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>、<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>、および <xref:System.Activities.Statements.InvokeMethod.Result%2A> が <xref:System.Activities.Activity.CacheMetadata%2A> に登録されるためです。
 
  <xref:System.Activities.Activity.CacheMetadata%2A> にパラメーターを登録するアルゴリズムは次のとおりです。
 

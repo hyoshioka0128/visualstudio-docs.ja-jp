@@ -1,5 +1,5 @@
 ---
-title: ツール ウィンドウの表示の構成 |Microsoft Docs
+title: ツールウィンドウの表示構成 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186396"
 ---
 # <a name="tool-window-display-configuration"></a>ツール ウィンドウの表示構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPackage でツール ウィンドウ、既定の位置、サイズ、ドッキング スタイル、およびその他の可視性の情報を登録する場合は、省略可能な値で指定されます。 ツール ウィンドウの登録の詳細については、次を参照してください[ツールの Windows レジストリで。](../extensibility/tool-windows-in-the-registry.md)  
+VSPackage がツールウィンドウを登録すると、既定の位置、サイズ、ドッキングスタイル、およびその他の可視性情報がオプションの値で指定されます。 ツールウィンドウの登録の詳細については、「[レジストリのツール](../extensibility/tool-windows-in-the-registry.md)ウィンドウ」を参照してください。  
   
 ## <a name="window-display-information"></a>ウィンドウの表示情報  
- ツール ウィンドウの基本的な表示の構成は、最大 6 個の省略可能な値に格納されます。  
+ ツールウィンドウの基本的な表示構成は、最大6つのオプション値で格納されます。  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -37,17 +37,17 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Name|型|データ|説明|  
+|名前|種類|Data|説明|  
 |----------|----------|----------|-----------------|  
-|Name|REG_SZ|「の短い名前をここに挿入」|ツール ウィンドウを説明する短い名前。 レジストリ内の参照にのみ使用します。|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|次の 4 つのコンマ区切りの値。 X1, Y1 はツール ウィンドウの左上隅の座標。 X2, Y2 は右下隅の座標。 すべての値は、画面座標でです。|  
-|スタイル|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> 「リンク先」<br /><br /> 「タブ」<br /><br /> "AlwaysFloat"|最初に指定するキーワードは、ツール ウィンドウの状態を表示します。<br /><br /> "MDI"= MDI ウィンドウとドッキングします。<br /><br /> 「フローティング」浮動小数点を = です。<br /><br /> 「リンクされた」= (ウィンドウのエントリで指定された) 別のウィンドウにリンクされています。<br /><br /> 「タブ付き」= 別のツール ウィンドウと組み合わせます。<br /><br /> "AlwaysFloat"= ドッキングことはできません。<br /><br /> 詳細については、以下のコメント セクションを参照してください。|  
-|[Window]|REG_SZ|*\<GUID >*|これをツール ウィンドウのリンクやタブ付きウィンドウの GUID です。 GUID は、独自の windows のいずれかまたはで windows のいずれかに属している可能性があります、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。|  
-|[方向]|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom"|以下のコメント セクションを参照してください。|  
-|DontForceCreate|REG_DWORD|0 または 1|このエントリが存在し、その値が 0 でない場合、ウィンドウが読み込まれましたが、すぐに表示されます。|  
+|名前|REG_SZ|"短い名前をここに入力してください"|ツールウィンドウを説明する短い名前。 レジストリ内の参照にのみ使用されます。|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|4つのコンマ区切りの値。 X1, Y1 は、ツールウィンドウの左上隅の座標です。 X2、Y2 は右下隅の座標です。 すべての値は画面座標にあります。|  
+|Style|REG_SZ|MDI<br /><br /> 点<br /><br /> 付け<br /><br /> 付<br /><br /> "Always Float"|ツールウィンドウの初期表示状態を指定するキーワード。<br /><br /> "MDI" = MDI ウィンドウと共にドッキングされます。<br /><br /> "Float" = 浮動小数点型です。<br /><br /> "リンク" = 別のウィンドウ (ウィンドウエントリで指定) にリンクされています。<br /><br /> "タブ付き" = 別のツールウィンドウと組み合わせて使用します。<br /><br /> "Always Float" = をドッキングすることはできません。<br /><br /> 詳細については、以下の「コメント」セクションを参照してください。|  
+|ウィンドウ|REG_SZ|*\<GUID>*|ツールウィンドウをリンクまたはタブ表示できるウィンドウの GUID。 GUID は、独自のウィンドウまたは IDE 内のウィンドウのいずれかに属している場合があり [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。|  
+|方向|REG_SZ|左側<br /><br /> 直角<br /><br /> 上端<br /><br /> 最終|以下のコメントセクションを参照してください。|  
+|DontForceCreate|REG_DWORD|0 または 1|このエントリが存在し、その値がゼロでない場合、ウィンドウは読み込まれますが、すぐには表示されません。|  
   
 ### <a name="comments"></a>コメント  
- 印刷の向きのエントリは、そのタイトル バーをダブルクリックしたときにツール ウィンドウがドッキング位置を定義します。 ウィンドウのエントリで指定されたウィンドウに対する相対位置パスです。 スタイル エントリは、「リンクされた」に設定されている場合、向きエントリは、"Left"、"Right"、"Top"または"Bottom"にすることができます。 場合は、スタイルのエントリは、「タブ」、向きのエントリ「おくことができます」または"Right"をタブが追加されますを指定します。 スタイルのエントリが「フローティング」場合は、ツール ウィンドウは最初に寄せて配置します。 タイトル バーがダブルクリックされたとき向きとウィンドウのエントリを適用して、ウィンドウは、「タブ」スタイルを使用します。 スタイルのエントリが"AlwaysFloat"の場合は、ツール ウィンドウをドッキングことはできません。 スタイルのエントリが"MDI"の場合は、ツール ウィンドウは、MDI 領域にリンクされているし、ウィンドウのエントリは無視されます。  
+ [方向] エントリは、タイトルバーがダブルクリックされたときにツールウィンドウをドッキングする位置を定義します。 位置は、ウィンドウエントリで指定されたウィンドウに対する相対位置です。 スタイルエントリが "リンク" に設定されている場合、向きエントリは "Left"、"Right"、"Top"、または "Bottom" のいずれかになります。 スタイルエントリが "タブ付き" の場合、[向き] エントリは "Left" または "Right" にすることができ、タブを追加する場所を指定します。 スタイルエントリが "Float" の場合、ツールウィンドウは最初にフローティングします。 タイトルバーをダブルクリックすると、向きとウィンドウのエントリが適用され、ウィンドウは "タブ付き" スタイルを使用します。 Style エントリが "Always Float" の場合、ツールウィンドウをドッキングすることはできません。 Style エントリが "MDI" の場合、ツールウィンドウは MDI 領域にリンクされ、ウィンドウエントリは無視されます。  
   
 ### <a name="example"></a>例  
   
@@ -68,8 +68,8 @@ HKEY_LOCAL_MACHINE\
               Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
 ```  
   
-## <a name="tool-window-visibility"></a>ツール ウィンドウの表示  
- オプションの可視性のサブキーの値では、ツール ウィンドウの可視性の設定によって決まります。 ウィンドウの可視性を必要とするコマンドの Guid を格納する値の名前が使用されます。 コマンドを実行すると、IDE は、ツール ウィンドウが作成され、表示されることを保証します。  
+## <a name="tool-window-visibility"></a>ツールウィンドウの表示  
+ オプションの可視性サブキーの値によって、ツールウィンドウの表示設定が決まります。 値の名前は、ウィンドウの可視性を必要とするコマンドの Guid を格納するために使用されます。 コマンドが実行されると、IDE はツールウィンドウが作成され、表示されることを保証します。  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -86,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|名前|型|データ|説明|  
+|名前|種類|Data|説明|  
 |----------|----------|----------|-----------------|  
 |(既定)|REG_SZ|なし|空のままにします。|  
-|*\<GUID >*|REG_DWORD または REG_SZ|0 または説明する文字列。|任意。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|  
+|*\<GUID>*|REG_DWORD または REG_SZ|0または説明の文字列。|省略可能。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報を示す文字列のみを保持します。 通常、この値は0に設定されてい `reg_dword` ます。|  
   
 ### <a name="example"></a>例  
   
@@ -108,5 +108,5 @@ HKEY_LOCAL_MACHINE\
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPackage の基本事項](../misc/vspackage-essentials.md)

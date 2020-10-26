@@ -1,4 +1,4 @@
-﻿---
+---
 title: 複数言語バージョンをインストールする | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165450"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>複数言語バージョンの Visual Studio をインストールする
@@ -32,9 +32,9 @@ Visual Studio に関する最新のドキュメントについては、[言語�
 
 - Visual Studio サービス パッケージは、インストールされている Visual Studio のすべての言語バージョンに適用されます。 インストールした Visual Studio の言語バージョンごとにサービス パッケージをインストールする必要はありません。
 
-- Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]** 、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
+- Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]**、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Microsoft Language Interface Pack (LIP) および Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
-- [Visual Studio のインストール](../install/install-visual-studio-2015.md)
+- [Visual Studio をインストールする](../install/install-visual-studio-2015.md)

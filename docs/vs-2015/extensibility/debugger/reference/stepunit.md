@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d97f4f065d48b2b9c56bf029fb944eb3e4e7cb11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414614"
 ---
 # <a name="stepunit"></a>STEPUNIT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ステップ実行するための増加単位を指定します。  
+ステップ実行のステップ単位を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,24 +45,24 @@ enum enum_STEPUNIT { 
   
 ## <a name="members"></a>メンバー  
  STEP_STATEMENT  
- ステートメントで手順を実行します。  
+ ステートメントごとにステップ実行します。  
   
  STEP_LINE  
- 行をステップ実行します。  
+ ステップを行単位で実行します。  
   
  STEP_INSTRUCTION  
- 命令で手順を実行します。  
+ 命令別のステップ。  
   
-## <a name="remarks"></a>Remarks  
- 引数として渡される、[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [ステップ](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッドに引数として渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

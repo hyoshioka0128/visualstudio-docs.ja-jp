@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 型の間の関連付けを作成する (クラス デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668116"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>方法: 型の間の関連付けを作成する (クラス デザイナー)
@@ -36,7 +36,7 @@ ms.locfileid: "72668116"
 
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>クラス ダイアグラムに関連行を定義するには
 
-1. クラス デザイナーのツールボックスで、 **[関連]** を選択します。
+1. [ツールボックス] の [クラスデザイナー] で、[ **関連付け**] を選択します。
 
 2. 関連付けでリンクする 2 つの図形間に線を描画します。
 

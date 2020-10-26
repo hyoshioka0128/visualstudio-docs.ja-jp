@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569193"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249876"
 ---
 # <a name="go-to-line-dialog-box"></a>[指定行へのジャンプ] ダイアログ ボックス
 
@@ -26,7 +26,7 @@ ms.locfileid: "75569193"
 
 ![Visual Studio の [指定行へのジャンプ] ダイアログ ボックス](media/go-to-line-dialog-box.png)
 
-## <a name="line-number-1---n"></a>行番号 (1 - \<n>)
+## <a name="line-number-1---n"></a>[行番号 (1 - \<n>)]
 
 **[行番号 (1 - \<n>)]** ボックスに、アクティブ ドキュメント内の移動先の行番号を入力します。 入力できる値は、1 から現在のドキュメントの最後の行番号までです。
 
@@ -36,3 +36,4 @@ ms.locfileid: "75569193"
 - [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)
 - [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
 - [コード エディターの機能](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [移動コマンド](go-to-command.md)

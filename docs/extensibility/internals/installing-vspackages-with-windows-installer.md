@@ -1,5 +1,5 @@
 ---
-title: Windows インストーラを使用した VS パッケージのインストール |マイクロソフトドキュメント
+title: Windows インストーラーを使用した Vspackage のインストール |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,50 +11,50 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707462"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012205"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows インストーラーによる VSPackage のインストール
-VSPackage をに[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合するには、ユーザーのコンピューターにファイルをコピーするだけではありません。 VSPackage のインストーラーは、VSPackage とその依存ファイルをインストールし、登録し、に統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]する必要があります。 VSPackage は、スプラッシュ スクリーンや [情報] ダイアログ ボックス[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]にアイコンを表示するなどの統合機能を利用できます。
+VSPackage をに統合するに [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、ユーザーのコンピューターにファイルをコピーするだけではありません。 VSPackage のインストーラーは、VSPackage とその依存ファイルをインストールし、それらをに登録して統合する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] スプラッシュスクリーンと [バージョン情報] ダイアログボックスにアイコンを表示するなどの統合機能を利用できます。
 
- マイクロソフトの Windows インストーラー ファイルは、VS パッケージを配布する推奨される方法です。 使いやすい Windows インストーラ パッケージは、 で[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]サポートされている任意の Windows オペレーティング システムで実行できます。 詳細については、「 [Windows インストーラ](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)」を参照してください。
+ Vspackage を配布するには、Microsoft Windows インストーラーファイルを使用することをお勧めします。 使いやすい Windows インストーラーパッケージは、でサポートされている任意の Windows オペレーティングシステムで実行でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 詳細については、「 [Windows インストーラー](/previous-versions/2kt85ked(v=vs.120))」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)
 
- Windows インストーラの概要を説明します。
+ Windows インストーラーの概要について説明します。
 
 - [VSPackage のセットアップ シナリオ](../../extensibility/internals/vspackage-setup-scenarios.md)
 
- VSPackages と[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の両方のサイド バイ サイド インストールをサポートするさまざまな方法について説明します。
+ Vspackage との両方のサイドバイサイドインストールをサポートするさまざまな方法について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
 - [Windows インストーラー パッケージの編集](../../extensibility/internals/authoring-a-windows-installer-package.md)
 
- VSPackages を正しくインストールして に統合するために、インストーラーが従う一[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]般的な手順の概要を示します。
+ Vspackage を正しくインストールして統合するための一般的な手順インストーラーの概要について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
 - [システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)
 
- VSPackage の要件が満[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]たされていない場合にインストーラーが検出し、そのコンポーネントを検出し、セットアップをキャンセルする方法について説明します。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage の要件が満たされていない場合に、インストーラーがコンポーネントとそのコンポーネントを検出し、セットアップをキャンセルする方法について説明します。
 
 - [コンポーネント管理](../../extensibility/internals/component-management.md)
 
- 以前の製品バージョンの整合性を維持するインストーラの開発方法について説明します。
+ 以前の製品バージョンの整合性を維持するインストーラーを開発する方法について説明します。
 
 - [VSPackage のインストール ディレクトリの選択](../../extensibility/internals/choosing-the-installation-directory-for-a-vspackage.md)
 
- VSPackages を検索するためのオプションを要約します。
+ Vspackage を検索するためのオプションの概要を示します。
 
 - [VSPackage の登録](../../extensibility/internals/vspackage-registration.md)
 
- インストール時に VSPackage を登録する方法と、自己登録が不適切な理由について説明します。
+ インストール時に Vspackage を登録する方法と、自己登録が正しくない理由について説明します。
 
 - [プロジェクト タイプの配置](../../extensibility/internals/deploying-project-types.md)
 
- マネージ コード プロジェクトの種類に対して新しいプロジェクト型のアグリゲーターを使用する方法について説明します。
+ マネージコードプロジェクトの種類に新しいプロジェクトタイプアグリゲーターを使用する方法について説明します。
 
 - [方法: インストーラー向けの登録情報の生成](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
 
@@ -62,7 +62,7 @@ VSPackage をに[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統�
 
 - [インストール後に実行する必要があるコマンド](../../extensibility/internals/commands-that-must-be-run-after-installation.md)
 
- インストール後のコマンドを実行して VSPackages を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]に統合する方法について説明します。
+ インストール後のコマンドを実行して Vspackage をに統合する方法について説明 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。
 
 - [Windows インストーラーによる VSPackage のアンインストール](../../extensibility/internals/uninstalling-a-vspackage-with-windows-installer.md)
 

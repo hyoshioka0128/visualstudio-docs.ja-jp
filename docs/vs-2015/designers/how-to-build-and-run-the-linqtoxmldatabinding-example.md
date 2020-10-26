@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: LinqToXmlDataBinding という例をビルドして実行する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5584494f65eaef72c2aa350af4e5af36155e0501
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664629"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>方法 : LinqToXmlDataBinding という例をビルドして実行する
@@ -45,7 +45,7 @@ ms.locfileid: "72664629"
 
 1. ソリューション エクスプローラーでソース ファイル Window1.xaml の名前を L2XDBForm.xaml に変更します。 依存するソース ファイル Window1.xaml.cs の名前が、自動的に L2XDBForm.xaml.cs に変更されます。
 
-2. ファイル L2XDBForm.xaml 内のソース コードを、トピック [「L2DBForm.xaml ソース コード」](../designers/l2dbform-xaml-source-code.md) のコードで置き換えます (このファイルは XAML ソース ビューで操作します)。
+2. ファイル L2XDBForm.xaml 内のソース コードを、トピック [「L2DBForm.xaml ソース コード」](../designers/l2dbform-xaml-source-code.md) のコードで置き換えます  (このファイルは XAML ソース ビューで操作します)。
 
 3. 同様に、L2XDBForm.xaml.cs 内のソースを [「L2DBForm.xaml.cs ソース コード」](../designers/l2dbform-xaml-cs-source-code.md) のコードで置き換えます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72664629"
 
 #### <a name="to-run-the-program-and-view-the-book-list"></a>プログラムを実行して書籍一覧を表示するには
 
-1. **F5 キー** ( **[デバッグ開始]** ) または **Ctrl キーを押しながら F5 キー** ( **[デバッグなしで開始]** ) を押して、LinqToXmlDataBinding を実行します。 **[WPF Data Binding using LINQ to XML]** というプログラム ウィンドウが表示されます。
+1. **F5 キー** (**[デバッグ開始]**) または **Ctrl キーを押しながら F5 キー** (**[デバッグなしで開始]**) を押して、LinqToXmlDataBinding を実行します。 **[WPF Data Binding using LINQ to XML]** というプログラム ウィンドウが表示されます。
 
 2. UI の最上部に、書籍一覧を表す生の **XML** が表示されます。 この部分は WPF の <xref:System.Windows.Controls.TextBlock> コントロールを使って表示されており、マウスやキーボードで操作できません。
 
@@ -66,9 +66,9 @@ ms.locfileid: "72664629"
 
 #### <a name="to-add-and-delete-books-from-the-list"></a>一覧に対して書籍を追加および削除するには
 
-1. 一覧から既存の書籍を削除するには、 **[Book List]** セクションで書籍を選択し、 **[Remove Selected Book]** ボタンをクリックします。 書籍一覧および生の XML ソースの両方で書籍のエントリが削除されます。
+1. 一覧から既存の書籍を削除するには、**[Book List]** セクションで書籍を選択し、**[Remove Selected Book]** ボタンをクリックします。 書籍一覧および生の XML ソースの両方で書籍のエントリが削除されます。
 
-2. 一覧に新しい書籍を追加するには、最後のセクションである **[Add New Book]** にある **[ID]** および **[Value]** の <xref:System.Windows.Controls.TextBox> コントロールに値を入力し、 **[Add Book]** ボタンをクリックします。 書籍一覧と XML の両方に書籍が追加されます。 このプログラムでは入力値が検証されません。
+2. 一覧に新しい書籍を追加するには、最後のセクションである **[Add New Book]** にある **[ID]** および **[Value]** の <xref:System.Windows.Controls.TextBox> コントロールに値を入力し、**[Add Book]** ボタンをクリックします。 書籍一覧と XML の両方に書籍が追加されます。 このプログラムでは入力値が検証されません。
 
 #### <a name="to-edit-an-existing-book-entry"></a>既存の書籍エントリを編集するには
 

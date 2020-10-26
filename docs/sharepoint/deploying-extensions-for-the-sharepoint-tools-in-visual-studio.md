@@ -1,5 +1,5 @@
 ---
-title: Visual Studio の SharePoint ツールの拡張機能の配置 |Microsoft Docs
+title: Visual Studio での SharePoint ツールの拡張機能の配置 |Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,125 +13,125 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580645"
 ---
-# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio の SharePoint ツールの拡張機能をデプロイします。
+# <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張機能の配置
 
-SharePoint ツール拡張機能を展開するには、作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]拡張機能のアセンブリおよび拡張機能を配布するその他のファイルを含む拡張機能 (VSIX) パッケージ。 VSIX パッケージは、Open Packaging Conventions (OPC) 標準に準拠した圧縮ファイルです。 VSIX パッケージが、 *.vsix*拡張機能。
+SharePoint ツールの拡張機能を配置するには、拡張機能 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] アセンブリおよび拡張機能と共に配布するその他のファイルを含む拡張機能 (VSIX) パッケージを作成します。 VSIX パッケージは、Open パッケージング規約 (OPC) 標準に従い、圧縮されたファイルです。 VSIX パッケージには、 *.vsix* という拡張子が付いています。
 
-VSIX パッケージを作成した後、その他のユーザーは、拡張機能をインストールする .vsix ファイルを実行できます。 ユーザーは、拡張機能をインストールしたときに、%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions フォルダーにすべてのファイル インストールされます。 VSIX パッケージをアップロードする、拡張機能を展開する、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイト、またはすることができます、パッケージ、お客様に配布のパッケージをネットワーク共有またはその他のいくつかの Web ホスティングなど、他の方法でサイトです。
+VSIX パッケージを作成した後、他のユーザーは .vsix ファイルを実行して拡張機能をインストールできます。 ユーザーが拡張機能をインストールすると、すべてのファイルが%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions フォルダーにインストールされます。 拡張機能をデプロイするには、VSIX パッケージを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードするか、ネットワーク共有や他の web サイトでパッケージをホストするなど、他の方法で顧客にパッケージを配布することができます。
 
-VSIX パッケージの作成および展開することの詳細については、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)を参照してください[Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)します。
+VSIX パッケージの作成と [Visual Studio Marketplace](https://marketplace.visualstudio.com/)への配置の詳細については、「 [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)」を参照してください。
 
- 使用して VSIX パッケージを作成することができます、 **VSIX プロジェクト**には、Visual Studio は、テンプレートでは、VSIX パッケージを手動で作成することができます。
+ Vsix パッケージを作成するには、Visual Studio で **Vsix プロジェクト** テンプレートを使用するか、vsix パッケージを手動で作成します。
 
-## <a name="use-vsix-projects-to-create-vsix-packages"></a>VSIX プロジェクトを使用して、VSIX パッケージを作成するには
+## <a name="use-vsix-projects-to-create-vsix-packages"></a>Vsix プロジェクトを使用した VSIX パッケージの作成
 
-使用することができます、 **VSIX プロジェクト**SharePoint ツールの拡張機能の VSIX パッケージを作成する Visual Studio SDK によって提供されるテンプレート。 VSIX プロジェクトを使用して VSIX パッケージを手動で作成をいくつかの利点を提供します。
+Visual Studio SDK に用意されている **Vsix プロジェクト** テンプレートを使用して、SharePoint ツールの拡張機能の vsix パッケージを作成できます。 Vsix プロジェクトを使用すると、手動で VSIX パッケージを作成するよりも多くのメリットが得られます。
 
-- Visual Studio は、プロジェクトをビルドするときに、VSIX パッケージを自動的に生成されます。 展開ファイルをパッケージに追加して、パッケージの [Content_Types] .xml ファイルを作成するなどのタスクが実行されます。
+- プロジェクトをビルドすると、Visual Studio によって VSIX パッケージが自動的に生成されます。 パッケージに配置ファイルを追加し、パッケージの [Content_Types] .xml ファイルを作成するなどのタスクが実行されます。
 
-- VSIX パッケージに、拡張機能プロジェクトとプロジェクト テンプレートと項目テンプレートなどの他のファイルのビルド出力を含めるよう、VSIX プロジェクトを構成することができます。
+- Vsix プロジェクトを構成して、拡張機能プロジェクトのビルド出力と、プロジェクトテンプレートや項目テンプレートなどの他のファイルを VSIX パッケージに含めることができます。
 
-詳細については、VSIX プロジェクトを使用して、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。
+VSIX プロジェクトの使用方法の詳細については、「 [Vsix プロジェクトテンプレート](../extensibility/vsix-project-template.md)」を参照してください。
 
-### <a name="organize-your-projects"></a>プロジェクトを整理します。
+### <a name="organize-your-projects"></a>プロジェクトを整理する
 
-既定では、VSIX プロジェクトはアセンブリではない、VSIX パッケージを生成するだけです。 そのため、通常は実装しない SharePoint ツール拡張機能を VSIX プロジェクト。 一般に、少なくとも 2 つのプロジェクトで作業します。
+既定では、VSIX プロジェクトは、アセンブリではなく、VSIX パッケージのみを生成します。 そのため、通常は、VSIX プロジェクトに SharePoint ツールの拡張機能を実装しません。 一般に、少なくとも2つのプロジェクトを使用します。
 
 - VSIX プロジェクト。
 
-- 拡張機能を実装するクラス ライブラリ プロジェクト。
+- 拡張機能を実装するクラスライブラリプロジェクト。
 
-操作することがありますもその他のプロジェクトで特定の種類の拡張機能。
+また、特定の種類の拡張機能の追加プロジェクトを使用することもできます。
 
-- 拡張機能で使用される任意の SharePoint コマンドを実装するクラス ライブラリ プロジェクト。 このシナリオを実証するチュートリアルでは、次を参照してください。[チュートリアル。Web パーツを表示するサーバー エクスプ ローラーを拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)します。
+- 拡張機能によって使用される任意の SharePoint コマンドを実装するクラスライブラリプロジェクト。 このシナリオを示すチュートリアルについては、「 [チュートリアル: web パーツを表示するためのサーバーエクスプローラーの拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)」を参照してください。
 
-- プロジェクト テンプレートまたは項目テンプレート プロジェクトを拡張機能は、SharePoint プロジェクト項目の新しい型を定義している場合、プロジェクト テンプレート、または項目テンプレートを作成します。 このシナリオを実証するチュートリアルでは、次を参照してください。[チュートリアル。カスタム動作プロジェクト項目を作成、項目テンプレート、第 1 部に](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)します。
+- 項目テンプレートまたはプロジェクトテンプレートプロジェクト。拡張機能で SharePoint プロジェクト項目の新しい種類が定義されている場合は、項目テンプレートまたはプロジェクトテンプレートを作成します。 このシナリオを示すチュートリアルについては、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)」を参照してください。
 
-- 拡張機能には、テンプレートが含まれている場合、プロジェクト テンプレート、または項目テンプレートのカスタム ウィザードを実装するクラス ライブラリ プロジェクト。 このシナリオを実証するチュートリアルでは、次を参照してください。[チュートリアル。カスタム動作プロジェクト項目を作成、項目テンプレート、第 2 部に](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)します。
+- 拡張機能にテンプレートが含まれている場合に、項目テンプレートまたはプロジェクトテンプレートのカスタムウィザードを実装するクラスライブラリプロジェクト。 このシナリオを示すチュートリアルについては、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 2)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)」を参照してください。
 
-同じ Visual Studio ソリューション内のすべてのプロジェクトを含めると場合、は、クラス ライブラリ プロジェクトのビルド出力を含める に、VSIX プロジェクトの source.extension.vsixmanifest ファイルを変更できます。
+すべてのプロジェクトを同じ Visual Studio ソリューションに含める場合は、VSIX プロジェクトの source.extension.vsixmanifest ファイルを変更して、クラスライブラリプロジェクトのビルド出力を含めることができます。
 
-### <a name="edit-the-vsix-manifest"></a>VSIX マニフェストを編集します。
+### <a name="edit-the-vsix-manifest"></a>VSIX マニフェストを編集する
 
-拡張機能に含めるすべてのアイテムのエントリを含めるに VSIX プロジェクトの source.extension.vsixmanifest ファイルを編集する必要があります。 Source.extension.vsixmanifest ファイルを開くには、そのショートカット メニューから、ファイル内の XML を編集するための UI を提供するデザイナーで、ファイルが表示されます。 詳細については、次を参照してください。 [VSIX マニフェスト デザイナー](../extensibility/vsix-manifest-designer.md)します。
+拡張機能に含めるすべての項目のエントリを含めるには、VSIX プロジェクトの source.extension.vsixmanifest ファイルを編集する必要があります。 ショートカットメニューから source.extension.vsixmanifest ファイルを開くと、ファイルがデザイナーに表示されます。このファイルには、ファイル内の XML を編集するための UI が用意されています。 詳細については、「 [VSIX マニフェストデザイナー](../extensibility/vsix-manifest-designer.md)」を参照してください。
 
-エントリは、次の項目の source.extension.vsixmanifest ファイルを追加する必要があります。
+次の項目について、source.extension.vsixmanifest ファイルにエントリを追加する必要があります。
 
-- 拡張機能のアセンブリ。
+- 拡張アセンブリ。
 
-- 拡張機能で使用される任意の SharePoint コマンドを実装するアセンブリ。
+- 拡張機能によって使用される任意の SharePoint コマンドを実装するアセンブリ。
 
-- プロジェクト テンプレートや項目テンプレート、拡張機能に関連付けられています。
+- 拡張機能に関連付けられているプロジェクトテンプレートまたは項目テンプレート。
 
-- 拡張機能に関連付けられているテンプレートのカスタム ウィザード。
+- 拡張機能に関連付けられているテンプレートのカスタムウィザード。
 
-次の手順では、これらの各項目の .vsixmanifest ファイルにエントリを追加する方法について説明します。
+次の手順では、これらの各項目の source.extension.vsixmanifest ファイルにエントリを追加する方法について説明します。
 
-#### <a name="to-include-the-extension-assembly"></a>拡張機能アセンブリを含める
+#### <a name="to-include-the-extension-assembly"></a>拡張機能アセンブリを含めるには
 
-1. VSIX プロジェクトの source.extension.vsixmanifest ファイルのショートカット メニューを開きし、**開く**します。
+1. VSIX プロジェクトで、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[ **開く**] を選択します。
 
-     ファイルは、デザイナーが開きます。
+     デザイナーでファイルが開きます。
 
-2. **資産** タブ、エディターの選択、**新規**ボタンをクリックします。
+2. エディターの [ **アセット** ] タブで、[ **新規** ] ボタンをクリックします。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-3. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
+3. [ **種類** ] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
-4. **ソース**ボックスの一覧で、次の手順のいずれかを実行します。
+4. [ **ソース** ] ボックスの一覧で、次のいずれかの手順を実行します。
 
-    - 拡張機能のアセンブリは、VSIX プロジェクトと同じソリューション内にあるプロジェクトから構築された場合、選択**現在のソリューションでプロジェクトを**します。 **プロジェクト**一覧で、プロジェクトの名前を選択します。
+    - 拡張機能アセンブリが、VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト**を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
 
-    - 拡張機能のアセンブリがプロジェクト内のファイルとして含める場合は、選択**ファイル システム上の**します。 **パス**を一覧表示、拡張機能アセンブリ ファイルを完全なパスを入力するかを使用して、**参照** ボタンを見つけて、アセンブリ ファイルを選択します。
-
-5. **[OK]** を選択します。
-
-#### <a name="to-include-a-sharepoint-command-assembly"></a>SharePoint コマンドのアセンブリを含める
-
-1. VSIX プロジェクトの source.extension.vsixmanifest ファイルのショートカット メニューを開きし、、**開く**ボタンをクリックします。
-
-     ファイルがデザイナーで開きます。
-
-2. **資産**セクション、エディターの選択、**新規**ボタンをクリックします。
-
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
-
-3. **型**ボックスに、入力**SharePoint.Commands.v4**します。
-
-4. **ソース**ボックスの一覧で、次の手順のいずれかを実行します。
-
-    - コマンドのアセンブリは、VSIX プロジェクトと同じソリューション内にあるプロジェクトから構築された場合、選択**現在のソリューションでプロジェクトを**します。 **プロジェクト**一覧で、プロジェクトの名前を選択します。
-
-    - コマンドのアセンブリがファイルとしてプロジェクトに含まれる場合は、選択**ファイル システム上の**します。 **パス**を一覧表示、拡張機能アセンブリ ファイルを完全なパスを入力するかを使用して、**参照** ボタンを見つけて、アセンブリ ファイルを選択します。
+    - 拡張機能アセンブリがファイルとしてプロジェクトに含まれている場合は、[ **ファイルシステム上のファイル**] を選択します。 [ **パス** ] の一覧で、拡張機能アセンブリファイルの完全なパスを入力するか、[ **参照** ] ボタンを使用してアセンブリファイルを検索して選択します。
 
 5. **[OK]** を選択します。
 
-#### <a name="to-include-a-template-that-you-create"></a>作成したテンプレートを含める
+#### <a name="to-include-a-sharepoint-command-assembly"></a>SharePoint コマンドアセンブリを含めるには
 
-1. VSIX プロジェクトの source.extension.vsixmanifest ファイルのショートカット メニューを開きし、、**開く**ボタンをクリックします。
+1. VSIX プロジェクトで、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[ **開く** ] をクリックします。
 
-     ファイルがデザイナーで開きます。
+     デザイナーでファイルが開きます。
 
-2. **資産**セクション、エディターの選択、**新規**ボタンをクリックします。
+2. エディターの [ **アセット** ] セクションで、[ **新規** ] ボタンを選択します。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-3. **型**一覧で、選択**Microsoft.VisualStudio.ProjectTemplate**または **[microsoft.visualstudio.itemtemplate]** します。
+3. [ **種類** ] ボックスに「 **SharePoint. コマンド. v4**」と入力します。
 
-4. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
+4. [ **ソース** ] ボックスの一覧で、次のいずれかの手順を実行します。
 
-5. **プロジェクト**ボックスの一覧で、プロジェクトの名前を選択し、、 **OK**ボタン。
+    - コマンドアセンブリが VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト**を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
 
-6. **ソリューション エクスプ ローラー**プロジェクト テンプレートや項目テンプレート プロジェクトのショートカット メニューを開き、選択し、**プロジェクトのアンロード**します。
+    - コマンドアセンブリがプロジェクト内のファイルとして含まれている場合は、[ **ファイルシステム上のファイル**] を選択します。 [ **パス** ] の一覧で、拡張機能アセンブリファイルの完全なパスを入力するか、[ **参照** ] ボタンを使用してアセンブリファイルを検索して選択します。
 
-7. プロジェクト ノードのショートカット メニューを再度開き、選択**編集**_YourTemplateProjectName_**.csproj**または**編集**_YourTemplateProjectName_**.vbproj**します。
+5. **[OK]** を選択します。
+
+#### <a name="to-include-a-template-that-you-create"></a>作成するテンプレートを含めるには
+
+1. VSIX プロジェクトで、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[ **開く** ] をクリックします。
+
+     デザイナーでファイルが開きます。
+
+2. エディターの [ **アセット** ] セクションで、[ **新規** ] ボタンを選択します。
+
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
+
+3. [ **種類** ] ボックスの一覧で、 **VisualStudio** または **VisualStudio**を選択します。
+
+4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
+
+5. [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択し、[ **OK** ] をクリックします。
+
+6. **ソリューションエクスプローラー**で、プロジェクトテンプレートまたは項目テンプレートプロジェクトのショートカットメニューを開き、[**プロジェクトのアンロード**] をクリックします。
+
+7. プロジェクトノードのショートカットメニューをもう一度開き、[_テンプレート_の**編集**] を選択するか、_テンプレート projectname_**. .vbproj**を**編集****します。**
 
 8. プロジェクト ファイルで次の `VSTemplate` 要素を見つけます。
 
@@ -147,19 +147,19 @@ VSIX パッケージの作成および展開することの詳細については
     </VSTemplate>
     ```
 
-     `OutputSubPath` 要素は、プロジェクトをビルドするとプロジェクト テンプレートが作成されるパス内の追加フォルダーを指定します。 ここで指定したフォルダーは、顧客を開く場合にのみ、項目テンプレートが利用できるということを確認、**新しいプロジェクトの追加** ダイアログ ボックスで、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
+     `OutputSubPath` 要素は、プロジェクトをビルドするとプロジェクト テンプレートが作成されるパス内の追加フォルダーを指定します。 ここで指定するフォルダーでは、顧客が [ **新しいプロジェクトの追加** ] ダイアログボックスを開いたときにのみ項目テンプレートを使用できるようにし、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
 10. ファイルを保存して閉じます。
 
-11. **ソリューション エクスプ ローラー**プロジェクト テンプレートや項目テンプレート プロジェクトのショートカット メニューを開き、選択し、**プロジェクトの再読み込み**します。
+11. **ソリューションエクスプローラー**で、プロジェクトテンプレートまたは項目テンプレートプロジェクトのショートカットメニューを開き、[**プロジェクトの再読み込み**] をクリックします。
 
-#### <a name="to-include-a-template-that-you-create-manually"></a>手動で作成したテンプレートを含める
+#### <a name="to-include-a-template-that-you-create-manually"></a>手動で作成したテンプレートを含めるには
 
-1. VSIX プロジェクト テンプレートを格納するプロジェクトに新しいフォルダーを追加します。
+1. VSIX プロジェクトで、テンプレートを格納する新しいフォルダーをプロジェクトに追加します。
 
-2. この新しいフォルダーの下、次のサブフォルダーを作成し、テンプレート (.zip) ファイルを追加、*ロケール ID*フォルダー。
+2. この新しいフォルダーの下に次のサブフォルダーを作成し、テンプレート (.zip) ファイルを *ロケール ID* フォルダーに追加します。
 
-     *YourTemplateFolder*
+     *自分のテンプレートフォルダー*
 
      **SharePoint**
 
@@ -167,82 +167,82 @@ VSIX パッケージの作成および展開することの詳細については
 
      *ロケール ID*
 
-     *YourTemplateName*.zip
+     自分の*templatename*.zip
 
-     たとえば、英語 (米国) ロケールをサポートする ContosoCustomAction.zip という名前の項目テンプレートがあれば、完全なパス可能性があります*ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*します。
+     たとえば、英語 (米国) のロケールをサポートする ContosoCustomAction.zip という名前の項目テンプレートがある場合、完全なパスは *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*可能性があります。
 
-3. **ソリューション エクスプ ローラー**、テンプレート ファイルを選択 (*YourTemplateName*.zip)。
+3. **ソリューションエクスプローラー**で、テンプレートファイル (ファイル名) を選択*します。*
 
-4. **プロパティ**ウィンドウで、設定、**ビルド アクション**プロパティを**コンテンツ**します。
+4. [ **プロパティ** ] ウィンドウで、[ **ビルドアクション** ] プロパティを [ **コンテンツ**] に設定します。
 
-5. Source.extension.vsixmanifest ファイルのショートカット メニューを開き、選択し、**オープン**します。
+5. Source.extension.vsixmanifest ファイルのショートカットメニューを開き、[ **開く**] を選択します。
 
-     ファイルがデザイナーで開きます。
+     デザイナーでファイルが開きます。
 
-6. **資産**セクション、エディターの選択、**新規**ボタンをクリックします。
+6. エディターの [ **アセット** ] セクションで、[ **新規** ] ボタンを選択します。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-7. **型**一覧で、選択 **[microsoft.visualstudio.itemtemplate]** または**Microsoft.VisualStudio.ProjectTemplate**します。
+7. [ **種類** ] ボックスの一覧で、 **VisualStudio** または **VisualStudio**を選択します。
 
-8. **ソース**一覧で、選択**ファイル システム上の**します。
+8. [ **ソース** ] ボックスの一覧で、[ **ファイルシステム上のファイル**] を選択します。
 
-9. **パス**フィールドに、アセンブリへの完全なパスを入力 (たとえば、 *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*を使用して、または、 **参照**を見つけて、アセンブリの選択ボタンをクリックし、、 **OK**ボタンをクリックします。
+9. [ **パス** ] フィールドに、アセンブリへの完全なパス (たとえば、 *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*) を入力するか、[ **参照** ] ボタンを使用してアセンブリを検索して選択し、[ **OK** ] をクリックします。
 
-#### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>プロジェクトのテンプレートや項目テンプレートのウィザードを含める
+#### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>プロジェクトテンプレートまたは項目テンプレートにウィザードを含めるには
 
-1. VSIX プロジェクトの source.extension.vsixmanifest ファイルのショートカット メニューを開きし、**開く**します。
+1. VSIX プロジェクトで、source.extension.vsixmanifest ファイルのショートカットメニューを開き、[ **開く**] を選択します。
 
-     ファイルがデザイナーで開きます。
+     デザイナーでファイルが開きます。
 
-2. **資産**セクション、エディターの選択、**新規**ボタンをクリックします。
+2. エディターの [ **アセット** ] セクションで、[ **新規** ] ボタンを選択します。
 
-     **新しい資産の追加** ダイアログ ボックスが表示されます。
+     [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-3. **型**一覧で、選択 **[microsoft.visualstudio.assembly]** します。
+3. [ **種類** ] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
-4. **ソース**ボックスの一覧で、次の手順のいずれかを実行します。
+4. [ **ソース** ] ボックスの一覧で、次のいずれかの手順を実行します。
 
-    - ウィザード アセンブリには、VSIX プロジェクトと同じソリューション内にあるプロジェクトから構築された、場合**現在のソリューションでプロジェクトを**します。 **プロジェクト**一覧で、プロジェクトの名前を選択します。
+    - ウィザードアセンブリが VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト**を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
 
-    - ウィザード アセンブリがプロジェクト内のファイルとして含める場合は、選択**ファイル システム上の**します。 **パス**フィールド、アセンブリ ファイルを完全なパスを入力するかを使用して、**参照**を見つけて、アセンブリの選択ボタンをクリックします。
+    - ウィザードアセンブリがプロジェクト内のファイルとして含まれている場合は、[ **ファイルシステム上のファイル**] を選択します。 [ **パス** ] フィールドにアセンブリファイルへの完全なパスを入力するか、[ **参照** ] ボタンを使用してアセンブリを探して選択します。
 
 5. **[OK]** を選択します。
 
 ### <a name="related-walkthroughs"></a>関連するチュートリアル
 
-次の表は、VSIX プロジェクトを使用して、さまざまな種類の SharePoint ツール拡張機能をデプロイする方法について説明するチュートリアルを一覧表示します。
+次の表に、VSIX プロジェクトを使用してさまざまな種類の SharePoint ツール拡張機能を配置する方法を示すチュートリアルを示します。
 
 |拡張機能の種類|関連するチュートリアル|
 |--------------------|--------------------------|
-|拡張機能アセンブリのみを含む拡張機能|[チュートリアル: SharePoint プロジェクト項目の種類を拡張します。](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [チュートリアル: SharePoint プロジェクト拡張機能を作成します。](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [チュートリアル: サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルを呼び出す](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|SharePoint コマンドを含む拡張機能|[チュートリアル: SharePoint プロジェクトのカスタム配置手順を作成します。](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [チュートリアル: Web パーツを表示するサーバー エクスプ ローラーを拡張します。](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [チュートリアル: プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|Visual Studio テンプレートを含む拡張機能|[チュートリアル: 項目テンプレート、第 1 部でのカスタム動作プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [チュートリアル: プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
-|テンプレート ウィザードを含む拡張機能|[チュートリアル: 項目テンプレート、第 2 部でのカスタム動作プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [チュートリアル: プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成します。](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|拡張機能アセンブリのみを含む拡張機能|[チュートリアル: SharePoint プロジェクト項目の種類の拡張](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [チュートリアル: SharePoint プロジェクト拡張機能の作成](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [チュートリアル: サーバーエクスプローラーの拡張機能で SharePoint クライアントオブジェクトモデルを呼び出す](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|SharePoint コマンドを含む拡張機能|[チュートリアル: SharePoint プロジェクトのカスタム配置手順の作成](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|Visual Studio テンプレートを含む拡張機能|[チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|テンプレートウィザードを含む拡張機能|[チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 2)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
-## <a name="create-vsix-packages-manually"></a>VSIX パッケージを手動で作成します。
+## <a name="create-vsix-packages-manually"></a>VSIX パッケージを手動で作成する
 
-SharePoint ツール拡張機能の VSIX パッケージを手動で作成する場合は、次の手順に従います。
+SharePoint ツール拡張機能の VSIX パッケージを手動で作成する場合は、次の手順を実行します。
 
-1. 新しいフォルダーには、extension.vsixmanifest ファイルと [Content_Types] .xml ファイルを作成します。 詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
+1. 新しいフォルダーに source.extension.vsixmanifest ファイルと [Content_Types] .xml ファイルを作成します。 詳細については、「 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)」を参照してください。
 
-2. Windows エクスプ ローラーで 2 つの XML ファイルを含むフォルダーを右クリックし、送信 をクリックし、圧縮 (zip 形式) フォルダー をクリックします。 Filename.vsix、Filename には、パッケージをインストールする再頒布可能ファイルの名前には、結果として得られる .zip ファイルを変更します。
+2. Windows エクスプローラーで、2つの XML ファイルが含まれているフォルダーを右クリックし、[送信] をクリックして、[圧縮 (zip 形式) フォルダー] をクリックします。 結果として得られる .zip ファイルの名前を Filename.vsix に変更します。ここで Filename には、パッケージをインストールする再頒布可能なファイルの名前を指定します。
 
-3. VSIX パッケージに、拡張機能アセンブリを追加します。 拡張機能には、SharePoint コマンドが含まれている場合も、VSIX パッケージする SharePoint コマンドを実装するアセンブリを追加します。
+3. 拡張機能アセンブリを VSIX パッケージに追加します。 拡張機能に SharePoint コマンドが含まれている場合は、SharePoint コマンドを実装するアセンブリを VSIX パッケージに追加することもできます。
 
-4. Extension.vsixmanifest ファイルを変更します。
+4. Source.extension.vsixmanifest ファイルを変更します。
 
-    - 追加、`Microsoft.VisualStudio.MefComponent`の下の要素、`Assets`要素、および、VSIX パッケージで、拡張機能を実装するアセンブリの相対パスに新しい要素の値を設定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    - 要素の `Microsoft.VisualStudio.MefComponent` 下に要素を追加 `Assets` し、新しい要素の値を、VSIX パッケージ内の拡張機能を実装するアセンブリの相対パスに設定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-    - 拡張機能には、SharePoint のサーバー オブジェクト モデルを呼び出す SharePoint コマンドが含まれている場合は、追加、`Microsoft.VisualStudio.Assembly`の下の要素、`Assets`要素。 VSIX パッケージ内の SharePoint コマンドを実装するアセンブリの相対パスに新しい要素の値を設定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
+    - SharePoint のサーバーオブジェクトモデルを呼び出す SharePoint コマンドが拡張機能に含まれている場合は、要素の下に要素を追加し `Microsoft.VisualStudio.Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内の SharePoint コマンドを実装するアセンブリの相対パスに設定します。 詳細については、「 [Asset 要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)」を参照してください。
 
-    - 拡張機能には、プロジェクトのテンプレートや項目テンプレートが含まれている場合は、追加、`ProjectTemplate`または`ItemTemplate`の下の要素、`Assets`要素。 VSIX パッケージ内のテンプレートが含まれるフォルダーの相対パスに新しい要素の値を設定します。 詳細については、次を参照してください。 [ProjectTemplate 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))と[ItemTemplate の要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))します。
+    - 拡張機能にプロジェクトテンプレートまたは項目テンプレートが含まれている場合は、要素の下に要素 `ProjectTemplate` または要素を追加し `ItemTemplate` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のテンプレートが格納されているフォルダーの相対パスに設定します。 詳細については、「 [Projecttemplate 要素 (VSX schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) 」および「 [ITEMTEMPLATE 要素 (VSX schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))」を参照してください。
 
-    - 拡張機能には、プロジェクトのテンプレートや項目テンプレートのカスタム ウィザードが含まれている場合は、追加、`Assembly`の下の要素、`Assets`要素。 VSIX パッケージ内のアセンブリの相対パスに新しい要素の値を設定し、設定、`AssemblyName`属性 (バージョン、カルチャ、および公開キー トークンを含む) 完全なアセンブリ名にします。 詳細については、次を参照してください。 [Dependency 要素 (VSX Schema)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)します。
+    - 拡張機能にプロジェクトテンプレートまたは項目テンプレートのカスタムウィザードが含まれている場合は、要素の下に要素を追加し `Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のアセンブリの相対パスに設定し、 `AssemblyName` 属性を完全なアセンブリ名 (バージョン、カルチャ、公開キートークンを含む) に設定します。 詳細については、「 [Dependency 要素 (VSX Schema)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)」を参照してください。
 
 ### <a name="example"></a>例
 
-次の例では、SharePoint ツール拡張機能の extension.vsixmanifest ファイルの内容を示します。 拡張機能は、Contoso.ProjectExtension.dll というアセンブリに実装されます。 拡張機能には、Contoso.ExtensionCommands.dll とという名前のフォルダーの下の項目テンプレートに指定される SharePoint コマンド アセンブリが含まれています。 **ItemTemplates** VSIX パッケージにします。 この例では、VSIX パッケージに extension.vsixmanifest ファイルと同じフォルダーには、アセンブリの両方を前提としています。
+次の例は、SharePoint ツールの拡張機能の source.extension.vsixmanifest ファイルの内容を示しています。 この拡張機能は Contoso.ProjectExtension.dll という名前のアセンブリに実装されています。 拡張機能には、Contoso.ExtensionCommands.dll という名前の SharePoint コマンドアセンブリと、VSIX パッケージで **Itemtemplates** という名前のフォルダーの下に項目テンプレートが含まれています。 この例では、両方のアセンブリが VSIX パッケージの source.extension.vsixmanifest ファイルと同じフォルダーにあることを前提としています。
 
 ```xml
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
@@ -264,9 +264,9 @@ SharePoint ツール拡張機能の VSIX パッケージを手動で作成する
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [SharePoint プロジェクト システムを拡張します。](../sharepoint/extending-the-sharepoint-project-system.md)
-- [サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張します。](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Visual Studio の SharePoint ツールの拡張機能をデバッグします。](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
+- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Visual Studio の SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

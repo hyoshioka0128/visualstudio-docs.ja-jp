@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547447"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio の コモン コントロール パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>コモンコントロール
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> コモンコントロール
 
 ### <a name="overview"></a>概要
  一般的なコントロールは、Visual Studio のユーザーインターフェイスの大部分を構成します。 Visual Studio インターフェイスで使用される最も一般的なコントロールは、 [Windows デスクトップの相互作用ガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)に従う必要があります。 このドキュメントは、Visual Studio に固有のものであり、これらの Windows のガイドラインを補強する特別な状況や詳細について説明しています。
@@ -44,16 +44,16 @@ ms.locfileid: "85547447"
 - [ツリー ビュー](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
 #### <a name="visual-style"></a>視覚スタイル
- コントロールをスタイル設定するときに最初に考慮すべきことは、コントロールがテーマ付き UI で使用されるかどうかです。 標準 UI のコントロールは、テーマが適用されていない UI であり、[通常の Windows デスクトップスタイル](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)に従う必要があります。つまり、テンプレートは再テンプレート化されず、既定のコントロールの外観で表示されます。
+ コントロールをスタイル設定するときに最初に考慮すべきことは、コントロールがテーマ付き UI で使用されるかどうかです。 標準 UI のコントロールは、テーマが適用されていない UI であり、 [通常の Windows デスクトップスタイル](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)に従う必要があります。つまり、テンプレートは再テンプレート化されず、既定のコントロールの外観で表示されます。
 
 - **標準 (ユーティリティ) のダイアログ:** テーマがありません。 再テンプレートしないでください。 基本的なコントロールスタイルの既定値を使用します。
 
 - **ツールウィンドウ、ドキュメントエディター、デザインサーフェイス、およびテーマ付きダイアログ:** カラーサービスを使用して、特別にテーマを設定した外観を使用します。
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>バー
- コードエディターなどのコンテンツ情報を補完する場合を除き、スクロールバーは[Windows のスクロールバーの一般的な対話パターン](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx)に従う必要があります。
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> バー
+ コードエディターなどのコンテンツ情報を補完する場合を除き、スクロールバーは [Windows のスクロールバーの一般的な対話パターン](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) に従う必要があります。
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>入力フィールド
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> 入力フィールド
  一般的な対話動作の場合は、 [Windows デスクトップのガイドラインに従ってテキストボックスを](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx)表示します。
 
 #### <a name="visual-style"></a>視覚スタイル
@@ -76,7 +76,7 @@ ms.locfileid: "85547447"
 
      ![正しい入力フィールドコントロールの幅](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl")**正しい入力フィールド長: 入力フィールドは、予期されるコンテンツの幅と**して適切です。
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>コンボボックスとドロップダウンリスト
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> コンボボックスとドロップダウンリスト
  一般的な対話動作の場合は、「 [Windows デスクトップのガイドライン」のドロップダウンリストとコンボボックスに](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx)従います。
 
 #### <a name="visual-style"></a>視覚スタイル
@@ -96,7 +96,7 @@ ms.locfileid: "85547447"
 
  **ドロップダウンコントロールの正しいフィールド長**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>チェックボックス
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> チェックボックス
  一般的な対話動作の場合は、 [Windows デスクトップのガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx)に従ってチェックボックスをオンにします。
 
 #### <a name="visual-style"></a>視覚スタイル
@@ -111,11 +111,11 @@ ms.locfileid: "85547447"
 
 - チェックボックスをテキストの最初の行のベースラインに揃えます。
 
-     ![無効なチェックボックスの配置](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign"): チェックボックスの配置が正しくありません。チェックボックス**はテキストの中央にあります。**
+     ![無効なチェックボックスの配置](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707-05_IncorrectCheckBoxAlign"): チェックボックスの配置が正しくありません。チェックボックス **はテキストの中央にあります。**
 
      ![正しいチェックボックスの配置](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign")**正しいチェックボックスの配置: チェックボックスは、テキストの最初の行のベースラインに揃えられます。**
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>オプションボタン
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> オプションボタン
  一般的な対話動作の場合は、 [Windows デスクトップのガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx)に従ってラジオボタンを使用します。
 
 #### <a name="visual-style"></a>視覚スタイル
@@ -124,8 +124,8 @@ ms.locfileid: "85547447"
 #### <a name="specialized-interactions"></a>特化された対話
  オプションの選択を囲むためにグループフレームを使用する必要はありません。
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>フレームのグループ化
- 一般的な相互作用の動作については、「[グループフレームの Windows デスクトップガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx)」に従ってください。
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> フレームのグループ化
+ 一般的な相互作用の動作については、「 [グループフレームの Windows デスクトップガイドライン](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx)」に従ってください。
 
 #### <a name="visual-style"></a>視覚スタイル
  ユーティリティダイアログでは、グループフレームのスタイルを適用しません。 コントロールに固有の基本スタイルを使用します。
@@ -138,7 +138,7 @@ ms.locfileid: "85547447"
 
 - グループフレームコンテナーではなく、水平方向の規則を使用することが許容される場合があります。
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>テキストコントロール
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> テキストコントロール
 
 ### <a name="labels"></a>ラベル
 
@@ -227,10 +227,10 @@ ms.locfileid: "85547447"
 
   **Visual Studio での透かしテキストの例**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>ボタンとハイパーリンク
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> ボタンとハイパーリンク
 
 ### <a name="overview"></a>概要
- ボタンとリンクコントロール (ハイパーリンク) は、使用、表現、サイズ変更、およびスペースの[ハイパーリンクに関する基本的な Windows デスクトップガイダンス](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx)に従う必要があります。
+ ボタンとリンクコントロール (ハイパーリンク) は、使用、表現、サイズ変更、およびスペースの [ハイパーリンクに関する基本的な Windows デスクトップガイダンス](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) に従う必要があります。
 
 ### <a name="choosing-between-buttons-and-links"></a>ボタンとリンクの選択
  従来、操作にはボタンが使用されており、ハイパーリンクはナビゲーション用に予約されていました。 ボタンはどのような場合でも使用できますが、一部の条件では、ボタンとリンクが置き換えられるように、Visual Studio でリンクの役割が拡張されています。
@@ -272,7 +272,7 @@ ms.locfileid: "85547447"
 
 ### <a name="common-buttons"></a>共通ボタン
 
-#### <a name="text"></a>テキスト
+#### <a name="text"></a>Text
  [UI のテキストと用語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)の記述に関するガイドラインに従ってください。
 
 #### <a name="visual-style"></a>視覚スタイル
@@ -281,7 +281,7 @@ ms.locfileid: "85547447"
  Visual Studio のほとんどのボタンは標準のダイアログに表示されるので、スタイルを設定しないでください。 これらは、オペレーティングシステムで指定されているように、標準のボタンの外観を反映している必要があります。
 
 ##### <a name="themed"></a>テーマ
- 場合によっては、スタイル設定された UI 内でボタンが使用され、これらのボタンのスタイルを適切に設定する必要があります。 テーマ付きコントロールの詳細については、[ダイアログ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)を参照してください。
+ 場合によっては、スタイル設定された UI 内でボタンが使用され、これらのボタンのスタイルを適切に設定する必要があります。 テーマ付きコントロールの詳細については、 [ダイアログ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) を参照してください。
 
 ### <a name="special-buttons"></a>特別なボタン
 
@@ -298,7 +298,7 @@ ms.locfileid: "85547447"
 
  省略記号の省略ボタンを使用する場合:
 
-- 複数のフィールドで閲覧が許可されている場合など、ダイアログに長い **[Browse...]** ボタンがある場合。 この状況によって作成されたわかりにくいアクセスキーを回避するには、それぞれの **[...]** ボタンを使用します (**&参照**] をクリックし、同じダイアログで**B&r)** を選択します)。
+- 複数のフィールドで閲覧が許可されている場合など、ダイアログに長い **[Browse...]** ボタンがある場合。 この状況によって作成されたわかりにくいアクセスキーを回避するには、それぞれの **[...]** ボタンを使用します (**&参照** ] をクリックし、同じダイアログで **B&r)** を選択します)。
 
 - ダイアログボックスが短い場合、または長いボタンを配置するための適切な場所がない場合。
 
@@ -308,7 +308,7 @@ ms.locfileid: "85547447"
 
 - アクセスキーは使用しないでください。 キーボードを使用してアクセスするには、ユーザーが隣接するコントロールから tab キーを押す必要があります。 タブの順序が、すべての参照ボタンが、入力するフィールドの直後になるようにしてください。 最初の期間の下にアンダースコアを使用しないでください。
 
-- "ドット-ドット" または "ピリオド-ピリオド" ではなく "参照" としてスクリーンリーダーが読み取るように、Microsoft Active Accessibility (MSAA)**名**プロパティを [**参照**] (省略記号を含む) に設定します。 マネージコントロールの場合、これは**AccessibleName**プロパティを設定することを意味します。
+- "ドット-ドット" または "ピリオド-ピリオド" ではなく "参照" としてスクリーンリーダーが読み取るように、Microsoft Active Accessibility (MSAA) **名** プロパティを [ **参照** ] (省略記号を含む) に設定します。 マネージコントロールの場合、これは **AccessibleName** プロパティを設定することを意味します。
 
 - 参照操作以外のすべてに対して、省略記号 **[...]** ボタンを使用しないでください。 たとえば、 **[新規...]** ボタンが必要で、テキスト用の十分な空き領域がない場合は、ダイアログを再設計する必要があります。
 
@@ -329,8 +329,8 @@ ms.locfileid: "85547447"
 
 |名前|Image|
 |-|-|
-|追加|![グラフィカルな [追加] ボタン](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
-|削除|![グラフィカルな [削除] ボタン](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
+|[追加]|![グラフィカルな [追加] ボタン](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
+|[削除]|![グラフィカルな [削除] ボタン](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
 |[すべてを追加]|![グラフィカルな [すべて追加] ボタン](../../extensibility/ux-guidelines/media/070703-10-buttonaddall.png "070703-10_ButtonAddAll")|
 |[すべて削除]|![グラフィカルな [すべて削除] ボタン](../../extensibility/ux-guidelines/media/070703-11-buttonremoveall.png "070703-11_ButtonRemoveAll")|
 |[上へ移動]|![グラフィカルな [上へ移動] ボタン](../../extensibility/ux-guidelines/media/070703-12-buttonmoveup.png "070703-12_ButtonMoveUp")|
@@ -338,7 +338,7 @@ ms.locfileid: "85547447"
 |削除|![グラフィカルな [消去] ボタン](../../extensibility/ux-guidelines/media/070703-14-buttondelete.png "070703-14_ButtonDelete")|
 
 ##### <a name="sizing-and-spacing"></a>サイズと間隔
- グラフィカルボタンのサイズ変更は、 **[参照**] ボタン (2 ~ 23 ピクセル) の短いバージョンの場合と同じです。
+ グラフィカルボタンのサイズ変更は、 **[参照** ] ボタン (2 ~ 23 ピクセル) の短いバージョンの場合と同じです。
 
  ![透明色が表示されているボタンとそうでないボタン](../../extensibility/ux-guidelines/media/070703-15-graphicalbuttonspacing.png "070703-15_GraphicalButtonSpacing")
 
@@ -352,13 +352,13 @@ ms.locfileid: "85547447"
 
 #### <a name="visual-style"></a>視覚スタイル
 
-- ハイパーリンクでは、常に[VSColor サービス](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)を使用する必要があります。 ハイパーリンクのスタイルが正しく設定されていない場合、アクティブなときは赤が点滅し、表示された後に別の色が表示されます。
+- ハイパーリンクでは、常に [VSColor サービス](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)を使用する必要があります。 ハイパーリンクのスタイルが正しく設定されていない場合、アクティブなときは赤が点滅し、表示された後に別の色が表示されます。
 
 - ウォーターマークなど、完全な文内の文フラグメントである場合を除いて、コントロールの状態の下に下線を入れないでください。
 
 - ホバー時に下線を表示することはできません。 代わりに、リンクがアクティブになっていることをユーザーにフィードバックすると、色が少し変更され、適切なリンクカーソルが設定されます。
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>ツリービュー
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> ツリービュー
 
 ### <a name="overview"></a>概要
  ツリービューを使用すると、複雑なリストを親子グループにまとめることができます。 ユーザーは、親グループを展開または折りたたむことで、基になる子項目を表示または非表示にすることができます。 ツリービュー内の各項目は、さらにアクションを提供するように選択できます。
@@ -369,9 +369,9 @@ ms.locfileid: "85547447"
 
 - [視覚スタイル](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
 
-- [インタラクション](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
+- [操作](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>視覚スタイル
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> 視覚スタイル
 
 #### <a name="expanders"></a>展開コントロール
  ツリービューコントロールは、Windows および Visual Studio で使用されるエキスパンダーデザインに準拠している必要があります。 各ノードは、エキスパンダーコントロールを使用して、基になる項目を表示または非表示にします。 エキスパンダーコントロールを使用すると、Windows と Visual Studio 内で異なるツリービューが発生する可能性があるユーザーに一貫性が確保されます。
@@ -405,7 +405,7 @@ ms.locfileid: "85547447"
 
  **コンテンツがツリービューコントロールの制限を超えているため、垂直スクロールバーと水平スクロールバーの両方が表示されます。**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>作用
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> 作用
 
 #### <a name="context-menus"></a>コンテキスト メニュー
  ツリービューノードは、ショートカットメニューのサブメニューオプションを表示できます。 通常、このエラーは、ユーザーが項目を右クリックしたとき、または項目が選択された状態で Windows キーボードのメニューキーを押したときに発生します。 ノードがフォーカスを取得し、選択されていることが重要です。 これにより、サブメニューが属する項目をユーザーが識別できるようになります。

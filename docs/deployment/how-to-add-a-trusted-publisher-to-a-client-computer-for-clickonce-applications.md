@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 594c012aaa49a5b62e9f254f924a71f4934d1ebe
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382615"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する
@@ -48,7 +48,7 @@ ms.locfileid: "85382615"
 
 1. CA からデジタル証明書を取得します。
 
-2. 証明書を Base64 X.509 (*.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「[証明書のエクスポート](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))」を参照してください。
+2. 証明書を Base64 X.509 (*.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書のエクスポート](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10))」を参照してください。
 
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。
 

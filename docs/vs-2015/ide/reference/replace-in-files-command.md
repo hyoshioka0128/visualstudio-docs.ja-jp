@@ -1,4 +1,4 @@
-﻿---
+---
 title: Replace In Files コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d5088366548c9f92d04f1b65a3afc378db29d6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665617"
 ---
 # <a name="replace-in-files-command"></a>ReplaceinFiles コマンド
@@ -72,11 +72,11 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  /word または /w 省略可能。 完全に一致する単語だけを検索します。
 
 ## <a name="example"></a>例
- 次の例では、"my visual studio projects" フォルダーに含まれるすべての .cls ファイルで `btnCancel` を検索し、それを `btnReset` に置換して、 **[検索結果 2]** ウィンドウに置換情報を表示します。
+ 次の例では、"my visual studio projects" フォルダーに含まれるすべての .cls ファイルで `btnCancel` を検索し、それを `btnReset` に置換して、**[検索結果 2]** ウィンドウに置換情報を表示します。
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>関連項目
- [検索と置換](../../ide/finding-and-replacing-text.md) [(フォルダー内のテキストの置換](../../ide/replace-in-files.md))[コマンドウィンドウ](../../ide/reference/command-window.md)[検索] [/[コマンド] ボックス](../../ide/find-command-box.md) [visual studio](../../ide/reference/visual-studio-commands.md)コマンド visual studio コマンドの[エイリアス](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>参照
+ [検索と置換](../../ide/finding-and-replacing-text.md) [(フォルダー内のテキストの置換](../../ide/replace-in-files.md)) [コマンドウィンドウ](../../ide/reference/command-window.md)[検索] [/[コマンド] ボックス](../../ide/find-command-box.md) [visual studio](../../ide/reference/visual-studio-commands.md)コマンド visual studio コマンドの [エイリアス](../../ide/reference/visual-studio-command-aliases.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115397"
 ---
 # <a name="walkthrough-build-an-application"></a>チュートリアル: アプリケーションを構築する
@@ -35,13 +35,13 @@ ms.locfileid: "76115397"
 
    ![[ビルド] メニュー、[構成マネージャー] コマンド](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. **[アクティブ ソリューション構成]** 一覧の **\<[新規作成...]\>** をクリックします。
+1. **[アクティブ ソリューション構成]** 一覧の **\<New...\>** をクリックします。
 
 1. **[新しいソリューション構成]** ダイアログ ボックスで、新しい構成の名前として「`Test`」と入力し、既存の**デバッグ**構成から設定をコピーして、 **[OK]** を選びます。
 
    ![[新しいソリューション構成] ダイアログ ボックス](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. **[アクティブ ソリューション プラットフォーム]** 一覧の **\<[新規作成...]\>** をクリックします。
+1. **[アクティブ ソリューション プラットフォーム]** 一覧の **[\<New...\>]** を選択します。
 
 1. **[新しいソリューション プラットフォーム]** ダイアログ ボックスで、 **[x64]** を選択します。x86 プラットフォームの設定はコピーしません。
 

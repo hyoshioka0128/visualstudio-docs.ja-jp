@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugThread2:: GetLogicalThread |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718838"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-デバッグ エンジンでは、このメソッドは実装されません。
+デバッグエンジンは、このメソッドを実装しません。
 
 ## <a name="syntax"></a>構文
 
@@ -43,13 +43,13 @@ int GetLogicalThread( 
 
 ## <a name="parameters"></a>パラメーター
 `pStackFrame`\
-[in]スタック フレームを表す[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)オブジェクト。
+からスタックフレームを表す [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) オブジェクト。
 
 `ppLogicalThread`\
-[アウト]関連付`IDebugLogicalThread2`けられた論理スレッドを表すインターフェイスを返します。 デバッグ エンジンの実装では、これを null 値に設定する必要があります。
+入出力 `IDebugLogicalThread2` 関連付けられている論理スレッドを表すインターフェイスを返します。 デバッグエンジンの実装では、これを null 値に設定する必要があります。
 
 ## <a name="return-value"></a>戻り値
- デバッグ エンジンの実装は`E_NOTIMPL`常に を返します。
+ デバッグエンジンの実装は常に `E_NOTIMPL` を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 853d0032b290f80ede23dddeae2a4b7026f63260
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428295"
 ---
-# <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
+# <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Sub 型 ID を取得します。  
+サブタイプ ID を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -32,10 +32,10 @@ HRESULT get_subTypeId(
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]ポインター、`DWORD`サブ タイプの ID を保持します。  
+ 入出力 `DWORD` サブタイプ ID を保持しているへのポインター。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
+ 成功した場合は、を返し `S_OK` ます。それ以外の場合 `S_FALSE` は、またはエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

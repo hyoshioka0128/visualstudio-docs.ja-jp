@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199943"
 ---
 # <a name="overriding-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
@@ -114,7 +114,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     2. MSBuild.exe.config ファイルに定義された既定のツール バージョン。  
   
-    3. レジストリに定義された既定のツール バージョン。 詳細については、「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。  
+    3. レジストリに定義された既定のツール バージョン。 詳細については、「 [標準およびカスタムツールセットの構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。  
   
 6. 環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されていない場合は、次の手順が使用されます。  
   
@@ -126,8 +126,8 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. それ以外の場合は、現在の `ToolsVersion` を使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [マルチターゲット](../msbuild/msbuild-multitargeting-overview.md)   
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
- [ツール セット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
- [標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)
+ [ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
+ [標準およびカスタムツールセットの構成](../msbuild/standard-and-custom-toolset-configurations.md)

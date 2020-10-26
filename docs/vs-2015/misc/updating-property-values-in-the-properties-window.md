@@ -1,5 +1,5 @@
 ---
-title: '[プロパティ] ウィンドウでプロパティ値を更新する |Microsoft Docs'
+title: プロパティウィンドウでプロパティ値を更新する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,10 +11,10 @@ ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 18ecf0a21c5b2d73bdf8e439d25765b6b275cbd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434190"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>[プロパティ] ウィンドウでプロパティ値を更新
@@ -26,7 +26,7 @@ ms.locfileid: "62434190"
   
 1. VSPackage、プロジェクト、エディターがツール ウィンドウまたはドキュメント ウィンドウを作成したり列挙したりする必要が生じた時点で、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> を (<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> サービスを通じて) 呼び出します。  
   
-2. 実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>保持する、**プロパティ**ウィンドウとプロジェクトのプロパティの変更を同期 (またはによって参照されているその他の選択したオブジェクト、**プロパティ**ウィンドウ)を実装することがなく<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>および発生<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A>イベント。  
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>を実装して、イベントを実装および実行せずに、プロジェクト (または [**プロパティ**] ウィンドウによって参照される他の選択されたオブジェクト) のプロパティの変更とプロパティウィンドウの同期を維持し**Properties** <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> ます。  
   
 3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> のメソッド <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> を実装します。この 2 つのメソッドは、それぞれ、階層イベントのクライアント通知を設定および無効化します。これにより、階層で <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> を実装する必要がなくなります。  
   
@@ -43,8 +43,8 @@ ms.locfileid: "62434190"
   
 4. クライアントは、`IConnection` インターフェイスを呼び出すことにより、<xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> インターフェイスを持つ列挙子サブオブジェクトへのアクセスを取得できます。 その後、<xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> インターフェイスを呼び出すと、各発信インターフェイス ID (IID) の接続ポイントを列挙することができます。  
   
-5. また、`IConnection` を呼び出すことにより、各発信 IID への <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> インターフェイスを持つ接続ポイント サブオブジェクトへのアクセスを取得することもできます。 クライアントは、<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> インターフェイスを通して、接続可能オブジェクトとクライアント自身の同期のアドバイザリ ループを開始または終了します。クライアントは、<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> インターフェイスを呼び出すこともできます。これにより、<xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> インターフェイスを持つ列挙子オブジェクトを取得して、既知の接続を列挙します。  
+5. また、`IConnection` を呼び出すことにより、各発信 IID への <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> インターフェイスを持つ接続ポイント サブオブジェクトへのアクセスを取得することもできます。 クライアントは、インターフェイスを介して、 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 接続可能オブジェクトとクライアント独自の同期を使用して、アドバイザリループを開始または終了します。クライアントは、インターフェイスを呼び出して、 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> 認識している接続を列挙するためのインターフェイスを持つ列挙子オブジェクトを取得することもできます。  
   
-## <a name="see-also"></a>関連項目  
- [プロパティ ウィンドウの選択の追跡の発表](../misc/announcing-property-window-selection-tracking.md)   
+## <a name="see-also"></a>参照  
+ [プロパティウィンドウの選択の追跡の発表](../misc/announcing-property-window-selection-tracking.md)   
  [プロパティの拡張](../extensibility/internals/extending-properties.md)

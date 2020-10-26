@@ -1,5 +1,5 @@
 ---
-title: HTML、CSS、および JavaScript サンプル コードのデバッグ |Microsoft Docs
+title: HTML、CSS、JavaScript のサンプルコードをデバッグする |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161467"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>HTML、CSS、および JavaScript サンプル コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- このトピックのコードのサンプル ファイルは、[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)します。 クイック スタートの設計上のエラーは、このバージョンのコードで修正されています。  
+ このトピックのコードは、「[クイックスタート: HTML と CSS をデバッグする](../debugger/quickstart-debug-html-and-css.md)」のサンプル ファイルです。 クイック スタートの設計上のエラーは、このバージョンのコードで修正されています。  
   
 ## <a name="sample-code"></a>サンプル コード  
- 次の HTML コードは、クイック スタートの \<body> タグで使用します。  
+ クイックスタートのタグでは、次の HTML コードが使用され \<body> ます。  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -104,5 +104,5 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 })();  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)

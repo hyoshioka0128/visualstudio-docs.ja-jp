@@ -1,21 +1,21 @@
 ---
 title: '[オプション]、[テキスト エディター]、[C#]、[詳細]'
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
-ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
+ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86181067"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214676"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 
@@ -128,7 +128,13 @@ ms.locfileid: "86181067"
 コードの中かっこ ( **{}** ) の間に垂直の点線を表示するには、このチェック ボックスをオンにします。 これで、宣言レベルとコード レベルのコンストラクト用のコード ブロックを簡単に確認できます。
 
 ## <a name="editor-help"></a>エディターのヘルプ
-
+::: moniker range=">=vs-2019"
+- インライン パラメーター名のヒント 
+    
+    選択されると、関数呼び出しの各引数の前に、リテラル、型変換されたリテラル、オブジェクト インスタンス化のパラメーター名ヒントが挿入されます。  
+    
+    ![CSharp のインライン パラメーター名のヒント](media/inline-parameter-name-hints-csharp.png)
+::: moniker-end
 - /// が入力されたとき、XML ドキュメントのコメントを生成する
 
    オンにすると、`///` コメント イントロダクションを入力した後に、XML ドキュメント コメントの XML 要素が挿入されます。 XML ドキュメントの詳細については、「[XXML ドキュメント コメント (C# プログラミング ガイド)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)」を参照してください。

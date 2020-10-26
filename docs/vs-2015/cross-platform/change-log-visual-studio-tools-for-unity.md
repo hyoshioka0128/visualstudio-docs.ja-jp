@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825967"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>変更ログ (Visual Studio Tools for Unity)
@@ -41,7 +41,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - 不足している MonoBehaviors を追加しました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - **全般:**
 
@@ -77,7 +77,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - Unity プロジェクトに関連していない Visual Studio のプロパティ ページを削除しました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - **プロジェクトの生成:**
 
@@ -113,13 +113,13 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Unity 5.2 のサポート
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Unity 4.2 以下でのメニュー項目の表示
 
 - Visual Studio が XML IntelliSense ファイルをロックしている場合にエラー メッセージが表示されなくなりました。
 
-- 条件付き引数がブール値でない場合は、<<\<When Changed>> 条件付きブレークポイントを処理します。
+- 条件付き引数がブール値でない場合は、<\<When Changed>> 条件付きブレークポイントを処理します。
 
 - Windows ストア アプリの UnityEngine アセンブリおよび UnityEditor のアセンブリへの参照を修正しました。
 
@@ -131,7 +131,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2015 年 7 月 20 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - **Unity 統合:**
 
@@ -212,7 +212,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **UI:** Visual Studio の **[オプション]** ダイアログに Visual Studio Tools for Unity が追加されました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - **Unity プロジェクト エクスプローラー:**
 
@@ -281,7 +281,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Unity から Visual Studio のシェーダーを開く操作をサポートします。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Visual Studio でアタッチして再生がトリガーされた後、Unity でゲームを開始する前にソケットをクリーンアップするようにしました。 これにより、アタッチして再生を使用する際に発生する Unity と VS 間の接続の安定性に関するいくつかの問題が修正されます。
 
@@ -303,7 +303,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - ローカル ドキュメントが存在しない場合、Unity のオンライン ドキュメントが既定のドキュメントになります。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - ドメインの再読み込み後にブレークポイントがヒットしたときに Unity がクラッシュすることのある潜在的な問題を修正しました。
 
@@ -331,7 +331,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Visual Studio からファイルを削除または名前変更した場合、.meta ファイルも削除または名前変更されます。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Visual Studio のテーマの処理を修正しました。 以前は、黒のテーマでダイアログを表示すると内容が空になることがありました。
 
@@ -389,7 +389,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Unity プロジェクト エクスプローラーを現在のドキュメントと同期するコマンドを追加しました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - 条件付きブレークポイントの条件をデバッガーの開始前に設定した場合の問題を修正しました。
 
@@ -428,7 +428,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - mdb デバッグ シンボルの生成を無効にする設定を追加しました。 これは、自分で mdb を生成している場合に便利です。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - 4\.2 以降の Unity から VS 内のファイルを開いた場合に IntelliSense が失われるというバグ再発を修正しました。
 
@@ -452,7 +452,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Debug.Log の呼び出しを調整して、StackTrace の開始がメッセージに組み込まれないようにしました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Visual Studio で JavaScript ファイルの既定の処理を妨げていたバグを修正しました。
 
@@ -494,7 +494,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - リモート デバッグのプレビューでリモート エディターの検出を改善しました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - デバッガーを切断した後、VS でスレッドがリークするバグを修正しました。
 
@@ -518,7 +518,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2013 年 7 月 9 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - 式の評価で完全修飾名を処理できます。
 
@@ -542,7 +542,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2013 年 4 月 9 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - コード補完機能で Unity アセンブリのローカル配置に関して IO エラー (読み取り専用ファイル、または Visual Studio によってロックされているファイル) が発生した場合の問題を修正しました。
 
@@ -586,7 +586,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - UnityVS は、VS がプロジェクトをビルドする際にビルドの更新を求めるようになり、ファイルの保存時には更新を求めないようになりました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - カスタム .NET プロファイルを修正しました。
 
@@ -626,7 +626,7 @@ Visual Studio Tools for Unity の変更ログです。
 ## <a name="1013"></a>1.0.13
 リリース: 2013 年 1 月 21 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - デバッグ対象により無効なスレッド イベントが送信される場合に発生することのある Visual Studio のハングアップを修正しました。 これは多くの場合、OSX 上のリモートの Unity をデバッグするときに発生していました。
 
@@ -682,7 +682,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - ユーザーが LogCallback に参加できるようにする [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) を追加しました。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Visual Studio 2012 での Unity プロジェクト エクスプローラーの背景のバグ再発を修正しました。
 
@@ -713,7 +713,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2012 年 10 月 3 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Unity プロジェクトに実際の JavaScript アセットが含まれている場合のプロジェクトの生成を修正しました。
 
@@ -733,7 +733,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2012 年 9 月 26 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - UnityVS のスクリプト オープン機能がプロジェクトへのパスを取得する方法を修正することにより、確実に Visual Studio とスクリプトの両方を開けるようにしました。
 
@@ -749,7 +749,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Visual Studio 2012 のサポート。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - エディターおよびプラグインのプロジェクト ファイルの生成を、Unity の動作と一致するように修正しました。
 
@@ -765,7 +765,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2012 年 9 月 10 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - スクリプトまたはシェーダーに無効な XML 文字がある場合のプロジェクト ファイルの生成を修正しました。
 
@@ -781,7 +781,7 @@ Visual Studio Tools for Unity の変更ログです。
 
     アセット フォルダーに .NET .dll アセンブリとそれに対応する .pdb があれば、アセンブリを再インポートするだけで、UnityVS により .pdb が変換されて、Unity のスクリプト エンジンが理解できるデバッグ シンボル ファイルになるため、UnityVS から .NET アセンブリにステップインできます。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - Unity 内のメソッドやプロパティによってスローされた例外が原因でデバッグ中に UnityVS がクラッシュする問題を修正しました。
 
@@ -793,7 +793,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Unity からファイルを開くために UnityVS を使用することを無効にする新しい構成オプション。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - エディター以外のプロジェクトに対する UnityEditor への参照の生成を修正しました。
 
@@ -805,7 +805,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 リリース: 2012 年 8 月 30 日
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - PythonTools デバッガーとの競合を修正しました。
 
@@ -821,7 +821,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Unity 4.0 のベータ版のプレビュー サポート。
 
-### <a name="bug-fixes"></a>バグの修正
+### <a name="bug-fixes"></a>バグ修正
 
 - 例外をスローしているプロパティの検査を修正しました。
 

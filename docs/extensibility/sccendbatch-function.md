@@ -1,5 +1,5 @@
 ---
-title: SccEnd バッチ関数 |マイクロソフトドキュメント
+title: SccEndBatch 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 51fe7e0bc0d417ffa182fbc68fd2779ed0b625d9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700920"
 ---
-# <a name="sccendbatch-function"></a>関数
-この関数は、ソース管理操作のバッチを終了します。 これらのバッチは入れ子にできません。
+# <a name="sccendbatch-function"></a>SccEndBatch 関数
+この関数は、ソース管理操作のバッチを終了します。 これらのバッチを入れ子にすることはできません。
 
 ## <a name="syntax"></a>構文
 
@@ -32,16 +32,16 @@ SCCRTN SccEndBatch(void);
  [なし] :
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|操作のバッチが正常に終了しました。|
-|SCC_E_UNKNOWNERROR|非特異的なエラー。|
+|SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>Remarks
- ソース管理バッチは、複数のプロジェクトまたは複数のコンテキストで同じソース管理操作を実行するために使用されます。 バッチ処理を使用すると、バッチ操作中のユーザー エクスペリエンスから冗長なダイアログ ボックスを削除できます。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)と`SccEndBatch`関数は、操作の開始と終了を示すペアとして使用されます。 ネストすることはできません。
+## <a name="remarks"></a>注釈
+ ソース管理バッチは、複数のプロジェクトまたは複数のコンテキストで同じソース管理操作を実行するために使用されます。 バッチ処理を使用すると、バッチ操作中のユーザーエクスペリエンスから冗長なダイアログボックスを排除できます。 [Sccbeginbatch](../extensibility/sccbeginbatch-function.md)と関数は、 `SccEndBatch` 操作の開始と終了を示すペアとして使用されます。 入れ子にすることはできません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

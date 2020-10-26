@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248573"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801257"
 ---
 # <a name="create-custom-project-and-item-templates"></a>プロジェクトと項目のカスタム テンプレートを作成する
 
@@ -72,7 +72,7 @@ NuGet パッケージをインストールするようにテンプレートを�
 
 1. VSIX プロジェクトを作成する。 詳細については、「[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)」を参照してください。
 
-2. VSIX プロジェクトをスタートアップ プロジェクトとして設定します。 **ソリューション エクスプローラー**で VSIX プロジェクト ノードを選択して長押し (または右クリック) し、 **[スタートアップ プロジェクトに設定]** を選びます。
+2. VSIX プロジェクトをスタートアップ プロジェクトとして設定します。 **ソリューション エクスプローラー**で VSIX プロジェクト ノードを選択し、 **[スタートアップ プロジェクトに設定]** を選びます。
 
 3. プロジェクト テンプレート プロジェクトを VSIX プロジェクトのアセットとして設定します。 *.vsixmanifest* ファイルを開きます。 **[アセット]** タブに移動して、 **[新規]** を選択します。
 

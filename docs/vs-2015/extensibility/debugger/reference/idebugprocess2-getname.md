@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetName |Microsoft Docs
+title: 'IDebugProcess2:: GetName |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6070e530726c4b21a9f4f123df431941a4b1801e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188005"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-タイトル、フレンドリ名、またはプロセスのファイル名を取得します。  
+プロセスのタイトル、フレンドリ名、またはファイル名を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,14 +42,14 @@ int GetName( 
   
 #### <a name="parameters"></a>パラメーター  
  `gnType`  
- [in]値、 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列挙型名を返すは、どのような型を指定します。  
+ から返される名前の種類を指定する [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 列挙の値です。  
   
  `pbstrName`  
- [out]プロセスの名前を返します。  
+ 入出力プロセスの名前を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

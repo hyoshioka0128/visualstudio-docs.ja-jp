@@ -1,4 +1,4 @@
-﻿---
+---
 title: Log Command Window Output コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666864"
 ---
 # <a name="log-command-window-output-command"></a>LogCommandWindowOutput コマンド
@@ -45,10 +45,10 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  /overwrite (オプション)。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
  次の例では、新規のログ ファイル cmdlog を作成して、コマンドのログを開始します。
 
 ```
@@ -67,5 +67,5 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>関連項目
- [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)の[コマンドウィンドウ](../../ide/reference/command-window.md)の[検索/コマンドボックス](../../ide/find-command-box.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>参照
+ [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)の [コマンドウィンドウ](../../ide/reference/command-window.md)の [検索/コマンドボックス](../../ide/find-command-box.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: アプリケーション プロパティ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f4777bf6c94997b9291bb84fed07befa197a8c5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620309"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic、C#、および F# アプリケーションの全般的なアプリケーション プロパティとして、アプリケーションの種類、スタートアップ オブジェクト、アセンブリ情報などを、 **[プロジェクト デザイナー]** の **[アプリケーション]** ウィンドウで設定できます。
+Visual Basic、C#、および F# アプリケーションの全般的なアプリケーション プロパティとして、アプリケーションの種類、スタートアップ オブジェクト、アセンブリ情報などを、**[プロジェクト デザイナー]** の **[アプリケーション]** ウィンドウで設定できます。
 
  **[アプリケーション]** ウィンドウでは、次のタスクを実行できます。
 
@@ -54,7 +54,7 @@ Visual Basic、C#、および F# アプリケーションの全般的なアプ�
   アプリケーションで使用できるタスクは、使用する開発言語に応じて異なります。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [方法 : アプリケーション アイコンを指定する (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+ [方法: アプリケーションアイコンを指定する (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
-## <a name="see-also"></a>関連項目
- [[アプリケーション] ページ (プロジェクトデザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [[アプリケーション]C#ページ、プロジェクトデザイナー ()](../ide/reference/application-page-project-designer-csharp.md) [プロジェクトデザイナーの概要 clickonce アプリケーションの](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)[発行](../deployment/publishing-clickonce-applications.md) [clickonce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)[デバッグプロパティの管理](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)[コンパイルプロパティ](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)の管理[アプリケーションリソースの管理 (.net)](../ide/managing-application-resources-dotnet.md) [アプリケーション設定の管理 (.net)](../ide/managing-application-settings-dotnet.md)
+## <a name="see-also"></a>参照
+ [アプリケーション] ページ (プロジェクトデザイナー) [(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [[アプリケーション] ページ (プロジェクトデザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md) [プロジェクトデザイナーの概要 Clickonce アプリケーションの](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)[発行](../deployment/publishing-clickonce-applications.md)Clickonce[アプリケーション](../deployment/securing-clickonce-applications.md)の[デバッグプロパティ](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)の管理アプリケーションリソースの管理[Managing Compilation Properties](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [(.net)](../ide/managing-application-resources-dotnet.md) [アプリケーション設定の管理 (.net)](../ide/managing-application-settings-dotnet.md)

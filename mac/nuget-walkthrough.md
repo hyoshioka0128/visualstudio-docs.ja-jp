@@ -7,10 +7,10 @@ ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
 ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74127208"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Visual Studio for Mac に NuGet パッケージをインストールして管理する
@@ -23,7 +23,7 @@ Visual Studio for Mac での NuGet の使用の概要については、「[ク�
 
 ## <a name="find-and-install-a-package"></a>パッケージを検索してインストールする
 
-1. Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** 内の **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、 **[NuGet パッケージの管理]** を選択します。
+1. Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** 内の **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、**[NuGet パッケージの管理]** を選択します。
 
     ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-packages-menu.png)
 
@@ -31,7 +31,7 @@ Visual Studio for Mac での NuGet の使用の概要については、「[ク�
 
     ![Nuget パッケージのリスト](media/nuget-walkthrough-add-packages1.png)
 
-3. `EntityFramework` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]** ボタンをクリックしてインストールを開始します。
+3. `EntityFramework` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、**[パッケージを追加]** ボタンをクリックしてインストールを開始します。
 
     ![EntityFramework NuGet パッケージの追加](media/nuget-walkthrough-add-packages2.png)
 
@@ -59,9 +59,9 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>パッケージの更新
 
-パッケージの更新は、 **[依存関係]** ノード (または、Xamarin プロジェクトの場合は **[パッケージ]** ノード) を右クリックすることで、すべて一度に行うことも、パッケージごとに個別に行うこともできます。 新しいバージョンの NuGet パッケージが使用可能になると、更新アイコンが表示されます ![丸で囲まれた上向きの矢印](media/nuget-walkthrough-update-icon.png)。
+パッケージの更新は、**[依存関係]** ノード (または、Xamarin プロジェクトの場合は **[パッケージ]** ノード) を右クリックすることで、すべて一度に行うことも、パッケージごとに個別に行うこともできます。 新しいバージョンの NuGet パッケージが使用可能になると、更新アイコンが表示されます ![丸で囲まれた上向きの矢印](media/nuget-walkthrough-update-icon.png)。
 
-コンテキスト メニューにアクセスするには、 **[依存関係]** を右クリックして、 **[更新]** を選択し、すべてのパッケージを更新します。
+コンテキスト メニューにアクセスするには、**[依存関係]** を右クリックして、**[更新]** を選択し、すべてのパッケージを更新します。
 
 ![パッケージ メニュー](media/nuget-walkthrough-packages-menu-update.png)
 
@@ -89,7 +89,7 @@ Solution Pad から、現在インストールされているパッケージの�
 
 ソリューションのパッケージの管理は、複数のプロジェクトを同時に操作するための便利な手段です。
 
-1. ソリューションを右クリックし、 **[NuGet パッケージの管理]** を選択します。
+1. ソリューションを右クリックし、**[NuGet パッケージの管理]** を選択します。
 
     ![ソリューションの NuGet パッケージの管理](media/nuget-walkthrough-manage-packages-solution.png)
 
@@ -115,7 +115,7 @@ Solution Pad から、現在インストールされているパッケージの�
 
 インストール可能なパッケージが最初に nuget.org から取得されます。ただし、Visual Studio for Mac に他のパッケージの場所を追加することができます。 これは、開発中の独自の NuGet パッケージをテストする場合や、会社または組織内でプライベートの NuGet サーバーを使用する場合に便利です。
 
-Visual Studio for Mac で、 **[Visual Studio]、[基本設定]、[NuGet]、[ソース]** の順に移動し、パッケージ ソースのリストを表示して編集します。 ソースはリモート サーバー (URL で指定) またはローカル ディレクトリである場合があります。
+Visual Studio for Mac で、**[Visual Studio]、[基本設定]、[NuGet]、[ソース]** の順に移動し、パッケージ ソースのリストを表示して編集します。 ソースはリモート サーバー (URL で指定) またはローカル ディレクトリである場合があります。
 
 ![パッケージ ソース](media/nuget-walkthrough-PackageSource.png)
 

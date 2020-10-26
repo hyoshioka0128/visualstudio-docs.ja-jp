@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND |マイクロソフトドキュメント
+title: FIELD_KIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736860"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-[オブジェクトに](../../../extensibility/debugger/reference/idebugfield.md)含まれるフィールドの種類を指定します。
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに含まれるフィールドの種類を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -126,13 +126,13 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>フィールド
 `FIELD_KIND_TYPE`\
-フィールドが型だけであることを示します。
+フィールドが型のみであることを示します。
 
 `FIELD_KIND_SYMBOL`\
 フィールドが、型、名前、およびその他の情報を含むシンボルであることを示します。
 
 `FIELD_TYPE_PRIMITIVE`\
-フィールドがプリミティブ データ型であることを示します。
+フィールドがプリミティブデータ型であることを示します。
 
 `FIELD_TYPE_STRUCT`\
 フィールドが構造体であることを示します。
@@ -159,16 +159,16 @@ public enum enum_FIELD_KIND {
 フィールドがポインターであることを示します。
 
 `FIELD_TYPE_ENUM`\
-フィールドが列挙型であることを示します。
+フィールドが列挙データ型であることを示します。
 
 `FIELD_TYPE_LABEL`\
 フィールドがラベルであることを示します。
 
 `FIELD_TYPE_TYPEDEF`\
-フィールドが型定義であることを示します。
+フィールドが typedef であることを示します。
 
 `FIELD_TYPE_BITFIELD`\
-フィールドがビット フィールドであることを示します。
+フィールドがビットフィールドであることを示します。
 
 `FIELD_TYPE_NAMESPACE`\
 フィールドが名前空間であることを示します。
@@ -189,7 +189,7 @@ public enum enum_FIELD_KIND {
 フィールドが参照であることを示します。
 
 `FIELD_TYPE_EXTENDED`\
-将来利用するために予約されています。
+将来使用するために予約されています。
 
 `FIELD_SYM_MEMBER`\
 フィールドがメンバーであることを示します。
@@ -213,28 +213,28 @@ public enum enum_FIELD_KIND {
 フィールドがプロパティを設定することを示します。
 
 `FIELD_SYM_EXTENDED`\
-将来利用するために予約されています。
+将来使用するために予約されています。
 
 `FIELD_KIND_MASK`\
 フィールドの種類のマスクを示します。
 
 `FIELD_TYPE_MASK`\
-フィールド型のマスクを示します。
+フィールドの種類のマスクを示します。
 
 `FIELD_SYM_MASK`\
 シンボル情報のマスクを示します。
 
-## <a name="remarks"></a>Remarks
-[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドの呼び出しから返されます。
+## <a name="remarks"></a>解説
+[Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドの呼び出しから返されます。
 
-フィールドの種類に応じて、[より](/cpp/atl/queryinterface)具体的な形式のインターフェイスの[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスでクエリ インターフェイスを呼び出すことができます。 たとえば[、GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)が戻`FIELD_TYPE_METHOD`った場合は、I`QueryInterface``DebugField`を呼び出して[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイスを取得できます。
+フィールドの種類に応じて、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出して、より具体的な形式のインターフェイスを作成できます。 たとえば、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) がを返す場合は、 `FIELD_TYPE_METHOD` `QueryInterface` I でを呼び出して `DebugField` [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) インターフェイスを取得できます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: sh.h
+ヘッダー: sh. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

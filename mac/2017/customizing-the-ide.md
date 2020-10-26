@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306663"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315006"
 ---
 # <a name="customizing-the-ide"></a>IDE のカスタマイズ
 
@@ -82,11 +82,11 @@ Visual Studio for Mac で新しいソリューションまたはファイルを�
 
 ![Solution Pad](media/customizing-the-ide-image2a.png)
 
-Visual Studio for Mac のパッドには追加情報、ツール、ナビゲーション補助が含まれています。これには、 **[表示]、[パッド]** メニュー項目の順に選択し、それを追加するパッドを選択するとアクセスできるようになります。
+Visual Studio for Mac のパッドには追加情報、ツール、ナビゲーション補助が含まれています。これには、**[表示]、[パッド]** メニュー項目の順に選択し、それを追加するパッドを選択するとアクセスできるようになります。
 
 ![新しいパッドを選択する](media/customizing-the-ide-image3a.png)
 
-パッドはさまざまなコマンドで自動的に開くこともできます。たとえば、 **[複数のファイル内を検索]** (Shift + Command + F) コマンドを実行すると、別のパッドが開き、検索結果が表示されます。
+パッドはさまざまなコマンドで自動的に開くこともできます。たとえば、**[複数のファイル内を検索]** (Shift + Command + F) コマンドを実行すると、別のパッドが開き、検索結果が表示されます。
 
 パッドは、自分にとって最も便利になるようにワークフロー内の任意の場所に移動したり、配置したりできます。 たとえば、ドキュメント エディターのあらゆる側面にパッドを配置できます。別のパッドの隣に、上に、または下に配置することで、あるいはタブ付きパッドのセットとして配置することですばやく切り替えることができます。
 
@@ -116,7 +116,7 @@ Visual Studio for Mac のパッドには追加情報、ツール、ナビゲー�
 
 Visual Studio for Mac では、テキスト エディターを並べて開いたり、エディターを別のウィンドウとして表示したりできます。
 
-2 列モードは [表示] メニュー項目から有効にできます。 **[表示]、[エディター列]、[2 列]** の順に選択するか、エディター領域の 1 つの端にエディター タブをドラッグします。
+2 列モードは [表示] メニュー項目から有効にできます。**[表示]、[エディター列]、[2 列]** の順に選択するか、エディター領域の 1 つの端にエディター タブをドラッグします。
 
 ![2 列のサイド バイ サイド モード](media/customizing-the-ide-sbs.png)
 
@@ -126,12 +126,12 @@ Visual Studio for Mac では、テキスト エディターを並べて開いた
 
 ![2 列サイド バイ サイドと追加タブ](media/customizing-the-ide-sbs2.png)
 
-1 つのエディターを開いている状態に戻すには、 **[表示]、[エディター列]、[1 列]** の順に選択します。
+1 つのエディターを開いている状態に戻すには、**[表示]、[エディター列]、[1 列]** の順に選択します。
 
 ## <a name="related-video"></a>関連ビデオ
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio IDE のカスタマイズ (Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

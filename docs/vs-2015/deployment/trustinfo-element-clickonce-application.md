@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt;要素 (ClickOnce アプリケーション) |Microsoft Docs'
+title: '&lt;trustInfo &gt; 要素 (ClickOnce アプリケーション) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -24,18 +24,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62420088"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;要素 (ClickOnce アプリケーション)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo &gt; 要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 アプリケーションをクライアント コンピューター上で実行するのに必要な最低限のセキュリティ権限について説明します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -70,41 +70,41 @@ ms.locfileid: "62420088"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
- `trustInfo` 要素は必須です。この要素は `asm.v2` 名前空間に属します。 これには、属性はなく次の要素を含みます。  
+ `trustInfo` 要素は必須です。この要素は `asm.v2` 名前空間にあります。 これには、属性はなく次の要素を含みます。  
   
-## <a name="security"></a>セキュリティ  
- 必須。 この要素は `trustInfo` 要素の子です。 `applicationRequestMinimum` 要素を含み、属性はありません。  
+## <a name="security"></a>security  
+ 必須です。 この要素は `trustInfo` 要素の子です。 `applicationRequestMinimum` 要素を含み、属性はありません。  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- 必須。 この要素は `security` 要素の子であり、 `PermissionSet`、 `assemblyRequest`、および `defaultAssemblyRequest`要素を含んでいます。 この要素には属性はありません。  
+ 必須です。 この要素は `security` 要素の子であり、 `PermissionSet`、 `assemblyRequest`、および `defaultAssemblyRequest`要素を含んでいます。 この要素には属性はありません。  
   
 ## <a name="permissionset"></a>PermissionSet  
- 必須。 この要素は `applicationRequestMinimum` 要素の子であり、 `IPermission` 要素を含んでいます。 この要素には、次の属性があります。  
+ 必須です。 この要素は `applicationRequestMinimum` 要素の子であり、 `IPermission` 要素を含んでいます。 この要素には、次の属性があります。  
   
 - `ID`  
   
-     必須。 アクセス許可セットを識別します。 この属性は任意の値にできます。 この ID は `defaultAssemblyRequest` および `assemblyRequest` 属性で参照されます。  
+     必須です。 アクセス許可セットを識別します。 この属性は任意の値にできます。 この ID は `defaultAssemblyRequest` および `assemblyRequest` 属性で参照されます。  
   
 - `version`  
   
-     必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。  
+     必須です。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。  
   
 ## <a name="ipermission"></a>IPermission  
- 任意。 この要素は `PermissionSet` 要素の子です。 `IPermission` 要素には、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 内のアクセス許可クラスを正しく指定します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。  
+ 省略可能。 この要素は `PermissionSet` 要素の子です。 `IPermission` 要素には、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]内のアクセス許可クラスを正しく指定します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。  
   
 - `class`  
   
-     必須。 アクセス許可クラスを厳密な名前で指定します。 たとえば、次のコードでは `FileDialogPermission` 型を指定しています。  
+     必須です。 アクセス許可クラスを厳密な名前で指定します。 たとえば、次のコードでは `FileDialogPermission` 型を指定しています。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 - `version`  
   
-     必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。  
+     必須です。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。  
   
 - `Unrestricted`  
   
-     必須。 アプリケーションの実行に、このアクセス許可を無制限で与える必要があるかどうかを指定します。 `true`に設定すると、アクセス許可は無条件に与えられます。 `false`に設定するか、この属性を定義しない場合は、 `IPermission` タグで定義されているアクセス許可固有の属性に従って制限されます。 アクセス許可の例を次に示します。  
+     必須です。 アプリケーションの実行に、このアクセス許可を無制限で与える必要があるかどうかを指定します。 `true`に設定すると、アクセス許可は無条件に与えられます。 `false`に設定するか、この属性を定義しない場合は、 `IPermission` タグで定義されているアクセス許可固有の属性に従って制限されます。 アクセス許可の例を次に示します。  
   
     ```  
     <IPermission  
@@ -120,32 +120,32 @@ ms.locfileid: "62420088"
      この例の <xref:System.Security.Permissions.EnvironmentPermission> の宣言では、アプリケーションのアクセス許可を環境変数 USERNAME の読み取りのみに制限しています。これに対し、 <xref:System.Security.Permissions.FileDialogPermission> の宣言では、アプリケーションにすべての <xref:System.Windows.Forms.FileDialog> クラスを無制限に使用できるようにしています。  
   
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
- 任意。 すべてのアセンブリに付与されるアクセス許可のセットを指定します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。  
+ 省略可能。 すべてのアセンブリに付与されるアクセス許可のセットを指定します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。  
   
 - `permissionSetReference`  
   
-     必ず指定します。 既定のアクセス許可として使用するアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。  
+     必須です。 既定のアクセス許可として使用するアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
- 任意。 特定のアセンブリのアクセス許可を識別します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。  
+ 省略可能。 特定のアセンブリのアクセス許可を識別します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。  
   
 - `Name`  
   
-     必須。 アセンブリ名を識別します。  
+     必須です。 アセンブリ名を識別します。  
   
 - `permissionSetReference`  
   
-     必須。 このアセンブリに必要なアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。  
+     必須です。 このアセンブリに必要なアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- 任意。 この要素は `security` 要素の子であり、 `requestedExecutionLevel` 要素を含んでいます。 この要素には属性はありません。  
+ 省略可能。 この要素は `security` 要素の子であり、 `requestedExecutionLevel` 要素を含んでいます。 この要素には属性はありません。  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
- 任意。 アプリケーションを実行するために必要なセキュリティ レベルを指定します。 この要素には子はなく、次の属性があります。  
+ 省略可能。 アプリケーションを実行するために必要なセキュリティ レベルを指定します。 この要素には子はなく、次の属性があります。  
   
 - `Level`  
   
-     必須。 アプリケーションが要求するセキュリティ レベルを指定します。 指定できる値は次のとおりです。  
+     必須です。 アプリケーションが要求するセキュリティ レベルを指定します。 次のいずれかの値になります。  
   
      `asInvoker`。アクセス許可の追加要求は行いません。 このレベルでは、追加の信頼確認は不要です。  
   
@@ -153,21 +153,21 @@ ms.locfileid: "62420088"
   
      `requireAdministrator`。完全な管理者のアクセス許可を要求します。  
   
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、`asInvoker` 値のみでインストールされます。 それ以外の値でインストールすると、エラーが発生します。  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、 `asInvoker`値のみでインストールされます。 それ以外の値でインストールすると、エラーが発生します。  
   
 - `uiAccess`  
   
-     任意。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。  
+     省略可能。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションが、クライアント コンピューターによって既定で与えられる以上のアクセス許可を求める場合は、より高いレベルの信頼を与えるかどうかを確認するメッセージが、共通言語ランタイムの Trust Manager によって表示されます。 ユーザーが信頼を与えない場合、アプリケーションは実行されません。信頼を与えた場合は、ここで要求されたアクセス許可で実行されます。  
   
  配置マニフェストに有効な信頼ライセンスがある場合には、 `defaultAssemblyRequest` や `assemblyRequest` を使用して要求されるすべてのアクセス許可は、ユーザーに確認することなく与えられます。  
   
- アクセス許可の昇格の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
+ アクセス許可の昇格の詳細については、「 [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)」を参照してください。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
-## <a name="examples"></a>使用例  
- 次の 3 つのコード例では、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する `trustInfo` 要素を示しています。  
+## <a name="examples"></a>例  
+ 次の 3 つのコード例では、 `trustInfo` による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 要素を示しています。  
   
  最初の例は、Internet セキュリティ ゾーンで使用できる既定のアクセス許可の `trustInfo` 要素を示しています。  
   
@@ -270,6 +270,6 @@ ms.locfileid: "62420088"
 </trustInfo>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>参照  
+ [信頼されたアプリケーションの展開の概要](../deployment/trusted-application-deployment-overview.md)   
+ [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)

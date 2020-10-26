@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload 要素 (Visual Studio テンプレート) |Microsoft Docs
+title: Buildの Tonload 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184650"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-作成して、ソリューションに追加するときは、新しいプロジェクトのみをビルドします。 ソリューション全体はビルドされません。  
+は、新しいプロジェクトを作成してソリューションに追加するときにのみビルドします。 ソリューション全体がビルドされていません。  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -43,18 +43,18 @@ ms.locfileid: "68184650"
   
 |要素|説明|  
 |-------------|-----------------|  
-|TemplateData|テンプレートを分類し、両方での表示方法を定義、**新しいプロジェクト**と**新しい項目の追加** ダイアログ ボックス。|  
+|TemplateData|テンプレートを分類し、[ **新しいプロジェクト** ] ダイアログボックスと [ **新しい項目の追加** ] ダイアログボックスの両方に表示する方法を定義します。|  
   
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- テキストがいずれかにする必要があります`true`または`false`をテンプレートから作成時に新しいプロジェクトのみをビルドするかどうかを示します。  
+ テキストは、 `true` `false` テンプレートから作成されたときに新しいプロジェクトのみをビルドするかどうかを示す、またはのいずれかにする必要があります。  
   
-## <a name="remarks"></a>Remarks  
- `BuildProjectOnLoad` は、省略可能な要素です。 既定値は `false` です。  
+## <a name="remarks"></a>注釈  
+ `BuildProjectOnLoad` は省略可能な要素です。 既定値は `false` です。  
   
 ## <a name="example"></a>例  
- 次の例では、Visual c# テンプレートのメタデータを示しています。  
+ 次の例は、Visual C# テンプレートのメタデータを示しています。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +81,6 @@ ms.locfileid: "68184650"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>参照  
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

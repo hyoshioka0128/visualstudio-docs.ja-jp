@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 875f6b3aba88fa3786e4c303f23072e586c4848d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587343"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>マネージド コードの "マネージ推奨規則" 規則セット
 
-"Microsoft マネージ推奨規則" 規則セットを使用して、マネージコードの最も重大な問題 (潜在的なセキュリティホール、アプリケーションのクラッシュ、その他の重要なロジックや設計エラーなど) に焦点を当てることができます。 この規則セットには、"[マネージ最小規則](managed-minimum-rules-rule-set-for-managed-code.md)" 規則セット内のすべての規則が含まれます。
+"Microsoft マネージ推奨規則" 規則セットを使用して、マネージコードの最も重大な問題 (潜在的なセキュリティホール、アプリケーションのクラッシュ、その他の重要なロジックや設計エラーなど) に焦点を当てることができます。 この規則セットには、" [マネージ最小規則](managed-minimum-rules-rule-set-for-managed-code.md) " 規則セット内のすべての規則が含まれます。
 
 この規則セットは、プロジェクト用に作成するカスタム規則セットに含めます。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009.md)|イベント ハンドラーを正しく宣言します|

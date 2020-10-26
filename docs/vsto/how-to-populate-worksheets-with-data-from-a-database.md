@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520121"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>方法: データベースのデータをワークシートに読み込む
 
-ドキュメントレベルの Office プロジェクトのデータには、Windows フォームプロジェクトのデータにアクセスするのと同じ方法でアクセスできます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 また、ホストコントロールと呼ばれるコントロールを利用することもできます。これは、イベントとデータバインディング機能によって強化された Microsoft Office Excel のネイティブオブジェクトです。 詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+ドキュメントレベルの Office プロジェクトのデータには、Windows フォームプロジェクトのデータにアクセスするのと同じ方法でアクセスできます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 また、ホストコントロールと呼ばれるコントロールを利用することもできます。これは、イベントとデータバインディング機能によって強化された Microsoft Office Excel のネイティブオブジェクトです。 詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-次の例は、デザイナーを使用してドキュメント レベルのプロジェクトにデータ バインド コントロールを追加する方法を示しています。 実行時にアプリケーションレベルのプロジェクトにデータバインドコントロールを追加する方法の例については、「[チュートリアル: VSTO アドインプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)」を参照してください。
+次の例は、デザイナーを使用してドキュメント レベルのプロジェクトにデータ バインド コントロールを追加する方法を示しています。 実行時にアプリケーションレベルのプロジェクトにデータバインドコントロールを追加する方法の例については、「 [チュートリアル: VSTO アドインプロジェクトでの複合データバインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)」を参照してください。
 
 ## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>デザイン時にワークシートにデータバインドコントロールを追加する
 
@@ -35,9 +35,9 @@ ms.locfileid: "85520121"
 
 1. デザイナーでワークシートを開いた状態で、Visual Studio で Excel ドキュメントレベルのプロジェクトを開きます。
 
-2. **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
+2. **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、「 [新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
-3. 目的のフィールドまたはテーブルを [**データソース**] ウィンドウからワークシートにドラッグします。
+3. 目的のフィールドまたはテーブルを [ **データソース** ] ウィンドウからワークシートにドラッグします。
 
 次のいずれかのコントロールがワークシートに作成されます。
 
@@ -45,7 +45,7 @@ ms.locfileid: "85520121"
 
 - テーブルをドラッグすると、 <xref:Microsoft.Office.Tools.Excel.ListObject> ワークシートにコントロールが作成されます。 詳細については、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
 
-別のコントロールを追加するには、[**データソース**] ウィンドウでテーブルまたはフィールドを選択し、ドロップダウンリストから別のコントロールを選択します。
+別のコントロールを追加するには、[ **データソース** ] ウィンドウでテーブルまたはフィールドを選択し、ドロップダウンリストから別のコントロールを選択します。
 
 ## <a name="objects-in-the-project"></a>プロジェクト内のオブジェクト
 
@@ -57,7 +57,7 @@ ms.locfileid: "85520121"
 
 - 型指定されたデータセットをデータベースに接続する TableAdapter。 詳細については、「 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)」を参照してください。
 
-- TableAdapterManager。階層更新を有効にするために、データセット内のテーブルアダプターを調整するために使用されます。 詳細については、「[階層更新](../data-tools/hierarchical-update.md)と[TableAdapterManager リファレンス](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)」を参照してください。
+- TableAdapterManager。階層更新を有効にするために、データセット内のテーブルアダプターを調整するために使用されます。 詳細については、「 [階層更新](../data-tools/hierarchical-update.md) と [TableAdapterManager リファレンス](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)」を参照してください。
 
 プロジェクトを実行すると、データ ソースの先頭のレコードがコントロールに表示されます。 <xref:System.Windows.Forms.BindingSource> を使用すると、ユーザーがレコードをスクロールできるようになります。
 
@@ -65,7 +65,7 @@ ms.locfileid: "85520121"
 
 - <xref:System.Windows.Forms.BindingSource.MoveNext%2A> や <xref:System.Windows.Forms.BindingSource.MovePrevious%2A> など、<xref:System.Windows.Forms.BindingSource> のメソッドを使用します。
 
-型指定されたデータセットおよびデータベースに更新を送信する方法については、「[方法: ホストコントロールからのデータを使用してデータソースを更新](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)する」を参照してください。
+型指定されたデータセットおよびデータベースに更新を送信する方法については、「 [方法: ホストコントロールからのデータを使用してデータソースを更新](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

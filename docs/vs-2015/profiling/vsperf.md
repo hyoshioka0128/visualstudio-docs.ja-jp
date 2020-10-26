@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533836"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -47,7 +47,7 @@ ms.locfileid: "85533836"
 |**/noclr**|任意。 CLR データは収集しません。<br /><br /> /package または /attach でのみ使用します。<br /><br /> 最適化で、マネージド シンボルは解決されません。|  
 |**/listapps**|インストール済みアプリの Name と PackageFullName を一覧表示します。|  
   
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Windows 8 デスクトップアプリケーションと Windows Server 2012 アプリケーションのみ  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 デスクトップアプリケーションと Windows Server 2012 アプリケーションのみ  
  これらのオプションは、Windows ストア アプリでは機能しません。  
   
 |オプション|説明|  
@@ -56,7 +56,7 @@ ms.locfileid: "85533836"
 |**/args:{ExecutableArguments}**|**/launch** ターゲットに渡すようにコマンド ライン引数を指定します。|  
 |**/console**|新しいコマンド ウィンドウで **/launch** ターゲットを実行します。|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>すべてのアプリケーション  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> すべてのアプリケーション  
  これらのオプションは、すべての Windows 8 アプリケーションまたは Windows Server 2012 アプリケーションに適用されます。  
   
 |オプション|説明|  
@@ -69,6 +69,6 @@ ms.locfileid: "85533836"
 |**/detach**|データ収集を停止しますが、ターゲット プロセスの実行は続行します。|  
 |**/status**|プロファイラーの状態を表示します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Windows 8 および Windows Server 2012 アプリケーションのパフォーマンスツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)

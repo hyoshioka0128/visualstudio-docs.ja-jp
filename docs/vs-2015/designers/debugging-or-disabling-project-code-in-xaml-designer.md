@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657929"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>XAML デザイナーでプロジェクト コードをデバッグまたは無効化する
@@ -33,13 +33,13 @@ ms.locfileid: "72657929"
 
   プロジェクト コードが無効になると、Visual Studio は、たとえば、データが使用できなくなったバインドのプロパティ名などのプレースホルダーや、実行されなくなったコントロールのプレースホルダーを表示します。
 
-  ![未処理の例外ダイアログ](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")
+  ![[ハンドルされていない例外] ダイアログ](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")
 
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>プロジェクト コードが例外の原因かどうかを判断するには
 
 1. ハンドルされない例外のダイアログで、 **[ここをクリックして、デザイナーを再読み込み]** リンクを選びます。
 
-2. メニュー バーで、 **[デバッグ]** 、 **[デバッグ開始]** を選んでアプリケーションを実行します。
+2. メニュー バーで、 **[デバッグ]**、 **[デバッグ開始]** を選んでアプリケーションを実行します。
 
      アプリケーションがビルドされ、正常に実行される場合は、デザイナーで実行されているプロジェクト コードによってデザイン時例外が発生する可能性があります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72657929"
 
 2. Windows タスク マネージャーで、 **[タスクの終了]** ボタンを選び、現在実行している Visual Studio XAML デザイナーのすべてのインスタンスを閉じます。
 
-     ![TaskManager の XAML デザイナーインスタンス](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
+     ![TaskManager の XAML デザイナー インスタンス](../designers/media/xaml-taskmanager.png "XAML_TaskManager")
 
 3. Visual Studio で、デバッグするコードまたはコントロールを含む XAML ページを開きます。
 
@@ -57,15 +57,15 @@ ms.locfileid: "72657929"
 
 5. プロジェクト コードにブレークポイントを設定します。
 
-6. Visual Studio の新しいインスタンスのメニュー バーで、 **[デバッグ]** 、 **[プロセスにアタッチ]** を選びます。
+6. Visual Studio の新しいインスタンスのメニュー バーで、 **[デバッグ]**、 **[プロセスにアタッチ]** を選びます。
 
 7. **[プロセスにアタッチ]** ダイアログの **[選択可能なプロセス]** 一覧で、 **XDesProc.exe**を選び、 **[アタッチ]** ボタンを選びます。
 
-     ![XAML デザイナーのプロセス](../designers/media/xaml-attach.png "XAML_Attach")
+     ![XAML デザイナー プロセス](../designers/media/xaml-attach.png "XAML_Attach")
 
      これは、Visual Studio の最初のインスタンスの XAML デザイナーの手順です。
 
-8. Visual Studio の最初のインスタンスのメニュー バーで、 **[デバッグ]** 、 **[デバッグ開始]** を選びます。
+8. Visual Studio の最初のインスタンスのメニュー バーで、 **[デバッグ]**、 **[デバッグ開始]** を選びます。
 
      デザイナーで実行しているコードにステップ インできます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "72657929"
 
 - あるいは、XAML デザイナーのツール バーで、 **[プロジェクト コードを無効にする]** ボタンを選びます。
 
-     ![[プロジェクトコードを無効にする] ボタン](../designers/media/xaml-disablecode.png "XAML_DisableCode")
+     ![[プロジェクト コードの無効化] ボタン](../designers/media/xaml-disablecode.png "XAML_DisableCode")
 
      もう一度ボタンを切り替えて、プロジェクト コードを再び有効にできます。
 

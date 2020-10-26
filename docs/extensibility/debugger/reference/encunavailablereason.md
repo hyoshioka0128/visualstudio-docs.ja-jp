@@ -1,5 +1,5 @@
 ---
-title: 無効な理由 |マイクロソフトドキュメント
+title: EncUnavailableReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737161"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!`エディット**コンティニュ**が使用できない理由を表します。
+`This is for internal use only!`**エディットコンティニュ**が使用できない理由を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -54,35 +54,35 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>フィールド
 `ENCUN_NONE`\
-エディット コンティニュが利用できない理由は特定されていません。
+エディットコンティニュを使用できない具体的な理由はありません。
 
 `ENCUN_INTEROP`\
-編集と続行は、InterOp 呼び出し中は使用できません。
+エディットコンティニュは、相互運用呼び出し中には使用できません。
 
 `ENCUN_SQLCLR`\
-エディット コンティニュは、共通言語ランタイム (CLR) を使用する SQL プロシージャ呼び出し中は使用できません。
+エディットコンティニュは、共通言語ランタイム (CLR) を使用する SQL プロシージャ呼び出しでは使用できません。
 
 `ENCUN_MINIDUMP`\
-ミニダンプの処理中はエディット コンティニュは使用できません。
+ミニダンプの処理中は、エディットコンティニュは使用できません。
 
 `ENCUN_EMBEDDED`\
-エディット コンティニュは、埋め込みコードを処理するときには使用できません。
+エディットコンティニュは、埋め込みコードを処理するときには使用できません。
 
 `ENCUN_ATTACH`\
-セッションがデバッガにアタッチされ、起動されなかったため、エディット コンティニュは使用できません。
+セッションがデバッガーにアタッチされていないため、エディットコンティニュを使用できません。
 
 `ENCUN_WIN64`\
-エディット コンティニュは、64 ビット Windows コードの処理中は使用できません。
+64ビットの Windows コードの処理中は、エディットコンティニュを使用できません。
 
-## <a name="remarks"></a>Remarks
-この列挙体は、内部で使用[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]する場合にのみ使用します。 カスタム ポート サプライヤによって実装される[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)メソッドと[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)メソッドは、常にを返す`E_NOTIMPL`必要があります。
+## <a name="remarks"></a>解説
+この列挙体は、によってのみ内部で使用され [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。 カスタムポート供給業者によって実装される [Getencの状態](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) および [disableenc](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) メソッドは、常にを返す必要があり `E_NOTIMPL` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.idl
+ヘッダー: msdbg .idl
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

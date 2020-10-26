@@ -1,5 +1,5 @@
 ---
-title: レガシー言語サービスインタフェース |マイクロソフトドキュメント
+title: 従来の言語サービスインターフェイス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707382"
 ---
 # <a name="legacy-language-service-interfaces"></a>従来の言語サービスのインターフェイス
-特定のプログラミング言語の場合、言語サービスのインスタンスは一度に 1 つしか存在できません。 ただし、1 つの言語サービスは複数のエディターを提供できます。
+特定のプログラミング言語では、言語サービスのインスタンスは一度に1つしか存在できません。 ただし、1つの言語サービスで複数のエディターを使用できます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]言語サービスを特定のエディターに関連付けりません。 そのため、言語サービス操作を要求する場合は、適切なエディターをパラメーターとして指定する必要があります。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、言語サービスが特定のエディターに関連付けられません。 そのため、言語サービス操作を要求する場合は、適切なエディターをパラメーターとして指定する必要があります。
 
-## <a name="common-interfaces-associated-with-language-services"></a>言語サービスに関連付けられた共通インタフェース
- エディターは、適切な VSPackage<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>を呼び出すことによって、言語サービスを取得します。 この呼び出しで渡されるサービス ID (SID) は、要求されている言語サービスを識別します。
+## <a name="common-interfaces-associated-with-language-services"></a>言語サービスに関連付けられている共通のインターフェイス
+ エディターは、適切な VSPackage でを呼び出すことによって、言語サービスを取得し <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> ます。 この呼び出しで渡されるサービス ID (SID) は、要求されている言語サービスを識別します。
 
- コア言語サービス インターフェイスは、任意の数の独立したクラスに実装できます。 ただし、一般的なアプローチは、次のインターフェイスを 1 つのクラスに実装することです。
+ コア言語サービスインターフェイスは、任意の数の独立したクラスに実装できます。 ただし、一般的な方法は、1つのクラスに次のインターフェイスを実装することです。
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>
 
@@ -36,20 +36,20 @@ ms.locfileid: "80707382"
 
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (省略可)
 
-  インターフェイス<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>はすべての言語サービスに実装する必要があります。 ローカライズされた言語名、言語サービスに関連付けられたファイル名拡張子、カラー化器の取得方法など、言語サービスに関する情報を提供します。
+  インターフェイスは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> すべての言語サービスに実装する必要があります。 言語のローカライズされた名前、言語サービスに関連付けられているファイル名拡張子、色計を取得する方法など、言語サービスに関する情報を提供します。
 
-## <a name="additional-language-service-interfaces"></a>その他の言語サービス インターフェイス
- 他のインターフェイスは、言語サービスで提供できます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、テキスト バッファーの各インスタンスに対して、これらのインターフェイスの個別のインスタンスを要求します。 したがって、これらの各インターフェイスは、独自のオブジェクトに実装する必要があります。 次の表は、テキスト バッファー インスタンスごとに 1 つのインスタンスを必要とするインターフェイスを示しています。
+## <a name="additional-language-service-interfaces"></a>追加の言語サービスインターフェイス
+ その他のインターフェイスは、言語サービスで提供できます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] テキストバッファーのインスタンスごとに、これらのインターフェイスの個別のインスタンスを要求します。 そのため、これらの各インターフェイスを独自のオブジェクトに実装する必要があります。 次の表は、テキストバッファーインスタンスごとに1つのインスタンスを必要とするインターフェイスを示しています。
 
 |インターフェイス|説明|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|ドロップダウン バーなどのコード ウィンドウの表示要素を管理します。 このインターフェイスは、 メソッドを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>使用して取得できます。 コード ウィンドウ<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>ごとに 1 つがあります。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|言語キーワードと区切り文字を色分けします。 このインターフェイスは、 メソッドを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>使用して取得できます。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>は塗装時に呼び出されます。 内部<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>での計算負荷の高い作業やパフォーマンスが低下する可能性を避けます。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|IntelliSense パラメーターのツールヒントを提供します。 言語サービスは、メソッド データを表示する必要があることを示す文字 (左かっこなど) を認識すると、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>メソッドを呼び出して、言語サービスがパラメーターヒントを表示する準備ができていることをテキスト ビューに通知します。 テキスト ビューは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>インターフェイスのメソッドを使用して言語サービスに呼び出し、ツールヒントを表示するために必要な情報を取得します。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|ステートメント補完を提供します。 言語サービスは、入力候補リストを表示する準備が整ったら、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>テキスト ビューのメソッドを呼び出します。 テキスト ビューは、オブジェクトのメソッドを使用して言語サービスに<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>呼び出します。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|コマンド ハンドラーを使用してテキスト ビューを変更できます。 インターフェイスを実装するクラスも、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>インターフェイスを実装する<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>必要があります。 テキスト ビューは、メソッド<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>に渡されたオブジェクトを<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>クエリすることによってオブジェクトを<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>取得します。 各ビューに<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>1 つのオブジェクトが存在する必要があります。|
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|ユーザーがコード ウィンドウに入力したコマンドをインターセプトします。 実装からの出力を<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>監視して、カスタム完了情報を提供し、変更を表示する<br /><br /> オブジェクトをテキスト<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>ビューに渡す場合は<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>、 を呼び出します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|ドロップダウンバーなどのコードウィンドウの表示要素を管理します。 このインターフェイスは、メソッドを使用して取得でき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> ます。 コードウィンドウごとに1つずつ存在 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|色づけ言語のキーワードと区切り記号。 このインターフェイスは、メソッドを使用して取得でき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> ます。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> は、描画時に呼び出されます。 計算集中型の作業を避けて <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ください。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|IntelliSense パラメーターのヒントを提供します。 言語サービスが、メソッドのデータを表示する必要があることを示す文字 (始めかっこなど) を認識すると、メソッドを呼び出して、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> 言語サービスがパラメーターヒントを表示する準備ができていることをテキストビューに通知します。 次に、テキストビューは、インターフェイスのメソッドを使用して言語サービスにコールバックし、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> ツールヒントを表示するために必要な情報を取得します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|IntelliSense ステートメント入力候補を提供します。 言語サービスがコンプリートリストを表示する準備ができたら、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> テキストビューでメソッドを呼び出します。 その後、テキストビューは、オブジェクトのメソッドを使用して、言語サービスにコールバックし <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ます。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|コマンドハンドラーを使用してテキストビューを変更できるようにします。 インターフェイスを実装するクラスは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> インターフェイスも実装する必要があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 テキストビューでは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> メソッドに渡されたオブジェクトをクエリすることによって、オブジェクトを取得し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。 ビューごとに1つのオブジェクトが存在する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> ます。|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|ユーザーがコードウィンドウに入力するコマンドをインターセプトします。 実装からの出力を監視して、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> カスタムの完了情報とビューの変更を提供する<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>オブジェクトをテキストビューに渡すには、を呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [チェック リスト: 従来の言語サービスの作成](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [チェックリスト: 従来の言語サービスの作成](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

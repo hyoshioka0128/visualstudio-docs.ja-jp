@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115314"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801075"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -23,7 +23,7 @@ ms.locfileid: "87115314"
    > ![Azure DevOps タイル](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Visual Studio サブスクリプションのアクティブ化に使用した ID または[代替 ID](vs-alternate-identity.md) を使って Azure DevOps にサインインすると、そのことが自動的に認識されます。  このように、(Visual Studio、Office 365、または会社や学校のネットワークのログインに使用する) 職場または学校のアカウントを追加することもできます。これにより、個人用アカウントと職場または学校のアカウントの両方を使用して Azure DevOps にアクセスできるようになります。
+Visual Studio サブスクリプションのアクティブ化に使用した ID または[代替 ID](vs-alternate-identity.md) を使って Azure DevOps にサインインすると、そのことが自動的に認識されます。  このように、(Visual Studio、Microsoft 365、または会社や学校のネットワークへのログインに使用する) 職場または学校のアカウントを追加することもできます。これにより、個人用アカウントと職場または学校のアカウントの両方を使用して Azure DevOps にアクセスできるようになります。
 
 [無料の Azure DevOps 組織にサインアップする](https://visualstudio.microsoft.com/team-services/)
 

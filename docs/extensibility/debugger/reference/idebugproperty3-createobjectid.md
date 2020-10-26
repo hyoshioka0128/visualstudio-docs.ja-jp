@@ -1,5 +1,5 @@
 ---
-title: プロパティ 3::オブジェクト ID を作成する |マイクロソフトドキュメント
+title: 'IDebugProperty3:: CreateObjectID |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721176"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
@@ -38,15 +38,15 @@ int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、セッションデバッグマネージャーが、このプロパティが他のすべてのプロパティの間で一意に識別されることを確認する場合に呼び出されます。 デバッグ エンジン (DE) は、そのデバッグ エンジンが処理するプロパティが既に一意に識別されていない限り、このメソッドをサポートします。 DE がこのメソッドをサポートしていない場合は、`E_NOTIMPL`を返します。
+## <a name="remarks"></a>注釈
+ このメソッドは、セッションデバッグマネージャーが、このプロパティが他のすべてのプロパティで一意に識別されるようにする必要があるときに呼び出されます。 デバッグエンジン (DE) は、対応するプロパティが既に一意に識別されている場合を除き、このメソッドをサポートします。 DE がこのメソッドをサポートしていない場合は、を返し `E_NOTIMPL` ます。
 
- で`CreateObjectID`作成された一意の ID は[、DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)メソッドが呼び出されると破棄されます。これはまた、このプロパティを一意に識別する必要性の終了を示します。
+ で作成された一意の ID `CreateObjectID` は、 [destroyobjectid](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) メソッドが呼び出されたときに破棄されます。これにより、このプロパティを一意に識別する必要があることが通知されます。
 
 > [!NOTE]
-> この一意の ID を取得するメソッドはありません。 `CreateObjectID`
+> この一意の ID を取得する方法はありません。そのため、メソッドが呼び出されたときに、DE は一意の Id に必要な操作を実行でき `CreateObjectID` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

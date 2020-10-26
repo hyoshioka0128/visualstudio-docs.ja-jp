@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289236"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711704"
 ---
 # <a name="msbuild-conditions"></a>MSBuild の条件
 
@@ -57,6 +57,12 @@ MSBuild では、`Condition` 属性が許可されている場所ならどこで
 
 </Project>
 ```
+
+MSBuild プロジェクト ファイルには、真のブール型は存在しません。 ブール型のデータは、空や任意の値に設定したプロパティで表します。 したがって、`'$(Prop)' == 'true'` は "Prop が `true` である場合" を意味しますが、`'$(Prop)' != 'false'` は "Prop が `true`、未設定、または別のものに設定されている場合" を意味します。
+
+ブール値のロジックは条件のコンテキストでのみ評価されるので、`<Prop2>'$(Prop1)' == 'true'</Prop>` などのプロパティ設定は、ブール値として評価されるのではなく、文字列として表されます (変数の展開後)。  
+
+ブール値として使用する文字列プロパティを操作しやすくするために、MSBuild にはいくつかの特別な処理規則が実装されています。 ブール型リテラルは許容されます。そのため、`Condition="true"` や `Condition="false"` は期待どおりに動作します。 MSBuild には、ブール型の否定演算子をサポートする特殊な規則も含まれています。 `$(Prop)` が 'true' の場合、`!$(Prop)` は `!true` に展開され、想定どおり `false` と等価になります。
 
 ## <a name="see-also"></a>関連項目
 

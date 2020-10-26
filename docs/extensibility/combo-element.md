@@ -1,5 +1,5 @@
 ---
-title: コンボ要素 |マイクロソフトドキュメント
+title: コンボ要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739823"
 ---
 # <a name="combo-element"></a>コンボ要素
-コンボ ボックスに表示されるコマンドを定義します。 コンボ ボックスには、次の 4 種類があります: ドロップダウン コンボ、動的コンボ、インデックスコンボ、および MRUCombo。
+コンボボックスに表示されるコマンドを定義します。 次に示すように、DropDownCombo、DynamicCombo、IndexCombo、MRUCombo の4種類のコンボボックスがあります。
 
 ## <a name="syntax"></a>構文
 
@@ -38,28 +38,28 @@ ms.locfileid: "80739823"
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須。 GUID/ID コマンド識別子の GUID です。|
-|id|必須。 GUID/ID コマンド ID の ID。|
-|既定の幅|必須。 コンボ ボックスのピクセル幅を指定する整数。|
-|一覧|必須。 コンボ ボックスに表示される項目の一覧を取得するために、アクティブなコマンド ターゲットに送信される ID。 ID は、コントロールと同じ GUID スコープ内に置かれる。|
-|priority|省略可能。 優先順位を指定する数値。|
-|type|省略可能。 ボタンの種類を指定する列挙値。<br /><br /> 指定しない場合は、ボタンを使用します。<br /><br /> ドロップダウンコンボ<br /> VSPackage は、このコンボ ボックスの内容を入力する役割を担います。 ユーザーは、このドロップダウンのテキスト ボックスに何も入力できません。<br /><br /> ダイナミックコンボ<br /> VSPackage は、このコンボ ボックスの内容を入力する役割を担います。 ユーザーはこのコンボを編集し、その中の項目を選択することもできます。<br /><br /> インデックスコンボ<br /> DynamicCombo と同じですが、テキストではなく項目のインデックスを上げる点が異なります。<br /><br /> MRUコンボ<br /> VSPackage の代わりに統合開発環境 (IDE) によって満たされます。  ユーザーはこのコンボ ボックスで編集できます。 IDE は、コンボ ボックスごとに最後の 16 個のエントリまで記憶します。<br /><br /> ユーザーがコンボ ボックスで何かを選択するか、新しいものを入力すると、IDE は適切な VSPackage を通知します。|
-|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|guid|必須。 GUID/ID コマンド識別子の GUID。|
+|id|必須。 GUID/ID コマンド識別子の ID。|
+|defaultWidth|必須。 コンボボックスのピクセル幅を指定する整数。|
+|idCommandList|必須。 コンボボックスに表示される項目の一覧を取得するために、アクティブなコマンドターゲットに送信される ID。 ID は、コントロールと同じ GUID スコープにあります。|
+|priority|省略可能。 優先度を示す数値です。|
+|type|省略可能。 ボタンの種類を指定する列挙値。<br /><br /> 指定されていない場合は、ボタンを使用します。<br /><br /> DropDownCombo<br /> VSPackage は、このコンボボックスの内容を入力する役割を担います。 ユーザーは、このドロップダウンリストのテキストボックスに何も入力できません。<br /><br /> DynamicCombo<br /> VSPackage は、このコンボボックスの内容を入力する役割を担います。 ユーザーはこのコンボボックスを編集して、その中の項目を選択することもできます。<br /><br /> IndexCombo<br /> テキストではなく項目のインデックスを生成する点を除いて、DynamicCombo と同じです。<br /><br /> MRUCombo<br /> VSPackage の代わりに統合開発環境 (IDE) によって塗りつぶされます。  ユーザーはこのコンボボックスで編集できます。 IDE では、コンボボックスごとに最後の16個のエントリが記憶されます。<br /><br /> ユーザーがコンボボックスで何かを選択するか、新しいものを入力すると、IDE によって適切な VSPackage が通知されます。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
 |Parent|省略可能。 ボタンの親要素。|
-|コマンドフラグ|必須。 [コマンド フラグ要素](../extensibility/command-flag-element.md)を参照してください。 ボタンの有効なコマンド フラグ値は次のとおりです。<br /><br /> - 大文字と小文字を区別する<br /><br /> - コマンドウェルオンズのみ<br /><br /> - デフォルト無効<br /><br /> - デフォルト不可視<br /><br /> - ダイナミック可視性<br /><br /> - フィルタキー<br /><br /> - アイコンアンドテキスト<br /><br /> - オートコンプリートなし<br /><br /> - ボタンなしカスタマイズ<br /><br /> - いいえカスタマイズ<br /><br /> - ノーキーカスタマイズ<br /><br /> - 水平ストレッチ|
-|文字列|必須。 [「文字列要素](../extensibility/strings-element.md)」を参照してください。 子のボタンテキスト要素を定義する必要があります。|
-|Annotation|オプションのコメント。|
+|CommandFlag|必須。 「 [Command flag 要素](../extensibility/command-flag-element.md)」を参照してください。 ボタンの CommandFlag の有効な値は次のとおりです。<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -Defaul/Visible<br /><br /> -DynamicVisibility<br /><br /> -フィルターフィルタ<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - StretchHorizontally|
+|文字列|必須。 「 [Strings 要素](../extensibility/strings-element.md)」を参照してください。 子の ButtonText 要素を定義する必要があります。|
+|Annotation|コメント (省略可能)。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[コマンド要素](../extensibility/commands-element.md)|VSPackage ツール バーのコマンドのコレクションを表します。|
+|[Commands 要素](../extensibility/commands-element.md)|VSPackage ツールバーのコマンドのコレクションを表します。|
 
 ## <a name="example"></a>例
 
@@ -84,4 +84,4 @@ ms.locfileid: "80739823"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: IDE GUID |マイクロソフトドキュメント
+title: IDE Guid |Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41f9931b8e36dcb363624ecbc67e186bd3f5f71c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710486"
 ---
 # <a name="ide-guids"></a>IDE GUIDs
 
-この<xref:Microsoft.VisualStudio.VSConstants>クラスは、次の表に示すように、統合開発環境 (IDE) の一部の部分の GUID を発行します。
+クラスは、 <xref:Microsoft.VisualStudio.VSConstants> 次の表に示すように、統合開発環境 (IDE) の一部の部分の guid を発行します。
 
 ## <a name="core-systems"></a>コアシステム
 
@@ -30,21 +30,21 @@ ms.locfileid: "80710486"
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.HtmlEditorPackage_guid>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
 |<xref:Microsoft.VisualStudio.VSConstants.VsLanguageServiceGuid.HtmlLanguageService_guid>|58E975A0-F8FE-11D2-A6AE-00104BCC7269|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>|A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11d2-BFCA-00C04F90235|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11d2-BFCA-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11d0-AE1F-00A0C90FFFC3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>広く見えるコンポーネント
+## <a name="broadly-visible-components"></a>広範に見えるコンポーネント
 
 |定数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
-|SID_SVsGeneralOutputWindowPane|65482c72-デファ-41b7-902c-11c091889c83|
+|VisualStudio を SID_SUIHostCommandDispatcher します。|e69cd190-1276-11d1-9f64-00a0c911004f|
+|VisualStudio を SID_SVsGeneralOutputWindowPane します。|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>ファイル、仮想フォルダ、物理フォルダ、およびサブプロジェクト
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>ファイル、仮想および物理フォルダー、およびサブプロジェクト
 
 |定数|GUID|
 |--------------|----------|
@@ -78,22 +78,22 @@ ms.locfileid: "80710486"
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.GeneralPane_guid>|3C24D581-5591-4884-A571-9FE89915CD64|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.SortedBuildOutputPane_guid>|2032B126-7C8D-48AD-8026-0E0348004FC0|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
-|SID_SVsGeneralOutputWindowPane|65482c72-デファ-41b7-902c-11c091889c83|
+|VisualStudio を SID_SVsGeneralOutputWindowPane します。|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>コマンド セットとプロパティ
+## <a name="command-sets-and-properties"></a>コマンドセットとプロパティ
 
 |定数|GUID|
 |--------------|----------|
-|GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
+|VisualStudio を GUID_VSStandardCommandSet97 します。|5EFC7975-14BC-11CF-9B2B-00AA00573819|
+|VisualStudio の> を GUID_VsUIHierarchyWindowCmds します。|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
 |定数|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|0000000-0000-0000-C000-000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>タスクリストの GUID
+## <a name="task-list-guids"></a>タスク一覧の Guid
 
 |定数|GUID|
 |--------------|----------|
@@ -109,24 +109,24 @@ ms.locfileid: "80710486"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>コンポーネント セレクタ ページの GUID
+## <a name="component-selector-page-guids"></a>コンポーネントセレクターページ Guid
 
 |定数|GUID|
 |---------------|----------|
-|GUID_COMClassicPage|9A341D96-5A64-11d3-BFF9-00C04F90235|
-|GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F90235|
-|GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F90235|
+|VisualStudio を GUID_COMClassicPage します。|9A341D96-5A64-11d3-BFF9-00C04F990235|
+|VisualStudio を GUID_COMPlusPage します。|9A341D95-5A64-11d3-BFF9-00C04F990235|
+|VisualStudio を GUID_SolutionPage します。|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>その他のシェル GUID
+## <a name="miscellaneous-shell-guids"></a>その他のシェル Guid
 
 |定数|GUID|
 |---------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
-|SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2ae2|
+|VisualStudio を SID_SVsToolboxActiveXDataProvider します。|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
 ## <a name="see-also"></a>関連項目
 
-- [マネージ コード内の COM 定数](../extensibility/com-constants-in-managed-code.md)
+- [マネージコードの COM 定数](../extensibility/com-constants-in-managed-code.md)
 - [IDE 定数](../extensibility/ide-constants.md)
-- [プロジェクトの ystems を拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [プロジェクト s の ems を拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

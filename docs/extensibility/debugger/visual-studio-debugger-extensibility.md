@@ -1,5 +1,5 @@
 ---
-title: ビジュアル スタジオ デバッガーの機能拡張 |マイクロソフトドキュメント
+title: Visual Studio デバッガーの機能拡張 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,32 +12,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff4222b555fab73914776725fc79581f29fa5e53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712506"
 ---
-# <a name="visual-studio-debugger-extensibility"></a>デバッガーの機能拡張
-Visual Studio には完全に対話的なソース コード デバッガが用意されており、プログラムのバグを追跡するための強力で使いやすいツールが提供されています。 デバッガーは、Visual Basic、C#、C/C++、および JavaScript を完全にサポートしています。 ただし、 Microsoft [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)][ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=21835)から入手できる を使用すると、同じ機能を備えた他のプログラミング言語をデバッガーでサポートできます。
+# <a name="visual-studio-debugger-extensibility"></a>Visual Studio デバッガーの機能拡張
+Visual Studio には、完全にインタラクティブなソースコードデバッガーが含まれており、プログラムのバグを追跡するための強力で使いやすいツールを提供します。 デバッガーは、Visual Basic、C#、C/c + +、および JavaScript を完全にサポートしています。 ただし、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=21835)から入手できるを使用すると、他のプログラミング言語を同じ豊富な機能を備えたデバッガーでサポートできます。
 
- デバッガー[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は、デバッグ対象の言語に固有のデバッグ コンポーネントに共通のフロント エンド (つまり、ユーザー インターフェイス) です。 新しい言語では、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジン (DE) などの必要なバックエンド コンポーネントを作成する必要があるデバッガーで必要なすべてが必要です。 この点は、入[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]ってくるところです。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーは、デバッグ対象の言語に固有の、デバッグコンポーネントへの共通のフロントエンド (つまり、ユーザーインターフェイス) です。 新しい言語では、デバッガーによるサポートに必要なの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、デバッグエンジン (DE) などの必要なバックエンドコンポーネントを作成することだけです。 この時点で、が [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 登場します。
 
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]には、新しい DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を作成するために必要なすべての要素への完全な参照が含まれています。 また、開始に役立つサンプルやチュートリアルもあります。
+ には、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 新しい DE を作成するために必要なすべての要素への完全な参照が含まれています。 また、作業を開始するためのサンプルとチュートリアルも用意されています。
 
- デバッグをサポートする言語プロジェクト システムの完全なサンプルについては、 [IronPython のサンプル](https://www.microsoft.com/download/details.aspx?id=55984)を参照してください。
+ デバッグをサポートする言語プロジェクトシステムの完全なサンプルについては、 [IronPython サンプル](https://www.microsoft.com/download/details.aspx?id=55984)を参照してください。
 
- 以降のセクションでは、 を使用してデバッガーを拡張[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]する方法について説明します。
+ 次のセクションでは、を使用してデバッガーを拡張する方法について説明し [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [はじめに](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)デバッグの提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]内容と SDK のインストール方法について説明します。
+ [はじめ](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) に [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] デバッグの機能と SDK をインストールする方法について説明します。
 
- [カスタム デバッグ エンジンを作成する](../../extensibility/debugger/creating-a-custom-debug-engine.md)DE のプログラムの準備から DE のデタッチまで、カスタム DE プロセスについて説明します。
+ [カスタムデバッグエンジンを作成する](../../extensibility/debugger/creating-a-custom-debug-engine.md) De をデタッチするためのプログラムの準備から、カスタムの DE プロセスについて説明します。
 
- [CLR 式エバリュエーターを記述する](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)式エバリュエーターを記述する必要があるかどうかを説明します。
+ [CLR 式エバリュエーターを記述する](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) 式エバリュエーターを記述する必要があるかどうかについて説明します。
 
- [デバッグ エンジン実装戦略を選択する](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)DE を実装する方法について説明します。
+ [デバッグエンジンの実装方法を選択する](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md) DE を実装する方法について説明します。
 
- [リファレンス](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)デバッグ[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]API について説明します。
+ [参照](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md) デバッグ API について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
- [サンプル](../../extensibility/debugger/visual-studio-debugging-samples.md)共通言語ランタイム式エバリュエーターサンプルとデバッグ エンジンのサンプルへのリンクが含まれています。
+ [サンプル](../../extensibility/debugger/visual-studio-debugging-samples.md) 共通言語ランタイムの式エバリュエーターサンプルとデバッグエンジンサンプルへのリンクが含まれています。

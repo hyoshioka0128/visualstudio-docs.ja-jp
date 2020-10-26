@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382589"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションに使用する発行の言語を変更する
@@ -38,11 +38,11 @@ ms.locfileid: "85382589"
 
 2. **[公開]** タブをクリックします。
 
-3. [**オプション**] ボタンをクリックして、[**発行オプション**] ダイアログボックスを開きます。
+3. [ **オプション** ] ボタンをクリックして、[ **発行オプション** ] ダイアログボックスを開きます。
 
-4. [**説明**] をクリックします。
+4. [ **説明**] をクリックします。
 
-5. [**発行オプション**] ダイアログボックスで、[**発行言語**] ドロップダウンリストから言語とカルチャを選択し、[ **OK**] をクリックします。
+5. [ **発行オプション** ] ダイアログボックスで、[ **発行言語** ] ドロップダウンリストから言語とカルチャを選択し、[ **OK**] をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

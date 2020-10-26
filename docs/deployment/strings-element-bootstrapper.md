@@ -1,5 +1,5 @@
 ---
-title: '&lt;文字列&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;Strings &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747407"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;文字列&gt;要素 (ブートス トラップ)
-製品名、パッケージ名、およびインストールのエラー メッセージのローカライズされた文字列を定義します。
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; 要素 (ブートストラップ)
+製品名、パッケージ名、およびインストールエラーメッセージのローカライズされた文字列を定義します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,19 +40,19 @@ ms.locfileid: "66747407"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `Strings`要素の子である、`Package`要素。 属性ではありません。
+ 要素は `Strings` 要素の子です `Package` 。 属性はありません。
 
 ## <a name="string"></a>String
- `String`要素の子である、`Strings`要素。 A`Strings`要素が 1 つまたは複数あります`String`要素。
+ 要素は `String` 要素の子です `Strings` 。 `Strings`要素には、1つまたは複数の要素を含めることができ `String` ます。
 
- `String` 次の属性があります。
+ `String` には次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
 |`Name`|必須。 文字列の名前。|
 
 ## <a name="example"></a>例
- 次のコード例では、.NET Framework インストーラーのすべての英語文字列を指定します。
+ 次のコード例では、.NET Framework インストーラーのすべての英語文字列を指定しています。
 
 ```xml
 <Strings>
@@ -74,4 +74,4 @@ ms.locfileid: "66747407"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<パッケージ > 要素](../deployment/package-element-bootstrapper.md)
+- [\<Package> element](../deployment/package-element-bootstrapper.md)

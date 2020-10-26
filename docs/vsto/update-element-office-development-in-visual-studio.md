@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537385"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 要素 (Visual Studio での Office 開発)
@@ -43,7 +43,7 @@ ms.locfileid: "85537385"
 
 |属性|説明|
 |---------------|-----------------|
-|`enabled`|必須です。 Enabled は、次のいずれかの値に設定します。<br /><br /> -   更新プログラムを確認する**場合は true** 。<br />-   更新プログラムがチェックされないようにする場合は**false** 。|
+|`enabled`|必須。 Enabled は、次のいずれかの値に設定します。<br /><br /> -   更新プログラムを確認する**場合は true** 。<br />-   更新プログラムがチェックされないようにする場合は**false** 。|
 
  `update` 要素には、次の子要素があります。
 
@@ -54,8 +54,8 @@ ms.locfileid: "85537385"
 
 |属性|説明|
 |---------------|-----------------|
-|`maximumAge`| 必須です。 これを整数と同じ値に設定します。|
-|`unit`|必須です。 `unit`次のいずれかの値に設定します。<br /><br /> -   **まで**<br />-   **日時**<br />-   **ごと**|
+|`maximumAge`| 必須。 これを整数と同じ値に設定します。|
+|`unit`|必須。 `unit`次のいずれかの値に設定します。<br /><br /> -   **まで**<br />-   **日時**<br />-   **ごと**|
 
 ## <a name="example-of-always-checking-for-updates"></a>常に更新プログラムを確認する例
 

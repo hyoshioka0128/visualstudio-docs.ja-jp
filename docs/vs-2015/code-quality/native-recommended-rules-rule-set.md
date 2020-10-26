@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db76627afdf44ef1c46ed9ff7a9e204da8eb112d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608872"
 ---
 # <a name="native-recommended-rules-rule-set"></a>"ネイティブ推奨規則" 規則セット
@@ -21,7 +21,7 @@ ms.locfileid: "72608872"
 
 ネイティブの推奨規則は、ネイティブコードの最も重大で一般的な問題 (潜在的なセキュリティホールやアプリケーションのクラッシュなど) に焦点を当てています。  ネイティブ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。  この規則セットは、Visual Studio Professional Edition 以上で動作するように設計されています。
 
-|                                      規則                                      |                                                             説明                                                             |
+|                                      ルール                                      |                                                             説明                                                             |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                                     初期化されていないメモリの使用                                                      |
 |                       [C6011](../code-quality/c6011.md)                        |                                                     Null ポインターの逆参照                                                      |
@@ -156,7 +156,7 @@ ms.locfileid: "72608872"
 |                      [C28020](../code-quality/c28020.md)                       |                                               この呼び出しでは式が true ではありません                                               |
 |                      [C28021](../code-quality/c28021.md)                       |                                           注釈が付けられているパラメーターはポインターである必要があります                                           |
 |                      [C28022](../code-quality/c28022.md)                       |            この関数の関数クラスは、定義に使用された typedef の関数クラスと一致しません。            |
-|                      [C28023](../code-quality/c28023.md)                       |         割り当てられる、または渡される関数には、少なくとも1つのクラスの \_Function_class \_ 注釈が必要です。         |
+|                      [C28023](../code-quality/c28023.md)                       |         割り当てられている、または渡される関数には \_ \_ 、少なくとも1つのクラスの Function_class 注釈が必要です。         |
 |                      [C28024](../code-quality/c28024.md)                       | 割り当てられている関数ポインターには、function クラスで注釈が付けられています。関数クラスは、関数クラスのリストに含まれていません。 |
 |                      [C28039](../code-quality/c28039.md)                       |                                     実際のパラメーターの型は、型と完全に一致している必要があります                                      |
 |                      [C28112](../code-quality/c28112.md)                       |            インタロック関数を介してアクセスされる変数には、常にインタロックされた関数を介してアクセスする必要があります。            |

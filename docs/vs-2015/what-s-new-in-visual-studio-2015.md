@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387110"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
@@ -87,12 +87,12 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
  C# 言語と Visual Basic 言語には、両方ともコア言語と IDE サポートに多数の小さな改良が見られます。 それらの改良のすべてにより、.NET のコーディング作業がさらに便利かつ直感的になり、生産性が向上します。
 
- 詳細については、「[新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)」および「 [.net ブログ](https://devblogs.microsoft.com/dotnet/)」を参照してください。
+ 詳細については、「 [新機能](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) 」および「 [.net ブログ](https://devblogs.microsoft.com/dotnet/)」を参照してください。
 
 #### <a name="c"></a>C++
  Visual C++ は、C++11/14 言語への準拠、クロス プラットフォーム モバイル デバイス用開発のサポート、再利用可能関数および await (現在 C++17 での標準化に向けて検討中) のサポート、C ランタイム ライブラリ (CRT) および C++ 標準ライブラリ (STL) の実装における数々の改良とバグ修正、MFC でのサイズ変更可能なダイアログ、コンパイラの新しい最適化機能、ビルド パフォーマンスの改善、新しい診断機能、コード エディターでの新たな生産性向上ツールの点で大きく前進しています。
 
- 詳細については、「 [Visual C++ の新機能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)」および[Visual C++ のブログ](https://devblogs.microsoft.com/cppblog/)を参照してください。
+ 詳細については、「 [Visual C++ の新機能](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) 」および [Visual C++ のブログ](https://devblogs.microsoft.com/cppblog/)を参照してください。
 
 ## <a name="device-preview-menu-bar"></a>[デバイスのプレビュー] メニュー バー
  ユニバーサル Windows プラットフォーム プロジェクトでは、[デバイスのプレビュー] メニュー バーを使用して、XAML ベースの UI がさまざまな画面サイズでどのように表示されるかを確認できます。
@@ -135,7 +135,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
 ## <a name="debugging-and-diagnostics"></a>デバッグと診断
 
-診断の新機能の詳細については、「[プロファイルツールの新機能](./profiling/what-s-new-in-profiling-tools.md)」を参照してください。
+診断の新機能の詳細については、「 [プロファイルツールの新機能](./profiling/what-s-new-in-profiling-tools.md)」を参照してください。
 
 次に示すのは、コードに対して異なる種類の診断および分析を実行する新しいツールまたは機能強化されたツールです。
 
@@ -252,7 +252,7 @@ Visual Studio ALM の多くの機能強化と新機能の詳細については�
 
  タイトル バーにある黄色の笑顔マークをクリックして、感想を記入した後、 **[気に入った機能の報告]** ボタンをクリックするだけです。
 
- これで終了です。 お送りいただいたフィードバックは、該当するチームに送られます。受け取ったチームにとって、それは大いに励みとなり、担当者はご要望に応えるさらに良い方法を考えることにとりかかることでしょう。
+ それで完了です! お送りいただいたフィードバックは、該当するチームに送られます。受け取ったチームにとって、それは大いに励みとなり、担当者はご要望に応えるさらに良い方法を考えることにとりかかることでしょう。
 
 ### <a name="send-a-frown"></a>問題点、改善点の報告
  製品のどこをどう改善したらよいかについてご意見をお寄せいただくなら、今後の作業においてお客様が最も気にかけておられる点を優先的に取り上げることができます。 何か気になる点がありましたら、IDE の中から直接に **[問題点、改善点の報告]** 機能を使用してご報告ください。 そのプロセスも極めてシンプルなものにしてあります。

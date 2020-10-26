@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: edd1d6a7623f96f03403883ee2585d245414bb3b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539023"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:データ型のロケールを設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
@@ -49,7 +49,7 @@ ms.locfileid: "85539023"
 
  [!code-csharp[FxCop.Globalization.DataTable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.DataTable/cs/FxCop.Globalization.DataTable.cs#1)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Data.DataTable?displayProperty=fullName> <xref:System.Data.DataSet?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>
  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>

@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadLONG |Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadLONG |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08661272bea779ff0789619d58bf6f2837a21917
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538318"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-読み取り`LONG`プロパティ セット内の値。  
+`LONG`プロパティセット内の値を読み取ります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,16 +36,16 @@ HRESULT ReadDLONG ( 
   
 #### <a name="parameters"></a>パラメーター  
  `id`  
- [in]読み取るプロパティの識別子 (`PROPID`として WTypes.h で定義されている、 `ULONG`)。  
+ から読み取るプロパティの識別子 ( `PROPID` は WTypes .h でとして定義されてい `ULONG` ます)。  
   
  `pValue`  
- [out]プロパティ値を返します。  
+ 入出力プロパティ値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`LONG`します。  
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 `E_INVALIDARG`プロパティが型でない場合は、を返し `LONG` ます。  
   
-## <a name="remarks"></a>Remarks  
- A `LONG` 32 ビット符号付き整数としての Windows によって定義されます。  
+## <a name="remarks"></a>注釈  
+ は、 `LONG` Windows によって32ビット符号付き整数として定義されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

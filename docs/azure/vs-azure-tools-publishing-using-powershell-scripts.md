@@ -1,20 +1,20 @@
 ---
-title: 開発およびテスト環境に発行する PowerShell スクリプト
+title: PowerShell を使用して開発環境とテスト環境に発行する
 description: Visual Studio から Windows PowerShell スクリプトを使用して、開発環境とテスト環境に発行する方法について説明します。
+ms.custom: vs-azure
 author: ghogen
 manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 68b6075ab53fac8b5ac88bc3a15e591081c010da
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84179961"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037173"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -154,7 +154,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    ![Web 配置パッケージの作成](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   詳細については、「 [方法: Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」をご覧ください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
+   詳細については、「 [方法: Visual Studio で Web 配置パッケージを作成する](/previous-versions/aspnet/dd465323(v=vs.110))」をご覧ください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
 1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。
@@ -306,7 +306,7 @@ return $WebDeployPackage
     アプリケーションのテストを自動化するには、 `Test-WebApplication`にコードを追加します。 **Publish-WebApplication.ps1** で、これらの関数が呼び出されている行のコメントを必ず解除してください。 これを実装しない場合は、Visual Studio でプロジェクトを手動でビルドし、発行スクリプトを実行して Azure に発行できます。
 
 ## <a name="publishing-function-summary"></a>発行関数の概要
-Windows PowerShell コマンド プロンプトで使用できる関数のヘルプを取得するには、 `Get-Help function-name`コマンドを使用します。 ヘルプには、パラメーターのヘルプと例が含まれています。 同じヘルプテキストは、スクリプトソースファイル**azurewebapppublishmodule.psm1 hbase-runner.psm1**と**publish-webapplication.ps1**にもあります。 スクリプトとヘルプは、Visual Studio の言語でローカライズされています。
+Windows PowerShell コマンド プロンプトで使用できる関数のヘルプを取得するには、 `Get-Help function-name`コマンドを使用します。 ヘルプには、パラメーターのヘルプと例が含まれています。 同じヘルプテキストが、スクリプトソースファイル **azurewebapppublishmodule.psm1 hbase-runner.psm1** と **Publish-WebApplication.ps1**にも含まれています。 スクリプトとヘルプは、Visual Studio の言語でローカライズされています。
 
 **AzureWebAppPublishModule**
 
@@ -332,7 +332,7 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Test-AzureModule |インストールされている Azure モジュールのバージョンが 0.7.4 以降の場合は、 `$true` を返します。 モジュールがインストールされていないか以前のバージョンの場合は、 `$false` を返します。 この関数にはパラメーターはありません。 |
 | Test-AzureModuleVersion |Azure モジュールのバージョンが 0.7.4 以降の場合は、 `$true` を返します。 モジュールがインストールされていないか以前のバージョンの場合は、 `$false` を返します。 この関数にはパラメーターはありません。 |
 | Test-HttpsUrl |入力 URL を System.Uri オブジェクトに変換します。 URL が絶対 URL で、スキームが https の場合は、 `$True` を返します。 URL が相対 URL の場合、スキームが https でない場合、または入力文字列を URL に変換できない場合は、 `$false` を返します。 |
-| Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合は、 `$false`を返します。 |
+| Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合、`$false` を返します。 |
 | Write-ErrorWithTime |現在の時刻が先頭に付加されたエラー メッセージを書き込みます。 この関数は、 **Format-DevTestMessageWithTime** 関数を呼び出して先頭に時刻を付加してから、メッセージをエラー ストリームに書き込みます。 |
 | Write-HostWithTime |現在の時刻が先頭に付加されたメッセージをホスト プログラムに書き込みます (**Write-Host**)。 ホスト プログラムへの書き込み結果はさまざまです。 Windows PowerShell をホストするほとんどのプログラムが、これらのメッセージを標準出力に書き込みます。 |
 | Write-VerboseWithTime |現在の時刻が先頭に付加された詳細メッセージを書き込みます。 この関数は **Write-Verbose** を呼び出すので、**Verbose** パラメーターを指定してスクリプトを実行した場合、または **VerbosePreference** 設定が **Continue** に設定されている場合にのみ、メッセージが表示されます。 |

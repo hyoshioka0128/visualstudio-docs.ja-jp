@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b93d88462d5e3984b06c671455439e9bd2b07c5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656699"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision アクティビティ デザイナー
@@ -25,22 +25,22 @@ ms.locfileid: "72656699"
  <xref:System.Activities.Statements.FlowDecision> は、フローを 2 つに分岐できる場合に使用します。 <xref:System.Activities.Statements.FlowDecision> ノードには、<xref:System.Activities.Statements.FlowDecision.Condition%2A> および <xref:System.Activities.Statements.FlowNode> があり、<xref:System.Activities.Statements.FlowDecision.True%2A> または <xref:System.Activities.Statements.FlowDecision.False%2A> という、想定される 2 つの結果のそれぞれに関連付けられています。 <xref:System.Activities.Statements.FlowDecision.Condition%2A> が評価され、この評価の値により、次に <xref:System.Activities.Statements.FlowNode> 内で処理される <xref:System.Activities.Statements.Flowchart> が決定されます。
 
 ### <a name="using-the-flowdecision-designer"></a>FlowDecision デザイナーの使用
- **Flowdecision**デザイナーは、 **[ツールボックス]** の **[フローチャート]** カテゴリにあります。このカテゴリにアクセスするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] の **[ツールボックス]** タブをクリックします (または、 **[表示]** メニューの **[ツールバー]** を選択するか、CTRL + キーを押しながらALT + X キー)
+ **Flowdecision**デザイナーは、**ツールボックス**の [**フローチャート**] カテゴリにあります。これにアクセスするには、の [**ツールボックス**] タブをクリックします (または、[ [!INCLUDE[wfd2](../includes/wfd2-md.md)] **表示**] メニューの [**ツールバー** ] を選択するか、CTRL + ALT + X キーを押します)。
 
- **Flowdecision**デザイナーは、 **[ツールボックス]** からドラッグして、 **Flowchart**アクティビティデザイナー内の [!INCLUDE[wfd2](../includes/wfd2-md.md)] 画面にドロップできます。 これにより、<xref:System.Activities.Statements.Flowchart> アクティビティ内で**決定**された <xref:System.Activities.Statements.FlowDecision> が作成されます。 デザイナー上にマウスポインターを置くと、2つの分岐の**True**および**False**の四角形ハンドルが表示されます。
+ **Flowdecision**デザイナーは、[**ツールボックス**] からドラッグして、 [!INCLUDE[wfd2](../includes/wfd2-md.md)] **Flowchart**アクティビティデザイナー内の画面にドロップできます。 これにより <xref:System.Activities.Statements.FlowDecision> 、アクティビティ内にラベル付きの **決定** が作成さ <xref:System.Activities.Statements.Flowchart> れます。 デザイナー上にマウスポインターを置くと、2つの分岐の **True** および **False** の四角形ハンドルが表示されます。
 
  **Flowdecision**デザイナーと他のデザイナーを**フローチャート**にドラッグすると、ノードをリンクして実行の順序を指定できます。 ソースノード ( **Flowdecision**の**True**と**False**の分岐を含む) と宛先ノードの間にリンクを作成するには、ソースノードのデザイナー上にマウスポインターを移動します。 そのハンドルのどちらかをクリックし、マウス ボタンを押したまま、接続先ノードにマウス ポインターを置いたときと同じように表示されるハンドルのどちらかにドラッグします。 マウス ボタンを放すと、これら 2 つのノードの間にリンクが作成されます。このリンクは、接続元デザイナーから接続先デザイナーへの矢印で表されます。
 
- @No__t_0 を示す式は、 **[プロパティ]** ウィンドウの **[条件]** ボックスに「VB の式を入力する」というヒントテキストが表示されている場所をクリックして入力できます。
+ を示す式を [ <xref:System.Activities.Statements.FlowDecision.Condition%2A> **プロパティ**] ウィンドウの [**条件**] ボックスに入力するには、ヒントテキストに "VB の式を入力してください" と表示されている場所をクリックします。
 
 ### <a name="the-flowdecision-properties"></a>FlowDecision プロパティ
  次の表に、<xref:System.Activities.Statements.FlowDecision> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、プロパティ グリッドまたはデザイナー画面で編集できます。
 
-|プロパティ名|必要|使用方法|
+|プロパティ名|必須|使用|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|フロー制御が使用するパスを決定する条件。|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされた場合にフロー制御で使用されるパス。|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされない場合にフロー制御で使用されるパス。|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|○|フロー制御が使用するパスを決定する条件。|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|×|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされた場合にフロー制御で使用されるパス。|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|×|<xref:System.Activities.Statements.FlowDecision.Condition%2A> が満たされない場合にフロー制御で使用されるパス。|
 
 ## <a name="see-also"></a>参照
- [フロー](../workflow-designer/flowchart-activity-designers.md)チャート[フローチャート](../workflow-designer/flowchart-activity-designer.md) [FlowSwitch \<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [フロー](../workflow-designer/flowchart-activity-designers.md)チャート[フローチャート](../workflow-designer/flowchart-activity-designer.md) [FlowSwitch \<T> ](../workflow-designer/flowswitch-t-activity-designer.md)

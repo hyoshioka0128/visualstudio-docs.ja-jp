@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669709"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API を使用して UML シーケンス図を編集する
@@ -25,7 +25,7 @@ ms.locfileid: "72669709"
 
  API の詳細については、「 [VisualStudio](/previous-versions/dd493373(v=vs.140))」を参照してください。
 
- UML 図のコマンドとジェスチャハンドラーの記述に関する一般的な概要については、「[モデリング図でのメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
+ UML 図のコマンドとジェスチャハンドラーの記述に関する一般的な概要については、「 [モデリング図でのメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
 
 ## <a name="basic-code"></a>基本コード
 
@@ -52,10 +52,10 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
    // for diagrams and context
 ```
 
- 詳細については、「[モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
+ 詳細については、「 [モデリング図のメニューコマンドの定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)」を参照してください。
 
 ### <a name="getting-the-context"></a>コンテキストの取得
- 相互作用を、シーケンス図のコマンドまたはジェスチャ ハンドラーの一部として編集している場合、コンテキストへの参照を取得できます。 (例:
+ 相互作用を、シーケンス図のコマンドまたはジェスチャ ハンドラーの一部として編集している場合、コンテキストへの参照を取得できます。 次に例を示します。
 
 ```
 [SequenceDesignerExtension]
@@ -72,7 +72,7 @@ public class MySequenceDiagramCommand : ICommandExtension
 ```
 
 ### <a name="generated-and-uml-sequence-diagrams"></a>生成されるシーケンス図と UML シーケンス図
- シーケンス図には 2 種類あります。1 つは UML モデリング プロジェクトで手動で作成するシーケンス図、もう 1 つはプログラム コードから生成されるシーケンス図です。 シーケンス図の種類を判断するには、`UmlMode` プロパティを使用します。
+ シーケンス図には 2 種類あります。1 つは UML モデリング プロジェクトで手動で作成するシーケンス図、もう 1 つはプログラム コードから生成されるシーケンス図です。 シーケンス図の種類を判断するには、`UmlMode` プロパティを使用します。 
 
 > [!NOTE]
 > このプロパティは、Visual Studio 2013 またはそれ以前のバージョンを使用したコードから生成されたシーケンス図の場合のみ、false を返します。 これには、Visual Studio 2013 またはそれ以前のバージョンから移行されたコード生成型シーケンスが含まれます。 このバージョンの Visual Studio では、新しいシーケンス図の生成をサポートしていません。
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>相互作用とそのレイアウトの更新
  相互作用を更新する場合、必ず次のいずれかのメソッドを使用してレイアウトを更新することによって操作を終了する必要があります。
 
-- `ISequenceDiagram.UpdateShapePositions()` は、最近挿入または移動された図形と、その隣接する図形の位置を調整します。
+- `ISequenceDiagram.UpdateShapePositions()` 最近挿入または移動された図形と、隣接する図形の位置を調整します。
 
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` は、図全体を再描画します。 パラメーターを使用して、生存線、メッセージ、またはその両方の再配置を指定できます。
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` ダイアグラム全体を再描画します。 パラメーターを使用して、生存線、メッセージ、またはその両方の再配置を指定できます。
 
   これは特に、新規の要素を挿入する場合、または既存の要素を移動する場合に重要です。 これらのいずれかの操作を実行しなければ、図上で正しく配置されません。 必要な処理は、一連の変更の最後に、これらの操作のいずれかを 1 回呼び出すことだけです。
 
-  コマンドを実行した後に、元に戻す操作を実行したユーザーが混乱しないよう、`ILinkedUndoTransaction` を使用し、変更と最終的な `Layout()` または `UpdateShapePositions()` 操作を囲みます。 (例:
+  コマンドを実行した後に、元に戻す操作を実行したユーザーが混乱しないよう、`ILinkedUndoTransaction` を使用し、変更と最終的な `Layout()` または `UpdateShapePositions()` 操作を囲みます。 次に例を示します。
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -141,7 +141,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }
 ```
 
- 詳細については、「[トランザクションを使用した UML モデルの更新のリンク](../modeling/link-uml-model-updates-by-using-transactions.md)」を参照してください。
+ 詳細については、「 [トランザクションを使用した UML モデルの更新のリンク](../modeling/link-uml-model-updates-by-using-transactions.md)」を参照してください。
 
 ## <a name="building-an-interaction"></a>相互作用の構築
 
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>メッセージを作成するには
- メッセージを作成するには、ソースの生存線およびターゲットの生存線での挿入ポイントを特定する必要があります。 (例:
+ メッセージを作成するには、ソースの生存線およびターゲットの生存線での挿入ポイントを特定する必要があります。 次に例を示します。
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,

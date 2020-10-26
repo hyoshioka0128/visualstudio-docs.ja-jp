@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 網かけによるレンダリング エラーのデバッグ |Microsoft Docs'
+title: 'チュートリアル: 網かけによるレンダリング エラーのデバッグ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183609"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>チュートリアル: 網かけによるレンダリング エラーのデバッグ
@@ -34,7 +34,7 @@ ms.locfileid: "68183609"
   
  このシナリオでは、最近、アプリにオブジェクトとそれを変換する新しい頂点シェーダーとピクセル シェーダーを追加して、オブジェクトに独自の外観を設定したものとします。 テスト中にアプリを実行すると、オブジェクトは黒一色で表示されます。 グラフィックス診断を使うと、問題点をグラフィックス ログにキャプチャし、アプリのデバッグを実行できます。 問題は、アプリケーションでは次のように見えます。  
   
- ![オブジェクトは間違った色でレンダリングされます。](../debugger/media/gfx-diag-demo-render-error-shader-problem.png "gfx_diag_demo_render_error_shader_problem")  
+ ![オブジェクトは間違った色でレンダリングされています。](../debugger/media/gfx-diag-demo-render-error-shader-problem.png "gfx_diag_demo_render_error_shader_problem")  
   
 ## <a name="investigation"></a>調査  
  グラフィックス診断ツールを使うと、グラフィックス ログのドキュメントを読み込んで、テスト中にキャプチャされたフレームを調査できます。  
@@ -45,7 +45,7 @@ ms.locfileid: "68183609"
   
 2. **[フレーム一覧]** で、オブジェクトが正しく表示されていないフレームを選びます。 レンダー ターゲットが更新され、選択したフレームが反映されます。 このシナリオでは、グラフィックのログのドキュメント ウィンドウは次のようになります。  
   
-    ![Visual Studio に使用される、グラフィックス ログ ドキュメント。](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
+    ![Visual Studio のグラフィックス ログ ドキュメント。](../debugger/media/gfx-diag-demo-render-error-shader-step-1.png "gfx_diag_demo_render_error_shader_step_1")  
   
    問題を示しているフレームを選んだら、 **[グラフィックス ピクセル履歴]** ウィンドウを使用してそのフレームを診断できます。 **[グラフィックス ピクセル履歴]** ウィンドウに、特定のピクセルに影響を与えていた可能性があるプリミティブとそのシェーダーと、それらがレンダー ターゲットにどのような影響を与えていたかが、時系列順に表示されます。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "68183609"
   
     **[グラフィックス ピクセル履歴]** ウィンドウが更新され、選んだピクセルが反映されます。 このシナリオでは、 **[グラフィックス ピクセル履歴]** ウィンドウは次のように表示されます。  
   
-    ![ピクセル履歴は、1 つの DrawIndexed イベントを示しています。](../debugger/media/gfx-diag-demo-render-error-shader-step-3.png "gfx_diag_demo_render_error_shader_step_3")  
+    ![ピクセル履歴には 1 つの DrawIndexed イベントが表示されます。](../debugger/media/gfx-diag-demo-render-error-shader-step-3.png "gfx_diag_demo_render_error_shader_step_3")  
   
     ピクセル シェーダーの結果は完全に不透明な黒 (0, 0, 0, 1) で表示されること、また、 **[出力マージャー]** によってこれと **[前]** のピクセルの色が結合されるため、 **[結果]** も完全に不透明な黒で表示されることにご注意ください。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "68183609"
   
 3. `input.color`にポインターを置きます。 値が完全に不透明な黒 (0、0、0、1) であることにご注意ください。  
   
-    !["Input"の"color"メンバーは黒です。](../debugger/media/gfx-diag-demo-render-error-shader-step-5.png "gfx_diag_demo_render_error_shader_step_5")  
+    !["input" の "color" メンバーは黒です。](../debugger/media/gfx-diag-demo-render-error-shader-step-5.png "gfx_diag_demo_render_error_shader_step_5")  
   
     このシナリオでは、ピクセル シェーダーが操作するための色情報を頂点シェーダーが適切に指定していないことが原因で、正しい色が使用されない可能性があることが調査によってわかりました。  
   
@@ -87,7 +87,7 @@ ms.locfileid: "68183609"
   
 3. 色のメンバーが入力構造からコピーされないことを確認します。 `output.color` 構造が返される直前に `output` の値が完全に不透明な黒に設定されているため、 `output` の値が前の行で正しく初期化されていないことを確認することをお勧めします。 `output.color` の値を観察しながら、 `output.color`を黒に設定する行に達するまで頂点シェーダー コードをステップスルーします。 黒に設定されるまで `output.color` の値は初期化されないことにご注意ください。 これにより、 `output.color` を黒に設定するコードの行を削除するのではなく、修正する必要があることが確認できます。  
   
-    !["Output.color"の値は黒です。](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
+    !["output.color" の値は黒です。](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   
    レンダリングの問題の原因が、頂点シェーダーがピクセル シェーダーに適切な色の値を指定していないことであることを確認したら、この情報を使用して問題を解決できます。 このシナリオでは、頂点シェーダーの次のコードを変更することで問題を解決できます。  
   
@@ -107,4 +107,4 @@ output.color = input.color;
   
  コードを修正したら、それをリビルドし、もう一度アプリを実行してレンダリングの問題が解決されたことを確認します。  
   
- ![オブジェクトは正しい色でレンダリングされます。](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![オブジェクトは正しい色でレンダリングされています。](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")

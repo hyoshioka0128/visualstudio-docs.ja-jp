@@ -20,10 +20,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 3361b04900e549d037338abfba0911b232c9e1bd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919100"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Visual Studio プロジェクトのポート、移行、アップグレード
@@ -39,14 +39,14 @@ Visual Basic の場合、Visual Studio 2015 では、Visual Studio 2013 で作�
 
 Visual Studio 2015 を Visual Studio 2013、Visual Studio 2012、または Visual Studio 2010 SP1 と共に使用する場合は、これらのバージョンのいずれでもプロジェクトとファイルを作成および変更できます。 1 つ以上のバージョンでサポートされていない機能を追加しない限り、バージョン間でプロジェクトとファイルを移行できます。
 
-## <a name="project"></a> プロジェクト
+## <a name="projects"></a><a name="project"></a> イベント
 
 次の一覧では、Visual Studio 2012 または Visual Studio 2010 SP1 で作成されたプロジェクトに対する Visual Studio 2015 および Visual Studio 2013 のサポートについて説明します。 この一覧を使用して、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012、または Visual Studio 2010 SP1 でプロジェクトを "そのままの状態で" 開くことができるか、または互換性を確保するために変更する必要があるかを確認します。
 
 |プロジェクトの種類|互換性|
 |---------------------|-------------------|
 |ユニバーサル Windows プラットフォーム アプリ|ユニバーサル Windows アプリ用ツールをインストールするには、Visual Studio のセットアップで **[カスタム]** または **[変更]** を選択し、 **[ユニバーサル Windows アプリ開発ツール]** を選択します。<br /><br /> Windows 10 向けのユニバーサル Windows プラットフォーム (UWP) アプリの開発は、Windows 10 または [!INCLUDE[win81](../includes/win81-md.md)] 上の Visual Studio 2015 でのみサポートされています。|
-|Windows ストア アプリ|Windows 8.1 と Windows Phone 8.1 の両方を対象とするユニバーサル アプリを含む、Windows ストア アプリの開発は、 [!INCLUDE[win81](../includes/win81-md.md)] と Windows 10 でサポートされています。 既存の [!INCLUDE[win8](../includes/win8-md.md)] プロジェクトは引き続き使用できますが、新しい [!INCLUDE[win8](../includes/win8-md.md)] プロジェクトは作成できません。 [!INCLUDE[win81](../includes/win81-md.md)] プロジェクトは、特定の種類の参照のみに依存できます。 詳細については、「[プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)」を参照してください。 **注:** Visual Studio 2015 または Visual Studio 2013 を使用して作成した [!INCLUDE[win81](../includes/win81-md.md)] プロジェクトを Visual Studio 2012 で開くことはできません。 これは、Visual Studio 2015 および Visual Studio 2013 を使用して作成した [!INCLUDE[win81](../includes/win81-md.md)] プロジェクトはそのバージョンを対象とするのに対し、Visual Studio 2012 では [!INCLUDE[win8](../includes/win8-md.md)] を対象とする [!INCLUDE[win8](../includes/win8-md.md)] プロジェクトしかサポートされていないためです。|
+|Windows ストア アプリ|Windows 8.1 と Windows Phone 8.1 の両方を対象とするユニバーサル アプリを含む、Windows ストア アプリの開発は、 [!INCLUDE[win81](../includes/win81-md.md)] と Windows 10 でサポートされています。 既存の [!INCLUDE[win8](../includes/win8-md.md)] プロジェクトは引き続き使用できますが、新しい [!INCLUDE[win8](../includes/win8-md.md)] プロジェクトは作成できません。 [!INCLUDE[win81](../includes/win81-md.md)] プロジェクトは、特定の種類の参照のみに依存できます。 詳細については、「[プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)」を参照してください。 **注: Visual Studio 2015 または Visual Studio 2013 を使用して作成した **  [!INCLUDE[win81](../includes/win81-md.md)] プロジェクトを Visual Studio 2012 で開くことはできません。 これは、Visual Studio 2015 および Visual Studio 2013 を使用して作成した [!INCLUDE[win81](../includes/win81-md.md)] プロジェクトはそのバージョンを対象とするのに対し、Visual Studio 2012 では [!INCLUDE[win8](../includes/win8-md.md)] を対象とする [!INCLUDE[win8](../includes/win8-md.md)] プロジェクトしかサポートされていないためです。|
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|適切なマルチターゲット パックをインストールした後、Visual Studio 2015 および Visual Studio 2013 でこれらのプロジェクトを作成および使用することができます。 これらのプロジェクトは、Visual Studio 2010 SP1 ではサポートされていません。|
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|これらのプロジェクトは、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 では作成したり開いたりできますが、Visual Studio 2010 SP1 ではできません。|
 |BizTalk|BizTalk サーバー プロジェクトは、Visual Studio 2015 または Visual Studio 2013 と互換性がありません。|
@@ -60,7 +60,7 @@ Visual Studio 2015 を Visual Studio 2013、Visual Studio 2012、または Visua
 |モデル ビュー コントローラー フレームワーク|Visual Studio 2010 SP1 では MVC 2 と MVC 3 のみが、Visual Studio 2012 では MVC 3 と MVC 4 のみが、Visual Studio 2013 では MVC 4 のみがサポートされています。 MVC 2 から MCV 3 に自動的にアップグレードする方法については、「 [ASP.NET MVC 3 Application Upgrader (ASP.NET MVC 3 アプリケーション アップグレード プログラム)](https://aspnet.codeplex.com/releases/view/59008)」を参照してください。 MVC 2 から MVC 3 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update (ASP.NET MVC 2 プロジェクトから ASP.NET MVC 3 Tools Update へのアップグレード)](https://aspnet.codeplex.com/releases/view/59008)」を参照してください。 MVC 3 から MVC 4 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4 (ASP.NET MVC 3 プロジェクトから ASP.NET MVC 4 へのアップグレード)](/aspnet/whitepapers/mvc4-release-notes)」を参照してください。 .NET Framework 3.5 SP1 を対象とするプロジェクトの場合は、.NET Framework 4 を使用するようにプロジェクトの対象を変更する必要があります。|
 |モデリング|Visual Studio によるプロジェクトの自動更新を許可する場合は、Visual Studio 2013、Visual Studio 2012、または Visual Studio 2010 SP1 でこれを開くことができます。<br /><br /> Team Foundation でモデリング プロジェクトをビルドすると、Team Foundation はプロジェクト内のレイヤーの検証を試みます。 Visual Studio 2013 では、Visual Studio 2010 SP1 で作成されたモデリング プロジェクトに関するレイヤーを Team Foundation ビルドで検証することはできません。 ただし、Visual Studio 2010 SP1 では、Visual Studio 2013 で作成されたモデリング プロジェクト内のレイヤーを Team Foundation ビルドで検証することができます。|
 |MPI/クラスター デバッガー|Visual Studio 2013、Visual Studio 2012、または Visual Studio 2010 SP1 を稼働しているコンピューターに同じバージョンのランタイムまたはツールがインストールされている場合は、3 つのバージョンすべてでこのプロジェクトを開くことができます。|
-|MSI セットアップ (.vdproj)|Visual Studio 2013 では、このプロジェクト タイプがサポートされていないため、このプロジェクトを開くことができません。 ほとんどの Windows プラットフォームおよびアプリケーション ランタイムを直接サポートする無料の配置ソリューションである InstallShield Limited Edition for Visual Studio (ISLE) を使用することをお勧めします。 また、ISLE を使用して、Visual Studio インストーラー プロジェクトからデータと設定をインポートすることもできます。 で変更することなく実行できるかを確認できます。|
+|MSI セットアップ (.vdproj)|Visual Studio 2013 では、このプロジェクト タイプがサポートされていないため、このプロジェクトを開くことができません。 ほとんどの Windows プラットフォームおよびアプリケーション ランタイムを直接サポートする無料の配置ソリューションである InstallShield Limited Edition for Visual Studio (ISLE) を使用することをお勧めします。 また、ISLE を使用して、Visual Studio インストーラー プロジェクトからデータと設定をインポートすることもできます。 .|
 |Office 2007 VSTO|プロジェクトをアップグレードして、Office 2013 と .NET Framework 4 を対象にすると、Visual Studio 2013、Visual Studio 2012、または Visual Studio 2010 SP1 でこのプロジェクトを開くことができます。|
 |Office 2010 VSTO|プロジェクトが .NET Framework 4 を対象としている場合は、Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 でこれを開くことができます。 他のすべてのプロジェクトは、一方向のアップグレードが必要です。|
 |リッチ インターネット アプリケーション|プロジェクトをアップグレードすると、Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 でこれを開くことができます。|
@@ -71,13 +71,13 @@ Visual Studio 2015 を Visual Studio 2013、Visual Studio 2012、または Visua
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 を稼働しているコンピューター上に [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express がインストールされている場合は、3 つのバージョンすべてでプロジェクトを開くことができます。|
 |SQL Server レポート プロジェクト|Visual Studio 2013 および Visual Studio 2012 でプロジェクトを開くことができます。 ローカル モードの場合のみ (つまり、SQL Server に接続されていない場合)、 [!INCLUDE[vs2010](../includes/vs2010-md.md)]のビューアーに関連付けられているコントロールをデザイン時に操作することはできませんが、プロジェクトは実行時に適切に機能します。 **注意:** Visual Studio 2013 に固有の機能を追加すると、レポート スキーマが自動的にアップグレードされ、Visual Studio 2012 でプロジェクトを開くことができなくなります。|
 |単体テスト|Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 で [!INCLUDE[TCMext](../includes/tcmext-md.md)] を使用して、これらのバージョンのいずれかで作成されたテストを開くことができます。|
-|Visual C++|Visual Studio 2013 を使用して、Visual Studio 2012 または Visual Studio 2010 SP1 で作成された C++ プロジェクトを開くことができます。 Visual Studio 2013 ビルド環境を使用して、Visual Studio 2012 で作成されたプロジェクトをビルドする場合は、同じコンピューター上に両方のバージョンの Visual Studio がインストールされている必要があります。 詳細については、[Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)」と「[Visual C++ 移植とアップグレードのガイド](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)」を参照してください。|
+|Visual C++|Visual Studio 2013 を使用して、Visual Studio 2012 または Visual Studio 2010 SP1 で作成された C++ プロジェクトを開くことができます。 Visual Studio 2013 ビルド環境を使用して、Visual Studio 2012 で作成されたプロジェクトをビルドする場合は、同じコンピューター上に両方のバージョンの Visual Studio がインストールされている必要があります。 詳細については、「[方法: Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)」と「[Visual C++ 移植とアップグレードのガイド](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)」を参照してください。|
 |Visual Studio 2010 Web|Visual Studio がプロジェクトを自動的にアップグレードすることを許可する場合は、Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 でこれを開くことができます。|
 |Visual Studio 2010 データベース (.dbproj)|プロジェクトを SQL Server Data Tools データベース プロジェクトに変換した場合、Visual Studio 2013 でそれを開くことができます。 ただし、Visual Studio 2013 では次の成果物はサポートされていません。<br /><br /> -   単体テスト<br />-   データ生成計画<br />-   データ比較ファイル<br />-   スタティック コード分析用のカスタム規則の拡張機能<br />-   server.sqlsettings<br />-   .sqlcmd ファイル<br />-   カスタム配置の拡張機能<br />-   部分プロジェクト (.files)<br /><br /> SQL Server Data Tools をインストールすると、プロジェクトを変換した後に Visual Studio 2010 SP1 で開くことができます。 詳細については、「 [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx)」を参照してください。|
 |Visual Studio 2010 Visual Database Tools|このプロジェクトは、Visual Studio 2013、Visual Studio 2012、Visual Studio 2010 SP1 で開くことができます。|
 |Visual Studio Lab Management|[!INCLUDE[TCMext](../includes/tcmext-md.md)]、Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 を使用して、これらのバージョンのいずれかで作成された環境を開くことができます。 ただし、環境を作成するには、使用している Microsoft Test Manager のバージョンが Team Foundation Server のバージョンと一致する必要があります。|
 |Visual Studio マクロ|Visual Studio 2013 では、このプロジェクト タイプがサポートされていないため、このプロジェクトを開くことができません。|
-|Visual Studio SDK/VSIX|Visual Studio SDK プロジェクトを Visual Studio 2013 にアップグレードした後、それを Visual Studio 2012 で開くことはできません。 詳細については、[機能拡張プロジェクトを Visual Studio 2015 に移行する](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)」をご覧ください。|
+|Visual Studio SDK/VSIX|Visual Studio SDK プロジェクトを Visual Studio 2013 にアップグレードした後、それを Visual Studio 2012 で開くことはできません。 詳細については、「[How to: Migrate Extensibility Projects to Visual Studio 2015 (方法: 機能拡張プロジェクトを Visual Studio 2015 に移行する)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)」をご覧ください。|
 |Microsoft Azure Tools for Visual Studio|Microsoft Azure Tools for Visual Studio Version 2.1 を使用している場合は、Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 でプロジェクトを開くことができます。 以前のバージョンを対象とするプロジェクトの場合、Visual Studio でプロジェクトをバージョン2.1 にアップグレードすることを許可すると、Visual Studio 2013、Visual Studio 2012、および Visual Studio 2010 SP1 でこれを開くことができます。|
 |Windows Communication Foundation、Windows Presentation Foundation|このプロジェクトは、Visual Studio 2013、Visual Studio 2012、Visual Studio 2010 SP1 で開くことができます。|
 |Windows Mobile|Visual Studio 2013 では、このプロジェクト タイプがサポートされていないため、このプロジェクトを開くことができません。|
@@ -90,9 +90,9 @@ Visual Studio 2015 を Visual Studio 2013、Visual Studio 2012、または Visua
 ## <a name="troubleshooting-project-compatibility-issues"></a>プロジェクトの互換性の問題のトラブルシューティング
  ここでは、Visual Studio 2015 または Visual Studio 2013 でプロジェクトを開くことができない場合に実行できる、いくつかの対処方法を示します。
 
-- Visual Studio 2015 または Visual Studio 2013 でサポートされていないプロジェクトを開こうとするときに、そのプロジェクトに関連付けられているバージョンの Visual Studio がインストールされていない場合は、そのプロジェクト タイプがサポートされていないことを示すメッセージが表示され、 **[サポートされていないプロジェクト]** の下の **[プロジェクトとソリューションの変更をレビュー]** ダイアログ ボックスにそのプロジェクト タイプがリストされることがあります。 この問題を解決するには、Windows の **コントロール パネル**を開き、 **[Visual Studio]** 、 **[変更]** 、 **[修復]** の順に選択します。 ここで、必要なバージョンをインストールできます。
+- Visual Studio 2015 または Visual Studio 2013 でサポートされていないプロジェクトを開こうとするときに、そのプロジェクトに関連付けられているバージョンの Visual Studio がインストールされていない場合は、そのプロジェクト タイプがサポートされていないことを示すメッセージが表示され、**[サポートされていないプロジェクト]** の下の **[プロジェクトとソリューションの変更をレビュー]** ダイアログ ボックスにそのプロジェクト タイプがリストされることがあります。 この問題を解決するには、Windows の **コントロール パネル**を開き、 **[Visual Studio]**、 **[変更]**、 **[修復]** の順に選択します。 ここで、必要なバージョンをインストールできます。
 
-- [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] でデスクトップ アプリのプロジェクトを開こうとすると、エラーが発生し、"このエディションの Visual Studio は [!INCLUDE[win81](../includes/win81-md.md)] アプリのみをサポートします" または "このプロジェクトは、Visual Studio の現在のエディションと互換性がありません" というメッセージが表示されます。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] は、Windows 8.1 向けに設計された Windows ストア アプリの開発、テスト、展開用に制限されています。 デスクトップ アプリ プロジェクトを開くには、そのプロジェクトの種類をサポートしている Visual Studio のエディションを使用する必要があります。
+- [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]でデスクトップ アプリのプロジェクトを開こうとすると、エラーが発生し、"このエディションの Visual Studio は、 [!INCLUDE[win81](../includes/win81-md.md)] アプリのみをサポートします。" または "このプロジェクトは、Visual Studio の現在のエディションと互換性がありません。" というメッセージが表示されます。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] は、Windows 8.1 向けに設計された Windows ストア アプリの開発、テスト、展開用に制限されています。 デスクトップ アプリ プロジェクトを開くには、そのプロジェクトの種類をサポートしている Visual Studio のエディションを使用する必要があります。
 
    Visual Studio のエディションに関する詳細については、「 [Microsoft Visual Studio Products (Microsoft Visual Studio 製品)](https://visualstudio.microsoft.com/products/)」をご覧ください。
 
@@ -104,7 +104,7 @@ Visual Studio 2015 を Visual Studio 2013、Visual Studio 2012、または Visua
 
   追加のトラブルシューティング情報については、サポート技術情報の「 ["Visual Studio 2013 Compatibility (Visual Studio 2013 の互換性)](https://support.microsoft.com/help/2863286/roundtrip-issues-for-visual-studio-2012-and-visual-studio-2013-preview) 」を参照してください。
 
-## <a name="file"></a> ファイル
+## <a name="files"></a><a name="file"></a> ファイル
 
 次の一覧では、Visual Studio 2013 で各ファイルの種類がサポートされているかどうか、Visual Studio 2012 と Visual Studio 2010 SP1 でファイルを開くことができるかどうか、および互換性を保持するために変更を加える必要があるかどうかを確認できます。
 
@@ -125,7 +125,7 @@ Visual Studio 2015 を Visual Studio 2013、Visual Studio 2012、または Visua
 |[!INCLUDE[vs2010](../includes/vs2010-md.md)] の IntelliTrace ログ ファイル|Visual Studio 2012、Visual Studio 2013、Visual Studio 2010 SP1 でこれらのファイルを開くことができます。|
 |JavaScript メモリ アナライザー (.diagsession) ファイル|以前のバージョンの Visual Studio で作成されたファイルは、Visual Studio 2013 で表示できます。 ただし、収集された情報によっては、Visual Studio 2013 で作成されたファイルを Visual Studio 2012 または Visual Studio 2010 SP1 で開くことができない場合があります。|
 
-## <a name="integration"></a> 統合資産
+## <a name="integration-assets"></a><a name="integration"></a> 統合資産
 
 Visual Studio Team Foundation Server の異なるバージョンのクライアントおよびサーバーを使用する場合は、互換性の問題が発生する可能性があります。
 

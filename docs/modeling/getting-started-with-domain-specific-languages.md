@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a4761703610a87818cd1512f96530a0f865faf0
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238544"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
@@ -119,7 +119,7 @@ DSL ソリューションを作成したら、すぐに実行できます。 後
 
 3. Visual Studio の実験用インスタンスで、**ソリューションエクスプローラー**から**Test**という名前のモデルファイルを開きます。
 
-     \- - または -
+     \- または
 
      デバッグプロジェクトを右クリックし、[ **追加**] をポイントして、[ **項目**] をクリックします。 [ **項目の追加** ] ダイアログボックスで、DSL のファイルの種類を選択します。
 
@@ -171,7 +171,7 @@ DSL は、DSL のインスタンスであるモデルの読み取りと更新を
 
 3. **ソリューションエクスプローラー**のツールバーで [**すべてのテンプレートの変換**] をクリックします。
 
-     \- - または -
+     \- または
 
      再生成するテンプレートを右クリックし、[ **カスタムツールの実行**] をクリックします。
 

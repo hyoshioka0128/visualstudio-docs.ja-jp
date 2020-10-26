@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62896621"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C++)
@@ -79,26 +79,26 @@ int main() {
 |e|指数表記|25000000|2.500000e+07|
 |G|指数表記と浮動小数点のうちの短い方|25000000|2.5e+07|
 |c|単一文字|0x0065, c|101 'e'|
-|s|const char* 文字列 (引用符あり)|\<場所> "hello world"|"hello world"|
-|**sb**|const char* 文字列 (引用符なし)|\<場所> "hello world"|hello world|
-|s8|UTF-8 文字列|\<場所> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
-|**s8b**|UTF-8 文字列 (引用符なし)|\<場所> "hello world"|hello world|
-|su|Unicode (UTF-16 エンコード) 文字列 (引用符あり)|\<場所> L"hello world"|L"hello world"<br /><br /> u"hello world"|
-|sub|Unicode (UTF-16 エンコード) 文字列 (引用符なし)|\<場所> L"hello world"|hello world|
-|bstr|BSTR バイナリ文字列 (引用符あり)|\<場所> L"hello world"|L"hello world"|
-|env|環境ブロック (2 つの null で終了する文字列)|\<場所> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|UTF-32 文字列 (引用符あり)|\<場所> U"hello world"|u"hello world"|
-|**s32b**|UTF-32 文字列 (引用符なし)|\<場所> U"hello world"|hello world|
+|s|const char* 文字列 (引用符あり)|\<location> "hello world"|"hello world"|
+|**sb**|const char* 文字列 (引用符なし)|\<location> "hello world"|hello world|
+|s8|UTF-8 文字列|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8 文字列 (引用符なし)|\<location> "hello world"|hello world|
+|su|Unicode (UTF-16 エンコード) 文字列 (引用符あり)|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode (UTF-16 エンコード) 文字列 (引用符なし)|\<location> L"hello world"|hello world|
+|bstr|BSTR バイナリ文字列 (引用符あり)|\<location> L"hello world"|L"hello world"|
+|env|環境ブロック (2 つの null で終了する文字列)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 文字列 (引用符あり)|\<location> U"hello world"|u"hello world"|
+|**s32b**|UTF-32 文字列 (引用符なし)|\<location> U"hello world"|hello world|
 |**en**|enum|Saturday(6)|土曜日|
-|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<位置>{\<最初のメンバー>}|\<場所>{\<first member>, \<second member>, ...}|
-|**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<位置>, {member=value...}|{member=value...}|
+|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<location>, {member=value...}|{member=value...}|
 |**nd**|基底クラスの情報だけを表示し、派生クラスは無視します。|`(Shape*) square` には基底クラスおよび派生クラスの情報が含まれます。|基底クラスの情報だけを表示します。|
 |hr|HRESULT または Win32 エラー コード。 この指定子は、デバッガーによって自動的にデコードされるため、HRESULT では不要になりました。|S_OK|S_OK|
 |wc|Windows クラス フラグ|0x0010|WC_DEFAULTCHAR|
 |wm|Windows メッセージ番号|16|WM_CLOSE|
 |nr|"未加工ビュー" 項目の抑制|
 |nvo|数値に対してのみ "未加工ビュー" 項目を表示する|
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<カスタマイズされた表現>|4|
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -111,24 +111,24 @@ int main() {
 |x<br /><br /> **h**|16 進整数|102|0xcccccccc|
 |x<br /><br /> **H**|16 進整数|102|0xcccccccc|
 |c|単一文字|0x0065, c|101 'e'|
-|s|const char* 文字列 (引用符あり)|\<場所> "hello world"|"hello world"|
-|**sb**|const char* 文字列 (引用符なし)|\<場所> "hello world"|hello world|
-|s8|UTF-8 文字列|\<場所> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
-|**s8b**|UTF-8 文字列 (引用符なし)|\<場所> "hello world"|hello world|
-|su|Unicode (UTF-16 エンコード) 文字列 (引用符あり)|\<場所> L"hello world"|L"hello world"<br /><br /> u"hello world"|
-|sub|Unicode (UTF-16 エンコード) 文字列 (引用符なし)|\<場所> L"hello world"|hello world|
-|bstr|BSTR バイナリ文字列 (引用符あり)|\<場所> L"hello world"|L"hello world"|
-|env|環境ブロック (2 つの null で終了する文字列)|\<場所> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
-|**s32**|UTF-32 文字列 (引用符あり)|\<場所> U"hello world"|u"hello world"|
-|**s32b**|UTF-32 文字列 (引用符なし)|\<場所> U"hello world"|hello world|
+|s|const char* 文字列 (引用符あり)|\<location> "hello world"|"hello world"|
+|**sb**|const char* 文字列 (引用符なし)|\<location> "hello world"|hello world|
+|s8|UTF-8 文字列|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8 文字列 (引用符なし)|\<location> "hello world"|hello world|
+|su|Unicode (UTF-16 エンコード) 文字列 (引用符あり)|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode (UTF-16 エンコード) 文字列 (引用符なし)|\<location> L"hello world"|hello world|
+|bstr|BSTR バイナリ文字列 (引用符あり)|\<location> L"hello world"|L"hello world"|
+|env|環境ブロック (2 つの null で終了する文字列)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 文字列 (引用符あり)|\<location> U"hello world"|u"hello world"|
+|**s32b**|UTF-32 文字列 (引用符なし)|\<location> U"hello world"|hello world|
 |**en**|enum|Saturday(6)|土曜日|
-|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<位置>{\<最初のメンバー>}|\<場所>{\<first member>, \<second member>, ...}|
-|**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<位置>, {member=value...}|{member=value...}|
+|**hv**|ポインター型。検査されるポインター値が配列のヒープ割り当ての結果であることを意味します (たとえば、 `new int[3]`)。|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**na**|オブジェクトのポインターのメモリ アドレスを非表示にします。|\<location>, {member=value...}|{member=value...}|
 |**nd**|基底クラスの情報だけを表示し、派生クラスは無視します。|`(Shape*) square` には基底クラスおよび派生クラスの情報が含まれます。|基底クラスの情報だけを表示します。|
 |hr|HRESULT または Win32 エラー コード。 この指定子は、デバッガーによって自動的にデコードされるため、HRESULT では不要になりました。|S_OK|S_OK|
 |wc|Windows クラス フラグ|0x0010|WC_DEFAULTCHAR|
 |wm|Windows メッセージ番号|16|WM_CLOSE|
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<カスタマイズされた表現>|4|
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式。|\<customized representation>|4|
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ int main() {
 |hr|HRESULT または Win32 エラー コード。<br/>この指定子は、デバッガーによって自動的にデコードされるため、HRESULT では不要になりました。|S_OK|S_OK|
 |wc|Windows クラス フラグ|0x00000040,|WC_DEFAULTCHAR|
 |wm|Windows メッセージ番号|0x0010|WM_CLOSE|
-|!|データ型の表示カスタマイズをすべて無視した、未処理の書式|\<カスタマイズされた表現>|4|
+|!|データ型の表示カスタマイズをすべて無視した、未処理の書式|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでのメモリ位置の書式指定子
 メモリ位置を表すために使われる書式シンボルを次の表に示します。 メモリ位置指定子は、任意の値、または位置を評価する式に使用できます。

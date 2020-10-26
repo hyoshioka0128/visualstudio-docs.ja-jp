@@ -1,5 +1,5 @@
 ---
-title: スタート ページへの Visual Studio コマンドの追加 |マイクロソフトドキュメント
+title: スタートページへの Visual Studio コマンドの追加 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,34 +13,34 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740119"
 ---
-# <a name="add-visual-studio-commands-to-a-start-page"></a>スタート ページへの Visual Studio コマンドの追加
+# <a name="add-visual-studio-commands-to-a-start-page"></a>スタートページへの Visual Studio コマンドの追加
 
-カスタム スタート ページを作成するときに、Visual Studio のコマンドを追加できます。 このドキュメントでは、Visual Studio コマンドをスタート ページの XAML オブジェクトにバインドするさまざまな方法について説明します。
+カスタムスタートページを作成するときに、Visual Studio コマンドを追加できます。 このドキュメントでは、スタートページで Visual Studio コマンドを XAML オブジェクトにバインドするさまざまな方法について説明します。
 
-XAML でのコマンドの詳細については、「[コマンドの概要」を](/dotnet/framework/wpf/advanced/commanding-overview)参照してください。
+XAML でのコマンドの詳細については、「コマンドの[概要](/dotnet/framework/wpf/advanced/commanding-overview)」を参照してください。
 
 ## <a name="add-commands-from-the-command-well"></a>コマンドウェルからコマンドを追加する
 
-「カスタム スタート ページ[の作成](../extensibility/creating-a-custom-start-page.md)」で作成された<xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName>スタート<xref:Microsoft.VisualStudio.Shell?displayProperty=fullName>ページでは、 および 名前空間が次のように追加されました。
+「 [カスタムスタートページを作成する](../extensibility/creating-a-custom-start-page.md) 」で作成したスタートページには、次のように、 <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> 名前空間と名前空間が追加されて <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> います。
 
 ```xml
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-アセンブリから別の名前空間*を追加します*。 (プロジェクトでこのアセンブリへの参照を追加する必要があります)。
+アセンブリ *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*から VisualStudio の別の名前空間を追加します。 (このアセンブリへの参照をプロジェクトに追加することが必要になる場合があります)。
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
 ```
 
-このエイリアスを使用`vscom:`して、コントロールのプロパティを<xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A>`vscom:VSCommands.ExecuteCommand`に設定することで、Visual Studio コマンドをページ上の XAML コントロールにバインドできます。 次の<xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A>例に示すように、実行するコマンドの名前をプロパティに設定できます。
+エイリアスを使用し `vscom:` て、 <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> コントロールのプロパティをに設定することにより、Visual Studio のコマンドをページの XAML コントロールにバインドでき `vscom:VSCommands.ExecuteCommand` ます。 その後、次の <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> 例に示すように、プロパティを実行するコマンドの名前に設定できます。
 
 ```xml
 <Button Name="btnNewProj" Content="New Project"
@@ -50,11 +50,11 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 > [!NOTE]
-> XAML`x:`スキーマを参照するエイリアスは、すべてのコマンドの先頭に必要です。
+> `x:`すべてのコマンドの先頭には、XAML スキーマを参照するエイリアスが必要です。
 
- プロパティの値は`Command`、**コマンド**ウィンドウからアクセスできる任意のコマンドに設定できます。 使用できるコマンドの一覧については、「 [Visual Studio のコマンド エイリアス](../ide/reference/visual-studio-command-aliases.md)」を参照してください。
+ プロパティの値は `Command` 、 **コマンド** ウィンドウからアクセスできる任意のコマンドに設定できます。 使用可能なコマンドの一覧については、「 [Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)」を参照してください。
 
- 追加するコマンドで追加のパラメーターが必要な場合は、`CommandParameter`プロパティの値に追加できます。 次の例に示すように、スペースを使用してコマンドからパラメーターを分離します。
+ 追加するコマンドに追加のパラメーターが必要な場合は、プロパティの値に追加することができ `CommandParameter` ます。 次の例に示すように、スペースを使用してコマンドからパラメーターを分離します。
 
 ```xml
 <Button Content="Web Search"
@@ -63,25 +63,25 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 ### <a name="call-extensions-from-the-command-well"></a>コマンドウェルから拡張機能を呼び出す
- 他の Visual Studio コマンドを呼び出すために使用されるのと同じ構文を使用して、登録済みの VSPackage からコマンドを呼び出すことができます。 たとえば、インストールされている VSPackage が [**表示**] メニューに **[ホーム ページ**] コマンドを追加`View.HomePage`した場合は、 に設定`CommandParameter`してそのコマンドを呼び出すことができます。
+ 他の Visual Studio コマンドを呼び出すときと同じ構文を使用して、登録されている Vspackage からコマンドを呼び出すことができます。 たとえば、VSPackage がインストールされている場合、[**表示**] メニューに [**ホームページ**] コマンドを追加すると、をに設定することによって、そのコマンドを呼び出すことができ `CommandParameter` `View.HomePage` ます。
 
 > [!NOTE]
-> VSPackage に関連付けられているコマンドを呼び出す場合、コマンドが呼び出されたときにパッケージを読み込む必要があります。
+> VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。
 
 ## <a name="add-commands-from-assemblies"></a>アセンブリからコマンドを追加する
- アセンブリからコマンドを呼び出す、またはメニュー コマンドに関連付けられていない VSPackage のコードにアクセスするには、アセンブリのエイリアスを作成し、エイリアスを呼び出す必要があります。
+ アセンブリからコマンドを呼び出したり、メニューコマンドに関連付けられていない VSPackage 内のコードにアクセスしたりするには、アセンブリのエイリアスを作成し、エイリアスを呼び出す必要があります。
 
 ### <a name="to-call-a-command-from-an-assembly"></a>アセンブリからコマンドを呼び出すには
 
 1. ソリューションで、アセンブリへの参照を追加します。
 
-2. 次の例に示すように *、StartPage.xaml*ファイルの先頭に、アセンブリの名前空間ディレクティブを追加します。
+2. 次の例に示すように、 *StartPage* ファイルの先頭に、アセンブリの名前空間ディレクティブを追加します。
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3. 次の例に示すように`Command`、XAML オブジェクトのプロパティを設定してコマンドを呼び出します。
+3. `Command`次の例に示すように、XAML オブジェクトのプロパティを設定して、コマンドを呼び出します。
 
      Xaml
 
@@ -90,12 +90,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```
 
 > [!NOTE]
-> アセンブリをコピーし、*.に貼り付ける必要があります。\\{Visual Studio のインストール フォルダー}\Common7\IDE\PrivateAssembly を使用\*して、呼び出される前に読み込まれるようにします。
+> アセンブリをコピーし、*. に貼り付ける必要があります。 \\{Visual Studio のインストールフォルダー} \Common7\IDE\PrivateAssemblies が \* 呼び出される前に読み込まれることを確認します。
 
-## <a name="add-commands-with-the-dte-object"></a>DTE オブジェクトを使用したコマンドの追加
- DTE オブジェクトには、マークアップとコードの両方で、スタート ページからアクセスできます。
+## <a name="add-commands-with-the-dte-object"></a>DTE オブジェクトを使用してコマンドを追加する
+ マークアップとコードの両方で、開始ページから DTE オブジェクトにアクセスできます。
 
- マークアップでは、[バインディング マークアップ拡張機能](/dotnet/framework/wpf/advanced/binding-markup-extension)構文を使用してオブジェクトを呼び出すことによって<xref:EnvDTE.DTE>、このオブジェクトにアクセスできます。 この方法を使用すると、コレクションを返すプロパティなどの単純なプロパティにバインドできますが、メソッドやサービスにバインドすることはできません。 <xref:EnvDTE._DTE.Name%2A>プロパティにバインド<xref:System.Windows.Controls.TextBlock>するコントロールと、プロパティによって返されるコレクションのプロパティを<xref:System.Windows.Controls.ListBox><xref:EnvDTE.Window.Caption%2A>列挙するコントロールの例を次に<xref:EnvDTE._DTE.Windows%2A>示します。
+ マークアップでは、 [バインディングマークアップ拡張](/dotnet/framework/wpf/advanced/binding-markup-extension) 構文を使用してオブジェクトを呼び出すことによってアクセスでき <xref:EnvDTE.DTE> ます。 この方法を使用して、コレクションを返すような単純なプロパティにバインドすることはできますが、メソッドまたはサービスにバインドすることはできません。 次の例は、 <xref:System.Windows.Controls.TextBlock> プロパティにバインドするコントロール <xref:EnvDTE._DTE.Name%2A> と、 <xref:System.Windows.Controls.ListBox> <xref:EnvDTE.Window.Caption%2A> プロパティによって返されるコレクションのプロパティを列挙するコントロールを示して <xref:EnvDTE._DTE.Windows%2A> います。
 
 ```xml
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>
@@ -108,8 +108,8 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox
 ```
 
- 例については、「[チュートリアル: スタート ページでのユーザー設定の保存 」を](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)参照してください。
+ 例については、「 [チュートリアル: スタートページへのユーザー設定の保存](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [スタート ページへのユーザー コントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)
+- [スタートページへのユーザーコントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: その他のファイル | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666856"
 ---
 # <a name="miscellaneous-files"></a>その他のファイル
@@ -50,5 +50,5 @@ ms.locfileid: "72666856"
 ## <a name="folder-display-options"></a>フォルダー表示オプション
  [その他のファイル] フォルダーの表示オプションを設定して、"その他のファイル" を一度も開いていない場合でも、このフォルダーを表示できます。 ソリューション ファイルは、"その他のファイル" の一覧を永久に管理するわけではありません。 ソリューション ファイルでは、オプションの機能を使用して、MRU ファイル リスト (最近使ったファイルの一覧) をユーザー別に保存できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ソリューションとプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)の [[ドキュメント] ([オプション] ダイアログボックス](../../ide/reference/documents-environment-options-dialog-box.md)-[環境])

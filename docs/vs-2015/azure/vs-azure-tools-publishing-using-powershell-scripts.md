@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184017"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
@@ -244,7 +244,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
     }
     ```
 
-1. `New-WebDeployPackage` を次のコードで置き換え、`$msbuildCmd` を構築している行のプレースホルダーを置き換えます。 このコードは Visual Studio 2015 用です。 Visual Studio 2017 を使用している場合は、 **VisualStudioVersion**プロパティを `15.0` (Visual Studio 2013) に変更し `12.0` ます。
+1. `New-WebDeployPackage` を次のコードで置き換え、`$msbuildCmd` を構築している行のプレースホルダーを置き換えます。 このコードは Visual Studio 2015 用です。 Visual Studio 2017 を使用している場合は、 **VisualStudioVersion** プロパティを `15.0` (Visual Studio 2013) に変更し `12.0` ます。
 
     ```powershell
     function New-WebDeployPackage
@@ -252,7 +252,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
         #Write a function to build and package your web application
     ```
 
-    Web アプリケーションをビルドするには、MsBuild.exe を使用します。 詳細については、MSBuild のコマンドラインリファレンスに関する次の情報を参照してください。[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    Web アプリケーションをビルドするには、MsBuild.exe を使用します。 詳細については、MSBuild のコマンドラインリファレンスに関する次の情報を参照してください。 [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -308,7 +308,7 @@ return $WebDeployPackage
     アプリケーションのテストを自動化するには、 `Test-WebApplication`にコードを追加します。 **Publish-WebApplication.ps1** で、これらの関数が呼び出されている行のコメントを必ず解除してください。 これを実装しない場合は、Visual Studio でプロジェクトを手動でビルドし、発行スクリプトを実行して Azure に発行できます。
 
 ## <a name="publishing-function-summary"></a>発行関数の概要
-Windows PowerShell コマンド プロンプトで使用できる関数のヘルプを取得するには、 `Get-Help function-name`コマンドを使用します。 ヘルプには、パラメーターのヘルプと例が含まれています。 同じヘルプテキストは、スクリプトソースファイル**azurewebapppublishmodule.psm1 hbase-runner.psm1**と**publish-webapplication.ps1**にもあります。 スクリプトとヘルプは、Visual Studio の言語でローカライズされています。
+Windows PowerShell コマンド プロンプトで使用できる関数のヘルプを取得するには、 `Get-Help function-name`コマンドを使用します。 ヘルプには、パラメーターのヘルプと例が含まれています。 同じヘルプテキストが、スクリプトソースファイル **azurewebapppublishmodule.psm1 hbase-runner.psm1** と **Publish-WebApplication.ps1**にも含まれています。 スクリプトとヘルプは、Visual Studio の言語でローカライズされています。
 
 **AzureWebAppPublishModule**
 
@@ -334,7 +334,7 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Test-AzureModule |インストールされている Azure モジュールのバージョンが 0.7.4 以降の場合は、 `$true` を返します。 モジュールがインストールされていないか以前のバージョンの場合は、 `$false` を返します。 この関数にはパラメーターはありません。 |
 | Test-AzureModuleVersion |Azure モジュールのバージョンが 0.7.4 以降の場合は、 `$true` を返します。 モジュールがインストールされていないか以前のバージョンの場合は、 `$false` を返します。 この関数にはパラメーターはありません。 |
 | Test-HttpsUrl |入力 URL を System.Uri オブジェクトに変換します。 URL が絶対 URL で、スキームが https の場合は、 `$True` を返します。 URL が相対 URL の場合、スキームが https でない場合、または入力文字列を URL に変換できない場合は、 `$false` を返します。 |
-| Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合は、 `$false`を返します。 |
+| Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合、`$false` を返します。 |
 | Write-ErrorWithTime |現在の時刻が先頭に付加されたエラー メッセージを書き込みます。 この関数は、 **Format-DevTestMessageWithTime** 関数を呼び出して先頭に時刻を付加してから、メッセージをエラー ストリームに書き込みます。 |
 | Write-HostWithTime |現在の時刻が先頭に付加されたメッセージをホスト プログラムに書き込みます (**Write-Host**)。 ホスト プログラムへの書き込み結果はさまざまです。 Windows PowerShell をホストするほとんどのプログラムが、これらのメッセージを標準出力に書き込みます。 |
 | Write-VerboseWithTime |現在の時刻が先頭に付加された詳細メッセージを書き込みます。 この関数は **Write-Verbose** を呼び出すので、**Verbose** パラメーターを指定してスクリプトを実行した場合、または **VerbosePreference** 設定が **Continue** に設定されている場合にのみ、メッセージが表示されます。 |

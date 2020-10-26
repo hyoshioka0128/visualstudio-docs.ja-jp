@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542572"
 ---
 # <a name="share-code-maps"></a>コード マップの共有
@@ -22,13 +22,13 @@ ms.locfileid: "85542572"
 
 マップを保存するには、 **[ファイル]** メニューを使用します。
 
-\- または -
+- または -
 
 マップを特定のプロジェクトの一部として保存するには、マップのツールバーで [**共有**] [移動] の順に選択し、  >  マップを保存するプロジェクトを選択します。** \<CodeMapName> **
 
 ![マップを別のプロジェクトに移動する](../modeling/media/codemapsmovemapmenu.png)
 
-Visual Studio では、マップは .dgml ファイルとして保存され*ます。* これは、Visual Studio Enterprise および Visual Studio Professional の他のユーザーと共有できます。
+Visual Studio では、マップは .dgml ファイルとして保存され *ます。* これは、Visual Studio Enterprise および Visual Studio Professional の他のユーザーと共有できます。
 
 > [!NOTE]
 > Visual Studio Professional を使用するユーザーとマップを共有する前に、グループを展開しておくこと、非表示のノードとグループ間リンクを表示しておくこと、マップに表示する必要のある削除済みのノードを取得しておくことが必要です。 そうしない場合、他のユーザーはそれらの項目を表示できなくなります。
@@ -55,7 +55,7 @@ Visual Studio では、マップは .dgml ファイルとして保存され*ま�
 
 2. ファイルを保存する場所を参照します。
 
-3. コード マップの名前を付けます。 [**名前を付けて保存**] ボックスが**xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選びます。
+3. コード マップの名前を付けます。 [ **名前を付けて保存** ] ボックスが **xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選びます。
 
 ## <a name="see-also"></a>関連項目
 

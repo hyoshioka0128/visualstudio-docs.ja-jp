@@ -1,5 +1,5 @@
 ---
-title: プログラムの追加 2::アタッチ |マイクロソフトドキュメント
+title: 'IDebugProgramEx2:: Attach |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fcb52a96074b783043af1e908cf454466df74c30
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722379"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-セッションをプログラムにアタッチします。
+プログラムにセッションをアタッチします。
 
 ## <a name="syntax"></a>構文
 
@@ -45,22 +45,22 @@ int Attach( 
 
 ## <a name="parameters"></a>パラメーター
 `pCallback`\
-[in]アタッチされたデバッグ エンジンがイベントを送信するコールバック関数を表す[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)オブジェクト。
+からアタッチされたデバッグエンジンがイベントを送信するコールバック関数を表す [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) オブジェクト。
 
 `dwReason`\
-[in]アタッチ操作の理由を説明する[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列挙体の値。
+からアタッチ操作の理由を説明する [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 列挙の値。
 
 `pSession`\
-[in]プログラムにアタッチしているセッションを一意に識別する値。
+からプログラムにアタッチしているセッションを一意に識別する値。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 プログラムが既に`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`アタッチされている場合は、このメソッドは返す必要があります。
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 `E_ATTACH_DEBUGGER_ALREADY_ATTACHED`プログラムが既にアタッチされている場合、このメソッドはを返します。
 
-## <a name="remarks"></a>Remarks
- プログラムを含むポートは、 の`pSession`値を使用して、どのセッションがプログラムに接続しようとしているかを判別できます。 たとえば、ポートでプロセスに 1 つのデバッグ セッションのみをアタッチできる場合、ポートはプロセス内の他のプログラムに同じセッションが既に接続されているかどうかを判断できます。
+## <a name="remarks"></a>解説
+ プログラムを含むポートは、の値を使用して、 `pSession` どのセッションがプログラムにアタッチしようとしているかを判断できます。 たとえば、ポートで一度に1つのデバッグセッションだけをプロセスにアタッチできる場合、ポートでは、同じセッションがプロセス内の他のプログラムに既にアタッチされているかどうかを判断できます。
 
 > [!NOTE]
-> 渡される`pSession`インターフェイスは、Cookie としてのみ扱われるため、このプログラムにアタッチするセッション デバッグ マネージャーを一意に識別する値です。指定されたインターフェイス上のメソッドはどれも機能しません。
+> 渡されるインターフェイスは、 `pSession` クッキーとしてのみ扱われます。これは、このプログラムにアタッチするセッションデバッグマネージャーを一意に識別する値です。指定されたインターフェイスのメソッドは機能しません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

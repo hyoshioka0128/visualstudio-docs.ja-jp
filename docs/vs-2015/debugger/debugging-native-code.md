@@ -1,5 +1,5 @@
 ---
-title: ネイティブ コードのデバッグ |Microsoft Docs
+title: ネイティブ コードのデバッグ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,16 +23,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196419"
 ---
 # <a name="debugging-native-code"></a>ネイティブ コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ここでは、ネイティブ アプリケーションのデバッグ時に発生する一般的な問題や共通のデバッグ技術について説明します。 ここでは高レベルの手法について説明します。 Visual Studio デバッガーの使用のしくみを参照してください。[デバッガーのロードマップ](../debugger/debugger-basics.md)します。  
+ここでは、ネイティブ アプリケーションのデバッグ時に発生する一般的な問題や共通のデバッグ技術について説明します。 ここでは高レベルの手法について説明します。 Visual Studio デバッガーの使用のしくみについては、「 [デバッガーのロードマップ](../debugger/debugger-basics.md)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: 最適化されたコードをデバッグする](../debugger/how-to-debug-optimized-code.md)  
@@ -59,7 +59,7 @@ ms.locfileid: "68196419"
  [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)  
  COM や ActiveX のデバッグに使用できるツールなど、COM アプリケーションや ActiveX アプリケーションのデバッグに関連した情報を提供します。  
   
- [方法: ネイティブ DLL をデバッグする](../debugger/how-to-debug-native-dlls.md)  
+ [方法: ネイティブ DLL サーバーをデバッグする](../debugger/how-to-debug-native-dlls.md)  
  ネイティブ コードから DLL をデバッグする方法について説明します。  
   
  [方法: 挿入されたコードをデバッグする](../debugger/how-to-debug-injected-code.md)  
@@ -75,6 +75,6 @@ ms.locfileid: "68196419"
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)  
  デバッグに関連するドキュメントのより広範囲なリンクを提供します。 デバッガーの新機能、設定と準備、ブレークポイント、例外の処理、エディット コンティニュ、マネージド コードのデバッグ、ネイティブ コードのデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報へのリンクを提供します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

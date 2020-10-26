@@ -1,5 +1,5 @@
 ---
-title: マネージ コードの COM 定数 |Microsoft Docs
+title: マネージコードの COM 定数 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,23 +11,23 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184433"
 ---
 # <a name="com-constants-in-managed-code"></a>マネージド コードの COM 定数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-マネージ パッケージ フレームワーク (MPF) は、いくつかの標準の COM 定数をマネージ コードで使用可能にします。 これらの定数は、参照用に以下に示します。  
+Managed Package Framework (MPF) では、一部の標準 COM 定数をマネージコードで使用できます。 これらの定数を以下に示します。  
   
 ## <a name="boolean-hresult-values"></a>ブール値の HRESULT 値  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
   
-## <a name="hresult-values"></a>HRESULT 値  
+## <a name="hresult-values"></a>HRESULT の値  
  <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>  
   
  <xref:Microsoft.VisualStudio.VSConstants.E_ACCESSDENIED>  
@@ -91,7 +91,7 @@ ms.locfileid: "68184433"
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## <a name="ole-dispatch-errors"></a>OLE ディスパッチ エラー  
+## <a name="ole-dispatch-errors"></a>OLE ディスパッチエラー  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  
@@ -128,5 +128,5 @@ ms.locfileid: "68184433"
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [エラー処理と戻り値](../extensibility/error-handling-and-return-values.md)

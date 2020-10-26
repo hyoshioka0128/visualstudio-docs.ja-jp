@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsymbols::get_count |Microsoft Docs
+title: 'IDiaEnumSymbols:: get_Count |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 586bfc831210358bf1c27b8998c1755c4654ff98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189690"
 ---
-# <a name="idiaenumsymbolsgetcount"></a>IDiaEnumSymbols::get_Count
+# <a name="idiaenumsymbolsget_count"></a>IDiaEnumSymbols::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 シンボルの数を取得します。  
@@ -34,12 +34,12 @@ HRESULT get_Count ( 
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- pRetVal  
- [out]シンボルの数を返します。  
+ の場合は、  
+ 入出力シンボルの数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)

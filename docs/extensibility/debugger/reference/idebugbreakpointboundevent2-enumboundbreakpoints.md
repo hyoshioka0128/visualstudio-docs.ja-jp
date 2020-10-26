@@ -1,5 +1,5 @@
 ---
-title: Iデバッグブレークポイントバウンドイベント2::列挙型バウンドブレークポイント |マイクロソフトドキュメント
+title: 'IDebugBreakpointBoundEvent2:: EnumBoundBreakpoints ポイント |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2f208c52bd45953aaad9efab9b6b65b15b3b759c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735360"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
@@ -41,16 +41,16 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[アウト]このイベントからバインドされているすべてのブレークポイントを列挙する[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)オブジェクトを返します。
+入出力このイベントからバインドされたすべてのブレークポイントを列挙する [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-正常に終了した場合は、`S_OK` を返します。 バインド`S_FALSE`されたブレークポイントがない場合は返します。それ以外の場合は、エラー コードを返します。
+正常に終了した場合は、`S_OK` を返します。 `S_FALSE`バインドされたブレークポイントがない場合はを返します。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-バインドされたブレークポイントのリストは、このイベントにバインドされているブレークポイント用であり、保留中のブレークポイントからバインドされたブレークポイントのリスト全体ではない可能性があります。 保留中のブレークポイントにバインドされているすべてのブレークポイントの一覧を取得するには、呼び出す[、 GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)に関連付けられている[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)オブジェクトを取得し、保留中のブレークポイントのすべてのバインドされたブレークポイントを含む[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)オブジェクトを取得する[列挙バインドブレークポイント](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)メソッドを呼び出します。
+## <a name="remarks"></a>解説
+バインドされたブレークポイントの一覧は、このイベントにバインドされているブレークポイントの一覧であり、保留中のブレークポイントからバインドされたブレークポイントのリスト全体ではない可能性があります。 保留中のブレークポイントにバインドされているすべてのブレークポイントの一覧を取得するには、 [Getpendingbreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) ポイントメソッドを呼び出して、関連付けられている [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) オブジェクトを取得し、 [enumboundbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ポイントメソッドを呼び出して、保留中のブレークポイントのすべてのバインドされたブレークポイントを含む [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) オブジェクトを取得します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**オブジェクト**に対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)示します。
+次の例は、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)インターフェイスを公開する**Cbreakpointsetdebugeventbase**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(

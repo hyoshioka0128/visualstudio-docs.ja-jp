@@ -16,33 +16,33 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62949488"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office ソリューションの共同開発
-  複数の開発者は、他の Visual Studio プロジェクトが共同作業と同じ方法で Office プロジェクトで作業できます。 Visual Studio では、別の場所で Office がインストールされている場合でも、各コンピューターに Microsoft Office のインストールが正常で検索します。 ただし、注意すべき重要な考慮事項があります。
+  複数の開発者は、他の Visual Studio プロジェクトで共同作業するのと同じ方法で Office プロジェクトを操作できます。 Office が異なる場所にインストールされている場合でも、Visual Studio は各コンピューターに Microsoft Office のインストールを正しく検索します。 ただし、注意すべき重要な考慮事項がいくつかあります。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="debug-properties-are-not-shared"></a>デバッグ プロパティは共有されません。
- デバッグ プロパティは、ソース管理下の複数のユーザー間では共有されません。 Visual Basic および Visual C＃ プロジェクトでは、デバッグ プロパティをユーザー固有のファイル (*ProjectName.vbproj.user* または*ProjectName.csproj.user*)に格納します。このファイルはソース管理下にはありません。 複数のユーザーがデバッグを実行する場合は、各自が手動でデバッグ プロパティを入力する必要があります。
+## <a name="debug-properties-are-not-shared"></a>デバッグプロパティは共有されていません
+ デバッグ プロパティは、ソース管理で複数のユーザー間では共有されません。 Visual Basic および Visual C# プロジェクトは、ユーザー固有のファイル (*projectname*. .vbproj. ユーザーまたは *projectname*. .csproj) にデバッグプロパティを格納します。このファイルはソース管理されていません。 複数のユーザーがデバッグを実行する場合は、各自が手動でデバッグ プロパティを入力する必要があります。
 
- プロジェクトは、ソース管理ではなく、ネットワーク共有に格納されているが場合、ソリューションを開き、アセンブリをテストする共同開発者を有効にする追加の手順を実行する必要があります。
+ プロジェクトがソース管理ではなくネットワーク共有に置かれている場合は、コラボレーション開発者がソリューションを開いてアセンブリをテストできるようにするために、いくつかの追加手順を実行する必要があります。
 
-## <a name="source-control-requires-checking-out-all-files"></a>ソース管理では、すべてのファイルをチェック アウトが必要です。
- プロジェクトをソース管理を使用する場合、これをチェック アウトのすべてのファイル内のコード ファイルでする必要があります**ソリューション エクスプ ローラー** (など、 *ThisDocument*、 *ThisWorkbook*、または*ThisAddIn*コード ファイル)、コード ファイルを変更するたびにもファイルを既定では表示されません。 最上位のコード ファイルのみをチェックする場合、変更は失われます。
+## <a name="source-control-requires-checking-out-all-files"></a>ソース管理では、すべてのファイルをチェックアウトする必要があります
+ プロジェクトにソース管理を使用する場合は、コードファイルを変更するたびに、既定で非表示になっているファイルでも、 **ソリューションエクスプローラー** のコードファイル ( *ThisDocument*、 *ThisWorkbook*、または *ThisAddIn* コードファイルなど) の下にあるすべてのファイルをチェックアウトする必要があります。 最上位レベルのコードファイルのみをチェックアウトすると、変更が失われる可能性があります。
 
- 変更を行った後でバックアップのすべてのファイルを確認してください。 プロジェクト内の非表示コード ファイルの詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)します。
+ 変更が完了したら、すべてのファイルを再度確認します。 プロジェクト内の非表示コードファイルの詳細については、「 [Visual Studio 環境の Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。
 
-## <a name="security-for-informal-collaboration-on-a-network"></a>ネットワーク上の共同のセキュリティ
- ネットワーク上の場所 (\\ \\ *Servername*\\*Sharename* など)にあるすべてのドキュメントレベルのソリューションでは、作業している Microsoft Office アプリケーションの信頼できるフォルダの一覧に完全修飾場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、デバッグフォルダとビルドフォルダを信頼できるフォルダリストに追加するかを選択します。 これを行う方法の詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
+## <a name="security-for-informal-collaboration-on-a-network"></a>ネットワークで非公式に共同作業を行うためのセキュリティ
+ ネットワークの場所にあるすべてのドキュメントレベルのソリューション (Servername Sharename など) については、使用している \\ \\ *Servername* \\ *Sharename*Microsoft Office アプリケーションの信頼されたフォルダーの一覧に、完全修飾された場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、またはデバッグフォルダーとビルドフォルダーを信頼されたフォルダーの一覧に追加するオプションを選択します。 これを行う方法の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
- ビルド時に自動的に生成される一時的な証明書は、パスワードで保護されていません。 証明書には、開発者のログイン名と他の個人情報が含まれています。 一時的な証明書によって署名されているカスタマイズを配置する場合は、この情報にアクセスできない他のユーザー必要があります。
+ ビルド時に自動的に生成される一時的な証明書は、パスワードによって保護されません。 証明書には、開発者のログイン名とその他の個人情報が含まれています。 一時的な証明書によって署名されたカスタマイズを展開する場合、他のユーザーがこの情報にアクセスできる可能性があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
-- [Office ソリューションの構築](../vsto/building-office-solutions.md)
+- [Office ソリューションのビルド](../vsto/building-office-solutions.md)

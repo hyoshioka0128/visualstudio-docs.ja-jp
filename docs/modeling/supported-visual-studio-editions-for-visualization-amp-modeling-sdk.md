@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544938"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Visualization and Modeling SDK に対してサポートされている Visual Studio のエディション
 
-次に、の作成環境と配置環境ででサポートされている Visual Studio のエディションの一覧を示し [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ます。 これらのエディションの詳細については、Microsoft Visual Studio[デベロッパーセンター](https://visualstudio.microsoft.com/)を参照してください。
+次に、の作成環境と配置環境ででサポートされている Visual Studio のエディションの一覧を示し [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ます。 これらのエディションの詳細については、Microsoft Visual Studio [デベロッパーセンター](https://visualstudio.microsoft.com/)を参照してください。
 
 ## <a name="authoring-edition"></a>作成エディション
 
 DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。
 
-|製品|ダウンロード リンク|
+|Product|ダウンロード リンク|
 |-|-|
 |Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
@@ -35,7 +35,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
 ## <a name="deployment-editions"></a>配置エディション
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]では、ビルドするドメイン固有言語を展開するための次の構成がサポートされています。
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] では、ビルドするドメイン固有言語を展開するための次の構成がサポートされています。
 
 - Visual Studio Enterprise
 
@@ -46,7 +46,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 - Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
-> DSL をシェル製品で実行できるようにするには、拡張機能マニフェストで [**サポートされている VS Edition** ] フィールドを設定する必要があります。 詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
+> DSL をシェル製品で実行できるようにするには、拡張機能マニフェストで [ **サポートされている VS Edition** ] フィールドを設定する必要があります。 詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

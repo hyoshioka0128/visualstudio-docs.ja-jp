@@ -14,22 +14,22 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283087"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 
-データセットの機能を拡張するには、データセットの部分クラスファイルを作成し、そのデータセットにコードを追加します ( *DatasetName*にコードを追加するのではありません)。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「[部分](/dotnet/visual-basic/language-reference/modifiers/partial)クラスまたは[部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)」を参照してください。
+データセットの機能を拡張するには、データセットの部分クラスファイルを作成し、そのデータセットにコードを追加します ( *DatasetName*にコードを追加するのではありません)。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) クラスまたは [部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)」を参照してください。
 
 データセットを定義するコードは、(型指定されたデータセット内の) データセット定義に変更が加えられるたびに生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更を加えた場合にも生成されます。 データセットの再生成時にコードが削除されないようにするには、データセットの部分クラスファイルにコードを追加します。
 
-既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む*DatasetName* (または*DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト**" プロパティで指定されているプロジェクトには、 *DatasetName* (または*DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
+既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む *DatasetName* (または *DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト** " プロパティで指定されているプロジェクトには、 *DatasetName* (または *DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
 
 > [!NOTE]
-> データセットと Tableadapter を分離すると ( **DataSet プロジェクト**プロパティを設定することによって)、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
+> データセットと Tableadapter を分離すると ( **DataSet プロジェクト** プロパティを設定することによって)、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
 
 > [!NOTE]
 > 検証コードを追加する必要がある場合、型指定されたデータセットはおよびイベントハンドラーを生成するための機能を提供し <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> ます。 詳細については、「 [n 層データセットへの検証の追加](../data-tools/add-validation-to-an-n-tier-dataset.md)」を参照してください。
@@ -40,7 +40,7 @@ ms.locfileid: "85283087"
 
 2. **.Xsd**ファイルを選択して、データセットを開きます。
 
-3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[**コードの表示**] を選択します。
+3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[ **コードの表示**] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 

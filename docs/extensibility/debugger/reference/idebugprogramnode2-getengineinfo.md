@@ -1,5 +1,5 @@
 ---
-title: プログラムノード2::GetEngineInfo |マイクロソフトドキュメント
+title: 'IDebugProgramNode2:: GetEngineInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722101"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-プログラムを実行しているデバッグ エンジン (DE) の名前と識別子を取得します。
+プログラムを実行しているデバッグエンジン (DE) の名前と識別子を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,13 +43,13 @@ int GetEngineInfo(
 
 ## <a name="parameters"></a>パラメーター
 `pbstrEngine`\
-[アウト]プログラムを実行している DE の名前を返します (C++固有: これは、呼び出し元がエンジンの名前に関心を持たないことを示す null ポインターである場合があります)。
+入出力プログラムを実行している DE の名前を返します (C++ 固有: 呼び出し元がエンジンの名前を必要としないことを示す null ポインターを指定できます)。
 
 `pguidEngine`\
-[アウト]プログラムを実行している DE のグローバル一意識別子を返します (C++固有: これは、呼び出し元がエンジンの GUID に関心を持たないことを示す null ポインターである可能性があります)。
+入出力プログラムの実行を解除するグローバル一意識別子を返します (C++ 固有: 呼び出し元がエンジンの GUID に関係しないことを示す null ポインターにすることができます)。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

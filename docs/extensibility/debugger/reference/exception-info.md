@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO |マイクロソフトドキュメント
+title: EXCEPTION_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737022"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
-デバッグ中のプログラムによってスローされる例外または実行時エラーについて説明します。
+デバッグ中のプログラムによってスローされた例外または実行時エラーを記述します。
 
 ## <a name="syntax"></a>構文
 
@@ -51,7 +51,7 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>メンバー
 `pProgram`\
-例外が発生したプログラムを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクト。
+例外が発生したプログラムを表す [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) オブジェクト。
 
 `bstrProgramName`\
 例外が発生したプログラムの名前。
@@ -63,20 +63,20 @@ public struct EXCEPTION_INFO {
 例外または実行時エラーの識別コード。
 
 `dwState`\
-例外の状態を定義する[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)列挙体の値。
+例外の状態を定義する [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 列挙の値。
 
 `guidType`\
-GUID 言語識別子 、 `guidLang` `guidEng`または .
+GUID 言語識別子 `guidLang` 。またはのいずれか `guidEng` です。
 
-## <a name="remarks"></a>Remarks
-この構造体は、パラメーターとして渡されます、 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)と[メソッドを削除します](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)。 この構造体は[、GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)メソッドにも渡され、埋められます。
+## <a name="remarks"></a>解説
+この構造体は、パラメーターとして [setexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) および [removesetexception](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) メソッドに渡されます。 この構造体は、入力される [Getexception](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) メソッドにも渡されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592062"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>チュートリアル: コード化された UI テストの作成、編集、管理
@@ -34,7 +34,7 @@ ms.locfileid: "75592062"
 
 5. **ProgressBar** コントロールを選択します。 **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を \<No Name> から progressBar1 に変更します。 次に、 **[最大値]** プロパティの値を **100** から **10000** に変更します。
 
-6. **Checkbox** コントロールを選択します。 **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を \<No Name> から checkBox1 に変更し、 **[IsEnabled]** プロパティをクリアします。
+6. **Checkbox** コントロールを選択します。 **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を \<No Name> から checkBox1 に変更し、**IsEnabled** プロパティをクリアします。
 
      ![簡単な WPF アプリケーション](../test/media/codedui_wpfapp.png)
 

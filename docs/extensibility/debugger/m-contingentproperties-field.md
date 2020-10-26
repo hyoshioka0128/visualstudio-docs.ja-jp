@@ -1,5 +1,5 @@
 ---
-title: m_contingentPropertiesフィールド |マイクロソフトドキュメント
+title: m_contingentProperties Field |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738418"
 ---
-# <a name="m_contingentproperties-field"></a>m_contingentPropertiesフィールド
-オブジェクトの追加プロパティを<xref:System.Threading.Tasks.Task>格納します。
+# <a name="m_contingentproperties-field"></a>m_contingentProperties フィールド
+オブジェクトの追加のプロパティを格納 <xref:System.Threading.Tasks.Task> します。
 
- **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib *(mscorlib.dll*内)
+ **アセンブリ:** mscorlib ( *mscorlib.dll*)
 
- この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
+ .NET Framework からこの内部メンバーにアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -32,7 +32,7 @@ ms.locfileid: "80738418"
 .field assembly class System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) m_contingentProperties
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 ## <a name="see-also"></a>関連項目
 - [Task クラス](../../extensibility/debugger/task-class-internal-members.md)

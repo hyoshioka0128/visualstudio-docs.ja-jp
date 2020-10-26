@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: テキストの強調表示
           href: walkthrough-highlighting-text.md
-        - name: '[アウトライン]'
+        - name: アウトライン
           href: walkthrough-outlining.md
         - name: 対応するかっこの表示
           href: walkthrough-displaying-matching-braces.md
@@ -880,9 +880,9 @@
           href: adding-command-line-switches.md
     - name: エラー処理と戻り値
       href: error-handling-and-return-values.md
-    - name: Objects
+    - name: オブジェクト
       items:
-        - name: Objects
+        - name: オブジェクト
           href: objects.md
         - name: VSCodeWindow オブジェクト
           href: vscodewindow-object.md
@@ -898,7 +898,7 @@
   items:
     - name: ソフトウェア開発キットを作成する
       href: creating-a-software-development-kit.md
-    - name: 'C# または Visual Basic を使用して SDK を作成する'
+    - name: C# または Visual Basic を使用して SDK を作成する
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: C++ を使用して SDK を作成する
       href: walkthrough-creating-an-sdk-using-cpp.md

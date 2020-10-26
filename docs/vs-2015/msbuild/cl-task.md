@@ -1,4 +1,4 @@
-﻿---
+---
 title: CL タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698637"
 ---
 # <a name="cl-task"></a>CL タスク
@@ -49,7 +49,7 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    省略可能な String 型のパラメーター。  
   
-   コマンド ライン オプションのリスト。 "/*option1* /*option2* /*option#*" のようになります。 他のタスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。  
+   コマンド ライン オプションのリスト。 たとえば、"/*オプション 1*  / *option2*  / *option #*" のように指定します。 他のタスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。  
   
    詳細については、「[コンパイラ オプション](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)」を参照してください。  
   
@@ -79,15 +79,15 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **NoListing** - *\<なし>*  
+  - **一覧表示しない** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **Assemblycode**  - **/Fa**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **Assemblyandの ecode**  - **/FAc**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **AssemblyAndSourceCode**  - **/Fa**  
   
-  - **All** - **/FAcs**  
+  - **すべて**  - **/Facs**  
   
     詳細については、「[/FA、/Fa (リスティング ファイル)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402)」の **/FA**、**/FAc**、**/FAs**、および **/FAcs** の各オプションに関する記述を参照してください。  
   
@@ -99,13 +99,13 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Default** -                          *\<none>*  
+  - **標準** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **StackFrameRuntimeCheck**  - **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  - **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **Enablefastchecks チェック**  -                          **/RTC1**  
   
     詳細については、「[/RTC (ランタイム エラー チェック)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368)」を参照してください。  
   
@@ -147,11 +147,11 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  - **/Gd**  
   
-  - **FastCall** -                          **/Gr**  
+  - **FastCall**  -                          **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **StdCall**  -                          **/Gz**  
   
     詳細については、「[/Gd、/Gr、/Gv、/Gz (呼び出し規則)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3)」を参照してください。  
   
@@ -163,11 +163,11 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Default** - *\<none>*  
+  - **標準** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  - **/Tc**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  - **/Tp**  
   
     詳細については、「[/Tc、/Tp、/TC、/TP (ソース ファイル タイプの指定)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b)」を参照してください。  
   
@@ -179,17 +179,17 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **false** - *\<なし>*  
+  - **false** - *\<none>*  
   
-  - **true** - **/clr**  
+  - **true**  - **/clr**  
   
-  - **Pure** - **/clr:pure**  
+  - **ピュア**  - **/clr: pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **安全**  - **/clr: safe**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  - **/clr: oldSyntax**  
   
-    詳細については、「[/clr (共通言語ランタイムのコンパイル)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」を参照してください。  
+    詳細については、「 [/clr (共通言語ランタイムのコンパイル)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」を参照してください。  
   
 - **CreateHotpatchableImage**  
   
@@ -207,11 +207,11 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **OldStyle** - **/Z7**  
+  - **OldStyle**  - **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - **Programdatabase**  - **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **Editandcontinue**  - **/Zi**  
   
     詳細については、「[/Z7、/Zi、/ZI (デバッグ情報の形式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)」を参照してください。  
   
@@ -239,9 +239,9 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  - **/arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  - **/arch: SSE2**  
   
     詳細については、「[/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d)」を参照してください。  
   
@@ -269,13 +269,13 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **None** - **/errorReport:none**  
+  - **なし**  - **/errorreport: none**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **プロンプト**  - **/errorreport: prompt**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **キュー**  - **/errorreport: queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **送信**  - **/errorreport: send**  
   
     詳細については、「[/errorReport (内部コンパイラ エラーの報告)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667)」を参照してください。  
   
@@ -287,13 +287,13 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **false** - *\<なし>*  
+  - **false** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **非同期**  - **/Eha**  
   
-  - **Sync** - **/EHsc**  
+  - **同期**  - **/Ehsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **Synccthrow**  - **/Ehs**  
   
     詳細については、「[/EH (例外処理モデル)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d)」を参照してください。  
   
@@ -313,11 +313,11 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Neither** - *\<なし>*  
+  - **両者** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **サイズ**  - **/Os**  
   
-  - **Speed** - **/Ot**  
+  - **速度**  - **/Ot**  
   
     詳細については、「[/Os、/Ot (実行可能ファイルのサイズの優先、実行速度の優先)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2)」を参照してください。  
   
@@ -337,11 +337,11 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Precise** - **/fp:precise**  
+  - **正確**  - **/fp: 正確**  
   
-  - **Strict** - **/fp:strict**  
+  - **Strict**  - **/fp: strict**  
   
-  - **Fast** - **/fp:fast**  
+  - **高速**  - **/fp: fast**  
   
     詳細については、「[/fp (浮動小数点の動作の指定)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e)」を参照してください。  
   
@@ -363,7 +363,7 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 - **ForcedUsingFiles**  
   
-   省略可能な **String[]** 型のパラメーターです。  
+   省略可能な **String []** パラメーターです。  
   
    プリプロセッサで、指定された 1 つ以上の **#using** ファイルが処理されます。  
   
@@ -395,19 +395,19 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 - **InlineFunctionExpansion**  
   
-   省略可能な **String** 型のパラメーターです。  
+   省略可能な **文字列** パラメーターです。  
   
    ビルドのインライン関数の拡張レベルを指定します。  
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Default** - *\<none>*  
+  - **標準** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **無効**  - **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  - **/Ob1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **Anysuitable**  - **/Ob2**  
   
     詳細については、「[/Ob (関数のインライン展開)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a)」を参照してください。  
   
@@ -437,7 +437,7 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 - **ObjectFileName**  
   
-   省略可能な **String** 型のパラメーターです。  
+   省略可能な **文字列** パラメーターです。  
   
    既定値の代わりに使用する、オブジェクト (.obj) ファイルの名前またはディレクトリを指定します。  
   
@@ -445,7 +445,7 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 - **ObjectFiles**  
   
-   省略可能な **String[]** 型のパラメーターです。  
+   省略可能な **String []** パラメーターです。  
   
    オブジェクト ファイルのリスト。  
   
@@ -473,43 +473,43 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    詳細については、「[/openmp (OpenMP 2.0 サポートの有効化)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13)」を参照してください。  
   
-- **Optimization**  
+- **最適化**  
   
-   省略可能な **String** 型のパラメーターです。  
+   省略可能な **文字列** パラメーターです。  
   
    速度とサイズに関するさまざまなコードの最適化を指定します。  
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **Disabled** - **/Od**  
+  - **無効**  - **/Od**  
   
-  - **MinSpace** - **/O1**  
+  - **Minspace**  - **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **Maxspeed**  - **/O2**  
   
-  - **Full** - **/Ox**  
+  - **完全**  - **/Ox**  
   
     詳細については、「[/O オプション (コードの最適化)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)」を参照してください。  
   
 - **PrecompiledHeader**  
   
-   省略可能な **String** 型のパラメーターです。  
+   省略可能な **文字列** パラメーターです。  
   
    ビルド時にプリコンパイル済みヘッダー (.pch) ファイルを作成または使用します。  
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **NotUsing** - *\<なし>*  
+  - **NotUsing** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **作成**  - **/Yc**  
   
-  - **Use** - **/Yu**  
+  - **使用**  - **/Yu**  
   
     詳細については、「[/Yc (プリコンパイル済みヘッダー ファイルの作成)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678)」と「[/Yu (プリコンパイル済みヘッダー ファイルの使用)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f)」を参照してください。 この表にある **PrecompiledHeaderFile** および **PrecompiledHeaderOutputFile** パラメーターも参照してください。  
   
 - **PrecompiledHeaderFile**  
   
-   省略可能な **String** 型のパラメーターです。  
+   省略可能な **文字列** パラメーターです。  
   
    作成または使用するプリコンパイル済みヘッダー ファイルの名前を指定します。  
   
@@ -517,7 +517,7 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 - **PrecompiledHeaderOutputFile**  
   
-   省略可能な **String** 型のパラメーターです。  
+   省略可能な **文字列** パラメーターです。  
   
    既定のパス名を使用する代わりにプリコンパイル済みヘッダーのパス名を指定します。  
   
@@ -591,13 +591,13 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **MultiThreaded** - **/MT**  
+  - **マルチスレッド**  - **/Mt**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  - **/MTd**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  - **/Md**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **MultiThreadedDebugDLL**  - **/Mdd**  
   
     詳細については、「[/MD、/MT、/LD (ランタイム ライブラリの使用)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)」を参照してください。  
   
@@ -647,17 +647,17 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **既定** - **/Zp1**  
+  - **既定**  - **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1 バイト**  - **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  - **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  - **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  - **/Zp8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16Bytes**  - **/Zp16**  
   
     詳細については、「[/Zp (構造体メンバーの配置)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f)」を参照してください。  
   
@@ -679,11 +679,11 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 - **TreatSpecificWarningsAsErrors**  
   
-   省略可能な **String[]** 型のパラメーターです。  
+   省略可能な **String []** パラメーターです。  
   
    指定したコンパイラ警告の一覧をエラーとして扱います。  
   
-   詳細については、「[/w、/Wn、/WX、/Wall、/wln、/wdn、/wen、/won (警告レベル)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)」の **/we**`n` オプションに関する記述を参照してください。  
+   詳細については、 **/we** 「 `n` [/W、/W0、/W1、/W2、/W3、/W4、/W1、/W2、/W3、/W4、/Wall、/wd、/We、/WO、/Wv、/wx (警告レベル)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)」の/we オプションを参照してください。  
   
 - **TreatWarningAsError**  
   
@@ -741,17 +741,17 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  - **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  - **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  - **/W2**  
   
-  - **Level3** - **/W3**  
+  - **Level3**  - **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  - **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **Enableallwarnings**  - **/Wall**  
   
     詳細については、「[/w、/Wn、/WX、/Wall、/wln、/wdn、/wen、/won (警告レベル)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f)」の **/W**_n_ オプションに関する記述を参照してください。  
   
@@ -803,5 +803,5 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
 ## <a name="remarks"></a>解説  
   
-## <a name="see-also"></a>関連項目
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)

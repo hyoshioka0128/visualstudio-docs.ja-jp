@@ -1,4 +1,4 @@
-﻿---
+---
 title: ファイルのプロパティ、JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719a956558141684c7d755aafb6929f4368482f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657723"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
@@ -68,19 +68,19 @@ ms.locfileid: "72657723"
 ## <a name="reference-file-properties"></a>参照ファイルのプロパティ
  ここでは、[!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)] から参照されるファイルに一般的なプロパティについて説明します。 ソリューション エクスプローラーで .winmd ファイル、SDK リファレンス、プロジェクト間参照、またはアセンブリ参照などの参照を選択すると、ファイルの種類によっては [プロパティ] ウィンドウに他のプロパティが表示されることがあります。
 
-### <a name="culture"></a>culture
+### <a name="culture"></a>カルチャ
  参照に関連付けられている言語が表示されます。
 
-### <a name="file-type"></a>ファイルの種類
+### <a name="file-type"></a>[ファイルの種類]
  参照のファイルの種類が表示されます。
 
-### <a name="file-version"></a>ファイルのバージョン
+### <a name="file-version"></a>ファイル バージョン
  参照のファイル バージョンが表示されます。
 
-### <a name="identity"></a>Identity
+### <a name="identity"></a>ID
  プロジェクトに使用されている参照の ID が表示されます。これはプロジェクト ファイルに保存されています。
 
-### <a name="package"></a>Package
+### <a name="package"></a>パッケージ
  参照に関連付けられているパッケージ マニフェストの名前が表示されます。
 
 ### <a name="resolved-path"></a>解決されたパス

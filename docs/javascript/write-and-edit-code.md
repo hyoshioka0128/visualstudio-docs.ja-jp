@@ -10,14 +10,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453757"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238181"
 ---
-# <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
+# <a name="learn-to-use-the-code-editor-for-javascript"></a>JavaScript 用コード エディターを使用する方法を学習する
 
 この Visual Studio のコード エディターの概要では、Visual Studio でコードを記述、コード内を移動、およびコードを理解する簡単な方法をいくつか示します。
 

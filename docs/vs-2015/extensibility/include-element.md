@@ -1,5 +1,5 @@
 ---
-title: 要素を含める |Microsoft Docs
+title: Include Element |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203945"
 ---
 # <a name="include-element"></a>Include 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Include 要素に存在するファイルの指定で指定された現在のファイルに挿入するためのパスを含めます。  すべてのシンボルよぶ型が定義されているコンパイルの結果の一部になります。  
+Include 要素は、現在のファイルに挿入するために指定されたインクルードパスにあるファイルを指定します。  定義されているすべてのシンボルと型は、コンパイルされた結果の一部になります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,8 +38,8 @@ Include 要素に存在するファイルの指定で指定された現在のフ
   
 |属性|説明|  
 |---------------|-----------------|  
-|href|必須。 ヘッダー ファイルへのパス:<br /><br /> href="stdidcmd.h"|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|href|必須です。 ヘッダーファイルのパス:<br /><br /> href = "stdidcmd"|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
@@ -51,7 +51,7 @@ Include 要素に存在するファイルの指定で指定された現在のフ
   
 |要素|説明|  
 |-------------|-----------------|  
-|[CommandTable 要素](../extensibility/commandtable-element.md)|すべてのコマンドを表す要素の定義: メニュー項目、メニューのツールバー、およびコンボ ボックスは、-、IDE に VSPackage を提供します。|  
+|[CommandTable 要素](../extensibility/commandtable-element.md)|VSPackage が IDE に提供するコマンド (メニュー項目、メニュー、ツールバー、およびコンボボックス) を表すすべての要素を定義します。|  
   
 ## <a name="example"></a>例  
   
@@ -59,5 +59,5 @@ Include 要素に存在するファイルの指定で指定された現在のフ
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

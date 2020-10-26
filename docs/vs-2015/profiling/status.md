@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157787"
 ---
 # <a name="status"></a>Status
@@ -38,13 +38,13 @@ VSPerfCmd.exe /Status
  **出力ファイル名**  
  現在のプロファイラー データ ファイルのパスとファイル名。  
   
- **コレクション モード**  
+ **コレクションモード**  
  SAMPLE または TRACE  
   
  **最大プロセス**  
  同時にプロファイルできる最大プロセス数と、現在アクティブなプロセス数。  
   
- **最大スレッド**  
+ **最大スレッド数**  
  同時にプロファイルできる最大スレッド数。  
   
  **バッファー数**  
@@ -55,7 +55,7 @@ VSPerfCmd.exe /Status
   
  **Status** オプションでは、現在プロファイルされている各プロセスに関して、次の状態情報を表示します。  
   
- **Process**  
+ **[処理]**  
  プロファイルされているプロセスの名前。  
   
  **プロセス ID**  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Status
  **監視するアクセス権を伴うユーザー**  
  プロファイラーにアクセスできるユーザーの名前を一覧表示します。 VSPerfCmd.exe の **Admin** オプションを使用して、追加ユーザーにアクセスを許可できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

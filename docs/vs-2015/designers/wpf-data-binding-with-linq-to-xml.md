@@ -1,4 +1,4 @@
-﻿---
+---
 title: LINQ to XML による WPF のデータ バインディング | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419686756fb996a44cb6355a9776cc08baed576d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663883"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>LINQ to XML による WPF のデータ バインディング
@@ -29,12 +29,12 @@ ms.locfileid: "72663883"
 |[LINQ to XML の動的プロパティ](../designers/linq-to-xml-dynamic-properties.md)|<xref:System.Xml.Linq.XAttribute> クラスおよび <xref:System.Xml.Linq.XElement> クラスによって公開される動的プロパティの参照情報について説明します。|
 |[LINQ to XML を使用した WPF のデータ バインディングの例](../designers/wpf-data-binding-using-linq-to-xml-example.md)|XML データ ソースにユーザー インターフェイス コンポーネントをバインドする WPF の例について説明します。|
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>リファレンス
  <xref:System.Xml.Linq>
 
  <xref:System.Xml.Linq.XElement>
 
  <xref:System.Xml.Linq.XAttribute>
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [高度な LINQ to XML プログラミング](https://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)

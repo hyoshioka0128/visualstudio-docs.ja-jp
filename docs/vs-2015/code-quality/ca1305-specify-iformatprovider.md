@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 025d76f8e946dd3021141d6736c6b4bd40d57170
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539087"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:IFormatProvider を指定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
@@ -61,7 +61,7 @@ ms.locfileid: "85539087"
  既定のカルチャ/書式プロバイダーが適切な選択であり、コードの保守容易性が重要な開発の優先順位でない場合は、この規則からの警告を抑制することが安全です。
 
 ## <a name="example"></a>例
- 次の例では、に `BadMethod` よってこの規則の2つの違反が発生します。 `GoodMethod`インバリアントカルチャをに渡して最初の違反を修正 <xref:System.String.Compare%2A> し、現在のカルチャをに渡して、2番目の違反を修正し <xref:System.String.ToLower%2A> `string3` ます。これは、がユーザーに表示されるためです。
+ 次の例では、に `BadMethod` よってこの規則の2つの違反が発生します。 `GoodMethod` インバリアントカルチャをに渡して最初の違反を修正 <xref:System.String.Compare%2A> し、現在のカルチャをに渡して、2番目の違反を修正し <xref:System.String.ToLower%2A> `string3` ます。これは、がユーザーに表示されるためです。
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -77,5 +77,5 @@ ms.locfileid: "85539087"
 ## <a name="related-rules"></a>関連規則
  [CA1304:CultureInfo を指定します](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [NIB: CultureInfo クラスの使用](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

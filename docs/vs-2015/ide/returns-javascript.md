@@ -1,5 +1,5 @@
-﻿---
-title: '&lt;returns &gt; (JavaScript) |Microsoft Docs'
+---
+title: '&lt;返されます &gt; (JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f8fd8cdc8acdbf42b97e00f3c85647dd863721d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669957"
 ---
-# <a name="ltreturnsgt-javascript"></a>&lt;returns &gt; (JavaScript)
+# <a name="ltreturnsgt-javascript"></a>&lt;戻り値 &gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 関数またはメソッドの呼び出しの結果のドキュメント情報を指定します。
@@ -58,13 +58,13 @@ ms.locfileid: "72669957"
 
   `elementMayBeNull` 省略可能。 `type` が `Array` である場合、配列内の要素を null に設定できるかどうかを指定します。 配列内の要素を null に設定できることを示す場合は `true` に設定します。それ以外の場合は `false` に設定します。 既定値は `false` です。 Visual Studio では、この属性は IntelliSense 情報を提供するためには使用されません。
 
-  `locid` 省略可能。 戻り値に関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 この識別子の型は、[\<loc>](../ide/loc-javascript.md) タグで指定された形式によって異なります。
+  `locid` 省略可能。 戻り値に関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 識別子の型は、タグに指定されている形式によって異なり [\<loc>](../ide/loc-javascript.md) ます。
 
   `value` 省略可能。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 たとえば、この属性を使用して、`Promise` などの非同期コールバックに IntelliSense を提供できます。 `value` 要素で `<returns>` 属性を使用すると、長いコードの実行をバイパスすることで IntelliSense のパフォーマンスを改善できます。
 
   `description` 省略可能。 戻り値の説明。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `<returns>` 要素は、ステートメントの前の関数本体に配置する必要があります。
 
 ## <a name="example"></a>例
@@ -101,5 +101,5 @@ calculate().  // Completion list for a Number.
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

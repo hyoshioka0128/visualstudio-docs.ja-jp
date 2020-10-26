@@ -1,4 +1,4 @@
-﻿---
+---
 title: '&lt;param &gt; (JavaScript) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca6207d22d82e607fa589f944230b36b46e633c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670361"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param &gt; (JavaScript)
@@ -40,7 +40,7 @@ ms.locfileid: "72670361"
 #### <a name="parameters"></a>パラメーター
  `name` 必須。 パラメーターの名前。
 
- `type` 省略可能。 パラメーターのデータ型。 型は以下のいずれかです。
+ `type` 省略可能。 パラメーターのデータ型です。 型は以下のいずれかです。
 
 - `Number` や `Object` など、ECMAScript 5 仕様に含まれる ECMAScript 言語の型。
 
@@ -62,20 +62,20 @@ ms.locfileid: "72670361"
 
   `elementMayBeNull` 省略可能。 `type` が `Array` である場合、配列内の要素を null に設定できるかどうかを指定します。 配列内の要素を null に設定できることを示す場合は `true` に設定します。それ以外の場合は `false` に設定します。 既定値は `false` です。 Visual Studio では、この属性は IntelliSense 情報を提供するためには使用されません。
 
-  `locid` 省略可能。 パラメーターに関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 この識別子の型は、[\<loc>](../ide/loc-javascript.md) 要素で指定された形式によって異なります。
+  `locid` 省略可能。 パラメーターに関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 識別子の型は、要素で指定された形式によって異なり [\<loc>](../ide/loc-javascript.md) ます。
 
   `parameterArray` 省略可能。 `String.format` 関数でサポートされるパラメーターの繰り返しと同様に、ドキュメント化されたパラメーターを関数呼び出しで繰り返すことができるかどうかを指定します。 パラメーターを繰り返すことができることを示す場合は `true` に設定します。それ以外の場合は `false` に設定します。 Visual Studio では、この属性は IntelliSense 情報を提供するためには使用されません。
 
   `optional` 省略可能。 呼び出し元の関数で、ドキュメント化されたパラメーターが省略可能であるかどうかを指定します。 パラメーターが省略可能であることを示す場合は `true` に設定します。それ以外の場合は `false` に設定します。
 
-  `value` 省略可能。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 パラメーターの型が定義されていない場合に、この属性を使用して型情報を提供できます。 たとえば、`value=’1’` を使用して、パラメーターの型を数値として扱うことができます。
+  `value` 省略可能。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 パラメーターの型が定義されていない場合に、この属性を使用して型情報を提供できます。 たとえば、を使用し `value=’1’` て、パラメーターの型を数値として扱うことができます。
 
   `description` 省略可能。 パラメーターの説明。
 
-## <a name="remarks"></a>解説
- 必須属性は `name` だけです。 他のすべての属性は省略可能です。
+## <a name="remarks"></a>注釈
+ 必須属性は `name` だけです。 他のすべての属性は省略できます。
 
- 関数に注釈を付けるために使用する要素 ( [\<summary >](../ide/summary-javascript.md)、 [\<param >](../ide/param-javascript.md)、 [\<returns](../ide/returns-javascript.md)> など) は、ステートメントの前に関数本体に配置する必要があります。
+ 、、などの関数に注釈を付けるために使用する要素は、 [\<summary>](../ide/summary-javascript.md) [\<param>](../ide/param-javascript.md) ステートメントの前の [\<returns>](../ide/returns-javascript.md) 関数本体に配置する必要があります。
 
  同じ名前を持つ複数の `<param>` 要素がある場合は、`<param>` 要素の 1 つが使用され、重複する要素は無視されます。 どの要素を使用するかを決める動作は定義されていません。 `name` が存在しないパラメーターを参照している場合、その要素は無視されます。
 
@@ -107,5 +107,5 @@ function calculate(a) {
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)

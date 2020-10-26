@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a95f25f9e970beb31544722b1beeb05b2d480b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156047"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-式の評価を制御するフラグの有効な値を列挙します。 この列挙体を拡張、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体。  
+式の評価を制御するフラグの有効な値を列挙します。 この列挙体は、 [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙体を拡張します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -65,25 +65,25 @@ public enum enum_EVALFLAGS90
   
 #### <a name="parameters"></a>パラメーター  
  EVAL90_RETURNVALUE  
- 存在する場合は、戻り値に評価することを指定します。  
+ 戻り値 (存在する場合) を評価することを指定します。  
   
  EVAL90_NOSIDEEFFECTS  
  副作用を許可しないことを指定します。  
   
  EVAL90_ALLOWBPS  
- ブレークポイントの停止を指定します。  
+ ブレークポイントでの停止を指定します。  
   
  EVAL90_ALLOWERRORREPORT  
- そのエラーを許可するホストにレポートを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。  
+ ホストへのエラー報告を許可することを指定します。 Internet Explorer のスクリプトでの式の評価に主に使用されます。  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- 関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。  
+ 関数を呼び出す代わりに、関数をアドレスとして強制的に評価します。  
   
  EVAL90_NOFUNCEVAL  
- 関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。  
+ 関数が評価されないようにします。 たとえば、式に含まれるトークンを考えてみ `int` `myExpression(int) + 10` ます。 この関数は、アドレスとして正しく評価されますが、値としては評価できません。  
   
  EVAL90_NOEVENTS  
- セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。  
+ 式の評価中に発生したイベントをセッションデバッグマネージャー (SDM) または IDE に送信しないことを示すフラグ。  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
  デザイン時の式の評価を有効にします。  
@@ -92,14 +92,14 @@ public enum enum_EVALFLAGS90
  暗黙的な変数の作成を許可します。  
   
  EVAL90_FORCE_EVALUATION_NOW  
- 直ちに強制的に評価します。 これは、機能は、ユーザーの要求など、要求を処理するときに便利です。  
+ 強制的に評価を直ちに実行します。 これは、ユーザー要求などの要求を処理する場合に便利です。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg90.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg90  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

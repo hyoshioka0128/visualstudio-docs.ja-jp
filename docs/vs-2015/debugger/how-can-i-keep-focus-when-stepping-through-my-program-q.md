@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 416e17c95290643873f52f71ec892514d183b6d0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704562"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>プログラムのステップ実行時にフォーカスを保持するには
@@ -36,9 +36,9 @@ ms.locfileid: "65704562"
  プログラムで、ウィンドウのアクティブ化が正しく動作しません。 デバッガーでプログラムをステップ実行すると、プログラムがフォーカスを保持できないため、問題を再現できなくなります。 どのようにすればフォーカスを保持できますか。  
   
 ## <a name="solution"></a>ソリューション  
- コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 リモート コンピューター上でプログラムを操作し、ホスト上でデバッガーを実行します。 詳細については、「[方法 :リモート コンピューターを選択する](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)」を参照してください。  
+ コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 リモート コンピューター上でプログラムを操作し、ホスト上でデバッガーを実行します。 詳細については、[リモート コンピューターを選択する](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)   
- [実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>参照  
+ [ネイティブコードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   
+ [実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

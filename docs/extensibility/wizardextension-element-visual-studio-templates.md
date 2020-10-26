@@ -1,5 +1,5 @@
 ---
-title: ウィザード拡張要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
+title: WizardExtension 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740376"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 要素 (Visual Studio テンプレート)
-テンプレート ウィザードをカスタマイズするための登録要素が含まれています。
+テンプレートウィザードをカスタマイズするための登録要素が含まれています。
 
- \<>.\<ウィザード拡張>
+ \<VSTemplate> ... \<WizardExtension>
 
 ## <a name="syntax"></a>構文
 
@@ -39,26 +39,26 @@ ms.locfileid: "80740376"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|[アセンブリ](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> グローバル アセンブリ キャッシュに表示されるアセンブリの名前または厳密な名前を指定します。 要素には、少なくとも`Assembly`1 つの`WizardExtension`要素が必要です。|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> `IWizard`インターフェイスを実装するクラスの完全修飾名。 要素には、少なくとも`FullClassName`1 つの`WizardExtension`要素が必要です。|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> グローバルアセンブリキャッシュに表示されるアセンブリの名前または厳密な名前を指定します。 要素には、少なくとも1つの要素が必要 `Assembly` `WizardExtension` です。|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> インターフェイスを実装するクラスの完全修飾名 `IWizard` 。 要素には、少なくとも1つの要素が必要 `FullClassName` `WizardExtension` です。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|プロジェクト テンプレート、項目テンプレート、またはスタート キットのすべてのメタデータが含まれます。|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|プロジェクトテンプレート、項目テンプレート、またはスタートキットのすべてのメタデータが含まれます。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  `WizardExtension` は、`VSTemplate` の子要素で、省略可能な要素です。
 
 ## <a name="example"></a>例
- 次の例は、Windows アプリケーションの標準プロジェクト テンプレートのメタデータ[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]を示しています。
+ 次の例は、Windows アプリケーションの標準プロジェクトテンプレートのメタデータを示してい [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ます。
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -89,6 +89,6 @@ ms.locfileid: "80740376"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)

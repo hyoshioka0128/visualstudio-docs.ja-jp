@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282918"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
@@ -48,11 +48,11 @@ ms.locfileid: "85282918"
 
 次の概念に関する知識があると役立ちますが、チュートリアルを実行するうえで必須というわけではありません。
 
-- データセットおよび TableAdapter。 詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)」および「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
+- データセットおよび TableAdapter。 詳細については、「 [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md) 」および「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
 - WPF データ バインディング。 詳しくは、「 [データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」をご覧ください。
 
-## <a name="create-the-project"></a>プロジェクトを作成する
+## <a name="create-the-project"></a>プロジェクトの作成
 
 新しい WPF プロジェクトを作成して、製品レコードを表示します。
 
@@ -64,9 +64,9 @@ ms.locfileid: "85282918"
 
 3. **[Visual Basic]** または **[Visual C#]** を展開し、**[Windows]** を選択します。
 
-4. [ **WPF アプリケーション**] プロジェクトテンプレートを選択します。
+4. [ **WPF アプリケーション** ] プロジェクトテンプレートを選択します。
 
-5. [**名前**] ボックスに「 **AdventureWorksProductsEditor** 」と入力し、[ **OK]** を選択します。
+5. [ **名前** ] ボックスに「 **AdventureWorksProductsEditor** 」と入力し、[ **OK]** を選択します。
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ ms.locfileid: "85282918"
 
 2. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-3. C# の**WPF アプリ**プロジェクトテンプレートを検索し、プロジェクトを作成する手順に従って、プロジェクトに**AdventureWorksProductsEditor**という名前を付けます。
+3. C# の **WPF アプリ** プロジェクトテンプレートを検索し、プロジェクトを作成する手順に従って、プロジェクトに **AdventureWorksProductsEditor**という名前を付けます。
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ ms.locfileid: "85282918"
 
 8. **[完了]** をクリックします。
 
-   Visual Studio によって新しいファイルがプロジェクトに追加され、 `AdventureWorksLTDataSet.xsd` 対応する**adventureworksltdataset.xsd**アイテムが [**データソース**] ウィンドウに追加されます。 このファイルは、という名前の `AdventureWorksLTDataSet.xsd` 型指定されたデータセットと、という名前の TableAdapter を定義し `AdventureWorksLTDataSet` `ProductTableAdapter` ます。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
+   Visual Studio によって新しいファイルがプロジェクトに追加され、 `AdventureWorksLTDataSet.xsd` 対応する **adventureworksltdataset.xsd** アイテムが [ **データソース** ] ウィンドウに追加されます。 このファイルは、という名前の `AdventureWorksLTDataSet.xsd` 型指定されたデータセットと、という名前の TableAdapter を定義し `AdventureWorksLTDataSet` `ProductTableAdapter` ます。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
 
 9. プロジェクトをビルドします。
 
@@ -250,13 +250,13 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 5. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このチュートリアルを完了すると、次の関連タスクを試すことができます。
 
 - Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、「 [WCF データサービスへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)」を参照してください。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル: WPF アプリで関連データを表示](../data-tools/display-related-data-in-wpf-applications.md)する」を参照してください。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「 [チュートリアル: WPF アプリで関連データを表示](../data-tools/display-related-data-in-wpf-applications.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: ブレークポイントをヒットする |マイクロソフトドキュメント
+title: ブレークポイントのヒット |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738569"
 ---
 # <a name="hit-a-breakpoint"></a>ブレークポイントに到達する
-次のセクションでは、実行中またはステップ実行中にデバッグ エンジン (DE) がブレークポイントにヒットしたときのプロセスについて説明します。
+次のセクションでは、デバッグエンジン (DE) が実行中またはステップ実行中にブレークポイントにヒットした場合のプロセスについて説明します。
 
-## <a name="troubleshoot-a-hit-breakpoint"></a>ヒット ブレークポイントのトラブルシューティング
+## <a name="troubleshoot-a-hit-breakpoint"></a>ヒットブレークポイントのトラブルシューティング
 
-1. DE は **、EVENT_SYNC_STOP**として[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)インターフェイスを送信します。
+1. DE は、 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) インターフェイスを **EVENT_SYNC_STOP**として送信します。
 
-2. セッション デバッグ マネージャー (SDM) は、ヒットしたブレークポイントを取得する[IDebugBreakpointEvent2:::Enum ブレークポイント](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)を呼び出します。
+2. セッションデバッグマネージャー (SDM) は、 [IDebugBreakpointEvent2::: EnumBreakpoints ブレークポイント](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) を呼び出して、ヒットしたブレークポイントを取得します。
 
 ## <a name="see-also"></a>関連項目
-- [デバッガー イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)
+- [デバッガーイベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

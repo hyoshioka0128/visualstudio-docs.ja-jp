@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_rawlvarinstancevalue |Microsoft Docs
+title: 'IDiaStackFrame:: get_rawLVarInstanceValue |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ff78c38ad077084b3dea9c96e3251ffddb2206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573015"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-このメソッドは、実際のバイト数として指定されたローカル変数の値を取得します。  
+このメソッドは、指定されたローカル変数の値を生のバイトとして取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -38,19 +38,19 @@ HRESULT get_rawLVarInstanceValue(
   
 #### <a name="parameters"></a>パラメーター  
  `pInstance`  
- [in]`IDiaLVarInstance`の値を取得するローカル変数のインスタンスを表すオブジェクト。  
+ から `IDiaLVarInstance` 値を取得するローカル変数のインスタンスを表すオブジェクト。  
   
  `cbDataMax`  
- [in]バッファー内のバイトの最大数が指す`pbData`します。 これができる 8 バイトの最大値 (`sizeof(ULONGLONG)`)。  
+ からが指すバッファー内の最大バイト数 `pbData` 。 最大8バイト () にすることができ `sizeof(ULONGLONG)` ます。  
   
  `pcbData`  
- [out]実際、バッファーに格納されるバイト数を返します。  
+ 入出力バッファーに格納されている実際のバイト数を返します。  
   
  `pbData`  
- [out]データと共に格納するバッファー。 これは `NULL` にすることはできません。  
+ 入出力データを格納するバッファー。 これは `NULL` にすることはできません。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

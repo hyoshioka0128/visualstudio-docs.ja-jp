@@ -13,46 +13,46 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e43da0b05062c6c7b1c4d3cfe771ff0b93f83a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195781"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-1 つまたは複数のモジュールのデバッグを制御する 1 つのデバッグ エンジン (DE) を表します。  
+1つ以上のモジュールのデバッグを制御する1つのデバッグエンジン (DE) を表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugEngine3 : IDebugEngine2  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- このインターフェイスはカスタム DE (シンボルをサポートする) 場合 JustMyCode 状態を有効にします。 シンボルと JustMyCode をサポートしている場合、DE によってこのインターフェイスを実装する必要があります。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ このインターフェイスは、カスタム DE (シンボルがサポートされている場合) によって実装され、ジャスト Mycode 状態を有効にします。 シンボルがシンボルとジャスト Mycode をサポートしている場合、このインターフェイスは DE によって実装される必要があります。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- このインターフェイスは、セッション デバッグ マネージャー (SDM) シンボルの読み込み元の場所のオプションをユーザーに渡すによって呼び出されます。 インスタンス化されるときに、エンジンの GUID を設定するためにも呼び出されます (この GUID は、エンジンの登録時からのメトリックに基づく)。 SDM も JustMyCode 状態を設定して、指定された状態にデバッガーによって認識されているすべての例外を設定するのには、このインターフェイスを呼び出します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ このインターフェイスは、シンボルを読み込む場所のユーザーオプションを渡すために、セッションデバッグマネージャー (SDM) によって呼び出されます。 このメソッドは、インスタンス化されるときにエンジンの GUID を設定するためにも呼び出されます (この GUID は、エンジン登録時のメトリックに基づいています)。 また、SDM は、このインターフェイスを呼び出してジャスト Mycode の状態を設定し、デバッガーによって認識されるすべての例外を指定された状態に設定します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 継承されたメソッドだけでなく[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)、`IDebugEngine3`インターフェイスは、次のメソッドを公開します。  
+ インターフェイスは、 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)から継承されたメソッドに加えて、 `IDebugEngine3` 次のメソッドを公開します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|デがデバッグ シンボルの検索に使用するパスまたはパスを設定します。|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|シンボルが読み込まれてしていないすべてのモジュールのシンボルを読み込みます。|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|JustMyCode 情報の詳細、DE に指示します。|  
-|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|メトリックから DE GUID を設定します。|  
-|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|指定された状態に、現在未処理のすべての例外を設定します。|  
+|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|デバッグシンボルの検索に DE が使用するパスまたはパスを設定します。|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|シンボルが読み込まれていないすべてのモジュールのシンボルを読み込みます。|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|ジャストの非 Mycode 情報についての説明を解除します。|  
+|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|メトリックから DE の GUID を設定します。|  
+|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|現在未解決のすべての例外を指定された状態に設定します。|  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

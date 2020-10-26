@@ -1,5 +1,5 @@
 ---
-title: 関数を実行する |マイクロソフトドキュメント
+title: SccBeginBatch 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701192"
 ---
-# <a name="sccbeginbatch-function"></a>関数
-この関数は、ソース管理操作のバッチ シーケンスを開始します。 バッチを終了するために[SccEndBatch](../extensibility/sccendbatch-function.md)が呼び出されます。 これらのバッチは入れ子にできません。
+# <a name="sccbeginbatch-function"></a>SccBeginBatch 関数
+この関数は、ソース管理操作のバッチシーケンスを開始します。 バッチを終了するために [Sccendbatch](../extensibility/sccendbatch-function.md) が呼び出されます。 これらのバッチを入れ子にすることはできません。
 
 ## <a name="syntax"></a>構文
 
@@ -32,18 +32,18 @@ SCCRTN SccBeginBatch(void);
  [なし] :
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
-|SCC_OK|操作のバッチが正常に開始されました。|
-|SCC_E_UNKNOWNERROR|非特異的なエラー。|
+|SCC_OK|操作のバッチが正常に開始しました。|
+|SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>Remarks
- ソース管理バッチは、複数のプロジェクトまたは複数のコンテキストで同じ操作を実行するために使用されます。 バッチを使用すると、バッチ操作中のユーザー エクスペリエンスからプロジェクトごとの冗長ダイアログ ボックスを削除できます。 関数`SccBeginBatch`と[SccEndBatch](../extensibility/sccendbatch-function.md)は、操作の開始と終了を示す関数ペアとして使用されます。 ネストすることはできません。 `SccBeginBatch`バッチ操作が進行中であることを示すフラグを設定します。
+## <a name="remarks"></a>注釈
+ ソース管理バッチは、複数のプロジェクトまたは複数のコンテキストで同じ操作を実行するために使用されます。 バッチ処理を使用すると、バッチ操作中のユーザーエクスペリエンスから、プロジェクトごとの冗長なダイアログボックスを削除できます。 `SccBeginBatch`関数と[Sccendbatch](../extensibility/sccendbatch-function.md)は、操作の開始と終了を示すために関数のペアとして使用されます。 入れ子にすることはできません。 `SccBeginBatch` バッチ操作が進行中であることを示すフラグを設定します。
 
- バッチ操作が有効な間、ソース管理プラグインは、ユーザーに対して 1 つのダイアログ ボックスを表示し、そのダイアログ ボックスからの応答を後続のすべての操作に適用する必要があります。
+ バッチ操作が有効になっている間、ソース管理プラグインは、すべての質問に対して1つのダイアログボックスを表示し、後続のすべての操作にそのダイアログボックスから応答を適用する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

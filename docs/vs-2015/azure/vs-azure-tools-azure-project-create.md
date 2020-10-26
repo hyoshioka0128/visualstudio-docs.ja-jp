@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c4daf3d92aa08e6dbbb81eac79112772900d08d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964039"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio での Azure クラウド サービス プロジェクトの作成
@@ -26,7 +26,7 @@ Azure Tools for Visual Studio には、シンプルな汎用 Azure サービス�
 
 1. 管理者として Visual Studio を起動します。
 
-1. メイン メニューで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
+1. メインメニューで、[**ファイル**] [  >  **新規作成**] [プロジェクト] を選択し  >  **Project**ます。
 
 1. Visual C# または Visual Basic プロジェクト テンプレート ノードで **[クラウド]** を選択し、テンプレートの一覧から **[Azure クラウド サービス]** を選択します。
 

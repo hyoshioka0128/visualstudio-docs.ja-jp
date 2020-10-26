@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547044"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>方法: プログラムによって文書内のテキストを検索および置換する
@@ -58,7 +58,7 @@ ms.locfileid: "85547044"
    [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]
 
 ## <a name="use-a-range-object"></a>範囲オブジェクトを使用する
- <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを使用すると、ユーザー インターフェイスに何も表示せずにテキストを検索することができます。 オブジェクトは、 <xref:Microsoft.Office.Interop.Word.Find> 検索条件に一致するテキストが見つかった場合は**True**を返し、そうでない場合は**False**を返します。 また、テキストが検出された場合は、検索条件を突き合わせる <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを再定義します。
+ <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを使用すると、ユーザー インターフェイスに何も表示せずにテキストを検索することができます。 オブジェクトは、 <xref:Microsoft.Office.Interop.Word.Find> 検索条件に一致するテキストが見つかった場合は **True** を返し、そうでない場合は **False** を返します。 また、テキストが検出された場合は、検索条件を突き合わせる <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを再定義します。
 
 ### <a name="to-find-text-using-a-range-object"></a>Range オブジェクトを使用してテキストを検索するには
 
@@ -97,7 +97,7 @@ ms.locfileid: "85547044"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
 ## <a name="search-for-and-replace-text-in-documents"></a>ドキュメント内のテキストの検索と置換
- 次のコードでは、現在の選択範囲を検索し、見つかった文字列のすべての出現箇所を**検索**し**た**文字列で置き換えます。
+ 次のコードでは、現在の選択範囲を検索し、見つかった文字列のすべての出現箇所を **検索** し **た**文字列で置き換えます。
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>ドキュメント内のテキストを検索し、置換するには
 
@@ -108,7 +108,7 @@ ms.locfileid: "85547044"
 
      <xref:Microsoft.Office.Interop.Word.Find> クラスには <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> メソッドがあり、<xref:Microsoft.Office.Interop.Word.Replacement> クラスにも独自の <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> メソッドがあります。 検索と置換の操作を実行するときは、両方のオブジェクトの ClearFormatting 指定メソッドを使用する必要があります。 <xref:Microsoft.Office.Interop.Word.Find> オブジェクトでのみこのメソッドを使用すると、置換テキストで予想外の結果になる可能性があります。
 
-2. 検出された各項目を置換するには、<xref:Microsoft.Office.Interop.Word.Find> オブジェクトの <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> メソッドを使用します。 置き換える項目を指定するには、 *replace*パラメーターを使用します。 このパラメーターには、次の <xref:Microsoft.Office.Interop.Word.WdReplace> 値のいずれかを指定できます。
+2. 検出された各項目を置換するには、<xref:Microsoft.Office.Interop.Word.Find> オブジェクトの <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> メソッドを使用します。 置き換える項目を指定するには、 *replace* パラメーターを使用します。 このパラメーターには、次の <xref:Microsoft.Office.Interop.Word.WdReplace> 値のいずれかを指定できます。
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> は検出されたすべての項目を置換します。
 

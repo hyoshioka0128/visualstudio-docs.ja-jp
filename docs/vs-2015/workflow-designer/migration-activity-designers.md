@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bb2cf8e85dadb6ad9391da8227508b770c39bbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672642"
 ---
 # <a name="migration-activity-designers"></a>移行アクティビティ デザイナー
 Migration アクティビティ デザイナーは、[!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] を対象にしたワークフローからワークフロー 3.0/3.5 のアクティビティを呼び出すために使用します。 このセクションに含まれているトピックでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)]のアクティビティ デザイナーの使用方法についてのガイドラインを示します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [相互運用](../workflow-designer/interop-activity-designer.md)@No__t_1 アクティビティを作成および構成するために使用します。
+ [相互運用](../workflow-designer/interop-activity-designer.md) アクティビティを作成および構成するために使用 <xref:System.Activities.Statements.Interop> します。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>関連項目
 
 ## <a name="related-sections"></a>関連項目
  他の種類のアクティビティ デザイナーについては、次のトピックを参照してください。
@@ -33,11 +33,11 @@ Migration アクティビティ デザイナーは、[!INCLUDE[netfx40_long](../
 
  [アクティビティ デザイナーの使用](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 
  [トランザクション](../workflow-designer/transaction-activity-designers.md)
 

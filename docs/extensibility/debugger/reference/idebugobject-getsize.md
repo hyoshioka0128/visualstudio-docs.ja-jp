@@ -1,5 +1,5 @@
 ---
-title: オブジェクトを取得します。マイクロソフトドキュメント
+title: 'IDebugObject:: GetSize |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8fd42abfc056c3b9e50d073ad335f72ac9022aa7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726568"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
-オブジェクトのサイズをバイト単位で取得します。
+オブジェクトのサイズ (バイト単位) を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>パラメーター
 `pnSize`\
-[アウト]サイズをバイト単位で返します。
+入出力バイト単位のサイズを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)メソッドを使用して、値をバイト シーケンスとして取得します。
+## <a name="remarks"></a>解説
+ 値をバイトシーケンスとして取得するには、 [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) メソッドを使用します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

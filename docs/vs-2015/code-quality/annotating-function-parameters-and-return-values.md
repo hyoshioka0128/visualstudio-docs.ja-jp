@@ -127,10 +127,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 71854388f3fb1c5eaea7d40ed2757af9cecacf1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543807"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
@@ -187,7 +187,7 @@ ms.locfileid: "85543807"
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     この例では、呼び出し元はの要素のバッファーを提供し `size` `p1` ます。  `MyStringCopy`これらの要素の一部を有効にします。 さらに重要なの `_Null_terminated_` は、の注釈は、 `PWSTR` `p1` が post 状態で null で終了することを意味します。  この方法では、有効な要素の数は引き続き明確に定義されますが、特定の要素数は必要ありません。  
+     この例では、呼び出し元はの要素のバッファーを提供し `size` `p1` ます。  `MyStringCopy` これらの要素の一部を有効にします。 さらに重要なの `_Null_terminated_` は、の注釈は、 `PWSTR` `p1` が post 状態で null で終了することを意味します。  この方法では、有効な要素の数は引き続き明確に定義されますが、特定の要素数は必要ありません。  
   
      バリアントは、 `_bytes_` 要素の代わりにサイズをバイト単位で示します。 この値は、サイズを要素として表現できない場合にのみ使用してください。  たとえば、文字列では、を `char` `_bytes_` 使用する同様の関数がの場合にのみ、バリアントが使用さ `wchar_t` れます。  
   
@@ -470,7 +470,7 @@ ms.locfileid: "85543807"
      パラメーター、フィールド、または結果は、からまでの範囲内に `low` あります (を含む) `hi` 。  `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`注釈付きオブジェクトに適切な状態または状態の条件と共に適用されると同じです。  
   
     > [!IMPORTANT]
-    > 名前には "in" と "out" が含まれていますが、とのセマンティクスは `_In_` `_Out_` これらの注釈には適用**されません**。  
+    > 名前には "in" と "out" が含まれていますが、とのセマンティクスは `_In_` `_Out_` これらの注釈には適用 **されません** 。  
   
 - `_Pre_equal_to_(expr)`  
   
@@ -491,7 +491,7 @@ ms.locfileid: "85543807"
 ## <a name="related-resources"></a>関連リソース  
  [コード分析チームのブログ](https://blogs.msdn.com/b/codeanalysis/)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [SAL 注釈を使用して C/c + + コードの欠陥を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [SAL について](../code-quality/understanding-sal.md)   
  [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)   

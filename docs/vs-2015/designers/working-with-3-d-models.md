@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 555a9065e76d93a4c8dfbfc1acae30bfe4ea2a5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663959"
 ---
 # <a name="working-with-3-d-models"></a>3-D モデルの操作
@@ -30,7 +30,7 @@ ms.locfileid: "72663959"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[モデル エディター](../designers/model-editor.md)|モデル エディターを使って 3-D モデルを操作する方法について説明します。|
-|[モデル エディターの例](../designers/model-editor-examples.md)|モデル エディターを使って一般的な 3-D モデリング タスクを実行する方法がわかるトピックへのリンクが提供されています。|
+|[モデルエディターの例](../designers/model-editor-examples.md)|モデル エディターを使って一般的な 3-D モデリング タスクを実行する方法がわかるトピックへのリンクが提供されています。|

@@ -1,5 +1,7 @@
 ---
-title: 構造体 - 内部メンバー |マイクロソフトドキュメント
+title: AsyncTaskMethodBuilder 構造体の内部メンバー
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +13,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c918890551515ab9fadbf329d4c3ee96621c7aae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: f79ee4c717774ef61fc0aa07fe7ecf2c5c216c04
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80739374"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036887"
 ---
-# <a name="asynctaskmethodbuilder-structure---internal-members"></a>構造体 - 内部メンバー
-このトピックでは、クラスの内部メンバーについて<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>説明します。 このクラスの一般的な情報については、<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>参照トピックを参照してください。
+# <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 構造体の内部メンバー
+このトピックでは、クラスの内部メンバーについて説明し <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> ます。 このクラスに関する一般的な情報については、リファレンストピックを参照してください <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 。
 
- **名前空間:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **名前空間:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **アセンブリ:** mscorlib (mscorlib.dll 内)
+ **アセンブリ:** mscorlib (mscorlib.dll)
 
- これらの内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
+ これらの内部メンバーには .NET Framework からアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -37,11 +39,11 @@ ms.locfileid: "80739374"
 
 ## <a name="internal-members"></a>内部メンバー
 
-|名前|説明|
+|Name|説明|
 |----------|-----------------|
-|[プロパティ](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|デバッガーに対してこのビルダーを一意に識別するために使用できるオブジェクトを取得します。|
-|[m_builderフィールド](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|この非ジェネリック インスタンスデリゲート先のジェネリック ビルダ オブジェクトを表します。|
+|[ObjectIdForDebugger プロパティ](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|デバッガーに対してこのビルダーを一意に識別するために使用できるオブジェクトを取得します。|
+|[m_builder フィールド](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|この非ジェネリックインスタンスがデリゲートするジェネリックビルダーオブジェクトを表します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [NET フレームワークの並列拡張内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework の並列拡張の内部構造](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

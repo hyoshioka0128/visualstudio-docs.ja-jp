@@ -1,5 +1,5 @@
 ---
-title: Iデバッグプログラム3::スレッドを実行する |マイクロソフトドキュメント
+title: 'IDebugProgram3:: ExecuteOnThread |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722663"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-デバッガ プログラムを実行します。 プログラムの実行時に、ユーザーが表示しているスレッドに関する情報をデバッガーに提供するために、スレッドが返されます。
+デバッガープログラムを実行します。 スレッドは、プログラムの実行時にユーザーが表示しているスレッドについてデバッガー情報を提供するために返されます。
 
 ## <a name="syntax"></a>構文
 
@@ -38,21 +38,21 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>パラメーター
 `pThread`\
-[in]オブジェクト[。](../../../extensibility/debugger/reference/idebugthread2.md)
+から [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) オブジェクトです。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- デバッガーが停止した後に実行を再開する方法は 3 つあります。
+## <a name="remarks"></a>注釈
+ デバッガーが停止した後に実行を再開するには、次の3つの方法があります。
 
-- 実行: 前のステップをキャンセルし、次のブレークポイントまで実行します。
+- Execute: 前の手順をキャンセルし、次のブレークポイントまで実行します。
 
-- ステップ: 古いステップをキャンセルし、新しいステップが完了するまで実行します。
+- ステップ: 前の手順をキャンセルし、新しい手順が完了するまで実行します。
 
-- 続行: 再度実行し、古いステップをアクティブのままにします。
+- 続行: をもう一度実行し、古いステップをアクティブのままにします。
 
-  渡される`ExecuteOnThread`スレッドは、どのステップをキャンセルするかを決定する際に役立ちます。 スレッドがわからない場合は、実行するとすべてのステップがキャンセルされます。 スレッドの知識がある場合、アクティブなスレッドのステップをキャンセルするだけで済みます。
+  に渡されるスレッド `ExecuteOnThread` は、キャンセルするステップを決定するときに役立ちます。 スレッドがわからない場合は、execute を実行すると、すべてのステップが取り消されます。 スレッドに関する知識があれば、アクティブスレッドでの手順をキャンセルするだけでよいのです。
 
 ## <a name="see-also"></a>関連項目
 - [実行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[検索/コマンド] ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7c5f9c19573a04b1d9a8d7b8c6e9450aef9bc44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645729"
 ---
 # <a name="findcommand-box"></a>[検索/コマンド] ボックス
@@ -29,10 +29,10 @@ ms.locfileid: "72645729"
 
  **[検索]** ボックスでは、最近入力した 20 個のアイテムが記憶され、ドロップダウン リストに表示されます。 方向キーを選択すると、一覧を参照できます。
 
- ![[&#47;検索] コマンドボックス](../ide/media/findcommandbox.png "|::ref1::|")[検索/コマンド] ボックス
+ ![&#47;コマンドボックスの検索](../ide/media/findcommandbox.png "FindCommandBox") [検索/コマンド] ボックス
 
 ## <a name="searching-for-text"></a>テキストの検索
- 既定では、 **[検索]** ボックスにテキストを指定して Enter キーを押すと、Visual Studio によって、 **[フォルダーを指定して検索]** ダイアログ ボックスで指定したオプションが使用され、現在のドキュメント ウィンドウまたはツール ウィンドウで検索されます。 詳細については、「 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)」を参照してください。
+ 既定では、**[検索]** ボックスにテキストを指定して Enter キーを押すと、Visual Studio によって、**[フォルダーを指定して検索]** ダイアログ ボックスで指定したオプションが使用され、現在のドキュメント ウィンドウまたはツール ウィンドウで検索されます。 詳細については、「 [テキストの検索と置換](../ide/finding-and-replacing-text.md)」を参照してください。
 
 ## <a name="entering-commands"></a>コマンドの入力
  **[検索]** ボックスを使用して、文字列の検索ではなく、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の単一のコマンドまたはエイリアスを実行するには、先頭に不等号 (&gt;) を付けて [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コマンドを入力します。 次に例を示します。
@@ -41,10 +41,10 @@ ms.locfileid: "72645729"
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
- または、コマンド ウィンドウを使って、単一または複数のコマンドを入力して実行することもできます。 コマンドまたはエイリアスには、単独で入力して実行できるものと、構文に引数の指定が必要なものがあります。 引数を持つコマンドの一覧については、「[Visual Studio コマンド](../ide/reference/visual-studio-commands.md)」をご覧ください。
+ または、コマンド ウィンドウを使って、単一または複数のコマンドを入力して実行することもできます。 コマンドまたはエイリアスには、単独で入力して実行できるものと、構文に引数の指定が必要なものがあります。 引数を持つコマンドの一覧については、「 [Visual Studio コマンド](../ide/reference/visual-studio-commands.md)」を参照してください。
 
 ## <a name="escape-characters"></a>エスケープ文字
- コマンド ラインにカレット (^) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 たとえば、オブジェクトに適用された
+ コマンド ラインにカレット (^) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 たとえば、次のように入力します。
 
 ```
 >Edit.Find ^^t /regex
@@ -52,5 +52,5 @@ ms.locfileid: "72645729"
 
  カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コマンドウィンドウ](../ide/reference/command-window.md)[テキストの検索と置換](../ide/finding-and-replacing-text.md)

@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387201"
 ---
 # <a name="debug-64-bit-applications"></a>64 ビット アプリケーションをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックの最新バージョンについては、「 [64 ビットアプリケーションのデバッグ](/visualstudio/debugger/debug-64-bit-applications)」を参照してください。  
+このトピックの最新バージョンについては、「 [64 ビットアプリケーションのデバッグ](/visualstudio/debugger/debug-64-bit-applications) 」を参照してください。  
   
 ローカル コンピューターまたはリモート コンピューターで実行されている 64 ビット アプリケーションをデバッグできます。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "86387201"
   
 1. C# コンソール アプリケーションなど、Visual Studio ソリューションを作成します。  
   
-2. 構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、[プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)  
+2. 構成マネージャーを使用して、構成を 64 ビットに設定します。 詳細については、「[方法:プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)  
   
 3. この時点で、64 ビット バージョンのリモート デバッガー (msvsmon.exe) が起動します。 64 ビット構成のソリューションが開いている限り、これが実行されます。  
   

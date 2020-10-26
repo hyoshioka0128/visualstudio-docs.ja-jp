@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546916"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>依存関係図へのカスタム プロパティの追加
 
-依存関係図の拡張コードを記述する場合は、任意の要素を持つ値を依存関係図に格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを [**プロパティ**] ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
+依存関係図の拡張コードを記述する場合は、任意の要素を持つ値を依存関係図に格納できます。 値は、図が保存され、再び開かれたときに保持されます。 また、これらのプロパティを [ **プロパティ** ] ウィンドウに表示して、ユーザーが表示および編集できるようにすることもできます。 たとえば、ユーザーが各レイヤーに正規表現を指定できるようにすることや、各レイヤーのクラスの名前がユーザーが指定したパターンに準拠していることを確認するための検証コードをユーザーが記述できるようにすることができます。
 
 ## <a name="non-visible-properties"></a>非表示のプロパティ
 
@@ -31,14 +31,14 @@ ms.locfileid: "85546916"
 > [!IMPORTANT]
 > プロパティを表示するには、レイヤーのプロパティを表示する各コンピューターで、次の変更を行います。
 >
-> 1. "**管理者として実行**" を使用してメモ帳を実行します。 *%ProgramFiles%\Microsoft Visual Studio [バージョン] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*を開きます。
+> 1. " **管理者として実行**" を使用してメモ帳を実行します。 *%ProgramFiles%\Microsoft Visual Studio [バージョン] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*を開きます。
 > 2. **Content**要素内で、次を追加します。
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio アプリケーションの [スタート] メニューの [ **Visual Studio Tools** ] セクションで、**開発者コマンドプロンプト**を開きます。 次を入力します。
+> 3. Visual Studio アプリケーションの [スタート] メニューの [ **Visual Studio Tools** ] セクションで、 **開発者コマンドプロンプト**を開きます。 次を入力します。
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -47,7 +47,7 @@ ms.locfileid: "85546916"
 
 **コードが VSIX プロジェクトに含まれていることを確認する**
 
-プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部である場合は、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、「[依存関係図へのコマンドおよびジェスチャの追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md)」または「[依存関係図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
+プロパティがコマンド、ジェスチャ、または検証プロジェクトの一部である場合は、何も追加する必要はありません。 カスタム プロパティのコードは、MEF コンポーネントとして定義された Visual Studio 機能拡張プロジェクトで定義する必要があります。 詳細については、「 [依存関係図へのコマンドおよびジェスチャの追加](../modeling/add-commands-and-gestures-to-layer-diagrams.md) 」または「 [依存関係図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
 **カスタム プロパティを定義する**
 
@@ -63,9 +63,9 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 [Ilayerelement](/previous-versions/ff644511(v=vs.140))またはその派生クラスには、次のようなプロパティを定義できます。
 
-- `ILayerModel`-モデル
+- `ILayerModel` -モデル
 
-- `ILayer`-各層
+- `ILayer` -各層
 
 - `ILayerDependencyLink` - レイヤー間のリンク
 

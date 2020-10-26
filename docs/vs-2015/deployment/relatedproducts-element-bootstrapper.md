@@ -1,5 +1,5 @@
 ---
-title: '&lt;RelatedProducts&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;"関連性のある製品" &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -23,18 +23,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202541"
 ---
-# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;要素 (ブートス トラップ)
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;"関連性のある製品" &gt; 要素 (ブートストラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`RelatedProducts`要素は、現在の製品に含まれるかに依存する他の製品を定義します。  
+要素は、 `RelatedProducts` または現在の製品に含まれている他の製品を定義します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <RelatedProducts>  
@@ -53,31 +53,31 @@ ms.locfileid: "68202541"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
- `RelatedProducts`要素の子である、`Product`要素。 属性ではありません。  
+ 要素は `RelatedProducts` 要素の子です `Product` 。 属性はありません。  
   
-## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct`要素は、現在の製品は、名前付きの製品によって異なり、現在の前に、名前付きの製品をインストールすることを示します。 子である、`RelatedProducts`要素。 A`RelatedProducts`要素が 1 つまたは複数あります`DependsOnProduct`要素。  
+## <a name="dependsonproduct"></a>依存 Sonproduct  
+ 要素は、 `DependsOnProduct` 現在の製品が名前付き製品に依存していること、および指定された製品を現在の製品より前にインストールする必要があることを示します。 これは要素の子です `RelatedProducts` 。 `RelatedProducts`要素には、1つまたは複数の要素を含めることができ `DependsOnProduct` ます。  
   
- `DependsOnProduct` 次の属性があります。  
+ `DependsOnProduct` には次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Code`|指定したとおり、含まれる製品のコードの名前、`ProductCode`の属性、`Product`要素。 詳細については、次を参照してください。 [\<製品 > 要素](../deployment/product-element-bootstrapper.md)します。|  
+|`Code`|要素の属性によって指定された、含まれている製品のコード名 `ProductCode` `Product` 。 詳細については、[\<Product> 要素](../deployment/product-element-bootstrapper.md)に関するページを参照してください。|  
   
-## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts`要素は、0 個以上を定義します。`DependsOnProduct`要素、属性を持っていません。 少なくとも 1 つ`DependsOnProduct`このセットでは、現在の製品する前にインストールする必要があります。 A `RelatedProducts` 0 個以上の要素を持つことができます`EitherProducts`要素。  
+## <a name="eitherproducts"></a>製品  
+ `EitherProducts`要素は0個以上 `DependsOnProduct` の要素を定義し、属性はありません。 `DependsOnProduct`このセット内の少なくとも1つは、現在の製品の前にインストールする必要があります。 要素には、 `RelatedProducts` 0 個以上の要素を含めることができ `EitherProducts` ます。  
   
 ## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct`要素は、製品は現在のインストールに含まれているし、個別のインストールが必要としないことを示します。 子である、`RelatedProducts`要素。 A`RelatedProducts`要素が 1 つまたは複数あります`IncludesProduct`要素。  
+ 要素は、 `IncludesProduct` 製品が現在のインストールに含まれており、個別にインストールする必要がないことを示します。 これは要素の子です `RelatedProducts` 。 `RelatedProducts`要素には、1つまたは複数の要素を含めることができ `IncludesProduct` ます。  
   
- `IncludesProduct` 次の属性があります。  
+ `IncludesProduct` には次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Code`|指定したとおり、含まれる製品のコードの名前、`ProductCode`の属性、`Product`要素。 詳細については、次を参照してください。 [\<製品 > 要素](../deployment/product-element-bootstrapper.md)します。|  
+|`Code`|要素の属性によって指定された、含まれている製品のコード名 `ProductCode` `Product` 。 詳細については、[\<Product> 要素](../deployment/product-element-bootstrapper.md)に関するページを参照してください。|  
   
 ## <a name="example"></a>例  
- 次のコード例で、Microsoft インストーラーがインストールされていることを指定します、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ため、個別のインストールは必要ありません。  
+ 次のコード例では、Microsoft インストーラーがと共にインストールされることを指定し [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ます。そのため、別途インストールする必要はありません。  
   
 ```  
 <RelatedProducts>  
@@ -85,5 +85,5 @@ ms.locfileid: "68202541"
 </RelatedProducts>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [\<Product> 要素](../deployment/product-element-bootstrapper.md)

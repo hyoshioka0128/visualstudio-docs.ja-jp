@@ -1,5 +1,5 @@
 ---
-title: ワークスペースと Visual Studio での言語サービス |Microsoft Docs
+title: Visual Studio のワークスペースと言語サービス |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,56 +8,56 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952705"
 ---
 # <a name="workspaces-and-language-services"></a>ワークスペースと言語サービス
 
-言語サービスを提供できます[フォルダーを開く](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)ユーザーと同じ豊富な言語機能は使用するソリューションとプロジェクトを使用する場合。 言語サービスが自己アクティブ化この「ルース ファイル」言語サービスでは、構文の強調表示に制限されますが、ファイルの拡張機能または開いているドキュメントのコンテンツに基づいて。 ソース コードの編集/レビューするときより豊富なエクスペリエンスを提供する追加情報が必要です。 各言語サービスでは、ドキュメントのこの追加のコンテキストのデータの初期化のための独自の API があります。 これは通常、言語サービスと、ビルド システムの両方が密結合プロジェクト システムによって管理されます。
+言語サービスでは、ソリューションやプロジェクトを操作するときに使用するのと同じ豊富な言語機能を、開いている [フォルダー](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) ユーザーに提供できます。 言語サービスは、開いているドキュメントのファイル拡張子またはコンテンツに基づいて自己アクティブ化することができます。ただし、この "緩いファイル" 言語サービスは構文の強調表示に限定されます。 ソースコードを編集または確認するときに、より高度なエクスペリエンスを提供するには、追加情報が必要です。 各言語サービスには、ドキュメントのこの追加コンテキストデータを使用して初期化するための独自の API が用意されています。 通常、これはプロジェクトシステムによって管理され、言語サービスとビルドシステムの両方に密結合されます。
 
 ## <a name="initialization"></a>初期化
 
-[ワークスペース](workspaces.md)、言語サービスが初期化によって、<xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider>専門言語サービスでのみを認識しないビルド作成の拡張ポイント。 これにより、言語サービスの所有者は、数パターンに関係なく、拡張機能が (たとえば MSBuild、メイクファイルなど) のビルド中に、コンパイラを実行するフォルダーとファイル内に存在する 1 つの開いているフォルダーを維持できます。 ディスク上のファイル コンテキストの作成元のファイルを変更して、ファイル コンテキストを更新、更新されたファイルのコンテキストのセット、言語サービス プロバイダーが通知されます。 言語サービスのプロバイダーは、そのモデルを更新できます。
+[ワークスペース](workspaces.md)では、言語サービスは、 <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> その言語サービスのみを専門とし、ビルド作成の何も認識しない拡張ポイントによって初期化されます。 このようにして、言語サービスの所有者は、ビルド中にコンパイラを実行するためのフォルダーとファイル内のパターンの数に関係なく、1つの開いているフォルダーの拡張機能を維持できます (たとえば、MSBuild やメイクファイルなど)。 ファイルコンテキストが作成されたファイルがディスク上で変更され、ファイルコンテキストが更新されると、更新されたファイルコンテキストのセットが言語サービスプロバイダーに通知されます。 言語サービスプロバイダーは、そのモデルを更新できます。
 
-エディターでドキュメントを開くと Visual Studio のみを考慮する言語を一致するファイル コンテキスト プロバイダーを入手できますファイル コンテキストの型を必要とするサービス プロバイダー。 次に渡しますファイル コンテキスト、次の一致するプロバイダーからを使用して、選択した言語サービス プロバイダーに`ILanguageServiceProvider.InitializeAsync`します。 言語サービス プロバイダーが何でファイル コンテキストのデータは、言語サービス プロバイダーの実装の詳細が、想定されるユーザー エクスペリエンスを豊富な言語サービスは、ドキュメントを開いています。
+エディターでドキュメントが開かれている場合、Visual Studio では、一致するファイルコンテキストプロバイダーが見つかるファイルコンテキストの種類を必要とする言語サービスプロバイダーのみが考慮されます。 次に、を使用して、一致するプロバイダーのファイルコンテキストを、選択した言語サービスプロバイダーに渡し `ILanguageServiceProvider.InitializeAsync` ます。 言語サービスプロバイダーは、そのファイルコンテキストデータを使用して、言語サービスプロバイダーの実装の詳細を示しますが、想定されるユーザーエクスペリエンスは、開いているドキュメントに対してより高度な言語サービスになります。
 
-## <a name="using-ilanguageserviceprovider"></a>ILanguageServiceProvider を使用します。
+## <a name="using-ilanguageserviceprovider"></a>ILanguageServiceProvider の使用
 
-言語サービスにはファイルのコンテキストが作成時に通知を`ContextType`のいずれかに一致する、`SupportedContextTypes`言語のサーバーの値が属性をエクスポートします。
+言語サービスは、 `ContextType` `SupportedContextTypes` language server export 属性の値のいずれかに一致するを使用してファイルコンテキストが作成されたときに通知されます。
 
-言語サービスをサポートするには、拡張機能が必要です。
+言語サービスをサポートするには、拡張機能に次のものが必要です。
 
-- 一意`Guid`します。 これは、使用`SupportedContextTypes`属性の引数と、`FileContext`オブジェクト。
-- 言語ファイルのコンテキスト
-  - プロバイダー ファクトリ
-    - `ExportFileContextProviderAttribute` 上記の属性が生成される一意`Guid`で `SupportedContextTypes`
-    - 実装 `IWorkspaceProviderFactory<IFileContextProvider>`
-  - プロバイダーの実装 `IFileContextProvider.GetContextsForFileAsync`
-    - 新しい`FileContext`で、`contextType`として一意に生成されたコンス トラクターの引数 `Guid`
-    - 使用して、`Context`のプロパティ、`FileContext`する追加のデータを提供する、 `ILanguageServiceProvider`
+- 一意の `Guid` 。 これは、 `SupportedContextTypes` 属性引数およびオブジェクトで使用され `FileContext` ます。
+- 言語ファイルコンテキスト
+  - プロバイダーファクトリ
+    - `ExportFileContextProviderAttribute`上の属性は、で一意に生成されます。 `Guid``SupportedContextTypes`
+    - `IWorkspaceProviderFactory<IFileContextProvider>` を実装します
+  - のプロバイダーの実装 `IFileContextProvider.GetContextsForFileAsync`
+    - `FileContext`コンストラクター引数を使用し `contextType` て、一意に生成されたとして新しいを構築します。`Guid`
+    - のプロパティを使用して `Context` `FileContext` 、追加のデータを `ILanguageServiceProvider`
 - 言語サービス
-  - プロバイダー ファクトリ
-    - `ExportLanguageServiceProvider` 上記の属性が生成される一意`Guid`で `SupportedContextTypes`
-    - 実装 `IWorkspaceProviderFactory<ILanguageServiceProvider>`
+  - プロバイダーファクトリ
+    - `ExportLanguageServiceProvider`上の属性は、で一意に生成されます。 `Guid``SupportedContextTypes`
+    - `IWorkspaceProviderFactory<ILanguageServiceProvider>` を実装します
   - プロバイダー
-    - 実装 `ILanguageServiceProvider`
-    - 使用`ILanguageServiceProvider.InitializeAsync`ファイルを開くときに指定された引数の言語サービスを有効にするには
-    - 使用`ILanguageServiceProvider.UninitializeAsync`ファイルが閉じられたときに指定された引数の言語サービスを無効にするには
+    - `ILanguageServiceProvider` を実装します
+    - `ILanguageServiceProvider.InitializeAsync`ファイルを開いたときに、指定された引数の言語サービスを有効にするために使用します
+    - `ILanguageServiceProvider.UninitializeAsync`ファイルが閉じられたときに、指定された引数の言語サービスを無効にするには、を使用します。
 
 >[!WARNING]
->`ILanguageServiceProvider`メソッドは、メイン スレッドで、ワークスペースによって呼び出される可能性があります。 UI の遅延の概要を回避するために別のスレッドで作業をスケジュール設定を検討してください。
+>これらのメソッドは、 `ILanguageServiceProvider` メインスレッドのワークスペースによって呼び出されることがあります。 UI の遅延が発生しないように、別のスレッドで作業をスケジュールすることを検討してください。
 
 ## <a name="language-server-protocol"></a>言語サーバー プロトコル
 
-`Microsoft.VisualStudio.Workspace.*` Api が開いているフォルダーに、言語サービスを有効にする唯一の方法はありません。 別のオプションでは、言語のサーバーを使用します。 詳細については、「、[言語サーバー プロトコル](language-server-protocol.md)します。
+Api は、 `Microsoft.VisualStudio.Workspace.*` 開いているフォルダーで言語サービスを有効にする唯一の方法ではありません。 別の方法として、言語サーバーを使用することもできます。 詳細については、 [言語サーバープロトコル](language-server-protocol.md)に関する説明を参照してください。
 
-## <a name="related-interfaces"></a>関連するインターフェイス
+## <a name="related-interfaces"></a>関連インターフェイス
 
-- <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> 一致するファイルの種類のファイルを開いたり、編集の終了時に呼び出されます。
+- <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> は、ファイルの種類が一致するファイルが開かれているか、編集のために閉じられたときに呼び出されます。
 
 ## <a name="next-steps"></a>次の手順
 
-* [ワークスペース ビルド](workspace-build.md)-フォルダーを開くサポートは、MSBuild とメイクファイルなどのシステムを構築します。
+* [ワークスペースビルド](workspace-build.md) -オープンフォルダーは、MSBuild やメイクファイルなどのビルドシステムをサポートします。

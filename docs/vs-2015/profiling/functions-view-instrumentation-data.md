@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580226"
 ---
 # <a name="functions-view---instrumentation-data"></a>関数ビュー - インストルメンテーション データ
@@ -84,8 +84,8 @@ ms.locfileid: "62580226"
 |**最大アプリケーション排他時間 (関数のみ)**|この関数の呼び出しの最大アプリケーション排他時間。|  
 |**最小アプリケーション排他時間 (関数のみ)**|この関数の呼び出しの最小アプリケーション排他時間。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
+## <a name="see-also"></a>参照  
+ [方法: レポートビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
  [関数ビュー](../profiling/functions-view-sampling-data.md)   
- [関数ビュー - サンプリング](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+ [関数ビュー-サンプリング](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [関数ビュー-インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

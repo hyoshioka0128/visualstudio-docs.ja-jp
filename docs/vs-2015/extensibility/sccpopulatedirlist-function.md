@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200029"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この関数は、ディレクトリと (必要に応じて) ファイルがソース コントロールが確認するディレクトリの一覧に格納されているかを判断します。  
+この関数は、確認するディレクトリのリストを指定して、ソース管理に格納するディレクトリと (必要に応じて) ファイルを決定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,35 +39,35 @@ SCCRTN SccPopulateDirList(
   
 #### <a name="parameters"></a>パラメーター  
  pContext  
- [in]ソース管理プラグインのコンテキストのポインター。  
+ からソース管理プラグインのコンテキストポインター。  
   
  nDirs  
- [in]内のディレクトリ パスの数、`lpDirPaths`配列。  
+ から配列内のディレクトリパスの数 `lpDirPaths` 。  
   
  lpDirPaths  
- [in]確認へのディレクトリ パスの配列。  
+ から確認するディレクトリパスの配列。  
   
  pfnPopulate  
- [in]各ディレクトリのパスと (必要に応じて) ファイル名にするために呼び出すコールバック関数`lpDirPaths`(を参照してください[POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)詳細については)。  
+ からディレクトリパスと (必要に応じて) のファイル名を呼び出すためのコールバック関数 `lpDirPaths` (詳細については、「 [Popdirlistfunc](../extensibility/popdirlistfunc.md) 」を参照してください)。  
   
  pvCallerData  
- [in]コールバック関数に渡される値は変更されません。  
+ から変更せずにコールバック関数に渡される値。  
   
- 方法は限られて  
- [in]ディレクトリの処理方法を制御する値の組み合わせ (の「PopulateDirList フラグ」セクションを参照して[特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)使用可能な値)。  
+ 限ら  
+ からディレクトリの処理方法を制御する値の組み合わせ (有効な値については、 [特定のコマンドで使用される Bitflags](../extensibility/bitflags-used-by-specific-commands.md) の "PopulateDirList flags" セクションを参照してください)。  
   
 ## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
-|SCC_OK|操作が正常に完了しました。|  
+|SCC_OK|操作は正常に完了しました。|  
 |SCC_E_UNKNOWNERROR|エラーが発生しました。|  
   
-## <a name="remarks"></a>Remarks  
- これらのディレクトリとのみ (必要に応じて) 実際には、ソース管理リポジトリ内にあるファイル名は、コールバック関数に渡されます。  
+## <a name="remarks"></a>注釈  
+ コールバック関数に渡されるのは、ソース管理リポジトリ内のディレクトリと (必要に応じて) ファイル名だけです。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   
  [特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   

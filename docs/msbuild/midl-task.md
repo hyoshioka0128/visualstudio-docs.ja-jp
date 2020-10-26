@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633474"
 ---
 # <a name="midl-task"></a>MIDL タスク
@@ -53,7 +53,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      省略可能な **String** 型のパラメーターです。
 
-     コマンド ライン オプションのリスト。 例: /\<option1> /\<option2> /\<option#> 他の MIDL タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。
+     コマンド ライン オプションのリスト。 たとえば、/\<option1> /\<option2> /\<option#> のようになります。 他の MIDL タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。
 
      詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) を参照してください。
 
@@ -309,7 +309,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
     |**4**|**/Zp4**|
     |**8**|**/Zp8**|
 
-     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/Zp** オプションを参照してください。 **/Zp** オプションは、 **/pack** オプションおよび以前の **/align** オプションに相当します。
+     詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/Zp** オプションを参照してください。 **/Zp** オプションは、**/pack** オプションおよび以前の **/align** オプションに相当します。
 
 - **SuppressCompilerWarnings**
 
@@ -335,7 +335,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |値|コマンド ライン オプション|
+    |値|コマンドライン オプション|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
@@ -358,7 +358,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |値|コマンド ライン オプション|
+    |値|コマンドライン オプション|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -407,7 +407,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    |値|コマンド ライン オプション|
+    |値|コマンドライン オプション|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|
@@ -417,6 +417,6 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/W** オプションを参照してください。 この表にある **WarnAsError** パラメーターも参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

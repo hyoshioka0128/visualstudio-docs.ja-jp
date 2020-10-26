@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bd60c9d7b30d4620630d1f6752bd4c7e8bf1182
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016067"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>方法: SharePoint プロジェクトの配置時または取り消し時にコードを実行する
@@ -31,13 +32,13 @@ ms.locfileid: "86016067"
 
    - [方法: SharePoint プロジェクト項目の種類を定義する](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2. 拡張機能で、オブジェクトにアクセスし <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> ます。 詳細については、「[方法: SharePoint プロジェクトサービスを取得する](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)」を参照してください。
+2. 拡張機能で、オブジェクトにアクセスし <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> ます。 詳細については、「 [方法: SharePoint プロジェクトサービスを取得する](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)」を参照してください。
 
 3. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> プロジェクトサービスのイベントとイベントを処理します。
 
 4. イベントハンドラーでは、パラメーターを使用し <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> て、現在の配置セッションに関する情報を取得します。 たとえば、現在の配置セッションに含まれているプロジェクトと、そのプロジェクトが配置または取り消しされているかどうかを確認できます。
 
-   次のコード例は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> プロジェクトの拡張機能でイベントとイベントを処理する方法を示して <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> います。 この拡張機能は、SharePoint プロジェクトの配置の開始時と完了時に、追加のメッセージを [**出力**] ウィンドウに書き込みます。
+   次のコード例は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> プロジェクトの拡張機能でイベントとイベントを処理する方法を示して <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> います。 この拡張機能は、SharePoint プロジェクトの配置の開始時と完了時に、追加のメッセージを [ **出力** ] ウィンドウに書き込みます。
 
    [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
    [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]

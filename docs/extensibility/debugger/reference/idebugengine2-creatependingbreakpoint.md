@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::保留中のブレークポイントを作成する |マイクロソフトドキュメント
+title: 'IDebugEngine2:: CreatePendingBreakpoint ポイント |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731120"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
-デバッグ エンジン (DE) で保留中のブレークポイントを作成します。
+デバッグエンジン (DE) に保留中のブレークポイントを作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,23 +43,23 @@ int CreatePendingBreakpoint(
 
 ## <a name="parameters"></a>パラメーター
 `pBPRequest`\
-[in]作成する保留中のブレークポイントを記述する[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)オブジェクト。
+から作成する保留中のブレークポイントを記述する [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) オブジェクト。
 
 `ppPendingBP`\
-[アウト]保留中の[ブレークポイント](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)を表すオブジェクトを返します。
+入出力保留中のブレークポイントを表す [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 通常、`E_FAIL`パラメータが`pBPRequest`無効か不完全な場合、パラメータが DE でサポート`pBPRequest`されている言語と一致しない場合に返されます。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 パラメーター `E_FAIL` `pBPRequest` `pBPRequest` が無効または不完全である場合、パラメーターがの DE でサポートされているどの言語とも一致しない場合、は通常、を返します。
 
-## <a name="remarks"></a>Remarks
-保留中のブレークポイントは、基本的には、ブレークポイントをコードにバインドするために必要なすべての情報のコレクションです。 このメソッドから返される保留中のブレークポイントは[、Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)メソッドが呼び出されるまでコードにバインドされません。
+## <a name="remarks"></a>解説
+保留中のブレークポイントは、基本的に、ブレークポイントをコードにバインドするために必要なすべての情報のコレクションです。 このメソッドから返された保留中のブレークポイントは、 [バインド](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) メソッドが呼び出されるまでコードにバインドされません。
 
-ユーザーが設定する保留中の各ブレークポイントについて、セッション デバッグ マネージャー (SDM) は、アタッチされた各 DE でこのメソッドを呼び出します。 DE は、その DE で実行されているプログラムに対してブレークポイントが有効であることを確認する必要があります。
+ユーザーが設定した保留中のブレークポイントごとに、セッションデバッグマネージャー (SDM) は、アタッチされた各 DE 内でこのメソッドを呼び出します。 その DE で実行されているプログラムに対してブレークポイントが有効であることを確認するのは、DE です。
 
-ユーザーがコード行にブレークポイントを設定すると、DE は、このコードに対応するドキュメント内の最も近い行にブレークポイントを自由にバインドできます。 これにより、ユーザーは複数行ステートメントの最初の行にブレークポイントを設定できますが、最後の行 (すべてのコードがデバッグ情報に属性付けされている) にバインドできます。
+ユーザーがコード行にブレークポイントを設定すると、このコードに対応するドキュメント内の最も近い行にブレークポイントが自由にバインドされます。 これにより、ユーザーは、複数行のステートメントの最初の行にブレークポイントを設定できますが、最後の行にバインドします (すべてのコードがデバッグ情報に含まれます)。
 
 ## <a name="example"></a>例
-次の例は、単純な`CProgram`オブジェクトに対してこのメソッドを実装する方法を示しています。 DE の実装は`IDebugEngine2::CreatePendingBreakpoint`、各プログラムのメソッドのこの実装にすべての呼び出しを転送できます。
+次の例は、単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 の DE 実装では、 `IDebugEngine2::CreatePendingBreakpoint` 各プログラムでこのメソッドの実装に対するすべての呼び出しを転送できます。
 
 ```
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)

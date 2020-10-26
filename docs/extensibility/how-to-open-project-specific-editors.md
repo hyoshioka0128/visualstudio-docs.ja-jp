@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905804"
 ---
 # <a name="how-to-open-project-specific-editors"></a>方法: プロジェクト固有のエディターを開く
 プロジェクトによって開かれている項目ファイルが、そのプロジェクトの特定のエディターに本質的にバインドされている場合、プロジェクトはプロジェクト固有のエディターを使用してファイルを開く必要があります。 エディターを選択するための IDE のメカニズムにファイルを委任することはできません。 たとえば、標準のビットマップエディターを使用する代わりに、このプロジェクト固有のエディターオプションを使用して、プロジェクトに固有のファイル内の情報を認識する特定のビットマップエディターを指定できます。
 
- IDE は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 特定のプロジェクトでファイルを開く必要があると判断したときに、メソッドを呼び出します。 詳細については、「[[ファイルを開く] コマンドを使用したファイルの表示](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)」を参照してください。 プロジェクト固有のエディターを使用して `OpenItem` ファイルを開くためのメソッドを実装するには、次のガイドラインに従います。
+ IDE は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> 特定のプロジェクトでファイルを開く必要があると判断したときに、メソッドを呼び出します。 詳細については、「[ [ファイルを開く] コマンドを使用したファイルの表示](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)」を参照してください。 プロジェクト固有のエディターを使用して `OpenItem` ファイルを開くためのメソッドを実装するには、次のガイドラインに従います。
 
 ## <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>プロジェクト固有のエディターを使用して OpenItem メソッドを実装するには
 
 1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>メソッド ( `RDT_EditLock` ) を呼び出して、ファイル (ドキュメントデータオブジェクト) が既に開いているかどうかを確認します。
 
     > [!NOTE]
-    > ドキュメントデータとドキュメントビューオブジェクトの詳細については、「[カスタムエディターのドキュメントデータとドキュメントビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)」を参照してください。
+    > ドキュメントデータとドキュメントビューオブジェクトの詳細については、「 [カスタムエディターのドキュメントデータとドキュメントビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)」を参照してください。
 
 2. ファイルが既に開いている場合は、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> パラメーターに IDO_ActivateIfOpen の値を指定して、ファイルを resurface し `grfIDO` ます。
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Choose 要素 (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187008"
 ---
 # <a name="choose-element-msbuild"></a>Choose 要素 (MSBuild)
@@ -59,19 +59,19 @@ ms.locfileid: "68187008"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|省略可能な要素です。<br /><br /> すべての `When` 要素の条件が `false` と評価された場合に評価される `PropertyGroup` コードと `ItemGroup` 要素のブロックを指定します。 `Choose` 要素内で、最後の要素として、0 個または 1 個の `Otherwise` 要素を指定できます。|  
+|[それ以外](../msbuild/otherwise-element-msbuild.md)|省略可能な要素です。<br /><br /> すべての `When` 要素の条件が `false` と評価された場合に評価される `PropertyGroup` コードと `ItemGroup` 要素のブロックを指定します。 `Choose` 要素内で、最後の要素として、0 個または 1 個の `Otherwise` 要素を指定できます。|  
 |[When](../msbuild/when-element-msbuild.md)|必須の要素です。<br /><br /> `Choose` 要素で選ぶ対象のコード ブロックを指定します。 `Choose` 要素内で 1 個以上の `When` 要素を指定できます。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|すべての `When` 要素の条件が `false` と評価された場合に実行するコードのブロックを指定します。|  
+|[それ以外](../msbuild/otherwise-element-msbuild.md)|すべての `When` 要素の条件が `false` と評価された場合に実行するコードのブロックを指定します。|  
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
 |[When](../msbuild/when-element-msbuild.md)|`Choose` 要素で選ぶ対象のコード ブロックを指定します。|  
   
-## <a name="remarks"></a>解説  
- `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「[条件構造](../msbuild/msbuild-conditional-constructs.md)」を参照してください。  
+## <a name="remarks"></a>注釈  
+ `Choose`、`When`、`Otherwise` 要素を組み合わせて使って、実行される可能性のある複数のコード セクションから 1 つを選びます。 詳細については、「 [条件付き構成体](../msbuild/msbuild-conditional-constructs.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のプロジェクトでは、`Choose` 要素を使って、設定する `When` 要素のプロパティ値のセットを選んでいます。 両方の `When` 要素の `Condition` 属性が `false` と評価された場合、`Otherwise` 要素のプロパティ値が設定されます。  
@@ -121,6 +121,6 @@ ms.locfileid: "68187008"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [条件構造](../msbuild/msbuild-conditional-constructs.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: プロジェクトのタイプの基本情報 |Microsoft Docs
+title: プロジェクトの種類の要点 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e45d5f252deaf1788ae5093048ef8afb900fbe4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704072"
 ---
 # <a name="project-type-essentials"></a>プロジェクト タイプの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] などの言語のいくつかのプロジェクトの種類が含まれている[!INCLUDE[csprcs](../../includes/csprcs-md.md)]または[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] また、独自のプロジェクトの種類を作成してできます。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] には、やなどの言語用のプロジェクトの種類がいくつか含まれてい [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、独自のプロジェクトの種類を作成することもできます。  
   
- カスタム コマンド、エディター、またはツール ウィンドウを追加する場合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、新しいプロジェクトの種類を作成することがなく行うことができます。 詳細については、次のトピックを参照してください。  
+ カスタムコマンド、エディター、またはツールウィンドウをに追加するだけの場合は [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、新しいプロジェクトの種類を作成しなくてもかまいません。 詳細については、次のトピックを参照してください。  
   
 - [コマンド、メニュー、およびツール バー](../../extensibility/internals/commands-menus-and-toolbars.md)  
   
@@ -30,13 +30,13 @@ ms.locfileid: "65704072"
   
 - [ツール ウィンドウの拡張とカスタマイズ](../../extensibility/extending-and-customizing-tool-windows.md)  
   
-  同様に、指定されたの動作をカスタマイズする[!INCLUDE[csprcs](../../includes/csprcs-md.md)]と[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]プロジェクトの種類、行うことができますプロジェクト サブタイプを使用して。 詳細については、次を参照してください。[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)します。  
+  同様に、指定されたおよびプロジェクトの種類の動作をカスタマイズする場合は、 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] プロジェクトのサブタイプを使用します。 詳細については、「 [プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。  
   
-  新しいプロジェクトの種類以外の言語に基づくプロジェクトを作成する必要があります[!INCLUDE[csprcs](../../includes/csprcs-md.md)]と[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]次の 1 つ以上をサポートする場合。  
+  [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 次の1つまたは複数をサポートする場合は、以外の言語に基づくプロジェクトの新しいプロジェクトの種類を作成する必要があります。  
   
-- ビルド  
+- Build  
   
-- 配置  
+- デプロイ  
   
 - 複数の構成  
   
@@ -44,27 +44,27 @@ ms.locfileid: "65704072"
   
 - デバッグ  
   
-- ソリューション エクスプ ローラーでプロジェクト項目  
+- ソリューションエクスプローラー内のプロジェクト項目  
   
-- **プロジェクトを開く**または**新しいプロジェクト** ダイアログ ボックス  
+- [ **プロジェクトを開く** ] または [ **新しいプロジェクト** ] ダイアログボックス  
   
 - プロジェクトの入れ子  
   
-- プロジェクトの種類の機能に関する詳細については、次を参照してください。  
+- プロジェクトの種類の機能の詳細については、以下を参照してください。  
   
-- プロジェクトの種類は、一連のインターフェイスを実装する vspackage オブジェクト[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]が必要です。 を使用する c# プロジェクトの種類を開発する場合、Managed Package Framework プロジェクトのクラスはするのに必要なインターフェイスを実装し、その実装を継承することができます。 詳細については、次を参照してください。 [Managed Package Framework を使用して、プロジェクトの種類 (c#) を実装する](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)します。  
+- プロジェクトの種類は、に必要な一連のインターフェイスを実装する VSPackage 内のオブジェクトです [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 C# を使用してプロジェクトの種類を開発している場合は、マネージパッケージフレームワークプロジェクトクラスによって必要なインターフェイスが実装され、その実装を継承できるようになります。 詳細については、「 [マネージパッケージフレームワークを使用したプロジェクトの種類の実装 (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)」を参照してください。  
   
-- C++ の開発者にとっては、HierUtil ライブラリのクラスは、同様の方法で動作します。 詳細については、次を参照してください。[ビルド内にありません。HierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装する](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)します。  
+- C++ 開発者にとって、HierUtil ライブラリのクラスは同様の方法で動作します。 詳細については、「 [ビルド内にありません: HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)」を参照してください。  
   
-- プロジェクトの種類には、.exe または .dll アセンブリにビルドされる一般的なソース コード ファイル以外のデータをサポートできます。 たとえば、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]データベース プロジェクトがディスクに格納されているスクリプトとクエリのファイルへの参照を含めるし、コマンドを追加**ソリューション エクスプ ローラー**を実行するスクリプトと、データベースが、プロジェクトに対するクエリ実行をサポートしていません動作を構築します。 詳細については、次を参照してください。[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
+- プロジェクトの種類では、.exe または .dll アセンブリに組み込まれている一般的なソースコードファイル以外のデータをサポートできます。 たとえば、データベースプロジェクトには、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ディスクに格納されているスクリプトおよびクエリファイルへの参照が含まれています。また、データベースに対してスクリプトとクエリを実行するために **ソリューションエクスプローラー** にコマンドを追加していますが、プロジェクトでビルド動作がサポートされていません。 詳細については、「 [プロジェクト項目を開いて保存](../../extensibility/internals/opening-and-saving-project-items.md)する」を参照してください。  
   
-- プロジェクトの種類をすべてのファイルを使用する必要はありません。 たとえば、プロジェクトの種類では、データベースにそのすべてのデータを格納できます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクトの種類のプロジェクトとプロジェクト アイテムのデータを保存する方法を完全に制御を提供します。 詳細については、次を参照してください。[プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)します。  
+- プロジェクトの種類では、ファイルを使用する必要はありません。 たとえば、プロジェクトの種類では、すべてのデータをデータベースに格納できます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクトの種類により、プロジェクトおよびプロジェクト項目のデータを永続化する方法を完全に制御できます。 詳細については、「 [プロジェクトの種類の設計](../../extensibility/internals/project-type-design-decisions.md)上の決定」を参照してください。  
   
-- プロジェクトの種類を指定する必要があります、*プロジェクト ファクトリ*、プロジェクトのインスタンスを作成するオブジェクトがあるたびに入力[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]開くか、そのプロジェクトの種類に基づくプロジェクトを作成するように指示されます。 詳細については、次を参照してください。[を作成するプロジェクト インスタンスで使用してプロジェクト ファクトリ](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)します。  
+- プロジェクトの種類はプロジェクト *ファクトリ*を提供する必要があります。これは、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] がプロジェクトの種類に基づいてプロジェクトを開くか作成するように指示されるたびに、プロジェクトの種類のインスタンスを作成するオブジェクトです。 詳細については、「 [プロジェクトファクトリを使用したプロジェクトインスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)」を参照してください。  
   
-- プロジェクトの種類には、プロジェクトとプロジェクト項目のテンプレートを指定する必要があります。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ユーザーが新しいプロジェクトを作成して、新しい項目を既存のプロジェクトに追加するときに、テンプレートを使用します。 詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。  
+- プロジェクトの種類では、プロジェクトおよびプロジェクト項目のテンプレートを指定する必要があります。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、ユーザーが新しいプロジェクトを作成し、既存のプロジェクトに新しい項目を追加するときに、テンプレートが使用されます。 詳細については、「 [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)」を参照してください。  
   
-- プロジェクトの種類には、デバッグやリリースなど、複数の構成をサポートできます。 ユーザーは、指定したプロパティ ページを使用して、プロジェクトのさまざまな構成を変更できます。 詳細については、次を参照してください。[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)します。  
+- プロジェクトの種類では、デバッグやリリースなどの複数の構成をサポートできます。 ユーザーは、指定したプロパティページを使用して、プロジェクトのさまざまな構成を変更できます。 詳細については、「 [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロジェクト タイプの配置](../../extensibility/internals/deploying-project-types.md)

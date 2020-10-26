@@ -1,5 +1,5 @@
 ---
-title: プログラム2::ゲットエンクアップデート |マイクロソフトドキュメント
+title: 'IDebugProgram2:: GetENCUpdate |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722842"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-このメソッドは、このプログラムのエディット コンティニュ (ENC) 更新プログラムを取得します。 カスタム デバッグ エンジンは`E_NOTIMPL`常に を返します。
+このメソッドは、このプログラムのエディットコンティニュ (ENC) 更新プログラムを取得します。 カスタムデバッグエンジンは常にを返し `E_NOTIMPL` ます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetENCUpdate(
 
 ## <a name="parameters"></a>パラメーター
 `ppUpdate`\
-[アウト]このプログラムの更新に使用できる内部インターフェイスを返します。
+入出力このプログラムを更新するために使用できる内部インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 > [!NOTE]
-> カスタム デバッグ エンジンは常`E_NOTIMPL`に を返す必要があります。
+> カスタムデバッグエンジンは常にを返す必要があり `E_NOTIMPL` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

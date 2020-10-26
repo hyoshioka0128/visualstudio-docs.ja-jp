@@ -1,5 +1,5 @@
 ---
-title: カスタム ユーザー インターフェイス (ソース管理 VSPackage) |Microsoft Docs
+title: カスタムユーザーインターフェイス (ソース管理 VSPackage) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,52 +12,52 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f03713213ec2e54ed8d82d7528dae12cefab7ebc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154974"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>カスタム ユーザー インターフェイス (ソース管理 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-VSPackage は、Visual Studio Command Table (.vsct) ファイルをそのメニュー項目と既定の状態を宣言します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage が読み込まれるまで、統合開発環境 (IDE) が既定の状態でメニュー項目を表示します。 その後、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>を有効にするか、メニュー項目を無効にするメソッドが呼び出されます。  
+VSPackage は、Visual Studio のコマンドテーブル (vsct) ファイルを使用して、そのメニュー項目とその既定の状態を宣言します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE: integrated development environment) では、VSPackage が読み込まれるまで、既定の状態でメニュー項目が表示されます。 その後、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドを呼び出して、メニュー項目を有効または無効にします。  
   
- VSPackage では、コマンドのユーザー インターフェイス (UI) のコンテキストによって自動的に読み込むことができますので、VSPackage がレジストリ キーを設定できます、UI の特定のコンテキストに切り替えるだけではなく、オンデマンドで VSPackage を読み込む必要がありますが、通常、ソースを制御します。 AutoLoadPackages のレジストリ キーの詳細については、次を参照してください。[管理 Vspackage](../../extensibility/managing-vspackages.md)します。  
+ VSPackage は、コマンドのユーザーインターフェイス (UI) コンテキストに応じて VSPackage を自動的に読み込むようにレジストリキーを設定できます。ただし、通常は、ソース管理 VSPackage は特定の UI コンテキストに切り替えるだけではなく、必要に応じて読み込む必要があります。 AutoLoadPackages レジストリキーの詳細については、「 [vspackage の管理](../../extensibility/managing-vspackages.md)」を参照してください。  
   
-## <a name="vspackage-ui"></a>VSPackage の UI  
- ソース管理のパッケージは、VSPackage として実装されから UI を使用しない[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 各ソース管理 VSPackage では、ソース管理 VSPackage に固有のオプションの設定のメニュー項目、メニュー グループ、ツール ウィンドウ、ツールバー、および必要な UI など、独自の UI 要素を指定する必要があります。 これらの UI 要素は、静的または動的に有効にすることができます。 静的な UI 要素は、.vsct ファイルで定義されてし、か、VSPackage が読み込まれるかどうかが表示されます。 UI の動的な要素があります、特定のコマンドの UI コンテキストに応じて表示など<xref:EnvDTE.Constants.vsContextNoSolution>、または呼び出しの結果として、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッド。 動的な UI 要素の可視性は、Vspackage の遅延読み込みのための戦略に準拠します。  
+## <a name="vspackage-ui"></a>VSPackage UI  
+ ソース管理パッケージは VSPackage として実装され、の UI は使用しません [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 各ソース管理 VSPackage は、メニュー項目、メニューグループ、ツールウィンドウ、ツールバー、ソース管理 VSPackage に固有のオプションを設定するために必要な UI など、独自の UI 要素を指定する必要があります。 これらの UI 要素は、静的または動的に有効にすることができます。 静的 UI 要素は、vsct ファイルで定義され、VSPackage が読み込まれているかどうかにかかわらず表示されます。 動的 UI 要素は、などの特定のコマンド UI コンテキストによって <xref:EnvDTE.Constants.vsContextNoSolution> 、またはメソッドの呼び出しの結果として表示される場合があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ます。 動的 UI 要素の可視性は、Vspackage の遅延読み込みの方法に準拠しています。  
   
-## <a name="ui-constraints-on-source-control-vspackages"></a>ソース管理 Vspackage の UI の制約  
- ソース管理 VSPackage は、それが読み込まれた後、IDE から削除できません、ため、VSPackage が非アクティブな状態を入力できる必要があります。 VSPackage では、active は不要になったという通知を受信すると、VSPackage はその UI を無効にし、外部の IDE の操作を無視します。 VSPackage の実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドは、VSPackage がアクティブでないときにコマンドを隠す必要があります。  
+## <a name="ui-constraints-on-source-control-vspackages"></a>ソース管理 Vspackage の UI 制約  
+ ソース管理 VSPackage は、読み込まれた後に IDE から削除できないため、VSPackage は非アクティブ状態になる必要があります。 VSPackage がアクティブでなくなったという通知を受信すると、VSPackage はその UI を無効にし、外部の IDE との対話を無視します。 VSPackage のメソッドの実装では <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 、VSPackage がアクティブでない場合にコマンドを非表示にする必要があります。  
   
- すべてのソース コントロールを VSPackage に実装する必要があります、`IVsSccProvider`インターフェイス。 インターフェイスでは、2 つのメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>、VSPackage によって実装する必要があります。  
+ すべてのソース管理 VSPackage は、インターフェイスを実装する必要があり `IVsSccProvider` ます。 インターフェイスの2つのメソッドであるとは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> VSPackage によって実装される必要があります。  
   
- ソース管理 VSPackage はによって実装される、さまざまな IDE イベントにサブスクライブしている可能性があります、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>など。 また、VSPackage 可能性がありますが実装レジストリが有効なコールバック インターフェイスなど、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>します。 これらすべて無視するアクティブでないとします。  
+ ソース管理 VSPackage は、、、などによって実装されるさまざまな IDE イベントをサブスクライブしている場合があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> ます。 また、VSPackage は、などのレジストリ対応のコールバックインターフェイスを実装している場合もあり <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> ます。 これらはすべて、非アクティブなときは無視する必要があります。  
   
- 次に、ソース管理 VSPackage のアクティブな状態の影響を受けるインターフェイスを示します。  
+ 次の一覧は、ソース管理 VSPackage のアクティブ状態の影響を受けるインターフェイスを示しています。  
   
-- プロジェクトのドキュメントのイベントを追跡します。  
+- プロジェクトドキュメントイベントを追跡します。  
   
-- ソリューションのイベントです。  
+- ソリューションイベント。  
   
-- ソリューションの永続化のインターフェイス。 アクティブでないと、は、パッケージは .sln および .suo のファイルには記述しないでください。  
+- ソリューション永続化インターフェイス。 非アクティブの場合、パッケージは .sln ファイルと .suo ファイルに書き込むことはできません。  
   
-- エクステンダーのプロパティ。  
+- プロパティエクステンダー。  
   
-  必要な<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>、およびソース管理 VSPackage がアクティブでないときも、ソース管理に関連付けられている省略可能なインターフェイスは呼び出されません。  
+  ソース <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> 管理 VSPackage が非アクティブになっている場合、必須のおよび、およびソース管理に関連付けられているオプションのインターフェイスは呼び出されません。  
   
-  ときに、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE を起動[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]コマンドの UI コンテキストの現在の既定のソース管理 VSPackage の id ID に設定。 これにより、アクティブなソース コントロールが実際には、VSPackage を読み込むことがなく、IDE で表示される VSPackage の静的な UI です。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage を登録するを一時停止[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を通じて、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> VSPackage の呼び出しの前にします。  
+  IDE が [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 起動すると、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンド UI コンテキストが現在の既定のソース管理 VSPackage ID の id に設定されます。 これにより、アクティブなソースコントロール VSPackage の静的 UI が、実際には VSPackage を読み込まずに IDE に表示されます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage の呼び出しを行う前に、を介して VSPackage がに登録されるのを一時停止し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> ます。  
   
-  次の表では、特定の詳細を説明する方法について[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE は、さまざまな UI 項目を非表示にします。  
+  次の表は、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE がさまざまな UI 項目を非表示にする方法についての詳細を示しています。  
   
 |UI 項目|説明|  
 |-------------|-----------------|  
-|メニューとツールバー|ソース管理パッケージは、ソース管理パッケージ ID に最初のメニューとツールバーの表示状態を設定する必要があります、 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) .vsct ファイルのセクション。 これにより、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、VSPackage の読み込みとの実装を呼び出すことがなく、メニュー項目の状態を適切に設定する IDE、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッド。|  
-|ツール ウィンドウ|ソース管理 VSPackage では、非アクティブなが行われると、所有する任意のツール ウィンドウを非表示にします。|  
-|ソース管理 VSPackage に固有のオプション ページ|HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts レジストリ キーには、VSPackage のオプション ページに表示される必要とするコンテキストを設定することができます。 このキーの下のレジストリ エントリは、サービスのソース管理サービス ID (SID) を使用して、1 の DWORD 値を割り当てることによって作成される必要があります。 UI のイベントは、VSPackage に登録されているソース管理のコンテキストで発生するたびにアクティブになっている場合、VSPackage が呼び出されます。|  
+|メニューとツールバー|ソース管理パッケージでは、最初のメニューとツールバーの表示状態を、 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) ファイルの [ソース管理パッケージ ID] に設定する必要があります。 これにより、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage を読み込まずに、メソッドの実装を呼び出さなくても、IDE でメニュー項目の状態を適切に設定でき <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ます。|  
+|ツール ウィンドウ|ソース管理 VSPackage は、非アクティブになったときに所有しているすべてのツールウィンドウを非表示にします。|  
+|ソース管理の VSPackage 固有のオプションページ|レジストリキー HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts を使用すると、オプションページを表示する必要があるコンテキストを VSPackage に設定できます。 このキーの下にあるレジストリエントリを作成するには、ソース管理サービスのサービス ID (SID) を使用して、それに DWORD 値1を割り当てる必要があります。 コンテキストで、ソース管理 VSPackage が登録されているコンテキストで UI イベントが発生すると、アクティブな場合は VSPackage が呼び出されます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>   

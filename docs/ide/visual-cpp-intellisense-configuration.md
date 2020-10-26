@@ -7,12 +7,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77279316"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509888"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -38,7 +38,7 @@ Visual Studio IDE の外部でビルドを実行し、ビルドは成功した�
 
 ![VC++ インクルード ディレクトリ](media/vcpp-intellisense-include-paths.png)
 
-**VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<編集>]** を選択し、 **[マクロ]** ボタンをクリックします。
+**VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<Edit>]** を選択し、 **[マクロ]** ボタンをクリックします。
 
 ### <a name="makefile-projects"></a>メイクファイル プロジェクト
 
@@ -118,7 +118,7 @@ Visual Studio to investigate.
 
 環境変数 TRACEDESIGNTIME を true に設定して、Visual Studio を再起動すると、ビルド エラーの診断に役立つ可能性がある %TEMP% ディレクトリ内のログ ファイルが表示されます。
 
-環境変数 TRACEDESIGNTIME の詳細については、[Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors)と[共通プロジェクト システム](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)に関するページを参照してください。 これらの記事の情報は、C++ プロジェクトに関連します。
+環境変数 TRACEDESIGNTIME の詳細については、[Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md)と[共通プロジェクト システム](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)に関するページを参照してください。 これらの記事の情報は、C++ プロジェクトに関連します。
 
 ## <a name="see-also"></a>参照
 

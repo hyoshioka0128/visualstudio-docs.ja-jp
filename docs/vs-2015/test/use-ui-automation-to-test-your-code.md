@@ -18,10 +18,10 @@ caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e054909bb8f020ed496185f0ba64aafec016358b
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586451"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
@@ -65,7 +65,7 @@ ms.locfileid: "82586451"
 
 - [次の内容](#VerifyCodeUsingCUITWhatsNext)
 
-## <a name="creating-coded-ui-tests"></a><a name="VerifyingCodeUsingCUITCreate"></a>コード化された UI テストの作成
+## <a name="creating-coded-ui-tests"></a><a name="VerifyingCodeUsingCUITCreate"></a> コード化された UI テストの作成
 
 1. **コード化された UI テストプロジェクトを作成します。**
 
@@ -106,7 +106,7 @@ ms.locfileid: "82586451"
 
 4. **テキストボックスなどの UI フィールドの値を確認**します。
 
-    コード化された UI テストビルダーで [**アサーションの追加**] を選択し、実行中のアプリケーションで UI コントロールを選択します。 表示されるプロパティの一覧で、テキスト ボックスの **Text** などのプロパティを選択します。 ショートカット メニューで、 **[アサーションの追加]** をクリックします。 ダイアログ ボックスで、比較演算子、比較対象値、およびエラー メッセージを選択します。
+    コード化された UI テストビルダーで [ **アサーションの追加** ] を選択し、実行中のアプリケーションで UI コントロールを選択します。 表示されるプロパティの一覧で、テキスト ボックスの **Text** などのプロパティを選択します。 ショートカット メニューで、 **[アサーションの追加]** をクリックします。 ダイアログ ボックスで、比較演算子、比較対象値、およびエラー メッセージを選択します。
 
     アサーション ウィンドウを閉じ、 **[コードの生成]** を選択します。
 
@@ -154,18 +154,18 @@ ms.locfileid: "82586451"
 
    このトピックの残りのセクションでは、このプロシージャ内の各ステップについてさらに詳しく説明します。
 
-   詳細な例については、「[チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。 このチュートリアルでは、簡単な Windows Presentation Foundation (WPF) アプリケーションを作成して、コード化された UI テストの作成、編集、および保守を行う方法について説明します。 また、さまざまなタイミングの問題やコントロールのリファクタリングによって機能が損なわれたテストを修正するための解決策を示します。
+   詳細な例については、「  [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。 このチュートリアルでは、簡単な Windows Presentation Foundation (WPF) アプリケーションを作成して、コード化された UI テストの作成、編集、および保守を行う方法について説明します。 また、さまざまなタイミングの問題やコントロールのリファクタリングによって機能が損なわれたテストを修正するための解決策を示します。
 
 ### <a name="starting-and-stopping-the-application-under-test"></a><a name="starting"></a> テスト対象のアプリケーションを開始および停止する
  *テストごとにアプリケーション、ブラウザー、またはデータベースを個別に起動および停止したくありません。操作方法回避するには、*
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")テスト対象のアプリケーションを開始するための操作を記録しない場合は、[**レコード**] アイコンを選択する前にアプリケーションを起動する必要があります。
+- ![Prerequsite](../test/media/prereq.png "前提条件") テスト対象のアプリケーションを開始するための操作を記録しない場合は、[ **レコード** ] アイコンを選択する前にアプリケーションを起動する必要があります。
 
 - ![Prerequsite](../test/media/prereq.png "前提条件")テストの終了時に、テストを実行するプロセスが終了します。 テストでアプリケーションを起動した場合、アプリケーションは通常は閉じます。  終了時にテストがアプリケーションを閉じないようにするには、ソリューションに .runsettings ファイルを追加し、`KeepExecutorAliveAfterLegacyRun` オプションを使用する必要があります。 詳細については、「[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)」をご覧ください。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")[TestInitialize] 属性で識別されるテスト初期化メソッドを追加できます。このメソッドは、各テストメソッドの開始時にコードを実行します。 たとえば、TestInitialize メソッドからアプリケーションを起動することができます。
+- ![Prerequsite](../test/media/prereq.png "前提条件") [TestInitialize] 属性で識別されるテスト初期化メソッドを追加できます。このメソッドは、各テストメソッドの開始時にコードを実行します。 たとえば、TestInitialize メソッドからアプリケーションを起動することができます。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")[TestCleanup] 属性で識別されるテストクリーンアップメソッドを追加して、各テストメソッドの最後にコードを実行できます。 たとえば、アプリケーションを終了するメソッドは、TestCleanup メソッドから呼び出すことができます。
+- ![Prerequsite](../test/media/prereq.png "前提条件") [TestCleanup] 属性で識別されるテストクリーンアップメソッドを追加して、各テストメソッドの最後にコードを実行できます。 たとえば、アプリケーションを終了するメソッドは、TestCleanup メソッドから呼び出すことができます。
 
 ### <a name="validating-the-properties-of-ui-controls"></a><a name="VerifyingCodeUsingCUITGenerateAssertions"></a> UI コントロールのプロパティを検証する
  **コード化された UI テスト ビルダー**を使用すると、テストの [UIMap](/previous-versions/dd580454(v=vs.140)) にユーザー インターフェイス (UI) を追加したり、UI コントロールのアサーションを使用する検証メソッドのコードを生成したりできます。
@@ -220,7 +220,7 @@ ms.locfileid: "82586451"
   }
   ```
 
-  *コード化された UI テストビルダーから [アサーションの追加] ツールを選択しようとすると、選択したコントロールがフォーカスを失い、表示されなくなります。コントロールを選択操作方法には*
+  *コード化された UI テストビルダーから [アサーションの追加] ツールを選択しようとすると、選択したコントロールがフォーカスを失い、表示されなくなります。コントロールを選択操作方法には* 
   **キーボードを使用して非表示のコントロールを選択**する
 
   [コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)とき、キーボードが必要になる場合もあります。 たとえば、コンテキスト メニュー コントロールを使用するコード化された UI テストを記録するとき、コード化された UI テスト ビルダーの [アサーションの追加] ツールで選択しようとすると、コントロールのメニュー項目の一覧がフォーカスを失い、非表示になります。 これを次の図に示します。Internet Explorer で、[アサーションの追加] ツールでコンテキスト メニューを選択しようとすると、メニューはフォーカスを失い、非表示になります。
@@ -288,7 +288,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
-## <a name="customizing-your-coded-ui-test"></a><a name="VerifyingCodeCUITModify"></a>コード化された UI テストのカスタマイズ
+## <a name="customizing-your-coded-ui-test"></a><a name="VerifyingCodeCUITModify"></a> コード化された UI テストのカスタマイズ
  コード化された UI テストの作成後、Visual Studio で次のいずれかのツールを使用してテストを編集できます。
 
 - **コード化された UI テスト ビルダー:** コード化された UI テスト ビルダーを使用して、テストにコントロールや検証を追加します。 このトピックの「[コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)」セクションをご覧ください。
@@ -301,21 +301,21 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   - コード化された UI テストを作成した後、データ ドリブンになるようにテストを変更できます。 詳細については、「[データ ドリブンのコード化された UI テストの作成](../test/creating-a-data-driven-coded-ui-test.md)」をご覧ください。
 
-  - コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用してコントロールが有効になるまで待機するコード化された UI テストの例については、「[チュートリアル: コード化された Ui テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
+  - コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用してコントロールが有効になるまで待機するコード化された UI テストの例については、「 [チュートリアル: コード化された Ui テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
 
-  - コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「コード化された[UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」を参照してください。
+  - コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「コード化された [UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」を参照してください。
 
   - **コード化された UI テストのコーディング ガイダンス:**
 
     - [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)
 
-    - [コード化された UI テストのベストプラクティス](../test/best-practices-for-coded-ui-tests.md)
+    - [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)
 
     - [複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
     - [コード化された UI テストと操作の記録でサポートされる構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
-### <a name="the-generated-code"></a><a name="generatedCode"></a>生成されたコード
+### <a name="the-generated-code"></a><a name="generatedCode"></a> 生成されたコード
  **[コードの生成]** を選択すると、いくつかのコードが作成されます。
 
 - **テスト メソッド内の行。**
@@ -379,11 +379,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
    独自のコードを記述する場合も、これらを使用できます。 たとえば、テスト メソッドで Web アプリケーションのハイパーリンクの選択やテキスト ボックスへの値の入力を実行したり、フィールドの値に基づいて分岐して別のテスト操作を行ったりすることができます。
 
-   大規模なアプリケーションのテストを容易にするために、複数のコード化された UI テストと複数の UI マップ オブジェクトおよびファイルを追加できます。 詳細については、「[複数の UI マップを使用した大規模なアプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」を参照してください。
+   大規模なアプリケーションのテストを容易にするために、複数のコード化された UI テストと複数の UI マップ オブジェクトおよびファイルを追加できます。 詳細については、「 [複数の UI マップを使用した大規模なアプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」を参照してください。
 
-  生成されるコードの詳細については、「コード化された[UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)」を参照してください。
+  生成されるコードの詳細については、「コード化された [UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)」を参照してください。
 
-### <a name="coding-ui-control-actions-and-properties"></a><a name="actions"></a>UI コントロールの操作とプロパティのコーディング
+### <a name="coding-ui-control-actions-and-properties"></a><a name="actions"></a> UI コントロールの操作とプロパティのコーディング
  コード化された UI テストで UI テストのコントロールを使用する場合、コントロールは操作とプロパティの 2 つに分類されます。
 
 - 最初の部分は、UI テストのコントロールで実行できる操作で構成されます。 たとえば、コード化された UI テストでは、UI テストのコントロールでのマウス クリックをシミュレートしたり、UI テストのコントロールに影響を与えるキーボードでのキー入力をシミュレートしたりすることができます。
@@ -439,17 +439,17 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-### <a name="debugging"></a><a name="debugging"></a>デバッギング
+### <a name="debugging"></a><a name="debugging"></a> デバッグ
  コード化された UI テスト ログを使用して、コード化された UI テストを分析できます。 コード化された UI テスト ログは、コード化された UI テストの実行に関する重要な情報にフィルターを適用して記録します。 ログは、問題をすばやくデバッグできるような形式で記録されます。 詳細については、「[コード化された UI テスト ログを使用したコード化された UI テストの分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)」をご覧ください。
 
-## <a name="whats-next"></a><a name="VerifyCodeUsingCUITWhatsNext"></a>次は何ですか?
+## <a name="whats-next"></a><a name="VerifyCodeUsingCUITWhatsNext"></a> 次は何ですか?
  **コード化された UI テストを実行するための追加オプション:** コード化された UI テストは、このトピックで既に説明したように、Visual Studio から直接実行できます。 また、[!INCLUDE[TCMext](../includes/tcmext-md.md)] または [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] から自動化された UI テストを実行できます。 コード化された UI テストを自動化すると、テストは他の自動テストとは異なって実行時にデスクトップと対話する必要があります。
 
 - [方法: Microsoft Visual Studio からテストを実行する](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
 - [Microsoft テスト マネージャーでの自動テストの実行](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [方法: アプリケーションのビルド後にスケジュールされているテストを構成および実行する](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [方法: 方法: アプリケーションのビルド後にスケジュールされているテストを構成および実行する](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [ビルド プロセスでのテストの実行](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -459,9 +459,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [&#91;廃版&#93; ロード テストでのコード化された UI テストの使用](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
-  **カスタムコントロールのサポートの追加:** コード化された UI テストフレームワークは、可能なすべての UI をサポートしているわけではなく、テスト対象の UI をサポートしていない場合もあります。 たとえば、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] の UI について、コード化された UI テストはすぐに作成できません。 しかし、コード化された UI テスト フレームワークの拡張性を活用すると、カスタム コントロールをサポートするようにすることができます。
+  **カスタムコントロールのサポートの追加:**  コード化された UI テストフレームワークは、可能なすべての UI をサポートしているわけではなく、テスト対象の UI をサポートしていない場合もあります。 たとえば、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] の UI について、コード化された UI テストはすぐに作成できません。 しかし、コード化された UI テスト フレームワークの拡張性を活用すると、カスタム コントロールをサポートするようにすることができます。
 
-- [コントロールのコード化された UI テストを有効にする](../test/enable-coded-ui-testing-of-your-controls.md)
+- [コントロールのコード化された UI テストの有効化](../test/enable-coded-ui-testing-of-your-controls.md)
 
 - [コード化された UI テストと操作の記録を拡張して Microsoft Exce をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
@@ -489,7 +489,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)
-- [コード化された UI テストのベストプラクティス](../test/best-practices-for-coded-ui-tests.md)
+- [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)
 - [複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [コード化された UI テスト エディターを使用したコード化された UI テストの編集](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [コード化された UI テストと操作の記録でサポートされる構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -14,18 +14,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e5045a62d0a654af968d50e0c309bcf8104b5cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668986"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>[.NET 型の参照と選択] ダイアログ ボックス (レガシ)
-このトピックでは、従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)] の **[.Net 型の参照と選択]** ダイアログボックスの使用方法について説明します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
+このトピックでは、従来のの [ **.Net 型の参照と選択** ] ダイアログボックスの使用方法について説明し [!INCLUDE[wfd1](../includes/wfd1-md.md)] ます。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。
 
- **[プロパティ]** ウィンドウで、参照アセンブリの .NET Framework 型を受け取るプロパティを選択すると、プロパティのテキストボックスの最後に省略記号 **[...]** が表示されます。 **[...]** をクリックすると、 **[.net 型の参照と選択]** ダイアログボックスが開きます。 このダイアログ ボックスで、参照アセンブリのツリー表示から型を選択できます。 たとえば、アクティビティデザイナーを使用している場合は、 **[プロパティ]** ウィンドウで**基底クラス**の省略記号 **[...]** をクリックして、[参照されたアセンブリ] ツリーからアクティビティの別の基本クラスを選択します。
+ [ **プロパティ** ] ウィンドウで、参照アセンブリの .NET Framework 型を受け取るプロパティを選択すると、プロパティのテキストボックスの最後に省略記号 **[...]** が表示されます。 **[...]** をクリックすると、[ **.net 型の参照と選択**] ダイアログボックスが開きます。 このダイアログ ボックスで、参照アセンブリのツリー表示から型を選択できます。 たとえば、アクティビティデザイナーを使用している場合は、[ **プロパティ** ] ウィンドウで **基底クラス** の省略記号 **[...]** をクリックして、[参照されたアセンブリ] ツリーからアクティビティの別の基本クラスを選択します。
 
- 次の表では、 **[.Net 型の参照と選択]** ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
+ 次の表では、[ **.Net 型の参照と選択** ] ダイアログボックスのユーザーインターフェイス (UI) 要素について説明します。
 
 |UI 要素|説明|
 |----------------|-----------------|

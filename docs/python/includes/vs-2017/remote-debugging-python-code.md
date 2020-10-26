@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541079"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246103"
 ---
 Visual Studio は、Windows コンピューター上でローカルまたはリモートで Python アプリケーションを起動およびデバッグすることができます (「[Remote Debugging](../../../debugger/remote-debugging.md)」 (リモート デバッグ) をご覧ください)。 また、別のオペレーティング システム、デバイス、または CPython 以外の Python 実装を [ptvsd ライブラリ](https://pypi.python.org/pypi/ptvsd)を使用してリモートでデバッグすることもできます。
 
 ptvsd を使用する場合、デバッグ対象の Python コードは Visual Studio がアタッチできるデバッグ サーバーをホストします。 このホストには、コードに小さな変更を加えてサーバーをインポートして有効にする必要があります。また、TCP 接続を許可するようにリモート コンピューター上でネットワークまたはファイアウォールを構成する必要が生じる場合があります。
 
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../../../install/media/video-icon.png "ビデオを見る") | リモート デバッグの概要については、「[Deep Dive:Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc)」(Deep Dive: クロスプラットフォーム リモート デバッグ) (youtube.com、6 分 22 秒) をご覧ください。Visual Studio 2015 および 2017 の両方に適用できる内容です。 |
+![ビデオのムービー カメラ アイコン](../../../install/media/video-icon.png "ビデオを見る") リモート デバッグの概要については、「[Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc)」(Deep Dive: クロスプラットフォーム リモート デバッグ) (youtube.com、6 分 22 秒) をご覧ください。Visual Studio 2015 および 2017 の両方に適用できる内容です。
 
 ## <a name="set-up-a-linux-computer"></a>Linux コンピューターを設定する
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183315"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801712"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを Azure App Service に発行する
 
@@ -57,15 +57,15 @@ ms.locfileid: "84183315"
 
 1. Visual Studio を実行しているコンピューター上で新しいプロジェクトを作成します。
 
-    適切なテンプレートを選択します。 この例では、 **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、 **[OK]** をクリックします。
+    適切なテンプレートを選択します。 この例では、 **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、 **[OK]** を選択します。
 
-    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
+    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクに進みます。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
 
     選択したプロジェクト テンプレート (ASP.NET または ASP.NET Core) は、Web サーバーにインストールされている ASP.NET のバージョンと対応している必要があります。
 
-1. **[MVC]** .(.NET Framework) または **[Web アプリケーション (モデル ビュー コントローラー)]** (.NET Core の場合)、 **[認証なし]** がオンであることを確認してから **[OK]** をクリックします。
+1. **[MVC]** .(.NET Framework) または **[Web アプリケーション (モデル ビュー コントローラー)]** (.NET Core の場合)、 **[認証なし]** がオンであることを確認してから **[OK]** を選択します。
 
-1. 「**MyWebApp**」のような名前を入力し、 **[OK]** をクリックします。
+1. 「**MyWebApp**」のような名前を入力し、 **[OK]** を選択します。
 
     Visual Studio によってプロジェクトが作成されます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "84183315"
 
 1. Azure portal で Azure App Service を開きます。
 
-1. **[発行プロファイルの取得]** をクリックし、プロファイルをローカルに保存します。
+1. **[発行プロファイルの取得]** に移動し、プロファイルをローカルに保存します。
 
     ![発行プロファイル名の取得](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

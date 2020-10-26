@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543768"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;addin &gt; 要素 (Visual Studio での Office 開発)
-  名前空間の**addin**要素に `vstav3` は、Visual Studio で開発された Microsoft Office VSTO アドインおよびドキュメントレベルのカスタマイズに固有の情報が含まれています。
+  名前空間の **addin** 要素に `vstav3` は、Visual Studio で開発された Microsoft Office VSTO アドインおよびドキュメントレベルのカスタマイズに固有の情報が含まれています。
 
 ## <a name="syntax"></a>構文
 
@@ -50,28 +50,28 @@ ms.locfileid: "85543768"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- 名前空間の**addin**要素には、 `vstav3` Office ソリューションおよび Microsoft Office アプリケーションに関する情報が含まれています。 この要素は、名前空間 `vstav3=urn:schemas-microsoft-com:vsta.v3`に存在する必要があります。 子要素もこの名前空間に属している必要があります。
+ 名前空間の **addin** 要素には、 `vstav3` Office ソリューションおよび Microsoft Office アプリケーションに関する情報が含まれています。 この要素は、名前空間 `vstav3=urn:schemas-microsoft-com:vsta.v3`に存在する必要があります。 子要素もこの名前空間に属している必要があります。
 
  `addin` 要素に属性はありません。
 
  `addin` 要素には、次の子要素があります。
 
 ### <a name="entrypoints"></a>entryPoints
- 必須です。 **EntryPoints**要素については[&#60;entryPoints&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/entrypoints-element-office-development-in-visual-studio.md)」を参照してください。
+ 必須。 **EntryPoints**要素については[&#60;entryPoints&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/entrypoints-element-office-development-in-visual-studio.md)」を参照してください。
 
 ### <a name="update"></a>update
- 必須です。 **Update**要素は[&#60;update&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/update-element-office-development-in-visual-studio.md)に記述されています。
+ 必須。 **Update**要素は[&#60;update&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/update-element-office-development-in-visual-studio.md)に記述されています。
 
 ### <a name="postactions"></a>postActions
- 任意。 **Postactions**要素については[&#60;postactions&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/postactions-element-office-development-in-visual-studio.md)」を参照してください。
+ 省略可能。 **Postactions**要素については[&#60;postactions&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/postactions-element-office-development-in-visual-studio.md)」を参照してください。
 
 ### <a name="application"></a>application
- 必須です。 **Application**要素は[&#60;application&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/application-element-office-development-in-visual-studio.md)に記述されています。
+ 必須。 **Application**要素は[&#60;application&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/application-element-office-development-in-visual-studio.md)に記述されています。
 
 ## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 
 ### <a name="description"></a>説明
- 次のコード例は、を使用して配置されるドキュメントレベルの Office ソリューションの**addin**要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
+ 次のコード例は、を使用して配置されるドキュメントレベルの Office ソリューションの **addin** 要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 
@@ -135,7 +135,7 @@ ms.locfileid: "85543768"
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
 ### <a name="description"></a>説明
- 次のコード例は、を使用して配置されるアプリケーションレベルの Office ソリューションの**addin**要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
+ 次のコード例は、を使用して配置されるアプリケーションレベルの Office ソリューションの **addin** 要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
 

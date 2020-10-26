@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154107"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild タスク リファレンス
@@ -33,10 +33,10 @@ ms.locfileid: "68154107"
 |パラメーター|説明|  
 |---------------|-----------------|  
 |`Condition`|省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] エンジンが決定するために使用する `Boolean` 式です。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] でサポートされる条件の詳細については、「[MSBuild Conditions](../msbuild/msbuild-conditions.md)」(MSBuild の条件) を参照してください。|  
-|`ContinueOnError`|省略可能なパラメーターです。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、「[方法 :タスクでのエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)します。|  
+|`ContinueOnError`|省略可能なパラメーターです。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、「[方法: タスクで発生したエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)」を参照してください。|  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [Task 基本クラス](../msbuild/task-base-class.md)  
+ [タスクの基本クラス](../msbuild/task-base-class.md)  
  <xref:Microsoft.Build.Utilities.Task> クラスから派生したタスクにいくつかのパラメーターを追加します。  
   
  [TaskExtension 基本クラス](../msbuild/taskextension-base-class.md)  
@@ -45,16 +45,16 @@ ms.locfileid: "68154107"
  [ToolTaskExtension 基本クラス](../msbuild/tooltaskextension-base-class.md)  
  <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。  
   
- [AL (アセンブリ リンカー) タスク](../msbuild/al-assembly-linker-task.md)  
+ [AL (アセンブリリンカー) タスク](../msbuild/al-assembly-linker-task.md)  
  モジュールまたはリソース ファイルのいずれかである 1 つ以上のファイルから、マニフェストを持つアセンブリを作成します。  
   
  [AspNetCompiler タスク](../msbuild/aspnetcompiler-task.md)  
  ASP.NET アプリケーションをプリコンパイルするためのユーティリティである aspnet_compiler.exe をラップします。  
   
- [AssignCulture タスク](../msbuild/assignculture-task.md)  
+ [Culture タスクの割り当て](../msbuild/assignculture-task.md)  
  アイテムにカルチャ ID を割り当てます。  
   
- [AssignProjectConfiguration タスク](../msbuild/assignprojectconfiguration-task.md)  
+ [Projectconfiguration タスクの割り当て](../msbuild/assignprojectconfiguration-task.md)  
  構成文字列のリストを受け取り、それを指定されたプロジェクトに割り当てます。  
   
  [AssignTargetPath タスク](../msbuild/assigntargetpath-task.md)  
@@ -63,13 +63,13 @@ ms.locfileid: "68154107"
  [CallTarget タスク](../msbuild/calltarget-task.md)  
  プロジェクト ファイル内のターゲットを呼び出します。  
   
- [CombinePath タスク](../msbuild/combinepath-task.md)  
+ [連結 Epath タスク](../msbuild/combinepath-task.md)  
  指定されたパスを 1 つのパスに結合します。  
   
  [ConvertToAbsolutePath タスク](../msbuild/converttoabsolutepath-task.md)  
  相対パス (参照) を絶対パスに変換します。  
   
- [Copy タスク](../msbuild/copy-task.md)  
+ [タスクのコピー](../msbuild/copy-task.md)  
  ファイルを新しい場所にコピーします。  
   
  [CreateCSharpManifestResourceName タスク](../msbuild/createcsharpmanifestresourcename-task.md)  
@@ -87,10 +87,10 @@ ms.locfileid: "68154107"
  [Csc タスク](../msbuild/csc-task.md)  
  Visual C# コンパイラを呼び出して、実行可能ファイル、ダイナミック リンク ライブラリ、またはコード モジュールを生成します。  
   
- [Delete タスク](../msbuild/delete-task.md)  
+ [タスクの削除](../msbuild/delete-task.md)  
  指定されたファイルを削除します。  
   
- [Error タスク](../msbuild/error-task.md)  
+ [エラータスク](../msbuild/error-task.md)  
  ビルドを停止し、条件付きステートメントの評価に基づいてエラーをログに記録します。  
   
  [Exec タスク](../msbuild/exec-task.md)  
@@ -102,7 +102,7 @@ ms.locfileid: "68154107"
  [FindInList タスク](../msbuild/findinlist-task.md)  
  指定されたリスト内で、一致する itemspec を含むアイテムを検索します。  
   
- [FindUnderPath タスク](../msbuild/findunderpath-task.md)  
+ [Find過小パスタスク](../msbuild/findunderpath-task.md)  
  指定されたアイテム コレクション内のどのアイテムが、指定されたフォルダーおよびそのすべてのサブフォルダーに格納されているアイテムであるのかを確認します。  
   
  [FormatUrl タスク](../msbuild/formaturl-task.md)  
@@ -147,7 +147,7 @@ ms.locfileid: "68154107"
  [Message タスク](../msbuild/message-task.md)  
  ビルド中のメッセージをログに記録します。  
   
- [Move タスク](../msbuild/move-task.md)  
+ [タスクの移動](../msbuild/move-task.md)  
  ファイルを新しい場所に移動します。  
   
  [MSBuild タスク](../msbuild/msbuild-task.md)  
@@ -162,7 +162,7 @@ ms.locfileid: "68154107"
  [RemoveDir タスク](../msbuild/removedir-task.md)  
  指定されたディレクトリと、そのディレクトリに含まれるファイルとサブディレクトリをすべて削除します。  
   
- [RemoveDuplicates タスク](../msbuild/removeduplicates-task.md)  
+ [重複除去タスク](../msbuild/removeduplicates-task.md)  
  指定されたアイテム コレクションから、重複するアイテムを削除します。  
   
  [RequiresFramework35SP1Assembly タスク](../msbuild/requiresframework35sp1assembly-task.md)  
@@ -174,7 +174,7 @@ ms.locfileid: "68154107"
  [ResolveAssemblyReference タスク](../msbuild/resolveassemblyreference-task.md)  
  指定したアセンブリに依存するすべてのアセンブリを判断します。  
   
- [ResolveCOMReference タスク](../msbuild/resolvecomreference-task.md)  
+ [ResolveComReference タスク](../msbuild/resolvecomreference-task.md)  
  1 つ以上のタイプ ライブラリ名または .tlb ファイルから成る一覧を使用して、これらのタイプ ライブラリのディスク上の位置を解決します。  
   
  [ResolveKeySource タスク](../msbuild/resolvekeysource-task.md)  
@@ -195,7 +195,7 @@ ms.locfileid: "68154107"
  [SignFile タスク](../msbuild/signfile-task.md)  
  指定された証明書を使用して、指定されたファイルに署名します。  
   
- [Touch タスク](../msbuild/touch-task.md)  
+ [タッチタスク](../msbuild/touch-task.md)  
  ファイルのアクセス時刻および変更時刻を設定します。  
   
  [UnregisterAssembly タスク](../msbuild/unregisterassembly-task.md)  
@@ -204,10 +204,10 @@ ms.locfileid: "68154107"
  [UpdateManifest タスク](../msbuild/updatemanifest-task.md)  
  マニフェスト内の選択したプロパティを更新し、再署名します。  
   
- [Vbc タスク](../msbuild/vbc-task.md)  
+ [Vbc.exe タスク](../msbuild/vbc-task.md)  
  Visual Basic コンパイラを呼び出して、実行可能ファイル、ダイナミック リンク ライブラリ、またはコード モジュールを生成します。  
   
- [Warning タスク](../msbuild/warning-task.md)  
+ [警告タスク](../msbuild/warning-task.md)  
  条件付きステートメントの評価に基づいてビルド中の警告をログに記録します。  
   
  [WriteCodeFragment タスク](../msbuild/writecodefragment-task.md)  
@@ -225,7 +225,7 @@ ms.locfileid: "68154107"
  [XslTransformation タスク](../msbuild/xsltransformation-task.md)  
  XSLT *Extensible Stylesheet Language Transformation* (XSLT) またはコンパイル済み XSLT を使用して XML 入力を変換し、出力デバイスまたはファイルに出力します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [タスクの作成](../msbuild/task-writing.md)   
  [タスク](../msbuild/msbuild-tasks.md)

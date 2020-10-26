@@ -13,20 +13,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185285"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-作成時にそのプロジェクトまたは項目の Visual Studio プロジェクト システムにより生成される名前を指定します。  
+プロジェクトまたはアイテムの作成時に Visual Studio プロジェクトシステムによって生成される名前を指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<DefaultName >  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>構文  
   
@@ -54,19 +54,19 @@ ms.locfileid: "68185285"
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- このテキストは、プロジェクトまたは項目の既定の名前を指定します。  
+ このテキストは、プロジェクトまたはアイテムの既定の名前を指定します。  
   
-## <a name="remarks"></a>Remarks  
- `DefaultName` は、省略可能な要素です。  
+## <a name="remarks"></a>注釈  
+ `DefaultName` は省略可能な要素です。  
   
- プロジェクトの場合は、この要素は、ディスク上、プロジェクトを格納するディレクトリの名前を指定します。 項目については、ソース ファイルのファイル名を指定します。  
+ プロジェクトの場合、この要素は、プロジェクトをディスクに格納するディレクトリの名前を指定します。 項目の場合は、ソースファイルのファイル名を指定します。  
   
- 使用して、既定の名前を変更するにはプロジェクトまたは項目を作成するときに、**名前**はいずれかから使用可能なオプション、**新しいプロジェクト** ダイアログ ボックスまたは**新しい項目の追加**ダイアログ ボックス。  
+ プロジェクトまたは項目を作成するときに、[ **名前** ] オプションを使用して既定の名前を変更できます。このオプションは、[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスから使用できます。  
   
- プロジェクトまたは項目の既定の名前を生成するプロジェクト システムしたくない場合は、設定、 [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)要素`False`します。  
+ プロジェクトシステムでプロジェクトまたは項目の既定の名前を生成しないようにする場合 [は、[](../extensibility/providedefaultname-element-visual-studio-templates.md) 指定] をに設定し `False` ます。  
   
 ## <a name="example"></a>例  
- 次の例では、用の標準的な項目テンプレートのメタデータを[!INCLUDE[csprcs](../includes/csprcs-md.md)]クラス。  
+ 次の例は、クラスの標準項目テンプレートのメタデータを示してい [!INCLUDE[csprcs](../includes/csprcs-md.md)] ます。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -84,6 +84,6 @@ ms.locfileid: "68185285"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

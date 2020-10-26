@@ -9,10 +9,10 @@ caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 029b547102863f4798ad261deb678c4d98596916
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657203"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>コード化された UI テストでの HTML5 コントロールの使用
@@ -20,7 +20,7 @@ ms.locfileid: "72657203"
 
 コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。
 
- **Requirements**
+ **必要条件**
 
 - Visual Studio Enterprise
 
@@ -37,7 +37,7 @@ ms.locfileid: "72657203"
 
 - [ビデオ コントロール](#video-control)
 
-- [スライダー](#slider)
+- [Slider](#slider)
 
 - [ProgressBar](#progressbar)
 
@@ -46,14 +46,14 @@ ms.locfileid: "72657203"
 
  ![HTML5 オーディオ コントロール](../test/media/codedui-html5-audio.png)
 
-|操作|記録中|生成されたコード|
+|アクション|記録中|生成されたコード|
 |------------|---------------|--------------------|
-|**オーディオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオを 00:00:00 の時点から再生|HtmlAudio.Play(TimeSpan)|
-|**オーディオの特定の時点にシーク**|\<name> オーディオの 00:01:48 の時点にシーク|HtmlAudio.Seek(TimeSpan)|
-|**オーディオの一時停止**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオの 00:01:53 の時点で一時停止|HtmlAudio.Pause(TimeSpan)|
-|**オーディオのミュート**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオをミュート|HtmlAudio.Mute()|
-|**オーディオのミュートの解除**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオのミュートを解除|HtmlAudio.Unmute()|
-|**オーディオの音量の変更**|\<name> オーディオのボリュームを 79% に設定|HtmlAudio.SetVolume(float)|
+|**オーディオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオを 00:00:00 から再生する|HtmlAudio.Play(TimeSpan)|
+|**オーディオの特定の時点にシーク**|\<name> オーディオを 00:01:48 にシークする|HtmlAudio.Seek(TimeSpan)|
+|**オーディオの一時停止**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオを 00:01:53 で一時停止する|HtmlAudio.Pause(TimeSpan)|
+|**オーディオのミュート**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオをミュートする|HtmlAudio.Mute()|
+|**オーディオのミュートの解除**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> オーディオのミュートを解除する|HtmlAudio.Unmute()|
+|**オーディオの音量の変更**|\<name> オーディオの音量を 79% に設定する|HtmlAudio.SetVolume(float)|
 
  HtmlAudio には次のプロパティがあり、それらのすべてでアサーションを追加することができます。
 
@@ -88,14 +88,14 @@ string Volume
 
  ![HTML5 ビデオ コントロール](../test/media/codedui-html5-video.png)
 
-|操作|記録中|生成されたコード|
+|アクション|記録中|生成されたコード|
 |------------|---------------|--------------------|
-|**ビデオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオを 00:00:00 の時点から再生|HtmlVideo.Play(TimeSpan)|
-|**ビデオの特定の時点にシーク**|\<name> ビデオの 00:01:48 の時点にシーク|HtmlVideo.Seek(TimeSpan)|
-|**ビデオの一時停止**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオの 00:01:53 の時点で一時停止|HtmlVideo.Pause(TimeSpan)|
-|**ビデオのミュート**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオをミュート|HtmlVideo.Mute()|
-|**ビデオのミュートの解除**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオのミュートを解除|HtmlVideo.Unmute()|
-|**ビデオの音量の変更**|\<name> ビデオのボリュームを 79% に設定||
+|**ビデオの再生**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオを 00:00:00 から再生する|HtmlVideo.Play(TimeSpan)|
+|**ビデオの特定の時点にシーク**|\<name> ビデオを 00:01:48 にシークする|HtmlVideo.Seek(TimeSpan)|
+|**ビデオの一時停止**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオを 00:01:53 で一時停止する|HtmlVideo.Pause(TimeSpan)|
+|**ビデオのミュート**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオをミュートする|HtmlVideo.Mute()|
+|**ビデオのミュートの解除**<br /><br /> コントロールから直接、またはコントロールのコンテキスト メニューから|\<name> ビデオのミュートを解除する|HtmlVideo.Unmute()|
+|**ビデオの音量の変更**|\<name> ビデオの音量を 79% に設定する||
 
  HtmlVideo には、HtmlAudio のすべてのプロパティが用意されています。 さらに、次の 3 つのプロパティも使用できます。 それらのすべてでアサーションを追加することができます。
 
@@ -113,14 +113,14 @@ string VideoWidth
 > [!NOTE]
 > -30s または +30s のラベルを使用してビデオを巻き戻したり早送りしたりする場合、集計後の適切なタイミングにシークされます。
 
-### <a name="slider"></a>Slider
+### <a name="slider"></a>スライダー
  **スライダー コントロール:** HTML5 スライダー コントロールに対するアクションが正しく記録され再生されます。
 
  ![HTML5 スライダー コントロール](../test/media/codedui-html5-slider.png)
 
-|操作|記録中|生成されたコード|
+|アクション|記録中|生成されたコード|
 |------------|---------------|--------------------|
-|**スライダーにおける位置の設定**|\<name> スライダー内の \<x> に位置を設定|HtmlSlider.ValueAsNumber=\<x>|
+|**スライダーにおける位置の設定**|スライダーの位置をに設定 \<x> \<name>|HtmlSlider. ValueAsNumber =\<x>|
 
  HtmlSlider には次のプロパティがあり、それらのすべてでアサーションを追加することができます。
 
@@ -142,6 +142,6 @@ string ValueAsNumber
 
 - [HTML 要素](https://www.w3schools.com/HTML/html_elements.asp)
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
-- [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
+- [コード化された UI テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [コード化された UI テストをカスタマイズする](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)
-- [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [コード化された UI テストと操作の記録でサポートされる構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

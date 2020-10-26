@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f9dc15cec4012d2b63eb5f21c25bd709961c95c8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544080"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合語では、大文字と小文字が正しく区別されなければなりません
@@ -27,7 +27,7 @@ ms.locfileid: "85544080"
 
 Visual Studio の最新のドキュメントについては、「 [CA1702: 複合単語の大文字と小文字](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly)の区別」を参照してください。
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
@@ -55,5 +55,5 @@ Visual Studio の最新のドキュメントについては、「 [CA1702: 複�
 
  [CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>関連項目
- [名前付けガイドライン](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)の[大文字小文字の表記規則](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
+## <a name="see-also"></a>参照
+ [名前付けガイドライン](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)の [大文字小文字の表記規則](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

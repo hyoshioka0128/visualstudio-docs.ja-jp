@@ -1,5 +1,5 @@
 ---
-title: デバッガーの起動 |Microsoft Docs
+title: デバッガーを起動しています |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,47 +12,47 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9c57079246dd52bd7fb44371999d0c3747dad40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149125"
 ---
 # <a name="launching-the-debugger"></a>デバッガーの起動
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーを起動するには、メソッドおよびイベントの適切な属性の適切なシーケンスを送信する必要があります。  
+デバッガーを起動するには、適切な属性を使用してメソッドとイベントの正しいシーケンスを送信する必要があります。  
   
 ## <a name="sequences-of-methods-and-events"></a>メソッドとイベントのシーケンス  
   
-1. セッション デバッグ マネージャー (SDM) が選択することによって呼び出される、**デバッグ**メニューをクリックして**開始**します。 参照してください[プログラムの起動](../../extensibility/debugger/launching-a-program.md)詳細についてはします。  
+1. セッションデバッグマネージャー (SDM) を呼び出すには、[ **デバッグ** ] メニューを選択し、[ **開始**] をクリックします。 詳細について [は、「プログラムの起動](../../extensibility/debugger/launching-a-program.md) 」を参照してください。  
   
-2. SDM コール[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッド。  
+2. SDM は [Onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) メソッドを呼び出します。  
   
-3. デバッグ エンジン (DE) のプロセス モデルに基づく、`IDebugProgramNodeAttach2::OnAttach`メソッドは、次の動作を決定するメソッドを次のいずれかを返します。  
+3. デバッグエンジン (DE) プロセスモデルに基づいて、 `IDebugProgramNodeAttach2::OnAttach` メソッドは次のいずれかのメソッドを返します。これにより次の処理が決定されます。  
   
-     場合`S_FALSE`返されるか、デバッグ エンジン (DE) は、仮想マシンを処理中に読み込まれます。  
+     が返された場合 `S_FALSE` 、デバッグエンジン (DE) は仮想マシンのプロセスで読み込まれます。  
   
      \- または -  
   
-     場合`S_OK`DE が読み込まれますが、返される、SDM のプロセスにします。 SDM には、次のタスクを実行します。  
+     が返された場合 `S_OK` 、DE は SDM のインプロセスで読み込まれます。 その後、SDM は次のタスクを実行します。  
   
-    1. 呼び出し[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) DE のエンジンの情報を取得します。  
+    1. [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)を呼び出して、DE のエンジン情報を取得します。  
   
-    2. 併置デを作成します。  
+    2. DE を共同作成します。  
   
-    3. 呼び出し[アタッチ](../../extensibility/debugger/reference/idebugengine2-attach.md)します。  
+    3. [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)を呼び出します。  
   
-4. DE 送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)に SDM を`EVENT_SYNC`属性。  
+4. DE は、属性を使用して [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) を SDM に送信し `EVENT_SYNC` ます。  
   
-5. DE 送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)に SDM を`EVENT_SYNC`属性。  
+5. DE は、属性を使用して [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) を SDM に送信し `EVENT_SYNC` ます。  
   
-6. DE 送信、 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)に SDM を`EVENT_SYNC`属性。  
+6. DE は、属性を使用して [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) を SDM に送信し `EVENT_SYNC` ます。  
   
-7. DE 送信、 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)に SDM を`EVENT_SYNC`属性。  
+7. DE は、属性を使用して [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) を SDM に送信し `EVENT_SYNC` ます。  
   
-8. DE 送信、 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)に SDM を`EVENT_SYNC`属性。  
+8. DE は、属性を使用して [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) を SDM に送信し `EVENT_SYNC` ます。  
   
-## <a name="see-also"></a>関連項目  
- [呼び出し元のデバッガー イベント](../../extensibility/debugger/calling-debugger-events.md)   
+## <a name="see-also"></a>参照  
+ [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)   
  [プログラムの起動](../../extensibility/debugger/launching-a-program.md)

@@ -1,14 +1,14 @@
 ---
-title: インクルード ファイル
+title: ファイルを含める
 ms.date: 04/24/2018
 ms.topic: include
 author: eross-msft
 ms.author: lizross
 ms.openlocfilehash: a54f66e1ad84e8498b13ce2316158705bfb1b4c5
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68286225"
 ---
 > [!NOTE]

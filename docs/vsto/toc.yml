@@ -60,7 +60,7 @@
               href: architecture-of-office-solutions-in-visual-studio.md
             - name: ドキュメント レベルのカスタマイズのアーキテクチャ
               href: architecture-of-document-level-customizations.md
-            - name: VSTO アドインのアーキテクチャ
+            - name: Architecture of VSTO Add-Ins
               href: architecture-of-vsto-add-ins.md
             - name: Visual Studio Tools for Office Runtime の概要
               items:
@@ -86,7 +86,7 @@
               href: running-solutions-in-different-versions-of-microsoft-office.md
             - name: Visual Studio 環境における Office プロジェクト
               href: office-projects-in-the-visual-studio-environment.md
-            - name: Office プロジェクトのプロパティ
+            - name: Properties in Office Projects
               href: properties-in-office-projects.md
             - name: Office ソリューションにおけるアプリケーション マニフェストと配置マニフェスト
               href: application-and-deployment-manifests-in-office-solutions.md
@@ -128,9 +128,9 @@
                   href: how-to-create-event-handlers-in-office-projects.md
                 - name: Office ソリューションの共同開発
                   href: collaborative-development-of-office-solutions.md
-            - name: VSTO アドインのプログラミング
+            - name: Programming VSTO Add-ins
               items:
-                - name: VSTO アドインのプログラミング
+                - name: Programming VSTO Add-ins
                   href: programming-vsto-add-ins.md
                 - name: VSTO アドインのパフォーマンスの向上
                   href: improving-the-performance-of-a-vsto-add-in.md
@@ -138,7 +138,7 @@
                   href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
                 - name: その他の Office ソリューションから VSTO アドインのコードを呼び出す
                   href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
-                - name: 'チュートリアル: VSTO アドインのコードを VBA から呼び出す'
+                - name: 'チュートリアル : VSTO アドインのコードを VBA から呼び出す'
                   href: walkthrough-calling-code-in-a-vsto-add-in-from-vba.md
                 - name: 機能拡張インターフェイスによる UI 機能のカスタマイズ
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
@@ -152,11 +152,11 @@
                       href: combining-vba-and-document-level-customizations.md
                     - name: Visual Basic プロジェクトのコードを VBA に公開する
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-                    - name: 'Visual C# プロジェクトのコードを VBA に公開する'
+                    - name: Visual C# プロジェクトのコードを VBA に公開する
                       href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
-                    - name: 'チュートリアル: VBA から Visual Basic プロジェクトのコードを呼び出す'
+                    - name: 'チュートリアル : VBA から Visual Basic プロジェクトのコードを呼び出す'
                       href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
-                    - name: 'チュートリアル: VBA から Visual C# プロジェクトのコードを呼び出す'
+                    - name: 'チュートリアル : VBA から Visual C# プロジェクトのコードを呼び出す'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: ServerDocument クラスによるサーバー上のドキュメントの管理
                   items:
@@ -186,17 +186,17 @@
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: Office ドキュメントに Windows フォーム コントロールを追加する
                           href: how-to-add-windows-forms-controls-to-office-documents.md
-                        - name: 'チュートリアル: CheckBox コントロールを使用したドキュメント書式の変更'
+                        - name: 'チュートリアル : CheckBox コントロールを使用したドキュメント書式の変更'
                           href: walkthrough-changing-document-formatting-using-checkbox-controls.md
-                        - name: 'チュートリアル: CheckBox コントロールを使用したワークシート書式の変更'
+                        - name: 'チュートリアル : CheckBox コントロールを使用したワークシート書式の変更'
                           href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
-                        - name: 'チュートリアル: ボタンを使用して文書内のテキスト ボックスにテキストを表示する方法'
+                        - name: 'チュートリアル : ボタンを使用して文書内のテキスト ボックスにテキストを表示する方法'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
-                        - name: 'チュートリアル: ボタンを使用してワークシート内テキスト ボックスにテキストを表示する方法'
+                        - name: 'チュートリアル : ボタンを使用してワークシート内テキスト ボックスにテキストを表示する方法'
                           href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
-                        - name: 'チュートリアル: オプション ボタンを使用してドキュメントのグラフを更新する方法'
+                        - name: 'チュートリアル : オプション ボタンを使用してドキュメントのグラフを更新する方法'
                           href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
-                        - name: 'チュートリアル: オプション ボタンを使用してワークシートのグラフを更新する方法'
+                        - name: 'チュートリアル : オプション ボタンを使用してワークシートのグラフを更新する方法'
                           href: walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md
                         - name: ワークシートのセル内のコントロールをサイズ変更する
                           href: how-to-resize-controls-within-worksheet-cells.md
@@ -216,11 +216,11 @@
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: リボン デザイナー
                       href: ribbon-designer.md
-                    - name: 'チュートリアル: リボン デザイナーを使用したカスタム タブの作成'
+                    - name: 'チュートリアル : リボン デザイナーを使用したカスタム タブの作成'
                       href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
                     - name: リボン オブジェクト モデルの概要
                       href: ribbon-object-model-overview.md
-                    - name: 'チュートリアル: 実行時のリボン コントロールの更新'
+                    - name: 'チュートリアル : 実行時のリボン コントロールの更新'
                       href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
                     - name: Outlook のリボンのカスタマイズ
                       href: customizing-a-ribbon-for-outlook.md
@@ -238,9 +238,9 @@
                       href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
                     - name: リボンをリボン デザイナーからリボン XML にエクスポートする
                       href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
-                    - name: リボン XML
+                    - name: Ribbon XML
                       href: ribbon-xml.md
-                    - name: 'チュートリアル: リボン XML によるカスタム タブの作成'
+                    - name: 'チュートリアル : リボン XML によるカスタム タブの作成'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: 操作ウィンドウの概要
                   items:
@@ -250,11 +250,11 @@
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: 操作ウィンドウ上のコントロールのレイアウトを管理する
                       href: how-to-manage-control-layout-on-actions-panes.md
-                    - name: 'チュートリアル: Word の操作ウィンドウ上のコントロールへのデータ バインディング'
+                    - name: 'チュートリアル : Word の操作ウィンドウ上のコントロールへのデータ バインディング'
                       href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
-                    - name: 'チュートリアル: Excel のアクション ペインのコントロールへのデータ連結'
+                    - name: 'チュートリアル : Excel のアクション ペインのコントロールへのデータ連結'
                       href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
-                    - name: 'チュートリアル: 操作ウィンドウから文書へのテキストの挿入'
+                    - name: 'チュートリアル : 操作ウィンドウから文書へのテキストの挿入'
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: カスタム作業ウィンドウ
                   items:
@@ -262,11 +262,11 @@
                       href: custom-task-panes.md
                     - name: カスタム作業ウィンドウをアプリケーションに追加する
                       href: how-to-add-a-custom-task-pane-to-an-application.md
-                    - name: 'チュートリアル: カスタム作業ウィンドウからのアプリケーションの自動化'
+                    - name: 'チュートリアル : カスタム作業ウィンドウからのアプリケーションの自動化'
                       href: walkthrough-automating-an-application-from-a-custom-task-pane.md
-                    - name: 'チュートリアル: カスタム作業ウィンドウとリボン ボタンの同期'
+                    - name: 'チュートリアル : カスタム作業ウィンドウとリボン ボタンの同期'
                       href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-                    - name: 'チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示する'
+                    - name: 'チュートリアル : Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示する'
                       href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
                 - name: Office ソリューションでの WPF コントロールの使用
                   href: using-wpf-controls-in-office-solutions.md
@@ -276,7 +276,7 @@
                   href: how-to-show-add-in-user-interface-errors.md
                 - name: ショートカット メニューにコマンドを追加する
                   href: how-to-add-commands-to-shortcut-menus.md
-                - name: 'チュートリアル: Windows フォームを使用してデータを収集する方法'
+                - name: 'チュートリアル : Windows フォームを使用してデータを収集する方法'
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Office ソリューションにおけるデータ
               items:
@@ -292,7 +292,7 @@
                       href: how-to-populate-documents-with-data-from-a-database.md
                     - name: サービスのデータをドキュメントに読み込む
                       href: how-to-populate-documents-with-data-from-services.md
-                    - name: 'チュートリアル: VSTO アドイン プロジェクトでサービスのデータをバインドする'
+                    - name: 'チュートリアル : VSTO アドイン プロジェクトでサービスのデータをバインドする'
                       href: walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md
                     - name: オブジェクトのデータをドキュメントに読み込む
                       href: how-to-populate-documents-with-data-from-objects.md
@@ -300,13 +300,13 @@
                       href: how-to-scroll-through-database-records-in-a-worksheet.md
                     - name: ホスト コントロールからのデータでデータ ソースを更新する
                       href: how-to-update-a-data-source-with-data-from-a-host-control.md
-                    - name: 'チュートリアル: ドキュメント レベルのプロジェクトでの単純データ バインディング'
+                    - name: 'チュートリアル : ドキュメント レベルのプロジェクトでの単純データ バインディング'
                       href: walkthrough-simple-data-binding-in-a-document-level-project.md
-                    - name: 'チュートリアル: ドキュメント レベルのプロジェクトでの複合データ バインディング'
+                    - name: 'チュートリアル : ドキュメント レベルのプロジェクトでの複合データ バインディング'
                       href: walkthrough-complex-data-binding-in-a-document-level-project.md
                     - name: 'チュートリアル: VSTO アドイン プロジェクトでの単純データ バインディング'
                       href: walkthrough-simple-data-binding-in-vsto-add-in-project.md
-                    - name: 'チュートリアル: VSTO アドイン プロジェクトでの複合データ バインディング'
+                    - name: 'チュートリアル : VSTO アドイン プロジェクトでの複合データ バインディング'
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Custom XML Parts Overview
                   items:
@@ -336,11 +336,11 @@
                       items:
                         - name: サーバー上のドキュメント内のデータへのアクセス
                           href: accessing-data-in-documents-on-the-server.md
-                        - name: 'チュートリアル: サーバー上のブックへのデータの挿入'
+                        - name: 'チュートリアル : サーバー上のブックへのデータの挿入'
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
-                        - name: 'チュートリアル: サーバー上のブックからのキャッシュされたデータの取得'
+                        - name: 'チュートリアル : サーバー上のブックからのキャッシュされたデータの取得'
                           href: walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md
-                        - name: 'チュートリアル: サーバー上のブックにキャッシュされたデータの変更'
+                        - name: 'チュートリアル : サーバー上のブックにキャッシュされたデータの変更'
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: ドキュメント レベルのカスタマイズにおける XML スキーマとデータ
                   items:
@@ -376,9 +376,9 @@
               href: how-to-target-the-office-multilingual-user-interface.md
             - name: Office プロジェクトのユーザー補助機能
               href: accessibility-in-office-projects.md
-        - name: Excel ソリューション
+        - name: Excel Solutions
           items:
-            - name: Excel ソリューション
+            - name: Excel Solutions
               href: excel-solutions.md
             - name: Excel Object Model Overview
               items:
@@ -464,9 +464,9 @@
               items:
                 - name: 拡張オブジェクトによる Excel の自動化
                   href: automating-excel-by-using-extended-objects.md
-                - name: Workbook ホスト項目
+                - name: Workbook Host Item
                   href: workbook-host-item.md
-                - name: Worksheet ホスト項目
+                - name: Worksheet Host Item
                   href: worksheet-host-item.md
                 - name: Chart Control
                   href: chart-control.md
@@ -494,7 +494,7 @@
                   href: how-to-map-listobject-columns-to-data.md
                 - name: ListObject コントロールにデータを読み込む
                   href: how-to-fill-listobject-controls-with-data.md
-                - name: 'チュートリアル: NamedRange コントロールのイベントのプログラミング'
+                - name: 'チュートリアル : NamedRange コントロールのイベントのプログラミング'
                   href: walkthrough-programming-against-events-of-a-namedrange-control.md
             - name: 共同作成とアドインの理解
               href: understanding-coauthoring-and-addins.md
@@ -502,11 +502,11 @@
               href: globalization-and-localization-of-excel-solutions.md
             - name: Excel ワークシート上での Windows フォーム コントロールの使用
               href: using-windows-forms-controls-on-excel-worksheets.md
-            - name: 'チュートリアル: 初めての Excel 用ドキュメント レベルのカスタマイズの作成'
+            - name: 'チュートリアル : 初めての Excel 用ドキュメント レベルのカスタマイズの作成'
               href: walkthrough-creating-your-first-document-level-customization-for-excel.md
-            - name: 'チュートリアル: 初めての Excel 用 VSTO アドインの作成'
+            - name: 'チュートリアル : 初めての Excel 用 VSTO アドインの作成'
               href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
-            - name: 'チュートリアル: 実行時における VSTO アドイン プロジェクトのワークシートへのコントロールの追加'
+            - name: 'チュートリアル : 実行時における VSTO アドイン プロジェクトのワークシートへのコントロールの追加'
               href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
         - name: InfoPath ソリューション
           href: infopath-solutions.md
@@ -514,9 +514,9 @@
           items:
             - name: Outlook ソリューション
               href: outlook-solutions.md
-            - name: Outlook オブジェクト モデルの概要
+            - name: Outlook Object Model Overview
               items:
-                - name: Outlook オブジェクト モデルの概要
+                - name: Outlook Object Model Overview
                   href: outlook-object-model-overview.md
                 - name: 連絡先アイテムの操作
                   items:
@@ -586,9 +586,9 @@
                   href: how-to-add-a-form-region-to-an-outlook-add-in-project.md
                 - name: フォーム領域の Outlook メッセージ クラスへの関連付け
                   href: associating-a-form-region-with-an-outlook-message-class.md
-                - name: 'チュートリアル: Outlook フォーム領域のデザイン'
+                - name: 'チュートリアル : Outlook フォーム領域のデザイン'
                   href: walkthrough-designing-an-outlook-form-region.md
-                - name: 'チュートリアル: Outlook でデザインしたフォーム領域のインポート'
+                - name: 'チュートリアル : Outlook でデザインしたフォーム領域のインポート'
                   href: walkthrough-importing-a-form-region-that-is-designed-in-outlook.md
                 - name: 実行時におけるフォーム領域へのアクセス
                   href: accessing-a-form-region-at-run-time.md
@@ -596,17 +596,17 @@
                   href: how-to-prevent-outlook-from-displaying-a-form-region.md
                 - name: Outlook フォーム領域のカスタム動作
                   href: custom-actions-in-outlook-form-regions.md
-            - name: 'チュートリアル: 初めての Outlook 用 VSTO アドインの作成'
+            - name: 'チュートリアル : 初めての Outlook 用 VSTO アドインの作成'
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: PowerPoint ソリューション
           items:
             - name: PowerPoint ソリューション
               href: powerpoint-solutions.md
-            - name: 'チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成'
+            - name: 'チュートリアル : 初めての PowerPoint 用 VSTO アドインの作成'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
-        - name: Project ソリューション
+        - name: Project Solutions
           items:
-            - name: Project ソリューション
+            - name: Project Solutions
               href: project-solutions.md
             - name: 'チュートリアル: 初めての Project 用 VSTO アドインの作成'
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
@@ -724,9 +724,9 @@
                       href: how-to-programmatically-add-rows-and-columns-to-word-tables.md
                     - name: プログラムによって Word の表のセルにテキストと書式設定を追加する
                       href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
-            - name: 拡張オブジェクトによる Word の自動化
+            - name: Automating Word by Using Extended Objects
               items:
-                - name: 拡張オブジェクトによる Word の自動化
+                - name: Automating Word by Using Extended Objects
                   href: automating-word-by-using-extended-objects.md
                 - name: Document ホスト項目
                   href: document-host-item.md
@@ -750,15 +750,15 @@
                   href: how-to-protect-parts-of-documents-by-using-content-controls.md
                 - name: Bookmark コントロールのサイズを変更する
                   href: how-to-resize-bookmark-controls.md
-                - name: 'チュートリアル: コンテンツ コントロールによるテンプレートの作成'
+                - name: 'チュートリアル : コンテンツ コントロールによるテンプレートの作成'
                   href: walkthrough-creating-a-template-by-using-content-controls.md
-                - name: 'チュートリアル: カスタム XML 部分へのコンテンツ コントロールのバインディング'
+                - name: 'チュートリアル : カスタム XML 部分へのコンテンツ コントロールのバインド'
                   href: walkthrough-binding-content-controls-to-custom-xml-parts.md
-                - name: 'チュートリアル: ブックマークのショートカット メニューの作成'
+                - name: 'チュートリアル : ブックマークのショートカット メニューの作成'
                   href: walkthrough-creating-shortcut-menus-for-bookmarks.md
-            - name: 'チュートリアル: 初めての Word 用ドキュメント レベルのカスタマイズの作成'
+            - name: 'チュートリアル : 初めての Word 用ドキュメント レベルのカスタマイズの作成'
               href: walkthrough-creating-your-first-document-level-customization-for-word.md
-            - name: 'チュートリアル: 初めての Word 用 VSTO アドインの作成'
+            - name: 'チュートリアル : 初めての Word 用 VSTO アドインの作成'
               href: walkthrough-creating-your-first-vsto-add-in-for-word.md
             - name: 'チュートリアル: 実行時における VSTO アドインの文書へのコントロールの追加'
               href: walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md
@@ -774,7 +774,7 @@
               href: granting-trust-to-office-solutions.md
             - name: Granting Trust to Documents
               href: granting-trust-to-documents.md
-            - name: 安全な配置
+            - name: セキュリティで保護された配置
               href: secure-deployment.md
             - name: 信頼のリストによる Office ソリューションへの信頼の付与
               href: trusting-office-solutions-by-using-inclusion-lists.md
@@ -822,7 +822,7 @@
           items:
             - name: 全般リファレンス (Visual Studio での Office 開発)
               href: general-reference-office-development-in-visual-studio.md
-            - name: Office プライマリ相互運用機能アセンブリ
+            - name: Office Primary Interop Assemblies
               href: office-primary-interop-assemblies.md
             - name: Office ソリューション用アプリケーション マニフェスト
               items:

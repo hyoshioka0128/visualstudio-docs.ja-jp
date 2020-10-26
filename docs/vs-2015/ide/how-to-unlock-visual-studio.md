@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670591"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio のロックを解除する方法
@@ -38,7 +38,7 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>プロダクト キーを使って Visual Studio のロックを解除するには
 
-1. **[ファイル] > [アカウントの設定]** を選んで [アカウント設定] ダイアログを開き、 **[プロダクト キーを使用してライセンスを取得します]** リンクをクリックします。
+1. [ **ファイル > アカウントの設定** ] を選択して [アカウント設定] ダイアログを開き、[**プロダクトキーを使用したライセンス**] リンクをクリックします。
 
 2. 所定の場所にプロダクト キーを入力します。
 
@@ -50,7 +50,7 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 ### <a name="updating-stale-licenses"></a>古いライセンスの更新
  Visual Studio のライセンスが古くなっているという、次のようなメッセージが表示されることがあります。
 
- ![Visual Studio の [ユーザー情報] ダイアログ](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Visual Studio の [ユーザー情報] ダイアログ](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  このメッセージは、使用しているサブスクリプションはまだ有効だが、サブスクリプションを最新の状態に維持するために Visual Studio が使用するライセンス トークンが更新されなかったため、次のいずれかの理由でライセンス トークンが古くなったことを示します。
 
@@ -70,7 +70,7 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 
 1. サブスクリプションを更新します。 使用中のライセンスの詳細については、[ファイル] > [アカウントの設定] ダイアログで右側にあるライセンス情報を参照してください。
 
-2. 別のアカウントに関連付けられている別のサブスクリプションを持っている場合は、[ファイル] > [アカウントの設定] ダイアログの左側にある [すべてのアカウント] 一覧にそのアカウントを追加するために、[アカウントの追加...] リンクをクリックしてください。
+2. 別のアカウントに関連付けられている別のサブスクリプションを持っている場合は、[ファイル] > [アカウントの設定] ダイアログの左側にある [すべてのアカウント] 一覧にそのアカウントを追加するために、[アカウントの追加...] リンク。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)

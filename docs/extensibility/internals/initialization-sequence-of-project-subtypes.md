@@ -1,5 +1,5 @@
 ---
-title: プロジェクトサブタイプの初期化シーケンス |マイクロソフトドキュメント
+title: プロジェクトのサブタイプの初期化シーケンス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05a3c312f61dd2b2c63c3f38ef8bac2203b326db
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707633"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>プロジェクト サブタイプの初期化シーケンス
-環境は、基本プロジェクト ファクトリの実装を呼び出すことによって<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>プロジェクトを構築します。 プロジェクト ファイルの拡張子のプロジェクトの種類 GUID リストが空でないと環境が判断したときに、プロジェクト のサブタイプの構築が開始されます。 プロジェクト ファイルの拡張子とプロジェクト GUID は、プロジェクト[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]の[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]種類を指定します。 たとえば、.vbproj 拡張子と {F184B08F-C81C-45F6-A57F-5ABD9991F28F} は[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]プロジェクトを識別します。
+環境では、の基本プロジェクトファクトリの実装を呼び出すことによって、プロジェクトを構築し <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> ます。 プロジェクトのサブタイプの構造は、プロジェクトファイルの拡張子に対するプロジェクトの種類の GUID リストが空でないと判断したときに開始されます。 プロジェクトファイルの拡張子とプロジェクト GUID は、プロジェクトがプロジェクトの種類であるか、またはプロジェクトであるかを指定し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ます。 たとえば、.vbproj 拡張子と {F184B08F-C81C-45F6-A57F-5ABD9991F28F} はプロジェクトを識別します [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。
 
-## <a name="environments-initialization-of-project-subtypes"></a>環境のプロジェクト サブタイプの初期化
- 次の手順では、複数のプロジェクト サブタイプによって集計されたプロジェクト システムの初期化順序を詳しく説明します。
+## <a name="environments-initialization-of-project-subtypes"></a>環境におけるプロジェクトのサブタイプの初期化
+ 次の手順では、複数のプロジェクトサブタイプによって集計されたプロジェクトシステムの初期化シーケンスについて詳しく説明します。
 
-1. 環境は基本プロジェクトの<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>を呼び出し、プロジェクトがプロジェクト ファイルを解析している間に、プロジェクトの種類の集計の GUID`null`リストが . プロジェクトはプロジェクトの直接作成を中止します。
+1. 環境は基本プロジェクトのを呼び出し、プロジェクト <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> はそのプロジェクトファイルを解析しますが、[プロジェクトの種類の集計] の一覧ではないことを検出し `null` ます。 プロジェクトはプロジェクトの直接作成を中止します。
 
-2. プロジェクトは、`QueryService`環境<xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject>のメソッドの実装を使用してプロジェクトのサブタイプを作成するサービス<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>を呼び出します。 このメソッド内では、環境は、プロジェクトの種類 GUID<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>の<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>リスト<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>をウォークしながら、最も外側のプロジェクト サブタイプから始めて、 の実装とメソッドに対して再帰的な関数呼び出しを行います。
+2. プロジェクトは、 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> メソッドの環境の実装を使用してプロジェクトのサブタイプを作成するために、サービスでを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> ます。 このメソッド内では、環境によって、の実装に対して再帰的な関数呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> が行わ <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> れます。また、プロジェクトの種類の guid の一覧を調べている間は、最も外側のプロジェクトのサブタイプから開始されます。
 
-     初期化手順の詳細を次に示します。
+     次に、初期化の手順の詳細を示します。
 
-    1. 環境のメソッドの実装は、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>次の関数`HrCreateInnerProj`宣言を使用してメソッドを呼び出します。
+    1. 環境のメソッドの実装は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> `HrCreateInnerProj` 次の関数宣言を使用してメソッドを呼び出します。
 
-         \<>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
-         この関数が初めて呼び出されたとき、つまり、最も外側のプロジェクトサブタイプに対して、`pOuter`パラメータ`pOwner`とパラメータが渡`null`され、関数は最も外側のプロジェクトサブ`IUnknown`タイプ`pOuter`をに設定します。
+         この関数が初めて呼び出されたとき、つまり最も外側のプロジェクトのサブタイプに対してパラメーターとが渡されると、 `pOuter` `pOwner` `null` 関数は最も外側のプロジェクトのサブタイプ `IUnknown` をに設定し `pOuter` ます。
 
-    2. 次に、一`HrCreateInnerProj`覧内の 2 番目のプロジェクトの種類の GUID を持つ関数を呼び出します。 この GUID は、集約シーケンスで基本プロジェクトに向かってステップインする 2 番目の内部プロジェクトサブタイプに対応します。
+    2. 次に、環境は、 `HrCreateInnerProj` リスト内の2番目のプロジェクトの種類の GUID を使用して関数を呼び出します。 この GUID は、集計シーケンスの基本プロジェクトにステップインする2番目の内部プロジェクトサブタイプに対応します。
 
-    3. `pOuter`は、最も外側の`IUnknown`プロジェクトサブタイプの を指し示`HrCreateInnerProj`し、 の<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>実装を呼び出し、その<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>後に、 の実装を呼び出します。 メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>では、最も外側`IUnknown`のプロジェクトサブタイプの制御で渡します。 `pOuter` 所有プロジェクト (内部プロジェクトサブタイプ) は、ここで集計プロジェクト オブジェクトを作成する必要があります。 メソッドの<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>実装では、集約される内部プロジェクト`IUnknown`の へのポインターを渡します。 これら 2 つのメソッドは、集計オブジェクトを作成し、実装は、プロジェクトのサブタイプがそれ自体への参照カウントを保持しないように、COM の集計規則に従う必要があります。
+    3. `pOuter`は、 `IUnknown` 最も外側のプロジェクトのサブタイプのをポイントし、の `HrCreateInnerProj` 実装を呼び出した <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> 後、の実装を呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> ます。 メソッドでは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> `IUnknown` 最も外側のプロジェクトのサブタイプの制御を渡し `pOuter` ます。 所有されているプロジェクト (内部プロジェクトのサブタイプ) は、ここで集計プロジェクトオブジェクトを作成する必要があります。 メソッドの実装では、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> 集計される内部プロジェクトのへのポインターを渡し `IUnknown` ます。 これらの2つのメソッドは、集計オブジェクトを作成します。実装では、プロジェクトのサブタイプがそれ自体に参照カウントを保持しないようにするために、COM 集計規則に従う必要があります。
 
-    4. `HrCreateInnerProj`の実装を呼<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>び出します。 このメソッドでは、プロジェクトのサブタイプは初期化作業を行います。 たとえば、ソリューション イベントを に<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>登録できます。
+    4. `HrCreateInnerProj` の実装を呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> ます。 このメソッドでは、プロジェクトのサブタイプは初期化に使用されます。 たとえば、にソリューションイベントを登録でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> ます。
 
-    5. `HrCreateInnerProj`は、リスト内の最後の GUID (基本プロジェクト) に到達するまで再帰的に呼び出されます。 これらの呼び出しごとに、c から d までのステップが繰り返されます。 `pOuter`は、集計の各レベルの最`IUnknown`も外側のプロジェクト サブタイプを指します。
+    5. `HrCreateInnerProj` は、リスト内の最後の GUID (基本プロジェクト) に到達するまで再帰的に呼び出されます。 これらの各呼び出しについて、c から d までの手順が繰り返されます。 `pOuter` は、集計レベルごとに最も外側のプロジェクトサブタイプを指し `IUnknown` ます。
 
 ## <a name="example"></a>例
 
-次の例では、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>環境によって実装されるメソッドの概略表現で、プログラムプロセスの詳細を示します。 コードは単なる例です。コンパイルを意図したものではなく、わかりやすくするためにすべてのエラー チェックが削除されました。
+次の例で <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> は、環境によって実装される、メソッドのおおよその表現でのプログラムプロセスの詳細について説明します。 コードはほんの一例です。これはコンパイルするためのものではなく、わかりやすくするためにすべてのエラーチェックが削除されました。
 
 ```cpp
 HRESULT CreateAggregateProject
@@ -131,7 +131,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)

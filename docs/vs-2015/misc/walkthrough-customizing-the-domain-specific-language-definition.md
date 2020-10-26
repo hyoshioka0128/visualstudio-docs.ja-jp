@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 808fb54ea97c27af912ad02ab458bb2fd3e74ff6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605113"
 ---
 # <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>チュートリアル: ドメイン固有言語定義のカスタマイズ
-このコンテンツは互換性のために残されています。 「[ドメイン固有言語のカスタマイズと拡張」を](../modeling/customizing-and-extending-a-domain-specific-language.md)参照してください。
+このコンテンツは互換性のために残されています。 「 [ドメイン固有言語のカスタマイズと拡張」を](../modeling/customizing-and-extending-a-domain-specific-language.md)参照してください。

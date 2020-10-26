@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179033"
 ---
 # <a name="execution-time-threads-view"></a>実行時間 (スレッド ビュー)
@@ -31,6 +31,6 @@ ms.locfileid: "68179033"
   
  現在のビューのすべての実行セグメントについて、従来のサンプリング プロファイルを参照するには、表示されているタイムライン プロファイルで **[実行]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [実行プロファイル レポート](../profiling/execution-profile-report.md)   
+## <a name="see-also"></a>参照  
+ [実行プロファイルレポート](../profiling/execution-profile-report.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

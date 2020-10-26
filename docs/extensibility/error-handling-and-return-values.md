@@ -1,5 +1,5 @@
 ---
-title: エラー処理と戻り値 |マイクロソフトドキュメント
+title: エラー処理と戻り値 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,48 +13,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711930"
 ---
 # <a name="error-handling-and-return-values"></a>エラー処理と戻り値
-VSPackage と COM は、エラーに対して同じアーキテクチャを使用します。 および`SetErrorInfo``GetErrorInfo`関数は、Win32 アプリケーション プログラミング インターフェイス (API) の一部です。 統合開発環境 (IDE) 内の VSPackage は、エラー通知を受信したときに、リッチ エラー情報を記録するこれらのグローバル Win32 API を呼び出すことができます。 には[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]、エラー情報を管理するための相互運用機能アセンブリが用意されています。
+Vspackage と COM は、同じアーキテクチャを使用してエラーを発生させることができます。 `SetErrorInfo`関数と `GetErrorInfo` 関数は、Win32 アプリケーションプログラミングインターフェイス (API) の一部です。 統合開発環境 (IDE: integrated development environment) のすべての VSPackage は、これらのグローバル Win32 Api を呼び出して、エラー通知を受け取ったときに豊富なエラー情報を記録できます。 は、 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] エラー情報を管理する相互運用機能アセンブリを提供します。
 
 ## <a name="interop-methods"></a>相互運用メソッド
- 利便性のため、IDE には、Win32 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>API を呼び出す代わりに使用するメソッドが用意されています。 マネージ コードでは<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>、 を使用します。 エラー メッセージ`HRESULT`が表示されるレベル (コマンド ハンドラを実装<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>するオブジェクトの場合が多い) にエラーが発生した場合、IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>は別のメソッドを使用して適切なメッセージ ボックスを表示します。 マネージ コードでは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>メソッドを使用します。
+ IDE には、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> Win32 api を呼び出す代わりに、を使用するためのメソッドが用意されています。 マネージコードでは、を使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> します。 エラーメッセージが表示されるレベルでエラーが発生した場合 `HRESULT` (これは、多くの場合、コマンドハンドラーを実装しているオブジェクトです <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> )、IDE は別のメソッドであるを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> 適切なメッセージボックスを表示します。 マネージコードでは、メソッドを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> ます。
 
- VSPackage 実装者として、COM オブジェクトは通常を`ISupportErrorInfo`実装します。 インターフェイス`ISupportErrorInfo`は、リッチ エラー情報がコール チェーンの垂直方向に移動できることを保証します。 複数のプロセスまたはスレッド間で使用されるオブジェクトは、豊富`ISupportErrorInfo`なエラー情報が呼び出し元に正しくマーシャリングされるようにサポートする必要があります。
+ VSPackage の実装者は、通常、COM オブジェクトがを実装 `ISupportErrorInfo` します。 `ISupportErrorInfo`インターフェイスにより、豊富なエラー情報が呼び出しチェーンの上下に移動することができます。 プロセス間またはスレッド間で使用される可能性のあるオブジェクトは `ISupportErrorInfo` 、豊富なエラー情報が呼び出し元に正しくマーシャリングされるようにをサポートする必要があります。
 
- VSPackage に関連し、エディター ファクトリ、エディター、階層、提供サービスなど、IDE の拡張に関係するすべてのオブジェクトは、豊富なエラー情報をサポートする必要があります。 IDE では、これらの VSPackage オブジェクトを実装`ISupportErrorInfo`する必要はありませんが、常に推奨されます。
+ エディターファクトリ、エディター、階層、提供されているサービスなど、Vspackage に関連し、IDE の拡張に関係するすべてのオブジェクトは、豊富なエラー情報をサポートする必要があります。 IDE では、これらの VSPackage オブジェクトを実装する必要はありません `ISupportErrorInfo` が、常に推奨されます。
 
- IDE は、エラー情報を報告し、 IDE に伝搬[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]するたびに、`HRESULT`のユーザーに表示します。 IDE は、オブジェクトを作成`ErrorInfo`するためのメカニズムでもあります。
+ Ide は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] `HRESULT` が ide に反映されるたびに、エラー情報をレポートしてユーザーに表示する役割を担います。 IDE は、オブジェクトを作成するためのメカニズムでも `ErrorInfo` あります。
 
 ## <a name="general-guidelines"></a>一般的なガイドライン
- メソッドとメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>を<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>使用して、VSPackage 実装の内部エラーを設定および報告することもできます。 ただし、一般的な規則として、VSPackage でエラー メッセージを処理するための次のガイドラインに従います。
+ メソッドとメソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> VSPackage 実装の内部にあるエラーを設定し、報告することができます。 ただし、一般的な規則として、次のガイドラインに従って、VSPackage でエラーメッセージを処理します。
 
-- VSPackage COM オブジェクトに実装`ISupportErrorInfo`します。
+- `ISupportErrorInfo`VSPACKAGE COM オブジェクトにを実装します。
 
-- を実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A><xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>するオブジェクトでメソッドを呼び出すエラー報告機構を作成します。
+- を実装するオブジェクトでメソッドを呼び出すエラー報告機構を作成 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> します。
 
-- IDE で、このメソッドを使用して<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>ユーザーにエラーを表示します。
+- IDE で、メソッドを使用してユーザーにエラーを表示させ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> ます。
 
 ## <a name="error-information-in-the-ide"></a>IDE のエラー情報
- 以下の規則は、IDE でエラー情報を[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]処理する方法を示しています。
+ 次の規則は、IDE でのエラー情報の処理方法を示してい [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
-- 古いエラー情報がユーザーに報告されないことを保証する防御策として、メソッドを<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>呼び出す関数はまずメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>を呼び出す必要があります。 新しい`null`エラー情報を設定する可能性のあるものを呼び出す前に、キャッシュされたエラー メッセージをクリアするために渡します。
+- 古いエラー情報がユーザーに報告されないことを保証するための防御戦略として、メソッドを呼び出す関数は <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> 最初にメソッドを呼び出す必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> ます。 `null`新しいエラー情報を設定する可能性のあるものを呼び出す前に、キャッシュされたエラーメッセージをクリアするためにを渡します。
 
-- エラー メッセージを直接報告しない関数は、エラー<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>`HRESULT`を返す場合にのみメソッドを呼び出すことができます。 関数へのエントリまたはを返すときに`ErrorInfo`、 をクリアすることは許されます<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 このルールの唯一の例外は、呼び出し`HRESULT`が、受信側の側が明示的に回復するか、または安全に無視できるエラーを返す場合です。
+- エラーメッセージを直接報告しない関数は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> エラーが返された場合にのみメソッドを呼び出すことができ `HRESULT` ます。 `ErrorInfo`関数またはを返すときに、エントリのをクリアすることが <xref:Microsoft.VisualStudio.VSConstants.S_OK> できます。 この規則の唯一の例外は、 `HRESULT` 受信側が明示的に回復または安全に無視できるエラーを呼び出しが返す場合です。
 
-- エラー`HRESULT`を明示的に無視する当事者は、 を使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>して<xref:Microsoft.VisualStudio.VSConstants.S_OK>メソッドを呼び出す必要があります。 そうしないと、他`ErrorInfo`のパーティが独自`ErrorInfo`のを提供せずにエラーが発生したときに、オブジェクトが誤って使用される可能性があります。
+- エラーを明示的に無視するすべてのパーティ `HRESULT` は、を使用してメソッドを呼び出す必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> <xref:Microsoft.VisualStudio.VSConstants.S_OK> ます。 そうしない `ErrorInfo` と、別のパーティが単独でエラーを生成するときに、オブジェクトが誤って使用されることがあり `ErrorInfo` ます。
 
-- エラー`HRESULT`を発生させたすべてのメソッドは、豊富なエラー情報<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>を提供するためにメソッドを呼び出すことをお勧めします。 返された`HRESULT`エラーが特殊な`FACILITY_ITF`場合は、メソッドが適切な`ErrorInfo`オブジェクトを提供する必要があります。 返されたエラーが標準システム エラー (たとえば、 <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>、 <xref:Microsoft.VisualStudio.VSConstants.E_ABORT> <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>、、<xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>など) の場合は、メソッドを明示的に呼び出さずにエラー<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>コードを返してもかまいません。 防御的なコーディング戦略として、エラー (`HRESULT`システム エラーを含む)<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>を発生させる場合`ErrorInfo`は、エラーをより詳細に記述するか、`null`または を常にメソッドを呼び出します。
+- エラーが発生したすべてのメソッド `HRESULT` は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> 豊富なエラー情報を提供するためにメソッドを呼び出すことをお勧めします。 返された `HRESULT` が特殊なエラーである場合は、 `FACILITY_ITF` 適切なオブジェクトを提供するためにメソッドが必要です `ErrorInfo` 。 返されたエラーが標準のシステムエラー (、、、など) の場合は、 <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY> <xref:Microsoft.VisualStudio.VSConstants.E_ABORT> <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG> メソッドを <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED> 明示的に呼び出すことなく、エラーコードを返すことができます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> 防御的なコーディング方法として、エラーを発生させる `HRESULT` (システムエラーを含む) 場合は、エラーを詳細に説明するか、またはを使用して、常に <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> メソッドを呼び出し `ErrorInfo` `null` ます。
 
-- 別の呼び出しによって発生したエラーを返すすべての関数は、オブジェクトを変更`HRESULT`せずに、失敗した呼び出しから`ErrorInfo`受け取った情報を渡す必要があります。
+- 別の呼び出しによって発生したエラーを返すすべての関数は、 `HRESULT` オブジェクトを変更せずに、内の失敗した呼び出しから受け取った情報を渡す必要があり `ErrorInfo` ます。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
-- [エラー情報を設定します ( コンポーネントオートメーション )](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
+- [SetErrorInfo (コンポーネントオートメーション)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
 - [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)
-- [インターフェイス](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)
+- [ISupportErrorInfo インターフェイス](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

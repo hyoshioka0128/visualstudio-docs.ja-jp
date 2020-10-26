@@ -1,5 +1,5 @@
 ---
-title: Iデバッグフィールド::ゲットタイプ情報 |マイクロソフトドキュメント
+title: 'IDebugField:: GetTypeInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728779"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-このメソッドは、シンボルまたは型に関する型に依存しない情報を取得します。
+このメソッドは、記号または型に関する型に依存しない情報を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +41,15 @@ int GetTypeInfo(
 
 ## <a name="parameters"></a>パラメーター
 `pTypeInfo`\
-[アウト]指定された[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)構造体の型情報を返します。
+入出力指定された [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体の型情報を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 型に依存しない情報には、たとえば、AppDomain、モジュール、シンボルを含むクラスが含まれます。
+## <a name="remarks"></a>解説
+ 型に依存しない情報には、たとえば、AppDomain、モジュール、およびシンボルを含むクラスが含まれます。
 
 ## <a name="see-also"></a>関連項目
-- [Gettype](../../../extensibility/debugger/reference/idebugfield-gettype.md)
+- [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

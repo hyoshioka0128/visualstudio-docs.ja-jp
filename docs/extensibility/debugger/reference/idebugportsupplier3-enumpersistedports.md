@@ -1,5 +1,5 @@
 ---
-title: ポートサプライヤー3::列挙永続ポート |マイクロソフトドキュメント
+title: 'IDebugPortSupplier3:: EnumPersistedPorts |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724454"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-このメソッドは、永続化されたポートの一覧の列挙を許可するオブジェクトを取得します。
+このメソッドは、永続化されたポートの一覧を列挙できるオブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>パラメーター
 `PortNames`\
-[in]永続化されたポート間で検索および返すポート名のリストを含む[BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)構造体。 これらの名前を持つ永続化されたポートのみが返されます。
+から永続化されたポートを検索して返すポート名のリストを格納する [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) 構造体。 これらの名前を持つ永続化されたポートのみが返されます。
 
 `ppEnum`\
-[アウト][インターフェイスを](../../../extensibility/debugger/reference/ienumdebugports2.md)実装するオブジェクト。
+入出力 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) インターフェイスを実装するオブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 永続化されたポートは、ポート サプライヤーがインスタンス化されるときに読み込まれ、ポート サプライヤーが破棄されたときに保存されます。
+## <a name="remarks"></a>注釈
+ 永続化されたポートは、ポート供給元がインスタンス化されるときに読み込まれ、ポート供給元が破壊されると保存されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

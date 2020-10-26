@@ -1,5 +1,5 @@
 ---
-title: '方法: プロファイル ツールのコール トレース レポートを作成する | Microsoft Docs'
+title: '方法: プロファイリング ツールのコール トレース レポートを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbf92b38f9408455e10048fbd4a5e84fdf822ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547993"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>方法: プロファイリング ツールのコール トレース レポートを作成する
@@ -41,6 +41,6 @@ ms.locfileid: "85547993"
     |*VSPFile*|プロファイル データ (.vsp または .vsps) ファイル。 完全パスまたは部分パスで指定できます。|  
     |Xml|XML 形式のレポートを生成します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [方法: Windows イベントトレーシング (ETW) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
- [プロファイリング ツールの API](../profiling/profiling-tools-apis.md)
+ [プロファイルツール Api](../profiling/profiling-tools-apis.md)

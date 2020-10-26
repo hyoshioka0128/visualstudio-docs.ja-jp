@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5437e3a5d4fb0d6d33d570eb4d8923245cb287b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905897"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>方法: ドキュメントデータにビューをアタッチする
@@ -40,7 +40,7 @@ ms.locfileid: "85905897"
    > 既存のドキュメントデータオブジェクトを使用できるかどうかを判断するために、プライベート実装の実際のクラスへのポインターをキャストすることによって、インターフェイスの実装に関するプライベートな知識を使用することもでき [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] ます。 たとえば、すべての標準エディターは `IVsPersistFileFormat` 、から継承するを実装し <xref:Microsoft.VisualStudio.OLE.Interop.IPersist> ます。 したがって、に対してを呼び出すことができます `QueryInterface` <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A> 。また、既存のドキュメントデータオブジェクトのクラス id が実装のクラス id と一致する場合は、ドキュメントデータオブジェクトを操作できます。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- Visual Studio がメソッドの実装を呼び出すと <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 、パラメーター内の既存のドキュメントデータオブジェクトへのポインターが渡さ `punkDocDataExisting` れます (存在する場合)。 で返されたドキュメントデータオブジェクトを調べ `punkDocDataExisting` て、ドキュメントデータオブジェクトがエディターに適しているかどうかを確認します。これについては、このトピックの手順 4. のメモを参照してください。 適切な場合は、「[複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)」で説明されているように、エディターファクトリはデータの2番目のビューを提供する必要があります。 そうでない場合は、適切なエラーメッセージが表示されます。
+ Visual Studio がメソッドの実装を呼び出すと <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 、パラメーター内の既存のドキュメントデータオブジェクトへのポインターが渡さ `punkDocDataExisting` れます (存在する場合)。 で返されたドキュメントデータオブジェクトを調べ `punkDocDataExisting` て、ドキュメントデータオブジェクトがエディターに適しているかどうかを確認します。これについては、このトピックの手順 4. のメモを参照してください。 適切な場合は、「 [複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)」で説明されているように、エディターファクトリはデータの2番目のビューを提供する必要があります。 そうでない場合は、適切なエラーメッセージが表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)

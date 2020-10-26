@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094487"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 
 1 つのプロジェクト ファイルの内容を別のプロジェクト ファイルにインポートします。
 
-\<Project> \<Import>
+\<Project>
+\<Import>
 
 ## <a name="syntax"></a>構文
 
@@ -52,7 +53,7 @@ ms.locfileid: "79094487"
 
 ### <a name="child-elements"></a>子要素
 
- None
+ なし
 
 ### <a name="parent-elements"></a>親要素
 
@@ -61,7 +62,7 @@ ms.locfileid: "79094487"
 | [プロジェクト](../msbuild/project-element-msbuild.md) | MSBuild プロジェクト ファイルの必須のルート要素です。 |
 | [ImportGroup](../msbuild/importgroup-element.md) | オプションの条件下でグループ化された `Import` 要素のコレクションが格納されます。 |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
  `Import` 要素を使用すると、複数のプロジェクト ファイルに共通するコードを再利用できます。 これにより、共有されたコードに対する更新が、そのコードをインポートしたすべてのプロジェクトに反映されるため、コードの保守が容易になります。
 

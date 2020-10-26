@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 669be50e11d3bf17d617c361b63f807149dbc823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658578"
 ---
 # <a name="t4-include-directive"></a>T4 インクルード ディレクティブ
@@ -27,13 +27,13 @@ ms.locfileid: "72658578"
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` には、絶対パスを指定することも、現在のテンプレート ファイルを基準とした相対パスを指定することもできます。
+- `filePath` 絶対パス、または現在のテンプレートファイルを基準とした相対パスを指定できます。
 
-   また、特定の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能で独自のディレクトリを指定して、インクルード ファイルを検索することもできます。 たとえば、視覚化およびモデリング SDK (DSL ツール) がインストールされている場合、次のフォルダーがインクルードリストに追加されます: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`。
+   また、特定の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能で独自のディレクトリを指定して、インクルード ファイルを検索することもできます。 たとえば、視覚化およびモデリング SDK (DSL ツール) をインストールすると、次のフォルダーがインクルードリストに追加され `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` ます。
 
    追加されるこれらのインクルード フォルダーは、インクルード ファイルの拡張子によって異なります。 たとえば、DSL ツールのインクルード フォルダーは、インクルード ファイルの拡張子が `.tt` の場合にのみ追加されます。
 
-- `filePath` には、"%" で区切られた環境変数を含めることもできます。 (例:
+- `filePath` には、"%" で区切られた環境変数を含めることもできます。 次に例を示します。
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -41,7 +41,7 @@ ms.locfileid: "72658578"
 
 - インクルード ファイルの名前に、拡張子 `".tt"` を使用する必要はありません。
 
-   必要に応じて、インクルード ファイルには、`".t4"` など別の拡張子を使用できます。 これは、`.tt` ファイルをプロジェクトに追加すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 自動的にその**カスタムツール**プロパティが `TextTemplatingFileGenerator` に設定されるためです。 通常、インクルード ファイルを個別に変換することは望ましくありません。
+   必要に応じて、インクルード ファイルには、`".t4"` など別の拡張子を使用できます。 これは、プロジェクトにファイルを追加すると `.tt` 、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] その **カスタムツール** プロパティが自動的にに設定されるためです `TextTemplatingFileGenerator` 。 通常、インクルード ファイルを個別に変換することは望ましくありません。
 
    一方、ファイルの拡張子によって、インクルード ファイルの検索先となる追加フォルダーが決まる場合があることに注意してください。 これは、インクルード ファイルに他のファイルが含まれている場合に重要となります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "72658578"
 
 - 他の複数のインクルード ファイルから起動された場合もテンプレートが 1 度だけインクルードされるようにするには、`once="true"` を使用します。
 
-   この機能を使用すると、他のスニペットに既に含まれていることを気にせずに、再利用可能な T4 スニペットのライブラリを簡単に構築できます。  たとえば、テンプレートの処理とC#生成を処理する、非常に詳細なスニペットのライブラリがあるとします。  これらは、例外の生成など、タスク固有のいくつかのユーティリティによって使用されます。これは、それ以上のアプリケーション固有のテンプレートから使用できます。 依存関係グラフを描画すると、何回もインクルードされるスニペットがあることがわかります。 ただし、`once` パラメーターが指定されると、以降はインクルードが無効になります。
+   この機能を使用すると、他のスニペットに既に含まれていることを気にせずに、再利用可能な T4 スニペットのライブラリを簡単に構築できます。  たとえば、テンプレートの処理と C# の生成を処理する、非常に詳細なスニペットのライブラリがあるとします。  これらは、例外の生成など、タスク固有のいくつかのユーティリティによって使用されます。これは、それ以上のアプリケーション固有のテンプレートから使用できます。 依存関係グラフを描画すると、何回もインクルードされるスニペットがあることがわかります。 ただし、`once` パラメーターが指定されると、以降はインクルードが無効になります。
 
   **MyTextTemplate.tt:**
 
@@ -65,7 +65,7 @@ Output message 5 (from top template).
 
 ```
 
- **Textfile1.txt:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
 
 ```
 
- **Textfile2.txt:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -97,7 +97,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **生成されたファイル (MyTextTemplate .txt):**
+ **MyTextTemplate.txt (結果として生成されたファイル):**
 
 ```
 Output message 1 (from top template).
@@ -112,7 +112,7 @@ Output message 5 (from top template).
 
 ```
 
-## <a name="msbuild"></a>MSBuild および Visual Studio でのプロジェクトプロパティの使用
+## <a name="using-project-properties-in-msbuild-and-visual-studio"></a><a name="msbuild"></a> MSBuild および Visual Studio でのプロジェクトプロパティの使用
  include ディレクティブで $(SolutionDir) などの Visual Studio マクロを使用できますが、MSBuild では動作しません。 ビルド コンピューターでテンプレートを変換する場合、代わりにプロジェクトのプロパティを使用する必要があります。
 
  .csproj ファイルまたは .vbproj ファイルを編集してプロジェクトのプロパティを定義します。 この例では、`myIncludeFolder` という名前のプロパティを定義します。

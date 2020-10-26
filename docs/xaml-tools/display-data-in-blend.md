@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329086"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Blend for Visual Studio でデータを表示する
@@ -21,7 +21,7 @@ ms.locfileid: "85329086"
 ページのレイアウトをカスタマイズする際、デザイナーでサンプル データを表示できます。 サンプル データは最初から、または既存のクラスを使用して生成できます。 また、アプリの実行時にアプリに表示される*ライブ データ*にも接続できます。
 
 > [!NOTE]
-> Blend の [**データ**] パネルは、.NET Framework を対象とするプロジェクトでのみサポートされます。 これは、.NET Core を対象とする UWP プロジェクトまたはプロジェクトではサポートされていません。
+> Blend の [ **データ** ] パネルは、.NET Framework を対象とするプロジェクトでのみサポートされます。 これは、.NET Core を対象とする UWP プロジェクトまたはプロジェクトではサポートされていません。
 
 ## <a name="generate-sample-data"></a>サンプル データを作成する
 

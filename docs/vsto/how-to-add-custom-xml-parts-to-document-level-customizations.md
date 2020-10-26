@@ -18,19 +18,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92148a6f084a4cc04b4587781e750e4fd0df133f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538334"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>方法: ドキュメントレベルのカスタマイズにカスタム XML 部分を追加する
-  ドキュメント レベルのカスタマイズにカスタム XML 部分を作成すると、Microsoft Office Excel ブックまたは Microsoft Office Word 文書に XML データを格納できます。 詳細については、「[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)」を参照してください。
+  ドキュメント レベルのカスタマイズにカスタム XML 部分を作成すると、Microsoft Office Excel ブックまたは Microsoft Office Word 文書に XML データを格納できます。 詳細については、「 [カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)」を参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
-> Visual Studio では、Microsoft Office PowerPoint のドキュメント レベルのプロジェクトは提供していません。 VSTO アドインを使用してカスタム XML 部分を PowerPoint プレゼンテーションに追加する方法については、「[方法: vsto アドインを使用してカスタム xml 部分をドキュメントに追加する](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)」を参照してください。
+> Visual Studio では、Microsoft Office PowerPoint のドキュメント レベルのプロジェクトは提供していません。 VSTO アドインを使用してカスタム XML 部分を PowerPoint プレゼンテーションに追加する方法については、「 [方法: vsto アドインを使用してカスタム xml 部分をドキュメントに追加する](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)」を参照してください。
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>カスタム XML 部分を Excel ブックに追加するには
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject |Microsoft Docs
+title: 'IDebugAlias:: GetObject |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bced4d6ea45cc33c3811e42428aa43c334b7b83b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187236"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このエイリアスが適用されるオブジェクトを取得します。  
+このエイリアスの対象となるオブジェクトを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,11 +40,11 @@ int GetObject(
   
 #### <a name="parameters"></a>パラメーター  
  `ppObject`  
- [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)このエイリアスを表します。  
+ 入出力このエイリアスが表す [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

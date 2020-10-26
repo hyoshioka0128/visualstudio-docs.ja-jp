@@ -2,12 +2,12 @@
   href: index.yml
 - name: 概要
   items:
-    - name: 配置の概要
+    - name: 配置でのはじめに
+      href: deploying-applications-services-and-components.md
+    - name: フォルダー、IIS、または Azure にデプロイする
       href: deploying-applications-services-and-components-resources.md
 - name: クイックスタート
   items:
-    - name: 配置でのはじめに
-      href: deploying-applications-services-and-components.md
     - name: Azure App Service に配置する
       href: quickstart-deploy-to-azure.md
     - name: Linux 用 App Service に配置する
@@ -53,11 +53,11 @@
     - name: Node.js
       items:
         - name: Linux App Service に発行する
-          href: /visualstudio/javascript/publish-nodejs-app-azure
+          href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
         - name: Azure App Service に発行する
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
+          href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: 使い方ガイド
   items:
     - name: ClickOnce のセキュリティと配置
@@ -302,3 +302,7 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: ClickOnce アンマネージ API リファレンス
           href: clickonce-unmanaged-api-reference.md
+    - name: Visual Studio Installer Projects リファレンス
+      items:
+        - name: Visual Studio Installer Projects 拡張機能 と .NET Core 3.1
+          href: installer-projects-net-core.md

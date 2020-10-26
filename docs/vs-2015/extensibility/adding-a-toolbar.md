@@ -12,32 +12,32 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184867"
 ---
 # <a name="adding-a-toolbar"></a>ツール バーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、Visual Studio IDE にツールバーを追加する方法を示します。  
+このチュートリアルでは、Visual Studio IDE にツールバーを追加する方法について説明します。  
   
- ツールバーは、水平方向または垂直方向のストリップで、コマンドにバインドされているボタンが含まれています。 実装によって IDE でツールバーの位置を変更、IDE のメイン ウィンドウの任意の辺にドッキングしたり他のウィンドウの前に常に加えられました。  
+ ツールバーは、コマンドにバインドされているボタンを含む、水平または垂直のストリップです。 実装によっては、IDE のツールバーを再配置したり、メイン IDE ウィンドウの任意の辺にドッキングしたり、他のウィンドウの手前に表示したりすることができます。  
   
- ユーザーがさらに、ツールバーにコマンドを追加またはを使用してから、削除、**カスタマイズ** ダイアログ ボックス。 通常、Vspackage では、ツールバーは、ユーザーがカスタマイズできます。 IDE がカスタマイズをすべてを処理し、VSPackage がコマンドに応答します。 VSPackage は、コマンドが物理的に配置されている場所を認識する必要はありません。  
+ さらに、ユーザーはツールバーにコマンドを追加したり、[ **カスタマイズ** ] ダイアログボックスを使用してコマンドを削除したりできます。 通常、Vspackage のツールバーはユーザーがカスタマイズできます。 IDE はすべてのカスタマイズを処理し、VSPackage はコマンドに応答します。 VSPackage は、コマンドが物理的に配置されている場所を知る必要はありません。  
   
- メニューの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。  
+ メニューの詳細については、「 [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)」を参照してください。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+## <a name="prerequisites"></a>前提条件  
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
-## <a name="creating-an-extension-with-a-toolbar"></a>ツールバーと拡張機能の作成  
- という名前の VSIX プロジェクトを作成する`IDEToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ToolbarTestCommand**します。 これを行う方法については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)です。  
+## <a name="creating-an-extension-with-a-toolbar"></a>ツールバーを使用した拡張機能の作成  
+ という名前の VSIX プロジェクトを作成 `IDEToolbar` します。 **Toolbartestcommand**という名前のメニューコマンド項目テンプレートを追加します。 これを行う方法の詳細については、「 [メニューコマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。  
   
-## <a name="creating-a-toolbar-for-the-ide"></a>IDE のツールバーの作成  
+## <a name="creating-a-toolbar-for-the-ide"></a>IDE 用のツールバーの作成  
   
-1. ToolbarTestCommandPackage.vsct の Symbols セクションを探します。 GuidToolbarTestCommandPackageCmdSet をという名前の GuidSymbol 要素では、次のようにツールバーとツールバー、グループの宣言を追加します。  
+1. ToolbarTestCommandPackage. vsct で、[シンボル] セクションを探します。 Guidtoolbartestcommand/Mdset という GuidSymbol 要素で、次のようにツールバーとツールバーグループの宣言を追加します。  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -45,7 +45,7 @@ ms.locfileid: "68184867"
   
     ```  
   
-2. コマンドのセクションの上部にあるメニューのセクションを作成します。 メニュー セクションで、ツールバーを定義するには、メニュー要素を追加します。  
+2. [コマンド] セクションの上部で、[メニュー] セクションを作成します。 メニュー要素をメニューセクションに追加して、ツールバーを定義します。  
   
     ```xml  
     <Menus>  
@@ -60,9 +60,9 @@ ms.locfileid: "68184867"
     </Menus>  
     ```  
   
-     ツールバーは、サブメニューのような入れ子にすることはできません。 そのため、親グループを割り当てるにはありません。 またがありません、優先順位を設定するため、ユーザーがツールバーを移動できます。 通常、ツールバーの初期配置がプログラムで定義されているが、ユーザーがそれ以降の変更が保存されます。  
+     ツールバーは、サブメニューのように入れ子にすることはできません。 したがって、親グループを割り当てる必要はありません。 また、ユーザーはツールバーを移動できるため、優先度を設定する必要はありません。 通常、ツールバーの最初の配置はプログラムによって定義されますが、ユーザーによるその後の変更は保持されます。  
   
-3. [グループ](../extensibility/groups-element.md)セクションでは、既存のグループ エントリの後に定義、[グループ](../extensibility/group-element.md)ツールバーのコマンドを格納する要素。  
+3. [ [グループ](../extensibility/groups-element.md) ] セクションで、既存のグループエントリの後に、ツールバーのコマンドを含む [グループ](../extensibility/group-element.md) 要素を定義します。  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -71,7 +71,7 @@ ms.locfileid: "68184867"
     </Group>  
     ```  
   
-4. ツールバーの表示 ボタンを作成します。 [ボタン] セクションで、ツールバーにボタンの親ブロックに置き換えます。 結果として得られるボタン ブロックは、このようになります。  
+4. ツールバーにボタンを表示します。 [ボタン] セクションで、ボタンの親ブロックをツールバーに置き換えます。 結果のボタンブロックは次のようになります。  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -83,13 +83,13 @@ ms.locfileid: "68184867"
     </Button>  
     ```  
   
-     既定では、ツールバーにコマンドが存在しない場合に表示されません。  
+     既定では、ツールバーにコマンドがない場合、ツールバーは表示されません。  
   
 5. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
-6. ツールバーの一覧を取得する Visual Studio のメニュー バーを右クリックします。 選択**テスト ツールバー**します。  
+6. Visual Studio のメニューバーを右クリックすると、ツールバーの一覧が表示されます。 **テストツールバー**を選択します。  
   
-7. ファイル アイコンには、検索の右側にアイコンとして、ツールバーがわかります。 示すメッセージ ボックスが表示アイコンをクリックすると**ToolbarTestCommandPackage します。IDEToolbar.ToolbarTestCommand.MenuItemCallback() 内**します。  
+7. ツールバーが [フォルダーを指定して検索] アイコンの右側にアイコンとして表示されます。 アイコンをクリックすると、[Toolbartestcommandpackage] というメッセージボックスが表示さ **れます。Ide ツールバー内で、ToolbarTestCommand. MenuItemCallback ()** を実行します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コマンド、メニュー、およびツール バー](../extensibility/internals/commands-menus-and-toolbars.md)

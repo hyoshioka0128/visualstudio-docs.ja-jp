@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704592"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 関数をデバッグするには
@@ -43,8 +43,8 @@ NT シンボルを読み込んだ状態で Windows API 関数をデバッグす�
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     装飾名を取得するには、次を参照してください。[装飾名の確認](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0)します。  
+     装飾名を取得するには、「[装飾名の表示](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0)」を参照してください 。  
   
-## <a name="see-also"></a>関連項目  
- [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>参照  
+ [ネイティブコードのデバッグに関する Faq](../debugger/debugging-native-code-faqs.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

@@ -1,5 +1,5 @@
 ---
-title: Idiasession::symsareequiv |Microsoft Docs
+title: 'IDiaSession:: symsAreEquiv |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba8c77d7d97da75ce82fcbe732db64acf633b8af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150213"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-2 つのシンボルが等しいかどうかを確認します。  
+2つの記号が等しいかどうかを確認します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,14 +36,14 @@ HRESULT symsAreEquiv ( 
   
 #### <a name="parameters"></a>パラメーター  
  `symbolA`  
- [in]最初の[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)比較に使用されるオブジェクト。  
+ から比較で使用される最初の [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) オブジェクト。  
   
  `symbolB`  
- [in]2 番目の`IDiaSymbol`比較に使用されるオブジェクト。  
+ から `IDiaSymbol` 比較で使用する2番目のオブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
- シンボルと同じ場合を返します`S_OK`。 それ以外を返します`S_FALSE`、シンボルが同じではありません。 それ以外の場合、エラー コードを返します。  
+ シンボルが等しい場合は、を返し `S_OK` ます。それ以外の場合はを返します `S_FALSE` 。シンボルは等価ではありません。 それ以外の場合は、エラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

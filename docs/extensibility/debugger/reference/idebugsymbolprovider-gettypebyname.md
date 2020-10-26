@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugSymbolProvider:: GetTypeByName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719192"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-このメソッドは、シンボル名をシンボル タイプにマップします。
+このメソッドは、シンボル名をシンボル型にマップします。
 
 ## <a name="syntax"></a>構文
 
@@ -45,19 +45,19 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>パラメーター
 `pszClassName`\
-[in]シンボル名。
+からシンボル名。
 
 `nameMatch`\
-[in]大文字と小文字を区別する、一致の種類を選択します。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体の値。
+から一致の種類 (大文字と小文字を区別するなど) を選択します。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体の値。
 
 `ppField`\
-[アウト]オブジェクトとして[シンボルの種類](../../../extensibility/debugger/reference/idebugfield.md)を返します。
+入出力シンボル型を [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトとして返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、ジェネリック バージョン[です](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)。
+## <a name="remarks"></a>注釈
+ このメソッドは、 [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)のジェネリックバージョンです。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

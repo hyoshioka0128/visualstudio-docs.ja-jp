@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS |マイクロソフトドキュメント
+title: BPRESI_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737724"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
-ブレークポイントの正常な解決に関して取得する情報を指定します。
+ブレークポイントが正常に解決されたかどうかを取得するための情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,30 +48,30 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>フィールド
 `BPRESI_BPRESLOCATION`\
-`bpResLocation` [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造の (ブレークポイント解決の場所) フィールドを初期化/使用します。
+`bpResLocation` [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体の (ブレークポイント解決の場所) フィールドを初期化または使用します。
 
 `BPRESI_PROGRAM`\
-構造体のフィールドを`pProgram`初期化/使用`BP_RESOLUTION_INFO`します。
+構造体のフィールドを初期化/使用し `pProgram` `BP_RESOLUTION_INFO` ます。
 
 `BPRESI_THREAD`\
-構造体のフィールドを`pThread`初期化/使用`BP_RESOLUTION_INFO`します。
+構造体のフィールドを初期化/使用し `pThread` `BP_RESOLUTION_INFO` ます。
 
 `BPRESI_ALLFIELDS`\
 すべてのフィールドを指定します。
 
-## <a name="remarks"></a>Remarks
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のどのフィールドを初期化するかを示すために[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッドに渡されます。
+## <a name="remarks"></a>解説
+[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のどのフィールドを初期化するかを示すために[get解決情報](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッドに渡されます。
 
-これらのフラグは、構造体のどのフィールドが`BP_RESOLUTION_INFO`使用され、その構造体が返されたときに有効かを示すためにも使用されます。
+これらのフラグは、構造体のどのフィールドが使用され、その構造が返されたときに有効であるかを示すためにも使用され `BP_RESOLUTION_INFO` ます。
 
-これらの値はビット単位`OR`で組み合わせることができる。
+これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

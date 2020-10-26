@@ -1,5 +1,5 @@
 ---
-title: ツール ウィンドウのショートカット メニューを追加する |Microsoft Docs
+title: ツールウィンドウにショートカットメニューを追加する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,34 +14,34 @@ caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689867"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>ツール ウィンドウへのショートカット メニューの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、ツール ウィンドウのショートカット メニューを配置します。 ショートカット メニューは、ユーザーは、ボタン、テキスト ボックスに、またはウィンドウの背景を右クリックしたときに表示されるメニューです。 ショートカット メニューのコマンドは、その他のメニューまたはツールバーでコマンドと同じ動作します。 ショートカット メニューをサポートするために .vsct ファイルで指定して、マウスの右クリックに応答に表示します。  
+このチュートリアルでは、ツールウィンドウにショートカットメニューを配置します。 ショートカットメニューは、ユーザーがボタン、テキストボックス、またはウィンドウの背景を右クリックしたときに表示されるメニューです。 ショートカットメニューのコマンドは、他のメニューまたはツールバーのコマンドと同じように動作します。 ショートカットメニューをサポートするには、このファイルを vsct ファイルで指定し、マウスの右クリックに応答して表示します。  
   
- ツール ウィンドウから継承するカスタム ツール ウィンドウのクラスでの WPF ユーザー コントロールから成る<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>します。  
+ ツールウィンドウは、から継承されるカスタムツールウィンドウクラスの WPF ユーザーコントロールで構成さ <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> れます。  
   
- このチュートリアルでは、Visual Studio のメニューとして、.vsct ファイルでのメニュー項目を宣言し、ツール ウィンドウを定義するクラスで実装する Managed Package Framework を使用してショートカット メニューを作成する方法を示します。 このアプローチには、Visual Studio コマンド、UI 要素、およびオートメーション オブジェクト モデルへのアクセスが容易になります。  
+ このチュートリアルでは、Visual Studio メニューとしてショートカットメニューを作成する方法について説明します。このためには、vsct ファイルでメニュー項目を宣言し、次に、マネージパッケージフレームワークを使用して、ツールウィンドウを定義するクラスにそれらを実装します。 この方法を使用すると、Visual Studio のコマンド、UI 要素、およびオートメーションオブジェクトモデルに簡単にアクセスできます。  
   
- また場合、ショートカット メニューでは、Visual Studio の機能はアクセスできませんが、使用できます、<xref:System.Windows.FrameworkElement.ContextMenu%2A>ユーザー コントロール内の XAML 要素のプロパティ。 詳細については、次を参照してください。 [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)します。  
+ また、ショートカットメニューから Visual Studio の機能にアクセスできない場合は、 <xref:System.Windows.FrameworkElement.ContextMenu%2A> ユーザーコントロールで XAML 要素のプロパティを使用できます。 詳細については、「 [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)」を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+ Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。  
   
-## <a name="creating-the-tool-window-shortcut-menu-package"></a>ツール ウィンドウのショートカット メニューのパッケージを作成します。  
+## <a name="creating-the-tool-window-shortcut-menu-package"></a>ツールウィンドウのショートカットメニューパッケージの作成  
   
-1. という名前の VSIX プロジェクトを作成する`TWShortcutMenu`というツール ウィンドウのテンプレートを追加および**ショートカット メニュー**にします。 ツール ウィンドウの作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
+1. という名前の VSIX プロジェクトを作成 `TWShortcutMenu` し、 **ShortCutMenu** という名前のツールウィンドウテンプレートを追加します。 ツールウィンドウの作成の詳細については、「 [ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。  
   
-## <a name="specifying-the-shortcut-menu"></a>ショートカット メニューを指定します。  
- このチュートリアルで示すように、ユーザーができるようになどのショートカット メニューは、ツール ウィンドウの背景の塗りつぶしに使用される色の一覧から選択します。  
+## <a name="specifying-the-shortcut-menu"></a>ショートカットメニューの指定  
+ このチュートリアルに示されているようなショートカットメニューを使用すると、ツールウィンドウの背景の塗りつぶしに使用する色の一覧からユーザーが選択できるようになります。  
   
-1. ShortcutMenuPackage.vsct では、という名前の guidShortcutMenuPackageCmdSet、GuidSymbol 要素を検索し、ショートカット メニューのショートカット メニューのグループ、およびメニュー オプションを宣言します。 GuidSymbol 要素は、次のようになります。  
+1. ShortcutMenuPackage で、guidShortcutMenuPackageCmdSet という名前の GuidSymbol 要素を検索し、ショートカットメニュー、ショートカットメニューグループ、およびメニューオプションを宣言します。 GuidSymbol 要素は次のようになります。  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -54,7 +54,7 @@ ms.locfileid: "65689867"
     </GuidSymbol>  
     ```  
   
-2. ボタンの要素の直前にメニュー要素を作成し、これで、ショートカット メニューを定義します。  
+2. Buttons 要素の直前に、メニュー要素を作成し、そこにショートカットメニューを定義します。  
   
     ```vb  
     <Menus>  
@@ -67,9 +67,9 @@ ms.locfileid: "65689867"
     </Menus>  
     ```  
   
-     ショートカット メニューには、親はありません メニューまたはツールバーの一部ではないためです。  
+     ショートカットメニューは、メニューまたはツールバーの一部ではないため、親を持ちません。  
   
-3. ショートカット メニュー項目を格納するグループの要素を持つグループ要素を作成し、ショートカット メニューの グループに関連付けます。  
+3. ショートカットメニュー項目を含む Group 要素を持つ Groups 要素を作成し、そのグループをショートカットメニューに関連付けます。  
   
     ```xml  
     <Groups>  
@@ -79,7 +79,7 @@ ms.locfileid: "65689867"
     </Groups>  
     ```  
   
-4. ボタンの要素では、ショートカット メニューに表示される個々 のコマンドを定義します。 このようボタン要素になります。  
+4. Buttons 要素で、ショートカットメニューに表示される個々のコマンドを定義します。 Buttons 要素は次のようになります。  
   
     ```xml  
     <Buttons>  
@@ -114,7 +114,7 @@ ms.locfileid: "65689867"
     </Buttons>  
     ```  
   
-5. ShortcutMenuPackageGuids.cs、コマンドの定義セットの GUID、ショートカット メニューのメニュー項目を追加します。  
+5. ShortcutMenuPackageGuids.cs で、コマンドセット GUID、ショートカットメニュー、およびメニュー項目の定義を追加します。  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -124,21 +124,21 @@ ms.locfileid: "65689867"
     public const int cmdidBlue = 0x104;  
     ```  
   
-     これらは、ShortcutMenuPackage.vsct ファイルの Symbols セクションで定義されている同じコマンド Id です。 コンテキストのグループは含まれません、.vsct ファイルでのみ必要であるためです。  
+     これらのコマンド Id は、ShortcutMenuPackage ファイルの Symbols セクションで定義されているものと同じです。 ここには、このコンテキストグループは含まれていません。このコンテキストグループは、vsct ファイルでのみ必要です。  
   
-## <a name="implementing-the-shortcut-menu"></a>ショートカット メニューを実装します。  
- このセクションでは、ショートカット メニューのおよびコマンドを実装します。  
+## <a name="implementing-the-shortcut-menu"></a>ショートカットメニューの実装  
+ このセクションでは、ショートカットメニューとそのコマンドを実装します。  
   
-1. ShortcutMenu.cs、ツール ウィンドウ、メニュー コマンド サービスを取得できますが、コントロールが含まれていることはできません。 次の手順では、メニュー コマンド サービスをユーザー コントロールを使用できるようにする方法を示します。  
+1. ShortcutMenu.cs では、ツールウィンドウはメニューコマンドサービスを取得できますが、それに含まれるコントロールは取得できません。 次の手順は、メニューコマンドサービスをユーザーコントロールで使用できるようにする方法を示しています。  
   
-2. ShortcutMenu.cs で、次のコードを追加ステートメントを使用します。  
+2. ShortcutMenu.cs で、次の using ステートメントを追加します。  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3. メニュー コマンド サービスを取得し、メニュー コマンド サービスをコンス トラクターに渡して、コントロールを追加するツール ウィンドウの Initialize() メソッドをオーバーライドします。  
+3. ツールウィンドウの Initialize () メソッドをオーバーライドしてメニューコマンドサービスを取得し、コントロールを追加して、メニューコマンドサービスをコンストラクターに渡します。  
   
     ```csharp  
     protected override void Initialize()  
@@ -148,7 +148,7 @@ ms.locfileid: "65689867"
     }  
     ```  
   
-4. ショートカット メニューのツール ウィンドウ コンス トラクターでは、コントロールを追加する行を削除します。 コンス トラクターは、次のようになります。  
+4. ShortcutMenu tool ウィンドウコンストラクターで、コントロールを追加する行を削除します。 コンストラクターは次のようになります。  
   
     ```csharp  
     public ShortcutMenu() : base(null)  
@@ -159,7 +159,7 @@ ms.locfileid: "65689867"
     }  
     ```  
   
-5. ShortcutMenuControl.xaml.cs、メニュー コマンド サービスのプライベート フィールドを追加し、メニュー コマンド サービスを実行するコントロールのコンス トラクターを変更します。 メニュー コマンド サービスを使用し、コンテキスト メニューのコマンドを追加できます。 ShortcutMenuControl コンス トラクターは、次のコードのようになります。 コマンド ハンドラーは、後で定義されます。  
+5. ShortcutMenuControl.xaml.cs で、メニューコマンドサービスのプライベートフィールドを追加し、メニューコマンドサービスを実行するようにコントロールコンストラクターを変更します。 次に、メニューコマンドサービスを使用して、ショートカットメニューのコマンドを追加します。 ShortcutMenuControl コンストラクターは次のコードのようになります。 コマンドハンドラーは、後で定義します。  
   
     ```csharp  
     public ShortcutMenuControl(OleMenuCommandService service)  
@@ -185,7 +185,7 @@ ms.locfileid: "65689867"
     }  
     ```  
   
-6. ShortcutMenuControl.xaml で追加、<xref:System.Windows.UIElement.MouseRightButtonDown>最上位レベルのイベント<xref:System.Windows.Controls.UserControl>要素。 XAML ファイルは、次のようになります。  
+6. ShortcutMenuControl で、 <xref:System.Windows.UIElement.MouseRightButtonDown> 最上位レベルの要素にイベントを追加します <xref:System.Windows.Controls.UserControl> 。 XAML ファイルは次のようになります。  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -207,7 +207,7 @@ ms.locfileid: "65689867"
     </UserControl>  
     ```  
   
-7. ShortcutMenuControl.xaml.cs では、イベント ハンドラーのスタブを追加します。  
+7. ShortcutMenuControl.xaml.cs で、イベントハンドラーのスタブを追加します。  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -216,7 +216,7 @@ ms.locfileid: "65689867"
     }  
     ```  
   
-8. 次の追加、同じファイルにステートメントを使用します。  
+8. 次の using ステートメントを同じファイルに追加します。  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -226,7 +226,7 @@ ms.locfileid: "65689867"
     using System.Windows.Media;  
     ```  
   
-9. 実装、`MyToolWindowMouseRightButtonDown`イベントとして次のとおりです。  
+9. 次のようにイベントを実装し `MyToolWindowMouseRightButtonDown` ます。  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -242,9 +242,9 @@ ms.locfileid: "65689867"
     }  
     ```  
   
-     これを作成、<xref:System.ComponentModel.Design.CommandID>オブジェクトのショートカット メニューの マウスのクリックの場所を識別およびを使用して、その場所でショートカット メニューを開きます、<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A>メソッド。  
+     これに <xref:System.ComponentModel.Design.CommandID> より、ショートカットメニューのオブジェクトが作成され、マウスクリックの位置が識別され、メソッドを使用してその場所のショートカットメニューが開き <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> ます。  
   
-10. コマンド ハンドラーを実装します。  
+10. コマンドハンドラーを実装します。  
   
     ```csharp  
     private void ChangeColor(object sender, EventArgs e)  
@@ -266,18 +266,18 @@ ms.locfileid: "65689867"
     }  
     ```  
   
-     1 つのメソッドが識別することでメニュー項目のすべてのイベントを処理するこの例では、<xref:System.ComponentModel.Design.CommandID>と背景色を適宜設定します。 メニュー項目には、関連のないコマンドが含まれていた、作成した場合はコマンドごとに個別のイベント ハンドラー。  
+     この場合、を識別し、それに応じて背景色を設定することによって、すべてのメニュー項目のイベントを処理するメソッドが1つだけに <xref:System.ComponentModel.Design.CommandID> なります。 メニュー項目に関連付けられていないコマンドが含まれている場合は、コマンドごとに個別のイベントハンドラーを作成します。  
   
-## <a name="testing-the-tool-window-features"></a>ツール ウィンドウの機能をテストします。  
+## <a name="testing-the-tool-window-features"></a>ツールウィンドウ機能のテスト  
   
 1. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
-2. 実験用インスタンスでは、次のようにクリックします。**ビュー/その他の Windows**、 をクリックし、**ショートカット メニュー**します。 これを行うと、ツール ウィンドウが表示されます。  
+2. 実験用インスタンスで、[ **表示]/[その他のウィンドウ**] をクリックし、[ **ShortcutMenu**] をクリックします。 この操作を行うと、ツールウィンドウが表示します。  
   
-3. ツール ウィンドウの本文で右クリックします。 色のリストを持つショートカット メニューを表示する必要があります。  
+3. ツールウィンドウの本文を右クリックします。 色の一覧を含むショートカットメニューが表示されます。  
   
-4. ショートカット メニューの 色をクリックします。 ツール ウィンドウの背景色は、選択した色を変更しないでください。  
+4. ショートカットメニューの色をクリックします。 ツールウィンドウの背景色は、選択した色に変更する必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)   
+## <a name="see-also"></a>参照  
+ [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)   
  [サービスの使用と提供](../extensibility/using-and-providing-services.md)

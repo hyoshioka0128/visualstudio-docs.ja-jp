@@ -1,4 +1,4 @@
-﻿---
+---
 title: ヘルプ ビューアーの管理者ガイド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645575"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアー の管理者ガイド
@@ -27,16 +27,16 @@ ms.locfileid: "72645575"
 
  基本構文は次のとおりです。
 
- \<*path to*>\HlpCtntmgr.exe /operation \<*argument*> /catalogname \<*name*> /locale \<*locale*> /sourceuri \< *.msha path または URL*>
+ \<*path to*>\HlpCtntmgr.exe/operation \<*argument*> /catalogname \<*name*> /locale \<*locale*> /sourceuri \<*.msha path or URL*>
 
  HlpCtntMgr.exe のコマンド ライン構文の詳細については、「[ヘルプ コンテンツ マネージャーのコマンド ライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)」を参照してください。
 
  コンテンツの作成、イントラネット サービスのエンドポイントの作成、および類似した種類のアクティビティの詳細については、ヘルプ ビューアー SDK を参照してください。
 
 ## <a name="deploying-local-help-content-from-the-internet"></a>インターネットからのローカル ヘルプ コンテンツの配置
- MSDN のコンテンツ パッケージ サービスを使用して、ローカル ヘルプ コンテンツをインターネットからクライアント コンピューターに配置できます。 このコマンドの構文は次のとおりです。
+ MSDN のコンテンツ パッケージ サービスを使用して、ローカル ヘルプ コンテンツをインターネットからクライアント コンピューターに配置できます。 次の構文を使用します。
 
- \\<*path to*>\v2.2\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
+ \\<# C0\v2.2\HlpCtntmgr.exe/operation/catalogname/locale*へのパス* \<*name*> \<*catalog name*>\<*locale*>
 
  HlpCtntMgr.exe のコマンド ライン構文の詳細については、「[ヘルプ コンテンツ マネージャーのコマンド ライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)」を参照してください。
 
@@ -60,13 +60,13 @@ ms.locfileid: "72645575"
 
 ##### <a name="to-install-english-content-from-the-internet"></a>インターネットから英語のコンテンツをインストールするには
 
-1. **[スタート]** を選択し、 **[ファイル名を指定して実行]** を選択します。
+1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
 
 2. 次のように入力します。
 
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us
 
-3. ENTER キーを押します。
+3. Enter キーを押します。
 
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>クライアント コンピューターに事前にインストールされたローカル ヘルプ コンテンツの配置
  オンラインから 1 台のコンピューターに一連のコンテンツをインストールし、そのインストールされたコンテンツを他のコンピューターにコピーすることができます。
@@ -93,7 +93,7 @@ ms.locfileid: "72645575"
 
 ##### <a name="to-uninstall-local-help"></a>ローカル ヘルプをアンインストールするには
 
-1. ヘルプ ビューアーで、 **[コンテンツの管理]** タブを選択します。
+1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。
 
 2. **[利用可能なドキュメント]** で、Visual Studio のドキュメント セットに移動します。
 
@@ -107,9 +107,9 @@ ms.locfileid: "72645575"
 
 ##### <a name="to-download-the-content"></a>コンテンツをダウンロードするには
 
-1. ヘルプ ビューアーで、 **[コンテンツの管理]** タブを選択します。
+1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。
 
-2. **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、 **[追加]** を選択します。
+2. **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、**[追加]** を選択します。
 
 3. **[開始]** を選択します。
 
@@ -127,7 +127,7 @@ ms.locfileid: "72645575"
 
 4. 次のように入力します。
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o
+     Xcopy%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
      例: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
@@ -141,7 +141,7 @@ ms.locfileid: "72645575"
 
 2. ヘルプ コンテンツの配置スクリプトを含める .bat ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。
 
-     (例:
+     次に例を示します。
 
     ```
     REM - copy pre-ripped content to ProgramData

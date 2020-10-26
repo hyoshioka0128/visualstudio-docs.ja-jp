@@ -1,5 +1,5 @@
 ---
-title: プロジェクトとエディターの追加のソース制御のガイドライン |Microsoft Docs
+title: プロジェクトとエディターの追加ソース管理ガイドライン |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,29 +11,29 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 376b297e94cc8e5f429254bdc981aea994b27130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203835"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>プロジェクトとエディターの追加のソース管理ガイドライン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロジェクトとエディター ソース管理をサポートするために従う必要があるガイドラインを数多くあります。  
+ソース管理をサポートするためにプロジェクトとエディターが従う必要があるガイドラインがいくつかあります。  
   
 ## <a name="guidelines"></a>ガイドライン  
- プロジェクトまたはエディターでは、次をソース管理をサポートするためにもを実行する必要があります。  
+ また、プロジェクトまたはエディターは、ソース管理をサポートするために次の操作を行う必要があります。  
   
-|区分|プロジェクト|エディター|説明|  
+|領域|Project|エディター|詳細|  
 |----------|-------------|------------|-------------|  
-|ファイルのプライベート コピー|x||環境には、ファイルのプライベート コピーがサポートされています。 これは、プロジェクトに参加している各ユーザーにそのプロジェクト内のファイルの自分独自のプライベート コピーします。|  
-|ANSI または Unicode の永続化|x|x|永続化コードを記述する場合は、ほとんどのソース管理プログラムは、Unicode を現在サポートしていないため、ANSI 形式でファイルを永続化します。|  
-|ファイルを列挙します。|x||プロジェクト内のすべてのファイルの特定のリストを含める必要がありを使用してファイルの一覧を列挙できる必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>(VSH_PROPID_First_Child/Next_Sibling)。 プロジェクトがを通じて項目名を公開する必要がありますもその<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A>実装とサポートの名前参照 (特殊なファイルを含む) をその<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>実装します。|  
-|テキストの形式|x|x|可能であれば、ファイルは、異なるバージョンのマージをサポートするテキスト形式でなければなりません。 テキスト形式でないファイルは、ファイルの他のバージョンと後でマージすることはできません。 任意のテキスト形式には XML です。|  
-|参照に基づく|x||ソース管理では、参照ベースのプロジェクトはサポートされてすぐにします。 ただし、ディレクトリ ベースのプロジェクトは、プロジェクトは、それらのファイルがディスクに存在するかどうかに関係なく、オンデマンドでそのファイルの一覧を作成できる限りもソース コントロールによってサポートされます。 ソース管理からプロジェクトを開くときにそのファイルの前に、最初、プロジェクト ファイルが終了します。|  
-|予測可能な順序でオブジェクトとプロパティを保存します。|x|x|マージするためのアルファベット順などの予測可能な順序でファイルを維持します。|  
-|再読み込み|x|x|ファイルがディスクに変更されると、エディターが再読み込みできる必要があります。 環境のデータを呼び出すことによって再読み込みはソース管理に参加すると、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>実装します。 最も困難な再読み込み大文字と小文字が IVsQueryEditQuerySave を呼び出したときに、チェック アウトが発生した場合::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>情報の処理とします。 ただし、再読み込みコードは、このような状況で実行できる必要があります。<br /><br /> 環境では、プロジェクト ファイルが自動的に再読み込みします。 ただし、プロジェクトを実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>プロジェクト ファイルを再読み込みをサポートするために階層が入れ子になったに入れ子になった場合。|  
+|ファイルのプライベートコピー|X||この環境では、ファイルのプライベートコピーがサポートされています。 つまり、プロジェクトに参加している各ユーザーには、そのプロジェクト内のファイルの独自のプライベートコピーが含まれています。|  
+|ANSI/Unicode の永続性|X|X|永続化コードを記述する場合は、ほとんどのソース管理プログラムが Unicode をサポートしていないため、ANSI 形式のファイルを保持します。|  
+|ファイルの列挙|X||プロジェクトには、その中にあるすべてのファイルの特定のリストが含まれている必要があり、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> または <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling) を使用してファイルの一覧を列挙できる必要があります。 また、プロジェクトでは、実装を通じて項目名 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> を公開し、実装によって名前参照 (特殊ファイルを含む) をサポートする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> ます。|  
+|テキスト形式|X|X|可能であれば、異なるバージョンのマージをサポートするために、ファイルはテキスト形式である必要があります。 テキスト形式ではないファイルは、後で他のバージョンのファイルとマージすることはできません。 推奨されるテキスト形式は XML です。|  
+|参照ベース|X||参照ベースのプロジェクトは、ソース管理で簡単にサポートされています。 ただし、ファイルがディスク上に存在するかどうかに関係なく、プロジェクトが必要に応じてファイルの一覧を作成できる限り、ディレクトリベースのプロジェクトもソース管理でサポートされます。 ソース管理からプロジェクトを開くと、そのファイルの前にプロジェクトファイルが先に停止します。|  
+|オブジェクトとプロパティを予測可能な順序で永続化する|X|X|マージを容易にするために、ファイルをアルファベット順などの予測可能な順序で保存します。|  
+|再読み込み|X|X|ディスク上のファイルが変更された場合、エディターは再読み込みできなければなりません。 ソース管理に参加すると、環境はの実装を呼び出すことによって、データを再読み込みし <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> ます。 再読み込みが最も困難なケースは、IVsQueryEditQuerySave:: を呼び出し、情報を処理しているときにチェックアウトが発生した場合です <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 。 ただし、このような状況では、再読み込みコードを実行できる必要があります。<br /><br /> 環境では、プロジェクトファイルが自動的に再読み込みされます。 ただし、入れ子になった <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> プロジェクトファイルの再読み込みをサポートするために、入れ子になった階層がある場合は、プロジェクトを実装する必要があります。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理のサポート](../../extensibility/internals/supporting-source-control.md)

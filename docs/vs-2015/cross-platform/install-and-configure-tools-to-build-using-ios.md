@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844472"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
@@ -28,26 +28,26 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
  iOS を使用してビルドするためのツールをインストールしたら、このトピックを参照して、Visual Studio と Mac で iOS 開発を行うためにリモート エージェントを素早く構成して更新する方法を確認してください。  
   
- [必須コンポーネント](#Prerequisites)  
+ [必要条件](#Prerequisites)  
   
- [iOS 用リモート エージェントをインストールする](#Install)  
+ [IOS 用リモートエージェントをインストールする](#Install)  
   
- [リモート エージェントを起動する](#Start)  
+ [リモートエージェントを起動する](#Start)  
   
  [Visual Studio でリモート エージェントを構成する](#ConfigureVS)  
   
- [Generate a new security PIN](#GeneratePIN)  
+ [新しいセキュリティ PIN を生成する](#GeneratePIN)  
   
  [新しいサーバー証明書を生成する](#GenerateCert)  
   
- [Configure the remote agent on the Mac](#ConfigureMac)  
+ [Mac でリモートエージェントを構成する](#ConfigureMac)  
   
-## <a name="Prerequisites"></a>前提条件  
+## <a name="prerequisites"></a><a name="Prerequisites"></a> 前提条件  
  iOS のコードを開発するためのリモート エージェントをインストールして使用するには、まず、次の前提条件を満たす必要があります。  
   
 - OS X Mavericks 以降を実行する Mac コンピューター  
   
-- [Apple ID](https://appleid.apple.com/)  
+- [APPLE ID](https://appleid.apple.com/)  
   
 - Apple のアクティブな [iOS Developer Program](https://developer.apple.com/programs/ios/) アカウント  
   
@@ -77,18 +77,18 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      `sudo npm install -g npm@latest`  
   
-## <a name="Install"></a> iOS 用リモート エージェントをインストールする  
+## <a name="install-the-remote-agent-for-ios"></a><a name="Install"></a> iOS 用リモート エージェントをインストールする  
  Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://www.npmjs.com/package/vcremote)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。  
   
- リモート エージェントをインストールする前に、 [前提条件](#Prerequisites) を満たしていること、 [Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)をインストール済みであることを確認してください。  
+ リモートエージェントをインストールする前に、 [前提条件](#Prerequisites) とインストールされている [Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)を満たしていることを確認してください。  
   
-### <a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには  
+### <a name="to-download-and-install-the-remote-agent"></a><a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには  
   
 - Mac 上のターミナル アプリから、次のように入力します。  
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   グローバル インストール ( **-g**) スイッチが推奨されますが、必須ではありません。  
+   グローバル インストール (**-g**) スイッチが推奨されますが、必須ではありません。  
   
    インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。  
   
@@ -97,10 +97,10 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
   Visual Studio を新しいバージョンに更新した場合は、リモート エージェントも現在のバージョンに更新する必要があります。 リモート エージェントを更新するには、リモート エージェントをダウンロードしてインストールする手順を繰り返します。  
   
-## <a name="Start"></a> リモート エージェントを起動する  
+## <a name="start-the-remote-agent"></a><a name="Start"></a> リモート エージェントを起動する  
  Visual Studio で iOS コードをビルドして実行するには、リモート エージェントが実行されている必要があります。 Visual Studio がリモート エージェントとペアリングされていないと、Visual Studio はリモート エージェントと通信できません。 既定では、リモート エージェントはセキュリティで保護された接続モードで実行されます。この場合、PIN を使用して Visual Studio とペアリングする必要があります。  
   
-### <a name="RemoteAgentStartServer"></a> リモート エージェントを起動するには  
+### <a name="to-start-the-remote-agent"></a><a name="RemoteAgentStartServer"></a> リモート エージェントを起動するには  
   
 - Mac 上のターミナル アプリから、次のように入力します。  
   
@@ -136,7 +136,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
 - vcremote が実行されているターミナル ウィンドウで、 `Control+C`を押します。  
   
-## <a name="ConfigureVS"></a> Visual Studio でリモート エージェントを構成する  
+## <a name="configure-the-remote-agent-in-visual-studio"></a><a name="ConfigureVS"></a> Visual Studio でリモートエージェントを構成する  
  Visual Studio からリモート エージェントに接続するには、Visual Studio のオプションで、リモート構成を指定する必要があります。  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio でリモート エージェントを構成するには  
@@ -147,9 +147,9 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
     IP アドレスを取得するには、ターミナル ウィンドウで **ifconfig** コマンドを使用します。 アクティブなネットワーク インターフェイスの下に表示される inet アドレスを使用します。  
   
-3. Visual Studio のメニュー バーで、 **[ツール]** 、 **[オプション]** の順に選択します。  
+3. Visual Studio のメニュー バーで、 **[ツール]**、 **[オプション]** の順に選択します。  
   
-4. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]** 、 **[C++]** 、 **[iOS]** の順に展開します。  
+4. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]**、 **[C++]**、 **[iOS]** の順に展開します。  
   
 5. **[ホスト名]** フィールドと **[ポート]** フィールドに、リモート エージェントの起動時に示された値を入力します。 ホスト名には、Mac の DNS 名または IP アドレスを使用できます。 既定のポートは 3030 です。  
   
@@ -166,13 +166,13 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
     ペアリングが成功しなかった場合は、「 [Start the remote agent](#Start)」の手順に従って、リモート エージェントが実行されていることを確認します。 リモート エージェントの PIN が生成されてから経過した時間が長すぎる場合は、Mac 上で「 [Generate a new security PIN](#GeneratePIN) 」の手順に従ってからもう一度実行します。 Mac のホスト名を使用している場合は、代わりに IP アドレスを **[ホスト名]** に使用してみてください。  
   
-8. **[リモート ルート]** フィールドのフォルダー名を更新して、Mac のホーム (~) ディレクトリ内の リモート エージェントで使用されるフォルダーを指定します。 既定では、リモート エージェントはリモート ルートとして /Users/`username`/vcremote を使用します。  
+8. [ **リモートルート** ] フィールドのフォルダー名を更新して、Mac 上のホーム (~) ディレクトリ内のリモートエージェントによって使用されるフォルダーを指定します。 既定では、リモート エージェントはリモート ルートとして /Users/`username`/vcremote を使用します。  
   
 9. **[OK]** を選択して、リモート ペアリング接続設定を保存します。  
   
    リモート エージェントを使用するたびに、Visual Studio は、この同じ情報を使用して Mac 上のリモート エージェントに接続します。 Visual Studio を再度リモート エージェントにペアリングさせる必要はありません。それが必要になるのは、Mac 上で新しいセキュリティ証明書を生成した場合、あるいは Mac のホスト名または IP アドレスが変更された場合のみです。  
   
-## <a name="GeneratePIN"></a> Generate a new security PIN  
+## <a name="generate-a-new-security-pin"></a><a name="GeneratePIN"></a> Generate a new security PIN  
  初めてリモート エージェントを起動すると、生成された PIN が期間限定で有効になります (既定では 10 分)。 Visual Studio とリモート エージェントをペアリングする前に期限切れになった場合は、新しい PIN を生成する必要があります。  
   
 #### <a name="to-generate-a-new-pin"></a>新しい PIN を生成するには  
@@ -185,7 +185,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      リモート エージェントが新しい一時 PIN を生成します。 新しい PIN を使用して Visual Studio をペアリングするには、「 [Visual Studio でリモート エージェントを構成する](#ConfigureVS)」の手順を繰り返します。  
   
-## <a name="GenerateCert"></a> 新しいサーバー証明書を生成する  
+## <a name="generate-a-new-server-certificate"></a><a name="GenerateCert"></a> 新しいサーバー証明書を生成する  
  セキュリティ上の目的で、Visual Studio とリモート エージェントをペアリングするサーバー証明書は、Mac の IP アドレスまたはホスト名と関連付けられています。 これらの値が変更された場合、新しいサーバー証明書を生成し、新しい値で Visual Studio を再構成する必要があります。  
   
 #### <a name="to-generate-a-new-server-certificate"></a>新しいサーバー証明書を生成するには  
@@ -206,7 +206,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
 5. 新しい PIN を使用して Visual Studio をペアリングするには、「 [Visual Studio でリモート エージェントを構成する](#ConfigureVS)」の手順を繰り返します。  
   
-## <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
+## <a name="configure-the-remote-agent-on-the-mac"></a><a name="ConfigureMac"></a> Configure the remote agent on the Mac  
  さまざまなコマンド ライン オプションを使用して、リモート エージェントを構成することができます。 たとえば、ビルド要求をリッスンするポートを指定したり、ファイル システムに保持するビルドの最大数を指定したりできます。 既定では、10 個のビルドに制限されます。 最大数を超えたビルドは、リモート エージェントによってシャットダウン時に削除されます。  
   
 #### <a name="to-configure-the-remote-agent"></a>リモート エージェントを構成するには  
@@ -219,13 +219,13 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
   
      `vcremote --secure false`  
   
-     このオプションを使用する場合、Visual Studio でエージェントを構成する際に、 **[セキュア]** チェック ボックスをオフにして、 **[PIN]** フィールドを空白のままにします。  
+     このオプションを使用する場合、Visual Studio でエージェントを構成する際に、**[セキュア]** チェック ボックスをオフにして、**[PIN]** フィールドを空白のままにします。  
   
 - リモート エージェント ファイルの場所を指定するには、次のように入力します。  
   
      `vcremote --serverDir directory_path`  
   
-     ここで *directory_path* は、ログ ファイル、ビルド、サーバー証明書を配置する Mac 上の場所です。 既定では、この場所は /Users/*username*/vcremote です。 ビルドはこの場所でビルド番号順に編成されます。  
+     ここで *directory_path* は、ログ ファイル、ビルド、サーバー証明書を配置する Mac 上の場所です。 既定では、この場所は/*ユーザー/ユーザー名*/vcremote です。です。 ビルドはこの場所でビルド番号順に編成されます。  
   
 - バックグラウンド プロセスを使用して、server.log という名前のファイルに `stdout` と `stderr` をキャプチャするには、次のように入力します。  
   
@@ -240,4 +240,4 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
      ここで *config_file_path* は JSON 形式の構成ファイルのパスです。 スタートアップ オプションとその値にダッシュを含めることはできません。  
   
 ## <a name="see-also"></a>参照  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Visual C++ for Cross-Platform Mobile Development のインストール](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

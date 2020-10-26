@@ -1,5 +1,5 @@
 ---
-title: 'エラー &#39;: プロジェクト&#39; &#39;プロジェクト&#39;の依存関係ファイルは、依存&#39;ファイル&#39; | と競合するため、実行ディレクトリにコピーできません。Microsoft Docs'
+title: 'エラー: プロジェクト &#39;&#39; プロジェクトの依存関係 &#39;ファイル&#39; は、依存関係 &#39;ファイル&#39; と競合するため、実行ディレクトリにコピーできません。Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d4fd45741585aaf82c82257999b40d6257e82d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656049"
 ---
-# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>エラー: &#39;プロジェクト&#39; &#39;プロジェクト&#39;の依存関係ファイルは、依存関係&#39;ファイルと競合するため、実行ディレクトリにコピーできません&#39;
+# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>エラー: プロジェクト &#39;&#39; プロジェクトの依存関係 &#39;ファイル&#39; は、依存関係 &#39;ファイルと競合するため、実行ディレクトリにコピーできません&#39;
 参照間で競合が発生しています。アプリケーションが実行される bin ディレクトリに、ファイル名が同じ複数の依存関係がコピーされようとしています。 どの依存関係もプライマリ参照ではないため、実行ディレクトリは競合を解決できません。
 
  このエラーが発生すると、ビルドが失敗します。

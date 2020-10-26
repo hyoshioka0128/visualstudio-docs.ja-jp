@@ -1,5 +1,5 @@
 ---
-title: プロパティ &lt;property 名 &gt; を削除できません。関連付け &lt;association 名 &gt; | に参加しています。Microsoft Docs
+title: プロパティ &lt; プロパティ名を &gt; 削除できません。関連付けられているアソシエーション &lt; 名 &gt; |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53bf12a84a705ddca0cacffc36028698cb08443a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667268"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>プロパティ &lt;プロパティ名&gt; は関連付け &lt;関連付けの名前&gt; に関与しているため、削除できません
@@ -27,7 +27,7 @@ ms.locfileid: "72667268"
 
 1. O/R デザイナーで、エラー メッセージに示されているデータ クラスを接続する関連行を選択します。
 
-2. 行をダブルクリックして、 **[関連付けエディター]** ダイアログ ボックスを開きます。
+2. 行をダブルクリックして、**[関連付けエディター]** ダイアログ ボックスを開きます。
 
 3. **[関連付けのプロパティ]** からプロパティを削除します。
 

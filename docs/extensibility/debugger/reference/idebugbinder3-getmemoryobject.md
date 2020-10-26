@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugBinder3:: GetMemoryObject |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735727"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-このメソッドは、このオブジェクトがバインドされているメモリを表すメモリ オブジェクトを取得します。
+このメソッドは、このオブジェクトが関連付けられているメモリを表すメモリオブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,16 +45,16 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>パラメーター
 `pField`\
-[in]メモリ オブジェクトを取得するフィールドを指定します。
+からメモリオブジェクトを取得するフィールドを指定します。
 
 `uConstant`\
-[in]定数値のメモリ アドレスまたは値を表します。
+から定数値のメモリアドレスまたは値を表します。
 
 `ppObject`\
-[アウト]このオブジェクトがバインドされているメモリを表す[IDebugObject。](../../../extensibility/debugger/reference/idebugobject.md)
+入出力このオブジェクトが関連付けられているメモリを表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

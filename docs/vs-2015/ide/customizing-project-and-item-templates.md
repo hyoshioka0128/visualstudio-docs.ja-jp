@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665874"
 ---
 # <a name="customizing-project-and-item-templates"></a>プロジェクトと項目テンプレートのカスタマイズ
@@ -32,23 +32,23 @@ ms.locfileid: "72665874"
 
 - カスタム パラメーターをテンプレートに渡して、既存の値を置き換えます。
 
-     詳しくは、「[方法 : テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」をご覧ください。
+     詳細については、「 [方法: テンプレート内のパラメーターを置き換える](../ide/how-to-substitute-parameters-in-a-template.md)」を参照してください。
 
 - テンプレートからプロジェクトを作成するウィザードをカスタマイズします。
 
      詳しくは、「[方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)」をご覧ください。
 
 ## <a name="related-sections"></a>関連項目
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 
  [方法 : テンプレートの問題を解決する](../ide/how-to-troubleshoot-templates.md)
 
- [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)
+ [方法: プロジェクトテンプレートを作成する](../ide/how-to-create-project-templates.md)
 
- [方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
+ [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
 
  [方法 : スタート キットを作成する](../ide/how-to-create-starter-kits.md)
 
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

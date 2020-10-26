@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668508"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Visual Studio API を使用して UML モデルを開く
@@ -27,12 +27,12 @@ API を使って、Visual Studio のユーザー インターフェイスでモ�
 
 - Visual Studio モデル バスでは、モデルおよびモデル内の要素にアクセスすることができ、あるモデルと別のモデル間のリンクを生成する標準的な方法が提供されます。 詳細については、「 [UML モデルを他のモデルおよびツールと統合](../modeling/integrate-uml-models-with-other-models-and-tools.md)する」を参照してください。
 
-- 読み取り専用モードでモデルを開くことができます。 詳細については、「[プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
+- 読み取り専用モードでモデルを開くことができます。 詳細については、「 [プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
 
-## <a name="Showing"></a>Visual Studio でモデルと図を開く
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Visual Studio でモデルと図を開く
  ユーザー インターフェイスでモデルを開くには、標準の Visual Studio API `EnvDTE.DTE` を使用します。 モデリング プロジェクト項目に対して実行できる便利なキャストが 2 つあります。
 
-- プロジェクトがモデリング プロジェクトの場合で、そのプロジェクトが現在の AppDomain に読み込まれている場合、`EnvDTE.Project` と `IModelingProject` との間でキャストを行うことができます。
+- `EnvDTE.Project``IModelingProject`プロジェクトがモデリングプロジェクトであり、プロジェクトが現在の AppDomain に読み込まれている場合は、との間でキャストできます。
 
 - 項目が UML 図の場合、`EnvDTE.ProjectItem` と `IDiagramContext` との間でキャストを行うことができます。
 

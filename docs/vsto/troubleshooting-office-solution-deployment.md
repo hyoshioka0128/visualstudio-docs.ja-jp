@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234979"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションの配置のトラブルシューティング
@@ -36,7 +36,7 @@ ms.locfileid: "87234979"
 
 - VSTO アドインがインストールされている状態でアセンブリの名前を変更すると、エンド ユーザーが更新を受け取ることはなくなります。
 
-  このような状況を回避するには、ソリューションを配置した後で、ソリューションの**アセンブリ名**の値を変更しないでください。
+  このような状況を回避するには、ソリューションを配置した後で、ソリューションの **アセンブリ名** の値を変更しないでください。
 
 ## <a name="check-for-updates-takes-a-long-time"></a>更新プログラムの確認に長い時間がかかる
  Visual Studio 2010 Tools for Office runtime には、管理者がマニフェストとソリューションをダウンロードするためのタイムアウト値を設定するために使用できるレジストリエントリが用意されています。
@@ -52,12 +52,12 @@ ms.locfileid: "87234979"
      **[AddInTimeout]** サブキーが存在しない場合は、DWORD として作成します。
 
 ## <a name="cant-update-or-publish-to-a-network-file-share"></a>ネットワークファイル共有に更新または発行できません
- ネットワークファイル共有上の Office ソリューションでは、更新の発行中にソリューションの*Setup.exe*ファイルがロックされている場合、更新中に誤解を招くメッセージが表示されることがあります。 たとえば、"'setup.exe' を Web サイトに追加できません。 ファイル 'setup.exe' はこの Web サイトに既に存在します。" というメッセージが表示されることがあります。
+ ネットワークファイル共有上の Office ソリューションでは、更新の発行中にソリューションの *Setup.exe* ファイルがロックされている場合、更新中に誤解を招くメッセージが表示されることがあります。 たとえば、"'setup.exe' を Web サイトに追加できません。 ファイル 'setup.exe' はこの Web サイトに既に存在します。" というメッセージが表示されることがあります。
 
  ファイルがロックされないようにするには、エンド ユーザーに対して共有を読み取り専用に設定します。 ただし、共有上にドキュメントがあると、このドキュメントもエンド ユーザーに対して読み取り専用になります。
 
 ## <a name="prerequisites-for-microsoft-office-arent-installed"></a>Microsoft Office の前提条件がインストールされていません
- セットアップ パッケージには、Office ソリューションと共に配置される必須コンポーネントとして、.NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]、および Office プライマリ相互運用機能アセンブリを追加できます。 プライマリ相互運用機能アセンブリをインストールする方法の詳細については、「 [office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」および「[方法: office プライマリ相互運用機能アセンブリをインストール](../vsto/how-to-install-office-primary-interop-assemblies.md)する」を参照してください。
+ セットアップ パッケージには、Office ソリューションと共に配置される必須コンポーネントとして、.NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]、および Office プライマリ相互運用機能アセンブリを追加できます。 プライマリ相互運用機能アセンブリをインストールする方法の詳細については、「 [office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md) 」および「 [方法: office プライマリ相互運用機能アセンブリをインストール](../vsto/how-to-install-office-primary-interop-assemblies.md)する」を参照してください。
 
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Localhost を使用して発行すると、インストールの問題が発生することがある
  `http://localhost`ドキュメントレベルのソリューションの発行場所またはインストール先としてを使用すると、**発行ウィザード**によって文字列が実際のコンピューター名に変換されることはありません。 この場合は、ソリューションを開発用コンピューター上にインストールする必要があります。 配置ソリューションに開発用コンピューター上の IIS を使用させるには、HTTP、HTTPS、FTP のすべての場所について、localhost ではなく完全修飾名を使用します。
@@ -89,7 +89,7 @@ ms.locfileid: "87234979"
  このメッセージが表示されないようにするには、開発用コンピューターで別のユーザー アカウントを作成して配置をテストします。 または、次回のソリューションの発行、デバッグ、またはリビルドの前に、コンピューター上にインストールされているプログラムの一覧からそのバージョンをアンインストールできます。
 
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>ソリューションをインストールするときにキャッチされていない例外またはメソッドが見つからないエラー
- 配置マニフェスト ( *.vsto*ファイル)、office アプリケーション、ドキュメント、またはブックを開いて office ソリューションをインストールすると、次の条件に該当するエラーメッセージが表示される場合があります。
+ 配置マニフェスト ( *.vsto* ファイル)、office アプリケーション、ドキュメント、またはブックを開いて office ソリューションをインストールすると、次の条件に該当するエラーメッセージが表示される場合があります。
 
 - メソッドが見つからない
 
@@ -102,14 +102,14 @@ ms.locfileid: "87234979"
   セットアップ プログラムを実行せずにソリューションをインストールする場合、インストーラーでは、必須コンポーネントの有無のチェックや、それらのインストールは行われません。 セットアップ プログラムは、正しいバージョンの必須コンポーネントをチェックし、必要に応じて、これらをインストールします。
 
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>InstallShield 限定エディションプロジェクトがビルドされた後にアドインのマニフェストレジストリキーが変更される
- VSTO アドインセットアッププログラムの一部であるマニフェストレジストリキーは、InstallShield 制限付きエディションプロジェクトをビルドするときに、 *.vsto*から *.dll*に変更されることがあります。
+ VSTO アドインセットアッププログラムの一部であるマニフェストレジストリキーは、InstallShield 制限付きエディションプロジェクトをビルドするときに、 *.vsto* から *.dll* に変更されることがあります。
 
  この問題の発生を防ぐには、InstallShield Limited Edition プロジェクトを別のソリューションで作成するか、レジストリ キー値として VSTO アドイン名が含まれる CompanyName.AddinName を使用します。
 
 ## <a name="the-clickonce-installer-for-your-office-solution-doesnt-install-the-primary-interop-assemblies"></a>Office ソリューションの ClickOnce インストーラーでプライマリ相互運用機能アセンブリがインストールされない
  Office ソリューション用に ClickOnce が作成するセットアップ プログラムを実行すると、Office プライマリ相互運用機能アセンブリ (PIA) がまだインストールされていない場合のみ、PIA のインストーラーが実行されます。
 
- セットアッププログラムで Pia が正しくインストールされない場合は、インストールディレクトリから*o2007pia.msi*という名前のインストーラーファイルを実行して、手動でインストールします。
+ セットアッププログラムで Pia が正しくインストールされない場合は、インストールディレクトリから *o2007pia.msi* という名前のインストーラーファイルを実行して、手動でインストールします。
 
 ## <a name="reinstall-office-solutions-causes-an-argument-out-of-range-exception"></a>Office ソリューションを再インストールすると、引数が範囲外であるという例外が発生する
  Office ソリューションを再インストールするときに、 <xref:System.ArgumentOutOfRangeException> 例外が発生し、"指定された引数は、有効な値の範囲内にありません" というエラー メッセージが表示される場合があります。
@@ -119,7 +119,7 @@ ms.locfileid: "87234979"
  このエラー メッセージが表示されないようにするには、Office ソリューションのインストール時に、同じ大文字と小文字の組み合わせを使用します。
 
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Web から配置マニフェストを開いて ClickOnce ソリューションをインストールすることはできません
- ユーザーは、Web で配置マニフェストを開くことにより、Office ソリューションをインストールできます。 ただし、インターネットインフォメーションサービス (IIS) の一部のインストールでは、 *.vsto*ファイル名拡張子はブロックされます。 Office ソリューションの配置に使用する前に、IIS で MIME の種類を定義する必要があります。
+ ユーザーは、Web で配置マニフェストを開くことにより、Office ソリューションをインストールできます。 ただし、インターネットインフォメーションサービス (IIS) の一部のインストールでは、 *.vsto* ファイル名拡張子はブロックされます。 Office ソリューションの配置に使用する前に、IIS で MIME の種類を定義する必要があります。
 
  IIS 7 で MIME の種類を定義する方法の詳細については、「 [mime の種類を追加する (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx)」を参照してください。
 
@@ -129,4 +129,4 @@ ms.locfileid: "87234979"
 
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
-- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

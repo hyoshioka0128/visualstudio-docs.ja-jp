@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773900"
 ---
 # <a name="save-and-export-performance-tools-data"></a>パフォーマンス ツール データの保存とエクスポート
@@ -66,7 +66,7 @@ ms.locfileid: "74773900"
 
 6. **[エクスポート]** をクリックします。
 
-     各レポート ビューは、\<プレフィックス>_\<レポート ビュー名>.\<csv&#124;xml> という名前の別のファイルに保存されます
+     各レポート ビューは、\<prefix>_\<report view name>.\<csv&#124;xml> という名前の別のファイルに保存されます
 
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>[レポート ビュー] ウィンドウからパフォーマンス レポートをエクスポートするには
 
@@ -86,7 +86,7 @@ ms.locfileid: "74773900"
 
 8. **[エクスポート]** をクリックします。
 
-     各レポート ビューは、\<プレフィックス>_\<レポート ビュー名>.\<csv&#124;xml> という名前の別のファイルに保存されます
+     各レポート ビューは、\<prefix>_\<report view name>.\<csv&#124;xml> という名前の別のファイルに保存されます
 
 ## <a name="see-also"></a>参照
 - [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)

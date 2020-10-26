@@ -1,5 +1,5 @@
 ---
-title: '警告: [動作の構成] ダイアログボックスに変更が加えられましたが、まだ適用されていません |Microsoft Docs'
+title: 警告。 [動作の構成] ダイアログボックスに変更が加えられましたが、まだ適用されていません |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0fad308de9d243b23dbe30c319526b44f3a14c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602409"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告。 [動作の構成] ダイアログ ボックスで行った変更が適用されていません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません。 変更を適用しますか?
+警告。 [動作の構成] ダイアログ ボックスで行った変更が適用されていません。 変更を適用しますか?
 
- **[動作の構成]** ダイアログボックスでは、使用可能なすべてのクラスに対して挿入、更新、および削除の動作を構成できます。 このメッセージは、新しい **[クラス]** と **[動作]** の組み合わせを選択したときに、前の変更がまだ適用されていない場合に表示されます。
+ [ **動作の構成** ] ダイアログボックスでは、使用可能なすべてのクラスに対して挿入、更新、および削除の動作を構成できます。 このメッセージは、新しい **[クラス]** と **[動作]** の組み合わせを選択したときに、前の変更がまだ適用されていない場合に表示されます。
 
 ### <a name="to-apply-the-change-and-continue"></a>変更を適用して続行するには
 

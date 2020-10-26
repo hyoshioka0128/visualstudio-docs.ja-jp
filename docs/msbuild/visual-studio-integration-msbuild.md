@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631199"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
@@ -151,7 +151,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      プロジェクトに **(利用不可)** のマークが付きます。
 
-2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[\<プロジェクト ファイル> の編集]** をクリックします。
+2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[\<Project File> の編集]** を選択します。
 
      Visual Studio XML エディターでプロジェクト ファイルが開きます。
 
@@ -161,7 +161,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="intellisense-and-validation"></a>IntelliSense と検証
 
- XML エディターを使用してプロジェクト ファイルを編集する際、MSBuild のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、 *\<Visual Studio のインストール ディレクトリ>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。
+ XML エディターを使用してプロジェクト ファイルを編集する際、MSBuild のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、 *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。
 
  MSBuild の中心となる型は *Microsoft.Build.Core.xsd* で定義され、Visual Studio によって使用される共通の型は *Microsoft.Build.CommonTypes.xsd* で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、*Microsoft.Build.xsd* を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。
 

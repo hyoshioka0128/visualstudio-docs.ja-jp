@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fd2735b7e601afb5a80dd027a8ae107cab58e4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672432"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>コード分析に関する問題のトラブルシューティング
@@ -21,9 +21,9 @@ ms.locfileid: "72672432"
 
 このトピックでは、次の Visual Studio コード分析の問題についてのトラブルシューティング情報を示します。
 
-- [Visual Studio 2010 規則セットでの変更が以前のバージョンの Visual Studio に反映されない](#ChildRuleSetChangesInPreviousVersions)
+- [Visual Studio 2010 の規則セットでの変更は、以前のバージョンの Visual Studio には反映されません。](#ChildRuleSetChangesInPreviousVersions)
 
-## <a name="ChildRuleSetChangesInPreviousVersions"></a>Visual Studio 2010 規則セットでの変更が以前のバージョンの Visual Studio に反映されない
+## <a name="changes-in-a-visual-studio-2010-rule-set-are-not-reflected-in-previous-visual-studio-versions"></a><a name="ChildRuleSetChangesInPreviousVersions"></a>Visual Studio 2010 規則セットでの変更が以前のバージョンの Visual Studio に反映されない
  子規則セットを含む [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 規則セットを作成すると、子規則セットに対する変更が、旧バージョンの Visual Studio を使用するコンピューターで実行されるコード分析に適用されない場合があります。 この問題を解決するには、親規則セット、つまり子規則セットを含む規則セットを強制的に書き換える必要があります。
 
 1. [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] で親規則セットを開きます。

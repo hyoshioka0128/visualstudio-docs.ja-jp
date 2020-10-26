@@ -1,5 +1,5 @@
 ---
-title: フィールド::列挙体のローカルマイクロソフトドキュメント
+title: 'IDebugMethodField:: EnumAllLocals |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727331"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-コンパイラによって内部的に生成された変数を含め、メソッドのすべてのローカル変数の列挙子を作成します。
+コンパイラによって内部的に生成されたものも含め、メソッドのすべてのローカル変数の列挙子を作成します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,18 +43,18 @@ int EnumAllLocals(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]特定のスコープまたはコンテキストを指すメソッド内のデバッグ アドレスを表す[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。
+から特定のスコープまたはコンテキストを指すメソッド内のデバッグアドレスを表す [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) オブジェクト。
 
 `ppLocals`\
-[アウト]指定した[スコープ](../../../extensibility/debugger/reference/ienumdebugfields.md)内のすべてのローカルのリストを表すオブジェクトを返します。それ以外の場合は、ローカルを示さないことを示す null 値を返します。
+入出力指定されたスコープ内のすべてのローカルのリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。それ以外の場合、は、ローカルがないことを示す null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OKを返すか、ローカルがない場合はS_FALSEを返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合、は S_OK を返します。ローカルがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>Remarks
- 指定されたデバッグ アドレスを含むブロック内で定義されている変数のみが列挙されます。 このメソッドには、コンパイラによって生成されたローカルが含まれます。 必要なのがソースで明示的に定義されたローカルである場合は[、EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)メソッドを呼び出します。
+## <a name="remarks"></a>解説
+ 指定されたデバッグアドレスを含むブロック内で定義されている変数のみが列挙されます。 このメソッドには、コンパイラによって生成されるローカル変数が含まれます。 必要なものがすべてソースで明示的に定義されている場合は、 [enumlocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) メソッドを呼び出します。
 
- メソッドには、複数のスコープ コンテキストまたはブロックを含めることができます。
+ メソッドには、複数のスコープコンテキストまたはブロックを含めることができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

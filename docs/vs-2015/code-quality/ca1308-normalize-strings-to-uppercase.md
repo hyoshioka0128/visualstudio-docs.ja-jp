@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c068fcda7d03ae91435c040d2110d632668d832a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538737"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:文字列を大文字に標準化します
@@ -44,5 +44,5 @@ ms.locfileid: "85538737"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  結果に基づいてセキュリティを決定しない場合 (たとえば、UI に表示する場合)、警告メッセージを抑制するのは安全です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [グローバリゼーションの警告](../code-quality/globalization-warnings.md)

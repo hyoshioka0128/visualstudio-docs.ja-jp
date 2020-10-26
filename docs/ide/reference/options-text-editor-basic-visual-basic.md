@@ -1,6 +1,6 @@
 ---
 title: '[オプション]、[テキスト エディター]、[基本] (VB)、[詳細]'
-ms.date: 01/16/2019
+ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: TerryGLee
-ms.author: tglee
+author: akhera99
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562358ca90e223a07926aaa383ded41a5f7557cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431476"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214649"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>[オプション]、[テキスト エディター]、[基本] (Visual Basic)、[詳細]
 **[オプション]** ( **[ツール]** メニュー) ダイアログ ボックスの **[テキスト エディター]** フォルダーにある **[Basic]** フォルダーの **[VB 固有]** プロパティ ページでは、次のプロパティを指定します。
@@ -78,6 +78,13 @@ ms.locfileid: "79431476"
 選択した場合、構造化されたコード ブロックに合う垂直線がエディターに表示され、個々のコード ブロックを簡単に識別できます。 たとえば、`Sub` ステートメントの `Sub` と `EndSub` の間に線が表示されます。
 
 ## <a name="editor-help"></a>エディターのヘルプ
+
+::: moniker range=">=vs-2019"
+**インライン パラメーター名のヒント**    
+選択されると、関数呼び出しの各引数の前に、リテラル、型変換されたリテラル、オブジェクト インスタンス化のパラメーター名ヒントが挿入されます。  
+
+![Visual Basic のインライン パラメーター名ヒント](media/inline-parameter-name-hints-visualbasic.png)
+::: moniker-end
 
 **[コードの再フォーマット]** 必要に応じてコードの書式が再設定されます。 このオプションをオンにすると、コード エディターによって次の処理が行われます。
 

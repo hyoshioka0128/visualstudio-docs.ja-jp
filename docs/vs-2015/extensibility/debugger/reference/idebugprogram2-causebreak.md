@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak |Microsoft Docs
+title: 'IDebugProgram2:: CauseBreak |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5520d624b2789488c7ab6a5cab353d78d2cd69ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555710"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-プログラムが次の実行を停止する要求は時間を実行するには、そのスレッド試行のいずれかです。  
+次にそのスレッドの1つが実行を試行したときに、プログラムの実行を停止するように要求します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,13 +37,13 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)次に、プログラムはこのメソッドが呼び出された後にコードを実行しようとしたときにイベントが送信されます。  
+## <a name="remarks"></a>注釈  
+ このメソッドが呼び出された後、プログラムが次にコードを実行しようとすると、 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) イベントが送信されます。  
   
- メソッドは必ずしもプログラムが停止するまで待たずにすぐに返します点で、このメソッドは非同期です。  
+ このメソッドは、プログラムが停止するのを待たずにすぐに制御を返すという点で非同期です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845190"
 ---
 # <a name="midl-task"></a>MIDL タスク
@@ -54,7 +54,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      省略可能な **String** 型のパラメーターです。  
   
-     コマンド ライン オプションのリスト。 たとえば、 **"** _/option1 /option2 /option#_ " のような形式です。 他の MIDL タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。  
+     コマンド ライン オプションのリスト。 たとえば、 **"**_/option1/option2/option #_" のようになります。 他の MIDL タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。  
   
      詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」を参照してください。  
   
@@ -90,7 +90,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンド ライン オプション|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -114,11 +114,11 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンド ライン オプション|  
     |-----------|--------------------------|  
-    |**None**|**/error none**|  
+    |**なし**|**/error none**|  
     |**EnableCustom**|**/error**|  
-    |**All**|**/error all**|  
+    |**すべて**|**/error all**|  
   
      詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/error** オプションを参照してください。  
   
@@ -144,7 +144,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      `true` の場合、enum の値が有効範囲内にあるかどうかをチェックします。  
   
-     詳細については、midl.exe のコマンド ライン ヘルプ ( **/?** ) の **/error enum** オプションを参照してください。  
+     詳細については、midl.exe については、コマンドラインヘルプ (**/?**) の**エラーの列挙型**オプションを参照してください。  
   
 - **ErrorCheckRefPointers**  
   
@@ -170,9 +170,9 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンド ライン オプション|  
     |-----------|--------------------------|  
-    |**None**|**/client none**|  
+    |**なし**|**/client none**|  
     |**Stub**|**/client stub**|  
   
      詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/client** オプションを参照してください。  
@@ -185,9 +185,9 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンド ライン オプション|  
     |-----------|--------------------------|  
-    |**None**|**/server none**|  
+    |**なし**|**/server none**|  
     |**Stub**|**/server stub**|  
   
      詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/server** オプションを参照してください。  
@@ -288,7 +288,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/sstub** オプションを参照してください。 この表にある **ClientStubFile** パラメーターも参照してください。  
   
-- **Source**  
+- **ソース**  
   
      必須の `ITaskItem[]` 型のパラメーターです。  
   
@@ -302,7 +302,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンド ライン オプション|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**1**|**/Zp1**|  
@@ -310,11 +310,11 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/Zp** オプションを参照してください。 **/Zp** オプションは、 **/pack** オプションおよび以前の **/align** オプションに相当します。  
+     詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/Zp** オプションを参照してください。 **/Zp** オプションは、**/pack** オプションおよび以前の **/align** オプションに相当します。  
   
 - **SuppressCompilerWarnings**  
   
-     省略可能な **Boolean** 型のパラメーターです。  
+     省略可能な **ブール型** パラメーターです。  
   
      `true` の場合、MIDL タスクからの警告メッセージを非表示にします。  
   
@@ -330,13 +330,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
 - **TargetEnvironment**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      アプリケーションが実行される環境を指定します。  
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンドライン オプション|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
@@ -353,13 +353,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
 - **TypeLibFormat**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      タイプ ライブラリ ファイルの形式を指定します。  
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンドライン オプション|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -368,7 +368,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
 - **TypeLibraryName**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      タイプ ライブラリ ファイルの名前を指定します。  
   
@@ -376,7 +376,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
 - **UndefinePreprocessorDefinitions**  
   
-     省略可能な **String[]** 型のパラメーターです。  
+     省略可能な **String []** パラメーターです。  
   
      `#undefine` ディレクティブによるかのように名前を C プリプロセッサに渡すことにより、名前の以前の定義をすべて削除します。 以前に定義された 1 つ以上の名前を指定します。  
   
@@ -402,13 +402,13 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
 - **WarningLevel**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      出力する警告の重大度 (*警告レベル*) を指定します。 値が 0 の場合、警告は出力されません。 それ以外の場合、警告レベルの数値が指定された値以下であれば、警告が出力されます。  
   
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。  
   
-    |[値]|コマンド ライン オプション|  
+    |値|コマンドライン オプション|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  
@@ -418,7 +418,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      詳細については、[MSDN](https://msdn.microsoft.com/) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/W** オプションを参照してください。 この表にある **WarnAsError** パラメーターも参照してください。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
   
-## <a name="see-also"></a>関連項目  
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)

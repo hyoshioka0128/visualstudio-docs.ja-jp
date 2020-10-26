@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt;要素 (ClickOnce アプリケーション) |Microsoft Docs'
+title: '&lt;assemblyIdentity &gt; 要素 (ClickOnce アプリケーション) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,18 +18,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bde22809af69071f5484e25717a5aea7d78a603
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428535"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt;要素 (ClickOnce アプリケーション)
+# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; 要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-デプロイされたアプリケーションを識別、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開します。  
+デプロイにデプロイされたアプリケーションを識別 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -43,20 +43,20 @@ ms.locfileid: "62428535"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
- `assemblyIdentity`要素が必要です。 これは、子要素を含まず、かつ、次の属性を持ちます。   
+ `assemblyIdentity` 要素は必須です。 子要素は含まれず、次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Name`|必須。 アプリケーションの名前を識別します。<br /><br /> `Name`に、一重引用符または二重引用符のような特殊文字が含まれている場合、アプリケーションはアクティブ化に失敗することがあります。|  
-|`Version`|必須。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|  
-|`publicKeyToken`|省略可能です。 最後の 8 バイトを表す 16 文字の 16 進文字列を指定します、`SHA-1`アプリケーションまたはアセンブリに署名するとき、公開キーのハッシュ値。 カタログに署名するために使用する公開キーは 2048 ビットである必要がありますまたはそれ以上。<br /><br /> アセンブリの署名は推奨されていますが、任意であり、署名するかに関わらずこの属性は必要です。 アセンブリが署名付きでない場合は、自己署名されたアセンブリから値をコピーするか、すべてがゼロ値である「ダミー」を使用する必要があります。|  
-|`processorArchitecture`|必須。 プロセッサを指定します。 有効な値は`msil`すべてのプロセッサに対して`x86`32 ビットの Windows の`IA64`の 64 ビットの Windows と`Itanium`Intel 64 ビット Itanium プロセッサ用です。|  
-|`language`|必須。 2 部構成の言語コードを識別します (たとえば、 `en-US`) のアセンブリ。 この要素は、`asmv2`名前空間。 指定されていない場合、既定値は`neutral`します。|  
+|`Name`|必須です。 アプリケーションの名前を識別します。<br /><br /> に `Name` 1 つまたは二重引用符などの特殊文字が含まれている場合、アプリケーションのアクティブ化に失敗する可能性があります。|  
+|`Version`|必須です。 アプリケーションのバージョン番号を次の形式で指定します。 `major.minor.build.revision`|  
+|`publicKeyToken`|省略可能。 `SHA-1`アプリケーションまたはアセンブリに署名するときに使用する公開キーのハッシュ値の最後の8バイトを表す16文字の16進数文字列を指定します。 カタログの署名に使用される公開キーは、2048ビット以上である必要があります。<br /><br /> アセンブリに署名することをお勧めしますが、省略可能ですが、この属性は必須です。 アセンブリが署名されていない場合は、自己署名アセンブリから値をコピーするか、すべてゼロの "ダミー" 値を使用する必要があります。|  
+|`processorArchitecture`|必須です。 プロセッサを指定します。 有効な値は、 `msil` 32 ビット windows の場合はすべてのプロセッサ、64ビット windows の場合は、 `x86` `IA64` `Itanium` Intel 64 ビット Itanium プロセッサの場合はです。|  
+|`language`|必須です。 アセンブリの2つの部分言語コード (たとえば、) を識別し `en-US` ます。 この要素は `asmv2` 名前空間にあります。 指定されていない場合、既定値は `neutral` です。|  
   
-## <a name="examples"></a>使用例  
+## <a name="examples"></a>例  
   
 ### <a name="description"></a>説明  
- 次のコード例は [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション マニフェスト内の `assemblyIdentity` 要素を示しています。 このコード例で示されている例の一部は、 [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)します。  
+ 次のコード例は、 `assemblyIdentity` アプリケーションマニフェストの要素を示してい [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ます。 このコード例は、 [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)に用意されている大規模な例の一部です。  
   
 ### <a name="code"></a>コード  
   
@@ -70,6 +70,6 @@ ms.locfileid: "62428535"
   type="win32" />  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)   
+## <a name="see-also"></a>参照  
+ [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)   
  [\<assemblyIdentity> 要素](../deployment/assemblyidentity-element-clickonce-deployment.md)

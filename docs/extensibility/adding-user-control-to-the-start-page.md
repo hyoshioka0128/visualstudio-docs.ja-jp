@@ -13,28 +13,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903391"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011997"
 ---
 # <a name="add-user-control-to-the-start-page"></a>スタートページにユーザーコントロールを追加する
 
-このチュートリアルでは、カスタムスタートページに DLL 参照を追加する方法について説明します。 この例では、ユーザーコントロールをソリューションに追加し、ユーザーコントロールをビルドしてから、ビルドされたアセンブリをスタートページ *.xaml*ファイルから参照します。 新しいタブでは、基本的な Web ブラウザーとして機能するユーザーコントロールをホストします。
+このチュートリアルでは、カスタムスタートページに DLL 参照を追加する方法について説明します。 この例では、ユーザーコントロールをソリューションに追加し、ユーザーコントロールをビルドしてから、ビルドされたアセンブリをスタートページ *.xaml* ファイルから参照します。 新しいタブでは、基本的な Web ブラウザーとして機能するユーザーコントロールをホストします。
 
-同じプロセスを使用して、 *.xaml*ファイルから呼び出すことのできるアセンブリを追加できます。
+同じプロセスを使用して、 *.xaml* ファイルから呼び出すことのできるアセンブリを追加できます。
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>ソリューションに WPF ユーザーコントロールを追加する
 
 最初に、スタートページソリューションに Windows Presentation Foundation (WPF) ユーザーコントロールを追加します。
 
-1. 「[カスタムスタートページを作成する](../extensibility/creating-a-custom-start-page.md)」で作成したを使用してスタートページを作成します。
+1. 「 [カスタムスタートページを作成する](../extensibility/creating-a-custom-start-page.md)」で作成したを使用してスタートページを作成します。
 
 2. **ソリューション エクスプローラー**で該当ソリューションを右クリックして **[追加]** をクリックし、 **[新しいプロジェクト]** をクリックします。
 
-3. [**新しいプロジェクト**] ダイアログボックスの左ペインで、[ **Visual Basic** ] または [ **Visual C#** ] ノードのいずれかを展開し、[ **Windows**] をクリックします。 中央のペインで、[ **WPF ユーザーコントロールライブラリ**] を選択します。
+3. [ **新しいプロジェクト** ] ダイアログボックスの左ペインで、[ **Visual Basic** ] または [ **Visual C#** ] ノードのいずれかを展開し、[ **Windows**] をクリックします。 中央のペインで、[ **WPF ユーザーコントロールライブラリ**] を選択します。
 
 4. コントロールに名前を指定し、 `WebUserControl` [ **OK]** をクリックします。
 
@@ -104,9 +104,9 @@ WPF ユーザーコントロールを実装するには、XAML でユーザー�
 
 ### <a name="to-write-the-code-behind-events-for-the-user-control"></a>ユーザーコントロールの分離コードイベントを作成するには
 
-1. XAML デザイナーで、コントロールに追加した [**アドレスの設定**] ボタンをダブルクリックします。
+1. XAML デザイナーで、コントロールに追加した [ **アドレスの設定** ] ボタンをダブルクリックします。
 
-    コードエディターで*UserControl1.cs*ファイルが開きます。
+    コードエディターで *UserControl1.cs* ファイルが開きます。
 
 2. SetButton_Click イベントハンドラーに次のように入力します。
 
@@ -141,7 +141,7 @@ WPF ユーザーコントロールを実装するには、XAML でユーザー�
 
 1. **ソリューションエクスプローラー**のスタートページプロジェクトで、[**参照**] を右クリックし、[**参照の追加**] をクリックします。
 
-2. [**プロジェクト**] タブで [ **Webusercontrol** ] を選択し、[ **OK**] をクリックします。
+2. [ **プロジェクト** ] タブで [ **Webusercontrol** ] を選択し、[ **OK**] をクリックします。
 
 3. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
@@ -191,5 +191,5 @@ WPF ユーザーコントロールを実装するには、XAML でユーザー�
 
 ## <a name="see-also"></a>関連項目
 
-- [WPF コンテナーコントロール](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [WPF コンテナーコントロール](/previous-versions/bb675291(v=vs.110))
 - [チュートリアル: スタートページへのカスタム XAML の追加](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

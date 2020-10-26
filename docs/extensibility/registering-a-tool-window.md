@@ -1,5 +1,5 @@
 ---
-title: ツール ウィンドウの登録 |マイクロソフトドキュメント
+title: ツールウィンドウの登録 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: f0387bc15e392d9e9035e4dd1c119fdc1ad00dba
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701595"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011971"
 ---
-# <a name="register-a-tool-window"></a>ツール ウィンドウを登録する
-ツール ウィンドウは、 と<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute><xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>を使用して登録できます。
+# <a name="register-a-tool-window"></a>ツールウィンドウを登録する
+ツールウィンドウは、およびを使用して登録でき <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ます。
 
 ## <a name="example"></a>例
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 上記のコードでは、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>と`DynamicWindowPane`ツール`PersistedWindowPane`ウィンドウを Visual Studio に登録します。 永続化されたツール ウィンドウは **、ソリューション エクスプローラ**でドッキングされ、タブ付きにされ、動的ウィンドウには既定の開始位置とサイズが与えられます。 動的ウィンドウは一時的に作成され、スタートアップ時には作成されないことを示します。 これにより、`DontForceCreate`システム レジストリの`ToolWindows`キーに値が書き込まれます。 詳細については、「ツール[ウィンドウの表示設定](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)」を参照してください。
+ 上記のコードでは、によって <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `PersistedWindowPane` と `DynamicWindowPane` ツールウィンドウが Visual Studio に登録されます。 永続化されたツールウィンドウはドッキングされ、 **ソリューションエクスプローラー**でタブが付けられます。また、動的ウィンドウには、既定の開始位置とサイズが指定されます。 動的ウィンドウは一時的に作成されます。これは、起動時に作成されないことを示します。 これにより、 `DontForceCreate` システムレジストリのキーに値が書き込ま `ToolWindows` れます。 詳細については、「 [ツールウィンドウの表示構成](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015)」を参照してください。

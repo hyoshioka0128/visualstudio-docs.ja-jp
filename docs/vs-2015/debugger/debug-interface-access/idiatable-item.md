@@ -1,5 +1,5 @@
 ---
-title: Idiatable::item |Microsoft Docs
+title: 'IDiaTable:: Item |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6112a4580a68a98407723afab1ec3310d0f1cca9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62574802"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
@@ -36,21 +36,21 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>パラメーター  
  `index`  
- [in]テーブルのエントリに 0 の範囲内のインデックス`count`-1 の場合、`count`によって返される、 [idiatable::get_count](../../debugger/debug-interface-access/idiatable-get-count.md)メソッド。  
+ から0 ~-1 の範囲のテーブルエントリのインデックス `count` 。ここで、 `count` は [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)メソッドによって返されます。  
   
  `element`  
- [out]返します、`IUnknown`指定したテーブルのエントリを表すオブジェクト。  
+ 入出力 `IUnknown` 指定されたテーブルエントリを表すオブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- テーブルは、オブジェクトのコレクションを表します。 によって、これらのオブジェクト要素のパラメーターは、適切なインターフェイスにキャストできます。 たとえば、テーブルに含まれる[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)オブジェクトに要素のパラメーターをキャストすることができ、`IDiaSegment`インターフェイス。  
+## <a name="remarks"></a>注釈  
+ テーブルは、オブジェクトのコレクションを表します。 これらのオブジェクトに応じて、要素パラメーターを適切なインターフェイスにキャストできます。 たとえば、テーブルに [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) オブジェクトが含まれている場合は、要素パラメーターをインターフェイスにキャストでき `IDiaSegment` ます。  
   
- 呼び出す方が一般的ですが、`QueryInterface`メソッドで、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)適切な列挙子インターフェイスのためのインターフェイスし、列挙子の特定のメソッドを使用してテーブルの内容にアクセスします。 参照してください、 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)例については、インターフェイスです。  
+ `QueryInterface` [IDiaTable](../../debugger/debug-interface-access/idiatable.md)インターフェイスで適切な列挙子インターフェイスのメソッドを呼び出し、列挙子の特定のメソッドを使用してテーブルの内容にアクセスすることは、より一般的な方法です。 例については、 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) インターフェイスを参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

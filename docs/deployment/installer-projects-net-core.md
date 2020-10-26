@@ -11,14 +11,14 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: a057e655df643c5ddfd85064ba84260a2644dffd
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714390"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641577"
 ---
-# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio インストーラー Projects 拡張機能と .NET Core 3.1
+# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio Installer Projects 拡張機能 と .NET Core 3.1
 
 アプリケーションを MSI としてパッケージ化することは、多くの場合、Visual Studio インストーラー Projects 拡張機能を使用して行われます。
 
@@ -31,7 +31,7 @@ ms.locfileid: "88714390"
 
 - 自己完結型アプリケーションには、ランタイムが含まれます。
 
-これらのデプロイ方法の詳細については、「 [.Net Core アプリケーション公開の概要](https://docs.microsoft.com/dotnet/core/deploying/)」を参照してください。
+これらのデプロイ方法の詳細については、「 [.Net Core アプリケーション公開の概要](/dotnet/core/deploying/)」を参照してください。
 
 ### <a name="workflow-changes-for-net-core-31"></a>.NET Core 3.1 のワークフローの変更
 

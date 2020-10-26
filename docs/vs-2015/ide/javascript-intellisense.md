@@ -1,4 +1,4 @@
-﻿---
+---
 title: JavaScript IntelliSense | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75848384"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -48,7 +48,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
 - XML ドキュメントのコメントおよび JavaScript IntelliSense の機能拡張を持つカスタム IntelliSense をサポートする。
 
-  このトピックは、次のセクションで構成されています。
+  このトピックには、次のセクションが含まれます。
 
 - [IntelliSense のコンテキストの確認](#DeterminingIntelliSenseContext)
 
@@ -62,7 +62,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
   [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] の IntelliSense の機能の詳細については、「[IntelliSense の使用方法](../ide/using-intellisense.md)」を参照してください。
 
-## <a name="DeterminingIntelliSenseContext"></a> IntelliSense のコンテキストの確認
+## <a name="determining-intellisense-context"></a><a name="DeterminingIntelliSenseContext"></a> IntelliSense コンテキストの決定
  JavaScript IntelliSense では、現在のスクリプト コンテキストに関連するすべてのスクリプトに基づいて、入力するコードを選択できます。 これには、現在のファイル内のスクリプト要素が含まれます。 また、スクリプト ファイル参照、アセンブリ スクリプト参照、サービス参照、ページに関連付けられた参照など、作業中のスクリプトから直接的または間接的に参照されるコードもすべて含まれます。
 
  現在のスクリプト コンテキストは、次の項目に基づいて作成されます。
@@ -84,7 +84,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
     > [!NOTE]
     > IntelliSense は、HTML 要素のイベント ハンドラー属性内のスクリプトや `href` 属性に定義されたスクリプトではサポートされません。
 
-## <a name="ProcessingIntelliSenseInformation"></a> IntelliSense の情報の処理
+## <a name="processing-intellisense-information"></a><a name="ProcessingIntelliSenseInformation"></a> IntelliSense 情報の処理
  JavaScript IntelliSense を使用できるようにするため、言語サービスでは次の操作が実行されます。
 
 - アクティブ ドキュメント内の参照と、参照されるファイル内のスクリプト参照を再帰的にチェックする処理に基づいて JavaScript 依存ファイルのリストを作成します。
@@ -95,7 +95,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
 - ファイルで IntelliSense のリストに影響する可能性がある変更を監視し、必要に応じてリストを更新します。 リモート ストアのスクリプト (HTTP を使用して参照するものなど) は監視されません。
 
-## <a name="Features"></a> JavaScript IntelliSense の機能
+## <a name="javascript-intellisense-features"></a><a name="Features"></a> JavaScript IntelliSense の機能
  JavaScript IntelliSense は、次のオブジェクトをサポートします。
 
 - [ドキュメント オブジェクト モデル (DOM: Document Object Model) 要素](#HTMLDom)
@@ -118,21 +118,21 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
   IntelliSense は、オブジェクトの型を特定できない場合、アクティブ ドキュメントの識別子を使用して入力候補のオプションを提供します。 詳細については、「[Statement Completion for Identifiers (識別子の入力候補)](../ide/statement-completion-for-identifiers.md)」をご覧ください。
 
-### <a name="HTMLDom"></a> HTML DOM 要素
+### <a name="html-dom-elements"></a><a name="HTMLDom"></a> HTML DOM 要素
  JavaScript IntelliSense では、`body`、`form`、`div` などのダイナミック HTML (DHTML: Dynamic HTML) DOM 要素のプログラミングで参照できる一覧が表示されます。 現在のドキュメントとマスター ページに含まれる要素だけが IntelliSense によって表示されます。 `window` オブジェクトと `document` オブジェクト、およびそれらのメンバーも JavaScript IntelliSense でサポートされます。
 
-### <a name="IntrinsicObjects"></a> 組み込みオブジェクト
+### <a name="intrinsic-objects"></a><a name="IntrinsicObjects"></a> 組み込みオブジェクト
  JavaScript IntelliSense では、組み込みオブジェクトのプログラミングで参照できる一覧が表示されます。これには、`Array`、`String`、`Math`、`Date`、`Number` などがあります。 組み込みオブジェクトの詳細については、「[標準ビルトインオブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)」を参照してください。
 
-### <a name="UserDefined"></a> ユーザー定義の変数、関数、およびオブジェクト
+### <a name="user-defined-variables-functions-and-objects"></a><a name="UserDefined"></a> ユーザー定義の変数、関数、およびオブジェクト
  JavaScript ファイルを変更すると、開かれているドキュメントと参照されているドキュメントが [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] でスキャンされ、利用できるすべてのコード リソースが確認されます。 これには、ご自分で作成した変数、関数、およびオブジェクトが含まれます。 その後、これらのリソースが JavaScript IntelliSense で利用できるようになります。
 
  ユーザー定義の変数、関数、およびオブジェクトの詳細については、MSDN Web サイト上の[独自のオブジェクトの作成](https://msdn.microsoft.com/library/202863ha.aspx)に関するページを参照してください。
 
-### <a name="External"></a> 外部ファイル参照
+### <a name="external-file-references"></a><a name="External"></a> 外部ファイル参照
  コードの IntelliSense サポートを実現するために、さまざまな種類の外部ファイル参照を含めることができます。 外部ファイル参照は、スクリプト参照または参照ディレクティブの場合があり、参照グループを使って指定することもできます。
 
-#### <a name="Script"></a> スクリプト参照
+#### <a name="script-references"></a><a name="Script"></a> スクリプト参照
  ページ内にすべてのクライアント スクリプトを記述する代わりに、スクリプト コードを格納した外部ファイルを参照できます。 これによって、ページ間でのコードの再利用が容易になり、ブラウザーでクライアント スクリプトをキャッシュできるようになります。
 
  ASP.NET AJAX 対応の Web ページで作業していない場合は、`src` 要素の開始タグにある `script` 属性を使用して外部スクリプト ファイルを参照できます。 `src` 属性には、ソース コードまたはデータを格納した外部ファイルへの URL が指定されます。
@@ -157,9 +157,9 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 </asp:ScriptManager>
 ```
 
- IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、次を参照してください: 「[チュートリアル:アセンブリ内のリソースとしての JavaScript ファイルの埋め込み](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)」。
+ IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、「[Walkthrough: Embedding a JavaScript File as a Resource in an Assembly (チュートリアル: アセンブリ内のリソースとしての JavaScript ファイルの埋め込み)](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)」を参照してください。
 
-#### <a name="ReferenceDirectives"></a> 参照ディレクティブ
+#### <a name="reference-directives"></a><a name="ReferenceDirectives"></a> 参照ディレクティブ
  `reference` ディレクティブを使用すると、現在編集中のスクリプトとその他のスクリプトとの間の関係を [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] で確立できます。 `reference` ディレクティブにより、現在のスクリプト ファイル内のスクリプトのコンテキストにスクリプト ファイルを含めることができます。 これにより、コードの入力時に、外部で定義されている関数、型、およびフィールドを IntelliSense で参照できます。
 
  `reference` ディレクティブは、XML コメントの形式で作成します。 このディレクティブは、ファイル内で他のいずれのスクリプトよりも前に定義する必要があります。 `reference` ディレクティブには、ディスク ベースのスクリプト参照、アセンブリ ベースのスクリプト参照、サービス ベースのスクリプト参照、またはページ ベースのスクリプト参照を含めることができます。
@@ -219,7 +219,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
 - 参照されるページにある参照ディレクティブは処理されません。つまり、参照ディレクティブは、ページに対して再帰的には解決されません。 ページによって直接参照されるスクリプトだけが含まれます。
 
-#### <a name="ReferenceGroups"></a>参照グループ
+#### <a name="reference-groups"></a><a name="ReferenceGroups"></a>参照グループ
  定義済みの参照グループを使用して、特定の IntelliSense (.js) ファイルがさまざまな JavaScript プロジェクトのスコープ内にあることを指定できます。 使用できる参照グループの種類は次のとおりです。
 
 - 暗黙 (Windows)、JavaScript を使用する [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーション用。 このグループに含まれるファイルは、指定された種類のプロジェクトのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
@@ -246,7 +246,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 > [!WARNING]
 > この機能を有効にするとコード エディターのパフォーマンスが低下することが観察された場合、機能を無効にすることをお勧めします。
 
-### <a name="XMLDocComments"></a> XML ドキュメント コメント
+### <a name="xml-documentation-comments"></a><a name="XMLDocComments"></a> XML ドキュメントのコメント
  XML ドキュメントのコメントは、スクリプトに追加されるコード要素の説明テキストです。 これらの説明テキストは、コメントされたスクリプトを参照したときに IntelliSense で表示されます。 たとえば、関数のパラメーターと戻り値に関する情報を含められます。 XML ドキュメントのコメントは、参照されるファイル、アセンブリ、およびサービスでのみ使用できます。 詳細については、[XML ドキュメントのコメント](../ide/xml-documentation-comments-javascript.md)と [XML ドキュメントのコメントの作成](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)に関するページをご覧ください。
 
  IntelliSense は、次のシナリオで XML ドキュメントのコメントを表示できます。
@@ -259,30 +259,30 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 
   いずれかの .aspx ファイルで別の .aspx ファイルを参照している場合、IntelliSense は使用できません。
 
-### <a name="ASPNet"></a> ASP.NET AJAX オブジェクト
+### <a name="aspnet-ajax-objects"></a><a name="ASPNet"></a> ASP.NET AJAX オブジェクト
  ASP.NET AJAX も JavaScript IntelliSense をサポートしています。 ASP.NET AJAX には、ECMAScript (JavaScript) で使用できる標準の型を拡張するクライアント フレームワークが含まれています。 JavaScript IntelliSense を有効にして ASP.NET AJAX オブジェクトに関する詳細を利用できるようにするために、XML ドキュメントのコメントが [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 全体に追加されました。 これらの XML ドキュメントのコメントは、ASP.NET AJAX ライブラリに格納された型およびメンバーを使用したときに表示されます。
 
 > [!NOTE]
 > プライベート メンバーは JavaScript IntelliSense では表示されません。 プライベート メンバーは、ASP.NET AJAX ではアンダースコア (_) で始まるメンバーとして表されます。
 
-## <a name="Extensibility"></a> JavaScript IntelliSense の機能拡張
+## <a name="javascript-intellisense-extensibility"></a><a name="Extensibility"></a> JavaScript IntelliSense の機能拡張
  JavaScript Language Service はオブジェクトや機能を提供して、サードパーティのライブラリを使用する開発者が IntelliSense の操作性を変更できるようにします。 これらの機能は、既定の言語サービスではすべての情報を顧客に提供できない場合に特に役立ちます。 詳細については、「[JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)」を参照してください。
 
-## <a name="Validation"></a> JavaScript の検証
+## <a name="javascript-validation"></a><a name="Validation"></a> JavaScript の検証
  JavaScript のスクリプティングの検証は、背景で常に行われています。 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] が JavaScript コードで構文エラーを検出すると、フィードバックが次の方法で提供されます。
 
 - エディター内の下線付き要素。 赤い波型の下線はエラーを示します。 マウス ポインターをエラーの上に置くと、ツールヒントにエラーの説明が表示されます。
 
-- **[エラー一覧]** ウィンドウ。 **[エラー一覧]** ウィンドウに、エラーの説明、エラーが発生したファイル、行番号と列番号、およびプロジェクトが表示されます。 **[エラー一覧]** ウィンドウを表示するには、 **[表示]** メニューの **[エラー一覧]** をクリックします。
+- **エラー一覧** ウィンドウ。 **[エラー一覧]** ウィンドウに、エラーの説明、エラーが発生したファイル、行番号と列番号、およびプロジェクトが表示されます。 **[エラー一覧]** ウィンドウを表示するには、**[表示]** メニューの **[エラー一覧]** をクリックします。
 
 - 読み込まれなかった参照が [出力] ウィンドウに表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [IntelliSense の使用](../ide/using-intellisense.md)
 - [XML ドキュメントのコメントを作成する](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)
 - [識別子の入力候補](../ide/statement-completion-for-identifiers.md)
 - [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)
 - [DHTML オブジェクト モデルについて](https://msdn2.microsoft.com/library/ms533022.aspx)
-- [リスト メンバー](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [メンバーを一覧表示する](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [SRC 属性 &#124; src プロパティ](https://msdn2.microsoft.com/library/ms534642.aspx)

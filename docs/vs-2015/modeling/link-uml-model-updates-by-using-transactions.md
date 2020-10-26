@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657610"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>トランザクションを使用して UML モデルの更新をリンクする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio で UML デザイナーの拡張機能を定義すると、複数の変更を、リンクされた*undo コンテキスト*と呼ばれる1つのトランザクションにグループ化できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+Visual Studio で UML デザイナーの拡張機能を定義すると、複数の変更を、リンクされた *undo コンテキスト*と呼ばれる1つのトランザクションにグループ化できます。 UML モデルをサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
  既定では、ユーザーは、コードによってモデルに加えられた変更を個別に元に戻すことができます。 たとえば、2 つの UML クラスの名前を入れ替えるメニュー コマンドを定義した場合に、ユーザーがそのコマンドを起動して、元に戻す操作を 1 回実行するとします。 この場合、1 つの名前に対する変更は元に戻されますが、もう 1 つの名前の変更は元に戻されず、モデルは意図されていない状態になります。
 
@@ -60,7 +60,7 @@ Visual Studio で UML デザイナーの拡張機能を定義すると、複数�
 
  `}`
 
- 次の点に注意してください。
+ 次に注意してください。
 
 - トランザクションの最後に必ず `Commit()` を含める必要があります。 トランザクションがコミットされることなく破棄されると、トランザクションはロールバックされます。 つまり、モデルは、トランザクションが開始された時点の状態に復元されます。
 

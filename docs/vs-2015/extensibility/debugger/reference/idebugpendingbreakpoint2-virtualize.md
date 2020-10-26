@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize |Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: 仮想化 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf4277afc63d403cc3d02c4d79b9e5f2b1b8d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143881"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-この保留中のブレークポイントの仮想化の状態を切り替えます。 保留中のブレークポイントが仮想化されたデバッグ エンジンは、プログラムに新しいコードを読み込むたびにバインドしようとします。  
+この保留中のブレークポイントの仮想化された状態を切り替えます。 保留中のブレークポイントが仮想化されると、デバッグエンジンは、新しいコードがプログラムに読み込まれるたびにバインドを試行します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,16 +41,16 @@ int Virtualize( 
   
 #### <a name="parameters"></a>パラメーター  
  `fVirtualize`  
- [in]0 以外に設定 (`TRUE`) またはゼロに保留中のブレークポイントを仮想化 (`FALSE`) 仮想化をオフにします。  
+ から`TRUE`保留中のブレークポイントを仮想化する場合は0以外 () に設定し、仮想化を無効にする場合はゼロ () に設定し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`ブレークポイントが削除されている場合。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_BP_DELETED`ブレークポイントが削除されている場合は、を返します。  
   
-## <a name="remarks"></a>Remarks  
- コードが読み込まれるたびに、仮想化されたブレークポイントがバインドされています。  
+## <a name="remarks"></a>注釈  
+ 仮想化されたブレークポイントは、コードが読み込まれるたびにバインドされます。  
   
 ## <a name="example"></a>例  
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CPendingBreakpoint`を公開するオブジェクト、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)インターフェイス。  
+ 次の例は、IDebugPendingBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CPendingBreakpoint` います。 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
@@ -84,5 +84,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }    
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -9,21 +9,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: aad09901de2017ae14b65ec6e79f3153557c4d81
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587642"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
 
 Microsoft 拡張デザインガイドライン規則セットは、基本デザインガイドライン規則を拡張して、報告されるユーザビリティと保守容易性の問題を最大化します。 特に、命名に関するガイドラインに重点が置かれています。 プロジェクトにライブラリコードが含まれている場合、または保守しやすいコードを記述するために最高の基準を適用する場合は、この規則セットを含めることを検討してください。
 
-拡張デザインガイドライン規則には、"[基本デザインガイドライン規則](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)" 規則セットのすべての規則が含まれます。これには、"[マネージ推奨規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)" 規則セット内の規則が含まれます。
+拡張デザインガイドライン規則には、" [基本デザインガイドライン規則](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) " 規則セットのすべての規則が含まれます。これには、" [マネージ推奨規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) " 規則セット内の規則が含まれます。
 
 次の表では、"Microsoft 拡張デザインガイドライン規則" 規則セット内のすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009.md)|イベント ハンドラーを正しく宣言します|

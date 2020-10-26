@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest |Microsoft Docs
+title: 'IDebugPort2:: GetPortRequest |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9b41106cc4e7cdfc04bcd1934b5959089d078206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202913"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-(該当する場合) のポートの作成に使用されていたポートの説明を取得します。  
+ポートの作成に使用されたポート (使用可能な場合) の説明を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,12 +40,12 @@ int GetPortRequest( 
   
 #### <a name="parameters"></a>パラメーター  
  `ppRequest`  
- [out]返します、 [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)ポートの作成に使用された要求を表すオブジェクト。  
+ 入出力ポートの作成に使用された要求を表す [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  返します`E_PORT_NO_REQUEST`ポートが使用して作成されなかった場合、 [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)ポート要求。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  `E_PORT_NO_REQUEST`ポートが[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) port 要求を使用して作成されなかった場合は、を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
  [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

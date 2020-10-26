@@ -1,5 +1,5 @@
 ---
-title: デバッガー拡張機能の概要 |マイクロソフトドキュメント
+title: デバッガーの機能拡張によるはじめに |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,34 +13,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738593"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>デバッガーの機能拡張の概要
-では[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]、環境内からプログラムをデバッグするために使用するデバッガ コンポーネントを作成およびカスタマイズするために必要[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]な情報を提供します。
+は、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 環境内からプログラムをデバッグするために使用されるデバッガーコンポーネントを作成およびカスタマイズするために必要な情報を提供し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグは、以前[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のデバッガーで実行される広範なユーザビリティ テストから派生した改善を追加しました。 デバッグを使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]して、複数言語のアプリケーションをステップ実行したり、アプリケーションや多言語ソリューションのデバッグ中に変数のリアルタイムで編集を実装したりできます。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] デバッグには、以前のデバッガーで実行された広範なユーザビリティテストから得られた機能強化が加えられてい [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグを使用すると、複数言語のアプリケーションをステップ実行できます。また、アプリケーションや多言語ソリューションをデバッグするときに、変数の編集時の編集を実装することもできます。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグは、デバッグ中のプログラムでプロセス外で実行されるため、アプリケーションのプロセス空間での侵入が少なくなります。 したがって、デバッグ プログラムに影響を与えることなく、デバッガーと対話するコンポーネントを簡単に作成できます。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] デバッグはデバッグ中のプログラムを使用してプロセス外で実行されるため、アプリケーションのプロセス領域が少なくなります。 そのため、デバッグプログラムに影響を与えずに、デバッガーと対話するコンポーネントを簡単に記述できます。
 
- を最大限に活用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]するには、次の項目について理解している必要があります。
+ を最適に使用するには [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 、次の項目について理解しておく必要があります。
 
-- 統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]開発環境 (IDE)
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE)
 
 - C++ プログラミング言語
 
 - ATL COM
 
 ## <a name="in-this-section"></a>このセクションの内容
- [デバッガーを拡張するためのロードマップ](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)コンパイラとその出力に応じて、製品にデバッグを実装するプロセスについて説明します。
+ [デバッガーを拡張するためのロードマップ](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) コンパイラとその出力に応じて、製品にデバッグを実装するプロセスの概要を示します。
 
- [デバッガー コンポーネント](../../extensibility/debugger/debugger-components.md)[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ エンジン (DE)、式エバリュエーター (EE)、およびシンボル ハンドラー (SH) を含むデバッグ コンポーネントの概要を提供します。
+ [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md) デバッグ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] エンジン (DE)、式エバリュエーター (EE)、およびシンボルハンドラー (SH) を含むデバッグコンポーネントの概要について説明します。
 
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)デバッグアーキテクチャの主要な概念について説明します。
+ [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md) デバッグアーキテクチャの主要概念について説明します。
 
- [デバッガーのコンテキスト](../../extensibility/debugger/debugger-contexts.md)デバッグ エンジン (DE) がコード、ドキュメント、および式の評価コンテキスト内で同時に動作する方法について説明します。 3 つのコンテキストのそれぞれについて、そのコンテキストに関連する場所、位置、または評価について説明します。
+ [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md) コード、ドキュメント、および式の評価コンテキスト内でデバッグエンジン (DE) を同時に動作させる方法について説明します。 3つのコンテキストのそれぞれについて、場所、位置、または評価に関連する評価について説明します。
 
- [デバッグ タスク](../../extensibility/debugger/debugging-tasks.md)プログラムの起動や式の評価など、さまざまなデバッグ タスクへのリンクが含まれています。
+ [デバッグタスク](../../extensibility/debugger/debugging-tasks.md) プログラムの起動や式の評価など、さまざまなデバッグタスクへのリンクが含まれています。

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a2d47a66cdedfc191212a178221712de6aefa61
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671696"
 ---
 # <a name="step-6-add-a-timer"></a>手順 6: タイマーの追加
@@ -23,16 +23,16 @@ ms.locfileid: "72671696"
 
 ### <a name="to-add-a-timer"></a>タイマーを追加するには
 
-1. Windows フォーム デザイナーのツール ボックスから、 **[タイマー]** \( **[コンポーネント]** カテゴリ内) を選択して Enter キーを押すか、タイマーをダブルクリックして、タイマー コントロールをフォームに追加します。 次の図に示しているように、タイマーのアイコンが **[Timer1]** という名前で、フォームの下の領域に表示されます。
+1. Windows フォームデザイナーの [ツールボックス] で、[ **タイマー** ] ([ **コンポーネント** ] カテゴリ) を選択し、enter キーを押すか、タイマーをダブルクリックして、タイマーコントロールをフォームに追加します。 次の図に示しているように、タイマーのアイコンが [**Timer1**] という名前で、フォームの下の領域に表示されます。
 
-     ![タイマー](../ide/media/express-timer.png "Express_Timer")期限
+     ![タイマー](../ide/media/express-timer.png "Express_Timer") 期限
 
     > [!NOTE]
     > ツール ボックスが空の場合は、フォームのコードではなくフォーム デザイナーを選択してから、ツール ボックスを開いてください。
 
-2. **[Timer1]** アイコンをクリックしてタイマーを選択します。 **[プロパティ]** ウィンドウで、表示イベントから表示プロパティに切り替えます。 次に、タイマーの **[Interval]** プロパティを **750** に設定します。ただし、その **[Enabled]** プロパティは **[False]** のままにします。 **[Interval]** プロパティは、*ティック*間の待機時間 (Tick イベントのトリガーまでの待機時間) をタイマーに指示します。 このプロパティの値として 750 を指定すると、その Tick イベントを発生させるまでに 4 分の 3 秒 (750 ミリ秒) 待機するようタイマーに指示することになります。 `Start()` メソッドを呼び出して、プレーヤーが 2 つ目のラベルをクリックした後にのみタイマーが開始されるようにします。
+2. **[Timer1]** アイコンをクリックしてタイマーを選択します。 **[プロパティ]** ウィンドウで、表示イベントから表示プロパティに切り替えます。 次に、タイマーの **[Interval]** プロパティを **750** に設定します。ただし、その **[Enabled]** プロパティは **[False]** のままにします。 [**Interval**] プロパティは、*ティック*間の待機時間 (Tick イベントのトリガーまでの待機時間) をタイマーに指示します。 このプロパティの値として 750 を指定すると、その Tick イベントを発生させるまでに 4 分の 3 秒 (750 ミリ秒) 待機するようタイマーに指示することになります。 `Start()` メソッドを呼び出して、プレーヤーが 2 つ目のラベルをクリックした後にのみタイマーが開始されるようにします。
 
-3. Windows フォーム デザイナーでタイマー コントロール アイコンを選択して Enter キーを押すか、タイマーをダブルクリックして、空の **Tick** イベント ハンドラーを追加します。 次のコードを既存のコードと置き換えるか、手動でイベント ハンドラーに入力します。
+3. Windows フォームデザイナーでタイマーコントロールアイコンを選択し、ENTER キーを押すか、タイマーをダブルクリックして、空の **Tick** イベントハンドラーを追加します。 次のコードを既存のコードと置き換えるか、手動でイベント ハンドラーに入力します。
 
      [!code-csharp[VbExpressTutorial4Step6#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial4Step6#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb#7)]
@@ -57,6 +57,6 @@ ms.locfileid: "72671696"
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 7: ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 [手順 7: ペアの表示を維持](../ide/step-7-keep-pairs-visible.md)する」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 5: ラベルの参照の追加](../ide/step-5-add-label-references.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 5: ラベル参照を追加](../ide/step-5-add-label-references.md)する」を参照してください。

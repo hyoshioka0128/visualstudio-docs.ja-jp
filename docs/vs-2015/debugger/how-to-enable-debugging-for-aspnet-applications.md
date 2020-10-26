@@ -19,19 +19,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477010"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>方法 : .NET アプリケーションのデバッグを有効にする
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>方法:ASP.NET アプリケーションのデバッグを有効にする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 デバッグを有効にするには、 **プロジェクト プロパティ** ページとアプリケーションの web.config ファイルの両方で有効にする必要があります。  
   
 > [!NOTE]  
-> 使用中の設定やエディションに応じて、表示されるダイアログ ボックスとメニュー コマンドがヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** を選択してください。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](/previous-versions/zbhkx167(v=vs.140))」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](/previous-versions/zbhkx167(v=vs.140))」を参照してください。  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Visual Basic または C# のプロジェクト プロパティで ASP.NET デバッグを有効にするには  
   
@@ -48,7 +48,7 @@ ms.locfileid: "77477010"
     > [!NOTE]  
     > ただし、Web ブラウザーを使用してファイルにリモート アクセスすることはできません。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] では、セキュリティ上の理由から、ブラウザーが直接 Web.config ファイルにアクセスできないように Microsoft IIS を設定しています。 ブラウザーで構成ファイルにアクセスしようとすると、HTTP アクセス エラー 403 (禁止) が表示されます。  
   
-2. Web.config は XML ファイルなので、タグでマークされた入れ子のセクションが含まれます。 `configuration/system.web/compilation` 要素を見つけます。 compilation 要素が存在しない場合は、その要素を作成します。  
+2. Web.config は XML ファイルなので、タグでマークされた入れ子のセクションが含まれます。 `configuration/system.web/compilation` 要素を探します。 compilation 要素が存在しない場合は、その要素を作成します。  
   
 3. `compilation` 要素内に `debug` 属性がない場合は、その属性を要素に追加します。  
   
@@ -78,12 +78,12 @@ web.config ファイルは次の例のようになります。 場合によっ�
 </configuration>  
 ```  
   
-## <a name="robust-programming"></a>堅牢性の高いプログラミング  
+## <a name="robust-programming"></a>信頼性の高いプログラミング  
 Web.config ファイルが変更されると、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] が自動的に変更を検出し、新しい構成設定を適用します。 変更を反映させるためにコンピューターまたは IIS サーバーを再起動する必要はありません。  
   
 Web サイトには、複数の仮想ディレクトリとサブディレクトリを含めることができ、それぞれに Web.config ファイルを用意できます。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションは、URL パスの上位レベルにある Web.config ファイルの設定を継承します。 階層構造の構成ファイルを利用して、下位の階層にあるすべてのアプリケーションなど、複数の [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションの設定を同時に変更できます。 ただし、階層内の下位のファイルで `debug` が設定されると、上位の値がオーバーライドされます。  
   
-たとえば、`www.microsoft.com/aaa/Web.config`で `debug="true"` を指定すると、aaa フォルダーまたは aaa のサブフォルダー内のすべてのアプリケーションは、その設定を継承します。 したがって、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションが `www.microsoft.com/aaa/bbb`にある場合は、`www.microsoft.com/aaa/ccc`、`www.microsoft.com/aaa/ddd`などの [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションと同様に、その設定が継承されます。 唯一の例外は、アプリケーションの 1 つが、より低いレベルにある独自の Web.config ファイルで設定をオーバーライドする場合です。  
+たとえば、でを指定する `debug="true"` `www.microsoft.com/aaa/Web.config` と、aaa フォルダーまたは aaa のサブフォルダー内のすべてのアプリケーションは、その設定を継承します。 そのため、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションがにある場合は `www.microsoft.com/aaa/bbb` [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 、、などのアプリケーションと同様に、その設定が継承され `www.microsoft.com/aaa/ccc` `www.microsoft.com/aaa/ddd` ます。 唯一の例外は、アプリケーションの 1 つが、より低いレベルにある独自の Web.config ファイルで設定をオーバーライドする場合です。  
   
 デバッグ モードを有効にすると、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションのパフォーマンスに大きく影響します。 リリース バージョンのアプリケーションを配置したり、パフォーマンスの測定を実施したりする前には、デバッグ モードを無効にしてください。  
   

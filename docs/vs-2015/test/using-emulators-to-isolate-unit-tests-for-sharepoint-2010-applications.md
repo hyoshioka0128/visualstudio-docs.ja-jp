@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc3560c1cbcebea9f61465240cd4e2c7a0f811f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667464"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 アプリケーションの単体テストを分離するためのエミュレーターの使用
@@ -22,20 +22,20 @@ Microsoft.SharePoint.Emulators パッケージには、Microsoft SharePoint 2010
 
  既存のテスト メソッドとクラスは、エミュレーターのコンテキストで実行されるように容易に変換できます。 この機能を使用すると、二重用途のテストを作成できます。 二重用途のテストは、実際の SharePoint API に対する統合テストと、エミュレーターを使用する分離単体テストを切り替えることができます。
 
-## <a name="BKMK_In_this_topic"></a> このトピックの内容
- [Requirements](#BKMK_Requirements)
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> このトピックの内容
+ [必要条件](#BKMK_Requirements)
 
  [AppointmentsWebPart の例](#BKMK_The_AppointmentsWebPart_example)
 
  [既存のテストを変換する](#BKMK_Converting_an_existing_test)
 
-- [テスト プロジェクトに Emulators パッケージを追加する](#BKMK_Adding_the_Emulators_package_to_a_test_project)
+- [テストプロジェクトへのエミュレーターパッケージの追加](#BKMK_Adding_the_Emulators_package_to_a_test_project)
 
-- [エミュレーションを使用してテスト メソッドを実行する](#BKMK__Running_a_test_method_in_the_emulation_context)
+- [エミュレーションを使用したテストメソッドの実行](#BKMK__Running_a_test_method_in_the_emulation_context)
 
-  [二重用途のクラスおよびメソッドを作成する](#BKMK_Creating_dual_use_classes_and_methods)
+  [二重用途のクラスとメソッドの作成](#BKMK_Creating_dual_use_classes_and_methods)
 
-  [TestInitialize 属性と TestCleanup 属性を使用して二重用途のテスト クラスを作成する](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)
+  [TestInitialize 属性と Testinitialize 属性を使用して二重用途のテストクラスを作成する](#BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class)
 
   [エミュレートされていない SharePoint メソッドを処理する](#BKMK_Handling_non_emulated_SharePoint_methods)
 
@@ -45,7 +45,7 @@ Microsoft.SharePoint.Emulators パッケージには、Microsoft SharePoint 2010
 
   [エミュレートされた SharePoint の型](#BKMK_Emulated_SharePoint_types)
 
-## <a name="BKMK_Requirements"></a> 必要条件
+## <a name="requirements"></a><a name="BKMK_Requirements"></a> 必要条件
 
 - Microsoft SharePoint 2010 (SharePoint 2010 Server または SharePoint 2010 Foundation)
 
@@ -55,7 +55,7 @@ Microsoft.SharePoint.Emulators パッケージには、Microsoft SharePoint 2010
 
   また、[Visual Studio での単体テストの基本](../test/unit-test-basics.md)をよく理解しておく必要があるほか、[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) に関する知識も必要です。
 
-## <a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart の例
+## <a name="the-appointmentswebpart-example"></a><a name="BKMK_The_AppointmentsWebPart_example"></a> AppointmentsWebPart の例
  AppointmentsWebPart を使用すると、予定の SharePoint リストを表示および管理できます。
 
  ![予定 Web パーツ](../test/media/ut-emulators-appointmentswebpart.png "UT_EMULATORS_AppointmentsWebPart")
@@ -68,7 +68,7 @@ Microsoft.SharePoint.Emulators パッケージには、Microsoft SharePoint 2010
 
   [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="BKMK_Converting_an_existing_test"></a> 既存のテストを変換する
+## <a name="converting-an-existing-test"></a><a name="BKMK_Converting_an_existing_test"></a> 既存のテストの変換
  SharePoint コンポーネントの一般的なメソッド テストでは、テスト メソッドにより、一時的なサイトが SharePoint Foundation に作成され、テスト対象のコードが必要とする SharePoint コンポーネントが追加されます。 その後、コンポーネントのインスタンスが作成および実行されます。 このサイトは、テストの終了時に破棄されます。
 
  テスト対象のコードの `ScheduleAppointment` メソッドは、ほとんどの場合、そのコンポーネントに対して記述された最初のメソッドの 1 つです。
@@ -138,23 +138,23 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [このトピックの内容](#BKMK_In_this_topic)
 
-### <a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> テスト プロジェクトに Emulators パッケージを追加する
+### <a name="adding-the-emulators-package-to-a-test-project"></a><a name="BKMK_Adding_the_Emulators_package_to_a_test_project"></a> テスト プロジェクトに Emulators パッケージを追加する
  SharePoint エミュレーターをテスト プロジェクトに追加するには:
 
 1. ソリューション エクスプローラーでテスト プロジェクトを選択します。
 
 2. ショートカット メニューの **[NuGet パッケージの管理...]** を選択します。
 
-3. `Microsoft.SharePoint.Emulators` の **[オンライン]** カテゴリを検索し、 **[インストール]** を選択します。
+3. `Microsoft.SharePoint.Emulators` の **[オンライン]** カテゴリを検索し、**[インストール]** を選択します。
 
-   ![Sharepoint エミュレーター NuGet パッケージ](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")
+   ![SharePoint エミュレーター NuGet パッケージ](../test/media/ut-emulators-nuget.png "UT_EMULATORS_Nuget")
 
    [このトピックの内容](#BKMK_In_this_topic)
 
-### <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> エミュレーションを使用してテスト メソッドを実行する
+### <a name="running-a-test-method-with-emulation"></a><a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> エミュレーションを使用してテスト メソッドを実行する
  パッケージをインストールすると、必要なライブラリへの参照がプロジェクトに追加されます。 既存のテスト クラスでエミュレーターを使いやすくするには、名前空間 `Microsoft.SharePoint.Emulators` と `Microsoft.QualityTools.Testing.Emulators` を追加します。
 
- テスト メソッドでエミュレーションを有効にするには、`using` オブジェクトを作成する `SharePointEmulationScope` ステートメントでメソッド本体をラップします。 (例:
+ テスト メソッドでエミュレーションを有効にするには、`using` オブジェクトを作成する `SharePointEmulationScope` ステートメントでメソッド本体をラップします。 次に例を示します。
 
 ```csharp
 
@@ -190,7 +190,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="BKMK_Creating_dual_use_classes_and_methods"></a> 二重用途のクラスおよびメソッドを作成する
+## <a name="creating-dual-use-classes-and-methods"></a><a name="BKMK_Creating_dual_use_classes_and_methods"></a> 二重用途のクラスおよびメソッドを作成する
  実際の SharePoint API に対する統合テストと、エミュレーターを使用する分離単体テストの両方に使用できるメソッドを作成するには、オーバーロードされたコンストラクター `SharePointEmulationScope(EmulationMode)` を使用して、テスト メソッド コードをラップします。 `EmulationMode` 列挙型の 2 つの値は、スコープがエミュレーターを使用するかどうか  (`EmulationMode.Enabled`)、またはスコープが SharePoint API を使用するかどうか (`EmulationMode.Passthrough`) を指定します。
 
  たとえば、次のコードは、前回のテストを二重用途に変更する方法を示しています。
@@ -227,7 +227,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 
  [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> TestInitialize 属性と TestCleanup 属性を使用して二重用途のテスト クラスを作成する
+## <a name="using-testinitialize-and-testcleanup-attributes-to-create-a-dual-use-test-class"></a><a name="BKMK_Using_TestInitialize_and_TestCleanup_attributes_to_create_a_dual_use_test_class"></a> TestInitialize 属性と TestCleanup 属性を使用して二重用途のテスト クラスを作成する
  `SharePointEmulationScope` を使用してクラスのすべてのテスト、またはほとんどのテストを実行すると、クラス レベルの手法を利用して、エミュレーション モードを設定できます。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> および <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> を使用して属性設定されているテスト クラス メソッドが、スコープを作成および破棄できます。
@@ -294,7 +294,7 @@ namspace MySPAppTests
 
  [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> エミュレートされていない SharePoint メソッドを処理する
+## <a name="handling-non-emulated-sharepoint-methods"></a><a name="BKMK_Handling_non_emulated_SharePoint_methods"></a> エミュレートされていない SharePoint メソッドの処理
  すべての SharePoint 型がエミュレートされるわけではありません。また、エミュレートされた型のすべてのメソッドがエミュレートされるわけでもありません。 テスト対象のコードが、エミュレートされていない SharePoint メソッドを呼び出すと、そのメソッドによって `NotSupportedException` 例外がスローされます。 例外が発生したら、SharePoint メソッドの Fakes shim を追加します。
 
  **SharePoint Fakes の準備**
@@ -303,7 +303,7 @@ namspace MySPAppTests
 
 1. エミュレートされていない SharePoint クラスに shim を使用する場合は、Microsoft.SharePoint.fakes ファイルを編集し、shim が使用されたクラスの一覧にそのクラスを追加します。 「[Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)」の [stub と shim のコード生成の構成](https://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)に関するセクションを参照してください。
 
-    ![ソリューションエクスプローラーのフォルダーのフェイク](../test/media/ut-emulators-fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
+    ![ソリューション エクスプローラーの Fakes フォルダー](../test/media/ut-emulators-fakesfilefolder.png "UT_EMULATORS_FakesFileFolder")
 
 2. Microsoft SharePoint エミュレーター パッケージのインストール後、Microsoft.SharePoint.Fakes ファイルを編集した場合、少なくとも 1 回はテスト プロジェクトをリビルドします。 プロジェクトをビルドすると、ディスク上のプロジェクト ルート フォルダーに **FakesAssembly** フォルダーが作成され、設定されます。
 
@@ -385,7 +385,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
  [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> 新しいエミュレーション テストの作成と概要
+## <a name="writing-emulation-tests-from-scratch-and-a-summary"></a><a name="BKMK_Writing_emulation_tests_from_scratch__and_a_summary"></a> 最初からのエミュレーションテストの作成と概要
  前のセクションで説明したエミュレーション テストおよび二重用途のテストを作成する手法では、既存のテストを変換することを前提としていますが、テストをゼロから記述する手法も使用できます。 次の一覧にこの手法の概要を示します。
 
 - テスト プロジェクトでエミュレーターを使用するには、Microsoft.SharePoint.Emulators NuGet パッケージをプロジェクトに追加します。
@@ -402,7 +402,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 
   [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="BKMK_Example"></a> 「例」
+## <a name="example"></a><a name="BKMK_Example"></a> 例
  次に示す最後の例には、上記の SharePoint エミュレーター手法が組み込まれています。
 
 ```csharp
@@ -522,7 +522,7 @@ namspace MySPAppTests
 
 ```
 
-## <a name="BKMK_Emulated_SharePoint_types"></a> エミュレートされた SharePoint の型
+## <a name="emulated-sharepoint-types"></a><a name="BKMK_Emulated_SharePoint_types"></a> エミュレートされた SharePoint の種類
  [Microsoft.SharePoint.SPField](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)
 
  [Microsoft.SharePoint.SPFieldIndex](https://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndex)

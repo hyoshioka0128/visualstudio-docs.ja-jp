@@ -1,5 +1,5 @@
 ---
-title: I列挙デバッグフレーム情報2::クローン |マイクロソフトドキュメント
+title: 'IEnumDebugFrameInfo2:: Clone |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0b8d59fa008a9685ca80a2f6b33f6c4503c19ea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716756"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[アウト]この列挙体のコピーを個別のオブジェクトとして返します。
+入出力この列挙体のコピーを別のオブジェクトとして返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 列挙型のコピーは、このメソッドが呼び出された時点で元の状態と同じです。 ただし、コピーと元の状態は別々に行われ、個別に変更できます。
+## <a name="remarks"></a>注釈
+ 列挙体のコピーは、このメソッドが呼び出されたときの元の状態と同じ状態になります。 ただし、コピーと元の状態は別々であり、個別に変更できます。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

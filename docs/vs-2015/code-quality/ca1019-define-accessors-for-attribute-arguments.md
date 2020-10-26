@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ec9be9dae502ec48570a85576f483518ed0d75d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534954"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:属性引数にアクセサーを定義します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
@@ -76,5 +76,5 @@ ms.locfileid: "85534954"
 ## <a name="related-rules"></a>関連規則
  [CA1813:アンシールド属性を使用しません](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : スタート キットを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f9df8d85c600cd383a9a9059e689e6cb9f232d8f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668038"
 ---
 # <a name="how-to-create-starter-kits"></a>方法 : スタート キットを作成する
@@ -47,9 +47,9 @@ ms.locfileid: "72668038"
 
  次のトピックには、テンプレートの作成に関する情報が含まれます。
 
- [方法: プロジェクトテンプレートを作成](../ide/how-to-create-project-templates.md)するテンプレートの**エクスポート**ウィザードを使用してテンプレートを作成する方法について説明します。
+ [方法: プロジェクトテンプレートを作成](../ide/how-to-create-project-templates.md) するテンプレートの **エクスポート** ウィザードを使用してテンプレートを作成する方法について説明します。
 
- [方法: 既存のテンプレートを更新する](../ide/how-to-update-existing-templates.md)エクスポートされたテンプレートを編集する方法について説明します。 この手順を使用して .vstemplate ファイルを変更し、スタート キットをカスタマイズします。
+ [方法: 既存のテンプレートを更新する](../ide/how-to-update-existing-templates.md) エクスポートされたテンプレートを編集する方法について説明します。 この手順を使用して .vstemplate ファイルを変更し、スタート キットをカスタマイズします。
 
 ## <a name="see-also"></a>参照
  [プロジェクトと項目テンプレートの作成テンプレートの](../ide/creating-project-and-item-templates.md)[カスタマイズ](../ide/customizing-project-and-item-templates.md) [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

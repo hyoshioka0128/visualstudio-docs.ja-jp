@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_source |Microsoft Docs
+title: 'IDiaInjectedSource:: get_source |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 856d0111e65b51b798dfe44a324c58c4db5457fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192417"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソース コードのバイト数を取得します。  
+ソースコードのバイトを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,16 +37,16 @@ HRESULT get_source ( 
   
 #### <a name="parameters"></a>パラメーター  
  `cbData`  
- [in]データ バッファーのサイズを表すバイトの数。  
+ からデータバッファーのサイズを表すバイト数。  
   
  `pcbData`  
- [out]返されたバイト数を表すバイトの数を返します。 場合`data`は`NULL`、し`pcbData`はデータのバイトの合計数を使用できます。  
+ 入出力返されたバイト数を表すバイト数を返します。 がの場合 `data` `NULL` 、 `pcbData` は、使用可能なデータの合計バイト数を示します。  
   
  `data[]`  
- [out]ソース バイトで格納されるバッファー。  
+ 入出力コピー元のバイトを格納するバッファー。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

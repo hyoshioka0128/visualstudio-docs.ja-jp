@@ -1,5 +1,5 @@
 ---
-title: を有効にするマイクロソフトドキュメント
+title: 'IDebugCoreServer3:: EnableAutoAttach |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732918"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-指定したデバッグ エンジンの自動アタッチを有効にします。
+指定されたデバッグエンジンへの自動アタッチを有効にします。
 
 ## <a name="syntax"></a>構文
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>パラメーター
 `rgguidSpecificEngines`\
-[in]自動アタッチとしてマークする各デバッグ エンジンの GUID の配列。
+から自動アタッチとしてマークする各デバッグエンジンの Guid の配列。
 
 `celtSpecificEngines`\
-[in]で`rgguidSpecificEngines`指定されたエンジンの数。
+からで指定されたエンジンの数 `rgguidSpecificEngines` 。
 
 `pszStartPageUrl`\
-[in]自動アタッチ時に使用する開始 URL。
+から自動アタッチ時に使用する開始 URL。
 
 `pbstrSessionID`\
-[アウト]自動接続されたセッションの ID。
+入出力自動接続されたセッションの ID。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 エラー コードの`E_AUTO_ATTACH_NOT_REGISTERED`1 つは、自動アタッチ クラス ファクトリが登録されていないというものです。
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 1つのエラーコードはです `E_AUTO_ATTACH_NOT_REGISTERED` 。これは、自動アタッチクラスファクトリが登録されていないことを示します。
 
-## <a name="remarks"></a>Remarks
- 指定した URL に関連付けられたプログラムが開始されると、指定されたデバッグ エンジンが自動的に起動され、アタッチされます。
+## <a name="remarks"></a>解説
+ 指定した URL に関連付けられているプログラムが開始されると、指定されたデバッグエンジンが自動的に起動され、アタッチされます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

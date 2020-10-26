@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b4f5cb3098289463cea7e650332583ec7b12258
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541311"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>方法: マネージコード拡張をドキュメントから削除する
@@ -35,16 +35,16 @@ ms.locfileid: "85541311"
 
 ## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>閉じられたドキュメントまたはサーバー上のドキュメントからカスタマイズアセンブリを削除するには
 
-1. コンソールアプリケーションや Windows フォームプロジェクトなどの Microsoft Office を必要としないプロジェクトでは、 *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*アセンブリへの参照を追加します。
+1. コンソールアプリケーションや Windows フォームプロジェクトなどの Microsoft Office を必要としないプロジェクトでは、 *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* アセンブリへの参照を追加します。
 
-2. 次の**Imports**ステートメントまたは**using**ステートメントをコードファイルの先頭に追加します。
+2. 次の **Imports** ステートメントまたは **using** ステートメントをコードファイルの先頭に追加します。
 
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
      [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
 
 3. クラスの静的メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> パラメーターのソリューションドキュメントパスを指定します。
 
-     次のコード例では、デスクトップ上の*WordDocument1.docx*という名前のドキュメントからカスタマイズを削除することを前提としています。
+     次のコード例では、デスクトップ上の *WordDocument1.docx* という名前のドキュメントからカスタマイズを削除することを前提としています。
 
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
      [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]

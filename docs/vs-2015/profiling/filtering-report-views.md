@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164056"
 ---
 # <a name="filtering-report-views"></a>レポート ビューのフィルター処理
@@ -37,12 +37,12 @@ ms.locfileid: "68164056"
   
 2. フィルターに追加するそれぞれの句について、行の次のフィールドの値を選択または入力します。  
   
-    |フィールド|説明|  
+    |フィールド|[説明]|  
     |-----------|-----------------|  
-    |**And/Or**|この句と次の句の両方が成り立つものを結果として返す場合は、 **[And]** を選択します。 この句と次の句のいずれかが成り立つものを結果として返す場合は、 **[Or]** を選択します。|  
+    |**[ルールの適用条件]**|この句と次の句の両方が成り立つものを結果として返す場合は、 **[And]** を選択します。 この句と次の句のいずれかが成り立つものを結果として返す場合は、 **[Or]** を選択します。|  
     |**フィールド**|フィルター句で使用するレポート フィールドを、表示されるデータ フィールドのリストから選択します。|  
-    |**Operator**|フィールドと値の関係を示す演算子として、句に含める演算子を選択します。<br /><br /> =    等しい<br /><br /> <>  等しくない<br /><br /> <    より小<br /><br /> >    より大<br /><br /> <=  以下<br /><br /> >=  以上|  
-    |**[値]**|検索する値を選択または入力します。 フィールドによっては使用可能な値がリスト表示されます。|  
+    |**[オペレーター]**|フィールドと値の関係を示す演算子として、句に含める演算子を選択します。<br /><br /> =    等しい<br /><br /> <>  等しくない<br /><br /> <    より小<br /><br /> >    より大<br /><br /> <=  以下<br /><br /> >=  以上|  
+    |**値**|検索する値を選択または入力します。 フィールドによっては使用可能な値がリスト表示されます。|  
   
 3. 
   
@@ -94,5 +94,5 @@ ms.locfileid: "68164056"
   
 2. 保存するフィルター (.vspf) ファイルの場所と名前を指定します。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス ツール のレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンス ツールのレポート ビューのカスタマイズ](../profiling/customizing-performance-tools-report-views.md)

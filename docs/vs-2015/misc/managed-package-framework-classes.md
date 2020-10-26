@@ -13,10 +13,10 @@ ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
 ms.openlocfilehash: 2e9fe1abb82d3d64232e3e5e2a6d117c1068aa1c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297702"
 ---
 # <a name="managed-package-framework-classes"></a>Managed Package Framework クラス
@@ -38,7 +38,7 @@ Managed Package Framework (MPF) クラスを使用して、マネージド コ�
 |<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDom デザイナーの拡張機能が含まれます。|  
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|プロジェクトのサブタイプ (「フレーバー」とも呼ばれます) をサポートしています。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Vspackage とマネージパッケージフレームワーク](../misc/vspackages-and-the-managed-package-framework.md)   
  [Visual Studio 相互運用機能アセンブリの使用](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [VSPackages およびマネージド パッケージ フレームワーク](../misc/vspackages-and-the-managed-package-framework.md)

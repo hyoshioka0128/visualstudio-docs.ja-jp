@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698935"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 要素 (Visual Studio テンプレート)
@@ -22,7 +22,7 @@ ms.locfileid: "65698935"
   
  この要素は省略可能です。 テンプレート ファイルには、最大で 1 つのインスタンスがあります。 この要素は、現在選択されているアクティブなプロジェクトの機能に基づいて、項目テンプレートを適用可能として利用できるようにするだけです。 項目テンプレートを適用不可にするためには使用できません。 `AppliesTo` が存在しない場合、または式を正常に利用できない場合は、製品の以前のバージョンの場合と同様に、テンプレートを適用可能にするために `TemplateID` または `TemplateGroupID` が使用されます。  
   
- Visual Studio 2013 更新プログラム 2 で導入されました。 正しいバージョンを参照するを参照してください。[を参照する、Visual Studio 2013 SDK の更新プログラム 2 で提供されるアセンブリ](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)します。  
+ Visual Studio 2013 更新プログラム 2 で導入されました。 正しいバージョンを参照するには、「 [VISUAL STUDIO 2013 SDK Update 2 で配信されるアセンブリの参照](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)」を参照してください。  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,11 +54,11 @@ ms.locfileid: "65698935"
   
  有効な式の構文は次のように定義されます。  
   
-- 機能の式など"(Visualc++ &#124; CSharp) + (MSTest &#124; NUnit)"。  
+- "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)" などの機能式。  
   
-- "&#124;"は OR 演算子です。  
+- "&#124;" は OR 演算子です。  
   
-- "&"と「+」文字は、どちらも AND 演算子。  
+- "&" と "+" の文字は両方とも演算子です。  
   
 - "!" 文字は NOT 演算子です。  
   
@@ -66,10 +66,10 @@ ms.locfileid: "65698935"
   
 - Null または空の式は、一致として評価されます。  
   
-- これらの予約文字を除く任意の文字をプロジェクトの機能があります:"':;,+-*/\\! ~&#124;& %$@^() ={}:operator[] <> でしょうか。 を除く文字を使用できます。  
+- プロジェクトの機能には、次の予約文字を除く任意の文字を使用できます: "' ':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>? を除く文字を使用できます。  
   
 ## <a name="example"></a>例  
- 次の例に、3 種類のテンプレートを示します。 `Template1` は、C# のすべてのプロジェクトの種類、または `WindowsAppContainer` 機能をサポートする他のプロジェクトの種類に適用されます。 `Template2` は、すべての種類の C# プロジェクトに適用されます。 `Template3` は、`WindowsAppContainer` プロジェクトではない C# プロジェクトに適用されます。  
+ 次の例に、3 種類のテンプレートを示します。 `Template1` すべての C# プロジェクトの種類、またはその機能をサポートするその他のプロジェクトの種類に適用さ `WindowsAppContainer` れます。 `Template2` あらゆる種類の C# プロジェクトに適用されます。 `Template3` は、`WindowsAppContainer` プロジェクトではない C# プロジェクトに適用されます。  
   
 ```xml  
 <!--  Template 1 -->  
@@ -98,6 +98,6 @@ ms.locfileid: "65698935"
   
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

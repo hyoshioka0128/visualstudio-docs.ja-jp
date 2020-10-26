@@ -1,4 +1,4 @@
-﻿---
+---
 title: CodeIndex コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 070106dc4db0f5200c1346bbbf8c0b653aa104e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619678"
 ---
 # <a name="codeindex-command"></a>CodeIndex コマンド
@@ -59,7 +59,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/collectionName:** `CollectionName`|**CodeIndex** コマンドを実行する対象のチーム プロジェクト コレクションの名前を指定します。 **/CollectionId** を使用しない場合は必ず指定します。|
 |**/collectionId:** `CollectionId`|**CodeIndex** コマンドを実行する対象のチーム プロジェクト コレクションの ID 番号を指定します。 **/CollectionName** を使用しない場合は必ず指定します。|
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 > [!NOTE]
 > 例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。  実在する会社、組織、製品、ドメイン名、電子メールアドレス、ロゴ、人物、場所、イベントなどとは一切関係ありません。
@@ -124,5 +124,5 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  TFSConfig[コマンドラインツール](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)を使用した TFS の[サーバー構成の管理](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)

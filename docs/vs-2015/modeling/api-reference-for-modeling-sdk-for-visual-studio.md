@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 65f8703597d6297afde6e2685594784fdd1d755c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672842"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio の API リファレンス
@@ -26,7 +26,7 @@ Visual Studio の視覚化およびモデリング SDK には、ドメイン固�
 
  このセクションには、名前が "VisualStudio" で始まる名前空間の参照資料が含まれています。
 
-|Namespace|Content|
+|名前空間|Content|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|ModelElement などのクラス。 DSL で定義するすべてのドメインクラスの基本クラスです。|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|DSL 定義の一部を形成するクラス。|
@@ -42,9 +42,9 @@ Visual Studio の視覚化およびモデリング SDK には、ドメイン固�
 |[VisualStudio の統合](/previous-versions/ee904412(v=vs.140))|Modelbus API。さまざまなモデルを統合するのに役立ちます。|
 |[VisualStudio を選択します。](/previous-versions/ee904394(v=vs.140))|ユーザーがモデルおよび要素に移動して Modelbus 参照を作成できるダイアログボックス。|
 |`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|ピッカーサービス。|
-|[VisualStudio を作成します。](/previous-versions/ee869435(v=vs.140))|@No__t_0 用の modelbus アダプターフレームワーク。|
+|[VisualStudio を作成します。](/previous-versions/ee869435(v=vs.140))|の modelbus アダプターフレームワーク [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。|
 |[VisualStudio を選択してください。](/previous-versions/ee886769(v=vs.140))|ユーザーがモデルと要素に移動して Modelbus 参照を作成できるようにする [ピッカー] ダイアログボックス。|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl と [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 間のインターフェイス。|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl との間のインターフェイス [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|ショートカット (コンテキスト) メニューコマンドを定義できます。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|検証制約を定義できます。|
 

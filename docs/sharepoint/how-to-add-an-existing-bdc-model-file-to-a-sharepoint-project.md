@@ -18,13 +18,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92063b5aeaf4f86919b9eabf783b102a9f5b8f34
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016522"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>方法: 既存の BDC モデルファイルを SharePoint プロジェクトに追加する
-  Visual Studio を使用して、モデルファイル (*bdcm*) を任意の SharePoint ファームプロジェクトに追加することにより、ビジネスデータ接続 (BDC) モデルをカスタマイズ、パッケージ化、および再配置できます。 詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
+  Visual Studio を使用して、モデルファイル (*bdcm*) を任意の SharePoint ファームプロジェクトに追加することにより、ビジネスデータ接続 (BDC) モデルをカスタマイズ、パッケージ化、および再配置できます。 詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>BDC モデルファイルを SharePoint プロジェクトに追加するには
 
@@ -32,15 +33,15 @@ ms.locfileid: "86016522"
 
 2. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  **Add Existing Item**ます。
 
-3. [**既存項目の追加**] ダイアログボックスで、プロジェクトに追加するモデル定義ファイルの場所を参照し、ファイルを選択して、[**追加**] ボタンをクリックします。
+3. [ **既存項目の追加** ] ダイアログボックスで、プロジェクトに追加するモデル定義ファイルの場所を参照し、ファイルを選択して、[ **追加** ] ボタンをクリックします。
 
-    モデルで、 *.net アセンブリ型の基幹業務 (LOB) システム*が定義されていない場合は、[ **.Net アセンブリの追加**] ダイアログボックスが表示されます。
+    モデルで、 *.net アセンブリ型の基幹業務 (LOB) システム*が定義されていない場合は、[ **.Net アセンブリの追加** ] ダイアログボックスが表示されます。
 
 4. ダイアログボックスが表示されたら、次のいずれかの手順を実行します。
 
-   - カスタムコードを記述し、デザイナーを使用してインポートしたモデルのメタデータを定義する場合は、[**はい**] をクリックし、システムに名前を指定して、[ **OK** ] をクリックします。
+   - カスタムコードを記述し、デザイナーを使用してインポートしたモデルのメタデータを定義する場合は、[ **はい** ] をクリックし、システムに名前を指定して、[ **OK** ] をクリックします。
 
-   - それ以外の場合は、[**いいえ**] ボタンをクリックし、[ **OK** ] をクリックします。
+   - それ以外の場合は、[ **いいえ** ] ボタンをクリックし、[ **OK** ] をクリックします。
 
      **ビジネスデータ接続モデル**項目がプロジェクトに追加されます。
 

@@ -1,5 +1,5 @@
 ---
-title: 使用して、サービスを提供します |Microsoft Docs
+title: サービスの使用と提供 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,42 +13,42 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177438"
 ---
 # <a name="using-and-providing-services"></a>サービスの使用と提供
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-サービスは、2 つの Vspackage の間のコントラクトです。 1 つの VSPackage では、別の VSPackage を使用するためのインターフェイスの特定のセットを提供します。 たとえば、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を提供、<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>サービスすべての VSPackage に読み込みます。 このサービスの提供、<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>インターフェイスで、アクティビティ ログに書き込むことができます。 詳細については、「[方法 :アクティビティ ログを使用して、](../extensibility/how-to-use-the-activity-log.md)します。  
+サービスは、2つの Vspackage 間のコントラクトです。 1つの VSPackage は、別の VSPackage が使用する特定のインターフェイスのセットを提供します。 たとえば、は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> 読み込まれるすべての VSPackage にサービスを提供します。 このサービスには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> アクティビティログへの書き込みに使用できるインターフェイスが用意されています。 詳細については、「 [方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。  
   
- Vspackage を使用して、独自のサービスを提供できます、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>インターフェイス.  
+ Vspackage は、インターフェイスを使用して独自のサービスを提供できます。「」をご覧 <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> ください。  
   
- Visual Studio では、次などの重要なサービスを提供します。  
+ Visual Studio には、次のような重要なサービスが用意されています。  
   
-|IDE のサービス|説明|  
+|IDE サービス|説明|  
 |-----------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|IDE へのアクセスは、基本的な機能、Vspackage、およびレジストリを使用した処理をサービスを提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|基本的なウィンドウ操作およびツールとドキュメント ウィンドウを作成する機能など、IDE での UI 関連の機能を提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|プロジェクトの列挙、新しいプロジェクトの作成、およびプロジェクトの変更を監視する機能など、基本のソリューションに関連する機能を提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|基本機能、Vspackage、およびレジストリを扱う IDE サービスへのアクセスを提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|ツールとドキュメントウィンドウを作成する機能など、IDE の基本的なウィンドウ機能と UI 関連の機能を提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|プロジェクトの列挙、新しいプロジェクトの作成、プロジェクトの変更の監視など、ソリューションに関連する基本的な機能を提供します。|  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [サービスの基本情報](../extensibility/internals/service-essentials.md)  
- Visual Studio サービスの重要な要素を表示します。  
+ Visual Studio サービスの重要な要素を示します。  
   
  [方法: サービスを取得する](../extensibility/how-to-get-a-service.md)  
- 要求する方法について説明します (使用する) サービス。  
+ サービスを要求 (使用) する方法について説明します。  
   
  [方法: サービスを提供する](../extensibility/how-to-provide-a-service.md)  
  サービスを提供する方法について説明します。  
   
  [方法: Visual Studio の非同期サービスを提供する](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
- 非同期のサービスを提供する方法について説明します。  
+ 非同期サービスを提供する方法について説明します。  
   
  [方法: サービスのトラブルシューティング](../extensibility/how-to-troubleshoot-services.md)  
- 一般的な問題について説明し、それらへのソリューションを提供します。  
+ 一般的な問題について説明し、それらの解決策を示します。  
   
 ## <a name="related-sections"></a>関連項目  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

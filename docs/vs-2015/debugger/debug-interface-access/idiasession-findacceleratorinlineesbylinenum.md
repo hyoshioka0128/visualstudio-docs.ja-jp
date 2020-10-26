@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByLinenum |Microsoft Docs
+title: 'IDiaSession:: findAcceleratorInlineesByLinenum |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f388671f7efeeefa05704d934ccf5307578e7d3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150451"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定したソースの場所に対応するインライン フレームのシンボルの列挙を返します。  
+指定したソースの場所に対応するインラインフレームのシンボルの列挙体を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,24 +37,24 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>パラメーター  
  `parent`  
- [in]`IDiaSymbol`検索する必要があるアクセラレータ スタブ関数に対応します。  
+ から `IDiaSymbol` 検索する必要があるアクセラレータスタブ関数に対応する。  
   
  `file`  
- [in]`IDiaSourceFile`のソースの場所。  
+ から `IDiaSourceFile` ソースの場所の。  
   
  `linenum`  
- [in]ソースの場所の行番号。  
+ からソースの場所の行番号。  
   
  `colnum`  
- [in]ソースの場所の列番号。  
+ からソースの場所の列番号。  
   
  `ppResult`  
- [out]ポインター、`IDiaEnumLineNumbers`インターフェイス ポインターでは、結果を使用して初期化します。  
+ 入出力結果を使用し `IDiaEnumLineNumbers` て初期化されるインターフェイスポインターへのポインター。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

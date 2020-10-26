@@ -1,5 +1,5 @@
 ---
-title: '方法: ユーザー アカウントでワーカー プロセスの実行 |Microsoft Docs'
+title: '方法: ユーザーアカウントでワーカープロセスを実行する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157871"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>方法: ユーザー アカウントでワーカー プロセスを実行する
@@ -34,7 +34,7 @@ ms.locfileid: "68157871"
   
 ## <a name="procedure"></a>プロシージャ  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>ユーザー アカウントで aspnet_wp.exe を実行するには  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>ユーザー アカウントで aspnet_wp.exe を実行するには  
   
 1. コンピューターでランタイムをインストールしたパスの CONFIG フォルダーにある machine.config ファイルを開きます。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "68157871"
   
     **[ユーザー、コンピューターまたはグループの選択]** ダイアログ ボックスが表示されます。  
   
-10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、 **[OK]** をクリックします。 ユーザー名は、この形式に従う必要があります。Domainname \username 形式。  
+10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、 **[OK]** をクリックします。 ユーザー名は、次の形式で入力する必要があります: ドメイン名\ユーザー名。  
   
 11. **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスで、ユーザーに**フル コントロール**を付与し、 **[OK]** をクリックして **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスを閉じます。  
   
@@ -85,5 +85,5 @@ ms.locfileid: "68157871"
   
 13. **[OK]** をクリックして、 **[Temporary ASP.NET Files のプロパティ]** ダイアログ ボックスを閉じます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
 [ASP.NET のデバッグ: システム要件](../debugger/aspnet-debugging-system-requirements.md)  

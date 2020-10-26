@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328478"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>XAML ホット リロードのトラブルシューティング
@@ -34,7 +34,7 @@ XAML ホットリロードは、WPF アプリと UWP アプリでサポートさ
 
 ![XAML ホットリロードを利用できます](../debugger/media/xaml-hot-reload-available.png)
 
-アプリ内ツールバーが表示されない場合は、**デバッグ**オプションの [全般] を開き  >  **Options**  >  **General**ます。 [ **Xaml の UI デバッグツールを有効**にする] と [ **xaml ホットリロードを有効に**する] の両方が選択されていることを確認します。
+アプリ内ツールバーが表示されない場合は、**デバッグ**オプションの [全般] を開き  >  **Options**  >  **General**ます。 [ **Xaml の UI デバッグツールを有効** にする] と [ **xaml ホットリロードを有効に** する] の両方が選択されていることを確認します。
 
 ![XAML ホットリロードを有効にする](../debugger/media/xaml-hot-reload-enable.png)
 
@@ -47,7 +47,7 @@ XAML ホットリロードは、WPF アプリと UWP アプリでサポートさ
 XAML ホットリロード `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` では、アプリケーションの起動時に環境変数が1に設定されている必要があります。 Visual Studio**は、デバッグ**  >  **開始デバッグ**(または**F5**) コマンドの一部として、これを自動的に設定します。 **Debug**  >  代わりに [**プロセスにアタッチ**] コマンドを使用して XAML ホットリロードを使用する場合は、環境変数を自分で設定します。
 
 > [!NOTE]
-> 環境変数を設定するには、[開始] ボタンを使用して "環境変数" を検索し、[**システム環境変数の編集**] を選択します。 表示されるダイアログボックスで、[**環境変数**] を選択し、ユーザー変数として追加して、値をに設定し `1` ます。 クリーンアップするには、デバッグが完了したら変数を削除します。
+> 環境変数を設定するには、[開始] ボタンを使用して "環境変数" を検索し、[ **システム環境変数の編集**] を選択します。 表示されるダイアログボックスで、[ **環境変数**] を選択し、ユーザー変数として追加して、値をに設定し `1` ます。 クリーンアップするには、デバッグが完了したら変数を削除します。
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>MSBuild プロパティが正しいことを確認する
 
@@ -67,7 +67,7 @@ XAML ホットリロードをサポートするには、正しい MSBuild プロ
 
 ## <a name="verify-that-your-xaml-file-has-no-errors"></a>XAML ファイルにエラーがないことを確認する
 
-XAML ファイルで**エラー一覧**にエラーが表示されている場合、Xaml ホットリロードが機能しない可能性があります。
+XAML ファイルで **エラー一覧**にエラーが表示されている場合、Xaml ホットリロードが機能しない可能性があります。
 
 ## <a name="see-also"></a>関連項目
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 464d131261ecfb0a64a3ca279007ff9332cdb2e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537593"
 ---
 # <a name="how-to-programmatically-save-documents"></a>方法: プログラムによって文書を保存する
@@ -56,7 +56,7 @@ Word 文書 Microsoft Office 保存するには、いくつかの方法があり
 `SaveAs`新しい名前でドキュメントを保存するには、メソッドを使用します。 このホスト項目のメソッドは、ドキュメントレベルの Word プロジェクトで使用することも <xref:Microsoft.Office.Tools.Word.Document> 、任意の word プロジェクトのネイティブオブジェクトで使用することもでき <xref:Microsoft.Office.Interop.Word.Document> ます。 このメソッドでは、新しいファイル名を指定する必要がありますが、他の引数は省略可能です。
 
 > [!NOTE]
-> のイベントハンドラー内に [ **SaveAs** ] ダイアログボックスを表示 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> し、 `ThisDocument` *Cancel*パラメーターを**false**に設定すると、アプリケーションが予期せず終了する可能性があります。 *Cancel*パラメーターを**true**に設定すると、自動保存が無効になっていることを示すエラーメッセージが表示されます。
+> のイベントハンドラー内に [ **SaveAs** ] ダイアログボックスを表示 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> し、 `ThisDocument` *Cancel* パラメーターを **false**に設定すると、アプリケーションが予期せず終了する可能性があります。 *Cancel*パラメーターを**true**に設定すると、自動保存が無効になっていることを示すエラーメッセージが表示されます。
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>ドキュメントレベルのカスタマイズに関連付けられているドキュメントを新しい名前で保存するには
 
@@ -84,9 +84,9 @@ Word 文書 Microsoft Office 保存するには、いくつかの方法があり
 
 このコード例で必要な要素は次のとおりです。
 
-- ドキュメントを名前で保存するには、 *NewDocument.doc*という名前のドキュメントが C ドライブの*Test*という名前のディレクトリに存在する必要があります。
+- ドキュメントを名前で保存するには、 *NewDocument.doc* という名前のドキュメントが C ドライブの *Test* という名前のディレクトリに存在する必要があります。
 
-- 新しい名前でドキュメントを保存するには、 *Test*という名前のディレクトリが C ドライブに存在している必要があります。
+- 新しい名前でドキュメントを保存するには、 *Test* という名前のディレクトリが C ドライブに存在している必要があります。
 
 ## <a name="see-also"></a>関連項目
 

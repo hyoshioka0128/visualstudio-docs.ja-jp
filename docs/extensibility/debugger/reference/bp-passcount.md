@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT |マイクロソフトドキュメント
+title: BP_PASSCOUNT |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737904"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
-条件付きブレークポイントが発生するカウントと条件を記述します。
+条件付きブレークポイントが発生する回数と条件について説明します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,22 +43,22 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>メンバー
 `dwPassCount`\
-ブレークポイントを起動する前にブレークポイントを通過する回数。
+ブレークポイントを実行する前に、そのブレークポイントを通過する回数。
 
 `stylePassCount`\
-ブレークポイントのパス カウントのスタイルを指定する[BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)列挙体の値。
+ブレークポイントのパスカウントのスタイルを指定する [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) 列挙の値です。
 
-## <a name="remarks"></a>Remarks
-この構造体は[、BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造体のメンバーです。
+## <a name="remarks"></a>解説
+この構造体は、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 構造体のメンバーです。
 
-この構造体は、パラメーターとしても渡されます、[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)と[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)メソッド。
+この構造体は、パラメーターとして[Setpass count](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) および[setpass count](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) メソッドにも渡されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

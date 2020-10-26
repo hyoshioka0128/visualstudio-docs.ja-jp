@@ -1,5 +1,5 @@
 ---
-title: 要素 (Visual Studio テンプレート) を参照 |Microsoft Docs
+title: Reference 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3d67fd19122e160159a6f636516dbca582fe31d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193834"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference 要素 (Visual Studio テンプレート)
@@ -26,9 +26,9 @@ ms.locfileid: "68193834"
 項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。  
   
  \<VSTemplate>  
- \<TemplateContent >  
- \<参照 >  
- \<参照 >  
+ \<TemplateContent>  
+ \<References>  
+ \<Reference>  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,21 +48,21 @@ ms.locfileid: "68193834"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|必須の要素です。<br /><br /> そのアセンブリの参照をプロジェクトに追加するテンプレートを使用して、アセンブリに関する情報を指定します。 1 つあります`Assembly`内の要素すべて`Reference`要素。|  
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|必須の要素です。<br /><br /> アセンブリに関する情報を指定します。このアセンブリは、プロジェクトにアセンブリの参照を追加するためにテンプレートで使用されます。 `Assembly`すべての要素には1つの要素が必要 `Reference` です。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[参照](../extensibility/references-element-visual-studio-templates.md)|このテンプレートはプロジェクトに追加するアセンブリ参照をグループ化します。|  
+|[参照](../extensibility/references-element-visual-studio-templates.md)|テンプレートによってプロジェクトに追加されるアセンブリ参照をグループ化します。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  `Reference` は `References` に必須の子要素です。  
   
- `Reference`と`References`要素は、.vstemplate ファイルでのみ使用できます、`Type`属性の値`Item`します。  
+ `Reference`要素と `References` 要素は、属性値がである .vstemplate ファイルでのみ使用できます `Type` `Item` 。  
   
 ## <a name="example"></a>例  
- 次の例を示しています、`TemplateContent`項目テンプレートの要素。 この XML は、System.dll および System.Data.dll アセンブリへの参照を追加します。  
+ 次の例は、 `TemplateContent` 項目テンプレートの要素を示しています。 この XML は、System.dll アセンブリおよび System.Data.dll アセンブリへの参照を追加します。  
   
 ```  
 <TemplateContent>  
@@ -82,6 +82,6 @@ ms.locfileid: "68193834"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

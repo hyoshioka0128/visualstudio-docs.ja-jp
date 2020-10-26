@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
 ms.openlocfilehash: 01f3cac1ac985f79e576e709b030c881a07a801d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939133"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>Visual Studio for Mac のプレビュー バージョンをインストールする
@@ -25,7 +25,7 @@ Visual Studio for Mac のプレビュー リリースは、個別のダウンロ
 Visual Studio for Mac のプレビューをインストールするには、次の手順を使用します。
 
 1. **[Visual Studio] > [更新の確認]** に移動します。
-2. [更新チャネル] コンボ ボックスで、 **[プレビュー]** を選びます。
+2. [更新チャネル] コンボ ボックスで、**[プレビュー]** を選びます。
 3. **[Switch channel]\(チャネルの切り替え\)** ボタンを選んで選択したチャネルに切り替え、新しい更新プログラムのダウンロードを開始します。
 4. **[再起動して更新プログラムをインストールする]** ボタンを選んで、更新プログラムのインストールを始めます。
 

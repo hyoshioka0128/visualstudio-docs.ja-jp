@@ -1,5 +1,5 @@
 ---
-title: Idiaenumtables::next |Microsoft Docs
+title: 'IDiaEnumTables:: Next |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 69e96ad3c19a488546ad8f2a95c94c9c521fa914
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197568"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-列挙体シーケンス内のテーブルの指定した数を取得します。  
+列挙シーケンス内の指定された数のテーブルを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,17 +37,17 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>パラメーター  
  `celt`  
- [in]取得する列挙子内のテーブルの数。  
+ から取得する列挙子内のテーブルの数。  
   
  `rgelt`  
- [out]格納する配列、 [IDiaTable](../../debugger/debug-interface-access/idiatable.md)目的のテーブルを表すオブジェクト。  
+ 入出力目的のテーブルを表す [IDiaTable](../../debugger/debug-interface-access/idiatable.md) オブジェクトを使用して入力する配列。  
   
  `pceltFetched`  
- [out]フェッチされた列挙子では、テーブルの数を返します。  
+ 入出力フェッチされた列挙子内のテーブルの数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`ない複数のテーブルがある場合。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`テーブルがそれ以上ない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

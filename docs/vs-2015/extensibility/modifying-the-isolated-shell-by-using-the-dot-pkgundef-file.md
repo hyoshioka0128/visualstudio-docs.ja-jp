@@ -1,5 +1,5 @@
 ---
-title: 使用した分離シェルを変更します。Pkgundef ファイル |Microsoft Docs
+title: を使用して、分離シェルを変更します。Pkgundef File |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: eab02fe900e96ba37c63faae535974788f99ba78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538392"
 ---
-# <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>使用した分離シェルを変更します。Pkgundef ファイル
+# <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>.Pkgundef ファイルを使用した分離シェルの変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-分離シェル アプリケーションから指定されたレジストリ エントリを除外する .pkgundef ファイルを変更することができます。 通常、アプリケーションを開始するコンピューターでは、最初に、Visual Studio shell はコピー Visual Studio の既存のレジストリ エントリを使用、アプリケーションのルート レジストリ キーにします。 これには、現在インストールされている Vspackage への参照が含まれます。  
+Pkgundef ファイルを変更して、指定したレジストリエントリを分離シェルアプリケーションから除外することができます。 通常、コンピューターでアプリケーションを初めて起動すると、Visual Studio シェルによって、既存の Visual Studio レジストリエントリがアプリケーションのルートレジストリキーにコピーされます。 これには、現在インストールされている Vspackage への参照が含まれます。  
   
- 分離シェル アプリケーションから、特定のレジストリ エントリを除外するには、パッケージのキーのエントリが続くアプリケーション .pkgundef ファイルに追加します。 キーとエントリは、.pkgdef ファイルと同じように表されますつまり、として [$RootKey$] または [$RootKey$\\*サブキー*] と"*エントリ*"=*値*ここで、*サブキー*に影響を与える、サブキーは、*エントリ*、エントリを削除すると*値*か`""`または`dword:00000000`します。  
+ 分離シェルアプリケーションから特定のレジストリエントリを除外するには、をアプリケーションに追加します。 pkgundef は、パッケージキーの後にエントリを追加します。 キーとエントリは、pkgdef ファイルと同じように表現されます。つまり、[$RootKey $] または [$RootKey $ \\ *subkey*] and "*entry*" =*value*のようになります。ここで、*サブキー*は、影響を与えるサブキー、 *entry*は削除するエントリ、 *value*はまたはのいずれか `""` `dword:00000000` です。  
   
- 除外するには、だけで、レジストリ キーから複数のエントリは 1 回は、キーを一覧表示、続くを除外するには、各エントリの行。  
+ レジストリキーから複数のエントリを除外するには、キーを1回だけリストし、除外する各エントリの行を続けます。  
   
- 分離シェル アプリケーションから、全体のレジストリ キーを除外するには、キー アプリケーション .pkgundef ファイルを追加するが、そのキーのレジストリ エントリを指定しません。  
+ 分離シェルアプリケーションからレジストリキー全体を除外するには、アプリケーションにキーを追加します。 pkgundef file は、そのキーのレジストリエントリを指定しません。  
   
- .Pkgundef ファイルにコメントを追加することができます。 単一行コメントは、最初の 2 つの文字として 2 つのスラッシュをいる必要があります。  
+ Pkgundef ファイルにコメントを追加できます。 1行のコメントには、最初の2文字として2つのスラッシュを含める必要があります。  
   
- たとえば、削除するため、**データベースへの接続**と**Serve r への接続**コマンドを**ツール**] メニューの [行のコメントを解除できます。  
+ たとえば、[**ツール**] メニューの [**データベースへの接続**] および [**サービスへの接続**] コマンドを削除するには、次の行のコメントを解除します。  
   
 ```  
 [$RootKey$\Packages\{8D8529D3-625D-4496-8354-3DAD630ECC1B}]  
 ```  
   
- 行を追加します。  
+ 次の行を追加します。  
   
 ```  
 [$RootKey$\Packages\{198E76C1-34C0-424D-9957-B3EBD80265FB}]  
 ```  
   
- アプリケーションの .pkgundef ファイル。  
+ アプリケーションの pkgundef ファイルに適用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio の機能のパッケージ Guid](../extensibility/package-guids-of-visual-studio-features.md)   
  [分離シェルのカスタマイズ](../extensibility/customizing-the-isolated-shell.md)

@@ -7,12 +7,12 @@ ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 03/11/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれているダウンロードできるソフトウェアの一覧を検索します。
-ms.openlocfilehash: debf1904fc502f15f4fd6f52cc38e29a84dc763a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906097"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250695"
 ---
 # <a name="what-software-is-available-for-download"></a>ダウンロードできるソフトウェア
 
@@ -23,10 +23,10 @@ ms.locfileid: "85906097"
 2. サブスクリプションにサインインします。 ([Microsoft アカウント](sign-in-msa.md)、[職場または学校アカウント](sign-in-work.md)、または [GitHub](sign-in-github.md) の資格情報を使用したサインインの詳細については、それぞれのページをご覧ください。)
 3. サインインに成功すると、目的のダウンロードを検索できます。  また、人気のあるダウンロードの一覧も表示できます。一覧はいくつかの基準を指定して並べ替えることができます。
 
-製品をすばやく見つけるには、ページの上部にある [検索] 機能を使用するか、左側にある別の製品の種類をクリックします。
+製品をすばやく見つけるには、ページの上部にある [検索] 機能を使用するか、左側にある別の製品の種類を選択します。
 
 > [!TIP]
-> プロダクト キーを確認するには、ページの上部にある **[プロダクト キー]** をクリックします。
+> プロダクト キーを確認するには、ページの上部にある **[プロダクト キー]** を選択します。
 
 また、各サブスクリプションの種類で[利用可能なソフトウェア タイトル](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)の詳細な一覧を含む Excel スプレッドシートをダウンロードすることもできます。
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByAddr |Microsoft Docs
+title: 'IDiaSession:: findInlineeLinesByAddr |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b35850367ef4bcc4e49cc3d6e76b41a2e9f4cd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151697"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-により、クライアントは直接、インライン展開はすべての関数の直接的または間接的に指定した親シンボルの行番号情報を反復処理して、指定したアドレスの範囲内に含まれる列挙体を取得します。  
+クライアントが、指定された親シンボルによって直接または間接的にインライン化されているすべての関数の行番号情報を反復処理できるようにする列挙体を取得します。指定したアドレス範囲内に含まれます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,24 +34,24 @@ HRESULT findInlineeLinesByAddr ( 
   
 #### <a name="parameters"></a>パラメーター  
  `parent`  
- [in]`IDiaSymbol`親を表すオブジェクト。  
+ から `IDiaSymbol` 親を表すオブジェクトです。  
   
  `isect`  
- [in]アドレスのセクションのコンポーネントを指定します。  
+ からアドレスのセクション部分を指定します。  
   
  `offset`  
- [in]アドレスのオフセットのコンポーネントを指定します。  
+ からアドレスのオフセットコンポーネントを指定します。  
   
  `length`  
- [in]このクエリをカバーする、バイト数では、アドレスの範囲を指定します。  
+ からこのクエリでカバーするアドレス範囲をバイト数で指定します。  
   
  `ppResult`  
- [out]保持する`IDiaEnumLineNumbers`取得される行番号の一覧を含むオブジェクト。  
+ 入出力 `IDiaEnumLineNumbers` 取得された行番号の一覧を含むオブジェクトを保持します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)   

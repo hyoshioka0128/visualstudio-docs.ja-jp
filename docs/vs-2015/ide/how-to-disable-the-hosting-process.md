@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : ホスト プロセスを無効にする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667973"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>方法 : ホスト プロセスを無効にする
@@ -44,5 +44,5 @@ ms.locfileid: "72667973"
 
 - 部分信頼デバッグが使用できなくなる。
 
-## <a name="see-also"></a>関連項目
- [デバッグとホストプロセスの](../debugger/debugging-and-the-hosting-process.md)[ホストプロセス (vshost.exe)](../ide/hosting-process-vshost-exe.md)は、[アプリケーションの開発中にビルド](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)します。
+## <a name="see-also"></a>参照
+ [アプリケーション開発時](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)[のデバッグとホストプロセス](../debugger/debugging-and-the-hosting-process.md) [(vshost.exe)](../ide/hosting-process-vshost-exe.md)のビルド

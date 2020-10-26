@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/13/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 9d6fd5ffefcd6696fa67302a8d59fd46e498a472
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950601"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214691"
 ---
 # <a name="set-up-a-git-repository"></a>Git リポジトリのセットアップ
 
@@ -55,7 +55,7 @@ Git リポジトリをセットアップするには、次の手順を実行し�
 
 3. 次のように、 **[Select from Registered] (登録済みのものから選択)** タブを選択し、 **[追加]** ボタンを押します。
 
-    ![](media/version-control-git5.png)
+    ![登録済みリポジトリのダイアログ ボックスを追加します。](media/version-control-git5.png)
 
 4. ローカルで表示するリポジトリの名前を入力し、手順 3. の URL を貼り付けます。 リポジトリ構成ダイアログは次のようになります。 [OK] を押します。
 

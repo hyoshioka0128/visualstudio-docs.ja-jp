@@ -1,5 +1,5 @@
 ---
-title: '&lt;fileAssociation&gt;要素 (ClickOnce アプリケーション) |Microsoft Docs'
+title: '&lt;fileAssociation &gt; 要素 (ClickOnce アプリケーション) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150842"
 ---
-# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;要素 (ClickOnce アプリケーション)
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation &gt; 要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アプリケーションに関連するファイル拡張子を識別します。  
+アプリケーションに関連付けるファイル拡張子を識別します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <fileAssociation  
@@ -41,22 +41,22 @@ ms.locfileid: "68150842"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
-           `fileAssociation` 要素は省略できます。 要素には、次の属性があります。  
+ `fileAssociation` 要素は省略可能です。 要素には、次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`extension`|必須。 アプリケーションに関連するファイル拡張子。|  
-|`description`|必須。 シェルによって使用されるファイルの種類の説明。|  
-|`progid`|必須。 ファイルの種類を一意に識別する名前。|  
-|`defaultIcon`|必須。 この拡張機能でファイルを使用するアイコンを指定します。 使用してアイコン ファイルを指定する必要があります、 [\<ファイル > 要素](../deployment/file-element-clickonce-application.md)内、 [\<アセンブリ > 要素](../deployment/assembly-element-clickonce-application.md)この要素を格納しています。|  
+|`extension`|必須です。 アプリケーションに関連付けられるファイル拡張子。|  
+|`description`|必須です。 シェルによって使用されるファイルの種類の説明。|  
+|`progid`|必須です。 ファイルの種類を一意に識別する名前。|  
+|`defaultIcon`|必須です。 この拡張子を持つファイルに使用するアイコンを指定します。 アイコンファイルは、この要素を含む[ \<assembly> 要素](../deployment/assembly-element-clickonce-application.md)内の[ \<file> 要素](../deployment/file-element-clickonce-application.md)を使用して指定する必要があります。|  
   
-## <a name="remarks"></a>Remarks  
- この要素への XML 名前空間参照を含める必要があります"urn: スキーマ-microsoft-com:clickonce.v1"。 場合、`<fileAssociation>`要素を使用して、後に、必要があります、`<application>`では親要素[\<アセンブリ > 要素](../deployment/assembly-element-clickonce-application.md)します。  
+## <a name="remarks"></a>注釈  
+ この要素には、"urn: schema-microsoft-com: clickonce. v1" への XML 名前空間参照が含まれている必要があります。 要素を使用する場合は `<fileAssociation>` 、親要素の要素の後に指定する必要があり `<application>` [ \<assembly> ](../deployment/assembly-element-clickonce-application.md)ます。  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 既存のファイルの関連付けは上書きされません。 ただし、ClickOnce アプリケーションでは、現在のユーザーのみのファイル拡張子を上書きできます。 ClickOnce アプリケーションをアンインストールすると後、ClickOnce は、ユーザーのファイルの関連付けを削除し、コンピューターごとの関連付けがもう一度アクティブです。  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 既存のファイルの関連付けは上書きされません。 ただし、ClickOnce アプリケーションでは、現在のユーザーのみのファイル拡張子をオーバーライドできます。 ClickOnce アプリケーションがアンインストールされると、ClickOnce によってユーザーのファイルの関連付けが削除され、コンピューターごとの関連付けが再びアクティブになります。  
   
 ## <a name="example"></a>例  
- 次のコード例を示しています`fileAssociation`テキスト エディター アプリケーションを使用してデプロイ用のマニフェストをアプリケーション内の要素[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]します。 このコード例も含まれています、 [\<ファイル > 要素](../deployment/file-element-clickonce-application.md)によって必要な`defaultIcon`属性。  
+ 次のコード例は、 `fileAssociation` を使用して配置されたテキストエディターアプリケーションのアプリケーションマニフェストの要素を示してい [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ます。 このコード例には、属性に必要な[ \<file> 要素](../deployment/file-element-clickonce-application.md)も含まれてい `defaultIcon` ます。  
   
 ```  
 <file name="text.ico" size="4286">  
@@ -81,5 +81,5 @@ ms.locfileid: "68150842"
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>参照  
+ [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
