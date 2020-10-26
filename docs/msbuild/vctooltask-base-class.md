@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591672"
 ---
 # <a name="vctooltask-base-class"></a>VCToolTask 基底クラス
@@ -28,7 +28,7 @@ ms.locfileid: "75591672"
 
 |パラメーター|[説明]|
 |---------------|-----------------|
-|**ActiveToolSwitchesValues**|省略可能な **Dictionary\<string, ToolSwitch>** のパラメーターです。|
+|**ActiveToolSwitchesValues**|省略可能な **Dictionary\<string, ToolSwitch>** パラメーターです。|
 |**AdditionalOptions**|省略可能な **string** 型のパラメーターです。|
 |**EffectiveWorkingDirectory**|省略可能な **string** 型のパラメーターです。|
 |**EnableErrorListRegex**|省略可能な **bool** 型のパラメーターです。<br/><br/>既定値は `true` です。|

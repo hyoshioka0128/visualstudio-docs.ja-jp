@@ -1,5 +1,5 @@
 ---
-title: ハーフ/クォーター テクスチャ ディメンション バリアント |Microsoft Docs
+title: ハーフ/クォーター テクスチャ ディメンション バリアント | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161150"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>ハーフ/クォーター テクスチャ ディメンション バリアント
@@ -46,6 +46,6 @@ ms.locfileid: "68161150"
 ## <a name="example"></a>例  
  このバリアントは、`CreateTexture2D` への呼び出しを行う前に、実行時にテクスチャをリサイズします。 実行コードについては、このアプローチは推奨されません。フルサイズのテクスチャはより多くのディスク容量を使用し、追加のステップによってアプリケーションのロード時間が長くなることがあるためです (特に、圧縮されたテクスチャでは、エンコード用に大量のコンピューティング リソースが必要です)。 代わりに、イメージ エディタ、またはビルド パイプラインの一部であるイメージ プロセッサを使用して、テクスチャをオフラインでリサイズすることを推奨しています。 これらのアプローチではディスク容量の要件が減り、アプリケーションのランタイム オーバーヘッドが排除され、処理時間に余裕があるため、テクスチャを縮小または圧縮しつつ最高のイメージ品質を保持することができます。  
   
-## <a name="see-also"></a>関連項目  
- [ミップマップ生成バリアント](../debugger/mip-map-generation-variant.md)   
+## <a name="see-also"></a>参照  
+ [Mip マップ生成バリアント](../debugger/mip-map-generation-variant.md)   
  [BC テクスチャ圧縮バリアント](../debugger/bc-texture-compression-variant.md)

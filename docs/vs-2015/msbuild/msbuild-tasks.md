@@ -1,4 +1,4 @@
-﻿---
+---
 title: MSBuild タスク | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154810"
 ---
 # <a name="msbuild-tasks"></a>MSBuild タスク
@@ -62,13 +62,13 @@ ms.locfileid: "68154810"
 ```  
   
 ## <a name="included-tasks"></a>含まれているタスク  
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] には、ファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、[!INCLUDE[csprcs](../includes/csprcs-md.md)] ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) など、多数のタスクが装備されています。 使用可能なすべてのタスクと使用法については、「[Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)」を参照してください。  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] には、ファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、[!INCLUDE[csprcs](../includes/csprcs-md.md)] ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) など、多数のタスクが装備されています。 使用可能なタスクと使用方法の詳細な一覧については、「 [タスクリファレンス](../msbuild/msbuild-task-reference.md)」を参照してください。  
   
 ## <a name="overridden-tasks"></a>オーバーライドされたタスク  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は、複数の場所でタスクを検索します。 最初の検索場所は、.NET Framework ディレクトリに格納されている拡張子が .OverrideTasks であるファイル内です。 これらのファイル内のタスクは、プロジェクト ファイル内のタスクも含め、同じ名前を持つ他のタスクをオーバーライドします。 2 番目の検索場所は、.NET Framework ディレクトリ内の拡張子が .Tasks であるファイル内です。 タスクがこれらの場所のいずれにも見つからない場合は、プロジェクト ファイル内のタスクが使用されます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [タスクの作成](../msbuild/task-writing.md)   
- [インライン タスク](../msbuild/msbuild-inline-tasks.md)
+ [インラインタスク](../msbuild/msbuild-inline-tasks.md)

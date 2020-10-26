@@ -1,5 +1,5 @@
 ---
-title: クイック スタート:コンソールを使用して JavaScript のデバッグ |Microsoft Docs
+title: 'クイックスタート: コンソールを使用した JavaScript のデバッグ | |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687590"
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>クイック スタート:コンソールを使用した JavaScript のデバッグ
+# <a name="quickstart-debug-javascript-using-the-console"></a>クイックスタート: コンソールを使用した JavaScript のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
+Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  JavaScript コンソール ウィンドウを使用して、JavaScript を使用してビルドされたストア アプリと対話したりデバッグすることができます。 これらの機能は、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ、Windows Phone ストア アプリ、Visual Studio Tools for Apache Cordova を使用して作成したアプリでサポートされています。 コンソール コマンドのリファレンスの詳細については、「 [JavaScript Console commands](../debugger/javascript-console-commands.md)」を参照してください。  
   
@@ -50,20 +50,20 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
   このトピックの内容:  
   
-- [JavaScript コンソール ウィンドウを使用したデバッグ](#InteractiveConsole)  
+- [JavaScript コンソールウィンドウを使用したデバッグ](#InteractiveConsole)  
   
-- [対話形式のデバッグと中断モード](#InteractiveDebuggingBreakMode)  
+- [対話型デバッグと中断モード](#InteractiveDebuggingBreakMode)  
   
-- [JavaScript コンソール ウィンドウの単一行モードと複数行モード](#SinglelineMultilineMode)  
+- [JavaScript コンソールウィンドウの単一行モードと複数行モード](#SinglelineMultilineMode)  
   
 - [スクリプトの実行コンテキストの切り替え](#Switching)  
   
 > [!TIP]
-> 閉じた JavaScript コンソール ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **JavaScript コンソール** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
+> 閉じた JavaScript コンソール ウィンドウを再び開くには、 **[デバッグ]** > **[ウィンドウ]**  > **JavaScript コンソール** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
   
- JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。 その他の JavaScript のデバッグ、DOM Explorer を使用して、ブレークポイントの設定などの機能の詳細についてを参照してください。[クイック スタート。HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)と[Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)します。  
+ JavaScript コンソール ウィンドウを使用すると、デバッガーを停止/再起動することなくアプリと対話することができます。 詳細については、[アプリ (JavaScript) の更新](../debugger/refresh-an-app-javascript.md)に関するページを参照してください。 DOM Explorer を使用したりブレークポイントを設定するなど、JavaScript のその他のデバッグ機能の詳細については、[クイックスタート: HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)と [Visual Studio でのアプリのデバッグ](../debugger/debug-store-apps-in-visual-studio.md)に関するページを参照してください。  
   
-## <a name="InteractiveConsole"></a> JavaScript コンソール ウィンドウを使用したデバッグ  
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> JavaScript コンソール ウィンドウを使用したデバッグ  
  次の手順では、 `FlipView` アプリを作成し、JavaScript のコード エラーを対話的にデバッグする方法を示します。  
   
 > [!CAUTION]
@@ -71,9 +71,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>FlipView アプリの JavaScript コードをデバッグするには  
   
-1. Visual Studio で **[ファイル]** > **[新しいプロジェクト]**」を参照してください。  
+1. Visual Studio で **[ファイル]**  >  **[新しいプロジェクト]** 」を参照してください。  
   
-2. 選択**JavaScript** > **ストア アプリ**、いずれかを選択**Windows アプリ**または**Windows Phone アプリ**を選択し、**空のアプリ**します。  
+2. [ **JavaScript**  >  **ストアアプリ**] を選択し、[ **Windows アプリ**] または [ **Windows Phone アプリ**] を選択して、[**空のアプリ**] を選択します。  
   
 3. `FlipViewApp`などのプロジェクトの名前を入力し、 **[OK]** を選んでアプリを作成します。  
   
@@ -155,13 +155,13 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 7. デバッグ対象がまだ選択されていない場合は、 **[シミュレーター]** をクリックします。または、Windows Phone 用の場合は、 **[デバッグ]** ツール バーの **[デバイス]** ボタンの横にあるドロップダウン リストの **[エミュレーター 8.1 WVGA 4 インチ 512 MB]** をクリックします。  
   
-     ![デバッグ ターゲット リスト](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![デバッグ ターゲット リストを選択する](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 8. F5 キーを押して、デバッガーを開始します。  
   
      アプリが実行されますが、イメージがありません。 JavaScript コンソール ウィンドウの APPHOST のエラーは、イメージがないことを示します。  
   
-9. `FlipView` アプリがシミュレーターまたは Phone エミュレーターで実行されている状態で、コンソール ウィンドウの入力プロンプト ("&gt;&gt;" シンボルの横) に `Data.items` と入力して、Enter キーを押します。  
+9. アプリが `FlipView` シミュレーターまたは Phone エミュレーターで実行されている状態で、 `Data.items` コンソールウィンドウの入力プロンプトを入力し (">>" 記号の横)、enter キーを押します。  
   
      `items` オブジェクトのビジュアライザーがコンソール ウィンドウに表示されます。 これは、 `items` オブジェクトがインスタンス化されて、現在のスクリプト コンテキストで使用できることを示します。 コンソール ウィンドウでは、オブジェクトのノードをクリックしてプロパティの値を表示できます (方向キーを使用します)。 `items._data` オブジェクトをクリックすると、次の図に示すように、イメージ ソースの参照が正しくないことがわかります。 既定のイメージ (logo.png) がまだオブジェクト内に存在し、不明のイメージと予期されるイメージが混在しています。  
   
@@ -197,7 +197,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 13. スクリプトを実行するには、緑色の矢印をクリックします。  
   
-14. Ctrl + Alt + M キーを押して、コンソール入力プロンプトを単一行モードに切り替え、次に **[入力のクリア]** (赤い "X") をクリックして、入力プロンプトからコードを削除します。  
+14. Ctrl + Alt + M キーを押して、コンソール入力プロンプトを単一行モードに切り替え、[ **入力のクリア** ] (赤い "X") をクリックして、入力プロンプトからコードを削除します。  
   
 15. プロンプトで `Data.items.length = 3` を入力し、Enter キーを押します。 これにより、データから余分な要素が削除されます。  
   
@@ -205,26 +205,26 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 17. DOM Explorer では、更新された DIV 要素を確認でき、サブツリーに移動すると予期される IMG 要素が表示されます。  
   
-18.  **[デバッグ]** > **Stop [デバッグ]ging** の順にクリックするか、または Shift + F5 キーを押してデバッグを停止し、ソース コードを修正します。  
+18. **[デバッグ]**  > **Stop [デバッグ]ging** の順にクリックするか、または Shift + F5 キーを押してデバッグを停止し、ソース コードを修正します。  
   
      修正後のサンプル コードを含む default.html ページ全体については、「[HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)」を参照してください。  
   
-## <a name="InteractiveDebuggingBreakMode"></a> 対話形式のデバッグと中断モード  
+## <a name="interactive-debugging-and-break-mode"></a><a name="InteractiveDebuggingBreakMode"></a> 対話形式のデバッグと中断モード  
  JavaScript コンソール ウィンドウなどの JavaScript デバッグ ツールの使用中は、ブレークポイントを使用し、コードにステップ インできます。 デバッガーで実行しているプログラムがブレークポイントに達すると、デバッガーは一時的にプログラムの実行を中断します。 実行が中断されると、プログラムは実行モードから中断モードに切り替わります。 いつでも実行を再開できます。  
   
  プログラムが中断モードのときでも、JavaScript コンソール ウィンドウを使用して、現在のスクリプトの実行コンテキストで有効なコマンドおよびスクリプトを実行できます。 この手順では、既に作成してあった `FlipView` アプリの最終版を使用して、中断モードの使用をデモします。  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>ブレークポイントを設定してアプリをデバッグするには  
   
-1. 前に作成した `FlipView` アプリの default.html ファイルで、 `updateImages()` 関数のショートカット メニューを開き、 **[ブレークポイント]** > **[ブレークポイントの挿入]**」を参照してください。  
+1. 前に作成した `FlipView` アプリの default.html ファイルで、 `updateImages()` 関数のショートカット メニューを開き、 **[ブレークポイント]**  >  **[ブレークポイントの挿入]** 」を参照してください。  
   
 2. **[デバッグ]** ツール バーの **[デバッグの開始]** ボタンの横にあるドロップダウン リストの **[ローカル コンピューター]** または **[エミュレーター 8.1 WVGA 4 インチ 512 MB]** をクリックします。  
   
-3.  **[デバッグ]** > **Start [デバッグ]ging**の順にクリックするか、または F5 キーを押します。  
+3. **[デバッグ]**  > **Start [デバッグ]ging**の順にクリックするか、または F5 キーを押します。  
   
      実行が `updateImages()` 関数に達するとアプリは中断モードになり、プログラム実行の現在行が黄色で強調表示されます。  
   
-     ![JavaScript コンソールで、中断モードを使用して](../debugger/media/js-breakmode.png "JS_BreakMode")  
+     ![JavaScript コンソールでの中断モードの使用](../debugger/media/js-breakmode.png "JS_BreakMode")  
   
      現在のデバッグ セッションを終了することなく、変数の値を変更してプログラムの状態にすぐに反映できます。  
   
@@ -234,7 +234,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
      次の図は、この時点でのコンソール ウィンドウを示します。  
   
-     ![JavaScript コンソール ウィンドウ ビジュアライザー](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer。")  
+     ![ビジュアライザーを表示している JavaScript コンソール ウィンドウ](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
 6. 関数の 1 行を出力ウィンドウから入力プロンプトにコピーし、インデックス値を 3 に変更します。  
   
@@ -250,37 +250,37 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
      Visual Studio に戻るには、F12 キーまたは Alt + Tab キーを押します。  
   
-## <a name="SinglelineMultilineMode"></a> JavaScript コンソール ウィンドウの単一行モードと複数行モード  
+## <a name="single-line-mode-and-multiline-mode-in-the-javascript-console-window"></a><a name="SinglelineMultilineMode"></a> JavaScript コンソール ウィンドウの単一行モードと複数行モード  
  JavaScript コンソール ウィンドウの入力プロンプトでは、単一行モードと複数行モードの両方がサポートされます。 このトピックの対話形式デバッグ手順では、両方のモードを使用する例を示します。 これらのモードは、Ctrl + Alt + M キーを押して切り替えることができます。  
   
  単一行モードでは入力履歴が提供されます。 上方向キーと下方向キーを使用して、入力履歴内を移動できます。 単一行モードでは、スクリプトを実行すると入力プロンプトがクリアされます。 単一行モードでスクリプトを実行するには、Enter キーを押します。  
   
- 複数行モードでは、スクリプトを実行しても入力プロンプトはクリアされません。 複数行モードから単一行モードに切り替えたときは、 **[入力のクリア]** (赤い "X") を押すと、入力行をクリアできます。 複数行モードでスクリプトを実行するには、Ctrl + Enter キーを押すか、またはウィンドウの右下隅の矢印を選びます。  
+ 複数行モードでは、スクリプトを実行しても入力プロンプトはクリアされません。 複数行モードから単一行モードに切り替えた場合は、[ **入力のクリア** ] (赤い "X") を押して入力行をクリアできます。 複数行モードでスクリプトを実行するには、Ctrl + Enter キーを押すか、またはウィンドウの右下隅の矢印を選びます。  
   
-## <a name="Switching"></a> スクリプトの実行コンテキストの切り替え  
+## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> スクリプトの実行コンテキストの切り替え  
  JavaScript コンソール ウィンドウを使用すると、1 回につき、Web プラットフォーム ホスト (WWAHost.exe) の単一インスタンスを表す 1 つの実行コンテキストと対話することができます。 一部のシナリオでは (たとえば `iframe`、共有コントラクト、Web ワーカー、 `WebView` コントロールなどを使用する場合)、アプリがホストの別のインスタンスを起動することがあります。 ホストの別のインスタンスが実行中の場合は、 **[ターゲット]** リストから実行コンテキストを選択すると、アプリを実行したまま、別の実行コンテキストを選択できます。  
   
  次の図は、JavaScript コンソール ウィンドウのターゲット リストを示します。  
   
- ![JavaScript コンソール ウィンドウでの選択の対象](../debugger/media/js-console-target.png "JS_Console_Target")  
+ ![JavaScript コンソール ウィンドウでのターゲット選択](../debugger/media/js-console-target.png "JS_Console_Target")  
   
  `cd` コマンドを使用して実行コンテキストを切り替えることもできますが、別の実行コンテキストの名前を知っている必要があります。また、使用する参照がスコープ内になければなりません。 **[ターゲット]** リストを使用すると、別の実行コンテキストに簡単にアクセスできます。  
   
-## <a name="BrowserSupport"></a> ブラウザーとプラットフォームのサポート  
+## <a name="browser-and-platform-support"></a><a name="BrowserSupport"></a> ブラウザーとプラットフォームのサポート  
  JavaScript コンソール ウィンドウは、次のプラットフォームでサポートされています。  
   
-- JavaScript と HTML を使った [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]および Windows Phone ストア アプリ  
+- JavaScript と HTML を使った[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] および Windows Phone ストア アプリ  
   
-- [!INCLUDE[win81](../includes/win81-md.md)] で実行されている Internet Explorer 11  
+- [!INCLUDE[win81](../includes/win81-md.md)]  
   
--  [!INCLUDE[win8](../includes/win8-md.md)]  
+- [!INCLUDE[win8](../includes/win8-md.md)]  
   
-## <a name="see-also"></a>関連項目  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
- [キーボード ショートカット](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
+## <a name="see-also"></a>参照  
+ [Visual Studio でのアプリのデバッグ](../debugger/debug-store-apps-in-visual-studio.md)   
+ [JavaScript コンソールのコマンド](../debugger/javascript-console-commands.md)   
+ [アプリを更新する (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [キーボードショートカット](../debugger/keyboard-shortcuts-html-and-javascript.md)   
+ [HTML、CSS、および JavaScript のサンプルコードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [クイックスタート: HTML と CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)   
  [製品のサポートとユーザー補助](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

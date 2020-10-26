@@ -1,5 +1,5 @@
 ---
-title: 構成オブジェクトと選択項目オブジェクトの自動化 |マイクロソフトドキュメント
+title: Configuration オブジェクトと SelectedItem オブジェクトのオートメーション |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0341cdf56b32b8b1ac77104b3f3e813ae0610767
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709969"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>構成オブジェクトと SelectedItem オブジェクトのオートメーション
 
-Visual Studio でビルドおよび選択した項目のプロセスを自動化できます。
+Visual Studio では、ビルドと選択された項目プロセスを自動化できます。
 
 ## <a name="automation-for-builds"></a>ビルドの自動化
 
-ビルドまたは構成には、 を実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>するときに提供されるオートメーション モデルがあります。 詳しくは、「[ビルド構成について](../../ide/understanding-build-configurations.md)」をご覧ください。
+ビルドまたは構成には、を実装するときに提供されるオートメーションモデルがあり <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider> ます。 詳しくは、「[ビルド構成について](../../ide/understanding-build-configurations.md)」をご覧ください。
 
-VSPackage を作成し、構成オプションを制御する場合は、オートメーション モデルを使用する必要があります。
+VSPackage を作成し、構成オプションを制御する場合は、オートメーションモデルを使用する必要があります。
 
-## <a name="automation-for-selecteditem"></a>選択されたアイテムのオートメーション
+## <a name="automation-for-selecteditem"></a>SelectedItem の Automation
 
-Visual Studio には標準の実装が含`SelectedItem`まれているため、オブジェクトの実装を提供する必要はありません。 ただし、必要に応じて`SelectedItem`オブジェクトを実装できます。 `SelectedItem`インターフェイスを含むオブジェクトを実装し、__VSHPROPIDに設定された<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>`VSITEMID`メソッドの呼び出しに応答を返す必要があります[。VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
+`SelectedItem`Visual Studio には標準の実装が含まれているため、オブジェクトの実装を指定する必要はありません。 ただし、必要に応じてオブジェクトを実装することもでき `SelectedItem` ます。 インターフェイスを含むオブジェクトを実装し、 `SelectedItem` <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> を __VSHPROPID に設定して、メソッドへの呼び出しに対する応答を返す必要があり `VSITEMID` [ます。VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>)。
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>
-- [オートメーションモデルへの貢献](../../extensibility/internals/contributing-to-the-automation-model.md)
+- [オートメーションモデルに貢献する](../../extensibility/internals/contributing-to-the-automation-model.md)
 - [ビルド構成について](../../ide/understanding-build-configurations.md)

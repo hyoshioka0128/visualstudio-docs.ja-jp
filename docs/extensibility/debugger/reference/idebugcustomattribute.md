@@ -1,5 +1,5 @@
 ---
-title: 属性を指定する |マイクロソフトドキュメント
+title: IDebugCustomAttribute |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732683"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
@@ -28,31 +28,31 @@ ms.locfileid: "80732683"
 IDebugCustomAttribute : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- シンボル プロバイダーは、シンボルに関連付けられているカスタム属性をサポートするために、このインターフェイスを実装します。 通常、独自のオブジェクトに実装されます。
+## <a name="notes-for-implementers"></a>実装側の注意
+ シンボルプロバイダーは、シンボルに関連付けられているカスタム属性をサポートするために、このインターフェイスを実装します。 通常は、独自のオブジェクトに実装されます。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)を呼び出すと、このインターフェイスが返されます。 メソッドの呼び出し[は](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)、[インターフェイス](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)を返します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)を呼び出すと、このインターフェイスが返されます。 [Enumcustomattributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)メソッドを呼び出すと、 [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)インターフェイスが返されます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugCustomAttribute`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugCustomAttribute` ます。
 
 |Method|説明|
 |------------|-----------------|
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|現在の属性がアタッチされているフィールドを取得します。|
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|カスタム属性クラスの型を取得します。|
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|カスタム属性の名前を取得します。|
-|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|属性情報をバイト BLOB として取得します。|
+|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|属性情報をバイトの blob として取得します。|
 
-## <a name="remarks"></a>Remarks
- カスタム属性は、特定のクラスまたはメソッドに関連付けられたカスタム メタデータを提供する C# の構造体です。
+## <a name="remarks"></a>解説
+ カスタム属性は、特定のクラスまたはメソッドに関連付けられたカスタムメタデータを提供する C# の構造体です。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: sh.h
+ ヘッダー: sh. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [シンボル プロバイダーのインターフェイス](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

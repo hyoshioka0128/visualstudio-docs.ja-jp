@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c31d54a87ff305504496eac6ae02900334c0966a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659454"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>シェイプおよびコネクタの更新とモデルへの反映
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-@No__t_0 のドメイン固有言語では、図形の外観に基になるモデルの状態を反映させることができます。
+のドメイン固有言語では、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 図形の外観に基になるモデルの状態を反映させることができます。
 
- このトピックのコード例は、`Dsl` プロジェクトの `.cs` ファイルに追加する必要があります。 各ファイルには、次のステートメントが必要です。
+ このトピックのコード例は、プロジェクトのファイルに追加する必要があり `.cs` `Dsl` ます。 各ファイルには、次のステートメントが必要です。
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -30,27 +30,27 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>図形マップのプロパティを設定してデコレータの表示を制御する
- DSL 定義の図形とドメインクラス間のマッピングを構成することにより、プログラムコードを記述せずにデコレータの可視性を制御できます。 詳細については、以下のトピックを参照してください。
+ DSL 定義の図形とドメインクラス間のマッピングを構成することにより、プログラムコードを記述せずにデコレータの可視性を制御できます。 詳細については、次のトピックを参照してください。
 
 - [方法: デコレーターの可視性を制御する - リダイレクト](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)
 
 - [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>図形の色とスタイルをプロパティとして公開する
- DSL 定義で、shape クラスを右クリックし、公開の **[追加]** をポイントして、 **[塗りつぶしの色]** などの項目のいずれかをクリックします。
+ DSL 定義で、shape クラスを右クリックし、[公開の **追加**] をポイントして、[ **塗りつぶしの色**] などの項目のいずれかをクリックします。
 
  これで、図形には、プログラムコードまたはユーザーとして設定できるドメインプロパティが設定されました。 たとえば、コマンドまたはルールのプログラムコードで設定するには、次のように記述します。
 
  `shape.FillColor = System.Drawing.Color.Red;`
 
- ユーザーではなく、プログラムの制御下でプロパティ変数を作成する場合は、DSL 定義図の **[塗りつぶしの色]** などの新しいドメインプロパティを選択します。 次に、プロパティウィンドウで、set**が**`false` に参照可能になるか、または**UI が読み取り専用**に設定されて `true` ます。
+ ユーザーではなく、プログラムの制御下でプロパティ変数を作成する場合は、DSL 定義図の [ **塗りつぶしの色** ] などの新しいドメインプロパティを選択します。 次に、プロパティウィンドウで、set **が** 参照可能になる `false` か、または **UI が読み取り専用** に設定され `true` ます。
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>色、スタイル、または場所をモデル要素のプロパティに依存するように変更規則を定義する
- モデルの他の部分に依存する図形の外観を更新する規則を定義できます。 たとえば、モデル要素のプロパティに応じて図形の色を更新するように、モデル要素に対して変更規則を定義できます。 変更規則の詳細については、「[規則によってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+ モデルの他の部分に依存する図形の外観を更新する規則を定義できます。 たとえば、モデル要素のプロパティに応じて図形の色を更新するように、モデル要素に対して変更規則を定義できます。 変更規則の詳細については、「 [規則によってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
- ルールは、元に戻すコマンドを実行したときには呼び出されないため、ストア内で保持されているプロパティを更新する場合にのみ使用してください。 これには、図形のサイズや可視性などの一部のグラフィック機能は含まれません。 図形の機能を更新するには、「[非ストアのグラフィカル機能の更新](#OnAssociatedProperty)」を参照してください。
+ ルールは、元に戻すコマンドを実行したときには呼び出されないため、ストア内で保持されているプロパティを更新する場合にのみ使用してください。 これには、図形のサイズや可視性などの一部のグラフィック機能は含まれません。 図形の機能を更新するには、「 [非ストアのグラフィカル機能の更新](#OnAssociatedProperty)」を参照してください。
 
- 次の例では、前のセクションで説明したように、`FillColor` をドメインプロパティとして公開していることを前提としています。
+ 次の例では、前の `FillColor` セクションで説明したように、ドメインプロパティとして公開されていることを前提としています。
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -90,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured を使用して図形のプロパティを初期化する
- 図形が最初に作成されたときに図形のプロパティを設定するには、ダイアグラムクラスの部分定義で `OnChildConfigured()` オーバーライドします。 図クラスは DSL 定義で指定されており、生成されたコードは、生成されたコードに含まれて**います。** (例:
+ 図形の最初の作成時に図形のプロパティを設定するには、 `OnChildConfigured()` ダイアグラムクラスの部分定義でオーバーライドします。 図クラスは DSL 定義で指定されており、生成されたコードは、生成されたコードに含まれて**います。** 次に例を示します。
 
 ```csharp
 partial class MyLanguageDiagram
@@ -115,10 +115,10 @@ partial class MyLanguageDiagram
 
  このメソッドは、ドメインプロパティと非ストア機能 (図形のサイズなど) の両方に使用できます。
 
-## <a name="OnAssociatedProperty"></a>AssociateValueWith () を使用して図形のその他の機能を更新する
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> AssociateValueWith () を使用して図形のその他の機能を更新する
  図形の一部の機能 (影があるかどうかなど)、またはコネクタの矢印のスタイルでは、機能をドメインプロパティとして公開するための組み込みメソッドはありません。  このような機能に対する変更は、トランザクションシステムの制御下にありません。 そのため、ユーザーが Undo コマンドを実行したときにルールが呼び出されないため、ルールを使用してそれらを更新するのは適切ではありません。
 
- 代わりに、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> を使用して、このような機能を更新できます。 次の例では、コネクタの矢印スタイルは、コネクタによって表示されるリレーションシップのドメインプロパティの値によって制御されています。
+ 代わりに、を使用して、このような機能を更新でき <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> ます。 次の例では、コネクタの矢印スタイルは、コネクタによって表示されるリレーションシップのドメインプロパティの値によって制御されています。
 
 ```
 public partial class ArrowConnector // My connector class.
@@ -159,6 +159,6 @@ public partial class ArrowConnector // My connector class.
 
 ```
 
- `AssociateValueWith()` は、登録するドメインプロパティごとに1回呼び出す必要があります。 呼び出された後、指定したプロパティに対する変更は、プロパティのモデル要素を表すすべての図形で `OnAssociatedPropertyChanged()` を呼び出します。
+ `AssociateValueWith()` は、登録する各ドメインプロパティに対して1回呼び出される必要があります。 呼び出された後、指定したプロパティに対する変更は、 `OnAssociatedPropertyChanged()` プロパティのモデル要素を表すすべての図形で呼び出されます。
 
- 各インスタンスに対して `AssociateValueWith()` を呼び出す必要はありません。 InitializeResources はインスタンスメソッドですが、図形クラスごとに1回だけ呼び出されます。
+ 各インスタンスに対してを呼び出す必要はありません `AssociateValueWith()` 。 InitializeResources はインスタンスメソッドですが、図形クラスごとに1回だけ呼び出されます。

@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852009"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
@@ -53,7 +53,7 @@ ms.locfileid: "75852009"
 
  このリリースでは、次の UML 図を作成できます。
 
-|**図**|**表示される内容**|
+|**Diagram (ダイアグラム)**|**表示される内容**|
 |-----------------|---------------|
 |[UML アクティビティ図: リファレンス](../modeling/uml-activity-diagrams-reference.md)|ビジネス プロセス内のアクションと参加者の間のワーク フロー|
 |[UML コンポーネント図: リファレンス](../modeling/uml-component-diagrams-reference.md)|システム、そのインターフェイス、ポート、およびリレーションシップのコンポーネント|
@@ -61,11 +61,11 @@ ms.locfileid: "75852009"
 |[UML シーケンス図: リファレンス](../modeling/uml-sequence-diagrams-reference.md)|オブジェクト、コンポーネント、システム、またはアクターの間の相互作用の順序|
 |[UML ユース ケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md)|ユーザーの目的、およびシステムでサポートするタスク|
 
- 各種類の図をサポートする Visual Studio のバージョンを確認するには、「[アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+ 各種類の図をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
  システムまたは既存のコードのアーキテクチャを視覚化するには、次の図を作成します。
 
-|**図**|**表示される内容**|
+|**Diagram (ダイアグラム)**|**表示される内容**|
 |-----------------|---------------|
 |[レイヤー図: ガイドライン](../modeling/layer-diagrams-guidelines.md)<br /><br /> [レイヤー図: リファレンス](../modeling/layer-diagrams-reference.md)|システムのアーキテクチャの概要|
 |コード マップ<br /><br /> [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)|既存のコード内の依存関係とその他の関係|
@@ -73,19 +73,19 @@ ms.locfileid: "75852009"
 
 ## <a name="common-tasks"></a>一般的なタスク
 
-|**トピック**|**Task**|
+|**トピック**|**タスク**|
 |---------------|--------------|
-|[UML モデリング プロジェクトおよびダイアグラムを作成する](../modeling/create-uml-modeling-projects-and-diagrams.md)|**モデルを作成**し、ダイアグラムを追加します。|
+|[UML モデリング プロジェクトおよびダイアグラムを作成する](../modeling/create-uml-modeling-projects-and-diagrams.md)|**モデルを作成** し、ダイアグラムを追加します。|
 |[UML モデルおよびダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)|モデルを編集するための**図を描画**します。|
 |[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)|異なるチームメンバーが作業できる単位にモデルを分割する**パッケージを作成**します。|
-|[UML クラス図からコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラスC#ダイアグラムからコードを生成**して、実装を開始します。|
+|[UML クラス ダイアグラムからコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラスダイアグラムから C# コードを生成** して、実装を開始します。|
 |[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|ステレオタイプを使用して**モデル要素をカスタマイズ**し、特定の目的のために標準の UML モデル要素を拡張します。|
 |[モデル要素と作業項目とのリンク](../modeling/link-model-elements-and-work-items.md)|モデル**要素と作業項目の間にリンクを作成**して、モデルの特定の部分に関連付けられているタスク、テストケース、バグ、要件、問題、またはその他の種類の作業を追跡します。|
-|[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|**モデルと図を保存**して、他のユーザーと共有できるようにします。これには、[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]を使用しないユーザーも含まれます。|
+|[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|を使用しないユーザーを含め、他のユーザーと共有できるように、**モデルとダイアグラムを保存**し [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] ます。|
 
-## <a name="related-tasks"></a>関連タスク
+## <a name="related-tasks"></a>Related Tasks
 
-|**トピック**|**Task**|
+|**トピック**|**タスク**|
 |---------------|--------------|
 |[コードの視覚化](../modeling/visualize-code.md)|コード マップとレイヤー図を作成して、よく知らないコードの理解を深めます。|
 |[ユーザー要件のモデリング](../modeling/model-user-requirements.md)|モデルを使用して、ユーザーのニーズを明確にして伝えます。|
@@ -94,8 +94,8 @@ ms.locfileid: "75852009"
 |[開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)<br /><br /> [アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|モデルを使用すると、システムの開発中に効果的にシステムを理解して変更することができます。|
 |[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)|大規模または中規模のプロジェクトでモデルを整理します。|
 
-## <a name="external-resources"></a>外部資料
+## <a name="external-resources"></a>外部リソース
 
-|**カテゴリ**|**Links**|
+|**カテゴリ**|**リンク**|
 |------------------|---------------|
 |**フォーラム**|-   [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

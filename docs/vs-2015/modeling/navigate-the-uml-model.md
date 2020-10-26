@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74289856"
 ---
 # <a name="navigate-the-uml-model"></a>UML モデル内を移動する
@@ -24,7 +24,7 @@ ms.locfileid: "74289856"
 ここでは、主要な UML モデルの種類について説明します。
 
 ## <a name="the-model-elements-model-and-model-store"></a>モデル要素、モデル、およびモデル ストア
- **VisualStudio**アセンブリで定義されている型は、 [uml 仕様のバージョン 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/)に定義されている型に対応しています。
+ アセンブリ **Microsoft.VisualStudio.Uml.Interfaces.dll** 定義されている型は、UML 仕様で定義されている型に対応しています。 [バージョン 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/)。
 
  UML 仕様の型は、Visual Studio においてインターフェイスとして実現されます。 それぞれの型の前には、"I" という文字が付加されています。 例: [Ielement](/previous-versions/dd516035(v=vs.140))、 [IClass](/previous-versions/dd523539%28v%3dvs.140%29)、 [ielement](/previous-versions/dd481186(v=vs.140))。
 
@@ -45,16 +45,16 @@ ms.locfileid: "74289856"
 
  モデルの要素を削除すると、その要素が参加する関係が自動的に削除され、もう一方の端のプロパティが更新されます。
 
- UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 最大値が1を超える多重度は、.NET プロパティの型が `IEnumerable<`*型*`>`であることを示します。
+ UML 仕様で 0..1 の多重度がプロパティに割り当てられている場合、その値は `null` になることがあります。 最大値が1を超える多重度は、.NET プロパティの型がであることを意味 `IEnumerable<` *Type* `>` します。
 
  リレーションシップの走査の詳細については、「 [UML API を使用したリレーションシップのナビゲート](../modeling/navigate-relationships-with-the-uml-api.md)」を参照してください。
 
 ### <a name="the-ownership-tree"></a>所有権ツリー
- モデルには、 [Ielement](/previous-versions/dd516035(v=vs.140))オブジェクトのツリーが含まれています。 どの要素にもプロパティ `OwnedElements` および `Owner` があります。
+ モデルには、 [Ielement](/previous-versions/dd516035(v=vs.140)) オブジェクトのツリーが含まれています。 どの要素にもプロパティ `OwnedElements` および `Owner` があります。
 
- ほとんどの場合、`Owner` プロパティおよび `OwnedElements` プロパティの対象は、より具体的な名前を持つ他のプロパティでも参照されます。 たとえば、UML 操作は、いずれも UML クラスによって所有されます。 したがっ[て](/previous-versions/dd481186(v=vs.140))、ioperation には[Ioperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)という名前のプロパティがあり、すべての[ioperation](/previous-versions/dd481186(v=vs.140))オブジェクトには `Class == Owner`ます。
+ ほとんどの場合、`Owner` プロパティおよび `OwnedElements` プロパティの対象は、より具体的な名前を持つ他のプロパティでも参照されます。 たとえば、UML 操作は、いずれも UML クラスによって所有されます。 したがっ [て、ioperation](/previous-versions/dd481186(v=vs.140)) には、 [ioperation クラス](/previous-versions/dd473473%28v%3dvs.140%29)という名前のプロパティと、すべての [ioperation](/previous-versions/dd481186(v=vs.140)) オブジェクトのが含ま `Class == Owner` れます。
 
- ツリーの最上位要素には所有者がいませんが、`AuxiliaryConstructs.IModel`です。 IModel は、 [Imodelstore. Root](/previous-versions/ee789368(v=vs.140))という `IModelStore`内に含まれています。
+ ツリーの最上位要素には所有者がいませんが、 `AuxiliaryConstructs.IModel` です。 IModel は、 `IModelStore` [Imodelstore. Root](/previous-versions/ee789368(v=vs.140))という内に含まれています。
 
  すべてのモデル要素には、作成時に Owner を指定します。 詳細については、「 [UML モデルでの要素とリレーションシップの作成](../modeling/create-elements-and-relationships-in-uml-models.md)」を参照してください。
 
@@ -67,7 +67,7 @@ ms.locfileid: "74289856"
 
  図形はツリー内に位置付けられます。 ツリーの各端は、ParentShape プロパティと ChildShapes プロパティで表されます。 図は、親のない唯一の図形です。 図のサーフェイス上の図形は、より小さなパートで構成されます。 たとえば、クラスの図形には、属性と操作のコンパートメントがあります。
 
- 図形の詳細については、「[図に UML モデルを表示する](../modeling/display-a-uml-model-on-diagrams.md)」を参照してください。
+ 図形の詳細については、「 [図に UML モデルを表示する](../modeling/display-a-uml-model-on-diagrams.md)」を参照してください。
 
 ## <a name="access-to-the-model-in-extensions"></a>拡張機能でのモデルへのアクセス
  MEF コンポーネントとして定義される [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能では、拡張機能が実行されるコンテキストから情報をインポートするプロパティを宣言できます。
@@ -124,11 +124,11 @@ foreach (IShape<IInterface> in
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modelbus を使用し、さまざまなモデルの要素間のリンクを生成します。 詳細については、「 [UML モデルを他のモデルおよびツールと統合](../modeling/integrate-uml-models-with-other-models-and-tools.md)する」を参照してください。
 
-- モデリング プロジェクトと図を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスに表示させず、読み取り専用で読み込みます。 詳細については、「[プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
+- モデリング プロジェクトと図を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスに表示させず、読み取り専用で読み込みます。 詳細については、「 [プログラムコードで UML モデルを読み取る](../modeling/read-a-uml-model-in-program-code.md)」を参照してください。
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でモデリング プロジェクトと図を開き、コンテンツにアクセスします。 詳細については、「 [Visual STUDIO API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 
 - [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)
 - [UML API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7430dec75e898a6695b146ce50076b8f57ed9d3e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711613"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T> アクティビティ デザイナー
@@ -38,8 +38,8 @@ ms.locfileid: "88711613"
 
 |プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Switch%601> アクティビティ デザイナーの表示名を指定します。 既定値は Switch<Int32 \> です。 この値は、[ **プロパティ** ] ウィンドウで編集することも、デザイナーヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|cases コレクション内のキーを比較して、実行する case を決定するために使用される式を指定します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.Switch%601> アクティビティ デザイナーの表示名を指定します。 既定値は Switch<Int32 \> です。 この値は、[ **プロパティ** ] ウィンドウで編集することも、デザイナーヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|○|cases コレクション内のキーを比較して、実行する case を決定するために使用される式を指定します。|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||一致が検出されなかった場合に実行するアクティビティを指定します。 デザイナーの [ **アクティビティの追加** ] ボタンをクリックして、アクティビティをドロップできる **既定** のボックスを開きます。|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||評価する case を指定します。 ケースを追加するには、**スイッチ \<T> **デザイナーの下部にある [**新しいケースの追加**] ボタンをクリックします。 ボタンがテキストボックスに変わります (スイッチの追加時に選択されたジェネリック型が String または Enum である場合は、コンボボックスに \<T> なります)。 [ **ケースの値** ] ボックスにキーを追加すると、ケース領域が展開され、"ここにアクティビティをドロップします" というヒントテキストが表示されたら、ケースの実行ロジックを定義します。|
 

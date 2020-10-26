@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2e1b13cc101ea4d7609633fd9c11bf87946d7b7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665735"
 ---
 # <a name="encodings-and-line-breaks"></a>エンコーディングと改行
@@ -31,7 +31,7 @@ ms.locfileid: "72665735"
 Visual Studio では、[ファイル] メニューの **[保存オプションの詳細設定]** を使用して、必要な改行の種類を決定できます。 また、同じ設定でファイルのエンコーディングを変更することもできます。
 
 > [!NOTE]
-> 開発設定の種類によっては (Visual Basic、F#、Web 開発)、メニューに **[保存オプションの詳細設定]** が表示されない場合があります。 設定を (たとえば [全般] に) 変更するには、 **[ツール] から [設定のインポートとエクスポート]** を開きます。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> 開発設定の種類によっては (Visual Basic、F#、Web 開発)、メニューに **[保存オプションの詳細設定]** が表示されない場合があります。 設定を (たとえば [全般] に) 変更するには、**[ツール] から [設定のインポートとエクスポート]** を開きます。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
  Visual Studio では、次の文字が改行として解釈されます。
 

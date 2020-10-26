@@ -1,5 +1,5 @@
 ---
-title: 式エバリュエータアーキテクチャ |マイクロソフトドキュメント
+title: 式エバリュエーターアーキテクチャ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,45 +13,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738700"
 ---
-# <a name="expression-evaluator-architecture"></a>式エバリュエーター アーキテクチャ
+# <a name="expression-evaluator-architecture"></a>式エバリュエーターのアーキテクチャ
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- Visual Studio デバッグ パッケージに独自の言語を統合する必要があります式エバリュエーター (EE) インターフェイスを設定し、共通言語ランタイム シンボル プロバイダー (SP) とバインダー インターフェイスを呼び出す必要があります。 SP オブジェクトとバインダー オブジェクトは、現在の実行アドレスと共に、式が評価されるコンテキストです。 これらのインターフェイスが生成および使用する情報は、EE のアーキテクチャにおける重要な概念を表します。
+ 独自の言語を Visual Studio デバッグパッケージに統合するには、必要な式エバリュエーター (EE) インターフェイスを設定し、共通言語ランタイムシンボルプロバイダー (SP) とバインダーインターフェイスを呼び出す必要があります。 現在の実行アドレスと共に、SP オブジェクトと binder オブジェクトは、式が評価されるコンテキストです。 これらのインターフェイスが生成して使用する情報は、EE のアーキテクチャの主要概念を表します。
 
 ## <a name="overview"></a>概要
 
-### <a name="parse-the-expression"></a>式の解析
- プログラムをデバッグする場合、式はさまざまな理由で評価されますが、デバッグ中のプログラムがブレークポイント (ユーザーによって配置されたブレークポイントまたは例外によって発生したブレークポイント) で停止した場合には常に式が評価されます。 この時点で、Visual Studio はデバッグ エンジン (DE) から[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイスで表されるスタック フレームを取得します。 その後、インターフェイスを取得するために[GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) [を](../../extensibility/debugger/reference/idebugexpressioncontext2.md)呼び出します。 このインターフェイスは、式を評価できるコンテキストを表します。[解析テキスト](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)は、評価プロセスへのエントリ ポイントです。 ここまでは、すべてのインターフェイスが DE によって実装されます。
+### <a name="parse-the-expression"></a>式を解析する
+ プログラムをデバッグする場合、式はさまざまな理由で評価されますが、デバッグされているプログラムがブレークポイントで停止されている場合は常に (ユーザーによって設定されたブレークポイントまたは例外によって発生したブレークポイントのいずれか) になります。 この時点で、Visual Studio はデバッグエンジン (DE) から [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) インターフェイスによって表されるスタックフレームを取得します。 次に、Visual Studio は [Get式コンテキスト](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) を呼び出して、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) インターフェイスを取得します。 このインターフェイスは、式を評価できるコンテキストを表します。 [Parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) は、評価プロセスへのエントリポイントです。 この時点までは、すべてのインターフェイスは DE によって実装されています。
 
- DE`IDebugExpressionContext2::ParseText`が呼び出されると、デはブレークポイントが発生したソース ファイルの言語に関連付けられた EE をインスタンス化します (DE はこの時点で SH もインスタンス化します)。 EE は[、IDebug 式エバリュエーター インターフェイス](../../extensibility/debugger/reference/idebugexpressionevaluator.md)によって表されます。 DE は[Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)を呼び出して、式 (テキスト形式) を解析済み式に変換し、評価の準備が整います。 この解析された式は、インターフェイスによって表[されます](../../extensibility/debugger/reference/idebugparsedexpression.md)。 通常、式は解析され、この時点では評価されません。
+ が呼び出されると、 `IDebugExpressionContext2::ParseText` ブレークポイントが発生したソースファイルの言語に関連付けられている EE が逆インスタンス化されます (de はこの時点で SH もインスタンス化します)。 EE は、 [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md) インターフェイスによって表されます。 次に、DE は [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して、式 (テキスト形式) を解析された式に変換し、評価できるようにします。 この解析された式は、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) インターフェイスによって表されます。 通常、式は解析され、この時点では評価されません。
 
- DE は[、IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを実装`IDebugParsedExpression`するオブジェクトを作成し、オブジェクトを`IDebugExpression2`オブジェクトに配置し、`IDebugExpression2`オブジェクトを`IDebugExpressionContext2::ParseText`返します。
+ DE は、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスを実装するオブジェクトを作成し、オブジェクトを `IDebugParsedExpression` オブジェクトに格納 `IDebugExpression2` し、からオブジェクトを返し `IDebugExpression2` `IDebugExpressionContext2::ParseText` ます。
 
 ### <a name="evaluate-the-expression"></a>式を評価する
- Visual Studio は、解析された式を[評価するために、EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)または[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)を呼び出します。 どちらのメソッドも[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)を`IDebugExpression2::EvaluateSync`呼び出し、メソッド`IDebugExpression2::EvaluateAsync`をバックグラウンド スレッドを通じてメソッドを呼び出す場合に、メソッドを呼び出して解析された式の値と型を表す[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスを返します。 `IDebugParsedExpression::EvaluateSync`は、指定された SH、アドレス、およびバインダーを使用して、解析された式を、インターフェイスによって表`IDebugProperty2`される実際の値に変換します。
+ Visual Studio は、 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) または [evaluateasync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) を呼び出して、解析された式を評価します。 これらのメソッドはいずれも [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) を呼び出し ( `IDebugExpression2::EvaluateSync` メソッドをすぐに呼び出し、 `IDebugExpression2::EvaluateAsync` バックグラウンドスレッドを通じてメソッドを呼び出します)、解析された式を評価し、解析された式の値と型を表す [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) インターフェイスを返します。 `IDebugParsedExpression::EvaluateSync` 指定された SH、address、および binder を使用して、解析された式を、インターフェイスによって表される実際の値に変換し `IDebugProperty2` ます。
 
 ### <a name="for-example"></a>次に例を示します。
- 実行中のプログラムでブレークポイントにヒットした後、ユーザーは **[クイック ウォッチ**] ダイアログ ボックスで変数を表示することを選択します。 このダイアログ ボックスには、変数の名前、値、および変数の型が表示されます。 通常、ユーザーは値を変更できます。
+ 実行中のプログラムでブレークポイントにヒットすると、ユーザーは [ **クイックウォッチ** ] ダイアログボックスで変数を表示するように選択します。 このダイアログボックスには、変数の名前、値、およびその型が表示されます。 ユーザーは通常、値を変更できます。
 
- [**クイック ウォッチ]** ダイアログ ボックスが表示されると、検査対象の変数の名前がテキストとして[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)に送信されます。 これは、解析された式 (この場合は変数) を表す[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトを返します。 [次に EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)が呼`IDebugProperty2`び出され、変数の値と型、およびその名前を表すオブジェクトが生成されます。 表示されるのはこの情報です。
+ [ **クイックウォッチ** ] ダイアログボックスが表示されたら、検査対象の変数の名前がテキストとして [parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)に送信されます。 これにより、解析された式 (この場合は変数) を表す [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) オブジェクトが返されます。 その後、 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)を呼び出して、 `IDebugProperty2` 変数の値と型、およびその名前を表すオブジェクトを生成します。 この情報が表示されます。
 
- ユーザーが変数の値を変更すると[、SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)が新しい値で呼び出され、メモリ内の変数の値が変更され、プログラムの実行が再開されるときに使用されます。
+ ユーザーが変数の値を変更すると、 [Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) が新しい値で呼び出されます。これにより、メモリ内の変数の値が変更され、プログラムの実行が再開されるときに使用されるようになります。
 
- 変数[の値を表示する](../../extensibility/debugger/displaying-locals.md)このプロセスの詳細については、「ローカルの表示」を参照してください。 変数[の値の変更](../../extensibility/debugger/changing-the-value-of-a-local.md)方法の詳細については、ローカルの値の変更を参照してください。
+ 変数の値を表示するこのプロセスの詳細については、「 [ローカルの表示](../../extensibility/debugger/displaying-locals.md) 」を参照してください。 変数の値の変更方法の詳細については [、「ローカルの値の変更](../../extensibility/debugger/changing-the-value-of-a-local.md) 」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)DE が EE を呼び出すときに渡される引数を提供します。
+ [評価コンテキスト](../../extensibility/debugger/evaluation-context.md) DE が EE を呼び出したときに渡される引数を提供します。
 
- [キー式エバリュエーター インターフェイス](../../extensibility/debugger/key-expression-evaluator-interfaces.md)EE を記述するときに必要な重要なインターフェイスと評価コンテキストについて説明します。
+ [キー式エバリュエーターインターフェイス](../../extensibility/debugger/key-expression-evaluator-interfaces.md) 評価コンテキストと共に EE を記述するときに必要となる重要なインターフェイスについて説明します。
 
 ## <a name="see-also"></a>関連項目
 - [CLR 式エバリュエーターの記述](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [ローカルの表示](../../extensibility/debugger/displaying-locals.md)
+- [表示 (ローカルを)](../../extensibility/debugger/displaying-locals.md)
 - [ローカルの値の変更](../../extensibility/debugger/changing-the-value-of-a-local.md)

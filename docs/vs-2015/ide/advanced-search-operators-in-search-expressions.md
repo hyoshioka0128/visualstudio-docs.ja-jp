@@ -1,4 +1,4 @@
-﻿---
+---
 title: 検索式の高度な検索演算子 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620338"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>検索式の高度な検索演算子
@@ -31,7 +31,7 @@ ms.locfileid: "72620338"
 > [!WARNING]
 > 高度な検索演算子を入力するときは、検索エンジンに認識させるために最後にコロンを付け、コロンの前にはスペースを入れません。
 
-|検索対象|上限のファイル数を変更するには、|例|結果|
+|検索対象|vmmblue_2|例|結果|
 |-------------------|---------|-------------|------------|
 |トピックのタイトルの言葉|title:|title:binaryreader|タイトルに "binaryreader" が含まれるトピック。|
 |コード サンプルの言葉|code:|code:readdouble|コード サンプルに "readdouble" が含まれるトピック。|
@@ -40,13 +40,13 @@ ms.locfileid: "72620338"
 
  code: 演算子を利用して任意のいくつかのプログラミング言語に関するコンテンツを検索できますが、特定のプログラミング言語でマークアップされているコンテンツのみ、結果が返されます。 次の表は、この演算子が対応しているプログラミング言語を一覧にまとめたものです。
 
-|プログラミング言語|上限のファイル数を変更するには、|
+|プログラミング言語|用途|
 |--------------------------|---------|
-|Visual Basic|code:vb<br /><br /> 、または<br /><br /> code:visualbasic|
-|C#|code:c#<br /><br /> 、または<br /><br /> code:csharp|
-|C++|code:cpp<br /><br /> 、または<br /><br /> code:c++<br /><br /> 、または<br /><br /> code:cplusplus|
-|F#|code:f#<br /><br /> 、または<br /><br /> code:fsharp|
-|JavaScript|code:javascript<br /><br /> 、または<br /><br /> code:js|
+|Visual Basic|code:vb<br /><br /> or<br /><br /> code:visualbasic|
+|C#|code:c#<br /><br /> or<br /><br /> code:csharp|
+|C++|code:cpp<br /><br /> or<br /><br /> code:c++<br /><br /> or<br /><br /> code:cplusplus|
+|F#|code:f#<br /><br /> or<br /><br /> code:fsharp|
+|JavaScript|code:javascript<br /><br /> or<br /><br /> code:js|
 |XAML|code:xaml|
 
 ## <a name="see-also"></a>参照

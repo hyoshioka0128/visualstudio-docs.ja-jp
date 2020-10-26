@@ -1,5 +1,5 @@
 ---
-title: カスタム ドキュメント プロパティの概要
+title: カスタムドキュメントプロパティの概要
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,42 +18,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951176"
 ---
-# <a name="custom-document-properties-overview"></a>カスタム ドキュメント プロパティの概要
+# <a name="custom-document-properties-overview"></a>カスタムドキュメントプロパティの概要
 
-ドキュメント レベルのプロジェクトをビルドするときに Visual Studio には、プロジェクト内のドキュメントに 2 つのカスタム プロパティが追加されます。\_AssemblyLocation と\_AssemblyName。 文書を開くと、これらのカスタム ドキュメント プロパティを Microsoft Office アプリケーションによって確認されます。 ドキュメントに存在する場合、アプリケーションの読み込み、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]カスタマイズを開始します。 詳細については、次を参照してください。 [Visual Studio での Office のアーキテクチャ ソリューション](../vsto/architecture-of-office-solutions-in-visual-studio.md)します。
+ドキュメントレベルのプロジェクトをビルドすると、Visual Studio によって、 \_ assemblylocation と AssemblyName という2つのカスタムプロパティがプロジェクトのドキュメントに追加されます。 \_ ユーザーがドキュメントを開くと、Microsoft Office アプリケーションは、これらのカスタムドキュメントプロパティをチェックします。 ドキュメント内に存在する場合は、アプリケーションによってが読み込まれ、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] カスタマイズが開始されます。 詳細については、「 [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)」を参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_AssemblyName
 
-このプロパティは、インターフェイスでの Office ソリューション ローダー コンポーネントの CLSID を格納、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 CLSID 値は、4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B です。 この値を変更しないでください。
+このプロパティは、の Office ソリューションローダーコンポーネント内のインターフェイスの CLSID を格納し [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。 CLSID 値は4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B です。 この値は変更しないでください。
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="_assemblylocation"></a>\_AssemblyLocation
 
-このプロパティには、カスタマイズの詳細については、配置マニフェストを提供する文字列が含まれています。 マニフェストの詳細については、次を参照してください。 [Office ソリューションでのアプリケーションと展開マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)します。
+このプロパティには、カスタマイズの配置マニフェストに関する詳細を提供する文字列が含まれています。 マニフェストの詳細については、「 [Office ソリューションのアプリケーションマニフェストと配置マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)」を参照してください。
 
- \_AssemblyLocation プロパティの値は、ソリューションの展開方法に応じて、異なる形式を持つことができます。
+ \_Assemblylocation プロパティ値の形式は、ソリューションのデプロイ方法によって異なります。
 
-- _AssemblyLocation プロパティの形式が、ソリューションを発行して Web サイト、UNC パス、または、CD または USB ドライブからインストールする場合*DeploymentManifestPath*|*SolutionID*します。 次の文字列は、例を示します。
+- ソリューションが Web サイト、UNC パス、または CD または USB ドライブからインストールされるように公開されている場合、_AssemblyLocation プロパティの形式は*deploymentmanifestpath* | *SolutionID*です。 次の文字列を例に示します。
 
-     file://deployserver/MyShare/ExcelWorkbook1.vsto | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9
+     file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- _AssemblyLocation プロパティが、形式で実行されているまたは Visual Studio からソリューションをデバッグする場合*DeploymentManifestName*|*SolutionID*| vstolocal します。 次の文字列は、例を示します。
+- ソリューションを Visual Studio から実行またはデバッグしている場合、_AssemblyLocation プロパティの形式は*DeploymentManifestName* | *SolutionID*| vstolocal です。 次の文字列を例に示します。
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     Excelworkbook1.xlsx.log | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  *SolutionID*は GUID ですが、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ソリューションを識別するために使用します。 *SolutionID*プロジェクトをビルドするときに自動的に生成されます。 **Vstolocal**用語をすることを示します、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]アセンブリをドキュメントと同じフォルダーから読み込まれる必要があります。
+  *SolutionID*は、が [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ソリューションを識別するために使用する GUID です。 *SolutionID*は、プロジェクトのビルド時に自動的に生成されます。 **Vstolocal**用語は、アセンブリを [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ドキュメントと同じフォルダーから読み込む必要があることをに示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
-- [Office ソリューションにおけるアプリケーションと配置マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [方法: ClickOnce を使用して、Office ソリューションを発行します。](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [方法: 作成し、カスタム ドキュメント プロパティの変更](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [ドキュメントレベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
+- [Office ソリューションのアプリケーションマニフェストと配置マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [方法: カスタムドキュメントプロパティを作成および変更する](../vsto/how-to-create-and-modify-custom-document-properties.md)

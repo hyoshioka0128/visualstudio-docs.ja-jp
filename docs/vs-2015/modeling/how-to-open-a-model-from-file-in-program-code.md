@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c98bec69631b852521f682a24dd1b5ce6ddf0424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662573"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
@@ -21,41 +21,41 @@ ms.locfileid: "72662573"
 
 DSL モデルは任意のアプリケーションで開くことができます。
 
- @No__t_0 拡張機能から、この目的に ModelBus を使用することができます。 ModelBus には、モデル内のモデルまたは要素を参照したり、モデルが移動された場合にそのモデルを検索したりするための標準的なメカニズムが用意されています。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]この目的には、拡張機能から ModelBus を使用することができます。 ModelBus には、モデル内のモデルまたは要素を参照したり、モデルが移動された場合にそのモデルを検索したりするための標準的なメカニズムが用意されています。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。
 
 ## <a name="target-framework"></a>[対象とする Framework]
- アプリケーションプロジェクトの**ターゲットフレームワーク**を **.NET Framework 4**に設定します。
+ アプリケーションプロジェクトの **ターゲットフレームワーク** を **.NET Framework 4**に設定します。
 
 #### <a name="to-set-the-target-framework"></a>ターゲットフレームワークを設定するには
 
-1. DSL モデルを読み取るアプリケーションの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトを開きます。
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]DSL モデルを読み取るアプリケーションのプロジェクトを開きます。
 
-2. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、 **[プロパティ]** をクリックします。
+2. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
-3. プロジェクトのプロパティウィンドウの **[アプリケーション]** タブで、 **[ターゲットフレームワーク]** フィールドを **.NET Framework 4**に設定します。
+3. プロジェクトのプロパティウィンドウの [ **アプリケーション** ] タブで、[ **ターゲットフレームワーク** ] フィールドを **.NET Framework 4**に設定します。
 
 > [!NOTE]
-> この操作は、プロジェクトの作成 ダイアログボックスで  **.NET Framework 4** を選択した場合にも必要になることがあります。 ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル**にすることはできません。
+> この操作は、[プロジェクトの作成] ダイアログボックスで [ **.NET Framework 4** ] を選択した場合にも必要になることがあります。 ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル**にすることはできません。
 
-## <a name="references"></a>関連項目
- これらの参照を [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] アプリケーションプロジェクトに追加する必要があります。
+## <a name="references"></a>参考資料
+ これらの参照をアプリケーションプロジェクトに追加する必要があり [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - **[参照の追加]** ダイアログボックスの **[.net]** タブにこれが表示されない場合は、 **[参照]** タブをクリックし、`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` に移動します。
+  - [**参照の追加**] ダイアログボックスの [ **.net** ] タブにこれが表示されない場合は、[**参照**] タブをクリックし、に移動し `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` ます。
 
-- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject* `.Dsl.dll`。
+- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject* `.Dsl.dll` 。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL の重要なクラス
- DSL を読み取るコードを記述する前に、DSL によって生成されたいくつかのクラスの名前がわかっている必要があります。 DSL ソリューションで、 **dsl**プロジェクトを開き、[作成された**コード**] フォルダーを探します。 または、プロジェクト**参照**で dsl アセンブリをダブルクリックし、**オブジェクトブラウザー**で dsl 名前空間を開きます。
+ DSL を読み取るコードを記述する前に、DSL によって生成されたいくつかのクラスの名前がわかっている必要があります。 DSL ソリューションで、 **dsl** プロジェクトを開き、[作成された **コード** ] フォルダーを探します。 または、プロジェクト **参照**で dsl アセンブリをダブルクリックし、 **オブジェクトブラウザー**で dsl 名前空間を開きます。
 
  次のクラスを識別する必要があります。
 
-- 自分の*Dslrootclass* -`DslDefinition.dsl` 内のルートクラスの名前です。
+- *Dslrootclass* -これはのルートクラスの名前です `DslDefinition.dsl` 。
 
-- *Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトの `SerializationHelper.cs` で定義されています。
+- 自分の*Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトので定義されてい `SerializationHelper.cs` ます。
 
-- *Dslname* `DomainModel`-このクラスは、DSL プロジェクトの `DomainModel.cs` で定義されています。
+- 自分の*Dslname* `DomainModel`-このクラスは、DSL プロジェクトので定義されてい `DomainModel.cs` ます。
 
 ## <a name="reading-from-a-file"></a>ファイルからの読み取り
  次の例は、重要なクラスが次のような DSL を読み取るように設計されています。

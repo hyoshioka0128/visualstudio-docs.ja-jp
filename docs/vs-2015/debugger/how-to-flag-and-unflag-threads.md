@@ -1,5 +1,5 @@
 ---
-title: '方法: フラグを設定し、スレッドのフラグ解除 |Microsoft Docs'
+title: '方法: スレッドに対するフラグの設定と解除 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189433"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>方法: スレッドに対するフラグの設定と設定解除を行う
+# <a name="how-to-flag-and-unflag-threads"></a>方法 : スレッドに対するフラグの設定と設定解除を行う
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アイコンでマークすることによって、特に注目するスレッドのフラグを設定することができます、**スレッド**、**並列スタック**、**並列ウォッチ**、および**GPUスレッド**windows。 このアイコンにより、フラグが設定されているスレッドをそれ以外のスレッドと簡単に区別できるようになります。  
+[ **スレッド**]、[ **並列スタック**]、[ **並列ウォッチ**]、[ **GPU スレッド** ] の各ウィンドウでアイコンを使用してマークすることにより、特に注意するスレッドにフラグを付けることができます。 このアイコンにより、フラグが設定されているスレッドをそれ以外のスレッドと簡単に区別できるようになります。  
   
- フラグが設定されたスレッドは、特別な扱いも受信、**スレッド**ボックスの一覧、**デバッグの場所**ツールバー。 この一覧では、すべてのスレッドを表示することも、フラグが設定されたスレッドのみを表示することもできます。 スレッドのフラグを設定するときに、**スレッド**フラグが設定されたスレッドのみを表示するリストが自動的に切り替わりますが、切り替えることができます必要に応じてすべてのスレッドを表示します。  
+ フラグが設定されたスレッドは、[デバッグの**場所**] ツールバーの**スレッド**の一覧でも特別な処理を行います。 この一覧では、すべてのスレッドを表示することも、フラグが設定されたスレッドのみを表示することもできます。 スレッドにフラグを設定すると、 **スレッド** の一覧は、フラグが設定されたスレッドのみを表示するように自動的に切り替わりますが、必要に応じてすべてのスレッドを表示するように切り替えることができます。  
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>[スレッド] ウィンドウでスレッドに対するフラグを設定または解除するには  
   
-- **スレッド**ウィンドウで、興味のあるスレッドを検索し、選択するか、フラグをクリアするには、フラグ アイコンをクリックしています。  
+- [ **スレッド** ] ウィンドウで、目的のスレッドを見つけ、フラグアイコンをクリックしてフラグをオンまたはオフにします。  
   
 ### <a name="to-unflag-all-threads"></a>すべてのスレッドのフラグを解除するには  
   
@@ -60,6 +60,6 @@ ms.locfileid: "68189433"
   
 5. **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [チュートリアル: マルチスレッド アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+## <a name="see-also"></a>参照  
+ [マルチスレッドアプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [チュートリアル : マルチスレッド アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-multithreaded-application.md)

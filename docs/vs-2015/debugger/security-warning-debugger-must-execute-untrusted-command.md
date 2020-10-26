@@ -1,5 +1,5 @@
 ---
-title: セキュリティ警告:デバッガーは信頼されていないコマンドを実行する必要があります |Microsoft Docs
+title: セキュリティ警告:デバッガーで信頼されないコマンドを実行する必要があります | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683297"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>セキュリティ警告:デバッガーは信頼されないコマンドを実行する必要があります
@@ -36,7 +36,7 @@ ms.locfileid: "65683297"
  **このコマンドを実行しますか。**  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
- [テキスト ボックス]  
+ テキスト ボックス  
  実行する .pdb ファイルからのコマンド。  
   
  実行  
@@ -45,7 +45,7 @@ ms.locfileid: "65683297"
  [実行しない]  
  コマンドの実行およびソース サーバーからのファイルのダウンロードを停止します。  
   
-## <a name="see-also"></a>関連項目  
- [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>参照  
+ [シンボル (.pdb) とソースファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [ソース サーバー](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

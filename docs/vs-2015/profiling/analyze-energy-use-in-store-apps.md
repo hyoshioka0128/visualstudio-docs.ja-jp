@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82f5e6401ba65a0dfaffc268890ece0166432c08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532952"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>ストア アプリでのエネルギー使用の分析
@@ -26,7 +26,7 @@ ms.locfileid: "85532952"
 
 Visual Studio の **エネルギー消費** プロファイラーは、常時または一時的に内蔵バッテリで動作する低電力のタブレット デバイス上で、Windows ストア アプリによる電力とエネルギーの消費量を分析するのに役立ちます。 バッテリ電源デバイスでは、エネルギー消費量が多すぎるアプリはユーザーに嫌われ、最終的にアンインストールされる場合もあります。 エネルギー使用を最適化することで、ユーザーがそのアプリを選択する可能性が高まり、使用頻度も向上します。  
   
-## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a><a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a>エネルギー消費量プロファイラーの概要、しくみ、および測定対象  
+## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a><a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> エネルギー消費量プロファイラーの概要、しくみ、および測定対象  
  エネルギー消費プロファイラーは、プロファイル セッション中のデバイスのディスプレイ、CPU、およびネットワーク接続のアクティビティをキャプチャします。 次に、そのアクティビティに使用される電力と、プロファイル セッションのエネルギーの総量の見積もりを生成します。  
   
 > [!NOTE]
@@ -46,7 +46,7 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
   
   たとえば、タブレットの完全に充電されたバッテリには、一定量のエネルギーが蓄えられています。 エネルギーは、ネットワーク経由での通信、値の計算、グラフィックスの表示などのタスクを実行するために使用され、バッテリの電力が消費される速度もさまざまです。 一定の期間内に消費された総電力も、エネルギーで測定されます。  
   
-## <a name="identify-scenarios-with-user-marks"></a><a name="BKMK_Identify_scenarios_with_user_marks"></a>ユーザーマークを使用してシナリオを特定する  
+## <a name="identify-scenarios-with-user-marks"></a><a name="BKMK_Identify_scenarios_with_user_marks"></a> ユーザーマークを使用してシナリオを特定する  
  また、タイムライン ルーラーの領域を識別できるようにプロファイル データに *ユーザー マーク* を追加できます。  
   
  ![タイムラインでのユーザー マーク](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -75,7 +75,7 @@ if (performance && performance.mark) {
   
  *markDescription* は、ユーザー マークのツールヒントに表示されるメッセージを含む文字列です。  
   
-## <a name="configure-your-environment-for-profiling"></a><a name="BKMK_Configure_your_environment_for_profiling"></a>プロファイル用に環境を構成する  
+## <a name="configure-your-environment-for-profiling"></a><a name="BKMK_Configure_your_environment_for_profiling"></a> プロファイル用に環境を構成する  
  正確な見積もりを取得するために、バッテリが電源になっている低電力デバイス上でのアプリのエネルギー使用をプロファイリングします。 Visual Studio は、これらのほとんどのデバイス上で動作しないため、Visual Studio Remote Tools を使用して、Visual Studio コンピューターをデバイスに接続する必要があります。 リモート デバイスに接続するには、Visual Studio プロジェクトとリモート デバイスの両方を構成する必要があります。 詳しくは、「[リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」をご覧ください。  
   
 > [!TIP]
@@ -83,7 +83,7 @@ if (performance && performance.mark) {
 >   - プロファイリングは、ターゲット デバイスがバッテリ駆動されている間に行います。  
 >   - 同じリソース (ネットワーク、CPU、またはディスプレイ) を使用する可能性がある他のアプリを閉じます。  
   
-## <a name="collect-energy-profile-data-for-your-app"></a><a name="BKMK_Collect_energy_profile_data_for_your_app"></a>アプリのエネルギープロファイルデータを収集する  
+## <a name="collect-energy-profile-data-for-your-app"></a><a name="BKMK_Collect_energy_profile_data_for_your_app"></a> アプリのエネルギープロファイルデータを収集する  
   
 1. **[デバッグ]** メニューの **[デバッグなしで診断を開始]** をクリックします。  
   
@@ -102,7 +102,7 @@ if (performance && performance.mark) {
   
      Visual Studio が、収集したデータを分析し、結果を表示します。  
   
-## <a name="collect-energy-profile-data-for-an-installed-app"></a><a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>インストールされているアプリのエネルギープロファイルデータを収集する  
+## <a name="collect-energy-profile-data-for-an-installed-app"></a><a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> インストールされているアプリのエネルギープロファイルデータを収集する  
  エネルギー消費プロファイラーは、Visual Studio ソリューションから開始された Window 8.1 アプリまたは Windows ストアからインストールされた Window 8.1 アプリに対してのみ実行できます。 ソリューションを Visual Studio で開いている場合、既定のターゲットは **[スタートアップ プロジェクト]** です。 インストール済みアプリを対象とするには、以下の手順に従います。  
   
 1. **[ターゲットの変更]** をクリックし、 **[インストール済みのアプリ]** をクリックします。  
@@ -115,7 +115,7 @@ if (performance && performance.mark) {
   
    プロファイリングを停止するには、Visual Studio に戻り (Alt + Tab)、診断ハブのページの **[コレクションの停止]** をクリックします。  
   
-## <a name="analyze-energy-profile-data"></a><a name="BKMK_Analyze_energy_profile_data"></a>エネルギープロファイルデータの分析  
+## <a name="analyze-energy-profile-data"></a><a name="BKMK_Analyze_energy_profile_data"></a> エネルギープロファイルデータの分析  
  エネルギー プロファイル データは、Visual Studio のドキュメント ウィンドウに次のように表示されます。  
   
  ![エネルギー プロファイラー レポート ページ](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
@@ -133,7 +133,7 @@ if (performance && performance.mark) {
   
  リソースの電力がピークになっている領域を探します。 ピーク領域をアプリの機能に関連付けます。 次に、タイムラインのコントロール バーを使用して、その領域を拡大表示します。 ネットワーク使用量に注目している場合は、 **[リソース (オン/オフ)]** グラフの **[ネットワーク]**  ノードを展開して、ネットワーク接続が開かれていた時間とアプリがネットワーク経由でデータを受信または転送していた時間を比較します。 不必要にネットワークが開かれている時間を短縮することは、非常に有効な最適化です。  
   
-## <a name="optimize-energy-use"></a><a name="BKMK_Optimize_energy_use"></a>エネルギー使用の最適化  
+## <a name="optimize-energy-use"></a><a name="BKMK_Optimize_energy_use"></a> エネルギー使用の最適化  
  ネットワーク接続では、データ送信の他にも、接続の初期化、維持、およびシャットダウン時にエネルギー コストが発生します。 一部のネットワークでは、データの送受信後も一定期間接続を維持することで、1 つの接続でさらにデータを転送できるようになっています。 **[リソース (オン/オフ)]** ウィンドウを使用して、アプリが接続とどのように連係しているかを調べることができます。  
   
  ![[リソース &#40;オン&#47;オフ&#41;] ウィンドウ](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
@@ -144,7 +144,7 @@ if (performance && performance.mark) {
   
  ディスプレイのエネルギー コストは、あまり制御できません。 ほとんどの画面では、暗い色より明るい色を表示する際に多くのエネルギーが必要になるため、暗い背景を使用することはエネルギー コストを削減する方法の 1 つです。  
   
-## <a name="other-resources"></a><a name="BKMK_Other_resources"></a>その他のリソース  
+## <a name="other-resources"></a><a name="BKMK_Other_resources"></a> その他のリソース  
   
 - Windows デベロッパー センターの **C#/VB/C++ と XAML** および [JavaScript と HTML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) の「 [接続状態とコストの管理](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 」セクションでは、ネットワーク接続情報を提供する Windows API について説明しています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。  
   

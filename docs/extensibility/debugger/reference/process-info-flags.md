@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS |マイクロソフトドキュメント
+title: PROCESS_INFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713965"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
@@ -49,30 +49,30 @@ enum enum_PROCESS_INFO_FLAGS { 
 ## <a name="fields"></a>フィールド
 
 `PIFLAG_SYSTEM_PROCESS`\
-プロセスがシステム プロセスであることを示します。
+プロセスがシステムプロセスであることを示します。
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-プロセスがデバッガーによってデバッグされていることを示します。 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッガーである場合もあれば、WinDbg などの他のデバッガーである場合もあります。
+プロセスがデバッガーによってデバッグされていることを示します。 デバッガーの場合もあれば、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 他のデバッガー (WinDbg など) の場合もあります。
 
 `PIFLAG_PROCESS_STOPPED`\
-プロセスが停止したことを示します。 また指定されている`PIFLAG_DEBUGGER_ATTACHED`場合のみ有効です。 Visual Studio 2005 以降で使用できます。
+プロセスが停止されたことを示します。 が指定されている場合にのみ有効です `PIFLAG_DEBUGGER_ATTACHED` 。 Visual Studio 2005 以降で使用できます。
 
 `PIFLAG_PROCESS_RUNNING`\
-プロセスが実行中であることを示します。 また指定されている`PIFLAG_DEBUGGER_ATTACHED`場合のみ有効です。 Visual Studio 2005 以降で使用できます。
+プロセスが実行中であることを示します。 が指定されている場合にのみ有効です `PIFLAG_DEBUGGER_ATTACHED` 。 Visual Studio 2005 以降で使用できます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
-PROCESS_INFO構造体の`Flags`メンバーに使用[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)されます。
+`Flags` [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造体のメンバーに使用されます。
 
-これらのフラグはビット単位`OR`で組み合わせることができる。
+これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
 
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 

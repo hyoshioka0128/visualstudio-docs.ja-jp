@@ -10,10 +10,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903669"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタムスタートページの作成
@@ -22,7 +22,7 @@ ms.locfileid: "85903669"
 
 ## <a name="create-a-blank-start-page"></a>空白のスタートページを作成する
 
-最初に、Visual Studio が認識するタグ構造を持つ *.xaml*ファイルを作成して、空のスタートページを作成します。 次に、マークアップと分離コードを追加して、必要な外観と機能を生成します。
+最初に、Visual Studio が認識するタグ構造を持つ *.xaml* ファイルを作成して、空のスタートページを作成します。 次に、マークアップと分離コードを追加して、必要な外観と機能を生成します。
 
 1. **WPF アプリケーション**の種類の新しいプロジェクトを作成します (**Visual C#**  >  **Windows デスクトップ**)。
 
@@ -39,9 +39,9 @@ ms.locfileid: "85903669"
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
     ```
 
-     これらの名前空間を使用すると、Visual Studio のコマンド、コントロール、および UI の設定にアクセスできます。 詳細については、「[スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)」を参照してください。
+     これらの名前空間を使用すると、Visual Studio のコマンド、コントロール、および UI の設定にアクセスできます。 詳細については、「 [スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)」を参照してください。
 
-     次の例は、空のスタートページの *.xaml*ファイルのマークアップを示しています。 カスタムコンテンツは、内側の要素に含まれている必要があり <xref:System.Windows.Controls.Grid> ます。
+     次の例は、空のスタートページの *.xaml* ファイルのマークアップを示しています。 カスタムコンテンツは、内側の要素に含まれている必要があり <xref:System.Windows.Controls.Grid> ます。
 
     ```vb
     <UserControl
@@ -61,7 +61,7 @@ ms.locfileid: "85903669"
     </UserControl>
     ```
 
-6. 空の要素にコントロールを追加し \<UserControl> て、カスタムスタートページに入力します。 Visual Studio に固有の機能を追加する方法の詳細については、「[スタートページへの Visual studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)」を参照してください。
+6. 空の要素にコントロールを追加し \<UserControl> て、カスタムスタートページに入力します。 Visual Studio に固有の機能を追加する方法の詳細については、「 [スタートページへの Visual studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)」を参照してください。
 
 ## <a name="test-and-apply-the-custom-start-page"></a>カスタムスタートページのテストと適用
 

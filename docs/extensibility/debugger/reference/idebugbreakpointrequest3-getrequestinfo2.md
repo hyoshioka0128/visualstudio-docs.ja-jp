@@ -1,5 +1,5 @@
 ---
-title: をクリックしてブレークポイントを要求3::要求情報 2 を取得する |マイクロソフトドキュメント
+title: 'IDebugBreakpointRequest3:: GetRequestInfo2 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f5febf664da9cd69dbd88b70056d9eac953bf581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734836"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
@@ -43,16 +43,16 @@ int GetRequestInfo2(
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]BPREQI_FIELDS[列挙体](../../../extensibility/debugger/reference/bpreqi-fields.md)のフラグの組み合わせで、どの`pBPRequestInfo`フィールドに値を入力するかを決定します。
+からに入力するフィールドを決定する、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列挙のフラグの組み合わせ `pBPRequestInfo` 。
 
 `bBPRequestInfo`\
-[アウト]入力する[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造。
+入出力入力する [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 構造体。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- この要求には[、GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)メソッドから返される情報よりも多くの情報があります。
+## <a name="remarks"></a>解説
+ この要求には、 [Getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) メソッドから返された情報よりも詳細な情報があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)

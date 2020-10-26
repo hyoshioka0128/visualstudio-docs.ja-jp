@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154757"
 ---
 # <a name="launch"></a>Launch
@@ -36,13 +36,13 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>有効なオプション  
  **Launch** オプションと組み合わせて単一コマンド ラインで指定できる VSPerfCmd オプションを以下に示します。  
   
- **Start:** `Method`  
+ **開始:**`Method`  
  コマンド ライン プロファイラー セッションを初期化し、指定されたプロファイル方法を設定します。  
   
- **GlobalOn** と **GlobalOff**  
+ **Globalon** と **GlobalOff**  
  プロファイリングを再開 (**GlobalOn**) または一時停止 (**GlobalOff**) しますが、プロファイル セッションは終了しません。  
   
- **ProcessOn:** `PID` および **ProcessOff**:`PID`  
+ **Processon:** `PID`**ProcessOff**:`PID`  
  指定されたプロセスのプロファイリングを再開 (**ProcessOn**) または一時停止 (**ProcessOff**) します。  
   
  **TargetCLR**  
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **コンソール**  
  指定されたコマンド ライン アプリケーションを新しいウィンドウで起動します。  
   
- **Args:** `ArgList`  
+ **Args:**`ArgList`  
  アプリケーションに渡す引数リストを指定します。  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>サンプリングのオプション  
  **Launch** コマンド ラインでは、次のサンプリング間隔オプションのいずれかを指定できます。 既定のサンプリング間隔は、10,000,000 プロセッサ クロック サイクルです。  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**Sys**[**:** `Events` ]**カウンター**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**割り当て**&#124;**有効期間**]  
  サンプリング間隔の数値と種類を指定します。  
   
 - **Timer** - `Cycles` のプロセッサ クロック サイクル (停止なし) ごとにサンプリングを行います。 `Cycles` が指定されていない場合、10,000,000 サイクルが使用されます。  
@@ -84,8 +84,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

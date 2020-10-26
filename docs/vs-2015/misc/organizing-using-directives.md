@@ -13,11 +13,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: fba37e15cfef218d680edbab7909fe774d823c46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62822527"
 ---
 # <a name="organizing-using-directives"></a>using ディレクティブの整理
-このコンテンツに移動[Visual c# IntelliSense](../ide/visual-csharp-intellisense.md)します。
+このコンテンツは「 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)」に移動しました。

@@ -1,5 +1,5 @@
 ---
-title: メッセージ オプション ダイアログ ボックス |Microsoft Docs
+title: '[メッセージ オプション] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5aaf79478ba84d87d3dc6d7868bdb13ee0168f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198189"
 ---
 # <a name="message-options-dialog-box"></a>[メッセージ オプション] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このダイアログ ボックスを使用して、メッセージは、「[メッセージ ビュー](../debugger/messages-view.md)します。 このダイアログ ボックスを表示するには、次のように選択します。**ログ メッセージ**から、**スパイ**メニュー。  
+このダイアログ ボックスを使用して、[[メッセージ ビュー]](../debugger/messages-view.md) に一覧表示されるメッセージを選択します。 このダイアログ ボックスを表示するには、 **[Spy]** メニューから **[ログ メッセージ]** を選択します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [[ウィンドウ] タブ ([メッセージ オプション] ダイアログ ボックス)](../debugger/windows-tab-message-options-dialog-box.md)  
@@ -32,26 +32,26 @@ ms.locfileid: "68198189"
  表示するメッセージの種類を選択するために使用します。  
   
  [[出力] タブ ([メッセージ オプション] ダイアログ ボックス)](../debugger/output-tab-message-options-dialog-box.md)  
- 表示するには、どのようなメッセージ データを指定するために使用します。  
+ 表示するメッセージデータを指定するために使用します。  
   
 ## <a name="related-sections"></a>関連項目  
  [[メッセージ検索] ダイアログ ボックス](../debugger/message-search-dialog-box.md)  
- メッセージ ビューで特定のメッセージのノードを検索するために使用します。  
+ メッセージビューで特定のメッセージのノードを検索するために使用します。  
   
  [[メッセージ プロパティ] ダイアログ ボックス](../debugger/message-properties-dialog-box.md)  
- メッセージ ビューで選択したメッセージのプロパティを表示するために使用します。  
+ メッセージビューで選択されたメッセージのプロパティを表示するために使用します。  
   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
- 各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。  
+ 各 Spy + + メニューおよびダイアログボックスについて説明するセクションが含まれています。  
   
- [メッセージ ビューでメッセージの検索](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- メッセージ ビューで、特定のメッセージを検索する方法について説明します。  
+ [メッセージビューでのメッセージの検索](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ メッセージビューで特定のメッセージを検索する方法について説明します。  
   
  [メッセージ ビュー](../debugger/messages-view.md)  
- ウィンドウ、プロセス、またはスレッドに関連付けられているメッセージのストリームを表示します。  
+ ウィンドウ、プロセス、またはスレッドに関連付けられているメッセージストリームを表示します。  
   
  [Spy++ ビュー](../debugger/spy-increment-views.md)  
- Windows、メッセージ、プロセス、およびスレッドの spy++ ツリー ビューについて説明します。  
+ Windows、メッセージ、プロセス、およびスレッドの Spy + + ツリービューについて説明します。  
   
  [Spy++ の使用](../debugger/using-spy-increment.md)  
- Spy++ ツールを紹介し、使用方法について説明します。
+ Spy + + ツールの概要と、その使用方法について説明します。

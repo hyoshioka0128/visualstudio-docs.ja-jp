@@ -1,5 +1,5 @@
 ---
-title: ドキュメント イベント2::取得ドキュメント コンテキスト |マイクロソフトドキュメント
+title: 'IDebugActivateDocumentEvent2:: GetDocumentContext |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b1b68c10c290dcf685e1eaa5fef907e27be7452f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736630"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-デバッグ パッケージによってアクティブにされるドキュメント内の位置を記述するドキュメント コンテキストを取得します。
+デバッグパッケージによってアクティブになるドキュメント内の位置を記述するドキュメントコンテキストを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,13 +42,13 @@ int GetDocumentContext ( 
 
 ## <a name="parameters"></a>パラメーター
 `ppDocContext`\
-[アウト]ソース ファイル ドキュメント内の位置を表す[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)オブジェクトを返します。
+入出力ソースファイルドキュメント内の位置を表す [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) オブジェクトを返します。
 
-## <a name="remarks"></a>Remarks
- この位置は、キャレットを表示するために使用される場合があります。
+## <a name="remarks"></a>解説
+ たとえば、この位置を使用してカレットを表示できます。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)

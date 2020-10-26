@@ -1,5 +1,5 @@
 ---
-title: Iデバッグプロセス3::ゲットエンジンフィルター |マイクロソフトドキュメント
+title: 'IDebugProcess3:: GetEngineFilter |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a3f22a55b9a02f567b2f5ab353d4b15ac9532fdb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723637"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
-使用可能なデバッグ エンジンの一意の識別子の配列を取得します。
+使用可能なデバッグエンジンの一意の識別子の配列を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,10 +40,10 @@ public int GetEngineFilter(
 
 ## <a name="parameters"></a>パラメーター
 `pEngineArray`\
-[アウト]デバッグ エンジンの一意の識別子を含む構造体への参照。
+入出力デバッグエンジンの一意の識別子を含む構造体への参照。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

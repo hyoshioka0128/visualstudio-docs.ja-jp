@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7526da10262003c9d086fdf1d74d065aac2d406
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664127"
 ---
 # <a name="shader-designer-nodes"></a>シェーダー デザイナー ノード
@@ -47,8 +47,8 @@ ms.locfileid: "72664127"
 |Title|説明|
 |-----------|-----------------|
 |[定数ノード](../designers/constant-nodes.md)|シェーダーの計算でリテラル値および補間された頂点状態の情報を表すために使うことができるノードについて説明します。 頂点状態は補間され、ピクセルごとに異なるので、各ピクセル シェーダー インスタンスは異なるバージョンの定数を受け取ります。|
-|[パラメーター ノード](../designers/parameter-nodes.md)|シェーダーの計算でカメラの位置、素材のプロパティ、ライティング パラメーター、時刻、およびその他のアプリの状態情報を表すために使うことができるノードについて説明します。|
-|[テクスチャ ノード](../designers/texture-nodes.md)|さまざまなテクスチャの種類とジオメトリのサンプリング、および一般的な方法でのテクスチャ座標の生成または変換に使うことができるノードについて説明します。|
+|[パラメーターノード](../designers/parameter-nodes.md)|シェーダーの計算でカメラの位置、素材のプロパティ、ライティング パラメーター、時刻、およびその他のアプリの状態情報を表すために使うことができるノードについて説明します。|
+|[テクスチャノード](../designers/texture-nodes.md)|さまざまなテクスチャの種類とジオメトリのサンプリング、および一般的な方法でのテクスチャ座標の生成または変換に使うことができるノードについて説明します。|
 |[数値演算ノード](../designers/math-nodes.md)|HLSL の命令に直接マップする、代数演算、論理演算、三角関数演算、その他の算術演算を実行するために使うことができるノードについて説明します。|
-|[ユーティリティ ノード](../designers/utility-nodes.md)|HLSL の命令に直接マップしない、一般的なライティング計算や他の一般的な演算を実行するために使うことができるノードについて説明します。|
-|[フィルター ノード](../designers/filter-nodes.md)|テクスチャ フィルター処理とカラー フィルター処理の実行に使うことができるノードについて説明します。|
+|[ユーティリティノード](../designers/utility-nodes.md)|HLSL の命令に直接マップしない、一般的なライティング計算や他の一般的な演算を実行するために使うことができるノードについて説明します。|
+|[ノードのフィルター](../designers/filter-nodes.md)|テクスチャ フィルター処理とカラー フィルター処理の実行に使うことができるノードについて説明します。|

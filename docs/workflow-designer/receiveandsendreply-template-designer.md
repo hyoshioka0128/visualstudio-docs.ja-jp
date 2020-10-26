@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66822664766ac64e466882fda27906f56ebb4aad
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876009"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply テンプレート デザイナー
@@ -34,7 +34,7 @@ ms.locfileid: "86876009"
 
 ### <a name="use-the-receiveandsendreply-template-designer"></a>ReceiveAndSendReply テンプレートデザイナーを使用する
 
-[**ツールボックス**] の [**メッセージング**] カテゴリで、 **receiveandsendreply**アクティビティデザイナーにアクセスします。 **Receiveandsendreply**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所でワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除する <xref:System.ServiceModel.Activities.Receive> と、 **Send**アクティビティデザイナーで構成できるアクティビティと、 <xref:System.ServiceModel.Activities.SendReply> SendReplyToReceive デザイナーで構成できる相関が作成されます。
+[**ツールボックス**] の [**メッセージング**] カテゴリで、 **receiveandsendreply**アクティビティデザイナーにアクセスします。 **Receiveandsendreply**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所でワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除する <xref:System.ServiceModel.Activities.Receive> と、 **Send** アクティビティデザイナーで構成できるアクティビティと、 <xref:System.ServiceModel.Activities.SendReply> SendReplyToReceive デザイナーで構成できる相関が作成されます。
 
 **Receive** designer を使用してアクティビティを構成する方法の詳細について <xref:System.ServiceModel.Activities.Receive> は、「 [receive アクティビティデザイナー](../workflow-designer/receive-activity-designer.md)」を参照してください。
 
@@ -42,16 +42,16 @@ ms.locfileid: "86876009"
 
 次の表に、<xref:System.ServiceModel.Activities.SendReply> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、[プロパティ] グリッドで編集できます。また、一部のプロパティは、ワークフローデザイナー画面で編集できます。
 
-| プロパティ名 | 必須 | 使用 |
+| プロパティ名 | 必須 | 使用法 |
 |-|----------|-|
-| <xref:System.Activities.Activity.DisplayName%2A> | 誤り | <xref:System.ServiceModel.Activities.SendReply> アクティビティの省略可能な表示名。 既定値は SendReplyToReceive です。<br /><br /> フレンドリに既定値以外の値を使用 <xref:System.Activities.Activity.DisplayName%2A> することは、厳密には必須ではありませんが、このような値を使用することをお勧めします。 |
-| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | 正しい | この <xref:System.ServiceModel.Activities.Receive> アクティビティと関連付けられる <xref:System.ServiceModel.Activities.SendReply> アクティビティへの参照。 このプロパティを**null**にすることはできません。 <xref:System.ServiceModel.Activities.Receive>と <xref:System.ServiceModel.Activities.SendReply> アクティビティは、要求/応答メッセージングパターンをモデル化するために、サーバー上で一緒に使用されます。 このプロパティでは、関連付ける <xref:System.ServiceModel.Activities.Send> アクティビティを指定します。 デザイナーでは、アクティビティを作成したアクティビティに自動的にバインドされるため、このプロパティを編集することはできません <xref:System.ServiceModel.Activities.Send> <xref:System.ServiceModel.Activities.SendReply> 。 |
-| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | 誤り | 受信するメッセージまたはパラメーターの内容を指定します。 <xref:System.ServiceModel.Activities.ReceiveMessageContent> アクティビティまたは <xref:System.ServiceModel.Activities.ReceiveParametersContent> アクティビティを指定できます。 このプロパティを編集するには、プロパティグリッドで**コンテンツ**フィールドの横にある省略記号ボタンをクリックするか、 **Receive**アクティビティデザイナー画面で [**コンテンツ**] ラベルの横にある [**定義**] ボタンをクリックします。 どちらの場合も、[**コンテンツ定義**] ダイアログボックスが表示されます。 このボックスの使用方法の詳細については、「[[コンテンツ定義] ダイアログボックス](../workflow-designer/content-definition-dialog-box.md)」を参照してください。 |
-| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | 誤り | ワークフロー内のこの <xref:System.ServiceModel.Activities.CorrelationInitializer> アクティビティを構成する複数の <xref:System.ServiceModel.Activities.CorrelationHandle> オブジェクトを初期化する <xref:System.ServiceModel.Activities.Receive> オブジェクトのコレクションを指定します。 プロパティグリッドでプロパティの横にある省略記号ボタンをクリックして <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> 、[**関連付け初期化子の追加**] ダイアログボックスを開きます。 このボックスの使用方法の詳細については、「[ [CorrelationInitializers の追加] ダイアログボックス](../workflow-designer/add-correlationinitializers-dialog-box.md)」を参照してください。 |
-| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | 誤り | メッセージのアクション ヘッダーを指定します。 明示的に設定されていない場合、その値の既定値は次のようになります。<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` |
-| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | 誤り | 応答メッセージを送信する前にワークフロー サービス インスタンスを永続化するかどうかを指定します。 既定値は **false** です。 |
+| <xref:System.Activities.Activity.DisplayName%2A> | × | <xref:System.ServiceModel.Activities.SendReply> アクティビティの省略可能な表示名。 既定値は SendReplyToReceive です。<br /><br /> フレンドリに既定値以外の値を使用 <xref:System.Activities.Activity.DisplayName%2A> することは、厳密には必須ではありませんが、このような値を使用することをお勧めします。 |
+| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | ○ | この <xref:System.ServiceModel.Activities.Receive> アクティビティと関連付けられる <xref:System.ServiceModel.Activities.SendReply> アクティビティへの参照。 このプロパティを **null**にすることはできません。 <xref:System.ServiceModel.Activities.Receive> と <xref:System.ServiceModel.Activities.SendReply> アクティビティは、要求/応答メッセージングパターンをモデル化するために、サーバー上で一緒に使用されます。 このプロパティでは、関連付ける <xref:System.ServiceModel.Activities.Send> アクティビティを指定します。 デザイナーでは、アクティビティを作成したアクティビティに自動的にバインドされるため、このプロパティを編集することはできません <xref:System.ServiceModel.Activities.Send> <xref:System.ServiceModel.Activities.SendReply> 。 |
+| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | × | 受信するメッセージまたはパラメーターの内容を指定します。 <xref:System.ServiceModel.Activities.ReceiveMessageContent> アクティビティまたは <xref:System.ServiceModel.Activities.ReceiveParametersContent> アクティビティを指定できます。 このプロパティを編集するには、プロパティグリッドで**コンテンツ**フィールドの横にある省略記号ボタンをクリックするか、 **Receive**アクティビティデザイナー画面で [**コンテンツ**] ラベルの横にある [**定義**] ボタンをクリックします。 どちらの場合も、[ **コンテンツ定義** ] ダイアログボックスが表示されます。 このボックスの使用方法の詳細については、「[ [コンテンツ定義] ダイアログボックス](../workflow-designer/content-definition-dialog-box.md) 」を参照してください。 |
+| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | × | ワークフロー内のこの <xref:System.ServiceModel.Activities.CorrelationInitializer> アクティビティを構成する複数の <xref:System.ServiceModel.Activities.CorrelationHandle> オブジェクトを初期化する <xref:System.ServiceModel.Activities.Receive> オブジェクトのコレクションを指定します。 プロパティグリッドでプロパティの横にある省略記号ボタンをクリックして <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> 、[ **関連付け初期化子の追加** ] ダイアログボックスを開きます。 このボックスの使用方法の詳細については、「[ [CorrelationInitializers の追加] ダイアログボックス](../workflow-designer/add-correlationinitializers-dialog-box.md) 」を参照してください。 |
+| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | × | メッセージのアクション ヘッダーを指定します。 明示的に設定されていない場合、その値の既定値は次のようになります。<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` |
+| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | × | 応答メッセージを送信する前にワークフロー サービス インスタンスを永続化するかどうかを指定します。 既定値は **false** です。 |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

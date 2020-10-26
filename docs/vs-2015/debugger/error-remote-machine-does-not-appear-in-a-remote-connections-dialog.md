@@ -1,5 +1,5 @@
 ---
-title: エラー :リモート コンピューターがリモート接続 ダイアログに表示されません |Microsoft Docs
+title: エラー :リモート コンピューターが [リモート接続] ダイアログに表示されない | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a97211c1fa86123a2a7a65f2ff86b0cecac957dc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697326"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>エラー :リモート コンピューターが [リモート接続] ダイアログに表示されません
@@ -26,7 +26,7 @@ ms.locfileid: "65697326"
 
 リモート コンピューターが [リモート接続] ダイアログ ボックスに表示されない場合、下記の一般的な原因を確認してください。  
   
- マネージ互換モードを使用している場合は、Visual Studio 2010 のドキュメントをご覧ください。[トラブルシューティング (リモート デバッグ) - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx)します。  
+ マネージド互換モードを使用している場合は、Visual Studio 2010 用のマニュアルの「 [リモート デバッグのトラブルシューティング - Visual Studio 2010](https://msdn.microsoft.com/library/2ys11ead\(v=vs.100\).aspx) 」を調べてください。  
   
 ### <a name="common-causes-for-this-error"></a>このエラーの一般的な原因  
   
@@ -38,5 +38,5 @@ ms.locfileid: "65697326"
   
 - ウイルス対策ソフトウェアで、Visual Studio とリモート コンピューター間の通信がブロックされています。 これを解決するには、Visual Studio とリモート デバッガー (msvsmon) の通信を許可するようにウイルス対策ソフトウェアを構成します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバイスのリモート ツールのセットアップ](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

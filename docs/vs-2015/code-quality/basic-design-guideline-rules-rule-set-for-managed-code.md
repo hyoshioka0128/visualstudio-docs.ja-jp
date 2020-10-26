@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: cefe4864db8455ba6712dc728b342f49b6c7d5d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655120"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>マネージド コードの "基本デザイン ガイドライン規則" 規則セット
@@ -21,11 +21,11 @@ ms.locfileid: "72655120"
 
 Microsoft の "基本デザインガイドライン規則" 規則セットを使用して、コードの理解と使用を容易にすることができます。 この規則セットは、プロジェクトにライブラリコードが含まれている場合や、保守が簡単なコードにベストプラクティスを適用する場合に使用してください。
 
- 基本的な設計ガイドラインの規則には、Microsoft の最小の規則の規則セット内のすべての規則が含まれます。 最小規則の一覧については、「マネージ[コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」を参照してください。
+ 基本的な設計ガイドラインの規則には、Microsoft の最小の規則の規則セット内のすべての規則が含まれます。 最小規則の一覧については、「マネージ [コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」を参照してください。
 
  次の表では、Microsoft 基本デザインガイドライン規則の規則セットに含まれるすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|

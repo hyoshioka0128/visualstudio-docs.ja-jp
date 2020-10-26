@@ -35,7 +35,7 @@ Microsoft は、あらゆるユーザーの皆様に使いやすい製品とサ�
 > [!IMPORTANT]
 > このページの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されることがあります。 米国外でこの製品を入手した場合には、[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/) サイトにアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このページで説明されている製品とサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が他の言語で参照できます。
 
-## <a name="windows"></a> Windows のユーザー補助機能
+## <a name="accessibility-features-of-windows"></a><a name="windows"></a> Windows のユーザー補助機能
 
 Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)を参照してください。
 
@@ -51,7 +51,7 @@ Microsoft 製品のステップバイステップ チュートリアルを参照
 
 ユーザー補助技術を使用する場合には、ユーザー補助技術製品の販売元に連絡し、ソフトウェアおよびハードウェアの互換性について確認してからアップグレードしてください。
 
-## <a name="altfortmats"></a> 代替形式のドキュメント
+## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a> 代替形式のドキュメント
 
 印刷形式のドキュメントの判読または取り扱いが困難な方のために、多くの Microsoft 製品については、いっそう利用しやすい形式でのドキュメントが用意されています。 ユーザー補助技術製品の索引が、[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)に示されています。
 
@@ -62,7 +62,7 @@ Microsoft 製品のステップバイステップ チュートリアルを参照
 
 Web アドレスは変更される可能性があるため、ここで示した Web サイトに接続できない場合があります。
 
-## <a name="hearing"></a> 聴覚障碍者のためのカスタマー サービス
+## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a> 聴覚障碍者のためのカスタマー サービス
 
 聴覚に障碍がある方は、文字電話 (TTY/TDD) サービスをとおしてマイクロソフト プロダクト サポート サービスおよびカスタマー サービスのすべての情報を利用できます。
 
@@ -72,7 +72,7 @@ Web アドレスは変更される可能性があるため、ここで示した 
 
 Microsoft Support Services は、サービスを利用された時点における Microsoft 規定の料金および条件に従って提供されます。
 
-## <a name="moreinfo"></a> 詳細情報
+## <a name="for-more-information"></a><a name="moreinfo"></a> 詳細情報
 
 コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかに関する詳細については、[マイクロソフト アクセシビリティ ホーム](https://www.microsoft.com/accessibility/)を参照してください。
 

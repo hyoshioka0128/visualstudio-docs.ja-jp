@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536332"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011958"
 ---
 # <a name="image-service-and-catalog"></a>イメージサービスとカタログ
 このクックブックには、visual studio イメージサービスと Visual Studio 2015 で導入されたイメージカタログを採用するためのガイダンスとベストプラクティスが含まれています。
@@ -104,7 +104,7 @@ ms.locfileid: "85536332"
 |**サブ要素**|**定義**|
 |-|-|
 |インポート|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
-|GUID|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|
+|Guid|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|
 |id|シンボルは ID を表し、負でない整数である必要があります|
 |String|シンボルは任意の文字列値を表します。|
 
@@ -143,7 +143,7 @@ ms.locfileid: "85536332"
 
 |**属性**|**定義**|
 |-|-|
-|GUID|必要イメージモニカーの GUID 部分|
+|Guid|必要イメージモニカーの GUID 部分|
 |id|必要イメージモニカーの ID 部分|
 |AllowColorInversion|[省略可能、既定値は true]画像の色を、濃色の背景で使用するときにプログラムによって反転するかどうかを示します。|
 
@@ -160,7 +160,7 @@ ms.locfileid: "85536332"
 |**属性**|**定義**|
 |-|-|
 |Uri|必要イメージの読み込み元となる場所を定義する URI。 次のいずれかを指定できます。<br /><br /> -Application:///機関を使用する[パック URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br />-コンポーネントの絶対リソース参照<br />-ネイティブリソースを含むファイルへのパス|
-|バックグラウンド|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> *ダーク:* ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark**の場合*、ソースの色は反転されません。 Background が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。|
+|バックグラウンド|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> *ライト:* 光源は、ライトバックで使用できます。<br /><br /> *ダーク:* ソースは、ダーク背景で使用できます。<br /><br /> *Systeminformation.highcontrast:* ソースは、ハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> *HighContrastLight:* ソースは、ハイコントラストモードのライトバックで使用できます。<br /><br /> *HighContrastDark:* ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> Background 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> Background、 *Dark*、 *HighContrastLight*、または*HighContrastDark**の場合*、ソースの色は反転されません。 Background が省略されている場合、または *systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの **allowcolorinversion** 属性によって制御されます。|
 
 \<Source>要素は、次の省略可能なサブ要素のうち1つだけを持つことができます。
 
@@ -195,7 +195,7 @@ ms.locfileid: "85536332"
 
 |**属性**|**定義**|
 |-|-|
-|GUID|必要イメージモニカーの GUID 部分|
+|Guid|必要イメージモニカーの GUID 部分|
 |id|必要イメージモニカーの ID 部分|
 |外部|[省略可能、既定値は false]イメージモニカーが現在のマニフェスト内のイメージを参照しているかどうかを示します。|
 
@@ -212,19 +212,19 @@ ms.locfileid: "85536332"
 
 - *Microsoft.VisualStudio.Imaging.dll*
 
-  - WPF UI で**CrispImage**と**imageのユーティリティ**を使用する場合に必要です。
+  - WPF UI で **CrispImage** と **imageのユーティリティ** を使用する場合に必要です。
 
 - *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
 
   - **ImageMoniker**および**ImageAttributes**型を使用する場合は必須です。
 
-  - **EmbedInteropTypes**は true に設定する必要があります。
+  - **EmbedInteropTypes** は true に設定する必要があります。
 
 - *VisualStudio. 14.0. デザイン時.*
 
   - **IVsImageService2**型を使用する場合は必須です。
 
-  - **EmbedInteropTypes**は true に設定する必要があります。
+  - **EmbedInteropTypes** は true に設定する必要があります。
 
 - *Microsoft.VisualStudio.Utilities.dll*
 
@@ -238,7 +238,7 @@ ms.locfileid: "85536332"
 
   - WinForms 関連の UI ヘルパーを使用する場合は必須です。
 
-  - **EmbedInteropTypes**を true に設定する必要があります。
+  - **EmbedInteropTypes** を true に設定する必要があります。
 
 ### <a name="first-steps-native"></a>最初の手順 (ネイティブ)
  イメージサービスを使用するには、次のヘッダーの一部またはすべてをプロジェクトに含める必要があります。
@@ -287,7 +287,7 @@ ms.locfileid: "85536332"
 
 3. **CrispImages**を XAML に追加します。 (以下の例を参照してください)。
 
-4. UI 階層で**ImageBackgroundColor**プロパティを設定します。 (これは、必ずしも**CrispImage**ではなく、背景色が既知の場所に設定する必要があります)。(以下の例を参照してください)。
+4. UI 階層で **ImageBackgroundColor** プロパティを設定します。 (これは、必ずしも **CrispImage**ではなく、背景色が既知の場所に設定する必要があります)。(以下の例を参照してください)。
 
 ```xaml
 <Window
@@ -317,15 +317,15 @@ ms.locfileid: "85536332"
 
 2. すべてのソース属性をモニカー属性に変更します。
 
-    - イメージが変更されず、 **Knownmonikers**を使用している場合は、そのプロパティを**knownmonikers**に静的にバインドします。 (上記の例を参照してください)。
+    - イメージが変更されず、 **Knownmonikers**を使用している場合は、そのプロパティを **knownmonikers**に静的にバインドします。 (上記の例を参照してください)。
 
     - イメージが変更されず、独自のカスタムイメージを使用している場合は、独自のモニカーに静的にバインドします。
 
     - イメージが変更可能な場合は、プロパティの変更を通知するコードプロパティにモニカー属性をバインドします。
 
-3. UI 階層内の任意の場所で、 **ImageBackgroundColor**を設定して、色の反転が正しく機能することを確認します。
+3. UI 階層内の任意の場所で、 **ImageBackgroundColor** を設定して、色の反転が正しく機能することを確認します。
 
-    - このためには、 **BrushToColorConverter**クラスの使用が必要になることがあります。 (上記の例を参照してください)。
+    - このためには、 **BrushToColorConverter** クラスの使用が必要になることがあります。 (上記の例を参照してください)。
 
 ## <a name="how-do-i-update-win32-ui"></a>Win32 UI 操作方法更新しますか?
  適切な場所にあるコードに次のコードを追加して、イメージの未加工の読み込みを置き換えます。 必要に応じて HBITMAPs、Hbitmaps、HBITMAPS を返す値を切り替えます。
@@ -461,7 +461,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>新しいツールウィンドウでイメージモニカーを使用操作方法には
- VSIX パッケージプロジェクトテンプレートが Visual Studio 2015 用に更新されました。 新しいツールウィンドウを作成するには、VSIX プロジェクトを右クリックし、 **Add**[  >  **新しい項目**の追加] (**Ctrl** + **Shift** + **a**) を選択します。 プロジェクト言語の [機能拡張] ノードで、[**カスタムツールウィンドウ**] を選択し、ツールウィンドウに名前を付けて、[**追加**] をクリックします。
+ VSIX パッケージプロジェクトテンプレートが Visual Studio 2015 用に更新されました。 新しいツールウィンドウを作成するには、VSIX プロジェクトを右クリックし、 **Add**[  >  **新しい項目**の追加] (**Ctrl** + **Shift** + **a**) を選択します。 プロジェクト言語の [機能拡張] ノードで、[ **カスタムツールウィンドウ**] を選択し、ツールウィンドウに名前を付けて、[ **追加** ] をクリックします。
 
  これらは、ツールウィンドウでモニカーを使用するための重要な場所です。 それぞれの手順に従います。
 
@@ -476,7 +476,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 2. ツールウィンドウを開くコマンド。
 
-    パッケージの*vsct*ファイルで、ツールウィンドウのコマンドボタンを編集します。
+    パッケージの *vsct* ファイルで、ツールウィンドウのコマンドボタンを編集します。
 
    ```xml
    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">
@@ -513,7 +513,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
    - 「新しいツールウィンドウでイメージモニカーを使用する操作方法」の手順 #2 を参照してください。 セクションを参照してください。
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>操作方法、vsct ファイルでイメージモニカーを使用しますか。
- 次のコメント行に示されているように、 *vsct*ファイルを更新します。
+ 次のコメント行に示されているように、 *vsct* ファイルを更新します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -555,7 +555,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  **以前のバージョンの Visual Studio でも、vsct ファイルを読み取る必要がある場合はどうすればよいでしょうか。**
 
- 以前のバージョンの Visual Studio では、 **Iconismoniker**コマンドフラグは認識されません。 イメージサービスのイメージは、それをサポートするバージョンの Visual Studio で使用できますが、以前のバージョンの Visual Studio では引き続き古い形式のイメージを使用できます。 これを行うには、(そのため、以前のバージョンの Visual Studio と互換性がある) *vsct*ファイルを変更せずに、 *vsct*ファイルの要素で定義されている guid と id のペアから \<Bitmaps> イメージモニカー guid/ID ペアにマップする CSV (コンマ区切り値) ファイルを作成します。
+ 以前のバージョンの Visual Studio では、 **Iconismoniker** コマンドフラグは認識されません。 イメージサービスのイメージは、それをサポートするバージョンの Visual Studio で使用できますが、以前のバージョンの Visual Studio では引き続き古い形式のイメージを使用できます。 これを行うには、(そのため、以前のバージョンの Visual Studio と互換性がある) *vsct* ファイルを変更せずに、 *vsct* ファイルの要素で定義されている guid と id のペアから \<Bitmaps> イメージモニカー guid/ID ペアにマップする CSV (コンマ区切り値) ファイルを作成します。
 
  マッピング CSV ファイルの形式は次のとおりです。
 
@@ -580,7 +580,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 2. **VSHPROPID_IconMonikerImageList** (元のプロジェクトが**VSHPROPID_IconImgList**使用されている場合) または**VSHPROPID_IconMonikerGuid**、 **VSHPROPID_IconMonikerId**、 **VSHPROPID_OpenFolderIconMonikerGuid**、 **VSHPROPID_OpenFolderIconMonikerId**を実装します (元のプロジェクトが**VSHPROPID_IconHandle**と**VSHPROPID_OpenFolderIconHandle**を使用していた場合)。
 
-3. 拡張ポイントが要求した場合、アイコンの元の VSHPROPIDs の実装を変更して、アイコンの "レガシ" バージョンを作成します。 **IVsImageService2**は、これらのアイコンを取得するために必要な機能を提供します。
+3. 拡張ポイントが要求した場合、アイコンの元の VSHPROPIDs の実装を変更して、アイコンの "レガシ" バージョンを作成します。 **IVsImageService2** は、これらのアイコンを取得するために必要な機能を提供します。
 
    **VB/C# プロジェクトフレーバーの追加要件**
 
@@ -596,9 +596,9 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    **ImageMonikers を手動で使用する**
 
-4. プロジェクトシステムに**Iprojecttreemodifier**インターフェイスを実装してエクスポートします。
+4. プロジェクトシステムに **Iprojecttreemodifier** インターフェイスを実装してエクスポートします。
 
-5. 使用する**knownmoniker**またはカスタムイメージモニカーを決定します。
+5. 使用する **knownmoniker** またはカスタムイメージモニカーを決定します。
 
 6. **Applymodifications**メソッドで、次の例のように、新しいツリーを返す前に、メソッドのどこかで次の操作を実行します。
 
@@ -640,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - 各文字列**の GUID**を $ (ImageCatalogGuid) に置き換え **、各**文字列の ID を $ () に置き換え、 \<moniker> 外部 = "true" 属性を各型の型に追加**ContainedImage**します。
 
-       - \<moniker>は、イメージと一致するが、" **Knownmoniker** " で置き換えられます。 名前から削除されます。
+       - \<moniker> は、イメージと一致するが、" **Knownmoniker** " で置き換えられます。 名前から削除されます。
 
    - <インポートマニフェスト = "$ (ManifestFolder) \\<相対インストールディレクトリパスを * \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/> に追加し \* て、セクションの先頭に追加し \<Symbols> ます。
 
@@ -705,14 +705,14 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **HIMAGELISTs をサポートする必要はありません**
 
-1. イメージストリップ内のイメージに一致する**knownmonikers**のセットを確認するか、イメージストリップ内のイメージ用に独自のモニカーを作成します。
+1. イメージストリップ内のイメージに一致する **knownmonikers** のセットを確認するか、イメージストリップ内のイメージ用に独自のモニカーを作成します。
 
 2. イメージストリップ内の必要なインデックスにあるイメージを取得するために使用したすべてのマッピングを更新して、代わりにモニカーを使用します。
 
-3. イメージサービスを使用して、更新されたマッピングによってモニカーを要求するようにコードを更新します。 (これは、マネージコードの**CrispImages**を更新したり、イメージサービスから hbitmaps や hbitmaps を要求したり、ネイティブコードの周囲に渡したりすることを意味します)。
+3. イメージサービスを使用して、更新されたマッピングによってモニカーを要求するようにコードを更新します。 (これは、マネージコードの **CrispImages** を更新したり、イメージサービスから hbitmaps や hbitmaps を要求したり、ネイティブコードの周囲に渡したりすることを意味します)。
 
 ## <a name="testing-your-images"></a>イメージのテスト
- イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは[Visual Studio 2015 SDK](visual-studio-sdk.md)で入手できます。 このツールとその他のドキュメントについては、[こちら](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015)を参照してください。
+ イメージライブラリビューアーツールを使用すると、イメージマニフェストをテストして、すべてが正しく作成されていることを確認できます。 このツールは [Visual Studio 2015 SDK](visual-studio-sdk.md)で入手できます。 このツールとその他のドキュメントについては、 [こちら](./internals/vssdk-utilities.md?view=vs-2015)を参照してください。
 
 ## <a name="additional-resources"></a>その他のリソース
 
@@ -730,7 +730,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- Manifest to Code ツールは、イメージマニフェストファイルを受け取り、コード (C++、C#、または VB) または*vsct*ファイルでマニフェスト値を参照するためのラッパーファイルを生成します。
+ Manifest to Code ツールは、イメージマニフェストファイルを受け取り、コード (C++、C#、または VB) または *vsct* ファイルでマニフェスト値を参照するためのラッパーファイルを生成します。
 
  **ImageLibraryViewer**
 
@@ -750,7 +750,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 - ここでは、CPS プロジェクトシステムを更新しています。 **ImageName**と**stockiconservice**はどうなりましたか?
 
-  - これらは、モニカーを使用するように CPS を更新したときに削除されました。 **Stockiconservice**を呼び出す必要がなくなりました。 CPS ユーティリティで**ToProjectSystemType ()** 拡張メソッドを使用して、目的の**knownmoniker**をメソッドまたはプロパティに渡すだけです。 次のように、 **ImageName**から**knownmonikers**へのマッピングを見つけることができます。
+  - これらは、モニカーを使用するように CPS を更新したときに削除されました。 **Stockiconservice**を呼び出す必要がなくなりました。 CPS ユーティリティで**ToProjectSystemType ()** 拡張メソッドを使用して、目的の**knownmoniker**をメソッドまたはプロパティに渡すだけです。 次のように、 **ImageName** から **knownmonikers** へのマッピングを見つけることができます。
 
     |**ImageName**|**KnownMoniker**|
     |-|-|
@@ -1009,7 +1009,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||リファレンス|
+    |GlyphAssembly||参照先|
     |GlyphLibrary||ライブラリ|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

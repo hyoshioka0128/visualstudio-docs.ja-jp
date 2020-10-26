@@ -1,5 +1,5 @@
 ---
-title: '[ブレークポイント] ダイアログ ボックスの選択 |Microsoft Docs'
+title: '[ブレークポイントの選択] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161619"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>[ブレークポイントの選択] ダイアログ ボックス
@@ -40,11 +40,11 @@ ms.locfileid: "68161619"
  **[ブレークポイント]**  
  あいまいな入力に基づいて設定できるブレークポイントを示します。 1 つ以上のブレークポイントを選択して設定できます。  
   
- **All**  
+ **すべて**  
  **[ブレークポイント]** ボックスに示されたすべてのブレークポイントを選択します。  
   
- **None**  
+ **なし**  
  **[ブレークポイント]** ボックスに示されたすべてのブレークポイントをクリアします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ブレークポイントの使用](../debugger/using-breakpoints.md)

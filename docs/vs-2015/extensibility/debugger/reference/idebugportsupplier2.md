@@ -13,28 +13,28 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6d9c3f8b45affd192d4109db08454345dcd0814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188225"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスには、セッション デバッグ マネージャー (SDM) へのポートが用意されています。  
+このインターフェイスは、セッションデバッグマネージャー (SDM) にポートを提供します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortSupplier2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- カスタム ポート サプライヤーは、ポートのサプライヤーを表すためには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ カスタムポート供給業者は、このインターフェイスを実装して、ポート供給元を表します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出し`CoCreateInstance`でポート サプライヤーの`GUID`(これはこのインターフェイスを取得する一般的な方法で) このインターフェイスを返します。 例えば:  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ ポート供給業者を使用してを呼び出すと、 `CoCreateInstance` `GUID` このインターフェイスが返されます (これは、このインターフェイスを取得するための一般的な方法です)。 次に例を示します。  
   
 ```cpp#  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
@@ -51,39 +51,39 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }  
 ```  
   
- 呼び出し[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)によって使用されている現在のポート サプライヤーを表す、このインターフェイスを返します[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]します。  
+ [Getportsupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)を呼び出すと、によって使用されている現在のポート供給を表すインターフェイスが返され [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ます。  
   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)ポートを作成したポートのサプライヤーを表す、このインターフェイスを返します。  
+ [Getportsupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) は、ポートを作成したポートサプライヤーを表すこのインターフェイスを返します。  
   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)の一覧を表します`IDebugPortSupplier`インターフェイス (、`IEnumDebugPortSuppliers`インターフェイスがから取得した[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)に登録されているすべてのポートサプライヤーを表す[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]).  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) は、インターフェイスの一覧を表し `IDebugPortSupplier` `IEnumDebugPortSuppliers` ます (インターフェイスは、に登録されているすべてのポートサプライヤーを表す、 [enumportsuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)から取得され [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ます)。  
   
- デバッグ エンジンは、通常、ポート サプライヤーは操作できません。  
+ 通常、デバッグエンジンは、ポート供給元と対話しません。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugPortSupplier2`します。  
+ 次の表に、のメソッドを示し `IDebugPortSupplier2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|ポート サプライヤーの名前を取得します。|  
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|ポート サプライヤーの識別子を取得します。|  
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|ポート サプライヤーからポートを取得します。|  
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|ポートのサプライヤー名を取得します。|  
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|ポートサプライヤー識別子を取得します。|  
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|ポートサプライヤーからポートを取得します。|  
 |[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|既に存在するポートを列挙します。|  
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|ポート サプライヤーが新しいポートの追加をサポートしていることを確認します。|  
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|ポートサプライヤーが新しいポートの追加をサポートしていることを確認します。|  
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|ポートを追加します。|  
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|ポートを削除します。|  
   
-## <a name="remarks"></a>Remarks  
- ポート サプライヤーは、名前と ID によって識別される、追加、ポートを削除し、およびポート サプライヤーを提供するすべてのポートを列挙できます。  
+## <a name="remarks"></a>注釈  
+ ポートサプライヤーは、名前と ID で自身を識別したり、ポートを追加および削除したり、ポート供給元が提供するすべてのポートを列挙したりできます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

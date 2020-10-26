@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533069"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>モデリング図にジェスチャ ハンドラーを定義する
@@ -74,7 +74,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – レイヤー図を拡張する場合にのみ必要になります。 詳細については、「[レイヤー図の拡張](../modeling/extend-layer-diagrams.md)」を参照してください。
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – レイヤー図を拡張する場合にのみ必要になります。 詳細については、「 [レイヤー図の拡張](../modeling/extend-layer-diagrams.md)」を参照してください。
 
 3. プロジェクトにクラス ファイルを追加し、その内容を次のコードに設定します。
 
@@ -230,7 +230,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
          **プロジェクト**  = *クラスライブラリプロジェクト*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>ジェスチャハンドラーの実行
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> ジェスチャハンドラーの実行
  テストを行う場合は、ジェスチャ ハンドラーをデバッグ モードで実行します。
 
 #### <a name="to-test-the-gesture-handler"></a>ジェスチャ ハンドラーをテストするには
@@ -243,7 +243,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
    - 複数のプロジェクトがある場合は、VSIX プロジェクトがソリューションのスタートアップ プロジェクトとして設定されていることを確認してください。
 
-   - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、[プロパティ] をクリックします。 プロジェクトのプロパティエディターで、[**デバッグ**] タブを選択します。 [**外部プログラムの開始**] フィールドの文字列がの完全なパス名であることを確認します。通常は次のようになります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+   - ソリューション エクスプローラーで、スタートアップまたはプロジェクトのみのショートカット メニューを開き、[プロパティ] をクリックします。 プロジェクトのプロパティエディターで、[ **デバッグ** ] タブを選択します。[ **外部プログラムの開始** ] フィールドの文字列がの完全なパス名であることを確認します。通常は次のようになり [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -265,7 +265,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 
 - この種類のターゲットおよびドロップ対象の要素に対して組み込みの機能が定義されていない。
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>ジェスチャハンドラーの実装
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> ジェスチャハンドラーの実装
 
 ### <a name="the-gesture-handler-methods"></a>ジェスチャ ハンドラーのメソッド
  ジェスチャ ハンドラー クラスは、<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension> を実装およびエクスポートします。 定義する必要のあるメソッドを次に示します。
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  詳細については、「 [UML モデル内を移動する](../modeling/navigate-the-uml-model.md)」を参照してください。
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>拡張機能のインストールとアンインストール
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 拡張機能のインストールとアンインストール
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 拡張機能は、自分のコンピューターと他のコンピューターの両方にインストールできます。
 
 #### <a name="to-install-an-extension"></a>拡張機能をインストールするには
@@ -519,5 +519,5 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
 
  のコードに `GetModelElementsFromDragEvent()` ついては、「 [IDATAOBJECT から UML モデル要素を取得](../modeling/get-uml-model-elements-from-idataobject.md)する」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [モデリング拡張機能を定義およびインストールする](../modeling/define-and-install-a-modeling-extension.md) [uml モデルと図を拡張](../modeling/extend-uml-models-and-diagrams.md)[するモデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する uml[モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する uml [API を使用したプログラミング](../modeling/programming-with-the-uml-api.md)

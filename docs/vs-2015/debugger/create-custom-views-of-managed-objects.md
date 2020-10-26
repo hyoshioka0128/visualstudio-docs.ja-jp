@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72578027"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>マネージド オブジェクトのカスタム ビューを作成する
@@ -42,7 +42,7 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
  [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] コードでは、Visual Basic は DebuggerBrowsable 属性をサポートしません。 この制限は、.NET Framework の新しいバージョンで解除されています。  
   
 ## <a name="visualizers"></a>ビジュアライザー  
- マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、「[方法: ビジュアライザーを記述](../debugger/how-to-write-a-visualizer.md)する」を参照してください。  
+ マネージド データ型を表示するには、ビジュアライザーを記述します。 詳細については、[ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)  
   
 ## <a name="native-code"></a>ネイティブ コード  
  ネイティブ コードの場合、カスタム データ型の展開を autoexp.dat ファイルに追加します。autoexp.dat は、Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger ディレクトリにあります。 `autoexp` 規則の記述手順は、このファイルに含まれています。  
@@ -52,8 +52,8 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
   
  また、ネイティブ型の表示は、式エバリュエーター アドインを記述してカスタマイズできます。 詳細については、「 [Eeaddin サンプル: デバッグ式エバリュエーターアドイン](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   
- [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
- [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)   
+## <a name="see-also"></a>参照  
+ [デバッガ Typeproxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   
+ [デバッガーの表示属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [ウォッチウィンドウとクイックウォッチウィンドウ](../debugger/watch-and-quickwatch-windows.md)   
  [デバッガー表示属性によるデバッグ機能の拡張](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

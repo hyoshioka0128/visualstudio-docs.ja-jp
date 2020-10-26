@@ -13,25 +13,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850710"
 ---
 # <a name="code-generation-in-a-build-process"></a>ビルド処理でのコード生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 テキスト変換は、Visual Studio ソリューションのビルド処理の一部として呼び出すことができます。 テキスト変換に特化したビルド タスクがあります。 T4 ビルド タスクはデザイン時テキスト テンプレートを実行し、また、実行時 (前処理済み) テキスト テンプレートをコンパイルします。
 
-使用するビルド エンジンに応じて、ビルド タスクができることには違いが生じます。 Visual Studio でソリューションをビルドする時に、[hostspecific ="true"](../modeling/t4-template-directive.md)属性が設定されていると、テキスト テンプレートは Visual Studio API (EnvDTE) にアクセスできます。 しかし、コマンド ラインからソリューションをビルドするとき、または、Visual Studio 経由でサーバー ビルドを開始するときは、これは当てはまりません。 このような場合、ビルドは MSBuild によって実行され、別の T4 ホストが使用されます。
+使用するビルド エンジンに応じて、ビルド タスクができることには違いが生じます。 Visual Studio でソリューションをビルドすると、hostspecific の属性が ["true"](../modeling/t4-template-directive.md) に設定されている場合、テキストテンプレートから VISUAL studio API (EnvDTE) にアクセスできるようになります。 しかし、コマンド ラインからソリューションをビルドするとき、または、Visual Studio 経由でサーバー ビルドを開始するときは、これは当てはまりません。 このような場合、ビルドは MSBuild によって実行され、別の T4 ホストが使用されます。
 
-つまり、MSBuild でテキスト テンプレートをビルドすると、プロジェクト ファイル名などに同じようにアクセスできないことになります。 ただし、[ビルド パラメーターを使用してテキスト テンプレートとディレクティブ プロセッサに環境情報を渡す](#parameters)ことができます。
+つまり、MSBuild でテキスト テンプレートをビルドすると、プロジェクト ファイル名などに同じようにアクセスできないことになります。 ただし、 [ビルドパラメーターを使用して、環境情報をテキストテンプレートおよびディレクティブプロセッサに渡す](#parameters)ことができます。
 
-## <a name="buildserver"></a>コンピューターを構成する
+## <a name="configure-your-machines"></a><a name="buildserver"></a> コンピューターを構成する
 
-開発用コンピューターでビルドタスクを有効にするには、[モデリング SDK For Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)をインストールします。
+開発用コンピューターでビルドタスクを有効にするには、 [モデリング SDK For Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)をインストールします。
 
-[ビルド サーバー](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)を Visual Studio がインストールされていないコンピューター上で、実行している場合、開発用コンピューターからビルド コンピューターに次のファイルをコピーします。 最新のバージョン番号を「*」で置き換えます。
+[ビルドサーバー](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)が Visual Studio がインストールされていないコンピューター上で実行されている場合は、開発用コンピューターからビルドコンピューターに次のファイルをコピーします。 最新のバージョン番号を「*」で置き換えます。
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -57,9 +57,9 @@ ms.locfileid: "75850710"
 
 MSBuild の機能の一部を構成するには、プロジェクト ファイルを編集する必要があります。
 
-ソリューションエクスプローラーで、プロジェクトのコンテキストメニューから **[アンロード]** を選択します。 これにより XML エディターで .csproj または .vbproj ファイルを編集できるようになります。
+ソリューションエクスプローラーで、プロジェクトのコンテキストメニューから [ **アンロード** ] を選択します。 これにより XML エディターで .csproj または .vbproj ファイルを編集できるようになります。
 
-編集が完了したら、 **[再読み込み]** を選択します。
+編集が完了したら、[ **再読み込み**] を選択します。
 
 ## <a name="import-the-text-transformation-targets"></a>テキスト変換ターゲットのインポート
 
@@ -213,9 +213,9 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>ビルドコンテキストデータをテンプレートに渡す
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> ビルドコンテキストデータをテンプレートに渡す
 
-プロジェクト ファイルでパラメーター値を設定できます。 たとえば、ビルドプロパティと[環境変数](../msbuild/how-to-use-environment-variables-in-a-build.md)を渡すことができます。
+プロジェクト ファイルでパラメーター値を設定できます。 たとえば、ビルドプロパティと [環境変数](../msbuild/how-to-use-environment-variables-in-a-build.md)を渡すことができます。
 
 ```xml
 <ItemGroup>
@@ -226,7 +226,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
-テキスト テンプレートでは、template ディレクティブで `hostspecific` を設定します。 [パラメーター](../modeling/t4-parameter-directive.md)ディレクティブを使用して、値を取得します。
+テキスト テンプレートでは、template ディレクティブで `hostspecific` を設定します。 値を取得するには、 [parameter](../modeling/t4-parameter-directive.md) ディレクティブを使用します。
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>アセンブリおよびインクルードディレクティブでのプロジェクトプロパティの使用
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> アセンブリおよびインクルードディレクティブでのプロジェクトプロパティの使用
 
 $(SolutionDir) などの Visual Studio のマクロは、MSBuild では動作しません。 その代わりに、プロジェクト プロパティを使用できます。
 
@@ -269,20 +269,20 @@ $(SolutionDir) などの Visual Studio のマクロは、MSBuild では動作し
 
 インクルード ファイル、または、テンプレートで読み込まれる別のファイルを更新した場合、Visual Studio ではそのファイルは自動的に変換されません。 ビルドの一部としてテンプレートを変換すると、すべてが最新であることが保証されます。
 
-**テキストテンプレートを変換するためのオプションは他にありますか。**
+**テキスト テンプレートを変換する方法は他にもありますか。**
 
 - [Texttransform ユーティリティ](../modeling/generating-files-with-the-texttransform-utility.md)は、コマンドスクリプトで使用できます。 ほとんどの場合、MSBuild を使用する方が簡単です。
 
 - [VS 拡張機能内でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-- [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)は、Visual Studio によって変換されます。
+- [デザイン時テキストテンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md) は、Visual Studio によって変換されます。
 
-- [実行時テキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)は、アプリケーションでの実行時に変換されます。
+- [実行時のテキストテンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md) は、実行時にアプリケーションで変換されます。
 
-## <a name="read-more"></a>関連項目
+## <a name="read-more"></a>詳細情報
 
 T4 MSbuild テンプレート、$ (VSToolsPath) \TextTemplating\Microsoft.TextTemplating.targets に優れたガイダンスがあります。
 
 - [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio の視覚化およびモデリング SDK](https://www.visualstudio.com/)
+- [Visual Studio Visualization and Modeling SDK](https://www.visualstudio.com/)
 - [Oleg Sych: T4 について: MSBuild 統合](https://github.com/olegsych/T4Toolbox)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197634"
 ---
 # <a name="datakind"></a>DataKind
@@ -25,7 +25,7 @@ ms.locfileid: "68197634"
 
 データ値の特定のスコープを示します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum DataKind {   
@@ -42,43 +42,43 @@ enum DataKind { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  DataIsUnknown  
- データ シンボルを特定できません。  
+ データシンボルを特定できません。  
   
  DataIsLocal  
- データ項目は、ローカル変数です。  
+ データ項目はローカル変数です。  
   
  DataIsStaticLocal  
- データ項目は、静的ローカル変数です。  
+ データ項目は静的なローカル変数です。  
   
- DataIsParam  
- データ項目は、正式なパラメーターです。  
+ Dataisparc  
+ データ項目は、仮パラメーターです。  
   
  DataIsObjectPtr  
- データ項目はオブジェクト ポインター (`this`)。  
+ データ項目はオブジェクトポインター ( `this` ) です。  
   
  DataIsFileStatic  
- データ項目は、ファイル スコープ変数です。  
+ データ項目はファイルスコープの変数です。  
   
  DataIsGlobal  
- データ項目は、グローバル変数です。  
+ データ項目はグローバル変数です。  
   
  DataIsMember  
- データ項目は、オブジェクト メンバー変数です。  
+ データ項目はオブジェクトメンバー変数です。  
   
  DataIsStaticMember  
  データ項目は、クラスの静的変数です。  
   
  DataIsConstant  
- データ項目は、定数値です。  
+ データ項目は定数値です。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値がによって返される、 [idiasymbol::get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、 [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

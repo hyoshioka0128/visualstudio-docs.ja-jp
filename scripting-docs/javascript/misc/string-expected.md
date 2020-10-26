@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 96c08b8b50b64ccfb7d770ade41510897ad0ff5a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817542"
 ---
 # <a name="string-expected"></a>文字列が必要です。
-以外の型のオブジェクトで、**文字列**を呼び出そうとした、または**文字列**を呼び出そうとしまし `String` た。 この種類の呼び出しのオブジェクトは、型である必要があり `String` ます。  
+以外の型のオブジェクトで、 **文字列** を呼び出そうとした、または **文字列** を呼び出そうとしまし `String` た。 この種類の呼び出しのオブジェクトは、型である必要があり `String` ます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 型のオブジェクトに対してのみ、**文字列のプロトタイプ**または**文字列**を `String` 呼び出します。  
+- 型のオブジェクトに対してのみ、 **文字列のプロトタイプ** または **文字列** を `String` 呼び出します。  
   
 ## <a name="see-also"></a>関連項目  
  [String オブジェクト](../../javascript/reference/string-object-javascript.md)   

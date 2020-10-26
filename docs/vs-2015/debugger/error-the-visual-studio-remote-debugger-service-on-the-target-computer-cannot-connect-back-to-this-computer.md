@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520511"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>エラー :ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
@@ -47,7 +47,7 @@ ms.locfileid: "85520511"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1. リモート コンピューターに Visual Studio リモート デバッガー サービスが正しく設定されていることを確認します。 詳細については、「[デバイスにリモートツールを設定する](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)」を参照してください。  
+1. リモート コンピューターに Visual Studio リモート デバッガー サービスが正しく設定されていることを確認します。 詳細については、「 [デバイスにリモートツールを設定する](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)」を参照してください。  
   
 2. 上の表に示した、デバッガー ホスト コンピューターにアクセスできる適切なアカウントを使用して、リモート デバッガー サービスを実行します。  
   
@@ -75,6 +75,6 @@ ms.locfileid: "85520511"
   
 - リモート デバッグ モニターをサービスとして実行する代わりに、アプリケーションとして実行します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [リモートデバッグエラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

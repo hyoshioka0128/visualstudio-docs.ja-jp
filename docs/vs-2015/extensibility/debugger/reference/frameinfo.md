@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO |Microsoft Docs
+title: フレーム情報 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c0fa2299e47924a10a6d0b02a982535865164191
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160163"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-スタック フレームをについて説明します。  
+スタックフレームについて説明します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -64,55 +64,55 @@ public struct FRAMEINFO { 
   
 ## <a name="members"></a>メンバー  
  m_dwValidFields  
- フラグの組み合わせ、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)どのフィールドに入力を指定する列挙体。  
+ 入力するフィールドを指定する、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 列挙のフラグの組み合わせ。  
   
  m_bstrFuncName  
- スタック フレームに関連付けられている関数の名前。  
+ スタックフレームに関連付けられている関数名。  
   
  m_bstrReturnType  
- スタック フレームに関連付けられている戻り値の型。  
+ スタックフレームに関連付けられた戻り値の型。  
   
  m_bstrArgs  
- スタック フレームに関連付けられている関数の引数。  
+ スタックフレームに関連付けられている関数の引数。  
   
  m_bstrLanguage  
- 関数が実装される言語です。  
+ 関数が実装されている言語。  
   
  m_bstrModule  
- スタック フレームに関連付けられているモジュール名。  
+ スタックフレームに関連付けられているモジュール名。  
   
  m_addrMin  
- 最小物理スタック アドレス。  
+ 最小物理スタックアドレス。  
   
  m_addrMAX  
- 最大物理スタック アドレス。  
+ 最大物理スタックアドレス。  
   
  m_pFrame  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)このスタック フレームを表すオブジェクト。  
+ このスタックフレームを表す [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) オブジェクト。  
   
  m_pFrame  
- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)をこのスタック フレームを含むモジュールを表すオブジェクト。  
+ このスタックフレームを含むモジュールを表す [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) オブジェクト。  
   
  m_fHasDebugInfo  
- 0 以外の値 (`TRUE`) 特定のフレームにデバッグ情報が存在する場合。  
+ 指定された `TRUE` フレームにデバッグ情報が存在する場合は0以外 ()。  
   
  m_fHasDebugInfo  
- 0 以外の値 (`TRUE`) 場合は、スタック フレームは無効になっているコードに関連付けられています。  
+ `TRUE`スタックフレームが無効になっているコードに関連付けられている場合は0以外 ()。  
   
  m_fHasDebugInfo  
- 0 以外の値 (`TRUE`) セッション デバッグ マネージャー (SDM) によって、スタック フレームの注釈を付ける場合。  
+ `TRUE`セッションデバッグマネージャー (SDM) によってスタックフレームに注釈が付けられている場合は0以外 ()。  
   
-## <a name="remarks"></a>Remarks  
- この構造体に渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)情報を格納するメソッド。 この構造体が一覧に含まれているにも含まれている、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイスをさらへの呼び出しから返される、 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この構造体は、入力する [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) メソッドに渡されます。 この構造体は、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) インターフェイスに含まれるリストにも含まれています。この一覧は、 [enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) メソッドの呼び出しから返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

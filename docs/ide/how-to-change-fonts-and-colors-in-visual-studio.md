@@ -1,7 +1,9 @@
 ---
-title: フォントと色を変更する
-ms.date: 06/01/2020
+title: テーマ、フォント、テキスト、およびアクセシビリティのためにコントラストを変更する
+description: Visual Studio の配色テーマ、フォントの色、テキストのサイズ、および使いやすさとアクセシビリティ配慮のためにエクストラコントラストの色を変更する方法について説明します。
+ms.date: 08/20/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb2373117b382cb19f374581ada45a5732b9c4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284687"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801439"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>方法: Visual Studio で使用するフォントと色を変更する
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>方法: Visual Studio のフォント、色、テーマを変更する
 
-Visual Studio では、さまざまな方法でフォントと色を変更できます。 たとえば、既定の青の配色テーマをダークテーマ ("ダーク モード" とも呼ばれます) に変更できます。また、既定のフォントおよびテキスト サイズを別のフォントとサイズに変更することもできます。
+Visual Studio では、さまざまな方法でフォントと色を変更できます。 たとえば、既定の青の配色テーマをダーク テーマ ("ダーク モード" とも呼ばれます) に変更できます。 ニーズに合わせてエクストラコントラスト テーマを選択することもできます。 また、IDE とコード エディターの両方で、既定のフォントおよびテキスト サイズを変更できます。
 
 ## <a name="change-the-color-theme"></a>[配色テーマ] を変更する
 
@@ -122,5 +124,6 @@ Visual Studio のエクスロラ コントラスト オプションを切り替�
 
 ## <a name="see-also"></a>関連項目
 
-- [コード エディターのフォントと色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [方法: Visual Studio でエディターのフォントと色を変更する](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Visual Studio のコード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Visual Studio IDE とエディターのカスタマイズ](../ide/quickstart-personalize-the-ide.md)

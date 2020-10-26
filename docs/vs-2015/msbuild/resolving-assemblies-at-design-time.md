@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159227"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>デザイン時のアセンブリの解決
@@ -39,5 +39,5 @@ ms.locfileid: "68159227"
   
  .NET Framework SDK に現在付属しているターゲット パックには、そのバージョンの Framework のすべてのランタイム アセンブリのリストが含まれています。これは再配布 (Redist) リストと呼ばれます。 これにより、ビルド システムが型を間違ったバージョンのアセンブリに解決することはなくなっています。  
   
-## <a name="see-also"></a>関連項目  
- [詳細な概念](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>参照  
+ [高度な概念](../msbuild/msbuild-advanced-concepts.md)

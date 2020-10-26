@@ -1,4 +1,4 @@
-﻿---
+---
 title: ターゲットのバッチの項目メタデータ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192877"
 ---
 # <a name="item-metadata-in-target-batching"></a>ターゲットのバッチの項目メタデータ
@@ -68,8 +68,8 @@ ms.locfileid: "68192877"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [方法: インクリメンタル ビルドします。](../msbuild/how-to-build-incrementally.md)   
+## <a name="see-also"></a>参照  
+ [方法: インクリメンタルビルドを実行する](../msbuild/how-to-build-incrementally.md)   
  [バッチ](../msbuild/msbuild-batching.md)   
  [Target 要素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [タスクのバッチの項目メタデータ](../msbuild/item-metadata-in-task-batching.md)

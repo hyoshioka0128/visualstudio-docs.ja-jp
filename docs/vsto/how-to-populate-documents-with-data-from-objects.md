@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547174"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>方法: オブジェクトのデータをドキュメントに読み込む
 
-Microsoft Office Word のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータ オブジェクトのデータにアクセスできます。 同じツールとコードを使用してオブジェクトからソリューションにデータを読み込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 また、ホスト コントロールを使用してデータを表示することもできます。 ホスト コントロールは、イベントおよびデータ バインディングの機能が強化された Microsoft Office Word のネイティブ オブジェクトです。 詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+Microsoft Office Word のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータ オブジェクトのデータにアクセスできます。 同じツールとコードを使用してオブジェクトからソリューションにデータを読み込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 また、ホスト コントロールを使用してデータを表示することもできます。 ホスト コントロールは、イベントおよびデータ バインディングの機能が強化された Microsoft Office Word のネイティブ オブジェクトです。 詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -36,7 +36,7 @@ Microsoft Office Word のドキュメント レベルのプロジェクトでは
 
 ## <a name="to-add-a-data-object"></a>データ オブジェクトを追加するには
 
-データオブジェクトを追加するには、[**データソース**] ウィンドウを開き、オブジェクトからデータソースを作成します。 詳細については、「[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
+データオブジェクトを追加するには、[ **データソース** ] ウィンドウを開き、オブジェクトからデータソースを作成します。 詳細については、「[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
 
 ## <a name="connect-the-data-object-to-the-bindingsource"></a>データオブジェクトを BindingSource に接続する
 
@@ -60,7 +60,7 @@ VSTO アドイン プロジェクトでは、コントロールを作成して�
 
 1. コード中に、データ ソースに関連付けられているオブジェクトの種類のインスタンスを作成します。
 
-2. <xref:System.Windows.Forms.BindingSource>のインスタンスを作成します。
+2. <xref:System.Windows.Forms.BindingSource> のインスタンスを作成します。
 
 3. データ ソースのインスタンスを <xref:System.Windows.Forms.BindingSource.DataSource%2A> の <xref:System.Windows.Forms.BindingSource>プロパティに割り当てます。
 

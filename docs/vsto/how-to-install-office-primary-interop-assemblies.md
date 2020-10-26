@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6f90b568f98abe5026525a60723efb59f737235
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544782"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>方法: Office プライマリ相互運用機能アセンブリをインストールする
@@ -29,7 +29,7 @@ ms.locfileid: "85544782"
 
 1. .NET Framework のバージョンが 2.0 以降であることを確認します。
 
-2. Microsoft Office をインストールし、拡張するアプリケーションに対して [ **.Net プログラミングサポート**] 機能が選択されていることを確認します (この機能は既定のインストールに含まれています)。
+2. Microsoft Office をインストールし、拡張するアプリケーションに対して [ **.Net プログラミングサポート** ] 機能が選択されていることを確認します (この機能は既定のインストールに含まれています)。
 
     > [!WARNING]
     > 既定では、PIA はビルド時にソリューションに埋め込まれるので、VSTO アドインまたはカスタマイズを使用するための前提条件として、Pia をユーザーに配布する必要はありません。

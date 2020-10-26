@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: 'IDebugModule3:: Getシンボル Info |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726890"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
-シンボルを検索するパスのリストと、各パスの検索結果を取得します。
+シンボルを検索するパスの一覧と、各パスを検索した結果を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -44,29 +44,29 @@ int GetSymbolInfo(
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]SYMBOL_SEARCH_INFO_FIELDS[列挙体](../../../extensibility/debugger/reference/symbol-search-info-fields.md)のフラグの組み合わせで、入力`pInfo`するフィールドを指定します。
+からどのフィールドを入力するかを指定する、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列挙のフラグの組み合わせ `pInfo` 。
 
 `pInfo`\
-[アウト]指定された情報をメンバに入力する[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)構造体。 これが null 値の場合、このメソッド`E_INVALIDARG`は を返します。
+入出力指定された情報を格納するメンバーを持つ [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 構造体。 Null 値の場合、このメソッドはを返し `E_INVALIDARG` ます。
 
 ## <a name="return-value"></a>戻り値
-メソッドが成功すると、返されます`S_OK`。それ以外の場合は、エラー コードを返します。
+メソッドが成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 > [!NOTE]
-> (構造体内の)`MODULE_SYMBOL_SEARCH_INFO`返される文字列は、返された`S_OK`場合でも空になる可能性があります。 この場合、返す検索情報はありませんでした。
+> が返された場合でも、返された文字列 ( `MODULE_SYMBOL_SEARCH_INFO` 構造体内) は空になる可能性があり `S_OK` ます。 この場合、返される検索情報がありませんでした。
 
-## <a name="remarks"></a>Remarks
-`MODULE_SYMBOL_SEARCH_INFO`構造体の`bstrVerboseSearchInfo`フィールドが空でない場合は、検索されたパスのリストとその検索結果が含まれます。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパス結果ペアがある場合、各ペアは"\r\n"(復帰/改行)ペアで区切られます。 パターンは次のようになります。
+## <a name="remarks"></a>解説
+`bstrVerboseSearchInfo` `MODULE_SYMBOL_SEARCH_INFO` 構造体のフィールドが空でない場合は、検索対象のパスと検索結果の一覧が含まれています。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパスの結果のペアがある場合、各ペアは "\r\n" (キャリッジリターン/ラインフィード) ペアで区切られます。 パターンは次のようになります。
 
-\<パス>.\<>\r\n\<パス>.\<結果>\r\n\<パス>.\<結果>
+\<path>...\<result>\r\n \<path> . \<result> .\r\n \<path> ..\<result>
 
-最後のエントリには \r\n シーケンスがありません。
+最後のエントリには \r\n シーケンスがないことに注意してください。
 
 ## <a name="example"></a>例
-この例では、このメソッドは 3 つの異なる検索結果を持つ 3 つのパスを返します。 各行は、復帰/改行のペアで終了します。 出力例では、検索結果を単一の文字列として出力します。
+この例では、このメソッドは3つの異なる検索結果を持つ3つのパスを返します。 各行は、復帰とラインフィードのペアで終了します。 この例では、単に検索結果を1つの文字列として出力します。
 
 > [!NOTE]
-> ステータスの結果は、"..行の最後まで。
+> 状態の結果は、"..." の直後に続くものです。行の最後まで。
 
 ```cpp
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
@@ -84,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\シンボル\ユーザー32.pdb..ファイルが見つかりません。**
- **c:\winnt\シンボル\ユーザー32.pdb..バージョンが一致しません。**
-\シンボル**\シンボル\ユーザー32.dll\0a8sd0ad\user32.pdb.. \\シンボルが読み込まれました。**
+**c:\symbols\user32.pdb...ファイルが見つかりません。** 
+**c:\winnt\symbols\user32.pdb...バージョンが一致しません。** 
+** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb...シンボルが読み込まれ**ました。
 
 ## <a name="see-also"></a>関連項目
 

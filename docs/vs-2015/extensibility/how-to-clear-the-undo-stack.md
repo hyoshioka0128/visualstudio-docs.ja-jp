@@ -1,5 +1,5 @@
 ---
-title: '方法: 元に戻すスタックをクリア |Microsoft Docs'
+title: '方法: 元に戻すスタックを消去する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549170"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>方法: 元に戻すスタックをクリアします。
+# <a name="how-to-clear-the-undo-stack"></a>方法: 元に戻すスタックをクリアする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 次の手順では、元に戻すスタックをクリアする方法について説明します。  
   
 ### <a name="to-clear-the-undo-stack"></a>元に戻すスタックをクリアするには  
   
-1. 元に戻すスタックの使用をオフにする、 [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)メソッド。 この例を次に示します。  
+1. 元に戻すスタックをクリアするには、 [IOleUndoManager::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) メソッドを使用します。 この例を次に示します。  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -44,5 +44,5 @@ ms.locfileid: "62549170"
     }  
     ```  
   
-## <a name="see-also"></a>関連項目  
- [方法: 元に戻す管理を実装](../extensibility/how-to-implement-undo-management.md)
+## <a name="see-also"></a>参照  
+ [方法: 元に戻すの管理を実装する](../extensibility/how-to-implement-undo-management.md)

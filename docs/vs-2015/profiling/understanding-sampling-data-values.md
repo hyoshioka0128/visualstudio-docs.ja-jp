@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145419"
 ---
 # <a name="understanding-sampling-data-values"></a>サンプリング データ値について
@@ -26,7 +26,7 @@ ms.locfileid: "68145419"
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   プロファイラー分析は、プロセッサがターゲット プロセス内のコードを実行しているかどうかを判別します。 プロセッサがターゲット プロセス内のコードを実行していない場合、サンプルは破棄されます。  
   
@@ -52,6 +52,6 @@ ms.locfileid: "68145419"
 ## <a name="exclusive-percent"></a>排他 (%)  
  関数またはデータ範囲の排他サンプル数である、プロファイリング実行での排他サンプル合計数の割合。  
   
-## <a name="see-also"></a>関連項目  
- [方法: 収集方法を選択します。](../profiling/how-to-choose-collection-methods.md)   
- [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>参照  
+ [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)   
+ [パフォーマンス ツール データを分析する](../profiling/analyzing-performance-tools-data.md)

@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668773"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロールを作成する
@@ -30,21 +30,21 @@ ms.locfileid: "72668773"
 
 フォームにデータを表示する場合は、**ツールボックス**から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装するコントロールには、データにバインドできるプロパティを 3 つ含めることができます。 このようなコントロールは、<xref:System.Windows.Forms.ComboBox> に似ています。
 
- コントロールの作成の詳細については、「[デザイン時の Windows フォームコントロールの開発](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)」を参照してください。
+ コントロールの作成の詳細については、「 [デザイン時の Windows フォームコントロールの開発](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)」を参照してください。
 
  データ バインディングのシナリオで使用するためのコントロールを作成するときは、次のいずれかのデータ バインディング属性を実装する必要があります。
 
 |データバインディング属性の使用|
 |-----------------------------------|
-|単一のデータ列またはプロパティを表示する <xref:System.ComponentModel.DefaultBindingPropertyAttribute> のような <xref:System.Windows.Forms.TextBox> を簡単なコントロールに実装します。 詳細については、「[単純なデータバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)する」を参照してください。|
-|データの一覧またはテーブルを表示する <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> のような <xref:System.Windows.Forms.DataGridView> をコントロールに実装します。 詳細については、「[複合データバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)する」を参照してください。|
+|単一のデータ列またはプロパティを表示する <xref:System.ComponentModel.DefaultBindingPropertyAttribute> のような <xref:System.Windows.Forms.TextBox> を簡単なコントロールに実装します。 詳細については、「 [単純なデータバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)する」を参照してください。|
+|データの一覧またはテーブルを表示する <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> のような <xref:System.Windows.Forms.DataGridView> をコントロールに実装します。 詳細については、「 [複合データバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)する」を参照してください。|
 |データの一覧またはテーブルを表示しますが、単一の列またはプロパティを表示する必要もある <xref:System.ComponentModel.LookupBindingPropertiesAttribute> のような <xref:System.Windows.Forms.ComboBox> をコントロールに実装します。 このチュートリアルでは、このプロセスについて説明します。|
 
  このチュートリアルでは、2 つのテーブルのデータにバインドする検索コントロールを作成します。 この例では、Northwind サンプル データベースの `Customers` テーブルと `Orders` テーブルを使用します。 この検索コントロールは `CustomerID` テーブルの `Orders` フィールドにバインドされます。 コントロールは、この値を使用して `CompanyName` テーブルの `Customers` を検索します。
 
  このチュートリアルでは、次の作業を行う方法について説明します。
 
-- 新しい**Windows アプリケーション**を作成します。
+- 新しい **Windows アプリケーション**を作成します。
 
 - 新しい**ユーザー コントロール**をプロジェクトに追加します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "72668773"
 
 - フォームを作成して、新しいコントロールにデータを表示します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを完了するための要件は次のとおりです。
 
 - Northwind サンプル データベースにアクセスします。
@@ -68,11 +68,11 @@ ms.locfileid: "72668773"
 
 #### <a name="to-create-the-new-windows-project"></a>新しい Windows プロジェクトを作成するには
 
-1. Visual Studio の **[ファイル]** メニューで、新しい**プロジェクト**を作成します。
+1. Visual Studio の [ **ファイル** ] メニューで、新しい **プロジェクト**を作成します。
 
-2. プロジェクトに**Lookupcontrolwalkthrough**という名前を指定します。
+2. プロジェクトに **Lookupcontrolwalkthrough**という名前を指定します。
 
-3. **[Windows フォームアプリケーション]** を選択し、 **[OK]** をクリックします。
+3. [ **Windows フォームアプリケーション**] を選択し、[ **OK**] をクリックします。
 
      **LookupControlWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
 
@@ -83,7 +83,7 @@ ms.locfileid: "72668773"
 
 1. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** をクリックします。
 
-2. **[名前]** 領域に「`LookupBox`」と入力し、 **[追加]** をクリックします。
+2. [ `LookupBox` **名前** ] 領域に「」と入力し、[ **追加**] をクリックします。
 
      **LookupBox** コントロールが **ソリューション エクスプローラー**に追加され、デザイナーが開きます。
 
@@ -98,7 +98,7 @@ ms.locfileid: "72668773"
 
 #### <a name="to-implement-the-lookupbindingproperties-attribute"></a>LookupBindingProperties 属性を実装するには
 
-1. **LookupBox** コントロールをコード ビューに切り替えます。 ( **[表示]** メニューの **[コード]** を選択します。)
+1. **LookupBox** コントロールをコード ビューに切り替えます。 (**[表示]** メニューの **[コード]** を選択します。)
 
 2. `LookupBox` のコードを次のコードで置き換えます。
 
@@ -114,7 +114,7 @@ ms.locfileid: "72668773"
 
 1. **[データ]** メニューの **[データ ソースの表示]** をクリックします。
 
-2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
 
 3. **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
 
@@ -124,18 +124,18 @@ ms.locfileid: "72668773"
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、 **[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
 
-6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、 **[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
 
-7. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
 
-8. `Customers` テーブルと `Orders` テーブルを選択し、 **[完了]** をクリックします。
+8. `Customers` テーブルと `Orders` テーブルを選択し、**[完了]** をクリックします。
 
-     プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
+     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>LookupBox コントロールを使用するように Orders テーブルの CustomerID 列を設定します。
- **[データ ソース]** ウィンドウでは、フォームにコントロールをドラッグする前に作成するコントロールを設定できます。
+ [ **データソース** ] ウィンドウでは、フォームに項目をドラッグする前に作成するコントロールを設定できます。
 
 #### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>[CustomerID] 列を LookupBox コントロールにバインドするように設定するには
 
@@ -147,26 +147,26 @@ ms.locfileid: "72668773"
 
 4. **[Orders]** ノードのドロップダウン矢印をクリックし、コントロール一覧の **[Details]** を選択します。
 
-5. **[Orders]** ノードの **[CustomerID]** 列のドロップダウン矢印をクリックし、 **[Customize]** をクリックします。
+5. **[Orders]** ノードの **[CustomerID]** 列のドロップダウン矢印をクリックし、**[Customize]** をクリックします。
 
 6. **[データ UI カスタマイズ オプション]** ダイアログ ボックスの **[関連付けられたコントロール]** の一覧の **[LookupBox]** を選択します。
 
 7. **[OK]** をクリックします。
 
-8. **[CustomerID]** 列のドロップダウン矢印をクリックし、 **[LookupBox]** をクリックします。
+8. **[CustomerID]** 列のドロップダウン矢印をクリックし、**[LookupBox]** をクリックします。
 
 ## <a name="addcontrols-to-the-form"></a>Addcontrols をフォームに追加します。
  **[データ ソース]** ウィンドウから **Form1** に項目をドラッグして、データ バインディング コントロールを作成します。
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Windows フォームにデータ バインディング コントロールを作成するには
 
-- **[データソース]** ウィンドウから Windows フォームに **[Orders]** ノードをドラッグし、[`CustomerID`] 列にデータを表示するために**LookupBox**コントロールが使用されていることを確認します。
+- [**データソース**] ウィンドウから Windows フォームに [ **Orders** ] ノードをドラッグし、 **LookupBox**コントロールが列のデータを表示するために使用されていることを確認し `CustomerID` ます。
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Customers テーブルから CompanyName を参照するようにコントロールをバインドする
 
 #### <a name="to-setup-the-lookup-bindings"></a>検索バインドをセットアップするには
 
-- **[データソース]** ウィンドウで main **[Customers]** ノードを選択し、 **Form1**の**CustomerIDLookupBox**のコンボボックスにドラッグします。
+- [**データソース**] ウィンドウで [main **Customers** ] ノードを選択し、 **Form1**の**CustomerIDLookupBox**のコンボボックスにドラッグします。
 
      これによって、`Orders` テーブルの `CustomerID` 値を維持しながら、`Customers` テーブルの `CompanyName` を表示するためのデータ バインディングがセットアップされます。
 

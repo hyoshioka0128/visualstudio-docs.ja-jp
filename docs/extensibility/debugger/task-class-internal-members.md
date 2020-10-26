@@ -1,5 +1,5 @@
 ---
-title: タスク クラス - 内部メンバ |マイクロソフトドキュメント
+title: Task クラス-Internal Members |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712735"
 ---
-# <a name="task-class---internal-members"></a>タスク クラス - 内部メンバー
-この資料では、カスタム デバッガーの実装<xref:System.Threading.Tasks.Task?displayProperty=fullName>に役立つクラスの内部メンバーについて説明します。 このクラスの一般的な情報については、<xref:System.Threading.Tasks.Task>リファレンス記事を参照してください。
+# <a name="task-class---internal-members"></a>タスククラス-内部メンバー
+この記事では、カスタムデバッガーの実装に役立つクラスの内部メンバーについて説明し <xref:System.Threading.Tasks.Task?displayProperty=fullName> ます。 このクラスに関する一般的な情報については、リファレンス記事を参照してください <xref:System.Threading.Tasks.Task> 。
 
- **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib *(mscorlib.dll*内)
+ **アセンブリ:** mscorlib ( *mscorlib.dll*)
 
- これらの内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
+ これらの内部メンバーには .NET Framework からアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -44,28 +44,28 @@ ms.locfileid: "80712735"
 
 |名前|説明|
 |----------|-----------------|
-|[SetNotificationForWaitCompletion メソッド](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|TASK_STATE_WAIT_COMPLETION_NOTIFICATION状態ビットを設定またはクリアします。|
-|[NotifyDebuggerOfWaitCompletion メソッド](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|デバッガーによってブレークポイント ターゲットとして使用されるプレースホルダー メソッド。|
+|[SetNotificationForWaitCompletion メソッド](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|TASK_STATE_WAIT_COMPLETION_NOTIFICATION 状態ビットを設定またはクリアします。|
+|[NotifyDebuggerOfWaitCompletion メソッド](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|デバッガーによってブレークポイントターゲットとして使用されるプレースホルダーメソッド。|
 
 ### <a name="fields"></a>フィールド
 
 |名前|説明|
 |----------|-----------------|
-|[m_action](../../extensibility/debugger/m-action-field.md)|<xref:System.Threading.Tasks.Task>オブジェクトで実行するコードを表すデリゲート。|
-|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|オブジェクトの追加プロパティを<xref:System.Threading.Tasks.Task>格納します。|
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|親プロパティの<xref:System.Threading.Tasks.Task?displayProperty=fullName>バッキング フィールド。|
-|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|オブジェクトの現在の状態に関する<xref:System.Threading.Tasks.Task>情報を格納します。|
+|[m_action](../../extensibility/debugger/m-action-field.md)|オブジェクトで実行するコードを表すデリゲート <xref:System.Threading.Tasks.Task> 。|
+|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|オブジェクトの追加のプロパティを格納 <xref:System.Threading.Tasks.Task> します。|
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|親プロパティのバッキングフィールド <xref:System.Threading.Tasks.Task?displayProperty=fullName> 。|
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|オブジェクトの現在の状態に関する情報を格納 <xref:System.Threading.Tasks.Task> します。|
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|アクションで使用されるデータを表すオブジェクト。|
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>プロパティのバッキング フィールド。|
-|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|オブジェクトの次に使用可能な<xref:System.Threading.Tasks.Task>識別子。|
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|タスクが実行状態になる前にタスクがキャンセルされたことを示します。|
-|[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|タスクが実行中であることを示します。|
-|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|ハンドルされない例外が原因でタスクが完了したことを示します。|
-|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|タスクが正常に実行されたことを示します。|
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|プロパティのバッキングフィールド <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 。|
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|オブジェクトの次に使用できる識別子 <xref:System.Threading.Tasks.Task> 。|
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|実行状態に到達する前にタスクがキャンセルされたこと、またはタスクが取り消しを確認し、例外なしで完了したことを示します。|
+|[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|タスクが実行されていることを示します。|
+|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|未処理の例外のためにタスクが完了したことを示します。|
+|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|タスクの実行が正常に完了したことを示します。|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|タスクがデリゲートの実行を完了し、アタッチされた子タスクが終了するのを暗黙的に待機していることを示します。|
 
-## <a name="remarks"></a>Remarks
- 次の内部メソッドは、コード実行の入り口を示すため<xref:System.Threading.Tasks.Task>、デバッガー エンジンにとって便利です。
+## <a name="remarks"></a>解説
+ 次の内部メソッドは、開始をコード実行にマークするため、デバッガーエンジンに役立ち <xref:System.Threading.Tasks.Task> ます。
 
 - `Execute`
 
@@ -81,4 +81,4 @@ ms.locfileid: "80712735"
 
 ## <a name="see-also"></a>関連項目
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
-- [NET フレームワークの並列拡張内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework の並列拡張の内部構造](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

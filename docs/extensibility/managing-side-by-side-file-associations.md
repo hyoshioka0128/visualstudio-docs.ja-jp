@@ -1,5 +1,5 @@
 ---
-title: サイド バイ サイド ファイルの関連付けを管理する |マイクロソフトドキュメント
+title: Side-by-side ファイルの関連付けの管理 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,45 +11,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702758"
 ---
-# <a name="manage-side-by-side-file-associations"></a>ファイルの関連付けを管理する
+# <a name="manage-side-by-side-file-associations"></a>Side-by-side ファイルの関連付けの管理
 
-VSPackage がファイルの関連付けを提供する場合は、ファイルを開くために特定の[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]バージョンを呼び出す必要があるサイド バイ サイド インストールを処理する方法を決定する必要があります。 互換性のないファイル形式は、問題を複雑にします。
+VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ファイルを開くために特定のバージョンのを呼び出す必要があるサイドバイサイドインストールをどのように処理するかを決定する必要があります。 互換性のないファイル形式は、問題を複合します。
 
-ユーザーは、新しいバージョンの製品が以前のバージョンと互換性を持っていることを期待するため、既存のファイルをデータを失うことなく新しいバージョンにロードできます。 理想的には、VSPackage は、読み込みと以前のバージョンのファイル形式を保存できます。 これが true でない場合は、VSPackage の新しいバージョンにファイル形式をアップグレードする必要があります。 この方法の欠点は、アップグレードされたファイルを以前のバージョンで開くことができないということです。
+ユーザーは、新しいバージョンの製品を以前のバージョンと互換性があると想定しているため、既存のファイルを新しいバージョンに読み込んでデータを失うことはありません。 VSPackage を使用すると、以前のバージョンのファイル形式を読み込んで保存することができます。 それが当てはまる場合は、ファイル形式を VSPackage の新しいバージョンにアップグレードすることをお勧めします。 この方法の欠点は、アップグレードされたファイルを以前のバージョンで開くことができないことです。
 
-この問題を回避するには、ファイル形式が互換性のない場合に拡張子を変更します。 たとえば、VSPackage のバージョン 1 では拡張子 *.mypkg10*を使用でき、バージョン 2 では拡張子 *.mypkg20*を使用できます。 この違いは、特定のファイルを開く VSPackage を識別します。 古い拡張子に関連付けられているプログラムの一覧に新しい VSPackages を追加する場合、ユーザーはファイルを右クリックして、新しい VSPackage で開くことを選択できます。 その時点で、VSPackage は、新しい形式にファイルをアップグレードするか、ファイルを開くし、VSPackage の以前のバージョンとの互換性を維持する提供できます。
+この問題を回避するには、ファイル形式に互換性がなくなったときに拡張機能を変更します。 たとえば、VSPackage のバージョン1では拡張子 *mypkg10*を使用し、バージョン2では拡張子 *mypkg20*を使用できます。 この違いにより、特定のファイルを開く VSPackage が識別されます。 古い拡張機能に関連付けられているプログラムの一覧に新しい Vspackage を追加した場合、ユーザーはファイルを右クリックして、新しい VSPackage で開くことができます。 この時点で、VSPackage は、ファイルを新しい形式にアップグレードするか、ファイルを開いて、以前のバージョンの VSPackage との互換性を維持することを提供できます。
 
 > [!NOTE]
-> これらのアプローチを組み合わせることができます。 たとえば、古いファイルを読み込むことで下位互換性を提供し、ユーザーがファイル形式を保存するときにファイル形式をアップグレードするように指定できます。
+> これらのアプローチを組み合わせることができます。 たとえば、古いファイルを読み込んで旧バージョンとの互換性を提供し、ユーザーが保存したときにファイル形式をアップグレードすることができます。
 
 ## <a name="face-the-problem"></a>問題に直面する
 
-複数のサイド バイ サイド VSPackages で同じ拡張子を使用する場合は、その拡張子[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]に関連付けられているバージョンを選択する必要があります。 次の 2 つの方法があります。
+複数のサイドバイサイド Vspackage で同じ拡張機能を使用する場合は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 拡張機能に関連付けられているのバージョンを選択する必要があります。 次の2つの選択肢があります。
 
-- ユーザーのコンピュータにインストールされている最新バージョン[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]のファイルを開きます。
+- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ユーザーのコンピューターにインストールされているの最新バージョンでファイルを開きます。
 
-   この方法では、インストーラーは、ファイルの関連付け用に書[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]き込まれたレジストリ エントリの最新バージョンを決定します。 Windows インストーラ パッケージには、カスタム動作を含めるで、最新バージョンの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]を示すプロパティを設定できます。
+   この方法では、インストーラーは、の最新バージョンを確認 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] し、ファイルの関連付け用に記述されたレジストリエントリにそれを含めます。 Windows インストーラーパッケージでは、の最新バージョンを示すプロパティを設定するカスタムアクションを含めることができ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
   > [!NOTE]
-  > このコンテキストでは、「最新」は「最新のサポートされているバージョン」を意味します。 これらのインストーラー エントリは、それ以降のリリースの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]を自動的に検出しません。 [システム要件の検出](../extensibility/internals/detecting-system-requirements.md)と[インストール後に実行する必要があるコマンド](../extensibility/internals/commands-that-must-be-run-after-installation.md)のエントリは、ここで示したものと似ており、追加バージョンの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]をサポートするために必要です。
+  > このコンテキストでは、"latest" は "最新のサポートされているバージョン" を意味します。 これらのインストーラーエントリは、の今後のリリースを自動的に検出しません [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 [インストール後に実行する必要](../extensibility/internals/commands-that-must-be-run-after-installation.md)がある[システム要件](../extensibility/internals/detecting-system-requirements.md)とコマンドの検出のエントリは、ここに記載されているものと似ており、の追加バージョンをサポートするために必要です [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
-   CustomAction テーブルの次の行は、DEVENV_EXE_LATEST プロパティを設定し、[インストール後に実行する必要があるコマンド](../extensibility/internals/commands-that-must-be-run-after-installation.md)で説明した AppSearch テーブルと RegLocator テーブルで設定されたプロパティにします。 テーブルの行は、実行シーケンスの初期段階でカスタム アクションをスケジュールします。 [条件] 列の値によって、ロジックが機能します。
+   CustomAction テーブルの次の行は、DEVENV_EXE_LATEST プロパティを、「 [インストール後に実行する必要のあるコマンド](../extensibility/internals/commands-that-must-be-run-after-installation.md)」で説明されている AppSearch および reglocator テーブルによって設定されるプロパティに設定します。 InstallExecuteSequence テーブル内の行は、実行シーケンスの早い段階でカスタムアクションをスケジュールします。 条件列の値によって、ロジックが機能します。
 
-  - Visual Studio .NET 2002 は、現在のバージョンが唯一の場合は最新バージョンです。
+  - Visual Studio .NET 2002 は、唯一のバージョンの場合は、最新バージョンです。
 
-  - Visual Studio .NET 2003 は、最新バージョンが存在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]し、存在しない場合にのみ使用されます。
+  - Visual Studio .NET 2003 は、現在のバージョンであり、存在しない場合にのみ、最新のバージョンです [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
-  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]は、現在のバージョンが唯一の場合は最新バージョンです。
+  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は最新バージョンであり、唯一のバージョンです。
 
-    結果として、DEVENV_EXE_LATESTに最新バージョンの devenv.exe のパスが含まれるという結果が得られます。
+    結果として、DEVENV_EXE_LATEST には devenv.exe の最新バージョンのパスが含まれます。
 
-  **最新バージョンの Visual Studio を決定するカスタム アクション テーブル行**
+  **CustomAction Visual Studio の最新バージョンを決定するテーブル行**
 
   |アクション|Type|source|移行先|
   |------------|----------|------------|------------|
@@ -57,35 +57,35 @@ VSPackage がファイルの関連付けを提供する場合は、ファイル�
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
   |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|
 
-  **Visual Studio の最新バージョンを決定するテーブル行のインストール実行シーケンス**
+  **Visual Studio の最新バージョンを決定する InstallExecuteSequence テーブル行**
 
-  |アクション|条件|Sequence|
+  |アクション|条件|シーケンス|
   |------------|---------------|--------------|
-  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002としない(DEVENV_EXE_2003またはDEVENV_EXE_2005)|410|
-  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003とDEVENV_EXE_2005ではない|420|
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 と NOT (DEVENV_EXE_2003 または DEVENV_EXE_2005)|410|
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 であり DEVENV_EXE_2005 ではありません|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Windows インストーラ パッケージのレジストリ テーブルのDEVENV_EXE_LATEST プロパティを使用して **、HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand**キーの既定値 [DEVENV_EXE_LATEST] "%1" を書き込むことができます。
+   Windows インストーラーパッケージのレジストリテーブルの DEVENV_EXE_LATEST プロパティを使用して、 **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** キーの既定値である [DEVENV_EXE_LATEST] "%1" を書き込むことができます。
 
-- 利用可能な VSPackage バージョンから最良の選択を行うことができる共有ランチャー プログラムを実行します。
+- 使用可能な VSPackage バージョンから最適な選択を行うことができる共有ランチャープログラムを実行します。
 
-   開発者は、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]このアプローチを選択して、多くのバージョンの ソリューションおよびプロジェクトの複数の形式の複雑な要件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]を処理します。 この方法では、ランチャー プログラムを拡張機能ハンドラーとして登録します。 ランチャーはファイルを調べ、VSPackage のどのバージョン[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]がその特定のファイルを処理できるかを決定します。 たとえば、ユーザーが VSPackage の特定のバージョンで最後に保存されたファイルを開いた場合、ランチャーは、対応するバージョンの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage を起動できます。 さらに、ユーザーは常に最新バージョンを起動するようにランチャーを構成できます。 ランチャーは、ファイルの形式をアップグレードするようにユーザーに促すこともできます。 ファイルの形式にバージョン番号が含まれている場合、ファイル形式がインストールされている VSPackages の 1 つ以上のバージョンからのファイル形式かどうかをユーザーに通知できます。
+   の開発者は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] この方法を選択して、多くのバージョンので発生する複数の形式のソリューションとプロジェクトの複雑な要件を処理し [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 この方法では、ランチャープログラムを拡張機能ハンドラーとして登録します。 ランチャーは、ファイルを調べ、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] その特定のファイルを処理できるのバージョンと VSPackage を決定します。 たとえば、特定のバージョンの VSPackage によって最後に保存されたファイルをユーザーが開いた場合、ランチャーは、対応するバージョンのでその VSPackage を開始でき [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 また、ユーザーはランチャーを構成して常に最新バージョンを起動することもできます。 ランチャーでは、ファイルの形式をアップグレードするようにユーザーに求めることもできます。 ファイルの形式にバージョン番号が含まれている場合、ランチャーは、インストールされている Vspackage のうちの1つ以上のバージョンのファイル形式であるかどうかをユーザーに通知できます。
 
-   起動ツールは、VSPackage のすべてのバージョンと共有される Windows インストーラー コンポーネントに含まれている必要があります。 このプロセスにより、最新バージョンが常にインストールされ、VSPackage のすべてのバージョンがアンインストールされるまで削除されません。 この方法では、VSPackage の 1 つのバージョンがアンインストールされた場合でも、ランチャー コンポーネントのファイルの関連付けやその他のレジストリ エントリが保持されます。
+   ランチャーは、VSPackage のすべてのバージョンと共有される Windows インストーラーコンポーネントに含まれている必要があります。 このプロセスによって、最新バージョンが常にインストールされ、VSPackage のすべてのバージョンがアンインストールされるまで削除されません。 この方法では、VSPackage の1つのバージョンがアンインストールされても、ランチャーコンポーネントのファイルの関連付けとその他のレジストリエントリは保持されます。
 
 ## <a name="uninstall-and-file-associations"></a>アンインストールとファイルの関連付け
 
-ファイルの関連付けのレジストリ エントリを書き込む VSPackage をアンインストールすると、ファイルの関連付けが削除されます。 したがって、拡張機能には関連付けられたプログラムはありません。 Windows インストーラーは、VSPackage のインストール時に追加されたレジストリ エントリを "回復" しません。 ユーザーのファイルの関連付けを修正する方法を次に示します。
+ファイルの関連付けのレジストリエントリを書き込む VSPackage をアンインストールすると、ファイルの関連付けが削除されます。 そのため、拡張機能に関連付けられているプログラムはありません。 Windows インストーラーは、VSPackage のインストール時に追加されたレジストリエントリを "回復" しません。 ユーザーのファイルの関連付けを修正するには、次の方法があります。
 
-- 前述のとおり、共有ランチャーコンポーネントを使用します。
+- 前述のように、共有ランチャーコンポーネントを使用します。
 
-- ユーザーがファイルの関連付けを所有する VSPackage のバージョンの修復を実行するようにユーザーに指示します。
+- ユーザーがファイルの関連付けを所有する VSPackage のバージョンの修復を実行するように指示します。
 
-- 適切なレジストリ エントリを書き換える別の実行可能プログラムを提供します。
+- 適切なレジストリエントリを書き換える別の実行可能プログラムを指定します。
 
-- ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できるようにする構成オプション ページまたはダイアログ ボックスを提供します。 アンインストール後に実行するようユーザーに指示します。
+- [構成オプション] ページまたはダイアログボックスを使用して、ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できるようにします。 アンインストール後に実行するようにユーザーに指示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [サイド バイ サイド展開のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [サイドバイサイド配置のためにファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)

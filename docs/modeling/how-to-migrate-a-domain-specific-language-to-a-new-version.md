@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532612"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
@@ -44,9 +44,9 @@ ms.locfileid: "85532612"
 
 2. 変換するソリューションおよびプロジェクトが含まれているフォルダーを選択します。
 
-   - ツールの上部にあるボックスにパスを入力するか、[**参照**] をクリックします。
+   - ツールの上部にあるボックスにパスを入力するか、[ **参照**] をクリックします。
 
-     移行ツールには、Dsl を定義または使用するプロジェクトのツリーが表示されます。 ツリーには、 **VisualStudio**または**texttemplating**アセンブリを使用するすべてのプロジェクトが含まれます。
+     移行ツールには、Dsl を定義または使用するプロジェクトのツリーが表示されます。 ツリーには、 **VisualStudio** または **texttemplating** アセンブリを使用するすべてのプロジェクトが含まれます。
 
 3. プロジェクトのツリーを確認し、変換しないプロジェクトをオフにします。
 
@@ -57,7 +57,7 @@ ms.locfileid: "85532612"
 
 4. プロジェクトを変換します。
 
-   1. [**変換**] をクリックします。
+   1. [ **変換**] をクリックします。
 
         各プロジェクトファイルが変換される前に、vs2008 のコピーが_プロジェクト_**. .csproj**として**保存さ**_れます。_
 
@@ -71,10 +71,10 @@ ms.locfileid: "85532612"
 
    1. ソリューションを開きます。
 
-   2. ソリューションエクスプローラーのヘッダーにある [**すべてのテンプレートの変換**] ボタンをクリックします。
+   2. ソリューションエクスプローラーのヘッダーにある [ **すべてのテンプレートの変換** ] ボタンをクリックします。
 
        > [!NOTE]
-       > この手順を不要にすることができます。 詳細については、「[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))」を参照してください。
+       > この手順を不要にすることができます。 詳細については、「 [すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))」を参照してください。
 
 6. 変換されたプロジェクトのカスタムコードを更新します。
 

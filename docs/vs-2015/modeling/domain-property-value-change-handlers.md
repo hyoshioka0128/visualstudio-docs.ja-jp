@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 69ebcc264eb3caa68fa0dfd2998613a7c9037b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669769"
 ---
 # <a name="domain-property-value-change-handlers"></a>ドメイン プロパティ値変更ハンドラー
@@ -24,9 +24,9 @@ ms.locfileid: "72669769"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ドメイン固有言語で、ドメイン プロパティの値が変わると、ドメイン プロパティ ハンドラーで `OnValueChanging()` メソッドおよび `OnValueChanged()` メソッドが呼び出されます。 変更に応答するために、これらのメソッドをオーバーライドできます。
 
 ## <a name="overriding-the-property-handler-methods"></a>プロパティ ハンドラー メソッドのオーバーライド
- ドメイン固有言語の各ドメイン プロパティは親のドメイン クラス内で入れ子になっているクラスにより処理されます。 その名前は、 *PropertyName*propertyhandler という形式に従います。 このプロパティハンドラークラスを検査するには、ファイルを**生成**します。 このクラスで、`OnValueChanging()` は値が変更される直前に呼び出され、`OnValueChanged()` は値が変更された直後に呼び出されます。
+ ドメイン固有言語の各ドメイン プロパティは親のドメイン クラス内で入れ子になっているクラスにより処理されます。 その名前は、 *PropertyName*propertyhandler という形式に従います。 このプロパティハンドラークラスを検査するには、ファイルを **生成**します。 このクラスで、`OnValueChanging()` は値が変更される直前に呼び出され、`OnValueChanged()` は値が変更された直後に呼び出されます。
 
- たとえば、`Comment` という名前のドメインクラスに `Text` という名前の文字列ドメインプロパティがあり、`TextLengthCount` という名前の整数プロパティを持つとします。 @No__t_0 常に `Text` 文字列の長さを含むようにするには、Dsl プロジェクト内の別のファイルに次のコードを記述します。
+ たとえば、という名前の `Comment` 文字列ドメインプロパティとという名前の整数プロパティを持つという名前のドメインクラスがあるとし `Text` `TextLengthCount` ます。 `TextLengthCount`常に文字列の長さが含まれるようにするには `Text` 、Dsl プロジェクト内の別のファイルに次のコードを記述します。
 
 ```
 // Domain Class "Comment":
@@ -63,7 +63,7 @@ public partial class Comment
 
 - 変更ハンドラーを使用して新しい値を変更することはできません。 たとえば、値を特定の範囲に制限する場合などは、`ChangeRule` を定義します。
 
-- リレーションシップのロールを表すプロパティに変更ハンドラーを追加することはできません。 その代わり、リレーションシップ クラス上で `AddRule` および `DeleteRule` を定義します。 これらの規則は、リンクが作成または変更されるとトリガーされます。 詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+- リレーションシップのロールを表すプロパティに変更ハンドラーを追加することはできません。 その代わり、リレーションシップ クラス上で `AddRule` および `DeleteRule` を定義します。 これらの規則は、リンクが作成または変更されるとトリガーされます。 詳細については、「 [ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
 ### <a name="changes-in-and-out-of-the-store"></a>ストア内外の変更
  プロパティ ハンドラー メソッドは変更を開始したトランザクションの内部で呼び出されます。 したがって、新しいトランザクションを開かずに、ストア内でより多くの変更を加えることができます。 変更により追加のハンドラーが呼び出される場合があります。
@@ -97,14 +97,14 @@ if (newValue > 10)
 ### <a name="alternative-technique-calculated-properties"></a>代替手法: 計算されるプロパティ
  前述の例は OnValueChanged() を使用して、あるドメイン プロパティから別のドメイン プロパティへ値を伝達する方法を示しています。 各プロパティは独自の格納値を持っています。
 
- 代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、「[計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
+ 代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、「 [計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
 
- 前の例の代わりに、DSL 定義で**計算**されるように `TextLengthCount` の**Kind**フィールドを設定できます。 このドメインプロパティに対して独自の**Get**メソッドを指定します。 **Get**メソッドは、`Text` 文字列の現在の長さを返します。
+ 前の例の代わりに、 **Kind** `TextLengthCount` DSL 定義で**計算**されるの Kind フィールドを設定できます。 このドメインプロパティに対して独自の **Get** メソッドを指定します。 **Get**メソッドは、文字列の現在の長さを返し `Text` ます。
 
  ただし、計算されるプロパティの潜在的な欠点は、値が使用されるたびに式が評価されるため、パフォーマンスの問題が生じる可能性があることです。 また、計算されるプロパティに OnValueChanging() および OnValueChanged() はありません。
 
 ### <a name="alternative-technique-change-rules"></a>代替手法: 変更規則
- ChangeRule を定義した場合、プロパティの値が変更されるトランザクションの最後に実行されます。  詳細については、「[ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
+ ChangeRule を定義した場合、プロパティの値が変更されるトランザクションの最後に実行されます。  詳細については、「 [ルールによってモデル内の変更が反映される](../modeling/rules-propagate-changes-within-the-model.md)」を参照してください。
 
  1 つのトランザクション内で複数の変更があった場合、ChangeRule はそれらすべてが完了したときに実行されます。 これに対して、OnValue...メソッドは、一部の変更が実行されていない場合に実行されます。 目的に応じて、ChangeRule が適切である場合があります。
 

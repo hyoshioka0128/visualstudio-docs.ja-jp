@@ -1,5 +1,5 @@
 ---
-title: '方法: テキスト バッファー イベント、レガシ API の登録 |Microsoft Docs'
+title: '方法: 従来の API を使用してテキストバッファーイベントに登録する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f36e8dd780788d241e3c286b1bbbe581311b143
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204089"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>方法: レガシ API でテキスト バッファー イベントを登録する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキスト バッファーを従来の API を使用してアクセスする場合は、テキスト バッファー イベント、次の手順で示すように登録してください。  
+レガシ API を使用してテキストバッファーにアクセスする場合は、次の手順に示すように、テキストバッファーイベントに登録する必要があります。  
   
-### <a name="to-advise-text-buffer-events"></a>テキスト バッファーのイベントを通知するには  
+### <a name="to-advise-text-buffer-events"></a>テキストバッファーイベントをアドバイズするには  
   
-1. 上のインターフェイスのいずれかへのポインターから<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>、呼び出す`QueryInterface`へのポインターの<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>します。  
+1. のインターフェイスのいずれかへのポインターから <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 、 `QueryInterface` へのポインターに対してを呼び出し <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> ます。  
   
-2. 呼び出す、<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>メソッド、および登録するイベントのインターフェイス ID を渡します。  
+2. <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>メソッドを呼び出して、登録するイベントのインターフェイス ID を渡します。  
   
-     例では、登録する場合の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>、インターフェイス ID の IID_IVsTextLinesEvents で渡します。  
+     たとえば、に登録する場合は、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> IID_IVsTextLinesEvents のインターフェイス ID を渡します。  
   
-     テキスト バッファーへのポインターを返します、<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>適切な接続ポイント オブジェクトのインターフェイス。  
+     テキストバッファーは、 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> 適切な接続ポイントオブジェクトのインターフェイスへのポインターを返します。  
   
-3. このポインターを使用して、呼び出し、<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>を登録する、たとえば、イベント インターフェイスの実装にポインターを渡し、メソッド、`IVsTextLinesEvents`インターフェイス。  
+3. このポインターを使用して、メソッドを呼び出します。これには、インターフェイスなど、 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> 登録するイベントインターフェイスの実装へのポインターを渡し `IVsTextLinesEvents` ます。  
   
-     環境が呼び出すことによってイベントのリッスンを中止し、使用できるクッキーを返します、<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>メソッド。  
+     この環境では、メソッドを呼び出すことによって、イベントのリッスンを停止するために使用できる cookie が返され <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [レガシ API のテキスト バッファー イベント](../extensibility/text-buffer-events-in-the-legacy-api.md)

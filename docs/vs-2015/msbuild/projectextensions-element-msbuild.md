@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551256"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 要素 (MSBuild)
@@ -32,7 +32,7 @@ ms.locfileid: "62551256"
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルに、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 以外の情報を含めることを可能にします。 `ProjectExtensions` 要素内のすべてのものは、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] によって無視されます。  
   
  \<Project>  
- \<ProjectExtensions >  
+ \<ProjectExtensions>  
   
 ## <a name="syntax"></a>構文  
   
@@ -57,7 +57,7 @@ ms.locfileid: "62551256"
 |-------------|-----------------|  
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>注釈  
  `ProjectExtensions` 要素は [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトで1 つだけ使用できます。  
   
 ## <a name="example"></a>例  
@@ -75,6 +75,6 @@ ms.locfileid: "62551256"
 </ProjectExtensions>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)  
+## <a name="see-also"></a>参照  
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

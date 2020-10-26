@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690214"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>マーカーとしての EventSource イベントの視覚化
@@ -37,13 +37,13 @@ ms.locfileid: "65690214"
   
 |ETW レベル|コンカレンシー ビジュアライザーの重要度|  
 |---------------|---------------------------------------|  
-|win:LogAlways|標準|  
-|win:Critical|重大|  
-|win:Error|重大|  
-|win:Warning|High|  
-|win:Informational|標準|  
-|win:Verbose|Low|  
-|win:verbose より大きい|Low|  
+|win:LogAlways|Normal|  
+|win:Critical|Critical|  
+|win:Error|Critical|  
+|win:Warning|高|  
+|win:Informational|Normal|  
+|win:Verbose|低|  
+|win:verbose より大きい|低|  
   
 ### <a name="series-name"></a>系列の名前  
  イベントのタスク名は系列名に使用されます。 イベントにタスクが定義されていない場合、系列名は空です。  
@@ -51,7 +51,7 @@ ms.locfileid: "65690214"
 ### <a name="category"></a>カテゴリ  
  レベルが win:Critical または win:Error の場合、カテゴリはアラート (-1) です。 それ以外の場合は、カテゴリは既定 (0) です。  
   
-### <a name="text"></a>テキスト  
+### <a name="text"></a>Text  
  printf 型の書式設定されたテキスト メッセージがイベントに対して定義されている場合、マーカーの説明として表示されます。 それ以外の場合は、説明はイベントの名前と各ペイロード フィールドの値です。  
   
 ## <a name="customizing-visualization-of-eventsource-events"></a>EventSource イベントの視覚化のカスタマイズ  
@@ -62,32 +62,32 @@ ms.locfileid: "65690214"
   
 |cvType 値|結果として得られるマーカーの種類|  
 |------------------|---------------------------|  
-|0|メッセージ|  
+|0|[メッセージ]|  
 |1|スパンの開始|  
 |2|スパンの終了|  
 |3|フラグ|  
-|その他のすべての値|メッセージ|  
+|その他のすべての値|[メッセージ]|  
   
 ### <a name="importance"></a>重要度  
  `cvImportance` フィールド (バイト) を使用して、EventSource イベントの重要度の設定を制御できます。 しかし、表示されるイベントの重要度はレベルを使用して制御することをお勧めします。  
   
 |cvImportance 値|コンカレンシー ビジュアライザーの重要度|  
 |------------------------|---------------------------------------|  
-|0|標準|  
-|1|重大|  
-|2|High|  
+|0|Normal|  
+|1|Critical|  
+|2|高|  
 |3|高|  
-|4|標準|  
-|5|Low|  
-|その他のすべての値|Low|  
+|4|Normal|  
+|5|低|  
+|その他のすべての値|低|  
   
 ### <a name="series-name"></a>系列の名前  
  `cvSeries` イベント フィールド (文字列) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定する系列名を制御できます。  
   
 ### <a name="category"></a>カテゴリ  
- `cvCategory` ィールド (バイト) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定するカテゴリを制御できます。  
+ `cvCategory` フィールド (バイト) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定するカテゴリを制御できます。  
   
-### <a name="text"></a>テキスト  
+### <a name="text"></a>Text  
  `cvTextW` フィールド (文字列) を使用して、コンカレンシー ビジュアライザーが EventSource イベントに指定する説明を制御できます。  
   
 ### <a name="spanid"></a>SpanID  
@@ -96,5 +96,5 @@ ms.locfileid: "65690214"
 > [!NOTE]
 > SpanID を使用してスパンを入れ子にすること、同じスレッドで部分的に重複させること、または開始と終了のスレッドを別にすることはサポートされていません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

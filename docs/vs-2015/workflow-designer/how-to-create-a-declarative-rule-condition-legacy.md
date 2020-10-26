@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849331"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>方法: 宣言的ルール条件を作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してルール条件を宣言する方法について説明します。
 
- 条件ステートメントは、 **True**または**False**に評価されます。 宣言型のルール条件とは、[[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)を使用して作成され、ワークフローと共に XML として格納される condition ステートメントです。 複数の述語を結合したブール値演算とワークフロー ステートとを比較する述語を含めることができます。
+ 条件ステートメントは、 **True** または **False**に評価されます。 宣言型のルール条件とは、[ [ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) を使用して作成され、ワークフローと共に XML として格納される condition ステートメントです。 複数の述語を結合したブール値演算とワークフロー ステートとを比較する述語を含めることができます。
 
  宣言的ルール条件は、次のような Windows Workflow Foundation 事前定義アクティビティで使用されます。
 
@@ -41,23 +41,23 @@ ms.locfileid: "75849331"
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>ルール条件エディタを使って宣言的ルール条件を作成するには
 
-1. アクティビティの **[プロパティ]** ウィンドウで、アクティビティに応じて **[条件]** **プロパティまたは**[期間] プロパティをクリックします。
+1. アクティビティの [ **プロパティ** ] ウィンドウで、アクティビティに応じて [ **条件** ] **プロパティまたは** [期間] プロパティをクリックします。
 
-2. プロパティの一覧から **[宣言型の規則の条件]** を選択します。
+2. プロパティの一覧から [ **宣言型の規則の条件** ] を選択します。
 
-3. **[条件]** または 発生する **[条件]** プロパティを展開します。
+3. [ **条件** ] または [発生する **条件** ] プロパティを展開します。
 
-4. **[Conditionname]** プロパティをクリックします。
+4. [ **Conditionname** ] プロパティをクリックします。
 
-5. **[Conditionname]** の省略記号 **[...]** をクリックして、 **[条件の選択]** ダイアログボックスを開きます。
+5. [ **Conditionname** ] の省略記号 **[...]** をクリックして、[ **条件の選択** ] ダイアログボックスを開きます。
 
-6. **[新しい条件]** をクリックして、 **[ルール条件エディター]** ダイアログボックスを開きます。
+6. [ **新しい条件** ] をクリックして、[ **ルール条件エディター** ] ダイアログボックスを開きます。
 
-7. **[条件]** ボックスに条件の式を入力します。
+7. [ **条件** ] ボックスに条件の式を入力します。
 
-     条件式の作成方法の詳細については、「[[ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)」を参照してください。
+     条件式の作成方法の詳細については、「[ [ルール条件エディター] ダイアログボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)」を参照してください。
 
-8. 条件式の作成が終了したら、 **[OK]** をクリックしてダイアログボックスを閉じ、名前が割り当てられたルール条件を作成します。
+8. 条件式の作成が終了したら、[ **OK** ] をクリックしてダイアログボックスを閉じ、名前が割り当てられたルール条件を作成します。
 
      **[条件の選択**] ダイアログボックスが表示されます。
 

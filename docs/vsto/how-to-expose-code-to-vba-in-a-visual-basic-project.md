@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544847"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>方法: Visual Basic プロジェクトでコードを VBA に公開する
@@ -28,7 +28,7 @@ ms.locfileid: "85544847"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Visual Basic プロセスは、Visual C# のプロセスとは異なります。 詳細については、「[方法: Visual C&#35; プロジェクトでコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)する」を参照してください。
+ Visual Basic プロセスは、Visual C# のプロセスとは異なります。 詳細については、「 [方法: Visual C&#35; プロジェクトでコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)する」を参照してください。
 
  このプロセスは、他のクラスのコードの場合とは異なり、ホスト項目クラスのコードでは異なります。
 
@@ -36,10 +36,10 @@ ms.locfileid: "85544847"
 
 - [ホスト項目クラスに含まれていないコードを公開する](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>ホスト項目クラスでコードを公開する
- VBA コードがホスト項目クラスの Visual Basic コードを呼び出せるようにするには、ホスト項目の**EnableVbaCallers**プロパティを**True**に設定します。
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> ホスト項目クラスでコードを公開する
+ VBA コードがホスト項目クラスの Visual Basic コードを呼び出せるようにするには、ホスト項目の **EnableVbaCallers** プロパティを **True**に設定します。
 
- ホスト項目クラスのメソッドを公開してから VBA から呼び出す方法を示すチュートリアルについては、「[チュートリアル: Visual Basic プロジェクトの vba からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)」を参照してください。 ホスト項目の詳細については、「[ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+ ホスト項目クラスのメソッドを公開してから VBA から呼び出す方法を示すチュートリアルについては、「 [チュートリアル: Visual Basic プロジェクトの vba からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)」を参照してください。 ホスト項目の詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>ホスト項目内のコードを VBA に公開するには
 
@@ -52,18 +52,18 @@ ms.locfileid: "85544847"
 
 2. マクロを有効にするようユーザーに求めることなく、ドキュメント内の VBA コードの実行が許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
-3. VBA に公開するプロパティ、メソッド、またはイベントをプロジェクトのホスト項目クラスの1つに追加し、新しいメンバーを**パブリック**として宣言します。 クラスの名前は、アプリケーションによって異なります。
+3. VBA に公開するプロパティ、メソッド、またはイベントをプロジェクトのホスト項目クラスの1つに追加し、新しいメンバーを **パブリック**として宣言します。 クラスの名前は、アプリケーションによって異なります。
 
     - Word プロジェクトでは、ホスト項目クラスには既定でという名前が付けられ `ThisDocument` ます。
 
     - Excel プロジェクトでは、ホスト項目クラスは、既定では、、、およびという名前に `ThisWorkbook` `Sheet1` `Sheet2` `Sheet3` なります。
 
-4. ホスト項目の**EnableVbaCallers**プロパティを**True**に設定します。 このプロパティは、デザイナーでホスト項目が開いているときに、[**プロパティ**] ウィンドウで使用できます。
+4. ホスト項目の **EnableVbaCallers** プロパティを **True**に設定します。 このプロパティは、デザイナーでホスト項目が開いているときに、[ **プロパティ** ] ウィンドウで使用できます。
 
-     このプロパティを設定すると、Visual Studio によって自動的に**ReferenceAssemblyFromVbaProject**プロパティが**True**に設定されます。
+     このプロパティを設定すると、Visual Studio によって自動的に **ReferenceAssemblyFromVbaProject** プロパティが **True**に設定されます。
 
     > [!NOTE]
-    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **EnableVbaCallers**プロパティを**True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **EnableVbaCallers** プロパティを **True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 5. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、からプロジェクトを実行しているときに、ブックまたはドキュメントに VBA コードを追加した場合、次にプロジェクトをビルドしたときに VBA コードが失われることを示して [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] います。 これは、プロジェクトをビルドするたびに、ビルド出力フォルダー内のドキュメントが上書きされるためです。
 
@@ -71,7 +71,7 @@ ms.locfileid: "85544847"
 
 6. プロジェクトをビルドします。
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>ホスト項目クラスに含まれていないコードを公開する
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> ホスト項目クラスに含まれていないコードを公開する
  VBA コードがホスト項目クラスに含まれていない Visual Basic コードを呼び出せるようにするには、コードを変更して VBA に表示されるようにします。
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>ホスト項目クラスに含まれていないコードを VBA に公開するには
@@ -85,7 +85,7 @@ ms.locfileid: "85544847"
 
 2. マクロを有効にするようユーザーに求めることなく、ドキュメント内の VBA コードの実行が許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
-3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを**パブリック**として宣言します。
+3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを **パブリック**として宣言します。
 
 4. 次の <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性と <xref:Microsoft.VisualBasic.ComClassAttribute> 属性を、VBA に公開するクラスに適用します。 これらの属性により、クラスが VBA に表示されるようになります。
 
@@ -107,7 +107,7 @@ ms.locfileid: "85544847"
 7. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
 
     > [!NOTE]
-    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject**プロパティを**True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 8. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、からプロジェクトを実行しているときに、ブックまたはドキュメントに VBA コードを追加した場合、次にプロジェクトをビルドしたときに VBA コードが失われることを示して [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] います。 これは、プロジェクトをビルドするたびに、ビルド出力フォルダー内のドキュメントが上書きされるためです。
 

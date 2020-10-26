@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984554"
 ---
 # <a name="update-visual-studio-for-mac"></a>Visual Studio for Mac を更新する
@@ -36,7 +36,7 @@ Visual Studio for Mac では、2 つのチャネルでこれらの最新バー�
 
 ## <a name="changing-the-updater-channel"></a>更新チャネルを変更する
 
-チャネルを変更するには、チャネル ドロップダウンからチャネルを選び、 **[チャネルの切り替え]** ボタンをクリックします。
+チャネルを変更するには、チャネル ドロップダウンからチャネルを選び、**[チャネルの切り替え]** ボタンをクリックします。
 
 ![チャネルの変更ドロップダウン](media/update-image3.png)
 
@@ -46,7 +46,7 @@ Visual Studio for Mac では、2 つのチャネルでこれらの最新バー�
 
 **[自動的に確認する]** オプションを選択した場合は、Visual Studio for Mac を開くと [Visual Studio の更新] ボックスが表示され、新しい更新プログラムが利用できることを通知します。 新しいダウンロードは、このボックスが表示されたときに、コンピューターに自動的にダウンロードされます。
 
-更新プログラムのインストールを開始するには、 **[再起動して更新プログラムをインストールする]** ボタンを選びます。
+更新プログラムのインストールを開始するには、**[再起動して更新プログラムをインストールする]** ボタンを選びます。
 
 ![更新プログラムのインストールを開始するボタン](media/update-image4.png)
 
@@ -56,6 +56,6 @@ Visual Studio for Mac では、2 つのチャネルでこれらの最新バー�
 
 アップデーターに問題がある場合は、[アップデーターのトラブルシューティング](updater-troubleshooting.md)に関するガイドの手順に従ってみてください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio を更新する (Windows)](/visualstudio/install/update-visual-studio)

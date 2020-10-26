@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a4787831be31e2f91d668d4e3e7ca91496d7595a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985544"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>信頼リストを使用して Office ソリューションを信頼する
@@ -30,7 +30,7 @@ ms.locfileid: "72985544"
  ユーザーが信頼を付与されていない Office ソリューションを起動するとき、Microsoft Office ソリューションでは、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信頼プロンプトでその人にセキュリティ上の決定を求めます。 ユーザーがソリューションを信頼すると決定した場合、カスタマイズが実行され、次回からはプロンプトは出されません。
 
 ## <a name="inclusion-list-and-windows-installer"></a>信頼のリストと Windows インストーラー
- Windows インストーラーを使用して*Program Files*ディレクトリに Office ソリューションをインストールするには、管理者権限が必要です。 *Program Files*ディレクトリ内の office ソリューションでは、office ソリューションには既に FullTrust アクセス許可が付与されているため、Visual Studio Tools for Office ランタイムは、信頼の一覧をチェックしなくなりました。
+ Windows インストーラーを使用して *Program Files* ディレクトリに Office ソリューションをインストールするには、管理者権限が必要です。 *Program Files*ディレクトリ内の office ソリューションでは、office ソリューションには既に FullTrust アクセス許可が付与されているため、Visual Studio Tools for Office ランタイムは、信頼の一覧をチェックしなくなりました。
 
 ## <a name="clickonce-trust-prompt"></a>ClickOnce 信頼プロンプト
  Office ソリューションに [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] の実装を使用すると、管理者は、プロンプトを許可するか、プロンプトを無効にするか、または信頼された証明書を要求するように、信頼プロンプト レベルを構成することができます。 この構成を行うには、信頼のリストへのアクセスを制御するレジストリ キーを使用します。
@@ -42,6 +42,6 @@ ms.locfileid: "72985544"
 ## <a name="structure-of-the-inclusion-list"></a>包含リストの構造
  有効な信頼のリストのエントリには、配置マニフェストへのパスと、ソリューションの署名に使用する公開キーという 2 つの部分があります。 ソリューションが信頼のリストに追加されると、信頼されているとみなされます。 Office ソリューションが実行されると、Office アプリケーションによって信頼リストのパブリックキーが配置マニフェストの署名キーと比較され、現在実行中のソリューションが元の信頼バージョンと同じであることが確認されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

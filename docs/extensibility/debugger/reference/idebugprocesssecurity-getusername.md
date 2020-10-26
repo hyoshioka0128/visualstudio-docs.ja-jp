@@ -1,5 +1,5 @@
 ---
-title: セキュリティを設定します。マイクロソフトドキュメント
+title: 'IDebugProcessSecurity:: GetUserName |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef00a0b7489c3e5cb709520546f3d3f26c8a4eba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723251"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
@@ -39,13 +39,13 @@ int GetUserName (
 
 ## <a name="parameters"></a>パラメーター
 `pbstrUserName`\
-[アウト]ユーザー名を含む文字列。
+入出力ユーザー名を表す文字列です。
 
 ## <a name="return-value"></a>戻り値
- メソッドが成功した場合は `S_OK` を返します。 それ以外の場合は、エラー コードを返します。
+ メソッドが成功した場合は `S_OK` を返します。 それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- `GetUserName`は、[**プロセスにアタッチ**] ダイアログ ボックスの **[ユーザー名**] 列に表示されるユーザー名を返します。 [**プロセスにアタッチ**] ダイアログ ボックスを表示するには、統合開発環境 (IDE)[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]の **[ツール**] メニューの [**プロセスにアタッチ]** をクリックします。
+## <a name="remarks"></a>解説
+ `GetUserName`[**プロセスにアタッチ**] ダイアログボックスの [**ユーザー名**] 列に表示されるユーザー名を返します。 [**プロセスにアタッチ**] ダイアログボックスを表示するには、統合開発環境 (IDE) の [**ツール**] メニューの [**プロセスにアタッチ**] をクリックし [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8af0a0bf8bdf60c8ae9911ef0926cb9e395989a
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875580"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T> アクティビティ デザイナー
@@ -34,15 +34,15 @@ ms.locfileid: "86875580"
 
 次の表は、 <xref:System.Activities.Statements.RemoveFromCollection%601> プロパティと、デザイナーでのそれらの使用方法を示しています。
 
-|プロパティ名|必須|使用|
+|プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|誤り|<xref:System.Activities.Statements.RemoveFromCollection%601> アクティビティの省略可能な表示名。 既定値は RemoveFromCollection<Int32 \> です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|正しい|**コレクション \<T> **から削除する項目。 この項目の型は*T*で、 *typeargument*型です。 項目を指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|正しい|項目を削除するコレクション。 このコレクションの型は**ICollection<TypeArgument \> です。** コレクションを指定するには、プロパティグリッドで Visual Basic 式を入力します。|
-|*TypeArgument*|正しい|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型。 既定では、この*Typeargument*型は**Int32**に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの*Typeargument*の値を変更します。|
-|<xref:System.Activities.Activity%601.Result%2A>|誤り|指定した項目がコレクションから削除されたかどうかを示す値。 結果にバインドする変数を指定するには、プロパティ グリッドで変数を入力します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.RemoveFromCollection%601> アクティビティの省略可能な表示名。 既定値は RemoveFromCollection<Int32 \> です。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|○|**コレクション \<T> **から削除する項目。 この項目の型は *T*で、 *typeargument*型です。 項目を指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|○|項目を削除するコレクション。 このコレクションの型は **ICollection<TypeArgument \> です。** コレクションを指定するには、プロパティグリッドで Visual Basic 式を入力します。|
+|*TypeArgument*|○|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型。 既定では、この *Typeargument* 型は **Int32**に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの *Typeargument* の値を変更します。|
+|<xref:System.Activities.Activity%601.Result%2A>|×|指定した項目がコレクションから削除されたかどうかを示す値。 結果にバインドする変数を指定するには、プロパティ グリッドで変数を入力します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コレクション](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

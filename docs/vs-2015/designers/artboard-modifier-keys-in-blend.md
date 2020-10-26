@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658006"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend のアートボードの修飾キー
@@ -21,10 +21,10 @@ ms.locfileid: "72658006"
 
 キーボード ショートカットの中には、対応するメニュー項目がないものがあります。このようなショートカットは、[!INCLUDE[blend_subs](../includes/blend-subs-md.md)] のユーザー インターフェイスに表示されません。 次の表に、オブジェクトのサイズを変更する場合などに、行う操作を変更するショートカットを示します。
 
-|目的|操作手順|
+|行う操作|方法|
 |-----------------------|-------------|
-|別のツールが選択された状態のまま、一時的に **[選択内容]** ツールを選択する ( **[ツール]** パネルで **[選択内容]** と別のツールを切り替えるためにクリックする回数が減ります)|Ctrl キーを押す|
-|**[選択内容]** ツールを選択した状態で、選択したオブジェクトを少しずつ移動する|矢印キーを押す|
+|別のツールが選択された状態のまま、一時的に [**選択内容**] ツールを選択する ([**ツール**] パネルで [**選択内容**] と別のツールを切り替えるためにクリックする回数が減ります)|Ctrl キーを押す|
+|[**選択内容**] ツールを選択した状態で、選択したオブジェクトを少しずつ移動する|矢印キーを押す|
 |アートボードの位置変更|スペース バー押しながらアートボードをドラッグする|
 |アートボードに対してズーム インとズーム アウトを行う|マウス ホイールを回す|
 |アートボードをズーム インする|Ctrl キーとスペース バーを押しながらアートボードをクリックする|
@@ -40,7 +40,7 @@ ms.locfileid: "72658006"
 |マーキーをドラッグして選択する|Shift キーを押したままドラッグする|
 |別のオブジェクトの下にあるオブジェクトを選択する|Alt キーを押しながらオブジェクトの1 つのレイヤーあたり 1 回クリックする|
 |開いているドキュメントを切り替える|Ctrl キーと Tab キーを押す|
-|**[アセット]** パネルを開く|Ctrl キーを押しながらピリオド キーを押す|
+|[**アセット**] パネルを開く|Ctrl キーを押しながらピリオド キーを押す|
 
 ## <a name="see-also"></a>参照
- [キーボードショートカット](../designers/keyboard-shortcuts-in-blend.md)の[ペンツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md) [個別選択ツールの修飾キー](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+ [キーボードショートカット](../designers/keyboard-shortcuts-in-blend.md)の [ペンツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md) [個別選択ツールの修飾キー](../designers/direct-selection-tool-modifier-keys-in-blend.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする (クラス デザイナー) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a44b551e5b2a0b145040dc13cb0e624134f56cf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668165"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする (クラス デザイナー)
@@ -26,19 +26,19 @@ ms.locfileid: "72668165"
 
 ### <a name="to-copy-a-single-element"></a>1 つの要素をコピーするには
 
-- 図形を右クリックし、 **[イメージのコピー]** をクリックします。
+- 図形を右クリックし、**[イメージのコピー]** をクリックします。
 
 ### <a name="to-copy-several-elements"></a>複数の要素をコピーするには
 
 1. ダイアグラムで、コピーする図形を選択します。
 
-2. 選択項目を右クリックし、 **[イメージのコピー]** をクリックします。
+2. 選択項目を右クリックし、**[イメージのコピー]** をクリックします。
 
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>クラス図のすべての要素をコピーするには
 
-1. ダイアグラム サーフェイスを右クリックし、 **[すべて選択]** をクリックします。 (キーボード: **Ctrl + A**)
+1. ダイアグラム サーフェイスを右クリックし、**[すべて選択]** をクリックします。 (キーボード: **Ctrl + A**)
 
-2. **[編集]** メニューで、 **[イメージのコピー]** を選択します。
+2. **[編集]** メニューで、**[イメージのコピー]** を選択します。
 
    **[イメージのコピー]** の代わりに **[コピー]** を選択することもできます。 **[コピー]** は、イメージを通常のビットマップとしてコピーします。 **[イメージのコピー]** は、イメージをベクター ベースのイメージとしてコピーするので、ほとんどの Office アプリケーションにとってはこちらが向いています。
 

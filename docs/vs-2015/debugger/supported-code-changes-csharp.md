@@ -1,5 +1,5 @@
 ---
-title: サポートされるコードの変更 (c#) |Microsoft Docs
+title: サポートされているコード変更 (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823538"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C#)
@@ -47,7 +47,7 @@ ms.locfileid: "67823538"
 - アクティブ ステートメントの周囲への `foreach`、`using`、または `lock` の追加。  
   
 ## <a name="unsafe-code"></a>アンセーフ コード  
- アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュを含むメソッド内に存在するアンセーフ コードへの変更をサポートしません、`stackalloc`演算子。  
+ アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュでは、`stackalloc` 演算子を含むメソッド内に存在するアンセーフ コードの変更はサポートされていません。  
   
 ## <a name="exceptions"></a>例外  
  エディット コンティニュは、`catch` と `finally` ブロックへの変更をサポートしています。ただし、アクティブ ステートメントの周囲の `catch` または `finally` ブロックの追加は許可されていません。  
@@ -59,7 +59,7 @@ ms.locfileid: "67823538"
   
   - 以前にキャプチャされていない変数のキャプチャ。  
 
-  - クエリ式の型を変更する (たとえば、a = を select > 新しい選択 {A = を};)  
+  - クエリ式の種類の変更 (例: select a => select new {A = a};)  
 
   - アクティブなステートメントを含む `where` の削除。  
 
@@ -73,18 +73,18 @@ ms.locfileid: "67823538"
   
 - SQL デバッグ  
   
-- ワトソン博士のダンプのデバッグ  
+- ワトソン博士のダンプのデバッグ。  
   
-- 未処理の例外を後のコード編集時に、"**ハンドルされない例外でコール スタックをアンワインド**"オプションが選択されていません。  
+- 未処理の例外の後のコードの編集 ([ハンドルされていない**例外で呼び出し履歴をアンワインド**する] オプションが選択されていない場合)。  
   
 - 埋め込まれたランタイム アプリケーションのデバッグ  
   
-- 持つアプリケーションのデバッグ**にアタッチ**を選択して、アプリケーションを実行する代わりに**開始**から、**デバッグ**メニュー。  
+- [**デバッグ**] メニューの [**開始**] をクリックしてアプリケーションを実行するのではなく、アタッチされたアプリケーション**をデバッグする**。  
   
 - 最適化されたコードのデバッグ  
   
 - ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ  
   
-## <a name="see-also"></a>関連項目  
- [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+## <a name="see-also"></a>参照  
+ [エディットコンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

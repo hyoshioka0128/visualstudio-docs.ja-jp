@@ -1,5 +1,5 @@
 ---
-title: '方法: テストおよびデバッグのビジュアライザー |Microsoft Docs'
+title: '方法: ビジュアライザーをテストしてデバッグする | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176501"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>方法: ビジュアライザーをテストおよびデバッグする
@@ -54,9 +54,9 @@ ms.locfileid: "68176501"
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     詳細な例では、次を参照してください。[チュートリアル。C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)します。  
+     完全な例については、「[チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [チュートリアル: C# でビジュアライザーを記述する](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+## <a name="see-also"></a>参照  
+ [チュートリアル: C でビジュアライザーを記述する#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)   
  [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)

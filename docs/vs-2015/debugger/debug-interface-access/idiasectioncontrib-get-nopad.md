@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_nopad |Microsoft Docs
+title: 'IDiaSectionContrib:: get_nopad |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3044deb31214aae9c37ef7bb1f84324857ffb7d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151898"
 ---
-# <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
+# <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[次へ] のメモリ境界にセクションを埋めいないかどうかを示すフラグを取得します。  
+セクションを次のメモリ境界に埋め込むことができないかどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,13 +35,13 @@ HRESULT get_nopad(
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`セクションする必要があります。 [次へ] のメモリ境界行われていない場合、それ以外の場合を返します`FALSE`します。  
+ 入出力 `TRUE` セクションを次のメモリ境界に埋め込まない場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  これは通常、古いファイルでのみ見られるプロパティです。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugSymbolProvider:: GetContextFromAddress |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca6c3fa5d657100ecce55de31117ea2c2532374d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719252"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
-このメソッドは、デバッグ アドレスをドキュメント コンテキストにマップします。
+このメソッドは、デバッグアドレスをドキュメントコンテキストにマップします。
 
 ## <a name="syntax"></a>構文
 
@@ -43,13 +43,13 @@ int GetContextFromAddress(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in][インターフェイス](../../../extensibility/debugger/reference/idebugaddress.md)によって表されるデバッグ アドレス。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるデバッグアドレス。
 
 `ppDocContext`\
-[アウト]インターフェイスによって表されるドキュメント[コンテキストを](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)返します。
+入出力 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) インターフェイスによって表されるドキュメントコンテキストを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

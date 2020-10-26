@@ -1,5 +1,5 @@
 ---
-title: '&lt;製品&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;Product &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747453"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;製品&gt;要素 (ブートス トラップ)
-`Product`要素は、製品ファイル内の最上位の XML 要素。
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product &gt; 要素 (ブートストラップ)
+要素は、 `Product` 製品ファイル内の最上位レベルの XML 要素です。
 
 ## <a name="syntax"></a>構文
 
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `Product`製品ファイルに要素が必要です。 次の属性があります。
+ `Product`製品ファイルには要素が必要です。 これには、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
 |`ProductCode`|製品の一意の識別子。|
 
 ## <a name="example"></a>例
- 次のコード例では、.NET Framework をインストールするための完全な製品ファイルを示します。
+ 次のコード例は、.NET Framework をインストールするための完全な製品ファイルを示しています。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -250,4 +250,4 @@ ProductCode
 ```
 
 ## <a name="see-also"></a>関連項目
-- [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
+- [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

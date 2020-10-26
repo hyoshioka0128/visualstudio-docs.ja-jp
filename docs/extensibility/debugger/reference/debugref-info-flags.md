@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS |マイクロソフトドキュメント
+title: DEBUGREF_INFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737391"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
@@ -58,45 +58,45 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `DEBUGREF_INFO_NAME`\
-構造体のフィールドを`bstrName`初期化/使用します。
+構造体のフィールドを初期化/使用し `bstrName` ます。
 
 `DEBUGREF_INFO_TYPE`\
-構造体のフィールドを`bstrType`初期化/使用します。
+構造体のフィールドを初期化/使用し `bstrType` ます。
 
 `DEBUGREF_INFO_VALUE`\
-構造体のフィールドを`bstrValue`初期化/使用します。
+構造体のフィールドを初期化/使用し `bstrValue` ます。
 
 `DEBUGREF_INFO_ATTRIB`\
-構造体のフィールドを`dwAttrib`初期化/使用します。
+構造体のフィールドを初期化/使用し `dwAttrib` ます。
 
 `DEBUGREF_INFO_REFTYPE`\
-構造体のフィールドを`dwRefType`初期化/使用します。
+構造体のフィールドを初期化/使用し `dwRefType` ます。
 
 `DEBUGREF_INFO_REF`\
-構造体のフィールドを`pReference`初期化/使用します。
+構造体のフィールドを初期化/使用し `pReference` ます。
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-値フィールドには、このタイプのオブジェクトの自動拡張値 (使用可能な場合) が含まれている必要があります。
+[値] フィールドには、この種類のオブジェクトの自動展開値 (使用可能な場合) が含まれている必要があります。
 
 `DEBUGREF_INFO_NONE`\
-フラグが設定されていない状態を示します。
+フラグが設定されていないことを示します。
 
 `DEBUGREF_INFO_ALL`\
 フラグのマスクを示します。
 
-## <a name="remarks"></a>Remarks
-これらのフラグは[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)メソッドと[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)メソッドに渡され、[初期化するDEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のフィールドを示します。
+## <a name="remarks"></a>解説
+これらのフラグは、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のどのフィールドを初期化するかを示すために、 [Enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)メソッドと[getreferenceinfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)メソッドに渡されます。
 
-構造体の`dwFields`メンバーに対して`DEBUG_REFERENCE_INFO`、構造体が返されるときに使用され、有効なフィールドを示すために使用されます。
+構造体 `dwFields` のメンバーに、 `DEBUG_REFERENCE_INFO` 構造体が返されるときに使用されるフィールドと有効なフィールドを示すために使用されます。
 
-これらの値はビット単位`OR`で組み合わせることができる。
+これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

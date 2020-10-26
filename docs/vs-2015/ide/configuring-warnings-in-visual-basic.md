@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual Basic での警告の構成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619313"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic での警告の構成
@@ -49,10 +49,10 @@ ms.locfileid: "72619313"
 
  警告の一覧にはエラーとして扱う必要のある警告のエラー ID 番号が含まれ、それをコマンド ライン オプションで使って特定の警告のオン/オフを指定できます。 警告の一覧に無効な値が含まれる場合は、エラーが報告されます。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
  次の表では、コマンド ライン引数の動作の例を示します。
 
-|引数|説明|
+|引数|[説明]|
 |--------------|-----------------|
 |`vbc /warnaserror`|すべての警告をエラーとして扱うよう指定しています。|
 |`vbc /warnaserror:42024`|警告 42024 をエラーとして扱うよう指定します。|

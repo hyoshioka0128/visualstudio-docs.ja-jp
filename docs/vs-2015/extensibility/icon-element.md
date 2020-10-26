@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203991"
 ---
 # <a name="icon-element"></a>Icon 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アイコンのタグの guid 属性は、定義されているビットマップの guid です。  Id 属性は、ビットマップ ストリップのスロットを選択します。 この要素は省略可能です。  この要素を省略した場合の値**guidOfficeIcon:msotcidNoIcon**暗黙的に指定されます。  
+Icon タグの guid 属性は、定義されているビットマップの guid です。  Id 属性は、ビットマップストリップ内のスロットを選択します。 この要素は省略可能です。  この要素を省略した場合、 **guidOfficeIcon: msotcidNoIcon** の値は暗黙的に指定されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -36,8 +36,8 @@ ms.locfileid: "68203991"
   
 |属性|説明|  
 |---------------|-----------------|  
-|guid|必須。 定義されているビットマップの guid です。|  
-|id|必須。 ビットマップ ストリップでスロットを選択します。|  
+|guid|必須です。 定義されたビットマップの guid。|  
+|id|必須です。 ビットマップストリップ内のスロットを選択します。|  
   
 ### <a name="child-elements"></a>子要素  
   
@@ -51,5 +51,5 @@ ms.locfileid: "68203991"
 |-------------|-----------------|  
 |[Buttons 要素](../extensibility/buttons-element.md)||  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

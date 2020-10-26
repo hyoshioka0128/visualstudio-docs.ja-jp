@@ -1,5 +1,5 @@
 ---
-title: Iデバッグエンジン2::セットメトリック |マイクロソフトドキュメント
+title: 'IDebugEngine2:: SetMetric |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: caada8db1791d94e7a9632394cd4659bf8cec3a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730901"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
@@ -43,16 +43,16 @@ int SetMetric(
 
 ## <a name="parameters"></a>パラメーター
 `pszMetric`\
-[in]メトリック名。
+からメトリックの名前。
 
 `varValue`\
-[in]メトリック値を指定します。
+からメトリック値を指定します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- メトリックは、デバッグ エンジンの動作を変更したり、サポートされている機能をアドバタイズするために使用されるレジストリ値です。 このメソッドは、[デバッグ用 SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)関数の適切な形式に呼び出`SetMetric`しを転送できます。
+## <a name="remarks"></a>解説
+ メトリックは、デバッグエンジンの動作を変更したり、サポートされている機能を提供したりするために使用されるレジストリ値です。 このメソッドは、デバッグ機能を実行するために、適切な形式の [SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) に呼び出しを転送でき `SetMetric` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

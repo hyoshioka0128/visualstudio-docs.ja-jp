@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71693007"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio カスタマー エクスペリエンス向上プログラム
@@ -31,7 +31,7 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 
    **[Visual Studio エクスペリエンス向上プログラム]** ダイアログ ボックスが開きます。
 
-1. オプトアウトするには、 **[いいえ、参加しません]** を選んでから、 **[OK]** を選びます。 オプトインするには、 **[参加する]** を選んでから、 **[OK]** を選びます。
+1. オプトアウトするには、**[いいえ、参加しません]** を選んでから、**[OK]** を選びます。 オプトインするには、**[参加する]** を選んでから、**[OK]** を選びます。
 
    ![[Visual Studio エクスペリエンス向上プログラム] ダイアログ](media/experience-improvement-program.png)
 
@@ -65,11 +65,11 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 - **1**: オプトイン (VSCEIP をオンにする)
 
 > [!CAUTION]
-> レジストリを間違って編集すると、システムが壊れる可能性があります。 レジストリを変更する前に、コンピューター上のすべての重要なデータをバックアップしておくことをお勧めします。 手動での変更の適用後に問題が発生した場合は、 **[前回正常起動時の構成]** スタートアップ オプションを使うこともできます。
+> レジストリを正しく編集しないと、システムが正常に動作しなくなる場合があります。 レジストリを変更する前に、コンピューター上の重要なデータのバックアップを作成する必要があります。 手動での変更の適用後に問題が発生した場合は、 **[前回正常起動時の構成]** スタートアップ オプションを使うこともできます。
 
 VSCEIP によって収集、処理、または送信される情報については、「[Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 * [Visual Studio によって収集される診断情報](diagnostic-data-collection.md)
 * [Visual Studio フィードバック オプション](../ide/feedback-options.md)

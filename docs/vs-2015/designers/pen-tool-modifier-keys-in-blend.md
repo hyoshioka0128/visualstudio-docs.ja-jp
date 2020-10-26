@@ -1,4 +1,4 @@
-﻿---
+---
 title: Blend のペン ツールの修飾キー | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664176"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend のペン ツールの修飾キー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-次の表に、**ペン**ツール![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")でパスを作成するときに、パスを変更するために使用できるショートカットを示します。 また、**ペン** ツールを使用して、既存のパスの点を追加または削除したり、2 つの既存のパスを結合したりすることもできます。
+次の表は、**ペン** ツール ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a") でパスを作成するときに、パスの変更に使用できるショートカットを一覧表示したものです。 また、**ペン** ツールを使用して、既存のパスの点を追加または削除したり、2 つの既存のパスを結合したりすることもできます。
 
-|目的|操作手順|ポインター|
+|行う操作|方法|ポインター|
 |-----------------------|-------------|-------------|
 |直線の線分の始点を作成する|クリックすると新しいポイントが作成されます|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> ペン ポインター|
 |曲線の線分の始点を作成する|クリックすると新しいポイントが作成されます。その後ドラッグして、正接ハンドルを調整した後、マウスのボタンを放します|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> ペン ポインター|

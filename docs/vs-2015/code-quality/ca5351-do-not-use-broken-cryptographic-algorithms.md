@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545055"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 破られた暗号アルゴリズムを使用しないでください
@@ -47,7 +47,7 @@ ms.locfileid: "85545055"
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  暗号強度の高いオプションを使用します。
 
-- MD5 の場合は、 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)ファミリでハッシュを使用します (例:、 <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> )。
+- MD5 の場合は、 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリでハッシュを使用します (例:、 <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> )。
 
 - DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。
 

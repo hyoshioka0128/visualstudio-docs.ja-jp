@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05f2984f135ef363d1a5acfb55f4705404f4ea7d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87375860"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800243"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -110,7 +110,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | Cookiecutter<br>エクスプローラー テンプレート<br>探索 <br><br>Cookiecutter <br>エクスプローラー プロジェクトの<br> 作成 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | 推奨されるフィードから、および GitHub リポジトリから、オンライン テンプレートを検出するために使用されます <br><br>Python パッケージ インデックス (PyPI) からの cookiecutter Python パッケージの 1 回限りのオンデマンド インストールを必要とする cookiecutter テンプレートからプロジェクトを作成するために使用されます。 |
 | Python パッケージ <br>探索<br><br>Python パッケージ <br>管理<br><br>新規作成 <br>Python <br> プロジェクト <br>テンプレートの使用 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | pip パッケージを検索する機能を提供します。<br><br>pip が存在しない場合に、pip を自動的にインストールするために使用されます。 <br><br>次の新しい Python プロジェクト テンプレートを cookiecutter テンプレート URL に解決するために使用されます。<br> - 分類子プロジェクト<br>- クラスタリング プロジェクト <br> - 回帰プロジェクト <br> - PyKinect を使用した PyGame <br> - Pyvot プロジェクト |
 | Office Web <br>アドイン <br> file:/// <br>検証 <br>サービス | verificationservice.osi.office.net | https/443 | Office Web アドインのマニフェストを検証するために使用されます。 |
-| SharePoint と <br>Office アドイン | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | SharePoint および Office のアドインを SharePoint Online および Office 365 に発行し、テストするために使用されます |
+| SharePoint と <br>Office アドイン | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | SharePoint および Office のアドインを SharePoint Online および Microsoft 365 に発行し、テストするために使用されます |
 | ワークフロー マネージャー <br>テスト サービス<br> Host | | http/12292 | SharePoint アドインをワークフローでテストするために自動的に作成されるファイアウォール規則です。 |
 | 自動的に収集される <br>信頼性の統計情報 <br>と、 <br>Azure SDK および SQL Tools 用の <br>その他の<br> カスタマー エクスペリエンス向上プログラム <br>(CEIP) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https/443 | ユーザーから Microsoft に信頼性の統計情報 (クラッシュまたは無応答データ) を送信するために使用されます。 Windows エラー報告を有効にした場合、実際のクラッシュまたは無応答ダンプは引き続きアップロードされ、統計情報のみが抑制されます。 <br>Azure Tools SDK 拡張機能の匿名の利用状況パターン、および SQL ツールの利用状況パターンを Visual Studio に対して明らかにします。 |
 | Visual Studio <br> カスタマー エクスペリエンス <br>向上プログラム (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https/443 | 匿名の利用状況のパターンとエラー ログを収集するために使用されます。 <br><br>UI のフリーズ問題を追跡するために使用されます。 |
@@ -118,7 +118,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | 更新された Web 発行ツールの <br>確認と拡張機能に関する <br>推奨事項 | marketplace.visualstudio.com | https/443 | 更新された発行ツールの可用性を確認するために使用されます。 無効の場合、Web 発行のための潜在的な推奨拡張機能が表示されない場合があります。 |
 | 更新された Azure リソース <br>作成エンドポイント情報 | \*.blob.core.windows.net | https/443 | 特定の Azure Services 用の Azure Resources の作成に使用するエンドポイントを更新するために使用されます。 無効である場合は、最後にダウンロードまたは組み込まれたエンドポイントの場所が代わりに使用されます。 |
 | Azure Websites のリモート デバッグ <br>および <br>リモート プロファイル | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | 4022 | リモート デバッガーを Azure Websites にアタッチするために使用されます。 無効である場合、Azure Websites へのリモート デバッガーのアタッチは機能しません。 |
-| Active Directory <br>Graph | graph.windows.net | https/443 | 新しい Azure Active Directory アプリケーションをプロビジョニングするために使用されます。 Office 365 MSGraph と接続されたサービス プロバイダーによっても使用されます。 |
+| Active Directory <br>Graph | graph.windows.net | https/443 | 新しい Azure Active Directory アプリケーションをプロビジョニングするために使用されます。 Microsoft 365 MSGraph と接続されたサービス プロバイダーによっても使用されます |
 | Azure Functions <br>CLI 更新プログラムの <br>チェック | functionscdn.azureedge.net | https/443 | Azure Functions CLI の更新されたバージョンを確認するために使用されます。 無効である場合、CLI のキャッシュされたコピー (または、Azure Functions のコンポーネントによって実行されるコピー) が代わりに使用されます。 |
 | Cordova | npmjs.org<br>gradle.org | http/80 &<br/>https/443 | ビルド時の Gradle のダウンロードには HTTP が使用され、プロジェクトに Cordova プラグインを含めるには HTTPS が使用されます。 |
 | Cloud Explorer | 1. &#60;クラスター エンドポイント&#62; <br>Service Fabric <br>2. &#60;管理エンドポイント&#62;<br>汎用的な Cloud Exp <br>3. &#60;graph エンドポイント&#62;<br>汎用的な Cloud Exp<br>4. &#60;ストレージ アカウント エンドポイント&#62;<br>記憶域ノード <br>5. &#60;Azure Portal の URL&#62;<br>汎用的な Cloud Exp <br>6. &#60;キー コンテナー エンドポイント&#62; <br>Azure Resource Manager VM ノード<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric のリモート デバッグと ETW トレース | <br>1.https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7.tcp/dynamic | 1.例: test12.eastus.cloudapp.com<br>2.サブスクリプションを取得し、Azure リソースを取得/管理します<br>3.Azure Stack サブスクリプションを取得します。<br>4.Storage リソースを管理します (例: mystorageaccount.blob.core.windows.net)<br>5.[ポータルで開く] コンテキスト メニュー オプション (Azure Portal でリソースを開く)<br>6.VM デバッグ用にキー コンテナーを作成して使用します (例: myvault.vault.azure.net) <br><br>7.クラスターおよび使用可能なポート内のノード数に基づいて、ポートのブロックを動的に割り当てます。 <br><br>最低 10 個のポートでノード数の取得を 3 回試みます。<br><br>ストリーミング トレースの場合、810 からポート ブロックの取得が試みられます。 そのポート ブロックのいずれかが既に使用されている場合は、次のブロックを取得する試みが行われるという具合に進められます (ロード バランサーが空の場合、ほとんどは 810 からのポートが使用されます)。 <br><br>デバッグの場合と同様に、ポート ブロックの 4 つのセットが予約されます。 <br>- connectorPort:30398、 <br>- forwarderPort:31398、 <br>- forwarderPortx86:31399、<br>- fileUploadPort:32398<br> |

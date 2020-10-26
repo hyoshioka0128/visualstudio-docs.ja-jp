@@ -19,39 +19,39 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e25f9da960b1de8acb1950b2bdd3ab7e61409f17
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675473"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista の ClickOnce 配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio でアプリケーションの構築 Windows Vista でユーザー アカウント制御 (UAC) は、通常、埋め込みマニフェストを生成するは、アプリケーションの実行可能ファイルに XML データをバイナリとしてにエンコードされます。 ClickOnce および Registration-free COM アプリケーションでは、外部のマニフェストが必要とするため、Visual Studio には、これらの種類の埋め込みのマニフェストではなく、UAC のデータを含むプロジェクト ファイルが生成されます。 既定では、Visual Studio は (ClickOnce および Registration-free COM、展開用) の外部 UAC マニフェスト情報を生成するか (他のすべてのケース) のアプリケーションの実行可能ファイルに埋め込むことをアプリケーション マニフェストをという名前のファイルから情報を使用します。 Visual Studio では、マニフェスト生成のため、次のオプションを提供します。  
+Windows Vista のユーザーアカウント制御 (UAC) 用に Visual Studio でアプリケーションをビルドすると、通常、アプリケーションの実行可能ファイルにバイナリ XML データとしてエンコードされた埋め込みマニフェストが生成されます。 ClickOnce および登録を必要としない COM アプリケーションには外部マニフェストが必要であるため、Visual Studio では、埋め込みマニフェストではなく、UAC データを含むこれらの種類のプロジェクトのファイルが生成されます。 既定では、Visual Studio は、app.xaml と呼ばれるファイルからの情報を使用して、外部の UAC マニフェスト情報 (ClickOnce および登録を必要としない COM 配置用) を生成するか、アプリケーションの実行可能ファイルに埋め込みます (他のすべての場合)。 Visual Studio には、マニフェスト生成のための次のオプションが用意されています。  
   
-- 埋め込みマニフェストを使用します。 アプリケーションの実行可能ファイルに UAC のデータを埋め込むし、通常のユーザーとして実行します。  
+- 埋め込みマニフェストを使用します。 UAC データをアプリケーションの実行可能ファイルに埋め込み、通常のユーザーとして実行します。  
   
-   これは、(ClickOnce を使用する) 場合を除き、既定の設定です。 この設定は、Windows Vista の Visual Studio が動作する通常の方法をサポートします。つまり、両方を使用して内部および外部のマニフェストの生成`AsInvoker`します。  
+   これは既定の設定です (ClickOnce を使用している場合を除く)。 この設定は、Visual Studio が Windows Vista で動作する通常の方法をサポートします。つまり、を使用して、内部マニフェストと外部マニフェストの両方を生成し `AsInvoker` ます。  
   
-- 外部のマニフェストを使用します。 アプリケーション マニフェストを使用して、外部のマニフェストを生成します。  
+- 外部マニフェストを使用します。 アプリケーションマニフェストを使用して外部マニフェストを生成します。  
   
-   これには、マニフェストに含まれる情報を使用して外部マニフェストだけが生成されます。 ClickOnce または Registration-free COM を使用してアプリケーションを発行するときに、Visual Studio はアプリケーション マニフェストをプロジェクトに追加し、このオプションを追加します。  
+   これにより、アプリケーションマニフェストの情報を使用して、外部マニフェストのみが生成されます。 ClickOnce または登録を必要としない COM を使用してアプリケーションを発行すると、Visual Studio によってプロジェクトに .manifest が追加され、このオプションが追加されます。  
   
-- マニフェストを使用できません。 マニフェストを含まないアプリケーションを作成します。  
+- マニフェストを使用しません。 マニフェストを使用せずにアプリケーションを作成します。  
   
-   このアプローチとも呼ばれます*virtualization*します。 Visual Studio の以前のバージョンからの既存のアプリケーションとの互換性のためには、このオプションを使用します。  
+   この方法は、 *仮想化*とも呼ばれます。 以前のバージョンの Visual Studio の既存のアプリケーションとの互換性を確保するには、このオプションを使用します。  
   
-  新しいプロパティは、**アプリケーション**(Visual c# プロジェクトのみ) 用のプロジェクト デザイナーのページと、MSBuild プロジェクト ファイル形式でします。  
+  新しいプロパティは、プロジェクトデザイナーの [ **アプリケーション** ] ページ (Visual C# プロジェクトの場合のみ) と MSBuild プロジェクトファイル形式で使用できます。  
   
-  プロジェクトの種類 (Visual c# および Visual Basic) に応じて、Visual Studio IDE で UAC マニフェスト生成の構成方法が異なることに注意してください。  
+  Visual Studio IDE で UAC マニフェストの生成を構成する方法は、プロジェクトの種類 (Visual C# と Visual Basic) によって異なります。  
   
-  マニフェストの生成を Visual c# プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (c#)](../ide/reference/application-page-project-designer-csharp.md)します。  
+  マニフェスト生成のための Visual C# プロジェクトの構成の詳細については、「 [[アプリケーション] ページ (プロジェクトデザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)」を参照してください。  
   
-  マニフェストの生成を Visual Basic プロジェクトを構成する方法については、次を参照してください。[アプリケーション ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)します。  
+  マニフェスト生成のための Visual Basic プロジェクトの構成の詳細については、「 [[アプリケーション] ページ (プロジェクトデザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
- [ユーザーのアクセス許可と Visual Studio](https://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
+ [ユーザーアクセス許可と Visual Studio](https://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [[アプリケーション] ページ (プロジェクトデザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md)

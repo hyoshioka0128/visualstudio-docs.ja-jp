@@ -1,5 +1,5 @@
 ---
-title: ソース サーバーのセキュリティ警告 |Microsoft Docs
+title: ソース サーバーのセキュリティ警告 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f8b122deab5dbdc30b129bce221a804f8c53aa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699322"
 ---
 # <a name="source-server-security-alert"></a>ソース サーバー のセキュリティ警告
@@ -31,9 +31,9 @@ ms.locfileid: "65699322"
  ソース サーバーのサポートを有効にすると、この警告が表示されます。 ソース サーバーのコマンドは、デバッグ シンボル ファイル (PDB ファイル) に埋め込まれています。 PDB ファイルの作成元を確認してください。  
   
 > [!IMPORTANT]
-> 次の潜在的なセキュリティの脅威は、移行元サーバーを使用する場合を考慮する必要があります。任意のコマンドは、アプリケーションの PDB ファイルに埋め込むことができます、srcsrv.ini ファイルに実行するもののみを配置するようにします。 srcsvr.ini ファイルにないコマンドを実行しようとすると、確認のダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。デバッガーは信頼されていないコマンドを実行する必要があります](../debugger/security-warning-debugger-must-execute-untrusted-command.md)します。コマンドのパラメーターの検証は行われません、そのコマンドを信頼するように注意してください。 たとえば、cmd.exe を信頼した場合、悪意のあるユーザーが危険な動作を実行するようにコマンドにパラメーターを指定する可能性があります。  
+> ソース サーバーを使用する場合、次の潜在的なセキュリティ上の脅威について考慮する必要があります。アプリケーションの PDB ファイルには任意のコマンドを埋め込むことができるため、srcsrv.ini ファイルには実行するコマンドのみ配置するようにします。 srcsvr.ini ファイルにないコマンドを実行しようとすると、確認のダイアログ ボックスが表示されます。 詳細については、「 [セキュリティの警告: デバッガーは信頼されていないコマンドを実行する必要があり](../debugger/security-warning-debugger-must-execute-untrusted-command.md)ます。コマンドパラメーターに対して検証は行われないので、信頼されたコマンドに注意してください。 たとえば、cmd.exe を信頼した場合、悪意のあるユーザーが危険な動作を実行するようにコマンドにパラメーターを指定する可能性があります。  
   
-## <a name="see-also"></a>関連項目  
- [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+## <a name="see-also"></a>参照  
+ [シンボル (.pdb) とソースファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [ソース サーバー](https://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)

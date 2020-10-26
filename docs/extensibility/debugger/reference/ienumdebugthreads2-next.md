@@ -1,5 +1,5 @@
 ---
-title: 2::次 |マイクロソフトドキュメント
+title: 'IEnumDebugThreads2:: Next |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bc6c493c211da3dc69e25b20c0a79b4dcabd1ed6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715172"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
-列挙体から次の要素セットを返します。
+列挙体から次の要素のセットを返します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>パラメーター
 `celt`\
-[in]取得する要素の数。 また、配列の最大サイズも`rgelt`指定します。
+から取得する要素の数。 配列の最大サイズも指定し `rgelt` ます。
 
 `rgelt`\
-[イン、アウト]入力する[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)要素の配列。
+[入力、出力]入力する [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 要素の配列。
 
 `pceltFetched`\
-[アウト]で実際に返される要素の数`rgelt`を返します。
+入出力で実際に返された要素の数を返し `rgelt` ます。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返`S_FALSE`される要素の要求数より少ない場合は返します。それ以外の場合は、エラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 要求された `S_FALSE` 数の要素を返すことができなかった場合は、を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

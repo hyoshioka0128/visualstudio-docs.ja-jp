@@ -1,5 +1,5 @@
 ---
-title: ContingentProperties クラスの内部メンバー |Microsoft Docs
+title: ContingentProperties クラス-Internal Members |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414647"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties クラスの内部メンバー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-追加のプロパティを含む、<xref:System.Threading.Tasks.Task>オブジェクト。  
+オブジェクトの追加のプロパティが含まれてい <xref:System.Threading.Tasks.Task> ます。  
   
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **アセンブリ:** mscorlib (mscorlib.dll 内)  
+ **アセンブリ:** mscorlib (mscorlib.dll)  
   
- .NET Framework からこれらの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。  
+ これらの内部メンバーには .NET Framework からアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,10 +42,10 @@ ms.locfileid: "62414647"
   
 |名前|説明|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|このタスクで登録されている子タスクの一覧。|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|このタスクに登録されている子タスクの一覧。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  .NET Framework は、必要な場合にのみ、このクラスのフィールドを初期化します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [.NET Framework の並列拡張機能の内部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

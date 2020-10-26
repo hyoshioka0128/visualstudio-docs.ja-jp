@@ -1,4 +1,4 @@
-﻿---
+---
 title: クラス デザイナーのエラーに関する追加情報 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852202"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>クラス デザイナーのエラーに関する追加情報
@@ -43,9 +43,9 @@ ms.locfileid: "75852202"
 
  以下のリソースで、その他のエラーや警告に関して役立つ情報を参照できます。
 
- [ビジュアルC++コードの操作 (クラスデザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)には、クラスダイアグラムC++での表示に関するトラブルシューティング情報が含まれています。
+ [Visual C++ コードの操作 (クラスデザイナー)](../ide/working-with-visual-cpp-code-class-designer.md) クラスダイアグラムでの C++ の表示に関するトラブルシューティング情報が含まれています。
 
  [Visual Studio クラス デザイナー フォーラム](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1)は、クラス デザイナーに関する質問のためのフォーラムです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [クラスと型のデザインおよび表示](../ide/designing-and-viewing-classes-and-types.md)

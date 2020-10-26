@@ -1,5 +1,5 @@
 ---
-title: オブジェクト::セットバリュー |マイクロソフトドキュメント
+title: 'IDebugObject:: SetValue |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726356"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-連続するバイトからオブジェクトの値を設定します。
+オブジェクトの値を連続する一連のバイトから設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,16 +43,16 @@ int SetValue(
 
 ## <a name="parameters"></a>パラメーター
 `pValue`\
-[in]新しい値を表すバイト配列。
+から新しい値を表すバイト配列。
 
 `nSize`\
-[in]値のサイズ (バイト単位)。
+から値のサイズ (バイト単位)。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 配列内の値は、この[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトにコピーされ、既存の値を置き換えます。 新しい値のサイズは、既存の値よりも大きく、または小さくすることができます。 NULL`IDebugObject`参照はできません。
+## <a name="remarks"></a>解説
+ 配列内の値は、既存の値を置き換えて、この [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトにコピーされます。 新しい値のサイズは、既存の値より大きくしたり小さくしたりすることができます。 `IDebugObject`Null 参照を指定することはできません。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

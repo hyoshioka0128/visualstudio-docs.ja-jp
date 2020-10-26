@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d2dae9d1c7a08205a09cad67a0049accba2cae71
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670922"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>方法: XSD スキーマ ファイルを作成して編集する
@@ -23,15 +23,15 @@ ms.locfileid: "72670922"
 
 ### <a name="to-create-a-new-xml-schema-file"></a>新しい XML スキーマ ファイルを作成するには
 
-1. Visual Studio で、 **[ファイル]** メニューを開き、 **[新規作成]** 、 **[ファイル]** の順に選択します。 または、ショートカット キーの Ctrl + N を使用します。
+1. Visual Studio で、[ **ファイル** ] メニューを開き、[ **新規作成** ]、[ **ファイル**] の順に選択します。 または、ショートカット キーの Ctrl + N を使用します。
 
-2. **[新しいファイル]** ダイアログボックスで、 **[XML スキーマ]** を選択し、 **[開く]** をクリックします。
+2. [ **新しいファイル** ] ダイアログボックスで、[ **XML スキーマ** ] を選択し、[ **開く**] をクリックします。
 
      新しいファイルが作成されます。 Visual Studio にスタート ビューと空の XML スキーマ エクスプローラーのウィンドウが表示されます。
 
 ### <a name="to-edit-a-file"></a>ファイルを編集するには
 
-1. [XML エディターを使用して、スタートビューの**基になる Xml スキーマファイルを表示および編集する**] リンクをクリックします。
+1. [XML エディターを使用して、スタートビューの **基になる Xml スキーマファイルを表示および編集する** ] リンクをクリックします。
 
      XML エディターに新しいファイルが表示されます。
 

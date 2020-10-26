@@ -1,5 +1,5 @@
 ---
-title: 基本プロジェクトのオブジェクト モデルの拡張 |Microsoft Docs
+title: 基本プロジェクト | のオブジェクトモデルの拡張Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,24 +13,24 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7723881bce81824b66a936793175077a0ec67666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187163"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>ベース プロジェクトのオブジェクト モデルの拡張
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロジェクト サブタイプを次の場所ベースのプロジェクトのオートメーション オブジェクト モデルを拡張可能性があります。  
+プロジェクトのサブタイプは、基本プロジェクトのオートメーションオブジェクトモデルを次の場所で拡張することができます。  
   
-- Project.Extender ("\<ProjectSubtypeName >") – これにより、プロジェクトのサブタイプのカスタム メソッドを使用するオブジェクトを提供する、<xref:EnvDTE.Project>します。 プロジェクト サブタイプは、オートメーション エクステンダーを使用して公開することができます、`Project`オブジェクト。 <xref:EnvDTE80.IInternalExtenderProvider>メイン プロジェクト サブタイプ アグリゲーターで実装されるインターフェイスの場合は、そのオブジェクトを提供する必要があります、`VSHPROPID_ExtObjectCATID`から<xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2>(に対応する、 `itemid` VSITEMID_ROOT の値から`VSITEMID`) CATID。  
+- プロジェクトの Extender (" \<ProjectSubtypeName> ") –プロジェクトのサブタイプが、からのカスタムメソッドを持つオブジェクトを提供できるようにします <xref:EnvDTE.Project> 。 プロジェクトのサブタイプは、オートメーションエクステンダーを使用してオブジェクトを公開でき `Project` ます。 <xref:EnvDTE80.IInternalExtenderProvider>メインプロジェクトのサブタイプアグリゲーターに実装されたインターフェイスは、からのオブジェクト `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (VSITEMID_ROOT の値に対応する) を提供する必要があり `itemid` `VSITEMID` ます。  
   
-- ProjectItem.Extender ("\<ProjectSubtypeName >") – これにより、カスタム メソッドの特定のオブジェクトを提供するプロジェクト サブタイプ<xref:EnvDTE.ProjectItem>プロジェクト内のオブジェクト。 プロジェクト サブタイプは、オートメーション エクステンダーを使用して、このオブジェクトを公開します。 <xref:EnvDTE80.IInternalExtenderProvider>メイン プロジェクト サブタイプ アグリゲーターで実装されるインターフェイスをそのオブジェクトを提供する必要があります、`VSHPROPID_ExtObjectCATID`から<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>(を目的に対応する`VSITEMID`) CATID。  
+- ProjectItem (" \<ProjectSubtypeName> ") –プロジェクトのサブタイプが、プロジェクト内の特定のオブジェクトからのカスタムメソッドを持つオブジェクトを提供できるようにします <xref:EnvDTE.ProjectItem> 。 プロジェクトのサブタイプは、オートメーションエクステンダーを使用してこのオブジェクトを公開できます。 <xref:EnvDTE80.IInternalExtenderProvider>メインプロジェクトのサブタイプアグリゲーターに実装されているインターフェイスは、の `VSHPROPID_ExtObjectCATID` オブジェクト <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (必要な CATID に対応する) を提供する必要があり `VSITEMID` ます。  
   
-- Project.Properties – このコレクションは、の構成の独立したプロパティを公開、`Project`オブジェクト。 プロジェクトのプロパティの詳細については、次を参照してください。<xref:EnvDTE.Project.Properties%2A>します。 プロジェクト サブタイプは、オートメーション エクステンダーを使用して、そのプロパティをこのコレクションに追加します。 <xref:EnvDTE80.IInternalExtenderProvider>メイン プロジェクト サブタイプ アグリゲーターで実装されるインターフェイスをそのオブジェクトを提供する必要があります、 `VSHPROPID_BrowseObjectCATID` VSHPROPID2 から (に対応する、 `itemid` VSITEMID_ROOT の値から<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>) CATID。  
+- プロジェクト. プロパティ–このコレクションは、オブジェクトの構成に依存しないプロパティを公開します。 `Project` プロジェクトのプロパティの詳細については、「」を参照してください <xref:EnvDTE.Project.Properties%2A> 。 プロジェクトのサブタイプは、オートメーションエクステンダーを使用して、そのプロパティをこのコレクションに追加できます。 <xref:EnvDTE80.IInternalExtenderProvider>メインプロジェクトのサブタイプアグリゲーターに実装されているインターフェイスは、 `VSHPROPID_BrowseObjectCATID` VSHPROPID2 から (VSITEMID_ROOT の値に対応する) CATID のオブジェクトを提供する必要があり `itemid` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> ます。  
   
-- Configuration.Properties – このコレクションは、特定の構成 (たとえば、デバッグなど) のプロジェクトの構成の依存プロパティを公開します。 詳細については、「<xref:EnvDTE.Configuration>」を参照してください。 プロジェクト サブタイプは、オートメーション エクステンダーを使用して、そのプロパティをこのコレクションに追加します。 <xref:EnvDTE80.IInternalExtenderProvider> CATID をメイン プロジェクト サブタイプ アグリゲーターで実装されるインターフェイスは、そのオブジェクトを提供`VSHPROPID_CfgBrowseObjectCATID`(に対応する、 `itemid` @property <xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>インターフェイスが別の 1 つの構成の参照オブジェクトを区別するために使用されます。  
+- [構成]: このコレクションは、特定の構成 (デバッグなど) のプロジェクトの構成依存プロパティを公開します。 詳細については、「<xref:EnvDTE.Configuration>」を参照してください。 プロジェクトのサブタイプは、オートメーションエクステンダーを使用して、そのプロパティをこのコレクションに追加できます。 <xref:EnvDTE80.IInternalExtenderProvider>メインプロジェクトのサブタイプアグリゲーターに実装されたインターフェイスは、CATID `VSHPROPID_CfgBrowseObjectCATID` (の値に対応する) のオブジェクトを提供し `itemid` <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> ます。 インターフェイスは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> 1 つの構成参照オブジェクトを別の構成と区別するために使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

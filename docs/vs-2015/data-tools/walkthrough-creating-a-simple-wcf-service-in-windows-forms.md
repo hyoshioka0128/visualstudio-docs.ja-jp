@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 366567a13ad23ab19ffd88f19997b92025abe952
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671074"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームでの簡単な WCF サービスの作成
@@ -34,16 +34,16 @@ ms.locfileid: "72671074"
 
 1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]** または **[Visual C#]** ノードを展開し、 **[WCF]** をクリックしてから **[WCF サービス ライブラリ]** をクリックします。 **[OK]** をクリックして、プロジェクトを開きます。
+2. **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual Basic]** または **[Visual C#]** ノードを展開し、**[WCF]** をクリックしてから **[WCF サービス ライブラリ]** をクリックします。 **[OK]** をクリックして、プロジェクトを開きます。
 
-     ![WCF サービスライブラリプロジェクト](../data-tools/media/wcf1.PNG "wcf1")
+     ![WCF サービス ライブラリ プロジェクト](../data-tools/media/wcf1.PNG "wcf1")
 
     > [!NOTE]
     > これにより、テストしてアクセスすることが可能な機能するサービスが作成されます。 次の 2 つの手順は、別のデータ型を使用するように既定の方法を変更する方法を示しています。 実際のアプリケーションで、独自の関数をサービスに追加することもできます。
 
 3. ![IService1 ファイル](../data-tools/media/wcf2.png "wcf2")
 
-     **ソリューションエクスプローラー**で、IService1 または IService1.cs をダブルクリックし、次の行を見つけます。
+     **ソリューション エクスプローラー**で、IService1.vb または IService1.cs をダブルクリックし、次の行を探します。
 
      [!code-csharp[WCFWalkthrough#4](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs#4)]
      [!code-vb[WCFWalkthrough#4](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb#4)]
@@ -57,7 +57,7 @@ ms.locfileid: "72671074"
 
 4. ![Service1 ファイル](../data-tools/media/wcf3.png "wcf3")
 
-     **ソリューションエクスプローラー**で、Service1 または Service1.cs をダブルクリックし、次の行を見つけます。
+     **ソリューション エクスプローラー**で、Service1.vb または Service1.cs をダブルクリックし、次の行を探します。
 
      [!code-csharp[WCFWalkthrough#5](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs#5)]
      [!code-vb[WCFWalkthrough#5](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb#5)]
@@ -73,17 +73,17 @@ ms.locfileid: "72671074"
 
 1. **F5** キーを押してサービスを実行します。 **WCF テストクライアント**フォームが表示され、サービスが読み込まれます。
 
-2. **[WCF のテスト用クライアント]** フォームで、**IService1** の下の **GetData()** メソッドをダブルクリックします。 **[GetData]** タブが表示されます。
+2. **[WCF のテスト用クライアント]** フォームで、**IService1** の下の **GetData()** メソッドをダブルクリックします。 [ **GetData** ] タブが表示されます。
 
-     ![GetData&#40; &#41;メソッド](../data-tools/media/wcf4.png "wcf4")
+     ![GetData&#40;&#41; メソッド](../data-tools/media/wcf4.png "wcf4")
 
-3. **[要求]** ボックスで、 **[値]** フィールドを選択して「`Hello`」と入力します。
+3. **[要求]** ボックスで、**[値]** フィールドを選択して「`Hello`」と入力します。
 
-     ![値フィールド](../data-tools/media/wcf5.png "wcf5")
+     ![[値] フィールド](../data-tools/media/wcf5.png "wcf5")
 
-4. **[起動]** ボタンをクリックします。 **[セキュリティ警告]** ダイアログボックスが表示されたら、 **[OK]** をクリックします。 結果は **[応答]** ボックスに表示されます。
+4. **[起動]** ボタンをクリックします。 [ **セキュリティ警告** ] ダイアログボックスが表示されたら、[ **OK**] をクリックします。 結果は [ **応答** ] ボックスに表示されます。
 
-     ![[応答] ボックスの結果](../data-tools/media/wcf6.png "wcf6")
+     ![[応答] ボックスに結果が表示される](../data-tools/media/wcf6.png "wcf6")
 
 5. **[ファイル]** メニューの **[終了]** をクリックして、テスト フォームを閉じます。
 
@@ -91,25 +91,25 @@ ms.locfileid: "72671074"
 
 #### <a name="to-reference-a-wcf-service"></a>WCF サービスを参照するには
 
-1. **[ファイル]** メニューの **[追加]** をポイントし、 **[新しいプロジェクト]** をクリックします。
+1. [ **ファイル** ] メニューの [ **追加** ] をポイントし、[ **新しいプロジェクト**] をクリックします。
 
-2. **[新しいプロジェクト]** ダイアログボックスで、 **Visual Basic**または**ビジュアルC#** ノードを展開し、 **[Windows]** をクリックして、 **[Windows フォームアプリケーション]** を選択します。 **[OK]** をクリックして、プロジェクトを開きます。
+2. [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual Basic** ] または [ **Visual C#** ] ノードを展開し、[ **Windows**] をクリックして、[ **Windows フォームアプリケーション**] を選択します。 **[OK]** をクリックして、プロジェクトを開きます。
 
-     ![Windows フォームアプリケーションプロジェクト](../data-tools/media/wcf7.png "wcf7")
+     ![Windows フォーム アプリケーション プロジェクト](../data-tools/media/wcf7.png "wcf7")
 
-3. **[WindowsApplication1]** を右クリックして **[サービス参照の追加]** をクリックします。 **[サービス参照の追加]** ダイアログボックスが表示されます。
+3. **[WindowsApplication1]** を右クリックして **[サービス参照の追加]** をクリックします。 [ **サービス参照の追加** ] ダイアログボックスが表示されます。
 
-4. **[サービス参照の追加]** ダイアログ ボックスで **[探索]** をクリックします。
+4. **[サービス参照の追加]** ダイアログ ボックスで、**[探索]** をクリックします。
 
-     ![[サービス参照の追加] ダイアログボックス](../data-tools/media/wcf8.png "wcf8")
+     ![[サービス参照の追加] ダイアログ ボックス](../data-tools/media/wcf8.png "wcf8")
 
-     **Service1**が **[サービス]** ウィンドウに表示されます。
+     **Service1** が [ **サービス** ] ウィンドウに表示されます。
 
 5. **[OK]** をクリックしてサービス参照を追加します。
 
 #### <a name="to-build-a-client-application"></a>クライアント アプリケーションをビルドするには
 
-1. **ソリューション エクスプローラー**で、 **[Form1.vb]** または **[Form1.cs]** をダブルクリックして、Windows フォーム デザイナーを (まだ開いていない場合に) 開きます。
+1. **ソリューション エクスプローラー**で、**[Form1.vb]** または **[Form1.cs]** をダブルクリックして、Windows フォーム デザイナーを (まだ開いていない場合に) 開きます。
 
 2. **ツールボックス**で、`TextBox` コントロール、`Label` コントロール、および `Button` コントロールをフォームにドラッグします。
 
@@ -120,11 +120,11 @@ ms.locfileid: "72671074"
      [!code-csharp[WCFWalkthrough#3](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs#3)]
      [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]
 
-4. **ソリューション エクスプローラー**で、 **[WindowsApplication1]** を右クリックして **[スタートアップ プロジェクトに設定]** をクリックします。
+4. **ソリューション エクスプローラー**で、**[WindowsApplication1]** を右クリックして **[スタートアップ プロジェクトに設定]** をクリックします。
 
-5. **F5** キーを押してプロジェクトを実行します。 いくつかのテキストを入力し、ボタンをクリックします。 ラベルに「You entered:」と入力したテキストが表示されます。
+5. **F5**キーを押してプロジェクトを実行します。 いくつかのテキストを入力し、ボタンをクリックします。 ラベルに「You entered:」と入力したテキストが表示されます。
 
-     ![結果を示すフォーム](../data-tools/media/wcf10.png "wcf10")
+     ![結果を表示するフォーム](../data-tools/media/wcf10.png "wcf10")
 
 ## <a name="see-also"></a>参照
- [Visual Studio での Windows Communication Foundation サービスと WCF データ サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+ [Visual Studio でのサービスと WCF Data Services の Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

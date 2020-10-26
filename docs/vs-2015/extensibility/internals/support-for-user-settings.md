@@ -13,49 +13,49 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691806"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-VSPackage は、ユーザーが選択したときに永続化状態変数のグループが 1 つまたは複数の設定カテゴリを定義できます、**設定のインポート/エクスポート**コマンドを**ツール**メニュー。 この永続化を有効にするには、Api の設定を使用するには[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。  
+VSPackage は、1つまたは複数の設定カテゴリを定義できます。これは、ユーザーが [**ツール**] メニューの [**設定のインポート/エクスポート**] コマンドを選択したときに保持される状態変数のグループです。 この永続化を有効にするには、の設定 Api を使用し [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ます。  
   
- カスタム設定ポイントと GUID として参照されるレジストリ エントリは、VSPackage のカテゴリの設定を定義します。 VSPackage が複数のカテゴリの設定をサポートできますが、カスタム設定ポイントによって定義されている各。  
+ レジストリエントリはカスタム設定ポイントとして参照され、GUID は VSPackage の設定カテゴリを定義します。 VSPackage は、カスタム設定ポイントで定義されている複数の設定カテゴリをサポートできます。  
   
-- 相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
+- (インターフェイスを使用して) 相互運用機能アセンブリに基づく設定を実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> するには、レジストリを編集するか、レジストラースクリプト (.rgs ファイル) を使用して、カスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
   
-- 管理パッケージ フレームワーク (MPF) を使用するコードは、アタッチすることでのカスタム設定ポイントを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>各カスタム設定ポイントの VSPackage にします。  
+- Managed Package Framework (MPF) を使用するコードでは、カスタム設定ポイントごとにを VSPackage にアタッチすることによって、カスタム設定ポイントを作成する必要があり <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> ます。  
   
-     単一 VSPackage は、いくつかのカスタム設定ポイントをサポートしている場合は、各カスタム設定ポイントが別のクラスによって実装されるの一意のインスタンスで登録されますが、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラス。 そのため、クラスの実装設定では、1 つ以上のカテゴリの設定をサポートできます。  
+     1つの VSPackage が複数のカスタム設定ポイントをサポートしている場合、各カスタム設定ポイントは個別のクラスによって実装され、クラスの一意のインスタンスによって登録され <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> ます。 その結果、クラスを実装する設定では、複数の設定カテゴリをサポートできます。  
   
-## <a name="custom-settings-point-registry-entry-details"></a>カスタム設定ポイントのレジストリ エントリの詳細  
- 次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\ *\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には *\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
+## <a name="custom-settings-point-registry-entry-details"></a>カスタム設定ポイントのレジストリエントリの詳細  
+ カスタム設定ポイントは、次の場所にあるレジストリエントリに作成されます: HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \UserSettings \\ `<CSPName>` 。ここで、は、VSPackage が `<CSPName>` サポートするカスタム設定ポイントの名前です *\<Version>* [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。は、8.0 などのバージョンです。  
   
 > [!NOTE]
-> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\ *\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+> \\ *\<Version>* [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 統合開発環境 (IDE: integrated development environment) が初期化されると、HKEY_LOCAL_MACHINE \software\microsoft\visualstudio のルートパスを代替ルートでオーバーライドできます。 詳細については、「 [コマンドラインスイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)」を参照してください。  
   
- レジストリ エントリの構造は、次に示します。  
+ レジストリエントリの構造を次に示します。  
   
- HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio \\ *\<Version>* \ Usersettings\  
   
- `<CSPName`>= s '#12345'  
+ `<CSPName`>= s ' #12345 '  
   
- Package = '{XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
+ Package = ' {XXXXXX XXXX XXXX xxxx XXXXXXXXX} '  
   
- Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
+ Category = ' {YYYYYY YYYY yyyy yyyy YYYYYYYYY} '  
   
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ} '  
   
- AlternateParent = CategoryName  
+ AlternateParent = 区分名  
   
-|名前|型|データ|説明|  
+|名前|種類|Data|説明|  
 |----------|----------|----------|-----------------|  
-|(既定)|REG_SZ|カスタム設定ポイントの名前|キーの名前、 `<CSPName`>、カスタム設定ポイントのローカライズされていない名前を指定します。<br /><br /> MPF に基づいた実装では、キーの名前を取得するのと組み合わせることで、`categoryName`と`objectName`の引数、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>コンス トラクターに`categoryName_objectName`します。<br /><br /> キーは、空にできます。 またはサテライト DLL にローカライズされた文字列への参照 ID を含めることができます。 この値は、`objectNameResourceID`への引数、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>コンス トラクター。|  
-|Package|REG_SZ|GUID|カスタム設定ポイントを実装する VSPackage の GUID です。<br /><br /> 実装で、MPF を使用してに基づいて、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスを使用して、コンス トラクターの`objectType`引数を含む VSPackage の<xref:System.Type>とリフレクションはこの値を取得します。|  
-|Category|REG_SZ|GUID|設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値は任意に選択したは、GUID を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE に渡します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>メソッド。 これら 2 つのメソッドのすべての実装では、その GUID 引数を確認してください。<br /><br /> MPF に基づいた実装では、この GUID を取得するので、<xref:System.Type>実装するクラスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]設定メカニズム。|  
-|ResourcePackage|REG_SZ|GUID|任意。<br /><br /> サテライト DLL を含むへのパスでは、実装する VSPackage がそれらを指定しない場合、文字列がローカライズされました。<br /><br /> MPF リフレクションを使用して、適切なリソース、VSPackage を取得するため、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスは、この引数を設定しません。|  
-|AlternateParent|REG_SZ|このカスタム設定ポイントを格納しているツール オプション ページの下のフォルダーの名前です。|任意。<br /><br /> 設定の実装をサポートしている場合にのみ、この値を設定する必要があります**ツール オプション**で永続化メカニズムを使用するページ、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]オートメーション モデルの状態を保存するメカニズムではなく。<br /><br /> AlternateParent キーの値は、このような場合、`topic`のセクション、`topic.sub-topic`特定を識別するために使用される文字列**制御**ページ。 たとえば、**制御**ページ`"TextEditor.Basic"`AlternateParent の値になります。`"TextEditor"`します。<br /><br /> ときに<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>カスタム設定ポイントを生成します。 これは、カテゴリ名と同じです。|
+|(既定)|REG_SZ|カスタム設定ポイントの名前|キーの名前 ( `<CSPName`>) は、カスタム設定ポイントの unlocalized 名です。<br /><br /> MPF に基づく実装では、 `categoryName` コンストラクターの引数と引数をに組み合わせてキーの名前を取得し `objectName` <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `categoryName_objectName` ます。<br /><br /> キーは空にすることも、サテライト DLL 内のローカライズされた文字列への参照 ID を含めることもできます。 この値は、コンストラクターの引数から取得され `objectNameResourceID` <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> ます。|  
+|Package|REG_SZ|GUID|カスタム設定ポイントを実装する VSPackage の GUID。<br /><br /> MPF に基づく実装クラスを使用して <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 、VSPackage のおよびリフレクションを含むコンストラクターの引数を使用して、 `objectType` <xref:System.Type> この値を取得します。|  
+|カテゴリ|REG_SZ|GUID|設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値を任意に選択した GUID にすることができます。この GUID は [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE が <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> メソッドとメソッドに渡し <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> ます。 これらの2つのメソッドのすべての実装は、GUID 引数を検証する必要があります。<br /><br /> MPF に基づく実装の場合、この GUID は、設定メカニズムを実装するクラスのによって取得され <xref:System.Type> [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。|  
+|ResourcePackage|REG_SZ|GUID|省略可能。<br /><br /> 実装している VSPackage が指定していない場合に、ローカライズされた文字列を含むサテライト DLL へのパス。<br /><br /> MPF は、リフレクションを使用して適切なリソース VSPackage を取得するため、 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> クラスはこの引数を設定しません。|  
+|AlternateParent|REG_SZ|このカスタム設定ポイントを含む [ツールオプション] ページの下にあるフォルダーの名前。|省略可能。<br /><br /> この値は、設定の実装で、状態を保存するオートメーションモデルのメカニズムではなく、の永続化メカニズムを使用する **ツールオプション** ページがサポートされている場合にのみ設定する必要があり [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ます。<br /><br /> このような場合、AlternateParent キーの値は、 `topic` `topic.sub-topic` 特定の **ToolsOptions** ページを識別するために使用される文字列のセクションです。 たとえば、 **ToolsOptions** ページの場合、 `"TextEditor.Basic"` alternateparent の値はになり `"TextEditor"` ます。<br /><br /> <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>でカスタム設定ポイントが生成されると、カテゴリ名と同じになります。|

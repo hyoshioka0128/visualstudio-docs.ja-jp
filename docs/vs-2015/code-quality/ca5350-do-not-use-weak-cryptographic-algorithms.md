@@ -9,16 +9,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: afadf41fc753051047e858758bfe0677987d726d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545068"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350:脆弱な暗号アルゴリズムを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
@@ -43,7 +43,7 @@ ms.locfileid: "85545068"
 
 - TripleDES 暗号化の場合、 <xref:System.Security.Cryptography.Aes> 暗号化を使用します。
 
-- SHA1 または RIPEMD160 ハッシュ関数の場合は、 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx)ファミリ (、、など) のいずれかを使用し <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> ます。
+- SHA1 または RIPEMD160 ハッシュ関数の場合は、 [sha-1](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ (、、など) のいずれかを使用し <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256> ます。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  データに必要な保護レベルがセキュリティ保証を必要としない場合には、この規則による警告を抑制してください。

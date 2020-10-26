@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'チュートリアル: 複数のコンピューターを使用するビルド環境の作成 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672311"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
@@ -54,25 +54,25 @@ ms.locfileid: "72672311"
 
 - [コンピューターにソフトウェアをインストールする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)
 
-- [ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
+- [ホストコンピューターからビルドコンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
 
-- [レジストリ設定を作成する](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
+- [レジストリ設定の作成](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
 
 - [ビルド コンピューターで環境変数を設定する](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
-- [ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
+- [ビルドコンピューターのグローバルアセンブリキャッシュ (GAC) に MSBuild アセンブリをインストールする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
 - [プロジェクトをビルドする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
 - [ソース管理にチェックインできるようにビルド環境を作成する](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 - ライセンス供与された Visual Studio Ultimate、Visual Studio Premium、または Visual Studio Professional
 
 - .NET Framework 4.5.1 ([Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) の Web サイトからダウンロードできます)。
 
-## <a name="InstallingSoftware"></a>コンピューターにソフトウェアをインストールする
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> コンピューターへのソフトウェアのインストール
  最初にホスト コンピューターを設定し、次にビルド コンピューターを設定します。
 
  ホスト コンピューターに Visual Studio をインストールすると、ファイルや設定が作成されます。後でこれらをビルド コンピューターにコピーします。 Visual Studio は x86 または x64 コンピューターにインストールできますが、ビルド コンピューターのアーキテクチャは、ホスト コンピューターのアーキテクチャと一致する必要があります。
@@ -83,7 +83,7 @@ ms.locfileid: "72672311"
 
 2. ビルド コンピューターに、.NET Framework 4.5 をインストールします。 インストールされていることを確認するには、レジストリ キー HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version の値が "4.5" から始まっていることを確認します。
 
-## <a name="CopyingFiles"></a>ホスト コンピューターからビルド コンピューターにファイルをコピーする
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a>ホスト コンピューターからビルド コンピューターにファイルをコピーする
  このセクションでは、特定のファイル、コンパイラ、ビルド ツール、MSBuild の資産、およびレジストリ設定をホスト コンピューターからビルド コンピューターにコピーする操作ついて説明します。 ここに示す手順では、Visual Studio がホスト コンピューターの既定の場所にインストールされていることを想定しています。別の場所にインストールした場合は、手順を適宜調整してください。
 
 - x86 コンピューターの既定の場所は C:\Program Files\Microsoft Visual Studio 11.0\ です。
@@ -113,7 +113,7 @@ ms.locfileid: "72672311"
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-     次に示す他の Windows 8 キットもインストールされている場合:
+     次に示す他の Windows 8 キットもインストールされている場合: 
 
    - Microsoft Windows アセスメント & デプロイメント キット
 
@@ -215,7 +215,7 @@ ms.locfileid: "72672311"
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a>レジストリ設定を作成する
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a>レジストリ設定を作成する
  MSBuild 用の設定を構成するには、レジストリ エントリを作成する必要があります。
 
 #### <a name="to-create-registry-settings"></a>レジストリ設定を作成するには
@@ -277,7 +277,7 @@ ms.locfileid: "72672311"
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a>ビルド コンピューターで環境変数を設定する
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> ビルドコンピューターで環境変数を設定する
  ビルド コンピューターで MSBuild を使用するには、PATH 環境変数を設定する必要があります。 vcvarsall.bat を使用して変数を設定することも、手動で構成することもできます。
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>vcvarsall.bat を使用して環境変数を設定するには
@@ -314,7 +314,7 @@ ms.locfileid: "72672311"
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a>ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a>ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする
  MSBuild を使用するには、ビルド コンピューターの GAC にいくつかの追加のアセンブリをインストールする必要があります。
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>ホスト コンピューターからアセンブリをコピーしてビルド コンピューターにインストールするには
@@ -331,26 +331,26 @@ ms.locfileid: "72672311"
 
      管理者権限でコマンド プロンプト ウィンドウを開き、ファイルごとに次のコマンドを実行します。
 
-     **gacutil -i \<file>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > GAC へのアセンブリのインストールを完了するために、再起動が必要になる場合があります。
 
-## <a name="BuildingProjects"></a>プロジェクトをビルドする
+## <a name="building-projects"></a><a name="BuildingProjects"></a> ビルド (プロジェクトを)
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のプロジェクトおよびソリューションをビルドするには、Team Foundation ビルドまたはコマンド ラインを使用します。 Team Foundation ビルドを使用してプロジェクトをビルドすると、システムのアーキテクチャに対応する MSBuild 実行可能ファイルが起動されます。  コマンド ラインでは、32 ビット MSBuild または 64 ビット MSBuild を使用できます。MSBuild のアーキテクチャは、PATH 環境変数を設定するか、アーキテクチャ固有の MSBuild 実行可能ファイルを直接呼び出すことによって選択できます。
 
  コマンド プロンプトで msbuild.exe を使用するには、次のコマンドを実行します (*solution.sln* は、ソリューションの名前のプレースホルダーです)。
 
  **msbuild** *solution.sln*
 
- コマンド ラインで MSBuild を使用する方法について詳しくは、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
+ コマンドラインで MSBuild を使用する方法の詳細については、「 [コマンドラインリファレンス](../msbuild/msbuild-command-line-reference.md)」を参照してください。
 
 > [!NOTE]
 > [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] プロジェクトをビルドするには、"v110" のプラットフォーム ツールセットを使用する必要があります。 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のプロジェクト ファイルを編集しない場合は、次のコマンド ライン引数を使用してプラットフォーム ツールセットを設定できます。
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a>ソース管理にチェックインできるようにビルド環境を作成する
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> ソース管理にチェックインできるようにビルド環境を作成する
  GAC へのファイルのインストールやレジストリ設定の変更を必要としない、さまざまなコンピューターに配置できるビルド環境を作成することもできます。 次の手順は、これを実現する方法の 1 つです。 ビルド環境ごとの特性に合わせて、手順を調整してください。
 
 > [!NOTE]
@@ -423,5 +423,5 @@ ms.locfileid: "72672311"
 
          ネイティブ 64 ビットのビルドの場合は、64 ビットの MSBuild が指定されるように調整します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  デバッグ実行可能[コマンドラインリファレンス](../msbuild/msbuild-command-line-reference.md)を[実行するためのテストコンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)

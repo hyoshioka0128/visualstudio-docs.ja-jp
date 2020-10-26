@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849148"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による UI の遅延を診断する
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
 UI が応答しなくなると、Visual Studio は、リーフから開始し、ベースに向かって動作する UI スレッドのコールスタックを調べます。 Visual Studio で、コールスタックフレームがインストール済みで有効な拡張機能の一部であるモジュールに属していると判断された場合、通知が表示されます。
 
@@ -43,7 +43,7 @@ UI の遅延を診断するには、まず、Visual Studio が通知を表示す
 
 ## <a name="restart-vs-with-activity-logging-on"></a>アクティビティログをオンにして VS を再起動する
 
-Visual Studio では、問題をデバッグするときに役立つ情報を提供する "アクティビティログ" を生成できます。 Visual Studio でアクティビティログをオンにするには、`/log` コマンドラインオプションを使用して Visual Studio を開きます。 Visual Studio が起動すると、アクティビティログは次の場所に格納されます。
+Visual Studio では、問題をデバッグするときに役立つ情報を提供する "アクティビティログ" を生成できます。 Visual Studio でアクティビティログをオンにするには、[コマンドライン] オプションを使用して Visual Studio を開き `/log` ます。 Visual Studio が起動すると、アクティビティログは次の場所に格納されます。
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -59,7 +59,7 @@ VS インスタンス ID を見つける方法の詳細については、「 [Vi
 Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:true -Providers:*Microsoft-VisualStudio:@StacksEnabled=true -NoV2Rundown /kernelEvents=default+FileIOInit+ContextSwitch+Dispatcher
 ```
 
-これにより、"VisualStudio" プロバイダーが有効になります。これは、Visual Studio が UI 遅延通知に関連するイベントに対して使用するプロバイダーです。 また、PerfView が**スレッド時間スタック**ビューを生成するために使用できるカーネルプロバイダーのキーワードも指定します。
+これにより、"VisualStudio" プロバイダーが有効になります。これは、Visual Studio が UI 遅延通知に関連するイベントに対して使用するプロバイダーです。 また、PerfView が **スレッド時間スタック** ビューを生成するために使用できるカーネルプロバイダーのキーワードも指定します。
 
 ## <a name="trigger-the-notification-to-appear-again"></a>通知が再度表示されるようにトリガーする
 
@@ -67,11 +67,11 @@ PerfView がトレースコレクションを開始したら、通知を再度�
 
 ## <a name="stop-etw-tracing"></a>ETW トレースの停止
 
-トレースコレクションを停止するには、PerfView ウィンドウの **コレクションの停止** ボタンを使用します。 トレースコレクションを停止すると、PerfView によって ETW イベントが自動的に処理され、出力トレースファイルが生成されます。
+トレースコレクションを停止するには、[PerfView] ウィンドウの [ **コレクションの停止** ] ボタンを使用します。 トレースコレクションを停止すると、PerfView によって ETW イベントが自動的に処理され、出力トレースファイルが生成されます。
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>アクティビティログを調べて遅延 ID を取得します
 
-既に説明したように、アクティビティログは、 *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id >* を参照してください。 Visual Studio は、拡張 UI の遅延を検出するたびに、ソースとして `UIDelayNotifications` を使用して、アクティビティログにノードを書き込みます。 このノードには、UI の遅延に関する4つの情報が含まれています。
+既に説明したように、 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*でアクティビティログを見つけることができます。 Visual Studio は、拡張 UI の遅延を検出するたびに、ソースとしてを使用して、アクティビティログにノードを書き込み `UIDelayNotifications` ます。 このノードには、UI の遅延に関する4つの情報が含まれています。
 
 - UI 遅延 ID。 VS セッションで UI 遅延を一意に識別するための連続した数値です。
 - 開始から終了までの Visual Studio セッションを一意に識別するセッション ID。
@@ -99,26 +99,26 @@ PerfView がトレースコレクションを開始したら、通知を再度�
 
 ![Perfview でのフォルダーパスの設定](media/perfview-set-path.png)
 
-次に、左側のウィンドウでトレースファイルを選択し、右クリックまたはコンテキストメニューから **[開く]** を選択して開きます。
+次に、左側のウィンドウでトレースファイルを選択し、右クリックまたはコンテキストメニューから [ **開く** ] を選択して開きます。
 
 > [!NOTE]
-> 既定では、PerfView は Zip アーカイブを出力します。 *.Zip*を開くと、アーカイブが自動的に圧縮解除され、トレースが開きます。 トレースの収集中に **[Zip]** ボックスをオフにすることで、これをスキップできます。 ただし、異なるコンピューター間でトレースを転送して使用する場合は、 **Zip**ボックスをオフにしないことを強くお勧めします。 このオプションを指定しない場合、Ngen アセンブリに必要な Pdb はトレースに含まれないため、Ngen アセンブリからのシンボルは対象のコンピューターで解決されません。 (Ngen アセンブリの Pdb の詳細については、こちらの[ブログ投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)を参照してください。)
+> 既定では、PerfView は Zip アーカイブを出力します。 *trace.zip*を開くと、アーカイブが自動的に圧縮解除され、トレースが開きます。 トレースの収集中に [ **Zip** ] ボックスをオフにすることで、これをスキップできます。 ただし、異なるコンピューター間でトレースを転送して使用する場合は、 **Zip** ボックスをオフにしないことを強くお勧めします。 このオプションを指定しない場合、Ngen アセンブリに必要な Pdb はトレースに含まれないため、Ngen アセンブリからのシンボルは対象のコンピューターで解決されません。 (Ngen アセンブリの Pdb の詳細については、こちらの [ブログ投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) を参照してください。)
 
 PerfView がトレースを処理して開くには、数分かかることがあります。 トレースが開かれると、その下にさまざまな "ビュー" の一覧が表示されます。
 
 ![PerfView トレースの概要ビュー](media/perfview-summary-view-events-selected.png)
 
-まず、**イベント**ビューを使用して、UI 遅延の時間範囲を取得します。
+まず、 **イベント** ビューを使用して、UI 遅延の時間範囲を取得します。
 
-1. トレースの下にある [`Events`] ノードを選択し、右クリックまたはコンテキストメニューから **[開く]** を選択して、**イベント**ビューを開きます。
-2. 左側のウィンドウで [`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`] を選択します。
-3. Enter キーを押す
+1. トレースの**Events**下にあるノードを選択 `Events` し、右クリックまたはコンテキストメニューから [**開く**] を選択して、イベントビューを開きます。
+2. 左側のウィンドウで [] を選択し `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` ます。
+3. Enter キーを押します
 
 選択内容が適用され、すべての `ExtensionUIUnresponsiveness` イベントが右ペインに表示されます。
 
 ![イベントビューでのイベントの選択](media/perfview-event-selection.png)
 
-右ペインの各行は、UI の遅延に対応しています。 イベントには、ステップ6のアクティビティログの遅延 ID と一致する "遅延 ID" 値が含まれます。 UI の遅延の最後に `ExtensionUIUnresponsiveness` が発生するため、イベントのタイムスタンプ (ほぼ) は UI の遅延の終了時刻を示します。 イベントには、遅延時間も含まれます。 終了タイムスタンプから期間を減算して、UI の遅延が開始されたときのタイムスタンプを取得できます。
+右ペインの各行は、UI の遅延に対応しています。 イベントには、ステップ6のアクティビティログの遅延 ID と一致する "遅延 ID" 値が含まれます。 `ExtensionUIUnresponsiveness`は ui の遅延の最後に発生するため、イベントのタイムスタンプ (ほぼ) は ui の遅延の終了時刻を示します。 イベントには、遅延時間も含まれます。 終了タイムスタンプから期間を減算して、UI の遅延が開始されたときのタイムスタンプを取得できます。
 
 ![UI 遅延時間範囲の計算](media/ui-delay-time-range.png)
 
@@ -126,7 +126,7 @@ PerfView がトレースを処理して開くには、数分かかることが�
 * 遅延開始は 12125.679-6143.085 = 5982.594 です。
 * UI 遅延時間の範囲は 5982.594 ~ 12125.679 です。
 
-時間範囲を設定したら、 **[イベント]** ビューを閉じて、[**スレッド時間 (startstop アクティビティを含む)] スタック**ビューを開くことができます。 このビューは特に便利です。なぜなら、UI スレッドをブロックしている拡張機能は、他のスレッドまたは i/o バインド操作を待機しているだけなのです。 そのため、ほとんどの場合、 **[Cpu スタック]** ビューは、その時間に cpu を使用していないためにスレッドがブロックする時間をキャプチャしない可能性があります。 **スレッド時間スタック**は、ブロック時間を適切に表示することで、この問題を解決します。
+時間範囲を設定したら、[ **イベント** ] ビューを閉じて、[ **スレッド時間 (startstop アクティビティを含む)] スタック** ビューを開くことができます。 このビューは特に便利です。なぜなら、UI スレッドをブロックしている拡張機能は、他のスレッドまたは i/o バインド操作を待機しているだけなのです。 そのため、ほとんどの場合、[ **Cpu スタック** ] ビューは、その時間に cpu を使用していないためにスレッドがブロックする時間をキャプチャしない可能性があります。 **スレッド時間スタック**は、ブロック時間を適切に表示することで、この問題を解決します。
 
 ![PerfView 概要ビューのスレッド時間 (StartStop アクティビティを含む) スタックノード](media/perfview-thread-time-with-startstop-activities-stacks.png)
 
@@ -134,26 +134,26 @@ PerfView がトレースを処理して開くには、数分かかることが�
 
 ![UI 遅延分析のスレッド時間スタックビュー](media/ui-delay-thread-time-stacks.png)
 
-ページの左上にある**スレッド時間スタック**ビューでは、前の手順で計算した値に時間範囲を設定し、 **enter**キーを押すと、その時間範囲にスタックが調整されます。
+ページの左上にある **スレッド時間スタック** ビューでは、前の手順で計算した値に時間範囲を設定し、 **enter** キーを押すと、その時間範囲にスタックが調整されます。
 
 > [!NOTE]
-> Visual Studio が既に開いているときにトレースコレクションが開始されている場合は、どのスレッドが UI (スタートアップ) スレッドであるかを判断することができます。 ただし、*UI (スタートアップ*) スレッドのスタック上の最初の要素は、ほとんどの場合、オペレーティングシステム dll (kernel32.dll と) の後に `devenv!?` 続き、`msenv!?`ます。 このシーケンスは、UI スレッドを識別するのに役立ちます。
+> Visual Studio が既に開いているときにトレースコレクションが開始されている場合は、どのスレッドが UI (スタートアップ) スレッドであるかを判断することができます。 ただし、UI (スタートアップ) スレッドのスタック上の最初の要素は、ほとんどの場合、オペレーティングシステム Dll (*ntdll.dll* および *kernel32.dll*) の後にが続き、その後にが続き `devenv!?` `msenv!?` ます。 このシーケンスは、UI スレッドを識別するのに役立ちます。
 
  ![スタートアップスレッドの識別](media/ui-delay-startup-thread.png)
 
 また、パッケージのモジュールを含むスタックだけを含めることで、このビューをフィルター処理できます。
 
-* 既定で追加されたグループを削除するには、 **Groupて s**を空のテキストに設定します。
-* 既存のプロセスフィルターに加えて、アセンブリ名の一部を含めるよう**に設定し**ます。 この場合は、devenv にする必要があり**ます。UIDelayR2**。
+* 既定で追加されたグループを削除するには、 **Groupて s** を空のテキストに設定します。
+* 既存のプロセスフィルターに加えて、アセンブリ名の一部を含めるよう **に設定し** ます。 この場合は、devenv にする必要があり **ます。UIDelayR2**。
 
 ![スレッド時間スタックビューでの GroupPath とインシデントパスの設定](media/perfview-tts-group-path-inc-path.png)
 
-PerfView には、コードのパフォーマンスのボトルネックを特定するために使用できる **[ヘルプ]** メニューの詳細なガイダンスがあります。 さらに、Visual Studio のスレッド Api を使用してコードを最適化する方法の詳細については、次のリンク先を参照してください。
+PerfView には、コードのパフォーマンスのボトルネックを特定するために使用できる [ **ヘルプ** ] メニューの詳細なガイダンスがあります。 さらに、Visual Studio のスレッド Api を使用してコードを最適化する方法の詳細については、次のリンク先を参照してください。
 
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/index.md](https://github.com/Microsoft/vs-threading/blob/master/doc/index.md)
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md)
 
-新しい Visual Studio の拡張機能の静的アナライザー ([ここで](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)は NuGet パッケージ) を使用して、効率的な拡張機能を記述するためのベストプラクティスに関するガイダンスを提供することもできます。 [VS SDK アナライザー](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md)と[スレッドアナライザー](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)の一覧については、「」を参照してください。
+新しい Visual Studio の拡張機能の静的アナライザー ( [ここで](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)は NuGet パッケージ) を使用して、効率的な拡張機能を記述するためのベストプラクティスに関するガイダンスを提供することもできます。 [VS SDK アナライザー](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md)と[スレッドアナライザー](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)の一覧については、「」を参照してください。
 
 > [!NOTE]
-> 制御できない依存関係が原因で無応答に対処できない場合 (たとえば、拡張機能が UI スレッドで同期 VS services を呼び出す必要がある場合)、そのことを知りたいと考えています。 Visual Studio パートナープログラムのメンバーである場合は、developer support の要求を送信してお問い合わせください。 それ以外の場合は、[問題の報告] ツールを使用してフィードバックを送信し、タイトルに `"Extension UI Delay Notifications"` を含めます。 また、分析の詳細な説明も含めてください。
+> 制御できない依存関係が原因で無応答に対処できない場合 (たとえば、拡張機能が UI スレッドで同期 VS services を呼び出す必要がある場合)、そのことを知りたいと考えています。 Visual Studio パートナープログラムのメンバーである場合は、developer support の要求を送信してお問い合わせください。 それ以外の場合は、[問題の報告] ツールを使用してフィードバックを送信し、 `"Extension UI Delay Notifications"` タイトルに含めます。 また、分析の詳細な説明も含めてください。

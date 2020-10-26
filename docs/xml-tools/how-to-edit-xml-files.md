@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817204"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249516"
 ---
 # <a name="how-to-edit-xml-files"></a>方法: XML ファイルを編集する
 
@@ -22,7 +22,7 @@ XML エディターは、XML ファイル用の新しいエディターです。
 > [!NOTE]
 > XHTML ドキュメントは HTML エディターによって処理されます。
 
-XML ファイルを編集するには、編集するファイルをダブルクリックします。
+XML ファイルを編集するには、編集するファイルを開きます。
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>新しい XML ファイルをプロジェクトに追加する
 
@@ -50,7 +50,7 @@ XML ファイルを編集するには、編集するファイルをダブルク�
 
 2. **[XML ファイル]** を選択して新しい XML ファイルを作成するか、 **[XSLT ファイル]** を選択して新しい XSLT スタイル シートを作成します。
 
-3. **[開く]** をクリックします。
+3. **[Open (開く)]** を選択します。
 
 ## <a name="create-an-empty-project-for-xml-files"></a>XML ファイル用の空のプロジェクトを作成する
 
@@ -62,7 +62,7 @@ XML ファイルを編集するには、編集するファイルをダブルク�
 
 2. 任意のコード言語を選択し、 **[空のプロジェクト (.NET Framework)]** テンプレートを選択します。
 
-3. **[OK]** をクリックします。
+3. **[OK]** を選択します。
 
 ::: moniker-end
 
@@ -70,9 +70,9 @@ XML ファイルを編集するには、編集するファイルをダブルク�
 
 1. **[ファイル]** メニューで、 **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-2. テンプレート検索ボックスに「**空のプロジェクト**」と入力し、 **[空のプロジェクト (.NET Framework)]** テンプレートを選択して、 **[次へ]** をクリックします。
+2. テンプレート検索ボックスに「**空のプロジェクト**」と入力し、 **[空のプロジェクト (.NET Framework)]** テンプレートを選択して、 **[次へ]** を選択します。
 
-3. **[作成]** をクリックします。
+3. **［作成］** を選択します
 
 ::: moniker-end
 

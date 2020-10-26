@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534317"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -205,13 +205,13 @@ Visual Studio 2015 の新機能については、「[Visual Studio 2015 の新�
 - [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
 - [アプリケーション、サービス、およびコンポーネントの配置](../deployment/deploying-applications-services-and-components.md)
 - [Visual Studio IDE の 64 ビット サポート](../ide/visual-studio-ide-64-bit-support.md)
-- [セキュリティ](../ide/security-in-visual-studio.md)
+- [Security](../ide/security-in-visual-studio.md)
 - [Visual Studio のサンプル](../ide/visual-studio-samples.md)
 - [Microsoft ヘルプ ビューアー](../ide/microsoft-help-viewer.md)
 - [アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)
 - [UI リファレンス](../ide/reference/general-user-interface-elements-visual-studio.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)
 - [コードの編集](https://www.visualstudio.com/features/ide-vs)

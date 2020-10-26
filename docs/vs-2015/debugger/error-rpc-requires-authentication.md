@@ -1,5 +1,5 @@
 ---
-title: エラー :認証を要求する RPC |Microsoft Docs
+title: エラー :認証を要求する RPC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf0c2d13668dbf380f326ee3a49e0389815a8fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535737"
 ---
 # <a name="error-rpc-requires-authentication"></a>エラー :認証を要求する RPC
@@ -30,10 +30,10 @@ Visual Studio デバッガーは、リモート コンピューターに接続�
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1. 実行`\` *windir*`\system32\regedt32.exe`  
+1. `\`*windir*`\system32\regedt32.exe` を実行します。  
   
-2. 見つけて削除`HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`します。  
+2. `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients` を見つけて削除します。  
   
 3. コンピューターを再起動してレジストリの変更を有効にします。  
   
-4. 問題が解決しない場合について、ドメイン管理者に問い合わせて、**コンピューターの構成 -> 管理用テンプレート - > システム]、[リモート プロシージャ呼び出しに認証されていない RPC クライアントの制限]-> [** グループポリシーの設定。
+4. 問題が解決しない場合は、ドメイン管理者にコンピューターの構成について問い合わせてください。 **>管理用テンプレート->システム->リモートプロシージャコール-認証されていない RPC クライアントに対する >の制限事項** ] グループポリシー設定です。

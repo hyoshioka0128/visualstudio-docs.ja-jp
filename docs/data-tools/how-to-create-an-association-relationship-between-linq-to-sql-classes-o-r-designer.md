@@ -1,5 +1,6 @@
 ---
-title: LINQ to SQL クラス間のリレーションシップ (O/R デザイナー)
+title: LINQ to SQL クラス間のリレーションシップ
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5c8872a7dc18829ca9a0b4328c58498352385ce6
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282151"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037069"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>方法: LINQ to SQL クラス間の関連付けを作成する (O/R デザイナー)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] のエンティティ クラス間の関連付けは、データベース内のテーブル間の関連付けに似ています。 **[関連付けエディター]** ダイアログ ボックスを使用することで、エンティティ クラス間の関連付けを作成できます。
@@ -29,7 +30,7 @@ ms.locfileid: "85282151"
 |プロパティ|説明|
 |--------------|-----------------|
 |**カーディナリティ**|関連付けが 1 対多と 1 対 1 のどちらであるかを制御します。|
-|**子プロパティ**|コレクションのプロパティを親に作成するか、子レコードへの参照を関連付けの外部キー側に作成するかを指定します。 たとえば、との間のアソシエーション `Customer` で `Order` 、**子プロパティ**が**True**に設定されている場合、という名前のプロパティ `Orders` が親クラスに作成されます。|
+|**子プロパティ**|コレクションのプロパティを親に作成するか、子レコードへの参照を関連付けの外部キー側に作成するかを指定します。 たとえば、との間のアソシエーション `Customer` で `Order` 、 **子プロパティ** が **True**に設定されている場合、という名前のプロパティ `Orders` が親クラスに作成されます。|
 |**Parent プロパティ**|関連付けられている親クラスを参照する子クラスのプロパティです。 たとえば、との間のアソシエーションでは、 `Customer` `Order` `Customer` 注文に関連付けられた顧客を参照するという名前のプロパティがクラスに作成され `Order` ます。|
 |**関与のプロパティ**|関連付けのプロパティを表示し、**[関連付けエディター]** ダイアログ ボックスを再び開く**省略記号**ボタン (...) が用意されています。|
 |**[一意]**|外部ターゲット列に一意性の制約があるかどうかを示します。|
@@ -42,11 +43,11 @@ ms.locfileid: "85282151"
 
 3. コンボ ボックスで**子クラス**を選択します。
 
-4. クラスに関連する **[関連付けのプロパティ]** を選択します。 通常、これはデータベースで定義されている外部キー リレーションシップにマップされます。 たとえば、との関連付けでは、 `Customers` `Orders` **アソシエーションプロパティ**は `CustomerID` 各クラスのになります。
+4. クラスに関連する **[関連付けのプロパティ]** を選択します。 通常、これはデータベースで定義されている外部キー リレーションシップにマップされます。 たとえば、との関連付けでは、 `Customers` `Orders` **アソシエーションプロパティ** は `CustomerID` 各クラスのになります。
 
 5. **[OK]** をクリックして、関連付けを作成します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [チュートリアル: LINQ to SQL クラスの作成](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

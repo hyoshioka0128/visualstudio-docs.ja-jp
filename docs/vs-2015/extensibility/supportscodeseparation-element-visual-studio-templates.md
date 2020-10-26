@@ -14,20 +14,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd454873fb6a81e66efa99ed68007408f87ff824
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160495"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定するかどうか、**別のファイルにコードを配置**チェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。  
+[**新しい項目の追加**] ダイアログボックスで [**別のファイルにコードを配置**する] チェックボックスをオンにするかどうかを指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<SupportsCodeSeparation >  
+ \<SupportsCodeSeparation>  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,22 +48,22 @@ ms.locfileid: "68160495"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、いずれかでどのように表示を定義、**新しいプロジェクト**または**新しい項目の** ダイアログ ボックス。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目** ] ダイアログボックスでの表示方法を定義します。|  
   
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- テキストがいずれかにする必要があります`true`または`false`ことを示すかどうか、**別のファイルにコードを配置**チェック ボックスをオンになって、**新しい項目の追加** ダイアログ ボックス。  
+ テキストは、[ `true` `false` **新しい項目の追加**] ダイアログボックスで [**別のファイルにコードを配置**する] チェックボックスがオンになっているかどうかを示す、またはのいずれかである必要があります。  
   
-## <a name="remarks"></a>Remarks  
- `SupportsCodeSeparation` は、省略可能な要素です。 既定値は `false` です。  
+## <a name="remarks"></a>注釈  
+ `SupportsCodeSeparation` は省略可能な要素です。 既定値は `false` です。  
   
- `SupportsCodeSeparation`要素は、Web 項目テンプレートの使用のみ。  
+ `SupportsCodeSeparation`要素は、Web 項目テンプレートでのみ使用できます。  
   
- コードの分離、または分離コード ページ モデルでは、1 つのファイルと、別のファイルのプログラミング コードにマークアップを格納することができます。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 他の .NET 言語は、このモデルを使用します。  
+ コードの分離または分離コードページモデルを使用すると、マークアップを1つのファイルに保持し、プログラミングコードを別のファイルに保持できます。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] その他の .NET 言語では、このモデルを使用します。  
   
 ## <a name="example"></a>例  
- 次の例を表示するように指定します、**別のファイルにコードを配置**オプション。  
+ 次の例では、[ **コードを別のファイルに配置** する] オプションを指定します。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -87,6 +87,6 @@ ms.locfileid: "68160495"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

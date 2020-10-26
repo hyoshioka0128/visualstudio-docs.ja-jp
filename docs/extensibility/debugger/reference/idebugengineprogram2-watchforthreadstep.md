@@ -1,5 +1,5 @@
 ---
-title: プログラム2:::ウォッチフォースレッドステップ |マイクロソフトドキュメント
+title: 'IDebugEngineProgram2:: WatchForThreadStep |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730358"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-指定されたスレッドで実行を監視 (または実行の監視を停止) します。
+指定されたスレッドで実行を監視します (または実行の監視を停止します)。
 
 ## <a name="syntax"></a>構文
 
@@ -47,24 +47,24 @@ int WatchForThreadStep( 
 
 ## <a name="parameters"></a>パラメーター
 `pOriginatingProgram`\
-[in]ステップ実行されるプログラムを表す[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)オブジェクト。
+から階段状のプログラムを表す [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) オブジェクト。
 
 `dwTid`\
-[in]監視するスレッドの識別子を指定します。
+から監視するスレッドの識別子を指定します。
 
 `fWatch`\
-[in]非ゼロ (`TRUE`) は、 で`dwTid`識別されるスレッドでの実行を監視開始する、それ以外の場合`FALSE`は、 0 ( `dwTid`) は、 での実行を監視しなくなることを意味します。
+から0以外 ( `TRUE` ) は、で識別されるスレッドで実行の監視を開始することを意味します。 `dwTid` それ以外の場合、ゼロ ( `FALSE` ) はでの実行の監視を停止 `dwTid` します。
 
 `dwFrame`\
-[in]ステップの種類を制御するフレーム インデックスを指定します。 この値がゼロ (0) の場合、ステップ・タイプは「ステップ・イン」になり、指定された`dwTid`スレッドが実行されるたびにプログラムを停止する必要があります。 ゼロ`dwFrame`以外の場合、ステップの種類は "ステップ オーバー" になり、指定された`dwTid`スレッドがスタック上でのインデックス以上のフレームで実行されている場合にのみ、プログラムを停止する必要`dwFrame`があります。
+からステップの種類を制御するフレームインデックスを指定します。 この値がゼロ (0) の場合、ステップの種類は "ステップイン" であり、によって識別されるスレッドが実行されるたびにプログラムが停止し `dwTid` ます。 `dwFrame`が0以外の場合、ステップの種類は "ステップオーバー" であり、で識別されるスレッド `dwTid` が、よりも大きいインデックスを持つフレームで実行されている場合にのみ、プログラムが停止し `dwFrame` ます。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- セッション デバッグ マネージャー (SDM) は、パラメーターで識別`pOriginatingProgram`されるプログラムをステップするときに、このメソッドを呼び出すことによって、他のすべての接続されたプログラムを通知します。
+## <a name="remarks"></a>解説
+ セッションデバッグマネージャー (SDM) が、パラメーターで識別されるプログラムをステップ実行すると、 `pOriginatingProgram` このメソッドを呼び出すことによって、アタッチされている他のすべてのプログラムに通知します。
 
- このメソッドは、同じスレッドのステップ実行にのみ適用されます。
+ このメソッドは、同じスレッドのステップ実行にのみ適用できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

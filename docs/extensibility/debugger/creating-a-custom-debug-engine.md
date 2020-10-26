@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 241bc016d8a64905951bffef07ba425f1351a727
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903586"
 ---
 # <a name="create-a-custom-debug-engine"></a>カスタムデバッグエンジンを作成する
@@ -25,7 +25,7 @@ ms.locfileid: "85903586"
 > [!NOTE]
 > Transact-sql と JScript には個別の DE が実装されていますが、VBScript と JScript は1つの DE を共有します。
 
- DE はインタープリターやオペレーティングシステムと連携して、そのようなデバッグサービスを実行制御、ブレークポイント、および式の評価として提供します。 これらのサービスは、DE インターフェイスを介して実装されます。これにより、デバッガーが異なる動作モード間で移行する可能性があります。 詳細については、「[操作モード](../../extensibility/debugger/operational-modes.md)」を参照してください。
+ DE はインタープリターやオペレーティングシステムと連携して、そのようなデバッグサービスを実行制御、ブレークポイント、および式の評価として提供します。 これらのサービスは、DE インターフェイスを介して実装されます。これにより、デバッガーが異なる動作モード間で移行する可能性があります。 詳細については、「 [操作モード](../../extensibility/debugger/operational-modes.md)」を参照してください。
 
  DE の作成は、次の手順で構成されます。
 
@@ -40,19 +40,19 @@ ms.locfileid: "85903586"
 5. 終了とデタッチの設定
 
 ## <a name="in-this-section"></a>このセクションの内容
- [カスタムデバッグエンジンを登録する](../../extensibility/debugger/registering-a-custom-debug-engine.md)デバッグエンジンを Visual Studio に登録して使用できるようにするために必要な手順について説明します。
+ [カスタムデバッグエンジンを登録する](../../extensibility/debugger/registering-a-custom-debug-engine.md) デバッグエンジンを Visual Studio に登録して使用できるようにするために必要な手順について説明します。
 
- [プログラムのデバッグを有効に](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)するDE を使用してプログラムをデバッグする前に、DE を起動するか、既存のプログラムにアタッチする必要があることについて説明します。
+ [プログラムのデバッグを有効に](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) するDE を使用してプログラムをデバッグする前に、DE を起動するか、既存のプログラムにアタッチする必要があることについて説明します。
 
- [実行制御と状態評価の実装](../../extensibility/debugger/execution-control-and-state-evaluation.md)アプリケーションをデバッグするために実行コントロール機能を実装する必要がある理由について説明します。
+ [実行制御と状態評価の実装](../../extensibility/debugger/execution-control-and-state-evaluation.md) アプリケーションをデバッグするために実行コントロール機能を実装する必要がある理由について説明します。
 
- [イベントの送信](../../extensibility/debugger/sending-events.md)デバッガーと、DCOM に基づくイベントモデルとしての逆の通信について説明します。
+ [イベントの送信](../../extensibility/debugger/sending-events.md) デバッガーと、DCOM に基づくイベントモデルとしての逆の通信について説明します。
 
- [終了とデタッチの設定](../../extensibility/debugger/termination-and-detaching.md)通常の終了を実現する方法について説明します。これは、デバッグ対象のアプリケーションにブレークポイント、例外、実行時エラー、または無限ループがないことを意味します。
+ [終了とデタッチの設定](../../extensibility/debugger/termination-and-detaching.md) 通常の終了を実現する方法について説明します。これは、デバッグ対象のアプリケーションにブレークポイント、例外、実行時エラー、または無限ループがないことを意味します。
 
- [デバッガーイベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)デバッグセッションで発生しているイベントの呼び出し順序を文書に記録します。
+ [デバッガーイベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md) デバッグセッションで発生しているイベントの呼び出し順序を文書に記録します。
 
- [方法: カスタムデバッグエンジンをデバッグする](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)カスタム DE をデバッグする方法について説明します。
+ [方法: カスタムデバッグエンジンをデバッグする](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) カスタム DE をデバッグする方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio デバッガーの機能拡張](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Replace コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665623"
 ---
 # <a name="replace-command"></a>Replace コマンド
@@ -73,5 +73,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>関連項目
- [[テキストの検索と置換](../../ide/finding-and-replacing-text.md) [] コマンドウィンドウ](../../ide/reference/command-window.md) [[検索/コマンド] ボックス](../../ide/find-command-box.md) [Visual studio](../../ide/reference/visual-studio-commands.md)コマンド[visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>参照
+ [[テキストの検索と置換](../../ide/finding-and-replacing-text.md) [] コマンドウィンドウ](../../ide/reference/command-window.md) [[検索/コマンド] ボックス](../../ide/find-command-box.md) [Visual studio](../../ide/reference/visual-studio-commands.md)コマンド [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

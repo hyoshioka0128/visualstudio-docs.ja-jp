@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bea5e2acea9a89c5a3b2fdfba441530a74ad8515
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177736"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 関数
@@ -67,7 +67,7 @@ HRESULT CvWriteFlagExVA(
   
 #### <a name="parameters"></a>パラメーター  
  `argList`  
- 引数リスト。  
+ 引数のリスト。  
   
  `category`  
  カテゴリ。  
@@ -76,7 +76,7 @@ HRESULT CvWriteFlagExVA(
  重要度レベル。  
   
  `pMarkerSeries`  
- 有効なマーカー シリーズ コンテキスト。 Nll は指定できません。  
+ 有効なマーカー系列コンテキスト。 Nll は指定できません。  
   
  `pMessage`  
  メッセージの書式設定文字列。 Nll は指定できません。  
@@ -91,5 +91,5 @@ HRESULT CvWriteFlagExVA(
   
  <strong>ANSI:</strong>CvWriteFlagExA、CvWriteFlagExVA  
   
-## <a name="see-also"></a>関連項目  
- [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>参照  
+ [C++ ライブラリリファレンス](../profiling/cpp-library-reference.md)

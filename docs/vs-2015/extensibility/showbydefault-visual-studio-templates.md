@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault (Visual Studio テンプレート) |Microsoft Docs
+title: ShowByDefault Visual Studio テンプレート)Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184129"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-場合`false`、テンプレートのみ表示されることを指定します。 指定された名前の[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)します。  
+の場合は `false` 、指定された [templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)の下にのみテンプレートが表示されることを指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<ShowByDefault >  
+ \<ShowByDefault>  
   
 ## <a name="syntax"></a>構文  
   
@@ -55,8 +55,8 @@ ms.locfileid: "68184129"
   
  テキストは、`true` または `false` である必要があります。 true の場合、すべてのプロジェクトの種類のテンプレートが表示されることを指定します。 false の場合、指定された `TemplateGroupID` にのみテンプレートが表示されます。  
   
-## <a name="remarks"></a>Remarks  
- `ShowByDefault` は、省略可能な要素です。 既定値は `true` です。  
+## <a name="remarks"></a>注釈  
+ `ShowByDefault` は省略可能な要素です。 既定値は `true` です。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートのメタデータの例を次に示します。  
@@ -86,7 +86,7 @@ ms.locfileid: "68184129"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
+## <a name="see-also"></a>参照  
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
  [TemplateGroupID 要素 (Visual Studio テンプレート)](../extensibility/templategroupid-element-visual-studio-templates.md)

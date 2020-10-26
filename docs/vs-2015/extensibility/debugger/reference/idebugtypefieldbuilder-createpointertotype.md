@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType |Microsoft Docs
+title: 'IDebugTypeFieldBuilder:: CreatePointerToType |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af549b9b5bb7c70ab8ae9e685c9335836ae757ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202288"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
@@ -41,13 +41,13 @@ int CreatePointerToType(
   
 #### <a name="parameters"></a>パラメーター  
  `pTypeField`  
- [in]をポイントする型。 これによって表されますが、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイス。  
+ からを指すように入力します。 これは、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイスによって表されます。  
   
  `pPtrToTypeField`  
- [out]新しいによって表されるポインターを返します**IDebugField**オブジェクト。  
+ 入出力新しい **IDebugField** オブジェクトによって表されるポインターを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d741ff59c3b57923912bcbb08a3a22ad20bf8a93
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295986"
 ---
 # <a name="extending-projects"></a>プロジェクトの拡張
@@ -23,7 +23,7 @@ ms.locfileid: "74295986"
 
 プロジェクトとソリューションは、Visual Studio がコードとリソースファイルをコンパイルおよび配置単位に整理する方法です。 プロジェクトの詳細については、 [「プロジェクト (Visual STUDIO SDK)](../extensibility/extending-projects.md)」を参照してください。  
   
- 独自のプロジェクトの種類を作成するには、Visual Studio SDK とプロジェクト用の Managed Package Framework を使用します。これは、[プロジェクトのマネージパッケージフレームワーク](https://archive.codeplex.com/?p=mpfproj12)でダウンロードできます。 カスタムプロジェクトの実装方法を理解するには、「[新しいプロジェクトの生成: 内部](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では、パート1と[新しいプロジェクトの生成: 内部ではパート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)」を参照してください。  
+ 独自のプロジェクトの種類を作成するには、Visual Studio SDK とプロジェクト用の Managed Package Framework を使用します。これは、 [プロジェクトのマネージパッケージフレームワーク](https://archive.codeplex.com/?p=mpfproj12)でダウンロードできます。 カスタムプロジェクトの実装方法を理解するには、「 [新しいプロジェクトの生成: 内部](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) では、パート1と [新しいプロジェクトの生成: 内部ではパート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)」を参照してください。  
   
  このセクションのトピックでは、カスタムプロジェクトを作成する方法と、さまざまな種類の Visual Studio ソリューションを管理する方法について説明します。  
   
@@ -52,4 +52,4 @@ ms.locfileid: "74295986"
  [ユニバーサル Windows プロジェクトの管理](../extensibility/managing-universal-windows-projects.md)  
  ユニバーサルプロジェクトを管理する方法について説明します。  
   
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目

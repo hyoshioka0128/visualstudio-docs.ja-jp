@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551505"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>全般リファレンス (Visual Studio での Office 開発)
@@ -39,16 +39,16 @@ ms.locfileid: "69551505"
 
  配置マニフェストを使用して Office ソリューションを使用する方法について説明します。
 
-- [Visual Studio で&#40;のユーザーインターフェイスリファレンス Office 開発&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発 &#40;ユーザーインターフェイスリファレンス&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
  さまざまなダイアログボックス、ウィンドウ、およびその他のユーザーインターフェイスに表示されるオプションについて説明するトピックの一覧を示します。
 
-- [Visual Studio &#40;でのエラーメッセージ Office 開発&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発 &#40;エラーメッセージ&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
  Office プロジェクトのエラーメッセージについて説明するトピックの一覧を示します。
 
 ## <a name="related-sections"></a>関連項目
-- [はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Visual Studio で &#40;Office 開発を開始する&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
  セットアップ、プロジェクトテンプレート、Office プライマリ相互運用機能アセンブリ、および Office 開発の新機能に関する情報へのリンクを示します。
 

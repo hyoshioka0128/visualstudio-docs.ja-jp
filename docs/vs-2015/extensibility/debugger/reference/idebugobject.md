@@ -13,59 +13,59 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c179a4443c23373fb92adf522ee0af34acb19c3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695267"
 ---
 # <a name="idebugobject"></a>IDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- このインターフェイスは、記号と式の値をカプセル化するバインダーを作成するオブジェクトを表します。  
+ このインターフェイスは、シンボルと式の値をカプセル化するためにバインダーによって作成されるオブジェクトを表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugObject : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- 式エバリュエーターでは、オブジェクトを表すためには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ 式エバリュエーターは、このインターフェイスを実装してオブジェクトを表します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- このインターフェイスは、式エバリュエーターが解析された式で使用するすべてのオブジェクトの基本クラスです。 呼び出しによって返される、[バインド](../../../extensibility/debugger/reference/idebugbinder-bind.md)メソッド。 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)はこのインターフェイスより専門的なインターフェイスを取得します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ このインターフェイスは、解析された式で式エバリュエーターが使用するすべてのオブジェクトの基本クラスです。 これは、 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) メソッドの呼び出しによって返されます。 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) は、このインターフェイスからより特殊化されたインターフェイスを取得します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugObject`します。  
+ 次の表に、のメソッドを示し `IDebugObject` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|オブジェクトのサイズを取得します。|  
-|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|連続した一連のバイトとしてオブジェクトの値を取得します。|  
-|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|連続した一連のバイトから、オブジェクトの値を設定します。|  
+|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|オブジェクトの値を連続する一連のバイトとして取得します。|  
+|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|オブジェクトの値を連続する一連のバイトから設定します。|  
 |[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|このオブジェクトの参照値を設定します。|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|オブジェクトの値のアドレスを表すメモリ コンテキストを取得します。|  
-|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|デバッグ エンジンのアドレス空間には、管理対象のオブジェクトのコピーを作成します。|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|オブジェクトの値のアドレスを表すメモリコンテキストを取得します。|  
+|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|デバッグエンジンのアドレス空間にマネージオブジェクトのコピーを作成します。|  
 |[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|このオブジェクトが null 参照であるかどうかをテストします。|  
-|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|このオブジェクトを比較します。|  
-|[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|このオブジェクトは読み取り専用のかどうかを決定します。|  
-|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|オブジェクトが透過プロキシであるかどうかを判断します。|  
+|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|オブジェクトとこのオブジェクトを比較します。|  
+|[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|このオブジェクトが読み取り専用かどうかを判断します。|  
+|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|オブジェクトが透過プロキシかどうかを判断します。|  
   
-## <a name="remarks"></a>Remarks  
- 式エバリュエーターでは、基底クラスとしてのこのインターフェイスを使用して、解析ツリー内のオブジェクトを表します。  
+## <a name="remarks"></a>注釈  
+ 式エバリュエーターは、このインターフェイスを基底クラスとして使用して、解析ツリー内のオブジェクトを表します。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: ee.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: ee  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [式の評価インターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [束縛](../../../extensibility/debugger/reference/idebugbinder-bind.md)

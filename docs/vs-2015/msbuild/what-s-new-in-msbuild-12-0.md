@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844455"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0 の新機能
@@ -22,7 +22,7 @@ ms.locfileid: "75844455"
 MSBuild は、.NET Framework の一部ではなく Visual Studio の一部としてインストールされます。 MSBuild の現在のバージョン番号は 12.0 です。 MSBuild を個別にインストールする場合は、[MSBuild ダウンロード](https://www.microsoft.com/download/details.aspx?id=40760)からインストール パッケージをダウンロードします。  
   
 ## <a name="changed-path"></a>変更されたパス  
- MSBuild は、 *%ProgramFiles%* の下に直接インストールされます (例: C:\Program Files\MSBuild\\)。  
+ MSBuild は、*%ProgramFiles%* の下に直接インストールされます (例: C:\Program Files\MSBuild\\)。  
   
 ## <a name="changed-properties"></a>変更されたプロパティ  
  新しいバージョン番号に伴い、次の MSBuild プロパティが変更されました。  
@@ -41,5 +41,5 @@ MSBuild は、.NET Framework の一部ではなく Visual Studio の一部とし
   
 - `MSBuildToolsPath` と `MSBuildFrameworkToolsPath` は 32 ビット対応のプロパティであり、`MSBuildToolsPath32` と `MSBuildFrameworkToolsPath32` は、32 ビットまたは 64 ビットの MSBuild を使用しているかどうかに関係なく、常に 32 ビットの場所を指します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 [MSBuild](msbuild.md)

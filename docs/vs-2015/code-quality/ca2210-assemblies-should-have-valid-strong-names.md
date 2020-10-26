@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548201"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:アセンブリには有効な厳密な名前が必要です
@@ -67,7 +67,7 @@ ms.locfileid: "85548201"
 
 - V1.0 または v1.1 では、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] または属性のいずれかを使用し <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> ます。
 
-- で [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] `/keyfile` は、または `/keycontainer` コンパイラオプション[/Keyfile (アセンブリに署名するためのキーまたはキーペアの指定)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)または[/KEYCONTAINER (アセンブリに署名するためのキーコンテナーの指定)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e)リンカーオプションを C++ で使用します。
+- で [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] `/keyfile` は、または `/keycontainer` コンパイラオプション [/Keyfile (アセンブリに署名するためのキーまたはキーペアの指定)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) または [/KEYCONTAINER (アセンブリに署名するためのキーコンテナーの指定)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) リンカーオプションを C++ で使用します。
 
   **Visual Studio で厳密な名前を使用してアセンブリに署名するには**
 
@@ -75,13 +75,13 @@ ms.locfileid: "85548201"
 
 2. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[プロパティ] をクリックし**ます。**
 
-3. [**署名**] タブをクリックし、[**アセンブリの署名**] チェックボックスをオンにします。
+3. [ **署名** ] タブをクリックし、[ **アセンブリの署名** ] チェックボックスをオンにします。
 
 4. **[厳密な名前のキーファイルを選択**してください] で、[**新規**] を選択します。
 
-    [**厳密な名前キーの作成**] ウィンドウが表示されます。
+    [ **厳密な名前キーの作成** ] ウィンドウが表示されます。
 
-5. [**キーファイル名**] に、厳密な名前のキーの名前を入力します。
+5. [ **キーファイル名**] に、厳密な名前のキーの名前を入力します。
 
 6. パスワードを使用してキーを保護するかどうかを選択し、[ **OK]** をクリックします。
 
@@ -94,6 +94,6 @@ ms.locfileid: "85548201"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  コンテンツの改ざんが心配でない環境でアセンブリが使用されている場合にのみ、この規則の警告を非表示にします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)する[Sn.exe (厳密名ツール)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)する [Sn.exe (厳密名ツール)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

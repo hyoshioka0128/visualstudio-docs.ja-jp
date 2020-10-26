@@ -1,5 +1,5 @@
 ---
-title: 値の変更の実装例 |マイクロソフトドキュメント
+title: 値の変更の実装例 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713112"
 ---
-# <a name="sample-implementation-of-changing-values"></a>変更値の実装例
+# <a name="sample-implementation-of-changing-values"></a>値の変更の実装例
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- **[ローカル**] ウィンドウに表示されるすべてのローカルには[、IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトが関連付けられます。 この`IDebugProperty2`オブジェクトには、ローカルの名前、値、および型が含まれます。 ユーザーがローカルの値を変更すると、メモリ内のローカルの値を更新するために[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)を呼び出します。 この例では、ローカルは`CFieldProperty``IDebugProperty2`インターフェイスを実装するクラスによって表されます。
+ [ **ローカル] ウィンドウ** に表示される各ローカルには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトが関連付けられています。 この `IDebugProperty2` オブジェクトには、ローカルの名前、値、および型が含まれています。 ユーザーがローカルのの値を変更すると、Visual Studio は [Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) を呼び出して、メモリ内のローカルの値を更新します。 この例では、ローカルはインターフェイスを実装するクラスによって表され `CFieldProperty` `IDebugProperty2` ます。
 
 > [!NOTE]
-> **ウォッチ式**および**クイックウォッチ**式の場合、変更される値は MyCEE サンプルの`CValueProperty`クラスによって表されます。 ただし、の実装`IDebugProperty2::SetValueAsString`はここで示すのと同じです。
+> **Watch**および**クイックウォッチ**式の場合、変更される値は、MyCEE サンプルのクラスによって表され `CValueProperty` ます。 ただし、の実装 `IDebugProperty2::SetValueAsString` は、ここで示したものと同じです。
 
- の`IDebugProperty2::SetValueAsString`実装は、次のタスクを実行します。
+ の実装では `IDebugProperty2::SetValueAsString` 、次のタスクを実行します。
 
 1. 式を評価して値を生成します。
 
-2. 関連付けられた[IDebugField](../../extensibility/debugger/reference/idebugfield.md)オブジェクトをそのメモリの場所にバインドし[、IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクトを生成します。
+2. 関連付けられている [IDebugField](../../extensibility/debugger/reference/idebugfield.md) オブジェクトをそのメモリ位置にバインドし、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) オブジェクトを生成します。
 
 3. 値を一連のバイトに変換します。
 
-4. メモリにバイトを格納する[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)を呼び出します。
+4. [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)を呼び出して、バイトをメモリに格納します。
 
 ## <a name="managed-code"></a>マネージド コード
- 次のコードは、マネージ`IDebugProperty2::SetValueAsString`コードの実装です。
+ 次のコードは、マネージコードでのの実装です `IDebugProperty2::SetValueAsString` 。
 
 ```csharp
 namespace EEMC
@@ -222,8 +222,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>アンマネージ コード
- 次のコードは、マネージ`IDebugProperty2::SetValueAsString`コードの実装です。 ヘルパー関数`FieldCoerceValueType`(図示せず)`VARIANT`は、a を特定の型に強制し、値が処理`FieldSetValue`できる型の 1 つであることを確認します。
+## <a name="unmanaged-code"></a>アンマネージコード
+ 次のコードは、マネージコードでのの実装です `IDebugProperty2::SetValueAsString` 。 ヘルパー関数 `FieldCoerceValueType` (示されていません) は、を `VARIANT` 特定の型にし、値が処理可能な型の1つであることを確認し `FieldSetValue` ます。
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(

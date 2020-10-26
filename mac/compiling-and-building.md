@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128417"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Visual Studio for Mac のコンパイルとビルド
@@ -21,7 +21,7 @@ Visual Studio for Mac は、プロジェクトの開発中、アプリケーシ�
 
 Mac では、次の方法のいずれかを使用してアプリケーションをビルドできます: Visual Studio for Mac、MSBuild コマンドライン ツール、または Azure Pipelines。
 
-| ビルド方法 | 利点 |
+| ビルド方法 | メリット |
 | --- |--- | --- |
 | Visual Studio for Mac |- ビルドを即座に作成してデバッガーでテストできます。<br />- マルチプロセッサ ビルドを実行できます (C# のプロジェクトの場合)。<br />- ビルド システムのさまざまな面をカスタマイズできます。 |
 | MSBuild コマンドライン| - Visual Studio for Mac をインストールせずにプロジェクトをビルドできます。<br />- すべてのプロジェクト タイプでマルチ プロセッサ ビルドを実行できます。<br />- ビルド システムのほとんどの部分をカスタマイズできます。|

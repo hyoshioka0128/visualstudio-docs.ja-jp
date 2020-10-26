@@ -1,22 +1,24 @@
 ---
-title: 配色テーマとフォントを設定する
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: Visual Studio ダーク テーマの設定とテキストの色の変更
+description: Visual Studio の既定の配色テーマをダーク モードに変更し、コード エディターのフォントの色を変更する方法について説明します。
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233150"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801400"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Visual Studio IDE とエディターのカスタマイズ
+# <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>方法: Visual Studio IDE とエディターのカスタマイズ
 
-この 5 分から 10 分程度のチュートリアルでは、ダーク テーマを選択して、Visual Studio の配色テーマをカスタマイズします。 テキスト エディターで 2 つの異なる種類のテキスト用の色もカスタマイズします。
+このハウツー記事では、Visual Studio の配色テーマを既定の青のテーマからダーク テーマにカスタマイズします。 その後、コード エディターで 2 つの異なる種類のテキストの色をカスタマイズします。
 
 ::: moniker range="vs-2017"
 
@@ -30,7 +32,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>配色テーマの設定
+## <a name="set-the-color-theme-for-the-ide"></a>IDE の配色テーマを設定する
 
 Visual Studio のユーザー インターフェイスの既定の配色テーマは、 **[青]** です。 このテーマを **[濃色]** に変えてみましょう。
 
@@ -66,7 +68,7 @@ Visual Studio のユーザー インターフェイスの既定の配色テー�
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>テキストの色の変更
+## <a name="change-text-colors-in-the-editor"></a>エディターのテキストの色を変更する
 
 次に、エディターのテキストの色をいくつかカスタマイズします。 まず、新しい XML ファイルを作成して既定の色を確認しましょう。
 
@@ -124,9 +126,10 @@ Visual Studio のユーザー インターフェイスの既定の配色テー�
 
    ![新しいフォントの色が設定された XML ファイル](media/quickstart-personalize-xml-file-new-colors.png)
 
-Visual Studio の色をカスタマイズするいくつかの方法について学習しました。 ぜひ **[オプション]** ダイアログ ボックスの他のカスタマイズ オプションも試して、Visual Studio を完全にカスタマイズしてください。
+Visual Studio の色をカスタマイズするいくつかの方法について学習しました。 Visual Studio を自分の好みに合わせて完全にカスタマイズするために、[ **[オプション]** ](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) ダイアログ ボックスの他のカスタマイズ オプションも試してみることをお勧めします。
 
 ## <a name="see-also"></a>関連項目
 
-- [エディターのカスタマイズ](../ide/how-to-change-text-case-in-the-editor.md)
+- [方法: Visual Studio のフォント、色、テーマを変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [方法 : エディター内のテキストの大文字と小文字を変更する](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visual Studio IDE の概要](../get-started/visual-studio-ide.md)

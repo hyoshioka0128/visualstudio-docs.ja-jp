@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d2973f4e1d775d1b71642ea60b8cf00b1430c77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664697"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend の [個別選択] ツールの修飾キー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-次の表に、**個別選択**ツール![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362")で既存のパスの形状を変更するために使用できるショートカットを示します。 既存のパス上の点を追加または削除したり、2 つの既存のパスを結合したりする場合は、 **[ペン]** ツールを使います。
+次の表は、**個別選択**ツール ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") で既存のパスの形状を変更するために使うことができるショートカットの一覧です。 既存のパス上の点を追加または削除したり、2 つの既存のパスを結合したりする場合は、**[ペン]** ツールを使います。
 
-|目的|操作手順|ポインター|
+|行う操作|方法|ポインター|
 |-----------------------|-------------|-------------|
 |正接ハンドルをパス上のポイントに表示させます|パス上のポイントをクリックします|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> ポイントのポインターを移動します|
 |ポイントをパス上に移動します|ポイントをパス上にドラッグします|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> ポイントのポインターを移動します|

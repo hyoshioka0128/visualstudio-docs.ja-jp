@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144314"
 ---
 # <a name="target-element-msbuild"></a>Target 要素 (MSBuild)
@@ -63,12 +63,12 @@ ms.locfileid: "68144314"
 |---------------|-----------------|  
 |`Name`|必須の属性です。<br /><br /> ターゲットの名前。|  
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 条件が `false` と評価された場合、ターゲットの本体も、`DependsOnTargets` 属性で設定されたいずれのターゲットも実行されません。 条件の詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|  
-|`Inputs`|省略可能な属性です。<br /><br /> このターゲットの入力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Outputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、次を参照してください。[インクリメンタル ビルド](../msbuild/incremental-builds.md)、[方法。インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)、および[変換](../msbuild/msbuild-transforms.md)します。|  
-|`Outputs`|省略可能な属性です。<br /><br /> このターゲットの出力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Inputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、次を参照してください。[インクリメンタル ビルド](../msbuild/incremental-builds.md)、[方法。インクリメンタル ビルド](../msbuild/how-to-build-incrementally.md)、および[変換](../msbuild/msbuild-transforms.md)します。|  
+|`Inputs`|省略可能な属性です。<br /><br /> このターゲットの入力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Outputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、「 [インクリメンタルビルド](../msbuild/incremental-builds.md)」、「 [方法: インクリ](../msbuild/how-to-build-incrementally.md)メンタルなビルド」、および「 [変換](../msbuild/msbuild-transforms.md)」を参照してください。|  
+|`Outputs`|省略可能な属性です。<br /><br /> このターゲットの出力を形成するファイル。 複数のファイルを指定するときは、セミコロン (;) で区切ります。 ファイルのタイムスタンプは、`Inputs` のファイルのタイムスタンプと比較され、`Target` が最新かどうか判断されます。 詳細については、「 [インクリメンタルビルド](../msbuild/incremental-builds.md)」、「 [方法: インクリ](../msbuild/how-to-build-incrementally.md)メンタルなビルド」、および「 [変換](../msbuild/msbuild-transforms.md)」を参照してください。|  
 |`Returns`|省略可能な属性です。<br /><br /> このターゲットを呼び出すタスク (MSBuild タスクなど) で使用可能になる項目のセットです。 複数のターゲットを指定するときは、セミコロン (;) で区切ります。 ファイル内のターゲットに `Returns` 属性がない場合、代わりに Outputs 属性がこの目的で使用されます。|  
 |`KeepDuplicateOutputs`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、ターゲットの Returns の同じ項目への参照が複数記録されます。  既定では、この属性は `false` です。|  
-|`BeforeTargets`|省略可能な属性です。<br /><br /> ターゲット名のセミコロン区切りのリストです。  指定した場合、指定したターゲットの前にこのターゲットが実行されます。 これにより、プロジェクト作成者は、これらを直接変更せずに、既存のターゲット セットを拡張できます。 詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。|  
-|`AfterTargets`|省略可能な属性です。<br /><br /> ターゲット名のセミコロン区切りのリストです。 指定した場合、指定したターゲットの後でこのターゲットが実行されます。 これにより、プロジェクト作成者は、これらを直接変更せずに、既存のターゲット セットを拡張できます。 詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。|  
+|`BeforeTargets`|省略可能な属性です。<br /><br /> ターゲット名のセミコロン区切りのリストです。  指定した場合、指定したターゲットの前にこのターゲットが実行されます。 これにより、プロジェクト作成者は、これらを直接変更せずに、既存のターゲット セットを拡張できます。 詳細については、「 [ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。|  
+|`AfterTargets`|省略可能な属性です。<br /><br /> ターゲット名のセミコロン区切りのリストです。 指定した場合、指定したターゲットの後でこのターゲットが実行されます。 これにより、プロジェクト作成者は、これらを直接変更せずに、既存のターゲット セットを拡張できます。 詳細については、「 [ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。|  
 |`DependsOnTargets`|省略可能な属性です。<br /><br /> このターゲットを実行する前、またはトップレベルの依存関係分析を実行する前に、実行する必要のあるターゲットです。 複数のターゲットを指定するときは、セミコロン (;) で区切ります。|  
 |`Label`|省略可能な属性です。<br /><br /> システム要素およびユーザー要素を識別するため、または順序付けるための識別子です。|  
   
@@ -79,7 +79,7 @@ ms.locfileid: "68144314"
 |[Task](../msbuild/task-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクのインスタンスを作成し、実行します。 1 つのターゲットに 0 個以上のタスクを指定できます。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|ユーザー定義の `Property` 要素のセットを格納します。 .NET Framework 3.5 以降では、`Target` 要素に `PropertyGroup` 要素を格納できます。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|ユーザー定義の `Item` 要素のセットを格納します。 .NET Framework 3.5 以降では、`Target` 要素に `ItemGroup` 要素を格納できます。 詳細については、「[項目](../msbuild/msbuild-items.md)」を参照してください。|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|失敗したタスクの `ContinueOnError` 属性が ErrorAndStop (または `false`) の場合、1 つ以上のターゲットが実行されます。 1 つのターゲットに 0 個以上の `OnError` 要素を指定できます。 `OnError` 要素がある場合は、`Target` 要素内で最後の要素である必要があります。<br /><br /> `ContinueOnError` 属性の詳細は、「[Task Element (MSBuild) (Task 要素 (MSBuild))](../msbuild/task-element-msbuild.md)」を参照してください。|  
+|[OnError](../msbuild/onerror-element-msbuild.md)|失敗したタスクの `ContinueOnError` 属性が ErrorAndStop (または `false`) の場合、1 つ以上のターゲットが実行されます。 1 つのターゲットに 0 個以上の `OnError` 要素を指定できます。 `OnError` 要素がある場合は、`Target` 要素内で最後の要素である必要があります。<br /><br /> 属性の詳細については `ContinueOnError` 、「 [Task 要素 (MSBuild)](../msbuild/task-element-msbuild.md)」を参照してください。|  
   
 ### <a name="parent-elements"></a>親要素  
   
@@ -88,7 +88,7 @@ ms.locfileid: "68144314"
 |[プロジェクト](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルの必須のルート要素です。|  
   
 ## <a name="remarks"></a>Remarks  
- 実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、「[ターゲット](../msbuild/msbuild-targets.md)」を参照してください。  
+ 実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、[ターゲット](../msbuild/msbuild-targets.md) を参照してください。  
   
  あるターゲットに複数のターゲットが依存関係を持つ場合でも、ターゲットは 1 回のビルド中に 1 回だけ実行されます。  
   
@@ -119,6 +119,6 @@ ms.locfileid: "68144314"
 </Target>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ターゲット](../msbuild/msbuild-targets.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)

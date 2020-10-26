@@ -11,26 +11,26 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204066"
 ---
 # <a name="how-to-troubleshoot-services"></a>方法: サービスのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-これには、サービスを取得するときに発生する可能性があるいくつかの一般的な問題があります。  
+サービスを取得しようとすると、いくつかの一般的な問題が発生する可能性があります。  
   
-- サービスが登録されていない[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
+- サービスはに登録されていません [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
-- インターフェイスの種類によって、サービスの種類ではなく、サービスを要求します。  
+- サービスは、サービスの種類ではなく、インターフェイスの種類によって要求されます。  
   
-- サービスを要求する VSPackage が配置されてされていません。  
+- サービスを要求している VSPackage が配置されていません。  
   
-- 間違ったサービス プロバイダーが使用されます。  
+- 間違ったサービスプロバイダーが使用されています。  
   
-  かどうか、要求されたサービスを取得できない呼び出し<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>は null を返します。 サービスを要求した後は、null の常にテストする必要があります。  
+  要求されたサービスを取得できない場合、を呼び出すと <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> null が返されます。 サービスを要求した後、必ず null をテストする必要があります。  
   
 ```csharp  
 IVsActivityLog log =   
@@ -38,11 +38,11 @@ IVsActivityLog log =
 if (log == null) return;  
 ```  
   
-### <a name="to-troubleshoot-a-service"></a>サービスをトラブルシューティングするには  
+### <a name="to-troubleshoot-a-service"></a>サービスのトラブルシューティングを行うには  
   
-1. システム レジストリにサービスが正しく登録されているかどうかを確認します。 詳細については、次を参照してください。[サービス登録](../misc/registering-services.md)します。  
+1. システムレジストリを調べて、サービスが正しく登録されているかどうかを確認します。 詳細については、「 [サービスの登録](../misc/registering-services.md)」を参照してください。  
   
-     次の .reg ファイル フラグメントは、SVsTextManager サービスを登録する方法を示しています。  
+     次の .reg ファイルフラグメントは、SVsTextManager サービスを登録する方法を示しています。  
   
     ```  
     [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  
@@ -50,25 +50,25 @@ if (log == null) return;
     "Name"="SVsTextManager"  
     ```  
   
-     上記の例では、バージョン番号は、バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]12.0 または 14.0、キー {f5e7e71d-1401-11d1-883b-0000f87579d2} は、サービス、SVsTextManager および既定値の {のサービス識別子 (SID) など、F5E7E720-1401-11d1-883B-0000F87579D2} は、テキスト マネージャー サービスを提供する VSPackage のパッケージ GUID です。  
+     上記の例では、バージョン番号は12.0 や14.0 などののバージョンです [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。キー {F5E7E71D-1401-11d1-883B-0000F87579D2} はサービスのサービス識別子 (SID)、SVsTextManager、既定値 {F5E7E720-1401-11d1-883B-0000F87579D2} は、サービスを提供するテキストマネージャー VSPackage のパッケージ GUID です (既定値 {})。  
   
-2. GetService を呼び出すときに、サービスの種類と、インターフェイス型ではなくを使用します。 サービスを要求するときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、<xref:Microsoft.VisualStudio.Shell.Package>型から GUID を抽出します。 次の条件が存在しない場合、サービスは見つかりませんされます。  
+2. GetService を呼び出すときは、インターフェイスの種類ではなくサービスの種類を使用します。 からサービスを要求するときに [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、 <xref:Microsoft.VisualStudio.Shell.Package> 型から GUID を抽出します。 次の条件が存在する場合、サービスは見つかりません。  
   
-    1. インターフェイス型は、サービスの種類ではなく、GetService に渡されます。  
+    1. インターフェイス型は、サービス型ではなく、GetService に渡されます。  
   
-    2. GUID は、インターフェイスを明示的に割り当てられません。 そのため、システムは、必要に応じてオブジェクトの既定の GUID を作成します。  
+    2. インターフェイスに明示的に割り当てられている GUID はありません。 そのため、必要に応じて、システムによってオブジェクトの既定の GUID が作成されます。  
   
-3. サービスを要求する VSPackage が配置されていることを確認します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 呼び出す前に、構築した後は、VSPackage をサイト<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>します。  
+3. サービスを要求している VSPackage が配置されていることを確認してください。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] サイトを構築した後、を呼び出す前に VSPackage し <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> ます。  
   
-     サービスの必要がある VSPackage コンス トラクターでコードがある場合は、Initialize メソッドに移動します。  
+     サービスを必要とする VSPackage コンストラクターにコードがある場合は、それを Initialize メソッドに移動します。  
   
-4. 適切なサービス プロバイダーを使用していることを確認します。  
+4. 正しいサービスプロバイダーを使用していることを確認してください。  
   
-     すべてのサービス プロバイダーは同じです。 サービス プロバイダーを[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ツール ウィンドウへのパスと、VSPackage に渡す 1 つは異なります。 ツール ウィンドウのサービス プロバイダーが知って<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>で認識されていないが、<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>します。 呼び出すことができます<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>ツール ウィンドウ内から VSPackage サービス プロバイダーを取得します。  
+     すべてのサービスプロバイダーが似ているわけではありません。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ツールウィンドウに渡すサービスプロバイダーは、VSPackage に渡されるものとは異なります。 ツールウィンドウサービスプロバイダーはを認識し <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> ますが、については理解していません <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> 。 を呼び出して、 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> ツールウィンドウ内から VSPackage service プロバイダーを取得できます。  
   
-     ツール ウィンドウは、ユーザー コントロールまたはその他のすべてのコントロール コンテナーをホストしている場合、コンテナーが、Windows のコンポーネント モデルによって配置されている場合し、へのアクセスはありません。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]サービス。 呼び出すことができます<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>コントロール コンテナー内から VSPackage サービス プロバイダーを取得します。  
+     ツールウィンドウがユーザーコントロールまたはその他のコントロールコンテナーをホストしている場合、コンテナーは Windows コンポーネントモデルによって配置され、どのサービスにもアクセスできません [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 を呼び出して、 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> コントロールコンテナー内から VSPackage service プロバイダーを取得できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [利用可能なサービスの一覧](../extensibility/internals/list-of-available-services.md)   
- [使用して、サービスを提供します。](../extensibility/using-and-providing-services.md)   
+ [サービスの使用と提供](../extensibility/using-and-providing-services.md)   
  [サービスの基本情報](../extensibility/internals/service-essentials.md)

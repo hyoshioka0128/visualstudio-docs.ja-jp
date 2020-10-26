@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugPort2:: GetPortRequest |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48d39ea10e8425d5449444514489ac4b73c0a3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725338"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-ポートの作成に以前使用されていたポートの説明を取得します (使用可能な場合)。
+ポートの作成に使用されたポート (使用可能な場合) の説明を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ int GetPortRequest( 
 
 ## <a name="parameters"></a>パラメーター
 `ppRequest`\
-[アウト]ポートの作成に使用された要求を表す[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)オブジェクトを返します。
+入出力ポートの作成に使用された要求を表す [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。  ポート`E_PORT_NO_REQUEST`が[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)ポート要求を使用して作成されなかったかどうかを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  `E_PORT_NO_REQUEST`ポートが[IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) port 要求を使用して作成されなかった場合は、を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

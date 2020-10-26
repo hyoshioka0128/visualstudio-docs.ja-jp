@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905985"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>チュートリアル: 従来の言語サービスの作成
 Managed package framework (MPF) 言語クラスを使用して、言語サービスをに実装するの [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] は簡単です。 言語サービス、言語サービス自体、および言語のパーサーをホストするための VSPackage が必要です。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../../extensibility/visual-studio-sdk.md)」を参照してください。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレートの場所
- Visual Studio パッケージプロジェクトテンプレートは、[**新しいプロジェクト**] ダイアログボックスの3つの異なるテンプレートの場所にあります。
+ Visual Studio パッケージプロジェクトテンプレートは、[ **新しいプロジェクト** ] ダイアログボックスの3つの異なるテンプレートの場所にあります。
 
 1. Visual Basic の機能拡張の下。 プロジェクトの既定の言語は Visual Basic です。
 
@@ -64,9 +64,9 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
 3. **ソリューションエクスプローラー**で、VSPackage プロジェクトを右クリックし、[**追加**]、[**クラス**] の順に選択します。
 
-4. [テンプレート] ボックスの一覧で [**クラス**] が選択されていることを確認します。
+4. [テンプレート] ボックスの一覧で [ **クラス** ] が選択されていることを確認します。
 
-5. クラスファイルの名前として「 **MyLanguageService.cs** 」と入力し、[**追加**] をクリックします。
+5. クラスファイルの名前として「 **MyLanguageService.cs** 」と入力し、[ **追加**] をクリックします。
 
      任意の名前を使用できます。 ここで説明する手順では `MyLanguageService` 、名前としてを想定しています。
 
@@ -80,9 +80,9 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8. "LanguageService" にカーソルを置き、[**編集**] の [ **IntelliSense** ] メニューから [**抽象クラスの実装**] を選択します。 これにより、言語サービスクラスを実装するために必要な最低限のメソッドが追加されます。
+8. "LanguageService" にカーソルを置き、[ **編集**] の [ **IntelliSense** ] メニューから [ **抽象クラスの実装**] を選択します。 これにより、言語サービスクラスを実装するために必要な最低限のメソッドが追加されます。
 
-9. 「[従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)」で説明されているように、抽象メソッドを実装します。
+9. 「 [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)」で説明されているように、抽象メソッドを実装します。
 
 ### <a name="register-the-language-service"></a>言語サービスを登録する
 
@@ -91,24 +91,24 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
 
-2. 「[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」の説明に従って、言語サービスクラスを登録します。 これには、属性と "Proffering Language Service" セクションが含まれます。 MyLanguageService を使用します。このトピックでは、TestLanguageService を使用します。
+2. 「 [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」の説明に従って、言語サービスクラスを登録します。 これには、属性と "Proffering Language Service" セクションが含まれます。 MyLanguageService を使用します。このトピックでは、TestLanguageService を使用します。
 
 ### <a name="the-parser-and-scanner"></a>パーサーとスキャナー
 
-1. 「[従来の言語サービスパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)」で説明されているように、言語のパーサーとスキャナーを実装します。
+1. 「 [従来の言語サービスパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)」で説明されているように、言語のパーサーとスキャナーを実装します。
 
      パーサーとスキャナーを実装する方法は、ユーザーによって完全に異なり、このトピックでは扱いません。
 
 ## <a name="language-service-features"></a>言語サービスの機能
- 言語サービスで各機能を実装するには、通常、適切な MPF 言語サービスクラスからクラスを派生させ、必要に応じて抽象メソッドを実装して、適切なメソッドをオーバーライドします。 作成または派生元のクラスは、サポートする機能によって異なります。 これらの機能については、「[従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)」で詳しく説明されています。 次の手順は、MPF クラスからクラスを派生させる一般的な方法です。
+ 言語サービスで各機能を実装するには、通常、適切な MPF 言語サービスクラスからクラスを派生させ、必要に応じて抽象メソッドを実装して、適切なメソッドをオーバーライドします。 作成または派生元のクラスは、サポートする機能によって異なります。 これらの機能については、「 [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)」で詳しく説明されています。 次の手順は、MPF クラスからクラスを派生させる一般的な方法です。
 
 #### <a name="deriving-from-an-mpf-class"></a>MPF クラスからの派生
 
 1. **ソリューションエクスプローラー**で、VSPackage プロジェクトを右クリックし、[**追加**]、[**クラス**] の順に選択します。
 
-2. [テンプレート] ボックスの一覧で [**クラス**] が選択されていることを確認します。
+2. [テンプレート] ボックスの一覧で [ **クラス** ] が選択されていることを確認します。
 
-     クラスファイルに適切な名前を入力し、[**追加**] をクリックします。
+     クラスファイルに適切な名前を入力し、[ **追加**] をクリックします。
 
 3. 新しいクラスファイルで、次のディレクティブを追加し `using` ます。
 
@@ -124,7 +124,7 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
 
-6. 基本クラスに実装する必要がある抽象メソッドがある場合は、[**編集**]、[ **IntelliSense** ] メニューの [**抽象クラスの実装**] を選択します。
+6. 基本クラスに実装する必要がある抽象メソッドがある場合は、[ **編集**]、[ **IntelliSense** ] メニューの [ **抽象クラスの実装** ] を選択します。
 
 7. それ以外の場合は、クラス内にカレットを置き、オーバーライドするメソッドを入力します。
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544288"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio を使用して UI を作成する
@@ -40,7 +40,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
 - [[プロパティ] パネルのツアー](#Properties)
 
-## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a>[ツール] パネルのツアー
+## <a name="tour-of-the-tools-panel"></a><a name="Tools"></a> [ツール] パネルのツアー
  Blend for Visual Studio の **[ツール]** パネルは、アプリケーションのオブジェクトの作成と変更に使用します。 パネルにあるツールを選択してアートボード上でマウスを動かすと、オブジェクトを描画できます。
 
  ![ツール パネル](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [ツール バー](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
 
-## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>[アセット] パネルのツアー
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a> [アセット] パネルのツアー
  **[アセット]** パネルには、すべてのコントロールが用意されています (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** パネルに用意されています。
 
  ![アセット パネル](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 |![](../designers/media/b1-4.png "B1_4")|**スタイル** リソース ディクショナリに含まれるすべてのスタイルを表示します。|
 |![](../designers/media/b1-5.png "B1_5")|**説明** 選択したカテゴリまたはサブカテゴリの説明が表示されます。|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>[オブジェクトとタイムライン] パネルのツアー
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a> [オブジェクトとタイムライン] パネルのツアー
  このパネルを使用すると、アートボード上のオブジェクトを整理して、必要な場合はアニメーション化できます。
 
  ![アニメーション モードの [オブジェクトとタイムライン] パネル](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 |![](../designers/media/b1-15.png "B1_15")|**タイムラインのズーム** タイムラインのズーム解像度を設定します。 ズーム インでは、アニメーションを詳細に編集できます。ズーム アウトすると、長い再生時間にわたる動作の概要が表示されます。 ズーム インしても、目的の位置にキーフレームを設定できない場合は、スナップ精度が十分高く設定されていることを確認してください。|
 |![吹き出し 16](../designers/media/b5-label-16.png "b5_label_16")|**タイムライン構成領域** タイムラインを表示するとともに、キーフレームをドラッグするかショートカット メニューを使用してキーフレームを移動します。|
 
-## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>[プロパティ] パネルのツアー
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a> [プロパティ] パネルのツアー
  オブジェクトのプロパティを表示して変更するには、このパネルを使用します。 また、アートボード上で直接設定することもできます。 この場合、プロパティの変更が **[プロパティ]** パネルに反映されます。
 
  ![プロパティ パネル](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
@@ -122,5 +122,5 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
 
  **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [[プロパティ] パネル](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コントロールを挿入し、その動作を変更する](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[オブジェクトをアニメーション化](../designers/animate-objects-in-xaml-designer.md)する[図形とパスの描画](../designers/draw-shapes-and-paths.md) [Visual Studio での XAML のデザインと Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

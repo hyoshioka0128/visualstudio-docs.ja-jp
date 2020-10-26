@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906155"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012218"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows インストーラー展開の拡張機能を準備する
 Windows インストーラーパッケージ (MSI) を使用して VSIX パッケージを配置することはできません。 ただし、MSI の展開用に VSIX パッケージのコンテンツを抽出することはできます。 このドキュメントでは、既定の出力がセットアッププロジェクトに含める VSIX パッケージであるプロジェクトを準備する方法について説明します。
@@ -37,7 +37,7 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
 5. [ **VSIX** ] タブを選択します。
 
-6. [ **VSIX コンテンツを次の場所にコピーする**] チェックボックスをオンにし、セットアッププロジェクトがファイルを取得するパスを入力します。
+6. [ **VSIX コンテンツを次の場所にコピーする** ] チェックボックスをオンにし、セットアッププロジェクトがファイルを取得するパスを入力します。
 
 ## <a name="extract-files-from-an-existing-vsix-package"></a>既存の VSIX パッケージからファイルを抽出する
  ソースファイルがない場合に既存の VSIX パッケージの内容をセットアッププロジェクトに追加するには、次の手順を実行します。
@@ -48,12 +48,12 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
 2. *.Zip*ファイルの内容をディレクトリにコピーします。
 
-3. ディレクトリから *[Content_types] .xml*ファイルを削除します。
+3. ディレクトリから *[Content_types] .xml* ファイルを削除します。
 
 4. 前の手順で示したように、VSIX マニフェストを編集します。
 
 5. 残りのファイルをセットアッププロジェクトに追加します。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio インストーラーの配置](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [Visual Studio インストーラーの配置](/previous-versions/2kt85ked(v=vs.120))
 - [チュートリアル: カスタム動作の作成](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

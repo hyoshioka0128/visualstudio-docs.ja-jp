@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
-ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
+ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87818587"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801062"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -152,7 +152,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 ダウンロードして Visual Studio 2019 で使用できる新しい拡張機能を導入しました。 この新しい拡張機能を使用すると、Visual Studio を離れることなく、チームからのプル要求を確認、実行、さらにはデバッグすることもできます。 GitHub と Azure DevOps の両方のリポジトリのコードをサポートしています。
 
-   ![Visual Studio 2019 の新しいスタート ウィンドウのスクリーンショット](media/vs-2019/pr-experience.png)
+   ![Visual Studio 2019 の新しいプル要求拡張機能のスクリーンショット](media/vs-2019/pr-experience.png)
 
 詳細については、ブログ投稿の「[Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/)」 (Visual Studio プル要求拡張を利用したコード レビュー) を参照してください。
 
@@ -241,9 +241,9 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 for Mac リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio での C++ の新機能](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md)
-* [C# 8.0 の新機能](/dotnet/csharp/whats-new/csharp-8.md)
-* [.NET Core 3.1 の新機能](/dotnet/core/whats-new/dotnet-core-3-1.md)
-* [.NET Framework の新機能](/dotnet/framework/whats-new.md)
+* [Visual Studio での C++ の新機能](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
+* [C# 8.0 の新機能](/dotnet/csharp/whats-new/csharp-8/)
+* [.NET Core 3.1 の新機能](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [.NET Framework の新機能](/dotnet/framework/whats-new/)
 * [Microsoft Build カンファレンス](https://www.microsoft.com/build)
 * [Microsoft Ignite カンファレンス](https://www.microsoft.com/ignite)

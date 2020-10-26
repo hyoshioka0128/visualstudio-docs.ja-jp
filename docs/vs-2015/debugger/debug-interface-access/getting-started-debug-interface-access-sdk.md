@@ -15,26 +15,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54f83f00ed2e99d1541e15092cb3ee0ce9e08952
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164169"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>はじめに (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッグ インターフェイスへのアクセス (DIA) SDK では、説明のドキュメントと DIA API を使用する方法を示すサンプルを提供します。 DIA sdk インターフェイスとメソッドを使用して .pdb と .dbg ファイルを開き、シンボル、値、属性、アドレス、およびその他のデバッグ情報のコンテンツを検索するカスタム アプリケーションを開発します。 この SDK には、C++ アプリケーションで見られる記号に関連付けられているプロパティの参照テーブルも提供します。  
+Debug Interface Access (DIA) SDK には、説明ドキュメントと、DIA API の使用方法を示すサンプルが用意されています。 DIA SDK のインターフェイスとメソッドを使用して、.pdb ファイルと dbg ファイルを開き、シンボル、値、属性、アドレス、その他のデバッグ情報の内容を検索するカスタムアプリケーションを開発します。 この SDK には、C++ アプリケーションで見つかったシンボルに関連付けられたプロパティの参照テーブルも用意されています。  
   
- 最適な DIA SDK を使用するには、は、次のようにについて理解する必要があります。  
+ DIA SDK を最適に使用するには、次のことを理解している必要があります。  
   
 - C++ プログラミング言語  
   
 - COM プログラミング  
   
-- Visual Studio 統合開発環境 (IDE) のサンプルのコンパイル  
+- サンプルをコンパイルするための Visual Studio 統合開発環境 (IDE)  
   
-  DIA SDK は、通常、Visual Studio をインストールし、その既定の場所は *[ドライブ]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 インストールの一環として、DIA SDK を実装すると、msdia90.dll は自動的に登録を含めるので、これを使用するために必要な`dia2.h`プログラムへのリンクで`diaguids.lib`します。  
+  DIA SDK は通常、Visual Studio と共にインストールされ、その既定の場所は *[drive] \ (* visual studio 9.0 \ DIA SDK) です。 インストールの一部として、DIA SDK を実装する msdia90.dll が自動的に登録されるため、使用するために必要なのは、 `dia2.h` プログラムに追加してにリンクすることだけです `diaguids.lib` 。  
   
   ヘッダー: include\dia2.h  
   
@@ -46,10 +46,10 @@ ms.locfileid: "68164169"
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
- 中の基本的なアーキテクチャをレビューします。  
+ DIA の基本的なアーキテクチャを確認します。  
   
  [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- DIA API を使用して、.pdb ファイルを照会する方法の手順を説明します。  
+ DIA API を使用して .pdb ファイルのクエリを実行する手順について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875918"
 ---
 # <a name="primitives-activity-designers"></a>プリミティブ アクティビティ デザイナー
@@ -26,7 +26,7 @@ ms.locfileid: "86875918"
 
  [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
  [トランザクション](../workflow-designer/transaction-activity-designers.md)
 
@@ -34,6 +34,6 @@ ms.locfileid: "86875918"
 
  [エラー処理](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)

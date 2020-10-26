@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: スマート タグの表示 |Microsoft Docs'
+title: 'チュートリアル: SmartTags | の表示Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,14 +10,14 @@ ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
 ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436513"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64805587"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>チュートリアル: スマート タグの表示
-スマート タグは非推奨とされており、代わって電球が使用されるようになりました。 「[チュートリアル:Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)します。  
+スマート タグは非推奨とされており、代わって電球が使用されるようになりました。 「 [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)」を参照してください。  
   
  スマート タグは、一連の操作を表示するために展開されるテキスト上のタグです。 たとえば、Visual Basic や Visual C# のプロジェクトでは、変数名などの識別子の名前を変更すると、赤い線が単語の下に表示されます。 下線の上にポインターを移動すると、ポインターの近くにボタンが表示されます。 ボタンをクリックすると、 **"IsRead の名前を IsReady に変更する"** などの、提案されるアクションが表示されます。 操作をクリックすると、プロジェクトでの **IsRead** へのすべての参照が **IsReady**という名前に変更されます。  
   
@@ -26,10 +26,10 @@ ms.locfileid: "63436513"
 > [!NOTE]
 > その他のタグも、同様の方法で実装できます。  
   
- 次のチュートリアルが、現在の単語に表示され、2 つの推奨されるアクションが設定されているスマート タグを作成する方法を示します。**大文字に変換**と**小文字に変換**します。  
+ 次のチュートリアルでは、現在の単語の上に表示され、 **Convert to upper case** と **Convert to lower case**の 2 つのアクションを提案するスマート タグを作成する方法を示します。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+## <a name="prerequisites"></a>前提条件  
+ このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトの作成  
   
@@ -133,7 +133,7 @@ ms.locfileid: "63436513"
   
 #### <a name="to-implement-smart-tag-actions"></a>スマート タグ操作を実装するには  
   
-1. 2 つのクラスを、1 つは `UpperCaseSmartTagAction` という名前で、もう 1 つは `LowerCaseSmartTagAction` という名前で作成します。 どちらのクラスも、<xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction> を実装します。  
+1. 2 つのクラスを、1 つは `UpperCaseSmartTagAction` という名前で、もう 1 つは `LowerCaseSmartTagAction`という名前で作成します。 どちらのクラスも、<xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction> を実装します。  
   
     [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
     [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
@@ -180,7 +180,7 @@ ms.locfileid: "63436513"
   
      ポインターの近くにボタンが表示されます。  
   
-5. ボタンをクリックすると、2 つの推奨されるアクションが表示されます。**大文字に変換**と**小文字に変換**します。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
+5. ボタンをクリックすると、 **Convert to upper case** と **Convert to lower case**という 2 つの提案されるアクションが表示されます。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

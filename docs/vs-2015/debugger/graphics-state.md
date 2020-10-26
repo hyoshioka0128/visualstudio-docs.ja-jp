@@ -1,5 +1,5 @@
 ---
-title: グラフィックスの状態 |Microsoft Docs
+title: グラフィックスの状態 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825578"
 ---
 # <a name="graphics-state"></a>グラフィックスの状態
@@ -29,7 +29,7 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
 ### <a name="state-views"></a>状態ビュー  
  いくつかの方法で、状態テーブルを表示できます。  
   
-|表示|説明|  
+|View|説明|  
 |----------|-----------------|  
 |API 入力状態ビュー|このビューは、状態を構成する Direct3D のオブジェクトと同様のレイアウトで状態を表示します。|  
 |論理入力状態ビュー|このビューは、状態を構成する Direct3D のオブジェクトのレイアウトを反映しない、論理ビューで状態を表示します。|  
@@ -51,10 +51,10 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
 ### <a name="state-table-format"></a>状態テーブルの形式  
  情報のいくつかの列を [状態] ウィンドウに表示します。  
   
-|[列]|説明|  
+|Column|説明|  
 |------------|-----------------|  
-|Name|状態の項目の名前。 この項目が状態のバンドルを表している場合は、項目を展開して表示できます。<br /><br /> **API 入力状態ビュー**と**論理状態ビュー**の状態では、状態の間の階層関係を表すよう名前がインデントされます。<br /><br /> **固定状態ビュー**の状態では、完全修飾名がフラット リストで表示されます。|  
-|値|状態の項目の値。|  
+|名前|状態の項目の名前。 この項目が状態のバンドルを表している場合は、項目を展開して表示できます。<br /><br /> **API 入力状態ビュー**と**論理状態ビュー**の状態では、状態の間の階層関係を表すよう名前がインデントされます。<br /><br /> **固定状態ビュー**の状態では、完全修飾名がフラット リストで表示されます。|  
+|[値]|状態の項目の値。|  
 |種類|状態の項目の種類。|  
   
 ### <a name="changed-state"></a>変更された状態  

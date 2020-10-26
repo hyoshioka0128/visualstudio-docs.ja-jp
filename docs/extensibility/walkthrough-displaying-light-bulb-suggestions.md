@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904994"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508952"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>チュートリアル: 電球の提案を表示する
 電球は、Visual Studio エディターのアイコンです。これは、組み込みのコードアナライザーまたはコードリファクタリングで特定された問題の修正など、一連のアクションを表示するために展開されます。
 
- Visual C# と Visual Basic エディターでは、.NET Compiler Platform ("Roslyn") を使用して、電球を自動的に表示するアクションを使用して独自のコードアナライザーを記述し、パッケージ化することもできます。 詳細については次を参照してください:
+ Visual C# と Visual Basic エディターでは、.NET Compiler Platform ("Roslyn") を使用して、電球を自動的に表示するアクションを使用して独自のコードアナライザーを記述し、パッケージ化することもできます。 詳細については、次を参照してください。
 
-- [方法: C# 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [方法: C# 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [方法: Visual Basic 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [方法: Visual Basic 診断とコード修正プログラムを記述する](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   C++ などの他の言語では、その機能のスタブ実装を作成するための提案など、いくつかのクイックアクションの電球も用意されています。
 
@@ -34,24 +34,24 @@ ms.locfileid: "85904994"
 
   ![電球のプレビュー](../extensibility/media/lightbulbpreview.png "ライトのバルクプレビュー")
 
-  電球を使用すると、独自の推奨アクションを提供できます。 たとえば、左中かっこを新しい行に移動したり、前の行の末尾に移動したりするアクションを指定できます。 次のチュートリアルでは、現在の単語に表示される電球を作成する方法を説明します。また、[**大文字に変換**] と [**小文字に**変換] の2つの推奨アクションがあります。
+  電球を使用すると、独自の推奨アクションを提供できます。 たとえば、左中かっこを新しい行に移動したり、前の行の末尾に移動したりするアクションを指定できます。 次のチュートリアルでは、現在の単語に表示される電球を作成する方法を説明します。また、[ **大文字に変換** ] と [ **小文字に**変換] の2つの推奨アクションがあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>[前提条件]
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Managed Extensibility Framework (MEF) プロジェクトを作成する
 
-1. C# VSIX プロジェクトを作成します。 ([**新しいプロジェクト**] ダイアログで、[Visual C#]、[**拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `LightBulbTest` します。
+1. C# VSIX プロジェクトを作成します。 ([ **新しいプロジェクト** ] ダイアログで、[Visual C#]、[ **拡張機能**]、[ **VSIX プロジェクト**] の順に選択します)。ソリューションにという名前を指定 `LightBulbTest` します。
 
-2. **エディター分類子**項目テンプレートをプロジェクトに追加します。 詳細については、「[エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
+2. **エディター分類子**項目テンプレートをプロジェクトに追加します。 詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
 3. 既存のクラス ファイルを削除します。
 
-4. 次の参照をプロジェクトに追加し、[**ローカルにコピー** ] をに設定し `False` ます。
+4. 次の参照をプロジェクトに追加し、[ **ローカルにコピー** ] をに設定し `False` ます。
 
      *Microsoft.VisualStudio.Language.Intellisense*
 
-5. 新しいクラスファイルを追加し、それに**電球**という名前を指定します。
+5. 新しいクラスファイルを追加し、それに **電球**という名前を指定します。
 
 6. ディレクティブを使用して以下を追加します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "85904994"
 
 ## <a name="implement-the-light-bulb-source-provider"></a>電球ソースプロバイダーを実装する
 
-1. *LightBulbTest.cs*クラスファイルで、ライトを削除します。 を実装する**TestSuggestedActionsSourceProvider**という名前のクラスを追加 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> します。 テストの提案された**アクション**の名前と "text" を使用してエクスポートし <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> ます。
+1. *LightBulbTest.cs*クラスファイルで、ライトを削除します。 を実装する **TestSuggestedActionsSourceProvider** という名前のクラスを追加 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> します。 テストの提案された **アクション** の名前と "text" を使用してエクスポートし <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> ます。
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]
@@ -102,9 +102,9 @@ ms.locfileid: "85904994"
     ```
 
 ## <a name="implement-the-isuggestedactionsource"></a>ISuggestedActionSource を実装する
- 推奨されるアクションソースは、提案されたアクションのセットを収集し、適切なコンテキストで追加します。 この場合、コンテキストは現在の単語であり、推奨されるアクションは**UpperCaseSuggestedAction**と**LowerCaseSuggestedAction**です。これについては、次のセクションで説明します。
+ 推奨されるアクションソースは、提案されたアクションのセットを収集し、適切なコンテキストで追加します。 この場合、コンテキストは現在の単語であり、推奨されるアクションは **UpperCaseSuggestedAction** と **LowerCaseSuggestedAction**です。これについては、次のセクションで説明します。
 
-1. を実装するクラス**TestSuggestedActionsSource**を追加 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> します。
+1. を実装するクラス **TestSuggestedActionsSource** を追加 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> します。
 
     ```csharp
     internal class TestSuggestedActionsSource : ISuggestedActionsSource
@@ -217,7 +217,7 @@ ms.locfileid: "85904994"
 
 ## <a name="implement-light-bulb-actions"></a>電球アクションを実装する
 
-1. プロジェクトで*Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*への参照を追加し、[**ローカルにコピー** ] をに設定し `False` ます。
+1. プロジェクトで *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll* への参照を追加し、[ **ローカルにコピー** ] をに設定し `False` ます。
 
 2. 2 つのクラスを、1 つは `UpperCaseSuggestedAction` という名前で、もう 1 つは `LowerCaseSuggestedAction`という名前で作成します。 どちらのクラスも、<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> を実装します。
 
@@ -326,7 +326,7 @@ ms.locfileid: "85904994"
     ```
 
     > [!WARNING]
-    > 電球のアクション**呼び出し**メソッドは、UI を表示する必要がありません。 アクションによって新しい UI が表示される場合 (たとえば、[プレビュー] または [選択] ダイアログ)、 **invoke メソッド内**から直接 ui を表示するのではなく、 **invoke**から戻ると ui を表示するようにスケジュールします。
+    > 電球のアクション **呼び出し** メソッドは、UI を表示する必要がありません。 アクションによって新しい UI が表示される場合 (たとえば、[プレビュー] または [選択] ダイアログ)、 **invoke メソッド内** から直接 ui を表示するのではなく、 **invoke**から戻ると ui を表示するようにスケジュールします。
 
 10. 実装を完了するには、 `Dispose()` メソッドとメソッドを追加し `TryGetTelemetryId()` ます。
 

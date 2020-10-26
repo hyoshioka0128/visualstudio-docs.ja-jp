@@ -1,5 +1,5 @@
 ---
-title: 使用される文字列を置換します。Pkgdef とします。Pkgundef ファイル |Microsoft Docs
+title: で使用される代替文字列。Pkgdef と。Pkgundef ファイル |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160541"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>.pkgdef および .pkgundef ファイルで使用されている代替文字列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-分離シェル アプリケーションの Visual Studio 用に定義した .pkgundef ファイルと、.pkgdef に以下の代替文字列を使用できます。  
+次に示す置換文字列は、Visual Studio 分離シェルアプリケーション用に定義した、pkgdef ファイルと pkgdef ファイルで使用できます。  
   
-## <a name="substitution-strings"></a>代替文字列  
+## <a name="substitution-strings"></a>置換文字列  
   
 |String|説明|  
 |------------|-----------------|  
-|$=*レジストリ エントリ*$|値、*のレジストリ エントリ*エントリ。 レジストリ エントリの文字列は円記号で終わっている場合 (\\)、レジストリ サブキーの既定値が使用されます。 たとえば、$ の文字列置換 = HKEY_CURRENT_USER\Environment\TEMP$ が現在のユーザーの一時フォルダーを展開します。|  
-|$AppName $|AppEnv.dll のエントリ ポイントに渡されるアプリケーションの修飾名。 修飾名は、アプリケーション名、アンダー スコア、およびプロジェクトの .pkgdef ファイルで ThisVersionDTECLSID 設定の値としても記録されますが、アプリケーション オートメーション オブジェクトのクラス id (CLSID) で構成されます。|  
-|$AppDataLocalFolder|このアプリケーションの %localappdata% 下のサブフォルダーです。|  
+|$=*RegistryEntry*$|*Registryentry*エントリの値。 レジストリエントリの文字列が円記号 () で終わっている場合は、 \\ レジストリサブキーの既定値が使用されます。 たとえば、置換文字列 $ = HKEY_CURRENT_USER \ 環境 \Temp $ は、現在のユーザーの一時フォルダーに展開されます。|  
+|$AppName $|AppEnv.dll エントリポイントに渡されるアプリケーションの限定名。 修飾名は、アプリケーション名、アンダースコア、およびアプリケーションオートメーションオブジェクトのクラス識別子 (CLSID) で構成されます。これは、プロジェクトの pkgdef ファイルのこの Versiondteclsid 設定の値としても記録されます。|  
+|$AppDataLocalFolder|このアプリケーションの% LOCALAPPDATA% の下にサブフォルダーがあります。|  
 |$BaseInstallDir $|Visual Studio がインストールされている場所の完全パス。|  
-|$CommonFiles $|%Commonprogramfiles% 環境変数の値。|  
-|$MyDocuments $|現在のユーザーのマイ ドキュメント フォルダーの完全パス。|  
-|$PackageFolder $|アプリケーションのパッケージのアセンブリ ファイルを含むディレクトリの完全パス。|  
-|$ProgramFiles $|%Programfiles% 環境変数の値。|  
-|$RootFolder $|アプリケーションのルート ディレクトリの完全パス。|  
-|$RootKey $|アプリケーションのルート レジストリ キー。 Hkey_current_user のルートは、既定で\\*CompanyName*\\*ProjectName*\\*VersionNumber* (場合アプリケーションが実行されている、_Config がこのキーに追加されます)。 RegistryRoot 値で設定されている、 *SolutionName*.pkgdef ファイル。<br /><br /> アプリケーションのサブキーの下のレジストリ値を取得する $RootKey$ の文字列を使用できます。 たとえば、文字列"$= $RootKey \AppIcon$"はアプリケーションのルートのサブキーの下の AppIcon エントリの値を返します。<br /><br /> パーサーが順番に .pkgdef ファイルを処理し、エントリは既に定義されている場合にのみアプリケーション サブキーのレジストリ エントリにアクセスできます。|  
+|$CommonFiles $|% CommonProgramFiles% 環境変数の値。|  
+|$MyDocuments $|現在のユーザーの [マイドキュメント] フォルダーの完全パス。|  
+|$PackageFolder $|アプリケーションのパッケージアセンブリファイルが格納されているディレクトリの完全パス。|  
+|$ProgramFiles $|% ProgramFiles% 環境変数の値。|  
+|$RootFolder $|アプリケーションのルートディレクトリの完全パス。|  
+|$RootKey $|アプリケーションのルートレジストリキー。 既定では、ルートは HKEY_CURRENT_USER \ software \\ *CompanyName* \\ *ProjectName* \\ *VersionNumber*にあります (アプリケーションが実行されている場合、_Config がこのキーに追加されます)。 これは、 *SolutionName*ファイルの registryroot 値によって設定されます。<br /><br /> $RootKey $ 文字列を使用して、アプリケーションのサブキーの下にあるレジストリ値を取得できます。 たとえば、文字列 "$ = $RootKey $ \AppIcon $" は、アプリケーションのルートサブキーの下にある AppIcon エントリの値を返します。<br /><br /> パーサーは、pkgdef ファイルを順番に処理し、エントリが既に定義されている場合にのみ、アプリケーションサブキーの下にあるレジストリエントリにアクセスできます。|  
 |$ShellFolder $|Visual Studio がインストールされている場所の完全パス。|  
-|$System $|Windows \system32 フォルダーです。|  
-|$WINDIR $|Windows のフォルダーです。|  
+|$System $|Windows\system32 フォルダーです。|  
+|$WINDIR $|Windows フォルダー。|  
   
- パーサーが置換文字列を認識していないでその部分文字列の置換は実行されませんし、レジストリ エントリまたは環境変数の値を判断できない場合。
+ パーサーが置換文字列を認識しない場合、またはレジストリエントリまたは環境変数の値を判断できない場合は、文字列のその部分に対する置換は実行されません。

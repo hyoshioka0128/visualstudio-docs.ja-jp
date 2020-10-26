@@ -1,5 +1,5 @@
 ---
-title: サポートマスターページ要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
+title: SupportsMasterPage 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699447"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 要素 (Visual Studio テンプレート)
-[**新しい項目の追加**] ダイアログ ボックスで **[マスター ページの選択**] チェック ボックスを有効にするかどうかを指定します。
+[**新しい項目の追加**] ダイアログボックスで [**マスターページの選択**] チェックボックスがオンになっているかどうかを指定します。
 
- \<VS テンプレート\<>\<テンプレート データ> サポートマスター ページ>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsMasterPage>
 
 ## <a name="syntax"></a>構文
 
@@ -36,29 +37,29 @@ ms.locfileid: "80699447"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類するデータを指定し、[**新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目]** ダイアログ ボックスでの表示方法を定義します。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|テンプレートを分類するデータを指定し、[ **新しいプロジェクト** ] または [ **新しい項目** ] ダイアログボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、`true`または`false`のいずれかである必要があります、 または 、**新しい項目の追加**] ダイアログ ボックスで [マスター ページの**選択**] チェック ボックスが有効になっているかどうかを示します。
+ テキストは、[ `true` `false` **新しい項目の追加**] ダイアログボックスで [**マスターページの選択**] チェックボックスがオンになっているかどうかを示す、またはのいずれかである必要があります。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
  `SupportsMasterPage` は省略可能な要素です。 既定値は `false` です。
 
- この`SupportsMasterPage`要素は、Web 項目テンプレートでのみ使用できます。
+ `SupportsMasterPage`要素は、Web 項目テンプレートでのみ使用できます。
 
 ## <a name="example"></a>例
- 次の例は、マスター ページのサポートを含む Web プロジェクトのメタデータを示しています。
+ 次の例は、マスターページのサポートを含む Web プロジェクトのメタデータを示しています。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -82,6 +83,6 @@ ms.locfileid: "80699447"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

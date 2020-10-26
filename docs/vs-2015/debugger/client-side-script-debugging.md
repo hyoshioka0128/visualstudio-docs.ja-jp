@@ -1,5 +1,5 @@
 ---
-title: クライアント側スクリプトのデバッグ |Microsoft Docs
+title: クライアント側のスクリプトのデバッグ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702381"
 ---
 # <a name="client-side-script-debugging"></a>クライアント側スクリプトのデバッグ
@@ -30,7 +30,7 @@ ms.locfileid: "65702381"
 Visual Studio デバッガーには、ASP.NET ページ内のクライアント側スクリプトのエラーを検出および修正するための包括的なデバッグ環境が用意されています。  
   
 ## <a name="opening-script-documents"></a>スクリプト ドキュメントを開く  
- **ソリューション エクスプローラー** では、閲覧できるサーバー側およびクライアント側のスクリプト ドキュメントのリストを表示できます。 **ソリューション エクスプローラー**で、任意のスクリプト ドキュメントを開くことができます。 詳細については、「[方法 :スクリプト ドキュメントを表示する](../debugger/how-to-view-script-documents.md)」を参照してください。  
+ **ソリューション エクスプローラー** では、閲覧できるサーバー側およびクライアント側のスクリプト ドキュメントのリストを表示できます。 **ソリューション エクスプローラー**で、任意のスクリプト ドキュメントを開くことができます。 詳細については、[スクリプト ドキュメントを表示する](../debugger/how-to-view-script-documents.md)」を参照してください。  
   
 ## <a name="breakpoint-mapping"></a>ブレークポイントのマップ  
  Visual Studio では、サーバー側コードを直接デバッグすることはできませんが、サーバー側ファイルにブレークポイントを設定できます。 Visual Studio では、設定されたブレークポイントがクライアント側ファイルの対応する場所に自動的にマップされ、マップされたブレークポイントがクライアント側コードに作成されます。  
@@ -38,7 +38,7 @@ Visual Studio デバッガーには、ASP.NET ページ内のクライアント�
 ## <a name="manually-or-automatically-attaching-to-script"></a>手動または自動によるスクリプトへのアタッチ  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]でスクリプトをデバッグするには、デバッグするスクリプトにデバッガーをアタッチする必要があります。 これは手動で行うことも、自動的に行うこともできます。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガー インターフェイスを使用して、アタッチする実行中のスクリプト プロセスを選択することにより、手動でアタッチできます。 詳細については、「[方法 :スクリプトにアタッチする](../debugger/how-to-attach-to-script.md)」を参照してください。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガー インターフェイスを使用して、アタッチする実行中のスクリプト プロセスを選択することにより、手動でアタッチできます。 詳細については、「 [How to: Attach to Script](../debugger/how-to-attach-to-script.md)」を参照してください。  
   
  次のいずれかの状況が発生すると、デバッガーは自動的にスクリプトにアタッチされます。  
   
@@ -62,9 +62,9 @@ Visual Studio デバッガーには、ASP.NET ページ内のクライアント�
   
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)で、任意のスクリプト ドキュメントを開くことができます。  
   
-## <a name="see-also"></a>関連項目  
- [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [スクリプト デバッグの制約](../debugger/limitations-on-script-debugging.md)   
- [[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
- [イミディエイト ウィンドウ](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+## <a name="see-also"></a>参照  
+ [ASP.NET と AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [スクリプトのデバッグに関する制限事項](../debugger/limitations-on-script-debugging.md)   
+ [変数ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [イミディエイトウィンドウ](../ide/reference/immediate-window.md)   
+ [Ajax アプリケーションのデバッグとトレースの概要](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

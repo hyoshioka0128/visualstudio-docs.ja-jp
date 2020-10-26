@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bf0301f9b97bf6a7ca76f72f832c635a0dbb128
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656376"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>方法: スタート ビューからワークスペースにノードを追加する
@@ -25,11 +25,11 @@ ms.locfileid: "72656376"
 
 1. [「方法: XSD スキーマファイルを作成および編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)」の手順に従います。
 
-2. XML エディター内を右クリックし、 **[ビューデザイナー]** を選択します。
+2. XML エディター内を右クリックし、[ **ビューデザイナー**] を選択します。
 
      スタート ビューが表示されます。
 
-     **[スキーマセットの詳細]** セクションで **、2つ**の**グローバル複合型**があることに注意してください。
+     **[スキーマ セットの詳細]** セクションには、**2** つの **[グローバル複合型]** があります。
 
 3. **[グローバル複合型]** 見出しの右側にある **[追加]** リンクをクリックします。
 

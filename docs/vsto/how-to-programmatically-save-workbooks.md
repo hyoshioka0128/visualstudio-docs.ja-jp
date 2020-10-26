@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547083"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>方法: プログラムによってブックを保存する
@@ -46,7 +46,7 @@ ms.locfileid: "85547083"
  指定したブックを、新しい場所にまたは新しい名前を付けて、そしてオプションでファイル形式、パスワード、アクセス モードなどを指定して保存できます。
 
 > [!NOTE]
-> 場合によっては、 <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> ブックを新しいパスで保存する前に、プロパティを**False**に設定します。これは、一部の形式で保存すると操作が必要になるためです。 このプロパティを**False**に設定すると、Excel ですべての既定値が使用されます。
+> 場合によっては、 <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> ブックを新しいパスで保存する前に、プロパティを **False** に設定します。これは、一部の形式で保存すると操作が必要になるためです。 このプロパティを **False** に設定すると、Excel ですべての既定値が使用されます。
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>ドキュメント レベルのカスタマイズに関連付けられているブックを保存するには
 

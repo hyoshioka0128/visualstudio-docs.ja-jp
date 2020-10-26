@@ -14,70 +14,70 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190714"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッグ シンボルのクエリ コンテキストを提供します。  
+デバッグシンボルのクエリコンテキストを提供します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaSession : IUnknown  
 ```  
   
 ## <a name="methods"></a>メソッド  
- 次の表は、メソッドの`IDiaSession`します。  
+ 次の表に、のメソッドを示し `IDiaSession` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|このシンボル ストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを取得します。 これは、同じ値に渡された、`put_loadAddress`メソッド。|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:** 取得する場合は、このメソッドを呼び出すことが重要、`IDiaSession`オブジェクトし、オブジェクトの使用を開始する前にします。|  
-|[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|グローバル スコープへの参照を取得します。|  
-|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|シンボル ストアに含まれているすべてのテーブルの列挙子を取得します。|  
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|このシンボルストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを取得します。 これは、メソッドに渡された値と同じです `put_loadAddress` 。|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボルストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:**  オブジェクトを取得 `IDiaSession` し、オブジェクトの使用を開始する前に、このメソッドを呼び出すことが重要です。|  
+|[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|グローバルスコープへの参照を取得します。|  
+|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|シンボルストアに格納されているすべてのテーブルの列挙子を取得します。|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|静的な場所にあるすべての名前付きシンボルの列挙子を取得します。|  
-|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|指定した親の識別子の名前とシンボルの種類に一致するすべての子を取得します。|  
-|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|が含まれているか、指定したアドレスに最も近い指定の記号の型を取得します。|  
-|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|または、指定された相対仮想アドレス (RVA) に最も近いする指定の記号の型を取得します。|  
-|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|または、指定された仮想アドレス (VA) に最も近いする指定の記号の型を取得します。|  
-|[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|指定したメタデータ トークンが含まれているシンボルを取得します。|  
-|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|2 つのシンボルが等しいかどうかを確認します。|  
-|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|一意の識別子をシンボルを取得します。|  
-|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|が含まれているか、指定の相対仮想アドレスとオフセットに最も近い指定の記号の型を取得します。|  
-|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|が含まれているか、指定された仮想アドレスとオフセットに最も近い指定の記号の型を取得します。|  
-|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|コンパイル単位と名前のソース ファイルを取得します。|  
-|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|ソース ファイルの識別子を使用してソース ファイルを取得します。|  
-|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|指定したコンパイル単位とソース ファイルの識別子内で行番号を取得します。|  
-|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|指定したコンパイル単位で指定されたアドレスが含まれている行を取得します。|  
-|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|指定したコンパイル単位で指定された相対仮想アドレスが含まれている行を取得します。|  
-|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|指定されたアドレス範囲に含まれる行の行番号情報を検索します。|  
-|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|ソース ファイルと行番号で指定したコンパイル単位内の行を取得します。|  
-|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|属性プロバイダーによってシンボル ストアに、コンパイル プロセスの他のコンポーネントに配置されたソースを取得します。|  
-|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|デバッグのデータ ストリームの列挙のシーケンスを取得します。|  
-|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|により、クライアントは、すべての指定したアドレスにインライン フレームを反復処理する列挙体を取得します。|  
-|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|により、クライアントは、すべての指定された相対仮想アドレス (RVA) でのインライン フレームを反復処理する列挙体を取得します。|  
-|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|により、クライアントは、すべての指定した仮想アドレス (VA) にインライン フレームを反復処理する列挙体を取得します。|  
-|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|により、クライアントは直接、インライン展開はすべての関数の直接的または間接的に指定した親シンボルの行番号情報を反復処理する列挙体を取得します。|  
-|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|により、クライアントは直接、インライン展開はすべての関数の直接的または間接的に指定した親シンボルの行番号情報を反復処理して、指定したアドレスの範囲内に含まれる列挙体を取得します。|  
-|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|により、クライアントは直接、インライン展開はすべての関数の直接的または間接的に指定した親シンボルの行番号情報を反復処理して、指定された相対仮想アドレス (RVA) 内に含まれる列挙体を取得します。|  
-|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|により、クライアントは直接、インライン展開はすべての関数の直接的または間接的に指定した親シンボルの行番号情報を反復処理して、指定された仮想アドレス (VA) 内に含まれる列挙体を取得します。|  
-|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|により、クライアントは、すべての関数がインライン展開されて、直接または間接的に、指定したソース ファイルと行番号での行番号情報を反復処理する列挙体を取得します。|  
-|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|により、クライアントは、指定した名前と一致するすべてのインライン関数の行番号情報を反復処理する列挙体を取得します。|  
-|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|親のアクセラレータのスタブ関数で指定したタグ値に対応する変数のシンボルの列挙を返します。|  
-|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|対応するタグの値を指定すると、このメソッドは、指定の相対仮想アドレスにある指定した親アクセラレータ スタブ関数に含まれているシンボルの列挙体を返します。|  
-|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|指定されたインライン関数の名前に対応するインライン フレームのシンボルの列挙を返します。|  
-|[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|指定したソースの場所に対応するインライン フレームのシンボルの列挙を返します。|  
+|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|名前と記号の種類に一致する指定された親識別子のすべての子を取得します。|  
+|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|指定したアドレスを含む、またはそれに最も近いシンボルの種類を取得します。|  
+|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|指定した相対仮想アドレス (RVA) を含む、またはそれに最も近いシンボルの種類を取得します。|  
+|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|指定した仮想アドレス (VA) を含む、またはそれに最も近いシンボルの種類を取得します。|  
+|[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|指定したメタデータトークンを含むシンボルを取得します。|  
+|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|2つの記号が等しいかどうかを確認します。|  
+|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|一意の識別子によって記号を取得します。|  
+|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|指定した相対仮想アドレスとオフセットを格納している、またはそれに最も近いシンボルの種類を取得します。|  
+|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|指定した仮想アドレスとオフセットを格納している、またはそれに最も近いシンボルの種類を取得します。|  
+|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|コンパイル単位と名前を指定してソースファイルを取得します。|  
+|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|ソースファイル識別子でソースファイルを取得します。|  
+|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|指定したコンパイル単位とソースファイル識別子内の行番号を取得します。|  
+|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|指定したアドレスを含む、指定したコンパイル単位内の行を取得します。|  
+|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|指定した相対仮想アドレスを含む、指定したコンパイル単位内の行を取得します。|  
+|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|指定されたアドレス範囲に含まれる行の行番号の情報を検索します。|  
+|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|ソースファイルと行番号を指定して、指定したコンパイル単位の行を取得します。|  
+|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|属性プロバイダーまたはコンパイルプロセスの他のコンポーネントによってシンボルストアに配置されたソースを取得します。|  
+|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|デバッグデータストリームの列挙シーケンスを取得します。|  
+|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|指定されたアドレスのすべてのインラインフレームをクライアントが反復処理できるようにする列挙体を取得します。|  
+|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|指定した相対仮想アドレス (RVA) のすべてのインラインフレームをクライアントが反復処理できるようにする列挙体を取得します。|  
+|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|指定された仮想アドレス (VA) 上のすべてのインラインフレームをクライアントが反復処理できるようにする列挙を取得します。|  
+|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|指定した親シンボルによってインラインで、直接または間接的にインライン化されているすべての関数の行番号情報をクライアントが反復処理できるようにする列挙体を取得します。|  
+|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|クライアントが、指定された親シンボルによって直接または間接的にインライン化されているすべての関数の行番号情報を反復処理できるようにする列挙体を取得します。指定したアドレス範囲内に含まれます。|  
+|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|指定された親シンボルによって直接または間接的にインライン化され、指定された相対仮想アドレス (RVA) 内に含まれているすべての関数の行番号情報をクライアントが反復処理できるようにする列挙体を取得します。|  
+|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|クライアントが、指定された親シンボルによって直接または間接的にインライン化されているすべての関数の行番号情報を反復処理できるようにする列挙体を取得します。指定した仮想アドレス (VA) 内に含まれます。|  
+|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|指定したソースファイルと行番号で、直接または間接的にインライン化されているすべての関数の行番号情報をクライアントが反復処理できるようにする列挙体を取得します。|  
+|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|指定した名前に一致するすべてのインライン関数の行番号情報をクライアントが反復処理できるようにする列挙体を取得します。|  
+|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|親アクセラレータスタブ関数で、指定したタグ値が対応する変数のシンボルの列挙体を返します。|  
+|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|このメソッドは、対応するタグ値を指定して、指定された相対仮想アドレスで、指定された親アクセラレータのスタブ関数に含まれるシンボルの列挙体を返します。|  
+|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|指定されたインライン関数名に対応するインラインフレームのシンボルの列挙体を返します。|  
+|[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|指定したソースの場所に対応するインラインフレームのシンボルの列挙体を返します。|  
   
-## <a name="remarks"></a>Remarks  
- 呼び出しすることが重要、 [idiasession::put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)メソッドを作成した後、`IDiaSession`オブジェクト-に渡される値と、`put_loadAddress`メソッドは 0 以外である必要があります: するシンボルの仮想アドレス (VA) プロパティのアクセスできます。 どのようなプログラムにはデバッグ中の実行可能ファイルが読み込まれてからの読み込みアドレスが取得されます。 たとえば、Win32 関数を呼び出すことができます`GetModuleInformation`ハンドルを指定して実行可能ファイル、実行可能ファイルの読み込みアドレスを取得します。  
+## <a name="remarks"></a>注釈  
+ オブジェクトを作成した後に [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) メソッドを呼び出すことが重要です。この `IDiaSession` メソッドに渡される値は `put_loadAddress` 0 以外にする必要があります。これは、シンボルの任意の仮想アドレス (VA) プロパティにアクセスできるようにするためです。 読み込みアドレスは、デバッグ対象の実行可能ファイルが読み込まれたプログラムから取得されます。 たとえば、実行可能ファイルへのハンドルを指定すると、Win32 関数を呼び出して、 `GetModuleInformation` 実行可能ファイルの読み込みアドレスを取得できます。  
   
 ## <a name="example"></a>例  
- この例は、取得する方法を示します、 `IDiaSession` DIA SDK の一般的な初期化の一環としてインターフェイス。  
+ この例では `IDiaSession` 、DIA SDK の一般的な初期化の一部としてインターフェイスを取得する方法を示します。  
   
 ```cpp#  
 CComPtr<IDiaDataSource> pSource;  
@@ -112,19 +112,19 @@ void InitializeDIA(const char *szFilename)
 }  
 ```  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [概要](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [Exe](../../debugger/debug-interface-access/exe.md)   
+ [Excel.exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [IDiaSymbol:: findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [.Pdb ファイルの照会](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

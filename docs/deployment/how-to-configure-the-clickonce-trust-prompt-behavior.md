@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382550"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>方法: ClickOnce 信頼プロンプトの動作を構成する
@@ -57,7 +57,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [**名前**] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
 
 2. 次のレジストリキーを探します。
 
@@ -65,9 +65,9 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、**文字列値**として追加します。次の表に、関連する値を示します。
+3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。
 
-    |文字列値サブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -81,7 +81,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
 1. Visual Studio で Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
+2. 編集するために、 *プログラム .vb* または *Program.cs* ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -116,7 +116,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [**名前**] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
 
 2. 次のレジストリキーを探します。
 
@@ -124,9 +124,9 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、**文字列値**として追加します。次の表に、関連する値を示します。
+3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。
 
-    |文字列値サブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -138,7 +138,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
 1. Visual Studio で Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
+2. 編集するために、 *プログラム .vb* または *Program.cs* ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -173,7 +173,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [**名前**] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
 
 2. 次のレジストリキーを探します。
 
@@ -181,9 +181,9 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、**文字列値**として追加します。次の表に、関連する値を示します。
+3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。
 
-    |文字列値サブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -195,7 +195,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
 1. Visual Studio で Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
+2. 編集するために、 *プログラム .vb* または *Program.cs* ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey

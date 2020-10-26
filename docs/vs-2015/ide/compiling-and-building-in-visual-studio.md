@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300261"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Visual Studio でのコンパイルとビルド
@@ -40,7 +40,7 @@ ms.locfileid: "74300261"
 
  IDE 内で、次の追加タスクを実行することもできます。
 
-- [ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)。
+- [ビルド出力ディレクトリを変更](../ide/how-to-change-the-build-output-directory.md)します。
 
 - [正しくビルドするために、別のプロジェクトからの出力に依存するプロジェクトを特定する](../ide/how-to-create-and-remove-project-dependencies.md)。
 
@@ -52,5 +52,5 @@ ms.locfileid: "74300261"
 
 - 並行ビルドを使用してビルド パフォーマンスを改善する。 詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」またはブログ投稿「[Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/)」 (C++ での並列ビルドの調整) を参照してください。
 
-## <a name="see-also"></a>関連項目
- [チュートリアル: アプリケーションの構築](../ide/walkthrough-building-an-application.md)[ビルド構成について](../ide/understanding-build-configurations.md)[ビルド プラットフォームについて](../ide/understanding-build-platforms.md) [(コンパイル)のWebサイトプロジェクトのビルド](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[方法: を作成し、プロジェクトの依存関係の削除](../ide/how-to-create-and-remove-project-dependencies.md)
+## <a name="see-also"></a>参照
+ [チュートリアル: アプリケーションの構築](../ide/walkthrough-building-an-application.md) [ビルド構成について](../ide/understanding-build-configurations.md) [ビルド プラットフォームについて](../ide/understanding-build-platforms.md) [(コンパイル)のWebサイトプロジェクトのビルド](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [方法: を作成し、プロジェクトの依存関係の削除](../ide/how-to-create-and-remove-project-dependencies.md)

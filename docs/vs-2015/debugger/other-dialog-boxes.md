@@ -1,5 +1,5 @@
 ---
-title: 他のダイアログ ボックス |Microsoft Docs
+title: '[その他] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,30 +13,30 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0178b9f79daa8ddec51d468cb22f3104c26b7f41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198158"
 ---
 # <a name="other-dialog-boxes"></a>その他のダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-これらのダイアログ ボックスでは、spy++ プログラムに関する情報を表示します。  
+これらのダイアログ ボックスには、Spy++ プログラムに関する情報が表示されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [Microsoft Spy++ のバージョン情報](../debugger/about-microsoft-spy-increment.md)  
- Spy++ はプログラムの所有権に関する情報です。  
+ [[Microsoft Spy++ のバージョン情報]](../debugger/about-microsoft-spy-increment.md)  
+ Spy + + プログラムの所有権に関する情報。  
   
  [Spy++ ヘルプの著作権表記](../debugger/copyright-notice-for-spy-increment-help.md)  
- 著作権に関する法的通知します。  
+ 著作権情報の法的通知。  
   
 ## <a name="related-sections"></a>関連項目  
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
- 各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。  
+ 各 Spy + + メニューおよびダイアログボックスについて説明するセクションが含まれています。  
   
  [Spy++ の使用](../debugger/using-spy-increment.md)  
- Spy++ ツールを紹介し、使用方法について説明します。  
+ Spy + + ツールの概要と、その使用方法について説明します。  
   
  [Spy++ ビュー](../debugger/spy-increment-views.md)  
- Windows、メッセージ、プロセス、およびスレッドの spy++ ツリー ビューについて説明します。
+ Windows、メッセージ、プロセス、およびスレッドの Spy + + ツリービューについて説明します。

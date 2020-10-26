@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985715"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリ
@@ -37,7 +37,7 @@ Office プロジェクトから Microsoft Office アプリケーションの機�
 
 - [Microsoft Office アプリケーション プライマリ相互運用機能アセンブリの完全な一覧](#pialist)
 
-プライマリ相互運用機能アセンブリの詳細については、「[プライマリ相互運用機能アセンブリ](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))」を参照してください。
+プライマリ相互運用機能アセンブリの詳細については、「 [プライマリ相互運用機能アセンブリ](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))」を参照してください。
 
 <a name="separateassemblies"></a>
 
@@ -63,11 +63,11 @@ Visual Studio 2017 以降では、これらの Pia のコピーは、開発用�
 
 - `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (または、64ビットオペレーティングシステムの `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`)
+- (または `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` 64 ビットオペレーティングシステム)
 
 > [!NOTE]
-> 以前のバージョンの Visual Studio では、これらの Pia は、Visual Studio のそのバージョンの `%ProgramFiles%` フォルダーの下にある Office\PIA フォルダーの Visual Studio Tools にインストールされます。
-> 例: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
+> 以前のバージョンの Visual Studio では、これらの Pia は、 `%ProgramFiles%` そのバージョンの Visual studio のフォルダーの下にある Office\PIA フォルダーの Visual Studio Tools にインストールされます。
+> 例えば： `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>グローバルアセンブリキャッシュ内のプライマリ相互運用機能アセンブリ
 
@@ -81,18 +81,18 @@ Office PIA は、 Office ソリューションを実行するエンド ユーザ
 
 Visual Studio の各 Office プロジェクト テンプレートは、単一の Microsoft Office アプリケーションと連動するようになっています。 複数の Microsoft Office アプリケーションの機能を使用したり、Visual Studio 内にプロジェクトが含まれないアプリケーションやコンポーネントの機能を使用したりするには、必要な PIA への参照を追加しなければなりません。
 
-ほとんどの場合、`%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` ディレクトリの下に Visual Studio によってインストールされる Pia への参照を追加する必要があります。 これらのバージョンのアセンブリは、 **[参照マネージャー]** ダイアログボックスの **[フレームワーク]** タブに表示されます。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)」を参照してください。
+ほとんどの場合、ディレクトリの下に Visual Studio によってインストールされた Pia への参照を追加する必要があり `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` ます。 これらのバージョンのアセンブリは、[**参照マネージャー** ] ダイアログボックスの [**フレームワーク**] タブに表示されます。 詳細については、「 [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)」を参照してください。
 
 グローバル アセンブリ キャッシュに PIA をインストールして登録すると、これらのバージョンのアセンブリは、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブに表示されます。 これらのバージョンのアセンブリを使用すると開発上の問題が発生するため、これらのアセンブリに参照を追加することは避ける必要があります。 たとえば、異なるバージョンの PIA がグローバル アセンブリ キャッシュに登録されている場合、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブで別のバージョンのアセンブリを指定しても、プロジェクトは最後に登録されたバージョンのアセンブリにバインドします。
 
 > [!NOTE]
-> アセンブリによっては、参照元のアセンブリを追加すると、参照先のアセンブリも自動的に追加される場合があります。 たとえば、Word、Excel、Outlook、Microsoft Forms、または Graph アセンブリへの参照を追加すると、`Office.dll` アセンブリおよび `Microsoft.Vbe.Interop.dll` アセンブリへの参照が自動的に追加されます。
+> アセンブリによっては、参照元のアセンブリを追加すると、参照先のアセンブリも自動的に追加される場合があります。 たとえば、およびアセンブリへの参照は、 `Office.dll` `Microsoft.Vbe.Interop.dll` Word、Excel、Outlook、Microsoft Forms、または Graph アセンブリへの参照を追加すると、自動的に追加されます。
 
 <a name="pialist"></a>
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office アプリケーションのプライマリ相互運用機能アセンブリ
 
-次の表に、[!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]、[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]、および [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]で使用できるプライマリ相互運用機能アセンブリの一覧を示します。
+次の表に、、、およびで使用できるプライマリ相互運用機能アセンブリの一覧を示し [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)] [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] ます。
 
 <br/>
 
@@ -100,23 +100,23 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 |-------------------------------------|-----------------------------------|
 |Microsoft Access 14.0 Object Library<br /><br /> Microsoft Access 15.0 Object Library|Microsoft.Office.Interop.Access.dll|
 |Microsoft Office 14.0 Access Database Engine Object Library<br /><br /> Microsoft Office 15.0 Access Database Engine Object Library|Microsoft.Office.Interop.Access.Dao.dll|
-|Microsoft Excel 14.0 Object Library<br /><br /> Microsoft Excel 15.0 Object Library|[Microsoft. Interop. Excel .dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Microsoft Excel 14.0 Object Library<br /><br /> Microsoft Excel 15.0 Object Library|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
 |Microsoft Graph 14.0 Object Library (PowerPoint、Access、および Word のグラフで使用)<br /><br /> Microsoft Graph 15.0 Object Library|Microsoft.Office.Interop.Graph.dll|
-|Microsoft InfoPath 2.0 Type Library (InfoPath 2007 専用)|[Microsoft. Interop. .dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Microsoft InfoPath 2.0 Type Library (InfoPath 2007 専用)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
 |Microsoft InfoPath XML 相互運用機能アセンブリ (InfoPath 2007 専用)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Microsoft Office 14.0 Object Library (Office の共有機能)<br /><br /> Microsoft Office 15.0 Object Library (Office の共有機能)|office.dll|
 |Microsoft Office Outlook View Control (受信トレイにアクセスする Web ページおよびアプリケーションで使用可能)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Microsoft Outlook 14.0 Object Library<br /><br /> Microsoft Outlook 15.0 Object Library|[Microsoft. Interop. Outlook .dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Microsoft Outlook 14.0 Object Library<br /><br /> Microsoft Outlook 15.0 Object Library|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
 |Microsoft PowerPoint 14.0 Object Library<br /><br /> Microsoft PowerPoint 15.0 Object Library|Microsoft.Office.Interop.PowerPoint.dll|
-|Microsoft Project 14.0 Object Library<br /><br /> Microsoft Project 15.0 Object Library|[Microsoft... プロジェクト .dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Microsoft Project 14.0 Object Library<br /><br /> Microsoft Project 15.0 Object Library|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
 |Microsoft Publisher 14.0 Object Library<br /><br /> Microsoft Publisher 15.0 Object Library|Microsoft.Office.Interop.Publisher.dll|
 |Microsoft SharePointDesigner 14.0 Web Object Reference Library|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Microsoft SharePointDesigner 14.0 Page Object Reference Library|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft スマートタグ2.0 タイプライブラリ**メモ:** スマートタグは [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] と [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]で非推奨とされます。|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft スマートタグ2.0 タイプライブラリ **メモ:**  スマートタグは、およびで非推奨とされ [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)] ます。|Microsoft.Office.Interop.SmartTag.dll|
 |Microsoft Visio 14.0 Type Library<br /><br /> Microsoft Visio 15.0 Type Library|Microsoft.Office.Interop.Visio.dll|
 |Microsoft Visio 14.0 Save As Web Type Library<br /><br /> Microsoft Visio 15.0 Save As Web Type Library|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Microsoft Visio 14.0 Drawing Control Type Library<br /><br /> Microsoft Visio 15.0 Drawing Control Type Library|Microsoft.Office.Interop.VisOcx.dll|
-|Microsoft Word 14.0 Object Library<br /><br /> Microsoft Word 15.0 Object Library|[Microsoft. Interop. Word .dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Microsoft Word 14.0 Object Library<br /><br /> Microsoft Word 15.0 Object Library|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>バインドリダイレクトアセンブリ
@@ -125,9 +125,9 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 
 たとえば、 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] アセンブリを参照するソリューションが、同じプライマリ相互運用機能アセンブリの [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] バージョンがあるコンピューターで実行されると、バインド リダイレクト アセンブリによって、そのプライマリ相互運用機能アセンブリの [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] バージョンを読み込むように [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ランタイムに指示されます。
 
-詳細については、「[方法: 自動バインドリダイレクトを有効または無効](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)にする」を参照してください。
+詳細については、「 [方法: 自動バインドリダイレクトを有効または無効](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)にする」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel オブジェクトモデルの概要](../vsto/excel-object-model-overview.md)
@@ -137,4 +137,4 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 - [プロジェクトソリューション](../vsto/project-solutions.md)
 - [Visio オブジェクトモデルの概要](../vsto/visio-object-model-overview.md)
 - [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)
-- [一般的な&#40;リファレンス (Visual Studio での Office 開発)&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Visual Studio での Office 開発に関する一般的なリファレンス &#40;&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

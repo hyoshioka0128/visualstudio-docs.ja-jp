@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198386"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance 列挙型
+# <a name="marker_importance-enumeration"></a>marker_importance 列挙型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コンカレンシー ビジュアライザー マーカーの重要度レベルを表します。  
@@ -35,7 +35,7 @@ enum marker_importance;
   
 ### <a name="values"></a>値  
   
-|name|説明|  
+|名前|説明|  
 |----------|-----------------|  
 |`critical_importance`|マーカーの重要度がきわめて高いことを指定します。|  
 |`high_importance`|マーカーの重要度が高いことを指定します。|  
@@ -47,5 +47,5 @@ enum marker_importance;
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>関連項目  
- [diagnostic 名前空間](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>参照  
+ [診断名前空間](../profiling/diagnostic-namespace.md)

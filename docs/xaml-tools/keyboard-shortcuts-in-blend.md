@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332239"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio のキーボード ショートカット
@@ -35,7 +35,7 @@ ms.locfileid: "85332239"
 
 |目的|方法|
 |----------------|-------------|
-|開いているドキュメントを切り替える|**Ctrl** +**タブ**|
+|開いているドキュメントを切り替える|**Ctrl**+**Tab**|
 |アクティブなドキュメントを保存する|**Ctrl** +**S**|
 |すべてのドキュメントを保存する|**Ctrl** +**Shift** +**S**|
 |アクティブなドキュメントを閉じる|**Ctrl** +**W**|
@@ -68,7 +68,7 @@ ms.locfileid: "85332239"
 |隣接する複数のオブジェクトを選択する|**Shift** キーを押す|
 |選択項目を画面のサイズに合わせる|**Ctrl** +**9**|
 |アクティブなコンテナーを固定する|**Ctrl** +**Shift** +**D**|
-|選択したオブジェクトを微調整する|**方向**キー|
+|選択したオブジェクトを微調整する|**方向** キー|
 |幅を自動サイズ設定する|**Ctrl** +**Shift** +**5**|
 |高さを自動サイズ設定する|**Ctrl** +**Shift** +**6**|
 |オブジェクトをレイアウト パネルにグループ化する|**Ctrl** +**G**|

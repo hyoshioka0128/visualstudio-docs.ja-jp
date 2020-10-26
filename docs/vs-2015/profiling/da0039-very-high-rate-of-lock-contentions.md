@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ae2b836549918fa1179e4e70d51d760efbe2c35
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544925"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039:非常に高率のロック競合
@@ -25,18 +25,18 @@ ms.locfileid: "85544925"
 
 Visual Studio の最新のドキュメントについては、「 [DA0039: 非常に高率のロック競合](/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions)」を参照してください。  
   
-|アイテム|値|  
+|Item|[値]|  
 |-|-|  
 |規則 ID|DA0039|  
 |カテゴリ|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション<br /><br /> .NET メモリ|  
-|Message|非常に高率の .NET ロック競合が発生しています。 コンカレンシー プロファイルを実行し、このロック競合の原因を調査してください。|  
+|メッセージ|非常に高率の .NET ロック競合が発生しています。 コンカレンシー プロファイルを実行し、このロック競合の原因を調査してください。|  
 |規則の種類|警告|  
   
  サンプリング、.NET メモリ、またはリソース競合メソッドを使用してプロファイリングを行うときは、この規則を呼び出すためのサンプルを少なくとも 25 個収集する必要があります。  
   
 ## <a name="cause"></a>原因  
- プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。  
+ プロファイル データを使用して収集したシステム パフォーマンス データは、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。  
   
 ## <a name="rule-description"></a>ルールの説明  
  ロックは、マルチスレッド アプリケーション内で、一度に 1 つのスレッドで連続的に実行する必要があるコードのクリティカル セクションを保護するために使用されます。 Microsoft .NET 共通言語ランタイム (CLR: Common Language Run-time) には、同期とロックのプリミティブの完全なセットが用意されています。 たとえば、C# 言語ではロック ステートメントがサポートされています (Visual Basic では SyncLock)。 マネージアプリケーションは、system.object `Monitor.Enter` 名前空間のメソッドとメソッドを呼び出して、 `Monitor.Exit` ロックを直接取得したり解放したりできます。 .NET Framework は、ミューテックス、ReaderWriter ロック、およびセマフォをサポートするクラスをはじめとする、追加の同期と競合のプリミティブをサポートします。 詳細については、MSDN Web サイトの .NET Framework 開発者ガイドの「[Overview of Synchronization Primitives](https://msdn.microsoft.com/library/ms228964.aspx)」 (同期プリミティブの概要) を参照してください。 .NET Framework のクラスは、それ自体が、Windows オペレーティング システムに組み込まれている下位レベルの同期サービスの上層に配置されています。 これらには、クリティカル セクション オブジェクト、および多数のさまざまな待機機能やイベント通知機能が含まれます。 詳細については、MSDN ライブラリの Win32 および COM 開発の[同期](https://msdn.microsoft.com/library/ms686353.aspx)に関するセクションを参照してください。  
@@ -50,7 +50,7 @@ Visual Studio の最新のドキュメントについては、「 [DA0039: 非�
  この規則は、プロファイリング実行中に取得された測定値により、ロック競合量が過度に多いことが示された場合に適用されます。 ロックの競合により、ロックを待機しているスレッドの実行が遅延します。 最低限のハードウェアで実行される単体テストまたはロード テストでの少量のロックの競合であっても、調査する必要があります。  
   
 > [!NOTE]
-> プロファイル データ中の、報告されたロックの競合の比率が高いが過度ではない場合、この警告メッセージではなく [DA0038: 高率のロック競合](../profiling/da0038-high-rate-of-lock-contentions.md)の情報メッセージが表示されます。  
+> プロファイルデータで報告されたロック競合の割合が非常に高く、過剰ではない場合、この警告メッセージではなく、 [da0038: 高率: ロック競合情報の](../profiling/da0038-high-rate-of-lock-contentions.md) 割合が高いことを示すメッセージが発生します。  
   
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  メッセージをダブルクリックして、プロファイル データの [[マーク]](../profiling/marks-view.md) ビューに移動します。  **.NET CLR LocksAndThreads\Contention Rate / sec** 列を探します。 ロックの競合が他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。  

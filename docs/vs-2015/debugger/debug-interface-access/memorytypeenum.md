@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ded136da4d601fd7c11a10c21aac0c90864bc0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158129"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
@@ -38,23 +38,23 @@ enum MemoryTypeEnum {
   
 #### <a name="parameters"></a>パラメーター  
  `MemTypeCode`  
- アクセスには、メモリがコードのみです。  
+ コードメモリにのみアクセスします。  
   
  `MemTypeData`  
- アクセスのデータまたはスタックのメモリ。  
+ データまたはスタックメモリにアクセスします。  
   
  `MemTypeStack`  
- アクセスにはスタック メモリのみ。  
+ スタックメモリにのみアクセスします。  
   
  `MemTypeAny`  
  任意の種類のメモリにアクセスします。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値を渡す、 [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)にさまざまな種類のメモリへのアクセスを制限する方法。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、さまざまな種類のメモリへのアクセスを制限するために、 [IDiaStackWalkHelper:: readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) メソッドに渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

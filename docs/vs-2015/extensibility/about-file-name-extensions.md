@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 866a30279ca2c79f4a490a040f76bc3a86c6a6e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148032"
 ---
 # <a name="about-file-name-extensions"></a>ファイル名拡張子について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-バージョンを関連付ける場合、VSPackage のファイル拡張子を登録するときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 これは、1 つのバージョンではより重要な場合は[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をコンピューターにインストールされます。  
+VSPackage のファイル拡張子を登録すると、それをのバージョンに関連付けることに [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] なります。 これは、1台のコンピューターに複数のバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がインストールされている場合に重要です。  
   
- Vspackage のファイル拡張子は、既定値は関連付けられているなプログラム識別子 (ProgID) を指す HKEY_CLASSES_ROOT キーの下に登録されます。  
+ Vspackage のファイル拡張子は HKEY_CLASSES_ROOT キーの下に登録され、関連付けられているプログラム id (ProgID) を指す既定値が設定されます。  
   
- .Vcproj ファイル拡張機能の登録情報の例を次に示します。  
+ .Vcproj ファイル拡張子の登録情報の例を次に示します。  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -33,10 +33,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"   
 ```  
   
- ファイルに関連付けられている[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]バージョン管理された ProgID などがあります`VisualStudio.vcproj.8.0`製品のバージョン間でファイル拡張子の関連付けを維持するために、製品のサイド バイ サイドでインストールを許可します。 バージョン固有の ProgID では、オープン、編集などと、上書きやその他のアプリケーションまたはのバージョンで上書きされるの気にせず、標準の動詞を使用することもできます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
+ に関連付けられたファイルには [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 、製品 `VisualStudio.vcproj.8.0` バージョン間のファイル拡張子の関連付けを維持するために製品をサイドバイサイドでインストールできるように、バージョン管理された ProgID (など) が必要です。 また、バージョン固有の ProgID を使用すると、標準の動詞 (open、edit など) を使用することもできます。この場合、上書きや、の他のアプリケーションやバージョンによる上書きは考慮されません [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
- 場合によっては、ファイル拡張子に関連付けられている ProgID を変更しない必要があります。 .Htm ファイル拡張子の ProgID など (progid = htmlfile) .htm と .html ファイル関連付け広く知られ使用であり、さまざまなオペレーティング システムの場所にハードコーディングされています。  
+ 場合によっては、ファイル拡張子に関連付けられている ProgID を変更しないでください。 たとえば、.htm ファイル拡張子の ProgID (progid = htmlfile) は、オペレーティングシステムのさまざまな場所にハードコーディングされており、.htm ファイルと .html ファイルとの関連付けで広く知られています。  
   
-## <a name="see-also"></a>関連項目  
- [サイド バイ サイドで配置のファイル名拡張子を登録します。](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
+## <a name="see-also"></a>参照  
+ [サイドバイサイド配置のためにファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [ファイル名拡張子のファイル ハンドラーを指定する](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

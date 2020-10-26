@@ -1,5 +1,5 @@
 ---
-title: 関数を変更しました|マイクロソフトドキュメント
+title: Sccenumの関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b1826a87b20d6bc92254fc4a86b8e0b756400ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700904"
 ---
-# <a name="sccenumchangedfiles-function"></a>関数を変更しました。
-ローカル ファイルの一覧を指定すると、この関数は、ソース コード管理データベース内の対応するバージョンと異なるファイルを決定します。
+# <a name="sccenumchangedfiles-function"></a>Sccenumのすべてのファイル関数
+ローカルファイルの一覧を指定すると、ソースコード管理データベースの対応するバージョンとは異なるファイルがこの関数によって判断されます。
 
 ## <a name="syntax"></a>構文
 
@@ -37,31 +37,31 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグイン のコンテキスト ポインター。
+からソース管理プラグインのコンテキストポインター。
 
  hWnd
 
-[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- ファイル
+ cFiles
 
-[in]配列に指定されたファイル名の`lpFileNames`数。 また、配列の`plIsFileDifferent`サイズも指定します。
+から配列に指定されたファイル名の数 `lpFileNames` 。 配列のサイズも指定し `plIsFileDifferent` ます。
 
- ファイル名
+ lpFileNames 名
 
-[in]確認するローカル ファイル名の配列。
+から確認するローカルファイル名の配列。
 
- ファイル異なる
+ plIsFileDifferent
 
-[イン、アウト]各ファイルの差異ステータスを示す値の配列 (配列には少`cFiles`なくともエントリが必要です)。 0 以外の場合は、ファイルが異なっていることを意味します。
+[入力、出力]各ファイルの相違ステータスを示す値の配列 (配列には少なくともエントリが必要 `cFiles` です)。 0以外の場合は、ファイルが異なることを意味します。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|操作は正常に完了しました。|
 |SCC_UNSPECIFIEDERROR|一般的なエラー。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

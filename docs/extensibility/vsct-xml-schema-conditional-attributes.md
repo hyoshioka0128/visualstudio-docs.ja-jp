@@ -1,5 +1,5 @@
 ---
-title: VSCT XML スキーマの条件属性 |マイクロソフトドキュメント
+title: VSCT XML スキーマの条件付き属性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697944"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件属性
-すべてのリストとアイテムに条件属性を適用できます。 論理演算子とシンボル展開式は、true または false に評価されます。 true の場合、関連付けられたリストまたはアイテムが結果の出力に含まれます。
+# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件付き属性
+条件付き属性は、すべてのリストおよび項目に適用できます。 論理演算子と記号の展開式は、true または false に評価されます。 True の場合、関連付けられているリストまたは項目が結果の出力に含まれます。
 
- トークンの拡張は、他のトークン拡張または定数に対してテストできます。 関数`Defined()`は、特定の名前が値を持たない場合でも、定義されているかどうかをテストします。
+ トークンの展開は、他のトークンの展開または定数に対してテストできます。 関数は、 `Defined()` 値がない場合でも、特定の名前が定義されているかどうかをテストします。
 
- 条件属性がリストに適用されると、その条件はリスト内のすべての子要素に適用されます。 子要素自体に Condition 属性が含まれている場合、その条件は AND 演算によって親式と結合されます。
+ 条件属性がリストに適用されると、条件はリスト内のすべての子要素に適用されます。 子要素自体に Condition 属性が含まれている場合、その条件は AND 演算によって親式と結合されます。
 
- 値 1、'1'、'true' は真として評価され、0、'0'、および'false' は偽として評価されます。
+ 値1、' 1 '、' true ' は true と評価され、0、' 0 '、および ' false ' が false と評価されます。
 
 ## <a name="operators"></a>オペレーター
  条件式を評価するには、次の演算子を使用します。
@@ -34,11 +34,11 @@ ms.locfileid: "80697944"
 |--------------|----------------|
 |(,)|グループ化|
 |!|論理 NOT|
-|\<、>、=、>\<==、!=|関係と比較|
-|and|Boolean|
-|or|Boolean|
+|\<, >, \<=, >=, ==, !=|関係と比較|
+|および|Boolean|
+|または|Boolean|
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ```xml
 <Menu Condition="Defined(DEBUG)" ...
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>関連項目
-- [コマンド テーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio コマンドテーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

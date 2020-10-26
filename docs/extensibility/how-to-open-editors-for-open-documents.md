@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905821"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>方法: 開いているドキュメントのエディターを開く
@@ -35,11 +35,11 @@ ms.locfileid: "85905821"
 
    - ドキュメントビューオブジェクトが存在し、このビューが同じ階層および階層アイテムに対して存在する場合、基になるドキュメントデータオブジェクトにアタッチできる場合、プロジェクトは2番目のビューを開くことができます。 それ以外の場合、プロジェクトはビューのウィンドウフレームへのポインターを使用して、既存のウィンドウを resurface する必要があります。
 
-   - ドキュメントデータオブジェクトのみが存在する場合、プロジェクトは、そのビューにドキュメントデータオブジェクトを使用できるかどうかを判断する必要があります。 ドキュメントデータオブジェクトに互換性がある場合は、「[プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)」で説明されている手順を実行します。
+   - ドキュメントデータオブジェクトのみが存在する場合、プロジェクトは、そのビューにドキュメントデータオブジェクトを使用できるかどうかを判断する必要があります。 ドキュメントデータオブジェクトに互換性がある場合は、「 [プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)」で説明されている手順を実行します。
 
      ドキュメントデータオブジェクトに互換性がない場合は、ファイルが現在使用中であることを示すエラーがユーザーに表示されます。 このエラーは、ユーザーがコアテキストエディター以外のエディターを使用してファイルを開こうとしたときに、ファイルがコンパイルされている場合など、一時的な場合にのみ表示され [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 コアテキストエディターでは、ドキュメントデータオブジェクトをコンパイラと共有できます。
 
-3. ドキュメントデータオブジェクトまたはドキュメントビューオブジェクトがないためにドキュメントが開いていない場合は、「[プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)」の手順を実行します。
+3. ドキュメントデータオブジェクトまたはドキュメントビューオブジェクトがないためにドキュメントが開いていない場合は、「 [プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)」の手順を実行します。
 
 ## <a name="open-a-standard-editor"></a>標準エディターを開く
  既に開いているファイルの標準エディターを開くには、次の手順に従います。

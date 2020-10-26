@@ -1,5 +1,7 @@
 ---
-title: サポートコード分離要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
+title: SupportsCodeSeparation 要素 (Visual Studio テンプレート)
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +16,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80699508"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038466"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 要素 (Visual Studio テンプレート)
-**[新しい項目の追加**] ダイアログ ボックス**で、[別のファイルにコードを配置**する] チェック ボックスを有効にするかどうかを指定します。
+[**新しい項目の追加**] ダイアログボックスで [**別のファイルにコードを配置**する] チェックボックスをオンにするかどうかを指定します。
 
- \<VSTemplate \<> テンプレート\<データ>サポートコード分離>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsCodeSeparation>
 
 ## <a name="syntax"></a>構文
 
@@ -36,31 +39,31 @@ ms.locfileid: "80699508"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、[**新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目]** ダイアログ ボックスでの表示方法を定義します。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目** ] ダイアログボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、`true`または`false`のいずれかで、**新しい項目の追加**] ダイアログ ボックスで [コードを**別のファイルに配置**する] チェック ボックスが有効になっているかどうかを示す必要があります。
+ テキストは、[ `true` `false` **新しい項目の追加**] ダイアログボックスで [**別のファイルにコードを配置**する] チェックボックスがオンになっているかどうかを示す、またはのいずれかである必要があります。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
  `SupportsCodeSeparation` は省略可能な要素です。 既定値は `false` です。
 
- この`SupportsCodeSeparation`要素は、Web 項目テンプレートでのみ使用できます。
+ `SupportsCodeSeparation`要素は、Web 項目テンプレートでのみ使用できます。
 
- コード分離 (分離コード ページ モデル) を使用すると、マークアップを 1 つのファイルに保持し、プログラミング コードを別のファイルに保存できます。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]他の .NET 言語ではこのモデルを使用します。
+ コードの分離または分離コードページモデルを使用すると、マークアップを1つのファイルに保持し、プログラミングコードを別のファイルに保持できます。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] その他の .NET 言語では、このモデルを使用します。
 
 ## <a name="example"></a>例
- 次の例では、[コードを**別のファイルに配置**する] オプションを表示するように指定します。
+ 次の例では、[ **コードを別のファイルに配置** する] オプションを指定します。
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +87,6 @@ ms.locfileid: "80699508"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照
+- [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

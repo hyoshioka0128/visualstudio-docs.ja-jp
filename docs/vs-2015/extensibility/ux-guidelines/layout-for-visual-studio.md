@@ -9,152 +9,152 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09656b9afac82eec8981f8573af87391c99a3688
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179727"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio のレイアウト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio のダイアログ ボックスの大半は[ユーティリティ ダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)、そのに従って標準のダイアログ ボックスは、unthemed [Windows デスクトップ ダイアログのレイアウトの原則](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)します。 Visual Studio の UI の更新を移動するとき、目立つのダイアログ ボックスの一部に製品を定義するとエクスペリエンスを確立する新しい設計になっています。 これら[テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)テーマの外観を与えます。
+Visual Studio ダイアログの大部分は [ユーティリティダイアログレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)です。これは、標準の [Windows デスクトップダイアログレイアウトの原則](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)に従う、テーマが適用されていないダイアログです。 Visual Studio が UI を更新するために移動すると、より目立つようなダイアログの中には、製品定義のエクスペリエンスとして機能する新しいデザインが追加されています。 これらの [テーマ付きダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) には、テーマが設定されています。
 
-## <a name="BKMK_UtilityDialogLayout"></a> ユーティリティのダイアログのレイアウト
+## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a> ユーティリティダイアログのレイアウト
 
-- ユーティリティ ダイアログ内のすべてのコントロールは、上/左に起動し、下方向にフローする必要があります。
+- ユーティリティダイアログ内のすべてのコントロールは、左上から順に開始し、下にフローします。
 
-- 決して center 上のコントロール広い領域を入力するためのダイアログ。
+- ダイアログの中央にコントロールを配置して、大きな領域を塗りつぶすことは避けてください。
 
-- ダイアログのすべてのテキストを環境フォントを使用します。 ビジュアルの仕様を記述する場合は、特定のフォントとサイズを選択する代わりに、環境フォントを指定します。 参照してください[環境フォント](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)します。
+- すべてのダイアログテキストに環境フォントを使用します。 ビジュアル仕様を記述するときは、特定のフォントとサイズを選択するのではなく、環境フォントを指定します。 [環境フォントを](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)参照してください。
 
-- 職人気質の品質の目標をサポートするために、一貫した制御間隔と配置を使用します。
+- 一貫した制御スペースと配置を使用して、職人気質の品質の目標をサポートします。
 
-- ダイアログ ボックスは、多数のコントロールと、コントロールの一意の juxtaposition のどちらか一方または両方からより複雑ななることができます。 これらの複雑な状況で論理的な流れを解析するために、コントロールのグループ化の間の十分な領域を許可します。
+- ダイアログは、より多くのコントロール、一意のコントロールの juxtaposition、またはその両方から、より複雑になる可能性があります。 このような複雑な状況については、制御グループ間に十分なスペースを与え、ユーザーに解析のための論理フローを与えることができます。
 
-### <a name="utility-dialog-layout-examples"></a>ユーティリティのダイアログのレイアウトの例
- すべてのディメンションは、ピクセルとして表現されます。
+### <a name="utility-dialog-layout-examples"></a>ユーティリティのダイアログレイアウトの例
+ すべてのディメンションは、ピクセルで表されます。
 
- ![コントロール上のラベルのダイアログの間隔](../../extensibility/ux-guidelines/media/0801-a-utilityspacingabove.png "0801 a_UtilitySpacingAbove")
+ ![コントロールの上のラベルのダイアログの間隔](../../extensibility/ux-guidelines/media/0801-a-utilityspacingabove.png "0801-a_UtilitySpacingAbove")
 
- **図 a 08.01:コントロールの上のラベルが付いたユーティリティに関するダイアログ ボックスの間隔のガイドライン**
+ **図 08.01-a: コントロールの上にラベルが付いたユーティリティダイアログのスペーシングガイドライン**
 
- ![コントロールの左のラベルのダイアログの間隔](../../extensibility/ux-guidelines/media/0801-b-utilityspacingleft.png "0801 b_UtilitySpacingLeft")
+ ![コントロールの左のラベルのダイアログの間隔](../../extensibility/ux-guidelines/media/0801-b-utilityspacingleft.png "0801-b_UtilitySpacingLeft")
 
- **図の 08.01 b:コントロールの左にラベルが付いたユーティリティに関するダイアログ ボックスの間隔のガイドライン**
+ **図 08.01-b: コントロールの左側にラベルを付けたユーティリティダイアログのスペーシングガイドライン**
 
 ### <a name="layout-details"></a>レイアウトの詳細
 
 #### <a name="margins"></a>余白
 
-- すべてのダイアログ ボックスでは、すべての端に 12 ピクセルの境界線が必要です。
+- すべてのダイアログには、すべての端の周りに12ピクセルの境界線が付きます。
 
-- グループのフレーム内の余白が 9 ピクセル フレームの端からあります。
+- グループフレーム内の余白は、フレームの端から9ピクセルである必要があります。
 
-- タブ コントロール内の余白は、タブ コントロールの端から 6 ピクセルである必要があります。
+- タブコントロール内の余白は、タブコントロールの端から6ピクセルである必要があります。
 
-#### <a name="command-buttons"></a>コマンド ボタン
+#### <a name="command-buttons"></a>コマンドボタン
 
-- コマンド ボタンは、コンテンツではなく、ダイアログ枠に対して動作します。 右下に配置され、設定、ボタンが互いに分離する上記変数十分な領域があります。
+- コマンドボタンは、コンテンツではなく、ダイアログフレームに対して動作します。 これらは、右下に配置する必要があります。ボタンを明確に区別できるように、上に十分な可変領域が必要です。
 
-- ダイアログ ボックス内で動作する、横並びのボタンがある場合は、代替のコマンド ボタンの構成は、右上にある垂直スタックです。 参照してください[内部コマンド ボタン](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons)以下。
+- ダイアログ内で動作する水平方向のボタンがある場合、[代替コマンド] ボタンの構成は右上にある垂直方向のスタックです。 下の「 [内部コマンドボタン](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) 」を参照してください。
 
-- (低い左/センター ダイアログ ボックスの) コマンド ボタンの左側の領域は、ダイアログの操作のコントロールの「域外」の一部と見なされます。 唯一の領域を侵害する必要がありますは、タスク全体またはダイアログに関連するヘルプ リンクです。
+- コマンドボタンの左側にあるスペース (ダイアログの左下/中央) は、ダイアログ操作コントロールの "バンド" の一部と見なされます。 この領域に割り込んする必要があるのは、タスクまたはダイアログ全体に関連するヘルプリンクだけです。
 
-- コマンド ボタンは、75 x 23 ピクセルである必要があります。
+- コマンドボタンは 75 x 23 ピクセルである必要があります。
 
-- 6 ピクセル離れたコマンド ボタンがあります。
+- コマンドボタンは、6ピクセル離れている必要があります。
 
-  ![基本的なボタンの配置](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")
+  ![基本的なボタンの配置](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801-c_ButtonAlign")
 
-  **図 08.01-c:基本的なボタンの配置**
+  **図 08.01-c: 基本的なボタンの配置**
 
 #### <a name="labels"></a>ラベル
 
-- 左揃えにすべてのラベル。
+- すべてのラベルを左揃えにします。
 
-- コントロール上に位置するラベルでは、これらが左揃えに下にあるコントロールを正確とラベルの下部にあるが、その他のコントロール (コンボ ボックスなど) の 5 ピクセルにする必要があります。
+- コントロールの上にあるラベルの場合は、その下にあるコントロールと正確に左揃えにする必要があります。また、ラベルの下部は、他のコントロール (コンボボックスなど) の上部の5ピクセル上にする必要があります。
 
-- コントロールの左側に配置されているラベルの場合は、ラベルと入力コントロールの幅の最小値は、10 ピクセルです。 テキスト ボックス、コンボ ボックス、またはその他のコントロールを整列させるため、暗黙の 2 番目の列が確立されます。
+- コントロールの左側にあるラベルの場合、ラベルと入力コントロールの間の最小幅は10ピクセルです。 テキストボックス、コンボボックス、またはその他のコントロールを配置するために、暗黙的な2番目の列を設定する必要があります。
 
-- ラベルは、文のケースし、後にコロンです。 参照してください[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)します。
+- ラベルは文形式であり、その後にコロンが続きます。 「 [テキストスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)」を参照してください。
 
 #### <a name="distance-between-controls"></a>コントロール間の距離
- コントロールをある程度スタックします。 積み上げコントロール間の間隔の絶対ガイドラインはありません。 コントロール間こわばったりは、ダイアログ ボックスの間で若干異なります。 推奨される間隔は 20 ピクセル垂直コントロールのラベルの組、水平コントロールのラベルのペアの 9 ピクセルです。 水平方向のペアのコントロールの最小間隔は、6 ピクセルです。
+ スタックコントロールは合理的です。 積み上げられたコントロール間の間隔に関する絶対ガイドラインはありません。 コントロール間の tightness は、ダイアログ間で若干異なる場合があります。 推奨される間隔は、垂直コントロール/ラベルのペアの場合は20ピクセル、水平コントロール/ラベルのペアの場合は9ピクセルです。 水平方向のペアの最小制御間隔は6ピクセルです。
 
- ![コントロール間の距離をお勧めします](../../extensibility/ux-guidelines/media/0801-d-controldistance.png "0801 d_ControlDistance")
+ ![コントロール間の推奨される間隔](../../extensibility/ux-guidelines/media/0801-d-controldistance.png "0801-d_ControlDistance")
 
- **図 08.01-d:コントロール間の距離に関する推奨事項**
+ **図 08.01-d: コントロール間の距離に関する推奨事項**
 
 #### <a name="control-indentation"></a>コントロールのインデント
- コントロールは入れ子になったときに、ラベルは、通常、コントロールを上記の左端と水平方向に内部のコントロールを配置します。
+ コントロールが入れ子になっている場合は、内側のコントロールを上のコントロールの左端 (通常はラベル) で水平方向に配置します。
 
- ![コントロールの配置を入れ子になった](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801 e_ControlAlign")
+ ![入れ子になったコントロールの配置](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801-e_ControlAlign")
 
- **図 08.01-e:入れ子になったコントロールの配置**
+ **図 08.01-e: 入れ子になったコントロールの配置**
 
 #### <a name="control-width"></a>コントロールの幅
- テキスト ボックスまたは他の同様のコントロールの幅は、フィールドの平均入力より長くする必要があります。 平均の英語版の word には、5 つの文字です。 たとえば、長いパス名を必要とするテキスト ボックスを水平方向のレイアウトが許可されている限りにするプラットフォームの名前は長最長を入力できますが、必ずのドロップダウン リストを中にします。
+ テキストボックスまたはその他の同様のコントロールの幅は、フィールドの平均入力値以下である必要があります。 英単語の平均は5文字です。 たとえば、長いパス名を必要とするテキストボックスは、水平レイアウトで許可されている長さである必要があります。一方、プラットフォーム名のドロップダウンは、最大のエントリを許可する長さである必要があります。
 
-#### <a name="helper-text"></a>ヘルパー テキスト
+#### <a name="helper-text"></a>ヘルパーテキスト
 
-- ダイアログ ボックスでは、ダイアログ ボックスの目的に関する情報を提供するヘルパー テキストを表示できます。 これは通常、最上位にされ、1 ~ 2 文を指定できます。
+- ダイアログには、ダイアログの目的に関する詳細情報を提供するヘルパーテキストを表示できます。 これは通常、上部にあり、1-2 文にすることができます。
 
-- 行の長さを解析し、読み取りユーザー向けに快適な幅があります。 中規模のダイアログ幅個 550 ピクセルがあります。
+- 行の長さは、ユーザーが解析および読み取りを行うときに使いやすい幅にする必要があります。 中規模のダイアログは550ピクセル以下でなければなりません。
 
-#### <a name="BKMK_InteriorCommandButtons"></a> 内部コマンド ボタン
- 複雑なダイアログは、内部のコントロールは独自関連なボタンは、ダイアログのコミット ボタンがある場所に影響する可能性があります。
+#### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> 内部コマンドボタン
+ より複雑なダイアログでは、内部コントロールが独自の関連ボタンを持つ場合があります。これは、ダイアログのコミットボタンが配置されている場所に影響を与える可能性があります。
 
-- 内部の垂直方向の配置 (列) ボタンを使用して **[ok]** /**キャンセル**は右下隅で水平方向に並びます。
+- **[OK**] [ / **キャンセル**] が右下隅で水平方向に配置されている場合は、内部ボタンの垂直方向の配置 (列) を使用します。
 
-- 内部の水平方向の配置 (行) ボタンを使用して **[ok]** /**キャンセル**は右上隅にある垂直方向に並びます。 このような状況はまれです。
+- **[OK**] / **キャンセル**が右上隅で垂直方向に配置されている場合は、内部ボタンの水平方向の配置 (行) を使用します。 この状況はあまり一般的ではありません。
 
-- 内部のボタンのサイズのサイズと一致する 75 x 23 ピクセルの標準ボタンのサイズをターゲットする必要があります**OK**/**キャンセル**ボタンの可能な場合。 ボタンのラベル、ボタンの標準ボタンのサイズを超える場合は、そのセット内の他のボタンはその幅のサイズと一致します。
+- 内部ボタンのサイズは、可能な場合は **[OK**] / **[キャンセル**] ボタンのサイズと一致する標準のボタンサイズ75x23 ピクセルをターゲットにする必要があります。 ボタンのラベルによってボタンのサイズが標準のボタンのサイズを超えた場合、そのセット内の他のボタンはそのサイズよりも大きくなります。
 
-  ![水平方向の [ok] と [キャンセル] ボタン](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")
+  ![横方向の [OK] と [キャンセル] ボタン](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801-f_HorizOKCan")
 
-  **図の 08.01 f:垂直内部水平方向の [ok]/[キャンセル] ボタン**
+  **図 08.01-f: 横方向の OK/キャンセルを含む縦の内部ボタン**
 
-  ![垂直方向の [ok] と [キャンセル] ボタン](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")
+  ![縦方向の [OK] と [キャンセル] ボタン](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801-g_VertOKCan")
 
-  **図の 08.01 g:垂直方向の [ok]/[キャンセル] で内部横並びのボタン**
+  **図 08.01-g: 垂直方向の OK/キャンセルを含む横方向の内部ボタン**
 
-#### <a name="browse-button"></a>[参照...]ボタン
- **[参照...]** 以下のテキスト ボックスのボタンが [参照] を詳しく規定する必要があります完全に省略記号を含みます。 容量が厳しいかが複数ある **[参照...]** 画面で、ボタンのボタンは、省略記号を削減できます。
+#### <a name="browse-button"></a>[参照...];
+ **[参照...]** テキストボックスの後に表示されるボタンでは、"参照..." と表示されます。完全 (省略記号を含む)。 領域が狭い場合、または画面に複数の **[Browse...]** ボタンがある場合、ボタンは省略記号だけに縮小できます。
 
-## <a name="BKMK_ThemedDialogLayout"></a> テーマが適用されたダイアログのレイアウト
- Visual Studio のテーマが適用されたダイアログでは、軽量の外観を与えるし、複数の空白を提供します。 詳細の強調しより多くの行間隔とフォント サイズや重量のバリエーションを提供する目的の文字体裁を提供します。 可能であれば、chrome とタイトル バーを削減または削除されています。 これらのダイアログ ボックスのレイアウトは、この基本パターンに従う必要があります。
+## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a> テーマ付きダイアログのレイアウト
+ Visual Studio のテーマ付きダイアログの外観は薄くなり、より多くの空白が提供されます。 タイポグラフィでは、より多くの行間隔とフォントサイズと太さのバリエーションが提供されるため、より強調および関心があります。 可能な場合は、chrome とタイトルバーが縮小または削除されています。 これらのダイアログのレイアウトは、次の基本的なパターンに従う必要があります。
 
-1. ダイアログ ボックスの背景は白です。
+1. ダイアログの背景は白です。
 
-2. 中間値灰色でルールの 1 ピクセルの枠線があります。
+2. 中間値の灰色には、1ピクセルのルールの境界線があります。
 
-3. ダイアログのタイトルを不要になったは、タイトル バーに配置が、視覚的な効果とより大きなポイント サイズの強調を提供します。 (フォント サイズ」セクションを参照してください[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。)。
+3. ダイアログタイトルはタイトルバーには存在しませんが、大きなポイントサイズでは視覚的な関心と強調表示が提供されます。 (「 [テキストスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)」の「フォントサイズ」セクションを参照してください)。
 
-4. ラベルは、説明など、追加のテキストと組み合わせると**環境フォント + 太字**します。
+4. 説明などの追加テキストと結合されたラベルは、 **環境フォント + 太字**にする必要があります。
 
-5. 内部の列はグレー表示に 1 ピクセルのルールで区切られます。
+5. 内部列は、薄い灰色の1ピクセルのルールで区切られます。
 
-6. 既定のリンクには、アンダー スコアはあるありません。 ホバーと押された状態の色の変更とアンダー スコアがあります。
+6. 既定のリンクにはアンダースコアがありません。 ホバー状態と押された状態には、色の変更とアンダースコアがあります。
 
-7. コミット ボタン (など **[ok]** /**キャンセル**) 部分の右下隅に配置します。
+7. コミットボタン ( **OK** / **キャンセル**など) は右下隅に配置されます。
 
-### <a name="themed-dialog-layout-examples"></a>テーマが適用されたダイアログのレイアウトの例
- ![テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")
+### <a name="themed-dialog-layout-examples"></a>テーマ付きダイアログのレイアウトの例
+ ![テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801-h_ThemedDialog")
 
- **図の 08.01 h:テーマが適用されたダイアログ**
+ **図 08.01-h: テーマ付きダイアログ**
 
- ![テーマが適用されたダイアログのディメンション](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801 i_ThemedDialogDimensions")
+ ![テーマが適用されたダイアログのディメンション](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801-i_ThemedDialogDimensions")
 
- **図の 08.01 i:テーマが適用されたダイアログ – ディメンション**
+ **図 08.01-i: テーマ付きダイアログ–ディメンション**
 
- ![テーマが適用されたダイアログのフォント](../../extensibility/ux-guidelines/media/0801-j-themeddialogfonts.png "0801 j_ThemedDialogFonts")
+ ![テーマが適用されたダイアログのフォント](../../extensibility/ux-guidelines/media/0801-j-themeddialogfonts.png "0801-j_ThemedDialogFonts")
 
- **図の 08.01 j:テーマが適用されたダイアログ ボックス フォント**
+ **図 08.01-j: テーマ付きダイアログ–フォント**
 
- ![テーマが適用されたダイアログの色](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801 k_ThemedDialogColors")
+ ![テーマが適用されたダイアログの色](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **図の 08.01 k:テーマが適用されたダイアログ ボックスの色**
+ **図 08.01-k: テーマ付きダイアログ–色**
 
-## <a name="see-also"></a>関連項目
- [Visual Studio のアプリケーション パターン](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)[コントロール (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [ダイアログ ボックス (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+## <a name="see-also"></a>参照
+ [Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md) [コントロール (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)のアプリケーションパターン [(windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)

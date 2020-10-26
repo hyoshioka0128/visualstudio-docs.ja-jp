@@ -1,5 +1,5 @@
 ---
-title: Web プロジェクト Essentials |Microsoft Docs
+title: Web プロジェクトの Essentials |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825614"
 ---
 # <a name="web-project-essentials"></a>Web プロジェクトの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Web プロジェクトでは、Web アプリケーションを作成します。 Web プロジェクトを使用して、スマート Web ページを含む Web アプリケーションを作成することができます。 スマート Web ページには、オンデマンドの Web ページをレンダリングするサーバー側コードがあります。  
+Web プロジェクトでは、Web アプリケーションを作成します。 Web プロジェクトを使用して、スマート Web ページを含む Web アプリケーションを作成できます。 スマート Web ページには、Web ページをオンデマンドでレンダリングするサーバー側コードがあります。  
   
- などの従来のプログラミング言語を使用して[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../../includes/csprcs-md.md)]、スマートの Web ページを収集し、ユーザーから情報を処理して、データベースに格納などを作成することができます。  
+ やなどの従来のプログラミング言語を使用すると [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 、スマート Web ページを作成して、ユーザーから情報を収集して処理したり、データベースに格納したりすることができます。  
   
-- 分離コード モデルでは、ファイル拡張子の .aspx、.asmx Web ページに依存するソース コード ファイルを関連付けます。 たとえば、依存するソース コード ファイルの hello.aspx.cs hello.aspx もあります。  
+- 分離コードモデルは、ファイル拡張子が .aspx または .asmx の Web ページに依存ソースコードファイルを関連付けます。 たとえば、hello .aspx は、依存するソースコードファイル hello.aspx.cs を持つ場合があります。  
   
-- スマート Web ページに関連付けられたサーバー側コードは、Web サイトの/bin フォルダーにある実行可能ファイルにコンパイルされます。  
+- スマート Web ページに関連付けられているサーバー側のコードは、Web サイトの/bin フォルダーにある実行可能ファイルにコンパイルされます。  
   
-- 特定の Web ページに関連付けられていないヘルパー クラスなど、追加のソース コード ファイルについては、Web サイトの場合は/App_Code フォルダーにあります。  
+- 特定の Web ページに関連付けられていないヘルパークラスなどの追加のソースコードファイルは、Web サイト/App_Code フォルダーにあります。  
   
-  - Web サイト プロジェクト (WSP) には、各スマート Web ページの 1 つの実行可能ファイルが生成されます。 場合は/App_Code フォルダー内のソース コード ファイルから追加の実行可能ファイルが生成されます。  
+  - Web サイトプロジェクト (WSP) では、スマート Web ページごとに1つの実行可能ファイルが生成されます。 /App_Code フォルダー内の任意のソースコードファイルから、追加の実行可能ファイルが生成されます。  
 
-  - Web アプリケーション プロジェクト (WAP) は、コードでは、スマートのすべての Web ページと/App_Code フォルダー内のすべてのソース ファイルを 1 つの実行可能ファイルを生成します。  
+  - Web アプリケーションプロジェクト (WAP) は、すべてのスマート Web ページのコードと、/App_Code フォルダー内のすべてのソースファイルを組み合わせた1つの実行可能ファイルを生成します。  
   
-- Web プロジェクトのソリューション ファイルは、Web サイト自体から個別に配置されています。 既定では、ソリューションのファイルは、\Documents and Settings\\*YourAccount*\My Documents\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*します。  
+- Web プロジェクトのソリューションファイルは、Web サイト自体とは別に配置されます。 既定では、ソリューションファイルは \Documents にあり、[設定] [アカウント] [\My ドキュメント]、[web サイトの設定] にあり \\ *YourAccount* \\ *\<Visual Studio ####>* \\ *YourWebSite*ます。  
   
     > [!NOTE]
-    > Web サイトとソリューション ファイルを保持する場合だけが移動をもう一度開きます。  
+    > ソリューションファイルを Web サイトと共に保持する場合は、そのファイルを移動して再度開きます。  
   
-- Visual Studio でソリューション ファイルを持たない Web サイトを開くと、その新しいソリューション ファイルが自動的に生成します。  
+- ソリューションファイルのない Web サイトを Visual Studio に開いた場合は、新しいソリューションファイルが自動的に生成されます。  
   
-- Web プロジェクトには、プロジェクト ファイルはあるありません。 プロジェクトの情報は、ソリューション ファイル、web.config ファイル、および他の場所に格納されます。  
+- Web プロジェクトにはプロジェクトファイルがありません。 プロジェクト情報は、ソリューションファイル、web.config ファイル、その他の場所に格納されます。  
   
-- Web プロジェクトに自動的にグローバル プロパティを追加すると、Web プロジェクトのソリューション フォルダーに、ストレージ ファイルが作成されます。  
+- グローバルプロパティを Web プロジェクトに追加すると、Web プロジェクトソリューションフォルダーにストレージファイルが自動的に作成されます。  
   
-- ページ ディレクティブを使用してスマート Web ページがサーバー側のプログラミング言語と関連付けができる、または\<スクリプトの runat ="server"> タグです。  
+- ページディレクティブまたはタグを使用すると、スマート Web ページをサーバー側のプログラミング言語に関連付けることができ \<script runat="server"> ます。  
   
-- さらに、Web ページには、任意のスクリプト言語で記述されたクライアント側スクリプト ブロックの任意の数を持つことができます。  
+- また、Web ページには、任意のスクリプト言語で記述されたクライアント側スクリプトブロックをいくつでも含めることができます。  
   
-- プロジェクトと項目テンプレートと登録を追加して Web サイト プロジェクト システムを実装、[!INCLUDE[vwprvw](../../includes/vwprvw-md.md)]プロジェクト。  
+- プロジェクトと項目テンプレートを追加し、プロジェクトに登録することで、Web サイトプロジェクトシステムが実装され [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] ます。  
   
-- WAP システムは、プロジェクト フレーバーとも呼ばれる、プロジェクトのサブタイプとして実装されます。 [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)]プロジェクトは、WAP システムを作成する WAP サブタイプによってフレーバーします。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)します。  
+- WAP システムはプロジェクトのサブタイプとして実装されます。プロジェクトのフレーバーとも呼ばれます。 Wap [!INCLUDE[vwprvw](../../includes/vwprvw-md.md)] システムを作成するために、プロジェクトは wap サブタイプによって flavored されます。 プロジェクトのサブタイプの詳細については、「 [プロジェクトのサブ](../../extensibility/internals/project-subtypes.md)タイプ」を参照してください。  
   
-- スマート Web ページは、サーバー側のプログラミング言語と HTML を結合します。 サーバー側の言語には、含まれている言語が呼び出されます。 含まれている言語をサポートするために、Web プロジェクト システムを実装する必要があります、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイスのファミリです。  
+- スマート Web ページは、HTML とサーバー側プログラミング言語を組み合わせたものです。 サーバー側の言語は、含まれる言語と呼ばれます。 含まれている言語をサポートするには、Web プロジェクトシステムがインターフェイスのファミリを実装する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> ます。  
   
-  - エディターで含まれている言語をサポートするために含まれている言語サービスに含まれている言語コードを表示する HTML の言語サービスを延期する必要があります。  
+  - エディターで含まれている言語をサポートするには、HTML 言語サービスが、含まれている言語サービスに含まれる言語コードの表示を延期する必要があります。  
 
-  - エラーのマーカー (赤い波形) は、コード エディターのプライマリ バッファーで常に作成する必要があります。  
+  - エラーマーカー (赤の squigglies) は、常にコードエディターのプライマリバッファーに作成する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Web プロジェクト](../../extensibility/internals/web-projects.md)

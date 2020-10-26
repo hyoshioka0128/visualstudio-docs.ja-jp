@@ -1,5 +1,5 @@
 ---
-title: スタック フレーム |Microsoft Docs
+title: スタックフレーム |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,27 +13,27 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3050e89db2f5cbb138f3d358b10c7cd936c560e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423388"
 ---
 # <a name="stack-frames"></a>スタック フレーム
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーのアーキテクチャの観点から、**スタック フレーム**:  
+デバッガーアーキテクチャに関して、 **スタックフレーム**は次のようになります。  
   
-- スレッドの実行コンテキストを提供するスタックの抽象化です。 スレッドは、関数内で常に実行されます。 スタック フレームをローカル変数、関数の引数を保持します。 を Visual Studio でデバッグするために、言語またはデバッグ中の環境は、スタック フレームをサポートする必要があります。  
+- は、スレッドの実行コンテキストを提供するスタックの抽象化です。 スレッドは、常に関数内で実行されます。 スタックフレームには、関数のローカル変数とそれに対する引数が保持されます。 Visual Studio でデバッグするには、デバッグ対象の言語または環境でスタックフレームがサポートされている必要があります。  
   
-- 両方を特定し、それ自体を記述および関連付けられたスレッドを返すことができます。 スタック フレームを返すことも、現在の命令ポインターだけでなく、関連付けられているドキュメントを表す、コードのコンテキストや式の評価コンテキスト。  
+- は、自身を識別して記述することができ、関連付けられているスレッドを返すことができます。 スタックフレームは、現在の命令ポインターを表すコードコンテキストや、関連付けられているドキュメントや式の評価コンテキストを返すこともできます。  
   
-- 名前、種類、およびローカル変数と引数の値を記述して、さまざまな IDE のデバッグ ウィンドウに表示されるプロパティがあります。  
+- には、ローカル変数と引数の名前、型、および値を記述するプロパティがあり、さまざまな IDE デバッグウィンドウに表示されます。  
   
-- によって表される、 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)デバッグ エンジン (DE) またはスレッドの実行の結果として、仮想マシンによって作成された通常のインターフェイス。  
+- は、スレッドを実行した結果としてデバッグエンジン (DE) または仮想マシンによって作成される [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) インターフェイスによって表されます。  
   
-## <a name="see-also"></a>関連項目  
- [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)   
+## <a name="see-also"></a>参照  
+ [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md)   
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)   
- [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)   
+ [デバッグエンジン](../../extensibility/debugger/debug-engine.md)   
  [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)

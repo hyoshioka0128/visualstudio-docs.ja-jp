@@ -9,16 +9,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545172"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:安全ではない DTD の処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
@@ -35,13 +35,13 @@ ms.locfileid: "85545172"
 
 - XML で <xref:System.Xml.XmlNode.InnerXml%2A> プロパティが設定されている。
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>プロパティが Parse に設定されています。
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> プロパティが Parse に設定されています。
 
 - 信頼されていない入力は、 <xref:System.Xml.XmlResolver> の代わりに <xref:System.Xml.XmlSecureResolver> を使用して処理される。
 
 - XmlReader。<xref:System.Xml.XmlReader.Create%2A> メソッドが安全ではないインスタンスで呼び出されているか、インスタンスがまったく <xref:System.Xml.XmlReaderSettings> ありません。
 
-- <xref:System.Xml.XmlReader>は、セキュリティで保護されていない既定の設定または値で作成されます。
+- <xref:System.Xml.XmlReader> は、セキュリティで保護されていない既定の設定または値で作成されます。
 
   これらはどのケースでも、結果は同じになります。XML を処理するマシンが共有するファイル システム、またはネットワークからのコンテンツが攻撃者にさらされ、DoS の媒介として使用される可能性があります。
 
@@ -59,7 +59,7 @@ ms.locfileid: "85545172"
 
 - プロパティを true に設定して、信頼されていないソースを扱う場合は、DTD 処理を無効に  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> します。 **true**
 
-- XmlTextReader クラスには、完全信頼の継承確認要求があります。 詳細については、「 [継承の要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)」を参照してください。
+- XmlTextReader クラスには、完全信頼の継承確認要求があります。 詳細については、「 [継承の要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) 」を参照してください。
 
   .NET 4 以降
 

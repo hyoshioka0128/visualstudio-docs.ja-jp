@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185241"
 ---
 # <a name="net-memory-data-views"></a>.NET メモリのデータ ビュー
@@ -25,7 +25,7 @@ ms.locfileid: "68185241"
 ここでは、.NET メモリ プロファイル データが格納されるプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [概要 ビュー](../profiling/summary-view-dotnet-memory-data.md)  
+ [概要ビュー](../profiling/summary-view-dotnet-memory-data.md)  
  最も多くのメモリを割り当てた関数と型が一覧で示されます。  
   
  [割り当て ビュー](../profiling/dotnet-memory-allocations-view.md)  
@@ -64,8 +64,8 @@ ms.locfileid: "68185241"
  [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)  
  プロファイリング実行でのインストルメント化された関数に対するメモリ割り当てデータが一覧で表示されます。  
   
-## <a name="reference"></a>参照  
- [関数の詳細ビュー](../profiling/function-details-view.md)  
+## <a name="reference"></a>リファレンス  
+ [[関数の詳細] ビュー](../profiling/function-details-view.md)  
  選択した関数と、選択した関数を呼び出した関数および選択した関数によって呼び出された関数の関係がグラフィカルな図で表示されます。  
   
  [プロセス ビュー](../profiling/process-view.md)  
@@ -75,7 +75,7 @@ ms.locfileid: "68185241"
  プロファイル データ ファイルに挿入された ETW およびサンプリング イベントが一覧表示されます。  
   
 ## <a name="related-sections"></a>関連項目  
- [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)  
+ [プロファイラー サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)  
  サンプリング メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報。  
   
  [インストルメンテーション メソッドのデータ ビュー](../profiling/instrumentation-method-data-views.md)  

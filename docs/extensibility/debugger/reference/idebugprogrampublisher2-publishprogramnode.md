@@ -1,5 +1,5 @@
 ---
-title: Iデバッグプログラムパブリッシャー2::Publishプログラムノード |マイクロソフトドキュメント
+title: IDebugProgramPublisher2::P ublishProgramNode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721669"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-デバッグ エンジン (DEs) とセッション デバッグ マネージャー (SDM) で使用できるプログラム ノードを作成します。
+プログラムノードをデバッグエンジン (DEs) およびセッションデバッグマネージャー (SDM) で使用できるようにします。
 
 ## <a name="syntax"></a>構文
 
@@ -41,15 +41,15 @@ int PublishProgramNode(
 
 ## <a name="parameters"></a>パラメーター
 `pProgramNode`\
-[in]使用するプログラム ノードを表す[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクト。
+から使用できるようにするプログラムノードを表す [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドを使用すると、プログラムを選択してデバッグ用に起動する前に、情報を照会できます。
+## <a name="remarks"></a>解説
+ この方法では、デバッグのためにプログラムを選択して起動する前に、プログラムに対してクエリを実行できます。
 
- プログラム ノードを空き状態から削除するには、[メソッドを呼](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)び出します。
+ プログラムノードを可用性から削除するには、 [Unpublishprogramnode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

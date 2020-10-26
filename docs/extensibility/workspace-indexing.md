@@ -1,5 +1,5 @@
 ---
-title: Visual Studio でのインデックス作成ワークスペース |Microsoft Docs
+title: Visual Studio でのワークスペースのインデックス作成 |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,29 +8,29 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952710"
 ---
 # <a name="workspace-indexing"></a>ワークスペースのインデックス作成
 
-ソリューションでは、プロジェクト システムはビルドの機能を提供する担当、デバッグ、 **GoTo**シンボルの検索、および詳細。 プロジェクト システムは、関係およびプロジェクト内のファイルの機能を理解しているこの操作を行うことができます。 [フォルダーを開く](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)ワークスペースには、豊富な IDE 機能も提供する同じ情報を得ることが必要があります。 コレクションとこのデータの永続的なストレージは、ワークスペースのインデックスと呼ばれるプロセスです。 このインデックス付きデータは、一連の非同期 Api を使って照会できます。 エクステンダーが提供することで、インデックス作成プロセスに参加できる<xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner>特定の種類のファイルを処理する方法を理解します。
+ソリューションでは、プロジェクトシステムはビルド、デバッグ、 **GoTo** シンボル検索などの機能を提供する役割を担います。 プロジェクトシステムでは、プロジェクト内のファイルの関係と機能を理解しているため、この作業を行うことができます。 [[フォルダーを開く](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)] ワークスペースは、豊富な IDE 機能を提供するためにも同じ洞察を必要とします。 このデータの収集と永続的なストレージは、ワークスペースのインデックス作成と呼ばれるプロセスです。 このインデックス付きデータは、一連の非同期 Api を使用して照会できます。 エクステンダーは、 <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner> 特定の種類のファイルの処理方法を認識するを指定することによって、インデックス作成プロセスに参加できます。
 
 ## <a name="types-of-indexed-data"></a>インデックス付きデータの種類
 
-インデックスが作成されるデータの 3 種類があります。 注ファイル スキャナーからの型は、インデックスから逆シリアル化の種類によって異なります。
+インデックスが作成されるデータには3種類あります。 メモファイルスキャナーからの型は、インデックスから逆シリアル化された型とは異なることに注意してください。
 
-|データ|スキャナーの種類のファイル|インデックスのクエリ結果の種類|関連する型|
+|Data|ファイルスキャナーの種類|インデックスクエリの結果の種類|関連する型|
 |--|--|--|--|
-|参照|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
-|シンボル|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> 代わりに使用する必要があります`IIndexWorkspaceService`クエリ|
+|参考資料|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
+|記号|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService>クエリではなくを使用する必要があります。 `IIndexWorkspaceService`|
 |データ値|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 
-## <a name="querying-for-indexed-data"></a>インデックス付きデータの照会
+## <a name="querying-for-indexed-data"></a>インデックス付きデータのクエリ
 
-永続化されたデータへのアクセスに使用できる 2 つの非同期型があります。 最初は<xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceData>します。 1 つのファイルの基本的なアクセスを提供`FileReferenceResult`と`FileDataResult`データ、およびその結果をキャッシュします。 2 つ目は、<xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceService>はクエリ機能の詳細については、キャッシュを使用しません。
+永続化されたデータにアクセスするには、2つの非同期型を使用できます。 最初の方法は、を使用することです <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceData> 。 1つのファイルとデータへの基本的なアクセスを提供 `FileReferenceResult` `FileDataResult` し、結果をキャッシュします。 2つ目は、 <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceService> キャッシュを使用しないが、より多くのクエリ機能を使用できることです。
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -50,23 +50,23 @@ private static IIndexWorkspaceService GetDirectIndexedData(IWorkspace workspace)
 }
 ```
 
-## <a name="participating-in-indexing"></a>インデックス作成に参加しています。
+## <a name="participating-in-indexing"></a>インデックス作成に参加する
 
-ワークスペースのインデックス作成では、次のシーケンスほぼ次に示します。
+ワークスペースのインデックス作成は、おおよそ次の順序に従っています。
 
-1. 検出と (初期開始スキャン) でのみ、ワークスペース内のファイル システム エンティティの永続化します。
-1. スキャンするファイルあたり最高の優先順位で一致するプロバイダーがよく寄せられる`FileReferenceInfo`秒。
-1. スキャンするファイルあたり最高の優先順位で一致するプロバイダーがよく寄せられる`SymbolDefinition`秒。
-1. すべてのプロバイダーは求め、1 ファイル`FileDataValue`秒。
+1. ワークスペース内のファイルシステムエンティティの検出と永続化 (最初に開いているスキャンの場合のみ)。
+1. ファイルごとに、優先順位が最も高い一致プロバイダーがをスキャンするように求められ `FileReferenceInfo` ます。
+1. ファイルごとに、優先順位が最も高い一致プロバイダーがをスキャンするように求められ `SymbolDefinition` ます。
+1. ファイルごとに、すべてのプロバイダーに s が要求され `FileDataValue` ます。
 
-拡張機能が実装することで、スキャナーをエクスポートできます`IWorkspaceProviderFactory<IFileScanner>`を持つ型をエクスポートおよび<xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute>します。 `SupportedTypes`属性引数は 1 つまたは複数の値から<xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants>します。 例スキャナーでは、VS SDK を参照してください。[サンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs)します。
+拡張機能 `IWorkspaceProviderFactory<IFileScanner>` では、を使用して型を実装およびエクスポートすることによって、スキャナーをエクスポートでき <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute> ます。 `SupportedTypes`属性引数は、の1つ以上の値である必要があり <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants> ます。 スキャナーの例については、VS SDK [サンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs)を参照してください。
 
 > [!WARNING]
-> サポートするファイルのスキャナーをエクスポートしないで、`FileScannerTypeConstants.FileScannerContentType`型。 Microsoft 内部用でのみ使用されます。
+> 種類がサポートされているファイルスキャナーはエクスポートしないでください `FileScannerTypeConstants.FileScannerContentType` 。 Microsoft の内部的な目的でのみ使用されます。
 
-高度な状況は、拡張機能は任意のファイルの種類のセットをサポートして動的に可能性があります。 MEF エクスポートではなく`IWorkspaceProviderFactory<IFileScanner>`、拡張機能をエクスポートできます`IWorkspaceProviderFactory<IFileScannerProvider>`します。 このファクトリ型がインポートする、インスタンス化し、がインデックス作成の開始時にその<xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScannerProvider.GetSymbolScannersAsync%2A>メソッドが呼び出されます。 `IFileScanner` 任意の値をサポートしているインスタンス`FileScannerTpeConstants`は受け入れられます、だけでなくシンボルします。
+高度な状況では、拡張機能がファイルの種類の任意のセットを動的にサポートする場合があります。 MEF エクスポートではなく `IWorkspaceProviderFactory<IFileScanner>` 、拡張機能でエクスポートでき `IWorkspaceProviderFactory<IFileScannerProvider>` ます。 インデックス作成が開始されると、このファクトリ型はインポートされ、インスタンス化され、その <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScannerProvider.GetSymbolScannersAsync%2A> メソッドが呼び出されます。 `IFileScanner` の任意の値をサポート `FileScannerTpeConstants` するインスタンスは、記号だけでなく、有効になります。
 
 ## <a name="next-steps"></a>次の手順
 
-* [ワークスペースと言語サービス](workspace-language-services.md)-、ワークスペースを開いているフォルダーに言語サービスを統合する方法について説明します。
-* [ワークスペース ビルド](workspace-build.md)-フォルダーを開くサポートは、MSBuild とメイクファイルなどのシステムを構築します。
+* [ワークスペースと言語サービス](workspace-language-services.md) -言語サービスを開いているフォルダーワークスペースに統合する方法について説明します。
+* [ワークスペースビルド](workspace-build.md) -オープンフォルダーは、MSBuild やメイクファイルなどのビルドシステムをサポートします。

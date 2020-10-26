@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62793735"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>現行バージョンの Azure Tools for Visual Studio にプロジェクトをアップグレードする方法
@@ -28,8 +28,8 @@ ms.locfileid: "62793735"
 * より新しいバージョンの Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll を参照するように、Web ロールの web.config ファイルと worker ロールの app.config ファイルが更新されます。
 * Microsoft.WindowsAzure.StorageClient.dll、Microsoft.WindowsAzure.Diagnostics.dll、Microsoft.WindowsAzure.ServiceRuntime.dll の各アセンブリが新しいバージョンにアップグレードされます。
 * Azure のプロジェクト ファイル (.ccproj) に格納された発行プロファイルは、.azurePubXml という拡張子で **Publish** サブディレクトリ内の別のファイルに移されます。
-* 新機能と変更された機能をサポートするために、発行プロファイルのいくつかのプロパティが更新されます。 デプロイされたクラウド サービスを同時にまたは段階的に更新できるため、**[AllowUpgrade]** は **[DeploymentReplacementMethod]** に置き換えられます。
-* **UseIISExpressByDefault** プロパティが追加され、false に設定されます。これは、デバッグに使用する Web サーバーがインターネット インフォメーション サービス (IIS) から IIS Express に自動的に変更されることがないようにするためです。 最近のバージョンのツールで作成したプロジェクトの Web サーバーは、既定では IIS Express になります。
+* 新機能と変更された機能をサポートするために、発行プロファイルのいくつかのプロパティが更新されます。 デプロイされたクラウド サービスを同時にまたは段階的にアップグレードできるため、**[AllowUpgrade]** は **[DeploymentReplacementMethod]** に置き換えられます。
+* **UseIISExpressByDefault** プロパティが追加され、false に設定されたため、デバッグで使用する Web サーバーはインターネット インフォメーション サービス (IIS: Internet Information Services) から IIS Express に自動的に変更されません。 最近のバージョンのツールで作成したプロジェクトの Web サーバーは、既定では IIS Express になります。
 * 既にあるプロジェクトのロールで Azure のキャッシュ機能がホストされている場合、プロジェクトをアップグレードするときにサービス構成 (.cscfg ファイル) とサービス定義 (.csdef ファイル) 内の一部のプロパティが変更されます。 プロジェクトで使用されている Azure のキャッシュ機能が NuGet パッケージである場合、プロジェクトは最新バージョンのパッケージにアップグレードされます。 web.config ファイルを開き、クライアントの構成がアップグレード処理後も適切に維持されていることを確認する必要があります。 NuGet パッケージを使用せずに、クライアント アセンブリへの参照として Azure のキャッシュ機能を追加した場合は、アセンブリが更新されません。アセンブリへの参照を新しいバージョンに手動で更新する必要があります。
 
 > [!IMPORTANT]
@@ -41,6 +41,6 @@ ms.locfileid: "62793735"
 1. アップグレード後のプロジェクトに使用する Visual Studio 環境に、新しいバージョンの Azure Tools をインストールして、アップグレード対象のプロジェクトを開きます。 プロジェクトが 1.6 (2011 年 11 月) リリース未満の Azure Tools で作成されている場合、プロジェクトは新しいバージョンに自動的にアップグレードされます。 2011 年 11 月リリースでプロジェクトが作成され、そのバージョンがまだインストールされている場合、プロジェクトはそのバージョンで開きます。
 2. [ソリューション エクスプ ローラー] で、プロジェクト ノードのショートカット メニューを開き、**[プロパティ]** を選択し、表示されるダイアログ ボックスの **[アプリケーション]** タブを選択します。
    
-    そのプロジェクトに関連付けられているツールのバージョンが **[アプリケーション]** タブに表示されます。 新しいバージョンの Azure Tools が表示された場合、そのプロジェクトは既にアップグレードされています。 タブに表示されたバージョンよりも新しいツールがインストールされている場合は、 **[アップグレード]** ボタンが表示されます。
-3. **[アップグレード]** ボタンをクリックして、プロジェクトを新しいバージョンのツールにアップグレードします。
+    **[アプリケーション]** タブに、プロジェクトに関連付けられたツールのバージョンが表示されます。 新しいバージョンの Azure Tools が表示された場合、そのプロジェクトは既にアップグレードされています。 タブに表示されたバージョンよりも新しいツールをインストールしている場合は、**[アップグレード]** が表示されます。
+3. **[アップグレード]** ボタンをクリックして、プロジェクトを現在のバージョンのツールにアップグレードします。
 4. プロジェクトをビルドし、API の変更に起因するエラーがあれば解決してください。 新しいバージョンのコードを変更する方法については、特定の API に関するドキュメントを参照してください。

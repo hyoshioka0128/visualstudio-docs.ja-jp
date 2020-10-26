@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143718"
 ---
 # <a name="sccrename-function"></a>SccRename 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-この関数は、ソース管理システムでファイルを変更します。  
+この関数は、ソース管理システム内のファイルの名前を変更します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,33 +37,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>パラメーター  
  pvContext  
- [in]ソース管理プラグイン コンテキスト構造体。  
+ からソース管理プラグインのコンテキスト構造。  
   
  hWnd  
- [in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。  
+ からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。  
   
  lpFileName  
- [in]名前が変更されるファイルの完全修飾ファイル名。  
+ から名前が変更されたファイルの完全修飾ファイル名。  
   
  lpNewName  
- [in]完全修飾の新しい名前。 ディレクトリ パスが異なる場合は、ファイルが 1 つのサブディレクトリからに移動別です。  
+ から完全修飾された新しい名前。 ディレクトリパスが異なる場合、ファイルはあるサブディレクトリから別のサブディレクトリに移動されています。  
   
 ## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
-|SCC_OK|名前変更操作が正常に完了しました。|  
-|SCC_E_PROJNOTOPEN|プロジェクトでは、ソース管理下にある開いていません。|  
-|SCC_E_FILENOTCONTROLLED|ファイルはソース管理されません。|  
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。|  
-|SCC_E_NOTAUTHORIZED|ユーザーは、この操作を実行する権限がありません。|  
-|SCC_E_COULDNOTCREATEPROJECT|名前の変更プロセスの一部として、プロジェクトを作成できませんでした。|  
+|SCC_OK|名前の変更操作が正常に完了しました。|  
+|SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていません。|  
+|SCC_E_FILENOTCONTROLLED|ファイルがソース管理下にありません。|  
+|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。|  
+|SCC_E_NOTAUTHORIZED|この操作を完了する権限がユーザーにありません。|  
+|SCC_E_COULDNOTCREATEPROJECT|名前変更プロセスの一部としてプロジェクトを作成できませんでした。|  
 |SCC_E_OPNOTPERFORMED|操作は実行されませんでした。|  
 |SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|  
   
-## <a name="remarks"></a>Remarks  
- この関数は、ファイルの名前を変更または移動する、1 つの場所から別に、ソース管理システムで使用できます。 ソース管理プラグインは、ディスク上のファイルへのアクセスを試みませんする必要があります。 ローカル ファイルの名前を変更する IDE の役目です。  
+## <a name="remarks"></a>注釈  
+ この関数を使用すると、ファイルの名前を変更したり、ソース管理システム内のある場所から別の場所にファイルを移動したりすることができます。 ソース管理プラグインがディスク上のファイルにアクセスしようとすることはできません。 ローカルファイルの名前を変更するのは IDE の役割です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

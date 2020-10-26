@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156417"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled メソッド
+# <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled メソッド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 任意のセッションでプロバイダーが有効にされているかどうかを調べます。  
@@ -49,5 +49,5 @@ bool is_enabled(
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [marker_series クラス](../profiling/marker-series-class.md)

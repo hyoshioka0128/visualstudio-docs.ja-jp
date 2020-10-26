@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a22be61d5f4c05720a5ff223806f2e14a8bfbc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663946"
 ---
 # <a name="working-with-shaders"></a>シェーダーの操作
@@ -35,8 +35,8 @@ ms.locfileid: "72663946"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|タイトル|[説明]|
 |-----------|-----------------|
 |[シェーダー デザイナー](../designers/shader-designer.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] シェーダー デザイナーを使用してシェーダーを操作する方法について説明します。|
-|[シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)|グラフィックス効果を得るためのシェーダー デザイナー ノードについて説明します。|
-|[シェーダー デザイナーの例](../designers/shader-designer-examples.md)|シェーダー デザイナーを利用して一般的なグラフィックス効果を得る方法を示すトピックのリンクを提供します。|
+|[シェーダーデザイナーノード](../designers/shader-designer-nodes.md)|グラフィックス効果を得るためのシェーダー デザイナー ノードについて説明します。|
+|[シェーダーデザイナーの例](../designers/shader-designer-examples.md)|シェーダー デザイナーを利用して一般的なグラフィックス効果を得る方法を示すトピックのリンクを提供します。|

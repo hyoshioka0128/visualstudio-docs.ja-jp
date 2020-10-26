@@ -1,5 +1,5 @@
 ---
-title: デバッガー ナビゲーションのサンプル コード (Xaml および c#) |Microsoft Docs
+title: デバッガーナビゲーションのサンプルコード (Xaml および C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88193fc4ec7061771ebba53139cdc0ecce67dbfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552079"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>デバッガーのナビゲーションのサンプル コード (Xaml および C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックのコードは、のサンプル ファイルは、 [(Xaml および c#) は、デバッグ セッションのナビゲート](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)トピック。  
+このトピックのコードは、「 [デバッグセッションに移動する (Xaml および C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 」トピックのサンプルファイルです。  
   
 ## <a name="sample-code"></a>サンプル コード  
   

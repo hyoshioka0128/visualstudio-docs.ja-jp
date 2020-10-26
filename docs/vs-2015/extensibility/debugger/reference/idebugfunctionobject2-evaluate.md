@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::Evaluate |Microsoft Docs
+title: 'IDebugFunctionObject2:: Evaluate |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25e62dbfc0778fb1bf07c9108c9111f3520d87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180972"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-関数の呼び出しをオブジェクトとして結果の値を返します。  
+関数を呼び出し、結果の値をオブジェクトとして返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,22 +46,22 @@ int Evaluate (
   
 #### <a name="parameters"></a>パラメーター  
  `ppParams`  
- [in]配列の[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)入力パラメーターを表すオブジェクト。 これらの各パラメーターは、このインターフェイスの作成方法のいずれかを使用して作成されました。  
+ から入力パラメーターを表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトの配列。 これらの各パラメーターは、このインターフェイスのいずれかの Create メソッドを使用して作成されています。  
   
  `dwParams`  
- [in]パラメーターの数、`ppParams`配列。  
+ から配列内のパラメーターの数 `ppParams` 。  
   
  `dwEvalFlags`  
- [in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)評価を実行する方法を指定する列挙体。  
+ から評価を実行する方法を指定する、 [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙のフラグの組み合わせ。  
   
  `dwTimeout`  
- [in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用**無限**を無期限に待機します。  
+ からこのメソッドから制御が戻るまでに待機する最大時間をミリ秒単位で指定します。 無期限に待機するには、 **無制限** を使用します。  
   
  `ppResult`  
- [out]返します、 **IDebugObject**オブジェクトとして関数の値を表します。  
+ 入出力関数の値をオブジェクトとして表す **IDebugObject** を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

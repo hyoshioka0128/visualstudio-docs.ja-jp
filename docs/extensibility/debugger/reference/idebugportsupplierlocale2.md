@@ -1,5 +1,5 @@
 ---
-title: IDebug ポートサプライヤーロケール2 |マイクロソフトドキュメント
+title: IDebugPortSupplierLocale2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724289"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-ポート サプライヤーのロケールサポートを提供します。
+ポートサプライヤーのロケールサポートを提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -26,22 +26,22 @@ ms.locfileid: "80724289"
 IDebugPortSupplierLocale2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- カスタム ポート サプライヤーは、ロケールを設定するためにこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ カスタムポート供給業者は、このインターフェイスを実装してロケールを設定します。
 
 ## <a name="methods"></a>メソッド
- 次の表に、**メソッド**を示します。
+ 次の表は、 **IDebugPortSupplierLocale2**のメソッドを示しています。
 
 |Method|説明|
 |------------|-----------------|
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|ポート サプライヤーのロケールを設定します。|
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|ポートサプライヤーのロケールを設定します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: ポートプリフ.h
+ ヘッダー: Portpriv. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

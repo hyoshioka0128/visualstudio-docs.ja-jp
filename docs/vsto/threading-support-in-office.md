@@ -1,5 +1,5 @@
 ---
-title: スレッドの Office でのサポート
+title: Office でのスレッドのサポート
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,63 +16,63 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978768"
 ---
-# <a name="threading-support-in-office"></a>スレッドの Office でのサポート
-  この記事では、Microsoft Office オブジェクト モデルのスレッド処理のサポートについての詳細についての情報を提供します。 Office オブジェクト モデルは、スレッド セーフではありませんが、Office ソリューションで複数のスレッドを使用することは。 Office アプリケーションは、コンポーネント オブジェクト モデル (COM) サーバーです。 COM は、任意のスレッド上の COM サーバーを呼び出すクライアントを許可します。 COM サーバーのスレッド セーフではない場合は、COM は、1 つの論理スレッドがいつでも、サーバーで実行できるように、同時呼び出しをシリアル化するためのメカニズムを提供します。 このメカニズムは、シングル スレッド アパートメント (STA) モデルと呼ばれます。 呼び出しはシリアル化するため、サーバーがビジー状態またはバック グラウンド スレッドでその他の呼び出しが処理中に呼び出し元は時間にわたってブロック可能性があります。
+# <a name="threading-support-in-office"></a>Office でのスレッドのサポート
+  この記事では、Microsoft Office オブジェクトモデルでのスレッド処理のサポートについて説明します。 Office オブジェクトモデルはスレッドセーフではありませんが、Office ソリューションで複数のスレッドを使用することができます。 Office アプリケーションは、コンポーネントオブジェクトモデル (COM) サーバーです。 COM を使用すると、クライアントは任意のスレッドで COM サーバーを呼び出すことができます。 スレッドセーフでない COM サーバーの場合、COM は同時呼び出しをシリアル化して、サーバー上で一度に1つの論理スレッドだけが実行されるようにするメカニズムを提供します。 このメカニズムは、シングルスレッドアパートメント (STA) モデルと呼ばれています。 呼び出しはシリアル化されるため、サーバーがビジー状態であるかバックグラウンドスレッドで他の呼び出しを処理しているときに、呼び出し元が一定期間ブロックされることがあります。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="knowledge-required-when-using-multiple-threads"></a>複数のスレッドを使用する場合に必要な知識
- 複数のスレッドを使用する必要がありますの次の側面について少なくとも基本的な知識があるマルチ スレッド。
+ 複数のスレッドを操作するには、マルチスレッドの次の側面について、少なくとも基本的な知識を持っている必要があります。
 
-- Windows Api
+- Windows API
 
-- COM マルチ スレッドの概念
+- COM マルチスレッドの概念
 
 - コンカレンシー
 
 - 同期
 
-- マーシャ リング
+- マーシャリング
 
-  一般的な情報についてのマルチ スレッドを参照してください[マネージ スレッド処理](/dotnet/standard/threading/)します。
+  マルチスレッドに関する一般的な情報については、「 [マネージスレッド処理](/dotnet/standard/threading/)」を参照してください。
 
-  Office はメイン STA で実行されます。 この機能の影響を理解できるようになります Office で複数のスレッドを使用する方法を理解します。
+  Office はメインの STA で実行されます。 このような影響を理解することで、Office で複数のスレッドを使用する方法を理解することができます。
 
-## <a name="basic-multithreading-scenario"></a>基本的なマルチ スレッド シナリオ
- Office ソリューションのコードは、常に、メイン UI スレッドで実行されます。 バック グラウンド スレッドで別のタスクを実行して、アプリケーションのパフォーマンスを滑らかにすることがあります。 目標は、タスクを実行する 2 つ一見一度に円滑に実行 (複数のスレッドを使用する主な理由) にする必要があります、続けて、別の 1 つのタスクではなくです。 たとえば、メインの Excel の UI スレッドで、イベントのコードがあり、バック グラウンド スレッドでは、サーバーからデータを収集し、サーバーからデータを Excel UI 内のセルを更新するタスクを実行する可能性があります。
+## <a name="basic-multithreading-scenario"></a>基本的なマルチスレッドのシナリオ
+ Office ソリューションのコードは、常にメイン UI スレッド上で実行されます。 バックグラウンドスレッドで別のタスクを実行すると、アプリケーションのパフォーマンスを向上させることができます。 目標は、1つのタスクの後に2つのタスクを続けて実行することです。これにより、実行がスムーズになります (複数のスレッドを使用する主な理由)。 たとえば、メインの Excel UI スレッドにイベントコードがあるとします。バックグラウンドスレッドでは、サーバーからデータを収集し、サーバーからのデータを使用して Excel UI のセルを更新するタスクを実行することができます。
 
-## <a name="background-threads-that-call-into-the-office-object-model"></a>Office オブジェクト モデルを呼び出すバック グラウンド スレッド
- バック グラウンド スレッドが、Office アプリケーションへの呼び出しを行うと、呼び出しが自動的に STA の境界を越えてマーシャ リングします。 ただし、Office アプリケーションがバック グラウンド スレッドになります、時に呼び出しを処理できるという保証はありません。 これにはいくつかの可能性があります。
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Office オブジェクトモデルを呼び出すバックグラウンドスレッド
+ バックグラウンドスレッドが Office アプリケーションの呼び出しを行うと、その呼び出しは STA の境界を越えて自動的にマーシャリングされます。 ただし、バックグラウンドスレッドによって行われた呼び出しを Office アプリケーションが処理できることは保証されません。 いくつかの可能性があります。
 
-1. Office アプリケーションでは、呼び出しを入力する機会を得るためのメッセージをポンプする必要があります。 これには場合、処理が明け渡さこれには時間がかかります。
+1. Office アプリケーションでは、を呼び出すためにメッセージをポンプする必要があります。 これを行わずに大量の処理を実行している場合は、時間がかかることがあります。
 
-2. 別の論理スレッド アパートメント内では既に、新しいスレッドは入力できません。 これは多くの場合、論理スレッドが Office アプリケーションに入った後、再入可能呼び出しを呼び出し元のアパートメントに戻す場合に発生します。 その呼び出しが戻るを待機しているアプリケーションがブロックされます。
+2. 別の論理スレッドがアパートメント内に既に存在する場合、新しいスレッドはを入力できません。 これは多くの場合、論理スレッドが Office アプリケーションに入ってから、再入可能な呼び出しを呼び出し元のアパートメントに戻すときに発生します。 アプリケーションがブロックされ、その呼び出しが返されるのを待機しています。
 
-3. Excel は、着信通話をすぐに処理できないように、状態である可能性があります。 たとえば、Office アプリケーションには、モーダル ダイアログを表示可能性があります。
+3. Excel は、着信呼び出しをすぐに処理できない状態になっている可能性があります。 たとえば、Office アプリケーションにモーダルダイアログが表示されている場合があります。
 
-   2 および 3 の可能性について、 [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter)インターフェイス。 を通じて場合は、サーバーを実装すると、すべての呼び出しを入力してください、[がこのインターフェイス](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall)メソッド。 2 考慮事項は、呼び出しは自動的に拒否されます。 3 考慮事項は、サーバーは、状況に応じて、呼び出しを拒否できます。 呼び出しが拒否された場合、呼び出し元は対処方法を決定する必要があります。 呼び出し元の実装では通常、 [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter)、によって拒否されたの通知では、 [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall)メソッド。
+   可能性が2および3の場合、COM には [の imessagefilter.prefiltermessage](/windows/desktop/api/objidl/nn-objidl-imessagefilter) インターフェイスが用意されています。 サーバーがそれを実装している場合、すべての呼び出しは [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) メソッドを介して入力されます。 可能性が2の場合、呼び出しは自動的に拒否されます。 可能性3の場合、サーバーは状況に応じて呼び出しを拒否できます。 呼び出しが拒否された場合、呼び出し元は何を行うかを決定する必要があります。 通常、呼び出し元は [の imessagefilter.prefiltermessage](/windows/desktop/api/objidl/nn-objidl-imessagefilter)を実装します。この場合、 [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) メソッドによって拒否が通知されます。
 
-   ただし、場合は、Visual Studio の Office 開発ツールを使用して作成されたソリューションでは、COM 相互運用機能変換、拒否されたすべての呼び出しを<xref:System.Runtime.InteropServices.COMException>(「メッセージ フィルター示される、アプリケーションがビジー状態である」)。 オブジェクト モデルを呼び出すを加えるたびに、バック グラウンド スレッドでこの例外を処理する準備をする必要があります。 通常、一定の時間の再試行と、ダイアログを表示する必要があります。 ただしも STA としてバック グラウンド スレッドを作成し、このケースを処理するには、そのスレッドのメッセージ フィルターを登録できます。
+   ただし、Visual Studio の Office 開発ツールを使用して作成されたソリューションの場合、COM 相互運用機能は、拒否されたすべての呼び出しをに変換し <xref:System.Runtime.InteropServices.COMException> ます ("メッセージフィルターはアプリケーションがビジー状態であることを示しています")。 バックグラウンドスレッドでオブジェクトモデルを呼び出す場合は常に、この例外を処理できるように準備する必要があります。 通常は、一定の時間が経過してからダイアログが表示されます。 ただし、バックグラウンドスレッドを STA として作成し、そのスレッドに対してメッセージフィルターを登録してこのケースを処理することもできます。
 
-## <a name="start-the-thread-correctly"></a>スレッドが正常に起動します。
- 新しい STA スレッドを作成するときに、スレッドを開始する前に、sta アパートメント状態を設定します。 これを実行する方法を次のコード例に示します。
+## <a name="start-the-thread-correctly"></a>スレッドを正しく開始します
+ 新しい STA スレッドを作成するときは、スレッドを開始する前にアパートメント状態を STA に設定します。 これを実行する方法を次のコード例に示します。
 
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
 
- 詳細については、次を参照してください。[マネージ スレッド処理のベスト プラクティス](/dotnet/standard/threading/managed-threading-best-practices)します。
+ 詳細については、「 [マネージスレッド処理のベストプラクティス](/dotnet/standard/threading/managed-threading-best-practices)」を参照してください。
 
-## <a name="modeless-forms"></a>モードレス フォーム
- モードレス フォームでは、フォームが表示されている間に何らかの種類のアプリケーションとの対話ができます。 ユーザーが、フォームとやり取りし、フォームが閉じることがなくアプリケーションを操作します。 Office オブジェクト モデルには、管理対象のモードレス フォーム; がサポートされていますただしが使用できない場合がバック グラウンド スレッドでします。
+## <a name="modeless-forms"></a>モードレスフォーム
+ モードレスフォームを使用すると、フォームの表示中にアプリケーションとの間で何らかの種類の操作を行うことができます。 ユーザーはフォームと対話し、フォームはを閉じずにアプリケーションと対話します。 Office オブジェクトモデルでは、マネージドモードレスフォームがサポートされています。ただし、バックグラウンドスレッドでは使用しないでください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [スレッド処理 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [スレッド処理 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
-- [使用してスレッドおよびスレッド処理](/dotnet/standard/threading/using-threads-and-threading)
+- [スレッドとスレッド処理の使用](/dotnet/standard/threading/using-threads-and-threading)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)

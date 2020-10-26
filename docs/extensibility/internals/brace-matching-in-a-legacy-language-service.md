@@ -1,5 +1,5 @@
 ---
-title: 従来の言語サービスでのブレースのマッチング |マイクロソフトドキュメント
+title: 従来の言語サービスでの中かっこの照合 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,45 +12,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709819"
 ---
-# <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスでのブレースのマッチング
-かっこの一致は、かっこや中かっこなど、一緒に出現する必要がある言語要素を開発者が追跡するのに役立ちます。 開発者が右中かっこを入力すると、左中かっこが強調表示されます。
+# <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスでの中かっこの照合
+かっこの照合により、開発者は、かっこや中かっこなど、一緒に出現する必要がある言語要素を追跡できます。 開発者が右中かっこを入力すると、左中かっこが強調表示されます。
 
- ペアとトリプルと呼ばれる 2 つまたは 3 つの共に発生する要素を照合できます。 トリプルは、3 つの共に発生する要素のセットです。 たとえば、C# では、ステートメント`foreach`はトリプル`foreach()`、、、、`{`および`}`を形成します。 右中かっこを入力すると、3 つの要素すべてが強調表示されます。
+ 2つまたは3つの同時実行要素 (ペアと3要素と呼ばれます) を一致させることができます。 3要素は、3つの同時実行要素のセットです。 たとえば、C# では、ステートメントは、、、 `foreach` およびの3つのを形成し `foreach()` `{` `}` ます。 右中かっこを入力すると、3つの要素がすべて強調表示されます。
 
- レガシ言語サービスは VSPackage の一部として実装されますが、言語サービス機能を実装する新しい方法は、MEF 拡張機能を使用することです。 かっこの一致を実装する新しい方法の詳細については、「[チュートリアル: 一致するかっこを表示](../../extensibility/walkthrough-displaying-matching-braces.md)する 」を参照してください。
+ 従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 かっこの一致を実装する新しい方法の詳細については、「 [チュートリアル: 一致する中かっこの表示](../../extensibility/walkthrough-displaying-matching-braces.md)」を参照してください。
 
 > [!NOTE]
-> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、新しいエディター機能を利用できるようになります。
+> できるだけ早く新しいエディター API の使用を開始することをお勧めします。 これにより、言語サービスのパフォーマンスが向上し、エディターの新機能を利用できるようになります。
 
- この<xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスは、 メソッドと メソッドを<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A>使用<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A>してペアとトリプルの両方をサポートします。
+ クラスは、メソッドとメソッドを使用して、 <xref:Microsoft.VisualStudio.Package.AuthoringSink> ペアと3要素の両方をサポートし <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> ます。
 
 ## <a name="implementation"></a>実装
- 言語サービスは、言語で一致したすべての要素を識別し、一致するすべてのペアを見つける必要があります。 これは通常、一致する<xref:Microsoft.VisualStudio.Package.IScanner>言語を検出し、メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>使用して要素を一致させることによって実現されます。
+ 言語サービスでは、言語で一致したすべての要素を識別し、一致するすべてのペアを見つける必要があります。 通常、これを行うには、を実装して、 <xref:Microsoft.VisualStudio.Package.IScanner> 一致する言語を検出し、メソッドを使用して <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 要素を照合します。
 
- この<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドは、スキャナーを呼び出して、行をトークン化し、キャレットの直前にトークンを返します。 スキャナーは、現在のトークンのトークン トリガー値を設定することで、言語要素の<xref:Microsoft.VisualStudio.Package.TokenTriggers>ペアが見つかったことを示します。 メソッド<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>は、メソッド<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>を呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A>解析理由の値を指定<xref:Microsoft.VisualStudio.Package.ParseReason>してメソッドを呼び出して、一致する言語要素を見つけます。 一致する言語要素が見つかると、両方の要素が強調表示されます。
+ メソッドは、 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> スキャナーを呼び出して行をトークン化し、カレットの直前にトークンを返します。 スキャナーは、現在のトークンにのトークントリガー値を設定することによって、言語要素のペアが見つかったことを示してい <xref:Microsoft.VisualStudio.Package.TokenTriggers> ます。 メソッドは、メソッドを呼び出します。メソッドは、 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> 解析理由値を指定してメソッドを呼び出し、 <xref:Microsoft.VisualStudio.Package.ParseReason> 一致する言語要素を検索します。 一致する言語要素が見つかると、両方の要素が強調表示されます。
 
- 中かっこを入力すると中かっこの強調表示が行われますの詳細については、「[従来の言語サービス のパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)」の「*解析操作の例*」を参照してください。
+ 中かっこの強調表示をトリガーする方法の詳細については、「[従来の言語サービスパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)」の「*解析操作の例*」セクションを参照してください。
 
-## <a name="enable-support-for-brace-matching"></a>かっこの一致のサポートを有効にする
- この<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性は、クラスの対応するプロパティを設定する<xref:Microsoft.VisualStudio.Package.LanguagePreferences>MatchBraces、MatchBracesAtCaret、および**ShowMatchingBrace**レジストリ エントリを設定できます。 **MatchBraces** **MatchBracesAtCaret** 言語設定プロパティは、ユーザーが設定することもできます。
+## <a name="enable-support-for-brace-matching"></a>中かっこの照合のサポートを有効にする
+ 属性では、 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> クラスの対応するプロパティを設定する **matchbraces**、 **MatchBracesAtCaret**、および **ShowMatchingBrace** レジストリエントリを設定でき <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ます。 言語設定のプロパティは、ユーザーが設定することもできます。
 
 |レジストリ エントリ|プロパティ|説明|
 |--------------------|--------------|-----------------|
-|マッチブレース|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|かっこの一致を有効にします。|
-|マッチブレイスアットカレト|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|キャレットが移動する場合に、ブレースの一致を有効にします。|
-|マッチングブレースを表示します。|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|一致するブレースを強調表示します。|
+|MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|中かっこの照合を有効にします。|
+|MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|キャレットの移動に合わせて中かっこの照合を有効にします。|
+|ShowMatchingBrace|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|対応する中かっこを強調表示します。|
 
-## <a name="match-conditional-statements"></a>条件ステートメントの一致
- 、 `if`、 `else if` `else` `#if` `#elif`、 、 、 、 、 、 などの条件ステートメントを、一致する区切り記号と同じ方法で照合できます。 `#else` `#endif` クラスをサブクラス化<xref:Microsoft.VisualStudio.Package.AuthoringSink>し、テキスト範囲と区切り文字を一致する要素の内部配列に追加できるメソッドを提供できます。
+## <a name="match-conditional-statements"></a>一致する条件ステートメント
+ 、、およびなどの条件付きステートメントを一致させることができ `if` `else if` `else` `#if` `#elif` ます。また、 `#else` `#endif` 区切り記号と同じ方法で、、、、を使用することもできます。 クラスをサブクラス化 <xref:Microsoft.VisualStudio.Package.AuthoringSink> し、区切り記号だけでなくテキスト範囲を一致する要素の内部配列に追加できるメソッドを提供できます。
 
-## <a name="set-the-trigger"></a>トリガーの設定
- 次の例は、かっこ、中かっこ、および四角かっこを検出し、スキャナーでそのトリガーを設定する方法を示しています。 クラス<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>の<xref:Microsoft.VisualStudio.Package.Source>メソッドはトリガーを検出し、パーサーを呼び出して一致するペアを見つけます (この記事の「*一致を見つける*」セクションを参照)。 この例は、説明のみを目的とします。 この例では、スキャナーに、テキスト`GetNextToken`行からトークンを識別して返すメソッドが含まれていることを前提としています。
+## <a name="set-the-trigger"></a>トリガーを設定する
+ 次の例では、一致するかっこ、中かっこ、中かっこを検出し、スキャナーでトリガーを設定する方法を示します。 クラスのメソッドは、 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> <xref:Microsoft.VisualStudio.Package.Source> トリガーを検出し、パーサーを呼び出して一致するペアを検索します (この記事の「 *一致の検索* 」セクションを参照してください)。 この例は、説明を目的としたものです。 スキャナーには、 `GetNextToken` テキスト行からトークンを識別して返すメソッドが含まれていることを前提としています。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -84,8 +84,8 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="match-the-braces"></a>中かっこを一致させる
- 言語要素`{ }`、、および を照合し`( )``[ ]`、その範囲をオブジェクトに追加する簡単な例を<xref:Microsoft.VisualStudio.Package.AuthoringSink>次に示します。 この方法は、ソース コードを解析する場合に推奨される方法ではありません。それは説明の目的のためだけである。
+## <a name="match-the-braces"></a>中かっこと一致します
+ 言語要素、 `{ }` 、およびを照合し、それらの `( )` `[ ]` 範囲をオブジェクトに追加するための簡略化された例を次に示し <xref:Microsoft.VisualStudio.Package.AuthoringSink> ます。 この方法は、ソースコードを解析するために推奨される方法ではありません。これは説明を目的としたものです。
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -137,4 +137,4 @@ namespace TestLanguagePackage
 
 ## <a name="see-also"></a>関連項目
 - [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)
-- [従来の言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+- [従来の言語サービスパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

@@ -1,5 +1,5 @@
 ---
-title: スタート ページのカスタムの作成 |Microsoft Docs
+title: カスタムスタートページを作成する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,40 +9,40 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acb7922658a5dd7db0839051a42a119733c8b1d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184201"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタム スタート ページの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-」の説明に従って、スタート ページ プロジェクト テンプレートを使用してカスタム スタート ページを作成できない場合[スタート ページ](../misc/creating-your-own-start-page.md)、このドキュメントの手順に従って 1 つを手動で作成できます。  
+スタートページのプロジェクトテンプレートを使用してカスタムスタートページを作成できない場合は、「 [スタートページ](../misc/creating-your-own-start-page.md)」で説明されているように、このドキュメントの手順に従って手動で作成できます。  
   
 ## <a name="creating-a-blank-start-page"></a>空白のスタート ページの作成  
- まず、空白のスタート ページを Visual Studio で認識するタグ構造を持つ .xaml ファイルを作成してください。 次に、マークアップと分離コードを生成する機能と外観を追加します。  
+ 最初に、Visual Studio が認識するタグ構造を持つ .xaml ファイルを作成して、空のスタートページを作成します。 次に、マークアップと分離コードを追加して、必要な外観と機能を生成します。  
   
-#### <a name="to-create-a-blank-start-page"></a>空白のスタート ページを作成するには  
+#### <a name="to-create-a-blank-start-page"></a>空白のスタートページを作成するには  
   
-1. 型の新しいプロジェクトを作成する**WPF アプリケーション**(**Visual c#/Windows デスクトップ**します。  
+1. **WPF アプリケーション**の種類の新しいプロジェクトを作成します (**Visual C#/Windows デスクトップ**)。  
   
 2. `Microsoft.VisualStudio.Shell.14.0` への参照を追加します。  
   
-3. XML エディターで XAML ファイルを開き、変更、最上位\<ウィンドウ > 要素を\<UserControl > 名前空間宣言を削除することがなく要素。  
+3. XML エディターで XAML ファイルを開き、最上位の \<Window> 要素を、 \<UserControl> 名前空間宣言を削除せずに要素に変更します。  
   
-4. 削除、`x:Class`最上位の要素を宣言します。 これにより、XAML コンテンツのスタート ページをホストしている Visual Studio ツール ウィンドウとの互換性。  
+4. `x:Class`最上位レベルの要素から宣言を削除します。 これにより、スタートページをホストする Visual Studio ツールウィンドウと XAML コンテンツとの互換性が確保されます。  
   
-5. 最上位レベルに次の名前空間宣言を追加\<UserControl > 要素。  
+5. 次の名前空間宣言を最上位の要素に追加し \<UserControl> ます。  
   
     ```  
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
     ```  
   
-     これらの名前空間では、Visual Studio コマンド、制御、および UI 設定にアクセスできます。 詳細については、次を参照してください。[スタート ページを Visual Studio のコマンドを追加する](../extensibility/adding-visual-studio-commands-to-a-start-page.md)します。  
+     これらの名前空間を使用すると、Visual Studio のコマンド、コントロール、および UI の設定にアクセスできます。 詳細については、「 [スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)」を参照してください。  
   
-     次の例では、空白のスタート ページの .xaml ファイルに、マークアップを示します。 内部で任意のカスタム コンテンツを移動する必要があります<xref:System.Windows.Controls.Grid>要素。  
+     次の例は、空のスタートページの .xaml ファイルのマークアップを示しています。 カスタムコンテンツは、内側の要素に含まれている必要があり <xref:System.Windows.Controls.Grid> ます。  
   
     ```vb  
     <UserControl  
@@ -62,32 +62,32 @@ ms.locfileid: "68184201"
     </UserControl>  
     ```  
   
-6. 空のコントロールを追加\<UserControl > カスタム スタート ページを入力する要素。 Visual Studio に固有の機能を追加する方法については、次を参照してください。[スタート ページを Visual Studio のコマンドを追加する](../extensibility/adding-visual-studio-commands-to-a-start-page.md)します。  
+6. 空の要素にコントロールを追加し \<UserControl> て、カスタムスタートページに入力します。 Visual Studio に固有の機能を追加する方法の詳細については、「 [スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)」を参照してください。  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>カスタム スタート ページのテストと適用  
- Visual Studio がクラッシュしないことを確認するまでは、カスタム スタート ページを実行する Visual Studio のプライマリ インスタンスを設定しないでください。 代わりに、実験用インスタンスでテストします。  
+ Visual studio のプライマリインスタンスは、Visual Studio がクラッシュしないことを確認するまで、カスタムスタートページを実行するように設定しないでください。 代わりに、実験用インスタンスでテストします。  
   
-#### <a name="to-test-a-manually-created-custom-start-page"></a>手動で作成したカスタム スタート ページをテストするには  
+#### <a name="to-test-a-manually-created-custom-start-page"></a>手動で作成したカスタムスタートページをテストするには  
   
-1. コピーは、XAML ファイルとサポート テキスト ファイルまたはマークアップをファイルに、 **%USERPROFILE%\My documents \visual Studio 2015 \startpages\\** フォルダー。  
+1. XAML ファイルと、サポートするテキストファイルまたはマークアップファイルを **%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\ **フォルダーにコピーします。  
   
-2. スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_ **\Common7\IDE\PrivateAssemblies\\** します。  
+2. スタートページで、Visual Studio によってインストールされていないアセンブリ内のコントロールまたは型が参照されている場合は、アセンブリをコピーし、 _Visual studio のインストールフォルダー_**\Common7\IDE\PrivateAssemblies \\ **に貼り付けます。  
   
-3. Visual Studio コマンド プロンプトで「 **devenv/rootsuffix Exp**を Visual Studio の実験用インスタンスを開きます。  
+3. Visual Studio のコマンドプロンプトで、「 **devenv/rootsuffix Exp** 」と入力して、visual studio の実験用インスタンスを開きます。  
   
-4. 実験用のインスタンスに移動、**ツール/オプション/環境/スタートアップ**ページおよび元の XAML ファイルを選択、**スタート ページのカスタマイズ**ドロップダウンします。  
+4. 実験用インスタンスで、[ツール]、[ **オプション]** 、[環境]、[スタートアップ] ページの順に選択し、[ **スタートページのカスタマイズ** ] ドロップダウンから XAML ファイルを選択します。  
   
 5. **[表示]** メニューの **[スタート ページ]** をクリックします。  
   
-     カスタム スタート ページが表示されます。 ファイルを変更する場合は、する必要があります実験用インスタンスを閉じて、変更を行います、コピーし、変更されたファイルを貼り付けるして変更を表示する実験用インスタンスを再度開きます。  
+     カスタムスタートページが表示されます。 ファイルを変更する場合は、実験用インスタンスを閉じて変更を加え、変更されたファイルをコピーして貼り付けてから、実験用インスタンスを再度開いて変更内容を表示する必要があります。  
   
-#### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Visual Studio のプライマリ インスタンスで、カスタム スタート ページを適用  
+#### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Visual Studio のプライマリインスタンスにカスタムスタートページを適用するには  
   
-- スタート ページをテストして、安定していることと、使用、**スタート ページのカスタマイズ**オプション、**オプション**Visual Studio のプライマリ インスタンスのスタート ページとしてそれを選択するダイアログ ボックス  
+- スタートページをテストし、安定していることがわかったら、[**オプション**] ダイアログボックスの [**スタートページのカスタマイズ**] オプションを使用して、Visual Studio のプライマリインスタンスのスタートページとして選択します。  
   
-## <a name="see-also"></a>関連項目  
- [チュートリアル: カスタム XAML をスタート ページに追加します。](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
- [スタート ページにユーザー コントロールを追加します。](../extensibility/adding-user-control-to-the-start-page.md)   
- [Visual Studio のコマンドをスタート ページに追加します。](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [チュートリアル: [スタート] ページのユーザー設定の保存](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+## <a name="see-also"></a>参照  
+ [チュートリアル: スタートページへのカスタム XAML の追加](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [スタートページへのユーザーコントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)   
+ [スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
+ [チュートリアル: スタートページへのユーザー設定の保存](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [カスタム スタート ページのデプロイ](../extensibility/deploying-custom-start-pages.md)

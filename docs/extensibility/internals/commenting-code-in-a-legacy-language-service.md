@@ -1,5 +1,5 @@
 ---
-title: レガシ言語サービスでのコードのコメント |マイクロソフトドキュメント
+title: 従来の言語サービスでのコードのコメント化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709436"
 ---
-# <a name="comment-code-in-a-legacy-language-service"></a>レガシ言語サービスのコメント コード
-プログラミング言語は、通常、コードに注釈を付けたりコメントしたりするための手段を提供します。 コメントは、コードに関する追加情報を提供するテキストのセクションですが、コンパイルまたは解釈中に無視されます。
+# <a name="comment-code-in-a-legacy-language-service"></a>従来の言語サービスでのコメントコード
+プログラミング言語は、通常、コードに注釈を付けたり、コメントを付けたりするための手段を提供します。 コメントは、コードに関する追加情報を提供するテキストのセクションですが、コンパイル時または解釈時には無視されます。
 
- 管理パッケージ フレームワーク (MPF) クラスは、選択したテキストのコメントとコメント解除をサポートします。
+ Managed package framework (MPF) クラスは、選択したテキストのコメント化とコメント解除のサポートを提供します。
 
-## <a name="comment-styles"></a>コメントスタイル
-コメントには、一般的なスタイルが 2 つあります。
+## <a name="comment-styles"></a>コメントのスタイル
+コメントには、次の2つの一般的なスタイルがあります。
 
-1. コメントが 1 行に含まれます。
+1. 行コメント。コメントは1行にあります。
 
-2. コメントをブロックします(コメントには複数行が含まれる場合があります)。
+2. コメントをブロックします。コメントには複数の行を含めることができます。
 
-通常、行のコメントには開始文字 (または文字) が含まれ、ブロック コメントには開始文字と終了文字の両方が含まれます。 たとえば、C# では、行コメントが`//`で始まり、ブロック コメントが`/*`で始`*/`まり、ブロック コメントが で終わります。
+行のコメントには、通常、開始文字 (または文字) がありますが、ブロックコメントには開始文字と終了文字の両方があります。 たとえば、C# では、行コメントはで始まり、 `//` ブロックコメントはで始まり、で `/*` 終わり `*/` ます。
 
-ユーザーが **[詳細**編集 **]** > メニューから[**コメント選択**]コマンドを選択すると、そのコマンドは<xref:Microsoft.VisualStudio.Package.Source>クラス<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>のメソッドにルーティングされます。 ユーザーが [Select の**コメントを解除]** コマンドを選択すると、<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>コマンドはメソッドにルーティングされます。
+ユーザーが [詳細の**編集**] メニューからコマンド**コメントを選択**すると、  >  **Advanced**コマンドはクラスのメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> ます。 ユーザーがコマンドを選択して **選択**を解除すると、コマンドはメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> ます。
 
-## <a name="support-code-comments"></a>サポート コード コメント
- 言語サービス サポート コードコメントは、 の名前付`EnableCommenting`きパラメーターを使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>して行うことができます。 クラスのプロパティ<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>を<xref:Microsoft.VisualStudio.Package.LanguagePreferences>設定します。 言語サービス機能の設定の詳細については、「[従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください。
+## <a name="support-code-comments"></a>サポートコードのコメント
+ の名前付きパラメーターを使用して、言語サービスでコードのコメントをサポートすることができ `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> ます。 これにより <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 、クラスのプロパティが設定され <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ます。 言語サービス機能の設定の詳細については、「 [従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください。
 
- また、このメソッドを<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>オーバーライドして、使用<xref:Microsoft.VisualStudio.Package.CommentInfo>している言語のコメント文字を含む構造体を返す必要があります。 C# スタイルの行コメント文字が既定です。
+ また、メソッドをオーバーライドし <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> <xref:Microsoft.VisualStudio.Package.CommentInfo> て、言語のコメント文字を含む構造体を返す必要があります。 C# スタイルの行コメント文字が既定値です。
 
 ### <a name="example"></a>例
- メソッドの実装例を次に<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>示します。
+ メソッドの実装例を次に示し <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> ます。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

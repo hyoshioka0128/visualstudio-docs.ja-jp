@@ -1,17 +1,17 @@
 ---
 title: IDE アクセシビリティ オプションを設定する
 description: Visual Studio for Mac でのアクセシビリティ オプションの設定の概要
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.topic: how-to
-ms.openlocfilehash: 265ad820ea478ac59d8209cc14ce4fe6be29c7af
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 7b0959c8a2f91e340a8b173d94fb2dbd9e2d9474
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939156"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88801816"
 ---
 # <a name="set-ide-accessibility-options"></a>IDE アクセシビリティ オプションを設定する
 

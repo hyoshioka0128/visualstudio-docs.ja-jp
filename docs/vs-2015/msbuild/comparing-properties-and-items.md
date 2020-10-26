@@ -1,4 +1,4 @@
-﻿---
+---
 title: プロパティと項目の比較 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184089"
 ---
 # <a name="comparing-properties-and-items"></a>プロパティと項目の比較
@@ -43,7 +43,7 @@ MSBuild のプロパティと項目は、いずれもタスクに情報を渡し
 </PropertyGroup>  
 ```  
   
- 通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 たとえば、オブジェクトに適用された  
+ 通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 次に例を示します。  
   
 ```  
 <PropertyGroup>  
@@ -56,7 +56,7 @@ MSBuild のプロパティと項目は、いずれもタスクに情報を渡し
   
  CustomBuild ターゲットをターゲット一覧に追加し、`BuildDependsOn` に値 `BeforeBuild;CoreBuild;AfterBuild;CustomBuild` を付与します。  
   
- MSBuild 4.0 以降、ターゲットの依存関係の挿入は非推奨とされます。 代わりに `AfterTargets` 属性と `BeforeTargets` 属性を使用してください。 詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。  
+ MSBuild 4.0 以降、ターゲットの依存関係の挿入は非推奨とされます。 代わりに `AfterTargets` 属性と `BeforeTargets` 属性を使用してください。 詳細については、「 [ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>文字列と項目一覧との変換  
  MSBuild は、項目の種類と文字列値の変換を必要に応じて実行します。 項目一覧を文字列値にする方法については、MSBuild プロパティの値として項目の種類を使用すると何が起こるかを考えます。  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>関連項目
- [詳細な概念](../msbuild/msbuild-advanced-concepts.md)
+## <a name="see-also"></a>参照  
+ [高度な概念](../msbuild/msbuild-advanced-concepts.md)

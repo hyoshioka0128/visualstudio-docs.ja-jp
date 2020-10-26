@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a68b0314f3c64ce9196b8d48a78844bc81990a92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665995"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
@@ -24,7 +24,7 @@ ms.locfileid: "72665995"
  [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)には、完全なエンティティの挿入、更新、および削除中に実行されるデザイナーによって生成されたコードをユーザーが拡張できる部分メソッドと、個々の列の変更中および変更後のコードが含まれます。
 
 > [!NOTE]
-> このトピックでは、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を使用してエンティティ クラスに検証を追加する基本的な手順を示します。 特定のエンティティクラスを参照することなく、これらの汎用的な手順に従うのは困難な場合があるため、実際のデータを使用するチュートリアルが用意されています。
+> このトピックでは、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を使用してエンティティ クラスに検証を追加する基本的な手順を示します。 特定のエンティティ クラスを参照しないでこれらの汎用的な手順に従うのは難しい可能性があるため、実際のデータを使用するチュートリアルが用意されています。
 
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>特定の列の値の変更に対する検証の追加
  この手順では、列の値の変更時にデータを検証する方法を示します。 検証はユーザー インターフェイスではなくクラス定義の内部で実行されるため、値によって検証が失敗する場合は例外がスローされます。 列の値を変更しようとするアプリケーションのコードには、エラー処理を実装してください。
@@ -33,9 +33,9 @@ ms.locfileid: "72665995"
 
 #### <a name="to-validate-data-during-a-columns-value-change"></a>列の値の変更時にデータを検証するには
 
-1. @No__t_1 で、新しい LINQ to SQL クラスファイル ( **.dbml**ファイル) を開くか作成します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. で、新しい LINQ to SQL クラスファイル (**.dbml** ファイル) を開くか作成し [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2. O/R デザイナーで、検証を追加するクラスを右クリックし、 **[コードの表示]** をクリックします。
+2. O/R デザイナーで、検証を追加するクラスを右クリックし、[ **コードの表示**] をクリックします。
 
     コード エディターが開き、選択したエンティティ クラスの部分クラスが表示されます。
 
@@ -45,9 +45,9 @@ ms.locfileid: "72665995"
 
    1. **[メソッド名]** の一覧を展開します。
 
-   2. 検証を追加する列の**On**_COLUMNNAME_**Changing**メソッドを見つけます。
+   2. 検証を追加する列の **On**_COLUMNNAME_**Changing** メソッドを見つけます。
 
-   3. @No__t_0*COLUMNNAME* `Changing` メソッドが部分クラスに追加されます。
+   3. `On` *COLUMNNAME* `Changing` メソッドが部分クラスに追加されます。
 
    4. 次のコードを追加して、まず値が入力されたことを確認し、次に列に入力された値がアプリケーションで許容されることを確認します。 入力された値は `value` 引数に含まれています。そこで、これが有効な値であることを確認するロジックを追加します。
 
@@ -82,9 +82,9 @@ ms.locfileid: "72665995"
 
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>エンティティ クラスの更新時にデータを検証するには
 
-1. @No__t_1 で、新しい LINQ to SQL クラスファイル ( **.dbml**ファイル) を開くか作成します。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. で、新しい LINQ to SQL クラスファイル (**.dbml** ファイル) を開くか作成し [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2. O/R デザイナーで空の領域を右クリックし、 **[コードの表示]** をクリックします。
+2. O/R デザイナーで空の領域を右クリックし、**[コードの表示]** をクリックします。
 
     コード エディターが開き、`DataContext` の部分クラスが表示されます。
 
@@ -94,9 +94,9 @@ ms.locfileid: "72665995"
 
    1. **[メソッド名]** の一覧を展開します。
 
-   2. [**更新**_entityclassname_] をクリックします。
+   2. [ **更新**_entityclassname_] をクリックします。
 
-   3. @No__t_0*Entityclassname*メソッドが部分クラスに追加されます。
+   3. `Update` *Entityclassname*メソッドが部分クラスに追加されます。
 
    4. 次のコードに示すように、`instance` 引数を使用して個々の列の値にアクセスします。
 
@@ -109,9 +109,9 @@ ms.locfileid: "72665995"
 
       C# プロジェクトの場合は、次の操作を行います。
 
-   5. プロジェクトC#ではイベントハンドラーが自動的に生成されないため、IntelliSense を使用して部分的な `Update`*CLASSNAME*メソッドを作成できます。
+   5. C# プロジェクトではイベントハンドラーが自動的に生成されないため、IntelliSense を使用して部分クラスのメソッドを作成でき `Update` *CLASSNAME*ます。
 
-   6. 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの更新メソッドをクリックします。 次のコードは、`Update`*CLASSNAME* partial メソッドを選択したときに生成されるコードに似ています。
+   6. 「`partial`」に続けてスペースを入力して、使用可能な部分メソッドの一覧にアクセスします。 検証を追加するクラスの更新メソッドをクリックします。 CLASSNAME 部分メソッドを選択すると生成されるコードは次のようになり `Update` *CLASSNAME*ます。
 
       ```csharp
       partial void UpdateCLASSNAME(CLASSNAME instance)

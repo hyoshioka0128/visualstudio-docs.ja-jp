@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659269"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
@@ -22,7 +22,7 @@ ms.locfileid: "72659269"
 ドメイン固有言語ソリューションでテキストテンプレートを変更または追加すると、エンジンがテンプレートをソースコードに変換したとき、または生成されたコードをコンパイルしたときに、エラーが発生することがあります。 次のチュートリアルでは、テキストテンプレートをデバッグするために実行できるいくつかの操作について説明します。
 
 > [!NOTE]
-> 一般的なテキストテンプレートの詳細については、「[コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートのデバッグの詳細については、「[チュートリアル: テキストテンプレートのデバッグ](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)」を参照してください。
+> 一般的なテキストテンプレートの詳細については、「 [コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートのデバッグの詳細については、「 [チュートリアル: テキストテンプレートのデバッグ](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)」を参照してください。
 
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
  この手順では、次の特性を持つドメイン固有言語ソリューションを作成します。
@@ -35,21 +35,21 @@ ms.locfileid: "72659269"
 
 - 会社名: Fabrikam
 
-  ドメイン固有言語ソリューションの作成の詳細については、「[方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
+  ドメイン固有言語ソリューションの作成の詳細については、「 [方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
 
 ## <a name="creating-a-text-template"></a>テキストテンプレートの作成
  ソリューションにテキストテンプレートを追加します。
 
 #### <a name="to-create-a-text-template"></a>テキストテンプレートを作成するには
 
-1. ソリューションをビルドし、デバッガーで実行を開始します。 ( **[ビルド]** メニューの **[ソリューションのリビルド]** をクリックし、 **[デバッグ]** メニューの **[デバッグ開始]** をクリックします)。Visual Studio の新しいインスタンスによって、デバッグプロジェクトが開きます。
+1. ソリューションをビルドし、デバッガーで実行を開始します。 ([ **ビルド** ] メニューの [ **ソリューションのリビルド**] をクリックし、[ **デバッグ** ] メニューの [ **デバッグ開始**] をクリックします)。Visual Studio の新しいインスタンスによって、デバッグプロジェクトが開きます。
 
-2. @No__t_0 という名前のテキストファイルをデバッグプロジェクトに追加します。
+2. という名前のテキストファイルを `DebugTest.tt` デバッグプロジェクトに追加します。
 
-3. DebugTest.tt の **[カスタムツール]** プロパティが `TextTemplatingFileGenerator` に設定されていることを確認します。
+3. DebugTest.tt の [ **カスタムツール** ] プロパティがに設定されていることを確認し `TextTemplatingFileGenerator` ます。
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>テキストテンプレートからモデルにアクセスするディレクティブのデバッグ
- テキストテンプレート内のステートメントおよび式からモデルにアクセスするには、最初に生成されたディレクティブプロセッサを呼び出す必要があります。 生成されたディレクティブプロセッサを呼び出すと、モデル内のクラスがプロパティとしてテキストテンプレートコードで使用できるようになります。 詳細については、「[テキストテンプレートからのモデルへのアクセス](../modeling/accessing-models-from-text-templates.md)」を参照してください。
+ テキストテンプレート内のステートメントおよび式からモデルにアクセスするには、最初に生成されたディレクティブプロセッサを呼び出す必要があります。 生成されたディレクティブプロセッサを呼び出すと、モデル内のクラスがプロパティとしてテキストテンプレートコードで使用できるようになります。 詳細については、「 [テキストテンプレートからのモデルへのアクセス](../modeling/accessing-models-from-text-templates.md)」を参照してください。
 
  次の手順では、正しくないディレクティブ名と不適切なプロパティ名をデバッグします。
 
@@ -91,17 +91,17 @@ ms.locfileid: "72659269"
     #>
     ```
 
-2. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+2. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     **[エラー一覧]** ウィンドウに次のエラーが表示されます。
+     [ **エラー一覧** ] ウィンドウに次のエラーが表示されます。
 
      **' DebuggingTestLanguageDirectiveProcessor ' という名前のプロセッサは、' modelRoot ' という名前のディレクティブをサポートしていません。変換は実行されません。**
 
-     この場合、ディレクティブ呼び出しに無効なディレクティブ名が含まれています。 ディレクティブ名として `modelRoot` が指定されましたが、正しいディレクティブ名が `DebuggingTestLanguage`。
+     この場合、ディレクティブ呼び出しに無効なディレクティブ名が含まれています。 ディレクティブ名としてを指定しましたが、 `modelRoot` 正しいディレクティブ名は `DebuggingTestLanguage` です。
 
-3. **[エラー一覧]** ウィンドウでエラーをダブルクリックして、コードに移動します。
+3. [ **エラー一覧** ] ウィンドウでエラーをダブルクリックして、コードに移動します。
 
-4. コードを修正するには、ディレクティブ名を `DebuggingTestLanguage` に変更します。
+4. コードを修正するには、ディレクティブ名をに変更し `DebuggingTestLanguage` ます。
 
      変更が強調表示されます。
 
@@ -113,9 +113,9 @@ ms.locfileid: "72659269"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+5. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 **[エラー一覧]** ウィンドウにエラーは表示されません。
+     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 [ **エラー一覧** ] ウィンドウにエラーは表示されません。
 
 #### <a name="to-debug-an-incorrect-property-name"></a>不適切なプロパティ名をデバッグするには
 
@@ -155,19 +155,19 @@ ms.locfileid: "72659269"
     #>
     ```
 
-2. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+2. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     **[エラー一覧]** ウィンドウが表示され、次のいずれかのエラーが表示されます。
+     [ **エラー一覧** ] ウィンドウが表示され、次のいずれかのエラーが表示されます。
 
      (C#)
 
-     **変換のコンパイル: VisualStudio \<GUID >。指定された Texttransformation ' に ' Examplemodel.store ' の定義が含まれていません**
+     **変換のコンパイル: VisualStudio \<GUID> 。指定された Texttransformation ' に ' Examplemodel.store ' の定義が含まれていません**
 
      (Visual Basic)
 
-     **変換のコンパイル: ' Examplemodel.store ' は、' VisualStudio \<GUID > のメンバーではありません。Texttransformation ' があります。**
+     **変換をコンパイルしています: ' Examplemodel.store ' は ' VisualStudio のメンバーではありません \<GUID> 。Texttransformation ' があります。**
 
-     この場合、テキストテンプレートコードに無効なプロパティ名が含まれています。 プロパティ名として `ExampleModel` が指定されましたが、正しいプロパティ名が `LibraryModel`。 次のコードに示すように、[提供] パラメーターで正しいプロパティ名を見つけることができます。
+     この場合、テキストテンプレートコードに無効なプロパティ名が含まれています。 プロパティ名としてが指定されてい `ExampleModel` ますが、正しいプロパティ名が `LibraryModel` です。 次のコードに示すように、[提供] パラメーターで正しいプロパティ名を見つけることができます。
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -175,7 +175,7 @@ ms.locfileid: "72659269"
 
 3. [エラー一覧] ウィンドウでエラーをダブルクリックして、コードに移動します。
 
-4. コードを修正するには、テキストテンプレートコードでプロパティ名を `LibraryModel` に変更します。
+4. コードを修正するには、テキストテンプレートコードでプロパティ名をに変更し `LibraryModel` ます。
 
      変更が強調表示されます。
 
@@ -210,6 +210,6 @@ ms.locfileid: "72659269"
     #>
     ```
 
-5. **ソリューションエクスプローラー**で、DebugTest.tt を右クリックし、**カスタムツールの実行** をクリックします。
+5. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
-     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 **[エラー一覧]** ウィンドウにエラーは表示されません。
+     これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 [ **エラー一覧** ] ウィンドウにエラーは表示されません。

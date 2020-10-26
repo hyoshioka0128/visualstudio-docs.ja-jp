@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691700"
 ---
 # <a name="performance-rules-by-id"></a>ID 別のパフォーマンス規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-警告|説明|  
+警告|[説明]|  
 |-------------|-----------------|  
-|[DA0001: 連結には StringBuilder を使用してください](../profiling/da0001-use-stringbuilder-for-concatenations.md)|System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。|  
+|[DA0001: StringBuilder を使用して連結してください](../profiling/da0001-use-stringbuilder-for-concatenations.md)|System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。|  
 |[DA0002: VSPerfCorProf.dll がありません](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|プロファイラーは、プロファイリング実行中、VSPerfCorProf.dll を見つけることができませんでした。 プロファイラー データを集めるためのコマンドライン ツールが VSPerfCLREnv.cmd ツールで必要な環境変数を初期化することなく使用されたとき、この警告が発生します。|  
 |[DA0003: カーネル サンプルが多数存在します](../profiling/da0003-many-kernel-samples.md)|アプリケーションに対して集められた呼び出し履歴の大部分がカーネル モードで実行されています。 別のプロファイリング方法でアプリケーションをプロファイリングすることを検討してください。|  
 |[DA0004: プロセッサ使用率が高くなっています](../profiling/da0004-high-processor-usage.md)|プロセッサ (CPU) 使用率の大きな割合を、インストルメンテーション メソッドを使用して収集されたプロファイル データが占めていました。 CPU 主体のアプリケーションをプロファイリングするときは、サンプリング プロファイリング方式の使用を検討してください。|  
@@ -44,8 +44,8 @@ ms.locfileid: "65691700"
 |[DA0026: 過剰なカーネル CPU 処理時間](../profiling/da0026-excessive-kernel-cpu-time-processing.md)|カーネル モードで実行された CPU 時間の割合が、ユーザー モードで費やされた時間数を超えました。 カーネル モードの実行時間が長い原因を判断するために、プロファイリングを再度実行し、システム コール (syscalls) の数をサンプリングすることを検討してください。|  
 |[DA0029: サポートされていない CLR バージョンです](../profiling/da0029-unsupported-clr-version.md)|アプリケーションのプロファイリングを、プロファイリング ツールでサポートされていない .NET Framework version 1.1 を使用して実行しようとしています。|  
 |[DA0030: データベース プロジェクトの階層の相互作用の測定を収集します](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md)|<xref:System.Data> メソッドの呼び出しがプロファイル データの大きな割合を占めているため、プロファイリングの実行中に階層の相互作用データが収集されませんでした。 プロファイリングを再度実行し、階層の相互作用データを追加することを検討してください。|  
-|[DA0038: 高率のロック競合](../profiling/da0038-high-rate-of-lock-contentions.md)|プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に非常に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイル方法を使用して、プロファイリングを再度実行することを検討してください。|  
-|[DA0039: 非常に高率のロック競合](../profiling/da0039-very-high-rate-of-lock-contentions.md)|プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。|  
+|[DA0038: 高率: ロックの競合率が高くなっています](../profiling/da0038-high-rate-of-lock-contentions.md)|プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に非常に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイル方法を使用して、プロファイリングを再度実行することを検討してください。|  
+|[DA0039: 非常に高率のロック競合](../profiling/da0039-very-high-rate-of-lock-contentions.md)|プロファイル データを使用して収集したシステム パフォーマンス データは、アプリケーションの実行中に極端に高率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。|  
 |[DA0501: プロセスによる平均 CPU 使用量をプロファイリングしています。](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md)|このメッセージにより、アプリケーションの命令の実行中にプロセッサがビジー状態になった時間がパーセントで報告されます。 プロファイリング中のプロセスがアクティブな状態にあるすべての測定間隔を通じて取得された値の平均値が、このメッセージによって報告されます。 複数のプロセッサが搭載されたコンピューターの場合、100% を超える値になる可能性があります。|  
 |[DA0502: プロセスによる最大 CPU 使用量をプロファイリングしています](../profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled.md)|このメッセージにより、アプリケーションの命令の実行中にプロセッサがビジー状態になった最大時間がパーセントで報告されます。 プロファイリング中のプロセスがアクティブな状態にあるすべての測定間隔を通じて取得された値のうち、最も大きな値がこのメッセージによって報告されます。 複数のプロセッサが搭載されたコンピューターの場合、パーセントが 100% を超える可能性があります。|  
 |[DA0503: プロセスのワーキング セット平均バイト数がプロファイリングされています](../profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled.md)|このメッセージにより、プロセスが現在使用している物理メモリ量 (ワーキング セット) の平均がバイト単位で報告されます。 プロセスのワーキング セットは、物理メモリに現在常駐しているプロセス アドレス空間のページを表します。|  

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79300877"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313745"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>手順 2: ビューおよびページ テンプレートを使用して Flask アプリを作成する
 
@@ -98,7 +98,7 @@ ms.locfileid: "79300877"
 
     ![Visual Studio ステータス バーにあるソース管理の変更ボタン](media/flask/step02-source-control-changes-button.png)
 
-1. **チーム エクスプローラー**で "Refactor code" などのコミット メッセージを入力し、 **[すべてコミット]** を選択します。 コミットが完了すると、" **\<hash> のコミットがローカルで作成されました。変更をサーバーと共有するには、同期を使用してください。** " というメッセージが表示されます。 リモート リポジトリに変更をプッシュする場合は、 **[同期]** を選択して、 **[出力方向のコミット]** にある **[プッシュ]** を選択します。 リモートにプッシュする前に、複数のローカル コミットを蓄積しておくことも可能です。
+1. **チーム エクスプローラー**で "Refactor code" などのコミット メッセージを入力し、 **[すべてコミット]** を選択します。 コミットが完了したら、" **\<hash> のコミットがローカルで作成されました。変更をサーバーと共有するには、同期を使用してください。** " というメッセージが表示されます。 リモート リポジトリに変更をプッシュする場合は、 **[同期]** を選択して、 **[出力方向のコミット]** にある **[プッシュ]** を選択します。 リモートにプッシュする前に、複数のローカル コミットを蓄積しておくことも可能です。
 
     ![チーム エクスプローラーでリモートにコミットをプッシュする](media/flask/step02-source-control-push-to-remote.png)
 

@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903710"
 ---
 # <a name="open-a-dynamic-tool-window"></a>動的ツールウィンドウを開く
-ツールウィンドウは、通常、メニューのコマンドから、または同等のキーボードショートカットによって開かれます。 ただし、特定の UI コンテキストが適用されるたびに表示されるツールウィンドウが必要になる場合があり、UI コンテキストが適用されなくなると、が終了します。 これらの種類のツールウィンドウは、*動的*または*自動で表示*されます。
+ツールウィンドウは、通常、メニューのコマンドから、または同等のキーボードショートカットによって開かれます。 ただし、特定の UI コンテキストが適用されるたびに表示されるツールウィンドウが必要になる場合があり、UI コンテキストが適用されなくなると、が終了します。 これらの種類のツールウィンドウは、 *動的* または *自動で表示*されます。
 
 > [!NOTE]
 > 定義済みの UI コンテキストの一覧については、「」を参照してください <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> 。
 
- 起動時に動的ツールウィンドウを開き、作成が失敗する可能性がある場合は、インターフェイスを実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> し、メソッドでエラー条件をテストする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> ます。 起動時に開く必要がある動的なツールウィンドウがあることをシェルが認識できるようにするには、 `SupportsDynamicToolOwner` パッケージ登録に値 (1 に設定) を追加する必要があります。 この値は標準の一部ではない <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> ため、カスタム属性を作成して追加する必要があります。 カスタム属性の詳細については、「[カスタム登録属性を使用して拡張機能を登録する](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension)」を参照してください。
+ 起動時に動的ツールウィンドウを開き、作成が失敗する可能性がある場合は、インターフェイスを実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> し、メソッドでエラー条件をテストする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> ます。 起動時に開く必要がある動的なツールウィンドウがあることをシェルが認識できるようにするには、 `SupportsDynamicToolOwner` パッケージ登録に値 (1 に設定) を追加する必要があります。 この値は標準の一部ではない <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> ため、カスタム属性を作成して追加する必要があります。 カスタム属性の詳細については、「 [カスタム登録属性を使用して拡張機能を登録する](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension)」を参照してください。
 
  <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>ツールウィンドウを開くには、を使用します。 必要に応じて、ツールウィンドウが作成されます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "85903710"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>動的ツールウィンドウを開くには
 
-1. **DynamicToolWindow**という名前の VSIX プロジェクトを作成し、 *DynamicWindowPane.cs*という名前のツールウィンドウ項目テンプレートを追加します。 詳細については、「[ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
+1. **DynamicToolWindow**という名前の VSIX プロジェクトを作成し、 *DynamicWindowPane.cs*という名前のツールウィンドウ項目テンプレートを追加します。 詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
 
 2. *DynamicWindowPanePackage.cs*ファイルで、DynamicWindowPanePackage 宣言を見つけます。 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ツールウィンドウを登録するには、属性と属性を追加します。
 

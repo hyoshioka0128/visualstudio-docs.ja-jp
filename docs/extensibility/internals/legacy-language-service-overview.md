@@ -1,5 +1,5 @@
 ---
-title: レガシー言語サービスの概要 |マイクロソフトドキュメント
+title: 従来の言語サービスの概要 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,51 +11,51 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707356"
 ---
 # <a name="legacy-language-service-overview"></a>従来の言語サービスの概要
-言語サービスは、特定[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]の機能を実装できるエディター サポートを提供します。 管理パッケージ フレームワーク (MPF) 言語サービス クラスは、頻繁に使用される機能の完全なサポートと、他の機能の部分的なサポートを提供します。
+言語サービスでは、特定の機能を実装できるエディターのサポートが提供され [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 Managed Package Framework (MPF) 言語サービスクラスは、頻繁に使用される機能とその他の機能の部分的なサポートを完全にサポートしています。
 
-## <a name="fully-supported-features-in-the-mpf"></a>MPF で完全にサポートされる機能
- MPF 言語サービス・クラスは、以下の機能をサポートします。
+## <a name="fully-supported-features-in-the-mpf"></a>MPF で完全にサポートされている機能
+ MPF 言語サービスクラスは、次の機能をサポートしています。
 
 - 構文の強調表示
 
 - アウトライン
 
-- コードブロックのコメント
+- コードブロックのコメント化
 
 - かっこの一致
 
 - コード スニペット
 
-- カスタム ドキュメント プロパティ
+- カスタムドキュメントのプロパティ
 
-- パラメーター情報
+- IntelliSense のパラメーター情報
 
-- インテリセンス クイック ヒント
+- IntelliSense のクイックヒント
 
-- インテリセンス メンバーの完了
+- IntelliSense メンバーの完了
 
-- インテッリセンス語の単語補完
+- IntelliSense の単語入力候補
 
-## <a name="partially-supported-features-in-the-mpf"></a>MPF で部分的にサポートされる機能
- MPF は、以下の機能の部分的なサポートのみを提供します。 つまり、MPF によって呼び出されるメソッドを実装する必要があります。
+## <a name="partially-supported-features-in-the-mpf"></a>MPF で部分的にサポートされている機能
+ MPF では、次の機能の一部のみがサポートされています。 これは、MPF によって呼び出されるメソッドを実装する必要があることを意味します。
 
-- コードの再フォーマット。 再フォーマットを実装するコードを指定します。
+- コードを再フォーマットします。 再フォーマットを実装するコードを指定します。
 
-- 有効なコード範囲を識別することによって、ブレークポイントを検証します。 コード範囲を識別するコードを指定します。
+- 有効なコード範囲を識別してブレークポイントを検証します。 コードの範囲を識別するコードを指定します。
 
-- デバッガーの**自動変数を**表示するためのウィンドウをサポートします。 ウィンドウに表示する内容を決定するコードを指定します。
+- 変数を表示するためのデバッガーの [ **自動** 変数] ウィンドウのサポート。 ウィンドウに表示する内容を決定するコードを指定します。
 
-- 型とメンバー間をすばやくナビゲーションするための**ナビゲーション バー**をサポートします。 実装し、**ナビゲーション バー**のコンボ ボックスのリストを設定するヘルパー クラスを返します。
+- 型とメンバーの間をすばやく移動するための **ナビゲーションバー** のサポート。 を実装し、 **ナビゲーションバー** のコンボボックスにリストを設定するヘルパークラスを返します。
 
 ## <a name="implementation"></a>実装
- 言語サービス自体と、使用する言語に対応する言語サービス機能を実装するには、いくつかの手順を実行する必要があります。 これらの手順については、次のトピックで説明します。
+ 言語サービス自体と言語をサポートする言語サービス機能を実装するには、いくつかの手順を実行する必要があります。 これらの手順については、次のトピックで説明します。
 
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 

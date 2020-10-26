@@ -1,5 +1,7 @@
 ---
-title: 有効にエディットオフロケーションフィールド要素 (ビジュアル スタジオ テンプレート) |マイクロソフトドキュメント
+title: EnableEditOfLocationField 要素 (Visual Studio テンプレート)
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,17 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80712001"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037407"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>要素を有効にします。
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 要素 (Visual Studio テンプレート)
 ユーザーが [場所] フィールドを編集できるかどうかを指定します。
 
- \<\<>テンプレートデータ>\<有効にして、フィールド>編集
+ \<VSTemplate> \<TemplateData>
+ \<EnableEditOfLocationField>
 
 ## <a name="syntax"></a>構文
 
@@ -33,10 +36,10 @@ ms.locfileid: "80712001"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- None
+ なし
 
 ### <a name="child-elements"></a>子要素
- None
+ なし
 
 ### <a name="parent-elements"></a>親要素
 
@@ -47,12 +50,12 @@ ms.locfileid: "80712001"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、 または`true``false`のいずれかで、ユーザーが **[新しいプロジェクト**] ダイアログ ボックスの **[場所**] テキスト ボックスを編集できるかどうかを示す必要があります。
+ テキストはまたはである必要があります。これは、ユーザーが [ `true` `false` **新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスを編集できるかどうかを示します。
 
-## <a name="remarks"></a>Remarks
- `EnableEditOfLocationField` は省略可能な要素です。 既定値は`true`、 ユーザーが [**新しいプロジェクト**] ダイアログ ボックスの [**場所**] テキスト ボックスの値を編集できるようにするです。
+## <a name="remarks"></a>注釈
+ `EnableEditOfLocationField` は省略可能な要素です。 既定値は `true` で、ユーザーは [**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスで値を編集できます。
 
- [**新しいプロジェクト**] ダイアログ ボックスの [**場所**] テキスト ボックスに、新しいプロジェクトを保存するディレクトリを指定します。
+ [ **新しいプロジェクト** ] ダイアログボックスの [ **場所** ] テキストボックスで、新しいプロジェクトを保存するディレクトリを指定します。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows アプリケーションでのメタデータの例を次に示します。
@@ -84,5 +87,5 @@ ms.locfileid: "80712001"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

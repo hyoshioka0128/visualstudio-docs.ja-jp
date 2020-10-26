@@ -1,5 +1,5 @@
 ---
-title: コマンド名要素 |マイクロソフトドキュメント
+title: CommandName 要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739752"
 ---
-# <a name="commandname-element"></a>コマンド名要素
-この`CommandName`要素は、[**オプション]** ダイアログ ボックスのキーボード カテゴリと、[**ユーザー設定**] ダイアログ ボックスの **[コマンド**] ボックスに表示されるテキストを指定します。
+# <a name="commandname-element"></a>CommandName 要素
+要素は、[ `CommandName` **オプション**] ダイアログボックスの [キーボード] カテゴリに表示されるテキストと、[**カスタマイズ**] ダイアログボックスの [**コマンド**] ボックスの一覧に表示されるテキストを指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,16 +31,16 @@ ms.locfileid: "80739752"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[文字列要素](../extensibility/strings-element.md)|や などの`ButtonText`テキスト要素を`CommandName`グループ化します。|
+|[Strings 要素](../extensibility/strings-element.md)|やなどのテキスト要素をグループ化し `ButtonText` `CommandName` ます。|
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

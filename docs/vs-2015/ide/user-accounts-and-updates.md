@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547616"
 ---
 # <a name="user-accounts-and-updates"></a>ユーザー アカウントと更新プログラム
@@ -21,7 +21,7 @@ ms.locfileid: "85547616"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!WARNING]
-> Visual Studio 2015 は、条件付きアクセス用に構成されているリソースにアクセスできません。 これらのリソースを操作するには、Visual Studio 2019 バージョン16.6 以降にアップグレードし、 [multi-factor authentication を必要とするアカウントで Visual studio を使用する方法](../../ide/work-with-multi-factor-authentication.md)に関するガイダンスに従ってください。
+> Visual Studio 2015 は、条件付きアクセス用に構成されているリソースにアクセスできません。 これらのリソースを操作するには、Visual Studio 2019 バージョン16.6 以降にアップグレードし、 [multi-factor authentication を必要とするアカウントで Visual studio を使用する方法](../../ide/work-with-multi-factor-authentication.md) に関するガイダンスに従ってください。
 
 Visual Studio 自体は、接続環境です。 サインインすると、ユーザー アカウントだけでなく、そのアカウントにリンクされているすべてのアカウントに関連付けられているすべてのサービスにアクセスできるようになります。 Visual Studio を使用するどの場所にでも、アカウントの設定はユーザーと共に移動します。 個々のユーザーの特定の Visual Studio インスタンスにアクセス許可のレベルを構成することができます。 また、SDK などのインストールのコンポーネントに使用可能な更新プログラムがあった場合、Visual Studio はユーザーに通知します。
 

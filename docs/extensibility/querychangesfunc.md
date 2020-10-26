@@ -1,5 +1,5 @@
 ---
-title: クエリチェンジFUNC |マイクロソフトドキュメント
+title: QUERYて FUNC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701634"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-これは、ファイル名のコレクションを列挙し、各ファイルの状態を決定するために[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作によって使用されるコールバック関数です。
+これは、ファイル名のコレクションを列挙し、各ファイルの状態を特定するために [Sccquerychanges](../extensibility/sccquerychanges-function.md) 操作によって使用されるコールバック関数です。
 
- この`SccQueryChanges`関数には、ファイルのリストとコールバックへのポインタが`QUERYCHANGESFUNC`与えられます。 ソース管理プラグインは、指定されたリストを列挙し、一覧内の各ファイルの状態を (このコールバックを介して) 提供します。
+ `SccQueryChanges`関数には、ファイルの一覧とコールバックへのポインターが指定されてい `QUERYCHANGESFUNC` ます。 ソース管理プラグインは、指定されたリストを列挙し、リスト内の各ファイルについて (このコールバックによって) 状態を提供します。
 
 ## <a name="signature"></a>署名
 
@@ -35,25 +35,25 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ```
 
 ## <a name="parameters"></a>パラメーター
- 呼び出し元データ
+ pvCallerData
 
-[in]呼`pvCallerData`び出し元 (IDE) から[SccQueryChanges](../extensibility/sccquerychanges-function.md)に渡されるパラメータ。 ソース管理プラグインは、この値の内容について想定しないでください。
+から `pvCallerData` 呼び出し元 (IDE) によって [Sccquerychanges](../extensibility/sccquerychanges-function.md)によって渡されるパラメーター。 ソース管理プラグインは、この値の内容についての想定を行いません。
 
- データを変更します。
+ Pにデータを
 
-[in]ファイルへの変更を記述する[QUERYCHANGESDATA 構造体](#LinkQUERYCHANGESDATA)構造体へのポインター。
+からファイルへの変更を記述する [querychanges データ構造](#LinkQUERYCHANGESDATA) 体へのポインター。
 
 ## <a name="return-value"></a>戻り値
- IDE は、適切なエラー コードを返します。
+ IDE から適切なエラーコードが返されます。
 
-|[値]|説明|
+|値|[説明]|
 |-----------|-----------------|
 |SCC_OK|処理し続けます。|
 |SCC_I_OPERATIONCANCELED|処理を停止します。|
-|SCC_E_xxx|適切な SCC エラーは処理を停止する必要があります。|
+|SCC_E_xxx|適切な SCC エラーが発生すると処理が停止します。|
 
-## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a>クエリの変更データ構造
- 各ファイルに渡される構造体は、次のようになります。
+## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> QUERYのデータ構造
+ 各ファイルに渡される構造は、次のようになります。
 
 ```cpp
 struct QUERYCHANGESDATA_A
@@ -75,26 +75,26 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- dwSize この構造体のサイズ (バイト単位)。
+ この構造体の dwSize サイズ (バイト単位)。
 
- この項目の元のファイル名。
+ lpFileName この項目の元のファイル名。
 
- dwChangeType ファイルの状態を示すコード:
+ ファイルの状態を示す dwChangeType コード:
 
 |コード|説明|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|何が変わったのか分からず|
-|`SCC_CHANGE_UNCHANGED`|このファイルの名前は変更されません。|
-|`SCC_CHANGE_DIFFERENT`|異なる ID を持つファイルが、データベースに同じ名前が存在します。|
-|`SCC_CHANGE_NONEXISTENT`|ファイルはデータベースまたはローカルに存在しません。|
-|`SCC_CHANGE_DATABASE_DELETED`|データベース内のファイルが削除されました。|
-|`SCC_CHANGE_LOCAL_DELETED`|ファイルはローカルで削除されますが、ファイルはデータベースに残っています。 これが特定できない場合は、`SCC_CHANGE_DATABASE_ADDED`を返します。|
-|`SCC_CHANGE_DATABASE_ADDED`|データベースに追加されたファイルがローカルに存在しません。|
-|`SCC_CHANGE_LOCAL_ADDED`|ファイルはデータベースに存在せず、新しいローカル ファイルです。|
-|`SCC_CHANGE_RENAMED_TO`|データベース内で ファイル名が変更`lpLatestName`または移動されたファイルは、 です。|
-|`SCC_CHANGE_RENAMED_FROM`|データベース内で名前が変更されたか`lpLatestName`、データベース内で移動されたファイル 。この値が高すぎて追跡が行き過ぎた場合は、`SCC_CHANGE_DATABASE_ADDED`などの別のフラグを返します。|
+|`SCC_CHANGE_UNKNOWN`|変更内容を識別できません。|
+|`SCC_CHANGE_UNCHANGED`|このファイルの名前を変更することはできません。|
+|`SCC_CHANGE_DIFFERENT`|ファイルの id が異なりますが、同じ名前がデータベース内に存在します。|
+|`SCC_CHANGE_NONEXISTENT`|ファイルがデータベースまたはローカルに存在しません。|
+|`SCC_CHANGE_DATABASE_DELETED`|ファイルがデータベースで削除されました。|
+|`SCC_CHANGE_LOCAL_DELETED`|ファイルはローカルで削除されましたが、ファイルはデータベースにまだ存在します。 これを特定できない場合は、を返し `SCC_CHANGE_DATABASE_ADDED` ます。|
+|`SCC_CHANGE_DATABASE_ADDED`|ファイルはデータベースに追加されましたが、ローカルには存在しません。|
+|`SCC_CHANGE_LOCAL_ADDED`|ファイルがデータベースに存在せず、新しいローカルファイルです。|
+|`SCC_CHANGE_RENAMED_TO`|ファイル名が変更されたか、データベースでとして移動されました `lpLatestName` 。|
+|`SCC_CHANGE_RENAMED_FROM`|データベース内のファイルの名前が変更または移動されまし `lpLatestName` た。この値を追跡するにはコストがかかりすぎる場合は、などの別のフラグを返し `SCC_CHANGE_DATABASE_ADDED` ます。|
 
- この項目の現在のファイル名です。
+ lpLatestName この項目の現在のファイル名を指定します。
 
 ## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 726cde42eb08ee5508481887fae2e9d2b059256c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543872"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:メソッドの結果を無視しない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
@@ -52,7 +52,7 @@ ms.locfileid: "85543872"
 
  メソッド A がメソッド B を呼び出しますが、メソッド B が返す新しい文字列インスタンスを使用しない場合。 インスタンスを引数として別のメソッドに渡し、インスタンスを変数に代入します。 不要な場合は、呼び出しを削除します。
 
- \- または -
+ - または -
 
  メソッド A がメソッド B を呼び出しても、メソッドが返す HRESULT またはエラーコードを使用しない場合。 条件付きステートメントで結果を使用するか、変数に結果を代入するか、または別のメソッドに引数として渡します。
 

@@ -1,5 +1,5 @@
 ---
-title: エヴァルフェッス90 |マイクロソフトドキュメント
+title: EVALFLAGS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737106"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-式の評価を制御するフラグの有効な値を列挙します。 この列挙体は[、EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体を拡張します。
+式の評価を制御するフラグの有効な値を列挙します。 この列挙体は、 [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙体を拡張します。
 
 ## <a name="syntax"></a>構文
 
@@ -66,25 +66,25 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>フィールド
 `EVAL90_RETURNVALUE`\
-戻り値がある場合は評価されることを指定します。
+戻り値 (存在する場合) を評価することを指定します。
 
 `EVAL90_NOSIDEEFFECTS`\
 副作用を許可しないことを指定します。
 
 `EVAL90_ALLOWBPS`\
-ブレークポイントで停止を指定します。
+ブレークポイントでの停止を指定します。
 
 `EVAL90_ALLOWERRORREPORT`\
-許可するホストへのエラー報告を指定します。 主に、Internet Explorer のスクリプトで式の評価に使用されます。
+ホストへのエラー報告を許可することを指定します。 Internet Explorer のスクリプトでの式の評価に主に使用されます。
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-関数を呼び出すのではなく、関数をアドレスとして評価するように強制します。
+関数を呼び出す代わりに、関数をアドレスとして強制的に評価します。
 
 `EVAL90_NOFUNCEVAL`\
-関数が評価されないようにします。 たとえば、 式`int``myExpression(int) + 10`のトークンを考えてみましょう。 この関数は、アドレスとして正しく評価できますが、値としては評価できません。
+関数が評価されないようにします。 たとえば、式に含まれるトークンを考えてみ `int` `myExpression(int) + 10` ます。 この関数は、アドレスとして正しく評価されますが、値としては評価できません。
 
 `EVAL90_NOEVENTS`\
-式の評価中に発生したイベントをセッションデバッグ マネージャー (SDM) または IDE に送信しないことを示すフラグ。
+式の評価中に発生したイベントをセッションデバッグマネージャー (SDM) または IDE に送信しないことを示すフラグ。
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
 デザイン時の式の評価を有効にします。
@@ -93,14 +93,14 @@ public enum enum_EVALFLAGS90
 暗黙的な変数の作成を許可します。
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-強制的に評価を即時に行います。 これは、ユーザー要求などの要求を処理する場合に便利です。
+強制的に評価を直ちに実行します。 これは、ユーザー要求などの要求を処理する場合に便利です。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: Msdbg90.h
+ヘッダー: Msdbg90
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

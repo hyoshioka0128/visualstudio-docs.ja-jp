@@ -1,5 +1,5 @@
 ---
-title: クエリを実行します。マイクロソフトドキュメント
+title: IDebugCustomAttributeQuery |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 598db5ad711c8b61339e188311c1a437a24d013c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732610"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
-メソッドまたは型のカスタム属性のクエリを表します。
+メソッドまたは型のカスタム属性に対するクエリを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -31,12 +31,12 @@ IDebugCustomAttributeQuery : IUnknown
 
 |Method|説明|
 |------------|-----------------|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|指定した名前のカスタム属性を取得します。|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|指定したカスタム属性が定義されていることを判断します。|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|名前を指定して、カスタム属性を取得します。|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|指定されたカスタム属性が定義されているかどうかを判断します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: Sh.h
+ ヘッダー: Sh. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

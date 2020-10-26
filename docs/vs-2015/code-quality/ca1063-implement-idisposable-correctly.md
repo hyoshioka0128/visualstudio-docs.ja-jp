@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 04691d2344b232906676180122ad67fff5405891
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539361"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
@@ -33,7 +33,7 @@ ms.locfileid: "85539361"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- `IDisposable`が正しく実装されていません。 この問題の原因をいくつか次に示します。
+ `IDisposable` が正しく実装されていません。 この問題の原因をいくつか次に示します。
 
 - IDisposable はクラスで再実装されます。
 

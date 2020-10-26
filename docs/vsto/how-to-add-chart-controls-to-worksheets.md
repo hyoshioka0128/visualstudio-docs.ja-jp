@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546238"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>方法: ワークシートにグラフコントロールを追加する
@@ -35,28 +35,28 @@ ms.locfileid: "85546238"
 
   コントロールの詳細について <xref:Microsoft.Office.Tools.Excel.Chart> は、「 [Chart コントロール](../vsto/chart-control.md)」を参照してください。
 
-## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a>デザイン時にグラフコントロールを追加する
+## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a> デザイン時にグラフコントロールを追加する
  アプリケーションの中からグラフを追加するのと同じ方法で、ワークシートに <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加できます。
 
 > [!NOTE]
-> コントロールは、 <xref:Microsoft.Office.Tools.Excel.Chart> **ツールボックス**または [**データソース**] ウィンドウからは使用できません。
+> コントロールは、 <xref:Microsoft.Office.Tools.Excel.Chart> **ツールボックス** または [ **データソース** ] ウィンドウからは使用できません。
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Excel のワークシートに Chart ホスト コントロールを追加するには
 
-1. [**挿入**] タブの [**グラフ**] グループで、[**列**] をクリックし、グラフのカテゴリをクリックして、目的のグラフの種類をクリックします。
+1. [ **挿入** ] タブの [ **グラフ** ] グループで、[ **列**] をクリックし、グラフのカテゴリをクリックして、目的のグラフの種類をクリックします。
 
-2. [**グラフの挿入**] ダイアログボックスで、[ **OK]** をクリックします。
+2. [ **グラフの挿入** ] ダイアログボックスで、[ **OK]** をクリックします。
 
-3. [**デザイン**] タブの [**データ**] グループで、[**データの選択**] をクリックします。
+3. [ **デザイン** ] タブの [ **データ** ] グループで、[ **データの選択**] をクリックします。
 
 4. [**データソースの選択**] ダイアログボックスで、[**グラフ****データの範囲**] ボックスをクリックし、既定の選択をオフにします。
 
-5. グラフシート**のデータ**で、グラフのデータを含むセルの範囲を選択します (セル**A5** ~ **D8**)。
+5. グラフシート **のデータ** で、グラフのデータを含むセルの範囲を選択します (セル **A5** ~ **D8**)。
 
-6. [**データソースの選択**] ダイアログボックスで、[ **OK**] をクリックします。
+6. [ **データソースの選択** ] ダイアログボックスで、[ **OK**] をクリックします。
 
-## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>実行時にドキュメントレベルのプロジェクトにグラフコントロールを追加する
- 実行時に <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを動的に追加できます。 動的に作成したグラフは、ドキュメントを閉じるとホスト コントロールとしてドキュメントに保持されません。 詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> 実行時にドキュメントレベルのプロジェクトにグラフコントロールを追加する
+ 実行時に <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを動的に追加できます。 動的に作成したグラフは、ドキュメントを閉じるとホスト コントロールとしてドキュメントに保持されません。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>プログラムを使用してワークシートに Chart コントロールを追加するには
 
@@ -65,10 +65,10 @@ ms.locfileid: "85546238"
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>実行時に VSTO アドインプロジェクトにグラフコントロールを追加する
+## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 実行時に VSTO アドインプロジェクトにグラフコントロールを追加する
  プログラムを使用して <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを VSTO アドイン プロジェクトの任意の開いているワークシートに追加できます。 詳細については、「 [VSTO アドインでの実行時の Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
- 動的に作成されたグラフ コントロールは、ワークシートを閉じるとホスト コントロールとしてワークシートに保持されません。 詳細については、「[実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+ 動的に作成されたグラフ コントロールは、ワークシートを閉じるとホスト コントロールとしてワークシートに保持されません。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>プログラムを使用してワークシートに Chart コントロールを追加するには
 

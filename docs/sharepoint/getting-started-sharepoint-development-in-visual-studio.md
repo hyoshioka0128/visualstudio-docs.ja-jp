@@ -1,5 +1,5 @@
 ---
-title: はじめに (Visual Studio での SharePoint 開発) |Microsoft Docs
+title: はじめに (Visual Studio での SharePoint 開発) | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 999a23f8765a72feb22822120a11e1b38b9ac946
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017095"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>はじめに (Visual Studio での SharePoint 開発)
@@ -39,20 +40,20 @@ ms.locfileid: "86017095"
 |-----------|-----------------|
 |[SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]での SharePoint 開発について説明します。|
 |[SharePoint の全般的な開発環境をセットアップする](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|SharePoint ソリューションを作成するために必要なインストールについて説明します。|
-|[SharePoint のサイト列、コンテンツタイプ、およびリストの作成](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|SharePoint 開発用の Visual Studio ツールを使用して、SharePoint 用のカスタムのサイト列、コンテンツ タイプ、およびリストを作成する方法について説明します。|
-|[SharePoint ワークフローソリューションの作成](../sharepoint/creating-sharepoint-workflow-solutions.md)|ワークフローのデザインおよび開発について説明します。|
-|[SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)|Business Data Connectivity (BDC) モデルに接続してビジネス データを統合する方法を説明します。|
-|[SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)|SharePoint サイト上のページのビルド ブロックである Web パーツと Web パーツ ページについて説明します。|
-|[SharePoint のアプリケーションページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)|デザイナーを使用してアプリケーション ページをデザインする方法について説明します。|
-|[Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint でアプリケーション ページおよび Web パーツに使用できる再利用可能なカスタム コントロールの作成方法を説明します。|
-|[サーバーエクスプローラーを使用した SharePoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Visual Studio のツール ウィンドウで SharePoint サイトのコンポーネントを参照する方法について説明します。|
-|[SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)|SharePoint ソリューションをビルドおよびデバッグする方法について説明します。|
-|[SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|SharePoint ソリューションをパッケージ化して配置する方法について説明します。|
+|[SharePoint のサイト列、コンテンツ タイプ、リストの作成](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|SharePoint 開発用の Visual Studio ツールを使用して、SharePoint 用のカスタムのサイト列、コンテンツ タイプ、およびリストを作成する方法について説明します。|
+|[SharePoint ワークフロー ソリューションの作成](../sharepoint/creating-sharepoint-workflow-solutions.md)|ワークフローのデザインおよび開発について説明します。|
+|[SharePoint へのビジネス データの統合](../sharepoint/integrating-business-data-into-sharepoint.md)|Business Data Connectivity (BDC) モデルに接続してビジネス データを統合する方法を説明します。|
+|[SharePoint の Web パーツを作成する](../sharepoint/creating-web-parts-for-sharepoint.md)|SharePoint サイト上のページのビルド ブロックである Web パーツと Web パーツ ページについて説明します。|
+|[SharePoint のアプリケーション ページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)|デザイナーを使用してアプリケーション ページをデザインする方法について説明します。|
+|[Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint でアプリケーション ページおよび Web パーツに使用できる再利用可能なカスタム コントロールの作成方法を説明します。|
+|[サーバー エクスプローラーを使用して SharePoint 接続を参照する](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Visual Studio のツール ウィンドウで SharePoint サイトのコンポーネントを参照する方法について説明します。|
+|[SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)|SharePoint ソリューションのビルドとデバッグを行う方法について説明します。|
+|[SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|SharePoint ソリューションのパッケージ化と配置を行う方法について説明します。|
 |[Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|SharePoint のツールを拡張して必要な機能を作成する方法について説明します。|
 
 ## <a name="see-also"></a>関連項目
 
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
-- [サーバーエクスプローラーを使用した SharePoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+- [サーバー エクスプローラーを使用して SharePoint 接続を参照する](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

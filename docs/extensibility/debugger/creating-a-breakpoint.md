@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903622"
 ---
 # <a name="create-a-breakpoint"></a>ブレークポイントの作成
@@ -31,7 +31,7 @@ ms.locfileid: "85903622"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    > **Canbind**は、ユーザーが [**ブレークポイント**] ウィンドウからブレークポイントを作成した場合にのみ呼び出されます。
+    > **Canbind** は、ユーザーが [ **ブレークポイント** ] ウィンドウからブレークポイントを作成した場合にのみ呼び出されます。
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 

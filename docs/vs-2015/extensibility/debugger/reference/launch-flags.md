@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f209ed773a72c3925661bd81ecfe2685408b3189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147465"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-デバッグの起動フラグを指定します。  
+デバッグ起動フラグを指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,29 +47,29 @@ public enum enum_LAUNCH_FLAGS { 
   
 ## <a name="members"></a>メンバー  
  LAUNCH_DEBUG  
- デバッグ プロセスを起動します。  
+ デバッグのプロセスを起動します。  
   
  LAUNCH_NODEBUG  
- デバッグを行わず、プロセスを起動します。  
+ デバッグせずにプロセスを起動します。  
   
  LAUNCH_ENABLE_ENC  
- 非推奨では使用しないでください。  
+ 非推奨です。使用しないでください。  
   
  LAUNCH_MERGE_ENV  
- プロセスを起動し、ホストを起動すると、環境をマージします。  
+ プロセスを起動し、環境を起動中のホストにマージします。  
   
-## <a name="remarks"></a>Remarks  
- これらの値が引数として渡される、 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ これらの値は、 [Launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) メソッドに引数として渡されます。  
   
- これらのフラグは、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

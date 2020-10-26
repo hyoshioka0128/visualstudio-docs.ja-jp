@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH |マイクロソフトドキュメント
+title: CODE_PATH |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737666"
 ---
 # <a name="code_path"></a>CODE_PATH
@@ -43,20 +43,20 @@ public struct CODE_PATH {
 
 ## <a name="members"></a>メンバー
 `bstrName`\
-コード パスの名前。
+コードパスの名前。
 
 `pCode`\
-コード内の関数のステップイン先を識別する[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)オブジェクト。
+関数にステップインするコード内の位置を識別する [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) オブジェクト。
 
-## <a name="remarks"></a>Remarks
-この構造体は、関数へのステップインを実装するために使用されます。 [デバッグ](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)中のプログラムの現在の場所からのすべての呼び出しを返します。 この構造体は、このような呼び出しの 1 つを表します。
+## <a name="remarks"></a>解説
+この構造体は、関数へのステップインを実装するために使用されます。 [Enumcodepaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) は、デバッグ中のプログラムの現在の場所からのすべての呼び出しを返します。 この構造体は、このような呼び出しの1つを表します。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

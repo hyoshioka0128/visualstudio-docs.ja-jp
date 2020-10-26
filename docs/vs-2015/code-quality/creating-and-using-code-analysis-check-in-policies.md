@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8e31ff799edc93d250eeeab57b349873a63ecf14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667713"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>コード分析を用いたチェックイン ポリシーの作成と使用
@@ -31,13 +31,13 @@ Team Foundation バージョン管理 (TFVC: Team Foundation Version Control) �
  [!INCLUDE[esprscc](../includes/esprscc-md.md)]のチーム プロジェクトの設定を使用して、コード分析を用いたチェックイン ポリシーを作成します。 チェックイン ポリシーはチーム プロジェクトに対して指定され、適用されますが、コード分析はローカルの開発用コンピューター上の各コード プロジェクトに対して構成され、実行されます。 このセクションでは、コード分析を用いたチェックイン ポリシーをチーム プロジェクト用に指定する方法と、カスタム コード分析ポリシーをマネージド コード用に実装する方法について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [方法: 標準のコード分析チェックインポリシーを作成または更新する](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)チームプロジェクトのコード分析ポリシーを設定および変更するために使用する手順について説明します。
+ [方法: 標準のコード分析チェックインポリシーを作成または更新する](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md) チームプロジェクトのコード分析ポリシーを設定および変更するために使用する手順について説明します。
 
- [マネージコード用のカスタムチェックインポリシーの実装](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)チームプロジェクトのチェックインポリシーのカスタム規則セットを作成し、チームプロジェクトのコードプロジェクトをチェックインポリシーと同期するために使用する手順について説明します。
+ [マネージコード用のカスタムチェックインポリシーの実装](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md) チームプロジェクトのチェックインポリシーのカスタム規則セットを作成し、チームプロジェクトのコードプロジェクトをチェックインポリシーと同期するために使用する手順について説明します。
 
- [コード分析チェックインポリシーのバージョンの互換性](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md)@No__t_1 のバージョン間のコード分析チェックイン互換性の問題について説明します。
+ [コード分析チェックインポリシーのバージョンの互換性](../code-quality/version-compatibility-for-code-analysis-check-in-policies.md) のバージョン間でのコード分析の互換性に関する問題について説明 [!INCLUDE[vstsLong](../includes/vstslong-md.md)] します。
 
- [方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)コード分析の名前付け規則で参照されているディクショナリに単語とトークンを追加する方法について説明します。
+ [方法: コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md) コード分析の名前付け規則で参照されているディクショナリに単語とトークンを追加する方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
  [品質ゲートの設定と適用](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)

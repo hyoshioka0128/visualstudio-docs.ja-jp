@@ -18,20 +18,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665851"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio のスタート ページのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio のスタート ページは、既定のさまざまな方法でカスタマイズできます。 **[プロジェクトを開く]** ダイアログ ボックスを表示することも、最後に読み込まれたソリューションを開くこともできます。 また、カスタム スタート ページを表示することもできます。これは、ツール ウィンドウで実行される Windows Presentation Foundation (WPF) の XAML ページで、Visual Studio 内のコマンドを実行できます。
+Visual Studio のスタート ページは、既定のさまざまな方法でカスタマイズできます。**[プロジェクトを開く]** ダイアログ ボックスを表示することも、最後に読み込まれたソリューションを開くこともできます。 また、カスタム スタート ページを表示することもできます。これは、ツール ウィンドウで実行される Windows Presentation Foundation (WPF) の XAML ページで、Visual Studio 内のコマンドを実行できます。
 
 ## <a name="customizing-the-default-start-page"></a>既定のスタート ページのカスタマイズ
 
-1. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
+1. メニューバーで、[ **ツール**]、[ **オプション**] の順に選択します。
 
 2. **[環境]** を展開し、 **[スタートアップ]** を選びます。
 
@@ -52,14 +52,14 @@ Visual Studio のスタート ページは、既定のさまざまな方法で�
 
          「[Creating Your Own Start Page (独自のスタート ページの作成)](../misc/creating-your-own-start-page.md)」をご覧ください。
 
-2. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
+2. メニューバーで、[ **ツール**]、[ **オプション**] の順に選択します。
 
-3. **[環境]** を展開し、 **[スタートアップ]** を選びます。
+3. **[環境]** を展開し、**[スタートアップ]** を選びます。
 
 4. **[スタート ページのカスタマイズ]** の一覧で、使用するページを選択します。
 
 > [!NOTE]
 > カスタム スタート ページのエラーによって Visual Studio がクラッシュする場合、セーフ モードで Visual Studio を起動し、既定のスタート ページを使用するように設定します。 「[/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)」をご覧ください。
 
-## <a name="see-also"></a>関連項目
- [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)[独自のスタート ページの作成](../misc/creating-your-own-start-page.md)
+## <a name="see-also"></a>参照
+ [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [独自のスタート ページの作成](../misc/creating-your-own-start-page.md)

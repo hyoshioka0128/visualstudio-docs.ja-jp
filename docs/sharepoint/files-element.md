@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546511"
 ---
 # <a name="files-element"></a>Files 要素
@@ -31,7 +31,7 @@ ms.locfileid: "85546511"
 </Files>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>型
  **FileCollectionType**
 
 ## <a name="attributes-and-elements"></a>属性と要素
@@ -44,8 +44,8 @@ ms.locfileid: "85546511"
 
 |要素|説明|
 |-------------|-----------------|
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|省略可能な**ProjectItemFileType**要素。<br /><br /> SharePoint に配置されるときにプロジェクト項目に含める、フィーチャー要素ファイルなどの SharePoint ファイルを表します。|
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|省略可能な**Projectoutputfiletype**要素です。<br /><br /> SharePoint に配置されるときにプロジェクト項目に含めるプロジェクトの出力を表します。|
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|省略可能な **ProjectItemFileType** 要素。<br /><br /> SharePoint に配置されるときにプロジェクト項目に含める、フィーチャー要素ファイルなどの SharePoint ファイルを表します。|
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|省略可能な **Projectoutputfiletype** 要素です。<br /><br /> SharePoint に配置されるときにプロジェクト項目に含めるプロジェクトの出力を表します。|
 
 ### <a name="parent-elements"></a>親要素
 
@@ -58,7 +58,7 @@ ms.locfileid: "85546511"
 |プロパティ|値|
 |-|-|
 |**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**スキーマ名**|SharePoint プロジェクトアイテムスキーマ|
 |**検証ファイル**|ProjectItemModelSchema|
 |**空にすることができます**|いいえ|
 

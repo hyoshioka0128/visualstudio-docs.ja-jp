@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657640"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>ユース ケースをドキュメントおよび図にリンクする
@@ -60,9 +60,9 @@ ms.locfileid: "72657640"
 
     1. Word 文書をソリューションとして、同じ Windows フォルダーに移動します。
 
-    2. ソリューションエクスプローラーで、ソリューションを右クリックして **[追加]** をポイントし、 **[既存の項目]** をクリックします。
+    2. ソリューションエクスプローラーで、ソリューションを右クリックして [ **追加**] をポイントし、[ **既存の項目**] をクリックします。
 
-    3. Word 文書に移動し、 **[追加]** をクリックします。
+    3. Word 文書に移動し、[ **追加**] をクリックします。
 
          ソリューション エクスプローラーのソリューション フォルダーに、Word 文書が表示されます。
 
@@ -74,14 +74,14 @@ ms.locfileid: "72657640"
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>共有ドキュメント、OneNote 要素、または Web ページにリンクを設定するには
 
-1. 共有要素の URL を取得します。 たとえば、"\\ \\" を開始するネットワークファイルパス、' http://' を開始する web ページまたは Sharepoint URL、OneNote セクション、ページ、または ' onenote: ' を開始する段落へのリンクなどがあります。
+1. 共有要素の URL を取得します。 たとえば、"" を開始するネットワークファイルパス、" \\ \\ http://" を開始する web ページまたは Sharepoint URL、または onenote セクション、ページ、または "onenote:" を開始する段落へのリンクなどです。
 
-2. ツールボックス で **アーティファクト** をクリックし、ユースケース図をクリックします。
+2. [ツールボックス] で [ **アーティファクト** ] をクリックし、ユースケース図をクリックします。
 
-3. 新しい成果物が選択された状態で、 **Hyperlink**プロパティに URL を入力するか貼り付けます。
+3. 新しい成果物が選択された状態で、 **Hyperlink** プロパティに URL を入力するか貼り付けます。
 
     > [!NOTE]
-    > ファイルパスを指定する場合は、(' \\ \\ ' で始まる) 共通のワークスペースまたは Visual Studio ソリューション内のファイルのいずれかでファイルを選択することをお勧めします。 これにより、ソリューションが移動された場合でも、ファイル パスは別のチーム メンバーのコンピューター上で有効なままになります。 Word 文書などのドキュメントをソリューションに追加するには、ソリューションエクスプローラーでソリューションを右クリックし、 **[追加]** をポイントして、 **[既存の項目]** をクリックします。
+    > ファイルパスを指定する場合は、(' ' で始まる) 共通のワークスペース \\ \\ または Visual Studio ソリューション内のファイルのいずれかでファイルを選択することをお勧めします。 これにより、ソリューションが移動された場合でも、ファイル パスは別のチーム メンバーのコンピューター上で有効なままになります。 Word 文書などのドキュメントをソリューションに追加するには、ソリューションエクスプローラーでソリューションを右クリックし、[ **追加** ] をポイントして、[ **既存の項目**] をクリックします。
 
 ## <a name="see-also"></a>参照
  [Uml ユースケース図: リファレンス](../modeling/uml-use-case-diagrams-reference.md) [Uml ユースケース図: ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)[編集 uml モデルおよび図](../modeling/edit-uml-models-and-diagrams.md)[アプリのモデルの作成](../modeling/create-models-for-your-app.md)

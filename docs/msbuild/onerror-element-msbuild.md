@@ -30,6 +30,7 @@ ms.locfileid: "77633084"
 失敗したタスクの `ContinueOnError` 属性が `false` の場合、1 つ以上のターゲットが実行されます。
 
  \<Project> \<Target> \<OnError>
+ \<OnError>
 
 ## <a name="syntax"></a>構文
 

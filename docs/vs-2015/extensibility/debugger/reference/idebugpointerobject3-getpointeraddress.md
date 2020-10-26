@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject3::GetPointerAddress |Microsoft Docs
+title: 'IDebugPointerObject3:: Getポインター Address |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8b770bea631d772280b227b3298a45acee66e51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202953"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
@@ -39,10 +39,10 @@ int GetPointerAddress (
   
 #### <a name="parameters"></a>パラメーター  
  `puAddress`  
- [out]ポインターのアドレスを返します。  
+ 入出力ポインターのアドレスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

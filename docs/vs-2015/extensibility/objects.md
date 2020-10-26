@@ -11,30 +11,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 903c9fef18990be0aee78309fcdfadb80a95f384
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194159"
 ---
 # <a name="objects"></a>オブジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-次の参照情報には、コアのテキスト エディターのインスタンスの作成に使用されるオブジェクトについて説明します。  
+次の参照情報は、コアテキストエディターのインスタンスを作成するために使用されるオブジェクトについて説明しています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [VSCodeWindow オブジェクト](../extensibility/vscodewindow-object.md)  
- コード ウィンドウ オブジェクト、1 つまたは複数のテキスト ビューを囲むことができますを特殊化されたドキュメント ウィンドウについて説明します。  
+ 1つ以上のテキストビューを囲むことができる特殊なドキュメントウィンドウであるコードウィンドウオブジェクトについて説明します。  
   
  [VSCodeWindowManager オブジェクト](../extensibility/vscodewindowmanager-object.md)  
- コード ウィンドウ マネージャー オブジェクトは、言語サービスによって実装され、表示要素の管理を担当するについて説明します。  
+ 言語サービスによって実装され、修飾の管理を担当するコードウィンドウマネージャーオブジェクトについて説明します。  
   
  [VSTextBuffer オブジェクト](../extensibility/vstextbuffer-object.md)  
- Unicode テキスト ファイルのデータのストリームを表すテキスト バッファー オブジェクトについて説明します。  
+ Unicode テキストのストリーム (ファイルのデータ) を表すテキストバッファーオブジェクトについて説明します。  
   
  [VSTextView オブジェクト](../extensibility/vstextview-object.md)  
- テキスト ビュー、ユーザーの表示し、テキスト バッファーの Unicode テキストを編集できるウィンドウについて説明します。  
+ テキストバッファーの Unicode テキストをユーザーが表示および編集できるようにするウィンドウであるテキストビューについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [Visual Studio SDK のリファレンス](../extensibility/visual-studio-sdk-reference.md)  
- 参照トピックの一覧を表示します。
+ 参照トピックの一覧を示します。

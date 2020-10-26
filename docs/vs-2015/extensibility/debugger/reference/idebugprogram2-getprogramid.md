@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId |Microsoft Docs
+title: 'IDebugProgram2:: GetProgramId |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19c29b5cec555f9e3ad5157d7b4581777be42c98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148677"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -40,15 +40,15 @@ int GetProgramId( 
   
 #### <a name="parameters"></a>パラメーター  
  `pguidProgramId`  
- [out]返します、`GUID`このプログラムにします。  
+ 入出力 `GUID` このプログラムのを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- デバッグ エンジン (DE) は、最初に渡されたプログラム id を返す必要があります、 [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)または[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッド。 これにより、プログラムの識別デバッガーの間でのコンポーネント。  
+## <a name="remarks"></a>注釈  
+ デバッグエンジン (DE) は、最初に [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) メソッドまたは [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドに渡されたプログラム id を返す必要があります。 これにより、デバッガーコンポーネント間でプログラムを識別できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)

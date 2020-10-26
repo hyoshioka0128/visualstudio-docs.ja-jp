@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655393"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ コード スニペット
@@ -45,13 +45,13 @@ Visual Studio でコード スニペットを使用して、よく使用され�
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>コード スニペットを使用して、選択したコードを囲む
  コード スニペットを使用して、選択したコードを囲むには、行 (または複数の行) を選択し、次のいずれかを実行します。
 
-1. 右クリックしてコンテキスト メニューを表示し、 **[ブロックの挿入]** を選択する
+1. 右クリックしてコンテキスト メニューを表示し、**[ブロックの挿入]** を選択する
 
 2. **[編集 / IntelliSense]** メニューの **[ブロックの挿入]** を選択する
 
 3. ホット キー **Ctrl + K + S** を使用する
 
-   **#if** を選択します。 次のように表示されます。
+   **#if** を選択します。 次のような結果が表示されます。
 
 ```cpp
 #if 0

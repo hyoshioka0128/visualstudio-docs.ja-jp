@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895449"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>チュートリアル: デバイス状態によるオブジェクトの不足
@@ -33,7 +33,7 @@ ms.locfileid: "62895449"
 
  このチュートリアルのシナリオでは、3-D アプリ開発の第 1 マイルストーンまで到達し、初めてアプリをテストする準備が整っています。 しかし、アプリを実行すると、画面にはユーザー インターフェイスしか表示されません。 そこで、アプリのデバッグを実行できるように、グラフィックス診断を使用してグラフィックス ログ ファイルに問題をキャプチャします。 問題は、アプリケーションでは次のように見えます。
 
- ![問題が修正される前のアプリ](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
+ ![問題修正前のアプリ](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")
 
  グラフィックスの問題をグラフィックス ログにキャプチャする方法については、「 [Capturing Graphics Information](capturing-graphics-information.md)」をご覧ください。
 

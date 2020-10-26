@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453684"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248439"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -30,10 +30,10 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>サブスクリプションは次のいずれかの方法で切り替えることができます。
 
-- 右上のドロップダウンをクリックし、一覧からサブスクリプションを選びます
-- [サブスクリプション] タブをクリックし、使うサブスクリプションをクリックします
+- 右上のドロップダウンを選択し、一覧からサブスクリプションを選びます
+- [サブスクリプション] タブを選択し、使うサブスクリプションを選択します
   > [!div class="mx-imgBorder"]
-  > ![サブスクリプションを切り替える](_img/manage-vs-subscriptions/change-subscription-resized.png "[サブスクリプション] タブをクリックして、すべてのサブスクリプションに関する詳細情報を表示し、それらを切り替えます。")
+  > ![サブスクリプションを切り替える](_img/manage-vs-subscriptions/change-subscription-resized.png "[サブスクリプション] タブを選択して、すべてのサブスクリプションに関する詳細情報を表示し、それらを切り替えます。")
 
 ### <a name="if-your-subscription-is-not-visible"></a>サブスクリプションが表示されない場合...
 
@@ -68,17 +68,17 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 
 プロファイルの連絡先情報およびユーザー設定は簡単に変更できます。
 
-1. サブスクライバー ポータルの右上隅の名前をクリックします。
-2. **[プロファイルの編集]** ボタンをクリックします。
+1. サブスクライバー ポータルの右上隅の名前を選択します。
+2. **[プロファイルの編集]** ボタンを選択します。
 3. **[詳細情報]** タブでは、名前、メール アドレス、国/地域、プロファイルの画像、連絡先の設定を変更することができます。 **[ユーザー設定]** タブでは、優先する言語、日付と時間のパターン、タイム ゾーン、ユーザー インターフェイスのテーマを選択することができます。
-4. 変更が終わったら、 **[保存]** をクリックします。
-5. ブラウザーの **[戻る]** ボタンをクリックして特典ページに戻ります。
+4. 変更が終わったら、 **[保存]** を選択します。
+5. ブラウザーの **[戻る]** ボタンを選択して特典ページに戻ります。
 
 ### <a name="setting-communications-preferences"></a>通信のユーザー設定
 毎月の Visual Studio サブスクリプション ニュースレターなど、サブスクリプションとベネフィットに関する更新を定期的に受け取りたい場合は、Visual Studio プロファイルで Visual Studio サブスクリプションのボックスをオンにして、[ユーザー設定を更新](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)します。 いつでもこれらのユーザー設定を変更したり、サブスクライブを解除したりできます。 
 
    > [!div class="mx-imgBorder"]
-   > ![ユーザー設定](_img/manage-vs-subscriptions/change-prefs.png "Visual Studio サブスクリプション プログラムのメールのチェックボックスをオンにして、更新プログラムを受信します。")
+   > ![ユーザー設定](_img/manage-vs-subscriptions/change-prefs.png "Visual Studio サブスクリプション プログラムのメールのチェックボックスを選択して、更新プログラムを受信します。")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>既存の Azure DevOps Services または Azure サブスクリプションにサブスクリプションをリンクする
 個人の Microsoft アカウント (MSA) を使ってサブスクリプションにサインインしていて、Azure によって管理される職場または学校アカウントを使う Azure DevOps Services または Microsoft Azure を含むサブスクリプションがある場合は、2 つのサブスクリプションをリンクできます。 これは "代替アカウント" と呼ばれ、サブスクリプションへのサインインに MSA を使い続けることができるだけでなく、職場または学校アカウントに関連付けられている既存の Azure、Azure DevOps Services、IDE リソースにアクセスすることもできます。
@@ -90,9 +90,9 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 1. Microsoft アカウント (MSA) で[サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインします。
 2. **[サブスクリプション]** タブをクリックします。
 3. **[Related Links]** の下にある **[代替アカウントを追加する]** を選びます。
-4. 職場/学校アカウントのメール アドレスを入力して、 **[追加]** をクリックします。
+4. 職場/学校アカウントのメール アドレスを入力して、 **[追加]** を選択します。
 
-代替アカウントを追加した後は、 **[サブスクリプション]** タブをクリックして **[Related Links]** セクションで適切なオプションを選ぶことにより、いつでも更新または削除できます。
+代替アカウントを追加した後は、 **[サブスクリプション]** タブを選択して **[Related Links]** セクションで適切なオプションを選ぶことにより、いつでも更新または削除できます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

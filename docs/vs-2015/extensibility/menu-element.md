@@ -12,16 +12,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79a8fafc748274015dac7f8f0938bba37ba5a8bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194349"
 ---
 # <a name="menu-element"></a>Menu 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-1 つのメニュー項目を定義します。 これらは、メニューの 6 つの種類です。コンテキスト、メニューの MenuController、MenuControllerLatched、ツールバー、および ToolWindowToolbar します。  
+1つのメニュー項目を定義します。 これらは、コンテキスト、メニュー、MenuController、Menucontroller ラッチ、Toolbar、および ToolWindowToolbar の6種類のメニューです。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,27 +40,27 @@ ms.locfileid: "68194349"
   
 |属性|説明|  
 |---------------|-----------------|  
-|guid|必須。 コマンド id を GUID と ID の GUID です。|  
-|ID|必須。 コマンド id を GUID と ID の ID。|  
-|priority|任意。 グループのメニューで、メニューの相対位置を示す数値。|  
-|ToolbarPriorityInBand|任意。 ウィンドウがドッキングされているときに、バンドで、ツールバーの相対位置を指定する数値。|  
-|型|任意。 要素の種類を指定する列挙値。<br /><br /> 存在しない場合、既定の種類はメニューです。<br /><br /> コンテキスト<br /> ユーザーがウィンドウを右クリックしたときに表示されるショートカット メニュー。 ショートカット メニューには、次の特徴があります。<br /><br /> -メニューのショートカット メニューとして表示される場合は、親と優先順位フィールドを使用しません。<br />-サブメニューとしてし、ショートカット メニューと使用できます。 この場合、グループ ID と優先度の両方のフィールドが守られています。<br />-は常に利用可能ではありません。<br /><br /> ショートカット メニューには、次の条件に該当する場合にのみが表示されます。<br /><br /> -これをホストするウィンドウが表示されます。<br />VSPackage で-マウス ハンドラーは、ウィンドウの右クリックを検出し、コマンドを処理するメソッドを呼び出して、します。<br />、呼び出してショートカット メニューが表示される、<xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A>メソッド (推奨) または<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>メソッド。<br /><br /> メニュー<br /> ドロップダウン メニューを提供します。 ドロップダウン メニューには、次の特徴があります。<br /><br /> 定義に親保護に努めています。<br />-親グループ、またはグループの CommandPlacement いる必要があります。<br />-その他の種類 メニューのサブメニューをすることができます。<br />-が、親メニューが表示されるたびに自動的に表示します。<br />表示されるようにする VSPackage のコードの実装は必要ありません。<br /><br /> MenuController<br /> ツールバーで通常使用される、分割ボタンのドロップダウン メニューを提供します。 MenuController メニューには、次の特徴があります。<br /><br /> -は、親または CommandPlacement を介して別のメニューに含まれます。<br />定義に親保護に努めています。<br />-任意の種類 メニューをその親として設定するできます。<br />-自動的に利用可能になってたびに、親メニューが表示されます。<br />-プログラムのサポートを表示されるメニューは必要ありません。<br /><br /> 分割ボタン メニューからコマンドがメニュー ボタンに表示されます。 表示されるコマンドでは、次の特性の 1 つがあります。<br /><br /> -これは、コマンドがまだ表示され、有効になっている場合に使用された最後のコマンドです。<br />-これは、最初のコマンドの表示です。<br /><br /> MenuControllerLatched<br /> コマンドとして指定できます、既定の選択コマンドのマーク ラッチで分割ボタンのドロップダウン メニューを提供します。<br /><br /> ラッチのコマンドは、通常は、チェック マークを表示することによって、として選択した場合は、メニューでマークされているコマンドです。 コマンドは、OLECMDF_LATCHED がある場合にそのラッチとマークできますフラグの実装での設定、`QueryStatus`のメソッド、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。 MenuControllerLatched メニューには、次の特徴があります。<br /><br /> -は、親グループまたは CommandPlacement を介して別のメニューに含まれます。<br />定義に親保護に努めています。<br />-任意の種類 メニューをその親として設定するできます。<br />-親メニューが表示されるたびには、使用可能な実行されます。<br />-プログラムのサポートを表示されるメニューは必要ありません。<br /><br /> 分割ボタン メニューからコマンドがメニュー ボタンに表示されます。 表示されるコマンドでは、次の特性の 1 つがあります。<br /><br /> -これは、ラッチは、表示されている最初のコマンドです。<br />-これは、最初のコマンドの表示です。<br /><br /> ツール バー<br /> ツールバーを提供します。 ツールバーには、次の特徴があります。<br /><br /> -親の定義では無視されます。<br />-できません CommandPlacement を使用しても、任意のグループのサブメニューできます。<br />クリックして常に表示される-**ツールバー**上、**ビュー**メニュー。<br />使用して表示可能な[VisibilityItem](../extensibility/visibilityitem-element.md)します。<br />で作成するためのコードは不要です。 例のツールバーを作成する方法については、次を参照してください。[ツールバーの追加](../extensibility/adding-a-toolbar.md)します。<br /><br /> ToolWindowToolbar<br /> ツールバーが開発環境に接続されているのと同じように、特定のツール ウィンドウに関連付けられているツールバーを提供します。<br /><br /> -親の定義では無視されます。<br />-できません CommandPlacement を使用しても、任意のグループのサブメニューできます。<br />は、ツールバーをホストしているツール ウィンドウが表示され、VSPackage では、ツール ウィンドウに、ツールバーを明示的に追加している場合にのみが表示されます。 これは、通常、ツールバーのホストのプロパティを取得することにより、ツール ウィンドウが作成されたときに (によって表される、<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost>インターフェイス) ツール ウィンドウ フレームと、呼び出しから、<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A>メソッド。|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|guid|必須です。 GUID/ID コマンド識別子の GUID。|  
+|id|必須です。 GUID/ID コマンド識別子の ID。|  
+|priority|省略可能。 メニューのグループ内のメニューの相対位置を指定する数値。|  
+|ToolbarPriorityInBand|省略可能。 ウィンドウがドッキングされているときのバンド内のツールバーの相対位置を指定する数値。|  
+|型|省略可能。 要素の種類を指定する列挙値。<br /><br /> 存在しない場合、既定の型は Menu です。<br /><br /> Context<br /> ユーザーがウィンドウを右クリックしたときに表示されるショートカットメニュー。 ショートカットメニューには、次の特性があります。<br /><br /> -メニューがショートカットメニューとして表示される場合、は親フィールドと優先順位フィールドを使用しません。<br />-サブメニューとして、またはショートカットメニューとしても使用できます。 この場合、グループ ID と優先順位の両方のフィールドが尊重されます。<br />-常に使用できるとは限りません。<br /><br /> ショートカットメニューは、次の条件に該当する場合にのみ表示されます。<br /><br /> -それをホストするウィンドウが表示されます。<br />-VSPackage のマウスハンドラーは、ウィンドウを右クリックして、コマンドを処理するメソッドを呼び出します。<br />-ショートカットメニューは、 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> メソッド (推奨される方法) またはメソッドを呼び出すことによって表示され <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> ます。<br /><br /> メニュー<br /> ドロップダウンメニューを提供します。 ドロップダウンメニューには、次の特性があります。<br /><br /> -定義内の親を尊重します。<br />-親グループ、またはグループへの CommandPlacement が必要です。<br />-他の種類のメニューのサブメニューでもかまいません。<br />-親メニューが表示されるたびに自動的に表示されます。<br />-VSPackage コードを表示するために実装する必要はありません。<br /><br /> MenuController<br /> ツールバーで通常使用される分割ボタンのドロップダウンメニューを提供します。 MenuController メニューには、次の特性があります。<br /><br /> -親または CommandPlacement を使用して別のメニューに含める必要があります。<br />-定義内の親を尊重します。<br />-任意の種類のメニューを親として持つことができます。<br />-親メニューが表示されるたびに、自動的に使用できるようになります。<br />-メニューを表示するために、プログラムによるサポートは必要ありません。<br /><br /> 分割ボタンメニューのコマンドがメニューボタンに表示されます。 表示されるコマンドには、次のいずれかの特性があります。<br /><br /> -これは、コマンドが引き続き表示され、有効になっている場合に使用された最後のコマンドです。<br />-これは最初に表示されるコマンドです。<br /><br /> Menuコントローラーのラッチ<br /> コマンドをラッチ済みとしてマークすることにより、コマンドを既定の選択として指定できる分割ボタンのドロップダウンメニューを提供します。<br /><br /> ラッチされたコマンドは、選択としてメニューでマークされたコマンドで、通常はチェックマークが表示されます。 コマンドは、インターフェイスのメソッドの実装で OLECMDF_LATCHED フラグが設定されている場合、ラッチとしてマークでき `QueryStatus` <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 Menuコントローラーのラッチには、次の特性があります。<br /><br /> -親グループまたは CommandPlacement を使用して別のメニューに含める必要があります。<br />-定義内の親を尊重します。<br />-任意の種類のメニューを親として持つことができます。<br />-親メニューが表示されるたびに使用できるようになります。<br />-メニューを表示するために、プログラムによるサポートは必要ありません。<br /><br /> 分割ボタンメニューのコマンドがメニューボタンに表示されます。 表示されるコマンドには、次のいずれかの特性があります。<br /><br /> -これは、最初に表示されるコマンドであり、ラッチされます。<br />-これは最初に表示されるコマンドです。<br /><br /> ツール バー<br /> ツールバーを提供します。 ツールバーには、次の特性があります。<br /><br /> -定義内の親を無視します。<br />-CommandPlacement を使用しても、グループのサブメニューを作成することはできません。<br />-[**表示**] メニューの [**ツールバー** ] をクリックすると、いつでも表示できます。<br />- [VisibilityItem](../extensibility/visibilityitem-element.md)を使用して表示できます。<br />-作成するコードは必要ありません。 ツールバーの作成方法の例については、「 [ツールバーの追加](../extensibility/adding-a-toolbar.md)」を参照してください。<br /><br /> ToolWindowToolbar<br /> ツールバーが開発環境にアタッチされるのと同じように、特定のツールウィンドウに関連付けられているツールバーを提供します。<br /><br /> -定義内の親を無視します。<br />-CommandPlacement を使用しても、グループのサブメニューを作成することはできません。<br />-ツールバーをホストするツールウィンドウが表示され、VSPackage がツールバーをツールウィンドウに明示的に追加した場合にのみ表示されます。 これは通常、ツールウィンドウが作成されるときに、ツールウィンドウのフレームからツールバーのホストプロパティ (インターフェイスによって表される) を取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> し、メソッドを呼び出すことによって行われ <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> ます。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|親|任意。 メニュー項目の親要素。|  
-|CommandFlag|必須。 参照してください[コマンド フラグ要素](../extensibility/command-flag-element.md)します。 メニューの有効な CommandFlag 値は次のとおりです。<br /><br /> -   **通常**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -このフラグでは、ツールバーの表示には影響しません。<br />-   **DontCache**<br />-   **DynamicVisibility** -このフラグでは、ツールバーの表示には影響しません。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **テキスト**<br />-   **TextIsAnchorCommand**|  
-|文字列|必須。 参照してください[要素の文字列](../extensibility/strings-element.md)します。 子`ButtonText`要素を定義する必要があります。|  
-|注釈|省略可能なコメント。|  
+|Parent|省略可能。 メニュー項目の親要素。|  
+|CommandFlag|必須です。 「 [Command Flag 要素](../extensibility/command-flag-element.md)」を参照してください。 メニューの有効な CommandFlag 値は次のとおりです。<br /><br /> -   **常に作成**<br />-   **DefaultDocked**<br />-   **Defaul/visible** -このフラグは、ツールバーの表示には影響しません。<br />-   **DontCache**<br />-   **Dynamicvisibility** -このフラグは、ツールバーの表示には影響しません。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
+|文字列|必須です。 「 [Strings 要素](../extensibility/strings-element.md)」を参照してください。 子 `ButtonText` 要素を定義する必要があります。|  
+|Annotation|コメント (省略可能)。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Menus 要素](../extensibility/menus-element.md)|VSPackage を実装するすべてのメニューを定義します。|  
+|[Menus 要素](../extensibility/menus-element.md)|VSPackage が実装するすべてのメニューを定義します。|  
   
 ## <a name="example"></a>例  
   
@@ -76,5 +76,5 @@ ms.locfileid: "68194349"
 </Menu>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

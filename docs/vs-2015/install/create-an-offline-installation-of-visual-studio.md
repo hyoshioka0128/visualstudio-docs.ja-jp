@@ -1,4 +1,4 @@
-﻿---
+---
 title: オフライン インストールを作成する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a6a9707d517a8a43d9a9ca156a5f7291ecee9bee
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445065"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
@@ -36,17 +36,17 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 
 1. [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) のダウンロード ページから、インストールする Visual Studio のエディションを選択します。
 
-2. ファイル システム上の場所にインストーラーをダウンロードした後、"\<実行可能ファイル名> /layout" を実行します。
+2. ファイルシステム上の場所にインストーラーをダウンロードしたら、" \<executable name> /layout" を実行します。
 
      たとえば、`vs_enterprise.exe /layout D:\VisualStudio2015` を実行します
 
      `/layout` スイッチを使用すると、ダウンロード先のマシンに適用するものだけでなく、ほとんどすべてのインストール パッケージをダウンロードできます。 この方法では、任意の場所でこのインストーラーを実行するために必要なファイルを入手できます。これは、元はインストールしていなかったコンポーネントをインストールしたい場合に役立つことがあります。
 
-3. このコマンドを実行すると、ダイアログ ボックスが表示されます。これを使って、オフライン インストール レイアウトを置くフォルダーを変更できます。   次に、[**ダウンロード**] ボタンをクリックします。
+3. このコマンドを実行すると、ダイアログ ボックスが表示されます。これを使って、オフライン インストール レイアウトを置くフォルダーを変更できます。   次に、[ **ダウンロード** ] ボタンをクリックします。
 
-     パッケージのダウンロードが成功すると、セットアップ成功というメッセージが表示されます **。指定されたコンポーネントはすべて正常に取得されました。**
+     パッケージのダウンロードが成功すると、[セットアップが成功しました] というメッセージが表示され**ます。指定されたコンポーネントがすべて正常に取得され**ました。
 
-4. 前に指定したフォルダーを探します。 (たとえば、D:\VisualStudio2015 を見つけます。このフォルダには、共有場所またはインストール メディアにコピーするために必要な情報がすべて含まれています。
+4. 前に指定したフォルダーを探します。 (例については、「D:\VisualStudio2015.」を参照してください)。このフォルダーには、共有の場所にコピーしたり、メディアをインストールしたりするために必要なすべてが含まれています。
 
     > [!CAUTION]
     > 現在、Android SDK はオフライン インストール エクスペリエンスをサポートしていません。 Android SDK セットアップ項目をインターネットに接続されていないコンピューターにインストールする場合、インストールが失敗する可能性があります。 詳細については、このトピックの「オフライン インストールのトラブルシューティング」セクションをご覧ください。
@@ -61,7 +61,7 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 
 | コンポーネントまたはパッケージ | 解決策 |
 |-|-|
-| Dotfuscator および Analytics Community Edition 5.19.1 (**Windows 7 SP1** や **Windows Server 2008 R2** にインストールされているような、Community、Professional、および Enterprise エディションの Visual Studio の場合) | オフラインのマシンで **Windows 7 SP1** または **Windows Server 2008 R2** を稼働している場合は、Visual Studio 2015 をインストールする前に次の手順を実行する必要があります。<br /><br /> 1. CTL ファイルをダウンロードするようにファイルまたは Web サーバーを構成します。<br /><br /> 2. 切断された環境の Microsoft 自動更新 URL をリダイレクトします。<br /><br /> 詳細については、Microsoft TechNet サイトの「[Configure Trusted Roots and Disallowed Certificates (信頼されたルートおよび許可されない証明書を構成する)](https://technet.microsoft.com/library/dn265983.aspx)」ページをご覧ください。 |
+| Dotfuscator および Analytics Community Edition 5.19.1 (**Windows 7 SP1** や **Windows Server 2008 R2** にインストールされているような、Community、Professional、および Enterprise エディションの Visual Studio の場合) | オフラインのマシンで **Windows 7 SP1** または **Windows Server 2008 R2** を稼働している場合は、Visual Studio 2015 をインストールする前に次の手順を実行する必要があります。<br /><br /> 1. ファイルまたは web サーバーを構成して、CTL ファイルをダウンロードします。<br /><br /> 2. 切断された環境の Microsoft 自動更新の URL をリダイレクトします。<br /><br /> 詳細については、Microsoft TechNet サイトの「[Configure Trusted Roots and Disallowed Certificates (信頼されたルートおよび許可されない証明書を構成する)](https://technet.microsoft.com/library/dn265983.aspx)」ページをご覧ください。 |
 | Android SDK セットアップ (API レベル) | Android SDK (API レベル) パッケージをインストールするには、インターネットに接続する必要があります。 制限付きネットワークを使用している場合は、Visual Studio のインストール時に次の URL へのアクセスを許可する必要があります。<br /><br /> -   `https://dl.google.com:443`<br />-   `https://dl-ssl.google.com:443`<br />-   `https://dl-ssl.google.com/android/repository/*`<br /> <br />プロキシ設定で考えられる問題を解決する方法の詳細については、ブログ投稿の「[Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/)」(プロキシ経由で Visual Studio 2015 をインストールできない (Android SDK セットアップ)) を参照してください。 |
 | Visual Studio 機能拡張の項目テンプレート<br /><br /> Visual Studio 向け GitHub 拡張<br /><br /> PowerShell Tools for Visual Studio | Visual Studio 2015 をインストールする際にインターネットに接続出来ない場合は、特別なオフライン フィードを使ってオフライン インストール レイアウトを生成することができます。 **注:** この特別なフィードには、Visual Studio 2015 に対する最新の更新プログラムが含まれています。 <br /><br /> 特別なオフライン フィードを作成するには、次のコマンドを実行します: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*<br /><br /> たとえば、英語版の Visual Studio 2015 Enterprise の特別なオフライン フィードについては、次を実行します。<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "https://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> 任意の言語の特別なオフライン フィードを作成するために使える URL の完全な一覧については、次の表をご覧ください。 |
 
@@ -80,10 +80,10 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 |       日本語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x411 |
 |        韓国語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x412 |
 |        ポーランド語         | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x415 |
-|      Portuguese       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
+|      ポルトガル語       | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x416 |
 |        ロシア語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        トルコ語        | https://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>参照
 
-- [Visual Studio のインストール](install-visual-studio-2015.md)
+- [Visual Studio をインストールする](install-visual-studio-2015.md)

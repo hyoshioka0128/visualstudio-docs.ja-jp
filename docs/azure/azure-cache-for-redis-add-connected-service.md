@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643180"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Visual Studio を使用して Redis 用の Azure Cache を追加接続済みサービス
@@ -51,7 +51,7 @@ Visual Studio では、 **接続済みサービス** 機能を使用して、以
 
 1. [ **依存関係の追加** ] ページで、[ **Redis 用の Azure キャッシュ**] を選択します。
 
-    ![Redis 用 Azure キャッシュの追加](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
+    ![Azure Cache for Redis を追加する](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
     まだサインインしていない場合は、Azure アカウントにサインインします。 Azure アカウントを持っていない場合、[無料試用版](https://azure.microsoft.com/account/free)でサインアップできます。
 

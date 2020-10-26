@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543716"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 へようこそ
@@ -30,9 +30,9 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 >
 > [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) のリリース ノートについては、こちらをクリックしてください。
 
- 無料で[Visual Studio Community 2015](https://visualstudio.microsoft.com/vs/older-downloads/)をダウンロードして、すぐにコーディングを開始できます。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 Visual Studio Professional または Visual Studio Enterprise を使用して、より多くの機能を取得できます。
+ 無料で [Visual Studio Community 2015](https://visualstudio.microsoft.com/vs/older-downloads/) をダウンロードして、すぐにコーディングを開始できます。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 Visual Studio Professional または Visual Studio Enterprise を使用して、より多くの機能を取得できます。
 
- すぐに作業に取りかかり、新しいプロジェクトを作成し、コードの記述を開始してください。 作成するアプリの種類を選択します。 または、 [Visual STUDIO IDE](./ide/visual-studio-ide.md)のツアーを見て、ツールに慣れることができます。
+ すぐに作業に取りかかり、新しいプロジェクトを作成し、コードの記述を開始してください。 作成するアプリの種類を選択します。 または、 [Visual STUDIO IDE](./ide/visual-studio-ide.md) のツアーを見て、ツールに慣れることができます。
 
  忘れずに [コード ギャラリー](https://code.msdn.microsoft.com/) を調べ、アプリをすばやく作成するのに役立つサンプルを見つけてください。
 
@@ -48,9 +48,9 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
  [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/)で VISUAL Studio IDE の拡張機能を検索します。 Marketplace の拡張機能は、Microsoft 開発者や開発コミュニティによって作成されています。
 
 ## <a name="build-apps-for-android-ios-and-windows"></a>Android、iOS、Windows 用アプリを作成する
- Visual Studio を使用して、Android、iOS、および Windows デバイス用のアプリを作成できます。 詳細について[は、Visual Studio でのクロスプラットフォームモバイル開発](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)に関するページを参照してください。
+ Visual Studio を使用して、Android、iOS、および Windows デバイス用のアプリを作成できます。 詳細について [は、Visual Studio でのクロスプラットフォームモバイル開発](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)に関するページを参照してください。
 
- ユニバーサル Windows アプリ (UWP) の詳細については、「[ユニバーサル Windows プラットフォーム (uwp) アプリとは](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)」を参照してください。
+ ユニバーサル Windows アプリ (UWP) の詳細については、「 [ユニバーサル Windows プラットフォーム (uwp) アプリとは](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)」を参照してください。
 
  アプリ要件に基づいて必要なツールと使用する言語を選択します。
 
@@ -74,12 +74,12 @@ Visual Studio へようこそ。 デバイスまたはデスクトップで機�
 - クラウドに格納されているデータに接続するために、Office 365 REST API を独自のアプリに統合します。 詳細については、 [これらのサンプル](https://docs.microsoft.com/samples/browse/?products=office-365&term=REST)を参照してください。
 
 ## <a name="write-great-web-apps-with-aspnet"></a>ASP.NET を使用して優れた web アプリを作成する
- [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0)は、MVC、WebAPI、および SignalR のメジャーアップデートであり、Windows、Mac、Linux で実行されます。  ASP.NET は、最新のクラウドベースの web アプリとサービスを構築するための軽量でコンポーザブルな .NET スタックを提供するために、一から設計されています。
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) は、MVC、WebAPI、および SignalR のメジャーアップデートであり、Windows、Mac、Linux で実行されます。  ASP.NET は、最新のクラウドベースの web アプリとサービスを構築するための軽量でコンポーザブルな .NET スタックを提供するために、一から設計されています。
 
 ## <a name="build-test-and-manage-your-code"></a>コードのビルド、テスト、管理
 
 ### <a name="check-in-your-code"></a>コードのチェックイン
- チームで作業している場合、最新バージョンのコードを共有して、チーム全員が同じコードベースを使用する必要があります。 Visual Studio は Visual Studio Team Services や Team Foundation Server とシームレスに統合し、Git または TFVC (Team Foundation バージョン管理) でのバージョン管理を提供します。 Visual Studio Team Services を使用してコードをクラウドに格納すると、ローカル サーバーのメンテナンスが不要になります。 オンプレミスのサーバーを使用する場合は、Team Foundation Server を使用します。 コード プロジェクトを作成するたびに、そのプロジェクトをバージョン管理に追加するオプションが表示されます。 ニーズに最適なバージョン管理システムの詳細については、「[プロジェクトに適したバージョンコントロールの選択](https://docs.microsoft.com/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops)」を参照してください。
+ チームで作業している場合、最新バージョンのコードを共有して、チーム全員が同じコードベースを使用する必要があります。 Visual Studio は Visual Studio Team Services や Team Foundation Server とシームレスに統合し、Git または TFVC (Team Foundation バージョン管理) でのバージョン管理を提供します。 Visual Studio Team Services を使用してコードをクラウドに格納すると、ローカル サーバーのメンテナンスが不要になります。 オンプレミスのサーバーを使用する場合は、Team Foundation Server を使用します。 コード プロジェクトを作成するたびに、そのプロジェクトをバージョン管理に追加するオプションが表示されます。 ニーズに最適なバージョン管理システムの詳細については、「 [プロジェクトに適したバージョンコントロールの選択](https://docs.microsoft.com/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops)」を参照してください。
 
 ### <a name="build-your-app"></a>アプリをビルドする
  [アプリをローカルでビルドし、](./ide/compiling-and-building-in-visual-studio.md) それが正常に機能することを確認します。 [デバッグ ツールを使用して](./debugger/debugging-in-visual-studio.md) 、アプリの問題を修正します。 あるいは、共有ビルド サーバーまたはクラウドにプロジェクトをビルドすることもできます。 チームの開発者がバージョン管理にチェックインしたコードをビルドするよう、ビルド プロセスを自動化します。 たとえば、1 つまたは複数のプロジェクトを夜間にビルドすることも、コードのチェックインごとにビルドすることもできます。

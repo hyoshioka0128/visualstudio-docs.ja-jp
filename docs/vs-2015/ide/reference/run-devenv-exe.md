@@ -1,4 +1,4 @@
-﻿---
+---
 title: -Run (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2716995e8ff3a318262284b5733a471086c68c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665519"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -39,12 +39,12 @@ devenv {/run|/r} {SolutionName|ProjectName}
 
  `ProjectName` 必須。 プロジェクト ファイルの完全パスと名前。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  アクティブなソリューション構成に対して指定された設定に従って、指定したプロジェクトまたはソリューションをコンパイルして実行します。 このスイッチは、統合開発環境 (IDE) を起動し、プロジェクトまたはソリューションの実行が完了しても IDE をアクティブな状態のままにします。
 
 - 空白を含む文字列を二重引用符で囲みます。
 
-- エラーなどの概要情報は、 **[コマンド]** ウィンドウ、または `/out`スイッチで指定した任意のログ ファイルに表示できます。
+- エラーなどの概要情報は、**[コマンド]** ウィンドウ、または `/out`スイッチで指定した任意のログ ファイルに表示できます。
 
 ## <a name="example"></a>例
  この例では、アクティブな配置構成を使用して、ソリューション `MySolution` を実行します。
@@ -53,5 +53,5 @@ devenv {/run|/r} {SolutionName|ProjectName}
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>関連項目
- [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md) [/runexit (devenv.exe](../../ide/reference/runexit-devenv-exe.md) ) [/Build (](../../ide/reference/build-devenv-exe.md) Devenv.exe) [/Rebuild (](../../ide/reference/rebuild-devenv-exe.md) devenv.exe) [/out (devenv.exe](../../ide/reference/out-devenv-exe.md) ) (devenv.exe)
+## <a name="see-also"></a>参照
+ [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md) [/runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

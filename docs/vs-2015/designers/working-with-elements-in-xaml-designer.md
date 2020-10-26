@@ -1,4 +1,4 @@
-﻿---
+---
 title: XAML デザイナーでの要素の操作 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663985"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML デザイナーでの要素の操作
@@ -22,7 +22,7 @@ ms.locfileid: "72663985"
 XAML で、コードで、または XAML デザイナーを使用して、アプリに要素 (コントロール、レイアウト、および図形) を追加できます。 このトピックでは、Visual Studio または Blend for Visual Studio で XAML デザイナーを使用して要素を操作する方法について説明します。
 
 ## <a name="adding-an-element-to-a-layout"></a>レイアウトへの要素の追加
- *レイアウト*とは、UI に要素を配置してサイズ変更するプロセスです。 ビジュアル要素を配置するには、それらを [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) レイアウトに配置する必要があります。 `Panel` には、[FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx) 型のコレクションである子プロパティがあります。 `Panel` のさまざまな子要素 ([Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx)、[StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)、[Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) など) をレイアウト コンテナーとして利用し、ページに要素を配置して整列することができます。
+ *レイアウト*とは、UI に要素を配置してサイズ変更するプロセスです。 ビジュアル要素を配置するには、それらを [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) レイアウトに配置する必要があります。 `Panel` には、[FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx) 型のコレクションである子プロパティがあります。 `Panel`[キャンバス](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx)、 [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)、 [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)などのさまざまな子要素を使用して、レイアウトコンテナーとして機能し、ページ上に要素を配置し、配置することができます。
 
  既定では、`Grid` パネルをページまたはフォーム内の最上位のレイアウト コンテナーとして使用します。 最上位のページ レイアウト内で、レイアウト パネル、コントロール、またはその他の要素を追加できます。
 
@@ -30,14 +30,14 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
 
 - XAML デザイナーで、次のいずれかの操作を行います。
 
-  - **[ツールボックス]** にある要素をダブルクリックします (または、ツールボックスにある要素を選択して Enter キーを押します)。
+  - **ツールボックス**内の要素をダブルクリックします (または、[ツールボックス] で要素を選択して enter キーを押します)。
 
   - 要素を **[ツールボックス]** からアートボードにドラッグします。
 
   - **[ツールボックス]** で、いずれかの描画ツール ([[楕円]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) や [[四角形]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx) など) を選択し、アクティブなパネルに要素を描画します。
 
 ## <a name="changing-the-layering-order-of-elements"></a>要素の重ね順の変更
- XAML デザイナーのアートボード上に要素が 2 つある場合は、重ね順に従って、一方の要素が他方の前に表示されます。 [ドキュメント アウトライン] ウィンドウで要素の一覧の最下位にある要素が最前面の要素です (要素の **[ZIndex]** プロパティが設定されている場合を除く)。 ページ、フォーム、またはレイアウト コンテナーに要素を挿入するとき、自動的に要素はアクティブなコンテナー要素内の他の要素より前面に配置されます。 要素の順序を変更するには、 **[順序]** コマンドを使用するか、[ドキュメント アウトライン] ウィンドウのオブジェクト ツリーで要素をドラッグします。
+ XAML デザイナーのアートボード上に要素が 2 つある場合は、重ね順に従って、一方の要素が他方の前に表示されます。 [ドキュメントアウトライン] ウィンドウの要素の一覧の一番下には、最上位の要素があります (要素の **ZIndex** プロパティが設定されている場合を除く)。 ページ、フォーム、またはレイアウト コンテナーに要素を挿入するとき、自動的に要素はアクティブなコンテナー要素内の他の要素より前面に配置されます。 要素の順序を変更するには、**[順序]** コマンドを使用するか、[ドキュメント アウトライン] ウィンドウのオブジェクト ツリーで要素をドラッグします。
 
 #### <a name="to-change-the-layering-order"></a>重ね順を変更するには
 
@@ -45,30 +45,30 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
 
   - **[ドキュメント アウトライン]** ウィンドウで要素を上下にドラッグして目的の重ね順を作成します。
 
-  - 重ね順を変更する要素を [ドキュメント アウトライン] ウィンドウまたはアートボードで右クリックし、 **[順序]** をポイントした後、次のいずれかをクリックします。
+  - 重ね順を変更する要素を [ドキュメント アウトライン] ウィンドウまたはアートボードで右クリックし、**[順序]** をポイントした後、次のいずれかをクリックします。
 
-    - **[最前面へ移動]** : 要素を重ね順の一番前に移動します。
+    - **[最前面へ移動]**: 要素を重ね順の一番前に移動します。
 
-    - **[前面へ移動]** : 要素を重ね順の 1 つ前に移動します。
+    - **[前面へ移動]**: 要素を重ね順の 1 つ前に移動します。
 
-    - **[背面へ移動]** : 要素を重ね順の 1 つ後ろに移動します。
+    - **[背面へ移動]**: 要素を重ね順の 1 つ後ろに移動します。
 
-    - **[最背面へ移動]** : 要素を重ね順の一番後ろに移動します。
+    - **[最背面へ移動]**: 要素を重ね順の一番後ろに移動します。
 
-    [プロパティ] ウィンドウの **[レイアウト]** セクションで **[ZIndex]** プロパティを変更します。 要素が重なり合うときは、 **[ZIndex]** プロパティのほうが、[ドキュメント アウトライン] ウィンドウに表示される要素の順序よりも優先されます。 **[ZIndex]** 値が小さい要素ほど、他の要素より前に表示されます。
+    [プロパティ] ウィンドウの **[レイアウト]** セクションで **[ZIndex]** プロパティを変更します。 要素が重なり合うときは、**[ZIndex]** プロパティのほうが、[ドキュメント アウトライン] ウィンドウに表示される要素の順序よりも優先されます。 **[ZIndex]** 値が小さい要素ほど、他の要素より前に表示されます。
 
 ## <a name="changing-the-alignment-of-an-element"></a>要素の配置の変更
  アートボードで要素の配置を調整するには、メニュー コマンドを使用するか、要素をスナップ ガイドラインに沿ってドラッグします。
 
- *スナップ ガイドライン*は、アプリ内の他の要素に対して要素を整列させる場合に役立つ視覚上の手掛かりです。
+ *スナップ線*は、要素をアプリ内の他の要素に対して相対的に配置するのに役立つ視覚的な手掛かりです。
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>メニュー コマンドを使用して複数の要素を整列させるには
 
 1. 整列させる要素を選択します。 複数の要素を選択するには、Ctrl キーを押したまま、要素を選択します。
 
-2. [プロパティ] ウィンドウの **[レイアウト]** セクションの **[HorizontalAlignment]** で、次のいずれかを選択します: **[Left]** 、 **[Center]** 、 **[Right]** 、または **[Stretch]** 。
+2. [プロパティ] ウィンドウの **[レイアウト]** セクションの **[HorizontalAlignment]** で、次のいずれかを選択します: **[Left]**、**[Center]**、**[Right]**、または **[Stretch]**。
 
-3. [プロパティ] ウィンドウの **[レイアウト]** セクションの **[VerticalAlignment]** で、次のいずれかを選択します: **[Top]** 、 **[Center]** 、 **[Bottom]** 、または **[Stretch]** 。
+3. [プロパティ] ウィンドウの **[レイアウト]** セクションの **[VerticalAlignment]** で、次のいずれかを選択します: **[Top]**、**[Center]**、**[Bottom]**、または **[Stretch]**。
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>スナップ ガイドラインを使用して複数の要素を整列させるには
 
@@ -83,7 +83,7 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
 
 1. 余白を変更する要素を選択します。
 
-2. [プロパティ] ウィンドウの **[レイアウト]** で、いずれかの **[Margin]** プロパティ ( **[Top]** 、 **[Left]** 、 **[Right]** 、 **[Bottom]** ) の値 (単位はピクセル。デバイスに依存しない単位。約 1/96 インチ) を変更します。
+2. [プロパティ] ウィンドウの **[レイアウト]** で、いずれかの **[Margin]** プロパティ (**[Top]**、**[Left]**、**[Right]**、**[Bottom]**) の値 (単位はピクセル。デバイスに依存しない単位。約 1/96 インチ) を変更します。
 
 #### <a name="to-change-an-elements-margins-in-the-artboard"></a>アートボードの要素の余白を変更するには
 
@@ -103,23 +103,23 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
 
 1. グループ化する要素を選択します。 複数の要素を選択するには、Ctrl キーを押しながら要素をクリックします。
 
-2. 選択した要素を右クリックし、 **[グループ (パネル) に含める]** をポイントし、そのグループを配置するレイアウト コンテナーの種類をクリックします。
+2. 選択した要素を右クリックし、**[グループ (パネル) に含める]** をポイントし、そのグループを配置するレイアウト コンテナーの種類をクリックします。
 
     > [!TIP]
     > 要素をグループ化するために <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> を選択すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内の新しい <xref:Windows.UI.Xaml.Controls.Grid> パネルに要素が配置されます。 これらのレイアウト コンテナーのいずれかの要素のグループ化を解除すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> のみが削除され、<xref:Windows.UI.Xaml.Controls.Grid> パネルは削除されません。 `Grid` パネルを削除するには、要素のグループ化を再度解除します。
 
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>要素のグループ化を解除してレイアウトを削除するには
 
-- グループ解除するグループを右クリックして、 **[グループ解除]** をクリックします。
+- グループ解除するグループを右クリックして、**[グループ解除]** をクリックします。
 
-  要素のグループ化やグループ解除を行うには、[ドキュメント アウトライン] ウィンドウで選択したアイテムを右クリックして、 **[グループ (パネル) に含める]** または **[グループ解除]** をクリックします。
+  要素のグループ化やグループ解除を行うには、[ドキュメント アウトライン] ウィンドウで選択したアイテムを右クリックして、**[グループ (パネル) に含める]** または **[グループ解除]** をクリックします。
 
 ## <a name="resetting-the-element-layout"></a>要素のレイアウトのリセット
  要素の特定のレイアウト プロパティを既定値に戻すには、レイアウトのリセットのコマンドを使用します。 このコマンドを使用すると、要素の余白、配置、幅、高さ、およびサイズを、個別に、またはまとめてリセットできます。
 
 #### <a name="to-reset-the-element-layout"></a>要素のレイアウトをリセットするには
 
-- [ドキュメント アウトライン] ウィンドウまたはアートボードで要素を右クリックし、 **[レイアウト]** 、 **[ *PropertyName* のリセット]** の順に選択します。ここで、*PropertyName* は、リセットするプロパティです (あるいは、要素のすべてのレイアウト プロパティをリセットするには、 **[レイアウト]** 、 **[すべてリセット]** の順に選択します)。
+- [ドキュメント アウトライン] ウィンドウまたはアートボードで要素を右クリックし、**[レイアウト]**、**[** *PropertyName* のリセット] の順に選択します。ここで、*PropertyName* は、リセットするプロパティです (あるいは、要素のすべてのレイアウト プロパティをリセットするには、**[レイアウト]**、**[すべてリセット]** の順に選択します)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

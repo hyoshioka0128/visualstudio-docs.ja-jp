@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 741f347a5b5d9f9268604d76afac2ace051faefa
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817386"
 ---
 # <a name="expected-"></a>';' が必要です。
@@ -30,7 +30,7 @@ ms.locfileid: "85817386"
   
 - 関数呼び出しがかっこを正しく使用していることを確認します。  
   
-- For ループのヘッダー内でセミコロンを忘れないよう**に**してください。  
+- For ループのヘッダー内でセミコロンを忘れないよう **に** してください。  
   
 ## <a name="see-also"></a>関連項目  
  [JavaScript コードの記述](../../javascript/writing-javascript-code.md)

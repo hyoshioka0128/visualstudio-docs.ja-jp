@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234953"
 ---
 # <a name="how-to-troubleshoot-services"></a>方法: サービスのトラブルシューティング
@@ -38,9 +38,9 @@ if (log == null) return;
 
 ## <a name="to-troubleshoot-a-service"></a>サービスのトラブルシューティングを行うには
 
-1. システムレジストリを調べて、サービスが正しく登録されているかどうかを確認します。 詳細については、「[方法: サービスを提供する](../extensibility/how-to-provide-a-service.md)」を参照してください。
+1. システムレジストリを調べて、サービスが正しく登録されているかどうかを確認します。 詳細については、「 [方法: サービスを提供する](../extensibility/how-to-provide-a-service.md)」を参照してください。
 
-    次の *.reg*ファイルフラグメントは、SVsTextManager サービスを登録する方法を示しています。
+    次の *.reg* ファイルフラグメントは、SVsTextManager サービスを登録する方法を示しています。
 
    ```
    [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]
@@ -56,7 +56,7 @@ if (log == null) return;
 
    2. インターフェイスに明示的に割り当てられている GUID はありません。 そのため、必要に応じて、システムによってオブジェクトの既定の GUID が作成されます。
 
-3. サービスを要求している VSPackage が配置されていることを確認してください。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]サイトを構築した後、を呼び出す前に VSPackage し <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> ます。
+3. サービスを要求している VSPackage が配置されていることを確認してください。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] サイトを構築した後、を呼び出す前に VSPackage し <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> ます。
 
     サービスを必要とする VSPackage コンストラクターにコードがある場合は、それをメソッドに移動し `Initialize` ます。
 
@@ -70,4 +70,4 @@ if (log == null) return;
 - [利用可能なサービスの一覧](../extensibility/internals/list-of-available-services.md)
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)
 - [サービスの基本事項](../extensibility/internals/service-essentials.md)
-- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

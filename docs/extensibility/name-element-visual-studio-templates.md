@@ -1,5 +1,5 @@
 ---
-title: 名前要素 (Visual Studio テンプレート) |マイクロソフトドキュメント
+title: Name 要素 (Visual Studio テンプレート) |Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702456"
 ---
-# <a name="name-element-visual-studio-templates"></a>名前要素 (Visual Studio テンプレート)
-**[新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目の追加**] ダイアログ ボックスに表示されるテンプレートの名前を指定します。
+# <a name="name-element-visual-studio-templates"></a>Name 要素 (Visual Studio テンプレート)
+[ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートの名前を指定します。
 
- \<VS テンプレート\<>\<テンプレートデータ>名>
+ \<VSTemplate> \<TemplateData>
+ \<Name>
 
 ## <a name="syntax"></a>構文
 
@@ -42,11 +43,11 @@ ms.locfileid: "80702456"
 
 |属性|説明|
 |---------------|-----------------|
-|`Package`|高度なユーザー シナリオの場合は、オプションの属性です。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|
-|`ID`|高度なユーザー シナリオの場合は、オプションの属性です。<br /><br /> Visual Studio のリソース ID を指定します。|
+|`Package`|高度なユーザーシナリオ用の省略可能な属性です。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|
+|`ID`|高度なユーザーシナリオ用の省略可能な属性です。<br /><br /> Visual Studio のリソース ID を指定します。|
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -59,7 +60,7 @@ ms.locfileid: "80702456"
 
  テキストによってテンプレートの名前を指定します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
  `Name` は `TemplateData` に必須の子要素です。
 
 ## <a name="example"></a>例
@@ -90,5 +91,5 @@ ms.locfileid: "80702456"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
-- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

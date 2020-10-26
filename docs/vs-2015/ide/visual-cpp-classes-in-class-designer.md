@@ -1,4 +1,4 @@
-﻿---
+---
 title: クラス デザイナーの Visual C++ クラス | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fc312736508a11d43cadf789b08aae77c528d35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608675"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>クラス デザイナーの Visual C++ クラス
@@ -36,7 +36,7 @@ class A {};
 class B : A {};
 ```
 
- また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、 **[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。
+ また、クラス ダイアグラムに B クラスのみをドラッグしてから、B のクラス図形を右クリックして、**[基底クラスの表示]** をクリックすることもできます。 このようにすると、基底クラスである A が表示されます。
 
 ## <a name="multiple-inheritance"></a>多重継承
  クラス デザイナーは、複数クラスの継承関係の視覚化をサポートしています。 *多重継承*は、派生クラスが複数の基底クラスの属性を持つときに使用されます。 多重継承の例を次に示します。
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  クラスの図形を右クリックして **[基底クラスの表示]** をクリックすると、選択したクラスの基底クラスが表示されます。
 
 > [!NOTE]
-> **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、[クラス ビュー] を開き、型ノードを展開し、 **[派生型]** サブフォルダーを展開してからこれらの型をクラス ダイアグラムにドラッグすると表示できます。
+> **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、[クラス ビュー] を開き、型ノードを展開し、**[派生型]** サブフォルダーを展開してからこれらの型をクラス ダイアグラムにドラッグすると表示できます。
 
  複数クラスの継承の詳細については、「[Multiple Inheritance](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)」((NOTINBUILD) 多重継承) と「[Multiple Base Classes](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)」(複数の基底クラス) を参照してください。
 
@@ -90,7 +90,7 @@ class Swimmer
 };
 ```
 
- これらの宣言をクラス ダイアグラムで表示すると、クラス名の `Swimmer` とその純粋仮想関数である `swim` は、抽象クラスの図形で、 **[抽象クラス]** の表記とともに斜体で表示されます。 抽象クラス型の図形は、枠線が点線である点を除いて、通常のクラスと同じです。
+ これらの宣言をクラス ダイアグラムで表示すると、クラス名の `Swimmer` とその純粋仮想関数である `swim` は、抽象クラスの図形で、**[抽象クラス]** の表記とともに斜体で表示されます。 抽象クラス型の図形は、枠線が点線である点を除いて、通常のクラスと同じです。
 
  抽象基底クラスからの派生クラスは、基底クラスの各純粋仮想関数をオーバーライドする必要があります。オーバーライドしない場合、派生クラスをインスタンス化できません。 そのため、たとえば、`Fish` クラスを `Swimmer` クラスから派生させた場合、`Fish` は `swim` メソッドをオーバーライドする必要があります。
 
@@ -152,22 +152,22 @@ typedef struct
 
 |コード要素|クラス デザイナー ビュー|
 |------------------|-------------------------|
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|
-|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> テンプレート クラス<br /><br /> `B<T2>`<br /><br /> テンプレート クラス<br /><br /> (B は、 **[入れ子にされた型]** の下のクラス A の中に含まれます)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func \<T, U> (+ 1 オーバーロード)|
+|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> テンプレート クラス<br /><br /> `B<T2>`<br /><br /> テンプレート クラス<br /><br /> (B は、**[入れ子にされた型]** の下のクラス A の中に含まれます)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> クラス<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> テンプレート クラス|
 
  次の表は、テンプレート継承の例です。
 
 |コード要素|クラス デザイナー ビュー|
 |------------------|-------------------------|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> クラス<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> クラス<br /><br /> (B は、 **[入れ子にされた型]** の下のクラス C の中に含まれます)<br /><br /> `C<T>`<br /><br /> テンプレート クラス|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> クラス<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> クラス<br /><br /> (B は、**[入れ子にされた型]** の下のクラス C の中に含まれます)<br /><br /> `C<T>`<br /><br /> テンプレート クラス|
 
  次の表は、標準特殊クラス接続の例です。
 
 |コード要素|クラス デザイナー ビュー|
 |------------------|-------------------------|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> クラス<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> クラス<br /><br /> `C<T>`<br /><br /> テンプレート クラス<br /><br /> `D`<br /><br /> クラス<br /><br /> ->C\<float>|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> 」 \<T>|
 
-## <a name="see-also"></a>関連項目
- [ビジュアルC++コードの操作 (クラスデザイナー) ](../ide/working-with-visual-cpp-code-class-designer.md) [Classes と構造体 ](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Anonymous クラス型 ](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [ (NOTINBUILD) 複数の継承 ](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [Multiple 基底クラス ](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)[テンプレート](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+## <a name="see-also"></a>参照
+ [Visual C++ コード (クラスデザイナー)](../ide/working-with-visual-cpp-code-class-designer.md) [クラスと構造体](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Anonymous Class Types](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)の操作[(notinbuild) 多重継承](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)[複数の基底クラス](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)[テンプレート](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

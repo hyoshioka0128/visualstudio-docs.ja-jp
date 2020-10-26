@@ -11,10 +11,10 @@ ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
 ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686932"
 ---
 # <a name="extending-the-toolbox"></a>ツールボックスの拡張
@@ -27,20 +27,20 @@ ms.locfileid: "65686932"
 - VSPackage が、既存の **ツールボックス** 機能のターゲットまたはコンシューマーとなり、ドラッグ アンド ドロップ操作をサポートして、 **ツールボックス**の外観を構成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [方法: Windows フォームを使用するツールボックス コントロールを作成します。](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  
+ [方法: Windows フォームを使用するツールボックス コントロールを作成する](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  
  Windows フォームのツールボックス コントロール テンプレートを使用して、ツールボックス コントロールを作成する方法を説明します。  
   
  [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)  
  WPF ツールボックス コントロール テンプレートを使用して、ツールボックス コントロールを作成する方法を説明します。  
   
- [ツールボックスの管理](../misc/managing-the-toolbox.md)  
+ [Managing the Toolbox](../misc/managing-the-toolbox.md)  
  VSPackage で **ツールボックス**のコンテンツと外観を管理する方法を記述します。  
   
 ## <a name="related-sections"></a>関連項目  
- [方法: [ツールボックス] ウィンドウを管理する](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [方法: ツールボックス ウィンドウの管理](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  **の統合開発環境 (IDE) で** ツールボックス [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用する方法を説明します。  
   
- [方法: ツールボックスを制御します。](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ [方法 : ツールボックスを制御する](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  オートメーション プログラミング モデルを使用して **ツールボックス** を管理する方法を説明します。  
   
  [Visual Studio の他の部分の拡張](../extensibility/extending-other-parts-of-visual-studio.md)  

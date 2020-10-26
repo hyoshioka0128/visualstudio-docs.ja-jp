@@ -1,4 +1,4 @@
-﻿---
+---
 title: コード スニペットの関数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,21 +14,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620234"
 ---
 # <a name="code-snippet-functions"></a>コード スニペットの関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[csprcs](../includes/csprcs-md.md)] コード スニペットで使用できる関数は 3 つあります。 関数は、コード スニペットの [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 要素で指定されています。 コード スニペットの作成については、「[コード スニペット](../ide/code-snippets.md)」を参照してください。
+[!INCLUDE[csprcs](../includes/csprcs-md.md)] コード スニペットで使用できる関数は 3 つあります。 関数は、コード スニペットの [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 要素で指定されています。 コードスニペットの作成の詳細については、「 [コードスニペット](../ide/code-snippets.md)」を参照してください。
 
 ## <a name="functions"></a>関数
  次の表で、コード スニペットの `Function` 要素で使用できる関数について説明します。
 
-|関数|説明|言語|
+|Function|[説明]|言語|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|`EnumerationLiteral` パラメーターで指定された列挙体のメンバー用に、switch ステートメントおよび一連の case ステートメントを生成します。 `EnumerationLiteral` パラメーターは、列挙体リテラルまたは列挙型のいずれかへの参照にする必要があります。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|挿入されたスニペットを含むクラスの名前を返します。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
@@ -153,5 +153,5 @@ ms.locfileid: "72620234"
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Function 要素 (Intellisense コードスニペット)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) [コードスニペットスキーマリファレンス](../ide/code-snippets-schema-reference.md)

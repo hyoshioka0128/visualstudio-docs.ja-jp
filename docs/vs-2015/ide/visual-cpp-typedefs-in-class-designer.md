@@ -1,4 +1,4 @@
-﻿---
+---
 title: クラス デザイナーにおける Visual C++ の typedef | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646749"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>クラス デザイナーにおける Visual C++ の typedef
@@ -117,7 +117,7 @@ class A {
 
  Typedef
 
- 上と同じ。
+ 上記と同じです。
 
 ```
 Class B {};
@@ -200,5 +200,5 @@ class A {
 
  -> MyIntVect
 
-## <a name="see-also"></a>関連項目
- [ビジュアルC++コードの操作 (クラスデザイナー)](../ide/working-with-visual-cpp-code-class-designer.md) [(Notinbuild) typedef 指定子](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+## <a name="see-also"></a>参照
+ [Visual C++ コードの操作 (クラスデザイナー)](../ide/working-with-visual-cpp-code-class-designer.md) [(notinbuild) typedef 指定子](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

@@ -10,18 +10,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594644"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>方法: エスケープ シーケンスを使用してテンプレートからテンプレートを生成する
-別のテキスト テンプレートを作成するテキスト出力として生成されたテキスト テンプレートを作成することができます。 これを行うには、テキスト テンプレートのタグを区切るためにエスケープ シーケンスを使用する必要があります。 エスケープシーケンスを使用しない場合、生成されたテキストテンプレートには定義済みの意味があります。 テキスト テンプレートでのエスケープ シーケンスの使用の詳細については、次を参照してください。[テキスト テンプレートでのエスケープ シーケンスの使用](../modeling/using-escape-sequences-in-text-templates.md)
+生成されたテキストの出力として別のテキストテンプレートを作成するテキストテンプレートを作成できます。 そのためには、エスケープシーケンスを使用してテキストテンプレートタグを記述する必要があります。 エスケープシーケンスを使用しない場合、生成されたテキストテンプレートには定義済みの意味があります。 テキストテンプレートでのエスケープシーケンスの使用の詳細については、「 [テキストテンプレートでのエスケープシーケンスの使用](../modeling/using-escape-sequences-in-text-templates.md)」を参照してください。
 
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>テキスト テンプレート内でテキスト テンプレートを生成するには
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>テキストテンプレート内からテキストテンプレートを生成するには
 
-- 別のテキスト テンプレート ファイル内で、ディレクティブ、ステートメント、式、クラス機能といった必要なマークアップ タグをテキスト テンプレート内で作成するためにエスケープ文字として、バックスラッシュ (\\) を使用します。
+- 区切り記号 ( \\ ) をエスケープ文字として使用して、テキストテンプレート内でディレクティブ、ステートメント、式、およびクラス機能のために必要なマークアップタグを別のテキストテンプレートファイルに生成します。
 
     ```
     \<#@ directive \#>
@@ -30,8 +30,8 @@ ms.locfileid: "75594644"
     \<#+ classfeature \#>
     ```
 
-## <a name="example"></a>使用例
- 次の例では、エスケープ文字を使用して、テキスト テンプレートからテキスト テンプレートを生成します。 `output` ディレクティブは、変換先ファイルのテキスト テンプレート ファイルの種類 (.tt) を設定します。
+## <a name="example"></a>例
+ 次の例では、エスケープ文字を使用してテキストテンプレートからテキストテンプレートを生成します。 ディレクティブは、 `output` 変換先のファイルの種類をテキストテンプレートファイルの種類 (.tt) に設定します。
 
 ```csharp
 \<#@ output extension=".tt" \#>

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eb0e097c2f13fa9d9279a5f3e9761a53cb6e4b1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547746"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106:アサートをセキュリティで保護します
@@ -44,5 +44,5 @@ ms.locfileid: "85547746"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  セキュリティに関する注意事項を慎重に確認した後にのみ、この規則からの警告を非表示にします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

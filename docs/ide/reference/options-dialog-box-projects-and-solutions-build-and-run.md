@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461392"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>[オプション] ダイアログ ボックス: [プロジェクトおよびソリューション] \> [ビルド/実行]
@@ -58,7 +58,7 @@ ms.locfileid: "68461392"
 
 "*C++ プロジェクトのみに適用されます。* "
 
-ビルド ログ ファイルに書き込まれる情報量を決定します。ビルド ログ ファイルは、 *\\\<ProjectName>\Debug\\\<ProjectName>.log* にあります。
+ビルド ログ ファイルに書き込まれる情報量を決定します。これは、 *\\\<ProjectName>\Debug\\\<ProjectName>.log* にあります。
 
 ## <a name="see-also"></a>関連項目
 

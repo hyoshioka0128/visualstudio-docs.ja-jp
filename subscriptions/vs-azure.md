@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902923"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247325"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -20,19 +20,19 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 ## <a name="activation-steps"></a>アクティブ化の手順
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
-2. [特典] ページの [ツール] セクションで、Azure のタイルを見つけて、特典タイルの下部にある **[ライセンス認証]** リンクをクリックします。
+2. [特典] ページの [ツール] セクションで、Azure のタイルを見つけて、特典タイルの下部にある **[ライセンス認証]** リンクを選択します。
    > [!div class="mx-imgBorder"]
    > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
 
-3. 既存の Azure サブスクリプションがない場合は、必要な情報を入力して Azure サブスクリプションを作成するように求められます。  最初の手順は、ご自分の個人情報を入力してから、 **[次へ]** をクリックすることです。
+3. 既存の Azure サブスクリプションがない場合は、必要な情報を入力して Azure サブスクリプションを作成するように求められます。  最初の手順は、ご自分の個人情報を入力してから、 **[次へ]** を選択することです。
    > [!div class="mx-imgBorder"]
    > ![Azure のサインアップ](_img/vs-azure/vs-azure-about-you.png)
 
-4. 次に、簡単な確認コードを使用して本人確認を行う必要があります。 電話番号を入力し、コードをテキストで受け取るか、または電話で受け取るかを選択します。  受け取ったコードを入力して、 **[コードの確認]** をクリックします。   
+4. 次に、簡単な確認コードを使用して本人確認を行う必要があります。 電話番号を入力し、コードをテキストで受け取るか、または電話で受け取るかを選択します。  受け取ったコードを入力して、 **[コードの確認]** を選択します。   
    > [!div class="mx-imgBorder"]
    > ![Azure 準備作業](_img/vs-azure/vs-azure-identity.png)
 
-5. 最後の手順として、チェックボックスをオンにして使用条件に同意した後、 **[サインアップ]** をクリックします。  必要な作業は以上です。
+5. 最後の手順として、チェックボックスを選択して使用条件に同意した後、 **[サインアップ]** を選択します。  必要な作業は以上です。
    > [!div class="mx-imgBorder"]
    > ![Azure 準備作業](_img/vs-azure/vs-azure-agreement.png)
 

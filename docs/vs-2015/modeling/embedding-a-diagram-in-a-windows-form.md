@@ -10,22 +10,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669703"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows フォームでのダイアグラムの埋め込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DSL 図は、[[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]] ウィンドウに表示される Windows コントロールに埋め込むことができます。
+Windows コントロールに DSL 図を埋め込むことができます。これは、ウィンドウに表示され [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。
 
 ## <a name="embedding-a-diagram"></a>ダイアグラムの埋め込み
 
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Windows コントロールに DSL 図を埋め込むには
 
-1. 新しい**ユーザーコントロール**ファイルを DslPackage プロジェクトに追加します。
+1. 新しい **ユーザーコントロール** ファイルを DslPackage プロジェクトに追加します。
 
 2. パネルコントロールをユーザーコントロールに追加します。 このパネルには DSL の図が表示されます。
 
@@ -33,7 +33,7 @@ DSL 図は、[[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]] ウィンドウに�
 
      コントロールのアンカープロパティを設定します。
 
-3. ソリューションエクスプローラーで、ユーザーコントロールファイルを右クリックし、 **[コードの表示]** をクリックします。 次のコンストラクターと変数をコードに追加します。
+3. ソリューションエクスプローラーで、ユーザーコントロールファイルを右クリックし、[ **コードの表示**] をクリックします。 次のコンストラクターと変数をコードに追加します。
 
     ```csharp
 
@@ -75,7 +75,7 @@ DSL 図は、[[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]] ウィンドウに�
 
 #### <a name="updating-the-form-using-store-events"></a>ストアイベントを使用したフォームの更新
 
-1. フォームデザイナーで、`listBox1` という名前の**リストボックス**を追加します。 これにより、モデル内の要素の一覧が表示されます。 このモデルは、*ストアイベント*を使用してモデルと共に synchronism に保持されます。 詳細については、「[イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
+1. フォームデザイナーで、という名前の **リストボックス** を追加 `listBox1` します。 これにより、モデル内の要素の一覧が表示されます。 このモデルは、 *ストアイベント*を使用してモデルと共に synchronism に保持されます。 詳細については、「 [イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
 2. カスタムコードファイルで、DocView クラスにさらにメソッドをオーバーライドします。
 
@@ -149,9 +149,9 @@ DSL 図は、[[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]] ウィンドウに�
 
     ```
 
-4. DSL をテストするには、F5 キーを押し、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスでサンプルモデルファイルを開きます。
+4. DSL をテストするには、F5 キーを押し、の実験用インスタンスで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] サンプルモデルファイルを開きます。
 
      リストボックスには、モデル内の要素の一覧が表示され、追加または削除した後、[元に戻す] と [やり直し] の後に適切であることがわかります。
 
 ## <a name="see-also"></a>参照
- [プログラムコード内のモデルの移動と更新コード](../modeling/navigating-and-updating-a-model-in-program-code.md)を記述して[ドメイン固有言語をカスタマイズする](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [プログラムコード内のモデルの移動と更新コード](../modeling/navigating-and-updating-a-model-in-program-code.md)を記述して [ドメイン固有言語をカスタマイズする](../modeling/writing-code-to-customise-a-domain-specific-language.md)

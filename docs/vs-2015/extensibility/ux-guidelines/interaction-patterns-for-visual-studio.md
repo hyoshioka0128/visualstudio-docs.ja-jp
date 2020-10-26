@@ -9,32 +9,32 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f570d665ddbc97ccddf058e1bb424c62e23912cb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825284"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio のインタラクション パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ## <a name="overview"></a>概要
- 設計パターンは、制約の類似のセットに関する問題を解決するために特定の状況で適用できる設計のコアを一般に、です。 機能およびシステム デザイナーは、開始点で、その特定の状況に適応できますとしてこれらの設計パターンを使用します。
+ デザインパターンは、一般的には、特定の状況で適用して、同様の制約のセットに関する問題を解決できる設計の中核となります。 フィーチャーデザイナーとシステムデザイナーは、これらのデザインパターンを開始点として使用します。これは、特定の状況に合わせて調整できます。
 
- Visual Studio では、新しい機能を構築する際に考慮すべき一般的な相互作用パターンのライブラリには。 これには、デザイン パターンの 2 つのコアのコンテキストがあります。Visual Studio クライアント (devenv) と Visual Studio Online。 一部のデザインの問題については、すべての状況に適しているユビキタス パターンがあります。 多くの場合、ただし、ソリューション、異なる可能性があります UI 内で、ブラウザーとクライアント アプリケーションでホストされているが提示されています。
+ Visual Studio には、新しい機能を構築するときに考慮する必要がある一般的な相互作用パターンのライブラリが用意されています。 デザインパターンには、Visual Studio クライアント (devenv) と Visual Studio Online の2つのコアコンテキストがあります。 設計上の問題の中には、すべての状況に適したユビキタスパターンがあります。 ただし、多くの場合、このソリューションは、ブラウザー内に表示され、クライアントアプリケーションでホストされている UI では異なる場合があります。
 
-### <a name="visual-studio-client-pattern-types"></a>Visual Studio クライアント パターンの種類
+### <a name="visual-studio-client-pattern-types"></a>Visual Studio クライアントのパターンの種類
 
-|パターンの種類|説明|使用例|
+|パターンの種類|説明|例|
 |------------------|-----------------|--------------|
-|**アプリケーション レベルのパターン**|高度なパターンを決定する、またはアプリケーションのコンテキストを表示してそれらに含まれる複合デバイスとコントロール パターンを含む、アプリケーションに共通|-ツール ウィンドウ<br />ドキュメント ウィンドウ|
-|**コンポジット パターン**|アプリケーションのパターンにわたる可能性がある一般的なパターンまたは認識されているパターンの個別の構成でいくつかのコントロールで構成されます。|ビューの切り替え<br />リスト ビルダー<br />-データを表示します。<br />-通知<br />検証<br />モデルの選択|
-|**コントロール パターン**|どのように低レベルのコントロールについての詳細が動作する必要があります。|ツリー ビュー<br />グリッド コントロール内で編集|
+|**アプリケーションレベルのパターン**|アプリケーションに共通する高度なパターン、アプリケーションコンテキストの決定と表示、およびその中の複合およびコントロールパターンの格納|-ツールウィンドウ<br />-ドキュメントウィンドウ|
+|**複合パターン**|複数のアプリケーションパターンにわたる一般的なパターン、または個別の構成で複数のコントロールで構成される認識されるパターン|-ビューの切り替え<br />-リストビルダー<br />-データを表示しています<br />-通知<br />-検証<br />-選択モデル|
+|**コントロールパターン**|低レベルのコントロールの動作についての詳細|-ツリービュー<br />-Grid コントロール内での編集|
 
 ## <a name="application-patterns"></a>アプリケーション パターン
- 大まかに言えばは、Visual Studio のインターフェイスは、複数の windows、ダイアログ ボックス、コマンド、および 1 つの IDE 内でツールバーを構成します。 Visual Studio の階層には、コンテキストとドライブのメニューが決定します。 IDE のユーザー インターフェイスの主な統合ポイントがドキュメント ウィンドウ、ツール ウィンドウ、プロジェクト、コマンドの構造、テキスト エディター、ツールボックス、[プロパティ] ウィンドウおよびツール > オプション。
+ 大まかに言えば、Visual Studio のインターフェイスは、1つの IDE 内の複数のウィンドウ、ダイアログ、コマンド、およびツールバーで構成されています。 Visual Studio 階層によって、コンテキストメニューとドライブメニューが決まります。 IDE のユーザーインターフェイスの重要な統合ポイントは、ドキュメントウィンドウ、ツールウィンドウ、プロジェクト、コマンドの構造、テキストエディター、ツールボックス、プロパティウィンドウ、およびツール > オプションです。
 
- 各 IDE のユーザー インターフェイスの主な統合ポイントの基本的な使用パターンがないです。
+ IDE のユーザーインターフェイスの各主な統合ポイントには基本的な使用パターンがあります。
 
 - [Visual Studio のメニューとコマンド](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)
 
@@ -44,16 +44,16 @@ ms.locfileid: "67825284"
 
   - [ツール ウィンドウ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
-  - [ドキュメント エディターの表記規則](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
+  - [ドキュメントエディターの規則](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 
   - [ダイアログ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
   - [プロジェクト](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
-## <a name="common-control-patterns"></a>コモン コントロール パターン
- コントロール パターンは、主に動作する個別のコントロールの概要が必要です。 これは、一貫性の最も重要な領域の 1 つです。
+## <a name="common-control-patterns"></a>コモンコントロールパターン
+ コントロールパターンは、主に個々のコントロールがどのように動作するかを示します。 これは、一貫性が最も重要な1つの領域です。
 
- Visual Studio での最も一般的なコントロールは、デスクトップ Windows ガイドラインに従う必要があります。 当社のガイドラインには、Visual Studio に固有の相互作用、または場所を置き換えるガイドライン全体を高度なユーザーのニーズを満たすために Visual Studio を調整するために一般的な規則を強化することが必要になる領域にはのみが含まれます。
+ Visual Studio の最も一般的なコントロールは、デスクトップの Windows ガイドラインに従う必要があります。 このガイドラインに含まれるのは、Visual Studio 固有の対話で共通の規則を強化する必要がある場合、または高度なユーザーのニーズに合わせて Visual Studio を調整するためにガイドラインを完全に置き換える場所だけです。
 
 - [Visual Studio の コモン コントロール パターン](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 
@@ -61,18 +61,18 @@ ms.locfileid: "67825284"
 
   - [テキスト コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
-  - [ボタンやハイパーリンク](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+  - [ボタンとハイパーリンク](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
-## <a name="composite-patterns"></a>コンポジット パターン
- さまざまなユーザー タスクを実行することを期待する方法があります。 可能な限り、これらのパターンは、相互作用とビジュアル デザインの両方を使用する機能を設計する必要があります。
+## <a name="composite-patterns"></a>複合パターン
+ ユーザーは、さまざまな方法でタスクを実行することを想定しています。 可能な限り、これらのパターンを相互作用とビジュアルデザインの両方に使用するように機能を設計する必要があります。
 
- いくつかの最も重要な Visual Studio 内の多くの複合パターンがありますが、整合性に関して。
+ Visual Studio 内には多くの複合パターンがありますが、一貫性に関して最も重要なものは次のとおりです。
 
 - [Visual Studio の複合パターン](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)
 
-  - [オブジェクトの UI とピークします。](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+  - [オブジェクト内の UI とピーク](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
-  - [モデルの選択](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+  - [選択モデル](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
   - [永続化と設定の保存](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 

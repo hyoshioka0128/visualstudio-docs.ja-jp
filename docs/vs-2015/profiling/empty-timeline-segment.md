@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179047"
 ---
 # <a name="empty-timeline-segment"></a>空のタイムライン セグメントです
@@ -33,6 +33,6 @@ ms.locfileid: "68179047"
   
 - マーカー チャネルの場合は、マーカーが生成されなかったことを意味します。  
   
-## <a name="see-also"></a>関連項目  
- [スレッド ビュー](../profiling/threads-view-parallel-performance.md)   
+## <a name="see-also"></a>参照  
+ [スレッドビュー](../profiling/threads-view-parallel-performance.md)   
  [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)

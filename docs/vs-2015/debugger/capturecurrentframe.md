@@ -1,5 +1,5 @@
 ---
-title: CaptureCurrentFrame |Microsoft Docs
+title: CaptureCurrentFrame | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2718e800e2a31eb66319259ed1e43f2ab8b084c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161633"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
@@ -30,8 +30,8 @@ void CaptureCurrentFrame();
 ## <a name="remarks"></a>Remarks  
  `BeginCapture` 関数によって開始されたキャプチャなど、別のキャプチャ操作が進行中の場合、そのキャプチャ操作は完了し、別個のフレームとしてグラフィックス ログに記録されます。 その直後、グラフィックス診断によって現在のフレームの残りの部分のキャプチャが開始され、それも個別のフレームとして記録されます。 present への呼び出しによって、現在のフレームの末尾がマークされます。  
   
- フレームをキャプチャするには、キャプチャしてグラフィックス情報を記録するアプリを準備する必要があります: 呼び出したする必要があります、 [Init](../debugger/init.md)のインスタンスを通じて、`VsgDbg`クラスを呼び出す前に`CaptureCurrentFrame`します。  
+ フレームをキャプチャするには、グラフィックス情報をキャプチャして記録するようにアプリケーションを準備する必要があります。つまり、`CaptureCurrentFrame` を呼び出す前に、`VsgDbg` クラスのインスタンスを通じて [Init](../debugger/init.md) を呼び出してしておく必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [Init](../debugger/init.md)   
+## <a name="see-also"></a>参照  
+ [初期化](../debugger/init.md)   
  [BeginCapture](../debugger/begincapture.md)

@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950517"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249544"
 ---
 # <a name="create-razor-web-apps"></a>Razor Web アプリの作成
 
@@ -48,10 +48,10 @@ Razor Web アプリには次の構成要素が含まれています。
 ### <a name="pages-folder"></a>Pages フォルダー
 
 このフォルダーには、プロジェクトの Web ページと各ページのコードビハインドが含まれています。
-   - HTML マークアップと Razor 構文のための " *\*.cshtml*" ファイル。
-   - ページ イベントを処理するための C# コードビハインドの " *\*.cshtml.cs*" ファイル。
+- HTML マークアップと Razor 構文のための " *\*.cshtml*" ファイル。
+- ページ イベントを処理するための C# コードビハインドの " *\*.cshtml.cs*" ファイル。
 
-サポート ファイルには、アンダー スコアで始まる名前が付けられます。 たとえば、_Layout.cshtml ファイルでは、すべてのページに共通の UI 要素が構成されます。 このファイルでは、ページの上部に表示されるナビゲーション メニューと下部に表示される著作権の通知が設定されます。 詳細については、「[ASP.NET Core でのレイアウト](/aspnet/core/mvc/views/layout)」をご覧ください。
+サポート ファイルには、アンダー スコアで始まる名前が付けられます。 たとえば、 *\_Layout.cshtml* ファイルでは、すべてのページに共通の UI 要素が構成されます。 このファイルでは、ページの上部に表示されるナビゲーション メニューと下部に表示される著作権の通知が設定されます。 詳細については、「[ASP.NET Core でのレイアウト](/aspnet/core/mvc/views/layout)」をご覧ください。
 
 ### <a name="launch-settings"></a>起動設定
 

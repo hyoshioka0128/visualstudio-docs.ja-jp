@@ -1,5 +1,5 @@
 ---
-title: Iデバッグスタックフレーム2::ゲットフィジカルスタックレンジ |マイクロソフトドキュメント
+title: 'IDebugStackFrame2:: GetPhysicalStackRange |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719670"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-スタック フレームに関連付けられた物理アドレスの範囲のコンピューターに依存する表現を取得します。
+スタックフレームに関連付けられている物理アドレスの範囲のコンピューターに依存する表現を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>パラメーター
 `paddrMin`\
-[アウト]このスタック フレームに関連付けられている最小の物理アドレスを返します。
+入出力このスタックフレームに関連付けられている最も低い物理アドレスを返します。
 
 `paddrMax`\
-[アウト]このスタック フレームに関連付けられた最大の物理アドレスを返します。
+入出力このスタックフレームに関連付けられている最も高い物理アドレスを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドによって返される情報は、スタック フレームを並べ替えるためにセッション デバッグ マネージャー (SDM) によって使用されます。
+## <a name="remarks"></a>注釈
+ このメソッドによって返される情報は、スタックフレームを並べ替えるためにセッションデバッグマネージャー (SDM) によって使用されます。
 
- 呼び出し履歴がダウンすると、新しいスタック フレームが、より低いメモリ アドレスで追加されることを前提としています。 ランタイム アーキテクチャでは、この前提に合った物理スタック範囲を提供する必要があります。
+ 呼び出し履歴が増加していることを前提としています。つまり、新しいスタックフレームはより低いメモリアドレスに追加されます。 実行時アーキテクチャは、この前提に一致する物理的なスタック範囲を提供する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

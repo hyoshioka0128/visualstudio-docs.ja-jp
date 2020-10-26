@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281085"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
@@ -38,9 +38,9 @@ ms.locfileid: "85281085"
 ## <a name="validate-data"></a>データの検証
 データセット内の検証は、次の方法で実現されます。
 
-- 変更時に個々のデータ列の値を確認できる、独自のアプリケーション固有の検証を作成する。 詳細については、「[方法: 列の変更時にデータを検証する](validate-data-in-datasets.md)」を参照してください。
+- 変更時に個々のデータ列の値を確認できる、独自のアプリケーション固有の検証を作成する。 詳細については、「 [方法: 列の変更時にデータを検証する](validate-data-in-datasets.md)」を参照してください。
 
-- データ行全体が変更されている間にデータを値にチェックできる独自のアプリケーション固有の検証を作成する。 詳細については、「[方法: 行の変更時にデータを検証する](validate-data-in-datasets.md)」を参照してください。
+- データ行全体が変更されている間にデータを値にチェックできる独自のアプリケーション固有の検証を作成する。 詳細については、「 [方法: 行の変更時にデータを検証する](validate-data-in-datasets.md)」を参照してください。
 
 - データセットの実際のスキーマ定義の一部として、キー、一意の制約などを作成する。
 
@@ -54,7 +54,7 @@ ms.locfileid: "85281085"
 既定では、列を変更するたびに4つのイベントが発生します。 1つ目は <xref:System.Data.DataTable.ColumnChanging> 、 <xref:System.Data.DataTable.ColumnChanged> 変更されている特定の列のイベントとイベントです。 次に、 <xref:System.Data.DataTable.RowChanging> イベントとイベントを示し <xref:System.Data.DataTable.RowChanged> ます。 行に対して複数の変更が行われている場合、各変更に対してイベントが発生します。
 
 > [!NOTE]
-> データ行のメソッドは、 <xref:System.Data.DataRow.BeginEdit%2A> 個々の <xref:System.Data.DataTable.RowChanging> 列が変更された後、イベントおよびイベントをオフにし <xref:System.Data.DataTable.RowChanged> ます。 その場合、イベントは、メソッドが呼び出されるまで発生しません <xref:System.Data.DataRow.EndEdit%2A> 。この場合、イベント <xref:System.Data.DataTable.RowChanging> と <xref:System.Data.DataTable.RowChanged> イベントが1回だけ発生します。 詳細については、「[データセットの読み込み中に制約をオフにする](../data-tools/turn-off-constraints-while-filling-a-dataset.md)」を参照してください。
+> データ行のメソッドは、 <xref:System.Data.DataRow.BeginEdit%2A> 個々の <xref:System.Data.DataTable.RowChanging> 列が変更された後、イベントおよびイベントをオフにし <xref:System.Data.DataTable.RowChanged> ます。 その場合、イベントは、メソッドが呼び出されるまで発生しません <xref:System.Data.DataRow.EndEdit%2A> 。この場合、イベント <xref:System.Data.DataTable.RowChanging> と <xref:System.Data.DataTable.RowChanged> イベントが1回だけ発生します。 詳細については、「 [データセットの読み込み中に制約をオフにする](../data-tools/turn-off-constraints-while-filling-a-dataset.md)」を参照してください。
 
 選択するイベントは、検証に必要な粒度によって異なります。 列が変更されたときにエラーをすぐにキャッチすることが重要な場合は、イベントを使用して検証をビルドし <xref:System.Data.DataTable.ColumnChanging> ます。 それ以外の場合は、 <xref:System.Data.DataTable.RowChanging> イベントを使用します。これにより、一度に複数のエラーがキャッチされる可能性があります。 さらに、ある列の値が別の列の内容に基づいて検証されるようにデータが構造化されている場合は、イベント中に検証を実行し <xref:System.Data.DataTable.RowChanging> ます。
 
@@ -64,7 +64,7 @@ ms.locfileid: "85281085"
 
 ## <a name="data-update-events"></a>データ更新イベント
 
-|event|説明|
+|Event|説明|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|列の値が変更されています。 イベントは、提案された新しい値と共に行と列を渡します。|
 |<xref:System.Data.DataTable.ColumnChanged>|列の値が変更されました。 イベントは、提案された値と共に行と列を渡します。|
@@ -97,7 +97,7 @@ ms.locfileid: "85281085"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>行の変更時にデータを検証するには (Visual Basic)
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。
 
@@ -108,7 +108,7 @@ ms.locfileid: "85281085"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>行の変更時にデータ検証するには (C#)
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。
 

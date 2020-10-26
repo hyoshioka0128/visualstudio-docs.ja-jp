@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374170"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801322"
 ---
 # <a name="add-file-header"></a>ファイル ヘッダーを追加する
 
@@ -34,12 +34,12 @@ ms.locfileid: "86374170"
 
 2. お使いの EditorConfig ファイルに次の規則を追加します: *file_header_template*。
 
-3. 適用するヘッダー テキストと同じ規則の値を設定します。
+3. 適用するヘッダー テキストと同じ規則の値を設定します。 ファイル名のプレースホルダーとして `{fileName}` を使用できます。
 
     ![EditorConfig ファイル ヘッダー規則](media/add-file-header-rule.png)
 
-> [!NOTE]
-> EditorConfig に複数行を明示的に含めることはできません。新しい行を挿入するには、Unix の改行文字を使用する必要があります。
+    > [!NOTE]
+    > EditorConfig に複数行を明示的に含めることはできません。新しい行を挿入するには、Unix の改行文字を使用する必要があります。
 
 4. C# または Visual Basic ファイルの最初の行にキャレットを置きます。
 

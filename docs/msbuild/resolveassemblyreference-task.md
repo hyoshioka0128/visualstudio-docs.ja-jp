@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632759"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference タスク
@@ -66,7 +66,7 @@ ms.locfileid: "77632759"
 |`ResolvedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> 完全パスに解決されるすべてのプライマリ参照の一覧が含まれます。<br /><br /> このパラメーターに指定するアイテムには、必要に応じて、次のアイテム メタデータを含めることができます。<br /><br /> -   `CopyLocal`: `Boolean` 値。 指定された参照を出力ディレクトリにコピーする必要があるかどうかを示します。<br />-   `FusionName`: `String` 値。 この依存関係の名前を指定します。<br />-   `ResolvedFrom`: `String` 値。 このファイルに解決されたリテラル検索パスを指定します。|
 |`SatelliteFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> 見つかったすべてのサテライト ファイルを指定します。 このアイテムが存在する原因となった参照または依存関係が CopyLocal=true の場合、これらのパラメーターは CopyLocal=true となります。<br /><br /> このパラメーターに指定するアイテムには、必要に応じて、次のアイテム メタデータを含めることができます。<br /><br /> -   `CopyLocal`: `Boolean` 値。 指定された参照を出力ディレクトリにコピーする必要があるかどうかを示します。 このアイテムが存在する原因となった参照または依存関係の `true` true `CopyLocal` の場合、この値は `true`にする必要があります。<br />-   `DestinationSubDirectory`: `String` 値。 このアイテムのコピー先の相対ディレクトリを指定します。|
 |`ScatterFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> 指定されたアセンブリの 1 つに関連付けられた scatter ファイルが含まれています。<br /><br /> このパラメーターに指定するアイテムには、必要に応じて、次のアイテム メタデータを含めることができます。<br /><br /> -   `CopyLocal`: `Boolean` 値。 指定された参照を出力ディレクトリにコピーする必要があるかどうかを示します。|
-|`SearchPaths`|必須の `String[]` 型のパラメーターです。<br /><br /> アセンブリを表すディスク上のファイルを探すために検索されるディレクトリまたは特別な場所を指定します。 検索パスを指定する順序が重要です。 各アセンブリについて、パスの一覧が左から右に検索されます。 アセンブリを表すファイルが見つかると、検索は停止し、次のアセンブリの検索が始まります。<br /><br /> このパラメーターは、セミコロンで区切られた値のリストを受け入れます。値は、ディレクトリ パスでも、下のリストからの特別なリテラル値でも可能です。<br /><br /> -   `{HintPathFromItem}`:タスクがベース アイテムの `HintPath` メタデータを調べるように指定します。<br />-   `{CandidateAssemblyFiles}`:タスクが `CandidateAssemblyFiles` パラメーターによって渡されたファイルを調べるように指定します。<br />-   `{Registry:` \<AssemblyFoldersBase>、\<RuntimeVersion>、\<AssemblyFoldersSuffix>`}`:タスクがレジストリで指定した追加のフォルダーを検索するように指定します。 \<AssemblyFoldersBase>, \<RuntimeVersion>, and \<AssemblyFoldersSuffix> を、検索されるレジストリの場所を示す特定の値に置き換える必要があります。 一般的なターゲットの既定の場所は {Registry:$(FrameworkRegistryBase), $(TargetFrameworkVersion), $(AssemblyFoldersSuffix), $(AssemblyFoldersExConditions)} です。<br />-   `{AssemblyFolders}`:タスクがレジストリからアセンブリを検索する Visual Studio .NET 2003 のスキームを使用するように指定します。<br />-   `{GAC}`:タスクがグローバル アセンブリ キャッシュ (GAC) 内を検索するように指定します。<br />-   `{RawFileName}`:タスクがアイテムの `Include` 値を正確なパスとファイル名として考慮するように指定します。|
+|`SearchPaths`|必須の `String[]` 型のパラメーターです。<br /><br /> アセンブリを表すディスク上のファイルを探すために検索されるディレクトリまたは特別な場所を指定します。 検索パスを指定する順序が重要です。 各アセンブリについて、パスの一覧が左から右に検索されます。 アセンブリを表すファイルが見つかると、検索は停止し、次のアセンブリの検索が始まります。<br /><br /> このパラメーターは、セミコロンで区切られた値のリストを受け入れます。値は、ディレクトリ パスでも、下のリストからの特別なリテラル値でも可能です。<br /><br /> -   `{HintPathFromItem}`:タスクがベース アイテムの `HintPath` メタデータを調べるように指定します。<br />-   `{CandidateAssemblyFiles}`:タスクが `CandidateAssemblyFiles` パラメーターによって渡されたファイルを調べるように指定します。<br />-   `{Registry:` \<AssemblyFoldersBase>, \<RuntimeVersion>, \<AssemblyFoldersSuffix>`}`: タスクがレジストリで指定した追加のフォルダーを検索するように指定します。 \<AssemblyFoldersBase>、 \<RuntimeVersion>、および \<AssemblyFoldersSuffix> は、検索対象のレジストリの場所の特定の値で置き換える必要があります。 一般的なターゲットの既定の場所は {Registry:$(FrameworkRegistryBase), $(TargetFrameworkVersion), $(AssemblyFoldersSuffix), $(AssemblyFoldersExConditions)} です。<br />-   `{AssemblyFolders}`:タスクがレジストリからアセンブリを検索する Visual Studio .NET 2003 のスキームを使用するように指定します。<br />-   `{GAC}`:タスクがグローバル アセンブリ キャッシュ (GAC) 内を検索するように指定します。<br />-   `{RawFileName}`:タスクがアイテムの `Include` 値を正確なパスとファイル名として考慮するように指定します。|
 |`SerializationAssemblyFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の読み取り専用の出力パラメーターです。<br /><br /> 見つかったすべての XML シリアル化アセンブリが格納されます。 このアイテムが存在する原因となった参照または依存関係が CopyLocal=true の場合に限り、これらのアイテムは CopyLocal=true とマークされます。<br /><br /> `Boolean` メタデータ CopyLocal は、指定された参照を出力ディレクトリにコピーする必要があるかどうかを示します。|
 |`Silent`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true`の場合、メッセージはログに記録されません。 既定値は `false` です。|
 |`StateFile`|省略可能な `String` 型のパラメーターです。<br /><br /> このタスクの中間ビルド状態の保存場所を示すファイル名を指定します。|

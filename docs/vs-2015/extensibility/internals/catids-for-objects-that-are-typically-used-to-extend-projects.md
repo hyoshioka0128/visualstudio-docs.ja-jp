@@ -13,26 +13,26 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162085"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>プロジェクトの拡張に通常使用されるオブジェクトの CATID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-次の表に、拡張に使用される Catid`Project`と`ProjectItem`オートメーション オブジェクトに対する[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]、 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]、および[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト。 これらの Catid は VSLangProj.olb で定義されます。  
+次の表に、 `Project` `ProjectItem` 、、およびの各プロジェクトのオブジェクトを拡張するために使用される catid の一覧を示し [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] ます。 これらの Catid は、VSLangProj で定義されています。  
   
-## <a name="listing-of-catids"></a>Catid を一覧表示します。  
+## <a name="listing-of-catids"></a>Catid の一覧  
   
 |名前|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
   
-## <a name="visual-basic-catids"></a>Visual Basic の Catid  
- 次の表に、拡張に使用される Catid[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]のオブジェクトを参照します。 すべてで定義されている VSLangProj.olb します。  
+## <a name="visual-basic-catids"></a>Visual Basic Catid  
+ 次の表に、参照オブジェクトを拡張するために使用される Catid の一覧を示し [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ます。 これらはすべて、VSLangProj で定義されています。  
   
 |名前|GUID|  
 |----------|----------|  
@@ -42,19 +42,19 @@ ms.locfileid: "68162085"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBFolderBrowseObject>|{932DC619-2EAA-4192-B7E6-3D15AD31DF49}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|  
   
-## <a name="visual-c-catids"></a>Visual c# の Catid  
- 次の Catid を拡張に使用できる[!INCLUDE[csprcs](../../includes/csprcs-md.md)]のオブジェクトを参照します。 すべてで定義されている VSLangProj.olb します。  
+## <a name="visual-c-catids"></a>Visual C# catid  
+ 次の Catid を使用して、 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 参照オブジェクトを拡張できます。 これらはすべて、VSLangProj で定義されています。  
   
 |名前|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFileBrowseObject>|{8D58E6AF-ED4E-48B0-8C7B-C74EF0735451}|  
-|<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFolderBrowseObject>|{914FE278-054A-45DB-BF9E-5F22484CC84C}|  
+|<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFolderBrowseObject>|{914FE278-054A45BF9E-5F22484 CC84 C}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpReferenceBrowseObject>|{2F0FA3B8-C855-4a4e-95A5-CB45C67D6C27}|  
   
-## <a name="c-catids"></a>C++ の Catid  
- 次[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト システムのタイプ ライブラリで公開の Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003年がこれらのプロジェクト オブジェクトを拡張するときに、コードに含まれるとします。 これらの Catid を以降のリリースでタイプ ライブラリに含まれます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+## <a name="c-catids"></a>C++ Catid  
+ 次の [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトシステム catid は、.net 2003 のタイプライブラリで公開されていません。これらのプロジェクトオブジェクトを拡張する場合は、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 必ずコードに含める必要があります。 これらの Catid は、の今後のリリースでタイプライブラリに含まれる予定 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] です。  
   
 |名前|GUID|  
 |----------|----------|  
@@ -62,7 +62,7 @@ ms.locfileid: "68162085"
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFileNode`|{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
   
- 次のコード例では、コードでこれらの Catid をプログラミングする方法を示します。  
+ 次のコード例は、コードでこれらの Catid をプログラミングする方法を示しています。  
   
 ```  
 const LPOLESTR CVCProjectNode::s_wszCATID = L"{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}";  
@@ -70,16 +70,16 @@ const LPOLESTR CVCFolderNode::s_wszCATID = L"{EE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683}";  
 ```  
   
- 次[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト システムでのタイプ ライブラリ Catid は公開されませんも[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].NET 2003年これらのプロジェクト オブジェクトを拡張するときに、コードに含める必要があるとします。 これらの Catid でのみ使用できます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].NET 2003年以降のリリースで利用できない、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+ 次の [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] project System catid は、.net 2003 のタイプライブラリにも公開されていません。これらのプロジェクトオブジェクトを拡張する場合は、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 必ずコードに含める必要があります。 これらの Catid は .Net 2003 でのみ使用でき [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、の今後のリリースでは使用できません [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。  
   
 |名前|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  
-|`CVCActiveXReferenceNode`|{9E8182D3-C60A-44f4-A74B-14C90EF9CACE}|  
+|`CVCActiveXReferenceNode`|{9E8182d3-c60a47 4F4-a74b14c90ef9cace}|  
 |`CVCReferences`|{FE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
   
- 次のコード例では、コードでこれらの Catid をプログラミングする方法を示します。  
+ 次のコード例は、コードでこれらの Catid をプログラミングする方法を示しています。  
   
 ```  
 const LPOLESTR CVCAssemblyReferenceNode::s_wszCATID = L"{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}";  
@@ -88,13 +88,13 @@ const LPOLESTR CVCActiveXReferenceNode::s_wszCATID = L"{9E8182D3-C60A-44f4-A74B-
 const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B683}";  
 ```  
   
- Guid、[!INCLUDE[csprcs](../../includes/csprcs-md.md)]と[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]プロジェクトの種類は、次の表に表示されます。  
+ [!INCLUDE[csprcs](../../includes/csprcs-md.md)]次の表に、およびプロジェクトの種類の guid を [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 示します。  
   
 |プロジェクトの種類|GUID|  
 |------------------|----------|  
 |[!INCLUDE[csprcs](../../includes/csprcs-md.md)]|{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}|  
 |[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]|{F184B08F-C81C-45F6-A57F-5ABD9991F28F}|  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクトとプロジェクト項目テンプレートを追加します。](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+## <a name="see-also"></a>参照  
+ [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)

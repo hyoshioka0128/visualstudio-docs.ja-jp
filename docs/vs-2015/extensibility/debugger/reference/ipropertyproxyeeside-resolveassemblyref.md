@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef |Microsoft Docs
+title: 'IPropertyProxyEESide:: ResolveAssemblyRef |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47c397746a82247a8cb1ee329d56004d013486de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199487"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定したマネージ アセンブリの参照の場所を決定します。  
+指定したマネージアセンブリ参照の場所を決定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,27 +48,27 @@ int ResolveAssemblyRef(
   
 #### <a name="parameters"></a>パラメーター  
  `assemName`  
- [in]解決するのには、アセンブリの名前です。  
+ から解決するアセンブリの名前。  
   
  `assemBytes`  
- [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)参照に関連付けられているアセンブリのバイト数を格納しているオブジェクト。  
+ 入出力参照に関連付けられているアセンブリのバイト数を含む [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) オブジェクトを返します。  
   
  `assemPdb`  
- [out]返します、`IEEDataStorage`シンボルを含むオブジェクトがこの参照に関連付けられているデータを格納します。  
+ 入出力 `IEEDataStorage` この参照に関連付けられているシンボルストアデータを格納しているオブジェクトを返します。  
   
  `assemLocation`  
- [out]この参照のパスの場所を返します。  
+ 入出力この参照のパスの場所を返します。  
   
  `alr`  
- [out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)この参照のアセンブリの場所を示す列挙値。  
+ 入出力この参照のアセンブリの場所を示す値を [Assemblylocresolution](../../../extensibility/debugger/reference/assemblylocresolution.md) 列挙から返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 通常、このメソッドはカスタム式エバリュエーターでは実装されません。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、通常、カスタム式エバリュエーターによって実装されていません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

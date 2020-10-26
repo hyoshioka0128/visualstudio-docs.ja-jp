@@ -1,5 +1,7 @@
 ---
-title: 必要なフレームワークバージョン要素マイクロソフトドキュメント
+title: RequiredFrameworkVersion 要素 (Visual Studio テンプレート)
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,21 +14,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701511"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037726"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>要素を要求します。
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 要素 (Visual Studio テンプレート)
 
-テンプレートに必要な .NET Framework の最小バージョンを指定します。 これにより、[**新しいプロジェクト**] ダイアログに **[ターゲット フレームワークのバージョン**] ドロップダウンが表示されます。 要素`RequiredFrameworkVersion`は、ドロップダウンで使用可能な最小値も決定します。
+テンプレートに必要な .NET Framework の最小バージョンを指定します。 これにより、[**新しいプロジェクト**] ダイアログに [**ターゲットフレームワークのバージョン**] ドロップダウンが表示されます。 また、要素は、 `RequiredFrameworkVersion` ドロップダウンリストで使用できる最小値を決定します。
 
 > [!IMPORTANT]
-> Visual Studio 2017 バージョン 15.6 以降、**ターゲット フレームワークバージョン**ドロップダウンは、[**新しいプロジェクト**] ダイアログの **[テンプレート]** セクションに表示されるテンプレートのフィルターではなくなりました。 代わりに、ドロップダウンは選択したテンプレートのフレームワーク ピッカーとして機能します。
+> Visual Studio 2017 バージョン15.6 以降では、[**新しいプロジェクト**] ダイアログの [**テンプレート**] セクションに表示されるテンプレートの [**ターゲットフレームワークのバージョン**] ボックスの一覧が表示されなくなりました。 代わりに、ドロップダウンリストは、選択したテンプレートのフレームワークの選択として機能します。
 
- \<VS テンプレート\<>\<テンプレート データ>必要なフレームワークの>
+ \<VSTemplate> \<TemplateData>
+ \<RequiredFrameworkVersion>
 
 ## <a name="syntax"></a>構文
 
@@ -38,29 +41,29 @@ ms.locfileid: "80701511"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、[**新しいプロジェクト**] ダイアログ ボックスまたは [**新しい項目の追加**] ダイアログ ボックスでの表示方法を定義します。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、 **新しいプロジェクト** または [ **新しい項目の追加** ] ダイアログボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、テンプレートに必要な .NET Framework の最小バージョン番号である必要があります。
+ このテキストは、テンプレートに必要な .NET Framework の最小バージョン番号である必要があります。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
-`RequiredFrameworkVersion` は省略可能な要素です。 この要素は、テンプレートが .NET Framework の特定の最小バージョン (およびそれ以降のバージョン) をサポートしている場合にのみ使用します。 要素を`RequiredFrameworkVersion`指定し、テンプレートが .NET Framework の特定の最小バージョンをサポートしていない場合は、適用できないときに **[ターゲット フレームワークのバージョン**] ドロップダウンが表示されます。
+`RequiredFrameworkVersion` は省略可能な要素です。 この要素は、テンプレートが .NET Framework の特定の最小バージョン (およびそれ以降のバージョン) をサポートしている場合にのみ使用します。 要素を指定し、 `RequiredFrameworkVersion` テンプレートが特定の最小バージョンの .NET Framework をサポートしていない場合、[ **ターゲットフレームワークのバージョン** ] ドロップダウンは適用できないときに表示されます。
 
 ## <a name="example"></a>例
 
-次の例は、標準[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]クラス テンプレートのメタデータを示しています。
+次の例は、標準クラステンプレートのメタデータを示してい [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ます。
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -80,10 +83,10 @@ ms.locfileid: "80701511"
 </VSTemplate>
 ```
 
-この例では、 で表される`RequiredFrameworkVersion`テンプレートで必要な .NET Framework の最小バージョンは 3.0 です。 このテンプレートで作成されたプロジェクトは、3.0 から始まる .NET Framework のバージョンを対象とすることができます。
+この例では、テンプレートで必要とされる .NET Framework の最小バージョン `RequiredFrameworkVersion` は3.0 です。 このテンプレートを使用して作成されたプロジェクトは、3.0 以降のバージョンを対象に .NET Framework ことができます。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
 - [フレームワーク対象設定機能の概要](../ide/visual-studio-multi-targeting-overview.md)

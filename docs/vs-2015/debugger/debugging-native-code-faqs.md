@@ -1,5 +1,5 @@
 ---
-title: ネイティブ コードのよく寄せられる質問のデバッグ |Microsoft Docs
+title: ネイティブ コードのデバッグに関する FAQ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63055cf443f20e353ac87ca3226e9f8208587fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190489"
 ---
 # <a name="debugging-native-code-faqs"></a>ネイティブ コードのデバッグに関する FAQ
@@ -52,6 +52,6 @@ ms.locfileid: "68190489"
   
 - [MFC の中で停止した場合、MFC を呼び出した関数に戻るには](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

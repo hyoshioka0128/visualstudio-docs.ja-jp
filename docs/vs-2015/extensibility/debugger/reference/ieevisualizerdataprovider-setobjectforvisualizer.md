@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::SetObjectForVisualizer |Microsoft Docs
+title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d20164e31f8c42b7099f99ff34ac120319a2def1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540280"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、ビジュアライザーを表すオブジェクトを変更します。  
+このメソッドは、ビジュアライザーが表すオブジェクトを変更します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,20 +44,20 @@ int SetObjectForVisualizer(
   
 #### <a name="parameters"></a>パラメーター  
  `pNewObject`  
- [in]設定するオブジェクト。  
+ から設定するオブジェクト。  
   
  `error`  
- [out]オブジェクトを設定中にエラーがあった場合、この文字列は、エラー メッセージを保持します。  
+ 入出力オブジェクトの設定中にエラーが発生した場合、この文字列にはエラーメッセージが格納されます。  
   
  `pException`  
- [out]エラーがあった場合、このオブジェクトは、例外情報を保持します。  
+ 入出力エラーが発生した場合、このオブジェクトは例外情報を保持します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- エラー情報を返す方法を決定する、実装者の責任です。 ただし、これはことを認識する例外オブジェクトが返されたかどうかにエラーが発生しました、エラーが発生した場合、このメソッドは例外オブジェクトを返す常にする必要がありますのでのみがいくつかの呼び出し元に可能性がありますができます。 エラー文字列は、呼び出し元が作成する場合も指定するのに使用します。  
+## <a name="remarks"></a>注釈  
+ エラー情報が返される方法は、実装者が決定します。 ただし、一部の呼び出し元では、エラーが発生したことを認識するために例外オブジェクトが返されたかどうかのみを調べることができます。したがって、エラーが発生した場合、このメソッドは常に例外オブジェクトを返します。 エラー文字列は、呼び出し元が使用しようとしている場合にも指定する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

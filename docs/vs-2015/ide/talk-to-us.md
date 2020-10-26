@@ -1,4 +1,4 @@
-﻿---
+---
 title: ご意見 | Microsoft ドキュメント
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,24 +12,24 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917694"
 ---
-# <a name="talk-to-us"></a>ご意見
+# <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新のドキュメントについては、「[お問い合わせ](/visualstudio/ide/feedback-options)」を参照してください。
+Visual Studio の最新のドキュメントについては、「 [お問い合わせ](/visualstudio/ide/feedback-options)」を参照してください。
 
 ドキュメントをより良いものにするために、皆様のご意見をお寄せください。 個別に回答することはできませんが、お寄せいただいたフィードバックは、適切な担当者に届けられます。
 
 ## <a name="i-likedislike-something-in-the-visual-studio-documentation"></a>Visual Studio ドキュメントの良い点と改善が必要な点
- ページの下部にあるフィードバック ボタン ( **[このページは役に立ちましたか]** ) をお使いください。 このボタンは、すべての MSDN ページに表示されます。 目的の回答が見つからない場合は、お探しの情報の内容をお聞かせください。
+ ページの下部にあるフィードバック ボタン (**[このページは役に立ちましたか]**) をお使いください。 このボタンは、すべての MSDN ページに表示されます。 目的の回答が見つからない場合は、お探しの情報の内容をお聞かせください。
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Visual Studio での問題を報告します。
- クラッシュ、パフォーマンスの低下、予期しない動作など、Visual Studio の使用に関する問題が発生している場合は、[**クイック**起動] の横にあるフィードバックアイコンを右クリックするか、メインメニューの [ヘルプ **&#124; ] [ &#124;フィードバックの送信**] を選択して問題を報告してください。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。
+ クラッシュ、パフォーマンスの低下、予期しない動作など、Visual Studio を使用しているときに問題が発生した場合は、[ **クイック**起動] の横にあるフィードバックアイコンを右クリックするか、メインメニューから [ **&#124; ヘルプ] [フィードバックの送信] &#124; [問題の報告** ] の順に選択して、問題を報告してください。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio の機能に関するご提案
  改善できる点がありましたら、ぜひご連絡ください! **[提案事項の送信]** を選択して、Visual Studio チームに機能または変更を提案します。
@@ -40,7 +40,7 @@ Visual Studio の最新のドキュメントについては、「[お問い合�
 ## <a name="i-need-help"></a>ヘルプに関する情報
  オンライン ヘルプは、「 [Microsoft サポート](https://support.microsoft.com/) 」で提供されています。
 
- 米国とカナダ以外の国でのサポートは異なる場合があります。 地域別のサポート連絡先の一覧については、「 [Microsoft Worldwide サイト](https://www.microsoft.com/worldwide/)」をご覧ください。
+ 米国とカナダ以外の国でのサポートは異なる場合があります。 地域の連絡先の一覧については、「 [Microsoft ワールドワイドサイト](https://www.microsoft.com/worldwide/)」を参照してください。
 
  詳細については、「 [サポートの概要](https://visualstudio.microsoft.com/support/)」をご覧ください。
 

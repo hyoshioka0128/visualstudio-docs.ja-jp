@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5d88af6f24306b7b243359c9797a2cb7e7449bc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543508"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions メソッド
@@ -39,5 +39,5 @@ HRESULT GetAutoInsertExtensions(
 ## <a name="return-value"></a>戻り値
  メソッドが正常に完了したかどうかを示す HRESULT 値。
 
-## <a name="remarks"></a>Remarks
- 挿入される Office 用の各アプリは、Office アプリケーションの拡張子名として返されます。これは**HKEY_CURRENT_USER \software\microsoft\office\wef\developer**の下の値に対応します。 ホストはレジストリでこれらの値を検索してから、自動的に拡張機能を挿入する必要があります。
+## <a name="remarks"></a>解説
+ 挿入される Office 用の各アプリは、Office アプリケーションの拡張子名として返されます。これは **HKEY_CURRENT_USER \software\microsoft\office\wef\developer**の下の値に対応します。 ホストはレジストリでこれらの値を検索してから、自動的に拡張機能を挿入する必要があります。

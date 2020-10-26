@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192825"
 ---
 # <a name="start"></a>[開始]
@@ -42,16 +42,16 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>必須オプション  
  **Output** オプションは、コマンド ラインで **Start** が指定されている場合に指定する必要があります。  
   
- **Output:** `filename`  
+ **出力:**`filename`  
  出力ファイル名を指定します。  
   
 ## <a name="exclusive-options"></a>排他的なオプション  
  次のオプションは、コマンド ラインで **Start** とともにのみ使用できます。  
   
- **CrossSession**&#124;**CS**  
+ **クロスセッション**&#124;**CS**  
  プロセス間のプロファイリングを有効にします。 オプション名 **CrossSession** と **CS** は両方ともサポートされています。  
   
- **User:** [`domain\`]`username`  
+ **ユーザー:**[ `domain\` ]`username`  
  指定されたアカウントからモニターへのクライアント アクセスを有効にします。  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -60,7 +60,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>無効なオプション  
  次のオプションは、コマンド ラインで **Start** オプションとともに使用することができません。  
   
- **Status**  
+ **状態**  
  **Status** は、プロファイリングされるプロセスに適用されます。 プロセスとスレッドが現在のプロファイル状態 (オン/オフ) とともに一覧表示されます。 たとえば、プロセスが停止されても、**Status** はこのプロセスをレポートに記録しません。 **Status** は、プロセスがプロファイリングされているかどうかを示します。  
   
  **Shutdown**[ **:** `Timeout`]  
@@ -74,8 +74,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

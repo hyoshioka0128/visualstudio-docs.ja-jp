@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b524c9d630f30edd226265ac150ef7ec4f6c60d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651071"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual C#または Visual Basic と ADO.NET を使用して、単純な Windows フォーム "フォームオーバーデータ" アプリケーション内からデータベースと対話する方法について説明します。  データセット、LINQ to SQL、Entity Framework を含むすべての .NET データテクノロジは、最終的にこの記事に記載されている手順とよく似た手順を実行します。
+データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual C# または Visual Basic と ADO.NET を使用して、単純な Windows フォーム "フォームオーバーデータ" アプリケーション内からデータベースと対話する方法について説明します。  データセット、LINQ to SQL、Entity Framework を含むすべての .NET データテクノロジは、最終的にこの記事に記載されている手順とよく似た手順を実行します。
 
  この記事では、非常に高速な方法でデータベースからデータを取得する簡単な方法について説明します。 アプリケーションで単純な方法でデータを変更し、データベースを更新する必要がある場合は、Entity Framework を使用し、データバインディングを使用して、基になるデータの変更にユーザーインターフェイスコントロールを自動的に同期することを検討してください。
 
@@ -33,19 +33,19 @@ ms.locfileid: "72651071"
 
  **このトピックの内容**
 
-- [サンプルデータベースを設定する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)
+- [サンプル データベースを設定する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)
 
 - [フォームを作成してコントロールを追加する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)
 
-- [接続文字列を格納する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)
+- [接続文字列を保存する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)
 
 - [接続文字列を取得する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)
 
 - [フォームのコードを記述する](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)
 
-- [アプリケーションをテストする](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)
+- [アプリケーションのテスト](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
  アプリケーションの作成には、次が必要です:
 
 - Visual Studio Community Edition。
@@ -54,16 +54,16 @@ ms.locfileid: "72651071"
 
 - [「スクリプトを使用した SQL データベースの作成](../data-tools/create-a-sql-database-by-using-a-script.md)」の手順に従って作成した小さなサンプルデータベース。
 
-- 設定が完了したデータベースへの接続文字列。 この値を確認するには、 **SQL Server オブジェクトエクスプローラー**を開き、データベースのショートカットメニューを開き、 **[プロパティ]** を選択して、 **ConnectionString**プロパティにスクロールします。
+- 設定が完了したデータベースへの接続文字列。 この値を確認するには、 **SQL Server オブジェクトエクスプローラー**を開き、データベースのショートカットメニューを開き、[ **プロパティ**] を選択して、 **ConnectionString**  プロパティにスクロールします。
 
-  このトピックは、Visual Studio IDE の基本的な機能を理解していて、Windows フォーム アプリケーションの作成、そのプロジェクトへのフォームの追加、フォームにボタンなどのコントロールの追加、コントロールのプロパティの設定、およびシンプルなイベントのコード記述ができることを前提としています。 これらのタスクに慣れていない場合は、このトピックを開始する前に、[ビジュアルC#と Visual Basic ではじめに](../ide/getting-started-with-visual-csharp-and-visual-basic.md)を完了することをお勧めします。
+  このトピックは、Visual Studio IDE の基本的な機能を理解していて、Windows フォーム アプリケーションの作成、そのプロジェクトへのフォームの追加、フォームにボタンなどのコントロールの追加、コントロールのプロパティの設定、およびシンプルなイベントのコード記述ができることを前提としています。 これらのタスクに慣れていない場合は、このトピックを開始する前に、 [Visual C# および Visual Basic ではじめに](../ide/getting-started-with-visual-csharp-and-visual-basic.md) を完了することをお勧めします。
 
-## <a name="BKMK_setupthesampledatabase"></a>サンプルデータベースを設定する
- このチュートリアルで扱うサンプル データベースには、「Customer (顧客)」と「Order (注文)」のテーブルがあります。 最初はテーブルにデータはありませんが、作成したアプリケーションを実行するとデータが追加されます。 データベースには、5 種類のシンプルなストアド プロシージャもあります。 [スクリプトを使用した sql データベースの作成スクリプト](../data-tools/create-a-sql-database-by-using-a-script.md)には、テーブル、主キーと外部キー、制約、およびストアドプロシージャを作成する transact-sql スクリプトが含まれています。
+## <a name="set-up-the-sample-database"></a><a name="BKMK_setupthesampledatabase"></a> サンプルデータベースを設定する
+ このチュートリアルで扱うサンプル データベースには、「Customer (顧客)」と「Order (注文)」のテーブルがあります。 最初はテーブルにデータはありませんが、作成したアプリケーションを実行するとデータが追加されます。 データベースには、5 種類のシンプルなストアド プロシージャもあります。 [スクリプトを使用した sql データベースの作成スクリプト](../data-tools/create-a-sql-database-by-using-a-script.md) には、テーブル、主キーと外部キー、制約、およびストアドプロシージャを作成する transact-sql スクリプトが含まれています。
 
-## <a name="BKMK_createtheformsandaddcontrols"></a>フォームを作成してコントロールを追加する
+## <a name="create-the-forms-and-add-controls"></a><a name="BKMK_createtheformsandaddcontrols"></a> フォームを作成してコントロールを追加する
 
-1. Windows フォームアプリケーション用のプロジェクトを作成し、SimpleDataApp という名前を指定します。
+1. Windows フォーム アプリケーションのプロジェクトを作成し、SimpleDataApp という名前を付けます。
 
     Visual Studio は、Form1 という名前の空の Windows フォームを含めた、いくつかのファイルとプロジェクトを作成します。
 
@@ -82,9 +82,9 @@ ms.locfileid: "72651071"
 
    **Navigation フォーム**
 
-   ![ナビゲーションダイアログボックス](../data-tools/media/simpleappnav.png "SimpleAppNav")
+   ![ナビゲーション ダイアログ ボックス](../data-tools/media/simpleappnav.png "SimpleAppNav")
 
-|Navigation フォームのコントロール|プロパティ|
+|Navigation フォームのコントロール|Properties|
 |--------------------------------------|----------------|
 |Button|Name = btnGoToAdd|
 |Button|Name = btnGoToFillOrCancel|
@@ -92,9 +92,9 @@ ms.locfileid: "72651071"
 
  **NewCustomer フォーム**
 
- ![新しい顧客を追加して注文を行う](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![新しい顧客を追加して注文を作成する](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
 
-|NewCustomer フォームのコントロール|プロパティ|
+|NewCustomer フォームのコントロール|Properties|
 |---------------------------------------|----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +109,7 @@ ms.locfileid: "72651071"
 
  ![注文の入力または取り消し](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
 
-|FillOrCancel フォームのコントロール|プロパティ|
+|FillOrCancel フォームのコントロール|Properties|
 |----------------------------------------|----------------|
 |TextBox|Name = txtOrderID|
 |Button|Name = btnFindByOrderID|
@@ -119,31 +119,31 @@ ms.locfileid: "72651071"
 |Button|Name = btnFillOrder|
 |Button|Name = btnFinishUpdates|
 
-## <a name="BKMK_storetheconnectionstring"></a>接続文字列を格納する
+## <a name="store-the-connection-string"></a><a name="BKMK_storetheconnectionstring"></a> 接続文字列を格納する
  アプリケーションがデータベースの接続を開くとき、アプリケーションは接続文字列にアクセスする必要があります。 各フォームに文字列を手動で入力しないようにするには、プロジェクトのアプリ構成ファイルに文字列を格納し、アプリケーションの任意の形式からメソッドが呼び出されたときに文字列を返すメソッドを作成します。
 
- 接続文字列を確認するには、データベースを右クリックし、 **[プロパティ]** を選択して、ConnectionString プロパティを見つけます。 **SQL Server オブジェクトエクスプローラー**をクリックします。 Ctrl + A キーを使用して、文字列を選択します。
+ 接続文字列を確認するには、データベースを右クリックし、[**プロパティ**] を選択して、ConnectionString プロパティを見つけます。 **SQL Server オブジェクトエクスプローラー**をクリックします。 Ctrl + A キーを使用して、文字列を選択します。
 
-1. **ソリューションエクスプローラー**で、プロジェクトの **[プロパティ]** ノードを選択し、 **[設定]** を選択します。
+1. **ソリューションエクスプローラー**で、プロジェクトの [**プロパティ**] ノードを選択し、[**設定**] を選択します。
 
-2. **[名前]** 列に「`connString`」と入力します。
+2. [ **名前** ] 列に「」と入力し `connString` ます。
 
-3. **[種類]** ボックスの一覧で **[(接続文字列)]** を選択します。
+3. [ **種類** ] ボックスの一覧で [ **(接続文字列)**] を選択します。
 
-4. **[スコープ]** ボックスの一覧で **[アプリケーション]** を選択します。
+4. [ **スコープ** ] ボックスの一覧で [ **アプリケーション**] を選択します。
 
-5. **[値]** 列に、(引用符を除く) 接続文字列を入力し、変更を保存します。
+5. [ **値** ] 列に、(引用符を除く) 接続文字列を入力し、変更を保存します。
 
 > [!NOTE]
-> 実際のアプリケーションでは、「[接続文字列と構成ファイル](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)」で説明されているように、接続文字列を安全に保存する必要があります。
+> 実際のアプリケーションでは、「 [接続文字列と構成ファイル](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)」で説明されているように、接続文字列を安全に保存する必要があります。
 
-## <a name="BKMK_retrievetheconnectionstring"></a>接続文字列を取得する
+## <a name="retrieve-the-connection-string"></a><a name="BKMK_retrievetheconnectionstring"></a> 接続文字列を取得する
 
-1. メニューバーで、 **[プロジェクト]** を選択し、 **[参照の追加]** を  >  て、System. .dll への参照を追加します。
+1. メニューバーで、[**プロジェクト**] [参照の追加] の順に選択し、  >  **Add Reference**System.Configuration.dll への参照を追加します。
 
-2. メニューバーで、 **[プロジェクト]** 、 **[クラスの追加]** の順に選択して、クラスファイルをプロジェクトに追加し、ファイルに `Utility` という名前を指定します。  >  します。
+2. メニューバーで、[**プロジェクト**] [クラスの追加] の順に選択し、  >  **Add Class**プロジェクトにクラスファイルを追加して、ファイルにという名前を指定し `Utility` ます。
 
-     Visual Studio によってファイルが作成され、**ソリューションエクスプローラー**に表示されます。
+     Visual Studio によってファイルが作成され、 **ソリューションエクスプローラー**に表示されます。
 
 3. Utility ファイルでプレースホルダー コードを次のコードに置き換えます。 コードのセクションを識別する (Util- が付けられた) 番号付きのコメントを確認します。 テーブルはコードに従ってキー ポイントを呼び出します。
 
@@ -213,22 +213,22 @@ ms.locfileid: "72651071"
     End Namespace
     ```
 
-    |コメント|説明|
+    |解説|説明|
     |-------------|-----------------|
     |Util-1|`System.Configuration` 名前空間を追加します。|
     |Util-2|変数 `returnValue` を定義し、`null` (C#)、または `Nothing` (Visual Basic) に初期化します。|
-    |Util-3|**[プロパティ]** ウィンドウで接続文字列の名前として「`connString`」と入力した場合でもC#、コードで `"SimpleDataApp.Properties.Settings.connString"` () または `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) を指定する必要があります。|
+    |Util-3|`connString`[**プロパティ**] ウィンドウで接続文字列の名前として「」と入力した場合でも、 `"SimpleDataApp.Properties.Settings.connString"` コードで (C#) または (Visual Basic) を指定する必要があり `"SimpleDataApp.My.MySettings.connString"` ます。|
 
-## <a name="BKMK_writethecodefortheforms"></a>フォームのコードを記述する
+## <a name="write-the-code-for-the-forms"></a><a name="BKMK_writethecodefortheforms"></a> フォームのコードを記述する
  このセクションには、各フォームの動作を簡単な概要と、フォームを作成するコードがあります。 番号付きコメントは、コードのセクションを識別します。
 
 ### <a name="navigation-form"></a>Navigation フォーム
  Navigation フォームはアプリケーションを実行すると開きます。 **[Add an account]** ボタンは NewCustomer フォームを開きます。 **[Fill or cancel orders]** ボタンは FillOrCancel フォームを開きます。 **[Exit]** ボタンは、アプリケーションを閉じます。
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Navigation フォームをスタートアップ フォームに設定
- を使用してC#いる場合は、**ソリューションエクスプローラー**で Program.cs を開き、`Application.Run` の行を次のように変更し `Application.Run(new Navigation());`
+ C# を使用している場合は、 **ソリューションエクスプローラー**で Program.cs を開き、次の `Application.Run` ように行を変更します。 `Application.Run(new Navigation());`
 
- Visual Basic を使用している場合は**ソリューションエクスプローラー**で **[プロパティ]** ウィンドウを開いて **[アプリケーション]** タブを選択し、 **[スタートアップフォーム]** の一覧で **[simpledataapp. ナビゲーション]** を選択します。
+ Visual Basic を使用している場合は**ソリューションエクスプローラー**で [**プロパティ**] ウィンドウを開いて [**アプリケーション**] タブを選択し、[**スタートアップフォーム**] の一覧で [ **simpledataapp. ナビゲーション**] を選択します。
 
 #### <a name="create-event-handlers"></a>イベント ハンドラーを作成する
  フォーム上の3つのボタンをダブルクリックして、空のイベントハンドラーメソッドを作成します。
@@ -319,7 +319,7 @@ End Namespace
 ```
 
 ### <a name="newcustomer-form"></a>NewCustomer フォーム
- 顧客名を入力して **[アカウントの作成]** ボタンを選択すると、newcustomer フォームによって顧客アカウントが作成され、SQL Server によって新しいアカウント番号として id 値が返されます。 次に、金額と注文日を指定し、 **[場所の順序]** ボタンを選択して、新しいアカウントの注文を配置します。
+ 顧客名を入力して [ **アカウントの作成** ] ボタンを選択すると、newcustomer フォームによって顧客アカウントが作成され、SQL Server によって新しいアカウント番号として id 値が返されます。 次に、金額と注文日を指定し、[ **場所の順序** ] ボタンを選択して、新しいアカウントの注文を配置します。
 
 #### <a name="create-event-handlers"></a>イベント ハンドラーを作成する
  フォームの各ボタン空のクリック イベント ハンドラーを作成します。
@@ -710,34 +710,34 @@ Namespace SimpleDataApp
 End Namespace
 ```
 
-|コメント|説明|
+|解説|説明|
 |-------------|-----------------|
-|NC-1|名前空間の一覧に `System.Data.SqlClient` と `System.Configuration` を追加します。|
+|NC-1|`System.Data.SqlClient` `System.Configuration` 名前空間のリストにとを追加します。|
 |NC-2|後で使用する `parsedCustomerID` および `orderID` の変数を宣言します。|
 |NC-3|アプリケーション構成ファイルから接続文字列を取得するための `GetConnectionString` のメソッドを呼び出し、`connstr` 文字列変数を格納します。|
 |NC-4|`btnCreateAccount` ボタンのクリック イベント ハンドラーのコードを追加します。|
 |NC-5|`isCustomerName` が顧客名の存在する場合にのみ実行されるように、クリック イベント コードの `uspNewCustomer` への呼び出しをラップします。|
 |NC-6|`SqlConnection` オブジェクト (`conn`) を作成し、`connstr` 接続文字列に渡します。|
-|NC-7|`SqlCommand` オブジェクト `cmdNewCustomer` を作成します。<br /><br /> -実行するストアドプロシージャとして `Sales.uspNewCustomer` を指定します。<br />-@No__t_0 プロパティを使用して、コマンドがストアドプロシージャであることを指定します。|
-|NC-8|ストアド プロシージャからの `@CustomerName` 入力パラメーターを追加します。<br /><br /> -@No__t_0 コレクションにパラメーターを追加します。<br />-@No__t_0 列挙型を使用して、パラメーターの型を nvarchar (40) として指定します。<br />-ソースとして `txtCustomerName.Text` を指定します。|
-|NC-9|ストアド プロシージャからの出力パラメーターを追加します。<br /><br /> -@No__t_0 コレクションにパラメーターを追加します。<br />-パラメーターを出力として識別するには、`ParameterDirection.Output` を使用します。|
+|NC-7|`SqlCommand` オブジェクト `cmdNewCustomer` を作成します。<br /><br /> - `Sales.uspNewCustomer` 実行するストアドプロシージャとしてを指定します。<br />-プロパティを使用して `CommandType` 、コマンドがストアドプロシージャであることを指定します。|
+|NC-8|ストアド プロシージャからの `@CustomerName` 入力パラメーターを追加します。<br /><br /> -パラメーターをコレクションに追加 `Parameters` します。<br />-列挙体を使用し `SqlDbType` て、パラメーターの型を nvarchar (40) として指定します。<br />- `txtCustomerName.Text` ソースとしてを指定します。|
+|NC-9|ストアド プロシージャからの出力パラメーターを追加します。<br /><br /> -パラメーターをコレクションに追加 `Parameters` します。<br />- `ParameterDirection.Output` パラメーターを出力として識別するために使用します。|
 |NC-10|接続を開くための Try-catch ブロックを追加し、ストアドプロシージャを実行して例外を処理した後、接続を閉じます。|
 |NC-11|NC-6 で作成した接続 (`conn`) を開きます。|
-|NC-12|@No__t_2 ストアドプロシージャを実行するには、`cmdNewCustomer` に `ExecuteNonQuery` メソッドを使用します。 このストアドプロシージャは、クエリではなく `INSERT` ステートメントを実行します。|
-|NC-13|データベースから IDENTITY 値として `@CustomerID` の値が戻されます。 これは整数であるため、 **[CUSTOMER ID]** テキストボックスに表示するには、それを文字列に変換する必要があります。<br /><br /> -NC-2 で `parsedCustomerID` を宣言しました。<br />-後で使用するために `parsedCustomerID` に `@CustomerID` 値を格納します。<br />-返された顧客 ID を文字列に変換し、`txtCustomerID.Text` に挿入します。|
+|NC-12|`ExecuteNonQuery` `cmdNewCustomer` ストアドプロシージャを実行するには、のメソッドを使用し `Sales.uspNewCustomer` ます。 このストアドプロシージャは `INSERT` 、クエリではなく、ステートメントを実行します。|
+|NC-13|データベースから IDENTITY 値として `@CustomerID` の値が戻されます。 これは整数であるため、[ **CUSTOMER ID** ] テキストボックスに表示するには、それを文字列に変換する必要があります。<br /><br /> - `parsedCustomerID` NC-2 で宣言しました。<br />-後で `@CustomerID` 使用できるように値をに格納 `parsedCustomerID` します。<br />-返された顧客 ID を文字列に変換し、に挿入し `txtCustomerID.Text` ます。|
 |NC-14|このサンプルでは、単純な (実稼働品質ではない) catch 句を追加します。|
 |NC-15|使用の終了後必ず接続を閉じ、接続プールに解放できるようします。 「 [SQL Server 接続プール」 (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)を参照してください。|
-|NC-16|顧客名が存在することを確認するメソッドを定義します。<br /><br /> -アカウントの作成に名前が必要なため、テキストボックスが空の場合は、メッセージを表示し `false` を返します。<br />-テキストボックスが空でない場合は `true` を返します。|
+|NC-16|顧客名が存在することを確認するメソッドを定義します。<br /><br /> -テキストボックスが空の場合は、 `false` アカウントの作成に名前が必要であるため、メッセージを表示して、を返します。<br />-テキストボックスが空でない場合は、を返し `true` ます。|
 |NC-17|`btnPlaceOrder` ボタンのクリック イベント ハンドラーのコードを追加します。|
 |NC-18|必要な入力が存在しない場合に `isPlaceOrderReady` を実行しないように、`btnPlaceOrder_Click` イベント コードの `uspPlaceNewOrder` への呼び出しをラップします。|
-|NC-19 から NC-25|これらのセクションのコードは、`btnCreateAccount_Click` イベント ハンドラーに追加したコードと類似しています。<br /><br /> -NC-19。 `SqlCommand` オブジェクトの `cmdNewOrder` を作成し、ストアド プロシージャとして `Sales.uspPlaceOrder` を指定します。<br />-NC-20 ~ NC-23 は、ストアドプロシージャの入力パラメーターです。<br />-NC-24。 `@RC` はデータベースから生成された注文 ID の戻り値を含みます。 このパラメーターの方向は `ReturnValue` として指定されます。<br />-NC-25。 Order ID (注文 ID) の値を NC-2 で宣言した `orderID` 変数に格納し、メッセージ ボックスに値を表示します。|
+|NC-19 から NC-25|これらのセクションのコードは、`btnCreateAccount_Click` イベント ハンドラーに追加したコードと類似しています。<br /><br /> -NC-19。 `SqlCommand` オブジェクトの `cmdNewOrder` を作成し、ストアド プロシージャとして `Sales.uspPlaceOrder` を指定します。<br />-NC-20 ~ NC-23 は、ストアドプロシージャの入力パラメーターです。<br />-NC-24。 `@RC` には、データベースから生成された注文 ID である戻り値が格納されます。 このパラメーターの方向は `ReturnValue` として指定されます。<br />-NC-25。 Order ID (注文 ID) の値を NC-2 で宣言した `orderID` 変数に格納し、メッセージ ボックスに値を表示します。|
 |NC-26|Customer ID (顧客 ID) が存在すること、および `numOrderAmount` で Amount (数量) が指定されていることを確認するメソッドを定義します。|
 |NC-27|`ClearForm` イベント ハンドラーの `btnAddAnotherAccount` メソッドを呼び出します。|
 |NC-28|別の顧客を追加するために、フォームから値をクリアする `ClearForm` メソッドを作成します。|
 |NC29|NewCustomer フォームを閉じて、Navigation フォームにフォーカスを戻します。|
 
 ### <a name="fillorcancel-form"></a>FillOrCancel フォーム
- FillorCancel フォームは、注文 ID を入力して **[検索順序]** ボタンを選択したときに、注文を返すクエリを実行します。 戻された行は読み取り専用なデータ グリッドに表示されます。 **[キャンセル順序]** ボタンを選択した場合、注文をキャンセル (X) としてマークできます。または、 **[フィルの順序]** ボタンを選択した場合は、注文を塗りつぶしとしてマークできます (F)。 **[検索順序]** ボタンをもう一度選択すると、更新された行が表示されます。
+ FillorCancel フォームは、注文 ID を入力して [ **検索順序** ] ボタンを選択したときに、注文を返すクエリを実行します。 戻された行は読み取り専用なデータ グリッドに表示されます。 [ **キャンセル順序** ] ボタンを選択した場合、注文をキャンセル (X) としてマークできます。または、[ **フィルの順序** ] ボタンを選択した場合は、注文を塗りつぶしとしてマークできます (F)。 [ **検索順序** ] ボタンをもう一度選択すると、更新された行が表示されます。
 
 #### <a name="create-event-handlers"></a>イベント ハンドラーを作成する
  フォームのボタン 4 つに空のクリック イベント ハンドラーを作成します。
@@ -1127,17 +1127,17 @@ Namespace SimpleDataApp
 End Namespace
 ```
 
-|コメント|説明|
+|解説|説明|
 |-------------|-----------------|
-|FC-1|名前空間の一覧に `System.Data.SqlClient`、`System.Configuration`、および `System.Text.RegularExpressions` を追加します。|
+|FC-1|`System.Data.SqlClient` `System.Configuration` 名前空間の一覧に、、およびを追加し `System.Text.RegularExpressions` ます。|
 |FC-2|変数 `parsedOrderID` を宣言します。|
 |FC-3|アプリケーション構成ファイルから接続文字列を取得するための `GetConnectionString` のメソッドを呼び出し、`connstr` 文字列変数を格納します。|
 |FC-4|`btnFindOrderByID` のクリック イベント ハンドラーのコードを追加します。|
-|FC-5|これらのタスクは SQL ステートメントまたはストアド プロシージャを実行する前に必要です。<br /><br /> -@No__t_0 オブジェクトを作成します。<br />-SQL ステートメントを定義するか、ストアドプロシージャの名前を指定します。 (ここでは、`SELECT` ステートメントを実行します。)<br />-@No__t_0 オブジェクトを作成します。<br />-SQL ステートメントまたはストアドプロシージャのパラメーターを定義します。|
-|FC-6|このコードは、クエリの結果を取得して表示するために `SqlDataReader` および `DataTable` を使用します。<br /><br /> -接続を開きます。<br />-@No__t_3 の `ExecuteReader` メソッドを実行して、`rdr` `SqlDataReader` オブジェクトを作成します。<br />-取得したデータを保持する `DataTable` オブジェクトを作成します。<br />-@No__t_0 オブジェクトから `DataTable` オブジェクトにデータを読み込みます。<br />-データグリッドビューの `DataSource` として `DataTable` を指定することにより、データグリッドビューにデータを表示します。<br />-@No__t_0 を閉じます。|
+|FC-5|これらのタスクは SQL ステートメントまたはストアド プロシージャを実行する前に必要です。<br /><br /> -オブジェクトを作成 `SqlConnection` します。<br />-SQL ステートメントを定義するか、ストアドプロシージャの名前を指定します。 (ここでは、`SELECT` ステートメントを実行します。)<br />-オブジェクトを作成 `SqlCommand` します。<br />-SQL ステートメントまたはストアドプロシージャのパラメーターを定義します。|
+|FC-6|このコードは、クエリの結果を取得して表示するために `SqlDataReader` および `DataTable` を使用します。<br /><br /> -接続を開きます。<br />-のメソッドを実行して、オブジェクトを作成し `SqlDataReader` `rdr` `ExecuteReader` `cmdOrderID` ます。<br />-取得し `DataTable` たデータを保持するオブジェクトを作成します。<br />-オブジェクトからオブジェクトにデータを読み込み `SqlDataReader` `DataTable` ます。<br />-データグリッドビューのとしてを指定することにより、データグリッドビューにデータを表示し `DataTable` `DataSource` ます。<br />-閉じる `SqlDataReader` 。|
 |FC-7|`btnCancelOrder` のクリック イベント ハンドラーのコードを追加します。 このコードは `Sales.uspCancelOrder` ストアド プロシージャを実行します。|
 |FC-8|`btnFillOrder` のクリック イベント ハンドラーのコードを追加します。 このコードは `Sales.uspFillOrder` ストアド プロシージャを実行します。|
-|FC-9|メソッドを作成して、`OrderID` が `SqlCommand` オブジェクトへのパラメーターとして送信される準備ができていることを確認します。<br /><br /> -@No__t_0 に ID が入力されていることを確認します。<br />-整数以外の文字の単純なチェックを定義するには、`Regex.IsMatch` を使用します。<br />-@No__t_0 変数を FC-2 で宣言しました。<br />-入力が有効な場合は、テキストを整数に変換し、その値を `parsedOrderID` 変数に格納します。<br />-@No__t_1、`btnCancelOrder`、および `btnFillOrder` クリックイベントハンドラーを中心に `isOrderID` メソッドをラップします。|
+|FC-9|`OrderID`オブジェクトにパラメーターとして送信する準備ができていることを確認するメソッドを作成し `SqlCommand` ます。<br /><br /> -ID がに入力されていることを確認し `txtOrderID` ます。<br />- `Regex.IsMatch` 整数以外の文字の単純なチェックを定義するには、を使用します。<br />- `parsedOrderID` FC-2 で変数を宣言しました。<br />-入力が有効な場合は、テキストを整数に変換し、その値を変数に格納し `parsedOrderID` ます。<br />-、、 `isOrderID` `btnFindByOrderID` `btnCancelOrder` およびクリックイベントハンドラーの周囲でメソッドをラップし `btnFillOrder` ます。|
 
-## <a name="BKMK_testyourapplication"></a>アプリケーションをテストする
- F5 キーを押して、各 Click イベントハンドラーをコード化した後、アプリケーションをビルドしてテストします。
+## <a name="test-your-application"></a><a name="BKMK_testyourapplication"></a> アプリケーションをテストする
+ 各クリック イベント ハンドラーをコードし、コードの記述を完了した後、F5 キーを押してアプリケーションのビルドとテストを実行します。

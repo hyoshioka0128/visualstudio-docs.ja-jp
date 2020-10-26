@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350824"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
@@ -99,7 +99,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ![パスの結合](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|操作|
+|Number|アクション|
 |-|-|
 |![結合前の 2 つの図形](../designers/media/b1_1.png)|結合前の 2 つの図形|
 |![合算](../designers/media/b1_2.png)|合算|

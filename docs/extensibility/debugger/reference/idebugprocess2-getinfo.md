@@ -1,5 +1,5 @@
 ---
-title: 2::GetInfo |マイクロソフトドキュメント
+title: 'IDebugProcess2:: GetInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f437c1a15b136d08ea7e57987c346844044228c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724025"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
@@ -43,13 +43,13 @@ int GetInfo(
 
 ## <a name="parameters"></a>パラメーター
 `Fields`\
-[in]パラメーターのどのフィールドに値を入力するかを指定するPROCESS_INFO_FIELDS列挙体の値の組み合わせ。 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) `pProcessInfo`
+からパラメーターのどのフィールドを入力するかを指定する、 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 列挙型の値の組み合わせ `pProcessInfo` 。
 
 `pProcessInfo`\
-[アウト]プロセスの説明が入力される[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造。
+入出力プロセスの説明が入力されている [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) 構造体。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521304"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
 |CheckId|CA2102|
@@ -39,7 +39,7 @@ ms.locfileid: "85521304"
 
 - C#: `catch {}`
 
-- C++: `catch(...) {}` または`catch(Object^) {}`
+- C++: `catch(...) {}` または `catch(Object^) {}`
 
   以前に許可されていたアクセス許可が catch ブロックで削除されると、未処理の非 CLS 準拠の例外がセキュリティの問題になります。 CLS 準拠でない例外がキャッチされないため、CLS に準拠していない例外をスローする悪意のあるメソッドが、昇格されたアクセス許可で実行される可能性があります。
 
@@ -81,5 +81,5 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>関連規則
  [CA1031:一般的な例外の種類はキャッチしません](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [例外と例外処理](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (IL アセンブラー)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [セキュリティチェックのオーバーライド](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[言語の非依存性と言語に依存しないコンポーネント](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

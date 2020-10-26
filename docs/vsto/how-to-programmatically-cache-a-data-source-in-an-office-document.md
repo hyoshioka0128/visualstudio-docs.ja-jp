@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544769"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>方法: Office ドキュメント内のデータソースをプログラムによってキャッシュする
@@ -30,7 +30,7 @@ ms.locfileid: "85544769"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- メソッドを使用してデータ `StartCaching` オブジェクトをデータキャッシュに追加する場合、データオブジェクトを属性で宣言する必要はありません <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 。 ただし、データオブジェクトは、データキャッシュに追加する特定の要件を満たしている必要があります。 詳細については、「[データのキャッシュ](../vsto/caching-data.md)」を参照してください。
+ メソッドを使用してデータ `StartCaching` オブジェクトをデータキャッシュに追加する場合、データオブジェクトを属性で宣言する必要はありません <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 。 ただし、データオブジェクトは、データキャッシュに追加する特定の要件を満たしている必要があります。 詳細については、「 [データのキャッシュ](../vsto/caching-data.md)」を参照してください。
 
 ## <a name="to-programmatically-cache-a-data-object"></a>データオブジェクトをプログラムでキャッシュするには
 

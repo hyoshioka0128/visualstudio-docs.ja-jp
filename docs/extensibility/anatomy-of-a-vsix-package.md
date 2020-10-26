@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52f87426b9f06ad40d77c2cc9e7be1627d2c82d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250820"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012335"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX パッケージの構造
 VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を含む *.vsix* ファイルで、visual studio が拡張機能を分類およびインストールするために使用するメタデータと共に使用されます。 このメタデータは、VSIX マニフェストと *[Content_Types] .xml* ファイルに格納されています。 VSIX パッケージには、ローカライズされたセットアップテキストを提供するための *vsixlangpack* ファイルが1つ以上含まれている場合があります。また、依存関係をインストールするための vsix パッケージが追加されている場合もあります。
@@ -28,7 +28,7 @@ VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を�
 > VSIX パッケージに含まれるファイルの名前には、 [ \[ RFC2396 \] ](https://www.rfc-editor.org/rfc/rfc2396.txt)で定義されているように、スペースや、UNIFORM resource identifier (URI) で予約されている文字を含めることはできません。
 
 ## <a name="the-vsix-manifest"></a>VSIX マニフェスト
- VSIX マニフェストには、インストールする拡張機能に関する情報が含まれており、VSX スキーマに従います。 詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)」を参照してください。 VSIX マニフェストの例については、「 [PackageManifest 要素 (root 要素、VSX schema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)」を参照してください。
+ VSIX マニフェストには、インストールする拡張機能に関する情報が含まれており、VSX スキーマに従います。 詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))」を参照してください。 VSIX マニフェストの例については、「 [PackageManifest 要素 (root 要素、VSX schema)](/previous-versions/dd393754(v=vs.110))」を参照してください。
 
  VSIX マニフェストは、 `extension.vsixmanifest` ^ .vsix * ファイルに含まれている場合は、という名前にする必要があります。
 
@@ -52,9 +52,9 @@ VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を�
 ## <a name="installation-location"></a>インストール場所
  インストール中、 **拡張機能と更新プログラム** によって、 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*の下のフォルダーにある VSIX パッケージの内容が検索されます。
 
- 既定では、 *% Localappdata%* はユーザー固有のディレクトリであるため、インストールは現在のユーザーにのみ適用されます。 ただし、マニフェストの[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)要素をに設定すると、 `True` 拡張機能がにインストール<em> \\ されます。</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>とは、コンピューターのすべてのユーザーが使用できるようになります。
+ 既定では、 *% Localappdata%* はユーザー固有のディレクトリであるため、インストールは現在のユーザーにのみ適用されます。 ただし、マニフェストの[AllUsers](/previous-versions/ee191547(v=vs.110))要素をに設定すると、 `True` 拡張機能がにインストール<em> \\ されます。</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>とは、コンピューターのすべてのユーザーが使用できるようになります。
 
 ## <a name="content_typesxml"></a>[Content_Types] .xml
  *[Content_Types] .xml*ファイルは、展開された *.vsix*ファイル内のファイルの種類を識別します。 Visual Studio では、パッケージのインストール時にこのファイルを使用しますが、ファイル自体はインストールしません。 このファイルの詳細については、 [[Content_types] .xml ファイルの構造](the-structure-of-the-content-types-dot-xml-file.md)を参照してください。
 
- Open パッケージング規約 (OPC) 標準では、 *[Content_Types] .xml* ファイルが必要です。 OPC の詳細については、「 [opc: データをパッケージ化するための新しい標準](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) 」を参照してください。
+ Open パッケージング規約 (OPC) 標準では、 *[Content_Types] .xml* ファイルが必要です。 OPC の詳細については、「 [opc: データをパッケージ化するための新しい標準](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) 」を参照してください。

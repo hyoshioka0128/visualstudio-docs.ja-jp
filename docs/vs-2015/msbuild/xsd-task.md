@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826245"
 ---
 # <a name="xsd-task"></a>XSD タスク
@@ -38,25 +38,25 @@ ms.locfileid: "67826245"
   
 - **AdditionalOptions**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
-     コマンド ラインで指定するオプションのリストです。 たとえば、" */option1 /option2 /option#* " のような形式です。 他の **XSD** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。  
+     コマンド ラインで指定するオプションのリストです。 たとえば、"*/option1 /option2 /option#*" のような形式です。 他の **XSD** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。  
   
 - **GenerateFromSchema**  
   
-  省略可能な **String** 型のパラメーターです。  
+  省略可能な **文字列** パラメーターです。  
 
   指定したスキーマから生成される種類を指定します。  
 
   次のいずれかの値を指定します。各値は XSD オプションに対応しています。  
 
-  - **classes** -  **/classes**  
+  - **クラス**  - **/クラス**  
 
-  - **dataset** -  **/dataset**  
+  - **データセット**  - **/データセット**  
   
 - **Language**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      生成されたコードに使用するプログラミング言語を指定します。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "67826245"
   
 - **Namespace**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      生成する型のランタイム名前空間を指定します。  
   
@@ -76,15 +76,15 @@ ms.locfileid: "67826245"
   
 - **SuppressStartupBanner**  
   
-     省略可能な **Boolean** 型のパラメーターです。  
+     省略可能な **ブール型** パラメーターです。  
   
      `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。  
   
 - **TrackerLogDirectory**  
   
-     省略可能な **String** 型のパラメーターです。  
+     省略可能な **文字列** パラメーターです。  
   
      トラッカー ログのディレクトリを指定します。  
   
-## <a name="see-also"></a>関連項目  
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)

@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 19077a63d5aa22bda3f968943703a82488e2745d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545289"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
@@ -36,7 +36,7 @@ ms.locfileid: "85545289"
  アセンブリには、 **ResX**ベースのリソースが含まれてい <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> ますが、それには適用されていません。
 
 ## <a name="rule-description"></a>ルールの説明
- **NeutralResourcesLanguage**属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語を**ResourceManager**に通知します。 ニュートラルリソース言語と同じカルチャのリソースを検索する場合、 **ResourceManager**はメインアセンブリにあるリソースを自動的に使用します。 これは、現在のスレッドの現在のユーザーインターフェイスカルチャを持つサテライトアセンブリを検索する代わりに、これを行います。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。
+ **NeutralResourcesLanguage**属性は、アセンブリのニュートラルカルチャのリソースを表示するために使用された言語を**ResourceManager**に通知します。 ニュートラルリソース言語と同じカルチャのリソースを検索する場合、 **ResourceManager** はメインアセンブリにあるリソースを自動的に使用します。 これは、現在のスレッドの現在のユーザーインターフェイスカルチャを持つサテライトアセンブリを検索する代わりに、これを行います。 これにより、読み込んだ最初のリソースに対する検索のパフォーマンスが向上し、ワーキング セットを縮小できます。
 
 ## <a name="fixing-violations"></a>違反の修正
  この規則違反を修正するには、属性をアセンブリに追加し、ニュートラルカルチャのリソースの言語を指定します。
@@ -47,9 +47,9 @@ ms.locfileid: "85545289"
 
 1. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
-2. 左側のナビゲーションバーから [**アプリケーション**] を選択し、[**アセンブリ情報**] をクリックします。
+2. 左側のナビゲーションバーから [ **アプリケーション**] を選択し、[ **アセンブリ情報**] をクリックします。
 
-3. [**アセンブリ情報**] ダイアログボックスで、[**ニュートラル言語**] ボックスの一覧から言語を選択します。
+3. [ **アセンブリ情報** ] ダイアログボックスで、[ **ニュートラル言語** ] ボックスの一覧から言語を選択します。
 
 4. **[OK]** をクリックします。
 

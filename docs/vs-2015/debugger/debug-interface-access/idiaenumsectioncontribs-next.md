@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsectioncontribs::next |Microsoft Docs
+title: 'IDiaEnumSectionContribs:: Next |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18bee6cf8f47aeeadd41c7accc1f33566f564898
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189972"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定した列挙体シーケンス内のセクションの投稿数を取得します。  
+列挙シーケンス内の指定された数のセクション投稿を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,17 +37,17 @@ HRESULT Next( 
   
 #### <a name="parameters"></a>パラメーター  
  celt  
- [in]セクション多大な貢献を取得する列挙子の数。  
+ から取得する列挙子内のセクションの貢献数。  
   
  rgelt  
- [out]格納する配列、 [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)セクションの目的の投稿物を表すオブジェクト。  
+ 入出力目的のセクションの投稿を表す [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) オブジェクトを格納する配列。  
   
  pceltFetched  
- [out]列挙子のフェッチにセクションの投稿物の数を返します。  
+ 入出力フェッチされた列挙子内のセクションの貢献数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`複数セクション投稿がある場合。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`セクションの投稿がこれ以上ない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

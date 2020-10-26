@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep |Microsoft Docs
+title: 'IDebugEngineProgram2:: WatchForThreadStep |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59489af368c2e95a2d3cc93edbd6f7ab02a1c156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195647"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-実行を監視します (または実行の監視を停止します)、特定のスレッドで発生します。  
+指定されたスレッドで実行を監視します (または実行の監視を停止します)。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,25 +46,25 @@ int WatchForThreadStep( 
   
 #### <a name="parameters"></a>パラメーター  
  `pOriginatingProgram`  
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)ステップが実行されているプログラムを表すオブジェクト。  
+ から階段状のプログラムを表す [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) オブジェクト。  
   
  `dwTid`  
- [in]ウォッチするスレッドの識別子を指定します。  
+ から監視するスレッドの識別子を指定します。  
   
  `fWatch`  
- [in]0 以外の値 (`TRUE`) で識別されるスレッド上で実行の監視を始めることを意味`dwTid`。 そうしないと、0 (`FALSE`) 上で実行するための視聴を停止したことを意味`dwTid`します。  
+ から0以外 ( `TRUE` ) は、で識別されるスレッドで実行の監視を開始することを意味します。 `dwTid` それ以外の場合、ゼロ ( `FALSE` ) はでの実行の監視を停止 `dwTid` します。  
   
  `dwFrame`  
- [in]ステップの種類を制御するフレーム インデックスを指定します。 この値はゼロ (0)、ステップの種類が「ステップ イン」と、スレッドがで識別されるたびに、プログラムを停止する必要があります`dwTid`を実行します。 ときに`dwFrame`0 以外の場合は、ステップの種類が「ステップ オーバー」と、スレッドがで識別される場合にのみ、プログラムを停止する必要があります`dwTid`インデックスが同じか、またはよりスタックの上位フレームで実行されている`dwFrame`します。  
+ からステップの種類を制御するフレームインデックスを指定します。 この値がゼロ (0) の場合、ステップの種類は "ステップイン" であり、によって識別されるスレッドが実行されるたびにプログラムが停止し `dwTid` ます。 `dwFrame`が0以外の場合、ステップの種類は "ステップオーバー" であり、で識別されるスレッド `dwTid` が、よりも大きいインデックスを持つフレームで実行されている場合にのみ、プログラムが停止し `dwFrame` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- セッション デバッグ マネージャー (SDM) で識別される、プログラムのステップと、`pOriginatingProgram`パラメーターがこのメソッドを呼び出すことによって接続されている他のすべてのプログラムに通知します。  
+## <a name="remarks"></a>注釈  
+ セッションデバッグマネージャー (SDM) が、パラメーターで識別されるプログラムをステップ実行すると、 `pOriginatingProgram` このメソッドを呼び出すことによって、アタッチされている他のすべてのプログラムに通知します。  
   
- このメソッドは、同じスレッドがステップ実行にのみ適用されます。  
+ このメソッドは、同じスレッドのステップ実行にのみ適用できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,5 +1,7 @@
 ---
-title: 拡張パック項目テンプレートを使用して拡張パックを作成する |マイクロソフトドキュメント
+title: 拡張機能パックを作成する
+description: 拡張パック項目テンプレートを使用して拡張パックを作成する方法について説明します
+ms.custom: SEO-VS-2020
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +12,32 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c959660b920abc18be70b228fa6b40de1ab585f8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697751"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037661"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>チュートリアル: 拡張機能パックを作成する
 
-拡張パックは、一緒にインストールできる拡張機能のセットです。 エクステンション パックを使用すると、お気に入りの拡張機能を他のユーザーと簡単に共有したり、特定のシナリオで一緒に拡張機能のセットをバンドルしたりできます。
+拡張パックは、まとめてインストールできる一連の拡張機能です。 拡張パックを使用すると、お気に入りの拡張機能を他のユーザーと簡単に共有したり、特定のシナリオに合わせて一連の拡張機能をバンドルしたりすることができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
-Visual Studio 2015 以降、Visual Studio SDK は、Visual Studio のセットアップのオプション機能として含まれています。 VS SDK は後でインストールすることもできます。 詳細については、「 [Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
+Visual studio 2015 以降では、visual studio SDK は visual studio セットアップのオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-拡張機能パック機能は、Visual Studio 15.8 プレビュー 2 以降で使用できます。
+拡張機能パック機能は、Visual Studio 15.8 Preview 2 以降で使用できます。
 
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>拡張機能パック項目テンプレートを使用して拡張機能を作成する
 
-拡張機能パック項目テンプレートは、一緒にインストールできる一連の拡張機能を含む拡張機能パックを作成します。
+拡張パック項目テンプレートは、一連の拡張機能を一緒にインストールできる拡張パックを作成します。
 
-1. [**新しいプロジェクト**] ダイアログで、"vsix" を検索し **、[VSIX プロジェクト**] を選択します。 **[プロジェクト名**] に「拡張パックのテスト」と入力します。 **［作成］** を選択します
+1. [ **新しいプロジェクト** ] ダイアログで、"vsix" を検索し、[ **vsix プロジェクト**] を選択します。 [ **プロジェクト名**] に「Test Extension Pack」と入力します。 **［作成］** を選択します
 
-2. ソリューション**エクスプローラ**で、プロジェクト ノードを右クリックし、[**Add** > **新しい項目**の追加] を選択します。 [Visual C#**拡張機能**] ノードに移動し、[**拡張機能パック**] を選択します。 既定のファイル名 (ExtensionPack1.cs) のままにします。
+2. **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 Visual C# の **機能拡張** ノードにアクセスし、[ **拡張機能パック**] を選択します。 既定のファイル名 (ExtensionPack1.cs) をそのまま使用します。
 
-3. 次のコードを含む拡張パック1.vsextファイルが追加されました
+3. 次のコードを含む ExtensionPack1 vsext ファイルが追加されます。
 
    ```json
    {
@@ -56,57 +58,57 @@ Visual Studio 2015 以降、Visual Studio SDK は、Visual Studio のセット�
    }
    ```
 
-4. 拡張機能パックに含める拡張機能の vsixid は[、Visual Studio マーケットプレース](https://marketplace.visualstudio.com/)で見つけることができます。 含める拡張子を探し、[ ID**のコピー**] をクリックします。 上記のファイルの既存の**vsixId**を更新するか、または別の拡張子をリストに追加できます。
+4. 拡張パックに含める拡張機能の vsixid は、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)にあります。 追加する拡張機能を見つけて、[ **コピー ID**] をクリックします。 上記のファイルの既存の **vsixId** を更新することも、一覧に別の拡張子を追加することもできます。
 
-    ![マーケットプレースから VsixId をコピーする](media/vsixid-marketplace.png)
+    ![Marketplace から VsixId をコピーする](media/vsixid-marketplace.png)
 
-5. プロジェクトをビルドし、マーケットプレースに拡張機能をアップロードします。 [「Visual Studio 拡張機能の発行](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)」を参照してください。
+5. プロジェクトをビルドし、拡張機能を Marketplace にアップロードします。 「 [Visual Studio 拡張機能の発行」を](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)参照してください。
 
 > [!NOTE]
-> 拡張機能パックは[、Visual Studio マーケットプレース](https://marketplace.visualstudio.com/)または[プライベート ギャラリー](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)で利用可能な拡張機能のみをインストールできます。
+> 拡張パックは、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) または [プライベートギャラリー](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)で利用できる拡張機能のみをインストールできます。
 
-## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>拡張機能パックを Visual Studio マーケットプレースからインストールする
+## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Visual Studio Marketplace から拡張機能パックをインストールします。
 
-拡張機能が発行された後、Visual Studio にインストールして、そこでテストします。
+拡張機能が公開されたので、それを Visual Studio にインストールしてテストします。
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio の [**ツール**] メニューの [**拡張機能と更新プログラム**] をクリックします。
+1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能と更新プログラム**] をクリックします。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio の [**拡張機能**] メニューの [**マネージ拡張**] をクリックします。
+1. Visual Studio の [ **拡張** 機能] メニューで、[ **マネージ拡張**] をクリックします。
 
 ::: moniker-end
 
-2. [**オンライン**] をクリックし、[テスト拡張機能パック] を検索します。
+2. [ **オンライン** ] をクリックし、"Test Extension Pack" を検索します。
 
-3. **[Download]** をクリックします。 拡張機能パックに含まれる拡張機能とその拡張機能の一覧は、インストールのスケジュールが設定されます。
+3. **[Download]** をクリックします。 拡張機能と拡張機能パックに含まれている拡張機能の一覧は、インストールのスケジュールが設定されます。
 
-4. 以下は、[拡張機能の管理] ダイアログのエクステンション パックのダウンロード ビューの例**です**。 拡張パックに含まれている拡張機能の一部のみをインストールする場合は、**インストールのスケジュール済み**で拡張機能の一覧を変更できます。
+4. 次に、[ **拡張機能の管理** ] ダイアログの拡張機能パックのダウンロードビューの例を示します。 拡張パックに含まれている拡張機能の一部のみをインストールする場合は、[ **インストールのスケジュール**] で拡張機能の一覧を変更できます。
 
-    ![マーケットプレースからエクステンションパックをダウンロード](media/vside-extensionpack.png)
+    ![Marketplace から拡張機能パックをダウンロードする](media/vside-extensionpack.png)
 
 5. インストールを完了するには、Visual Studio のすべてのインスタンスを閉じます。
 
 ## <a name="remove-the-extension"></a>拡張機能を削除する
 
-コンピュータから拡張機能を削除するには、次の手順を実行します。
+コンピューターから拡張機能を削除するには、次のようにします。
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio の [**ツール**] メニューの [**拡張機能と更新プログラム**] をクリックします。
+1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能と更新プログラム**] をクリックします。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio の [**拡張機能**] メニューの [**マネージ拡張**] をクリックします。
+1. Visual Studio の [ **拡張** 機能] メニューで、[ **マネージ拡張**] をクリックします。
 
 ::: moniker-end
 
-2. [**拡張パックのテスト**] を選択し、[**アンインストール**] をクリックします。 拡張機能パックに含まれる拡張機能とその拡張機能の一覧は、アンインストールのスケジュールが設定されます。
+2. [ **テスト拡張パック** ] を選択し、[ **アンインストール**] をクリックします。 拡張機能と拡張機能パックに含まれている拡張機能の一覧は、アンインストールのスケジュールが設定されます。
 
 3. アンインストールを完了するには、Visual Studio のすべてのインスタンスを閉じます。

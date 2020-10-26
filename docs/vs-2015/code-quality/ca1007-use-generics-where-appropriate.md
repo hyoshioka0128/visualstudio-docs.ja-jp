@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4ee33305c1ae0f15e5d8f390a4b65d62c87b6904
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547941"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007:適切な場所にジェネリックを使用します
@@ -65,5 +65,5 @@ ms.locfileid: "85547941"
 
  [CA1003:汎用イベント ハンドラーのインスタンスを使用します](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ジェネリック](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

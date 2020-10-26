@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7dc0b82f512fb4852178b8d4bbae78944aae326a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563234"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-先頭に、列挙体シーケンスをリセットします。  
+列挙シーケンスを先頭にリセットします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,5 +34,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>戻り値  
  `S_OK` を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

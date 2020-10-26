@@ -1,5 +1,5 @@
 ---
-title: ジェネリックフィールド定義::タイプパラムカウント |マイクロソフトドキュメント
+title: 'IDebugGenericFieldDefinition:: TypeParamCount |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a488bce2ad5822f875776bdfc4c4de29eee71bbb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728228"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
-ジェネリック フィールドに関連付けられている型パラメーターの数を取得します。
+ジェネリックフィールドに関連付けられている型パラメーターの数を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -40,13 +40,13 @@ int TypeParamCount(
 
 ## <a name="parameters"></a>パラメーター
 `pcParams`\
-[イン、アウト]型パラメーターの数。
+[入力、出力]型パラメーターの数。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- リスト\<T が>場合、このメソッドは 1\<を返し、リスト T1、T2 が>場合、このメソッドは 2 を返します。 型パラメーターがない場合、このメソッドは 0 を返します。
+## <a name="remarks"></a>解説
+ List \<T> の場合、このメソッドは1を返します。リストの場合、 \<T1,T2> このメソッドは2を返します。 型パラメーターがない場合、このメソッドは0を返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

@@ -1,5 +1,5 @@
 ---
-title: 例外処理アシスタント ダイアログ ボックス |Microsoft Docs
+title: '[例外処理アシスタント] ダイアログボックス |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,23 +24,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702875"
 ---
 # <a name="exception-assistant-dialog-box"></a>例外処理アシスタント ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**例外処理アシスタント**実行時に例外がスローされたときに、ダイアログ ボックスが表示されます。 **例外処理アシスタント**例外の種類を表示、追加情報とトラブルシューティングのヒントへのリンクを提供します、追加のヘルプをオンラインで検索する方法を提供しますおよびなど、特定のアクションを実行するユーザーは、例外の詳細を表示します。  
+実行時例外がスローされると、[ **例外処理アシスタント** ] ダイアログボックスが表示されます。 例外処理 **アシスタント** には、例外の種類、追加情報、およびトラブルシューティングのヒントへのリンクが表示されます。また、追加のヘルプをオンラインで検索し、例外の詳細を表示するなどの特定のアクションをユーザーが実行できるようにします。  
   
 ## <a name="task-list"></a>タスク一覧  
- 発生した例外のトラブルシューティングに関するトピックを表示するに表示されるヒント メッセージのいずれかをクリックして、**トラブルシューティングのヒント**ウィンドウ。  
+ 発生した例外の種類のトラブルシューティングに関するトピックを表示するには、[ **トラブルシューティングのヒント** ] ウィンドウに表示されているいずれかのヒントメッセージをクリックします。  
   
  例外に関連するアクションを実行するには、アクション ペインに表示されたアクションのいずれかをクリックします。  
   
- 有効にするか、例外処理アシスタントを無効にする方法については、次を参照してください。 [General, Debugging, オプション ダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)します。  
+ 例外処理アシスタントを有効または無効にする方法の詳細については、「 [[全般] ([オプション] ダイアログボックス-[デバッグ](../debugger/general-debugging-options-dialog-box.md)])」を参照してください。  
   
 ## <a name="user-interface-element-list"></a>ユーザー インターフェイス要素一覧  
  **例外の種類**  
@@ -55,11 +55,11 @@ ms.locfileid: "65702875"
  **アクション**  
  例外オブジェクトに関する詳細の表示など、実行できるアクションの一覧が表示されます。  
   
- **オンライン ヘルプを表示します。**  
+ **オンラインヘルプの表示**  
  追加のオンライン ヘルプを検索できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
- [例外処理アシスタントを使用して、](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [方法: 例外処理アシスタントを実行時エラーを修正します。](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [例外処理アシスタントを使用する](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [方法: 例外処理アシスタントを使用してランタイムエラーを修正する](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
  [エラーの種類](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

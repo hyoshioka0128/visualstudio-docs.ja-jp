@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d901d09350af063a11e3d156f36a100df85e7718
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586920"
 ---
-# <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: ジェネレーション 1 のガベージ コレクションが高率です
+# <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021:ジェネレーション 1 のガベージ コレクションが高率です
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ルール Id |DA0021 |  
@@ -34,7 +34,7 @@ ms.locfileid: "82586920"
 ## <a name="cause"></a>原因  
  プロファイリングの実行中に収集されたシステム パフォーマンス データは、ジェネレーション 1 のガベージ コレクションで解放された .NET Framework オブジェクト用のメモリが、ジェネレーション 0 のデータ コレクションと比較して高率であることを示しています。  
   
-## <a name="rule-description"></a>規則の説明  
+## <a name="rule-description"></a>ルールの説明  
  Microsoft .NET 共通言語ランタイム (CLR: Common Language Runtime) は、自動メモリ管理メカニズムを備えています。このメカニズムでは、ガベージ コレクターを使用して、アプリケーションが使用しなくなったオブジェクトのメモリを解放します。 ガベージ コレクターはジェネレーション指向です。これは、多くの割り当てが短時間で終了することを前提としています。 たとえば、ローカル変数の有効期間は短時間です。 新しく作成されたオブジェクトはジェネレーション 0 (gen 0) から始まり、ガベージ コレクションの実行中に破棄されなければジェネレーション 1 に昇格します。その後もアプリケーションによって引き続き使用されていれば、最後はジェネレーション 2 に昇格します。  
   
  ジェネレーション 0 のオブジェクトの収集頻度は高く、通常は非常に効率的に収集されます。 ジェネレーション 1 のオブジェクトの収集頻度はそれよりも低くなり、収集効率も下がります。 有効期間の長いジェネレーション 2 のオブジェクトの場合、収集頻度はさらに低くなります。 また、ジェネレーション 2 のコレクション (フル ガベージ コレクションの実行) は、最も負荷のかかる操作になります。  

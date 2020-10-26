@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28bcaa626797313f6ea68a17da33ef9ea192a856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154206"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-シンボルの場所の情報の種類を示します。  
+シンボルに含まれる位置情報の種類を示します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum LocationType {   
@@ -44,53 +44,53 @@ enum LocationType { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  `LocIsNull`  
- 場所の情報は、ご利用いただけません。  
+ 場所情報は使用できません。  
   
  `LocIsStatic`  
  場所は静的です。  
   
  `LocIsTLS`  
- 場所は、スレッド ローカル ストレージにです。  
+ 場所はスレッドローカルストレージにあります。  
   
  `LocIsRegRel`  
- 場所は、レジスタの相対です。  
+ 場所はレジスタ相対です。  
   
  `LocIsThisRel`  
- 場所は`this`-相対します。  
+ Location は `this` -相対です。  
   
  `LocIsEnregistered`  
- 場所は、レジスタでです。  
+ 場所が登録されています。  
   
  `LocIsBitField`  
- 場所は、ビット フィールドでです。  
+ 場所はビットフィールドにあります。  
   
  `LocIsSlot`  
- 場所は、Microsoft Intermediate Language (MSIL) のスロットです。  
+ Location は、Microsoft 中間言語 (MSIL) スロットです。  
   
  `LocIsIlRel`  
- 場所は、MSIL 相対パスです。  
+ 場所は MSIL 相対です。  
   
  `LocInMetaData`  
- メタデータ内の場所は。  
+ 場所はメタデータ内にあります。  
   
  `LocIsConstant`  
- 場所は、定数値でです。  
+ 場所は定数値です。  
   
  `LocTypeMax`  
  この列挙体の場所の種類の数。  
   
-## <a name="remarks"></a>Remarks  
- 使用できるプロパティ、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)インターフェイスは、イメージ ファイル内のシンボルの場所によって異なります。 詳細については、次を参照してください。[シンボルの場所](../../debugger/debug-interface-access/symbol-locations.md)します。  
+## <a name="remarks"></a>注釈  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)インターフェイスで使用できるプロパティは、イメージファイル内のシンボルの場所によって異なります。 詳細については、「 [シンボルの場所](../../debugger/debug-interface-access/symbol-locations.md)」を参照してください。  
   
- この列挙体の値が呼び出しによって返される、 [idiasymbol::get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)メソッド。  
+ この列挙体の値は、 [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) メソッドへの呼び出しによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [シンボルの場所](../../debugger/debug-interface-access/symbol-locations.md)

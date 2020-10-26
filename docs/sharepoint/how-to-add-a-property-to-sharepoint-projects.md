@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015923"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加する
   プロジェクトの拡張機能を使用して、任意の SharePoint プロジェクトにプロパティを追加できます。 **ソリューションエクスプローラー**でプロジェクトを選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
 
- 次の手順では、プロジェクトの拡張機能が既に作成されていることを前提としています。 詳細については、「[方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
+ 次の手順では、プロジェクトの拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>SharePoint プロジェクトにプロパティを追加するには
 
@@ -34,7 +35,7 @@ ms.locfileid: "86015923"
 3. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 、properties クラスのインスタンスを <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> イベント引数パラメーターのコレクションに追加します。
 
 ## <a name="example"></a>例
- 次のコード例は、SharePoint プロジェクトに2つのプロパティを追加する方法を示しています。 1つのプロパティは、プロジェクトのユーザーオプションファイル ( *.csproj*ファイルまたは *.vbproj*ファイル) でデータを永続化します。 もう一方のプロパティは、プロジェクトファイル (*.csproj*ファイルまたは *.vbproj*ファイル) でデータを永続化します。
+ 次のコード例は、SharePoint プロジェクトに2つのプロパティを追加する方法を示しています。 1つのプロパティは、プロジェクトのユーザーオプションファイル ( *.csproj* ファイルまたは *.vbproj* ファイル) でデータを永続化します。 もう一方のプロパティは、プロジェクトファイル (*.csproj* ファイルまたは *.vbproj* ファイル) でデータを永続化します。
 
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
@@ -42,24 +43,24 @@ ms.locfileid: "86015923"
 ### <a name="understand-the-code"></a>コードの理解
  イベントが発生するたびにクラスの同じインスタンスが使用されるようにするため、 `CustomProjectProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> このコード例では、 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> このイベントが初めて発生したときに、プロジェクトのプロパティにプロパティオブジェクトを追加します。 このコードは、このイベントが再び発生するたびにこのオブジェクトを取得します。 プロパティを使用してデータをプロジェクトに関連付ける方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ては、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
 
- プロパティ値の変更を保持するために、プロパティの**set**アクセサーは次の api を使用します。
+ プロパティ値の変更を保持するために、プロパティの **set** アクセサーは次の api を使用します。
 
-- `CustomUserFileProperty`プロパティを使用して、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> プロジェクトのユーザーオプションファイルに値を保存します。
+- `CustomUserFileProperty` プロパティを使用して、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> プロジェクトのユーザーオプションファイルに値を保存します。
 
-- `CustomProjectFileProperty`メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> その値をプロジェクトファイルに保存します。
+- `CustomProjectFileProperty` メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> その値をプロジェクトファイルに保存します。
 
   これらのファイルにデータを保持する方法の詳細については、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>カスタムプロパティの動作を指定する
- 名前空間からプロパティ定義に属性を適用することによって、[**プロパティ**] ウィンドウでカスタムプロパティの表示と動作を定義でき <xref:System.ComponentModel> ます。 次の属性は、多くのシナリオで役立ちます。
+ 名前空間からプロパティ定義に属性を適用することによって、[ **プロパティ** ] ウィンドウでカスタムプロパティの表示と動作を定義でき <xref:System.ComponentModel> ます。 次の属性は、多くのシナリオで役立ちます。
 
-- <xref:System.ComponentModel.DisplayNameAttribute>: [**プロパティ**] ウィンドウに表示されるプロパティの名前を指定します。
+- <xref:System.ComponentModel.DisplayNameAttribute>: [ **プロパティ** ] ウィンドウに表示されるプロパティの名前を指定します。
 
-- <xref:System.ComponentModel.DescriptionAttribute>: プロパティが選択されたときに [**プロパティ**] ウィンドウの下部に表示される説明文字列を指定します。
+- <xref:System.ComponentModel.DescriptionAttribute>: プロパティが選択されたときに [ **プロパティ** ] ウィンドウの下部に表示される説明文字列を指定します。
 
 - <xref:System.ComponentModel.DefaultValueAttribute>: プロパティの既定値を指定します。
 
-- <xref:System.ComponentModel.TypeConverterAttribute>: [**プロパティ**] ウィンドウに表示される文字列と、文字列以外のプロパティ値の間のカスタム変換を指定します。
+- <xref:System.ComponentModel.TypeConverterAttribute>: [ **プロパティ** ] ウィンドウに表示される文字列と、文字列以外のプロパティ値の間のカスタム変換を指定します。
 
 - <xref:System.ComponentModel.EditorAttribute>: プロパティの変更に使用するカスタムエディターを指定します。
 

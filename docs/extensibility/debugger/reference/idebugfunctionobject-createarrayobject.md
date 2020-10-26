@@ -1,5 +1,5 @@
 ---
-title: オブジェクトを作成します。マイクロソフトドキュメント
+title: 'IDebugFunctionObject:: CreateArrayObject |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728607"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
@@ -51,28 +51,28 @@ int CreateArrayObject(
 
 ## <a name="parameters"></a>パラメーター
 `ot`\
-[in]新しい配列オブジェクトの型を示す[OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)列挙体の値を指定します。
+から新しい配列オブジェクトの型を示す [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) 列挙体の値を指定します。
 
 `pClassField`\
-[in]オブジェクト インスタンス値の配列を作成する場合は、オブジェクトのクラスを表す[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。 プリミティブオブジェクトの配列を作成する場合、このパラメータは null 値です。
+からオブジェクトインスタンス値の配列を作成する場合は、オブジェクトのクラスを表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクト。 プリミティブオブジェクトの配列を作成する場合、このパラメーターは null 値になります。
 
 `dwRank`\
-[in]配列のランクまたは次元数。
+から配列の次元のランクまたは数。
 
 `dwDims`\
-[in]配列の各次元のサイズ。
+から配列の各次元のサイズ。
 
 `dwLowBounds`\
-[in]各次元の原点 (通常は 0 または 1)。
+から各次元の原点 (通常は0または 1)。
 
 `ppObject`\
-[アウト]新しく作成された配列を表す[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトを返します。 これは実際には[オブジェクトです](../../../extensibility/debugger/reference/idebugarrayobject.md)。
+入出力新しく作成された配列を表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトを返します。 これは、実際には [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) オブジェクトです。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- [インターフェイス](../../../extensibility/debugger/reference/idebugfunctionobject.md)によって表される関数の配列パラメーターを表すオブジェクトを作成します。
+## <a name="remarks"></a>解説
+ [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイスによって表される関数に対する配列パラメーターを表すオブジェクトを作成するには、このメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

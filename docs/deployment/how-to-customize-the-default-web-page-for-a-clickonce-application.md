@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382472"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの既定の Web ページをカスタマイズする
@@ -30,7 +30,7 @@ ClickOnce アプリケーションを Web に発行すると、Web ページが�
 > [!NOTE]
 > ページに表示される実際のリンクは、ページが表示されているコンピューターと、含める必要のある前提条件によって異なります。
 
- Web ページの既定の名前は*Publish.htm*;**プロジェクトデザイナー**で名前を変更できます。 詳細については、「[方法: ClickOnce アプリケーションの発行ページを指定](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)する」を参照してください。
+ Web ページの既定の名前は *Publish.htm*; **プロジェクトデザイナー**で名前を変更できます。 詳細については、「 [方法: ClickOnce アプリケーションの発行ページを指定](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)する」を参照してください。
 
  *Publish.htm* Web ページは、新しいバージョンが検出された場合にのみ公開されます。
 
@@ -39,9 +39,9 @@ ClickOnce アプリケーションを Web に発行すると、Web ページが�
 
 ### <a name="to-customize-the-publish-web-page"></a>[Web の発行] ページをカスタマイズするには
 
-1. ClickOnce アプリケーションを Web サイトに発行します。 詳細については、「[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
+1. ClickOnce アプリケーションを Web サイトに発行します。 詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
 
-2. Web サーバーで、Visual Web デザイナーまたは他の HTML エディターで*Publish.htm*ファイルを開きます。
+2. Web サーバーで、Visual Web デザイナーまたは他の HTML エディターで *Publish.htm* ファイルを開きます。
 
 3. 必要に応じてページをカスタマイズして保存します。
 

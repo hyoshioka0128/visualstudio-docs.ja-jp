@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156530"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>リモート コンピューターにアクセスしようとしたときに、DCOM エラーが発生しました。 アクセスが拒否されました。
@@ -33,11 +33,11 @@ ms.locfileid: "68156530"
 
 リモート デバッグでは、DCOM を使用して次のような状況でローカル コンピューターとリモート コンピューターとの間で通信します。  
   
-- **[ツール]/[オプション]/[デバッグ]** ページで、デバッガーが **[ネイティブ互換モード]** に設定されるか、または **[マネージド互換モード]** がオンに設定されている場合。  
+- デバッガーが**ネイティブ互換モード**に設定されているか、[**ツール]、[オプション]** 、[デバッグ] ページで [**マネージ互換モード**] がオンになっています。  
   
 - マネージド C++ (C + +/CLI) コードをデバッグする場合。  
   
-- Visual Studio 2013 で、 **[ツール]/[オプション]/[デバッグ]** ページの **[ネイティブのエディット コンティニュを有効にする]** がオンになっている場合。  
+- Visual Studio 2013 で、[**ツール]/[オプション]/[デバッグ**] ページで [ネイティブの**エディットコンティニュを有効に**する] チェックボックスがオンになっている場合  
   
 - 一部のサード パーティのデバッグ シナリオ  
   
@@ -51,6 +51,6 @@ ms.locfileid: "68156530"
   
 - リモート デバッグで資格情報の入力が必要な場合は、資格情報の保存のチェック ボックスをオンにする。  
   
-## <a name="see-also"></a>関連項目  
- [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>参照  
+ [リモートデバッグエラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

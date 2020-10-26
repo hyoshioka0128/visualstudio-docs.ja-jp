@@ -1,4 +1,4 @@
-﻿---
+---
 title: イミディエイト ウィンドウ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,21 +16,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651279"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**[イミディエイト]** ウィンドウは、式のデバックと評価、ステートメントの実行、変数値の出力などのために使用します。 このモードでは、デバッグ時に、開発言語で評価または実行される式を入力できます。 **[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、 **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、 **[イミディエイト]** をクリックするか、Ctrl キーと Alt キーを押しながら I キーを押します。
+**[イミディエイト]** ウィンドウは、式のデバックと評価、ステートメントの実行、変数値の出力などのために使用します。 このモードでは、デバッグ時に、開発言語で評価または実行される式を入力できます。 **[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、**[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[イミディエイト]** をクリックするか、Ctrl キーと Alt キーを押しながら I キーを押します。
 
  このウィンドウは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを個別に実行するために使用できます。 使用できるコマンドには、`EvaluateStatement` があります。このコマンドは、変数に値を割り当てるのに使用できます。 **[イミディエイト]** ウィンドウは、IntelliSense もサポートしています。
 
 ## <a name="displaying-the-values-of-variables"></a>変数の値の表示
- このウィンドウはアプリケーションをデバッグするときに特に役に立ちます。 たとえば、`varA` 変数の値を確認するには、[Print コマンド](../../ide/reference/print-command.md)を使用します。
+ このウィンドウはアプリケーションをデバッグするときに特に役に立ちます。 たとえば、変数の値を確認するには、 `varA` [Print コマンド](../../ide/reference/print-command.md)を使用します。
 
 ```
 >Debug.Print varA
@@ -45,7 +45,7 @@ ms.locfileid: "72651279"
  コマンドをどちらで入力した場合でも、変数 `varA` の現在の値が返されます。
 
 > [!NOTE]
-> **[イミディエイト]** ウィンドウで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを実行するには、コマンドの先頭に不等号 (>) を付ける必要があります。 複数のコマンドを入力するには、 **[コマンド]** ウィンドウに切り替えます。
+> **[イミディエイト]** ウィンドウで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを実行するには、コマンドの先頭に不等号 (>) を付ける必要があります。 複数のコマンドを入力するには、 **コマンド** ウィンドウに切り替えます。
 
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式の評価
  **[イミディエイト]** ウィンドウを使用すると、デザイン時に関数またはサブルーチンを実行できます。
@@ -68,9 +68,9 @@ ms.locfileid: "72651279"
    End Module
    ```
 
-2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、 **[イミディエイト]** をクリックします。
+2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[イミディエイト]** をクリックします。
 
-3. **[イミディエイト]** ウィンドウで「`?MyFunction(2)`」と入力し、Enter キーを押します。
+3. [ `?MyFunction(2)` **イミディエイト** ] ウィンドウに「」と入力し、enter キーを押します。
 
     **[イミディエイト]** ウィンドウで `MyFunction` が実行され、`4` と表示されます。
 
@@ -84,7 +84,7 @@ ms.locfileid: "72651279"
 ## <a name="entering-commands"></a>コマンドの入力
  **[イミディエイト]** ウィンドウで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを実行するときは、不等号 (>) を入力する必要があります。 上方向キーおよび下方向キーを使用して、以前に入力したコマンドの間をスクロールします。
 
-|タスク|解決策:|例|
+|タスク|解決策|例|
 |----------|--------------|-------------|
 |式を評価する。|式の先頭に疑問符 (?) を付けます。|`? a+b`|
 |イミディエイト モードの場合に、一時的にコマンド モードに移行して 1 つのコマンドを実行する。|先頭に不等号 (>) を付けてコマンドを入力します。|`>alias`|
@@ -114,13 +114,13 @@ ms.locfileid: "72651279"
  は、値 `False` を返します。
 
 ## <a name="first-chance-exception-notifications"></a>初回例外通知
- 設定の構成によっては、 **[イミディエイト]** ウィンドウに初回例外通知が表示されることがあります。
+ 設定の構成によっては、**[イミディエイト]** ウィンドウに初回例外通知が表示されることがあります。
 
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>[イミディエイト] ウィンドウで初回例外通知を切り替えるには
 
-1. **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[出力]** をクリックします。
+1. **[表示]** メニューの **[その他のウィンドウ]** をポイントし、**[出力]** をクリックします。
 
-2. **[出力]** ウィンドウのテキスト領域で右クリックし、 **[例外メッセージ]** をクリックして選択または選択解除します。
+2. **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。
 
 ## <a name="see-also"></a>参照
- デバッガー[コマンドウィンドウ](../../ide/reference/command-window.md)[を使用したコード内](../../debugger/navigating-through-code-with-the-debugger.md)での移動[visual Studio デバッガーでのデバッグ](../../debugger/debugging-in-visual-studio.md)の[基礎](../../debugger/debugger-basics.md)[チュートリアル: デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md) [visual studio コマンドエイリアス](../../ide/reference/visual-studio-command-aliases.md)([標準)Visual Studio での式](../../ide/using-regular-expressions-in-visual-studio.md)
+ [デバッガー](../../debugger/navigating-through-code-with-the-debugger.md) [コマンドウィンドウ](../../ide/reference/command-window.md)でのコード間の移動[visual studio デバッガーでのデバッグ](../../debugger/debugging-in-visual-studio.md)の[基本](../../debugger/debugger-basics.md)[チュートリアル: デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)Visual studio の[コマンドエイリアス](../../ide/reference/visual-studio-command-aliases.md) [visual studio での正規表現の使用](../../ide/using-regular-expressions-in-visual-studio.md)

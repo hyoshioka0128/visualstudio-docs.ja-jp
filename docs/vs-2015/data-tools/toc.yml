@@ -248,7 +248,7 @@
           items:
             - name: Visual Studio でのデータベースおよびデータ層アプリケーションの作成と管理
               href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
-            - name: n 層データ アプリケーションを作成する
+            - name: n 層データ アプリケーションの作成
               href: walkthrough-creating-an-n-tier-data-application.md
             - name: n 層データ アプリケーションの概要
               href: n-tier-data-applications-overview.md

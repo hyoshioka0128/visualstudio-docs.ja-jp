@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: ビルドからファイルを除外する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821611"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
@@ -26,7 +26,7 @@ ms.locfileid: "67821611"
 プロジェクト ファイルでは、ワイルドカードを使用して、1 つのディレクトリ内のすべてのファイル、または入れ子にされたディレクトリのセットをビルドの入力として使用することができます。 しかし、ディレクトリ内の 1 つのファイル、または入れ子にされたディレクトリのセット内の 1 つのディレクトリをビルドの入力に含めたくない場合もあります。 そのファイルまたはディレクトリは、入力の一覧から明示的に除外できます。 また、特定の条件のもとでのみ含めることを望むファイルがプロジェクトに存在することもあります。 ファイルをビルドに含める条件を明示的に宣言できます。  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>ビルドの入力からファイルまたはディレクトリを除外する  
- 項目リストは、ビルドの入力ファイルです。 `Include` 属性を使用して、含める項目を個別にまたはグループとして宣言します。 例えば:  
+ 項目リストは、ビルドの入力ファイルです。 `Include` 属性を使用して、含める項目を個別にまたはグループとして宣言します。 次に例を示します。  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -45,7 +45,7 @@ ms.locfileid: "67821611"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     \- または -  
+     \- または  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ ms.locfileid: "67821611"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     \- または -  
+     \- または  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -125,6 +125,6 @@ ms.locfileid: "67821611"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
- [項目](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [方法。ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)
+## <a name="see-also"></a>参照  
+ [品目](../msbuild/msbuild-items.md)   
+ [MSBuild](msbuild.md) [方法: ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)

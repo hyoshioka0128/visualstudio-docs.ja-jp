@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016883"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>方法: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
@@ -40,7 +41,7 @@ ms.locfileid: "86016883"
 
 2. ファイルに「 **Customlayout. sharepoint**」という名前を付け、sharepoint プロジェクトのフォルダーに保存します。
 
-3. プロジェクトを開き、ショートカットメニューを開き、[**プロジェクトのアンロード**] を選択します。
+3. プロジェクトを開き、ショートカットメニューを開き、[ **プロジェクトのアンロード**] を選択します。
 
 4. **ソリューションエクスプローラー**で、プロジェクトのショートカットメニューを開き、[ * \<ProjectName> .vbproj*の**編集**] または [ * \<ProjectName> .csproj*の**編集**] を選択します。
 
@@ -60,7 +61,7 @@ ms.locfileid: "86016883"
 
 1. メニューバーで、[**ファイル**] [ファイルを開く] の順に選択し  >  **Open**  >  **File**ます。
 
-2. [**ファイルを開く**] ダイアログボックスで、プロジェクトフォルダーに移動し、customlayout. target ファイルを選択して、[**開く**] をクリックします。
+2. [ **ファイルを開く** ] ダイアログボックスで、プロジェクトフォルダーに移動し、customlayout. target ファイルを選択して、[ **開く** ] をクリックします。
 
 3. タグの直前に `</Project>` 、次のコードを追加します。
 

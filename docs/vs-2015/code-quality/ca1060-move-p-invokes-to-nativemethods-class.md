@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e01ad9fc4fc57917c123404d8863d04240585793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533433"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invoke を NativeMethods クラスに移動します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
@@ -33,7 +33,7 @@ ms.locfileid: "85533433"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- メソッドは、プラットフォーム呼び出しサービスを使用してアンマネージコードにアクセスし、 **NativeMethods**クラスのいずれのメンバーでもありません。
+ メソッドは、プラットフォーム呼び出しサービスを使用してアンマネージコードにアクセスし、 **NativeMethods** クラスのいずれのメンバーでもありません。
 
 ## <a name="rule-description"></a>ルールの説明
  属性を使用してマークされている、またはのキーワードを使用して定義されているメソッドなどのプラットフォーム呼び出しメソッド <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> は `Declare` [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 、アンマネージコードにアクセスします。 これらのメソッドは、次のいずれかのクラスに含まれている必要があります。
@@ -47,13 +47,13 @@ ms.locfileid: "85533433"
   これらのクラスは、(Visual Basic の) として宣言され、 `internal` `Friend` 新しいインスタンスが作成されないようにするためのプライベートコンストラクターを宣言します。 これらのクラスのメソッドは、 `static` と `internal` (Visual Basic) である必要があり `Shared` `Friend` ます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、メソッドを適切な**NativeMethods**クラスに移動します。 ほとんどのアプリケーションでは、P/Invoke を**NativeMethods**という名前の新しいクラスに移動するだけで十分です。
+ この規則違反を修正するには、メソッドを適切な **NativeMethods** クラスに移動します。 ほとんどのアプリケーションでは、P/Invoke を **NativeMethods** という名前の新しいクラスに移動するだけで十分です。
 
- ただし、他のアプリケーションで使用するためのライブラリを開発している場合は、 **SafeNativeMethods**と**UnsafeNativeMethods**という2つのクラスを定義することを検討してください。 これらのクラスは、 **NativeMethods**クラスに似ています。ただし、これらは**SuppressUnmanagedCodeSecurityAttribute**という特殊な属性を使用してマークされます。 この属性が適用されると、ランタイムは完全なスタックウォークを実行せず、すべての呼び出し元に**UnmanagedCode**アクセス許可があることを確認します。 通常、ランタイムは起動時にこのアクセス許可をチェックします。 このチェックは実行されないため、これらのアンマネージメソッドの呼び出しのパフォーマンスを大幅に向上させることができます。また、これらのメソッドを呼び出すためのアクセス許可が制限されているコードを有効にすることもできます。
+ ただし、他のアプリケーションで使用するためのライブラリを開発している場合は、 **SafeNativeMethods** と **UnsafeNativeMethods**という2つのクラスを定義することを検討してください。 これらのクラスは、 **NativeMethods** クラスに似ています。ただし、これらは **SuppressUnmanagedCodeSecurityAttribute**という特殊な属性を使用してマークされます。 この属性が適用されると、ランタイムは完全なスタックウォークを実行せず、すべての呼び出し元に **UnmanagedCode** アクセス許可があることを確認します。 通常、ランタイムは起動時にこのアクセス許可をチェックします。 このチェックは実行されないため、これらのアンマネージメソッドの呼び出しのパフォーマンスを大幅に向上させることができます。また、これらのメソッドを呼び出すためのアクセス許可が制限されているコードを有効にすることもできます。
 
  ただし、この属性は細心の注意を払って使用する必要があります。 正しく実装されていない場合、セキュリティに深刻な影響を及ぼす可能性があります。「」をご覧ください。
 
- メソッドの実装方法の詳細については、 **NativeMethods**の例、 **SafeNativeMethods**の例、および**UnsafeNativeMethods**の例を参照してください。
+ メソッドの実装方法の詳細については、 **NativeMethods** の例、 **SafeNativeMethods** の例、および **UnsafeNativeMethods** の例を参照してください。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。
@@ -67,7 +67,7 @@ ms.locfileid: "85533433"
 ## <a name="nativemethods-example"></a>NativeMethods の例
 
 ### <a name="description"></a>説明
- **NativeMethods**クラスは**SuppressUnmanagedCodeSecurityAttribute**を使用してマークされないようにする必要があるため、このクラスに格納されている P/invoke には**UnmanagedCode**アクセス許可が必要です。 ほとんどのアプリケーションはローカルコンピューターから実行され、完全信頼と共に実行されるため、通常は問題ではありません。 ただし、再利用可能なライブラリを開発している場合は、 **SafeNativeMethods**クラスまたは**UnsafeNativeMethods**クラスを定義することを検討してください。
+ **NativeMethods**クラスは**SuppressUnmanagedCodeSecurityAttribute**を使用してマークされないようにする必要があるため、このクラスに格納されている P/invoke には**UnmanagedCode**アクセス許可が必要です。 ほとんどのアプリケーションはローカルコンピューターから実行され、完全信頼と共に実行されるため、通常は問題ではありません。 ただし、再利用可能なライブラリを開発している場合は、 **SafeNativeMethods** クラスまたは **UnsafeNativeMethods** クラスを定義することを検討してください。
 
  次の例は、user32.dll から**Messagebeep**関数をラップするビープ音のメソッドを示しています **。** **Messagebeep** P/Invoke は**NativeMethods**クラスに格納されます。
 
@@ -89,7 +89,7 @@ ms.locfileid: "85533433"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods の例
 
 ### <a name="description"></a>説明
- 安全に呼び出すことができず、副作用を引き起こす可能性のある P/Invoke メソッドは、 **UnsafeNativeMethods**という名前のクラスに配置する必要があります。 これらのメソッドは、意図せずにユーザーに公開されないように厳密にチェックする必要があります。 ルール[CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)は、この問題を解決するのに役立ちます。 また、メソッドには、使用時に**UnmanagedCode**の代わりに要求される別のアクセス許可が必要です。
+ 安全に呼び出すことができず、副作用を引き起こす可能性のある P/Invoke メソッドは、 **UnsafeNativeMethods**という名前のクラスに配置する必要があります。 これらのメソッドは、意図せずにユーザーに公開されないように厳密にチェックする必要があります。 ルール [CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) は、この問題を解決するのに役立ちます。 また、メソッドには、使用時に **UnmanagedCode** の代わりに要求される別のアクセス許可が必要です。
 
  次の例は、user32.dll から**ShowCursor**関数をラップする Hide メソッドを示しています **。**
 

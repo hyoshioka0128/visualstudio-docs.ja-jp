@@ -1,5 +1,5 @@
 ---
-title: '&lt;文字列&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;Strings &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,18 +20,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421526"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;文字列&gt;要素 (ブートス トラップ)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; 要素 (ブートストラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-製品名、パッケージ名、およびインストールのエラー メッセージのローカライズされた文字列を定義します。  
+製品名、パッケージ名、およびインストールエラーメッセージのローカライズされた文字列を定義します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Strings>  
@@ -43,19 +43,19 @@ ms.locfileid: "62421526"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
- `Strings`要素の子である、`Package`要素。 属性ではありません。  
+ 要素は `Strings` 要素の子です `Package` 。 属性はありません。  
   
 ## <a name="string"></a>String  
- `String`要素の子である、`Strings`要素。 A`Strings`要素が 1 つまたは複数あります`String`要素。  
+ 要素は `String` 要素の子です `Strings` 。 `Strings`要素には、1つまたは複数の要素を含めることができ `String` ます。  
   
- `String` 次の属性があります。  
+ `String` には次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Name`|必須。 文字列の名前。|  
+|`Name`|必須です。 文字列の名前。|  
   
 ## <a name="example"></a>例  
- 次のコード例では、すべての英語文字列を指定します、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]インストーラー。  
+ 次のコード例では、インストーラーのすべての英語文字列を指定し [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ます。  
   
 ```  
 <Strings>  
@@ -76,5 +76,5 @@ ms.locfileid: "62421526"
 </Strings>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [\<Package> 要素](../deployment/package-element-bootstrapper.md)

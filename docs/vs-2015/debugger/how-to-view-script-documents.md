@@ -1,5 +1,5 @@
 ---
-title: '方法: スクリプト ドキュメントを表示 |Microsoft Docs'
+title: '方法: スクリプト ドキュメントを表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189602"
 ---
-# <a name="how-to-view-script-documents"></a>方法: スクリプト ドキュメントを表示する
+# <a name="how-to-view-script-documents"></a>方法 : スクリプト ドキュメントを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の以前のバージョンでは、サーバー側スクリプトによって生成されたクライアント側スクリプト ファイルは [スクリプト エクスプローラー] ウィンドウに表示されました。 [スクリプト エクスプローラー] ウィンドウは非表示のことが多く、クライアント側スクリプトが利用できるかどうかが常に明確とは限りませんでした。  
@@ -32,11 +32,11 @@ ms.locfileid: "68189602"
   
  クライアント側スクリプト ファイルは、デバッグ モードまたは中断モードのときにのみ表示されます。 これらは **[スクリプト ドキュメント]** ノードに表示されます。  
   
- サーバー側スクリプト ファイルは常に表示されます。 これらは **[\<Website Pathname>]** ノードに表示されます。 ノードの名前には、この例に似ています。 `c:\...\Website2\`  
+ サーバー側スクリプト ファイルは常に表示されます。 ノードに表示され **\<Website Pathname>** ます。 ノードの名前は次の例のようになります。 `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>サーバー側スクリプト ドキュメントを表示するには  
   
-1. **ソリューション エクスプローラー**で、 **[\<Website Pathname>]** ノードを開きます。  
+1. **ソリューション エクスプローラー**で、 **\<Website Pathname>** ノードを開きます。  
   
 2. 表示するスクリプト ファイルをダブルクリックします。  
   
@@ -50,5 +50,5 @@ ms.locfileid: "68189602"
   
      クライアント側スクリプト ファイルがソース ウィンドウに表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

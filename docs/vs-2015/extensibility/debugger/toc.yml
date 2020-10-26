@@ -1,0 +1,286 @@
+- name: Visual Studio デバッガーの拡張性
+  href: visual-studio-debugger-extensibility.md
+- name: デバッグ エンジンの実装方法の選択
+  href: choosing-a-debug-engine-implementation-strategy.md
+- name: カスタム デバッグ エンジンの作成
+  href: creating-a-custom-debug-engine.md
+  items:
+    - name: カスタム デバッグ エンジンの登録
+      href: registering-a-custom-debug-engine.md
+    - name: デバッグするプログラムの有効化
+      href: enabling-a-program-to-be-debugged.md
+      items:
+        - name: ポートの取得
+          href: getting-a-port.md
+        - name: プログラムの登録
+          href: registering-the-program.md
+        - name: プログラムへのアタッチ
+          href: attaching-to-the-program.md
+        - name: 起動ベースのアタッチ
+          href: launch-based-attachment.md
+        - name: 必要なイベントの送信
+          href: sending-the-required-events.md
+    - name: 実行の制御と状態の評価
+      href: execution-control-and-state-evaluation.md
+      items:
+        - name: プログラムの制御
+          href: program-control.md
+        - name: ブレークポイントに関連するメソッド
+          href: breakpoint-related-methods.md
+        - name: 呼び出し履歴の評価
+          href: call-stack-evaluation.md
+        - name: 式の評価
+          href: expression-evaluation-visual-studio-debugging-sdk.md
+        - name: 管理イベント
+          href: control-events.md
+    - name: イベントの送信
+      href: sending-events.md
+      items:
+        - name: イベント ソース
+          href: event-sources-visual-studio-sdk.md
+        - name: サポートされているイベントの種類
+          href: supported-event-types.md
+        - name: イベントの説明
+          href: event-descriptions.md
+    - name: 切り離しとデタッチ
+      href: termination-and-detaching.md
+    - name: デバッガーのイベントの呼び出し
+      href: calling-debugger-events.md
+      items:
+        - name: プロジェクトへのアタッチとデタッチ
+          href: attaching-and-detaching-to-a-program.md
+        - name: デバッガーの起動
+          href: launching-the-debugger.md
+        - name: プログラムの終了
+          href: terminating-a-program.md
+        - name: ブレークポイントの作成
+          href: creating-a-breakpoint.md
+        - name: ブレークポイントがいつバインド、または非バインドになるか
+          href: when-a-breakpoint-binds-or-becomes-unbound.md
+        - name: ブレークポイント エラー
+          href: breakpoint-errors.md
+        - name: ブレークポイントのヒット
+          href: hitting-a-breakpoint.md
+        - name: ブレークポイントの削除
+          href: deleting-a-breakpoint.md
+        - name: 中断モードの開始
+          href: entering-break-mode.md
+        - name: 中断モードへのステップイン
+          href: stepping-in-break-mode.md
+        - name: 中断モードでの式の評価
+          href: expression-evaluation-in-break-mode.md
+        - name: 例外処理
+          href: exception-handling-visual-studio-sdk.md
+    - name: '方法: カスタム デバッグ エンジンのデバッグ'
+      href: how-to-debug-a-custom-debug-engine.md
+- name: 作業の開始
+  href: getting-started-with-debugger-extensibility.md
+  items:
+    - name: デバッガーを拡張するためのロードマップ
+      href: roadmap-for-extending-the-debugger.md
+    - name: デバッガーのコンポーネント
+      href: debugger-components.md
+      items:
+        - name: パッケージのデバッグ
+          href: debug-package.md
+        - name: プロセス デバッグ マネージャー
+          href: process-debug-manager.md
+        - name: セッション デバッグ マネージャー
+          href: session-debug-manager.md
+        - name: デバッグ エンジン
+          href: debug-engine.md
+        - name: 操作モード
+          href: operational-modes.md
+        - name: 式エバリュエーター
+          href: expression-evaluator.md
+        - name: シンボル プロバイダー
+          href: symbol-provider.md
+        - name: 型のビジュアライザーとカスタム ビューアー
+          href: type-visualizer-and-custom-viewer.md
+    - name: デバッガーの概念
+      href: debugger-concepts.md
+      items:
+        - name: デバッグ セッション
+          href: debug-session.md
+        - name: サーバー
+          href: servers-visual-studio-sdk.md
+        - name: ポート サプライヤー
+          href: port-suppliers.md
+        - name: ポート
+          href: ports.md
+        - name: 処理
+          href: processes.md
+        - name: プログラム ノード
+          href: program-nodes.md
+        - name: プログラム
+          href: programs.md
+        - name: Threads
+          href: threads.md
+        - name: スタック フレーム
+          href: stack-frames.md
+        - name: モジュール
+          href: modules.md
+        - name: ブレークポイント
+          href: breakpoints-visual-studio-sdk.md
+    - name: デバッガー コンテキスト
+      href: debugger-contexts.md
+      items:
+        - name: コード コンテキスト
+          href: code-context.md
+        - name: ドキュメントの位置
+          href: document-position.md
+        - name: ドキュメント コンテキスト
+          href: document-context.md
+        - name: 式の評価のコンテキスト
+          href: expression-evaluation-context.md
+    - name: タスクのデバッグ
+      href: debugging-tasks.md
+      items:
+        - name: セキュリティの問題
+          href: security-issues.md
+        - name: プログラムの起動
+          href: launching-a-program.md
+          items:
+            - name: ポートへの通知
+              href: notifying-the-port.md
+            - name: 起動後のアタッチ
+              href: attaching-after-a-launch.md
+        - name: プログラムへ直接アタッチする
+          href: attaching-directly-to-a-program.md
+        - name: 起動の後のスタートアップ イベントの送信
+          href: sending-startup-events-after-a-launch.md
+        - name: 実行の制御
+          href: control-of-execution.md
+        - name: ブレークポイントのバインド
+          href: binding-breakpoints.md
+        - name: 式の評価
+          href: evaluating-expressions.md
+        - name: データの視覚化と表示
+          href: visualizing-and-viewing-data.md
+- name: CLR 式エバリュエーターの書き込み
+  href: writing-a-common-language-runtime-expression-evaluator.md
+  items:
+    - name: 共通言語ランタイムおよび式の評価
+      href: common-language-runtime-and-expression-evaluation.md
+    - name: 式エバリュエーターのアーキテクチャ
+      href: expression-evaluator-architecture.md
+      items:
+        - name: 評価コンテキスト
+          href: evaluation-context.md
+        - name: 主要なエバリュエーター インターフェイス
+          href: key-expression-evaluator-interfaces.md
+    - name: 式エバリュエーターの登録
+      href: registering-an-expression-evaluator.md
+    - name: 式エバリュエーターの実装
+      href: implementing-an-expression-evaluator.md
+      items:
+        - name: 式エバリュエーターの実装方法
+          href: expression-evaluator-implementation-strategy.md
+    - name: ローカルの表示
+      href: displaying-locals.md
+      items:
+        - name: ローカルの実装のサンプル
+          href: sample-implementation-of-locals.md
+          items:
+            - name: GetMethodProperty の実装
+              href: implementing-getmethodproperty.md
+            - name: ローカルの列挙
+              href: enumerating-locals.md
+            - name: ローカル プロパティの取得
+              href: getting-local-properties.md
+            - name: ローカル値の取得
+              href: getting-local-values.md
+            - name: ローカル変数の評価
+              href: evaluating-locals.md
+    - name: '[ウォッチ] ウィンドウの式の評価'
+      href: evaluating-a-watch-window-expression.md
+      items:
+        - name: 式の評価の実装のサンプル
+          href: sample-implementation-of-expression-evaluation.md
+        - name: ウォッチ式の評価
+          href: evaluating-a-watch-expression.md
+    - name: ローカルの値の変更
+      href: changing-the-value-of-a-local.md
+      items:
+        - name: 値の変更の実装のサンプル
+          href: sample-implementation-of-changing-values.md
+    - name: 型のビジュアライザーおよびカスタム ビューアーの実装
+      href: implementing-type-visualizers-and-custom-viewers.md
+- name: ポートのサプライヤーの実装
+  href: implementing-a-port-supplier.md
+  items:
+    - name: ポート サプライヤーの実装および登録
+      href: implementing-and-registering-a-port-supplier.md
+    - name: 必須のポート サプライヤー インターフェイス
+      href: required-port-supplier-interfaces.md
+- name: .NET Framework の並列拡張機能の内部
+  href: parallel-extension-internals-for-the-dotnet-framework.md
+  items:
+    - name: Task クラス
+      href: task-class-internal-members.md
+      items:
+        - name: m_action フィールド
+          href: m-action-field.md
+        - name: m_contingentProperties フィールド
+          href: m-contingentproperties-field.md
+        - name: m_parent フィールド
+          href: m-parent-field.md
+        - name: m_stateFlags フィールド
+          href: m-stateflags-field.md
+        - name: m_stateObject フィールド
+          href: m-stateobject-field.md
+        - name: m_taskId フィールド
+          href: m-taskid-field.md
+        - name: s_taskIdCounter フィールド
+          href: s-taskidcounter-field.md
+        - name: TASK_STATE_CANCELED フィールド
+          href: task-state-canceled-field.md
+        - name: TASK_STATE_EXECUTED フィールド
+          href: task-state-executed-field.md
+        - name: TASK_STATE_FAULTED フィールド
+          href: task-state-faulted-field.md
+        - name: TASK_STATE_RAN_TO_COMPLETION フィールド
+          href: task-state-ran-to-completion-field.md
+        - name: TASK_STATE_WAITING_ON_CHILDREN フィールド
+          href: task-state-waiting-on-children-field.md
+        - name: SetNotificationForWaitCompletion メソッド
+          href: setnotificationforwaitcompletion-method.md
+        - name: NotifyDebuggerOfWaitCompletion メソッド
+          href: notifydebuggerofwaitcompletion-method.md
+    - name: TaskScheduler クラス
+      href: taskscheduler-class-internal-members.md
+      items:
+        - name: GetScheduledTasksForDebugger メソッド
+          href: getscheduledtasksfordebugger-method.md
+        - name: GetTaskSchedulersForDebugger メソッド
+          href: gettaskschedulersfordebugger-method.md
+    - name: ContingentProperties クラス
+      href: contingentproperties-class-internal-members.md
+      items:
+        - name: m_children フィールド
+          href: m-children-field.md
+    - name: AsyncTaskMethodBuilder 構造体
+      href: asynctaskmethodbuilder-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger プロパティ
+          href: asynctaskmethodbuilder-objectidfordebugger-property.md
+        - name: m_builder フィールド
+          href: asynctaskmethodbuilder-m-builder-field.md
+    - name: AsyncTaskMethodBuilder\<TResult> 構造体
+      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger プロパティ
+          href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
+        - name: m_task フィールド
+          href: asynctaskmethodbuilder-tresult-m-task-field.md
+    - name: AsyncVoidMethodBuilder 構造体
+      href: asyncvoidmethodbuilder-structure-internal-members.md
+      items:
+        - name: ObjectIdForDebugger プロパティ
+          href: asyncvoidmethodbuilder-objectidfordebugger-property.md
+        - name: m_objectIdForDebugger フィールド
+          href: asyncvoidmethodbuilder-m-objectidfordebugger-field.md
+- name: リファレンス
+  href: reference/reference-visual-studio-debugging-apis.md
+- name: サンプル
+  href: visual-studio-debugging-samples.md

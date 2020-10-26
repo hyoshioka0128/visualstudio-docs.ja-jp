@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538295"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>方法: VSTO アドインを使用してドキュメントにカスタム XML 部分を追加する
@@ -35,7 +35,7 @@ ms.locfileid: "85538295"
 
 - Microsoft Office PowerPoint プレゼンテーション。
 
-  詳細については、「[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)」を参照してください。
+  詳細については、「 [カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)」を参照してください。
 
   **対象:** このトピックの情報は、Excel、PowerPoint、および Word のアプリケーション レベルのプロジェクトに適用されます。 詳細については、「 [Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
@@ -76,7 +76,7 @@ ms.locfileid: "85538295"
 
 2. `AddCustomXmlPartToPresentation` `ThisAddIn` POWERPOINT の VSTO アドインプロジェクトのクラスにメソッドを追加します。
 
-3. プロジェクトの他のコードからメソッドを呼び出します。 たとえば、ユーザーがプレゼンテーションを開いたときにカスタム XML 部分を作成するには、EApplication_Event のイベントハンドラーからメソッドを呼び出して、そのイベントを[開き](/previous-versions/office/developer/office-2010/ff762843(v=office.14))ます。
+3. プロジェクトの他のコードからメソッドを呼び出します。 たとえば、ユーザーがプレゼンテーションを開いたときにカスタム XML 部分を作成するには、EApplication_Event のイベントハンドラーからメソッドを呼び出して、そのイベントを [開き](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) ます。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
  わかりやすくするために、この例では、メソッドでローカル変数として定義されている XML 文字列を使用しています。 通常は、ファイルやデータベースなどの外部ソースから XML を取得する必要があります。

@@ -1,5 +1,5 @@
 ---
-title: Web サイト サポートの属性 |Microsoft Docs
+title: Web サイトサポート属性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,51 +11,51 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144309"
 ---
 # <a name="web-site-support-attributes"></a>Web サイト サポートの属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Web サイト プロジェクトは、プログラミング言語の Web サポートを提供する拡張できます。 言語には、自らを登録する必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]にプロジェクト テンプレートが表示できるように、**新しい Web サイト**ダイアログ ボックスの言語が選択されているとします。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Web サイトプロジェクトを拡張して、Web プログラミング言語をサポートすることができます。 言語をに登録する必要があり [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。これにより、言語を選択したときに [ **新しい Web サイト** ] ダイアログボックスにプロジェクトテンプレートが表示されるようになります。  
   
- IronPython Studio サンプルには、web サイトのサポートが含まれています。 それを見つけることができます、 [VSSDK のサンプル](../../misc/vssdk-samples.md)します。 新しい Web プロジェクトの分離コードの言語として IronPython を登録する次の属性クラスが含まれています。  
+ IronPython Studio サンプルには、web サイトのサポートが含まれています。 詳細については、 [Vssdk のサンプル](../../misc/vssdk-samples.md)を参照してください。 ここには、新しい Web プロジェクトの分離コードとして IronPython を登録するための次の属性クラスが含まれています。  
   
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute  
- この属性は、言語のプロジェクトに配置されます。 Web でのプログラミング言語の一覧に、言語を追加、**言語**の一覧で、**新しい Web サイト** ダイアログ ボックス。 たとえば、次の IronPython 一覧に追加します。  
+ この属性は言語プロジェクトに適用されます。 この言語は、[**新しい Web サイト**] ダイアログボックスの [**言語**] ボックスの一覧に表示される Web プログラミング言語の一覧に追加されます。 たとえば、次の例では、IronPython がリストに追加されます。  
   
 ```  
 [WebSiteProject("IronPython", "Iron Python")]public class PythonProjectPackage : ProjectPackage  
 ```  
   
- この属性は、またテンプレート フォルダーをポイントするテンプレートのパスを設定します。 テンプレート フォルダーの場所の詳細については、次を参照してください。 [Web サイトのサポート テンプレート](../../extensibility/internals/web-site-support-templates.md)します。  
+ この属性は、テンプレートフォルダーを指すようにテンプレートパスを設定することもできます。 テンプレートフォルダーの場所の詳細については、「 [Web サイトサポートテンプレート](../../extensibility/internals/web-site-support-templates.md)」を参照してください。  
   
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
- この属性は、言語のプロジェクトに配置されます。 別のファイルの種類 (プライマリ) (関連) 1 つのファイルの種類を入れ子にする Web サイト プロジェクトのできる、**ソリューション エクスプ ローラー**します。  
+ この属性は言語プロジェクトに適用されます。 これにより、Web サイトプロジェクトは、 **ソリューションエクスプローラー**内の別のファイルの種類 (プライマリ) の下にあるファイルの種類 (関連) を入れ子にすることができます。  
   
- 例えば:  
+ 次に例を示します。  
   
 ```  
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
 ```  
   
- IronPython の分離コード ファイルが .aspx ファイルに関連することを指定します。 IronPython の Web サイト ソリューションで新しい .aspx Web ページが作成されると、新しい .py ソース ファイルが生成され、.aspx ページの子ノードとして表示されます。  
+ IronPython codebehind ファイルが .aspx ファイルに関連付けられていることを指定します。 IronPython Web サイトソリューションに新しい .aspx Web ページが作成されると、新しい .py ソースファイルが生成され、.aspx ページの子ノードとして表示されます。  
   
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
- この属性は、言語のプロジェクトのパッケージに配置されます。 言語の Intellisense のプロバイダーを選択します。  
+ この属性は、言語プロジェクトパッケージに配置されます。 言語の Intellisense プロバイダーを選択します。  
   
- 例えば:  
+ 次に例を示します。  
   
 ```  
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  
 ```  
   
- 指定します、PythonIntellisenseProvider 実装のインスタンス<xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>、言語サービスを提供するオンデマンドで作成する必要があります。  
+ を実装する PythonIntellisenseProvider のインスタンスが、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> 言語サービスを提供するためにオンデマンドで作成される必要があることを指定します。  
   
- IVsIntellisenseProject 実装では、参照を処理し、コードを含む Web ページを要求したがキャッシュされていないときに、言語コンパイラを呼び出します。  
+ IVsIntellisenseProject 実装は、コードを含む Web ページが要求されているがキャッシュされていない場合に、参照を処理し、言語コンパイラを呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Web サイト サポート](../../extensibility/internals/web-site-support.md)

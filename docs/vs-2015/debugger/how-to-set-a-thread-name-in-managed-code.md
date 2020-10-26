@@ -1,5 +1,5 @@
 ---
-title: '方法: マネージ コードのスレッド名を設定 |Microsoft Docs'
+title: '方法: マネージド コードのスレッド名を設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157673"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>方法: マネージド コードのスレッド名を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 スレッド名を設定すると、 **[スレッド]** ウィンドウでスレッドを追跡する際に役立ちます。 **スレッド**ウィンドウが Visual Studio Express エディションで使用できない、スレッド名、Express edition ではほとんどのユーティリティを設定します。  
+スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 スレッド名を設定すると、 **[スレッド]** ウィンドウでスレッドを追跡する際に役立ちます。 Visual Studio Express のエディションでは [ **スレッド** ] ウィンドウを使用できないため、Express edition ではスレッドの名前付けにほとんどユーティリティがありません。  
   
  マネージド コードのスレッド名を設定するには、<xref:System.Threading.Thread.Name%2A> プロパティを使用します。  
   
@@ -55,6 +55,6 @@ Sub Main()
 End Sub  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+## <a name="see-also"></a>参照  
+ [マルチスレッドアプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [方法: ネイティブ コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-native-code.md)

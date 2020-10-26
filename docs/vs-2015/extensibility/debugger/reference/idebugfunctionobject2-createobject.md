@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateObject |Microsoft Docs
+title: 'IDebugFunctionObject2:: CreateObject |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b60801f5288e88795ab75145b9c6120d4308d1c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202995"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-評価のフラグ設定、およびタイムアウト値を指定されたコンス トラクターを使用するオブジェクトを作成します。  
+評価フラグの設定とタイムアウト値を指定したコンストラクターを使用するオブジェクトを作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -49,28 +49,28 @@ int CreateObject (
   
 #### <a name="parameters"></a>パラメーター  
  `pConstructor`  
- [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)を作成するオブジェクトのコンス トラクターを表すオブジェクト。  
+ から作成されるオブジェクトのコンストラクターを表す [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) オブジェクト。  
   
  `dwArgs`  
- [in]パラメーターの数、`pArg`配列。 コンス トラクターに渡されるパラメーターの数を表します。  
+ から配列内のパラメーターの数 `pArg` 。 コンストラクターに渡されるパラメーターの数を表します。  
   
  `pArgs`  
- [in]配列の[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)コンス トラクターに渡されるパラメーターを表すオブジェクト。  
+ からコンストラクターに渡されたパラメーターを表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトの配列。  
   
  `dwEvalFlags`  
- [in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)評価を実行する方法を指定する列挙体。  
+ から評価を実行する方法を指定する、 [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙のフラグの組み合わせ。  
   
  `dwTimeout`  
- [in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用**無限**を無期限に待機します。  
+ からこのメソッドから戻る前に待機する最大時間 (ミリ秒単位)。 無期限に待機するには、 **無制限** を使用します。  
   
  `ppObject`  
- [out]返します、 **IDebugObject**新しく作成されたオブジェクトを表します。  
+ 入出力新しく作成されたオブジェクトを表す **IDebugObject** を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- クラス、またはパラメーターであるコンス トラクターを必要とするその他の複合型のインスタンスを表すオブジェクトを作成するには、このメソッドを呼び出します。  
+## <a name="remarks"></a>注釈  
+ このメソッドを呼び出して、クラスのインスタンス、またはコンストラクターを必要とする他の複合型 (パラメーター) を表すオブジェクトを作成します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

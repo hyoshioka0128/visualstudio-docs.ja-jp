@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703733"
 ---
 # <a name="signfile-task"></a>SignFile タスク
@@ -46,8 +46,8 @@ ms.locfileid: "65703733"
 |`TimestampUrl`|省略可能な `String` 型のパラメーターです。<br /><br /> タイム スタンプ サーバーの URL を指定します。|  
 |`TargetFrameworkVersion`|ターゲットに使用される .NET Framework のバージョンです。|  
   
-## <a name="remarks"></a>解説  
- 上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task Base Class](../msbuild/task-base-class.md)」を参照してください。  
+## <a name="remarks"></a>Remarks  
+ 上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターとその説明の一覧については、「 [Task Base Class](../msbuild/task-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次に、`SignFile` タスクを使用して、`FilesToSign` アイテム コレクションで指定したファイルに、`Certificate` プロパティで指定された証明書で署名する例を示します。  
@@ -70,7 +70,7 @@ ms.locfileid: "65703733"
 ```  
   
 > [!NOTE]
-> 証明書の拇印は、証明書の SHA-1 ハッシュです。 詳細については、「[Obtain the SHA-1 Hash of a Trusted Root CA Certificate](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)」 (信頼されたルート CA 証明書の SHA-1 ハッシュの取得) を参照してください。  
+> 証明書の拇印は、証明書の SHA-1 ハッシュです。 詳細については、「 [信頼されたルート CA 証明書の Sha-1 ハッシュを取得](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)する」を参照してください。  
   
 ## <a name="example"></a>例  
  次に、`Exec` タスクを使用して、`FilesToSign` アイテム コレクションで指定したファイルに、`Certificate` プロパティで指定された証明書で署名する例を示します。 これを使用すると、ビルド処理中に Windows インストーラー ファイルに署名できます。  
@@ -93,6 +93,6 @@ ms.locfileid: "65703733"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
+## <a name="see-also"></a>参照  
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
  [タスク](../msbuild/msbuild-tasks.md)

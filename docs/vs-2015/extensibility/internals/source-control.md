@@ -11,29 +11,29 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a29071035ccdd8a94b4ae26323780bcb24e8e23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155655"
 ---
 # <a name="source-control"></a>ソース管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-統合機能としてソース管理を実装するためのオプションについて説明[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、ソース管理プラグインまたはソース管理 VSPackage を使用するか。  
+このセクションでは、ソース管理 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プラグインまたはソース管理 VSPackage を使用して、の統合機能としてソース管理を実装するためのオプションについて説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [基本情報](../../extensibility/internals/source-control-integration-essentials.md)  
- ソース管理を始めるために必要な重要な情報を表示します。  
+ [Essentials](../../extensibility/internals/source-control-integration-essentials.md)  
+ ソース管理の使用を開始するために必要な重要な情報を示します。  
   
  [概要](../../extensibility/internals/source-control-integration-overview.md)  
- ソース管理を実装するための 2 つの使用可能なオプションの概要。  
+ ソース管理を実装するために使用できる2つのオプションの概要を説明します。  
   
  [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- ソース管理機能を提供するソース管理プラグインを作成する方法について説明します、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ソース制御ユーザー インターフェイス (UI)。  
+ ソース管理の [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ユーザーインターフェイス (UI) を使用してソース管理機能を提供するソース管理プラグインを作成する方法について説明します。  
   
  [ソース管理 VSPackage の作成](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- ソース管理 VSPackage をソース管理機能を提供するをカスタマイズするために使用するだけでなくを作成する方法について説明します、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ソース UI コントロールです。  
+ ソース管理機能を提供するだけでなく、ソース管理 UI のカスタマイズに使用できるソース管理 VSPackage を作成する方法について説明し [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
 ## <a name="related-sections"></a>関連項目  
  [ソース管理プラグイン](../../extensibility/source-control-plug-ins.md)  

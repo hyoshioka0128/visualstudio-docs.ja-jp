@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770721"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 要素 (Visual Studio 項目テンプレート)
@@ -53,7 +53,7 @@ ms.locfileid: "85770721"
 | `SubType` | 省略可能な属性です。<br /><br /> 複数ファイルの項目テンプレートに含まれる項目のサブタイプを指定します。 この値は、項目を開くためにが使用するエディターを決定するために使用され [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 |
 | `CustomTool` | 省略可能な属性です。<br /><br /> プロジェクトファイル内の項目の CustomTool を設定します。 |
 | `ItemType` | 省略可能な属性です。<br /><br /> プロジェクトファイル内の項目の ItemType を設定します。 |
-| `ReplaceParameters` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値が項目にあるかどうかを指定するブール値。 既定値は `false` です。 |
+| `ReplaceParameters` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値が項目にあるかどうかを指定するブール値。 既定値は `false`にする必要があります。 |
 | `TargetFileName` | 省略可能な属性です。<br /><br /> テンプレートから作成された項目の名前を指定します。 この属性は、パラメーター置換を使用して項目名を作成する場合に便利です。 |
 
 ### <a name="child-elements"></a>子要素
@@ -70,16 +70,16 @@ ms.locfileid: "85770721"
 
  `string`テンプレート *.zip*ファイル内のファイルの名前を表す。
 
-## <a name="remarks"></a>Remarks
- `ProjectItem`は、の省略可能な子です `TemplateContent` 。
+## <a name="remarks"></a>解説
+ `ProjectItem` は、の省略可能な子です `TemplateContent` 。
 
- `TargetFileName`属性を使用すると、パラメーターを使用してファイルの名前を変更できます。 たとえば、 *myfile.txt*ファイルがテンプレート *.zip*ファイルのルートディレクトリに存在するが、[**新しい項目の追加**] ダイアログボックスでユーザーが指定したファイル名に基づいてファイル名を指定する場合は、次の XML を使用します。
+ `TargetFileName`属性を使用すると、パラメーターを使用してファイルの名前を変更できます。 たとえば、 *myfile.txt* ファイルがテンプレート *.zip* ファイルのルートディレクトリに存在するが、[ **新しい項目の追加** ] ダイアログボックスでユーザーが指定したファイル名に基づいてファイル名を指定する場合は、次の XML を使用します。
 
 ```xml
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>
 ```
 
- このテンプレートから項目が作成されると、[**新しい項目の追加**] ダイアログボックスでユーザーが入力した名前に基づいてファイル名が作成されます。 これは、複数ファイルの項目テンプレートを作成するときに便利です。 詳細については、「[方法: 複数ファイルの項目テンプレート](../ide/how-to-create-multi-file-item-templates.md)と[テンプレートパラメーター](../ide/template-parameters.md)を作成する」を参照してください。
+ このテンプレートから項目が作成されると、[ **新しい項目の追加** ] ダイアログボックスでユーザーが入力した名前に基づいてファイル名が作成されます。 これは、複数ファイルの項目テンプレートを作成するときに便利です。 詳細については、「 [方法: 複数ファイルの項目テンプレート](../ide/how-to-create-multi-file-item-templates.md) と [テンプレートパラメーター](../ide/template-parameters.md)を作成する」を参照してください。
 
 ## <a name="example"></a>例
  次の例は、クラスの標準項目テンプレートのメタデータを示してい [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ます。

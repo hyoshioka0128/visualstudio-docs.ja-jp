@@ -13,34 +13,34 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 423df66e8bd6bc1257a32236aa4ffbb28b80d655
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152745"
 ---
 # <a name="expression-evaluator"></a>式エバリュエーター
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-(EE) の式エバリュエーターでは、IDE が中断モードの場合、ユーザーが表示できるように解析および実行時に、変数と式を評価する言語の構文を確認します。  
+式エバリュエーター (EE) は、言語の構文を調べて、実行時に変数と式を解析および評価します。これにより、IDE が中断モードのときにユーザーが表示できるようになります。  
   
-## <a name="using-expression-evaluators"></a>式エバリュエーターを使用します。  
- 使用して式を作成、 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドは、次のようにします。  
+## <a name="using-expression-evaluators"></a>式エバリュエーターの使用  
+ 式は、次のように [Parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) メソッドを使用して作成されます。  
   
-1. デバッグ エンジン (DE) を実装して、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。  
+1. デバッグエンジン (DE) は、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) インターフェイスを実装します。  
   
-2. デバッグ パッケージを取得、`IDebugExpressionContext2`オブジェクトから、 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイスに呼び出し、`IDebugStackFrame2::ParseText`を取得するメソッド、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。  
+2. デバッグパッケージは、 `IDebugExpressionContext2` [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) インターフェイスからオブジェクトを取得し、そのオブジェクトに対してメソッドを呼び出して、 `IDebugStackFrame2::ParseText` [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) オブジェクトを取得します。  
   
-3. デバッグ パッケージの呼び出し、 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッドまたは[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)式の値を取得します。 `IDebugExpression2::EvaluateAsync` コマンド/イミディ エイト ウィンドウから呼び出されます。 その他のすべての UI コンポーネントを呼び出す`IDebugExpression2::EvaluateSync`します。  
+3. デバッグパッケージは、 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) メソッドまたは [evaluateasync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) メソッドを呼び出して、式の値を取得します。 `IDebugExpression2::EvaluateAsync` は、コマンド/イミディエイトウィンドウから呼び出されます。 他のすべての UI コンポーネントは `IDebugExpression2::EvaluateSync` を呼び出します。  
   
-4. 式の評価の結果は、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトで、名前、種類、および式の評価の結果の値が含まれています。  
+4. 式の評価結果は [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトになります。このオブジェクトには、式の評価結果の名前、型、および値が含まれています。  
   
-   式の評価中に、EE にシンボル プロバイダー コンポーネントからの情報が必要です。 シンボル プロバイダーでは、識別し、解析された式を理解するために使用するシンボリック情報を提供します。  
+   式の評価中に、EE はシンボルプロバイダーコンポーネントからの情報を必要とします。 シンボルプロバイダーは、解析された式を識別および理解するために使用するシンボリック情報を提供します。  
   
-   非同期式の評価が完了したら、非同期のイベントは、式の評価が完了したことを IDE に通知する、DE セッション デバッグ マネージャー (SDM) 経由で送信されます。 評価の結果がへの呼び出しから返される同期式の評価が完了すると、`IDebugExpression2::EvaluateSync`メソッド。  
+   非同期式の評価が完了すると、セッションデバッグマネージャー (SDM) を介して非同期イベントが送信され、式の評価が完了したことが IDE に通知されます。 同期式の評価が完了すると、メソッドの呼び出しから評価の結果が返され `IDebugExpression2::EvaluateSync` ます。  
   
-## <a name="implementation-notes"></a>実装に関する注意事項  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグ エンジンが共通言語ランタイム (CLR) のインターフェイスを使用して、式エバリュエーターと対話する予定です。 その結果、式エバリュエーターと連動する、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグ エンジンは、CLR をサポートする必要があります (一部である、debugref.doc で見つかるすべての CLR デバッグのインターフェイスの完全な一覧の[!INCLUDE[winsdklong](../../includes/winsdklong-md.md)])。  
+## <a name="implementation-notes"></a>実装に関するメモ  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッグエンジンは、共通言語ランタイム (CLR) インターフェイスを使用して式エバリュエーターと通信することを想定しています。 その結果、デバッグエンジンで動作する式エバリュエーターは [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] clr をサポートする必要があります (すべての clr デバッグインターフェイスの完全な一覧は、の一部である debugref.doc で参照でき [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] ます)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)

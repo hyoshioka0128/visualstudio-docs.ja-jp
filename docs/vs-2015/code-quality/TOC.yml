@@ -14,9 +14,9 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: 自動機能の中断
           href: automatic-feature-suspension.md
-        - name: '方法: 手動でのコード分析の実行'
+        - name: '方法: 手動でコード分析を実行する'
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 'チュートリアル: マネージド コードの分析によるコード障害の検出'
+        - name: 'チュートリアル : マネージド コードの分析によるコード障害の検出'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: SuppressMessage 属性を使用した警告の抑制
           items:
@@ -28,11 +28,11 @@
               href: how-to-suppress-warnings-by-using-the-menu-item.md
             - name: '方法: 生成されたコードに対する警告を抑制する'
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: '方法: コード分析辞書のカスタマイズ'
+            - name: '方法 : コード分析辞書をカスタマイズする'
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: 匿名メソッドとコード分析
               href: anonymous-methods-and-code-analysis.md
-            - name: '方法: マネージド コードの障害を表示する'
+            - name: '方法 : マネージド コードの障害を表示する'
               href: how-to-view-managed-code-defects.md
             - name: '方法: マネージド コードの障害に対する作業項目を作成する'
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059:メンバーは特定の具象型を公開できません'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060:P/Invoke を NativeMethods クラスに移動します'
+                - name: 'CA1060: P/Invoke を NativeMethods クラスに移動します'
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061:基底クラス メソッドを非表示にしません'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -202,21 +202,21 @@
                   href: ca1308-normalize-strings-to-uppercase.md
                 - name: 'CA1309:順序を示す StringComparison を使用します'
                   href: ca1309-use-ordinal-stringcomparison.md
-                - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
+                - name: 'CA2101: P/Invoke 文字列引数に対してマーシャリングを指定します'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: 相互運用性に関する警告
               items:
                 - name: 相互運用性に関する警告
                   href: interoperability-warnings.md
-                - name: 'CA1400:P/Invoke エントリ ポイントは存在しなければなりません'
+                - name: 'CA1400: P/Invoke エントリ ポイントは存在しなければなりません'
                   href: ca1400-p-invoke-entry-points-should-exist.md
-                - name: 'CA1401:P/Invoke は参照可能であることはできません'
+                - name: 'CA1401: P/Invoke は参照可能になりません'
                   href: ca1401-p-invokes-should-not-be-visible.md
                 - name: 'CA1402:COM 参照可能インターフェイスでのオーバーロードを避けてください'
                   href: ca1402-avoid-overloads-in-com-visible-interfaces.md
                 - name: 'CA1403:Auto 配置の型を COM 参照可能にすることはできません'
                   href: ca1403-auto-layout-types-should-not-be-com-visible.md
-                - name: 'CA1404:P/Invoke の直後に GetLastError を呼び出します'
+                - name: 'CA1404: P/Invoke の直後に GetLastError を呼び出します'
                   href: ca1404-call-getlasterror-immediately-after-p-invoke.md
                 - name: 'CA1405:COM 参照可能な型の基本型は COM 参照可能でなければなりません'
                   href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -236,9 +236,9 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413:Com 参照可能な値型ではパブリックでないフィールドを使用しません'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: 'CA1414:ブール型の P/Invoke 引数を MarshalAs に設定します'
+                - name: 'CA1414: ブール型の P/Invoke 引数を MarshalAs に設定します'
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-                - name: 'CA1415:P/Invoke を正しく宣言します'
+                - name: 'CA1415: P/Invoke を正しく宣言します'
                   href: ca1415-declare-p-invokes-correctly.md
                 - name: 保守性に関する警告
                   items:
@@ -356,7 +356,7 @@
                           href: portability-warnings.md
                         - name: 'CA1900:値型フィールドはポータブルでなければなりません'
                           href: ca1900-value-type-fields-should-be-portable.md
-                        - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
+                        - name: 'CA1901: P/Invoke 宣言はポータブルでなければなりません'
                           href: ca1901-p-invoke-declarations-should-be-portable.md
                         - name: 'CA1903:対象のフレームワークから API のみを使用します'
                           href: ca1903-use-only-api-from-targeted-framework.md
@@ -566,13 +566,13 @@
                           href: ca2242-test-for-nan-correctly.md
                         - name: 'CA2243:属性文字列リテラルは、正しく解析する必要があります'
                           href: ca2243-attribute-string-literals-should-parse-correctly.md
-                - name: コード分析ポリシー エラー
+                - name: Code Analysis Policy Errors
                   href: code-analysis-policy-errors.md
 - name: C/C++ コードの品質の分析
   items:
     - name: C/C++ コードの品質の分析
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
-    - name: 'クイック スタート:C/C++ のコード分析'
+    - name: 'クイック スタート: C/C++ のコード分析'
       href: quick-start-code-analysis-for-c-cpp.md
     - name: 規則セットを使用した実行対象の C++ 規則の指定
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -582,9 +582,9 @@
       href: code-analysis-for-c-cpp-overview.md
     - name: '方法: C/C++ プロジェクトのコード分析プロパティを設定する'
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: 'チュートリアル: C/C++ コード分析による障害の検出'
+    - name: 'チュートリアル : C/C++ コード分析による障害の検出'
       items:
-        - name: 'チュートリアル: C/C++ コード分析による障害の検出'
+        - name: 'チュートリアル : C/C++ コード分析による障害の検出'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: デモのサンプル
           href: demo-sample.md
@@ -1204,7 +1204,7 @@
               items:
                 - name: カスタム規則セットの作成
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: '方法: カスタム規則セットの作成'
+                - name: '方法: カスタム規則セットを作成する'
                   href: how-to-create-a-custom-rule-set.md
                 - name: 規則セット エディターでの作業
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: コード メトリックス値
       href: code-metrics-values.md
-    - name: '方法: コード メトリックス データの生成'
+    - name: '方法 : コード メトリックス データを生成する'
       href: how-to-generate-code-metrics-data.md
     - name: コード メトリックス データの操作
       href: working-with-code-metrics-data.md

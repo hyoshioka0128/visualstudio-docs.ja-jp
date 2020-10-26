@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546926"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>カスタム アーキテクチャ検証を依存関係図に追加する
 
 Visual Studio では、ユーザーはプロジェクト内のソースコードをレイヤーモデルに対して検証して、ソースコードが依存関係図の依存関係に準拠しているかどうかを検証できます。 標準の検証アルゴリズムがありますが、独自の検証拡張機能を定義できます。
 
-ユーザーが依存関係図で [**アーキテクチャの検証**] コマンドを選択すると、標準の検証メソッドが呼び出され、その後にインストールされている検証拡張機能が続きます。
+ユーザーが依存関係図で [ **アーキテクチャの検証** ] コマンドを選択すると、標準の検証メソッドが呼び出され、その後にインストールされている検証拡張機能が続きます。
 
 > [!NOTE]
 > 依存関係図では、検証の主な目的は、図と、ソリューションの他の部分のプログラムコードを比較することです。
@@ -40,7 +40,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>プロジェクト テンプレートを使用して拡張機能を定義するには
 
-1. 新しい**レイヤーデザイナー検証拡張機能**プロジェクトを作成します。
+1. 新しい **レイヤーデザイナー検証拡張機能** プロジェクトを作成します。
 
     このテンプレートでは、小さい例を含むプロジェクトが作成されます。
 
@@ -48,7 +48,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
    > テンプレートを正常に機能させるには:
    >
    > - `LogValidationError` の呼び出しを編集し、省略可能な引数 `errorSourceNodes` と `errorTargetNodes`を削除します。
-   > - カスタムプロパティを使用する場合は、「[依存関係図へのカスタムプロパティの追加](../modeling/add-custom-properties-to-layer-diagrams.md)」で説明されている更新プログラムを適用します。
+   > - カスタムプロパティを使用する場合は、「 [依存関係図へのカスタムプロパティの追加](../modeling/add-custom-properties-to-layer-diagrams.md)」で説明されている更新プログラムを適用します。
 
 2. コードを編集して検証を定義します。 詳細については、「 [検証のプログラミング](#programming)」を参照してください。
 
@@ -77,7 +77,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 1. 新しい**クラス ライブラリ** プロジェクトを作成します。 このプロジェクトには、レイヤー検証クラスが含められます。
 
-2. ソリューションで**VSIX プロジェクト**を検索または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest**という名前のファイルが含まれます。
+2. ソリューションで **VSIX プロジェクト** を検索または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest**という名前のファイルが含まれます。
 
 3. **ソリューションエクスプローラー**の VSIX プロジェクトの右クリックメニューで、[**スタートアッププロジェクトに設定**] を選択します。
 
@@ -107,7 +107,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 6. レイヤー検証プロジェクトに戻り、次のプロジェクト参照を追加します。
 
-    |**参照**|**実行できる操作**|
+    |**リファレンス**|**実行できる操作**|
     |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|アーキテクチャ グラフを読み取る|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|レイヤーと関連付けられているコード DOM を読み取る|
@@ -125,7 +125,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 9. VSIX を Visual Studio のメインインスタンスまたは別のコンピューターにインストールするには、vsix プロジェクトの**bin**ディレクトリで **.vsix ファイルを見つけます。** このファイルを、VSIX をインストールするコンピューターにコピーします。 Windows エクスプローラーで、VSIX ファイルをダブルクリックします。
 
-## <a name="programming-validation"></a><a name="programming"></a>検証のプログラミング
+## <a name="programming-validation"></a><a name="programming"></a> 検証のプログラミング
 
 レイヤー検証拡張機能を定義するには、以下の特性を備えたクラスを定義します。
 
@@ -194,7 +194,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 レイヤーからコード内の要素へのリンクのカテゴリは "Represents" です。
 
-## <a name="debugging-validation"></a><a name="debugging"></a>検証のデバッグ
+## <a name="debugging-validation"></a><a name="debugging"></a> 検証のデバッグ
 
 レイヤー検証拡張機能をデバッグするには、Ctrl キーを押しながら F5 キーを押します。 Visual Studio の実験用インスタンスが開きます。 このインスタンスで、レイヤー モデルを開くか作成します。 このモデルは、コードと関連付けられている必要があり、少なくとも 1 つの依存関係を含む必要があります。
 
@@ -218,7 +218,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 デバッガーを検証プロセスにアタッチするには、検証メソッドの先頭に `System.Diagnostics.Debugger.Launch()` の呼び出しを挿入します。 [デバッグ] ダイアログボックスが表示されたら、Visual Studio のメインインスタンスを選択します。
 
-または、 `System.Windows.Forms.MessageBox.Show()`の呼び出しを挿入してもかまいません。 メッセージボックスが表示されたら、Visual Studio のメインインスタンスにアクセスし、[**デバッグ**] メニューの [**プロセスにアタッチ**] をクリックします。 **Graphcmd.exe**という名前のプロセスを選択します。
+または、 `System.Windows.Forms.MessageBox.Show()`の呼び出しを挿入してもかまいません。 メッセージボックスが表示されたら、Visual Studio のメインインスタンスにアクセスし、[ **デバッグ** ] メニューの [ **プロセスにアタッチ**] をクリックします。 **Graphcmd.exe**という名前のプロセスを選択します。
 
 常に、Ctrl キーを押しながら F5 キーを押して (**[デバッグなしで開始]**) 実験用インスタンスを起動します。
 
@@ -226,7 +226,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 適切なバージョンの Visual Studio がインストールされているコンピューターに検証拡張機能をインストールするには、ターゲット コンピューターで VSIX ファイルを開きます。
 
-## <a name="example-code"></a><a name="example"></a>コード例
+## <a name="example-code"></a><a name="example"></a> コード例
 
 ```csharp
 using System;

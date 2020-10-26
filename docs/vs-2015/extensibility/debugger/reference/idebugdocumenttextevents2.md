@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b574ae45dafed11ed28047859676524054951512
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65678965"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、Visual Studio によってデバッグ エンジンによって提供されるソース ドキュメントへの変更通知に使用されます。  
+このインターフェイスは、デバッグエンジンによって提供されるソースドキュメントへの変更について Visual Studio に通知するために使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -30,34 +30,34 @@ ms.locfileid: "65678965"
 IDebugDocumentTextEvents2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デでは、ソース コードに変更をサポートするためにこのインターフェイスを実装します。 このインターフェイスが実装する同一のオブジェクトに通常実装、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイス。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ DE は、このインターフェイスを実装して、ソースコードに変更を加えることをサポートします。 このインターフェイスは、通常、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) インターフェイスを実装するのと同じオブジェクトに実装されます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 呼び出すことによってこのインターフェイスを取得、<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>メソッド。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>インターフェイスがへの呼び出しから取得した、<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>メソッド。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>インターフェイスを呼び出すことによって取得、 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)メソッドを[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイス。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] メソッドの呼び出しによって、このインターフェイスを取得 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> します。 インターフェイスは、 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> メソッドの呼び出しから取得され <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> ます。 インターフェイスは、 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイスの[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)メソッドを呼び出すことによって取得されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugDocumentTextEvents2`します。  
+ 次の表に、のメソッドを示し `IDebugDocumentTextEvents2` ます。  
   
-|メソッド|説明|  
+|Method|説明|  
 |------------|-----------------|  
 |[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|ドキュメント全体が破棄されたことを示します。|  
-|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|デバッグ パッケージをドキュメントにテキストが挿入されたことを通知します。|  
-|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|テキストがドキュメントから削除されているパッケージのデバッグに通知します。|  
-|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|デバッグ パッケージ、ドキュメント内のテキストが置き換えられることを通知します。|  
-|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|テキスト属性をドキュメントで更新されていることをデバッグ パッケージに通知します。|  
-|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|ドキュメントの属性が更新されているイベントの受信側に通知します。|  
+|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|ドキュメントにテキストが挿入されたことをデバッグパッケージに通知します。|  
+|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|ドキュメントからテキストが削除されたことをデバッグパッケージに通知します。|  
+|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|ドキュメント内でテキストが置換されたことをデバッグパッケージに通知します。|  
+|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|ドキュメントでテキスト属性が更新されたことをデバッグパッケージに通知します。|  
+|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|ドキュメント属性が更新されたことをイベントの受信者に通知します。|  
   
-## <a name="remarks"></a>Remarks  
- だけで、各自のドキュメントを提供するデバッグ エンジンを活用、`IDebugDocumentTextEvent2`インターフェイス。 この例は、スクリプトのデバッグ エンジンになります。 スクリプトを解釈するには、プロセスで新しいソース コードを生成できますが、ディスク ファイルに存在しないと、DE のみが知っているを。  
+## <a name="remarks"></a>解説  
+ 独自のドキュメントを提供するデバッグエンジンのみがインターフェイスを利用 `IDebugDocumentTextEvent2` できます。 この例として、スクリプトデバッグエンジンが挙げられます。 スクリプトを解釈するプロセスでは、新しいソースコードを生成できます。これは、ディスクファイルには存在せず、DE にのみ知られています。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

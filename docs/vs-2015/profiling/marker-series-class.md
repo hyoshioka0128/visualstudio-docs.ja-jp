@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194936"
 ---
-# <a name="markerseries-class"></a>marker_series クラス
+# <a name="marker_series-class"></a>marker_series クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 1 つのプロバイダーによって生成されたイベントのシリアル チャネルを表します。  
@@ -35,14 +35,14 @@ class marker_series;
   
 ### <a name="public-constructors"></a>パブリック コンストラクター  
   
-|name|説明|  
+|名前|説明|  
 |----------|-----------------|  
 |[marker_series::marker_series コンストラクター](../profiling/marker-series-marker-series-constructor.md)|`marker_series` クラスの新しいインスタンスを初期化します。|  
-|[marker_series::~marker_series デストラクター](../profiling/marker-series-tilde-marker-series-destructor.md)|marker_series オブジェクトを破棄し、すべての割り当て済みリソースを開放します。|  
+|[marker_series::~marker_series デストラクター](../profiling/marker-series-tilde-marker-series-destructor.md)|marker_series オブジェクトを破棄し、割り当てられているすべてのリソースを解放します。|  
   
 ### <a name="public-methods"></a>パブリック メソッド  
   
-|name|説明|  
+|名前|説明|  
 |----------|-----------------|  
 |[marker_series::is_enabled メソッド](../profiling/marker-series-is-enabled-method.md)|任意のセッションでプロバイダーが有効にされているかどうかを調べます。|  
 |[marker_series::write_alert メソッド](../profiling/marker-series-write-alert-method.md)|コンカレンシー ビジュアライザーのトレース ファイルにアラートを書き込みます。|  
@@ -57,5 +57,5 @@ class marker_series;
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>関連項目  
- [diagnostic 名前空間](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>参照  
+ [診断名前空間](../profiling/diagnostic-namespace.md)

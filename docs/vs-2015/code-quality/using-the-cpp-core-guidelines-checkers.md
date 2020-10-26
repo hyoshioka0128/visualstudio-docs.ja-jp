@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173558"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
@@ -33,13 +33,13 @@ C++ Core Guidelines は、C++ の専門家とデザイナーによって作成�
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>CppCoreCheck パッケージをプロジェクトに追加するには  
   
-1. **ソリューションエクスプローラー**で、右クリックして、パッケージを追加するソリューション内のプロジェクトのコンテキストメニューを開きます。 [ **Nuget**パッケージの管理] を選択して、 **nuget パッケージマネージャー**を開きます。  
+1. **ソリューションエクスプローラー**で、右クリックして、パッケージを追加するソリューション内のプロジェクトのコンテキストメニューを開きます。 [ **Nuget** パッケージの管理] を選択して、 **nuget パッケージマネージャー**を開きます。  
   
 2. [ **NuGet パッケージマネージャー** ] ウィンドウで、CppCoreCheck を検索します。  
   
     ![Nuget パッケージマネージャーウィンドウに CppCoreCheck パッケージが表示されます](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3. CppCoreCheck パッケージを選択し、[**インストール**] をクリックして、プロジェクトに規則を追加します。  
+3. CppCoreCheck パッケージを選択し、[ **インストール** ] をクリックして、プロジェクトに規則を追加します。  
   
    NuGet パッケージは、プロジェクトに対してコード分析を有効にしたときに呼び出される追加の MSBuild. .targets ファイルをプロジェクトに追加します。 この .targets ファイルは、Visual Studio コード分析ツールに追加の拡張機能として C++ Core Check 規則を追加します。  
   
@@ -51,10 +51,10 @@ C++ Core Guidelines は、C++ の専門家とデザイナーによって作成�
   
    ![コード分析拡張機能の設定のプロパティページ](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   C++ Core Check の規則セットを有効または無効にするには、プロジェクトの [**プロパティページ**] ダイアログを開きます。 [**構成プロパティ**] で、[**コード分析**]、[**拡張機能**] の順に展開します。 [ **C++ Core Check の有効化 (リリース)** ] または [C++ Core Check を有効にする **(試験段階)**] の横にあるドロップダウンコントロールで、[**はい]** または [**いいえ**] を選択します。 **[OK]** または [**適用**] を選択して、変更を保存します。  
+   C++ Core Check の規則セットを有効または無効にするには、プロジェクトの [ **プロパティページ** ] ダイアログを開きます。 [ **構成プロパティ**] で、[  **コード分析**]、[ **拡張機能**] の順に展開します。 [ **C++ Core Check の有効化 (リリース)** ] または [C++ Core Check を有効にする **(試験段階)**] の横にあるドロップダウンコントロールで、[ **はい]** または [ **いいえ**] を選択します。 **[OK]** または [**適用**] を選択して、変更を保存します。  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>型、境界、および有効期間のチェック  
- C++ Core Check パッケージには、現在、[タイプセーフ](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type)、[境界の安全性](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)、および[有効期間の安全性](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime)のプロファイルのチェックが含まれています。  
+ C++ Core Check パッケージには、現在、 [タイプセーフ](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type)、 [境界の安全性](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)、および [有効期間の安全性](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) のプロファイルのチェックが含まれています。  
   
  C++ Core Check の規則によって検出される可能性のある問題の例を次に示します。  
   
@@ -96,7 +96,7 @@ int main()
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (完全な PDB)**  
 **c:\users\username\documents\visual studio 2015 \ プロジェクト \ corecheckexample**  
 **ckexample\corecheckexample.cpp (6): warning C26494: 変数 ' arr ' は uninitializ**  
-**ed。常にオブジェクトを初期化します。(type .5: https: \/ /go.microsoft.com/fwlink/p/?Link**  
+**プロンプト.常にオブジェクトを初期化します。(type .5: https: \/ /go.microsoft.com/fwlink/p/?Link**  
 **ID = 620421)**  
 **c:\users\username\documents\visual studio 2015 \ プロジェクト \ corecheckexample**  
 **ckexample\corecheckexample.cpp (7): warning C26485: Expression ' arr ': 次に対する配列はありません**  

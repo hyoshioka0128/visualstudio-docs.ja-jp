@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918256"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API を使用して関係をナビゲートする
@@ -112,7 +112,7 @@ IEnumerable<IActivityNode> GetActivityEdgeSources(this IActivityNode node);
 
 ```
 
-### <a name="connector-assembly-and-delegation"></a>コネクタ (アセンブリと委任)
+### <a name="connector-assembly-and-delegation"></a>コネクタ (アセンブリと委任) 
 
 ```
 /// Returns the elements connected via assembly
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>リレーションシップの列挙
- 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable < > インターフェイスに準拠しています。 これは、 [linq のクエリ式](/dotnet/csharp/linq/index)と、 **linq**名前空間で定義されている拡張メソッドを使用できることを意味します。
+ 複数の値を返す UML モデルのすべてのプロパティは、IEnumerable<> インターフェイスに準拠しています。 これは、 [linq のクエリ式](/dotnet/csharp/linq/index) と、 **linq** 名前空間で定義されている拡張メソッドを使用できることを意味します。
 
- 例:
+ 次に例を示します。
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()

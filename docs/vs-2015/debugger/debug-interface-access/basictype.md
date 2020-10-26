@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 38de89b9774ac20f67b91e4ba864534122f4cdb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580838"
 ---
 # <a name="basictype"></a>BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-シンボルの基本的な型を指定します。  
+シンボルの基本型を指定します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum BasicType {   
@@ -50,68 +50,68 @@ enum BasicType { 
 };  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  btNoType  
- 基本的な型が指定されていません。  
+ 基本型が指定されていません。  
   
  btVoid  
- 基本的な型は、`void`します。  
+ 基本型は `void` です。  
   
  btChar  
- 基本的な型は、 `char` (C と C++ の型)。  
+ 基本型は、 `char` (C/c + + 型) です。  
   
  btWChar  
- 基本的な型は、ワイド (Unicode) 文字 (`WCHAR`)。  
+ 基本型はワイド (Unicode) 文字 ( `WCHAR` ) です。  
   
  btInt  
- 基本的な型が`signed int`(C と C++ の型)。  
+ 基本型は `signed int` (C/c + + 型) です。  
   
  btUInt  
- 基本的な型が`unsigned int`(C と C++ の型)。  
+ 基本型は `unsigned int` (C/c + + 型) です。  
   
  btFloat  
- 基本的な型は、浮動小数点数 (`FLOAT`)。  
+ 基本型は浮動小数点数 ( `FLOAT` ) です。  
   
  btBCD  
- 基本的な型がバイナリ コード化された 10 進数 (`BCD`)。  
+ 基本型は、バイナリでコード化された10進数 ( `BCD` ) です。  
   
  btBool  
- 基本的な型がブール (`BOOL`)。  
+ 基本型はブール値 ( `BOOL` ) です。  
   
  btLong  
- 基本的な型は、 `long int` (C と C++ の型)。  
+ 基本型は、 `long int` (C/c + + 型) です。  
   
  btULong  
- 基本的な型は、 `unsigned long int` (C と C++ の型)。  
+ 基本型は `unsigned long int` (C/c + + 型) です。  
   
  btCurrency  
- 基本的な型は、通貨です。  
+ 基本型は currency です。  
   
  btDate  
- 基本的な型は日付/時刻 (`DATE`)。  
+ 基本型は date/time ( `DATE` ) です。  
   
  btVariant  
- 基本的な型が変数の型の構造 (`VARIANT`)。  
+ 基本型は変数型の構造体 ( `VARIANT` ) です。  
   
  btComplex  
- 基本的な型は、複雑な数値です。  
+ 基本型は複素数です。  
   
  btBit  
- 基本的な型は、少しです。  
+ 基本型はビットです。  
   
  btBSTR  
- 基本的な型が基本またはバイナリ文字列 (`BSTR`)。  
+ 基本型は、基本またはバイナリ文字列 ( `BSTR` ) です。  
   
  btHresult  
- 基本的な型は、`HRESULT`します。  
+ 基本型は `HRESULT` です。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値がによって返される、 [idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、 [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) メソッドによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

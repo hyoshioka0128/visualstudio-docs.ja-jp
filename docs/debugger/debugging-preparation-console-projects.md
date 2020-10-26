@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916280"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備:コンソール プロジェクト (C#、C++、Visual Basic、F#)
@@ -41,7 +41,7 @@ ms.locfileid: "75916280"
 
 コンソール アプリケーションのコマンド ライン引数を指定する必要がある場合があります。 詳細については、次を参照してください[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)、 [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)、または[c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)。
 
-すべてのプロジェクト プロパティと同様に、これらの引数はデバッグ セッション間および Visual Studio セッション間で保持されます。 このため、対象のコンソール アプリケーションを以前にデバッグしたことがある場合は、前回のセッションで **[\<プロジェクト名> プロパティ ページ]** ダイアログ ボックスに入力した引数が存在する場合があります。
+すべてのプロジェクト プロパティと同様に、これらの引数はデバッグ セッション間および Visual Studio セッション間で保持されます。 このため、コンソール アプリケーションを以前にデバッグしたことがある場合は、前回のセッションで **[\<Project> プロパティ ページ]** ダイアログ ボックスに入力した引数が存在する場合があります。
 
 ## <a name="start-the-application"></a>アプリケーションの起動
 

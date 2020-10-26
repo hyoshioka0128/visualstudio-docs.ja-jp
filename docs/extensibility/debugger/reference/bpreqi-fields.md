@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS |マイクロソフトドキュメント
+title: BPREQI_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737752"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
@@ -68,60 +68,60 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>フィールド
 `BPREQI_BPLOCATION`\
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造`bpLocation`の (ブレークポイントの場所) フィールドを初期化/使用します。
+`bpLocation` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造の (ブレークポイントの位置) フィールドを初期化/使用します。
 
 `BPREQI_LANGUAGE`\
-または`BP_REQUEST_INFO2`構造体のフィールド`guidLanguage`を初期化/`BP_REQUEST_INFO`使用します。
+`guidLanguage`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_PROGRAM`\
-または`BP_REQUEST_INFO2`構造体のフィールド`pProgram`を初期化/`BP_REQUEST_INFO`使用します。
+`pProgram`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_PROGRAMNAME`\
-または`BP_REQUEST_INFO2`構造体のフィールド`bstrProgramName`を初期化/`BP_REQUEST_INFO`使用します。
+`bstrProgramName`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_THREAD`\
-または`BP_REQUEST_INFO2`構造体のフィールド`pThread`を初期化/`BP_REQUEST_INFO`使用します。
+`pThread`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_THREADNAME`\
-または`BP_REQUEST_INFO2`構造体のフィールド`bstrThreadName`を初期化/`BP_REQUEST_INFO`使用します。
+`bstrThreadName`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_PASSCOUNT`\
-または`BP_REQUEST_INFO2`構造体のフィールド`bpPassCount`を初期化/`BP_REQUEST_INFO`使用します。
+`bpPassCount`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_CONDITION`\
-または構造体の`bpCondition`(ブレークポイント条件) フィールドを`BP_REQUEST_INFO`初期化`BP_REQUEST_INFO2`または使用します。
+`bpCondition`または構造体の (ブレークポイント条件) フィールドを初期化または使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_FLAGS`\
-または`BP_REQUEST_INFO2`構造体のフィールド`dwFlags`を初期化/`BP_REQUEST_INFO`使用します。
+`dwFlags`または構造体のフィールドを初期化/使用し `BP_REQUEST_INFO` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_ALLOLDFIELDS`\
-構造体の全フィールドを初期化/使用します`BP_REQUEST_INFO`。
+構造体ののすべてのフィールドを初期化/使用し `BP_REQUEST_INFO` ます。
 
 `BPREQI_VENDOR`\
-構造体の`BP_REQUEST_INFO2`フィールドを`guidVendor`初期化/使用します。
+構造体のフィールドを初期化/使用し `guidVendor` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_CONSTRAINT`\
-構造体の`BP_REQUEST_INFO2`フィールドを`bstrConstraint`初期化/使用します。
+構造体のフィールドを初期化/使用し `bstrConstraint` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_TRACEPOINT`\
-構造体の`BP_REQUEST_INFO2`フィールドを`bstrTracepoint`初期化/使用します。
+構造体のフィールドを初期化/使用し `bstrTracepoint` `BP_REQUEST_INFO2` ます。
 
 `BPREQI_ALLFIELDS`\
-構造体のすべてのフィールドを指定`BP_REQUEST_INFO2`します。
+構造体のすべてのフィールドを指定し `BP_REQUEST_INFO2` ます。
 
-## <a name="remarks"></a>Remarks
-[getRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)メソッドと[BP_REQUEST_INFOメソッド](../../../extensibility/debugger/reference/bp-request-info.md)に引数として渡され[、BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)のフィールドと[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体を初期化する方法を指定します。
+## <a name="remarks"></a>解説
+[Getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)メソッドと[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)メソッドに引数として渡され、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)および[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のどのフィールドを初期化するかを指定します。
 
-これらのフラグは、 および`BP_REQUEST_INFO``BP_REQUEST_INFO2`構造体のどのフィールドが使用され、各構造体が戻されたときに有効かを示すためにも使用されます。
+これらのフラグは、および構造体のどのフィールドが使用され、 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 各構造体が返されたときに有効であるかを示すためにも使用されます。
 
-これらの値はビット単位`OR`で組み合わせることができる。
+これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

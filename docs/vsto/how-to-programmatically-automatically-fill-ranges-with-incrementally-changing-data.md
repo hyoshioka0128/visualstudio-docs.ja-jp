@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547473"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する
@@ -34,7 +34,7 @@ ms.locfileid: "85547473"
 - 入力する範囲。パラメーターとしてメソッドに渡さ <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> れます。 このターゲット範囲には、初期値を含む範囲を含める必要があります。
 
     > [!NOTE]
-    > の代わりにコントロールを渡すことはできません <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> 。 詳細については、「[ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)」を参照してください。
+    > の代わりにコントロールを渡すことはできません <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> 。 詳細については、「 [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)」を参照してください。
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
@@ -49,7 +49,7 @@ ms.locfileid: "85547473"
 
 - 列 C は5か月を含むことになります。 初期値には、セル C1 に「 **January** 」と入力します。
 
-- 列 D には、行ごとに2ずつインクリメントした一連の数値を含めることができます。 初期値については、セル D2 に「 **4** **」と入力**します。
+- 列 D には、行ごとに2ずつインクリメントした一連の数値を含めることができます。 初期値については、セル D2 に「 **4** **」と入力** します。
 
 ## <a name="see-also"></a>関連項目
 - [範囲の操作](../vsto/working-with-ranges.md)

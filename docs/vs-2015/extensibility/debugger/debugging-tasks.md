@@ -11,51 +11,51 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4a8a9879bce6d91448bb4f29b842328ab56bb97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200612"
 ---
 # <a name="debugging-tasks"></a>タスクのデバッグ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-起動できることをプログラムをデバッグして、デバッグ エンジン (DE) をアタッチする必要があります。 そう、DE は、以前に起動されたプログラムにアタッチする必要があります。 アタッチされると、デは特定のスタートアップ イベントを生成する必要があります。 応答では、パッケージのデバッグは、IDE で設定されたブレークポイントをバインドしようとします。 プログラムがバインドされたブレークポイントに達するときに停止し、ユーザー入力を待機します。  
+プログラムをデバッグするには、プログラムを起動し、デバッグエンジン (DE) をアタッチする必要があります。そうでない場合は、以前に起動されたプログラムに DE をアタッチする必要があります。 アタッチが完了すると、DE は特定のスタートアップイベントを生成する必要があります。 応答として、デバッグパッケージは IDE で設定されているブレークポイントをバインドしようとします。 プログラムは、バインドされたブレークポイントにヒットすると停止し、ユーザー入力を待機します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [セキュリティ上の問題](../../extensibility/debugger/security-issues.md)  
- プログラムをデバッグするために必要なセキュリティ手順について説明します。  
+ [セキュリティの問題](../../extensibility/debugger/security-issues.md)  
+ プログラムのデバッグに必要なセキュリティ手順について説明します。  
   
  [プログラムの起動](../../extensibility/debugger/launching-a-program.md)  
- プログラムを起動するオペレーティング システムを呼び出す、DE を指定する方法の手順を説明します。  
+ オペレーティングシステムを呼び出してプログラムを起動する DE を指定する手順について説明します。  
   
  [プログラムへ直接アタッチする](../../extensibility/debugger/attaching-directly-to-a-program.md)  
- 既に実行されているプロセスでプログラムをデバッグするために使用するプロセスについて説明します。  
+ 既に実行されているプロセスでプログラムをデバッグするために使用されるプロセスについて説明します。  
   
  [起動の後のスタートアップ イベントの送信](../../extensibility/debugger/sending-startup-events-after-a-launch.md)  
- プログラムのメイン エントリ ポイントでし、デバッグの準備が整うまで、プログラム、DE がアタッチされると発生するイベントを一覧表示します。  
+ プログラムがメインエントリポイントにあり、デバッグできる状態になるまで、DE がプログラムにアタッチされた後に発生するイベントの一覧を表示します。  
   
  [実行の制御](../../extensibility/debugger/control-of-execution.md)  
- 送信する方法、DE 通常エントリ ポイント イベント、読み込み完了イベントの場合、または、状況に応じて、停止イベントについて説明します。  
+ 通常、DE が、状況に応じて、エントリポイントイベント、読み込み完了イベント、または停止イベントを送信する方法について説明します。  
   
  [ブレークポイントのバインド](../../extensibility/debugger/binding-breakpoints.md)  
- 方法については、ユーザーは、ブレークポイントを設定、IDE、要求の作成し、プロンプトをブレークポイントを作成する、デバッグ セッションをについて説明します。  
+ ユーザーがブレークポイントを設定した場合に、IDE が要求を使用しし、ブレークポイントを作成するようにデバッグセッションに要求する方法について説明します。  
   
- [評価式](../../extensibility/debugger/evaluating-expressions.md)  
+ [式の評価](../../extensibility/debugger/evaluating-expressions.md)  
  式の作成方法と、式が評価されるときの動作について説明します。  
   
  [データの視覚化と表示](../../extensibility/debugger/visualizing-and-viewing-data.md)  
- 式エバリュエーター (EE) で型のビジュアライザーおよびカスタム ビューアーをサポートする方法について説明します。  
+ 型ビジュアライザーとカスタムビューアーが式エバリュエーター (EE) でどのようにサポートされるかについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)  
- デバッグ アーキテクチャの主要な概念をについて説明します。  
+ デバッグアーキテクチャの主要概念について説明します。  
   
  [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)  
- DE、EE、およびシンボル ハンドラー (SH) を含む Visual Studio のデバッグ コンポーネントの概要を示します。  
+ DE、EE、およびシンボルハンドラー (SH) を含む Visual Studio デバッグコンポーネントの概要について説明します。  
   
  [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)  
- コード、ドキュメント、および式の評価のコンテキスト内で、DE がどの同時に動作について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。  
+ コード、ドキュメント、および式の評価コンテキスト内で、DE を同時に操作する方法について説明します。 3つのコンテキストのそれぞれについて、場所、位置、または評価に関連する評価について説明します。  
   
-## <a name="see-also"></a>関連項目  
- [作業の開始](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+## <a name="see-also"></a>参照  
+ [はじめに](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

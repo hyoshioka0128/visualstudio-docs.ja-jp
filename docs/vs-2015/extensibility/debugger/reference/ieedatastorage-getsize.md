@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetSize |Microsoft Docs
+title: 'IEEDataStorage:: GetSize |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c76ae583d089b23d21664c9e312d2486a14c2aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192124"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このオブジェクトに含まれるバイト数を返します。  
+このオブジェクトに格納されているバイト数を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,14 +40,14 @@ int GetSize(
   
 #### <a name="parameters"></a>パラメーター  
  `size`  
- [out]このオブジェクトに含まれるバイト数。  
+ 入出力このオブジェクトに格納されているバイト数。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 使用して、 [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)実際のデータのバイト数を取得します。  
+## <a name="remarks"></a>注釈  
+ 実際のデータバイトを取得するには、 [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) メソッドを使用します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

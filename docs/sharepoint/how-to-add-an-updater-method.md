@@ -18,13 +18,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014985"
 ---
 # <a name="how-to-add-an-updater-method"></a>方法: Updater メソッドを追加する
-  ユーザーが*Updater*メソッドを作成することによって、SharePoint 外部リストのビジネスデータを更新できるようにすることができます。 詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  ユーザーが *Updater* メソッドを作成することによって、SharePoint 外部リストのビジネスデータを更新できるようにすることができます。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-create-an-updater-method"></a>Updater メソッドを作成するには
 
@@ -34,7 +35,7 @@ ms.locfileid: "86014985"
 
     [BDC メソッドの詳細] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
-3. [**メソッドの追加**] の一覧で、[**アップデーター方法の作成**] を選択します。
+3. [ **メソッドの追加** ] の一覧で、[ **アップデーター方法の作成**] を選択します。
 
     Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、[BDC メソッドの詳細] ウィンドウに表示されます。
 
@@ -46,14 +47,14 @@ ms.locfileid: "86014985"
 
    - メソッドのメソッドインスタンス。
 
-     詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+     詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
    > [!NOTE]
-   > エンティティ型の識別子が、自動的に生成されないデータベーステーブル内のフィールドを表している場合は、[**更新前のフィールド]** プロパティを [ **True**] に設定します。
+   > エンティティ型の識別子が、自動的に生成されないデータベーステーブル内のフィールドを表している場合は、[ **更新前のフィールド]** プロパティを [ **True**] に設定します。
 
 4. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
 
-    **コードエディター**で entity service コードファイルが開きます。 そのファイルの詳細については、「[ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
+    **コードエディター**で entity service コードファイルが開きます。 そのファイルの詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
 5. Update メソッドにデータを更新するコードを追加します。 次の例では、AdventureWorks サンプルデータベースの連絡先に関する情報を SQL Server に更新します。
 

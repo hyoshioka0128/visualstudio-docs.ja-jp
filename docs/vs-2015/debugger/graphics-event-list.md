@@ -1,5 +1,5 @@
 ---
-title: グラフィックスイベント一覧 |Microsoft Docs
+title: グラフィックス イベント一覧 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845048"
 ---
 # <a name="graphics-event-list"></a>グラフィックス イベント一覧
@@ -25,7 +25,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
   
  イベント一覧を次に示します。  
   
- ![名前に "Index" を含むイベントの一覧。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![その名前に "Index" が含まれているイベントのリスト。](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>イベント一覧の使用  
  イベント一覧でイベントを選択すると、他のグラフィックス分析ツールで表示されている情報に反映されます。イベント一覧を他のツールと連携して使用すると、レンダリングの問題を詳しく調べて、その原因を特定することができます。 イベント一覧と他のグラフィックス分析ツールを合わせて使用し、レンダリングの問題を解決するための方法については、[サンプル](../debugger/graphics-diagnostics-examples.md)に関するページを参照してください。  
@@ -39,7 +39,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 |-----------------------|-----------|  
 |レンダリング キュー|緑|  
 |計算キュー|黄|  
-|コピー キュー|オレンジ色|  
+|コピー キュー|オレンジ|  
   
  Direct3D 11 は複数のキューを公開していないため、Direct3D 11 アプリのキャプチャ時にイベント一覧のイベントが色分けされることはありません。  
   
@@ -71,9 +71,9 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 |アイコン|イベントの説明|  
 |----------|-----------------------|  
 |(アイコンなし)|一般イベント<br /> ユーザー定義イベント、ユーザー定義イベント グループ、または描画イベント以外のすべてのイベント。|  
-|![描画イベントアイコン](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|描画イベント<br /> キャプチャしたフレームの間に	発生した描画イベントをマークします。|  
-|![ユーザー&#45;定義イベントマーカーのアイコン](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント グループ<br /> アプリケーションで定義されているとおりに、関連するイベントをグループ化します。|  
-|![ユーザー&#45;定義イベントマーカーのアイコン](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント マーカー<br /> アプリケーションで定義されているとおりに、特定の場所をマークします。|  
+|![描画イベント アイコン](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|描画イベント<br /> キャプチャしたフレームの間に	発生した描画イベントをマークします。|  
+|![ユーザー定義イベント マーカーのアイコン](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント グループ<br /> アプリケーションで定義されているとおりに、関連するイベントをグループ化します。|  
+|![ユーザー定義イベント マーカーのアイコン](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|ユーザー定義イベント マーカー<br /> アプリケーションで定義されているとおりに、特定の場所をマークします。|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>アプリのユーザー定義イベントのマーク付け  
  ユーザー定義イベントは、ユーザーのアプリケーションに特有のものです。 これを使用して、アプリケーション内で発生する重要なイベントを、グラフィックス イベント一覧のイベントに関連付けることができます。 たとえば、ユーザー定義イベント グループを作成して、関連するイベント (ユーザー インターフェイスをレンダリングするイベントなど) をグループまたは階層にまとめることができます。このようにすると、イベント一覧を簡単に参照したり、特定の種類のオブジェクトが描画されたときにマーカーを作成して、イベント一覧の中でグラフィックス イベントを簡単に見つけたりすることができます。  

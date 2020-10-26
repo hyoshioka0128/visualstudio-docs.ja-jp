@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904123"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>ツールウィンドウにツールバーを追加する
@@ -25,14 +25,14 @@ ms.locfileid: "85904123"
 
  IDE のツールバーとは異なり、ツールウィンドウのツールバーはドッキングされている必要があり、移動またはカスタマイズすることはできません。 VSPackage が umanaged 切れのコードで記述されている場合、ツールバーは任意の端にドッキングできます。
 
- ツールバーを追加する方法の詳細については、「[ツールバーの追加](../extensibility/adding-a-toolbar.md)」を参照してください。
+ ツールバーを追加する方法の詳細については、「 [ツールバーの追加](../extensibility/adding-a-toolbar.md)」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>ツールウィンドウのツールバーを作成する
 
-1. `TWToolbar` **Twtestcommand**という名前のメニューコマンドと**TestToolWindow**という名前のツールウィンドウの両方を持つという名前の VSIX プロジェクトを作成します。 詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」および「[ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。 ツールウィンドウテンプレートを追加する前に、コマンド項目テンプレートを追加する必要があります。
+1. `TWToolbar` **Twtestcommand**という名前のメニューコマンドと**TestToolWindow**という名前のツールウィンドウの両方を持つという名前の VSIX プロジェクトを作成します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md) する」および「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。 ツールウィンドウテンプレートを追加する前に、コマンド項目テンプレートを追加する必要があります。
 
 2. *Twtestcommandpackage. vsct*で、[シンボル] セクションを探します。 Guidtwtestcommand蔵書 Ecmdset という GuidSymbol ノードで、次のようにツールバーとツールバーグループを宣言します。
 
@@ -107,7 +107,7 @@ ms.locfileid: "85904123"
 
 1. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。
 
-2. [表示] メニューの [**その他のウィンドウ**] メニューで、[**テスト ToolWindow** ] をクリックしてツールウィンドウを表示します。
+2. [表示] メニューの [ **その他のウィンドウ** ] メニューで、[ **テスト ToolWindow** ] をクリックしてツールウィンドウを表示します。
 
      ツールウィンドウの左上にあるツールバー (既定のアイコン) が、タイトルのすぐ下に表示されます。
 

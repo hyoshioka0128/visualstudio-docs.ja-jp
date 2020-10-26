@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849860"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C#)
@@ -72,7 +72,7 @@ ms.locfileid: "62849860"
 |nq|引用符なしの文字列。|"My String"|My String|
 |nse|形式ではなく動作を指定します。 式は "副作用なし" で評価されます。 式を解釈できず、評価によってのみ解決できる場合 (関数呼び出しなど)、代わりにエラーが表示されます。|N/A|N/A|
 |hidden|パブリック メンバーとパブリックでないメンバーをすべて表示します。|パブリック メンバーを表示します。|すべてのメンバーを表示します。|
-|raw|未処理の項目ノードで表示されるように項目を表示します。 プロキシ オブジェクトのみで有効です。|Dictionary\<T>|Dictionary\<T> の列ビュー|
+|raw|未処理の項目ノードで表示されるように項目を表示します。 プロキシ オブジェクトのみで有効です。|Dictionary\<T>|Dictionary\<T> の未加工ビュー|
 |results|IEnumerable または IEnumerable\<T> を実装する型の変数と共に使用します。通常はクエリ式の結果です。 クエリ結果を含むメンバーのみを表示します。|すべてのメンバーを表示します|クエリの条件に一致するメンバーを表示します|
 
 ## <a name="see-also"></a>関連項目

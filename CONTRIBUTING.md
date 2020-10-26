@@ -1,20 +1,20 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419844"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>Visual Studio ドキュメントへの投稿
 
 Visual Studio ドキュメントにご投稿いただき、ありがとうございます。
 
-このガイドでは、投稿に関するいくつかの一般的なトピックについて説明します。さらに詳細な説明については、 https://docs.microsoft.com の[共同作成者ガイド](https://docs.microsoft.com/contribute)を参照してください。
+このガイドでは、投稿に関するいくつかの一般的なトピックについて説明します。さらに詳細な説明については、https://docs.microsoft.com の[共同作成者ガイド](https://docs.microsoft.com/contribute)を参照してください。
 
 ## <a name="code-of-conduct"></a>倫理規定
 
-このプロジェクトでは、[Microsoft オープン ソース倫理規定](https://opensource.microsoft.com/codeofconduct/)が採用されています。 詳細については「[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)」(倫理規定 FAQ) を参照してください。また、ご質問やご意見がある場合は [opencode@microsoft.com](mailto:opencode@microsoft.com) にお問い合わせください。
+このプロジェクトは、「[Microsoft のオープン ソースの倫理規定](https://opensource.microsoft.com/codeofconduct/)」を採用しています。 詳細については「[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)」(倫理規定 FAQ) を参照してください。また、ご質問やご意見がある場合は [opencode@microsoft.com](mailto:opencode@microsoft.com) にお問い合わせください。
 
 ## <a name="how-can-i-contribute"></a>どのように投稿できますか?
 

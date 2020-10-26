@@ -1,5 +1,5 @@
 ---
-title: フィールドを列挙します。マイクロソフトドキュメント
+title: 'IDebugContainerField:: EnumFields |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afc461d52f81afc2c2e7127a90313bea7b9dacf3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733226"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -49,25 +49,25 @@ int EnumFields(
 
 ## <a name="parameters"></a>パラメーター
 `dwKindFilter`\
-[in]列挙するフィールドを選択する[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)定数の組み合わせ。 フィールドの種類は、クラスやプリミティブなどのストレージの種類、またはローカル、パラメーター、または "this" ポインターなどの特定の情報を記述できます。
+から列挙するフィールドを選択する [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 定数の組み合わせ。 フィールドの種類では、クラスやプリミティブなどのストレージ型、またはローカル、パラメーター、または "this" ポインターなどの特定の情報を記述できます。
 
 `dwModifiersFilter`\
-[in]列挙するフィールドを選択する[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)定数の組み合わせ。 フィールド修飾子には、パブリック、プライベートなどのアクセス許可、または仮想、静的、最終などのストレージ情報を指定できます。
+から列挙するフィールドを選択する [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) 定数の組み合わせ。 フィールド修飾子には、パブリックまたはプライベートなどのアクセス権限や、virtual、static、final などのストレージ情報を指定できます。
 
 `pszNameFilter`\
-[in]列挙するフィールドの名前。 すべてのフィールドが返される場合は、NULL 値になります。
+から列挙するフィールドの名前。 すべてのフィールドが返される場合は、null 値を指定できます。
 
 `nameMatch`\
-[in]検索で大文字と小文字を区別するかどうかを制御する[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体の値。
+から検索で大文字と小文字を区別するかどうかを制御する [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 列挙の値。
 
 `ppEnum`\
-[アウト]フィールドの[一](../../../extensibility/debugger/reference/ienumdebugfields.md)覧を表すオブジェクトを返します。 フィールドがない場合は、null 値を返します。
+入出力フィールドの一覧を表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。 フィールドがない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、フィールドがない場合はS_OKまたはS_FALSEを返します。 それ以外の場合はエラー コードを返します。
+ 成功した場合は、フィールドがない場合は S_OK または S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>Remarks
- たとえば`dwKindFilter`、"MyMethod"`dwModifiersFilter`という名前のすべてのパブリック仮想メソッドを選択するために、パラメータ、、、および`pszNameFilter`パラメータを組み合わせることができます。
+## <a name="remarks"></a>解説
+ 、、およびの各パラメーターを組み合わせると、 `dwKindFilter` `dwModifiersFilter` たとえば、 `pszNameFilter` "MyMethod" という名前のパブリック仮想メソッドをすべて選択できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

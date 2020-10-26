@@ -1,5 +1,5 @@
 ---
-title: Spy++ の使用 |Microsoft Docs
+title: Spy++ の使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,32 +12,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183969"
 ---
 # <a name="using-spy"></a>Spy++ の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spy++ (SPYXX します。EXE) は、システムのプロセス、スレッド、windows、およびウィンドウ メッセージのグラフィカル ビューを提供する Win32 ベースのユーティリティです。 Spy++ ヘルプのこのセクションには、次のヘルプ トピックが含まれています。  
+Spy++ (SPYXX.EXE) は、システムのプロセス、スレッド、ウィンドウ、およびウィンドウ メッセージをグラフィカルに表示する、Win32 ベースのユーティリティです。 Spy++ ヘルプのこのセクションには、次のヘルプ トピックが含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [Spy++ の概要](../debugger/introducing-spy-increment.md)  
- Spy++ ツールを使用して表示する情報の種類について説明します。  
+ Spy + + ツールで表示できる情報の種類について説明します。  
   
  [方法: Spy++ の起動](../debugger/how-to-start-spy-increment.md)  
- [ツール] メニューから spy++ を起動する方法について説明します。  
+ [ツール] メニューから Spy + + を起動する方法について説明します。  
   
  [Spy++ ツール バー](../debugger/spy-increment-toolbar.md)  
- Spy++ ツールバーで使用できるコマンドについて説明します。  
+ Spy + + ツールバーで使用できるコマンドについて説明します。  
   
  [方法: Spy++ ビューを表示する](../debugger/how-to-display-spy-increment-views.md)  
- Windows の表示、メッセージ ビュー、プロセス ビュー、およびスレッド ビューを表示する方法。  
+ Windows ビュー、メッセージビュー、プロセスビュー、スレッドビューを表示する方法について説明します。  
   
  [方法: ビューの更新](../debugger/how-to-refresh-the-view.md)  
- Refresh コマンドをについて説明します。  
+ Refresh コマンドについて説明します。  
   
  [方法: フォントを変更する](../debugger/how-to-change-fonts.md)  
  ビューの表示方法を変更する方法について説明します。  
@@ -47,7 +47,7 @@ Spy++ (SPYXX します。EXE) は、システムのプロセス、スレッド�
   
 ## <a name="related-sections"></a>関連項目  
  [Spy++ ビュー](../debugger/spy-increment-views.md)  
- Windows、メッセージ、プロセス、およびスレッドの spy++ ツリー ビューについて説明します。  
+ Windows、メッセージ、プロセス、およびスレッドの Spy + + ツリービューについて説明します。  
   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
- 各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。
+ 各 Spy + + メニューおよびダイアログボックスについて説明するセクションが含まれています。

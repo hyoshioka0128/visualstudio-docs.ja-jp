@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea06d8e007e2df88cb46c2f0e6dd4a79ebe711b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153624"
 ---
-# <a name="adprocessid"></a>AD_PROCESS_ID
+# <a name="ad_process_id"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-システム ID または GUID 可能性のあるプロセス ID を指定します。  
+プロセス ID を指定します。これは、システム ID または GUID のいずれかになります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,18 +48,18 @@ public struct AD_PROCESS_ID {
   
 ## <a name="members"></a>メンバー  
  `ProcessIdType`  
- 値、 [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)を解釈する方法を指定する列挙体、`ProcessId`共用体 (または、マネージ コードの構造体のメンバーにアクセスする場合)。  
+ [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) `ProcessId` 共用体 (または、マネージコードの場合は、アクセスする構造体のメンバー) を解釈する方法を指定する AD_PROCESS_ID_TYPE 列挙の値。  
   
  dwProcessId  
- システムからの値としてプロセス ID。  
+ システムからの値としてのプロセス ID。  
   
  guidProcessId  
- GUID としてプロセス ID。  
+ GUID としてのプロセス ID。  
   
  dwUnused  
- 余白。  
+ 余白.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  この構造体は、次のメソッドに渡されます。  
   
 - [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
@@ -70,20 +70,20 @@ public struct AD_PROCESS_ID {
   
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
-  次のメソッドから返されます。  
+  とは、次のメソッドから返されます。  
   
 - [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   

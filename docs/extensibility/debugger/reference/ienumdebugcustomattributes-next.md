@@ -1,5 +1,5 @@
 ---
-title: カスタム属性::次へ |マイクロソフトドキュメント
+title: 'IEnumDebugCustomAttributes:: Next |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08228fe4a630eac37c38f4eb247dc91678d8e2e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717237"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
-列挙体シーケンス内の指定した数のカスタム属性を取得します。
+列挙シーケンス内の指定された数のカスタム属性を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>パラメーター
 `celt`\
-[in]取得する要素の数。 また、配列の最大サイズも`rgelt`指定します。
+から取得する要素の数。 配列の最大サイズも指定し `rgelt` ます。
 
 `rgelt`\
-[アウト]入力する[オブジェクト](../../../extensibility/debugger/reference/idebugcustomattribute.md)の配列。
+入出力入力される [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) オブジェクトの配列。
 
 `pceltFetched`\
-[アウト]で実際に返される要素の数`rgelt`を返します。
+入出力で実際に返された要素の数を返し `rgelt` ます。
 
 ## <a name="return-value"></a>戻り値
- 正常に終了した場合は、`S_OK` を返します。 返`S_FALSE`される要素の要求数より少ない場合は返します。それ以外の場合は、エラー コードを返します。
+ 正常に終了した場合は、`S_OK` を返します。 要求された `S_FALSE` 数の要素を返すことができなかった場合は、を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

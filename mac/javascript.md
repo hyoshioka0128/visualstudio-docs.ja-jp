@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72807156"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript および TypeScript のサポート
@@ -23,11 +23,11 @@ JavaScript のコード記述に関する詳細については、[JavaScript で
 
 ## <a name="adding-a-javascript-file"></a>JavaScript ファイルの追加
 
-JavaScript ファイルはほとんどの場合、 **[新しいファイル]** ダイアログから ASP.NET Core プロジェクトに追加されます。 JavaScript ファイルを追加するには、プロジェクトを右クリックし、 **[追加]、[新しいファイル]** の順に進みます。
+JavaScript ファイルはほとんどの場合、**[新しいファイル]** ダイアログから ASP.NET Core プロジェクトに追加されます。 JavaScript ファイルを追加するには、プロジェクトを右クリックし、**[追加]、[新しいファイル]** の順に進みます。
 
 ![プロジェクトに新しいファイルを追加する](media/javascript-image1.png)
 
-**[新しいファイル]** ダイアログから、 **[Web]、[Empty JS file]\(空の JS ファイル\)** の順に選択するか、 **[Web]、[TypeScript ファイル]** の順に選択します。 名前を付けて **[新規]** を選択します。
+**[新しいファイル]** ダイアログから、**[Web]、[Empty JS file]\(空の JS ファイル\)** の順に選択するか、**[Web]、[TypeScript ファイル]** の順に選択します。 名前を付けて **[新規]** を選択します。
 
 ![テンプレートから新しい TypeScript ファイルを作成する](media/javascript-image2.png)
 
@@ -43,6 +43,6 @@ Visual Studio for Mac の JavaScript IntelliSense は、型の推定、JSDoc、�
 
     ![TypeScript 定義ファイルの追加](media/javascript-type-intellisense-2019.gif)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [JavaScript IntelliSense (Windows の Visual Studio)](/visualstudio/ide/javascript-intellisense)

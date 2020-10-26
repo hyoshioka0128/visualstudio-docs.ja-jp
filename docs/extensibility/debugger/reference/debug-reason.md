@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON |マイクロソフトドキュメント
+title: DEBUG_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59954ea7e89390a5e35dbe0bfb0412da1aabc80f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737424"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
@@ -50,29 +50,29 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>フィールド
 `DEBUG_REASON_ERROR`\
-非特定エラーが発生しました (これは、他の理由のいずれも適合しない場合にデフォルトの条件として使用されます)。
+特定できないエラーが発生しました (これは、他の理由がいずれも満たされていない場合の既定の条件として使用されます)。
 
 `DEBUG_REASON_USER_LAUNCHED`\
-プロセスはユーザーの要求で起動されました。
+ユーザーの要求でプロセスが起動されました。
 
 `DEBUG_REASON_USER_ATTACHED`\
-既に実行されているプロセスは、ユーザーによってアタッチされました。
+既に実行中のプロセスが、ユーザーによってにアタッチされました。
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-プロセスは、起動時に自動的にアタッチされました。
+プロセスは、起動されたときに自動的にアタッチされました。
 
 `DEBUG_REASON_CAUSALITY`\
-このプロセスは、*ジャスト イン タイム*(JIT) デバッグ イベントにより起動されました。
+*ジャストインタイム*(JIT) デバッグイベントが発生したため、プロセスが起動されました。
 
-## <a name="remarks"></a>Remarks
-[メソッドから](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)返されます。
+## <a name="remarks"></a>解説
+[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッドから返されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

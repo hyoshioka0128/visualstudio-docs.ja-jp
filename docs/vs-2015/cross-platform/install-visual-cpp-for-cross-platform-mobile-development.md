@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visual C++ for Cross-Platform Mobile Development のインストール | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844322"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development のインストール
@@ -23,13 +23,13 @@ ms.locfileid: "75844322"
 
 Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlink/p/?LinkId=536383) は、Visual Studio 2015 付属のインストール可能なコンポーネントです。 クロス プラットフォームの Visual Studio テンプレートが含まれており、クロス プラットフォーム ツールおよび SDK をインストールしてすぐに開始できるようにします。それらを自分で検索、ダウンロード、構成する必要はありません。 これらのツールを Visual Studio で使用することで、クロス プラットフォーム プロジェクトを簡単に作成、編集、デバッグ、テストできます。 このトピックでは、Visual Studio を使用してクロス プラットフォーム アプリを開発するために必要なツールとサード パーティのソフトウェアをインストールする方法について説明します。 コンポーネントの概要については、「 [Visual C++ クロスプラットフォーム モバイル](https://go.microsoft.com/fwlink/p/?LinkId=536387)」をご覧ください。  
   
- [要件](#Requirements)   
- [ツールの取得](#GetTheTools)   
- [ツールのインストール](#InstallTheTools)   
- [Install tools for iOS](#InstallForiOS)   
+ [必要性](#Requirements)   
+ [ツールを入手する](#GetTheTools)   
+ [ツールをインストールする](#InstallTheTools)   
+ [IOS 用ツールのインストール](#InstallForiOS)   
  [手動による依存関係のインストールまたは更新](#ThirdParty)  
   
-## <a name="Requirements"></a> 要件  
+## <a name="requirements"></a><a name="Requirements"></a> 必要条件  
   
 - インストール要件については、「 [Visual Studio 2015 のシステム要件](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)」をご覧ください。  
   
@@ -44,10 +44,10 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
 - iOS 用のコードをビルドするには、Apple ID、iOS Developer Program アカウント、[Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) 以降を OS X Mavericks 以降のバージョンで実行できる Mac コンピューターが必要です。 簡単なインストール手順については、「 [Install tools for iOS](#InstallForiOS)」をご覧ください。  
   
-## <a name="GetTheTools"></a> ツールの取得  
+## <a name="get-the-tools"></a><a name="GetTheTools"></a> ツールを入手する  
  Visual C++ for Cross-Platform Mobile Development は、Visual Studio の Community、Professional、Enterprise エディションに付属しているインストール可能なコンポーネントです。 Visual Studio を入手するには、「[Visual Studio 2015 のダウンロード](https://visualstudio.microsoft.com/downloads/)」のページにアクセスして、Visual Studio 2015 with Update 2 以降をインストールしてください。  
   
-## <a name="InstallTheTools"></a> ツールのインストール  
+## <a name="install-the-tools"></a><a name="InstallTheTools"></a> ツールをインストールする  
  Visual Studio 2015 のインストーラーには、Visual C++ for Cross-Platform Mobile Development をインストールするオプションが含まれています。 このオプションを選択すると、必要な C++ 言語ツール、Visual Studio 用のテンプレートとコンポーネント、Android のビルドとデバッグに必要な GCC および Clang ツールセット、iOS 開発用の Mac と通信するためのコンポーネントがインストールされます。 また、iOS および Android アプリの開発をサポートするために必要なサードパーティ製のツールとソフトウェア開発キットもすべてインストールされます。 これらのサードパーティ製ツールのほとんどは、Android プラットフォームのサポートに必要なオープン ソースのソフトウェアです。  
   
 - Android Native Development Kit (NDK) は、Android プラットフォームを対象にした C++ コードをビルドする場合に必要になります。  
@@ -60,13 +60,13 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
 1. 「 [ツールの取得](#GetTheTools)」のリンクに従ってダウンロードした Visual Studio 2015 インストーラーを実行します。 オプションのコンポーネントをインストールするために、インストールの種類として **[カスタム]** を選びます。 **[次へ]** を選んで、インストールするオプションのコンポーネントを選びます。  
   
-2. [機能の選択] で、 **[クロス プラットフォームのモバイル開発]** を展開し、 **[Visual C++ モバイル開発]** を選択します。  
+2. [機能の選択] で、[ **クロスプラットフォームモバイル開発** ] を展開し、 **Visual C++ モバイル開発**] をオンにします。  
   
-     ![Visual C&#43; &#43;モバイル開発の選択](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Visual C&#43;&#43; モバイル開発の選択](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
-     既定では、 **[Visual C++ モバイル開発]** を選ぶと、 **[プログラミング言語]** オプションは **[Visual C++]** をインストールするように設定され、 **[共通ツールおよびソフトウェア開発キット]** オプションは必要なサード パーティ製コンポーネントをインストールするように設定されます。 必要な場合、その他のコンポーネントを選択することができます。 既定では、 **[Microsoft Visual Studio Emulator for Android]** も選ばれます。 既にインストールされているコンポーネントは、一覧では非アクティブとして表示されます。  
+     既定では、**[Visual C++ モバイル開発]** を選ぶと、**[プログラミング言語]** オプションは **[Visual C++]** をインストールするように設定され、**[共通ツールおよびソフトウェア開発キット]** オプションは必要なサード パーティ製コンポーネントをインストールするように設定されます。 必要な場合、その他のコンポーネントを選択することができます。 既定では、**[Microsoft Visual Studio Emulator for Android]** も選ばれます。 既にインストールされているコンポーネントは、一覧では非アクティブとして表示されます。  
   
-     ユニバーサル Windows アプリをビルドし、Android および iOS プロジェクトとの間でコードを共有するには、 **[機能の選択]** で、 **[Windows 開発と Web 開発]** を展開し、 **[ユニバーサル Windows アプリ開発ツール]** をオンにします。 ユニバーサル Windows アプリをビルドする予定がない場合は、このオプションを省略できます。  
+     ユニバーサル Windows アプリをビルドし、Android および iOS プロジェクトとの間でコードを共有するには、**[機能の選択]** で、**[Windows 開発と Web 開発]** を展開し、**[ユニバーサル Windows アプリ開発ツール]** をオンにします。 ユニバーサル Windows アプリをビルドする予定がない場合は、このオプションを省略できます。  
   
      **[次へ]** を選択して続行します。  
   
@@ -82,12 +82,12 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
     > [!NOTE]
     > お使いのコンピューターまたは Windows のバージョンで Hyper-V がサポートされていない場合は、Microsoft Visual Studio Emulator for Android コンポーネントを使用できません。 Windows の Home エディションには、Hyper-V のサポートが含まれていません。  
   
-5. Visual Studio を開きます。 Visual Studio を実行するのが初めての場合は、構成してサインインするまでに時間がかかることがあります。 Visual Studio の準備が完了したら、 **[ツール]** メニューで **[拡張機能と更新プログラム]** 、 **[更新プログラム]** の順に選びます。 Visual C++ for Cross-Platform Mobile Development または Microsoft Visual Studio Emulator for Android 用の利用可能な Visual Studio の更新プログラムがある場合は、それらをインストールします。  
+5. Visual Studio を開きます。 Visual Studio を実行するのが初めての場合は、構成してサインインするまでに時間がかかることがあります。 Visual Studio の準備が完了したら、 **[ツール]** メニューで **[拡張機能と更新プログラム]**、 **[更新プログラム]** の順に選びます。 Visual C++ for Cross-Platform Mobile Development または Microsoft Visual Studio Emulator for Android 用の利用可能な Visual Studio の更新プログラムがある場合は、それらをインストールします。  
   
-## <a name="InstallForiOS"></a> Install tools for iOS  
- Visual C++ for Cross-Platform Mobile Development を使用して、iOS コードを編集およびデバッグし、iOS シミュレーターまたは iOS デバイスに配置することができます。ただし、ライセンスの制限により、コードのビルドはリモートの Mac 上で行わなければなりません。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェントをセットアップして構成する必要があります。 インストール方法、前提条件、構成オプションについて詳しくは、「 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)」をご覧ください。 iOS 用にビルドするのでない場合は、この手順を省略できます。  
+## <a name="install-tools-for-ios"></a><a name="InstallForiOS"></a> IOS 用ツールのインストール  
+ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コードを編集およびデバッグし、iOS シミュレーターまたは iOS デバイスに配置することができます。ただし、ライセンスの制限により、コードのビルドはリモートの Mac 上で行わなければなりません。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェントをセットアップして構成する必要があります。 インストール手順、前提条件、構成オプションの詳細については、「 [iOS を使用してビルドするためのツールのインストールと構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)」を参照してください。 iOS 用にビルドするのでない場合は、この手順を省略できます。  
   
-## <a name="ThirdParty"></a> 手動による依存関係のインストールまたは更新  
+## <a name="install-or-update-dependencies-manually"></a><a name="ThirdParty"></a> 依存関係を手動でインストールまたは更新する  
  Visual C++ のモバイル開発オプションをインストールする際に、サードパーティの 1 つ以上の依存関係を Visual Studio インストーラーでインストールしないことにした場合、それらの依存関係は、後で「 [Install the tools](#InstallTheTools)」の手順に従ってインストールできます。 また、Visual Studio とは別にインストールまたは更新することもできます。  
   
 > [!CAUTION]
@@ -123,16 +123,16 @@ Visual C++ for Cross-Platform Mobile Development](https://go.microsoft.com/fwlin
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>サード パーティのツールのパスを設定するには  
   
-1. Visual Studio のメニュー バーで、 **[ツール]** 、 **[オプション]** の順に選びます。  
+1. Visual Studio のメニュー バーで、 **[ツール]**、 **[オプション]** の順に選びます。  
   
-2. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]** 、 **[C++]** の順に展開し、 **[Android]** を選びます。  
+2. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]**、 **[C++]** の順に展開し、 **[Android]** を選びます。  
   
      ![Android ツールのパスのオプション](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3. ツールが使用するパスを変更するには、パスの横にあるチェック ボックスをオンにして、テキスト ボックスでフォルダー パスを編集します。 参照ボタン ( **...** ) を使用して **[場所を選択]** ダイアログを開き、フォルダーを選ぶこともできます。  
+3. ツールが使用するパスを変更するには、パスの横にあるチェック ボックスをオンにして、テキスト ボックスでフォルダー パスを編集します。 参照ボタン (**...**) を使用して **[場所を選択]** ダイアログを開き、フォルダーを選ぶこともできます。  
   
 4. **[OK]** を選んで、カスタム ツール フォルダーの場所を保存します。  
   
 ## <a name="see-also"></a>参照  
- [iOS を使用してビルドするためのツールのインストールおよび構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
- [Visual C++ クロスプラットフォーム モバイル](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
+ [IOS を使用してビルドするためのツールのインストールと構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
+ [クロスプラットフォームモバイルの Visual C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

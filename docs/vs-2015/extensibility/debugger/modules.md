@@ -12,23 +12,23 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a2b2f04e1088b9b06cb05015a6b0b4da5d60927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153741"
 ---
 # <a name="modules"></a>モジュール
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーのアーキテクチャの観点から、**モジュール**:  
+デバッガーアーキテクチャに関して、 **モジュール**は次のようになります。  
   
-- 実行可能ファイルや DLL などのコードの物理的なコンテナーです。  
+- は、実行可能ファイルや DLL など、コードの物理的なコンテナーです。  
   
-- そのシンボルを再読み込みし、それ自体を記述できます。 モジュールの説明は、IDE の [モジュール] ウィンドウに表示されます。  
+- シンボルを再度読み込み、それ自体を記述できます。 モジュールの説明は、IDE の [モジュール] ウィンドウに表示されます。  
   
-- によって表される、 [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)モジュールを記述するデバッグ エンジンによって作成されるインターフェイス。  
+- は、モジュールを記述するためにデバッグエンジンによって作成される [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) インターフェイスによって表されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

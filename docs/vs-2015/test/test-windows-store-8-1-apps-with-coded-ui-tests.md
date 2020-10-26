@@ -9,10 +9,10 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce4c6ceec9489abcd3573c126aefe98a268187c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660440"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>コード化された UI テストを使用した Windows UWP および 8.1 のストア アプリのテスト
@@ -24,19 +24,19 @@ ms.locfileid: "72660440"
 
 1. XAML ベースの Windows ストア アプリ用のコード化された UI テストを実行する場合は、 [各コントロールを識別する一意のオートメーション プロパティを設定する](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)必要があります。
 
-     **[ツール]** メニューの **[オプション]** をポイントし、 **[テキスト エディター]** 、 **[XAML]** 、 **[その他]** の順に選択します。
+     **[ツール]** メニューの **[オプション]** をポイントし、 **[テキスト エディター]**、 **[XAML]**、 **[その他]** の順に選択します。
 
      チェック ボックスをオンにして、対話要素の作成時に自動的に名前を付けます。
 
-     ![XAML その他のオプション](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
+     ![その他の XAML オプション](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
 
 2. Visual C# または Visual Basic テンプレートを使用して、空の XAML ベースの Windows ストア アプリ用の新しいプロジェクトを作成します。
 
-     ![Windows ストアの空のアプリ&#40;の XAML を作成する&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
+     ![Windows ストアの空のアプリを作成する &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
 
 3. ソリューション エクスプローラーで、MainPage.xaml を開きます。 ツールボックスから、ボタン コントロールとテキスト ボックス コントロールをデザイン サーフェイスにドラッグします。
 
-     ![Windows ストアアプリを設計する](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
+     ![Windows ストア アプリをデザイン](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")
 
 4. ボタン コントロールをダブルクリックし、次のコードを追加します。
 
@@ -66,27 +66,27 @@ ms.locfileid: "72660440"
 
 1. Windows ストア アプリの新しいコード化された UI テスト プロジェクトを作成します。
 
-    ![新しいコード化された&#40;UI テストプロジェクトの Windows ストアアプリ&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
+    ![Windows ストアアプリの新しいコード化された UI テストプロジェクト &#40;&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
 
 2. 十字線ツールを使用して UI マップを編集することを選択します。
 
-    ![[UI マップの編集] または [アサーションの追加] を選択します。](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
+    ![[UI マップの編集、またはアサーションの追加] をクリック](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")
 
 3. コード化された UI テスト ビルダーで十字線ツールを使用してアプリ タイルを選択し、 **[AutomationId]** を右クリックして、 **[値をクリップボードにコピー]** を選択します。 クリップボード内の値は、テスト用のアプリを起動する操作を記述するために後で使用されます。
 
-    ![AutomationId をクリップボードにコピー](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
+    ![AutomationId をクリップボードにコピーする](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")
 
 4. 実行中の Windows ストア アプリで、十字線ツールを使用してボタン コントロールとテキスト ボックス コントロールを選択します。 各コントロールを追加した後、コード化された UI テスト ビルダーのツール バーの **[コントロールの UI コントロール マップへの追加]** を選択します。
 
-    ![UI マップへのコントロールの追加](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
+    ![UI マップにコントロールを追加](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
 
 5. コード化された UI テスト ビルダーのツール バーの **[コードの生成]** ボタンを選択し、 **[生成]** を選択して、UI コントロール マップへの変更のコードを作成します。
 
-    ![UI マップのコードを生成する](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")
+    ![UI マップのコードを生成](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")
 
 6. テキスト ボックスの値を設定するボタンを選択します。
 
-    ![ボタンコントロールをクリックしてテキストボックスの値を設定する](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
+    ![ボタン コントロールをクリックして TextBox 値を設定する](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
 
 7. 十字線ツールを使用してテキスト ボックス コントロールを選択し、 **[Text]** プロパティを選択します。
 
@@ -94,11 +94,11 @@ ms.locfileid: "72660440"
 
 8. アサーションを追加します。 これは、値が正しいことを確認するためにテストで使用されます。
 
-    ![クロス&#45;ヘアで十字を選択し、アサーションを追加する](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
+    ![十字&#45;ヘアで十字を選択し、アサーションを追加する](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
 
 9. アサーションのコードを追加および生成します。
 
-     ![Textbox アサーションのコードを生成する](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
+     ![TextBox アサーションのコードを生成する](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
 
 10. **Visual C#**
 
@@ -106,7 +106,7 @@ ms.locfileid: "72660440"
 
      **Visual Basic**
 
-     ソリューション エクスプローラーで、CodedUITest1.vb ファイルを開き、CodedUITestMethod1() テスト メソッドのコードでアサーション メソッド (自動的に追加された `Me.UIMap.AssertMethod1()` ) への呼び出しを右クリックし、 **[定義へ移動]** を選択します。 これにより、コード エディターで UIMap.Designer.vb ファイルが開かれ、Assert メソッドとコントロール用に追加されたコードが表示されます。
+     ソリューション エクスプローラーで、CodedUITest1.vb ファイルを開き、CodedUITestMethod1() テスト メソッドのコードでアサーション メソッド (自動的に追加された `Me.UIMap.AssertMethod1()` ) への呼び出しを右クリックし、**[定義へ移動]** を選択します。 これにより、コード エディターで UIMap.Designer.vb ファイルが開かれ、Assert メソッドとコントロール用に追加されたコードが表示されます。
 
     > [!WARNING]
     > UIMap.designer.cs または UIMap.Designer.vb ファイルを直接変更しないでください。 そうすると、ファイルへの変更はテストが生成されるたびにオーバーライドされます。
@@ -222,7 +222,7 @@ ms.locfileid: "72660440"
        XamlWindow myAppWindow = XamlWindow.Launch("7254db3e-20a7-424e-8e05-7c4dabf4f28d_cyrqexqw8cc7c!App");
        ```
 
-    2. ボタン コントロールをタップするジェスチャを追加します。
+    2. ボタン コントロールをタップするジェスチャを追加します。ボタン コントロールをタップするジェスチャを追加します。
 
        ```csharp
        Gesture.Tap(this.UIMap.UIApp1Window. UIButtonButton);
@@ -282,7 +282,7 @@ ms.locfileid: "72660440"
 
 12. テストをビルドし、テスト エクスプローラーを使用してテストを実行します。
 
-     ![テストエクスプローラーからコード化された UI テストを実行する](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
+     ![コード化された UI テストをテスト エクスプローラーから実行する](../test/media/cuit-windowsstoreapp-runtest.png "CUIT_WindowsStoreApp_RunTest")
 
      Windows ストア アプリが起動し、ボタンをタップする操作が完了し、Assert メソッドを使用してテキスト ボックスの Text プロパティが設定され、検証されます。
 
@@ -290,7 +290,7 @@ ms.locfileid: "72660440"
 
      テストの完了後、テストが成功したことがテスト エクスプローラーに表示されます。
 
-     ![テストエクスプローラーで成功したテストの表示](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
+     ![成功したテストがテスト エクスプローラーに表示される](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
 
 ## <a name="q--a"></a>Q & A
 
@@ -311,15 +311,15 @@ ms.locfileid: "72660440"
 
    **A**: コード化された UI テスト プロジェクトは、UWP アプリをテストしているプラットフォームに応じて、次のいずれかの方法で作成します。
 
-  - ローカル コンピューターで実行している UWP アプリは、ストア アプリとして実行されます。 このアプリをテストする場合、 **コード化された UI テスト プロジェクト (Windows)** のテンプレートを使用します。 新しいプロジェクトの作成時にこのテンプレートを検索するには、 **[Windows]** 、 **[ユニバーサル]** ノードに移動します。 あるいは、 **[Windows]** 、 **[Windows 8]** 、 **[Windows]** ノードに移動します。
+  - ローカル コンピューターで実行している UWP アプリは、ストア アプリとして実行されます。 このアプリをテストする場合、 **コード化された UI テスト プロジェクト (Windows)** のテンプレートを使用します。 新しいプロジェクトの作成時にこのテンプレートを検索するには、 **[Windows]**、 **[ユニバーサル]** ノードに移動します。 あるいは、 **[Windows]**、 **[Windows 8]**、 **[Windows]** ノードに移動します。
 
-  - モバイル デバイスまたはエミュレーターで実行している UWP アプリは、Phone アプリケーションとして実行されます。 このアプリをテストする場合、 **コード化された UI テスト プロジェクト (Windows Phone)** のテンプレートを使用します。 新しいプロジェクトの作成時にこのテンプレートを検索するには、 **[Windows]** 、 **[ユニバーサル]** ノードに移動します。 あるいは、 **[Windows]** 、 **[Windows 8]** 、 **[Windows Phone]** ノードに移動します。
+  - モバイル デバイスまたはエミュレーターで実行している UWP アプリは、Phone アプリケーションとして実行されます。 このアプリをテストする場合、 **コード化された UI テスト プロジェクト (Windows Phone)** のテンプレートを使用します。 新しいプロジェクトの作成時にこのテンプレートを検索するには、 **[Windows]**、 **[ユニバーサル]** ノードに移動します。 あるいは、 **[Windows]**、 **[Windows 8]**、 **[Windows Phone]** ノードに移動します。
 
     プロジェクトを作成した後も、テストの作成は以前と同じままになります。
 
 - **Q: UIMap.Designer ファイルでコードを変更できないのはなぜですか?**
 
-   **A**: UIMapDesigner.cs ファイルでコードを変更しても、[UIMap - コード化された UI テスト ビルダー] を使用してコードを生成するたびに変更が上書きされます。 記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。
+   **A**: UIMapDesigner.cs ファイルで行ったコードの変更は、uimap-コード化された UI テストビルダーを使用してコードを生成するたびに上書きされます。 記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。
 
 ## <a name="see-also"></a>参照
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md) [Windows ストアコントロールの一意のオートメーションプロパティをテスト用に設定](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)する

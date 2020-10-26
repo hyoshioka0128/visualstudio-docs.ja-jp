@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903640"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>再利用可能なボタンのグループを作成する
-コマンドグループは、メニューまたはツールバーに常に一緒に表示されるコマンドのコレクションです。 任意のコマンドグループは、 *vsct*ファイルの commandplacements セクションの別の親メニューに割り当てて再利用できます。
+コマンドグループは、メニューまたはツールバーに常に一緒に表示されるコマンドのコレクションです。 任意のコマンドグループは、 *vsct* ファイルの commandplacements セクションの別の親メニューに割り当てて再利用できます。
 
  通常、コマンドグループにはボタンが含まれていますが、他のメニューやコンボボックスを含めることもできます。
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>再利用可能なボタンのグループを作成するには
 
-1. という名前の VSIX プロジェクトを作成 `ReusableButtons` します。 詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+1. という名前の VSIX プロジェクトを作成 `ReusableButtons` します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. プロジェクトが開いたら、 **Reusablecommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*ReusableCommand.cs*に変更します。
+2. プロジェクトが開いたら、 **Reusablecommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *ReusableCommand.cs*に変更します。
 
 3. *. Vsct*ファイルで、[シンボル] セクションにアクセスし、プロジェクトのグループとコマンドを含む guidsymbol 要素を見つけます。 GuidReusableCommandPackageCmdSet という名前にする必要があります。
 
@@ -42,9 +42,9 @@ ms.locfileid: "85903640"
     </GuidSymbol>
     ```
 
-     既定では、コマンド項目テンプレートによって、 **Mymenugroup**という名前のグループと、指定した名前を持つボタンと、それぞれの idsymbol エントリが作成されます。
+     既定では、コマンド項目テンプレートによって、 **Mymenugroup** という名前のグループと、指定した名前を持つボタンと、それぞれの idsymbol エントリが作成されます。
 
-5. [Groups] セクションで、[Symbols] セクションで指定したものと同じ GUID 属性と ID 属性を持つ Group 要素を作成します。 また、次の例に示すように、既存のグループを使用するか、コマンドテンプレートによって提供されるエントリを使用することもできます。 このグループは、[**ツール**] メニューに表示されます。
+5. [Groups] セクションで、[Symbols] セクションで指定したものと同じ GUID 属性と ID 属性を持つ Group 要素を作成します。 また、次の例に示すように、既存のグループを使用するか、コマンドテンプレートによって提供されるエントリを使用することもできます。 このグループは、[ **ツール** ] メニューに表示されます。
 
     ```xml
     <Groups>
@@ -81,7 +81,7 @@ ms.locfileid: "85903640"
     ```
 
     > [!NOTE]
-    > Priority フィールドの値によって、新しいコマンドグループ内のコマンドの位置が決まります。 CommandPlacement 要素で設定された優先順位は、項目定義のセットをオーバーライドします。 優先順位値が低いコマンドは、優先順位値が高いコマンドの前に表示されます。 優先順位値の重複は許可されていますが、 **devenv/setup**コマンドがレジストリから最終的なインターフェイスを作成する順序に一貫性がないため、同じ優先順位値を持つコマンドの相対的な位置は保証できません。
+    > Priority フィールドの値によって、新しいコマンドグループ内のコマンドの位置が決まります。 CommandPlacement 要素で設定された優先順位は、項目定義のセットをオーバーライドします。 優先順位値が低いコマンドは、優先順位値が高いコマンドの前に表示されます。 優先順位値の重複は許可されていますが、 **devenv/setup** コマンドがレジストリから最終的なインターフェイスを作成する順序に一貫性がないため、同じ優先順位値を持つコマンドの相対的な位置は保証できません。
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>メニューに再利用可能なボタンのグループを配置するには
 
@@ -98,9 +98,9 @@ ms.locfileid: "85903640"
    </CommandTable>
    ```
 
-    コマンドグループは、複数のメニューに含めることができます。 親メニューは、作成したものにすることができます。これは、によって提供されるもの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ( *shellcmddef. vsct*または*sharedcmddef. vsct*で説明)、または別の VSPackage で定義されているものです。 親メニューが最終的に [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage によって表示されるショートカットメニューに接続されている限り、親レイヤーの数は無制限です。
+    コマンドグループは、複数のメニューに含めることができます。 親メニューは、作成したものにすることができます。これは、によって提供されるもの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ( *shellcmddef. vsct* または *sharedcmddef. vsct*で説明)、または別の VSPackage で定義されているものです。 親メニューが最終的に [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage によって表示されるショートカットメニューに接続されている限り、親レイヤーの数は無制限です。
 
-    次の例では、グループを [**ソリューションエクスプローラー** ] ツールバーの他のボタンの右側に配置します。
+    次の例では、グループを [ **ソリューションエクスプローラー** ] ツールバーの他のボタンの右側に配置します。
 
    ```xml
    <CommandPlacements>

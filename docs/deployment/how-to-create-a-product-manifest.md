@@ -19,16 +19,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382511"
 ---
 # <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成する
 アプリケーションの前提条件を展開するには、ブートストラップパッケージを作成します。 ブートストラップパッケージには、1つの製品マニフェストファイルが含まれていますが、各ロケールのパッケージマニフェストが含まれています。 パッケージマニフェストには、パッケージのローカライズ固有の側面が含まれています。 これには、文字列、エンドユーザーライセンス契約、および言語パックが含まれます。
 
- パッケージマニフェストの詳細については、「[方法: パッケージマニフェストを作成](../deployment/how-to-create-a-package-manifest.md)する」を参照してください。
+ パッケージマニフェストの詳細については、「 [方法: パッケージマニフェストを作成](../deployment/how-to-create-a-package-manifest.md)する」を参照してください。
 
 ## <a name="create-the-product-manifest"></a>製品マニフェストを作成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "85382511"
 
 1. ブートストラップパッケージ用のディレクトリを作成します。 この例では、C:\ packageを使用します。
 
-2. Visual Studio で、 *product.xml*という名前の新しい XML ファイルを作成し、 *c:\ package*フォルダーに保存します。
+2. Visual Studio で、 *product.xml*という名前の新しい XML ファイルを作成し、 *c:\ package* フォルダーに保存します。
 
 3. 次の XML を追加して、パッケージの XML 名前空間と製品コードを記述します。 製品コードをパッケージの一意の識別子に置き換えます。
 
@@ -64,7 +64,7 @@ ms.locfileid: "85382511"
 
 6. *CorePackage.msi*ファイルを*c:\ パッケージ*フォルダーにコピーまたは移動します。
 
-7. ブートストラップコマンドを使用してパッケージをインストールするには、XML を追加します。 ブートストラップは自動的に **/qn**フラグを *.msi*ファイルに追加します。これはサイレントインストールされます。 ファイルが *.exe*の場合、ブートストラップはシェルを使用して *.exe*ファイルを実行します。 次の XML は*CorePackage.msi*する引数を示していませんが、コマンドライン引数を属性に含めることができ `Arguments` ます。
+7. ブートストラップコマンドを使用してパッケージをインストールするには、XML を追加します。 ブートストラップは自動的に **/qn** フラグを *.msi* ファイルに追加します。これはサイレントインストールされます。 ファイルが *.exe*の場合、ブートストラップはシェルを使用して *.exe* ファイルを実行します。 次の XML は *CorePackage.msi*する引数を示していませんが、コマンドライン引数を属性に含めることができ `Arguments` ます。
 
     ```xml
     <Commands>
@@ -112,7 +112,7 @@ ms.locfileid: "85382511"
     </Commands>
     ```
 
-12. *C:\ パッケージ*フォルダーを Visual Studio ブートストラップディレクトリに移動します。 Visual Studio 2010 の場合、これは*SDKs\Windows\v7.0A\Bootstrapper\Packages*ディレクトリです。
+12. *C:\ パッケージ*フォルダーを Visual Studio ブートストラップディレクトリに移動します。 Visual Studio 2010 の場合、これは *SDKs\Windows\v7.0A\Bootstrapper\Packages* ディレクトリです。
 
 ## <a name="example"></a>例
  製品マニフェストには、カスタムの必須コンポーネントのインストール手順が含まれています。

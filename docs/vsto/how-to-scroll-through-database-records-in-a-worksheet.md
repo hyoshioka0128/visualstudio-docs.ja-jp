@@ -16,16 +16,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8127a5f61e292fb777be4854796535bbe01226aa
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545796"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>方法: ワークシート内のデータベースレコードをスクロールする
   次の手順では、デザイナーを使用して、Microsoft Office Excel ワークシートのデータベーステーブルから単一のフィールドを表示する方法を示します。このコントロールには、エンドユーザーがすべてのレコードをスクロールできるようにするコントロールがあります。
 
- デザイナーは、ドキュメントレベルのプロジェクトでのみ使用できます。 ただし、コントロールを追加し、実行時にプログラムによってデータにバインドすることもできます。 詳細については、「[チュートリアル: VSTO アドインプロジェクトでの単純データバインディング](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)」を参照してください。
+ デザイナーは、ドキュメントレベルのプロジェクトでのみ使用できます。 ただし、コントロールを追加し、実行時にプログラムによってデータにバインドすることもできます。 詳細については、「 [チュートリアル: VSTO アドインプロジェクトでの単純データバインディング](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)」を参照してください。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "85545796"
 
 1. Visual Studio で Excel アプリケーションプロジェクトを開きます。
 
-2. [**データソース**] ウィンドウを開き、データベースからデータソースを作成します。 詳細については、「[新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
+2. [ **データソース** ] ウィンドウを開き、データベースからデータソースを作成します。 詳細については、「 [新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
 3. 表示するデータが含まれているテーブルを展開し、特定の列を選択します。
 

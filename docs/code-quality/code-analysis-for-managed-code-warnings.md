@@ -1,6 +1,6 @@
 ---
 title: マネージド コードの警告に対応するコードの解析
-ms.date: 11/04/2016
+ms.date: 08/31/2020
 ms.topic: reference
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
@@ -10,22 +10,22 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 383f488fcc9ebe614257b035732162100b9c7fd2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85521057"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034105"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>マネージド コードの警告に対応するコードの解析
-マネージド コード分析ツールには、マネージド コード ライブラリの規則違反を示す警告機能があります。 警告は、デザイン、ローカリゼーション、パフォーマンス、セキュリティなどの規則の区分に分類されています。 個々の警告によって、マネージド コード分析規則の違反がわかります。 ここでは、マネージド コード分析の各警告について、詳細な説明と例を紹介します。
+# <a name="net-code-analysis-rules"></a>.NET コード分析規則
+.NET コード分析では、コード品質違反やコード品質向上の提案を示すルールが提供されます。 ルールは、設計、ローカライズ、パフォーマンス、セキュリティなどのルール領域に分類されます。 特定の規則は .NET API の使用に固有であり、残りの規則は汎用コードの品質に関するものです。 ここでは、各ルールの詳細な説明と例を示します。
 
- 次の表に、各警告で示される情報の種類を示しています。
+ 次の表は、診断ごとに提供される情報の種類を示しています。
 
 |項目|説明|
 |----------|-----------------|
@@ -44,18 +44,15 @@ ms.locfileid: "85521057"
 
 |カテゴリ|説明|
 |-|-|
-|[CheckId 別の警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|すべての警告を CheckId 別に一覧表示します。|
-|[暗号化の警告](../code-quality/cryptography-warnings.md)|暗号化の適切な使用によって、より安全なライブラリとアプリケーションをサポートする警告です。|
-|[デザインの警告](../code-quality/design-warnings.md)|.NET デザインガイドラインによって指定された正しいライブラリデザインをサポートする警告。|
-|[ドキュメントの警告](../code-quality/documentation-warnings.md)|XML ドキュメントコメントの正しい使用によって、適切にドキュメント化されたライブラリデザインをサポートする警告。|
-|[グローバリゼーションの警告](../code-quality/globalization-warnings.md)|国際対応ライブラリおよびアプリケーションをサポートする警告です。|
-|[相互運用性の警告](../code-quality/interoperability-warnings.md)|COM クライアントとの相互作用をサポートする警告です。|
-|[保守容易性に関する警告](../code-quality/maintainability-warnings.md)|ライブラリとアプリケーションの保守をサポートする警告です。|
-|[モビリティの警告](../code-quality/mobility-warnings.md)|効率的な電力の使用法をサポートする警告です。|
-|[名前付けに関する警告](../code-quality/naming-warnings.md)|.NET デザインガイドラインの名前付け規則への準拠をサポートする警告。|
-|[パフォーマンスの警告](../code-quality/performance-warnings.md)|高パフォーマンスのライブラリとアプリケーションをサポートする警告です。|
-|[移植性に関する警告](../code-quality/portability-warnings.md)|異なるプラットフォーム間の移植性をサポートする警告です。|
-|[信頼性の警告](../code-quality/reliability-warnings.md)|メモリやスレッドの適切な使用など、ライブラリとアプリケーションの信頼性をサポートする警告です。|
-|[セキュリティの警告](../code-quality/security-warnings.md)|より安全なライブラリとアプリケーションをサポートする警告です。|
-|[使用状況に関する警告](../code-quality/usage-warnings.md)|.NET の適切な使用をサポートする警告。|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|チェックインにおいてコード分析ポリシーに適合しない場合に発生するエラーです。|
+|[ID によるルール](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|RuleID によってすべてのルールを一覧表示します。|
+|[[デザイン規則]](../code-quality/design-warnings.md)|.NET デザインガイドラインによって指定された正しいライブラリデザインをサポートする規則。|
+|[ドキュメントルール](../code-quality/documentation-warnings.md)|XML ドキュメントのコメントを適切に使用して、適切にドキュメント化されたライブラリデザインをサポートするルール。|
+|[[グローバリゼーション規則]](../code-quality/globalization-warnings.md)|国際対応ライブラリおよびアプリケーションをサポートするルール。|
+|[[保守容易性の規則]](../code-quality/maintainability-warnings.md)|ライブラリとアプリケーションのメンテナンスをサポートするルール。|
+|[名前付け規則](../code-quality/naming-warnings.md)|.NET デザインガイドラインの名前付け規則への準拠をサポートする規則。|
+|[パフォーマンス ルール](../code-quality/performance-warnings.md)|高パフォーマンスのライブラリとアプリケーションをサポートするルール。|
+|[移植性と相互運用性の規則](../code-quality/interoperability-warnings.md)|さまざまなプラットフォーム間の移植性と COM クライアントとの相互作用をサポートする規則。|
+|[規則の発行](../code-quality/publish-warnings.md)|.NET アプリケーションの適切な発行をサポートする規則。|
+|[信頼性の規則](../code-quality/reliability-warnings.md)|メモリやスレッドの適切な使用など、ライブラリとアプリケーションの信頼性をサポートする規則。|
+|[セキュリティ規則](../code-quality/security-warnings.md)|より安全なライブラリとアプリケーションをサポートする規則。|
+|[使用規則](../code-quality/usage-warnings.md)|.NET の適切な使用をサポートする規則。|

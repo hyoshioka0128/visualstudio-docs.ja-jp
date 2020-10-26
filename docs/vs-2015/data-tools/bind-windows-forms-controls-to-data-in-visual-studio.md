@@ -24,20 +24,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672986"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへの Windows フォーム コントロールのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-データを Windows フォームにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータバインドコントロールを作成するには、 **[データソース]** ウィンドウから Visual Studio の Windows フォームデザイナーに項目をドラッグします。 このトピックでは、データ バインド Windows フォーム アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
+データを Windows フォームにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータバインドコントロールを作成するには、[ **データソース** ] ウィンドウから Visual Studio の Windows フォームデザイナーに項目をドラッグします。 このトピックでは、データ バインド Windows フォーム アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
 
  ![データソースのドラッグ操作](../data-tools/media/raddata-data-source-drag-operation.png "レーダーデータデータソースのドラッグ操作")
 
- Visual Studio でデータバインドコントロールを作成する方法に関する一般的な情報については、「 [Visual studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 Windows フォームでのデータバインディングの詳細については、「[データバインディングの Windows フォーム](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)」を参照してください。
+ Visual Studio でデータバインドコントロールを作成する方法に関する一般的な情報については、「 [Visual studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 Windows フォームでのデータバインディングの詳細については、「 [データバインディングの Windows フォーム](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -53,7 +53,7 @@ ms.locfileid: "72672986"
 
 - [複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
-- [ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロールを作成する](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
 - [フォーム間でデータを渡す](../data-tools/pass-data-between-forms.md)
 
@@ -74,7 +74,7 @@ ms.locfileid: "72672986"
  このコンポーネントには、Windows アプリケーションによって表示されるデータを移動するためのユーザー インターフェイスが用意されています。 詳細については、「[BindingNavigator コントロール](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)」を参照してください。
 
 ## <a name="datagridview-control"></a>DataGridView コントロール
- さまざまな種類のデータソースの表形式データを表示および編集するには、<xref:System.Windows.Forms.DataGridView> コントロールを使用します。 <xref:System.Windows.Forms.DataGridView> にデータをバインドするには、<xref:System.Windows.Forms.DataGridView.DataSource%2A> プロパティを使用します。 詳細については、「 [DataGridView コントロールの概要](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)」を参照してください。
+ さまざまな種類のデータソースの表形式データを表示および編集するには、コントロールを使用し <xref:System.Windows.Forms.DataGridView> ます。 <xref:System.Windows.Forms.DataGridView> にデータをバインドするには、<xref:System.Windows.Forms.DataGridView.DataSource%2A> プロパティを使用します。 詳細については、「 [DataGridView コントロールの概要](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488)」を参照してください。
 
 ## <a name="see-also"></a>参照
  [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)

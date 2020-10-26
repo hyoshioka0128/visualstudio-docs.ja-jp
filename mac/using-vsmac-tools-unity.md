@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79306717"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315019"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を使用する
 
@@ -118,6 +118,6 @@ Visual Studio for Mac から直接 **[Unity にアタッチして再生]** 構�
    ![Visual Studio で [停止] をクリックする](media/using-vsmac-tools-unity-image7.png)
 
 > [!NOTE]
-> **[Unity にアタッチして再生]** 構成を使用してデバッグを開始した場合、 **[停止]** ボタンでも Unity を停止できます。
+> **[Unity にアタッチして再生]** 構成を使用してデバッグを開始した場合、**[停止]** ボタンでも Unity を停止できます。
 
 Visual Studio for Mac でのデバッグについて詳しくは、「[Using the debugger](debugging.md)」(デバッガーの使用) をご覧ください。

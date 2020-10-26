@@ -1,5 +1,6 @@
 ---
-title: 単一テーブル継承を使用した LINQ to SQL クラス (O/R デザイナー)
+title: 単一テーブル継承を使用した LINQ to SQL クラス
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,15 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535266"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036757"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
-[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明する一般的な手順について説明します。また、での継承の使用方法を示すいくつかの実際のデータを提供し [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] ます。
+[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「 [方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) する」のトピックで説明する一般的な手順について説明します。また、での継承の使用方法を示すいくつかの実際のデータを提供し [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] ます。
 
 このチュートリアルでは、次のタスクを実行します。
 
@@ -49,7 +50,7 @@ ms.locfileid: "85535266"
 
 2. **テーブル デザイナー**で、次の列をテーブルに追加します。
 
-    |列名|データの種類|Null を許容|
+    |列名|データ型|Null を許容|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
@@ -68,7 +69,7 @@ ms.locfileid: "85535266"
 
 1. データ ビューでテーブルを開きます  (**サーバーエクスプローラー**または**データベースエクスプローラー**で**Person**テーブルを右クリックし、[**テーブルデータの表示**] をクリックします)。
 
-2. テーブルに次のデータをコピーします。 (コピーした後、[**結果**] ウィンドウで行全体を選択すると、テーブルに貼り付けることができます)。
+2. テーブルに次のデータをコピーします。 (コピーした後、[ **結果** ] ウィンドウで行全体を選択すると、テーブルに貼り付けることができます)。
 
     |**ID**|**Type**|**FirstName**|**LastName**|**マネージャー**|
     |-|-|-|-|-|
@@ -92,11 +93,11 @@ ms.locfileid: "85535266"
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic**を展開し、[ **Windows デスクトップ**] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
-4. プロジェクトに**InheritanceWalkthrough**という名前を入力し、[ **OK]** をクリックします。
+4. プロジェクトに **InheritanceWalkthrough**という名前を入力し、[ **OK]** をクリックします。
 
      **InheritanceWalkthrough** プロジェクトが作成されて、**ソリューション エクスプローラー**に追加されます。
 
@@ -119,13 +120,13 @@ ms.locfileid: "85535266"
 
 2. **Person**テーブルを**O/R デザイナー**デザインサーフェイスにドラッグします。
 
-3. 2つ目の**Person**テーブルを**O/R デザイナー**にドラッグし、名前を「 **Employee**」に変更します。
+3. 2つ目の **Person** テーブルを **O/R デザイナー** にドラッグし、名前を「 **Employee**」に変更します。
 
 4. **Person** オブジェクトから **Manager** プロパティを削除します。
 
 5. **Employee** オブジェクトから、**Type**、**ID**、**FirstName**、および **LastName** の各プロパティを削除します。 (つまり、**Manager** 以外のプロパティをすべて削除します。)
 
-6. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、 **O/R デザイナー**で**Employee**オブジェクトをクリックし、 **Person**オブジェクトをクリックします。 継承線の矢印は**Person**オブジェクトを指します。
+6. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、 **O/R デザイナー**で**Employee**オブジェクトをクリックし、 **Person**オブジェクトをクリックします。 継承線の矢印は **Person** オブジェクトを指します。
 
 7. デザイン サーフェイスで**継承**線をクリックします。
 
@@ -174,7 +175,7 @@ ms.locfileid: "85535266"
     ```
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
-アプリケーションを実行し、リストボックスに表示されるレコードが [すべての従業員] であることを確認します ([**型**] 列に値2が含まれるレコード)。
+アプリケーションを実行し、リストボックスに表示されるレコードが [すべての従業員] であることを確認します ([ **型** ] 列に値2が含まれるレコード)。
 
 ### <a name="to-test-the-application"></a>アプリケーションをテストするには
 
@@ -182,9 +183,9 @@ ms.locfileid: "85535266"
 
 2. **[Type]** 列の値が 2 のレコードのみが表示されていることを確認します。
 
-3. フォームを閉じます  ([**デバッグ**] メニューの [**デバッグの停止**] をクリックします)。
+3. フォームを閉じます  ([ **デバッグ** ] メニューの [ **デバッグの停止**] をクリックします)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [チュートリアル: LINQ to SQL クラスの作成 (O-R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

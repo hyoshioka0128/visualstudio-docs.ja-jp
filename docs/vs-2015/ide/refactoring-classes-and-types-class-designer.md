@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5803b720ae1271d8319310820d1f0dc159db8bf9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670267"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>クラスおよび型のリファクタリング (クラス デザイナー)
@@ -39,11 +39,11 @@ ms.locfileid: "72670267"
 
 |タスク|関連する参照先|
 |----------|------------------------|
-|**クラスのリファクタリング:** リファクタリング操作を使用すると、クラスを部分クラスに分割したり、抽象基本クラスを実装したりできます。|-   [方法: 1 つのクラスを複数の部分クラスに分割する (クラス デザイナー)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|
-|**インターフェイスの操作:** クラス デザイナーのクラス ダイアグラム上で、インターフェイス メソッド用のコードを提供するクラスに接続して、インターフェイスを実装できます。|-   [方法: インターフェイスを実装する (クラス デザイナー)](../ide/how-to-implement-an-interface-class-designer.md)|
-|**型、型のメンバー、およびパラメーターのリファクタリング:** クラス デザイナーを使用して、型の名前変更、型のメンバーのオーバーライド、またはメンバーを 1 つの型から別の型に移動することができます。 Null 許容型を作成することもできます。|-   [型および型のメンバーの名前変更](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [1 つの型から別の型への型のメンバーの移動](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [方法: Null 許容型を作成する (クラス デザイナー)](../ide/how-to-create-a-nullable-type-class-designer.md)|
+|**クラスのリファクタリング:** リファクタリング操作を使用すると、クラスを部分クラスに分割したり、抽象基本クラスを実装したりできます。|-   [方法: クラスを部分クラスに分割する (クラスデザイナー)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|
+|**インターフェイスの操作:** クラス デザイナーのクラス ダイアグラム上で、インターフェイス メソッド用のコードを提供するクラスに接続して、インターフェイスを実装できます。|-   [方法: インターフェイスを実装する (クラスデザイナー)](../ide/how-to-implement-an-interface-class-designer.md)|
+|**型、型のメンバー、およびパラメーターのリファクタリング:** クラス デザイナーを使用して、型の名前変更、型のメンバーのオーバーライド、またはメンバーを 1 つの型から別の型に移動することができます。 Null 許容型を作成することもできます。|-   [型と型のメンバーの名前変更](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [型のメンバーをある型から別の型に移動する](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [方法: Null 許容型を作成する (クラスデザイナー)](../ide/how-to-create-a-nullable-type-class-designer.md)|
 
-### <a name="RenamingTypesAndMembers"></a> 型および型のメンバーの名前変更
+### <a name="renaming-types-and-type-members"></a><a name="RenamingTypesAndMembers"></a> 型と型のメンバーの名前変更
  クラス デザイナーのクラス ダイアグラムまたは [プロパティ] ウィンドウで、型または型のメンバーの名前を変更できます。 [クラスの詳細] ウィンドウでは、メンバーの名前は変更できますが、型の名前は変更できません。 型または型のメンバーの名前を変更すると、以前の名前が表示されていた、すべてのウィンドウとコードの場所に変更が反映されます。
 
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>クラス デザイナーで名前を変更するには
@@ -62,7 +62,7 @@ ms.locfileid: "72670267"
 
 2. **[名前]** 列で、型のメンバーの名前を変更します。
 
-3. セルからフォーカスを移動するには、 **ENTER** キーを押すか、セルの外側をクリックします。
+3. セルからフォーカスを移動するには、 **enter** キーを押すか、セルをクリックします。
 
     > [!NOTE]
     > [クラスの詳細] ウィンドウでは、メンバーの名前は変更できますが、型の名前は変更できません。
@@ -77,7 +77,7 @@ ms.locfileid: "72670267"
 
      新しい名前は、以前の名前が表示されていた、現在のプロジェクト内のすべてのウィンドウとコードの場所に反映されます。
 
-### <a name="MovingTypeMembers"></a> 1 つの型から別の型への型のメンバーの移動
+### <a name="moving-type-members-from-one-type-to-another"></a><a name="MovingTypeMembers"></a> 型のメンバーをある型から別の型に移動する
  **クラス デザイナー**を使用すると、両方が現在のクラス ダイアグラムに表示されている 1 つの型から別の型に、型のメンバーを移動できます。
 
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>型のメンバーを 1 つの型から別の型に移動するには

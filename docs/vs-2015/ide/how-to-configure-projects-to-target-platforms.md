@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : プロジェクトを構成して対象プラットフォームを設定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -19,27 +19,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6ba899fd1b17fa5a82c64d5c5e44e67f0d5eb97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668187"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法 : プロジェクトを構成して対象プラットフォームを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] での 64 ビット プラットフォームのサポートについて詳しくは、「[64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 での64ビットプラットフォームのサポートの詳細につい [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ては、「 [64 ビットアプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。
 
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>構成マネージャーを使用した対象プラットフォームの指定
  **構成マネージャー**を使うと、プロジェクトの対象となる新しいプラットフォームをすばやく追加できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に用意されているプラットフォームのいずれかを選択すると、プロジェクトのプロパティは、選択したプラットフォーム向けにプロジェクトをビルドするように変更されます。
 
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>64 ビット プラットフォームを対象とするようにプロジェクトを構成するには
 
-1. メニュー バーで **[ビルド]** 、 **[構成マネージャー]** の順に選択します。
+1. メニュー バーで **[ビルド]**、 **[構成マネージャー]** の順に選択します。
 
 2. **[アクティブ ソリューション プラットフォーム]** ボックスの一覧で、ソリューションの対象となる 64 ビット プラットフォームを選び、 **[閉じる]** を選びます。
 
-   1. 必要なプラットフォームが表示されない場合は、 **[アクティブ ソリューション プラットフォーム]** ボックスの一覧の **[新規作成]** を選びます。
+   1. 必要なプラットフォームが [ **アクティブソリューションプラットフォーム** ] の一覧に表示されない場合は、[ **新規作成**] をクリックします。
 
         **[新しいソリューション プラットフォーム]** ダイアログ ボックスが表示されます。
 
@@ -59,9 +59,9 @@ ms.locfileid: "72668187"
 
 - [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトについては、「[/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」をご覧ください。
 
-- [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクトについては、「[[ビルド] ウィンドウ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)」をご覧ください。
+- プロジェクトについ [!INCLUDE[csprcs](../includes/csprcs-md.md)] ては、「 [[ビルド] ページ (プロジェクトデザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)」を参照してください。
 
-- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトについては、「[/clr (共通言語ランタイムのコンパイル)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」をご覧ください。
+- プロジェクトについ [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] ては、「 [/Clr (共通言語ランタイムのコンパイル)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」を参照してください。
 
-## <a name="see-also"></a>関連項目
- [ビルドプラットフォームについ](../ide/understanding-build-platforms.md)[てC# /platform (コンパイラオプション)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64-ビットアプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64-ビットサポート](../ide/visual-studio-ide-64-bit-support.md)
+## <a name="see-also"></a>参照
+ [ビルドプラットフォームについ](../ide/understanding-build-platforms.md)[て/Platform (C# コンパイラオプション)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64 ビットアプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64-ビットサポート](../ide/visual-studio-ide-64-bit-support.md)

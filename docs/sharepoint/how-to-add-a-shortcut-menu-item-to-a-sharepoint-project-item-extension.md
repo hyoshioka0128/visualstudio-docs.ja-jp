@@ -15,15 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5c0515fddc106418902cd2cca9fcba4c0e365da1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014850"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>方法: ショートカットメニュー項目を SharePoint プロジェクト項目の拡張機能に追加する
-  プロジェクト項目の拡張機能を使用して、既存の SharePoint プロジェクト項目にショートカットメニュー項目を追加できます。 メニュー項目は、ユーザーが**ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
+  プロジェクト項目の拡張機能を使用して、既存の SharePoint プロジェクト項目にショートカットメニュー項目を追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
 
- 次の手順では、プロジェクト項目の拡張機能が既に作成されていることを前提としています。 詳細については、「[方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
+ 次の手順では、プロジェクト項目の拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
 
 ### <a name="to-add-a-shortcut-menu-item-in-a-project-item-extension"></a>プロジェクト項目の拡張機能にショートカットメニュー項目を追加するには
 
@@ -34,12 +35,12 @@ ms.locfileid: "86014850"
 3. <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新しいオブジェクトのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> 、ユーザーがショートカットメニュー項目をクリックしたときに実行するタスクを実行します。
 
 ## <a name="example"></a>例
- 次のコード例は、ショートカットメニュー項目をイベントレシーバープロジェクト項目に追加する方法を示しています。 ユーザーが**ソリューションエクスプローラー**でプロジェクト項目を右クリックし、[**出力ウィンドウにメッセージを書き込む**] メニュー項目をクリックすると、Visual Studio によって [**出力**] ウィンドウにメッセージが表示されます。
+ 次のコード例は、ショートカットメニュー項目をイベントレシーバープロジェクト項目に追加する方法を示しています。 ユーザーが **ソリューションエクスプローラー** でプロジェクト項目を右クリックし、[ **出力ウィンドウにメッセージを書き込む** ] メニュー項目をクリックすると、Visual Studio によって [ **出力** ] ウィンドウにメッセージが表示されます。
 
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs#1)]
 
- この例では、SharePoint プロジェクトサービスを使用して、**出力**ウィンドウにメッセージを書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
+ この例では、SharePoint プロジェクトサービスを使用して、 **出力** ウィンドウにメッセージを書き込みます。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照を含むクラスライブラリプロジェクトが必要です。

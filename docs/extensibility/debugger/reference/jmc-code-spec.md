@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC |マイクロソフトドキュメント
+title: JMC_CODE_SPEC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714741"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
-この構造体は、モジュールの JustMyCode 情報を設定するために使用されます。
+この構造体は、モジュールのジャスト Mycode 情報を設定するために使用されます。
 
 ## <a name="syntax"></a>構文
 
@@ -43,20 +43,20 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>メンバー
 `fIsUserCode`\
-モジュールをユーザー`TRUE`コードと見なす場合は、非ゼロ ( ) 。それ以外の場合`FALSE`は、モジュールが外部コードとして扱われ、デバッグされない場合は、ゼロ ( ) 。
+`TRUE`モジュールがユーザーコードと見なされる場合は0以外 ()。それ以外の場合は、 `FALSE` モジュールが外部コードとして扱われ、デバッグされない場合は 0 ()。
 
 `bstrModuleName`\
-問題のモジュールの名前。
+対象のモジュールの名前。
 
-## <a name="remarks"></a>Remarks
-この構造体は、このような構造体のリストとして[メソッド](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)に渡されます。
+## <a name="remarks"></a>注釈
+この構造体は、 [Setジャスト Mycodestate](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) メソッドにそのような構造体のリストとして渡されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

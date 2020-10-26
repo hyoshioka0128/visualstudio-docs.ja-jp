@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: パフォーマンスの問題を特定する |Microsoft Docs'
+title: 'チュートリアル: パフォーマンスの問題を特定する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695012"
 ---
-# <a name="walkthrough-identifying-performance-problems"></a>チュートリアル: パフォーマンスの問題を特定します。
+# <a name="walkthrough-identifying-performance-problems"></a>チュートリアル: パフォーマンスの問題を特定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、アプリケーションのプロファイルを行ってパフォーマンス上の問題を特定する方法を示します。  
@@ -128,7 +128,7 @@ ms.locfileid: "65695012"
   
      **メモ帳**が開かれ、PeopleTrax の人名リストを含む新しいファイルが表示されます。 待機することにより、フィルター処理用のデータ エクスポート手順をさらに簡単に識別できます。  
   
-6. **メモ帳**を閉じ、**PeopleTrax** アプリケーションを閉じます。  
+6. **メモ帳**を閉じ、 **PeopleTrax**アプリケーションを閉じます。  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] によって、パフォーマンス セッション レポート (*.vsp) が生成されます。  
   
@@ -158,7 +158,7 @@ ms.locfileid: "65695012"
   
    アプリケーションを再度実行すると、パフォーマンスが大幅に改善されたことがわかります。 ユーザーが知覚できる程度にパフォーマンスが改善された場合でも、プロファイリング セッションを再び実行することをお勧めします。 ある問題によって他の問題の存在が表面化しない場合があるため、問題を解決したら必ずデータをレビューする必要があります。  
   
-## <a name="see-also"></a>関連項目  
- [概要](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>参照  
+ [概念](../profiling/overviews-performance-tools.md)   
  [はじめに](../profiling/getting-started-with-performance-tools.md)   
  [/Z7、/Zi、/ZI (デバッグ情報の形式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

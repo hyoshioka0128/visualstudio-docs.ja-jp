@@ -1,5 +1,5 @@
 ---
-title: フラグの要素をコマンド |Microsoft Docs
+title: コマンドフラグ要素 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184365"
 ---
 # <a name="command-flag-element"></a>Command Flag 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-その親要素を変更します。  
+親要素を変更します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,43 +39,43 @@ ms.locfileid: "68184365"
   
 |値|説明|  
 |-----------|-----------------|  
-|AllowParams|ユーザーがコマンドのパラメーターを入力できることを示します、**コマンド**ウィンドウ、コマンドの標準名を入力するとき。<br /><br /> に対して有効です。 `Button`|  
-|通常|グループやボタンれていない場合でも、メニューが作成されます。<br /><br /> に対して有効です。 `Menu`|  
-|CaseSensitive|ユーザーのエントリは、区別されます。<br /><br /> に対して有効です。 `Combo`|  
-|CommandWellOnly|キーボード ショートカットにバインドするための他のシェル カスタマイズに使用できるようにする、コマンドは、最上位のメニューに表示されない場合は、このフラグを適用します。 開いてこれらのコマンドをカスタマイズするには、VSPackage をインストールした後、**オプション**] ダイアログ ボックスと [コマンドの配置を編集し、**キーボード環境**カテゴリ。 このフラグは、ショートカット メニューのツールバー、メニュー コント ローラー、またはサブメニューへの配置には影響しません。<br /><br /> に対して無効です: `Button`、 `Combo`|  
-|DefaultDisabled|既定では、それを実装する VSPackage が読み込まれていない場合のコマンドは、無効には、または`QueryStatus`メソッドが呼び出されていません。<br /><br /> に対して無効です: `Button`、 `Combo`|  
-|DefaultDocked|既定でドッキングします。 この設定は不要になったはツールバーに適用されます、常にドッキングされているためです。|  
-|DefaultInvisible|既定では、コマンドはそれを実装する VSPackage が読み込まれていない場合に表示されていない、または`QueryStatus`メソッドが呼び出されていません。<br /><br /> これを組み合わせることをお勧め、`DynamicVisibility`フラグ。<br /><br /> に対して無効です: `Button`、 `Combo`、 `Menu`|  
-|DontCache|開発環境をキャッシュしません、`QueryStatus`このコマンドのメソッドの結果。<br /><br /> メニューのこれは、そのメニュー項目のテキストをキャッシュにないメニュー コント ローラーを指示します。 メニューには、動的な項目または動的テキストを含む項目が含まれている場合は、このフラグを使用します。<br /><br /> に対して無効です: `Button`、 `Menu`|  
-|DynamicItemStart|動的なリストの先頭を示します。 これにより、連続して呼び出すことによってリストを作成する環境、 `QueryStatus` OLECMDERR_E_UNSUPPORTED フラグが返されるまで、リスト項目のメソッド。 これは、最近使用した (MRU) のリストとウィンドウのリストなどの項目に適してします。<br /><br /> に対して有効です。 `Button`|  
-|DynamicVisibility|コマンドの可視性を変更できます、`QueryStatus`メソッドまたはコンテキストに含まれている GUID によって、`VisibilityConstraints`セクション。<br /><br /> メイン ウィンドウに表示される最上位レベルのツールバーではなくメニューやツール ウィンドウのツールバーに表示されるコマンドに適用されます。 トップレベルのツール バー アイテムを無効になっていることができますが、非表示に、OLECMDF_INVISIBLE フラグから返されるときに、`QueryStatus`メソッド。 ツール ウィンドウのツールバーに表示されるツールバーのコマンドを非表示にすることができます。<br /><br /> メニューのことが自動的に非表示にするすべてのメンバーが非表示をこのフラグも示します。 通常、このフラグは、トップレベルのメニューでは、この動作が既にあるため、サブメニューに割り当てられます。<br /><br /> このフラグと組み合わせる必要があります、`DefaultInvisible`フラグ。<br /><br /> に対して無効です: `Button`、 `Combo`、 `Menu`|  
-|フィルター キー機能|キーのフィルタ リングのトピックを参照して[Combo 要素](../extensibility/combo-element.md)します。<br /><br /> に対して有効です。 `Combo`|  
-|FixMenuController|コマンドは、常に既定では、このコマンドは、メニュー コント ローラーに配置されているが場合、つまり、メニュー コント ローラー ボタン自体が選択されるたびに、コマンドを選択します。 メニュー コント ローラーがある場合、`TextIsAnchorCommand`フラグが設定、メニュー コント ローラーでは、テキストを持つコマンドからもその後、`FixMenuController`フラグ。<br /><br /> メニュー コント ローラーでコマンドを 1 つだけ必要がありますが、`FixMenuController`フラグ。 1 つ以上のコマンドがマークされているため、メニューの最後のコマンドが既定のコマンドになります。<br /><br /> に対して有効です。 `Button`|  
-|IconAndText|メニューとツールバーのアイコンとテキストを表示します。<br /><br /> に対して無効です: `Button`、 `Combo`、 `Menu`|  
-|NoAutoComplete|オートコンプリート機能は無効です。<br /><br /> に対して有効です。 `Combo`|  
-|NoButtonCustomize|ユーザーは、このボタンをカスタマイズすることはできません。<br /><br /> に対して無効です: `Button`、 `Combo`|  
-|NoKeyCustomize|キーボードのカスタマイズを有効にしないでください。<br /><br /> に対して無効です: `Button`、 `Combo`|  
-|NoShowOnMenuController|このコマンドは、メニュー コント ローラーに配置されて場合、コマンドは、ドロップダウン リストでは表示されません。<br /><br /> に対して有効です。 `Button`|  
-|NotInTBList|使用可能なツールバーの一覧には表示されません。 これは、ツール バー メニュー型に対してのみ有効です。<br /><br /> に対して有効です。 `Menu`|  
-|NoToolbarClose|ユーザーは、ツールバーを閉じることができません。 これは、ツール バー メニュー型に対してのみ有効です。<br /><br /> に対して有効です。 `Menu`|  
-|pict|ツールバーはメニューのテキストのみアイコンのみを表示します。 アイコンが指定されていない場合は、ツールバーにある空のクリック可能領域に表示されます。<br /><br /> に対して有効です。 `Button`|  
-|PostExec|では、コマンドのブロック不可。 開発環境は、処理前のすべてのクエリが完了するまで実行を延期します。<br /><br /> に対して有効です。 `Button`|  
-|RouteToDocs|コマンドは、アクティブなドキュメントにルーティングされます。<br /><br /> に対して有効です。 `Button`|  
-|StretchHorizontally|このフラグが設定されている場合、幅、コンボ ボックスの最小幅になり、コンボ ボックスが使用可能な領域を埋めるように拡大、ツールバーのスペースがある場合。 これは、ツールバーが水平方向にドッキングされているし、ツールバーの 1 つだけのコンボ ボックスが (最初のコンボ ボックス以外のすべてのフラグは無視されます) フラグを使用できる場合にのみ発生します。<br /><br /> に対して有効です。 `Combo`|  
-|TextMenuUseButton|使用して、`ButtonText`メニュー フィールド。 既定のフィールドは`MenuText`指定されている場合。<br /><br /> に対して有効です。 `Button`|  
-|テキスト|コマンドまたはメニューのテキストは実行時に、通常、`QueryStatus`メソッド。<br /><br /> に対して無効です: `Button`、 `Menu`|  
-|TextChangesButton|に対して有効です。 `Button`|  
-|TextIsAnchorCommand|メニュー コント ローラーの場合、メニューのテキストは、既定 (アンカー) のコマンドから取得されます。 アンカー コマンドは、選択、またはそのラッチの最後のコマンドです。 メニュー コント ローラーは、独自このフラグが設定されていない場合`MenuText`フィールド。 ただし、メニュー コント ローラーをクリックすると、そのコント ローラーから選択した最後のコマンドも、します。<br /><br /> このフラグと組み合わせることをお勧め、`TextChanges`フラグ。<br /><br /> このフラグは、MenuController または MenuControllerLatched 型のメニューにのみ適用されます。<br /><br /> に対して有効です。 `Menu`|  
-|TextMenuCtrlUseMenu|使用して、`MenuText`フィールド メニュー コント ローラーにします。 既定のフィールドは`ButtonText`します。<br /><br /> に対して有効です。 `Button`|  
-|TextMenuUseButton|使用して、`ButtonText`メニュー フィールド。 既定のフィールドは`MenuText`指定されている場合。<br /><br /> に対して有効です。 `Button`|  
-|TextOnly|アイコンが指定した場合でも、ツールバーまたはメニュー アイコンなしでテキストのみを表示します。<br /><br /> に対して有効です。 `Button`|  
+|AllowParams|コマンドの正規名を入力するときに、ユーザーが **コマンドウィンドウに** コマンドパラメーターを入力できることを示します。<br /><br /> 有効期間: `Button`|  
+|常に作成|メニューは、グループまたはボタンがない場合でも作成されます。<br /><br /> 有効期間: `Menu`|  
+|[CaseSensitive]|ユーザーエントリでは大文字と小文字が区別されます。<br /><br /> 有効期間: `Combo`|  
+|CommandWellOnly|コマンドがトップレベルメニューに表示されず、キーボードショートカットにバインドするなど、追加のシェルカスタマイズに使用できるようにする場合は、このフラグを適用します。 VSPackage をインストールした後、[ **オプション** ] ダイアログボックスを開き、[ **キーボード環境** ] カテゴリの下にあるコマンドの配置を編集して、これらのコマンドをカスタマイズできます。 このフラグは、ショートカットメニュー、ツールバー、メニューコントローラー、またはサブメニューの配置には影響しません。<br /><br /> 有効な対象: `Button` 、 `Combo`|  
+|DefaultDisabled|既定では、このコマンドを実装する VSPackage が読み込まれていないか、メソッドが呼び出されていない場合、コマンドは無効になり `QueryStatus` ます。<br /><br /> 有効な対象: `Button` 、 `Combo`|  
+|DefaultDocked|既定ではドッキングされます。 この設定は、常にドッキングされているため、ツールバーには適用されなくなりました。|  
+|Defaul/Visible|既定では、このコマンドを実装する VSPackage が読み込まれていない場合、または `QueryStatus` メソッドが呼び出されていない場合、コマンドは非表示になります。<br /><br /> これをフラグと組み合わせて使用することをお勧めし `DynamicVisibility` ます。<br /><br /> 有効な対象: `Button` 、 `Combo` 、 `Menu`|  
+|DontCache|開発環境では、 `QueryStatus` このコマンドのメソッドの結果はキャッシュされません。<br /><br /> メニューの場合、メニュー項目のテキストをキャッシュしないようにメニューコントローラーに指示します。 このフラグは、動的なテキストを持つ動的な項目または項目がメニューに含まれている場合に使用します。<br /><br /> 有効な対象: `Button` 、 `Menu`|  
+|DynamicItemStart|動的リストの先頭を示します。 これにより、 `QueryStatus` OLECMDERR_E_UNSUPPORTED フラグが返されるまでリスト項目に対してメソッドを連続して呼び出すことで、環境を構築できます。 これは、最近使用した (MRU) リストやウィンドウリストなどの項目に適しています。<br /><br /> 有効期間: `Button`|  
+|DynamicVisibility|コマンドの表示を変更するには、メソッドを使用する `QueryStatus` か、セクションに含まれているコンテキスト GUID を使用し `VisibilityConstraints` ます。<br /><br /> メニューおよびツールウィンドウのツールバーに表示されるコマンドに適用されますが、メインウィンドウに表示されるトップレベルのツールバーには適用されません。 OLECMDF_INVISIBLE フラグがメソッドから返された場合、最上位のツールバー項目は無効にすることができますが、非表示にすることはできません `QueryStatus` 。 ツールウィンドウのツールバーに表示されるツールバーコマンドは非表示にすることができます。<br /><br /> メニューでは、このフラグは、すべてのメンバーが非表示になっている場合に、自動的に非表示にする必要があることも示しています。 このフラグは、通常、トップレベルのメニューには既にこの動作があるため、サブメニューに割り当てられます。<br /><br /> このフラグは、フラグと組み合わせる必要があり `DefaultInvisible` ます。<br /><br /> 有効な対象: `Button` 、 `Combo` 、 `Menu`|  
+|フィルタ|「 [コンボ要素](../extensibility/combo-element.md)」の「フィルター処理キー」を参照してください。<br /><br /> 有効期間: `Combo`|  
+|FixMenuController|このコマンドがメニューコントローラーに配置されている場合、コマンドは常に既定値になります。つまり、メニューコントローラーボタン自体が選択されるたびに、コマンドが選択されます。 メニューコントローラーにフラグが設定されている場合、 `TextIsAnchorCommand` メニューコントローラーは、フラグが設定されているコマンドからもテキストを受け取り `FixMenuController` ます。<br /><br /> メニューコントローラーでは、1つのコマンドのみにフラグを設定する必要があり `FixMenuController` ます。 複数のコマンドがマークされている場合は、メニューの最後のコマンドが既定のコマンドになります。<br /><br /> 有効期間: `Button`|  
+|IconAndText|メニューとツールバーにアイコンとテキストを表示します。<br /><br /> 有効な対象: `Button` 、 `Combo` 、 `Menu`|  
+|NoAutoComplete|オートコンプリート機能が無効になっています。<br /><br /> 有効期間: `Combo`|  
+|NoButtonCustomize|ユーザーがこのボタンをカスタマイズできないようにします。<br /><br /> 有効な対象: `Button` 、 `Combo`|  
+|NoKeyCustomize|キーボードのカスタマイズを有効にしないでください。<br /><br /> 有効な対象: `Button` 、 `Combo`|  
+|NoShowOnMenuController|このコマンドがメニューコントローラーに配置されている場合、このコマンドはドロップダウンリストに表示されません。<br /><br /> 有効期間: `Button`|  
+|NotInTBList|は、使用可能なツールバーの一覧に表示されません。 これは、ツールバーのメニューの種類に対してのみ有効です。<br /><br /> 有効期間: `Menu`|  
+|NoToolbarClose|ユーザーはツールバーを閉じることができません。 これは、ツールバーのメニューの種類に対してのみ有効です。<br /><br /> 有効期間: `Menu`|  
+|Pict|ツールバーにはアイコンのみが表示され、メニューにはテキストのみが表示されます。 アイコンが指定されていない場合は、ツールバーのクリック可能な空白領域を表示します。<br /><br /> 有効期間: `Button`|  
+|PostExec|コマンドをブロックしないようにします。 開発環境は、処理前のすべてのクエリが完了するまで実行を延期します。<br /><br /> 有効期間: `Button`|  
+|RouteToDocs|コマンドは、アクティブなドキュメントにルーティングされます。<br /><br /> 有効期間: `Button`|  
+|StretchHorizontally|このフラグが設定されている場合、幅はコンボボックスの最小幅になります。また、ツールバーに空き領域がある場合、コンボボックスは使用可能なスペースを埋めるように拡大されます。 これは、ツールバーが水平方向にドッキングされていて、ツールバー上の1つのコンボボックスのみがフラグを使用できる場合にのみ発生します (最初のコンボボックス以外では、フラグはすべて無視されます)。<br /><br /> 有効期間: `Combo`|  
+|TextMenuUseButton|`ButtonText`メニューのフィールドを使用します。 既定のフィールドは、指定され `MenuText` ている場合はです。<br /><br /> 有効期間: `Button`|  
+|TextChanges|コマンドまたはメニューテキストは、通常、メソッドを使用して実行時に変更でき `QueryStatus` ます。<br /><br /> 有効な対象: `Button` 、 `Menu`|  
+|Text[テキストの置換] ボタン|有効期間: `Button`|  
+|TextIsAnchorCommand|メニューコントローラーの場合は、メニューのテキストが既定の (アンカー) コマンドから取得されます。 アンカーコマンドは、最後に選択またはラッチされたコマンドです。 このフラグが設定されていない場合、メニューコントローラーは独自のフィールドを使用し `MenuText` ます。 ただし、メニューコントローラーをクリックしても、そのコントローラーから最後に選択したコマンドが有効になります。<br /><br /> このフラグとフラグを組み合わせることをお勧めし `TextChanges` ます。<br /><br /> このフラグは、MenuController 型または Menucontroller ラッチ型のメニューにのみ適用されます。<br /><br /> 有効期間: `Menu`|  
+|TextMenuCtrlUseMenu|`MenuText`メニューコントローラーのフィールドを使用します。 既定のフィールドは `ButtonText` です。<br /><br /> 有効期間: `Button`|  
+|TextMenuUseButton|`ButtonText`メニューのフィールドを使用します。 既定のフィールドは、指定され `MenuText` ている場合はです。<br /><br /> 有効期間: `Button`|  
+|TextOnly|ツールバーまたはメニューにはテキストのみを表示しますが、アイコンが指定されている場合でもアイコンは表示しません。<br /><br /> 有効期間: `Button`|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Buttons 要素](../extensibility/buttons-element.md)|グループを提供します。[ボタン要素](../extensibility/button-element.md)要素。|  
-|[Menus 要素](../extensibility/menus-element.md)|VSPackage を実装するすべてのメニューを定義します。|  
+|[Buttons 要素](../extensibility/buttons-element.md)|[ボタン要素](../extensibility/button-element.md)の要素のグループを提供します。|  
+|[Menus 要素](../extensibility/menus-element.md)|VSPackage が実装するすべてのメニューを定義します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

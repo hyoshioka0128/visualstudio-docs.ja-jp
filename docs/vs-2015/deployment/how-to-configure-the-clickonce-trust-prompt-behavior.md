@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce 信頼プロンプトの動作の構成 |Microsoft Docs'
+title: '方法: ClickOnce 信頼プロンプトの動作を構成する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,26 +20,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150827"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>方法: ClickOnce 信頼プロンプトの動作を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-コントロールに、ClickOnce 信頼プロンプトを構成するには、エンドユーザーの Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション、コンソール アプリケーション、WPF ブラウザーなどの ClickOnce アプリケーションをインストールするオプションが提供されるかどうかアプリケーション、および Office ソリューション。 信頼プロンプトを構成するには、各エンドユーザーのコンピューターでレジストリ キーを設定します。  
+ClickOnce 信頼プロンプトを構成して、Windows フォームアプリケーション、Windows Presentation Foundation アプリケーション、コンソールアプリケーション、WPF ブラウザーアプリケーション、Office ソリューションなど、ClickOnce アプリケーションをインストールするオプションをエンドユーザーに付与するかどうかを制御できます。 信頼プロンプトを構成するには、各エンドユーザーのコンピューターでレジストリキーを設定します。  
   
- 次の表では、それぞれの 5 つのゾーン (インターネット、UntrustedSites、MyComputer、LocalIntranet、およびしません) に適用できる構成オプションを示します。  
+ 次の表は、5つのゾーン (Internet、UntrustedSites、MyComputer、LocalIntranet、および TrustedSites) のそれぞれに適用できる構成オプションを示しています。  
   
-|オプション|レジストリの設定値|説明|  
+|オプション|レジストリ設定値|説明|  
 |------------|----------------------------|-----------------|  
-|信頼プロンプトの表示を有効にします。|`Enabled`|エンドユーザーは、ClickOnce アプリケーションに信頼を付与できるように、ClickOnce 信頼プロンプトは表示です。|  
-|信頼プロンプトの表示を制限します。|`AuthenticodeRequired`|ClickOnce 信頼プロンプトが ClickOnce アプリケーションが、パブリッシャーを識別する証明書で署名されている場合にのみ表示されます。|  
-|信頼プロンプトを無効にします。|`Disabled`|明示的に信頼された証明書で署名されていないすべての ClickOnce アプリケーションでは、ClickOnce 信頼プロンプトは表示されません。|  
+|信頼プロンプトを有効にします。|`Enabled`|ClickOnce 信頼プロンプトが表示されるので、エンドユーザーは ClickOnce アプリケーションに信頼を与えることができます。|  
+|信頼プロンプトを制限します。|`AuthenticodeRequired`|ClickOnce 信頼プロンプトは、ClickOnce アプリケーションが発行者を識別する証明書で署名されている場合にのみ表示されます。|  
+|信頼プロンプトを無効にします。|`Disabled`|明示的に信頼された証明書で署名されていない ClickOnce アプリケーションに対しては、ClickOnce 信頼プロンプトは表示されません。|  
   
- 次の表では、各ゾーンの既定の動作を示します。 アプリケーションの列は、Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション、WPF ブラウザー アプリケーション、およびコンソール アプリケーションを指します。  
+ 次の表は、各ゾーンの既定の動作を示しています。 [アプリケーション] 列は、Windows フォームアプリケーション、Windows Presentation Foundation アプリケーション、WPF ブラウザーアプリケーション、コンソールアプリケーションを指します。  
   
 |ゾーン|アプリケーション|Office ソリューション|  
 |----------|------------------|----------------------|  
@@ -49,28 +49,28 @@ ms.locfileid: "68150827"
 |`Internet`|`Enabled`|`AuthenticodeRequired`|  
 |`UntrustedSites`|`Disabled`|`Disabled`|  
   
- 有効にする、制限、または、ClickOnce 信頼プロンプトを無効にすると、これらの設定をオーバーライドできます。  
+ ClickOnce 信頼プロンプトを有効にしたり、制限したり、無効にしたりすることで、これらの設定をオーバーライドできます。  
   
-## <a name="enabling-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトの有効化  
- エンドユーザーをインストールし、そのゾーンに由来する ClickOnce アプリケーションを実行するためのオプションが表示する場合は、ゾーンの信頼のプロンプトを有効にします。  
+## <a name="enabling-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトを有効にする  
+ ゾーンから取得した ClickOnce アプリケーションをインストールして実行するオプションをエンドユーザーに表示させる場合は、ゾーンの信頼プロンプトを有効にします。  
   
-#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリ エディターを使用して、ClickOnce 信頼プロンプトを有効にするには  
+#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリエディターを使用して ClickOnce 信頼プロンプトを有効にするには  
   
-1. レジストリ エディターを開きます。  
+1. レジストリエディターを開きます。  
   
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。  
   
-    2. **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
+    2. [ **名前** ] ボックスに「 `regedit` 」 (または `regedit32` 32 ビット Windows の場合) と入力し、[ **OK**] をクリックします。  
   
-2. 次のレジストリ キーを探します。  
+2. 次のレジストリキーを探します。  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel  
+     \ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel  
   
-     キーが存在しない場合は、それを作成します。  
+     キーが存在しない場合は、作成します。  
   
-3. 次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
+3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。  
   
-    |文字列値のサブキー|[値]|  
+    |文字列値サブキー|値|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -78,13 +78,13 @@ ms.locfileid: "68150827"
     |`LocalIntranet`|`Enabled`|  
     |`TrustedSites`|`Enabled`|  
   
-     Office ソリューションで`Internet`既定値を持つ`AuthenticodeRequired`と`UntrustedSites`、値を持つ`Disabled`します。 それ以外の場合、`Internet`既定値を持つ`Enabled`します。  
+     Office ソリューションの場合、には既定値があり、には値が設定されてい `Internet` `AuthenticodeRequired` `UntrustedSites` `Disabled` ます。 それ以外の場合、に `Internet` は既定値が設定さ `Enabled` れます。  
   
-#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 信頼プロンプト プログラムを有効にするには  
+#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 信頼プロンプトをプログラムで有効にするには  
   
-1. Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual Basic または Visual C# コンソールアプリケーションを作成します。  
   
-2. Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
+2. 編集するために、プログラム .vb または Program.cs ファイルを開き、次のコードを追加します。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -110,26 +110,26 @@ ms.locfileid: "68150827"
   
 3. アプリケーションをビルドして実行します。  
   
-## <a name="restricting-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトの表示を制限します。  
- 信頼プロンプトの表示を制限して、ソリューションは、ユーザーは、信頼の決定に求められる前に、既知の id が Authenticode 証明書で署名する必要があります。  
+## <a name="restricting-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトの制限  
+ 信頼のプロンプトを制限して、ユーザーが信頼の決定を求められる前に、既知の id を持つ Authenticode 証明書を使用してソリューションに署名する必要があるようにします。  
   
-#### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリ エディターを使用して ClickOnce 信頼プロンプトの表示を制限するには  
+#### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリエディターを使用して ClickOnce 信頼プロンプトを制限するには  
   
-1. レジストリ エディターを開きます。  
+1. レジストリエディターを開きます。  
   
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。  
   
-    2. **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
+    2. [ **名前** ] ボックスに「 `regedit` 」 (または `regedit32` 32 ビット Windows の場合) と入力し、[ **OK**] をクリックします。  
   
-2. 次のレジストリ キーを探します。  
+2. 次のレジストリキーを探します。  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel  
+     \ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel  
   
-     キーが存在しない場合は、それを作成します。  
+     キーが存在しない場合は、作成します。  
   
-3. 次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
+3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。  
   
-    |文字列値のサブキー|[値]|  
+    |文字列値サブキー|値|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -137,11 +137,11 @@ ms.locfileid: "68150827"
     |`LocalIntranet`|`AuthenticodeRequired`|  
     |`TrustedSites`|`AuthenticodeRequired`|  
   
-#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>プログラムで ClickOnce 信頼プロンプトの表示を制限するには  
+#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 信頼プロンプトをプログラムで制限するには  
   
-1. Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual Basic または Visual C# コンソールアプリケーションを作成します。  
   
-2. Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
+2. 編集するために、プログラム .vb または Program.cs ファイルを開き、次のコードを追加します。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -167,26 +167,26 @@ ms.locfileid: "68150827"
   
 3. アプリケーションをビルドして実行します。  
   
-## <a name="disabling-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトを無効にします。  
- 信頼プロンプトを無効にするには、エンドユーザーは、セキュリティ ポリシーで既に信頼されていないソリューションをインストールするオプションを指定しないようにします。  
+## <a name="disabling-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトを無効にする  
+ 信頼プロンプトを無効にして、エンドユーザーに対して、セキュリティポリシーでまだ信頼されていないソリューションをインストールするオプションがないようにすることができます。  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリ エディターを使用して、ClickOnce 信頼プロンプトを無効にするには  
+#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリエディターを使用して ClickOnce 信頼プロンプトを無効にするには  
   
-1. レジストリ エディターを開きます。  
+1. レジストリエディターを開きます。  
   
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。  
   
-    2. **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
+    2. [ **名前** ] ボックスに「 `regedit` 」 (または `regedit32` 32 ビット Windows の場合) と入力し、[ **OK**] をクリックします。  
   
-2. 次のレジストリ キーを探します。  
+2. 次のレジストリキーを探します。  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel  
+     \ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel  
   
-     キーが存在しない場合は、それを作成します。  
+     キーが存在しない場合は、作成します。  
   
-3. 次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
+3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。  
   
-    |文字列値のサブキー|[値]|  
+    |文字列値サブキー|値|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -194,11 +194,11 @@ ms.locfileid: "68150827"
     |`LocalIntranet`|`Disabled`|  
     |`TrustedSites`|`Disabled`|  
   
-#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>プログラムで、ClickOnce 信頼プロンプトを無効にするには  
+#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 信頼プロンプトをプログラムで無効にするには  
   
-1. Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual Basic または Visual C# コンソールアプリケーションを作成します。  
   
-2. Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
+2. 編集するために、プログラム .vb または Program.cs ファイルを開き、次のコードを追加します。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -225,14 +225,14 @@ ms.locfileid: "68150827"
   
 3. アプリケーションをビルドして実行します。  
   
-## <a name="see-also"></a>関連項目  
- [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
- [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)   
+## <a name="see-also"></a>参照  
+ [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)   
+ [ClickOnce アプリケーションのコードアクセスセキュリティ](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)   
- [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)   
- [方法: ClickOnce のセキュリティ設定を有効にします。](../deployment/how-to-enable-clickonce-security-settings.md)   
- [方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定します。](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [方法: ClickOnce アプリケーションのカスタム アクセス許可の設定](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [方法: 制限されたアクセス許可を使用して ClickOnce アプリケーションをデバッグします。](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [方法: ClickOnce アプリケーション用のクライアント コンピューターに信頼された発行元を追加します。](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [方法: アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [信頼されたアプリケーションの展開の概要](../deployment/trusted-application-deployment-overview.md)   
+ [方法: ClickOnce のセキュリティ設定を有効にする](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [方法: ClickOnce アプリケーションのセキュリティゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [方法: ClickOnce アプリケーション用の信頼された発行者をクライアントコンピューターに追加する](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [方法: アプリケーションマニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

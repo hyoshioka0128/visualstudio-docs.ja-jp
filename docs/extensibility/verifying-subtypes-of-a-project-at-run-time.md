@@ -1,5 +1,5 @@
 ---
-title: 実行時にプロジェクトのサブタイプを確認する |マイクロソフトドキュメント
+title: 実行時にプロジェクトのサブタイプを確認する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698181"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>実行時にプロジェクトのサブタイプを確認する
-カスタム プロジェクトのサブタイプに依存する VSPackage には、サブタイプが存在しない場合に正常に失敗できるように、そのサブタイプを検索するロジックを含める必要があります。 次の手順は、指定されたサブタイプの存在を確認する方法を示しています。
+カスタムプロジェクトのサブタイプに依存する VSPackage には、サブタイプが存在しない場合に適切に失敗するように、そのサブタイプを検索するロジックを含める必要があります。 次の手順は、指定されたサブタイプの存在を確認する方法を示しています。
 
-### <a name="to-verify-the-presence-of-a-subtype"></a>サブタイプの存在を確認するには
+### <a name="to-verify-the-presence-of-a-subtype"></a>サブタイプが存在するかどうかを確認するには
 
-1. VSPackage に次のコードを追加して、プロジェクト<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>オブジェクトとソリューション オブジェクトからプロジェクト階層を取得します。
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>VSPackage に次のコードを追加して、プロジェクトオブジェクトとソリューションオブジェクトからプロジェクト階層をオブジェクトとして取得します。
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ ms.locfileid: "80698181"
 
     ```
 
-2. インターフェイスに階層をキャスト<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>します。
+2. 階層をインターフェイスにキャストし <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> ます。
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,7 +48,7 @@ ms.locfileid: "80698181"
 
     ```
 
-3. を呼び出してプロジェクトの種類 GUID の一<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>覧を取得します。
+3. を呼び出して、プロジェクトの種類の Guid の一覧を取得し <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> ます。
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
@@ -68,5 +68,5 @@ ms.locfileid: "80698181"
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクトのサブタイプ](../extensibility/internals/project-subtypes.md)
-- [プロジェクト サブタイプの設計](../extensibility/internals/project-subtypes-design.md)
-- [プロジェクト のサブタイプによって拡張されたプロパティとメソッド](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+- [プロジェクトのサブタイプのデザイン](../extensibility/internals/project-subtypes-design.md)
+- [プロジェクトのサブタイプによって拡張されたプロパティとメソッド](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

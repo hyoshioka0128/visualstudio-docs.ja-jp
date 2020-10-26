@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983645"
 ---
 # <a name="creating-new-projects-and-solutions"></a>新しいプロジェクトとソリューションを作成する
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>テンプレートから新しいプロジェクトとソリューションを作成する
 
-ソリューションは、事前定義済みのテンプレートを利用していつでも作成できます。 ソリューションをこの方法で作成するには、 **[ファイル]、[新しいソリューション]** の順に選択し、プラットフォームを選択し、テンプレートを選択します。
+ソリューションは、事前定義済みのテンプレートを利用していつでも作成できます。 ソリューションをこの方法で作成するには、**[ファイル]、[新しいソリューション]** の順に選択し、プラットフォームを選択し、テンプレートを選択します。
 
 ![新しいソリューションを作成する](media/projects-and-solutions-image0.png)
 
@@ -24,7 +24,7 @@ ms.locfileid: "74983645"
 
 コンテキスト アクションまたはメニュー バーを利用し、ソリューション エクスプローラーを操作できます。
 
-新しいプロジェクトをソリューションに追加するには、ソリューション名を右クリックし、 **[追加]、[新しいプロジェクトの追加]** の順に選択し、[新しいプロジェクト] ダイアログを表示します。
+新しいプロジェクトをソリューションに追加するには、ソリューション名を右クリックし、**[追加]、[新しいプロジェクトの追加]** の順に選択し、[新しいプロジェクト] ダイアログを表示します。
 
 ![新しいプロジェクトを追加する](media/projects-and-solutions-image4.png)
 
@@ -38,6 +38,6 @@ Visual Studio のランディング ページには、最近使用したプロ�
 
 フィルター ボックスを利用してこの一覧を絞り込んだり、一覧から個々の項目を削除したりできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ソリューションとプロジェクトを作成する (Windows の Visual Studio)](/visualstudio/ide/creating-solutions-and-projects)

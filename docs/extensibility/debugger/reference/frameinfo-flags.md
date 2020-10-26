@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS |マイクロソフトドキュメント
+title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736803"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
-スタック フレーム オブジェクトに関して取得する情報を指定します。
+スタックフレームオブジェクトについて取得する情報を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -102,109 +102,109 @@ public enum enum_FRAMEINFO_FLAGS {
 
 ## <a name="fields"></a>フィールド
 `FIF_FUNCNAME`\
-フィールドを初期化/`m_bstrFuncName`使用します。
+フィールドを初期化/使用 `m_bstrFuncName` します。
 
 `FIF_RETURNTYPE`\
-フィールドを初期化/`m_bstrReturnType`使用します。
+フィールドを初期化/使用 `m_bstrReturnType` します。
 
 `FIF_ARGS`\
-フィールドを初期化/`m_bstrArgs`使用します。
+フィールドを初期化/使用 `m_bstrArgs` します。
 
 `FIF_LANGUAGE`\
-フィールドを初期化/`m_bstrLanguage`使用します。
+フィールドを初期化/使用 `m_bstrLanguage` します。
 
 `FIF_MODULE`\
-フィールドを初期化/`m_bstrModule`使用します。
+フィールドを初期化/使用 `m_bstrModule` します。
 
 `FIF_STACKRANGE`\
-および (スタック`m_addrMin`範囲`m_addrMax`) フィールドを初期化/使用します。
+`m_addrMin`および `m_addrMax` (スタック範囲) フィールドを初期化/使用します。
 
 `FIF_FRAME`\
-フィールドを初期化/`m_pFrame`使用します。
+フィールドを初期化/使用 `m_pFrame` します。
 
 `FIF_DEBUGINFO`\
-フィールドを初期化/`m_fHasDebugInfo`使用します。
+フィールドを初期化/使用 `m_fHasDebugInfo` します。
 
 `FIF_STALECODE`\
-フィールドを初期化/`m_fStaleCode`使用します。
+フィールドを初期化/使用 `m_fStaleCode` します。
 
 `FIF_ANNOTATEDFRAME`\
-フィールドを初期化/`m_fAnnotatedFrame`使用します。
+フィールドを初期化/使用 `m_fAnnotatedFrame` します。
 
 `FIF_DEBUG_MODULEP`\
-フィールドを初期化/`m_pModule`使用します。
+フィールドを初期化/使用 `m_pModule` します。
 
 `FIF_FUNCNAME_FORMAT`\
-関数名をフォーマットします。 結果はフィールドに返され`m_bstrFunName`、他のフィールドには入力されません。
+関数名を書式設定します。 結果はフィールドに返され、 `m_bstrFunName` 他のフィールドは入力されません。
 
 `FIF_FUNCNAME_RETURNTYPE`\
-戻り値の型を`m_bstrFuncName`フィールドに追加します。
+フィールドに戻り値の型を追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_ARGS`\
-フィールドに引数を`m_bstrFuncName`追加します。
+フィールドに引数を追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_LANGUAGE`\
-フィールドに言語を`m_bstrFuncName`追加します。
+フィールドに言語を追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_MODULE`\
-モジュール名をフィールドに追加`m_bstrFuncName`します。
+モジュール名をフィールドに追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_LINES`\
-フィールドに行数を`m_bstrFuncName`追加します。
+フィールドに行の数を追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_OFFSET`\
-行の`m_bstrFuncName`先頭からのオフセットをバイト単位でフィールドに追加します (`FIF_FUNCNAME_LINES`指定されている場合)。 指定`FIF_FUNCNAME_LINES`しない場合、または行番号が使用できない場合は、関数の先頭からのオフセットをバイト単位で加算します。
+`m_bstrFuncName`が指定されている場合、行の先頭からのオフセット (バイト単位) をフィールドに追加し `FIF_FUNCNAME_LINES` ます。 が指定されていない場合 `FIF_FUNCNAME_LINES` 、または行番号が使用できない場合は、関数の先頭からのオフセットをバイト単位で加算します。
 
 `FIF_FUNCNAME_ARGS_TYPES`\
-各関数引数の型をフィールドに`m_bstrFuncName`追加します。
+フィールドに各関数の引数の型を追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_ARGS_NAMES`\
-各関数引数の名前をフィールドに追加`m_bstrFuncName`します。
+各関数の引数の名前をフィールドに追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_ARGS_VALUES`\
-各関数引数の値をフィールドに`m_bstrFuncName`追加します。
+各関数の引数の値をフィールドに追加し `m_bstrFuncName` ます。
 
 `FIF_FUNCNAME_ARGS_ALL`\
-すべての引数の型、名前、および値をフィールドに`m_bstrFuncName`追加します。
+フィールドにすべての引数の型、名前、および値を追加し `m_bstrFuncName` ます。
 
 `FIF_ARGS_TYPES`\
-引数の型が取得され、書式設定されます。
+引数の型が取得および書式設定されます。
 
 `FIF_ARGS_NAMES`\
-引数名が取得され、フォーマットされます。
+引数名が取得および書式設定されます。
 
 `FIF_ARGS_VALUES`\
-引数値が取得され、書式設定されます。
+引数の値は取得および書式設定されます。
 
 `FIF_ARGS_ALL`\
-すべての引数の型、名前、および値を取得して書式を設定します。
+すべての引数の型、名前、および値を取得して書式設定します。
 
 `FIF_ARGS_NOFORMAT`\
-引数の書式を設定しないことを指定します (たとえば、引数リストの前後に左かっこと右かっこを追加したり、引数の間に区切り記号を追加したりしません)。
+引数が書式設定されていないことを指定します (たとえば、引数リストの始めかっこと終わりかっこを追加したり、引数の間に区切り記号を追加したりしないでください)。
 
 `FIF_ARGS_NO_FUNC_EVAL`\
-引数の値を取得するときに関数 (プロパティ) の評価を使用しないことを指定します。
+引数の値を取得するときに、関数 (プロパティ) の評価を使用しないことを指定します。
 
 `FIF_FILTER_NON_USER_CODE`\
-デバッグ エンジンは、非ユーザー コード フレームをフィルター処理して、含まれないようにします。
+デバッグエンジンは、非ユーザーコードフレームをフィルター処理して、含まれないようにします。
 
 `FIF_ARGS_NO_TOSTRING`\
-関数の引数`ToString()`を返すときに、関数の評価や書式設定を許可しないでください。
+関数 `ToString()` の引数を返すときに関数の評価または書式設定を許可しないでください。
 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
-フレーム情報は、ホスト プロセスではなく、ホストされるアプリ ドメインから取得する必要があります。
+フレーム情報は、ホストプロセスではなく、ホストされているアプリケーションドメインからのものである必要があります。
 
-## <a name="remarks"></a>Remarks
-これらのフラグは[、FrameInfo](../../../extensibility/debugger/reference/frameinfo.md)構造体または構造体で初期化されるフィールドを示すために[、列挙型](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)のメソッドと[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)メソッドに渡されます。
+## <a name="remarks"></a>解説
+これらのフラグは、[フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)の構造体または構造体で初期化されるフィールドを示すために、 [enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)メソッドと[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)メソッドに渡されます。
 
-これらのフラグは[、FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体のどのフィールドが使用され、構造体が戻されたときに有効かを示すためにも使用されます。 これらの値はビット単位`OR`で組み合わせることができる。
+これらのフラグは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造のどのフィールドが使用され、構造体が返されたときに有効であるかを示すためにも使用されます。 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

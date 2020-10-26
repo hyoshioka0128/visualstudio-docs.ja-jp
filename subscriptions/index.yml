@@ -10,12 +10,12 @@ metadata:
   ms.author: lank
   manager: lank
   ms.date: 12/04/2019
-  ms.openlocfilehash: bde855a1550f304df07c22262d7cb07094b5bc9e
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 98e3a19b2e06ee08b8e88dfb6ba15c8c8a5e027c
+  ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "74883834"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88801738"
 highlightedContent:
   items:
   - title: Visual Studio サブスクリプションの新機能
@@ -28,7 +28,7 @@ highlightedContent:
     itemType: how-to-guide
     url: ~/using-admin-portal.md
 conceptualContent:
-  title: はじめに
+  title: 作業開始
   items:
   - title: 特典の使用
     links:
@@ -97,7 +97,7 @@ additionalContent:
         url: ~/vs-visual-studio-app-center.md
       - text: Azure DevOps Server と CAL
         url: ~/vs-vsts.md
-      - text: Office 365 開発者サブスクリプション
+      - text: Microsoft 365 開発者サブスクリプション
         url: ~/vs-office-dev.md
       - text: Windows 開発者アカウント
         url: ~/vs-windows-dev.md

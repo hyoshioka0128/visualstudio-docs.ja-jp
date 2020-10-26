@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0f2f731b1ac0d87b59c7690d0cf57ade3570ed5f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547824"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:メンテナンスできないコードを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
@@ -36,7 +36,7 @@ ms.locfileid: "85547824"
  型またはメソッドの保守容易性指数が低い値です。
 
 ## <a name="rule-description"></a>ルールの説明
- 保守容易性のインデックスは、コード行、プログラムボリューム、およびサイクロマティック複雑性の各メトリックを使用して計算されます。 プログラムボリュームは、コード内の演算子とオペランドの数に基づいて、型またはメソッドを理解しづらいことを示す尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの尺度です。 コードメトリックスの詳細については[、「マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)」を参照してください。
+ 保守容易性のインデックスは、コード行、プログラムボリューム、およびサイクロマティック複雑性の各メトリックを使用して計算されます。 プログラムボリュームは、コード内の演算子とオペランドの数に基づいて、型またはメソッドを理解しづらいことを示す尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの尺度です。 コードメトリックスの詳細については [、「マネージコードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)」を参照してください。
 
  保守性の低いインデックスは、型またはメソッドの保守が困難であり、再設計するのが適切であることを示しています。
 
@@ -46,5 +46,5 @@ ms.locfileid: "85547824"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この警告は、型またはメソッドが、大きなサイズの場合や、型またはメソッドを分割できない場合でも保守が容易であると見なされる場合には除外されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [マネージコードの複雑さと保守性を測定する、](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) [保守性](../code-quality/maintainability-warnings.md)に関する警告

@@ -1,5 +1,5 @@
 ---
-title: Visual C の概要 |Microsoft Docs
+title: はじめに Visual C++ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -15,11 +15,11 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 4d600a174bbd456ac1eaf7e940a17026519261a4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681670"
 ---
-# <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>Visual Studio 2015 の Visual C の概要
-このコンテンツは、削除されました。 Visual Studio での Visual C の概要については、次を参照してください。 [Visual c ガイド付きツアー](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)します。
+# <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>Visual Studio 2015 の Visual C++ の概要
+このコンテンツは、削除されました。 Visual Studio での Visual C++ の概要については、 [Visual C++ ガイドツアー](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)」を参照してください。

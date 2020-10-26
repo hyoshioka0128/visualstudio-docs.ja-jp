@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugSymbolProvider:: GetLanguage |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719239"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-このメソッドは、デバッグ アドレスでコードをコンパイルするために使用された言語を取得します。
+このメソッドは、デバッグアドレスでコードをコンパイルするために使用された言語を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,19 +45,19 @@ int GetLanguage(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in][インターフェイス](../../../extensibility/debugger/reference/idebugaddress.md)によって表されるアドレス オブジェクト。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるアドレスオブジェクト。
 
 `pguidLanguage`\
-[アウト]言語を`GUID`指定するを返します。
+入出力 `GUID` 言語を指定するを返します。
 
 `pguidLanguageVendor`\
-[アウト]言語の`GUID`ベンダを指定するを返します。
+入出力 `GUID` 言語のベンダーを指定するを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- デバッグ エンジンは、正しい式エバリュエーターを選択するために必要な情報を取得するには、このメソッドを呼び出します。
+## <a name="remarks"></a>解説
+ デバッグエンジンは、このメソッドを呼び出して、正しい式エバリュエーターを選択するために必要な情報を取得します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

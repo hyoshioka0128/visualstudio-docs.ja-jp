@@ -1,18 +1,18 @@
 ---
 title: パフォーマンスを向上させるためのヒント
-ms.date: 08/14/2018
+ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307251"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427003"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
@@ -82,7 +82,7 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
 ### <a name="managed-language-service-roslyn"></a>マネージド言語サービス (Roslyn)
 
-.NET Compiler Platform ("Roslyn") のパフォーマンスに関する考慮事項については、「[Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)」 (大きいソリューションでのパフォーマンスの考慮事項) をご覧ください。
+.NET Compiler Platform ("Roslyn") のパフォーマンスに関する考慮事項については、「[Performance considerations for large solutions](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)」 (大きいソリューションでのパフォーマンスの考慮事項) をご覧ください。
 
 - **完全なソリューション分析を無効にする**
 
@@ -117,11 +117,25 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
    ::: moniker-end
 
+- **マップ モードの無効化**
+
+    "[**マップ モード**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes)" では、コード行がスクロール バーに縮小表示されます。 マップ モードは既定で有効になっています。
+
+    マップ モードを無効にするには、 **[ツール]** 、 **[オプション]** 、 **[テキスト エディター]** 、 **[すべての言語]** 、 **[スクロール バー]** の順に進み、 **[ビヘイビアー]** セクションで **[垂直スクロール バーでのマップ モードの使用]** オプションの選択を解除します。
+
+- **右端での折り返しの無効化**
+
+    "[**右端で折り返す**](./reference/how-to-manage-word-wrap-in-the-editor.md)" では、長いコード行のうち、コード エディター ウィンドウの現在の幅からはみ出す部分が表示されます。 [右端で折り返す] は既定でオンです。
+
+    現在作業中のプロジェクトの右端で折り返しを無効にするには、 **[編集]** 、 **[詳細]** 、 **[右端で折り返す]** の順に進みます。 (同じメニュー コマンドを使用し、この設定を切り替えることができます。)
+
+    すべてのプロジェクトの右端折り返しを無効にするには、 **[ツール]** 、 **[オプション]** 、 **[全般]** 、 **[テキスト エディター]** 、 **[すべての言語]** 、 **[全般]** の順に進み、 **[設定]** セクションで **[右端で折り返す]** オプションの選択を解除します。
+
 - **XAML デザイナーを無効にする**
 
     XAML デザイナーは既定で有効にされますが、 *.xaml* ファイルを開いた場合にのみリソースを消費します。 XAML ファイルを使う場合でも、デザイナー機能が必要ないときは、この機能を無効にして、若干のメモリを解放できます。
 
-    **XAML デザイナー**を無効にするには、 **[ツール]**  >  **[オプション]**  >  **[XAML デザイナー]**  >  **[XAML デザイナーを有効にする]** の順に選択し、オプションをオフにします。
+    XAML デザイナーを無効にするには、 **[ツール]** 、 **[オプション]** 、 **[XAML デザイナー]** 、 **[XAML デザイナーを有効にする]** の順に選択し、オプションをオフにします。
 
 - **ワークロードを削除する**
 
@@ -131,13 +145,13 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
 CLR では、ガベージ コレクションのメモリ管理システムが使われます。 このシステムでは、不要になったオブジェクトによってメモリが使われることがあります。 この状態は一時的なものです。ガベージ コレクターは、そのパフォーマンスとリソース使用のヒューリスティックに基づいて、このメモリを解放します。 Visual Studio のホット キーを使って、CLR に未使用のメモリを強制的に回収させることができます。 膨大な量のガベージが収集を待っている場合に、ガベージ コレクションを強制すると、*devenv.exe* プロセスのメモリ使用量の低下を**タスク マネージャー**で確認できます。 この方法を使う必要はほとんどありません。 ただし、コストのかかる操作 (フル ビルド、デバッグ セッション、ソリューション オープン イベントなど) が完了した後は、プロセスによって実際に使われていたメモリの量を確認するのに役立ちます。 Visual Studio にはマネージドとネイティブが混在しているので、ネイティブ アロケーターとガベージ コレクターの間での限られたメモリ リソースの競合が発生する可能性があります。 大量のメモリが使われている状況では、ガベージ コレクターを強制的に実行すると役に立つことがあります。
 
-ガベージ コレクションを強制的に行うには、ホット キー **Ctrl**+**Alt**+**Shift**+**F12**、**Ctrl**+**Alt**+**Shift**+**F12** (2 回押します) を使います。
+ガベージ コレクションを強制的に行うには、ホットキー**Ctrl**+**Alt**+**Shift**+**F12**、**Ctrl**+**Alt**+**Shift**+**F12** (2 回押します) を使います。
 
 ベージ コレクションを強制するとシナリオが確実に動くようになる場合、この動作はバグである可能性があるので、Visual Studio のフィードバック ツールを使ってレポートを提出してください。
 
 CLR ガベージ コレクターについては、「[ガベージ コレクションの基礎](/dotnet/standard/garbage-collection/fundamentals)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [Visual Studio のパフォーマンスの最適化](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio のパフォーマンスを最適化する](../ide/optimize-visual-studio-performance.md)
 - [大規模なソリューションを高速で読み込む (Visual Studio ブログ)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

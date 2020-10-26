@@ -13,27 +13,27 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caff42c2e203151c6bab7d50b41744c2469ab3c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151624"
 ---
 # <a name="evaluating-expressions"></a>式の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-式は、自動変数、ウォッチ、クイック ウォッチ、またはイミディ エイト ウィンドウから下へ渡された文字列から作成されます。 式が評価され、変数または引数とその値の型と名前を含む印刷文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。  
+式は、[自動変数]、[ウォッチ]、[クイックウォッチ]、または [イミディエイト] ウィンドウから渡された文字列から作成されます。 式が評価されると、変数または引数の名前と型、およびその値を含む、印刷可能な文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。  
   
 ## <a name="implementation"></a>実装  
- プログラムがブレークポイントで停止した場合、式が評価されます。 式自体はによって表される、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスでは、解析された式をバインドし、指定された式の評価のコンテキスト内で評価できるように準備を表します。 スタック フレーム (DE) デバッグ エンジンを実装することで提供する式の評価コンテキストの決定、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。  
+ 式は、ブレークポイントでプログラムが停止したときに評価されます。 式自体は、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスによって表されます。これは、指定された式の評価コンテキスト内で、バインドおよび評価の準備ができている解析済みの式を表します。 スタックフレームは、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) インターフェイスを実装することによってデバッグエンジン (DE) が提供する式の評価コンテキストを決定します。  
   
- ユーザー文字列の指定と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス、デバッグ エンジン (DE) を取得できます、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイス ユーザー文字列を渡すことによって、 [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッド。 返される IDebugExpression2 インターフェイスには、評価のための準備が解析された式が含まれています。  
+ ユーザー文字列と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイスが指定されている場合、デバッグエンジン (DE) は、ユーザー文字列を[IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドに渡すことによって[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを取得できます。 返される IDebugExpression2 インターフェイスには、評価のために準備された解析済みの式が含まれます。  
   
- `IDebugExpression2` 、インターフェイス、DE は同期または非同期の式の評価を式の値を取得できますを使用して[IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)または[IDebugExpression2:。EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)します。 変数または引数の型と名前と共に、この値は、表示するため、IDE に送信されます。 値、名前、型がで表される、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス。  
+ インターフェイスを使用して `IDebugExpression2` 、DE は、 [IDebugExpression2:: EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) または [IDebugExpression2:: evaluateasync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)を使用して、同期または非同期の式の評価によって式の値を取得できます。 この値は、変数または引数の名前および型と共に IDE に送信され、表示されます。 値、名前、および型は、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) インターフェイスによって表されます。  
   
- 式の評価を有効にする、DE を実装する必要があります、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。 同期および非同期の評価の実装が必要に、 [IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)メソッド。  
+ 式の評価を有効にするには、DE で [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスと [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) インターフェイスを実装する必要があります。 同期と非同期のどちらの評価でも、 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) メソッドの実装が必要です。  
   
-## <a name="see-also"></a>関連項目  
- [スタック フレーム](../../extensibility/debugger/stack-frames.md)   
+## <a name="see-also"></a>参照  
+ [スタックフレーム](../../extensibility/debugger/stack-frames.md)   
  [式の評価コンテキスト](../../extensibility/debugger/expression-evaluation-context.md)   
  [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)

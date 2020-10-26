@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45e664b153c4d643d8fbe8f1cefb207e0a76e18e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204875"
 ---
-# <a name="seekstart"></a>SEEK_START
+# <a name="seek_start"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-[逆アセンブル] ストリームのシークの開始元の位置を指定します。  
+逆アセンブリストリームでシークを開始する位置を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -49,31 +49,31 @@ public enum enum_SEEK_START { 
   
 ## <a name="members"></a>メンバー  
  SEEK_START_BEGIN  
- 現在のドキュメントの先頭に検索を開始します。  
+ 現在のドキュメントの先頭からシークを開始します。  
   
  SEEK_START_END  
- 現在のドキュメントの最後にシークが開始されます。  
+ 現在のドキュメントの末尾からシークを開始します。  
   
  SEEK_START_CURRENT  
- 現在のドキュメントの現在位置にある検索を開始します。  
+ 現在のドキュメントの現在位置からシークを開始します。  
   
  SEEK_START_CODECONTEXT  
- 現在のドキュメントの指定したコードのコンテキストではシークを開始します。  
+ 現在のドキュメントの指定されたコードコンテキストでシークを開始します。  
   
  SEEK_START_CODELOCID  
- 指定したコードの場所 id で検索を開始します。 コードの場所の識別子が呼び出すことによって取得した[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)します。  
+ 指定されたコード位置識別子でシークを開始します。 コードの場所の識別子は、 [Getcurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)を呼び出すことによって取得されます。  
   
-## <a name="remarks"></a>Remarks  
- 引数として渡される、[シーク](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)メソッドに引数として渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [シーク](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [弁護士](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ラジオ ボタンを使用してドキュメントのグラフを更新します。'
+title: 'チュートリアル: オプションボタンを使用してドキュメントのグラフを更新する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981050"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>チュートリアル: ラジオ ボタンを使用してドキュメントのグラフを更新します。
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>チュートリアル: オプションボタンを使用してドキュメントのグラフを更新する
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでオプション ボタンを使用して、文書上でグラフのスタイルを選択するオプションをユーザーに提供する方法を示します。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "62981050"
 
 - オプション選択時のグラフ スタイルの変更
 
-  完成したサンプルとして結果を参照してくださいで Word コントロールのサンプルを参照してください。 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。
+  完成したサンプルとして結果を表示するには、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の Word コントロールのサンプルを参照してください。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -49,75 +49,75 @@ ms.locfileid: "62981050"
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. 名前の Word 文書プロジェクトを作成**My Chart Options**します。 ウィザードで、次のように選択します。**新しい文書を作成**です。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **My Chart Options**という名前の Word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     デザイナーで新しい Word 文書を開き、 **My Chart Options**プロジェクトを**ソリューション エクスプ ローラー**します。
+     デザイナーで新しい Word 文書が開き、 **[My Chart Options]** プロジェクトが **ソリューションエクスプローラー**に追加されます。
 
-## <a name="add-a-chart-to-the-document"></a>ドキュメントにグラフを追加します。
+## <a name="add-a-chart-to-the-document"></a>ドキュメントにグラフを追加する
 
 ### <a name="to-add-a-chart"></a>グラフを追加するには
 
-1. リボンで、Visual Studio デザイナーでホストされている Word 文書のクリックして、**挿入**タブ。
+1. Visual Studio デザイナーでホストされている Word 文書で、リボンの [ **挿入** ] タブをクリックします。
 
-2. **テキスト**グループで、、**オブジェクトの挿入**ドロップダウン ボタン、およびクリック**オブジェクト**します。
+2. [ **テキスト** ] グループで、[ **オブジェクトの挿入** ] ドロップダウンボタンをクリックし、[ **オブジェクト**] をクリックします。
 
-     **オブジェクト** ダイアログ ボックスが表示されます。
+     [ **オブジェクト** ] ダイアログボックスが表示されます。
 
-3. **オブジェクトの種類**ボックスの一覧、**新規作成**] タブで [ **Microsoft Graph グラフ**順にクリックします**OK**します。
+3. [**新規作成**] タブの [**オブジェクトの種類**] ボックスの一覧で [ **Microsoft Graph グラフ**] を選択し、[ **OK**] をクリックします。
 
-     ドキュメント内のカーソル位置にグラフを追加し、**データシート**ウィンドウは、既定のデータが表示されます。
+     挿入ポイントでドキュメントにグラフが追加され、既定のデータと共に [ **データシート** ] ウィンドウが表示されます。
 
-4. 閉じる、**データシート**ウィンドウで、グラフの既定値をそのまま使用や、グラフからフォーカスを移動するためにドキュメント内をクリックします。
+4. グラフの既定値をそのまま使用するには、[ **データシート** ] ウィンドウを閉じ、ドキュメント内をクリックしてグラフからフォーカスを移動します。
 
-5. グラフを右クリックし、クリックして**オブジェクトの書式設定**します。
+5. グラフを右クリックし、[オブジェクトの **書式設定**] をクリックします。
 
-6. **レイアウト**のタブ、**オブジェクトの書式設定**ダイアログ ボックスで、**正方形** をクリック**OK**。
+6. [**オブジェクトの書式設定**] ダイアログボックスの [**レイアウト**] タブで、[**四角**] を選択し、[ **OK**] をクリックします。
 
 ## <a name="add-a-user-control-to-the-project"></a>プロジェクトにユーザー コントロールを追加する
  文書のオプション ボタンは、既定では 1 つしか指定できないようになっています。 オプション ボタンをユーザー コントロールに追加し、選択を制御するためのコードを記述することによって、オプション ボタンを機能させることができます。
 
 ### <a name="to-add-a-user-control"></a>ユーザー コントロールを追加するには
 
-1. 選択、 **My Chart Options**プロジェクト**ソリューション エクスプ ローラー**します。
+1. **ソリューションエクスプローラー**で **[My Chart Options** ] プロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-3. **新しい項目の追加**ダイアログ ボックスで、をクリックして**ユーザー コントロール**、コントロールに名前を**ChartOptions**  をクリック**追加**します。
+3. [ **新しい項目の追加** ] ダイアログボックスで、[ **ユーザーコントロール**] をクリックし、コントロールに **ChartOptions** という名前を指定して、[ **追加**] をクリックします。
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>Windows フォームのコントロールをユーザー コントロールへ追加するには
 
-1. ユーザー コントロールがデザイナーで表示されていない場合は、ダブルクリック**ChartOptions**で**ソリューション エクスプ ローラー**します。
+1. ユーザーコントロールがデザイナーに表示されていない場合は、**ソリューションエクスプローラー**で [ **ChartOptions** ] をダブルクリックします。
 
-2. **コモン コントロール**のタブ、**ツールボックス**、1 つ目のドラッグ**ラジオ ボタン**ユーザー コントロールにし、次のプロパティを変更します。
+2. **ツールボックス**の [**コモンコントロール**] タブから、最初の**オプションボタン**コントロールをユーザーコントロールにドラッグし、次のプロパティを変更します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
-    |**Name**|**付いた円柱グラフ**|
+    |**名前**|**columnChart**|
     |**Text**|**縦棒グラフ**|
 
-3. 1 秒あたりの追加**ラジオ ボタン**ユーザーを制御して、次のプロパティを変更します。
+3. 2番目の **オプションボタン** をユーザーコントロールに追加し、次のプロパティを変更します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
-    |**Name**|**barChart**|
+    |**名前**|**barChart**|
     |**Text**|**横棒グラフ**|
 
-4. 3 つ目の追加**ラジオ ボタン**ユーザーを制御して、次のプロパティを変更します。
+4. 3番目の **オプションボタン** をユーザーコントロールに追加し、次のプロパティを変更します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
-    |**Name**|**です折れ線グラフ**|
+    |**名前**|**lineChart**|
     |**Text**|**折れ線グラフ**|
 
-5. 4 番目の追加**ラジオ ボタン**ユーザーを制御して、次のプロパティを変更します。
+5. 4番目の **オプションボタン** をユーザーコントロールに追加し、次のプロパティを変更します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
-    |**Name**|**areaBlockChart**|
-    |**Text**|**領域ブロックのグラフ**|
+    |**名前**|**areaBlockChart**|
+    |**Text**|**Area Block Chart**|
 
 ## <a name="add-references"></a>参照の追加
- ドキュメントのユーザー コントロールからグラフにアクセスするへの参照をいる必要があります、`Microsoft.Office.Interop.Graph`プロジェクト内のアセンブリ。
+ ドキュメントのユーザーコントロールからグラフにアクセスするには、プロジェクト内のアセンブリへの参照が必要 `Microsoft.Office.Interop.Graph` です。
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Microsoft.Office.Interop.Graph アセンブリへの参照を追加するには
 
@@ -125,14 +125,14 @@ ms.locfileid: "62981050"
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-2. **.NET**  タブで  **Microsoft.Office.Interop.Graph**  をクリック**OK**します。 アセンブリの 14.0.0.0 バージョンを選択します。
+2. [ **.Net** ] タブで、[ **Microsoft.** ..] を選択し、[ **OK**] をクリックします。 アセンブリの 14.0.0.0 バージョンを選択します。
 
-## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>ラジオ ボタンを選択すると、グラフのスタイルを変更します。
+## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>オプションボタンが選択されているときにグラフのスタイルを変更する
  ボタンを正しく動作させるために、ユーザー コントロールにパブリック イベントを作成し、選択の種類を設定するプロパティを追加して、各オプション ボタンの `CheckedChanged` イベントにプロシージャを作成します。
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>ユーザー コントロールにイベントおよびプロパティを作成するには
 
-1. **ソリューション エクスプ ローラー**ユーザー コントロールを右クリックし、クリックして**コードの表示**します。
+1. **ソリューションエクスプローラー**で、ユーザーコントロールを右クリックし、[コードの**表示**] をクリックします。
 
 2. `SelectionChanged` イベントと `Selection` プロパティを作成するコードを `ChartOptions` クラスに追加します。
 
@@ -161,26 +161,26 @@ ms.locfileid: "62981050"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]
 
-5. C# では、オプション ボタンに対してイベント ハンドラーを追加する必要があります。 このコードを、`ChartOptions` への呼び出しの後で `InitializeComponent` コンストラクターに追加できます。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+5. C# では、オプション ボタンに対してイベント ハンドラーを追加する必要があります。 このコードを、`ChartOptions` への呼び出しの後で `InitializeComponent` コンストラクターに追加できます。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
 
-## <a name="add-the-user-control-to-the-document"></a>ユーザー コントロールをドキュメントに追加します。
- 新しいユーザー コントロールが自動的に追加するソリューションをビルドするときに、**ツールボックス**します。 コントロールをドラッグすることができますし、**ツールボックス**をドキュメントにします。
+## <a name="add-the-user-control-to-the-document"></a>ドキュメントにユーザーコントロールを追加する
+ ソリューションをビルドすると、新しいユーザーコントロールが [ **ツールボックス**] に自動的に追加されます。 その後、 **ツールボックス** からドキュメントにコントロールをドラッグできます。
 
 ### <a name="to-add-the-user-control-your-document"></a>文書にユーザー コントロールを追加するには
 
 1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-     **ChartOptions**ユーザー コントロールに追加されます、**ツールボックス**します。
+     **ChartOptions**ユーザーコントロールが**ツールボックス**に追加されます。
 
-2. **ソリューション エクスプ ローラー**を右クリックして**ThisDocument.vb**または**ThisDocument.cs**、 をクリックし、**ビュー デザイナー**します。
+2. **ソリューションエクスプローラー**で、[ **ThisDocument** ] または [ **ThisDocument.cs**] を右クリックし、[**デザイナーの表示**] をクリックします。
 
-3. ドラッグ、`ChartOptions`コントロールから、**ツールボックス**ドキュメントにします。
+3. コントロールを [ `ChartOptions` **ツールボックス** ] から文書にドラッグします。
 
-     **プロパティ**ウィンドウで、名前にしたコントロールをドキュメントに追加`ChartOptions1`します。
+     [ **プロパティ** ] ウィンドウで、ドキュメントに追加したコントロールに名前を指定し  `ChartOptions1` ます。
 
-## <a name="change-the-chart-type"></a>グラフの種類を変更します。
+## <a name="change-the-chart-type"></a>グラフの種類を変更する
  ユーザー コントロールで選択したオプションに基づいてグラフの種類を変更するイベント ハンドラーを作成します。
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>文書に表示されるグラフの種類を変更するには
@@ -199,20 +199,20 @@ ms.locfileid: "62981050"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
 2. オプション ボタンを選択するには
 
 3. 選択した内容に合わせてグラフのスタイルが変わることを確認します。
 
 ## <a name="next-steps"></a>次の手順
- ここでは、次のタスクを行います。
+ ここでは、次の作業を行います。
 
-- ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「[チュートリアル:ボタンを使用して、ドキュメント内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)します。
+- ボタンを使用してテキスト ボックスへデータを挿入する。 詳細については、「 [チュートリアル: ボタンを使用してドキュメント内のテキストボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)する」を参照してください。
 
-- コンボ ボックスからスタイルを選択して書式を変更する。 詳細については、「[チュートリアル:CheckBox コントロールを使用して書式設定の変更ドキュメント](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)します。
+- コンボ ボックスからスタイルを選択して書式を変更する。 詳細については、「 [チュートリアル: CheckBox コントロールを使用してドキュメントの書式を変更する](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
-- [Office ドキュメントに Windows フォーム コントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office ドキュメントの Windows フォームコントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

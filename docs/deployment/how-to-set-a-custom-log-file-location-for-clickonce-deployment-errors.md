@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382173"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>方法: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]すべての配置のアクティブ化ログファイルを保持します。 これらのログには、展開のインストールと初期化に関連するエラーが記録さ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] れます。 既定では、は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] デプロイのアクティブ化ごとに1つのログファイルを作成します。 これらのログファイルは、Temporary Internet Files フォルダーに格納されます。 アクティブ化エラーが発生すると、展開のログファイルがユーザーに表示され、ユーザーは結果のエラーダイアログボックスで [**詳細**] をクリックします。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] すべての配置のアクティブ化ログファイルを保持します。 これらのログには、展開のインストールと初期化に関連するエラーが記録さ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] れます。 既定では、は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] デプロイのアクティブ化ごとに1つのログファイルを作成します。 これらのログファイルは、Temporary Internet Files フォルダーに格納されます。 アクティブ化エラーが発生すると、展開のログファイルがユーザーに表示され、ユーザーは結果のエラーダイアログボックスで [ **詳細** ] をクリックします。
 
  レジストリエディター (**regedit.exe**) を使用してカスタムログファイルのパスを設定することにより、特定のクライアントのこの動作を変更できます。 この場合、は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 1 つのファイル内のすべての配置について、アクティブ化の成功と失敗をログに記録します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "85382173"
 
 ### <a name="to-set-a-custom-log-file-location"></a>カスタムログファイルの場所を設定するには
 
-1. **Regedit.exe** を開きます。
+1. **Regedit.exe**を開きます。
 
 2. ノードに移動 `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment` します。
 

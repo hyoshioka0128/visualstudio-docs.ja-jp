@@ -18,14 +18,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848300c54800e229ee1f487fc415bad45d982a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656823"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>ワークフロー デザイナーを使用したアプリケーションの開発
-[!INCLUDE[wfd1](../includes/wfd1-md.md)]は、[!INCLUDE[wf](../includes/wf-md.md)] 開発環境内でホストされる [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 内の [!INCLUDE[vs2010](../includes/vs2010-md.md)] アプリケーションをグラフィカルに作成してデバッグするためのビジュアルなデザイナーおよびデバッガーです。 テンプレートおよびアクティビティ デザイナーを使用して、複合ワークフロー アプリケーション、アクティビティ ライブラリ、または [!INCLUDE[indigo1](../includes/indigo1-md.md)] サービスを作成できます。 ワークフローの [!INCLUDE[crabout](../includes/crabout-md.md)]、 [ &#91;Windows Workflow Foundation .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)を参照してください。
+[!INCLUDE[wfd1](../includes/wfd1-md.md)]は、[!INCLUDE[wf](../includes/wf-md.md)] 開発環境内でホストされる [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 内の [!INCLUDE[vs2010](../includes/vs2010-md.md)] アプリケーションをグラフィカルに作成してデバッグするためのビジュアルなデザイナーおよびデバッガーです。 テンプレートおよびアクティビティ デザイナーを使用して、複合ワークフロー アプリケーション、アクティビティ ライブラリ、または [!INCLUDE[indigo1](../includes/indigo1-md.md)] サービスを作成できます。 [!INCLUDE[crabout](../includes/crabout-md.md)] ワークフローについては、 [Windows Workflow Foundation &#91; .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)を参照してください。
 
  以前のバージョンの[!INCLUDE[wfd2](../includes/wfd2-md.md)]に追加された、この新バージョンの[!INCLUDE[wfd2](../includes/wfd2-md.md)]のデザイン機能を次に示します。
 
@@ -43,23 +43,23 @@ ms.locfileid: "72656823"
 
 - [!INCLUDE[wfd2](../includes/wfd2-md.md)] の外側での[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の再ホストが、以前のバージョンに比べて大幅に簡略化され、数行のコードのみになりました。
 
-- 新しい <xref:System.Activities.Statements.Flowchart> アクティビティとその[フローチャート](../workflow-designer/flowchart-activity-designer.md)を使用すると、使い慣れたフローチャートモデリングスタイルを使用してプログラムフローを視覚化できます。
+- 新しい <xref:System.Activities.Statements.Flowchart> アクティビティとその [フローチャート](../workflow-designer/flowchart-activity-designer.md) を使用すると、使い慣れたフローチャートモデリングスタイルを使用してプログラムフローを視覚化できます。
 
 - メッセージング アクティビティが強化されているため、完全な宣言型の (コードなし) [!INCLUDE[indigo1](../includes/indigo1-md.md)] サービスを記述できます。
 
-- サービス参照の追加. **.** 機能を使用すると、Web サービスにアクセスするアクティビティを自動的に生成できます。
+- サービス参照の追加.. **.** 機能を使用すると、Web サービスにアクセスするアクティビティを自動的に生成できます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [ワークフローデザイナーの使用](../workflow-designer/using-the-workflow-designer.md)組み込みのデザイナーを使用して新しいアクティビティおよびワークフロープロジェクトを作成する方法と、デザイナーによって提供される他のツールを使用して引数、変数、式、インポート、および階層リンクナビゲーションを処理する方法を示します。
+ [ワークフローデザイナーの使用](../workflow-designer/using-the-workflow-designer.md) 組み込みのデザイナーを使用して新しいアクティビティおよびワークフロープロジェクトを作成する方法と、デザイナーによって提供される他のツールを使用して引数、変数、式、インポート、および階層リンクナビゲーションを処理する方法を示します。
 
- [アクティビティデザイナーの使用](../workflow-designer/using-the-activity-designers.md)システムによって提供されるアクティビティ、テンプレート、およびそのデザイナーのカテゴリについて説明します。
+ [アクティビティデザイナーの使用](../workflow-designer/using-the-activity-designers.md) システムによって提供されるアクティビティ、テンプレート、およびそのデザイナーのカテゴリについて説明します。
 
- [ワークフローデザイナーを使用したワークフローのデバッグ](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)従来のデバッグ手順を実行する方法と、XAML と式をデバッグする方法について説明します。
+ [ワークフローデザイナーを使用したワークフローのデバッグ](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) 従来のデバッグ手順を実行する方法と、XAML と式をデバッグする方法について説明します。
 
- [ワークフローデザイナー UI のヘルプ](../workflow-designer/workflow-designer-ui-help.md)@No__t_1 によって提供されるダイアログボックスの状況依存のヘルプトピック、およびデザイナーシェル機能、キーボードショートカット、およびエラーメッセージに関するガイダンスが含まれています。
+ [ワークフローデザイナー UI のヘルプ](../workflow-designer/workflow-designer-ui-help.md) によって提供されるダイアログボックスの状況依存のヘルプトピック、 [!INCLUDE[wfd1](../includes/wfd1-md.md)] およびデザイナーシェル機能、キーボードショートカット、およびエラーメッセージに関するガイダンスが含まれています。
 
- [.Net 3.0 または .net 3.5 Framework を対象とするワークフローアプリケーションの開発](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)@No__t_1 または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とする従来のデザイナーの使用に関するガイダンスが含まれています。
+ [.Net 3.0 または .net 3.5 Framework を対象とするワークフローアプリケーションの開発](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) またはを対象とする従来のデザイナーの使用に関するガイダンスが含まれてい [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ます。
 
- [デザイナーの再&#91;ホスト WF&#93;サンプル](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)このサンプルでは、デザイナーを含む WPF レイアウトを作成する方法を示します。
+ [デザイナーのホスト &#91;WF サンプル&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) このサンプルでは、デザイナーを含む WPF レイアウトを作成する方法を示します。
 
- [カスタムアクティビティデザイナー](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)このセクションには、ワークフローデザイナーでの表示にカスタムデザイナーを使用するアクティビティサンプルが含まれています。
+ [カスタムアクティビティデザイナー](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075) このセクションには、ワークフローデザイナーでの表示にカスタムデザイナーを使用するアクティビティサンプルが含まれています。

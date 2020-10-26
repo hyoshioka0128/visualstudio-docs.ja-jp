@@ -1,5 +1,5 @@
 ---
-title: マネージ コードのデバッグ |Microsoft Docs
+title: マネージド コードのデバッグ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,20 +22,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691440"
 ---
 # <a name="debugging-managed-code"></a>マネージド コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ここでは、マネージド アプリケーションに共通するデバッグの問題と手法について説明します。マネージド アプリケーションは、Visual Basic、C#、C++ など、共通言語ランタイムをターゲットにした言語で記述されたアプリケーションです。 ここでは、高度な手法について説明します。 詳細については、次を参照してください。 [、デバッガーを使用して](../debugger/debugger-basics.md)します。  
+ここでは、マネージド アプリケーションに共通するデバッグの問題と手法について説明します。マネージド アプリケーションは、Visual Basic、C#、C++ など、共通言語ランタイムをターゲットにした言語で記述されたアプリケーションです。 ここでは、高度な手法について説明します。 詳細については、「 [デバッガーの使用](../debugger/debugger-basics.md)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [出力ウィンドウの診断メッセージ](../debugger/diagnostic-messages-in-the-output-window.md)  
- <xref:System.Diagnostics.Debug> クラスと <xref:System.Diagnostics.Trace> クラスについて説明します。このクラスを使用して、**[出力]** ウィンドウに出力されるランタイム メッセージを記述できます。 Debug クラスと Trace クラスに含まれている出力メソッドを使用すると、実行の中断を伴わない情報出力、および指定した条件が満たされなかった場合に実行の中断を伴う情報出力ができます。  
+ <xref:System.Diagnostics.Debug> クラスと <xref:System.Diagnostics.Trace> クラスについて説明します。このクラスを使用して、 **[出力]** ウィンドウに出力されるランタイム メッセージを記述できます。 Debug クラスと Trace クラスに含まれている出力メソッドを使用すると、実行の中断を伴わない情報出力、および指定した条件が満たされなかった場合に実行の中断を伴う情報出力ができます。  
   
  [マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)  
  マネージド コードのアサーションについて説明し、`Assert` メソッドの引数として指定された条件をテストします。 ここでは、サンプル コード、<xref:System.Diagnostics.Debug> クラスと <xref:System.Diagnostics.Trace> クラスのメソッドの使用に関する情報、デバッグ バージョンとリリース バージョンのコードの注意事項、副作用、アサートの引数、アサートの動作のカスタマイズ、および構成ファイルについても説明します。  
@@ -49,7 +49,7 @@ ms.locfileid: "65691440"
  [OnStart メソッドのデバッグ](../debugger/how-to-debug-the-onstart-method.md)  
  マネージド Windows サービスの `OnStart` メソッドのデバッグに使用できるコード例を紹介します。 Windows サービスの `OnStart` メソッドをデバッグするには、サービスをシミュレートする数行のコードを追加する必要があります。  
   
- [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
+ [混合モードのデバッグ](../debugger/debugging-mixed-mode-applications.md)  
  混合モード アプリケーションのデバッグについて説明します。 これは、ネイティブ コードとマネージド コードを組み合わせたアプリケーションです。  
   
  [エラー: システム上でカーネル デバッガーが有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
@@ -77,7 +77,7 @@ ms.locfileid: "65691440"
  [Windows サービス アプリケーションのデバッグ](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Windows サービス アプリケーションのデバッグに関する注意事項を示します。セットアップ、プロセスとのアタッチ、サービスの `OnStart` メソッドと Main メソッドのコードのデバッグ、ブレークポイントの設定、サービス コントロール マネージャーを使用したサービスの開始、停止、一時中断、継続などが含まれます。  
   
- [アプリケーションのデバッグとプロファイリング](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [デバッグとプロファイリング](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  .NET Framework アプリケーションのデバッグと構成要件について説明します。  
   
  [スクリプトと Web アプリケーションのデバッグ](../debugger/debugging-web-applications-and-script.md)  
@@ -87,7 +87,7 @@ ms.locfileid: "65691440"
  [ホーム ページのデバッグ](../debugger/debugging-in-visual-studio.md)  
  デバッグに関連するドキュメントのより広範囲なリンクを提供します。 これらのリンクでは、デバッガーの新機能、設定と準備、ブレークポイント、例外処理、エディット コンティニュ、マネージド コードのデバッグ、Visual C++ プロジェクトのデバッグ、COM および ActiveX のデバッグ、DLL のデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報が示されます。  
   
-## <a name="see-also"></a>関連項目  
- [チュートリアル: デザイン時のフォーム コントロールのカスタムの Windows のデバッグ](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+## <a name="see-also"></a>参照  
+ [チュートリアル: デザイン時のカスタム Windows フォームコントロールのデバッグ](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

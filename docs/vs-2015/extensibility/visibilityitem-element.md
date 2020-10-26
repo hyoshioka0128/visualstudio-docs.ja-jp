@@ -12,22 +12,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6f71e145282d1d6e340060b9798ca54c9af9f4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584838"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`VisibilityItem`コマンドとツールバーの静的な可視性を決定します。 すべてのエントリは、コマンドまたは メニューとも関連付けられているコマンドの UI コンテキストを識別します。 Visual Studio は、それらを定義する Vspackage を読み込むことがなく、コマンド、メニューとツールバー、およびその可視性を検出します。 IDE を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>コマンド UI コンテキストがアクティブかどうかを確認するメソッド。  
+要素は、 `VisibilityItem` コマンドおよびツールバーの静的表示を決定します。 すべてのエントリは、コマンドまたはメニュー、および関連付けられたコマンド UI コンテキストを識別します。 Visual Studio では、コマンド、メニュー、ツールバー、およびそれらを定義する Vspackage が読み込まれていないかどうかが検出されます。 IDE では、メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> コマンド UI コンテキストがアクティブかどうかを判断します。  
   
- Visual Studio、VSPackage によって決定するコマンドの可視性が必要ですが、VSPackage が読み込まれた後ではなく、`VisibilityItem`します。 コマンドの可視性を判断する、いずれかを実装できます、<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>イベント ハンドラーまたは<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドをコマンドを実装する方法。  
+ VSPackage が読み込まれた後、Visual Studio では、ではなく VSPackage によってコマンドの可視性が求められ `VisibilityItem` ます。 コマンドの可視性を判断するには、コマンドを <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 実装した <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法に応じて、イベントハンドラーまたはメソッドを実装します。  
   
- コマンドまたはメニューを持つ、`VisibilityItem`要素は、関連付けられているコンテキストがアクティブな場合にのみ表示されます。 コマンド コンテキストの組み合わせごとにエントリを含めることによって、UI コンテキストが 1 つまたは複数のコマンドを 1 つのコマンド、メニューのまたはツールバーを関連付けることができます。 コマンドまたはメニューに関連付けられたコマンド UI の複数のコンテキストは、関連付けられたコマンド UI コンテキストのいずれかがアクティブなときに、コマンドまたはメニューが表示にします。  
+ 要素を含むコマンドまたはメニューは、 `VisibilityItem` 関連付けられたコンテキストがアクティブな場合にのみ表示されます。 1つのコマンド、メニュー、またはツールバーを1つ以上のコマンド UI コンテキストと関連付けるには、各コマンドコンテキストの組み合わせのエントリを追加します。 コマンドまたはメニューが複数のコマンド UI コンテキストに関連付けられている場合は、関連付けられているコマンド UI コンテキストのいずれかがアクティブになっていると、コマンドまたはメニューが表示されます。  
   
- `VisibilityItem`要素は、コマンド、メニュー、ツールバー、グループにのみ適用されます。 関連付けられていない要素`VisibilityItem`要素は、親メニューがアクティブなときに表示します。  
+ 要素は、 `VisibilityItem` グループではなく、コマンド、メニュー、およびツールバーにのみ適用されます。 関連要素を持たない要素は、 `VisibilityItem` 親メニューがアクティブになっている場合は常に表示されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,10 +45,10 @@ ms.locfileid: "62584838"
   
 |属性|説明|  
 |---------------|-----------------|  
-|guid|必須。 コマンド id を GUID と ID の GUID です。|  
-|ID|必須。 コマンド id を GUID と ID の ID。|  
-|コンテキスト|必須。 コマンドが表示されている UI コンテキスト。|  
-|条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
+|guid|必須です。 GUID/ID コマンド識別子の GUID。|  
+|id|必須です。 GUID/ID コマンド識別子の ID。|  
+|context|必須です。 コマンドが表示される UI コンテキスト。|  
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|  
   
 ### <a name="child-elements"></a>子要素  
  なし  
@@ -57,10 +57,10 @@ ms.locfileid: "62584838"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`コマンドとツールバーのグループの静的な可視性を決定します。|  
+|[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|要素は、 `VisibilityConstraints` コマンドおよびツールバーのグループを静的に表示するかどうかを決定します。|  
   
-## <a name="remarks"></a>Remarks  
- 標準の Visual Studio の UI コンテキストが定義されている、 *Visual Studio SDK インストール パス*\VisualStudioIntegration\Common\Inc\vsshlids.h ファイルと同様、<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>と<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>クラス。 UI コンテキストのより完全なセットが定義されている、<xref:Microsoft.VisualStudio.VSConstants>クラス。  
+## <a name="remarks"></a>注釈  
+ 標準の Visual Studio UI コンテキストは、 *Visual STUDIO SDK のインストールパス*\VisualStudioIntegration\Common\Inc\vsshlids.h ファイルだけでなく、クラスおよびクラスでも定義されてい <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> ます。 UI コンテキストの完全なセットは、クラスで定義されてい <xref:Microsoft.VisualStudio.VSConstants> ます。  
   
 ## <a name="example"></a>例  
   
@@ -71,7 +71,7 @@ ms.locfileid: "62584838"
 </VisibilityConstraints>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>   
  <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>   
  <xref:Microsoft.VisualStudio.VSConstants>   

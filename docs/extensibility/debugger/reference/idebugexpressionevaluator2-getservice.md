@@ -1,5 +1,5 @@
 ---
-title: 検証評価器2::ゲットサービス |マイクロソフトドキュメント
+title: 'IDebugExpressionEvaluator2:: GetService |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c5428606ad54c7938037c3ffecf04f1cfe41787c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729355"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-一意の識別子を指定してサービス オブジェクトを取得します。
+一意の識別子を指定して、サービスオブジェクトを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,16 +42,16 @@ int GetService (
 
 ## <a name="parameters"></a>パラメーター
 `uid`\
-[in]取得するサービスを表す一意の識別子です。
+から取得するサービスの一意識別子。
 
 `ppService`\
-[アウト]サービスを表すオブジェクトを返します。
+入出力サービスを表すオブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- これは、他の式エバリュエーターからサービスを取得するために、サードパーティの式エバリュエーターによって使用できます。 たとえば、このメソッドを使用して、ビジュアライザー サービスのインターフェイスを既定の式エバリュエーターから取得できます。 サードパーティ式エバリュエーターは、このインターフェイスを実装する必要はほとんどありません。
+## <a name="remarks"></a>解説
+ これは、別の式エバリュエーターからサービスを取得するために、サードパーティの式エバリュエーターによって使用される場合があります。 たとえば、このメソッドを使用して、ビジュアライザーサービスのインターフェイスを既定の式エバリュエーターから取得できます。 サードパーティの式エバリュエーターは、このインターフェイスを実装する必要がない可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

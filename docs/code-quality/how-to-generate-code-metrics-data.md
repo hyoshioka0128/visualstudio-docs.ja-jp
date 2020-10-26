@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706517"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600232"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "88706517"
 
 .NET コード品質アナライザーには、いくつかのコードメトリックス [アナライザー](roslyn-analyzers-overview.md) の規則が含まれています。
 
-- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1501](./ca1501.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505.md)
 - [CA1506](ca1506.md)
@@ -80,7 +80,7 @@ ms.locfileid: "88706517"
 
 - メニューバーで、[ **Analyze**  >  **Calculate Code Metrics**  >  **ソリューションの**コードメトリックスの分析] を選択します。
 
-- **ソリューションエクスプローラー**で、ソリューションを右クリックし、[**コードメトリックスの計算**] をクリックします。
+- **ソリューションエクスプローラー**で、ソリューションを右クリックし、[**コードメトリックスの計算**] を選択します。
 
 - [ **コードメトリックスの結果** ] ウィンドウで、[ **ソリューションのコードメトリックスを計算** する] ボタンを選択します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "88706517"
 
 1. **ソリューションエクスプローラー**で、1つ以上のプロジェクトを選択します。
 
-1. メニューバーで、[ **Analyze**  >  **Calculate Code Metrics**  >  **選択したプロジェクトの**コードメトリックスを分析する] を選択します。
+1. メニューバーで、[ **Analyze**  >  選択したプロジェクトの**コードメトリックス**を分析する] を選択し  >  **For Selected Project(s)** ます。
 
 結果が生成され、[ **コードメトリックスの結果** ] ウィンドウが表示されます。 結果の詳細を表示するには、 **階層**内のツリーを展開します。
 

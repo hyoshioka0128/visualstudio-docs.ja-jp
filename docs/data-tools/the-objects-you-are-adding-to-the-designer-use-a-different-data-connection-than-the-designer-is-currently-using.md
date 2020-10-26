@@ -1,5 +1,7 @@
 ---
-title: デザイナーに追加されたオブジェクトが別のデータ接続を使用する
+title: オブジェクトは別の接続を使用する
+description: デザイナーに追加されたオブジェクトが別のデータ接続を使用する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38fa361536f9e99c013f9a13330fe1a68e53641a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5b2ae4975f2848379403a0df1258640c32ccd58f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281410"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036224"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>デザイナーに追加しようとしているオブジェクトは、デザイナーとは異なるデータ接続を使用しています
 
@@ -23,17 +25,17 @@ ms.locfileid: "85281410"
 
 ## <a name="connection-options"></a>接続オプション
 
-- 既存の接続を、選択したオブジェクトによって使用されている接続に置き換えるには、[**はい]** をクリックします。
+- 既存の接続を、選択したオブジェクトによって使用されている接続に置き換えるには、[ **はい]** をクリックします。
 
-   選択したオブジェクトが**O/R デザイナー**に追加され、 *DataContext 接続*が新しい接続に設定されます。
+   選択したオブジェクトが **O/R デザイナー**に追加され、 *DataContext 接続* が新しい接続に設定されます。
 
    > [!NOTE]
-   > [**はい**] をクリックすると、 **O/R デザイナー**のすべてのエンティティクラスが新しい接続にマップされます。
+   > [ **はい**] をクリックすると、 **O/R デザイナー** のすべてのエンティティクラスが新しい接続にマップされます。
 
-- 既存の接続を引き続き使用して、選択したオブジェクトの追加をキャンセルするには、[**いいえ**] をクリックします。
+- 既存の接続を引き続き使用して、選択したオブジェクトの追加をキャンセルするには、[ **いいえ**] をクリックします。
 
    操作がキャンセルされます。 DataContext. 接続は、既存の接続に設定されたままに*なります。*
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

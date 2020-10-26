@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545224"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:演算子オーバーロードには名前付けされた代替が存在します
@@ -42,9 +42,9 @@ ms.locfileid: "85545224"
 
 |C#|Visual Basic|C++|代替名|
 |---------|------------------|-----------|--------------------|
-|+ (バイナリ)|+|+ (バイナリ)|追加|
-|+=|+=|+=|追加|
-|&|および|&|BitwiseAnd|
+|+ (バイナリ)|+|+ (バイナリ)|[追加]|
+|+=|+=|+=|[追加]|
+|&|And|&|BitwiseAnd|
 |&=|および =|&=|BitwiseAnd|
 |&#124;|または|&#124;|BitwiseOr|
 |&#124;=|または =|&#124;=|BitwiseOr|
@@ -77,7 +77,7 @@ ms.locfileid: "85545224"
 |true|IsTrue|該当なし|IsTrue (プロパティ)|
 | - (単項)   |該当なし|-|Negate|
 |+ (単項)|該当なし|+|Plus|
-|false|IsFalse|False|IsTrue (プロパティ)|
+|false|IsFalse|×|IsTrue (プロパティ)|
 
  選択した言語では、N/A = = をオーバーロードすることはできません。
 

@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f11ed48d9dcf961228957cf15db3815c00d14d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204223"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`GuidSymbol`要素には、メニューのグループ、またはコマンドを表す GUID:ID のペアの GUID が含まれています。 ID に由来する`IDSymbol`内の要素、`GuidSymbol`要素。 `GuidSymbol`要素には、`name`属性に含まれていると、GUID のフレンドリ名を提供する、`value`属性。  
+要素には、 `GuidSymbol` メニュー、グループ、またはコマンドを表す guid: ID ペアの guid が含まれます。 ID は、要素の要素から取得され `IDSymbol` `GuidSymbol` ます。 `GuidSymbol`要素には、 `name` 属性に含まれている GUID のフレンドリ名を提供する属性があり `value` ます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,23 +39,23 @@ ms.locfileid: "68204223"
   
 |属性|説明|  
 |---------------|-----------------|  
-|name|必須。 GUID 記号の名前です。|  
-|value|必須。 GUID 記号の GUID です。|  
+|name|必須です。 GUID シンボルの名前。|  
+|value|必須です。 GUID シンボルの GUID。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[IDSymbol 要素](../extensibility/idsymbol-element.md)|メニューのグループ、またはコマンドを表す GUID:ID のペアの ID が含まれています。|  
+|[IDSymbol 要素](../extensibility/idsymbol-element.md)|メニュー、グループ、またはコマンドを表す GUID: ID ペアの ID を格納します。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Symbols 要素](../extensibility/symbols-element.md)|グループ`GuidSymbol`.vsct ファイル内の要素。|  
+|[Symbols 要素](../extensibility/symbols-element.md)|`GuidSymbol`Vsct ファイル内の要素をグループ化します。|  
   
-## <a name="remarks"></a>Remarks  
- 通常、.vsct ファイルを含む 3 つ`GuidSymbol`内の要素の`Symbols`セクション、パッケージ自体の 1 つ、コマンド セット (メニューのグループ、および、パッケージが利用できるようにするコマンドのコレクション) の 1 つおよび 1 つのビットマップを提供します。ボタンやその他のビジュアル コンポーネントのアイコン。 すべて`IDSymbol`内の要素を指定した`GuidSymbol`要素は一意でなければなりません`value`します。ただし、`IDSymbol`別の親がある限り、パッケージに同じ値を持つ要素が存在できます。  
+## <a name="remarks"></a>注釈  
+ 通常、. vsct ファイルには、パッケージ自体用の3つの要素が含まれています。1つはパッケージ自体用で、もう1つは `GuidSymbol` `Symbols` コマンドセット (パッケージが使用可能にするメニュー、グループ、およびコマンドのコレクション)、もう1つはボタンとその他のビジュアルコンポーネントのアイコンを提供するビットマップ用です。 `IDSymbol`指定された要素内のすべての要素は `GuidSymbol` 、一意である必要があり `value` ます。ただし、 `IDSymbol` 同一の値を持つ要素は、異なる親を持つ限り、パッケージ内に存在することができます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

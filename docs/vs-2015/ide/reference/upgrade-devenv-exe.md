@@ -1,4 +1,4 @@
-﻿---
+---
 title: -Upgrade (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24bb6160f9895f129c4d7d36c2b0aa8a56ca282a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657898"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
@@ -36,7 +36,7 @@ devenv SolutionFile | ProjectFile /upgrade
 
  `ProjectFile` 単一のプロジェクトをアップグレードする場合、必須です。 ソリューション内のプロジェクト ファイルのパスと名前です。 プロジェクト ファイルの名前のみを入力するか、完全パスと名前を入力できます。 存在しないフォルダー名やファイル名を入力した場合は、フォルダーやファイルが作成されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  バックアップは自動的に作成され、現在のディレクトリに作成される Backup という名前のディレクトリにコピーされます。
 
  ソース管理されたソリューションまたはプロジェクトは、アップグレードする前にチェックアウトする必要があります。
@@ -50,5 +50,5 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [方法: Visual Studio プロジェクトのアップグレードに失敗した場合のトラブルシューティング](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md) [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md)
