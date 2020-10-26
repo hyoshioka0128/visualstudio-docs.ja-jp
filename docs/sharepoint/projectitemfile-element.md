@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539855"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 要素
@@ -30,7 +30,7 @@ ms.locfileid: "85539855"
     Type = "Type of deployment for the file" />
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>型
  **ProjectItemFileType**
 
 ## <a name="attributes-and-elements"></a>属性と要素
@@ -41,7 +41,7 @@ ms.locfileid: "85539855"
 |属性|説明|
 |---------------|-----------------|
 |**ソース**|**Xs: string**属性が必要です。<br /><br /> プロジェクト項目と共に配置するファイルの名前。|
-|**Target**|**Xs: string**属性 (省略可能)。<br /><br /> 配置ルートフォルダーを基準とした、SharePoint 上でのファイルの配置先のパス。 展開ルートフォルダーは、 **type**属性によって指定された展開の種類によって決定されます。 **ターゲット**属性が指定されていない場合、ファイルは、 **Source**属性で指定された名前のフォルダーに配置されます。<br /><br /> 詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の sharepoint プロジェクト項目の**配置パス**と**配置ルート**プロパティの説明を参照してください。|
+|**移行先**|**Xs: string**属性 (省略可能)。<br /><br /> 配置ルートフォルダーを基準とした、SharePoint 上でのファイルの配置先のパス。 展開ルートフォルダーは、 **type** 属性によって指定された展開の種類によって決定されます。 **ターゲット**属性が指定されていない場合、ファイルは、 **Source**属性で指定された名前のフォルダーに配置されます。<br /><br /> 詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の sharepoint プロジェクト項目の**配置パス**と**配置ルート**プロパティの説明を参照してください。|
 |**Type**|**Xs: string**属性が必要です。<br /><br /> ファイルの配置の種類。 使用可能な値の詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の「sharepoint プロジェクト項目の**配置の種類**」プロパティの説明を参照してください。|
 
 ### <a name="child-elements"></a>子要素
@@ -53,15 +53,15 @@ ms.locfileid: "85539855"
 |-------------|-----------------|
 |[[ファイル]](../sharepoint/files-element.md)|Sharepoint に配置されるときに SharePoint プロジェクト項目に含めるファイルを指定します。|
 
-## <a name="remarks"></a>Remarks
- 通常、 **ProjectItemFile**要素で参照される SharePoint ファイルには、フィーチャー要素ファイル (*Elements.xml*)、リスト定義のスキーマファイル (*Schema.xml*)、Web パーツ (*webpart*) の Web パーツ定義ファイルなどがあります。
+## <a name="remarks"></a>解説
+ 通常、 **ProjectItemFile** 要素で参照される SharePoint ファイルには、フィーチャー要素ファイル (*Elements.xml*)、リスト定義のスキーマファイル (*Schema.xml*)、Web パーツ (*webpart*) の Web パーツ定義ファイルなどがあります。
 
 ## <a name="element-information"></a>要素情報
 
 |プロパティ|値|
 |-|-|
 |**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**スキーマ名**|SharePoint プロジェクトアイテムスキーマ|
 |**検証ファイル**|ProjectItemModelSchema|
 |**空にすることができます**|いいえ|
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState |Microsoft Docs
+title: 'IDebugEngine3:: Setジャスト Mycodestate |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ebaf697bfdfff435c12eee1002ff93f4eba7ed65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195864"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、JustMyCode 状態情報のデバッグ エンジンを指示します。  
+このメソッドは、ジャスト Mycode 状態情報についてデバッグエンジンに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,20 +44,20 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>パラメーター  
  `fUpdate`  
- [in]0 以外の場合 (`TRUE`) 現在の情報を更新するには、0 (`FALSE`) (何も以前の設定は無視されます) すべての情報をリセットします。  
+ から現在の `TRUE` 情報を更新する場合は0以外 ()。すべての情報をリセットする場合は 0 ( `FALSE` )。  
   
  `dwModules`  
- [in]情報構造体の数 `rgJMCSpec.`  
+ からの情報構造の数 `rgJMCSpec.`  
   
  `rgJMCSpec`  
- [in]配列[JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)を使用する構造体。  
+ から使用する [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) 構造体の配列。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- JustMyCode をユーザーに属しているコードのみをデバッグして、システム コードなどのすべての中間コードを無視するという概念は、-場合でも、そのシステム コードのソース コードが使用されます。  
+## <a name="remarks"></a>注釈  
+ ジャスト Mycode は、システムコードでソースコードを使用できる場合でも、ユーザーに属しているコードのみをデバッグし、システムコードなどのすべての中間コードを無視するという概念です。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
  [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

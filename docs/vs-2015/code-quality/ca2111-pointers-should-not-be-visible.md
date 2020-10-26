@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544366"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:ポインターは参照可能にすることはできません
@@ -36,7 +36,7 @@ ms.locfileid: "85544366"
  Public、protected、 <xref:System.IntPtr?displayProperty=fullName> または field は読み取り専用では <xref:System.UIntPtr?displayProperty=fullName> ありません。
 
 ## <a name="rule-description"></a>ルールの説明
- <xref:System.IntPtr>および <xref:System.UIntPtr> は、アンマネージメモリにアクセスするために使用されるポインター型です。 ポインターがプライベート、内部、または読み取り専用ではない場合、悪意のあるコードがポインターの値を変更して、メモリ内の任意の場所へのアクセスを許可したり、アプリケーションやシステムの障害を引き起こしたりする可能性があります。
+ <xref:System.IntPtr> および <xref:System.UIntPtr> は、アンマネージメモリにアクセスするために使用されるポインター型です。 ポインターがプライベート、内部、または読み取り専用ではない場合、悪意のあるコードがポインターの値を変更して、メモリ内の任意の場所へのアクセスを許可したり、アプリケーションやシステムの障害を引き起こしたりする可能性があります。
 
  ポインターフィールドを含む型へのアクセスをセキュリティで保護する場合は、「 [CA2112: セキュリティで保護された型はフィールドを公開しない](../code-quality/ca2112-secured-types-should-not-expose-fields.md)」を参照してください。
 
@@ -47,7 +47,7 @@ ms.locfileid: "85544366"
  ポインターの値に依存しない場合は、このルールの警告を非表示にします。
 
 ## <a name="example"></a>例
- 次のコードは、規則に違反しているポインターを示しています。 非プライベートポインターもルール CA1051 に違反していることに注意してください。[表示インスタンスフィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+ 次のコードは、規則に違反しているポインターを示しています。 非プライベートポインターもルール CA1051 に違反していることに注意してください。 [表示インスタンスフィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
@@ -56,5 +56,5 @@ ms.locfileid: "85544366"
 
  [CA1051:参照可能なインスタンス フィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

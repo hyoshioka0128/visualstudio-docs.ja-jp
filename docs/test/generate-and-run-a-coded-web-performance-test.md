@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589579"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストの生成と実行
@@ -92,7 +92,7 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 
 データ ソースが含まれるコード化されたテストを実行すると、次のエラー メッセージが表示されることがあります。
 
-**Could not run test \<Test Name> on agent \<Computer Name>: (エージェント <Computer Name> 上でテスト <Test Name> を実行できませんでした:)オブジェクト参照がオブジェクトのインスタンスに設定されていません。**
+**エージェント \<Computer Name> でテスト \<Test Name> を実行できませんでした: オブジェクト参照がオブジェクトのインスタンスに設定されていません。**
 
 これは、テスト クラスに対して DataSourceAttribute が定義されていても、対応する DataBindingAttribute がない場合に発生します。 このエラーを解決するには、適切な DataBindingAttribute を追加して削除するか、コード内でコメント アウトします。
 

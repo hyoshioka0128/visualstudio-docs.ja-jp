@@ -11,202 +11,202 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710324"
 ---
-# <a name="inside-the-editor"></a>エディタ内
+# <a name="inside-the-editor"></a>エディター内
 
-エディターは、エディターのテキスト モデルをテキスト ビューとユーザー インターフェイスから分離するように設計された複数のサブシステムで構成されています。
+エディターはいくつかの異なるサブシステムで構成されています。これは、テキストビューとユーザーインターフェイスとは別にエディターテキストモデルを保持するように設計されています。
 
-以下のセクションでは、エディタのさまざまな側面について説明します。
+これらのセクションでは、エディターのさまざまな側面について説明します。
 
 - [サブシステムの概要](../extensibility/inside-the-editor.md#overview-of-the-subsystems)
 
-- [テキスト モデル](../extensibility/inside-the-editor.md#the-text-model)
+- [テキストモデル](../extensibility/inside-the-editor.md#the-text-model)
 
-- [テキスト ビュー](../extensibility/inside-the-editor.md#the-text-view)
+- [テキストビュー](../extensibility/inside-the-editor.md#the-text-view)
 
-以下のセクションでは、エディタの機能について説明します。
+以下のセクションでは、エディターの機能について説明します。
 
 - [タグと分類子](../extensibility/inside-the-editor.md#tags-and-classifiers)
 
-- [装飾](../extensibility/inside-the-editor.md#adornments)
+- [修飾](../extensibility/inside-the-editor.md#adornments)
 
 - [射影](../extensibility/inside-the-editor.md#projection)
 
 - [アウトライン](../extensibility/inside-the-editor.md#outlining)
 
-- [マウスのバインド](../extensibility/inside-the-editor.md#mouse-bindings)
+- [マウスバインド](../extensibility/inside-the-editor.md#mouse-bindings)
 
-- [編集操作](../extensibility/inside-the-editor.md#editor-operations)
+- [エディターの操作](../extensibility/inside-the-editor.md#editor-operations)
 
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)
 
 ## <a name="overview-of-the-subsystems"></a>サブシステムの概要
 
-### <a name="text-model-subsystem"></a>テキスト モデル サブシステム
+### <a name="text-model-subsystem"></a>テキストモデルサブシステム
 
-テキスト モデル サブシステムは、テキストを表し、その操作を有効にします。 テキスト モデル サブシステムには<xref:Microsoft.VisualStudio.Text.ITextBuffer>、エディターによって表示される文字のシーケンスを記述するインターフェイスが含まれています。 このテキストは、さまざまな方法で変更、追跡、および操作できます。 テキスト モデルには、次の側面の型も用意されています。
+テキストモデルサブシステムは、テキストを表現し、その操作を有効にする役割を担います。 テキストモデルサブシステムには、 <xref:Microsoft.VisualStudio.Text.ITextBuffer> エディターによって表示される文字のシーケンスを記述するインターフェイスが含まれています。 このテキストは、さまざまな方法で変更、追跡、または操作できます。 テキストモデルには、次の側面の型も用意されています。
 
-- テキストをファイルに関連付け、ファイル システムでの読み取りと書き込みを管理するサービス。
+- テキストをファイルに関連付け、ファイルシステムでの読み取りと書き込みを管理するサービス。
 
-- 2 つのオブジェクト シーケンス間の最小の差異を検出する差分サービス。
+- 2つのオブジェクトのシーケンス間の最小限の違いを検出する差分サービス。
 
-- 他のバッファー内のテキストのサブセットの観点からバッファー内のテキストを記述するためのシステム。
+- 他のバッファー内のテキストのサブセットに関してバッファー内のテキストを記述するシステム。
 
-テキスト モデル サブシステムには、ユーザー インターフェイス (UI) の概念が含まれています。 たとえば、テキストの書式設定やテキスト レイアウトの責任は負いません。
+テキストモデルサブシステムは、ユーザーインターフェイス (UI) の概念を自由に利用できます。 たとえば、テキストの書式設定やテキストレイアウトについては責任を負いません。テキストに関連付けられている視覚的な装飾についての情報はありません。
 
-テキスト モデル サブシステムのパブリック型は、.NET Framework 基本クラス ライブラリとマネージ機能拡張フレームワーク (MEF) にのみ依存する *、Microsoft.VisualStudio.Text.Data.dll*および*Microsoft.VisualStudio.CoreUtility.dll*に含まれています。
+テキストモデルサブシステムのパブリック型は *Microsoft.VisualStudio.Text.Data.dll* と *Microsoft.VisualStudio.CoreUtility.dll*に含まれており、.NET Framework 基本クラスライブラリと Managed Extensibility Framework (MEF) にのみ依存します。
 
-### <a name="text-view-subsystem"></a>テキスト ビュー サブシステム
+### <a name="text-view-subsystem"></a>テキストビューサブシステム
 
-テキスト ビュー サブシステムは、テキストの書式設定と表示を行います。 このサブシステムの型は、Windows プレゼンテーション ファンデーション (WPF) に依存するかどうかに応じて、2 つの層に分かれています。 最も重要な型<xref:Microsoft.VisualStudio.Text.Editor.ITextView>は<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>、 とで表示されるテキスト行のセットを制御し、また、WPF UI 要素を使用してテキストを装飾するためのキャレット、選択、および機能です。 このサブシステムは、テキスト表示領域の周囲に余白も提供します。 これらの余白は拡張でき、さまざまな種類のコンテンツや視覚効果を含めることができます。 余白の例としては、行番号の表示やスクロール バーなどがあります。
+テキストビューサブシステムは、テキストの書式設定と表示を行います。 このサブシステムの型は、型が Windows Presentation Foundation (WPF) に依存しているかどうかに応じて、2つの層に分割されます。 最も重要な型は <xref:Microsoft.VisualStudio.Text.Editor.ITextView> とです <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> 。これは、表示されるテキスト行のセット、および、WPF UI 要素を使用してテキストを装飾するためのカレット、選択、および機能を制御します。 また、このサブシステムでは、テキスト表示領域の周りに余白が表示されます。 これらの余白は拡張でき、さまざまな種類のコンテンツと視覚効果を含めることができます。 余白の例としては、行番号の表示とスクロールバーがあります。
 
-テキスト ビュー サブシステムのパブリックな型は、*次*の内容で格納*されています。* 最初のアセンブリにはプラットフォームに依存しない要素が含まれ、2 つ目のアセンブリには WPF 固有の要素が含まれます。
+テキストビューサブシステムのパブリック型は、 *Microsoft.VisualStudio.Text.UI.dll* と *Microsoft.VisualStudio.Text.UI.Wpf.dll*に含まれています。 最初のアセンブリには、プラットフォームに依存しない要素が含まれ、2番目のアセンブリには WPF 固有の要素が含まれます。
 
 ### <a name="classification-subsystem"></a>分類サブシステム
 
-分類サブシステムは、テキストのフォントプロパティを決定する役割を担います。 分類子は、テキストを「キーワード」や「コメント」などの異なるクラスに分割します。 分類形式マップは、これらのクラスを実際のフォント プロパティ ("Blue Consolas 10 pt" など) に関連付けます。 この情報は、テキストビューがテキストの書式設定やレンダリングを行うときに使用されます。 このトピックで後述するタグ付けでは、データをテキストの範囲に関連付けられます。
+分類サブシステムでは、テキストのフォントプロパティを決定します。 分類子は、"keyword" や "comment" など、テキストを異なるクラスに分割します。 分類形式マップは、これらのクラスを実際のフォントプロパティ ("Blue Consolas, 10 pt" など) に関連付けます。 この情報は、テキストを書式設定および表示するときにテキストビューによって使用されます。 タグ付けについては、このトピックの後半で詳しく説明します。データをテキストの範囲に関連付けることができます。
 
-分類サブシステムのパブリック型は、Microsoft.VisualStudio.Text.Logic.dll に含まれており、分類の視覚的な側面と対話します。
+分類サブシステムのパブリック型は Microsoft.VisualStudio.Text.Logic.dll に含まれ、Microsoft.VisualStudio.Text.UI.Wpf.dll に含まれる分類の視覚的な側面と対話します。
 
-### <a name="operations-subsystem"></a>操作サブシステム
+### <a name="operations-subsystem"></a>オペレーションサブシステム
 
-操作サブシステムは、エディターの動作を定義します。 Visual Studio エディター コマンドと元に戻すシステムの実装を提供します。
+Operations サブシステムは、エディターの動作を定義します。 これにより、Visual Studio エディターのコマンドと元に戻すシステムの実装が提供されます。
 
-## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>テキスト モデルとテキスト ビューを詳しく見る
+## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>テキストモデルとテキストビューの詳細
 
-### <a name="the-text-model"></a>テキスト モデル
+### <a name="the-text-model"></a>テキストモデル
 
-テキスト モデル サブシステムは、テキスト タイプの異なるグループで構成されます。 これには、テキスト バッファー、テキスト スナップショット、およびテキスト範囲が含まれます。
+テキストモデルサブシステムは、さまざまなテキスト型のグループで構成されます。 これには、テキストバッファー、テキストスナップショット、テキスト範囲などが含まれます。
 
-#### <a name="text-buffers-and-text-snapshots"></a>テキスト バッファーとテキスト スナップショット
+#### <a name="text-buffers-and-text-snapshots"></a>テキストバッファーとテキストスナップショット
 
-インターフェイス<xref:Microsoft.VisualStudio.Text.ITextBuffer>は、.NET Framework の型で使用されるエンコーディングである UTF-16 を使用してエンコードされる`String`Unicode 文字のシーケンスを表します。 テキスト バッファーはファイル システム ドキュメントとして永続化できますが、これは必須ではありません。
+インターフェイスは、 <xref:Microsoft.VisualStudio.Text.ITextBuffer> utf-16 を使用してエンコードされた Unicode 文字のシーケンスを表します。これは、.NET Framework の型によって使用されるエンコーディングです `String` 。 テキストバッファーはファイルシステムドキュメントとして保存できますが、これは必須ではありません。
 
-<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>は、空のテキスト バッファー、または文字列または から初期化されるテキスト バッファーを作成するために使用<xref:System.IO.TextReader>されます。 テキスト バッファーは、<xref:Microsoft.VisualStudio.Text.ITextDocument>としてファイル システムに永続化できます。
+は、 <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> 空のテキストバッファー、または文字列またはから初期化されたテキストバッファーを作成するために使用され <xref:System.IO.TextReader> ます。 テキストバッファーは、としてファイルシステムに保存でき <xref:Microsoft.VisualStudio.Text.ITextDocument> ます。
 
-スレッドがを呼び出<xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A>してテキスト バッファーの所有権を取得するまで、どのスレッドもテキスト バッファーを編集できます。 その後、そのスレッドだけが編集を実行できます。
+スレッドは、を呼び出すことによってテキストバッファーの所有権を取得するまで、テキストバッファーを編集でき <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A> ます。 その後、そのスレッドだけが編集を実行できます。
 
-テキスト バッファーは、有効期間中に多くのバージョンを通過できます。 バッファーが編集されるたびに新しいバージョンが生成され、変更できないバッファー<xref:Microsoft.VisualStudio.Text.ITextSnapshot>のそのバージョンの内容を表します。 テキスト スナップショットは変更できないため、テキスト バッファーが変更され続けても、制限なしで、任意のスレッドのテキスト スナップショットにアクセスできます。
+テキストバッファーは、有効期間中に多くのバージョンを経由することができます。 新しいバージョンは、バッファーが編集されるたびに生成され、変更 <xref:Microsoft.VisualStudio.Text.ITextSnapshot> できないはそのバージョンのバッファーの内容を表します。 テキストスナップショットは不変であるため、表示されているテキストバッファーが変化し続ける場合でも、制限なく、任意のスレッドでテキストスナップショットにアクセスできます。
 
 #### <a name="text-snapshots-and-text-snapshot-lines"></a>テキストスナップショットとテキストスナップショット行
 
-テキスト スナップショットの内容は、文字のシーケンスまたは行のシーケンスとして表示できます。 文字と行は、どちらも 0 から始まるインデックスが付けられます。 空のテキスト スナップショットには、0 文字と 1 行の空行が含まれています。 行は、有効な Unicode 改行文字シーケンス、またはバッファーの先頭または末尾で区切られます。 改行文字はテキスト スナップショットで明示的に表され、テキスト スナップショット内の改行がすべて同じである必要はありません。
+テキストスナップショットの内容は、一連の文字として、または一連の行として表示できます。 文字と行はどちらも0から始まるインデックスが作成されます。 空のテキストスナップショットには、ゼロ文字と1つの空の行が含まれます。 行は、有効な Unicode 改行文字シーケンス、またはバッファーの先頭または末尾で区切られます。 改行文字はテキストスナップショットで明示的に表され、テキストスナップショット内の改行はすべて同じである必要はありません。
 
 > [!NOTE]
-> Visual Studio エディターでの改行文字の詳細については、「[エンコードと改行](../ide/encodings-and-line-breaks.md)」を参照してください。
+> Visual Studio エディターの改行文字の詳細については、「 [エンコーディングと改行](../ide/encodings-and-line-breaks.md)」を参照してください。
 
-テキスト行は<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>オブジェクトによって表され、特定の行番号または特定の文字位置のテキスト スナップショットから取得できます。
+1行のテキストはオブジェクトによって表されます <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> 。これは、特定の行番号または特定の文字位置のテキストスナップショットから取得できます。
 
-#### <a name="snapshotpoints-snapshotspans-and-normalizedsnapshotspancollections"></a>スナップショットポイント、スナップショットスパン、正規化されたスナップショットスパンコレクション
+#### <a name="snapshotpoints-snapshotspans-and-normalizedsnapshotspancollections"></a>SnapshotPoints、Snapshotpoints、NormalizedSnapshotSpanCollections
 
-A<xref:Microsoft.VisualStudio.Text.SnapshotPoint>は、スナップショット内の文字位置を表します。 位置は、ゼロとスナップショットの長さの間に置かね保証されます。 A<xref:Microsoft.VisualStudio.Text.SnapshotSpan>は、スナップショット内のテキストの範囲を表します。 その終了位置は、ゼロとスナップショットの長さの間に置かれ、保証されます。 は<xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>、同じスナップショットの<xref:Microsoft.VisualStudio.Text.SnapshotSpan>オブジェクトのセットで構成されます。
+は、 <xref:Microsoft.VisualStudio.Text.SnapshotPoint> スナップショット内の文字位置を表します。 位置は、0とスナップショットの長さの間であることが保証されます。 は、 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> スナップショット内のテキストの範囲を表します。 最終的な位置は、0とスナップショットの長さの間であることが保証されます。 は、 <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> 同じスナップショットからの一連のオブジェクトで構成され <xref:Microsoft.VisualStudio.Text.SnapshotSpan> ます。
 
-#### <a name="spans-and-normalizedspancollections"></a>スパンと正規化されたSpanコレクション
+#### <a name="spans-and-normalizedspancollections"></a>Span と NormalizedSpanCollections
 
-A<xref:Microsoft.VisualStudio.Text.Span>は、テキスト スナップショット内のテキスト範囲に適用できる間隔を表します。 スナップショット位置はゼロから始まるので、範囲はゼロを含む任意の位置から開始できます。 スパン`End`のプロパティは、その`Start`プロパティとそのプロパティの合計と`Length`同じです。 プロパティ`Span`によって`End`インデックス付けされた文字は含まれません。 たとえば、開始 = 5 と Length = 3 のスパンには End = 8 があり、5、6、および 7 の位置の文字が含まれます。 このスパンの表記は [5..8] です。
+は、 <xref:Microsoft.VisualStudio.Text.Span> テキストスナップショット内のテキストの範囲に適用できる間隔を表します。 スナップショットの位置は0から始まるため、スパンはゼロを含む任意の位置から始めることができます。 `End`Span のプロパティは、そのプロパティとそのプロパティの合計と等しく `Start` `Length` なります。 には、 `Span` プロパティによってインデックス付けされた文字は含まれません `End` 。 たとえば、Start = 5 および Length = 3 のスパンは終了 = 8 で、5、6、および7の位置の文字が含まれます。 このスパンの表記は [5.. 8] です。
 
-2 つのスパンは、終了位置を含む共通の位置がある場合に交差します。 したがって、[3,5)と[2,7]の交点は[3,5]であり、[3,5]と[5]と[7]の交点は[5,5]である。 ([5, 5] は空のスパンであることに注意してください。
+両端が共通である場合 (終了位置を含む)、2つの範囲が交差します。 このため、[3, 5) と [2, 7] の積集合は [3, 5)、[3, 5) と [5, 7] の交差部分は [5, 5) です。 ([5, 5) は空のスパンであることに注意してください)。
 
-2 つの範囲は、終了位置を除いて、共通の位置がある場合に重なります。 空のスパンは他の範囲と重複することはありません。
+2つの範囲が重複している場合は、終了位置を除き、2つのスパンが重なっています。 空のスパンは他のスパンと重複しないため、2つの範囲の重なりが空になることはありません。
 
-A<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>は、範囲の Start プロパティの順序での範囲のリストです。 リストでは、重なり合う範囲または隣接する範囲がマージされます。 たとえば、スパン [5.9]、[0.1]、[3..6]、[9.10] のセットを指定すると、範囲の正規化されたリストは [0..1] [3..10] です。
+は、 <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> 範囲の開始プロパティの順序での範囲のリストです。 一覧では、重複するスパンまたは隣接するスパンがマージされます。 たとえば、範囲 [5...]、[0 ..1)、[3.. 6]、[9.. 10] のセットがある場合、範囲の正規化された一覧は [0 ..1)、[3.. 10] になります。
 
-#### <a name="itextedit-textversion-and-text-change-notifications"></a>ITextEdit、テキストバージョン、およびテキスト変更通知
+#### <a name="itextedit-textversion-and-text-change-notifications"></a>ITextEdit、TextVersion、テキスト変更通知
 
-テキスト バッファーの内容は、オブジェクトを<xref:Microsoft.VisualStudio.Text.ITextEdit>使用して変更できます。 このようなオブジェクトを作成する (`CreateEdit()`<xref:Microsoft.VisualStudio.Text.ITextBuffer>のメソッドのいずれかを使用して) テキスト編集で構成されるテキスト トランザクションを開始します。 すべての編集は、文字列によってバッファー内のテキストのいくつかのスパンの置き換えです。 各編集の座標と内容は、トランザクションの開始時のバッファのスナップショットを基準にして表されます。 オブジェクト<xref:Microsoft.VisualStudio.Text.ITextEdit>は、同じトランザクション内の他の編集によって影響を受ける編集の座標を調整します。
+テキストバッファーの内容は、オブジェクトを使用して変更でき <xref:Microsoft.VisualStudio.Text.ITextEdit> ます。 のメソッドのいずれかを使用してこのようなオブジェクトを作成すると `CreateEdit()` <xref:Microsoft.VisualStudio.Text.ITextBuffer> 、テキスト編集で構成されるテキストトランザクションが開始されます。 すべての編集は、バッファー内のテキストの一部を文字列で置き換えるものです。 各編集の座標と内容は、トランザクションの開始時にバッファーのスナップショットに対して相対的に表されます。 オブジェクトは、 <xref:Microsoft.VisualStudio.Text.ITextEdit> 同じトランザクション内の他の編集によって影響を受ける編集の座標を調整します。
 
-たとえば、次の文字列を含むテキスト バッファーがあるとします。
+たとえば、次の文字列を含むテキストバッファーを考えてみます。
 
 ```
 abcdefghij
 ```
 
-2 つの編集を含むトランザクションを適用し、1 つは文字を使用して [2.4] の`X`範囲を置き換える編集と、文字`Y`を使用して [6.9] のスパンを置き換える 2 番目の編集を適用します。 結果は、このバッファです。
+2つの編集を含むトランザクションを適用します。1つは、文字を使用して [2.. 4] のスパンを置き換える編集、もう1つは、文字を使用して `X` [6... 9] のスパンを置き換える2番目の編集です。 `Y` このバッファーは次のようになります。
 
 ```
 abXefYj
 ```
 
-2 番目の編集の座標は、最初の編集が適用される前に、トランザクションの開始時にバッファーの内容に関して計算されました。
+2番目の編集の座標は、最初の編集が適用される前に、トランザクションの開始時のバッファーの内容に対して計算されました。
 
-バッファーへの変更は、<xref:Microsoft.VisualStudio.Text.ITextEdit>`Apply()`オブジェクトがメソッドを呼び出してコミットされたときに有効になります。 空でない編集が少なくとも 1 つあった場合は<xref:Microsoft.VisualStudio.Text.ITextVersion>、新しい編集が<xref:Microsoft.VisualStudio.Text.ITextSnapshot>作成され、新しい`Changed`イベントが作成され、1 つのイベントが発生します。 すべてのテキストバージョンには異なるテキストスナップショットがあります。 テキスト スナップショットは、編集トランザクションの後のテキスト バッファーの完全な状態を表しますが、テキスト バージョンでは、あるスナップショットから次のスナップショットへの変更のみを記述します。 一般に、テキストスナップショットは一度使用した後に破棄されるものであり、テキストバージョンはしばらくの間有効でなければなりません。
+バッファーへの変更は、 <xref:Microsoft.VisualStudio.Text.ITextEdit> オブジェクトがメソッドを呼び出すことによってコミットされると有効になり `Apply()` ます。 空でない編集が少なくとも1つある場合は、新しいが作成され、 <xref:Microsoft.VisualStudio.Text.ITextVersion> 新しい <xref:Microsoft.VisualStudio.Text.ITextSnapshot> が作成されて、1つの `Changed` イベントが発生します。 すべてのテキストバージョンには、異なるテキストスナップショットがあります。 テキストスナップショットは、編集トランザクションの後のテキストバッファーの完全な状態を表しますが、テキストバージョンでは、1つのスナップショットから次のスナップショットへの変更のみが記述されます。 一般に、テキストスナップショットは一度だけ使用してから破棄しますが、テキストのバージョンはしばらくの間は維持される必要があります。
 
-テキスト バージョンには. <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection> このコレクションでは、スナップショットに適用された場合に後続のスナップショットを生成する変更について説明します。 コレクション<xref:Microsoft.VisualStudio.Text.ITextChange>内の各オブジェクトには、変更の文字位置、置換された文字列、および置換文字列が含まれます。 基本的な挿入では置換された文字列は空で、基本的な削除の場合は置換文字列が空です。 正規化されたコレクションは、常`null`にテキスト バッファーの最新バージョンに対して使用されます。
+テキストバージョンにはが含まれてい <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection> ます。 このコレクションでは、スナップショットに適用されると、後続のスナップショットが生成される変更について説明します。 コレクション内のすべてのには、 <xref:Microsoft.VisualStudio.Text.ITextChange> 変更の文字位置、置換された文字列、および置換文字列が含まれています。 基本的な挿入では、置き換えられた文字列は空で、基本的な削除の場合、置換後の文字列は空になります。 正規化されたコレクションは、 `null` テキストバッファーの最新バージョンに対して常にです。
 
-テキスト<xref:Microsoft.VisualStudio.Text.ITextEdit>バッファーに対してインスタンス化できるオブジェクトは常に 1 つだけで、すべてのテキスト編集は、テキスト バッファーを所有するスレッドで実行する必要があります (所有権が要求されている場合)。 テキスト編集は、そのメソッドまたはその`Cancel``Dispose`メソッドを呼び出すことによって破棄できます。
+<xref:Microsoft.VisualStudio.Text.ITextEdit>テキストバッファーに対していつでもインスタンス化できるオブジェクトは1つだけです。また、テキストバッファーを所有しているスレッドですべてのテキスト編集を実行する必要があります (所有権が要求されている場合)。 テキスト編集は、メソッドまたはメソッドを呼び出すことによって破棄でき `Cancel` `Dispose` ます。
 
-<xref:Microsoft.VisualStudio.Text.ITextBuffer>また、`Insert()`インターフェイス`Delete()`に表示`Replace()`されるメソッドに似た 、 <xref:Microsoft.VisualStudio.Text.ITextEdit> 、および メソッドも提供します。 これらを呼び出すことは、オブジェクトを作成<xref:Microsoft.VisualStudio.Text.ITextEdit>し、同様の呼び出しを行い、編集を適用するのと同じ効果があります。
+<xref:Microsoft.VisualStudio.Text.ITextBuffer> また、は `Insert()` 、 `Delete()` `Replace()` インターフェイス上で検出されたものと類似した、、およびの各メソッドも提供し <xref:Microsoft.VisualStudio.Text.ITextEdit> ます。 これらの呼び出しは、オブジェクトを作成し、同様の呼び出しを行って、編集を適用するのと同じ効果があり <xref:Microsoft.VisualStudio.Text.ITextEdit> ます。
 
-#### <a name="tracking-points-and-tracking-spans"></a>追跡ポイントと追跡範囲
+#### <a name="tracking-points-and-tracking-spans"></a>追跡ポイントと追跡スパン
 
-テキスト<xref:Microsoft.VisualStudio.Text.ITrackingPoint>バッファー内の文字位置を表します。 バッファーが文字の位置をずれる方法で編集された場合、トラッキング ポイントは、その文字と共にシフトします。 たとえば、トラッキング ポイントがバッファー内の位置 10 を参照し、バッファーの先頭に 5 文字が挿入された場合、追跡ポイントは 15 桁を参照します。 トラッキング ポイントで示される正確な位置で挿入が行われる場合、その動作は<xref:Microsoft.VisualStudio.Text.PointTrackingMode>、`Positive`または`Negative`によって決まります。 トラッキング モードが正の場合、トラッキング ポイントは同じ文字を参照し、現在は挿入の最後に表示されます。 トラッキング モードが負の場合、トラッキング ポイントは、元の位置に最初に挿入された文字を参照します。 トラッキング ポイントで表される位置にある文字が削除されると、追跡ポイントは削除された範囲の後の最初の文字に移動します。 たとえば、トラッキング ポイントが 5 桁目の文字を参照し、3 ~ 6 桁目の文字が削除された場合、トラッキング ポイントは位置 3 の文字を参照します。
+は、 <xref:Microsoft.VisualStudio.Text.ITrackingPoint> テキストバッファー内の文字位置を表します。 文字の位置をシフトするようにバッファーが編集されている場合、追跡ポイントはそれをシフトします。 たとえば、追跡ポイントがバッファー内の位置10を参照し、5文字がバッファーの先頭に挿入されている場合、追跡ポイントは位置15を表します。 追跡ポイントによって示される位置だけで挿入が行われる場合、その動作は <xref:Microsoft.VisualStudio.Text.PointTrackingMode> 、またはのいずれかであるによって決まり `Positive` `Negative` ます。 追跡モードが正の場合、追跡ポイントは同じ文字を参照しますが、これは挿入の最後にあります。 追跡モードが負の場合、追跡ポイントは元の位置に挿入された最初の文字を参照します。 追跡ポイントによって表される位置にある文字が削除されると、追跡ポイントは削除された範囲の後の最初の文字に移動します。 たとえば、追跡ポイントが位置5の文字を参照し、位置 3 ~ 6 の文字が削除された場合、追跡ポイントは位置3の文字を参照します。
 
-1<xref:Microsoft.VisualStudio.Text.ITrackingSpan>つの位置ではなく、文字の範囲を表します。 その動作は、 によって<xref:Microsoft.VisualStudio.Text.SpanTrackingMode>決定されます。 スパン トラッキング モードが[SpanTrackingMode.EdgeInclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeInclusive)の場合、追跡範囲は、エッジに挿入されたテキストを組み込むまで拡大します。 スパン トラッキング モードが[SpanTrackingMode.EdgeExclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeExclusive)の場合、追跡範囲には、その端に挿入されたテキストは組み込まれません。 ただし、スパン トラッキング モードが[SpanTrackingMode.EdgePositive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgePositive)の場合、挿入は現在の位置を開始方向にプッシュし、スパン トラッキング モードが[SpanTrackingMode.EdgeNegative の](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeNegative)場合は、現在の位置が末尾に向かってプッシュされます。
+は、 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 1 つの位置だけではなく、文字の範囲を表します。 その動作は、によって決まり <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> ます。 スパントラッキングモードが [SpanTrackingMode](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeInclusive)の場合、追跡スパンは、端に挿入されたテキストを組み込むように拡大されます。 スパントラッキングモードが [SpanTrackingMode](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeExclusive)の場合、追跡スパンには、端に挿入されたテキストは組み込まれません。 ただし、スパントラッキングモードが [SpanTrackingMode](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgePositive)の場合、挿入は開始位置に向かって現在位置をプッシュします。スパントラッキングモードが [SpanTrackingMode](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeNegative)の場合は、挿入によって末尾に向かって現在位置がプッシュされます。
 
-追跡ポイントの位置、または追跡対象のテキスト バッファーのスナップショットの追跡範囲の範囲を取得できます。 追跡ポイントと追跡範囲は、どのスレッドからでも安全に参照できます。
+追跡ポイントの位置または追跡範囲の範囲を取得して、それらが属するテキストバッファーのスナップショットを取得できます。 追跡ポイントと追跡範囲は、どのスレッドからも安全に参照できます。
 
 #### <a name="content-types"></a>コンテンツの種類
 
-コンテンツ タイプは、さまざまな種類のコンテンツを定義するためのメカニズムです。 コンテンツ タイプは、"text"、"code"、"binary" などのファイルの種類、または "xml" や "vb" 、"c#" などのテクノロジの種類です。 たとえば、"using" という単語は C# と Visual Basic の両方のキーワードですが、他のプログラミング言語ではキーワードではありません。 したがって、このキーワードの定義は、"c#" および "vb" コンテンツ タイプに限定されます。
+コンテンツの種類は、さまざまな種類のコンテンツを定義するためのメカニズムです。 コンテンツの種類には、"text"、"code"、"binary" などのファイルの種類や、"xml"、"vb"、"c#" などのテクノロジの種類を使用できます。 たとえば、"using" という語は C# と Visual Basic の両方でキーワードですが、他のプログラミング言語では使用できません。 したがって、このキーワードの定義は、"c#" および "vb" のコンテンツ型に制限されます。
 
-コンテンツ タイプは、エディターの表示要素やその他の要素のフィルターとして使用されます。 多くのエディター機能と拡張ポイントは、コンテンツ タイプごとに定義されます。 たとえば、テキストの色付けは、プレーン テキスト ファイル、XML ファイル、および Visual Basic のソース コード ファイルで異なります。 テキスト バッファーは、通常、コンテンツ タイプを作成するときに割り当てられ、テキスト バッファーのコンテンツ タイプを変更できます。
+コンテンツタイプは、エディターの修飾要素およびその他の要素のフィルターとして使用されます。 多くのエディター機能と拡張ポイントは、コンテンツの種類ごとに定義されます。 たとえば、テキストの色分けは、プレーンテキストファイル、XML ファイル、Visual Basic ソースコードファイルによって異なります。 通常、テキストバッファーには、作成時にコンテンツタイプが割り当てられ、テキストバッファーのコンテンツタイプを変更できます。
 
-コンテンツ タイプは、他のコンテンツ タイプから複数継承できます。 では<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>、特定のコンテンツ タイプの親として複数の基本型を指定できます。
+コンテンツの種類は、他のコンテンツの種類から複数継承できます。 では、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 特定のコンテンツタイプの親として複数の基本型を指定できます。
 
-開発者は、独自のコンテンツ タイプを定義し、<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>を使用して登録できます。 エディターの多くの機能は、<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>を使用して特定のコンテンツ タイプに対して定義できます。 たとえば、エディターの余白、表示要素、およびマウス ハンドラーは、特定のコンテンツタイプを表示するエディターにのみ適用されるように定義できます。
+開発者は、独自のコンテンツタイプを定義し、を使用して登録でき <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> ます。 を使用すると、特定のコンテンツの種類に対してさまざまなエディター機能を定義でき <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> ます。 たとえば、エディターの余白、装飾、およびマウスハンドラーは、特定のコンテンツの種類を表示するエディターにのみ適用されるように定義できます。
 
-### <a name="the-text-view"></a>テキスト ビュー
+### <a name="the-text-view"></a>テキストビュー
 
-モデル ビュー コント ローラー (MVC) パターンのビュー部分は、テキスト ビュー、ビューの書式設定、スクロール バーなどのグラフィック要素、キャレットを定義します。 Visual Studio エディターのすべてのプレゼンテーション要素は、WPF に基づいています。
+モデルビューコントローラー (MVC) パターンのビューパーツには、テキストビュー、ビューの書式設定、スクロールバーなどのグラフィック要素、およびカレットが定義されています。 Visual Studio エディターのすべてのプレゼンテーション要素は、WPF に基づいています。
 
 #### <a name="text-views"></a>テキストビュー
 
-インターフェイス<xref:Microsoft.VisualStudio.Text.Editor.ITextView>は、プラットフォームに依存しないテキスト ビューの表現です。 これは主に、テキスト ドキュメントをウィンドウに表示するために使用されますが、ツールヒントなどの他の目的にも使用できます。
+インターフェイスは、 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> プラットフォームに依存しないテキストビューの表現です。 これは主に、テキストドキュメントをウィンドウに表示するために使用されますが、他の目的 (ツールヒントなど) でも使用できます。
 
-テキスト ビューは、さまざまな種類のテキスト バッファーを参照します。 この<xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A>プロパティは、データ<xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel>バッファー (データ レベルの最上位バッファー) 、編集が行われる編集バッファー、およびテキスト ビューに表示されるバッファーであるビジュアル バッファーの 3 つの異なるテキスト バッファーを指すオブジェクトを参照します。
+テキストビューでは、さまざまな種類のテキストバッファーが参照されます。 プロパティは、 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> この3つの異なるテキストバッファーを参照するオブジェクトを参照します。データバッファーは、最上位のデータレベルバッファー、編集バッファー、編集が発生します。ビジュアルバッファー (テキストビューに表示されるバッファー) です。
 
-テキストは、基になるテキスト バッファーに関連付けられている分類子に基づいて書式設定され、テキスト ビュー自体にアタッチされている表示要素プロバイダーを使用して装飾されます。
+テキストは、基になるテキストバッファーに関連付けられている分類子に基づいて書式設定され、テキストビュー自体に関連付けられている表示設定プロバイダーを使用して装飾されます。
 
-#### <a name="the-text-view-coordinate-system"></a>テキスト ビューの座標系
+#### <a name="the-text-view-coordinate-system"></a>テキストビューの座標系
 
-テキスト ビューの座標系は、テキスト ビュー内の位置を指定します。 この座標系では、x 値 0.0 は表示されるテキストの左端に対応し、y 値 0.0 は表示されるテキストの上端に対応します。 x 座標は左から右に増加し、y 座標は上から下に増加します。
+テキストビューの座標系は、テキストビュー内の位置を指定します。 この座標系では、x 値0.0 は表示されているテキストの左端に対応し、y 値0.0 は表示されるテキストの上端に対応します。 X 座標は左から右に増加し、y 座標は上から下に増加します。
 
-ビューポート (テキスト ウィンドウに表示されるテキスト部分) は、垂直方向にスクロールするのと同じ方法で水平方向にスクロールすることはできません。 ビューポートは、描画サーフェスに対して移動するように左の座標を変更することによって水平にスクロールされます。 ただし、ビューポートは、レンダリングされたテキストを変更することによってのみ垂直方向にスクロールでき、イベントが<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>発生します。
+ビューポート (テキストウィンドウに表示されるテキストの一部) は、垂直方向にスクロールされるのと同じ方法で水平方向にスクロールすることはできません。 ビューポートは、描画サーフェイスに合わせて左の座標を変更することで水平方向にスクロールされます。 ただし、ビューポートは、表示されるテキストを変更することによってのみ垂直方向にスクロールできます。これにより、 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> イベントが発生します。
 
-座標系の距離は、論理ピクセルに対応します。 テキスト レンダリング サーフェスがスケーリング変換なしで表示される場合、テキスト レンダリング座標系の 1 単位はディスプレイ上の 1 ピクセルに対応します。
+座標系の距離は、論理ピクセルに対応します。 テキストレンダリングサーフェイスが拡大縮小変換なしで表示されている場合、テキストレンダリングの座標系の1つの単位が、ディスプレイの1ピクセルに対応します。
 
 #### <a name="margins"></a>余白
 
-インターフェイス<xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin>は余白を表し、余白とそのサイズの可視性を制御できるようにします。 定義済みの 4 つの余白があり、"上"、"左"、"右"、および "下" という名前で、ビューの上端、下端、左端、または右端に関連付けられています。 これらの余白は、他の余白を配置できるコンテナーです。 インターフェイスは、余白のサイズと余白の可視性を返すメソッドを定義します。 余白は、その余白が添付されているテキスト ビューに関する追加情報を提供するビジュアル要素です。 たとえば、行番号の余白には、テキスト ビューの行番号が表示されます。 グリフの余白には UI 要素が表示されます。
+インターフェイスは、余白を <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> 表し、余白とそのサイズの表示を制御できるようにします。 定義済みの余白が4つあります。このマージンには、"Top"、"Left"、"Right"、および "Bottom" という名前が付けられ、ビューの上、下、左、または右の端にアタッチされます。 これらの余白は、他の余白を配置できるコンテナーです。 インターフェイスは、余白のサイズと余白の表示を返すメソッドを定義します。 余白は、添付されているテキストビューに関する追加情報を提供するビジュアル要素です。 たとえば、行番号の余白には、テキストビューの行番号が表示されます。 グリフの余白には UI 要素が表示されます。
 
-インターフェイス<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider>は、余白の作成と配置を処理します。 余白は、他の余白に対して並べ替えることができます。 優先度の高い余白は、テキスト ビューの近くに配置されます。 たとえば、2 つの左余白、余白 A と余白 B があり、余白 B の優先順位が余白 A よりも低い場合、余白 B は余白 A の左側に表示されます。
+インターフェイスは、 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> 余白の作成と配置を処理します。 余白は、他の余白に対して並べ替えることができます。 優先順位の高い余白は、テキストビューの近くに配置されます。 たとえば、左余白が2つあり、余白 A と余白 B があり、余白 B の優先度が余白 A より低い場合、余白 B は余白 A の左側に表示されます。
 
-#### <a name="the-text-view-host"></a>テキスト ビュー ホスト
+#### <a name="the-text-view-host"></a>テキストビューのホスト
 
-<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>インターフェイスには、テキスト ビューとビューに付随する隣接する装飾 (スクロール バーなど) が含まれています。 テキスト ビュー ホストには、ビューの境界線に関連付けられた余白も含まれます。
+インターフェイスには、 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> テキストビューと、スクロールバーなど、ビューに付随するすべての装飾が含まれています。 テキストビューのホストには、ビューの境界線に関連付けられている余白も含まれています。
 
 #### <a name="formatted-text"></a>書式付きテキスト
 
-テキスト ビューに表示されるテキストは、<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>オブジェクトで構成されます。 テキスト ビューの各行は、テキスト ビュー内の 1 行のテキストに対応します。 基になるテキスト バッファーの長い行は、部分的に隠れている (ワード ラップが有効でない場合) か、複数のテキスト ビュー行に分割できます。 インターフェイス<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>には、座標と文字の間のマッピング、および線に関連付けられている表示要素のメソッドとプロパティが含まれています。
+テキストビューに表示されるテキストは、オブジェクトで構成され <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> ます。 すべてのテキストビュー行は、テキストビュー内の1行のテキストに対応します。 基になるテキストバッファー内の長い行は、部分的に隠されているか (ワードラップが有効になっていない場合)、または複数のテキストビュー線に分割されている場合があります。 インターフェイスには、 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 座標と文字の間のマッピングを行うためのメソッドとプロパティ、およびその行に関連付けられる可能性のある修飾要素が含まれています。
 
-<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>オブジェクトはインターフェイスを<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>使用して作成されます。 現在ビューに表示されているテキストが心配な場合は、書式指定元を無視できます。 ビューに表示されないテキストの書式 (たとえば、リッチ テキストの切り取りと貼り付けのサポート) に関心がある場合は<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>、テキスト バッファー内のテキストの書式を設定できます。
+<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> オブジェクトは、インターフェイスを使用して作成され <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> ます。 現在ビューに表示されているテキストを気にするだけの場合は、書式設定ソースを無視できます。 ビューに表示されないテキストの形式 (リッチテキストの切り取りと貼り付けをサポートする場合など) に関心がある場合は、を使用してテキスト <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> バッファー内のテキストの書式を設定できます。
 
-テキスト ビューの書式<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>は 1 つずつです。
+テキストビューでは、一度に1つずつ書式設定され <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> ます。
 
 ## <a name="editor-features"></a>エディターの機能
 
-エディタの機能は、機能の定義が実装から分離するように設計されています。 エディターには、次の機能が含まれています。
+エディターの機能は、機能の定義が実装とは別のものになるように設計されています。 エディターには次の機能が含まれています。
 
 - タグと分類子
 
-- 装飾
+- 修飾
 
-- 射影
+- Projection
 
 - アウトライン
 
@@ -218,107 +218,107 @@ abXefYj
 
 ### <a name="tags-and-classifiers"></a>タグと分類子
 
-タグは、テキストのスパンに関連付けられたマーカーです。 テキストの色、下線、グラフィック、ポップアップなどを使用して、さまざまな方法で表示できます。 分類子は、タグの一種です。
+タグは、テキストの範囲に関連付けられているマーカーです。 たとえば、テキストの色分け、下線、グラフィックス、ポップアップなどを使用して、さまざまな方法で表示できます。 分類子は、1つの種類のタグです。
 
-その他の種類の<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>タグは、テキストの<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>強調表示、アウトライン、コンパイル<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>エラー用です。
+他の種類のタグは <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 、テキストの強調表示、アウトラインの表示、およびコンパイルエラーに使用され <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> ます。
 
-#### <a name="classification-types"></a>分類タイプ
+#### <a name="classification-types"></a>分類の種類
 
-インターフェイス<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>は、テキストの抽象カテゴリである等価クラスを表します。 分類タイプは、他の分類タイプから複数継承できます。 たとえば、プログラミング言語の分類には、"キーワード"、"comment"、"identifier" が含まれ、すべて "code" から継承されます。 自然言語分類タイプには、「名詞」、「動詞」、「形容詞」が含まれ、すべて「自然言語」を継承します。
+<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>インターフェイスは、テキストの抽象カテゴリである等価クラスを表します。 分類の種類は、他の分類の種類から多重継承できます。 たとえば、プログラミング言語の分類には、"keyword"、"comment"、"identifier" などがあります。これらはすべて "code" から継承されます。 自然言語分類型には、"名詞"、"verb"、"形容詞" などがあります。これらはすべて "自然言語" から継承されます。
 
 #### <a name="classifications"></a>分類
 
-分類は、特定の分類タイプのインスタンスであり、通常はテキストの範囲にわたって使用されます。 A<xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan>は分類を表すために使用されます。 分類スパンは、特定のテキスト範囲をカバーし、このテキスト範囲が特定の分類タイプであることをシステムに伝えるラベルと考えることができます。
+分類は、特定の分類の種類のインスタンスであり、通常はテキストの範囲を超えています。 は、 <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> 分類を表すために使用されます。 分類スパンは、特定のテキスト範囲をカバーするラベルと考えることができ、このテキストの範囲が特定の分類の種類であることがシステムに通知されます。
 
-#### <a name="classifiers"></a>クラシファイア
+#### <a name="classifiers"></a>分類子
 
-A<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>は、テキストを分類のセットに分割するメカニズムです。 分類子は、特定のコンテンツ タイプに対して定義し、特定のテキスト バッファーに対してインスタンス化する必要があります。 クライアントは、<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>テキスト分類に参加するために実装する必要があります。
+<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>は、テキストを分類のセットに分割するメカニズムです。 特定のコンテンツタイプに対して分類子を定義し、特定のテキストバッファー用にインスタンス化する必要があります。 <xref:Microsoft.VisualStudio.Text.Classification.IClassifier>テキスト分類に参加するには、クライアントがを実装する必要があります。
 
 #### <a name="classifier-aggregators"></a>分類子アグリゲーター
 
-分類子アグリゲーターは、1 つのテキスト バッファーのすべての分類子を 1 組の分類セットに結合するメカニズムです。 たとえば、C# 分類子と英語の分類子の両方が、C# ファイル内のコメントに対する分類を作成できます。 次のコメントを考えてみましょう。
+分類子アグリゲーターは、1つのテキストバッファーのすべての分類子を1つの分類セットにまとめるメカニズムです。 たとえば、C# 分類子と英語の分類子の両方で、C# ファイル内のコメントに対して分類を作成できます。 次のコメントを検討してください。
 
 ```
 // This method produces a classifier
 ```
 
-C# 分類子は、全体の範囲にコメントのラベルを付け、英語の分類子は"生成" を "動詞" と "メソッド" を "名詞" として分類する場合があります。 アグリゲーターは重複しない分類のセットを生成し、セットのタイプはすべての貢献に基づいています。
+C# 分類子は、スパン全体にコメントとしてラベルを付けることができます。また、英語の分類子は、"生成" を "動詞" および "method" として "名詞" として分類します。 アグリゲーターは、重複しない分類のセットを生成し、セットの型はすべての貢献に基づいています。
 
-分類子アグリゲーターは、テキストを分類のセットに分割するため、分類子でもあります。 分類子アグリゲーターは、重複する分類が存在すること、および分類がソートされるようにもします。 個々の分類子は、任意の順序で任意の分類のセットを返し、どのような方法で重複することができます。
+分類子アグリゲーターは、テキストを分類のセットに分割するため、分類器でもあります。 また、分類子アグリゲーターは、重複する分類がなく、分類が並べ替えられていることも確認します。 個々の分類子は、任意の順序で任意の順序で任意の分類の任意のセットを返すことができ、任意の方法で重複します。
 
 #### <a name="classification-formatting-and-text-coloring"></a>分類の書式設定とテキストの色分け
 
-テキストの書式設定は、テキスト分類に基づいて構築された機能の例です。 これは、アプリケーション内のテキストの表示を決定するために、テキストビューレイヤーによって使用されます。 テキストの書式設定領域は WPF によって異なりますが、分類の論理定義は異なります。
+テキストの書式設定は、テキスト分類に基づいて作成された機能の一例です。 これは、テキストビューレイヤーによって、アプリケーションのテキストの表示を決定するために使用されます。 テキストの書式設定領域は WPF に依存しますが、分類の論理定義は異なります。
 
-分類形式は、特定の分類タイプの書式プロパティのセットです。 これらの形式は、分類タイプの親の形式から継承されます。
+分類形式とは、特定の分類の種類に対する一連の書式設定プロパティのことです。 これらの形式は、分類の種類の親の形式から継承されます。
 
-A<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>は、分類タイプからテキストフォーマットプロパティのセットへのマップです。 エディターでのフォーマット マップの実装は、分類形式のすべてのエクスポートを処理します。
+<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>は、分類の種類から一連のテキスト書式設定プロパティへのマップです。 エディターでの書式マップの実装によって、分類形式のすべてのエクスポートが処理されます。
 
-### <a name="adornments"></a>装飾
+### <a name="adornments"></a>修飾
 
-表示要素は、テキスト ビューの文字のフォントや色に直接関係しないグラフィック効果です。 たとえば、多くのプログラミング言語で非コンパイル コードをマークするために使用される赤い波線の下線は埋め込み表示要素であり、ツールヒントはポップアップ表示要素です。 表示要素は から派生<xref:System.Windows.UIElement>し、実装<xref:Microsoft.VisualStudio.Text.Tagging.ITag>されます。 ビュー内のテキストと同じスペースを占める表示<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>要素の場合は、特殊な 2 種類の表示要素タグと、波線の下<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>線の場合は、 があります。
+装飾は、テキストビュー内の文字のフォントと色に直接関係しないグラフィック効果です。 たとえば、多くのプログラミング言語で非コンパイルコードをマークするために使用される赤い波線の下線は埋め込まれた表示要素で、ツールヒントはポップアップ表示されます。 装飾はから派生 <xref:System.Windows.UIElement> し、を実装 <xref:Microsoft.VisualStudio.Text.Tagging.ITag> します。 表示要素の2つの特殊な型には、 <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> ビュー内のテキストと同じスペースを使用する装飾、および <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> 波線の下線のがあります。
 
-埋め込み表示要素は、書式設定されたテキスト ビューの一部を形成するグラフィックスです。 これらは異なる Z オーダー レイヤーで構成されています。 テキスト、キャレット、および選択範囲の 3 つの組み込みレイヤーがあります。 ただし、開発者は、より多くのレイヤーを定義し、互いに対して順番に配置できます。 埋め込まれた表示要素の 3 種類は、テキスト相対表示要素 (テキストが移動すると移動され、テキストが削除されると削除されます)、ビュー相対表示要素 (ビューのテキスト以外の部分に関係があります)、所有者制御の表示要素 (開発者は配置を管理する必要があります) です。
+埋め込み装飾は、書式設定されたテキストビューの一部を形成するグラフィックスです。 これらは、異なる Z オーダーレイヤーに編成されています。 次の3つの組み込みレイヤーがあります。テキスト、キャレット、および選択です。 ただし、開発者はさらに多くのレイヤーを定義し、互いに対して順番に配置することができます。 埋め込まれた装飾の3種類は、テキスト相対装飾 (テキストが移動されたときに移動され、テキストが削除されると削除される)、ビュー相対装飾 (ビューのテキスト以外の部分で実行する必要があります)、およびオーナー制御の装飾 (開発者が配置を管理する必要があります) です。
 
-ポップアップ表示要素は、テキスト ビューの上の小さなウィンドウ (ヒントなど) に表示されるグラフィックスです。
+ポップアップ表示文字は、テキストビューの上の小さなウィンドウ (ツールヒントなど) に表示されるグラフィックスです。
 
-### <a name="projection"></a><a name="projection"></a>投影
+### <a name="projection"></a><a name="projection"></a> アイソメトリック
 
-射影は、テキストを実際に格納するのではなく、他のテキスト バッファーのテキストを組み合わせた別の種類のテキスト バッファーを構築するための手法です。 たとえば、投影バッファーを使用して、他の 2 つのバッファーからテキストを連結し、1 つのバッファー内にあるかのように結果を表示したり、テキストの一部を 1 つのバッファーに隠したりできます。 投影バッファーは、別の投影バッファーへのソース バッファーとして機能できます。 投影法によって関連付けられたバッファーのセットは、さまざまな方法でテキストを再配置するために構築できます。 (このようなセットは *、バッファグラフ*とも呼ばれます。Visual Studio のテキスト のアウトライン機能は、折りたたまれたテキストを非表示にする投影バッファーを使用して実装され、ASP.NETページの Visual Studio エディターでは、Visual Basic や C# などの埋め込み言語をサポートするプロジェクションを使用します。
+射影は、実際にはテキストを格納せず、他のテキストバッファーのテキストを結合する、別の種類のテキストバッファーを構築するための手法です。 たとえば、2つのバッファーのテキストを連結し、1つのバッファーにあるかのように結果を表示したり、1つのバッファー内のテキストの一部を非表示にしたりするために、プロジェクションバッファーを使用できます。 プロジェクションバッファーは、別のプロジェクションバッファーへのソースバッファーとして機能することができます。 プロジェクションによって関連付けられた一連のバッファーを構築して、さまざまな方法でテキストを並べ替えることができます。 (このようなセットは、 *バッファーグラフ*とも呼ばれます)。Visual Studio のテキストアウトライン機能は、折りたたまれたテキストを非表示にするためのプロジェクションバッファーを使用して実装されます。また、ASP.NET ページの Visual Studio エディターでは、射影を使用して Visual Basic や C# などの埋め込み言語をサポートしています。
 
-を<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>使用<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>して 作成します。 投影バッファーは、*ソース範囲*と呼ばれる<xref:Microsoft.VisualStudio.Text.ITrackingSpan>オブジェクトの順序付けられたシーケンスで表されます。 これらの範囲の内容は、文字のシーケンスとして表示されます。 ソース範囲の描画元となるテキストバッファーは、ソースバッファー という名前*です*。 投影バッファーのクライアントは、通常のテキスト バッファーとは異なることを認識する必要はありません。
+<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>は、を使用して作成され <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> ます。 プロジェクションバッファーは、 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> *ソース範囲*と呼ばれる順序付けられたオブジェクトのシーケンスによって表されます。 これらの範囲の内容は、文字のシーケンスとして表示されます。 ソース範囲の描画元となるテキストバッファーには、" *ソースバッファー*" という名前が付けられます。 プロジェクションバッファーのクライアントは、通常のテキストバッファーとは異なることを認識している必要はありません。
 
-投影バッファーは、ソース バッファー上のテキスト変更イベントをリッスンします。 ソース範囲内のテキストが変更されると、投影バッファーは変更されたテキスト座標を独自の座標にマップし、適切なテキスト変更イベントを発生させます。 たとえば、次の内容を持つソース バッファー A と B を考えてみます。
+プロジェクションバッファーは、ソースバッファーのテキスト変更イベントをリッスンします。 ソーススパン内のテキストが変化すると、プロジェクションバッファーは、変更されたテキスト座標を独自の座標にマップし、適切なテキスト変更イベントを発生させます。 たとえば、次の内容を含むソースバッファー A と B を考えてみます。
 
 ```
 A: ABCDE
 B: vwxyz
 ```
 
-投影バッファー P が 2 つのテキスト範囲から形成され、1 つはバッファー A を持ち、もう 1 つはバッファー B がすべてある場合、P は次の内容になります。
+プロジェクションバッファー P が2つのテキスト範囲から形成されている場合 (1 つはバッファー A を持ち、もう1つはバッファー B を含む)、P の内容は次のようになります。
 
 ```
 P: ABCDEvwxyz
 ```
 
-サブストリング`xy`がバッファー B から削除されると、バッファー P は、位置 7 と 8 の文字が削除されたことを示すイベントを発生させます。
+部分文字列 `xy` がバッファー B から削除されると、バッファー P は、位置7と8の文字が削除されたことを示すイベントを生成します。
 
-投影バッファーは直接編集することもできます。 編集内容を適切なソース バッファーに反映します。 たとえば、文字列が 6 位置 (文字 "v" の元の位置) のバッファー P に挿入された場合、挿入は 1 のバッファー B に伝搬されます。
+また、プロジェクションバッファーを直接編集することもできます。 適切なソースバッファーに編集を反映します。 たとえば、文字列が位置 6 (文字 "v" の元の位置) にある buffer P に挿入される場合、挿入はバッファー B の位置1に反映されます。
 
-投影バッファーに影響するソース範囲には制限があります。 ソース範囲は重複しない可能性があります。投影バッファー内の場所は、任意のソース バッファー内の複数の場所にマップすることはできませんし、ソース バッファー内の場所は、投影バッファー内の複数の場所にマップできません。 ソース バッファーリレーションシップでは循環は許可されません。
+プロジェクションバッファーに寄与するソース範囲には制限があります。 コピー元のスパンは重複してはなりません。プロジェクションバッファー内の位置は、ソースバッファー内の複数の場所にマップすることはできません。また、ソースバッファー内の位置は、プロジェクションバッファー内の複数の場所にマップすることはできません。 ソースバッファーリレーションシップでは、circularities は許可されません。
 
-イベントは、投影バッファーのソース バッファーのセットが変更されたとき、およびソースのセットが変化したときに発生します。
-エリシオン バッファーは、特殊な種類の投影バッファーです。 これは主に、アウトラインを作成し、テキストブロックを展開および折りたたむ操作に使用します。 エリシオン バッファーは 1 つのソース バッファーに基づいており、elision バッファー内の範囲は、ソース バッファーで順序付けされるのと同じ順序にする必要があります。
+イベントは、プロジェクションバッファーのソースバッファーのセットが変更されたときと、ソースのセットが変化したときに発生します。
+省略バッファーは、特別な種類のプロジェクションバッファーです。 これは主に、テキストのブロックを展開したり折りたたんだりする操作に使用されます。 省略バッファーは、1つのソースバッファーにのみ基づいています。省略バッファー内の範囲は、ソースバッファーで順序付けられているものと同じ順序にする必要があります。
 
-#### <a name="the-buffer-graph"></a>バッファグラフ
+#### <a name="the-buffer-graph"></a>バッファーグラフ
 
-この<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph>インターフェイスは、投影バッファーのグラフをマッピングできるようにします。 言語コンパイラによって生成される抽象構文ツリーと同様に、すべてのテキスト バッファーと投影バッファーは、有向非巡回グラフで収集されます。 グラフは、任意のテキスト バッファーを使用できる最上位バッファーによって定義されます。 バッファー グラフは、最上位バッファー内のポイントからソース バッファー内のポイント、または最上位バッファー内のスパンからソース バッファー内の一連の範囲にマップできます。 同様に、ソース バッファーから最上位のバッファー内のポイントにポイントまたはスパンをマップできます。 バッファー グラフは、 を使用<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>して作成します。
+<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph>インターフェイスを使用すると、プロジェクションバッファーのグラフ間でマッピングを行うことができます。 すべてのテキストバッファーとプロジェクションバッファーは、言語コンパイラによって生成される抽象構文ツリーと同様に、有向非循環グラフで収集されます。 グラフは、任意のテキストバッファーにすることができる、上位バッファーによって定義されます。 バッファーグラフは、上位バッファーのポイントからソースバッファー内のポイント、または上部バッファーのスパンからソースバッファー内の一連のスパンにマップできます。 同様に、ポイントまたはスパンをソースバッファーから上位バッファーのポイントにマップすることもできます。 バッファーグラフは、を使用して作成され <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService> ます。
 
-#### <a name="events-and-projection-buffers"></a>イベントと投影バッファー
+#### <a name="events-and-projection-buffers"></a>イベントとプロジェクションバッファー
 
-投影バッファーが変更されると、変更は投影バッファーからそれに依存するバッファーに送信されます。 すべてのバッファーが変更された後、バッファー変更イベントが最も深いバッファーから始めて発生します。
+プロジェクションバッファーを変更すると、その変更は、プロジェクションバッファーから、それに依存するバッファーに送信されます。 すべてのバッファーが変更されると、最も深いバッファーから開始して、バッファー変更イベントが発生します。
 
 ### <a name="outlining"></a>アウトライン
 
-アウトライン表示は、テキスト ビュー内のテキストブロックを展開または折りたたむ機能です。 アウトラインは、表示要素が定義される<xref:Microsoft.VisualStudio.Text.Tagging.ITag>のと同じ方法で、 の一種として定義されます。 A<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>は、展開または折りたたむことができるテキスト領域を定義するタグです。 アウトラインを使用するには、 を<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>インポートして<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>を取得する必要があります。 アウトライン マネージャは、オブジェクトとして<xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible>表されるさまざまなブロックを列挙、折りたたみ、展開し、それに応じてイベントを発生させます。
+アウトラインは、テキストビュー内の異なるテキストブロックを展開または折りたたむことができます。 アウトラインは <xref:Microsoft.VisualStudio.Text.Tagging.ITag> 、装飾が定義されている場合と同じように、一種として定義されます。 は、 <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> 展開または折りたたみが可能なテキスト領域を定義するタグです。 アウトラインを使用するには、をインポートしてを取得する必要があり <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager> ます。 アウトラインマネージャーでは、オブジェクトとして表されるさまざまなブロックを列挙、折りたたみ、展開し、 <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> それに応じてイベントを発生させます。
 
-### <a name="mouse-bindings"></a>マウスのバインド
+### <a name="mouse-bindings"></a>マウスバインド
 
-マウスバインディングは、マウスの動きを別のコマンドにリンクします。 マウス のバインドは<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>を使用して定義し、キー バインドは を<xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>使用して定義します。 は<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>、すべてのバインディングを自動的にインスタンス化し、ビュー内のマウス イベントに接続します。
+マウスのバインドは、マウスの移動を別のコマンドにリンクします。 マウスバインドはを使用して定義され、 <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> キーバインドはを使用して定義され <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider> ます。 では、すべてのバインドが自動的にインスタンス化され、 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> ビュー内のマウスイベントに接続されます。
 
-この<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor>インターフェイスには、さまざまなマウス イベントの前処理イベント ハンドラーとポスト プロセス イベント ハンドラーが含まれています。 イベントの 1 つを処理するには、 の<xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>メソッドの一部をオーバーライドします。
+インターフェイスには、 <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> さまざまなマウスイベントの処理前および処理後のイベントハンドラーが含まれています。 イベントの1つを処理するには、のメソッドの一部をオーバーライドでき <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> ます。
 
-### <a name="editor-operations"></a>編集操作
+### <a name="editor-operations"></a>エディターの操作
 
-エディター操作を使用すると、スクリプトやその他の目的で、エディターとの対話を自動化できます。 をインポートして、<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>特定<xref:Microsoft.VisualStudio.Text.Editor.ITextView>の . これらのオブジェクトを使用して、選択内容の変更、ビューのスクロール、ビューの別の部分へのキャレットの移動を行うことができます。
+エディター操作は、スクリプトやその他の目的で、エディターとの対話を自動化するために使用できます。 は、指定されたに <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> 対するアクセス操作にインポートでき <xref:Microsoft.VisualStudio.Text.Editor.ITextView> ます。 これらのオブジェクトを使用して、選択の変更、ビューのスクロール、またはカレットをビューのさまざまな部分に移動できます。
 
 ### <a name="intellisense"></a>IntelliSense
 
-IntelliSense では、ステートメント入力候補、シグネチャ ヘルプ (パラメーター情報とも呼ばれます)、クイック ヒント、電球をサポートしています。
+IntelliSense では、ステートメント入力候補、シグネチャヘルプ (パラメーターヒントとも呼ばれます)、クイックヒント、および電球がサポートされています。
 
-ステートメント入力候補は、メソッド名、XML 要素、およびその他のコーディング要素またはマークアップ要素に対して、候補の候補のポップアップ リストを提供します。 一般に、ユーザー ジェスチャは完了セッションを呼び出します。 セッションには、候補の候補の一覧が表示され、ユーザーは 1 つを選択するか、リストを閉じることができます。 は<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>、 の作成とトリガを<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>担当します。 セッション<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>の完了項目<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>のを計算します。
+ステートメント入力候補には、メソッド名、XML 要素、およびその他のコーディング要素やマークアップ要素に対して候補となる候補のポップアップリストが表示されます。 一般に、ユーザージェスチャは、完了セッションを呼び出します。 このセッションでは、候補となる候補の一覧が表示されます。ユーザーはこの一覧を選択するか、一覧を無視することができます。 は <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 、を作成およびトリガーする役割を担い <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> ます。 は、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> セッションの完了項目のを計算します。
 
 ## <a name="see-also"></a>関連項目
 
-- [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)
+- [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)
 - [エディターのインポート](../extensibility/editor-imports.md)

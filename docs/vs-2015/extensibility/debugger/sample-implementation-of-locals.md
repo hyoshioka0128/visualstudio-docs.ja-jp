@@ -1,5 +1,5 @@
 ---
-title: ローカル変数の実装のサンプル |Microsoft Docs
+title: ローカル変数 | の実装の例Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,62 +12,62 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e943fd7ba27fe21029bab4d818803186147476e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704885"
 ---
 # <a name="sample-implementation-of-locals"></a>ローカルの実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [Clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。  
   
- 式エバリュエーター (EE) から、Visual Studio がメソッドのローカル変数を取得する方法の概要を次に示します。  
+ 次に、Visual Studio が式エバリュエーター (EE) からメソッドのローカルを取得する方法の概要を示します。  
   
-1. Visual Studio はデバッグ エンジン (DE) を呼び出して[GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)を取得する、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)ローカル変数のスタック フレームのすべてのプロパティを表すオブジェクト。  
+1. Visual Studio は、デバッグエンジンの (DE) [Getdebugproperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) を呼び出して、ローカルを含むスタックフレームのすべてのプロパティを表す [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトを取得します。  
   
-2. `IDebugStackFrame2::GetDebugProperty` 呼び出し[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)をブレークポイントが発生したメソッドを記述するオブジェクトを取得します。 シンボル プロバイダーを提供する、DE ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、アドレス ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))、およびバインダー ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md))。  
+2. `IDebugStackFrame2::GetDebugProperty`[Getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)を呼び出して、ブレークポイントが発生したメソッドを説明するオブジェクトを取得します。 DE は、シンボルプロバイダー ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md))、アドレス ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md))、バインダー ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)) を提供します。  
   
-3. `IDebugExpressionEvaluator::GetMethodProperty` 呼び出し[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)指定`IDebugAddress`取得するオブジェクト、 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)指定されたアドレスを格納しているメソッドを表します。  
+3. `IDebugExpressionEvaluator::GetMethodProperty` 指定されたオブジェクトを使用して [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) を呼び出し、 `IDebugAddress` 指定したアドレスを含むメソッドを表す [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) を取得します。  
   
-4. `IDebugContainerField`インターフェイスが照会されます、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)インターフェイス。 このインターフェイス メソッドのローカル変数にアクセスできるようにすることをお勧めします。  
+4. インターフェイスは、 `IDebugContainerField` [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) インターフェイスに対して照会されます。 これは、メソッドのローカル変数へのアクセスを提供するインターフェイスです。  
   
-5. `IDebugExpressionEvaluator::GetMethodProperty` クラスをインスタンス化します (と呼ばれる`CFieldProperty`サンプル) を実装する、`IDebugProperty2`をメソッドのローカル変数を表すインターフェイス。 `IDebugMethodField`オブジェクトがこの配置`CFieldProperty`オブジェクトと共に、 `IDebugSymbolProvider`、`IDebugAddress`と`IDebugBinder`オブジェクト。  
+5. `IDebugExpressionEvaluator::GetMethodProperty``CFieldProperty`メソッドのローカルを表すインターフェイスを実装するクラス (サンプルではと呼ばれます) をインスタンス化し `IDebugProperty2` ます。 `IDebugMethodField`オブジェクトは `CFieldProperty` `IDebugSymbolProvider` 、、、およびの各オブジェクトと共に、このオブジェクトに配置され `IDebugAddress` `IDebugBinder` ます。  
   
-6. ときに、`CFieldProperty`オブジェクトが初期化される[GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)で呼び出される、`IDebugMethodField`オブジェクトを取得する、 [FIELD_INFO](../../extensibility/debugger/reference/field-info.md)メソッド自体に関する表示可能なすべての情報を含む構造体.  
+6. `CFieldProperty`オブジェクトが初期化されると、オブジェクトに対して[GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md)が呼び出され、 `IDebugMethodField` メソッド自体に関するすべての表示可能な情報を含む[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)構造を取得します。  
   
-7. `IDebugExpressionEvaluator::GetMethodProperty` 返します、`CFieldProperty`オブジェクトとして、`IDebugProperty2`オブジェクト。  
+7. `IDebugExpressionEvaluator::GetMethodProperty` オブジェクトを `CFieldProperty` オブジェクトとして返し `IDebugProperty2` ます。  
   
-8. Visual Studio 呼び出し[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)返された`IDebugProperty2`でフィルター処理されたオブジェクト`guidFilterLocalsPlusArgs`します。 これにより返されます、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)メソッドのローカル変数を含むオブジェクト。 この列挙体への呼び出しによって入力されます[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)と[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)します。  
+8. Visual Studio は、フィルターを使用して、返されたオブジェクトで [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) を呼び出し `IDebugProperty2` `guidFilterLocalsPlusArgs` ます。 これにより、メソッドのローカル変数を含む [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) オブジェクトが返されます。 この列挙体は、 [Enumlocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) および [enumlocals](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)の呼び出しによって入力されます。  
   
-9. Visual Studio 呼び出し[次](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)を取得する、 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)構造体の各ローカルです。 この構造体にはへのポインターが含まれています、`IDebugProperty2`ローカル インターフェイス。  
+9. Visual Studio は、 [次](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) にを呼び出して、各ローカルの [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 構造を取得します。 この構造体に `IDebugProperty2` は、ローカルののインターフェイスへのポインターが含まれています。  
   
-10. Visual Studio 呼び出し[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)のローカルの名前、値、および種類を取得するには、各ローカルです。 これに表示される情報、**ローカル**ウィンドウ。  
+10. Visual Studio は、ローカルの名前、値、および型を取得するために、各ローカルの [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) を呼び出します。 これは、[ **ローカル** ] ウィンドウに表示される情報です。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [GetMethodProperty の実装](../../extensibility/debugger/implementing-getmethodproperty.md)  
- 実装について説明します[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)します。  
+ [Getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)の実装について説明します。  
   
  [ローカルの列挙](../../extensibility/debugger/enumerating-locals.md)  
- デバッグ エンジン (DE) がローカル変数または引数を列挙するために呼び出しを実行する方法について説明します。  
+ デバッグエンジン (DE) がローカル変数または引数を列挙する呼び出しを行う方法について説明します。  
   
  [ローカル プロパティの取得](../../extensibility/debugger/getting-local-properties.md)  
- デが名、型、および 1 つまたは複数のローカル変数の値を取得する呼び出しを実行する方法について説明します。  
+ DE が1つ以上のローカルの名前、型、および値を取得するための呼び出しを行う方法について説明します。  
   
  [ローカル値の取得](../../extensibility/debugger/getting-local-values.md)  
- 評価コンテキストによって指定されたバインダー オブジェクトのサービスを必要とすると、ローカルの値を取得するについて説明します。  
+ 評価コンテキストによって指定されたバインダーオブジェクトのサービスを必要とする、ローカルの値の取得について説明します。  
   
  [ローカル変数の評価](../../extensibility/debugger/evaluating-locals.md)  
- ローカル変数を評価する方法について説明します。  
+ ローカル変数の評価方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)  
- DE、式エバリュエーター (EE) の呼び出し時に渡される引数を提供します。  
+ DE が式エバリュエーター (EE) を呼び出すときに渡される引数を提供します。  
   
  [MyCEE サンプル](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
- MyC 言語の式エバリュエーターを作成する 1 つの実装方法を示します。  
+ MyC 言語の式エバリュエーターを作成するための1つの実装方法を示します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ローカルの表示](../../extensibility/debugger/displaying-locals.md)

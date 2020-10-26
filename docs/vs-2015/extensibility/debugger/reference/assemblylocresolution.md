@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153602"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-アセンブリがある場所を指定します。  
+アセンブリが配置されている場所を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,30 +47,30 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>メンバー  
  ALR_NAME  
- アセンブリは、現在の名前空間にあります。  
+ アセンブリは現在の名前空間にあります。  
   
  ALR_USERDIR  
- アセンブリは、ユーザー ディレクトリ内にあります。  
+ アセンブリはユーザーディレクトリにあります。  
   
  ALR_SHAREDDIR  
- アセンブリは共有ディレクトリにあります。  
+ アセンブリは、共有ディレクトリにあります。  
   
  ALR_REMOTEDIR  
- アセンブリは、リモート ディレクトリ内にあります。  
+ アセンブリは、リモートディレクトリに配置されています。  
   
-## <a name="remarks"></a>Remarks  
- これらの値がによって返される、 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)と[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ これらの値は、 [Resolveassemblyref](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) メソッドと [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) メソッドによって返されます。  
   
- これらの値と組み合わせることができます、`OR`操作。  
+ これらの値は、操作と組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

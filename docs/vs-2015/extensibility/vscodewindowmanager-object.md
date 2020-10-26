@@ -14,22 +14,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: addd7a0146a9443739c3a63f29fe59979176edc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421890"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager オブジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-言語サービスは、コード ウィンドウ マネージャーを実装し、表示要素 (たとえば、ドロップダウン バー) を管理する責任を負います。 詳細については、次を参照してください。[レガシ API を使用してコードの Windows をカスタマイズする](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)します。  
+言語サービスはコードウィンドウマネージャーを実装し、修飾 (ドロップダウンバーなど) の管理を担当します。 詳細については、「 [従来の API を使用してコードウィンドウをカスタマイズする](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)」を参照してください。  
   
- 次の表は、インターフェイス、`VSCodeWindowManager`オブジェクト。  
+ 次の表は、オブジェクト内のインターフェイスを示して `VSCodeWindowManager` います。  
   
-|Interface|説明|  
+|インターフェイス|説明|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|(ドロップダウン バー) などの修飾に追加されたり、コード ウィンドウから削除できます。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|コードウィンドウに対する修飾 (ドロップダウンバーなど) の追加または削除を許可します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [レガシ API を使用するコード ウィンドウのカスタマイズ](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

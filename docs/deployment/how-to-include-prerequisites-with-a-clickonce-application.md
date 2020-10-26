@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382394"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントを含める
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションと共に必須コンポーネントを配布する前に、まず開発用コンピューターにそれらの必須コンポーネントのインストーラー パッケージをダウンロードする必要があります。 インストーラー パッケージが **[パッケージ]** フォルダーにない場合、アプリケーションを発行して **[アプリケーションと同じ場所から必須コンポーネントをダウンロードする]** を選択するとエラーが発生します。
 
 > [!NOTE]
-> .NET Framework のインストーラーパッケージを追加するには、「[開発者向けの .NET Framework 配置ガイド](/dotnet/framework/deployment/deployment-guide-for-developers)」を参照してください。
+> .NET Framework のインストーラーパッケージを追加するには、「 [開発者向けの .NET Framework 配置ガイド](/dotnet/framework/deployment/deployment-guide-for-developers)」を参照してください。
 
 ## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Package.xml を使用してインストーラー パッケージを追加するには
 
@@ -31,7 +31,7 @@ ms.locfileid: "85382394"
 
 3. メモ帳で、*Package.xml* ファイルを開きます。
 
-4. を含む**Name**要素を見つけ `http://go.microsoft.com/fwlink` 、URL をコピーします。 **LinkID** 部分を含めます。
+4. を含む **Name** 要素を見つけ `http://go.microsoft.com/fwlink` 、URL をコピーします。 **LinkID** 部分を含めます。
 
    > [!NOTE]
    > **Name**要素が含まれていない場合は、 `http://go.microsoft.com/fwlink` 前提条件のルートフォルダーにある**Product.xml**ファイルを開き、 **fwlink**文字列を見つけます。
@@ -45,7 +45,7 @@ ms.locfileid: "85382394"
 
 6. 必須コンポーネントのルート フォルダーにファイルをコピーします。
 
-    たとえば、Windows インストーラー4.5 の前提条件として、 *\ パッケージ \ WindowsInstaller4_5*フォルダーにファイルをコピーします。
+    たとえば、Windows インストーラー4.5 の前提条件として、 *\ パッケージ \ WindowsInstaller4_5* フォルダーにファイルをコピーします。
 
     これで、アプリケーションと共にインストーラー パッケージを配布できます。
 

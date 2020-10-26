@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0951d337375a7396d1158dc933b77fda13fa91a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667620"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
@@ -25,7 +25,7 @@ Microsoft 拡張デザインガイドライン規則セットは、基本デザ�
 
  次の表では、"Microsoft 拡張デザインガイドライン規則" 規則セット内のすべての規則について説明します。
 
-|規則|説明|
+|ルール|説明|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラーを正しく宣言します|

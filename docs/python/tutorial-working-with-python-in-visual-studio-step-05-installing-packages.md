@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e2644ccfff0e7c653f4ce2680299aea95a55ef9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79372926"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801660"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>手順 5: Python 環境へのパッケージのインストール
 
@@ -31,11 +31,11 @@ Python 開発者コミュニティは、ユーザーが独自のプロジェク�
    ![[Python Environments (Python 環境)] ウィンドウ](media/environments/environments-default-view-2019.png)
 
    > [!NOTE]
-   > [ソリューション エクスプローラー] ウィンドウをクリックし、Ctrl + K、Ctrl + ` キーボード ショートカットを使用して [Python 環境] ウィンドウを開くこともできます。 ショートカットが機能せず、メニューに [Python 環境] ウィンドウが見つからない場合は、Python ワークロードをインストールしていない可能性があります。 Python をインストールする方法については、[Visual Studio に Python サポートをインストールする方法](installing-python-support-in-visual-studio.md)に関する記事をご覧ください。
+   > [ソリューション エクスプローラー] ウィンドウを選択し、**Ctrl + K、Ctrl + `** キーボード ショートカットを使用して [Python 環境] ウィンドウを開くこともできます。 ショートカットが機能せず、メニューに [Python 環境] ウィンドウが見つからない場合は、Python ワークロードをインストールしていない可能性があります。 Python をインストールする方法については、[Visual Studio に Python サポートをインストールする方法](installing-python-support-in-visual-studio.md)に関する記事をご覧ください。
 
 2. 環境の **[概要]** タブからは、環境の**対話型**ウィンドウと、環境のインストール フォルダーおよびインタープリターにすばやくアクセスできます。 たとえば、 **[対話型ウィンドウを開く]** を選択すると、その特定の環境の**対話型**ウィンドウが Visual Studio で表示されます。
 
-3. 次に、 **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** で、 **[Python アプリケーション]** テンプレートを選択して新しいプロジェクトを作成します。 表示されるコード ファイルに、次のコードを貼り付けます。これにより、前のチュートリアルの手順のように余弦波が作成されますが、今回はグラフィカルにプロットされるだけです。 または、前に作成したプロジェクトを使用して、そのコードを置き換えることもできます。 
+3. 次に、 **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** で、 **[Python アプリケーション]** テンプレートを選択して新しいプロジェクトを作成します。 表示されるコード ファイルに、次のコードを貼り付けます。これにより、前のチュートリアルの手順のように余弦波が作成されますが、今回はグラフィカルにプロットされるだけです。 または、前に作成したプロジェクトを使用して、そのコードを置き換えることもできます。
 
     ```python
     from math import radians
@@ -50,7 +50,7 @@ Python 開発者コミュニティは、ユーザーが独自のプロジェク�
     main()
     ```
 
-4. Python プロジェクトを開いた状態で、ソリューション エクスプローラーから [Python 環境] ウィンドウを開くこともできます。それには、[Python 環境] を右クリックし、 **[すべての Python 環境の表示]** を選択します
+4. Python プロジェクトを開いた状態で、ソリューション エクスプローラーから [Python 環境] ウィンドウを開くこともできます。それには、 **[Python 環境]** を右クリックし、 **[すべての Python 環境の表示]** を選択します
 
    ![環境](media/environments/environments-view-all-2019.png)
 
@@ -60,7 +60,7 @@ Python 開発者コミュニティは、ユーザーが独自のプロジェク�
 
 ## <a name="install-packages-using-the-python-environments-window"></a>[Python 環境] ウィンドウを使用したパッケージのインストール
 
-1. [Python 環境] ウィンドウから、新しい Python プロジェクト用の既定の環境をクリックし、 **[パッケージ]** タブを選択します。そうすると、現在環境にインストールされているパッケージの一覧が表示されます。
+1. [Python 環境] ウィンドウから、新しい Python プロジェクト用の既定の環境を選択し、 **[パッケージ]** タブを選択します。そうすると、現在環境にインストールされているパッケージの一覧が表示されます。
 
    ![環境にインストールされているパッケージ](media/environments/environments-installed-packages-2019.png)
 
@@ -76,7 +76,7 @@ Python 開発者コミュニティは、ユーザーが独自のプロジェク�
 
    > [!NOTE]
    > 環境の下に小さい進行状況バーが表示され、Visual Studio が新しくインストールしたパッケージに対して、IntelliSense データベースを構築していることが示される場合があります。 **[IntelliSense]** タブにはより詳細な情報も表示されます。 そのデータベースが完了するまで、エディターではそのパッケージのオートコンプリートや構文チェックなどの IntelliSense 機能がアクティブにならないことに注意してください。
-   > 
+   >
    > Visual Studio 2017 バージョン 15.6 以降では、高速で IntelliSense を操作する異なった方法が使用されています。その効果に関するメッセージが **[IntelliSense]** タブに表示されます。
 
 ## <a name="run-the-program"></a>プログラムを実行する

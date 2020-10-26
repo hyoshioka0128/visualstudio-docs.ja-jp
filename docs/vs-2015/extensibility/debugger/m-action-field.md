@@ -1,5 +1,5 @@
 ---
-title: m_action フィールド |Microsoft Docs
+title: m_action Field |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1506827a1132c659b1082d0f3d4aed9a21b417d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149094"
 ---
-# <a name="maction-field"></a>m_action フィールド
+# <a name="m_action-field"></a>m_action フィールド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-実行するコードを表すデリゲート、<xref:System.Threading.Tasks.Task>オブジェクト。  
+オブジェクトで実行するコードを表すデリゲート <xref:System.Threading.Tasks.Task> 。  
   
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **アセンブリ:** mscorlib (mscorlib.dll 内)  
+ **アセンブリ:** mscorlib (mscorlib.dll)  
   
- .NET Framework からこの内部メンバーにアクセスできないため、次の構文には共通中間言語 (CIL) が提供されます。  
+ .NET Framework からこの内部メンバーにアクセスすることはできないため、次の構文は、共通中間言語 (CIL) で提供されています。  
   
 ## <a name="syntax"></a>構文  
   
@@ -34,8 +34,8 @@ ms.locfileid: "68149094"
 .field assembly object m_action  
 ```  
   
-## <a name="remarks"></a>Remarks  
- これは、`action`パラメーター、<xref:System.Threading.Tasks.Task.%23ctor%2A>コンス トラクター。  
+## <a name="remarks"></a>解説  
+ これは、 `action` コンストラクターのパラメーターです <xref:System.Threading.Tasks.Task.%23ctor%2A> 。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Task クラス](../../extensibility/debugger/task-class-internal-members.md)

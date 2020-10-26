@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905825"
 ---
 # <a name="how-to-get-a-service"></a>方法: サービスを取得する
@@ -23,13 +23,13 @@ ms.locfileid: "85905825"
 
 から派生 <xref:Microsoft.VisualStudio.Shell.Package> し、正しく配置されているすべての VSPackage は、任意のグローバルサービスを要求できます。 クラスは `Package` を実装するため <xref:System.IServiceProvider> 、から派生するすべての VSPackage `Package` もサービスプロバイダーになります。
 
-Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Package> 、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 初期化中にオブジェクトをメソッドに渡し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> ます。 これは、*サイト設定*VSPackage と呼ばれます。 クラスは、 `Package` このサービスプロバイダーをラップし、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> サービスを取得するためのメソッドを提供します。
+Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Package> 、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 初期化中にオブジェクトをメソッドに渡し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> ます。 これは、 *サイト設定* VSPackage と呼ばれます。 クラスは、 `Package` このサービスプロバイダーをラップし、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> サービスを取得するためのメソッドを提供します。
 
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>初期化された VSPackage からのサービスの取得
 
-1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `GetServiceExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[**新しいプロジェクト**] ダイアログで見つけることができます。
+1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `GetServiceExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. 次に、 **Getservicecommand**という名前のカスタムコマンド項目テンプレートを追加します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*GetServiceCommand.cs*に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+2. 次に、 **Getservicecommand**という名前のカスタムコマンド項目テンプレートを追加します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *GetServiceCommand.cs*に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
 3. *GetServiceCommand.cs*で、メソッドの本体を削除 `MenuItemCommand` し、次のコードを追加します。
 
@@ -40,11 +40,11 @@ Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Packag
 
    ```
 
-    このコードは、SVsActivityLog サービスを取得し、それをインターフェイスにキャストします。これを使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> アクティビティログに書き込むことができます。 例については、「[方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
+    このコードは、SVsActivityLog サービスを取得し、それをインターフェイスにキャストします。これを使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> アクティビティログに書き込むことができます。 例については、「 [方法: アクティビティログを使用する](../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
 4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-5. 実験用インスタンスの [**ツール**] メニューで、[ **Getservicecommand の呼び出し**] ボタンを探します。 このボタンをクリックすると、[**アクティビティログサービスが見つかりまし**た] というメッセージボックスが表示されます。
+5. 実験用インスタンスの [ **ツール** ] メニューで、[ **Getservicecommand の呼び出し** ] ボタンを探します。 このボタンをクリックすると、[**アクティビティログサービスが見つかりまし**た] というメッセージボックスが表示されます。
 
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>ツールウィンドウまたはコントロールコンテナーからサービスを取得する
 
@@ -52,7 +52,7 @@ Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Packag
 
 静的メソッドは、 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> から派生したすべての VSPackage が配置されるときに初期化される、キャッシュされたサービスプロバイダーに依存し <xref:Microsoft.VisualStudio.Shell.Package> ます。
 
-VSPackage コンストラクターは VSPackage が配置される前に呼び出されるため、通常、グローバルサービスは VSPackage コンストラクター内からは使用できません。 回避策については、「[方法: サービスのトラブルシューティング](../extensibility/how-to-troubleshoot-services.md)」を参照してください。
+VSPackage コンストラクターは VSPackage が配置される前に呼び出されるため、通常、グローバルサービスは VSPackage コンストラクター内からは使用できません。 回避策については、「 [方法: サービスのトラブルシューティング](../extensibility/how-to-troubleshoot-services.md) 」を参照してください。
 
 ツールウィンドウまたはその他の非 VSPackage 要素でサービスを取得する方法の例を次に示します。
 

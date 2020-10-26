@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 項目リストをコンマ区切りで表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156630"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>方法: 項目リストをコンマ区切りで表示する
@@ -69,6 +69,6 @@ ms.locfileid: "68156630"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [項目](../msbuild/msbuild-items.md)

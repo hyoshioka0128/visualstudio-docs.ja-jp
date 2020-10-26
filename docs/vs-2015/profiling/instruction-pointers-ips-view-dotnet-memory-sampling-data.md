@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143679"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>命令ポインター (IP) ビュー - .NET メモリ サンプリング データ
@@ -25,14 +25,14 @@ ms.locfileid: "68143679"
   
  排他的な値のみが一覧表示されます。  
   
-|Column|説明|  
+|Column|[説明]|  
 |------------|-----------------|  
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|  
 |**プロセス名**|プロセスの名前です。|  
 |**モジュール名**|命令を含むモジュールの名前。|  
 |**モジュール パス**|命令を含むモジュールのパスです。|  
-|**ソース ファイル**|命令を含むソース ファイルです。|  
-|**関数名**|関数の名前。|  
+|**[転送元ファイル]**|命令を含むソース ファイル。|  
+|**関数名**|関数の名前です。|  
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|  
 |**関数アドレス**|関数の開始アドレスです。|  
 |**ソース開始行**|割り当てが行われたソース ファイル内の開始行番号です。|  
@@ -45,5 +45,5 @@ ms.locfileid: "68143679"
 |**割り当てバイト数 (関数のみ)**|プロファイル実行中に割り当てられ、命令によって割り当てられたメモリのバイト数。|  
 |**割り当てバイト数 % (関数のみ)**|プロファイル実行中に割り当てられたメモリの総バイト数のうち、命令によって割り当てられたバイト数の割合。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [命令ポインター (IP) ビュー](../profiling/instruction-pointers-ips-view-sampling-data.md)

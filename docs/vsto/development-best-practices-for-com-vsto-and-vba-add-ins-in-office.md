@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918624"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88801504"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office での COM、VSTO、および VBA アドインの開発に関するベストプラクティス
   Office 用の COM、VSTO、または VBA アドインを開発している場合は、この記事で説明されている開発のベストプラクティスに従ってください。   これにより、次のメリットが得られます。
@@ -25,13 +25,13 @@ ms.locfileid: "75918624"
 - ユーザーと IT 管理者のためのアドイン配置の複雑さが軽減されます。
 - アドインの意図しないインストールまたは実行時のエラーは発生しません。
 
->注:[デスクトップブリッジ](/windows/uwp/porting/desktop-to-uwp-root)を使用して、Windows ストア用の COM、VSTO、または VBA アドインを準備することはできません。 COM、VSTO、および VBA アドインを Windows ストアまたは Office ストアに配布することはできません。
+>注: [デスクトップブリッジ](/windows/uwp/porting/desktop-to-uwp-root) を使用して、Windows ストア用の COM、VSTO、または VBA アドインを準備することはできません。 COM、VSTO、および VBA アドインを Windows ストアまたは Office ストアに配布することはできません。
 
 ## <a name="do-not-check-for-office-during-installation"></a>インストール中に Office を確認しない
  アドインのインストールプロセス中に Office がインストールされているかどうかをアドインで検出することはお勧めしません。 Office がインストールされていない場合は、アドインをインストールできます。これにより、Office のインストール後にユーザーがアクセスできるようになります。
 
 ## <a name="use-embedded-interop-types-nopia"></a>埋め込み相互運用機能型を使用する (NoPIA)
-ソリューションで .NET 4.0 以降を使用している場合は、Office プライマリ相互運用機能アセンブリ (PIA) の再頒布可能パッケージに依存するのではなく、埋め込まれた相互運用機能型 (NoPIA) を使用します。 型の埋め込みを使用すると、ソリューションのインストールサイズが削減され、将来の互換性が確保されます。 Office 2010 は、PIA 再頒布可能パッケージに同梱されていた Office の最後のバージョンです。 詳細については、「[チュートリアル: Microsoft Office アセンブリからの型情報の埋め](https://msdn.microsoft.com/library/ee317478.aspx)込み」と「[型の等価性と埋め込み相互運用機能型](/windows/uwp/porting/desktop-to-uwp-root)」を参照してください。
+ソリューションで .NET 4.0 以降を使用している場合は、Office プライマリ相互運用機能アセンブリ (PIA) の再頒布可能パッケージに依存するのではなく、埋め込まれた相互運用機能型 (NoPIA) を使用します。 型の埋め込みを使用すると、ソリューションのインストールサイズが削減され、将来の互換性が確保されます。 Office 2010 は、PIA 再頒布可能パッケージに同梱されていた Office の最後のバージョンです。 詳細については、「 [チュートリアル: Microsoft Office アセンブリからの型情報の埋め](https://msdn.microsoft.com/library/ee317478.aspx) 込み」と「 [型の等価性と埋め込み相互運用機能型](/windows/uwp/porting/desktop-to-uwp-root)」を参照してください。
 
 ソリューションで以前のバージョンの .NET を使用している場合は、.NET 4.0 以降を使用するようにソリューションを更新することをお勧めします。 .NET 4.0 以降を使用すると、新しいバージョンの Windows で実行時の前提条件を減らすことができます。
 
@@ -57,7 +57,7 @@ VBA コードを記述する場合は、64ビットセーフな declare ステ�
 ソリューション内のバイナリのバージョン番号を設定し、更新ごとにインクリメントします。 これにより、ユーザーはバージョン間の変更を識別し、互換性を評価することが容易になります。
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Office の最新バージョンのサポートに関する声明を提供する
-お客様は、Office で実行される COM、VSTO、および VBA アドインに対してサポートステートメントを提供するよう Isv に依頼しています。 明示的なサポートステートメントを一覧表示しておくと、Office 365 ProPlus readiness ツールを使用したお客様のサポートの理解に役立ちます。
+お客様は、Office で実行される COM、VSTO、および VBA アドインに対してサポートステートメントを提供するよう Isv に依頼しています。 明示的なサポートステートメントを一覧表示しているお客様は、エンタープライズ対応ツールで Microsoft 365 アプリを使用して、サポートを理解することができます。
 
 Office クライアントアプリケーション (Word、Excel など) のサポートステートメントを提供するには、まず、アドインが現在の Office リリースで実行されていることを確認し、今後のリリースでアドインが破損した場合に、更新プログラムの提供を確定します。 Microsoft が新しいビルドをリリースしたとき、または Office に更新プログラムをリリースしたときに、アドインをテストする必要はありません。 Microsoft では、Office の COM、VSTO、および VBA の拡張プラットフォームを変更することはほとんどありません。これらの変更については、ドキュメントをご覧ください。
 

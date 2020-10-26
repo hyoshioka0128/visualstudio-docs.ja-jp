@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ee7ce7c4e9edad9d941b4a70b2a199a37130e43
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543989"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別子は、正しいサフィックスを含んでいなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
@@ -57,7 +57,7 @@ ms.locfileid: "85543989"
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Collection または DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|ストリーム|
-|<xref:System.Security.IPermission?displayProperty=fullName>|アクセス許可|
+|<xref:System.Security.IPermission?displayProperty=fullName>|権限|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|条件|
 |イベントハンドラーデリゲート。|EventHandler|
 
@@ -92,5 +92,5 @@ foreach(SomeType x in SomeDictionary.Values) { }
 ## <a name="related-rules"></a>関連規則
  [CA1711:識別子は、不適切なサフィックスを含むことはできません](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [属性](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: イベントとデリゲート](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -1,5 +1,5 @@
 ---
-title: ローカルの表示 |マイクロソフトドキュメント
+title: 表示 (ローカル |)Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738934"
 ---
-# <a name="display-locals"></a>ローカル表示
+# <a name="display-locals"></a>ローカルの表示
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- 実行は、常にメソッドのコンテキスト内で行われます。 実行が一時停止すると、Visual Studio はデバッグ エンジン (DE) を呼び出して、メソッドのローカル変数とローカル変数の一覧を取得します。 Visual Studio では、これらのローカル変数とその値が **[ローカル]** ウィンドウに表示されます。
+ 実行は常にメソッドのコンテキスト内で行われます。これは、コンテナーメソッドまたは現在のメソッドとも呼ばれます。 実行が一時停止すると、Visual Studio はデバッグエンジン (DE) を呼び出してローカル変数と引数の一覧を取得します。これは、総称してメソッドのローカルと呼ばれます。 これらのローカルと値は、Visual Studio の [ **ローカル** ] ウィンドウに表示されます。
 
- ローカルを表示するには、DE は、EE に属する[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)メソッドを呼び出し、評価コンテキスト、つまり、シンボル プロバイダー (SP)、現在の実行アドレス、およびバインダー オブジェクトを提供します。 詳細については、「[評価コンテキスト](../../extensibility/debugger/evaluation-context.md)」を参照してください。 呼び出しが成功した`IDebugExpressionEvaluator::GetMethodProperty`場合、メソッドは、現在の実行アドレスを含むメソッドを表す[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトを返します。
+ ローカルを表示するために、DE は、EE に属する [Getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) メソッドを呼び出し、評価コンテキスト (つまり、シンボルプロバイダー (SP)、現在の実行アドレス、およびバインダーオブジェクト) を提供します。 詳細については、「 [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)」を参照してください。 呼び出しが成功した場合、メソッドは、 `IDebugExpressionEvaluator::GetMethodProperty` 現在の実行アドレスを含むメソッドを表す [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトを返します。
 
- DE は[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出して[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを取得[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)します。 各構造体には、ローカルの名前、型、および値が含まれます。 型と値は、表示に適した書式付き文字列として格納されます。 名前、型、および値は、通常、[**ローカル**] ウィンドウの 1 行にまとめて表示されます。
+ DE は、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを取得するために[enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出します。このオブジェクトは、ローカルと列挙型のみを返して[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)構造体のリストを生成するようにフィルター処理されます。 各構造体には、ローカルのの名前、型、および値が含まれます。 型と値は、表示に適した書式設定された文字列として格納されます。 通常、名前、型、および値は、[ **ローカル** ] ウィンドウの1行にまとめて表示されます。
 
 > [!NOTE]
-> **[クイック ウォッチ]** ウィンドウと **[ウォッチ]** ウィンドウには、名前、値、および種類の同じ形式の変数も表示されます。 ただし、これらの値は、 の代わりに[GetPropertyInfo を](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)呼び出すことによって取得されます`IDebugProperty2::EnumChildren`。
+> [ **クイックウォッチ** ] ウィンドウと [ **ウォッチ** ] ウィンドウには、同じ形式の名前、値、および型の変数も表示されます。 ただし、これらの値は、ではなく [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) を呼び出すことによって取得され `IDebugProperty2::EnumChildren` ます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [ローカルのサンプル実装](../../extensibility/debugger/sample-implementation-of-locals.md)例を使用して、ローカルを実装するプロセスを段階的に実行します。
+ [ローカルの実装のサンプル](../../extensibility/debugger/sample-implementation-of-locals.md) 例を使用して、ローカルを実装するプロセスを段階的に実行します。
 
 ## <a name="related-sections"></a>関連項目
- [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)デバッグ エンジン (DE) が式エバリュエーター (EE) を呼び出すときに、3 つの引数を渡す方法について説明します。
+ [評価コンテキスト](../../extensibility/debugger/evaluation-context.md) デバッグエンジン (DE) が式エバリュエーター (EE) を呼び出すと、3つの引数が渡されることについて説明します。
 
 ## <a name="see-also"></a>関連項目
  [CLR 式エバリュエーターを記述する](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

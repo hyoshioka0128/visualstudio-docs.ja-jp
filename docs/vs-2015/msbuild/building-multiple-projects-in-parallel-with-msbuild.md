@@ -1,4 +1,4 @@
-﻿---
+---
 title: MSBuild での複数のプロジェクトの並行ビルド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f80f0898167de133d78d27d26f97d0ab8ced0b31
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843948"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>MSBuild での複数のプロジェクトの並行ビルド
@@ -30,14 +30,14 @@ MSBuild では、複数のプロジェクトを並列に実行することによ
 - <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> タスク パラメーターを MSBuild タスクで使用します。  
   
 > [!NOTE]
-> コマンド ラインで **/verbosity** ( **/v**) スイッチを使うと、ビルドのパフォーマンスが影響を受ける場合があります。 ビルド ログ情報の詳細レベルが、トラブルシューティングで使用するために "詳細" または "診断" に設定されている場合、ビルドのパフォーマンスが低下する可能性があります。 詳しくは、「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」と「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。  
+> コマンドラインの **/verbosity** (**/v**) スイッチは、ビルドのパフォーマンスにも影響を与えることがあります。 ビルド ログ情報の詳細レベルが、トラブルシューティングで使用するために "詳細" または "診断" に設定されている場合、ビルドのパフォーマンスが低下する可能性があります。 詳細については、「 [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md) 」と「 [コマンドラインリファレンス](../msbuild/msbuild-command-line-reference.md)」を参照してください。  
   
 ## <a name="maxcpucount-switch"></a>/maxcpucount スイッチ  
  `/maxcpucount` スイッチ (省略形は `/m`) を使用すると、MSBuild では、並列実行される可能性がある MSBuild.exe プロセスを指定された数だけ作成できます。 これらのプロセスは、"ワーカー プロセス" とも呼ばれます。 各ワーカー プロセスがそれぞれ別のコアまたはプロセッサを使用してプロジェクトをビルドするため、プロセッサごとに異なるプロジェクトを同時にビルドできます。 たとえば、このスイッチを "4" に設定すると、MSBuild では 4 つのワーカー プロセスを作成してプロジェクトをビルドします。  
   
  値を指定せずに `/maxcpucount` スイッチを追加すると、MSBuild では、コンピューター上のプロセッサの数まで使用します。  
   
- MSBuild 3.5 で導入されたこのスイッチについて詳しくは、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。  
+ MSBuild 3.5 で導入されたこのスイッチの詳細については、「 [コマンドラインリファレンス](../msbuild/msbuild-command-line-reference.md)」を参照してください。  
   
  次の例は、MSBuild で 3 つのワーカー プロセスを使用する方法を示しています。 この構成を使用すると、MSBuild では同時に 3 つのプロジェクトをビルドできます。  
   
@@ -72,7 +72,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 </MSBuild>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [複数のプロセッサを使用したプロジェクトのビルド](../msbuild/using-multiple-processors-to-build-projects.md)   
- [マルチプロセッサ対応の logger の記述](../msbuild/writing-multi-processor-aware-loggers.md)   
- [C++ での並列ビルドの調整に関するブログ](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)
+ [マルチプロセッサ対応の Logger の記述](../msbuild/writing-multi-processor-aware-loggers.md)   
+ [C++ ビルド並列処理のチューニングに関するブログ](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank |Microsoft Docs
+title: 'IDebugArrayField:: Ge/k |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d0396718482c9ce90527155a3612160612f66d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198732"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ランクの配列の次元数を取得します。  
+配列の次元のランクまたは数を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,13 +40,13 @@ int GetRank(
   
 #### <a name="parameters"></a>パラメーター  
  `pdwRank`  
- [out]順位を返します。  
+ 入出力ランクを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 配列のランクは、ディメンションの数に対応します。 C++ および C# の場合、多次元配列、配列の配列で実際には、1 次元の配列だけを考慮するそのためことができます (および`GetRank`メソッドは常に 1 を返します)。 [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]、その一方で、多次元配列は異なる方法で処理およびそのような配列のランクには、ディメンションの数が反映されます (および`GetRank`メソッドは常にディメンションの数を返します)。  
+## <a name="remarks"></a>注釈  
+ 配列のランクは、次元の数に対応します。 C++ および C# では、多次元配列は配列の配列であるため、1次元配列と見なされることがあり `GetRank` ます (メソッドは常に1を返します)。 一方、では、 [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] 多次元配列は異なる方法で処理され、そのような配列のランクは次元の数を反映し `GetRank` ます (メソッドは常に次元数を返します)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

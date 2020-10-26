@@ -1,5 +1,5 @@
 ---
-title: m_stateObjectフィールド |マイクロソフトドキュメント
+title: m_stateObject Field |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738374"
 ---
-# <a name="m_stateobject-field"></a>m_stateObjectフィールド
-アクションで使用されるデータを表すオブジェクト。
+# <a name="m_stateobject-field"></a>m_stateObject フィールド
+アクションが使用するデータを表すオブジェクト。
 
- **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib *(mscorlib.dll*内)
+ **アセンブリ:** mscorlib ( *mscorlib.dll*)
 
- この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
+ .NET Framework からこの内部メンバーにアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。
 
 ## <a name="syntax"></a>構文
 
@@ -32,8 +32,8 @@ ms.locfileid: "80738374"
 .field assembly object m_stateObject
 ```
 
-## <a name="remarks"></a>Remarks
- これは<xref:System.Threading.Tasks.Task.%23ctor%2A>、コンストラクター`state`のパラメーターです。 また、<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>プロパティのバッキング フィールドでもあります。
+## <a name="remarks"></a>解説
+ これは、 `state` コンストラクターのパラメーターです <xref:System.Threading.Tasks.Task.%23ctor%2A> 。 これは、プロパティのバッキングフィールドでも <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> あります。
 
 ## <a name="see-also"></a>関連項目
 - [Task クラス](../../extensibility/debugger/task-class-internal-members.md)

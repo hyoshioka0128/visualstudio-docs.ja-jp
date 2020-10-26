@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2cfbaf8c3756bf758956d1f1e5964d8e9f8f0c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205185"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-検索したシンボルの検索パスに関するステータス情報が含まれています。  
+検索されたシンボル検索パスに関する状態情報が含まれます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,21 +43,21 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>パラメーター  
  `dwValidFields`  
- フラグの組み合わせ、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)この構造体で表される検索情報の種類を指定する列挙体。  
+ この構造体で記述されている検索情報の種類を指定する、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列挙のフラグの組み合わせ。  
   
  `bstrVerboseSearchInfo`  
- 検索パスと 1 つの文字列に連結された結果。  
+ 検索パスと結果が1つの文字列に連結されます。  
   
-## <a name="remarks"></a>Remarks  
- この構造体がへの呼び出しから返される、 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [Getシンボル情報](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) メソッドの呼び出しから返されます。  
   
- 場合、`bstrVerboseSearchInfo`フィールドが空ではありませんし、検索するパスと検索結果の一覧が含まれています。 一覧には、省略記号 (「...」)、結果の後に続く、パスが表示されます。 1 つ以上のパスの結果のペアがある場合は、各ペアは"\r\n"(復帰と改行) のペアによって区切られます。 パターンのようになります。  
+ `bstrVerboseSearchInfo`フィールドが空でない場合は、検索したパスとその検索結果の一覧が含まれています。 リストはパスで書式設定され、その後に省略記号 ("...") が続き、その後に結果が続きます。 複数のパスの結果のペアがある場合、各ペアは "\r\n" (キャリッジリターン/ラインフィード) ペアで区切られます。 パターンは次のようになります。  
   
- \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
+ \<path>...\<result>\r\n \<path> . \<result> .\r\n \<path> ..\<result>  
   
- 最後のエントリに \r\n シーケンスがないことに注意してください。  
+ 最後のエントリには \r\n シーケンスがないことに注意してください。  
   
- ここでは、する可能性のある`bstrVerboseSearchInfo`を標準出力に送信された文字列。  
+ 次に示すのは、 `bstrVerboseSearchInfo` 標準出力に送信された文字列です。  
   
  `c:\symbols\user32.pdb... File not found.`  
   
@@ -65,13 +65,13 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
  `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

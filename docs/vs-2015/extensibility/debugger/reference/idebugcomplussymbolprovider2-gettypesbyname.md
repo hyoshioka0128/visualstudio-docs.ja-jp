@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName |Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: GetTypesByName |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 40eb29bab07e657d22cd9559fa53fa3ced2139ff
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540579"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-その名前を指定する型を取得します。  
+名前を指定して型を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,22 +43,22 @@ int GetTypesByName(
   
 #### <a name="parameters"></a>パラメーター  
  `pszClassName`  
- [in]型の名前。  
+ から型の名前。  
   
  `nameMatch`  
- [in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。  
+ から一致の種類 (大文字と小文字を区別するなど) を選択します。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体の値。  
   
  `ppEnum`  
- [out]指定した名前の種類を含む列挙子。  
+ 入出力指定された名前を持つ型を含む列挙子。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 検索する名前、ジェネリック型の 'リスト\<int >' または' リスト\<int, int >' 'List' になります。 複数のモジュールで同じ名前の型が表示されない場合、`ppEnum`パラメーターには、すべてのコピーにが含まれます。 使用して[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)と区別に基づいて、`guidModule`パラメーター。  
+## <a name="remarks"></a>注釈  
+ ジェネリック型の場合、' list ' または ' List ' に対して検索する名前は \<int> \<int,int> ' list ' になります。 同じ名前の型が複数のモジュールに出現する場合、パラメーターには `ppEnum` すべてのコピーが含まれます。 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)を使用して、パラメーターに基づいて区別する必要があり `guidModule` ます。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイス。  
+ 次の例は、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypesByName(  
@@ -123,5 +123,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

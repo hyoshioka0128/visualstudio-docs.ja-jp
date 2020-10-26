@@ -8,21 +8,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542598"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>1 つのソリューション内の複数の DSL
 
 いくつかの DSL を単一ソリューションの一部としてパッケージ化し、同時にインストールすることができます。
 
-複数の DSL を統合するためにいくつかの手法を使用できます。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」および「[方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md)」および「[コピー動作をカスタマイズ](../modeling/customizing-copy-behavior.md)する」を参照してください。
+複数の DSL を統合するためにいくつかの手法を使用できます。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md) したモデルの統合」および「 [方法: ドラッグアンドドロップハンドラーを追加する](../modeling/how-to-add-a-drag-and-drop-handler.md) 」および「 [コピー動作をカスタマイズ](../modeling/customizing-copy-behavior.md)する」を参照してください。
 
 ## <a name="build-more-than-one-dsl-in-the-same-solution"></a>同じソリューション内に複数の DSL を作成する
 
-1. 新しい**VSIX プロジェクト**プロジェクトを作成します。
+1. 新しい **VSIX プロジェクト** プロジェクトを作成します。
 
 2. VSIX ソリューションディレクトリに2つ以上の DSL プロジェクトを作成します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "85542598"
 
    - **Dsl**および**dslpackage**プロジェクトの名前を変更して、それらがすべて異なっているようにします。 たとえば、`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2` のようになります。
 
-   - 各**Dslpackage \* \ source.extension.tt**で、次の行を正しい Dsl プロジェクト名に更新します。
+   - 各 **Dslpackage \* \ source.extension.tt**で、次の行を正しい Dsl プロジェクト名に更新します。
 
       `string dslProjectName = "Dsl2";`
 
@@ -42,7 +42,7 @@ ms.locfileid: "85542598"
 
    1. _Yourvsixproject 配置_**\source.extension.manifest**を開きます。
 
-   2. DSL ごとに、[**コンテンツの追加**] を選択し、次のように追加します。
+   2. DSL ごとに、[ **コンテンツの追加** ] を選択し、次のように追加します。
 
        - `Dsl*`**MEF コンポーネント**としてのプロジェクト
 

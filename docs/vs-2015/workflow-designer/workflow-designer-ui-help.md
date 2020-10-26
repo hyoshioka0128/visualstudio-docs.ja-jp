@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf1a78148e2520478c7c6bc3e7953adccbab8c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657555"
 ---
 # <a name="workflow-designer-ui-help"></a>ワークフロー デザイナーの UI ヘルプ
-ここでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)]の状況依存ヘルプ トピックについて紹介します。 @No__t_0 で作業している場合は、[[!INCLUDE[wfd2](../includes/wfd2-md.md)]] ダイアログボックスが開いているときに**F1**キーを押すと、ユーザーインターフェイスからこれらのトピックにアクセスできます。
+ここでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)]の状況依存ヘルプ トピックについて紹介します。 で作業し [!INCLUDE[vs2010](../includes/vs2010-md.md)] ている場合、ダイアログボックスが開いているときに **F1** キーを押すと、ユーザーインターフェイスからこれらのトピックにアクセスでき [!INCLUDE[wfd2](../includes/wfd2-md.md)] ます。
 
  このセクションには、ナビゲーションとエラー メッセージについてのトピックも含まれています。
 

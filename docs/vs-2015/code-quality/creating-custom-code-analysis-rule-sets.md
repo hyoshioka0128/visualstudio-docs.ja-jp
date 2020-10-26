@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 19b7079f2a24e6a904a2d1266e7605f0e56e5dae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667687"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>カスタム コード分析規則セットの作成
@@ -24,9 +24,9 @@ ms.locfileid: "72667687"
  また、2つ以上の標準規則セットを組み合わせたカスタム規則セットを作成したり、1つまたは複数の標準規則セットで規則を指定したりすることもできます。 カスタム規則セットは、規則セットファイルに保存し、複数のコードプロジェクトで指定することができます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [方法: カスタム規則セットを作成](../code-quality/how-to-create-a-custom-rule-set.md)する1つまたは複数の標準規則セットを変更することによってカスタム規則セットを作成する方法について説明します。
+ [方法: カスタム規則セットを作成](../code-quality/how-to-create-a-custom-rule-set.md) する1つまたは複数の標準規則セットを変更することによってカスタム規則セットを作成する方法について説明します。
 
- [規則セットエディターでの作業](../code-quality/working-in-the-code-analysis-rule-set-editor.md)規則セットエディターを使用して、カスタム規則セットのコード分析規則をグループ化、並べ替え、フィルター処理、および変更する方法について説明します。
+ [規則セットエディターでの作業](../code-quality/working-in-the-code-analysis-rule-set-editor.md) 規則セットエディターを使用して、カスタム規則セットのコード分析規則をグループ化、並べ替え、フィルター処理、および変更する方法について説明します。
 
 ## <a name="see-also"></a>参照
- [コード分析規則セットのリファレンス](../code-quality/code-analysis-rule-set-reference.md)[マネージコードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)[コード分析を使用した C/C++コード品質](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)の分析
+ [コード分析規則セットのリファレンス](../code-quality/code-analysis-rule-set-reference.md)[マネージコードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)[コード分析を使用した C/c + + コード品質の分析](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)

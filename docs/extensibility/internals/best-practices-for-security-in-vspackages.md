@@ -1,5 +1,5 @@
 ---
-title: VS パッケージのセキュリティに関するベスト プラクティス |マイクロソフトドキュメント
+title: Vspackage のセキュリティに関するベストプラクティス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80709903"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012140"
 ---
-# <a name="best-practices-for-security-in-vspackages"></a>VS パッケージのセキュリティに関するベスト プラクティス
-をコンピューター[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]にインストールするには、管理者資格情報を使用してコンテキストで実行する必要があります。 アプリケーションのセキュリティと配置の基本単位は[、 VSPackage です。](../../extensibility/internals/vspackages.md) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage は、 を使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]して登録する必要があります。
+# <a name="best-practices-for-security-in-vspackages"></a>Vspackage のセキュリティに関するベストプラクティス
+コンピューターにをインストールするには、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 管理者資格情報を持つコンテキストでを実行している必要があります。 アプリケーションのセキュリティと展開の基本単位 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、 [VSPackage](../../extensibility/internals/vspackages.md)です。 VSPackage は [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、管理者の資格情報も必要とするを使用して登録する必要があります。
 
- 管理者は、レジストリとファイル システムに書き込み、コードを実行するための完全なアクセス許可を持っています。 VSPackage を開発、展開、またはインストールするには、これらのアクセス許可が必要です。
+ 管理者は、レジストリとファイルシステムに書き込み、任意のコードを実行するための完全なアクセス許可を持っています。 VSPackage を開発、展開、またはインストールするには、これらのアクセス許可を持っている必要があります。
 
- インストールされるとすぐに VSPackage は完全に信頼されます。 VSPackage に関連付けられているアクセス許可のこの高レベルのため、悪意のある VSPackage を誤ってインストールする可能性があります。
+ インストールが完了するとすぐに、VSPackage は完全に信頼されます。 この高いレベルのアクセス許可が VSPackage に関連付けられているため、悪意のある意図を持つ VSPackage を誤ってインストールする可能性があります。
 
- ユーザーは、信頼できるソースからのみ VSPackages をインストールするようにする必要があります。 VSPackage を開発する企業は、改ざんが防止されることをユーザーに保証するために、厳密に名前を付け、署名する必要があります。 VSPackage を開発する企業は、Web サービスやリモート インストールなどの外部依存関係を調査して、セキュリティ問題を評価および修正する必要があります。
+ ユーザーは、信頼できるソースからのみ Vspackage をインストールする必要があります。 Vspackage を開発する企業は、ユーザーの改ざんを防止するために、厳密に名前を付けて署名する必要があります。 Vspackage を開発する企業は、web サービスやリモートインストールなどの外部の依存関係を調べて、セキュリティ上の問題を評価し、修正する必要があります。
 
- 詳細については、「 [.NET Framework のセキュリティで保護されたコーディングのガイドライン](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))」を参照してください。
+ 詳細については、「 [.NET Framework の安全なコーディングのガイドライン](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [アドインのセキュリティ](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [DDEX セキュリティ](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+- [アドインのセキュリティ](/previous-versions/1326zbk3(v=vs.140))
+- [DDEX のセキュリティ](/previous-versions/bb163703(v=vs.140))

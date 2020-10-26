@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a9ebe244f3e1c1f3f95508d6df979edee2d4aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205116"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
@@ -48,22 +48,22 @@ public enum enum_PARSEFLAGS { 
  式がステートメントではないことを示します。  
   
  PARSE_FUNCTION_AS_ADDRESS  
- 解析 (および後で評価) アドレスとして、式があることを示します。  
+ 式がアドレスとして解析 (および後で評価) されることを示します。  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- 式はデザイン時に解析されていることを示します (つまり、デザイナーが開いているとき)。  
+ デザイン時に式が解析されることを示します (つまり、デザイナーが開いている場合)。  
   
-## <a name="remarks"></a>Remarks  
- パラメーターとして渡される、 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)と[解析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [Parsetext](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドおよび[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)メソッドにパラメーターとして渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

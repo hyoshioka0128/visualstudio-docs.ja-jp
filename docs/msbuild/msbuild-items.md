@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183666"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88247588"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>ターゲットの外部にある ItemGroup の項目のメタデータを更新する
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>ターゲットの外部にある ItemGroup の項目のメタデータを更新する
 
 ターゲットの外部にある項目は、`Update` 属性を使用して既存のメタデータを更新できます。 この属性は、ターゲットにある項目には使用でき**ません**。
 

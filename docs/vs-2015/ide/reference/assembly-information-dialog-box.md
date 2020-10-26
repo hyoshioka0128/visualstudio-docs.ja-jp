@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[アセンブリ情報] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,18 +14,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06374f70c2552f3e635ada3bc40ef82d890fb46b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661025"
 ---
 # <a name="assembly-information-dialog-box"></a>[アセンブリ情報] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**[アセンブリ情報]** ダイアログ ボックスは、[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 **ソリューション エクスプローラー**では、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] の **[マイ プロジェクト]** ノードにこのファイルがあります ( **[すべてのファイルを表示]** をクリックして表示します)。これは [!INCLUDE[csprcs](../../includes/csprcs-md.md)] の **[プロパティ]** にあります。 アセンブリ属性の詳細については、「[属性](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)」を参照してください。
+**[アセンブリ情報]** ダイアログ ボックスは、[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 **ソリューション エクスプローラー**では、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] の **[マイ プロジェクト]** ノードにこのファイルがあります (**[すべてのファイルを表示]** をクリックして表示します)。これは [!INCLUDE[csprcs](../../includes/csprcs-md.md)] の **[プロパティ]** にあります。 アセンブリ属性の詳細については、「[属性](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)」を参照してください。
 
- このダイアログ ボックスを表示するには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、 **[アプリケーション]** タブをクリックします。 **[アプリケーション]** ページで、 **[アセンブリ情報]** ボタンをクリックします。
+ このダイアログ ボックスを表示するには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。 **プロジェクトデザイナー**が表示されたら、[**アプリケーション**] タブをクリックします。**アプリケーション**ページで、[**アセンブリ情報**] ボタンをクリックします。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **タイトル** アセンブリ マニフェストのタイトルを指定します。 <xref:System.Reflection.AssemblyTitleAttribute> に相当します。
@@ -46,9 +46,9 @@ ms.locfileid: "72661025"
 
  **GUID** アセンブリを示す一意の GUID。 プロジェクトを作成すると、Visual Studio でアセンブリの GUID が生成されます。 <xref:System.Guid> に相当します。
 
- **ニュートラル言語** アセンブリがサポートするカルチャを指定します。 <xref:System.Resources.NeutralResourcesLanguageAttribute> に相当します。 既定値は **[(なし)]** です。
+ **ニュートラル言語** アセンブリがサポートするカルチャを指定します。 <xref:System.Resources.NeutralResourcesLanguageAttribute> に相当します。 既定値は **[(なし)**] です。
 
  **アセンブリを COM 参照可能にする** アセンブリの型を COM に使用できるようにするかどうかを指定します。 <xref:System.Runtime.InteropServices.ComVisibleAttribute> に相当します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [[アプリケーション] ページ (プロジェクトデザイナー (Visual Basic) の](../../ide/reference/application-page-project-designer-visual-basic.md)[属性](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205))

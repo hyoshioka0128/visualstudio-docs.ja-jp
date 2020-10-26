@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77027239"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した Visual Basic コードのデバッグについて理解する
@@ -71,9 +71,9 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、プロジェクトに *get-started-debugging* という名前を指定します。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、プロジェクトに *get-started-debugging* という名前を指定します。
 
      **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。
 
@@ -205,7 +205,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. `SendMessage` メソッドの呼び出しに再び戻るまで、**F11** キーを何度か押します。
 
-1. メソッドの呼び出しで一時停止している間に、一度、**F10** キーを押します (または、 **[デバッグ]、[ステップ オーバー]** の順に選択します)。
+1. メソッドの呼び出しで一時停止している間に、一度、**F10** キーを押します (または、**[デバッグ]、[ステップ オーバー]** の順に選択します)。
 
      ![F10 キーを使用してコードをステップ オーバーする](../visual-basic/media/get-started-step-over-vb.png "F10 ステップ オーバー")
 

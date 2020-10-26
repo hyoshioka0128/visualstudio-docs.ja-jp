@@ -13,10 +13,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe87bff62c1044442b579664fb789f918a2e6c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186460"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 要素 (Visual Studio テンプレート)
@@ -25,7 +25,7 @@ ms.locfileid: "68186460"
 テンプレートの内容を指定します。  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,7 +42,7 @@ ms.locfileid: "68186460"
   
 |属性|説明|  
 |---------------|-----------------|  
-|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|テンプレートからプロジェクトが作成されたときに、ソリューションをビルドするかどうかを指定します。|  
+|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|プロジェクトがテンプレートから作成されたときにソリューションをビルドするかどうかを指定します。|  
   
 ### <a name="child-elements"></a>子要素  
   
@@ -52,16 +52,16 @@ ms.locfileid: "68186460"
 |[プロジェクト](../extensibility/project-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトに追加するファイルまたはディレクトリを指定します。|  
 |[参照](../extensibility/references-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> 項目テンプレートに必要なアセンブリ参照を指定します。|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|省略可能な要素です。<br /><br /> テンプレートに含まれるファイルを指定します。|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトまたは項目が、テンプレートから作成されるときに使用されるすべてのカスタム パラメーターを指定します。|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|省略可能な要素です。<br /><br /> プロジェクトまたは項目がテンプレートから作成されるときに使用されるカスタムパラメーターを指定します。|  
   
 ### <a name="parent-elements"></a>親要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクト テンプレート、項目テンプレート、またはスタート キットのすべてのメタデータが含まれています。|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必須の要素です。<br /><br /> プロジェクトテンプレート、項目テンプレート、またはスタートキットのすべてのメタデータが含まれます。|  
   
-## <a name="remarks"></a>Remarks  
- `TemplateContent` 必要な要素です。  
+## <a name="remarks"></a>注釈  
+ `TemplateContent` は必須の要素です。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。  
@@ -90,6 +90,6 @@ ms.locfileid: "68186460"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

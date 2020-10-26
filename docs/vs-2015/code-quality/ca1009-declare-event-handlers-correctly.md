@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6a4a4e2e6990772b50568043c4d18ff29248571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547889"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009:イベント ハンドラーを正しく宣言します
@@ -47,7 +47,7 @@ ms.locfileid: "85547889"
  この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例は、イベントの処理に適したデリゲートを示しています。 このイベントハンドラーによって呼び出すことができるメソッドは、デザインガイドラインで指定されているシグネチャに準拠しています。 `AlarmEventHandler`デリゲートの型名を指定します。 `AlarmEventArgs`イベントデータの基本クラスから派生し、 <xref:System.EventArgs> アラームイベントデータを保持します。
+ 次の例は、イベントの処理に適したデリゲートを示しています。 このイベントハンドラーによって呼び出すことができるメソッドは、デザインガイドラインで指定されているシグネチャに準拠しています。 `AlarmEventHandler` デリゲートの型名を指定します。 `AlarmEventArgs` イベントデータの基本クラスから派生し、 <xref:System.EventArgs> アラームイベントデータを保持します。
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]
@@ -56,6 +56,6 @@ ms.locfileid: "85547889"
 ## <a name="related-rules"></a>関連規則
  [CA2109:表示するイベント ハンドラーを確認します](../code-quality/ca2109-review-visible-event-handlers.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
  [NIB: イベントとデリゲート](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

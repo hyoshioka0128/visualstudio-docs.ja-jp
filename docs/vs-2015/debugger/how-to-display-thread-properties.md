@@ -1,5 +1,5 @@
 ---
-title: '方法: スレッドのプロパティの表示 |Microsoft Docs'
+title: '方法: スレッドのプロパティを表示する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,21 +12,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a9d311563134850a7b2efd04eb6d6ed00dfcc25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205361"
 ---
 # <a name="how-to-display-thread-properties"></a>方法: スレッドのプロパティを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-記載のスレッドの詳細を確認する[スレッド ビュー](../debugger/threads-view.md)を使用して、[スレッド プロパティ ダイアログ ボックス](../debugger/thread-properties-dialog-box.md)します。  
+[スレッド ビュー](../debugger/threads-view.md)に一覧表示されるスレッドの詳細を確認するには、[[スレッド プロパティ] ダイアログ ボックス](../debugger/thread-properties-dialog-box.md)を使用します。  
   
-### <a name="to-open-a-thread-properties-dialog-box"></a>スレッド プロパティのダイアログ ボックスを開く  
+### <a name="to-open-a-thread-properties-dialog-box"></a>[スレッド プロパティ] ダイアログ ボックスを開く手順  
   
-1. 表示されるツリーからスレッドを選択します。[スレッド ビュー](../debugger/threads-view.md)します。  
+1. [スレッド ビュー](../debugger/threads-view.md)に表示されるツリーからスレッドを選択します。  
   
-2. **ビュー** ] メニューの [選択**プロパティ**します。  
+2. **[表示]** メニューの **[プロパティ]** をクリックします。  
   
-   プロパティのダイアログ ボックスはモーダルではないため、表示ウィンドウで他のアイテムをクリックして、ダイアログ ボックスの選択項目に関する情報が表示されます。
+   [プロパティ] ダイアログ ボックスはモーダルではないため、ビュー ウィンドウで別の項目をクリックして、選択した項目に関する情報をダイアログ ボックスに表示することができます。

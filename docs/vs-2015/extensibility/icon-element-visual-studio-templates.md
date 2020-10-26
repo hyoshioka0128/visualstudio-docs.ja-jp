@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204004"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-パスと、いずれかで表示されるアイコンとして使用するイメージ ファイルのファイル名を指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックスで、テンプレート。  
+アイコンとして機能するイメージファイルのパスとファイル名を指定します。このアイコンは、 **新しいプロジェクト** または [ **新しい項目の追加** ] ダイアログボックスで、テンプレートに対して表示されます。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<アイコン >  
+ \<Icon>  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,8 +47,8 @@ ms.locfileid: "68204004"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Package`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|  
-|`ID`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のリソース ID を指定します。|  
+|`Package`|高度なユーザーシナリオ用の省略可能な属性です。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|  
+|`ID`|高度なユーザーシナリオ用の省略可能な属性です。<br /><br /> Visual Studio のリソース ID を指定します。|  
   
 ### <a name="child-elements"></a>子要素  
  なし。  
@@ -62,9 +62,9 @@ ms.locfileid: "68204004"
 ## <a name="text-value"></a>テキスト値  
  `Package` と `ID` 属性を使わない限り、テキスト値が必要です。  
   
- テキストに表示されるテンプレートのアイコンのパスとファイル名を提供する、**新しいプロジェクト** ダイアログ ボックス。  
+ テキストは、[ **新しいプロジェクト** ] ダイアログボックスに表示されるテンプレートアイコンのパスとファイル名を提供します。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  `Icon` は `TemplateData` に必須の子要素です。  
   
 ## <a name="example"></a>例  
@@ -94,6 +94,6 @@ ms.locfileid: "68204004"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

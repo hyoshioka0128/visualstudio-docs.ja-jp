@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015748"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>チュートリアル: IntelliTrace を使用した SharePoint アプリケーションのデバッグ
@@ -60,15 +61,15 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
 
      **Sharepoint カスタマイズウィザード**が表示されます。このウィザードでは、プロジェクトの sharepoint サイトとソリューションの信頼レベルの両方を指定できます。
 
-2. [**ファームソリューションとして配置する**] オプションを選択し、[**完了**] をクリックします。
+2. [ **ファームソリューションとして配置する** ] オプションを選択し、[ **完了** ] をクリックします。
 
      IntelliTrace は、ファーム ソリューションに対してのみ動作します。
 
 3. **ソリューションエクスプローラー**で、[**機能**] ノードのショートカットメニューを開き、[**機能の追加**] を選択します。
 
-     *Feature1.feature*が表示されます。
+     *Feature1.feature* が表示されます。
 
-4. Feature1.feature のショートカットメニューを開き、[**イベントレシーバーの追加**] を選択して、機能にコードモジュールを追加します。
+4. Feature1.feature のショートカットメニューを開き、[ **イベントレシーバーの追加** ] を選択して、機能にコードモジュールを追加します。
 
 ## <a name="add-code-to-the-feature-receiver"></a>フィーチャーレシーバーにコードを追加する
 
@@ -257,17 +258,17 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
 
 2. お知らせリストとタスク一覧の内容を表示します。
 
-     お知らせリストには、"アクティブ化された**機能: IntelliTraceTest_Feature1**" という名前の新しいお知らせがあります。また、[タスク] 一覧には、"**非アクティブ化機能: IntelliTraceTest_Feature1**" という名前の新しいタスクが含まれている必要があります。 このいずれかがない場合は、フィーチャーがアクティブになっているかどうかを確認します。 アクティブになっていない場合は、アクティブにします。
+     お知らせリストには、"アクティブ化された **機能: IntelliTraceTest_Feature1**" という名前の新しいお知らせがあります。また、[タスク] 一覧には、" **非アクティブ化機能: IntelliTraceTest_Feature1**" という名前の新しいタスクが含まれている必要があります。 このいずれかがない場合は、フィーチャーがアクティブになっているかどうかを確認します。 アクティブになっていない場合は、アクティブにします。
 
 3. 次の手順を実行して、フィーチャーを非アクティブにします。
 
-   1. SharePoint の [**サイトの操作**] メニューで、[サイトの**設定**] を選択します。
+   1. SharePoint の [ **サイトの操作** ] メニューで、[サイトの **設定**] を選択します。
 
-   2. [**サイトの操作**] の [**サイト機能の管理**] リンクを選択します。
+   2. [ **サイトの操作**] の [ **サイト機能の管理** ] リンクを選択します。
 
    3. **IntelliTraceTest feature1.feature**の横にある [**非アクティブ化**] ボタンをクリックします。
 
-   4. [警告] ページで、[**この機能を非アクティブ**にする] リンクを選択します。
+   4. [警告] ページで、[ **この機能を非アクティブ** にする] リンクを選択します。
 
       FeatureDeactivating() イベント ハンドラーによってエラーがスローされます。
 
@@ -278,21 +279,21 @@ SharePoint を実行しているシステムに Microsoft Monitoring Agent を�
 > [!NOTE]
 > このセクションの構成情報は、この例に固有です。 その他の構成オプションの詳細については、「 [IntelliTrace スタンドアロンコレクターの使用](../debugger/using-the-intellitrace-stand-alone-collector.md)」を参照してください。
 
-1. SharePoint を実行しているコンピューターで[Microsoft Monitoring Agent を設定し、ソリューションの監視を開始し](../debugger/using-the-intellitrace-stand-alone-collector.md)ます。
+1. SharePoint を実行しているコンピューターで [Microsoft Monitoring Agent を設定し、ソリューションの監視を開始し](../debugger/using-the-intellitrace-stand-alone-collector.md)ます。
 
 2. フィーチャーを非アクティブ化します。
 
-   1. SharePoint の [**サイトの操作**] メニューで、[サイトの**設定**] を選択します。
+   1. SharePoint の [ **サイトの操作** ] メニューで、[サイトの **設定**] を選択します。
 
-   2. [**サイトの操作**] の [**サイト機能の管理**] リンクを選択します。
+   2. [ **サイトの操作**] の [ **サイト機能の管理** ] リンクを選択します。
 
    3. **IntelliTraceTest feature1.feature**の横にある [**非アクティブ化**] ボタンをクリックします。
 
-   4. [警告] ページで、[**この機能を非アクティブ**にする] リンクを選択します。
+   4. [警告] ページで、[ **この機能を非アクティブ** にする] リンクを選択します。
 
       エラーが発生します (この場合は、FeatureDeactivating() イベント ハンドラーでスローされたエラーが原因)。
 
-3. PowerShell ウィンドウで、 [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20))コマンドを実行して、itrace ファイルを作成し、監視を停止して、SharePoint ソリューションを再起動します。
+3. PowerShell ウィンドウで、 [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) コマンドを実行して、itrace ファイルを作成し、監視を停止して、SharePoint ソリューションを再起動します。
 
      **停止-webapplicationmonitoring***" \<SharePointSite> \\<sharepointappname \> "*  
 
@@ -302,29 +303,29 @@ SharePoint を実行しているシステムに Microsoft Monitoring Agent を�
 
 1. Visual Studio で、\IntelliTraceLogs フォルダーにある .iTrace ファイルを開きます。
 
-     [ **IntelliTrace の概要**] ページが表示されます。 このエラーは処理されなかったため、SharePoint 相関 ID (GUID) が [**分析**] セクションの [ハンドルされない例外] 領域に表示されます。 エラーが発生した呼び出し履歴を表示する場合は、[**呼び出し履歴**] ボタンをクリックします。
+     [ **IntelliTrace の概要** ] ページが表示されます。 このエラーは処理されなかったため、SharePoint 相関 ID (GUID) が [ **分析** ] セクションの [ハンドルされない例外] 領域に表示されます。 エラーが発生した呼び出し履歴を表示する場合は、[ **呼び出し履歴** ] ボタンをクリックします。
 
-2. [**例外のデバッグ**] ボタンをクリックします。
+2. [ **例外のデバッグ** ] ボタンをクリックします。
 
      プロンプトが表示されたら、シンボル ファイルを読み込みます。 [ **IntelliTrace** ] ウィンドウでは、例外は "スローされた深刻なエラーが発生しました。" と表示されます。
 
      [IntelliTrace] ウィンドウで、例外を選択して失敗したコードを表示します。
 
-3. SharePoint ソリューションを開き、FeatureDeactivating アクティブ化 () プロシージャの先頭にある**throw**ステートメントをコメントアウトするか削除することで、エラーを修正します。
+3. SharePoint ソリューションを開き、FeatureDeactivating アクティブ化 () プロシージャの先頭にある **throw** ステートメントをコメントアウトするか削除することで、エラーを修正します。
 
 4. Visual Studio でソリューションをリビルドし、SharePoint に再配置します。
 
 5. 次の手順を実行して、フィーチャーを非アクティブにします。
 
-    1. SharePoint の [**サイトの操作**] メニューで、[サイトの**設定**] を選択します。
+    1. SharePoint の [ **サイトの操作** ] メニューで、[サイトの **設定**] を選択します。
 
-    2. [**サイトの操作**] の [**サイト機能の管理**] リンクを選択します。
+    2. [ **サイトの操作**] の [ **サイト機能の管理** ] リンクを選択します。
 
     3. **IntelliTraceTest feature1.feature**の横にある [**非アクティブ化**] ボタンをクリックします。
 
-    4. [警告] ページで、[**この機能を非アクティブ**にする] リンクを選択します。
+    4. [警告] ページで、[ **この機能を非アクティブ** にする] リンクを選択します。
 
-6. [タスク一覧] を開き、非アクティブ化タスクの [**状態**] の値が "Completed" で、その **% Complete**の値が100% であることを確認します。
+6. [タスク一覧] を開き、非アクティブ化タスクの [ **状態** ] の値が "Completed" で、その **% Complete** の値が100% であることを確認します。
 
      コードは、適切に実行されています。
 

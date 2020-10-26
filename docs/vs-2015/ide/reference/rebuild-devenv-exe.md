@@ -1,4 +1,4 @@
-﻿---
+---
 title: -Rebuild (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 008169829a6cf76e959d00f010959239a5f390b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665648"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
@@ -48,7 +48,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 
 - 空白を含む文字列を二重引用符で囲みます。
 
-- エラーを含むクリーンとビルドの概要情報は、 **[コマンド]** ウィンドウ、または `/out` スイッチで指定された任意のログ ファイルに表示できます。
+- エラーを含むクリーンとビルドの概要情報は、**[コマンド]** ウィンドウ、または `/out` スイッチで指定された任意のログ ファイルに表示できます。
 
 ## <a name="example"></a>例
  この例では、`Debug` プロジェクトのビルド構成を使用して、`MySolution` の `Debug` ソリューション構成内でプロジェクト `CSharpWinApp` を消去してリビルドします。
@@ -57,5 +57,5 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>関連項目
- [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md)の[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe](../../ide/reference/clean-devenv-exe.md) ) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>参照
+ [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

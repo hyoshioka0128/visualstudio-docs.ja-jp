@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160322"
 ---
 # <a name="report-based-on-visible-time-range"></a>表示された時間範囲に基づいたレポート
@@ -27,14 +27,14 @@ ms.locfileid: "68160322"
   
  データに関するその他の情報については、次の表を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [表示するスレッド アクティビティがありません](../profiling/no-thread-activity-to-show-threads-view.md)   
- [実行プロファイル レポート](../profiling/execution-profile-report.md)   
+## <a name="see-also"></a>参照  
+ [表示するスレッドアクティビティがありません](../profiling/no-thread-activity-to-show-threads-view.md)   
+ [実行プロファイルレポート](../profiling/execution-profile-report.md)   
  [同期時間](../profiling/synchronization-time.md)   
- [I/O 時間 (スレッド ビュー)](../profiling/i-o-time-threads-view.md)   
+ [I/o 時間 (スレッドビュー)](../profiling/i-o-time-threads-view.md)   
  [スリープ時間](../profiling/sleep-time.md)   
  [メモリ管理時間](../profiling/memory-management-time.md)   
- [優先時間](../profiling/preemption-time.md)   
+ [プリエンプション時間](../profiling/preemption-time.md)   
  [UI 処理時間](../profiling/ui-processing-time.md)   
  [ディスク操作レポート](../profiling/disk-operations-report-threads-view.md)   
  [スレッド別の概要レポート](../profiling/per-thread-summary-report.md)   

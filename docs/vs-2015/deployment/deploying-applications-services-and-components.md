@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917551"
 ---
 # <a name="deploying-applications-services-and-components"></a>アプリケーション、サービス、およびコンポーネントの配置
@@ -41,7 +41,7 @@ ms.locfileid: "75917551"
 |配置シナリオ|関連する参照先|  
 |-------------------------|------------------------|  
 |**クラウドに発行する:** Visual Studio を使用してアプリケーション、サービス、およびデータをどこからでも使用できるようにし、Microsoft Azure に配置できます。|[アプリケーションを Microsoft Azure に発行する](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Windows ストアアプリを発行する:** Windows ストアから世界中の顧客にアプリを簡単に作成、送信、販売できます。|[Windows ストアアプリのパッケージ化、配置、およびクエリ](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Windows ストアアプリを発行する:** Windows ストアから世界中の顧客にアプリを簡単に作成、送信、販売できます。|[Windows ストア アプリのパッケージ、展開、およびクエリ](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Windows Phone アプリを発行する:** Windows Phone デベロッパーセンターで認定を取得するために、既存のアプリに新しいアプリまたは更新プログラムを送信することができます。|[Windows Phone アプリを発行する](https://developer.microsoft.com/)|  
 |**ASP.NET アプリケーションまたはサービスをデプロイします。** ASP.NET アプリケーションとサービスは、さまざまな方法でデプロイできます。|[ASP.NET web アプリケーションとサービスのデプロイ](/aspnet/mvc/overview/deployment/)|  
 |**LightSwitch アプリケーションまたはサービスをデプロイします。** LightSwitch を使用してアプリケーションと OData サービスを作成した後、それらのサービスを web サーバーまたは Microsoft Azure に配置できます。|[LightSwitch アプリケーションの配置](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
@@ -52,6 +52,6 @@ ms.locfileid: "75917551"
 |**デスクトップアプリケーションを展開します。** ClickOnce 配置を使用すると、デスクトップアプリケーションを web サーバーまたはネットワークファイル共有に発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。|[ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)|  
 |**セットアッププログラムを作成します。** InstallShield の制限付きエディション (無料) を使用して、セットアッププログラムを作成できます。|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**既存のセットアッププログラムを保持する:** Visual Studio インストーラー Projects 拡張機能をインストールして、以前のバージョンの Visual Studio で作成されたセットアッププログラムを使用し続けます。|[Visual Studio インストーラープロジェクトの拡張機能](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> インストーラープロジェクトのドキュメントについては、「 [Visual Studio インストーラー展開](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)」を参照してください。|  
-|**ビジュアルC++アプリケーションを配置する:** 集中配置、ローカルC++配置、または静的リンクを使用して、アプリケーションを使用して visual runtime を配置できます。|[ネイティブ デスクトップ アプリケーションの配置 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Visual C++ アプリケーションを展開します。** 集中配置、ローカル配置、または静的リンクを使用して、アプリケーションを使用して Visual C++ ランタイムを配置できます。|[ネイティブ デスクトップ アプリケーションの配置 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**テスト用のアプリケーションを展開します。** アプリケーションを仮想環境にデプロイすることにより、より高度な開発とテストを実現できます。|[ラボ環境でのテスト](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**インストールの前提条件:** ブートストラップと呼ばれる汎用インストーラーを構成することにより、デスクトップアプリケーションの必須コンポーネントをインストールできます。|[アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)|
+|**インストールの前提条件:** ブートストラップと呼ばれる汎用インストーラーを構成することにより、デスクトップアプリケーションの必須コンポーネントをインストールできます。|[アプリケーションの展開の前提条件](../deployment/application-deployment-prerequisites.md)|

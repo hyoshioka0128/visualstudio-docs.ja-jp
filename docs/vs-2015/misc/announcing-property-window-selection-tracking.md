@@ -1,5 +1,5 @@
 ---
-title: プロパティ ウィンドウの選択の追跡の発表 |Microsoft Docs
+title: プロパティウィンドウの選択の追跡の発表 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -14,31 +14,31 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63002454"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>プロパティ ウィンドウの選択の追跡の発表
-使用する場合、**プロパティ**ウィンドウまたは**プロパティ**フォーム、テキスト、またはするプロパティを表示する方法の完全な知識が必要し、選択などページします。選択範囲を調整します。 たとえば、選択範囲の 1 つまたは複数の選択肢があるかどうかを認識する必要があります。 選択範囲の種類 (1 つまたは複数) を使用して、IDE を発表する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>インターフェイス。 このインターフェイスで必要な情報を提供する、**プロパティ**ウィンドウ。  
+[ **プロパティ** ] ウィンドウまたはプロパティページ (フォーム、テキスト、また **はプロパティを** 表示する選択など) を操作する場合は、選択の調整方法についての完全な知識が必要です。 たとえば、1つの選択または複数の選択があるかどうかを確認する必要があります。 次に、インターフェイスを使用して、選択した型 (1 つまたは複数) を IDE に通知する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> ます。 このインターフェイスは、[ **プロパティ** ] ウィンドウで必要な情報を提供します。  
   
-### <a name="to-announce-selection-to-the-environment"></a>選択範囲を環境のことをお知らせ  
+### <a name="to-announce-selection-to-the-environment"></a>環境に対して選択をアナウンスするには  
   
-1. 呼び出す`QueryInterface`の<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>します。  
+1. `QueryInterface`を呼び出し <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> ます。  
   
-    1. これを行うには、作成時に、ビューに渡されたサイト ポインターを使用します。  
+    1. これを行うには、作成時にビューに渡されるサイトポインターを使用します。  
   
-    2. 呼び出す`QueryService`のビューから、`SID_STrackSelection`サービス。  
+    2. `QueryService`サービスのビューからを呼び出し `SID_STrackSelection` ます。  
   
-         ポインターが返されます<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>します。  
+         これにより、へのポインターが返さ <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> れます。  
   
-2. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>選択内容が変更されるたびにメソッドを実装するオブジェクトへのポインターを渡す<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>します。  
+2. 選択が変更されるたびにメソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> を実装するオブジェクトへのポインターを渡し <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます。  
   
-     選択コンテナー オブジェクトの 1 つまたは複数選択のいずれかを使用することができでは、選択した情報が含まれています、`IDispatch`オブジェクト。 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>メソッドは、通知、**プロパティ**選択が変更されたウィンドウ。 **プロパティ**ウィンドウにあるオブジェクトが使用し、<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>を 1 つまたは複数選択が発生したかどうかを実際のオブジェクトの選択項目を決定します。  
+     選択コンテナーオブジェクトは、1つまたは複数の選択を使用でき、オブジェクトの選択情報を含み `IDispatch` ます。 メソッドを呼び出すと、 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> 選択内容が変更されたことが [ **プロパティ** ] ウィンドウに通知されます。 次に、[ **プロパティ** ] ウィンドウで、のオブジェクトを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 1 つまたは複数の選択が発生したかどうか、および実際のオブジェクトの選択内容を確認します。  
   
-     複数の選択を指定する場合、**プロパティ**ウィンドウ オブジェクトの共通プロパティの交差部分を検索します。 1 つのオブジェクトの選択では、指定した場合、**プロパティ**ウィンドウでは、すべての 1 つのオブジェクトのプロパティが表示されます。  
+     複数の選択項目を指定した場合、[ **プロパティ** ] ウィンドウでは、オブジェクトの共通プロパティ間の交差部分が検索されます。 1つのオブジェクトの選択を指定すると、[ **プロパティ** ] ウィンドウに、1つのオブジェクトのすべてのプロパティが表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロパティの拡張](../extensibility/internals/extending-properties.md)   
- [プロパティ ページ](../extensibility/internals/property-pages.md)
+ [[プロパティ ページ]](../extensibility/internals/property-pages.md)

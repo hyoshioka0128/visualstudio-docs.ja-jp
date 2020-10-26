@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken |Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetNameFromToken |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94cca3ebf25c86579ce601d614618ff431629af7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194697"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-特定のメタデータ オブジェクトの指定したトークンに関連付けられた名前を返します。  
+指定されたメタデータオブジェクトを使用して、指定したトークンに関連付けられている名前を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,19 +43,19 @@ int GetNameFromToken (
   
 #### <a name="parameters"></a>パラメーター  
  `pMetadataImport`  
- [in]メタデータ情報を含むオブジェクト。  
+ からメタデータ情報を格納しているオブジェクト。  
   
  `dwToken`  
- [in]名前を指定するトークンです。  
+ から名前を付けるトークン。  
   
  `pbstrName`  
- [out]トークンに対応する名前です。  
+ 入出力トークンに対応する名前。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイス。  
+ 次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  
@@ -121,5 +121,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

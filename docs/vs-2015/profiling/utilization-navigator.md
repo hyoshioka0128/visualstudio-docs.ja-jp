@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4aec8cc1a707535e9cf6ae204be0a7ff67ea51d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145330"
 ---
 # <a name="utilization-navigator"></a>使用状況ナビゲーター
@@ -30,8 +30,8 @@ ms.locfileid: "68145330"
   
  使用状況ナビゲーターを使用して、表示された時間範囲を操作する方法を次に示します。  
   
-- 左側または右側に Thumb をドラッグしてパンできます。 (キーボード:Thumb に焦点を合わせて、左矢印キーまたは右矢印キーを押します。)  
+- 左側または右側に Thumb をドラッグしてパンできます。 (キーボード: Thumb に焦点を合わせて、左矢印キーまたは右矢印キーを押します。)  
   
-- 間隔の範囲を変更するには、ハンドルのいずれかをドラッグします。 (キーボード:ハンドルに焦点を合わせて、右矢印キーまたは左矢印キーを押します。)  
+- 間隔の範囲を変更するには、ハンドルのいずれかをドラッグします。 (キーボード: ハンドルに焦点を合わせて、右矢印キーまたは左矢印キーを押します。)  
   
   別のコンカレンシー ビジュアライザー ズーム コントロールを使用して間隔を変更すると、変更を反映するために使用状況ナビゲーターが更新されます。

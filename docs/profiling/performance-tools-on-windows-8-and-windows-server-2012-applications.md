@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778428"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 と Windows Server 2012 アプリケーションのパフォーマンス ツール
@@ -110,7 +110,7 @@ Visual Studio がインストールされていないデバイスでアプリケ
 
 **リモート コンピューターでの TIP データの収集**
 
-リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの *%VSInstallDir%\Team Tools\Performance Tools\Setups* フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
+リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの *%VSInstallDir%\Team Tools\Performance Tools\Setups* フォルダーから **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
 
 プロファイル データを収集するには、 [VSPerfCmd](../profiling/vsperfcmd.md) または [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) を使用できます。
 

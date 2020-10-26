@@ -11,37 +11,37 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98247b894d2db628d508713875ba0ea7d0642729
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204744"
 ---
 # <a name="sending-events"></a>イベントの送信
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーとデバッグ エンジン (DE) 間の通信メカニズムは、DCOM に基づいてイベント モデル。 イベントは、COM オブジェクトとして送信され、各イベントには、次を指定するパラメーター。  
+デバッガーとデバッグエンジン (DE) 間の通信機構は、DCOM に基づくイベントモデルです。 イベントは COM オブジェクトとして送信され、各イベントには次のものを指定するパラメーターがあります。  
   
-- この DE イベントと呼ばれます。  
+- イベントを呼び出した DE。  
   
-- 変更点の説明。  
+- 何が起こったかについての説明。  
   
-- プロセス、プログラム、およびイベントの発生場所のコンテキストを識別するスレッドの情報。 プロセスは、ドイツから送信されたイベントは送信されません。  
+- イベントが発生したコンテキストを識別するプロセス、プログラム、スレッド情報。 このプロセスは、DE から送信されたイベントに対しては送信されません。  
   
-- イベントが同期または非同期であるかどうかを示すイベントの種類。  
+- イベントが同期または非同期のどちらであるかを示すイベントの種類。  
   
-  メソッドを使用してすべてのデバッグ イベントが送信される[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)します。  
+  すべてのデバッグイベントは、メソッド [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)を使用して送信されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [イベント ソース](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- イベントの 2 つのソースについて説明します。 デバッグ エンジン (DE) とセッション デバッグ マネージャー (SDM)。  
+ [イベントソース](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
+ デバッグエンジン (DE) とセッションデバッグマネージャー (SDM) の2つのイベントソースについて説明します。  
   
  [サポートされているイベントの種類](../../extensibility/debugger/supported-event-types.md)  
- 現在サポートされているイベントの種類について説明します。 非同期と同期します。  
+ 現在サポートされているイベントの種類 (非同期および同期) について説明します。  
   
  [イベントの説明](../../extensibility/debugger/event-descriptions.md)  
- イベントとその使用する理由を定義します。  
+ イベントとその用途の理由を定義します。  
   
 ## <a name="related-sections"></a>関連項目  
  [カスタム デバッグ エンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- インタープリターまたはオペレーティング システムは、デバッグ サービスを提供すると、DE のしくみについて説明します。
+ インタープリターやオペレーティングシステムを使用してデバッグサービスを提供する方法について説明します。

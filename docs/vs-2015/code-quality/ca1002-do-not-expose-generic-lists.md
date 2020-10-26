@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546849"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002:ジェネリック リストを公開しません
@@ -36,7 +36,7 @@ ms.locfileid: "85546849"
  型に、外部から参照できるメンバーが含まれています。このメンバーは型である <xref:System.Collections.Generic.List%601?displayProperty=fullName> か、型を返し <xref:System.Collections.Generic.List%601?displayProperty=fullName> ます。または、署名にパラメーターが含まれてい <xref:System.Collections.Generic.List%601?displayProperty=fullName> ます。
 
 ## <a name="rule-description"></a>ルールの説明
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>は、パフォーマンスを目的として設計され、継承されないジェネリックコレクションです。 <xref:System.Collections.Generic.List%601?displayProperty=fullName>には、継承されたクラスの動作を簡単に変更できる仮想メンバーが含まれていません。 次のジェネリックコレクションは継承用に設計されているため、ではなく公開する必要があり <xref:System.Collections.Generic.List%601?displayProperty=fullName> ます。
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> は、パフォーマンスを目的として設計され、継承されないジェネリックコレクションです。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> には、継承されたクラスの動作を簡単に変更できる仮想メンバーが含まれていません。 次のジェネリックコレクションは継承用に設計されているため、ではなく公開する必要があり <xref:System.Collections.Generic.List%601?displayProperty=fullName> ます。
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -65,5 +65,5 @@ ms.locfileid: "85546849"
 
  [CA1007:適切な場所にジェネリックを使用します](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [ジェネリック](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

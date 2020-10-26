@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235174"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 配置のトラブルシューティング
@@ -60,4 +60,4 @@ ms.locfileid: "87235174"
 
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
-- [Visual Studio のトラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)
+- [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

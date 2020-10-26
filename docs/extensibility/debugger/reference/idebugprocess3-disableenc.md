@@ -1,5 +1,5 @@
 ---
-title: Iデバッグプロセス3::D可能なENC |マイクロソフトドキュメント
+title: IDebugProcess3::D isableENC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b39bb448501bacd5ab458b7e61bb1a5044bc8a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723736"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-このメソッドは、このプロセス (およびこのプロセスに含まれるすべてのプログラム) でエディット コンティニュを明示的に無効にします。 カスタム ポートサプライヤーは常に`E_NOTIMPL`を返す必要があります。
+このメソッドは、このプロセス (およびそれに含まれるすべてのプログラム) のエディットコンティニュを明示的に無効にします。 カスタムポート供給業者は常にを返す必要があり `E_NOTIMPL` ます。
 
 ## <a name="syntax"></a>構文
 
@@ -40,16 +40,16 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>パラメーター
 `reason`\
-[in][列挙体](../../../extensibility/debugger/reference/encunavailablereason.md)の値。
+から [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) 列挙の値です。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 > [!NOTE]
-> カスタム ポートサプライヤーは常に`E_NOTIMPL`を返す必要があります。
+> カスタムポート供給業者は常にを返す必要があり `E_NOTIMPL` ます。
 
-## <a name="remarks"></a>Remarks
- エディット コンティニュが無効になっているプロセスは、プロセスを再起動することによってのみ再度有効にできます。
+## <a name="remarks"></a>注釈
+ プロセスのエディットコンティニュを無効にすると、プロセスを再起動することによってのみ再度有効にすることができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

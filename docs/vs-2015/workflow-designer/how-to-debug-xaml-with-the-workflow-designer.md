@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a696123551c24fd0d14fecde67826cf14f88826f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668645"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>ワークフロー デザイナーを使用して XAML をデバッグする方法
@@ -26,13 +26,13 @@ ms.locfileid: "72668645"
 
 1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でワークフロー プロジェクトまたはアクティビティ プロジェクトを開きます。
 
-2. 「[方法: ワークフローにブレークポイントを設定する](../workflow-designer/how-to-set-breakpoints-in-workflows.md)」の説明に従って、デバッグするアクティビティにブレークポイントを設定します。
+2. 「 [方法: ワークフローにブレークポイントを設定する](../workflow-designer/how-to-set-breakpoints-in-workflows.md)」の説明に従って、デバッグするアクティビティにブレークポイントを設定します。
 
-3. ワークフロー定義が含まれている .xaml ファイルを右クリックし、 **[コードの表示]** を選択します。 デザイン ビューでブレークポイントを設定したアクティビティの XAML 要素宣言と同じ行に、ブレークポイントが表示されます。
+3. ワークフロー定義が含まれている .xaml ファイルを右クリックし、[ **コードの表示**] を選択します。 デザイン ビューでブレークポイントを設定したアクティビティの XAML 要素宣言と同じ行に、ブレークポイントが表示されます。
 
-4. 「[方法: ワークフローデバッガーを呼び出す](../workflow-designer/how-to-invoke-the-workflow-debugger.md)」の説明に従って、デバッガーを呼び出します。
+4. 「 [方法: ワークフローデバッガーを呼び出す](../workflow-designer/how-to-invoke-the-workflow-debugger.md)」の説明に従って、デバッガーを呼び出します。
 
-5. コードがいずれかのブレークポイントまで実行されると、そのブレークポイントに関連付けられている XAML 要素が強調表示されます。 次のブレークポイントに移動するには、 **F10**キーまたは**F11**キーを使用します。
+5. コードがいずれかのブレークポイントまで実行されると、そのブレークポイントに関連付けられている XAML 要素が強調表示されます。 次のブレークポイントに移動するには、 **F10** キーまたは **F11** キーを使用します。
 
 ## <a name="see-also"></a>参照
  [方法: ワークフローにブレークポイントを設定](../workflow-designer/how-to-set-breakpoints-in-workflows.md)[する方法: ワークフローデバッガーを呼び出す](../workflow-designer/how-to-invoke-the-workflow-debugger.md)

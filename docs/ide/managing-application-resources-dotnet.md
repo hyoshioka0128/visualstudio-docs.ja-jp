@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1815b0efeebf98587fe07384ea0b2c8d1f5e1d90
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593695"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992369"
 ---
 # <a name="manage-application-resources-net"></a>アプリケーション リソースの管理 (.NET)
 
@@ -31,7 +31,7 @@ ms.locfileid: "75593695"
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、「[アプリ リソースの管理 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)」を参照してください。
 
-.NET デスクトップ アプリのリソースの詳細については、「[デスクトップ アプリケーションのリソース](/dotnet/framework/resources/index)」を参照してください。
+.NET アプリのリソースの詳細については、「[.NET アプリのリソース](/dotnet/framework/resources/index)」を参照してください。
 
 ## <a name="work-with-resources"></a>リソースの処理
 
@@ -52,5 +52,5 @@ ms.locfileid: "75593695"
 
 ## <a name="see-also"></a>関連項目
 
-- [デスクトップ アプリケーションのリソース (.NET Framework)](/dotnet/framework/resources/index)
+- [.NET アプリのリソース (.NET Framework)](/dotnet/framework/resources/index)
 - [アプリ リソースの管理 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)

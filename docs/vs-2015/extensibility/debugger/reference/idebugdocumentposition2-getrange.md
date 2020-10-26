@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange |Microsoft Docs
+title: 'IDebugDocumentPosition2:: GetRange |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 189810280bd5db4573ba45c2335b8bb96a163abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200252"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
@@ -42,24 +42,24 @@ int GetRange( 
   
 #### <a name="parameters"></a>パラメーター  
  `pBegPosition`  
- [入力、出力]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体の開始位置が入力されます。 この情報が必要でない場合は、この引数を null 値を設定します。  
+ [入力、出力]開始位置を格納する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。 この情報が不要な場合は、この引数を null 値に設定します。  
   
  `pEndPosition`  
- [入力、出力]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体の終了位置が入力されます。 この情報が必要でない場合は、この引数を null 値を設定します。  
+ [入力、出力]終了位置を格納する [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体。 この情報が不要な場合は、この引数を null 値に設定します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ブレークポイントの場所のドキュメントの位置で指定された範囲は、コードを実際に貢献するステートメントを前方に検索するデバッグ エンジン (DE) によって使用されます。 次に例を示します。  
+## <a name="remarks"></a>注釈  
+ 位置ブレークポイントのドキュメント位置に指定された範囲は、実際にコードを提供するステートメントを検索するために、デバッグエンジン (DE) によって使用されます。 次に例を示します。  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- 5 行目でコードをデバッグ中のプログラムは使用されません。 5 行目で、ブレークポイントを設定します。 デバッガーは、DE、一定量のコードを提供する最初の行を前方に検索する必要がある場合、デバッガーはブレークポイントを正しく配置可能性があります、その他の候補行が含まれている範囲を指定します。 DE、し、前方に検索を通じてこれらの行ブレークポイントを受け入れることができる行が見つかるまで。  
+ 行5は、デバッグ中のプログラムにコードを提供しません。 5行目のブレークポイントを設定するデバッガーが、コードを提供する最初の行の特定の量を前方に検索する場合、デバッガーは、ブレークポイントが適切に配置される可能性のある追加の候補行を含む範囲を指定します。 次に、ブレークポイントを受け取る行が見つかるまで、行を順に検索します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

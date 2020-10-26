@@ -10,25 +10,25 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9ccb870f3b65d54da7d8aebd161a8be8a0f9baf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660130"
 ---
 # <a name="state-machine-activity-designers"></a>ステート マシン アクティビティ デザイナー
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] には、さまざまなアクティビティ デザイナーが用意されており、これらを、ワークフローの構築時に使用できます。 このセクションでは、ステート マシン ワークフローの作成と管理を目的とした、システムによって提供されるアクティビティ デザイナーを紹介します。 次のトピックでは、これらのデザイナーについて説明し、その使用方法についてのガイドラインを示します。
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] には、ワークフローを構築するときに使用できるアクティビティデザイナーが多数含まれています。 このセクションでは、ステート マシン ワークフローの作成と管理を目的とした、システムによって提供されるアクティビティ デザイナーを紹介します。 次のトピックでは、これらのデザイナーについて説明し、その使用方法についてのガイドラインを示します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [StateMachine](../workflow-designer/statemachine-activity-designer.md)一般的なステートマシンパラダイムを使用して、状態とモデルワークフローのコレクションを含みます。
+ [StateMachine](../workflow-designer/statemachine-activity-designer.md) 一般的なステートマシンパラダイムを使用して、状態とモデルワークフローのコレクションを含みます。
 
- [状態](../workflow-designer/state-activity-designer.md)ステートマシンを配置できる状態を表します。
+ [状態](../workflow-designer/state-activity-designer.md) ステートマシンを配置できる状態を表します。
 
- [Finalstate](../workflow-designer/finalstate-activity-designer.md)ステートマシンインスタンスを終了する状態を表します。
+ [Finalstate](../workflow-designer/finalstate-activity-designer.md) ステートマシンインスタンスを終了する状態を表します。
 
- [切り替え](../workflow-designer/transition-activity-designer.md)2つの状態間の遷移を表します。
+ [切り替え](../workflow-designer/transition-activity-designer.md) 2つの状態間の遷移を表します。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>関連項目
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>
@@ -46,11 +46,11 @@ ms.locfileid: "72660130"
 
  [アクティビティ デザイナーの使用](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [メッセージング](../workflow-designer/messaging-activity-designers.md)
 
- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 
  [トランザクション](../workflow-designer/transaction-activity-designers.md)
 

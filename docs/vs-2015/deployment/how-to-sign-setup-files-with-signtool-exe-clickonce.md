@@ -1,5 +1,5 @@
 ---
-title: '方法: セットアップ ファイルに SignTool.exe (ClickOnce) |Microsoft Docs'
+title: '方法: SignTool.exe を使用してセットアップファイルに署名する (ClickOnce) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202181"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>方法: SignTool.exe を使用してセットアップ ファイルに署名する (ClickOnce)
@@ -39,25 +39,25 @@ SignTool.exe を使用して、セットアップ プログラム (setup.exe) �
   
 1. マニフェストに署名する証明書を開発用コンピューターにインストールします。  
   
-2. **ソリューション エクスプローラー**でプロジェクトを選択します。  
+2. **ソリューションエクスプローラー**でプロジェクトを選択します。  
   
-3. **[プロジェクト]** メニューの *ProjectName* の **[プロパティ]** をクリックします。  
+3. **[プロジェクト]** メニューの *ProjectName の * **[プロパティ]** をクリックします。  
   
 4. **[署名]** ページの **[ClickOnce マニフェストに署名する]** をオフにします。  
   
-5. **[発行]** ページで、 **[必須コンポーネント]** をクリックします。  
+5. **[発行]** ページで、**[必須コンポーネント]** をクリックします。  
   
-6. すべての必須コンポーネントが選択されていることを確認し、 **[OK]** をクリックします。  
+6. すべての必須コンポーネントが選択されていることを確認し、**[OK]** をクリックします。  
   
-7. **[発行]** ページで発行設定を確認して、 **[今すぐ発行]** をクリックします。  
+7. **[発行]** ページで発行設定を確認して、**[今すぐ発行]** をクリックします。  
   
      ソリューションは、未署名のアプリケーション マニフェスト、未署名の配置マニフェスト、バージョン固有のファイル、および未署名のセットアップ プログラムを発行フォルダーに発行します。  
   
-8. **[発行]** ページで、 **[必須コンポーネント]** をクリックします。  
+8. **[発行]** ページで、**[必須コンポーネント]** をクリックします。  
   
-9. **[必須コンポーネント]** ダイアログ ボックスで、 **[必須コンポーネントをインストールするセットアップ プログラムを作成する]** をオフにします。  
+9. **[必須コンポーネント]** ダイアログ ボックスで、**[必須コンポーネントをインストールするセットアップ プログラムを作成する]** をオフにします。  
   
-10. **[発行]** ページで発行設定を確認して、 **[今すぐ発行]** をクリックします。  
+10. **[発行]** ページで発行設定を確認して、**[今すぐ発行]** をクリックします。  
   
      ソリューションは、署名済みのアプリケーション マニフェスト、署名済みの配置マニフェスト、およびバージョン固有のファイルを発行フォルダーに発行します。 未署名のセットアップ プログラムは発行プロセスで上書きされません。  
   
@@ -79,5 +79,5 @@ SignTool.exe を使用して、セットアップ プログラム (setup.exe) �
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>関連項目  
- [方法: アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>参照  
+ [方法: アプリケーションマニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

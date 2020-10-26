@@ -11,27 +11,27 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204194"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>方法: エディターでフォーカスが失われたときにイベントを発生させる
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-エディターがウィンドウ フレームにフォーカスを失ったときに知っておく必要があります。 たとえば、エディターが不要になったことに重点を置いてコード ウィンドウからコードを展開する必要があります。 次の手順では、エディターのフォーカスを失うことの通知を受信するために従う手順を示します。  
+場合によっては、エディターがウィンドウフレームにフォーカスを失ったタイミングを知る必要があります。 たとえば、エディターがフォーカスを失った後にコードウィンドウからコードを抽出することが必要になる場合があります。 次の手順では、エディターがフォーカスを失ったときの通知を受信する手順を説明します。  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>フォーカスを失うエディターへの応答でイベントを発生させる  
+### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>エディターがフォーカスを失ったときにイベントを発生させるには  
   
-1. 取得することによって選択イベントを監視、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>オブジェクトから<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>します。  
+1. からオブジェクトを取得して、選択イベントを監視 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> します。  
   
-2. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>提供して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>オブジェクト。  
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>を呼び出し、オブジェクトを指定し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> ます。  
   
-3. 呼び出しで<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>、探して`elementid==SEID_WindowFrame`します。  
+3. の呼び出しで <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 、を探し `elementid==SEID_WindowFrame` ます。  
   
-4. テスト、`varValueNew`次の 2 つのパラメーター。  
+4. `varValueNew`次の2つの点についてパラメーターをテストします。  
   
-    1. 探しているウィンドウ フレーム。  
+    1. 検索しているウィンドウフレーム。  
   
-    2. プログラムがウィンドウ フレームに選択範囲を失ったポイント。
+    2. プログラムがウィンドウフレームの選択範囲を失ったポイント。

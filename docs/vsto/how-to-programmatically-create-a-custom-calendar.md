@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546056"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>方法: プログラムによってカスタムカレンダーを作成する
-  次の例では、"、" という名前の新しい予定表フォルダーを作成**し、新しい**予定アイテムを作成して予定表フォルダーに追加します。 次に、このコードによって Calendar フォルダーが表示されます。
+  次の例では、"、" という名前の新しい予定表フォルダーを作成 **し、新しい**予定アイテムを作成して予定表フォルダーに追加します。 次に、このコードによって Calendar フォルダーが表示されます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

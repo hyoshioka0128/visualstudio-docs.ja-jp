@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement |Microsoft Docs
+title: 'IDebugArrayObject:: GetElement |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac59a14a2d3be06c9e1523bcdc0d0ad026e0a7d1
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423687"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
@@ -42,16 +42,16 @@ int GetElement(
   
 #### <a name="parameters"></a>パラメーター  
  `dwIndex`  
- [in]要素のインデックス。  
+ から要素のインデックス。  
   
  `ppElement`  
- [out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)要素を表すインターフェイス。  
+ 入出力要素を表す [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) インターフェイスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、1 次元の配列として配列オブジェクトが多次元である場合でもすべて配列オブジェクトの要素のように表示されます。 など、配列を指定して`myarray[3][2][6]`と`dwIndex`20 のパラメーターは、このメソッドは、要素から`myarray[1][1][2]`、および`dwIndex`21 のパラメーターは元の要素を返します`myarray[1][1][3]`します。 使用して、 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)メソッドを配列の要素の合計数を決定します。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、配列オブジェクトが多次元であっても、配列オブジェクトのすべての要素を1次元配列として表示します。 たとえば、配列とパラメーター20が指定されている場合、 `myarray[3][2][6]` `dwIndex` このメソッドはから要素を返し、 `myarray[1][1][2]` `dwIndex` パラメーター21はから要素を返し `myarray[1][1][3]` ます。 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)メソッドを使用して、配列内の要素の合計数を確認します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

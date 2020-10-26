@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382212"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>方法: Visual スタイルが有効になっている WPF アプリケーションを公開する
@@ -49,7 +49,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
     **Visual Basic プロジェクトのマニフェスト ファイルを開くには**
 
-    1. メニューバーで、[**プロジェクト**]、[ *projectname*の**プロパティ**] の順に選択します。 *projectname*は、WPF プロジェクトの名前です。
+    1. メニューバーで、[ **プロジェクト**]、[ *projectname*の **プロパティ**] の順に選択します。 *projectname* は、WPF プロジェクトの名前です。
 
          WPF プロジェクトのプロパティ ページが表示されます。
 
@@ -59,7 +59,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
     **C# プロジェクトのマニフェスト ファイルを開くには**
 
-    1. メニューバーで、[**プロジェクト**]、[ *projectname*の**プロパティ**] の順に選択します。 *projectname*は、WPF プロジェクトの名前です。
+    1. メニューバーで、[ **プロジェクト**]、[ *projectname*の **プロパティ**] の順に選択します。 *projectname* は、WPF プロジェクトの名前です。
 
          WPF プロジェクトのプロパティ ページが表示されます。
 
@@ -72,7 +72,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
          このボタンは、除外された項目や通常は表示されない項目も含め、すべてのプロジェクト項目を表示します。 マニフェスト ファイルはプロジェクト項目として表示されます。
 
-2. ソリューションをビルドし、発行します。 ソリューションを発行する方法の詳細については、「[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
+2. ソリューションをビルドし、発行します。 ソリューションを発行する方法の詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
 
 ## <a name="create-a-manifest-file"></a>マニフェスト ファイルの作成
 
@@ -119,7 +119,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
    > - このソリューションは、次のディレクトリにあり `%UserProfile%\Documents\Visual Studio 2010\Projects\` ます。
    >
    > - ソリューションは、次のディレクトリに発行されます `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` 。
-   > - 発行されたアプリケーションファイルの最新バージョンは、次のディレクトリにあります。`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - 発行されたアプリケーションファイルの最新バージョンは、次のディレクトリにあります。 `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
    > 上記の名前とディレクトリの場所は、いずれも使用する必要はありません。 前の名前と場所は、ソリューションの発行に必要な手順について説明するためにのみ使用されます。
 
@@ -137,14 +137,14 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
 ## <a name="sign-the-application-and-deployment-manifests"></a>アプリケーション マニフェストと配置マニフェストに署名します。
 
-1. コマンドプロンプトで、次のコマンドを実行して、現在のディレクトリ内の実行可能ファイルから .deploy 拡張子を削除し*ます*。
+1. コマンドプロンプトで、次のコマンドを実行して、現在のディレクトリ内の実行可能ファイルから .deploy 拡張子を削除し *ます* 。
 
    ```cmd
    ren MyWPFApp.exe.deploy MyWPFApp.exe
    ```
 
    > [!NOTE]
-   > この例では、ファイル拡張子が *.deploy*のファイルが1つだけであることを前提としています。 *.Deploy*ファイル拡張子が付いている、このディレクトリ内のすべてのファイルの名前を変更してください。
+   > この例では、ファイル拡張子が *.deploy* のファイルが1つだけであることを前提としています。 *.Deploy*ファイル拡張子が付いている、このディレクトリ内のすべてのファイルの名前を変更してください。
 
 2. コマンド プロンプトで、次のコマンドを実行してアプリケーション マニフェストに署名します。
 
@@ -153,7 +153,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
    ```
 
    > [!NOTE]
-   > この例では、プロジェクトの *.pfx*ファイルを使用してマニフェストに署名することを前提としています。 マニフェストに署名していない場合は、 `-cf` この例で使用するパラメーターを省略できます。 パスワードを必要とする証明書でマニフェストに署名する場合は、 `-password` オプション () を指定し `For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password` ます。
+   > この例では、プロジェクトの *.pfx* ファイルを使用してマニフェストに署名することを前提としています。 マニフェストに署名していない場合は、 `-cf` この例で使用するパラメーターを省略できます。 パスワードを必要とする証明書でマニフェストに署名する場合は、 `-password` オプション () を指定し `For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password` ます。
 
 3. コマンドプロンプトで、次のコマンドを実行して、この手順の前の手順で名前を変更したファイルの名前に .deploy 拡張子を追加し*ます。*
 
@@ -162,7 +162,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
    ```
 
    > [!NOTE]
-   > この例では、ファイルの拡張子が *.deploy*であるファイルが1つだけであることを前提としています。 以前に .deploy ファイル名拡張子が付いて*い*た、このディレクトリ内のすべてのファイルの名前を変更してください。
+   > この例では、ファイルの拡張子が *.deploy* であるファイルが1つだけであることを前提としています。 以前に .deploy ファイル名拡張子が付いて *い* た、このディレクトリ内のすべてのファイルの名前を変更してください。
 
 4. コマンド プロンプトで、次のコマンドを実行して配置マニフェストに署名します。
 
@@ -171,7 +171,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
    ```
 
    > [!NOTE]
-   > この例では、プロジェクトの *.pfx*ファイルを使用してマニフェストに署名することを前提としています。 マニフェストに署名していない場合は、 `-cf` この例で使用するパラメーターを省略できます。 パスワードを必要とする証明書でマニフェストに署名する場合は、次の `-password` 例のようにオプションを指定し `For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password` ます。
+   > この例では、プロジェクトの *.pfx* ファイルを使用してマニフェストに署名することを前提としています。 マニフェストに署名していない場合は、 `-cf` この例で使用するパラメーターを省略できます。 パスワードを必要とする証明書でマニフェストに署名する場合は、次の `-password` 例のようにオプションを指定し `For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password` ます。
 
    これらの手順を実行した後、エンド ユーザーがアプリケーションをインストールする場所に、発行されたファイルを移動できます。 ソリューションを頻繁に更新する場合は、新しいバージョンを発行するたびに、スクリプトにこれらのコマンドを移動し、スクリプトを実行できます。
 

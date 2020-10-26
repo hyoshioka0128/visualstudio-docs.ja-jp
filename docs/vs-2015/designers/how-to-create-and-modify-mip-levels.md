@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: MIP レベルを作成および変更する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99d2b07a64781929962ff37823ddcbf219598331
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664478"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>方法: MIP レベルを作成および変更する
@@ -28,7 +28,7 @@ ms.locfileid: "72664478"
 
 1. 「[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の説明に従って、基本テクスチャから始めます。 最適な結果を得るには、テクスチャの高さと幅のサイズは、2 の累乗 (256、512、1024 など) に指定します。
 
-2. MIPMAP レベルを生成します。 **[イメージ エディターのモード]** ツール バーで、 **[詳細設定]** 、 **[ツール]** 、 **[MIPS の生成]** の順にクリックします。
+2. MIPMAP レベルを生成します。 **[イメージ エディターのモード]** ツール バーで、**[詳細設定]**、**[ツール]**、**[MIPS の生成]** の順にクリックします。
 
      **[Go to Next MIP Level]** (次の MIPMAP レベルに移動) および **[Go to Previous MIP Level]** (前の MIPMAP レベルに移動) ボタンが **[イメージ エディターのモード]** ツール バーに表示されていることに注意してください。 **[プロパティ]** ウィンドウが表示されている場合は、読み取り専用プロパティである **[MIPMAP レベル]** と **[MIPMAP レベル数]** がイメージのプロパティに表示されていることにも注意してください。
 

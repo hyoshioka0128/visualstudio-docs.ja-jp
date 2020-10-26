@@ -1,5 +1,5 @@
 ---
-title: エラー :SQL できます&#39;t が SSDEBUGPS を見つける |Microsoft Docs
+title: エラー :SQL が SSDEBUGPS を見つけることができません | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185218"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>エラー :SQL できます&#39;t が SSDEBUGPS を見つける
+# <a name="error-sql-can39t-find-ssdebugps"></a>エラー :SQL が SSDEBUGPS を見つけることができません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SSDEBUGPS.dll は、SQL Server のデバッグ ホスト コンポーネントです。  
@@ -33,9 +33,9 @@ SSDEBUGPS.dll は、SQL Server のデバッグ ホスト コンポーネント�
   
  このエラーの解決方法は 2 つあります。1 つは、リモート デバッグのセットアップを再実行する方法です。もう 1 つは、このファイルを [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] コンピューターにコピーする方法です。  
   
- リモート デバッグのセットアップを再実行する」の手順に従います[リモート デバッグ](../debugger/remote-debugging.md)します。  
+ リモート デバッグのセットアップを再実行する場合は、「[リモート デバッグ](../debugger/remote-debugging.md)」の手順に従います。  
   
- ssdebugps.dll のファイルを見つけることができる場合は、これを [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] コンピューターにコピーします。 このファイルが存在する場合は、\Program Files\ Common Files\Microsoft Shared\SQL Debugging にあります。 別のあります[!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]コンピューターやコンピューターとは[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]インストールします。  
+ ssdebugps.dll のファイルを見つけることができる場合は、これを [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] コンピューターにコピーします。 このファイルが存在する場合は、\Program Files\ Common Files\Microsoft Shared\SQL Debugging にあります。 別の [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] コンピューター、またはがインストールされているコンピューターで見つけることができ [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] ます。  
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>SSDEBUGPS.dll を SQL Server 2005 コンピューターにコピーするには  
   

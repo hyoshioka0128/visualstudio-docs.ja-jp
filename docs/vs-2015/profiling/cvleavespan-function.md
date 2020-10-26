@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1f17de6df465408e9bec3b6db4e1620f0181fd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177766"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 関数
@@ -43,5 +43,5 @@ HRESULT CvLeaveSpan(
 ## <a name="requirements"></a>必要条件  
  **ヘッダー:** cvmarkers.h  
   
-## <a name="see-also"></a>関連項目  
- [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>参照  
+ [C++ ライブラリリファレンス](../profiling/cpp-library-reference.md)

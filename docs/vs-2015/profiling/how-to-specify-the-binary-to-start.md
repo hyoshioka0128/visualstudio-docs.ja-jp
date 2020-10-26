@@ -16,20 +16,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203433"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定する
+# <a name="how-to-specify-the-binary-to-start"></a>方法 : 開始するバイナリを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DLL などのバイナリをプロファイルするには、 **[\<Target> プロパティ ページ]** ダイアログ ボックスに情報を入力する必要があります。 この情報は、DLL プロジェクトの呼び出し元アプリケーションの場所を示します。  
   
  **必要条件**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>開始する実行可能ファイルを指定するには  
   
@@ -47,5 +47,5 @@ DLL などのバイナリをプロファイルするには、 **[\<Target> プ�
   
 7. **[OK]** をクリックします。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)

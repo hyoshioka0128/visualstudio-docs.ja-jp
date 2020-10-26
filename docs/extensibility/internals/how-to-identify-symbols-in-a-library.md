@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd091f003909110c696c2e42ad80d6c6ea4859d2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905396"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリ内のシンボルを識別する
@@ -33,7 +33,7 @@ ms.locfileid: "85905396"
 
  オブジェクトマネージャーは、ナビゲーション情報を使用して、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 階層内のシンボルを検索、選択、および選択したままにすることができます。 ブラウズツール間を移動できます。 **オブジェクトブラウザー**を使用してプロジェクトのシンボルを参照するときに [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 、メソッドを右クリックし、**呼び出しブラウザー**ツールを起動して、呼び出し先のメソッドを表示することができます。
 
- シンボルの場所を記述する2つの形式。 正規の形式は、シンボルの完全修飾パスに基づいています。 これは、階層内の記号の一意の位置を表します。 シンボル参照ツールに依存しません。 正規のフォーム情報を取得するために、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] オブジェクトマネージャーはメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> ます。 プレゼンテーションフォームには、特定のシンボル参照ツール内のシンボルの場所が記述されています。 シンボルの位置は、階層内の他の記号の位置を基準としています。 特定のシンボルには複数のプレゼンテーションパスを含めることができますが、標準パスは1つだけです。 たとえば、C1 クラスが C2 クラスから継承され、両方のクラスが N1 名前空間にある場合、**オブジェクトブラウザー**には次の階層ツリーが表示されます。
+ シンボルの場所を記述する2つの形式。 正規の形式は、シンボルの完全修飾パスに基づいています。 これは、階層内の記号の一意の位置を表します。 シンボル参照ツールに依存しません。 正規のフォーム情報を取得するために、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] オブジェクトマネージャーはメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> ます。 プレゼンテーションフォームには、特定のシンボル参照ツール内のシンボルの場所が記述されています。 シンボルの位置は、階層内の他の記号の位置を基準としています。 特定のシンボルには複数のプレゼンテーションパスを含めることができますが、標準パスは1つだけです。 たとえば、C1 クラスが C2 クラスから継承され、両方のクラスが N1 名前空間にある場合、 **オブジェクトブラウザー** には次の階層ツリーが表示されます。
 
 ```
 N1

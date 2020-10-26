@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 26a2ea6a7ccbfcc80275b55f9230f1a3152ab545
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017053"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する
-  カスタムノードは、**サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下に追加できます。 これは、既定では**サーバーエクスプローラー**に表示されない追加の SharePoint コンポーネントを表示する場合に便利です。 詳細については、[サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
+  カスタムノードは、**サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの下に追加できます。 これは、既定では **サーバーエクスプローラー** に表示されない追加の SharePoint コンポーネントを表示する場合に便利です。 詳細については、 [サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
 
  カスタムノードを追加するには、まず、新しいノードを定義するクラスを作成します。 次に、既存のノードの子としてノードを追加する拡張機能を作成します。
 
@@ -46,7 +47,7 @@ ms.locfileid: "86017053"
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. ノード定義では、この属性は新しいノードの文字列識別子を指定します。 *会社名*の形式を使用することをお勧めします。*ノード名*を使用して、すべてのノードが一意の識別子を持つようにします。
 
-5. メソッドの実装では <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> 、 *typedefinition*パラメーターのメンバーを使用して、新しいノードの動作を構成します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> インターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。
+5. メソッドの実装では <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> 、 *typedefinition* パラメーターのメンバーを使用して、新しいノードの動作を構成します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> インターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 。
 
      次のコード例は、新しいノードを定義する方法を示しています。 この例では、プロジェクトに CustomChildNodeIcon というアイコンが埋め込みリソースとして含まれていることを前提としています。
 
@@ -63,7 +64,7 @@ ms.locfileid: "86017053"
 
      Visual Studio によって提供される組み込みのノード型を指定するには、次の列挙値のいずれかを属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: これらの値を使用して、**サーバーエクスプローラー**内のサイト接続ノード (サイトの url を表示するノード)、サイトノード、またはその他のすべての親ノードを指定します。
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: これらの値を使用して、 **サーバーエクスプローラー**内のサイト接続ノード (サイトの url を表示するノード)、サイトノード、またはその他のすべての親ノードを指定します。
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: リスト、フィールド、コンテンツタイプを表すノードなど、SharePoint サイト上の個々のコンポーネントを表す組み込みノードの1つを指定するには、次の値を使用します。
 
@@ -71,13 +72,13 @@ ms.locfileid: "86017053"
 
 5. <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>イベントハンドラーで、 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> イベント引数パラメーターによって公開されるオブジェクトの子ノードコレクションに新しいノードを追加します。
 
-     次のコード例は、**サーバーエクスプローラー**で SharePoint サイトノードの子として新しいノードを追加する方法を示しています。
+     次のコード例は、 **サーバーエクスプローラー**で SharePoint サイトノードの子として新しいノードを追加する方法を示しています。
 
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
 
 ## <a name="complete-example"></a>コード例全体
- 次のコード例では、単純なノードを定義し、それを**サーバーエクスプローラー**の SharePoint サイトノードの子として追加するための完全なコードを示します。
+ 次のコード例では、単純なノードを定義し、それを **サーバーエクスプローラー**の SharePoint サイトノードの子として追加するための完全なコードを示します。
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669498"
 ---
 # <a name="working-with-xml-data"></a>XML データの使用
@@ -48,16 +48,16 @@ XML とその関連技術は、[!INCLUDE[msCoName](../includes/msconame-md.md)] 
 > XSLT のデバッグは、Professional Edition および Team Edition で使用できます。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [XML エディター](../xml-tools/xml-editor.md)XML エディターについて説明します。
+ [XML エディター](../xml-tools/xml-editor.md) XML エディターについて説明します。
 
- [XML スキーマデザイナー](../xml-tools/xml-schema-designer.md)XML スキーマデザイナーについて説明し、XML スキーマ定義言語 (XSD) スキーマの使用方法について説明します。
+ [XML スキーマデザイナー](../xml-tools/xml-schema-designer.md) XML スキーマデザイナーについて説明し、XML スキーマ定義言語 (XSD) スキーマの使用方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
- [XSLT のデバッグ](../xml-tools/debugging-xslt.md)Visual Studio デバッガーを使用してスタイルシートをデバッグする方法について説明します。
+ [XSLT のデバッグ](../xml-tools/debugging-xslt.md) Visual Studio デバッガーを使用してスタイルシートをデバッグする方法について説明します。
 
- [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)Xml、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、XSLT などの XML テクノロジについて説明します。
+ [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Xml、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、XSLT などの XML テクノロジについて説明します。
 
- [マネージコードの XML Web サービス](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)XML Web サービスの作成方法と配置方法、および XML Web サービスへのアクセス方法について説明します。
+ [マネージコードの XML Web サービス](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) XML Web サービスの作成方法と配置方法、および XML Web サービスへのアクセス方法について説明します。
 
 ## <a name="see-also"></a>参照
  [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)

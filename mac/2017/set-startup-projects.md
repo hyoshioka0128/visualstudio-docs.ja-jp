@@ -8,10 +8,10 @@ ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
 ms.openlocfilehash: 1b015d9009dc813c50ef891a4a523ba497c254c2
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950549"
 ---
 # <a name="set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定する
@@ -44,7 +44,7 @@ Visual Studio for Mac では、ソリューションをデバッグまたは実�
 
    Solution Pad で 2 つのプロジェクトが**太字**になっているので、両方のプロジェクトが開始するよう構成されていることがわかります。 ツール バーでは、新しい実行構成が現在のソリューション実行構成として設定されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Visual Studio for Mac のコンパイルとビルド](compiling-and-building.md)
 - [ビルド構成について](configurations.md)

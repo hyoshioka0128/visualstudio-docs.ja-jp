@@ -16,25 +16,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e90c76c446da7266250b9e588a07d98f21e64cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200686"
 ---
 # <a name="managedtype"></a>ManagedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-マネージ型 (メタデータ、または c# などの言語のメモリとリソースの管理機能をネイティブで定義されたシンボル) によって識別されます、`SymTagManagedType`シンボル。  
+マネージ型 (メタデータで定義された任意のシンボル、または C# などの言語のメモリおよびリソース管理機能にネイティブ) を指定すると、シンボルによって識別され `SymTagManagedType` ます。  
   
 ## <a name="properties"></a>プロパティ  
- 次の表では、この記号の型の有効な追加のプロパティを示します。  
+ 次の表は、このシンボルの種類の追加の有効なプロパティを示しています。  
   
-|プロパティ|データの種類|説明|  
+|プロパティ|データ型|説明|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|マネージ シンボルの名前です。|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|マネージシンボルの名前。|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|シンボルのインデックス ID。|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返します`SymTagManagedType`(の 1 つ、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)値)。|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|`SymTagManagedType`( [Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md)値のいずれか) を返します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [シンボル型のクラス階層](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

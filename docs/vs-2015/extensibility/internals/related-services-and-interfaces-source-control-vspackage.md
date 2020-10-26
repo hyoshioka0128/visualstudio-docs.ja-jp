@@ -1,5 +1,5 @@
 ---
-title: 関連サービスとインターフェイス (ソース管理 VSPackage) |Microsoft Docs
+title: 関連するサービスとインターフェイス (ソース管理 VSPackage) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,56 +12,56 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157404"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>関連サービスとインターフェイス (ソース管理 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-このセクションでは、ソース管理 VSPackage に関連するインターフェイスすべて一覧表示、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。 ソース管理 VSPackage では、これらのインターフェイスの一部を実装し、他のユーザーを使用してソース管理のタスクを実現します。  
+ここでは、のすべてのソース管理 VSPackage に関連するインターフェイスの一覧を示し [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ます。 ソース管理 VSPackage は、これらのインターフェイスの一部を実装し、他のインターフェイスを使用してソース管理タスクを実行します。  
   
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>インターフェイス、およびソース管理 Vspackage の実装  
- 次のインターフェイスが記載されて、 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]、し、ソース管理 VSPackage が、その目的の機能セットによってそれらのサブセットを実装します。 一部のインターフェイスがマークされていると必要なだけですべてのソース管理 VSPackage によって実装する必要があります。  
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>およびによって実装された、ソース管理 Vspackage のインターフェイス  
+ 次のインターフェイスについては、「」で説明してい [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ます。また、ソース管理 VSPackage は、必要な機能セットに応じてそれらのサブセットを実装します。 一部のインターフェイスは必須としてマークされており、すべてのソース管理 VSPackage によって実装される必要があります。  
   
- パッケージを実装していない、それらのインターフェイスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]既定の実装を提供します。 既定の実装に対応している場合は、VSPackage が登録されていないと、プロジェクトを制御していないときに注意してください。 正しく記述のソース管理 VSPackage では、これらのインターフェイスの既定の実装にしておくのではなく、すべての必要なインターフェイスを実装します。  
+ パッケージが実装していないインターフェイスの場合、には [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 既定の実装が用意されています。 既定の実装は、VSPackage が登録されておらず、プロジェクトが制御されていない場合に備えて設計されていることに注意してください。 適切に記述されたソース管理 VSPackage は、これらのインターフェイスの既定の実装に残すのではなく、必要なすべてのインターフェイスを実装します。  
   
- ソース管理 VSPackage では、次のインターフェイスの一部またはすべてをカプセル化するプライベートのサービスを実装する必要があります。  
+ ソース管理 VSPackage は、次のインターフェイスの一部またはすべてをカプセル化するプライベートサービスを実装する必要があります。  
   
  インターフェイスは次のとおりです。  
   
-- 必須:適切なエンティティ (プロジェクトのソース管理 VSPackage、ソース コントロールのスタブ) インターフェイスを実装する必要があります。  
+- 必須: 適切なエンティティ (ソース管理 VSPackage、ソース管理スタブ、プロジェクト) は、インターフェイスを実装する必要があります。  
   
-- 推奨:エンティティは、このインターフェイスを実装する必要があります。それ以外の場合、ソース コントロールの機能が制限される可能性があります。  
+- 推奨: エンティティは、このインターフェイスを実装する必要があります。それ以外の場合は、ソース管理機能が制限されることがあります。  
   
-- 省略可能: エンティティ インターフェイスを実装できますこの豊富な機能を提供します。  
+- 省略可能: エンティティはこのインターフェイスを実装して、より豊富な機能セットを提供できます。  
   
-|Interface|目的|によって実装されます。|実装します。|  
+|インターフェイス|目的|実装|導入?|  
 |---------------|-------------|--------------------|----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|エディターでは、変更、またはファイルを保存する前にこのインターフェイスを呼び出します。 ソース管理 VSPackage ファイルをチェック アウトしたり、チェック アウトが失敗した場合、操作を拒否できます。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|このインターフェイスは、プロジェクトでは、登録、登録を解除するソース管理を使用したプロジェクトと基本ソース コントロールのグリフのサポートを提供するなどの基本的なソース管理機能を提供します。|ソース管理 VSPackage|必須|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|このインターフェイスがから取得した、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>を使用して、<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>関数、または単に実装するオブジェクトをキャストすることによって`IVsHierarchy`に`IVsSccProject2`します。 または、プロジェクトの現在のソース管理の状態または場所を通知するプロジェクトでソース管理下にあるファイルを取得するために使用されます。|プロジェクト|必須|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>|統合モジュールは、現在アクティブな VSPackage を設定するのにこのインターフェイスを使用します。|ソース管理 VSPackage|必須|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|このインターフェイスは、サブスクリプション モデルに基づいています。 すべての VSPackage では、ドキュメントのイベントを受け取るし、発生されるイベントで、シェルによって了承する必要があることを通知できます。 実装され、によって処理される[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、実装するイベントを順番に渡す、 `IVsTrackProjectDocumentsEvents2` VSPackage にします。|ソース コントロールのスタブ|必須|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3>|このインターフェイスは、バッチ処理、同期読み取り/書き込み操作、および高度な`OnQueryAddFiles`メソッド。|ソース コントロールのスタブ|必須|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|**ソリューション エクスプ ローラー**プロジェクトが新しいファイルがプロジェクトに追加されたときに、またはファイルとフォルダーの名前を変更またはプロジェクトから削除されたときに、このインターフェイスを呼び出すとします。 ソース管理 VSPackage では、プロジェクト ファイルをチェック アウトしたり、操作をキャンセルすることができます。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents3>|**ソリューション エクスプ ローラー**プロジェクト IVstrackProjectDocuments3 インターフェイスのメソッドへの呼び出しに応答には、このインターフェイスを呼び出します。 ソース管理 VSPackage は、同期のバッチ操作を追跡できます読み取り/書き込み操作とより高度な使用`OnQueryAddFiles`メソッド。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation>|このインターフェイスは、参加リストの管理の Web プロジェクトのサポートを提供します。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip>|このインターフェイスは、プロジェクトのソース管理ファイルのツールヒントを取得するに使用されます。|ソース管理 VSPackage|省略可|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl>|このインターフェイスは、名前空間の拡張機能のサポートを提供します。|ソース管理 VSPackage|省略可|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution>|VSPackage では、このインターフェイスを使用して、名前空間の拡張機能を統合、**新規**、**オープン**、または**保存** ダイアログ ボックス。 その結果、プロジェクトに自動的に作成時に、ソース管理に追加したり、保存時に、ソース管理に追加操作が有効になります。|ソース管理 VSPackage|Optional|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>|VSPackage では、このインターフェイスを使用して、ソース コントロールのグリフでのノードとして追加のグリフを定義**ソリューション エクスプ ローラー**します。|ソース管理 VSPackage|省略可|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl>|**追加**Web プロジェクト ダイアログ ボックスは、このインターフェイスを使用します。 ソース管理の場所とその場所でソース管理リポジトリに追加した Web プロジェクトを開くを参照するためのメソッドを提供します。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>|このインターフェイスは、ソース管理からプロジェクトの読み込みを非同期 (バック グラウンド) のサポートを提供します。|ソース管理 VSPackage|省略可|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|このインターフェイスを使用するプロジェクトによって開始された非同期の読み込みの進行状況を監視する<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>します。|プロジェクト|省略可|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions>|このインターフェイスは、アクティブなソース管理 VSPackage のクエリを実行するための IDE を使用します。 IDE では、VSPackage の登録のアクティブなソース コントロールがない場合でも、意味を持つソース管理設定の値を照会します。 このインターフェイスが実装されており、によって処理される[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。|ソース コントロールのスタブ|必須|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>|このインターフェイスは、ソース管理 VSPackage の登録に使用されます。|ソース コントロールのスタブ|必須|  
-|<xref:EnvDTE.SourceControl>|このインターフェイスは、automation で使用されます。 そのため、UI を表示せずに実行できる機能のみを公開します。|ソース管理 VSPackage|省略可|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>|このインターフェイスは、ソリューション (.sln) ファイルで、ソース管理の設定を保存に使用されます。 設定には、ソース管理の場所とソース コントロールの状態フラグが含まれます。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>|このインターフェイスは、ソリューションのオプション (.suo) ファイルでのソース管理の設定の保存に使用されます。 これには、現在のユーザーの参加リストの場所などのユーザーに固有のソース管理設定があります。|ソース管理 VSPackage|推奨|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>|このインターフェイスは、イベントを監視するソリューションを閉じるか、またはプロジェクトを開くときに、新しいファイルをソース管理から取得する前にプロジェクト ファイルのチェックインなどの操作を実行するために使用されます。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|エディターは、ファイルを変更または保存する前に、このインターフェイスを呼び出します。 ソース管理 VSPackage は、チェックアウトに失敗した場合にファイルをチェックアウトしたり、操作を拒否したりできます。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|このインターフェイスは、プロジェクトの基本的なソース管理機能を提供します。たとえば、ソース管理を使用したプロジェクトの登録と登録解除や、基本的なソース管理のグリフのサポートなどを行うことができます。|ソース管理 VSPackage|必須|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|このインターフェイスは、関数を <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 使用する <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> か、を実装するオブジェクトをにキャストするだけで取得 `IVsHierarchy` `IVsSccProject2` できます。 プロジェクトのソース管理下にあるファイルを取得したり、現在のソース管理の状態または場所をプロジェクトに通知したりするために使用されます。|Project|必須|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>|統合モジュールは、このインターフェイスを使用して、現在のアクティブな VSPackage を設定します。|ソース管理 VSPackage|必須|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|このインターフェイスは、サブスクリプションモデルに基づいています。 VSPackage は、ドキュメントイベントを受信しようとしていることを通知し、発生しようとしているイベントについてシェルで通知することができます。 これはによって実装および処理され [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、さらに、を実装するイベント `IVsTrackProjectDocumentsEvents2` を VSPackage に渡します。|ソース管理スタブ|必須|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3>|このインターフェイスは、バッチ処理、同期された読み取り/書き込み操作、および高度なメソッドを提供し `OnQueryAddFiles` ます。|ソース管理スタブ|必須|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|**ソリューションエクスプローラー** とプロジェクトは、新しいファイルがプロジェクトに追加されたとき、またはファイルやフォルダーの名前が変更されたり、プロジェクトから削除されたりすると、このインターフェイスを呼び出します。 ソース管理 VSPackage は、プロジェクトファイルをチェックアウトするか、操作を取り消すことができます。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents3>|**ソリューションエクスプローラー** およびプロジェクトは、IVstrackProjectDocuments3 インターフェイスのメソッドに対する呼び出しに応答してこのインターフェイスを呼び出します。 ソース管理 VSPackage は、バッチ処理された操作、同期された読み取り/書き込み操作を追跡し、より高度なメソッドを操作でき `OnQueryAddFiles` ます。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation>|このインターフェイスは、Web プロジェクトの参加管理サポートを提供します。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip>|このインターフェイスは、プロジェクト内のソース管理ファイルのツールヒントを取得するために使用されます。|ソース管理 VSPackage|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl>|このインターフェイスは、名前空間拡張のサポートを提供します。|ソース管理 VSPackage|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution>|VSPackage は、このインターフェイスを使用して、名前空間の拡張機能を [ **新規**]、 **[開く**]、[ **保存** ] の各ダイアログボックスに統合します。 その結果、プロジェクトは、作成時にソース管理に自動的に追加されたり、保存操作が有効になったときにソース管理に追加されたりすることができます。|ソース管理 VSPackage|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>|VSPackage は、このインターフェイスを使用して、 **ソリューションエクスプローラー**のノードのソース管理のグリフとして追加のグリフを定義します。|ソース管理 VSPackage|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl>|Web プロジェクトの [ **追加** ] ダイアログボックスでは、このインターフェイスを使用します。 ソース管理の場所を参照したり、その場所にあるソース管理リポジトリに以前に追加された Web プロジェクトを開いたりするためのメソッドが用意されています。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>|このインターフェイスでは、ソース管理からのプロジェクトの非同期 (バックグラウンド) 読み込みがサポートされています。|ソース管理 VSPackage|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|このインターフェイスにより、プロジェクトは、によって開始された非同期読み込みの進行状況を監視でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> ます。|Project|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions>|このインターフェイスを使用すると、IDE はアクティブなソース管理 VSPackage に対してクエリを実行できます。 IDE は、アクティブなソース管理 VSPackage が登録されていない場合でも、意味のあるソース管理設定の値を照会します。 このインターフェイスは、によって実装および処理され [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。|ソース管理スタブ|必須|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>|このインターフェイスは、ソース管理 VSPackage の登録に使用されます。|ソース管理スタブ|必須|  
+|<xref:EnvDTE.SourceControl>|このインターフェイスは、オートメーションで使用されます。 そのため、UI を表示せずに実行できる関数のみが公開されます。|ソース管理 VSPackage|オプション|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>|このインターフェイスは、ソース管理の設定をソリューション (.sln) ファイルに保存するために使用されます。 設定には、ソース管理の場所とソース管理の状態フラグが含まれます。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>|このインターフェイスは、ソース管理の設定をソリューションオプション (.suo) ファイルに保存するために使用されます。 これには、現在のユーザーの参加場所など、ユーザー固有のソース管理設定が含まれる場合があります。|ソース管理 VSPackage|推奨|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>|このインターフェイスは、ソリューションを閉じる前にプロジェクトファイルのチェックイン、プロジェクトを開くときにソース管理から新しいファイルを取得するなどの操作を実行するために、イベントを監視するために使用されます。|ソース管理 VSPackage|推奨|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デザイン要素](../../extensibility/internals/source-control-vspackage-design-elements.md)

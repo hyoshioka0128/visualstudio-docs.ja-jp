@@ -1,5 +1,5 @@
 ---
-title: Windows レジストリ内のツール |Microsoft Docs
+title: レジストリ内のツールウィンドウ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,21 +11,21 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186381"
 ---
 # <a name="tool-windows-in-the-registry"></a>レジストリのツール ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ツール ウィンドウを提供する Vspackage に登録する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]同様のツール ウィンドウのプロバイダー。 Visual Studio パッケージ テンプレートを使用して作成されたツール ウィンドウは、既定でこれを実行します。 ツール ウィンドウのプロバイダーでは、既定のツール ウィンドウのサイズと場所、ツール ウィンドウのウィンドウとドッキング スタイルとして機能するウィンドウの GUID などの可視性属性を指定するシステムのレジストリ キーがあります。  
+ツールウィンドウを提供する Vspackage は、ツール [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ウィンドウプロバイダーとしてに登録する必要があります。 Visual Studio パッケージテンプレートを使用して作成されたツールウィンドウは、既定でこれを実行します。 ツールウィンドウプロバイダーには、表示属性を指定するシステムレジストリキーがあります。これには、既定のツールウィンドウのサイズと場所、ツールウィンドウペインとして機能するウィンドウの GUID、ドッキングスタイルなどが含まれます。  
   
- 開発中は、管理されているツール ウィンドウのプロバイダーは、ソース コードに属性を追加し、生成されたアセンブリで RegPkg.exe ユーティリティを実行してツール ウィンドウを登録します。 詳細については、次を参照してください。[ツール ウィンドウの登録](../extensibility/registering-a-tool-window.md)します。  
+ 開発中、マネージツールウィンドウプロバイダーは、ソースコードに属性を追加し、結果のアセンブリで RegPkg.exe ユーティリティを実行することで、ツールウィンドウを登録します。 詳細については、「 [ツールウィンドウの登録](../extensibility/registering-a-tool-window.md)」を参照してください。  
   
-## <a name="registering-unmanaged-tool-window-providers"></a>管理されていないツール ウィンドウのプロバイダーを登録します。  
- 管理されていないツール ウィンドウのプロバイダーに登録する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]システム レジストリの ToolWindows セクションでします。 次の .reg ファイル フラグメントは、動的なツール ウィンドウを登録する方法を示しています。  
+## <a name="registering-unmanaged-tool-window-providers"></a>アンマネージツールウィンドウプロバイダーを登録しています  
+ アンマネージツールウィンドウプロバイダーは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] システムレジストリの ToolWindows セクションのに登録する必要があります。 次の .reg ファイルフラグメントは、動的ツールウィンドウがどのように登録されるかを示しています。  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\<version number>\ToolWindows\{f0e1e9a1-9860-484d-ad5d-367d79aabf55}]  
@@ -38,9 +38,9 @@ ms.locfileid: "68186381"
 "{f1536ef8-92ec-443c-9ed7-fdadf150da82}"=dword:00000000  
 ```  
   
- 上記の例では、最初のキー、バージョン番号は、バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]7.1 や 8.0、サブキー {f0e1e9a1-9860-484d-ad5d-367d79aabf55} は、ツール ウィンドウ ペイン (DynamicWindowPane) と既定値の {の GUID など、01069cdd-95ce-4620-ac21-ddff6c57f012} は、ツール ウィンドウを提供する VSPackage の GUID です。 Float 型および DontForceCreate サブキーの詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。  
+ 上記の例の最初のキーでは、バージョン番号はのバージョン ( [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 7.1 や8.0 など)、サブキー {f0e1e9a1-9860-484d-ad5d-367d79aabf55} はツールウィンドウペインの guid (DynamicWindowPane)、既定値 {01069cdd-4620 95ce-ac21-ddff6c57f012} は、ツールウィンドウを提供している VSPackage の guid です。 Float サブキーと DontForceCreate サブキーの詳細については、「 [ツールウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)」を参照してください。  
   
- 2 番目の省略可能なキーである ToolWindows\Visibility には、表示するようにするツール ウィンドウを必要とするコマンドの Guid を指定します。 この場合、指定されたコマンドではありません。 詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。  
+ 2番目の省略可能なキー ToolWindows\Visibility は、ツールウィンドウを表示する必要があるコマンドの Guid を指定します。 この場合、コマンドは指定されていません。 詳細については、「 [ツールウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPackage の基本事項](../misc/vspackage-essentials.md)

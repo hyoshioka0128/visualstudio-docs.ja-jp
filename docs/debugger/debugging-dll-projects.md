@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301165"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315071"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio で DLL をデバッグする (C#、C++、Visual Basic、F#)
 
@@ -66,7 +66,7 @@ C++ DLL にデバッガーをアタッチするには、C++ のコードで `Deb
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> C/C++ DLL のファイルの場所を設定する
 
-外部 DLL をデバッグするには、呼び出し元のプロジェクトで、DLL、その [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)、および DLL で必要な他のファイルを見つけることができる必要があります。 カスタム ビルド タスクを作成して、これらのファイルを *\<プロジェクト フォルダー>\Debug* 出力フォルダーにコピーするか、ファイルを手動でここにコピーすることができます。
+外部 DLL をデバッグするには、呼び出し元のプロジェクトで、DLL、その [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)、および DLL で必要な他のファイルを見つけることができる必要があります。 カスタム ビルド タスクを作成して、これらのファイルを *\<project folder>\Debug* 出力フォルダーにコピーするか、ファイルを手動でここにコピーすることができます。
 
 C/C++ プロジェクトの場合は、出力フォルダーにコピーするのではなく、プロジェクトのプロパティ ページでヘッダーと LIB ファイルの場所を設定できます。
 
@@ -90,7 +90,7 @@ C++ プロジェクトの設定の詳細については、[Windows C++ のプロ
 
 デバッグを始める前に、必ず DLL のデバッグ バージョンをビルドしてください。 DLL をデバッグするには、呼び出し元のアプリで、その [.pdb ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)および DLL で必要な他のファイルを見つけることができる必要があります。
 
-カスタム ビルド タスクを作成して、DLL ファイルを *\<呼び出し元プロジェクト フォルダー>\Debug* 出力フォルダーにコピーするか、ファイルを手動でここにコピーすることができます。
+カスタム ビルド タスクを作成して、DLL ファイルを *\<calling project folder>\Debug* 出力フォルダーにコピーするか、ファイルを手動でここにコピーすることができます。
 
 正しい場所の DLL を呼び出していることを確認します。 これは明白なことのように見えるかもしれませんが、呼び出し元のアプリで DLL の別のコピーを検出して読み込んだ場合、設定したブレークポイントにデバッガーがヒットすることはありません。
 

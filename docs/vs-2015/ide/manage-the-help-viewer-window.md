@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d8e386e505e50f17959fb9fc33de4bf8175e95c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651400"
 ---
 # <a name="manage-the-help-viewer-window"></a>ヘルプ ビューアーのウィンドウの管理
@@ -27,7 +27,7 @@ ms.locfileid: "72651400"
 ## <a name="docking-tabs"></a>ドッキング タブ
  ヘルプ ビューアーでは、標準のドッキング機能がサポートされています。 既定では、ヘルプ ビューアーのすべてのタブはドッキングされますが、独立した子ウィンドウとして表示されるように、タブの移動、タブのサイズ変更、他の場所へのタブのドッキング、タブの「切り離し」を行うことができます。
 
- 既定のレイアウトに [ヘルプ ビューアー] ウィンドウを復元するには、 **[ビューアーのオプション]** ダイアログ ボックスを開き、 **[リセット]** ボタンを選択します。
+ 既定のレイアウトに [ヘルプ ビューアー] ウィンドウを復元するには、**[ビューアーのオプション]** ダイアログ ボックスを開き、**[リセット]** ボタンを選択します。
 
 ## <a name="opening-a-topic-in-a-new-tab"></a>新しいタブでトピックを開く
  ナビゲーション タブでトピックを選択してから、Ctrl + Enter キーを選択します。

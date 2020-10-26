@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata::get_virtualaddress |Microsoft Docs
+title: 'IDiaFrameData:: get_virtualAddress |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2da9743b009c2867e269aa1f0596295d73581b97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161415"
 ---
-# <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
+# <a name="idiaframedataget_virtualaddress"></a>IDiaFrameData::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 フレームのコードの仮想アドレス (VA) を取得します。  
@@ -35,10 +35,10 @@ HRESULT get_virtualAddress ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]フレームのコードの仮想アドレスを返します。  
+ 入出力フレームのコードの仮想アドレスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

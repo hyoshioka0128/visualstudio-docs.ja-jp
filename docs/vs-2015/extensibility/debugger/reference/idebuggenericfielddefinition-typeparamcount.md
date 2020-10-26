@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount |Microsoft Docs
+title: 'IDebugGenericFieldDefinition:: TypeParamCount |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6459b7b6d1297085b7311e8e7ae20dbfa9c0f366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180876"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-[標準] フィールドに関連付けられている型パラメーターの数を取得します。  
+ジェネリックフィールドに関連付けられている型パラメーターの数を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,10 +42,10 @@ int TypeParamCount(
  [入力、出力]型パラメーターの数。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 場合一覧\<T >、このメソッドは、1 を返しますと、一覧\<T1, T2 >、このメソッドは、2 を返します。 このメソッドは、型パラメーターがない場合に 0 を返します。  
+## <a name="remarks"></a>注釈  
+ List \<T> の場合、このメソッドは1を返します。リストの場合、 \<T1,T2> このメソッドは2を返します。 型パラメーターがない場合、このメソッドは0を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

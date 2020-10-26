@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 315af434271d57a8547963f2538ff1b799ef4fd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150021"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プログラム デバッグ データベース (.pdb) ファイルを使用して、スタック ウォークが容易になります。  
+プログラムデバッグデータベース (.pdb) ファイルを使用して、スタックのウォークを容易にします。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -34,36 +34,36 @@ IDiaStackWalkHelper: IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDiaStackWalkHelper`:  
+ 次の表は、のメソッドを示してい `IDiaStackWalkHelper` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
 |[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|レジスタの値を取得します。|  
 |[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|レジスタの値を設定します。|  
-|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|メモリ内で実行可能ファイルのイメージからのデータのブロックを読み取ります。|  
-|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|最も近い関数のリターン アドレスの指定したスタック フレームを検索します。|  
-|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|または、指定したスタック アドレスの近くのリターン アドレスの指定したスタック フレームを検索します。|  
-|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|指定された仮想アドレスを含むスタック フレームを取得します。|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|指定した仮想アドレスを表すシンボルを取得します。 **注:** シンボルは、型である必要があります`SymTagFunctionType`(からの値、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)列挙型)。|  
-|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|指定された仮想アドレスに関連付けられている PDATA データ ブロックを返します。|  
-|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|実行可能ファイルのメモリ領域で仮想アドレスをどこかが指定されて、実行可能ファイルの開始仮想アドレスを取得します。|  
+|[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|メモリ内の実行可能イメージからデータブロックを読み取ります。|  
+|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|指定したスタックフレーム内で、最も近い関数の戻り先アドレスを検索します。|  
+|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|指定したスタックフレーム内で、指定したスタックアドレス (またはその近く) の戻りアドレスを検索します。|  
+|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|指定した仮想アドレスを格納しているスタックフレームを取得します。|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|指定した仮想アドレスを含むシンボルを取得します。 **注:**  シンボルには、型 `SymTagFunctionType` ( [Symtagenum 列挙](../../debugger/debug-interface-access/symtagenum.md) 型の値) が含まれている必要があります。|  
+|[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|指定された仮想アドレスに関連付けられている PDATA データブロックを返します。|  
+|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|実行可能ファイルのメモリ領域内のどこかに仮想アドレスが指定された場合に、実行可能ファイルの開始仮想アドレスを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- このインターフェイスは、プログラムの実行中にスタック フレームのリストを構築する実行可能ファイルに関する情報を取得する DIA コードによって呼び出されます。  
+## <a name="remarks"></a>注釈  
+ このインターフェイスは、プログラムの実行中にスタックフレームの一覧を作成するために実行可能ファイルに関する情報を取得するために、DIA コードによって呼び出されます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- クライアント アプリケーションでは、プログラムの実行中にスタックのウォークをサポートするためにこのインターフェイスを実装します。 このインターフェイスのインスタンスは、 [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)または[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)メソッド。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ クライアントアプリケーションは、このインターフェイスを実装して、プログラムの実行中にスタックをたどることをサポートします。 このインターフェイスのインスタンスは、 [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) または [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) メソッドに渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)   
+ [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c6171a5dedfd6985a6f54e748011bf86e03f4d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664648"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (XElement 動的プロパティ)
@@ -38,4 +38,4 @@ elem.Element[{namespaceName}localName]
  このプロパティは、<xref:System.Xml.Linq.XContainer.Element%2A> クラスの <xref:System.Xml.Linq.XContainer?displayProperty=fullName> メソッドに相当します。
 
 ## <a name="see-also"></a>参照
- <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName> [XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)[要素](../designers/elements-xelement-dynamic-property.md)
+ <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>[XElement クラスの動的プロパティ](../designers/xelement-class-dynamic-properties.md)[要素](../designers/elements-xelement-dynamic-property.md)

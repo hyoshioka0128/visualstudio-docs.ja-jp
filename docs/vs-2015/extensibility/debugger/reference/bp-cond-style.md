@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbb2674381992bd86f0144af103615f0a3922fcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153570"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
+# <a name="bp_cond_style"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-保留中のブレークポイントの条件のスタイルを指定し、ブレークポイントをバインドします。  
+保留中のブレークポイントとバインドされたブレークポイントのブレークポイントの条件スタイルを指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,24 +45,24 @@ public enum enum_BP_COND_STYLE { 
   
 ## <a name="members"></a>メンバー  
  BP_COND_NONE  
- ブレークポイントの位置に達すると、ブレークポイントが発生します。 ブレークポイントの条件を指定します。  
+ ブレークポイントの位置に達したときにブレークポイントを発生させます。 ブレークポイント条件が指定されていません。  
   
  BP_COND_WHEN_TRUE  
- 評価される条件式がブレークポイントに関連付けられている場合のみ、ブレークポイントを発生させる`true`します。  
+ ブレークポイントに関連付けられている条件式がと評価された場合にのみ、ブレークポイントを発生させ `true` ます。  
   
  BP_COND_WHEN_CHANGED  
- 条件付きの式の値は、ブレークポイントに関連付けられている場合にのみ、ブレークポイントがその以前の評価から変更が発生します。  
+ ブレークポイントに関連付けられている条件式の値が以前の評価から変更された場合にのみ、ブレークポイントを発生させます。  
   
-## <a name="remarks"></a>Remarks  
- 使用、`styleCondition`のメンバー、 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)構造体。  
+## <a name="remarks"></a>注釈  
+ `styleCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)構造体のメンバーに使用されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

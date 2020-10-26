@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringCharLength |Microsoft Docs
+title: 'IDebugProperty3:: GetStringCharLength |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7fa9d6a440f0e7ad1f4c55463b025965621a21e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157412"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-関連付けられているプロパティの文字列の文字数を返します。  
+関連付けられたプロパティの文字列内の文字数を返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,16 +42,16 @@ int GetStringCharLength(
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|`pLen`|[out]プロパティの文字列の文字数を返します。|  
+|`pLen`|入出力プロパティの文字列の文字数を返します。|  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`; エラー コードを返します。  
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 呼び出しにバッファーを割り当てるための準備としてこのメソッドを使用する、通常、 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ 通常、このメソッドは、 [Getstringchars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) メソッドの呼び出し用のバッファーを割り当てる準備として使用されます。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CProperty**を公開するオブジェクト、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイス。  
+ 次の例は、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを公開する**cproperty**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  
@@ -93,6 +93,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

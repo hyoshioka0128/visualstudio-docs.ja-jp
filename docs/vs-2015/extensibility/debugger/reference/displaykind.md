@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10bed6b3398b93b0776876491d812ec36c9e9e04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198809"
 ---
 # <a name="displaykind"></a>DisplayKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-列挙から取得する情報の種類を表す有効な値、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトし、ユーザーに表示します。  
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトから取得してユーザーに表示する情報の種類を表す有効な値を列挙します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -51,15 +51,15 @@ public enum enum_DisplayKind
  フィールドの名前。  
   
  DisplayKind_Type  
- フィールドの型。  
+ フィールドの種類。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Ee.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Ee  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

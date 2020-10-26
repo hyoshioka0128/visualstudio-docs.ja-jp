@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 03/27/2020
+ms.date: 08/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9c1ffc0252f0fcd92f026c876adfc8ad694c41
-ms.sourcegitcommit: 273b657e115c1756adb84e0e56b6f2c709bcee76
+ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759730"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88992356"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -73,7 +73,7 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 このステップを実行するにはインターネット接続が必要です。 すべての言語およびすべての機能を使用してオフライン インストールを作成するには、次のいずれかの例のようなコマンドを使用します。
 
    > [!IMPORTANT]
-   > Visual Studio の完全なレイアウトには、少なくとも 35 GB のディスク領域が必要で、ある程度ダウンロードに時間がかかります。 インストールするコンポーネントのみでレイアウトを作成する方法の詳細については、「[ネットワーク レイアウトをカスタマイズする](#customize-the-network-layout)」セクションをご覧ください。
+   > 1 つの言語ロケールの完全なレイアウトを使用するには、Visual Studio Community では約 35 GB のディスク領域、Visual Studio Enterprise では 42 GB が必要です。 その他の[言語ロケール](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)には、それぞれ約 0.5 GB が必要になります。 詳細については、「[ネットワーク レイアウトをカスタマイズする](#customize-the-network-layout)」セクションを参照してください。
    >
    > [!TIP]
    > コマンドをダウンロード ディレクトリから実行していることを確認してください。 通常は、Windows 10 を実行するコンピューター上の `C:\Users\<username>\Downloads` です。
@@ -96,7 +96,7 @@ Visual Studio ブートストラップを response.json ファイルとペアリ
 
 他のコンピューターから実行できるようにネットワーク共有でレイアウトをホストします。
 
-次の例では、[xcopy](/windows-server/administration/windows-commands/xcopy/) を使用します。 必要に応じて、[robocopy](/windows-server/administration/windows-commands/robocopy/) を使用することもできます。  
+次の例では、[xcopy](/windows-server/administration/windows-commands/xcopy/) を使用します。 必要に応じて、[robocopy](/windows-server/administration/windows-commands/robocopy/) を使用することもできます。
 
 ::: moniker range="vs-2017"
 

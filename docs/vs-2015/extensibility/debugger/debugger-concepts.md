@@ -11,57 +11,57 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f8dd5567fb21fafbac3c63b84dae1e0e33b0b91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200619"
 ---
 # <a name="debugger-concepts"></a>デバッガーの概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio のデバッグ パッケージをビルドするには、パッケージの設計で使用されるアーキテクチャの概念を理解する必要があります。  
+Visual Studio デバッグパッケージでビルドするには、パッケージのデザインに使用されるアーキテクチャの概念を理解している必要があります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [デバッグ セッション](../../extensibility/debugger/debug-session.md)  
- デバッグのアーキテクチャでは、セッションの役割について説明します。  
+ デバッグアーキテクチャにおけるセッションの役割について説明します。  
   
  [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)  
- 定義抽象と物理の両方の用語で、アーキテクチャのデバッグの観点からどのようなサーバーは、します。  
+ 抽象と物理的の両方の条件において、デバッグアーキテクチャに関してサーバーがどのようなものかを定義します。  
   
  [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)  
- 定義ポート サプライヤーは、デバッグのアーキテクチャの観点から。  
+ デバッグアーキテクチャに関してポートサプライヤーを定義します。  
   
  [ポート](../../extensibility/debugger/ports.md)  
- 定義デバッグのアーキテクチャの観点からどのようなポートとは。  
+ デバッグアーキテクチャの観点からポートを定義します。  
   
- [プロセス](../../extensibility/debugger/processes.md)  
- 定義デバッグのアーキテクチャの観点からどのようなプロセスとは。  
+ [処理](../../extensibility/debugger/processes.md)  
+ デバッグアーキテクチャの観点からプロセスを定義します。  
   
  [プログラム ノード](../../extensibility/debugger/program-nodes.md)  
- デバッグ自体とで実行されているプロセスを特定できる方法を含めて、アーキテクチャの観点からプログラム ノードを定義します。  
+ デバッグアーキテクチャの観点からプログラムノードを定義します。これには、それ自体と、それが実行されているプロセスを識別する方法も含まれます。  
   
- [プログラム](../../extensibility/debugger/programs.md)  
- デバッグのアーキテクチャの観点からプログラムを定義します。  
+ [Programs](../../extensibility/debugger/programs.md)  
+ デバッグアーキテクチャに関してプログラムを定義します。  
   
  [スレッド](../../extensibility/debugger/threads.md)  
- デバッグのアーキテクチャの観点からのスレッドの特性を定義します。  
+ デバッグアーキテクチャに関してスレッドの特性を定義します。  
   
  [スタック フレーム](../../extensibility/debugger/stack-frames.md)  
- デバッグのアーキテクチャの観点からのスタック フレームを定義します。 スタック フレームは、スレッドの実行コンテキストを提供するスタックの抽象化です。  
+ デバッグアーキテクチャの観点でスタックフレームを定義します。 スタックフレームは、スレッドの実行コンテキストを提供するスタックを抽象化したものです。  
   
  [モジュール](../../extensibility/debugger/modules.md)  
- アーキテクチャをデバッグ実行可能ファイルや DLL などのコードの物理コンテナーとしての観点から、モジュールを定義します。  
+ デバッグアーキテクチャに関して、実行可能ファイルや DLL などのコードの物理的なコンテナーとしてモジュールを定義します。  
   
  [[ブレークポイント]](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
- 次の 3 つの種類のブレークポイントを定義します: 保留中、バインド、およびエラー-デバッグのアーキテクチャの観点から。  
+ デバッグアーキテクチャに関して、3種類のブレークポイント (保留、バインド、エラー) を定義します。  
   
 ## <a name="related-sections"></a>関連項目  
  [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md)  
- デバッグ エンジン (DE) が同時にして動作し、コード、ドキュメント、および式の評価のコンテキスト内で方法について説明します。 3 つのコンテキスト、場所、位置、またはそれに関連する評価ごとに説明します。  
+ コード、ドキュメント、および式の評価コンテキスト内でデバッグエンジン (DE) を同時に動作させる方法について説明します。 3つのコンテキストのそれぞれについて、場所、位置、または評価に関連する評価について説明します。  
   
  [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)  
- デバッグ エンジン (DE)、式エバリュエーター (EE) シンボル ハンドラー (SH) など、Visual Studio デバッグ コンポーネントの概要を示します。  
+ デバッグエンジン (DE)、式エバリュエーター (EE)、およびシンボルハンドラー (SH) など、Visual Studio のデバッグコンポーネントの概要について説明します。  
   
  [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)  
- プログラムを起動して、式の評価などのさまざまなデバッグ タスクへのリンクが含まれています。
+ プログラムの起動や式の評価など、さまざまなデバッグタスクへのリンクが含まれています。

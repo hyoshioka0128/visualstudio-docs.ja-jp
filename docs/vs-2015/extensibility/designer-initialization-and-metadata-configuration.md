@@ -12,90 +12,90 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2dec3937616c712c56b7012949e044702e6b11f2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703064"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>デザイナーの初期化とメタデータの構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-デザイナーまたはデザイナー コンポーネントに関連付けられているメタデータとフィルターの属性の操作は、アプリケーションで異なる処理するために、特定のデザイナーによって使用されるツールを定義するメカニズムを提供します<xref:System.Type>オブジェクト (などのデータ構造体。クラス、またはグラフィカル エンティティ)、デザイナーが使用可能な場合と、デザイナーをサポートするために、Visual Studio IDE を構成する方法 (インスタンスが**ツールボックス**カテゴリまたはタブを使用できる)。  
+デザイナーまたはデザイナーコンポーネントに関連付けられているメタデータ属性およびフィルター属性を操作すると、アプリケーションは、デザイナー <xref:System.Type> が使用できるとき、および Visual STUDIO IDE がデザイナーをサポートするように構成されているかどうか (たとえば、 **ツールボックス** のカテゴリまたはタブが使用可能な場合) を定義できます。  
   
- [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]デザイナーまたはデザイナーのコンポーネントの初期化のコントロールと、VSPackage によって、メタデータの操作を容易にいくつかのメカニズムを提供します。  
+ には、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] デザイナーまたはデザイナーコンポーネントの初期化と、VSPackage によるメタデータの操作の制御を容易にするいくつかのメカニズムが用意されています。  
   
 ## <a name="initializing-metadata-and-configuration-information"></a>メタデータと構成情報の初期化  
- オンデマンドで読み込まれているため、Vspackage が読み込まれていないによって、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]デザイナーのインスタンスを作成する前に環境。 そのため、Vspackage は、処理するためには、作成時にデザイナーまたはデザイナー コンポーネントを構成するための標準メカニズムを使用できません、<xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated>イベント。 VSPackage がのインスタンスを実装する代わりに、<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>インターフェイスをデザイン画面の拡張機能と呼ばれるカスタマイズを提供できる自身を登録します。  
+ Vspackage は要求時に読み込まれるため、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デザイナーをインスタンス化する前に、環境によって読み込まれていない可能性があります。 したがって、Vspackage は、イベントを処理するために、作成時にデザイナーまたはデザイナーコンポーネントを構成するための標準メカニズムを使用することはできません <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> 。 代わりに、VSPackage はインターフェイスのインスタンスを実装 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> し、それ自体を登録して、デザインサーフェイス拡張機能と呼ばれるカスタマイズを提供します。  
   
-### <a name="customizing-initialization"></a>初期化をカスタマイズします。  
- デザイナー、コンポーネント、またはデザイナーの画面をカスタマイズする必要があります。  
+### <a name="customizing-initialization"></a>カスタマイズ (初期化を)  
+ デザイナー、コンポーネント、またはデザイナー画面をカスタマイズするには、次の操作を行います。  
   
-1. デザイナーのメタデータを変更して効果的に特定する方法を変更する<xref:System.Type>がアクセスまたは変換します。  
+1. デザイナーのメタデータを変更し、特定のに <xref:System.Type> アクセスまたは変換する方法を効果的に変更する。  
   
-     これは、通常、<xref:System.Drawing.Design.UITypeEditor>または<xref:System.ComponentModel.TypeConverter>メカニズム。  
+     通常、これはまたはのメカニズムを使用して行われ <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.TypeConverter> ます。  
   
-     たとえば、 <xref:System.Windows.Forms>-ベースのデザイナーを初期化すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境を変更します、<xref:System.Drawing.Design.UITypeEditor>の<xref:System.Web.UI.WebControls.Image>デザイナーを使用した、resource manager を使用して、ファイル システムではなく、ビットマップを取得するために使用するオブジェクト。  
+     たとえば、ベースの <xref:System.Windows.Forms> デザイナーが初期化されると、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] <xref:System.Drawing.Design.UITypeEditor> リソースマネージャーを使用して <xref:System.Web.UI.WebControls.Image> ファイルシステムではなくビットマップを取得するために、デザイナーで使用するオブジェクトのが環境によって変更されます。  
   
-2. イベントにサブスクライブするか、プロジェクトの構成情報を取得して、環境と統合します。 プロジェクトの構成情報を取得してイベントにサブスクライブして取得することによって、<xref:System.ComponentModel.Design.ITypeResolutionService>インターフェイス。  
+2. たとえば、イベントをサブスクライブしたり、プロジェクトの構成情報を取得したりして、環境と統合します。 インターフェイスを取得することで、プロジェクトの構成情報を取得し、イベントをサブスクライブでき <xref:System.ComponentModel.Design.ITypeResolutionService> ます。  
   
-3. 適切なライセンス認証でユーザー環境の変更**ツールボックス**カテゴリのインスタンスを適用することで、デザイナーの適用性を制限することで、<xref:System.ComponentModel.ToolboxItemFilterAttribute>デザイナー クラス。  
+3. 適切な **ツールボックス** カテゴリをアクティブにしたり、デザイナーにクラスのインスタンスを適用してデザイナーの適用性を制限したりすることによって、ユーザー環境を変更し <xref:System.ComponentModel.ToolboxItemFilterAttribute> ます。  
   
-### <a name="designer-initialization-by-a-vspackage"></a>Vspackage のデザイナーの初期化  
- VSPackage は、デザイナーの初期化を処理する必要があります。  
+### <a name="designer-initialization-by-a-vspackage"></a>VSPackage によるデザイナーの初期化  
+ VSPackage は、次の方法でデザイナーの初期化を処理する必要があります。  
   
-1. 実装するオブジェクトを作成、<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>クラス。  
+1. クラスを実装するオブジェクトを作成 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> します。  
   
    > [!NOTE]
-   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>と同じオブジェクトのクラスを実装することはありません、<xref:Microsoft.VisualStudio.Shell.Package>クラス。  
+   > クラスは、 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> クラスと同じオブジェクトに実装しないでください <xref:Microsoft.VisualStudio.Shell.Package> 。  
   
-2. 実装するクラスを登録<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>のインスタンスを適用することで、VSPackage のデザイナーの拡張機能のサポートを提供するものとして<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>、<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>と<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>の VSPackage の実装を提供するクラスに<xref:Microsoft.VisualStudio.Shell.Package>.  
+2. <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>のインスタンスを適用することによって、VSPackage のデザイナー拡張機能のサポートを提供するように、クラスを登録し <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> ます。また、VSPackage のの実装を提供するクラスにを実装し <xref:Microsoft.VisualStudio.Shell.Package> ます。  
   
-   すべてのデザイナーまたはデザイナー コンポーネントを作成すると、されるたびに、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境。  
+   デザイナーまたはデザイナーコンポーネントが作成されるたびに、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 環境は次のようになります。  
   
-3. 各登録済みのデザイン画面の拡張機能のプロバイダーにアクセスします。  
+3. 登録されている各デザインサーフェイス拡張機能プロバイダーにアクセスします。  
   
-4. インスタンス化し、各デザイン サーフェスの拡張機能プロバイダーのインスタンスを初期化します<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>オブジェクト  
+4. 各デザインサーフェイス拡張機能プロバイダーのオブジェクトのインスタンスをインスタンス化し、初期化します。 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>  
   
-5. デザイン画面の拡張機能プロバイダーの各を呼び出す<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A>メソッドまたは<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A>メソッド (必要に応じて)。  
+5. 各デザインサーフェイス拡張機能プロバイダーの <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> メソッドまたは <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> メソッドを (必要に応じて) 呼び出します。  
   
-   実装する場合、 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> VSPackage のメンバーとしてオブジェクトのことを理解することが重要。  
+   <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>オブジェクトを VSPackage のメンバーとして実装する場合は、次の点を理解しておくことが重要です。  
   
-6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境はどのようなメタデータを制御を提供していないか、特定の他の構成設定`DesignSurfaceExtension`プロバイダーの変更します。 2 つ以上のことは`DesignSurfaceExtension`プロバイダーが明確にされている最後の変更を使用した、競合している方法で同じデザイナー機能を変更します。 どの変更が適用される最後は不確定はありません。  
+6. 環境では、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 特定のプロバイダーによって変更されるメタデータやその他の構成設定を制御することはできません `DesignSurfaceExtension` 。 競合する方法で、2つ以上の `DesignSurfaceExtension` プロバイダーが同じデザイナー機能を変更し、最終的な変更が明確になる可能性があります。 どの変更が最後に適用されたかは不確定です。  
   
-7. 実装を明示的に制限することは、<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>オブジェクトのインスタンスを適用することで、特定のデザイナーを<xref:System.ComponentModel.ToolboxItemFilterAttribute>その実装にします。 詳細については**ツールボックス**フィルターの項目を参照してください、<xref:System.ComponentModel.ToolboxItemFilterAttribute>と<xref:System.ComponentModel.ToolboxItemFilterType>します。  
+7. <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>のインスタンスをその実装に適用することで、オブジェクトの実装を特定のデザイナーに明示的に制限することができ <xref:System.ComponentModel.ToolboxItemFilterAttribute> ます。 **ツールボックス**項目のフィルター処理の詳細については、「」および「」を参照してください <xref:System.ComponentModel.ToolboxItemFilterAttribute> <xref:System.ComponentModel.ToolboxItemFilterType> 。  
   
 ## <a name="additional-metadata-provisioning"></a>追加のメタデータのプロビジョニング  
- VSPackage では、デザイン時にデザイナーまたは以外のデザイナー コンポーネントの構成を変更できます。  
+ VSPackage は、デザイン時以外のデザイナーまたはデザイナーコンポーネントの構成を変更できます。  
   
- <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>クラスをプログラムで使用できるデザイナーを提供する VSPackage に適用することもできます。  
+ クラスは、 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> プログラムで使用することも、デザイナーを提供する VSPackage に適用することもできます。  
   
- インスタンス、<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>クラスは、デザイン サーフェイス上で作成されたコンポーネントのメタデータの変更に使用されます。 たとえば、1 つで使用される既定のプロパティ ブラウザーを置き換えることができます<xref:System.Windows.Forms.CommonDialog>カスタム プロパティ ブラウザーでのオブジェクト。  
+ クラスのインスタンス <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> は、デザインサーフェイスで作成されたコンポーネントのメタデータを変更するために使用されます。 たとえば、カスタムプロパティブラウザーを使用して、オブジェクトによって使用される既定のプロパティブラウザーを置き換えることができ <xref:System.Windows.Forms.CommonDialog> ます。  
   
- インスタンスによって提供される変更<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>の VSPackage の実装に適用される<xref:Microsoft.VisualStudio.Shell.Package>2 つのスコープのいずれかの。  
+ の VSPackage の実装に適用されるのインスタンスによって提供される変更 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> <xref:Microsoft.VisualStudio.Shell.Package> は、次の2つのスコープのいずれかを持つことができます。  
   
-- 指定したコンポーネントのすべての新しいインスタンスの Global--  
+- Global--指定されたコンポーネントのすべての新しいインスタンスに対して  
   
-- ローカル--現在 VSPackage によって提供されるデザイン サーフェイス上に作成されるコンポーネントのインスタンスにのみ関連します。  
+- Local--現在の VSPackage によって提供されるデザインサーフェイス上に作成されたコンポーネントのインスタンスにのみ関連します。  
   
-  `IsGlobal`のプロパティ、<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>の VSPackage の実装に適用されるインスタンス<xref:Microsoft.VisualStudio.Shell.Package>このスコープを決定します。  
+  `IsGlobal` <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> VSPackage のの実装に適用されるインスタンスのプロパティによって、 <xref:Microsoft.VisualStudio.Shell.Package> このスコープが決まります。  
   
-  実装に属性を適用する<xref:Microsoft.VisualStudio.Shell.Package>で、<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A>のプロパティ、<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>オブジェクトに設定して`true`、全体のブラウザーを次のように、変更[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境。  
+  次のように、に設定されているオブジェクトのプロパティを使用しての実装に属性を適用する <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> と、 <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> `true` 環境全体のブラウザーが変更され [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。  
   
   `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
   `internal class MyPackage : Package {}`  
   
-  グローバル フラグが設定された場合`false`メタデータの変更は、現在の VSPackage でサポートされている現在のデザイナーにローカル。  
+  Global フラグがに設定されている場合、 `false` メタデータの変更は現在の VSPackage でサポートされている現在のデザイナーに対してローカルになります。  
   
   `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
-> 現時点では、デザイン画面には、コンポーネントの作成のみがサポートされ、したがってコンポーネントのみがローカルのメタデータを持つことができます。 など、プロパティの変更を試みた上記の例では、`Color`オブジェクトのプロパティ。 場合`false`、グローバル フラグの渡された`CustomBrowser`はデザイナーのインスタンスを実際に作成するためには表示されません`Color`します。 グローバル フラグを設定`false`コンポーネント、コントロール、タイマー、およびダイアログ ボックスなどの役に立ちます。  
+> 現時点では、デザインサーフェイスはコンポーネントの作成のみをサポートしているため、ローカルメタデータを持つことができるのはコンポーネントのみです。 上の例では、オブジェクトのプロパティなどのプロパティを変更しようとしてい `Color` ます。 `false`がグローバルフラグに渡された場合、 `CustomBrowser` デザイナーは実際にのインスタンスを作成することはないため、は表示されません `Color` 。 グローバルフラグをに設定すると、 `false` コントロール、タイマー、ダイアログボックスなどのコンポーネントに役立ちます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281878"
 ---
 # <a name="pass-data-between-forms"></a>フォーム間でデータを渡す
@@ -37,7 +37,7 @@ ms.locfileid: "85281878"
 
 - [データソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)を使用したデータセットの作成と構成
 
-- **[データ ソース]** ウィンドウから項目をドラッグしたときにフォーム上に作成するコントロールを選択します。 詳細については、「[[データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
+- **[データ ソース]** ウィンドウから項目をドラッグしたときにフォーム上に作成するコントロールを選択します。 詳細については、「[ [データソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)」を参照してください。
 
 - **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
@@ -47,21 +47,21 @@ ms.locfileid: "85281878"
 
 - フォーム間でデータを渡します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 Visual Studio インストーラーでは、SQL Server Express LocalDB は、**データストレージと処理**ワークロードの一部として、または個々のコンポーネントとしてインストールできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 Visual Studio インストーラーでは、SQL Server Express LocalDB は、 **データストレージと処理** ワークロードの一部として、または個々のコンポーネントとしてインストールできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの**データストレージと処理**ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[**新しいクエリ**] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
     2. [Northwind transact-sql スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにコピーします。 この T-sql スクリプトでは、Northwind データベースを最初から作成し、データを設定します。
 
-    3. T-sql スクリプトをクエリエディターに貼り付け、[**実行**] ボタンをクリックします。
+    3. T-sql スクリプトをクエリエディターに貼り付け、[ **実行** ] ボタンをクリックします。
 
        しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "85281878"
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic**を展開し、[ **Windows デスクトップ**] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "85281878"
 
 ## <a name="create-the-data-source"></a>データソースを作成する
 
-1. [データ**ソース**] ウィンドウを開くには、[**データ**] メニューの [**データソースの表示**] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
 2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
 
@@ -87,7 +87,7 @@ ms.locfileid: "85281878"
 
 4. **[データベース モデルの選択]** ページで、**[データセット]** が指定されていることを確認し、**[次へ]** をクリックします。
 
-5. [**データ接続の選択**] ページで、次のいずれかの操作を行います。
+5. [ **データ接続の選択** ] ページで、次のいずれかの操作を行います。
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
@@ -190,13 +190,13 @@ Form1 に、選択した顧客の注文を読み込む TableAdapter クエリを
 
 - **Form1** で顧客レコードをダブルクリックして、その顧客の注文を表示する **Form2** を開きます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 フォーム間でデータを渡した後に、アプリケーションの要件に応じてさらに操作を追加して実行できます。 このチュートリアルで行うことができる拡張には次のものがあります。
 
-- データセットを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、「[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
+- データセットを編集し、データベース オブジェクトの追加または削除を行います。 詳細については、「 [データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
 
-- データベースにデータを戻して保存する機能を追加します。 詳細については、「[データベースにデータを保存する](../data-tools/save-data-back-to-the-database.md)」を参照してください。
+- データベースにデータを戻して保存する機能を追加します。 詳細については、「 [データベースにデータを保存する](../data-tools/save-data-back-to-the-database.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

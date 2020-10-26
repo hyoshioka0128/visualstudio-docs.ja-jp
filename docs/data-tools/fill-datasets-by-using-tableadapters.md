@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282437"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters を使用してデータセットを入力する
@@ -52,7 +52,7 @@ Tableadapter は、データベースに接続し、クエリまたはストア�
 
 ![クライアント アプリケーションのデータ フロー](../data-tools/media/clientdatadiagram.gif)
 
-Tableadapter は**データセットデザイナー**で設計されていますが、tableadapter クラスはの入れ子になったクラスとして生成されません <xref:System.Data.DataSet> 。 各データセットに固有の個別の名前空間に配置されます。 たとえば、という名前のデータセットがある場合、 `NorthwindDataSet` のに関連付けられている tableadapter は、 <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 名前空間にあります。 プログラムで特定の TableAdapter にアクセスするには、TableAdapter の新しいインスタンスを宣言する必要があります。 次に例を示します。
+Tableadapter は **データセットデザイナー**で設計されていますが、tableadapter クラスはの入れ子になったクラスとして生成されません  <xref:System.Data.DataSet> 。 各データセットに固有の個別の名前空間に配置されます。 たとえば、という名前のデータセットがある場合、 `NorthwindDataSet` のに関連付けられている tableadapter は、  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 名前空間にあります。 プログラムで特定の TableAdapter にアクセスするには、TableAdapter の新しいインスタンスを宣言する必要があります。 次に例を示します。
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -63,7 +63,7 @@ TableAdapter を作成する場合は、最初のクエリまたはストアド�
 
 ## <a name="tableadapter-update-commands"></a>TableAdapter 更新コマンド
 
-TableAdapter の更新機能は、 **Tableadapter ウィザード**のメインクエリで使用できる情報の量に依存します。 たとえば、(を使用して) 複数のテーブルから値をフェッチするように構成されている Tableadapter、 `JOIN` スカラー値、ビュー、または集計関数の結果は、基になるデータベースに更新を戻す機能を使用して最初に作成されるわけではありません。 ただし、、、およびの各コマンドは、[ `INSERT` `UPDATE` `DELETE` **プロパティ**] ウィンドウで手動で構成できます。
+TableAdapter の更新機能は、 **Tableadapter ウィザード**のメインクエリで使用できる情報の量に依存します。 たとえば、(を使用して) 複数のテーブルから値をフェッチするように構成されている Tableadapter、 `JOIN` スカラー値、ビュー、または集計関数の結果は、基になるデータベースに更新を戻す機能を使用して最初に作成されるわけではありません。 ただし、、、およびの各コマンドは、[ `INSERT` `UPDATE` `DELETE` **プロパティ** ] ウィンドウで手動で構成できます。
 
 ## <a name="tableadapter-queries"></a>TableAdapter クエリ
 
@@ -77,7 +77,7 @@ TableAdapter のデータテーブルと同じスキーマのデータを返す�
 
 ## <a name="clearbeforefill-property"></a>ClearBeforeFill プロパティ
 
-既定では、TableAdapter のデータテーブルにデータを格納するクエリを実行するたびに、既存のデータが消去され、クエリの結果だけがテーブルに読み込まれます。 `ClearBeforeFill` `false` クエリから返されたデータをデータテーブルの既存のデータに追加またはマージする場合は、TableAdapter のプロパティをに設定します。 データをクリアするかどうかにかかわらず、更新プログラムを永続化する場合は、データベースに明示的に送信する必要があります。 そのため、テーブルのデータに対する変更は、テーブルに入力する別のクエリを実行する前に保存してください。 詳細については、「TableAdapter を使用して[データを更新](../data-tools/update-data-by-using-a-tableadapter.md)する」を参照してください。
+既定では、TableAdapter のデータテーブルにデータを格納するクエリを実行するたびに、既存のデータが消去され、クエリの結果だけがテーブルに読み込まれます。 `ClearBeforeFill` `false` クエリから返されたデータをデータテーブルの既存のデータに追加またはマージする場合は、TableAdapter のプロパティをに設定します。 データをクリアするかどうかにかかわらず、更新プログラムを永続化する場合は、データベースに明示的に送信する必要があります。 そのため、テーブルのデータに対する変更は、テーブルに入力する別のクエリを実行する前に保存してください。 詳細については、「TableAdapter を使用して [データを更新](../data-tools/update-data-by-using-a-tableadapter.md)する」を参照してください。
 
 ## <a name="tableadapter-inheritance"></a>TableAdapter の継承
 
@@ -85,16 +85,16 @@ Tableadapter は、構成されたクラスをカプセル化することによ�
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter のメソッドとプロパティ
 
-TableAdapter クラスは .NET 型ではありません。 つまり、ドキュメントや**オブジェクトブラウザー**では検索できません。 前に説明したウィザードのいずれかを使用すると、デザイン時に作成されます。 作成時に TableAdapter に割り当てられる名前は、使用しているテーブルの名前に基づいています。 たとえば、という名前のデータベース内のテーブルに基づいて TableAdapter を作成する場合、 `Orders` tableadapter にはという名前が付けられ `OrdersTableAdapter` ます。 TableAdapter のクラス名は、**データセット デザイナー**の **Name** プロパティを使用して変更できます。
+TableAdapter クラスは .NET 型ではありません。 つまり、ドキュメントや **オブジェクトブラウザー**では検索できません。 前に説明したウィザードのいずれかを使用すると、デザイン時に作成されます。 作成時に TableAdapter に割り当てられる名前は、使用しているテーブルの名前に基づいています。 たとえば、という名前のデータベース内のテーブルに基づいて TableAdapter を作成する場合、 `Orders` tableadapter にはという名前が付けられ `OrdersTableAdapter` ます。 TableAdapter のクラス名は、**データセット デザイナー**の **Name** プロパティを使用して変更できます。
 
 Tableadapter の一般的に使用されるメソッドとプロパティを次に示します。
 
 |メンバー|説明|
 |------------|-----------------|
 |`TableAdapter.Fill`|Tableadapter の関連するデータテーブルに TableAdapter のコマンドの結果を設定し `SELECT` ます。|
-|`TableAdapter.Update`|変更をデータベースに送り返し、更新によって影響を受ける行の数を表す整数を返します。 詳細については、「TableAdapter を使用して[データを更新](../data-tools/update-data-by-using-a-tableadapter.md)する」を参照してください。|
+|`TableAdapter.Update`|変更をデータベースに送り返し、更新によって影響を受ける行の数を表す整数を返します。 詳細については、「TableAdapter を使用して [データを更新](../data-tools/update-data-by-using-a-tableadapter.md)する」を参照してください。|
 |`TableAdapter.GetData`|<xref:System.Data.DataTable>データを格納する新しいを返します。|
-|`TableAdapter.Insert`|データ テーブル内に新しい行を作成します。 詳細については、「[データベースへの新しいレコードの挿入](../data-tools/insert-new-records-into-a-database.md)」を参照してください。|
+|`TableAdapter.Insert`|データ テーブル内に新しい行を作成します。 詳細については、「 [データベースへの新しいレコードの挿入](../data-tools/insert-new-records-into-a-database.md)」を参照してください。|
 |`TableAdapter.ClearBeforeFill`|いずれかの `Fill` メソッドを呼び出す前に、データ テーブルが空になっているかどうかを確認します。|
 
 ## <a name="tableadapter-update-method"></a>TableAdapter 更新メソッド
@@ -110,7 +110,7 @@ TableAdapter を使用すると、通常実行するコマンドと同じ操作�
 
 、、およびに加えて、 `InsertCommand` `UpdateCommand` データベースに `DeleteCommand` 対して直接実行できるメソッドを使用して tableadapter が作成されます。 これらのメソッド ( `TableAdapter.Insert` 、 `TableAdapter.Update` 、および) を直接呼び出して、 `TableAdapter.Delete` データベース内のデータを操作できます。 つまり、 `TableAdapter.Update` 関連付けられたデータテーブルに対して保留中の挿入、更新、および削除を処理するのではなく、コードからこれらの個別のメソッドを呼び出すことができます。
 
-これらのダイレクトメソッドを作成しない場合は、TableAdapter の**Generatedbdirectmethods**プロパティを `false` ([**プロパティ**] ウィンドウの) に設定します。 TableAdapter に追加されるその他のクエリはスタンドアロンクエリであり、これらのメソッドは生成されません。
+これらのダイレクトメソッドを作成しない場合は、TableAdapter の **Generatedbdirectmethods** プロパティを `false` ([ **プロパティ** ] ウィンドウの) に設定します。 TableAdapter に追加されるその他のクエリはスタンドアロンクエリであり、これらのメソッドは生成されません。
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter での Null 許容型のサポート
 
@@ -130,10 +130,10 @@ TableAdapterManager クラスは .NET 型ではありません。 このため�
 |------------|-----------------|
 |`UpdateAll` メソッド|すべてのデータテーブルのすべてのデータを保存します。|
 |`BackUpDataSetBeforeUpdate` プロパティ|メソッドを実行する前に、データセットのバックアップコピーを作成するかどうかを決定し `TableAdapterManager.UpdateAll` ます。演算.|
-|*tableName* `TableAdapter`"|TableAdapter を表します。 生成された TableAdapterManager には、it が管理するそれぞれのプロパティが含まれてい `TableAdapter` ます。 たとえば、Customers テーブルと Orders テーブルを含むデータセットでは、プロパティとプロパティを含む TableAdapterManager が生成され `CustomersTableAdapter` `OrdersTableAdapter` ます。|
-|`UpdateOrder` プロパティ|個々の insert、update、および delete コマンドの順序を制御します。 列挙体のいずれかの値に設定 `TableAdapterManager.UpdateOrderOption` します。<br /><br /> 既定では、 `UpdateOrder` は**Insertupdatedelete**に設定されています。 これは、データセット内のすべてのテーブルに対して、挿入、更新、および削除が実行されることを意味します。|
+|*tableName* `TableAdapter` "|TableAdapter を表します。 生成された TableAdapterManager には、it が管理するそれぞれのプロパティが含まれてい `TableAdapter` ます。 たとえば、Customers テーブルと Orders テーブルを含むデータセットでは、プロパティとプロパティを含む TableAdapterManager が生成され `CustomersTableAdapter` `OrdersTableAdapter` ます。|
+|`UpdateOrder` プロパティ|個々の insert、update、および delete コマンドの順序を制御します。 列挙体のいずれかの値に設定 `TableAdapterManager.UpdateOrderOption` します。<br /><br /> 既定では、 `UpdateOrder` は **Insertupdatedelete**に設定されています。 これは、データセット内のすべてのテーブルに対して、挿入、更新、および削除が実行されることを意味します。|
 
-## <a name="security"></a>Security
+## <a name="security"></a>セキュリティ
 
 CommandType プロパティがに設定されたデータコマンドを使用する場合は <xref:System.Data.CommandType.Text> 、クライアントから送信された情報をデータベースに渡す前に慎重に確認してください。 悪意のあるユーザーが、承認なしでデータベースにアクセスしたり、データベースを破壊したりする目的で、変更した SQL ステートメントや追加の SQL ステートメントの送信 (挿入) を試みる場合があります。 ユーザー入力をデータベースに転送する前に、その情報が有効であることを必ず確認してください。 可能な限り、パラメーター化されたクエリまたはストアドプロシージャを常に使用することをお勧めします。
 

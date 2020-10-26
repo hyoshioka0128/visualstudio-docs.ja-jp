@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534876"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:AutoDual ClassInterfaceType を使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
@@ -57,5 +57,5 @@ ms.locfileid: "85534876"
 
  [CA1412:ComSource インターフェイスを IDispatch として設定します](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [相互運用のための .Net 型を修飾する](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[クラスインターフェイスの概要](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[アンマネージコードとの相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

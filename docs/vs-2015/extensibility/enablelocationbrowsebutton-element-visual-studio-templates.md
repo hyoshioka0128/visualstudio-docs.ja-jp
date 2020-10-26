@@ -13,20 +13,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef9f42bfb24caaf2775ba2c70110eaaa5d616116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204592"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定するかどうか、**参照**ボタンが表示されます、**新しいプロジェクト**ダイアログ ボックスで新しいプロジェクトが保存されている既定のディレクトリを簡単に変更できるようにします。  
+[**新しいプロジェクト**] ダイアログボックスで [**参照**] ボタンを使用できるようにするかどうかを指定します。これにより、新しいプロジェクトを保存する既定のディレクトリをユーザーが簡単に変更できるようになります。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<EnableLocationBrowseButton >  
+ \<EnableLocationBrowseButton>  
   
 ## <a name="syntax"></a>構文  
   
@@ -52,12 +52,12 @@ ms.locfileid: "68204592"
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- テキストがいずれかにする必要があります`true`または`false`、表示するかどうかを示す、**参照**のボタンでは、**新しいプロジェクト** ダイアログ ボックス。  
+ テキストは、[ `true` `false` **新しいプロジェクト**] ダイアログボックスに [**参照**] ボタンを表示するかどうかを示す、またはのいずれかである必要があります。  
   
-## <a name="remarks"></a>Remarks  
- `EnableLocationBrowseButton` は、省略可能な要素です。 既定値は`true`が表示される、**参照**ボタン、**新しいプロジェクト** ダイアログ ボックス。  
+## <a name="remarks"></a>注釈  
+ `EnableLocationBrowseButton` は省略可能な要素です。 既定値はで、[ `true` **新しいプロジェクト**] ダイアログボックスの [**参照**] ボタンが表示されます。  
   
- **新しいプロジェクト** ダイアログ ボックスで、**場所**テキスト ボックスは、新しいプロジェクトが保存されているディレクトリを指定します。 **参照**ボタンには、表示することでこのディレクトリを変更することが、**プロジェクトの場所** ダイアログ ボックスで、簡単にコンピューターから使用できる別のディレクトリに移動できますと新しいプロジェクトを保存するディレクトリとして選択します。  
+ [ **新しいプロジェクト** ] ダイアログボックスの [ **場所** ] テキストボックスで、新しいプロジェクトを保存するディレクトリを指定します。 [ **参照** ] ボタンをクリックすると、[ **プロジェクトの場所** ] ダイアログボックスが表示され、このディレクトリを変更できます。このダイアログボックスでは、コンピューターから使用できる別のディレクトリに移動して、新しいプロジェクトを保存するディレクトリとして選択することができます。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] Windows アプリケーションでのメタデータの例を次に示します。  
@@ -87,6 +87,6 @@ ms.locfileid: "68204592"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>参照  
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)   
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

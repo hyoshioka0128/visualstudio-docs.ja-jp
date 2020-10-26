@@ -1,17 +1,18 @@
 ---
 title: Visual Studio for Mac で ASP.NET Core の使用を開始する
+titleSuffix: ''
 description: このドキュメントには、Visual Studio for Mac で ASP.NET Core の使用を開始する方法を示すビデオ チュートリアルが含まれています。
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 10/18/2019
 ms.assetid: 591b21ee-8c3f-446b-9505-7d41bfc86701
 ms.topic: tutorial
-ms.openlocfilehash: 3dcd5dc3ae3a3a373d0fed471c4577b859acbf9e
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 1dc07f0ebde1fcf28dd5c379d9360730e357c1ca
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85949945"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88801634"
 ---
 # <a name="tutorial-getting-started-with-aspnet-core-in-visual-studio-for-mac"></a>チュートリアル: Visual Studio for Mac で ASP.NET Core の使用を開始する
 

@@ -1,5 +1,5 @@
 ---
-title: 関数の機能を拡張するマイクロソフトドキュメント
+title: SccGetExtendedCapabilities 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700725"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>関数
-この関数は、ソース管理プラグインでサポートされている追加機能を返します。
+# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 関数
+この関数は、ソース管理プラグインによってサポートされている追加の機能を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 ### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグイン のコンテキスト ポインター。
+からソース管理プラグインのコンテキストポインター。
 
  lSccExCaps
 
-[in]テスト対象の拡張機能を指定するフラグ (可能なフラグについては、[機能フラグ](../extensibility/capability-flags.md)の拡張能力コード表を参照)。
+からテストする拡張機能を指定するフラグ (使用可能なフラグについては、 [機能フラグ](../extensibility/capability-flags.md) の拡張機能コードテーブルを参照してください)。
 
- pbサポート
+ pbSupported
 
-[アウト]指定された機能がサポート`TRUE`されている場合は、ゼロ以外 ( ) を返します。それ以外の場合は`FALSE`、ゼロ ( ) を返します。
+入出力指定した機能がサポートされている場合は0以外 () を返します `TRUE` 。それ以外の場合は 0 () を返し `FALSE` ます。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|機能の取得操作が正常に完了しました。|
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|不明または指定されていないエラーが発生しました。|
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|不明または特定できないエラーが発生しました。|
 
-## <a name="remarks"></a>Remarks
- このメソッドは、要求時に呼び出されます。つまり、機能をテストする必要がある場合、このメソッドが呼び出され、その機能がサポートされているかどうかを判断します。 一度に 1 つのフラグのみが指定されます。
+## <a name="remarks"></a>注釈
+ このメソッドは、オンデマンドで呼び出されます。つまり、機能をテストする必要がある場合は、このメソッドを呼び出して、その機能がサポートされているかどうかを判断します。 一度に1つのフラグのみが指定されています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [エラー コード](../extensibility/error-codes.md)
 - [機能フラグ](../extensibility/capability-flags.md)

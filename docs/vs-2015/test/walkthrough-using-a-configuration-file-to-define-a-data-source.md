@@ -13,10 +13,10 @@ caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547980"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル : データ ソースを定義するための構成ファイルの使用
@@ -55,7 +55,7 @@ ms.locfileid: "85547980"
 
 3. **[アプリケーション構成ファイル]** テンプレートを選択し、**[追加]** をクリックします。
 
-## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>カスタム構成セクションの定義
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a> カスタム構成セクションの定義
  app.config ファイルを確認します。 少なくとも XML 宣言とルート要素が含まれています。
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>app.config ファイルにカスタム構成セクションを追加するには
@@ -268,5 +268,5 @@ ms.locfileid: "85547980"
 > [!IMPORTANT]
 > データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [コードの単体テスト](../test/unit-test-your-code.md)[既存のコードの単体テストを作成して実行](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)する[アプリケーションをテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)する[方法: データドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)

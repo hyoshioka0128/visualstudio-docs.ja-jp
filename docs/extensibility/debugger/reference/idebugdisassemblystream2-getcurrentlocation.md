@@ -1,5 +1,5 @@
 ---
-title: ストリームストリーム::取得カレントロケーション |マイクロソフトドキュメント
+title: 'IDebugDisassemblyStream2:: GetCurrentLocation |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 440afc26688522da5cc8b6c20b2712872b4ce6b3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732222"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
-現在のコードの場所を表すコードの場所の識別子を返します。
+現在のコードの場所を表すコード位置識別子を返します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetCurrentLocation( 
 
 ## <a name="parameters"></a>パラメーター
 `puCodeLocationId`\
-[アウト]コードの場所の識別子を返します。 コードの場所識別子の説明については[、GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドの解説セクションを参照してください。
+入出力コードの場所の識別子を返します。 コードの場所の識別子の説明については、「 [Getcodelocationid](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) メソッド」の「解説」を参照してください。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- コードの場所の識別子は[、GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)メソッドを呼び出すことによって、コード コンテキストに変換できます。
+## <a name="remarks"></a>解説
+ コードの場所の識別子は、 [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) メソッドを呼び出すことによってコードコンテキストに変換できます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

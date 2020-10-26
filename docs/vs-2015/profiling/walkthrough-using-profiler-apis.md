@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871538"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>チュートリアル: プロファイラー API の使用
+# <a name="walkthrough-using-profiler-apis"></a>チュートリアル : プロファイラー API の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、C# アプリケーションを使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツール API を使用する方法を説明します。 プロファイラー API を使用すると、インストルメンテーション プロファイル中に収集されるデータの量を制限することができます。
@@ -34,9 +34,9 @@ ms.locfileid: "68871538"
 
  ネイティブ コード用の Visual Studio プロファイラー API は VSPerf.dll にあります。 ヘッダー ファイルの VSPerf.h とインポート ライブラリの VSPerf.lib は、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにあります。
 
- マネージド コード用のプロファイラー API は、Microsoft.VisualStudio.Profiler.dll にあります。 この DLL は、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにあります。 詳細については、「 [Profiler](/previous-versions/ms242704(v=vs.140))」を参照してください。
+ マネージド コード用のプロファイラー API は、Microsoft.VisualStudio.Profiler.dll にあります。 この DLL は、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにあります。 詳しくは、[Profiler](/previous-versions/ms242704(v=vs.140)) に関する記事をご覧ください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  このチュートリアルでは、ユーザーが選択した開発環境で、デバッグとサンプリングがサポートされていることを前提としています。 以下のトピックでは、これらの前提条件の概要について説明しています。
 
  [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)
@@ -119,15 +119,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Visual Studio IDE でデータを収集して参照するには
 
-1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE を開きます。 **[分析]** メニューの **[プロファイラー]** をポイントし、 **[新しいパフォーマンス セッション]** を選択します。
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE を開きます。 **[分析]** メニューの **[プロファイラー]** をポイントし、**[新しいパフォーマンス セッション]** を選択します。
 
-2. **[パフォーマンス エクスプローラー]** ウィンドウで、コンパイルされたバイナリを、 **[ターゲット]** 一覧に追加します。 **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** を選択します。 **[ターゲット バイナリの追加]** ダイアログ ボックスでバイナリを探し、 **[開く]** をクリックします。
+2. **[パフォーマンス エクスプローラー]** ウィンドウで、コンパイルされたバイナリを、**[ターゲット]** 一覧に追加します。 **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** を選択します。 **[ターゲット バイナリの追加]** ダイアログ ボックスでバイナリを探し、**[開く]** をクリックします。
 
-3. **[パフォーマンス エクスプローラー]** ツールバーで、 **[メソッド]** 一覧の **[インストルメンテーション]** を選択します。
+3. **[パフォーマンス エクスプローラー]** ツールバーで、**[メソッド]** 一覧の **[インストルメンテーション]** を選択します。
 
 4. **[プロファイルを使用して起動]** をクリックします。
 
-    プロファイラーはバイナリをインストルメント化し、実行し、パフォーマンス レポート ファイルを作成します。 パフォーマンス レポート ファイルが、 **[パフォーマンス エクスプローラー]** の **[レポート]** ノードに表示されます。
+    プロファイラーはバイナリをインストルメント化し、実行し、パフォーマンス レポート ファイルを作成します。 パフォーマンス レポート ファイルが、**[パフォーマンス エクスプローラー]** の **[レポート]** ノードに表示されます。
 
 5. 結果のパフォーマンス レポート ファイルを開きます。
 
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. **VSInstr \<filename>.exe** のコマンドを入力します。
+3. 次のコマンドを入力**し \<filename> ます。 VSInstr**
 
-4. **VSPerfCmd /start:trace /output:\<filename>.vsp** のコマンドを入力します。
+4. 次のコマンドを入力します。**VSPerfCmd/start: trace/output: \<filename> .vsp**
 
 5. **VSPerfCmd /globaloff** のコマンドを入力します。
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. **VSPerfCmd/shutdown** のコマンドを入力します。
 
-8. **VSPerfReport /calltrace:\<filename>.vsp** のコマンドを入力します。
+8. 次のコマンドを入力します:**VSPerfReport/calltrace: \<filename> .vsp**
 
      現在のディレクトリに、結果のパフォーマンス データが含まれた .csv ファイルが作成されます。
 
 ## <a name="see-also"></a>関連項目
 
 - [プロファイラー](/previous-versions/ms242704(v=vs.140))
-- [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Visual Studio Profiler API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [はじめに](../profiling/getting-started-with-performance-tools.md)
-- [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [コマンドラインからのプロファイル](../profiling/using-the-profiling-tools-from-the-command-line.md)

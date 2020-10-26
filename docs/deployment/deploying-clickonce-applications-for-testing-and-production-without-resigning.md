@@ -1,5 +1,5 @@
 ---
-title: 再署名せずに ClickOnce アプリを展開する
+title: 再署名せずに ClickOnce アプリをデプロイする
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,46 +20,46 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89e1d7970b26d5ba9bd49090362a6a4e8c09f78d
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395317"
 ---
-# <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>辞任せずに、テストサーバーと運用サーバー用に ClickOnce アプリケーションを配置する
-この資料では、再署名または ClickOnce マニフェストを変更せずに、複数のネットワークの場所から ClickOnce アプリケーションを配置できるようにする ClickOnce のバージョン 3.5 で導入された機能について説明します。
+# <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>テストサーバーおよび運用サーバー用の ClickOnce アプリケーションを、署名せずに配置する
+この記事では、.NET Framework バージョン3.5 で導入された ClickOnce の機能について説明します。 clickonce マニフェストを再署名または変更することなく、複数のネットワークの場所から ClickOnce アプリケーションを配置できます。
 
 > [!NOTE]
-> 新しいバージョンのアプリケーションを展開する場合は、辞職が望ましい方法です。 可能な場合は、再署名の方法を使用します。 詳細については、「 [ *Mage.exe* (マニフェスト生成および編集ツール)」](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)を参照してください。
+> 新しいバージョンのアプリケーションを展開する場合も、再度署名することをお勧めします。 可能な限り、署名の方法を使用してください。 詳細については、「 [ *Mage.exe* (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」を参照してください。
 
- サードパーティの開発者や ISV は、この機能を使用できるため、顧客がアプリケーションを簡単に更新できるようになります。 この機能は、次の状況で使用できます。
+ サードパーティの開発者や Isv はこの機能を選択して、お客様がアプリケーションを簡単に更新できるようにします。 この機能は、次の状況で使用できます。
 
-- アプリケーションを更新する場合は、アプリケーションの初回インストール用ではありません。
+- アプリケーションの最初のインストールではなく、アプリケーションを更新する場合。
 
-- コンピュータ上にアプリケーションの構成が 1 つだけある場合。 たとえば、アプリケーションが 2 つの異なるデータベースを指す構成の場合、この機能は使用できません。
+- コンピューターにアプリケーションの構成が1つしかない場合。 たとえば、アプリケーションが2つの異なるデータベースを指すように構成されている場合、この機能を使用することはできません。
 
-## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>配置マニフェストから配置プロバイダーを除外する
- NET Framework 2.0 および .NET Framework 3.0 では、オフラインで使用できるようにシステムにインストールする ClickOnce アプリケーション`deploymentProvider`は、配置マニフェストに a を一覧表示する必要があります。 `deploymentProvider`は、更新場所と呼ばれることがよくあります。これは、ClickOnce がアプリケーションの更新をチェックする場所です。 この要件は、アプリケーションの発行元が展開に署名する必要がある場合と共に、企業がベンダーまたは他のサード パーティから ClickOnce アプリケーションを更新することが困難でした。 また、同じネットワーク上の複数の場所から同じアプリケーションを展開することも困難になります。
+## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>配置マニフェストから deploymentProvider を除外する
+ .NET Framework 2.0 および .NET Framework 3.0 では、オフラインで使用できるようにシステムにインストールされている ClickOnce アプリケーションは、配置マニフェストにを一覧表示する必要があり `deploymentProvider` ます。 は、 `deploymentProvider` 通常、更新プログラムの場所と呼ばれます。 ClickOnce がアプリケーションの更新プログラムをチェックする場所です。 この要件は、アプリケーション発行者が配置に署名する必要があると共に、企業がベンダーや他のサードパーティから ClickOnce アプリケーションを更新することが困難になっています。 また、同じネットワーク上の複数の場所から同じアプリケーションを展開することが難しくなります。
 
- .NET Framework 3.5 で ClickOnce に加えられた変更を加えた場合、サード パーティが ClickOnce アプリケーションを別の組織に提供し、その後、アプリケーションを独自のネットワークに配置できます。
+ .NET Framework 3.5 で ClickOnce に加えられた変更により、サードパーティが ClickOnce アプリケーションを別の組織に提供し、それによってアプリケーションを独自のネットワークにデプロイできるようになります。
 
- この機能を利用するには、ClickOnce アプリケーションの開発者が配置マニフェストから`deploymentProvider`除外する必要があります。 この要件は、Mage.exe`-providerUrl`を使用して配置マニフェストを作成するときに、引数を除外する必要があることを意味します。 または、MageUI.exe を使用して配置マニフェストを生成する場合は、[**アプリケーション マニフェスト**] タブの **[起動場所**] テキスト ボックスが空白になっていることを確認する必要があります。
+ この機能を利用するために、ClickOnce アプリケーションの開発者は、配置マニフェストからを除外する必要があり `deploymentProvider` ます。 この要件は、 `-providerUrl` Mage.exe で配置マニフェストを作成するときに引数を除外する必要があることを意味します。 または、MageUI.exe で配置マニフェストを生成している場合は、[**アプリケーションマニフェスト**] タブの [**起動場所**] テキストボックスが空白のままになっていることを確認する必要があります。
 
-## <a name="deploymentprovider-and-application-updates"></a>展開プロバイダおよびアプリケーションの更新
- NET Framework 3.5 以降では、オンラインとオフラインの両方の`deploymentProvider`使用のために ClickOnce アプリケーションを配置するために配置マニフェストで を指定する必要がなくなりました。 この変更は、自分で展開をパッケージ化して署名する必要があるが、他の企業がネットワーク上でアプリケーションを展開できるようにするシナリオをサポートします。
+## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider とアプリケーションの更新プログラム
+ .NET Framework 3.5 以降では、 `deploymentProvider` オンラインとオフラインの両方の使用のために ClickOnce アプリケーションを配置するために、配置マニフェストでを指定する必要がなくなりました。 この変更により、展開を自分でパッケージ化して署名する必要がありますが、他の企業がネットワーク経由でアプリケーションを展開できるようになります。
 
- 注意が必要な重要な点は、 を`deploymentProvider`除外するアプリケーションは、タグを含む更新プログラムを再出荷するまで、`deploymentProvider`更新中にインストール場所を変更できないことです。
+ 注意すべき重要な点は、を除外するアプリケーションは、 `deploymentProvider` タグを含む更新プログラムを再配布するまで、更新中にインストール場所を変更できないことです `deploymentProvider` 。
 
- この点を明確にする例を2つ紹介します。 最初の例では、タグのない`deploymentProvider`ClickOnce アプリケーションを発行し、ユーザーにから`http://www.adatum.com/MyApplication/`インストールするように求めます。 から`http://subdomain.adatum.com/MyApplication/`アプリケーションの次の更新を発行する場合は、 に存在する配置マニフェストでこれを示す方法はありません`http://www.adatum.com/MyApplication/`。 次の 2 つのうちいずれかを実行できます。
+ この点を明確にする2つの例を次に示します。 最初の例では、タグのない ClickOnce アプリケーションを発行 `deploymentProvider` し、からインストールするようにユーザーに依頼し `http://www.adatum.com/MyApplication/` ます。 からアプリケーションの次の更新プログラムを発行する場合は `http://subdomain.adatum.com/MyApplication/` 、に存在する配置マニフェストでこれを示すことはできません `http://www.adatum.com/MyApplication/` 。 次の2つの操作のいずれかを実行できます。
 
-- 以前のバージョンをアンインストールし、新しいバージョンを新しい場所からインストールするようにユーザーに指示します。
+- 以前のバージョンをアンインストールするようにユーザーに通知し、新しい場所から新しいバージョンをインストールします。
 
-- へのポイント`http://www.adatum.com/MyApplication/`を含む更新プログラム`deploymentProvider`を`http://www.adatum.com/MyApplication/`含めます。 次に、後でを指`deploymentProvider`す別`http://subdomain.adatum.com/MyApplication/`の更新プログラムをリリースします。
+- をポイントするを含む更新プログラムをに含め `http://www.adatum.com/MyApplication/` `deploymentProvider` `http://www.adatum.com/MyApplication/` ます。 次に、をポイントして、後で別の更新プログラムをリリースし `deploymentProvider` `http://subdomain.adatum.com/MyApplication/` ます。
 
-  2 番目の例では、 を指定`deploymentProvider`する ClickOnce アプリケーションを発行し、それを削除します。 新しいバージョンを`deploymentProvider`クライアントにダウンロードすると、`deploymentProvider`復元されたアプリケーションのバージョンをリリースするまで、更新に使用するパスをリダイレクトすることはできません。 最初の例と同様に`deploymentProvider`、最初は新しい場所ではなく、現在の更新場所をポイントする必要があります。 この場合、 を参照`deploymentProvider``http://subdomain.adatum.com/MyApplication/`する を挿入しようとすると、次の更新は失敗します。
+  2番目の例では、を指定する ClickOnce アプリケーションを発行し、 `deploymentProvider` それを削除するかどうかを決定します。 を使用せずに新しいバージョン `deploymentProvider` がクライアントにダウンロードされると、復元されたアプリケーションのバージョンがリリースされるまで、更新に使用されるパスをリダイレクトすることはできません `deploymentProvider` 。 最初の例と同様に、は `deploymentProvider` 最初に新しい場所ではなく、現在の更新プログラムの場所を指す必要があります。 この場合、を参照するを挿入しようとすると、 `deploymentProvider` `http://subdomain.adatum.com/MyApplication/` 次の更新は失敗します。
 
 ## <a name="create-a-deployment"></a>デプロイの作成
- 異なるネットワークの場所から配置できる配置を作成する手順については、「[チュートリアル: 再署名を必要とせず、ブランド情報を保持する ClickOnce アプリケーションを手動で展開する](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)」を参照してください。
+ さまざまなネットワークの場所からデプロイできるデプロイを作成するための詳細な手順については、「 [チュートリアル: 再署名が不要で、ブランド情報を保持する ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [*Mage.exe* (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

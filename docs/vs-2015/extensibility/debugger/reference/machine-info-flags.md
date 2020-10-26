@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FLAGS | Microsoft Docs
+title: MACHINE_INFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b5819368c91590bbc1973e4c6097f29bb2ba9db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546838"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-マシンの記述に使用します。  
+コンピューターを説明するために使用されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,18 +41,18 @@ public enum enum_MACHINE_INFO_FLAGS { 
   
 ## <a name="members"></a>メンバー  
  MCIFLAG_TERMINAL_SERVICES_AVAILABLE  
- ターミナル サービスが使用できることを示します。  
+ ターミナルサービスが使用可能であることを示します。  
   
-## <a name="remarks"></a>Remarks  
- として使用される、`Flags`のメンバー、 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体。  
+## <a name="remarks"></a>注釈  
+ `Flags` [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体のメンバーとして使用されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)

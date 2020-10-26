@@ -1,5 +1,5 @@
 ---
-title: IDebug ドキュメント コンテキスト2::比較 |マイクロソフトドキュメント
+title: 'IDebugDocumentContext2:: Compare |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731883"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-このドキュメント コンテキストを、指定されたドキュメント コンテキストの配列と比較します。
+このドキュメントコンテキストと、指定されたドキュメントコンテキストの配列を比較します。
 
 ## <a name="syntax"></a>構文
 
@@ -47,22 +47,22 @@ int Compare( 
 
 ## <a name="parameters"></a>パラメーター
 `compare`\
-[in]比較の種類を指定する[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)列挙体の値。
+から比較の種類を指定する [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) 列挙の値です。
 
 `rgpDocContextSet`\
-[in]比較されるドキュメント コンテキストを表す[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)オブジェクトの配列。
+から比較対象のドキュメントコンテキストを表す [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) オブジェクトの配列。
 
 `dwDocContextSetLen`\
-[in]比較するドキュメント コンテキストの配列の長さ。
+から比較するドキュメントコンテキストの配列の長さ。
 
 `pdwDocContext`\
-[アウト]比較を満たす最初`rgpDocContextSet`のドキュメント コンテキストの配列にインデックスを返します。
+入出力 `rgpDocContextSet` 比較を満たす最初のドキュメントコンテキストの配列内のインデックスを返します。
 
 ## <a name="return-value"></a>戻り値
- 一`S_OK`致が見つかったかどうかを返します。 一`S_FALSE`致するものが見つからなかった場合に返します。 それ以外の場合はエラー コードを返します。
+ `S_OK`一致が見つかった場合は、を返します。 一致が見つからなかった `S_FALSE` 場合は、を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>Remarks
- 配列で渡される[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)オブジェクトは、呼び出される`IDebugDocumentContext2`オブジェクトを実装するのと同じデバッグ エンジンによって実装する必要があります。それ以外の場合、比較は無効です。
+## <a name="remarks"></a>解説
+ 配列で渡される [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) オブジェクトは、呼び出されるオブジェクトを実装する同じデバッグエンジンによって実装される必要があります。 `IDebugDocumentContext2` そうでない場合、比較は無効になります。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

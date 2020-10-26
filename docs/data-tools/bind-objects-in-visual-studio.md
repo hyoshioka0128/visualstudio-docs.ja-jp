@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282931"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio でオブジェクトをデータソースとしてバインドする
@@ -34,7 +34,7 @@ Visual Studio には、アプリケーションのデータソースとしてカ
 
 カスタムオブジェクトが Visual Studio のデータデザインツールで動作するための唯一の要件は、オブジェクトに少なくとも1つのパブリックプロパティが必要であることです。
 
-一般に、カスタムオブジェクトでは、アプリケーションのデータソースとして機能する特定のインターフェイス、コンストラクター、または属性は必要ありません。 ただし、オブジェクトを [**データソース**] ウィンドウからデザインサーフェイスにドラッグしてデータバインドコントロールを作成し、オブジェクトがインターフェイスまたはインターフェイスを実装している場合は、 <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> オブジェクトに既定のコンストラクターが必要です。 そうしないと、Visual Studio はデータソースオブジェクトをインスタンス化できず、アイテムをデザイン画面にドラッグしたときにエラーが表示されます。
+一般に、カスタムオブジェクトでは、アプリケーションのデータソースとして機能する特定のインターフェイス、コンストラクター、または属性は必要ありません。 ただし、オブジェクトを [ **データソース** ] ウィンドウからデザインサーフェイスにドラッグしてデータバインドコントロールを作成し、オブジェクトがインターフェイスまたはインターフェイスを実装している場合は、 <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> オブジェクトに既定のコンストラクターが必要です。 そうしないと、Visual Studio はデータソースオブジェクトをインスタンス化できず、アイテムをデザイン画面にドラッグしたときにエラーが表示されます。
 
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>カスタムオブジェクトをデータソースとして使用する例
 
@@ -120,7 +120,7 @@ Visual Studio には、アプリケーションのデータソースとしてカ
 
 ### <a name="display-object-data-to-users"></a>オブジェクトのデータをユーザーに表示する
 
-オブジェクトのデータをユーザーに表示するには、**データソース構成**ウィザードを使用してオブジェクトデータソースを作成し、オブジェクト全体または個々のプロパティを [**データソース**] ウィンドウからフォームにドラッグします。
+オブジェクトのデータをユーザーに表示するには、 **データソース構成** ウィザードを使用してオブジェクトデータソースを作成し、オブジェクト全体または個々のプロパティを [ **データソース** ] ウィンドウからフォームにドラッグします。
 
 ### <a name="modify-the-data-in-objects"></a>オブジェクトのデータを変更する
 

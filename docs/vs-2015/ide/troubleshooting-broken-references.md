@@ -1,4 +1,4 @@
-﻿---
+---
 title: 壊れた参照のトラブルシューティング | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1dd1312fc5728fbb68994fb6e70e253fa19172e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654800"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
@@ -60,9 +60,9 @@ ms.locfileid: "72654800"
 
 3. Visual Basic を使用している場合は、 **[参照]** ページを選択し、 **[参照パス]** ボタンをクリックします。 **[参照パス]** ダイアログ ボックスで、参照する項目を含むフォルダーのパスを **[フォルダー]** フィールドに入力し、 **[フォルダーの追加]** ボタンをクリックします。
 
-     または
+     - または -
 
-     Visual C# を使用している場合は、 **[参照パス]** ページを選択します。 参照する項目を含むフォルダーのパスを **[フォルダー]** フィールドに入力し、 **[フォルダーの追加]** ボタンをクリックします。
+     Visual C# を使用している場合は、[**参照パス**] ページを選択します。 参照する項目を含むフォルダーのパスを [**フォルダー**] フィールドに入力し、[**フォルダーの追加**] ボタンをクリックします。
 
 ## <a name="referenced-file-has-been-deleted"></a>参照先ファイルが削除されている
  参照されているファイルが削除されたため、ドライブに存在しません。
@@ -90,5 +90,5 @@ ms.locfileid: "72654800"
 ## <a name="com-component-is-not-installed-on-computer"></a>COM コンポーネントがコンピューターにインストールされていない
  ユーザーが COM コンポーネントに参照を追加し、2 番目のユーザーが、このコンポーネントがインストールされていないコンピューターでコードを実行しようとすると、2 番目のユーザーは、参照が壊れているというエラーを受信します。 2 番目のコンピューターにコンポーネントをインストールすると、エラーが修正されます。 プロジェクトで COM コンポーネントへの参照を使用する方法の詳細については、「[.NET Framework アプリケーションにおける COM 相互運用性](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [プロジェクトデザイナーの](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)[参照] ページの概要[プロジェクトデザイナー (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md) [NIB 方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)する

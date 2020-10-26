@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 209aac56f4648554ce619cbe31cef19a8ab1fed7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531795"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce アプリケーションの発行
@@ -46,7 +46,7 @@ ms.locfileid: "85531795"
   
 - 更新間隔 - 新しい更新プログラムをアプリケーションがチェックする頻度。  
   
-  詳細については、「[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。  
+  詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。  
   
 ## <a name="publish-page"></a>ページの発行  
  **プロジェクト デザイナー** の **[発行]** ページは、ClickOnce 配置用のプロパティを構成する場合に使用します。 次の表にトピックを示します。  
@@ -64,13 +64,13 @@ ms.locfileid: "85531795"
 ### <a name="application-files-dialog-box"></a>[アプリケーション ファイル] ダイアログ ボックス  
  このダイアログ ボックスでは、発行、動的ダウンロード、および更新のために、プロジェクト内のファイルを分類する方法を指定できます。 このダイアログ ボックスには、既定では除外されないプロジェクト ファイル、またはダウンロード グループのあるプロジェクト ファイルを一覧にしたグリッドが含まれています。  
   
- ファイルを除外する、ファイルをデータファイルまたは前提条件としてマークする、Visual Studio UI で条件付きインストール用のファイルグループを作成する方法については、「[方法: ClickOnce によって発行されるファイルを指定](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)する」を参照してください。 また、Mage.exe を使用してデータ ファイルにマークすることもできます。 詳細については、「[方法: ClickOnce アプリケーションにデータファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
+ ファイルを除外する、ファイルをデータファイルまたは前提条件としてマークする、Visual Studio UI で条件付きインストール用のファイルグループを作成する方法については、「 [方法: ClickOnce によって発行されるファイルを指定](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)する」を参照してください。 また、Mage.exe を使用してデータ ファイルにマークすることもできます。 詳細については、「[方法:ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
   
 ### <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス  
- このダイアログ ボックスでは、必須コンポーネントとしてインストールするコンポーネントおよびそのインストール方法を指定します。 詳細については、「[方法: ClickOnce アプリケーション](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)と[必須コンポーネント](../ide/reference/prerequisites-dialog-box.md)をインストールする」を参照してください。  
+ このダイアログ ボックスでは、必須コンポーネントとしてインストールするコンポーネントおよびそのインストール方法を指定します。 詳細については、「 [方法: ClickOnce アプリケーション](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) と [必須コンポーネント](../ide/reference/prerequisites-dialog-box.md)をインストールする」を参照してください。  
   
 ### <a name="application-updates-dialog-box"></a>[アプリケーションの更新] ダイアログ ボックス  
- このダイアログ ボックスでは、アプリケーションのインストール時に更新プログラムをチェックする方法を指定します。 詳細については、「[方法: ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)」を参照してください。  
+ このダイアログ ボックスでは、アプリケーションのインストール時に更新プログラムをチェックする方法を指定します。 詳細については、「 [方法: ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)」を参照してください。  
   
 ### <a name="publish-options-dialog-box"></a>[発行オプション] ダイアログ ボックス  
  [発行オプション] ダイアログ ボックスでは、アプリケーションの配置オプションを指定します。  
@@ -96,13 +96,13 @@ ms.locfileid: "85531795"
 |[チュートリアル: デザイナーを使用して ClickOnce 配置 API で必要に応じてアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|デザイナーを使用して、アプリケーションで初めて使用するときにのみアプリケーション アセンブリをダウンロードする方法を説明します。|  
 |[チュートリアル : ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|アプリケーションで初めて使用するときにのみアプリケーション アセンブリをダウンロードする方法を説明します。|  
 |[チュートリアル : ClickOnce 配置 API を使用して必要に応じてサテライト アセンブリをダウンロードする](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|サテライト アセンブリをオプションとしてマークする方法、および現在のカルチャ設定にクライアント コンピューターが必要とするアセンブリのみをダウンロードする方法について説明します。|  
-|[チュートリアル : ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework ユーティリティを使用して ClickOnce アプリケーションを配置する方法を説明します。|  
+|[チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework ユーティリティを使用して ClickOnce アプリケーションを配置する方法を説明します。|  
 |[チュートリアル: 再署名が不要でブランド情報を保持する ClickOnce アプリケーションの手動配置](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|.NET Framework ユーティリティを使用して、マニフェストに再署名せずに ClickOnce アプリケーションを配置する方法について説明します。|  
 |[NIB: 方法: 特定の CPU の種類に合わせてアプリケーションを最適化する](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|プロジェクトの **[対象の CPU]** プロパティまたは **[プラットフォーム ターゲット]** プロパティを変更して、64 ビット プロセッサ用に発行する方法について説明します。|  
 |[チュートリアル: ClickOnce アプリケーションを複数の .NET Framework バージョンで実行できるようにする](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|複数バージョンの .NET Framework で ClickOnce アプリケーションのインストールと実行を行う方法について説明します。|  
 |[チュートリアル: ClickOnce アプリケーションのカスタム インストーラーの作成](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|カスタム インストーラーを作成し、ClickOnce アプリケーションをインストールする方法について説明します。|  
 |[方法: Visual スタイルが有効になっている WPF アプリケーションを発行する](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに表示されるエラーを解決する手順について説明します。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce に関するリファレンス](../deployment/clickonce-reference.md)

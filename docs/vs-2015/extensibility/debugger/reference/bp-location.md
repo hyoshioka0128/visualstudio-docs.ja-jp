@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a3e5f690a679118c7bb02c110d6e5d066a2bd0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153394"
 ---
-# <a name="bplocation"></a>BP_LOCATION
+# <a name="bp_location"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ブレークポイントの位置を記述するために使用する構造体の型を指定します。  
+ブレークポイントの位置を示すために使用される構造体の種類を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -54,45 +54,45 @@ public struct BP_LOCATION {
   
 ## <a name="members"></a>メンバー  
  `bpLocationType`  
- 値、 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)を解釈するための列挙、`bpLocation`共用体、または`unionmemberX`メンバー。  
+ 共用体またはメンバーを解釈するために使用される [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 列挙の値 `bpLocation` `unionmemberX` 。  
   
  `bpLocation`.`bplocCodeFileLine`  
- [C++のみ]含まれています、 [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)場合構造体`bpLocationType`  = `BPLT_CODE_FILE_LINE`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)構造体が含まれ `bpLocationType`  =  `BPLT_CODE_FILE_LINE` ます。  
   
  `bpLocation.bplocCodeFuncOffset`  
- [C++のみ]含まれています、 [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)場合構造体`bpLocationType`  = `BPLT_CODE_FUNC_OFFSET`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)構造体が含まれ `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET` ます。  
   
  `bpLocation.bplocCodeContext`  
- [C++のみ]含まれています、 [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)場合構造体`bpLocationType`  = `BPLT_CODE_CONTEXT`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)構造体が含まれ `bpLocationType`  =  `BPLT_CODE_CONTEXT` ます。  
   
  `bpLocation.bplocCodeString`  
- [C++のみ]含まれています、 [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)場合構造体`bpLocationType`  = `BPLT_CODE_STRING`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)構造体が含まれ `bpLocationType`  =  `BPLT_CODE_STRING` ます。  
   
  `bpLocation.bplocCodeAddress`  
- [C++のみ]含まれています、 [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)場合構造体`bpLocationType`  = `BPLT_CODE_ADDRESS`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)構造体が含まれ `bpLocationType`  =  `BPLT_CODE_ADDRESS` ます。  
   
  `bpLocation.bplocDataString`  
- [C++のみ]含まれています、 [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)場合構造体`bpLocationType`  = `BPLT_DATA_STRING`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)構造体が含まれ `bpLocationType`  =  `BPLT_DATA_STRING` ます。  
   
  `bpLocation.bplocResolution`  
- [C++のみ]含まれています、 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)場合構造体`bpLocationType`  = `BPLT_RESOLUTION`します。  
+ [C++ のみ]の場合、 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)構造体が含まれ `bpLocationType`  =  `BPLT_RESOLUTION` ます。  
   
  `unionmember1`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
  `unionmember2`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
  `unionmember3`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
  `unionmember4`  
- [C#のみ]解釈する方法については、「解説」を参照してください。  
+ [C# のみ]解釈方法については、「解説」を参照してください。  
   
-## <a name="remarks"></a>Remarks  
- この構造体のメンバーである、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。  
+## <a name="remarks"></a>注釈  
+ この構造体は、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) および [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 構造体のメンバーです。  
   
- [C#のみ]`unionmemberX`メンバーは、次の表に従って解釈されます。 左の列を確認、`bpLocationType`値、それぞれを決定するその他の列の間で外観`unionmemberX`マーシャ リングおよびメンバーを表します、`unionmemberX`それに応じて。 この構造体 (C#) の一部を解釈する方法の例を参照してください。  
+ [C# のみ] `unionmemberX` メンバーは、次の表に従って解釈されます。 左側の列で値を確認 `bpLocationType` し、他の列を参照して各メンバーが表すものを特定し `unionmemberX` 、それに応じてをマーシャリングし `unionmemberX` ます。 C# でこの構造体の一部を解釈する方法については、例を参照してください。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -100,12 +100,12 @@ public struct BP_LOCATION {
 |`BPLT_CODE_FUNC_OFFSET`|`string` (コンテキスト)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|  
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
 |`BPLT_CODE_STRING`|`string` (コンテキスト)|`string` (条件式)|-|-|  
-|`BPLT_CODE_ADDRESS`|`string` (コンテキスト)|`string` (モジュールの URL)|`string` (関数名)|`string` (アドレス)|  
+|`BPLT_CODE_ADDRESS`|`string` (コンテキスト)|`string` (モジュールの URL)|`string` (関数名)|`string` 先|  
 |`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (コンテキスト)|`string` (データ式)|`uint` (要素の数)|  
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>例  
- この例を解釈する方法を示しています、 `BP_LOCATION` c# の構造、`BPLT_DATA_STRING`型。 この特定の型は、4 つすべてを解釈する方法を示しています。 `unionmemberX` (オブジェクト、文字列、および数) のすべての可能な形式のメンバー。  
+ この例 `BP_LOCATION` では、型の C# で構造体を解釈する方法を示し `BPLT_DATA_STRING` ます。 この特定の型は、 `unionmemberX` すべての可能な形式 (オブジェクト、文字列、および数値) の4つのメンバーすべてを解釈する方法を示しています。  
   
 ```csharp  
 using System;  
@@ -130,14 +130,14 @@ namespace MyPackage
 }  
 ```  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)   

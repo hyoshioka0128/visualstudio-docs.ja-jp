@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 837fba4afa64c0627fcac7ab9d904ef41c00e27a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704799"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、スレッドの実行が完了するときにデバッグ エンジン (DE) によって、セッション デバッグ マネージャー (SDM) に送信されます。  
+このインターフェイスは、スレッドの実行が完了すると、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -30,31 +30,31 @@ ms.locfileid: "65704799"
 IDebugThreadDestroyEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- DE、スレッドが終了したことをレポートには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ DE は、スレッドが終了したことを報告するために、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります。 SDM は、 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) を使用してインターフェイスにアクセスし `IDebugEvent2` ます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デは作成し、このイベント オブジェクトをスレッドが終了したレポートを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムにアタッチされているときに、SDM によって指定されたコールバック関数。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ DE は、このイベントオブジェクトを作成して送信し、スレッドが終了したことを報告します。 イベントは、デバッグ対象のプログラムにアタッチされているときに、SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugThreadDestroyEvent2`します。  
+ 次の表に、のメソッドを示し `IDebugThreadDestroyEvent2` ます。  
   
-|メソッド|説明|  
+|Method|説明|  
 |------------|-----------------|  
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|スレッドの終了コードを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- Visual Studio はこのイベントを使用して、更新、**スレッド**ウィンドウ。  
+## <a name="remarks"></a>解説  
+ Visual Studio では、このイベントを使用して [ **スレッド** ] ウィンドウを更新します。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

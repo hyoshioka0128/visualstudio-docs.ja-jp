@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetBreakpointType |Microsoft Docs
+title: 'IDebugErrorBreakpointResolution2:: GetBreakpointType |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e4522bf344b8d94c7c449d10b9e8c3fbbb64ff8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188873"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
@@ -40,16 +40,16 @@ int GetBreakpointType( 
   
 #### <a name="parameters"></a>パラメーター  
  `pBPType`  
- [out]値を返します、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)ブレークポイントの種類を表す列挙体。  
+ 入出力ブレークポイントの種類を記述する [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列挙から値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、エラー ブレークポイント イベント必要になるため、バインドに失敗したブレークポイントの種類を返します。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、バインドに失敗したブレークポイントの型を返します。これにより、エラーのブレークポイントイベントが必要になります。  
   
 ## <a name="example"></a>例  
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CDebugErrorBreakpointResolution`を公開するオブジェクト、 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)インターフェイス。  
+ 次の例は、IDebugErrorBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugErrorBreakpointResolution` います。 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    
@@ -82,6 +82,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }    
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

@@ -12,77 +12,77 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180364"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]シェルは、プライマリのエージェントでの統合の[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 シェルは、一般的なサービスを共有する Vspackage を有効にするために必要な機能を提供します。 のアーキテクチャの目的は、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Vspackage では主要な機能をというには、シェルは、基本的な機能を提供し、Vspackage のコンポーネント間の相互通信をサポートするためのフレームワークです。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]シェルは、の統合の主要なエージェントです [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 。 シェルには、Vspackage が共通のサービスを共有できるようにするために必要な機能が用意されています。 のアーキテクチャ目標 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は vspackage の主要機能を提供することであるため、シェルは基本的な機能を提供し、コンポーネント vspackage 間の相互通信をサポートするフレームワークです。  
   
-## <a name="shell-responsibilities"></a>シェルの責任  
- シェルでは、次の主な責任があります。  
+## <a name="shell-responsibilities"></a>シェルの役割  
+ シェルには、次の主要な役割があります。  
   
-- (COM インターフェイス) を通じて、ユーザー インターフェイス (UI) の基本的な要素をサポートします。 既定のメニューとツールバー、ドキュメント ウィンドウ フレームまたはマルチ ドキュメント インターフェイス (MDI) 子ウィンドウ、およびツール ウィンドウのフレームおよびドッキングのサポートが含まれます。  
+- (COM インターフェイスを通じて) ユーザーインターフェイス (UI) の基本要素をサポートします。 これには、既定のメニューとツールバー、ドキュメントウィンドウフレームまたはマルチドキュメントインターフェイス (MDI) 子ウィンドウ、ツールウィンドウフレーム、およびドッキングサポートが含まれます。  
   
-- ドキュメントの持続性を調整するために、および 1 つ以上の方法で、または互換性のない方法で、その 1 つのドキュメントを開くことはできませんを保証するためには、実行中、実行中のドキュメント テーブル (RDT) 内のすべての現在開いているドキュメントの一覧を維持します。  
+- ドキュメントの永続性を調整し、1つのドキュメントを複数の方法で、または互換性のない方法で開くことを保証するために、現在開いているすべてのドキュメントの実行中のリストを実行中のドキュメントテーブル (RDT) で保持する。  
   
-- コマンド ルーティングとコマンド処理インターフェイスをサポートしている`IOleCommandTarget`します。  
+- コマンドルーティングとコマンド処理インターフェイスをサポートし `IOleCommandTarget` ます。  
   
-- 適切なタイミングで Vspackage を読み込んでいます。 VSPackage の遅延読み込みは、シェルのパフォーマンスを向上させる必要があります。  
+- 適切なタイミングで Vspackage を読み込んでいます。 シェルのパフォーマンスを向上させるには、VSPackage の遅延読み込みが必要です。  
   
-- 特定の管理は共有など、サービス、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>、基本的なシェルの機能を提供して<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>、基本的なウィンドウ操作機能を提供します。  
+- 基本的なシェル機能を提供する、などの特定の共有サービスの管理、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> および <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 基本的なウィンドウ機能を提供する。  
   
-- ソリューション (.sln) ファイルを管理します。 ソリューションには、Visual C 6.0 のワークスペース (.dsw) ファイルと同様に、関連するプロジェクトのグループが含まれます。  
+- ソリューション (.sln) ファイルの管理。 ソリューションには、Visual C++ 6.0 のワークスペース (dsw) ファイルに似た、関連するプロジェクトのグループが含まれています。  
   
-- 追跡シェル全体の選択、コンテキスト、および通貨。 シェルでは、次の種類の項目を追跡します。  
+- シェル全体の選択、コンテキスト、および通貨を追跡します。 シェルは、次の種類の項目を追跡します。  
   
   - 現在のプロジェクト  
   
-  - 現在のプロジェクト項目または現在の itemid であります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - 現在のプロジェクト項目、または現在のの ItemID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  - 現在の選択、**プロパティ**ウィンドウまたは `SelectionContainer`  
+  - [ **プロパティ** ] ウィンドウの現在の選択項目または `SelectionContainer`  
   
-  - Id または CmdUIGuids コマンド、メニューのおよびツールバーの表示を制御する UI コンテキスト  
+  - コマンド、メニュー、およびツールバーの表示を制御する UI コンテキスト Id または CmdUIGuids  
   
-  - アクティブなウィンドウ、ドキュメント、および元に戻すマネージャーなどの現在アクティブな要素  
+  - アクティブウィンドウ、ドキュメント、および元に戻すマネージャーなど、現在アクティブな要素  
   
-  - ダイナミック ヘルプを促進するユーザー コンテキストの属性  
+  - ダイナミックヘルプを駆動するユーザーコンテキスト属性  
   
-  シェルもインストールされている Vspackage と現在のサービス間の通信を仲介します。 シェルのコア機能をサポートしに統合されているすべての VSPackages に利用できるように[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 これらのコア機能には、次の項目があります。  
+  シェルは、インストールされている Vspackage と現在のサービス間の通信も仲介します。 シェルのコア機能がサポートされ、に統合されているすべての Vspackage で使用できるようになり [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 これらのコア機能には、次の項目が含まれます。  
   
-- **について** ダイアログ ボックスやスプラッシュ スクリーン  
+- [**バージョン情報**] ダイアログボックスとスプラッシュスクリーン  
   
-- **新規および既存項目の追加を追加** ダイアログ ボックス  
+- **[新しい項目の追加] ダイアログボックスと [既存項目の追加** ] ダイアログボックス  
   
-- **クラス ビュー**ウィンドウと**オブジェクト ブラウザー**  
+- **クラスビュー** ウィンドウと **オブジェクトブラウザー**  
   
-- **参照** ダイアログ ボックス  
+- [**参照**] ダイアログボックス  
   
-- **ドキュメント アウトライン**ウィンドウ  
+- **ドキュメントアウトライン** ウィンドウ  
   
-- **ダイナミック ヘルプ**ウィンドウ  
+- **ダイナミックヘルプ** ウィンドウ  
   
-- **検索**と**置き換えます**  
+- **検索** と **置換**  
   
-- **プロジェクトを開く**と**ファイルを開く** ダイアログ ボックス、**新規**メニュー  
+- [**新規**] メニューの [**プロジェクトを開く**] および [**ファイルを開く**] ダイアログボックス  
   
-- **オプション** ダイアログ ボックスで、**ツール**メニュー  
+- [**ツール**] メニューの [**オプション**] ダイアログボックス  
   
-- **[プロパティ]** ウィンドウ  
+- **プロパティ** ウィンドウ  
   
 - **ソリューション エクスプローラー**  
   
-- **タスク一覧**ウィンドウ  
+- **タスク一覧** ウィンドウ  
   
 - **ツールボックス**  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
- [VSPackage](../../extensibility/internals/vspackages.md)
+ [VSPackages](../../extensibility/internals/vspackages.md)

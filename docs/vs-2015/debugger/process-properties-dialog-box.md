@@ -1,5 +1,5 @@
 ---
-title: プロセス プロパティ ダイアログ ボックス |Microsoft Docs
+title: '[プロセス プロパティ] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,47 +13,47 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 56e446f217f752b45b2d8d98bf1f147c04dab748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193273"
 ---
 # <a name="process-properties-dialog-box"></a>[プロセス プロパティ] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-特定のプロセスの詳細を確認するには、このダイアログ ボックスを使用します。 このダイアログ ボックスを表示するには、フォーカスを移動、[プロセス ビュー](../debugger/processes-view.md)ウィンドウ。 ツリーで、プロセスの任意のノードを選択し、**プロパティ**から、**ビュー**メニュー。  
+このダイアログ ボックスを使用して、特定のプロセスの詳細を確認します。 このダイアログ ボックスを表示するには、[プロセス ビュー](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。  
   
- Windows 98 および Windows 95 オペレーティング システムで変更されたバージョンののみ、**全般** タブが表示されます。  
+ Windows 98 および Windows 95 オペレーティング システムでは、変更されたバージョンの **[全般]** タブのみが表示されます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [[全般] タブ ([プロセス プロパティ] ダイアログ ボックス)](../debugger/general-tab-thread-properties-dialog-box.md)  
- このダイアログ ボックスを選択したプロセスの詳細についてご確認を使用します。  
+ このダイアログボックスを使用すると、選択したプロセスの詳細を確認できます。  
   
  [[メモリ] タブ ([プロセス プロパティ] ダイアログ ボックス)](../debugger/memory-tab-process-properties-dialog-box.md)  
- このタブを使用して、プロセスがメモリを使用する方法を示します。  
+ このタブを使用して、プロセスがメモリを使用する方法を表示します。  
   
  [[ページ ファイル] タブ ([プロセス プロパティ] ダイアログ ボックス)](../debugger/page-file-tab-process-properties-dialog-box.md)  
- このタブを使用して、プロセスのページング ファイルを確認します。  
+ このタブを使用すると、プロセスのページングファイルを確認できます。  
   
  [[スペース] タブ ([プロセス プロパティ] ダイアログ ボックス)](../debugger/space-tab-process-properties-dialog-box.md)  
- このタブを使用して、プロセスのアドレス空間を調べます。  
+ このタブを使用して、プロセスのアドレス空間を確認します。  
   
 ## <a name="related-sections"></a>関連項目  
  [[プロセス検索] ダイアログ ボックス](../debugger/process-search-dialog-box.md)  
- プロセス ビューで特定のプロセスのノードを検索するために使用します。  
+ プロセスビューで特定のプロセスのノードを検索するために使用します。  
   
  [Spy++ リファレンス](../debugger/spy-increment-reference.md)  
- 各 spy++ メニューおよびダイアログ ボックスについて説明するセクションが含まれています。  
+ 各 Spy + + メニューおよびダイアログボックスについて説明するセクションが含まれています。  
   
- [プロセス ビューでプロセスの検索](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- プロセス ビューで、特定のプロセスを検索する方法について説明します。  
+ [プロセスビューでのプロセスの検索](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ [プロセス] ビューで特定のプロセスを検索する方法について説明します。  
   
  [プロセス ビュー](../debugger/processes-view.md)  
- アクティブなプロセスのツリー ビューが表示されます。  
+ アクティブなプロセスのツリービューを表示します。  
   
  [Spy++ ビュー](../debugger/spy-increment-views.md)  
- Windows、メッセージ、プロセス、およびスレッドの spy++ ツリー ビューについて説明します。  
+ Windows、メッセージ、プロセス、およびスレッドの Spy + + ツリービューについて説明します。  
   
  [Spy++ の使用](../debugger/using-spy-increment.md)  
- Spy++ ツールを紹介し、使用方法について説明します。
+ Spy + + ツールの概要と、その使用方法について説明します。

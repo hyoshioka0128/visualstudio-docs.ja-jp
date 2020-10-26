@@ -1,5 +1,5 @@
 ---
-title: セキュリティを強化する |マイクロソフトドキュメント
+title: IDebugProcessSecurity |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723196"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`は、プロセスへのアタッチが安全でいいということをユーザーに警告するために、ポートサプライヤーによって実装されます。
+`IDebugProcessSecurity` は、プロセスへのアタッチが安全でないことをユーザーに警告するために、ポート供給業者によって実装されます。
 
 ## <a name="syntax"></a>構文
 
@@ -27,22 +27,22 @@ IDebugProcessSecurity : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugProcessSecurity`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugProcessSecurity` ます。
 
 |Method|説明|
 |------------|-----------------|
-|[ユーザー名を取得します。](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|ポートサプライヤーからユーザー名を取得します。|
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|デバッグ プロセスへのアタッチが安全でいいという警告をユーザーに警告します。|
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|ポートサプライヤーからユーザー名を取得します。|
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|デバッグプロセスへのアタッチが安全でないことをユーザーに警告します。|
 
-## <a name="remarks"></a>Remarks
- このインターフェイスを実装して警告を表示し、アタッチするプロセスが安全でないと見なされる場合にユーザーがキャンセルできるようにします。
+## <a name="remarks"></a>解説
+ このインターフェイスを実装して警告を表示し、アタッチしているプロセスが安全でないと見なされた場合にユーザーがキャンセルできるようにします。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [ポート](../../../extensibility/debugger/ports.md)

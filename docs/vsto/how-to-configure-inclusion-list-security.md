@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541636"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>方法: 信頼のリストのセキュリティを構成する
-  管理者のアクセス許可を持っている場合は、信頼の決定を [信頼の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 決定] の一覧に保存することによって、エンドユーザーに Office ソリューションのインストールオプションを提供するかどうかを制御する信頼プロンプトを構成できます。 包含リストの詳細については、「[信頼リストを使用した Office ソリューションの信頼](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)」を参照してください。
+  管理者のアクセス許可を持っている場合は、信頼の決定を [信頼の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 決定] の一覧に保存することによって、エンドユーザーに Office ソリューションのインストールオプションを提供するかどうかを制御する信頼プロンプトを構成できます。 包含リストの詳細については、「 [信頼リストを使用した Office ソリューションの信頼](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)」を参照してください。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "85541636"
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [**名前**] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
 
 2. 次のレジストリキーを探します。
 
@@ -50,23 +50,23 @@ ms.locfileid: "85541636"
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、**文字列値**として追加します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値**として追加します。
 
     |文字列値サブキー|値|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Disabled**|
-    |**MyComputer**|**有効**|
-    |**LocalIntranet**|**有効**|
-    |**TrustedSites**|**有効**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
-     既定では、**インターネット**の値は**AuthenticodeRequired** 、 **Untrustedsites**の値は**無効になっ**ています。
+     既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ**ています。
 
 ### <a name="to-enable-the-inclusion-list-programmatically"></a>プログラムによって信頼の一覧を有効にするには
 
 1. Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
+2. 編集するために、 *プログラム .vb* または *Program.cs* ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -101,7 +101,7 @@ ms.locfileid: "85541636"
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [**名前**] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
 
 2. 次のレジストリキーを探します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "85541636"
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、**文字列値**として追加します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値**として追加します。
 
     |文字列値サブキー|値|
     |-------------------------|-----------|
@@ -119,13 +119,13 @@ ms.locfileid: "85541636"
     |**LocalIntranet**|**AuthenticodeRequired**|
     |**TrustedSites**|**AuthenticodeRequired**|
 
-     既定では、**インターネット**の値は**AuthenticodeRequired** 、 **Untrustedsites**の値は**無効になっ**ています。
+     既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ**ています。
 
 ### <a name="to-restrict-the-inclusion-list-programmatically"></a>プログラムによって包含一覧を制限するには
 
 1. Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
+2. 編集するために、 *プログラム .vb* または *Program.cs* ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -160,13 +160,13 @@ ms.locfileid: "85541636"
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [**名前**] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 **regedt32.exe**」と入力し、[ **OK**] をクリックします。
 
 2. まだ存在しない場合は、次のレジストリキーを作成します。
 
      **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
-3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、**文字列値**として追加します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値**として追加します。
 
     |文字列値サブキー|値|
     |-------------------------|-----------|
@@ -180,7 +180,7 @@ ms.locfileid: "85541636"
 
 1. Visual Basic または Visual C# コンソールアプリケーションを作成します。
 
-2. 編集するために、*プログラム .vb*または*Program.cs*ファイルを開き、次のコードを追加します。
+2. 編集するために、 *プログラム .vb* または *Program.cs* ファイルを開き、次のコードを追加します。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey

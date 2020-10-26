@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo |Microsoft Docs
+title: 'IDebugField:: GetExtendedInfo |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de21bc984a36db87f8ce1567f4ff7d97212c40e
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547560"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、フィールドに関する情報を拡張を取得します。  
+このメソッドは、フィールドに関する拡張情報を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,24 +44,24 @@ int GetExtendedInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `guidExtendedInfo`  
- [in]返される情報を選択します。 次の値を指定できます。  
+ から返される情報を選択します。 有効な値は次のとおりです。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
-|`guidConstantValue`|バイトのシーケンスとしての値。|  
-|`guidConstantType`|型の型シグネチャ。|  
+|`guidConstantValue`|バイトシーケンスとしての値。|  
+|`guidConstantType`|型のシグネチャとしての型。|  
   
  `prgBuffer`  
- [out]拡張情報を返します。  
+ 入出力拡張された情報を返します。  
   
  `pdwLen`  
- [入力、出力]拡張された情報のサイズをバイト単位で返します。  
+ [入力、出力]拡張情報のサイズをバイト単位で返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 現時点では、このメソッドは、型または定数の値を返します。 呼び出し元で返されるバッファーを解放する必要があります`prgBuffer`呼び出して COM の`CoTaskMemFree`関数 (C++) または<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(c#)。  
+## <a name="remarks"></a>注釈  
+ 現在、このメソッドは定数の型または値のみを返します。 呼び出し元は、 `prgBuffer` COM の `CoTaskMemFree` 関数 (C++) または (C#) を呼び出すことによって、で返されたバッファーを解放する必要があり <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

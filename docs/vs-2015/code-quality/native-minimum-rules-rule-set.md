@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8e7f45122bab952eb60182423281e018705e33a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661075"
 ---
 # <a name="native-minimum-rules-rule-set"></a>"ネイティブ最小規則" 規則セット
@@ -21,7 +21,7 @@ ms.locfileid: "72661075"
 
 Microsoft ネイティブの最小規則は、ネイティブコードの最も重大な問題 (潜在的なセキュリティホールやアプリケーションのクラッシュなど) に焦点を当てています。 ネイティブ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。
 
-|                                      規則                                      |                                                  説明                                                  |
+|                                      ルール                                      |                                                  説明                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 |                       [C6001](../code-quality/c6001.md)                        |                                          初期化されていないメモリの使用                                           |
 |                       [C6011](../code-quality/c6011.md)                        |                                          Null ポインターの逆参照                                           |

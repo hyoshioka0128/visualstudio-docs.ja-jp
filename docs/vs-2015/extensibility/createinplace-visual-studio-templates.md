@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184241"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-プロジェクトを作成し、指定した場所でパラメーター置換を実行または一時的な場所でパラメーター置換を実行し、指定した場所にプロジェクトを保存するかどうかを指定します。  
+プロジェクトを作成し、指定した場所でパラメーター置換を実行するか、一時的な場所でパラメーター置換を実行し、指定した場所にプロジェクトを保存するかを指定します。  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<CreateInPlace >  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>構文  
   
@@ -53,10 +53,10 @@ ms.locfileid: "68184241"
 ## <a name="text-value"></a>テキスト値  
  テキスト値が必要です。  
   
- テキストは、`true` または `false` である必要があります。 場合`true`、プロジェクトが作成され、パラメーター置換がで指定された場所で実行される、**新しいプロジェクト** ダイアログ ボックス。 場合`false`、パラメーター置換は一時的な場所で実行され、プロジェクトは、指定した場所にコピーされます。  
+ テキストは、`true` または `false` である必要があります。 の場合、 `true` プロジェクトが作成され、[ **新しいプロジェクト** ] ダイアログボックスで指定された場所でパラメーター置換が実行されます。 `false`の場合、パラメーター置換は一時的な場所で実行され、プロジェクトは指定された場所にコピーされます。  
   
-## <a name="remarks"></a>Remarks  
- `CreateInPlace` は、省略可能な要素です。 既定値は `true` です。  
+## <a name="remarks"></a>注釈  
+ `CreateInPlace` は省略可能な要素です。 既定値は `true` です。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] テンプレートのメタデータの例を次に示します。  
@@ -86,6 +86,6 @@ ms.locfileid: "68184241"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>参照  
+ [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
+ [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

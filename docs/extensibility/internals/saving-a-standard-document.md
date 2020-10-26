@@ -1,5 +1,5 @@
 ---
-title: 標準ドキュメントを保存する |マイクロソフトドキュメント
+title: 標準ドキュメントの保存 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,48 +13,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705550"
 ---
 # <a name="saving-a-standard-document"></a>標準ドキュメントの保存
-環境では、[保存]、[名前を付けて保存]、[すべて保存] の各コマンドを処理します。 ユーザーが **[ファイル]** メニューの **[上書き保存**]、[**名前を付けて**保存] 、または **[すべて保存]** を選択するか、またはソリューションを閉じて **[すべて保存]** を実行すると、次の処理が実行されます。
+環境は、[保存]、[名前を付けて保存]、および [すべてを保存] コマンドを処理します。 ユーザーが [**ファイル**] メニューの [**保存**]、[名前を付け**て保存**]、または [**すべて**保存] を選択すると、**すべて保存**が行われるため、次のプロセスが実行されます。
 
- ![標準エディター](../../extensibility/internals/media/public.gif "パブリック")標準エディタの[保存]、[名前を付けて保存]、[すべて保存]コマンドの処理
+ ![標準エディター](../../extensibility/internals/media/public.gif "パブリック") 標準エディターのすべてのコマンド処理を保存、名前を付けて保存、および保存する
 
- このプロセスの詳細は、次の手順で説明します。
+ このプロセスについては、次の手順で詳しく説明します。
 
-1. **[保存]** コマンドと **[名前を付けて保存]** コマンドを選択すると、環境はサービスを<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>使用してアクティブなドキュメント ウィンドウと保存する項目を決定します。 アクティブなドキュメント ウィンドウが判明すると、環境は、実行中のドキュメント テーブルで、ドキュメントの階層ポインターとアイテム識別子 (itemID) を検索します。 詳細については、「[ドキュメント テーブルの実行](../../extensibility/internals/running-document-table.md)」を参照してください。
+1. [名前を付けて **保存** ] および [名前を付け **て保存** ] コマンドを選択すると、環境ではサービスを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> アクティブなドキュメントウィンドウと、保存する必要がある項目を決定します。 アクティブなドキュメントウィンドウが判明すると、環境は、実行中のドキュメントテーブル内のドキュメントの階層ポインターと項目識別子 (itemID) を検索します。 詳細については、「 [Document Table の実行](../../extensibility/internals/running-document-table.md)」を参照してください。
 
-    **[すべて保存]** コマンドを選択すると、環境は実行中のドキュメント テーブルの情報を使用して、保存するすべてのアイテムのリストをコンパイルします。
+    [ **すべて保存** ] コマンドを選択すると、実行中のドキュメントテーブルの情報を使用して、保存するすべての項目の一覧がコンパイルされます。
 
-2. ソリューションは、呼び出<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>しを受け取ると、選択された項目のセット (つまり、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービスによって公開される複数の選択項目) を反復処理します。
+2. ソリューションは、呼び出しを受け取ると <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 、選択された一連の項目 (つまり、サービスによって公開される複数の選択項目) を反復処理し <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> ます。
 
-3. 選択した各項目で、ソリューションは階層ポインターを使用してメソッドを<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>呼び出し、[**保存]** メニュー コマンドを有効にするかどうかを判断します。 1 つまたは複数のアイテムがダーティである場合は、[**保存**] コマンドが有効になります。 階層が標準エディターを使用している場合、メソッドを呼び出すことによって、階層はダーティ ステータスの<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>クエリをエディターに委任します。
+3. ソリューションでは、選択項目の各項目に対して、階層ポインターを使用してメソッドを呼び出し、[ <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> **保存** ] メニューコマンドを有効にする必要があるかどうかを判断します。 1つ以上の項目がダーティの場合、[ **保存** ] コマンドが有効になります。 階層で標準のエディターが使用されている場合、階層はメソッドを呼び出して、ダーティステータスのクエリをエディターに委任し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> ます。
 
-4. 選択した各項目がダーティである場合、ソリューションは階層ポインターを使用して<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>、適切な階層でメソッドを呼び出します。
+4. 選択された各項目がダーティである場合、ソリューションは階層ポインターを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> 適切な階層でメソッドを呼び出します。
 
-    階層では、標準のエディタを使用してドキュメントを編集するのが一般的です。 この場合、そのエディターのドキュメント データ オブジェクトがインターフェイスを<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>サポートしている必要があります。 メソッド呼び<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>出しを受け取ると、プロジェクトはドキュメント データ オブジェクトの<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A>メソッドを呼び出してドキュメントが保存されていることをエディターに通知する必要があります。 エディタは、インターフェイスを呼び出`Query Service`すことによって、環境が [**名前を付けて保存**] ダイアログ ボックスを<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>処理できるようにします。 インターフェイスへのポインターを<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>返します。 次に、エディターはメソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>を呼び出し、パラメーターを使用して<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>エディターの実装へのポインター`pPersistFile`を渡す必要があります。 次に、環境が [保存] 操作を実行し、エディターの **[名前を付けて保存**] ダイアログ ボックスを提供します。 環境は、 を使用<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>してエディターに呼び出します。
+    階層では、標準のエディターを使用してドキュメントを編集するのが一般的です。 この場合、そのエディターのドキュメントデータオブジェクトはインターフェイスをサポートしている必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>メソッド呼び出しを受け取った時点で、ドキュメントデータオブジェクトのメソッドを呼び出すことによって、ドキュメントが保存されていることをエディターに通知する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> ます。 エディターでは、インターフェイスに対してを呼び出すことにより、環境で [ **名前を付けて保存** ] ダイアログボックスを処理でき `Query Service` <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> ます。 これにより、インターフェイスへのポインターが返さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> れます。 次に、エディターはメソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> 、パラメーターを使ってエディターの実装へのポインターを渡す必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> `pPersistFile` ます。 その後、環境で保存操作が実行され、エディターの [ **名前を付けて保存** ] ダイアログボックスが表示されます。 次に、を使用してエディターにコールバックし <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> ます。
 
-5. ユーザーが無題のドキュメント (以前に保存されていないドキュメント) を保存しようとすると、実際には [名前を付けて保存] コマンドが実行されます。
+5. ユーザーが無題のドキュメント (つまり、以前に保存されていないドキュメント) を保存しようとすると、[名前を付けて保存] コマンドが実際に実行されます。
 
-6. [名前を付けて保存] コマンドの場合は、[名前を付けて保存] ダイアログ ボックスが表示され、ユーザーにファイル名の入力を求めるメッセージが表示されます。
+6. [名前を付けて保存] コマンドを実行すると、[名前を付けて保存] ダイアログボックスが表示され、ユーザーはファイル名を入力するように求められます。
 
-    ファイルの名前が変更された場合、階層は、(VSFPROPID_MkDocumentを呼び出<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>すことによって、ドキュメント フレームのキャッシュされた情報を更新する責任があります。
+    ファイルの名前が変更されている場合は、(VSFPROPID_MkDocument) を呼び出して、ドキュメントフレームのキャッシュされた情報を更新する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> ます。
 
-   [**名前を付けて保存]** コマンドによってドキュメントの場所が移動され、階層がドキュメントの場所に影響を受ける場合、階層は開いているドキュメント ウィンドウの所有権を別の階層に渡します。 たとえば、プロジェクトがプロジェクトに関連する内部ファイルと外部ファイルのどちらであるかをプロジェクトが追跡する場合に発生します。 ファイルの所有権をその他のファイル プロジェクトに変更するには、次の手順を使用します。
+   [ **名前を付けて保存** ] コマンドを使用してドキュメントの場所を移動し、階層がドキュメントの場所に依存している場合、階層は、開いているドキュメントウィンドウの所有権を別の階層に渡す役割を担います。 たとえば、プロジェクトによって、ファイルがプロジェクトに関連する内部または外部のファイル (その他のファイル) であるかどうかが追跡されている場合に発生します。 ファイルの所有権をその他のファイルプロジェクトに変更するには、次の手順に従います。
 
-## <a name="changing-file-ownership"></a>ファイル所有権の変更
+## <a name="changing-file-ownership"></a>ファイルの所有権の変更
 
-#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>ファイルの所有権をその他のファイル プロジェクトに変更するには
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>ファイルの所有権をその他のファイルプロジェクトに変更するには
 
-1. <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>インターフェイスのクエリ サービス。
+1. インターフェイスのクエリサービス <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> 。
 
-     へのポインタ<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>が返されます。
+     へのポインター <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> が返されます。
 
-2. (`pszMkDocumentNew`, `punkWindowFrame`) メソッドを<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>呼び出して、ドキュメントを新しい階層に転送します。 [名前を付けて保存] コマンドを実行する階層は、このメソッドを呼び出します。
+2. ドキュメントを <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` `punkWindowFrame` 新しい階層に転送するには、(,) メソッドを呼び出します。 [名前を付けて保存] コマンドを実行する階層では、このメソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

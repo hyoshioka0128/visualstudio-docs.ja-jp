@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo |Microsoft Docs
+title: 'IDebugMemoryContext2:: GetInfo |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e46af3af34a31a1c13c89482b62f319591e483cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164072"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得、 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)コンテキストを記述する構造体。  
+コンテキストを記述する [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 構造体を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -43,15 +43,15 @@ int GetInfo(
   
 #### <a name="parameters"></a>パラメーター  
  `dwFields`  
- [in]フラグの組み合わせ、 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列挙体のフィールドを示す、 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)には、構造体を入力します。  
+ から[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)構造体のどのフィールドに入力するかを示す、 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列挙のフラグの組み合わせ。  
   
  `pInfo`  
- [入力、出力]`CONTEXT_INFO`に入力される構造体。  
+ [入力、出力] `CONTEXT_INFO` 入力された構造体。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

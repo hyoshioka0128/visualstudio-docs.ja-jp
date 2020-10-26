@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662167"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス
@@ -50,16 +50,16 @@ ms.locfileid: "72662167"
 > プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。
 
 ## <a name="ui-element-list"></a>UI 要素の一覧
- **コマンドラインエディットボックス**ビルド前またはビルド後に実行するイベントを格納します。
+ **コマンドラインエディットボックス** ビルド前またはビルド後に実行するイベントを格納します。
 
 > [!NOTE]
-> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
+> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。  たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
 
- **マクロ**エディットボックスを展開して、[コマンドライン] ボックスに挿入するマクロの一覧を表示します。
+ **マクロ** エディットボックスを展開して、[コマンドライン] ボックスに挿入するマクロの一覧を表示します。
 
- **マクロテーブル**使用できるマクロとその値を一覧表示します。 それぞれの詳細については、以下の「マクロ」を参照してください。 コマンド ライン エディット ボックスに挿入するマクロは、一度に 1 つだけ選択できます。
+ **マクロテーブル** 使用できるマクロとその値を一覧表示します。 それぞれの詳細については、以下の「マクロ」を参照してください。 コマンド ライン エディット ボックスに挿入するマクロは、一度に 1 つだけ選択できます。
 
- **挿入**マクロテーブルで選択されたマクロをコマンドラインエディットボックスに挿入します。
+ **挿入** マクロテーブルで選択されたマクロをコマンドラインエディットボックスに挿入します。
 
 ### <a name="macros"></a>[マクロ]
  次のマクロのいずれかを使用して、ファイルの位置を指定したり、複数の選択肢がある場合に入力ファイルの実際の名前を取得したりできます。 これらのマクロの大文字と小文字は区別されません。
@@ -87,4 +87,4 @@ ms.locfileid: "72662167"
 |`$(TargetExt)`|ビルドのプライマリ出力ファイルのファイル拡張子。 ファイル拡張子の前にピリオド '.' が付きます。|
 
 ## <a name="see-also"></a>参照
- [Visual Studio の [ビルドイベント] ページでカスタムビルドイベントを指定](../../ide/specifying-custom-build-events-in-visual-studio.md)する[(プロジェクトデザイナー) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) [方法: ビルドイベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [方法: ビルドイベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)
+ [Visual Studio の [ビルドイベント] ページでのカスタムビルドイベントの指定](../../ide/specifying-custom-build-events-in-visual-studio.md)[プロジェクトデザイナー (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) [方法: ビルドイベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [方法: ビルドイベントを指定する (c#)](../../ide/how-to-specify-build-events-csharp.md)

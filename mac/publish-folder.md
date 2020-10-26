@@ -10,17 +10,17 @@ manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
 ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950484"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用してフォルダーに発行する
 
 発行ツールを使用することで、フォルダーに .NET Core コンソールまたは ASP.NET Core アプリを発行することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - .NET Core を有効にしてインストールされた [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)。
 - .NET Core コンソール、または ASP.NET Core プロジェクト。 プロジェクトをまだ用意していない場合は、[新しいプロジェクトを作成](/visualstudio/mac/create-new-projects?view=vsmac-2019)することができます。

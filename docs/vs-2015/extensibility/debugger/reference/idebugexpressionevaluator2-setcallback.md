@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback |Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: SetCallback |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d6f715bb33afe051cdccffbf3219e062b606f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179924"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-メトリックの設定を読み取るデバッガー エンジン (DE) を使用するコールバック インターフェイスを指定するには、式エバリュエーター (EE) を有効にします。  
+式エバリュエーター (EE) が、デバッガーエンジン (DE) がメトリック設定の読み取りに使用するコールバックインターフェイスを指定できるようにします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,16 +39,16 @@ int SetCallback (
   
 #### <a name="parameters"></a>パラメーター  
  `pCallback`  
- [in]設定のコールバックを使用するインターフェイスです。  
+ から設定コールバックに使用するインターフェイス。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドは、式エバリュエーターは、メトリックの設定の読み取りに使用できるセッション デバッグ マネージャーのインターフェイスを提供します。 メトリックを読み取ります。 へのリモート デバッグで役に立ちますが、[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]コンピューター。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、式エバリュエーターがメトリック設定を読み取るために使用できるセッションデバッグマネージャーへのインターフェイスを提供します。 リモートデバッグでコンピューターのメトリックを読み取る場合に便利です [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 。  
   
 ## <a name="example"></a>例  
- 次の例のこのメソッドを実装する方法を示しています、 **CEE**を公開するオブジェクト、 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)インターフェイス。  
+ 次の例は、 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)インターフェイスを公開する**CEE**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
@@ -75,5 +75,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

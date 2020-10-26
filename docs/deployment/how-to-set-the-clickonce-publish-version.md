@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df5e1d91de14e3da4f188c276ef7dd74943d8978
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382121"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを設定する
@@ -29,7 +29,7 @@ ms.locfileid: "85382121"
  プロパティは、 `Publish Version` **プロジェクトデザイナー**の [**発行**] ページで設定できます。
 
 > [!NOTE]
-> アプリケーションが発行されるたびにプロパティが自動的にインクリメントされるプロジェクトオプションがあります。 `Publish Version` このオプションは既定で有効になっています。 詳細については、「[方法: ClickOnce の発行バージョンを自動的にインクリメント](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)する」を参照してください。
+> アプリケーションが発行されるたびにプロパティが自動的にインクリメントされるプロジェクトオプションがあります。 `Publish Version` このオプションは既定で有効になっています。 詳細については、「 [方法: ClickOnce の発行バージョンを自動的にインクリメント](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)する」を参照してください。
 
 ### <a name="to-change-the-publish-version"></a>発行バージョンを変更するには
 
@@ -37,7 +37,7 @@ ms.locfileid: "85382121"
 
 2. **[公開]** タブをクリックします。
 
-3. [**バージョンの発行**] フィールドで、**メジャー**、**マイナー**、**ビルド**、**リビジョン**の各バージョン番号を増分します。
+3. [ **バージョンの発行** ] フィールドで、 **メジャー**、 **マイナー**、 **ビルド**、 **リビジョン** の各バージョン番号を増分します。
 
     > [!NOTE]
     > バージョン番号を減らすことはできません。これを行うと、予測できない更新動作が発生する可能性があります。

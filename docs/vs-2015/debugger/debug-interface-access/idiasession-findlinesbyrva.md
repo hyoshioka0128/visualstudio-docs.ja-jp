@@ -1,5 +1,5 @@
 ---
-title: Idiasession::findlinesbyrva |Microsoft Docs
+title: 'IDiaSession:: Find Byrva |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c066e183d60a1f7d967cafa1114d6241b28caa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165499"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-指定したコンパイル単位で指定された相対仮想アドレス (RVA) が含まれている行を取得します。  
+指定された相対仮想アドレス (RVA) を含む、指定されたコンパイル単位内の行を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,19 +37,19 @@ HRESULT findLinesByRVA ( 
   
 #### <a name="parameters"></a>パラメーター  
  `rva`  
- [in]として、RVA アドレスを指定します。  
+ からアドレスを RVA として指定します。  
   
  `length`  
- [in]このクエリをカバーするアドレス範囲のバイト数を指定します。  
+ からこのクエリでカバーするアドレス範囲のバイト数を指定します。  
   
  `ppResult`  
- [out]返します、 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)番号ものを対象指定されたアドレス範囲のすべての行のリストを含むオブジェクト。  
+ 入出力指定されたアドレス範囲に対応するすべての行番号のリストを含む [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
 ## <a name="example"></a>例  
- この例では、関数の相対仮想アドレスと長さを使用して、指定された関数に含まれているすべての行番号を取得する関数を使用します。  
+ この例は、関数の相対仮想アドレスと長さを使用して、指定された関数に含まれるすべての行番号を取得する関数を示しています。  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
@@ -67,6 +67,6 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

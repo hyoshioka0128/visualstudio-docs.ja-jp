@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211578"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88248767"
 ---
 # <a name="select-code-type-dialog-box"></a>[コードの種類の選択] ダイアログ ボックス
 
@@ -38,26 +38,26 @@ ms.locfileid: "86211578"
 
 **次のコードの種類をデバッグする:** 表示される一覧から、デバッグするコードの種類を選択します。 これは、[アタッチの失敗をトラブルシューティング](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors)するときに役立ちます。 このオプションを使用すると、デバッグするコードの種類のみに検出を制限できます。
 
-   ::: moniker range=">=vs-2019"
-   - Blazor WebAssembly - クライアント側 Blazor WebAssembly
-   - GPU - ソフトウェア エミュレーター - GPU ソフトウェア エミュレーター上で実行される C++ コード
-   - JavaScript (Chrome) - Chrome で実行される JavaScript
-   - JavaScript (Microsoft Edge - Chromium) - Windows 10 用 Chromium ベース Microsoft Edge で実行される JavaScript
-   - JavaScript CDP (V3) デバッガー - CDP クライアントでのデバッグに使用される Chrome DevTools Protocol バージョン 3
-   - マネージド (CoreCLR) - .NET Core
-   - マネージド (ネイティブ コンパイル) - C++/CLR コード
-   - マネージド (v3.5、v3.0、v2.0) - .NET Framework 2.0 以降 (最大 3.5) の .NET Framework コード
-   - マネージド (v.4.6、v4.5、v4.0) - .NET Framework 4.0 以降の .NET Framework コード
-   - ネイティブ - C/C++
-   - Node.js のデバッグ - Node.js ランタイムによってホストされるコード
-   - Python - Python 
-   - スクリプト - JavaScript の一般的なスクリプト デバッガーを指定します。 JavaScript (Chrome) など、お客様のシナリオに該当するものがあれば、より制限の厳しいオプションを使用してください。
-   - T-SQL - Transact-SQL
-   - Unity - Unity
-   - マネージド互換モード - マネージド コード用のレガシ デバッガーを指定します。通常、C++/CLR コードを使用した混合モード デバッグで使用するか (混合モードの場合はエディット コンティニュを有効にする)、レガシ デバッガーを対象とした拡張機能をサポートします。 ほとんどの混合モードのデバッグ シナリオでは、マネージド互換モードではなく、 **[ネイティブ]** と適切な **[マネージド]** コードの種類を選択します。
-   ::: moniker-end
+::: moniker range=">=vs-2019"
+- Blazor WebAssembly - クライアント側 Blazor WebAssembly
+- GPU - ソフトウェア エミュレーター - GPU ソフトウェア エミュレーター上で実行される C++ コード
+- JavaScript (Chrome) - Chrome で実行される JavaScript
+- JavaScript (Microsoft Edge - Chromium) - Windows 10 用 Chromium ベース Microsoft Edge で実行される JavaScript
+- JavaScript CDP (V3) デバッガー - CDP クライアントでのデバッグに使用される Chrome DevTools Protocol バージョン 3
+- マネージド (CoreCLR) - .NET Core
+- マネージド (ネイティブ コンパイル) - C++/CLR コード
+- マネージド (v3.5、v3.0、v2.0) - .NET Framework 2.0 以降 (最大 3.5) の .NET Framework コード
+- マネージド (v.4.6、v4.5、v4.0) - .NET Framework 4.0 以降の .NET Framework コード
+- ネイティブ - C/C++
+- Node.js のデバッグ - Node.js ランタイムによってホストされるコード
+- Python - Python 
+- スクリプト - JavaScript の一般的なスクリプト デバッガーを指定します。 JavaScript (Chrome) など、お客様のシナリオに該当するものがあれば、より制限の厳しいオプションを使用してください。
+- T-SQL - Transact-SQL
+- Unity - Unity
+- マネージド互換モード - マネージド コード用のレガシ デバッガーを指定します。通常、C++/CLR コードを使用した混合モード デバッグで使用するか (混合モードの場合はエディット コンティニュを有効にする)、レガシ デバッガーを対象とした拡張機能をサポートします。 ほとんどの混合モードのデバッグ シナリオでは、マネージド互換モードではなく、 **[ネイティブ]** と適切な **[マネージド]** コードの種類を選択します。
+::: moniker-end
 
-   ほとんどのシナリオでは、同じデバッグ セッションに複数のデバッガーをアタッチすることはサポートされていません。 これを行うには、Visual Studio の 2 つ目のインスタンスを使用します。
+ほとんどのシナリオでは、同じデバッグ セッションに複数のデバッガーをアタッチすることはサポートされていません。 これを行うには、Visual Studio の 2 つ目のインスタンスを使用します。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

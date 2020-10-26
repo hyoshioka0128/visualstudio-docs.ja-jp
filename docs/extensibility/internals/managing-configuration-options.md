@@ -1,5 +1,5 @@
 ---
-title: 構成オプションの管理 |マイクロソフトドキュメント
+title: 構成オプションの管理 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707307"
 ---
 # <a name="managing-configuration-options"></a>構成オプションの管理
@@ -23,33 +23,33 @@ ms.locfileid: "80707307"
 ## <a name="in-this-section"></a>このセクションの内容
 - [概要](../../extensibility/internals/configuration-options-overview.md)
 
- プロジェクトで複数の構成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]をサポートする方法について説明します。
+ のプロジェクトで複数の構成をサポートする方法について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
-- [プロパティ ページ](../../extensibility/internals/property-pages.md)
+- [[プロパティ ページ]](../../extensibility/internals/property-pages.md)
 
- ユーザーが、プロパティ ページを使用して、プロジェクト構成に依存するプロパティおよび独立したプロパティを表示および変更できることについて説明します。
+ プロパティページを使用して、ユーザーがプロジェクト構成に依存するプロパティと独立したプロパティを表示および変更できることについて説明します。
 
 - [ソリューション構成](../../extensibility/internals/solution-configuration.md)
 
- ソリューション構成に格納される内容、およびソリューション構成が**Start**コマンドと**Build**コマンドの動作をどのように導くかについて説明します。
+ ソリューション構成に格納されている内容と、ソリューション構成が **Start** コマンドと **Build** コマンドの動作をダイレクトする方法について説明します。
 
 - [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)
 
- プロジェクト構成オブジェクトが UI に対する構成情報の表示を管理する方法について説明します。
+ プロジェクト構成オブジェクトが UI への構成情報の表示をどのように管理するかについて説明します。
 
 - [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)
 
- 特定のソリューションのソリューション構成の一覧を [**ソリューション構成**] ダイアログ ボックスで管理する方法について説明します。
+ [ **ソリューション構成** ] ダイアログボックスで、特定のソリューションのソリューション構成の一覧を管理する方法について説明します。
 
 - [展開の管理のためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 
- 配置の実行を定義し、配置を[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]サポートするプロジェクトをサポートする 2 つの方法を定義します。
+ 配置の動作を定義し、2つの方法で [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 配置をサポートするプロジェクトをサポートします。
 
 - [出力のためのプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)
 
- すべての構成でサポートできるビルド プロセスと、出力項目を使用できるインターフェイスとメソッドについて説明します。
+ 各構成がサポートできるビルドプロセス、および出力項目を使用できるようにするためのインターフェイスとメソッドについて説明します。
 
 ## <a name="related-sections"></a>関連項目
 - [プロジェクトの種類](../../extensibility/internals/project-types.md)
 
- 統合開発環境 (IDE) の基本的な構成要素としての[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトの概要を説明します。 プロジェクトがコードのビルドとコンパイルを制御する方法を説明する追加のトピックへのリンクが提供されています。
+ プロジェクトの概要を [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) の基本的な構成要素として提供します。 プロジェクトがコードのビルドとコンパイルを制御する方法について説明する追加のトピックへのリンクが用意されています。

@@ -13,18 +13,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c3f3697473a20a2f62f4209a0bdbae89c30b8e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181149"
 ---
-# <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
+# <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 この構造体は、クラスまたは構造体のフィールドのアドレスを表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_FIELD {  
@@ -40,21 +40,21 @@ public struct METADATA_ADDRESS_FIELD {
   
 ## <a name="terms"></a>用語  
  tokField  
- フィールドのトークンの ID。  
+ フィールドトークンの ID。  
   
- [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。  
+ [C++] `_mdToken` は、 `typedef` 32 ビットのです `int` 。  
   
-## <a name="remarks"></a>Remarks  
- この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_FIELD`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。  
+## <a name="remarks"></a>注釈  
+ この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_FIELD` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

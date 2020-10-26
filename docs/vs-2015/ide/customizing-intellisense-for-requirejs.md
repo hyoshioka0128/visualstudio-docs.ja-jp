@@ -1,4 +1,4 @@
-﻿---
+---
 title: RequireJS の IntelliSense のカスタマイズ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 279ac7737460c90f86918ae673e8f64ef1215546
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665883"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS 用に IntelliSense をカスタマイズする
@@ -23,14 +23,14 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
 
  既定では、Visual Studio は RequireJS に対してごく基本的な構成のみのサポートを提供しますが、一般的には独自のカスタム構成設定をセットアップする (つまり、ライブラリの別名を定義する) のが通例となっています。 このトピックでは、プロジェクトの独特のセットアップを処理するために Visual Studio をカスタマイズするさまざまな方法について説明します。
 
- このトピックでは、次の方法を説明します。
+ このトピックでは、次の操作について説明します。
 
 - ASP.NET プロジェクトで RequireJS をカスタマイズする
 
 - JSProj プロジェクトで RequireJS をカスタマイズして、Apache Cordova アプリ、Windows ストア アプリ、および LightSwitch HTML アプリを構築するために使用する
 
 ## <a name="customize-requirejs-in-aspnet-projects"></a>ASP.NET プロジェクトで RequireJS をカスタマイズする
- require.js という名前のファイルが現在の JavaScript ファイルで参照されている場合、自動的に RequireJS のサポートが有効になります (詳細については、「[JavaScript IntelliSense](../ide/javascript-intellisense.md)」の IntelliSense のコンテキスト確認に関するセクションを参照してください)。 ASP.NET プロジェクトでは、通常、_references.js ファイル内で /// \<reference/> ディレクティブを使用することによって require.js が参照されます。
+ require.js という名前のファイルが現在の JavaScript ファイルで参照されている場合、自動的に RequireJS のサポートが有効になります (詳細については、「[JavaScript IntelliSense](../ide/javascript-intellisense.md)」の IntelliSense のコンテキスト確認に関するセクションを参照してください)。 ASP.NET プロジェクトでは、require.js の参照は通常、_references.js ファイル内の///ディレクティブを使用して行われ \<reference/> ます。
 
 ### <a name="configure-the-data-main-attribute-in-an-aspnet-project"></a>ASP.NET プロジェクトで data-main 属性を構成する
  アプリを実行した時の動作を正確にシミュレートするには、require.js の設定時に最初に読み込まれるファイルを JavaScript エディターが認識する必要があります。 これは、通常、次に示すように require.js を参照する script 要素の `data-main` 属性を使用して、アプリケーションの HTML ファイル内で構成します。
@@ -39,14 +39,14 @@ Visual Studio 2013 Update 4 以降では、人気のある RequireJS JavaScript 
 <script src="js/require.js" data-main="js/app.js"></script>
 ```
 
- この例では、data-main によって参照されるスクリプト (js/app.js) は、require.js の直後に読み込まれます。 直後に読み込まれるファイルは、RequireJS の使用を最初に構成するのに最適な場所です (`require.config()` を使用)。アプリケーション内で `data-main` のためにどのファイルを使用するかを JavaScript エディターに通知するには、`data-main` 属性を追加し、/// \<reference/> ディレクティブを変更してアプリケーション内で require.js を参照します。 たとえば、このディレクティブを使用することができます。
+ この例では、data-main によって参照されるスクリプト (js/app.js) は、require.js の直後に読み込まれます。 すぐに読み込まれるファイルは、RequireJS の使用 (を使用) を最初に構成するのに最適な場所です `require.config()` 。アプリケーションで使用するファイルを JavaScript エディターに通知するには、 `data-main` 属性を追加 `data-main` し、 \<reference/> アプリケーションで require.js を参照する///ディレクティブを変更します。 たとえば、このディレクティブを使用することができます。
 
 ```javascript
 /// <reference path="js/require.js" data-main="js/app.js" />
 ```
 
 ### <a name="configure-the-application-start-page-in-an-aspnet-project"></a>ASP.NET プロジェクトでアプリケーションのスタート ページを構成する
- アプリが実行されると、RequireJS はファイルへの相対パスを前提としています (例 "..\\ "パス" は、必要な .js ライブラリを読み込んだ HTML ファイルに対する相対パスです。 Visual Studio エディターで ASP.NET プロジェクトのコードを記述するときは、この開始ページが不明であるため、相対ファイル パスに使用する開始ページをエディターに知らせる必要があります。 そのためには、`start-page` 属性を /// \<reference/> ディレクティブに追加します。
+ アプリが実行されると、RequireJS は、ファイルへの相対パス (たとえば、".. \\ " パス) が require.js ライブラリを読み込んだ HTML ファイルに対して相対的であると想定します。 Visual Studio エディターで ASP.NET プロジェクトのコードを記述するときは、この開始ページが不明であるため、相対ファイル パスに使用する開始ページをエディターに知らせる必要があります。 これを行うには、 `start-page` ///ディレクティブに属性を追加し \<reference/> ます。
 
 ```javascript
 /// <reference path="js/require.js" data-main="js/app.js" start-page="/app/index.html" />

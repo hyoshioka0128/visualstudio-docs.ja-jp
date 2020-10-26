@@ -1,5 +1,5 @@
 ---
-title: 64 ビット アプリケーションの前提条件の展開 |Microsoft Docs
+title: 64ビットアプリケーションの展開の前提条件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675566"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>64 ビット アプリケーションの配置のための必要条件
@@ -31,20 +31,20 @@ ms.locfileid: "65675566"
 
 ClickOnce の配置では、 64 ビット プラットフォームのアプリケーションのインストールをサポートします。 対象プラットフォームは、32 ビット プラットフォームの場合は **x86**、AMD64 命令セットと EM64T 命令セットをサポートするコンピューターの場合は **x64**、64 ビットの Itanium プロセッサの場合は **Itanium** です。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
+## <a name="prerequisites"></a>前提条件  
  64 ビット アプリケーションのインストール時の必須コンポーネントとして使用できる再頒布可能パッケージを次の表に示します。  
   
  64 ビット コンポーネントを含まない必須コンポーネントを選択した場合、選択したパッケージは 64 ビット プラットフォームで使用できないことを示す警告が表示される可能性があります。  
   
 |再頒布可能パッケージ|x64 サポート|IA64 サポート|  
 |---------------------|-----------------|------------------|  
-|[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|[はい]|いいえ|  
-|Visual C++ 2010 ランタイム ライブラリ (IA64)|いいえ|[はい]|  
+|[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|はい|いいえ|  
+|Visual C++ 2010 ランタイム ライブラリ (IA64)|いいえ|はい|  
 |Visual C++ 2010 ランタイム ライブラリ (x64)|はい|いいえ|  
 |Microsoft .NET Framework 4 (x86 および x64)|はい||  
-|Microsoft .NET Framework 4 Client Profile (x86 および x64)|[はい]||  
+|Microsoft .NET Framework 4 Client Profile (x86 および x64)|はい||  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [アプリケーション、サービス、およびコンポーネントの配置](../deployment/deploying-applications-services-and-components.md)   
- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールします。](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [方法: ClickOnce アプリケーションを使用して必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

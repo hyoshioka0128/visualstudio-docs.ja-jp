@@ -18,13 +18,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016716"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>方法: メソッドにパラメーターを追加する
-  パラメーターを使用して、メソッドに情報を渡すか、メソッドから情報を返します。 すべてのメソッドには、少なくとも1つのパラメーターが必要です。 作成するメソッドの種類をサポートするパラメーターをデザインする方法の詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  パラメーターを使用して、メソッドに情報を渡すか、メソッドから情報を返します。 すべてのメソッドには、少なくとも1つのパラメーターが必要です。 作成するメソッドの種類をサポートするパラメーターをデザインする方法の詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
  メソッドにパラメーターを追加すると、Visual Studio によって、パラメーター要素がプロジェクトのモデルファイルの XML に追加されます。 Parameter 要素の属性の詳細については、「 [parameter](/previous-versions/office/developer/sharepoint-2010/ee557705(v=office.14))」を参照してください。
 
@@ -34,23 +35,23 @@ ms.locfileid: "86016716"
 
 2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細**を表示] を選択します。
 
-     [ **BDC メソッドの詳細**] ウィンドウが開きます。 詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
+     [ **BDC メソッドの詳細** ] ウィンドウが開きます。 詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
-3. [ **BDC メソッドの詳細**] ウィンドウで、メソッドのノードを展開し、[**パラメーター** ] ノードを展開します。
+3. [ **BDC メソッドの詳細** ] ウィンドウで、メソッドのノードを展開し、[ **パラメーター** ] ノードを展開します。
 
-4. [**パラメーターの追加**] ボックスの一覧で、[**パラメーターの作成**] を選択します。
+4. [ **パラメーターの追加** ] ボックスの一覧で、[ **パラメーターの作成**] を選択します。
 
-     [**パラメーター**ノードの下に新しいパラメーターが表示されます。
+     [ **パラメーター** ノードの下に新しいパラメーターが表示されます。
 
 5. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
 
-6. [**プロパティ**] ウィンドウで、[**名前**] プロパティを意味のある任意の名前に設定します。 たとえば、メソッドが顧客を返す場合は、メソッドに**Getcustomers**という名前を指定できます。
+6. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを意味のある任意の名前に設定します。 たとえば、メソッドが顧客を返す場合は、メソッドに **Getcustomers**という名前を指定できます。
 
-7. [ **BDC メソッドの詳細**] ウィンドウで、パラメーターの方向に対して表示される一覧を開き、[ **In**]、[ **InOut**]、[ **Out**]、または [**戻る**] を選択します。
+7. [ **BDC メソッドの詳細** ] ウィンドウで、パラメーターの方向に対して表示される一覧を開き、[ **In**]、[ **InOut**]、[ **Out**]、または [ **戻る**] を選択します。
 
-     作成する type メソッドに対して選択する方向の詳細については、「[ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+     作成する type メソッドに対して選択する方向の詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
-8. パラメーターの型記述子を変更します。 詳細については、「[方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
+8. パラメーターの型記述子を変更します。 詳細については、「 [方法: パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [BDC モデルのデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)

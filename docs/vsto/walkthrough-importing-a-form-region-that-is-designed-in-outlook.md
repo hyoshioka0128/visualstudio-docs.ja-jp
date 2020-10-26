@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985435"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>チュートリアル: Outlook でデザインされたフォーム領域をインポートする
@@ -35,7 +35,7 @@ ms.locfileid: "72985435"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "72985435"
 
 1. Microsoft Office Outlook を起動します。
 
-2. Outlook の **[開発者]** タブで、 **[フォームのデザイン]** をクリックします。 詳細については、「[方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
+2. Outlook の **[開発者]** タブで、 **[フォームのデザイン]** をクリックします。 詳細については、「 [方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
 3. **[フォームのデザイン]** ボックスで、 **[タスク]** をクリックし、 **[開く]** をクリックします。
 
@@ -84,7 +84,7 @@ ms.locfileid: "72985435"
 
 15. **[プロパティ]** ウィンドウで、 **[キャプション]** プロパティに「 **依存タスクの一覧に追加するタスクを選択**」と設定し、 **[幅]** プロパティを **200**に設定します。次に、 **[適用]** をクリックします。
 
-16. **[ツールボックス]** から ComboBox コントロールをフォーム領域にドラッグします。 コンボ ボックスを **[依存タスクの一覧に追加するタスクを選択]** ラベルの下に配置します。
+16. **[ツールボックス]** から ComboBox コントロールをフォーム領域にドラッグします。 コンボ ボックスを [ **依存タスクの一覧に追加するタスクを選択** ] ラベルの下に配置します。
 
 17. 追加したコンボ ボックスを選択します。
 
@@ -108,7 +108,7 @@ ms.locfileid: "72985435"
 
      フォーム領域に **TaskFormRegion** という名前を付け、コンピューターのローカル ディレクトリに保存します。
 
-     Outlook では、フォーム領域は Outlook Form Storage ( *.ofs*) ファイルとして保存されます。 フォーム領域は、 *TaskFormRegion*という名前で保存されます。
+     Outlook では、フォーム領域は Outlook Form Storage (*.ofs*) ファイルとして保存されます。 フォーム領域は、 *TaskFormRegion*という名前で保存されます。
 
 27. Outlook を終了します。
 
@@ -123,7 +123,7 @@ ms.locfileid: "72985435"
 
 3. プロジェクトを既定のプロジェクト ディレクトリに保存します。
 
-     詳細については、「[方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+     詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
 ## <a name="import-the-form-region"></a>フォーム領域をインポートする
  **[新しい Outlook フォーム領域]** ウィザードを使用して、Outlook でデザインしたフォーム領域を Outlook VSTO アドイン プロジェクトにインポートできます。
@@ -159,14 +159,14 @@ ms.locfileid: "72985435"
 
 1. **ソリューションエクスプローラー**で、 *TaskFormRegion.cs*または*TaskFormRegion*を右クリックし、[コードの**表示**] をクリックします。
 
-    *TaskFormRegion.cs*または*TaskFormRegion*がコードエディターで開きます。
+    *TaskFormRegion.cs* または *TaskFormRegion* がコードエディターで開きます。
 
-2. `TaskFormRegion` クラスに次のコードを追加します。 このコードは、Outlook のタスク フォルダーから各タスクの件名を取得し、フォーム領域上のコンボ ボックスに表示します。
+2. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、Outlook のタスク フォルダーから各タスクの件名を取得し、フォーム領域上のコンボ ボックスに表示します。
 
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
 
-3. `TaskFormRegion` クラスに次のコードを追加します。 このコードは次のタスクを実行します。
+3. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、以下のタスクを実行します。
 
    - `FindTaskBySubjectName` ヘルパー メソッドを呼び出して目的のタスクの件名を渡すことにより、タスク フォルダー内で `Microsoft.Office.Interop.Outlook.TaskItem` を検索します。 `FindTaskBySubjectName` ヘルパー メソッドは次の手順で追加します。
 
@@ -177,23 +177,23 @@ ms.locfileid: "72985435"
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
 
-4. `TaskFormRegion` クラスに次のコードを追加します。 このコードは、前の手順で説明した `FindTaskBySubjectName` ヘルパー メソッドを提供します。
+4. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、前の手順で説明した `FindTaskBySubjectName` ヘルパー メソッドを提供します。
 
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
 
-5. `TaskFormRegion` クラスに次のコードを追加します。 このコードは次のタスクを実行します。
+5. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、以下のタスクを実行します。
 
    - フォーム領域のリスト ボックスを各依存タスクの現在の完了ステータスで更新します。
 
-   - 隠しテキスト フィールドを解析して、各依存タスクの件名を取得します。 次に、`FindTaskBySubjectName` ヘルパーメソッドを呼び出し、各タスクの件名を渡すことによって、 *Tasks*フォルダー内の各 `Microsoft.Office.Interop.Outlook.TaskItem` を検索します。
+   - 隠しテキスト フィールドを解析して、各依存タスクの件名を取得します。 次に、 `Microsoft.Office.Interop.Outlook.TaskItem` ヘルパーメソッドを呼び出し、各タスクの件名を渡すことによって、 *Tasks* フォルダー内の各を検索し `FindTaskBySubjectName` ます。
 
    - 依存タスクのリスト ボックスに `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 値と `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 値を追加します。
 
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
 
-6. `TaskFormRegion_FormRegionShowing` イベント ハンドラーを次のコードで置き換えます。 このコードは次のタスクを実行します。
+6. `TaskFormRegion_FormRegionShowing` イベント ハンドラーを次のコードで置き換えます。 このコードは、以下のタスクを実行します。
 
    - フォーム領域が表示されたときに、フォーム領域のコンボ ボックスにタスクの件名を表示します。
 
@@ -207,7 +207,7 @@ ms.locfileid: "72985435"
 
 ### <a name="to-test-the-form-region"></a>フォーム領域をテストするには
 
-1. **F5** キーを押してプロジェクトを実行します。
+1. **F5**キーを押してプロジェクトを実行します。
 
      Outlook が起動します。
 
@@ -215,7 +215,7 @@ ms.locfileid: "72985435"
 
 3. タスク フォームの **[件名]** フィールドに「 **依存タスク** 」と入力します。
 
-4. リボンの **[タスク]** タブの **[アクション]** グループで、 **[保存 & 閉じる]** をクリックします。
+4. リボンの [ **タスク** ] タブの [ **アクション** ] グループで、[ **保存 & 閉じる**] をクリックします。
 
 5. Outlook の **[ホーム]** タブで **[新しいアイテム]** をクリックし、 **[その他のアイテム]** から **[フォームの選択]** をクリックします。
 
@@ -235,22 +235,22 @@ ms.locfileid: "72985435"
 
 11. 依存タスク フォームで、 **[達成率]** フィールドの値を **50%** に変更します。
 
-12. 依存タスク リボンの **タスク** タブの **アクション** グループで、**保存 & 閉じる** をクリックします。
+12. [依存タスク] リボンの [ **タスク** ] タブの [ **アクション** ] グループで、[ **保存 & 閉じる**] をクリックします。
 
 13. Outlook で **主要タスク** アイテムを再度開きます。
 
-     今度は、 **[このタスクは次のタスクに依存する]** リスト ボックスに **[50% Complete -- 依存タスク]** と表示されます。
+     今度は、**[このタスクは次のタスクに依存する]** リスト ボックスに **[50% Complete -- 依存タスク]** と表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Outlook アプリケーションの UI をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
-- マネージコントロールをビジュアルデザイナーにドラッグしてフォーム領域の外観をデザインする方法の詳細については、「[チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)」を参照してください。
+- マネージコントロールをビジュアルデザイナーにドラッグしてフォーム領域の外観をデザインする方法の詳細については、「 [チュートリアル: Outlook フォーム領域のデザイン](../vsto/walkthrough-designing-an-outlook-form-region.md)」を参照してください。
 
 - Outlook アイテムのリボンをカスタマイズする方法については、「 [outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)する」を参照してください。
 
-- Outlook にカスタム作業ウィンドウを追加する方法の詳細については、「[カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」を参照してください。
+- Outlook にカスタム作業ウィンドウを追加する方法の詳細については、「 [カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [実行時のフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
 - [Outlook フォーム領域を作成するためのガイドライン](../vsto/guidelines-for-creating-outlook-form-regions.md)

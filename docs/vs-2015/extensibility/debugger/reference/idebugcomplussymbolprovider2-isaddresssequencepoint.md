@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint |Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: IsAddressSequencePoint |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 761264f57ba0eb0775159f3cc2c3385228723eb2
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540554"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定されたデバッグ アドレスがシーケンス ポイントであるかどうかを判断します。  
+指定されたデバッグアドレスがシーケンスポイントであるかどうかを判断します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -39,13 +39,13 @@ int IsAddressSequencePoint(
   
 #### <a name="parameters"></a>パラメーター  
  `pAddress`  
- [in]デバッグで表されるアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。  
+ から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるデバッグアドレス。  
   
 ## <a name="return-value"></a>戻り値  
- デバッグ アドレスがシーケンス ポイントの場合を返します`S_OK`。 それ以外を返します`S_FALSE`します。  
+ デバッグアドレスがシーケンスポイントの場合はを返します。 `S_OK` それ以外の場合はを返し `S_FALSE` ます。  
   
 ## <a name="example"></a>例  
- 次の例では、このメソッドを実装する方法を示しています、 **CDebugSymbolProvider**を公開するオブジェクト、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイス。  
+ 次の例は、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  
@@ -85,5 +85,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

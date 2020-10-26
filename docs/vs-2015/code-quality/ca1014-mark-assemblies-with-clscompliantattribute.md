@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c6dc131a2bb5f0c54943213fbb42561a0c72d95c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545471"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014:アセンブリに CLSCompliantAttribute を設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
@@ -53,5 +53,5 @@ ms.locfileid: "85545471"
  [!code-csharp[FxCop.Design.AssembliesCls#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCls/cs/FxCop.Design.AssembliesCls.cs#1)]
  [!code-vb[FxCop.Design.AssembliesCls#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCls/vb/FxCop.Design.AssembliesCls.vb#1)]
 
-## <a name="see-also"></a>関連項目
- <xref:System.CLSCompliantAttribute?displayProperty=fullName>[言語への非依存性、および言語非依存コンポーネント](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+## <a name="see-also"></a>参照
+ <xref:System.CLSCompliantAttribute?displayProperty=fullName> [言語への非依存性、および言語非依存コンポーネント](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

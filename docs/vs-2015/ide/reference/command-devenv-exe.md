@@ -1,4 +1,4 @@
-﻿---
+---
 title: -Command (devenv.exe) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660855"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -33,7 +33,7 @@ devenv /command CommandName
 ## <a name="arguments"></a>引数
  `CommandName` 必須。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドの完全な名前またはエイリアスを二重引用符で囲みます。 コマンドとエイリアスの構文について詳しくは、「[Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)」をご覧ください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  起動が完了すると、指定したコマンドが IDE で実行されます。 このスイッチを使用すると、IDE の起動時に [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のスタート ページが表示されません。
 
  アドインでコマンドが公開されている場合は、このスイッチを使ってコマンド ラインからアドインを起動できます。 詳しくは、「[方法: アドイン マネージャーを使用してアドインを制御する](https://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)」をご覧ください。
@@ -45,5 +45,5 @@ devenv /command CommandName
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Devenv コマンドラインスイッチ](../../ide/reference/devenv-command-line-switches.md) [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

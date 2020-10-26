@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85441e90bfecc89688ce0ba6ec0ae10082562f0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667592"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd ツールのエラー
@@ -24,11 +24,11 @@ FxCopCmd では、すべてのエラーが致命的であるとは見なされ�
 
 次の表では、FxCopCmd によって返されるエラーコードについて説明します。
 
-|Error|数値|
+|エラー|数値|
 |-----------|-------------------|
 |エラーなし|0x0|
 |分析エラー|0x1|
-|ルールの例外|0x2|
+|規則の例外|0x2|
 |プロジェクトの読み込みエラー|0x4|
 |アセンブリの読み込みエラー|0x8|
 |ルールライブラリの読み込みエラー|0x10|
@@ -51,8 +51,8 @@ FxCopCmd では、すべてのエラーが致命的であるとは見なされ�
 - Output オプションが指定されていないか、ファイルを書き込めませんでした。
 
 > [!NOTE]
-> FxCopCmd のリターンコード**アセンブリ**は、エラー0x200 自体を参照しますが、エラーではなく警告です。 このリターンコードは、間接参照が不足していて、FxCopCmd がそれらを処理できたことを示します。 警告は、一部の分析結果が侵害された可能性があることを意味します。 他のリターンコードと組み合わせると、**アセンブリ参照エラー**をエラーとして扱うことができます。
+> FxCopCmd のリターンコード **アセンブリ** は、エラー0x200 自体を参照しますが、エラーではなく警告です。 このリターンコードは、間接参照が不足していて、FxCopCmd がそれらを処理できたことを示します。 警告は、一部の分析結果が侵害された可能性があることを意味します。 他のリターンコードと組み合わせると、 **アセンブリ参照エラー** をエラーとして扱うことができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [コード分析のアプリケーション エラー](../code-quality/code-analysis-application-errors.md)

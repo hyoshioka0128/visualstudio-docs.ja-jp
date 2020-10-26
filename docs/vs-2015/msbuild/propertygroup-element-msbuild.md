@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6590464b78d6b5452ce266d701aefc0f739185b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155949"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 要素 (MSBuild)
@@ -32,7 +32,7 @@ ms.locfileid: "68155949"
 ユーザー定義の [Property](../msbuild/property-element-msbuild.md) 要素のセットを格納します。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトで使用される各 `Property` 要素は、`PropertyGroup` 要素の子である必要があります。  
   
  \<Project>  
- \<PropertyGroup >  
+ \<PropertyGroup>  
   
 ## <a name="syntax"></a>構文  
   
@@ -56,7 +56,7 @@ ms.locfileid: "68155949"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|省略可能な要素です。<br /><br /> プロパティ値を格納する、ユーザー定義のプロパティ名。 1 つの `PropertyGroup` 要素に 0 個以上の *Property* 要素を含めることができます。|  
+|[プロパティ](../msbuild/property-element-msbuild.md)|省略可能な要素です。<br /><br /> プロパティ値を格納する、ユーザー定義のプロパティ名。 1 つの `PropertyGroup` 要素に 0 個以上の *Property* 要素を含めることができます。|  
   
 ### <a name="parent-elements"></a>親要素  
   
@@ -75,6 +75,6 @@ ms.locfileid: "68155949"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)  
+## <a name="see-also"></a>参照  
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild プロパティ](msbuild-properties1.md)

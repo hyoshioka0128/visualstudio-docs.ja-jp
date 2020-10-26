@@ -1,5 +1,6 @@
 ---
-title: '[データソース] ウィンドウからドラッグするときに作成するコントロールを設定する'
+title: ドラッグ時に作成するコントロールを設定する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f5a3cf2d1f34ca9a3d0c2918a8f3f0a3e05260f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281540"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036263"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する
 
@@ -45,9 +46,9 @@ ms.locfileid: "85281540"
 
     - すべてのデータを単一のコントロールに表示するには、リストで別のコントロールを選択します。たとえば、WPF アプリケーションでは **[DataGrid]** または **[List]** を選択し、Windows フォーム アプリケーションでは **[DataGridView]** を選択します。
 
-    使用可能なコントロールの一覧は、開いているデザイナー、プロジェクトが対象とする .NET のバージョン、およびデータバインディングをサポートするカスタムコントロールを**ツールボックス**に追加したかどうかによって異なります。 作成するコントロールが使用可能なコントロールの一覧にない場合は、そのコントロールをリストに追加できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
+    使用可能なコントロールの一覧は、開いているデザイナー、プロジェクトが対象とする .NET のバージョン、およびデータバインディングをサポートするカスタムコントロールを **ツールボックス**に追加したかどうかによって異なります。 作成するコントロールが使用可能なコントロールの一覧にない場合は、そのコントロールをリストに追加できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
 
-    [**データソース**] ウィンドウでデータテーブルまたはオブジェクトのコントロールの一覧に追加できるカスタム Windows フォームコントロールを作成する方法については、「[複合データバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)する」を参照してください。
+    [ **データソース** ] ウィンドウでデータテーブルまたはオブジェクトのコントロールの一覧に追加できるカスタム Windows フォームコントロールを作成する方法については、「 [複合データバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)する」を参照してください。
 
 ## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>データ列またはプロパティに対して作成されるコントロールを設定する
 
@@ -63,12 +64,12 @@ ms.locfileid: "85281540"
 
 4. 列またはプロパティのドロップダウン メニューをクリックし、項目をデザイナーにドラッグしたときに作成されるコントロールを選択します。
 
-     使用可能なコントロールの一覧は、開いているデザイナー、プロジェクトがターゲットとする .NET のバージョン、および**ツールボックス**に追加したデータバインディングをサポートするカスタムコントロールによって異なります。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
+     使用可能なコントロールの一覧は、開いているデザイナー、プロジェクトがターゲットとする .NET のバージョン、および **ツールボックス**に追加したデータバインディングをサポートするカスタムコントロールによって異なります。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
 
-     [**データソース**] ウィンドウのデータ列またはプロパティのコントロールの一覧に追加できるカスタムコントロールを作成する方法については、「[単純なデータバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)する」を参照してください。
+     [ **データソース** ] ウィンドウのデータ列またはプロパティのコントロールの一覧に追加できるカスタムコントロールを作成する方法については、「 [単純なデータバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)する」を参照してください。
 
-     列またはプロパティのコントロールを作成しない場合は、ドロップダウンメニューで [**なし**] を選択します。 これは、親のテーブルまたはオブジェクトをデザイナーにドラッグする必要があり、かつ特定の列またはプロパティを含める必要がない場合に便利です。
+     列またはプロパティのコントロールを作成しない場合は、ドロップダウンメニューで [ **なし** ] を選択します。 これは、親のテーブルまたはオブジェクトをデザイナーにドラッグする必要があり、かつ特定の列またはプロパティを含める必要がない場合に便利です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)

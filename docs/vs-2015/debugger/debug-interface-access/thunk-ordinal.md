@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576409"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 サンクの種類を指定します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef enum THUNK_ORDINAL {   
@@ -41,34 +41,34 @@ typedef enum THUNK_ORDINAL { 
 } THUNK_ORDINAL;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  THUNK_ORDINAL_NOTYPE  
- 標準のサンクします。  
+ 標準サンク。  
   
  THUNK_ORDINAL_ADJUSTOR  
- A`this`サンクの調整権限を保持します。  
+ `this`Adjustor サンク。  
   
  THUNK_ORDINAL_VCALL  
- 仮想呼び出しサンクします。  
+ 仮想呼び出しサンク。  
   
  THUNK_ORDINAL_PCODE  
- P コード サンクします。  
+ P-コードサンク。  
   
  THUNK_ORDINAL_LOAD  
- 遅延読み込みのサンクします。  
+ 遅延読み込みサンク。  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 増分トランポリン サンクが (1 つのメモリ領域からの呼び出しを間跳ねるトランポリン サンクが使用されます)。  
+ インクリメンタル trampoline サンク (trampoline サンクは、あるメモリ領域から別のメモリ領域への呼び出しをバウンスするために使用されます)。  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- 分岐ポイント トランポリン サンクします。  
+ 分岐点 trampoline サンク。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値が呼び出しから返される、 [idiasymbol::get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は、 [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) メソッドの呼び出しから返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

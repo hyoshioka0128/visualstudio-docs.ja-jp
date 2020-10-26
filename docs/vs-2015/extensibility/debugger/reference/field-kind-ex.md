@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198756"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-フィールドの追加の種類を列挙する、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに含めることができます。 この列挙体を拡張、 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)列挙体。  
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに格納できるその他の種類のフィールドを列挙します。 この列挙体は [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 列挙体を拡張します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,21 +45,21 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>メンバー  
  FIELD_KIND_EX_NONE  
- フィールドに、拡張の型が含まれていません。  
+ フィールドに拡張型が含まれていません。  
   
  FIELD_TYPE_EX_METHODVAR  
- フィールドには、メソッドの変数が含まれています。  
+ フィールドにメソッド変数が含まれています。  
   
  FIELD_TYPE_EX_CLASSVAR  
- フィールドには、クラス変数が含まれています。  
+ フィールドにクラス変数が含まれています。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

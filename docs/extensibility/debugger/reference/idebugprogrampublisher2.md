@@ -1,5 +1,5 @@
 ---
-title: プログラムプログラム2 |マイクロソフトドキュメント
+title: IDebugProgramPublisher2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80721525"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011867"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-このインターフェイスを使用すると、デバッグ エンジン (DE) またはカスタム ポート サプライヤーは、デバッグ用のプログラムを登録できます。
+このインターフェイスにより、デバッグエンジン (DE) またはカスタムポート供給者は、デバッグ用のプログラムを登録できます。
 
 ## <a name="syntax"></a>構文
 
@@ -28,35 +28,35 @@ ms.locfileid: "80721525"
 IDebugProgramPublisher2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
-Visual Studio では、デバッグ中のプログラムを登録して、複数のプロセス間でデバッグを行うために、デバッグ中のプログラムを登録するためにこのインターフェイスを実装しています。
+## <a name="notes-for-implementers"></a>実装側の注意
+Visual Studio では、デバッグ中のプログラムを複数のプロセスにわたって表示できるようにするために、このインターフェイスを実装しています。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
-COM の`CoCreateInstance`関数`CLSID_ProgramPublisher`を呼び出してこのインターフェイスを取得します (例を参照)。 DE またはカスタム ポート サプライヤーは、このインターフェイスを使用して、デバッグ中のプログラムを表すプログラム ノードを登録します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+`CoCreateInstance`このインターフェイスを取得するには、を使用して COM の関数を呼び出し `CLSID_ProgramPublisher` ます (例を参照)。 DE またはカスタムポート供給業者は、このインターフェイスを使用して、デバッグ対象のプログラムを表すプログラムノードを登録します。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 このインターフェイスは、次のメソッドを実装します。
 
 |Method|説明|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|DEs とセッション デバッグ マネージャー (SDM) でプログラム ノードを使用できるようにします。|
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|プログラム ノードを削除して、使用できなくなった状態にします。|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|プログラムノードを DEs およびセッションデバッグマネージャー (SDM) で使用できるようにします。|
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|プログラムノードが使用できなくなるように削除します。|
 |[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|プログラムを DEs および SDM で使用できるようにします。|
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|プログラムを削除して、使用できなくなった。|
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|使用できなくなったプログラムを削除します。|
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|デバッガーが存在することを示すフラグを設定します。|
 
-## <a name="remarks"></a>Remarks
-このインターフェイスは、DEs とセッション デバッグ マネージャー (SDM) で使用するために、プログラムとプログラム ノードを利用できるようにします (つまり、それらを"公開" します)。 公開されたプログラムおよびプログラム ノードにアクセスするには[、IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイスを使用します。 これは、Visual Studio がプログラムがデバッグ中であることを認識できる唯一の方法です。
+## <a name="remarks"></a>解説
+このインターフェイスにより、プログラムとプログラムノードが使用できるようになります (つまり "発行")。 DEs およびセッションデバッグマネージャー (SDM) によって使用されます。 公開されているプログラムとプログラムノードにアクセスするには、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) インターフェイスを使用します。 これは、プログラムがデバッグ中であることを Visual Studio が認識する唯一の方法です。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>例
-この例では、プログラムの発行元をインスタンス化し、プログラム ノードを登録する方法を示します。 これは、チュートリアル「[プログラム ノードの公開」から取得します](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。
+この例では、プログラムの発行元をインスタンス化し、プログラムノードを登録する方法を示します。 これは、「 [プログラムノードを公開](/previous-versions/bb161795(v=vs.90))する」のチュートリアルから引用しています。
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:
@@ -90,5 +90,5 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ```
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

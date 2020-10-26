@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164569"
 ---
 # <a name="caller--callee-view----contention-data"></a>呼び出し元/呼び出し先ビュー - 競合データ
@@ -50,10 +50,10 @@ ms.locfileid: "68164569"
 |**ルート関数名**|現在の関数の名前です。 [VSPerfReport](../profiling/vsperfreport.md) コマンド ライン レポートでのみ有効です。|  
 |**ソース ファイル**|この関数の定義を含むソース ファイルです。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
- [呼び出し元/呼び出し先ビュー](../profiling/caller-callee-view.md)   
- [呼び出し元/呼び出し先ビュー - サンプリング データ](../profiling/caller-callee-view-sampling-data.md)   
- [呼び出し元/呼び出し先ビュー - .NET メモリ インストルメンテーション データ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [呼び出し元/呼び出し先ビュー - .NET メモリ サンプリング データ](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [呼び出し元/呼び出し先ビュー - インストルメンテーション データ](../profiling/caller-callee-view-instrumentation-data.md)
+## <a name="see-also"></a>参照  
+ [方法: レポートビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
+ [[呼び出し元/呼び出し先] ビュー](../profiling/caller-callee-view.md)   
+ [呼び出し元/呼び出し先ビュー-サンプリングデータ](../profiling/caller-callee-view-sampling-data.md)   
+ [呼び出し元/呼び出し先ビュー-NET メモリインストルメンテーションデータ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [呼び出し元/呼び出し先ビュー-.NET メモリサンプリングデータ](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [呼び出し元/呼び出し先ビュー-インストルメンテーションデータ](../profiling/caller-callee-view-instrumentation-data.md)

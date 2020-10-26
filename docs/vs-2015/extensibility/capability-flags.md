@@ -11,73 +11,73 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184517"
 ---
 # <a name="capability-flags"></a>機能フラグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SCC_CAP_*xxx*フラグは、ソース管理プラグインの機能を示すために使用します。 SCC_EXCAP_*xxx*フラグは、拡張機能を示し、整数値に解決するフラグを増分します。  
+SCC_CAP_*xxx* フラグは、ソース管理プラグインの機能を示すために使用されるビットフラグです。 SCC_EXCAP_*xxx* フラグは、拡張機能を示し、整数値に解決される増分フラグです。  
   
 |機能コード|値|説明|  
 |---------------------|-----------|-----------------|  
-|`SCC_CAP_REMOVE`|0x00000001L|では、 [SccRemove](../extensibility/sccremove-function.md)とコマンド。|  
-|`SCC_CAP_RENAME`|0x00000002L|では、 [SccRename](../extensibility/sccrename-function.md)とコマンド。|  
-|`SCC_CAP_DIFF`|0x00000004L|では、 [SccDiff](../extensibility/sccdiff-function.md)とコマンド。|  
-|`SCC_CAP_HISTORY`|0x00000008L|では、 [SccHistory](../extensibility/scchistory-function.md)とコマンド。|  
-|`SCC_CAP_PROPERTIES`|0x00000010L|では、 [SccProperties](../extensibility/sccproperties-function.md)とコマンド。|  
-|`SCC_CAP_RUNSCC`|0x00000020L|では、 [SccRunScc](../extensibility/sccrunscc-function.md)とコマンド。|  
-|`SCC_CAP_GETCOMMANDOPTIONS`|0x00000040L|では、 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)とコマンド。|  
-|`SCC_CAP_QUERYINFO`|0x00000080L|では、 [SccQueryInfo](../extensibility/sccqueryinfo-function.md)とコマンド。|  
-|`SCC_CAP_GETEVENTS`|0x00000100L|では、 [SccGetEvents](../extensibility/sccgetevents-function.md)とコマンド。|  
-|`SCC_CAP_GETPROJPATH`|0x00000200L|では、 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)とコマンド。|  
-|`SCC_CAP_ADDFROMSCC`|0x00000400L|では、 [SccAddFromScc](../extensibility/sccaddfromscc-function.md)とコマンド。|  
-|`SCC_CAP_COMMENTCHECKOUT`|0x00000800L|チェック アウト時のコメントをサポートしています。|  
-|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|チェックイン コメントをサポートしています。|  
-|`SCC_CAP_COMMENTADD`|0x00002000L|追加のコメントをサポートしています。|  
-|`SCC_CAP_COMMENTREMOVE`|0x00004000L|削除のコメントをサポートしています。|  
-|`SCC_CAP_TEXTOUT`|0x00008000L|IDE で提供される出力関数には、テキストを書き込みます。|  
-|`SCC_CAP_ADD_STORELATEST`|0x00200000L|デルタなしのファイルを格納するをサポートします。|  
-|`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|複数のファイル履歴をサポートしています。|  
-|`SCC_CAP_IGNORECASE`|0x00800000L|大文字のファイルの比較をサポートしています。|  
-|`SCC_CAP_IGNORESPACE`|0x01000000L|ファイルの空白文字を区別しない比較をサポートします。|  
+|`SCC_CAP_REMOVE`|0x00000001L|[Sccremove](../extensibility/sccremove-function.md)とコマンドをサポートします。|  
+|`SCC_CAP_RENAME`|0x00000002L|では、 [Sccrename](../extensibility/sccrename-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_DIFF`|0x00000004L|[Sccdiff](../extensibility/sccdiff-function.md)とコマンドをサポートします。|  
+|`SCC_CAP_HISTORY`|0x00000008L|では、 [SccHistory](../extensibility/scchistory-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_PROPERTIES`|0x00000010L|[Sccproperties](../extensibility/sccproperties-function.md)とコマンドをサポートします。|  
+|`SCC_CAP_RUNSCC`|0x00000020L|では、 [SccRunScc](../extensibility/sccrunscc-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_GETCOMMANDOPTIONS`|0x00000040L|では、 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_QUERYINFO`|0x00000080L|では、 [Sccqueryinfo](../extensibility/sccqueryinfo-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_GETEVENTS`|0x00000100L|では、 [SccGetEvents](../extensibility/sccgetevents-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_GETPROJPATH`|0x00000200L|では、 [Sccgetprojpath](../extensibility/sccgetprojpath-function.md) とコマンドがサポートされています。|  
+|`SCC_CAP_ADDFROMSCC`|0x00000400L|[Sccaddfromscc](../extensibility/sccaddfromscc-function.md)とコマンドをサポートします。|  
+|`SCC_CAP_COMMENTCHECKOUT`|0x00000800L|チェックアウト時のコメントをサポートします。|  
+|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|チェックインのコメントをサポートします。|  
+|`SCC_CAP_COMMENTADD`|0X00002000 l|追加のコメントをサポートしています。|  
+|`SCC_CAP_COMMENTREMOVE`|0x00004000L|削除時のコメントをサポートします。|  
+|`SCC_CAP_TEXTOUT`|0x00008000L|IDE によって提供される出力関数にテキストを書き込みます。|  
+|`SCC_CAP_ADD_STORELATEST`|0x00200000L|は、デルタなしのファイルの格納をサポートしています。|  
+|`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|では、複数のファイル履歴がサポートされています。|  
+|`SCC_CAP_IGNORECASE`|0x00800000L|大文字と小文字を区別しないファイル比較をサポートします。|  
+|`SCC_CAP_IGNORESPACE`|0x01000000L|では、空白文字を無視するファイル比較がサポートされています。|  
 |`SCC_CAP_POPULATELIST`|0x02000000L|余分なファイルの検索をサポートします。|  
-|`SCC_CAP_COMMENTPROJECT`|0x04000000L|サポートのコメントは、プロジェクトを作成します。|  
-|`SCC_CAP_DIFFALWAYS`|0x10000000L|管理下にある場合、すべての状態で差分をサポートします。|  
-|`SCC_CAP_GET_NOUI`|0x20000000L|プラグインはサポートしていません、UI、Get の IDE を呼び出すことがまだ[SccGet](../extensibility/sccget-function.md)します。|  
-|`SCC_CAP_REENTRANT`|0x40000000L|プラグインは、再入可能でスレッド セーフです。 バージョン 1.0 にプラグインされたと見なされますない再入可能とスレッド セーフであります。 プラグイン 1.1 には、このビットが設定、ホストは許可されて、並列で複数のプロジェクトを開きます。|  
+|`SCC_CAP_COMMENTPROJECT`|0x04000000L|プロジェクトの作成に関するコメントをサポートします。|  
+|`SCC_CAP_DIFFALWAYS`|0x10000000L|コントロールの場合は、すべての状態で diff をサポートします。|  
+|`SCC_CAP_GET_NOUI`|0x20000000L|プラグインは Get 用の UI をサポートしていませんが、IDE が [Sccget](../extensibility/sccget-function.md)を呼び出す可能性があります。|  
+|`SCC_CAP_REENTRANT`|0x40000000L|プラグインは再入可能で、スレッドセーフです。 バージョン1.0 では、再入可能で、スレッドセーフであると想定されていたプラグインはありません。 1.1 プラグインでこのビットが設定されている場合、ホストは複数のプロジェクトを並行して開くことができます。|  
   
-## <a name="capability-bits-added-in-version-12"></a>バージョン 1.2 で追加された機能ビット  
+## <a name="capability-bits-added-in-version-12"></a>バージョン1.2 で追加された機能ビット  
   
 |機能コード|値|説明|  
 |---------------------|-----------|-----------------|  
-|`SCC_CAP_CREATESUBPROJECT`|0x00010000L|では、 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)します。|  
-|`SCC_CAP_GETPARENTPROJECT`|0x00020000L|では、 [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)します。|  
-|`SCC_CAP_BATCH`|0x00040000L|では、 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)と[SccEndBatch](../extensibility/sccendbatch-function.md)します。|  
-|`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|では、 [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)します。|  
-|`SCC_CAP_DIRECTORYDIFF`|0x00100000L|では、 [SccDirDiff](../extensibility/sccdirdiff-function.md)します。|  
-|`SCC_CAP_MULTICHECKOUT`|0x08000000L|ファイルに複数のチェック アウトをサポートしていると、 [SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)します。|  
-|`SCC_CAP_SCCFILE`|0x80000000L|MSSCCPRJ をサポートしています。SCC ファイル (ユーザー/管理者のオーバーライド) されると、 [SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)します。|  
+|`SCC_CAP_CREATESUBPROJECT`|0x00010000L|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)をサポートします。|  
+|`SCC_CAP_GETPARENTPROJECT`|0x00020000L|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)をサポートします。|  
+|`SCC_CAP_BATCH`|0x00040000L|では、 [Sccbeginbatch](../extensibility/sccbeginbatch-function.md) と [sccbeginbatch](../extensibility/sccendbatch-function.md)がサポートされています。|  
+|`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|[Sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)をサポートします。|  
+|`SCC_CAP_DIRECTORYDIFF`|0x00100000L|[Sccdirdiff](../extensibility/sccdirdiff-function.md)をサポートします。|  
+|`SCC_CAP_MULTICHECKOUT`|0x08000000L|では、ファイルと [SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)で複数のチェックアウトをサポートしています。|  
+|`SCC_CAP_SCCFILE`|0x80000000L|MSSCCPRJ.SCC をサポートします。SCC ファイル (ユーザー/管理者の上書きによる) と [Sccによるファイル](../extensibility/sccwillcreatesccfile-function.md)の適用。|  
   
-## <a name="capability-bits-added-in-version-13"></a>バージョン 1.3 で追加された機能ビット  
- これらのフラグが渡されるを一度に 1 つずつ、 [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)機能がサポートされているかどうかを判断する関数。  
+## <a name="capability-bits-added-in-version-13"></a>バージョン1.3 で追加された機能ビット  
+ これらのフラグは、機能がサポートされているかどうかを判断するために、 [Sccgetextendedcapabilities](../extensibility/sccgetextendedcapabilities-function.md) 関数に一度に1つずつ渡されます。  
   
 |拡張機能コード|値|説明|  
 |------------------------------|-----------|-----------------|  
-|`SCC_EXCAP_CHECKOUT_LOCALVER`|1|では、`SCC_CHECKOUT_LOCALVER`チェック アウトのオプション。|  
-|`SCC_EXCAP_BACKGROUND_GET`|2|では、 [SccBackgroundGet](../extensibility/sccbackgroundget-function.md)します。|  
-|`SCC_EXCAP_ENUM_CHANGED_FILES`|3|では、 [SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)します。|  
+|`SCC_EXCAP_CHECKOUT_LOCALVER`|1|では、チェックアウトのオプションがサポートされてい `SCC_CHECKOUT_LOCALVER` ます。|  
+|`SCC_EXCAP_BACKGROUND_GET`|2|[Sccbackgroundget](../extensibility/sccbackgroundget-function.md)をサポートします。|  
+|`SCC_EXCAP_ENUM_CHANGED_FILES`|3|[Sccenumの](../extensibility/sccenumchangedfiles-function.md)すべてのファイルをサポートします。|  
 |`SCC_EXCAP_POPULATELIST_DIR`|4|余分なディレクトリの検索をサポートします。|  
-|`SCC_EXCAP_QUERYCHANGES`|5|ファイル変更の列挙をサポートします。|  
-|`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|では、 [SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)します。|  
-|`SCC_EXCAP_GET_USER_OPTIONS`|7|では、 [SccGetUserOption](../extensibility/sccgetuseroption-function.md)します。|  
-|`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|複数のスレッドで SccQueryInfo を呼び出すことができます。|  
-|`SCC_EXCAP_REMOVE_DIR`|9|SccRemoveDir 関数をサポートしています。|  
-|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|チェック アウトしたファイルを削除できます。|  
-|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|チェック アウトしたファイルの名前を変更できます。|  
+|`SCC_EXCAP_QUERYCHANGES`|5|ファイルの変更の列挙をサポートします。|  
+|`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|[Sccaddfilesfromscc](../extensibility/sccaddfilesfromscc-function.md)をサポートします。|  
+|`SCC_EXCAP_GET_USER_OPTIONS`|7|[Sccgetuseroption](../extensibility/sccgetuseroption-function.md)をサポートします。|  
+|`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|では、複数のスレッドで SccQueryInfo を呼び出すことができます。|  
+|`SCC_EXCAP_REMOVE_DIR`|9|では、SccRemoveDir 関数がサポートされています。|  
+|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|チェックアウトされたファイルを削除できます。|  
+|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|チェックアウトされたファイルの名前を変更できます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)

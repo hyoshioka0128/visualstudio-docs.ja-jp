@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145500"
 ---
 # <a name="timer"></a>タイマー
@@ -40,26 +40,26 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>必須オプション  
  **Timer** は、以下のいずれかのオプションを含むコマンド ラインでのみ指定できます。  
   
- **Launch:** `AppName`  
+ **起動:**`AppName`  
  プロファイラーと、`AppName` で指定されたアプリケーションを起動します。  
   
- **Attach:** `PID`  
+ **アタッチ:**`PID`  
  プロファイラーをプロセス ID (`PID`) で指定されたプロセスにアタッチします。  
   
 ## <a name="invalid-options"></a>無効なオプション  
  以下のオプションは、**Timer** と同じコマンド ラインに指定することはできません。  
   
- **PF**[ **:** `Events`]  
+ **PF**[**:** `Events` ]  
  サンプリング イベントをページ フォールトに設定します。オプションで、サンプリング間隔を `Events` に設定します。 既定の PF 間隔は 10 です。  
   
- **Sys**[ **:** `Events`]  
+ **Sys**[**:** `Events` ]  
  サンプリング イベントをオペレーティング システムの呼び出しに設定します。オプションで、サンプリング間隔を `Events` に設定します。 既定の Sys 間隔は 10 です。  
   
- **Counter**[ **:** `Name,Reload,FriendlyName`]  
+ **カウンタ**[**:** `Name,Reload,FriendlyName` ]  
  サンプリング イベントを、`Name` で指定された CPU パフォーマンス カウンターに設定し、サプリング間隔を `Reload` に設定します。  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ .NET メモリ データを収集します。 既定 (**割り当て**) では、すべてのメモリ割り当てイベントでデータが収集されます。 **Lifetime**パラメーターを指定すると、ガベージコレクションイベントごとにデータも収集されます。  
   
 ## <a name="example"></a>例  
  プロファイラーのサンプリング間隔をプロセッサ サイクル数 1,000,000 に設定する方法を次の例に示します。  
@@ -69,8 +69,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

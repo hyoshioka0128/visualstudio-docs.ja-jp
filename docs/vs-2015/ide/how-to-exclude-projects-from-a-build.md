@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: ビルドからプロジェクトを除外する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667944"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>方法: ビルドからプロジェクトを除外する
@@ -31,7 +31,7 @@ ms.locfileid: "72667944"
 
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>アクティブなソリューション構成からプロジェクトを一時的に削除するには
 
-1. メニュー バーで **[ビルド]** 、 **[構成マネージャー]** の順に選択します。
+1. メニュー バーで **[ビルド]**、 **[構成マネージャー]** の順に選択します。
 
 2. **[プロジェクトのコンテキスト]** テーブルで、ビルドから除外するプロジェクトを見つけます。
 
@@ -41,9 +41,9 @@ ms.locfileid: "72667944"
 
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>プロジェクトを除外するソリューション構成を作成するには
 
-1. メニュー バーで **[ビルド]** 、 **[構成マネージャー]** の順に選択します。
+1. メニュー バーで **[ビルド]**、 **[構成マネージャー]** の順に選択します。
 
-2. **[アクティブ ソリューション構成]** 一覧の **[\<新規作成>]** を選択します。
+2. **[アクティブ ソリューション構成]** 一覧の **\<New>** をクリックします。
 
 3. **[名前]** ボックスに、ソリューション構成の名前を入力します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "72667944"
 
 6. **[標準]** ツール バーで、 **[ソリューション構成]** ボックスのアクティブな構成が、新しいソリューション構成であることを確認します。
 
-7. メニュー バーから、 **[ビルド]** 、 **[ソリューションのリビルド]** の順に選びます。
+7. メニュー バーから、**[ビルド]**、**[ソリューションのリビルド]** の順に選びます。
 
 ## <a name="see-also"></a>参照
  [ビルド構成につい](../ide/understanding-build-configurations.md)[て方法: 構成を作成および編集](../ide/how-to-create-and-edit-configurations.md)する[方法: 複数の構成を同時にビルド](../ide/how-to-build-multiple-configurations-simultaneously.md)する

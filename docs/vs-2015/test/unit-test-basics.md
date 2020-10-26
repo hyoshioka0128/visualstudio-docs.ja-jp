@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543781"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
@@ -40,9 +40,9 @@ ms.locfileid: "85543781"
 
 - [テストを実行して表示する](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>単体テストの概要
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> 単体テストの概要
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>クイックスタート
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> クイックスタート
  コーディングに直接関係する単体テストの概要については、次のいずれかのトピックを参照してください。
 
 - [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ ms.locfileid: "85543781"
 
 - [テスト エクスプローラーを使用したネイティブ コードの単体テスト](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>MyBank ソリューションの例
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> MyBank ソリューションの例
  このトピックでは、例として `MyBank` という架空のアプリケーションの開発を使用します。 このトピックの説明は、実際のコードがなくても理解できます。 テスト メソッドは C# で記述され、マネージド コード用の Microsoft 単体テスト フレームワークを使用して示されますが、その概念は他の言語やフレームワークに容易に移行できます。
 
  ![MyBank ソリューション](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - `CheckingAccountTests` クラスには、 `CheckingAccount` クラス用の単体テスト メソッドが含まれています。
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>テストを作成する
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> テストを作成する
  使用する単体テスト フレームワークと Visual Studio IntelliSense に従って、コード プロジェクトの単体テスト用コードを記述していきます。 ほとんどのフレームワークでは、テスト エクスプローラーで実行するには、単体テスト メソッドを識別する特定の属性を追加する必要があります。 フレームワークには、テスト メソッドが成功したか失敗したかを示す手段も用意されています。通常は、Assert ステートメントまたはメソッドの属性を使用します。 他の属性は、各テスト メソッドの前でクラスの初期化時に実行される省略可能な設定メソッド、および各テスト メソッドの後でクラスが破棄される前に実行される終了処理メソッドを識別します。
 
  AAA (Arrange、Act、Assert) のパターンが、テスト対象のメソッドの単体テストを記述する一般的な方法です。
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>テストエクスプローラーでテストを実行する
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> テストエクスプローラーでテストを実行する
  テスト プロジェクトをビルドすると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
  ![単体テスト エクスプローラー](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,16 +226,16 @@ public void My_Test ()
 
  グローバル レベルで検索ボックスでテキストを照合して、または定義済みのフィルターの 1 つを選択して、任意のビューでテストにフィルターを適用することもできます。 任意に選択したテストをいつでも実行できます。 テスト実行の結果は、エクスプローラー ウィンドウの上部にある成功/失敗ステータス バーですぐにわかります。 テストを選択すると、そのテスト メソッドの結果の詳細が表示されます。
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>テストの実行と表示
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> テストの実行と表示
  テスト エクスプローラーのツール バーは、対象にするテストを検出、編成、実行するのに役立ちます。
 
  ![テスト エクスプローラー ツールバーからテストを実行](../test/media/ute-toolbar.png "UTE_ToolBar")
 
- **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 一連のテストを実行した後、テスト実行の概要がテスト エクスプローラー ウィンドウの下部に表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。 コンテキストメニューから [**テストを開く**] を選択します (キーボード: F12)。選択したテストのソースコードを表示します。
+ **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 一連のテストを実行した後、テスト実行の概要がテスト エクスプローラー ウィンドウの下部に表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。 コンテキストメニューから [ **テストを開く** ] を選択します (キーボード: F12)。選択したテストのソースコードを表示します。
 
  個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-小") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
-### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a>各ビルドの後にテストを実行する
+### <a name="run-tests-after-every-build"></a><a name="BKMK_Running_tests_after_every_build"></a> 各ビルドの後にテストを実行する
 
 > [!WARNING]
 > 各ビルドの後の単体テスト実行は、Visual Studio Enterprise でのみサポートされます。
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|
 |![ビルド後に実行](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、テスト エクスプローラーのツール バーの **[ビルド後にテストを実行]** を選択します。|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>テストリストのフィルター処理とグループ化
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> テストリストのフィルター処理とグループ化
  多数のテストがある場合は、テスト エクスプローラーの検索ボックスに入力し、指定した文字列によって一覧をフィルター処理できます。 フィルターの一覧から選択することで、フィルター イベントをさらに制限できます。
 
  ![フィルターの検索カテゴリ](../test/media/ute-searchfilter.png "UTE_SearchFilter")
@@ -265,7 +265,7 @@ public void My_Test ()
    > [!NOTE]
    > テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。
 
-2. テストエクスプローラーでテストメソッドを選択し、ショートカットメニューの [**選択したテストのデバッグ**] をクリックします。
+2. テストエクスプローラーでテストメソッドを選択し、ショートカットメニューの [ **選択したテストのデバッグ** ] をクリックします。
 
    [単体テストのデバッグ](../debugger/debugging-in-visual-studio.md)の詳細を確認してください。
 

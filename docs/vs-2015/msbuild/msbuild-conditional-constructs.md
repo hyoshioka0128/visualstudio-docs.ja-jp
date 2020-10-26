@@ -1,4 +1,4 @@
-﻿---
+---
 title: MSBuild の条件構造 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,10 +24,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143759"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild の条件構造
@@ -79,8 +79,8 @@ ms.locfileid: "68143759"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [Choose 要素 (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [When 要素 (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Otherwise 要素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
+ [それ以外の要素 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)

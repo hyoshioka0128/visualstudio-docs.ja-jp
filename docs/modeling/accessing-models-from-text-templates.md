@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531470"
 ---
 # <a name="access-models-from-text-templates"></a>テキストテンプレートからモデルにアクセスする
 
-テキストテンプレートを使用すると、ドメイン固有の言語モデルに基づいたレポートファイル、ソースコードファイル、およびその他のテキストファイルを作成できます。 テキストテンプレートの基本的な情報については、「[コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートは、DSL のデバッグ時に実験的モードで動作し、DSL を展開したコンピューター上でも動作します。
+テキストテンプレートを使用すると、ドメイン固有の言語モデルに基づいたレポートファイル、ソースコードファイル、およびその他のテキストファイルを作成できます。 テキストテンプレートの基本的な情報については、「 [コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートは、DSL のデバッグ時に実験的モードで動作し、DSL を展開したコンピューター上でも動作します。
 
 > [!NOTE]
 > DSL ソリューションを作成すると、サンプルテキストテンプレートの** \* .tt**ファイルがデバッグプロジェクトに生成されます。 ドメインクラスの名前を変更すると、これらのテンプレートは機能しなくなります。 それにもかかわらず、必要な基本ディレクティブが含まれており、DSL に一致するように更新できる例を提供しています。
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - コードフラグメントが記述されている言語は C# ですが、任意の種類のテキストを生成することができます。 または、 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロパティをディレクティブに追加して、でコードを記述することもでき `language="VB"` `template` ます。
 
-- テンプレートをデバッグするには、を `debug="true"` ディレクティブに追加し `template` ます。 例外が発生した場合、テンプレートは Visual Studio の別のインスタンスで開きます。 コード内の特定の位置でデバッガーを中断する場合は、ステートメントを挿入します。`System.Diagnostics.Debugger.Break();`
+- テンプレートをデバッグするには、を `debug="true"` ディレクティブに追加し `template` ます。 例外が発生した場合、テンプレートは Visual Studio の別のインスタンスで開きます。 コード内の特定の位置でデバッガーを中断する場合は、ステートメントを挿入します。 `System.Diagnostics.Debugger.Break();`
 
    詳細については、「 [T4 テキストテンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)」を参照してください。
 
@@ -72,7 +72,7 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- ディレクティブの名前 ( `MyLanguage` この例では) は、DSL の名前から派生します。 これは、DSL の一部として生成される*ディレクティブプロセッサ*を呼び出します。 ソースコードは**Dsl\GeneratedCode\DirectiveProcessor.cs**で見つけることができます。
+ ディレクティブの名前 ( `MyLanguage` この例では) は、DSL の名前から派生します。 これは、DSL の一部として生成される *ディレクティブプロセッサ* を呼び出します。 ソースコードは **Dsl\GeneratedCode\DirectiveProcessor.cs**で見つけることができます。
 
  DSL ディレクティブプロセッサは、次の2つの主要タスクを実行します。
 
@@ -95,10 +95,10 @@ Here is a list of elements in the model:
 
    エラーが見つかった場合は、[エラー] ウィンドウに報告され、結果ファイルにはエラーメッセージが含まれます。
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>テキストテンプレートからの複数のモデルへのアクセス
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> テキストテンプレートからの複数のモデルへのアクセス
 
 > [!NOTE]
-> このメソッドを使用すると、同じテンプレート内の複数のモデルを読み取ることができますが、ModelBus 参照はサポートされません。 ModelBus 参照によって interlinked されるモデルを読み取る方法については、「[テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
+> このメソッドを使用すると、同じテンプレート内の複数のモデルを読み取ることができますが、ModelBus 参照はサポートされません。 ModelBus 参照によって interlinked されるモデルを読み取る方法については、「 [テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
 
  同じテキストテンプレートから複数のモデルにアクセスする場合は、生成されたディレクティブプロセッサをモデルごとに1回呼び出す必要があります。 パラメーターには、各モデルのファイル名を指定する必要があり `requires` ます。 パラメーターでルートドメインクラスに使用する名前を指定する必要があり `provides` ます。 各ディレクティブ呼び出しのパラメーターに異なる値を指定する必要があり `provides` ます。 たとえば、Library という名前の3つのモデルファイルがあるとします。これは、"xyz"、"School"、"xyz" という名前です。 同じテキストテンプレートからアクセスするには、次のような3つのディレクティブ呼び出しを記述する必要があります。
 
@@ -140,9 +140,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  ただし、dsl 固有のディレクティブの機能の1つとして、dsl 名前空間をインポートして、その DSL で定義されているドメインクラスをテンプレートコードで使用できるようにします。 ディレクティブを使用していないため、 **\<assembly>** **\<import>** 読み込む可能性のあるすべてのモデルにディレクティブとディレクティブを追加する必要があります。 読み込む可能性のあるさまざまなモデルが同じ DSL のすべてのインスタンスである場合、これは簡単です。
 
- ファイルを読み込むには、最も効果的な方法は Visual Studio ModelBus を使用することです。 一般的なシナリオでは、テキストテンプレートは DSL 固有のディレクティブを使用して、通常の方法で最初のモデルを読み込みます。 このモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照先のモデルを開き、特定の要素にアクセスできます。 詳細については、「[テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
+ ファイルを読み込むには、最も効果的な方法は Visual Studio ModelBus を使用することです。 一般的なシナリオでは、テキストテンプレートは DSL 固有のディレクティブを使用して、通常の方法で最初のモデルを読み込みます。 このモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照先のモデルを開き、特定の要素にアクセスできます。 詳細については、「 [テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
 
- あまり一般的ではないシナリオでは、ファイル名のみが存在し、現在の Visual Studio プロジェクトには含まれていないモデルファイルを開くことが必要になる場合があります。 この場合、「[方法: プログラムコードでファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)」で説明されている方法を使用してファイルを開くことができます。
+ あまり一般的ではないシナリオでは、ファイル名のみが存在し、現在の Visual Studio プロジェクトには含まれていないモデルファイルを開くことが必要になる場合があります。 この場合、「 [方法: プログラムコードでファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)」で説明されている方法を使用してファイルを開くことができます。
 
 ## <a name="generating-multiple-files-from-a-template"></a>テンプレートから複数のファイルを生成する
  複数のファイルを生成する場合 (たとえば、モデル内の要素ごとに個別のファイルを生成する場合)、いくつかの方法が考えられます。 既定では、各テンプレートファイルから生成されるファイルは1つだけです。
@@ -150,7 +150,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ### <a name="splitting-a-long-file"></a>長いファイルの分割
  このメソッドでは、テンプレートを使用して、区切り記号で区切られた1つのファイルを生成します。 次に、ファイルをその部分に分割します。 2つのテンプレートがあります。1つは1つのファイルを生成するテンプレート、もう1つは分割するテンプレートです。
 
- **LoopTemplate**は、長い単一ファイルを生成します。 [**すべてのテンプレートの変換**] をクリックしても直接処理されないため、ファイル拡張子が "t4" であることに注意してください。 このテンプレートは、セグメントを区切る区切り記号文字列を指定するパラメーターを受け取ります。
+ **LoopTemplate** は、長い単一ファイルを生成します。 [ **すべてのテンプレートの変換**] をクリックしても直接処理されないため、ファイル拡張子が "t4" であることに注意してください。 このテンプレートは、セグメントを区切る区切り記号文字列を指定するパラメーターを受け取ります。
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>

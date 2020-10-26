@@ -29,6 +29,8 @@ ms.locfileid: "78263107"
 `UsingTask` `TaskFactory` によって生成されるタスクの固有のパラメーターについての情報が格納されます。  要素の名前はパラメーターの名前です。  詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<ParameterGroup>
+ \<Parameter>
 
 ## <a name="syntax"></a>構文
 

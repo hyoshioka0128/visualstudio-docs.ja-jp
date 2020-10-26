@@ -12,28 +12,28 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89a07bc5a5c4c8b7a6054b53610325c654355bc8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695961"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>デバッガーを拡張するためのロードマップ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-このドキュメントは、拡張するためのガイドとリファレンスの情報を提供します。、[!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)]のデバッガー、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。  
+このドキュメントでは、を使用してデバッガーを拡張するためのガイドとリファレンス情報を提供し [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] ます。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ドキュメントをデバッグするには、サンプル、総合的なリファレンスと、デバッガーをカスタマイズする一般的な方法を示すいくつかの代表的なシナリオが含まれます。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] デバッグドキュメントには、サンプル、包括的なリファレンス、デバッガーをカスタマイズする一般的な方法を示すいくつかの代表的なシナリオが含まれています。  
   
- コンパイラとその出力は、お使いの製品でのデバッグを実装するために必要事項を決定します。 場合、コンパイラ。  
+ コンパイラとその出力によって、製品にデバッグを実装するために必要なものが決まります。 コンパイラの場合:  
   
-- Windows ネイティブのオペレーティング システムを対象として、書き込み、します。PDB ファイルに統合されたネイティブ コード デバッグ エンジン (DE)、プログラムをデバッグできます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 DE または式エバリュエーターを実装する必要はありません。 C++ プログラミング言語の構文については、式エバリュエーターが書き込まれます。  
+- Windows ネイティブオペレーティングシステムを対象とし、を書き込みます。PDB ファイルは、に統合されているネイティブコードデバッグエンジン (DE) を使用してプログラムをデバッグでき [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 DE または式エバリュエーターを実装する必要はありません。 式エバリュエーターは、C++ プログラミング言語の構文用に記述されています。  
   
-- Microsoft intermediate language (MSIL) が出力にも統合されているマネージ コードのデバッグ エンジン DE、プログラムをデバッグすることができますが生成されます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 したがって、式エバリュエーターのみを実装する必要があります。 サンプルの式エバリュエーターが提供されます。 詳細については、次のトピックを参照してください。  
+- Microsoft 中間言語 (MSIL) 出力を生成します。マネージコードデバッグエンジン DE を使用してプログラムをデバッグできます。これは、にも統合されてい [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。 したがって、式エバリュエーターだけを実装する必要があります。 サンプル式エバリュエーターが用意されています。 詳細については、次のトピックを参照してください。  
   
      [式の評価](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [評価式](../../extensibility/debugger/evaluating-expressions.md)  
+     [式の評価](../../extensibility/debugger/evaluating-expressions.md)  
   
      [式の評価のコンテキスト](../../extensibility/debugger/expression-evaluation-context.md)  
   
@@ -41,15 +41,15 @@ ms.locfileid: "65695961"
   
      [共通言語ランタイム式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
-- 独自のオペレーティング システムや他のランタイム環境をターゲット、DE、独自に記述する必要があります。 ATL COM を使用して単純な DE を作成するチュートリアルが提供されます。 詳細については、次のトピックを参照してください。  
+- 独自のオペレーティングシステムまたはその他の実行時環境を対象とする場合は、独自の DE を作成する必要があります。 ATL COM を使用して単純な DE を作成するチュートリアルが用意されています。 詳細については、次のトピックを参照してください。  
   
      [カスタム デバッグ エンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [チュートリアル: ATL COM を使用してデバッグ エンジンを構築します。](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [チュートリアル: ATL COM を使用したデバッグエンジンの構築](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [ポートのサプライヤーの実装](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
      [サンプル](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
-## <a name="see-also"></a>関連項目  
- [作業の開始](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+## <a name="see-also"></a>参照  
+ [はじめに](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

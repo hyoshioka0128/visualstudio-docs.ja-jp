@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595463"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -25,7 +25,7 @@ ms.locfileid: "75595463"
 
 **%APPDATA%\\Microsoft\\VisualStudio\\** \<Version\> **\\ActivityLog.xml**
 
-ここで、<\<バージョン\>> は Visual Studio のバージョンです。 ただし、別のパスとファイル名を指定することもできます。
+ここで、\<Version\> は Visual Studio のバージョンです。 ただし、別のパスとファイル名を指定することもできます。
 
 ## <a name="syntax"></a>構文
 

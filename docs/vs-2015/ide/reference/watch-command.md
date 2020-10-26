@@ -1,4 +1,4 @@
-﻿---
+---
 title: Watch コマンド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 18e585064bb50db7a0497c6b96e428a662e953ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604826"
 ---
 # <a name="watch-command"></a>Watch コマンド
@@ -44,5 +44,5 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [自動変数とローカルウィンドウ](../../debugger/autos-and-locals-windows.md)[方法: 変数ウィンドウの値を編集](https://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)する方法[: [クイックウォッチ] ダイアログボックスを使用する](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) [visual studio](../../ide/reference/visual-studio-commands.md)のコマンド[ウィンドウ](../../ide/reference/command-window.md)の [[検索]/[コマンド] ボックス](../../ide/find-command-box.md) [visual studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

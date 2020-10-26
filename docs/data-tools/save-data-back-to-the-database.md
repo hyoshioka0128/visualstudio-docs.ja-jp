@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281748"
 ---
 # <a name="save-data-back-to-the-database"></a>データをデータベースに保存する
@@ -66,31 +66,31 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 ## <a name="merge-datasets"></a>データセットのマージ
 
-データセットを別のデータセットに*マージ*することによって、データセットの内容を更新できます。 これには、*ソース*データセットの内容を呼び出し元のデータセット (*ターゲット*データセットと呼びます) にコピーする作業が含まれます。 データセットをマージすると、ソース データセットの新しいレコードはターゲット データセットに追加されます。 また、ソース データセットのその他の列もターゲット データセットに追加されます。 データセットのマージは、ローカルデータセットがあり、別のアプリケーションから2番目のデータセットを取得する場合に便利です。 また、XML web サービスなどのコンポーネントから2番目のデータセットを取得する場合や、複数のデータセットのデータを統合する必要がある場合にも便利です。
+データセットを別のデータセットに *マージ* することによって、データセットの内容を更新できます。 これには、 *ソース* データセットの内容を呼び出し元のデータセット ( *ターゲット* データセットと呼びます) にコピーする作業が含まれます。 データセットをマージすると、ソース データセットの新しいレコードはターゲット データセットに追加されます。 また、ソース データセットのその他の列もターゲット データセットに追加されます。 データセットのマージは、ローカルデータセットがあり、別のアプリケーションから2番目のデータセットを取得する場合に便利です。 また、XML web サービスなどのコンポーネントから2番目のデータセットを取得する場合や、複数のデータセットのデータを統合する必要がある場合にも便利です。
 
 データセットをマージする場合は、 `preserveChanges` <xref:System.Data.DataSet.Merge%2A> ターゲットデータセット内の既存の変更を保持するかどうかをメソッドに示すブール型引数 () を渡すことができます。 データセットはレコードの複数のバージョンを保持しているため、レコードの複数のバージョンがマージされるということに留意することは重要です。 次の表は、2つのデータセットのレコードをマージする方法を示しています。
 
 |DataRowVersion|ターゲット データセット|ソース データセット|
 | - | - | - |
 |元|James Wilson|James c. Wilson|
-|[現在]|Jim Wilson|James c. Wilson|
+|Current|Jim Wilson|James c. Wilson|
 
 を使用して前のテーブルのメソッドを呼び出す <xref:System.Data.DataSet.Merge%2A> と `preserveChanges=false targetDataset.Merge(sourceDataset)` 、次のデータが返されます。
 
 |DataRowVersion|ターゲット データセット|ソース データセット|
 | - | - | - |
 |元|James c. Wilson|James c. Wilson|
-|[現在]|James c. Wilson|James c. Wilson|
+|Current|James c. Wilson|James c. Wilson|
 
 <xref:System.Data.DataSet.Merge%2A>を使用してメソッドを呼び出すと `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 、次のデータが返されます。
 
 |DataRowVersion|ターゲット データセット|ソース データセット|
 | - | - | - |
 |元|James c. Wilson|James c. Wilson|
-|[現在]|Jim Wilson|James c. Wilson|
+|Current|Jim Wilson|James c. Wilson|
 
 > [!CAUTION]
-> このシナリオでは、 `preserveChanges = true` <xref:System.Data.DataSet.RejectChanges%2A> ターゲットデータセット内のレコードに対してメソッドが呼び出された場合、*ソース*データセットの元のデータに戻ります。 つまり、対象のデータセットを使用して元のデータソースを更新しようとすると、更新する元の行を見つけることができないことがあります。 データソースから更新されたレコードを別のデータセットに読み込んで、同時実行違反を防ぐためにマージを実行することで、同時実行違反を防ぐことができます。 (コンカレンシー違反は、データセットにレコードが格納された後で別のユーザーがデータ ソース内のレコードを変更すると発生します。)
+> このシナリオでは、 `preserveChanges = true` <xref:System.Data.DataSet.RejectChanges%2A> ターゲットデータセット内のレコードに対してメソッドが呼び出された場合、 *ソース* データセットの元のデータに戻ります。 つまり、対象のデータセットを使用して元のデータソースを更新しようとすると、更新する元の行を見つけることができないことがあります。 データソースから更新されたレコードを別のデータセットに読み込んで、同時実行違反を防ぐためにマージを実行することで、同時実行違反を防ぐことができます。 (コンカレンシー違反は、データセットにレコードが格納された後で別のユーザーがデータ ソース内のレコードを変更すると発生します。)
 
 ## <a name="update-constraints"></a>制約の更新
 
@@ -109,11 +109,11 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 更新が完了したら、制約チェックを再度有効にすることができます。これにより、更新イベントが再度有効になり、イベントが発生します。
 
-イベントの中断の詳細については、「[データセットの読み込み中に制約をオフにする](../data-tools/turn-off-constraints-while-filling-a-dataset.md)」を参照してください。
+イベントの中断の詳細については、「 [データセットの読み込み中に制約をオフにする](../data-tools/turn-off-constraints-while-filling-a-dataset.md)」を参照してください。
 
 ## <a name="dataset-update-errors"></a>データセットの更新エラー
 
-データセットのレコードを更新するときにエラーが発生する場合があります。 たとえば、誤った型のデータを列に誤って書き込んだ場合や、データが長すぎる場合や、他の整合性の問題が発生している場合などが考えられます。 また、更新イベントのいずれかの段階でカスタムエラーが発生する可能性がある、アプリケーション固有の検証チェックがある場合もあります。 詳細については、「[データセット内のデータの検証](../data-tools/validate-data-in-datasets.md)」を参照してください。
+データセットのレコードを更新するときにエラーが発生する場合があります。 たとえば、誤った型のデータを列に誤って書き込んだ場合や、データが長すぎる場合や、他の整合性の問題が発生している場合などが考えられます。 また、更新イベントのいずれかの段階でカスタムエラーが発生する可能性がある、アプリケーション固有の検証チェックがある場合もあります。 詳細については、「 [データセット内のデータの検証](../data-tools/validate-data-in-datasets.md)」を参照してください。
 
 ## <a name="maintain-information-about-changes"></a>変更に関する情報を保持する
 
@@ -125,7 +125,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 <xref:System.Data.DataRowState> 列挙定数に使用できる値の詳細を次の表に示します。
 
-|DataRowState 列挙定数の値|説明|
+|DataRowState 列挙定数の値|[説明]|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|行は項目として <xref:System.Data.DataRowCollection> に追加されました。 (この状態の行は、最後のメソッドが呼び出されたときに存在しなかったため、対応する元のバージョンがありません <xref:System.Data.DataRow.AcceptChanges%2A> )。|
 |<xref:System.Data.DataRowState.Deleted>|行は <xref:System.Data.DataRow.Delete%2A> オブジェクトの <xref:System.Data.DataRow> を使用して削除されました。|
@@ -139,7 +139,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 <xref:System.Data.DataRowVersion> 列挙定数に使用できる値の詳細を次の表に示します。
 
-|DataRowVersion 列挙定数の値|説明|
+|DataRowVersion 列挙定数の値|[説明]|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|レコードの現在のバージョンには、前回が呼び出されてからレコードに対して行われたすべての変更が含まれてい <xref:System.Data.DataRow.AcceptChanges%2A> ます。 行が削除されている場合、現在のバージョンは存在しません。|
 |<xref:System.Data.DataRowVersion.Default>|データセット スキーマまたはデータ ソースにより定義されたレコードの既定値です。|
@@ -162,7 +162,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 データ テーブルの  メソッド () またはデータセットの  メソッド () を使って、変更されたレコードのサブセットを作成できます。 データ テーブルのメソッドを呼び出すと、変更されたレコードだけを含むテーブルのコピーが返されます。 同様に、データセットのメソッドを呼び出すと、変更されたレコードだけを含む新しいデータセットを取得できます。
 
-`GetChanges`は、変更されたすべてのレコードを返します。 これに対し、目的のを <xref:System.Data.DataRowState> パラメーターとしてメソッドに渡すことで、 `GetChanges` 変更されたレコードのサブセットを指定できます。これには、新しく追加したレコード、削除対象としてマークされているレコード、デタッチされたレコード、または変更されたレコードが含まれます。
+`GetChanges` は、変更されたすべてのレコードを返します。 これに対し、目的のを <xref:System.Data.DataRowState> パラメーターとしてメソッドに渡すことで、 `GetChanges` 変更されたレコードのサブセットを指定できます。これには、新しく追加したレコード、削除対象としてマークされているレコード、デタッチされたレコード、または変更されたレコードが含まれます。
 
 変更されたレコードのサブセットを取得することは、処理のために別のコンポーネントにレコードを送信する場合に便利です。 データセット全体を送信する代わりに、コンポーネントが必要としているレコードだけを取得することにより、ほかのコンポーネントとの通信によるオーバーヘッドを小さくできます。
 
@@ -200,7 +200,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 メソッドが呼び出されたオブジェクトに基づいて、コミットされる変更を次の表に示します。
 
-|メソッド|結果|
+|Method|結果|
 |------------|------------|
 |<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|変更は特定の行にだけコミットされます。|
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|変更は特定のテーブルのすべての行にコミットされます。|
@@ -211,13 +211,13 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 関連するメソッドは、 <xref:System.Data.DataSet.RejectChanges%2A> <xref:System.Data.DataRowVersion.Original> バージョンをレコードのバージョンにコピーして、変更の影響を元に戻し <xref:System.Data.DataRowVersion.Current> ます。 また、 <xref:System.Data.DataRow.RowState%2A> 各レコードのをに設定し <xref:System.Data.DataRowState.Unchanged> ます。
 
-## <a name="data-validation"></a>データ検証
+## <a name="data-validation"></a>データの検証
 
 アプリケーションのデータが、渡される対象プロセスの要件を満たしているかどうかを検査するために、検証を追加することが必要な場合もあります。 これには、フォーム内のユーザーのエントリが正しいかどうかの確認、別のアプリケーションによってアプリケーションに送信されるデータの検証、コンポーネント内で計算された情報がデータソースとアプリケーションの要件の範囲内にあることの確認などが含まれます。
 
 データを検証するには次の方法があります。
 
-- ビジネス層で、データを検証するコードをアプリケーションに追加する。 データセットでこれを行うことができます。 データセットでは、列および行の値が変更されるたびに変更を検証する機能など、バック エンド検証を活用できます。 詳細については、「[データセット内のデータの検証](../data-tools/validate-data-in-datasets.md)」を参照してください。
+- ビジネス層で、データを検証するコードをアプリケーションに追加する。 データセットでこれを行うことができます。 データセットでは、列および行の値が変更されるたびに変更を検証する機能など、バック エンド検証を活用できます。 詳細については、「 [データセット内のデータの検証](../data-tools/validate-data-in-datasets.md)」を参照してください。
 
 - プレゼンテーション層で、検証をフォームに追加する。 詳細については、「 [Windows フォームでのユーザー入力の検証](/dotnet/framework/winforms/user-input-validation-in-windows-forms)」を参照してください。
 

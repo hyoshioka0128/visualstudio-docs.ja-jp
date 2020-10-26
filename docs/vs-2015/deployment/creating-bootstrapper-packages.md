@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845527"
 ---
 # <a name="creating-bootstrapper-packages"></a>ブートストラップ パッケージの作成
@@ -100,9 +100,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  ブートストラップによって自動的に設定されるプロパティを次の表に示します。  
   
-|property|説明|  
+|プロパティ|説明|  
 |--------------|-----------------|  
-|ApplicationName|アプリケーションの名前。|  
+|ApplicationName|アプリケーションの名前です。|  
 |ProcessorArchitecture|実行可能ファイルが対象とするプラットフォームのプロセッサと、ワードあたりのビット数。 次の値があります。<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98、または Windows ME の各オペレーティング システムのバージョン番号。 バージョンの構文は、Major.Minor.ServicePack です。|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008、または Windows 7 の各オペレーティング システムのバージョン番号。 バージョンの構文は、Major.Minor.ServicePack です。|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- 再頒布可能リストは XML ファイルです。このファイルには、 *Company Name*.*Component Name*.RedistList.xml という形式の名前を付けます。 たとえば、Acme 社製の Datawidgets というコンポーネントの場合は、Acme.DataWidgets.RedistList.xml にします。 再頒布可能リストの内容は、たとえば次のようになります。  
+ 再頒布可能リストは XML ファイルであり、 *会社名*の形式で名前を指定する必要があります。*コンポーネント名*.RedistList.xml。 たとえば、Acme 社製の Datawidgets というコンポーネントの場合は、Acme.DataWidgets.RedistList.xml にします。 再頒布可能リストの内容は、たとえば次のようになります。  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>参照  
- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [[必須コンポーネント] ダイアログ ボックス](../ide/reference/prerequisites-dialog-box.md)   
- [製品およびパッケージスキーマのリファレンス](../deployment/product-and-package-schema-reference.md)   
+ [方法: ClickOnce アプリケーションを使用して必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [[必須コンポーネント] ダイアログボックス](../ide/reference/prerequisites-dialog-box.md)   
+ [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)   
  [Visual Studio 2005 ブートストラップを使用してインストールを促進する](https://msdn.microsoft.com/magazine/cc163899.aspx)

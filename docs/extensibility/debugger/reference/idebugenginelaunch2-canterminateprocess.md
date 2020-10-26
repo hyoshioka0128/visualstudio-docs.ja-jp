@@ -1,5 +1,5 @@
 ---
-title: IDebugエンジンの起動2:::プロセスを終了する |マイクロソフトドキュメント
+title: 'IDebugEngineLaunch2:: CanTerminateProcess |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730563"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
-プロセスを終了できるかどうかを判断します。
+プロセスを終了できるかどうかを決定します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int CanTerminateProcess ( 
 
 ## <a name="parameters"></a>パラメーター
 `pProcess`\
-[in]終了するプロセスを表す[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)オブジェクト。
+から終了するプロセスを表す [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 アクセス`S_FALSE`が拒否されたために、エンジンがプロセスを終了できない場合に返します。
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 アクセスが拒否されたなどの理由で、 `S_FALSE` エンジンがプロセスを終了できない場合はを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドが戻`S_OK`る場合は[、TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)メソッドを呼び出して、プロセスを実際に終了できます。
+## <a name="remarks"></a>解説
+ このメソッドがを返す場合 `S_OK` 、 [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) メソッドを呼び出して、実際にプロセスを終了することができます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

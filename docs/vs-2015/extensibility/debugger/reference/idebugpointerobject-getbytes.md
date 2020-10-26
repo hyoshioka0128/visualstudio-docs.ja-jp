@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes |Microsoft Docs
+title: 'IDebugPointerObject:: GetBytes |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ef0c01d86259b6ec8c23f2874244b018a74febc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188591"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-一連の連続するバイトとして指す値を取得します。  
+連続する一連のバイトとしてポイントされている値を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,23 +46,23 @@ int GetBytes(
   
 #### <a name="parameters"></a>パラメーター  
  `dwStart`  
- [in]指すオブジェクトの先頭からのバイト単位のオフセット。  
+ からが指すオブジェクトの先頭からのオフセット (バイト単位)。  
   
  `dwCount`  
- [in]取得するバイト数。  
+ から取得するバイト数。  
   
  `pBytes`  
- [入力、出力]一連の連続するバイトの値が入力する配列が指すオブジェクトから指定されたオフセットから開始します。  
+ [入力、出力]値を連続した一連のバイトとして格納する配列。これは、指定されたオブジェクトからの指定されたオフセットから始まります。  
   
  `pdwBytes`  
- [out]実際に取得するバイト数を返します。  
+ 入出力実際に取得されたバイト数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 場合、このメソッドが使用されるこれによって表されるポインター [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)プリミティブ型またはプリミティブ型 (つまり、単純なバイト シーケンスで表すことができる配列) の単純な配列を指します。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、この [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) によって表されるポインターがプリミティブ型またはプリミティブ型の単純な配列 (つまり、単純なバイトシーケンスで表すことができる配列) を指している場合に使用されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
  [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

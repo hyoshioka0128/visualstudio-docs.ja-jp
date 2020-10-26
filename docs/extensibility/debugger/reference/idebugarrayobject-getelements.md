@@ -1,5 +1,5 @@
 ---
-title: を返すオブジェクト::取得要素 |マイクロソフトドキュメント
+title: 'IDebugArrayObject:: GetElements |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be06acbef93d8858557fea5bd7563168be2d28aa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736241"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
@@ -41,13 +41,13 @@ int GetElements(
 
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
-[アウト]すべての要素[を列挙](../../../extensibility/debugger/reference/ienumdebugobjects.md)できるオブジェクトを返します。
+入出力すべての要素を列挙できる [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OK返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 代わりに[、GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)メソッドと[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)メソッドを使用して、要素を反復処理します。
+## <a name="remarks"></a>解説
+ 別の方法として、 [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) メソッドと [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) メソッドを使用して、要素を反復処理します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

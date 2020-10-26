@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972336"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>メニューコマンドを使用して拡張機能を作成する
@@ -30,37 +30,37 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="create-a-menu-command"></a>メニューコマンドを作成する
 
-1. **Firstmenucommand**という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[**新しいプロジェクト**] ダイアログで見つけることができます。
+1. **Firstmenucommand**という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
 ::: moniker range="vs-2017"
 
-2. プロジェクトが開いたら、 **Firstcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*FirstCommand.cs*に変更します。
+2. プロジェクトが開いたら、 **Firstcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstCommand.cs*に変更します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. プロジェクトが開いたら、 **Firstcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [**コマンド**] を選択します。 ウィンドウの下部にある [**名前**] フィールドで、[コマンドファイル名] を*FirstCommand.cs*に変更します。
+2. プロジェクトが開いたら、 **Firstcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [**コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstCommand.cs*に変更します。
 
 ::: moniker-end
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
-    Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
+    Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、 [実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
 ::: moniker range="vs-2017"
 
-4. 実験用インスタンスで、[**ツール**  >  ] [**拡張機能と更新プログラム**] ウィンドウを開きます。 **Firstmenucommand**拡張機能がここに表示されます。 (Visual Studio の作業インスタンスで**拡張機能と更新プログラム**を開いた場合、 **firstmenucommand**は表示されません)。
+4. 実験用インスタンスで、[**ツール**  >  ] [**拡張機能と更新プログラム**] ウィンドウを開きます。 **Firstmenucommand**拡張機能がここに表示されます。 (Visual Studio の作業インスタンスで **拡張機能と更新プログラム** を開いた場合、 **firstmenucommand**は表示されません)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 実験用インスタンスで、[**拡張**  >  **機能の管理**] ウィンドウを開きます。 **Firstmenucommand**拡張機能がここに表示されます。 (Visual Studio の作業インスタンスで [**拡張機能の管理**] を開いた場合、 **firstmenucommand**は表示されません)。
+4. 実験用インスタンスで、[**拡張**  >  **機能の管理**] ウィンドウを開きます。 **Firstmenucommand**拡張機能がここに表示されます。 (Visual Studio の作業インスタンスで [ **拡張機能の管理** ] を開いた場合、 **firstmenucommand**は表示されません)。
 
 ::: moniker-end
 
-次に、実験用インスタンスの [**ツール**] メニューにアクセスします。 **呼び出し FirstCommand**コマンドが表示できます。 この時点で、コマンドを実行すると、 **Firstmenuin firstcommand. MenuItemCallback () の中に Firstcommand**というメッセージボックスが表示されます。 次のセクションでは、このコマンドからメモ帳を実際に起動する方法について説明します。
+次に、実験用インスタンスの [ **ツール** ] メニューにアクセスします。 **呼び出し FirstCommand**コマンドが表示できます。 この時点で、コマンドを実行すると、 **Firstmenuin firstcommand. MenuItemCallback () の中に Firstcommand**というメッセージボックスが表示されます。 次のセクションでは、このコマンドからメモ帳を実際に起動する方法について説明します。
 
 ## <a name="change-the-menu-command-handler"></a>メニューコマンドハンドラーの変更
 
@@ -121,15 +121,15 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="deploy-your-extension"></a>拡張機能をデプロイする
 
-ツール拡張機能を希望どおりに実行できるようになったので、友人や同僚との共有について考えてみましょう。 これは、Visual Studio 2015 がインストールされている限り、簡単です。 作成した *.vsix*ファイルを送信するだけで済みます。 (リリースモードでビルドするようにしてください)。
+ツール拡張機能を希望どおりに実行できるようになったので、友人や同僚との共有について考えてみましょう。 これは、Visual Studio 2015 がインストールされている限り、簡単です。 作成した *.vsix* ファイルを送信するだけで済みます。 (リリースモードでビルドするようにしてください)。
 
-この拡張機能の *.vsix*ファイルは、 *firstmenucommand* bin ディレクトリにあります。 具体的には、リリース構成をビルドしたことを前提として、次のようになります。
+この拡張機能の *.vsix* ファイルは、 *firstmenucommand* bin ディレクトリにあります。 具体的には、リリース構成をビルドしたことを前提として、次のようになります。
 
 *\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
-拡張機能をインストールするには、フレンドが開いている Visual Studio のインスタンスをすべて閉じ、.vsix ファイルをダブルクリックする必要があり*ます*。これにより、 **vsix インストーラー**が表示されます。 ファイルは *%LocalAppData%\Microsoft\VisualStudio \<version> \ Extensions*ディレクトリにコピーされます。
+拡張機能をインストールするには、フレンドが開いている Visual Studio のインスタンスをすべて閉じ、.vsix ファイルをダブルクリックする必要があり *ます* 。これにより、 **vsix インストーラー**が表示されます。 ファイルは *%LocalAppData%\Microsoft\VisualStudio \<version> \ Extensions* ディレクトリにコピーされます。
 
-友人が Visual Studio を再度起動すると、[**ツール**] [  >  **拡張機能と更新プログラム**] に firstmenucommand 拡張機能が表示されます。 拡張機能**と更新プログラム**にアクセスして、拡張機能をアンインストールまたは無効にすることができます。
+友人が Visual Studio を再度起動すると、[**ツール**] [  >  **拡張機能と更新プログラム**] に firstmenucommand 拡張機能が表示されます。 拡張機能 **と更新プログラム** にアクセスして、拡張機能をアンインストールまたは無効にすることができます。
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -137,17 +137,17 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. 単純なメニューコマンドを使用して、さらに多くのことを行うことができます。
 
-   1. 独自のアイコンを追加[する: メニューコマンドにアイコンを追加する](../extensibility/adding-icons-to-menu-commands.md)
+   1. 独自のアイコンを追加 [する: メニューコマンドにアイコンを追加する](../extensibility/adding-icons-to-menu-commands.md)
 
    2. メニューコマンドのテキストを変更する:[メニューコマンドのテキストを変更](../extensibility/changing-the-text-of-a-menu-command.md)する
 
-   3. コマンドにメニューショートカットを追加する:[キーボードショートカットをメニュー項目にバインドする](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)
+   3. コマンドにメニューショートカットを追加する: [キーボードショートカットをメニュー項目にバインドする](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)
 
 2. さまざまな種類のコマンド、メニュー、およびツールバーを追加する:[メニューとコマンドを拡張](../extensibility/extending-menus-and-commands.md)する
 
-3. ツールウィンドウの追加と組み込みの Visual Studio ツールウィンドウの拡張:[ツールウィンドウの拡張とカスタマイズ](../extensibility/extending-and-customizing-tool-windows.md)
+3. ツールウィンドウの追加と組み込みの Visual Studio ツールウィンドウの拡張: [ツールウィンドウの拡張とカスタマイズ](../extensibility/extending-and-customizing-tool-windows.md)
 
-4. IntelliSense、コード候補、およびその他の機能を既存のコードエディターに追加する:[エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)
+4. IntelliSense、コード候補、およびその他の機能を既存のコードエディターに追加する: [エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)
 
 5. 拡張機能にオプションおよびプロパティページとユーザー設定を追加する:[プロパティとプロパティウィンドウを拡張](../extensibility/extending-properties-and-the-property-window.md)し、[ユーザー設定とオプションを拡張](../extensibility/extending-user-settings-and-options.md)します。
 

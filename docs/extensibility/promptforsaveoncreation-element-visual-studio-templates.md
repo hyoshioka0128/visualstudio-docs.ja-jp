@@ -1,5 +1,6 @@
 ---
-title: 要素を保存する |マイクロソフトドキュメント
+title: PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +15,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: ffc610cf701bdf5be3a0b6116455ac413fbd6dcd
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80701779"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743137"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>要素を保存します。
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
 
-プロジェクトの作成時に[**新しいプロジェクト**]ダイアログ ボックスを使用して、プロジェクトの保存場所を求めるメッセージを表示するかどうかを指定します。 この要素が に`true`設定されている場合、保存場所を求めるメッセージが表示されます。 の`false`場合、プロンプトは表示されません (つまり、一時的なプロジェクトが作成されます)。
+プロジェクトの作成時に [ **新しいプロジェクト** ] ダイアログボックスを使用して、プロジェクトの保存場所の入力をユーザーに要求するかどうかを指定します。 この要素がに設定されている場合 `true` 、ユーザーは保存場所の入力を求められます。 `false`の場合、プロンプトは表示されません (つまり、一時プロジェクトが作成されます)。
 
 ```xml
 \<VSTemplate>
@@ -41,10 +42,10 @@ ms.locfileid: "80701779"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -57,7 +58,7 @@ ms.locfileid: "80701779"
 
  テキストは `true` または `false` である必要があります。`true` は、新しいプロジェクトの作成時にユーザーに保存場所の入力を求めることを示します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  `PromptForSaveOnCreation` は省略可能な要素です。 既定値は `false` です。
 
  一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。
@@ -92,5 +93,5 @@ ms.locfileid: "80701779"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

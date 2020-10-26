@@ -1,5 +1,5 @@
 ---
-title: プロジェクト システムへの Web サービスの追加 |Microsoft Docs
+title: プロジェクトシステムへの Web サービスの追加 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,24 +11,24 @@ ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: f5b192be8e5f68ad9314fe08fff963c032013cb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63002658"
 ---
 # <a name="adding-web-services-to-project-systems"></a>プロジェクト システムへの Web サービスの追加
-XML Web サービスは一般に、SOAP (Simple Object Access Protocol) プロトコルを使用して、プロジェクト システムにプログラム情報を返す URL を指定できるリソース。 使用して、VSPackage プロジェクト システムに Web サービスを統合することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2>インターフェイス。  
+XML Web サービスは、一般に、SOAP (Simple Object Access Protocol) プロトコルを使用してプログラム情報をプロジェクトシステムに返す、URL でアドレス指定可能なリソースです。 インターフェイスを使用して、Web サービスを VSPackage プロジェクトシステムに統合でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> ます。  
   
-### <a name="to-add-a-web-service-to-your-project-system"></a>プロジェクト システムに Web サービスを追加するには  
+### <a name="to-add-a-web-service-to-your-project-system"></a>プロジェクトシステムに Web サービスを追加するには  
   
-1. 呼び出す`QueryService`の<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2>インターフェイスを通じて<xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg>サービス。  
+1. `QueryService`サービスを <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> 使用してインターフェイスを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> ます。  
   
-2.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> メソッドを呼び出します。 渡す場合`pDiscoverySession`パラメーターとして`NULL`、探索セッションの作成、および以降を利用できるように、セッションがキャッシュされる、<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2>インターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> メソッドへのポインターを返します<xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2>します。  
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> メソッドを呼び出します。 `pDiscoverySession`パラメーターをとして渡すと `NULL` 、検出セッションが作成され、そのセッションがキャッシュされて、インターフェイスでの後続の使用に使用できるようになり <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2> ます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2.AddWebReferenceDlg%2A> メソッドは、へのポインターを返し <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult2> ます。  
   
-3.  <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> メソッドを呼び出します。 オートメーション オブジェクトと Web サービス参照フォルダーを渡す、`pUnkWebReferenceFolder`パラメーター。 Visual Studio 環境では、かどうか、Web サービスは既に存在し、確認します。 Web サービスが存在しない場合は、環境がダウンロードされ、フォルダーとフォルダーの子ノードに追加ファイル (.wsdl ファイルなど) に、Web サービスを追加します。  
+3. <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult.AddWebReference%2A> メソッドを呼び出します。 Web サービス参照フォルダーのオートメーションオブジェクトをパラメーターとして渡し `pUnkWebReferenceFolder` ます。 その後、Visual Studio 環境によって、Web サービスが既に存在するかどうかが確認されます。 Web サービスが存在しない場合は、環境によって Web サービスがダウンロードされ、フォルダーおよび追加ファイル (.wsdl ファイルなど) にフォルダーの子ノードに追加されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoveryResult>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IDiscoverySession>   

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : Web テンプレートを手動で作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651800"
 ---
 # <a name="how-to-manually-create-web-templates"></a>方法 : Web テンプレートを手動で作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web テンプレートの作成方法は、他の種類のテンプレートを作成する場合と異なります。 Web プロジェクト テンプレートは **[新しい Web サイトの追加]** ダイアログ ボックスに表示され、Web プロジェクトの項目はプログラミング言語によって分類されるので、.vstemplate ファイルではテンプレートを Web テンプレートとして指定し、プログラミング言語を示す必要があります。
+Web テンプレートの作成方法は、他の種類のテンプレートを作成する場合と異なります。 Web プロジェクトテンプレートは [ **新しい Web サイトの追加** ] ダイアログボックスに表示され、web プロジェクトの項目はプログラミング言語によって分類されるため、.vstemplate ファイルではテンプレートを web テンプレートとして指定し、プログラミング言語を識別する必要があります。
 
 > [!NOTE]
 > Web テンプレートには、`Project` 要素の `File` 属性を使って指定される空の .webproj ファイルが含まれる必要があります。 Web プロジェクトではプロジェクト ファイルは必要ありませんが、Web テンプレートが正しく機能するためにはこのファイルが必要です。
@@ -47,7 +47,7 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
 
    - VisualBasic
 
-     (例:
+     次に例を示します。
 
    ```
    <TemplateData>
@@ -58,7 +58,7 @@ Web テンプレートの作成方法は、他の種類のテンプレートを�
    </TemplateData>
    ```
 
-7. テンプレート内のファイル (.vstemplate ファイルを含む) を選んで右クリックし、 **[送信]** をクリックして、 **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルは .zip ファイルに圧縮されます。
+7. テンプレート内のファイル (.vstemplate ファイルを含む) を選んで右クリックし、**[送信]** をクリックして、**[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルは .zip ファイルに圧縮されます。
 
 8. .zip テンプレート ファイルを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト テンプレートのディレクトリに配置します。 既定では、このディレクトリは \My Documents\Visual Studio <*バージョン*>\My Exported Templates\\ です。
 

@@ -11,36 +11,36 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 96241026afff71c061abcfae3547d25cc2166902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152876"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-拡張、 **IDebugTypeFieldBuilder**配列型を作成できるようにします。  
+**IDebugTypeFieldBuilder**を拡張して、配列型を作成できるようにします。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- このインターフェイスは、シンボル プロバイダーから取得できます。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ このインターフェイスは、シンボルプロバイダーから取得できます。  
   
 ## <a name="methods"></a>メソッド  
- メソッドだけでなく、 [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)インターフェイスでは、このインターフェイスは、次のメソッドを実装します。  
+ このインターフェイスは、 [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|指定された種類とサイズの配列を作成します。|  
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|指定した型とサイズの配列を作成します。|  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

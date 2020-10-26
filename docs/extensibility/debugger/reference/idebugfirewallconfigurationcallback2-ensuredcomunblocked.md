@@ -1,5 +1,7 @@
 ---
-title: IDebugファイアウォール構成コールバック2:::ブロック解除を保証する |マイクロソフトドキュメント
+title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,15 +16,16 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d3d5e30cee8f142d0278f0a9fbcb9aaf2ba39b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 259a6b8142e66e4abb5bf838a62671c449acad10
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80728699"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036640"
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
-ファイアウォールがリモート デバッグをブロックしないように要求します。
+
+ファイアウォールがリモートデバッグをブロックしないように要求します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,7 +40,9 @@ public int EnsureDCOMUnblocked();
 ```
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
 
-## <a name="see-also"></a>関連項目
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
+
+## <a name="see-also"></a>参照
+
 - [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)

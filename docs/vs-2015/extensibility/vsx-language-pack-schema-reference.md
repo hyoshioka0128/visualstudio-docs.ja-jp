@@ -1,5 +1,5 @@
 ---
-title: VSX 言語パックのスキーマ リファレンス |Microsoft Docs
+title: VSX Language Pack スキーマリファレンス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,27 +14,27 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 56461b928741f299e9005e11292efb3669297b57
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690618"
 ---
 # <a name="vsx-language-pack-schema-reference"></a>VSX 言語パックのスキーマ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSX 言語パックのスキーマは、VSIX パッケージのローカライズされたインストール情報を提供します。  
+VSX Language Pack スキーマには、VSIX パッケージのローカライズされたインストール情報が含まれています。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
 |Title|説明|  
 |-----------|-----------------|  
-|[VSIXLanguagePack 要素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Language pack 用の VSIX マニフェストのルート要素を定義します。<br /><br /> `Content`と`Identifier`要素は、この要素の子。|  
+|[VSIXLanguagePack 要素](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|言語パックの VSIX マニフェストのルート要素を定義します。<br /><br /> 要素 `Content` と `Identifier` 要素は、この要素の子です。|  
   
 ## <a name="related-sections"></a>関連項目  
   
-|タイトル|説明|  
+|Title|説明|  
 |-----------|-----------------|  
-|[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|VSIX パッケージのローカライズされたインストールのサポートを提供する方法を示しています。|  
-|[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|VSIX マニフェストは、これにより、Visual Studio 拡張機能のインストールを使用して .vsix 展開ファイルの内容を記述、**拡張機能と更新** ダイアログ ボックス。|  
-|[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)|使用する方法を示しています、**拡張機能と更新**をインストール、削除、アクティブ化、および拡張機能を非アクティブ化 ダイアログ ボックス。|
+|[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|VSIX パッケージのローカライズされたインストールをサポートする方法を示します。|  
+|[VSIX 拡張機能スキーマ1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|VSIX マニフェストは、.vsix 配置ファイルの内容を記述します。これにより、[ **拡張機能と更新プログラム** ] ダイアログボックスを使用して、Visual Studio 拡張機能をインストールできます。|  
+|[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)|[ **拡張機能と更新プログラム** ] ダイアログボックスを使用して、拡張機能のインストール、削除、アクティブ化、および非アクティブ化を行う方法について説明します。|

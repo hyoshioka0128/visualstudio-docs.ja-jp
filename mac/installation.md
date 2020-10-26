@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 4e38084d4dc1e5095581846d0810ad44b742bcdf
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938964"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426903"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
@@ -24,7 +24,7 @@ macOS でネイティブのクロスプラット フォーム対応の .NET ア�
 
 ## <a name="requirements"></a>必要条件
 
-- macOS High Sierra 10.12 以降が搭載された Mac。
+- macOS High Sierra 10.13 以降が搭載された Mac。
 
 iOS または macOS 向けに Xamarin アプリをビルドするには、以下も必要になります。
 
@@ -53,18 +53,16 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
    すべてのプラットフォームをインストールすることを希望されない場合には、以下のガイドを使用してインストールするプラットフォームを決めることがきます。
 
-
-|アプリの種類  |Target  |選択ツール  |メモ  |
-|---------|---------|---------|---------|
-|**Xamarin を使用するアプリ**| Xamarin.Forms|**Android** と **iOS** プラットフォームを選択します |次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります |
-||iOS のみ|**iOS** プラットフォームを選択します|次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります|
-||Android のみ|**Android** プラットフォームを選択します|関連する依存関係も選択する必要があります|
-||Mac のみ|**macOS (Cocoa)** プラットフォームを選択します|次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります|
-|**.NET Core アプリケーション**|         |**.NET Core** プラットフォームを選択します。|         |
-|**ASP.NET Core Web アプリケーション**|         |**.NET Core** プラットフォームを選択します。|         |
-|**Azure Functions**|         |**.NET Core** プラットフォームを選択します。|         |
-|**クロスプラットフォーム Unity ゲームの開発**|         |Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。| Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](/visualstudio/mac/setup-vsmac-tools-unity)に関するページをご覧ください。|
-
+   |アプリの種類  |Target  |選択ツール  |メモ  |
+   |---------|---------|---------|---------|
+   |**Xamarin を使用するアプリ**| Xamarin.Forms|**Android** と **iOS** プラットフォームを選択します |次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります |
+   ||iOS のみ|**iOS** プラットフォームを選択します|次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります|
+   ||Android のみ|**Android** プラットフォームを選択します|関連する依存関係も選択する必要があります|
+   ||Mac のみ|**macOS (Cocoa)** プラットフォームを選択します|次に、[**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります|
+   |**.NET Core アプリケーション**|         |**.NET Core** プラットフォームを選択します。|         |
+   |**ASP.NET Core Web アプリケーション**|         |**.NET Core** プラットフォームを選択します。|         |
+   |**Azure Functions**|         |**.NET Core** プラットフォームを選択します。|         |
+   |**クロスプラットフォーム Unity ゲームの開発**|         |Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。| Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](/visualstudio/mac/setup-vsmac-tools-unity)に関するページをご覧ください。|
 
 7. 選択を行ったら、 **[インストール]** ボタンを押します。
 8. インストーラーではダウンロードの進行状況が表示され、Visual Studio for Mac と選択したワークロードがインストールされます。 インストールに必要な権限を付与するため、パスワードの入力が求められます。

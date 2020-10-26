@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5685ad7a760e00392b5f9684cdf399ee320d4a0c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540258"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412:ComSource インターフェイスを IDispatch として設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
@@ -36,7 +36,7 @@ ms.locfileid: "85540258"
  型が属性でマークされ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> ており、少なくとも1つの指定されたインターフェイスが、 <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> 値に設定された属性でマークされていません `InterfaceIsDispatch` 。
 
 ## <a name="rule-description"></a>ルールの説明
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>は、クラスがコンポーネントオブジェクトモデル (COM) クライアントに公開するイベントインターフェイスを識別するために使用されます。 `InterfaceIsIDispatch`Visual Basic 6 の COM クライアントがイベント通知を受信できるようにするには、これらのインターフェイスをとして公開する必要があります。 既定では、インターフェイスが属性でマークされていない場合 <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> は、デュアルインターフェイスとして公開されます。
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> は、クラスがコンポーネントオブジェクトモデル (COM) クライアントに公開するイベントインターフェイスを識別するために使用されます。 `InterfaceIsIDispatch`Visual Basic 6 の COM クライアントがイベント通知を受信できるようにするには、これらのインターフェイスをとして公開する必要があります。 既定では、インターフェイスが属性でマークされていない場合 <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> は、デュアルインターフェイスとして公開されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、属性を使用して指定されている <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> すべてのインターフェイスの値が cominterfacetype.interfaceisidispatch に設定されるように、属性を追加または変更し <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> ます。
@@ -53,5 +53,5 @@ ms.locfileid: "85540258"
 ## <a name="related-rules"></a>関連規則
  [CA1408:AutoDual ClassInterfaceType を使用しないでください](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [方法: COM シンクによって処理](https://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd)されるイベントを[アンマネージコードと相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)する

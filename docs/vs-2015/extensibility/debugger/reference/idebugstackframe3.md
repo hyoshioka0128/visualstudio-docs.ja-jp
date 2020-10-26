@@ -13,57 +13,57 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d63d4dcd6e3b7a3b81504b485ee710779cef3c13
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688534"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは拡張[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)傍受した例外を処理します。  
+このインターフェイスは、インターセプトされた例外を処理するために [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) を拡張します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugStackFrame3 : IDebugStackFrame2  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジン (DE) を実装する同一のオブジェクトにこのインターフェイスを実装する、 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)傍受した例外をサポートするインターフェイス。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグエンジン (DE) は、インターセプトされた例外をサポートするために、 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) インターフェイスを実装する同じオブジェクトにこのインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上、`IDebugStackFrame2`をこのインターフェイスを取得するインターフェイス。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ インターフェイスの [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) を呼び出して、 `IDebugStackFrame2` このインターフェイスを取得します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 継承されたメソッドだけでなく[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)、`IDebugStackFrame3`次のメソッドを公開します。  
+ [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)から継承されたメソッドに加えて、は `IDebugStackFrame3` 次のメソッドを公開します。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|任意の通常の例外処理の前に、現在のスタック フレームの例外を処理します。|  
-|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|スタック アンワインドが発生した場合は、コードのコンテキストを返します。|  
+|[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|通常の例外処理の前に、現在のスタックフレームの例外を処理します。|  
+|[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|スタックアンワインドが発生した場合は、コードコンテキストを返します。|  
   
-## <a name="remarks"></a>Remarks  
- 傍受した例外は、通常の例外処理ルーチンは、ランタイムによって呼び出される前に、デバッガーが例外を処理できることを意味します。 基本的に、例外をインターセプトは、例外ハンドラーがない場合にも存在が見かけ上の実行時のようになります。  
+## <a name="remarks"></a>注釈  
+ インターセプトされた例外は、通常の例外処理ルーチンが実行時に呼び出される前に、デバッガーが例外を処理できることを意味します。 基本的に、例外をインターセプトすることは、実行時に、存在しない場合でも例外ハンドラーが存在するということを意味します。  
   
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)すべて通常の例外コールバック イベント中に呼び出されます (唯一の例外は、デバッグするかどうか (マネージし、アンマネージ コード)、混在モードのコード中に例外をインターセプトできない場合、最終のコールバックの場合)。 デが実装していない場合`IDebugStackFrame3`、または、DE IDebugStackFrame3 からエラーが返されます::`InterceptCurrentException` (など`E_NOTIMPL`)、デバッガーが通常、例外を処理し、します。  
+ [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) は、通常のすべての例外コールバックイベントの発生時に呼び出されます (唯一の例外は、混合モードコード (マネージコードとアンマネージコード) をデバッグする場合です。この場合、最後のコールバック時に例外を受け取ることはできません)。 DE がを実装していない場合、 `IDebugStackFrame3` または de が IDebugStackFrame3:: (など) からエラーを返した場合 `InterceptCurrentException` `E_NOTIMPL` 、デバッガーは通常どおり例外を処理します。  
   
- 例外をインターセプトすることで、デバッガーはデバッグ中のプログラムの状態に変更を加えるし、例外がスローされた時点での実行を再開するユーザーを許可できます。  
+ デバッガーでは、例外を受け取ることにより、デバッグ中のプログラムの状態を変更して、例外がスローされた時点で実行を再開できるようにすることができます。  
   
 > [!NOTE]
-> インターセプトの例外は、共通言語ランタイム (CLR) 下で実行しているプログラムでは、マネージ コードでのみ許可されます。  
+> インターセプトされた例外は、マネージコード、つまり共通言語ランタイム (CLR) で実行されているプログラムでのみ使用できます。  
   
- デバッグ エンジンを示します"metricExceptions"を設定して例外をインターセプトをサポートしている値の 1 に実行時に使用して、`SetMetric`関数。 詳細については、次を参照してください。[デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)します。  
+ デバッグエンジンは、関数を使用して、実行時に "metricExceptions" を1の値に設定することによって、例外のインターセプトをサポートしていることを示してい `SetMetric` ます。 詳細については、「 [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)」を参照してください。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

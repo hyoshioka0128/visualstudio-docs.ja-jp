@@ -15,24 +15,24 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af234cd130d06c2a76c5ddbc958a67eb064d9128
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547577"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode の負荷が高くなっています
+# <a name="da0010-expensive-gethashcode"></a>DA0010:GetHashCode の負荷が高くなっています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新のドキュメントについては、「 [DA0010: 高額 GetHashCode](/visualstudio/profiling/da0010-expensive-gethashcode)」を参照してください。  
 
-|Item|値|  
+|Item|[値]|  
 |-|-|  
 |規則 ID|DA0010|  
 |カテゴリ|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> .NET メモリ|  
-|Message|GetHashCode 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、ハッシュ コード関数の複雑さを軽減してください。|  
-|メッセージ型|警告|  
+|メッセージ|GetHashCode 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、ハッシュ コード関数の複雑さを軽減してください。|  
+|メッセージの種類|警告|  
   
 ## <a name="cause"></a>原因  
  型の GetHashCode メソッドの呼び出しがプロファイリング データの大きな割合を占めているか、またはそのメソッドがメモリを割り当てています。  

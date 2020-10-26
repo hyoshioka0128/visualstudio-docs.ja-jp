@@ -1,5 +1,5 @@
 ---
-title: IデバッグプロセスEx2::アプリシプリシブルプログラムノードを追加する |マイクロソフトドキュメント
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723399"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-このメソッドは、指定された各デバッグ エンジン (DE) のプログラム ノードを追加します。
+このメソッドは、指定された各デバッグエンジン (DE) のプログラムノードを追加します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>パラメーター
 `guidLaunchingEngine`\
-[in]プログラム`GUID`の起動に使用される DE の (および独自のプログラム ノードを追加すると想定される) の。
+からプログラムを起動するために使用される `GUID` (および、独自のプログラムノードを追加すると想定される) の。
 
 `rgguidSpecificEngines`\
-[in]プログラム`GUID`ノードが追加される D の配列。
+から `GUID`プログラムノードが追加される DEs のの配列。
 
 `celtSpecificEngines`\
-[in]配列内の`GUID`s`rgguidSpecificEngines`の数。
+から配列内のの数 `GUID` `rgguidSpecificEngines` 。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-- [プログラムノード](../../../extensibility/debugger/program-nodes.md)は、プログラムの起動時に独自の`rgguidSpecificEngines`プログラムノードを追加すると想定される起動エンジンを`guidLaunchingEngine`除いて、(に示されている)に示された各DEに追加されます。
+## <a name="remarks"></a>解説
+- に示されている各 DE に対して[プログラムノード](../../../extensibility/debugger/program-nodes.md)が追加されます。これは、 `rgguidSpecificEngines` `guidLaunchingEngine` プログラムを起動したときに、独自のプログラムノードを追加することを前提としています (で指定されているように)。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

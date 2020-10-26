@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: IDebugWindowsComputerPort2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ef4162469651e4b69502d3a9639d1e86c62e0b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718229"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-ターゲット コンピューターに関する情報を照会できます。
+対象のコンピュータに関する情報のクエリを実行できるようにします。
 
 ## <a name="syntax"></a>構文
 
@@ -26,19 +26,19 @@ ms.locfileid: "80718229"
 IDebugWindowsComputerPort2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- このインターフェイスは、セッション デバッグ マネージャーのポート オブジェクトによって実装されます。
+## <a name="notes-for-implementers"></a>実装側の注意
+ このインターフェイスは、セッションデバッグマネージャーのポートオブジェクトによって実装されます。
 
 ## <a name="methods"></a>メソッド
- 次の表に`IDebugWindowsComputerPort2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugWindowsComputerPort2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[コンピュータ情報を取得します。](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|デバッガーが実行されているコンピューターに関する情報を取得します。|
+|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|デバッガーが実行されているコンピューターに関する情報を取得します。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: Msdbg.h
+ ヘッダー: Msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

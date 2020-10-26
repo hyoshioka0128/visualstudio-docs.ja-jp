@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198359"
 ---
 # <a name="span-class"></a>span クラス
@@ -35,7 +35,7 @@ class span;
   
 ### <a name="public-constructors"></a>パブリック コンストラクター  
   
-|name|説明|  
+|名前|説明|  
 |----------|-----------------|  
 |[span::span コンストラクター](../profiling/span-span-constructor.md)|`span` クラスの新しいインスタンスを初期化します。|  
 |[span::~span デストラクター](../profiling/span-tilde-span-destructor.md)|`span` オブジェクトを破棄し、そのリソースを解放します。|  
@@ -48,5 +48,5 @@ class span;
   
  **名前空間:** Concurrency::diagnostic  
   
-## <a name="see-also"></a>関連項目  
- [diagnostic 名前空間](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>参照  
+ [診断名前空間](../profiling/diagnostic-namespace.md)

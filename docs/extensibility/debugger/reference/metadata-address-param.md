@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM |マイクロソフトドキュメント
+title: METADATA_ADDRESS_PARAM |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a0319cfc6f2be817a25126e67cdc470bc727a4ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714438"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
@@ -45,7 +45,7 @@ public struct METADATA_ADDRESS_PARAM {
 
 ## <a name="members"></a>メンバー
  `tokMethod`\
- パラメーターが含まれるメソッドの ID。
+ パラメーターが含まれているメソッドの ID。
 
  `tokParam`\
  パラメーターの ID。
@@ -53,15 +53,15 @@ public struct METADATA_ADDRESS_PARAM {
  `dwIndex`\
  パラメーターのリスト内のパラメーターのインデックス。
 
-## <a name="remarks"></a>Remarks
- 構造体`dwKind`のフィールドが[(ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体の値) に`ADDRESS_KIND_PARAM`設定されている`DEBUG_ADDRESS_UNION`場合、この構造体は[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の共用体の一部です。
+## <a name="remarks"></a>注釈
+ この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_PARAM` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: sh.h
+ ヘッダー: sh. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)

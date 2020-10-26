@@ -16,10 +16,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9dc5ad44a73f517b91562209abfab8b0b3e8d4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660535"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>方法: データ ドリブン単体テストを作成する
@@ -27,11 +27,11 @@ ms.locfileid: "72660535"
 
 マネージド コード用の Microsoft の単体テスト フレームワークを使用して、データ ソースからテスト メソッドで使用される値を取得するための単体テスト メソッドを設定できます。 メソッドはデータ ソース内の各行に対して連続して実行されるため、単一のメソッドを使用してさまざまな入力を簡単にテストできます。
 
- このトピックは、次のセクションで構成されています。
+ このトピックには、次のセクションが含まれます。
 
 - [テスト対象のメソッド](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)
 
-- [データ ソースの作成](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)
+- [データソースの作成](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)
 
 - [テスト クラスへの TestContext の追加](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)
 
@@ -53,7 +53,7 @@ ms.locfileid: "72660535"
 
 4. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> インデクサー プロパティを使用して、テストで使用する値を取得します。
 
-## <a name="BKMK_The_method_under_test"></a>テスト対象のメソッド
+## <a name="the-method-under-test"></a><a name="BKMK_The_method_under_test"></a>テスト対象のメソッド
  たとえば、次を作成したとします。
 
 1. さまざまな種類の勘定のトランザクションを受け入れて処理する `MyBank` というソリューション。
@@ -80,16 +80,16 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="BKMK_Creating_a_data_source"></a> データ ソースの作成
+## <a name="creating-a-data-source"></a><a name="BKMK_Creating_a_data_source"></a> データソースの作成
  `AddIntegers` メソッドをテストするには、パラメーターの値の範囲と返される必要のある合計を指定するデータ ソースを作成します。 この例では、`MathsData` という名前の Sql Compact データベースと、次の列の名前と値を含む `AddIntegersData` という名前のテーブルを作成します
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-----------------|------------------|---------|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|
 
-## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> テスト クラスへの TestContext の追加
+## <a name="adding-a-testcontext-to-the-test-class"></a><a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> テストクラスへの TestContext の追加
  単体テスト フレームワークは、データ ドリブン テストのデータ ソース情報を格納する `TestContext` オブジェクトを作成します。 次に、フレームワークは作成する `TestContext` プロパティの値としてこのオブジェクトを設定します。
 
 ```
@@ -105,7 +105,7 @@ public TestContext TestContext
 
  テスト メソッドでは、`TestContext` の `DataRow` インデクサー プロパティを使用してデータにアクセスします。
 
-## <a name="BKMK_Writing_the_test_method"></a> テスト メソッドの記述
+## <a name="writing-the-test-method"></a><a name="BKMK_Writing_the_test_method"></a> テストメソッドの記述
  `AddIntegers` のテスト メソッドは非常に単純です。 データ ソース内の各行に対して、パラメーターとして **FirstNumber** 列値と **SecondNumber** 列値を持つ `AddIntegers` を呼び出して、**Sum** 列値に対して戻り値を確認します。
 
 ```
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
 
  `Assert` メソッドには、失敗したイテレーションの `x` と `y` の値を表示するメッセージが含まれることに注意してください。 既定では、アサートされた値である `expected` と `actual` が失敗したテストの詳細に既に含まれています。
 
-### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> DataSourceAttribute の指定
+### <a name="specifying-the-datasourceattribute"></a><a name="BKMK_Specifying_the_DataSourceAttribute"></a> DataSourceAttribute の指定
  `DataSource` 属性は、データ ソースの接続文字列とテスト メソッドで使用するテーブル名を指定します。 接続文字列の正確な情報は、使用しているデータ ソースの種類によって異なります。 この例では、SqlServerCe データベースを使用しました。
 
 ```
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]
 ```
 
-### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> データにアクセスするための TestContext.DataRow の使用
+### <a name="using-testcontextdatarow-to-access-the-data"></a><a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> TestContext を使用したデータへのアクセス
  `AddIntegersData` テーブル内のデータにアクセスするには、`TestContext.DataRow` インデクサーを使用します。 `DataRow` は、<xref:System.Data.DataRow> オブジェクトであるため、インデックスまたは列の名前で列の値を取得します。 値はオブジェクトとして返されるため、適切な型に変換する必要があります。
 
 ```
@@ -173,8 +173,8 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ```
 
-## <a name="BKMK_Running_the_test_and_viewing_results"></a>テストの実行と結果の表示
- テスト メソッドの記述が完了したら、テスト プロジェクトを構築します。 **[テストを実行しない]** グループのテスト エクスプローラー ウィンドウに、テスト メソッドが表示されます。 テストを実行して、記述し、再実行すると、テスト エクスプローラーに **[失敗したテスト]** 、 **[成功したテスト]** 、および **[テストを実行しない]** のグループの結果が表示されます。 **[すべて実行]** を選択してテストをすべて実行することも、 **[実行...]** を選択して実行するテストのサブセットを選択することもできます。
+## <a name="running-the-test-and-viewing-results"></a><a name="BKMK_Running_the_test_and_viewing_results"></a> テストの実行と結果の表示
+ テスト メソッドの記述が完了したら、テスト プロジェクトを構築します。 **[テストを実行しない]** グループのテスト エクスプローラー ウィンドウに、テスト メソッドが表示されます。 テストを実行して、記述し、再実行すると、テスト エクスプローラーに **[失敗したテスト]**、**[成功したテスト]**、および **[テストを実行しない]** のグループの結果が表示されます。 [ **すべて実行** ] を選択してすべてのテストを実行するか、[ **実行.** ..] を選択して実行するテストのサブセットを選択できます。
 
  テストの実行中は、エクスプローラーの上部にあるテスト結果バーがアニメーションで表示されます。 テストの実行の終了時に、すべてのテストが成功した場合はバーが緑色になり、いずれかのテストが失敗した場合は赤色になります。 テスト エクスプローラー ウィンドウの下部の詳細ウィンドウに、テストの実行の概要が表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。
 

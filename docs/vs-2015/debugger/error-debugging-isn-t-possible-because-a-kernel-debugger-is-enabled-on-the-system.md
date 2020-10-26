@@ -1,5 +1,5 @@
 ---
-title: エラー :デバッグではありません&#39;Possible Because カーネル デバッガーがシステムで有効になっている t |Microsoft Docs
+title: エラー :システム上でカーネル デバッガーが有効になっているため、デバッグできません | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197072"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>エラー :デバッグではありません&#39;t Possible Because カーネル デバッガーがシステムで有効になっています。
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>エラー :システム上でカーネル デバッガーが有効になっているため、デバッグできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 マネージド コードのデバッグ時に、次のエラー メッセージが表示されることがあります。  
@@ -63,7 +63,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>現在のセッションでカーネル デバッグを無効にするには  
   
-- コマンド プロンプトで、次のように入力します。  
+- コマンド プロンプトで、次のコマンドを入力します。  
   
     ```  
     Kdbgctrl.exe -d  
@@ -71,7 +71,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>すべてのセッションでカーネル デバッグを無効にするには (Windows Vista および Windows 7)  
   
-1. コマンド プロンプトで、次のように入力します。  
+1. コマンド プロンプトで、次のコマンドを入力します。  
   
     ```  
     bcdedit /debug off   
@@ -105,6 +105,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
      `gn`  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)

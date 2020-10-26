@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ec01ebc32472e315fe2c905ecfd2cfef0f4bbe1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541012"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
@@ -31,7 +31,7 @@ HRESULT Unload();
 ## <a name="return-value"></a>戻り値
  メソッドが正常に完了したかどうかを示す HRESULT 値。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  このメソッドは、Microsoft Office の現在のバージョンでは呼び出されません。 このメソッドは将来使用するために予約されています。
 
 ## <a name="see-also"></a>関連項目

@@ -1,5 +1,7 @@
 ---
-title: サポートされていないデータベース プロバイダーのデータベース オブジェクトが選択されています
+title: サポートされていないプロバイダーからのオブジェクト
+description: サポートされていないデータベース プロバイダーのデータベース オブジェクトが選択されています
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5721cf340a09c138521e7134a0d19484561eb3a0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 84841c5e0759618430f9c2e4f0146cbc2d21fae9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280981"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036718"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>サポートされていないデータベース プロバイダーのデータベース オブジェクトが選択されています
 
@@ -26,8 +28,8 @@ ms.locfileid: "85280981"
 
 - **[OK]** をクリックして、サポートされないデータベース プロバイダーを使用する接続にマップされるエンティティ クラスのデザインを続行します。 サポートされないデータベース プロバイダーを使用すると、予期しない動作が発生することがあります。
 
-- [**キャンセル**] をクリックして、操作を停止します。 SQL Server に .NET Framework Provider を使用する別のデータ接続を作成または使用します。
+- [ **キャンセル** ] をクリックして、操作を停止します。 SQL Server に .NET Framework Provider を使用する別のデータ接続を作成または使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

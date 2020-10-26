@@ -1,5 +1,5 @@
 ---
-title: メソッドを待つ |マイクロソフトドキュメント
+title: SetNotificationForWaitCompletion メソッド |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712871"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion メソッド
-TASK_STATE_WAIT_COMPLETION_NOTIFICATION状態ビットを設定またはクリアします。
+TASK_STATE_WAIT_COMPLETION_NOTIFICATION 状態ビットを設定またはクリアします。
 
- **名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **アセンブリ:** mscorlib *(mscorlib.dll*内)
+ **アセンブリ:** mscorlib ( *mscorlib.dll*)
 
 ## <a name="syntax"></a>構文
 
@@ -33,12 +33,12 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>パラメーター
  `enabled`
 
- `true`ビットを設定します。`false`をクリックしてビットを設定解除します。
+ `true` ビットを設定するには `false` ビットを設定解除します。
 
 ## <a name="exceptions"></a>例外
 
-## <a name="remarks"></a>Remarks
- デバッガーは、非同期メソッド本体からステップ アウトするのに役立つこのビットを設定します。 の`enabled`場合`true`、このメソッドは、まだ完了していないタスクでのみ呼び出す必要があります。 の`enabled`場合`false`、このメソッドは完了したタスクで呼び出すことができます。 どちらの場合も、promise スタイルのタスクにのみ使用する必要があります。
+## <a name="remarks"></a>注釈
+ デバッガーは、非同期のメソッド本体からステップアウトするために、このビットを設定します。 がの場合 `enabled` `true` 、このメソッドは、まだ完了していないタスクでのみ呼び出す必要があります。 がの場合 `enabled` は `false` 、完了したタスクに対してこのメソッドを呼び出すことができます。 どちらのイベントでも、promise スタイルのタスクにのみ使用してください。
 
 ## <a name="requirements"></a>必要条件
 

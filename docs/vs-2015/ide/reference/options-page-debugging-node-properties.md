@@ -1,4 +1,4 @@
-﻿---
+---
 title: '[デバッグ] ノード プロパティ ([オプション] ページ) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668843"
 ---
 # <a name="options-page-debugging-node-properties"></a>[デバッグ] ノード プロパティ ([オプション] ページ)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-次の表では、 **[オプション]** ダイアログ ボックスの **[デバッグ]** カテゴリ (`DTE.Properties("Debugging", <Property Page>)`) に関連付けられているページ (またはプロパティ コレクション) について説明します。
+次の表では、**[オプション]** ダイアログ ボックスの **[デバッグ]** カテゴリ (`DTE.Properties("Debugging", <Property Page>)`) に関連付けられているページ (またはプロパティ コレクション) について説明します。
 
 ## <a name="general"></a>全般
  `DTE.Properties("Debugging", "General")`
 
-|プロパティ項目名|[値]|説明|
+|プロパティ項目名|値|説明|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|デバッガーでプロジェクト内のすべてのブレークポイントを削除する前に確認を求めるかどうかを指定します。|
 |BreakAllProcesses|Get/Set (Boolean)|単一のプロセスが中断するたびに、デバッガーですべてのプロセスを中断するかどうかを指定します。|
@@ -54,7 +54,7 @@ ms.locfileid: "72668843"
 ## <a name="edit-and-continue"></a>エディット コンティニュ
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|プロパティ項目名|[値]|説明|
+|プロパティ項目名|値|説明|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|エディット コンティニュを有効にするかどうかを指定します。 このオプションは、エディット コンティニュをサポートするすべての言語に適用されます。|
 |InvokedByCommands|Get/Set (Boolean)|ユーザーが **[ステップ]** や **[続行]** などのデバッグ コマンドを選択したときに、エディット コンティニュでコード変更を自動的に適用するかどうかを指定します。 このオプションは、ネイティブ コードにのみ適用されます。|
@@ -66,7 +66,7 @@ ms.locfileid: "72668843"
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
 
-|プロパティ項目名|[値]|説明|
+|プロパティ項目名|値|説明|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Just-In-Time デバッグをマネージド コード用に有効にするかどうかを指定します。|
 |JitNative|Get/Set (Boolean)|Just-In-Time デバッグをネイティブ コード用に有効にするかどうかを指定します。|
@@ -75,10 +75,10 @@ ms.locfileid: "72668843"
 ## <a name="native"></a>ネイティブ
  `DTE.Properties("Debugging", "Native")`
 
-|プロパティ項目名|[値]|説明|
+|プロパティ項目名|値|説明|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|デバッガーで DLL エクスポート テーブルを読み込むかどうかを指定します。|
 |EnableRPC|Get/Set (Boolean)|デバッガーが COM リモート プロシージャ呼び出しにステップ インできるかどうかを指定します。|
 
-## <a name="see-also"></a>関連項目
- [オプション設定の制御](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)オプションページの[プロパティ項目の名前を決定する](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)オプションページ[、フォントおよび色ノードプロパティ](../../ide/reference/options-page-fonts-and-colors-node-properties.md)の[オプションページ、[テキストエディター] ノードプロパティ](../../ide/reference/options-page-text-editor-node-properties.md)の[[全般] ([オプション] ダイアログボックス-[デバッグ])](../../debugger/general-debugging-options-dialog-box.md)[エディットコンティニュ] ([[オプション] ダイアログボックス](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) [-[just-in-time])](../../debugger/just-in-time-debugging-options-dialog-box.md) ([オプション] ダイアログボックス-[デバッグ])
+## <a name="see-also"></a>参照
+ [オプション設定の制御](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)オプションページの[プロパティ項目の名前を決定する](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)オプションページ[、フォントおよび色ノードのプロパティ](../../ide/reference/options-page-fonts-and-colors-node-properties.md)[オプションページ、[テキストエディター] ノードのプロパティ](../../ide/reference/options-page-text-editor-node-properties.md)の[[全般]](../../debugger/general-debugging-options-dialog-box.md) 、[デバッグ]、[オプション][ダイアログボックスの](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)[just-in-time]、[デバッグ]、[[オプション] ダイアログボックス](../../debugger/just-in-time-debugging-options-dialog-box.md)

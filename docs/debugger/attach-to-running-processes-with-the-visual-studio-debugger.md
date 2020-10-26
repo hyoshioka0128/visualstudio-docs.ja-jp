@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281007"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88249207"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 
@@ -199,15 +199,13 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
         ![リモート システムに接続する](../debugger/media/connect-remote-system.png "リモート システムに接続する")
         1. SSH またはデーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、 **[OK]** をクリックします。
 
-    
     1. ***[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには***
         1. **[Docker ホスト (省略可能)]** でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。
         1. デーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、 **[OK]** をクリックします。
 
 4. Visual Studio で **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
 
-    ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete.png "入力された Linux Docker の [アタッチ] メニュー")
-    
+    ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete.png "入力された Linux Docker の [アタッチ] メニュー")    
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Windows Docker コンテナー上で実行されているプロセスにアタッチする
 
@@ -238,10 +236,8 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
 4. **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
 
     ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete-windows.png "入力された Windows Docker の [アタッチ] メニュー")
-    
 
 5.  Visual Studio で [使用可能なプロセス] リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
-
 
 ::: moniker-end
 

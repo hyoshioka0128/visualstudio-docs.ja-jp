@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd5a6edc2f89470b4aacf05ef0a416c060cf23df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703533"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 タスク
@@ -38,7 +38,7 @@ ms.locfileid: "65703533"
 |`AllGeneratedFiles`|省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> タスクによって生成されるファイルの完全なリストが含まれています。|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|省略可能な **Boolean** 型のパラメーターです。<br /><br /> 別の <xref:System.AppDomain> でタスクを実行するかどうかを指定します。 このパラメーターが **false** を返す場合、タスクは [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] と同じ <xref:System.AppDomain> 内で、より高速に実行されます。 このパラメーターが **true** を返す場合、タスクは [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] から分離された 2 番目の <xref:System.AppDomain> 内で実行され、動作はより低速になります。|  
 |`ApplicationMarkup`|省略可能な **ITaskItem[]** パラメーターです。<br /><br /> アプリケーション定義 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ファイルの名前を指定します。|  
-|`AssembliesGeneratedDuringBuild`|省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されるアセンブリへの参照を指定します。 たとえば、[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] ソリューションには、別のプロジェクトのコンパイル済み出力を参照するプロジェクトが含まれていることがあります。 この場合、別のプロジェクトのコンパイル済み出力を **AssembliesGeneratedDuringBuild** パラメーターに追加できます。<br /><br /> 注: **AssembliesGeneratedDuringBuild** パラメーターは、ビルド ソリューションによって生成されるアセンブリの完全なセットへの参照を含んでいる必要があります。|  
+|`AssembliesGeneratedDuringBuild`|省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されるアセンブリへの参照を指定します。 たとえば、[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] ソリューションには、別のプロジェクトのコンパイル済み出力を参照するプロジェクトが含まれていることがあります。 この場合、別のプロジェクトのコンパイル済み出力を **AssembliesGeneratedDuringBuild** パラメーターに追加できます。<br /><br /> メモ:**AssembliesGeneratedDuringBuild** パラメーターは、ビルド ソリューションによって生成されるアセンブリの完全なセットへの参照を含んでいる必要があります。|  
 |`AssemblyName`|必須の **String** 型のパラメーターです。<br /><br /> プロジェクトのために生成されるアセンブリの短い名前を指定します。 たとえば、プロジェクトが **WinExeAssembly.exe** という名前の [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] 実行可能ファイルを生成する場合、**AssemblyName** パラメーターの値は **WinExeAssembly** になります。|  
 |`AssemblyPublicKeyToken`|省略可能な **String** 型のパラメーターです。<br /><br /> アセンブリの公開キー トークンを指定します。|  
 |`AssemblyVersion`|省略可能な **String** 型のパラメーターです。<br /><br /> アセンブリのバージョン番号を指定します。|  
@@ -50,7 +50,7 @@ ms.locfileid: "65703533"
 |`GeneratedLocalizationFiles`|省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> ローカライズ可能な各 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ファイルに対して生成されたローカリゼーション ファイルの一覧を含みます。|  
 |`HostInBrowser`|省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるアセンブリが [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] であるかどうかを指定します。 有効なオプションは、**true** および **false** です。 **true** の場合は、ブラウザーのホスト処理をサポートするコードが生成されます。|  
 |`KnownReferencePaths`|省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されないアセンブリへの参照を指定します。 [!INCLUDE[TLA#tla_gac](../includes/tlasharptla-gac-md.md)]、[!INCLUDE[TLA#tla_netframewk](../includes/tlasharptla-netframewk-md.md)] インストール ディレクトリなどにあるアセンブリが含まれます。|  
-|`Language`|必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#**、**VB**、**JScript**、**C++** です。|  
+|`Language`|必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#** 、**VB**、**JScript**、**C++** です。|  
 |`LanguageSourceExtension`|省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルの拡張子に追加される拡張子を指定します。<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** パラメーターが特定の値に設定されていない場合、言語に応じた既定のソース ファイル名拡張子が使用されます。つまり、[!INCLUDE[TLA#tla_visualb](../includes/tlasharptla-visualb-md.md)] では **.vb** になり、[!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] では **.csharp** になります。|  
 |`LocalizationDirectivesToLocFile`|省略可能な **String** 型のパラメーターです。<br /><br /> 各ソース [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ファイルのローカリゼーション情報を生成する方法を指定します。 有効なオプションは、**None**、**CommentsOnly**、および **All** です。|  
 |`OutputPath`|必須の **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルおよび [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] バイナリ形式ファイルの出力先ディレクトリを指定します。|  
@@ -64,7 +64,7 @@ ms.locfileid: "65703533"
 |`UICulture`|省略可能な **String** 型のパラメーターです。<br /><br /> 生成される [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] バイナリ形式ファイルが埋め込まれる UI カルチャのサテライト アセンブリを指定します。 **UICulture** が設定されない場合、生成される [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] バイナリ形式ファイルは、メイン アセンブリに埋め込まれます。|  
 |`XAMLDebuggingInformation`|省略可能な **Boolean** 型のパラメーターです。<br /><br /> **true** の場合、デバッグを支援するための診断情報が生成され、コンパイルされた [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 内に追加されます。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> タスクは通常、[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] をバイナリ形式にコンパイルしてコード ファイルを生成します。 同じプロジェクト内で定義される型への参照が [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ファイルに含まれている場合、**MarkupCompilePass1** は、バイナリ形式へのコンパイルを 2 番目のマークアップ コンパイル パス (**MarkupCompilePass2**) まで延期します。 このようなファイルでは、参照しているローカル定義の型がコンパイルされるまで待つ必要があるため、コンパイルを延期する必要があります。 ただし、[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ファイルに `x:Class` 属性がある場合、<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> はこのファイルの言語固有のコード ファイルを生成します。  
   
  [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] ファイルに `x:Uid` 属性を使用する要素が含まれている場合、そのファイルはローカライズ可能です。  
@@ -120,10 +120,10 @@ ms.locfileid: "65703533"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [WPF MSBuild リファレンス](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)   
+ [タスクリファレンス](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
- [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
- [WPF アプリケーション (WPF) のビルド](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [タスクリファレンス](../msbuild/msbuild-task-reference.md)   
+ [WPF アプリケーションのビルド (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [WPF XAML ブラウザー アプリケーションの概要](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

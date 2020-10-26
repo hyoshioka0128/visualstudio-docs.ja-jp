@@ -14,40 +14,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a02eb9048c0e9338e6300fc63666af4db535b3ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198587"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッグ シンボルのソースへのアクセスを開始します。  
+デバッグシンボルのソースへのアクセスを開始します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaDataSource : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDiaDataSource`します。  
+ 次の表に、のメソッドを示し `IDiaDataSource` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|最後の読み込みエラーのファイル名を取得します。|  
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|開き、デバッグのデータ ソースとしてのプログラム データベース (.pdb) ファイルを準備します。|  
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|開き、プログラム データベース (.pdb) ファイルが提供されて署名情報と一致していることを確認します。デバッグのデータ ソースとしての .pdb ファイルを準備します。|  
-|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|開き、.exe/.dll ファイルに関連付けられたデバッグ データを準備します。|  
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|メモリ内のデータ ストリームを使用してアクセス プログラム データベース (.pdb) ファイルに格納されているデバッグ データを準備します。|  
-|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|シンボルを照会するためのセッションを開きます。|  
+|[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|前回の読み込みエラーのファイル名を取得します。|  
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|プログラムデータベース (.pdb) ファイルをデバッグデータソースとして開き、準備します。|  
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|プログラムデータベース (.pdb) ファイルが、指定された署名情報と一致することを開き、確認します。.pdb ファイルをデバッグデータソースとして準備します。|  
+|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|を開き、.exe/.dll ファイルに関連付けられているデバッグデータを準備します。|  
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|メモリ内データストリームを介してアクセスされるプログラムデータベース (.pdb) ファイルに格納されているデバッグデータを準備します。|  
+|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|シンボルに対してクエリを実行するためのセッションを開きます。|  
   
-## <a name="remarks"></a>Remarks  
- Load メソッドの 1 つの呼び出し、`IDiaDataSource`インターフェイスは、シンボル ファイルを開きます。 呼び出しは成功、 [idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)メソッドが返す、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)データ ソースの照会をサポートするインターフェイス。 Load メソッドは、ファイルに関連するエラーを返す場合、 [idiadatasource::get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)メソッドを返す値には、エラーに関連付けられているファイル名が含まれています。  
+## <a name="remarks"></a>注釈  
+ インターフェイスの load メソッドの1つを呼び出すと、 `IDiaDataSource` シンボルソースが開きます。 [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)メソッドの呼び出しが成功すると、データソースのクエリをサポートする[IDiaSession](../../debugger/debug-interface-access/idiasession.md)インターフェイスが返されます。 Load メソッドがファイルに関連するエラーを返す場合、 [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) メソッドの戻り値には、エラーに関連付けられているファイル名が含まれます。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- このインターフェイスは呼び出すことによって取得、`CoCreateInstance`クラス識別子を持つ関数`CLSID_DiaSource`とのインターフェイス ID`IID_IDiaDataSource`します。 この例では、このインターフェイスを取得する方法を示します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ このインターフェイスは、 `CoCreateInstance` クラス識別子とのインターフェイス ID を使用して関数を呼び出すことによって取得され `CLSID_DiaSource` `IID_IDiaDataSource` ます。 この例は、このインターフェイスを取得する方法を示しています。  
   
 ## <a name="example"></a>例  
   
@@ -65,12 +65,12 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Dia2.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Dia2  
   
- ライブラリ: diaguids.lib  
+ ライブラリ: diaguids  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [インターフェイス (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

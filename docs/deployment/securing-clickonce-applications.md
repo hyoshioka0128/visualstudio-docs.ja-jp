@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286303"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce アプリケーションのセキュリティ保護
@@ -38,14 +38,14 @@ ms.locfileid: "85286303"
 |ネットワーク ファイル共有からのインストール|ローカル イントラネット ゾーン|
 |CD-ROM からのインストール|Full Trust|
 
- 既定のアクセス許可は、アプリケーションの元のバージョンがどこから配置されたかによって異なります。このアプリケーションを更新する際、そのアクセス許可が継承されます。 アプリケーションが Web またはネットワーク上の場所からの更新プログラムをチェックするように構成されていて、新しいバージョンが使用できるようになっている場合には、元のインストールが完全信頼のアクセス許可ではなく、インターネット ゾーンまたはイントラネット ゾーンのアクセス許可を継承する可能性があります。 ユーザーに対する要求が行われないようにするために、システム管理者は、信頼された発行元として特定のアプリケーション発行元を定義する ClickOnce 配置ポリシーを指定できます。 このポリシーが配置されるコンピューター上では、アクセス許可は自動的に付与され、ユーザーへの要求は行われません。 詳細については、「[信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)」を参照してください。 信頼されたアプリケーションの配置を構成するには、コンピューター レベルまたはエンタープライズ レベルに証明書をインストールできます。 詳細については、「 [How to: Add a Trusted Publisher to a Client Computer for ClickOnce Applications](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)」を参照してください。
+ 既定のアクセス許可は、アプリケーションの元のバージョンがどこから配置されたかによって異なります。このアプリケーションを更新する際、そのアクセス許可が継承されます。 アプリケーションが Web またはネットワーク上の場所からの更新プログラムをチェックするように構成されていて、新しいバージョンが使用できるようになっている場合には、元のインストールが完全信頼のアクセス許可ではなく、インターネット ゾーンまたはイントラネット ゾーンのアクセス許可を継承する可能性があります。 ユーザーに対する要求が行われないようにするために、システム管理者は、信頼された発行元として特定のアプリケーション発行元を定義する ClickOnce 配置ポリシーを指定できます。 このポリシーが配置されるコンピューター上では、アクセス許可は自動的に付与され、ユーザーへの要求は行われません。 詳細については、「 [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)」を参照してください。 信頼されたアプリケーションの配置を構成するには、コンピューター レベルまたはエンタープライズ レベルに証明書をインストールできます。 詳細については、「 [How to: Add a Trusted Publisher to a Client Computer for ClickOnce Applications](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)」を参照してください。
 
 ## <a name="code-access-security-policies"></a>コード アクセス セキュリティ ポリシー
- アプリケーションのアクセス許可は、アプリケーションマニフェストの[ \<trustInfo> 要素](../deployment/trustinfo-element-clickonce-application.md)要素の設定によって決まります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]は、プロジェクトの [**セキュリティ**] プロパティページの設定に基づいて、この情報を自動的に生成します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションには、アプリケーションが要求するアクセス許可だけが与えられます。 たとえば、ファイルへのアクセスに完全信頼のアクセス許可が必要な場合、アプリケーションがファイルへのアクセス許可を要求すると、完全信頼ではなくファイルへのアクセス許可だけが与えられます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを開発するときは、アプリケーションに必要な特定のアクセス許可のみを要求する必要があります。 ほとんどの場合は、インターネット ゾーンまたはローカル イントラネット ゾーンを使用して、アプリケーションを部分信頼に制限できます。 詳細については、「[方法: ClickOnce アプリケーションのセキュリティゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)」を参照してください。 アプリケーションにカスタムのアクセス許可が必要な場合、カスタム ゾーンを作成できます。 詳細については、「[方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)」を参照してください。
+ アプリケーションのアクセス許可は、アプリケーションマニフェストの[ \<trustInfo> 要素](../deployment/trustinfo-element-clickonce-application.md)要素の設定によって決まります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、プロジェクトの [ **セキュリティ** ] プロパティページの設定に基づいて、この情報を自動的に生成します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションには、アプリケーションが要求するアクセス許可だけが与えられます。 たとえば、ファイルへのアクセスに完全信頼のアクセス許可が必要な場合、アプリケーションがファイルへのアクセス許可を要求すると、完全信頼ではなくファイルへのアクセス許可だけが与えられます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを開発するときは、アプリケーションに必要な特定のアクセス許可のみを要求する必要があります。 ほとんどの場合は、インターネット ゾーンまたはローカル イントラネット ゾーンを使用して、アプリケーションを部分信頼に制限できます。 詳細については、「 [方法: ClickOnce アプリケーションのセキュリティゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)」を参照してください。 アプリケーションにカスタムのアクセス許可が必要な場合、カスタム ゾーンを作成できます。 詳細については、「 [方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)」を参照してください。
 
  アプリケーションの配置元ゾーンに与えられた既定のアクセス許可セットに含まれないアクセス許可を追加した場合、エンド ユーザーに対して、インストール時または更新時にアクセス許可の付与を求めるプロンプトが表示されます。 ユーザーに対する要求が行われないようにするために、システム管理者は、信頼された発行元として特定のアプリケーション発行元を定義する ClickOnce 配置ポリシーを指定できます。 このポリシーが配置されるコンピューター上では、アクセス許可は自動的に付与され、ユーザーへの要求は行われません。
 
- 開発者は、開発するアプリケーションが適切なアクセス許可で実行されることを確認する必要があります。 実行時にアプリケーションでゾーン以外のアクセス許可が必要な場合、セキュリティの例外が表示されることがあります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]を使用すると、対象のセキュリティゾーンでアプリケーションをデバッグし、セキュリティで保護されたアプリケーションの開発に役立ちます。 詳細については、「[アプリケーションを使用する ClickOnce アプリのデバッグ](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)」を参照してください。
+ 開発者は、開発するアプリケーションが適切なアクセス許可で実行されることを確認する必要があります。 実行時にアプリケーションでゾーン以外のアクセス許可が必要な場合、セキュリティの例外が表示されることがあります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用すると、対象のセキュリティゾーンでアプリケーションをデバッグし、セキュリティで保護されたアプリケーションの開発に役立ちます。 詳細については、「 [アプリケーションを使用する ClickOnce アプリのデバッグ](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)」を参照してください。
 
  コードアクセスセキュリティと ClickOnce の詳細については、「 [clickonce アプリケーションのコードアクセスセキュリティ](../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。
 

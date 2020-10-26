@@ -12,7 +12,7 @@
   items:
     - name: デバッガーでのはじめに
       href: debugger-feature-tour.md
-    - name: 'C# または Visual Basic アプリをデバッグする'
+    - name: C# または Visual Basic アプリをデバッグする
       href: quickstart-debug-with-managed.md
     - name: C++ アプリをデバッグする
       href: quickstart-debug-with-cplusplus.md
@@ -20,17 +20,17 @@
       href: quickstart-debug-aspnet.md
 - name: チュートリアル
   items:
-    - name: 'C# のデバッグ方法を学習する'
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - name: C# のデバッグ方法を学習する
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: C++ のデバッグ方法を学習する
       href: getting-started-with-the-debugger-cpp.md
     - name: Visual Basic のデバッグ方法を学習する
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: デバッガーで Python コードを実行する...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: ライブ Azure アプリをデバッグする
       href: debug-live-azure-applications.md
-    - name: 'C# と C++ コードをデバッグする'
+    - name: C# と C++ コードをデバッグする
       href: how-to-debug-managed-and-native-code.md
     - name: 以前のアプリの状態を検査する
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
-        - name: 'C# データ ブレークポイントのトラブルシューティング'
+        - name: C# データ ブレークポイントのトラブルシューティング
           href: troubleshoot-data-breakpoint-errors.md
     - name: データ検査
       items:
@@ -64,11 +64,11 @@
               items:
                 - name: デバッガーの式を使用する
                   href: expressions-in-the-debugger.md
-                - name: 'C# の書式指定子'
+                - name: C# の書式指定子
                   href: format-specifiers-in-cpp.md
                 - name: Context Operator (C++)
                   href: context-operator-cpp.md
-                - name: 'C# の書式指定子'
+                - name: C# の書式指定子
                   href: format-specifiers-in-csharp.md
                 - name: 擬似変数
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: サポートされているコード変更 (C++)
               href: supported-code-changes-cpp.md
-        - name: 'エディット コンティニュ (Visual C#)'
+        - name: エディット コンティニュ (Visual C#)
           items:
-            - name: 'C# のエディット コンティニュ'
+            - name: C# のエディット コンティニュ
               href: edit-and-continue-visual-csharp.md
-            - name: 'エディット コンティニュを使用する (C#)'
+            - name: エディット コンティニュを使用する (C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: サポートされているコード変更
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: XAML ホット リロードのトラブルシューティング
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'F# ではエディット コンティニュはサポートされません。'
+        - name: F# ではエディット コンティニュはサポートされません。
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 出力ウィンドウにログを記録する
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web プロジェクトのプロパティ ページ設定
                   href: property-pages-settings-for-web-projects.md
-                - name: 'C# デバッグ構成のプロジェクト設定'
+                - name: C# デバッグ構成のプロジェクト設定
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Visual Basic デバッグ構成のプロジェクト設定
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Azure での ASP.NET Core のリモート デバッグ
           href: remote-debugging-azure.md
-        - name: 'C# プロジェクトまたは Visual Basic プロジェクトのリモート デバッグ'
+        - name: C# プロジェクトまたは Visual Basic プロジェクトのリモート デバッグ
           href: remote-debugging-csharp.md
         - name: C++ Project プロジェクトのリモート デバッグ
           href: remote-debugging-cpp.md
@@ -313,7 +313,7 @@
             - name: ターゲット コンピューターで DNS が正しく構成されていることを確認してください
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: Microsoft Visual Studio リモート デバッグ モニターに接続できません
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: DCOM 通信を初期化できません。
@@ -445,7 +445,7 @@
             - name: インストールされているアプリケーション パッケージをデバッグする
               href: debug-installed-app-package.md
             - name: デバッグ中に XAML のプロパティを調べます。
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: 実行中の XAML コードを記述およびデバッグする
               href: ../xaml-tools/xaml-hot-reload.md
             - name: Blend での XAML のデバッグ
@@ -466,7 +466,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Microsoft Store アプリ用コンテンツのプリフェッチ
               href: prefetch-content-for-windows-store-apps.md
-        - name: 'マネージド コード (C#、Visual Basic、F#)'
+        - name: マネージド コード (C#、Visual Basic、F#)
           items:
             - name: マネージド コードをデバッグする
               href: debugging-managed-code.md
@@ -505,14 +505,14 @@
                 - name: WPF のデバッグ
                   href: debugging-wpf.md
                 - name: デバッグ中に XAML のプロパティを調べます。
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: 実行中の XAML コードを記述およびデバッグする
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: WPF ツリー ビジュアライザーを使用する
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF トレース情報を表示する
                   href: how-to-display-wpf-trace-information.md
-            - name: 'F# のデバッグ'
+            - name: F# のデバッグ
               href: debugging-f-hash.md
         - name: C/C++ コード
           items:

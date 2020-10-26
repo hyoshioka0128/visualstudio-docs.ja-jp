@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty |Microsoft Docs
+title: 'IDebugExpressionEvaluator:: GetMethodLocationProperty |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d82b002d9253b2d48f78e74fdf964cf42d241d9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144389"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、メモリ アドレスにメソッドの場所とオフセットを変換します。  
+このメソッドは、メソッドの場所とオフセットをメモリアドレスに変換します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -48,29 +48,29 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>パラメーター  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in]メソッドの場所とのオフセットは、文字列として表されます。  
+ から文字列として表現されるメソッドの場所とオフセット。  
   
  `pSymbolProvider`  
- [in]シンボル プロバイダーで表した、 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)オブジェクト。  
+ から [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) オブジェクトとして表現されるシンボルプロバイダー。  
   
  `pAddress`  
- [in]表されるメソッド内のアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。  
+ から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) オブジェクトとして表される、メソッド内のアドレス。  
   
  `pBinder`  
- [in]バインダーで表した、 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)オブジェクト。  
+ から [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) オブジェクトとして表現されたバインダー。  
   
  `ppProperty`  
- [out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)メモリ アドレスを表すインターフェイスです。  
+ 入出力メモリアドレスを表す [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) インターフェイスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- たとえば、ブレークポイントを設定するのには、返されたアドレスを使用できます。  
+## <a name="remarks"></a>注釈  
+ 返されたアドレスを使用して、ブレークポイントを設定できます。たとえば、のようになります。  
   
- 名前に関係なく`upstrFullyQualifiedMethodPlusOffset`、このパラメーターは、部分的に修飾メソッド名を渡すことができます。 選択したメソッドを囲む、1 つは、その場合は、`pAddress`します。 このパラメーターを解釈する方法は、式エバリュエーターと言語のサポートの実装の責任です。  
+ 名前にかかわらず `upstrFullyQualifiedMethodPlusOffset` 、このパラメーターには部分的に修飾されたメソッド名を渡すことができます。 その場合は、選択されたメソッドが、を囲むメソッドです `pAddress` 。 このパラメーターがどのように解釈されるかは、式エバリュエーターとそれがサポートする言語の実装になります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

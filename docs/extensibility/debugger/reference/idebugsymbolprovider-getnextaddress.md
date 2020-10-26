@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugSymbolProvider:: GetNextAddress |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719197"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-メソッド内の特定のデバッグ アドレスの後に続くデバッグ アドレスを取得します。
+メソッド内の指定されたデバッグアドレスの後に続くデバッグアドレスを取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]指定されたデバッグ アドレス。
+から指定されたデバッグアドレス。
 
 `fStatementOnly`\
-[in]TRUE の場合、デバッグ アドレスは 1 つのステートメントに制限されます。
+からTRUE の場合、デバッグアドレスを1つのステートメントに限定します。
 
 `ppAddress`\
-[アウト]次のデバッグ アドレスを返します。
+入出力次のデバッグアドレスを返します。
 
 ## <a name="return-value"></a>戻り値
- 通常、有効`HRESULT`なを返 S_OKします。
+ は、有効な (通常は S_OK) を返し `HRESULT` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumParameters |Microsoft Docs
+title: 'IDebugMethodField:: EnumParameters |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ebdd604ba97fda8751cf037e7494b59e7bb77ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162595"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
@@ -40,19 +40,19 @@ int EnumParameters(
   
 #### <a name="parameters"></a>パラメーター  
  `ppParams`  
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)メソッドにパラメーターの一覧を表すオブジェクト。 それ以外の場合、パラメーターがない場合に null 値を返します。  
+ 入出力メソッドに対するパラメーターのリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。それ以外の場合は、パラメーターがない場合は null 値を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合は S_OK を返します。 またはパラメーターがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。  
+ 成功した場合は S_OK を返します。パラメーターがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 各要素は、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)さまざまな種類のパラメーターを表すオブジェクト。 呼び出す、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)正確にパラメーターのオブジェクトが表す種類を決定するには、各オブジェクトのメソッド。  
+## <a name="remarks"></a>注釈  
+ 各要素は、さまざまな種類のパラメーターを表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトです。 各オブジェクトの [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) メソッドを呼び出して、オブジェクトが表すパラメーターの種類を正確に特定します。  
   
- パラメーターには、その変数の名前とその型の両方が含まれています。 クラスのメソッドの最初のパラメーターは、通常"this"ポインターです。  
+ パラメーターには、変数名とその型の両方が含まれます。 クラスメソッドの最初のパラメーターは、通常、"this" ポインターです。  
   
- パラメーターの型は、必要な場合のみを呼び出す、 [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)メソッド。  
+ パラメーターの型のみが必要な場合は、 [Enumarguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) メソッドを呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

@@ -11,18 +11,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1ad768419786f78277b791997538785265a24c0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153096"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-メタデータとコアのシンボル インターフェイスに直接アクセスするシンボル プロバイダーを表します。  
+メタデータおよびコアシンボルインターフェイスに直接アクセスできるシンボルプロバイダーを表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugSymbolProviderDirect: IUnknown  
@@ -33,19 +33,19 @@ IDebugSymbolProviderDirect: IUnknown
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|デバッグ アドレスが指定されて、アプリケーション ドメインの識別子を取得します。|  
-|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|シンボルのグループ内のモジュールに関する情報を取得します。|  
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|シンボル プロバイダーがメンバーであるシンボルのグループに関する情報を取得します。|  
-|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|メタデータ情報のインポートを取得します。|  
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|指定されたデバッグ アドレスには、方法に関する情報を取得します。|  
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|アンマネージ コードのシンボル リーダーを取得します。|  
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|デバッグアドレスに指定されたアプリケーションドメイン識別子を取得します。|  
+|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|シンボルグループ内のモジュールに関する情報を取得します。|  
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|シンボルプロバイダーがメンバーとなっているシンボルグループに関する情報を取得します。|  
+|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|メタデータのインポート情報を取得します。|  
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|指定されたデバッグアドレスのメソッドに関する情報を取得します。|  
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|アンマネージコードのシンボルリーダーを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- このインターフェイスは、その他のシンボル プロバイダー インターフェイスのほとんどではなく使用できます。 メタデータへの直接アクセスを提供し、`CorSym`インターフェイス。  
+## <a name="remarks"></a>注釈  
+ このインターフェイスは、他のほとんどのシンボルプロバイダーインターフェイスの代わりに使用できます。 メタデータとインターフェイスへの直接アクセスを提供し `CorSym` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

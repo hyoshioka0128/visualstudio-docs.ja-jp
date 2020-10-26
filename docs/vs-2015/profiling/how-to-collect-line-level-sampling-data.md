@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185956"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>方法: 行レベルのサンプリング データを収集する
+# <a name="how-to-collect-line-level-sampling-data"></a>方法 : 行レベルのサンプリング データを収集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 行レベルのサンプリングとは、排他サンプル数が高い関数など、プロセッサ集中型の関数のコードで、プロセッサが大部分の時間を費やす必要のある場所を特定するためのプロファイラーの機能です。  
@@ -56,8 +56,8 @@ ms.locfileid: "68185956"
   
      または  
   
-- アプリケーションの起動時に、「**VSPerfCmd /lineoff\<他の引数>** 」を入力します。  
+- アプリケーションの起動時に、「**VSPerfCmd /lineoff \<other arguments>** 」を入力します。  
   
-## <a name="see-also"></a>関連項目  
- [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>参照  
+ [パフォーマンスセッションの構成](../profiling/configuring-performance-sessions.md)   
+ [パフォーマンス ツール データを分析する](../profiling/analyzing-performance-tools-data.md)

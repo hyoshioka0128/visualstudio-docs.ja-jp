@@ -35,10 +35,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd0a89ac1d96e2d1af829ba04e6e164f8fae7f8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542182"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio でのストア アプリのデバッグ セッションの開始 (VB、C#、C++、および XAML)
@@ -49,7 +49,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
  このトピックでは、XAML および Visual C++、Visual C#、または Visual Basic で記述されたストア アプリのデバッグ セッションを開始する方法について説明します。 アプリのデバッグには、デバッグ セッションの構成と、アプリの起動方法の選択の両方が関係します。
 
 > [!NOTE]
-> JavaScript および HTML で記述されたアプリについて[は、「デバッグセッションを開始する (javascript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)」を参照してください。
+> JavaScript および HTML で記述されたアプリについて [は、「デバッグセッションを開始する (javascript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)」を参照してください。
 
 ## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> このトピックの内容
  [デバッグを開始する簡単な方法](#BKMK_The_easy_way_to_start_debugging)
@@ -86,17 +86,17 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
   - [デバッガーをアタッチします。](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>デバッグを開始する簡単な方法
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> デバッグを開始する簡単な方法
 
 1. Visual Studio でアプリ ソリューションを開きます。
 
 2. F5 キーを選択します。
 
-   Visual Studio によってアプリがビルドされ、アタッチされたデバッガーが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされていない例外が発生するか、アプリが終了するまで続行されます。 詳細については、「[デバッグセッションに移動する (Xaml および C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 」を参照してください。
+   Visual Studio によってアプリがビルドされ、アタッチされたデバッガーが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、ハンドルされていない例外が発生するか、アプリが終了するまで続行されます。 詳細については、「 [デバッグセッションに移動する (Xaml および C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) 」を参照してください。
 
-## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a>デバッグセッションを構成する
+## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> デバッグセッションを構成する
 
-### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>プロジェクトの [デバッグ] プロパティページを開く
+### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> プロジェクトの [デバッグ] プロパティページを開く
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。 ショートカット メニューの **[プロパティ]** をクリックします。
 
@@ -110,13 +110,13 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
          ![C&#43;&#43; Windows ストアアプリのデバッグプロパティページ](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
 
-### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a>ビルド構成オプションを選択する
+### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> ビルド構成オプションを選択する
 
 1. **[構成]** ボックスの一覧の **[デバッグ]** または **[(アクティブ) デバッグ]** をクリックします。
 
 2. **[プラットフォーム]** ボックスの一覧で、ビルドするターゲット プラットフォームを選択します。 ほとんどの場合、 **[Any CPU]** (Visual C++ では **[すべてのプラットフォーム]** ) が最も適しています。
 
-### <a name="choose-the-deployment-target"></a><a name="BKMK_Choose_the_deployment_target"></a>配置ターゲットの選択
+### <a name="choose-the-deployment-target"></a><a name="BKMK_Choose_the_deployment_target"></a> 配置ターゲットの選択
  ![Windows のみに適用](../debugger/media/windows-only-content.png "windows_only_content")
 
  Visual Studio コンピューター、ローカル コンピューター上の Visual Studio シミュレーター、またはリモート デバイス上に Windows ストア アプリを配置してデバッグできます。
@@ -129,9 +129,9 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
 |オプション|説明|
 |-|-|
-|**ローカル コンピューター**|ローカル コンピューターの現在のセッションでアプリをデバッグします。 「[ローカルコンピューターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-on-the-local-machine.md)参照してください。|
-|**シミュレーター**|[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ用の Visual Studio シミュレーターでアプリをデバッグします。 シミュレーターは、ローカル コンピューターでは使用できないデバイスの機能 (タッチ ジェスチャやデバイスの回転など) をデバッグできるようにするデスクトップ ウィンドウです。 「[シミュレーターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-in-the-simulator.md)参照してください。|
-|**リモート コンピューター**|ローカル コンピューターにイントラネットを介して接続されているかイーサネット ケーブルを使用して直接接続されているデバイス上のアプリをデバッグします。 リモートでデバッグするには、リモート デバイス上に Visual Studio リモート ツールがインストールされ、実行されている必要があります。 「[リモートコンピューターでの Windows ストアアプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。|
+|**ローカル コンピューター**|ローカル コンピューターの現在のセッションでアプリをデバッグします。 「 [ローカルコンピューターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-on-the-local-machine.md)参照してください。|
+|**シミュレーター**|[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ用の Visual Studio シミュレーターでアプリをデバッグします。 シミュレーターは、ローカル コンピューターでは使用できないデバイスの機能 (タッチ ジェスチャやデバイスの回転など) をデバッグできるようにするデスクトップ ウィンドウです。 「 [シミュレーターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-in-the-simulator.md)参照してください。|
+|**リモート コンピューター**|ローカル コンピューターにイントラネットを介して接続されているかイーサネット ケーブルを使用して直接接続されているデバイス上のアプリをデバッグします。 リモートでデバッグするには、リモート デバイス上に Visual Studio リモート ツールがインストールされ、実行されている必要があります。 「 [リモートコンピューターでの Windows ストアアプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。|
 
  **[リモート コンピューター]** をクリックした場合は、次のいずれかの方法でリモート コンピューターの IP アドレスを指定します。
 
@@ -147,7 +147,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
   - Visual C# アプリと Visual Basic アプリの場合は、 **[検索]** をクリックします。
 
-  - C++ アプリの場合は、[**コンピューター名**] ボックスの下向き矢印をクリックし、[] を選択し **\<Locate...>** ます。
+  - C++ アプリの場合は、[ **コンピューター名** ] ボックスの下向き矢印をクリックし、[] を選択し **\<Locate...>** ます。
 
     ![リモート デバッガーの接続の選択ダイアログ ボックス](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
@@ -181,7 +181,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
  Windows ストア Phone アプリについては、 **[バックグラウンド タスク プロセス]** の一覧でバックグラウンド プロセスに使用するデバッガーを選択することもできます。
 
-### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a>Optionalデバッグセッションの開始を遅らせます
+### <a name="optional-delay-starting-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_the_debug_session"></a> Optionalデバッグセッションの開始を遅らせます
  既定では、Visual Studio はデバッグの開始と同時にアプリを起動します。 デバッグ セッションは開始するが、アプリの起動は遅らせることもできます。 このオプションを選択すると、アプリは、スタート画面から起動されたとき、アクティブ化コントラクトによって起動されたとき、または別のプロセスやメソッドによって起動されたときに、デバッガー内で起動します。 アプリケーション自体が実行されていないときにバックグラウンド タスクをデバッグすると、アプリケーションの起動が遅くなります。
 
  アプリの起動を遅らせるには:
@@ -190,7 +190,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
 - Visual C++ アプリの場合は、 **[デバッグ]** プロパティ ページの **[アプリケーションの起動]** ボックスの一覧の **[はい]** をクリックします。
 
-### <a name="optional-disable-network-loopbacks"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a>Optionalネットワークループバックをを無効にする
+### <a name="optional-disable-network-loopbacks"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a> Optionalネットワークループバックをを無効にする
  ![Windows のみに適用](../debugger/media/windows-only-content.png "windows_only_content")
 
  セキュリティ上の理由から、標準的な方法でインストールされた Windows ストア アプリは、インストール先のデバイスに対してネットワーク呼び出しを行うことはできません。 既定では、Visual Studio による配置では、配置されたアプリに対するこの規則の適用は免除されます。 この免除によって、1 台のコンピューター上で通信プロシージャをテストできます。 Windows ストアにアプリを送信する前に、この免除なしでアプリをテストする必要があります。
@@ -201,10 +201,10 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
 - Visual C++ アプリの場合は、 **[デバッグ]** プロパティ ページの **[ネットワーク ループバックの許可]** ボックスの一覧の **[いいえ]** をクリックします。
 
-### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a>Optionalデバッグを開始するときにアプリを再インストールする
+### <a name="optional-reinstall-the-app-when-you-start-debugging"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Optionalデバッグを開始するときにアプリを再インストールする
  Visual C# または Visual Basic アプリケーションのインストールと初期化に関する問題を診断するには、デバッグの開始時に元のインストールを再作成するように **[デバッグ]** プロパティ ページの **[Uninstall and then reinstall my package]**  (パッケージをアンインストールしてから再インストールする) をクリックします。 このオプションは、Visual C++ プロジェクトでは使用できません。
 
-### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a>Optionalリモートデバッガーを起動するための認証要件を無効にする
+### <a name="optional-disable-authentication-requirement-to-start-the-remote-debugger"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Optionalリモートデバッガーを起動するための認証要件を無効にする
  ![Windows のみに適用](../debugger/media/windows-only-content.png "windows_only_content")
 
  既定では、リモート デバッガーを実行するために資格情報を指定する必要があります。
@@ -220,12 +220,12 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
    [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a>デバッグセッションを開始する
+## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> デバッグセッションを開始する
 
-### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a>デバッグを開始する (F5)
+### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> デバッグを開始する (F5)
  [**デバッグ**] メニューの [**デバッグの開始**] (キーボード: F5) を選択すると、デバッガーがアタッチされた状態でアプリが起動します。 実行は、ブレークポイントに達するか、実行が手動で中断されるか、例外が発生するか、アプリが終了するまで続行されます。
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>デバッグを開始する (F5 キー) がアプリの開始を遅らせる
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> デバッグを開始する (F5 キー) がアプリの開始を遅らせる
  デバッグ モードで実行されるようにアプリを設定し、デバッガー以外の方法でアプリを起動できます。 たとえば、[スタート] メニューからのアプリの起動をデバッグしたり、アプリを起動せずにアプリのバックグラウンド プロセスをデバッグしたりできます。アプリの起動を遅らせるには、次の手順を実行します。
 
 - アプリの **[デバッグ]** プロパティ ページで (Visual C++ の**デバッグ** )
@@ -242,7 +242,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
   . バックグラウンドタスクのデバッグの詳細については、「 [Windows ストアの中断、再開、およびバックグラウンドイベントのトリガー](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)」を参照してください。
 
-### <a name="start-an-installed-app-in-the-debugger"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a>デバッガーでインストール済みのアプリを起動する
+### <a name="start-an-installed-app-in-the-debugger"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a> デバッガーでインストール済みのアプリを起動する
  F5 キーを使用してデバッグを開始すると、Visual Studio はアプリをビルドして配置し、デバッグ モードで実行されるようにアプリを設定してから起動します。 デバイスに既にインストールされているアプリを起動するには、[インストールされているアプリケーション パッケージのデバッグ] ダイアログ ボックスを使用します。 この方法は、Windows ストアからインストールされたアプリをデバッグする必要がある場合や、アプリのソース ファイルはあってもアプリの Visual Studio プロジェクトがない場合に役立ちます。 Visual Studio プロジェクトやソリューションを使用しないカスタム ビルド システムがこれに該当します。
 
  アプリはローカル デバイスにインストールすることも、リモート デバイスにインストールすることもできます。  アプリをすぐに起動できます。また、アプリを別のプロセスや方法で起動したときに ([スタート] メニューからの起動や、アクティブ化コントラクトによる起動など)、デバッガーで実行するようにアプリを設定することもできます。アプリを起動せずにバックグラウンド プロセスをデバッグする場合は、デバッグ モードで実行されるようにアプリを設定できます。 詳細については、「 [Windows ストアの中断、再開、およびバックグラウンドイベントのトリガー](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)」を参照してください。
@@ -258,19 +258,19 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **ローカル コンピューター**  |                                                                                                                ローカル コンピューターの現在のセッションでアプリをデバッグします。 「[ローカルコンピューターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-on-the-local-machine.md)参照してください。                                                                                                                 |
-   |   **シミュレーター**    | [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ用の Visual Studio シミュレーターでアプリをデバッグします。 シミュレーターは、ローカル コンピューターでは使用できないデバイスの機能 (タッチ ジェスチャやデバイスの回転など) をデバッグできるようにするデスクトップ ウィンドウです。 「[シミュレーターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-in-the-simulator.md)参照してください。 |
-   | **リモート コンピューター** |                          ローカル コンピューターにイントラネットを介して接続されているかイーサネット ケーブルを使用して直接接続されているデバイス上のアプリをデバッグします。 リモートでデバッグするには、リモート デバイス上に Visual Studio リモート ツールがインストールされ、実行されている必要があります。 「[リモートコンピューターでの Windows ストアアプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。                           |
+   | **ローカル コンピューター**  |                                                                                                                ローカル コンピューターの現在のセッションでアプリをデバッグします。 「 [ローカルコンピューターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-on-the-local-machine.md)参照してください。                                                                                                                 |
+   |   **シミュレーター**    | [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリ用の Visual Studio シミュレーターでアプリをデバッグします。 シミュレーターは、ローカル コンピューターでは使用できないデバイスの機能 (タッチ ジェスチャやデバイスの回転など) をデバッグできるようにするデスクトップ ウィンドウです。 「 [シミュレーターでの Windows ストアアプリの実行」を](../debugger/run-windows-store-apps-in-the-simulator.md)参照してください。 |
+   | **リモート コンピューター** |                          ローカル コンピューターにイントラネットを介して接続されているかイーサネット ケーブルを使用して直接接続されているデバイス上のアプリをデバッグします。 リモートでデバッグするには、リモート デバイス上に Visual Studio リモート ツールがインストールされ、実行されている必要があります。 「 [リモートコンピューターでの Windows ストアアプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。                           |
 
 3. **[インストールされているアプリケーション パッケージ]** ボックスの一覧からアプリを選択します。
 
 4. **[このコードの種類をデバッグ]** ボックスの一覧から、使用するデバッグ エンジンを選択します。
 
-5. (省略可能)。 他の方法で起動したアプリをデバッグするときや、バックグラウンド プロセスをデバッグするときは、 **[起動しないが、開始時にコードをデバッグ]** を選択します。
+5. (省略可能) 他の方法で起動したアプリをデバッグするときや、バックグラウンド プロセスをデバッグするときは、 **[起動しないが、開始時にコードをデバッグ]** を選択します。
 
    **[開始]** をクリックすると、アプリが起動するか、デバッグ モードで実行するように設定されます。
 
-### <a name="attach-the-debugger-to-a-running-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>実行中のアプリにデバッガーをアタッチする
+### <a name="attach-the-debugger-to-a-running-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 実行中のアプリにデバッガーをアタッチする
  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリにデバッガーをアタッチするには、デバッグ可能パッケージ マネージャーを使用して、デバッグ モードで実行するようにアプリを設定する必要があります。 デバッグ可能パッケージ マネージャーは、Visual Studio リモート ツールと共にインストールされます。
 
  アプリへのデバッガーのアタッチは、インストール済みのアプリ ( [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]からインストールされたアプリなど) をデバッグする場合に役に立ちます。 アタッチは、アプリのソース ファイルはあるが、アプリの Visual Studio プロジェクトがない場合に必要です。 Visual Studio プロジェクトやソリューションを使用しないカスタム ビルド システムがこれに該当します。
@@ -283,7 +283,7 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
 3. 実行中のアプリにデバッガーをアタッチします。
 
-#### <a name="set-the-app-to-run-in-debug-mode"></a><a name="BKMK_Set_the_app_to_run_in_debug_mode"></a>デバッグモードで実行するようにアプリを設定する
+#### <a name="set-the-app-to-run-in-debug-mode"></a><a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> デバッグモードで実行するようにアプリを設定する
 
 1. アプリをインストールするデバイスに Visual Studio リモート ツールをインストールします。 「 [リモート ツールのインストール](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)」を参照してください。
 
@@ -295,14 +295,14 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
 4. PowerShell プロンプトに「 `Enable-AppxDebug` *PackageFullName* 」と入力します。 *PackageFullName* はアプリの PackageFullName 識別子です。
 
-#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>デバッガーをアタッチする
+#### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> デバッガーをアタッチする
  デバッガーをアタッチするには:
 
 1. **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします
 
     **[プロセスにアタッチ]** ダイアログ ボックスが表示されます。
 
-2. リモート デバイス上のアプリにアタッチするには、 **[修飾子]** ボックスにリモート デバイスを指定します。 次の操作を行うことができます。
+2. リモート デバイス上のアプリにアタッチするには、 **[修飾子]** ボックスにリモート デバイスを指定します。 次の操作を行います。
 
    - **[修飾子]** ボックスに名前を入力します。
 
@@ -326,5 +326,5 @@ Windows および Windows Phone] (../Image/windows_and_phone_content.png "window
 
    [このトピックの内容](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio でのアプリのデバッグ](../debugger/debug-store-apps-in-visual-studio.md)[デバッグセッションのナビゲート (Xaml および C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)

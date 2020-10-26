@@ -1,5 +1,5 @@
 ---
-title: データベースオブジェクト &lt;object 名 &gt; | のスキーマ情報を取得できませんでしたMicrosoft Docs
+title: データベースオブジェクト &lt; オブジェクト名 | のスキーマ情報を取得できませんでした &gt; Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: caa8b10bf1644084ab5551d99afe0745feac6280
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651097"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>データベースオブジェクト &lt;object 名のスキーマ情報を取得できませんでした &gt;
+# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>データベースオブジェクトオブジェクト名のスキーマ情報を取得できませんでした &lt;&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このメッセージは通常、**サーバーエクスプローラー/データベースエクスプローラー**のオブジェクトがクリップボードにコピーされ、データベースから削除されてからデザイナーに貼り付けられたときに表示されます。 データベース オブジェクトはもう存在しないので、このメッセージが表示されます。
+このメッセージは通常、 **サーバーエクスプローラー/データベースエクスプローラー** のオブジェクトがクリップボードにコピーされ、データベースから削除されてからデザイナーに貼り付けられたときに表示されます。 データベース オブジェクトはもう存在しないので、このメッセージが表示されます。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 

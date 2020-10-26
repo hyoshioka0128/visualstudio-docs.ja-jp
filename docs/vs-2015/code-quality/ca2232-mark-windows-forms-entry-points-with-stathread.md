@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 42bb554f8e57c036d41a89fdc2657a25ecc74e20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540284"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows フォームのエントリ ポイントを STAThread に設定します
@@ -36,10 +36,10 @@ ms.locfileid: "85540284"
  アセンブリが <xref:System.Windows.Forms> 名前空間を参照し、そのエントリポイントが属性でマークされていません <xref:System.STAThreadAttribute?displayProperty=fullName> 。
 
 ## <a name="rule-description"></a>ルールの説明
- <xref:System.STAThreadAttribute>アプリケーションの COM スレッドモデルがシングルスレッドアパートメントであることを示します。 この属性は、Windows フォームを使用するすべてのアプリケーションのエントリ ポイントに指定する必要があります。省略すると、Windows コンポーネントが正常に機能しないことがあります。 属性が存在しない場合、アプリケーションは、Windows フォームでサポートされていないマルチスレッドアパートメントモデルを使用します。
+ <xref:System.STAThreadAttribute> アプリケーションの COM スレッドモデルがシングルスレッドアパートメントであることを示します。 この属性は、Windows フォームを使用するすべてのアプリケーションのエントリ ポイントに指定する必要があります。省略すると、Windows コンポーネントが正常に機能しないことがあります。 属性が存在しない場合、アプリケーションは、Windows フォームでサポートされていないマルチスレッドアパートメントモデルを使用します。
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]アプリケーションフレームワークを使用するプロジェクトでは、 **Main**メソッドをスレッドでマークする必要はありません。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラは自動的にこれを行います。
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] アプリケーションフレームワークを使用するプロジェクトでは、 **Main** メソッドをスレッドでマークする必要はありません。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラは自動的にこれを行います。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、 <xref:System.STAThreadAttribute> エントリポイントに属性を追加します。 <xref:System.MTAThreadAttribute?displayProperty=fullName>属性が存在する場合は、削除します。

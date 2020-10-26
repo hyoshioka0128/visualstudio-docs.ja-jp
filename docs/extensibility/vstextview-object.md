@@ -1,5 +1,5 @@
 ---
-title: オブジェクト |マイクロソフトドキュメント
+title: VSTextView オブジェクト |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,32 +13,32 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d5e02d6ec18f8561a83b414532a4b78def5c09
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 65a78253094131b5998243ee3c826c4585ddff13
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697712"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012179"
 ---
-# <a name="vstextview-object"></a>オブジェクト
+# <a name="vstextview-object"></a>VSTextView オブジェクト
 
-テキスト ビューは、ユーザーがテキスト バッファーの Unicode テキストを表示および編集できるウィンドウです。 基本的に、ビューはほとんどのユーザーがエディターと呼ぶものです。 ビューはさまざまなテキスト レイヤー (ワード ラップ、アウトライン テキストなど) によってバッファーから分離されているため、ビューがバッファー内のテキストの正確な表現であるとは保証されません。 テキスト ビューの詳細については、「[従来の API を使用してテキスト ビューにアクセスする](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015)」を参照してください。
+テキストビューは、テキストバッファーの Unicode テキストをユーザーが表示および編集できるウィンドウです。 基本的に、ビューは、ほとんどのユーザーがエディターとして参照します。 ビューは、さまざまなテキストレイヤー (右端での折り返し、アウトラインテキストなど) によってバッファーから分離されているため、ビューはバッファー内のテキストを正確に表現するとは限りません。 テキストビューの詳細については、「 [従来の API を使用したテキストビューへのアクセス](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015)」を参照してください。
 
-次の表に、オブジェクト内の<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>インターフェイスを示します。
+次の表は、オブジェクト内のインターフェイスを示して <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> います。
 
 |インターフェイス|説明|
 |---------------|-----------------|
-|[アイドロップソース](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|標準 OLE インターフェイス。|
+|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|標準 OLE インターフェイス。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|標準 OLE インターフェイス。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|標準 OLE インターフェイス。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|標準 OLE インターフェイス。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|複合アクション (単一の取り消し/やり直し単位でグループ化されたアクション) の作成を有効にします。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|ビューを管理およびアクセスするための基本的な方法を提供します。 `IVsTextView`スレッド セーフではありません。|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|ウィンドウ ペインを作成および管理します。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|テキストレイヤーを操作します。|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|別のスレッドからビューに対する操作を実行します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|複合アクション (つまり、1つの元に戻す/やり直し単位でグループ化されたアクション) の作成を有効にします。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|ビューを管理およびアクセスするための基本的なメソッドを提供します。 `IVsTextView` はスレッドセーフではありません。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|ウィンドウペインを作成および管理します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|テキストレイヤーと対話します。|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|別のスレッドからビューに対して操作を実行します。|
 
 ## <a name="see-also"></a>関連項目
 
-- [フィギュア編集](https://www.microsoft.com/download/details.aspx?id=55984)
-- [オブジェクト](../extensibility/vstextbuffer-object.md)
+- [図形の編集](https://www.microsoft.com/download/details.aspx?id=55984)
+- [VSTextBuffer オブジェクト](../extensibility/vstextbuffer-object.md)

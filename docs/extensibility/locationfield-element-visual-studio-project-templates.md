@@ -1,5 +1,6 @@
 ---
-title: LocationField 要素 (Visual Studio プロジェクトテンプレート) |Microsoft Docs
+title: LocationField 要素 (Visual Studio プロジェクト テンプレート)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770027"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739139"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 要素 (Visual Studio プロジェクトテンプレート)
 [**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスが、プロジェクトテンプレートに対して有効、無効、または非表示のいずれであるかを指定します。
@@ -45,7 +46,7 @@ ms.locfileid: "85770027"
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、**新しいプロジェクト**での表示方法を定義します。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートを分類し、 **新しいプロジェクト**での表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
@@ -58,7 +59,7 @@ ms.locfileid: "85770027"
 
 - `Hidden`[**新しいプロジェクト**] ダイアログボックスの [**場所**] ボックスが非表示になるように指定します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  既定値は `Enabled` です。
 
  [**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスを使用すると、新しいプロジェクトを保存する既定のディレクトリを変更できます。

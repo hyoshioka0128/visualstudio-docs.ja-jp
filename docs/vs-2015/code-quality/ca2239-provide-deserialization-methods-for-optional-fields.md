@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: dfbb9082d557c8e67ddebf0237293364d54a65cf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545133"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239:省略可能なフィールドに、逆シリアル化メソッドを指定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|

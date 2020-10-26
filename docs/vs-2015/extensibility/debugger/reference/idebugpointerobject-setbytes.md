@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::SetBytes |Microsoft Docs
+title: 'IDebugPointerObject:: SetBytes |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d467b037f4e2affea53a142304507f876630999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202970"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-一連の連続するバイトを指す値を設定します。  
+連続する一連のバイトからポイントする値を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,23 +46,23 @@ int SetBytes(
   
 #### <a name="parameters"></a>パラメーター  
  `dwStart`  
- [in]指すオブジェクトの先頭からのバイト単位のオフセット。  
+ からが指すオブジェクトの先頭からのオフセット (バイト単位)。  
   
  `dwCount`  
- [in]設定するバイト数。  
+ から設定するバイト数。  
   
  `pBytes`  
- [in]新しい値を表すバイトの配列。 この値は、指定されたオフセットから始まる、オブジェクトに格納されます。  
+ から新しい値を表すバイト配列。 この値は、指定されたオフセットを開始位置として、オブジェクトに格納されます。  
   
  `pdwBytes`  
- [out]実際のバイト数の設定を返します。  
+ 入出力実際に設定されたバイト数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 場合、このメソッドが使用されるこれによって表されるポインター [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)プリミティブ型またはプリミティブ型 (つまり、単純なバイト シーケンスで表すことができる配列) の単純な配列を指します。 これは、`IDebugPointerObject`オブジェクトが null 参照 (メモリ内のアドレスを指している必要があります) にすることはできません。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、この [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) によって表されるポインターがプリミティブ型またはプリミティブ型の単純な配列 (つまり、単純なバイトシーケンスで表すことができる配列) を指している場合に使用されます。 この `IDebugPointerObject` オブジェクトを null 参照にすることはできません (メモリ内のアドレスを指す必要があります)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

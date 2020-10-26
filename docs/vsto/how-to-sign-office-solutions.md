@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545757"
 ---
 # <a name="how-to-sign-office-solutions"></a>方法: Office ソリューションに署名する
@@ -26,7 +26,7 @@ ms.locfileid: "85545757"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- マニフェスト生成および編集ツール (*mage.exe*と*mageui.exe*) を使用してアプリケーションマニフェストと配置マニフェストを手動で編集する場合は、マニフェストを使用する前に再署名する必要があります。 詳細については、「[方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
+ マニフェスト生成および編集ツール (*mage.exe* と *mageui.exe*) を使用してアプリケーションマニフェストと配置マニフェストを手動で編集する場合は、マニフェストを使用する前に再署名する必要があります。 詳細については、「 [方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
 
 ## <a name="sign-by-using-a-certificate"></a>証明書を使用して署名する
  証明書は、一意のキーとソリューション発行者の id を含むファイルです。 証明機関から証明書を購入するか、独自の証明書を作成して証明機関に署名することができます。
@@ -41,9 +41,9 @@ ms.locfileid: "85545757"
 
 3. [ **ClickOnce マニフェストに署名する**] を選択します。
 
-4. [**ストアから選択]** をクリックするか、 **[ファイルから**選択] をクリックして証明書を探し、証明書に移動します。
+4. [ **ストアから選択]** をクリックするか、 **[ファイルから** 選択] をクリックして証明書を探し、証明書に移動します。
 
-5. 正しい証明書が使用されていることを確認するには **、[詳細] をクリック**して証明書の情報を表示します。
+5. 正しい証明書が使用されていることを確認するには **、[詳細] をクリック** して証明書の情報を表示します。
 
 ## <a name="see-also"></a>関連項目
 

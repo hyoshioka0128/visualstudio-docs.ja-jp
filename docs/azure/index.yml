@@ -10,14 +10,14 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "76022308"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509745"
 landingContent:
-- title: Azure App Service にデプロイする
+- title: Azure App Service に配置する
   linkLists:
   - linkListType: tutorial
     links:
@@ -50,17 +50,17 @@ landingContent:
   - linkListType: overview
     links:
     - text: コンテナー開発
-      url: /visualstudio/containers
+      url: ../containers/index.yml
     - text: Visual Studio のコンテナー ツール
-      url: /visualstudio/containers/overview
+      url: ../containers/overview.md
     - text: Kubernetes のツール
-      url: /visualstudio/containers/tutorial-kubernetes-tools
+      url: ../containers/tutorial-kubernetes-tools.md
 - title: Azure サービスのデバッグとパフォーマンスの分析
   linkLists:
   - linkListType: tutorial
     links:
     - text: Azure の IIS で ASP.NET Core をデバッグする
-      url: /visualstudio/debugger/remote-debugging-azure
+      url: ../debugger/remote-debugging-azure.md
     - text: Azure でクラウド サービスをデバッグする
       url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - text: 仮想マシン上で実行されているアプリをデバッグする
@@ -71,20 +71,20 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Azure Storage
-      url: vs-azure-tools-connected-services-storage.md
-    - text: Azure Key Vault
-      url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Azure Active Directory
       url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-    - text: Cognitive Services - Text Analytics
-      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-    - text: Cognitive Services - Bing News Search
-      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-    - text: Cognitive Services - Face API
-      url: /azure/cognitive-services/face/vs-face-connected-service
-    - text: Cognitive Services - Computer Vision
-      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+    - text: Azure Cache for Redis
+      url: azure-cache-for-redis-add-connected-service.md
+    - text: Azure CosmosDB
+      url: azure-cosmosdb-add-connected-service.md
+    - text: Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure SignalR
+      url: azure-signalr-add-connected-service.md
+    - text: Azure SQL Database
+      url: azure-sql-database-add-connected-service.md
+    - text: Azure Storage
+      url: vs-azure-tools-connected-services-storage.md
 - title: Azure クラウド サービス
   linkLists:
   - linkListType: how-to-guide
@@ -107,7 +107,7 @@ landingContent:
       url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - text: Visual Studio から仮想マシンへのアクセス
       url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-- title: その他のリソース
+- title: その他の参照情報
   linkLists:
   - linkListType: how-to-guide
     links:

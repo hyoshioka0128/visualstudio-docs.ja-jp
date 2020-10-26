@@ -1,5 +1,6 @@
 ---
-title: 検索式の論理/高度な演算子 (ヘルプ ビューア)
+title: 検索式の論理演算子 (ヘルプビューアー)
+ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,22 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824899"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038635"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>検索式の論理演算子と高度な演算子
 
-論理演算子と高度な検索演算子を使用して、**ヘルプ ビューアー**でヘルプ コンテンツの検索を絞り込むことができます。
+論理演算子と高度な検索演算子を使用すると、 **ヘルプビューアー**でヘルプコンテンツの検索を絞り込むことができます。
 
 ## <a name="logical-operators"></a>論理演算子
 
 論理演算子では、複数の検索用語を検索クエリでどのように組み合わせる必要があるかを指定します。 次の表に、論理演算子 AND、OR、NOT、NEAR を示します。
 
-|検索対象|使用|例|結果|
+|検索対象|vmmblue_2|例|結果|
 |-------------------|---------|-------------|------------|
 |同じアーティクル内の両方の用語|AND|dib AND palette|"dib" と "palette" の両方を含むトピック。|
 |アーティクル内のいずれかの用語|OR|raster OR vector|"raster" または "vector" を含むトピック。|
@@ -40,7 +41,7 @@ ms.locfileid: "67824899"
 
 高度な検索演算子は、アーティクル内で検索語句を探す場所を指定することで、コンテンツの検索を絞り込みます。 次の表は、利用できる 4 つの高度な検索演算子をまとめたものです。
 
-|検索対象|使用|例|結果|
+|検索対象|vmmblue_2|例|結果|
 |-------------------|---------|-------------|------------|
 |アーティクルのタイトルの用語|`title:`|`title:binaryreader`|タイトルに "binaryreader" が含まれるトピック。|
 |コード サンプルの言葉|`code:`|`code:readdouble`|コード サンプルに "readdouble" が含まれるトピック。|
@@ -66,7 +67,7 @@ ms.locfileid: "67824899"
 > [!NOTE]
 > `code:` 演算子は、コードとして一般的にマークされているコンテンツではなく、プログラミング言語ラベルでマークされているコンテンツのみを検索します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [方法: トピックを検索する](../help-viewer/find-topics.md)
-- [Microsoft Help Viewer](../help-viewer/overview.md)
+- [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)

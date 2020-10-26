@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugProcessEx2::D etach |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538149"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、セッションがプロセスのデバッグで不要になったをプロセスに通知します。  
+このメソッドは、セッションがプロセスのデバッグを終了したことをプロセスに通知します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,13 +40,13 @@ int Detach(
   
 #### <a name="parameters"></a>パラメーター  
  `pSession`  
- [in]このプロセスからデタッチするセッションを一意に識別する値。  
+ からこのプロセスをデタッチするセッションを一意に識別する値。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- インターフェイスが渡された`pSession`は cookie としてのみ扱うは、このプロセスにアタッチされた元セッション デバッグ マネージャーを一意に識別する値。 指定されたインターフェイスのメソッドのいずれも機能します。  
+## <a name="remarks"></a>注釈  
+ 渡されるインターフェイス `pSession` は、クッキーとしてのみ扱われます。これは、最初にこのプロセスにアタッチされたセッションデバッグマネージャーを一意に識別する値です。指定されたインターフェイスのメソッドは機能しません。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

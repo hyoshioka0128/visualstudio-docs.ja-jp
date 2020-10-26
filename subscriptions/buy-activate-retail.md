@@ -7,12 +7,12 @@ ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Microsoft Store で Visual Studio サブスクリプションを購入し、Visual Studio サブスクリプション ポータルでそれをアクティブ化する方法について説明します。
-ms.openlocfilehash: 217c19ea0f8c4a793fc11a84eaa8f276960af3da
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f6fdb8dcc8b0e3eaa5e67692e7c3dd92f1467c5a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903101"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247480"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio のサブスクリプションは、Microsoft ストアを通して入手できます。
 Visual Studio サブスクリプションは、[ボリューム ライセンス](https://www.microsoft.com/licensing/default)、クラウド ソリューション プロバイダー、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)、Microsoft Store など、さまざまなチャネルを通じて利用できます。  この記事では、[Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) を使用したサブスクリプションの購入とアクティブ化について説明します。  
@@ -33,15 +33,15 @@ Microsoft Store を介して入手できる Visual Studio サブスクリプシ�
 ## <a name="how-to-activate-subscriptions"></a>サブスクリプションをアクティブ化する方法
 Microsoft Store で Visual Studio のサブスクリプションを購入したら、購入後に受け取った支払いの "確認ページ" または "確認メール" からアクティブ化プロセスを開始することができます。
 
-1. 確認メールまたは購入内容の確認ページで、 **[サインインするにはここをクリックしてください]** をクリックします。
+1. 確認メールまたは購入内容の確認ページで、 **[サインインするにはここをクリックしてください]** を選択します。
 2. [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs) にリダイレクトされます。
-3. Visual Studio サブスクリプションへのアクセスに必要なメール アドレスを入力して、 **[続行]** をクリックします。
+3. Visual Studio サブスクリプションへのアクセスに必要なメール アドレスを入力して、 **[続行]** を選択します。
 4. 使用しているアカウントによって、2 つ別のサインイン ページの 1 つにリダイレクトされます。
     - 個人の "Microsoft アカウント" (MSA) を使用しているサブスクライバーには、Microsoft アカウントのパスワード ページが表示されます。
     - 職場/学校のアカウントを使用しているサブスクライバーは、組織のサインイン ページにリダイレクトされます。
 5. パスワードを入力するか、組織でのサインインに必要な情報を入力します。
 6. サインインに成功すると、[Activate Your Visual Studio Subscription]\(Visual Studio サブスクリプションをアクティブ化する\) ウィンドウが表示されます。
-7. 支払いの確認ページまたは確認メールにある プロダクト キー 情報を入力し、**アクティブ化** をクリックします。
+7. 支払いの確認ページまたは確認メールにある [プロダクト キー] 情報を入力し、 **[アクティブ化]** を選択します。
 8. サブスクリプションが [[サブスクリプション]](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) ページに表示されるようになるので、ご利用のサブスクリプションの特典のすべてにアクセスできるようになります。
 
 ## <a name="support-for-microsoft-store"></a>Microsoft Store のサポート

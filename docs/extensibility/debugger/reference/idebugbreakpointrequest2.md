@@ -1,5 +1,5 @@
 ---
-title: Iデバッグブレークポイントリクエスト2 |マイクロソフトドキュメント
+title: IDebugBreakpointRequest2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734921"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
@@ -28,29 +28,29 @@ ms.locfileid: "80734921"
 IDebugBreakpointRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- セッション デバッグ マネージャー (SDM) は、通常、このインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ 通常、セッションデバッグマネージャー (SDM) は、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- デバッグ エンジン (DE) は、保留中のブレークポイントを作成するために[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)の呼び出しを通じてこのインターフェイスを受信します。 呼び出しは DE からこのインターフェイスを取得できます[。](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ デバッグエンジン (DE) は、保留中のブレークポイントを作成するために、 [Creatependingbreakpoint ポイント](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) の呼び出しによってこのインターフェイスを受信します。 [Getbreakpointrequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)を呼び出すと、このインターフェイスを DE から取得できます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugBreakpointRequest2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugBreakpointRequest2` ます。
 
 |Method|説明|
 |------------|-----------------|
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|このブレークポイント要求のブレークポイントの場所の種類を取得します。|
-|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|このブレークポイント要求を記述するブレークポイント要求情報を取得します。|
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|このブレークポイント要求のブレークポイントの位置の種類を取得します。|
+|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|このブレークポイント要求を説明するブレークポイント要求情報を取得します。|
 
-## <a name="remarks"></a>Remarks
- デバッグ中のプログラムが読み込まれた後[、Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)の呼び出しは、保留中のブレークポイントをプログラム内の要求された場所にバインドします。
+## <a name="remarks"></a>解説
+ デバッグ中のプログラムが読み込まれると、 [バインド](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) を呼び出すと、保留中のブレークポイントがプログラム内の要求された場所にバインドされます。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)

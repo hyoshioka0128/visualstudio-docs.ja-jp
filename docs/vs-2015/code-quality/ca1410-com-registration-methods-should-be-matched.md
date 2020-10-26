@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 43767ce04b32440a5c6753f5bfcabb91487c1232
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546706"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410:COM 登録メソッドは一致しなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
@@ -53,5 +53,5 @@ ms.locfileid: "85546706"
 ## <a name="related-rules"></a>関連規則
  [CA1411:COM 登録メソッドは参照可能であることはできません](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>[COMRegasm.exe を使用したアセンブリの登録](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [(アセンブリ登録ツール)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

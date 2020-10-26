@@ -1,5 +1,5 @@
 ---
-title: 構成および SelectedItem オブジェクトのための自動化 |Microsoft Docs
+title: Configuration オブジェクトと SelectedItem オブジェクトのオートメーション |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42faf8127c1ab70d3470aa497a0cdab6058060f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157261"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>構成および SelectedItem オブジェクトのためのオートメーション
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ビルドと選択した項目のプロセスを自動化できます。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
+では、ビルドと選択された項目プロセスを自動化でき [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ます。  
   
 ## <a name="automation-for-builds"></a>ビルドの自動化  
- 実装するときに提供されるオートメーション モデルをビルドまたは構成が<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>します。 詳しくは、「[ビルド構成について](../../ide/understanding-build-configurations.md)」をご覧ください。  
+ ビルドまたは構成には、を実装するときに提供されるオートメーションモデルがあり <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider> ます。 詳しくは、「[ビルド構成について](../../ide/understanding-build-configurations.md)」をご覧ください。  
   
- VSPackage を作成して構成オプションを制御する場合は、オートメーション モデルを使用する必要があります。  
+ VSPackage を作成し、構成オプションを制御する場合は、オートメーションモデルを使用する必要があります。  
   
-## <a name="automation-for-selecteditem"></a>SelectedItem のための自動化  
- 実装を提供する必要はありません、`SelectedItem`オブジェクトの Visual Studio には、標準的な実装が含まれています。 ただし、実装、`SelectedItem`オブジェクトの場合します。 含むオブジェクトを実装する必要があります、`SelectedItem`インターフェイスし、への呼び出しに応答を返す、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> VSITEMID を持つメソッドに設定<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>します。  
+## <a name="automation-for-selecteditem"></a>SelectedItem の Automation  
+ `SelectedItem`Visual Studio には標準の実装が含まれているため、オブジェクトの実装を指定する必要はありません。 ただし、必要に応じてオブジェクトを実装することもでき `SelectedItem` ます。 VSITEMID をに設定して、インターフェイスを含むオブジェクトを実装 `SelectedItem` し、メソッドへの呼び出しに対する応答を返す必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
- [オートメーション モデルに貢献します。](../../extensibility/internals/contributing-to-the-automation-model.md)   
+ [オートメーションモデルに貢献する](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [ビルド構成について](../../ide/understanding-build-configurations.md)

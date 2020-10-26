@@ -1,5 +1,5 @@
 ---
-title: 選択と、IDE で通貨 |Microsoft Docs
+title: IDE での選択と通貨 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155810"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE での選択と通貨
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]選択を使用してユーザーの情報がオブジェクトに現在選択されている統合開発環境 (IDE) の保持*コンテキスト*します。 選択範囲のコンテキストで Vspackage を活用する通貨の 2 つの方法で追跡。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) は、選択*コンテキスト*を使用して、ユーザーの現在選択されているオブジェクトに関する情報を保持します。 選択コンテキストを使用すると、Vspackage は次の2つの方法で通貨追跡に参加できます。  
   
-- によって、通貨については、IDE に Vspackage を伝達します。  
+- Vspackage に関する通貨情報を IDE に伝達する。  
   
 - IDE 内でユーザーの現在アクティブな選択を監視します。  
   
-## <a name="selection-context"></a>選択範囲のコンテキスト  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE グローバルの追跡 IDE の通貨で独自のグローバルの選択コンテキスト オブジェクト。 次の表では、選択コンテキストを構成する要素を示します。  
+## <a name="selection-context"></a>選択コンテキスト  
+ Ide では、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 独自のグローバル選択コンテキストオブジェクトで ide の通貨がグローバルに追跡されます。 次の表は、選択コンテキストを構成する要素を示しています。  
   
 |要素|説明|  
 |-------------|-----------------|  
-|現在の階層|現在のプロジェクトでは通常;NULL の現在の階層は、ソリューション全体が現在ことを示します。|  
-|現在のアイテム Id|現在の階層内で選択した項目project ウィンドウで複数の選択肢がある場合は、複数の現在の項目があります。|  
-|現在の `SelectionContainer`|1 つまたは複数のオブジェクトのプロパティ ウィンドウがプロパティを表示する必要がありますを保持します。|  
+|現在の階層|通常は現在のプロジェクトです。現在の階層が NULL である場合は、ソリューション全体が最新であることを示します。|  
+|現在の ItemID|現在の階層内で選択されている項目。プロジェクトウィンドウに複数の選択肢がある場合は、現在の項目が複数存在する可能性があります。|  
+|現在の `SelectionContainer`|プロパティウィンドウがプロパティを表示する必要がある1つ以上のオブジェクトを保持します。|  
   
- さらに、環境では、2 つのグローバル リストを保持しています。  
+ さらに、環境では次の2つのグローバルリストが保持されます。  
   
 - アクティブな UI コマンド識別子の一覧  
   
-- 現在アクティブな要素の型の一覧。  
+- 現在アクティブな要素の型のリスト。  
   
 ### <a name="window-types-and-selection"></a>ウィンドウの種類と選択  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE では、2 つの一般的な種類に windows が整理されます。  
+ IDE では、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ウィンドウが次の2つの一般的な種類に分類されます。  
   
-- 階層型の windows  
+- 階層型 windows  
   
-- ツールとドキュメント ウィンドウなどのフレーム ウィンドウ  
+- フレームウィンドウ (ツールウィンドウやドキュメントウィンドウなど)  
   
-  IDE は、これらのウィンドウの種類ごとに異なる方法で通貨を追跡します。  
+  IDE では、これらのウィンドウの種類ごとに異なる方法で通貨を追跡します。  
   
-  最も一般的なプロジェクトの種類 ウィンドウは、IDE を制御するソリューション エクスプ ローラーです。 プロジェクトの種類 ウィンドウは、グローバルな階層と、グローバルの選択コンテキストの ItemID を追跡し、ウィンドウが現在の階層を決定する、ユーザーの選択に依存しています。 プロジェクトの種類の windows の場合、環境には、グローバル サービスが備わっています<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>を使用して、どの Vspackage が開いている要素の現在の値を監視できます。 プロパティの参照、環境では、このグローバル サービスによって駆動されます。  
+  最も一般的なプロジェクトの種類のウィンドウは、IDE が制御するソリューションエクスプローラーです。 プロジェクトの種類のウィンドウは、グローバルな選択コンテキストのグローバル階層と ItemID を追跡し、ウィンドウは現在の階層を決定するためにユーザーの選択に依存します。 プロジェクトの種類が windows の場合、環境は、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> vspackage が開いている要素の現在の値を監視できるグローバルサービスを提供します。 環境でのプロパティの参照は、このグローバルサービスによって行われます。  
   
-  フレーム ウィンドウ、その一方で、使用して、DocObject フレーム ウィンドウ内でプッシュ SelectionContext 値 (階層/ItemID/SelectionContainer 忍耐)。 . フレーム ウィンドウは、サービスを使用して<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>この目的のためです。 DocObject は選択コンテナーでは、値のみをプッシュできる階層構造のローカル値のままと通常 MDI 子ドキュメントの ItemID が変更されません。  
+  一方、フレームウィンドウでは、フレームウィンドウ内の DocObject を使用して SelectionContext 値 (hierarchy/ItemID/Selectioncontext trio) をプッシュします。 . フレームウィンドウ <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> この目的のためにサービスを使用します。 DocObject は、選択コンテナーの値のみをプッシュできます。これは、MDI 子ドキュメントの場合と同様に、hierarchy および ItemID のローカル値は変更されません。  
   
 ### <a name="events-and-currency"></a>イベントと通貨  
- 通貨の環境の概念に影響する 2 種類のイベントが発生する可能性があります。  
+ 環境の通貨の概念に影響するイベントには、次の2種類があります。  
   
-- グローバル レベルに伝達され、ウィンドウ フレームの選択コンテキストを変更するイベントです。 このようなイベントの例には、グローバル ツール ウィンドウが開かれている、または開いているプロジェクトの種類のツール ウィンドウは、開いている MDI 子ウィンドウが含まれます。  
+- グローバルレベルに反映され、ウィンドウフレーム選択コンテキストを変更するイベント。 この種のイベントの例としては、開いている MDI 子ウィンドウ、開かれているグローバルツールウィンドウ、または開いているプロジェクトの種類のツールウィンドウなどがあります。  
   
-- トレース ウィンドウ フレームの選択コンテキスト内で要素を変更するイベントです。 例には、プロジェクトの種類 ウィンドウで選択を変更するか DocObject 内の選択範囲の変更が含まれます。  
+- ウィンドウのフレーム選択コンテキスト内でトレースされた要素を変更するイベント。 例としては、DocObject 内での選択の変更や、プロジェクトタイプウィンドウでの選択の変更などがあります。  
   
-## <a name="see-also"></a>関連項目  
- [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)   
+## <a name="see-also"></a>参照  
+ [選択コンテキストオブジェクト](../../extensibility/internals/selection-context-objects.md)   
  [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)

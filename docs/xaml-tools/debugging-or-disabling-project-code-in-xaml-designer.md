@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331069"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML デザイナーでプロジェクト コードをデバッグまたは無効化する
@@ -69,7 +69,7 @@ ms.locfileid: "85331069"
 
 - ハンドルされない例外のダイアログで、 **[ここをクリックしてプロジェクト コードの実行を無効にし、デザイナーを再読み込み]** リンクを選びます。
 
-- または、 **XAML デザイナー**のツールバーで、[**プロジェクトコードを無効にする**] ボタンをクリックします。
+- または、 **XAML デザイナー**のツールバーで、[ **プロジェクトコードを無効にする** ] ボタンをクリックします。
 
      ![[プロジェクト コードの無効化] ボタン](media/xaml_disablecode.png)
 

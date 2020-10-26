@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901230"
 ---
 # <a name="what-is-debugging"></a>デバッグとは
@@ -30,7 +30,7 @@ Visual Studio デバッガーは強力なツールです。 その使用方法�
 
 ## <a name="debug-mode-vs-running-your-app"></a>デバッグ モードとアプリの実行
 
-Visual Studio で初めてアプリを実行する場合は、ツールバーの緑色の矢印ボタン ![[デバッグの開始]](../debugger/media/dbg-tour-start-debugging.png "[デバッグの開始]") (または **F5** キー) を押して起動することができます。 既定では、 **[デバッグ]** の値は左側のドロップダウンに表示されます。 そのため、Visual Studio を初めて使用する場合、アプリのデバッグがアプリの実行と関係があると思われるかもしれません。しかし、基本的にはこれらは 2 つのタスクは大きく異なります。
+Visual Studio で初めてアプリを実行する場合は、ツール バーの緑色の矢印ボタン ![[デバッグの開始]](../debugger/media/dbg-tour-start-debugging.png "デバッグの開始") (または **F5** キー) を押して起動することができます。 既定では、 **[デバッグ]** の値は左側のドロップダウンに表示されます。 そのため、Visual Studio を初めて使用する場合、アプリのデバッグがアプリの実行と関係があると思われるかもしれません。しかし、基本的にはこれらは 2 つのタスクは大きく異なります。
 
 ![デバッグ ビルドを選択する](../debugger/media/what-is-debugging-debug-build.png)
 

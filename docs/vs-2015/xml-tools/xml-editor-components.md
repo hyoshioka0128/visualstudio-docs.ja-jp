@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbbe5e1590cdc32f19c6c9131af629f97a75a6b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669478"
 ---
 # <a name="xml-editor-components"></a>XML エディターのコンポーネント
@@ -24,14 +24,14 @@ ms.locfileid: "72669478"
 ## <a name="in-this-section"></a>このセクションの内容
  [[その他] ([オプション] ダイアログボックス-[テキストエディター](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md) ]-[XML])XML エディターのオートコンプリートとスキーマの設定について説明します。
 
- [[XML ドキュメントのプロパティ] ([プロパティ] ウィンドウ)](../xml-tools/xml-document-properties-properties-window.md)使用できる基本的なドキュメント情報について説明します。
+ [[XML ドキュメントのプロパティ] ([プロパティ] ウィンドウ)](../xml-tools/xml-document-properties-properties-window.md) 使用できる基本的なドキュメント情報について説明します。
 
  [[書式設定] ([オプション] ダイアログボックス-[テキストエディター]-[XML](../xml-tools/formatting-xml-text-editor-options-dialog-box.md) ])属性の書式設定、混合コンテンツの処理方法などを制御する設定について説明します。
 
- [[XML スキーマ] ダイアログボックス](../xml-tools/xml-schemas-dialog-box.md)XML ドキュメントに関連付ける XML スキーマを選択する方法について説明します。
+ [[XML スキーマ] ダイアログボックス](../xml-tools/xml-schemas-dialog-box.md) XML ドキュメントに関連付ける XML スキーマを選択する方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
- [方法: 全般エディターオプションを設定する](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)表示、ステートメント入力候補などの全般設定を設定する方法について説明します。
+ [方法: 全般エディターオプションを設定する](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2) 表示、ステートメント入力候補などの全般設定を設定する方法について説明します。
 
 ## <a name="see-also"></a>参照
  [XML エディター](../xml-tools/xml-editor.md)

@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815774"
 ---
 # <a name="array-or-arguments-object-expected"></a>配列または引数のオブジェクトが必要です。
-配列を引数として指定しませんでした。 このエラーは、**関数 prototype. apply**メソッドにのみ適用されます。 指定した場合、この関数の2番目の引数は、 `Array` オブジェクトまたは**Arguments**オブジェクトである必要があります。  
+配列を引数として指定しませんでした。 このエラーは、 **関数 prototype. apply** メソッドにのみ適用されます。 指定した場合、この関数の2番目の引数は、 `Array` オブジェクトまたは **Arguments** オブジェクトである必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

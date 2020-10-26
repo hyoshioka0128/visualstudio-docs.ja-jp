@@ -19,19 +19,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984513"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint のサイト列、コンテンツタイプ、およびリストの作成
-  Visual Studio には、*リスト*や*コンテンツの種類*など、さまざまな基本的な SharePoint アイテムのプロジェクトアイテムテンプレートが用意されています。このテンプレートには、サイトの列 (または*フィールド*) を組み込むことができます。 コンテンツの種類とリストの新しい設計者は、これらの項目をこれまで以上に簡単に作成できるようにします。
+  Visual Studio には、 *リスト* や *コンテンツの種類*など、さまざまな基本的な SharePoint アイテムのプロジェクトアイテムテンプレートが用意されています。このテンプレートには、サイトの列 (または *フィールド*) を組み込むことができます。 コンテンツの種類とリストの新しい設計者は、これらの項目をこれまで以上に簡単に作成できるようにします。
 
 ## <a name="site-columns"></a>サイト内の列
  サイト列は、SharePoint プロジェクトに追加できる最も基本的な要素の1つです。 サイト列は、連絡先リストに含まれる連絡先の電話番号、コメント、市区町村名などのデータの種類を表します。
 
- [新しいサイト列] プロジェクト項目テンプレートを使用すると、以前のバージョンの Visual Studio よりも簡単にサイト列を作成できます。 新しいサイト列を作成した後、サイト列の*要素 .xml*ファイル内の xml を変更して、表示名、データ型、SharePoint にサイト列を表示するグループなど、目的の情報を含めることができます。 サイト列の詳細については、「[列の概要](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14))」を参照してください。
+ [新しいサイト列] プロジェクト項目テンプレートを使用すると、以前のバージョンの Visual Studio よりも簡単にサイト列を作成できます。 新しいサイト列を作成した後、サイト列の *Elements.xml* ファイル内の XML を変更して、表示名、データ型、SharePoint にサイト列を表示するグループなど、目的の情報を含めることができます。 サイト列の詳細については、「 [列の概要](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14))」を参照してください。
 
 ## <a name="content-types-and-lists"></a>コンテンツの種類とリスト
  コンテンツの種類とリストは、SharePoint で最も頻繁に使用される要素の中にあります。
@@ -40,7 +40,7 @@ ms.locfileid: "72984513"
 
  リストは、他のユーザーと共有できる SharePoint 内の情報のコレクションです。 リストは、データを含む列の行で構成されます。 リストの例としては、タスク一覧、連絡先リスト、お知らせリストなどがあります。
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の新しいコンテンツの種類とリストデザイナーを使用すると、以前のバージョンの Visual Studio よりもはるかに簡単かつ直感的にサイトコンテンツの種類とリストを作成できます。 UI では、使い慣れた方法でコンテンツの種類とリストを視覚的に作成できます。また、リストのデータを並べ替えたり、グループの見出しを使用したりすることができます。 コンテンツの種類の詳細については、「[コンテンツの種類](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))」を参照してください。 リストの詳細については、「フォームと[リストビュー](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14))の[一覧](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14))」を参照してください。
+ の新しいコンテンツの種類とリストデザイナーに [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] より、以前のバージョンの Visual Studio よりもはるかに簡単で直感的なサイトコンテンツの種類とリストが作成されます。 UI では、使い慣れた方法でコンテンツの種類とリストを視覚的に作成できます。また、リストのデータを並べ替えたり、グループの見出しを使用したりすることができます。 コンテンツの種類の詳細については、「 [コンテンツの種類](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))」を参照してください。 リストの詳細については、「フォームと[リストビュー](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14))の[一覧](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14))」を参照してください。
 
 ## <a name="related-topics"></a>関連トピック
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656290"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>方法: XML リテラルに XML スキーマ デザイナーを使用する
@@ -25,17 +25,17 @@ ms.locfileid: "72656290"
 
 1. Visual Studio 2010 を起動します。
 
-2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** を選択します。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 **[プロジェクトの種類]** で **[その他の言語]** を選択し、 **[Visual Basic]** を選択します。 **テンプレート**については、[コンソールアプリケーション] を選択します。 次に、 **[名前]** フィールドに「`XMLLiterals`」と入力し、 **[場所]** フィールドにプロジェクトの場所を入力します。 **[OK]** をクリックします。
+2. **[ファイル]** メニューの **[新規作成]** を選択し、**[プロジェクト]** を選択します。 **[新しいプロジェクト]** ダイアログ ボックスが表示されます。 [ **プロジェクトの種類**] で [ **その他の言語** ] を選択し、[ **Visual Basic**] を選択します。 **テンプレート**については、[コンソールアプリケーション] を選択します。 次に、[ `XMLLiterals` **名前** ] フィールドに「」と入力し、[ **場所** ] フィールドにプロジェクトの場所を入力します。 **[OK]** をクリックします。
 
      新しいプロジェクトが作成されます。 XMLLiterals プロジェクトには、Module1.vb という 1 つの Visual Basic ソース ファイルが含まれています。
 
 ### <a name="to-add-an-existing-xsd-file-to-the-project"></a>既存の XSD ファイルをプロジェクトに追加するには
 
-1. 新しいテキストファイルをメモ帳で開きます。[注文書スキーマ](../xml-tools/sample-xsd-file-simple-schema.md)から XML スキーマのサンプルコードをコピーし、ファイルに貼り付けます。
+1. 新しいテキストファイルをメモ帳で開きます。 [注文書スキーマ](../xml-tools/sample-xsd-file-simple-schema.md) から XML スキーマのサンプルコードをコピーし、ファイルに貼り付けます。
 
 2. PurchaseOrderSchema.xsd という名前でファイルをどこかに保存します。
 
-3. ソリューションエクスプローラーで、プロジェクトの名前を右クリックし、 **[追加]** 、既存の **[項目]** の順に選択します。 **[追加 Item]** ダイアログボックスが表示されます。 PurchaseOrderSchema ファイルを参照して選択し、 **[追加]** をクリックします。
+3. ソリューションエクスプローラーで、プロジェクトの名前を右クリックし、[ **追加**]、[既存の **項目**] の順に選択します。 **[既存項目の追加]** ダイアログ ボックスが表示されます。 PurchaseOrderSchema.xsd ファイルを参照して選択し、 **[追加]** をクリックします。
 
      XMLLiterals プロジェクトに、Module1.vb および PurchaseOrderSchema.xsd という 2 つのファイルが含まれるようになります。
 
@@ -70,6 +70,6 @@ ms.locfileid: "72656290"
     End Module
     ```
 
-2. Xml リテラルまたは XML 名前空間インポートで任意の XML ノードを右クリックし、 **[スキーマエクスプローラーで表示]** を選択します。
+2. XML リテラルまたは XML 名前空間インポートの XML ノードを右クリックして、 **[スキーマ エクスプローラーで表示]** をクリックします。
 
      XML スキーマ エクスプローラーが、XML スキーマ セットに関連付けられた XML リテラルを持つ Visual Basic ファイルと並んで表示されます。

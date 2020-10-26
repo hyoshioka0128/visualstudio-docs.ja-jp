@@ -6,12 +6,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589566"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249963"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio の DPI 認識を無効にする
 
@@ -54,7 +54,7 @@ Visual Studio が DPI 非対応プロセスとして実行されると、デザ�
 > - Visual Studio を DPI 非対応のプロセスとして再起動するオプションを選択したとき、ツール ウィンドウのドッキングを解除していた場合、ツール ウィンドウの位置が変更されることがあります。
 > - 既定の Visual Basic プロファイルを使用する場合、または **[ツール]**  >  **[オプション]**  >  **[プロジェクトおよびソリューション]** で、 **[新しいプロジェクトを作成時に保存する]** オプションの選択を解除している場合、Visual Studio では、DPI 非対応プロセスとして再起動したとき、プロジェクトを再び開くことができません。 しかし、 **[ファイル]**  >  **[最近使ったプロジェクトとソリューション]** を選択することで、プロジェクトを開くことができます。
 
-**Windows フォーム デザイナー**で作業が完了したら、Visual Studio を DPI 対応プロセスとして再起動することが重要です。 DPI 非対応のプロセスとして実行していると、フォントがぼやけて表示されたり、**XAML デザイナー**など、他のデザイナーで問題が発生したりする可能性があります。 DPI 非対応モードで実行されているときに Visual Studio を閉じて再び開くと、再び DPI 対応になります。 また、情報バーの **[DPI 対応のプロセスとして Visual Studio を再起動します]** オプションをクリックできます。
+**Windows フォーム デザイナー**で作業が完了したら、Visual Studio を DPI 対応プロセスとして再起動することが重要です。 DPI 非対応のプロセスとして実行していると、フォントがぼやけて表示されたり、**XAML デザイナー**など、他のデザイナーで問題が発生したりする可能性があります。 DPI 非対応モードで実行されているときに Visual Studio を閉じて再び開くと、再び DPI 対応になります。 また、情報バーの **[DPI 対応のプロセスとして Visual Studio を再起動します]** オプションを選択できます。
 
 ### <a name="add-a-registry-entry"></a>レジストリ エントリを追加する
 

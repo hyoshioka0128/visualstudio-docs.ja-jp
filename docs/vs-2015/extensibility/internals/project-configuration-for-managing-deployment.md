@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの展開を管理するための構成 |Microsoft Docs
+title: 配置を管理するためのプロジェクト構成 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5b16c3392e9432ba540130d45f6907de15b51ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429952"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>展開の管理のためのプロジェクト構成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-展開は、デバッグ、およびインストールの予期される場所に、ビルド プロセスからの出力項目を物理的に移動するのです。 たとえば、Web アプリケーションをローカル コンピューター上に構築され、サーバー上に配置しする可能性があります。  
+配置は、デバッグとインストールのために、ビルドプロセスから予想される場所に出力項目を物理的に移動する操作です。 たとえば、Web アプリケーションがローカルコンピューター上に構築され、サーバー上に配置される場合があります。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] サポートを投影する 2 つの方法は、展開にかかわることができます。  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、配置にプロジェクトを参加させる2つの方法をサポートしています。  
   
-- 展開プロセスの対象。  
+- デプロイプロセスの対象となります。  
   
-- 展開プロセスのマネージャー。  
+- デプロイプロセスのマネージャーとして。  
   
-  ソリューションを展開する前にまず、展開オプションを構成する展開プロジェクトを追加する必要があります。 デプロイ プロジェクトが存在しない場合かどうかは、1 つを選択すると、作成するよく寄せられる、**ソリューションの配置**から、**ビルド**メニューか、ソリューションを右クリックします。 クリックすると**はい**が表示されます、**新しいプロジェクトの追加** ダイアログ ボックスで、**リモートの展開ウィザード**プロジェクトを選択します。  
+  ソリューションを配置する前に、まず配置プロジェクトを追加して配置オプションを構成する必要があります。 Deploy プロジェクトがまだ存在しない場合は、[**ビルド**] メニューの [**ソリューションの配置**] をクリックするか、ソリューションを右クリックして、プロジェクトを作成するかどうかを確認するメッセージが表示されます。 **[はい]** をクリックすると、**リモート配置ウィザード**プロジェクトが選択された状態で [**新しいプロジェクトの追加**] ダイアログボックスが開きます。  
   
-  リモートの展開ウィザードでは、(Windows または Web) アプリケーションの種類、プロジェクト出力グループに含める、追加のファイルに含める、およびリモート コンピューターに配置するが表示されます。 ウィザードの最後のページは、選択したオプションの概要を表示します。  
+  リモート配置ウィザードでは、アプリケーションの種類 (Windows または Web)、含めるプロジェクト出力グループ、含める追加ファイル、展開先のリモートコンピューターのいずれかを指定するよう求められます。 ウィザードの最後のページには、選択したオプションの概要が表示されます。  
   
-  展開プロセスの対象となるプロジェクトは、別の環境に移動する必要があります出力項目を生成します。 これらの出力パラメーターとして項目が説明されている、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>がプライマリ プロジェクト出力のグループに許可する場合の目的のインターフェイス。 実装に関する詳細情報の`IVsProjectCfg2`を参照してください[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)します。  
+  配置プロセスの対象となるプロジェクトでは、代替環境に移動する必要がある出力項目が生成されます。 これらの出力項目は <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 、プロジェクトが出力をグループ化できるようにする場合の主な目的として、インターフェイスのパラメーターとして記述されています。 の実装に関する詳細につい `IVsProjectCfg2` ては、「 [出力のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)」を参照してください。  
   
-  展開プロジェクトは、展開プロセスを管理するは、展開コマンドを有効にし、このコマンドが選択されているときに応答します。 配置プロジェクトの実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>配置を実行し、呼び出しを行うのためのインターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback>レポートへのインターフェイスは、ステータス イベントを展開します。  
+  配置プロセスを管理する配置プロジェクトでは、[配置] コマンドを有効にし、このコマンドを選択すると応答します。 配置プロジェクトは、配置を実行するインターフェイスを実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> し、配置 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> ステータスイベントを報告するためにインターフェイスを呼び出します。  
   
-  構成は、ビルドまたは配置の動作に影響する依存関係を指定できます。 ビルドまたは配置する必要がありますか、ビルドまたは配置前に、または後、構成自体をビルドまたは配置されるプロジェクト依存関係とは。 プロジェクト間でのビルド依存関係と共に説明しています、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>インターフェイスし、依存関係をデプロイ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス。 詳細については、次を参照してください。[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)します。  
+  構成では、ビルドまたは配置操作に影響を与える依存関係を指定できます。 ビルドまたは配置の依存関係は、構成自体がビルドまたは配置される前または後にビルドまたは配置する必要があるプロジェクトです。 プロジェクト間のビルド依存関係についてはインターフェイスで説明 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> し、インターフェイスを使用して依存関係を配置し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> ます。 詳細については、「 [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)   
- [ビルドするためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)   
+ [ビルドのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)   
  [出力のためのプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)

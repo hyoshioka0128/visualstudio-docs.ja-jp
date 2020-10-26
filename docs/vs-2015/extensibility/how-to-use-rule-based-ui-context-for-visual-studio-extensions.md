@@ -6,10 +6,10 @@ ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
 ms.openlocfilehash: 26f66f635b2c248af01067d9dbd96fd997593593
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535565"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: Visual Studio 拡張機能のルール ベースの UI コンテキストを使用する
@@ -141,7 +141,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
 ## <a name="compatibility-with-cross-version-extension"></a>バージョン間の拡張機能との互換性
  ルールベースの UI コンテキストは、Visual Studio 2015 の新機能であり、以前のバージョンに移植されることはありません。 これにより、Visual Studio 2013 以前で自動読み込みする必要がある複数のバージョンの Visual Studio を対象とする拡張機能やパッケージに問題が生じますが、Visual Studio 2015 で自動読み込みが行われないようにするために、ルールベースの UI コンテキストを利用することができます。
 
- このようなパッケージをサポートするために、レジストリの AutoLoadPackages エントリは、Visual Studio 2015 以降でエントリをスキップする必要があることを示すフラグを値フィールドに提供できるようになりました。 これを行うには、flags オプションをに追加し <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> ます。 Vspackage は、 **SkipWhenUIContextRulesActive**オプションを属性に追加して <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 、Visual Studio 2015 以降ではエントリを無視することを示すことができるようになりました。
+ このようなパッケージをサポートするために、レジストリの AutoLoadPackages エントリは、Visual Studio 2015 以降でエントリをスキップする必要があることを示すフラグを値フィールドに提供できるようになりました。 これを行うには、flags オプションをに追加し <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> ます。 Vspackage は、 **SkipWhenUIContextRulesActive** オプションを属性に追加して <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 、Visual Studio 2015 以降ではエントリを無視することを示すことができるようになりました。
 
 ## <a name="extensible-ui-context-rules"></a>拡張可能な UI コンテキストの規則
  場合によっては、パッケージが静的 UI コンテキストルールを使用できないことがあります。 たとえば、コマンドの状態が、インポートされた MEF プロバイダーでサポートされているエディターの種類に基づいているように、拡張をサポートするパッケージがあるとします。 現在の編集の種類をサポートする拡張機能がある場合は、コマンドが有効になります。 このような場合は、パッケージ自体が静的 UI コンテキストルールを使用できません。これは、使用できる MEF 拡張機能によって、用語が変わるためです。

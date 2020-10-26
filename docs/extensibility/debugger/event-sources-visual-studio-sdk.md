@@ -1,5 +1,5 @@
 ---
-title: イベント ソース ( Visual Studio SDK) |マイクロソフトドキュメント
+title: イベントソース (Visual Studio SDK) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738773"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>イベント ソース
-イベントの 2 つのソース: デバッグ エンジン (DE) とセッション デバッグ マネージャー (SDM) があります。 DE から送信されるイベントは NULL 以外のエンジンを持ち、SDM から送信されるイベントには NULL エンジンがあります。
+# <a name="event-sources-visual-studio-sdk"></a>イベントソース (Visual Studio SDK)
+イベントには、デバッグエンジン (DE) とセッションデバッグマネージャー (SDM) の2つのソースがあります。 DE から送信されるイベントには NULL 以外のエンジンがありますが、SDM から送信されるイベントには NULL のエンジンがあります。
 
 ## <a name="example"></a>例
-次の例は、DE から SDM に**IDebugProgramCreateEvent2**を送信する方法を示しています。
+次の例は、DE から SDM に **IDebugProgramCreateEvent2** を送信する方法を示しています。
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

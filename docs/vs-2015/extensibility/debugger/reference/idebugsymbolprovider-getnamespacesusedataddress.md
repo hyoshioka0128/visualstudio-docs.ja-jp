@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress |Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNamespacesUsedAtAddress |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c25ea68130f546ea90216c831d321e6498af12a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421292"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このメソッドは、デバッグ アドレスに関連付けられた名前空間の列挙子を作成します。  
+このメソッドは、デバッグアドレスに関連付けられた名前空間の列挙子を作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,17 +42,17 @@ int GetNamespacesUsedAtAddress(
   
 #### <a name="parameters"></a>パラメーター  
  `pAddress`  
- [in]デバッグ アドレス。  
+ からデバッグアドレス。  
   
  `ppEnum`  
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)名前空間の列挙子。  
+ 入出力名前空間の [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 列挙子を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ある可能性があります指定されたデバッグ アドレスに関連付けられているいくつかの名前空間には、名前空間または複数が入れ子になった`using`ステートメント。  
+## <a name="remarks"></a>注釈  
+ たとえば、入れ子になった名前空間や複数のステートメントなど、特定のデバッグアドレスに関連付けられている名前空間が複数存在する場合があり `using` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

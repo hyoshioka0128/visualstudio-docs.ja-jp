@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ドキュメント レベルのプロジェクトで複合データ バインディング'
+title: 'チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,24 +16,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67692344"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメント レベルのプロジェクトで複合データ バインディング
-  このチュートリアルでは、ドキュメント レベルのプロジェクトで複合データ バインディングの基本について説明します。 Microsoft Office Excel ワークシート内で複数のセルは、Northwind SQL Server データベース内のフィールドにバインドできます。
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング
+  このチュートリアルでは、ドキュメントレベルのプロジェクトでの複合データバインディングの基本について説明します。 Microsoft Office Excel ワークシートの複数のセルを、Northwind SQL Server データベースのフィールドにバインドできます。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  このチュートリアルでは、次の作業について説明します。
 
-- データ ソースのブック プロジェクトに追加します。
+- ブックプロジェクトにデータソースを追加します。
 
-- データ バインド コントロールをワークシートに追加します。
+- ワークシートにデータバインドコントロールを追加する。
 
-- 元のデータベースには、データの変更を保存しています。
+- データの変更をデータベースに保存し直しています。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -44,139 +44,139 @@ ms.locfileid: "67692344"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- SQL Server の Northwind サンプル データベースでのサーバーへのアクセス。
+- Northwind SQL Server サンプルデータベースを使用したサーバーへのアクセス。
 
-- SQL Server データベースの読み書きアクセス許可。
+- SQL Server データベースに対する読み取りと書き込みの権限。
 
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
- 最初の手順では、Excel ブック プロジェクトを作成します。
+ 最初の手順では、Excel ブックプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. 名前の Excel ブック プロジェクトを作成**マイの複合データ バインディング**します。 ウィザードで、次のように選択します。**新しい文書を作成**です。
+1. 「 **My 複合 Data Binding**」という名前の Excel ブックプロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。
 
-     詳細については、「[方法 :Visual Studio での Office プロジェクトの作成](../vsto/how-to-create-office-projects-in-visual-studio.md)です。
+     詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     デザイナーで新しい Excel ブックを開き、**マイの複合データ バインディング**プロジェクトを**ソリューション エクスプ ローラー**します。
+     新しい Excel ブックがデザイナーで開き、 **[My Complex Data Binding** ] プロジェクトが **ソリューションエクスプローラー**に追加されます。
 
-## <a name="create-the-data-source"></a>データ ソースを作成します。
+## <a name="create-the-data-source"></a>データソースを作成する
  **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
 
-1. 場合、**データソース**ウィンドウが表示されない、メニュー バーで 表示することによって、**ビュー** > **その他の Windows**  >  **データ ソース**します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
 
 2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
 
-3. 選択**データベース**順にクリックします**次**します。
+3. [ **データベース** ] を選択し、[ **次へ**] をクリックします。
 
-4. Northwind サンプル SQL Server データベースへのデータ接続を選択するかを使用して新しい接続を追加、**新しい接続**ボタンをクリックします。
+4. Northwind サンプル SQL Server データベースへのデータ接続を選択するか、[ **新しい接続** ] ボタンを使用して新しい接続を追加します。
 
-5. 接続を選択または作成後にをクリックして**次**します。
+5. 接続を選択または作成したら、[ **次へ**] をクリックします。
 
-6. クリックしてが選択されている場合、接続を保存するオプションをオフに**次**します。
+6. 選択されている場合は、接続を保存するオプションをオフにして、[ **次へ**] をクリックします。
 
-7. 展開、**テーブル**内のノード、**データベース オブジェクト**ウィンドウ。
+7. [**データベースオブジェクト**] ウィンドウで、[**テーブル**] ノードを展開します。
 
-8. 次のチェック ボックスをオン、**従業員**テーブル。
+8. **Employees**テーブルの横にあるチェックボックスをオンにします。
 
 9. **[完了]** をクリックします。
 
-   ウィザードでは追加、**従業員**テーブル、**データ ソース**ウィンドウ。 表示されているプロジェクトに型指定されたデータセットを追加**ソリューション エクスプ ローラー**します。
+   [**データソース**] ウィンドウに [ **Employees** ] テーブルが追加されます。 また、 **ソリューションエクスプローラー**に表示される、型指定されたデータセットをプロジェクトに追加します。
 
-## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加します。
- ワークシートが表示されます、**従業員**ブックを開いたときにテーブルです。 ユーザーは、データに変更を加えるし、データベースに戻すボタンをクリックしてそれらの変更を保存することになります。
+## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加する
+ ブックを開くと、ワークシートに **Employees** テーブルが表示されます。 ユーザーは、データに変更を加えた後、ボタンをクリックすることによって、変更内容をデータベースに保存することができます。
 
- テーブルに自動的にワークシートをバインドするに追加することができます、<xref:Microsoft.Office.Tools.Excel.ListObject>からワークシートにコントロール、**データソース**ウィンドウ。 ユーザーに提供する、変更を保存するオプションを追加、<xref:System.Windows.Forms.Button>コントロールから、**ツールボックス**します。
+ ワークシートをテーブルに自動的にバインドするには、 <xref:Microsoft.Office.Tools.Excel.ListObject> [ **データソース** ] ウィンドウからワークシートにコントロールを追加します。 変更を保存するためのオプションをユーザーに付与するには、 <xref:System.Windows.Forms.Button> **ツールボックス**からコントロールを追加します。
 
-#### <a name="to-add-a-list-object"></a>リスト オブジェクトを追加するには
+#### <a name="to-add-a-list-object"></a>リストオブジェクトを追加するには
 
-1. いることを確認、**マイの複雑なデータ Binding.xlsx** 、Visual Studio デザイナーで開いているブックで**Sheet1**が表示されます。
+1. **Sheet1**が表示された状態で、Visual Studio デザイナーで **[My Complex Data Binding.xlsx** ] ブックが開いていることを確認します。
 
-2. 開く、**データソース**ウィンドウと選択、**従業員**ノード。
+2. [ **データソース** ] ウィンドウを開き、[ **Employees** ] ノードを選択します。
 
 3. 表示されるドロップダウン矢印をクリックします。
 
-4. 選択**ListObject**ドロップダウン リストでします。
+4. ドロップダウンリストから [ **ListObject** ] を選択します。
 
-5. ドラッグ、**従業員**テーブル セルに**A6**します。
+5. **Employees**テーブルをセル**A6**にドラッグします。
 
-     A<xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール`EmployeesListObject`セルは**A6**します。 、同時に、<xref:System.Windows.Forms.BindingSource>という名前`EmployeesBindingSource`、テーブル アダプターの場合は、および<xref:System.Data.DataSet>インスタンスは、プロジェクトに追加されます。 コントロールにバインドする、<xref:System.Windows.Forms.BindingSource>にさらにバインドされます、<xref:System.Data.DataSet>インスタンス。
+     <xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール `EmployeesListObject` がセル**A6**に作成されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前 `EmployeesBindingSource` のテーブルアダプターと <xref:System.Data.DataSet> インスタンスがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
 
 ### <a name="to-add-a-button"></a>ボタンを追加するには
 
-1. **コモン コントロール**のタブ、**ツールボックス**、追加、<xref:System.Windows.Forms.Button>コントロールをセル**A4**ワークシートの。
+1. **ツールボックス**の [**コモンコントロール**] タブから、 <xref:System.Windows.Forms.Button> ワークシートのセル**A4**にコントロールを追加します。
 
-   次の手順では、ワークシートが開いたら、ボタンにテキストを追加します。
+   次の手順では、ワークシートが開いたときにボタンにテキストを追加します。
 
-## <a name="initialize-the-control"></a>コントロールを初期化します。
- テキスト、ボタンを追加、<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>イベント ハンドラー。
+## <a name="initialize-the-control"></a>コントロールを初期化します
+ イベントハンドラーのボタンにテキストを追加 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> します。
 
 ### <a name="to-initialize-the-control"></a>コントロールを初期化するには
 
-1. **ソリューション エクスプ ローラー**を右クリックして**Sheet1.vb**または**Sheet1.cs**、] をクリックし、**コードの表示**ショートカット メニューの [します。
+1. **ソリューションエクスプローラー**で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
-2. 次のコードを追加、 `Sheet1_Startup` 、b のテキストを設定するメソッドを`utton`します。
+2. 次のコードをメソッドに追加して `Sheet1_Startup` 、b のテキストを設定し `utton` ます。
 
     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
 
-3. C# の場合のみ、追加のイベント ハンドラー、<xref:System.Windows.Forms.Control.Click>イベントを`Sheet1_Startup`メソッド。
+3. C# の場合のみ、イベントのイベントハンドラーを <xref:System.Windows.Forms.Control.Click> メソッドに追加し `Sheet1_Startup` ます。
 
     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
 
-   今すぐ処理するコードを追加、<xref:System.Windows.Forms.Control.Click>ボタンのイベント。
+   次に、ボタンのイベントを処理するコードを追加 <xref:System.Windows.Forms.Control.Click> します。
 
-## <a name="save-changes-to-the-database"></a>変更をデータベースに保存します。
- すべての変更を加え、データベースに明示的に保存されるまでに、データがローカル データセットにのみ存在します。
+## <a name="save-changes-to-the-database"></a>変更をデータベースに保存する
+ データは、明示的にデータベースに保存されるまで、ローカルデータセットにのみ存在します。
 
-### <a name="to-save-changes-to-the-database"></a>データベースに変更を保存するには
+### <a name="to-save-changes-to-the-database"></a>変更をデータベースに保存するには
 
-1. イベント ハンドラーを追加、<xref:System.Windows.Forms.Control.Click>のイベント、`button`データセットの元のデータベースに行われたすべての変更をコミットする次のコードを追加します。
+1. のイベントのイベントハンドラーを追加 <xref:System.Windows.Forms.Control.Click> し、 `button` 次のコードを追加して、データセットに加えられたすべての変更をデータベースに戻します。
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
- これで、想定どおりにデータが表示されることと、リスト オブジェクト内のデータを操作できることを確認するブックをテストできます。
+ ブックをテストして、データが想定どおりに表示されること、およびリストオブジェクト内のデータを操作できることを確認できるようになりました。
 
-### <a name="to-test-the-data-binding"></a>データ バインドをテストするには
+### <a name="to-test-the-data-binding"></a>データバインディングをテストするには
 
 - **F5**キーを押します。
 
-     ブックを開いたときに、リスト オブジェクトがからデータが入力されていることを確認、**従業員**テーブル。
+     ブックが開いたときに、リストオブジェクトに **Employees** テーブルのデータが格納されていることを確認します。
 
 ### <a name="to-modify-data"></a>データを変更するには
 
-1. セルをクリックします。 **B7**、名前を格納する必要があります**Davolio**します。
+1. 「**西脇**」という名前を含むセル**B7**をクリックします。
 
-2. 名前を入力します**Anderson**、し、キーを押します**Enter**します。
+2. 「 **Anderson**」という名前 **を入力し、enter キーを**押します。
 
 ### <a name="to-modify-a-column-header"></a>列ヘッダーを変更するには
 
-1. 列ヘッダーを含むセルをクリックします。 **LastName**します。
+1. 列ヘッダー **LastName**を含むセルをクリックします。
 
-2. 型**姓**2 つの単語の間にスペースをなど、キーを押します**Enter**します。
+2. 2つの単語の間にスペースを含め、**姓**を入力し **、enter キーを押します。**
 
 ### <a name="to-save-data"></a>データを保存するには
 
-1. クリックして**保存**ワークシートにします。
+1. ワークシートの [ **保存** ] をクリックします。
 
-2. Excel を終了します。 クリックして**いいえ**行った変更を保存するように求められたらします。
+2. Excel を終了します。 行った変更を保存するように求められたら、[ **いいえ** ] をクリックします。
 
-3. キーを押して**F5**プロジェクトをもう一度実行します。
+3. **F5**キーを押して、プロジェクトを再度実行します。
 
-     リスト オブジェクトからのデータが格納、**従業員**テーブル。
+     List オブジェクトには、 **Employees** テーブルのデータが格納されます。
 
-4. 注意してセル内の名前**B7**が**Anderson**、行われ、元のデータベースに保存するデータは変更できます。 列ヘッダー **LastName**が、列ヘッダーがデータベースにバインドされていないと、ワークシートに加えた変更を保存しなかったため、スペースを入れずに元の形式に変更されました。
+4. セル **B7** の名前は引き続き **Anderson**であることに注意してください。これは、これまでに加えたデータ変更であり、データベースに保存されています。 列ヘッダーがデータベースにバインドされておらず、ワークシートに加えた変更が保存されていないため、列ヘッダー **LastName** は空白を使用せずに元のフォームに戻されます。
 
 ### <a name="to-add-new-rows"></a>新しい行を追加するには
 
-1. リスト オブジェクト内のセルを選択します。
+1. リストオブジェクト内のセルを選択します。
 
-    アスタリスクが付いて、一覧の下部に新しい行が表示されます ( **\*** )、新しい行の最初のセルにします。
+    新しい行が一覧の一番下に表示され、 **\*** 新しい行の最初のセルにアスタリスク () が付きます。
 
-2. 空の行で、次の情報を追加します。
+2. 空の行に次の情報を追加します。
 
    |EmployeeID|LastName|FirstName|タイトル|
    |----------------|--------------|---------------|-----------|
@@ -184,46 +184,46 @@ ms.locfileid: "67692344"
 
 ### <a name="to-delete-rows"></a>行を削除するには
 
-- ワークシートの左端までの番号 16 (16 行) を右クリックし、**削除**します。
+- ワークシートの左端にある 16 (行 16) を右クリックし、[ **削除**] をクリックします。
 
-### <a name="to-sort-the-rows-in-the-list"></a>一覧の行を並べ替える
-
-1. リスト内のセルを選択します。
-
-     各列ヘッダーの矢印ボタンが表示されます。
-
-2. 矢印ボタンをクリックして、**姓**列ヘッダー。
-
-3. クリックして**昇順で並べ替えます**します。
-
-     行は、姓でアルファベット順に並べ替えられます。
-
-### <a name="to-filter-information"></a>情報をフィルター処理
+### <a name="to-sort-the-rows-in-the-list"></a>リスト内の行を並べ替えるには
 
 1. リスト内のセルを選択します。
 
-2. 矢印ボタンをクリックして、**タイトル**列ヘッダー。
+     矢印ボタンは各列ヘッダーに表示されます。
 
-3. クリックして**営業担当者**します。
+2. [ **Last Name** ] 列ヘッダーの矢印ボタンをクリックします。
 
-     一覧にある行のみが表示**の営業担当者**で、**タイトル**列。
+3. [ **昇順で並べ替え**] をクリックします。
 
-4. 矢印ボタンをクリックして、**タイトル**列ヘッダーをもう一度です。
+     行は、姓のアルファベット順に並べ替えられます。
 
-5. クリックして **(すべて)** します。
+### <a name="to-filter-information"></a>情報をフィルター処理するには
 
-     フィルターが削除され、すべての行が表示されます。
+1. リスト内のセルを選択します。
 
-## <a name="next-steps"></a>次の手順
- このチュートリアルでは、データベース内のテーブルをリスト オブジェクトにバインドの基本を説明します。 ここでは、次のタスクを行います。
+2. [ **タイトル** ] 列のヘッダーにある矢印ボタンをクリックします。
 
-- データをキャッシュにオフラインで使用できるようにします。 詳細については、「[方法 :オフラインか、サーバーで使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)します。
+3. [ **営業担当者**] をクリックします。
 
-- ソリューションを展開する。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+     一覧には、 **Sales 担当者** が [ **タイトル** ] 列に表示されている行のみが表示されます。
 
-- フィールドとテーブル間のマスター/詳細関係を作成します。 詳細については、「[チュートリアル:キャッシュされたデータセットを使用してマスター/詳細関係を作成して](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)します。
+4. **Title**列ヘッダーの矢印ボタンをもう一度クリックします。
+
+5. [ **(すべて)**] をクリックします。
+
+     フィルター処理が削除され、すべての行が表示されます。
+
+## <a name="next-steps"></a>次のステップ
+ このチュートリアルでは、データベース内のテーブルをリストオブジェクトにバインドする方法の基本について説明します。 ここでは、次の作業を行います。
+
+- データをキャッシュして、オフラインで使用できるようにします。 詳細については、「 [方法: オフラインまたはサーバー上で使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)する」を参照してください。
+
+- ソリューションを展開する。 詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
+
+- フィールドとテーブルの間にマスター/詳細関係を作成します。 詳細については、「 [チュートリアル: キャッシュされたデータセットを使用してマスター詳細関係を作成](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Office ソリューションにおけるデータ](../vsto/data-in-office-solutions.md)
-- [チュートリアル: ドキュメント レベルのプロジェクトでの単純データ バインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Office ソリューションのデータ](../vsto/data-in-office-solutions.md)
+- [チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

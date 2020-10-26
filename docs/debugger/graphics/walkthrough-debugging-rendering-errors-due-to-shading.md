@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849349"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>チュートリアル: 網かけによるレンダリング エラーのデバッグ
@@ -31,7 +31,7 @@ ms.locfileid: "62849349"
 
  このシナリオでは、最近、オブジェクトをアプリに追加しました。 また、新しい頂点シェーダーとピクセル シェーダーを追加してオブジェクトを変換し、それに固有の外観も与えています。 テスト中にアプリを実行すると、オブジェクトは黒一色で表示されます。 グラフィックス診断を使うと、問題点をグラフィックス ログにキャプチャし、アプリのデバッグを実行できます。 問題は、アプリで次のイメージのように見えます。
 
- ![オブジェクトが正しくない色でレンダリングされています。](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
+ ![オブジェクトは間違った色でレンダリングされています。](media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")
 
 ## <a name="investigation"></a>調査
  グラフィックス診断ツールを使うと、グラフィックス ログのドキュメントを読み込んで、テスト中にキャプチャされたフレームを調査できます。
@@ -42,7 +42,7 @@ ms.locfileid: "62849349"
 
 2. **[フレーム一覧]** で、オブジェクトが正しく表示されていないフレームを選択します。 レンダー ターゲットが更新され、選択したフレームが反映されます。 このシナリオでは、グラフィック ログのドキュメント ウィンドウは次のイメージのようになります。
 
-    ![Visual Studio でのグラフィック ログのドキュメント。](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
+    ![Visual Studio のグラフィックス ログ ドキュメント。](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
    問題を示しているフレームを選んだら、 **[グラフィックス ピクセル履歴]** ウィンドウを使用してそのフレームを診断できます。 **[グラフィックス ピクセル履歴]** ウィンドウに、特定のピクセルに影響を与えていた可能性があるプリミティブとそのシェーダーと、それらがレンダー ターゲットにどのような影響を与えていたかが、時系列順に表示されます。
 
@@ -56,7 +56,7 @@ ms.locfileid: "62849349"
 
     **[グラフィックス ピクセル履歴]** ウィンドウが更新され、選んだピクセルが反映されます。 このシナリオでは、 **[グラフィックス ピクセル履歴]** ウィンドウは次のように表示されます。
 
-    ![ピクセル履歴には、1 つの DrawIndexed イベントが表示されます。](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
+    ![ピクセル履歴には 1 つの DrawIndexed イベントが表示されます。](media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")
 
     ピクセル シェーダーの結果は完全に不透明な黒 (0, 0, 0, 1) で表示されること、また、 **[出力マージャー]** によってこのピクセル シェーダーと **[前]** のピクセルの色が結合されるため、 **[結果]** も完全に不透明な黒で表示されることにご注意ください。
 
@@ -104,4 +104,4 @@ output.color = input.color;
 
  コードを修正したら、それをリビルドし、もう一度アプリを実行してレンダリングの問題が解決されたことを確認します。
 
- ![オブジェクトは正しい色でレンダリングされます。](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![オブジェクトは正しい色でレンダリングされています。](media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")

@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149386"
 ---
 # <a name="evalflags"></a>EVALFLAGS
@@ -53,39 +53,39 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>メンバー  
  EVAL_RETURNVALUE  
- 存在する場合は、戻り値に評価することを指定します。  
+ 戻り値 (存在する場合) を評価することを指定します。  
   
  EVAL_NOSIDEEFFECTS  
  副作用を許可しないことを指定します。  
   
  EVAL_ALLOWBPS  
- ブレークポイントの停止を指定します。  
+ ブレークポイントでの停止を指定します。  
   
  EVAL_ALLOWERRORREPORT  
- エラー報告を許可するホストを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。  
+ 許可するホストへのエラー報告を指定します。 Internet Explorer のスクリプトでの式の評価に主に使用されます。  
   
  EVAL_FUNCTION_AS_ADDRESS  
- 関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。  
+ 関数を呼び出す代わりに、関数をアドレスとして強制的に評価します。  
   
  EVAL_NOFUNCEVAL  
- 関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。  
+ 関数が評価されないようにします。 たとえば、式に含まれるトークンを考えてみ `int` `myExpression(int) + 10` ます。 この関数は、アドレスとして正しく評価されますが、値としては評価できません。  
   
  EVAL_NOEVENTS  
- セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。  
+ 式の評価中に発生したイベントをセッションデバッグマネージャー (SDM) または IDE に送信しないことを示すフラグ。  
   
-## <a name="remarks"></a>Remarks  
- これらのフラグは、引数として渡される、 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)と[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ これらのフラグは、 [Evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) メソッドと [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) メソッドに引数として渡されます。  
   
- これらのフラグは、ビットごとの OR と組み合わせることがあります。  
+ これらのフラグは、ビットごとの OR と組み合わせることができます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

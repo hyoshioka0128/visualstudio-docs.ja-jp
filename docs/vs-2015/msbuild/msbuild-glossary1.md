@@ -1,5 +1,5 @@
 ---
-title: MSBuild 用語集
+title: MSBuild の用語集
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154834"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 用語集
@@ -38,9 +38,9 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  「*プロジェクト、子*」を参照してください。
 
- 条件
+ condition
 
- MSBuild の多くの要素は、`Condition` 属性を使用して条件付きで定義できます。 条件が `true` と評価されないと、条件付き要素の内容は無視されます。 詳細については、[条件](../msbuild/msbuild-conditions.md)に関する記事を参照してください。
+ MSBuild の多くの要素は、`Condition` 属性を使用して条件付きで定義できます。 条件が `true` と評価されないと、条件付き要素の内容は無視されます。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。
 
  定義、項目
 
@@ -70,7 +70,7 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  「項目関数」を参照してください。
 
- 項目
+ item
 
  項目とはビルド システムへの入力を表すものです。要素名に基づき、項目の種類としてグループ化されます。 項目は、通常はファイルを表します。 項目名はそれぞれが属する項目の種類によって指定されるため、*項目*と*項目値*という用語は同義です。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
@@ -80,7 +80,7 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  項目関数
 
- 項目関数は、プロジェクト内の項目に関する情報を取得します。 これらの関数により、Distinct() 項目の取得が簡素化され、項目をループ処理するよりも処理が速くなります。 項目のパスと文字列を操作する関数があります。 詳細については、「[項目用の関数](../msbuild/item-functions.md)」を参照してください。
+ 項目関数は、プロジェクト内の項目に関する情報を取得します。 これらの関数により、Distinct() 項目の取得が簡素化され、項目をループ処理するよりも処理が速くなります。 項目のパスと文字列を操作する関数があります。 詳細については、「[項目関数](../msbuild/item-functions.md)」を参照してください。
 
  項目メタデータ
 
@@ -92,7 +92,7 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  メタデータ、項目
 
- 項目メタデータは、項目に関連付けられている名前と値のペアのコレクションです。 メタデータは、項目に関する説明情報を示すもので、既知のメタデータ以外は省略可能です。 詳細については、[項目](../msbuild/msbuild-items.md)に関する記事を参照してください。
+ 項目メタデータは、項目に関連付けられている名前と値のペアのコレクションです。 メタデータは、項目に関する説明情報を示すもので、既知のメタデータ以外は省略可能です。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
  メタデータ、既知
 
@@ -102,7 +102,7 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  アプリケーションまたはアセンブリ プロジェクトのターゲットを、MSBuild および Visual Studio からの多数の異なる CLR およびフレームワークにすることができる機能。
 
- プロファイル
+ profile
 
  完全なフレームワークのサブセット。 コンピューターへのダウンロード容量を最小限にするために使用されます。
 
@@ -124,15 +124,15 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  プロパティ、関数
 
- プロパティ関数は、MSBuild スクリプトを評価するために使用できるシステム プロパティまたはメソッドです。 プロパティ メソッドを使用すると、システム時刻の読み取り、文字列の比較、正規表現の照合、その他の処理を実行できます。 詳細については、「[プロパティ関数](../msbuild/property-functions.md)」を参照してください。
+ プロパティ関数は、MSBuild スクリプトを評価するために使用できるシステム プロパティまたはメソッドです。 プロパティ メソッドを使用すると、システム時刻の読み取り、文字列の比較、正規表現の照合、その他の処理を実行できます。 詳細については、「 [プロパティ関数](../msbuild/property-functions.md)」を参照してください。
 
  プロパティ関数、入れ子
 
- プロパティ関数を組み合わせて、より複雑な関数を作成できます。 例えば以下のようにします。
+ プロパティ関数を組み合わせて、より複雑な関数を作成できます。 たとえば、次のように入力します。
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- 詳細については、「[プロパティ関数](../msbuild/property-functions.md)」を参照してください。
+ 詳細については、「 [プロパティ関数](../msbuild/property-functions.md)」を参照してください。
 
  プロパティ、グローバル
 
@@ -170,9 +170,9 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  「*プロパティ、レジストリ*」を参照してください。
 
- target
+ ターゲット (target)
 
- ターゲットは、タスクを特定の順序でグループ化し、プロジェクト ファイルの各セクションを、ビルド処理のエントリ ポイントとして公開する役割を果たします。 詳細については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。
+ ターゲットは、タスクを特定の順序でグループ化し、プロジェクト ファイルの各セクションを、ビルド処理のエントリ ポイントとして公開する役割を果たします。 詳細については、[ターゲット](../msbuild/msbuild-targets.md) を参照してください。
 
  ターゲット、ビルド
 
@@ -212,12 +212,12 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  変換
 
- 変換とは、1 つの項目コレクションを別の項目コレクションに一対一で変換することです。 プロジェクトで項目コレクションを変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 詳細については、[変換](../msbuild/msbuild-transforms.md)に関する記事を参照してください。
+ 変換とは、1 つの項目コレクションを別の項目コレクションに一対一で変換することです。 プロジェクトで項目コレクションを変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」をご覧ください。
 
  既知のメタデータ
 
  「*メタデータ、既知*」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [MSBuild1](../msbuild/msbuild.md)

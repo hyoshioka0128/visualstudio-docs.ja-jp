@@ -12,50 +12,50 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: df2daef11303e85d5fe2d0bf33e3df038081db64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184529"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE で実装されるコールバック関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-統合することとして可能な限りと統合されたエクスペリエンスを提供するシームレスな統合開発環境 (IDE) ソース管理プラグイン使用できます、IDE によって実装されるコールバック関数。 プラグインできるこれらの関数、IDE に情報を渡すのソース管理操作中に適切なタイミングでIDE は、ネイティブ UI に埋め込まれた要素としてこの情報を表示できます。 ユーザーは、場合、プラグインの使用、独自の UI よりもこのシナリオで断片化の経験を持ちます。  
+統合開発環境 (IDE: integrated development environment) との統合を可能な限りシームレスに行うために、統合されたエンドユーザーエクスペリエンスを提供するために、ソース管理プラグインは、IDE によって実装されるコールバック関数を使用できます。 プラグインは、ソース管理操作中に適切なタイミングでこれらの関数を呼び出して、IDE に情報を渡すことができます。IDE では、この情報をネイティブ UI の埋め込み要素として表示できます。 このシナリオでは、プラグインが独自の UI を使用した場合よりも、ユーザーの断片化が少なくなります。  
   
- 必須のヘッダー ファイルは、scc.h です。 既定の場所は \Program Files\VSIP 8.0\EnvSDK\common\inc\\します。 \Program Files\VSIP 8.0\MSSCCI にソース管理プラグインのサンプルを持っている VSIP フォルダーにも\\します。  
+ 必要なヘッダーファイルは scc です。 既定の場所は、Files\VSIP 8.0 \ EnvSDK\common\inc \\ です。 また、ソース管理プラグインのサンプルが MSSCCI にある VSIP フォルダーにもあり \\ ます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- によって使用されるコールバック関数について説明します[SccOpenProject](../extensibility/sccopenproject-function.md) ide プラグインのソース管理からのメッセージを表示します。  
+ IDE を介してソース管理プラグインからのメッセージを表示するために [Sccopenproject](../extensibility/sccopenproject-function.md) によって使用されるコールバック関数について説明します。  
   
  [POPLISTFUNC](../extensibility/poplistfunc.md)  
- によって使用されるコールバック関数について説明します[SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE でソース管理プラグインのバージョン管理下にあるファイルの完全な一覧でのみ使用可能な情報への完全なアクセスがない場合。  
+ バージョン管理されているファイルの完全な一覧など、ソース管理プラグインでのみ使用できる情報に IDE が完全にアクセスできない場合に、 [SccPopulateList](../extensibility/sccpopulatelist-function.md) によって使用されるコールバック関数について説明します。  
   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)  
- によって使用されるコールバック関数について説明します、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)操作。  
+ [Sccquerychanges](../extensibility/sccquerychanges-function.md)操作で使用されるコールバック関数について説明します。  
   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)  
- によって使用されるコールバック関数について説明します、 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)操作。  
+ [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)操作で使用されるコールバック関数について説明します。  
   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)  
- コールバック関数を呼び出して設定について説明します、 [SccSetOption](../extensibility/sccsetoption-function.md)ソース管理プラグイン名の変更がバックアップには、IDE と通信するようにします。  
+ ソース管理プラグインが名前の変更を IDE に戻すことができるようにする [Sccsetoption](../extensibility/sccsetoption-function.md) の呼び出しによって設定されるコールバック関数について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [SccOpenProject](../extensibility/sccopenproject-function.md)  
  プロジェクトを開きます。  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- 現在の状態のファイルの一覧を検証します。 また、使用して、`pfnPopulate`ファイルでの条件が一致しない場合に、呼び出し元に通知するため、`nCommand`します。  
+ ファイルの一覧を調べて、現在の状態を確認します。 さらに、は関数を使用して、 `pfnPopulate` ファイルがの条件に一致しない場合に呼び出し元に通知し `nCommand` ます。  
   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)  
- ディレクトリおよびファイルをプロジェクトまたはソース管理下にあるプロジェクトの一覧を検証します。 各ディレクトリとファイル名が見つかりましたが、コールバック関数に渡されます。  
+ ソース管理下にあるプロジェクトまたはプロジェクト内のディレクトリとファイルの一覧を調べます。 見つかった各ディレクトリとファイル名は、コールバック関数に渡されます。  
   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)  
- 名前のファイルの一覧に加えられた変更をについて説明します。 各ファイル名は、その状態の変更とコールバック関数に渡されます。  
+ ファイルの一覧に対して行われた名前の変更を調べます。 各ファイル名は、コールバック関数に変更状態と共に渡されます。  
   
  [SccSetOption](../extensibility/sccsetoption-function.md)  
- さまざまなオプションを設定します。 各オプションが始まる`SCC_OPT_xxx`あり、独自の値の定義済みセット。  
+ さまざまなオプションを設定します。 各オプションはで始まり `SCC_OPT_xxx` 、独自に定義された値のセットを持ちます。  
   
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)  
- ソース管理プラグインの SDK のリファレンス セクションの内容について説明します。
+ ソース管理プラグイン SDK の参照セクションの内容について説明します。

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread |Microsoft Docs
+title: 'IDebugThread2:: GetLogicalThread |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f430ea7ba69ca55bc76543d853396e22b193cf02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153060"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-デバッグ エンジンは、このメソッドを実装していません。  
+デバッグエンジンは、このメソッドを実装しません。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,13 +42,13 @@ int GetLogicalThread( 
   
 #### <a name="parameters"></a>パラメーター  
  `pStackFrame`  
- [in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)スタック フレームを表すオブジェクト。  
+ からスタックフレームを表す [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) オブジェクト。  
   
  `ppLogicalThread`  
- [out]返します、`IDebugLogicalThread2`関連付けられた論理スレッドを表すインターフェイスです。 デバッグ エンジンの実装は、null 値にこれを設定する必要があります。  
+ 入出力 `IDebugLogicalThread2` 関連付けられている論理スレッドを表すインターフェイスを返します。 デバッグエンジンの実装では、これを null 値に設定する必要があります。  
   
 ## <a name="return-value"></a>戻り値  
- デバッグ エンジン実装を常に戻り`E_NOTIMPL`します。  
+ デバッグエンジンの実装は常に `E_NOTIMPL` を返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

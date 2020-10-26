@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID |Microsoft Docs
+title: IDebugProperty3::D estroyObjectID |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a610cd5c947d77048e86b31c92298f6cc18607d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193424"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-呼び出し元がこのプロパティの他のすべてのプロパティから一意に識別する気不要になったことを示す、このプロパティに関連付けられた一意 ID を破棄します。  
+このプロパティに関連付けられている一意の ID を破棄します。これは、呼び出し元が他のすべてのプロパティから一意にこのプロパティを識別しないことを示します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,13 +37,13 @@ int DestroyObjectID();
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- デバッグ エンジンは、(その既には追跡するために内部的には一意に) プロパティの一意の Id をサポートする必要がある場合、単に返すことができますし、`E_NOTIMPL`このメソッドにします。  
+## <a name="remarks"></a>注釈  
+ デバッグエンジンがプロパティの一意の Id をサポートする必要がない場合 (既に内部的に一意に追跡しているため)、このメソッドに対して単にを返すことができ `E_NOTIMPL` ます。  
   
- 呼び出しに一意の Id を作成、 [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)メソッドの呼び出し元がこのプロパティは、その他のすべてのプロパティの間で一意に識別することを確認する場合。  
+ 呼び出し元が、このプロパティが他のすべてのプロパティで一意に識別されるようにする場合は、 [Createobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) メソッドを呼び出すことで一意の id が作成されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

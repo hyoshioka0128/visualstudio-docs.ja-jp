@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND |マイクロソフトドキュメント
+title: ADDRESS_KIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738150"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
@@ -58,41 +58,41 @@ public enum enum_ADDRESS_KIND {
 
 ## <a name="fields"></a>フィールド
 `ADDRESS_KIND_NATIVE`\
-[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)構造体で表されるネイティブ アドレス。
+[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)構造体によって表されるネイティブアドレス。
 
 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
-`this` (Visual`Me` Basic では) ポインターを基準にして[、UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)構造体で表されるアンマネージ アドレス。
+`this`( `Me` Visual Basic) ポインターを基準とした、 [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)構造体によって表されるアンマネージアドレス。
 
 `ADDRESS_KIND_UNMANAGED_PHYSICAL`\
-[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)構造体で表されるアンマネージ物理アドレス。
+[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)構造体によって表されるアンマネージ物理アドレス。
 
 `ADDRESS_KIND_METHOD`\
-[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)構造体で表されるクラスのメソッド。
+[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)構造体によって表されるクラスのメソッド。
 
 `ADDRESS_KIND_FIELD`\
-[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)構造体で表されるクラスのフィールド。
+[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)構造体によって表されるクラスのフィールド。
 
 `ADDRESS_KIND_LOCAL`\
-アドレスはローカル変数用で[、METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)構造で表されます。
+アドレスはローカル変数用であり、 [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) 構造体によって表されます。
 
 `ADDRESS_KIND_PARAM`\
-[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)構造体で表されるメソッドまたは関数パラメーター。
+[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)構造体によって表されるメソッドまたは関数のパラメーター。
 
 `ADDRESS_KIND_ARRAYELEM`\
-[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)構造体で表される配列要素。
+[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)構造体によって表される配列要素。
 
 `ADDRESS_KIND_RETVAL`\
-[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)構造体で表される戻り値。
+[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)構造体によって表される戻り値。
 
-## <a name="remarks"></a>Remarks
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)メソッドは、可能な構造体の和集合[、DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体を含む[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)構造体を返します。 構造体`dwKind`の`DEBUG_ADDRESS_UNION`フィールドは値を`ADDRESS_KIND`保持し、共用体フィールドの解釈方法を記述します。
+## <a name="remarks"></a>解説
+[Getaddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)メソッドは、使用可能な構造体、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の和集合を含む[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)構造体を返します。 `dwKind`構造体のフィールドには `DEBUG_ADDRESS_UNION` 値が保持され、 `ADDRESS_KIND` 共用体フィールドを解釈する方法について説明します。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: sh.h
+ヘッダー: sh. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

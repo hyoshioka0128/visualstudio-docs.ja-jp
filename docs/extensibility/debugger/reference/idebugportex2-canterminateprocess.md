@@ -1,5 +1,5 @@
 ---
-title: プロセスを終了する |マイクロソフトドキュメント
+title: 'IDebugPortEx2:: CanTerminateProcess |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bbc5c5128c1235c7ee46300a1cd45f92b53d243d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725148"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
-プロセスを終了できるかどうかを決定します。
+プロセスを終了できるかどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,10 +41,10 @@ HRESULT CanTerminateProcess( 
 
 ## <a name="parameters"></a>パラメーター
 `pPortProcess`\
-[in]終了するプロセスを表す[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)オブジェクト。
+から終了するプロセスを表す [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) オブジェクト。
 
 ## <a name="return-value"></a>戻り値
- プロセス`S_OK`を終了できる場合は返します。それ以外の`S_FALSE`場合は、 を返します。
+ プロセスを終了できる場合はを返します `S_OK` 。それ以外の場合はを返し `S_FALSE` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

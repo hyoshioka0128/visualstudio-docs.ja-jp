@@ -1,5 +1,5 @@
 ---
-title: メニュー コマンドをスパイ |Microsoft Docs
+title: '[Spy] メニューのコマンド | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,31 +12,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb8ecf72e83f12900db77b912d66ff28493ca98e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153854"
 ---
 # <a name="spy-menu-commands"></a>[スパイ] メニューのコマンド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**スパイ**メニューには、Spy++ は Windows とビューを操作するコマンドが用意されています。  
+**[Spy]** メニューには、Spy++ のウィンドウとビューを操作するためのコマンドが用意されています。  
   
  **Windows**  
- 新しい Windows ビューが開きます。  
+ 新しい Windows ビューを開きます。  
   
- **プロセス**  
- 新しいプロセス ビューを開きます。  
+ **処理**  
+ 新しいプロセスビューを開きます。  
   
  **スレッド**  
- 新しいスレッド ビューを開きます。  
+ 新しいスレッドビューを開きます。  
   
  **メッセージのログ出力**  
- 新しいメッセージ ビューを開き、[メッセージ オプション ダイアログ ボックス](../debugger/message-options-dialog-box.md)表示されます。  
+ 新しいメッセージビューを開き、そのビューの [ [メッセージオプション] ダイアログボックス](../debugger/message-options-dialog-box.md) を開きます。  
   
  **ウィンドウ検索**  
- 表示、 **FindWindow**  ダイアログ ボックス ウィンドウをマウスを選択します。  
+ [ **FindWindow** ] ダイアログボックスを表示して、マウスでウィンドウを選択します。  
   
  **終了**  
- Spy++ ユーティリティを終了します。
+ Spy + + ユーティリティを閉じます。

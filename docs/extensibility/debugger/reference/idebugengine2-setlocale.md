@@ -1,5 +1,5 @@
 ---
-title: Iデバッグエンジン2::セットロケール |マイクロソフトドキュメント
+title: 'IDebugEngine2:: SetLocale |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8616dd827f99dfcfbc337cb5cdf5ac5a7d392e88
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730917"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-デバッグ エンジン (DE) のロケールを設定します。
+デバッグエンジン (DE) のロケールを設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int SetLocale( 
 
 ## <a name="parameters"></a>パラメーター
 `wLangID`\
-[in]言語ロケールを指定します。 たとえば、英語の場合は 1033 などです。
+から言語のロケールを指定します。 たとえば、英語の場合は1033です。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- このメソッドは、DE によって返される文字列が正しくローカライズされるように、IDE のロケール設定を反映するためにセッションデバッグ マネージャー (SDM) によって呼び出されます。
+## <a name="remarks"></a>解説
+ このメソッドは、セッションデバッグマネージャー (SDM) によって呼び出され、DE によって返される文字列が適切にローカライズされるように、IDE のロケール設定を伝達します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

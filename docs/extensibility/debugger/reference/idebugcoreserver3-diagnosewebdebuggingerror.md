@@ -1,5 +1,5 @@
 ---
-title: エラーメッセージ:D発生します。マイクロソフトドキュメント
+title: IDebugCoreServer3::D iagnoseWebDebuggingError |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732950"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-自動アタッチが失敗した理由を特定しようとします。
+自動アタッチに失敗した原因の特定を試みます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>パラメーター
 `pszUrl`\
-[in]現在使用されていません。常に null 値に設定する必要があります。
+から現在使用されていません。常に null 値に設定する必要があります。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 その他の一般的なリターン コードを次に示します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 その他の一般的なリターンコードを次に示します。
 
 |コード|説明|
 |----------|-----------------|
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|リモート サーバーがデバッグを開始できなかった理由を特定できません。|
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|アクセス許可が不十分であるか、DEBUG 動詞が有効になっていないため、リモート サーバーでデバッグできません。|
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Web サーバーがロックされ、デバッグを有効にするために必要な DEBUG 動詞がブロックされています。|
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|リモートサーバーがデバッグを開始できなかった理由を特定できません。|
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|リモートサーバーでデバッグできません。アクセス許可が不十分であるか、デバッグ動詞が有効になっていないことが原因である可能性があります。|
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Web サーバーがロックダウンされ、デバッグを有効にするために必要な DEBUG 動詞をブロックしています。|
 
 ## <a name="see-also"></a>関連項目
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

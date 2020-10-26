@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699357"
 ---
-# <a name="cvcfllang"></a>CV_CFL_LANG
+# <a name="cv_cfl_lang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-アプリケーションまたはリンクされているモジュールのソース コードの言語を指定します。  
+アプリケーションまたはリンクされたモジュールのソースコード言語を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -49,64 +49,64 @@ typedef enum CV_CFL_LANG { 
 } CV_CFL_LANG;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  CV_CFL_C  
- アプリケーションの言語は C です。  
+ アプリケーション言語は C です。  
   
  CV_CFL_CXX  
- アプリケーションの言語は C++ です。  
+ アプリケーション言語は C++ です。  
   
  CV_CFL_FORTRAN  
- アプリケーションの言語では、FORTRAN です。  
+ アプリケーション言語は FORTRAN です。  
   
  CV_CFL_MASM  
- アプリケーションの言語では、Microsoft Macro Assembler です。  
+ アプリケーション言語は Microsoft マクロアセンブラーです。  
   
  CV_CFL_PASCAL  
- アプリケーションの言語は、pascal 形式です。  
+ アプリケーション言語は Pascal 形式です。  
   
  CV_CFL_BASIC  
- アプリケーションの言語には BASIC です。  
+ アプリケーション言語が BASIC.  
   
  CV_CFL_COBOL  
- アプリケーションの言語では、COBOL です。  
+ アプリケーション言語は COBOL です。  
   
  CV_CFL_LINK  
  アプリケーションは、リンカーによって生成されたモジュールです。  
   
  CV_CFL_CVTRES  
- アプリケーションは、リソース モジュールが CVTRES ツールを使用して変換です。  
+ アプリケーションは、CVTRES ツールを使用して変換されたリソースモジュールです。  
   
  CV_CFL_CVTPGD  
- アプリケーションは、CVTPGD ツールで生成された最適化 POGO モジュールです。  
+ アプリケーションは、CVTPGD ツールで生成された POGO 最適化モジュールです。  
   
  CV_CFL_CSHARP  
- アプリケーションの言語は c# です。  
+ アプリケーション言語は C# です。  
   
  CV_CFL_VB  
- アプリケーションの言語とは、Visual Basic です。  
+ アプリケーション言語が Visual Basic。  
   
  CV_CFL_ILASM  
- アプリケーションの言語は、中間言語アセンブリ (つまり、共通言語ランタイム (CLR) アセンブリ) です。  
+ アプリケーション言語は、中間言語アセンブリ (つまり、共通言語ランタイム (CLR) アセンブリ) です。  
   
  CV_CFL_JAVA  
- Java は、アプリケーションの言語です。  
+ アプリケーション言語は Java です。  
   
  CV_CFL_JSCRIPT  
- アプリケーションの言語では、Jscript です。  
+ アプリケーション言語は Jscript です。  
   
  CV_CFL_MSIL  
- アプリケーションの言語は、不明な Microsoft 中間言語 (MSIL)、結果を使用する可能性があります、 [/LTCG (リンク時コード生成)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)スイッチします。  
+ アプリケーション言語は、不明な Microsoft 中間言語 (MSIL) です。これは、 [/ltcg (リンク時のコード生成)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) スイッチを使用した結果である可能性があります。  
   
  CV_CFL_HLSL  
- アプリケーションの言語は、High Level Shader Language です。  
+ アプリケーション言語は、高レベルのシェーダー言語です。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値が呼び出しによって返される、 [idiasymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)メソッド。  
+## <a name="remarks"></a>解説  
+ この列挙体の値は、 [IDiaSymbol:: get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) メソッドへの呼び出しによって返されます。  
   
 ## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

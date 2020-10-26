@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79306933"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312003"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
@@ -36,11 +36,11 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビ
 
 これはプロジェクトを開いている Visual Studio の画像です。使用頻度が高いツール ウィンドウがいくつか開いています。
 
-- [ソリューション エクスプローラー](../../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](tutorial-projects-solutions.md)にまとめ、コードを整理できます。
+- "[ソリューション エクスプローラー](../../ide/solutions-and-projects-in-visual-studio.md)" (右上) では、ご自分のコード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](tutorial-projects-solutions.md)にまとめ、コードを整理できます。
 
-- 大部分の時間を費やすことになる[エディター ウィンドウ](../../ide/writing-code-in-the-code-and-text-editor.md) (中央) にはファイルの内容が表示されます。 ここでは、コードを編集したり、ボタンやテキスト ボックスを持つウィンドウなどのユーザー インターフェイスをデザインすることができます。
+- 作業時間の大半を費やすことになる "[エディター ウィンドウ](../../ide/writing-code-in-the-code-and-text-editor.md)" (中央) には、ファイルの内容が表示されます。 ここでは、コードを編集したり、ボタンやテキスト ボックスを持つウィンドウなどのユーザー インターフェイスをデザインすることができます。
 
-- [[出力]](../../ide/reference/output-window.md) ウィンドウ (下中央) には、デバッグ メッセージ、エラー メッセージ、コンパイラの警告、公開状態メッセージなど、Visual Studio の通知が出力されます。 メッセージ ソースごとに独自のタブがあります。
+- [[出力]](../../ide/reference/output-window.md) ウィンドウ (下中央) には、デバッグ メッセージ、エラー メッセージ、コンパイラの警告、公開状態メッセージなど、Visual Studio の通知が出力されます。 メッセージ ソースごとに専用のタブがあります。
 
 - [チーム エクスプローラー](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) では、[Git](https://git-scm.com/) や [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) などのバージョン管理テクノロジを使用して、作業項目を追跡し、コードを他のユーザーと共有できます。
 
@@ -48,7 +48,7 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビ
 
 Visual Studio は Windows と Mac で利用できます。 [Visual Studio for Mac](/visualstudio/mac/) は Visual Studio 2017 と同じ機能を多く備え、クロスプラットフォーム アプリとモバイル アプリの開発用に最適化されています。 この記事では、Windows バージョンの Visual Studio 2017 について説明します。
 
-Visual Studio 2017 には 3 つのエディション: Community、Professional、および Enterprise があります。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
+Visual Studio 2017 には 3 つのエディションがあります。Community、Professional、Enterprise です。 各エディションでサポートされている機能については、「[Visual Studio 2017 IDE の比較](https://visualstudio.microsoft.com/vs/compare/)」を参照してください。
 
 ## <a name="popular-productivity-features"></a>よく使われる生産性機能
 
@@ -197,13 +197,13 @@ Visual Studio 2017 には 3 つのエディション: Community、Professional�
 
 ::: moniker range="vs-2017"
 
-まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/downloads)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/downloads)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
 
 ::: moniker-end
 
@@ -259,13 +259,13 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 次に、Visual Basic 開発者に合わせた環境設定を使用するように Visual Studio を構成します。
 
-1. メニュー バーで、**[ツール]**、**[設定のインポートとエクスポート]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[設定のインポートとエクスポート]** の順にクリックします。
 
 2. **設定のインポートとエクスポート ウィザード**の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
 
 3. **[現在の設定の保存]** ページで、現在の設定を保存するオプションを選択するか選択せずに、 **[次へ]** を選択します (設定をカスタマイズしていない場合は、 **[No, just reset settings, overwriting my current settings]\(いいえ、設定をリセットして現在の設定を上書きするだけです\)** を選択します)。
 
-4. **[設定の既定のコレクションの選択]** ページで、 **[Visual Basic]** を選択し、 **[完了]** を選択します。
+4. **[設定の既定のコレクションの選択]** ページで、**[Visual Basic]** を選択し、**[完了]** を選択します。
 
 5. **[リセットの完了]** ページで **[閉じる]** を選択します。
 
@@ -277,18 +277,18 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio メニュー バーで、 **[ファイル]** > **[新しいプロジェクト]** を選択します。
+1. Visual Studio メニュー バーで、**[ファイル]** > **[新しいプロジェクト]** を選択します。
 
    ![メニュー バーで [ファイル]、[新しいプロジェクト] の順に選択します。](media/file-new-project-menu.png)
 
    **[新しいプロジェクト]** ダイアログ ボックスには複数のプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。
 
-1. **[Visual Basic]** で **[.NET Core]** カテゴリを選択し、**[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** テンプレートを選択します。 **[名前]** テキスト ボックスに「**HelloWorld**」と入力し、 **[OK]** ボタンを選びます。
+1. **[Visual Basic]** で **[.NET Core]** カテゴリを選択し、**[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** テンプレートを選択します。 **[名前]** テキスト ボックスに「**HelloWorld**」と入力し、**[OK]** ボタンを選びます。
 
    ![.NET Core アプリ テンプレート](media/overview-npd.png)
 
    > [!NOTE]
-   > **[.NET Core]** カテゴリが表示されない場合は、 **[.NET Core クロスプラットフォームの開発]** ワークロードをインストールする必要があります。 これを実行するには、**[新しいプロジェクト]** ダイアログ ボックスの左下側の **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが開いたら、 **[.NET Core クロスプラットフォームの開発]** ワークロードまで下にスクロールして選択してから **[変更]** を選択します。
+   > **[.NET Core]** カテゴリが表示されない場合は、**[.NET Core クロスプラットフォームの開発]** ワークロードをインストールする必要があります。 これを実行するには、**[新しいプロジェクト]** ダイアログ ボックスの左下側の **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが開いたら、**[.NET Core クロスプラットフォームの開発]** ワークロードまで下にスクロールして選択してから **[変更]** を選択します。
 
    Visual Studio によってプロジェクトが作成されます。 これは、リテラル文字列 "Hello World!" を表示する <xref:System.Console.WriteLine?displayProperty=nameWithType> メソッドを呼び出す単純な "Hello World" アプリケーションです。 コンソール (プログラムの出力) ウィンドウでに表示されます。
 
@@ -341,17 +341,17 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio メニュー バーで、 **[ファイル]** > **[新しいプロジェクト]** を選択します。
+1. Visual Studio メニュー バーで、**[ファイル]** > **[新しいプロジェクト]** を選択します。
 
    ![メニュー バーで [ファイル]、[新しいプロジェクト] の順に選択します。](media/vs-2019/file-new-project.png)
 
    **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。
 
-1. 必要なテンプレートを検索するには、検索ボックスに「 **.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[言語]** ドロップダウン リストから **[Visual Basic]** を選択して、テンプレートの結果をさらにフィルター処理できます。
+1. 必要なテンプレートを検索するには、検索ボックスに「**.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[言語]** ドロップダウン リストから **[Visual Basic]** を選択して、テンプレートの結果をさらにフィルター処理できます。
 
-1. **[コンソール アプリ (.NET Core)]** テンプレートを選択し、 **[次へ]** を選択します。
+1. **[コンソール アプリ (.NET Core)]** テンプレートを選択し、**[次へ]** を選択します。
 
-   ![Visual Studio で新しいプロジェクトを作成する](media/vs-2019/create-new-project.png)
+   ![Visual Studio での新しいプロジェクトの作成](media/vs-2019/create-new-project.png)
 
 1. **[新しいプロジェクトの構成]** ウィンドウで、**[プロジェクト名]** ボックスに「**HelloWorld**」と入力し、必要に応じてプロジェクト ファイルのディレクトリの場所を変更した後、**[作成]** を選択します。
 
@@ -459,7 +459,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range="vs-2017"
 
-10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 次のような画面が出力されます。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range=">=vs-2019"
 
-10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 次のような画面が出力されます。
+10. **Ctrl**+**F5** キーを押してプログラムを再び実行です。 出力は次のようになります。
 
     ![プログラムの出力が表示されたコンソール ウィンドウ](../media/vs-2019/overview-console-final.png)
 
@@ -499,7 +499,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 Visual Studio でのデバッグの詳細については、[デバッガーの機能ツアー](../../debugger/debugger-feature-tour.md)に関するページをご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 以下の入力記事のいずれかに従って、Visual Studio をさらに詳しく調べます。
 
@@ -509,7 +509,7 @@ Visual Studio でのデバッグの詳細については、[デバッガーの�
 > [!div class="nextstepaction"]
 > [プロジェクトとソリューションについて学習する](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のその他の機能](../../ide/advanced-feature-overview.md)を確認します
 - [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/) にアクセスします

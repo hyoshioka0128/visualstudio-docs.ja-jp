@@ -11,22 +11,22 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160580"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>ソース管理プラグインを検索するためのキーとして使用される文字列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-次の文字列は、詳細を確認するソース管理プラグイン レジストリにアクセスするためのキーです。  
+次の文字列は、ソース管理プラグインに関する情報を検索するためにレジストリにアクセスするためのキーです。  
   
- `STR_SCC_PROVIDER_REG_LOCATION`、 `STR_PROVIDERREGKEY`、 `STR_SCCPROVIDERPATH`、および`STR_SCCPROVIDERNAME`レジストリ キーまたは値が、ソース管理プラグインとして for Visual Studio DLL を登録するために使用されます。  
+ `STR_SCC_PROVIDER_REG_LOCATION`、 `STR_PROVIDERREGKEY` 、 `STR_SCCPROVIDERPATH` 、および `STR_SCCPROVIDERNAME` は、Visual Studio のソース管理プラグインとして DLL を登録するために使用されるレジストリキーまたは値です。  
   
- `SCC_PROJECTNAME_KEY`、 `SCC_PROJECTAUX_KEY`、 `SCC_KEY, SCC_FILE_SIGNATURE`、および`SCC_STATUS_FILE`、MSSCCPRJ の形式を記述するために使用します。SCC ファイルです。  
+ `SCC_PROJECTNAME_KEY`、 `SCC_PROJECTAUX_KEY` 、 `SCC_KEY, SCC_FILE_SIGNATURE` 、および `SCC_STATUS_FILE` は、mssccprj.scc の形式を説明するために使用されます。SCC ファイル。  
   
-## <a name="string-keys-and-values"></a>文字列キーと値  
+## <a name="string-keys-and-values"></a>文字列のキーと値  
   
 |キー|値|  
 |---------|-----------|  
@@ -38,17 +38,17 @@ ms.locfileid: "68160580"
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ します。SCC|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC.SCC|  
 |`SCC_KEY`|SCC|  
-|`SCC_FILE_SIGNATURE`|コントロールのソース コード ファイル|  
-|`SCC_NSE`|Namespace の拡張機能|  
-|`SCC_NSE_PREFIX`|Protocal プレフィックス|  
+|`SCC_FILE_SIGNATURE`|ソースコード管理ファイル|  
+|`SCC_NSE`|名前空間の拡張|  
+|`SCC_NSE_PREFIX`|廃棄プレフィックス|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
 |`STR_SCCHELPCOLLECTION`|HelpCollection|  
 |`STR_UI_LANGUAGE`|UILanguage|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)   
- [方法: ソース管理プラグインのインストールします。](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [方法: ソース管理プラグインをインストールする](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [MSSCCPRJ.SCC File](../extensibility/mssccprj-scc-file.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IDE のツアー
+title: Visual Studio IDE の表示の紹介
 titleSuffix: ''
 ms.date: 02/05/2019
 ms.topic: quickstart
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a05f62685509a69fd5dfe8f758b4e5599b9324
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: 41d5d40cc7951f09a8106426f603d42628c61846
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527936"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88238869"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE の表示の紹介
 

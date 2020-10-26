@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce5997555b37cf5ab30f091e7124b5025284c0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164376"
 ---
-# <a name="cvaccesse"></a>CV_access_e
+# <a name="cv_access_e"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-メンバー関数と変数の可視性 (アクセス レベル) のスコープを指定します。  
+メンバー関数と変数の可視性 (アクセスレベル) のスコープを指定します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef enum CV_access_e {   
@@ -35,23 +35,23 @@ typedef enum CV_access_e { 
 } CV_access_e;  
 ```  
   
-## <a name="elements"></a>Elements  
+## <a name="elements"></a>要素  
  CV_private  
- メンバーは、プライベート アクセスを持ちます。  
+ メンバーにプライベートアクセスがあります。  
   
  CV_protected  
- メンバーがアクセスを保護してきました。  
+ メンバーは保護されたアクセス権を持っています。  
   
  CV_public  
- メンバーは、パブリック アクセスを持ちます。  
+ メンバーはパブリックアクセス権を持っています。  
   
-## <a name="remarks"></a>Remarks  
- `friend`アクセス指定子は含まれませんので、通常は、クラスの private と protected の両方の要素にアクセスできる非メンバー関数によって使用されます。 使用して、 [idiasymbol::get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)でシンボルを検索するメソッド`SymTagFriend`アクセスします。  
+## <a name="remarks"></a>注釈  
+ `friend`アクセス指定子は、クラスのプライベート要素とプロテクト要素の両方にアクセスできる非メンバー関数によって使用されることが多いため、ここには含まれていません。 [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)メソッドを使用して、アクセス権のあるシンボルを検索し `SymTagFriend` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: cvconst.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: cvconst. h  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [列挙型と構造体](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol:: get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

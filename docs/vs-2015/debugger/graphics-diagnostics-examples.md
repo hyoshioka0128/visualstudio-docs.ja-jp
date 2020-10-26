@@ -1,5 +1,5 @@
 ---
-title: グラフィックス診断例 |Microsoft Docs
+title: グラフィックス診断例 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159710"
 ---
 # <a name="graphics-diagnostics-examples"></a>グラフィックス診断例
@@ -32,7 +32,7 @@ ms.locfileid: "68159710"
  グラフィックス診断を使用すると、リモート デバッギングを使用することによって、ARM ベースのデバイス上で Direct3D アプリケーションをデバッグできます。 詳細については、「[方法: ARM デバイスでグラフィックス診断を使用する](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)  
   
 ## <a name="playing-back-graphics-information"></a>グラフィックス情報を再生する  
- 実行中のアプリからグラフィックス情報をキャプチャした後、キャプチャしたイベントを再生してレンダリングの問題を診断することができます。 再生するには、開発用コンピューターを使用するか、接続されているリモート コンピューターまたはリモート デバイスを使用できます。 詳細については、「[方法 :グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。  
+ 実行中のアプリからグラフィックス情報をキャプチャした後、キャプチャしたイベントを再生してレンダリングの問題を診断することができます。 再生するには、開発用コンピューターを使用するか、接続されているリモート コンピューターまたはリモート デバイスを使用できます。 詳細については、[グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。  
   
 ## <a name="debugging-missing-objects"></a>不足しているオブジェクトをデバッグする  
  1 つ以上のオブジェクトの不足は、グラフィックス開発者が経験する最も一般的なレンダリングの問題の 1 つです。 さまざまな種類のエラーが原因でオブジェクトが見かけ上消滅する可能性があるため、このような問題の診断は困難な場合があります。 オブジェクトが欠落する一般的な原因としては、デバイス状態の誤った構成、オブジェクトのジオメトリ変換の問題、グラフィックス パイプラインの誤った構成が挙げられます。  
@@ -55,4 +55,4 @@ ms.locfileid: "68159710"
 ## <a name="debugging-compute-shaders"></a>計算シェーダーをデバッグする  
  グラフィックス診断を使用して、正しくない結果を生成する DirectCompute 計算シェーダー カーネルをデバッグできます。 DirectCompute を使用すると、GPU 計算能力を使用して、多数のデータ要素に対して並列に計算を実行できます。 問題の種類によっては、GPU を利用することにより、適切に最適化された CPU コードの何倍も高速に実行できる場合があります。 ただし、従来のデバッガーでは、GPU で実行されるコードを検出できません。 この種のコードをデバッグするには、多くの場合販売元固有の専用ツールが必要であり、Visual Studio と密接に統合されない場合があります。 計算シェーダーのデバッグを、さまざまな GPU にまたがってより一貫したものにするために、グラフィックス診断は、Direct3D レンダリング イベントに加えて DirectCompute の Dispatch イベントをキャプチャし、使い慣れたツールを使用して計算シェーダー コードの問題をデバッグできるようにします。  
   
- 計算シェーダーのバグによって引き起こされるシミュレーションの問題をデバッグする方法については、シナリオでは、次を参照してください。[チュートリアル。グラフィックス診断を使用して計算シェーダーをデバッグする](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)します。
+ 計算シェーダーのバグによって引き起こされるシミュレーションの問題をデバッグする方法を示すシナリオについては、「[チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)」を参照してください。

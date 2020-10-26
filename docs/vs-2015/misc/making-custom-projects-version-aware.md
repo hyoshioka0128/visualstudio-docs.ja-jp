@@ -1,5 +1,5 @@
 ---
-title: カスタム プロジェクトのバージョンの認識を行う |Microsoft Docs
+title: カスタムプロジェクトのバージョン認識 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,10 +8,10 @@ ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825681"
 ---
 # <a name="making-custom-projects-version-aware"></a>カスタム プロジェクトでのバージョンの認識
@@ -24,17 +24,17 @@ ms.locfileid: "67825681"
   
  プロジェクト システムの作成者として、プロジェクト システムのユーザーがアップグレードをチェックできるように `UpgradeProject_CheckOnly` を ( `IVsProjectUpgradeViaFactory4` インターフェイスから) 実装します。 ユーザーがプロジェクトを開くと、プロジェクトを読み込む前に、このメソッドが呼び出されて、プロジェクトを修復する必要があるかどうかが判別されます。 アップグレード要件の候補が `VSPUVF_REPAIRFLAGS`に列挙され、その中には次のようなものがあります。  
   
-1. `SPUVF_PROJECT_NOREPAIR`:修復は不要です。  
+1. `SPUVF_PROJECT_NOREPAIR`: 修復は不要です。  
   
-2. `VSPUVF_PROJECT_SAFEREPAIR`:により、プロジェクトは、以前のバージョンと互換性のあるせず、製品の以前のバージョンで生じる可能性のある問題が発生します。  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: プロジェクトと以前のバージョンとの互換性を確保します。以前のバージョンの製品で見られたような問題は発生しません。  
   
-3. `VSPUVF_PROJECT_UNSAFEREPAIR` :により、プロジェクトは下位互換性は、製品の以前のバージョンとの遭遇した問題のいくつかリスクです。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: プロジェクトと以前のバージョンとの互換性を確保しますが、以前のバージョンの製品で見られたような問題が発生するリスクがあります。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
   
-4. `VSPUVF_PROJECT_ONEWAYUPGRADE` :により、プロジェクトは、以前のバージョンと互換性がありません。  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: プロジェクトと以前のバージョンとの互換性を確保しません。  
   
-5. `VSPUVF_PROJECT_INCOMPATIBLE`:現在のバージョンがこのプロジェクトをサポートしないことを示します。  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`: 現在のバージョンがこのプロジェクトをサポートしないことを示します。  
   
-6. `VSPUVF_PROJECT_DEPRECATED`:このプロジェクトのサポートが不要になったことを示します。  
+6. `VSPUVF_PROJECT_DEPRECATED`: このプロジェクトがサポートされなくなったことを示します。  
   
 > [!NOTE]
 > 混乱を避けるため、これらを設定するときにアップグレード フラグを組み合わせないでください。 たとえば、 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`のようなあいまいなアップグレード状態を作成しないでください。  
@@ -49,7 +49,7 @@ ms.locfileid: "67825681"
   
  次に、互換性ユーザー エクスペリエンスの概要の理解に役立つ例を示します。 以前のバージョンで作成されプロジェクトについて、アップグレードが必要であると現在のバージョンが判断した場合は、変更を許可するかどうかを確認するダイアログ ボックスが表示されます。 ユーザーが同意した場合は、プロジェクトが変更され、読み込まれます。 その後、このソリューションを閉じて以前のバージョンで再び開いた場合、この一方向のアップグレード プロジェクトは互換性がなくなり、読み込まれなくなります。 プロジェクトの (アップグレードではなく) 修復のみが必要な場合は、修復したプロジェクトが引き続き両方のバージョンで開きます。  
   
-## <a name="BKMK_Incompat"></a> プロジェクトを互換性なしとマークします。  
+## <a name="marking-a-project-as-incompatible"></a><a name="BKMK_Incompat"></a> プロジェクトを互換性なしとしてマークする  
  プロジェクトを以前のバージョンの Visual Studio との互換性なしとしてマークできます。  たとえば、.NET Framework 4.5 の機能を使用するプロジェクトを作成するとします。 このプロジェクトは [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]に組み込むことができないため、そのバージョンによって読み込まれないように、このプロジェクトを互換性なしとしてマークすることができます。  
   
  互換性のない機能を追加するコンポーネントには、プロジェクトを互換性なしとしてマークする責任があります。 コンポーネントは、対象となるプロジェクトを表す <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> インターフェイスにアクセスできる必要があります。  
@@ -58,7 +58,7 @@ ms.locfileid: "67825681"
   
 1. コンポーネントで、グローバル サービス SVsSolution から `IVsAppCompat` インターフェイスを取得します。  
   
-     詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 」を参照してください。  
+     詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>」を参照してください。  
   
 2. コンポーネントで、 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`を呼び出して、対象のプロジェクトを表す `IVsHierarchy` インターフェイスの配列を渡します。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "67825681"
   
      BreakAssetCompatibility メソッドは、その後 `IVsHierarchy.SetProperty` メソッドを呼び出して、ルート `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを前の手順で取得したバージョン文字列の値に設定します。  
   
-     詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> 」を参照してください。  
+     詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>」を参照してください。  
   
 > [!IMPORTANT]
 > プロジェクトを互換性ありまたは互換性なしとしてマークするには、 `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
@@ -120,11 +120,11 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  このメソッドが `pUpgradeRequired` を TRUE に設定し、 `S_OK`を返した場合、その結果は "アップグレード" として扱われ、メソッドが値 `VSPUVF_PROJECT_ONEWAYUPGRADE`にアップグレード フラグを設定した場合と同様になります。このことについては、このトピックで後述します。 この古いメソッドを使用することで、次の戻り値がサポートされます。ただし、 `pUpgradeRequired` を TRUE に設定しているときに限られます。  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_SAFEREPAIR`値を TRUE に変換します。  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_SAFEREPAIR`値を TRUE に変換します。  
   
-2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_UNSAFEREPAIR`値を TRUE に変換します。  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_UNSAFEREPAIR`値を TRUE に変換します。  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_ONEWAYUPGRADE`値を TRUE に変換します。  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. この戻り値は、 `pUpgradeRequired` (このトピックで後述) と同様、 `VSPUVF_PROJECT_ONEWAYUPGRADE`値を TRUE に変換します。  
   
    `IVsProjectUpgradeViaFactory4` と `IVsProjectFlavorUpgradeViaFactory2` の新しい実装により、移行の種類をより正確に指定できます。  
   
@@ -133,7 +133,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  たとえば、SP1 プロジェクト システムの `UpgradeProject_CheckOnly` 用に記述した `CreateProject` メソッドと [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] メソッドがプロジェクト ファイルを調べて、 `<MinimumVisualStudioVersion>` ビルド プロパティが "11.0" であることを検出した場合、Visual Studio 2010 SP1 はプロジェクトを読み込みません。 さらに、 **ソリューション ナビゲーター** は、プロジェクトに "互換性がなく"、読み込まれないことを示します。  
   
-## <a name="BKMK_UpgradeLogger"></a> アップグレード ロガー  
+## <a name="the-upgrade-logger"></a><a name="BKMK_UpgradeLogger"></a> アップグレード Logger  
  `IVsProjectUpgradeViaFactory::UpgradeProject` の呼び出しには `IVsUpgradeLogger` ロガーが含まれており、プロジェクト システムとフレーバーはそのロガーを使用してトラブルシューティング用に詳細なアップグレード トレースを提供します。 警告またはエラーが記録された場合は、アップグレード レポートが表示されます。  
   
  アップグレード ロガーを記述するときは、次のガイドラインを考慮してください。  

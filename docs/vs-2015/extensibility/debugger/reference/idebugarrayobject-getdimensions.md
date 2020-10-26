@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197786"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
@@ -45,13 +45,13 @@ int GetDimensions(
  から取得する次元の数。  
   
  `dwDimensions`  
- [入力、出力]各次元のサイズを格納する配列。 `dwCount``dwDimensions`配列の最大サイズを指定します。  
+ [入力、出力]各次元のサイズを格納する配列。 `dwCount` 配列の最大サイズを指定し `dwDimensions` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、は S_OK を返します。それ以外の場合は、エラーコードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- 多次元配列のサイズは、次元ごとに異なる場合があります。 たとえば、3次元配列`myarray[3][2][6]`の場合、このメソッドは、パラメーターの`dwDimensions` 3、2、および6をこの順序で返します。  
+## <a name="remarks"></a>注釈  
+ 多次元配列のサイズは、次元ごとに異なる場合があります。 たとえば、3次元配列の場合、 `myarray[3][2][6]` このメソッドは、パラメーターの3、2、および6をこの `dwDimensions` 順序で返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

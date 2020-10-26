@@ -1,5 +1,5 @@
 ---
-title: Just-in-time で、デバッグ オプション ダイアログ ボックス |Microsoft Docs
+title: '[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ]) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201101"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ])
@@ -61,6 +61,6 @@ ms.locfileid: "68201101"
   
  **アクセスが拒否されました。管理者に Just-In-Time デバッグを有効にしてもらうか、または Visual Studio のインストールを修復してください。**  
   
-## <a name="see-also"></a>関連項目  
- [[デバッグ] ([オプション] ダイアログ ボックス)](../debugger/debugging-options-dialog-box.md)   
+## <a name="see-also"></a>参照  
+ [[デバッグ] ([オプション] ダイアログボックス)](../debugger/debugging-options-dialog-box.md)   
  [方法: デバッガー設定を指定する](../debugger/how-to-specify-debugger-settings.md)

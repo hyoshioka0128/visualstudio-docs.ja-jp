@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178922"
 ---
 # <a name="viewing-data-in-the-debugger"></a>デバッガーでのデータ表示
@@ -39,9 +39,9 @@ ms.locfileid: "68178922"
  DataTips は、デバッグ時、プログラムに含まれる変数とオブジェクトに関する情報を表示するときに、最も便利なツールの 1 つです。 デバッガーが中断モードの場合に、ソース ウィンドウ内の変数上にマウス ポインターを置くと、現在のスコープ内の変数値を表示できます。 詳細については、「[データ ヒントでのデータ値の表示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)」を参照してください。  
   
 ## <a name="visualizers"></a>ビジュアライザー  
- ビジュアライザーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーの新しいコンポーネントであり、オブジェクトや変数の内容をわかりやすく表示できるようにします。 たとえば、HTML ビジュアライザーを使用すると、HTML 文字列を解釈してブラウザーに表示した場合と同様に表示できます。 ビジュアライザーには、DataTips、 **[ウォッチ]** ウィンドウ、 **[自動変数]** ウィンドウ、 **[ローカル]** ウィンドウ、または **[クイック ウォッチ]** ダイアログ ボックスからアクセスできます。 詳細については、「[Create Custom Visualizers](../debugger/create-custom-visualizers-of-data.md)」 (カスタム ビジュアライザーを作成する) を参照してください。  
+ ビジュアライザーは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーの新しいコンポーネントであり、オブジェクトや変数の内容をわかりやすく表示できるようにします。 たとえば、HTML ビジュアライザーを使用すると、HTML 文字列を解釈してブラウザーに表示した場合と同様に表示できます。 ビジュアライザーには、DataTips、 **[ウォッチ]** ウィンドウ、 **[自動変数]** ウィンドウ、 **[ローカル]** ウィンドウ、または **[クイック ウォッチ]** ダイアログ ボックスからアクセスできます。 詳細については、「 [カスタムビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
- [デバッガーの基本事項](../debugger/debugger-basics.md)   
- [コマンド ウィンドウ](../ide/reference/command-window.md)   
+## <a name="see-also"></a>参照  
+ [デバッガーの基本](../debugger/debugger-basics.md)   
+ [コマンドウィンドウ](../ide/reference/command-window.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)

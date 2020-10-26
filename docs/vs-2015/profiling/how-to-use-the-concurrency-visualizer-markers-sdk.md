@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870047"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
@@ -74,7 +74,7 @@ ms.locfileid: "68870047"
 
 6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 2 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、2 つの新しいスパンを示しています。
 
-     ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![3 つのカスタム マーカー シリーズがあるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic または C\# を使用するには
 
@@ -90,7 +90,7 @@ ms.locfileid: "68870047"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. 既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 [Span](/previous-versions/hh694189(v=vs.140))オブジェクトを作成するには、静的`EnterSpan`メソッドを呼び出します。 既定の系列に書き込むには、[マーカー](/previous-versions/hh694099(v=vs.140))クラスの静的な書き込みメソッドを使用します。
+3. 既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 `EnterSpan` メソッドを呼び出して、[Span](/previous-versions/hh694189(v=vs.140)) オブジェクトを作成します。 既定の系列に書き込むには、[Markers](/previous-versions/hh694099(v=vs.140)) クラスの静的な write メソッドを使用します。
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ ms.locfileid: "68870047"
 
      ![マーカーと警告があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. 静的な[CreateMarkerSeries](/previous-versions/hh694171(v=vs.140))メソッドを使用して、顧客マーカーシリーズを作成するコードを追加します。 [Microsoft.concurrencyvisualizer.instrumentation.markerseries>](/previous-versions/hh694127(v=vs.140))クラスには、範囲を作成し、フラグ、メッセージ、および警告を書き込むメソッドが含まれています。
+5. 静的な [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) メソッドを使用して、顧客マーカー シリーズを作成するコードを追加します。 [MarkerSeries](/previous-versions/hh694127(v=vs.140)) クラスには、範囲を作成して、フラグ、メッセージ、およびアラートを書き込むためのメソッドが含まれています。
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")
@@ -166,8 +166,8 @@ ms.locfileid: "68870047"
 
 6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 3 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、3 つの新しいスパンを示しています。
 
-     ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![3 つのカスタム マーカー シリーズがあるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

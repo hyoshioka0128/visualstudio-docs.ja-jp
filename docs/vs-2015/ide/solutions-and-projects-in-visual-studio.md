@@ -1,5 +1,5 @@
 ---
-title: ソリューションおよびプロジェクト
+title: ソリューションとプロジェクト
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661191"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
@@ -70,17 +70,17 @@ Visual Studio でアプリケーション、Web サイト、Web アプリ、ス�
 
  次の図は、プロジェクトとソリューションの関係、およびそれらに論理的に含まれる項目を示しています。
 
- ![Visual Studio のプロジェクトとソリューション](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Visual Studio のプロジェクトとソリューション](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  カスタム プロジェクトや項目テンプレートを作成することもできます。 詳細については、「[Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)」 (プロジェクトと項目テンプレートの作成) をご覧ください。
 
 ## <a name="creating-new-projects"></a>プロジェクトの新規作成
- 新しいプロジェクトを作成する最も簡単な方法は、最初に定義済みのプロジェクト テンプレートを使用することです。これらのテンプレートは、特定のプログラミング言語で特定の種類のアプリケーションや Web サイトを作成し始めるのに必要な、生成済みのコード ファイル、構成ファイル、資産、および設定の基本セットで構成されます。 これらのテンプレートは、メイン メニューの **[ファイル &#124; 新規作成 &#124; プロジェクト]** または **[ファイル &#124; 新規作成 &#124; Web サイト]** を選択して **[新しいプロジェクト]** ダイアログに移動したときに表示されます。 詳しくは、「[Creating Solutions and Projects](../ide/creating-solutions-and-projects.md)」 (ソリューションとプロジェクトの作成) および「[NIB テンプレートからのプロジェクトの作成](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)」をご覧ください。
+ 新しいプロジェクトを作成する最も簡単な方法は、最初に定義済みのプロジェクト テンプレートを使用することです。これらのテンプレートは、特定のプログラミング言語で特定の種類のアプリケーションや Web サイトを作成し始めるのに必要な、生成済みのコード ファイル、構成ファイル、資産、および設定の基本セットで構成されます。 これらのテンプレートは、メイン メニューの **[ファイル &#124; 新規作成 &#124; プロジェクト]** または **[ファイル &#124; 新規作成 &#124; Web サイト]** を選択して **[新しいプロジェクト]** ダイアログに移動したときに表示されます。 詳しくは、「 [Creating Solutions and Projects](../ide/creating-solutions-and-projects.md) 」および「  [NIB テンプレートからのプロジェクトの作成](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)」をご覧ください。
 
 ## <a name="managing-projects-in-solution-explorer"></a>ソリューション エクスプローラーでのプロジェクトの管理
  新しいプロジェクトを作成した後は、 **ソリューション エクスプローラー** を使用して、プロジェクト、ソリューション、およびそれらの関連項目を表示して管理します。 次の図に、2 つのプロジェクトを含む C# ソリューションが表示されたサーバー エクスプローラーを示します。
 
- ![ソリューション エクスプローラー](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![ソリューション エクスプローラー](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -96,11 +96,11 @@ Visual Studio でアプリケーション、Web サイト、Web アプリ、ス�
 
 - [アセンブリおよびマニフェストへの署名の管理](../ide/managing-assembly-and-manifest-signing.md)
 
-- [方法 : アプリケーション アイコンを指定する (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [方法: アプリケーションアイコンを指定する (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [対象となる特定の .NET Framework バージョンの指定](../ide/targeting-a-specific-dotnet-framework-version.md)
 
-- [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
+- [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebug ポートサプライヤーロケール2::セットロケール |マイクロソフトドキュメント
+title: 'IDebugPortSupplierLocale2:: SetLocale |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f35e4f2732427045fac982454ce9f7290a6dc970
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724302"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
-ポート サプライヤーのロケールを設定します。
+ポートサプライヤーのロケールを設定します。
 
 ## <a name="syntax"></a>構文
 
@@ -42,7 +42,7 @@ int SetLocale(
 設定するロケールの識別子。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugPortSupplierLocale2](../../../extensibility/debugger/reference/idebugportsupplierlocale2.md)

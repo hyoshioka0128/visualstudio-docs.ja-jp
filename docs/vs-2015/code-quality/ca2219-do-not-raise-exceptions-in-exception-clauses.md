@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 960c74625a04b209dc9aa251256e994517a3a52f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538529"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219:exception 句に例外を発生させないでください
@@ -51,5 +51,5 @@ ms.locfileid: "85538529"
 ## <a name="related-rules"></a>関連規則
  [CA1065:予期しない場所に例外を発生させません](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [デザインの警告](../code-quality/design-warnings.md)

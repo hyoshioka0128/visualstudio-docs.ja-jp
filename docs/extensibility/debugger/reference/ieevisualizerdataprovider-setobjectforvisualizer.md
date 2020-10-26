@@ -1,5 +1,5 @@
 ---
-title: データプロバイダー::セットオブジェクトフォービジュアライザー |マイクロソフトドキュメント
+title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718081"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
@@ -45,19 +45,19 @@ int SetObjectForVisualizer(
 
 ## <a name="parameters"></a>パラメーター
 `pNewObject`\
-[in]設定するオブジェクト。
+から設定するオブジェクト。
 
 `error`\
-[アウト]オブジェクトの設定時にエラーが発生した場合、この文字列にはエラー メッセージが表示されます。
+入出力オブジェクトの設定中にエラーが発生した場合、この文字列にはエラーメッセージが格納されます。
 
 `pException`\
-[アウト]エラーが発生した場合、このオブジェクトは例外情報を保持します。
+入出力エラーが発生した場合、このオブジェクトは例外情報を保持します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- エラー情報の返し方は、実装者の判断に応じます。 ただし、エラーが発生したことを知るために例外オブジェクトが返されたかどうかを確認するだけの呼び出し元が存在する場合があるため、エラーが発生した場合、このメソッドは常に例外オブジェクトを返す必要があります。 呼び出し元がエラー文字列を使用する場合にも、エラー文字列を指定する必要があります。
+## <a name="remarks"></a>注釈
+ エラー情報が返される方法は、実装者が決定します。 ただし、一部の呼び出し元では、エラーが発生したことを認識するために例外オブジェクトが返されたかどうかのみを調べることができます。したがって、エラーが発生した場合、このメソッドは常に例外オブジェクトを返します。 エラー文字列は、呼び出し元が使用しようとしている場合にも指定する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

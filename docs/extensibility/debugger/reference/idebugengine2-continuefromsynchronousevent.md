@@ -1,5 +1,5 @@
 ---
-title: 同期イベントを続行するマイクロソフトドキュメント
+title: 'IDebugEngine2:: ContinueFromSynchronousEvent |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: da059b6efe137092d46241977a98b22b1eb66c44
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731148"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-セッション デバッグ マネージャー (SDM) によって呼び出され、以前にデバッグ エンジン (DE) によって SDM に送信された同期デバッグ イベントが受信され、処理されたことを示します。
+以前にデバッグエンジン (DE) によって SDM に送信された同期デバッグイベントが受信および処理されたことを示すために、セッションデバッグマネージャー (SDM) によって呼び出されます。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ HRESULT ContinueFromSynchronousEvent(
 
 ## <a name="parameters"></a>パラメーター
 `pEvent`\
-[in]デバッガーを続行する前に送信された同期イベントを表す[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)オブジェクト。
+からデバッガーが続行される前に送信された同期イベントを表す [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) オブジェクト。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-DE は、それがパラメータによって表されるイベントのソースであることを確認する`pEvent`必要があります。
+## <a name="remarks"></a>解説
+DE は、パラメーターによって表されるイベントのソースであることを確認する必要があり `pEvent` ます。
 
 ## <a name="example"></a>例
-`CEngine` [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を次の例に示します。
+次の例は、IDebugEngine2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CEngine` います。 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)

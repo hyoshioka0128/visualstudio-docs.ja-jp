@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases |Microsoft Docs
+title: 'IDebugBinder3:: GetAllAliases |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc2075ccc37d280640f7559b1454990ee6684f25
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555749"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
@@ -44,16 +44,16 @@ int GetAllAliases(
   
 #### <a name="parameters"></a>パラメーター  
  `uRequest`  
- [in]エイリアスを返すの最大数 (に渡された配列の長さを指定します`ppAliases`)。  
+ から返されるエイリアスの最大数 (に渡される配列の長さを指定し `ppAliases` ます)。  
   
  `ppAliases`  
- [入力、出力]エイリアスをコピーする配列 (これが null 値の場合と`uRequest`が 0 の場合で返すことができるエイリアスの数が返される`puFetched`)。  
+ [入力、出力]エイリアスを格納する配列 (これが null 値で、 `uRequest` が0の場合、返される可能性がある別名の数はによって返され `puFetched` ます)。  
   
  `puFetched`  
- [out]取得したエイリアスの数を返します。  
+ 入出力取得されたエイリアスの数を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

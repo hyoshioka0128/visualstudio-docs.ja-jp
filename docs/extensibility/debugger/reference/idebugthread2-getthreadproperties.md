@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugThread2:: GetThreadProperties |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718693"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
@@ -43,19 +43,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>パラメーター
 `dwFields`\
-[in]THREADPROPERTY_FIELDS[列挙体](../../../extensibility/debugger/reference/threadproperty-fields.md)のフラグの組み合わせで、どの`ptp`フィールドに入力するかを決定します。
+からに入力するフィールドを決定する、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 列挙のフラグの組み合わせ `ptp` 。
 
 `ptp`\
-[イン、アウト]スレッドのプロパティを格納する[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体。
+[入力、出力]スレッドのプロパティを使用して入力される [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md) 構造体。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
-このメソッドから返される情報は、通常、**スレッド**のデバッグ ウィンドウに表示されます。
+## <a name="remarks"></a>注釈
+このメソッドから返される情報は、通常、[ **スレッド** デバッグ] ウィンドウに表示されます。
 
 ## <a name="example"></a>例
-`CProgram` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を次の例に示します。
+次の例は、IDebugThread2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,

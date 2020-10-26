@@ -2,7 +2,7 @@
 title: '手順 5: Azure に ASP.NET Core アプリをデプロイする'
 description: このビデオ チュートリアルとステップ バイ ステップの手順に従って、Azure に ASP.NET Core Web アプリをデプロイします。
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580034"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248706"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>手順 5: Azure に ASP.NET Core アプリをデプロイする
 
@@ -37,21 +37,47 @@ Visual Studio 2019 で ASP.NET Core アプリを開きます。 アプリでは�
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service に発行する
 
-ソリューション エクスプローラー内でプロジェクトを右クリックし、 **[発行]** を選択します。 **[App Service]** と **[新規作成]** の設定は既定のままにして、 **[発行]** ボタンをクリックします。 Azure アカウントをまだお持ちでない場合は、 **[無料 Azure アカウントを作成する]** をクリックして、簡単な登録プロセスを完了してください。
+1. ソリューション エクスプローラー内でプロジェクトを右クリックし、 **[発行]** を選択します。 **[発行]** ウィザードでターゲットとして **[Azure]** を選択します。
 
-SQL Server を追加します。 管理者のユーザー名とパスワードを指定します。
+   ![Azure App Service のスクリーンショット 1](media/vs-2019/app-service-screen-1.png)
 
-![Visual Studio 2019 での Azure SQL Server の作成](media/vs-2019/vs2019-azure-sql-server.png)
+1. 特定のターゲットであれば、 **[Azure App Service (Windows)]** を選択します。
 
-Application Insights を追加します。
+   ![Azure App Service のスクリーンショット 2](media/vs-2019/app-service-screen-2.png)
 
-**[作成]** ボタンをクリックして続行します。
+1. **[新しい Azure App Service の作成]** を選択します。 Azure アカウントをまだお持ちでない場合は、**[無料 Azure アカウントを作成する]** をクリックして、簡単な登録プロセスを完了してください。
 
-![Visual Studio 2019 での Azure App Service の新規作成](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Azure App Service のスクリーンショット 3](media/vs-2019/app-service-screen-3.png)
+
+1. 名前とリソース グループを指定するか、既定値をそのまま採用し、 **[作成]** を選択します。 リソース グループは、Azure で関連性のあるリソースを整理する方法です。たとえば、ストレージ アカウント、キー コンテナー、データベースと一緒に機能するサービスを整理します。
+
+   ![Azure App Service のスクリーンショット 4](media/vs-2019/app-service-screen-4.png)
+
+1. **[完了]** を選択します。 Azure でリソースが作成され、アプリがデプロイされ、作成したものに関する情報が **[発行]** タブに入力されます。 **[発行]** タブには、同じ構成でワン クリックで発行するためのボタンがあります。このタブではまた、構成の詳細を確認したり、データベースなど、サービスを追加したりできます。
+
+ここで、Azure SQL Server データベースを追加します。
+
+1. **[発行]** タブの **[サービスの依存関係]** の下で、 **[SQL Server データベース]** の横にある **[構成]** を選択します。
+
+1. 次の画面で、 **[Azure SQL Database]** を選択します。
+
+   ![Azure SQL Database 画面のスクリーンショット](media/vs-2019/app-service-azure-sql-db.png)
+
+1. **[SQL Database の構成]** 画面で **[SQL データベースを作成する]** を選択します。
+
+   ![[SQL Database の構成] 画面のスクリーンショット](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. **[Azure SQL Database] の [新規作成]** 画面で、新しいデータベース サーバーを作成します。
+
+   ![Azure SQL Database のスクリーンショット新規作成](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. **[SQL Server] の [新規作成]** 画面で、名前と場所を選択し、管理者のユーザー名とパスワードを指定します。
+
+   ![Visual Studio 2019 での Azure SQL Server の作成](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Azure portal およびホスト対象アプリを探索する
 
-App Service が作成されると、ブラウザー内でサイトが起動します。 読み込み中に Azure portal 内で App Service を探すこともできます。 App Service の使用可能なオプションを探索すると、 **[概要]** セクションが見つかります。このセクションでは、アプリの起動や停止が可能です。
+App Service が作成されると、ブラウザー内でサイトが起動します。 読み込み中に Azure portal 内で App Service を探すこともできます。 App Service の使用可能なオプションを探索すると、**[概要]** セクションが見つかります。このセクションでは、アプリの起動や停止が可能です。
 
 ![Azure App Service のオプション](media/vs-2019/vs2019-azure-app-service-menu-options.png)
 
@@ -73,11 +99,11 @@ Azure の場合、既定では、アプリから新しい SQL Server データ�
 
 ## <a name="test-the-app-running-in-azure"></a>Azure 内で実行されているアプリをテストする
 
-*/Games* パスに移動すると、新しいゲームを追加して、一覧表示できます。 次に、 */swagger* パスに移動すると、ここから Web API エンドポイントを使用して、アプリの API が機能しているかも確認できます。
+*/Games* パスに移動すると、新しいゲームを追加して、一覧表示できます。 次に、*/swagger* パスに移動すると、ここから Web API エンドポイントを使用して、アプリの API が機能しているかも確認できます。
 
 おめでとうございます! このビデオ チュートリアル シリーズが完了しました。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 これらの無料リソースを使用して ASP.NET Core アプリケーションを設計する方法を詳しく学びます。
 

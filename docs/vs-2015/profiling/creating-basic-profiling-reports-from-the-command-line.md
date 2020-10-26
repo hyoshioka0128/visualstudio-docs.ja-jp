@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537187"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>コマンド ラインからの基本的なプロファイリング レポートの作成
@@ -27,7 +27,7 @@ ms.locfileid: "62537187"
  **VSPerfReport** `VSPFile` **/Summary:All**  
  .vsp ファイルまたは .vsps ファイルで利用できるすべてのレポートが生成されます。  
   
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
+ **VSPerfReport** `VSPFile`**概要:** `ReportType`[,`ReportType`...]  
  指定した種類のレポートが生成されます。  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
@@ -39,18 +39,18 @@ ms.locfileid: "62537187"
 |概要パラメーター|レポートの説明|レポートの参考情報|  
 |-----------------------|------------------------|----------------------|  
 |**CallerCallee**|関数間の親子関係が表示されます。|-   [サンプリング データ](../profiling/caller-callee-view-sampling-data.md)<br />-   [インストルメンテーション データ](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [.NET メモリ インストルメンテーション データ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [競合データ](../profiling/caller-callee-view-contention-data.md)|  
-|**Function**|プロファイル データが関数別に一覧表示されます。|-   [サンプリング データ](../profiling/functions-view-sampling-data.md)<br />-   [インストルメンテーション データ](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET メモリ インストルメンテーション データ](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [競合データ](../profiling/functions-view-contention-data.md)|  
+|**関数**|プロファイル データが関数別に一覧表示されます。|-   [サンプリング データ](../profiling/functions-view-sampling-data.md)<br />-   [インストルメンテーション データ](../profiling/functions-view-instrumentation-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [.NET メモリ インストルメンテーション データ](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [競合データ](../profiling/functions-view-contention-data.md)|  
 |**CallTree**|プロファイリング実行の実行パスおよび関数のプロファイル データが表示されます。|-   [インストルメンテーション データ](../profiling/call-tree-view-instrumentation-data.md)<br />-   [サンプリング データ](../profiling/call-tree-view-sampling-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [.NET メモリ インストルメンテーション データ](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [競合データ](../profiling/call-tree-view-contention-data.md)|  
-|**カウンター**|プロファイリング実行中に収集されたプロファイル マークおよび Windows パフォーマンス カウンター値が一覧表示されます。|-   [マーク ビュー](../profiling/marks-view.md)|  
-|**Ip**|プロファイル データが命令別に一覧表示されます。|-   [サンプリング データ](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [競合データ](../profiling/instruction-pointers-ips-view-contention-data.md)|  
+|**カウンター**|プロファイリング実行中に収集されたプロファイル マークおよび Windows パフォーマンス カウンター値が一覧表示されます。|-   [マークビュー](../profiling/marks-view.md)|  
+|**/Ip**|プロファイル データが命令別に一覧表示されます。|-   [サンプリング データ](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [競合データ](../profiling/instruction-pointers-ips-view-contention-data.md)|  
 |**Life**|割り当てられたオブジェクトの有効期間が一覧表示されます。|-   [オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)|  
-|**Line**|プロファイル データがソース コード行別に一覧表示されます。|-   [サンプリング データ](../profiling/lines-view-sampling-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [競合データ](../profiling/lines-view-contention-data.md)|  
-|**Header**|プロファイル データ ファイルのヘッダー情報です。|ファイルによって異なります。|  
-|**マーク**|プロファイル実行中に収集されたプロファイル マークが表示されます。|-   [マーク ビュー](../profiling/marks-view.md)|  
-|**Module**|モジュールのプロファイル データが一覧表示されます。|-   [サンプリング データ](../profiling/modules-view-sampling-data.md)<br />-   [インストルメンテーション データ](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET メモリ インストルメンテーション データ](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [競合データ](../profiling/modules-view-contention-data.md)|  
-|**Process**|プロセスのプロファイル データが一覧表示されます。|-   [プロセス ビュー](../profiling/process-view.md)<br />-   [競合データ](../profiling/process-view-contention-data.md)|  
-|**スレッド**|スレッドのプロファイル データが一覧表示されます。|-   [プロセス ビュー](../profiling/process-view.md)|  
-|**Type**|割り当てプロファイル データが種類別に一覧表示されます。|-   [割り当て ビュー](../profiling/dotnet-memory-allocations-view.md)|  
-|**Contention**|リソースの競合が表示されます。|-   [リソースの競合](../profiling/resource-contentions-view-contention-data.md)|  
+|**線**|プロファイル データがソース コード行別に一覧表示されます。|-   [サンプリング データ](../profiling/lines-view-sampling-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [競合データ](../profiling/lines-view-contention-data.md)|  
+|**ヘッダー**|プロファイル データ ファイルのヘッダー情報です。|ファイルによって異なります。|  
+|**Mark**|プロファイル実行中に収集されたプロファイル マークが表示されます。|-   [マークビュー](../profiling/marks-view.md)|  
+|**[Module]**|モジュールのプロファイル データが一覧表示されます。|-   [サンプリング データ](../profiling/modules-view-sampling-data.md)<br />-   [インストルメンテーション データ](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET メモリ サンプリング データ](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET メモリ インストルメンテーション データ](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [競合データ](../profiling/modules-view-contention-data.md)|  
+|**[処理]**|プロセスのプロファイル データが一覧表示されます。|-   [プロセスビュー](../profiling/process-view.md)<br />-   [競合データ](../profiling/process-view-contention-data.md)|  
+|**スレッド**|スレッドのプロファイル データが一覧表示されます。|-   [プロセスビュー](../profiling/process-view.md)|  
+|**Type**|割り当てプロファイル データが種類別に一覧表示されます。|-   [割り当てビュー](../profiling/dotnet-memory-allocations-view.md)|  
+|**頻繁**|リソースの競合が表示されます。|-   [リソースの競合](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|パフォーマンス規則の問題が一覧表示されます。|-   規則の問題の CheckId、説明、およびソース コードの場所が一覧表示されます。|  
 |**ETW**|プロファイリング実行で収集された ETW (Event Tracing for Windows) イベントが一覧表示されます。|-   [ETW レポート](../profiling/event-tracing-for-windows-etw-report.md)|

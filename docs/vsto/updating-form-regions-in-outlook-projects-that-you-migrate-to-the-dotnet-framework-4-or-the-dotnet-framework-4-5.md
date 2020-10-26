@@ -1,5 +1,5 @@
 ---
-title: プロジェクトの更新プログラムの Outlook フォーム領域は、.NET Framework 4、4.5 に移行
+title: .NET Framework 4、4.5 に移行したプロジェクトで Outlook フォーム領域を更新する
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836052"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Outlook プロジェクトのフォーム領域を更新します。
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Outlook プロジェクトのフォーム領域を更新する
   フォーム領域を含む Outlook VSTO アドイン プロジェクトのターゲット フレームワークを [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更する場合は、生成されるフォーム領域コードおよび実行時に特定のフォーム領域クラスをインスタンス化するすべてのコードに対して、いくつかの変更を加える必要があります。
 
-## <a name="update-the-generated-form-region-code"></a>生成されるフォーム領域コードを更新します。
- プロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更される場合は、生成されるフォーム領域コードを変更する必要があります。 加える変更は、Visual Studio でデザインしたフォーム領域と、Outlook からインポートしたフォーム領域とで異なります。 これらの種類のフォーム領域の間の違いの詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+## <a name="update-the-generated-form-region-code"></a>生成されたフォーム領域コードの更新
+ プロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更される場合は、生成されるフォーム領域コードを変更する必要があります。 加える変更は、Visual Studio でデザインしたフォーム領域と、Outlook からインポートしたフォーム領域とで異なります。 これらのフォーム領域の種類の違いの詳細については、「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Visual Studio でデザインしたフォーム領域の生成されたコードを更新するには
 
@@ -103,13 +103,13 @@ ms.locfileid: "66836052"
     }
     ```
 
-5. プロジェクトに新しい Outlook フォーム領域アイテムを追加します。 新しいフォーム領域の分離コード ファイルを開き、ファイルの *YourNewFormRegion*`Factory` および `WindowFormRegionCollection` クラスを見つけて、これらのクラスをクリップボードにコピーします。
+5. プロジェクトに新しい Outlook フォーム領域アイテムを追加します。 新しいフォーム領域の分離コードファイルを開き、ファイル内の*YourNewFormRegion* `Factory` クラスと `WindowFormRegionCollection` クラスを見つけて、これらのクラスをクリップボードにコピーします。
 
 6. プロジェクトに追加した新しいフォーム領域を削除します。
 
-7. 再ターゲットのプロジェクトの作業を更新するフォーム領域の分離コード ファイルで、 *YourOriginalFormRegion*`Factory` および `WindowFormRegionCollection` クラスを見つけ、新しいフォーム領域からコピーしたコードに置き換えます。
+7. 再ターゲットプロジェクトで動作するように更新するフォーム領域の分離コードファイルで、 *YourOriginalFormRegion* `Factory` クラスと classes クラスを見つけ、 `WindowFormRegionCollection` 新しいフォーム領域からコピーしたコードに置き換えます。
 
-8. *YourNewFormRegion*`Factory` と `WindowFormRegionCollection` クラスで、 *YourNewFormRegion* クラスしへのすべての参照を検索し、それぞれの参照先を、代わりに *YourOriginalFormRegion* クラスに変更します。 たとえば、更新するフォーム領域の名前が `SalesDataFormRegion` で、手順 5 で作成した新しいフォーム領域の名前が `FormRegion1`の場合、 `FormRegion1` のすべての参照を `SalesDataFormRegion`に変更します。
+8. YourNewFormRegion クラス*YourNewFormRegion* `Factory` と classes クラスで、 `WindowFormRegionCollection` *YourNewFormRegion*クラスへのすべての参照を検索し、代わりに*YourOriginalFormRegion*クラスへの参照をそれぞれ変更します。 たとえば、更新するフォーム領域の名前が `SalesDataFormRegion` で、手順 5 で作成した新しいフォーム領域の名前が `FormRegion1`の場合、 `FormRegion1` のすべての参照を `SalesDataFormRegion`に変更します。
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Outlook からインポートしたフォーム領域の生成されたコードを更新するには
 
@@ -175,18 +175,18 @@ ms.locfileid: "66836052"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. プロジェクトに新しい Outlook フォーム領域アイテムを追加します。 新しいフォーム領域の分離コード ファイルを開き、ファイルの *YourNewFormRegion*`Factory` および `WindowFormRegionCollection` クラスを見つけて、これらのクラスをクリップボードにコピーします。
+5. プロジェクトに新しい Outlook フォーム領域アイテムを追加します。 新しいフォーム領域の分離コードファイルを開き、ファイル内の*YourNewFormRegion* `Factory` クラスと `WindowFormRegionCollection` クラスを見つけて、これらのクラスをクリップボードにコピーします。
 
 6. プロジェクトに追加した新しいフォーム領域を削除します。
 
-7. 再ターゲットのプロジェクトの作業を更新するフォーム領域の分離コード ファイルで、 *YourOriginalFormRegion*`Factory` および `WindowFormRegionCollection` クラスを見つけ、新しいフォーム領域からコピーしたコードに置き換えます。
+7. 再ターゲットプロジェクトで動作するように更新するフォーム領域の分離コードファイルで、 *YourOriginalFormRegion* `Factory` クラスと classes クラスを見つけ、 `WindowFormRegionCollection` 新しいフォーム領域からコピーしたコードに置き換えます。
 
-8. *YourNewFormRegion*`Factory` と `WindowFormRegionCollection` クラスで、 *YourNewFormRegion* クラスしへのすべての参照を検索し、それぞれの参照先を、代わりに *YourOriginalFormRegion* クラスに変更します。 たとえば、更新するフォーム領域の名前が `SalesDataFormRegion` で、手順 5 で作成した新しいフォーム領域の名前が `FormRegion1`の場合、 `FormRegion1` のすべての参照を `SalesDataFormRegion`に変更します。
+8. YourNewFormRegion クラス*YourNewFormRegion* `Factory` と classes クラスで、 `WindowFormRegionCollection` *YourNewFormRegion*クラスへのすべての参照を検索し、代わりに*YourOriginalFormRegion*クラスへの参照をそれぞれ変更します。 たとえば、更新するフォーム領域の名前が `SalesDataFormRegion` で、手順 5 で作成した新しいフォーム領域の名前が `FormRegion1`の場合、 `FormRegion1` のすべての参照を `SalesDataFormRegion`に変更します。
 
-## <a name="instantiate-form-region-classes"></a>フォーム領域クラスをインスタンス化します。
+## <a name="instantiate-form-region-classes"></a>フォーム領域クラスのインスタンス化
  特定のフォーム領域クラスを動的にインスタンス化するすべてのコードを変更する必要があります。 .NET Framework 3.5 を対象とするプロジェクトでは、`Microsoft.Office.Tools.Outlook.FormRegionManifest` などのフォーム領域クラスを直接インスタンス化できます。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とするプロジェクトの場合、これらのクラスはインターフェイスであるため、直接インスタンス化できません。
 
- プロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更される場合は、`Globals.Factory` プロパティにより提供されるメソッドを使用してインターフェイスをインスタンス化する必要があります。 詳細については、`Globals.Factory`プロパティを参照してください[Office プロジェクト内のオブジェクトへのアクセスをグローバル](../vsto/global-access-to-objects-in-office-projects.md)します。
+ プロジェクトのターゲット フレームワークが [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更される場合は、`Globals.Factory` プロパティにより提供されるメソッドを使用してインターフェイスをインスタンス化する必要があります。 プロパティの詳細につい `Globals.Factory` ては、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。
 
  次の表に、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とするプロジェクトのフォーム領域の型と、型のインスタンス化に使用するメソッドをリストします。
 
@@ -197,5 +197,5 @@ ms.locfileid: "66836052"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
 ## <a name="see-also"></a>関連項目
-- [.NET Framework 4 またはそれ以降の Office ソリューションを移行します。](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Office ソリューションを .NET Framework 4 以降に移行する](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)

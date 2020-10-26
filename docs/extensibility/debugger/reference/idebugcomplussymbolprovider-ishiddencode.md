@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: 'IDebugComPlusSymbolProvider:: IsHiddenCode |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1ede1cbd8c2a69d45a8c653aa97d0bfb618f821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733668"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-指定したデバッガー アドレスのコードが非表示かどうかを判断します。
+指定したデバッガーアドレスにあるコードが非表示かどうかを判断します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,13 +39,13 @@ int IsHiddenCode(
 
 ## <a name="parameters"></a>パラメーター
 `pAddress`\
-[in]インターフェイスによって表されるデバッグ[アドレス](../../../extensibility/debugger/reference/idebugaddress.md)。
+から [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスによって表されるデバッグアドレス。
 
 ## <a name="return-value"></a>戻り値
-コードが非表示の場合は、`S_OK`返します。それ以外の`S_FALSE`場合は、 を返します。
+コードが非表示の場合はを返します。 `S_OK` それ以外の場合はを返し `S_FALSE` ます。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**CDebugSymbolProvider**オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)示します。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsHiddenCode(

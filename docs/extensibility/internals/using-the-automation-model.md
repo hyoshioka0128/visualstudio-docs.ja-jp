@@ -1,5 +1,5 @@
 ---
-title: オートメーションモデルの使用 |マイクロソフトドキュメント
+title: オートメーションモデルを使用する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80704219"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012491"
 ---
 # <a name="using-the-automation-model"></a>オートメーション モデルの使用
-VSPackage をオートメーションに接続した後、<xref:EnvDTE.DTEClass.GetObject%2A><xref:EnvDTE._DTE>取得するオブジェクトを表す文字列を渡して、オブジェクトのメソッドを呼び出すことによって、プロパティとメソッドを取得できます。
+VSPackage を automation に接続した後、 <xref:EnvDTE.DTEClass.GetObject%2A> オブジェクトでメソッドを呼び出して <xref:EnvDTE._DTE> 、取得するオブジェクトを表す文字列を渡すことによって、プロパティとメソッドを取得できます。
 
-## <a name="obtaining-project-objects"></a>プロジェクト オブジェクトの取得
- オートメーション コンシューマーがプロジェクトオートメーション オブジェクトを取得する方法を示す 2 つのコード例を次に示します。 DTE オブジェクトを取得する方法については、「方法[: DTE オブジェクトおよび DTE2 オブジェクトへの参照を取得する](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)」を参照してください。
+## <a name="obtaining-project-objects"></a>取得 (プロジェクトオブジェクトを)
+ 次に、オートメーションコンシューマーがプロジェクトオートメーションオブジェクトを取得する方法を示す2つのコード例を示します。 DTE オブジェクトを取得する方法については、「 [方法: dte オブジェクトと DTE2 オブジェクトへの参照を取得](/previous-versions/68shb4dw(v=vs.140))する」を参照してください。
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- この時点で、特定の VSPackage の一部である標準プロジェクト オブジェクトを使用して、階層モデルを下に移動できます。
+ この時点で、特定の VSPackage の一部である標準のプロジェクトオブジェクトを使用して、階層モデルを下に移動できます。
 
- カスタム プロジェクトの種類のプロパティであるカスタム オブジェクトを取得する方法を次のコード例に示します。
+ 次のコード例は、カスタムプロジェクトの種類のプロパティであるカスタムオブジェクトを取得する方法を示しています。
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- 次のコードは、[[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**ツール]** メニューの [**全般**] オプションの環境のすべてのプロパティの名前を示しています。
+ 次のコードは、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **ツール**] メニューの [環境] **[全般**] オプションにあるすべてのプロパティの名前を示しています。
 
 ```vb
 dim objDTE

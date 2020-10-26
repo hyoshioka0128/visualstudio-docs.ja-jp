@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918488"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio のライフサイクル ポリシーの例外
@@ -24,7 +24,7 @@ Visual Studio には、多数のコンパイラ、言語、ランタイム、環
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Visual Studio ポリシー以外のライフサイクル ポリシーに従う外部コンポーネント  
  次の表に、Visual Studio に含まれている可能性のある (Visual Studio ソフトウェアの特定のエディションに応じます) Microsoft プラットフォームのコンポーネントを示します。これらは、独自のサポート ポリシーとタイム フレームに従う必要があります。  
   
-|製品ファミリ|EXTERNAL NAME|  
+|製品ファミリ|外部名|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
@@ -34,7 +34,7 @@ Visual Studio には、多数のコンパイラ、言語、ランタイム、環
 |[Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange Web サービス|  
 |[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
-|これらのコンポーネントの更新プログラムは NuGet 経由で配布され、標準的な Microsoft のライフサイクル ポリシーには従いません。  詳細については、「[http://docs.nuget.org/](/nuget/)」を参照してください。|Microsoft .NET Framework 4.5 用の JSON Web トークン ハンドラー<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web 最適化フレームワーク<br /><br /> WebGrease|  
+|これらのコンポーネントの更新プログラムは NuGet 経由で配布され、標準的な Microsoft のライフサイクル ポリシーには従いません。  詳細については、「」を参照してください [http://docs.nuget.org/](/nuget/) 。|Microsoft .NET Framework 4.5 用の JSON Web トークン ハンドラー<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web 最適化フレームワーク<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[オンライン サービス ポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  
@@ -49,4 +49,4 @@ Visual Studio には、多数のコンパイラ、言語、ランタイム、環
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> Windows Library for JavaScript (WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> 参照:[オンラインライフサイクルポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> 参照: [オンラインライフサイクルポリシー](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|

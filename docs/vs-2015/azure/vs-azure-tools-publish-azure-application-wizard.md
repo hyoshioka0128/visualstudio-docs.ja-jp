@@ -1,5 +1,5 @@
 ---
-title: 使用して、Azure アプリケーションの公開ウィザード |Microsoft Docs
+title: Azure アプリケーションのパブリッシュウィザードの使用 |Microsoft Docs
 description: Visual Studio の Azure アプリケーションの公開ウィザードで、さまざまな設定を構成する方法について説明します。
 author: ghogen
 manager: jillfra
@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: a75e83e3fb2ac43b4fa1d658c7e2a08ec1ae3c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62831344"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio の Azure アプリケーションの公開ウィザードの使用
@@ -83,7 +83,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 **[配置の更新] - [設定]** - このダイアログは、ロールの更新方法をさらに詳しく指定するときに使用します。 **[増分更新]** を選択した場合は、アプリケーションのインスタンスが 1 つずつ更新されるので、アプリケーションをいつでも利用できます。 **[同時更新]** を選択した場合は、アプリケーションのすべてのインスタンスが同時に更新されます。 同時更新の方が高速ですが、更新処理中はサービスが利用できない可能性があります。
 
-![[配置の設定]](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
+![展開の設定](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
 **[IntelliTrace を有効にする]** - IntelliTrace を有効にするかどうかを指定します。 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 IntelliTrace の使用方法の詳細については、「[Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ](./vs-azure-tools-intellitrace-debug-published-cloud-services.md)」をご覧ください。
 
@@ -101,7 +101,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 ![まとめ](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、 **[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、**[ターゲット プロファイル]** の一覧を開き、**[&lt;管理…&gt;]** を選択します。
+**[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、**[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、**[ターゲット プロファイル]** の一覧を開き、**[&lt;管理…&gt;]** を選択します。
 
    > [!Note]
    > 発行プロファイルが Visual Studio のソリューション エクスプローラーに表示され、プロファイル設定が .azurePubxml という拡張子を持つファイルに書き込まれます。 設定は、XML タグの属性として保存されます。

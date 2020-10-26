@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532587"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 
 DSL 定義を編集するために使用するデザイナーの拡張機能を作成できます。 拡張の種類としては、メニューコマンドの追加、ドラッグアンドクリックによるジェスチャのハンドラーの追加、特定の種類の値や関係が変更されたときにトリガーされるルールなどがあります。 拡張機能は、Visual Studio Integration Extension (VSIX) としてパッケージ化し、他のユーザーに配布することができます。
 
-サンプルコードとこの機能の詳細については、「Visual Studio の[視覚化およびモデリング SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)」を参照してください。
+サンプルコードとこの機能の詳細については、「Visual Studio の [視覚化およびモデリング SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)」を参照してください。
 
 ## <a name="set-up-the-solution"></a>ソリューションを設定する
 
@@ -28,17 +28,17 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 1. **クラスライブラリ**プロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 このプロジェクトには、拡張機能のコードが含まれます。
 
-2. 新しい**VSIX プロジェクト**プロジェクトを作成します。
+2. 新しい **VSIX プロジェクト** プロジェクトを作成します。
 
-     [**ソリューションに追加**] を選択します。
+     [ **ソリューションに追加**] を選択します。
 
-     *Source.extension.vsixmanifest*が VSIX マニフェストエディターで開きます。
+     *Source.extension.vsixmanifest* が VSIX マニフェストエディターで開きます。
 
-3. [コンテンツ] フィールドの上にある [**コンテンツの追加**] をクリックします。
+3. [コンテンツ] フィールドの上にある [ **コンテンツの追加**] をクリックします。
 
-4. [**コンテンツの追加**] ダイアログボックスで、 **[コンテンツの種類**を**MEF コンポーネント**に選択] を設定し、[**プロジェクト**] をクラスライブラリプロジェクトに設定します。
+4. [ **コンテンツの追加** ] ダイアログボックスで、 **[コンテンツの種類** を **MEF コンポーネント**に選択] を設定し、[ **プロジェクト** ] をクラスライブラリプロジェクトに設定します。
 
-5. [**エディションの選択**] をクリックし、 **Visual Studio Enterprise**がオンになっていることを確認します。
+5. [ **エディションの選択** ] をクリックし、 **Visual Studio Enterprise** がオンになっていることを確認します。
 
 6. VSIX プロジェクトがソリューションのスタートアッププロジェクトであることを確認します。
 
@@ -76,7 +76,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 拡張機能をアンインストールするには、次の手順を実行します。
 
-1. Visual Studio の [**ツール**] メニューで、[**拡張機能マネージャー**] をクリックします。
+1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能マネージャー**] をクリックします。
 
 2. 拡張機能を選択して削除します。
 

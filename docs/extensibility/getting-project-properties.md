@@ -1,5 +1,5 @@
 ---
-title: プロジェクトプロパティの取得 |マイクロソフトドキュメント
+title: プロジェクトのプロパティを取得する |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,31 +12,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9ddfd48827bc762c9189f9b7600cfe9200e5c866
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711407"
 ---
-# <a name="get-project-properties"></a>プロジェクト プロパティの取得
+# <a name="get-project-properties"></a>プロジェクトのプロパティを取得する
 
-このチュートリアルでは、ツール ウィンドウにプロジェクト プロパティを表示する方法を示します。
+このチュートリアルでは、ツールウィンドウでプロジェクトのプロパティを表示する方法について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
-Visual Studio 2015 以降では、ダウンロード センターから Visual Studio SDK をインストールしません。 これは、Visual Studio のセットアップのオプション機能として含まれています。 VS SDK は後でインストールすることもできます。 詳細については、「 [Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
+Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
-### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>VSIX プロジェクトを作成し、ツール ウィンドウを追加するには
+### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>VSIX プロジェクトを作成してツールウィンドウを追加するには
 
-1. すべての Visual Studio 拡張機能は、拡張機能の資産を含む VSIX 配置プロジェクトで開始します。 という名前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]`ProjectPropertiesExtension`の VSIX プロジェクトを作成します。 VSIX プロジェクト テンプレートは、"vsix" を検索して **[新しいプロジェクト**] ダイアログで見つけることができます。
+1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `ProjectPropertiesExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. という名前のカスタム ツール ウィンドウ項目テンプレートを追加して`ProjectPropertiesToolWindow`、ツール ウィンドウを追加します。 ソリューション**エクスプローラ**で、プロジェクト ノードを右クリックし、[**Add** > **新しい項目**の追加] を選択します。 [**新しい項目の追加**] ダイアログ で **、[Visual C# アイテム** > **の機能拡張**] に移動し、[**カスタム ツール ウィンドウ**] を選択します。 ダイアログの下部にある [**名前]** フィールドで、ファイル名を`ProjectPropertiesToolWindow.cs`に変更します。 カスタム ツール ウィンドウを作成する方法の詳細については、「[ツール ウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
+2. という名前のカスタムツールウィンドウ項目テンプレートを追加して、ツールウィンドウを追加し `ProjectPropertiesToolWindow` ます。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加] ダイアログ**で、[ **Visual C# 項目**の機能拡張] にアクセスし、  >  **Extensibility** [**カスタムツールウィンドウ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名をに変更 `ProjectPropertiesToolWindow.cs` します。 カスタムツールウィンドウを作成する方法の詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
 
 3. ソリューションをビルドし、エラーが発生することなくソリューションがコンパイルされることを確認します。
 
-### <a name="to-display-project-properties-in-a-tool-window"></a>ツール ウィンドウにプロジェクト プロパティを表示するには
+### <a name="to-display-project-properties-in-a-tool-window"></a>ツールウィンドウにプロジェクトのプロパティを表示するには
 
-1. ProjectPropertiesToolWindowCommand.cs ファイルに、次の using ディレクティブを追加します。
+1. ProjectPropertiesToolWindowCommand.cs ファイルで、次の using ディレクティブを追加します。
 
     ```csharp
     using EnvDTE;
@@ -44,9 +44,9 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
 
     ```
 
-2. [*ツールボックス] から*既存のボタンを削除し、ツリー ビューを追加します。 ProjectPropertiesToolWindowControl.xaml.cs*ファイルから*クリック イベント ハンドラーを削除することもできます。
+2. *ProjectPropertiesToolWindowControl*で、既存のボタンを削除し、ツールボックスから TreeView を追加します。 また、 *ProjectPropertiesToolWindowControl.xaml.cs* ファイルから click イベントハンドラーを削除することもできます。
 
-3. *ProjectPropertiesToolWindowCommand.cs*で、メソッドを`ShowToolWindow()`使用してプロジェクトを開き、そのプロパティを読み取り、プロパティを TreeView に追加します。 次のようなコードを表示します。
+3. *ProjectPropertiesToolWindowCommand.cs*で、メソッドを使用して `ShowToolWindow()` プロジェクトを開き、そのプロパティを読み取り、プロパティを TreeView に追加します。 ShowToolWindow のコードは次のようになります。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -97,6 +97,6 @@ Visual Studio 2015 以降では、ダウンロード センターから Visual S
 
 5. この実験用インスタンスで、プロジェクトを開きます。
 
-6. **[他のウィンドウ**の**表示** > ]**で、[プロジェクトのプロパティ] ツール ウィンドウをクリックします**。
+6. **View**  >  [**その他の**ビュー] ウィンドウで、[ **ProjectPropertiesToolWindow**] をクリックします。
 
-  ツール ウィンドウにツリー コントロールが表示され、最初のプロジェクトとそのすべてのプロジェクト プロパティの名前が表示されます。
+  ツールウィンドウにツリーコントロールが表示され、最初のプロジェクトとそのすべてのプロジェクトプロパティの名前が表示されます。

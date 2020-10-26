@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157605"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
@@ -32,7 +32,7 @@ ms.locfileid: "68157605"
 </Target>  
 ```  
   
- MSBuild プロパティと同様に、ターゲットは再定義できます。 例えば以下のようにします。  
+ MSBuild プロパティと同様に、ターゲットは再定義できます。 たとえば、オブジェクトに適用された  
   
 ```  
 <Target Name="AfterBuild" >  
@@ -60,10 +60,10 @@ ms.locfileid: "68157605"
   
   1 つのビルドでターゲットが 2 回実行されることはありません。そのビルド内の後続のターゲットが先行するターゲットに依存している場合でも同じです。 ターゲットは一度実行されると、それ以上ビルドに影響しません。  
   
-  ターゲットのビルド順序に関する詳細については、「[ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。  
+  ターゲットのビルド順序の詳細と詳細については、「 [ターゲットのビルド順序](../msbuild/target-build-order.md)」を参照してください。  
   
 ## <a name="target-batching"></a>ターゲットのバッチ  
- あるターゲット要素に、%(メタデータ) 形式でメタデータを指定する `Outputs` 属性が含まれている場合があります。 その場合、MSBuild は一意のメタデータ値ごとにターゲットを 1 回実行し、そのメタデータ値を含むアイテムをグループ化または "バッチ処理" します。 例えば以下のようにします。  
+ あるターゲット要素に、%(メタデータ) 形式でメタデータを指定する `Outputs` 属性が含まれている場合があります。 その場合、MSBuild は一意のメタデータ値ごとにターゲットを 1 回実行し、そのメタデータ値を含むアイテムをグループ化または "バッチ処理" します。 たとえば、オブジェクトに適用された  
   
 ```  
 <ItemGroup>  
@@ -98,6 +98,6 @@ Reference: 4.0
   
  すべての出力項目が最新の状態になっている場合、MSBuild はターゲットをスキップします。これがビルドのスピードを大幅に上げます。 これはターゲットのインクリメンタル ビルドと呼ばれています。 一部のファイルだけが最新の状態になっている場合、MSBuild は最新の項目なしでターゲットを実行します。 これはターゲットの部分的インクリメンタル ビルドと呼ばれています。 詳しくは、「[インクリメンタル ビルド](../msbuild/incremental-builds.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)   
- [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [方法: 複数のプロジェクトファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

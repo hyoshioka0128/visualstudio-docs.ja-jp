@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc0e0f7cae4aed887809c22bda0cd6a9ed50307f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204801"
 ---
-# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
+# <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-取得するスレッドに関する情報を指定します。  
+スレッドに関する情報を取得するかどうかを指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -53,41 +53,41 @@ public enum enum_THREADPROPERTY_FIELDS { 
   
 ## <a name="members"></a>メンバー  
  TPF_ID  
- 初期化/使用、`dwThreadId`のフィールド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体。  
+ `dwThreadId` [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md)構造体のフィールドを初期化/使用します。  
   
  TPF_SUSPENDCOUNT  
- 初期化/使用、`dwSuspendCount`のフィールド、 `THREADPROPERTIE`S 構造体。  
+ `dwSuspendCount`S 構造体のフィールドを初期化/使用し `THREADPROPERTIE` ます。  
   
  TPF_STATE  
- 初期化/使用、`dwThreadState`のフィールド、 `THREADPROPERTIE`S 構造体。  
+ `dwThreadState`S 構造体のフィールドを初期化/使用し `THREADPROPERTIE` ます。  
   
  TPF_PRIORITY  
- 初期化/使用、`bstrPriority`のフィールド、 `THREADPROPERTIE`S 構造体。  
+ `bstrPriority`S 構造体のフィールドを初期化/使用し `THREADPROPERTIE` ます。  
   
  TPF_NAME  
- 初期化/使用、`bstrName`のフィールド、 `THREADPROPERTIE`S 構造体。  
+ `bstrName`S 構造体のフィールドを初期化/使用し `THREADPROPERTIE` ます。  
   
  TPF_LOCATION  
- 初期化/使用、`bstrLocation`のフィールド、 `THREADPROPERTIE`S 構造体。  
+ `bstrLocation`S 構造体のフィールドを初期化/使用し `THREADPROPERTIE` ます。  
   
  TPF_ALLFIELDS  
  すべてのフィールドを指定します。  
   
-## <a name="remarks"></a>Remarks  
- これらの値が引数として渡される、 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)のどのフィールドを示すメソッド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体が初期化されるは。  
+## <a name="remarks"></a>注釈  
+ これらの値は、引数として [Getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) メソッドに渡さ [れ、どの](../../../extensibility/debugger/reference/threadproperties.md) フィールドを初期化するかを示します。  
   
- これらの値はでも使用`dwFields`のメンバー、`THREADPROPERTIES`フィールドが使用し、有効なときは、構造体。  
+ これらの値は `dwFields` 、使用される `THREADPROPERTIES` フィールドと有効なフィールドを示すために、構造体のメンバーでも使用されます。  
   
- これらのフラグは、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

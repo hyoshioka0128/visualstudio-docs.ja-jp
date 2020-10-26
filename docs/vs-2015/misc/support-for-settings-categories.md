@@ -11,14 +11,14 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689093"
 ---
 # <a name="support-for-settings-categories"></a>設定カテゴリのサポート
-設定カテゴリは統合開発環境 (IDE) をカスタマイズするためのグループで構成されます。 たとえば設定により、メニューの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のウィンドウとコンテンツのレイアウトを制御できます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+設定カテゴリは統合開発環境 (IDE) をカスタマイズするためのグループで構成されます。 たとえば設定により、メニューの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のウィンドウとコンテンツのレイアウトを制御できます。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックし、 **設定のインポートとエクスポート ウィザード**を開始します。 ウィザードには、設定のエクスポート、インポート、リセットという 3 つの選択肢があります。 たとえば、エクスポートを選択すると、ウィザードの **[エクスポートする設定の選択]** ページが表示されます。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "65689093"
 > 正規名はユーザー インターフェイス (UI) に表示されません。 正規名は、プログラム ID (ProgID) と同様に、判読できる名前を設定カテゴリに関連付けるために使用されます。  
   
 ### <a name="settings-category-attribute"></a>設定カテゴリの属性  
- <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>カテゴリ内のカスタム設定ポイントへのマッピングが決まります、**インポートおよびエクスポート設定ウィザード**提供する VSPackage とカテゴリを関連付けることによって。 次のコードがあるとします。  
+ では、 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> **設定のインポートおよびエクスポートウィザード** のカスタム設定ポイントへのカテゴリのマッピングが、カテゴリを提供する VSPackage に関連付けられて決定されます。 次のコードがあるとします。  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -60,8 +60,8 @@ ms.locfileid: "65689093"
   
  **設定のインポートとエクスポート ウィザード**で、設定ポイントの名前は "My Settings" です。 設定ポイントを選択すると、" **さまざまなオプション**" という説明が表示されます。 設定ポイント名と説明は、ローカライズされた文字列リソースから取得されます。  
   
-## <a name="see-also"></a>関連項目  
- [オプション ページの作成](../extensibility/creating-an-options-page.md)   
+## <a name="see-also"></a>参照  
+ [オプションページの作成](../extensibility/creating-an-options-page.md)   
  [VSSDK のサンプル](../misc/vssdk-samples.md)   
  [VSPackage の状態](../misc/vspackage-state.md)   
  [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement |Microsoft Docs
+title: 'IDebugThread2:: SetNextStatement |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 755044ec1d713075c1c1fd3165254ba192943288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152961"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-現在の命令ポインターを指定したコードのコンテキストに設定します。  
+現在の命令ポインターを指定されたコードコンテキストに設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,24 +42,24 @@ int SetNextStatement ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pStackFrame`  
- 今後使用するために予約されていますnull 値に設定します。  
+ 将来使用するために予約されています。を null 値に設定します。  
   
  `pCodeContext`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)実行されるコードの場所を記述するオブジェクトとそのコンテキスト。  
+ から実行されるコードの場所とそのコンテキストを記述する [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) オブジェクト。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 次の表では、使用可能なその他の値を示します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 次の表に、その他の使用可能な値を示します。  
   
 |値|説明|  
 |-----------|-----------------|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|次のステートメントは、フレームのスタックにスタック フレームにすることはできません。|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|次のステートメントは、スタック内の任意のフレームに関連付けられていません。|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|いくつかのデバッグ エンジンでは、例外の後に次のステートメントを設定できません。|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|次のステートメントは、フレームスタックを深く掘り下げたスタックフレーム内に存在することはできません。|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|次のステートメントは、スタック内のどのフレームにも関連付けられていません。|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|一部のデバッグエンジンでは、例外の後に次のステートメントを設定することはできません。|  
   
-## <a name="remarks"></a>Remarks  
- 命令ポインターでは、実行する次の命令またはステートメントを示します。 このメソッドは、ソース コードの行を再試行するか、たとえば、別の関数で引き続き実行を強制的に使用されます。  
+## <a name="remarks"></a>注釈  
+ 命令ポインターは、次に実行する命令またはステートメントを示します。 このメソッドは、ソースコードの行を再試行したり、別の関数で実行を強制するために使用されます。たとえば、のようになります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -1,5 +1,5 @@
 ---
-title: コア エディター内で |Microsoft Docs
+title: コアエディターの内部 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,71 +11,71 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203951"
 ---
 # <a name="inside-the-core-editor"></a>コア エディターの内部
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディターは変更し、テキスト情報のクエリを実行できるいくつかのコンポーネントのセットです。 従来の API を使用して、コア エディターをカスタマイズしている場合は、エディター アダプター経由でルーティングされますが、これらのカスタマイズを使用する続行することがあります。 お勧め、ただし、API の新しいエディターに、カスタマイズを調整することです。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コアエディターは、テキスト情報の変更とクエリを実行できるいくつかのコンポーネントのセットです。 レガシ API を使用してコアエディターをカスタマイズした場合は、これらのカスタマイズを引き続き使用することができます。これらのカスタマイズは、エディターアダプターを通じてルーティングされます。 ただし、カスタマイズを新しいエディター API に適合させることをお勧めします。  
   
- コア エディターのいくつかの重要な側面を次の領域には。  
+ コアエディターの重要な側面は次のとおりです。  
   
-- テキスト バッファー  
+- テキストバッファー  
   
-- テキスト ビュー  
+- テキストビュー  
   
-- コード ウィンドウ  
+- [コード ウィンドウ]  
   
-- テキスト マーカー  
+- テキストマーカー  
   
-- テキスト マネージャー  
+- テキストマネージャー  
   
 - 言語サービスとの統合  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [レガシ API を使用するコア エディターのインスタンス化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
- 詳細な手順を使用する方法については、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>エディター、コアのインスタンスを作成します。  
+ を使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 、コアエディターのインスタンスを作成する手順について説明します。  
   
  [レガシ API を使用するテキスト バッファーへのアクセス](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
- コア エディターでテキスト バッファーの役割について説明します、説明、バッファーにアクセスするために使用し、テキスト バッファー オブジェクトによって実装されるインターフェイスの一覧を提供する、関連付けられているシステム<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>します。  
+ コアエディターのテキストバッファーの役割について説明し、バッファーへのアクセスに使用される関連システムについて説明し、テキストバッファーオブジェクトによって実装されるインターフェイスの一覧を示し <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ます。  
   
  [レガシ API のテキスト バッファー イベント](../extensibility/text-buffer-events-in-the-legacy-api.md)  
- テキスト バッファー イベントの通知に使用されるインターフェイスの一覧を示します。  
+ テキストバッファーイベントの通知に使用されるインターフェイスの一覧を示します。  
   
  [方法: レガシ API でテキスト バッファー イベントを登録する](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
- テキスト バッファー イベントのことをお勧めする方法について説明します。  
+ テキストバッファーイベントをアドバイズする方法について説明します。  
   
  [グローバル設定を監視するためのテキスト マネージャーの使用](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- コア エディター コンポーネントとグローバル設定情報を共有するテキスト マネージャーを使用する方法、およびテキスト マネージャー イベントの通知を受け取る方法について説明します。  
+ テキストマネージャーを使用して、コアエディターコンポーネントと共にグローバル基本設定情報を共有する方法と、テキストマネージャーイベントの通知を受信する方法について説明します。  
   
  [レガシ API を使用するテキスト ビューへのアクセス](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
- コア エディターで、テキスト ビューの役割について説明し、によって実装されるインターフェイスを一覧表示、<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>オブジェクト。  
+ コアエディターでのテキストビューのロールについて説明し、オブジェクトによって実装されるインターフェイスの一覧を示し <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> ます。  
   
  [レガシ API を使用するコード ウィンドウのカスタマイズ](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
- コード ウィンドウによるテキスト ビューを囲むに使用する方法、コード ウィンドウ マネージャーを使用するコード ウィンドウで、文字装飾を提供する方法について説明する方法、および新しいビューの通知を提供します。 方法について説明します。  
+ コードウィンドウを使用してテキストビューを囲む方法、コードウィンドウマネージャーを使用してコードウィンドウに装飾を提供する方法、および新しいビューの通知を提供する方法について説明します。  
   
  [レガシ API を使用する表示設定の変更](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- 強制設定を削除する方法と設定の表示を強制する方法についての詳細な手順について説明します。  
+ 表示設定を強制する方法と、強制設定を削除する方法について、手順を追って説明します。  
   
  [言語サービスとコア エディター](../extensibility/language-services-and-the-core-editor.md)  
- 制御コード文字装飾を言語サービスのインスタンス化について説明します。  
+ 言語サービスをインスタンス化してコードの装飾を制御する方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [チュートリアル: コア エディターの作成とエディター ファイルの種類の登録](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
- マネージ コードからのコア エディターを起動する方法についての詳細な手順について説明します。  
+ マネージコードからコアエディターを起動する手順について説明します。  
   
  [ドロップダウン バー](../extensibility/drop-down-bar.md)  
- ドロップダウン バーはコード ウィンドウで使用して、ドロップダウン バーを実装するときに使用するインターフェイスについて説明する方法について説明します。  
+ コードウィンドウでドロップダウンバーを使用する方法について説明し、ドロップダウンバーを実装するときに使用するインターフェイスについて説明します。  
   
  [レガシ API でのテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)  
- テキスト マーカーとそのコア エディターでの使用方法の概念について説明し、アクセスし、テキスト マーカーの管理に使用されるインターフェイスを一覧表示します。  
+ テキストマーカーの概念と、それがコアエディターでどのように使用されるかについて説明し、テキストマーカーにアクセスして管理するために使用されるインターフェイスの一覧を示します。  
   
  [方法: 標準のテキスト マーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)  
- テキスト マーカーを作成する方法と、ショートカット メニューにカスタム コマンドを追加する方法に関する手順について説明します。  
+ テキストマーカーを作成する方法、およびショートカットメニューにカスタムコマンドを追加する方法について、手順を追って説明します。  
   
  [方法: カスタム テキスト マーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)  
- サービスとしてのマーカーの種類を指定する方法とカスタム テキスト マーカーを作成する方法の詳細手順について説明します。
+ カスタムテキストマーカーを作成する方法と、マーカーの種類をサービスとして指定する方法について、手順を追って説明します。

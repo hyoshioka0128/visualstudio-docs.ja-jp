@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903738"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012270"
 ---
 # <a name="create-custom-editors-and-designers"></a>カスタムエディターとデザイナーを作成する
 
@@ -34,7 +34,7 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
 
 ## <a name="types-of-editor"></a>エディターの種類
 
-Visual Studio のコアエディターの詳細については、「[エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
+Visual Studio のコアエディターの詳細については、「 [エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)」を参照してください。
 
 ### <a name="custom-editors"></a>カスタムエディター
  カスタムエディターは、特殊な状況で動作するように設計されています。 たとえば、Microsoft Exchange server などの特定のリポジトリに対してデータの読み取りと書き込みを行う機能を持つエディターを作成できます。 プロジェクトの種類に対してのみ機能するエディターを使用する場合、または特定のコマンドのみを含むエディターが必要な場合は、カスタムエディターを選択します。 ただし、ユーザーはカスタムエディターを使用して標準プロジェクトを編集できないことに注意して [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ください。
@@ -59,11 +59,11 @@ Visual Studio のコアエディターの詳細については、「[エディ�
 
 - エディターで ActiveX コントロールをホストする必要がありますか。
 
-   エディターが ActiveX コントロールをホストしている場合は、「インプレース[アクティブ化](/visualstudio/misc/in-place-activation?view=vs-2015)」で説明されているように、インプレースアクティブ化エディターを実装します。 ActiveX コントロールをホストしていない場合は、簡略化された埋め込みエディターを使用するか、既定のエディターをカスタマイズし [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
+   エディターが ActiveX コントロールをホストしている場合は、「インプレース [アクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015)」で説明されているように、インプレースアクティブ化エディターを実装します。 ActiveX コントロールをホストしていない場合は、簡略化された埋め込みエディターを使用するか、既定のエディターをカスタマイズし [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
 
 - エディターは複数のビューをサポートしますか。 エディターのビューを既定のエディターと同時に表示する場合は、複数のビューをサポートする必要があります。
 
-   エディターが複数のビューをサポートする必要がある場合、エディターのドキュメントデータオブジェクトとドキュメントビューオブジェクトは別々のオブジェクトである必要があります。 詳細については、「[複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)」を参照してください。
+   エディターが複数のビューをサポートする必要がある場合、エディターのドキュメントデータオブジェクトとドキュメントビューオブジェクトは別々のオブジェクトである必要があります。 詳細については、「 [複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)」を参照してください。
 
    エディターが複数のビューをサポートしている場合は、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ドキュメントデータオブジェクトのコアエディターのテキストバッファーの実装 (オブジェクト) を使用する予定 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ですか。 つまり、エディタービューをコアエディターとサイドバイサイドでサポートし [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ますか。 これを行う機能は、フォームデザイナーの基礎です。「」を参考にしてください。
 
@@ -93,7 +93,7 @@ Visual Studio のコアエディターの詳細については、「[エディ�
 
 ## <a name="related-sections"></a>関連項目
 
-[エディター内のレガシインターフェイス](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+[エディター内のレガシインターフェイス](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
 レガシ API を使用してコアエディターにアクセスする方法について説明します。
 
 [従来の言語サービスを開発する](../extensibility/internals/developing-a-legacy-language-service.md)\

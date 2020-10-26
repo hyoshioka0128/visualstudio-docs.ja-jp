@@ -1,5 +1,5 @@
 ---
-title: '新しいプロジェクト生成: フードの下で、パート2 |マイクロソフトドキュメント'
+title: '新しいプロジェクトの生成: 内部的には、パート 2 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707023"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部、パート 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 
-[[新しいプロジェクトの生成: フードの下で、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では **、[新しいプロジェクト**] ダイアログ ボックスの設定方法を確認しました。 **Visual C# Windows アプリケーション**を選択し、[**名前**] および [**場所**] テキスト ボックスに入力し、[OK] をクリックしたとします。
+[新しいプロジェクトの生成: 内部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では、[**新しいプロジェクト**] ダイアログボックスがどのように設定されているかを説明します。 ここでは、 **Visual C# Windows アプリケーション**を選択し、[ **名前** ] と [ **場所** ] のテキストボックスに入力して、[OK] をクリックしたとします。
 
-## <a name="generating-the-solution-files"></a>ソリューション ファイルの生成
- アプリケーション テンプレートを選択すると、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]対応する .vstemplate ファイルを解凍して開き、このファイル内の XML コマンドを解釈するテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。
+## <a name="generating-the-solution-files"></a>ソリューションファイルの生成
+ アプリケーションテンプレートを選択する [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] と、対応する .vstemplate ファイルを解凍して開き、このファイル内の XML コマンドを解釈するためのテンプレートを起動するように指示されます。 これらのコマンドは、新規または既存のソリューションにプロジェクトとプロジェクト項目を作成します。
 
- テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから、項目テンプレートと呼ばれるソース ファイルをアンパックします。 テンプレートは、これらのファイルを新しいプロジェクトにコピーし、それに応じてカスタマイズします。
+ このテンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから、項目テンプレートと呼ばれるソースファイルをアンパックします。 テンプレートは、これらのファイルを新しいプロジェクトにコピーし、適宜カスタマイズします。
 
-### <a name="template-parameter-replacement"></a>テンプレート パラメータの置換
- テンプレートは、項目テンプレートを新しいプロジェクトにコピーするときに、すべてのテンプレート パラメーターを文字列に置き換え、ファイルをカスタマイズします。 テンプレート パラメーターは、ドル記号 ($date$ など) の前に続く特殊なトークンです。
+### <a name="template-parameter-replacement"></a>テンプレートパラメーターの置換
+ テンプレートが項目テンプレートを新しいプロジェクトにコピーすると、テンプレートパラメーターが文字列に置き換えられ、ファイルがカスタマイズされます。 テンプレートパラメーターは、$ 記号 ($date $ など) の前と後にある特別なトークンです。
 
- 一般的なプロジェクト項目テンプレートを見てみましょう。 プログラム ファイル\Microsoft Visual Studio 8\Common7\IDE\プロジェクトテンプレート\CSharp\Windows\1033\WindowsApplication.zip フォルダーでProgram.csを抽出して確認します。
+ 一般的なプロジェクト項目テンプレートを見てみましょう。 プログラムの [Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip フォルダー内の Program.cs を抽出して確認します。
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ namespace $safeprojectname$
 }
 ```
 
-Simple という名前の新しい Windows アプリケーション プロジェクトを作成すると`$safeprojectname$`、テンプレートによって、パラメータがプロジェクトの名前に置き換えられます。
+Simple という名前の新しい Windows アプリケーションプロジェクトを作成した場合、テンプレートは `$safeprojectname$` パラメーターをプロジェクトの名前に置き換えます。
 
 ```csharp
 using System;
@@ -62,10 +62,10 @@ namespace Simple
 }
 ```
 
- テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../../ide/template-parameters.md)」を参照してください。
+ テンプレートパラメーターの完全な一覧については、「 [テンプレートパラメーター](../../ide/template-parameters.md)」を参照してください。
 
-## <a name="a-look-inside-a-vstemplate-file"></a>内部を見る .VS テンプレート ファイル
- 基本的な .vstemplate ファイルは、この形式です
+## <a name="a-look-inside-a-vstemplate-file"></a>内を検索します。.Vstemplate ファイル
+ 基本 .vstemplate ファイルの形式は次のようになります。
 
 ```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>
 ```
 
- 「[新しいプロジェクト生成](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md): フードの下で、パート 1」の\<TemplateData> セクションを見ました。 このセクションのタグは、[**新しいプロジェクト**] ダイアログ ボックスの外観を制御するために使用します。
+ 新しいプロジェクトの生成に関するセクションでは、内部的には \<TemplateData> [パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)が見られました。 このセクションのタグは、[ **新しいプロジェクト** ] ダイアログボックスの外観を制御するために使用されます。
 
- \<TemplateContent> セクションのタグは、新しいプロジェクトとプロジェクト項目の生成を制御します。 次の\<テンプレートコンテンツ> セクションです。
+ セクションのタグは、 \<TemplateContent> 新しいプロジェクトとプロジェクト項目の生成を制御します。 次に示すのは、 \<TemplateContent> アプリケーションファイルの 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip フォルダーにある cswindowsapplication .vstemplate ファイルのセクションです。
 
 ```xml
 <TemplateContent>
@@ -112,26 +112,26 @@ namespace Simple
 </TemplateContent>
 ```
 
- プロジェクト\<> タグはプロジェクトの生成を制御し、\<プロジェクト項目の生成をコントロールする ProjectItem> タグ。 パラメーター ReplaceParameters が true の場合、テンプレートはプロジェクト ファイルまたはプロジェクト項目内のすべてのテンプレート パラメーターをカスタマイズします。 この場合、設定設定を除くすべてのプロジェクト項目がカスタマイズされます。
+ タグは、 \<Project> プロジェクトの生成を制御し \<ProjectItem> ます。タグは、プロジェクト項目の生成を制御します。 パラメーター ReplaceParameters が true の場合、テンプレートはプロジェクトファイルまたは項目内のすべてのテンプレートパラメーターをカスタマイズします。 この場合、設定を除き、すべてのプロジェクト項目がカスタマイズされます。
 
- TargetFileName パラメーターは、作成されるプロジェクト ファイルまたは項目の名前と相対パスを指定します。 これにより、プロジェクトのフォルダ構造を作成できます。 この引数を指定しない場合、プロジェクト項目の名前はプロジェクト項目テンプレートと同じになります。
+ TargetFileName パラメーターは、結果として得られるプロジェクトファイルまたは項目の名前と相対パスを指定します。 これにより、プロジェクトのフォルダー構造を作成できます。 この引数を指定しない場合、プロジェクト項目の名前はプロジェクト項目テンプレートと同じになります。
 
- 結果として得られる Windows アプリケーション フォルダの構造は次のようになります。
+ 生成される Windows アプリケーションフォルダーの構造は次のようになります。
 
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
 
- テンプレートの最初の\<唯一の Project> タグは、次のようになります。
+ テンプレートの最初のタグと唯一の \<Project> タグは次のようになります。
 
 ```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
- これにより、新しいプロジェクト テンプレートに、テンプレート項目の windowsapplication.csproj をコピーしてカスタマイズすることによって Simple.csproj プロジェクト ファイルを作成するように指示します。
+ これにより、新しいプロジェクトテンプレートは、テンプレート項目 windowsapplication .csproj をコピーおよびカスタマイズすることによって、単純な .csproj プロジェクトファイルを作成するように指示します。
 
 ### <a name="designers-and-references"></a>デザイナーと参照
- ソリューション エクスプローラーで、[プロパティ] フォルダーが存在し、必要なファイルが含まれていることを確認できます。 しかし、Resources.resx へのResources.Designer.csやForm1.csへのForm1.Designer.csなど、プロジェクト参照やデザイナー ファイルの依存関係はどうでしょうか。  これらは、生成時に Simple.csproj ファイルで設定されます。
+ ソリューションエクスプローラーに、Properties フォルダーが存在し、予想されるファイルが含まれていることを確認できます。 しかし、プロジェクト参照とデザイナーファイルの依存関係 (Resources.Designer.cs to Form1.cs、Form1.Designer.cs to など) はどうでしょうか。  これらは、単純な .csproj ファイルの生成時に設定されます。
 
- プロジェクト参照を作成\<する Simple.csproj のアイテム グループ>を次に示します。
+ \<ItemGroup>プロジェクト参照を作成する単純な .csproj のを次に示します。
 
 ```xml
 <ItemGroup>
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- これらは、ソリューション エクスプローラーに表示される 6 つのプロジェクト参照であることがわかります。 別\<のアイテム グループ>のセクションを次に示します。 わかりやすくするために、コードの多くの行が削除されました。 このセクションでは、設定設定Settings.Designer.cs依存します。
+ これらは、ソリューションエクスプローラーに表示される6つのプロジェクト参照であることがわかります。 もう1つのセクションを次に示し \<ItemGroup> ます。 わかりやすくするために、多くのコード行が削除されています。 このセクションでは、Settings.Designer.cs を設定に依存させます。設定:
 
 ```xml
 <ItemGroup>
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>関連項目
 
-- [新しいプロジェクトの生成: 内部、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [新しいプロジェクトの生成: 内部的な処理、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

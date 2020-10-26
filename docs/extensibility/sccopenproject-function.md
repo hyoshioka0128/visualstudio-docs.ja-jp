@@ -1,5 +1,5 @@
 ---
-title: プロジェクト関数 |マイクロソフトドキュメント
+title: SccOpenProject 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbf566e593bb1ddbc31c70de1570d746a14fbdcf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700567"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 関数
@@ -39,82 +39,82 @@ SCCRTN SccOpenProject (
 ```
 
 #### <a name="parameters"></a>パラメーター
- を行う
+ pvContext
 
-[in]ソース管理プラグインのコンテキスト構造。
+からソース管理プラグインのコンテキスト構造。
 
  hWnd
 
-[in]ソース管理プラグインが提供するダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+からソース管理プラグインが提供するすべてのダイアログボックスの親として使用できる IDE ウィンドウへのハンドル。
 
- ユーザー数を指定します。
+ lpUser
 
-[イン、アウト]ユーザーの名前 (null 終端文字を含むSCC_USER_SIZEを超えないようにします)。
+[入力、出力](NULL ターミネータを含む) SCC_USER_SIZE を超えないユーザーの名前。
 
- プファル・プロイナ
+ lpProjName
 
-[in]プロジェクトの名前を識別する文字列。
+からプロジェクトの名前を識別する文字列。
 
- プリュチプチポックプロジパス
+ lpLocalProjPath
 
-[in]プロジェクトの作業フォルダーへのパス。
+からプロジェクトの作業フォルダーへのパス。
 
- プロウプロイパス
+ lpAuxProjPath
 
-[イン、アウト]プロジェクトを識別するオプションの補助文字列 (null 終端文字を含むSCC_AUXPATH_SIZEを超えないようにする)。
+[入力、出力]プロジェクトを識別する補助文字列 (NULL 終端文字を含む SCC_AUXPATH_SIZE を超えない)。
 
- ル・コメント
+ lpComment
 
-[in]作成中の新しいプロジェクトにコメントします。
+から作成する新しいプロジェクトにコメントを追加します。
 
- をクリックします。
+ lpTextOutProc
 
-[in]ソース管理プラグインからのテキスト出力を表示するオプションのコールバック関数。
+からソース管理プラグインからのテキスト出力を表示するオプションのコールバック関数。
 
  dwFlags
 
-[in]プロジェクトがソース管理プラグインに不明な場合に、新しいプロジェクトを作成する必要があるかどうかを示します。 値は、と の`SCC_OP_CREATEIFNEW`組み合わせとすることができます。`SCC_OP_SILENTOPEN.`
+からプロジェクトがソース管理プラグインに対して不明な場合に、新しいプロジェクトを作成する必要があるかどうかを通知します。 値は、との組み合わせにすることができます。 `SCC_OP_CREATEIFNEW``SCC_OP_SILENTOPEN.`
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
-|SCC_OK|プロジェクトを開くことに成功しました。|
+|SCC_OK|プロジェクトを開く操作に成功します。|
 |SCC_E_INITIALIZEFAILED|プロジェクトを初期化できませんでした。|
-|SCC_E_INVALIDUSER|ユーザーはソース管理システムにログインできませんでした。|
-|SCC_E_COULDNOTCREATEPROJECT|プロジェクトは呼び出しの前に存在しませんでした。 フラグ`SCC_OPT_CREATEIFNEW`が設定されましたが、プロジェクトを作成できませんでした。|
-|SCC_E_PROJSYNTAXERR|プロジェクト構文が無効です。|
-|SCC_E_UNKNOWNPROJECT|プロジェクトがソース管理プラグインに不明であり、フラグが`SCC_OPT_CREATEIFNEW`設定されていません。|
-|SCC_E_INVALIDFILEPATH|無効なファイル パスまたは使用できないファイル パスです。|
+|SCC_E_INVALIDUSER|ユーザーは、ソース管理システムにログインできませんでした。|
+|SCC_E_COULDNOTCREATEPROJECT|呼び出しの前にプロジェクトが存在しませんでした。 `SCC_OPT_CREATEIFNEW` フラグが設定されましたが、プロジェクトを作成できませんでした。|
+|SCC_E_PROJSYNTAXERR|プロジェクトの構文が無効です。|
+|SCC_E_UNKNOWNPROJECT|プロジェクトがソース管理プラグインに対して不明であり、 `SCC_OPT_CREATEIFNEW` フラグが設定されていません。|
+|SCC_E_INVALIDFILEPATH|ファイルパスが無効であるか、使用できません。|
 |SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|
-|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。 再試行することをお勧めします。|
-|SCC_E_NONSPECFICERROR|非特異的な障害。ソース管理システムが初期化されませんでした。|
+|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
+|SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムが初期化されませんでした。|
 
-## <a name="remarks"></a>Remarks
- IDE はユーザー名 ( )`lpUser`を渡すか、空の文字列へのポインタを渡すだけかもしれません。 ユーザー名がある場合、ソース管理プラグインは、既定として使用する必要があります。 ただし、名前が渡されなかった場合、またはログインに指定された名前でログインできなかった場合、プラグインはユーザーにログインを求め SCC_USER_SIZE、`lpUser``.``SCC_USER_LEN`有効なログインを受け取ったときに有効な名前を返す必要があります。
-
-> [!NOTE]
-> IDE が実行する必要がある最初の`SccOpenProject`アクションは、関数または[SccGetProjPath](../extensibility/sccgetprojpath-function.md)の呼び出しである場合があります。 このため、両方とも同じ`lpUser`パラメータを持ちます。
-
- `lpAuxProjPath`を`lpProjName`使用してソリューション ファイルから読み取るか、`SccGetProjPath`関数の呼び出しから返されます。 これらのパラメーターには、ソース管理プラグインがプロジェクトに関連付ける文字列が含まれ、プラグインにのみ意味があります。 このような文字列がソリューション ファイル内になく、ユーザーが参照を求めず (`SccGetProjPath`関数を通じて文字列を返す)、IDE は両方`lpAuxProjPath`の空の文字列を`lpProjName`渡し、この関数が返されるときにこれらの値がプラグインによって更新されることを予期します。
-
- `lpTextOutProc`は、コマンド結果出力を表示するために、ソース管理プラグインに対して IDE によって提供されるコールバック関数へのポインターです。 このコールバック関数については[、LPTEXTOUTPROC](../extensibility/lptextoutproc.md)で詳しく説明します。
+## <a name="remarks"></a>注釈
+ IDE はユーザー名 () を渡すことができ `lpUser` ます。または、単に空の文字列へのポインターを渡すこともできます。 ユーザー名がある場合は、ソース管理プラグインで既定値として使用する必要があります。 ただし、名前が渡されなかった場合、またはログインが指定された名前で失敗した場合、プラグインはユーザーにログインを求めるプロンプトを表示し、有効なログインを受け取ったときにの有効な名前を返します。これは、プラグインによっ `lpUser` `.` てユーザー名の SCC_USER_SIZE 文字列が変更される可能性があるためです `SCC_USER_LEN` 。
 
 > [!NOTE]
-> ソース管理プラグインがこれを利用する場合は`SCC_CAP_TEXTOUT`[、SccInitialize](../extensibility/sccinitialize-function.md)でフラグを設定している必要があります。 そのフラグが設定されていない場合、または IDE がこの機能をサポートしていない場合`lpTextOutProc`は、`NULL`になります。
+> IDE が実行する必要のある最初のアクションは、 `SccOpenProject` 関数または [Sccgetprojpath](../extensibility/sccgetprojpath-function.md)の呼び出しである可能性があります。 このため、両方に同じパラメーターがあり `lpUser` ます。
 
- この`dwFlags`パラメーターは、開いているプロジェクトが現在存在しない場合の結果を制御します。 2 つのビットフラグ`SCC_OP_CREATEIFNEW`と`SCC_OP_SILENTOPEN`で構成されています。 開いているプロジェクトが既に存在する場合、この関数はプロジェクトを開`SCC_OK`いてを返すだけです。 プロジェクトが存在せず、`SCC_OP_CREATEIFNEW`フラグがオンの場合、ソース管理プラグインは、ソース管理システムでプロジェクトを作成し、開いて、 を返`SCC_OK`すことができます。 プロジェクトが存在せず、フラグが`SCC_OP_CREATEIFNEW`オフの場合、プラグインはフラグをチェックする`SCC_OP_SILENTOPEN`必要があります。 このフラグがオンでない場合、プラグインはユーザーにプロジェクト名の入力を求めるメッセージを表示することがあります。 このフラグがオンの場合、プラグインは単に を`SCC_E_UNKNOWNPROJECT`返す必要があります。
+ `lpAuxProjPath` と `lpProjName` は、ソリューションファイルから読み取られるか、関数の呼び出しから返され `SccGetProjPath` ます。 これらのパラメーターには、ソース管理プラグインによってプロジェクトに関連付けられ、プラグインにのみ意味がある文字列が含まれています。 ソリューションファイルにこのような文字列が含まれておらず、ユーザーが参照するように求められていない場合 (関数を通じて文字列が返される場合 `SccGetProjPath` )、IDE はとの両方に空の文字列を渡し、 `lpAuxProjPath` `lpProjName` この関数が返されたときにこれらの値がプラグインによって更新されることを想定します。
+
+ `lpTextOutProc` は、コマンドの結果出力を表示するために IDE によってソース管理プラグインに提供されるコールバック関数へのポインターです。 このコールバック関数の詳細については、「 [Lptextoutproc](../extensibility/lptextoutproc.md)」を参照してください。
+
+> [!NOTE]
+> ソース管理プラグインがこの機能を利用する場合は、 `SCC_CAP_TEXTOUT` [Sccinitialize](../extensibility/sccinitialize-function.md)でフラグを設定する必要があります。 このフラグが設定されていない場合、または IDE がこの機能をサポートしていない場合、はになり `lpTextOutProc` `NULL` ます。
+
+ パラメーターは、 `dwFlags` 開いているプロジェクトが現在存在していないイベントの結果を制御します。 これは、との2つのビットフラグで構成さ `SCC_OP_CREATEIFNEW` `SCC_OP_SILENTOPEN` れます。 開いているプロジェクトが既に存在する場合、この関数は単にプロジェクトを開き、を返し `SCC_OK` ます。 プロジェクトが存在しない場合、 `SCC_OP_CREATEIFNEW` フラグがオンの場合、ソース管理プラグインは、ソース管理システムでプロジェクトを作成して開き、を返すことができ `SCC_OK` ます。 プロジェクトが存在しない場合、フラグがオフになっている場合は、 `SCC_OP_CREATEIFNEW` プラグインがフラグを確認する必要があり `SCC_OP_SILENTOPEN` ます。 このフラグがオンになっていない場合は、プラグインによってユーザーにプロジェクト名の入力が求められることがあります。 このフラグがオンの場合、プラグインは単にを返す必要があり `SCC_E_UNKNOWNPROJECT` ます。
 
 ## <a name="calling-order"></a>呼び出し順序
- 通常のイベントでは[、SccInitialize](../extensibility/sccinitialize-function.md)が最初に呼び出され、ソース管理セッションが開かれます。 セッションは、 への呼び出`SccOpenProject`しと、その後に他のソース管理プラグイン API 関数呼び出しで構成され[、SccCloseProject](../extensibility/scccloseproject-function.md)への呼び出しで終了します。 このようなセッションは[、SccUninitialize](../extensibility/sccuninitialize-function.md)が呼び出される前に数回繰り返されることがあります。
+ 通常のイベントでは、最初に [Sccinitialize](../extensibility/sccinitialize-function.md) を呼び出してソース管理セッションを開きます。 セッションは、の呼び出しで構成 `SccOpenProject` され、その後に他のソース管理プラグイン API 関数呼び出しが含まれる場合があり、 [Scccloseproject](../extensibility/scccloseproject-function.md)の呼び出しで終了します。 このようなセッションは、 [Sccuninitialize](../extensibility/sccuninitialize-function.md) 解除が呼び出される前に何度も繰り返される場合があります。
 
- ソース管理プラグインが ビット`SCC_CAP_REENTRANT``SccInitialize`を に設定すると、上記のセッションシーケンスが並列で何度も繰り返されることがあります。 異`pvContext`なる構造は、各`pvContext`セッションが一度に 1 つの開いているプロジェクトに関連付けられている異なるセッションを追跡します。 プラグインは、`pvContext`パラメーターに基づいて、特定の呼び出しで参照されるプロジェクトを判別できます。 機能ビット`SCC_CAP_REENTRANT`が設定されていない場合、未再入可能なソース管理プラグインは、複数のプロジェクトで作業する能力に制限されます。
+ ソース管理プラグインによってのビットが設定されている場合、 `SCC_CAP_REENTRANT` `SccInitialize` 上記のセッションシーケンスは並列で何度も繰り返される可能性があります。 さまざまな `pvContext` 構造が異なるセッションを追跡します。各セッションは、一度 `pvContext` に1つの開いているプロジェクトに関連付けられています。 パラメーターに基づいて、 `pvContext` プラグインは特定の呼び出しで参照されているプロジェクトを特定できます。 機能ビットが設定されて `SCC_CAP_REENTRANT` いない場合、非再入可能なソース管理プラグインは、複数のプロジェクトで作業できるように制限されます。
 
 > [!NOTE]
-> この`SCC_CAP_REENTRANT`ビットは、ソース管理プラグイン API のバージョン 1.1 で導入されました。 バージョン 1.0 では設定されていないか無視され、すべてのバージョン 1.0 ソース管理プラグインは再入不能であると見なされます。
+> この `SCC_CAP_REENTRANT` ビットは、ソース管理プラグイン API のバージョン1.1 で導入されました。 バージョン1.0 では設定されていないか、または無視され、すべてのバージョン1.0 ソース管理プラグインは再入可能でないと見なされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb6209882a7a71a68728299064edcc13afabff35
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704420"
 ---
-# <a name="security-issues"></a>セキュリティ上の問題
+# <a name="security-issues"></a>セキュリティの問題
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio を使用してプログラムをデバッグするために必要なアクセス許可は、開発者がプログラムを実行する必要があるものと同じです。 これは、ほとんどの状況が (インターネット インフォメーション サービスなどの他のサービスに関連するいくつかの状況はより高いレベルのアクセス許可である必要があります) のリモート デバッグが含まれます。  
+Visual Studio を使用してプログラムをデバッグするために必要なアクセス許可は、開発者がプログラムを実行するために必要なアクセス許可だけです。 これには、ほとんどの状況でのリモートデバッグが含まれます (インターネットインフォメーションサービスなど、他のサービスに関連する状況によっては、より高いレベルの権限が必要になる場合があります)。  
   
- Visual Studio の実行中に、プロセス デバッグ マネージャー (PDM) は、ローカル コンピューター上のデバッグ プロセスを追跡します。 リモートでのリモート デバッグを処理し、PDM を使用できるようにするために開発者 msvsmon.exe と呼ばれるプログラムを起動します。 (その msvsmon.exe がサービスではないと、そのコンピューターにリモート デバッグを有効にするのには手動で開始する必要がありますに注意してください)。Visual Studio (または msvsmon.exe) が実行されていない場合は、デバッグ プロセスが追跡ありません。  
+ Visual Studio の実行中、プロセスデバッグマネージャー (PDM) はローカルコンピューター上のデバッグプロセスを追跡します。 リモートデバッグを処理し、PDM を利用できるようにするために、開発者が msvsmon.exe と呼ばれるプログラムをリモートで起動します。 (msvsmon.exe はサービスではなく、そのコンピューターでリモートデバッグを有効にするために手動で開始する必要があることに注意してください。)Visual Studio (または msvsmon.exe) が実行されていない場合、デバッグのためにプロセスは追跡されません。  
   
- つまり、開発者が自分が特別なアクセス許可なしで開始されたプログラムをデバッグできます。 開発者は、その他の人が同じセキュリティ グループのメンバーである場合は、他のユーザーによって開始されたプロセスをデバッグもできます。 リモート デバッグを有効にする必要があるだけで、必要なをコピーするファイルをリモート コンピューターし、msvsmon.exe を開始し、(を参照してください[設定 Up the Remote Tools のデバイスで](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)の詳細)。  
+ これは、開発者が特別なアクセス許可なしで自分で開始したプログラムをデバッグできることを意味します。 開発者は、他のユーザーが同じセキュリティグループのメンバーである場合に、他のユーザーによって開始されたプロセスをデバッグすることもできます。 リモートデバッグを有効にするには、必要なファイルをリモートコンピューターにコピーして msvsmon.exe を開始する必要があります (詳細については、「 [デバイスのリモートツールのセットアップ](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 」を参照してください)。  
   
-## <a name="see-also"></a>関連項目  
- [タスクのデバッグ](../../extensibility/debugger/debugging-tasks.md)   
- [プロセス デバッグ マネージャー](../../extensibility/debugger/process-debug-manager.md)   
+## <a name="see-also"></a>参照  
+ [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)   
+ [プロセスデバッグマネージャー](../../extensibility/debugger/process-debug-manager.md)   
  [デバイスのリモート ツールのセットアップ](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

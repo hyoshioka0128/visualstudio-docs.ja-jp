@@ -1,5 +1,5 @@
 ---
-title: '[新しいプロジェクト] ダイアログ ボックスにディレクトリを追加する |マイクロソフトドキュメント'
+title: '[新しいプロジェクト] ダイアログボックスにディレクトリを追加する |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710246"
 ---
-# <a name="add-directories-to-the-new-project-dialog-box"></a>[新しいプロジェクト] ダイアログ ボックスにディレクトリを追加する
-新しいプロジェクトタイプを作成する場合は、[**新しいプロジェクト**]ダイアログボックスで新しいディレクトリを登録して、テンプレートとして使用するためにそれらを表示することもできます。 次のコード例では、新しいディレクトリ (ノードとも呼ばれます) を登録する方法について説明します。 この例では、VSPackage *CLSID_Package*によって公開されるテンプレートが登録されています。 その結果、[**新しいプロジェクト**] ダイアログ ボックスの左側には *、Folder_Label_ResID*リソースによって決定される名前を持つ追加されたノードが表示されます。 このリソースは、VSPackage サテライト DLL から読み込まれます。
+# <a name="add-directories-to-the-new-project-dialog-box"></a>[新しいプロジェクト] ダイアログボックスにディレクトリを追加する
+新しいプロジェクトの種類を作成するときに、[ **新しいプロジェクト** ] ダイアログボックスに新しいディレクトリを登録して、テンプレートとして使用できるように表示することもできます。 次のコード例では、新しいディレクトリ (ノードとも呼ばれる) を登録する方法について説明します。 この例では、VSPackage、 *CLSID_Package*によって公開されているテンプレートが登録されています。 結果として、[ **新しいプロジェクト** ] ダイアログボックスの左側には、追加したノードが、 *Folder_Label_ResID* リソースによって決定される名前と共に提供されます。 このリソースは、VSPackage サテライト DLL から読み込まれます。
 
- **Folder**値は *、Folder_Label_ResID*ノードが表示されるフォルダーの GUID を表します。 この例では、GUID は [**新しい**プロジェクト] ダイアログ ボックスの [**プロジェクトの種類**] ウィンドウの **[その他**のプロジェクト] フォルダーを表します。 **[その他のプロジェクト]** の値が存在しない場合、ラベルは最上位レベルに配置されます。
+ **フォルダー**の値は、 *Folder_Label_ResID*ノードが表示されるフォルダーの GUID を表します。 この例では、GUID は [**新しいプロジェクト**] ダイアログボックスの [**プロジェクトの種類**] ペインにある [**その他のプロジェクト**] フォルダーを表します。 [ **その他のプロジェクト** ] の値が存在しない場合、ラベルは最上位レベルに配置されます。
 
- 値`TemplatesDir`は、プロジェクト テンプレートを含むディレクトリの完全パスを指定します。 これらのファイルは *、複製する .vsz*ファイルまたは一般的なテンプレート ファイルのいずれかです。
+ 値は、 `TemplatesDir` プロジェクトテンプレートが格納されているディレクトリの完全パスを指定します。 これらのファイルには、 *.vsz* ファイルまたは複製する一般的なテンプレートファイルを指定できます。
 
- を指定`TemplatesLocalizedSubDir`する場合は、ローカライズされたテンプレートを格納するサブディレクトリの名前を指定する文字列`TemplatesDir`のリソース ID である必要があります。 文字列[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]リソースが読み込まれている場合はサテライト DLL から読み込まれるので、各サテライト DLL には異なるサブディレクトリ名を含めることができます。 値`SortPriority`は、並べ替えの優先順位を指定します。
+ を指定する場合 `TemplatesLocalizedSubDir` 、 `TemplatesDir` ローカライズされたテンプレートを保持するのサブディレクトリに名前を指定する文字列のリソース ID にする必要があります。 では、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] サテライト dll がある場合は文字列リソースを読み込みます。サテライト dll がある場合は、各サテライト dll に異なるサブディレクトリ名を含めることができます。 `SortPriority`値は並べ替えの優先順位を指定します。
 
 ```
 NoRemove NewProjectTemplates
@@ -46,6 +46,6 @@ NoRemove NewProjectTemplates
 ```
 
 ## <a name="see-also"></a>関連項目
-- [プロジェクトおよび項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
-- [[新しい項目の追加] ダイアログ ボックスに項目を追加する](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [[新しい項目の追加] ダイアログ ボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+- [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
+- [[新しい項目の追加] ダイアログボックスへの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [[新しい項目の追加] ダイアログボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

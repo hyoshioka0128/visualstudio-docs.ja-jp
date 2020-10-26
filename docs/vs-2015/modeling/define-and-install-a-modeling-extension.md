@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544990"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>モデリング拡張機能を定義およびインストールする
@@ -58,7 +58,7 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
 3. VSIX プロジェクトをソリューションのスタートアップ プロジェクトとして設定します。
 
-    - ソリューションエクスプローラーで、VSIX プロジェクトのショートカットメニューの [**スタートアッププロジェクトに設定**] を選択します。
+    - ソリューションエクスプローラーで、VSIX プロジェクトのショートカットメニューの [ **スタートアッププロジェクトに設定**] を選択します。
 
 4. **source.extension.vsixmanifest**を開きます。 マニフェスト エディターでファイルが開きます。
 
@@ -97,7 +97,7 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
 #### <a name="to-run-an-extension-during-its-development"></a>拡張機能を開発段階において実行するには
 
-1. [ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **デバッグ**] メニューの [**デバッグ開始**] をクリックします。
+1. [ [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **デバッグ** ] メニューの [ **デバッグ開始**] をクリックします。
 
      プロジェクトがビルドされ、 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] の新しいインスタンスが実験モードで起動されます。
 
@@ -109,7 +109,7 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
 3. **[デバッグなしで開始]** を使用したがデバッガーを使用する必要がある場合は、Visual Studio のメイン インスタンスに戻ります。 **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします。 ダイアログ ボックスで、Visual Studio の実験用インスタンスを選択します。プログラム名は **devenv**です。
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>拡張機能のインストールとアンインストール
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> 拡張機能のインストールとアンインストール
  自分のコンピューターまたは他のコンピューターにおいて Visual Studio のメイン インスタンスで拡張機能を実行するには、次の手順を実行します。
 
 1. 自分のコンピューターで、拡張機能プロジェクトによってビルドされた **.vsix** ファイルを見つけます。
@@ -140,5 +140,5 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
 
    *% Localappdata%* **\Microsoft\VisualStudio \\ [バージョン] \ 拡張機能**
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [プロファイルを定義して uml を拡張する](../modeling/define-a-profile-to-extend-uml.md)[カスタムモデリングツールボックスアイテムを](../modeling/define-a-custom-modeling-toolbox-item.md)定義する[uml モデルの検証制約を定義](../modeling/define-validation-constraints-for-uml-models.md)する[モデリング図にメニューコマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)する

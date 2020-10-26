@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655352"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>例外のトラブルシューティング : System.ServiceModel.Security.MessageSecurityException
-@No__t_0 例外は、メッセージが正しく保護されていないこと、またはメッセージが改ざんされたことが [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] によって判断された場合にスローされます。 このエラーが最も発生しやすいのは、次の条件がすべて該当する場合です。
+例外は、によって、 <xref:System.ServiceModel.Security.MessageSecurityException> [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] メッセージが正しく保護されていないか、改ざんされていることが判断された場合にスローされます。 このエラーが最も発生しやすいのは、次の条件がすべて該当する場合です。
 
 - リモート デスクトップ接続やターミナル サービスなどのリモート接続を介した WCF サービス参照を使用して、Web サイトまたは Web アプリケーション プロジェクト内の WCF サービス (.svc) と通信している。
 
@@ -29,7 +29,7 @@ ms.locfileid: "72655352"
 - リモート サイトの localhost に対する要求が [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーによって処理されている。
 
 ## <a name="associated-tips"></a>関連するヒント
- **ASP.Net 開発サーバーを使用する場合は、NTLM 認証の問題を解決します。**
+ **ASP.Net 開発サーバーを使用している場合は、NTLM 認証の問題を解決してください。**
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーでは、通常、Windows NT チャレンジ/レスポンス (NTLM: Windows NT Challenge/Response) セキュリティがオフになっており、匿名アクセスが許可されています。 既定では、ターミナル サービス セッションを実行するか、リモート接続を使用すると、NTLM セキュリティが有効になります。 NTLM が有効である場合、すべての localhost 要求が [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーを起動したユーザーまたはプロセスの資格情報に対して検証されます。 これにより、セキュリティ上の脅威が軽減されます。 ただし、WCF は独自の認証も行い、管理者以外のアカウントに WCF サービスの利用を許可しません。
 
  リモート ユーザーが [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーを使用して Web サイトを実行し、さらに Web サービスまたは WCF サービスを使用する可能性がある場合は、カスタム サービス バインディングを作成するか、NTLM セキュリティをオフにすることができます。
@@ -85,4 +85,4 @@ ms.locfileid: "72655352"
 3. **[OK]** をクリックします。
 
 ## <a name="see-also"></a>参照
- [例外処理アシスタントを使用 <xref:System.ServiceModel.Security.MessageSecurityException> には](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ <xref:System.ServiceModel.Security.MessageSecurityException>[例外処理アシスタントを使用する](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

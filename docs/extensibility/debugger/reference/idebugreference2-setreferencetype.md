@@ -1,5 +1,5 @@
 ---
-title: 2::セットリファレンスタイプ |マイクロソフトドキュメント
+title: 'IDebugReference2:: SetReferenceType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720354"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-参照の種類を設定します。 将来利用するために予約されています。
+参照型を設定します。 将来使用するために予約されています。
 
 ## <a name="syntax"></a>構文
 
@@ -41,7 +41,7 @@ int SetReferenceType ( 
 
 ## <a name="parameters"></a>パラメーター
 `dwRefType`\
-[in]参照型を指定する[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)列挙体の値。
+から参照型を指定する [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 列挙の値です。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

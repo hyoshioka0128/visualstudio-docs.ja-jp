@@ -13,18 +13,18 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77e4701d3d8ec54fd37d6483f55b10a28af65b15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194054"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-これに指定されたコールバック関数、 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)ディレクトリと (必要に応じて) ソース管理の対象であることを確認するファイル名のコレクションを更新する関数。  
+これは、 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 関数に与えられたコールバック関数であり、ディレクトリのコレクションと (必要に応じて) ファイル名を更新して、ソース管理下にある場所を検索します。  
   
- `POPDIRLISTFUNC`コールバックは、これらのディレクトリとファイル名に対してのみ呼び出す必要があります (に指定された一覧で、`SccPopulateDirList`関数)、ソース管理下に実際にします。  
+ `POPDIRLISTFUNC`コールバックは、実際にソース管理下にあるディレクトリとファイル名 (関数に指定されたリスト内) に対してのみ呼び出す必要があり `SccPopulateDirList` ます。  
   
 ## <a name="signature"></a>署名  
   
@@ -38,27 +38,27 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>パラメーター  
  pvCallerData  
- [in]渡されたユーザー値[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)します。  
+ から [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)に指定されたユーザー値。  
   
  bFolder  
- [in]`TRUE`場合に名前`lpDirectoryOrFileName`ディレクトリである名前のファイル名はそれ以外の場合。  
+ [入力] `TRUE` 内の名前がディレクトリである場合は `lpDirectoryOrFileName` 。それ以外の場合はファイル名。  
   
  lpDirectoryOrFileName  
- [in]ソース コード管理下にあるディレクトリまたはファイル名への完全なローカル パス。  
+ からソースコード管理下にあるディレクトリまたはファイル名への完全なローカルパス。  
   
 ## <a name="return-value"></a>戻り値  
- IDE には、適切なエラー コードが返されます。  
+ IDE から適切なエラーコードが返されます。  
   
 |値|説明|  
 |-----------|-----------------|  
-|SCC_OK|処理を続行します。|  
+|SCC_OK|処理し続けます。|  
 |SCC_I_OPERATIONCANCELED|処理を停止します。|  
-|SCC_E_xxx|適切なソース コントロール エラーは、処理を停止する必要があります。|  
+|SCC_E_xxx|適切なソース管理エラーが発生すると、処理が停止します。|  
   
-## <a name="remarks"></a>Remarks  
- 場合、`fOptions`のパラメーター、`SccPopulateDirList`関数が含まれています、`SCC_PDL_INCLUDEFILES`フラグでファイル名だけでなく、ディレクトリの名前は、一覧を含んでいる可能性が。  
+## <a name="remarks"></a>注釈  
+ 関数のパラメーターにフラグが含まれている場合、 `fOptions` `SccPopulateDirList` `SCC_PDL_INCLUDEFILES` リストにはファイル名とディレクトリ名が含まれている可能性があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
  [エラー コード](../extensibility/error-codes.md)

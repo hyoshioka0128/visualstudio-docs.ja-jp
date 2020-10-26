@@ -1,5 +1,5 @@
 ---
-title: を使用します。マイクロソフトドキュメント
+title: 'IDebugGenericParamField:: GetOwner |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 040b8cf21cda1a0634c1c423516109b1ef214f01
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727875"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-このジェネリック パラメーターの型またはメソッドの所有者を取得します。
+このジェネリックパラメーターの型またはメソッドの所有者を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,13 +39,13 @@ int GetOwner(
 
 ## <a name="parameters"></a>パラメーター
 `ppOwner`\
-[アウト]このジェネリック パラメーターを所有する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトを返します。
+入出力このジェネリックパラメーターを所有する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-インターフェイスを公開する**オブジェクト**に対してこの[メソッドを実装](../../../extensibility/debugger/reference/idebuggenericparamfield.md)する方法を次の例に示します。
+次の例は、 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)インターフェイスを公開する**CDebugGenericParamFieldType**オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)

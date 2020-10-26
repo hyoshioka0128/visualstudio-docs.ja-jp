@@ -1,5 +1,5 @@
 ---
-title: 要素を作成する
+title: CreateInPlace 要素 (Visual Studio テンプレート)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739664"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>要素を作成する
-プロジェクトを作成して指定した場所でパラメータの置換を実行するか、一時的な場所でパラメータの置換を実行して、指定した場所にプロジェクトを保存するかを指定します。
+# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 要素 (Visual Studio テンプレート)
+プロジェクトを作成し、指定した場所でパラメーター置換を実行するか、一時的な場所でパラメーター置換を実行し、指定した場所にプロジェクトを保存するかを指定します。
 
- \<VS テンプレート\<>\<テンプレート データ>作成インプレース>
+ \<VSTemplate> \<TemplateData>
+ \<CreateInPlace>
 
 ## <a name="syntax"></a>構文
 
@@ -36,10 +37,10 @@ ms.locfileid: "80739664"
  以降のセクションでは、属性、子要素、および親要素について説明します。
 
 ### <a name="attributes"></a>属性
- [なし] :
+ なし。
 
 ### <a name="child-elements"></a>子要素
- [なし] :
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
@@ -50,9 +51,9 @@ ms.locfileid: "80739664"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- テキストは、`true` または `false` である必要があります。 場合`true`は、プロジェクトが作成され、パラメーターの置換が **[新しいプロジェクト**]ダイアログ ボックスで指定された場所で実行されます。 パラメーター`false`置換が一時的な場所で実行され、プロジェクトが指定した場所にコピーされます。
+ テキストは、`true` または `false` である必要があります。 の場合、 `true` プロジェクトが作成され、[ **新しいプロジェクト** ] ダイアログボックスで指定された場所でパラメーター置換が実行されます。 `false`の場合、パラメーター置換は一時的な場所で実行され、プロジェクトは指定された場所にコピーされます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  `CreateInPlace` は省略可能な要素です。 既定値は `true` です。
 
 ## <a name="example"></a>例
@@ -85,4 +86,4 @@ ms.locfileid: "80739664"
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
-- [Visual Studio テンプレート スキーマ リファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)

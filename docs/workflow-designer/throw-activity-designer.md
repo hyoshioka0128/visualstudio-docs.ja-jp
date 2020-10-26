@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593097"
 ---
 # <a name="throw-activity-designer"></a>Throw アクティビティ デザイナー
 
-**Throw**アクティビティデザイナーは、<xref:System.Activities.Statements.Throw> アクティビティを作成および構成するために使用されます。
+**Throw**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Throw> ます。
 
 ## <a name="the-throw-activity"></a>Throw アクティビティ
 
@@ -29,18 +29,18 @@ ms.locfileid: "75593097"
 
 [**ツールボックス**] の [**エラー処理**] カテゴリで、 **Throw**アクティビティデザイナーにアクセスします。
 
-**Throw**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (<xref:System.Activities.Statements.Sequence>内など) にドロップしてワークフローデザイナー画面にドロップできます。 これにより、Throw という既定の**DisplayName**を持つ <xref:System.Activities.Statements.Throw> アクティビティが作成されます。 <xref:System.Activities.Activity.DisplayName%2A> 値は、 **Throw**アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。 この <xref:System.Activities.Statements.Throw.Exception%2A> プロパティは、プロパティ グリッドで編集する必要があります。
+**Throw**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 これ <xref:System.Activities.Statements.Throw> により、Throw という既定の **DisplayName** を持つアクティビティが作成されます。 この <xref:System.Activities.Activity.DisplayName%2A> 値は、 **Throw** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。 この <xref:System.Activities.Statements.Throw.Exception%2A> プロパティは、プロパティ グリッドで編集する必要があります。
 
 ### <a name="the-throw-properties"></a>Throw プロパティ
 
 次の表に、<xref:System.Activities.Statements.Throw> のプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必須|使用状況|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|[False]|<xref:System.Activities.Statements.Throw> アクティビティの表示名を指定します (省略可能)。 既定値は Throw です。|
-|<xref:System.Activities.Statements.Throw.Exception%2A>|True|スローされる例外。 この例外は、<xref:System.Exception> から派生していることが必要です。 例外を指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.Throw> アクティビティの表示名を指定します (省略可能)。 既定値は Throw です。|
+|<xref:System.Activities.Statements.Throw.Exception%2A>|○|スローされる例外。 この例外は、<xref:System.Exception> から派生していることが必要です。 例外を指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [コレクション](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)

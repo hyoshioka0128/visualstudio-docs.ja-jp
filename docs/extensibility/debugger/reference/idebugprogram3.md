@@ -1,5 +1,5 @@
 ---
-title: プログラム3 |マイクロソフトドキュメント
+title: IDebugProgram3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9da63d54f64a4ef7592fdbc4d36e2b31220f82df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722642"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-このインターフェイスは、プロセス内で実行されているプログラムを表し、スレッド情報を提供することによって[Execute を](../../../extensibility/debugger/reference/idebugprogram2-execute.md)拡張します。
+このインターフェイスは、プロセスで実行されているプログラムを表し、スレッド情報を提供することによって [実行](../../../extensibility/debugger/reference/idebugprogram2-execute.md) を拡張します。
 
 ## <a name="syntax"></a>構文
 
@@ -26,28 +26,28 @@ ms.locfileid: "80722642"
 IDebugProgram3 : IDebugProgram3
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジン (DE) とカスタム ポート サプライヤーは、プロセス内のプログラムを表すために、このインターフェイスを実装します。 セッション デバッグ マネージャー (SDM) も、このインターフェイスを実装して[、Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)に情報を提供します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジン (DE) とカスタムポート供給業者は、プロセス内のプログラムを表すために、このインターフェイスを実装します。 また、セッションデバッグマネージャー (SDM) は、このインターフェイスを実装して、 [アタッチ](../../../extensibility/debugger/reference/idebugprogram2-attach.md)する情報を提供します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- イベント[は](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)、新しいプログラムのこのインターフェイスを返します。 このインターフェイスは、複数のインターフェイスで多くのメソッドのパラメーターとしても使用されます。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)イベントは、新しいプログラムに対してこのインターフェイスを返します。 このインターフェイスは、複数のインターフェイスの多くのメソッドのパラメーターとしても使用されます。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IDebugProgram3`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IDebugProgram3` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|プログラムを実行します。 スレッドが返され、実行中にユーザーが表示しているスレッドに関する情報をデバッガーに提供します。|
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|プログラムを実行します。 スレッドは、実行時にユーザーが表示しているスレッドにデバッガー情報を提供するために返されます。|
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>Remarks
- プログラムは、特定のランタイム アーキテクチャで実行されるスレッド コンテナーであり、プロセスは 1 つ以上のプログラムで構成されます。
+## <a name="remarks"></a>注釈
+ プログラムは、特定の実行時アーキテクチャで実行されるスレッドコンテナーであり、プロセスは1つ以上のプログラムで構成されます。
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
@@ -55,7 +55,7 @@ IDebugProgram3 : IDebugProgram3
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [次へ](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)
 - [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
-- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

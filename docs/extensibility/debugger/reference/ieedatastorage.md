@@ -1,5 +1,5 @@
 ---
-title: ストレージ |マイクロソフトドキュメント
+title: IEEDataStorage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718180"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
-このインターフェイスはバイト配列を表します。
+このインターフェイスは、バイトの配列を表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,31 +28,31 @@ ms.locfileid: "80718180"
 IEEDataStorage : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- 式エバリュエーター (EE) は、このインターフェイスを実装してバイト配列を表します (型ビジュアライザーが[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)インターフェイスを通じてデータを取得および変更するために使用します)。 EE は通常、外部型ビジュアライザーをサポートするためにこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ 式エバリュエーター (EE) は、バイトの配列を表すために、このインターフェイスを実装します ( [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) インターフェイスを使用してデータを取得および変更するために型ビジュアライザーによって使用されます)。 EE は、通常、外部型ビジュアライザーをサポートするために、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- インターフェイスのメソッドはすべて`IPropertyProxyEESide`、このインターフェイスを返します。 インターフェイス[を取得](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)するには、プロパティ[プロキシを](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)呼び出します。 インターフェイスを取得するには、[インターフェイス](../../../extensibility/debugger/reference/idebugproperty3.md)[を呼び](/cpp/atl/queryinterface)出[します](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ インターフェイスのメソッドは `IPropertyProxyEESide` すべて、このインターフェイスを返します。 [Getpropertyproxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)を呼び出して、 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)インターフェイスを取得します。 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出して、 [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)インターフェイスを取得します。
 
-## <a name="methods-in-vtable-order"></a>V テーブル順のメソッド
- この`IEEDataStorage`インターフェイスは、次のメソッドを実装します。
+## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
+ インターフェイスには `IEEDataStorage` 、次のメソッドが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|指定されたバッファーに指定されたデータ バイト数を取得します。|
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|指定したバッファーに、指定したデータバイト数を取得します。|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|使用可能なデータバイト数を取得します。|
 
-## <a name="remarks"></a>Remarks
- このインターフェイスは、型ビジュアライザーが特定のオブジェクトが保持するデータにアクセスするために使用されます。 データはバイト配列として扱われ、型ビジュアライザーは、ユーザーに提示するために必要な方法でデータを操作できます。
+## <a name="remarks"></a>注釈
+ このインターフェイスは、特定のオブジェクトによって保持されているデータにアクセスするために、型ビジュアライザーによって使用されます。 データはバイト配列として扱われます。これにより、型ビジュアライザーは、このデータをユーザーに提示するために必要な任意の方法で操作できます。
 
- カスタム ビューアーは、必要に応じてこのインターフェイスを使用することもできますが、通常はカスタム ビューアーは、カスタム インターフェイス[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)または[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (文字列指向のデータ) を使用します。
+ カスタムビューアーでは、必要に応じてこのインターフェイスを使用することもできますが、通常はカスタムビューアーでカスタムインターフェイス、 [Getmemorybytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) 、または [getmemorybytes](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (文字列指向データ用) を使用します。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

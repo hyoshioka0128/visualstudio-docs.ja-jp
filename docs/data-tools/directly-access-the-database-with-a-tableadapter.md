@@ -24,17 +24,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282567"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter で直接データベースにアクセスする
 
 、、およびに加えて、 `InsertCommand` `UpdateCommand` データベースに `DeleteCommand` 対して直接実行できるメソッドを使用して tableadapter が作成されます。 これらのメソッド ( `TableAdapter.Insert` 、 `TableAdapter.Update` 、および) を呼び出すと、 `TableAdapter.Delete` データベース内のデータを直接操作できます。
 
-これらのダイレクトメソッドを作成しない場合は、 `GenerateDbDirectMethods` `false` [**プロパティ**] ウィンドウで TableAdapter のプロパティをに設定します。 Tableadapter のメインクエリに加えて、TableAdapter にクエリが追加されると、これらのメソッドを生成しないスタンドアロンクエリになり `DbDirect` ます。
+これらのダイレクトメソッドを作成しない場合は、 `GenerateDbDirectMethods` `false` [ **プロパティ** ] ウィンドウで TableAdapter のプロパティをに設定します。 Tableadapter のメインクエリに加えて、TableAdapter にクエリが追加されると、これらのメソッドを生成しないスタンドアロンクエリになり `DbDirect` ます。
 
 ## <a name="send-commands-directly-to-a-database"></a>コマンドをデータベースに直接送信する
 

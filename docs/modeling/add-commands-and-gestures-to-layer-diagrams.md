@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531392"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>依存関係図にコマンドおよびジェスチャを追加する
@@ -24,7 +24,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 必要に応じて、複数のコマンドおよびジェスチャ ハンドラーを同じ Visual Studio プロジェクトで定義できます。 また、複数のプロジェクトを組み合わせて 1 つの VSIX に含めることもできます。 たとえば、レイヤーコマンドとドメイン固有言語を含む単一の VSIX を定義できます。
 
 > [!NOTE]
-> また、ユーザーのソースコードと依存関係図を比較して、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、「[依存関係図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
+> また、ユーザーのソースコードと依存関係図を比較して、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、「 [依存関係図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
 ## <a name="requirements"></a>必要条件
 
@@ -34,7 +34,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
 最も簡単に拡張機能を作成するには、プロジェクト テンプレートを使用します。 この方法では、コードと VSIX マニフェストが同じプロジェクトに配置されます。
 
-1. 新しい**レイヤーデザイナーのコマンド拡張**機能または**レイヤーデザイナーのジェスチャ拡張機能**プロジェクトを作成します。
+1. 新しい **レイヤーデザイナーのコマンド拡張** 機能または **レイヤーデザイナーのジェスチャ拡張機能** プロジェクトを作成します。
 
    このテンプレートでは、動作する小さい例を含むプロジェクトが作成されます。
 
@@ -87,7 +87,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
 5. コマンドまたはジェスチャハンドラープロジェクトに戻り、次のプロジェクト参照を追加します。
 
-   |**参照**|**実行できる操作**|
+   |**リファレンス**|**実行できる操作**|
    |-|-|
    |Program Files\Microsoft Visual Studio [バージョン]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|レイヤーを作成および編集する|
    |Microsoft.VisualStudio.Uml.Interfaces|レイヤーを作成および編集する|
@@ -108,7 +108,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
 8. VSIX を Visual Studio のメインインスタンスまたは別のコンピューターにインストールするには、vsix プロジェクトの**bin**ディレクトリで **.vsix ファイルを見つけます。** このファイルを、VSIX をインストールするコンピューターにコピーします。 エクスプローラーで、VSIX ファイルをダブルクリックします。
 
-## <a name="defining-a-menu-command"></a><a name="command"></a>メニューコマンドの定義
+## <a name="defining-a-menu-command"></a><a name="command"></a> メニューコマンドの定義
 
 ジェスチャまたはコマンドの既存のプロジェクトに、さらにメニュー コマンド定義を追加できます。 各コマンドは、次のような特徴を持つクラスによって定義されます。
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="defining-a-gesture-handler"></a><a name="gesture"></a>ジェスチャハンドラーの定義
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> ジェスチャハンドラーの定義
 
 ジェスチャハンドラーは、ユーザーが項目を依存関係図にドラッグしたときと、ユーザーが図内の任意の場所をダブルクリックしたときに応答します。
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** : ユーザーが図にアイテムをドロップすると呼び出されます。
 
-- 各メソッドの最初の引数は、レイヤー要素を取得できる `IShape`です。 次に例を示します。
+- 各メソッドの最初の引数は、レイヤー要素を取得できる `IShape`です。 たとえば、次のように入力します。
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

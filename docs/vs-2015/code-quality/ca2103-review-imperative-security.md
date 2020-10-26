@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ade0d10e203752c7412929c6f5f44d9cbfaacfa6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521265"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103:命令型のセキュリティを確認します
@@ -46,5 +46,5 @@ ms.locfileid: "85521265"
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  権限がデータの変更に依存していない場合は、このルールからの警告を抑制しても安全です。 ただし、命令型の要求を、それと等価な宣言に変更することをお勧めします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[データとモデリング](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

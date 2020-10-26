@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Compare |Microsoft Docs
+title: 'IDebugMemoryContext2:: Compare |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3eb48c324b5a1a918ab864c5eb4c4ca39eae41ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163439"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-各コンテキストと一致する最初のコンテキストのインデックスを返す、比較フラグで示されるように指定した配列内にメモリのコンテキストを比較します。  
+比較フラグによって示される方法で、指定された配列内の各コンテキストとメモリコンテキストを比較し、に一致する最初のコンテキストのインデックスを返します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,23 +47,23 @@ int Compare(
   
 #### <a name="parameters"></a>パラメーター  
  `compare`  
- [in]値、 [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)比較の種類を決定する列挙型。  
+ から比較の種類を決定する [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) 列挙の値。  
   
  `rgpMemoryContextSet`  
- [in]参照の配列、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)と比較するオブジェクト。  
+ から比較する [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) オブジェクトへの参照の配列。  
   
  `dwMemoryContextSetLen`  
- [in]内のコンテキストの数、`rgpMemoryContextSet`配列。  
+ から配列内のコンテキストの数 `rgpMemoryContextSet` 。  
   
  `pdwMemoryContext`  
- [out]比較で一致する最初のメモリ コンテキストのインデックスを返します。  
+ 入出力比較を満たす最初のメモリコンテキストのインデックスを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_COMPARE_CANNOT_COMPARE`場合は、2 つのコンテキストを比較することはできません。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_COMPARE_CANNOT_COMPARE`2 つのコンテキストを比較できない場合はを返します。  
   
-## <a name="remarks"></a>Remarks  
- デバッグ エンジン (DE) はすべての種類の比較をサポートする必要はありませんが、少なくともをサポートする必要があります`CONTEXT_EQUAL`、 `CONTEXT_LESS_THAN`、`CONTEXT_GREATER_THAN`と`CONTEXT_SAME_SCOPE`します。  
+## <a name="remarks"></a>注釈  
+ デバッグエンジン (DE) は、すべての種類の比較をサポートする必要はありませんが、少なくとも、、およびをサポートする必要があり `CONTEXT_EQUAL` `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` `CONTEXT_SAME_SCOPE` ます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
  [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

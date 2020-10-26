@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591841"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 
-Visual Studio T4 テキストテンプレートは、通常、テンプレートの処理方法を指定する `template` ディレクティブで始まります。 テキスト テンプレートおよびそれに含まれるファイルには、template ディレクティブを 1 つしか含めることができません。
+Visual Studio T4 テキストテンプレートは、通常、 `template` テンプレートの処理方法を指定するディレクティブで始まります。 テキスト テンプレートおよびそれに含まれるファイルには、template ディレクティブを 1 つしか含めることができません。
 
-テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)
+テキストテンプレートの記述の概要については、「 [T4 テキストテンプレートの作成](../modeling/writing-a-t4-text-template.md)」を参照してください。
 
 ## <a name="using-the-template-directive"></a>template ディレクティブの使用
 
@@ -52,7 +52,7 @@ Visual Studio T4 テキストテンプレートは、通常、テンプレート
 
 インバリアント カルチャである "" (既定値)。
 
-xx-XX 形式の文字列で表現されたカルチャ。 たとえば、en-US、ja-JP、de-CH、de-DE などがあります。 詳細については、「 <xref:System.Globalization.CultureInfo?displayProperty=fullName>」を参照してください。
+xx-XX 形式の文字列で表現されたカルチャ。 たとえば、en-US、ja-JP、de-CH、de-DE などがあります。 詳細については、「<xref:System.Globalization.CultureInfo?displayProperty=fullName>」を参照してください。
 
 culture 属性では、式ブロックをテキストに変換する際に使用するカルチャを指定します。
 
@@ -68,13 +68,13 @@ debug="true"
 
 `true`
 
-`false` (既定)
+`false` (既定値)
 
 `debug` 属性が `true` の場合、デバッガーでテンプレート内の中断または例外の発生位置を正確に特定できるようにする情報が中間コード ファイルに出力されるようになります。
 
-デザイン時テンプレートの中間コード ファイルが書き込まれる、 **%TEMP%** ディレクトリ。
+デザイン時テンプレートの場合、中間コードファイルは **% TEMP%** ディレクトリに書き込まれます。
 
-デバッガー中でデザイン時テンプレートを実行するには、テキスト テンプレートを保存し、ソリューション エクスプローラーで、テキスト テンプレートのショートカット メニューを開き、**T4 テンプレートのデバッグ**を選択します。
+デバッガーでデザイン時テンプレートを実行するには、テキストテンプレートを保存し、ソリューションエクスプローラーでテキストテンプレートのショートカットメニューを開き、[ **T4 テンプレートのデバッグ**] を選択します。
 
 ## <a name="hostspecific-attribute"></a>hostspecific 属性
 
@@ -88,15 +88,15 @@ hostspecific="true"
 
 `true`
 
-`false` (既定)
+`false` (既定値)
 
 `trueFromBase`
 
 この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 プロパティは、変換エンジンのホストへの参照で、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))として宣言されます。 カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
 
-このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)には適用されますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)にはされません。
+このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、 [デザイン時](../modeling/design-time-code-generation-by-using-t4-text-templates.md)テンプレートには適用できますが、 [実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)には適用されません。
 
-`hostspecific`が`true`であり Visual Studio を使用しているときは、Visual Studio の機能にアクセスするために、`this.Host`を IServiceProvider にキャストできます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 例:
+`hostspecific`が `true` で、visual studio を使用している場合は、IServiceProvider にキャストして `this.Host` visual studio の機能にアクセスできます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 次に例を示します。
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -128,13 +128,13 @@ Content of myFile is:
 
 有効な値:
 
-`C#` (既定)
+`C#` (既定値)
 
 `VB`
 
-`language` 属性は、ステートメントおよび式ブロックのソースコードに使用する言語 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] または [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
+属性は、 `language` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ステートメントおよび式ブロック内のソースコードに使用する言語 (または) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
 
-例:
+次に例を示します。
 
 ```vb
 <#@ template language="VB" #>
@@ -156,7 +156,7 @@ Squares of numbers:
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>実行時 (前処理された) テキスト テンプレートでの継承
 
-実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートが指定されている、**カスタム ツール** プロパティに **TextTemplatingFilePreprocessor** を設定します。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
+実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートは、 **カスタムツール** プロパティが **Texttemplatingfilepreprocessor プロセッサ**に設定されているテンプレートです。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 `inherits` 属性を指定しない場合は、テキスト テンプレートから基底クラスと派生クラスが生成されます。 `inherits` 属性を指定すると、派生クラスだけが生成されます。 基底クラスは手動で作成できますが、派生クラスで使用するメソッドを提供する必要があります。
 
@@ -231,11 +231,11 @@ This is the common footer.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>デザイン時テキスト テンプレートでの継承
 
-デザイン時テキスト テンプレートは、対象のファイルの **カスタム ツール** を **TextTemplatingFileGenerator** に設定します。 このテンプレートは、Visual Studio プロジェクトの一部を形成するコードまたはテキストの出力ファイルを生成します。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
+デザイン時テキストテンプレートは、 **カスタムツール** が **Texttemplatingfilegenerator**に設定されているファイルです。 このテンプレートは、Visual Studio プロジェクトの一部を形成するコードまたはテキストの出力ファイルを生成します。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
 
 デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。
 
-詳細については、次を参照してください。 ["継承でテキスト テンプレート"Gareth Jones のブログで](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)
+詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)を参照してください。
 
 ## <a name="linepragmas-attribute"></a>linePragmas グマ属性
 
@@ -245,13 +245,13 @@ This is the common footer.
 
 有効な値:
 
-`true` (既定)
+`true` (既定値)
 
 `false`
 
 この属性を false に設定すると、生成されたコード内で行番号を識別するタグが削除されます。 つまり、コンパイラは生成されたコードの行番号を使用してエラーを報告します。このため、デバッグ時の選択肢が増えて、テキスト テンプレートをデバッグするか、それとも生成されたコードをデバッグするかを選択できます。
 
-この属性は ソース コード管理下にあるプラグマの絶対ファイル名が無駄なマージの原因となっている場合にも役立ちます。
+この属性は、プラグマ内の絶対ファイル名が見つかった場合にも、ソースコード管理下で混乱が生じないようにするために役立ちます。
 
 ## <a name="visibility-attribute"></a>visibility 属性
 
@@ -261,7 +261,7 @@ This is the common footer.
 
 有効な値:
 
-`public` (既定)
+`public` (既定値)
 
 `internal`
 

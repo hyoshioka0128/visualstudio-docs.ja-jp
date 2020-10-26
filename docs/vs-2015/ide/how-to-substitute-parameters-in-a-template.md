@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : テンプレート内のパラメーターを置き換える | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670661"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>方法 : テンプレート内のパラメーターを置き換える
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テンプレートに基づいてファイルを作成するとき、クラス名や名前空間などのテンプレート パラメーターを置き換えることができます。 テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。
+テンプレートに基づいてファイルを作成するとき、クラス名や名前空間などのテンプレート パラメーターを置き換えることができます。 テンプレートパラメーターの完全な一覧については、「 [テンプレートパラメーター](../ide/template-parameters.md)」を参照してください。
 
-## <a name="procedure"></a>プロシージャ
+## <a name="procedure"></a>手順
  テンプレートに基づいてプロジェクトを作成するときは常に、そのテンプレートのファイル内のパラメーターを置き換えることができます。 この手順では、テンプレートを使用して新しいプロジェクトを作成するとき、名前空間の名前を安全なプロジェクト名に置き換えるテンプレートの作成方法について説明します。
 
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>パラメーターを使用して名前空間の名前をプロジェクト名に置き換えるには
 
-1. テンプレートの 1 つ以上のコード ファイルにパラメーターを挿入します。 (例:
+1. テンプレートの 1 つ以上のコード ファイルにパラメーターを挿入します。 次に例を示します。
 
     ```
     namespace $safeprojectname$
@@ -40,7 +40,7 @@ ms.locfileid: "72670661"
 
 2. テンプレートの .vstemplate ファイルで、このファイルを含む `ProjectItem` 要素を検索します。
 
-3. `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。 (例:
+3. `ProjectItem` 要素の `ReplaceParameters` 属性を `true` に設定します。 次に例を示します。
 
     ```
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>

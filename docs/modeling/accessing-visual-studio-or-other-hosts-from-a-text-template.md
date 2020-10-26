@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 068de3c14240bc7e13be0e2e564c2c4e6034f987
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531418"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>テキストテンプレートから Visual Studio またはその他のホストにアクセスする
@@ -20,11 +20,11 @@ ms.locfileid: "85531418"
 テキストテンプレートでは、テンプレートを実行するホストによって公開されているメソッドとプロパティを使用できます。 ホストの例として、Visual Studio があります。
 
 > [!NOTE]
-> ホストメソッドとプロパティは、通常のテキストテンプレートでは使用できますが、*前処理*されたテキストテンプレートでは使用できません。
+> ホストメソッドとプロパティは、通常のテキストテンプレートでは使用できますが、 *前処理* されたテキストテンプレートでは使用できません。
 
 ## <a name="obtain-access-to-the-host"></a>ホストへのアクセスを取得する
 
-ホストにアクセスするには、 `hostspecific="true"` ディレクティブでを設定 `template` します。 これで `this.Host` 、型[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))を持つを使用できるようになりました。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型には、ファイル名を解決し、エラーをログに記録するために使用できるメンバーがあります。たとえば、のようになります。
+ホストにアクセスするには、 `hostspecific="true"` ディレクティブでを設定 `template` します。 これで `this.Host` 、型 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))を持つを使用できるようになりました。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型には、ファイル名を解決し、エラーをログに記録するために使用できるメンバーがあります。たとえば、のようになります。
 
 ### <a name="resolve-file-names"></a>ファイル名の解決
 
@@ -44,7 +44,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>エラーメッセージを表示する
 
-この例では、テンプレートを変換するときにメッセージをログに記録します。 ホストが Visual Studio の場合は、エラーが**エラー一覧**に追加されます。
+この例では、テンプレートを変換するときにメッセージをログに記録します。 ホストが Visual Studio の場合は、エラーが **エラー一覧**に追加されます。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

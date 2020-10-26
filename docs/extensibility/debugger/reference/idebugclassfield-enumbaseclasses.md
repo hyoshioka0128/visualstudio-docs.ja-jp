@@ -1,5 +1,5 @@
 ---
-title: クラスフィールド::列挙クラス |マイクロソフトドキュメント
+title: 'IDebugClassField:: EnumBaseClasses |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 12317c549050be31ac9e19bc7b3d8a6683f743d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734472"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
@@ -42,13 +42,13 @@ int EnumBaseClasses(
 ## <a name="parameters"></a>パラメーター
 `ppEnum`\
 
-[アウト]基本クラス[のリスト](../../../extensibility/debugger/reference/ienumdebugfields.md)を表すオブジェクトを返します。 基本クラスがない場合は、null 値を返します。
+入出力基底クラスのリストを表す [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) オブジェクトを返します。 基底クラスがない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は、S_OKを返し、基底クラスがない場合はS_SH_NO_BASE_CLASSES`ppEnum`を返します (パラメーターが null 値に設定されている場合)。それ以外の場合は、エラー コードを返します。
+ 正常に終了した場合は S_OK を返し、基本クラスがない場合は S_SH_NO_BASE_CLASSES を返します ( `ppEnum` パラメーターが null 値に設定されている場合)。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- 列挙子オブジェクトの基底クラスは、最も直接的な (または最も派生した) 基底クラスの順序で最もリモートの基底クラスに指定されます。 たとえば、C++ クラスを指定します。
+## <a name="remarks"></a>解説
+ 列挙子オブジェクトの基底クラスは、最も直接的な (または最も派生した) 基底クラスから最もリモートの基底クラスまで、順に指定されます。 たとえば、次の C++ クラスがあるとします。
 
 ```
 class Root { }
@@ -57,7 +57,7 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }
 ```
 
- 列挙体は、基本クラスを 、 `Level2`、`Level1`という`Root`順序で返します。
+ 列挙型では、基本クラスが、、の順に返され `Level2` `Level1` `Root` ます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

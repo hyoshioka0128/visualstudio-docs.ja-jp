@@ -1,4 +1,4 @@
-﻿---
+---
 title: L2DBForm.xaml ソース コード | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc0ec53c35f87751efe78359f582e5f4297143c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664277"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml ソース コード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このトピックでは、「[LINQ to XML を使用した WPF のデータ バインドの例](../designers/wpf-data-binding-using-linq-to-xml-example.md)」の XAML ソース ファイル L2DBForm.xaml の内容を紹介し、説明します。
+このトピックでは、 [LINQ to XML 例 l2dbform.xaml を使用して、WPF データバインディング](../designers/wpf-data-binding-using-linq-to-xml-example.md)の XAML ソースファイルについて説明します。
 
 ## <a name="overall-ui-structure"></a>UI の全体的な構造
  WPF プロジェクトで一般に見られるように、このファイルには親要素として <xref:System.Windows.Window> XML 要素が含まれており、この要素に `L2XDBFrom` 名前空間の派生クラス `LinqToXmlDataBinding` が関連付けられています。
@@ -33,7 +33,7 @@ ms.locfileid: "72664277"
 
  11 ～ 25 行目にわたる `<ObjectDataProvider>` タグでは、 <xref:System.Windows.Data.ObjectDataProvider>をソースとして使用する `LoadedBooks`という名前の <xref:System.Xml.Linq.XElement> が宣言されています。 この <xref:System.Xml.Linq.XElement> は、組み込み XML ドキュメント ( `CDATA` 要素) を解析することで初期化されます。 組み込み XML ドキュメントの宣言時および解析時に、空白が保持されることに注意してください。 これは、生の XML の表示に使用されている <xref:System.Windows.Controls.TextBlock> コントロールに、XML の書式を設定する機能がないためです。
 
- 最後に、28 ～ 34 行目で <xref:System.Windows.DataTemplate> という名前の `BookTemplate` が定義されています。 このテンプレートは、 **[Book List]** UI セクションにエントリを表示するために使用されます。 ここでは、データ バインドおよび LINQ to XML の動的プロパティを使用し、次の代入を通じて書籍の ID と名前を取得します。
+ 最後に、28 ～ 34 行目で <xref:System.Windows.DataTemplate> という名前の `BookTemplate` が定義されています。 このテンプレートは、[Book List] UI セクションにエントリを表示するために使用されます。 **** ここでは、データ バインドおよび LINQ to XML の動的プロパティを使用し、次の代入を通じて書籍の ID と名前を取得します。
 
 ```
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
@@ -239,7 +239,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
 ### <a name="comments"></a>コメント
- WPF UI 要素に関連付けられているイベント ハンドラーの C# ソース コードについては、「 [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)」を参照してください。
+ WPF UI 要素に関連付けられているイベントハンドラーの C# ソースコードについては、「 [L2DBForm.xaml.cs Source code](../designers/l2dbform-xaml-cs-source-code.md)」を参照してください。
 
 ## <a name="see-also"></a>参照
  [チュートリアル: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md) [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

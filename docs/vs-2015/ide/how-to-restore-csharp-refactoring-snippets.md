@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : C# リファクタリング スニペットを復元する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670786"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>方法 : C# リファクタリング スニペットを復元する
@@ -32,7 +32,7 @@ C# リファクタリング操作は、次のディレクトリにあるコー�
 
 1. **[ツール]** メニューの **[コード スニペット マネージャー]** を選びます。
 
-2. **[コード スニペット マネージャー]** ダイアログ ボックスで、 **[言語]** ボックスの一覧の **[Visual C#]** を選びます。
+2. **[コード スニペット マネージャー]** ダイアログ ボックスで、**[言語]** ボックスの一覧の **[Visual C#]** を選びます。
 
      **[リファクタリング]** フォルダーがツリー ビューのフォルダーの一覧に表示されます。
 
@@ -42,7 +42,7 @@ C# リファクタリング操作は、次のディレクトリにあるコー�
 
 2. **[ツール]** メニューの **[コード スニペット マネージャー]** を選びます。
 
-3. **[コード スニペット マネージャー]** ダイアログ ボックスで、 **[言語]** ボックスの一覧の **[Visual C#]** を選びます。
+3. **[コード スニペット マネージャー]** ダイアログ ボックスで、**[言語]** ボックスの一覧の **[Visual C#]** を選びます。
 
 4. **[追加]** をクリックします。 **[コード スニペット ディレクトリ]** ダイアログ ボックスが表示されます。このダイアログ ボックスを使って、コード スニペット マネージャーに追加するディレクトリを検索および指定します。
 
@@ -56,5 +56,5 @@ C# リファクタリング操作は、次のディレクトリにあるコー�
 
 6. **[コード スニペット ディレクトリ]** ダイアログ ボックスの **[開く]** をクリックし、コード スニペット マネージャーの **[OK]** をクリックします。
 
-## <a name="see-also"></a>関連項目
- [ビジュアルC#コードスニペット](../ide/visual-csharp-code-snippets.md)[リファクタリング (C#)](../csharp-ide/refactoring-csharp.md) [コードスニペット](../ide/code-snippets.md)
+## <a name="see-also"></a>参照
+ [Visual C# のコードスニペット](../ide/visual-csharp-code-snippets.md)の [リファクタリング (C#)](../csharp-ide/refactoring-csharp.md) [コードスニペット](../ide/code-snippets.md)

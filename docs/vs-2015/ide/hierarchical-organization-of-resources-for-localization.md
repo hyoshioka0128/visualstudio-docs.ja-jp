@@ -1,4 +1,4 @@
-﻿---
+---
 title: ローカリゼーション用リソースの階層編成 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a79caca18c7813605ff851eea6bda642e6300a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645607"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>ローカリゼーション用リソースの階層編成
@@ -35,7 +35,7 @@ Visual Studio では、ローカライズされたリソース (各カルチャ�
 
 - 階層の最上部には、既定のカルチャ (英語 ("en") など) のフォールバック リソースが配置されています。 これは独自のファイルを持たない唯一のリソースであり、メイン アセンブリに格納されています。
 
-- フォールバック リソースの下には、ニュートラル カルチャのリソースがあります。 ニュートラル カルチャは、言語に関連付けられ、国や地域には関連付けられません。 たとえば、フランス語 ("fr") はニュートラル カルチャです (フォールバック リソースもニュートラル カルチャのリソースですが、特別なものであることに注意してください)。
+- フォールバック リソースの下には、ニュートラル カルチャのリソースがあります。 ニュートラル カルチャは、言語に関連付けられ、国や地域には関連付けられません。 たとえば、フランス語 ("fr") はニュートラル カルチャです  (フォールバック リソースもニュートラル カルチャのリソースですが、特別なものであることに注意してください)。
 
 - これらの下に、具体的なカルチャのリソースがあります。 具体的なカルチャは、言語および国/地域に関連付けられます。 たとえば、カナダ系フランス語 ("fr-CA") は、具体的なカルチャです。
 
@@ -43,11 +43,11 @@ Visual Studio では、ローカライズされたリソース (各カルチャ�
 
   リソースを保存する最も良い方法は、できる限り汎用化することです。 つまり、可能であれば、具体的なカルチャではなくニュートラル カルチャのリソース ファイル内にローカライズされた文字列や画像を保存するということです。 たとえば、ベルギー系フランス語 ("fr-BE") カルチャのリソースがあり、そのすぐ上のリソースが英語のフォールバック リソースであるシステムのアプリケーションがあるとします。このアプリケーションを、別のユーザーがカナダ系フランス語のカルチャで構成されたシステムで開くと、問題が発生する可能性があります。 システムは "fr-CA" のサテライト アセンブリを検索しますが見つからないため、フランス語のリソースではなく、フォールバック リソース (この場合は英語) が含まれるメイン アセンブリを読み込みます。 次の図に、こうした好ましくないシナリオを示します。
 
-  ![特定のリソースのみ](../ide/media/vbspecificresourcesonly.gif "Vb固有の Resourcesonly")
+  ![固有のリソース専用](../ide/media/vbspecificresourcesonly.gif "Vb固有の Resourcesonly")
 
   推奨方法に従って "fr" カルチャのニュートラル リソース ファイル内にできる限り多くのリソースを配置した場合、カナダ系フランス語ユーザーに "fr-BE" カルチャ用のリソースは表示されませんが、文字列はフランス語で表示されます。 次の状況は、この推奨シナリオを示しています。
 
   ![NeutralSpecificResources グラフィック](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
 
 ## <a name="see-also"></a>参照
- ローカライズされた[リソース言語ローカリゼーション](../ide/neutral-resources-languages-for-localization.md)[セキュリティおよびローカライズされたサテライトアセンブリ](../ide/security-and-localized-satellite-assemblies.md)[アプリケーションのローカライズアプリケーション](../ide/localizing-applications.md)の[グローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)[方法: Windows フォームのカルチャと UI カルチャを設定するグローバリゼーション](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)[方法: ASP.NET Web ページのグローバリゼーション用のカルチャおよび UI カルチャを設定する](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ ローカライズされた[リソース言語の](../ide/neutral-resources-languages-for-localization.md)ローカライズおよびローカライズされた[サテライトアセンブリ](../ide/security-and-localized-satellite-assemblies.md)のローカライズ[アプリケーション](../ide/localizing-applications.md)の[グローバル化とアプリケーション](../ide/globalizing-and-localizing-applications.md)のローカライズ方法[: Windows フォームグローバリゼーション用のカルチャおよび ui カルチャを設定](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)する[方法: カルチャと ui カルチャを設定する ASP.NET Web ページのグローバリゼーション](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

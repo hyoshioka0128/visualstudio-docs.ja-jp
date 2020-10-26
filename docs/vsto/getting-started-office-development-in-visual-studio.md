@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986064"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>はじめに (Visual Studio での Office 開発)
@@ -27,7 +27,7 @@ ms.locfileid: "72986064"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Visual Studio での Office ソリューションの開発に必要な背景情報を示します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "72986064"
 
  一般的な問題の解決に役立つトピックへのリンクを示します。
 
-## <a name="related-sections"></a>関連項目
+## <a name="related-sections"></a>関連セクション
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
 
  サンプル アプリケーション、および一般的なタスクの詳細な手順を説明するトピックへのリンクを示します。
@@ -88,4 +88,4 @@ ms.locfileid: "72986064"
 
  Office ソリューションをユーザーが使用できるようにする方法についての情報を提供し、配置方法を選択するときやセキュリティを設定するときに考慮する主な問題点について説明します。
 
-- [技術記事と視覚的な操作方法の Visual Studio Tools for Office](/previous-versions/office/developer/office-2007/bb871648(v=office.12))Visual Studio を使用して作成された Office ソリューションに関するビデオおよび技術記事へのリンクを示します。
+- [技術記事と視覚的な操作方法の Visual Studio Tools for Office](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Visual Studio を使用して作成された Office ソリューションに関するビデオおよび技術記事へのリンクを示します。

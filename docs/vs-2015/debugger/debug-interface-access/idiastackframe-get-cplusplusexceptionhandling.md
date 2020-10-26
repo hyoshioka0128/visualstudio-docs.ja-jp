@@ -1,5 +1,5 @@
 ---
-title: Idiastackframe::get_cplusplusexceptionhandling |Microsoft Docs
+title: 'IDiaStackFrame:: get_cplusplusExceptionHandling |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f400135fab95925384947488b5582b2f3d996928
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190593"
 ---
-# <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
+# <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-C++ 例外処理は、有効であることを示すフラグを取得します。  
+C++ 例外処理が有効かどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,16 +35,16 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`場合C++例外処理はこのフレームに対して有効で、それ以外の`FALSE`します。  
+ 入出力 `TRUE` このフレームに対して C++ 例外処理が有効になっている場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`プロパティがサポートされていない場合。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`プロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="remarks"></a>Remarks  
- C++ 例外処理は、構造化と同じホストまたはシステム例外の処理ではありません。  
+## <a name="remarks"></a>注釈  
+ C++ 例外処理は、構造化例外処理またはシステム例外処理と同じではありません。  
   
- 例外処理が有効で構成されている場合を決定、呼び出し、 [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)メソッド。  
+ 構造化例外処理が有効かどうかを判断するには、 [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) メソッドを呼び出します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)

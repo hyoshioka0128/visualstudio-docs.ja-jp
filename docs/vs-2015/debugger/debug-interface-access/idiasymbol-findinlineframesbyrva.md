@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByRVA |Microsoft Docs
+title: 'IDiaSymbol:: findInlineFramesByRVA |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9fd6e4b8f579500552205aabd280c2d2e79e83
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149895"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-により、クライアントは、すべての指定された相対仮想アドレス (RVA) でのインライン フレームを反復処理する列挙体を取得します。  
+指定した相対仮想アドレス (RVA) のすべてのインラインフレームをクライアントが反復処理できるようにする列挙体を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -33,15 +33,15 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
   
 #### <a name="parameters"></a>パラメーター  
  `rva`  
- [in]として、RVA アドレスを指定します。  
+ からアドレスを RVA として指定します。  
   
  `ppResult`  
- [out]保持する`IDiaEnumSymbols`取得されるフレームの一覧を含むオブジェクト。  
+ 入出力 `IDiaEnumSymbols` 取得されたフレームの一覧を含むオブジェクトを保持します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)   

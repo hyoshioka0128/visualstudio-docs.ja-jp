@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString |Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsString |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d50057570b5b067447321f975d4d33da8aa3de43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193441"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-指定した文字列からプロパティの値を設定します。  
+指定された文字列からプロパティの値を設定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,21 +44,21 @@ int SetValueAsString ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pszValue`  
- [in]設定する値を含む文字列。  
+ から設定する値を格納している文字列。  
   
  `nRadix`  
- [in]任意の数値情報を解釈するときに使用する基数。 これは、自動的に基数を判断しようとする場合は 0 です。  
+ から数値情報の解釈に使用される基数。 0を指定すると、基数を自動的に決定できます。  
   
  `dwTimeout`  
- [in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。  
+ からこのメソッドから制御が戻るまでに待機する最大時間をミリ秒単位で指定します。 `INFINITE`無期限に待機するには、を使用します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`; エラー コードを返します。 次の表では、使用可能なその他の値を示します。  
+ 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 次の表に、その他の使用可能な値を示します。  
   
 |値|説明|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|文字列をプロパティの値に変換できませんでしたまたはプロパティの値を設定できませんでした。|  
-|`E_SETVALUE_VALUE_IS_READONLY`|プロパティは読み取り専用です。|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|文字列をプロパティ値に変換できなかったか、プロパティ値を設定できませんでした。|  
+|`E_SETVALUE_VALUE_IS_READONLY`|このプロパティは読み取り専用です。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: ヘルプ コンテンツ マネージャーのオーバーライド | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 70c0044a0436dcf27a3b087b3f11a5f759824735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645561"
 ---
 # <a name="help-content-manager-overrides"></a>ヘルプ コンテンツ マネージャーのオーバーライド
@@ -32,5 +32,5 @@ ms.locfileid: "72645561"
 |ネットワーク共有上のローカル コンテンツ ストアを指定する|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.2\Catalogs\VisualStudio11|LocationPath="*ContentStoreNetworkShare*"|
 |Visual Studio 機能の最初の起動時にコンテンツのインストールを無効にする。|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (64 ビット コンピューターの場合)\Microsoft\VisualStudio\14.0\Help|DisableFirstRunHelpSelection: Visual Studio の最初の開始時に構成されるヘルプ機能を無効にするには 1 を設定します。|
 
-## <a name="see-also"></a>関連項目
- [ヘルプ ビューアーの管理者ガイド](../ide/help-viewer-administrator-guide.md)
+## <a name="see-also"></a>参照
+ [ヘルプ ビューアー の管理者ガイド](../ide/help-viewer-administrator-guide.md)

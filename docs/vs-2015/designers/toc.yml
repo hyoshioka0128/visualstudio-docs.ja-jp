@@ -46,7 +46,7 @@
                   href: pen-tool-modifier-keys-in-blend.md
                 - name: '[個別選択] ツールの修飾キー'
                   href: direct-selection-tool-modifier-keys-in-blend.md
-            - name: ユーザー補助製品およびサービス
+            - name: アクセシビリティ製品およびサービス
               href: accessibility-products-and-services-blend.md
         - name: Visual Studio および Blend for Visual Studio の XAML デザイナーのキーボード ショートカット
           href: keyboard-shortcuts-for-xaml-designer.md
@@ -88,17 +88,17 @@
                       items:
                         - name: XElement クラスの動的プロパティ
                           href: xelement-class-dynamic-properties.md
-                        - name: Attribute
+                        - name: 属性
                           href: attribute-xelement-dynamic-property.md
                         - name: 要素
                           href: element-xelement-dynamic-property.md
-                        - name: 要素
+                        - name: Elements
                           href: elements-xelement-dynamic-property.md
                         - name: Descendants
                           href: descendants-xelement-dynamic-property.md
-                        - name: 値
+                        - name: '[値]'
                           href: value-xelement-dynamic-property.md
-                        - name: xml
+                        - name: Xml
                           href: xml-xelement-dynamic-property.md
                 - name: LINQ to XML を使用した WPF のデータ バインディングの例
                   items:

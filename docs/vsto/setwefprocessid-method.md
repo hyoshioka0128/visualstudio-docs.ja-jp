@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537333"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId メソッド
@@ -37,7 +37,7 @@ HRESULT SetWefProcessId(
 ## <a name="return-value"></a>戻り値
  メソッドが正常に完了したかどうかを示す HRESULT 値。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  このメソッドは、WEF コンテンツプロセスを作成した後、WEF コンテンツを実行する前に呼び出す必要があります。
 
  開発環境で、WEF コンテンツプロセスにデバッガーをアタッチする場合は、このメソッドの実装でこの操作を実行する必要があります。

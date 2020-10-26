@@ -1,4 +1,4 @@
-﻿---
+---
 title: テンプレート パラメーター | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646807"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
@@ -123,5 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)

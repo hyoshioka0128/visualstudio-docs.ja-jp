@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
-ms.translationtype: MT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532368"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>ドメイン固有言語ツールの概要
-Visual Studio でホストされているドメイン固有言語ツール (DSL ツール) を使用すると、ドメイン固有言語を設計し、その言語に基づくモデルを作成するためにユーザーが必要とするすべてのものを生成することができます。
+Visual Studio でホストされるドメイン固有言語ツール (DSL ツール) を使用すると、ドメイン固有言語を設計し、その言語に基づくモデルを作成するためにユーザーに必要なすべてのものを生成できます。
 
  DSL ツールには次のツールが含まれています。
 
@@ -48,7 +48,7 @@ Visual Studio でホストされているドメイン固有言語ツール (DSL 
 
   詳細については、「[ドメイン固有言語ソリューション テンプレートの選択](../modeling/choosing-a-domain-specific-language-solution-template.md)」を参照してください。
 
-  ウィザードによって、次のプロジェクトを含む Visual Studio ソリューションが作成されます。
+  ウィザードにより、次のプロジェクトを含む Visual Studio ソリューションが作成されます。
 
 - Dsl
 
@@ -56,7 +56,7 @@ Visual Studio でホストされているドメイン固有言語ツール (DSL 
 
 - **DslPackage**
 
-   DslPackage プロジェクトは、言語ツールを Visual Studio と統合する方法を決定します。
+   DslPackage プロジェクトでは、言語ツールを Visual Studio と統合する方法を決定します。
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL ツールのグラフィカル インターフェイス
  DSL ツールのグラフィカル インターフェイスを使用して、ドメイン固有言語に要素とリレーションシップを追加することができます。 要素を追加後、要素をシェイプにマッピングし、色をカスタマイズして、デコレーターを追加することによって、要素の外観を定義できます。 要素をツールボックスに追加することもできます。
@@ -70,9 +70,9 @@ Visual Studio でホストされているドメイン固有言語ツール (DSL 
  モデルの動作を改善するために、また使用する言語に制約を定義するために、追加のコードを記述できます。 必要な場合は、テキスト テンプレートを変更することによって、大幅な変更を行うことができます。
 
 ## <a name="distributing-your-dsl-solution"></a>DSL ソリューションの配布
- DSL ツールは、Visual Studio でホストされているパッケージを生成します。 パッケージにはツールボックス、DSL エクスプローラー、およびその他の UI 要素が表示され、ユーザーは、ドメイン固有言語を使用してモデルを作成できます。
+ DSL ツールによって、Visual Studio でホストされるパッケージが生成されます。 パッケージにはツールボックス、DSL エクスプローラー、およびその他の UI 要素が表示され、ユーザーは、ドメイン固有言語を使用してモデルを作成できます。
 
- Visual Studio で DSL ツールソリューションをビルドして実行すると、Visual Studio の2番目のインスタンスによって、ドメイン固有言語がその言語のユーザーにどのように表示されるかがわかります。 すべてが正常に動作することを確認した後、DslPackage プロジェクトのビルド フォルダーにある `.vsix` ファイルを配布できます。 このファイルは、他のコンピューターに Visual Studio 拡張機能として DSL をインストールするために使用できます。  詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
+ Visual Studio で DSL ツール ソリューションをビルドして実行すると、Visual Studio の 2 番目のインスタンスに、ドメイン固有言語のユーザーに対して言語がどのように表示されるかが示されます。 すべてが正常に動作することを確認した後、DslPackage プロジェクトのビルド フォルダーにある `.vsix` ファイルを配布できます。 このファイルは、他のコンピューター上に Visual Studio 拡張機能として DSL をインストールするために使用できます。  詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

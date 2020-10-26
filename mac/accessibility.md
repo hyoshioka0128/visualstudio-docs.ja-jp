@@ -1,17 +1,17 @@
 ---
 title: ユーザー補助
 description: Visual Studio for Mac のアクセシビリティ機能の概要と、それらを有効にする方法について説明します。
-author: alanjclark
+author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
-ms.openlocfilehash: d50f92e6de777205f1289f710b27f4a719b61eef
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: d082cd5efbb41c6f20bc0abb8e5de9b3a25186ba
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939063"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88800191"
 ---
 # <a name="accessibility"></a>ユーザー補助
 

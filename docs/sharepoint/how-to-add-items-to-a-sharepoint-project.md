@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014700"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>方法: SharePoint プロジェクトに項目を追加する
@@ -29,11 +30,11 @@ ms.locfileid: "86014700"
 
 3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択し、[**新しい項目の追加**] ダイアログボックスを表示します。
 
-4. [**インストールされたテンプレート**] の一覧で [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
+4. [ **インストールされたテンプレート** ] の一覧で [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
 5. プロジェクト項目テンプレートの一覧で、テンプレートを選択します。
 
-6. [**名前**] テキストボックスに名前を入力し、[ **OK** ] をクリックします。
+6. [ **名前** ] テキストボックスに名前を入力し、[ **OK** ] をクリックします。
 
 ### <a name="to-add-an-existing-project-item-to-a-sharepoint-solution"></a>既存のプロジェクトアイテムを SharePoint ソリューションに追加するには
 
@@ -43,7 +44,7 @@ ms.locfileid: "86014700"
 
 3. メニューバーで、[**プロジェクト**] [既存項目の追加] の順に選択し  >  **Add Existing Item** 、[**既存項目の追加**] ダイアログボックスを表示します。
 
-4. 追加する項目が含まれているフォルダーを参照して選択し、[**追加**] ボタンをクリックします。
+4. 追加する項目が含まれているフォルダーを参照して選択し、[ **追加** ] ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)

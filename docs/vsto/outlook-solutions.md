@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985673"
 ---
 # <a name="outlook-solutions"></a>Outlook ソリューション
@@ -35,12 +35,12 @@ ms.locfileid: "72985673"
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Outlook VSTO アドインプロジェクトを作成する
  Outlook プロジェクトを作成するには、 **[新しいプロジェクト]** ダイアログ ボックスにある **[Outlook アドイン]** プロジェクト テンプレートを使用します。 このテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。
 
- VSTO アドインプロジェクトを作成する方法の詳細については、「[方法: Visual Studio で Office プロジェクトを作成](../vsto/how-to-create-office-projects-in-visual-studio.md)する」を参照してください。 プロジェクトテンプレートの詳細については、「 [Office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。
+ VSTO アドインプロジェクトを作成する方法の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成](../vsto/how-to-create-office-projects-in-visual-studio.md)する」を参照してください。 プロジェクトテンプレートの詳細については、「 [Office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。
 
 ## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO アドインのプログラミングモデル
  Outlook VSTO アドイン プロジェクトを作成すると、 `ThisAddIn`と呼ばれる、ソリューションの基礎となるクラスが Visual Studio によって生成されます。 このクラスは、コードを記述する際の開始点となり、Outlook のオブジェクト モデルを VSTO アドインに公開します。
 
- `ThisAddIn` クラスおよび VSTO アドインで使用できるその他の機能の詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
+ `ThisAddIn`クラスおよび Vsto アドインで使用できるその他の機能の詳細については、「[プログラム vsto アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Outlook オブジェクトモデルを使用した Outlook の自動化
  Outlook オブジェクト モデルでは、Outlook の自動化に使用できる型が多数公開されています。 それらの型によって、次のような一般的なタスクを実行するコードを作成できます。

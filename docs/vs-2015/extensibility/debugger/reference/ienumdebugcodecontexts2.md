@@ -13,53 +13,53 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f36da19e6bc47d70010dd96a26256537803ccb29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551619"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスは、または特定のプログラムまたはドキュメントをデバッグ セッションと関連付けられたコード コンテキストを列挙します。  
+このインターフェイスは、デバッグセッション、または特定のプログラムまたはドキュメントに関連付けられたコードコンテキストを列挙します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEnumDebugCodeContexts2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジン (DE) は、プログラムでは、特定のテキストの位置のコード コンテキストの一覧または特定のドキュメント コンテキストのコード コンテキストの一覧を表すには、このインターフェイスを実装します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグエンジン (DE) は、プログラム内の特定のテキスト位置のコードコンテキストの一覧、または特定のドキュメントコンテキストのコードコンテキストのリストを表すために、このインターフェイスを実装します。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)プログラムのソース ドキュメント内の特定のテキストの位置のコード コンテキストの一覧を表す、このインターフェイスを取得します。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)を呼び出して、プログラムのソースドキュメント内の特定のテキスト位置のコードコンテキストの一覧を表すこのインターフェイスを取得します。  
   
- 呼び出す[EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)特定のソース ドキュメント内のすべてのコード コンテキストのリストを表す、このインターフェイスを取得します。  
+ [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)を呼び出して、特定のソースドキュメント内のすべてのコードコンテキストのリストを表すこのインターフェイスを取得します。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IEnumDebugCodeContexts2`します。  
+ 次の表に、のメソッドを示し `IEnumDebugCodeContexts2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[次へ](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|指定された数の列挙体シーケンス内のコードのコンテキストを取得します。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|指定された数の列挙体シーケンス内のコードのコンテキストをスキップします。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|列挙子では、コードのコンテキストの数を取得します。|  
+|[次へ](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|列挙シーケンス内の指定された数のコードコンテキストを取得します。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|列挙シーケンス内の指定された数のコードコンテキストをスキップします。|  
+|[リセット](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|列挙シーケンスを先頭にリセットします。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|列挙子内のコードコンテキストの数を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- Visual Studio 呼び出し[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)コード コンテキストの一覧を設定、ユーザーが選択できる場合に、次のステートメントを設定またはソース ファイルの逆アセンブルを表示します。 複数のコード コンテキストには、たとえば、C++ スタイルのテンプレートの複数のインスタンスがある場合が発生します。  
+## <a name="remarks"></a>注釈  
+ Visual Studio は、 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) を呼び出して、次のステートメントを設定するとき、またはソースファイルの逆アセンブリを表示するときに、ユーザーが選択できるコードコンテキストの一覧を設定します。 複数のコードコンテキストが発生する可能性があります。たとえば、C++ スタイルのテンプレートの複数のインスタンスがある場合です。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>参照  
+ [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)

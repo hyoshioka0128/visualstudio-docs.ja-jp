@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0097692c77d0b472c808876e9017b514b6416fc6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538074"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>方法: プログラムによって Word の表に行と列を追加する
@@ -37,7 +37,7 @@ ms.locfileid: "85538074"
 > - Word 2010 ドキュメント
 > - Word 2010 テンプレート
 >
->   このタスクを他の種類のプロジェクトで実行する場合は、**そのアセンブリへ**の参照を追加する必要があります。その後、そのアセンブリのクラスを使用して、行と列をテーブルに追加する必要があります。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md)」および「 [Word 2010 プライマリ相互運用機能アセンブリリファレンス](office-primary-interop-assemblies.md)」を参照してください。
+>   このタスクを他の種類のプロジェクトで実行する場合は、 **そのアセンブリへ** の参照を追加する必要があります。その後、そのアセンブリのクラスを使用して、行と列をテーブルに追加する必要があります。 詳細については、「 [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md) 」および「 [Word 2010 プライマリ相互運用機能アセンブリリファレンス](office-primary-interop-assemblies.md)」を参照してください。
 
 ### <a name="to-add-a-row-to-a-table"></a>表に行を追加するには
 
@@ -59,7 +59,7 @@ ms.locfileid: "85538074"
 > [!IMPORTANT]
 > このコードは、Word VSTO アドイン テンプレートを使用して作成したプロジェクトでのみ実行されます。
 >
-> このタスクを他の種類のプロジェクトで実行する場合は、**そのアセンブリへ**の参照を追加する必要があります。その後、そのアセンブリのクラスを使用して、行と列をテーブルに追加する必要があります。 詳細については、「[方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md)」および「 [Word 2010 プライマリ相互運用機能アセンブリリファレンス](office-primary-interop-assemblies.md)」を参照してください。
+> このタスクを他の種類のプロジェクトで実行する場合は、 **そのアセンブリへ** の参照を追加する必要があります。その後、そのアセンブリのクラスを使用して、行と列をテーブルに追加する必要があります。 詳細については、「 [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](how-to-target-office-applications-through-primary-interop-assemblies.md) 」および「 [Word 2010 プライマリ相互運用機能アセンブリリファレンス](office-primary-interop-assemblies.md)」を参照してください。
 
 ### <a name="to-add-a-row-to-a-table"></a>表に行を追加するには
 

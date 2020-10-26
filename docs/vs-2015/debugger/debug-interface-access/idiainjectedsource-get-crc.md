@@ -1,5 +1,5 @@
 ---
-title: Idiainjectedsource::get_crc |Microsoft Docs
+title: 'IDiaInjectedSource:: get_crc |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb62e5ad1d67f0e7bc85692935e64f85eb1c72df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202206"
 ---
-# <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
+# <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ソース コードのバイト数から計算された巡回冗長検査 (CRC) を取得します。  
+ソースコードのバイトから計算された巡回冗長検査 (CRC) を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,10 +35,10 @@ HRESULT get_crc ( 
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します、CRC は、ソース コードのバイト数から計算されます。  
+ 入出力ソースコードのバイトから計算された CRC を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合、このプロパティはサポートされていません。 それ以外の場合はエラー コードを返します。  
+ 正常に終了した場合は、`S_OK` を返します。 `S_FALSE`このプロパティがサポートされていない場合は、を返します。 それ以外の場合はエラー コードを返します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

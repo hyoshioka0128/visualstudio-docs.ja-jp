@@ -17,71 +17,71 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690606"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Just-In-Time Debugging in Visual Studio (Visual Studio での Just-In-Time デバッグ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ジャストイン タイム デバッグ Visual Studio が自動的に起動 Visual Studio の外部を実行しているアプリケーションで例外またはクラッシュが発生したとき。 これにより、Visual Studio が実行されていない場合に、アプリケーションをテストし、問題が発生したときに、Visual Studio でデバッグを開始することができます。
+Just-in-time デバッグは、Visual Studio の外部で実行されているアプリケーションで例外またはクラッシュが発生した場合に、Visual Studio を自動的に起動します。 これにより、Visual Studio が実行されていないときにアプリケーションをテストし、問題が発生したときに Visual Studio でのデバッグを開始できます。
 
-ジャストイン タイムのデバッグは、Windows デスクトップ アプリに対して機能します。 Windows ユニバーサル アプリの場合は機能しません、ビジュアライザーなどのネイティブ アプリケーションでホストされているマネージ コードは機能しません。
+Just-In-Time デバッグは、Windows デスクトップ アプリで使用できます。 Windows ユニバーサルアプリでは機能しません。ビジュアライザーなどのネイティブアプリケーションでホストされているマネージコードでは機能しません。
 
-## <a name="BKMK_Scenario"></a> 時間内のみでしたがアプリを実行しようとするときにデバッガー ダイアログ ボックスが表示されますか?
+## <a name="did-the-just-in-time-debugger-dialog-box-appear-when-trying-to-run-an-app"></a><a name="BKMK_Scenario"></a> アプリを実行しようとすると、[Just-in-time デバッガー] ダイアログボックスが表示されますか?
 
-表示されたら、Visual Studio でジャスト イン タイムを行う必要がありますアクション デバッガー ダイアログ ボックスでは、何を行うに依存します。
+[Visual Studio Just-in-time デバッガー] ダイアログボックスが表示されたときに実行する操作は、実行しようとしている操作によって異なります。
 
-#### <a name="if-you-want-to-get-rid-of-the-dialog-box-and-just-run-the-app-normally"></a>ダイアログ ボックスを取り除くだけしたい場合、アプリを通常どおり実行します。
+#### <a name="if-you-want-to-get-rid-of-the-dialog-box-and-just-run-the-app-normally"></a>ダイアログボックスを削除して、アプリを通常どおり実行する場合
 
-1. (高度なユーザー)Visual Studio のインストールがある (またはが以前にインストールおよび削除する) 場合、[デバッグを使用しないジャスト イン タイム](#BKMK_Enabling)再度アプリを実行しようとします。
+1. (上級ユーザー)Visual Studio がインストールされている (または、以前にインストールして削除した) 場合は、 [just-in-time デバッグを無効](#BKMK_Enabling) にし、アプリをもう一度実行してみてください。
 
-2. Internet Explorer で web アプリを実行する場合は、スクリプトのデバッグを無効にします。
+2. Internet Explorer で web アプリを実行している場合は、スクリプトのデバッグを無効にします。
 
-    [インターネット オプション] ダイアログ ボックスでスクリプトのデバッグを無効にします。 これからアクセスすることができます、**コントロール パネルの** / **ネットワークとインターネット** / **インターネット オプション**(正確な手順は、バージョンに依存Windows および Internet Explorer を使用)。
+    [インターネットオプション] ダイアログボックスで、スクリプトのデバッグを無効にします。 これには、**コントロールパネル**  /  の [**ネットワークと**インターネット] のオプションからアクセスでき  /  **Internet Options**ます (正確な手順は、Windows および internet Explorer のバージョンによって異なります)。
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
-3. エラーを確認したところ、web ページを再度開きます。 これで問題が解決しない場合は、問題を解決する web アプリの所有者にお問い合わせください。
+3. エラーが検出された web ページを再度開きます。 これで問題が解決しない場合は、web アプリの所有者に連絡して問題を解決してください。
 
-4. 別の種類の Windows アプリを実行している場合は、エラーを修正してから、アプリの固定のバージョンを再インストール、アプリの所有者に連絡する必要があります。
+4. 別の種類の Windows アプリを実行している場合は、アプリの所有者に連絡してエラーを修正し、修正されたバージョンのアプリを再インストールする必要があります。
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-advanced-users"></a>解決する方法 (ユーザー詳細) エラーをデバッグする場合
+#### <a name="if-you-want-to-fix-or-debug-the-error-advanced-users"></a>エラーを修正またはデバッグする場合 (上級ユーザー)
 
-- 必要があります[Visual Studio がインストールされている](https://visualstudio.microsoft.com/vs/older-downloads/)デバッグしようとして、エラーに関する詳細情報を表示します。 参照してください[を使用して JIT](#BKMK_Using_JIT)詳しい手順についてはします。 エラーを解決することはできません、アプリを修正する場合は、エラーを解決するのには、アプリの所有者に問い合わせてください。
+- エラーに関する詳細情報を表示し、デバッグを試行するには、 [Visual Studio がインストールされ](https://visualstudio.microsoft.com/vs/older-downloads/) ている必要があります。 詳細については、「 [JIT の使用](#BKMK_Using_JIT) 」を参照してください。 エラーを解決してアプリを修正できない場合は、アプリの所有者に連絡してエラーを解決してください。
 
-## <a name="BKMK_Enabling"></a> 有効または無効にするジャスト イン タイムのデバッグ
- 有効にしたり、時にだけ、Visual Studio からデバッグを無効にする**ツール/オプション** ダイアログ ボックス。
+## <a name="enable-or-disable-just-in-time-debugging"></a><a name="BKMK_Enabling"></a> Just-in-time デバッグを有効または無効にする
+ Just-in-time デバッグを有効または無効にするには、Visual Studio の [ツール] の [ **オプション** ] ダイアログボックスを使用します。
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Just-In-Time デバッグの有効/無効を切り替えるには
 
 1. Visual Studio を開きます。 **[ツール]** メニューの **[オプション]** をクリックします。
 
-2. **オプション**ダイアログ ボックスで、**デバッグ**フォルダー。
+2. [ **オプション** ] ダイアログボックスで、[ **デバッグ** ] フォルダーを選択します。
 
-3. **デバッグ**フォルダーを選択、**ジャスト イン タイム**ページ。
+3. [ **デバッグ** ] フォルダーで、[ **just-in-time** ] ページを選択します。
 
-4. **Just-In-Time を有効にするは、これらの種類のコードのデバッグ**ボックスで、選択するか、関連するプログラムの種類をオフにします。**マネージ**、**ネイティブ**、または**スクリプト**します。
+4. [ **これらの種類のコードの just-in-time デバッグを有効にする** ] ボックスで、関連するプログラムの種類 ([ **マネージ**]、[ **ネイティブ**]、または [ **スクリプト**]) をオンまたはオフにします。
 
     Just-In-Time デバッグを有効にした後で無効に切り替えるには、管理者特権で実行する必要があります。 Just-In-Time デバッグを有効にするとレジストリ キーが設定され、そのキーを変更するには管理者特権が必要になります。
 
 5. **[OK]** をクリックします。
 
-   Visual Studio がコンピューターからアンインストールされた後でも、Just-In-Time デバッグが有効になっている場合があります。 Visual Studio がインストールされていない場合、時にだけ、Visual Studio からデバッグを無効にすることはできません**オプション** ダイアログ ボックス。 その場合は、Windows レジストリを編集して Just-In-Time デバッグを無効にできます。
+   Visual Studio がコンピューターからアンインストールされた後でも、Just-In-Time デバッグが有効になっている場合があります。 Visual Studio がインストールされていない場合は、Visual Studio の [ **オプション** ] ダイアログボックスから just-in-time デバッグを無効にすることはできません。 その場合は、Windows レジストリを編集して Just-In-Time デバッグを無効にできます。
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>レジストリを編集して Just-In-Time デバッグを無効にするには
 
-1. **開始** メニューの検索と実行 `regedit.exe`
+1. [ **スタート** ] メニューで、を検索して実行します。 `regedit.exe`
 
-2. **レジストリ エディター**ウィンドウを見つけて次のレジストリ エントリを削除します。
+2. **レジストリエディター**ウィンドウで、次のレジストリエントリを見つけて削除します。
 
     - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    - Hkey_local_machine \software\microsoft\\します。NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3. お使いのコンピューターで 64 ビットのオペレーティング システムが実行されている場合も、次のレジストリ エントリを削除します。
+3. コンピューターで64ビットのオペレーティングシステムが実行されている場合は、次のレジストリエントリも削除します。
 
     - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
@@ -89,20 +89,20 @@ ms.locfileid: "65690606"
 
 4. 誤って他のレジストリ キーを削除または変更しないように注意してください。
 
-5. 閉じる、**レジストリ エディター**ウィンドウ。
+5. **[レジストリ エディター]** ウィンドウを閉じます。
 
 > [!NOTE]
-> Just ポイントイン タイム サーバー側のアプリのデバッグを無効にしようとして、次の手順は、問題を解決しない場合は、IIS のアプリケーション設定でサーバー側のデバッグをオフに、再試行してください。
+> サーバー側アプリの Just-in-time デバッグを無効にしようとしても、これらの手順で問題が解決しない場合は、IIS アプリケーション設定でサーバー側のデバッグを無効にして、再試行してください。
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Windows フォームの Just-In-Time デバッグを有効化するには
 
-1. 既定では、Windows フォーム アプリケーションには、プログラムが正常な状態に戻れば続行できるように、トップ レベルの例外ハンドラーが用意されています。 たとえば、Windows フォーム アプリケーションでは、未処理の例外をスローする場合は、次のようなダイアログ ボックスが表示されます。
+1. 既定では、Windows フォーム アプリケーションには、プログラムが正常な状態に戻れば続行できるように、トップ レベルの例外ハンドラーが用意されています。 たとえば、Windows フォームアプリケーションがハンドルされない例外をスローした場合、次のようなダイアログが表示されます。
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
-     ジャスト イン タイムを有効にする Windows フォーム アプリケーションのデバッグには、次の手順を実行する必要があります。
+     Windows フォームアプリケーションの Just-in-time デバッグを有効にするには、次の追加手順を実行する必要があります。
 
-2. 設定、`jitDebugging`値を`true`で、 `system.windows.form` 、machine.config のセクションまたは *\<アプリケーション名 >* 。 exe.config ファイル。
+2. `jitDebugging` `true` `system.windows.form` machine.config または.exe.config ファイルのセクションで、値をに設定し *\<application name>* ます。
 
     ```
     <configuration>
@@ -116,20 +116,20 @@ ms.locfileid: "65690606"
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
     ```
 
-     詳細については、「 <xref:System.Diagnostics.DebuggableAttribute> 」を参照してください。
+     詳細については、「<xref:System.Diagnostics.DebuggableAttribute>」を参照してください。
 
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">使用して、ジャストイン タイムのデバッグ
- このセクションでは、実行可能ファイルは例外をスローするときの動作を示します。
+## <a name="a-namebkmk_using_jituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Just-in-time デバッグを使用する
+ このセクションでは、実行可能ファイルが例外をスローした場合の処理について説明します。
 
- Visual Studio をインストールする次の手順が必要です。 Visual Studio を持っていない場合は、無料でダウンロードできます、 [Visual Studio 2015 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)します。
+ これらのステップを実行するには、Visual Studio をインストールする必要があります。 Visual Studio をお持ちでない場合は、無料の [Visual studio 2015 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/)をダウンロードできます。
 
  Visual Studio をインストールすると、Just-In-Time デバッグは既定で有効になります。
 
- このセクションの目的で、c# コンソール アプリで行うをスローする Visual Studio、<xref:System.NullReferenceException>します。
+ このセクションでは、Visual Studio でをスローする C# コンソールアプリを作成 <xref:System.NullReferenceException> します。
 
- Visual Studio で c# コンソール アプリを作成します (**ファイル/新しい/プロジェクト/Visual c#/コンソール アプリケーション**) という名前の**ThrowsNullException**します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル。単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)です。
+ Visual Studio で、 **ThrowsNullException**という名前の C# コンソールアプリ ([ファイル]、[新規]、[プロジェクト]、[Visual C#]、[**コンソールアプリケーション**]) を作成します。 Visual Studio でのプロジェクトの作成の詳細については、「 [チュートリアル: 簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)」を参照してください。
 
- Visual Studio でプロジェクトを開いたら、Program.cs ファイルを開きます。 Main() メソッドをコンソールには行を表示し、NullReferenceException をスローし、次のコードに置き換えます。
+ プロジェクトが Visual Studio で開いたら、Program.cs ファイルを開きます。 Main() メソッドを次のコードで置き換えます。これは、行をコンソールに出力して、NullReferenceException をスローします。
 
 ```csharp
 static void Main(string[] args)
@@ -140,49 +140,49 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
-> この手順で作業するために、[リリース構成](../debugger/how-to-set-debug-and-release-configurations.md)をオフにする必要がある[マイ コードのみ](../debugger/just-my-code.md)します。 Visual Studio で、次のようにクリックします。**ツール/オプション**します。 **オプション**ダイアログ ボックスで、**デバッグ**します。 チェックを外し**マイ コードのみを有効にする**します。
+> この手順を [リリース構成](../debugger/how-to-set-debug-and-release-configurations.md)で使用するには、 [マイコードのみ](../debugger/just-my-code.md)をオフにする必要があります。 Visual Studio で、[ **ツール**]、[オプション] の順にクリックします。 [ **オプション** ] ダイアログボックスで、[ **デバッグ**] を選択します。 [ **Enable マイコードのみ**] からチェックを削除します。
 
- ソリューションをビルド (Visual Studio で、次のように選択します。**構築/ソリューションのリビルド**)。 デバッグまたはリリース構成のいずれかを選択できます。 ビルド構成の詳細については、「[ビルド構成について](../ide/understanding-build-configurations.md)」を参照してください。
+ ソリューションをビルドします (Visual Studio で、[ **ソリューションのビルド/リビルド**] を選択します)。 デバッグ構成またはリリース構成のいずれかを選択できます。 ビルド構成の詳細については、「 [ビルド構成](../ide/understanding-build-configurations.md)について」を参照してください。
 
- ビルド プロセスには、実行可能ファイルの ThrowsNullException.exe が作成されます。 C# プロジェクトを作成したフォルダーの下で見つかります。 **...\ThrowsNullException\ThrowsNullException\bin\Debug**または **...\ThrowsNullException\ThrowsNullException\bin\Release**します。
+ ビルドプロセスでは、ThrowsNullException.exe 実行可能ファイルが作成されます。 C# プロジェクトを作成したフォルダーの下に、 **. ..\ThrowsNullException\ThrowsNullException\bin\Debug** または **. ..\ThrowsNullException\ThrowsNullException\bin\Release**というファイルがあります。
 
- ThrowsNullException.exe をダブルクリックします。 このようなコマンド ウィンドウが表示されます。
+ ThrowsNullException.exe をダブルクリックします。 次のようなコマンドウィンドウが表示できます。
 
  ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
 
- 数秒後に、後に、エラー ウィンドウが表示されます。
+ 数秒後に、エラーウィンドウが表示されます。
 
  ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")
 
- クリックしてしないでください**キャンセル**! 数秒後に、2 つのボタンが表示されるはず**デバッグ**と**プログラムの終了**します。 クリックして**デバッグ**します。
+ [ **キャンセル**] をクリックしないでください。 数秒後に、[ **デバッグ** ] と [ **プログラムの終了**] の2つのボタンが表示されます。 [ **デバッグ**] をクリックします。
 
 > [!CAUTION]
-> アプリケーションが信頼できないコードが含まれる場合と、セキュリティ警告 ダイアログ ボックスが表示されます。 このダイアログ ボックスでは、デバッグを開始するかどうかを選択できます。 デバッグを開始する前に、コードを信頼できるかどうかを判断します。 このコードは、自分で作成したコードですか。 このコードの作成者は信頼できますか。 アプリケーションをリモート コンピューター上で実行している場合、プロセスの名前を識別できますか。 アプリケーションをローカルに実行している場合でも、それが必ずしもコードを信頼できることにはなりません。 お使いのコンピューターで実行されている悪意のあるコードの可能性を検討してください。 デバッグが信頼できること、コードしようとしている場合は、をクリックして**デバッグ**します。 それ以外の場合、をクリックして**デバッグしない**します。
+> アプリケーションに信頼できないコードが含まれている場合は、セキュリティ警告のダイアログボックスが表示されます。 このダイアログ ボックスでは、デバッグを開始するかどうかを選択できます。 デバッグを開始する前に、コードを信頼できるかどうかを判断します。 このコードは、自分で作成したコードですか。 このコードの作成者は信頼できますか。 アプリケーションをリモート コンピューター上で実行している場合、プロセスの名前を識別できますか。 アプリケーションをローカルに実行している場合でも、それが必ずしもコードを信頼できることにはなりません。 コンピューターで悪意のあるコードが実行される可能性を考慮してください。 デバッグしようとしているコードが信頼できると判断した場合は、[ **デバッグ**] をクリックします。 それ以外の場合は、[ **デバッグしない**] をクリックします。
 
- **Visual Studio Just-In-Time デバッガー**ウィンドウが表示されます。
+ [ **Visual Studio Just-in-time デバッガー** ] ウィンドウが表示されます。
 
  ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
- **利用可能なデバッガー**が表示される、 **Microsoft Visual Studio 2015 の新しいインスタンス**の行を選択します。 既に選択されていない場合は、ここで選択します。
+ [ **可能なデバッガー**] で、 **Microsoft Visual Studio 2015 行の新しいインスタンス** が選択されていることを確認します。 まだ選択されていない場合は、ここで選択します。
 
- ウィンドウの下部にある **、選択したデバッガーを使用してデバッグするでしょうか。** 、 をクリック**はい**。
+ ウィンドウの下部にある [選択し **たデバッガーを使用してデバッグしますか?**] で、[ **はい**] をクリックします。
 
- ThrowsNullException プロジェクトは、実行例外をスローする行で停止するいると、Visual Studio の新しいインスタンスで開きます。
+ ThrowsNullException プロジェクトが Visual Studio の新しいインスタンスで開き、例外をスローする行で実行が停止します。
 
  ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
- この時点でのデバッグを開始することができます。 これが実際のアプリケーションの場合、コードが例外をスローして理由を確認する必要があります。
+ この時点でデバッグを開始できます。 これが実際のアプリケーションである場合は、コードが例外をスローしている理由を確認する必要があります。
 
 ## <a name="just-in-time-debugging-errors"></a>Just-In-Time デバッグのエラー
- プログラムがクラッシュすると、ダイアログ ボックスが表示されない、コンピューターに Windows エラー報告の設定のためこの可能性があります。 詳細については、次を参照してください。[します。WER 設定](https://msdn.microsoft.com/library/windows/desktop/bb513638\(v=vs.85\).aspx)します。
+ プログラムがクラッシュしたときにダイアログが表示されない場合は、コンピューターの設定が Windows エラー報告ことが原因である可能性があります。 詳細については、「」を参照してください [。WER の設定](https://msdn.microsoft.com/library/windows/desktop/bb513638\(v=vs.85\).aspx)。
 
  Just-In-Time デバッグに関連して次のエラー メッセージが表示されることがあります。
 
 - **クラッシュ プロセスにアタッチできません。指定されたプログラムは、Windows または MS-DOS プログラムではありません。**
 
-     このエラーは、別のユーザーとして実行されているプロセスにアタッチするときに発生します。
+     このエラーは、別のユーザーとして実行されているプロセスにアタッチしようとしたときに発生します。
 
-     スタート、Visual Studio は、この問題を回避するには、開く、**プロセスにアタッチ** ダイアログ ボックスから、**デバッグ**メニューのおよびデバッグするプロセスを検索、**選択可能なプロセス**一覧。 プロセスの名前がわからない場合を見て、 **Visual Studio Just-In-Time デバッガー**ダイアログとプロセス id です。 プロセスの選択、**選択可能なプロセス**を一覧表示し、をクリックして**アタッチ**します。 **Visual Studio Just-In-Time デバッガー**ダイアログ ボックスで、をクリックして**いいえ**ダイアログ ボックスを閉じます。
+     この問題を回避するには、Visual Studio を起動し、[**デバッグ**] メニューの [**プロセスにアタッチ**] ダイアログボックスを開いて、[**選択可能なプロセス**] ボックスの一覧でデバッグするプロセスを見つけます。 プロセスの名前がわからない場合は、 **Visual Studio の Just-in-time デバッガー** ダイアログで、プロセス ID を確認します。 [選択 **可能なプロセス** ] ボックスの一覧でプロセスを選択し、[ **アタッチ**] をクリックします。 [ **Visual Studio Just-in-time デバッガー** ] ダイアログボックスで、[ **いいえ** ] をクリックしてダイアログボックスを閉じます。
 
 - **ログオンしているユーザーがいないため、デバッガーを開始できませんでした。**
 
@@ -196,5 +196,5 @@ static void Main(string[] args)
 
      この問題を解決するには、セットアップ ディスクを使って Visual Studio を再インストールするか、既存のインストールを修復します。
 
-## <a name="see-also"></a>関連項目
- [デバッガーのセキュリティ](../debugger/debugger-security.md)[デバッガーの基本事項](../debugger/debugger-basics.md) [- Just-in-time で、デバッグ オプション ダイアログ ボックス](../debugger/just-in-time-debugging-options-dialog-box.md)[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください。](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)
+## <a name="see-also"></a>参照
+ [デバッガーセキュリティ](../debugger/debugger-security.md)[デバッガーの基本](../debugger/debugger-basics.md)[ジャストインタイム、デバッグ、オプションダイアログボックス](../debugger/just-in-time-debugging-options-dialog-box.md)の[セキュリティ警告: 信頼されていないユーザーが所有するプロセスへのアタッチは危険な場合があります。次の情報が疑わしいと思われる場合や、不明な場合は、このプロセスにアタッチしないでください](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)。

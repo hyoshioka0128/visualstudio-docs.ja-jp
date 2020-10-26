@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550913"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>PTVS の概要: コードの編集
@@ -21,7 +21,7 @@ ms.locfileid: "62550913"
 
 PTVS は、Python のために生産性の高い Visual Studio エディターのエクスペリエンスを提供します。  
   
- これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
+ これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
   
  空の基本的な Python アプリケーション プロジェクト テンプレートを使って開始します。  
   
@@ -34,7 +34,7 @@ from math import sin
   
  コーディングの際に、バインドされていない、しかしライブラリには存在する識別子を使用する場合、PTVS は、必要となる適切なインポート ステートメントを追加するためのポップアップ クイック フィックスを提供します。  たとえば、「`cos`」と入力した場合、**import from math** が提供されるのがわかります。  
   
- スニペットを使用してコードを生成することができます。  [編集] メニューで、[IntelliSense]、[スニペットの挿入] の順に選択します。  次に [Python]、[def] の順に選択します。関数 `make_dot_string` を呼び出して、1 つのパラメーター `x` を追加します。  ここで、テスト駆動開発のためにアサーションをファイルに追加できます。PTVS が入力候補一覧に新しい関数を既に提供できるようになっていることが分かります。  
+ スニペットを使用してコードを生成することができます。  [編集] メニューで、[IntelliSense]、[スニペットの挿入] の順に選択します。  ここで、[Python]、[def] の順に選択します。 関数を呼び出し、 `make_dot_string` パラメーターを1つ追加し `x` ます。  ここで、テスト駆動開発のためにアサーションをファイルに追加できます。PTVS が入力候補一覧に新しい関数を既に提供できるようになっていることが分かります。  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -64,8 +64,8 @@ def main ():
   
  F5 キーを押すと、cmd.exe ウィンドウでコードが実行されて、前後に動くドットが表示されます。  
   
- これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
+ これらの手順は、短い [YouTube ビデオ](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)で視聴できます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

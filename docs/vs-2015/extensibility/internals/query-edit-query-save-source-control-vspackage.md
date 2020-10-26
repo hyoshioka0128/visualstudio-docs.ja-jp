@@ -1,5 +1,5 @@
 ---
-title: クエリの編集とクエリの保存 (ソース管理 VSPackage) |Microsoft Docs
+title: クエリの編集クエリの保存 (ソース管理 VSPackage) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,29 +13,29 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ad0cf7c3e1d3269dbe7ebee051cc32e2e8531ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148895"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>クエリの編集とクエリの保存 (ソース管理 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] エディターでは、クエリ編集クエリの保存 (QEQS) イベントをブロードキャストできます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] QEQS イベントの受信者をあるように、ソース コントロールのスタブは、QEQS サービスを実装します。 これらのイベントは、現在アクティブなソース管理 VSPackage に委任しされます。 VSPackage の実装、アクティブなソース コントロール、<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>とそのメソッド。 メソッド、`IVsQueryEditQuerySave2`文書を編集して、文書を保存する直前に、最初にする直前に、インターフェイスは通常と呼ばれます。  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] エディターでは、query Edit Query Save (QEQS) イベントをブロードキャストできます。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ソース管理スタブは、QEQS イベントの受信者になるように QEQS サービスを実装します。 これらのイベントは、現在アクティブなソース管理 VSPackage に委任されます。 アクティブなソース管理 VSPackage は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> とそのメソッドを実装します。 通常、インターフェイスのメソッドは、 `IVsQueryEditQuerySave2` ドキュメントが最初に編集される直前と、ドキュメントが保存される直前に呼び出されます。  
   
 ## <a name="queryeditquerysave-events"></a>QueryEditQuerySave イベント  
- ソース管理 VSPackage は、実装することによって、QEQS イベントを処理する必要があります、`IVsQueryEditQuerySave2`インターフェイスと、必要なメソッドです。 少なくとも、VSPackage を実装する必要がある 2 つの方法の簡単な説明を次に示します。 ソース管理モデルのロジックに従って実際の実装があります。  
+ ソース管理 VSPackage は、 `IVsQueryEditQuerySave2` インターフェイスと必要なメソッドを実装することによって、QEQS イベントを処理する必要があります。 少なくとも VSPackage が実装する必要がある2つのメソッドについて、以下に簡単に説明します。 実際の実装は、ソース管理モデルのロジックに従っている必要があります。  
   
 ### <a name="queryeditfiles-method"></a>QueryEditFiles メソッド  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>任意のプロジェクトまたはエディターがファイルを変更するときに呼び出されます。 理想的には、このメソッドが呼び出されます*する前に*ファイルが変更され、ファイルが保存されます。 呼び出されると、`IVsQueryEditQuerySave2::QueryEditFiles`メソッドかどうか、指定されたファイルは、ソース管理下、かどうかがチェック アウトする必要があり、再読み込みすることができるかどうかを確認します。 状況が原因で、ファイルが編集されている場合、`IVsQueryEditQuerySave2::QueryEditFiles`メソッドを編集をキャンセルする呼び出し元プログラムに指示します。 呼び出し元が、呼び出しモードを指定することもできます。 「サイレント」モードでは、このメソッドは、任意の UI に表示されるは実行されない場合にのみアクションを受け取ります。 UI が避けられない場合は、問題を示すフラグを返す必要があります。  
+ は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> プロジェクトまたはエディターがファイルを変更するときに呼び出されます。 このメソッドは、ファイルが変更される前とファイルが保存される *前に* 呼び出されるのが理想的です。 このメソッドを呼び出すと、指定した `IVsQueryEditQuerySave2::QueryEditFiles` ファイルがソース管理下にあるかどうか、チェックアウトする必要があるかどうか、およびそれらを再読み込みできるかどうかがチェックされます。 状況によってファイルを編集できないようにすると、 `IVsQueryEditQuerySave2::QueryEditFiles` メソッドは呼び出し元のプログラムに対して編集をキャンセルするように指示します。 呼び出し元が呼び出しモードを指定することもできます。 "サイレント" モードでは、このメソッドは UI が表示されない場合にのみアクションを実行します。 UI が避けられない場合は、問題を示すフラグを返す必要があります。  
   
- メソッドのトランザクション的に動作します。1 つのファイルの編集が取り消された場合は、すべてのファイルの編集が取り消されました。 逆に、編集が許可されている場合、すべてのファイルのことができます。 このメソッドは、特定の一連のファイルの 1 回の編集を許可している場合、同じ一連のファイルの後続の呼び出しで編集ことを常に許可する必要があります。 許可する編集ループは、ファイルが閉じられた、保存、および再読み込みするまで続きますそれらの属性 (プロパティ) を変更; までまたは、ソース管理パッケージが変更されるまでです。 実装で考慮すべきケース、`IVsQueryEditQuerySave2::QueryEditFiles`メソッドが特別なファイル、複数のファイルが含まれて、ユーザー、およびメモリ内の編集をキャンセルします。  
+ メソッドはトランザクション方式で動作します。つまり、1つのファイルで編集がキャンセルされた場合、すべてのファイルに対して編集がキャンセルされます。 逆に、編集が許可されている場合は、すべてのファイルに対して許可されます。 このメソッドによって、特定のファイルセットに対して1回の編集が許可される場合は、同じファイルセットに対する後続の呼び出しでの編集が常に許可されている必要があります。 Allow-edit ループは、ファイルが閉じられ、保存されて、再読み込みされるまで続行されます。属性 (プロパティ) が変更されるまで、または、ソース管理パッケージが変更されます。 メソッドの実装で考慮すべきケースとしては、 `IVsQueryEditQuerySave2::QueryEditFiles` 複数のファイル、特別なファイル、ユーザーからのキャンセル、メモリ内の編集などがあります。  
   
 ### <a name="querysavefiles-method"></a>QuerySaveFiles メソッド  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>任意のプロジェクトまたはエディターは、一連のファイルを保存する必要があるときに呼び出されます。 呼び出されると、`IVsQueryEditQuerySave2::QuerySaveFiles`メソッドは、特定のファイルは読み取り専用の場合、ソース管理の対象であるかどうかを確認します。 ファイルは、チェック アウトする場合に、呼び出しは、ソース管理パッケージに委任されます。 状況が原因で、ファイルが保存されている場合、`IVsQueryEditQuerySave2::QuerySaveFiles`メソッドは、保存を取り消すをエディターに通知する必要があります。 同様、`IVsQueryEditQuerySave2::QueryEditFiles`メソッドを呼び出し元が、呼び出しモードを指定することができます。 「サイレント」モードでは、このメソッドは、任意の UI に表示されるは実行されない場合にのみアクションを受け取ります。 UI が避けられない場合は、問題を示すフラグを返す必要があります。  
+ は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> プロジェクトまたはエディターがファイルのセットを保存する必要があるときに呼び出されます。 メソッドを呼び出すと、指定した `IVsQueryEditQuerySave2::QuerySaveFiles` ファイルが読み取り専用かどうか、およびソース管理下にあるかどうかがチェックされます。 ファイルをチェックアウトする必要がある場合は、呼び出しがソース管理パッケージに委任されます。 状況によってファイルが保存されないようにするには、メソッドで、 `IVsQueryEditQuerySave2::QuerySaveFiles` 保存をキャンセルするようにエディターに指示する必要があります。 メソッドと同様に、 `IVsQueryEditQuerySave2::QueryEditFiles` 呼び出し元が呼び出しモードを指定することもできます。 "サイレント" モードでは、このメソッドは UI が表示されない場合にのみアクションを実行します。 UI が避けられない場合は、問題を示すフラグを返す必要があります。  
   
- このメソッドは、トランザクション的に動作する必要があります。1 つのファイルの保存が取り消された場合は、すべてのファイルの保存が取り消されました。 逆に、保存が許可されている場合、すべてのファイルを許可する必要があります。 同様、`IVsQueryEditQuerySave2::QueryEditFiles`メソッドは、実装で考慮すべきケース、`IVsQueryEditQuerySave2::QuerySaveFiles`メソッドが特別なファイル、複数のファイルが含まれて、ユーザー、およびメモリ内の編集をキャンセルします。  
+ このメソッドは、トランザクション方式で動作する必要があります。つまり、1つのファイルで保存がキャンセルされた場合、すべてのファイルに対して保存が取り消されます。 逆に、保存が許可されている場合は、すべてのファイルに対して保存が許可されている必要があります。 メソッドの場合と同様に、メソッドの実装時には、 `IVsQueryEditQuerySave2::QueryEditFiles` `IVsQueryEditQuerySave2::QuerySaveFiles` 複数のファイル、特別なファイル、ユーザーからのキャンセル、メモリ内の編集などが考えられます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

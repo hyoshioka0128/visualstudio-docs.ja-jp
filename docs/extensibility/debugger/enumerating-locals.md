@@ -1,5 +1,5 @@
 ---
-title: ローカルの列挙 |マイクロソフトドキュメント
+title: ローカル変数 | を列挙するMicrosoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,36 +12,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738874"
 ---
 # <a name="enumerate-locals"></a>ローカルの列挙
 > [!IMPORTANT]
-> Visual Studio 2015 では、式エバリュエーターのこの実装方法は非推奨になりました。 CLR 式エバリュエーターの実装については[、「CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 」および「[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
+> Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
-Visual Studio が **[ローカル**] ウィンドウにデータを設定する準備ができたら[、GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)から返される[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトの[列挙子](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出[します (GetMethodProperty の実装](../../extensibility/debugger/implementing-getmethodproperty.md)を参照)。 `IDebugProperty2::EnumChildren`[オブジェクトを](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)返します。
+Visual Studio が [**ローカル**] ウィンドウにデータを設定する準備ができたら、 [getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)から返された[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトに対して[Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出します (「 [getmethodproperty の実装](../../extensibility/debugger/implementing-getmethodproperty.md)」を参照してください)。 `IDebugProperty2::EnumChildren`[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを返します。
 
-実装`IDebugProperty2::EnumChildren`は、次のタスクを実行します。
+`IDebugProperty2::EnumChildren`を実装すると、次のタスクが実行されます。
 
-1. これがメソッドを表していることを確認します。
+1. このがメソッドを表すことを保証します。
 
-2. オブジェクトで`guidFilter`呼び出すメソッドを決定する引数[を](../../extensibility/debugger/reference/idebugmethodfield.md)使用します。 等`guidFilter`しい場合:
+2. 引数を使用して `guidFilter` 、 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) オブジェクトに対して呼び出すメソッドを決定します。 がに `guidFilter` 等しい場合:
 
-    1. `guidFilterLocals`を呼[び](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)出して、[オブジェクト](../../extensibility/debugger/reference/ienumdebugfields.md)を取得します。
+    1. `guidFilterLocals`[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)オブジェクトを取得するには、 [enumlocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)を呼び出します。
 
-    2. `guidFilterArgs`を呼び出して[、](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)オブジェクト`IEnumDebugFields`を取得します。
+    2. `guidFilterArgs`では、 [Enumarguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) を呼び出してオブジェクトを取得し `IEnumDebugFields` ます。
 
-    3. `guidFilterLocalsPlusArgs`の結果を結合する列挙体を合成し、 `IDebugMethodField::EnumLocals` `IDebugMethodField::EnumArguments`と の結果を結合します。 この合成はクラスによって表されます`CEnumMethodField`。
+    3. `guidFilterLocalsPlusArgs`は、との結果を結合する列挙体を合成し `IDebugMethodField::EnumLocals` `IDebugMethodField::EnumArguments` ます。 この合成はクラスによって表され `CEnumMethodField` ます。
 
-3. インターフェイスを実装し、`IEnumDebugFields`オブジェクト`CEnumPropertyInfo`を含むクラス (この例で呼び出されます) をインスタンス化します。 `IEnumDebugPropertyInfo2`
+3. `CEnumPropertyInfo`インターフェイスを実装し、オブジェクトを格納するクラス (この例ではと呼ばれる) をインスタンス化し `IEnumDebugPropertyInfo2` `IEnumDebugFields` ます。
 
-4. オブジェクトから`IEnumDebugProperty2Info2`インターフェイスを`CEnumPropertyInfo`返します。
+4. `IEnumDebugProperty2Info2`オブジェクトからインターフェイスを返し `CEnumPropertyInfo` ます。
 
 ## <a name="managed-code"></a>マネージド コード
-この例では、マネージ`IDebugProperty2::EnumChildren`コードの実装を示します。
+この例は、マネージコードでのの実装を示して `IDebugProperty2::EnumChildren` います。
 
 ```csharp
 namespace EEMC
@@ -119,8 +119,8 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code"></a>アンマネージ コード
- この例では、アンマネージ`IDebugProperty2::EnumChildren`コードの実装を示します。
+## <a name="unmanaged-code"></a>アンマネージコード
+ この例は、アンマネージコードでのの実装を示して `IDebugProperty2::EnumChildren` います。
 
 ```cpp
 STDMETHODIMP CFieldProperty::EnumChildren(
@@ -246,6 +246,6 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 ```
 
 ## <a name="see-also"></a>関連項目
-- [ローカルのサンプル実装](../../extensibility/debugger/sample-implementation-of-locals.md)
-- [プロパティを実装します。](../../extensibility/debugger/implementing-getmethodproperty.md)
+- [ローカルの実装のサンプル](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [GetMethodProperty を実装する](../../extensibility/debugger/implementing-getmethodproperty.md)
 - [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

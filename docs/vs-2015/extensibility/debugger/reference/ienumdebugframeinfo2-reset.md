@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::Reset |Microsoft Docs
+title: 'IEnumDebugFrameInfo2:: Reset |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fedd5c5d06b9df2bc9a69db9fc26c8bac9fd6cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161038"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-最初の要素を列挙値をリセットします。  
+列挙体を最初の要素にリセットします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -37,10 +37,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドが呼び出された後、次回の呼び出し、[次](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)メソッドが列挙体の最初の要素を返します。  
+## <a name="remarks"></a>注釈  
+ このメソッドが呼び出された後 [、次のメソッドを](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) 呼び出すと、列挙体の最初の要素が返されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

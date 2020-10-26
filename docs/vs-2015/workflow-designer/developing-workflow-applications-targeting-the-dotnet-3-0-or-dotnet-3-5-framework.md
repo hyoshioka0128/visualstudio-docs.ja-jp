@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843872"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 または .NET 3.5 Framework を対象とするワークフロー アプリケーションの開発
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] には、[!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]を対象とする [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションを作成するための [!INCLUDE[wfd1](../includes/wfd1-md.md)] が用意されています。 このデザイナーでは、使い慣れた [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスを使用して、ワークフロー アプリケーションをグラフィカルに作成してデバッグすることができます。
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] を [!INCLUDE[wfd1](../includes/wfd1-md.md)] 対象とするアプリケーションを作成するためのを提供し [!INCLUDE[wf](../includes/wf-md.md)] [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ます。 このデザイナーでは、使い慣れた [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ユーザー インターフェイスを使用して、ワークフロー アプリケーションをグラフィカルに作成してデバッグすることができます。
 
  また、[!INCLUDE[vs2010](../includes/vs2010-md.md)] では、従来のワークフロー デザイナーにアクセスできます。従来のワークフロー デザイナーを使用すると、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とすることができます。 ここでは、この従来のデザイナーの使用方法について説明します。
 
@@ -28,5 +28,5 @@ ms.locfileid: "75843872"
 
  [従来のワークフローのデバッグ](../workflow-designer/debugging-legacy-workflows.md)
 
-## <a name="related-sections"></a>関連セクション
- [Windows Workflow Foundation プログラミングガイド](https://msdn2.microsoft.com/library/bb628474.aspx)
+## <a name="related-sections"></a>関連項目
+ [Windows Workflow Foundation プログラミング ガイド](https://msdn2.microsoft.com/library/bb628474.aspx)

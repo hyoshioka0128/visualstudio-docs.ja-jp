@@ -1,5 +1,5 @@
 ---
-title: VSIX v3 での Ngen のサポート |マイクロソフトドキュメント
+title: VSIX v3 | での Ngen のサポートMicrosoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
@@ -9,42 +9,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cb75b9256ca937106235fa7a7d66d9cec71c9c60
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702397"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 での Ngen のサポート
 
-Visual Studio 2017 および新しい VSIX v3 (バージョン 3) 拡張機能マニフェスト形式を使用すると、拡張機能の開発者はインストール時にアセンブリを "ngen" できます。
+Visual Studio 2017 および新しい VSIX v3 (バージョン 3) 拡張機能マニフェスト形式では、拡張機能の開発者はインストール時にアセンブリを "ngen" できるようになりました。
 
-以下は、"ngen" の機能を説明する MSDN からの抜粋です。
+次に示すのは、"ngen" の機能について説明している MSDN の抜粋です。
 
->ネイティブ イメージ ジェネレーター (*Ngen.exe*) は、マネージ アプリケーションのパフォーマンスを向上させるツールです。 *Ngen.exe は*、コンパイル済みのプロセッサ固有のマシン コードを含むファイルであるネイティブ イメージを作成し、ローカル コンピュータのネイティブ イメージ キャッシュにインストールします。 ランタイムは、Just-In-Time (JIT) コンパイラを使用してオリジナルのアセンブリをコンパイルする代わりに、キャッシュにあるネイティブ イメージを使用できます。
+>ネイティブイメージジェネレーター (*Ngen.exe*) は、マネージアプリケーションのパフォーマンスを向上させるツールです。 *Ngen.exe* は、コンパイルされたプロセッサ固有のマシンコードを含むファイルであるネイティブイメージを作成し、それらをローカルコンピューターのネイティブイメージキャッシュにインストールします。 ランタイムは、Just-In-Time (JIT) コンパイラを使用してオリジナルのアセンブリをコンパイルする代わりに、キャッシュにあるネイティブ イメージを使用できます。
 >
->[Ngen.exe から (ネイティブ イメージ ジェネレーター)](/dotnet/framework/tools/ngen-exe-native-image-generator)
+>[Ngen.exe から (ネイティブイメージジェネレーター)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
-アセンブリを "ngen" するには、VSIX を "インスタンスごとコンピューターごと" をインストールする必要があります。 これは、デザイナーで「全ユーザー」チェックボックスをオンにすることで`extension.vsixmanifest`有効にすることができます。
+アセンブリを "ngen" するには、VSIX を "コンピューターごとにインスタンスごとに" インストールする必要があります。 これを有効にするには、デザイナーで [すべてのユーザー] チェックボックスをオンにし `extension.vsixmanifest` ます。
 
 ![すべてのユーザーを確認する](media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Ngen を有効にする方法
 
-アセンブリの ngen を有効にするには、Visual Studio の **[プロパティ**] ウィンドウを使用できます。
+アセンブリに対して ngen を有効にするには、Visual Studio の [ **プロパティ** ] ウィンドウを使用します。
 
-設定できるプロパティは 4 つあります。
+次の4つのプロパティを設定できます。
 
-1. **Ngen** (ブール値) - true の場合、Visual Studio インストーラーはアセンブリを "ngen" します。
-2. **Ngen アプリケーション**(文字列) - Ngen は、アセンブリの依存関係を解決するために、アプリケーションの*app.config*ファイルを使用する機会を提供します。 この値は、*使用するアプリケーション*に設定する必要があります (Visual Studio インストール ディレクトリに対して相対的)。
-3. **Ngen アーキテクチャ**(列挙型) - アセンブリをネイティブにコンパイルするためのアーキテクチャ。 オプションは次のとおりです。 指定されていない b. X86 c. X64 d. すべて
-4. **Ngen 優先度**(1 ~ 3 の整数) - Ngen 優先度レベルは[Ngen.exe の優先順位レベル](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)で文書化されています。
+1. **Ngen** (ブール値)-True の場合、Visual Studio インストーラーはアセンブリを "Ngen" します。
+2. **Ngen アプリケーション** (string)-ngen は、アセンブリの依存関係を解決するために、アプリケーションの *app.config* ファイルを使用する機会を提供します。 この値は、(Visual Studio のインストールディレクトリを基準として) 使用する *app.config* を持つアプリケーションに設定する必要があります。
+3. **Ngen アーキテクチャ** (列挙型)-アセンブリをネイティブにコンパイルするためのアーキテクチャ。 オプションは次のとおりです。 a. NotSpecified が指定されています。 X86 c。 X64 d。 All
+4. **Ngen の優先度** (1 ~ 3 の整数)-Ngen の優先度レベルは [Ngen.exe の優先度](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)レベルに記載されています。
 
-[**プロパティ]** ウィンドウの動作を次に示します。
+次に、[ **プロパティ** ] ウィンドウの動作を見てみましょう。
 
-![プロパティの ngen](media/ngen-in-properties.png)
+![プロパティでの ngen](media/ngen-in-properties.png)
 
-これにより、VSIX プロジェクトの *.csproj*ファイル内のプロジェクト参照にメタデータが追加されます。
+これにより、VSIX プロジェクトの *.csproj* ファイル内のプロジェクト参照にメタデータが追加されます。
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -62,4 +62,4 @@ Visual Studio 2017 および新しい VSIX v3 (バージョン 3) 拡張機能�
 
 ## <a name="extra-information"></a>追加情報
 
-プロパティ デザイナーの変更は、プロジェクト参照以外にも適用されます。プロジェクト内の項目の Ngen メタデータは、項目が .NET アセンブリである限り、(上記と同じ方法を使用して) 設定できます。
+プロパティデザイナーの変更は、プロジェクト参照以外にも適用されます。項目が .NET アセンブリである限り、プロジェクト内の項目の Ngen メタデータも設定できます (上記と同じ方法を使用します)。

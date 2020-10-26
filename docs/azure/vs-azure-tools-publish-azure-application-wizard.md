@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280532"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio の Azure アプリケーションの公開ウィザードの使用
@@ -108,7 +108,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 プロジェクトのデプロイのすべての設定を構成したら、ダイアログの下部にある **[発行]** をクリックします。 Visual Studio の **[出力]** ウィンドウでプロセスの状態を監視できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Visual Studio から Azure クラウド サービスに Web アプリケーションを移行および発行する](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
 

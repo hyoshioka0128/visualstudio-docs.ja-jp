@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865350"
 ---
 # <a name="link-task"></a>Link タスク
@@ -73,7 +73,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **String** 型のパラメーターです。
 
-  コマンド ラインで指定するリンカー オプションのリストです。 例: /\<option1> /\<option2> /\<option#> 他の **Link** タスク パラメーターでは表されないリンカー オプションを指定する場合は、このパラメーターを使用します。
+  コマンド ラインで指定するリンカー オプションのリストです。 たとえば、/\<option1> /\<option2> /\<option#> のようになります。 他の **Link** タスク パラメーターでは表されないリンカー オプションを指定する場合は、このパラメーターを使用します。
 
   詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
 

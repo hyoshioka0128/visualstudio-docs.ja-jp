@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 051a041c245fae55e3d4759130c145c662734aa8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544275"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126:型のリンク要求には継承要求が必要です
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|アイテム|値|
+|Item|値|
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |CheckId|CA2126|
@@ -60,5 +60,5 @@ ms.locfileid: "85544275"
 
  [CA2123:オーバーライドのリンク要求はベースと同一でなければなりません](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [セキュリティで保護されたコーディングガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)の[継承要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)の[リンク](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[確認要求](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)

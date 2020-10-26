@@ -1,4 +1,4 @@
-﻿---
+---
 title: MSBuild プロジェクトの共通プロパティ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698718"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
@@ -42,7 +42,7 @@ ms.locfileid: "65698718"
 |ALToolPath|AL.exe の保存先のパスです。 このプロパティによって、AL.exe の現在のバージョンをオーバーライドし、別のバージョンを使用できます。|  
 |ApplicationIcon|Win32 アイコンとして埋め込むためにコンパイラに渡す .ico アイコン ファイルです。 このプロパティは、`/win32icon` コンパイラ スイッチに相当します。|  
 |ApplicationManifest|外部のユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報を生成するのに使用するファイルのパスを指定します。 [!INCLUDE[windowsver](../includes/windowsver-md.md)] を対象とする Visual Studio プロジェクトにのみ適用されます。<br /><br /> ほとんどの場合、マニフェストは埋め込まれます。 ただし、登録を必要としない COM 配置または [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 配置を使用する場合は、アプリケーション アセンブリと共にインストールされる外部ファイルをマニフェストとして使用できます。 詳細については、このトピックの NoWin32Manifest プロパティを参照してください。|  
-|AssemblyOriginatorKeyFile|アセンブリ (.snk または .pfx) に署名するために使用されるファイルを指定します。また、このファイルは [ResolveKeySource Task](../msbuild/resolvekeysource-task.md) に渡され、アセンブリの署名に使用される実際のキーが生成されます。|  
+|AssemblyOriginatorKeyFile|アセンブリ (.snk または .pfx) に署名するために使用するファイルを指定します。このファイルは、アセンブリの署名に使用される実際のキーを生成するために [Resolvekeysource タスク](../msbuild/resolvekeysource-task.md) に渡されます。|  
 |AssemblySearchPaths|ビルド時に参照アセンブリを解決するときに検索する場所のリストです。 このリストでは、先頭から順に優先度が低くなるため、パスを指定する順序が意味を持ちます。|  
 |AssemblyName|プロジェクトのビルド後に生成される最終的な出力アセンブリの名前です。|  
 |BaseAddress|メイン出力アセンブリのベース アドレスを指定します。‎ このプロパティは、`/baseaddress` コンパイラ スイッチに相当します。|  
@@ -56,7 +56,7 @@ ms.locfileid: "65698718"
 |構成|ビルドする構成です。"Debug" と "Release" のいずれかを指定します。|  
 |CscToolPath|[!INCLUDE[csprcs](../includes/csprcs-md.md)] コンパイラ csc.exe のパスです。|  
 |CustomBeforeMicrosoftCommonTargets|共通ターゲットのインポートの前に自動的にインポートされるプロジェクト ファイルまたは targets ファイルの名前です。|  
-|DebugSymbols|ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> コマンド ラインで **/p:DebugSymbols=false** と設定すると、プログラム データベース (.pdb) シンボル ファイルの生成が無効になります。|  
+|DebugSymbols|ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> **/P: DebugSymbols = false**に設定すると、コマンドラインでプログラムデータベース (.pdb) シンボルファイルの生成が無効になります。|  
 |DefineConstants|条件付きコンパイル定数を定義します。 次の構文に従い、シンボルと値のペアをセミコロン (;) で区切って指定します。<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> このプロパティは、`/define` コンパイラ スイッチに相当します。|  
 |DefineDebug|定数 DEBUG を定義するかどうかを示すブール値です。|  
 |DefineTrace|定数 TRACE を定義するかどうかを示すブール値です。|  
@@ -66,7 +66,7 @@ ms.locfileid: "65698718"
 |DisableFastUpToDateCheck|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のみに適用されるブール値です。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ビルド マネージャーは、FastUpToDateCheck と呼ばれるプロセスを使用して、プロジェクトをリビルドして最新の状態にする必要があるかどうかを判断します。 この判断を行う機能としては、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] より、このプロセスの方が高速です。 DisableFastUpToDateCheck プロパティを `true` に設定すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ビルド マネージャーをバイパスし、プロジェクトが最新の状態かどうかを判断するために [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] を使用するように強制できます。|  
 |DocumentationFile|XML ドキュメント ファイルとして生成されるファイルの名前です。 この名前はファイル名のみを示し、パス情報は含んでいません。|  
 |ErrorReport|コンパイラ タスクで内部コンパイル エラーを報告するかどうかを指定します。 有効な値は "prompt"、"send"、または "none" です。 このプロパティは、`/errorreport` コンパイラ スイッチに相当します。|  
-|ExcludeDeploymentUrl|プロジェクト ファイルに次の要素が含まれている場合は、[GenerateDeploymentManifest Task](../msbuild/generatedeploymentmanifest-task.md) によって、deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **注意:** ExcludeDeploymentUrl は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE では公開されていないため、プロジェクト ファイルを手動で編集する方法でのみ設定できます。 このプロパティを設定しても、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内での発行には影響はありません。つまり、PublishUrl で指定された URL に deploymentProvider タグが追加されます。|  
+|ExcludeDeploymentUrl|プロジェクトファイルに次の要素が含まれている場合は、 [Generatedeploymentmanifest タスク](../msbuild/generatedeploymentmanifest-task.md) によって deploymentProvider タグが配置マニフェストに追加されます。<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> ただし、ExcludeDeploymentUrl を使用すると、上記の URL が指定されている場合でも、配置マニフェストに deploymentProvider タグが追加されないようにすることができます。 これを行うには、次のプロパティをプロジェクト ファイルに追加します。<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **注意:** ExcludeDeploymentUrl は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE では公開されていないため、プロジェクト ファイルを手動で編集する方法でのみ設定できます。 このプロパティを設定しても、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内での発行には影響はありません。つまり、PublishUrl で指定された URL に deploymentProvider タグが追加されます。|  
 |FileAlignment|出力ファイルでセクションをアラインするサイズをバイト単位で指定します。 有効値は 512、1024、2048、4096、および 8192 です。 このプロパティは、`/filealignment` コンパイラ スイッチに相当します。|  
 |FrameworkPathOverride|mscorlib.dll および microsoft.visualbasic.dll の位置を指定します。 このパラメーターは、vbc.exe コンパイラの `/sdkpath` スイッチに相当します。|  
 |GenerateDocumentation|ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に .xml ファイルに格納されます。|  
@@ -114,7 +114,7 @@ ms.locfileid: "65698718"
 |Satellite_Version|サテライト アセンブリのバージョン情報を指定します。|  
 |Satellite_Win32Icon|サテライト アセンブリに .ico アイコン ファイルを挿入します。|  
 |Satellite_Win32Resource|サテライト アセンブリに Win32 リソース (.res ファイル) を挿入します。|  
-|SubsystemVersion|生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値については、「[/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54)」または「[/subsystemversion (C# コンパイラ オプション)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)」を参照してください。|  
+|SubsystemVersion|生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値の詳細については、「 [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 」または「 [/Subsystemversion (C# コンパイラオプション)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)」を参照してください。|  
 |TargetCompactFramework|ビルドするアプリケーションの実行に必要な .NET Compact Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。|  
 |TargetFrameworkVersion|ビルドするアプリケーションの実行に必要な [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。|  
 |TreatWarningsAsErrors|ブール値パラメーターであり、`true` に設定すると、すべての警告がエラーとして扱われます。 このパラメーターは、`/nowarn` コンパイラ スイッチに相当します。|  
@@ -128,5 +128,5 @@ ms.locfileid: "65698718"
 |Win32Manifest|最終的なアセンブリに埋め込むマニフェスト ファイルの名前です。 このパラメーターは、`/win32Manifest` コンパイラ スイッチに相当します。|  
 |Win32Resource|最終的なアセンブリに埋め込む Win32 リソースのファイル名です。 このパラメーターは、`/win32resource` コンパイラ スイッチに相当します。|  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照  
  [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)

@@ -12,28 +12,28 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73003e00fef5c37db4a702e7a4a1121600673844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153697"
 ---
 # <a name="ports"></a>ポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッガーのアーキテクチャの観点から、**ポート**:  
+デバッガーのアーキテクチャに関して、 **ポート**は次のようになります。  
   
-- サーバーで実行する一連のプロセスのコンテナー。 たとえば、ポートは、シリアル ケーブルの場合は、Windows CE ベース デバイスまたは DCOM 以外のネットワークに接続されたマシンへの接続を表すことができます。 ローカルのポートと呼ばれる 1 つの特殊なポートには、ローカル コンピューターで実行されているすべてのプロセスが含まれています。  
+- は、サーバーで実行されている一連のプロセスのコンテナーです。 たとえば、ポートは、シリアルケーブル、またはネットワークに Windows CE 接続されていない非 DCOM マシンへの接続を表す場合があります。 ローカルポートと呼ばれる1つの特殊なポートには、ローカルコンピューター上で実行されているすべてのプロセスが含まれます。  
   
-- 名前または識別子自体を識別できます。  
+- では、名前または識別子を使用して自身を識別できます。  
   
-- できますとポートで実行されているすべてのプロセスを列挙し、起動し、これらのプロセスを終了します。  
+- では、ポートで実行されているすべてのプロセスを列挙し、それらのプロセスを起動して終了できます。  
   
-- によって表される、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)インターフェイスを渡すことによって作成される、 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)引数[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)します。  
+- は、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)インターフェイスによって表されます。これは、 [Addport](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)に[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)引数を渡すことによって作成されます。  
   
-  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] すべて Windows ベースのプロセス、ネイティブおよびマネージを処理する既定のポートを提供します。 Windows ベースではない外部のデバイスでは、接続のカスタム ポートを実装しなければなりません。 このようなカスタム ポートを指定するには、カスタム ポート サプライヤーは実装にも必要です。  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Windows ベースのすべてのプロセス (ネイティブおよびマネージ) を処理する既定のポートを提供します。 Windows ベースではない外部デバイスとの接続には、カスタムポートを実装する必要があります。 このようなカスタムポートを提供するには、カスタムポート供給業者も実装する必要があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)   
  [プロセス](../../extensibility/debugger/processes.md)   
  [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)   

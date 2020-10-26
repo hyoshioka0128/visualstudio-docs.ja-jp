@@ -11,40 +11,40 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62b84bd77038c7a17b65f764bd303d6a6372a52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154166"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-拡張、 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)モジュールとプロセスのインターフェイスの取得を有効にするインターフェイス。  
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)インターフェイスを拡張して、モジュールインターフェイスとプロセスインターフェイスを取得できるようにします。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCodeContext3 : IDebugCodeContext2  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デバッグ エンジンによって実装されで使用される、[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]パッケージのデバッグ。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグエンジンによって実装され、デバッグパッケージによって使用さ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] れます。  
   
 ## <a name="methods"></a>メソッド  
- メソッドだけでなく、`IDebugCodeContext2`インターフェイスでは、このインターフェイスは、次のメソッドを実装します。  
+ このインターフェイスには、インターフェイスのメソッドに加えて、 `IDebugCodeContext2` 次のメソッドが実装されています。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|デバッグ モジュールのインターフェイスへの参照を取得します。|  
-|[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|デバッグ プロセスのインターフェイスへの参照を取得します。|  
+|[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|デバッグモジュールのインターフェイスへの参照を取得します。|  
+|[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|デバッグプロセスのインターフェイスへの参照を取得します。|  
   
-## <a name="remarks"></a>Remarks  
- これは、一般に、実装する必要はありませんが、省略可能なインターフェイスです。  
+## <a name="remarks"></a>注釈  
+ これは省略可能なインターフェイスであり、通常は実装する必要はありません。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

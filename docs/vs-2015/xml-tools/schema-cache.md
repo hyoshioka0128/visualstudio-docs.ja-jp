@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d590bf618693a5ced1aa17969b888c0fff130c4c
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476954"
 ---
 # <a name="schema-cache"></a>スキーマ キャッシュ
@@ -21,28 +21,28 @@ ms.locfileid: "77476954"
 
 XML エディターはスキーマ キャッシュを提供します。このキャッシュは %InstallRoot%\Xml\Schemas ディレクトリに配置されています。 スキーマ キャッシュはコンピューター上のすべてのユーザーに対してグローバルで、IntelliSense と XML ドキュメントの検証に使用される標準的な XML スキーマを格納しています。
 
- XML エディターでは、ソリューションに配置されているスキーマ、ドキュメントの [**プロパティ**] ウィンドウの [**スキーマ**] フィールドで指定したスキーマ、および `xsi:schemaLocation` 属性と `xsi:noNamespaceSchemaLocation` 属性で識別されるスキーマも検索できます。
+ XML エディターを使用して、ソリューション内のスキーマ、ドキュメントの **[プロパティ]** ウィンドウの **[スキーマ]** フィールドで指定されているスキーマ、および `xsi:schemaLocation` 属性や `xsi:noNamespaceSchemaLocation` 属性によって識別されるスキーマを検出することもできます。
 
  次の表では XML エディターと共にインストールされるスキーマについて説明します。
 
 |     ファイル名      |                                                      説明                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    catalog.xsd    |             XML エディターのスキーマ カタログ ファイル用のスキーマです。 スキーマ カタログの詳細については、下記を参照してください。             |
-| DotNetConfig.xsd  |                 Web.config ファイルのスキーマ、`http://schemas.microsoft.com/.NETConfiguration/v2.0`。                 |
+| DotNetConfig.xsd  |                 Web.Config ファイルのスキーマ、`http://schemas.microsoft.com/.NETConfiguration/v2.0`。                 |
 |    msbuild.xsd    |              MSBuild の make ファイルのスキーマ、`http://schemas.microsoft.com/developer/msbuild/2003`。              |
 |    msdata.xsd     | <xref:System.Data.DataSet> クラスによって追加される XSD 注釈用のスキーマ (urn:schemas-microsoft-com:xml-msdata) です。 |
 |     msxsl.xsd     |                  Microsoft XSLT スクリプト ブロック拡張用のスキーマ (urn:schemas-microsoft-com:xslt) です。                   |
 | SnippetFormat.xsd |                 コード スニペットの XML ファイルのスキーマです。 例については、%InstallDir%\VC#\Expansions を参照してください。                 |
-|    Soap1.1.xsd    |            Simple Object Access Protocol (SOAP) 1.1 のスキーマ、`http://schemas.xmlsoap.org/soap/envelope/`。            |
+|    Soap1.1.xsd    |            簡易オブジェクト アクセス プロトコル (SOAP) 1.1 のスキーマ、`http://schemas.xmlsoap.org/soap/envelope/`。            |
 |    Soap1.2.xsd    |                                     簡易オブジェクト アクセス プロトコル 1.2 のスキーマです。                                     |
-| SiteMapSchema.xsd |            ASP.NET sitemap XML ファイルのスキーマ、`http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`。             |
+| SiteMapSchema.xsd |            ASP.NET サイトマップ XML ファイルのスキーマ、`http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`。             |
 |     wsdl.xsd      |                    Web サービス記述言語のスキーマ、`http://schemas.xmlsoap.org/wsdl/`。                     |
 |     xenc.xsd      |                            XML 暗号化のスキーマ、`http://www.w3.org/2000/09/xmldsig#`。                             |
-|     xhtml.xsd     |                                    XHTML `http://www.w3.org/1999/xhtml`のスキーマ。                                     |
-|     xlink.xsd     |                                  XLink 1.0 のスキーマ、`http://www.w3.org/1999/xlink`。                                   |
-|      xml.xsd      |              Xml: space および xml: lang 属性、`http://www.w3.org/XML/1998/namespace`を記述するスキーマ。               |
+|     xhtml.xsd     |                                    XHTML のスキーマ、`http://www.w3.org/1999/xhtml`。                                     |
+|     xlink.xsd     |                                  XLink1.0 のスキーマ、`http://www.w3.org/1999/xlink`。                                   |
+|      xml.xsd      |              xml:space 属性と xml:lang 属性について説明するスキーマ、`http://www.w3.org/XML/1998/namespace`。               |
 |    xmlsig.xsd     |                        XML デジタル署名のスキーマ、`http://www.w3.org/2000/09/xmldsig#`。                         |
-|   xsdschema.xsd   |                            XSD 自体、`http://www.w3.org/2001/XMLSchema`を記述するスキーマ。                            |
+|   xsdschema.xsd   |                            XSD 自体を記述するスキーマ、`http://www.w3.org/2001/XMLSchema`。                            |
 |     xslt.xsd      |                           XML 変換のスキーマ、`http://www.w3.org/1999/XSL/Transform`。                            |
 
 ## <a name="updating-schemas-in-the-cache"></a>キャッシュ内のスキーマの更新
@@ -65,11 +65,11 @@ XML エディターはスキーマ キャッシュを提供します。このキ
 
 - InstallDir
 
-- System
+- システム
 
 - ProgramFiles
 
-- ［プログラム］
+- Programs
 
 - CommonProgramFiles
 
@@ -102,21 +102,20 @@ XML エディターはスキーマ キャッシュを提供します。このキ
 ```
 
 ## <a name="changing-the-location-of-the-schema-cache"></a>スキーマ キャッシュの場所の変更
- [**その他**のオプション] ページを使用して、スキーマキャッシュの場所をカスタマイズできます。 よく使用するスキーマのディレクトリがある場合は、それらのスキーマを代わりに使用するようにエディターを構成できます。
+ **[その他]** オプション ページを使用して、スキーマ キャッシュの場所をカスタマイズすることができます。 よく使用するスキーマのディレクトリがある場合は、それらのスキーマを代わりに使用するようにエディターを構成できます。
 
 > [!NOTE]
 > この変更によって影響を受けるのは、現在の Visual Studio ユーザーのみです。
 
 #### <a name="to-change-the-schema-cache-location"></a>スキーマ キャッシュの場所を変更するには
 
-1. 
-          **[ツール]** メニューの **[オプション]** を選択します。
+1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2. [**テキストエディター**]、[ **XML**] の順に展開し、[**その他**] をクリックします。
+2. **[テキスト エディター]** を展開し、 **[XML]** を展開します。次に、 **[その他]** をクリックします。
 
-3. [**スキーマ**] フィールドの [**参照**] ボタンをクリックします。
+3. **[スキーマ]** フィールドの **[参照]** ボタンをクリックします。
 
-4. スキーマキャッシュのフォルダーを選択し、[ **OK]** をクリックします。
+4. スキーマ キャッシュのフォルダーを選択し、 **[OK]** をクリックします。
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>よく使用するスキーマが存在するディレクトリを追加するには
 
@@ -124,7 +123,7 @@ XML エディターはスキーマ キャッシュを提供します。このキ
 
 2. 追加するスキーマのディレクトリを指し示す新しい `<Catalog href="…"/>` 要素を追加します。
 
-3. 変更を [保存] します。
+3. 変更内容を保存します。
 
      カタログは自動的に再度読み込まれます。
 

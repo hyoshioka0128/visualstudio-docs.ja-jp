@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 32cfabfe61a8c1dc8f04cd2d024b07a92b1eb7e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2cfad81c44822e59abb704e5e830357bfd32067d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888570"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88801556"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown ドキュメントの作成
 
@@ -38,6 +38,7 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
 
 1. 新しいファイルの既定の内容は次のとおりです。
 
+    <!-- markdownlint-disable MD048 -->
     ~~~markdown
     ---
     title: "Untitled"
@@ -46,7 +47,7 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
 
     This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-    When you click the **R Tools | Publish | Preview** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+    When you select the **R Tools | Publish | Preview** button, a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
     ```{r}
     summary(cars)
@@ -61,6 +62,7 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
     Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
     ~~~
+    <!-- markdownlint-disable MD048 -->
 
 ## <a name="previews"></a>プレビュー
 

@@ -7,10 +7,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea5695c41b19cbd77c56a63f22b52fca5ee6f1eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295435"
 ---
 # <a name="vsix-color-editor"></a>VSIX カラー エディター
@@ -18,7 +18,7 @@ ms.locfileid: "74295435"
 
 Visual Studio 拡張機能のカラーエディターツールでは、Visual Studio のカスタム色を作成および編集できます。 ツールでは、色をコードで使用できるように、テーマリソースキーを生成することもできます。 このツールは、テーマをサポートする Visual Studio 拡張機能の色を作成する場合に便利です。 このツールでは、pkgdef ファイルと .xml ファイルを開くことができます。 Visual studio のテーマ (vstheme ファイル) は、ファイル拡張子を .xml に変更することで、Visual Studio 拡張機能のカラーエディターと共に使用できます。 また、vstheme ファイルを現在の .xml ファイルにインポートすることもできます。  
   
- ![VSIX カラーエディターのヒーロー](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX カラー エディターのヒーロー")  
+ ![VSIX カラー エディターのヒーロー](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX カラー エディターのヒーロー")  
   
  **パッケージ定義ファイル**  
   
@@ -65,15 +65,15 @@ Visual Studio 拡張機能のカラーエディターツールでは、Visual St
   
    一般的な状態名には次のものがあります。  
   
-- Active  
+- アクティブ  
   
-- Inactive  
+- 非アクティブ  
   
 - MouseOver  
   
 - MouseDown  
   
-- Selected  
+- オン  
   
 - フォーカスされている  
   
@@ -101,27 +101,27 @@ Visual Studio 拡張機能のカラーエディターツールでは、Visual St
   
   **手順 3: カラーエディターを使用して、新しいカラートークンを作成します。**  
   
-  カラーエディターを起動し、新しいカスタムテーマ色の .xml ファイルを開くか、作成します。 メニューから **[編集 > 新しい色]** を選択します。 これにより、カテゴリと、そのカテゴリ内の色エントリの1つ以上の名前を指定するためのダイアログが表示されます。  
+  カラーエディターを起動し、新しいカスタムテーマ色の .xml ファイルを開くか、作成します。 メニューから [ **編集 > 新しい色** ] を選択します。 これにより、カテゴリと、そのカテゴリ内の色エントリの1つ以上の名前を指定するためのダイアログが表示されます。  
   
-  ![VSIX カラーエディターの新しい色](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX カラー エディターの新しい色")  
+  ![VSIX カラー エディターの新しい色](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX カラー エディターの新しい色")  
   
-  既存のカテゴリを選択するか、 **[新しいカテゴリ]** を選択して新しいカテゴリを作成します。 別のダイアログが開き、新しいカテゴリ名が作成されます。  
+  既存のカテゴリを選択するか、[ **新しいカテゴリ** ] を選択して新しいカテゴリを作成します。 別のダイアログが開き、新しいカテゴリ名が作成されます。  
   
-  ![VSIX カラーエディターの新しいカテゴリ](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX カラー エディターの新しいカテゴリ")  
+  ![VSIX カラー エディターの新しいカテゴリ](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX カラー エディターの新しいカテゴリ")  
   
-  新しいカテゴリは、[**新しい色**のカテゴリ] ドロップダウンメニューで使用できるようになります。 カテゴリを選択したら、新しい色トークンごとに1行に1つの名前を入力し、完了したら [作成] を選択します。  
+  新しいカテゴリは、[ **新しい色** のカテゴリ] ドロップダウンメニューで使用できるようになります。 カテゴリを選択したら、新しい色トークンごとに1行に1つの名前を入力し、完了したら [作成] を選択します。  
   
-  ![VSIX カラーエディターの新しい色の塗りつぶし](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX カラー エディターの新しい色 (塗りつぶし)")  
+  ![VSIX カラー エディターの新しい色 (塗りつぶし)](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX カラー エディターの新しい色 (塗りつぶし)")  
   
   色の値は、背景と前景のペアで表示されます。色が定義されていないことを示す "None" が付いています。 注: 色にテキストの色と背景の色のペアがない場合は、背景のみを定義する必要があります。  
   
-  ![VSIX カラーエディターの色の値](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX カラー エディターのカラー値")  
+  ![VSIX カラー エディターのカラー値](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX カラー エディターのカラー値")  
   
   色トークンを編集するには、そのトークンのテーマ (列) の色エントリを選択します。 色の値を追加するには、8桁の ARGB 形式で16進数の色の値を入力するか、セルにシステムの色の名前を入力するか、ドロップダウンメニューを使用して、一連の色スライダーまたはシステムカラーの一覧から目的の色を選択します。  
   
-  ![VSIX カラーエディターの色の編集](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX カラー エディターの色の編集")  
+  ![VSIX カラー エディターの色の編集](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX カラー エディターの色の編集")  
   
-  ![VSIX カラーエディターの背景](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX カラー エディターの背景")  
+  ![VSIX カラー エディターの背景](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX カラー エディターの背景")  
   
   テキストを表示する必要がないコンポーネントの場合は、色の値を1つだけ入力します。背景色です。 それ以外の場合は、[背景] と [テキストの色] の両方の値をスラッシュで区切って入力します。  
   
@@ -133,13 +133,13 @@ Visual Studio 拡張機能のカラーエディターツールでは、Visual St
   
   新しい色トークンを定義した後、[ビルドアクション] を [コンテンツ] に設定し、[True] に設定して、[プロジェクトファイルに pkgdef] を追加します。  
   
-  ![VSIX カラーエディター .pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX カラー エディターの pkgdef")  
+  ![VSIX カラー エディターの pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX カラー エディターの pkgdef")  
   
   Visual Studio 拡張機能のカラーエディターで、[ファイル > 表示] をクリックして、WPF ベースの UI でカスタムカラーにアクセスするために使用するコードを表示します。  
   
-  ![VSIX カラーエディターのリソースコードビューアー](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX カラー エディターのリソース コード ビューアー")  
+  ![VSIX カラー エディターのリソース コード ビューアー](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX カラー エディターのリソース コード ビューアー")  
   
-  このコードをプロジェクトの静的クラスに含めます。 **VisualStudio VSVersion > .0. .dll**への参照をプロジェクトに追加して、\<**eresourcekey**型を使用する必要があります。  
+  このコードをプロジェクトの静的クラスに含めます。 VisualStudio への参照をプロジェクトに追加して、 ** \<VSVersion>.0.dll** **eresourcekey** 型を使用する必要があります。  
   
 ```csharp  
 namespace MyCustomColors  
@@ -183,12 +183,12 @@ namespace MyCustomColors
   
  カラーエディターは、Visual Studio の実行中のインスタンスに色トークンを一時的に適用して、拡張機能パッケージを再構築せずに、色のライブ変更を表示できます。 これを行うには、各テーマ列のヘッダーにある [このテーマを適用して Visual Studio ウィンドウを実行する] ボタンをクリックします。 この一時的なテーマは、VSIX カラーエディターを閉じたときに消えます。  
   
- ![VSIX カラーエディターが適用されます](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX カラー エディターによる適用")  
+ ![VSIX カラー エディターによる適用](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX カラー エディターによる適用")  
   
  変更を永続的にするには、新しい色を pkgdef ファイルに追加し、それらの色を使用するコードを記述した後で、Visual Studio 拡張機能をリビルドして再配置します。 Visual Studio 拡張機能を再構築すると、新しい色のレジストリ値がテーマの残りの部分にマージされます。 次に、Visual Studio を再起動し、UI を表示して、新しい色が想定どおりに表示されることを確認します。  
   
-## <a name="notes"></a>説明  
- このツールは、既存の Visual Studio テーマに対してカスタムの色を作成したり、カスタム Visual Studio テーマの色を編集したりするために使用することを目的としています。 カスタム Visual Studio の完全なテーマを作成するには、visual studio 拡張機能ギャラリーから[Visual Studio 配色テーマエディター拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor)をダウンロードします。  
+## <a name="notes"></a>Notes  
+ このツールは、既存の Visual Studio テーマに対してカスタムの色を作成したり、カスタム Visual Studio テーマの色を編集したりするために使用することを目的としています。 カスタム Visual Studio の完全なテーマを作成するには、visual studio 拡張機能ギャラリーから [Visual Studio 配色テーマエディター拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) をダウンロードします。  
   
 ## <a name="sample-output"></a>サンプル出力  
  **XML カラー出力**  
@@ -238,7 +238,7 @@ namespace MyCustomColors
   
 ```  
   
- **C#リソースキーラッパー**  
+ **C# リソースキーラッパー**  
   
  ツールによって生成される色リソースキーは次のようになります。  
   
@@ -269,7 +269,7 @@ namespace MyNamespace
   
  **WPF リソースディクショナリラッパー**  
   
- ツールによって生成される色**ResourceDictionary**キーは、次のようになります。  
+ ツールによって生成される色 **ResourceDictionary** キーは、次のようになります。  
   
 ```xaml  
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  

@@ -15,23 +15,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1f9ea0c6f2eede11100a4956ef4c63b20c6fa9a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193568"
 ---
 # <a name="symbol-locations"></a>シンボルの場所
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ほとんどのシンボル、イメージ ファイル内で定義されている場所であります。 値を持つシンボルの場所が指定されて、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)列挙体。 シンボルの場所に応じて他のプロパティをサポート可能性があります。  
+ほとんどのシンボルには、イメージファイル内の場所が定義されています。 シンボルの場所は、 [LocationType 列挙](../../debugger/debug-interface-access/locationtype.md) 型の列挙体の値と共に指定されます。 シンボルは、その場所に応じて追加のプロパティをサポートする場合があります。  
   
- 次の表では、最もよく使用される場所の種類とその他のプロパティを示します。  
+ 次の表に、最も一般的に使用される場所の種類とその他のプロパティを示します。  
   
-|場所の種類|その他のプロパティ|  
+|場所の種類|追加のプロパティ|  
 |-------------------|---------------------------|  
-|`LocIsNull`|none|  
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol::get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (相対仮想アドレスは有効な場合)<br /><br /> [Idiasymbol::get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (イメージ ベースは 0 以外に設定されている) 場合|  
+|`LocIsNull`|なし|  
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol:: get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (相対仮想アドレスが有効になっている場合)<br /><br /> [IDiaSymbol:: get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (イメージのベースが0以外に設定されている場合)|  
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|  
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
@@ -42,18 +42,18 @@ ms.locfileid: "68193568"
 |`LocInMetaData`|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|  
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|  
   
-## <a name="see-also"></a>関連項目  
- [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
- [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
- [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
- [IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
- [IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
- [IDiaSymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
- [IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
- [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
- [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
+## <a name="see-also"></a>参照  
+ [IDiaSymbol:: get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
+ [IDiaSymbol:: get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [IDiaSymbol:: get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
+ [IDiaSymbol:: get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
+ [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol:: get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
+ [IDiaSymbol:: get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
+ [IDiaSymbol:: get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
+ [IDiaSymbol:: get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
+ [IDiaSymbol:: get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
+ [IDiaSymbol:: get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
+ [IDiaSymbol:: get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
  [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)   
  [シンボルとシンボル タグ](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

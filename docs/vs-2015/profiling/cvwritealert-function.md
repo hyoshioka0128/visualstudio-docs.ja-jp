@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f5c428b471c576c1ca15b73a1c8b2ccfa2cc7b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551222"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 関数
@@ -59,7 +59,7 @@ HRESULT CvWriteAlertVA(
   
 #### <a name="parameters"></a>パラメーター  
  `argList`  
- 引数リスト。  
+ 引数のリスト。  
   
  `pMarkerSeries`  
  有効なマーカー系列コンテキスト。 Nll は指定できません。  
@@ -70,12 +70,12 @@ HRESULT CvWriteAlertVA(
 ## <a name="return-value"></a>戻り値  
  メッセージが書き込まれると S_OK を返します。 エラーが発生した場合はエラー コードを返します。 SUCCEEDED/FAILED マクロを使用し、エラーの状態を確認します。  
   
-## <a name="requirements"></a>要件  
+## <a name="requirements"></a>必要条件  
  **ヘッダー:** cvmarkers.h  
   
  **Unicode:** CvWriteAlertW、CvWriteAlertVW  
   
  **ANSI:** CvWriteAlertA、CvWriteAlertVA  
   
-## <a name="see-also"></a>関連項目  
- [C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>参照  
+ [C++ ライブラリリファレンス](../profiling/cpp-library-reference.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586336"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでのさまざまな Web ブラウザーの使用
@@ -99,19 +99,19 @@ ms.locfileid: "82586336"
  さまざまな Web ブラウザーを使用するコード化された UI テストをサポートしないバージョンの [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise を使用する必要があります。
 
  *その他に知っておく必要があること*
- **メモ**
+ **ノート**
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")Apple Safari web ブラウザーはサポートされていません。
+- ![Prerequsite](../test/media/prereq.png "前提条件") Apple Safari web ブラウザーはサポートされていません。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")Web ブラウザーを起動するアクションは、コード化された UI テストの一部である必要があります。
+- ![Prerequsite](../test/media/prereq.png "前提条件") Web ブラウザーを起動するアクションは、コード化された UI テストの一部である必要があります。
 
    既に Web ブラウザーが開かれていて、そこで手順を実行すると、Internet Explorer を使用していない場合は再生が失敗します。 そのため、コード化された UI テストの一部として Web ブラウザーの起動を含めることをお勧めします。
 
-- ![Prerequsite](../test/media/prereq.png "前提条件")最大化、最小化、復元など、ブラウザー固有の UI 操作の自動化はサポートされていません。
+- ![Prerequsite](../test/media/prereq.png "前提条件") 最大化、最小化、復元など、ブラウザー固有の UI 操作の自動化はサポートされていません。
 
-  **ヒント**
+  **テクニック**
 
-- ![ヒント](../test/media/tip.png "ヒント")出力を構成して、コード化された UI ログにスクリーンショットを含めることができます。 そのためには、QTAgent32.exe.config ファイルの一部の構成設定を設定する必要があります。 既定では、このファイルは次の場所にインストールされます。
+- ![ヒント](../test/media/tip.png "ヒント") 出力を構成して、コード化された UI ログにスクリーンショットを含めることができます。 そのためには、QTAgent32.exe.config ファイルの一部の構成設定を設定する必要があります。 既定では、このファイルは次の場所にインストールされます。
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -152,4 +152,4 @@ ms.locfileid: "82586336"
  [Visual Studio の UI オートメーションのテスト (コード化された UI を含む)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>参照
- [Ui オートメーションを使用して、コード](../test/use-ui-automation-to-test-your-code.md)化された ui テスト[と操作の記録に対してサポートされている構成とプラットフォームの](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)テストコード化された ui テストの[ログ](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+ [Ui オートメーションを使用して、コード](../test/use-ui-automation-to-test-your-code.md)化された ui テスト [と操作の記録に対してサポートされている構成とプラットフォームの](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)テストコード化された ui テストの [ログ](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

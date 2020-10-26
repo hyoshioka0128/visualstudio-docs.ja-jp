@@ -1,4 +1,4 @@
-﻿---
+---
 title: IntelliSense を使用する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 735f93b2f900b8681a1e9fee490de8e4b697f9e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656448"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
@@ -44,9 +44,9 @@ IntelliSense とは、メンバーの一覧、パラメーター ヒント、ク
 
  項目を選択した後、Tab キーを押すか空白を入力することによって、その項目をコードに挿入できます。 項目を選択してピリオドを入力した場合、項目がピリオドの前に表示され、ピリオドによって別のメンバー一覧が表示されます。 項目を選択した場合、挿入する前に、項目のクイック ヒントが表示されます。
 
- メンバーの一覧で、左側にあるアイコンは、名前空間、クラス、関数、変数など、メンバーの種類を表します。 アイコンの一覧については、「[[クラス ビュー] ウィンドウとオブジェクト ブラウザーのアイコン](../ide/class-view-and-object-browser-icons.md)」を参照してください。 一覧が長い場合は、PageUp キーまたは PageDown キーを使用して、一覧内を上下に移動できます。
+ メンバーの一覧で、左側にあるアイコンは、名前空間、クラス、関数、変数など、メンバーの種類を表します。 アイコンの一覧については、「 [クラスビュー」および「オブジェクトブラウザーアイコン](../ide/class-view-and-object-browser-icons.md)」を参照してください。 一覧が長い場合は、PageUp キーまたは PageDown キーを使用して、一覧内を上下に移動できます。
 
- ![Visual Studio のメンバーの一覧](../ide/media/vs2015-intellisense.png "|::ref1::|")
+ ![Visual Studio のメンバーの一覧](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
  **メンバーの一覧**機能を起動するには、Ctrl キーを押しながら J キーを押すか、**[編集]、[IntelliSense]、[メンバーの一覧]** の順にクリックするか、エディターのツール バーで **[メンバーの一覧]** をクリックします。 空白行または認識可能なスコープの外で呼び出された場合、メンバー一覧にはグローバル名前空間にあるシンボルが表示されます。
 
@@ -59,7 +59,7 @@ IntelliSense とは、メンバーの一覧、パラメーター ヒント、ク
 
  太字のパラメーターは、入力した関数で次に必要なパラメーターを表しています。 オーバーロードされた関数の場合、↑キーと↓キーを使用して、オーバーロードごとに異なるパラメーター情報を表示できます。
 
- ![パラメーター ヒント](../ide/media/vs2015-param-info.png "|::ref2::|")
+ ![パラメーターヒント](../ide/media/vs2015-param-info.png "VS2015_param_Info")
 
  関数やパラメーターに XML ドキュメント コメントによる注釈を付けると、そのコメントがパラメーター ヒントとして表示されます。 詳細については、「[XML コード コメントの追加](../ide/supplying-xml-code-comments.md)」を参照してください。
 
@@ -68,11 +68,11 @@ IntelliSense とは、メンバーの一覧、パラメーター ヒント、ク
 ## <a name="quick-info"></a>クイック ヒント
  クイック ヒントでは、コード内の識別子の宣言全体が表示されます。
 
- ![Visual Studio のクイック ヒント](../ide/media/vs2015-quick-info.png "|::ref3::|")
+ ![Visual Studio のクイック ヒント](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")
 
  **[メンバーの一覧]** ボックスからメンバーを選択した場合も、クイック ヒントが表示されます。
 
- ![C&#35; コード ファイル内のパラメーター ヒント](../ide/media/vs2015-paraminfo.png "|::ref4::|")
+ ![C&#35; コード ファイル内のパラメーター ヒント](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")
 
  クイック ヒントを手動で起動するには、**[編集]、[IntelliSense]、[クイック ヒント]** の順にクリックするか、Ctrl キーを押しながら I キーを押すか、エディターのツール バーで **[クイック ヒント]** をクリックします。
 
@@ -99,7 +99,7 @@ IntelliSense とは、メンバーの一覧、パラメーター ヒント、ク
 MessageBox( hWnd, "String literal|") )
 ```
 
- **自動オプションがオフになっている。** 既定では、IntelliSense は自動的に動作しますが、無効にすることもできます。 入力候補がオフになっている場合でも、IntelliSense 機能は起動できます。
+ **自動オプションがオフになっている場合** 既定では、IntelliSense は自動的に動作しますが、無効にすることもできます。 入力候補がオフになっている場合でも、IntelliSense 機能は起動できます。
 
-## <a name="see-also"></a>関連項目
- [Visual Basic 固有の intellisense](../ide/visual-basic-specific-intellisense.md) [Visual C# Intellisense](../ide/visual-csharp-intellisense.md) [JavaScript intellisense](../ide/javascript-intellisense.md) [XML コードコメントの提供](../ide/supplying-xml-code-comments.md)
+## <a name="see-also"></a>参照
+ [Visual Basic 固有の intellisense](../ide/visual-basic-specific-intellisense.md) [Visual C# INTELLISENSE](../ide/visual-csharp-intellisense.md) [JavaScript intellisense](../ide/javascript-intellisense.md) [XML コードコメントの提供](../ide/supplying-xml-code-comments.md)

@@ -1,5 +1,5 @@
 ---
-title: プロジェクト モデルのコア コンポーネント |Microsoft Docs
+title: プロジェクトモデルコアコンポーネント |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,98 +12,98 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de65155e08f4c2410d19db1b25105d247c9f0952
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704113"
 ---
 # <a name="project-model-core-components"></a>プロジェクト モデルのコア コンポーネント
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-次の表は、プロジェクト モデルを展開します。 テーブルは、インターフェイスと、モデルとインターフェイス、および特定のオブジェクトに関連付けられているサービスで識別されたサービスの簡単な説明を提示します。 さらに、テーブルには、プロジェクトの作成と、特定のプロジェクトの種類の要件に応じて保守で省略可能なその他のインターフェイスについて詳しく説明します。  
+次の表は、プロジェクトモデルで拡張されています。 この表では、モデルで識別されるインターフェイスとサービス、および特定のオブジェクトに関連付けられているインターフェイスとサービスについて簡単に説明します。 また、特定のプロジェクトの種類の要件に応じて、プロジェクトの作成とメンテナンスでオプションとなる他のインターフェイスの詳細も示します。  
   
- 詳細については、次を参照してください。[をサポートしているシンボル参照ツール](../../extensibility/internals/supporting-symbol-browsing-tools.md)します。  
+ 詳細については、「 [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。  
   
-### <a name="package-object"></a>パッケージ オブジェクト  
+### <a name="package-object"></a>パッケージオブジェクト  
   
-|Interface|コメント|  
+|インターフェイス|コメント|  
 |---------------|--------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|IDE に VSPackage を初期化し、そのサービスを IDE で使用できるようにします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|IDE で VSPackage を初期化し、そのサービスを IDE で使用できるようにします。|  
   
-### <a name="project-factory-object"></a>プロジェクト ファクトリ オブジェクト  
+### <a name="project-factory-object"></a>プロジェクトファクトリオブジェクト  
   
-|Interface|コメント|  
+|インターフェイス|コメント|  
 |---------------|--------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|新しいプロジェクトを作成して既存のプロジェクトを開くを管理します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|新しいプロジェクトの作成と、既存のプロジェクトのオープンを管理します。|  
   
-### <a name="project-objects"></a>プロジェクト オブジェクト  
+### <a name="project-objects"></a>プロジェクトオブジェクト  
   
 |インターフェイス|コメント|  
 |----------------|--------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|加算とプロジェクト アイテムの削除を管理し、エディターを開き、各ドキュメント モニカーの間のマッピングを保持して、`VSITEMID`します。 継承`IVsProject`と`IVsProject2`します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|ナビゲーションおよび表示プロパティを管理し、イベントを提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>|有効コマンドの実行と類似の`IOleCommandTarget`切り取りおよび名前の変更などのフォーカスがソリューション エクスプ ローラーであるときのみに適用されるコマンド。|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|プロジェクト階層のプライマリ コマンド ターゲットのインターフェイスとして機能します。 これは、コマンドの状態または状態と実行コマンドのオブジェクトに対するクエリの標準のインターフェイスです。 [プロジェクト] ウィンドウには注目されていないときに使用できます。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|プロジェクトの状態の永続化を調整します。 通常、プロジェクトの状態は、プロジェクト ファイルとして保存されますが、ファイル ベースでないストレージ システムに適応させることができます。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>|永続化のいずれかのファイルとしてディスクまたはその他のストレージ システム内のオブジェクトに、そのプロジェクト アイテムのすべての側面を管理するプロジェクトを有効にします。 `IVsPeristHierarchyItem2`インターフェイスを実装していない項目の使用、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>インターフェイス。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|ソース コード管理との対話を調整します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfgProvider>|プロジェクト構成情報の管理を有効にします。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>|デバッグ/リリースの構成などのプロジェクト構成オブジェクトを管理します。 ビルド、デプロイ、およびデバッグ操作がプロジェクト構成オブジェクトを使用して調整されます。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler>|(破壊的な) の削除を制御または階層アイテムの (非破壊的な) のオプションを削除する階層によって実装されます。 クエリ インターフェイスを呼び出す、`IVsHierarchyDeleteHandler`からインターフェイス、`IVsHierarchy`インターフェイス。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsGetCfgProvider>|サポートするオブジェクトの実装オプションを提供します、`IVsCfgProvider2`インターフェイスを実装するプロジェクトのオブジェクトよりも、別の COM id を`IVsHierarchy`インターフェイス。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectStartupServices>|省略可能なインターフェイスが他の開発者が拡張可能なプロジェクトを作成するために実装します。 `IVsProjectStartupServices`インターフェイスにより、プロジェクト ファイルと呼び出しにサード パーティのサービスの GUID を読み込むたびに、プロジェクトが読み込まれるように、プロジェクト ファイルに永続化する GUID を登録するためにサード パーティ VSPackage`QueryService`の GUID。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelperEvents>|ソース階層でによって実装される、`UIHierarchy`ウィンドウを切り取り、コピーなどのクリップボード操作を調整し、貼り付けます。 使用して、`AdviseClipboardHelperEvents`クリップボード イベントを登録するインターフェイス。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataSource2>|UI 階層ウィンドウで、ドラッグ アンド ドロップ操作中にそのデータ ソースの基準としたドラッグした項目について説明します。 呼び出される、`IVsHierarchy`インターフェイス。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataTarget>|UI 階層ウィンドウで、ドラッグ アンド ドロップ操作中にドロップ ターゲットに対するドラッグした項目について説明します。 呼び出される、`IVsHierarchy`インターフェイス。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|プロジェクト項目の追加と削除を管理し、エディターを開き、各ドキュメントモニカーとの間のマッピングを維持し `VSITEMID` ます。 `IVsProject` と `IVsProject2` から継承されます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|ナビゲーションと表示のプロパティを管理し、イベントを提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>|`IOleCommandTarget`ソリューションエクスプローラーにフォーカスがある場合にのみ適用される切り取りや名前の変更などのコマンドに対して、コマンドの実行を有効にします。|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|プロジェクト階層の主要なコマンドターゲットインターフェイスとして機能します。 これは、オブジェクトに対してコマンドの状態または状態のクエリを実行し、コマンドを実行するための標準インターフェイスです。 プロジェクトウィンドウでフォーカスされていない場合に使用できます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|プロジェクトの状態の永続性を調整します。 通常、プロジェクトの状態はプロジェクトファイルとして保存されますが、ファイルベースではない記憶域システムに適応させることができます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>|プロジェクトが、ディスク上のファイルまたは他のストレージシステム内のオブジェクトとして、プロジェクト項目の永続化のすべての側面を管理できるようにします。 インターフェイスは `IVsPeristHierarchyItem2` 、インターフェイスを実装しない項目に使用され <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|ソースコード管理との相互作用を調整します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfgProvider>|プロジェクトで構成情報を管理できるようにします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>|デバッグ/リリース構成などのプロジェクト構成オブジェクトを管理します。 ビルド、配置、およびデバッグの各操作は、プロジェクト構成オブジェクトを使用して調整されます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler>|階層項目の削除 (破壊) オプションまたは削除 (非破壊的) オプションを制御するために、階層によって実装されます。 インターフェイスからインターフェイスのクエリインターフェイスを呼び出し `IVsHierarchyDeleteHandler` `IVsHierarchy` ます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsGetCfgProvider>|インターフェイスを `IVsCfgProvider2` 実装するプロジェクトオブジェクトとは異なる COM id で、インターフェイスをサポートするオブジェクトを持つ実装オプションを提供し `IVsHierarchy` ます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectStartupServices>|他の開発者がプロジェクトを拡張できるように実装された省略可能なインターフェイス。 `IVsProjectStartupServices`インターフェイスを使用すると、サードパーティの VSPackage はプロジェクトファイルに保存されている guid を登録して、プロジェクトが読み込まれるたびに、サードパーティのサービス GUID をプロジェクトファイルに読み込み、その guid のを呼び出すことができるようにし `QueryService` ます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelperEvents>|`UIHierarchy`切り取り、コピー、貼り付けなどのクリップボード操作を調整するために、ウィンドウにソース階層によって実装されます。 `AdviseClipboardHelperEvents`クリップボードイベントを登録するには、インターフェイスを使用します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataSource2>|UI 階層ウィンドウでのドラッグアンドドロップ操作中に、データソースに対して相対的にドラッグされた項目に関する情報を提供します。 インターフェイスから呼び出され `IVsHierarchy` ます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDropDataTarget>|UI 階層ウィンドウでのドラッグアンドドロップ操作中に、ドロップ先に対してドラッグした項目に関する情報を提供します。 インターフェイスから呼び出され `IVsHierarchy` ます。|  
   
 ### <a name="configuration-object"></a>構成オブジェクト  
   
 |インターフェイス|コメント|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|構成に関する情報を提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|プロジェクト構成情報の管理を有効にします。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|デバッガーの制御下で実行するプロジェクトを有効にします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|プロジェクトで構成情報を管理できるようにします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|デバッガーの制御下でプロジェクトを実行できるようにします。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>|他のプロジェクトの配置操作を実行する配置プロジェクトによって実装されます。|  
   
-### <a name="configuration-builder-object"></a>構成ビルダー オブジェクト  
+### <a name="configuration-builder-object"></a>構成ビルダーオブジェクト  
   
 |インターフェイス|コメント|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|プロジェクト構成のビルド操作を管理します。|  
   
-### <a name="additional-project-objects"></a>その他のプロジェクト オブジェクト  
+### <a name="additional-project-objects"></a>追加のプロジェクトオブジェクト  
   
 |インターフェイス|コメント|  
 |----------------|--------------|  
-|`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|表示項目のプロパティ、**プロパティ**ウィンドウ。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|デプロイの出力が表示されます。|  
+|`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|項目のプロパティを [ **プロパティ** ] ウィンドウに表示します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|配置の出力を表示します。|  
   
- 次の表は、プロジェクト モデルで識別されたサービスの簡単な説明を表示します。  
+ 次の表に、プロジェクトモデルで識別されるサービスの簡単な説明を示します。  
   
-### <a name="services"></a>Services  
+### <a name="services"></a>サービス  
   
 |サービス|コメント|  
 |-------------|--------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|IDE でそのプロジェクト ファクトリが存在するプロジェクトの種類を登録するを実装する Vspackage によって使用されます。 VSPackage を呼び出す必要があります`QueryService`このサービスし、そのプロジェクト ファクトリを登録するときに`IVsPackage::SetSite`メソッドが呼び出されます。 場合、`SetSite`メソッドが呼び出されなかった、プロジェクトがインスタンス化されません。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|現在のソリューション、プロジェクトの列挙、新しいプロジェクトを作成、プロジェクトの変更に注意してください。 およびにする機能などの IDE の内部の組み込みの概念へのアクセスを提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>|ソース管理に参加するプロジェクトによって呼び出されます。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>|1 つ以上のプロジェクト項目が既に開かれているかどうかを判断する開いているドキュメントのテーブルを保持します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument>|インターフェイスと実際には、標準のエディターまたは特定のエディターを使用してプロジェクト項目を開くと呼ばれるメソッドが含まれています。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>|必要なときに呼び出されるすべてのプロジェクトで追加、削除またはその項目の名前を変更します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>|ファイルまたはディレクトリへの変更を管理し、選択したファイルがディスクに変更されたときにクライアントに通知します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>|必要な項目がダーティかに保存する前に、すべてのプロジェクトとエディターによって呼び出されます。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager>|プロジェクト構成のビルドと展開の操作の順序を管理します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger>|ほとんどのデバッグ コントロールで使用される低レベル デバッガー サービスへのアクセスを提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>|現在の選択に関する情報にアクセスを Vspackage との通信を可能、**プロパティ**ウィンドウ。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|作成し、ツール ウィンドウまたはドキュメント ウィンドウを列挙する機能や、ユーザーに、エラーを報告する機能などの IDE の UI 関連の基本的な機能を提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|IDE のステータス バーへのアクセスを提供します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|オートメーション モデルを実装するために使用します。 プロジェクト モデルを返すはできるようにするプロパティ オブジェクトは、そのオブジェクトのインスタンスを作成します。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|プロジェクト オブジェクト階層内のクリップボードのイベントを実装するために使用します。 `SVsUIHierWinClipboardHelper` できます正しくハンドルの切り取り、コピー、および貼り付け操作。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|プロジェクトファクトリが IDE に存在することを登録するプロジェクトの種類を実装する Vspackage によって使用されます。 VSPackage `QueryService` は、メソッドが呼び出されたときに、このサービスに対してを呼び出し、プロジェクトファクトリを登録する必要があり `IVsPackage::SetSite` ます。 `SetSite`メソッドが呼び出されていない場合、プロジェクトはインスタンス化されません。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|プロジェクトの列挙、新しいプロジェクトの作成、プロジェクトの変更の通知など、現在のソリューションに組み込まれている組み込みの概念にアクセスできるようにします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>|ソース管理に参加する必要があるプロジェクトによって呼び出されます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>|開いているドキュメントのテーブルを保持し、1つ以上のプロジェクト項目が既に開かれているかどうかを確認します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument>|標準エディターまたは特定のエディターを使用してプロジェクト項目を実際に開くために呼び出されるインターフェイスとメソッドを含みます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>|項目を追加、削除、または名前変更するときに、すべてのプロジェクトによって呼び出される必要があります。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>|ファイルまたはディレクトリへの変更を管理し、選択したファイルがディスク上で変更されたことをクライアントに通知します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>|項目をダーティにしたり保存したりする前に、すべてのプロジェクトとエディターによって呼び出される必要があります。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager>|プロジェクト構成のビルドおよび配置操作の順序を管理します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger>|ほとんどのデバッグコントロールに使用される低レベルのデバッガーサービスへのアクセスを提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>|現在選択されている情報への Vspackage アクセスを有効にし、[ **プロパティ** ] ウィンドウとの通信を有効にします。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|ツールウィンドウまたはドキュメントウィンドウを作成および列挙する機能や、ユーザーにエラーを報告する機能など、UI に関連する基本的な IDE 機能を提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|IDE のステータスバーへのアクセスを提供します。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|オートメーションモデルを実装するために使用されます。 プロジェクトモデルでは、オブジェクトのインスタンスを作成できるプロパティオブジェクトが返されます。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|階層内のプロジェクトオブジェクトにクリップボードイベントを実装するために使用されます。 `SVsUIHierWinClipboardHelper` 切り取り、コピー、および貼り付けの各操作を正しく処理できます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [: ビルドに存在しませんHierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装するには](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [チェックリスト: 新しいプロジェクトの種類の作成](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [ビルド内にありません: HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [プロジェクト モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)

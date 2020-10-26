@@ -1,5 +1,5 @@
 ---
-title: Idiasectioncontrib::get_code16bit |Microsoft Docs
+title: 'IDiaSectionContrib:: get_code16bit |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aceb4956b7ce2517087511676ebeff2b061b673
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576989"
 ---
-# <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
+# <a name="idiasectioncontribget_code16bit"></a>IDiaSectionContrib::get_code16bit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-セクションに 16 ビットのコードが含まれているかどうかを示すフラグを取得します。  
+セクションに16ビットコードが含まれているかどうかを示すフラグを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -35,13 +35,13 @@ HRESULT get_code16bit(
   
 #### <a name="parameters"></a>パラメーター  
  `pRetVal`  
- [out]返します`TRUE`セクションのコードが 16 ビット、それ以外の場合は、返す`FALSE`します。  
+ 入出力 `TRUE` セクション内のコードが16ビットの場合はを返します。それ以外の場合はを返し `FALSE` ます。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- このメソッドでは、コードは 16 ビットをのみを示します。 コードがない 16 ビットの場合は、32 ビットまたは 64 ビットのコードなどの他に何も可能性があります。  
+## <a name="remarks"></a>注釈  
+ このメソッドは、コードが16ビットであるかどうかのみを示します。 コードが16ビットでない場合は、32ビットコードや64ビットコードなど、他のものである可能性があります。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

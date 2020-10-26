@@ -15,13 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0830cec748d68f010397c42334a5ed83365ee6b7
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016486"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>方法: デザイナーを使用して SharePoint Web パーツを作成する
-  Web パーツを作成するには、SharePoint プロジェクトに**視覚的 Web パーツ**項目を追加します。 これを行うと、Visual Studio で Visual Web Developer デザイナーが開きます。このデザイナーでは、コントロールとコードを Web パーツに追加できます。 視覚的 Web パーツは Web パーツと同じように機能します。 唯一の違いは、視覚的 Web パーツのデザインは Visual Web Developer デザイナーで行うことです。
+  Web パーツを作成するには、SharePoint プロジェクトに **視覚的 Web パーツ** 項目を追加します。 これを行うと、Visual Studio で Visual Web Developer デザイナーが開きます。このデザイナーでは、コントロールとコードを Web パーツに追加できます。 視覚的 Web パーツは Web パーツと同じように機能します。 唯一の違いは、視覚的 Web パーツのデザインは Visual Web Developer デザイナーで行うことです。
 
 ### <a name="to-create-a-project-for-visual-web-parts"></a>視覚的 Web パーツのプロジェクトを作成するには
 
@@ -29,13 +30,13 @@ ms.locfileid: "86016486"
 
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-2. [**新しいプロジェクト**] ダイアログボックスの [ **Visual C#** ] または [ **Visual Basic**] で、[ **Office/SharePoint** ] ノードを展開し、[ **sharepoint ソリューション**] カテゴリを選択します。
+2. [ **新しいプロジェクト** ] ダイアログボックスの [ **Visual C#** ] または [ **Visual Basic**] で、[ **Office/SharePoint** ] ノードを展開し、[ **sharepoint ソリューション** ] カテゴリを選択します。
 
 3. プロジェクトテンプレートの一覧で、[ **SharePoint 2013-視覚的 Web パーツ**] を選択し、[ **OK** ] をクリックします。
 
      **SharePoint カスタマイズウィザード**が表示されます。
 
-4. [**デバッグのサイトとセキュリティレベルの指定**] ページで、ローカルコンピューター上の SharePoint サイトの URL を指定し、[**完了**] をクリックします。
+4. [ **デバッグのサイトとセキュリティレベルの指定** ] ページで、ローカルコンピューター上の SharePoint サイトの URL を指定し、[ **完了** ] をクリックします。
 
      **ソリューションエクスプローラー**では、web パーツが表示されます。 Visual Web Developer デザイナーで web パーツをデザインした後、指定したサイトでテストを行います。
 
@@ -43,9 +44,9 @@ ms.locfileid: "86016486"
 
 1. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-2. [**新しい項目の追加**] ダイアログボックスで、[ **Office/SharePoint** ] ノードを選択します。
+2. [ **新しい項目の追加** ] ダイアログボックスで、[ **Office/SharePoint** ] ノードを選択します。
 
-3. プロジェクトテンプレートの一覧で [**視覚的 Web パーツ**] を選択し、名前を「」にして、[**追加**] ボタンをクリックします。
+3. プロジェクトテンプレートの一覧で [ **視覚的 Web パーツ**] を選択し、名前を「」にして、[ **追加** ] ボタンをクリックします。
 
      **ソリューションエクスプローラー**では、web パーツが表示されます。 Visual Web Developer デザイナーで web パーツをデザインした後、指定したサイトでテストを行います。
 

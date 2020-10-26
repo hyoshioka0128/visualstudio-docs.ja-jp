@@ -1,5 +1,5 @@
 ---
-title: '警告: &#39;プロジェクト&#39; &#39;プロジェクト&#39;の依存関係ファイルは、参照&#39;ファイルを上書きするため、実行ディレクトリにコピーできません。&#39; |Microsoft Docs'
+title: '警告: プロジェクト &#39;&#39; プロジェクトの依存関係 &#39;ファイル&#39; は、参照 &#39;ファイルを上書きするため、実行ディレクトリにコピーできません。 &#39; |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672819"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告: &#39;プロジェクト&#39; &#39;プロジェクト&#39;の依存関係ファイルは、参照&#39;ファイルを上書きするため、実行ディレクトリにコピーできません。&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告: プロジェクト &#39;&#39; プロジェクトの依存関係 &#39;ファイル&#39; は、参照 &#39;ファイルを上書きするため、実行ディレクトリにコピーできません。 &#39;
 依存関係間で競合が発生しています。同じ名前の複数の異なるアセンブリ ファイルを、アプリケーションを実行する bin ディレクトリにコピーする必要があります。 依存関係の 1 つがプライマリ参照であるため、実行ディレクトリは競合を解決することができます。
 
  このタスク一覧項目をダブルクリックすると、競合しているプライマリ参照ノードに移動します。

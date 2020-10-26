@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: context 演算子 (C++)
                   href: context-operator-cpp.md
-                - name: 'C# の書式指定子'
+                - name: C# の書式指定子
                   href: format-specifiers-in-csharp.md
                 - name: 擬似変数
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: Web プロジェクトのプロパティ ページ設定
               href: property-pages-settings-for-web-projects.md
-            - name: 'C# デバッグ構成のプロジェクト設定'
+            - name: C# デバッグ構成のプロジェクト設定
               href: project-settings-for-csharp-debug-configurations.md
             - name: Visual Basic デバッグ構成のプロジェクト設定
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: ビジュアライザーのアーキテクチャ
                   href: visualizer-architecture.md
-                - name: 'C# でビジュアライザーを記述する'
+                - name: C# でビジュアライザーを記述する
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Visual Basic でビジュアライザーを記述する
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: サポートされているコード変更 (C++)
               href: supported-code-changes-cpp.md
-        - name: 'エディット コンティニュ (Visual C#)'
+        - name: エディット コンティニュ (Visual C#)
           items:
-            - name: 'エディット コンティニュ (Visual C#)'
+            - name: エディット コンティニュ (Visual C#)
               href: edit-and-continue-visual-csharp.md
-            - name: 'エディット コンティニュを使用する (C#)'
+            - name: エディット コンティニュを使用する (C#)
               href: how-to-use-edit-and-continue-csharp.md
-            - name: 'サポートされているコード変更 (C#)'
+            - name: サポートされているコード変更 (C#)
               href: supported-code-changes-csharp.md
         - name: エディット コンティニュ (Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Visual Basic エディット コンティニュでサポートされていない編集
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'F# ではエディット コンティニュはサポートされません。'
+        - name: F# ではエディット コンティニュはサポートされません。
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: ダンプ ファイルの使用
       items:
@@ -396,15 +396,15 @@
                   href: quickstart-debug-javascript-using-the-console.md
                 - name: JavaScript Console commands
                   href: javascript-console-commands.md
-            - name: 'デバッグ セッションを開始する (VB、C#、C++、および XAML)'
+            - name: デバッグ セッションを開始する (VB、C#、C++、および XAML)
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Blend for Visual Studio 内で XAML をデバッグする
               href: debug-xaml-in-blend.md
-            - name: 'デバッグ セッションのナビゲート (XAML および C#)'
+            - name: デバッグ セッションのナビゲート (XAML および C#)
               items:
-                - name: 'デバッグ セッションのナビゲート (XAML および C#)'
+                - name: デバッグ セッションのナビゲート (XAML および C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: 'デバッガーのナビゲーションのサンプル コード (Xaml および C#)'
+                - name: デバッガーのナビゲーションのサンプル コード (Xaml および C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: Windows ストアの中断、再開、およびバックグラウンド イベントをトリガーする
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -414,9 +414,9 @@
       items:
         - name: マネージド コードのデバッグ
           href: debugging-managed-code.md
-        - name: 'C#、F#、Visual Basic プロジェクト タイプ'
+        - name: C#、F#、Visual Basic プロジェクト タイプ
           items:
-            - name: 'C#、F#、および Visual Basic のプロジェクト'
+            - name: C#、F#、および Visual Basic のプロジェクト
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: プロパティの推奨設定
               href: managed-debugging-recommended-property-settings.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: WPF トレース情報を表示する
               href: how-to-display-wpf-trace-information.md
-        - name: 'F# のデバッグ'
+        - name: F# のデバッグ
           href: debugging-f-hash.md
     - name: ネイティブ コードのデバッグ
       items:

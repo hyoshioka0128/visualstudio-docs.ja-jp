@@ -1,5 +1,5 @@
 ---
-title: 表現2::評価シンク |マイクロソフトドキュメント
+title: 'IDebugExpression2:: EvaluateSync |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729674"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
@@ -47,30 +47,30 @@ int EvaluateSync(
 
 ## <a name="parameters"></a>パラメーター
 `dwFlags`\
-[in]式の評価を制御する[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列挙体のフラグの組み合わせ。
+から式の評価を制御する [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙のフラグの組み合わせ。
 
 `dwTimeout`\
-[in]このメソッドから戻るまでの最大待機時間 (ミリ秒単位)。 無期限`INFINITE`に待機するために使用します。
+からこのメソッドから戻る前に待機する最大時間 (ミリ秒単位)。 `INFINITE`無期限に待機するには、を使用します。
 
 `pExprCallback`\
-[in]このパラメーターは常に NULL 値です。
+からこのパラメーターは常に null 値です。
 
 `ppResult`\
-[アウト]式の評価結果を含む[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトを返します。
+入出力式の評価結果を含む [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 一般的なエラー コードは次のとおりです。
+成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 一般的なエラーコードは次のとおりです。
 
 |エラー|説明|
 |-----------|-----------------|
-|E_EVALUATE_BUSY_WITH_EVALUATION|別の式が現在評価中であり、同時式の評価はサポートされていません。|
+|E_EVALUATE_BUSY_WITH_EVALUATION|現在、別の式が評価されていますが、同時式の評価はサポートされていません。|
 |E_EVALUATE_TIMEOUT|評価がタイムアウトしました。|
 
-## <a name="remarks"></a>Remarks
-同期評価では、評価の完了時にイベントを Visual Studio に返送する必要はありません。
+## <a name="remarks"></a>解説
+同期評価の場合、評価の完了時にイベントを Visual Studio に返信する必要はありません。
 
 ## <a name="example"></a>例
-`CExpression` [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を次の例に示します。
+次の例は、IDebugExpression2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CExpression` います。 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

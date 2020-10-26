@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6646f669bf2c465d8e0f705f8fba956b979952ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667160"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>データセットの読み込み中に制約をオフにする
@@ -38,7 +38,7 @@ ms.locfileid: "72667160"
  一時的に制約を中断する機構がない場合は、レコードを子テーブルに読み込もうとするたびにエラーが生成されます。 データセットのすべての制約を中断する別の方法として、<xref:System.Data.DataRow.BeginEdit%2A> プロパティおよび <xref:System.Data.DataRow.EndEdit%2A> プロパティを使用できます。
 
 > [!NOTE]
-> 検証イベント (たとえば、<xref:System.Data.DataTable.ColumnChanging> や <xref:System.Data.DataTable.RowChanging>) は、制約がオフになっている場合には発生しません。
+> 検証イベント ( <xref:System.Data.DataTable.ColumnChanging> やなど <xref:System.Data.DataTable.RowChanging> ) は、制約がオフになっている場合には発生しません。
 
 ### <a name="to-suspend-update-constraints-programmatically"></a>更新制約をプログラムによって中断するには
 
@@ -49,7 +49,7 @@ ms.locfileid: "72667160"
 
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>データセット デザイナーを使って更新制約を中断するには
 
-1. データセットデザイナーでデータセットを開きます。 詳細については、「[方法: データセットデザイナーでデータセットを開く](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)」を参照してください。
+1. データセット デザイナーでデータセットを開きます。 詳細については、「 [方法: データセットデザイナーでデータセットを開く](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)」を参照してください。
 
 2. **[プロパティ]** ウィンドウで、 <xref:System.Data.DataSet.EnforceConstraints%2A> プロパティを `false`に設定します。
 

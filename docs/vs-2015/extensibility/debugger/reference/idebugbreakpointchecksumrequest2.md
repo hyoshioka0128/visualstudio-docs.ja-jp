@@ -11,37 +11,37 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d06656ba05c3356d9f2a148045adbf4538c5ae5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431616"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ブレークポイント要求のチェックサムをドキュメントを表します。  
+ブレークポイント要求のドキュメントチェックサムを表します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugBreakpointChecksumRequest2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- によって実装される、[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]デバッグ パッケージ化とデバッグ エンジンで使用します。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ デバッグパッケージによって実装さ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] れ、デバッグエンジンによって使用されます。  
   
 ## <a name="methods"></a>メソッド  
- 次の表は、メソッドの`IDebugBreakpointChecksumRequest2`します。  
+ 次の表に、のメソッドを示し `IDebugBreakpointChecksumRequest2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|使用するチェックサム アルゴリズムの一意の識別子を指定されたブレークポイント要求のドキュメントのチェックサムを取得します。|  
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|このドキュメントのチェックサムが有効になっているかどうかを決定します。|  
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|使用するチェックサムアルゴリズムの一意の識別子を指定して、ブレークポイント要求のドキュメントチェックサムを取得します。|  
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|このドキュメントに対してチェックサムを有効にするかどうかを決定します。|  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー:Msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: Msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll

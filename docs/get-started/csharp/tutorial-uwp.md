@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
-ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
+ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80543939"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88249246"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
@@ -160,7 +160,6 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 コードでいくつかの Windows API が使用され、いくつかのテキストを読み上げられる、音声合成オブジェクトが作成されました。 (`SpeechSynthesis` の使用に関する詳細は、「<xref:System.Speech.Synthesis>」をご覧ください)。
 
 ## <a name="run-the-application"></a>アプリケーションの実行
-
 
 ::: moniker range="vs-2017"
 "Hello World" UWP アプリを、ビルド、配置、および起動して、どのように表示および読み上げがあるか確認してみましょう。 ここではその方法を説明します。

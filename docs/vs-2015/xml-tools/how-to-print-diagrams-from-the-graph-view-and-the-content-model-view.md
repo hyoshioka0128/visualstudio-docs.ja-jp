@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: de59aac6bc40e58b6da9b71fd0cc81d432fe41bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670842"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>方法: グラフ ビューおよびコンテンツ モデル ビューからダイアグラムを出力する
@@ -23,7 +23,7 @@ ms.locfileid: "72670842"
 
 ### <a name="to-print-diagrams-from-the-xml-schema-designer"></a>XML スキーマ デザイナーからダイアグラムを出力するには
 
-1. Visual Studio で XSD ファイルを開き、いくつかのノードを[XML スキーマデザイナーワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加します。
+1. Visual Studio で XSD ファイルを開き、いくつかのノードを [XML スキーマデザイナーワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加します。
 
 2. **図をイメージとしてエクスポート**することにより、図を XPS ファイルにエクスポートします... グラフビューまたはコンテンツモデルビューのデザインサーフェイスのコンテキストメニュー項目。
 

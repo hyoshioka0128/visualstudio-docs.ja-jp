@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537346"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>このプロジェクトの作成に使用されるブックには、デザイナーで読み込めない ActiveX コントロールが含まれています
@@ -28,7 +28,7 @@ ms.locfileid: "85537346"
 
 1. 文書またはブックを開きます。
 
-2. 実行時に追加されたコントロールを削除します。 これを行うには、ドキュメントまたはブックでそれらを選択し、 **del**キーを押します。
+2. 実行時に追加されたコントロールを削除します。 これを行うには、ドキュメントまたはブックでそれらを選択し、 **del** キーを押します。
 
 3. 文書またはブックに基づいたドキュメント レベルのソリューションを作成します。
 

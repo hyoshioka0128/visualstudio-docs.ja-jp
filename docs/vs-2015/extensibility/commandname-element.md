@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 113f420aa4cbbed9454df1ee0c0dd8aafd09a548
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184320"
 ---
 # <a name="commandname-element"></a>CommandName 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`CommandName`要素がキーボードのカテゴリに表示されるテキストを指定します、**オプション**ダイアログ ボックスで、および、**コマンド**の一覧で、**カスタマイズ**ダイアログボックス。  
+要素は、[ `CommandName` **オプション**] ダイアログボックスの [キーボード] カテゴリに表示されるテキストと、[**カスタマイズ**] ダイアログボックスの [**コマンド**] ボックスの一覧に表示されるテキストを指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -42,7 +42,7 @@ ms.locfileid: "68184320"
   
 |要素|説明|  
 |-------------|-----------------|  
-|[ 要素](../extensibility/strings-element.md)|など、テキスト要素をグループ化`ButtonText`と`CommandName`します。|  
+|[Strings 要素](../extensibility/strings-element.md)|やなどのテキスト要素をグループ化し `ButtonText` `CommandName` ます。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

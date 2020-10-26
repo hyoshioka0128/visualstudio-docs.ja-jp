@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651868"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する
@@ -40,7 +40,7 @@ ms.locfileid: "72651868"
 
   たとえば、次のディレクトリには英語用の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト テンプレートが含まれています。
 
-  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>カスタム テンプレート
  既定では、カスタム テンプレートは次の場所に配置されます。
@@ -53,7 +53,7 @@ ms.locfileid: "72651868"
 
   C:\Documents and Settings\<ユーザー名>\My Documents\\<Visual Studio バージョン\>\Templates\ProjectTemplates\Visual C#\
 
-  カスタム テンプレートには、ローカライズされたテンプレート用のサブディレクトリは含まれていません。 カスタム テンプレートの既定ディレクトリは、 **[オプション]** ダイアログ ボックスの **[環境] > [プロジェクトおよびソリューション]** で変更できます。
+  カスタム テンプレートには、ローカライズされたテンプレート用のサブディレクトリは含まれていません。 カスタム テンプレートの既定ディレクトリは、**[オプション]** ダイアログ ボックスの **[環境] > [プロジェクトおよびソリューション]** で変更できます。
 
 ## <a name="organizing-templates"></a>テンプレートの整理
  **[新しいプロジェクト]** ダイアログ ボックスおよび **[新しい項目の追加]** ダイアログ ボックスには、インストールされたテンプレートやカスタム テンプレートの場所のディレクトリ構造がカテゴリとして反映されます。 これらのディレクトリ構造を変更することにより、自分にとってわかりやすいようにテンプレートを整理できます。
@@ -61,7 +61,7 @@ ms.locfileid: "72651868"
 > [!NOTE]
 > プログラミング言語のレベルでは、新しいカテゴリを作成できません。 新しいカテゴリは、各言語内でのみ作成できます。
 
- 特定言語について、インストールされたテンプレートとカスタム テンプレートのディレクトリ構造が異なる場合 (あるフォルダーについて、片方では下位にディレクトリがあり、もう片方ではディレクトリがない場合)、 **[新しいプロジェクト]** ダイアログ ボックスでは、すべてのカテゴリをマージしたカテゴリのセットが表示されます。
+ 特定言語について、インストールされたテンプレートとカスタム テンプレートのディレクトリ構造が異なる場合 (あるフォルダーについて、片方では下位にディレクトリがあり、もう片方ではディレクトリがない場合)、**[新しいプロジェクト]** ダイアログ ボックスでは、すべてのカテゴリをマージしたカテゴリのセットが表示されます。
 
 ### <a name="organizing-installed-templates"></a>インストールされたテンプレートの整理
  インストールされたテンプレートを整理するには、プログラミング言語のフォルダー内にサブディレクトリを作成します。 これらのサブディレクトリは、各言語の **[新しいプロジェクト]** ダイアログ ボックスおよび **[新しい項目の追加]** ダイアログ ボックスで、仮想フォルダーとして表示されます。
@@ -76,13 +76,13 @@ ms.locfileid: "72651868"
 
 3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのインスタンスを閉じます。
 
-4. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックし、「**cmd**」と入力し、 **[OK]** をクリックします。
+4. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックし、「**cmd**」と入力し、**[OK]** をクリックします。
 
 5. コマンド プロンプトで、devenv.exe を含むディレクトリに移動し、「**devenv /installvstemplates**」と入力します。
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を実行します。
 
-7. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+7. **[ファイル]** メニューの **[新規作成]** をクリックし、**[プロジェクト]** をクリックします。
 
 8. Office カテゴリが **[新しいプロジェクト]** ダイアログ ボックスの **[プロジェクトの種類]** ウィンドウの [[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]] の下に表示されることを確認します。
 
@@ -98,7 +98,7 @@ ms.locfileid: "72651868"
 
 3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のすべてのインスタンスを閉じます。
 
-4. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックし、「**cmd**」と入力し、 **[OK]** をクリックします。
+4. **[スタート]** メニューの **[ファイル名を指定して実行]** をクリックし、「**cmd**」と入力し、**[OK]** をクリックします。
 
 5. コマンド プロンプトで、devenv.exe を含むディレクトリに移動し、「**devenv /setup**」と入力します。
 
@@ -121,7 +121,7 @@ ms.locfileid: "72651868"
 
 2. このカテゴリのすべてのテンプレートを新しいフォルダーに配置します。
 
-3. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。
+3. **[ファイル]** メニューの **[新規作成]** をクリックし、**[プロジェクト]** をクリックします。
 
 4. HelloWorld カテゴリが **[新しいプロジェクト]** ダイアログ ボックスの **[プロジェクトの種類]** ウィンドウの [[!INCLUDE[csprcs](../includes/csprcs-md.md)]] の下に表示されることを確認します。
 
@@ -166,11 +166,11 @@ ms.locfileid: "72651868"
 
 5. .vstemplate ファイルを保存して、閉じます。
 
-6. テンプレートでファイルを選択して右クリックし、 **[送る]** をクリックして **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルは .zip ファイルに圧縮されます。
+6. テンプレートでファイルを選択して右クリックし、**[送る]** をクリックして **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルは .zip ファイルに圧縮されます。
 
 7. 抽出したテンプレート ファイルと古いテンプレート .zip ファイルを削除します。
 
 8. 削除した .zip ファイルが含まれていたディレクトリに、新しい .zip ファイルを配置します。
 
 ## <a name="see-also"></a>参照
- [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md) [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md) [NumberOfParentCategoriesToRollUp (visual Studio テンプレート)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) [方法: プロジェクトテンプレートを作成](../ide/how-to-create-project-templates.md)する方法[: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
+ [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md) [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md) [NumberOfParentCategoriesToRollUp (visual Studio テンプレート)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) [方法: プロジェクトテンプレートを作成](../ide/how-to-create-project-templates.md)する方法 [: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)

@@ -10,21 +10,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544158"
 ---
 # <a name="properties-of-domain-relationships"></a>ドメイン リレーションシップのプロパティ
-次の表のプロパティは、ドメインリレーションシップに関連付けられています。 ドメインリレーションシップの詳細については、「[モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「[ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
+次の表のプロパティは、ドメインリレーションシップに関連付けられています。 ドメインリレーションシップの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
 
 |プロパティ|説明|Default|
 |-|-|-|
 |アクセス修飾子|ドメインリレーションシップのアクセスレベル ( `public` または `internal` )。|`public`|
 |カスタム属性|ドメインリレーションシップから生成されるソースコードクラスに属性を追加するために使用します。|\<none>|
-|2つの派生を生成します|`True`の場合、基本クラスと部分クラスの両方 (オーバーライドによるカスタマイズをサポートするため) が生成されます。 詳細については、「[生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|`False`|
-|カスタムコンストラクターがある|`True`の場合、カスタムコンストラクターがソースコードに指定されていることを示します。 詳細については、「[生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|`False`|
+|2つの派生を生成します|`True`の場合、基本クラスと部分クラスの両方 (オーバーライドによるカスタマイズをサポートするため) が生成されます。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|`False`|
+|カスタムコンストラクターがある|`True`の場合、カスタムコンストラクターがソースコードに指定されていることを示します。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|`False`|
 |継承修飾子|ドメインリレーションシップ ( `none` 、または) から生成されるソースコードクラスの継承の種類について説明し `abstract` `sealed` ます。|\<none>|
 |重複を許可|の場合 `True` 、同じ2つの要素間にドメインリレーションシップの重複するリンクを作成できます。|`False`|
 |基本リレーションシップ|ドメインリレーションシップが派生している場合は、ドメインリレーションシップの基本関係。|\<none>|

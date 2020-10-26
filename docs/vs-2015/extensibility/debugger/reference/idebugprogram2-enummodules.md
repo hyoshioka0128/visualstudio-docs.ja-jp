@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumModules |Microsoft Docs
+title: 'IDebugProgram2:: EnumModules |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5e133045c83b62892850ede552d1f9cfd886506
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202744"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このプログラムが読み込まれてが実行されているモジュールの一覧を取得します。  
+このプログラムによって読み込まれ、実行されているモジュールの一覧を取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,14 +40,14 @@ int EnumModules( 
   
 #### <a name="parameters"></a>パラメーター  
  `ppEnum`  
- [out]返します、 [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)モジュールの一覧を格納しているオブジェクト。  
+ 入出力モジュールの一覧を含む [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) オブジェクトを返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- モジュールは DLL またはアセンブリには、通常記載、**モジュール**デバッグ ウィンドウ。  
+## <a name="remarks"></a>注釈  
+ モジュールは DLL またはアセンブリであり、通常は **モジュール** デバッグウィンドウに表示されます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

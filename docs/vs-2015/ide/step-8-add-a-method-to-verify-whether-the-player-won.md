@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2481693961dd03815381e9f71ee67cb73464bdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646939"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加
@@ -37,10 +37,10 @@ ms.locfileid: "72646939"
 
 3. プログラムを保存し、実行します。 ゲームを実行し、すべてのアイコンを一致させます。 勝利すると、プログラムでは、次の図に示すように MessageBox を表示し、その後にボックスを閉じます。
 
-     ![メッセージボックスと一致するゲーム](../ide/media/express-tut4step8.png "Express_Tut4Step8")メッセージボックスと一致するゲーム
+     ![メッセージボックスと一致するゲーム](../ide/media/express-tut4step8.png "Express_Tut4Step8") メッセージボックスと一致するゲーム
 
 ### <a name="to-continue-or-review"></a>続行または確認するには
 
-- 次のチュートリアルの手順に進む場合は、「[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 [手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)」を参照してください。
 
-- 前のチュートリアルの手順に戻る場合は、「[手順 7: ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「 [手順 7: ペアの表示を維持](../ide/step-7-keep-pairs-visible.md)する」を参照してください。

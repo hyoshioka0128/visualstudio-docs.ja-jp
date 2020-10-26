@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507964"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML デザイナーを使用して UI を作成する
@@ -27,7 +27,7 @@ Visual Studio および Blend for Visual Studio の XAML デザイナーは、WP
 上級ユーザーの場合、[XAML デザイナーをカスタマイズする](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)こともできます。
 
 > [!NOTE]
-> Xamarin. フォームは、XAML デザイナーをサポートしていません。 Xamarin の XAML Ui を表示し、アプリの実行中に編集するには、Xamarin. フォームに XAML ホットリロードを使用します。 詳細については、「 [Xamarin. Forms (プレビュー) の XAML ホットリロード](/xamarin/xamarin-forms/xaml/hot-reload/)」ページを参照してください。
+> Xamarin. フォームは、XAML デザイナーをサポートしていません。 Xamarin の XAML Ui を表示し、アプリの実行中に編集するには、Xamarin. フォームに XAML ホットリロードを使用します。 詳細については、「 [Xamarin. Forms (プレビュー) の XAML ホットリロード](/xamarin/xamarin-forms/xaml/hot-reload/) 」ページを参照してください。
 
 ## <a name="xaml-designer-workspace"></a>XAML デザイナーのワークスペース
 
@@ -162,7 +162,7 @@ Blend for Visual Studio でオブジェクトとタイムラインウィンド�
 
 プロパティの使用とイベントの処理の詳細については、「[コントロールとパターンの概要](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [XAML デザイナーで要素を操作する](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [リソースを作成して適用する方法](../xaml-tools/how-to-create-and-apply-a-resource.md)

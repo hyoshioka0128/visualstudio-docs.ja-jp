@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633058"
 ---
 # <a name="mt-task"></a>MT タスク
@@ -45,8 +45,8 @@ Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細�
 |パラメーター|[説明]|
 |---------------|-----------------|
 |**AdditionalManifestFiles**|省略可能な **String[]** 型のパラメーターです。<br /><br /> 1 つ以上のマニフェスト ファイルの名前を指定します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/manifest** オプションを参照してください。|
-|**AdditionalOptions**|省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ライン オプションのリスト。 例: /\<option1> /\<option2> /\<option#> 他の **MT** タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) を参照してください。|
-|**AssemblyIdentity**|省略可能な **String** 型のパラメーターです。<br /><br /> マニュフェストの **assemblyIdentity** 要素の属性値を指定します。 コマンド区切りのリストを指定します。最初のコンポーネントは `name` 属性の値で、その後に *\<属性名>=<attribute_value>* という形式の 1 つ以上の名前/値のペアが続きます。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/identity** オプションを参照してください。|
+|**AdditionalOptions**|省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ライン オプションのリスト。 たとえば、/\<option1> /\<option2> /\<option#> のようになります。 他の **MT** タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) を参照してください。|
+|**AssemblyIdentity**|省略可能な **String** 型のパラメーターです。<br /><br /> マニュフェストの **assemblyIdentity** 要素の属性値を指定します。 コマンド区切りのリストを指定します。最初のコンポーネントは `name` 属性の値で、その後に *\<attribute name>=<attribute_value>* という形式の 1 つまたは複数の名前と値のペアが続きます。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/identity** オプションを参照してください。|
 |**ComponentFileName**|省略可能な **String** 型のパラメーターです。<br /><br /> *.rgs* ファイルまたは *.tlb* ファイルからビルドするダイナミック リンク ライブラリの名前を指定します。 **RegistrarScriptFile** または **TypeLibraryFile** MT タスク パラメーターを指定する場合、このパラメーターは必須です。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/dll** オプションを参照してください。|
 |**DependencyInformationFile**|省略可能な **String** 型のパラメーターです。<br /><br /> マニフェスト ツールのビルド依存関係情報を追跡するために Visual Studio で使用される依存関係情報ファイルを指定します。|
 |**EmbedManifest**|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合は、アセンブリにマニフェスト ファイルを埋め込みます。 `false` の場合は、スタンドアロン マニフェスト ファイルとして作成します。|
@@ -57,7 +57,7 @@ Microsoft マニフェスト ツール *mt.exe* をラップします。 詳細�
 |**ManifestFromManagedAssembly**|省略可能な **String** 型のパラメーターです。<br /><br /> 指定されたマネージド アセンブリからマニフェストを生成します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/managedassemblyname** オプションを参照してください。|
 |**ManifestToIgnore**|省略可能な **String** 型のパラメーターです。<br /><br /> (使用されていません)。|
 |**OutputManifestFile**|省略可能な **String** 型のパラメーターです。<br /><br /> 出力マニュフェストの名前を指定します。 このパラメーターを省略し、操作対象のマニフェストが 1 つだけの場合、そのマニフェストがそのまま変更されます。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/out** オプションを参照してください。|
-|**OutputResourceManifests**|省略可能な **String** 型のパラメーターです。<br /><br /> 識別子が指定されている RT_MANIFEST 型のリソースにマニュフェストを出力します。 リソースは、\<file>[;[#]\<resource_id>] という形式です。省略可能な \<resource_id> パラメーターは負以外の 16 ビットの数値です。<br /><br /> `resource_id` が指定されていない場合、CREATEPROCESS_MANIFEST_RESOURCE の既定値 (1) が使用されます。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/outputresource** オプションを参照してください。|
+|**OutputResourceManifests**|省略可能な **String** 型のパラメーターです。<br /><br /> 識別子が指定されている RT_MANIFEST 型のリソースにマニュフェストを出力します。 リソースは \<file>[;[#]\<resource_id>] という形式になります。省略可能な \<resource_id> パラメーターは負以外の 16 ビットの数値です。<br /><br /> `resource_id` が指定されていない場合、CREATEPROCESS_MANIFEST_RESOURCE の既定値 (1) が使用されます。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/outputresource** オプションを参照してください。|
 |**RegistrarScriptFile**|省略可能な **String** 型のパラメーターです。<br /><br /> registration-free COM マニフェスト サポートに対して使用されるレジスタ スクリプト ( *.rgs*) ファイルの名前を指定します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/rgs** オプションを参照してください。|
 |**ReplacementsFile**|省略可能な **String** 型のパラメーターです。<br /><br /> レジスタ スクリプト ( *.rgs*) ファイルで置換できる文字列の値を格納するファイルを指定します。<br /><br /> 詳細については、「[Mt.exe](/windows/desktop/SbsCs/mt-exe)」(Mt.exe) の **/replacements** オプションを参照してください。|
 |**ResourceOutputFileName**|省略可能な **String** 型のパラメーターです。<br /><br /> マニフェストをプロジェクト出力に埋め込むために使用する出力リソース ファイルを指定します。|

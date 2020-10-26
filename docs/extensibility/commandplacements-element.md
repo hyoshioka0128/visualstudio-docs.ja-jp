@@ -1,5 +1,5 @@
 ---
-title: コマンド配置要素 |マイクロソフトドキュメント
+title: CommandPlacements 要素 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739699"
 ---
-# <a name="commandplacements-element"></a>コマンド配置要素
-コマンド配置要素は、コマンド配置要素とその他のコマンド配置グループをグループ化します。
+# <a name="commandplacements-element"></a>CommandPlacements 要素
+Commandplacements 要素は、Commandplacements 要素とその他のコマンド配置グループをグループ化します。
 
- 要素は省略可能です。 コマンド、グループ、またはメニューをセカンダリの場所に含める必要がない場合は *、.vsct*ファイルにこのセクションを含める必要はありません。
+ CommandPlacements 要素は省略可能です。 コマンド、グループ、またはメニューが2次拠点に含まれていない場合は、このセクションを *vsct* ファイルに含める必要はありません。
 
 ## <a name="syntax"></a>構文
 
@@ -41,20 +41,20 @@ ms.locfileid: "80739699"
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|コマンド配置|コマンド配置要素とその他のコマンド配置のグループをグループ化します。|
-|[コマンド配置要素](../extensibility/commandplacement-element.md)|複数のグループまたはメニューに含めるボタン、グループ、およびメニューを有効にします。|
+|CommandPlacements|CommandPlacement 要素とその他のコマンド配置グループをグループ化します。|
+|[CommandPlacement 要素](../extensibility/commandplacement-element.md)|ボタン、グループ、およびメニューを複数のグループまたはメニューに含めることができるようにします。|
 
 ### <a name="parent-elements"></a>親要素
 
 |要素|説明|
 |-------------|-----------------|
-|[コマンド テーブル要素](../extensibility/commandtable-element.md)|コマンドを表す要素をすべて定義します。|
+|[CommandTable 要素](../extensibility/commandtable-element.md)|コマンドを表すすべての要素を定義します。|
 
 ## <a name="example"></a>例
 
@@ -68,5 +68,5 @@ ms.locfileid: "80739699"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [コマンド配置要素](../extensibility/commandplacement-element.md)
-- [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [CommandPlacement 要素](../extensibility/commandplacement-element.md)
+- [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

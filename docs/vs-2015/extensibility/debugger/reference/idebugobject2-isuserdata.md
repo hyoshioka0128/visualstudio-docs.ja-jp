@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData |Microsoft Docs
+title: 'IDebugObject2:: IsUserData |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fd595ce041ae1968e085e3b63b49d308cfd14452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194578"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-オブジェクトがユーザー データを表すかどうかを判断します。  
+オブジェクトがユーザーデータを表すかどうかを判断します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -40,13 +40,13 @@ int IsUserData(
   
 #### <a name="parameters"></a>パラメーター  
  `pfUser`  
- [out]0 以外の値を返します (`TRUE`) オブジェクトは、ユーザー データを表している場合は 0 (`FALSE`) そうでない場合。  
+ 入出力`TRUE`オブジェクトがユーザーデータを表している場合は0以外 () を返し、 `FALSE` そうでない場合はゼロ () を返します。  
   
 ## <a name="return-value"></a>戻り値  
- 成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
+ 成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。  
   
-## <a name="remarks"></a>Remarks  
- ユーザー データとは、JustMyCode (そのため、スタック トレースに表示し、ユーザー コードとしてモジュールをマークするユーザー構成可能なオプション) として指定されたモジュールの一部であるオブジェクトです。  
+## <a name="remarks"></a>注釈  
+ ユーザーデータとは、"ジャスト Mycode" として指定されたモジュールの一部である任意のオブジェクトです (ユーザーが構成可能なオプションで、モジュールをユーザーコードとしてマークし、スタックトレースに表示します)。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

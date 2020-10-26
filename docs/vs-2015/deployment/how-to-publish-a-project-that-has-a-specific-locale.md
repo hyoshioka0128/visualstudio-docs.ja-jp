@@ -1,5 +1,5 @@
 ---
-title: '方法: 特定のロケールがあるプロジェクトの発行 |Microsoft Docs'
+title: '方法: 特定のロケールを持つプロジェクトを発行する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,19 +22,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697605"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法 : 特定のロケールを持つプロジェクトを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 1 つのアプリケーションに、ロケールの異なる複数のコンポーネントが含まれることも少なくありません。 その場合、複数のプロジェクトを持つソリューションを作成し、ロケールごとに個別のプロジェクトを発行することになります。 以降の手順では、マクロを使用して、ソリューションの 1 つ目のプロジェクトを 'en' ロケールを使用して発行する方法について説明しています。 この手順を 'en' 以外のロケールで実行する場合は、マクロ内の `localeString` を、使用するロケール ('de' や 'de-DE' など) に設定してください。  
   
 > [!NOTE]
-> このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、**[完了]** をクリックして、ウィザードを閉じます。  
+> このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、[完了****] をクリックしてウィザードを閉じます。  
   
 ### <a name="to-create-the-publishing-macro"></a>発行マクロを作成するには  
   
@@ -152,20 +152,20 @@ ms.locfileid: "65697605"
   
 4. Visual Studio IDE を使用して、PublishLocales を発行します。  
   
-     **ソリューション エクスプ ローラー**PublishLocales を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクト デザイナーで、**発行**の発行場所の指定 ページで、 **http://localhost/PublishLocales**、順にクリックします**今すぐ発行**します。  
+     **ソリューションエクスプローラー**で、[publishlocales] を選択します。 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 プロジェクトデザイナーの [ **発行** ] ページで、発行場所を指定し、 **http://localhost/PublishLocales** [ **今すぐ発行**] をクリックします。  
   
      発行 Web ページが表示されたら、そのページを終了します。 (この手順では、プロジェクトを発行するだけで、インストールする必要はありません。)  
   
-5. [Visual Studio コマンド プロンプト] ウィンドウでマクロを呼び出し、PublishLocales をもう一度発行します。 コマンド プロンプト ウィンドウを表示する、**ビュー**メニューで、**その他の Windows**  をクリックし、**コマンド ウィンドウ**、または CTRL + ALT + A キーを押します。 コマンド プロンプト ウィンドウで次のように入力します。`macros`がオートコンプリートによって使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。  
+5. [Visual Studio コマンド プロンプト] ウィンドウでマクロを呼び出し、PublishLocales をもう一度発行します。 コマンドプロンプトウィンドウを表示するには、[ **表示** ] メニューの [ **その他のウィンドウ** ] をポイントし、[ **コマンドウィンドウ**] をクリックするか、ctrl + ALT + A キーを押します。 コマンドプロンプトウィンドウで、「」と入力すると、 `macros` 使用可能なマクロの一覧が表示されます。 次のマクロを選択し、Enter キーを押します。  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6. 発行プロセスが正常に完了すると、"PublishLocales\PublishLocales.vbproj の発行は成功しました。 発行の言語は 'en' です。" というメッセージが表示されます。メッセージ ボックスの **[OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。  
+6. 発行プロセスが正常に完了すると、"PublishLocales\PublishLocales.vbproj の発行は成功しました。 発行言語は ' en ' でした。 "メッセージボックスで [ **OK]** をクリックします。 発行 Web ページが表示されたら、**[インストール]** をクリックします。  
   
 7. C:\Inetpub\wwwroot\PublishLocales\en にアクセスします。 ローカライズされたリソース DLL のほかに、マニフェスト、setup.exe、発行 Web ページ ファイルなどのインストールされたファイルがあるはずです。 (既定では、ClickOnce は EXE ファイルおよび DLL ファイルに .deploy という拡張子を追加します。この拡張子は展開後に削除できます。)  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [開発環境のマクロ](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [マクロ エクスプ ローラー ウィンドウ](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [方法: 編集およびマクロをプログラムで作成](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [マクロ開発環境](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [マクロエクスプローラーウィンドウ](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [方法: マクロを編集し、プログラムで作成する](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

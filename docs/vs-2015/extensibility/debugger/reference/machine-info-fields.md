@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147448"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-特定のマシンを取得する情報の種類を指定します。  
+特定のコンピューターに対して取得する情報の種類を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -45,29 +45,29 @@ public enum enum_MACHINE_INFO_FIELDS { 
   
 ## <a name="members"></a>メンバー  
  MCIF_NAME  
- 初期化/使用、`bstrName`フィールド構造にします。  
+ 構造体のフィールドを初期化/使用し `bstrName` ます。  
   
  MCIF_FLAGS  
- 初期化/使用、`Flags`フィールド構造にします。  
+ 構造体のフィールドを初期化/使用し `Flags` ます。  
   
  MIF_ALL  
- すべての構造でフィールドを初期化するか、/使用します。  
+ 構造体のすべてのフィールドを初期化/使用します。  
   
-## <a name="remarks"></a>Remarks  
- これらの値が渡される、 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッドのメンバーを示す、 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体が初期化されるは。  
+## <a name="remarks"></a>注釈  
+ これらの値は、 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体のどのメンバーを初期化するかを示すために[getmachineinfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)メソッドに渡されます。  
   
- 使用されることも、`Fields`のメンバー、`MACHINE_INFO`フィールドが使用し、有効なときは、構造体。  
+ また、 `Fields` 構造体のメンバーで、使用され `MACHINE_INFO` ているフィールドと有効なフィールドを示すためにも使用されます。  
   
- これらのフラグは、演算と組み合わせることがあります`OR`します。  
+ これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1717c17a3a881d138b566f37e07456ded16f22c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197722"
 ---
 # <a name="export-button-concurrency-visualizer"></a>[エクスポート] ボタン (コンカレンシー ビジュアライザー)
@@ -25,6 +25,6 @@ ms.locfileid: "68197722"
 
 **[エクスポート]** ボタンでは、独自のレコードのためや、Microsoft Excel など、別のツールで使用するために、.csv ファイルとして呼び出し履歴をエクスポートできます。  
   
-## <a name="see-also"></a>関連項目  
- [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)   
+## <a name="see-also"></a>参照  
+ [同時実行ビジュアライザー](../profiling/concurrency-visualizer.md)   
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

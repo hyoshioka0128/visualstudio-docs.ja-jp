@@ -1,4 +1,4 @@
-﻿---
+---
 title: ユーザー補助アプリケーションのデザイン リソース | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,18 +15,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297789"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-ユーザー補助 Windows アプリケーションおよび Web サイトを開発するためのヒントと例、およびユーザー補助設計をサポートする技術については、以下のリンク先を参照してください。 ユーザー補助についての一般的な情報は、Web サイト [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/) にあります。
+ユーザー補助 Windows アプリケーションおよび Web サイトを開発するためのヒントと例、およびユーザー補助設計をサポートする技術については、以下のリンク先を参照してください。 アクセシビリティに関する一般的な情報については、「」を参照 [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/) してください。
 
-## <a name="technologies"></a>技術情報
+## <a name="technologies"></a>テクノロジ
 
 - **Microsoft Active Accessibility** Microsoft Windows 上で実行するアプリケーションを開発する際に、ユーザー補助機能のサポートを向上できる COM ベースの技術です。 この技術では、ユーザー インターフェイス要素についての情報を公開するための信頼できるメソッドを提供する COM インターフェイスとアプリケーション プログラミング要素に加え、オペレーティング システムに組み込まれているダイナミック リンク ライブラリも用意されます。 詳細については、「[https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx)」を参照してください。
 
@@ -42,7 +42,7 @@ ms.locfileid: "74297789"
 
 - [コンソール ユーザー補助](/previous-versions/windows/desktop/dnacc/console-accessibility) この技術情報では、ユーザー補助のサポートのために Windows XP でコンソールを表示するための API とイベントについて説明します。
 
-## <a name="web-sites"></a>Web Sites のオフライン インストールの準備
+## <a name="web-sites"></a>Web サイト
 
 - [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) このトピックでは、Web 用のユーザー補助設計のヒントに加え、ユーザー補助コントロールをサンプル Web ページに含めるための手順を順番に説明します。
 
@@ -56,5 +56,5 @@ ms.locfileid: "74297789"
 
 - **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)

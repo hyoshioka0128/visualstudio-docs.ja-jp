@@ -1,5 +1,5 @@
 ---
-title: ポップリストファンク |マイクロソフトドキュメント
+title: POPLISTFUNC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702063"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
-このコールバックは、IDE によって[SccPopulateList](../extensibility/sccpopulatelist-function.md)に提供され、ソース管理プラグインがファイルまたはディレクトリのリストを更新するために使用されます (`SccPopulateList`関数にも提供されます)。
+このコールバックは、IDE によって [SccPopulateList](../extensibility/sccpopulatelist-function.md) に提供され、ソース管理プラグインがファイルまたはディレクトリの一覧を更新するために使用します (関数にも指定されてい `SccPopulateList` ます)。
 
- IDE でユーザーが **[取得**] コマンドを選択すると、IDE にユーザーが取得できるすべてのファイルのリスト ボックスが表示されます。 残念ながら、IDE は、ユーザーが取得する可能性のあるすべてのファイルの正確なリストを認識していません。このリストはプラグインのみに含まれます。 他のユーザーがソース コード管理プロジェクトにファイルを追加した場合、これらのファイルは一覧に表示されますが、IDE はファイルを認識しません。 IDE は、ユーザーが取得できると思うファイルのリストを作成します。 このリストをユーザーに表示する前に、ソース管理プラグインがリストに対してファイルを追加および削除する機会を与える[SccPopulateList](../extensibility/sccpopulatelist-function.md)`,`を呼び出します。
+ ユーザーが IDE で **get** コマンドを選択すると、ide には、ユーザーが取得できるすべてのファイルのリストボックスが表示されます。 残念ながら、IDE では、ユーザーが取得する可能性のあるすべてのファイルの正確な一覧がわかりません。このリストはプラグインのみに含まれています。 他のユーザーがソースコード管理プロジェクトにファイルを追加している場合、これらのファイルは一覧に表示されますが、IDE では認識されません。 IDE によって、ユーザーが取得できると思われるファイルの一覧が作成されます。 このリストをユーザーに表示する前に、 [SccPopulateList](../extensibility/sccpopulatelist-function.md)を呼び出して、 `,` リストからファイルを追加および削除するためのソース管理プラグインを提供します。
 
 ## <a name="signature"></a>署名
- ソース管理プラグインは、IDE 実装関数を呼び出して、次のプロトタイプを使用してリストを変更します。
+ ソース管理プラグインは、次のプロトタイプで IDE によって実装された関数を呼び出すことによって、リストを変更します。
 
 ```cpp
 typedef BOOL (*POPLISTFUNC) (
@@ -37,29 +37,29 @@ typedef BOOL (*POPLISTFUNC) (
 ```
 
 ## <a name="parameters"></a>パラメーター
- 呼び出し`pvCallerData`元 (IDE) から[SccPopulateList](../extensibility/sccpopulatelist-function.md)に渡されたパラメーター。 ソース管理プラグインは、このパラメーターの内容について何も想定しません。
+ pvCallerData `pvCallerData` 呼び出し元 (IDE) によって [SccPopulateList](../extensibility/sccpopulatelist-function.md)に渡されるパラメーター。 ソース管理プラグインは、このパラメーターの内容について何も想定していません。
 
- fAddRemoveIf `TRUE``lpFileName`はファイルリストに追加する必要があるファイルです。 の`FALSE`場合`lpFileName`は、ファイルリストから削除する必要があるファイルです。
+ `TRUE` `lpFileName` ファイルリストに追加するファイルを指定します。 の場合 `FALSE` 、 `lpFileName` はファイルリストから削除する必要があるファイルです。
 
- nステータスの状態`lpFileName`(`SCC_STATUS`ビットの組み合わせ;詳細は[ファイルステータスコード](../extensibility/file-status-code-enumerator.md)を参照)。
+ nStatus Status `lpFileName` (ビットの組み合わせ `SCC_STATUS` )。詳細については、「 [ファイルの状態コード](../extensibility/file-status-code-enumerator.md) 」を参照してください。
 
- lpFileName リストに追加または削除するファイル名の完全なディレクトリ パス。
+ lpFileName 一覧から追加または削除するファイル名の完全なディレクトリパス。
 
 ## <a name="return-value"></a>戻り値
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
-|`TRUE`|プラグインは、この関数を引き続き呼び出すことができます。|
-|`FALSE`|IDE 側で問題が発生しました (メモリ不足などの状況)。 プラグインは操作を停止する必要があります。|
+|`TRUE`|プラグインは、この関数の呼び出しを続行できます。|
+|`FALSE`|IDE 側で問題が発生しました (メモリ不足など)。 プラグインが動作を停止する必要があります。|
 
-## <a name="remarks"></a>Remarks
- ソース管理プラグインがファイルリストに追加または削除するファイルごとに、この関数を呼び出して、 を渡します`lpFileName`。 フラグ`fAddRemove`は、リストに追加する新しいファイル、または削除する古いファイルを示します。 この`nStatus`パラメーターは、ファイルの状況を示します。 SCC プラグインがファイルの追加と削除を完了すると[、SccPopulateList](../extensibility/sccpopulatelist-function.md)呼び出しから戻ります。
+## <a name="remarks"></a>解説
+ ソース管理プラグインがファイルリストに追加または削除しようとしているファイルごとに、この関数を呼び出してを渡し `lpFileName` ます。 フラグは、 `fAddRemove` 一覧に追加する新しいファイルまたは削除する古いファイルを示します。 パラメーターは、 `nStatus` ファイルの状態を示します。 SCC プラグインがファイルの追加と削除を完了すると、 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 呼び出しから制御が戻ります。
 
 > [!NOTE]
-> `SCC_CAP_POPULATELIST`機能ビットは、Visual Studio に必要です。
+> `SCC_CAP_POPULATELIST`Visual Studio では、機能ビットが必要です。
 
 ## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)
-- [ファイルステータスコード](../extensibility/file-status-code-enumerator.md)
+- [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)

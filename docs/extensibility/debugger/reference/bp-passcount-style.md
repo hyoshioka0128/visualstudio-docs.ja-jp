@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT_STYLE |マイクロソフトドキュメント
+title: BP_PASSCOUNT_STYLE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737922"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
-ブレークポイントのパスカウントに関連付けられている条件を指定します。
+ブレークポイントが発生する原因となる、ブレークポイントのパス数に関連付けられた条件を指定します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,26 +48,26 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>フィールド
 `BP_PASSCOUNT_NONE`\
-ブレークポイントパスカウントスタイルを指定しません。
+ブレークポイントのパス数のスタイルを指定しません。
 
 `BP_PASSCOUNT_EQUAL`\
-ブレークポイントのパスカウント スタイルを等に設定します。 ブレークポイントは、ブレークポイントがヒットした回数がパスカウントと等しいときに起動します。
+ブレークポイントのパスカウントのスタイルを等しくなるように設定します。 ブレークポイントがヒットした回数がパス数と等しいときに、ブレークポイントが発生します。
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-ブレークポイントのパスカウント スタイルを等しい以上に設定します。 ブレークポイントは、ブレークポイントがヒットした回数がパスカウント以上の場合に発生します。
+ブレークポイントのパスカウントのスタイルを等しいかそれ以上に設定します。 ブレークポイントがヒットした回数が、パスの数以上になると、ブレークポイントが発生します。
 
 `BP_PASSCOUNT_MOD`\
-モジュロ パス数を指定します。 たとえば、パスカウントがタイプ`BP_PASSCOUNT_MOD`で、パスカウント値が4の場合、ブレークポイントはヒットカウントが4の倍数であるたびに起動します。
+剰余パスカウントを指定します。 たとえば、パスカウントが型で、 `BP_PASSCOUNT_MOD` pass count 値が4の場合、ヒットカウントが4の倍数になるたびにブレークポイントが起動します。
 
-## <a name="remarks"></a>Remarks
-BP_REQUEST_INFO構造体と`stylePassCount`[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバである[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)構造体のメンバに使用されます。 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+## <a name="remarks"></a>解説
+`stylePassCount` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバーである[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)構造体のメンバーに使用されます。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: msdbg.h
+ヘッダー: msdbg. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

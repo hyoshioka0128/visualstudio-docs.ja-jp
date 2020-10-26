@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f37fb773a07291a883f5cb65e4cb4ac840a87a14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198786"
 ---
-# <a name="dwtypekind"></a>dwTYPE_KIND
+# <a name="dwtype_kind"></a>dwTYPE_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-型を解釈する方法を指定します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。  
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトの型を解釈する方法を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,26 +46,26 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>パラメーター  
  TYPE_KIND_METADATA  
- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)共用体として解釈する必要があります、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)構造体。  
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)共用体は、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)構造体として解釈される必要があります。  
   
  TYPE_KIND_PDB  
- `TYPE_INFO`共用体として解釈する必要があります、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)構造体。  
+ `TYPE_INFO`共用体は、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)構造体として解釈される必要があります。  
   
  TYPE_KIND_BUILT  
- `TYPE_INFO`共用体として解釈する必要があります、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)構造体。  
+ `TYPE_INFO`共用体は、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)構造体として解釈される必要があります。  
   
-## <a name="remarks"></a>Remarks  
- この列挙体の値に表示されます、`dwKind`のフィールド、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)構造体し、解釈する方法を決定するために使用、`type`共用体メンバーです。 `TYPE_INFO`への呼び出しによって返される構造体、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ この列挙体の値は `dwKind` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体のフィールドに表示され、共用体メンバーを解釈する方法を決定するために使用され `type` ます。 `TYPE_INFO`構造体は、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)メソッドの呼び出しによって返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: sh.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: sh. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)   
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)   

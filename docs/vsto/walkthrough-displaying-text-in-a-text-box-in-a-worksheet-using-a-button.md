@@ -1,5 +1,5 @@
 ---
-title: ボタンを使用してワークシート内のテキスト ボックスにテキストを表示
+title: ボタンを使用してワークシートのテキストボックスにテキストを表示する
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,22 +16,22 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67328716"
 ---
-# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>チュートリアル: ボタンを使用してワークシート内のテキスト ボックスにテキストを表示
-  このチュートリアルでは、ボタンやテキスト ボックスを使用して、Microsoft Office Excel ワークシート、および Visual Studio での Office 開発ツールを使用して Excel プロジェクトを作成する方法の基本を説明します。 完成したサンプルとして結果を参照してくださいにある Excel コントロールのサンプルを参照してください。 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。
+# <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>チュートリアル: ボタンを使用してワークシートのテキストボックスにテキストを表示する
+  このチュートリアルでは Microsoft Office Excel ワークシートでボタンとテキストボックスを使用する方法、および Visual Studio の Office 開発ツールを使用して Excel プロジェクトを作成する方法の基本について説明します。 完成したサンプルとして結果を表示するには、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の Excel コントロールのサンプルを参照してください。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  このチュートリアルでは、次の作業を行う方法について説明します。
 
-- コントロールをワークシートに追加します。
+- ワークシートにコントロールを追加します。
 
-- テキスト ボックスは、ボタンがクリックされたときに入力します。
+- ボタンがクリックされたときにテキストボックスに入力します。
 
 - プロジェクトをテストします。
 
@@ -46,71 +46,71 @@ ms.locfileid: "67328716"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="create-the-project"></a>プロジェクトの作成
- この手順では、Visual Studio を使用して Excel ブック プロジェクトを作成します。
+ この手順では、Visual Studio を使用して Excel ブックプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. 名前の Excel ブック プロジェクトを作成する**マイ Excel ボタン**します。 必ず**新しい文書を作成**が選択されています。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. [Excel の名前を付けてください **] ボタン**を使用して excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     デザイナーで新しい Excel ブックを開き、**マイ Excel ボタン**プロジェクトを**ソリューション エクスプ ローラー**します。
+     新しい Excel ブックがデザイナーで開き、 **[My Excel Button]** プロジェクトが **ソリューションエクスプローラー**に追加されます。
 
-## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加します。
- このチュートリアルでは、ボタンと最初のワークシートにテキスト ボックスを必要があります。
+## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加する
+ このチュートリアルでは、最初のワークシートにボタンとテキストボックスが必要です。
 
 ### <a name="to-add-a-button-and-a-text-box"></a>ボタンとテキスト ボックスを追加するには
 
-1. いることを確認、**マイ Excel Button.xlsx** 、Visual Studio デザイナーで開いているブックで`Sheet1`が表示されます。
+1. Visual Studio デザイナーで **[My Excel Button.xlsx** ] ブックが開き、表示されていることを確認し `Sheet1` ます。
 
-2. **コモン コントロール**、ツールボックスのタブ、<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>に`Sheet1`します。
+2. ツールボックスの [ **コモンコントロール** ] タブから、 <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> をにドラッグし `Sheet1` ます。
 
-3. **ビュー**メニューの [**プロパティ] ウィンドウ**します。
+3. [ **表示** ] メニューの [ **プロパティウィンドウ**] をクリックします。
 
-4. 確認します**TextBox1**に表示されて、**プロパティ**ウィンドウのドロップダウン リスト ボックスと変更、**名前**にテキスト ボックスのプロパティ**displayText**.
+4. [**プロパティ**] ウィンドウのドロップダウンボックスに [ **TextBox1** ] が表示されていることを確認し、テキストボックスの [**名前**] プロパティを [表示可能 **] に変更**します。
 
-5. ドラッグ、**ボタン**コントロールを`Sheet1`し、次のプロパティを変更します。
+5. **Button**コントロールをにドラッグ `Sheet1` し、次のプロパティを変更します。
 
-   |プロパティ|[値]|
+   |プロパティ|値|
    |--------------|-----------|
-   |**Name**|**insertText**|
-   |**Text**|**テキストを挿入します。**|
+   |**名前**|**insertText**|
+   |**Text**|**テキストの挿入**|
 
-   ボタンがクリックされたときに実行するコードを記述するようになりました。
+   ここで、ボタンがクリックされたときに実行するコードを記述します。
 
-## <a name="populate-the-text-box-when-the-button-is-clicked"></a>ボタンがクリックされたときに、テキスト ボックスを設定します。
- ユーザーが、ボタンをクリックするたびに**Hello World!** テキスト ボックスに追加されます。
+## <a name="populate-the-text-box-when-the-button-is-clicked"></a>ボタンがクリックされたときにテキストボックスにデータを設定する
+ ユーザーがボタンをクリックするたびに、 **Hello World ます。** がテキストボックスに追加されます。
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>ボタンがクリックされたときにテキスト ボックスに書き込むには
 
-1. **ソリューション エクスプ ローラー**を右クリックして**Sheet1**、] をクリックし、**コードの表示**ショートカット メニューの [します。
+1. **ソリューションエクスプローラー**で、[ **Sheet1**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
-2. 次のコードを追加、<xref:System.Windows.Forms.Control.Click>ボタンのイベント ハンドラー。
+2. ボタンのイベントハンドラーに次のコードを追加し <xref:System.Windows.Forms.Control.Click> ます。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]
 
-3. C# でイベント ハンドラーを追加する必要があります、<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>次に示すようにイベント。 イベント ハンドラーの作成方法の詳細については、次を参照してください。[方法。Office プロジェクトでイベント ハンドラーを作成する](../vsto/how-to-create-event-handlers-in-office-projects.md)します。
+3. C# では、次のようにイベントハンドラーをイベントに追加する必要があり <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> ます。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
- 確認するブックをテスト メッセージ**Hello World!** ボタンをクリックすると、テキスト ボックスに表示されます。
+ これで、ブックをテストして、メッセージが Hello World ことを確認できるようになりました **。** ボタンをクリックすると、テキストボックスに表示されます。
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5**キーを押して、プロジェクトを実行します。
 
 2. ボタンをクリックします。
 
-3. 確認します**Hello World!** テキスト ボックスに表示されます。
+3. Hello World していることを確認し **ます。** がテキストボックスに表示されます。
 
-## <a name="next-steps"></a>次の手順
- このチュートリアルでは、Excel ワークシートでボタンやテキスト ボックスを使用するの基本を説明します。 ここでは、次のタスクを行います。
+## <a name="next-steps"></a>次のステップ
+ このチュートリアルでは、Excel ワークシートでボタンとテキストボックスを使用する方法の基本について説明します。 ここでは、次の作業を行います。
 
-- プロジェクトを配置します。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+- プロジェクトを配置しています。 詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
-- 書式を変更するのにには、チェック ボックスを使用します。 詳細については、「[チュートリアル:CheckBox コントロールを使用して書式設定の変更ワークシート](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)します。
+- チェックボックスを使用して書式を変更します。 詳細については、「 [チュートリアル: CheckBox コントロールを使用してワークシートの書式を変更する](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法: Office ドキュメントへの Windows フォーム コントロールを追加します。](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [方法: Office ドキュメントに Windows フォームコントロールを追加する](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)
-- [Office ドキュメントに Windows フォーム コントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office ドキュメントの Windows フォームコントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

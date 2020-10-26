@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669669"
 ---
 # <a name="export-diagrams-as-images"></a>イメージとしてダイアグラムをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、モデリング図を読み取り専用形式で保存できるため、同じバージョンの Visual Studio を使用していない利害関係者、ユーザー、またはプロジェクトチームメンバーと共有できます。
+Visual Studio では、同じバージョンの Visual Studio を使用していない、利害関係者、ユーザー、またはプロジェクトのチーム メンバーと共有できるように、モデリング図を読み取り専用形式で保存できます。
 
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
@@ -31,7 +31,7 @@ Visual Studio では、モデリング図を読み取り専用形式で保存で
 
 1. 図で、一部またはすべての図形を選択します。
 
-2. 選択した内容を右クリックし、 **[コピー]** をクリックします。
+2. 選択した内容を右クリックし、[ **コピー**] をクリックします。
 
 3. 必要なアプリケーションに選択内容を貼り付けます。
 
@@ -41,13 +41,13 @@ Visual Studio では、モデリング図を読み取り専用形式で保存で
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>モデリング図を XML Paper Specification (.xps) ファイルとして保存するには
 
-1. **[ファイル]** メニューの **[印刷]** をクリックして、 **[印刷]** ダイアログボックスを開きます。
+1. [ **ファイル** ] メニューの [ **印刷** ] をクリックして、[ **印刷** ] ダイアログボックスを開きます。
 
-2. **[名前]** ボックスの一覧で **[Microsoft XPS ドキュメントライター]** を選択し、 **[OK]** をクリックします。
+2. [ **名前** ] ボックスの一覧で [ **Microsoft XPS ドキュメントライター**] を選択し、[ **OK**] をクリックします。
 
-3. [名前を付け**てファイルを保存**] ダイアログボックスで、ファイルを**xps ドキュメント (\* .xps)** ファイルとして保存します。
+3. [名前を付け **てファイルを保存** ] ダイアログボックスで、ファイルを **xps ドキュメント ( \* .xps)** ファイルとして保存します。
 
-## <a name="net-framework-security"></a>.NET Framework セキュリティ
+## <a name="net-framework-security"></a>.NET Framework のセキュリティ
 
 ## <a name="see-also"></a>参照
  [アプリ共有モデルのモデルを作成](../modeling/create-models-for-your-app.md)[し、ダイアグラムをエクスポート](../modeling/share-models-and-exporting-diagrams.md)する

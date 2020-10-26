@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b700239f97153cef94ab1d7010ad16ed9aa6001
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546563"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 要素
@@ -48,15 +48,15 @@ ms.locfileid: "85546563"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクトアイテムを表します。 この要素は、ファイルの必須のルート要素です `.spdata` 。|
 
-## <a name="remarks"></a>Remarks
- オブジェクトのプロパティを使用してカスタムデータを SharePoint プロジェクトアイテムに関連付けると、Visual Studio によって、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> プロジェクトアイテムのファイルの**extensiondata**要素にデータが保存され `.spdata` ます。 詳細については、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
+## <a name="remarks"></a>解説
+ オブジェクトのプロパティを使用してカスタムデータを SharePoint プロジェクトアイテムに関連付けると、Visual Studio によって、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> プロジェクトアイテムのファイルの **extensiondata** 要素にデータが保存され `.spdata` ます。 詳細については、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
 
 ## <a name="element-information"></a>要素情報
 
 |プロパティ|値|
 |-|-|
 |**Namespace**|http: \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**[スキーマ名]**|SharePoint プロジェクトアイテムスキーマ|
+|**スキーマ名**|SharePoint プロジェクトアイテムスキーマ|
 |**検証ファイル**|ProjectItemModelSchema|
 |**空にすることができます**|いいえ|
 

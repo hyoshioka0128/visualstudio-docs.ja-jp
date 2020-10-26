@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160864"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>モジュール ビュー - .NET メモリ サンプリング データ
@@ -43,8 +43,8 @@ ms.locfileid: "68160864"
 |**割り当てバイト数 (関数のみ)**|-   関数の場合、関数によって割り当てられたバイトの合計数。 この数値には、この関数によって呼び出された関数で割り当てられたバイト数は含まれません。<br />-   モジュールの場合、モジュール内の関数によって割り当てられた排他バイトの合計。<br />-   行または命令の場合、この行または命令によって割り当てられたオブジェクトの合計数。|  
 |**割り当てバイト数 % (関数のみ)**|プロファイリング実行で割り当てられたすべてのバイトに対する、そのモジュール、関数、行、命令の排他バイトであったバイトの割合。|  
   
-## <a name="see-also"></a>関連項目  
- [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
- [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [モジュール ビュー](../profiling/modules-view-sampling-data.md)   
+## <a name="see-also"></a>参照  
+ [方法: レポートビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)   
+ [モジュールビュー-インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [モジュールビュー](../profiling/modules-view-sampling-data.md)   
  [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)

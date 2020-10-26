@@ -1,5 +1,5 @@
 ---
-title: m_parentフィールド |マイクロソフトドキュメント
+title: m_parent Field |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d9d21cdd7fd89e075d15c0db1b0696deaa5cb46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738401"
 ---
-# <a name="m_parent-field"></a>m_parentフィールド
+# <a name="m_parent-field"></a>m_parent フィールド
 
-タスクの親<xref:System.Threading.Tasks.Task>のバッキング フィールド。
+タスクの親のバッキングフィールド <xref:System.Threading.Tasks.Task> です。
 
-**名前空間:**<xref:System.Threading.Tasks?displayProperty=fullName>
+**名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
-**アセンブリ:** mscorlib *(mscorlib.dll*内)
+**アセンブリ:** mscorlib ( *mscorlib.dll*)
 
-この内部メンバには .NET Framework からアクセスできないため、次の構文は CIL (共通中間言語) で提供されています。
+.NET Framework からこの内部メンバーにアクセスできないため、次の構文は、共通中間言語 (CIL) で提供されています。
 
 ## <a name="syntax"></a>構文
 

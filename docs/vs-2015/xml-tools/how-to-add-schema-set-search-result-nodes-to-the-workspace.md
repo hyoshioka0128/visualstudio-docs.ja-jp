@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b34be331ad3ec67e2c3bd8d9ecc500cd256b1b09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666552"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>方法: スキーマ セットの検索結果のノードをワークスペースに追加する
@@ -22,22 +22,22 @@ ms.locfileid: "72666552"
 このトピックでは、キーワード検索の結果、XML スキーマ エクスプローラーに強調表示されたノードをワークスペースに追加する方法について説明します。
 
 > [!NOTE]
-> [ワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加できるのは、グローバルノードだけです。
+> [ワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加できるのは、グローバル ノードだけです。
 
- この例では、サンプルの注文[書スキーマ](../xml-tools/sample-xsd-file-purchase-order-schema.md)を使用します。
+ この例では、サンプルの注文 [書スキーマ](../xml-tools/sample-xsd-file-purchase-order-schema.md)を使用します。
 
 ### <a name="to-add-schema-set-result-nodes"></a>スキーマ セットの検索結果のノードを追加するには
 
 1. [「方法: XSD スキーマファイルを作成および編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)」の手順に従います。
 
-2. [XML エクスプローラー](../xml-tools/xml-schema-explorer.md)のツールバーの [検索] テキストボックスに「purchaseOrder」と入力し、[検索] ボタンをクリックします。
+2. [XML エクスプローラー](../xml-tools/xml-schema-explorer.md)のツール バーの検索テキスト ボックスに「purchaseOrder」と入力して検索ボタンをクリックします。
 
-     ![XML スキーマエクスプローラーキーワード検索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+     ![XML スキーマ エクスプローラー キーワード検索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
      検索結果が XML スキーマ エクスプローラーで強調表示され、垂直スクロール バーのチックでマークされます。
 
-3. 概要結果ペインの [強調表示された**ノードをワークスペースに追加**] ボタンをクリックして、ワークスペースに検索結果を追加します。
+3. 概要結果ペインの **[強調表示されたノードをワークスペースに追加]** ボタンをクリックして、ワークスペースに検索結果を追加します。
 
-     ![XML スキーマエクスプローラーの検索結果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+     ![XML スキーマ エクスプローラー検索結果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
 
-     [@No__t_0] ノードと [`PurchaseOrderType`] ノードは、[グラフビュー](../xml-tools/graph-view.md)のデザイン画面に表示されます。 2 つのノードは関連があるため (`purchaseOrder` 要素は `PurchaseOrderType` 型)、これらの間に矢印が引かれます。
+     `purchaseOrder` ノードおよび `PurchaseOrderType` ノードが[グラフ ビュー](../xml-tools/graph-view.md)のデザイン サーフェイスに並べて表示されます。 2 つのノードは関連があるため (`purchaseOrder` 要素は `PurchaseOrderType` 型)、これらの間に矢印が引かれます。

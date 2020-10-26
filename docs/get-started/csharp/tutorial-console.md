@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 00798f5eb7261df0a039c82566018cbb0efe710a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183289"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88508179"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -600,10 +600,10 @@ namespace Calculator
 
 ## <a name="next-steps"></a>次の手順
 
-これでこのチュートリアルは完了です。 さらに詳しく学習するには、引き続き以下のチュートリアルをご覧ください。
+このチュートリアルの第 2 部、
 
 > [!div class="nextstepaction"]
-> [さらに C# チュートリアルを続ける](/dotnet/csharp/tutorials/)
+> 「[パート 2 に続く](tutorial-console-part-2.md)」に進んでください。
 
 ## <a name="see-also"></a>関連項目
 

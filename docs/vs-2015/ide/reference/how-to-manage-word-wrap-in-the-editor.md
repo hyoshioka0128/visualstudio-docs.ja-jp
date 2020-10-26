@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : エディターのワード ラップを管理する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59cc8536707744543490bc3e91b85545e4cd4007
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668853"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>方法 : エディターのワード ラップを管理する
@@ -28,9 +28,9 @@ ms.locfileid: "72668853"
  詳しくは、「[方法: 一般エディター オプションを設定する](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)」をご覧ください。
 
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> 表示されるダイアログボックスとメニューコマンドは、アクティブな設定またはエディションによっては、 **ヘルプ** に記載されているものと異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
-## <a name="procedure"></a>プロシージャ
+## <a name="procedure"></a>手順
 
 #### <a name="to-set-word-wrap-preferences"></a>ワード ラップ オプションを設定するには
 
@@ -52,4 +52,4 @@ ms.locfileid: "72668853"
     > 改行インジケーターはコードには追加されません。表示専用です。
 
 ## <a name="see-also"></a>参照
- [エディターの [テキストエディター] の [](../../ide/customizing-the-editor.md) [オプション] ダイアログボックス](../../ide/reference/text-editor-options-dialog-box.md)のカスタマイズ[コードの記述](../../ide/writing-code-in-the-code-and-text-editor.md)
+ [エディターの [テキストエディター] の [](../../ide/customizing-the-editor.md) [オプション] ダイアログボックス](../../ide/reference/text-editor-options-dialog-box.md)のカスタマイズ [コードの記述](../../ide/writing-code-in-the-code-and-text-editor.md)

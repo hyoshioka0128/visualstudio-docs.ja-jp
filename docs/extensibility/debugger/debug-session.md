@@ -1,5 +1,5 @@
 ---
-title: セッションのデバッグ |マイクロソフトドキュメント
+title: デバッグセッション |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 664bcc4790d642ec5ea006cc42b3cf29885e9018
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738992"
 ---
-# <a name="debug-session"></a>デバッグ セッション
-デバッガアーキテクチャの観点から、*セッション*:
+# <a name="debug-session"></a>デバッグセッション
+デバッガーアーキテクチャに関しては、 *セッション*は次のようになります。
 
-- IDE の単一インスタンスから起動またはアタッチされたすべてのプロセスのセットです。
+- は、IDE の1つのインスタンスから起動またはアタッチされた、関連、または関連性のないすべてのプロセスのセットです。
 
-- セッション デバッグ マネージャー (SDM) によって実装されます。 詳細については、「セッション[デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)」を参照してください。
+- は、セッションデバッグマネージャー (SDM) によって実装されます。 詳細については、「 [セッションデバッグマネージャー](../../extensibility/debugger/session-debug-manager.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)
+- [セッションデバッグマネージャー](../../extensibility/debugger/session-debug-manager.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)

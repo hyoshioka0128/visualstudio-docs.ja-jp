@@ -1,5 +1,5 @@
 ---
-title: プロセス デバッグ マネージャー |Microsoft Docs
+title: プロセスデバッグマネージャー |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 186b9601b0146b64edba07ec8470bd86fd0a0a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153682"
 ---
 # <a name="process-debug-manager"></a>プロセス デバッグ マネージャー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-プロセス デバッグ マネージャー (PDM)、プログラムを管理する Visual Studio のコンポーネントであり、セッションに使用できるように、プロセス デバッグ マネージャーとデバッグ エンジン。  
+プロセスデバッグマネージャー (PDM) は、プログラムとプロセスを管理し、セッションデバッグマネージャーおよびデバッグエンジンで使用できるようにする Visual Studio のコンポーネントです。  
   
- PDM は、デバッグ可能なすべてのプロセスを管理します。 デバッグするには、PDM をプログラムを登録する必要があります。 これは、ポートまたはデバッグ エンジンによって、プログラムが起動時に実行されます。  
+ PDM は、デバッグ可能なすべてのプロセスを管理します。 デバッグするには、プログラムを PDM に登録する必要があります。 これは、プログラムが起動されたときに、ポートまたはデバッグエンジンによって行われます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [プロセス](../../extensibility/debugger/processes.md)   
- [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)   
- [ポート](../../extensibility/debugger/ports.md)   
+ [デバッグエンジン](../../extensibility/debugger/debug-engine.md)   
+ [シリアル](../../extensibility/debugger/ports.md)   
  [プログラム](../../extensibility/debugger/programs.md)   
  [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)

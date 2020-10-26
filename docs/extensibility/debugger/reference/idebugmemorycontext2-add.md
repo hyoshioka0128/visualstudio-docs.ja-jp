@@ -1,5 +1,5 @@
 ---
-title: Iデバッグメモリコンテキスト2::追加 |マイクロソフトドキュメント
+title: 'IDebugMemoryContext2:: Add |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a21fa2ec6d48bb1d6bf17bbc0d2ebf0d90a25a9f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727486"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
@@ -44,18 +44,18 @@ int Add(
 
 ## <a name="parameters"></a>パラメーター
 `dwCount`\
-[in]現在のコンテキストに追加する値。
+から現在のコンテキストに追加する値。
 
 `ppMemCxt`\
-[アウト]新しい[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)オブジェクトを返します。
+入出力新しい [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) オブジェクトを返します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>Remarks
- メモリ コンテキストはアドレスであるため、アドレスに値を追加すると、新しいコンテキスト インターフェイスを必要とする新しいアドレスが生成されます。
+## <a name="remarks"></a>解説
+ メモリコンテキストはアドレスであるため、アドレスに値を追加すると、新しいコンテキストインターフェイスを必要とする新しいアドレスが生成されます。
 
- このメソッドは、結果として得られるアドレスがこのコンテキストに関連付けられたメモリ空間の外にある場合でも、常に新しいコンテキストを生成する必要があります。 唯一の例外は、新しいコンテキストにメモリを割り当てることができない場合、`ppMemCxt`または null 値 (エラー) の場合です。
+ 生成されたアドレスがこのコンテキストに関連付けられているメモリ空間の範囲外であっても、このメソッドは常に新しいコンテキストを生成する必要があります。 唯一の例外は、新しいコンテキストにメモリを割り当てることができない場合、または `ppMemCxt` が null 値 (エラーの場合) である場合です。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

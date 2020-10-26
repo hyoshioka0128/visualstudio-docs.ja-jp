@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce を使用して、複数バージョンの .NET Framework で実行できるアプリケーションをデプロイする |Microsoft Docs'
+title: '方法: ClickOnce を使用して、複数のバージョンの .NET Framework で実行できるアプリケーションを配置するMicrosoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,45 +18,45 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 164fe64f360e41c06ef3f7bfd2d8091a6ebefecd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65679946"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>方法: ClickOnce を使用して、複数バージョンの .NET Framework で実行できるアプリケーションを展開するには
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>方法: ClickOnce を使用して、複数のバージョンの .NET Framework で実行できるアプリケーションを配置する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ClickOnce 配置テクノロジを使用して複数バージョンの .NET Framework を対象とするアプリケーションを展開することができます。 これは、生成し、アプリケーション マニフェストと配置マニフェストを更新する必要があります。  
+ClickOnce 配置テクノロジを使用して、複数のバージョンの .NET Framework を対象とするアプリケーションを配置できます。 そのためには、アプリケーションマニフェストと配置マニフェストを生成して更新する必要があります。  
   
 > [!NOTE]
-> 複数バージョンの .NET Framework を対象とするアプリケーションを変更する前に、アプリケーションが .NET Framework の複数のバージョンで実行されることを確認する必要があります。 バージョンの共通言語ランタイムが異なる[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]と .NET Framework 2.0、.NET Framework 3.0、および .NET Framework 3.5。  
+> 複数のバージョンの .NET Framework を対象とするようにアプリケーションを変更する前に、アプリケーションが複数のバージョンの .NET Framework で実行されていることを確認する必要があります。 共通言語ランタイムのバージョンは、 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] .NET Framework 2.0、.NET Framework 3.0、.NET Framework 3.5 とは異なります。  
   
- このプロセスでは、次の手順が必要です。  
+ このプロセスには、次の手順が必要です。  
   
-1. アプリケーションと配置マニフェストを生成します。  
+1. アプリケーションマニフェストと配置マニフェストを生成します。  
   
-2. 複数の .NET Framework バージョンを一覧表示、配置マニフェストを変更します。  
+2. 複数の .NET Framework バージョンを一覧表示するように配置マニフェストを変更します。  
   
-3. 互換性のある .NET Framework ランタイムのバージョンを一覧表示、app.config ファイルを変更します。  
+3. 互換性のある .NET Framework ランタイムバージョンを一覧表示するように app.config ファイルを変更します。  
   
-4. 依存アセンブリの .NET Framework アセンブリとしてマークするアプリケーション マニフェストを変更します。  
+4. 依存アセンブリを .NET Framework アセンブリとしてマークするようにアプリケーションマニフェストを変更します。  
   
-5. アプリケーション マニフェストに署名します。  
+5. アプリケーションマニフェストに署名します。  
   
-6. 更新し、配置マニフェストに署名します。  
+6. デプロイマニフェストを更新して署名します。  
   
-### <a name="to-generate-the-application-and-deployment-manifests"></a>アプリケーションと配置マニフェストを生成するには  
+### <a name="to-generate-the-application-and-deployment-manifests"></a>アプリケーションマニフェストと配置マニフェストを生成するには  
   
-- アプリケーションを発行して、アプリケーションと配置マニフェスト ファイルを生成するには、発行ウィザード、または、プロジェクト デザイナーの [発行] ページを使用します。 詳細については、「[方法 :発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)または[発行 Page, Project Designer](../ide/reference/publish-page-project-designer.md)します。  
+- プロジェクトデザイナーの発行ウィザードまたは [発行] ページを使用して、アプリケーションを発行し、アプリケーションマニフェストと配置マニフェストファイルを生成します。 詳細については、「方法: 発行ウィザードまたは [[発行] ページ (プロジェクトデザイナー)](../ide/reference/publish-page-project-designer.md)[を使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。  
   
-### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>複数の .NET Framework バージョンを一覧表示、配置マニフェストを変更するには  
+### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>複数の .NET Framework バージョンを一覧表示するように配置マニフェストを変更するには  
   
-1. 発行ディレクトリには、Visual Studio で、XML エディターを使用して、配置マニフェストを開きます。 配置マニフェストは、.application ファイル名拡張子を持ちます。  
+1. 発行ディレクトリで、Visual Studio の XML エディターを使用して配置マニフェストを開きます。 配置マニフェストには、アプリケーションのファイル名拡張子が付いています。  
   
-2. 間の XML コードを置き換える、`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`と`</compatibleFrameworks>`アプリケーションのサポートされている .NET Framework バージョンを一覧表示する xml 要素。  
+2. 要素と要素の間の XML コードを、 `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` `</compatibleFrameworks>` アプリケーションでサポートされている .NET Framework バージョンを示す xml に置き換えます。  
   
-     次の表では、使用可能な .NET Framework バージョンと配置マニフェストに追加できる、対応する XML の一部を示します。  
+     次の表は、使用可能な .NET Framework バージョンの一部と、配置マニフェストに追加できる対応する XML を示しています。  
   
     |.NET Framework のバージョン|XML|  
     |----------------------------|---------|  
@@ -66,32 +66,32 @@ ClickOnce 配置テクノロジを使用して複数バージョンの .NET Fram
     |3.5 Full|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
     |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
-### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>互換性のある .NET Framework ランタイムのバージョンを一覧表示する app.config ファイルを変更するには  
+### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>互換性のある .NET Framework ランタイムバージョンを一覧表示するように app.config ファイルを変更するには  
   
-1. ソリューション エクスプ ローラーでは、Visual Studio で、XML エディターを使用して、App.config ファイルを開きます。  
+1. ソリューションエクスプローラーで、Visual Studio の XML エディターを使用して、App.config ファイルを開きます。  
   
-2. 間の XML コードを置き換えます (または追加)、`<startup>`と`</startup>`アプリケーションのサポートされている .NET Framework ランタイムの一覧を表示する xml 要素。  
+2. 要素と要素の間の XML コードを、 `<startup>` `</startup>` アプリケーションでサポートされている .NET Framework ランタイムの一覧を示す xml に置き換えます (または追加します)。  
   
-     次の表では、使用可能な .NET Framework バージョンと配置マニフェストに追加できる、対応する XML の一部を示します。  
+     次の表は、使用可能な .NET Framework バージョンの一部と、配置マニフェストに追加できる対応する XML を示しています。  
   
-    |.NET framework ランタイムのバージョン|XML|  
+    |.NET Framework ランタイムバージョン|XML|  
     |------------------------------------|---------|  
     |4 Client|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
     |4 Full|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
     |3.5 Full|\<supportedRuntime version="v2.0.50727"/>|  
     |3.5 Client|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
-### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>依存アセンブリの .NET Framework アセンブリとしてマークするアプリケーション マニフェストを変更するには  
+### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>依存アセンブリを .NET Framework アセンブリとしてマークするようにアプリケーションマニフェストを変更するには  
   
-1. 発行ディレクトリには、Visual Studio で、XML エディターを使用して、アプリケーション マニフェストを開きます。 配置マニフェストには、ファイル名拡張子は .manifest があります。  
+1. 発行ディレクトリで、Visual Studio の XML エディターを使用して、アプリケーションマニフェストを開きます。 配置マニフェストには、.manifest というファイル名拡張子が付いています。  
   
-2. 追加`group="framework"`sentinel アセンブリの依存関係 XML を (`System.Core`、 `WindowsBase`、 `Sentinel.v3.5Client`、および`System.Data.Entity`)。 たとえば、XML は次のようになります。  
+2. `group="framework"`Sentinel アセンブリ ( `System.Core` 、、 `WindowsBase` `Sentinel.v3.5Client` 、および) の dependency XML にを追加し `System.Data.Entity` ます。 たとえば、XML は次のようになります。  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3. 更新プログラムのバージョン番号、`<assemblyIdentity>`最小公分母をある .NET Framework のバージョン番号を Microsoft.Windows.CommonLanguageRuntime の要素。 たとえば、アプリケーションが .NET Framework 3.5 を対象とし、 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]、バージョン番号を使用して、[2.0.50727.0] と、XML、次のようになります。  
+3. CommonLanguageRuntime の要素のバージョン番号 `<assemblyIdentity>` を、最も一般的な分母である .NET Framework のバージョン番号に更新します。 たとえば、アプリケーションの対象が3.5 で .NET Framework、 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 2.0.50727.0 のバージョン番号を使用している場合、XML は次のようになります。  
   
     ```  
     <dependency>  
@@ -101,13 +101,13 @@ ClickOnce 配置テクノロジを使用して複数バージョンの .NET Fram
     </dependency>  
     ```  
   
-### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>マニフェストを更新して、アプリケーションおよび配置に再署名  
+### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>アプリケーションマニフェストと配置マニフェストを更新して再署名するには  
   
-- 更新し、アプリケーション マニフェストと配置マニフェストに再署名します。 詳細については、「[方法 :アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。  
+- アプリケーションマニフェストと配置マニフェストを更新し、再署名します。 詳細については、「 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [\<compatibleFrameworks > 要素](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
- [\<依存関係 > 要素](../deployment/dependency-element-clickonce-application.md)   
+ [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
+ [\<dependency> Element](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
  [構成ファイル スキーマ](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)

@@ -1,5 +1,5 @@
 ---
-title: デバッガーの設定と準備 |Microsoft Docs
+title: デバッガーの設定と準備 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198877"
 ---
 # <a name="debugger-settings-and-preparation"></a>デバッガーの設定と準備
@@ -31,7 +31,7 @@ ms.locfileid: "68198877"
 
 ここでは、デバッグに関連するプロパティ設定と、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーを使用してプログラムをデバッグするために必要な準備について説明します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でプロジェクト テンプレートを使ってプログラムを作成する場合、これらの設定はデバッグ構成で正しく設定されます。  
   
- 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  
+ 詳細については、[デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [デバッガーに関連するプロジェクト設定](../debugger/debugger-project-settings.md)  
@@ -58,9 +58,9 @@ ms.locfileid: "68198877"
  [プロセスのデバッグとホスト](../debugger/debugging-and-the-hosting-process.md)  
  ホスト プロセスのさまざまな側面について説明します。  
   
- [方法: デバッグ用の .NET Framework のバージョンを指定する](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [方法: デバッグ用に .NET Framework バージョンを指定する](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  レジストリ キーを設定して、使用するバージョンをデバッガーに指定する方法について説明します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1da2c07d5a412a7ac1865cfc2669e2f4ff992b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548071"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio を使用した開発の開始
@@ -55,7 +55,7 @@ Visual Studio へようこそ。 製品を [ダウンロード](https://visualst
 
      [サンプルの読み込み](https://github.com/microsoft/windows-classic-samples) &#124;                     [チュートリアルの実施](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [ドキュメントの参照](https://dev.windows.com/desktop)
 
-- **[Office アプリケーションの作成](https://msdn.microsoft.com/library/fp161347.aspx)**: office 365 サービスを使用して Word、Excel、Outlook、PowerPoint を拡張およびカスタマイズする office アプリケーションの作成を開始します。
+- **[Office アプリケーションの作成](https://msdn.microsoft.com/library/fp161347.aspx)** : office 365 サービスを使用して Word、Excel、Outlook、PowerPoint を拡張およびカスタマイズする office アプリケーションの作成を開始します。
 
      [サンプル &#124; 読み込ん](https://code.msdn.microsoft.com/office365/)[で](https://developer.microsoft.com/graph)、ドキュメントを参照し[て](https://msdn.microsoft.com/office/aa905340.aspx)[ビデオを見る](https://developer.microsoft.com/office/gallery/?filterBy=Videos)&#124; &#124; ます。
 

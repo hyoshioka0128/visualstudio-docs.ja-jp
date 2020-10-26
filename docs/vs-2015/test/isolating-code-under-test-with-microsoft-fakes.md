@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660475"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでのコードの分離
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Fakes では、アプリケーションの別の部分を*スタブ*または *shim* で置き換えることにより、テストするコードを分離できます。 これらは、テストの制御下にある小さいコードです。 テストのコードを分離することにより、テストが失敗した場合に、原因が別の場所ではなくそこにあることを確認できます。 また、アプリケーションの別の部分がまだ機能していない場合でも、スタブと shim を使用すると、コードをテストできます。
+Microsoft のフェイクは、アプリケーションの他の部分を *スタブ* または *shim*で置き換えることによって、テストするコードを分離するのに役立ちます。 これらは、テストの制御下にある小さいコードです。 テストのコードを分離することにより、テストが失敗した場合に、原因が別の場所ではなくそこにあることを確認できます。 また、アプリケーションの別の部分がまだ機能していない場合でも、スタブと shim を使用すると、コードをテストできます。
 
  Fakes には 2 種類のフレーバーがあります。
 
@@ -26,9 +26,9 @@ Microsoft Fakes では、アプリケーションの別の部分を*スタブ*�
 
 - [shim](#shims) は、アプリケーションのコンパイル済みコードを実行時に変更します。これにより、指定されたメソッド呼び出しを実行する代わりに、テストで提供される shim コードが実行されるようになります。 Shim を使用すると、.NET アセンブリなど、変更できないアセンブリの呼び出しを置き換えることができます。
 
-  ![他のコンポーネントのフェイクの置換](../test/media/fakes-2.png "フェイク-2")
+  ![他のコンポーネントに置き換わる Fakes](../test/media/fakes-2.png "フェイク-2")
 
-  **Requirements**
+  **必要条件**
 
 - Visual Studio Enterprise
 
@@ -51,7 +51,7 @@ Microsoft Fakes では、アプリケーションの別の部分を*スタブ*�
 
  一般に、コードベース内の依存関係から分離するためにスタブ型を使用することをお勧めします。 これを行うには、インターフェイスの背後にあるコンポーネントを非表示にします。 Shim 型は、テスト可能な API を提供しないサードパーティのコンポーネントから分離する場合に使用できます。
 
-## <a name="stubs"></a>スタブの概要
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a>スタブの概要
  より詳細な説明については、「[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)」を参照してください。
 
 1. **インターフェイスの挿入**
@@ -141,11 +141,11 @@ Microsoft Fakes では、アプリケーションの別の部分を*スタブ*�
 
     ```
 
-     ここでの特殊なマジックは、`StubIStockFeed` クラスです。 参照アセンブリのそれぞれのインターフェイスに対して、Microsoft Fakes のメカニズムによってスタブ クラスが生成されます。 スタブクラスの名前は、インターフェイスの名前から派生します。プレフィックスとして "`Fakes.Stub`" を使用し、パラメーターの型名を追加します。
+     ここでの特殊なマジックは、`StubIStockFeed` クラスです。 参照アセンブリのそれぞれのインターフェイスに対して、Microsoft Fakes のメカニズムによってスタブ クラスが生成されます。 スタブクラスの名前は、インターフェイスの名前から派生し `Fakes.Stub` ます。プレフィックスとして "" を使用し、パラメーターの型名を追加します。
 
      また、イベントおよびジェネリック メソッドについて、プロパティの getter および setter に対してもスタブが生成されます。 詳細については、「[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)」を参照してください。
 
-## <a name="shims"></a>shim の概要
+## <a name="getting-started-with-shims"></a><a name="shims"></a>shim の概要
  (より詳細な説明については、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」を参照してください。)
 
  コンポーネントに `DateTime.Now` の呼び出しが含まれているとします。

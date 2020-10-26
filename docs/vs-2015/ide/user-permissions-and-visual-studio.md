@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa01cb77e8a003438721984da13f46de350104ea
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918991"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
@@ -31,7 +31,7 @@ ms.locfileid: "75918991"
 
  通常のユーザーでも Visual Studio IDE のほぼすべてのタスクを実行できますが、次のタスクを実行するには管理者のアクセス許可が必要です。
 
-|区分|タスク|詳細情報|
+|領域|タスク|詳細情報|
 |----------|----------|--------------------------|
 |インストール|Visual Studio をインストールする。|[Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)|
 ||Visual Studio の評価版からアップグレードする。|[方法: 評価版の Visual Studio からアップグレードする](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
@@ -47,28 +47,28 @@ ms.locfileid: "75918991"
 ||XAML ブラウザー アプリケーション (XBAP) をゾーンでデバッグする。|[WPF ホスト (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
 ||エミュレーターを使用して、Microsoft Azure クラウド サービス プロジェクトをデバッグする。|[Visual Studio でのクラウド サービスのデバッグ](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)|
 ||リモート デバッグのファイアウォールを構成する。|[デバイスのリモート ツールのセットアップ](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
-|パフォーマンス ツール|アプリケーションをプロファイルする。|[パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)|
-|配置|ローカル コンピューターでインターネット インフォメーション サービス (IIS) に Web アプリケーションを配置する。|[Visual Studio または Visual Web Developer を使用したホスティング プロバイダーへの ASP.NET Web アプリケーションの配置:テスト環境としての IIS への配置](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
+|パフォーマンス ツール|アプリケーションをプロファイルする。|[パフォーマンスプロファイルの初心者向けガイド](../profiling/beginners-guide-to-performance-profiling.md)|
+|デプロイ|ローカル コンピューターでインターネット インフォメーション サービス (IIS) に Web アプリケーションを配置する。|[Visual Studio または Visual Web Developer を使用しているホスティング プロバイダーへの ASP.NET Web アプリケーションの配置: テスト環境としての IIS への配置](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
 |Microsoft にフィードバックを提供する。|Visual Studio カスタマー エクスペリエンス向上プログラムへの参加方法を変更する。|[方法: フィードバックを送信する](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>管理者としての Visual Studio の実行
  IDE を起動するたびに管理アクセス許可を使用して Visual Studio を起動するか、管理アクセス許可で常に実行するようにアプリケーション ショートカットを変更できます。 詳細については、Windows のヘルプを参照してください。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)]、または [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-win8-win81-winserver8-or-winblue_server_2"></a>[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)]、または [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには
 
 1. **[スタート]** 画面で、「**Visual Studio**」と入力します。 インストールされている Visual Studio のバージョンが表示されます。
 
 2. 起動する Visual Studio のバージョンを選択し、ショートカット メニューを表示します (画面の下部に表示されます)。 **[管理者として実行]** を選択します。
 
-     Visual Studio の起動時には、 **[(管理者)]** がタイトル バーの製品名の後に表示されます。
+     Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>または [!INCLUDE[win7](../includes/win7-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-win7-or-winsvr08_r2"></a>または [!INCLUDE[win7](../includes/win7-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1. **[スタート]** メニューをクリックし、 **[すべてのプログラム]** をクリックします。
+1. **[スタート]** メニューをクリックし、**[すべてのプログラム]** をクリックします。
 
-2. **Microsoft Visual Studio** "*バージョン*" フォルダーで、**Visual Studio** "*Version*" を選択してショートカット メニューを開き、 **[管理者として実行]** を選択します。
+2. **Microsoft Visual Studio "** *バージョン*" フォルダーで、**Visual Studio "** *Version*" を選択してショートカット メニューを開き、**[管理者として実行]** を選択します。
 
-     Visual Studio の起動時には、 **[(管理者)]** がタイトル バーの製品名の後に表示されます。
+     Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [visual studio 2015 のインストール](../install/install-visual-studio-2015.md)

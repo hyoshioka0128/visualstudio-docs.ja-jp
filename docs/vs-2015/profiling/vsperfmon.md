@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a06a6632d62f853eef33cad00ad766e0d1aab87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184013"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -38,19 +38,19 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |オプション|説明|  
 |-------------|-----------------|  
 |**U**|リダイレクトされたコンソール出力は Unicode として書き込まれます。  このオプションは、最初に指定する必要があります。|  
-|**OUTPUT:** `<` *ファイル名* `>`|指定したファイル名に出力をリダイレクトします。|  
+|**OUTPUT:** `<` *file name* `>`|指定したファイル名に出力をリダイレクトします。|  
 |**TRACE**|インストルメンテーション プロファイル用のパフォーマンス モニターを開始します。|  
 |**SAMPLE**|サンプリング プロファイル用のパフォーマンス モニターを開始します。|  
 |**COVERAGE**|コード カバレッジ コレクション用のパフォーマンス モニターを開始します。|  
 |**CONCURRENCY**|リソース競合プロファイル用のパフォーマンス モニターを開始します。|  
-|**USER:** `[` *ドメイン* `\]` *ユーザー名*|指定したアカウントからパフォーマンス モニターへのクライアント アクセスを許可します。|  
+|**USER:** `[` *domain* `\]` *username*|指定したアカウントからパフォーマンス モニターへのクライアント アクセスを許可します。|  
 |**CROSSSESSION**|セッション間プロファイルを有効にします。|  
 |**COUNTER** `:cfg`|インストルメンテーション (TRACE) プロファイル方法を使用するときに、各インストルメンテーション ポイントで収集する CPU カウンターを指定します。 複数の COUNTER オプションを指定すると、複数のカウンター データを収集できます。<br /><br /> カウンター (*cfg*) データを指定するには、次の構文を使用します。<br /><br /> **CounterName** [ **,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** は、VSPerfCmd /QueryCounters コマンドによって返されるカウンターの名前です。<br />-   **Reload** は、カウンター イベントのサンプリング間隔です。 インストルメンテーション メソッドで *Reload* を使用しないでください。<br />-   指定すると、プロファイル ツールのレポートの列名が **CounterName** から **FriendlyName** に置き換えられます。|  
 |**WINCOUNTER** `:path`|マーク データと共に含める Windows パフォーマンス カウンターを指定します。 `path` は、PDH カウンター パス形式の Windows パフォーマンス カウンター文字列です。 次に例を示します。<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
 |**AUTOMARK** `:n`|/WINCOUNTER を使用する際の自動的なマーク間の時間間隔 (ミリ秒単位) を指定します。 値は、500 ミリ秒単位で切り上げられます。<br /><br /> 0 を使用すると、自動的なマークは無効になります。 (指定しない場合、既定の 500 ミリ秒になります)|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
- [パフォーマンス レポートのビュー](../profiling/performance-report-views.md)
+ [パフォーマンスレポートのビュー](../profiling/performance-report-views.md)

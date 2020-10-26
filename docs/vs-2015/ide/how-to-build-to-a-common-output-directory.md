@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : 共通出力ディレクトリへのビルド | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f85ff51b93383d2deca409a00a3db130d52b5003
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645413"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>方法 : 共通出力ディレクトリへのビルド
@@ -36,4 +36,4 @@ ms.locfileid: "72645413"
 4. ソリューションのすべてのプロジェクトに対して、手順 1 から 3 を繰り返します。
 
 ## <a name="see-also"></a>参照
- [コンパイルと](../ide/compiling-and-building-in-visual-studio.md)ビルド[方法: ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)
+ [コンパイルと](../ide/compiling-and-building-in-visual-studio.md)ビルド [方法: ビルド出力ディレクトリを変更する](../ide/how-to-change-the-build-output-directory.md)

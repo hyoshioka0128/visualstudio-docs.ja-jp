@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972323"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>メニューにサブメニューを追加する
@@ -32,7 +32,7 @@ ms.locfileid: "86972323"
 
 ## <a name="add-a-submenu-to-a-menu"></a>メニューにサブメニューを追加する
 
-1. 「 [Visual Studio のメニューバーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)する」の手順に従って、プロジェクトとメニュー項目を作成します。 このチュートリアルの手順では、VSIX プロジェクトの名前がであることを前提として `TopLevelMenu` います。
+1. 「 [Visual Studio のメニューバーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) する」の手順に従って、プロジェクトとメニュー項目を作成します。 このチュートリアルの手順では、VSIX プロジェクトの名前がであることを前提として `TopLevelMenu` います。
 
 2. *Testcommandpackage. vsct*を開きます。 セクションで、サブ `<Symbols>` `<IDSymbol>` メニューの要素、サブメニューグループ、および `<GuidSymbol>` "guidTopLevelMenuCmdSet" という名前のノード内のコマンドの要素を追加します。 これは、 `<IDSymbol>` トップレベルメニューの要素を含むノードと同じです。
 
@@ -54,7 +54,7 @@ ms.locfileid: "86972323"
     </Menu>
     ```
 
-     親の GUID/ID ペアは、「[メニューを Visual Studio に追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)」で生成されたメニューグループを指定し、トップレベルメニューの子です。
+     親の GUID/ID ペアは、「 [メニューを Visual Studio に追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)」で生成されたメニューグループを指定し、トップレベルメニューの子です。
 
 4. 手順2で定義したメニューグループをセクションに追加 `<Groups>` し、サブメニューの子にします。
 
@@ -79,7 +79,7 @@ ms.locfileid: "86972323"
 
 6. ソリューションをビルドし、デバッグを開始します。 実験用のインスタンスが表示されます。
 
-7. [ **Testmenu** ] をクリックすると、**サブメニュー**という名前の新しいサブメニューが表示されます。 [**サブメニュー** ] をクリックしてサブメニューを開き、新しいコマンド [ **Test Sub command**] を表示します。 [**テストサブコマンド]** をクリックしても何も行われないことに注意してください。
+7. [ **Testmenu** ] をクリックすると、 **サブメニュー**という名前の新しいサブメニューが表示されます。 [ **サブメニュー** ] をクリックしてサブメニューを開き、新しいコマンド [ **Test Sub command**] を表示します。 [ **テストサブコマンド]** をクリックしても何も行われないことに注意してください。
 
 ## <a name="add-a-command"></a>コマンドの追加
 

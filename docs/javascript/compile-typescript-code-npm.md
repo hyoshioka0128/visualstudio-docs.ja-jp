@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d7bd89f8e7840db8615c74170bb5cb9998aeb678
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454620"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250170"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript コードのコンパイル (Node.js)
 
@@ -109,7 +109,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-   ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された *.js ファイルと生成された *js.map ファイルが見つかります。
+   ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された \*.js ファイルと生成された \*js.map ファイルが見つかります。
 
    ソース マップ ファイルは[デバッグ](../javascript/debug-nodejs.md)で必要となります。
 

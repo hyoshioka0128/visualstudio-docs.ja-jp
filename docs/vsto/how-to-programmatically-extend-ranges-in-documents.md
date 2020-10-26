@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 35ef0ea0352141f18945632f996237c2d9d90204
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547421"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>方法: プログラムによって文書内の範囲を拡張する
@@ -49,7 +49,7 @@ ms.locfileid: "85547421"
 
 ## <a name="to-extend-a-range"></a>範囲を拡張するには
 
-1. 文字の範囲を定義します。 詳細については、「[方法: ドキュメント内の範囲をプログラムによって定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)」を参照してください。
+1. 文字の範囲を定義します。 詳細については、「 [方法: ドキュメント内の範囲をプログラムによって定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)」を参照してください。
 
      次のコード例はドキュメント レベルのカスタマイズで使用できます。
 

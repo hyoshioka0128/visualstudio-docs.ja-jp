@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法 : 複数ファイルの項目テンプレートを作成する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668088"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>方法 : 複数ファイルの項目テンプレートを作成する
@@ -37,7 +37,7 @@ ms.locfileid: "72668088"
 
 1. 単一ファイルの項目テンプレートと同じように、項目テンプレートを作成します。 詳細については、「[方法 : 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)」を参照してください。
 
-2. すべての `ProjectItem` 要素に `TargetFileName` 属性を追加します。 `TargetFileName` 属性の値を $fileinputname$.*FileExtension* に設定します。ここで、*FileExtension* はテンプレートに含まれるファイルのファイル名拡張子です。 (例:
+2. すべての `ProjectItem` 要素に `TargetFileName` 属性を追加します。 `TargetFileName` 属性の値を $fileinputname$.*FileExtension* に設定します。ここで、*FileExtension* はテンプレートに含まれるファイルのファイル名拡張子です。 次に例を示します。
 
     ```
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -53,9 +53,9 @@ ms.locfileid: "72668088"
 
      このテンプレートから派生した項目がプロジェクトに追加されると、ユーザーが **[新しい項目の追加]** ダイアログ ボックスに入力した名前に基づいてファイル名が決定されます。
 
-3. テンプレートに含めるファイルを選択して右クリックし、 **[送る]** をクリックしてから **[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。
+3. テンプレートに含めるファイルを選択して右クリックし、**[送る]** をクリックしてから **[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。
 
-4. ユーザー項目テンプレートの場所に .zip ファイルを配置します。 既定では、ディレクトリは \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\ となります。 詳細については、「[方法 : プロジェクト テンプレートと項目テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
+4. ユーザー項目テンプレートの場所に .zip ファイルを配置します。 既定では、ディレクトリは \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\ となります。 詳細については、「 [方法: テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
 ## <a name="example"></a>例
  次の例では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows フォーム テンプレートを示します。 このテンプレートに基づいて項目が作成された場合、作成された 3 つのファイルの名前は **[新しい項目の追加]** ダイアログ ボックスに入力された名前と一致します。

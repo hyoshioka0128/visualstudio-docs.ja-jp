@@ -12,38 +12,38 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429523"
 ---
 # <a name="project-persistence"></a>プロジェクトの永続化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-永続化は、プロジェクトの主要な設計の考慮事項です。 ほとんどのプロジェクト ファイルを表すプロジェクト項目を使用します。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]もデータが含まれるファイル ベースのプロジェクトをサポートします。 プロジェクトとプロジェクト ファイルによって所有されている、ファイルの両方を保持する必要があります。 IDE には、プロジェクト自体またはプロジェクト項目を保存するように指示します。  
+永続化は、プロジェクトの主要な設計上の考慮事項です。 ほとんどのプロジェクトでは、ファイルを表すプロジェクト項目を使用します。で [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は、ファイルベースではないデータを持つプロジェクトもサポートされています。 プロジェクトとプロジェクトファイルの両方によって所有されているファイルを永続化する必要があります。 IDE により、プロジェクト自体またはプロジェクト項目を保存するように指示されます。  
   
- プロジェクトのテンプレートはプロジェクト ファクトリに渡されます。 テンプレートは、特定のプロジェクトの種類の要件に従ってすべてのプロジェクト項目の初期化をサポートする必要があります。 これらのテンプレートをプロジェクト ファイルとして保存後で、ソリューションで、IDE によって管理されています。 詳細については、次を参照してください。[を作成するプロジェクト インスタンスで使用してプロジェクト ファクトリ](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)と[ソリューション](../../extensibility/internals/solutions-overview.md)します。  
+ プロジェクトのテンプレートは、プロジェクトファクトリに渡されます。 テンプレートは、特定のプロジェクトの種類の要件に従って、すべてのプロジェクト項目の初期化をサポートする必要があります。 これらのテンプレートは、後でプロジェクトファイルとして保存し、IDE によってソリューションを通じて管理できます。 詳細については、「プロジェクトファクトリと[ソリューション](../../extensibility/internals/solutions-overview.md)[を使用したプロジェクトインスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)」を参照してください。  
   
- プロジェクト項目には、ファイル ベースまたはファイル ベースを指定できます。  
+ プロジェクト項目は、ファイルベースまたはファイルベースではない場合があります。  
   
-- ファイルベースのアイテムには、ローカルまたはリモートを指定できます。 、C# では、Web プロジェクトでなど、リモート システム上のファイルへの接続を永続化、ローカルでファイル自体がリモート システムに保持されますが、。  
+- ファイルベースのアイテムは、ローカルまたはリモートにすることができます。 たとえば、C# の Web プロジェクトでは、リモートシステム上のファイルへの接続はローカルに保持されますが、ファイル自体はリモートシステムで保持されます。  
   
-- ファイル ベース以外の項目は、データベースのリポジトリにアイテムを保存できます。  
+- ファイルベース以外のアイテムでは、アイテムをデータベースまたはリポジトリに保存できます。  
   
-## <a name="commit-models"></a>モデルをコミットします。  
- プロジェクト項目の場所を決定した後は、適切なコミット モデルを選択する必要があります。 たとえば、ローカル ファイルとファイル ベース モデルでの各プロジェクト保存できます自律的に。 リポジトリのモデルでは、1 つのトランザクションで複数の項目を保存できます。 詳細については、次を参照してください。[プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)します。  
+## <a name="commit-models"></a>モデルのコミット  
+ プロジェクト項目が配置されている場所を決定したら、適切なコミットモデルを選択する必要があります。 たとえば、ローカルファイルを使用したファイルベースのモデルでは、各プロジェクトを自律的に保存できます。 リポジトリモデルでは、1つのトランザクションに複数のアイテムを保存できます。 詳細については、「 [プロジェクトの種類の設計](../../extensibility/internals/project-type-design-decisions.md)上の決定」を参照してください。  
   
- プロジェクトの実装ファイル名拡張子を決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>インターフェイスを実装するオブジェクトのクライアントを有効にする情報を提供する、**名前を付けて保存** ダイアログ ボックス-を埋めるために、**ファイルの種類**ドロップダウンの一覧し、最初のファイル名拡張子を管理します。  
+ ファイル名拡張子を決定するために、プロジェクトはインターフェイスを実装します <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 。これにより、オブジェクトのクライアントが [ **名前を** 付けて保存] ダイアログボックスを実装するための情報を提供します。つまり、[名前を **付けて保存** ] ドロップダウンリストに入力し、初期ファイル名拡張子を管理します。  
   
- IDE の呼び出し、`IPersistFileFormat`インターフェイスをプロジェクトにそのプロジェクトが保持されることを示すために、プロジェクトの項目に応じて。 そのため、オブジェクトは、そのファイルと形式のすべての側面を所有しています。 これには、オブジェクトの形式の名前が含まれます。  
+ IDE はプロジェクトのインターフェイスを呼び出し、プロジェクトがプロジェクト項目を必要に応じて永続化する必要がある `IPersistFileFormat` ことを示します。 そのため、オブジェクトは、そのファイルと形式のすべての要素を所有します。 これには、オブジェクトの形式の名前が含まれます。  
   
- 項目が、ファイルではない場合は、`IPersistFileFormat`はまだどのファイル ベースでない項目が保存されます。 プロジェクトの .vbp ファイルなどのファイル[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]プロジェクトまたは .vcproj ファイル[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクトでは、永続化もする必要があります。  
+ 項目がファイルでない場合でも、 `IPersistFileFormat` はファイルベースではない項目が永続化される方法になります。 プロジェクトファイル (プロジェクトの場合は .vbp ファイル、 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] プロジェクトの場合は .vcproj ファイルなど) [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] も保存する必要があります。  
   
- アクションでは、保存、IDE を調べ、実行中の document テーブル (RDT) と、階層にコマンドを渡し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>インターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A>項目が変更されているかどうかを判断するメソッドを実装します。 アイテムがある場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A>メソッドは、変更された項目を保存します。  
+ 保存操作の場合、IDE は実行中のドキュメントテーブル (RDT) を調べ、階層はおよびインターフェイスにコマンドを渡し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> ます。 メソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> 項目が変更されているかどうかを判断するために実装されます。 項目にがある場合、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> メソッドは、変更された項目を保存するために実装されます。  
   
- メソッド、`IVsPersistHierarchyItem2`インターフェイスを使用して再読み込みする項目がある場合、項目が再読み込みするかどうかを決定します。 さらに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>が変更された項目が保存されることがなく破棄されるメソッドを実装することができます。  
+ インターフェイスのメソッドを使用して、 `IVsPersistHierarchyItem2` 項目を再度読み込むことができるかどうかを判断し、項目を再読み込みすることができるかどうかを判断します。 また、メソッドを実装して、変更された <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> 項目が保存されずに破棄されるようにすることもできます。  
   
-## <a name="see-also"></a>関連項目  
- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
+## <a name="see-also"></a>参照  
+ [チェックリスト: 新しいプロジェクトの種類の作成](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [プロジェクト ファクトリを使用したプロジェクト インスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Azure DevOps と Azure で使用するために Visual Studio サブスクリプションに代替 ID を追加する方法
-ms.openlocfilehash: f8b634bd2f59bf3de038e7200900ee9930d79fff
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0e19bff8885810e505dbe6481340e7a112160af0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289375"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800776"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio サブスクライバー向けの ID
 Visual Studio サブスクリプションをアクティブ化すると、アクティベーション中に使用した ID (またはログイン) が Visual Studio サブスクリプションとリンクされます。 これにより、Microsoft は [Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps、および Azure でユーザーを認識することができます。
@@ -22,7 +22,7 @@ Azure DevOps では、ユーザーがログインするたびに Visual Studio �
 
 Azure では、サブスクライバーの特典である[月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)をアクティブ化すると、Visual Studio サブスクリプションの状態が確認されます。
 
-[Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)内で、アクティベーション中に使用した ID に加えて、**代替 ID** を追加できる可能性があります。 サブスクリプションをアクティブ化するために Microsoft アカウントを使用した場合、代替 ID を追加することが許可されています。 このように、(Visual Studio、Office 365、または会社や学校のネットワークのログインに使用する) 職場または学校のアカウントを追加することもできます。これにより、個人用アカウントと職場または学校のアカウントの両方を使用して Azure DevOps にアクセスできるようになります。
+[Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)内で、アクティベーション中に使用した ID に加えて、**代替 ID** を追加できる可能性があります。 サブスクリプションをアクティブ化するために Microsoft アカウントを使用した場合、代替 ID を追加することが許可されています。 このように、(Visual Studio、Microsoft 365、または会社や学校のネットワークへのログインに使用する) 職場または学校のアカウントを追加することもできます。これにより、個人用アカウントと職場または学校のアカウントの両方を使用して Azure DevOps にアクセスできるようになります。
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>サブスクリプションに代替アカウントを追加する
 Visual Studio サブスクリプションに代替アカウントを追加すると、サブスクリプションが割り当てられているものとは異なる ID を利用して、Azure DevOps や Azure などのサブスクリプションの特典にアクセスできます。 以前は、この機能は、Visual Studio (VS) サブスクリプションが Microsoft Account (MSA) に割り当てられた場合にのみ利用できました。 Azure Active Directory (Azure AD) でこの機能が職場や学校のアカウントにも使えるようになりました。

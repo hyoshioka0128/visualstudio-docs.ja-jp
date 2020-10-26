@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff61894ce808cd33876e876c596e791a3347ab72
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817594"
 ---
 # <a name="enumerator-object-expected"></a>列挙子オブジェクトが必要です。
-以外の型のオブジェクトに対して、 **enumerator** 、enumerator、列挙子、列挙子、または**enumerator** . prototype. プロトタイプのメソッドを呼び出そうとしまし `Enumerator` た。 この種類の呼び出しのオブジェクトは、型である必要があり `Enumerator` ます。 この規則を解除するコードの例を次に示します。  
+以外の型のオブジェクトに対して、 **enumerator** 、enumerator、列挙子、列挙子、または **enumerator** . prototype. プロトタイプのメソッドを呼び出そうとしまし `Enumerator` た。 この種類の呼び出しのオブジェクトは、型である必要があり `Enumerator` ます。 この規則を解除するコードの例を次に示します。  
   
 ```JavaScript  
 var o = new Object;  

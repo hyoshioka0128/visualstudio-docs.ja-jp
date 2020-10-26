@@ -7,18 +7,18 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインするときに発生する可能性のある問題について説明します
-ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233241"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801881"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio サブスクリプションへのサインインに関する問題
 Visual Studio サブスクリプションを使用するには、最初にサインインする必要があります。  サブスクリプションによっては、Microsoft アカウント (MSA) または Azure Active Directory (AAD) ID を使用してセットアップされている場合があります。  この記事では、サブスクリプションにサインインするときに発生する可能性がある問題について説明します。
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>職場/学校のメール アドレスを使用して Microsoft アカウント (MSA) を作成することはできない
-職場/学校のメール アドレスを使って新しい個人用 Microsoft アカウント (MSA) を作成する機能は、メール ドメインが Azure AD で構成されているときは使用できません。 これはどういう意味でしょうか。 Office 365 または Azure AD に依存する他の Microsoft 提供ビジネス サービスが組織で使用されていて、Azure AD テナントにドメイン名を追加してある場合、ユーザーはドメインのメール アドレスを使って新しい個人用 Microsoft アカウントを作成できなくなります。
+職場/学校のメール アドレスを使って新しい個人用 Microsoft アカウント (MSA) を作成する機能は、メール ドメインが Azure AD で構成されているときは使用できません。 これはどういう意味でしょうか。 Microsoft 365 または Azure AD に依存する他の Microsoft 提供ビジネス サービスが組織で使用されていて、Azure AD テナントにドメイン名を追加している場合、ユーザーはドメインのメール アドレスを使って新しい個人用 Microsoft アカウントを作成できなくなります。
 
 ### <a name="why-was-this-change-made"></a>この変更が行われた理由
 職場のアドレスをユーザー名として使って個人用 Microsoft アカウントを作成することは、エンド ユーザーにとっても IT 部門にとっても問題があることです。 次に例を示します。
@@ -40,7 +40,7 @@ Visual Studio サブスクリプションを使用するには、最初にサイ
    > ![職場/学校アカウントがサポートされている](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>既存のアカウントへの影響
-ここで説明したサインアップのブロックでは、新しいアカウントの作成だけが禁止されます。 職場/学校のメール アドレスで既に Microsoft アカウントを持っているユーザーには影響ありません。 既にそのような状況になっている場合、個人用 Microsoft アカウントの名前を簡単に変更できるようになっています。 簡単なステップ バイ ステップ ガイダンスが、こちらの[サポート記事](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)で提供されています。 個人用 Microsoft アカウントの名前の変更とはユーザー名を変更することを意味し、職場のメールや、Office 365 などのビジネス サービスへのサインイン方法には影響ありません。 また、個人情報にも影響しません。サインイン方法が変わるだけです。 別の (個人用) メール アドレスを使用したり、新しい @outlook.com メール アドレスを Microsoft から取得したり、自分の電話番号を新しいユーザー名として使用したりすることができます。
+ここで説明したサインアップのブロックでは、新しいアカウントの作成だけが禁止されます。 職場/学校のメール アドレスで既に Microsoft アカウントを持っているユーザーには影響ありません。 既にそのような状況になっている場合、個人用 Microsoft アカウントの名前を簡単に変更できるようになっています。 簡単なステップ バイ ステップ ガイダンスが、こちらの[サポート記事](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)で提供されています。 個人用 Microsoft アカウントの名前の変更とはユーザー名を変更することを意味し、職場のメールや、Microsoft 365 などのビジネス サービスへのサインイン方法には影響ありません。 また、個人情報にも影響しません。サインイン方法が変わるだけです。 別の (個人用) メール アドレスを使用したり、新しい @outlook.com メール アドレスを Microsoft から取得したり、自分の電話番号を新しいユーザー名として使用したりすることができます。
 
 > [!NOTE]
 > たとえば Premier サポートなどの Microsoft ビジネス サービスにアクセスするために、IT 部門から職場/学校のメール アドレスで個人用 Microsoft アカウントを作成するよう要求された場合は、アカウントの名前を変更する前に管理チームに連絡します。

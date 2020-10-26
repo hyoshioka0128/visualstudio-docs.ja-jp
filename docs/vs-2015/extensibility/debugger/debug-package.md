@@ -11,25 +11,25 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dda8b1ac6eaa2cd5352d441600ae720c3aac321c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181295"
 ---
 # <a name="debug-package"></a>パッケージのデバッグ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-デバッグ パッケージは、Visual Studio シェルで実行し、すべての UI を処理します。 Visual Studio のデバッグのインターフェイスを使用し、セッション デバッグ マネージャー (SDM) と通信します。  
+デバッグパッケージは、Visual Studio シェルで実行され、すべての UI を処理します。 このメソッドは、Visual Studio のデバッグインターフェイスを使用し、セッションデバッグマネージャー (SDM) と通信します。  
   
- 中断イベントが、SDM を経由して送信は、中断モード、中断が発生したプログラムにフォーカスを変更して、実行モードからデバッガーを切り替えます。 デバッグ パッケージは、イベントによって送信される情報のスタック フレームとスレッドを追跡します。  
+ SDM を介して送信されたイベントを中断するデバッガーを実行モードから中断モードに切り替え、中断が発生したプログラムにフォーカスを移動します。 デバッグパッケージは、イベントによって送信された情報から、スタックフレームとスレッドを追跡します。  
   
- パッケージのデバッグには、言語またはランタイム環境の依存関係がありません。 実装またはデバッグ パッケージを変更する必要はありません。  
+ デバッグパッケージには、言語または実行時の環境依存関係はありません。 デバッグパッケージを実装または変更する必要はありません。  
   
- デバッグ パッケージは、vsdebug.dll によって実装されます。  
+ デバッグパッケージは vsdebug.dll によって実装されます。  
   
-## <a name="see-also"></a>関連項目  
- [セッション デバッグ マネージャー](../../extensibility/debugger/session-debug-manager.md)   
- [スタック フレーム](../../extensibility/debugger/stack-frames.md)   
- [スレッド](../../extensibility/debugger/threads.md)   
+## <a name="see-also"></a>参照  
+ [セッションデバッグマネージャー](../../extensibility/debugger/session-debug-manager.md)   
+ [スタックフレーム](../../extensibility/debugger/stack-frames.md)   
+ [レッド](../../extensibility/debugger/threads.md)   
  [デバッガーのコンポーネント](../../extensibility/debugger/debugger-components.md)

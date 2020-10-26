@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: IDebugSymbolProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719171"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-このインターフェイスは、シンボルと型を提供するシンボル プロバイダーを表し、それらをフィールドとして返します。
+このインターフェイスは、シンボルと型を提供し、それらをフィールドとして返すシンボルプロバイダーを表します。
 
 ## <a name="syntax"></a>構文
 
@@ -28,44 +28,44 @@ ms.locfileid: "80719171"
 IDebugSymbolProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
-シンボル プロバイダーは、シンボルと型の情報を式エバリュエーターに提供するために、このインターフェイスを実装する必要があります。
+## <a name="notes-for-implementers"></a>実装側の注意
+シンボルプロバイダーは、このインターフェイスを実装して、シンボルと型の情報を式エバリュエーターに提供する必要があります。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
-このインターフェイスは、COM の`CoCreateInstance`関数 (アンマネージ シンボル プロバイダーの場合) を使用するか、適切なマネージ コード アセンブリを読み込み、そのアセンブリ内の情報に基づいてシンボル プロバイダーをインスタンス化することによって取得されます。 デバッグ エンジンは、式エバリュエーターと連携して動作するシンボル プロバイダーをインスタンス化します。 このインターフェイスをインスタンス化する 1 つの方法については、例を参照してください。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+このインターフェイスは、COM の `CoCreateInstance` 関数 (アンマネージシンボルプロバイダーの場合) を使用するか、適切なマネージコードアセンブリを読み込んで、そのアセンブリ内の情報に基づいてシンボルプロバイダーをインスタンス化することによって取得されます。 デバッグエンジンは、式エバリュエーターと連携して動作するようにシンボルプロバイダーをインスタンス化します。 このインターフェイスをインスタンス化する方法の例を参照してください。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
-次の表に`IDebugSymbolProvider`、 のメソッドを示します。
+次の表に、のメソッドを示し `IDebugSymbolProvider` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|`Initialize`|非推奨になりました。 使用しないでください。|
-|`Uninitialize`|非推奨になりました。 使用しないでください。|
-|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|デバッグ アドレスを含むフィールドを取得します。|
-|`GetField`|非推奨になりました。 使用しないでください。|
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|ドキュメントの位置をデバッグ アドレスの配列にマップします。|
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|ドキュメント コンテキストをデバッグ アドレスの配列にマップします。|
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|デバッグ アドレスをドキュメント コンテキストにマップします。|
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|デバッグ アドレスでコードをコンパイルするために使用する言語を取得します。|
-|`GetGlobalContainer`|非推奨になりました。 使用しないでください。|
+|`Initialize`|非推奨。 使用しないでください。|
+|`Uninitialize`|使用は推奨されていません。 使用しないでください。|
+|[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|デバッグアドレスを格納しているフィールドを取得します。|
+|`GetField`|非推奨。 使用しないでください。|
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|ドキュメントの位置をデバッグアドレスの配列にマップします。|
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|ドキュメントコンテキストをデバッグアドレスの配列にマップします。|
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|デバッグアドレスをドキュメントコンテキストにマップします。|
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|デバッグアドレスでコードをコンパイルするために使用される言語を取得します。|
+|`GetGlobalContainer`|非推奨。 使用しないでください。|
 |[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|完全修飾メソッド名を表すフィールドを取得します。|
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|完全修飾クラス名を表すクラス フィールド型を取得します。|
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|デバッグ アドレスに関連付けられている名前空間の列挙子を作成します。|
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|シンボル名をシンボル タイプにマップします。|
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|メソッド内の特定のデバッグ アドレスの後に続くデバッグ アドレスを取得します。|
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|完全修飾クラス名を表すクラスフィールド型を取得します。|
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|デバッグアドレスに関連付けられた名前空間の列挙子を作成します。|
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|シンボル名をシンボルの種類にマップします。|
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|メソッド内の指定されたデバッグアドレスの後に続くデバッグアドレスを取得します。|
 
-## <a name="remarks"></a>Remarks
-このインターフェイスは、ドキュメントの位置をデバッグ アドレスにマップし、その逆も同様です。
+## <a name="remarks"></a>注釈
+このインターフェイスは、ドキュメントの位置をデバッグアドレスに、またはその逆にマップします。
 
 ## <a name="requirements"></a>必要条件
-ヘッダー: sh.h
+ヘッダー: sh. h
 
-名前空間: を使用します。
+名前空間: VisualStudio。
 
-アセンブリ:
+アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>例
-この例では、GUID を指定してシンボル プロバイダーをインスタンス化する方法を示します (デバッグ エンジンはこの値を知っている必要があります)。
+この例では、GUID (デバッグエンジンがこの値を認識している必要があります) を指定して、シンボルプロバイダーをインスタンス化する方法を示します。
 
 ```cpp
 // A debug engine uses its own symbol provider and would know the GUID

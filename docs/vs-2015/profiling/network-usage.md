@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548422"
 ---
 # <a name="network-usage"></a>ネットワーク使用量
@@ -24,14 +24,14 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
  ネットワーク ツールは、Windows ユニバーサル プラットフォーム アプリのみをサポートしています。 その他のプラットフォームは現時点ではサポートされていません。  
   
 > [!NOTE]
-> ネットワーク ツールの詳細については、[Visual Studio の概要](https://devblogs.microsoft.com/visualstudio/?m=20155)に関する記事をご覧ください。  
+> ネットワークツールの詳細については、「 [Visual Studio のネットワークツールの概要](https://devblogs.microsoft.com/visualstudio/?m=20155)」を参照してください。  
   
 ## <a name="collecting-network-tool-data"></a>ネットワーク ツール データの収集  
  **ネットワーク** ツールを実行するには、Visual Studio コンピューター上で開かれた状態の Visual Studio プロジェクトが必要です。  
   
 1. Visual Studio でプロジェクトを開きます。  
   
-2. メニューで、[デバッグ]、[**パフォーマンスプロファイラー...**] の順にクリックします。[**ネットワーク**] を選択し、[**開始**] を選択します。  
+2. メニューで、[デバッグ]、[ **パフォーマンスプロファイラー...**] の順にクリックします。[ **ネットワーク**] を選択し、[ **開始**] を選択します。  
   
 3. ネットワーク ツールは、アプリの HTTP トラフィックの収集を開始します。  
   
@@ -60,20 +60,20 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 |**本文**|要求と応答のペイロード データ。|  
 |**パラメーター**|クエリ文字列パラメーター名と値。|  
 |**Cookie**|応答と要求の cookie データ。|  
-|**時間**|選択したリソースの取得中のステージのグラフ。|  
+|**タイミング**|選択したリソースの取得中のステージのグラフ。|  
   
  ネットワークの **[概要]** バーは、ある特定の時点で表示されているネットワーク操作の数、転送されたデータの量、データのダウンロードに要した時間、および表示可能なエラー (4xx 応答または 5xx 応答が返された要求) の数を示しています。  
   
 ### <a name="analysis-tips"></a>分析のヒント  
  このツールは、次のネットワーク関連の分析を実行する際に役立つ特定の領域を強調表示します。  
   
-1. キャッシュから完全に処理される要求は、**[受信元]** 列の **[(キャッシュから)]** に表示されます。 これにより、キャッシュを使用して効果的にユーザーの帯域幅を節約しているかどうか、または誤って応答をキャッシュして、アプリケーションのエンド ユーザーに古いデータを提供しているかどうかを判断できます。  
+1. キャッシュから完全に処理される要求は、 **[受信元]** 列の **[(キャッシュから)]** に表示されます。 これにより、キャッシュを使用して効果的にユーザーの帯域幅を節約しているかどうか、または誤って応答をキャッシュして、アプリケーションのエンド ユーザーに古いデータを提供しているかどうかを判断できます。  
   
 2. エラー応答 (4xx または 5xx) は、**[結果]** 列で状態コードが赤い状態で、[概要] バーで強調表示された状態で表示されます。 これにより、アプリケーションの多くの潜在的な要求の間でエラーを見つけやすくなります。  
   
 3. ([本文] タブ内の) [応答の整形出力] ボタンは、コンテンツをさらに読みやすくして、JSON、XML、HTML、CSS、JavaScript、および TypeScript の応答のペイロードを解析できるようにします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッグなしでプロファイリングツールを実行する](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio ブログ: Visual Studio のネットワーク検査の概要](https://blogs.msdn.com/b/visualstudio/)   
- [Channel 9 ビデオ: Visual Studio 診断ツール - 新しいネットワーク プロファイラー](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Channel 9 ビデオ: VS 診断ツール-新しいネットワークプロファイラー](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

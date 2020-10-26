@@ -12,10 +12,10 @@ ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
 ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850989"
 ---
 # <a name="creating-your-own-start-page"></a>ユーザー独自のスタート ページの作成
@@ -31,7 +31,7 @@ ms.locfileid: "75850989"
 1. Visual Studio ギャラリーから [スタート ページのプロジェクト テンプレート](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) をダウンロードしてインストールします。  
   
     > [!WARNING]
-    > この時点では、Visual Studio 2010 のスタート ページのプロジェクト テンプレートはアップグレードされていません。 このテンプレートをアップグレードする方法の詳細については、「[方法: Visual Studio のカスタムスタートページをアップグレード](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)する」を参照してください。  
+    > この時点では、Visual Studio 2010 のスタート ページのプロジェクト テンプレートはアップグレードされていません。 このテンプレートをアップグレードする方法の詳細については、「 [方法: Visual Studio のカスタムスタートページをアップグレード](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)する」を参照してください。  
   
 2. テンプレートをインストールした後、それを使用して新しいスタート ページ プロジェクトを作成します。  
   
@@ -78,14 +78,14 @@ ms.locfileid: "75850989"
   
     配置する .vsix ファイルと .pkgdef ファイルは残してください。  
   
-   または、Visual Studio によって認識される適切なタグ構造を持つ XAML ファイルを作成することで、空白のスタート ページを作成することもできます。 その後、マークアップと分離コードを追加して、必要な外観と機能を取得できます。 詳細については、「[カスタムスタートページの作成](../extensibility/creating-a-custom-start-page.md)」を参照してください。  
+   または、Visual Studio によって認識される適切なタグ構造を持つ XAML ファイルを作成することで、空白のスタート ページを作成することもできます。 その後、マークアップと分離コードを追加して、必要な外観と機能を取得できます。 詳細については、「 [カスタムスタートページの作成](../extensibility/creating-a-custom-start-page.md)」を参照してください。  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>カスタム スタート ページのテストと適用  
  クラッシュしないことを確認するまでは、プライマリ インスタンスを設定してカスタム スタート ページを実行しないでください。 テストしたカスタム スタート ページは、Visual Studio のプライマリ インスタンスでこの手順の最後の 3 つの手順を繰り返して、システムに適用できます。  
   
 #### <a name="to-test-a-custom-start-page"></a>カスタム スタート ページをテストするには  
   
-1. F5 キーを押します。  
+1. F5 キーを押す。  
   
     Visual Studio の実験用インスタンスが開きます。新しいスタート ページがインストールされていますが、選択されていません。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "75850989"
   
     作業中のスタート ページが表示されます。 実験用インスタンスを閉じて変更したファイルを再度コピーし、実験用インスタンスを再度開いて新しい変更を確認します。  
   
-   カスタムスタートページを共有するには、bin\debug ディレクトリから[Visual Studio Marketplace](https://marketplace.visualstudio.com/) web サイト、または別の web サイトまたはイントラネット共有に .vsix ファイルをアップロードします。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。  
+   カスタムスタートページを共有するには、bin\debug ディレクトリから [Visual Studio Marketplace](https://marketplace.visualstudio.com/) web サイト、または別の web サイトまたはイントラネット共有に .vsix ファイルをアップロードします。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。  
   
 ## <a name="see-also"></a>参照  
  [スタートページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)   

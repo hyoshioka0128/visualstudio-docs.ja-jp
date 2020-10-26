@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62811191"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801621"
 ---
 # <a name="create-visual-data-plots-with-r"></a>R でデータを視覚化する
 
@@ -21,9 +21,14 @@ ms.locfileid: "62811191"
 
 ![ヒーローのイメージをプロットする](media/plotting-hero-image.png)
 
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | R でのプロットに関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) (2 分 02 秒)。 |
+:::row:::
+    :::column:::
+        ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る")
+    :::column-end:::
+    :::column:::
+        R でのプロットに関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) (2 分 02 秒)。
+    :::column-end:::
+:::row-end:::
 
 ## <a name="the-plot-window"></a>プロット ウィンドウ
 
@@ -77,7 +82,7 @@ ms.locfileid: "62811191"
 
 ![プロット履歴ウィンドウ](media/plotting-plot-history-window.png)
 
-プロットを関連ウィンドウで開くには、そのプロットをダブルクリックして選択し、 **[プロットの表示]** ツールバー ボタンを選択するか、右クリックして **[プロットの表示]** を選択します。 個々のプロットを選択し、右クリック コンテキストか **[編集]** メニューからコピー、切り取り、削除することもできます。
+プロットを関連ウィンドウで開くには、そのプロットをダブルクリックして選択し、 **[プロットの表示]** ツールバー ボタンを選択します。 または、プロットを右クリックして **[プロットの表示]** を選択します。 個々のプロットを選択し、コンテキスト メニューまたは **[編集]** メニューからコピー、切り取り、削除を行うこともできます。
 
 すべてのウィンドウにわたり、プロット履歴の有効期間はインタラクティブ R セッションの有効期間によって決まります。 R セッションをリセットするか、Visual Studio を終了して再起動すると、プロット履歴がリセットされます。
 

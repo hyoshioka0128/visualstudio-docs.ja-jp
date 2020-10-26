@@ -1,5 +1,5 @@
 ---
-title: IDebugプロセス2::アタッチ |マイクロソフトドキュメント
+title: 'IDebugProcess2:: Attach |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724192"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
-セッション デバッグ マネージャー (SDM) をプロセスにアタッチします。
+セッションデバッグマネージャー (SDM) をプロセスにアタッチします。
 
 ## <a name="syntax"></a>構文
 
@@ -47,30 +47,30 @@ int Attach( 
 
 ## <a name="parameters"></a>パラメーター
 `pCallback`\
-[in]デバッグ イベント通知に使用される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)オブジェクト。
+からデバッグイベント通知に使用される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) オブジェクト。
 
 `rgguidSpecificEngines`\
-[in]プロセスで実行されているプログラムのデバッグに使用するデバッグ エンジンの GUID の配列。 このパラメーターには、NULL 値を指定できます。 詳細については、「解説」を参照してください。
+からプロセスで実行されているプログラムをデバッグするために使用されるデバッグエンジンの Guid の配列。 このパラメーターには null 値を指定できます。 詳細については、「解説」を参照してください。
 
 `celtSpecificEngines`\
-[in]配列内のデバッグ エンジンの`rgguidSpecificEngines`数と`rghrEngineAttach`配列のサイズ。
+から配列内のデバッグエンジンの数 `rgguidSpecificEngines` と配列のサイズ `rghrEngineAttach` 。
 
 `rghrEngineAttach`\
-[イン、アウト]デバッグ エンジンによって返される HRESULT コードの配列。 この配列のサイズは`celtSpecificEngines`、パラメーターで指定されます。 各コードは通常、 `S_OK` `S_ATTACH_DEFERRED`または のいずれかです。 後者は、DE が現在プログラムに接続されていることを示します。
+[入力、出力]デバッグエンジンによって返される HRESULT コードの配列。 この配列のサイズは、パラメーターで指定し `celtSpecificEngines` ます。 各コードは通常、 `S_OK` または `S_ATTACH_DEFERRED` です。 後者は、DE が現在プログラムにアタッチされていないことを示します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 次の表に、その他の値を示します。
+ 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 次の表に、その他の使用可能な値を示します。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定されたプロセスは既にデバッガーにアタッチされています。|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|アタッチ処理中にセキュリティ違反が発生しました。|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|デスクトップ プロセスをデバッガにアタッチすることはできません。|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Attach プロシージャの実行中にセキュリティ違反が発生しました。|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|デスクトッププロセスをデバッガーにアタッチすることはできません。|
 
-## <a name="remarks"></a>Remarks
- プロセスにアタッチすると、配列で指定されたデバッグ エンジン (DE) によってデバッグできる、そのプロセスで実行されているすべてのプログラムに SDM が`rgguidSpecificEngines`アタッチされます。 このパラメータ`rgguidSpecificEngines`を null 値に設定`GUID_NULL`するか、またはプロセス内のすべてのプログラムにアタッチする配列に含めます。
+## <a name="remarks"></a>注釈
+ プロセスにアタッチすると、そのプロセスで実行されているすべてのプログラムに SDM がアタッチされます。このプロセスは、配列で指定されたデバッグエンジン (DE) によってデバッグでき `rgguidSpecificEngines` ます。 パラメーターを `rgguidSpecificEngines` null 値に設定するか、または `GUID_NULL` プロセス内のすべてのプログラムにアタッチする配列に含めます。
 
- プロセスで発生するすべてのデバッグ イベントは、指定された[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)オブジェクトに送信されます。 この`IDebugEventCallback2`オブジェクトは、SDM がこのメソッドを呼び出したときに提供されます。
+ プロセスで発生するすべてのデバッグイベントは、指定された [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) オブジェクトに送信されます。 この `IDebugEventCallback2` オブジェクトは、SDM がこのメソッドを呼び出したときに提供されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

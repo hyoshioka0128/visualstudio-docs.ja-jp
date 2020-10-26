@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195611"
 ---
 # <a name="modules-view"></a>モジュール ビュー
@@ -29,13 +29,13 @@ ms.locfileid: "68195611"
   
  モジュール名を展開してモジュールのパフォーマンス データのビューを表示したり、モジュール名を折りたたんでこれらのビューを閉じたりします。  
   
- 列を追加または削除するには、レポート ウィンドウ内を右クリックし、 **[列の追加と削除]** を選択します。 データを並べ替えるには、列名をクリックします。 詳細については、「[方法 :レポート ビューの列をカスタマイズ](../profiling/how-to-customize-report-view-columns.md)します。  
+ 列を追加または削除するには、レポート ウィンドウ内を右クリックし、 **[列の追加と削除]** を選択します。 データを並べ替えるには、列名をクリックします。 詳細については、「[方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。  
   
  モジュール ビューに表示される列は、データの収集に使用したプロファイル方法 (サンプリングまたはインストルメンテーション)、およびプロファイル実行で .NET メモリ データを収集対象としたかどうかによって異なります。  
   
-## <a name="see-also"></a>関連項目  
- [モジュール ビュー](../profiling/modules-view-sampling-data.md)   
- [モジュール ビュー](../profiling/modules-view-instrumentation-data.md)   
- [モジュール ビュー - インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [モジュール ビュー - サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [モジュール ビュー](../profiling/modules-view-contention-data.md)
+## <a name="see-also"></a>参照  
+ [モジュールビュー](../profiling/modules-view-sampling-data.md)   
+ [モジュールビュー](../profiling/modules-view-instrumentation-data.md)   
+ [モジュールビュー-インストルメンテーション](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [モジュールビュー-サンプリング](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [[モジュール] ビュー](../profiling/modules-view-contention-data.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;パッケージ&gt;要素 (ブートス トラップ) |Microsoft Docs'
+title: '&lt;Package &gt; 要素 (ブートストラップ) |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157680"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;パッケージ&gt;要素 (ブートス トラップ)
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; 要素 (ブートストラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Package`要素は、パッケージ ファイル内の最上位の XML 要素。  
+要素は、 `Package` パッケージファイル内の最上位レベルの XML 要素です。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Package  
@@ -144,16 +144,16 @@ ms.locfileid: "68157680"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
- `Package`要素が必要です。 次の属性があります。  
+ `Package` 要素は必須です。 これには次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Culture`|必須。 このパッケージには、使用する言語を決定するカルチャを定義します。 この属性がキーに、`Strings`要素で、インストール時に製品名とエラー メッセージのカルチャに固有の文字列の一覧を表示します。|  
-|`Name`|必須。 などのツールで開発者に表示されるパッケージの名前[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 この属性がキーに、`Strings`要素が含まれている、`String`を持つ要素、`Name`と`Culture`プロパティが一致するように設定、`Name`と`Culture`プロパティの`Package`します。|  
-|`LicenseAgreement`|任意。 ライセンス契約 (EULA) を含む配布パッケージでは、ファイルの名前を指定します。  このファイルには、プレーン テキスト (.txt) またはリッチ テキスト形式のいずれかを指定できます。 式 (.rtf)|  
+|`Culture`|必須です。 使用する言語を決定する、このパッケージのカルチャを定義します。 この属性は要素のキーであり `Strings` 、インストール時に製品名とエラーメッセージのカルチャ固有の文字列を一覧表示します。|  
+|`Name`|必須です。 などのツール内で開発者に表示されるパッケージの名前 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 この属性は、要素に対するキーです。この要素には、のプロパティおよび `Strings` `String` プロパティと `Name` `Culture` 一致するように、プロパティとプロパティが設定された要素が含まれている必要があり `Name` `Culture` `Package` ます。|  
+|`LicenseAgreement`|省略可能。 使用許諾契約書 (EULA) を含む配布パッケージ内のファイルの名前を指定します。  このファイルには、プレーンテキスト (.txt) またはリッチテキスト形式を使用できます。 (.rtf)|  
   
 ## <a name="example"></a>例  
- 次のコード例は、再配布するための完全なパッケージ ファイルを示しています、[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]します。  
+ を再配布するための完全なパッケージファイルのコード例を次に示し [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] ます。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -190,5 +190,5 @@ ms.locfileid: "68157680"
 </Package>  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)

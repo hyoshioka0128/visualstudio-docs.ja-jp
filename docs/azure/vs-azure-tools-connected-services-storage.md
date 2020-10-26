@@ -1,45 +1,53 @@
 ---
 title: 接続済みサービスを使用して Azure Storage を追加する | Microsoft Docs
-description: Visual Studio の [接続済みサービスの追加] ダイアログ ボックスを使用してアプリに Azure Storage を追加する
+description: Visual Studio を使用して、アプリに Azure Storage サービスの依存関係を追加接続済みサービス
 author: ghogen
 manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
-ms.date: 03/26/2017
+ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280684"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88800516"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加
 
-Visual Studio では、**[接続済みサービスの追加]** ダイアログを使用して、次のサービスを Azure Storage に接続できます。
+Visual Studio では、次のいずれかを、 **接続済みサービス** 機能を使用して Azure Storage に接続できます。
 
-- C# クラウド サービス
-- .NET バックエンド モバイル サービス
-- ASP.NET Web サイトまたはサービス
-- ASP.NET Core サービス
-- Azure WebJob サービス
+- .NET Framework コンソールアプリ
+- ASP.NET MVC (.NET Framework)
+- ASP.NET Core
+- .NET Core (コンソールアプリ、WPF、Windows フォーム、クラスライブラリを含む)
+- .NET Core Worker ロール
+- Azure Functions
+- ユニバーサル Windows プラットフォームアプリ
+- Xamarin
+- Cordova
 
 接続済みサービス機能により、必要なすべての参照と接続コードがプロジェクトに追加され、構成ファイルが適切に変更されます。
 
-完了後、**[接続済みサービスの追加]** ダイアログに、Blob Storage、キュー、およびテーブルの操作を開始するために必要な手順の詳細を示すドキュメントが自動的に表示されます。
-
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac での接続済みサービス](/visualstudio/mac/connected-services)に関するページを参照してください。
+## <a name="prerequisites"></a>前提条件
 
-## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>[接続済みサービス] ダイアログを使用して Azure Storage に接続する
+- Azure ワークロードがインストールされている Visual Studio。
+- サポートされている種類の1つのプロジェクト
+
+## <a name="connect-to-azure-storage-using-connected-services"></a>接続済みサービスを使用して Azure Storage に接続する
+
+::: moniker range="vs-2017"
 
 1. Visual Studio でプロジェクトを開きます。
 
-1. **ソリューション エクスプローラー**で **[接続済みサービス]** ノードを右クリックし、コンテキスト メニューの **[接続済みサービスの追加]** を選択します。
+1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
 
-    ![Azure の接続済みサービスを追加する](./media/vs-azure-tools-connected-services-storage/IC796702.png)
+    ![Azure の接続済みサービスを追加する](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
 1. **[接続済みサービス]** ページで、**[Azure Storage を使用したクラウド ストレージ]** を選択します。
 
@@ -62,19 +70,55 @@ Visual Studio では、**[接続済みサービスの追加]** ダイアログ�
    1. **[Azure Storage]** ダイアログが表示されると、新しいストレージ アカウントが一覧に表示されます。 一覧で新しいストレージ アカウントを選択し、**[追加]** をクリックします。
 
 1. プロジェクトの **[サービス参照]** ノードに、ストレージの接続済みサービスが表示されます。
+:::moniker-end
 
-## <a name="how-your-project-is-modified"></a>プロジェクトを変更する方法
+:::moniker range=">=vs-2019"
 
-ダイアログが完了すると、Visual Studio は参照を追加し、特定の構成ファイルを変更します。 具体的な変更内容はプロジェクトの種類によって異なります。
+1. Visual Studio でプロジェクトを開きます。
 
-- ASP.NET プロジェクト - [変更内容 – ASP.NET プロジェクト](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- ASP.NET Core プロジェクト - [変更内容 – ASP.NET 5 プロジェクト](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- クラウド サービス プロジェクト (Web ロールおよび worker ロール) - [変更内容 – クラウド サービス プロジェクト](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
-- WebJob プロジェクト - [変更内容 - WebJob プロジェクト](/azure/visual-studio/vs-storage-webjobs-what-happened)
+1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
+
+    ![Azure の接続済みサービスを追加する](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
+
+1. [ **接続済みサービス** ] タブで、 **サービスの依存関係**の [+] アイコンを選択します。
+
+    ![サービスの依存関係の追加](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+
+1. [ **依存関係の追加** ] ページで、[ **Azure Storage**] を選択します。
+
+    ![Azure Storage を追加する](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
+
+    まだサインインしていない場合は、Azure アカウントにサインインします。 Azure アカウントを持っていない場合、[無料試用版](https://azure.microsoft.com/account/free)でサインアップできます。
+
+1. [ **Azure Storage の構成** ] 画面で、既存のストレージアカウントを選択し、[ **次へ**] を選択します。
+
+    ストレージ アカウントを作成する必要がある場合は、次の手順に進みます。 それ以外の場合、手順 6. に進みます。
+
+    ![既存のストレージ アカウントをプロジェクトに追加する](./media/vs-azure-tools-connected-services-storage/vs-2019/select-azure-storage-account.png)
+
+1. ストレージ アカウントを作成するには、以下の手順を実行します。
+
+   1. ダイアログの下部にある [ **ストレージアカウントの作成** ] を選択します。
+
+   1. [Azure Storage の **作成** ] ダイアログボックスに入力し、[ **作成**] を選択します。
+
+       ![新しい Azure ストレージ アカウント](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
+
+   1. **[Azure Storage]** ダイアログが表示されると、新しいストレージ アカウントが一覧に表示されます。 一覧で新しいストレージアカウントを選択し、[ **次へ**] を選択します。
+
+1. 接続文字列名を入力し、接続文字列をローカルシークレットファイルに保存するか、 [Azure Key Vault](/azure/key-vault)に格納するかを選択します。
+
+   ![接続文字列の指定](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
+
+1. [ **変更の概要** ] 画面には、プロセスが完了した場合にプロジェクトに対して行われるすべての変更が表示されます。 変更が OK の場合は、[ **完了**] を選択します。
+
+   ![変更の概要](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
+
+1. プロジェクトの **[サービス参照]** ノードに、ストレージの接続済みサービスが表示されます。
+:::moniker-end
 
 ## <a name="see-also"></a>関連項目
 
-- [MSDN フォーラム: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure Storage チーム ブログ](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage フォーラム](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Azure Storage のドキュメント](/azure/storage/)
 - [接続済みサービス (Visual Studio for Mac)](/visualstudio/mac/connected-services)

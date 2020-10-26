@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666173"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>モデルからアプリを生成し構成する
@@ -24,7 +24,7 @@ ms.locfileid: "72666173"
  このモデルは、コードと比べて、要求をより直接的に表します。 アプリケーションの動作をモデルから直接派生させることで、コードを更新するよりも迅速かつ確実に、要求の変更に対応できます。 派生を設定するには特定の初期作業が必要ですが、要求の変更が予想される場合、または製品のバリエーションを複数予定している場合、この投資は取り戻すことができます。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>モデルからアプリケーション コードを生成する
- コードを生成する最も簡単な方法は、テキスト テンプレートを使用することです。 モデルを保持するのと同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションでコードを生成できます。 詳細については次を参照してください:
+ コードを生成する最も簡単な方法は、テキスト テンプレートを使用することです。 モデルを保持するのと同じソリューションでコードを生成でき [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ます。 詳細については次を参照してください:
 
 - [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666173"
 
      たとえば、1 つのモデルを使って Web ページ間の移動を定義し、次に別のモデルを使ってページのレイアウトを定義します。 詳細については、「 [UML モデルを他のモデルおよびツールと統合](../modeling/integrate-uml-models-with-other-models-and-tools.md)する」を参照してください。
 
-- **ソリューションではなく、要件をモデル化します。** ユーザー要求を記述するように、DSL を設計するか、UML を適用します。 これとは対照的に、実装の可変部分に従って、表記を設計しないでください。
+- **ソリューションではなく、要求をモデル化する。** ユーザー要求を記述するように、DSL を設計するか、UML を適用します。 これとは対照的に、実装の可変部分に従って、表記を設計しないでください。
 
      たとえば、Web ナビゲーション モデルは、Web ページと Web ページ間のハイパーリンクを表す必要があります。 Web ナビゲーション モデルでは、HTML のフラグメントやアプリケーションのクラスを表さないでください。
 

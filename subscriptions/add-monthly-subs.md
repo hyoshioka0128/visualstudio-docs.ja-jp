@@ -8,10 +8,10 @@ ms.date: 06/23/2020
 ms.topic: how-to
 description: 新しく購入した月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する方法について説明します
 ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904698"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>新しい月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する

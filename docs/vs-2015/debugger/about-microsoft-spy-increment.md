@@ -1,5 +1,5 @@
 ---
-title: Microsoft spy の |Microsoft Docs
+title: '[Microsoft Spy++ のバージョン情報] | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 437ef1f72d3b766a0fc59d602af814a64b735c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157548"
 ---
 # <a name="about-microsoft-spy"></a>[Microsoft Spy++ のバージョン情報]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-著作権情報、バージョン、所有権、および spy++ に関する他の情報を表示するのにには、このダイアログ ボックスを使用します。
+このダイアログ ボックスを使用して、Spy++ に関する著作権、バージョン、所有権などの情報を表示します。

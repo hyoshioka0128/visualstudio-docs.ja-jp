@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a0c479182f1ff9efd4b35f2fed2de35d3536202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153264"
 ---
-# <a name="bptype"></a>BP_TYPE
+# <a name="bp_type"></a>BP_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-ブレークポイントにコードの場所にし、データの場所ですか、別の種類のブレークポイントは、かどうかを指定します。  
+ブレークポイントがコードの場所にあるか、データの場所であるか、または別の種類のブレークポイントであるかを指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -53,22 +53,22 @@ public enum enum_BP_TYPE { 
  コードのブレークポイントを指定します。  
   
  BPT_DATA  
- データ ブレークポイントを指定します。  
+ データブレークポイントを指定します。  
   
  BPT_SPECIAL  
- ブレークポイントは、コードでもデータ型を指定します。 この型は非推奨し、は使用できません。  
+ コードでもデータ型でもないブレークポイントを指定します。 この型は非推奨とされているため、使用しないでください。  
   
-## <a name="remarks"></a>Remarks  
- パラメーターとして渡される、 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)と[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [Getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)メソッドおよび[getbreakpointtype](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッドにパラメーターとして渡されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

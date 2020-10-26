@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200075"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 関数
@@ -36,30 +36,30 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>パラメーター  
  pContext  
- [in]ソース管理プラグインのコンテキストのポインター。  
+ からソース管理プラグインのコンテキストポインター。  
   
- nOption  
- [in]検索するオプション（可能なオプションについては備考を参照）。  
+ いいえ  
+ から取得するオプション (使用可能なオプションについては、「解説」を参照してください)。  
   
  lpVal  
- [out]オプションに関連付けられている値。  
+ 入出力オプションに関連付けられている値。  
   
 ## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |SCC_OK|オプションが正常に取得されました。|  
 |SCC_E_OPNOTSUPPORTED|オプションはサポートされていません。|  
 |SCC_E_NONSPECIFICERROR|未指定のエラーが発生しました。|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>注釈  
  このコマンドでは、次のオプションがサポートされています。  
   
-|ユーザー オプション|説明|  
+|ユーザーオプション|説明|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|ユーザーがファイルのローカル バージョンをチェック アウトするかどうかを判断します。 `lpVal` 割り当てられている`SCC_USEROPT_COLV_YES`(ユーザーがローカル ファイルをチェック アウトする) または`SCC_USEROPT_COLV_NO`します。|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|ユーザーがローカルバージョンのファイルをチェックアウトするかどうかを指定します。 `lpVal` が割り当てられている `SCC_USEROPT_COLV_YES` (ユーザーがローカルファイルをチェックアウトする) か、または `SCC_USEROPT_COLV_NO` 。|  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   
  [エラー コード](../extensibility/error-codes.md)

@@ -1,5 +1,5 @@
 ---
-title: クライアント ブロック用のフック関数 |Microsoft Docs
+title: Client ブロック用のフック関数 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5b1c754255ba0bc659c9b6968ad8ba0dea629ec
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702326"
 ---
 # <a name="client-block-hook-functions"></a>Client ブロック用のフック関数
@@ -51,7 +51,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
    (void *, size_t);  
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)   
  [crt_dbg2 サンプル](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
  [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)

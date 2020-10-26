@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182790"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485399"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>クイック スタート: Visual Studio で React シングルページ アプリを含む Docker を使用する
 
@@ -177,7 +177,7 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. `**/bin` を削除して、.dockerignore ファイルを更新します。
+   1. `**/bin` を削除して、.dockerignore ファイルを更新します。
 
 ## <a name="debug"></a>デバッグ
 
@@ -246,7 +246,7 @@ cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago  
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-* [Visual Studio によるコンテナー開発](/visualstudio/containers)
+* [Visual Studio によるコンテナー開発](./index.yml)
 * [Docker を使用した Visual Studio 開発のトラブルシューティング](troubleshooting-docker-errors.md)
 * [Visual Studio コンテナー ツールの GitHub リポジトリ](https://github.com/Microsoft/DockerTools)
 

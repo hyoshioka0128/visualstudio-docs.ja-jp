@@ -1,5 +1,5 @@
 ---
-title: Iデバッグブレークポイントの解像度2:::ブレークポイントの種類を取得する |マイクロソフトドキュメント
+title: 'IDebugBreakpointResolution2:: GetBreakpointType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734811"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-この解像度で表されるブレークポイントの種類を取得します。
+この解像度によって表されるブレークポイントの型を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>パラメーター
 `pBPType`\
-[アウト]このブレークポイントの種類を指定する[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)列挙体の値を返します。
+入出力このブレークポイントの種類を指定する [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列挙から値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 関連付けられている`bpResLocation`[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のフィールドが有効でない場合に、E_FAILを返します。
+成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 `bpResLocation`関連付けられた[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造のフィールドが有効でない場合は E_FAIL を返します。
 
-## <a name="remarks"></a>Remarks
-ブレークポイントは、コードまたはデータ ブレークポイントなどです。
+## <a name="remarks"></a>解説
+ブレークポイントには、コードまたはデータのブレークポイントを指定できます。たとえば、のようになります。
 
 ## <a name="example"></a>例
-インターフェイスを公開する単純な`CDebugBreakpointResolution`オブジェクトに対してこのメソッドを実装する方法を次の例[に](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)示します。
+次の例は、IDebugBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointResolution` います。 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115058"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
@@ -24,13 +24,13 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 モデルは、いくつかの方法で役立ちます。
 
-- モデリング図を描画すると、要件、アーキテクチャ、および概要設計に関連する概念を明確にすることができます。 詳細については、「[ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
+- モデリング図を描画すると、要件、アーキテクチャ、および概要設計に関連する概念を明確にすることができます。 詳細については、「 [ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
 
 - モデルの操作は、要件の不整合を明らかにするのに役立ちます。
 
-- モデルとの通信では、自然言語でのやり取りよりも曖昧さを残さずに、重要な概念をやり取りできます。 詳細については、「[アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)化」を参照してください。
+- モデルとの通信では、自然言語でのやり取りよりも曖昧さを残さずに、重要な概念をやり取りできます。 詳細については、「 [アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md)化」を参照してください。
 
-- 場合によっては、モデルを使用して、コードまたはデータベース スキーマやドキュメントなどのその他の成果物を生成できます。 たとえば、Visual Studio のモデリングコンポーネントは、モデルから生成されます。 詳細については、「[モデルからのアプリの生成と構成](../modeling/generate-and-configure-your-app-from-models.md)」を参照してください。
+- 場合によっては、モデルを使用して、コードまたはデータベース スキーマやドキュメントなどのその他の成果物を生成できます。 たとえば、Visual Studio のモデリングコンポーネントは、モデルから生成されます。 詳細については、「 [モデルからのアプリの生成と構成](../modeling/generate-and-configure-your-app-from-models.md)」を参照してください。
 
 モデルは、手軽なアジャイルから高度なセレモニーまで、広範囲のプロセスで使用することができます。
 
@@ -42,7 +42,7 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 プロジェクトが大規模で、世界中の各地にチームがある場合は、モデルを使用すると、テキスト形式で行うよりはるかに効果的に要件およびアーキテクチャをやり取りできます。
 
-いずれのケースでも、モデルを作成すると、ほとんどすべての場合、不整合性やあいまいさが大幅に減少します。 さまざまな利害関係者が、システムが動作するビジネスの世界について異なる理解をすることはよくあります。また、さまざまな開発者が、システムの動作の仕方について異なる理解をすることもよくあります。 通常、ディスカッションを中心としたモデルを使用すると、これらの相違点が明らかになります。 モデルを使用して不整合を軽減する方法の詳細については、「[ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
+いずれのケースでも、モデルを作成すると、ほとんどすべての場合、不整合性やあいまいさが大幅に減少します。 さまざまな利害関係者が、システムが動作するビジネスの世界について異なる理解をすることはよくあります。また、さまざまな開発者が、システムの動作の仕方について異なる理解をすることもよくあります。 通常、ディスカッションを中心としたモデルを使用すると、これらの相違点が明らかになります。 モデルを使用して不整合を軽減する方法の詳細については、「 [ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
 
 ## <a name="use-models-with-other-artifacts"></a>他の成果物でモデルを使用する
 
@@ -86,7 +86,7 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 - 各イテレーションの終盤で、要件ワーク ショップを開催して、要件や次のイテレーションで開発されるユーザー ストーリーを詳細に定義します。 優先度を決定できるユーザーとビジネスの利害関係者、および開発者とシステムのテスト担当者を招待します。 2 週間分のイテレーションの要件を定義するには 3 時間かかります。
 
-- すべてのユーザーにとって、ワークショップの目的は、次のイテレーションが終了するまでに達成する事柄について同意することです。 要件を明確化するには、ツールの 1 つとしてモデルを使用します。 ワークショップの出力はイテレーションバックログです。これは、[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]内の Team Foundation およびテストスイートの開発タスクの一覧です。
+- すべてのユーザーにとって、ワークショップの目的は、次のイテレーションが終了するまでに達成する事柄について同意することです。 要件を明確化するには、ツールの 1 つとしてモデルを使用します。 ワークショップの出力はイテレーションバックログです。これは、の Team Foundation およびテストスイートにおける開発タスクの一覧です [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 。
 
 - 要件のワーク ショップでは、開発タスクの見積もりを決定する必要がある限りは、設計のみについて話し合います。 それ以外の場合は、ユーザーが直接体験するシステムの動作について話し合いを続けます。 要件モデルとアーキテクチャのモデルは別にしておいてください。
 
@@ -98,13 +98,13 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 作業項目に任意の要素をリンクできますが、最も役立つ要素は次のとおりです。
 
-- ビジネス ルールやサービスの要件の品質について記載したコメントです。 詳細については、「[ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
+- ビジネス ルールやサービスの要件の品質について記載したコメントです。 詳細については、「 [ユーザー要件のモデル](../modeling/model-user-requirements.md)化」を参照してください。
 
 ### <a name="link-model-to-tests"></a>テストへのモデルのリンク
 
 要件モデルを使用して、受け入れテストの設計をガイドします。 これらのテストは、開発作業と同時に作成します。
 
-この手法の詳細については、「[モデルからのテストの開発](../modeling/develop-tests-from-a-model.md)」を参照してください。
+この手法の詳細については、「 [モデルからのテストの開発](../modeling/develop-tests-from-a-model.md)」を参照してください。
 
 ### <a name="estimate-remaining-work"></a>残存作業の見積もり
 
@@ -116,7 +116,7 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 モデルには、ソフトウェアに関する抽象化の範囲があります。 ほとんどの具体的なモデルは直接プログラム コードを表し、ほとんどの抽象モデルはコードでは表現できない可能性があるビジネスの概念を表します。
 
-モデルは、数種類の図で表示できます。 モデルと図の詳細については、「[アプリのモデルを作成する](../modeling/create-models-for-your-app.md)」を参照してください。
+モデルは、数種類の図で表示できます。 モデルと図の詳細については、「 [アプリのモデルを作成する](../modeling/create-models-for-your-app.md)」を参照してください。
 
 さまざまな種類の図は、さまざまな抽象化レベルの設計を記述するのに役立ちます。 図の種類の多くは、複数のレベルで役立ちます。 次の表は、各種の図の使用方法を示しています。
 
@@ -129,9 +129,9 @@ Visual Studio では、システム、アプリケーション、またはコン
 
 ## <a name="external-resources"></a>外部リソース
 
-|**カテゴリ**|**Links**|
+|**カテゴリ**|**リンク**|
 |-|-|
-|**ビデオ**|![のビデオへのリンク](../data-tools/media/playvideo.gif) [MSDN の操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ビデオへのリンク ![](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010 を使用した UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![のビデオへのリンク](../data-tools/media/playvideo.gif) [MSDN の操作方法シリーズ: UML ツールと機能拡張 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**ビデオ**|![ビデオへのリンク ](../data-tools/media/playvideo.gif) [MSDN の操作方法ビデオ: UML モデルと図を作成して使用する方法 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![ビデオへ ](../data-tools/media/playvideo.gif) [のリンク 9: Visual Studio 2010 を使用した UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![ビデオへのリンク ](../data-tools/media/playvideo.gif) [MSDN の操作方法シリーズ: UML ツールと拡張機能 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**フォーラム**|- [Visual Studio の視覚化ツールとモデリング ツール](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio の視覚化およびモデリング SDK (DSL ツール)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**ブログ**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技術記事とジャーナル**|[MSDN アーキテクチャ センター](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio アーキテクチャ ツーリング ガイダンス](../modeling/visual-studio-architecture-tooling-guidance.md)|

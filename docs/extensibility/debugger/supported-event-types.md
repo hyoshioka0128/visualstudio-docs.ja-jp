@@ -1,5 +1,5 @@
 ---
-title: サポートされるイベントの種類 |マイクロソフトドキュメント
+title: サポートされているイベントの種類 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712797"
 ---
-# <a name="supported-event-types"></a>サポートされているイベントの種類
-Visual Studio のデバッグでは、現在、次の種類のイベントがサポートされています。
+# <a name="supported-event-types"></a>サポートされるイベントの種類
+Visual Studio のデバッグでは、現在、次のイベントの種類がサポートされています。
 
 - 非同期イベント
 
-   デバッグ中のアプリケーションの状態が変更されていることをセッション デバッグ マネージャー (SDM) と IDE に通知します。 これらのイベントは、SDM と IDE の余暇に処理されます。 イベントが処理されると、デバッグ エンジン (DE) に応答は送信されません。 インターフェイス[は非同期](../../extensibility/debugger/reference/idebugoutputstringevent2.md)イベントの例です。 [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)
+   デバッグ中のアプリケーションの状態が変化していることを、セッションデバッグマネージャー (SDM) と IDE に通知します。 これらのイベントは、SDM と IDE の都合がよいときに処理されます。 イベントが処理されると、応答はデバッグエンジン (DE) に送信されません。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)インターフェイスと[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)インターフェイスは、非同期イベントの例です。
 
 - 同期イベント
 
-   デバッグ中のアプリケーションの状態が変化していることを SDM および IDE に通知します。 これらのイベントと非同期イベントの唯一の違いは、応答が[ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)メソッドを使用して送信されるということです。
+   デバッグ対象のアプリケーションの状態が変化していることを SDM と IDE に通知します。 これらのイベントと非同期イベントの唯一の違いは、 [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) メソッドによって応答が送信されることです。
 
-   同期イベントの送信は、IDE がイベントを受信して処理した後に、DE が処理を続行する必要がある場合に便利です。
+   IDE がイベントを受け取って処理した後も処理を続行する必要がある場合は、同期イベントの送信が役立ちます。
 
-- 同期停止イベントまたは停止イベント
+- 同期停止イベント、またはイベントの停止
 
-   デバッグ中のアプリケーションがコードの実行を停止したことを SDM と IDE に通知します。 メソッド[イベント](../../extensibility/debugger/reference/idebugeventcallback2-event.md)を使用して停止イベントを送信する場合は[、IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)パラメーターが必要です。 停止イベントは、次のいずれかのメソッドの呼び出しによって継続されます。
+   アプリケーションがコードの実行を停止したことを SDM と IDE に通知します。 メソッド [イベント](../../extensibility/debugger/reference/idebugeventcallback2-event.md)を使用して停止イベントを送信する場合は、 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) パラメーターが必要です。 停止イベントは、次のいずれかのメソッドを呼び出すことによって継続されます。
 
   - [実行](../../extensibility/debugger/reference/idebugprogram2-execute.md)
 
@@ -40,50 +40,50 @@ Visual Studio のデバッグでは、現在、次の種類のイベントがサ
 
   - [続行](../../extensibility/debugger/reference/idebugprogram2-continue.md)
 
-    インターフェイス[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)および[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)は、イベントを停止する例です。
+    インターフェイス [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) と [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) は、イベントを停止する例です。
 
   > [!NOTE]
-  > 非同期停止イベントはサポートされていません。 非同期停止イベントを送信するとエラーになります。
+  > 非同期停止イベントはサポートされていません。 非同期停止イベントを送信すると、エラーになります。
 
-## <a name="discussion"></a>ディスカッション
- イベントの実際の実装は、DE の設計によって異なります。 送信される各イベントのタイプは、DE を設計するときに設定される属性によって決まります。 たとえば、ある DE は非同期イベントとして[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)を送信し、別の DE は停止イベントとして送信できます。
+## <a name="discussion"></a>考察 (Discussion)
+ イベントの実際の実装は、DE の設計によって異なります。 送信される各イベントの種類は、その属性によって決まります。この属性は、DE をデザインするときに設定されます。 たとえば、ある DE が非同期イベントとして [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) を送信し、別の DE が停止イベントとして送信する場合があります。
 
- 次の表は、イベントの種類と同様に、どのプログラムパラメーターとスレッド パラメーターが必要かを示しています。 どのイベントでも同期できます。 同期する必要のあるイベントはありません。
+ 次の表は、イベントとイベントの種類に必要なプログラムとスレッドのパラメーターを示しています。 イベントは同期できます。 同期する必要があるイベントはありません。
 
 > [!NOTE]
-> すべてのイベントに[対して IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)インターフェイスが必要です。
+> すべてのイベントには、 [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) インターフェイスが必要です。
 
-|Event|IDebugProgram2|IDebugThread2|イベントの停止|
+|イベント|IDebugProgram2|IDebugThread2|停止、イベント|
 |-----------|--------------------|-------------------|---------------------|
-|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
+|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|必須|必須|はい|
-|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
-|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
-|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
+|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
+|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
+|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|必須|必須|はい|
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|必須|必須|いいえ|
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|禁止|禁止|いいえ|
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|禁止|禁止|いいえ|
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|使用できません|使用できません|いいえ|
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|使用できません|使用できません|いいえ|
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|必須|必須|はい|
-|[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|許可されているが必須ではない|許可されているが必須ではない|シリアル化|
+|[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|シリアル化|
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|必須|必須|はい|
-|[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|許可されているが必須ではない|許可されているが必須ではない|シリアル化|
+|[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|シリアル化|
 |[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|必須|必須|はい|
 |[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|必須|必須|はい|
-|[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|許可されているが必須ではない|許可されているが必須ではない|シリアル化|
-|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|必須|許可されているが必須ではない|いいえ|
-|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
-|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|必須|許可されているが必須ではない|いいえ|
-|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|必須|許可されているが必須ではない|いいえ|
-|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|必須|許可されているが必須ではない|いいえ|
-|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|必須|許可されているが必須ではない|いいえ|
-|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
+|[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|シリアル化|
+|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|必須|許可されますが、必須ではありません|いいえ|
+|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
+|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|必須|許可されますが、必須ではありません|いいえ|
+|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|必須|許可されますが、必須ではありません|いいえ|
+|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|必須|許可されますが、必須ではありません|いいえ|
+|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|必須|許可されますが、必須ではありません|いいえ|
+|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
 |IDebugStopCompleteEvent2|必須|必須|はい|
 |[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|必須|必須|はい|
-|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
+|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
 |[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|必須|必須|いいえ|
 |[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|必須|必須|いいえ|
-|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|許可されているが必須ではない|許可されているが必須ではない|いいえ|
+|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|許可されますが、必須ではありません|許可されますが、必須ではありません|いいえ|
 
 ## <a name="see-also"></a>関連項目
 - [イベントの送信](../../extensibility/debugger/sending-events.md)

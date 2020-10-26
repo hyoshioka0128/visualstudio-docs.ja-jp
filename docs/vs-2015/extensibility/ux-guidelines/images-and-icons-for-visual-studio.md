@@ -9,23 +9,23 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544795"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio のイメージとアイコン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Visual Studio でのイメージの使用
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio でのイメージの使用
  アートワークを作成する前に、 [Visual Studio イメージライブラリ](https://www.microsoft.com/download/details.aspx?id=35825)で1000以上のイメージを使用することを検討してください。
 
 ### <a name="types-of-images"></a>画像の種類
 
 - **アイコン**。 コマンド、階層、テンプレートなどに表示される小さい画像。 Visual Studio で使用される既定のアイコンサイズは16x16 の PNG です。 イメージサービスによって生成されるアイコンは、HDPI サポートの XAML 形式を自動的に生成します。
 
-     **注:** イメージはメニューシステムで使用されますが、すべてのコマンドに対してアイコンを作成することはできません。 コマンドにアイコンが表示されるかどうかを確認するには、 [Visual Studio のメニューとコマンド](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)を参照してください。
+     **注:** イメージはメニューシステムで使用されますが、すべてのコマンドに対してアイコンを作成することはできません。 コマンドにアイコンが表示されるかどうかを確認するには、 [Visual Studio のメニューとコマンド](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) を参照してください。
 
 - **サムネイル.** [新しいプロジェクト] ダイアログボックスなど、ダイアログのプレビュー領域で使用される画像。
 
@@ -35,7 +35,7 @@ ms.locfileid: "85544795"
 
 - **求.** マウスを使用して操作が許可されるかどうかを示すために使用されます。オブジェクトの削除などが可能です。
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>アイコンのデザイン
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> アイコンのデザイン
 
 ### <a name="overview"></a>概要
  Visual Studio では、クリーンなジオメトリと50/50 の正/負 (明るい/濃色) のバランスを持つ最新のスタイルのアイコンが使用され、直接的でわかりやすい比喩が使用されます。 重要なアイコンデザインポイントは、わかりやすく、簡素化、およびコンテキストを中心にしています。
@@ -150,7 +150,7 @@ ms.locfileid: "85544795"
 
 |**負から正の比率を修正します**|**負から正の比率が正しくありません**|
 |-|-|
-|![&#40;1&#41;のアイコンの視覚的な重みを修正しました](../../extensibility/ux-guidelines/media/0404-26-visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![アイコン &#40;2&#41;の視覚的な重み付けを修正します](../../extensibility/ux-guidelines/media/0404-27-visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![アイコン &#40;3&#41;の正しい視覚的な重み](../../extensibility/ux-guidelines/media/0404-28-visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![アイコンの正しくない視覚的なウェイト](../../extensibility/ux-guidelines/media/0404-29-visualweightincorrect.png "0404-29_VisualWeightIncorrect")|
+|![&#40;1&#41;のアイコンの視覚的な重みを修正しました ](../../extensibility/ux-guidelines/media/0404-26-visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![アイコン &#40;2&#41;の視覚的な重み付けを修正します ](../../extensibility/ux-guidelines/media/0404-27-visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![アイコン &#40;3&#41;の正しい視覚的な重み ](../../extensibility/ux-guidelines/media/0404-28-visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![アイコンの正しくない視覚的なウェイト](../../extensibility/ux-guidelines/media/0404-29-visualweightincorrect.png "0404-29_VisualWeightIncorrect")|
 
  要素の整合性を犠牲にせずに、単純で比較可能な図形と補完的な角度を使用して要素を構築します。 可能な場合は、45°または90°の角度を使用します。
 
@@ -184,43 +184,43 @@ ms.locfileid: "85544795"
 |![正しいアウトライン](../../extensibility/ux-guidelines/media/0404-36-outlinescorrect.png "0404-36_OutlinesCorrect")|![正しくないアウトライン](../../extensibility/ux-guidelines/media/0404-37-outlinesincorrect.png "0404-37_OutlinesIncorrect")|
 
 #### <a name="icon-types"></a>アイコンの種類
- **シェルとコマンドバー**のアイコンは、1つのベース、1つの修飾子、1つのアクション、または1つの状態の要素から構成されます。
+ **シェルとコマンドバー** のアイコンは、1つのベース、1つの修飾子、1つのアクション、または1つの状態の要素から構成されます。
 
  ![シェルおよびコマンド バーのアイコン](../../extensibility/ux-guidelines/media/0404-38-shellicons.png "0404-38_ShellIcons")
 
  **シェルとコマンドバーのアイコンの例**
 
- **ツールウィンドウのコマンドバー**アイコンは、1つのベース、1つの修飾子、1つのアクション、または1つの状態の要素から構成されます。
+ **ツールウィンドウのコマンドバー** アイコンは、1つのベース、1つの修飾子、1つのアクション、または1つの状態の要素から構成されます。
 
  ![[ツール] ウィンドウのコマンド バー アイコン](../../extensibility/ux-guidelines/media/0404-39-toolwindowcommandbaricons.png "0404-39_ToolWindowCommandBarIcons")
 
  **ツールウィンドウのコマンドバーのアイコンの例**
 
- **ツリービューの曖昧性解消**アイコンは、1つのベース、1つの修飾子、1つのアクション、または1つの状態の要素から構成されます。
+ **ツリービューの曖昧性解消** アイコンは、1つのベース、1つの修飾子、1つのアクション、または1つの状態の要素から構成されます。
 
  ![ツリー ビューの曖昧性解消子のアイコン](../../extensibility/ux-guidelines/media/0404-40-treeviewicons.png "0404-40_TreeViewIcons")
 
  **ツリービューの曖昧性解消アイコンの例**
 
- **状態ベースの値の分類**アイコンは、[アクティブ]、[アクティブにする]、および [非アクティブ] の状態にあります。
+ **状態ベースの値の分類** アイコンは、[アクティブ]、[アクティブにする]、および [非アクティブ] の状態にあります。
 
  ![状態&#45;ベースの分類値アイコン](../../extensibility/ux-guidelines/media/0404-41-statebasedtaxonomy.png "0404-41_StateBasedTaxonomy")
 
  **状態ベースの値の分類アイコンの例**
 
- **IntelliSense**アイコンは、1つのベース、1つの修飾子、および1つの状態を持つ、次の3つの要素で構成されています。
+ **IntelliSense** アイコンは、1つのベース、1つの修飾子、および1つの状態を持つ、次の3つの要素で構成されています。
 
  ![IntelliSense アイコン](../../extensibility/ux-guidelines/media/0404-42-intellisenseicons.png "0404-42_IntelliSenseIcons")
 
  **IntelliSense アイコンの例**
 
- **小さい (16x16) プロジェクト**アイコンには、1つのベースと1つの修飾子の2つ以上の要素を含めることはできません。
+ **小さい (16x16) プロジェクト** アイコンには、1つのベースと1つの修飾子の2つ以上の要素を含めることはできません。
 
  ![16x16 プロジェクトアイコン &#40;1&#41;](../../extensibility/ux-guidelines/media/0404-43-16x16project1.png "0404-43_16x16Project1") ![16x16 プロジェクトアイコン &#40;2&#41;](../../extensibility/ux-guidelines/media/0404-44-16x16project2.png "0404-44_16x16Project2") ![16x16 プロジェクトアイコン &#40;3&#41;](../../extensibility/ux-guidelines/media/0404-45-16x16project3.png "0404-45_16x16Project3")
 
  **小さい (16x16) プロジェクトアイコンの例**
 
- **Large (32x32) プロジェクト**アイコンは、1つのベース、1 ~ 2 個の修飾子、および1つの言語オーバーレイで構成されています。
+ **Large (32x32) プロジェクト** アイコンは、1つのベース、1 ~ 2 個の修飾子、および1つの言語オーバーレイで構成されています。
 
  ![32 x 32 プロジェクト アイコン](../../extensibility/ux-guidelines/media/0404-46-32x32project.png "0404-46_32x32Project")
 
@@ -267,9 +267,9 @@ ms.locfileid: "85544795"
 #### <a name="color-and-accessibility"></a>色とアクセシビリティ
  Visual Studio のコンプライアンスガイドラインでは、製品のすべてのアイコンが色とコントラストのアクセシビリティ要件を満たしている必要があります。 これはアイコンの反転によって実現されます。設計時には、製品内でプログラムによって逆になることに注意する必要があります。
 
- Visual Studio アイコンでの色の使用の詳細については、「[イメージでの色の使用](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)」を参照してください。
+ Visual Studio アイコンでの色の使用の詳細については、「 [イメージでの色の使用](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)」を参照してください。
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>画像での色の使用
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> 画像での色の使用
 
 ### <a name="overview"></a>概要
  Visual Studio のアイコンは、主にモノクロです。 色は、特定の情報を伝えるために予約されており、装飾には使用されません。 色が使用されます。
@@ -295,11 +295,11 @@ ms.locfileid: "85544795"
 ### <a name="base-palette"></a>基本パレット
  すべての標準アイコンには、3つの基本色が含まれています。 アイコンには、3D ツールアイコンに対して1つまたは2つの例外を含む、グラデーションやドロップシャドウは含まれません。
 
-|使用方法|名前|値 (明るいテーマ)|カラー|例|
+|使用法|名前|値 (明るいテーマ)|カラー|例|
 |-----------|----------|---------------------------|------------|-------------|
 |背景/濃色|VS BG|424242/66、66、66|![見本 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405424242")|![基本パレットの例](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |前景/ライト|VS FG|F0EFF1/240239241|![見本 F0EFF1](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
-|枠線|VS Out|F6F6F6/246246246|![見本 F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")||
+|[外枠]|VS Out|F6F6F6/246246246|![見本 F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")||
 
  基本色に加えて、各アイコンには拡張パレットから1つの追加の色が含まれる場合があります。
 
@@ -308,9 +308,9 @@ ms.locfileid: "85544795"
 #### <a name="action-modifiers"></a>アクション修飾子
  以下の4色は、アクション修飾子で必要とされるアクションの種類を示しています。
 
-|使用方法|名前|値 (すべてのテーマ)|カラー|
+|使用法|名前|値 (すべてのテーマ)|カラー|
 |-----------|----------|--------------------------|------------|
-|Positive|VS アクション (緑)|388A34/56138、52|![見本 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|正|VS アクション (緑)|388A34/56138、52|![見本 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
 |負|VS アクションの赤|A1260D/161、38、13|![見本 A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |中立|VS アクション Blue|00539C/0、83156|![見本 00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |作成/新規作成|VS アクションオレンジ|C27D1A/194156、26|![見本 C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
@@ -318,7 +318,7 @@ ms.locfileid: "85544795"
 ##### <a name="examples"></a>例
  "Add"、"Run"、"Play"、"Validate" などの正のアクション修飾子には、緑色が使用されます。
 
-|WMIMgmt.msc|クエリの実行|すべてのステップを再生する|コントロールの追加|
+|実行|クエリの実行|すべてのステップを再生する|コントロールの追加|
 |-|-|-|-|
 |![実行アイコン](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![[クエリの実行] アイコン](../../extensibility/ux-guidelines/media/0405-04-executequery.png "0405-04_ExecuteQuery")|![[すべてのステップの再生] アイコン](../../extensibility/ux-guidelines/media/0405-05-playallsteps.png "0405-05_PlayAllSteps")|![[コントロールの追加] アイコン](../../extensibility/ux-guidelines/media/0405-06-addcontrol.png "0405-06_AddControl")|
 
@@ -336,28 +336,28 @@ ms.locfileid: "85544795"
 
  ダークゴールドは主に "New" 修飾子として使用されます。
 
-|新しいプロジェクト|新しいグラフの作成|新しい単体テスト|新しいリスト項目|
+|[新しいプロジェクト]|新しいグラフの作成|新しい単体テスト|新しいリスト項目|
 |-|-|-|-|
 |![[新しいプロジェクト] アイコン](../../extensibility/ux-guidelines/media/0405-15-newproject.png "0405-15_NewProject")|![[新しいグラフの作成] アイコン](../../extensibility/ux-guidelines/media/0405-16-createnewgraph.png "0405-16_CreateNewGraph")|![[新しい単体テスト] アイコン](../../extensibility/ux-guidelines/media/0405-17-newunittest.png "0405-17_NewUnitTest")|![[新しいリスト アイテム] アイコン](../../extensibility/ux-guidelines/media/0405-18-newlistitem.png "0405-18_NewListItem")|
 
 #### <a name="special-cases"></a>特殊なケース
  特殊なケースでは、色分けされたアクション修飾子をスタンドアロンアイコンとして単独で使用できます。 アイコンに使用する色には、アイコンが関連付けられている操作が反映されます。 この使用は、次のような、アイコンの小さなサブセットに制限されます。
 
-|WMIMgmt.msc|Stop|削除|保存|最近参照した場所|
+|実行|Stop|削除|保存|最近参照した場所|
 |-|-|-|-|-|
 |![実行アイコン](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![停止アイコン](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405-19_Stop")|![削除アイコン](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405-20_Delete")|![[Save]\(保存\) アイコン](../../extensibility/ux-guidelines/media/0405-21-save.png "0405-21_Save")|![[戻る] アイコン](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405-22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>コード階層パレット
 
-#### <a name="folder"></a>フォルダー
+#### <a name="folder"></a>Folder
 
-|使用方法|名前|値 (すべてのテーマ)|カラー|例|
+|使用法|名前|値 (すべてのテーマ)|カラー|例|
 |-----------|----------|--------------------------|------------|-------------|
-|Folders|フォルダー|DCB67A/220182122|![見本 DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![フォルダーの色のアイコン](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
+|フォルダー|Folder|DCB67A/220182122|![見本 DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![フォルダーの色のアイコン](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio の言語
  Visual Studio で使用できる各共通言語またはプラットフォームには、関連付けられた色があります。 これらの色は、基本アイコン、または複合アイコンの右上隅に表示される言語修飾子で使用されます。
 
-|使用方法|名前|値 (すべてのテーマ)|カラー|
+|使用法|名前|値 (すべてのテーマ)|カラー|
 |-----------|----------|--------------------------|------------|
 |ASP、HTML、WPF|ASP HTML WPF Blue|0095D7/0149215|![見本 0095D7](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|CPP 紫|9B4F96/155、79150|![見本 9B4F96](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -382,7 +382,7 @@ ms.locfileid: "85544795"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense アイコンは、専用のカラーパレットを使用します。 これらの色は、ユーザーが IntelliSense ポップアップリスト内のさまざまな項目をすばやく区別できるようにするために使用されます。
 
-|使用方法|名前|値 (すべてのテーマ)|カラー|
+|使用法|名前|値 (すべてのテーマ)|カラー|
 |-----------|----------|--------------------------|------------|
 |クラス、イベント|VS アクションオレンジ|C27D1A/194125、26|![見本 C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |拡張メソッド、メソッド、モジュール、デリゲート|VS アクション紫|652D90/101, 45144|![見本 652D90](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -393,7 +393,7 @@ ms.locfileid: "85544795"
 ##### <a name="examples-of-intellisense-icons"></a>IntelliSense アイコンの例
 
 
-|クラス|プライベートイベント|Delegate|メソッド Friend|フィールド|
+|クラス|プライベートイベント|代理人|メソッド Friend|フィールド|
 |-|-|-|-|-|
 |![IntelliSense クラスのアイコン](../../extensibility/ux-guidelines/media/0405-36-intellisenseclass.png "0405-36_IntelliSenseClass")|![IntelliSense プライベート イベントのアイコン](../../extensibility/ux-guidelines/media/0405-37-intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![IntelliSense デリゲートのアイコン](../../extensibility/ux-guidelines/media/0405-38-intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![IntelliSense メソッド フレンドのアイコン](../../extensibility/ux-guidelines/media/0405-39-intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![フィールドアイコン](../../extensibility/ux-guidelines/media/0405-40-field.png "0405-40_Field")|
 
@@ -404,7 +404,7 @@ ms.locfileid: "85544795"
 ### <a name="notifications"></a>通知
  Visual Studio での通知は、状態を示すために使用されます。 通知パレットでは、次の4つの色と、白黒または白の前景の塗りつぶしオプションを使用して、次のステータスレベルで通知を定義します。
 
-|使用方法|名前|値 (すべてのテーマ)|カラー|
+|使用法|名前|値 (すべてのテーマ)|カラー|
 |-----------|----------|--------------------------|------------|
 |状態: ニュートラル|青い通知 (VS Blue)|1BA1E2/27161226|![見本 1BA1E2](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |状態: 正|通知 (緑)|339933/51153、51|![見本 339933](../../extensibility/ux-guidelines/media/0405-339933.png "04053399 33")|
@@ -422,20 +422,20 @@ ms.locfileid: "85544795"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  一般に、Visual Studio Online は、ブラウザーでホストされている機能で構成されています。 色は環境によって異なりますが、スタイルは変わりません。
 
-|グループ|使用方法|名前|値 (すべてのテーマ)|カラー|
+|グループ|使用法|名前|値 (すべてのテーマ)|カラー|
 |-----------|-----------|----------|--------------------------|------------|
-|TFS|バックグラウンド|TFSO BG|656565/101、101、101|![見本 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405656565")|
-|TFS|枠線|TFSO|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Napa|バックグラウンド|White|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|モナコ|バックグラウンド|White|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|バックグラウンド|White|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|TFS|背景|TFSO BG|656565/101、101、101|![見本 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405656565")|
+|TFS|[外枠]|TFSO|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|Napa|背景|White|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|モナコ|背景|White|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|F12|背景|White|FFFFFF/255、255、255|![見本 FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|標準|F12 Grey_Primary|555555/85、85、85|![見本 555555](../../extensibility/ux-guidelines/media/0405-555555.png "040555(_s)")|
 |F12|ホバー|F12 Blue_Hover|2279BF/34121191|![見本 2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|無効|F12 LtGrey_Disabled|ABABAC/171171172|![見本 ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Disabled|F12 LtGrey_Disabled|ABABAC/171171172|![見本 ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|ホバー時の背景|ホバー (bg)|D9EBF7/217235247|![見本 D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|押された背景|(Bg を押す)|B2D7F0/178215240|![見本 B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
-|F12|枠線|VS OUT|F6F6F6/246246246|![見本 F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
-|F12|Information|Information|00BCF2/0188242|![見本 00BCF2](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
+|F12|[外枠]|VS OUT|F6F6F6/246246246|![見本 F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
+|F12|情報|情報|00BCF2/0188242|![見本 00BCF2](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
 |F12|警告|警告|F28300/242131、0|![見本 F28300](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
 |F12|エラー/負|Error_Negative|E81123/232、17、35|![見本 E81123](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|
 |F12|開始/肯定|Start_Positive|009E49/0158、73|![見本 009E49](../../extensibility/ux-guidelines/media/0405-009e49.png "0405_009E49")|
@@ -447,11 +447,11 @@ ms.locfileid: "85544795"
 
 |TFS オンライン||||
 |----------------|-|-|-|
-|![TFS オンラインチームアイコン](../../extensibility/ux-guidelines/media/0405-49-tfsonlineteam.png "0405-49_TFSOnlineTeam")**オンラインチーム**|![TFS 情報アイコン](../../extensibility/ux-guidelines/media/0405-50-tfsinformation.png "0405-50_TFSInformation")の**情報**|![TFS 履歴アイコン](../../extensibility/ux-guidelines/media/0405-51-tfshistory.png "0405-51_TFSHistory")**履歴**|![TFS 分岐アイコン](../../extensibility/ux-guidelines/media/0405-52-tfsbranch.png "0405-52_TFSBranch")**ブランチ**|
+|![TFS オンラインチームアイコン](../../extensibility/ux-guidelines/media/0405-49-tfsonlineteam.png "0405-49_TFSOnlineTeam")**オンラインチーム**|![TFS 情報アイコン](../../extensibility/ux-guidelines/media/0405-50-tfsinformation.png "0405-50_TFSInformation")の **情報**|![TFS 履歴アイコン](../../extensibility/ux-guidelines/media/0405-51-tfshistory.png "0405-51_TFSHistory")**履歴**|![TFS 分岐アイコン](../../extensibility/ux-guidelines/media/0405-52-tfsbranch.png "0405-52_TFSBranch")**ブランチ**|
 
 |Napa||||
 |----------|-|-|-|
-|![Napa コンテンツアイコン](../../extensibility/ux-guidelines/media/0405-53-napacontent.png "0405-53_NapaContent")の**コンテンツ**|![Napa office mail アイコン](../../extensibility/ux-guidelines/media/0405-54-napaofficemail.png "0405-54_NapaOfficeMail") **office mail**|![Napa sharepoint アイコン](../../extensibility/ux-guidelines/media/0405-55-napasharepoint.png "0405-55_NapaSharePoint") **sharepoint**|![Napa 作業ウィンドウアイコン](../../extensibility/ux-guidelines/media/0405-56-napataskpane.png "0405-56_NapaTaskPane")**作業ウィンドウ**|
+|![Napa コンテンツアイコン](../../extensibility/ux-guidelines/media/0405-53-napacontent.png "0405-53_NapaContent")の **コンテンツ**|![Napa office mail アイコン](../../extensibility/ux-guidelines/media/0405-54-napaofficemail.png "0405-54_NapaOfficeMail") **office mail**|![Napa sharepoint アイコン](../../extensibility/ux-guidelines/media/0405-55-napasharepoint.png "0405-55_NapaSharePoint") **sharepoint**|![Napa 作業ウィンドウアイコン](../../extensibility/ux-guidelines/media/0405-56-napataskpane.png "0405-56_NapaTaskPane")**作業ウィンドウ**|
 
 |モナコ||||
 |------------|-|-|-|

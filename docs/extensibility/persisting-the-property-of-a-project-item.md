@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906190"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>プロジェクト項目のプロパティを保持する
@@ -23,7 +23,7 @@ ms.locfileid: "85906190"
 
  プロジェクトファイルでプロパティを永続化するための最初の手順は、プロジェクトの階層をインターフェイスとして取得することです <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 。 このインターフェイスは、オートメーションを使用するか、を使用して取得でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> ます。 インターフェイスを取得したら、それを使用して、現在選択されているプロジェクト項目を特定できます。 プロジェクト項目 ID を取得したら、を使用して <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> プロパティを追加できます。
 
- 次の手順では、 *VsPkg.cs*プロパティを `Author` プロジェクトファイルの値と共に保持し `Tom` ます。
+ 次の手順では、 *VsPkg.cs* プロパティを `Author` プロジェクトファイルの値と共に保持し `Tom` ます。
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE オブジェクトを使用してプロジェクト階層を取得するには
 

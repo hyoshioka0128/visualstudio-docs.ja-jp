@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79307299"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312536"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>[オプション] ダイアログ ボックス:[テキスト エディター]、[C#]、[コード スタイル]、[書式設定]
 

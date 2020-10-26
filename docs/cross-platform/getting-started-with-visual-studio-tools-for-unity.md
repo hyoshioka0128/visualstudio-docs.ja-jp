@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 32766fdf69136f3882186bbcad08aaf83d2e573e
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815748"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88250096"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の使用を開始する
 
@@ -66,13 +66,11 @@ Visual Studio が既にインストールされている場合、または手動
 
 1. **[変更]** をクリックします (既にインストールされている場合)。または、インストーラー ウィンドウの右下にある **[インストール]** をクリックします (新規インストール)。
 
-
 #### <a name="check-for-updates-to-visual-studio"></a>Visual Studio の更新プログラムを確認する
 
 Visual Studio 内の更新プログラムを調べて、最新のツールと機能にアクセスできることを確認することをお勧めします。 これによって Unity プロジェクトが破損することはありません。
 
 - [Visual Studio の更新](../install/update-visual-studio.md)
-
 
 ## <a name="configure-unity-for-use-with-visual-studio"></a>Visual Studio で使用するために Unity を構成する
 
@@ -98,7 +96,6 @@ Unity 2018.1 以降では、Visual Studio を Unity の既定の外部スクリ�
    ![Visual Studio を選ぶ](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-
 4. **[Browse...]\(参照...\)** を選択した場合は、Visual Studio インストール ディレクトリの中の **Common7/IDE** ディレクトリに移動し、**devenv.exe** を選択します。 次に、 **[Open]\(開く\)** をクリックします。
 
    :::moniker range="vs-2017"
@@ -123,7 +120,6 @@ Visual Studio Tools for Unity を Visual Studio Marketplace からダウンロ�
 > [!NOTE]
 > Visual Studio Tools for Unity では、Unity 5.2 以降と、拡張機能をサポートしているバージョンの Visual Studio (Visual Studio Community、Professional、Premium、Enterprise など) が必要です。 お使いの Unity のインストールで Visual Studio Tools for Unity が有効になっていることを確認するには、 **[Help]\(ヘルプ\)** メニューから **[About Unity]\(Unity について\)** を選び、ダイアログの左下に [Microsoft Visual Studio Tools for Unity enabled]\(Microsoft Visual Studio Tools for Unity は有効です\) と表示されていることを確認します。
 > ![Unity について](media/vs-2019/vstu-about-unity.png)
-
 
 ## <a name="next-steps"></a>次の手順
 

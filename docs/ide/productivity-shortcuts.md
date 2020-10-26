@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585731"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio のショートカットに関するヒント
@@ -106,7 +106,7 @@ Visual Studio では、この記事のショートカットを使って、より
 |ボタンの追加|ツール バーのオーバーフロー ボタンを選択|
 |標準ツール バーのコンボの検索|**Ctrl**+**D**|
 |テキストボックス コマンド モードの検索|「 **>** 」と入力する|
-|新しいエイリアスの作成|**[コマンド]** ウィンドウで「**alias \<新しいエイリアス> \<コマンド>**」と入力する|
+|新しいエイリアスの作成|**コマンド** ウィンドウで「**alias \<new alias> \<command>** 」と入力する|
 
 ## <a name="debugging"></a>デバッグ
 

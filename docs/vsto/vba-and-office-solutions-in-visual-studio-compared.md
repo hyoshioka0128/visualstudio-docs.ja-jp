@@ -1,5 +1,5 @@
 ---
-title: Visual Studio の比較で VBA および Office ソリューション
+title: Visual Studio の VBA と Office ソリューションの比較
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,26 +14,26 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982122"
 ---
-# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio の比較で VBA および Office ソリューション
+# <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio の VBA と Office ソリューションの比較
   Microsoft Visual Basic for Applications (VBA) は、Office アプリケーションと密接に連携されているアンマネージ コードを使用しています。 Visual Studio を使用して作成した Microsoft Office プロジェクトでは、.NET Framework および Visual Studio デザイン ツールを利用できます。
 
- Visual Studio を使用して作成できる Office ソリューションの種類については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
+ Visual Studio を使用して作成できる Office ソリューションの種類の詳細については、「 [office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
-## <a name="comparison"></a>条件式
+## <a name="comparison"></a>比較
  Visual Studio での VBA ソリューションと Office ソリューションの基本的な比較を次の表に示します。
 
 |VBA ソリューション|Visual Studio の Office ソリューション|
 |-------------------|---------------------------------------|
-|特定のドキュメントに接続され、永続化するコードを使用します。|(ドキュメント レベルのカスタマイズ)、ドキュメントとは別に格納されているコードを使用または (VSTO アドイン) のアプリケーションによって読み込まれるアセンブリ。|
+|特定のドキュメントに接続され、永続化するコードを使用します。|ドキュメントとは別に格納されているコード (ドキュメントレベルのカスタマイズの場合)、またはアプリケーションによって読み込まれるアセンブリ (VSTO アドインの場合) を使用します。|
 |Office オブジェクト モデルと VBA API に使用できます。|Office オブジェクト モデルと [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] API の両方にアクセスできます。|
 |マクロの記録、開発者の作業の簡略化のために設計されています。|セキュリティ、コード保守の簡略化、すべての Visual Studio 統合開発環境 (IDE) の利用のために設計されています。|
-|Office アプリケーションとの緊密な統合の恩恵をソリューションに適しています。|Visual Studio と [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]のすべてのリソースを利用するソリューションに適しています。|
+|Office アプリケーションとの密接な統合によってメリットがあるソリューションに適しています。|Visual Studio と [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]のすべてのリソースを利用するソリューションに適しています。|
 |企業の場合は、特にセキュリティと開発の面で制限事項があります。|企業で使用するために設計されています。|
 
  一部の作業は、VBA を使用する方が簡単にすばやく実行できます。 特に、次の場合は、引き続き VBA を使用することができます。
@@ -42,14 +42,14 @@ ms.locfileid: "62982122"
 
 - マクロの記録。
 
-## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>VBA ソリューションと Visual Studio を使用して作成された Office ソリューションを組み合わせる
- Visual Studio を使用して作成された Office ソリューションから VBA コードを呼び出すことができます。また、VBA から Visual Studio を使用して作成された Office ソリューションのコードを呼び出すこともできます。 具体的な手法は、Office ソリューションが VSTO アドインか、ドキュメントレベルのカスタマイズかどうかによって異なります。 詳細については、次を参照してください。[他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)と[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Visual Studio を使用して作成された VBA ソリューションと Office ソリューションを結合する
+ Visual Studio を使用して作成された Office ソリューションから VBA コードを呼び出すことができます。また、VBA から Visual Studio を使用して作成された Office ソリューションのコードを呼び出すこともできます。 具体的な手法は、Office ソリューションが VSTO アドインか、ドキュメントレベルのカスタマイズかどうかによって異なります。 詳細については、「 [他の Office ソリューションから VSTO アドインのコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) 」および「 [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
-- [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [他の Office ソリューションから VSTO アドイン内のコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [VBA とドキュメント レベルのカスタマイズを結合します。](../vsto/combining-vba-and-document-level-customizations.md)
-- [ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
-- [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [他の Office ソリューションから VSTO アドインのコードを呼び出す](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)
+- [ドキュメントレベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
+- [Architecture of VSTO Add-Ins](../vsto/architecture-of-vsto-add-ins.md)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)
-- [はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Visual Studio で &#40;Office 開発を開始する&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

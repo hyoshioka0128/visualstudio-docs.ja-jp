@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d0fd8cff2f352c8ede674be64062a738c1f3d02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198801"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-2 つのドキュメント コンテキストを比較するための条件を指定します。  
+2つのドキュメントコンテキストを比較するための条件を指定します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -47,29 +47,29 @@ enum enum_DOCCONTEXT_COMPARE { 
   
 ## <a name="members"></a>メンバー  
  DOCCONTEXT_EQUAL  
- ターゲット ドキュメントのコンテキストに相当するリスト内の最初のドキュメント コンテキストを検索します。  
+ リスト内でターゲットドキュメントコンテキストと同じ最初のドキュメントコンテキストを検索します。  
   
  DOCCONTEXT_LESS_THAN  
- ターゲット ドキュメントのコンテキストよりも小さいリスト内の最初のドキュメント コンテキストを検索します。  
+ リスト内でターゲットドキュメントコンテキストより小さい最初のドキュメントコンテキストを検索します。  
   
  DOCCONTEXT_GREATER_THAN  
- ターゲット ドキュメントのコンテキストよりも大きいリスト内の最初のドキュメント コンテキストを検索します。  
+ リスト内でターゲットドキュメントコンテキストよりも大きい最初のドキュメントコンテキストを検索します。  
   
  DOCCONTEXT_SAME_DOCUMENT  
- ターゲット ドキュメント コンテキストと同じドキュメント内にある一覧で最初のドキュメント コンテキストを検索します。  
+ リスト内で、ターゲットドキュメントコンテキストと同じドキュメント内にある最初のドキュメントコンテキストを検索します。  
   
-## <a name="remarks"></a>Remarks  
- 引数として渡される、[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)メソッド。  
+## <a name="remarks"></a>注釈  
+ [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)メソッドに引数として渡されます。  
   
- これらの値は、リストの最初のドキュメント コンテキストを検索するための比較条件の指定に使用されます。 ドキュメントのコンテキストがを介してに対して自身を比較するドキュメント コンテキストの一覧を指定された、`IDebugDocumentContext2::Compare`メソッド。 比較演算子の一覧で最初のドキュメント コンテキスト`true`が返されます。  
+ これらの値は、リスト内の最初のドキュメントコンテキストを検索するための比較条件を指定するために使用されます。 ドキュメントコンテキストには、メソッドを通じて比較するドキュメントコンテキストのリストが与えられ `IDebugDocumentContext2::Compare` ます。 次に、比較演算子があるリスト内の最初のドキュメントコンテキスト `true` が返されます。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
- [列挙型](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+## <a name="see-also"></a>参照  
+ [列挙](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

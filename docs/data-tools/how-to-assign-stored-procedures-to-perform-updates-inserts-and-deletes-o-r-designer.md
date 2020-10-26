@@ -1,5 +1,6 @@
 ---
-title: LINQ to SQL でストアドプロシージャを使用したデータの更新 (O/R デザイナー)
+title: LINQ to SQL でストアドプロシージャを使用してデータを更新する
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85282320"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036315"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
 
@@ -59,11 +60,11 @@ ms.locfileid: "85282320"
 10. **[OK]** または **[適用]** をクリックします。
 
     > [!NOTE]
-    > 各変更を行った後で [**適用**] をクリックしている限り、各クラスと動作の組み合わせの動作を構成し続けることができます。 [**適用**] をクリックする前にクラスまたは動作を変更すると、警告ダイアログボックスが表示され、変更を適用することができます。
+    > 各変更を行った後で [ **適用** ] をクリックしている限り、各クラスと動作の組み合わせの動作を構成し続けることができます。 [ **適用**] をクリックする前にクラスまたは動作を変更すると、警告ダイアログボックスが表示され、変更を適用することができます。
 
 更新時に既定のランタイム ロジックを使用するように戻すには、**[プロパティ]** ウィンドウで、**[Insert]**、**[Update]**、または **[Delete]** の各コマンドの横にある省略記号をクリックし、**[動作の構成]** ダイアログ ボックスで **[ランタイムを使用]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext メソッド](../data-tools/datacontext-methods-o-r-designer.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546992"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>方法: プログラムによって Word の検索オプションを設定する
@@ -38,7 +38,7 @@ ms.locfileid: "85546992"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>検索オブジェクトを使用して検索オプションを設定するには
 
-1. オブジェクトのプロパティを設定し <xref:Microsoft.Office.Interop.Word.Find> て、[**検索**する文字列] テキストの選択範囲を前方に検索します。
+1. オブジェクトのプロパティを設定し <xref:Microsoft.Office.Interop.Word.Find> て、[ **検索**する文字列] テキストの選択範囲を前方に検索します。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 

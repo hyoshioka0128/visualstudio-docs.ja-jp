@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535708"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル : 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「[方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)する」のトピックで説明する一般的な手順について説明します。また、での継承の使用方法を示すいくつかの実際のデータを提供し [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。
+[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「 [方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) する」のトピックで説明する一般的な手順について説明します。また、での継承の使用方法を示すいくつかの実際のデータを提供し [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。
 
  このチュートリアルでは次のタスクを行います。
 
@@ -49,7 +49,7 @@ ms.locfileid: "85535708"
 
 2. テーブル デザイナーで、次の列をテーブルに追加します。
 
-    |列名|データの種類|Null を許容|
+    |列名|データ型|Null を許容|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
@@ -90,16 +90,16 @@ ms.locfileid: "85535708"
 
 #### <a name="to-create-the-new-windows-application"></a>新しい Windows アプリケーションを作成するには
 
-1. [**ファイル**] メニューで、新しいプロジェクトを作成します。
+1. [ **ファイル** ] メニューで、新しいプロジェクトを作成します。
 
-2. プロジェクトに**InheritanceWalkthrough**という名前を指定します。
+2. プロジェクトに **InheritanceWalkthrough**という名前を指定します。
 
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は Visual Basic プロジェクトと C# プロジェクトでサポートされています。 新しいプロジェクトはこれらの言語のどちらかで作成してください。
 
-3. **Windows フォームアプリケーション**テンプレートをクリックし、[ **OK]** をクリックします。 詳細については、「[クライアントアプリケーション](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)」を参照してください。
+3. **Windows フォームアプリケーション**テンプレートをクリックし、[ **OK]** をクリックします。 詳細については、「 [クライアントアプリケーション](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)」を参照してください。
 
-4. InheritanceWalkthrough プロジェクトが作成され、**ソリューションエクスプローラー**に追加されます。
+4. InheritanceWalkthrough プロジェクトが作成され、 **ソリューションエクスプローラー**に追加されます。
 
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>LINQ to SQL クラス ファイルをプロジェクトに追加します。
 
@@ -120,13 +120,13 @@ ms.locfileid: "85535708"
 
 2. **Person**テーブルをデザイン画面にドラッグし [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。
 
-3. に2つ目の**Person**テーブルをドラッグし、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 名前を「 **Employee**」に変更します。
+3. に2つ目の **Person** テーブルをドラッグし、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 名前を「 **Employee**」に変更します。
 
 4. **Person** オブジェクトから **Manager** プロパティを削除します。
 
 5. **Employee** オブジェクトから、**Type**、**ID**、**FirstName**、および **LastName** の各プロパティを削除します。 (つまり、**Manager** 以外のプロパティをすべて削除します。)
 
-6. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、 **Employee**オブジェクトをクリックし、で**Person**オブジェクトをクリックし [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。 継承線の矢印は**Person**オブジェクトを指します。
+6. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、 **Employee** オブジェクトをクリックし、で **Person** オブジェクトをクリックし [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ます。 継承線の矢印は **Person** オブジェクトを指します。
 
 7. デザイン サーフェイスで**継承**線をクリックします。
 
@@ -183,7 +183,7 @@ ms.locfileid: "85535708"
 
 2. [Type] 列の値が 2 のレコードのみが表示されていることを確認します。
 
-3. フォームを閉じます  ([**デバッグ**] メニューの [**デバッグの停止**] をクリックします)。
+3. フォームを閉じます  ([ **デバッグ** ] メニューの [ **デバッグの停止**] をクリックします)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)[方法: プロジェクトへの LINQ to SQL クラスの追加 (o-r デザイナー)](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6) [チュートリアル: LINQ to SQL クラスの作成](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)(o/r デザイナー)[方法: 更新、挿入、および削除を実行するストアドプロシージャを割り当てる (o/r デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [方法: Visual Basic または C# でオブジェクトモデルを生成](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)する

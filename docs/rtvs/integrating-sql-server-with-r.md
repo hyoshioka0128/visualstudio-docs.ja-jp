@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72888456"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88144715"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server と R の使用
 
@@ -24,9 +24,14 @@ Visual Studio の優れた SQL Server のサポートにより、データ サ�
 > - Visual Studio 2017: Visual Studio のインストーラーを実行し、データの保存と処理のワークロードを選択して、SQL Server Data Tools を追加します。
 > - Visual Studio 2015: 「[Download SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)」 (SQL Server Data Tools のダウンロード) にある手順に従ってください。
 
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | SQL Server と R の概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) (3 分 03 秒)。 |
+:::row:::
+    :::column:::
+        ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る")
+    :::column-end:::
+    :::column:::
+        SQL Server と R の概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) (3 分 03 秒)。
+    :::column-end:::
+:::row-end:::
 
 ## <a name="create-and-run-sql-queries"></a>SQL クエリの作成と実行
 
@@ -57,9 +62,14 @@ Transact-SQL エディターは他のさまざまな機能をサポートして�
 - [SQL ストアド プロシージャの作成とテスト](#write-and-test-a-sql-stored-procedure)
 - [SQL ストアド プロシージャの公開](#publish-a-sql-stored-procedure)
 
-|   |   |
-|---|---|
-| ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る") | R と SQL ストアド プロシージャの概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) (6 分 09 秒)。 |
+:::row:::
+    :::column:::
+        ![ビデオのムービー カメラ アイコン](../install/media/video-icon.png "ビデオを見る")
+    :::column-end:::
+    :::column:::
+        R と SQL ストアド プロシージャの概要に関する[ビデオを見る (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) (6 分 09 秒)。
+    :::column-end:::
+:::row-end:::
 
 ### <a name="add-a-database-connection"></a>データベース接続の追加
 

@@ -1,5 +1,5 @@
 ---
-title: 'エラー: ターゲットコンピューターで DNS が正しく構成されていることを確認してください |Microsoft Docs'
+title: エラー :ターゲット コンピューターで DNS が正しく構成されていることを確認してください | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35c258a018bec8bd38f8b43690c18b37ee9d6c39
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851931"
 ---
-# <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>エラー: ターゲット コンピューターで DNS が正しく構成されていることを確認してください
+# <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>エラー :ターゲット コンピューターで DNS が正しく構成されていることを確認してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 リモート デバッグを行おうとすると、次のエラー メッセージが表示される場合があります。  
@@ -38,4 +38,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - 詳細については、[Microsoft Windows Web サイト](https://windows.microsoft.com/)にアクセスし、「**TCP/IP 設定の変更**」を検索してください。  
   
-  DNS に関する問題を解決できない場合は、別のコンピューターでリモート デバッガーを実行してみてください。 このエラーは、リモート デバッガーをローカル システム アカウントまたはネットワーク サービス アカウントで実行した場合のみ発生します。 リモート デバッガーを別のアカウントで実行する場合は、DNS を必要としない NTLM 認証を使用できます。 を確認しています。 この手順については、「[エラー: ターゲットコンピューターの Visual Studio リモートデバッガーサービスがこのコンピューターに接続できません](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。」を参照してください。
+  DNS に関する問題を解決できない場合は、別のコンピューターでリモート デバッガーを実行してみてください。 このエラーは、リモート デバッガーをローカル システム アカウントまたはネットワーク サービス アカウントで実行した場合のみ発生します。 リモート デバッガーを別のアカウントで実行する場合は、DNS を必要としない NTLM 認証を使用できます。 . 手順については、「[エラー: ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)」を参照してください。

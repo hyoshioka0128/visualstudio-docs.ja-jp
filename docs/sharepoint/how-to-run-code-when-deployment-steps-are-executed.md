@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015537"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>方法: 配置手順の実行時にコードを実行する
@@ -36,7 +37,7 @@ ms.locfileid: "86015537"
 3. イベントハンドラーでは、パラメーターとパラメーターを使用して <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs> <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepCompletedEventArgs> 、配置手順に関する情報を取得します。 たとえば、実行中の配置手順と、ソリューションが配置または取り消しされているかどうかを確認できます。
 
 ## <a name="example"></a>例
- 次のコード例は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> リストインスタンスプロジェクト項目の拡張でイベントとイベントを処理する方法を示しています。 この拡張機能は、Visual Studio がソリューションの配置と取り消しの際にアプリケーションプールをリサイクルするときに、追加のメッセージを [**出力**] ウィンドウに書き込みます。
+ 次のコード例は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> リストインスタンスプロジェクト項目の拡張でイベントとイベントを処理する方法を示しています。 この拡張機能は、Visual Studio がソリューションの配置と取り消しの際にアプリケーションプールをリサイクルするときに、追加のメッセージを [ **出力** ] ウィンドウに書き込みます。
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]

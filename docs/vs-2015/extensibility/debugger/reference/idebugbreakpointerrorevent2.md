@@ -13,49 +13,49 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 22ad0a7e1b14b036239d7b6a5931badb5787b752
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684816"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-このインターフェイスにより、保留中のブレークポイントが警告またはエラーのため、読み込まれたプログラムをバインドできませんでしたが、セッション デバッグ マネージャー (SDM) に指示します。  
+このインターフェイスは、警告またはエラーのために、読み込まれたプログラムに保留中のブレークポイントをバインドできなかったことをセッションデバッグマネージャー (SDM) に通知します。  
   
-## <a name="syntax"></a>構文  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugBreakpointErrorEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>実装についてのメモ  
- デでは、ブレークポイントのサポートの一部として、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります (、SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス)。  
+## <a name="notes-for-implementers"></a>実装側の注意  
+ DE は、ブレークポイントのサポートの一部として、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、このインターフェイスと同じオブジェクトに実装する必要があります (SDM は[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)を使用してインターフェイスにアクセスし `IDebugEvent2` ます)。  
   
-## <a name="notes-for-callers"></a>呼び出し元のノート  
- デでは、作成し、デバッグ中のプログラムに保留中のブレークポイントをバインドできないときにこのイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって提供されるコールバック関数。  
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項  
+ DE は、デバッグ中のプログラムに保留中のブレークポイントをバインドできない場合に、このイベントオブジェクトを作成して送信します。 イベントは、デバッグ対象のプログラムにアタッチされるときに、SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
- 次の表は、メソッドの`IDebugBreakpointErrorEvent2`します。  
+ 次の表に、のメソッドを示し `IDebugBreakpointErrorEvent2` ます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|取得、 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)警告またはエラーを記述するインターフェイス。|  
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|警告またはエラーを説明する [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) インターフェイスを取得します。|  
   
-## <a name="remarks"></a>Remarks  
- ブレークポイントがバインドされているときに、イベントは、SDM に送信されます。 ブレークポイントをバインドできない場合、`IDebugBreakpointErrorEvent2`が送信済み。 それ以外、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)送信されます。  
+## <a name="remarks"></a>注釈  
+ ブレークポイントがバインドされるたびに、イベントが SDM に送信されます。 ブレークポイントをバインドできない場合は、が送信されます。 `IDebugBreakpointErrorEvent2` それ以外の場合は、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) が送信されます。  
   
- たとえば、保留中のブレークポイントに関連付けられている条件は、解析または評価のため失敗した場合、警告が送信現時点で保留中のブレークポイントをバインドすることはできません。 これは、ブレークポイントのコードがまだ読み込まれていない場合に発生する可能性があります。  
+ たとえば、保留中のブレークポイントに関連付けられている条件が解析または評価に失敗した場合、この時点では、保留中のブレークポイントをバインドできないという警告が送信されます。 これは、ブレークポイントのコードがまだ読み込まれていない場合に発生する可能性があります。  
   
-## <a name="requirements"></a>必要条件  
- ヘッダー: msdbg.h  
+## <a name="requirements"></a>要件  
+ ヘッダー: msdbg. h  
   
- 名前空間: Microsoft.VisualStudio.Debugger.Interop  
+ 名前空間: VisualStudio。  
   
- アセンブリ:Microsoft.VisualStudio.Debugger.Interop.dll  
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

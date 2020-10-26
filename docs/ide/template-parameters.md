@@ -11,13 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169366"
 ---
-# <a name="template-parameters"></a>テンプレート パラメーター
+# <a name="template-parameters"></a>Template parameters
 
 テンプレートがインスタンス化されるとき、テンプレートの値を置換できます。 この機能を設定するには、*テンプレート パラメーター*を使用します。 テンプレート パラメーターは、テンプレートのクラス名や名前空間など、値を置換するために使用できます。 ユーザーが新しい項目やプロジェクトを追加したときにバックグラウンドで実行されるテンプレート ウィザードによってこれらのパラメーターが置換されます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "78169366"
 |パラメーター|説明|
 |---------------|-----------------|
 |clrversion|共通言語ランタイム (CLR: Common Language Runtime) の現在のバージョン。|
-|ext_*|親テンプレートの変数を参照するには、パラメーターに `ext_` プレフィックスを追加します。 たとえば、`ext_safeprojectname` のようにします。|
+|ext_*|親テンプレートの変数を参照するには、パラメーターに `ext_` プレフィックスを追加します。 たとえば、「 `ext_safeprojectname` 」のように入力します。|
 |guid[1-10]|プロジェクト ファイルでプロジェクト GUID を置き換えるために使用される GUID。 最大 10 個の一意 GUID を指定できます (例: `guid1`)。|
 |itemname|パラメーターが使用されているファイルの名前。|
 |machinename|現在のコンピューター名 (たとえば、Computer01)。|
@@ -60,12 +60,12 @@ ms.locfileid: "78169366"
 |safeitemname|`itemname` と同じですが、安全でない文字とスペースはすべてアンダースコア文字に置き換えられます。|
 |safeitemrootname|`safeitemname` と同じ。|
 |safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
-|時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
+|time|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
 |specifiedsolutionname|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`specifiedsolutionname` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`specifiedsolutionname` は空白です。|
 |userdomain|現在のユーザー ドメイン。|
 |username|現在のユーザー名。|
 |webnamespace|現在の Web サイトの名前。 このパラメーターは、Web フォーム テンプレートで一意のクラス名を保証するために使用されます。 この Web サイトが Web サーバーのルート ディレクトリにある場合、このテンプレート パラメーターは Web サーバーのルート ディレクトリとして解決されます。|
-|年|YYYY の形式で表した現在の年。|
+|year|YYYY の形式で表した現在の年。|
 
 > [!NOTE]
 > テンプレート パラメーターでは、大文字と小文字が区別されます。
@@ -74,7 +74,7 @@ ms.locfileid: "78169366"
 
 パラメーター置換時に使われる既定の予約済みテンプレート パラメーターの他に、独自のテンプレート パラメーターと値を指定できます。 詳細については、「[CustomParameters 要素 (Visual Studio テンプレート)](../extensibility/customparameters-element-visual-studio-templates.md)」を参照してください。
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>例:ファイル名に対するプロジェクト名の使用
+## <a name="example-use-the-project-name-for-a-file-name"></a>例: ファイル名に対するプロジェクト名の使用
 
 `TargetFileName` 属性でパラメーターを使うことにより、プロジェクト項目に対して変数ファイル名を指定できます。
 
@@ -91,7 +91,7 @@ ms.locfileid: "78169366"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>例:名前空間名に対する安全なプロジェクト名の使用
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>例: 名前空間名に対する安全なプロジェクト名の使用
 
 C# クラス ファイルの名前空間に対して安全なプロジェクト名を使うには、次の構文を使います。
 

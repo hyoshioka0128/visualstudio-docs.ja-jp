@@ -1,5 +1,5 @@
 ---
-title: エラー :Transact SQL の実行、デバッグされないで終了 |Microsoft Docs
+title: エラー :Transact-SQL の実行は、デバッグされないで終了しました | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681073"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>エラー :Transact-SQL の実行は、デバッグされないで終了しました
@@ -43,14 +43,14 @@ ms.locfileid: "65681073"
   
   このエラーを解決するには、次の手順を行う必要があります。  
   
-- アクセス許可の設定を確認します。 詳細については、「[方法 :デバッグ用の SQL Server のアクセス許可の設定](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)します。  
+- アクセス許可の設定を確認します。 詳細については、「[方法:デバッグ用の SQL Server の権限の設定](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)に関するページを参照してください。  
   
 - SQL デバッグが正しく設定されていることを確認します。  
   
 - ネットワーク管理者またはデータベース管理者に問い合わせます。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [SQL デバッグの設定](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [方法: デバッグ用の SQL Server のアクセス許可を設定します。](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [方法: デバッグのための SQL Server アクセス許可を設定する](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

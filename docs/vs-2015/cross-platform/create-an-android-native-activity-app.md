@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151080"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity アプリの作成
@@ -23,25 +23,25 @@ ms.locfileid: "68151080"
 
 Visual C++ for Cross-Platform Mobile Development オプションをインストールすると、Visual Studio 2015 を使用して、フル機能を持つ Android Native Activity アプリを作成できます。 Android Native Development Kit (NDK) は、純粋な C/C++ コードを使用して Android アプリの大半を実装することを可能にするツールセットです。 いくつかの Java JNI コードはグルーとして機能し、C/C++ コードが Android とやり取りできるようにします。 Android NDK では、Android API レベル 9 を使用して Native Activity アプリを作成する機能が導入されました。 Native Activity コードは、Unreal Engine または OpenGL を使用したゲームやグラフィックス処理の多いアプリを作成できるので人気があります。 このトピックでは、OpenGL を使用した単純な Native Activity アプリの作成方法について説明します。 他のトピックでは、Native Activity コードの編集、ビルド、デバッグ、展開の開発ライフサイクルについて説明します。  
   
- [必要条件](#req)   
- [新しいネイティブ アクティビティ プロジェクトを作成する](#Create)   
+ [必要性](#req)   
+ [新しいネイティブアクティビティプロジェクトを作成する](#Create)   
  [既定の Android Native Activity アプリをビルドして実行する](#BuildHello)  
   
-## <a name="req"></a> 必要条件  
+## <a name="requirements"></a><a name="req"></a> 必要条件  
  Android Native Activity アプリを作成する前に、すべてのシステム要件を満たし、Visual Studio 2015 の Visual C++ for Cross-Platform Mobile Development をインストールしていることを確認します。 詳細については、「 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」を参照してください。 インストールに必要なサード パーティのツールと SDK が含まれていること、また Microsoft Visual Studio Emulator for Android がインストールされていることを確認してください。  
   
-## <a name="Create"></a> 新しいネイティブ アクティビティ プロジェクトを作成する  
+## <a name="create-a-new-native-activity-project"></a><a name="Create"></a> 新しいネイティブアクティビティプロジェクトを作成する  
  このチュートリアルでは、まず新しい Android Native Activity プロジェクトを作成します。それから、既定のアプリを Visual Studio Emulator for Android でビルドして実行します。  
   
 #### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには  
   
 1. Visual Studio を開きます。 メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]** 、 **[Cross Platform]** の順に選択し、 **[Native-Activity Application (Android)]** テンプレートを選択します。  
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]**、 **[Cross Platform]** の順に選択し、 **[Native-Activity Application (Android)]** テンプレートを選択します。  
   
-3. アプリケーションに `MyAndroidApp` のような名前を付けてから、 **[OK]** をクリックします。  
+3. アプリケーションに `MyAndroidApp` のような名前を付けてから、**[OK]** をクリックします。  
   
-    ![Native Activity プロジェクトの作成](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Native Activity プロジェクトを作成する](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
     Visual Studio は新しいソリューションを作成し、ソリューション エクスプローラーを開きます。  
   
@@ -53,18 +53,18 @@ Visual C++ for Cross-Platform Mobile Development オプションをインスト�
   
 - **MyAndroidApp.Packaging** は、Android デバイスまたはエミュレーターに配置する .apk ファイルを作成します。 これには、リソースと、マニフェスト プロパティを設定する AndroidManifest.xml ファイルが含まれています。 Ant のビルド プロセスを制御する build.xml も含まれています。 それは既定でスタートアップ プロジェクトとして設定されているため、Visual Studio から直接、配置して実行できます。  
   
-## <a name="BuildHello"></a> 既定の Android Native Activity アプリをビルドして実行する  
- テンプレートによって生成されたアプリをビルドして実行し、インストールとセットアップを確認します。 この初期テストでは、Visual Studio Emulator for Android によってインストールされるデバイス プロファイルのいずれかでアプリを実行します。 別の対象でアプリをテストする場合は、対象のエミュレーターを読み込むか、デバイスをコンピューターに接続してください。  
+## <a name="build-and-run-the-default-android-native-activity-app"></a><a name="BuildHello"></a> 既定の Android Native Activity アプリをビルドして実行する  
+ テンプレートによって生成されたアプリをビルドして実行し、インストールとセットアップを確認します。 この初期テストでは、Visual Studio Emulator for Android によってインストールされるデバイス プロファイルのいずれかでアプリを実行します。 別の対象でアプリをテストする場合は、対象のエミュレーターを読み込むか、デバイスをコンピューターに接続することができます。  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>既定の Native Activity アプリをビルドして実行するには  
   
-1. 選択されていない場合は、 **[ソリューション プラットフォーム]** ドロップダウン リストから **[x86]** を選択します。  
+1. まだ選択されていない場合は、[**ソリューションプラットフォーム**] ボックスの一覧から [ **x86** ] を選択します。  
   
      ![ソリューション プラットフォーム ドロップダウン x86 の選択](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
-     **[ソリューション プラットフォーム]** リストが表示されない場合は、 **[ボタンの追加と削除]** リストから **[ソリューション プラットフォーム]** を選択してから、使用するプラットフォームを選択します。  
+     [**ソリューションプラットフォーム**] リストが表示されていない場合は、[**ボタンの追加と削除**] ボックスの一覧から [**ソリューションプラットフォーム**] を選択し、プラットフォームを選択します。  
   
-2. メニュー バーの **[ビルド]** 、 **[ソリューションのビルド]** の順にクリックします。  
+2. メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
   
      ソリューションに含まれる 2 つのプロジェクトのビルド プロセスの出力が [出力] ウィンドウに表示されます。  
   

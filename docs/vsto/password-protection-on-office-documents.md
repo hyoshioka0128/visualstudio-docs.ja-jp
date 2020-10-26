@@ -17,28 +17,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62977901"
 ---
 # <a name="password-protection-on-office-documents"></a>Office ドキュメントのパスワード保護
-  パスワードを知らない人によって開けませんように、Microsoft Office Word 文書と Microsoft Office Excel ブックにパスワードを設定することになります。 このオプションの名前は **[パスワード]** します。
+  Microsoft Office Word 文書にパスワードを設定したり、Excel ブックを Microsoft Office して、パスワードを知らない人がそれらを開けないようにすることができます。 このオプションは、 **Open On Password**と呼ばれます。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- 既存の文書やブックを使用してドキュメント レベルのプロジェクトを作成する **[パスワード]** を有効にします。 Visual Studio での動作が Word および Excel のドキュメントを異なる **[パスワード]** を有効にします。
+ 開いている **パスワード** が有効になっている既存のドキュメントとブックを使用して、ドキュメントレベルのプロジェクトを作成できます。 Visual Studio での動作は、 **パスワードが Open** が有効になっている Word および Excel ドキュメントでは異なります。
 
- 有効化について **[パスワード]**、Word または Excel のヘルプを参照してください。
+ 開いている **パスワード**を有効にする方法の詳細については、Word または Excel のヘルプを参照してください。
 
-## <a name="behavior-of-excel-and-word"></a>Excel および Word の動作
- Visual Studio で Excel ブックを開くたびに **[パスワード]** が有効な入力を求められたら、パスワード。 ソリューションをビルドするときに促されます、パスワードをもう一度、ビルド中に、ドキュメントが開かれているためです。
+## <a name="behavior-of-excel-and-word"></a>Excel と Word の動作
+ **Open**が有効になっている場合、Visual Studio で excel ブックを開くたびに、パスワードを入力するように求められます。 ソリューションをビルドするときに、ドキュメントがビルド中に開かれるため、パスワードの入力を求められます。
 
- 初めてが Visual Studio で Word 文書を開く **[パスワード]** 有効にすると、Word が表示されたら、パスワードの。 正常にパスワードを入力した後 **[パスワード]** ドキュメントから削除されますドキュメントを開いて、パスワードが不要になったとします。 場合は、ソリューション内、ドキュメントを要求する前にパスワードを要求するのには開くことが、有効にする必要があります **[パスワード]** 最終的なビルドの後に、ソリューションをデプロイする前にします。
+ **Open**が有効になっているときに、Visual Studio で word 文書を初めて開くと、パスワードを入力するようにというメッセージが表示されます。 パスワードが正常に入力されると、 **Open のパスワード** はドキュメントから削除され、ドキュメントを開くとパスワードは不要になります。 ソリューション内のドキュメントを開く前にパスワードが要求されるようにするには、最終的なビルド後、ソリューションを配置する前に、 **パスワード** を有効にする必要があります。
 
-## <a name="see-also"></a>関連項目
-- [ドキュメント レベルのソリューションでドキュメントの保護](../vsto/document-protection-in-document-level-solutions.md)
-- [Information rights management とマネージ コード拡張機能の概要](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [方法: 制限されたアクセス許可を持つドキュメントの背後で実行するコードを許可します。](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [ドキュメントレベルのソリューションにおけるドキュメントの保護](../vsto/document-protection-in-document-level-solutions.md)
+- [Information rights management とマネージコード拡張機能の概要](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [方法: アクセス許可が制限されたドキュメントの背後でコードの実行を許可する](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072542"
 ---
 # <a name="walkthrough-use-msbuild"></a>チュートリアル: MSBuild の使用
@@ -147,7 +147,7 @@ Visual Studio の**開発者コマンド プロンプト**から MSBuild を実�
 
    (Windows 10) タスクバーの検索ボックスに、`dev` や `developer command prompt` など、ツールの名前を入力します。 検索パターンに一致する、インストールされているアプリの一覧が表示されます。
 
-   手動で検索する必要がある場合、ファイルは *<visualstudio installation folder\>\<バージョン>\Common7\Tools* フォルダー内の *LaunchDevCmd.bat* です。
+   手動で検索する必要がある場合、ファイルは *<Visual Studio インストール フォルダー\>\<version>\Common7\Tools* フォルダー内の *LaunchDevCmd.bat* です。
 
 2. コマンド ウィンドウで、プロジェクト ファイルを含むフォルダー (この場合は *D:\BuildApp\BuildApp*) に移動します。
 
@@ -290,7 +290,7 @@ Configuration プロパティが作成されて、値が "Release" に設定さ�
 
 ## <a name="special-characters"></a>特殊文字
 
-MSBuild プロジェクト ファイルでは、特定の文字が特殊な意味を持ちます。 そのような文字の例として、セミコロン (;) およびアスタリスク (*) があります。 これらの特殊文字をプロジェクト ファイル内でリテラルとして使用するには、構文 %\<xx> でそれらの文字を指定する必要があります。ここで、\<xx> は文字の ASCII 16 進値を表します。
+MSBuild プロジェクト ファイルでは、特定の文字が特殊な意味を持ちます。 そのような文字の例として、セミコロン (;) およびアスタリスク (*) があります。 これらの特殊文字をプロジェクト ファイル内でリテラルとして使用するには、構文 %\<xx> を使ってそれらを指定する必要があります。ここで、\<xx> は文字の ASCII 16 進値を表します。
 
 Message タスクに変更を加えて、特殊文字を使用して Configuration プロパティの値を読みやすくします。
 

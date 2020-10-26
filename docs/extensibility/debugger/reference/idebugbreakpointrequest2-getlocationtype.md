@@ -1,5 +1,5 @@
 ---
-title: を指定します。マイクロソフトドキュメント
+title: 'IDebugBreakpointRequest2:: GetLocationType |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 06bb64190d6821b05ebd638c753bd2b6d3decf71
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734993"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-このブレークポイント要求のブレークポイントの場所の種類を取得します。
+このブレークポイント要求のブレークポイントの位置の種類を取得します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,13 +41,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>パラメーター
 `pBPLocationType`\
-[アウト]このブレークポイント要求の場所を記述する[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列挙体から値を返します。
+入出力このブレークポイント要求の場所を記述する [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 列挙から値を返します。
 
 ## <a name="return-value"></a>戻り値
-成功した場合は`S_OK`、 を返します。それ以外の場合は、エラー コードを返します。 関連`E_FAIL`付`bpLocation`けられている[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造体のフィールドが無効な場合に返します。
+成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_FAIL` `bpLocation` 関連付けられている[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造内のフィールドが有効でない場合は、を返します。
 
 ## <a name="example"></a>例
-次の例は[、IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)インターフェイス`CDebugBreakpointRequest`を公開する単純なオブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、IDebugBreakpointRequest2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointRequest` います。[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)

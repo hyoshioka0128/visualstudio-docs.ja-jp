@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7371e08925ad9227cf15a93a339e6e0ed36d11db
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282853"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
@@ -56,11 +56,11 @@ ms.locfileid: "85282853"
 
 - Entity Data Model および ADO.NET Entity Framework。 詳細については、「 [Entity Framework の概要](/dotnet/framework/data/adonet/ef/overview)」を参照してください。
 
-- WPF データ バインディング。 詳細については、「[データバインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」を参照してください。
+- WPF データ バインディング。 詳細については、「 [データバインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)」を参照してください。
 
 ## <a name="create-the-service-project"></a>サービスプロジェクトを作成する
 
-1. このチュートリアルを開始するには、C# または Visual Basic **ASP.NET Web アプリケーション**プロジェクトを作成します。 プロジェクトに**adventureworksservice.svc**という名前を指定します。
+1. このチュートリアルを開始するには、C# または Visual Basic **ASP.NET Web アプリケーション** プロジェクトを作成します。 プロジェクトに **adventureworksservice.svc**という名前を指定します。
 
 2. **ソリューション エクスプローラー**で、**Default.aspx** を右クリックし、**[削除]** を選択します。 このチュートリアルでは、このファイルは必要ありません。
 
@@ -72,7 +72,7 @@ WCF Data Service を使用してアプリケーションにデータを公開す
 
 2. [インストールされたテンプレート] ボックスの一覧で、**[データ]** をクリックし、**[ADO.NET エンティティ データ モデル]** プロジェクト項目を選択します。
 
-3. 名前をに変更し、 `AdventureWorksModel.edmx` [**追加**] をクリックします。
+3. 名前をに変更し、 `AdventureWorksModel.edmx` [ **追加**] をクリックします。
 
      **Entity Data Model** ウィザードが開きます。
 
@@ -94,11 +94,11 @@ WCF Data Service を使用してアプリケーションにデータを公開す
 
 WCF データサービスを作成し、Entity Data Model のデータを WPF アプリケーションに公開します。
 
-1. **[プロジェクト]** メニューで、**[新しい項目の追加]** を選択します。
+1. **[プロジェクト]** メニューで、 **[新しい項目の追加]** を選択します。
 
 2. **[インストールされたテンプレート]** ボックスの一覧で、で、**[Web]** をクリックし、**[WCF Data Service]** プロジェクト項目を選択します。
 
-3. [**名前**] ボックスに「 `AdventureWorksService.svc` 」と入力し、[**追加**] をクリックします。
+3. [ **名前** ] ボックスに「 `AdventureWorksService.svc` 」と入力し、[ **追加**] をクリックします。
 
      Visual Studio によってがプロジェクトに追加され `AdventureWorksService.svc` ます。
 
@@ -141,7 +141,7 @@ WCF Data Service のデータを表示するには、サービスに基づくデ
 
 8. **[サービス参照の追加]** ダイアログ ボックスで、**[探索]** をクリックします。
 
-   Visual Studio は、現在のソリューションで利用可能なサービスを検索し、[ `AdventureWorksService.svc` **サービス**] ボックスで利用可能なサービスの一覧に追加します。
+   Visual Studio は、現在のソリューションで利用可能なサービスを検索し、[ `AdventureWorksService.svc` **サービス** ] ボックスで利用可能なサービスの一覧に追加します。
 
 9. **[名前空間]** ボックスに「**AdventureWorksService**」と入力します。
 
@@ -250,7 +250,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 ユーザーが販売レコードを表示し、**[変更の保存]** ボタンを使用して変更を保存できるようにするコードを追加します。
 
-1. デザイナーで、[**変更の保存**] ボタンをダブルクリックします。
+1. デザイナーで、[ **変更の保存** ] ボタンをダブルクリックします。
 
      Visual Studio によって分離コード ファイルが開かれ、`saveButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。
 
@@ -263,7 +263,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 アプリケーションをビルドして実行し、顧客レコードを表示および更新できることを確認します。
 
-1. [**ビルド**] メニューの [**ソリューションのビルド**] をクリックします。 ソリューションがエラーなしでビルドされることを確認します。
+1. [ **ビルド** ] メニューの [ **ソリューションのビルド**] をクリックします。 ソリューションがエラーなしでビルドされることを確認します。
 
 2. **Ctrl** + **F5**キーを押します。
 
@@ -271,7 +271,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 3. **ソリューション エクスプローラー**で、**AdventureWorksSalesEditor** プロジェクトを右クリックします。
 
-4. 右クリックメニュー (コンテキストメニュー) で、[**デバッグ**] の下にある [**新しいインスタンスを開始**] をクリックします。
+4. 右クリックメニュー (コンテキストメニュー) で、[ **デバッグ**] の下にある [ **新しいインスタンスを開始**] をクリックします。
 
      アプリケーションが実行されます。 次の点を確認します。
 
@@ -287,13 +287,13 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 8. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このチュートリアルを完了した後、関連する次のタスクを実行できます。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、「[データセットへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)」を参照してください。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、「 [データセットへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)」を参照してください。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)」を参照してください。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「 [チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

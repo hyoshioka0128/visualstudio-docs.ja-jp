@@ -1,5 +1,5 @@
 ---
-title: SDI サーバー アプリケーション |Microsoft Docs
+title: SDI サーバーアプリケーション |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148146"
 ---
 # <a name="sdi-server-applications"></a>SDI サーバー アプリケーション
@@ -34,6 +34,6 @@ SDI サーバー アプリケーションをデバッグする場合は、C/C++�
 ## <a name="finding-the-command-line-arguments-property"></a>[コマンド ライン引数] プロパティの表示  
  [*プロジェクト* プロパティ ページ] ダイアログ ボックスにアクセスするには、ソリューション エクスプローラーでプロジェクトを右クリックし、ショートカット メニューの [プロパティ] を選びます。 [コマンド ライン引数] プロパティを表示するには、[構成プロパティ] カテゴリを展開し、[デバッグ] ページをクリックします。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)   
  [方法: COM サーバーをデバッグする](../debugger/how-to-debug-com-servers.md)

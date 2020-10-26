@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 SDK の新機能&#39;|マイクロソフトドキュメント
+title: '&apos;Visual Studio 2017 SDK の新機能 |Microsoft Docs'
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88330aa68f2a3752431fd2fbe6c5c1c649acbb8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 6fb5b81341f8184d713755b3b934fbae4c8031b1
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80697206"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "88711600"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Visual Studio 2017 SDK の新機能&#39;
 
@@ -25,25 +25,25 @@ Visual Studio 2017 の新しい軽量インストールをサポートするた�
 
 新しい形式では、次の機能がサポートされています。
 
-* VSIX インストーラによって検出およびインストールされる必須コンポーネントを明示的に宣言します。
-* 拡張インストール時の Ngen アセンブリ。
-* 通常の拡張ルートの外部にアセットをインストールする。
+* VSIXInstaller によって検出およびインストールされる前提条件を明示的に宣言します。
+* 拡張機能のインストール時の Ngen アセンブリ。
+* 通常の拡張ルートの外にアセットをインストールする。
 
 これらの変更の詳細については、次のトピックを参照してください。
 
-* [Visual Studio 2017 の機能拡張の変更点](breaking-changes-2017.md)
+* [Visual Studio 2017 の機能拡張に対する変更](breaking-changes-2017.md)
 * [VSIX v3 での Ngen のサポート](ngen-support.md)
 * [拡張機能フォルダー外でのインストール](set-install-root.md)
-* [Visual Studio 2017 の拡張機能に関するよく寄せられる質問](faq-2017.md)
+* [Visual Studio 2017 の拡張性に関してよく寄せられる質問](faq-2017.md)
 
-## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>拡張機能プロジェクトを Visual Studio 2017 に移行する
+## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>拡張プロジェクトを Visual Studio 2017 に移行する
 
-拡張機能プロジェクトとその VSIX マニフェストを Visual Studio 2017 に更新する方法については、「[方法: 拡張機能プロジェクトを Visual Studio 2017 に移行する](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)」を参照してください。
+拡張機能プロジェクトとその VSIX マニフェストを Visual Studio 2017 に更新する方法については、「 [方法: 機能拡張プロジェクトを Visual studio 2017 に移行](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)する」を参照してください。
 
-## <a name="custom-project-and-item-templates"></a>カスタム プロジェクトテンプレートと項目テンプレート
+## <a name="custom-project-and-item-templates"></a>カスタムプロジェクトと項目テンプレート
 
-Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレートのスキャンは実行されなくなります。 代わりに、拡張機能は、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して、VSIX 拡張機能を更新できます。 MSI を使用して拡張機能を展開する場合は、テンプレート マニフェスト ファイルを手入力で生成する必要があります。 詳細については、「 [Visual Studio 2017 のカスタム プロジェクトテンプレートと項目テンプレートをアップグレードする](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)」を参照してください。 テンプレート マニフェスト スキーマについては、「 [Visual Studio テンプレート マニフェスト スキーマ リファレンス](../extensibility/visual-studio-template-manifest-schema-reference.md)」に記載されています。
+Visual Studio 2017 以降では、プロジェクトと項目のカスタム テンプレートのスキャンは実行されなくなりました。 代わりに、拡張機能で、これらのテンプレートのインストール場所を記述するテンプレート マニフェスト ファイルを提供する必要があります。 Visual Studio 2017 を使用して VSIX 拡張機能を更新できます。 MSI を使用して拡張機能を展開する場合は、テンプレート マニフェスト ファイルを手動で生成する必要があります。 詳細については、「 [Visual Studio 2017 のカスタムプロジェクトおよび項目テンプレートのアップグレード](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)」を参照してください。 テンプレート マニフェスト スキーマについては、「[Visual Studio テンプレート マニフェスト スキーマ リファレンス](../extensibility/visual-studio-template-manifest-schema-reference.md)」で説明されています。
 
-## <a name="updated-extension-performance-guidelines"></a>拡張機能のパフォーマンス ガイドラインを更新しました
+## <a name="updated-extension-performance-guidelines"></a>拡張機能のパフォーマンスガイドラインの更新
 
-Visual Studio の起動時間とソリューションの読み込み時間に対する拡張機能の影響を検出して分析する方法を示す方法を示す[VSPackage](managing-vspackages.md)の管理の下に新しい[方法: 拡張機能のパフォーマンス](how-to-diagnose-extension-performance.md)の記事があります。
+新しい [方法:](how-to-diagnose-extension-performance.md) [vspackage の管理](managing-vspackages.md) に関する記事では、Visual Studio の起動とソリューションの読み込み時間に対する拡張機能の影響を検出して分析する方法について説明しています。

@@ -1,5 +1,5 @@
 ---
-title: ASP.NET のデバッグの準備 |Microsoft Docs
+title: ASP.NET | をデバッグする準備をしていますMicrosoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696108"
 ---
 # <a name="preparing-to-debug-aspnet"></a>ASP.NET のデバッグの準備
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このセクションを設定する方法を説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をデバッグする、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]または WCF アプリケーション。  
+このセクションで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] は、または WCF アプリケーションをデバッグするようにを設定する方法について説明します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [システム要件](../debugger/aspnet-debugging-system-requirements.md)  
@@ -41,7 +41,7 @@ ms.locfileid: "65696108"
  [リモート サーバーでの Web アプリケーションのデバッグの前提条件](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  リモート サーバーで Web アプリケーションをデバッグするための必要条件を示します。  
   
- [方法: Windows Server 2003 で IIS を構成します。](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [方法: Windows Server 2003 で IIS を構成する](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] で [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] をデバッグするために必要な、特別な構成手順について説明します。  
   
  [方法: セルフホストされている WCF サービスをデバッグする](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -51,9 +51,9 @@ ms.locfileid: "65696108"
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  一般的な問題のトラブルシューティング方法を説明し、エラー メッセージ一覧を紹介します。  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [Web アプリケーションとスクリプトのデバッグ](../debugger/debugging-web-applications-and-script.md)   
- [デバッガーの基本事項](../debugger/debugger-basics.md)   
+ [デバッガーの基本](../debugger/debugger-basics.md)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)   
  [ASP.NET と IIS の構成](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

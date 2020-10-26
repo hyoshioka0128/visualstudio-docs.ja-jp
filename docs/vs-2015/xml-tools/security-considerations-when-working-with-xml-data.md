@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 491e8cf8f9441180e66259ed295e04e8a1a90493
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656133"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用するときのセキュリティに関する考慮事項
@@ -24,11 +24,11 @@ ms.locfileid: "72656133"
 ## <a name="xml-editor"></a>XML エディター
  XML エディターは、Visual Studio のテキスト エディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
 
-- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンドボックス*化されます。つまり、XSLT スタイルシートが配置されている場所に基づいて制限されたアクセス許可を決定するために、コンピューターのコードアクセスセキュリティポリシーが使用されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
+- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンドボックス化*されています。つまり、コンピューターのコード アクセス セキュリティ ポリシーを使用して、XSLT スタイル シートが置かれている場所に基づいてアクセス許可制限が決定されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
 
 - <xref:System.Xml.Xsl.XslCompiledTransform> クラスは、XSLT を Microsoft Intermediate Language (MSIL) にコンパイルし、実行時の処理速度を高めるために使用されます。
 
-- カタログ ファイルで外部の場所を指し示すスキーマは、XML エディターが最初に読み込みを行うときに自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属するカタログ ファイルには、外部のスキーマへのリンクは記述されていません。 XML エディターでスキーマ ファイルをダウンロードする前に、ユーザーは外部スキーマへの参照を明示的に追加する必要があります。 HTTP ダウンロードは、XML エディターの **[その他のツールオプション]** ページで無効にすることができます。
+- カタログ ファイルで外部の場所を指し示すスキーマは、XML エディターが最初に読み込みを行うときに自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属するカタログ ファイルには、外部のスキーマへのリンクは記述されていません。 XML エディターでスキーマ ファイルをダウンロードする前に、ユーザーは外部スキーマへの参照を明示的に追加する必要があります。 HTTP ダウンロードは、XML エディターの [ **その他のツールオプション** ] ページで無効にすることができます。
 
 - XML エディターは、<xref:System.Net> クラスを使用してスキーマをダウンロードします。
 

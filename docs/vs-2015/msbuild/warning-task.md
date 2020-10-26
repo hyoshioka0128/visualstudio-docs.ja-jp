@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558490"
 ---
 # <a name="warning-task"></a>Warning タスク
@@ -41,12 +41,12 @@ ms.locfileid: "62558490"
 |`HelpKeyword`|省略可能な `String` 型のパラメーターです。<br /><br /> 警告に関連付けるヘルプ キーワード。|  
 |`Text`|省略可能な `String` 型のパラメーターです。<br /><br /> `Condition` パラメーターが `true` と評価された場合に、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] がログに記録する警告テキストです。|  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  `Warning` タスクでは、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクトは、次のビルド手順に進む前に、必要な構成の存在を確認できます。  
   
- `Warning` タスクの `Condition` パラメーターが `true` と評価される場合、`Text` パラメーターの値がログに記録され、ビルドが引き続き実行されます。 `Condition` パラメーターが存在しない場合は、警告テキストがログに記録されます。 ログ処理の詳細については、[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)に関するページを参照してください。  
+ `Warning` タスクの `Condition` パラメーターが `true` と評価される場合、`Text` パラメーターの値がログに記録され、ビルドが引き続き実行されます。 `Condition` パラメーターが存在しない場合は、警告テキストがログに記録されます。 ログ記録の詳細については、「 [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」を参照してください。  
   
- 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
+ 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加パラメーターとその説明の一覧については、「 [Taskextension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。  
   
 ## <a name="example"></a>例  
  次のコード例では、コマンド ラインに設定されているプロパティが確認されます。 プロパティが設定されていない場合、警告イベントが生成され、`Warning` タスクの `Text` パラメーターの値がログに記録されます。  
@@ -65,6 +65,6 @@ ms.locfileid: "62558490"
 </Project>  
 ```  
   
-## <a name="see-also"></a>関連項目  
- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>参照  
+ [ビルドログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [プロジェクトファイルスキーマリファレンス](../msbuild/msbuild-project-file-schema-reference.md)

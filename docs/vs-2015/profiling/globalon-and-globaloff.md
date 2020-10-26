@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434229"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn と GlobalOff
@@ -33,7 +33,7 @@ VSPerfCmd.exe の **GlobalOff** オプションと **GlobalOn** オプション�
   
 - **GlobalOn** は、グローバルな開始/停止数を直ちに 1 に設定して、プロファイリングを再開します。  
   
-  詳細については、[「プロファイリング ツールの API」](../profiling/profiling-tools-apis.md) を参照してください。  
+  詳細については、「 [プロファイルツール api](../profiling/profiling-tools-apis.md)」を参照してください。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,24 +46,24 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>パラメーター  
- なし  
+ None  
   
 ## <a name="valid-options"></a>有効なオプション  
  **GlobalOn** と **GlobalOff** は、次のオプションを含んでいるコマンド ラインで指定できます。  
   
- **Start:** `Method`  
+ **開始:**`Method`  
  コマンド ライン プロファイラー セッションを初期化し、指定されたプロファイル方法を設定します。  
   
- **Launch:** `AppName`  
+ **起動:**`AppName`  
  指定したアプリケーションを起動し、サンプリング メソッドでプロファイリングを開始します。  
   
- **Attach:** `PID`  
+ **アタッチ:**`PID`  
  指定されたプロセスのプロファイリングを開始します。  
   
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
+ {**ProcessOff**&#124;**processon**}**:**`PID`  
  指定されたプロセスのプロファイリングを停止または開始します。  
   
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
+ {**Threadoff**&#124;**threadoff**}**:**`TID`  
  指定されたプロセスのプロファイリングを停止または開始します (インストルメンテーション メソッドのみ)。  
   
 ## <a name="example"></a>例  
@@ -84,8 +84,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [スタンドアロンアプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [プロファイリング (サービスの)](../profiling/command-line-profiling-of-services.md)
+ [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

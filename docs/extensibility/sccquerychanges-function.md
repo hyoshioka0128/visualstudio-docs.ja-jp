@@ -1,5 +1,5 @@
 ---
-title: 関数の変更 |マイクロソフトドキュメント
+title: SccQueryChanges 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700498"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 関数
-この関数は、特定のファイルのリストを列挙し、コールバック関数を通じて各ファイルの名前変更に関する情報を提供します。
+この関数は、指定されたファイルのリストを列挙し、コールバック関数を介して各ファイルの名前変更に関する情報を提供します。
 
 ## <a name="syntax"></a>構文
 
@@ -37,38 +37,38 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>パラメーター
  pContext
 
-[in]ソース管理プラグイン のコンテキスト ポインター。
+からソース管理プラグインのコンテキストポインター。
 
- nファイル
+ nFiles
 
-[in]配列内のファイル`lpFileNames`数。
+から配列内のファイルの数 `lpFileNames` 。
 
- ファイル名
+ lpFileNames 名
 
-[in]情報を取得するファイル名の配列。
+から情報を取得するファイル名の配列。
 
- コールバック
+ pfnCallback
 
-[in]リスト内の各ファイル名を呼び出すコールバック関数 (詳細については[、QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)を参照してください)。
+からリスト内の各ファイル名に対して呼び出すコールバック関数 (詳細については、「 [queryの](../extensibility/querychangesfunc.md) 内容」を参照してください)。
 
- 呼び出し元データ
+ pvCallerData
 
-[in]コールバック関数に変更されずに渡される値。
+からコールバック関数に変更されずに渡される値。
 
 ## <a name="return-value"></a>戻り値
- この関数のソース管理プラグインの実装は、次のいずれかの値を返します。
+ この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
-|SCC_OK|クエリ プロセスが正常に完了しました。|
-|SCC_E_PROJNOTOPEN|プロジェクトはソース管理で開かれていない。|
-|SCC_E_ACCESSFAILURE|ソース管理システムへのアクセスに問題が発生しました。|
-|SCC_E_NONSPECIFICERROR|未指定または一般的なエラーが発生しました。|
+|SCC_OK|クエリ処理が正常に完了しました。|
+|SCC_E_PROJNOTOPEN|プロジェクトがソース管理で開かれていません。|
+|SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。|
+|SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|
 
-## <a name="remarks"></a>Remarks
- 照会される変更は、名前空間に対するものです。
+## <a name="remarks"></a>注釈
+ に対して照会される変更は、名前空間に対して行われます。具体的には、ファイルの名前変更、追加、および削除です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [エラー コード](../extensibility/error-codes.md)

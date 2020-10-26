@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876191"
 ---
 # <a name="messaging-activity-designers"></a>メッセージング アクティビティ デザイナー
@@ -45,7 +45,7 @@ ms.locfileid: "86876191"
 
 - [フローチャート](../workflow-designer/flowchart-activity-designers.md)
 
-- [ランタイム](../workflow-designer/runtime-activity-designers.md)
+- [Runtime](../workflow-designer/runtime-activity-designers.md)
 
 - [プリミティブ](../workflow-designer/primitives-activity-designers.md)
 

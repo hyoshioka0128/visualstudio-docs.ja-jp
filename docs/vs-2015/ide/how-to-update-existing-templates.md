@@ -1,4 +1,4 @@
-﻿---
+---
 title: '方法: 既存のテンプレートを更新する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b56cf11057957b0eb99fc065ed26af10d8adfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670583"
 ---
 # <a name="how-to-update-existing-templates"></a>方法 : 既存のテンプレートを更新する
@@ -32,7 +32,7 @@ ms.locfileid: "72670583"
 
 1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[新しいプロジェクト]** をクリックします。
 
-2. 更新するテンプレートを選択し、一時プロジェクトの名前と場所を入力し、 **[OK]** をクリックします。
+2. 更新するテンプレートを選択し、一時プロジェクトの名前と場所を入力し、**[OK]** をクリックします。
 
 3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でプロジェクトを変更します。
 
@@ -51,9 +51,9 @@ ms.locfileid: "72670583"
 
 3. 現在のテンプレート ファイルを変更または削除するか、テンプレートに新しいファイルを追加します。
 
-4. .vstemplate XML ファイルを開いたり、変更したり、保存したりして、更新された動作または新しいファイルを処理します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレートのスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。 ソース ファイルでパラメーター化できる内容の詳細については、「[テンプレート パラメーター](../ide/template-parameters.md)」を参照してください。
+4. .vstemplate XML ファイルを開いたり、変更したり、保存したりして、更新された動作または新しいファイルを処理します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレートのスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。 ソースファイルでパラメーター化できる内容の詳細については、「[テンプレートパラメーター](../ide/template-parameters.md) 」を参照してください。
 
-5. テンプレート内のファイルを選択して右クリックし、 **[送信]** を選択し、 **[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。
+5. テンプレート内のファイルを選択して右クリックし、**[送信]** を選択し、**[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。
 
 6. 新しい .zip ファイルを古い .zip ファイルと同じディレクトリに配置します。
 
@@ -61,7 +61,7 @@ ms.locfileid: "72670583"
 
 8. ([スタート] メニューの **[Visual Studio 2010]、[Visual Studio Tools]、[開発者コマンド プロンプト]** から) 開発者コマンド プロンプトのインスタンスを (管理者として) 開きます。
 
-9. 次のコマンドを実行します: `devenv /installvstemplates`
+9. コマンド `devenv /installvstemplates` を実行します。
 
 ## <a name="see-also"></a>参照
  [テンプレートのカスタマイズ](../ide/customizing-project-and-item-templates.md)[プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md) [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)[テンプレートパラメーター](../ide/template-parameters.md) [方法: スタートキットを作成する](../ide/how-to-create-starter-kits.md)

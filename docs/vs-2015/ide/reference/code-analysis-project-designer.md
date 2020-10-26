@@ -1,4 +1,4 @@
-﻿---
+---
 title: コード分析 (プロジェクト デザイナー) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660872"
 ---
 # <a name="code-analysis-project-designer"></a>コード分析 (プロジェクト デザイナー)
@@ -51,5 +51,5 @@ ms.locfileid: "72660872"
 
  使用規則は、使用規則を有効または無効にします。 このエントリを展開して、個別の規則を有効または無効にすることもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
  マネージコードの[コード分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)[マネージコードのコード分析の概要](../../code-quality/code-analysis-for-managed-code-overview.md)[チュートリアル: マネージコードの分析によるコード障害の](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)分析

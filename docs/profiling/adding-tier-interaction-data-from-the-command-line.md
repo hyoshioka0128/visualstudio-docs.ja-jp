@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779871"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>コマンド ラインからの階層相互作用データの追加
@@ -32,7 +32,7 @@ Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで
 
 **リモート コンピューターでの TIP データの収集**
 
-リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
+リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** フォルダーから **vs_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [リモート デバッグ](../debugger/remote-debugging.md)のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。
 
 **TIP レポート**
 

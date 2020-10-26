@@ -1,5 +1,5 @@
 ---
-title: プロジェクト アイテムへの属性の追加 |Microsoft Docs
+title: プロジェクト項目に属性を追加する |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184820"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>プロジェクト項目への属性の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>を取得し、プロジェクト項目の属性の値を設定します。 SetItemAttribute 属性を作成、それが存在しない場合、プロジェクト項目のメタデータに追加すること。  
+メソッドとは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> プロジェクト項目の属性の値を取得および設定します。 SetItemAttribute が存在しない場合は、属性が作成され、プロジェクト項目メタデータに追加されます。  
   
-## <a name="adding-an-attribute-to-a-project-item"></a>プロジェクト アイテムへの属性の追加  
+## <a name="adding-an-attribute-to-a-project-item"></a>プロジェクト項目への属性の追加  
   
 #### <a name="to-add-an-attribute-to-a-project-item"></a>プロジェクト項目に属性を追加するには  
   
-- 次のコードでは、<xref:EnvDTE.DTE>オートメーション オブジェクト、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>プロジェクト項目に属性を追加します。 プロジェクト項目の ID は、プロジェクト項目の名前"program.cs"から取得されます。 属性"MyAttribute"がこのプロジェクト アイテムに追加され、"MyValue"の値を指定します。  
+- 次のコードでは、オートメーションオブジェクトとメソッドを使用して、 <xref:EnvDTE.DTE> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> プロジェクト項目に属性を追加しています。 プロジェクト項目 ID は、プロジェクト項目名 "program.cs" から取得されます。 属性 "MyAttribute" がこのプロジェクト項目に追加され、"MyValue" という値が指定されます。  
   
     ```  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -48,5 +48,5 @@ ms.locfileid: "68184820"
   
     ```  
   
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
  [MSBuild プロジェクト ファイルでのデータの保持](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

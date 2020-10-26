@@ -1,5 +1,5 @@
 ---
-title: をクリックします。マイクロソフトドキュメント
+title: IEnumDebugModules2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 612285aa4d5a249c0f922ccae88d98a7df83187b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716446"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
@@ -28,34 +28,34 @@ ms.locfileid: "80716446"
 IEnumDebugModules2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>実装者向けの注意事項
- デバッグ エンジン (DE) は、プログラムに読み込まれたモジュールの一覧を表すこのインターフェイスを実装します。
+## <a name="notes-for-implementers"></a>実装側の注意
+ デバッグエンジン (DE) は、プログラム用に読み込まれたモジュールの一覧を表すために、このインターフェイスを実装します。
 
-## <a name="notes-for-callers"></a>発信者向けのメモ
- このインターフェイスを取得するために[列挙モジュール](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)を呼び出します。
+## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
+ Visual Studio は、このインターフェイスを取得するために [Enummodules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) を呼び出します。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
- 次の表に`IEnumDebugModules2`、 のメソッドを示します。
+ 次の表に、のメソッドを示し `IEnumDebugModules2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
-|[次へ](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|列挙体シーケンス内の指定した数のモジュールを取得します。|
-|[スキップ](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|列挙シーケンス内の指定した数のモジュールをスキップします。|
+|[次へ](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|列挙シーケンス内の指定された数のモジュールを取得します。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|列挙シーケンス内の指定された数のモジュールをスキップします。|
 |[リセット](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|列挙シーケンスを先頭にリセットします。|
 |[複製](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|モジュールの数を取得します。|
 
-## <a name="remarks"></a>Remarks
- Visual Studio では、主に**モジュール**ウィンドウを更新するために、このインターフェイスを使用します。
+## <a name="remarks"></a>注釈
+ Visual Studio では、主にこのインターフェイスを使用して [ **モジュール** ] ウィンドウを更新します。
 
- Visual Studio でデバッグを行う目的で、プログラムはモジュールの境界を越えるコード命令の論理的なシーケンスであるため、単一の[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスのモジュールの一覧が必要になります。 一覧の最初のモジュールには、通常、関連付けられたプログラムの初期エントリ ポイントが含まれています。
+ Visual Studio でのデバッグのために、プログラムはモジュールの境界を越えることができるコード命令の論理的なシーケンスです。そのため、単一の [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスのモジュールの一覧が必要になります。 リスト内の最初のモジュールには、通常、関連付けられているプログラムの最初のエントリポイントが含まれています。
 
 ## <a name="requirements"></a>必要条件
- ヘッダー: msdbg.h
+ ヘッダー: msdbg. h
 
- 名前空間: を使用します。
+ 名前空間: VisualStudio。
 
- アセンブリ:
+ アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
 - [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
