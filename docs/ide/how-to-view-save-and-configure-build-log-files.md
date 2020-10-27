@@ -1,5 +1,7 @@
 ---
 title: '方法: ビルド ログ ファイルを表示、保存、および構成する | Microsoft Docs'
+description: ビルド ログ ファイルを表示、保存、構成する方法について説明します。 これらのファイルは、ビルド エラーのトラブルシューティングなどのタスクに役立つ情報を提供します。
+ms.custom: SEO-VS-2020
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283906"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136603"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
@@ -22,7 +24,7 @@ Visual Studio IDE でプロジェクトをビルドしたら、 **[出力]** ウ
 
 - C++ のプロジェクトでは、プロジェクトのビルド時に作成および保存されたログ ファイルで同じ情報を確認することもできます。 
 
-- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、**Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存するログ ファイルの場所を指定することを求められます。
+- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、 **Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存するログ ファイルの場所を指定することを求められます。
 
 また、IDE を使用すれば、各ビルドについて、表示する情報の種類を指定することもできます。
 
@@ -30,7 +32,7 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ プロジェクトのビルド ログ ファイルを表示するには
 
-1. **エクスプローラー**または**エクスプローラー**で、次のファイルを開きます (プロジェクトのルート フォルダーの相対パスです)。*Release*\\<ProjectName>\>.Log* または *Debug\\<プロジェクト名\>.log*
+1. **エクスプローラー** または **エクスプローラー** で、次のファイルを開きます (プロジェクトのルート フォルダーの相対パスです)。 *Release*\\<ProjectName>\>.Log* または *Debug\\<プロジェクト名\>.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>マネージ コード プロジェクトのビルド ログ ファイルを作成するには
 

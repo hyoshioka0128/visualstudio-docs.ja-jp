@@ -1,6 +1,7 @@
 ---
-title: 'チュートリアル: MSBuild の使用 | Microsoft Docs'
-ms.date: 03/20/2019
+title: MSBuild の使用
+description: 項目、項目メタデータ、プロパティ、ターゲット、タスクなど、MSBuild プロジェクト ファイルのさまざまな部分について説明します。
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134819"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298545"
 ---
 # <a name="walkthrough-use-msbuild"></a>チュートリアル: MSBuild の使用
 
@@ -28,7 +29,25 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
 
 - ビルド項目の使用方法
 
-MSBuild は、Visual Studio から実行することも、**コマンド ウィンドウ**から実行することもできます。 このチュートリアルでは、Visual Studio を使用して MSBuild プロジェクト ファイルを作成し、 そのプロジェクト ファイルを Visual Studio で編集した後、**コマンド ウィンドウ**を使用してプロジェクトをビルドして、結果を確認します。
+MSBuild は、Visual Studio から実行することも、 **コマンド ウィンドウ** から実行することもできます。 このチュートリアルでは、Visual Studio を使用して MSBuild プロジェクト ファイルを作成し、 そのプロジェクト ファイルを Visual Studio で編集した後、 **コマンド ウィンドウ** を使用してプロジェクトをビルドして、結果を確認します。
+
+## <a name="install-msbuild"></a>MSBuild をインストールする
+
+::: moniker range="vs-2017"
+
+Visual Studio をご利用の場合、既に MSBuild がインストールされています。 Visual Studio のないシステムに MSBuild 15 をインストールするには、 [Visual Studio の旧バージョンのダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/) ページに移動し、 **[Visual Studio 2017]** を展開し、 **[ダウンロード]** ボタンを選択します。 Visual Studio サブスクリプションをご利用の場合、サインインして最新版の **Build Tools for Visual Studio 2017** をダウンロードするためのリンクを見つけてください。 Visual Studio サブスクリプションをお持ちでない場合でも、最新版のビルド ツールをインストールできます。 このページで、バージョン セレクターを使用して 2019 版のページに切り替え、インストール手順に従います。
+::: moniker-end
+
+::: moniker range="vs-2019"
+Visual Studio をご利用の場合、既に MSBuild がインストールされています。 Visual Studio 2019 の場合、Visual Studio のインストール フォルダーの下にインストールされます。 Windows 10 での一般的な既定のインストールの場合、 *MSBuild\Current\Bin* のインストール フォルダーの下に MSBuild.exe が置かれます。
+
+Visual Studio のないシステムに MSBuild をインストールするには、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、下にスクロールして **[すべてのダウンロード]** を表示し、 **[Tools for Visual Studio 2019]** を展開します。 MSBuild が含まれる **Build Tools for Visual Studio 2019** をインストールするか、[.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk) をインストールします。
+
+インストーラーで、使用するワークロード向けの MSBuild ツールが選択されていることを確認し、 **[インストール]** を選択します。
+
+![MSBuild をインストールする](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
 
 ## <a name="create-an-msbuild-project"></a>MSBuild プロジェクトの作成
 
@@ -39,25 +58,25 @@ MSBuild は、Visual Studio から実行することも、**コマンド ウィ�
 1. Visual Studio を開き、プロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**winforms**」と入力します。 **[新しい Windows フォーム アプリの作成 (.NET Framework)]** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「 **winforms** 」と入力します。 **[新しい Windows フォーム アプリの作成 (.NET Framework)]** を選択します。 表示されたダイアログ ボックスで、 **[作成]** を選択します。
 
-    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「*D:\\* 」など)。 **[ソリューション]** 、 **[ソリューション名]** (**BuildApp**)、および **[フレームワーク]** の既定値をそのまま使用します。
+    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「 *D:\\* 」など)。 **[ソリューション]** 、 **[ソリューション名]** ( **BuildApp** )、および **[フレームワーク]** の既定値をそのまま使用します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]**  >  **[Windows Desktop]** を展開し、 **[Windows フォーム アプリ (.NET Framework)]** を選択します。 次に、 **[OK]** を選択します。
 
-    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「*D:\\* 」など)。 それ以外は、既定値をそのまま使用します ( **[ソリューションのディレクトリを作成]** はオン、 **[ソース管理に追加]** はオフ、 **[ソリューション名]** は **BuildApp**)。
+    **[名前]** ボックスに「 `BuildApp`」と入力します。 **[場所]** ボックスにソリューションの場所を入力します (「 *D:\\* 」など)。 それ以外は、既定値をそのまま使用します ( **[ソリューションのディレクトリを作成]** はオン、 **[ソース管理に追加]** はオフ、 **[ソリューション名]** は **BuildApp** )。
     ::: moniker-end
 
 1. **[OK]** または **[作成]** をクリックして、プロジェクト ファイルを作成します。
 
 ## <a name="examine-the-project-file"></a>プロジェクト ファイルを確認する
 
- 前のセクションでは、Visual Studio を使用して Visual C# プロジェクト ファイルを作成しました。 このプロジェクト ファイルは、BuildApp という名前のプロジェクト ノードとして**ソリューション エクスプローラー**に表示されます。 Visual Studio Code エディターを使用してこのプロジェクト ファイルを確認できます。
+ 前のセクションでは、Visual Studio を使用して Visual C# プロジェクト ファイルを作成しました。 このプロジェクト ファイルは、BuildApp という名前のプロジェクト ノードとして **ソリューション エクスプローラー** に表示されます。 Visual Studio Code エディターを使用してこのプロジェクト ファイルを確認できます。
 
 **プロジェクト ファイルを確認するには**
 
-1. **ソリューション エクスプローラー**で、**BuildApp** というプロジェクト ノードをクリックします。
+1. **ソリューション エクスプローラー** で、 **BuildApp** というプロジェクト ノードをクリックします。
 
 1. **プロパティ** ブラウザーで、 **[プロジェクト ファイル]** プロパティが *BuildApp.csproj* になっていることを確認します。 プロジェクト ファイルはすべて、名前に *proj* というサフィックスが付いています。 Visual Basic プロジェクトを作成した場合は、プロジェクト ファイルの名前が *BuildApp.vbproj* になります。
 
@@ -137,20 +156,20 @@ Message タスクは、Text 属性の文字列値を入力として受け取り�
 
 Visual Studio からこのプロジェクトを構築する場合、定義したターゲットは構築されません。 Visual Studio では、インポートされた *.targets* ファイルに含まれるターゲットである既定のターゲットが選択されるためです。
 
-Visual Studio の**開発者コマンド プロンプト**から MSBuild を実行して、上で定義した HelloWorld ターゲットをビルドします。 ターゲットを選択するには、コマンドライン スイッチの -target または -t を使用します。
+Visual Studio の **開発者コマンド プロンプト** から MSBuild を実行して、上で定義した HelloWorld ターゲットをビルドします。 ターゲットを選択するには、コマンドライン スイッチの -target または -t を使用します。
 
 > [!NOTE]
-> 以降では、**開発者コマンド プロンプト**を**コマンド ウィンドウ**と呼びます。
+> 以降では、 **開発者コマンド プロンプト** を **コマンド ウィンドウ** と呼びます。
 
 **ターゲットをビルドするには:**
 
-1. **コマンド ウィンドウ**を開きます。
+1. **コマンド ウィンドウ** を開きます。
 
    (Windows 10) タスクバーの検索ボックスに、`dev` や `developer command prompt` など、ツールの名前を入力します。 検索パターンに一致する、インストールされているアプリの一覧が表示されます。
 
    手動で検索する必要がある場合、ファイルは *<Visual Studio インストール フォルダー\>\<version>\Common7\Tools* フォルダー内の *LaunchDevCmd.bat* です。
 
-2. コマンド ウィンドウで、プロジェクト ファイルを含むフォルダー (この場合は *D:\BuildApp\BuildApp*) に移動します。
+2. コマンド ウィンドウで、プロジェクト ファイルを含むフォルダー (この場合は *D:\BuildApp\BuildApp* ) に移動します。
 
 3. コマンド スイッチ `-t:HelloWorld` を使用して msbuild を実行します。 HelloWorld ターゲットが選択されてビルドされます。
 
@@ -158,7 +177,7 @@ Visual Studio の**開発者コマンド プロンプト**から MSBuild を実�
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. **コマンド ウィンドウ**で出力を確認します。 "Hello" と "World" の 2 つの行が表示されます。
+4. **コマンド ウィンドウ** で出力を確認します。 "Hello" と "World" の 2 つの行が表示されます。
 
     ```output
     Hello
@@ -224,7 +243,7 @@ $(PropertyName)
 
 1. プロジェクト ファイルを保存します。
 
-1. **コマンド ウィンドウ**で、次の行を入力して実行します。
+1. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -275,7 +294,7 @@ MSBuild では、プロジェクト ファイルに関する情報や MSBuild �
 
 **コマンド ラインからプロパティ値を設定するには:**
 
-1. **コマンド ウィンドウ**で、次の行を入力して実行します。
+1. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
@@ -305,7 +324,7 @@ Message タスクに変更を加えて、特殊文字を使用して Configurati
 
 1. プロジェクト ファイルを保存します。
 
-1. **コマンド ウィンドウ**で、次の行を入力して実行します。
+1. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -332,7 +351,7 @@ Message タスクに変更を加えて、特殊文字を使用して Configurati
 </ItemGroup>
 ```
 
-ここでは、2 つの項目を含む項目グループを定義しています。 Compile 項目の種類には、2 つの値があります。*Program.cs* と *Properties\AssemblyInfo.cs* です。
+ここでは、2 つの項目を含む項目グループを定義しています。 Compile 項目の種類には、2 つの値があります。 *Program.cs* と *Properties\AssemblyInfo.cs* です。
 
 次のコードでは、両方のファイルをセミコロンで区切って 1 つの Include 属性で宣言することで、同じ項目の種類を作成しています。
 
@@ -369,7 +388,7 @@ Message タスクに変更を加えて、特殊文字を使用して Configurati
 
 1. プロジェクト ファイルを保存します。
 
-1. **コマンド ウィンドウ**で、次の行を入力して実行します。
+1. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -401,7 +420,7 @@ Message タスクに変更を加えて、復帰と改行 (%0A%0D) を使用し�
 
 2. プロジェクト ファイルを保存します。
 
-3. **コマンド ウィンドウ**で、次の行を入力して実行します。
+3. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -426,13 +445,13 @@ Message タスクに変更を加えて、復帰と改行 (%0A%0D) を使用し�
 <Photos Include="images\*.jpeg" />
 ```
 
- この例では、*images* フォルダーにある拡張子が *.jpeg* のすべてのファイルが項目の種類 Photos に追加されます。もう 1 つ例を見てましょう。
+ この例では、 *images* フォルダーにある拡張子が *.jpeg* のすべてのファイルが項目の種類 Photos に追加されます。もう 1 つ例を見てましょう。
 
 ```xml
 <Photos Include="images\**\*.jpeg" />
 ```
 
- この例では、*images* フォルダーとそのすべてのサブフォルダーにある拡張子が *.jpeg* のすべてのファイルが項目の種類 Photos に追加されます。 その他の例については、「[方法:ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」をご覧ください。
+ この例では、 *images* フォルダーとそのすべてのサブフォルダーにある拡張子が *.jpeg* のすべてのファイルが項目の種類 Photos に追加されます。 その他の例については、「[方法:ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)」をご覧ください。
 
  項目を宣言すると、それらが項目の種類に追加されます。 たとえば、オブジェクトに適用された
 
@@ -441,7 +460,7 @@ Message タスクに変更を加えて、復帰と改行 (%0A%0D) を使用し�
 <Photos Include="images\*.gif" />
 ```
 
- この例では、*image* フォルダーにある拡張子が *.jpeg* または *.gif* のすべてのファイルを含む、Photos という名前の項目の種類 が作成されます。 次の行も同じ結果をもたらします。
+ この例では、 *image* フォルダーにある拡張子が *.jpeg* または *.gif* のすべてのファイルを含む、Photos という名前の項目の種類 が作成されます。 次の行も同じ結果をもたらします。
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
@@ -462,7 +481,7 @@ Exclude 属性は、同一の項目要素内にある Include 属性によって
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-この例では、*Form1.cs* ファイルは前の項目要素で追加されているため、除外されません。
+この例では、 *Form1.cs* ファイルは前の項目要素で追加されているため、除外されません。
 
 **項目を追加および除外するには**
 
@@ -482,7 +501,7 @@ Exclude 属性は、同一の項目要素内にある Include 属性によって
 
 3. プロジェクト ファイルを保存します。
 
-4. **コマンド ウィンドウ**で、次の行を入力して実行します。
+4. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -524,7 +543,7 @@ Exclude 属性は、同一の項目要素内にある Include 属性によって
 
 2. プロジェクト ファイルを保存します。
 
-3. **コマンド ウィンドウ**で、次の行を入力して実行します。
+3. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -555,7 +574,7 @@ Exclude 属性は、同一の項目要素内にある Include 属性によって
 
 2. プロジェクト ファイルを保存します。
 
-3. **コマンド ウィンドウ**で、次の行を入力して実行します。
+3. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -594,7 +613,7 @@ Exclude 属性は、同一の項目要素内にある Include 属性によって
 
 2. プロジェクト ファイルを保存します。
 
-3. **コマンド ウィンドウ**で、次の行を入力して実行します。
+3. **コマンド ウィンドウ** で、次の行を入力して実行します。
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld

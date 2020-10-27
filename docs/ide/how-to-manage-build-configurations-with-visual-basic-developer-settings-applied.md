@@ -1,5 +1,6 @@
 ---
 title: Visual Basic 開発者設定を使用してビルド構成を管理する
+description: Visual Studio 開発者設定が適用される場合に非表示となるビルド構成の詳細オプションについて、およびこれらのビルド設定を手動で有効にする方法について説明します。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135119"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136720"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する
 
@@ -29,7 +30,7 @@ ms.locfileid: "91135119"
 
 ## <a name="enable-advanced-build-configurations"></a>ビルド構成の詳細を有効にする
 
-既定では、 **[構成マネージャー]** ダイアログ ボックスおよび[プロジェクト デザイナー](../ide/reference/application-page-project-designer-visual-basic.md)の **[構成]** 一覧と **[プラットフォーム]** 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
+既定では、 **[構成マネージャー]** ダイアログ ボックスおよび [プロジェクト デザイナー](../ide/reference/application-page-project-designer-visual-basic.md)の **[構成]** 一覧と **[プラットフォーム]** 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
 
 1. **[ツール]** メニューの **[オプション]** をクリックします。
 
@@ -39,7 +40,7 @@ ms.locfileid: "91135119"
 
 4. **[OK]** をクリックします。
 
-     **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、**[構成]** 一覧と **[プラットフォーム]** 一覧が**プロジェクト デザイナー**に表示されるようになります。
+     **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、 **[構成]** 一覧と **[プラットフォーム]** 一覧が **プロジェクト デザイナー** に表示されるようになります。
 
 ## <a name="see-also"></a>関連項目
 

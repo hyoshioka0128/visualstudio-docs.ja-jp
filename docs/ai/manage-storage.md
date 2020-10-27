@@ -1,5 +1,7 @@
 ---
 title: データをアップロードするストレージを参照する
+description: リモート マシンまたは Azure ファイル共有ですべての記憶域を参照して、データのアップロードまたはモデルとログのダウンロードを有効にする方法について説明します。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ebee353261ba49f6677a0f96db68b7e8d46d9
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371613"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099207"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>データのアップロードまたはモデルとログのダウンロードを行うストレージを参照する
 
@@ -21,7 +23,7 @@ ms.locfileid: "85371613"
 
 ## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>リモート マシンまたはファイル共有上のすべてのデータにアクセスするには
 
-1. **サーバー エクスプローラー**を開きます。
+1. **サーバー エクスプローラー** を開きます。
 2. リモート マシンまたは Batch AI 計算コンテキストを展開します。
 3. **[ストレージ]** を右クリックしてから **[参照]** をクリックします。
 

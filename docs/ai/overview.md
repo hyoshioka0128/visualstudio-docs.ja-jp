@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for AI の概要
+description: ディープ ラーニング ソリューションをビルド、テスト、展開するために使用できる統合開発環境 (IDE) である Visual Studio Tools for AI について説明します。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 7b660881b18efca4ec81b3f8f31e8dd64870d4d0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211051"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099168"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI の概要
 

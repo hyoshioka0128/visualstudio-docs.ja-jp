@@ -1,5 +1,6 @@
 ---
 title: トラブルシューティングと既知の問題 (VS Tools for Unity)
+description: Visual Studio Tools for Unity でのトラブルシューティングについて確認します。 既知の問題の説明を確認し、それらの問題の解決策について説明します。
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: d096a431b7a345d2218c46969dc1a1a21af1f45a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235083"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039834"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>トラブルシューティングと既知の問題 (Visual Studio Tools for Unity)
 

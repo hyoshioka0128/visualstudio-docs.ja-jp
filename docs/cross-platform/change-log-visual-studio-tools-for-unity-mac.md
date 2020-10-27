@@ -1,5 +1,6 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Mac) | Microsoft Docs
+description: Visual Studio Tools for Unity、Mac の変更ログを確認します。 バージョン 1.0.0.0 から 2.7.0.0 以降にかけて行われた変更を確認します。
 ms.custom: ''
 ms.date: 5/19/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e817318f7b16040ed598ac4dce8f1c6017bdf83e
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: 50462d4464bd55376e1aceda3f4f5e8e3cbe1f87
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471533"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039899"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
 

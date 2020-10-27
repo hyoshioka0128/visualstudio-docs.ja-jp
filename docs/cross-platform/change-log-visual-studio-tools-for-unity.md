@@ -1,5 +1,6 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
+description: Visual Studio Tools for Unity、Windows の変更ログを確認します。 バージョン 1.0.0.0 から 4.7.0.0 以降にかけて行われた変更を確認します。
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87471520"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039439"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
@@ -568,7 +569,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
 
@@ -626,7 +627,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - (以前のバージョン 3.9.0.0 からの移植) Unity により修正された Unity パフォーマンス バグの回避策がロールバックされました。
 
@@ -636,7 +637,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity のパフォーマンスのバグの一時的な回避策: プロジェクト生成時の MonoIslands のキャッシュ。
 
@@ -676,7 +677,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - 今後、新しい Unity ランタイムを使用するときにはポータブル pdb を mdb に変換しないでください。
 
@@ -746,7 +747,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Mono バージョンの検出を修正しました。
 
@@ -766,7 +767,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - Unity ターゲット フレームワークの検出を修正しました。
 
@@ -826,7 +827,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 ### <a name="bug-fixes"></a>バグ修正
 
-- **プロジェクトの生成:**
+- **Project Generation:**
 
   - プレーヤー プロジェクトに対するプロジェクト guid の計算を修正しました。
 
@@ -1668,7 +1669,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - リモート デバッグを簡略化するために、Unity に共有フォルダーを構成する必要性を解消しました。 Windows から Unity プロジェクトへのアクセス許可を持っているだけでよいことになりました。
 
-- カスタム Unity プロファイルを標準 .NET ターゲット プロファイルとしてインストールできます。 これにより、ReSharper が表示することのある誤検知がすべて修正されます。
+- カスタム Unity プロファイルを標準 .NET ターゲット プロファイルとしてインストールします。 これにより、ReSharper が表示することのある誤検知がすべて修正されます。
 
 - Unity スクリプト エンジンのバグの回避策を実装したため、適切に登録されていないスレッドでデバッガーが中断しないようになりました。
 
@@ -1751,7 +1752,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - UnityScript および Boo の式を評価するときに発生することのある例外を修正しました。
 
-- Unity で .NET の API レベルを変更した場合にプロジェクト ファイルの更新がトリガーされないバグ再発を修正しました。
+- Unity で .NET の API レベルを変更した場合にプロジェクト ファイルの更新がトリガーされないというバグ再発を修正しました。
 
 - ユーザー コードがログのコールバック ハンドラーに参加できないという API の不具合を修正しました。
 
@@ -1776,7 +1777,7 @@ Visual Studio Tools for Unity の変更ログです。
 
 - Visual Studio 2012 での Unity プロジェクト エクスプローラーの背景のバグ再発を修正しました。
 
-- 完全な .NET プロファイルを持つユーザーのためのプロジェクト生成を修正しました。
+- 完全な .NET プロファイルを持つユーザーを対象としたプロジェクト生成を修正しました。
 
 - Web ターゲットを持つユーザーのためのプロジェクト生成を修正しました。
 

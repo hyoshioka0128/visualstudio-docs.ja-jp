@@ -1,5 +1,7 @@
 ---
 title: '[ビルド] ページ (プロジェクト デザイナー) (C#)'
+description: Visual Studio のプロジェクト デザイナーの [ビルド] ページを使用してプロジェクトのビルド構成プロパティを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419225"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136876"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
 
-**プロジェクト デザイナー**の **[ビルド]** ページでは、プロジェクトのビルド構成プロパティを指定します。 このページは、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトにのみ適用されます。
+**プロジェクト デザイナー** の **[ビルド]** ページでは、プロジェクトのビルド構成プロパティを指定します。 このページは、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトにのみ適用されます。
 
-**[ビルド]** ページにアクセスするには、**ソリューション エクスプローラー**のプロジェクト ノード ( **[ソリューション]** ノードではありません) を選択します。 メニューで **[表示]** 、 **[プロパティ ページ]** の順に選択します。 プロジェクト デザイナーが表示されたら、 **[ビルド]** タブを選択します。
+**[ビルド]** ページにアクセスするには、 **ソリューション エクスプローラー** のプロジェクト ノード ( **[ソリューション]** ノードではありません) を選択します。 メニューで **[表示]** 、 **[プロパティ ページ]** の順に選択します。 プロジェクト デザイナーが表示されたら、 **[ビルド]** タブを選択します。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -34,7 +36,7 @@ ms.locfileid: "85419225"
 次のオプションを使用すると、表示または変更する構成およびプラットフォームを選択できます。
 
 > [!NOTE]
-> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、これらのオプションは表示されません。 詳細については、「[方法: デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
+> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、これらのオプションは表示されません。 詳細については、[デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
 
 **構成**
 
@@ -42,7 +44,7 @@ ms.locfileid: "85419225"
 
 **プラットフォーム**
 
-表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、**構成マネージャー**を使って変更できます。 詳細については、「[How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。
+表示または変更するプラットフォーム設定を指定します。 既定の設定は **[アクティブ (Any CPU)]** です。 アクティブなプラットフォームは、 **構成マネージャー** を使って変更できます。 詳細については、「[方法:構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
 ## <a name="general"></a>全般
 
@@ -102,7 +104,7 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 コンパイラの警告を表示するレベルを指定します。 詳しくは、「[/warn (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option)」をご覧ください。
 
-**警告の表示なし**
+**警告を表示しない**
 
 1 つ以上の警告について、警告を生成するコンパイラの機能を無効にします。 警告番号が複数ある場合は、コンマまたはセミコロンで区切ります。 詳しくは、「[/nowarn (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)」をご覧ください。
 
@@ -119,11 +121,11 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 > [!TIP]
 > コード分析の警告がエラーとして扱われないようにするには、「[Code analysis FAQ](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)」(コード分析の FAQ) を参照してください。
 
-## <a name="output"></a>Output
+## <a name="output"></a>出力
 
 次の設定は、ビルド処理の出力オプションを構成するために使用します。
 
-**[出力パス]**
+**出力パス**
 
 このプロジェクト構成の出力ファイルの場所を指定します。 このボックスにビルド出力のパスを入力するか、 **[参照]** をクリックし、パスを指定します。 このパスは相対パスです。絶対パスを入力しても、相対パスとして保存されます。 既定のパスは bin\Debug または bin\Release\\ です。
 
@@ -135,7 +137,7 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 **COM の相互運用機能に登録**
 
-マネージド アプリケーションにより、COM オブジェクトがマネージド アプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) が公開されることを示します。 **[COM 相互運用機能の登録]** プロパティを使用できるようにするには、このアプリケーションの**プロジェクト デザイナー**の [[アプリケーション]](../../ide/reference/application-page-project-designer-visual-basic.md) ページで **[出力の種類]** プロパティを **[クラス ライブラリ]** に設定する必要があります。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] アプリケーションに追加して、COM オブジェクトとして公開するクラスの例については、「[Example COM Class](/dotnet/csharp/programming-guide/interop/example-com-class)」(COM クラスの例) を参照してください。
+マネージド アプリケーションにより、COM オブジェクトがマネージド アプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) が公開されることを示します。 **[COM 相互運用機能の登録]** プロパティを使用できるようにするには、このアプリケーションの **プロジェクト デザイナー** の [[アプリケーション]](../../ide/reference/application-page-project-designer-visual-basic.md) ページで **[出力の種類]** プロパティを **[クラス ライブラリ]** に設定する必要があります。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] アプリケーションに追加して、COM オブジェクトとして公開するクラスの例については、「[Example COM Class](/dotnet/csharp/programming-guide/interop/example-com-class)」(COM クラスの例) を参照してください。
 
 **シリアル化アセンブリの生成**
 
@@ -145,7 +147,7 @@ TRACE をアプリケーションのすべてのソース コード ファイル
 
 クリックすると、[[ビルドの詳細設定] ダイアログ ボックス (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) ダイアログ ボックスが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)

@@ -1,5 +1,7 @@
 ---
 title: リポジトリを複製する
+description: Visual Studio Tools for AI を使用して、Python コードのリポジトリを複製し、そこからプロジェクトを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb3aa4a7aa9818f42f99860956e0e2ae73b2b7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371587"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099246"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio で Python コードのリポジトリを複製する
 
@@ -34,11 +36,11 @@ ms.locfileid: "85371587"
     > [!Tip]
     > チーム エクスプローラーで指定したフォルダーは、複製されたファイルを受け取る特定のフォルダーです。 `git clone` コマンドとは異なり、チーム エクスプローラーで複製を作成しても、リポジトリの名前のサブフォルダーは自動作成されません。
 
-5. 複製が完了したら、チーム エクスプローラーの下のリポジトリ フォルダーをダブルクリックして、リポジトリのダッシュボードに移動します。 **[ソリューション]** の下で **[新規]** を選択します。
+5. 複製が完了したら、チーム エクスプローラーの下のリポジトリ フォルダーをダブルクリックして、リポジトリのダッシュボードに移動します。 **[ソリューション]** の **[新規作成]** を選択します。
 
     ![[チーム エクスプローラー] ウィンドウ、複製からの新しいプロジェクトの作成](media/create-project-repo/team-explorer-new-project.png)
 
-6. 表示された **[新しいプロジェクト]** ダイアログで、 **[既存の Python コードから]** を選択し、プロジェクトの名前を指定して、 **[場所]** をリポジトリと同じフォルダーに設定し、 **[OK]** を選択します。 表示されたウィザードで、 **[完了]** を選択します。
+6. 表示された **[新しいプロジェクト]** ダイアログで、 **[既存の Python コードから]** を選択し、プロジェクトの名前を指定して、 **[場所]** をリポジトリと同じフォルダーに設定し、 **[OK]** を選択します。 表示されたウィザードで、 **[完了]** をクリックします。
 
 7. メニューから **[表示]、[ソリューション エクスプローラー]** を選択します。
 

@@ -1,5 +1,6 @@
 ---
 title: Unity アプリを使用したアプリケーション ライフサイクル管理 (ALM) | Microsoft Docs
+description: Unity アプリを使用したアプリケーション ライフサイクル管理 (ALM) を理解します。 アジャイル ツールを確認し、モデリング、コーディング、ビルド、テストを行って、コード品質を向上させます。
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509043"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039925"
 ---
 # <a name="devops-with-unity-apps"></a>Unity アプリを使用した DevOps
 
@@ -26,7 +27,7 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 ## <a name="agile-tools"></a>アジャイル ツール
 
-参照リンク:[アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Azure Boards または TFS (Team Explorer Everywhere など) を使用)
+参照リンク:[アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (Azure Boards または TFS (Team Explorer Everywhere など) を使用)
 
 一般的なコメント: すべての計画機能と追跡機能は、プロジェクトの種類とコーディング言語には依存しません。
 
@@ -59,8 +60,8 @@ Visual Studio、Azure DevOps Services、Team Foundation Server は、さまざ�
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
-|[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) または Azure Repos を使用する|はい|Unity プロジェクトは、単に他のプロジェクトのように、バージョン管理システムに配置することができる複数のファイルですが、この表の下に記載したいくつかの特別な考慮事項があります。|
-|[Azure Repos で Git を使用した作業の開始](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|はい|表の下の注を参照してください。|
+|[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) または Azure Repos を使用する|はい|Unity プロジェクトは、単に他のプロジェクトのように、バージョン管理システムに配置することができる複数のファイルですが、この表の下に記載したいくつかの特別な考慮事項があります。|
+|[Azure Repos で Git を使用した作業の開始](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|はい|表の下の注を参照してください。|
 |[コード品質の向上](../test/improve-code-quality.md)|はい||
 |[コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)|はい||
 |[コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)|はい||
@@ -75,12 +76,12 @@ Unity を使ったバージョン管理に関する注意事項:
 
 ## <a name="build"></a>ビルド
 
-参照リンク: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+参照リンク: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|
 |内部設置型 Team Foundation Server (TFS)|可能|Unity プロジェクトは、Visual Studio が構築したシステムではなく、Unity の環境内で構築されています (Visual Studio Tools for Unity 内で構築すると、スクリプトはコンパイルしますが、実行可能ファイルを生成しません)。 [コマンド ラインから Unity プロジェクトをビルド](https://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity ドキュメント) できるため、Unity 自体がそのコンピューターにインストールされている場合は、TFS サーバーで MSBuild プロセスを構成して、適切な Unity コンポーネントを実行できます。<br /><br /> また、Unity は、[Unity クラウド構築](https://build.cloud.unity3d.com/landing/)も提供し、Git または SVN リポジトリを監視して、定期的なビルドを実行します。 現時点では、これは TFVC または Azure DevOps Services では機能しません。|
-|Azure DevOps Services にリンクされたオンプレミスのビルド サーバー|可能|上記と同じ状態の場合、Azure DevOps Services でトリガーされたビルドを指して、オンプレミスの TFS のコンピューターを使用することがさらに可能になります。 手順については、「[Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts)」 (ビルド エージェントとリリース エージェント) を参照してください。|
+|Azure DevOps Services にリンクされたオンプレミスのビルド サーバー|可能|上記と同じ状態の場合、Azure DevOps Services でトリガーされたビルドを指して、オンプレミスの TFS のコンピューターを使用することがさらに可能になります。 手順については、「[Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true)」 (ビルド エージェントとリリース エージェント) を参照してください。|
 |Azure DevOps Services のホスト コントローラー サービス|いいえ|Unity ビルドは現在サポートされていません。|
 |事前スクリプトと事後スクリプトによるビルド定義|はい|Unity のコマンドラインを使用してビルドを実行するカスタムのビルド定義は、ビルド前およびビルド後のスクリプトに対して構成することもできます。|
 |継続的な統合 (ゲート チェックインを含む)|はい|Git としての TFVC へのゲート チェックインのみ、チェックイン モデルではなく、プル要求モデルで機能します。|
@@ -110,7 +111,7 @@ Unity を使ったバージョン管理に関する注意事項:
 
 ## <a name="release-management"></a>リリース管理
 
-参照リンク:[Azure Pipelines および TFS でのビルドとリリース](/azure/devops/pipelines/overview?view=vsts)
+参照リンク:[Azure Pipelines および TFS でのビルドとリリース](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |機能|Unity でサポートされているかどうか|その他のコメント|
 |-------------|--------------------------|-------------------------|

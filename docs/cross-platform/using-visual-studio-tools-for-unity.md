@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity を使用する | Microsoft Docs
+description: Visual Studio Tools for Unity の統合と生産性の機能を使用する方法について説明します。 また、Unity 開発用の Visual Studio デバッガーも使用します。
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d8a0db05788682bf08f9899cebb517370a1627b6
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: d6bf19060d029ee20b4c5c06d594e3b16cb391a3
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508965"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039860"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 
@@ -33,7 +34,7 @@ Visual Studio を [Unity の外部スクリプト エディターとして設定
 
 Visual Studio から簡単に Unity スクリプトに関するドキュメントにアクセスできます。 Visual Studio Tools for Unity は、ローカルの API ドキュメントを見つけられない場合、ドキュメントをオンラインで検索することを試みます。
 
-- Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、**Ctrl**+**Alt**+**M** キー、**Ctrl**+**H** キーの順に押します。
+- Visual Studio で、情報を必要とする Unity API を選択するか、その上にカーソルを置き、 **Ctrl**+**Alt**+**M** キー、 **Ctrl**+**H** キーの順に押します。
 
 ## <a name="intellisense-for-unity-api-messages"></a>Unity API メッセージ用の IntelliSense
 
@@ -43,13 +44,13 @@ IntelliSense コード補完により、MonoBehaviour スクリプト内に Unit
 
 2. Unity メッセージの名前 (`OnTriggerEnter` など) の入力を始めます。
 
-3. 「**ontri**」まで入力すると、IntelliSense による候補の一覧が表示されます。
+3. 「 **ontri** 」まで入力すると、IntelliSense による候補の一覧が表示されます。
 
    ![Using IntelliSense](media/vstu_intellisense1.png)
 
 4. 一覧での選択は、次の 3 つの方法で変更できます。
 
-    - **上**および**下**方向キーを使います。
+    - **上** および **下** 方向キーを使います。
 
     - 目的の項目をマウスでクリックします。
 
@@ -71,7 +72,7 @@ MonoBehavior ウィザードを使用して、Unity API のすべてのメソッ
 
 MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定義を作成するには:
 
-1. Visual Studio で、メソッドの挿入位置にカーソルを合わせてから、**Ctrl**+**Shift**+**M** キーを押して MonoBehavior ウィザードを起動します。
+1. Visual Studio で、メソッドの挿入位置にカーソルを合わせてから、 **Ctrl**+**Shift**+**M** キーを押して MonoBehavior ウィザードを起動します。
 
 2. **[スクリプト メソッドの作成]** ウィンドウで、追加する各メソッドの名前の横にあるチェック ボックスをオンにします。
 
@@ -91,7 +92,7 @@ MonoBehavior ウィザードを使用して空の MonoBehavior メソッド定�
 
 Unity Project Explorer にはすべての Unity プロジェクト ファイルとディレクトリが、Unity エディターで表示されるのと同じ方法で表示されます。 これは、通常の Visual Studio ソリューション エクスプローラーを使用して Unity スクリプト間を移動するのとは異なります。そこではそれらが Visual Studio によって生成されるプロジェクトとソリューションに編成されます。
 
-- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット:**Alt**+**Shift**+**E**
+- Visual Studio のメイン メニューで、 **[表示] > [Unity プロジェクト エクスプローラー]** を選択します。 キーボード ショートカット: **Alt**+**Shift**+**E**
 
    ![Unity プロジェクト エクスプ ローラー ウィンドウを表示します。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -125,7 +126,7 @@ Visual Studio でのデバッグの詳細については、「[First look at the
 
 さらに使いやすくするために、 **[Unity にアタッチ]** ボタンを **[Unity にアタッチして再生]** モードに変更できます。
 
-1. **[Unity にアタッチ]** ボタンの横の小さな**下向き矢印**をクリックします。
+1. **[Unity にアタッチ]** ボタンの横の小さな **下向き矢印** をクリックします。
 
 1. ドロップダウン メニューから **[Unity にアタッチして再生]** を選択します。
 

@@ -15,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425395"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136915"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 
-MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
+MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、 *Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
 
 ## <a name="common-items"></a>共通の項目
 
@@ -81,9 +81,15 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 |項目メタデータの名前|説明|
 |---------------|-----------------|
 |名前|省略可能な文字列。 参照の表示名を指定します。|
+|GlobalPropertiesToRemove|`string[]` で、省略可能です。 参照プロジェクトのビルド時に削除するプロパティの名前。たとえば、`RuntimeIdentifier;PackOnBuild`。 既定値は空です。|
 |Project|省略可能な文字列。 参照の GUID を {12345678-1234-1234-1234-1234567891234} の形式で指定します。|
-|Package|省略可能な文字列。 参照されるプロジェクト ファイルのパスを指定します。|
+|OutputItemType|省略可能な文字列。 ターゲット出力の出力先となる項目の種類。 既定値は空白です。 参照メタデータが "true" (既定値) に設定されている場合、ターゲット出力はコンパイラの参照になります。|
 |ReferenceOutputAssembly|省略可能なブール値。 `false` を設定した場合、このプロジェクトの [Reference](#reference) として参照されたプロジェクトの出力は含まれませんが、このプロジェクトをビルドする前の他のプロジェクトのビルドは保証されます。 既定値は `true` です。|
+|SetConfiguration|省略可能な文字列。 参照プロジェクトのグローバル プロパティ `Configuration` を設定します。たとえば、`Configuration=Release` です。|
+|SetPlatform|省略可能な文字列。 参照プロジェクトのグローバル プロパティ `Platform` を設定します。たとえば、`Platform=AnyCPU` です。|
+|SetTargetFramework|省略可能な文字列。 参照プロジェクトのグローバル プロパティ `TargetFramework` を設定します。たとえば、`TargetFramework=netstandard2.0` です。|
+|SkipGetTargetFrameworkProperties|省略可能なブール値。 `true` の場合、最も互換性のある `TargetFramework` 値をネゴシエートせずに参照プロジェクトをビルドします。 既定値は `false` です。|
+|対象サーバー|`string[]` で、省略可能です。 ビルドする参照プロジェクトのターゲットをセミコロンで区切って一覧にしたもの。 既定は `$(ProjectReferenceBuildTargets)` の値であり、指定しないと空になり、既定のターゲットを示します。|
 
 ### <a name="compile"></a>Compile
 
@@ -94,7 +100,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | DependentUpon | 省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。 |
 | AutoGen | 省略可能なブール値。 Visual Studio 統合開発環境 (IDE) によってプロジェクト用にファイルが生成されたかどうかを示します。 |
 | Link | 省略可能な文字列。 プロジェクト ファイルの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
-| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
+| Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
@@ -108,7 +114,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | LastGenOutput | 必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。 |
 | CustomToolNamespace | 必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。 |
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
-| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
+| Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 | LogicalName | 必須の文字列。 埋め込まれるリソースの論理名です。 |
 
@@ -125,7 +131,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
 | PublishState | 必須の文字列。 コンテンツの発行状態を示すもので、以下のいずれかの値を取ります。<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite |
 | IsAssembly | 省略可能なブール値。 ファイルがアセンブリであるかどうかを指定します。 |
-| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
+| Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="none"></a>None
@@ -139,7 +145,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | LastGenOutput | 必須の文字列。 この項目に対して実行された任意のファイル ジェネレーターによって作成されたファイルの名前です。 |
 | CustomToolNamespace | 必須の文字列。 名前空間を指定します。指定した名前空間で、この項目に対して実行する任意のファイル ジェネレーターによってコードが作成されます。 |
 | Link | 省略可能な文字列。 プロジェクトの影響が及ばない物理的な場所にファイルが配置されるときに表示される表記パスです。 |
-| Visible | 省略可能なブール値。 Visual Studio の**ソリューション エクスプローラー**にファイルを表示するかどうかを示します。 |
+| Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="assemblymetadata"></a>AssemblyMetadata

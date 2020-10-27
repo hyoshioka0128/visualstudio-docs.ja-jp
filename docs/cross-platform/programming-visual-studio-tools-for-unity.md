@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity のプログラミング | Microsoft Docs
+description: Visual Studio Tools for Unity (VSTU) API を使用したプログラミングの例を確認します。 VSTU によって作成されたプロジェクト ファイルをカスタマイズします。 Unity のログ コールバックを VSTU と共有します。
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0372cfd110df77867a683b27b17f92cd70ba75aa
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62818216"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039886"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity をプログラミングする
 このセクションでは、Visual Studio Tools for Unity API を使用するための例が示されています。

@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76826472"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136837"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
 
@@ -66,9 +66,6 @@ MSBuild 15.0 では、"プロジェクト SDK" という概念が導入されま
     </Project>
     ```
 
-    > [!NOTE]
-    > これは、現時点では、Visual Studio for Mac でプロジェクト SDK を参照するためにサポートされている唯一の方法です。
-
 - 最上位の `<Sdk/>` 要素を使用する:
 
     ```xml
@@ -107,7 +104,7 @@ MSBuild 15.0 では、"プロジェクト SDK" という概念が導入されま
 
    このリゾルバーは、オプションのバージョンを指定した場合にのみアクティブになります。 任意のカスタム プロジェクト SDK に使用できます。
    
-- .NET CLI リゾルバー。[.NET CLI](/dotnet/core/tools/) と共にインストールされた SDK を解決します。
+- .NET SDK リゾルバー。[.NET SDK](/dotnet/core/sdk/) と共にインストールされた MSBuild SDK を解決します。
 
    このリゾルバーにより、製品の一部である `Microsoft.NET.Sdk` や `Microsoft.NET.Sdk.Web` などのプロジェクト SDK の場所が特定されます。
    
@@ -124,9 +121,9 @@ NuGet ベースの SDK リゾルバーでは、[global.json](/dotnet/core/tools/
 }
 ```
 
-ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。 同じプロジェクト SDK の 2 つの異なるバージョンを参照すると、MSBuild から警告が生成されます。 *global.json* ファイルでバージョンが指定されている場合は、プロジェクトでバージョンを指定**しない**ことをお勧めします。
+ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。 同じプロジェクト SDK の 2 つの異なるバージョンを参照すると、MSBuild から警告が生成されます。 *global.json* ファイルでバージョンが指定されている場合は、プロジェクトでバージョンを指定 **しない** ことをお勧めします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [ビルドのカスタマイズ](../msbuild/customize-your-build.md)

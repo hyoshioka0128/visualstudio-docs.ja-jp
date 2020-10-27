@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740033"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927901"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript コードのコンパイル (Node.js)
 
@@ -35,7 +35,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
    ソリューション エクスプローラー (右側のペイン) から、プロジェクトのルートにある *package.json* を開きます。 一覧表示されるパッケージは、ソリューション エクスプローラーの npm ノードの下にあるパッケージと対応しています。 詳細については、[npm パッケージの管理](../javascript/npm-package-management.md)に関するページを参照してください。
 
-   Node.js プロジェクトの場合は、コマンド ラインまたは IDE を使用して TypeScript npm パッケージをインストールできます。 IDE を使用してインストールするには、ソリューション エクスプローラーで npm ノードを右クリックして **[Install New npm package]\(新しい npm パッケージをインストールする\)** を選択し、「**TypeScript**」を検索して、パッケージをインストールします。
+   Node.js プロジェクトの場合は、コマンド ラインまたは IDE を使用して TypeScript npm パッケージをインストールできます。 IDE を使用してインストールするには、ソリューション エクスプローラーで npm ノードを右クリックして **[Install New npm package]\(新しい npm パッケージをインストールする\)** を選択し、「 **TypeScript** 」を検索して、パッケージをインストールします。
 
    **[出力]** ウィンドウの **[npm]** オプションをオンにして、パッケージのインストールの進行状況を確認します。 インストールされたパッケージは、ソリューション エクスプローラーの **npm** ノードの下に表示されます。
 
@@ -72,7 +72,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
 ## <a name="build-the-application"></a>アプリケーションのビルド
 
-1. TypeScript ( *.ts*) ファイルまたは TypeScript JSX ( *.tsx*) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
+1. TypeScript ( *.ts* ) ファイルまたは TypeScript JSX ( *.tsx* ) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
 
    ```typescript
    let message: string = 'Hello World';
@@ -88,7 +88,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
    },
    ```
 
-   webpack などのサード パーティ製ツールを使用してビルドする必要がある場合は、*package.json* ファイルにコマンド ライン ビルド スクリプトを追加できます。
+   webpack などのサード パーティ製ツールを使用してビルドする必要がある場合は、 *package.json* ファイルにコマンド ライン ビルド スクリプトを追加できます。
 
    ```json
    "scripts": {
@@ -109,9 +109,13 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-   ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された \*.js ファイルと生成された \*js.map ファイルが見つかります。
+   ソース マップを生成した場合は、 *outDir* オプションで指定したフォルダーを開くと、生成された \*.js ファイルと生成された \*js.map ファイルが見つかります。
 
    ソース マップ ファイルは[デバッグ](../javascript/debug-nodejs.md)で必要となります。
+
+### <a name="run-the-application"></a>アプリケーションの実行
+
+アプリをコンパイルした後に実行する手順については、[初めての Node.js アプリの作成](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)に関するページを参照してください。
 
 ## <a name="automate-build-tasks"></a>ビルド タスクの自動化
 

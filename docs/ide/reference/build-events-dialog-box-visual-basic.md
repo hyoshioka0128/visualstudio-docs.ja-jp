@@ -1,5 +1,7 @@
 ---
 title: '[ビルド イベント] ダイアログ ボックス (Visual Basic)'
+description: '[ビルド イベント] ダイアログ ボックスを使用して、ビルド構成の手順や、ビルド前またはビルド後のイベントを実行する条件を指定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 42b7837dd5253d29ecbd0085ae6159a981fcf15c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68461446"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136642"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>[ビルド イベント] ダイアログ ボックス (Visual Basic)
 
@@ -37,7 +39,7 @@ ms.locfileid: "68461446"
 
 **ビルド後に実行するコマンド ライン**
 
-ビルド終了後に実行する任意のコマンドを指定します。 長いコマンドを入力するには、 **[ビルド後の編集]** をクリックして **[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス**を表示します。
+ビルド終了後に実行する任意のコマンドを指定します。 長いコマンドを入力するには、 **[ビルド後の編集]** をクリックして **[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス** を表示します。
 
 > [!NOTE]
 > .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
@@ -52,7 +54,7 @@ ms.locfileid: "68461446"
 |**ビルドが成功したとき**|ビルド後イベントは、ビルドが成功した場合に実行されます。 このため、ビルドが成功した場合は、最新のプロジェクトについてもイベントが実行されます。 これが既定の設定です。|
 |**ビルドがプロジェクト出力を更新したとき**|ビルド後イベントは、コンパイラの出力ファイル (.exe または .dll) が以前のコンパイラの出力ファイルと異なる場合にだけ実行されます。 ビルド後イベントは、プロジェクトが最新の場合は実行されません。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)

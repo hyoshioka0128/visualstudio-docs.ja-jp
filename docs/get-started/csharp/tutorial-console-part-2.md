@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507957"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197479"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>チュートリアル: シンプルな C# コンソール アプリを拡張する
 
@@ -32,17 +32,17 @@ ms.locfileid: "88507957"
 
 実際のコードでは、1 つのソリューション内で多くのプロジェクトを連携させる必要があります。 ここで、電卓アプリに別のプロジェクトを追加してみましょう。 これは、一部の電卓関数を備えたクラス ライブラリとなります。
 
-1. Visual Studio では、トップレベルのメニュー コマンド **[ファイル]**  >  **[追加]**  >  **[新しいプロジェクト]** を使用して新しいプロジェクトを追加することができますが、既存のプロジェクト名 ("プロジェクト ノード" と呼ばれます) を右クリックし、プロジェクトのショートカット メニュー (またはコンテキスト メニュー) を開くこともできます。 このショートカット メニューでは、さまざまな方法でご自分のプロジェクトに機能を追加することができます。 そのため、**ソリューション エクスプローラー**でご自分のプロジェクト ノードを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
+1. Visual Studio では、トップレベルのメニュー コマンド **[ファイル]**  >  **[追加]**  >  **[新しいプロジェクト]** を使用して新しいプロジェクトを追加することができますが、既存のプロジェクト名 ("プロジェクト ノード" と呼ばれます) を右クリックし、プロジェクトのショートカット メニュー (またはコンテキスト メニュー) を開くこともできます。 このショートカット メニューでは、さまざまな方法でご自分のプロジェクトに機能を追加することができます。 そのため、 **ソリューション エクスプローラー** でご自分のプロジェクト ノードを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
 1. C# プロジェクト テンプレート **[クラス ライブラリ (.NET Standard)]** を選択します。
 
    ![[クラス ライブラリ] プロジェクト テンプレートの選択のスクリーンショット](media/vs-2019/calculator2-add-project-dark.png)
 
-1. [プロジェクト名] として「**CalculatorLibrary**」と入力し、 **[作成]** を選択します。 Visual Studio によって、新しいプロジェクトが作成され、ソリューションに追加されます。
+1. [プロジェクト名] として「 **CalculatorLibrary** 」と入力し、 **[作成]** を選択します。 Visual Studio によって、新しいプロジェクトが作成され、ソリューションに追加されます。
 
    ![CalculatorLibrary クラス ライブラリ プロジェクトが追加されているソリューション エクスプローラーのスクリーンショット。](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. *Class1.cs* を使用するのでなく、ファイルの名前を **CalculatorLibrary.cs** に変更します。 **ソリューション エクスプローラー**内で該当する名前をクリックして名前を変更するか、右クリックして **[名前変更]** を選択するか、または **F2** キーを押します。
+1. *Class1.cs* を使用するのでなく、ファイルの名前を **CalculatorLibrary.cs** に変更します。 **ソリューション エクスプローラー** 内で該当する名前をクリックして名前を変更するか、右クリックして **[名前変更]** を選択するか、または **F2** キーを押します。
 
    ファイル内の `Class1` への参照名を変更するかどうかを確認するメッセージが表示される場合があります。 後の手順でコードを置き換えるので、どのように答えてもかまいません。
 
@@ -54,11 +54,11 @@ ms.locfileid: "88507957"
 
    ![[参照マネージャー] ダイアログ ボックスのスクリーンショット](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. **[参照マネージャー]** ダイアログ ボックスで、 **[CalculatorLibrary]** プロジェクトのチェックボックスをオンにして、 **[OK]** を選択します。  プロジェクト参照は、**ソリューション エクスプローラー**で **[プロジェクト]** ノードの下に表示されます。
+1. **[参照マネージャー]** ダイアログ ボックスで、 **[CalculatorLibrary]** プロジェクトのチェックボックスをオンにして、 **[OK]** を選択します。  プロジェクト参照は、 **ソリューション エクスプローラー** で **[プロジェクト]** ノードの下に表示されます。
 
    ![プロジェクト参照が表示されているソリューション エクスプローラーのスクリーンショット](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. *Program.cs* 内で、`Calculator` クラスとそのコード全体を選択し、**CTRL + X** キーを押して Program.cs からそれを切り取ります。 次に、**CalculatorLibrary** にある *CalculatorLibrary.cs* の `CalculatorLibrary` 名前空間にコードを貼り付けます。 次に、Calculator クラスを `public` にして、ライブラリの外部に公開します。 *CalculatorLibrary.cs* 内のコードは、次のコードのようになります。
+1. *Program.cs* 内で、`Calculator` クラスとそのコード全体を選択し、 **CTRL + X** キーを押して Program.cs からそれを切り取ります。 次に、 **CalculatorLibrary** にある *CalculatorLibrary.cs* の `CalculatorLibrary` 名前空間にコードを貼り付けます。 次に、Calculator クラスを `public` にして、ライブラリの外部に公開します。 *CalculatorLibrary.cs* 内のコードは、次のコードのようになります。
 
    ```csharp
    using System;
@@ -120,9 +120,10 @@ ms.locfileid: "88507957"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>.NET ライブラリを参照する: ログに書き込む
 
-1. ここで、すべての操作に関するログを追加し、それをテキスト ファイルに書き込むとします。 .NET `Trace` クラスによって、この機能が提供されます (これは基本的な出力デバッグ手法にも役立ちます)。Trace クラスは System.Diagnostics に含まれているので、まず using ディレクティブを追加します。
+1. ここで、すべての操作に関するログを追加し、それをテキスト ファイルに書き込むとします。 .NET `Trace` クラスによって、この機能が提供されます (これは基本的な出力デバッグ手法にも役立ちます)。Trace クラスは System.Diagnostics にあります。また、`StreamWriter` のような System.IO クラスが必要になるため、まず、using ディレクティブを追加します。
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -192,7 +193,7 @@ ms.locfileid: "88507957"
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. プログラムをもう一度実行します。完了したら、プロジェクト ノードを右クリックし、 **[エクスプローラーでフォルダーを開く]** を選択して、エクスプローラーを下方の出力フォルダーまで移動します。 それは *bin/Debug/netcoreapp3.1* である可能性があります。*calculator.log* ファイルを開きます。
+1. プログラムをもう一度実行します。完了したら、プロジェクト ノードを右クリックし、 **[エクスプローラーでフォルダーを開く]** を選択して、エクスプローラーを下方の出力フォルダーまで移動します。 それは *bin/Debug/netcoreapp3.1* である可能性があります。 *calculator.log* ファイルを開きます。
 
     ```output
     Starting Calculator Log
@@ -203,7 +204,7 @@ ms.locfileid: "88507957"
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>NuGet パッケージを追加する: JSON ファイルに書き込む
 
-1. ここで、操作を JSON 形式で出力するとします。これは、オブジェクト データを格納するための一般的で移植可能な形式です。 その機能を実装するには、NuGet パッケージ Newtonsoft.Json を参照する必要があります。 NuGet パッケージは、.NET クラス ライブラリを配布するための主要な手段です。 **ソリューション エクスプローラー**で、CalculatorLibrary プロジェクトの **[参照]** ノードを右クリックし、 **[NuGet パッケージの管理]** を選択します。
+1. ここで、操作を JSON 形式で出力するとします。これは、オブジェクト データを格納するための一般的で移植可能な形式です。 その機能を実装するには、NuGet パッケージ Newtonsoft.Json を参照する必要があります。 NuGet パッケージは、.NET クラス ライブラリを配布するための主要な手段です。 **ソリューション エクスプローラー** で、CalculatorLibrary プロジェクトの **[参照]** ノードを右クリックし、 **[NuGet パッケージの管理]** を選択します。
 
    ![ショートカット メニューの [NuGet パッケージの管理] のスクリーンショット](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -215,9 +216,9 @@ ms.locfileid: "88507957"
 
    ![Newtonsoft NuGet パッケージ情報のスクリーンショット](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
-   そのパッケージがダウンロードされ、ご自分のプロジェクトに追加されます。**ソリューション エクスプローラー**内の [参照] ノードに新しいエントリが表示されます。
+   そのパッケージがダウンロードされ、ご自分のプロジェクトに追加されます。 **ソリューション エクスプローラー** 内の [参照] ノードに新しいエントリが表示されます。
 
-1. *CalculatorLibrary.cs* の先頭に Newtonsoft.Json パッケージ用の using ディレクティブを追加します。
+1. *CalculatorLibrary.cs* の先頭に System.IO と Newtonsoft.Json パッケージ用の using ディレクティブを追加します。
 
    ```csharp
    using Newtonsoft.Json;
@@ -298,7 +299,7 @@ ms.locfileid: "88507957"
     }
    ```
 
-1. さらに、*Program.cs* 内で、最後に Finish への呼び出しを追加します。
+1. さらに、 *Program.cs* 内で、最後に Finish への呼び出しを追加します。
 
    ```csharp
             // And call to close the JSON writer before return
@@ -307,7 +308,7 @@ ms.locfileid: "88507957"
         }
    ```
 
-1. アプリをビルドして実行します。いくつかの操作を入力したら、'n' コマンドを使用してアプリを適切に閉じます。  ここで、consolelog.json ファイルを開くと、次のような内容が表示されます。
+1. アプリをビルドして実行します。いくつかの操作を入力したら、'n' コマンドを使用してアプリを適切に閉じます。  ここで、calculatorlog.json ファイルを開くと、次のような内容が表示されます。
 
    ```json
    {

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006216"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298175"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
@@ -33,10 +33,10 @@ ms.locfileid: "91006216"
 
 1. サブスクリプション割り当ての電子メールに記載されているサインイン アドレスを使用して、 https://my.visualstudio.com/subscriptions にサインインします。
 
-2. ページの右上に示されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  そうでない場合は、UPN が不一致になっており、サブスクリプションを表示することはできません。 
+2. ページの右上隅にある自分の名前をクリックします。  プロファイルが開きます。  プロファイルに記載されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  そうでない場合は、UPN が不一致になっており、サブスクリプションを表示することはできません。 
 
 > [!div class="mx-imgBorder"]
-> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png "右上に表示されるメール アドレスをサインインに使用するアドレスに必ず一致させます。")
+> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png "プロファイルに表示されるメール アドレスをサインインに使用するアドレスに必ず一致させます。")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>UPN の不一致を修正する方法
 
@@ -64,7 +64,7 @@ Visual Studio サブスクリプション ポータルへのサインインに�
 
 Visual Studio プラットフォームでは、サブスクリプションの詳細を表示するためのプライマリ エイリアスが優先されます。 
 
-1. **Microsoft にサインインする方法の管理**に移動します。 メッセージが表示されたら Microsoft アカウントにサインインします。 
+1. **Microsoft にサインインする方法の管理** に移動します。 メッセージが表示されたら Microsoft アカウントにサインインします。 
 
 2. [アカウント エイリアス] で、サブスクリプションの割り当てに使用する電子メール アドレスの横にある **[プライマリにする]** を選択します。 
 

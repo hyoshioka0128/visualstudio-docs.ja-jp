@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: アプリケーションを構築する'
+description: Visual Studio を使用してアプリケーションをビルドする場合に構成できるいくつかのオプションについて理解を深めます。
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115397"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136616"
 ---
 # <a name="walkthrough-build-an-application"></a>チュートリアル: アプリケーションを構築する
 
@@ -37,7 +39,7 @@ ms.locfileid: "76115397"
 
 1. **[アクティブ ソリューション構成]** 一覧の **\<New...\>** をクリックします。
 
-1. **[新しいソリューション構成]** ダイアログ ボックスで、新しい構成の名前として「`Test`」と入力し、既存の**デバッグ**構成から設定をコピーして、 **[OK]** を選びます。
+1. **[新しいソリューション構成]** ダイアログ ボックスで、新しい構成の名前として「`Test`」と入力し、既存の **デバッグ** 構成から設定をコピーして、 **[OK]** を選びます。
 
    ![[新しいソリューション構成] ダイアログ ボックス](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
@@ -49,7 +51,7 @@ ms.locfileid: "76115397"
 
 1. **[OK]** を選択します。
 
-   アクティブなソリューション構成が**テスト**に変更され、アクティブなソリューション プラットフォームが x64 に設定されました。
+   アクティブなソリューション構成が **テスト** に変更され、アクティブなソリューション プラットフォームが x64 に設定されました。
 
    ![テスト構成を使用した構成マネージャー](../ide/media/buildwalk_configmanagertestconfig.png)
 
@@ -65,7 +67,7 @@ ms.locfileid: "76115397"
 
 ### <a name="build-the-solution"></a>ソリューションをビルドする
 
-- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、**Ctrl**+**Shift**+**B** キーを押します。
+- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、 **Ctrl**+**Shift**+**B** キーを押します。
 
     **[出力]** ウィンドウに、ビルドの結果が表示されます。 ビルドに成功しました。
 
@@ -73,11 +75,11 @@ ms.locfileid: "76115397"
 
 次に、コンパイラに警告を生成させるコードを紹介します。
 
-1. C# プロジェクトで、*ExpenseReportPage.xaml.cs* ファイルを開きます。 **ExpenseReportPage** メソッドにコード `int i;` を追加します。
+1. C# プロジェクトで、 *ExpenseReportPage.xaml.cs* ファイルを開きます。 **ExpenseReportPage** メソッドにコード `int i;` を追加します。
 
     OR
 
-    Visual Basic プロジェクトで、*ExpenseReportPage.xaml.vb* ファイルを開きます。 カスタム コンストラクターの **Public Sub New...** にコード `Dim i` を追加します。
+    Visual Basic プロジェクトで、 *ExpenseReportPage.xaml.vb* ファイルを開きます。 カスタム コンストラクターの **Public Sub New...** にコード `Dim i` を追加します。
 
 1. ソリューションをビルドします。
 
@@ -91,11 +93,11 @@ ms.locfileid: "76115397"
 
 ### <a name="hide-a-specific-c-warning"></a>C# の特定の警告を非表示にする
 
-1. **ソリューション エクスプローラー**で、最上位のプロジェクト ノードを選択します。
+1. **ソリューション エクスプローラー** で、最上位のプロジェクト ノードを選択します。
 
 1. メニュー バーで **[表示]**  >  **[プロパティ ページ]** の順に選びます。
 
-     **プロジェクト デザイナー**が開きます。
+     **プロジェクト デザイナー** が開きます。
 
 1. **[ビルド]** ページを選択し、 **[警告の表示なし]** ボックスで、警告番号 **0168** を指定します。
 
@@ -111,11 +113,11 @@ ms.locfileid: "76115397"
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Visual Basic のすべてのビルド警告を非表示にする
 
-1. **ソリューション エクスプローラー**で、最上位のプロジェクト ノードを選択します。
+1. **ソリューション エクスプローラー** で、最上位のプロジェクト ノードを選択します。
 
 2. メニュー バーで **[表示]**  >  **[プロパティ ページ]** の順に選びます。
 
-     **プロジェクト デザイナー**が開きます。
+     **プロジェクト デザイナー** が開きます。
 
 3. **[コンパイル]** ページで、 **[すべての警告を表示しない]** チェック ボックスをオンにします。
 
@@ -133,7 +135,7 @@ ms.locfileid: "76115397"
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>出力ウィンドウに追加のビルド詳細を表示する
 
-**[出力]** ウィンドウに表示されるビルド プロセスに関する情報量を変更できます。 ビルドの詳細度は、通常、**最小**に設定されています。これは、優先度の高い警告またはエラーと共にビルド プロセスの概要のみが **[出力]** ウィンドウに表示されることを意味します。 ビルドに関する詳細情報を表示するには、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」を参照してください。
+**[出力]** ウィンドウに表示されるビルド プロセスに関する情報量を変更できます。 ビルドの詳細度は、通常、 **最小** に設定されています。これは、優先度の高い警告またはエラーと共にビルド プロセスの概要のみが **[出力]** ウィンドウに表示されることを意味します。 ビルドに関する詳細情報を表示するには、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」を参照してください。
 
 > [!IMPORTANT]
 > 詳細情報を表示する場合は、ビルドの完了までにかかる時間が長くなります。
@@ -154,12 +156,12 @@ ms.locfileid: "76115397"
 
      ビルド情報には、ビルドの開始時刻 (出力の先頭にあります) とファイルが処理された順序が含まれています。 この情報には、ビルド時に Visual Studio で実行される実際のコンパイラ構文も含まれています。
 
-     たとえば、C# のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) オプションには、このトピックで指定した警告コード **0168** が、他の 3 つの警告と共に示されます。
+     たとえば、C# のビルドの場合、 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) オプションには、このトピックで指定した警告コード **0168** が、他の 3 つの警告と共に示されます。
 
      Visual Basic のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) には除外する特定の警告が含まれていないため、警告は表示されません。
 
     > [!TIP]
-    > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、**[出力]** ウィンドウの内容を検索できます。
+    > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、 **[出力]** ウィンドウの内容を検索できます。
 
 詳細については、[ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
@@ -171,7 +173,7 @@ ms.locfileid: "76115397"
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Visual Basic 用にリリース ビルドを指定する
 
-1. **プロジェクト デザイナー**を開きます。
+1. **プロジェクト デザイナー** を開きます。
 
      ![[表示] メニュー、[プロパティ ページ] コマンド](../ide/media/buildwalk_viewpropertypages.png)
 
@@ -194,7 +196,7 @@ ms.locfileid: "76115397"
 
 ### <a name="specify-a-release-build-for-c"></a>C\# 用にリリース ビルドを指定する
 
-1. **プロジェクト デザイナー**を開きます。
+1. **プロジェクト デザイナー** を開きます。
 
      ![[表示] メニュー、[プロパティ ページ] コマンド](../ide/media/buildwalk_viewpropertypages.png)
 
@@ -211,7 +213,7 @@ ms.locfileid: "76115397"
     > [!IMPORTANT]
     > メッセージ ボックスが表示され、指定したネットワーク共有が信頼できる場所ではない可能性があるという警告が示されることがあります。 指定した場所を信頼できる場合は、メッセージ ボックスの **[OK]** をクリックします。
 
-1. **標準ツール バー**で、ソリューション構成を **[リリース]** に、ソリューション プラットフォームを **[x86]** に設定します。
+1. **標準ツール バー** で、ソリューション構成を **[リリース]** に、ソリューション プラットフォームを **[x86]** に設定します。
 
 1. アプリケーションをビルドします。
 

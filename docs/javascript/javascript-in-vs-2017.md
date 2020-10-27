@@ -1,5 +1,7 @@
 ---
 title: JavaScript
+description: Visual Studio IDE で JavaScript コードを記述する場合に、ほとんどの標準的な編集補助機能 (コード スニペット、IntelliSense など) を使用できることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/15/2019
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -12,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739890"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947779"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
@@ -146,7 +148,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 - `package.json` および `bower.json` では、プロジェクトで使用される依存関係がリストされ、既定で自動型取得 (ATA) に含まれます。
 - 最上位レベルの `node_modules` フォルダーにはライブラリ ソース コードが含まれ、そのコンテンツは既定でプロジェクトのコンテキストから除外されます。
-- 他のすべての `.js`、`.jsx`、`.ts`、および `.tsx` ファイルは*独自の*ソース ファイルのいずれかである可能性があり、プロジェクト コンテキストに含める必要があります。
+- 他のすべての `.js`、`.jsx`、`.ts`、および `.tsx` ファイルは *独自の* ソース ファイルのいずれかである可能性があり、プロジェクト コンテキストに含める必要があります。
 
 ほとんどの場合、プロジェクトを開くだけで、既定のプロジェクト構成で優れたエクスペリエンスが得られます。 ただし、大規模なプロジェクトまたはさまざまなフォルダー構造を持つプロジェクトでは、言語サービスをさらに構成し、独自のソース ファイルにのみ、より的確に焦点を合わせることが望ましい場合があります。
 

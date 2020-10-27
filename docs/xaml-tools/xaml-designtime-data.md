@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 6957c1c7d64918e91a95bf569c210c146fec1339
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659475"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298474"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio の XAML デザイナーでデザイン時のデータを使用する
 
@@ -135,6 +135,43 @@ xmlns:models="clr-namespace:Cities.Models"
 [![ListView を使用したデザイン時のデータの実際のモデル](media\xaml-design-time-listview-models.png "ListView を使用したデザイン時のデータの実際のモデル")](media\xaml-design-time-listview-models.png#lightbox)
 
 ここでのベネフィットは、コントロールをモデルのデザイン時の静的なバージョンにバインドできることです。
+
+## <a name="use-design-time-data-with-custom-types-and-properties"></a>カスタム型とプロパティと共にデザイン時データを使用する
+
+この機能は既定では、プラットフォームのコントロールとプロパティでのみ動作します。 このセクションでは、Visual Studio 2019 プレビュー バージョン [16.8](/visualstudio/releases/2019/preview-notes) 以降をご利用のお客様が使える新機能、デザイン時コントロールとして独自のカスタム コントロールを使用できるようにするために必要な手順を確認します。 これを可能にするには、次の 3 つの要件があります。
+
+- カスタム xmlns 名前空間 
+
+    ```xml
+    xmlns:myControls="http://MyCustomControls"
+    ```
+
+- 名前空間のデザイン時バージョン。 これは末尾に /design を追加するだけで達成できます。
+
+     ```xml
+    xmlns:myDesignTimeControls="http://MyCustomControls/design"
+    ```
+
+- mc:Ignorable にデザイン時プレフィックスを追加する
+
+    ```xml
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d myDesignTimeControls"
+    ```
+
+以上の手順をすべて実行したら、`myDesignTimeControls` プレフィックスを使用し、デザイン時コントロールを作成できます。
+
+```xml
+<myDesignTimeControls:MyButton>I am a design time Button</myDesignTimeControls:MyButton>
+```
+
+### <a name="creating-a-custom-xmlns-namespace"></a>カスタム xmlns 名前空間を作成する
+
+WPF .NET Core でカスタム xmlns 名前空間を作成するには、コントロールが入っている CLR 名前空間にカスタム XML 名前空間をマッピングする必要があります。 これを行うには、`AssemblyInfo.cs` ファイルで `XmlnsDefinition` アセンブリレベル属性を追加します。 ファイルはプロジェクトのルート階層にあります。
+
+   ```C#
+[assembly: XmlnsDefinition("http://MyCustomControls", "MyViews.MyButtons")]
+   ```
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

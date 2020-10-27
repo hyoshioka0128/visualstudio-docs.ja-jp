@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの LinkedIn Learning 特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 04/17/2020
+ms.date: 10/06/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006294"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805891"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -71,7 +71,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise (Standard)   | VL、Azure、リテール<sup>1</sup> | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Enterprise with GitHub Enterprise   | VL | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Professional with GitHub Enterprise | VL | 3 か月      | いいえ。  新しいサブスクライバーのみが使用できます         |
@@ -79,7 +79,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              | N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP) が含まれます除外:Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *除外:NFR、Visual Studio Industry Partner、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)。MCT Software & Services は含まれません。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

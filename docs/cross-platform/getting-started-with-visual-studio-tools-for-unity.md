@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Unity の使用を開始する | Microsoft Docs
+description: Visual Studio Tools for Unity の使用を開始します。 Visual Studio をインストールし、Visual Studio で使用できるように Unity を構成して、以前のバージョンのサポートについて説明します。
 ms.custom: ''
 ms.date: 05/11/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 223458a448a4b32c3e9480f7189d5dc636ce8375
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250096"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039452"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の使用を開始する
 
@@ -96,7 +97,7 @@ Unity 2018.1 以降では、Visual Studio を Unity の既定の外部スクリ�
    ![Visual Studio を選ぶ](media/vs-2019/vstu-unity-external-tools.png)
    :::moniker-end
 
-4. **[Browse...]\(参照...\)** を選択した場合は、Visual Studio インストール ディレクトリの中の **Common7/IDE** ディレクトリに移動し、**devenv.exe** を選択します。 次に、 **[Open]\(開く\)** をクリックします。
+4. **[Browse...]\(参照...\)** を選択した場合は、Visual Studio インストール ディレクトリの中の **Common7/IDE** ディレクトリに移動し、 **devenv.exe** を選択します。 次に、 **[Open]\(開く\)** をクリックします。
 
    :::moniker range="vs-2017"
    ![[Open]\(開く\) を選ぶ](media/vs-2017/vstu-browse-for-application.png)

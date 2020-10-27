@@ -1,5 +1,7 @@
 ---
 title: カスタム ビルド イベントを指定する
+description: ビルドの開始前またはビルドの終了後に Visual Studio で自動的にコマンドを実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f1d339f9bbf170d2df545e69c698f786198695ad
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115333"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136785"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
 
@@ -26,7 +28,7 @@ ms.locfileid: "76115333"
 
 - Visual Basic -- [方法 : ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
-- C# と F# -- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- C# および F# -- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
 - Visual C++ -- [ビルド イベントを指定する](/cpp/build/specifying-build-events)。
 
@@ -40,7 +42,7 @@ ms.locfileid: "76115333"
 
    例: `call C:\MyFile.bat`
 
-   例: `call C:\MyFile.bat call C:\MyFile2.bat`
+   例 : `call C:\MyFile.bat call C:\MyFile2.bat`
 
 - ファイルのパスを引用符で囲みます。
 
@@ -55,9 +57,9 @@ ms.locfileid: "76115333"
   > [!NOTE]
   > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
 - [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)
-- [チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)
+- [チュートリアル: アプリケーションを構築する](../ide/walkthrough-building-an-application.md)

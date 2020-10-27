@@ -1,5 +1,7 @@
 ---
 title: '[ビルドの詳細設定] ダイアログ ボックス (C#)'
+description: Visual Studio を使用してプロジェクトの詳細なビルド構成プロパティを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418848"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136746"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
 
-**プロジェクト デザイナー**の **[ビルドの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、C# プロジェクトにのみ適用されます。
+**プロジェクト デザイナー** の **[ビルドの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、C# プロジェクトにのみ適用されます。
 
 ## <a name="general"></a>全般
 
@@ -56,7 +58,7 @@ ms.locfileid: "85418848"
 
 <xref:System> 名前空間全体を定義して、mscorlib.dll をプログラムにインポートするかどうかを指定します。 独自の <xref:System> 名前空間およびオブジェクトを定義または作成する場合は、このチェック ボックスをオンにします。 詳しくは、「[/nostdlib (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)」をご覧ください。
 
-## <a name="output"></a>Output
+## <a name="output"></a>出力
 
 次のオプションを使用すると、詳細な出力オプションを指定できます。
 
@@ -64,7 +66,7 @@ ms.locfileid: "85418848"
 
 コンパイラによって生成されるデバッグ情報の種類を指定します。 アプリケーションのデバッグ パフォーマンスを構成する方法については、「[イメージのデバッグの簡略化](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)」を参照してください。 この設定には、次のオプションがあります。
 
-- **none**
+- " **なし** "
 
    デバッグ情報を生成しないことを指定します。
 
@@ -88,13 +90,13 @@ ms.locfileid: "85418848"
 
 **ファイルの配置**
 
-出力ファイル内のセクションのサイズを指定します。 有効値は **512**、**1024**、**2048**、**4096**、および **8192** です。 これらの値の単位はバイトです。 各セクションは、この値の倍数である境界内にアラインされるので、出力ファイルのサイズに影響があります。 詳しくは、「[/filealign (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)」をご覧ください。
+出力ファイル内のセクションのサイズを指定します。 有効値は **512** 、 **1024** 、 **2048** 、 **4096** 、および **8192** です。 これらの値の単位はバイトです。 各セクションは、この値の倍数である境界内にアラインされるので、出力ファイルのサイズに影響があります。 詳しくは、「[/filealign (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)」をご覧ください。
 
 **ライブラリ ベース アドレス**
 
 DLL を読み込む位置に推奨されるベース アドレスを指定します。 DLL の既定のベース アドレスは、.NET Framework 共通言語ランタイムにより設定されます。 詳しくは、「[/baseaddress (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[Lint 処理]'
+description: '[オプション] ダイアログ ボックスの [Lint 処理] ページを使用して、コード エディターでコードを分析するためのプションを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605970"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947714"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [JavaScript/TypeScript] \> [Lint 処理]
 

@@ -1,5 +1,7 @@
 ---
 title: コンパイルとビルド
+description: Visual Studio IDE のビルド メソッド、MSBuild コマンドライン ツールのビルド メソッド、または Azure Pipelines のビルド メソッドを使用してアプリケーションを構築する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928542"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136590"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio でのコンパイルとビルド
 
-IDE の中でのビルド方法の入門資料については、「[チュートリアル: アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
+IDE の中でのビルド方法の入門資料については、「[チュートリアル:アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
 
 Visual Studio IDE、MSBuild コマンド ライン ツール、Azure Pipelines のいずれかの方法を使用して、アプリケーションをビルドすることができます。
 
@@ -41,7 +43,7 @@ Visual Studio IDE、MSBuild コマンド ライン ツール、Azure Pipelines �
 
 Visual Studio でプロジェクトを作成すると、そのプロジェクトとプロジェクトが属するソリューションのための、既定のビルド構成が作成されます。  この構成は、ソリューションとプロジェクトをどのようにビルドして配置するかを定義するものです。 このうち、プロジェクト構成はターゲット プラットフォーム (たとえば Windows または Linux) とビルドの種類 (たとえばデバッグまたはリリース) ごとに固有です。 これらの構成は自由に編集でき、必要に応じて独自の構成を作成することもできます。
 
-IDE の中でのビルド方法の入門資料については、「[チュートリアル: アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
+IDE の中でのビルド方法の入門資料については、「[チュートリアル:アプリケーションをビルドする](walkthrough-building-an-application.md)」を参照してください。
 
 次に、「[Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](building-and-cleaning-projects-and-solutions-in-visual-studio.md)」を参照して、このプロセスに関してどのようなカスタマイズが可能かを把握してください。 カスタマイズの例としては、[出力ディレクトリの変更](how-to-change-the-build-output-directory.md)、[カスタム ビルド イベントの指定](specifying-custom-build-events-in-visual-studio.md)、[プロジェクト依存関係の管理](how-to-create-and-remove-project-dependencies.md)、[ビルド ログ ファイルの管理](how-to-view-save-and-configure-build-log-files.md)、[コンパイラ警告の抑制](how-to-suppress-compiler-warnings.md)などがあります。
 
@@ -53,7 +55,7 @@ IDE の中でのビルド方法の入門資料については、「[チュート
 - [ビルド オプションの設定](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [複数プロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Web サイト プロジェクトのビルド (コンパイル)](/previous-versions/hwxa5aha(v=vs.140))
 - [コンパイルとビルド (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)

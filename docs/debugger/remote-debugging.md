@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301057"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92298683"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 別のコンピューターに配置されている Visual Studio アプリケーションをデバッグすることができます。 このデバッグを行うには、Visual Studio リモート デバッガーを使用します。
@@ -35,7 +35,7 @@ ms.locfileid: "79301057"
 
 |シナリオ|Link|
 |-|-|-|
-|Azure App Service|[スナップショット デバッガー](../debugger/debug-live-azure-applications.md)または[Azure での ASP.NET のリモート デバッグ](../debugger/remote-debugging-azure.md)|
+|Azure App Service|[Azure での ASP.NET のリモート デバッグ](../debugger/remote-debugging-azure.md)または、Visual Studio Enterprise の場合、[スナップショット デバッガー](../debugger/debug-live-azure-applications.md)|
 |Azure 仮想マシン|[Azure での ASP.NET のリモート デバッグ](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[Azure Service Fabric アプリケーションのデバッグ](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[ASP.NET Core のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)または [ASP.NET のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
@@ -55,9 +55,9 @@ ms.locfileid: "79301057"
 
 ## <a name="optional-to-run-the-remote-debugger-from-a-file-share"></a><a name="fileshare_msvsmon"></a> (オプション) ファイル共有からリモート デバッガーを実行するには
 
-リモート デバッガー (*msvsmon.exe*) は、Visual Studio Community、Professional、または Enterprise が既にインストールされているコンピューターにあります。 場合によっては、リモート デバッグをセットアップする最も簡単な方法は、ファイル共有からリモート デバッガー (msvsmon.exe) を実行することです。 使用に関する制限事項については、リモート デバッガーの [ヘルプ] ページ (リモート デバッガーの **[ヘルプ] > [使用法]** ) を参照してください。
+リモート デバッガー ( *msvsmon.exe* ) は、Visual Studio Community、Professional、または Enterprise が既にインストールされているコンピューターにあります。 場合によっては、リモート デバッグをセットアップする最も簡単な方法は、ファイル共有からリモート デバッガー (msvsmon.exe) を実行することです。 使用に関する制限事項については、リモート デバッガーの [ヘルプ] ページ (リモート デバッガーの **[ヘルプ] > [使用法]** ) を参照してください。
 
-1. お使いの Visual Studio のバージョンと一致するディレクトリで、*の msvsmon.exe* を見つけます。
+1. お使いの Visual Studio のバージョンと一致するディレクトリで、 *の msvsmon.exe* を見つけます。
 
    ::: moniker range=">=vs-2019"
 
@@ -74,12 +74,12 @@ ms.locfileid: "79301057"
 
    ::: moniker-end
 
-2. Visual Studio コンピューターで**リモート デバッガー** フォルダーを共有します。
+2. Visual Studio コンピューターで **リモート デバッガー** フォルダーを共有します。
 
 3. リモート コンピューターで、共有フォルダーから *msvsmon.exe* を実行します。 [セットアップの手順](#bkmk_setup)に従います。
 
 > [!TIP]
-> コマンド ライン インストールおよびコマンド ライン参照については、Visual Studio がインストールされているコンピューターのコマンド ラインで「``msvsmon.exe /?``」と入力して、*msvsmon.exe* のヘルプ ページを参照してください (または、リモート デバッガーで **[ヘルプ] > [使用法]** に移動)。
+> コマンド ライン インストールおよびコマンド ライン参照については、Visual Studio がインストールされているコンピューターのコマンド ラインで「``msvsmon.exe /?``」と入力して、 *msvsmon.exe* のヘルプ ページを参照してください (または、リモート デバッガーで **[ヘルプ] > [使用法]** に移動)。
 
 ## <a name="set-up-the-remote-debugger"></a><a name="bkmk_setup"></a> リモート デバッガーのセットアップ
 
@@ -115,11 +115,11 @@ ASP.NET および他のサーバー環境でのデバッグでは、リモート
 
 4. ユーザー アカウントの名前とパスワードを追加します。
 
-    このアカウントに、 **[サービスとしてログオン]** のユーザー権限を追加することが必要になる場合があります。 **[ローカル セキュリティ ポリシー]** (secpol.msc) を **[スタート]** ページまたはウィンドウで見つけます (または、コマンド プロンプトで「**secpol**」と入力します)。 ウィンドウが表示されたら、 **[ユーザー権利の割り当て]** をダブルクリックし、右ペインで **[サービスとしてログオン]** を見つけます。 これをダブルクリックします。 ユーザー アカウントを **[プロパティ]** ウィンドウに追加して **[OK]** をクリックします)。 **[次へ]** をクリックします。
+    このアカウントに、 **[サービスとしてログオン]** のユーザー権限を追加することが必要になる場合があります。 **[ローカル セキュリティ ポリシー]** (secpol.msc) を **[スタート]** ページまたはウィンドウで見つけます (または、コマンド プロンプトで「 **secpol** 」と入力します)。 ウィンドウが表示されたら、 **[ユーザー権利の割り当て]** をダブルクリックし、右ペインで **[サービスとしてログオン]** を見つけます。 これをダブルクリックします。 ユーザー アカウントを **[プロパティ]** ウィンドウに追加して **[OK]** をクリックします)。 **[次へ]** をクリックします。
 
 5. リモート ツールが通信するネットワークの種類を選択します。 少なくとも 1 つのネットワークの種類を選択する必要があります。 コンピューターがドメインを介して接続されている場合は、最初の項目を選択する必要があります。 コンピューターがワークグループまたはホーム グループを介して接続されている場合は、2 番目または 3 番目の項目を選択する必要があります。 **[次へ]** をクリックします。
 
-6. サービスを開始できた場合は、「 **Visual Studio リモート デバッガー構成ウィザードは正常に完了しました**」と表示されます。 サービスを開始できなかった場合は、「 **Visual Studio リモート デバッガー構成ウィザードを完了できませんでした**」と表示されます。 このページには、サービスを開始するために従う必要があるヒントもいくつか提供されます。
+6. サービスを開始できた場合は、「 **Visual Studio リモート デバッガー構成ウィザードは正常に完了しました** 」と表示されます。 サービスを開始できなかった場合は、「 **Visual Studio リモート デバッガー構成ウィザードを完了できませんでした** 」と表示されます。 このページには、サービスを開始するために従う必要があるヒントもいくつか提供されます。
 
 7. **[完了]** をクリックします。
 

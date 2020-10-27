@@ -1,6 +1,7 @@
 ---
 title: Visual Studio Emulator for Android のトラブルシューティング | Microsoft Docs
-ms.custom: ''
+description: Visual Studio Emulator for Android の使用時に発生するおそれのある問題の解決に役立つ情報について説明します。
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386304"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878918"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
@@ -181,7 +182,7 @@ ms.locfileid: "86386304"
 
   6. Windows 8 Professional 以上を実行していることを確認します (Windows Server 2008 はサポートされていません)。 Windows Server 2012 はサポートされていますが、デスクトップ エクスペリエンスを有効にする必要があります。
 
-     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー**+**R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
+     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き ( **スタート キー**+**R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー** に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
 
      プロセッサが最小要件を満たしているにもかかわらず、ハイパーバイザーでまだ障害が発生する場合は、コンピューターに使用可能な BIOS アップグレードがあるかどうかを確認してみてください。 アップグレードがあり、アップグレードすることを選択する場合は、BIOS のアップグレード時に製造元からの注意事項 (BIOS が完全に破損する可能性のある、停電により BIOS ファームウェアのアップグレードが中断されないようにするなど) をすべて確認してください。
 
@@ -195,7 +196,7 @@ ms.locfileid: "86386304"
 
    次の製品は、Windows 8 と互換性を持たせるためにアップグレードが必要になる可能性があります: VirtualBox、Virtual PC 7、VMWare、一部の VPN クライアント、ソフトウェア ファイアウォール、Cisco VPN クライアントの一部のバージョン、およびその他の仮想化システム。 問題のある仮想化ソフトウェアの開発者と協力して、ソフトウェアをアップグレードし、Windows 8 および Hyper-V と互換性を持たせるようにしてください。
 
-   *回避策*として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには以下のようなものがあります。
+   *回避策* として、Visual Studio との通信のためにエミュレーターで使用される仮想ネットワークに干渉している可能性があるすべてのサード パーティ製のドライバーとアプリケーションを無効にすることができます。 これらのアプリケーションには以下のようなものがあります。
 
   - ウイルス対策アプリケーション (ネットワーク スタックにフックする)
 
@@ -241,7 +242,7 @@ ms.locfileid: "86386304"
 
      サード パーティ製品をアンインストールした後で、Windows Phone Emulator Internal Switch を復元する必要があります。 これを行うには、次のようにします。
 
-  - Hyper V を開き、仮想スイッチ マネージャーに移動します。 「Windows Phone Emulator Internal Switch」という名前の仮想スイッチを作成し、その接続の種類を **内部ネットワーク**に設定します。
+  - Hyper V を開き、仮想スイッチ マネージャーに移動します。 「Windows Phone Emulator Internal Switch」という名前の仮想スイッチを作成し、その接続の種類を **内部ネットワーク** に設定します。
 
      ![仮想スイッチ マネージャー](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
 
@@ -263,7 +264,7 @@ ms.locfileid: "86386304"
 
 - スタート ボタンのコンテキスト メニューから **[ファイル名を指定して実行]** を選択して、ダイアログ ボックスに「 `regedit` 」と入力し、 **[OK]** を選択してレジストリ エディターを開きます。
 
-- 左側のフォルダー ツリーで、*HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* ツールに移動します。
+- 左側のフォルダー ツリーで、 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* ツールに移動します。
 
 - Android SDK へのパスと一致するように **パス** レジストリ変数を変更します。
 

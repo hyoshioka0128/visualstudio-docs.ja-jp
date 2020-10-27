@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[コードの検証]'
+description: '[オプション] ダイアログ ボックスの [コードの検証] ページを使用して、JavaScript でのエラーの処理方法の設定を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a3335f4bc5d59b7b4aab3e7341d9f1574d095eeb
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68606008"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947753"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [JavaScript/TypeScript] \> [コードの検証]
 
-JavaScript でのエラーの処理方法の設定を変更するには、 **[オプション]** ダイアログ ボックスの **[コードの検証]** ページを使用します。 **[コードの検証]** ページにアクセスするには、メニュー バーの **[ツール]**  >  **[オプション]** を選択し、 **[テキスト エディター]**  >  **[JavaScript/TypeScript]**  >  **[コードの検証]** の順に展開します。
+JavaScript でのエラーの処理方法の設定を変更するには、 **[オプション]** ダイアログ ボックスの **[コードの検証]** ページを使用します。 **[コードの検証]** ページにアクセスするには、メニュー バーの **[ツール]** > **[オプション]** を選択し、 **[テキスト エディター]** > **[JavaScript/TypeScript]** > **[コードの検証]** の順に展開します。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

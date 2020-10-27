@@ -1,5 +1,6 @@
 ---
 title: Visual Studio におけるクロス プラットフォーム モバイル開発 | Microsoft Docs
+description: この記事では、Visual Studio を使用して、Android、iOS、Windows デバイス用のアプリを構築する方法について説明します。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
@@ -11,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037264"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959836"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 
@@ -45,7 +46,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
  C# または F# を使用することで (Visual Basic は現時点ではサポートされていません)、Android、iOS、Windows のネイティブ アプリを開発できます。  始めるには、Visual Studio をインストールし、インストーラーで **[.NET によるモバイル開発]** オプションを選択します。
 
- Visual Studio を既にインストールしてある場合は、**Visual Studio インストーラー**をもう一度実行し、Xamarin に対して上と同じ **[.NET によるモバイル開発]** オプションを選択します。
+ Visual Studio を既にインストールしてある場合は、 **Visual Studio インストーラー** をもう一度実行し、Xamarin に対して上と同じ **[.NET によるモバイル開発]** オプションを選択します。
 
  完了すると、プロジェクト テンプレートが **[新しいプロジェクト]** ダイアログ ボックスに表示されます。 Xamarin テンプレートを見つける最も簡単な方法は、"Xamarin" で検索することです。
 
@@ -120,7 +121,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
 ![C&#43;&#43; を使用して Android、iOS、Windows 用に作成する](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
- 最初に、Visual Studio と **C++ によるモバイル開発**ワークロードをインストールします。 その後は、Android 用の Native-Activity アプリケーションか、Windows または iOS を対象とするアプリを構築できます。 必要であれば、同じソリューションで Android、iOS、Windows を対象にし、クロスプラットフォームの静的または動的な共有ライブラリを使用して、それらの間でコードを共有することができます。
+ 最初に、Visual Studio と **C++ によるモバイル開発** ワークロードをインストールします。 その後は、Android 用の Native-Activity アプリケーションか、Windows または iOS を対象とするアプリを構築できます。 必要であれば、同じソリューションで Android、iOS、Windows を対象にし、クロスプラットフォームの静的または動的な共有ライブラリを使用して、それらの間でコードを共有することができます。
 
  ゲームなどの高度なグラフィックス操作を必要とする Android アプリをビルドする必要がある場合に、C++ を利用できます。 **Native-Activity アプリケーション (Android)** プロジェクトで開始します。 このプロジェクトでは、C 言語のツール チェーンが完全にサポートされます。
 
@@ -163,7 +164,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 |[Visual Studio Tools for Unity についてさらに学習する](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity を使い始める](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity 2.0 Preview の最新の拡張機能について学習する](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio ブログ)|
-|[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (ビデオ)|
+|[Visual Studio Tools for Unity 2.0 Preview の紹介ビデオを見る](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (ビデオ)|
 |[Unity について学習する](https://unity.com/) (Unity Web サイト)|
 
 ## <a name="see-also"></a>関連項目

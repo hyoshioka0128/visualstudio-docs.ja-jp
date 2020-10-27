@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454623"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927927"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>TypeScript コードのコンパイル (ASP.NET Core)
 
@@ -77,7 +77,7 @@ Visual Studio がインストールされている場合は、バンドルされ
 
 ### <a name="build-the-application"></a>アプリケーションのビルド
 
-1. TypeScript ( *.ts*) ファイルまたは TypeScript JSX ( *.tsx*) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
+1. TypeScript ( *.ts* ) ファイルまたは TypeScript JSX ( *.tsx* ) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
 
    ```typescript
    let message: string = 'Hello World';
@@ -90,7 +90,7 @@ Visual Studio がインストールされている場合は、バンドルされ
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-   ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された *.js ファイルと生成された *js.map ファイルが見つかります。
+   ソース マップを生成した場合は、 *outDir* オプションで指定したフォルダーを開くと、生成された *.js ファイルと生成された *js.map ファイルが見つかります。
 
    ソース マップ ファイルはデバッグで必要となります。
 
@@ -108,6 +108,10 @@ Visual Studio がインストールされている場合は、バンドルされ
 
 Visual Studio で、想定したバージョンとは異なるバージョンの Node.js またはサード パーティ製ツールが使用される問題が発生した場合は、Visual Studio で使用するパスの設定が必要になることがあります。 **[ツール]**  >  **[オプション]** を選択します。 **[プロジェクトとソリューション]** で、 **[Web パッケージ管理]**  >  **[外部 Web ツール]** を選択します。
 
+### <a name="run-the-application"></a>アプリケーションの実行
+
+アプリをコンパイルした後に実行する手順については、[初めての Node.js アプリの作成](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)に関するページを参照してください。
+
 ### <a name="nuget-package-structure-details"></a>NuGet パッケージ構造の詳細
 
 `Microsoft.TypeScript.MSBuild.nupkg` には 2 つの主要なフォルダーがあります。
@@ -119,11 +123,11 @@ Visual Studio で、想定したバージョンとは異なるバージョンの
 
     1. *Microsoft.TypeScript.MSBuild.targets*
 
-        このファイルによって、*tools* フォルダーから *Microsoft.TypeScript.targets* をインポートする前に、実行時プラットフォームを指定する変数 (*TypeScript.Tasks.dll* へのパスなど) を設定できます。
+        このファイルによって、 *tools* フォルダーから *Microsoft.TypeScript.targets* をインポートする前に、実行時プラットフォームを指定する変数 ( *TypeScript.Tasks.dll* へのパスなど) を設定できます。
 
     2. *Microsoft.TypeScript.MSBuild.props*
 
-        このファイルによって、*tools* フォルダーから *Microsoft.TypeScript.Default.props* をインポートし、NuGet を通じてビルドが開始されたことを示すプロパティを設定できます。
+        このファイルによって、 *tools* フォルダーから *Microsoft.TypeScript.Default.props* をインポートし、NuGet を通じてビルドが開始されたことを示すプロパティを設定できます。
 
 - *tools* フォルダー
 

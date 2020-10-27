@@ -1,5 +1,7 @@
 ---
 title: ファイルのプロパティ、JavaScript
+description: ファイルのプロパティを使用して、プロジェクト システムがファイルに対して実行するアクションを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68926232"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947792"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
 
@@ -79,7 +81,7 @@ ms.locfileid: "68926232"
 ### <a name="identity"></a>ID
 プロジェクトに使用されている参照の ID が表示されます。これはプロジェクト ファイルに保存されています。
 
-### <a name="package"></a>パッケージ
+### <a name="package"></a>Package
 参照に関連付けられているパッケージ マニフェストの名前が表示されます。
 
 ### <a name="resolved-path"></a>解決されたパス
@@ -88,12 +90,12 @@ ms.locfileid: "68926232"
 ### <a name="sdk-path"></a>SDK のパス
 参照される SDK ファイルのパスが表示されます。
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
 ソース ファイルとしてファイルに含めるために、プロジェクトの HTML または JavaScript ファイルに含める必要がある URI が表示されます。
 
 ### <a name="version"></a>Version
 参照のバージョンが表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクトおよびソリューションのプロパティの管理](../../ide/managing-project-and-solution-properties.md)

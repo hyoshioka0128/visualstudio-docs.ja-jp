@@ -1,5 +1,7 @@
 ---
 title: '方法 : ビルド イベントを指定する (C#)'
+description: ビルド イベントを使用し、ビルド開始前またはビルド終了後に実行するコマンドを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283997"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136941"
 ---
 # <a name="how-to-specify-build-events-c"></a>方法 : ビルド イベントを指定する (C#)
 
@@ -30,7 +32,7 @@ ms.locfileid: "85283997"
 
 ## <a name="specify-a-build-event"></a>ビルド イベントを指定する
 
-1. **ソリューション エクスプローラー**で、ビルド イベントを指定するプロジェクトを選択します。
+1. **ソリューション エクスプローラー** で、ビルド イベントを指定するプロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
@@ -44,7 +46,7 @@ ms.locfileid: "85283997"
 5. **[ビルド後に実行するコマンド ライン]** ボックスで、ビルド イベントの構文を指定します。
 
    > [!NOTE]
-   > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
+   > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
 
 6. **[ビルド後イベントの実行]** ボックスで、ビルド後イベントを実行する条件を指定します。
 
@@ -70,7 +72,7 @@ ms.locfileid: "85283997"
 
 ### <a name="create-an-exe-command-to-change-the-application-manifest"></a>アプリケーション マニフェストを変更する .exe コマンドを作成する
 
-1. コマンド用の新しい**コンソール アプリ** プロジェクトを作成します。 プロジェクトに **ChangeOSVersionCS** という名前を付けます。
+1. コマンド用の新しい **コンソール アプリ** プロジェクトを作成します。 プロジェクトに **ChangeOSVersionCS** という名前を付けます。
 
 2. *Program.cs* で、ファイルの先頭にある他の `using` ディレクティブに次の行を追加します。
 
@@ -130,7 +132,7 @@ ms.locfileid: "85283997"
    }
    ```
 
-   このコマンドは、2 つの引数を受け取ります。1 つはアプリケーション マニフェストへのパス (つまり、ビルド処理でマニフェストが作成されるフォルダーであり、通常は *Projectname.publish*)、もう 1 つは新しいオペレーティング システムのバージョンです。
+   このコマンドは、2 つの引数を受け取ります。1 つはアプリケーション マニフェストへのパス (つまり、ビルド処理でマニフェストが作成されるフォルダーであり、通常は *Projectname.publish* )、もう 1 つは新しいオペレーティング システムのバージョンです。
 
 4. プロジェクトをビルドします。
 
@@ -142,13 +144,13 @@ ms.locfileid: "85283997"
 
 1. 新しい **Windows フォーム アプリ** プロジェクトを作成し、それに **CSWinApp** という名前を付けます。
 
-2. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** を選択します。
+2. **ソリューション エクスプローラー** でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** を選択します。
 
-3. **プロジェクト デザイナー**で、 **[発行]** ページに移動し、 **[発行場所]** を *C:\TEMP* に設定します。
+3. **プロジェクト デザイナー** で、 **[発行]** ページに移動し、 **[発行場所]** を *C:\TEMP* に設定します。
 
 4. **[今すぐ発行]** をクリックして、プロジェクトを発行します。
 
-   マニフェスト ファイルがビルドされ、*C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* に保存されます。 マニフェストを表示するには、ファイルを右クリックし、 **[プログラムから開く]** 、 **[一覧からプログラムを選択する]** 、 **[メモ帳]** の順にクリックします。
+   マニフェスト ファイルがビルドされ、 *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* に保存されます。 マニフェストを表示するには、ファイルを右クリックし、 **[プログラムから開く]** 、 **[一覧からプログラムを選択する]** 、 **[メモ帳]** の順にクリックします。
 
    ファイルで `<osVersionInfo>` 要素を探します。 たとえば、バージョンは次のように記述されています。
 
@@ -156,7 +158,7 @@ ms.locfileid: "85283997"
    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
    ```
 
-5. **プロジェクト デザイナー**に戻り、 **[ビルド イベント]** タブをクリックし、 **[ビルド後の編集]** をクリックします。
+5. **プロジェクト デザイナー** に戻り、 **[ビルド イベント]** タブをクリックし、 **[ビルド後の編集]** をクリックします。
 
 6. **[ビルド後に実行するコマンド ライン]** ボックスに次のコマンドを入力します。
 
@@ -174,9 +176,9 @@ ms.locfileid: "85283997"
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [方法 : ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

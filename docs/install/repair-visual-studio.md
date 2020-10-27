@@ -2,7 +2,7 @@
 title: Visual Studio を修復します
 titleSuffix: ''
 description: Visual Studio 2017 のインストールを修復する方法について説明します
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418965"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007118"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio を修復します
 
@@ -37,12 +37,12 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 ## <a name="how-to-repair"></a>修復方法
 ::: moniker range="vs-2017"
 
-1. コンピューター上の **Visual Studio インストーラー**を見つけます。
+1. コンピューター上の **Visual Studio インストーラー** を見つけます。
 
-     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、 **Visual Studio インストーラー** としてリスト表示される **V** の文字までスクロールします。
 
    > [!NOTE]
-   > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。
+   > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー** として **"M"** の項に表示される場合があります。
    >
    > Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
@@ -61,11 +61,11 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 ::: moniker range="vs-2019"
 
-1. コンピューター上の **Visual Studio インストーラー**を見つけます。
+1. コンピューター上の **Visual Studio インストーラー** を見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     Windows の [スタート] メニューで "installer" を検索できます。
 
-     ![Visual Studio インストーラーを開く](media/vs-2019/vs-installer-windows-start.png "Visual Studio インストーラーを開く")
+     ![Visual Studio インストーラー](media/vs-2019/visual-studio-installer.png "Visual Studio インストーラーを検索する")
 
      > [!NOTE]
      > また、Visual Studio インストーラーは次の場所にもあります。
