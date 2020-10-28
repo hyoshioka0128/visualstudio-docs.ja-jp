@@ -8,16 +8,16 @@ ms.date: 07/29/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
 ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005601"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
 
-[[ダウンロード]](https://my.visualstudio.com/downloads/featured) ページには、サブスクリプションに含まれるダウンロードのみが表示されます。  複数のサブスクリプションまたはプログラムのメンバーシップがある場合は、所有している**最高サブスクリプション**のダウンロードが表示されます。現在、別のサブスクリプションを表示している場合でも同じです。  たとえば、ご利用の Visual Studio Enterprise サブスクリプションと Visual Studio Professional サブスクリプションが、どちらも同じサインイン ID に関連付けられている場合、現在 Professional サブスクリプションの特典が表示されていても、Enterprise サブスクリプションに含まれるダウンロードが表示されます。  
+[[ダウンロード]](https://my.visualstudio.com/downloads/featured) ページには、サブスクリプションに含まれるダウンロードのみが表示されます。  複数のサブスクリプションまたはプログラムのメンバーシップがある場合は、所有している **最高サブスクリプション** のダウンロードが表示されます。現在、別のサブスクリプションを表示している場合でも同じです。  たとえば、ご利用の Visual Studio Enterprise サブスクリプションと Visual Studio Professional サブスクリプションが、どちらも同じサインイン ID に関連付けられている場合、現在 Professional サブスクリプションの特典が表示されていても、Enterprise サブスクリプションに含まれるダウンロードが表示されます。  
 
 サブスクリプションが職場または学校によって提供されている場合は、サブスクリプション管理者がダウンロードにアクセスできるかどうかを制御します。 ダウンロードへのアクセスを無効にすると、プロダクト キーへのアクセスも無効になります。 ダウンロードとプロダクトキーへのアクセス権がなく、必要な場合は、[管理者に問い合わせてください](contact-my-admin.md)。
 

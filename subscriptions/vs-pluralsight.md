@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005343"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
@@ -23,7 +23,7 @@ ms.locfileid: "91005343"
  所有しているサブスクリプションの種類によっては、以前に Visual Studio サブスクリプションを通じて提供された Pluralsight サブスクリプションを使用していたすべてのサブスクライバーが、新しい Pluralsight 特典オファーを利用できるわけではありません。 追加の Pluralsight トレーニング特典を引き換える権利がない場合、Pluralsight web サイトで特典をアクティブ化しようとしたときに通知が表示されます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
-1. サブスクリプションをアクティブ化するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) に接続し、Pluralsight 特典タイルの **[アクティブ化]** リンクをクリックします。  表示されるタイルの一覧を絞り込むには、グループ フィルターを選択します。  Pluralsight は、[Professional Development]\(プロフェッショナル開発\) 特典グループにあります。
+1. サブスクリプションをアクティブ化するには、 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) に接続し、Pluralsight 特典タイルの **[アクティブ化]** リンクをクリックします。  表示されるタイルの一覧を絞り込むには、グループ フィルターを選択します。  Pluralsight は、[Professional Development]\(プロフェッショナル開発\) 特典グループにあります。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 特典タイル](_img/vs-pluralsight/vs-pluralsight-tile.png "[アクティブ化] をクリックして特典を要求します")
 

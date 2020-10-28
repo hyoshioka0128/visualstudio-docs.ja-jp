@@ -8,10 +8,10 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで、プロダクト キーを取得して管理する方法を説明します。
 ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005847"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのプロダクト キーの使用

@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
 ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005689"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>サブスクリプション管理者のサポートを受ける
@@ -30,7 +30,7 @@ ms.locfileid: "91005689"
 6. 最後に、 **[送信]** を選択します。
 
 > [!NOTE]
-> **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、[契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
+> **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、 [契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
 
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: 月次サブスクリプションの管理者を設定する
 ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91006112"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する

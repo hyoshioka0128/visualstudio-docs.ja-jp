@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: how-to
 description: 管理者が管理者ポータルで個々のサブスクライバーまたはグループを探す方法について説明します。
 ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022238"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのサブスクライバーの検索とフィルター処理
