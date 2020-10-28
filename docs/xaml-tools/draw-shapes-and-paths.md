@@ -1,6 +1,7 @@
 ---
 title: 図形とパスの描画
-description: Blend for Visual Studio を使用して、図形とパスに詳細を追加する
+description: Blend for Visual Studio の XAML デザイナーの機能を使用して、パスと図形を描画し、変更し、それらを結合します。
+ms.custom: SEO-VS-2020
 titleSuffix: Blend for Visual Studio
 ms.date: 09/22/2020
 ms.topic: conceptual
@@ -10,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022510"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796798"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
 
-XAML デザイナーでは、"*図形*" とはその名の示すとおりのものです。 たとえば、四角形、円、楕円などです。 *パス* は、より柔軟なバージョンの図形です。 図形の形状を変更したり、図形を結合して新しい図形を形成するといった操作ができます。
+XAML デザイナーでは、" *図形* " とはその名の示すとおりのものです。 たとえば、四角形、円、楕円などです。 *パス* は、より柔軟なバージョンの図形です。 図形の形状を変更したり、図形を結合して新しい図形を形成するといった操作ができます。
 
 図形とパスではベクター グラフィックスを使用するため、高解像度表示に対応して拡大縮小できます。
 
@@ -35,7 +36,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ## <a name="draw-a-path"></a>パスの描画
 
-パスは、直線と曲線が連結して一続きになったものです。 パスを使用し、**[アセット]** ウィンドウでは使用できない面白い図形を作成します。
+パスは、直線と曲線が連結して一続きになったものです。 パスを使用し、 **[アセット]** ウィンドウでは使用できない面白い図形を作成します。
 
 パスの描画には直線、ペン、または鉛筆を使用します。 これらのツールは **[ツール]** ウィンドウにあります。
 
@@ -79,7 +80,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ### <a name="remove-a-point-in-a-path"></a>パス内のポイントの削除
 
-**[選択]** ツールを使用してパスを選択します。 次に、**[ペン]** ツールを使用し、削除するポイントをクリックします。
+**[選択]** ツールを使用してパスを選択します。 次に、 **[ペン]** ツールを使用し、削除するポイントをクリックします。
 
 ### <a name="add-a-point-to-a-path"></a>パスへのポイントの追加
 
@@ -87,7 +88,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ## <a name="convert-a-shape-to-a-path"></a>図形のパスへの変換
 
-パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。 図形を選択し、[**フォーマット**  >  **パス**パスに変換] を選択し  >  **Convert to Path**ます。
+パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。 図形を選択し、[ **フォーマット**  >  **パス** パスに変換] を選択し  >  **Convert to Path** ます。
 
 **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.png) [パスの作業: 図形をパスに変換する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
@@ -100,7 +101,7 @@ XAML デザイナーでは、"*図形*" とはその名の示すとおりのも�
 
 ![パスの結合](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|番号|アクション|
+|Number|アクション|
 |-|-|
 |![結合前の 2 つの図形](../designers/media/b1_1.png)|結合前の 2 つの図形|
 |![合算](../designers/media/b1_2.png)|合算|
