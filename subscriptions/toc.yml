@@ -48,6 +48,8 @@
       href: contact-my-admin.md
     - name: 利点
       items:
+        - name: ベネフィットについて
+          href: about-benefits.md
         - name: ツール
           items:
             - name: Azure DevTest の個人クレジット
