@@ -80,3 +80,5 @@
           href: sample-opencv.md
         - name: Codespaces プライベート プレビュー
           href: sample-private-preview.md
+        - name: .NET Core アプリ
+          href: sample-dotnet-core.md
