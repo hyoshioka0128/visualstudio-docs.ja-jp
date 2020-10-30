@@ -1,5 +1,7 @@
 ---
 title: XAML のエラーと警告
+description: エラーの分類方法、エラー情報の取得方法、それらを修正するためのオプションの検索方法など、Visual Studio での XAML のエラーと警告について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 968e4167da1f8fd9bce21784a011d970014e1b4e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467558"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049222"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML のエラーと警告
 
-Visual Studio では、XAML を作成するとき、入力したコードがすぐに解析されます。 エラーが検出されると、コード行に波線が付きます。 この波線にマウス カーソルを合わせると、エラーまたは警告に関する詳細が表示されます。 一部のエラーと警告については、クイックアクションの電球が表示され、 **Ctrl キー**を使用し + **ます。** 問題解決のための選択肢が表示されます。
+Visual Studio では、XAML を作成するとき、入力したコードがすぐに解析されます。 エラーが検出されると、コード行に波線が付きます。 この波線にマウス カーソルを合わせると、エラーまたは警告に関する詳細が表示されます。 一部のエラーと警告については、クイックアクションの電球が表示され、 **Ctrl キー** を使用し + **ます。** 問題解決のための選択肢が表示されます。
 
 ## <a name="error-types"></a>エラーの種類
 
@@ -37,7 +39,7 @@ Xaml のブランド変更の編集 & の詳細については、XAML のホッ�
 
 ## <a name="suppress-xaml-designer-errors"></a>XAML デザイナー エラー
 
-**[ツール]、[オプション]** の順に選択して **[オプション]** ダイアログを開き、**[テキスト エディター]、[XAML]、[その他]** の順に選択します。
+**[ツール]、[オプション]** の順に選択して **[オプション]** ダイアログを開き、 **[テキスト エディター]、[XAML]、[その他]** の順に選択します。
 
 **[Show errors detected by the XAML designer]\(XAML デザイナーによって検出されたエラーを表示する\)** チェック ボックスの選択を解除します。
 
