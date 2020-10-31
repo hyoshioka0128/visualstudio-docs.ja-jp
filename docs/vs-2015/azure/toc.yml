@@ -1,95 +1,26 @@
 - name: Visual Studio を使用した Azure 開発
-  href: index.yml
   expanded: true
 - name: Azure に発行する
-  expanded: true
   items:
-    - name: クラウド サービスを発行する
-      href: vs-azure-tools-publishing-a-cloud-service.md
-    - name: Visual Studio IDE を使用して発行する
-      href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: PowerShell スクリプトを使用して発行する
-      href: vs-azure-tools-publishing-using-powershell-scripts.md
     - name: Azure VM に ASP.NET Web アプリを発行する
       href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Azure Cloud Services に Web アプリを発行する
-      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+  expanded: true
 - name: Azure サービスに接続する
-  expanded: false
   items:
-    - name: Azure ストレージを追加する
-      href: vs-azure-tools-connected-services-storage.md
     - name: Azure Active Directory (AD) を追加する
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Mobile Services を追加する
-      href: vs-azure-tools-connected-services-add-mobile-services.md
-- name: Azure Cloud Services 開発
   expanded: false
+- name: Azure Cloud Services 開発
   items:
     - name: クラウド サービス プロジェクトの作業
-      items:
-        - name: Azure プライベート クラウドへのアクセス
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
-        - name: Azure クラウド サービス プロジェクトの作成
-          href: vs-azure-tools-azure-project-create.md
-        - name: Azure クラウド サービスのロールの管理
-          href: vs-azure-tools-cloud-service-project-managing-roles.md
-        - name: クラウド サービスの発行またはデプロイの準備
-          href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
-        - name: Azure クラウド サービスの固定仮想 IP アドレスを保持する
-          href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
-        - name: コマンドラインから Azure プロジェクトを構築する
-          href: vs-azure-tools-command-line-build.md
-        - name: Azure クラウド サービスのロールを構成する
-          href: vs-azure-tools-configure-roles-for-cloud-service.md
-        - name: Azure クラウド サービス プロジェクトを構成する
-          href: vs-azure-tools-configuring-an-azure-project.md
-        - name: 複数のサービス構成を使用する Azure プロジェクトを構成する
-          href: vs-azure-tools-multiple-services-project-configurations.md
-        - name: 現行バージョンの Azure Tools にプロジェクトをアップグレードする
-          href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
     - name: クラウド サービスのテストとデバッグ
-      items:
-        - name: Azure クラウド サービスまたは仮想マシンのデバッグ
-          href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-        - name: Azure クラウド サービスをデバッグするためのさまざまな方法を理解する
-          href: vs-azure-tools-debugging-cloud-services-overview.md
-        - name: Azure クラウド サービスと仮想マシンに対する診断を設定する
-          href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-        - name: Emulator Express を使用したローカル コンピューターでの Azure クラウド サービスの実行とデバッグ
-          href: vs-azure-tools-emulator-express-debug-run.md
-        - name: IntelliTrace を使用した発行済みの Azure クラウド サービスをデバッグする
-          href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-        - name: クラウド サービスのパフォーマンスをテストする
-          href: vs-azure-tools-performance-profiling-cloud-services.md
-        - name: Azure のコードを最適化する
-          href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
     - name: Azure にクラウド サービスを発行する
-      items:
-        - name: Azure クラウド サービスに Web アプリケーションを移行および発行する
-          href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-        - name: Visual Studio の Azure アプリケーションの公開ウィザードを使用する
-          href: vs-azure-tools-publish-azure-application-wizard.md
-        - name: Visual Studio を使用してクラウド サービスを発行する
-          href: vs-azure-tools-publishing-a-cloud-service.md
-        - name: Windows PowerShell スクリプトを使用して開発環境およびテスト環境に発行する
-          href: vs-azure-tools-publishing-using-powershell-scripts.md
-        - name: Publish-WebApplicationVM (Windows PowerShell スクリプト)
-          href: vs-azure-tools-publish-webapplicationvm.md
-        - name: Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
-          href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
-        - name: サービス構成とプロファイルを管理する
-          href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-        - name: 名前付き認証資格情報の設定
-          href: vs-azure-tools-setting-up-named-authentication-credentials.md
     - name: Azure Storage の操作
       items:
         - name: Storage Explorer の概要
           href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: ストレージ エミュレーターを構成して使用する
           href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-        - name: テーブル デザイナーのフィルター文字列を作成する
-          href: vs-azure-tools-table-designer-construct-filter-strings.md
         - name: Storage Explorer を使用して Azure Blob Storage リソースを管理する
           href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Azure File Storage で Storage Explorer を使用する
@@ -98,11 +29,5 @@
           href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Storage Explorer のアクセシビリティ
           href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+  expanded: false
 - name: Cloud Explorer
-  items:
-    - name: サーバー エクスプローラーを使用したストレージ リソースの参照と管理
-      href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-    - name: Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
-      href: vs-azure-tools-resources-managing-with-cloud-explorer.md
-    - name: サーバー エクスプローラーから Azure 仮想マシンにアクセスする
-      href: vs-azure-tools-virtual-machines-access-from-server-explorer.md

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739981"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046192"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>ToDo サンプル アプリをビルドして実行する
 
@@ -27,6 +27,8 @@ ms.locfileid: "90739981"
 ## <a name="get-the-app"></a>アプリの入手
 
 アプリケーションを実行するには、事前にアプリケーションのソース コードをご利用のコンピューターに取り込んでおく必要があります。 実際のプロジェクトでは、通常、リポジトリをクローンします。 ただし、このチュートリアルでは、アプリケーションを含む ZIP ファイルを作成しました。
+
+1. Docker for Windows または Docker Community Edition がローカル コンピューターにインストールされていることを確認します。 [Docker for Windows のインストール ドキュメント](https://docs.docker.com/docker-for-windows/install/)を参照してください。 インストール プロセスにより、サンプルを含む ZIP ファイルが localhost アドレスで使用できるようになります。
 
 1. [ZIP をダウンロードします](http://localhost/assets/app.zip)。 ZIP ファイルを開き、内容を確実に抽出します。
 
@@ -97,7 +99,7 @@ VS Code 拡張機能を簡単に見てみると、現在ご自分の 2 つのコ
 
 次に、アプリに変更を加え、実行中のアプリケーションを新しいイメージで更新する方法について学習します。 その過程で、他のいくつかの便利なコマンドについても学習します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 チュートリアルを続行します。
 
