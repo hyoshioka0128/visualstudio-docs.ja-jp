@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003847"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353097"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -22,23 +22,23 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 
 2. [特典] ページの [ツール] セクションで、Azure のタイルを見つけて、特典タイルの下部にある **[ライセンス認証]** リンクを選択します。
    > [!div class="mx-imgBorder"]
-   > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
+   > ![Azure タイル](_img/vs-azure/vs-azure-tile.png "開始するには、Azure タイルの [アクティブ化] ボタンをクリックします。")
 
 3. 既存の Azure サブスクリプションがない場合は、必要な情報を入力して Azure サブスクリプションを作成するように求められます。  最初の手順は、ご自分の個人情報を入力してから、 **[次へ]** を選択することです。
    > [!div class="mx-imgBorder"]
-   > ![Azure のサインアップ](_img/vs-azure/vs-azure-about-you.png)
+   > ![Azure のサインアップ](_img/vs-azure/vs-azure-about-you.png "ご自分の個人的な連絡先情報を Azure サブスクリプションに追加します。")
 
 4. 次に、簡単な確認コードを使用して本人確認を行う必要があります。 電話番号を入力し、コードをテキストで受け取るか、または電話で受け取るかを選択します。  受け取ったコードを入力して、 **[コードの確認]** を選択します。   
    > [!div class="mx-imgBorder"]
-   > ![Azure 準備作業](_img/vs-azure/vs-azure-identity.png)
+   > ![Azure 準備作業](_img/vs-azure/vs-azure-identity.png "確認コードを要求し、それを入力して続行します。")
 
 5. 最後の手順として、チェックボックスを選択して使用条件に同意した後、 **[サインアップ]** を選択します。  必要な作業は以上です。
    > [!div class="mx-imgBorder"]
-   > ![Azure 準備作業](_img/vs-azure/vs-azure-agreement.png)
+   > ![Azure のサインアップ](_img/vs-azure/vs-azure-agreement.png "[サインアップ] ボタンをクリックして、Azure サブスクリプションの作成を完了します。")
 
 0. Azure ダッシュボードのクイック スタート センターが読み込まれます。  
    > [!div class="mx-imgBorder"]
-   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-quick-start.png "Azure サブスクリプションが作成されると、Azure portal にリダイレクトされます。") 
 
 0. 後で簡単にアクセスできるように、[Azure portal](https://portal.azure.com) をブックマークします。
 
@@ -50,12 +50,12 @@ Visual Studio サブスクリプションの有効期限が切れた場合、ま
 
 Azure の毎月のクレジットは、いくつかの方法で引き続きご利用いただけます。  Azure リソースを保存するには、下で選択したアクションに関係なく、別の Azure サブスクリプションに[リソースを移す](/azure/azure-resource-manager/management/move-resource-group-and-subscription)必要があります。 
 
-- **Visual Studio サブスクリプションを直接購入する場合**、Microsoft Store で新しいサブスクリプションを購入するか、サブスクリプションを更新します。  
+- **Visual Studio サブスクリプションを直接購入する場合** 、Microsoft Store で新しいサブスクリプションを購入するか、サブスクリプションを更新します。  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **組織の誰かが代表してサブスクリプションを購入する場合**、[Visual Studio サブスクリプションの管理者に問い合わせ](./contact-my-admin.md)、必要な毎月のクレジットが与えられるサブスクリプションを要求してください。  
-- 別の Microsoft アカウントに関連付けられている同じサブスクリプション レベルで**別の Visual Studio サブスクリプションがアクティブになっている**場合、Visual Studio [サブスクリプション ポータル](https://my.visualstudio.com/subscriptions)で[代替アカウントを追加する](./manage-vs-subscriptions.md#managing-my-profile)ことで、別の有効な Visual Studio サブスクリプションに Azure 特典を移すことができます。  
+- **組織の誰かが代表してサブスクリプションを購入する場合** 、 [Visual Studio サブスクリプションの管理者に問い合わせ](./contact-my-admin.md)、必要な毎月のクレジットが与えられるサブスクリプションを要求してください。  
+- 別の Microsoft アカウントに関連付けられている同じサブスクリプション レベルで **別の Visual Studio サブスクリプションがアクティブになっている** 場合、Visual Studio [サブスクリプション ポータル](https://my.visualstudio.com/subscriptions)で [代替アカウントを追加する](./manage-vs-subscriptions.md#managing-my-profile)ことで、別の有効な Visual Studio サブスクリプションに Azure 特典を移すことができます。  
 
 以下の適格性テーブルを使用して、各サブスクリプションの種類に含まれるクレジットの数を確認してください。  
 

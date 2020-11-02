@@ -1,5 +1,7 @@
 ---
 title: FileClassifier タスク | Microsoft Docs
+description: MSBuild FileClassifier タスクを使用して、アセンブリに埋め込まれるソース リソースのセットを分類します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634189"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436901"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier タスク
 
@@ -30,20 +32,20 @@ ms.locfileid: "77634189"
 
 ## <a name="task-parameters"></a>タスク パラメーター
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`CLREmbeddedResource`|未使用。|
 |`CLRResourceFiles`|未使用。|
 |`CLRSatelliteEmbeddedResource`|未使用。|
 |`Culture`|省略可能な **String** 型のパラメーターです。<br /><br /> ビルドのカルチャを指定します。 ローカライズできないビルドの場合は、この値に **null** を指定できます。 **null** の場合、既定値は **CultureInfo.InvariantCulture** から返される小文字の値になります。|
 |`MainEmbeddedFiles`|省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> メイン アセンブリに埋め込まれる、ローカライズできないリソースを指定します。|
-|`OutputType`|必須の **String** 型のパラメーターです。<br /><br /> 指定したソース ファイルが埋め込まれるファイルの種類を指定します。 有効な値は、**exe**、**winexe**、または **library** です。|
+|`OutputType`|必須の **String** 型のパラメーターです。<br /><br /> 指定したソース ファイルが埋め込まれるファイルの種類を指定します。 有効な値は、 **exe** 、 **winexe** 、または **library** です。|
 |`SatelliteEmbeddedFiles`|省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> **Culture** パラメーターで指定されたカルチャのサテライト アセンブリに埋め込まれる、ローカライズ可能なファイルを指定します。|
 |`SourceFiles`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> 分類するファイルのリストを指定します。|
 
 ## <a name="remarks"></a>解説
 
-**Culture** パラメーターを設定しない場合、**SourceFiles** パラメーターを使用して指定したリソースは、すべてローカライズできないリソースになります。それ以外の場合は、**Localizable** 属性が **false** に設定されていない限り、ローカライズ可能なリソースになります。
+**Culture** パラメーターを設定しない場合、 **SourceFiles** パラメーターを使用して指定したリソースは、すべてローカライズできないリソースになります。それ以外の場合は、 **Localizable** 属性が **false** に設定されていない限り、ローカライズ可能なリソースになります。
 
 ## <a name="example"></a>例
 
@@ -66,7 +68,7 @@ ms.locfileid: "77634189"
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [WPF MSBuild のリファレンス](../msbuild/wpf-msbuild-reference.md)
 - [タスク リファレンス](../msbuild/wpf-msbuild-task-reference.md)

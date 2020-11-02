@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006320"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353383"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
 コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
@@ -25,7 +25,7 @@ ms.locfileid: "91006320"
 
 2. 特典ページの [サポート] セクションでコンシェルジェ チャット タイルを見つけ、 **[今すぐチャットを開始]** をクリックします。
     > [!div class="mx-imgBorder"]
-    > ![コンシェルジェ チャット タイル](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![コンシェルジェ チャット タイル](_img/vs-concierge-chat/vs-concierge-chat-tile.png "新しいチャット セッションを開始するには、[今すぐチャットを開始] をクリックします。")
 
 3. **[続行]** をクリックします。
 
@@ -33,7 +33,7 @@ ms.locfileid: "91006320"
 
 5. エージェントが対応可能になると、チャットが開始されます。
     > [!div class="mx-imgBorder"]
-    > ![コンシェルジェ チャット セッション](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![コンシェルジェ チャット セッション](_img/vs-concierge-chat/vs-concierge-chat-session.png "エージェントがセッションに参加すると、チャット セッション ウィンドウが表示されます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |

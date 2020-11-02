@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: how-to
-description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てできる方法について説明します
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てる方法について説明します
+ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022429"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467545"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -82,7 +82,7 @@ ms.locfileid: "91022429"
 > [!IMPORTANT]
 >
 > サブスクライバーを追加する場合の Azure AD グループの使用には、次の制限事項が適用されます。
-> - 管理ポータルに最初にグループを追加するときは、管理者が AAD テナントのメンバーである必要があります。  グループを追加した後、グループのメンバーシップの変更には管理者の関与は必要ありません。 
+> - 管理ポータルに最初にグループを追加するときに、管理者は AAD テナントのメンバーである必要があります。  グループを追加した後、グループのメンバーシップの変更には管理者の関与は必要ありません。 
 > - グループには、少なくとも 1 人のメンバーを含んでいる必要があります。  空のグループはサポートされていません。
 > - グループのユーザー数は 1,000 未満にする必要があります。 
 > - すべてのユーザーが、グループの最上位レベルにいる必要があります。  入れ子になったグループはサポートされていません。
@@ -119,6 +119,8 @@ Azure Active Directory グループ機能を利用し、サブスクライバー
 
 > [!NOTE]
 > 後に Azure AD グループの一部として追加されたユーザーにサブスクリプションを個別に既に割り当てている場合は、グループの一部として追加され、個別に一覧表示されなくなります。 ただし、個別のサブスクリプションが異なるサブスクリプション レベル用のものである場合は、サブスクリプションを 2 つ所有することになります。  例:ユーザーが個別の Visual Studio Professional サブスクリプションを所有していて、さらに Visual Studio Enterprise サブスクリプションを割り当てるグループのメンバーである場合は、両方を所有することになります。  
+>
+> サブスクリプションが割り当てられている Azure Active Directory グループからサブスクライバーを削除した場合、管理ポータルで更新内容が反映されるまでに最大 24 時間かかることがあります。 
 
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問

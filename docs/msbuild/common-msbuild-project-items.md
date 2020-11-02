@@ -1,5 +1,7 @@
 ---
 title: MSBuild プロジェクトの共通項目 | Microsoft Docs
+description: MSBuild プロジェクトの共通項目について説明します。 項目は 1 つ以上のファイルへの名前付き参照であり、ファイル名、パス、バージョン番号などのメタデータを持ちます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136915"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796395"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 

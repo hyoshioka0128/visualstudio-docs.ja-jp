@@ -1,5 +1,7 @@
 ---
 title: GetAssemblyIdentity タスク | Microsoft Docs
+description: MSBuild GetAssemblyIdentity タスクを使用して、指定されたファイルからアセンブリ ID を取得し、ID 情報を出力します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a09bd4955cee6e50368f7155fb2e03c2c1758bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8e242864ca68e0d84ace5f8ebeefd02881a394f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634020"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436863"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity タスク
 
@@ -33,7 +35,7 @@ ms.locfileid: "77634020"
 
 `GetAssemblyIdentity` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`Assemblies`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 取得したアセンブリ ID が含まれます。|
 |`AssemblyFiles`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ID の取得元のファイルを指定します。|
@@ -61,7 +63,7 @@ ms.locfileid: "77634020"
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

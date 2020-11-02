@@ -1,5 +1,7 @@
 ---
 title: 一般的な MSBuild 項目メタデータ | Microsoft Docs
+description: 一部の MSBuild SDK またはターゲットに対して意味を持ちますが、すべての項目に既定で設定されるわけではない、省略可能な項目メタデータについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 07/13/2020
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c715c16782733a08bb617a464c1aa9510d35b54
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425967"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796591"
 ---
 # <a name="common-msbuild-item-metadata"></a>一般的な MSBuild 項目メタデータ
 
@@ -28,7 +30,7 @@ ms.locfileid: "87425967"
 
 | 項目メタデータ | SDK | 説明 |
 |---------------| ------- | -------------|
-|%(Link)| すべて |Visual Studio プロジェクト システムでは、`Link` メタデータ (存在する場合) を使用して、プロジェクト ツリーに表示される内容を変更します。**ソリューション エクスプローラー**で、別の論理フォルダー構造にファイルを置くことができます。<br />さらに、それがコピーされる項目の 1 つである場合、`AssignTargetPath` タスクでは、出力ディレクトリ内のどこにファイルをコピーするか決定するために `Link` が参照されます。|
+|%(Link)| すべて |Visual Studio プロジェクト システムでは、`Link` メタデータ (存在する場合) を使用して、プロジェクト ツリーに表示される内容を変更します。 **ソリューション エクスプローラー** で、別の論理フォルダー構造にファイルを置くことができます。<br />さらに、それがコピーされる項目の 1 つである場合、`AssignTargetPath` タスクでは、出力ディレクトリ内のどこにファイルをコピーするか決定するために `Link` が参照されます。|
 |%(LinkBase)| .NET Core SDK | 項目のグループに対する `Link` メタデータ用に使うフォルダーを設定するために使用されます。 |
 
 ## <a name="see-also"></a>関連項目

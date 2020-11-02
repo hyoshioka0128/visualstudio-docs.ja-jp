@@ -1,7 +1,6 @@
 ---
 title: テキストの検索と置換、およびマルチキャレット選択
-description: Visual Studio コード エディターの検索と置換機能の使用方法について説明します。
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298567"
+ms.locfileid: "92334195"
 ---
 # <a name="find-and-replace-text"></a>テキストの検索と置換
 
@@ -123,9 +122,9 @@ ms.locfileid: "92298567"
 |**Ctrl**+**Alt** + ダブルクリック|セカンダリ言語選択を追加する|
 |**Ctrl**+**Alt** + クリック + ドラッグ|セカンダリ選択を追加する|
 |**Shift**+**Alt**+ **.**|選択項目として次に一致するテキストを追加する|
-|**Ctrl**+**Shift**+**Alt**+ **,**|選択項目として一致するすべてのテキストを追加する|
+|**Shift** + **Alt** + **;**|選択項目として一致するすべてのテキストを追加する|
 |**Shift**+**Alt**+ **,**|最後に選択した出現箇所を削除する|
-|**Ctrl**+**Shift**+**Alt**+ **.**|次に一致する出現箇所をスキップする|
+|**Shift**+**Alt**+ **/**|次に一致する出現箇所をスキップする|
 |**Alt** + クリック|ボックスの選択を追加する|
 |**Esc** またはクリック|すべての選択を解除する|
 

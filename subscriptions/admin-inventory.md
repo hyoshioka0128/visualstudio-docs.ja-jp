@@ -1,23 +1,23 @@
 ---
-title: 運用前環境のインベントリ | Visual Studio Marketplace
+title: Visual Studio サブスクリプションでの運用前環境のインベントリ | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 運用前環境のインベントリを実施する管理者の責任について説明します
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004158"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467428"
 ---
 # <a name="inventory-of-pre-production-environment"></a>運用前環境のインベントリ
 Visual Studio サブスクリプションは、デバイスではなくユーザーをカウントすることで、資産管理を簡略化します。
 
-Visual Studio の管理者は、Visual Studio サブスクリプションを**特定の指定した個人**に割り当てる必要があります。 Dev1 や Dev2 などの名前付け規則、または "FeatureTeam" のようなチーム名の使用は、**許可されていません**。
+Visual Studio の管理者は、Visual Studio サブスクリプションを **特定の指定した個人** に割り当てる必要があります。 Dev1 や Dev2 などの名前付け規則、または "FeatureTeam" のようなチーム名の使用は、 **許可されていません** 。
 
 実稼働前環境のインベントリを簡略化するいくつかの方法を次に示します。
 - ユーザーの割り当てを確認します。 Microsoft が提供する [Visual Studio 管理ポータル](https://manage.visualstudio.com/)と呼ばれる Web サイトで、Visual Studio サブスクリプションの割り当てを追跡できます。

@@ -1,5 +1,7 @@
 ---
 title: FindUnderPath タスク | Microsoft Docs
+description: MSBuild FindUnderPath タスクを使用して、指定した項目コレクション内の、指定したフォルダー以下のパスを持つ項目を検索します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0afb9ff23e2f2533b7c51b500806a025691a232b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634137"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436740"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath タスク
 
@@ -41,7 +43,7 @@ ms.locfileid: "77634137"
 |`Path`|必須の <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 参照として使用するフォルダー パスを指定します。|
 |`UpdateToAbsolutePaths`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、出力項目のパスが絶対パスになります。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
@@ -76,7 +78,7 @@ ms.locfileid: "77634137"
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [タスク](../msbuild/msbuild-tasks.md)

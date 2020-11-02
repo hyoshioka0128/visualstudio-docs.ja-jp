@@ -1,21 +1,21 @@
 ---
-title: Visual Studio サブスクリプションにライセンスを割り当てる | Microsoft Docs
+title: Visual Studio サブスクリプションをユーザーに割り当てる | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
-description: 管理者がサブスクライバーにライセンスを割り当てる方法を説明します
-ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: 管理者がサブスクライバーにライセンスを割り当てる方法について説明します
+ms.openlocfilehash: 044cf4e9df3eb2ebf1d10aa8c08be804ca98f393
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022199"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467532"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理者ポータルでライセンスを割り当てる
-Visual Studio サブスクリプションの管理者は、管理者ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
+Visual Studio サブスクリプションの管理者は、管理ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
 
 ユーザーのグループに対しては、サブスクリプションの割り当て方法を選択できます。  
 - サブスクリプションは一度に 1 つずつ割り当てることができます。
@@ -56,7 +56,7 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
    > ![[追加] ボタンを選択する](media/add-button.png "[追加] を選択して情報を保存し、サブスクリプションをサブスクライバーに割り当てます。")
 
 ## <a name="resend-assignment-emails"></a>割り当てメールを再送信する
-サブスクライバーを追加すると、詳細な説明が記載された割り当てメールがサブスクライバーに自動的に送信されます。 サブスクライバーを選択して、上部メニューの **[再送信]** ボタンを選択することで、いつでも割り当てメールを送信し直すことができます。  複数のユーザーにメールを再送信するには、**Ctrl** キーを押しながら複数のサブスクライバーを選択します。  **[再送信]** ボタンを選択すると、そのサブスクライバーに再送信するかどうかを確認するダイアログが表示されます。  
+サブスクライバーを追加すると、詳細な説明が記載された割り当てメールがサブスクライバーに自動的に送信されます。 サブスクライバーを選択して、上部メニューの **[再送信]** ボタンを選択することで、いつでも割り当てメールを送信し直すことができます。  複数のユーザーにメールを再送信するには、 **Ctrl** キーを押しながら複数のサブスクライバーを選択します。  **[再送信]** ボタンを選択すると、そのサブスクライバーに再送信するかどうかを確認するダイアログが表示されます。  
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

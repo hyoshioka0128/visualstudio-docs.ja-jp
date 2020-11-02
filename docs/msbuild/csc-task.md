@@ -1,5 +1,7 @@
 ---
 title: Csc タスク | Microsoft Docs
+description: この記事では、C# コンパイラ csc.exe をラップし、.exe、.dll、または .netmodule ファイルを生成する、MSBuild Csc タスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167424"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796564"
 ---
 # <a name="csc-task"></a>Csc タスク
 
-*csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「[C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
+*csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「 [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -58,7 +60,7 @@ ms.locfileid: "82167424"
 | `LinkResources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 出力ファイル内で .NET Framework リソースへのリンクを作成します。リソース ファイルは出力ファイル内に置かれません。<br /><br /> このパラメーターに渡される項目には、「`LogicalName`」や「`Access`」という名前のメタデータ エントリを任意で指定できます。 `LogicalName` は `/linkresource` スイッチの `identifier` パラメーターに対応し、`Access` は `accessibility-modifier` パラメーターに対応します。 詳しくは、「[-linkresource (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option)」をご覧ください。 |
 | `MainEntryPoint` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Main` メソッドの場所を指定します。 詳細については、「[-main (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)」を参照してください。 |
 | `ModuleAssemblyName` | 省略可能な `String` 型のパラメーターです。<br /><br /> このモジュールが一部となるアセンブリの名前を指定します。 |
-| `NoConfig` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、*csc.rsp* ファイルを使用してコンパイルしないようにコンパイラに指示します。 詳しくは、「[-noconfig (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)」をご覧ください。 |
+| `NoConfig` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、 *csc.rsp* ファイルを使用してコンパイルしないようにコンパイラに指示します。 詳しくは、「[-noconfig (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)」をご覧ください。 |
 | `NoLogo` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、コンパイラの著作権情報が表示されません。 詳しくは、「[-nologo (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option)」をご覧ください。 |
 | `NoStandardLib` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、System 名前空間の全体を定義する *mscorlib.dll* がインポートされません。 独自の System 名前空間およびオブジェクトを定義または作成する場合は、このパラメーターを使用します。 詳しくは、「[-nostdlib (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)」をご覧ください。 |
 | `NoWin32Manifest` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、既定の Win32 マニフェストを含めないでください。 |
@@ -78,7 +80,7 @@ ms.locfileid: "82167424"
 | `WarningLevel` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> コンパイラが表示する警告レベルを指定します。 詳しくは、「[-warn (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option)」をご覧ください。 |
 | `WarningsAsErrors` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーとして扱う警告の一覧を指定します。 詳しくは、「[-warnaserror (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)」をご覧ください。<br /><br /> このパラメーターは `TreatWarningsAsErrors` パラメーターをオーバーライドします。 |
 | `WarningsNotAsErrors` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーとして扱わない警告の一覧を指定します。 詳しくは、「[-warnaserror (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)」をご覧ください。<br /><br /> このパラメーターは、`TreatWarningsAsErrors` パラメーターが `true` に設定されている場合にのみ役に立ちます。 |
-| `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> **ファイル エクスプローラー**で出力ファイルを適切に表示する *.ico* ファイルをアセンブリに挿入します。 詳しくは、「[-win32icon (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)」を参照してください。 |
+| `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> **ファイル エクスプローラー** で出力ファイルを適切に表示する *.ico* ファイルをアセンブリに挿入します。 詳しくは、「[-win32icon (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)」を参照してください。 |
 | `Win32Manifest` | 省略可能な `String` 型のパラメーターです。<br /><br /> 追加する Win32 マニフェストを指定します。 |
 | `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[-win32res (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)」をご覧ください。 |
 

@@ -1,5 +1,7 @@
 ---
 title: '方法: MSBuild で特殊文字をエスケープする | Microsoft Docs'
+description: 特殊文字をエスケープして、これらの文字を MSBuild プロジェクト ファイルでリテラルとして使用できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 923c517653c42dd0362b398c420c99454ccf4034
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633877"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436408"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>方法: MSBuild で特殊文字をエスケープする
 
@@ -28,7 +30,7 @@ MSBuild プロジェクト ファイルでは、特定の文字が特殊な意�
 
 ## <a name="msbuild-special-characters"></a>MSBuild の特殊文字
 
-特殊文字が使用される場所の 1 つの例として、アイテム一覧の `Include` 属性が挙げられます。 たとえば、次のアイテム一覧では、*MyFile.cs* と *MyClass.cs* の 2 つのアイテムを宣言しています。
+特殊文字が使用される場所の 1 つの例として、アイテム一覧の `Include` 属性が挙げられます。 たとえば、次のアイテム一覧では、 *MyFile.cs* と *MyClass.cs* の 2 つのアイテムを宣言しています。
 
 ```xml
 <Compile Include="MyFile.cs;MyClass.cs"/>

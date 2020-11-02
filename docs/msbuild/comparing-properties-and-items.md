@@ -1,5 +1,7 @@
 ---
 title: プロパティと項目の比較 | Microsoft Docs
+description: MSBuild のプロパティと項目を使用して、タスクに情報を渡し、条件を評価し、プロジェクト ファイルで参照する値を格納する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634410"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796772"
 ---
 # <a name="compare-properties-and-items"></a>プロパティと項目を比較する
 
@@ -27,7 +29,7 @@ MSBuild のプロパティと項目は、いずれもタスクに情報を渡し
 
 ## <a name="scalars-and-vectors"></a>スカラーとベクター
 
-MSBuild プロパティは 1 つの文字列値のみを持つ名前と値のペアなので、多くの場合は*スカラー*と説明されます。 MSBuild 項目の種類は項目のリストなので、多くの場合は*ベクター*と説明されます。 ただし実際には、プロパティで複数の値を表すことがあり、項目の種類の項目数が 0 個または 1 個の場合があります。
+MSBuild プロパティは 1 つの文字列値のみを持つ名前と値のペアなので、多くの場合は *スカラー* と説明されます。 MSBuild 項目の種類は項目のリストなので、多くの場合は *ベクター* と説明されます。 ただし実際には、プロパティで複数の値を表すことがあり、項目の種類の項目数が 0 個または 1 個の場合があります。
 
 ### <a name="target-dependency-injection"></a>ターゲットの依存関係の挿入
 
@@ -43,7 +45,7 @@ MSBuild プロパティは 1 つの文字列値のみを持つ名前と値のペ
 </PropertyGroup>
 ```
 
-通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 次に例を示します。
+通常、`BuildDependsOn` プロパティは、ターゲットの `DependsOnTargets` 属性の引数として使用され、項目一覧に変換されます。 このプロパティをオーバーライドして、ターゲットを追加したり、ターゲットの実行順を変更したりすることができます。 たとえば、次のように入力します。
 
 ```xml
 <PropertyGroup>
@@ -185,6 +187,6 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [詳細な概念](../msbuild/msbuild-advanced-concepts.md)

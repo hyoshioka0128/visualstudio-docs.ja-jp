@@ -1,5 +1,7 @@
 ---
 title: '方法: MSBuild プロジェクト SDK の参照 | Microsoft Docs'
+description: MSBuild プロジェクト SDK を使用して、プロパティとターゲットをインポートする必要があるソフトウェア開発キットを簡略化する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136837"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436122"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
 

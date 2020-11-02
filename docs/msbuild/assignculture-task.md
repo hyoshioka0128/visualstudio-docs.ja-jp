@@ -1,5 +1,7 @@
 ---
 title: AssignCulture タスク | Microsoft Docs
+description: MSBuild AssignCulture タスクを使用して、対応するカルチャ識別子を含む Culture という名前のメタデータを持つ項目を生成します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634566"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353344"
 ---
 # <a name="assignculture-task"></a>AssignCulture タスク
 
@@ -33,7 +35,7 @@ ms.locfileid: "77634566"
 
 `AssignCulture` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`AssignedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `Files` パラメーターで受信した項目の一覧が含まれています。各項目には `Culture` メタデータ エントリが追加されています。<br /><br /> `Files` パラメーターから受信した項目に既に `Culture` メタデータ エントリが含まれている場合は、この元のメタデータ エントリが使用されます。<br /><br /> このタスクでは、ファイル名に有効なカルチャ ID が含まれている場合にのみ、`Culture` メタデータ エントリが割り当てられます。 カルチャ ID は、ファイル名の最後の 2 つのドットの間にある必要があります。|
 |`AssignedFilesWithCulture`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターの項目のうち、`Culture` メタデータ エントリを持つ項目のサブセットが含まれています。|
@@ -41,7 +43,7 @@ ms.locfileid: "77634566"
 |`CultureNeutralAssignedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> `AssignedFiles` パラメーターに生成された項目の同じ一覧が含まれていますが、ファイル名からカルチャが削除されています。<br /><br /> このタスクでは、カルチャ ID が有効な場合にのみ、ファイル名からカルチャが削除されます。|
 |`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> カルチャを割り当てるためのカルチャ名が埋め込まれたファイルの一覧を指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
@@ -81,7 +83,7 @@ ms.locfileid: "77634566"
 |`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (追加メタデータなし)|
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (カルチャ = "fr")<br /><br /> *MyResource2.XX.resx* (追加メタデータなし)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

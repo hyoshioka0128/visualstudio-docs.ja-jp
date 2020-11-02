@@ -1,5 +1,7 @@
 ---
 title: GetWinFXPath タスク | Microsoft Docs
+description: 現在の .NET ランタイムのディレクトリが返される、MSBuild GetWinFXPath タスクを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633968"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436777"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath タスク
 
@@ -37,13 +39,13 @@ ms.locfileid: "77633968"
 | `WinFXNativePath` | 必須の **String** 型のパラメーターです。<br /><br /> ネイティブ .NET ランタイムへのパスを指定します。 |
 | `WinFXWowPath` | 必須の **String** 型のパラメーターです。<br /><br /> 64 ビット システム上の 32 ビット **Windows on Windows** モジュール内の .NET アセンブリへのパスを指定します。 |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
- <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> タスクが 64 ビット プロセッサで実行されている場合、**WinFXPath** パラメーターは **WinFXWowPath** パラメーターに保存されているパスに設定されます。それ以外の場合、**WinFXPath** パラメーターは **WinFXNativePath** パラメーターに保存されているパスに設定されます。
+ <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> タスクが 64 ビット プロセッサで実行されている場合、 **WinFXPath** パラメーターは **WinFXWowPath** パラメーターに保存されているパスに設定されます。それ以外の場合、 **WinFXPath** パラメーターは **WinFXNativePath** パラメーターに保存されているパスに設定されます。
 
 ## <a name="example"></a>例
 
- 次の例では、**GetWinFXPath** タスクを使用して、.NET ランタイムへのネイティブ パスを検出する方法を示します。
+ 次の例では、 **GetWinFXPath** タスクを使用して、.NET ランタイムへのネイティブ パスを検出する方法を示します。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

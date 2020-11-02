@@ -1,5 +1,7 @@
 ---
 title: CustomBuild タスク | Microsoft Docs
+description: この記事では、MSBuild で C++ ビルド プロセスのカスタマイズをサポートするために使用する、MSBuild CustomBuild タスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 640c1e6ae286b45f8700709829140093452a9491
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595346"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796551"
 ---
 # <a name="custombuild-task"></a>CustomBuild タスク
 
@@ -30,14 +32,14 @@ Microsoft C++ コンパイラ ツール cmd.exe をラップします。 この�
 
 ## <a name="parameters"></a>パラメーター
 
-以下の表では、**CustomBuild** タスクのパラメーターについて説明します。
+以下の表では、 **CustomBuild** タスクのパラメーターについて説明します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |**BuildSuffix**|省略可能な **string** 型のパラメーターです。|
 |**Sources**|必須の **ITaskItem[]** 型のパラメーターです。|
 |**TrackerLogDirectory**|省略可能な **string** 型のパラメーターです。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

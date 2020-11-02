@@ -1,5 +1,7 @@
 ---
 title: CPPClean タスク | Microsoft Docs
+description: この記事では、C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルの削除に使用する CPPClean タスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,22 +21,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b8f59b66ab1fc117a29d7ed8db2d380b4b11b437
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634345"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796109"
 ---
 # <a name="cppclean-task"></a>CPPClean タスク
 
-C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。 ビルド ファイルを削除するプロセスは、*クリーニング* と呼ばれます。
+C++ プロジェクトのビルド時に MSBuild によって作成される一時ファイルを削除します。 ビルド ファイルを削除するプロセスは、 *クリーニング* と呼ばれます。
 
 ## <a name="parameters"></a>パラメーター
 
  **CPPClean** タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |**DeletedFiles**|省略可能な `ITaskItem[]` 型の出力パラメーターです。<br /><br /> タスクで使用および生成できる MSBuild 出力ファイル項目の配列を定義します。|
 |**DoDelete**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合は、一時ビルド ファイルを消去します。|
@@ -42,6 +44,6 @@ C++ プロジェクトのビルド時に MSBuild によって作成される一�
 |**FilesExcludedFromClean**|省略可能な `String` 型のパラメーターです。<br /><br /> 消去しないファイルをセミコロンで区切ったリストを指定します。|
 |**FoldersToClean**|必須の `String` 型のパラメーターです。<br /><br /> 消去するディレクトリをセミコロンで区切ったリストを指定します。 完全パスまたは相対パスを指定することができ、パスにはワイルドカード記号 (*) を含めることができます。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

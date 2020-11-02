@@ -1,5 +1,7 @@
 ---
 title: タスク エラーの診断 | Microsoft Docs
+description: 失敗したタスク、ツール名、およびその他の情報を特定して、MSBuild タスクの失敗を診断する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593279"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796473"
 ---
 # <a name="diagnosing-task-failures"></a>タスク エラーの診断
 
@@ -51,7 +53,7 @@ Build FAILED.
 
 この結果は、ファイル `S:\MSB6006_demo\MSB6006_demo.csproj` の 19 行目に定義されているタスクで、プロジェクト `S:\MSB6006_demo\MSB6006_demo.csproj` の `InvokeToolTask` というターゲットで、エラーが発生したことを示しています。
 
-### <a name="in-visual-studio"></a>Visual Studio で使用する
+### <a name="in-visual-studio"></a>Visual Studio 内
 
 Visual Studio のエラー一覧の列 `Project`、`File`、`Line` にも同じ情報が表示されます。
 

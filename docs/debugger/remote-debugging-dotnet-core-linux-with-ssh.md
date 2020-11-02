@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bc0fa990a79b1855ec382f42248a0f847c3c9c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: 2d66181f5e6720348e18c34b735ef29e24c0111a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78200867"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796304"
 ---
 # <a name="remote-debug-net-core-on-linux-using-ssh"></a>SSH を使用して Linix で .NET Core をリモート デバッグする
 
@@ -22,7 +22,7 @@ Visual Studio 2017 以降では、Linux で実行されている .NET Core プ�
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-Visual Studio コンピューターでは、**ASP.NET と Web 開発**ワークロードまたは **.NET Core クロスプラットフォーム開発**ワークロードのいずれかをインストールする必要があります。
+Visual Studio コンピューターでは、 **ASP.NET と Web 開発** ワークロードまたは **.NET Core クロスプラットフォーム開発** ワークロードのいずれかをインストールする必要があります。
 
 Linux サーバーでは、SSH サーバーをインストールする必要があります。curl または wget で解凍してインストールします。 たとえば、Ubuntu では、以下を実行して行うことができます。
 
@@ -42,7 +42,7 @@ sudo apt-get install openssh-server unzip curl
 
 - ソースをターゲット コンピューターにコピーし、Linux コンピューター上で ```dotnet build``` を使用してビルドします。
 
-- Windows でアプリをビルドし、ビルド成果物を Linux コンピューターに転送します。 (ビルド成果物は、アプリケーション自体、依存する可能性のあるランタイム ライブラリ、および *.deps.json* ファイルで構成されます)。
+- Windows 上でアプリをビルドし、ビルド成果物を Linux コンピューターに転送します。 (ビルド成果物は、アプリケーション自体、依存する可能性のあるランタイム ライブラリ、および *.deps.json* ファイルで構成されます)。
 
 ## <a name="attach-the-debugger"></a>デバッガーをアタッチします。
 

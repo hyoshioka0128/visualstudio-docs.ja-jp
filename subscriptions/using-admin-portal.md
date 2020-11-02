@@ -1,18 +1,18 @@
 ---
-title: サブスクリプション管理者ポータルの使用を開始する | Visual Studio Marketplace
+title: サブスクリプション管理ポータルの使用を開始する | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
-description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: サブスクリプション管理ポータルを使用して、組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
+ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005226"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353305"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 
@@ -25,8 +25,8 @@ Visual Studio サブスクリプション管理ポータルには、組織のサ
 ## <a name="important-considerations"></a>重要な考慮事項
 Visual Studio サブスクリプション管理ポータルを使用するときには、次の点に留意してください。
 - **Visual Studio サブスクリプションはユーザーごとにライセンスが付与されます。** 各サブスクリプション会員は開発およびテストを目的として、ソフトウェアを必要な数のコンピューターで使用できます。
-- 組織で購入した Visual Studio サブスクリプションに応じて、**サブスクライバーごとに 1 つのサブスクリプション レベルのみを割り当ててください**。 複数のサブスクリプション レベルが割り当てられているサブスクリプション会員がいる場合は、1 つのレベルだけが割り当てられるように会員の設定を編集してください。
-- ステップアップ ライセンスの購入によってサブスクリプションをアップグレードするか、低いレベルのサブスクリプションに更新した場合は、**サブスクリプション会員のサブスクリプション レベルを更新する必要があります**。
+- 組織で購入した Visual Studio サブスクリプションに応じて、 **サブスクライバーごとに 1 つのサブスクリプション レベルのみを割り当ててください** 。 複数のサブスクリプション レベルが割り当てられているサブスクリプション会員がいる場合は、1 つのレベルだけが割り当てられるように会員の設定を編集してください。
+- ステップアップ ライセンスの購入によってサブスクリプションをアップグレードするか、低いレベルのサブスクリプションに更新した場合は、 **サブスクリプション会員のサブスクリプション レベルを更新する必要があります** 。
 - **サブスクリプション会員間でサブスクリプションを共有しないでください。** サブスクリプションは、指定した個人に割り当てる必要があります。  チームに対するサブスクリプションの割り当ては許可されていません。  サブスクリプション特典 (開発およびテスト用ソフトウェア、Microsoft Azure、e ラーニングなど) のすべてまたは一部使用するユーザーにサブスクリプションを割り当てる必要があります。
 
 ## <a name="the-subscribers-page"></a>[サブスクライバー] ページ
@@ -46,18 +46,18 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 
 購入済みかつ割り当て済みで組織が各契約でまだ使用できるサブスクリプション ライセンスの数に関する追加情報を表示するには、上部にあるアイコンをクリックしてスライド式のパネルを有効にします。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio サブスクリプションの管理ポータルのサブスクライバー ページ](_img/using-admin-portal/subscribers-page.png)
+> ![Visual Studio サブスクリプションの管理ポータルのサブスクライバー ページ](_img/using-admin-portal/subscribers-page.png "サブスクライバー ページには、種類別のサブスクリプション数が表示されます。")
 
 ## <a name="the-details-page"></a>[詳細] ページ
 表示している契約の詳細については、2 番目のアイコンを選択して [契約の詳細] タブを表示します。スライド式のパネルには、契約の状態、購入アカウント、組織の詳細、スーパー管理者、およびその他の関連情報が表示されます。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio サブスクリプションの管理ポータルの [詳細] ページ](_img/using-admin-portal/details-page.png)
+> ![Visual Studio サブスクリプションの管理ポータルの [詳細] ページ](_img/using-admin-portal/details-page.png "詳細ページには、お客様の契約に関する情報が表示されます (スーパー管理者の名前など)。")
 
 ## <a name="resources"></a>リソース
 - [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
 - [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
-- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio の管理者とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

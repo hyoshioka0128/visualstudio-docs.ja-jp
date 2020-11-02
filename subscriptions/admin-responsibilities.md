@@ -1,21 +1,21 @@
 ---
-title: 管理者の責任 | Visual Studio Marketplace
+title: Visual Studio サブスクリプションの管理者の責任 | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006138"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467467"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
-管理者は組織のサブスクリプションを管理できます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。
+# <a name="overview-of-admin-responsibilities"></a>管理者責任の概要
+管理者は組織のサブスクリプションを管理できます。  管理者ロールには、ライセンス条項に基づいてサブスクリプションが管理されていることを保証するという責任も伴います。 この記事では、管理者ロールに伴う責任、特典、制限について説明します。
 
 ## <a name="roles--responsibilities"></a>役割と責任
 Visual Studio サブスクリプション管理者には、次の 4 つの主な責任があります。

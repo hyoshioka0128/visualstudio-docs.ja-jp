@@ -1,5 +1,7 @@
 ---
 title: GetFileHash タスク | Microsoft Docs
+description: MSBuild GetFileHash タスクを使用して、ファイルまたは一連のファイルの内容のチェックサムを計算する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e9e6e30cf8a224bfdfbde2c728545092bd1494b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578652"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436853"
 ---
 # <a name="getfilehash-task"></a>GetFileHash タスク
 
@@ -32,10 +34,10 @@ ms.locfileid: "77578652"
 
  `GetFileHash` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`Files`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br />ハッシュするファイル。|
-|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 出力パラメーター。<br /><br />`Files` 入力と、ファイル ハッシュに設定された追加メタデータ。|
+|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 出力パラメーターです。<br /><br />`Files` 入力と、ファイル ハッシュに設定された追加メタデータ。|
 |`Hash`|`String` 出力パラメーターです。<br /><br />ファイルのハッシュ。 この出力は、項目が厳密に 1 個渡された場合にのみ設定されます。|
 |`Algorithm`|省略可能な `String` 型のパラメーターです。<br /><br />アルゴリズム。 許可値: `SHA256`、`SHA384`、`SHA512`。 既定値 = `SHA256`。|
 |`MetadataName`|省略可能な `String` 型のパラメーターです。<br /><br />メタデータ名。この場所で、各項目にハッシュが保管されます。 既定値は `FileHash` です。|
@@ -63,7 +65,7 @@ ms.locfileid: "77578652"
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 

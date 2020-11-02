@@ -1,6 +1,7 @@
 ---
 title: ビルド処理を拡張する
-ms.custom: seodec18
+description: プロジェクトのビルド方法を制御およびカスタマイズできるように、ビルド プロセスを変更するさまざまな方法について説明します。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,18 +15,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3bebc0a64f814e71e7b5ab30282a70fd7eb85e
-ms.sourcegitcommit: d293c0e3e9cc71bd4117b6dfd22990d52964addc
+ms.openlocfilehash: 07f0312892d9f4f4073cf6fb2c9537ffa52a6267
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88041039"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436355"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
 
 Visual Studio のビルド処理は、プロジェクト ファイルにインポートされる一連の MSBuild *.targets* ファイルによって定義されます。 このインポートされるファイルの 1 つである *Microsoft.Common.targets* を拡張することで、ビルド処理の複数のポイントでカスタム タスクを実行できます。 この記事では、Visual Studio のビルド処理を拡張するために使用できる 2 つの方法について説明します。
 
-- 共通のターゲット (*Microsoft.Common.targets* またはインポートされるファイル) で定義されている特定の定義済みターゲットをオーバーライドする。
+- 共通のターゲット ( *Microsoft.Common.targets* またはインポートされるファイル) で定義されている特定の定義済みターゲットをオーバーライドする。
 
 - 共通のターゲットで定義されている "DependsOn" プロパティをオーバーライドする。
 
@@ -34,7 +35,7 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、MSBuild では、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットが呼び出され、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットが呼び出されます。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、MSBuild タスクを利用し、ビルド処理をさらに細かく制御できます。
 
 > [!NOTE]
-> SDK スタイルのプロジェクトでは、*プロジェクト ファイルの最後の行の後に*、ターゲットが暗黙的にインポートされます。 つまり、インポートを手動で指定しない限り、既定のターゲットをオーバーライドすることはできないということです。詳しくは、「[方法: MSBuild プロジェクト SDK の使用](how-to-use-project-sdk.md)」で説明されています。
+> SDK スタイルのプロジェクトでは、 *プロジェクト ファイルの最後の行の後に* 、ターゲットが暗黙的にインポートされます。 つまり、インポートを手動で指定しない限り、既定のターゲットをオーバーライドすることはできないということです。詳しくは、「[方法: MSBuild プロジェクト SDK の使用](how-to-use-project-sdk.md)」で説明されています。
 
 #### <a name="to-override-a-predefined-target"></a>事前定義されているターゲットをオーバーライドするには
 
@@ -65,12 +66,12 @@ Visual Studio のビルド処理は、プロジェクト ファイルにイン�
 |`BeforeRebuild`, `AfterRebuild`|これらのターゲットのいずれかに挿入されているタスクは、コア再ビルド機能の呼び出しの前または後に実行されます。 *Microsoft.Common.targets* のターゲット実行順序は `BeforeRebuild`、`Clean`、`Build`、`AfterRebuild` です。|
 |`BeforeClean`, `AfterClean`|これらのターゲットのいずれかに挿入されているタスクは、コア クリーン機能の呼び出しの前または後に実行されます。|
 |`BeforePublish`, `AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
-|`BeforeResolveReferences`、`AfterResolveReferences`|これらのターゲットのいずれかに挿入されているタスクは、アセンブリ参照解決の前または後に実行されます。|
-|`BeforeResGen`、`AfterResGen`|これらのターゲットのいずれかに挿入されているタスクは、リソース生成の前または後に実行されます。|
+|`BeforeResolveReferences`, `AfterResolveReferences`|これらのターゲットのいずれかに挿入されているタスクは、アセンブリ参照解決の前または後に実行されます。|
+|`BeforeResGen`, `AfterResGen`|これらのターゲットのいずれかに挿入されているタスクは、リソース生成の前または後に実行されます。|
 
 ## <a name="example-aftertargets-and-beforetargets"></a>例:AfterTargets と BeforeTargets
 
-次の例からは、出力ファイルで何らかの作業を行うカスタム ターゲットを追加する目的で `AfterTargets` 属性を使用する方法がわかります。 この場合、*CustomOutput* という新しいフォルダーにカスタム ファイルがコピーされます。  この例からはまた、カスタムのビルド操作によって作成されたファイルを消去する方法も確認できます (ターゲットは `CustomClean`)。具体的には、`BeforeTargets` 属性を使用する、`CoreClean` ターゲットの前にカスタムの消去作業を実行するように指定するという方法が採られています。
+次の例からは、出力ファイルで何らかの作業を行うカスタム ターゲットを追加する目的で `AfterTargets` 属性を使用する方法がわかります。 この場合、 *CustomOutput* という新しいフォルダーにカスタム ファイルがコピーされます。  この例からはまた、カスタムのビルド操作によって作成されたファイルを消去する方法も確認できます (ターゲットは `CustomClean`)。具体的には、`BeforeTargets` 属性を使用する、`CoreClean` ターゲットの前にカスタムの消去作業を実行するように指定するという方法が採られています。
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

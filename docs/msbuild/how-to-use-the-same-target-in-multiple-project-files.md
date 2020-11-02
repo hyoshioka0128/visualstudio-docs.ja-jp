@@ -1,5 +1,7 @@
 ---
 title: '方法: 複数のプロジェクト ファイルで同じターゲットを使用する | Microsoft Docs'
+description: ターゲットを MSBuild プロジェクト ファイルに保存し、そのターゲットを使用する必要がある他のプロジェクトにインポートする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255575"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436052"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>方法: 複数のプロジェクト ファイルで同じターゲットを使用する
 
@@ -54,7 +56,7 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 </Project>
 ```
 
- 次の XML では、*MyCommon.targets* をインポートする、*MyApp.proj* が定義されます。
+ 次の XML では、 *MyCommon.targets* をインポートする、 *MyApp.proj* が定義されます。
 
 ```xml
 <Project
@@ -71,7 +73,7 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 
  `Name="MyCommon"`
 
- プロジェクトはプロパティ `Name` が *MyApp.proj* で定義された後にインポートされるため、*MyCommon.targets* の `Name` の定義により *MyApp.proj* の定義がオーバーライドされます。 プロパティ Name が定義される前にプロジェクトがインポートされた場合、ビルドは次のメッセージを表示します。
+ プロジェクトはプロパティ `Name` が *MyApp.proj* で定義された後にインポートされるため、 *MyCommon.targets* の `Name` の定義により *MyApp.proj* の定義がオーバーライドされます。 プロパティ Name が定義される前にプロジェクトがインポートされた場合、ビルドは次のメッセージを表示します。
 
  `Name="MyApp"`
 
@@ -83,7 +85,7 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 
 3. プロジェクト ファイルで、インポートされるプロジェクトのプロパティとアイテムの既定の定義をオーバーライドするすべてのプロパティとアイテムを定義します。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
  次のコード例は、2 つ目のコード例でインポートされる *MyCommon.targets* ファイルを示しています。 *.targets* ファイルでは、インポートを行うプロジェクトからのプロパティを評価してビルドを構成します。
 
@@ -102,9 +104,9 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 </Project>
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
- 次のコード例では、*MyCommon.targets* ファイルをインポートします。
+ 次のコード例では、 *MyCommon.targets* ファイルをインポートします。
 
 ```xml
 <Project DefaultTargets="Build"

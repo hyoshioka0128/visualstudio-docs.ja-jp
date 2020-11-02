@@ -1,18 +1,18 @@
 ---
-title: Parasoft Virtualize/SOAtest Professional Desktop の特典 | Microsoft Docs
+title: Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006268"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436025"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -24,22 +24,22 @@ ms.locfileid: "91006268"
 
 2. [ツール] セクションで、Parasoft のタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。   コードが正常に取得された通知を受け取ります。  **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典タイル](_img/vs-parasoft/vs-parasoft-tile.png)
+   > ![Parasoft 特典タイル](_img/vs-parasoft/vs-parasoft-tile.png "Parasoft タイルで [コードの取得] をクリックし、[アクティブ化] をクリックして作業を開始します。")
 
 3. Parasoft の Web サイトにリダイレクトされるので、アカウントを作成します。  連絡先情報を入力して、 **[Submit]\(送信\)** をクリックするだけです。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-new-account.png)
+   > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-new-account.png "連絡先情報を入力し、[送信] をクリックしてアカウントを作成します。")
 
    > [!Note]
    > このページの表には、1 年間の価格と Visual Studio の割引が示されています。 この料金は、6 か月のサブスクリプションを使用した後に適用されます。  
 
 4. アカウントを作成すると、ダウンロード方法が記載されたメールが送信されたことの通知が表示されます  (受信トレイにメールが表示されない場合は、スパムまたは迷惑メール フォルダーを確認してください)。
 
-5. メールを開き、**アクティブ化コード**をクリップボードにコピーします。
+5. メールを開き、 **アクティブ化コード** をクリップボードにコピーします。
 
 6. オペレーティング システムに対応するリンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典ウェルカム メール](_img/vs-parasoft/vs-parasoft-email.png)
+   > ![Parasoft 特典ウェルカム メール](_img/vs-parasoft/vs-parasoft-email.png "お使いのオペレーティング システムに一致するダウンロード リンクを選択します。")
 
 7. 使っているブラウザーによっては、インストーラーを実行できる別のダイアログ ボックスが表示されることがあります。  たとえば、Internet Explorer では、parasoft_soavirt_9.10.2_win32_x86_64.exe の最近のダウンロードのリストが上部に表示されます。 **[Run]\(実行\)** をクリックしてインストーラーを開始します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "91006268"
 
 10. Parasoft SOAtest & Virtualize セットアップ ウィザードが開始します。  **[次へ]** をクリックします。
     > [!div class="mx-imgBorder"]
-    > ![Parasoft 特典インストール開始](_img/vs-parasoft/vs-parasoft-start-install.png)
+    > ![Parasoft 特典インストール開始](_img/vs-parasoft/vs-parasoft-start-install.png "[次へ] をクリックして、Parasoft SOAtest & Virtualize のインストールを開始します。")
 
 11. **[同意する]** をクリックし、 **[次へ]** をクリックします。
 

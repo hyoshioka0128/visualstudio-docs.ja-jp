@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005951"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353370"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure へ移行するためのアプリケーションのクラウド レディネスを識別したり、移行中と移行後両方のアプリの進行状況を監視したりできます。
@@ -26,14 +26,14 @@ ms.locfileid: "91005951"
 2. [ツール] カテゴリ内で、CAST Highlight 特典タイルを見つけ、 **[コードを取得]** をクリックします。
 
    > [!div class="mx-imgBorder"]
-   > ![CAST Highlight 特典タイル](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![CAST Highlight 特典タイル](_img/vs-cast-highlight/vs-cast-highlight-tile.png "開始するには、CAST Highlight 特典タイルの [コードの取得] をクリックします。")
 
 0. コードが正常に取得されたことを知らせるメッセージが表示されます。  **[アクティブ化]** をクリックします。 (今すぐアクティブ化しない場合は、サブスクリプション ポータルで CAST Highlight タイルにいつでも戻ることができます。  [コードを取得] リンクが [アクティブ化] に変わり、それをクリックすると、アクティブ化プロセスが再開されます。)
 
 0. CAST Highlight ページにリダイレクトされます。ここでご自分のサブスクリプションの機能を調べることができます。  アカウントを作成する準備ができたら、Web フォームにご自分の連絡先情報を入力して、 **[送信]** をクリックするだけです。
 
     > [!div class="mx-imgBorder"]
-    > ![CAST Highlight のランディング ページ](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![CAST Highlight のランディング ページ](_img/vs-cast-highlight/vs-cast-highlight-landing.png "個人情報を入力して、CAST サブスクリプションをアクティブにします。")
 
    > [!NOTE]
    > CAST Highlight 特典のアクティブ化は、1 組織につき 10 個に制限されています。  組織で 10 個のアクティブ化を既に使用している場合は、CAST Highlight 特典をアクティブ化することはできず、詳細情報を含む電子メールが届きます。

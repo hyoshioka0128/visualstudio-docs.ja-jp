@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Azure コミュニティ サポート特典について学習します。
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006242"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353214"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Azure コミュニティ サポート特典
 Azure コミュニティを通じて、選ばれたサポート フォーラム内で Azure チームから直接ヘルプを受けます。  Azure コミュニティ特典は、Azure 関連のトピックに重点を置いたフォーラムのコレクションへのアクセスを提供します。
@@ -39,9 +39,9 @@ Azure コミュニティを通じて、選ばれたサポート フォーラム�
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Azure SQL データベース](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
+        - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
-        - [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
+        - [Azure ストレージ](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
         - [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Cloud Services (Web ロールと Worker ロール)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
@@ -55,15 +55,15 @@ Azure コミュニティの開始は簡単です。
 
 2. [サポート] セクションで Azure コミュニティ タイルを見つけ、 **[Get help]\(ヘルプの表示\)** リンクをクリックします。
     > [!div class="mx-imgBorder"]
-    >![Azure コミュニティ タイル](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Azure コミュニティ タイル](_img/vs-azure-community/vs-azure-community-tile.png "開始するには、Azure コミュニティ タイルの [Get Help]\(ヘルプの表示\) ボタンをクリックします。")
 
 3. 使用可能なフォーラムの一覧が表示されます。  選択するフォーラムをクリックします。
     > [!div class="mx-imgBorder"]
-    > ![Azure コミュニティ フォーラム](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Azure コミュニティ フォーラム](_img/vs-azure-community/vs-azure-community-forums.png "Azure コミュニティ サポート ページで、目的のフォーラムを選択します。")
 
 4. フォーラム内では、トピックと回答を表示したり、自分の質問に対する回答を検索したり、新しい質問を投稿することができます。
     > [!div class="mx-imgBorder"]
-    > ![Azure コミュニティの例](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Azure コミュニティの例](_img/vs-azure-community/vs-azure-community-example.png "フォーラムでは、トピックを表示したり、回答を検索したり、新しい質問を投稿したりすることができます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 Azure コミュニティ特典を利用できるかどうかは、以下のようにサブスクリプション レベルによって変わります。

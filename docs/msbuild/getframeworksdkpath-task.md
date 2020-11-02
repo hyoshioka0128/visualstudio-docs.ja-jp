@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkSdkPath タスク | Microsoft Docs
+description: MSBuild GetFrameworkSdkPath タスクを使用して、Windows SDK へのパスを取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4061dbe96c84648aacf136c0d59b92a2af037e2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633994"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436805"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath タスク
 

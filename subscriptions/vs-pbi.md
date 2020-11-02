@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/26/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005027"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435779"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -27,33 +27,33 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 
 2. 特典ページの [ツール] セクションで Power BI Pro のタイルを見つけます。 特典タイルの下部にある **[コードの取得]** リンクをクリックします。   コードが正常に取得された通知を受け取ります。  **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 特典タイル](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Power BI Pro 特典タイル](_img/vs-pbi/vs-pbi-tile.png "Power BI Pro のタイルで [コードの取得] をクリックし、[アクティブ化] をクリックして作業を開始します。")
 
 3. Microsoft 365 Developer サブスクリプションや Enterprise Mobility + Security など、特定の他のサブスクリプション特典をアクティブ化した場合は、既にアカウントを持っている可能性があります。  既存のアカウントが見つかった場合、既存のアカウントに Power BI Pro サブスクリプションを追加するか、または新しいアカウントにサインアップすることを選択できます。  1 つのユーザー ID でさまざまな特典にアクセスできるように、既存のアカウントに追加することをお勧めします。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 特典の既存のアカウント](_img/vs-pbi/vs-pbi-existing-account.png)
+   > ![Power BI Pro 特典の既存のアカウント](_img/vs-pbi/vs-pbi-existing-account.png "既存のアカウントがある場合は、それに Power BI Pro を追加します。")
 
 4. 新しいアカウントを作成するには、連絡先情報を提供し、 **[次へ]** をクリックします。
 
 5. 次に、ユーザー ID とパスワードを作成します。  アカウントが既にあるときに新しいものを作成している場合は、既存のアカウントで使用しているものとは別の会社名を指定する必要があります。  **[アカウントの作成]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 特典ユーザー ID の作成](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
+   > ![Power BI Pro 特典ユーザー ID の作成](_img/vs-pbi/vs-pbi-create-user-id-cropped.png "新しいアカウントの場合は、ユーザー ID とパスワードを入力します。")
 
 6. 実在の人物がアカウントを作成していることを確認するために、確認コードの入力をお願いしています。  電話番号を入力し、電話またはテキスト メッセージでコードを受信するかどうかを選択してください。  **[メールを送信]** または **[電話をかける]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 特典ロボットではない](_img/vs-pbi/vs-pbi-robot1-cropped.png)
+   > ![Power BI Pro 特典ロボットではない](_img/vs-pbi/vs-pbi-robot1-cropped.png "[メールを送信] または [電話をかける] を選択して、確認コードを受信します。")
 
 7. 受け取ったコードを入力し、 **[次へ]** をクリックします。
 
 8. 連絡先情報を入力して、 **[次へ]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Power BI Pro 特典の連絡先情報](_img/vs-pbi/vs-pbi-contact-cropped.png)
+   > ![Power BI Pro 特典の連絡先情報](_img/vs-pbi/vs-pbi-contact-cropped.png "アカウントの連絡先情報を入力します。")
 
 9. 次のページで、Power BI Pro Developer (MSDN) サブスクリプション料金が $0.00 であることを確認します。  **[次へ]** をクリックします。
 
-10. 最後にお支払い情報を収集します。  心配しないでください。課金されることはありません。  価格がまだ $0.00 であることをご確認ください。  お支払いの形式としてクレジット カード、銀行口座、または請求書を選択できます。  **請求書**を選択した場合、その支払い方法を希望する理由をたずねられることがあります。  希望する支払い方法の要求された情報を入力し、 **[注文]** をクリックしてください。
+10. 最後にお支払い情報を収集します。  心配しないでください。課金されることはありません。  価格がまだ $0.00 であることをご確認ください。  お支払いの形式としてクレジット カード、銀行口座、または請求書を選択できます。  **請求書** を選択した場合、その支払い方法を希望する理由をたずねられることがあります。  希望する支払い方法の要求された情報を入力し、 **[注文]** をクリックしてください。
     > [!div class="mx-imgBorder"]
-    > ![Power BI Pro 特典の連絡先情報](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
+    > ![Power BI Pro 特典の支払い情報](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png "支払い方法を選択します。このプランに対する料金は発生しないことを忘れないでください。")
 
 11. 次のページで、Power BI Pro の使用を開始するための設定が済んだことを確認します。  このページにはサインイン ページへのリンクがあります。  サインイン ページへのリンクとユーザー ID を記録することをお勧めします  (アカウントを設定するときに指定したアドレスにウェルカム メールも送信されます)。質問がある場合に使用できる、自動 Microsoft 365 アシスタント ウィンドウも表示されることがあります。  **[さあ、始めましょう]** をクリックして続行します。
 
@@ -91,7 +91,7 @@ A: はい。2 つの重要な注意事項はありますが、運用環境で使
 - Power BI Pro 特典は、政府機関向けのテナントには使用できません。
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q:Power BI Pro をアクティブ化しようとすると、"You already have an account through work\(作業中に既にアカウントを登録しています\)" というメッセージが表示されます。  特典はまだ使用できますか。
-A: はい。  このメッセージは、管理者ではないアクティブな Microsoft 365 テナントが既に含まれるドメインにログオンしていることを示しています。  Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
+A: はい。  このメッセージは、自分が管理者ではないアクティブな Microsoft 365 テナントが既に含まれるドメインにログオンしていることを示しています。Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
 1. 作業中に既にアカウントを登録しているというメッセージが表示されたら、 **[新しいアカウントを作成]** をクリックします。
 
 2. 次の画面で連絡先情報を入力して、 **[次へ]** をクリックします。

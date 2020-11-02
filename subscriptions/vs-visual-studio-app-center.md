@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005728"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435738"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -28,15 +28,15 @@ Visual Studio App Center を開始するのは簡単です。
 
 2. Visual Studio App Center タイルを見つけて、 **[開始]** をクリックします。
     > [!div class="mx-imgBorder"]
-    > ![VS App Center タイル](_img/vs-app-center/vs-app-center-tile.png)
+    > ![VS App Center タイル](_img/vs-app-center/vs-app-center-tile.png "Visual Studio App Center タイルにある [開始] をクリックします。")
 
 3. 次に、アカウントを作成します。  Microsoft、Google、GitHub または Facebook の既存のアカウントを使用してログインできます。または、ユーザー名、電子メール、およびパスワードを入力して、新しいアカウントを作成することもできます。  **[アカウントの作成]** をクリックして続けます。
     > [!div class="mx-imgBorder"]
-    > ![VS App Center の [アカウントの作成]](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![VS App Center の [アカウントの作成]](_img/vs-app-center/vs-app-center-create-account.png "どのようにサインインするかを選択します。")
 
 4. これで完成です。  開始するには、 **[組織の新規追加]** または **[アプリの新規追加]** をクリックします。
     > [!div class="mx-imgBorder"]
-    > ![VS App Center ポータル](_img/vs-app-center/vs-app-center-portal.png)
+    > ![VS App Center ポータル](_img/vs-app-center/vs-app-center-portal.png "準備ができました。開始するには、[組織の新規追加] または [アプリの新規追加] をクリックします。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 

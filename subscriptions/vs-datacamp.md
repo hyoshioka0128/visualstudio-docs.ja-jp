@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006333"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435882"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
@@ -22,12 +22,12 @@ ms.locfileid: "91006333"
 
 2. "専門能力開発" カテゴリで DataCamp 特典タイルを見つけて、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 特典のタイル](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![DataCamp 特典のタイル](_img/vs-datacamp/vs-datacamp-tile-2.png "開始するには、[アクティブ化] をクリックしてください。")
 
 3. [DataCamp] ページで、新しいアカウントを作成できます。  電子メール アドレスとパスワードを入力するか、LinkedIn、Google、または Facebook から既存のアカウントを使用してサインインすることができます。  サインイン情報を指定したら、 **[Get Started]\(作業の開始\)** をクリックします。
 
    > [!NOTE]
-   > アカウントの作成を開始すると、"問題が発生しました。ご利用のプロモーション コードが無効であるか、  有効期限が切れています" という内容のエラー メッセージが表示される場合があります。  これは、作成されたプロモーション コードの有効期限が数分後に切れた場合に発生します。  このメッセージが表示された場合は、[[特典]](https://my.visualstudio.com/benefits) ページに戻り、DataCamp 特典タイルの **[アクティブ化]** リンクをクリックするだけです。
+   > アカウントの作成を開始すると、"問題が発生しました。ご利用のプロモーション コードが無効であるか、  有効期限が切れています" という内容のエラー メッセージが表示される場合があります。  これは、作成されたプロモーション コードの有効期限が数分後に切れた場合に発生します。  このメッセージが表示された場合は、 [[特典]](https://my.visualstudio.com/benefits) ページに戻り、DataCamp 特典タイルの **[アクティブ化]** リンクをクリックするだけです。
 
 4. アカウントが作成されたら、ラーニング パスを選択できます。  次のオプションがあります。
     - データ サイエンス用の Learning R
@@ -36,25 +36,25 @@ ms.locfileid: "91006333"
 
    開始するには、選択したパスをクリックするだけです。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: パスの選択](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![DataCamp: パスの選択](_img/vs-datacamp/vs-datacamp-choose-path.png "興味のあるラーニング パスを選択します。")
 
 5. 目的のパスを選択したら、目標を選択して、ラーニング パスを絞り込むことができます。  たとえば、"データ サイエンス スキルセットを開発する" パスを選択すると、次のオプションが表示されます。 オプションを選択するか、 **[I am not sure.Show me all career paths]\(わかりません。すべてのキャリア パスを表示してください\)** をクリックしてより広範なパスを作成します。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: データ サイエンス スキルセット](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataCamp: データ サイエンス スキルセット](_img/vs-datacamp/vs-datacamp-datascience.png "[I am not sure.Show me all career paths]\(わかりません。すべてのキャリア パスを表示してください\) をクリックして、完全な一覧を表示します。")
 
 6. 選択したパスとオプションに基づいて、キャリア トラックの選択が表示されます。  選択したトラックの **[登録]** ボタンをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: キャリア トラック](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![DataCamp: キャリア トラック](_img/vs-datacamp/vs-datacamp-all-tracks.png "開始するには、選択したパスの [登録] ボタンをクリックします。")
 
 7. トラックに登録されると、そのトラックの最初のコースが開きます。  コースの操作方法 (ナビゲーションやコース演習の実行など) を説明するチュートリアルが表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: 開始](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![DataCamp: 開始](_img/vs-datacamp/vs-datacamp-getting-started.png "コースをナビゲートする方法については、チュートリアルをご覧ください。")
 
 任意のポイントで停止し、次のセッションでトレーニングを再開できます。  [https://www.datacamp.com](https://www.datacamp.com) にアクセスしてサインインします。  ダッシュ ボードが表示され、一時停止した箇所からトレーニングを再開できます。 **[Continue Track]\(トラックを続行\)** をクリックします。
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png "[Continue Track]\(トラックを続行\) をクリックして、いつでもトレーニングを再開できます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 09/28/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションの一部として GitHub Enterprise にアクセスする方法について説明します
-ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584168"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467519"
 ---
 # <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションを含む Visual Studio
 
@@ -39,7 +39,7 @@ GitHub Enterprise サブスクリプションを含む Visual Studio は、次�
 1. Visual Studio サブスクリプション (Enterprise または Professional)
 2. GitHub Enterprise 
 
-GitHub を含む Visual Studio サブスクリプションが割り当てられると、Visual Studio サブスクリプション管理者によってサブスクリプションが割り当てられたことを知らせる電子メールが届きます。  その時点で、<https://my.visualstudio.com/benefits> で利用可能なサブスクリプションの特典を確認できます。  これには、次に示すように GitHub Enterprise の特典が含まれます。
+GitHub を含む Visual Studio サブスクリプションが割り当てられると、Visual Studio サブスクリプション管理者によって自分にサブスクリプションが割り当てられたことを知らせる電子メールが届きます。  その時点で、<https://my.visualstudio.com/benefits> で利用可能なサブスクリプションの特典を確認できます。  これには、次に示すように GitHub Enterprise の特典が含まれます。
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise の保留中の Enterprise アカウントの設定](_img/access-github/pending-account-setup.png "まず、組織で Enterprise アカウントを設定する必要があります。")  
@@ -75,7 +75,7 @@ GitHub を初めて使用する場合は、次のリソースが役に立ちま�
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q--where-is-my-github-subscription"></a>Q:GitHub サブスクリプションはどこにあるのでしょうか?
-A: GitHub Enterprise アカウントを設定するプロセスには時間がかかることがあります。  待っていても何も通知がない場合は、GitHub 管理者に連絡することをお勧めします。  管理者がまだ作業中であるか、または GitHub Enterprise アカウントを作成しないことを決定した可能性があります。 
+A: GitHub Enterprise アカウントを設定するプロセスには時間がかかることがあります。  待っていても何も通知がない場合は、GitHub 管理者に連絡することをお勧めします。管理者がまだ作業中であるか、または GitHub Enterprise アカウントを作成しないことを決定した可能性があります。 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>Q:Visual Studio サブスクリプションのすべての特典を利用できますか?
 A: GitHub Enterprise に加えて、サブスクリプションを個別に購入した場合と同様に、ソフトウェアのダウンロード、クラウド サービス、テクニカル サポート、パートナー特典など、標準の Visual Studio サブスクリプションのすべての特典を利用できます。

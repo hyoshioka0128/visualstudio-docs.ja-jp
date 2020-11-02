@@ -1,5 +1,7 @@
 ---
 title: GenerateTrustInfo タスク | Microsoft Docs
+description: MSBuild GenerateTrustInfo タスクを使用して、基本マニフェストと TargetZone および ExcludedPermissions パラメーターからアプリケーションの信頼を生成します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e84007c9a10618c6d757a36debe58c272302fa3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a90188244e32b6f593affd2c29a227a2810227d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634033"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436444"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo タスク
 
@@ -43,7 +45,7 @@ ms.locfileid: "77634033"
 
  表に示されているパラメーターを使用できるだけでなく、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は <xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

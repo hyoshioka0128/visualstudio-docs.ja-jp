@@ -1,18 +1,18 @@
 ---
-title: WhiteSource Bolt 特典 | Microsoft Docs
+title: Visual Studio サブスクリプションの WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005702"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435997"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -24,11 +24,11 @@ ms.locfileid: "91005702"
 
 2. [ツール] セクションで、 WhiteSource Bolt のタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 特典タイル](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![WhiteSource 特典タイル](_img/vs-whitesource/vs-whitesource-tile.png "開始するには、WhiteSource Bolt タイルの [コードの取得] をクリックします。")
 
-3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし**、 **[アクティブ化]** をクリックします。
+3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし** 、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 特典コード](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![WhiteSource 特典コード](_img/vs-whitesource/vs-whitesource-code.png "コードをクリップボードにコピーし、[アクティブ化] をクリックします。")
 
 4. **[アカウントをアクティブにする]** ページで、手順 1 の **[インストール]** リンクをクリックします。
 5. Visual Studio Marketplace から **[無料で入手]** をクリックします。

@@ -1,5 +1,7 @@
 ---
 title: CreateProperty タスク | Microsoft Docs
+description: MSBuild CreateProperty タスクを使用して、渡された値をプロパティに設定します。これにより、プロパティまたは文字列間で値をコピーできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7d7dd8d7f5a50998832a8fac6f47bf66e9a6bbe9
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634319"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796188"
 ---
 # <a name="createproperty-task"></a>CreateProperty タスク
 

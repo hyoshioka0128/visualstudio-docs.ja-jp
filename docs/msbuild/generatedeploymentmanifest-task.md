@@ -1,5 +1,7 @@
 ---
 title: GenerateDeploymentManifest タスク | Microsoft Docs
+description: MSBuild GenerateDeploymentManifest タスクを使用して ClickOnce 配置マニフェストを生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca55f3eeb9b3119b27e67dcb0255f8386c521af6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634072"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436458"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest タスク
 
@@ -49,7 +51,7 @@ ClickOnce 配置マニフェストを生成します。 ClickOnce 配置マニ�
 | `MinimumRequiredVersion` | 省略可能な `String` 型のパラメーターです。<br /><br /> ユーザーが更新をスキップできるかどうかを指定します。 最低限必要なバージョンよりも前のバージョンをユーザーが所有している場合、ユーザーは更新をスキップできません。 この入力は、`Install` パラメーターの値が `true` である場合のみ適用されます。 |
 | `OutputManifest` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 生成される出力マニフェスト ファイルの名前を指定します。 このパラメーターが指定されていない場合、出力ファイルの名前は、生成されるマニフェストの ID から推測されます。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの対象プラットフォームを指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 既定値は `AnyCPU` です。 |
-| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーション名を示します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示する名前として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの名前を指定します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示する名前として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
 | `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示するフォルダー名として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
 | `SuiteNamel` | 省略可能な `String` 型のパラメーターです。<br /><br /> ClickOnce の配置後にアプリケーションが存在する、 **[スタート]** メニューのフォルダーの名前を指定します。 |
 | `SupportUrl` | 省略可能な `String` 型のパラメーターです。<br /><br /> **[プログラムの追加と削除]** ダイアログ ボックスで、このアプリケーションのエントリに表示されるリンクを指定します。 値には、完全修飾 URL または UNC パスを指定します。 |

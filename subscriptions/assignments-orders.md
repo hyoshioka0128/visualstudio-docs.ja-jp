@@ -1,25 +1,25 @@
 ---
-title: ユーザーの割り当てを追跡し、注文を処理する | Visual Studio Marketplace
+title: Visual Studio サブスクリプションで割り当てを追跡し、注文を処理する | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: ユーザーの割り当てを追跡して注文を処理する管理者の責任について説明します。
-ms.openlocfilehash: bfb45b7beae45a0c90bf0a860c84a5b1b6f5830a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 90de1c426a387cb27fe35990394a41d34c1172ce
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005754"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467415"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>ユーザーの割り当てを追跡し、注文を処理する
 Visual Studio サブスクリプションの管理者は、Visual Studio の使用状況を追跡し、ボリューム ライセンス契約またはマイクロソフト製品/サービス契約に記載されているスケジュールに従って、使用率の増加に応じて注文を処理する必要があります。 新しい Visual Studio サブスクリプション管理ポータルは、使用可能なライセンスと使用済みのライセンスを示す便利なトラッカーにより、これを簡略化します。
 
 ## <a name="maximum-usage"></a>最大使用量
 **次の場合には、会社が Visual Studio サブスクリプションをすぐに購入する義務が生じます。**
-- ユーザーにライセンスが割り当てられた場合、**または**
+- ユーザーにライセンスが割り当てられた場合、 **または**
 - ユーザーが Visual Studio ソフトウェアと対話する場合
 
 完全な購入義務は、ユーザーに割り当てられたサブスクリプションの最大数によって決まります。 このサブスクリプション割り当てのレベルは、日割りユーザーあたりの割り当てまたは Visual Studio ソフトウェアと対話するユーザーの使用率のポイントが高い方になります。

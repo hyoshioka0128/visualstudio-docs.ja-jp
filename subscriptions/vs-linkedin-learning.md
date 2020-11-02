@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805891"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435846"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -27,7 +27,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 
 2. [教育] カテゴリで [LinkedIn Learning] タイルを見つけて、 **[コードの取得]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 特典のタイル](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![LinkedIn Learning 特典のタイル](_img/vs-linkedin/vs-linkedin-6-month-tile.png "[コードの取得] をクリックしてコードを要求し、作業を開始します。")
 
 3. LinkedIn アカウントを既に持っていて、自動的にサインインされた場合は、LinkedIn Learning 特典のアクティブ化ページが表示されます。  LinkedIn アカウントを持っているが、自動的にサインインされなかった場合は、ユーザー名とパスワードを入力し、 **[サインイン]** をクリックします。  [この手順](#activate-your-offer)までスキップして、プランをアクティブにしてください。
 
@@ -57,15 +57,15 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 ### <a name="activate-your-offer"></a>プランのアクティブ化
 15. これで、LinkedIn アカウントへのサインイン、または新しいアカウントの作成が完了したので、Premium サブスクリプションをアクティブ化し、LinkedIn Learning の利用を開始する準備ができました。  **[Activate your offer]\(プランのアクティブ化\)** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: アクティブ化](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![LinkedIn Learning: アクティブ化](_img/vs-linkedin/vs-linkedin-Activate1.png "学習を開始するには、[Activate your offer]\(プランのアクティブ化\) をクリックしてください。")
 
 16. 関心のあるスキルの探索を開始できます。  お勧め候補の一覧から選択するか、その他のスキルを検索します。あるいは **[スキップ]** をクリックしてスキルの選択は行わずに続行します。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: スキル](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![LinkedIn Learning: スキル](_img/vs-linkedin/vs-linkedin-skills.png "調べたいスキルを選択します。")
 
 17. Premium サブスクリプション オファーのアクティブ化が正常に行われたので、これで LinkedIn Learning とその他の Premium のすべての特典の使用を開始できます。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: ホーム](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![LinkedIn Learning: ホーム](_img/vs-linkedin/vs-linkedin-learning-home.png "LinkedIn Premium と LinkedIn Learning をご利用いただきありがとうございます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 
