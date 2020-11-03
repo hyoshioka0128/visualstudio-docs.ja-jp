@@ -38,7 +38,7 @@ Visual Studio 2019 で Git を使用するには、次の 3 つの方法があ�
 
 コードが Git に関連付けられていない場合は、新しい Git リポジトリを作成することから始めることができます。 これを行うには、メニュー バーから **[Git]**  >  **[Git リポジトリの作成]** を選択します。 次に、 **[Git リポジトリの作成]** ダイアログ ボックスに情報を入力します。
 
-:::image type="content" source="media/git-create-repository.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-create-repository.png" alt-text="Visual Studio の [Git リポジトリの作成] ダイアログ ボックスのスクリーンショット ":::
 
 **[Git リポジトリの作成]** ダイアログ ボックスを使用すると、新しいリポジトリを GitHub に簡単にプッシュできます。 既定では、新しいリポジトリはプライベートになります。つまり、アクセスできるのは自分だけです。 このチェックボックスをオフにすると、リポジトリはパブリックになります。つまり、GitHub のすべてのユーザーに表示されます。
 
@@ -51,7 +51,7 @@ Visual Studio 2019 で Git を使用するには、次の 3 つの方法があ�
 
 Visual Studio には、簡単なクローン エクスペリエンスが含まれています。 クローンするリポジトリの URL がわかっている場合は、 **[リポジトリの場所]** セクションに URL を貼り付けてから、Visual Studio のクローン先となるディスクの場所を選択します。
 
-:::image type="content" source="media/git-clone-repository.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-clone-repository.png" alt-text="Visual Studio の [Clone a Git Repository]\(Git リポジトリのクローン\) ダイアログ ボックスのスクリーンショット ":::
 
 リポジトリの URL がわからない場合は、Visual Studio を使用すると、既存の GitHub または Azure DevOps リポジトリを参照してクローンすることが簡単にできます。
 
@@ -59,7 +59,7 @@ Visual Studio には、簡単なクローン エクスペリエンスが含ま�
 
 リポジトリをクローンまたは作成すると、Visual Studio によって Git リポジトリが検出され、Git メニューの **[Local Repositories]\(ローカル リポジトリ\)** の一覧に追加されます。 ここから、Git リポジトリにすばやくアクセスして切り替えることができます。
 
-:::image type="content" source="media/git-local-repositories.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-local-repositories.png" alt-text="Visual Studio の Git メニューの [Local Repositories]\(ローカル リポジトリ\) オプションのスクリーンショット ":::
 
 ## <a name="view-files-in-solution-explorer"></a>ソリューション エクスプローラーにファイルを表示する
 
@@ -73,7 +73,7 @@ Visual Studio には、簡単なクローン エクスペリエンスが含ま�
 
 ソリューション エクスプローラーのツールバーにある **[表示の切替]** ボタンを使用して、現在開いているビューとビューの一覧を切り替えることができます。
 
-:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Visual Studio で [表示の切替] ボタンが選択されているソリューション エクスプローラーのスクリーンショット ":::
 
 ## <a name="git-changes-window"></a>[Git Changes]\(Git 変更\) ウィンドウ
 
@@ -85,7 +85,7 @@ Git により、作業中のリポジトリ内のファイルの変更が追跡�
 
 作業を行っている間、Visual Studio により、 **[Git Changes]\(Git 変更\)** ウィンドウの **[変更]** セクションで、プロジェクトに対するファイルの変更が追跡されます。
 
-:::image type="content" source="media/git-changes-window.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-changes-window.png" alt-text="Visual Studio の [Git Changes]\(Git 変更\) ウィンドウのスクリーンショット ":::
 
 変更をステージする準備ができたら、ステージングする各ファイルの [ **+** ] (プラス) ボタンをクリックするか、ファイルを右クリックして **[ステージ]** を選択します。 **[変更]** セクションの上部にある、すべての [ **+** ] (プラス) ボタンを使用して、変更したすべてのファイルをワンクリックでステージすることもできます。
 
@@ -95,17 +95,20 @@ Git により、作業中のリポジトリ内のファイルの変更が追跡�
 
 また、Visual Studio では、 **[すべてをコミットしてプッシュ]** と **[すべてをコミットして同期]** を使用して、コミットと同期をワンクリックで簡単に行えます。 **[変更]** セクションと **[ステージされている変更]** セクションのいずれかのファイルをダブルクリックすると、変更されていないバージョンのファイルとの行ごとの比較を確認できます。
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット " 文字を使用して、Azure DevOps 作業項目をコミットに関連付けることができます。 **[チーム エクスプローラー]**  >  **[接続の管理]** を介して、Azure DevOps リポジトリに接続することができます。
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Visual Studio でのファイル バージョンの行ごとの比較のスクリーンショット ":::
+
+> [!TIP]
+> Azure DevOps リポジトリに接続している場合は、"#" 文字を使用して、Azure DevOps 作業項目をコミットに関連付けることができます。 **[チーム エクスプローラー]**  >  **[接続の管理]** を介して、Azure DevOps リポジトリに接続することができます。
 
 ### <a name="select-an-existing-branch"></a>既存のブランチを選択する
 
 Visual Studio の **[Git Changes]\(Git 変更\)** ウィンドウの上部にあるセレクターに現在のブランチが表示されます。
 
-:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Visual Studio の Git 変更セレクターの上部にあるセレクターを使用して表示できる現在のブランチのスクリーンショット ":::
 
 現在のブランチは、Visual Studio IDE の右下隅にあるステータス バーでも使用できます。
 
-:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Visual Studio IDE の右下隅にあるステータス バーを使用して表示できる現在のブランチのスクリーンショット ":::
 
 どちらの場所からでも、既存のブランチを切り替えることができます。
 
@@ -115,7 +118,7 @@ Visual Studio の **[Git Changes]\(Git 変更\)** ウィンドウの上部にあ
 
 新しいブランチの作成は、ブランチ名を入力して既存のブランチを基にするだけの簡単なものです。
 
-:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Visual Studio の [新しいブランチを作成] ダイアログ ボックスのスクリーンショット ":::
 
 ベースとして、既存のローカルまたはリモート ブランチを選択できます。 **[ブランチのチェックアウト]** チェックボックスをオンにすると、新しく作成されたブランチに自動的に切り替わります。 このアクションの同等のコマンドは、`git checkout -b <new-branch><existing-branch>` です。
 
@@ -131,17 +134,17 @@ Visual Studio には、新しい **[Git リポジトリ]** ウィンドウがあ
 
 ブランチをフェッチすると、 **[Git Changes]\(Git 変更\)** ウィンドウのブランチ ドロップダウンの下にインジケーターが表示され、リモート ブランチからプルされていないコミットの数が表示されます。 このインジケーターには、プッシュされていないローカル コミットの数も表示されます。
 
-:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Visual Studio のインジケーター ドロップダウン UI 要素を示す [Git Changes]\(Git 変更\) ウィンドウのスクリーンショット ":::
 
 このインジケーターは、 **[Git リポジトリ]** ウィンドウでそのブランチのコミット履歴に移動するためのリンクとしても機能します。 履歴の一番上には、これらの送信および発信中のコミットの詳細が表示されます。 ここから、コミットをプルまたはプッシュすることもできます。
 
-:::image type="content" source="media/git-branch-commit-history.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-branch-commit-history.png" alt-text="Visual Studio のブランチのコミット履歴を表示する [Git リポジトリ] ウィンドウのスクリーンショット ":::
 
 #### <a name="commit-details"></a>コミットの詳細
 
 **コミット** をダブルクリックすると、Visual Studio によってその詳細が別のツール ウィンドウに表示されます。 ここからコミットを元に戻したり、コミットをリセットしたり、コミット メッセージを修正したり、コミット時にタグを作成したりできます。 コミット時に変更されたファイルをクリックすると、Visual Studio によって、コミットとその親の **[差分]** ビューが並べて表示されます。
 
-:::image type="content" source="media/git-branch-commit-details.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-branch-commit-details.png" alt-text="Visual Studio の [コミットの詳細] ダイアログ ボックスのスクリーンショット ":::
 
 ## <a name="handle-merge-conflicts"></a>マージ競合を処理する
 
@@ -149,9 +152,11 @@ Visual Studio には、新しい **[Git リポジトリ]** ウィンドウがあ
 
 Visual Studio を使用すると、マージの競合を簡単に識別して解決できます。 最初に、 **[Git リポジトリ]** ウィンドウの上部に金色の情報バーが表示されます。
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット " (競合があるマージが進行中) というメッセージが表示され、その下の別のセクションには、マージされていないファイルが表示されます。
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Visual Studio での &quot;マージが完了し、競合が発生しました&quot; というメッセージのスクリーンショット ":::
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+**[Git Changes]\(Git 変更\)** ウィンドウにも、" *Merge is in progress with conflicts* " (競合があるマージが進行中) というメッセージが表示され、その下の別のセクションには、マージされていないファイルが表示されます。
+
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Visual Studio での &quot;Merge is in progress with conflicts&quot; (競合があるマージが進行中) というメッセージのスクリーンショット ":::
 
 ただし、どちらのウィンドウも開いておらず、代わりにマージ競合があるファイルに移動する場合は、次のテキストを検索する必要はありません。
 
@@ -163,13 +168,13 @@ Visual Studio を使用すると、マージの競合を簡単に識別して解
 
 代わりに、Visual Studio では、開いているファイルに競合があることを示す金色の情報バーがページの上部に表示されます。 次に、リンクをクリックして、 **マージ エディター** を開きます。
 
-:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Visual Studio での &quot;File contains merge conflicts&quot; (ファイルにマージ競合が含まれています) というメッセージのスクリーンショット ":::
 
 ### <a name="the-merge-editor"></a>マージ エディター
 
 Visual Studio のマージ エディターは、入力方向の変更、現在の変更、およびマージの結果を表示する 3 方向マージ ツールです。 **マージ エディター** の最上位レベルにあるツール バーを使用して、ファイル内の競合と自動マージされた相違点の間を移動できます。
 
-:::image type="content" source="media/git-merge-editor.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-merge-editor.png" alt-text="Visual Studio のマージ エディターのスクリーンショット ":::
 
 また、トグルを使用して、相違点の表示/非表示を切り替えたり、単語の違いを表示/非表示にしたり、レイアウトをカスタマイズしたりすることもできます。 両側の上部にチェックボックスがあり、これを使用して、一方または他方からすべての変更を取り込むことができます。 ただし、個々の変更を行うには、どちらか一方の競合する行の左側にあるチェックボックスをクリックします。 最後に、競合の解決が終了したら、マージ エディターの **[マージの許可]** ボタンを選択します。 次に、コミット メッセージを作成し、変更をコミットして解決を完了します。
 
@@ -177,7 +182,7 @@ Visual Studio のマージ エディターは、入力方向の変更、現在�
 
 リポジトリ レベルとグローバル レベルで Git 設定をパーソナル化してカスタマイズするには、メニュー バーで **[Git]**  >  **[設定]** に移動するか、メニュー バーで **[ツール]**  >  **[オプション]**  >  **[ソース管理]** に移動します。 次に、目的のオプションを選択します。
 
-:::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+:::image type="content" source="media/git-options-settings.png" alt-text="パーソナル化とカスタマイズを選択できる、Visual Studio IDE の [オプション] ダイアログ ボックスのスクリーンショット ":::
 
 ## <a name="whats-next"></a>参照トピック
 
