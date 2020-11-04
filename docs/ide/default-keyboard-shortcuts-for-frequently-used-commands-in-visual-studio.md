@@ -1,5 +1,6 @@
 ---
-title: 頻繁に使用するコマンドに対応する既定のキーボード ショートカット
+title: よく使われるコマンドのキーボード ショートカット
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,21 +8,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596724"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045654"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio のよく使われるキーボード ショートカット
 
 Visual Studio で頻繁に使用するコマンドには、ここで示している既定のショートカット キーを押すことでアクセスできます。 既定のショートカットが割り当てられているコマンドの完全なリストについては、「[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
 
-"*全体*" コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
+" *全体* " コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
 
 > [!NOTE]
-> **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの[ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
+> **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの [ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
 
 ## <a name="build"></a>Build
 
@@ -57,9 +58,9 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |
 |Edit.BreakLine|**Enter** [テキスト エディター、レポート デザイナー、Windows フォーム デザイナー]<br /><br />または **Shift + Enter** [テキスト エディター]|
-|Edit.CollapseToDefinitions|**Ctrl + M**、**Ctrl + O** [テキスト エディター]|
-|Edit.CommentSelection|**Ctrl + K**、**Ctrl + C** [テキスト エディター]|
-|Edit.CompleteWord|**Alt + →** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K**、**W** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + W** [ワークフロー デザイナー]|
+|Edit.CollapseToDefinitions|**Ctrl + M** 、 **Ctrl + O** [テキスト エディター]|
+|Edit.CommentSelection|**Ctrl + K** 、 **Ctrl + C** [テキスト エディター]|
+|Edit.CompleteWord|**Alt + →** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K** 、 **W** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + W** [ワークフロー デザイナー]|
 |Edit.Copy|**Ctrl + C** [全体]<br /><br />または **Ctrl + Insert** [全体]|
 |Edit.Cut|**Ctrl + X** [全体]<br /><br />または **Shift + Delete** [全体]|
 |Edit.Delete|**Delete** [全体、チーム エクスプローラー]<br /><br />または **Shift + Delete** [シーケンス図、UML アクティビティ図、レイヤー図]<br /><br />または **Ctrl + Delete** [クラス図]|
@@ -75,7 +76,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**Ctrl + D** [全体]|
 |Edit.GoToNextLocation|**F8** [全体]|
-|Edit.InsertSnippet|**Ctrl + K**、**Ctrl + X** [全体]|
+|Edit.InsertSnippet|**Ctrl + K** 、 **Ctrl + X** [全体]|
 |Edit.InsertTab|**Tab** [レポート デザイナー、Windows フォーム デザイナー、テキスト エディター]|
 |Edit.LineCut|**Ctrl + L** [テキスト エディター]|
 |Edit.LineDownExtendColumn|**Shift + Alt + ↓** [テキスト エディター]|

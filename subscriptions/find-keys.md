@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションでプロダクト キーを検索、要求、エクスポートする方法を説明します。
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91004968"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでプロダクト キーを検索して要求する

@@ -44,7 +44,9 @@
       href: using-the-subscriber-portal.md
     - name: サブスクリプションを管理する
       href: manage-vs-subscriptions.md
-    - name: サブスクリプション管理者に連絡してください
+    - name: サブスクリプションが期限切れになったとき
+      href: subscription-expiration.md
+    - name: サブスクリプション管理者に連絡する
       href: contact-my-admin.md
     - name: 利点
       items:
