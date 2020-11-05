@@ -4,17 +4,16 @@ description: 仮想マシンに Web アプリケーションをデプロイす�
 author: ghogen
 manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: dc8c6083cb0abdcbd8bcd51de717a383cabb5068
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508419"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398567"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell スクリプト)
 仮想マシンに Web アプリケーションをデプロイします。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
@@ -107,7 +106,7 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 これには、仮想マシンの名前、アフィニティ グループ、VHD イメージ、およびサイズなど、プロジェクトを作成したときに指定した情報が含まれています。 また、仮想マシン上のエンドポイント、プロビジョニングするデータベース (該当する場合)、Web デプロイメント パラメーターも含まれています。 次のコードは JSON 構成ファイルの例を示しています。

@@ -4,17 +4,16 @@ description: Visual Studio を使用し、Azure クラウド サービスのロ�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740046"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399280"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio で Azure クラウド サービスのロールを構成する
 Azure クラウド サービスには、worker ロールまたは Web ロールを割り当てることができます。 それぞれのロールについて、そのセットアップ方法を定義すると共に、実行方法を構成する必要があります。 クラウド サービスのロールの詳細については、 [Azure Cloud Services の概要](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)を紹介した動画をご覧ください。
@@ -22,7 +21,7 @@ Azure クラウド サービスには、worker ロールまたは Web ロール�
 クラウド サービスに関する情報は、次のファイルに格納されます。
 
 - **Servicedefinition. .csdef** -サービス定義ファイルは、必要なロール、エンドポイント、仮想マシンのサイズなど、クラウドサービスの実行時設定を定義します。 `ServiceDefinition.csdef` に格納されたデータはいずれも、ロールの実行中には変更できません。
-- **ServiceConfiguration.cscfg**: サービス構成ファイルでは、実行されるロールのインスタンス数とロールに対して定義される設定の値を構成します。 `ServiceConfiguration.cscfg` に格納されたデータは、ロールの実行中に変更できます。
+- **ServiceConfiguration.cscfg** : サービス構成ファイルでは、実行されるロールのインスタンス数とロールに対して定義される設定の値を構成します。 `ServiceConfiguration.cscfg` に格納されたデータは、ロールの実行中に変更できます。
 
 ロールの実行方法を制御する設定にさまざまな値を指定して使い分けられるように、サービス構成は複数定義することができます。 デプロイメント環境ごとに異なるサービス構成を使用できます。 たとえば、ローカルサービス構成でローカルの Azure Storage エミュレーターを使用するようにストレージアカウントの接続文字列を設定し、クラウドで Azure storage を使用するために別のサービス構成を作成することができます。
 
@@ -36,7 +35,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** でそのプロジェクトを右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
     ![ソリューション エクスプローラーのプロジェクトのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-project-context-menu.png)
 
@@ -44,10 +43,10 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![プロジェクトのプロパティ ページ - [開発] タブ](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-development-tab.png)
 
-1. **[サービスの構成]** ボックスの一覧で、編集するサービス構成の名前を選択します  (このロールのすべてのサービス構成を変更する場合は、**[すべての構成]** を選択してください)。
+1. **[サービスの構成]** ボックスの一覧で、編集するサービス構成の名前を選択します  (このロールのすべてのサービス構成を変更する場合は、 **[すべての構成]** を選択してください)。
 
     > [!IMPORTANT]
-    > 設定の対象が "すべての構成" に限定されるプロパティが一部存在します。特定のサービス構成を選択した場合、それらのプロパティは無効になります。 これらのプロパティを編集するには、**[すべての構成]** を選択する必要があります。
+    > 設定の対象が "すべての構成" に限定されるプロパティが一部存在します。特定のサービス構成を選択した場合、それらのプロパティは無効になります。 これらのプロパティを編集するには、 **[すべての構成]** を選択する必要があります。
 
     ![Azure クラウド サービスのサービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -56,7 +55,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューションエクスプローラー**で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
+1. **ソリューションエクスプローラー** で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
     ![ソリューション エクスプローラーの Azure ロールのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -66,13 +65,13 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 1. **[サービスの構成]** の一覧で、更新するサービス構成を選択します。
 
-    ![サービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
+    ![サービス構成リスト1](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-select-configuration.png)
 
 1. **[インスタンス数]** テキスト ボックスに、このロールで開始するインスタンスの数を入力します。 Azure にクラウド サービスを発行すると、それぞれのインスタンスが個別の仮想マシンで実行されます。
 
     ![インスタンス数の更新](./media/vs-azure-tools-configure-roles-for-cloud-service/role-configuration-properties-page-instance-count.png)
 
-1. Visual Studio のツールバーで、[ **保存**] を選択します。
+1. Visual Studio のツールバーで、[ **保存** ] を選択します。
 
 ## <a name="manage-connection-strings-for-storage-accounts"></a>ストレージ アカウント用の接続文字列の管理
 接続文字列は、サービス構成で追加、削除、変更することができます。 たとえば、 `UseDevelopmentStorage=true`という値を持つローカル サービス構成には、ローカル接続文字列を使用します。 それに加えて、Azure のストレージ アカウントを使用するクラウド サービス構成も必要になることが考えられます。
@@ -86,11 +85,11 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューションエクスプローラー**で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
+1. **ソリューションエクスプローラー** で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
     ![ソリューション エクスプローラーの Azure ロールのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. **[設定]** タブを選択します。
+1. **[Settings]\(設定\)** タブを選択します。
 
     ![Settings tab](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -98,7 +97,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![サービス構成](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. 接続文字列を追加するには、**[設定の追加]** を選択します。
+1. 接続文字列を追加するには、 **[設定の追加]** を選択します。
 
     ![接続文字列の追加](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
@@ -106,19 +105,19 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![新しい接続文字列](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **[名前]**: 接続文字列に使用する名前を入力します。
-    - **[種類]**: ドロップダウン リストから **[接続文字列]** を選択します。
-    - **[値]**: 接続文字列は **[値]** セルに直接入力するか、省略記号 (...) を選択して **[ストレージ接続文字列の作成]** ダイアログで作成することができます。
+    - **[名前]** : 接続文字列に使用する名前を入力します。
+    - **[種類]** : ドロップダウン リストから **[接続文字列]** を選択します。
+    - **[値]** : 接続文字列は **[値]** セルに直接入力するか、省略記号 (...) を選択して **[ストレージ接続文字列の作成]** ダイアログで作成することができます。
 
 1. **[ストレージ接続文字列の作成]** ダイアログで **[接続方法]** のオプションを選択します。 選択したオプションに応じて次の手順に従います。
 
     - **Microsoft Azure ストレージエミュレーター** -このオプションを選択した場合、ダイアログの残りの設定は Azure にのみ適用されるため、無効になります。 **[OK]** を選択します。
-    - **[サブスクリプション]**: このオプションを選択した場合、ドロップダウン リストから Microsoft アカウントを選択してサインインするか、または Microsoft アカウントを追加してください。 Azure サブスクリプションとストレージ アカウントを選択します。 **[OK]** を選択します。
-    - **[手動で入力された資格情報]**: ストレージ アカウント名を入力し、プライマリ キーまたはセカンダリ キーを入力します。 [ **接続** ] のオプションを選択します (ほとんどのシナリオでは HTTPS を使用することをお勧めします)。[ **OK]** を選択します。
+    - **[サブスクリプション]** : このオプションを選択した場合、ドロップダウン リストから Microsoft アカウントを選択してサインインするか、または Microsoft アカウントを追加してください。 Azure サブスクリプションとストレージ アカウントを選択します。 **[OK]** を選択します。
+    - **[手動で入力された資格情報]** : ストレージ アカウント名を入力し、プライマリ キーまたはセカンダリ キーを入力します。 [ **接続** ] のオプションを選択します (ほとんどのシナリオでは HTTPS を使用することをお勧めします)。[ **OK]** を選択します。
 
-1. 接続文字列を削除するには、接続文字列を選択し、**[設定の削除]** を選択します。
+1. 接続文字列を削除するには、接続文字列を選択し、 **[設定の削除]** を選択します。
 
-1. Visual Studio のツールバーで、[ **保存**] を選択します。
+1. Visual Studio のツールバーで、[ **保存** ] を選択します。
 
 ## <a name="programmatically-access-a-connection-string"></a>接続文字列にプログラムからアクセスする
 
@@ -148,19 +147,19 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューションエクスプローラー**で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
+1. **ソリューションエクスプローラー** で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
     ![ソリューション エクスプローラーの Azure ロールのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. **[設定]** タブを選択します。
+1. **[Settings]\(設定\)** タブを選択します。
 
     ![Settings tab](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
 1. **[サービスの構成]** の一覧で、更新するサービス構成を選択します。
 
-    ![サービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![サービス構成リスト2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
-1. カスタム設定を追加するには、**[設定の追加]** を選択します。
+1. カスタム設定を追加するには、 **[設定の追加]** を選択します。
 
     ![カスタム設定の追加](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting.png)
 
@@ -168,13 +167,13 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![新しいカスタム設定](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **[名前]**: 設定の名前を入力します。
-    - **[種類]**: ドロップダウン リストから **[文字列]** を選択します。
-    - **[値]**: 文字列の値を入力します。 この値は **[値]** セルに直接入力するか、省略記号 (...) を選択して **[文字列の編集]** ダイアログで入力することができます。
+    - **[名前]** : 設定の名前を入力します。
+    - **[種類]** : ドロップダウン リストから **[文字列]** を選択します。
+    - **[値]** : 文字列の値を入力します。 この値は **[値]** セルに直接入力するか、省略記号 (...) を選択して **[文字列の編集]** ダイアログで入力することができます。
 
-1. カスタム設定を削除するには、設定を選択し、**[設定の削除]** を選択します。
+1. カスタム設定を削除するには、設定を選択し、 **[設定の削除]** を選択します。
 
-1. Visual Studio のツールバーで、[ **保存**] を選択します。
+1. Visual Studio のツールバーで、[ **保存** ] を選択します。
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>カスタム設定の値にプログラムからアクセスする
 
@@ -199,7 +198,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューションエクスプローラー**で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
+1. **ソリューションエクスプローラー** で、プロジェクトノードを展開します。 更新するロールを **[ロール]** ノードで右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
     ![ソリューション エクスプローラーの Azure ロールのコンテキスト メニュー](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -207,11 +206,11 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![[ローカル ストレージ] タブ](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. このローカル ストレージの設定はすべてのサービス構成が対象となります。**[サービス構成]** リストでは必ず **[すべての構成]** を選択してください。 それ以外の値を選択すると、このページのすべての入力フィールドが無効になります。
+1. このローカル ストレージの設定はすべてのサービス構成が対象となります。 **[サービス構成]** リストでは必ず **[すべての構成]** を選択してください。 それ以外の値を選択すると、このページのすべての入力フィールドが無効になります。
 
-    ![サービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
+    ![サービス構成リスト3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
-1. ローカル ストレージのエントリを追加するには、**[ローカル ストレージの追加]** を選択します。
+1. ローカル ストレージのエントリを追加するには、 **[ローカル ストレージの追加]** を選択します。
 
     ![ローカル ストレージの追加](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-add-local-storage.png)
 
@@ -219,13 +218,13 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     ![新しいローカル ストレージのエントリ](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
-    - **[名前]**: 新しいローカル ストレージに使用する名前を入力します。
-    - **[サイズ (MB)]**: 新しいローカル ストレージに必要なサイズを MB 単位で入力します。
-    - **[ロールのリサイクル時に消去]**: このロール用の仮想マシンがリサイクルされたときに、新しいローカル ストレージのデータを削除するには、このオプションを選択します。
+    - **[名前]** : 新しいローカル ストレージに使用する名前を入力します。
+    - **[サイズ (MB)]** : 新しいローカル ストレージに必要なサイズを MB 単位で入力します。
+    - **[ロールのリサイクル時に消去]** : このロール用の仮想マシンがリサイクルされたときに、新しいローカル ストレージのデータを削除するには、このオプションを選択します。
 
-1. ローカル ストレージのエントリを削除するには、そのエントリを選択し、**[ローカル ストレージの削除]** を選択します。
+1. ローカル ストレージのエントリを削除するには、そのエントリを選択し、 **[ローカル ストレージの削除]** を選択します。
 
-1. Visual Studio のツールバーで、[ **保存**] を選択します。
+1. Visual Studio のツールバーで、[ **保存** ] を選択します。
 
 ## <a name="programmatically-accessing-local-storage"></a>ローカル ストレージにプログラムからアクセスする
 
@@ -266,7 +265,7 @@ using (FileStream writeStream = File.Create(filePath))
 
     ![ローカル ストアを開くためのメニュー項目](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 
-1. Windows エクスプローラー ウィンドウが表示されたら、**[検索]** ボックスに「`MyLocalStorageTest.txt``」と入力し、**Enter** キーを押して検索を開始します。
+1. Windows エクスプローラー ウィンドウが表示されたら、 **[検索]** ボックスに「`MyLocalStorageTest.txt``」と入力し、 **Enter** キーを押して検索を開始します。
 
 ## <a name="next-steps"></a>次のステップ
 Visual Studio における Azure プロジェクトの詳細については、「 [Azure プロジェクトの構成](vs-azure-tools-configuring-an-azure-project.md)」を参照してください。 クラウド サービスのスキーマの詳細については、「 [スキーマ リファレンス](/previous-versions/azure/dd179398(v=azure.100))」を参照してください。

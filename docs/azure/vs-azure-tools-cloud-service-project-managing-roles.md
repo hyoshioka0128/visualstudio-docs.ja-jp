@@ -4,17 +4,16 @@ description: Visual Studio で Azure クラウド サービスのロールを追
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 72aba423567f0b23f09e002073fdca89c99e6f4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280838"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398840"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio での Azure クラウド サービスのロールの管理
 Azure クラウド サービスを作成した後、サービスに新しいロールを追加したり、サービスから既存のロールを削除したりできます。 既存のプロジェクトをインポートし、ロールに変換することもできます。 たとえば、ASP.NET Web アプリケーションをインポートし、そのアプリケーションを Web ロールとして指定できます。
@@ -24,7 +23,7 @@ Visual Studio で Azure クラウド サービス プロジェクトに Web ロ�
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューション エクスプローラー**でプロジェクト ノードを展開します。
+1. **ソリューション エクスプローラー** でプロジェクト ノードを展開します。
 
 1. **[ロール]** ノードを右クリックして、コンテキスト メニューを表示します。 コンテキスト メニューの **[追加]** を選択し、現在のソリューションから既存の Web ロールまたは worker ロールを選択するか、Web ロール プロジェクトまたは worker ロール プロジェクトを作成します。 ASP.NET Web アプリケーション プロジェクトなどの適切なプロジェクトを選択し、ロール プロジェクトに関連付けることもできます。
 
@@ -35,7 +34,7 @@ Visual Studio で Azure クラウド サービス プロジェクトから Web �
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューション エクスプローラー**でプロジェクト ノードを展開します。
+1. **ソリューション エクスプローラー** でプロジェクト ノードを展開します。
 
 1. **[ロール]** ノードを展開します。
 
@@ -69,5 +68,5 @@ Visual Studio で Azure クラウド サービス プロジェクトから Web �
 </WebRole>
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 - [Visual Studio で Azure クラウド サービスのロールを構成する](vs-azure-tools-configure-roles-for-cloud-service.md)

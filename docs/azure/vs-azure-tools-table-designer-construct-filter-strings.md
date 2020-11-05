@@ -4,37 +4,36 @@ description: テーブル デザイナー用のフィルター文字列の作成
 author: ghogen
 manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911644"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398606"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>テーブル デザイナー用のフィルター文字列の作成
 ## <a name="overview"></a>概要
-Visual Studio **テーブル デザイナー**に表示される Azure テーブルのデータをフィルター処理するには、フィルター文字列を作成してフィルター フィールドに入力します。 フィルター文字列の構文は、WCF Data Services で定義されており、SQL の WHERE 句に似ています。ただし、文字列は HTTP 要求を介して Table service に送信されます。 必要なエンコード処理は**テーブル デザイナー**で自動的に行われます。したがって、目的のプロパティ値を条件としてフィルター処理するときに必要なことは、フィルター フィールドにプロパティ名、比較演算子、条件値、ブール演算子を入力するだけです (ブール演算子は省略可能)。 ストレージ サービスの REST API ([リファレンス](/rest/api/storageservices/)をご覧ください) でテーブルを照会するための URL を作成する場合とは異なり、$filter クエリ オプションを含める必要はありません。
+Visual Studio **テーブル デザイナー** に表示される Azure テーブルのデータをフィルター処理するには、フィルター文字列を作成してフィルター フィールドに入力します。 フィルター文字列の構文は、WCF Data Services で定義されており、SQL の WHERE 句に似ています。ただし、文字列は HTTP 要求を介して Table service に送信されます。 必要なエンコード処理は **テーブル デザイナー** で自動的に行われます。したがって、目的のプロパティ値を条件としてフィルター処理するときに必要なことは、フィルター フィールドにプロパティ名、比較演算子、条件値、ブール演算子を入力するだけです (ブール演算子は省略可能)。 ストレージ サービスの REST API ([リファレンス](/rest/api/storageservices/)をご覧ください) でテーブルを照会するための URL を作成する場合とは異なり、$filter クエリ オプションを含める必要はありません。
 
-WCF Data Services は、 [Open Data Protocol](https://www.odata.org/) (OData) に基づいています。 フィルター システム クエリ オプション (**$filter**) の詳細については、 [OData URI 規則仕様](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)に関するページを参照してください。
+WCF Data Services は、 [Open Data Protocol](https://www.odata.org/) (OData) に基づいています。 フィルター システム クエリ オプション ( **$filter** ) の詳細については、 [OData URI 規則仕様](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)に関するページを参照してください。
 
 ## <a name="comparison-operators"></a>比較演算子
 次の論理演算子は、全種類のプロパティでサポートされます。
 
-| 論理演算子 | 説明 | フィルター文字列の例 |
+| 論理演算子 | [説明] | フィルター文字列の例 |
 | --- | --- | --- |
-| eq |Equal |City eq 'Redmond' |
+| eq |等しい |City eq 'Redmond' |
 | gt |より大きい |Price gt 20 |
 | ge |以上 |Price ge 10 |
 | lt |より小さい |Price lt 20 |
 | le |以下 |Price le 100 |
 | ne |等しくない |City ne 'London' |
 | および |And |Price le 200 and Price gt 3.5 |
-| or |または |Price le 3.5 or Price gt 200 |
+| または |または |Price le 3.5 or Price gt 200 |
 | not |Not |not isAvailable |
 
 フィルター文字列を作成するときに重要となる規則は次のとおりです。
@@ -46,7 +45,7 @@ WCF Data Services は、 [Open Data Protocol](https://www.odata.org/) (OData) �
 ## <a name="filtering-on-string-properties"></a>文字列プロパティのフィルター処理
 文字列のプロパティを条件としてフィルター処理を行うには、文字列定数を単一引用符で囲みます。
 
-次の例では、**PartitionKey** プロパティと **RowKey** プロパティにフィルターを適用しています。キー以外のプロパティをフィルター文字列に追加することもできます。
+次の例では、 **PartitionKey** プロパティと **RowKey** プロパティにフィルターを適用しています。キー以外のプロパティをフィルター文字列に追加することもできます。
 
 ```
 PartitionKey eq 'Partition1' and RowKey eq '00001'
@@ -82,13 +81,13 @@ AmountDue le 100.25
 ## <a name="filtering-on-boolean-properties"></a>ブール型プロパティのフィルター処理
 ブール値を条件としてフィルター処理を行うには、引用符なしで **true** または **false** を指定します。
 
-次の例は、IsActive プロパティが **true**に設定されているすべてのエンティティを返します。
+次の例は、IsActive プロパティが **true** に設定されているすべてのエンティティを返します。
 
 ```
 IsActive eq true
 ```
 
-このフィルター式は、論理演算子なしで記述することもできます。 次の例でも、Table service は IsActive が **true**であるすべてのエンティティを返します。
+このフィルター式は、論理演算子なしで記述することもできます。 次の例でも、Table service は IsActive が **true** であるすべてのエンティティを返します。
 
 ```
 IsActive
@@ -101,7 +100,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>DateTime プロパティのフィルター処理
-DateTime 値を条件としてフィルター処理を行うには、**datetime** キーワードに続けて、単一引用符で囲んだ日付/時刻の定数を指定します。 日付/時刻の定数は、結合 UTC 形式にする必要があります。詳しくは、「[DateTime プロパティ値の書式設定](/rest/api/storageservices/Formatting-DateTime-Property-Values)」をご覧ください。
+DateTime 値を条件としてフィルター処理を行うには、 **datetime** キーワードに続けて、単一引用符で囲んだ日付/時刻の定数を指定します。 日付/時刻の定数は、結合 UTC 形式にする必要があります。詳しくは、「[DateTime プロパティ値の書式設定](/rest/api/storageservices/Formatting-DateTime-Property-Values)」をご覧ください。
 
 次の例は、CustomerSince プロパティが 2008 年 7 月 10 日と等しいエンティティを返します。
 

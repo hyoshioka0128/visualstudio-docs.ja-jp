@@ -1,7 +1,7 @@
 ---
 title: クラウドサービスへの web アプリケーションの移行と発行
 description: Visual Studio を使用して、Azure クラウド サービスに Web アプリケーションを移行および発行する方法について説明します。
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036536"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399820"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>方法: Visual Studio から Azure クラウドサービスに web アプリケーションを移行および発行する
 
@@ -27,7 +27,7 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 
 1. ソリューションノードを右クリックし、[ **追加] [新しいプロジェクト** ] の順に選択して、既存のソリューションに新しい **Azure クラウドサービス (クラシック)** プロジェクトを追加し > ます。
 1. [ **新しい Microsoft Azure クラウドサービス (クラシック)** ] ダイアログで、プロジェクトにロールを追加せずに [OK] をクリックします。
-1. 新しく追加した Cloud Services プロジェクトの [ロール] ノードを右クリックし、[ **ソリューションに Web ロールプロジェクトを追加...**] を選択します。
+1. 新しく追加した Cloud Services プロジェクトの [ロール] ノードを右クリックし、[ **ソリューションに Web ロールプロジェクトを追加...** ] を選択します。
 1. [ **ロールプロジェクトとの関連付け** ] ダイアログボックスで、web ロールとして関連付けるプロジェクトを選択します。
 
    > [!Important]
@@ -43,7 +43,7 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 
 ### <a name="test-the-migration-locally"></a>移行をローカルでテストする
 
-1. Visual Studio の**ソリューション エクスプローラー**で、追加されたクラウド サービス プロジェクトを右クリックし、**[スタートアップ プロジェクトに設定]** を選択します。
+1. Visual Studio の **ソリューション エクスプローラー** で、追加されたクラウド サービス プロジェクトを右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
 1. **[デバッグ] > [デバッグの開始]** (F5 キー) を選択して Azure デバッグ環境を起動します。 この環境では、特にさまざまな Azure サービスのエミュレーションを利用できます。
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>アプリケーションでの Azure SQL Database の使用
@@ -56,19 +56,19 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 ## <a name="publish-the-application-to-azure-cloud-service"></a>アプリケーションを Azure クラウド サービスに発行する
 
 1. [Visual Studio からの Azure アプリケーションの発行またはデプロイの準備](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)で説明しているように、必要なクラウド サービスとストレージ アカウントを Azure サブスクリプションで作成します。
-1. Visual Studio でアプリケーション プロジェクトを右クリックし、**[Microsoft Azure に公開...]** を選択します ([発行...] コマンドではありません)。
-1. 表示された **[Azure アプリケーションの発行]** で、アカウントを使用して Azure サブスクリプションにサインインし、**[次へ > ]** を選択します。
+1. Visual Studio でアプリケーション プロジェクトを右クリックし、 **[Microsoft Azure に公開...]** を選択します ([発行...] コマンドではありません)。
+1. 表示された **[Azure アプリケーションの発行]** で、アカウントを使用して Azure サブスクリプションにサインインし、 **[次へ > ]** を選択します。
 1. **[設定] > [共通設定]** タブで、対象のクラウド サービスおよび環境と構成を **[クラウド サービス]** ボックスの一覧から選択します。
 1. **[設定] > [詳細設定]** の順に移動し、使用するストレージ アカウントを選択してから **[次へ > ]** を選択します。
 1. **[診断]** で、Application Insights に情報を送信するかどうかを選択します。
-1. **[次へ > ]** を選択して概要を表示し、**[発行]** を選択してデプロイを開始します。
+1. **[次へ > ]** を選択して概要を表示し、 **[発行]** を選択してデプロイを開始します。
 1. Visual Studio でアクティビティ ログ ウィンドウが開かれ、進行状況を追跡できます。
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
 
-1. (省略可能) デプロイ プロセスをキャンセルするには、アクティビティ ログの行項目を右クリックし、**[取り消して削除]** を選択します。 このコマンドによりデプロイ プロセスが停止し、Azure からデプロイ環境が削除されます。 注: このデプロイ環境をデプロイ後に削除するには、[Azure Portal](https://portal.azure.com) を使用する必要があります。
+1. (省略可能) デプロイ プロセスをキャンセルするには、アクティビティ ログの行項目を右クリックし、 **[取り消して削除]** を選択します。 このコマンドによりデプロイ プロセスが停止し、Azure からデプロイ環境が削除されます。 注: このデプロイ環境をデプロイ後に削除するには、[Azure Portal](https://portal.azure.com) を使用する必要があります。
 1. (省略可能) ロール インスタンスが起動すると、Visual Studio の **[サーバー エクスプローラー] > [クラウド サービス]** ノードに、デプロイ環境が自動的に表示されます。 ここから、個々のロール インスタンスの状態を確認できます。
-1. デプロイ後にアプリケーションにアクセスするには、**[Azure の活動ログ]** に **[完了]** の状態と URL が表示されているときに、デプロイの横の矢印を選択します。 Azure から特定の種類の Web アプリケーションを起動する方法の詳細については、次の表をご覧ください。
+1. デプロイ後にアプリケーションにアクセスするには、 **[Azure の活動ログ]** に **[完了]** の状態と URL が表示されているときに、デプロイの横の矢印を選択します。 Azure から特定の種類の Web アプリケーションを起動する方法の詳細については、次の表をご覧ください。
 
 ## <a name="using-the-compute-emulator-and-starting-application-in-azure"></a>コンピューティング エミュレーターを使用して Azure でアプリケーションを起動する
 
@@ -79,7 +79,7 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 | Web アプリケーションの種類 | Azure での実行 |
 | --- | --- |
 | ASP.NET Web アプリケーション<br/>(MVC 2、MVC 3、MVC 4 を含みます) | **[デプロイ]** タブで **[Azure の活動ログ]** の URL を選択します。 |
-| 空の ASP.NET Web アプリケーション | アプリケーションの既定の `.aspx` ページがある場合は、**[デプロイ]** タブで **[Azure の活動ログ]** の URL を選択します。 別のページに移動するには、ブラウザーに `<deployment_url>/<page_name>.aspx` の形式で URL を入力します。 |
+| 空の ASP.NET Web アプリケーション | アプリケーションの既定の `.aspx` ページがある場合は、 **[デプロイ]** タブで **[Azure の活動ログ]** の URL を選択します。 別のページに移動するには、ブラウザーに `<deployment_url>/<page_name>.aspx` の形式で URL を入力します。 |
 | WCF サービス アプリケーション<br/>WCF ワークフロー サービス アプリケーション | `.svc` ファイルを WCF サービス プロジェクトのスタート ページに設定します。 次に、`<deployment_url>/<service_file>.svc` に移動します。 |
 | ASP.NET 動的エンティティ<br/>ASP.NET 動的データ LINQ to SQL | 接続文字列を更新します (次のセクションで説明します)。 次に、`<deployment_url>/<page_name>.aspx` に移動します。 Linq to SQL については、Azure SQL データベースを使用する必要があります。 |
 

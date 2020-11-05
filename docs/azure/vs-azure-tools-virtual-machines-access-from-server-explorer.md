@@ -4,17 +4,16 @@ description: Visual Studio のサーバー エクスプローラーで Azure Vir
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 8fd5d81e721bc2df7041d4cb724687e5ee540a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911656"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398554"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>サーバー エクスプローラーから Azure Virtual Machines へのアクセス
 
@@ -24,7 +23,7 @@ Azure でホストされている仮想マシンには、サーバー エクス�
 
     次の表に示したのは、アクセスできるプロパティの一覧です。ただし、これらはすべて読み取り専用です。 これらのプロパティを変更するには、[Azure Portal](https://portal.azure.com) を使用します。
 
-   | プロパティ | 説明 |
+   | プロパティ | [説明] |
    | --- | --- |
    | DNS 名 |仮想マシンのインターネット アドレスを含む URL。 |
    | 環境 |仮想マシンの場合、このプロパティの値は常に [運用] です。 |
@@ -32,10 +31,10 @@ Azure でホストされている仮想マシンには、サーバー エクス�
    | サイズ |仮想マシンのサイズ。使用できるメモリとディスク領域のサイズが反映されます。 詳細については、「 [仮想マシンのサイズ](/azure/cloud-services/cloud-services-sizes-specs)」を参照してください。 |
    | Status |"開始中"、"開始"、"停止中"、"停止"、"状態を取得中" などの値があります。 "状態を取得中" と表示された場合、現在の状態は不明です。 このプロパティの値は、[Azure Portal](https://portal.azure.com) で使用される値とは異なります。 |
    | SubscriptionID |ご利用の Azure アカウントのサブスクリプション ID。 この情報を [Azure Portal](https://portal.azure.com) に表示するには、サブスクリプションのプロパティを表示します。 |
-2. エンドポイント ノードを選択し、**[プロパティ]** ウィンドウを表示します。
+2. エンドポイント ノードを選択し、 **[プロパティ]** ウィンドウを表示します。
 3. 次の表は、エンドポイントに関してアクセスできるプロパティの説明です。これらは読み取り専用となります。 仮想マシンのエンドポイントを追加または編集するには、[Azure Portal](https://portal.azure.com) を使用します。
 
-   | プロパティ | 説明 |
+   | プロパティ | [説明] |
    | --- | --- |
    | 名前 |エンドポイントの ID。 |
    | プライベート ポート |アプリケーションの内部ネットワーク アクセス用ポート。 |
