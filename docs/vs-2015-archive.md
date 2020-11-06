@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2015 のドキュメント
+title: Visual Studio 2015 ドキュメント
 description: 以前のバージョンのサイトにアーカイブされた後に Visual Studio 2015 のドキュメントを検索する方法について説明します。
 ms.date: 10/13/2020
 ms.topic: conceptual
@@ -7,14 +7,14 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 9882497fec78c6560dcb40e636cb8323c1b249b3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8affd426593754f77760e4f924cd401167078e5
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049440"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414153"
 ---
-# <a name="visual-studio-2015-documentation"></a>Visual Studio 2015 のドキュメント
+# <a name="visual-studio-2015-documentation"></a>Visual Studio 2015 ドキュメント
 
 2020年10月13日の時点で、Visual Studio 2015 のドキュメントは [以前のバージョンのアーカイブ](/previous-versions/visualstudio/visual-studio-2015)に移動されています。 この日付は、この製品のメインストリームサポートの終了を示しています。 その日に、Visual Studio 2015 は拡張サポートを入力しました。 ドキュメントの保持ポリシーによれば、延長サポート期間中は、以前のバージョンの Visual Studio に関するドキュメントは、メインサイトではなく、アーカイブの場所 (URL の以前のバージョン) の docs サイトで入手できます。 製品ライフサイクルポリシーの詳細については、「 [Fixed ライフサイクルポリシー](/lifecycle/policies/fixed) 」と「 [旧バージョンの Visual Studio のサポート](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)」を参照してください。これは、Visual Studio 2015 の記事がこのサイトのバージョンセレクターに表示されなくなり、検索エンジンでインデックスが作成されなくなったことを意味します。 アーカイブされたコンテンツを検索するには、または Visual Studio 2015 の特定の記事を検索するには、次のようにします。
 
@@ -28,7 +28,7 @@ ms.locfileid: "93049440"
 
 Visual Studio 2015 IDE では、F1 ヘルプ機能は引き続き機能します。 問題が発生した場合は、このページの下部にあるドキュメントフィードバックリンクを使用して、GitHub リポジトリの問題を作成してください。
 
-Visual Studio 2015 ドキュメントを頻繁に使用している場合は、ヘルプビューアーを使用してそのバージョンのオフラインヘルプブックをダウンロードするオプションを調べることもできます。 [Microsoft ヘルプビューアー](/visualstudio/help-viewer/overview)を参照してください。
+Visual Studio 2015 ドキュメントを頻繁に使用している場合は、ヘルプビューアーを使用してそのバージョンのオフラインヘルプブックをダウンロードするオプションを調べることもできます。 [Microsoft ヘルプビューアー](./help-viewer/overview.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

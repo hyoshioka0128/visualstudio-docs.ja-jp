@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8b5ff72ff72d53556d14ce2c4b6f309aa0836a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584595"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414465"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>カスタムエディターでのドキュメントデータとドキュメントビュー
 カスタムエディターは、ドキュメントデータオブジェクトとドキュメントビューオブジェクトの2つの部分で構成されます。 名前が示すように、ドキュメントデータオブジェクトは表示されるテキストデータを表します。 同様に、ドキュメントビューオブジェクト (または "ビュー") は、ドキュメントデータオブジェクトを表示する1つまたは複数のウィンドウを表します。
@@ -34,7 +34,7 @@ ms.locfileid: "91584595"
 
  IDE は、実行中のドキュメントテーブル内の各エントリの項目識別子 (ItemID) を照合することによって、イベント (たとえば、ドキュメントを含むソリューションが閉じられたとき) をビューに通知します。 詳細については、「 [document table の実行](../extensibility/internals/running-document-table.md)」を参照してください。
 
- カスタムエディターのビューを作成するには、2つのオプションがあります。 1つは、埋め込み先アクティブ化モデルです。このモデルでは、ActiveX コントロールまたはドキュメントデータオブジェクトを使用して、ビューがウィンドウでホストされます。 2つ目は簡略化された埋め込みモデルで、ビューはでホストされ、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> ウィンドウコマンドを処理するために実装されます。 インプレースアクティブ化モデルの詳細については、「 [インプレースアクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true)」を参照してください。 簡略化された埋め込みモデルについては、「簡略化された [埋め込み](../extensibility/simplified-embedding.md)」を参照してください。
+ カスタムエディターのビューを作成するには、2つのオプションがあります。 1つは、埋め込み先アクティブ化モデルです。このモデルでは、ActiveX コントロールまたはドキュメントデータオブジェクトを使用して、ビューがウィンドウでホストされます。 2つ目は簡略化された埋め込みモデルで、ビューはでホストされ、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> ウィンドウコマンドを処理するために実装されます。 インプレースアクティブ化モデルの詳細については、「 [インプレースアクティブ化](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)」を参照してください。 簡略化された埋め込みモデルについては、「簡略化された [埋め込み](../extensibility/simplified-embedding.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583672"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414192"
 ---
 # <a name="checklist-create-new-project-types"></a>チェックリスト: 新しいプロジェクトの種類を作成する
 新しいプロジェクトの種類を作成するには、いくつかのタスクを完了する必要があります。 次のチェックリストに、これらのタスクのガイドを示します。
@@ -25,7 +25,7 @@ ms.locfileid: "91583672"
 
 2. コードおよびその他のプロジェクト要素に使用されるエディターを決定します。 コアエディターまたは標準エディターを使用することも、プロジェクト固有のエディターを作成して使用することもできます。 詳細については、「 [カスタムエディターとデザイナーの作成](../../extensibility/creating-custom-editors-and-designers.md) 」および「 [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)」を参照してください。
 
-3. プロジェクト項目が **クラスビュー** と **オブジェクトブラウザー**に与える参加レベルを決定します。 詳細については、「 [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。
+3. プロジェクト項目が **クラスビュー** と **オブジェクトブラウザー** に与える参加レベルを決定します。 詳細については、「 [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。
 
 4. プロジェクトおよびプロジェクト項目に対して以前に行った設計上の決定に基づいて、新しいクラスを派生させます。
 
@@ -33,7 +33,7 @@ ms.locfileid: "91583672"
 
     - プロジェクトファクトリ。新しいプロジェクトの作成と、既存のプロジェクトのオープンを管理します。 詳細については、「 [プロジェクトファクトリを使用したプロジェクトインスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)」を参照してください。
 
-    - プロジェクト階層とコマンド処理。 詳細については、「 [HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](/previous-versions/bb166212(v=vs.100))」、「プロジェクト [モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)」、「 [プロジェクトモデルのコアコンポーネント](../../extensibility/internals/project-model-core-components.md)」、および「 [menucommands と OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true)」を参照してください。
+    - プロジェクト階層とコマンド処理。 詳細については、「 [HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](/previous-versions/bb166212(v=vs.100))」、「プロジェクト [モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)」、「 [プロジェクトモデルのコアコンポーネント](../../extensibility/internals/project-model-core-components.md)」、および「 [menucommands と OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)」を参照してください。
 
     - プロジェクト項目の管理。 [ **新しいプロジェクト** ] ダイアログボックスへのプロジェクトの追加が含まれます。 詳細については、「 [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md) 」および「 [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)」を参照してください。
 
@@ -49,13 +49,13 @@ ms.locfileid: "91583672"
 
     - オートメーションに使用できるオブジェクト、またはから派生したクラス `IDispatch` 。
 
-    - XML コマンドテーブル (*vsct*) ファイル。 詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
+    - XML コマンドテーブル ( *vsct* ) ファイル。 詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
 
 6. プロジェクトの種類をテスト、デバッグ、および開始します。
 
-7. の値としてを設定して、[**参照の追加**] ダイアログボックスの [**プロジェクト**] タブにプロジェクトを表示し `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` ます。 詳細については、次のトピックを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>
+7. の値としてを設定して、[ **参照の追加** ] ダイアログボックスの [ **プロジェクト** ] タブにプロジェクトを表示し `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` ます。 詳細については、次のトピックを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>
 
-8. Vspackage をインストールするための Microsoft インストーラー (*.msi*) ファイルを作成します。 詳細については、「 [Install vspackage with Windows インストーラー](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」、「 [Register a project type](../../extensibility/internals/registering-a-project-type.md)」、および「 [vspackage](../../extensibility/internals/vspackages.md)」を参照してください。
+8. Vspackage をインストールするための Microsoft インストーラー ( *.msi* ) ファイルを作成します。 詳細については、「 [Install vspackage with Windows インストーラー](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」、「 [Register a project type](../../extensibility/internals/registering-a-project-type.md)」、および「 [vspackage](../../extensibility/internals/vspackages.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

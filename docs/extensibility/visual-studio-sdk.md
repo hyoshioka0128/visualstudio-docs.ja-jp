@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aceed2833d0083beccf197c4c681f92270a1f9a4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dbe2832d52d17047795d1898f0e0bfd8a275bb9
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583659"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414385"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK を使用すると、visual Studio の機能を拡張したり、新しい機能を Visual Studio に統合したりできます。 拡張機能は、他のユーザーや Visual Studio Marketplace にも配布できます。 Visual Studio を拡張する方法の一部を次に示します。
@@ -54,7 +54,7 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
  [イメージサービスとカタログ](../extensibility/image-service-and-catalog.md)を活用して、優れたイメージ管理と高 DPI とテーマのサポートを実現します。
 
 ## <a name="find-and-install-existing-visual-studio-extensions"></a>既存の Visual Studio 拡張機能を検索してインストールする
- Visual Studio 拡張機能は、[**ツール**] メニューの [**拡張機能と更新プログラム**] ダイアログで確認できます。 詳細については、「 [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。 また、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で拡張機能を検索することもできます。
+ Visual Studio 拡張機能は、[ **ツール** ] メニューの [ **拡張機能と更新プログラム** ] ダイアログで確認できます。 詳細については、「 [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。 また、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で拡張機能を検索することもできます。
 
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK リファレンス
  Visual studio sdk API リファレンスについては、「 [Visual STUDIO Sdk リファレンス](../extensibility/visual-studio-sdk-reference.md)」を参照してください。
@@ -77,7 +77,7 @@ Visual studio SDK を使用すると、visual Studio の機能を拡張したり
 
 - [メニューコマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ: アドインを VSPackage 拡張機能に変換する](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015&preserve-view=true)
+- [FAQ: アドインを VSPackage 拡張機能に変換する](/previous-versions/visualstudio/visual-studio-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions?preserve-view=true&view=vs-2015)
 - [マネージコード内の複数のスレッドを管理する](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [メニューとコマンドを拡張する](../extensibility/extending-menus-and-commands.md)
 - [ツールバーにコマンドを追加する](../extensibility/adding-commands-to-toolbars.md)

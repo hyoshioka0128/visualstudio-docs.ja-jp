@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83df8926be9cd7217c514a2ed3f242bf8e121913
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: aa06b58ccd8d4cba8e16b17bc725798ae02d7e8f
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584569"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414439"
 ---
 # <a name="automation-model-overview"></a>オートメーションモデルの概要
 オートメーションモデルは、Visual Studio アドインまたは拡張機能を記述できるオブジェクトのセットで構成されます。 アドインは、Visual Studio 環境を操作したり、一般的なタスクを自動化したりできるアプリケーションです。 Visual Studio 拡張機能では、Visual Studio のカスタムコンポーネントを作成したり、テキストエディターなどの標準コンポーネントの機能を追加したりできます。
@@ -38,9 +38,9 @@ ms.locfileid: "91584569"
 
 - コード
 
-- ビルド
+- Build
 
-オートメーションの詳細については、「 [Visual Studio のオートメーションと拡張機能](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015&preserve-view=true)」を参照してください。 このドキュメントとそのドキュメントには、VSPackage の自動化を提供する方法についての意思決定に役立つリンクが記載されています。
+オートメーションの詳細については、「 [Visual Studio のオートメーションと拡張機能](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015)」を参照してください。 このドキュメントとそのドキュメントには、VSPackage の自動化を提供する方法についての意思決定に役立つリンクが記載されています。
 
 ## <a name="see-also"></a>関連項目
 - [方法: アドインを作成する](/previous-versions/80493a3w(v=vs.140))

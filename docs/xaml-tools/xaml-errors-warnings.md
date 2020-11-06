@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a68273f4fbb2f66986c18c692b91b6e1829a4c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049222"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414478"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML のエラーと警告
 
@@ -32,7 +32,7 @@ Visual Studio では、XAML を作成するとき、入力したコードがす�
 |XAML のエディット コンティニュ|XECxxxx| Visual Studio 2019 バージョン16.1 以前 |
 |XAML ホット リロード | XHRxxxx | Visual Studio 2019 バージョン16.2 以降 |
 
-Xaml のブランド変更の編集 & の詳細については、XAML のホットリロードとして続行するには、「[リリースノート](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)」を参照してください。
+Xaml のブランド変更の編集 & の詳細については、XAML のホットリロードとして続行するには、「[リリースノート](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)」を参照してください。
 
 > [!Note]
 > 一部のエラーや警告には該当コードがありません。 そのようなエラーは通常、XAML デザイナーが検出したエラーです。

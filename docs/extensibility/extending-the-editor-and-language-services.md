@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584556"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413945"
 ---
 # <a name="extend-the-editor-and-language-services"></a>エディターと言語サービスの拡張
 独自のエディターに言語サービス機能 (IntelliSense など) を追加し、Visual Studio コードエディターのほとんどの機能を拡張することができます。  拡張できるものの完全な一覧については、「 [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)」を参照してください。
@@ -28,7 +28,7 @@ ms.locfileid: "91584556"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|説明|
+|Title|[説明]|
 |-----------|-----------------|
 |[言語サービスとエディターの拡張機能を使ってみる](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|エディターの拡張機能を作成する方法について説明します。|
 |[エディター内](../extensibility/inside-the-editor.md)|エディターの一般的な構造について説明し、その機能の一部を示します。|
@@ -36,11 +36,11 @@ ms.locfileid: "91584556"
 |[言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)|エディターの拡張点を一覧表示します。 拡張ポイントは、拡張可能なエディター機能を表します。|
 |[チュートリアル: ビューの表示要素、コマンド、および設定の作成 (列ガイド)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|コードを特定の表示幅に維持できるように、列ガイドの線を描画するビューの表示項目の構築について説明します。  また、設定の読み取りと書き込みに加え、コマンドウィンドウから呼び出すことができるコマンドの宣言と実装についても説明します。|
 |[エディターのインポート](../extensibility/editor-imports.md)|拡張機能がインポートできるサービスを一覧表示します。|
-|[従来のコードをエディターに適応させる](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|従来のコードを調整するためのさまざまな方法について説明します (Visual Studio 2010 より前)。|
+|[従来のコードをエディターに適応させる](/previous-versions/visualstudio/visual-studio-2015/extensibility/adapting-legacy-code-to-the-editor?preserve-view=true&view=vs-2015)|従来のコードを調整するためのさまざまな方法について説明します (Visual Studio 2010 より前)。|
 |[従来の言語サービスを移行する](../extensibility/internals/migrating-a-legacy-language-service.md)|VSPackage ベースの言語サービスを移行する方法について説明します。|
 |[チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|コンテンツタイプをファイル名拡張子にリンクする方法について説明します。|
 |[チュートリアル: 余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)|余白にアイコンを追加する方法について説明します。|
-|[チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)|*タグ*を使用してテキストを強調表示する方法について説明します。|
+|[チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)|*タグ* を使用してテキストを強調表示する方法について説明します。|
 |[チュートリアル: アウトラインの追加](../extensibility/walkthrough-outlining.md)|特定の種類の中かっこのアウトラインを追加する方法について説明します。|
 |[チュートリアル: 一致する中かっこの表示](../extensibility/walkthrough-displaying-matching-braces.md)|一致する中かっこを強調表示する方法について説明します。|
 |[チュートリアル: QuickInfo ツールヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|プロパティ、メソッド、イベントなどのコードの要素を記述する QuickInfo ポップアップを表示する方法について説明します。|
@@ -53,7 +53,7 @@ ms.locfileid: "91584556"
 |[MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)|Managed Extensibility Framework (MEF) に関する情報を提供します。|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Windows Presentation Foundation (WPF) に関する情報を提供します。|
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>リファレンス
  Visual Studio エディターには、次の名前空間が含まれています。
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

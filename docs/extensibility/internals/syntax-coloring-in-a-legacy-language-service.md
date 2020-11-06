@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d3b125737162146af954ad8561eb41e5ee8f2e8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584530"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414556"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>従来の言語サービスでの構文の色分け表示
 
@@ -28,7 +28,7 @@ Visual Studio は、色分けサービスを使用して言語の要素を識別
  ![SVC Colorizer グラフィック](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> 構文の色分け表示サービスは、色分け text の一般的な Visual Studio 機構とは別のものです。 色分けをサポートする一般的なメカニズムの詳細については [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 、「 [フォントおよび色の使用](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)」を参照してください。
+> 構文の色分け表示サービスは、色分け text の一般的な Visual Studio 機構とは別のものです。 色分けをサポートする一般的なメカニズムの詳細については [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 、「 [フォントおよび色の使用](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)」を参照してください。
 
  また、言語サービスでは、カスタムの装飾項目を提供することを通知することで、エディターで使用されるカスタム装飾項目を指定できます。 これを行うには、インターフェイスを <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 実装するのと同じオブジェクトにインターフェイスを実装し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> ます。 このメソッドは、エディターがメソッドを呼び出したときにカスタム装飾項目の数を返し、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> エディターがメソッドを呼び出したときに個々のカスタム装飾項目を返し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> ます。
 
@@ -60,7 +60,7 @@ Visual Studio は、色分けサービスを使用して言語の要素を識別
     3. 選択したテキストを表示するには、メソッドによって返される色付け情報を使用し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> ます。
 
 > [!NOTE]
-> 言語サービスの colorizer を使用するだけでなく、汎用的な Visual Studio テキスト色分け機構を使用することもできます。 このメカニズムの詳細については、「 [フォントおよび色の使用](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015&preserve-view=true)」を参照してください。
+> 言語サービスの colorizer を使用するだけでなく、汎用的な Visual Studio テキスト色分け機構を使用することもできます。 このメカニズムの詳細については、「 [フォントおよび色の使用](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)

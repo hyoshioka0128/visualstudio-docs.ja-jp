@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93d8b19569912278f0dea6d849e3a2c6e183dba4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ca834a5414c73f6acf6ac744620a46bba54b8fbf
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584899"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413737"
 ---
 # <a name="document-windows"></a>ドキュメント ウィンドウ
 Visual Studio では、 *ドキュメントウィンドウ* は、マルチドキュメントインターフェイス (MDI) ウィンドウに関連付けられている、フレーム化された子ウィンドウです。 通常、ドキュメントウィンドウは、ソースコードまたはテキストの表示と変更に使用されますが、他の機能型をホストすることもできます。 ドキュメントウィンドウ:
@@ -33,7 +33,7 @@ Visual Studio では、 *ドキュメントウィンドウ* は、マルチド�
   Visual Studio でのウィンドウの動作の詳細については、「 [ウィンドウレイアウトをカスタマイズ](../../ide/customizing-window-layouts-in-visual-studio.md)する」を参照してください。
 
 ## <a name="document-window-implementation"></a>ドキュメントウィンドウの実装
- ドキュメントウィンドウは、エディターを実装することによって作成されます。 インターフェイスは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> エディターのインスタンス化の一部としてドキュメントウィンドウを作成します。 詳細については、「 [従来のインターフェイス](../../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)」を参照してください。
+ ドキュメントウィンドウは、エディターを実装することによって作成されます。 インターフェイスは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> エディターのインスタンス化の一部としてドキュメントウィンドウを作成します。 詳細については、「 [従来のインターフェイス](/previous-versions/visualstudio/visual-studio-2015/extensibility/legacy-interfaces-in-the-editor?preserve-view=true&view=vs-2015)」を参照してください。
 
 > [!NOTE]
 > ウィンドウに移動ナビゲーションポイントを提供するには、インターフェイスを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> ます。 テキストエディターでは、ドキュメント内のナビゲーションポイントを識別するためにテキストマーカーが使用されます。

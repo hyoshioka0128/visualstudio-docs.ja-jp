@@ -9,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96342abce736f18d79f89b9441d9b53c068cbecf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7c51aeea4a1637e5b1b9d2de0d8b92920334e2fc
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583893"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414517"
 ---
 # <a name="respond-to-and-propagate-changes"></a>応答と変更の反映
 
 要素を作成、削除、または更新すると、モデルの他の部分に変更を反映するコード、またはファイル、データベース、その他のコンポーネントなどの外部リソースに変更を反映するコードを記述できます。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>リファレンス
 
 ガイドラインとして、これらの手法を次の順序で検討します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "91583893"
 |ルール|変更が発生したトランザクションの終了の直前に、実行のためにキューに登録されているルールを定義できます。 これらは、Undo または Redo では実行されません。 それらを使用して、ストアの1つの部分を別のストアと同期させます。|[規則によって変更内容がモデル内に反映される](../modeling/rules-propagate-changes-within-the-model.md)|
 |ストアイベント|モデリングストアは、要素またはリンクの追加や削除、プロパティの値の変更などのイベントの通知を提供します。 このイベントは、Undo および Redo でも実行されます。 ストアイベントを使用して、ストアに含まれていない値を更新します。|[イベント ハンドラーによって変更内容がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |.NET イベント|図形には、マウスのクリックやその他のジェスチャに応答するイベントハンドラーがあります。 各オブジェクトについて、これらのイベントに登録する必要があります。 通常、登録は InitializeInstanceResources のオーバーライドで行われ、各要素に対して実行する必要があります。<br /><br /> これらのイベントは、通常、トランザクションの外部で発生します。|[方法: シェイプまたはデコレーターに対するクリック操作を受け取る](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|境界ルール|境界規則は、図形の境界を制限するために特に使用されます。|[BoundsRules によってシェイプの位置とサイズが制限される](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015&preserve-view=true)|
+|境界ルール|境界規則は、図形の境界を制限するために特に使用されます。|[BoundsRules によってシェイプの位置とサイズが制限される](/previous-versions/visualstudio/visual-studio-2015/modeling/boundsrules-constrain-shape-location-and-size?preserve-view=true&view=vs-2015)|
 |選択ルール|選択規則は、ユーザーが選択できる内容を限定します。|[方法: 現在の選択項目を表示および制限する](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|図形とコネクタの特徴 (影、矢印、色、線の幅、スタイルなど) を使用して、モデル要素の状態を示します。|[シェイプおよびコネクタの更新とモデルへの反映](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
@@ -55,4 +55,4 @@ ms.locfileid: "91583893"
 ## <a name="see-also"></a>関連項目
 
 - [方法: シェイプまたはデコレーターに対するクリック操作を受け取る](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
-- [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Domain-Specific 言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
