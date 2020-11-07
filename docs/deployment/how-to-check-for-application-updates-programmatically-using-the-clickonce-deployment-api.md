@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 配置 API を使用したアプリの自動更新
+description: ApplicationDeployment クラスを使用して、ユーザー要求などのイベントに基づいて更新プログラムを確認するコードを ClickOnce で記述する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382576"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351259"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>方法: ClickOnce 配置 API を使用してアプリケーションの更新プログラムをプログラムで確認する
 ClickOnce には、アプリケーションを配置した後に更新する2つの方法が用意されています。 最初の方法では、特定の間隔で更新プログラムが自動的にチェックされるように ClickOnce 配置を構成できます。 2番目のメソッドでは、クラスを使用して、 <xref:System.Deployment.Application.ApplicationDeployment> ユーザー要求などのイベントに基づいて更新プログラムをチェックするコードを記述できます。
@@ -56,7 +58,7 @@ ClickOnce には、アプリケーションを配置した後に更新する2つ
 
 - 「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」で説明されているように Mage.exe を使用してアプリケーションを配置する手順に従います。 [ **配置オプション** ] タブで、[ **開始場所** ] フィールドをアプリケーションマニフェスト ClickOnce が更新プログラムをチェックするように設定します。 [ **更新オプション** ] タブで、[ **このアプリケーションは更新プログラムを確認する** ] チェックボックスをオフにします。
 
-## <a name="net-framework-security"></a>.NET Framework のセキュリティ
+## <a name="net-framework-security"></a>.NET Framework セキュリティ
  プログラムによる更新を使用するには、アプリケーションに完全信頼のアクセス許可が必要です。
 
 ## <a name="see-also"></a>関連項目

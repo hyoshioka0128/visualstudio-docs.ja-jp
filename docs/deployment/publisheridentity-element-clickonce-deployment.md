@@ -1,5 +1,7 @@
 ---
 title: '&lt;publisherIdentity &gt; 要素 (ClickOnce 配置) |Microsoft Docs'
+description: PublisherIdentity 要素には、配置マニフェストに署名した発行者に関する情報が含まれています。 署名されたマニフェストには要素が必要です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927540"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350687"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity &gt; 要素 (ClickOnce 配置)
 この配置マニフェストに署名した発行元についての情報が含まれます。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 <publisherIdentity
@@ -40,8 +42,8 @@ ms.locfileid: "62927540"
 
 |属性|説明|
 |---------------|-----------------|
-|`name`|必須です。 このアプリケーションを発行したパーティの id を記述します。|
-|`issuerKeyHash`|必須です。 証明書の発行者の公開キーの SHA-1 ハッシュを格納します。|
+|`name`|必須。 このアプリケーションを発行したパーティの id を記述します。|
+|`issuerKeyHash`|必須。 証明書の発行者の公開キーの SHA-1 ハッシュを格納します。|
 
 #### <a name="parameters"></a>パラメーター
 

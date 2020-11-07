@@ -1,5 +1,7 @@
 ---
 title: '&lt;Package &gt; 要素 (ブートストラップ) |Microsoft Docs'
+description: Package 要素は、パッケージファイル内の最上位レベルの XML 要素です。 Package 要素が必要です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745761"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350739"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; 要素 (ブートストラップ)
 要素は、 `Package` パッケージファイル内の最上位レベルの XML 要素です。
@@ -147,7 +149,7 @@ ms.locfileid: "66745761"
 |--------------------| - |
 | `Culture` | 必須。 使用する言語を決定する、このパッケージのカルチャを定義します。 この属性は要素のキーであり `Strings` 、インストール時に製品名とエラーメッセージのカルチャ固有の文字列を一覧表示します。 |
 | `Name` | 必須。 などのツール内で開発者に表示されるパッケージの名前 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 この属性は、要素に対するキーです。この要素には、のプロパティおよび `Strings` `String` プロパティと `Name` `Culture` 一致するように、プロパティとプロパティが設定された要素が含まれている必要があり `Name` `Culture` `Package` ます。 |
-| `LicenseAgreement` | 省略可能。 使用許諾契約書 (EULA) を含む配布パッケージ内のファイルの名前を指定します。  このファイルには、プレーンテキスト (*.txt*) またはリッチテキスト形式を使用できます。 (*.rtf*) |
+| `LicenseAgreement` | 任意。 End-User 使用許諾契約書 (EULA) を含む配布パッケージ内のファイルの名前を指定します。  このファイルには、プレーンテキスト ( *.txt* ) またはリッチテキスト形式を使用できます。 ( *.rtf* ) |
 
 ## <a name="example"></a>例
  .NET Framework 2.0 を再配布するための完全なパッケージファイルのコード例を次に示します。

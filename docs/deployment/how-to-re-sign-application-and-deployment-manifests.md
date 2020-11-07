@@ -1,5 +1,7 @@
 ---
 title: アプリケーションマニフェストと配置マニフェストに再署名する |Microsoft Docs
+description: 展開プロパティを変更した後に、証明書を使用してアプリケーションマニフェストと配置マニフェストの両方に再署名する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851685"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351129"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストおよび配置マニフェストに再署名する
 Windows フォームアプリケーション、Windows Presentation Foundation アプリケーション (xbap)、または Office ソリューションのアプリケーションマニフェストの配置プロパティを変更した後、アプリケーションマニフェストと配置マニフェストの両方に証明書を使用して再署名する必要があります。 このプロセスによって、改ざんされたファイルがエンド ユーザーのコンピューターにインストールされないようにすることができます。
@@ -31,15 +33,15 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
  マニフェストに再署名できるもう1つのシナリオは、顧客が独自の証明書を使用してアプリケーションマニフェストと配置マニフェストに署名する場合です。
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>アプリケーション マニフェストと配置マニフェストへの再署名
- この手順では、既にアプリケーションマニフェストファイル (*.manifest*) に変更を加えていることを前提としています。 詳細については、「 [方法: 配置プロパティを変更する](/previous-versions/cc442869(v=vs.110))」を参照してください。
+ この手順では、既にアプリケーションマニフェストファイル ( *.manifest* ) に変更を加えていることを前提としています。 詳細については、「 [方法: 配置プロパティを変更する](/previous-versions/cc442869(v=vs.110))」を参照してください。
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してアプリケーションマニフェストと配置マニフェストに再署名するには
 
-1. **Visual Studio のコマンドプロンプト**ウィンドウを開きます。
+1. **Visual Studio のコマンドプロンプト** ウィンドウを開きます。
 
 2. 署名するマニフェストファイルが格納されているフォルダーにディレクトリを変更します。
 
-3. 次のコマンドを入力して、アプリケーションマニフェストファイルに署名します。 *Manifestfilename*は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス *に置き換え、* *password* を証明書のパスワードに置き換えます。
+3. 次のコマンドを入力して、アプリケーションマニフェストファイルに署名します。 *Manifestfilename* は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス *に置き換え、* *password* を証明書のパスワードに置き換えます。
 
     ```cmd
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -67,20 +69,20 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. 必要に応じて、マスター配置マニフェスト (*publish \\ \<appname> . application*) をバージョン配置ディレクトリ (*publish\Application Files \\ \<appname> _ \<version> *) にコピーします。
+5. 必要に応じて、マスター配置マニフェスト ( *publish \\ \<appname> . application* ) をバージョン配置ディレクトリ ( *publish\Application Files \\ \<appname> _ \<version>* ) にコピーします。
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>アプリケーションマニフェストと配置マニフェストを更新して再署名する
- この手順では、既にアプリケーションマニフェストファイル (*.manifest*) を変更したが、更新された他のファイルがあることを前提としています。 ファイルが更新された場合は、ファイルを表すハッシュも更新する必要があります。
+ この手順では、既にアプリケーションマニフェストファイル ( *.manifest* ) を変更したが、更新された他のファイルがあることを前提としています。 ファイルが更新された場合は、ファイルを表すハッシュも更新する必要があります。
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してアプリケーションマニフェストと配置マニフェストを更新して再署名するには
 
-1. **Visual Studio のコマンドプロンプト**ウィンドウを開きます。
+1. **Visual Studio のコマンドプロンプト** ウィンドウを開きます。
 
 2. 署名するマニフェストファイルが格納されているフォルダーにディレクトリを変更します。
 
 3. 発行出力フォルダー内のファイルから *.deploy* ファイル拡張子を削除します。
 
-4. 次のコマンドを入力して、更新されたファイルの新しいハッシュでアプリケーションマニフェストを更新し、アプリケーションマニフェストファイルに署名します。 *Manifestfilename*は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス *に置き換え、* *password* を証明書のパスワードに置き換えます。
+4. 次のコマンドを入力して、更新されたファイルの新しいハッシュでアプリケーションマニフェストを更新し、アプリケーションマニフェストファイルに署名します。 *Manifestfilename* は、マニフェストファイルの名前と拡張子を加えたものに置き換えます。 証明書を証明書ファイルの相対パスまたは完全修飾パス *に置き換え、* *password* を証明書のパスワードに置き換えます。
 
     ```cmd
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
@@ -108,11 +110,11 @@ Windows フォームアプリケーション、Windows Presentation Foundation �
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-6. アプリケーションマニフェストファイルと配置マニフェストファイルを除き、.deploy ファイル拡張子をファイルに戻し*ます。*
+6. アプリケーションマニフェストファイルと配置マニフェストファイルを除き、.deploy ファイル拡張子をファイルに戻し *ます。*
 
-7. 必要に応じて、マスター配置マニフェスト (*publish \\ \<appname> . application*) をバージョン配置ディレクトリ (*publish\Application Files \\ \<appname> _ \<version> *) にコピーします。
+7. 必要に応じて、マスター配置マニフェスト ( *publish \\ \<appname> . application* ) をバージョン配置ディレクトリ ( *publish\Application Files \\ \<appname> _ \<version>* ) にコピーします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
