@@ -1,6 +1,8 @@
 ---
 title: コード分析のアプリケーション エラー
 ms.date: 11/04/2016
+description: Visual Studio でマネージコード分析ツールによって生成されるエラーメッセージについて説明します。 エラーコードと対応する説明を表示します。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521317"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348503"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
 
@@ -39,12 +41,12 @@ ms.locfileid: "85521317"
 |[CA0058](ca0058.md)|参照されたアセンブリを読み込めません。|
 |[CA0059](ca0059.md)|コマンドラインスイッチエラー。|
 |[CA0060](ca0060.md)|間接的に参照されたアセンブリを読み込むことができません。|
-|[CA0061](ca0061.md)|ルール '*RuleId*' が見つかりませんでした。|
-|[CA0062](ca0062.md)|ルールセット '*RuleSetName*' で参照されているルール '*RuleId*' が見つかりませんでした。|
+|[CA0061](ca0061.md)|ルール ' *RuleId* ' が見つかりませんでした。|
+|[CA0062](ca0062.md)|ルールセット ' *RuleSetName* ' で参照されているルール ' *RuleId* ' が見つかりませんでした。|
 |[CA0063](ca0063.md)|規則セットファイルまたはその依存する規則セットファイルの1つを読み込むことができませんでした。|
 |[CA0064](ca0064.md)|指定された規則セットに FxCop 規則が含まれていなかったため、分析は実行されませんでした。|
-|[CA0065](ca0065.md)|サポートされていないメタデータコンストラクトです: 型 '*TypeName*' には、'*propertyfieldname*' という同じ名前のプロパティとフィールドの両方が含まれています|
-|[CA0066](ca0066.md)|**/Targetframeworkversion**に指定された値 '*VersionID*' は、認識されているバージョンではありません。|
+|[CA0065](ca0065.md)|サポートされていないメタデータコンストラクトです: 型 ' *TypeName* ' には、' *propertyfieldname* ' という同じ名前のプロパティとフィールドの両方が含まれています|
+|[CA0066](ca0066.md)|**/Targetframeworkversion** に指定された値 ' *VersionID* ' は、認識されているバージョンではありません。|
 |[CA0067](ca0067.md)|ディレクトリが見つかりません。|
 |[CA0068](ca0068.md)|ターゲットアセンブリ *' AssemblyName '* のデバッグ情報が見つかりませんでした。|
 |[CA0069](ca0069.md)|代替プラットフォームを使用しています。 *FrameworkVersion1* が見つかりませんでした。 代わりに *FrameworkVersion2* を使用してください。 最適な分析結果を得るには、正しいバージョンの framework がインストールされていることを確認します。|

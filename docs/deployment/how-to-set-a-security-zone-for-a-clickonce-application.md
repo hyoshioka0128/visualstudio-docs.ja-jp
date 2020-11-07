@@ -1,5 +1,6 @@
 ---
 title: セキュリティゾーンの設定 (ClickOnce アプリ)
+description: ClickOnce アプリケーションのコードアクセスセキュリティのアクセス許可を設定する方法について説明します。このアクセス許可は、プロジェクトデザイナーのアクセス許可の基本セットから始まります。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b099a406f31bf2a1c1266d76bb037ac3e85e19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d2e8b49f833b5dd91dc6379d2a015d41a9679afe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809730"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349777"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのセキュリティ ゾーンを設定する
 ClickOnce アプリケーションのコード アクセス セキュリティ アクセス許可を設定するときは、まず、 **プロジェクト デザイナー** の **[セキュリティ]** ページで、アクセス許可の基本セットを指定する必要があります。
@@ -31,7 +32,7 @@ ClickOnce アプリケーションのコード アクセス セキュリティ �
 
 ### <a name="to-set-a-security-zone"></a>セキュリティ ゾーンを設定するには
 
-1. **ソリューションエクスプローラー**でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ **プロパティ** ] をクリックします。
 
 2. **[セキュリティ]** タブをクリックします。
 
@@ -43,7 +44,7 @@ ClickOnce アプリケーションのコード アクセス セキュリティ �
 
 5. **[アプリケーションのインストール元のゾーン]** ドロップダウン リストでセキュリティ ゾーンを選択します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)

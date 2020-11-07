@@ -1,6 +1,8 @@
 ---
 title: .NET 用に手動でコード分析を実行する方法
 ms.date: 09/02/2020
+description: Visual Studio 2019 バージョン16.5 以降のバージョンでコード分析を手動で実行する方法について説明します。 「C# または Visual Basic コードで Roslyn アナライザーを実行する方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
@@ -11,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c24fa8e835dced8332aa4c50870d6251bdd43e63
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037160"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348724"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>.NET 用に手動でコード分析を実行する
 既定では、.NET Compiler Platform ("Roslyn") アナライザーは、ビルド時だけでなくライブ分析を実行することで、入力時に C# または Visual Basic コードを分析します。 そのため、通常は手動でコード分析をトリガーする必要がありません。 ただし、コード分析を手動でトリガーする必要があるシナリオもあります。
@@ -29,8 +31,8 @@ ms.locfileid: "90037160"
 
 ### <a name="run-code-analysis-manually"></a>手動でのコード分析の実行
 
-1. [ **ソリューションエクスプローラー**で、プロジェクトを選択します。
+1. [ **ソリューションエクスプローラー** で、プロジェクトを選択します。
 
-2. [**分析**] メニューの [*プロジェクト名***に対してコード分析を実行**] をクリックします。
+2. [ **分析** ] メニューの [ *プロジェクト名***に対してコード分析を実行** ] をクリックします。
 
-コード分析は、バックグラウンドで実行を開始します。 Visual Studio のステータスバーの左下隅に、 **コード分析を実行 \<project> ** していることを確認するメッセージが表示されます。 コード分析が完了すると、ステータスメッセージが**に対して \<project> 完了したコード分析**に変わります。 エラー一覧は、すべてのコード分析診断でまもなく更新されます。
+コード分析は、バックグラウンドで実行を開始します。 Visual Studio のステータスバーの左下隅に、 **コード分析を実行 \<project>** していることを確認するメッセージが表示されます。 コード分析が完了すると、ステータスメッセージが **に対して \<project> 完了したコード分析** に変わります。 エラー一覧は、すべてのコード分析診断でまもなく更新されます。

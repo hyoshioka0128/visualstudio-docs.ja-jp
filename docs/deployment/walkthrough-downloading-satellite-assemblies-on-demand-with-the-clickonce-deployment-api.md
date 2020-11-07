@@ -1,5 +1,6 @@
 ---
 title: 必要に応じてサテライトアセンブリをダウンロードする (ClickOnce API)
+description: サテライトアセンブリをオプションとしてマークし、クライアントコンピューターが現在のカルチャ設定に必要とするアセンブリのみをダウンロードする方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809238"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349296"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>チュートリアル: ClickOnce 配置 API を使用して必要に応じてサテライトアセンブリをダウンロードする
 サテライト アセンブリを使用すると、複数のカルチャに対して Windows フォーム アプリケーションを構成できます。 *サテライト アセンブリ* とは、アプリケーションの既定のカルチャ以外のカルチャ用アプリケーション リソースを含むアセンブリのことです。
@@ -55,7 +56,7 @@ ms.locfileid: "90809238"
 
 4. **[Files]** タブをクリックします。
 
-5. **省略記号** (**...**) ボタンをクリックして、アプリケーションのすべてのアセンブリとファイル (*Resgen.exe* を使用して生成したサテライト アセンブリを含む) を格納しているディレクトリを選択します (サテライトアセンブリの名前は* \<isoCode>\ApplicationName.resources.dll*の形式になります。ここで、 \<isoCode> は RFC 1766 形式の言語識別子です)。
+5. **省略記号** ( **...** ) ボタンをクリックして、アプリケーションのすべてのアセンブリとファイル ( *Resgen.exe* を使用して生成したサテライト アセンブリを含む) を格納しているディレクトリを選択します (サテライトアセンブリの名前は *\<isoCode>\ApplicationName.resources.dll* の形式になります。ここで、 \<isoCode> は RFC 1766 形式の言語識別子です)。
 
 6. **[作成]** をクリックして、配置にファイルを追加します。
 
@@ -66,5 +67,5 @@ ms.locfileid: "90809238"
 ## <a name="next-steps"></a>次のステップ
  コード例を見ると、 <xref:System.Threading.Thread.CurrentUICulture%2A> が特定の値に設定されています。しかし、運用環境では、クライアント コンピューターに適切な値が既定で設定されるため、この行は削除する必要があります。 たとえば、アプリケーションを日本語のクライアント コンピューターで実行する場合、既定では <xref:System.Threading.Thread.CurrentUICulture%2A> が `ja-JP` になります。 ここでは、アプリケーションの配置前にサテライト アセンブリをテストするという趣旨でプログラムから値を設定しています。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションのローカライズ](../deployment/localizing-clickonce-applications.md)

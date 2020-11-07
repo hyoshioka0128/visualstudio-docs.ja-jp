@@ -1,5 +1,6 @@
 ---
 title: ClickOnce アプリにデータファイルを含める
+description: 任意の種類のデータファイルを ClickOnce アプリケーションに追加して、対象のコンピューターのローカルディスクのデータディレクトリに格納する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809147"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349946"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>方法: ClickOnce アプリケーションにデータ ファイルを含める
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]インストールする各アプリケーションには、対象のコンピューターのローカルディスクにデータディレクトリが割り当てられます。このディレクトリには、アプリケーションが独自のデータを管理できます。 データファイルには、任意の種類のファイル (テキストファイル、XML ファイル、または Microsoft Access データベース (*.mdb*) ファイルなど) を含めることができます。 次の手順では、任意の種類のデータファイルをアプリケーションに追加する方法について説明し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]インストールする各アプリケーションには、対象のコンピューターのローカルディスクにデータディレクトリが割り当てられます。このディレクトリには、アプリケーションが独自のデータを管理できます。 データファイルには、任意の種類のファイル (テキストファイル、XML ファイル、または Microsoft Access データベース ( *.mdb* ) ファイルなど) を含めることができます。 次の手順では、任意の種類のデータファイルをアプリケーションに追加する方法について説明し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe を使用してデータファイルを含めるには
 
@@ -69,11 +70,11 @@ ms.locfileid: "90809147"
 
 4. [ **ファイル** ] タブを選択します。
 
-5. タブの上部にあるテキストボックスに、アプリケーションのファイルが格納されているディレクトリを入力し、[ **設定**] をクリックします。
+5. タブの上部にあるテキストボックスに、アプリケーションのファイルが格納されているディレクトリを入力し、[ **設定** ] をクリックします。
 
      データファイルがグリッドに表示されます。
 
-6. データファイルの **ファイルの種類** の値を **データ**に設定します。
+6. データファイルの **ファイルの種類** の値を **データ** に設定します。
 
 7. アプリケーションマニフェストを保存し、ファイルに再署名します。
 
@@ -83,5 +84,5 @@ ms.locfileid: "90809147"
 
      アプリケーションマニフェストのハッシュが変更されているため、配置マニフェストに再署名する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

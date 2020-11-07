@@ -1,5 +1,6 @@
 ---
 title: ClickOnce アプリを使用した必須コンポーネントのインストール
+description: インストール時に ClickOnce アプリケーションと共にパッケージ化する必須コンポーネントを選択する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809121"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349933"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする
 すべてのアプリケーションでは、実行する前に、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 正しいバージョンの .NET Framework がコンピューターにインストールされている必要があります。多くのアプリケーションには、その他の前提条件もあります。 アプリケーションを発行するときに [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、アプリケーションと共にパッケージ化する前提条件コンポーネントのセットを選択できます。 インストール時に、前提条件ごとにチェックが行われ、既に存在するかどうかが確認されます。インストールされていない場合は、アプリケーションをインストールする前にインストールされ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
@@ -32,14 +33,14 @@ ms.locfileid: "90809121"
 > [!IMPORTANT]
 > 最初のアプリケーションを発行する前に、開発用コンピューターに前提条件インストーラーパッケージを追加する必要があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 詳細については、「 [方法: ClickOnce アプリケーションに必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)」を参照してください。
 
- 必須コンポーネントは、**プロジェクトデザイナー**の [**発行**] ペインからアクセスできる [**必須コンポーネント**] ダイアログボックスで管理されます。
+ 必須コンポーネントは、 **プロジェクトデザイナー** の [ **発行** ] ペインからアクセスできる [ **必須コンポーネント** ] ダイアログボックスで管理されます。
 
 > [!NOTE]
 > 事前に定義された前提条件の一覧に加えて、独自のコンポーネントを一覧に追加することができます。 詳細については、「 [ブートストラップパッケージの作成](../deployment/creating-bootstrapper-packages.md)」を参照してください。
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>ClickOnce アプリケーションと共にインストールするための前提条件を指定するには
 
-1. **ソリューションエクスプローラー**でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ **プロパティ** ] をクリックします。
 
 2. [ **発行** ] ペインを選択します。
 
@@ -53,7 +54,7 @@ ms.locfileid: "90809121"
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>前提条件として別のダウンロード場所を指定するには
 
-1. **ソリューションエクスプローラー**でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ **プロパティ** ] をクリックします。
 
 2. [ **発行** ] ペインを選択します。
 
@@ -61,13 +62,13 @@ ms.locfileid: "90809121"
 
 4. **[必須コンポーネント]** ダイアログ ボックスの **[必須コンポーネントをインストールするセットアップ プログラムを作成する]** チェック ボックスをオンにします。
 
-5. [ **必須コンポーネントのインストール場所の指定** ] セクションで、[ **次の場所から必須コンポーネントをダウンロード**する] を選択します。
+5. [ **必須コンポーネントのインストール場所の指定** ] セクションで、[ **次の場所から必須コンポーネントをダウンロード** する] を選択します。
 
 6. ドロップダウンリストから場所を選択するか、URL、ファイルパス、または FTP の場所を入力して、[OK] をクリックし **ます。**
 
     > [!NOTE]
     > 指定されたコンポーネントのインストーラーが指定された場所に存在することを確認する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,5 +1,7 @@
 ---
 title: パッケージマニフェストを作成する |Microsoft Docs
+description: ブートストラップパッケージを使用して ClickOnce アプリケーションの前提条件を配置する方法について説明します。これには、各ロケールのパッケージマニフェストが含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851711"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350050"
 ---
 # <a name="how-to-create-a-package-manifest"></a>方法: パッケージ マニフェストを作成する
 アプリケーションの前提条件を展開するには、ブートストラップパッケージを使用します。 ブートストラップパッケージには、1つの製品マニフェストファイルが含まれていますが、各ロケールのパッケージマニフェストが含まれています。 ローカライズされたさまざまなバージョンの共有機能は、製品マニフェストに入ります。
@@ -34,11 +36,11 @@ ms.locfileid: "90851711"
 
 #### <a name="to-create-the-package-manifest"></a>パッケージマニフェストを作成するには
 
-1. ブートストラップパッケージ用のディレクトリを作成します。 この例では、 *C:\ パッケージ*を使用します。
+1. ブートストラップパッケージ用のディレクトリを作成します。 この例では、 *C:\ パッケージ* を使用します。
 
 2. ロケールの名前 (英語の場合は *en* など) を使用してサブディレクトリを作成します。
 
-3. Visual Studio で、 *package.xml*という名前の XML ファイルを作成し、 *c:\* フォルダーに保存します。
+3. Visual Studio で、 *package.xml* という名前の XML ファイルを作成し、 *c:\* フォルダーに保存します。
 
 4. ブートストラップパッケージの名前、このローカライズされたパッケージマニフェストのカルチャ、およびオプションの使用許諾契約の一覧を表示するには、XML を追加します。 次の XML は、 `DisplayName` 以降の `Culture` 要素で定義されている変数とを使用します。
 
@@ -50,7 +52,7 @@ ms.locfileid: "90851711"
         LicenseAgreement="eula.txt">
     ```
 
-5. ロケール固有のディレクトリにあるすべてのファイルを一覧表示するには、XML を追加します。 次の XML は、 **en**ロケールに適用される*eula.txt*という名前のファイルを使用します。
+5. ロケール固有のディレクトリにあるすべてのファイルを一覧表示するには、XML を追加します。 次の XML は、 **en** ロケールに適用される *eula.txt* という名前のファイルを使用します。
 
     ```xml
     <PackageFiles>
@@ -71,7 +73,7 @@ ms.locfileid: "90851711"
     </Strings>
     ```
 
-7. *C:\ パッケージ*フォルダーを Visual Studio ブートストラップディレクトリにコピーします。 Visual Studio 2010 の場合、これは *SDKs\Windows\v7.0A\Bootstrapper\Packages* ディレクトリです。
+7. *C:\ パッケージ* フォルダーを Visual Studio ブートストラップディレクトリにコピーします。 Visual Studio 2010 の場合、これは *SDKs\Windows\v7.0A\Bootstrapper\Packages* ディレクトリです。
 
 ## <a name="example"></a>例
  パッケージマニフェストには、エラーメッセージ、ソフトウェアライセンス条項、言語パックなど、ロケール固有の情報が含まれています。
@@ -98,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

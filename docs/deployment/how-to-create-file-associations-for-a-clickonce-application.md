@@ -1,5 +1,6 @@
 ---
 title: ファイルの関連付けを作成する (ClickOnce アプリ)
+description: ClickOnce アプリケーションを1つ以上のファイル名拡張子に関連付ける方法について説明します。これにより、ユーザーがファイルを開いたときにアプリケーションが起動するようになります。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809782"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350037"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのファイルの関連付けを作成する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを1つまたは複数のファイル名拡張子に関連付けることができるため、ユーザーがこれらの種類のファイルを開いたときに、アプリケーションが自動的に起動されます。 ファイル名拡張子のサポートをアプリケーションに追加する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] のは簡単です。
@@ -32,7 +33,7 @@ ms.locfileid: "90809782"
 
 2. メモ帳などのテキストエディターまたは XML エディターを使用して、アプリケーションマニフェストを開きます。
 
-3. `assembly` 要素を検索します。 詳細については、「 [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)」を参照してください。
+3. `assembly` 要素を見つけます。 詳細については、「 [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)」を参照してください。
 
 4. 要素の子として `assembly` 、要素を追加し `fileAssociation` ます。 `fileAssociation`要素には、次の4つの属性があります。
 
@@ -48,13 +49,13 @@ ms.locfileid: "90809782"
 
 5. 複数のファイルの種類をアプリケーションに関連付ける場合は、追加の要素を追加し `fileAssociation` ます。 属性は、 `progid` それぞれで異なる必要があることに注意してください。
 
-6. アプリケーションマニフェストの作成が完了したら、マニフェストに再署名します。 これは、 *Mage.exe*を使用してコマンドラインから行うことができます。
+6. アプリケーションマニフェストの作成が完了したら、マニフェストに再署名します。 これは、 *Mage.exe* を使用してコマンドラインから行うことができます。
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
     詳しくは、「[Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)」をご覧ください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [\<fileAssociation> element](../deployment/fileassociation-element-clickonce-application.md)
 - [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

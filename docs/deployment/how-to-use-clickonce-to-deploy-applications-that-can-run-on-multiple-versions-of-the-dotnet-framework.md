@@ -1,5 +1,7 @@
 ---
 title: ClickOnce を使用してマルチターゲットアプリをデプロイする
+description: ClickOnce 配置テクノロジを使用して、複数のバージョンの .NET Framework を対象とするアプリケーションを配置する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ede1cb4faa437d9cff8bd1239f9c271112ccf72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67dcee1fac0b5ec082a7f92285c6c0ac2523800a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381705"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349517"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>方法: ClickOnce を使用して、複数のバージョンの .NET Framework で実行できるアプリケーションを配置する
 ClickOnce 配置テクノロジを使用して、複数のバージョンの .NET Framework を対象とするアプリケーションを配置できます。 そのためには、アプリケーションマニフェストと配置マニフェストを生成して更新する必要があります。

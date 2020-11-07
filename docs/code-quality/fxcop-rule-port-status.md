@@ -1,6 +1,8 @@
 ---
 title: FxCop 規則のポートの状態
 ms.date: 05/21/2019
+description: Visual Studio で FxCop アナライザーに移植された静的コード分析規則について説明します。 移植された更新プログラムに関する移植されたルールとリソースを表示します。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658582"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348946"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -23,7 +25,7 @@ ms.locfileid: "91658582"
 
 ## <a name="ported-rules"></a>移植された規則
 
-Roslyn-アナライザーリポジトリの自動生成された [ドキュメントページ](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) には、FxCop アナライザーに移植されたルールの最新の一覧が含まれています。 このページには、規則が既定で有効になっているかどうかや、関連付けられている *コード修正プログラム*があるかどうかなどの追加情報も含まれています。 ([コード修正](../ide/quick-actions.md) は、Visual Studio の電球アイコンメニューで使用できるワンクリック修正です)。
+Roslyn-アナライザーリポジトリの自動生成された [ドキュメントページ](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) には、FxCop アナライザーに移植されたルールの最新の一覧が含まれています。 このページには、規則が既定で有効になっているかどうかや、関連付けられている *コード修正プログラム* があるかどうかなどの追加情報も含まれています。 ([コード修正](../ide/quick-actions.md) は、Visual Studio の電球アイコンメニューで使用できるワンクリック修正です)。
 
 このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md) に移植された fxcop 規則の一覧には次のものが含まれます。
 

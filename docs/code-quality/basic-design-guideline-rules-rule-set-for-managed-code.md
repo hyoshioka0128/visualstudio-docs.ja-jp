@@ -1,6 +1,8 @@
 ---
 title: マネージド コードの "基本デザイン ガイドライン規則" 規則セット
 ms.date: 11/04/2016
+description: Visual Studio の "基本デザインガイドライン規則" 規則セットについて説明します。これは、コードの理解と使用を容易にするために役立ちます。 ルールの説明を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bf7542d94b16042df27ec8b780cc93c9061d6e8
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659128"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348409"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>マネージド コードの "基本デザイン ガイドライン規則" 規則セット
 

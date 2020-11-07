@@ -1,5 +1,6 @@
 ---
 title: エラーのトラブルシューティング (ClickOnce 配置)
+description: この記事では、ClickOnce アプリケーションを配置するときに発生する可能性のある一般的なエラーについて説明し、各問題を解決するための手順を示します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809454"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349266"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 この記事では、アプリケーションを展開するときに発生する可能性がある一般的なエラー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] と、それぞれの問題を解決するための手順を示します。
@@ -44,7 +45,7 @@ ms.locfileid: "90809454"
 
 - ログファイルに "(403) 許可されていません" または "(404) が見つかりません" と表示されている場合は、Web サーバーがこのファイルのダウンロードをブロックしないように構成されていることを確認します。 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。
 
-- *.Config*ファイルがサーバーによってブロックされている場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] この記事の後半にある「.config ファイルを含むアプリケーションをインストールしようとすると、ダウンロードエラー」セクションを参照してください。
+- *.Config* ファイルがサーバーによってブロックされている場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] この記事の後半にある「.config ファイルを含むアプリケーションをインストールしようとすると、ダウンロードエラー」セクションを参照してください。
 
 - このエラーが発生したかどうかを判断するに `deploymentProvider` は、配置マニフェスト内の url が、アクティブ化に使用される url とは異なる場所を指していることを確認します。
 
@@ -53,7 +54,7 @@ ms.locfileid: "90809454"
 - ネットワーク接続に問題があるかどうかを確認します。ダウンロード中にクライアントコンピューターがオフラインになった場合は、このメッセージが表示されます。
 
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>.Config ファイルを含む ClickOnce アプリケーションをインストールしようとすると、ダウンロードエラーが発生する
- Windows ベースのアプリケーション Visual Basic には、既定で App.config ファイルが含まれています。 Windows Server 2003 を使用している Web サーバーからユーザーがをインストールしようとすると、問題が発生します。これは、セキュリティ上の理由から、オペレーティングシステムによって *.config* ファイルのインストールがブロックされるためです。 *.Config*ファイルをインストールできるようにするには、[**発行オプション**] ダイアログボックスの [ **.deploy] ファイル拡張子**をクリックします。
+ Windows ベースのアプリケーション Visual Basic には、既定で App.config ファイルが含まれています。 Windows Server 2003 を使用している Web サーバーからユーザーがをインストールしようとすると、問題が発生します。これは、セキュリティ上の理由から、オペレーティングシステムによって *.config* ファイルのインストールがブロックされるためです。 *.Config* ファイルをインストールできるようにするには、[ **発行オプション** ] ダイアログボックスの [ **.deploy] ファイル拡張子** をクリックします。
 
  また、アプリケーション、マニフェスト、および .deploy ファイルに対して、コンテンツの種類 (MIME の種類) を適切に設定する必要があります。 詳細については、Web サーバーのドキュメントを参照してください。
 
@@ -90,7 +91,7 @@ ms.locfileid: "90809454"
  PrivatePath (Fusion プローブパス) を使用するには、アプリケーションが完全信頼のアクセス許可を要求する必要があります。 完全信頼を要求するようにアプリケーションマニフェストを変更してから、再試行してください。
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>アンインストール中に "アプリケーションをアンインストールできませんでした" というメッセージが表示される
- このメッセージは、通常、アプリケーションが既に削除されているか、ストアが破損していることを示しています。 [ **OK**] をクリックすると、 **プログラムの追加と削除** のエントリが削除されます。
+ このメッセージは、通常、アプリケーションが既に削除されているか、ストアが破損していることを示しています。 [ **OK** ] をクリックすると、 **プログラムの追加と削除** のエントリが削除されます。
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>インストール中に、プラットフォームの依存関係がインストールされていないというメッセージが表示されます。
  アプリケーションが実行するために必要な必須コンポーネントが GAC (グローバルアセンブリキャッシュ) にありません。
@@ -103,7 +104,7 @@ ms.locfileid: "90809454"
  URL を使用して発行する場合は、対象のコンピューターで FrontPage Server Extensions 有効になっていることを確認します。
 
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>エラーメッセージ: Web サイト ' ' を作成できません \<site> 。 FrontPage Server Extensions と通信するためのコンポーネントがインストールされていません。
- 発行元のコンピューターに Microsoft Visual Studio Web オーサリングコンポーネントがインストールされていることを確認します。 Express ユーザーの場合、このコンポーネントは既定ではインストールされません。 詳細については、「[http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358)」を参照してください。
+ 発行元のコンピューターに Microsoft Visual Studio Web オーサリングコンポーネントがインストールされていることを確認します。 Express ユーザーの場合、このコンポーネントは既定ではインストールされません。 詳細については、[http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358) をご覧ください。
 
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>エラーメッセージ: ファイル ' 6.0.0.0, Version =, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture = \* , Type = win32 ' が見つかりませんでした。
  このエラーメッセージは、visual スタイルが有効になっている WPF アプリケーションを公開しようとしたときに表示されます。 この問題を解決するには、「 [方法: Visual スタイルが有効になっている WPF アプリケーションを発行](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)する」を参照してください。
@@ -113,7 +114,7 @@ ms.locfileid: "90809454"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>証明書ストアの証明書と、受信した空白のメッセージボックスを使用して署名しようとしました。
  [ **署名** ] ダイアログボックスで、次のことを行う必要があります。
 
-- [ **保存された証明書で署名する**] を選択します。
+- [ **保存された証明書で署名する** ] を選択します。
 
 - 一覧から証明書を選択します。最初の証明書は、既定では選択されていません。
 
@@ -137,7 +138,7 @@ ms.locfileid: "90809454"
 | ネットワーク経由でショートカットをアクティブ化することはできません。 | アプリケーションへのショートカットは [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、ローカルハードディスク上でのみ開始できます。 リモートサーバー上のショートカットファイルを指す URL を開くことによって開始することはできません。 |
 | アプリケーションが大きすぎて、部分信頼でオンラインで実行できません。 詳細については、アプリケーションベンダーまたはシステム管理者にお問い合わせください。 | 部分信頼で実行されるアプリケーションは、オンラインアプリケーションクォータの半分 (既定では 250 MB) より大きくすることはできません。 |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

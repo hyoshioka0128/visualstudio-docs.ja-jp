@@ -1,5 +1,6 @@
 ---
 title: セキュリティ/バージョン管理/マニフェストに関する問題 (ClickOnce)
+description: Clickonce のセキュリティ、アプリケーションのバージョン管理、およびマニフェストの構文とセマンティクスに関する問題について説明します。これにより、ClickOnce 配置が成功しなくなる可能性があります。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811248"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349374"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 
@@ -68,7 +69,7 @@ ms.locfileid: "90811248"
 
 マニフェストファイルで問題が発生する原因としては、単一引用符や二重引用符などの特殊文字を含むアプリケーションの名前を選択することが挙げられます。 アプリケーションの名前は id の一部です [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、特殊文字を含む id は現在解析されません。 アプリケーションのアクティブ化に失敗した場合は、名前にアルファベットと数字のみを使用していることを確認し、もう一度展開してみてください。
 
-配置マニフェストまたはアプリケーションマニフェストを手動で編集した場合は、意図せず破損している可能性があります。 マニフェストが破損していると、正しいインストールができなくなり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 実行時にこのようなエラーをデバッグするには、[ **ClickOnce エラー** ] ダイアログボックスの [**詳細**] をクリックし、ログのエラーメッセージを参照します。 ログには、次のいずれかのメッセージが表示されます。
+配置マニフェストまたはアプリケーションマニフェストを手動で編集した場合は、意図せず破損している可能性があります。 マニフェストが破損していると、正しいインストールができなくなり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 実行時にこのようなエラーをデバッグするには、[ **ClickOnce エラー** ] ダイアログボックスの [ **詳細** ] をクリックし、ログのエラーメッセージを参照します。 ログには、次のいずれかのメッセージが表示されます。
 
 - 構文エラーの説明、およびエラーが発生した行番号と文字位置。
 
@@ -88,14 +89,14 @@ ms.locfileid: "90811248"
 <deploymentProvider codebase="http://myserver/myapp.application" />
 ```
 
-このパスは、がアプリケーションを作成するときに設定され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、インストールされているアプリケーションでは必須です。 このパスは、インストーラーによってアプリケーションがインストールされる標準の場所を指し、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 更新プログラムを検索します。 **Xcopy**コマンドを使用してアプリケーションを別の場所にコピーしても、プロパティを変更していない場合 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `deploymentProvider` で [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] も、はアプリケーションをダウンロードしようとしたときに元の場所を参照します。
+このパスは、がアプリケーションを作成するときに設定され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、インストールされているアプリケーションでは必須です。 このパスは、インストーラーによってアプリケーションがインストールされる標準の場所を指し、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 更新プログラムを検索します。 **Xcopy** コマンドを使用してアプリケーションを別の場所にコピーしても、プロパティを変更していない場合 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `deploymentProvider` で [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] も、はアプリケーションをダウンロードしようとしたときに元の場所を参照します。
 
 アプリケーションを移動またはコピーする場合は、 `deploymentProvider` クライアントが実際に新しい場所からインストールされるように、パスも更新する必要があります。 アプリケーションがインストールされている場合は、このパスを更新することはほとんど問題になります。 常に元の URL を使用して起動されるオンラインアプリケーションの場合、の設定 `deploymentProvider` は省略可能です。 が設定されている場合は受け入れられます。それ以外の場合は、アプリケーションを起動するために使用される URL が、 `deploymentProvider` アプリケーションファイルをダウンロードするためのベース url として使用されます。
 
 > [!NOTE]
 > マニフェストを更新するたびに、再度署名する必要もあります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 [ClickOnce 配置](../deployment/troubleshooting-clickonce-deployments.md) 
  のトラブルシューティング[ClickOnce アプリケーション](../deployment/securing-clickonce-applications.md) 

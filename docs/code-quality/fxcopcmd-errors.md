@@ -1,6 +1,8 @@
 ---
 title: FxCopCmd エラー
 ms.date: 10/19/2016
+description: FxCopCmd コマンドが返すエラーコードについて説明します。 各コードが表すエラーの種類を確認し、致命的なエラーを認識する方法を確認します。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -10,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78167612"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348933"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd ツールのエラー
 
@@ -39,7 +41,7 @@ FxCopCmd では、すべてのエラーが致命的であるとは見なされ�
 |BuildBreakingMessage|0x400|
 |不明なエラー|0x1000000|
 
-致命的なエラーの**分析エラー**が返されます。 これは、分析を完了できなかったことを示します。 該当する場合、エラーコードには、致命的なエラーの根底にある原因も含まれます。 次の状況では、致命的なエラーが発生します。
+致命的なエラーの **分析エラー** が返されます。 これは、分析を完了できなかったことを示します。 該当する場合、エラーコードには、致命的なエラーの根底にある原因も含まれます。 次の状況では、致命的なエラーが発生します。
 
 - 入力が不十分なため、分析を実行できませんでした。
 
@@ -52,6 +54,6 @@ FxCopCmd では、すべてのエラーが致命的であるとは見なされ�
 > [!NOTE]
 > FxCopCmd のリターンコード **アセンブリ** は、エラー0x200 自体を参照しますが、エラーではなく警告です。 このリターンコードは、間接参照が不足していて、FxCopCmd がそれらを処理できたことを示します。 警告は、一部の分析結果が侵害された可能性があることを意味します。 他のリターンコードと組み合わせると、 **アセンブリ参照エラー** をエラーとして扱うことができます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コード分析のアプリケーション エラー](../code-quality/code-analysis-application-errors.md)

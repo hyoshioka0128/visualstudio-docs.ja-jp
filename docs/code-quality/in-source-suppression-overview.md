@@ -1,6 +1,8 @@
 ---
 title: コード分析の違反を抑制する
 ms.date: 08/27/2020
+description: Visual Studio でコード分析の違反を抑制する方法について説明します。 SuppressMessageAttribute 属性をソース内での抑制に使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -14,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658517"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348698"
 ---
 # <a name="suppress-code-analysis-violations"></a>コード分析の違反を抑制する
 
@@ -35,7 +37,7 @@ C++/CLI では、マクロ CA を使用して \_ \_ ヘッダーファイル内�
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[実行コード分析の**分析**] を選択し、[  >  **アクティブな問題を抑制**する] を選択して、すべての警告を非表示にできます。
+> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[実行コード分析の **分析** ] を選択し、[  >  **アクティブな問題を抑制** する] を選択して、すべての警告を非表示にできます。
 >
 > ![Visual Studio でコード分析を実行し、問題を抑制する](media/suppress-active-issues.png)
 
@@ -44,13 +46,13 @@ C++/CLI では、マクロ CA を使用して \_ \_ ヘッダーファイル内�
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ビルドの**分析**] を選択し、  >  **アクティブな問題を非**表示にして、すべての警告を非表示にすることができます。
+> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ビルドの **分析** ] を選択し、  >  **アクティブな問題を非** 表示にして、すべての警告を非表示にすることができます。
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性
 
-**エラー一覧**でコード分析の警告のコンテキストまたは右クリックメニューから [**抑制**] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性がコードまたはプロジェクトのグローバル抑制ファイルのいずれかに追加されます。
+**エラー一覧** でコード分析の警告のコンテキストまたは右クリックメニューから [ **抑制** ] を選択すると、 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性がコードまたはプロジェクトのグローバル抑制ファイルのいずれかに追加されます。
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性の形式は次のとおりです。
 
@@ -68,7 +70,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 属性のプロパティは次のとおりです。
 
-- [**カテゴリ]** -ルールが定義されているカテゴリ。 コード分析規則のカテゴリの詳細については、「 [マネージコードの警告](/dotnet/fundamentals/code-analysis/quality-rules/index)」を参照してください。
+- [ **カテゴリ]** -ルールが定義されているカテゴリ。 コード分析規則のカテゴリの詳細については、「 [マネージコードの警告](/dotnet/fundamentals/code-analysis/quality-rules/index)」を参照してください。
 
 - **Checkid** -ルールの識別子。 サポートには、規則識別子の短い名前と長い名前の両方が含まれます。 短い名前は CAXXXX です。長い名前は CAXXXX: FriendlyTypeName です。
 
@@ -169,11 +171,11 @@ public class Animal
 
 ### <a name="global-suppression-file"></a>グローバル抑制ファイル
 
-グローバル抑制ファイルは、グローバルレベルの抑制またはターゲットを指定しない抑制のいずれかである抑制を保持します。 たとえば、アセンブリレベルの違反の抑制は、このファイルに格納されます。 また、一部の ASP.NET 抑制は、フォームの分離コードではプロジェクトレベルの設定が使用できないため、このファイルに格納されます。 グローバル抑制ファイルが作成され、プロジェクトに追加されます。その際、[**エラー一覧**] ウィンドウで [**抑制**] コマンドの [**プロジェクトの抑制ファイルを**使用する] オプションを初めて選択します。
+グローバル抑制ファイルは、グローバルレベルの抑制またはターゲットを指定しない抑制のいずれかである抑制を保持します。 たとえば、アセンブリレベルの違反の抑制は、このファイルに格納されます。 また、一部の ASP.NET 抑制は、フォームの分離コードではプロジェクトレベルの設定が使用できないため、このファイルに格納されます。 グローバル抑制ファイルが作成され、プロジェクトに追加されます。その際、[ **エラー一覧** ] ウィンドウで [ **抑制** ] コマンドの [ **プロジェクトの抑制ファイルを** 使用する] オプションを初めて選択します。
 
 ### <a name="module-suppression-scope"></a>モジュールの抑制スコープ
 
-**モジュール**スコープを使用すると、アセンブリ全体のコード品質違反を抑制できます。
+**モジュール** スコープを使用すると、アセンブリ全体のコード品質違反を抑制できます。
 
 たとえば、 _globalsuppressions_ プロジェクトファイルの次の属性は、ASP.NET Core プロジェクトの ConfigureAwait 違反を抑制します。
 

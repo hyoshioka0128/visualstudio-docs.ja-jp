@@ -1,5 +1,7 @@
 ---
 title: ClickOnce アプリケーションのカスタムインストーラーを作成する
+description: カスタムインストーラーを使用して、.exe ファイルに基づいて ClickOnce アプリケーションをサイレントインストールおよび更新する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b648134b7ad27a8f622ce270dc0f05e0a7e6516c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72637419"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349205"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションのカスタムインストーラーを作成する
-*.Exe*ファイルに基づく ClickOnce アプリケーションは、カスタムインストーラーによってサイレントインストールおよび更新できます。 カスタムインストーラーは、インストール時にカスタムのユーザーエクスペリエンスを実装できます。たとえば、セキュリティおよびメンテナンス操作のためのカスタムダイアログボックスがあります。 インストール操作を実行するために、カスタムインストーラーはクラスを使用し <xref:System.Deployment.Application.InPlaceHostingManager> ます。 このチュートリアルでは、ClickOnce アプリケーションをサイレントインストールするカスタムインストーラーを作成する方法について説明します。
+*.Exe* ファイルに基づく ClickOnce アプリケーションは、カスタムインストーラーによってサイレントインストールおよび更新できます。 カスタムインストーラーは、インストール時にカスタムのユーザーエクスペリエンスを実装できます。たとえば、セキュリティおよびメンテナンス操作のためのカスタムダイアログボックスがあります。 インストール操作を実行するために、カスタムインストーラーはクラスを使用し <xref:System.Deployment.Application.InPlaceHostingManager> ます。 このチュートリアルでは、ClickOnce アプリケーションをサイレントインストールするカスタムインストーラーを作成する方法について説明します。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -73,7 +75,7 @@ ms.locfileid: "72637419"
     ```
 
 ## <a name="next-steps"></a>次のステップ
- ClickOnce アプリケーションでは、更新プロセス中に表示するカスタムユーザーインターフェイスを含む、カスタムの更新ロジックを追加することもできます。 詳細については、 <xref:System.Deployment.Application.UpdateCheckInfo> を参照してください。 ClickOnce アプリケーションでは、要素を使用して、[スタート] メニューの標準エントリ、ショートカット、および [プログラムの追加と削除] エントリを抑制することもでき `<customUX>` ます。 詳細については、「 [ \<entryPoint> 要素](../deployment/entrypoint-element-clickonce-application.md)」と「」を参照してください <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> 。
+ ClickOnce アプリケーションでは、更新プロセス中に表示するカスタムユーザーインターフェイスを含む、カスタムの更新ロジックを追加することもできます。 詳細については、「<xref:System.Deployment.Application.UpdateCheckInfo>」を参照してください。 ClickOnce アプリケーションでは、要素を使用して、[スタート] メニューの標準エントリ、ショートカット、および [プログラムの追加と削除] エントリを抑制することもでき `<customUX>` ます。 詳細については、「 [ \<entryPoint> 要素](../deployment/entrypoint-element-clickonce-application.md)」と「」を参照してください <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> 。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
