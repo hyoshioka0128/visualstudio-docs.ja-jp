@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: フィールドのカプセル化
                   href: ide/reference/encapsulate-field.md
+                - name: 基底クラスの抽出
+                  href: ide/reference/extract-base-class.md
                 - name: インターフェイスの抽出
                   href: ide/reference/extract-interface.md
                 - name: メソッドの抽出
                   href: ide/reference/extract-method.md
                 - name: ローカル関数を抽出する
                   href: ide/reference/extract-local-function.md
+                - name: メソッドのインライン化
+                  href: ide/reference/inline-method.md
                 - name: インラインの一時変数
                   href: ide/reference/inline-temporary-variable.md
                 - name: インポートされていない型と拡張メソッドに対する IntelliSense 入力候補
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: if ステートメントを反転させる
                   href: ide/reference/invert-if-statement.md
-                - name: 静的ローカル関数のリファクタリング オプション
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: クラスを抽象にする
+                  href: ide/reference/make-class-abstract.md
                 - name: メンバーを静的にする
                   href: ide/reference/make-member-static.md
                 - name: 参照の近くへの宣言の移動
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: if ステートメントの分割または結合
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: 静的ローカル関数のリファクタリング オプション
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: 名前空間とフォルダー名を同期する
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: 型とファイル名の同期
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: ラムダ式またはブロックの本体の使用
                   href: ide/reference/use-block-body-lambda.md
+                - name: new() の使用
+                  href: ide/reference/use-new.md
+                - name: パターン マッチングの使用
+                  href: ide/reference/use-pattern-matching.md
                 - name: 未使用値の割り当て、変数、およびパラメーター
                   href: ide/reference/unused-values-parameters.md
                 - name: ラップ、インデント、およびリファクタリングの整理
@@ -966,7 +976,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: マイクロソフトのアクセシビリティ製品とサービス
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 関連項目
+- name: リファレンス
   items:
     - name: キーボード ショートカット
       items:
