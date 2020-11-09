@@ -1,5 +1,7 @@
 ---
 title: '方法: シェーダーをエクスポートする'
+description: シェーダー デザイナーを使用して、Directed Graph Shader Language シェーダーをアプリで使用できるようにエクスポートする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -8,26 +10,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9495e5aac16821927f5f61005cd16bd20e82687
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da09feffc4d2f804660f02dbda6055bf59099500
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768991"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134303"
 ---
 # <a name="how-to-export-a-shader"></a>方法: シェーダーをエクスポートする
 
-この記事では、**シェーダー デザイナー**を使用して Directed Graph Shader Language (DGSL) シェーダーをエクスポートし、これをアプリで使用できるようにする方法について説明します。
+この記事では、 **シェーダー デザイナー** を使用して Directed Graph Shader Language (DGSL) シェーダーをエクスポートし、これをアプリで使用できるようにする方法について説明します。
 
 ## <a name="export-a-shader"></a>シェーダーをエクスポートする
 
 シェーダー デザイナーを使用して作成したシェーダーをアプリで使用するには、グラフィックス API が理解できる形式でシェーダーをエクスポートする必要があります。 シェーダーはニーズに応じてさまざまな方法でエクスポートできます。
 
-1. Visual Studio で、**視覚シェーダー グラフ (.dgsl)** ファイルを開きます。
+1. Visual Studio で、 **視覚シェーダー グラフ (.dgsl)** ファイルを開きます。
 
-     開く**視覚シェーダー グラフ (.dgsl)** ファイルがない場合、「[方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)」に示された手順で作成します。
+     開く **視覚シェーダー グラフ (.dgsl)** ファイルがない場合、「 [方法: 基本カラー シェーダーを作成する](../designers/how-to-create-a-basic-color-shader.md)」に示された手順で作成します。
 
-2. **シェーダー デザイナー**のツール バーで、 **[詳細]** 、 **[エクスポート]** 、 **[名前を付けてエクスポート]** を選択します。 **[シェーダーのエクスポート]** ダイアログ ボックスが表示されます。
+2. **シェーダー デザイナー** のツール バーで、 **[詳細]** 、 **[エクスポート]** 、 **[名前を付けてエクスポート]** を選択します。 **[シェーダーのエクスポート]** ダイアログ ボックスが表示されます。
 
 3. **[ファイルの種類]** ドロップダウン リストで、エクスポートする形式を選択します。
 
