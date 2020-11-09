@@ -1,5 +1,7 @@
 ---
 title: プロパティ関数 | Microsoft Docs
+description: MSBuild のプロパティ定義に含まれている .NET Framework メソッドの呼び出しであるプロパティ関数を使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183653"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048817"
 ---
 # <a name="property-functions"></a>プロパティ関数
 
@@ -248,9 +250,9 @@ MSBuild の `GetRegistryValue` プロパティ関数は、レジストリ キー
 この関数を使用する方法を次の例に示します。
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild の GetRegistryValueFromView
@@ -263,7 +265,7 @@ MSBuild の `GetRegistryValueFromView` プロパティ関数は、レジスト�
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64 ビット オペレーティング システムは、**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** というレジストリ キーを保持しています。このキーは、32 ビット アプリケーションに対して **HKEY_LOCAL_MACHINE\SOFTWARE** というレジストリ ビューを提供します。
+Windows 64 ビット オペレーティング システムは、 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** というレジストリ キーを保持しています。このキーは、32 ビット アプリケーションに対して **HKEY_LOCAL_MACHINE\SOFTWARE** というレジストリ ビューを提供します。
 
 既定では、WOW64 で実行されている 32 ビット アプリケーションは 32 ビットのレジストリ ビューにアクセスし、64 ビット アプリケーションは 64 ビットのレジストリ ビューにアクセスします。
 
@@ -281,7 +283,7 @@ Windows 64 ビット オペレーティング システムは、**HKEY_LOCAL_MAC
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-最初に 64 ビットのレジストリ ビュー、次に 32 ビットのレジストリ ビューを参照して、**ReferenceAssemblies** キーの **SLRuntimeInstallPath** データを取得します。
+最初に 64 ビットのレジストリ ビュー、次に 32 ビットのレジストリ ビューを参照して、 **ReferenceAssemblies** キーの **SLRuntimeInstallPath** データを取得します。
 
 ## <a name="msbuild-makerelative"></a>MSBuild の MakeRelative
 

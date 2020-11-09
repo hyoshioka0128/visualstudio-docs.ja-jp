@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: パートナーがお客様の Visual Studio サブスクリプションを管理する方法について説明します。
-ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: ba62a2b3d9920ca145722c137322e4471d110d9e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006060"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903755"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>お客様に代わってサブスクリプションを管理するパートナー
 Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーが従う手順がいくつかあります。 
@@ -26,7 +26,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。  この場合は、以下の手順に従ってください。
 1. [https://manage.visualstudio.com](<https://manage.visualstudio.com> ) にアクセスします。
 1. 認識されているユーザーではないという通知が表示されます。
-1. **OLP パートナー**の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、 **[送信]** をクリックします。
+1. **OLP パートナー** の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、 **[送信]** をクリックします。
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。

@@ -1,5 +1,7 @@
 ---
 title: WPF とは
+description: 幅広い開発機能をサポートするデスクトップ クライアント アプリケーションを作成するためのフレームワークである Windows Presentation Foundation の使用を開始します。
+ms.custom: SEO-VS-2020
 ms.date: 04/16/2018
 ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8584ec76ce0779421f1151e53f562f66b8789c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328442"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134538"
 ---
 # <a name="get-started-with-wpf"></a>WPF の使用を開始する
 
@@ -23,7 +25,7 @@ Windows Presentation Foundation (WPF) は、デスクトップ クライアン�
 
 ## <a name="where-should-i-start"></a>まず、何を行う必要がありますか。
 
-|サブジェクト|[アーティクル]|
+|Subject|記事|
 |-|-|
 |すぐに使用を開始する…|[チュートリアル: 初めての WPF デスクトップ アプリケーション](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |XAML デザイン ツールの比較|[Visual Studio および Blend for Visual Studio での XAML の設計](../xaml-tools/designing-xaml-in-visual-studio.md)|
@@ -31,7 +33,7 @@ Windows Presentation Foundation (WPF) は、デスクトップ クライアン�
 |WPF の詳細な説明...|[WPF の概要](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML の概要 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[コントロール](/dotnet/framework/wpf/controls/)<br /><br />[データバインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[LINQ to XML による WPF のデータ バインディング](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Windows フォームの開発者向け|[Windows フォーム コントロールおよび同等の WPF コントロール](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF と Windows フォームの相互運用性に関してサポートするシナリオ](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [WPF のデスクトップ ガイド](/dotnet/desktop-wpf/overview/index)
 - [クラス ライブラリ (WPF)](/dotnet/framework/wpf/class-library-wpf)

@@ -1,5 +1,7 @@
 ---
 title: XML スキーマ エクスプローラーからワークスペースにノードを追加する
+description: XML スキーマ エクスプローラーからコンテキスト メニューを使用するか、ノードをドラッグしてビューにドロップすることにより、XML スキーマ デザイナーのワークスペースにノードを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 751e291188e6357343936d61d56f07bd86f97eaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816398"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045726"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>方法: XML スキーマ エクスプローラーからワークスペースにノードを追加する
 
-このトピックでは、**XML スキーマ エクスプローラー**から [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)にノードを追加する方法について説明します。 これは、**XML スキーマ エクスプローラー**から XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、**XML スキーマ エクスプローラー**のコンテキスト メニューを使用することによって行うことができます。 さらに、**XML スキーマ エクスプローラー**の検索結果で強調表示されたノードを追加することもできます。 詳細については、「[方法:スキーマ セットの検索結果のノードをワークスペースに追加する](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)」を参照してください。
+このトピックでは、 **XML スキーマ エクスプローラー** から [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)にノードを追加する方法について説明します。 これは、 **XML スキーマ エクスプローラー** から XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、 **XML スキーマ エクスプローラー** のコンテキスト メニューを使用することによって行うことができます。 さらに、 **XML スキーマ エクスプローラー** の検索結果で強調表示されたノードを追加することもできます。 詳細については、「[方法:スキーマ セットの検索結果のノードをワークスペースに追加する](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)」を参照してください。
 
 > [!NOTE]
 > [XML スキーマ デザイナー ワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加できるのは、グローバル ノードだけです。
@@ -34,9 +36,9 @@ ms.locfileid: "85816398"
 
 1. グラフ ビューで `PurchaseOrderType` ノードを右クリックします。 **[XML スキーマ エクスプローラーで表示]** を選択します。
 
-     **XML スキーマ エクスプローラー**にノードが強調表示されます。
+     **XML スキーマ エクスプローラー** にノードが強調表示されます。
 
-2. **XML スキーマ エクスプローラー**で `PurchaseOrderType` ノードを右クリックし、**[すべての参照の表示]** をクリックします。
+2. **XML スキーマ エクスプローラー** で `PurchaseOrderType` ノードを右クリックし、 **[すべての参照の表示]** をクリックします。
 
      `purchaseOrder` ノードが強調表示されます。
 
@@ -50,7 +52,7 @@ ms.locfileid: "85816398"
 
      ![XML スキーマ エクスプローラー キーワード検索](../xml-tools/media/schemaexplorersearch.gif)
 
-     検索結果が **XML スキーマ エクスプローラー**で強調表示され、垂直スクロール バーの目盛りでマークされます。
+     検索結果が **XML スキーマ エクスプローラー** で強調表示され、垂直スクロール バーの目盛りでマークされます。
 
 2. 概要結果ペインの **[強調表示されたノードをワークスペースに追加]** ボタンをクリックして、ワークスペースに検索結果を追加します。
 

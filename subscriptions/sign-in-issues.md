@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインするときに発生する可能性のある問題について説明します
-ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005278"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903450"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio サブスクリプションへのサインインに関する問題
 Visual Studio サブスクリプションを使用するには、最初にサインインする必要があります。  サブスクリプションによっては、Microsoft アカウント (MSA) または Azure Active Directory (AAD) ID を使用してセットアップされている場合があります。  この記事では、サブスクリプションにサインインするときに発生する可能性がある問題について説明します。
@@ -32,12 +32,12 @@ Visual Studio サブスクリプションを使用するには、最初にサイ
 職場または学校のメール アドレスで Microsoft のコンシューマー アプリにサインアップしようとすると、次のようなメッセージが表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![職場のメールではアカウントを作成できない](_img/sign-in-issues/cannot-use-work-email.png)
+   > ![職場のメールではアカウントを作成できない](_img/sign-in-issues/cannot-use-work-email.png "ユーザー名とパスワードを指定してアカウントを作成します。")
 
 一方、個人用アカウントと職場/学校アカウントをサポートする Microsoft アプリにサインアップしようとすると、次のようなメッセージが表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![職場/学校アカウントがサポートされている](_img/sign-in-issues/existing-account.png)
+   > ![職場/学校アカウントがサポートされている](_img/sign-in-issues/existing-account.png "ここでは職場または学校のメール アドレスでサインアップすることはできません。")
 
 ### <a name="are-existing-accounts-affected"></a>既存のアカウントへの影響
 ここで説明したサインアップのブロックでは、新しいアカウントの作成だけが禁止されます。 職場/学校のメール アドレスで既に Microsoft アカウントを持っているユーザーには影響ありません。 既にそのような状況になっている場合、個人用 Microsoft アカウントの名前を簡単に変更できるようになっています。 簡単なステップ バイ ステップ ガイダンスが、こちらの[サポート記事](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account)で提供されています。 個人用 Microsoft アカウントの名前の変更とはユーザー名を変更することを意味し、職場のメールや、Microsoft 365 などのビジネス サービスへのサインイン方法には影響ありません。 また、個人情報にも影響しません。サインイン方法が変わるだけです。 別の (個人用) メール アドレスを使用したり、新しい @outlook.com メール アドレスを Microsoft から取得したり、自分の電話番号を新しいユーザー名として使用したりすることができます。

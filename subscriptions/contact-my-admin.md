@@ -6,15 +6,15 @@ manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
-description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
-ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: サブスクリプション管理者に連絡し、質問や問題に対する支援を求める方法について説明します。
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005689"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289972"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>サブスクリプション管理者のサポートを受ける
+# <a name="get-assistance-from-your-subscriptions-admin"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。
 
 多くの組織は大規模かつ複雑であるため、管理者が誰なのか知らず、どこでサポートを得たらよいのかは簡単にはわからないことがあります。  Microsoft は、管理者に連絡するための新しい機能をサブスクライバー ポータルに追加しました。   
@@ -33,7 +33,7 @@ ms.locfileid: "91005689"
 > **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、 [契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

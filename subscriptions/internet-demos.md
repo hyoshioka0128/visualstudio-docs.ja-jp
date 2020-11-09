@@ -1,18 +1,18 @@
 ---
-title: プロダクト キーを使用したターミナル サービス経由でのインターネット デモのサポート | Microsoft Docs
+title: Visual Studio サブスクリプションでのターミナル サービスを使用したインターネット デモ | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: プロダクト キーを使用してターミナル サービスによるインターネット デモンストレーションをサポートし、RDS アクセスを有効にする方法を説明します
-ms.openlocfilehash: 428ccdb86ca93bbafa07dcf847e017b88183928f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9a63436e38779a51ba414969b36a2bb166e6cab9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005330"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904618"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>ターミナル サービスを介したインターネット デモンストレーション
 Visual Studio サブスクリプションがあれば、ターミナル サービス (Windows Server 2003 または Windows Server 2008) やリモート デスクトップ サービス (Windows Server 2008 R2 以降) を介してエンド ユーザーに自分のプログラムのインターネット デモンストレーションへアクセスしてもらうことができます。 この方法で、最大 200 人の匿名ユーザーが同時に会員のデモンストレーションにアクセスすることができます。 デモンストレーションに実稼動データを使用することはできません。 Visual Studio サブスクライバーは、自分のアプリケーションのデモンストレーションをエンド ユーザーに提供することができます。 ターミナル サービス (TS) またはリモート デスクトップ サービス (RDS) を使用したこのインターネット デモンストレーションのシナリオにおいてのみ、Visual Studio サブスクリプションを持たないエンド ユーザーがデモンストレーション アプリケーションを操作できます。これは、そのソフトウェアが Visual Studio サブスクリプションでライセンスを付与されている間に限ります。
@@ -43,6 +43,6 @@ Windows Server 2008 R2 では、種類ごとに 5 つのキーが利用でき、
 - [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-RDS の配置に関するガイダンスが必要な場合は、 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf のマルチパート ブログ シリーズ「**Remote Desktop Services (RDS) 2012 session deployment (リモート デスクトップ サービス (RDS) 2012 セッションの配置)** 」をご覧ください。 
+RDS の配置に関するガイダンスが必要な場合は、 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf のマルチパート ブログ シリーズ「 **Remote Desktop Services (RDS) 2012 session deployment (リモート デスクトップ サービス (RDS) 2012 セッションの配置)** 」をご覧ください。 
 
 質問がある場合は、Microsoft [リモート デスクトップ サービス フォーラム](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)にアクセスしてください。

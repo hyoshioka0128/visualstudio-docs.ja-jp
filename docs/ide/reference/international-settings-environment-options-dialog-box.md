@@ -1,5 +1,6 @@
 ---
-title: '[国際対応の設定] ([オプション] ダイアログ ボックス - [環境])'
+title: '[オプション] ダイアログ ボックスの [国際対応の設定]'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595515"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102494"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>[オプション] ダイアログ ボックス:[環境] \> [国際対応の設定]
 

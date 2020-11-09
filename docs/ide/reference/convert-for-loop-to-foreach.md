@@ -1,5 +1,6 @@
 ---
-title: for ループを foreach ステートメントに変換するためのコードのリファクタリング
+title: for ループを foreach ステートメントに変換するためのリファクタリング
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47aa5a328f158d890908bf1ddcb69a838ad1ed66
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 68ed736a1e3a07c7cd3f67ea9c936821cf4ac78c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659382"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045925"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>for ループと foreach ステートメント間で変換するためのリファクタリング
 
@@ -80,7 +81,7 @@ ms.locfileid: "91659382"
 
 1. **['for' に変換]** を選択します。 または、 **[変更のプレビュー]** を選択して [[変更のプレビュー]](../../ide/preview-changes.md) ダイアログを開いて **[適用]** を選択します。
 
-1. リファクタリングにより新しい反復回数変数が導入されるため、エディターの右上隅に **[名前を変更]** ボックスが表示されます。 変数に別の名前を選択する場合は、その名前を入力してから、**Enter** キーを押すか、 **[名前を変更]** ボックスで **[適用]** を選択します。 新しい名前を選択しない場合は、**Esc** キーを押すか、 **[適用]** を選択して、 **[名前を変更]** ボックスを閉じます。
+1. リファクタリングにより新しい反復回数変数が導入されるため、エディターの右上隅に **[名前を変更]** ボックスが表示されます。 変数に別の名前を選択する場合は、その名前を入力してから、 **Enter** キーを押すか、 **[名前を変更]** ボックスで **[適用]** を選択します。 新しい名前を選択しない場合は、 **Esc** キーを押すか、 **[適用]** を選択して、 **[名前を変更]** ボックスを閉じます。
 
 > [!NOTE]
 > C# の場合、これらのリファクタリングによって生成されるコードでは、コレクション内の項目の型には明示的な型または [var](/dotnet/csharp/language-reference/keywords/var) が使われます。 生成されるコードが明示的または暗黙的のどちらになるかは、スコープ内にのコード スタイルの設定によって決まります。 これらの特定のコード スタイルの設定は、コンピューター レベルの **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[全般]**  >  **[\'var' を優先]** で、またはソリューション レベルの [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) ファイルで構成します。 コード スタイルの設定を **[オプション]** で変更した場合、変更を有効にするにはコード ファイルを開きなおします。

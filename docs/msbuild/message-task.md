@@ -1,5 +1,7 @@
 ---
 title: Message タスク | Microsoft Docs
+description: ビルドの間にメッセージをログに記録する MSBuild の Message タスクのパラメーターと設定について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865363"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903835"
 ---
 # <a name="message-task"></a>Message タスク
 
@@ -38,7 +40,7 @@ ms.locfileid: "78865363"
 |`Importance`|省略可能な `String` 型のパラメーターです。<br /><br /> メッセージの重要度を指定します。 このパラメーターの値には、`high`、`normal`、または `low` を指定できます。 既定値は `normal` です。|
 |`Text`|省略可能な `String` 型のパラメーターです。<br /><br /> ログに記録するエラー テキスト。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
  `Message` タスクを使用すると、MSBuild プロジェクトで、ビルド処理のさまざまな段階でロガーにメッセージを発行できます。
 

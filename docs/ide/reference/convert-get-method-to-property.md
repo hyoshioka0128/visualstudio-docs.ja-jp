@@ -1,5 +1,6 @@
 ---
-title: Get メソッドをプロパティに変換する、プロパティを Get メソッドに変換する
+title: Get メソッドをプロパティに、またはプロパティから変換する
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ad628f8727ed16c882129c5642c77748cb767908
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094210"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045769"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Get メソッドのプロパティへの変換/プロパティの Get メソッドへの変換リファクタリング
 
@@ -47,7 +48,7 @@ ms.locfileid: "79094210"
 
 1. (省略可能) Set メソッドがある場合、このときに **[Replace Get method and Set method with property]\(Get メソッドと Set メソッドをプロパティに置換\)** を選択して Set メソッドも変換できます。
 
-1. コード プレビューで変更を確認したら、**Enter** キーを押すか、メニューから [修正] をクリックすると、変更がコミットされます。
+1. コード プレビューで変更を確認したら、 **Enter** キーを押すか、メニューから [修正] をクリックすると、変更がコミットされます。
 
 例:
 
@@ -86,7 +87,7 @@ public int MyValue
    - **マウス**
       - コードを右クリックして **[クイック アクションとリファクタリング]** メニューを選択し、[プレビュー] ウィンドウ ポップアップから **[Replace property with methods]\(プロパティをメソッドに置換\)** を選択します。
 
-1. コード プレビューで変更を確認したら、**Enter** キーを押すか、メニューから [修正] をクリックすると、変更がコミットされます。
+1. コード プレビューで変更を確認したら、 **Enter** キーを押すか、メニューから [修正] をクリックすると、変更がコミットされます。
 
 ## <a name="see-also"></a>参照
 

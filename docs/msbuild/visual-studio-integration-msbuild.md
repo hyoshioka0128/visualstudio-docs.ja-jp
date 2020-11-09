@@ -1,7 +1,8 @@
 ---
 title: Visual Studio の統合 (MSBuild)
 titleSuffix: ''
-ms.custom: seodec18
+description: MSBuild 形式のプロジェクトがさまざまなツールによって作成され、ビルド プロセスがカスタマイズされている場合でも、Visual Studio でそれらをホストする方法について説明します。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631199"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046681"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 
@@ -51,7 +52,7 @@ Visual Studio では、マネージド プロジェクトの読み込みとビ�
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
-Condition=" '$(Configuration)' == 'Release' " 
+Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
@@ -59,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>その他のビルド アクション
 
- Visual Studio では、 **[ファイルのプロパティ]** ウィンドウの **[ビルド アクション]** プロパティを使って、プロジェクト内のファイルのアイテムの種類名を変更できます。 **Compile**、**EmbeddedResource**、**Content**、**None** の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 **JScript** が追加されます。
+ Visual Studio では、 **[ファイルのプロパティ]** ウィンドウの **[ビルド アクション]** プロパティを使って、プロジェクト内のファイルのアイテムの種類名を変更できます。 **Compile** 、 **EmbeddedResource** 、 **Content** 、 **None** の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 **JScript** が追加されます。
 
 ```xml
 <ItemGroup>
@@ -92,13 +93,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="build-solutions"></a>ソリューションをビルドする
 
- Visual Studio 内では、ソリューション ファイルおよびプロジェクトのビルドの順序は Visual Studio 自体によって制御されます。 コマンド ラインで *msbuild.exe* を使用してソリューションをビルドすると、MSBuild によってソリューション ファイルが解析され、プロジェクトのビルドの順序が決定されます。 どちらの場合も、プロジェクトは依存関係の順序で個別にビルドされ、プロジェクト間参照は走査されません。 逆に、*msbuild.exe* を使用して個々のプロジェクトをビルドする場合は、プロジェクト間参照が走査されます。
+ Visual Studio 内では、ソリューション ファイルおよびプロジェクトのビルドの順序は Visual Studio 自体によって制御されます。 コマンド ラインで *msbuild.exe* を使用してソリューションをビルドすると、MSBuild によってソリューション ファイルが解析され、プロジェクトのビルドの順序が決定されます。 どちらの場合も、プロジェクトは依存関係の順序で個別にビルドされ、プロジェクト間参照は走査されません。 逆に、 *msbuild.exe* を使用して個々のプロジェクトをビルドする場合は、プロジェクト間参照が走査されます。
 
  Visual Studio の内部でビルドする場合は、`$(BuildingInsideVisualStudio)` プロパティを `true` に設定します。 これをプロジェクトまたは *.targets* ファイル内で使用することにより、ビルドの動作を変更できます。
 
 ## <a name="display-properties-and-items"></a>プロパティと項目の表示
 
- Visual Studio では、特定のプロパティの名前と値が認識されます。 たとえば、プロジェクト内で次のプロパティを使用すると、 **プロジェクト デザイナー** の **[アプリケーションの種類]** ボックスに **Windows アプリケーション**が表示されます。
+ Visual Studio では、特定のプロパティの名前と値が認識されます。 たとえば、プロジェクト内で次のプロパティを使用すると、 **プロジェクト デザイナー** の **[アプリケーションの種類]** ボックスに **Windows アプリケーション** が表示されます。
 
 ```xml
 <OutputType>WinExe</OutputType>
@@ -110,7 +111,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  恣意的な名前のプロパティは Visual Studio には表示されません。 Visual Studio で恣意的なプロパティを変更するには、XML エディターでプロジェクト ファイルを開き、それらを手動で編集する必要があります。 詳細については、このトピックで後述する「[Visual Studio でプロジェクト ファイルを編集する](#edit-project-files-in-visual-studio)」を参照してください。
 
- 任意の項目の種類名を使用してプロジェクト内で定義された項目は、既定では、**ソリューション エクスプローラー**のプロジェクト ノードの下に表示されます。 項目が表示されないようにするには、 `Visible` メタデータを `false`に設定します。 たとえば、次の項目はビルド処理に参加しますが、**ソリューション エクスプローラー**には表示されません。
+ 任意の項目の種類名を使用してプロジェクト内で定義された項目は、既定では、 **ソリューション エクスプローラー** のプロジェクト ノードの下に表示されます。 項目が表示されないようにするには、 `Visible` メタデータを `false`に設定します。 たとえば、次の項目はビルド処理に参加しますが、 **ソリューション エクスプローラー** には表示されません。
 
 ```xml
 <ItemGroup>
@@ -121,9 +122,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
-> C++ プロジェクトの場合、`Visible` のメタデータは**ソリューション エクスプローラー**で無視されます。 `Visible` が false に設定されている場合でも、項目は常に表示されます。
+> C++ プロジェクトの場合、`Visible` のメタデータは **ソリューション エクスプローラー** で無視されます。 `Visible` が false に設定されている場合でも、項目は常に表示されます。
 
- プロジェクトにインポートしたファイルで宣言されている項目は、既定では表示されません。 ビルド処理中に作成された項目が**ソリューション エクスプローラー**に表示されることは決してありません。
+ プロジェクトにインポートしたファイルで宣言されている項目は、既定では表示されません。 ビルド処理中に作成された項目が **ソリューション エクスプローラー** に表示されることは決してありません。
 
 ## <a name="conditions-on-items-and-properties"></a>項目とプロパティの条件
 
@@ -131,7 +132,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  表示するプロパティ値を決定する際、Visual Studio によって構成に依存すると見なされたプロパティは、構成に依存しないと見なされたプロパティとは異なる方法で評価されます。 構成に依存すると見なされたプロパティの場合、Visual Studio によって `Configuration` プロパティと `Platform` プロパティが適切に設定され、MSBuild に対してプロジェクトを再評価するように指示されます。 構成に依存しないと見なされるプロパティの場合、条件の評価方法は不確定です。
 
- 項目の条件式は、その項目を**ソリューション エクスプローラー**に表示するかどうかを決めるという目的では常に無視されます。
+ 項目の条件式は、その項目を **ソリューション エクスプローラー** に表示するかどうかを決めるという目的では常に無視されます。
 
 ## <a name="debugging"></a>デバッグ
 
@@ -147,23 +148,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio でプロジェクト ファイルをアンロードして編集するには
 
-1. **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[プロジェクトのアンロード]** をクリックします。
+1. **ソリューション エクスプローラー** で、プロジェクトのショートカット メニューを開き、 **[プロジェクトのアンロード]** をクリックします。
 
      プロジェクトに **(利用不可)** のマークが付きます。
 
-2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[\<Project File> の編集]** を選択します。
+2. **ソリューション エクスプローラー** で、利用不可のプロジェクトのショートカット メニューを開き、 **[\<Project File> の編集]** を選択します。
 
      Visual Studio XML エディターでプロジェクト ファイルが開きます。
 
 3. プロジェクト ファイルを編集し、保存して閉じます。
 
-4. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。
+4. **ソリューション エクスプローラー** で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense と検証
 
  XML エディターを使用してプロジェクト ファイルを編集する際、MSBuild のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、 *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。
 
- MSBuild の中心となる型は *Microsoft.Build.Core.xsd* で定義され、Visual Studio によって使用される共通の型は *Microsoft.Build.CommonTypes.xsd* で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、*Microsoft.Build.xsd* を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。
+ MSBuild の中心となる型は *Microsoft.Build.Core.xsd* で定義され、Visual Studio によって使用される共通の型は *Microsoft.Build.CommonTypes.xsd* で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、 *Microsoft.Build.xsd* を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。
 
 ## <a name="edit-loaded-project-files"></a>読み込んだプロジェクト ファイルの編集
 

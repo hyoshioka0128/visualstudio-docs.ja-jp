@@ -1,5 +1,7 @@
 ---
 title: Property 要素 (MSBuild) | Microsoft Docs
+description: PropertyGroup 要素の子として指定する必要があるユーザー定義プロパティの名前と値が含まれている MSBuild Property 要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632954"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048828"
 ---
 # <a name="property-element-msbuild"></a>Property 要素 (MSBuild)
 
@@ -63,7 +65,7 @@ ms.locfileid: "77632954"
 
  このテキストはプロパティ値を指定します。これに XML を含めることができます。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
  プロパティ名に使用できるのは ASCII 文字のみに制限されます。 プロパティ値は、"`$(`" と "`)`" の間にプロパティ名を入れることでプロジェクト内で参照されます。 たとえば、`builddir` プロパティの値が `build` の場合、`$(builddir)\classes` は *build\classes* に解決されます。 プロパティの詳細については、「[MSBuild プロパティ](../msbuild/msbuild-properties.md)」を参照してください。
 

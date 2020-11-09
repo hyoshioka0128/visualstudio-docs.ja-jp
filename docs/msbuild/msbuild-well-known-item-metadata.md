@@ -1,5 +1,7 @@
 ---
 title: MSBuild 既知のアイテム メタデータ | Microsoft Docs
+description: 作成時にすべての項目に割り当てられる MSBuild メタデータと、ビルド動作を制御するために定義できるいくつかのオプションの MSBuild メタデータについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425382"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049011"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild の既知の項目メタデータ
 
 項目メタデータは、項目に添付される値です。 項目が作成されるときに MSBuild によって項目に割り当てられるものもありますが、任意のメタデータを必要に応じて定義することもできます。 一部のユーザー定義メタデータの値は、MSBuild、特定のタスク、または .NET SDK などの SDK にとって意味があります。
 
-この記事の最初の表では、すべての項目の作成時に割り当てられるメタデータについて説明します。 次の表は、MSBuild に対して意味を持ついくつかの省略可能なメタデータを示しています。定義することでビルドの動作を制御できます。 それぞれの例で、*C:\MyProject\Source\Program.cs* ファイルをプロジェクトに含めるために次のアイテム宣言が使用されました。
+この記事の最初の表では、すべての項目の作成時に割り当てられるメタデータについて説明します。 次の表は、MSBuild に対して意味を持ついくつかの省略可能なメタデータを示しています。定義することでビルドの動作を制御できます。 それぞれの例で、 *C:\MyProject\Source\Program.cs* ファイルをプロジェクトに含めるために次のアイテム宣言が使用されました。
 
 ```xml
 <ItemGroup>

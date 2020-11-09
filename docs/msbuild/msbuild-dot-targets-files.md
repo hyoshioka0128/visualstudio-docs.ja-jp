@@ -1,5 +1,7 @@
 ---
 title: MSBuild .targets ファイル | Microsoft Docs
+description: MSBuild の項目、プロパティ、ターゲット、および一般的なシナリオ用のタスクを含む .targets ファイルについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d25605c83126c41a24f55775d9633e6e4212909c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633357"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046357"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets ファイル
 
 MSBuild には、項目、プロパティ、ターゲット、および一般的なシナリオ用のタスクが含まれているいくつかの *.targets* ファイルが含まれます。 これらのファイルは、保守を簡素化し読みやすくするために、ほとんどの Visual Studio プロジェクト ファイルに自動的にインポートされます。
 
- 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 たとえば、Visual Studio によって作成された C# プロジェクトは、*Microsoft.Common.targets* をインポートする *Microsoft.CSharp.targets* をインポートします。 C# プロジェクト自体はそのプロジェクトに固有の項目とプロパティを定義しますが、C# プロジェクト用の標準のビルド規則は、インポートされた *.targets* ファイルで定義されます。
+ 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 たとえば、Visual Studio によって作成された C# プロジェクトは、 *Microsoft.Common.targets* をインポートする *Microsoft.CSharp.targets* をインポートします。 C# プロジェクト自体はそのプロジェクトに固有の項目とプロパティを定義しますが、C# プロジェクト用の標準のビルド規則は、インポートされた *.targets* ファイルで定義されます。
 
  `$(MSBuildToolsPath)` 値によって、これらの共通 *.targets* ファイルのパスが指定されます。 `ToolsVersion` が 4.0 の場合、ファイルは次の場所にあります: *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\* 。
 
@@ -39,8 +41,8 @@ MSBuild には、項目、プロパティ、ターゲット、および一般的
 | *.targets* ファイル | 説明 |
 |---------------------------------| - |
 | *Microsoft.Common.targets* | Visual Basic および C# プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている *Microsoft.CSharp.targets* や *Microsoft.VisualBasic.targets* ファイルによってインポートされます: `<Import Project="Microsoft.Common.targets" />` |
-| *Microsoft.CSharp.targets* | Visual C# プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual C# プロジェクト ファイル ( *.csproj*) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
-| *Microsoft.VisualBasic.targets* | Visual Basic プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual Basic プロジェクト ファイル ( *.vbproj*) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
+| *Microsoft.CSharp.targets* | Visual C# プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual C# プロジェクト ファイル ( *.csproj* ) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Microsoft.VisualBasic.targets* | Visual Basic プロジェクトの標準ビルド プロセスの手順を定義します。<br /><br /> 次のステートメントが含まれている Visual Basic プロジェクト ファイル ( *.vbproj* ) によってインポートされます: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007195"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918228"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>パフォーマンス プロファイラーでメモリ使用量をデバッグなしで分析する
 
 **メモリ使用量** ツールでは、アプリのメモリ使用量を監視します。 ツールを使用して、Visual Studio で積極的に開発を行っているシナリオによるリアルタイムのメモリへの影響を調べることできます。 アプリのメモリ状態の詳細なスナップショットを取得し、そのスナップショットを比較してメモリの問題の根本原因を見つけることができます。 メモリ使用量ツールは、.NET アプリ、ASP.NET アプリ、C++ アプリ、または混在モード (.NET とネイティブ) アプリでサポートされています。
 
-メモリ使用量ツールは、[デバッガーの有無に関わらず](../profiling/running-profiling-tools-with-or-without-the-debugger.md)実行できます。 この記事では、Visual Studio パフォーマンス プロファイラーでデバッガーなしで **メモリ使用量** ツールを使用する方法を示します。
+メモリ使用量ツールは、[デバッガーの有無に関わらず](../profiling/running-profiling-tools-with-or-without-the-debugger.md)実行できます。 この記事では、Visual Studio **パフォーマンス プロファイラー** でデバッガーなしでメモリ使用量ツールを使用する方法を示します。これは、リリース ビルドに推奨されます。
 
 ## <a name="memory-usage-diagnostic-sessions"></a>メモリ使用量診断セッション
 

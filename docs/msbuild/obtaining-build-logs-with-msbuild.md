@@ -1,5 +1,7 @@
 ---
 title: MSBuild でのビルド ログの取得 | Microsoft Docs
+description: MSBuild でスイッチを使用して、確認するビルド データの量と、ビルド データを 1 つ以上のファイルに保存するかどうかを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238609"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048964"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild でのビルド ログの取得
 
@@ -35,7 +37,7 @@ MSBuild でスイッチを使用することで、確認するビルド デー�
 
 - ビルドの概要。
 
-**-verbosity** ( **-v**) スイッチを使用して、出力ログに表示するデータ量を制御できます。 トラブルシューティングを行う場合は、`detailed` (`d`) または `diagnostic` (`diag`) のいずれかの詳細レベルを使用します。後者は情報が最も多くなります。
+**-verbosity** ( **-v** ) スイッチを使用して、出力ログに表示するデータ量を制御できます。 トラブルシューティングを行う場合は、`detailed` (`d`) または `diagnostic` (`diag`) のいずれかの詳細レベルを使用します。後者は情報が最も多くなります。
 
 **-verbosity** を `detailed` に設定すると、ビルド処理は遅くなることがあります。また、 **-verbosity** を `diagnostic` に設定するとさらに遅くなる可能性があります。
 
@@ -58,7 +60,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 ## <a name="save-the-build-log-to-a-file"></a>ビルド ログをファイルに保存する
 
-**-fileLogger** (**fl**) スイッチを使用して、ビルド データをファイルに保存することができます。 次の例では、ビルド データを *msbuild.log* という名前のファイルに保存します。
+**-fileLogger** ( **fl** ) スイッチを使用して、ビルド データをファイルに保存することができます。 次の例では、ビルド データを *msbuild.log* という名前のファイルに保存します。
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
@@ -86,7 +88,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>バイナリ ログを保存する
 
-**-binaryLogger** (**bl**) スイッチを利用すれば、ログを圧縮されたバイナリ形式で保存できます。 このログには、ビルド プロセスの詳しい説明が含まれ、特定のログ分析ツールで読み取ることができます。
+**-binaryLogger** ( **bl** ) スイッチを利用すれば、ログを圧縮されたバイナリ形式で保存できます。 このログには、ビルド プロセスの詳しい説明が含まれ、特定のログ分析ツールで読み取ることができます。
 
 次の例では、バイナリ ログ ファイルが *binarylogfilename* という名前で作成されます。
 

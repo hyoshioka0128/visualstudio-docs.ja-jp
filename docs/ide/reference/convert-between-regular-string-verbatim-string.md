@@ -1,5 +1,6 @@
 ---
 title: 通常の文字列リテラルと逐語的文字列リテラルの間で変換する
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8e239f53f92727072a2fcd6573d6957b7cd3ec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290833"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045905"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>通常の文字列リテラルと逐語的文字列リテラルの間で変換するリファクタリング
 
@@ -34,7 +35,7 @@ ms.locfileid: "85290833"
 
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 
-3. 次のオプションから 1 つを選択します。 
+3. 次のオプションから 1 つを選択します。
 
     **[Convert to regular string]\(標準文字列に変換\)** を選択します。
 

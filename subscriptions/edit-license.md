@@ -1,5 +1,5 @@
 ---
-title: 管理者ポータルでのサブスクリプションの編集 | Microsoft Docs
+title: 管理者ポータルで Visual Studio サブスクリプションを編集する | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 09/21/2020
 ms.topic: how-to
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022549"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904163"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 サブスクリプション管理者は、組織内の個人に割り当てられているサブスクリプションに変更を加えることができます。  この記事では、行うことができる変更の種類と、必要な手順について説明します。
@@ -48,7 +48,7 @@ ms.locfileid: "91022549"
    > [!div class="mx-imgBorder"]
    > ![ライセンスの編集 - 一括編集一覧のエクスポート](_img/edit-license/edit-license-bulk-edit-export.png "現在のサブスクリプションの一覧を作成するには、[Excel にエクスポート] をクリックします。")
 
-3. 次に、アップロードする前に簡単に見つけて必要な変更を行うことができるように、ファイルをローカルに保存します。 アップロードを確実に成功させるには、一括編集ファイル内で**サブスクリプション レベルまたはサブスクリプションの GUID を編集しないでください**。編集すると、アップロードが失敗します。
+3. 次に、アップロードする前に簡単に見つけて必要な変更を行うことができるように、ファイルをローカルに保存します。 アップロードを確実に成功させるには、一括編集ファイル内で **サブスクリプション レベルまたはサブスクリプションの GUID を編集しないでください** 。編集すると、アップロードが失敗します。
 
 4. Visual Studio サブスクリプション管理ポータルに戻り、[一括編集] ダイアログ ボックスで **[参照]** をクリックします。 保存した Excel ファイルを選んで、 **[OK]** をクリックします。 アップロードの進行状況が画面に表示されます。
    > [!div class="mx-imgBorder"]

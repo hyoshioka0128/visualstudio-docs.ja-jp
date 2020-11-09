@@ -1,5 +1,7 @@
 ---
 title: シェーダー デザイナー ノード
+description: ドキュメントのこのセクションの記事を使用して、グラフィックス効果を作成するために使用できるさまざまなシェーダー デザイナー ノードについて確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bac48316e60422b9561535d67c14aeadbd416f4
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768783"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134231"
 ---
 # <a name="shader-designer-nodes"></a>シェーダー デザイナー ノード
 ドキュメントのこのセクションの記事には、グラフィックス効果を作成するために使うことができるさまざまなシェーダー デザイナー ノードについての情報が含まれています。
@@ -41,7 +43,7 @@ ms.locfileid: "85768783"
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|[説明]|
+|Title|説明|
 |-----------|-----------------|
 |[定数ノード](../designers/constant-nodes.md)|シェーダーの計算でリテラル値および補間された頂点状態の情報を表すために使うことができるノードについて説明します。 頂点状態は補間され、ピクセルごとに異なるので、各ピクセル シェーダー インスタンスは異なるバージョンの定数を受け取ります。|
 |[パラメーター ノード](../designers/parameter-nodes.md)|シェーダーの計算でカメラの位置、素材のプロパティ、ライティング パラメーター、時刻、およびその他のアプリの状態情報を表すために使うことができるノードについて説明します。|

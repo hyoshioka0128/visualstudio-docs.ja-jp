@@ -1,5 +1,5 @@
 ---
-title: 有効期限が切れたライセンスの処理 | Microsoft Docs
+title: Visual Studio サブスクリプションで有効期限が切れたライセンスを処理する | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: 2b8a4ad5-e5b3-48a3-bb65-23a5cd3f22e9
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: 管理者が期限切れの Visual Studio サブスクリプションを処理する方法を説明します。
-ms.openlocfilehash: c0cfa87b0adcbc417ba7fdaed9f3da619a522d27
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cea4f33d884b75b885f2d6dd09d779470ab84c5d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004890"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904004"
 ---
 # <a name="expired-subscriptions"></a>有効期限が切れたサブスクリプション
 ユーザーのサブスクリプションの有効期限が切れると、ポータルでサブスクライバーの一覧のユーザー名の横の赤い棒でそのことが示されます。 これらのサブスクライバーが引き続き Visual Studio サブスクリプションの特典を使用するには、ライセンスを更新する必要があります。

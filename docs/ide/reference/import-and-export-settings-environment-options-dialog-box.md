@@ -1,5 +1,6 @@
 ---
-title: '[設定のインポートとエクスポート] ([オプション] ダイアログ ボックス - [環境])'
+title: '[オプション] ダイアログ ボックスの [設定のインポートとエクスポート]'
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ca35d5ff9907bd9ff8907f706ade346b3010e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b78cae626e6e000e6c916c801ada6c1938f1731e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595541"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046613"
 ---
 # <a name="options-dialog-box-environment--import-and-export-settings"></a>[オプション] ダイアログ ボックス:[環境] \> [設定のインポートとエクスポート]
 

@@ -1,5 +1,7 @@
 ---
 title: UsingTask の Task 要素 (MSBuild) | Microsoft Docs
+description: UsingTask TaskFactory に渡されるデータを含む、MSBuild UsingTask の Task 要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263189"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047892"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>UsingTask の Task 要素 (MSBuild)
 
 `UsingTask` `TaskFactory` に渡されるデータを含みます。 詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
- \<Project> \<UsingTask> \<Task>
+ \<Project> \<UsingTask>
  \<Task>
 
 ## <a name="syntax"></a>構文

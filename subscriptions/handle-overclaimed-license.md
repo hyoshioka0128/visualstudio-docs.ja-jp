@@ -1,18 +1,18 @@
 ---
-title: ライセンスの割り当て超過への対処 | Microsoft Docs
+title: Visual Studio サブスクリプションでライセンスの割り当て超過を処理する | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: サブスクリプションの割り当て超過を管理者が解決する方法について説明します
-ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022587"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904297"
 ---
 # <a name="over-allocated-subscriptions"></a>サブスクリプションの割り当て超過
 サブスクライバーを追加した後に、注文が変更される場合があります。これにより会社が所有するライセンス数よりも割り当てられたサブスクリプションが多くなる場合があります。 これは "割り当て超過" と呼ばれます。  

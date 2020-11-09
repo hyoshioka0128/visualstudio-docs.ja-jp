@@ -6,19 +6,19 @@ manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
-description: 月次サブスクリプションの管理者を設定する
-ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: 月次サブスクリプションの管理者の設定
+ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91006112"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904242"
 ---
-# <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する
+# <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する
 
 Visual Studio 月次サブスクリプションは管理者によって管理されます。 各管理者は、サブスクリプションの割り当て、割り当ての編集、サブスクリプションの追加または削除、その他のサブスクリプション管理タスクを実行できます。
 
-## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Azure サブスクリプションの所有者が最初の管理者です。
+## <a name="the-azure-subscription-owner-is-the-first-admin"></a>Azure サブスクリプションの所有者が最初の管理者です
 
 Visual Studio 月次サブスクリプションを購入すると、その購入を行うために使用された Azure サブスクリプションの所有者となり、そのサブスクリプションの管理者に自動的に設定されます。
 
@@ -28,7 +28,7 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 
 月次サブスクリプションの購入に使用された Azure サブスクリプションの所有者は、追加の管理者を割り当てることもできます。
 
-## <a name="add-administrators"></a>管理者を追加する
+## <a name="add-admins"></a>[管理者の追加]
 
 管理者を追加するには:
 
@@ -55,7 +55,7 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 新しい管理者は、[管理ポータル](https://manage.visualstudio.com)にサインインし、ページの左上のリストから月次サブスクリプションの購入に使用したものと同じ Azure サブスクリプションを選択して、それらのサブスクリプションの管理を開始できます。
 
 > [!NOTE]
-> 管理者として設定しなかったユーザーが、月次サブスクリプションを編集するアクセス権を持っている場合は、基になる Azure サブスクリプションで、サブスクリプションの管理を許可するロールが付与されている可能性があります。 そのようなロールとしては、所有者、共同作成者、サービス管理者、共同管理者があります。詳細については、[課金管理者の追加](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts)に関するページを参照してください。
+> 管理者として設定されなかったユーザーが、月次サブスクリプションを編集するアクセス権を持っている場合は、基になる Azure サブスクリプションで、サブスクリプションの管理を許可するロールが付与されている可能性があります。 そのようなロールとしては、所有者、共同作成者、サービス管理者、共同管理者があります。詳細については、[課金管理者の追加](/azure/devops/organizations/billing/add-backup-billing-managers)に関するページを参照してください。
 
 Visual Studio 月次サブスクリプションについては、サブスクリプションの購入に関するページの[概要](vscloud-overview.md)を参照してください。 Visual Studio 月次サブスクリプションを購入するには、Visual Studio Marketplace ([https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)) にアクセスしてください。
 

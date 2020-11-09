@@ -1,5 +1,7 @@
 ---
 title: RC タスク | Microsoft Docs
+description: MSBuild で RC タスクを使用して、リソースを .res ファイルにコンパイルする Microsoft Windows リソース コンパイラツール (.rc) をラップする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,16 +24,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94a1babf518a3579246903f6479f999d8912dfe5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632915"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048794"
 ---
 # <a name="rc-task"></a>RC タスク
 
-Microsoft Windows リソース コンパイラ ツールである *rc.exe* をラップします。 **RC** タスクは、カーソル、アイコン、ビットマップ、ダイアログ ボックス、フォントなどのリソースをコンパイルし、リソース ファイル ( *.res*) を作成します。 詳しくは、「[リソース コンパイラ](/windows/desktop/menurc/resource-compiler)」をご覧ください。
+Microsoft Windows リソース コンパイラ ツールである *rc.exe* をラップします。 **RC** タスクは、カーソル、アイコン、ビットマップ、ダイアログ ボックス、フォントなどのリソースをコンパイルし、リソース ファイル ( *.res* ) を作成します。 詳しくは、「[リソース コンパイラ](/windows/desktop/menurc/resource-compiler)」をご覧ください。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -39,18 +41,18 @@ Microsoft Windows リソース コンパイラ ツールである *rc.exe* を�
 
 |パラメーター|[説明]|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|省略可能な **String[]** 型のパラメーターです。<br /><br /> インクルード ファイルを検索するディレクトリのリストにディレクトリを追加します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/I** オプションを参照してください。|
+|**AdditionalIncludeDirectories**|省略可能な **String[]** 型のパラメーターです。<br /><br /> インクルード ファイルを検索するディレクトリのリストにディレクトリを追加します。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/I** オプションを参照してください。|
 |**AdditionalOptions**|省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ライン オプションのリスト。たとえば、/\<option1> /\<option2> /\<option#> です。 他の **RC** タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) のオプションを参照してください。|
-|**カルチャ**|省略可能な **String** 型のパラメーターです。<br /><br /> リソースで使用されているカルチャを表すロケール ID を指定します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/l** オプションを参照してください。|
-|**IgnoreStandardIncludePath**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、ヘッダー ファイルまたはリソース ファイルの検索時、リソース コンパイラが INCLUDE 環境変数を確認するのを防止します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/x** オプションを参照してください。|
-|**NullTerminateStrings**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、文字列テーブル内のすべての文字列が null 終端されます。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/n** オプションを参照してください。|
-|**PreprocessorDefinitions**|省略可能な **String[]** 型のパラメーターです。<br /><br /> リソース コンパイラに対して 1 つまたは複数のプリプロセッサ シンボルを定義します。 マクロ シンボルの一覧を指定します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/d** オプションを参照してください。 この表の「**UndefinePreprocessorDefinitions**」も参照してください。|
-|**ResourceOutputFileName**|省略可能な **String** 型のパラメーターです。<br /><br /> リソース ファイルの名前を指定します。 リソース ファイル名を指定します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/fo** オプションを参照してください。|
-|**ShowProgress**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、コンパイラの進捗状況について報告するメッセージが表示されます。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/v** オプションを参照してください。|
+|**カルチャ**|省略可能な **String** 型のパラメーターです。<br /><br /> リソースで使用されているカルチャを表すロケール ID を指定します。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/l** オプションを参照してください。|
+|**IgnoreStandardIncludePath**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、ヘッダー ファイルまたはリソース ファイルの検索時、リソース コンパイラが INCLUDE 環境変数を確認するのを防止します。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/x** オプションを参照してください。|
+|**NullTerminateStrings**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、文字列テーブル内のすべての文字列が null 終端されます。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/n** オプションを参照してください。|
+|**PreprocessorDefinitions**|省略可能な **String[]** 型のパラメーターです。<br /><br /> リソース コンパイラに対して 1 つまたは複数のプリプロセッサ シンボルを定義します。 マクロ シンボルの一覧を指定します。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/d** オプションを参照してください。 この表の「 **UndefinePreprocessorDefinitions** 」も参照してください。|
+|**ResourceOutputFileName**|省略可能な **String** 型のパラメーターです。<br /><br /> リソース ファイルの名前を指定します。 リソース ファイル名を指定します。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/fo** オプションを参照してください。|
+|**ShowProgress**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、コンパイラの進捗状況について報告するメッセージが表示されます。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/v** オプションを参照してください。|
 |**ソース**|必須の `ITaskItem[]` 型のパラメーターです。<br /><br /> タスクで使用および生成できる MSBuild ソース ファイル アイテムの配列を定義します。|
 |**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、 **/?** コマンドライン オプションを入力し、 **/nologo** オプションを確認してください。|
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|
-|**UndefinePreprocessorDefinitions**|プリプロセッサ シンボルの定義を解除します。<br /><br /> 詳細については、「[Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/u** オプションを参照してください。 この表の「**PreprocessorDefinitions**」も参照してください。|
+|**UndefinePreprocessorDefinitions**|プリプロセッサ シンボルの定義を解除します。<br /><br /> 詳細については、「 [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-)」(RC を使用する (RC コマンド ライン)) の **/u** オプションを参照してください。 この表の「 **PreprocessorDefinitions** 」も参照してください。|
 
 ## <a name="see-also"></a>参照
 

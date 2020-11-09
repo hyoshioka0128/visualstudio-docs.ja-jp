@@ -2,7 +2,7 @@
 title: MSBuild プロジェクトの共通項目 | Microsoft Docs
 description: MSBuild プロジェクトの共通項目について説明します。 項目は 1 つ以上のファイルへの名前付き参照であり、ファイル名、パス、バージョン番号などのメタデータを持ちます。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796395"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238624"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 
@@ -160,7 +160,19 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | [値] | 必須の文字列。 `AssemblyMetadataAttribute` 属性コンストラクターの 2 番目のパラメーター (値) になります。 |
 
 > [!NOTE]
-> これは、.NET Core SDK を使用するプロジェクトのみに適用されます。
+> この項目は、SDK for .NET 5 (および .NET Core) 以降のバージョンを使用するプロジェクトに適用されます。
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+`[InternalsVisibleTo(..)]` アセンブリ属性として出力されるアセンブリを指定します。
+
+| 項目メタデータの名前 | 説明 |
+|-----------------------| - |
+| 包含 | アセンブリ名。 |
+| キー | 省略可能な文字列。 アセンブリの公開キー。 |
+
+> [!NOTE]
+> この項目は、SDK for .NET 5 (および .NET Core) 以降のバージョンを使用するプロジェクトに適用されます。
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 

@@ -1,5 +1,7 @@
 ---
 title: Sdk 要素 (MSBuild) | Microsoft Docs
+description: MSBuild プロジェクト SDK を参照する MSBuild Sdk 要素の構文、属性、および要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632473"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048356"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 要素 (MSBuild)
 

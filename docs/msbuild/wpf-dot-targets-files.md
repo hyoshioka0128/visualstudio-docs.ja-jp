@@ -1,5 +1,7 @@
 ---
 title: WPF .Targets ファイル | Microsoft Docs
+description: Windows Presentation Foundation (WPF) で、WPF 固有のタスク セットを特殊な .targets ファイル (Microsoft.WinFX.targets) に追加することによって、MSBuild を拡張する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a81caf88798f1b02c212b6ee5a802e6ea824758
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630952"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047526"
 ---
 # <a name="wpf-targets-files"></a>WPF .targets ファイル
 

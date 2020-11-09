@@ -1,5 +1,7 @@
 ---
 title: Parameter 要素 | Microsoft Docs
+description: UsingTask TaskFactory によって生成されるタスクの特定のパラメーターに関する情報を含む MSBuild Parameter 要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,18 +19,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263107"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048884"
 ---
 # <a name="parameter-element"></a>Parameter 要素
 
 `UsingTask` `TaskFactory` によって生成されるタスクの固有のパラメーターについての情報が格納されます。  要素の名前はパラメーターの名前です。  詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
  \<Parameter>
 
@@ -46,19 +48,19 @@ ms.locfileid: "78263107"
 
 ### <a name="attributes"></a>属性
 
-|属性|[説明]|
+|属性|説明|
 |---------------|-----------------|
 |`ParameterType`|省略可能な属性です。<br /><br /> パラメーターの .NET 型です (`System.String` など)。|
-|`Output`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの出力パラメーターです。 既定値は `false` です。|
-|`Required`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの必須パラメーターです。 既定値は `false` です。|
+|`Output`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの出力パラメーターです。 既定では、値は `false` です。|
+|`Required`|省略可能な Boolean 属性です。<br /><br /> `true` の場合、このパラメーターはタスクの必須パラメーターです。 既定では、値は `false` です。|
 
 ### <a name="child-elements"></a>子要素
 
- ありません。
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
-|要素|[説明]|
+|要素|説明|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|`UsingTask` `TaskFactory` によって生成されるタスクで使用される省略可能なパラメーターのリストが格納されます。|
 
@@ -79,7 +81,7 @@ ms.locfileid: "78263107"
 </UsingTask>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

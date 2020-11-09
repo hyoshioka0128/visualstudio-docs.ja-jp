@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b578ed417d2d4ac03dd7472a9cb94958b8d3c7a3
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005886"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904108"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションを管理する
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。
@@ -23,12 +23,12 @@ MPN でコンピテンシーを取得するか、Action Pack を購入したパ�
 Microsoft Action Pack サブスクライバーと Visual Studio サブスクリプション
 1. プログラム管理者が Partner Membership Center にログインします。
 2. **[Requirements and Assets]\(要件と資産\)** を通じてユーザーを関連付けます。
-3. 個人を特定し、**ロールを割り当て**ます。
-4. 1 番目、2 番目、3 番目の**技術担当者**を選び、**保存**します。
+3. 個人を特定し、 **ロールを割り当て** ます。
+4. 1 番目、2 番目、3 番目の **技術担当者** を選び、 **保存** します。
 5. **[実績と必要要件]** を選びます。
 6. **[アクセス許可]** を選びます。
 7. **[Visual Studio サブスクリプション]** を選びます (注: 保留中の Visual Studio サブスクリプションの更新プログラム)
-8. 目的の**個人**を選びます。
+8. 目的の **個人** を選びます。
 9. **[送信]** を選択します
 10. 選択された個人が電子メールを受信します。
 11. 割り当てられているユーザーが、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にアクセスしてサインインします。
@@ -42,7 +42,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 1. **[実績と必要要件]** を選びます。
 2. **[アクセス許可]** を選びます。
 3. **[MSDN サブスクリプション]** を選びます (注: これは近々 "Visual Studio サブスクリプション" に変更されます)。
-4. 目的の**個人**を見つけます。
+4. 目的の **個人** を見つけます。
 5. **[送信]** を選択します
 6. 選択された個人が電子メールを受信します。
 7. 割り当てられているユーザーが、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にアクセスしてサインインします。

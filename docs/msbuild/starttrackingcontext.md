@@ -1,5 +1,7 @@
 ---
 title: StartTrackingContext | Microsoft Docs
+description: 追跡コンテキストを開始する MSBuild StartTrackingContext のパラメーター、要件、および戻り値について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 13a22e3a20b69f62fe1e7d6c8e97eb80df6de1b6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632109"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048151"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 
@@ -44,7 +46,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 
 ## <a name="return-value"></a>戻り値
 
- 追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
+ 追跡コンテキストが作成された場合、 **HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
 

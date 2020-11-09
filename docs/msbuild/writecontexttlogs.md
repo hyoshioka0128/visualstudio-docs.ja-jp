@@ -1,5 +1,7 @@
 ---
 title: WriteContextTLogs | Microsoft Docs
+description: 現在のコンテキストのログ ファイルを書き込む WriteContextTLogs の構文、要件、および戻り値について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 622cbebdb4073dfd9b4237e9dfbcb8bbf4a506de
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630706"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047391"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 
@@ -44,7 +46,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 
 ## <a name="return-value"></a>戻り値
 
- 追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
+ 追跡コンテキストが作成された場合、 **HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
 

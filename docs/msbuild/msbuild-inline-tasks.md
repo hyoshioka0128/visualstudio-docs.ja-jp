@@ -1,5 +1,7 @@
 ---
 title: MSBuild インライン タスク | Microsoft Docs
+description: Microsoft.Build.Framework.ITask インターフェイスを実装するクラスをコンパイルすることで MSBuild インライン タスクを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "81638047"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046331"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 
@@ -83,7 +85,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
 - `Type` の値が `Fragment` の場合、コードは `Execute` メソッドの内容を定義します。ただし、シグネチャや `return` ステートメントは含まれません。
 
-コード自体は通常、`<![CDATA[` マーカーと `]]>` マーカーの間に記述します。 コードは CDATA セクション内に記述するため、"\<" や ">" などの予約文字のエスケープを気にする必要はありません。
+コード自体は通常、`<![CDATA[` マーカーと `]]>` マーカーの間に記述します。 コードは CDATA セクション内に記述するため、"\<" or ">" などの予約文字のエスケープを気にする必要はありません。
 
 また、`Source` 要素の `Code` 属性を使用して、タスクのコードを含むファイルの場所を指定することもできます。 ソース ファイルのコードの種類は、`Type` 属性で指定された種類である必要があります。 `Source` 属性が指定されている場合、`Type` の既定値は `Class` です。 `Source` が指定されていない場合の既定値は `Fragment` です。
 
@@ -92,7 +94,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
 ## <a name="helloworld"></a>HelloWorld
 
- 具体的なインライン タスクの例を次に示します。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の**出力**ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。
+ 具体的なインライン タスクの例を次に示します。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の **出力** ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

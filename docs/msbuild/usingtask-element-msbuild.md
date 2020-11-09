@@ -1,5 +1,7 @@
 ---
-title: Task 要素の使用 (MSBuild) | Microsoft Docs
+title: UsingTask 要素 (MSBuild) | Microsoft Docs
+description: Task 要素で参照されているタスクをタスクの実装が含まれているアセンブリにマップする MSBuild UsingTask 要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289158"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046111"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 要素 (MSBuild)
 
@@ -41,7 +43,7 @@ ms.locfileid: "85289158"
 ```
 
 > [!NOTE]
-> プロパティと項目とは異なり、`TaskName` に適用される "*最初*" の `UsingTask` 要素が使用されます。タスクをオーバーライドするには、新しい `UsingTask` を既存のものの "*前*" に定義する必要があります。
+> プロパティと項目とは異なり、`TaskName` に適用される " *最初* " の `UsingTask` 要素が使用されます。タスクをオーバーライドするには、新しい `UsingTask` を既存のものの " *前* " に定義する必要があります。
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
@@ -83,7 +85,7 @@ ms.locfileid: "85289158"
 
 カスタム タスクに含まれるアセンブリは、`Task` が最初に使用されたときに読み込まれます。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
  次の例では、`AssemblyName` 属性で `UsingTask` 要素を使用する方法を示します。
 
@@ -100,7 +102,7 @@ ms.locfileid: "85289158"
 </UsingTask>
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
  次の例では、`AssemblyFile` 属性で `UsingTask` 要素を使用する方法を示します。
 

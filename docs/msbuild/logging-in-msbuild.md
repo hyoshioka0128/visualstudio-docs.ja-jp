@@ -1,5 +1,7 @@
 ---
 title: MSBuild でのログ | Microsoft Docs
+description: ビルド イベント、メッセージ、警告、エラーをログ ファイルにキャプチャすることによってビルドの進行状況を監視する手段が、MSBuild のログ記録によってどのように提供されるかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633552"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904328"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild でのログ
 

@@ -1,5 +1,7 @@
 ---
 title: ToolsVersion 設定のオーバーライド | Microsoft Docs
+description: プロジェクトとソリューション用の MSBuild ツールセットの値を変更またはオーバーライドするいくつかの方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633019"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048909"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
 
@@ -36,7 +38,7 @@ ms.locfileid: "77633019"
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ```
 
- この例では、すべてのプロジェクトが ToolsVersion 12.0 でビルドされます (後の「[優先順位](#order-of-precedence)」を参照してください)。
+ この例では、すべてのプロジェクトが ToolsVersion 12.0 でビルドされます  (後の「[優先順位](#order-of-precedence)」を参照してください)。
 
  コマンド ラインで `-tv` スイッチを使用するときには、特定のプロジェクトに `$(ProjectToolsVersion)` プロパティを指定し、ソリューション内の他のプロジェクトとは異なる ToolsVersion 値でビルドすることもできます。
 
@@ -127,7 +129,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. それ以外の場合は、現在の `ToolsVersion` を使用します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

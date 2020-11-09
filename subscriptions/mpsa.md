@@ -7,19 +7,19 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: マイクロソフト製品とサービス契約 (MPSA) での Visual Studio サブスクリプションの管理について説明します
-ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 388c847ce19ca7136efb7757fbc87bffdc35a673
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006086"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903799"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 MPSA プログラムを使用して Visual Studio サブスクリプションを購入した場合、Visual Studio サブスクリプション管理者になってサブスクリプションをユーザーに割り当てる前に、いくつか注意が必要な点があります。 管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)に直接進むことができます。
 
 MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム ライセンス サービス センター (VLSC) と同様の機能をサポートする[ビジネス センター](https://businessaccount.microsoft.com/Customer)と呼ばれるポータルで管理します。 たとえば、ライセンスの概要、注文、ダウンロード、キー、ユーザーなどが表示されます。ただし、MPSA の Visual Studio サブスクリプションの機能は、クラウド サービスとよく似ています。 ビジネス センターでは、Microsoft アカウント (MSA) の代わりに職場アカウントを使用してサインインすることもできます。 組織で Office 365 や Azure Active Directory などのクラウド サービスを使用していて、これら 2 つのサービスのいずれかにメール アドレスが使用されている場合、そのメール アドレスは職場アカウントです。 そのため、既存のパスワードを使用してビジネス センターに登録することができます。 組織がクラウド サービスを使用しておらず、メール アドレスが職場アカウントではない場合でも、そのメール アドレスで問題なくビジネス センターに登録できます。
 
-また、Visual Studio サブスクリプション管理者になると、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)でサブスクリプションを割り当てることができます。 MPSA では、Visual Studio サブスクリプションをそれぞれの管理ポータル (Visual Studio サブスクリプション管理ポータル) にプロビジョニングする必要があります。 この場合、購入アカウントをテナント (つまり contoso.onmicrosoft.com) に関連付ける必要があります。
+また、Visual Studio サブスクリプション管理者になると、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)でサブスクリプションを割り当てることができます。MPSA では、Visual Studio サブスクリプションをそれぞれの管理ポータル (Visual Studio サブスクリプション管理ポータル) にプロビジョニングする必要があります。 この場合、購入アカウントをテナント (つまり contoso.onmicrosoft.com) に関連付ける必要があります。
 
 2 種類のテナント (マネージド テナントとアンマネージド テナント) があることに注意してください。 管理対象のテナントとは、既に組織内の管理者によって管理されているテナントを指します。
 
@@ -57,7 +57,7 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 ## <a name="tenant-association-unmanaged"></a>テナントの関連付け (管理対象外)
 前述したように、職場アカウントではない (Azure Active Directory "Azure AD" に登録されていない) メール アドレスでビジネス センターに登録した場合、テナントの関連付け方法の一部が異なります。 "ドメインの引き継ぎ" と呼ばれるプロセスを実行する必要があります。 このプロセスでは、自分をグローバル管理者にして、テナントをアンマネージドからマネージドに変更します。
 
-このプロセスの詳細については、「[クイック スタート ガイド](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)」を参照してください。 ドメインの引き継ぎ手順が説明されている「*オンライン サービスを設定し使用する*」というガイドをダウンロードしてください。 このプロセスを完了すると、購入アカウントもテナントに関連付けられます。
+このプロセスの詳細については、「[クイック スタート ガイド](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)」を参照してください。 ドメインの引き継ぎ手順が説明されている「 *オンライン サービスを設定し使用する* 」というガイドをダウンロードしてください。 このプロセスを完了すると、購入アカウントもテナントに関連付けられます。
 
 > [!NOTE]
 > ドメインの引き継ぎプロセスを完了したら、「テナントの関連付け前 (管理対象のテナント)」セクションの 5 つの手順の条件を満たす必要があります。 条件を満たした後に必要な手順は、MPSA サポートに連絡して追加の Visual Studio サブスクリプション管理者をプロビジョニングすることのみです。

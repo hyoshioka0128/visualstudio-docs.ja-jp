@@ -1,5 +1,6 @@
 ---
-title: 使用法から生成機能を使ったテスト ファースト開発
+title: 使用法から生成機能を使ったテストファースト開発
+ms.custom: SEO-VS-2020
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceed19ab052584ea47629244372af4402835beb5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d12801f4397cbca1e9d4c0334f18908f93aecd
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770798"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102611"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファースト開発
 
@@ -28,7 +29,7 @@ ms.locfileid: "85770798"
 
 Visual Studio では、新しい型とメンバーを生成する際、ワークフローへの割り込みは最小限に抑えられます。 現在のコード位置から離れずに、型、メソッド、プロパティ、フィールド、またはコンストラクターのスタブを作成できます。 ダイアログ ボックスを開いて型生成のオプションを指定すると、ダイアログ ボックスを閉じたときに、現在開いているファイルにフォーカスがすぐに戻ります。
 
-**使用法から生成**機能は、Visual Studio と統合されるテスト フレームワークで使用することができます。 このトピックでは、Microsoft 単体テスト フレームワークについて説明します。
+**使用法から生成** 機能は、Visual Studio と統合されるテスト フレームワークで使用することができます。 このトピックでは、Microsoft 単体テスト フレームワークについて説明します。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,9 +37,9 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
 
 1. C# または Visual Basic で、新しい **Windows クラス ライブラリ** プロジェクトを作成します。 使用している言語に応じて `GFUDemo_VB` または `GFUDemo_CS`という名前を付けます。
 
-2. **ソリューション エクスプローラー**の上部にあるソリューション アイコンを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
+2. **ソリューション エクスプローラー** の上部にあるソリューション アイコンを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
-3. 新しい**単体テスト プロジェクト (.NET Framework)** プロジェクトを作成します。
+3. 新しい **単体テスト プロジェクト (.NET Framework)** プロジェクトを作成します。
 
    ::: moniker range="vs-2017"
 
@@ -50,7 +51,7 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>クラス ライブラリ プロジェクトに参照を追加する
 
-1. **ソリューション エクスプローラー**で、単体クラス プロジェクトの **[参照]** エントリを右クリックし、 **[参照の追加]** を選択します。
+1. **ソリューション エクスプローラー** で、単体クラス プロジェクトの **[参照]** エントリを右クリックし、 **[参照の追加]** を選択します。
 
 2. **[参照マネージャー]** ダイアログ ボックスで、 **[プロジェクト]** を選択してからクラス ライブラリ プロジェクトを選択します。
 
@@ -60,12 +61,12 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>単体テストから新しいクラスを生成する
 
-1. テスト プロジェクトには、*UnitTest1* という名前のファイルが含まれています。 **ソリューション エクスプローラー** でこのファイルをダブルクリックして、コード エディターで開きます。 テスト クラスとテスト メソッドが生成されています。
+1. テスト プロジェクトには、 *UnitTest1* という名前のファイルが含まれています。 **ソリューション エクスプローラー** でこのファイルをダブルクリックして、コード エディターで開きます。 テスト クラスとテスト メソッドが生成されています。
 
 2. クラス `UnitTest1` の宣言を検索して、この名前を `AutomobileTest`に変更します。
 
    > [!NOTE]
-   > 現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード*の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 **IntelliSense** ウィンドウが開いているときに、**Ctrl**+**Alt**+**Space** キーを押すと、完了モードと提案モードを切り替えることができます。 詳細については、[IntelliSense の使用](../ide/using-intellisense.md)に関するページを参照してください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。
+   > 現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード* の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 **IntelliSense** ウィンドウが開いているときに、 **Ctrl**+**Alt**+**Space** キーを押すと、完了モードと提案モードを切り替えることができます。 詳細については、[IntelliSense の使用](../ide/using-intellisense.md)に関するページを参照してください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。
 
 3. `TestMethod1()` メソッドを検索して、この名前を `DefaultAutomobileIsInitializedCorrectly()`に変更します。 次のスクリーンショットに示されているように、このメソッド内に `Automobile` というクラスの新しいインスタンスを作成します。 コンパイル時のエラーを示す波下線が表示され、[クイック アクション](../ide/quick-actions.md)のエラー電球が左の余白に表示されるか、カーソルを移動すると波線の下に直接表示されます。
 
@@ -77,13 +78,13 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
 
 5. **[新しい型の生成]** をクリックして、 **[型の生成]** ダイアログ ボックスを開きます。 このダイアログ ボックスでは、別のプロジェクトでの型の生成を含むオプションが提供されます。
 
-6. **[プロジェクト]** の一覧で、 **[GFUDemo\_VB]** または **[GFUDemo_CS]** をクリックして、テスト プロジェクトではなくクラス ライブラリ プロジェクトにファイルを追加するように Visual Studio に指示します。 **[新しいファイルの作成]** がまだ選択されていない場合は選択し、*Automobile.cs* または *Automobile.vb* という名前を付けます。
+6. **[プロジェクト]** の一覧で、 **[GFUDemo\_VB]** または **[GFUDemo_CS]** をクリックして、テスト プロジェクトではなくクラス ライブラリ プロジェクトにファイルを追加するように Visual Studio に指示します。 **[新しいファイルの作成]** がまだ選択されていない場合は選択し、 *Automobile.cs* または *Automobile.vb* という名前を付けます。
 
      ![[新しい型の生成] ダイアログ ボックス](../ide/media/genotherdialog.png)
 
 7. **[OK]** をクリックしてダイアログ ボックスを閉じ、新しいファイルを作成します。
 
-8. **ソリューション エクスプローラー**で、**GFUDemo_VB** または **GFUDemo_CS** プロジェクト ノードの下に新しい *Automobile.vb* または *Automobile.cs* ファイルが存在することを確認します。 コード エディターでは、まだ `AutomobileTest.DefaultAutomobileIsInitializedCorrectly` にフォーカスがあり、中断を最小限に抑えて、テストの記述を続行できます。
+8. **ソリューション エクスプローラー** で、 **GFUDemo_VB** または **GFUDemo_CS** プロジェクト ノードの下に新しい *Automobile.vb* または *Automobile.cs* ファイルが存在することを確認します。 コード エディターでは、まだ `AutomobileTest.DefaultAutomobileIsInitializedCorrectly` にフォーカスがあり、中断を最小限に抑えて、テストの記述を続行できます。
 
 ### <a name="generate-a-property-stub"></a>プロパティ スタブを生成する
 `Automobile` クラスに `Model` と `TopSpeed`という 2 つのパブリック プロパティがあることを示す製品仕様があるとします。 これらのプロパティは、既定のコンストラクターによって、 `"Not specified"` と `-1` の既定値で初期化されている必要があります。 次の単体テストでは、既定のコンストラクターが適切な既定値にプロパティを設定することを検証します。
@@ -93,7 +94,7 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. コードは `Automobile` の 2 つの未定義プロパティを参照するため、`Model` と `TopSpeed` の下に波下線が表示されます。 `Model` にカーソルを移動し、**クイック アクション**のエラー電球を選択してから、 **[プロパティ 'Automobile.Model' を生成します]** を選択します。
+2. コードは `Automobile` の 2 つの未定義プロパティを参照するため、`Model` と `TopSpeed` の下に波下線が表示されます。 `Model` にカーソルを移動し、 **クイック アクション** のエラー電球を選択してから、 **[プロパティ 'Automobile.Model' を生成します]** を選択します。
 
 3. `TopSpeed` プロパティのプロパティ スタブも同様に生成します。
 
@@ -107,11 +108,11 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. 赤い波線の下にある**クイック アクション**のエラー電球をクリックしてから、 **['Automobile' にコンストラクターを生成します]** をクリックします。
+2. 赤い波線の下にある **クイック アクション** のエラー電球をクリックしてから、 **['Automobile' にコンストラクターを生成します]** をクリックします。
 
      `Automobile` クラス ファイルで、新しいコンストラクターがコンストラクター呼び出しで使用されているローカル変数の名前を調べ、 `Automobile` クラスで同じ名前のプロパティを見つけ、 `Model` および `TopSpeed` プロパティに引数値を格納するためのコードをコンストラクター本体に指定に指定したことがわかります
 
-3. 新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、**クイック アクション**のエラー電球をクリックし、 **['Automobile' にコンストラクターを生成します]** をクリックします。
+3. 新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、 **クイック アクション** のエラー電球をクリックし、 **['Automobile' にコンストラクターを生成します]** をクリックします。
 
 ### <a name="generate-a-stub-for-a-method"></a>メソッドのスタブを生成する
 仕様で、`Model` および `TopSpeed` プロパティが既定値以外に設定されている場合は、新しい `Automobile` を `IsRunning` 状態にできることが示されているとします。
@@ -121,9 +122,9 @@ Visual Studio では、新しい型とメンバーを生成する際、ワーク
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. `myAuto.Start` メソッド呼び出しの**クイック アクション**のエラー電球をクリックしてから、**[メソッド 'Automobile.Start' を生成します]** をクリックします。
+2. `myAuto.Start` メソッド呼び出しの **クイック アクション** のエラー電球をクリックしてから、 **[メソッド 'Automobile.Start' を生成します]** をクリックします。
 
-3. `IsRunning` プロパティの**クイック アクション** (電球) をクリックしてから、**[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
+3. `IsRunning` プロパティの **クイック アクション** (電球) をクリックしてから、 **[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
 
      これで、`Automobile` クラスに `Start()` という名前のメソッドと `IsRunning` という名前のプロパティが含まれるようになりました。
 

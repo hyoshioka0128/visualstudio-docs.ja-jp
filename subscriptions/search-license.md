@@ -7,12 +7,12 @@ ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 09/21/2020
 ms.topic: how-to
 description: 管理者が管理者ポータルで個々のサブスクライバーまたはグループを探す方法について説明します。
-ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022238"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92904541"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのサブスクライバーの検索とフィルター処理
 Visual Studio サブスクリプション管理ポータルでは、さまざまな条件を基にサブスクライバーの特定のサブセットを検索することができます。 名前、メール アドレス、サブスクリプション レベル、その他の情報で、サブスクライバーの一覧をフィルター処理できます。

@@ -1,5 +1,7 @@
 ---
 title: UpdateManifestForBrowserApplication タスク | Microsoft Docs
+description: MSBuild で UpdateManifestForBrowserApplication タスクを実行して、hostInBrowser 要素をアプリケーション マニフェストに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631329"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046817"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication タスク
 
-<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> タスクは、XAML ブラウザー アプリケーション (XBAP) プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト ( *\<projectname>.exe.manifest*) に追加するために実行されます。
+<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> タスクは、XAML ブラウザー アプリケーション (XBAP) プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト ( *\<projectname>.exe.manifest* ) に追加するために実行されます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
 

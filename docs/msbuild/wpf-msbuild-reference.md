@@ -1,5 +1,7 @@
 ---
 title: WPF MSBuild リファレンス | Microsoft Docs
+description: Windows Presentation Foundation (WPF) で、追加のビルド サポートを使用して MSBuild ビルド エンジンを拡張する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d01def43a94e8590d5f776da1231ddf2d40d8d53
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596308"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047539"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild リファレンス
 
@@ -57,6 +59,6 @@ WPF .targets ファイルについて説明します。
 
 ビルド タスク Windows アセンブリ。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [MSBuild](../msbuild/msbuild.md)
