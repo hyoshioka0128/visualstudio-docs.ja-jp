@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 配置ストラテジの選択 |Microsoft Docs
+description: ClickOnce アプリケーションを配置するための方法と、配置するアプリケーションの種類に応じて戦略を選択する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841392"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383171"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>ClickOnce 配置ストラテジの選択
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを配置する際には 3 つのストラテジがあり、どれを選択するかは主として配置するアプリケーションの種類によって決まります。 この 3 つの配置ストラテジは次のとおりです。
@@ -46,7 +48,7 @@ ms.locfileid: "90841392"
  これは既定の配置ストラテジです。
 
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Web またはネットワーク共有からのアプリケーションの起動
- このストラテジは 1 番目のストラテジに似ていますが、アプリケーションが Web アプリケーションのように動作する点が異なります。 ユーザーが Web ページのリンクをクリック (またはファイル共有のアイコンをダブルクリック) すると、アプリケーションが起動します。 ユーザーがアプリケーションを閉じると、アプリケーションはユーザーのローカル コンピューターで使用できなくなり、**[スタート]** メニューや **[コントロール パネル]** の **[プログラムの追加と削除]** には何も追加されません。
+ このストラテジは 1 番目のストラテジに似ていますが、アプリケーションが Web アプリケーションのように動作する点が異なります。 ユーザーが Web ページのリンクをクリック (またはファイル共有のアイコンをダブルクリック) すると、アプリケーションが起動します。 ユーザーがアプリケーションを閉じると、アプリケーションはユーザーのローカル コンピューターで使用できなくなり、 **[スタート]** メニューや **[コントロール パネル]** の **[プログラムの追加と削除]** には何も追加されません。
 
 > [!NOTE]
 > 厳密には、アプリケーションは、Web アプリケーションが Web キャッシュにダウンロードされるのと同様に、ローカル コンピューターのアプリケーション キャッシュにダウンロードされ、インストールされます。 Web キャッシュの場合と同様に、ファイルは最終的にアプリケーション キャッシュから削除されます。 ただし、ユーザーの目には、アプリケーションが Web またはファイル共有から実行されるように映ります。
@@ -55,7 +57,7 @@ ms.locfileid: "90841392"
 
  この配置ストラテジを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で有効にするには、発行ウィザードの **[アプリケーションはオフラインでも利用できますか?]** ページで **[いいえ、このアプリケーションはオンラインでのみ利用できます]** をクリックします。
 
- この配置ストラテジを手動で有効にするには、配置マニフェストの **install** タグを変更します。 (その値は **true** または **false** になります。 *Mage.exe* では、**[アプリケーションの種類]** リストの **[オンラインのみ]** を使用します。)
+ この配置ストラテジを手動で有効にするには、配置マニフェストの **install** タグを変更します。 (その値は **true** または **false** になります。 *Mage.exe* では、 **[アプリケーションの種類]** リストの **[オンラインのみ]** を使用します。)
 
 ## <a name="install-from-a-cd"></a>CD からのインストール
  このストラテジを使用すると、CD-ROM や DVD などのリムーバブル メディアにアプリケーションが配置されます。 前のオプションと同様に、ユーザーがアプリケーションのインストールを選択すると、アプリケーションがインストールされて起動し、関連項目が **[スタート]** メニューと **[コントロール パネル]** の **[プログラムの追加と削除]** に追加されます。
@@ -64,14 +66,14 @@ ms.locfileid: "90841392"
 
  この配置ストラテジを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で有効にするには、発行ウィザードの **[ユーザーはアプリケーションをどのようにインストールするのですか?]** ページで **[CD-ROM または DVD-ROM から]** をクリックします。
 
- この配置ストラテジを手動で有効にするには、配置マニフェストの **deploymentProvider** タグを変更します。 (Visual Studio では、このプロパティはプロジェクト デザイナーの **[発行]** ページの **[インストールの URL]** として公開されます。 *Mage.exe* では、**[Start Location]** です。)
+ この配置ストラテジを手動で有効にするには、配置マニフェストの **deploymentProvider** タグを変更します。 (Visual Studio では、このプロパティはプロジェクト デザイナーの **[発行]** ページの **[インストールの URL]** として公開されます。 *Mage.exe* では、 **[Start Location]** です。)
 
 ## <a name="web-browser-support"></a>Web ブラウザー サポート
  .NET Framework 3.5 を対象とするアプリケーションは、任意のブラウザーを使用してインストールできます。
 
  .NET Framework 2.0 を対象とするアプリケーションは、Internet Explorer が必要です。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)
 - [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

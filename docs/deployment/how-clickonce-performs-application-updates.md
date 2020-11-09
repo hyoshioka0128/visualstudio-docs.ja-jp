@@ -1,5 +1,7 @@
 ---
 title: ClickOnce がアプリケーションの更新を実行する方法 |Microsoft Docs
+description: ClickOnce がファイルバージョン情報を使用して、アプリケーションを更新するかどうかを判断する方法について説明します。 ClickOnce では、ファイルの修正プログラムを使用して、ダウンロードの冗長性を回避します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900025"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382668"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce がアプリケーションの更新を実行するしくみ
 ClickOnce では、アプリケーションの配置マニフェストで指定されたファイルバージョン情報を使用して、アプリケーションのファイルを更新するかどうかを決定します。 更新が開始されると、ClickOnce は *ファイル修正* と呼ばれる手法を使用して、アプリケーションファイルの冗長ダウンロードを回避します。
@@ -35,6 +37,6 @@ ClickOnce では、アプリケーションの配置マニフェストで指定�
 
  ファイルの修正は、データとしてマークされ、データディレクトリに格納されているファイルに対しては機能しません。 これらは、ファイルのハッシュ署名に関係なく、常にダウンロードされます。 データディレクトリの詳細については、「 [ClickOnce アプリケーションでローカルデータおよびリモートデータにアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)
 - [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)

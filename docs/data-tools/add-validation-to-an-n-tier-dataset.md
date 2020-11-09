@@ -1,5 +1,6 @@
 ---
 title: n 層データセットに検証を追加する
+description: Visual Studio で n 層データセットに検証を追加します。 個々の列または行全体に対する変更を検証します。
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283022"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382131"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 層データセットに検証を追加する
 n 層ソリューションに分離されたデータセットへの検証の追加は、単一ファイルのデータセット (1 つのプロジェクト内のデータセット) に検証を追加するのと基本的には同じです。 データで検証を実行する位置として推奨されるのは、データ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントや <xref:System.Data.DataTable.RowChanging> イベントの発生時です。
@@ -53,7 +54,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>個々の列値の変更時に検証を追加するには
 
-1. **ソリューションエクスプローラー**で *.xsd*ファイルをダブルクリックして、データセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **ソリューションエクスプローラー** で *.xsd* ファイルをダブルクリックして、データセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. 検証する列をダブルクリックします。 この操作によって <xref:System.Data.DataTable.ColumnChanging> イベント ハンドラーが作成されます。
 
@@ -62,7 +63,7 @@ End Sub
 
 3. アプリケーションの要件を満たすデータが `e.ProposedValue` に含まれていることを検証するコードを追加します。 指定された値が受け入れられない場合、エラーがあることを表すように該当する列を設定します。
 
-     次のコード例では、 **Quantity** 列に0より大きい値が含まれていることを検証します。 **Quantity**が0以下の場合、列はエラーに設定されます。 `Else` **Quantity**が0よりも大きい場合、句によってエラーがクリアされます。 列変更イベント ハンドラー内のコードは、次のようになります。
+     次のコード例では、 **Quantity** 列に0より大きい値が含まれていることを検証します。 **Quantity** が0以下の場合、列はエラーに設定されます。 `Else` **Quantity** が0よりも大きい場合、句によってエラーがクリアされます。 列変更イベント ハンドラー内のコードは、次のようになります。
 
     ```vb
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then
@@ -106,11 +107,11 @@ End Sub
 
 注文が入力されると、RequiredDate が OrderDate と同じか、それより前の日付の注文が入力されていないかを検証します。 この例では、RequiredDate 列と OrderDate 列の両方を比較する必要があるため、個々の列の変更を検証しても意味がありません。
 
-<xref:System.Data.DataTable.RowChanging>**データセットデザイナー**のテーブルのタイトルバーにあるテーブル名をダブルクリックして、イベントのイベントハンドラーを作成します。
+<xref:System.Data.DataTable.RowChanging>**データセットデザイナー** のテーブルのタイトルバーにあるテーブル名をダブルクリックして、イベントのイベントハンドラーを作成します。
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>行全体の変更時に検証を追加するには
 
-1. **ソリューションエクスプローラー**で *.xsd*ファイルをダブルクリックして、データセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **ソリューションエクスプローラー** で *.xsd* ファイルをダブルクリックして、データセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. デザイナーでデータ テーブルのタイトル バーをダブルクリックします。
 

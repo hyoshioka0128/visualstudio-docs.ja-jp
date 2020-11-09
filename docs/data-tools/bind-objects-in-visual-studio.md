@@ -1,5 +1,6 @@
 ---
 title: カスタムオブジェクトのデータバインド
+description: Visual Studio のデータソースとしてオブジェクトをバインドします。 アプリケーションのデータソースとしてカスタムオブジェクトを操作するには、デザイン時ツールを使用します。
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea36249ecc0cfc266a650ca24d143e053f7fc0d9
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282931"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382105"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio でオブジェクトをデータソースとしてバインドする
 
@@ -134,7 +135,7 @@ Windows フォームコントロールにデータバインドされているカ
 
 Visual Studio によって、データベースに対して直接実行できる DBDirect メソッドが作成されます。 これらのメソッドは、DataSet オブジェクトまたは DataTable オブジェクトを必要としません。
 
-|TableAdapter DBDirect メソッド|説明|
+|TableAdapter DBDirect メソッド|[説明]|
 | - |-----------------|
 |`TableAdapter.Insert`|データベースに新しいレコードを追加します。これにより、個々の列の値をメソッドのパラメーターとして渡すことができます。|
 |`TableAdapter.Update`|データベース内の既存のレコードを更新します。 Update メソッドは、元の列と新しい列の値をメソッドのパラメーターとして受け取ります。 元の値は元のレコードを検索するために使用され、新しい値はそのレコードを更新するために使用されます。<br /><br /> メソッドは、 `TableAdapter.Update` <xref:System.Data.DataSet> <xref:System.Data.DataTable> <xref:System.Data.DataRow> <xref:System.Data.DataRow> メソッドパラメーターとしての、、、またはの配列を取得することによって、データセット内の変更をデータベースに戻すためにも使用されます。|

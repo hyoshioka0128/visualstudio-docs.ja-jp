@@ -1,5 +1,7 @@
 ---
 title: ClickOnce リファレンス |Microsoft Docs
+description: これらの参照記事を使用して、ClickOnce アプリケーションを表すために使用される XML ファイルの構造を理解します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900327"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383028"
 ---
 # <a name="clickonce-reference"></a>ClickOnce に関するリファレンス
 次のページでは、ClickOnce アプリケーションを表すために使用される XML ファイルの構造について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
  アプリケーションマニフェストを構成する要素と属性について説明します。
 

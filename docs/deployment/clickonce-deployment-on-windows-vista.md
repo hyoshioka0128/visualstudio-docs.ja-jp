@@ -1,5 +1,7 @@
 ---
 title: Windows Vista の ClickOnce 配置 |Microsoft Docs
+description: Visual Studio が ClickOnce および Registration-Free COM アプリケーションの外部 UAC マニフェストを生成する方法について説明します。外部のマニフェストが必要です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641491"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383080"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista の ClickOnce 配置
 
-Windows Vista のユーザーアカウント制御 (UAC) 用に Visual Studio でアプリケーションをビルドすると、通常、アプリケーションの実行可能ファイルにバイナリ XML データとしてエンコードされた埋め込みマニフェストが生成されます。  ClickOnce および登録を必要としない COM アプリケーションには外部マニフェストが必要であるため、Visual Studio では、埋め込みマニフェストではなく、UAC データを含むこれらのプロジェクト用のファイルが生成されます。 ClickOnce および登録を使用しない COM 配置の場合、Visual Studio では、 *app.xaml* という名前のファイルの情報を使用して、外部の UAC マニフェスト情報が生成されます。 それ以外の場合は、Visual Studio によって、UAC データがアプリケーションの実行可能ファイルに埋め込まれます。
+Windows Vista のユーザーアカウント制御 (UAC) 用に Visual Studio でアプリケーションをビルドすると、通常、アプリケーションの実行可能ファイルにバイナリ XML データとしてエンコードされた埋め込みマニフェストが生成されます。  ClickOnce および Registration-Free COM アプリケーションには外部マニフェストが必要であるため、Visual Studio では、埋め込みマニフェストではなく、UAC データを含むこれらのプロジェクト用のファイルが生成されます。 ClickOnce および Registration-Free COM 配置では、Visual Studio は、 *app.xaml* と呼ばれるファイルからの情報を使用して、外部の UAC マニフェスト情報を生成します。 それ以外の場合は、Visual Studio によって、UAC データがアプリケーションの実行可能ファイルに埋め込まれます。
 
 Visual Studio には、マニフェスト生成のための次のオプションが用意されています。
 
@@ -34,13 +36,13 @@ Visual Studio には、マニフェスト生成のための次のオプション
 
    これは既定の設定です (ClickOnce を使用している場合を除く)。 この設定は、Visual Studio が Windows Vista で動作する通常の方法をサポートしています。また、を使用して内部マニフェストと外部マニフェストの両方を生成し `AsInvoker` ます。
 
-- 外部マニフェストを使用します。 *アプリケーションマニフェスト*を使用して外部マニフェストを生成します。
+- 外部マニフェストを使用します。 *アプリケーションマニフェスト* を使用して外部マニフェストを生成します。
 
-   これにより、 *アプリケーションマニフェスト*の情報を使用して、外部マニフェストのみが生成されます。 ClickOnce または登録を必要としない COM を使用してアプリケーションを発行すると、Visual Studio によってプロジェクトに *app.xaml* が追加され、このオプションが追加されます。
+   これにより、 *アプリケーションマニフェスト* の情報を使用して、外部マニフェストのみが生成されます。 ClickOnce または Registration-Free COM を使用してアプリケーションを発行すると、Visual Studio によってプロジェクトに *app.xaml* が追加され、このオプションが追加されます。
 
 - マニフェストを使用しません。 マニフェストを使用せずにアプリケーションを作成します。
 
-   この方法は、 *仮想化*とも呼ばれます。 以前のバージョンの Visual Studio の既存のアプリケーションとの互換性を確保するには、このオプションを使用します。
+   この方法は、 *仮想化* とも呼ばれます。 以前のバージョンの Visual Studio の既存のアプリケーションとの互換性を確保するには、このオプションを使用します。
 
   新しいプロパティは、プロジェクトデザイナーの [ **アプリケーション** ] ページ (Visual C# プロジェクトの場合のみ) と MSBuild プロジェクトファイル形式で使用できます。
 

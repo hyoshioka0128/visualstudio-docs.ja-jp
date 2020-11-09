@@ -1,5 +1,7 @@
 ---
 title: ClickOnce アンマネージ API リファレンス |Microsoft Docs
+description: dfshim.dll からの ClickOnce アンマネージパブリック Api について説明します。これには、Cleanオンライン Appcache、GetDeploymentDataFromManifest、LaunchApplication が含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900276"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382612"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce アンマネージド API リファレンス
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll からのアンマネージパブリック Api。
@@ -44,7 +46,7 @@ ms.locfileid: "62900276"
 ### <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーを表す HRESULT を返します。 マネージ例外が発生した場合、は 0x80020009 (DISP_E_EXCEPTION) を返します。
 
-### <a name="remarks"></a>注釈
+### <a name="remarks"></a>Remarks
  まだ実行されていない場合は、Cleanオンライン Appcache を呼び出すとサービスが開始され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -52,7 +54,7 @@ ms.locfileid: "62900276"
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|Type|
+|パラメーター|説明|種類|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|`ActivationURL` へのポインター。|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest` へのポインター。|LPCWSTR|
@@ -68,7 +70,7 @@ ms.locfileid: "62900276"
 ### <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーを表す HRESULT を返します。 バッファーが小さすぎる場合は、HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) を返します。
 
-### <a name="remarks"></a>注釈
+### <a name="remarks"></a>Remarks
  ポインターを null にすることはできません。 `pcwzActivationUrl` およびを空にすることはでき `pcwzPathToDeploymentManifest` ません。
 
  アクティベーション URL をクリーンアップするのは、呼び出し元の責任です。 たとえば、必要に応じてエスケープ文字を追加したり、クエリ文字列を削除したりできます。
@@ -80,7 +82,7 @@ ms.locfileid: "62900276"
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|Type|
+|パラメーター|説明|種類|
 |---------------|-----------------|----------|
 |`deploymentUrl`|配置マニフェストの URL を格納している NULL で終わる文字列へのポインター。|LPCWSTR|
 |`data`|将来使用するために予約されています。 NULL にする必要があります|LPVOID|

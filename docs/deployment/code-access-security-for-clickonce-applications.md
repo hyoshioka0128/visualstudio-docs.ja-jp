@@ -1,5 +1,7 @@
 ---
 title: ClickOnce アプリケーションのコードアクセスセキュリティ |Microsoft Docs
+description: ClickOnce アプリケーションのコードアクセスセキュリティについて、およびコードアクセスセキュリティのアクセス許可を構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd2d9b6792cae002967c9000474a825bd3a0651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256a41138a3918dd61d8fd496465bb0230fb9362
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649277"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382573"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce アプリケーションのコード アクセス セキュリティ
 ClickOnce アプリケーションは、.NET Framework に基づいており、コード アクセス セキュリティ制約の対象です。 このため、コード アクセス セキュリティの影響を理解し、それに応じて ClickOnce アプリケーションを作成することが重要です。
@@ -48,7 +50,7 @@ ClickOnce アプリケーションは、.NET Framework に基づいており、�
   ClickOnce アプリケーションのアクセス許可を制限するためには、アプリケーションのコード アクセス セキュリティのアクセス許可を変更して、アプリケーションに必要な最適なアクセス許可ゾーンを要求できます。 ほとんどの場合、アプリケーションの配置元のゾーンを選択できます。 たとえば、アプリケーションが企業アプリケーションである場合、 **ローカル イントラネット** が使用できます。 アプリケーションがインターネット アプリケーションである場合は、 **インターネット** ゾーンが使用できます。
 
 ## <a name="configure-security-permissions"></a>セキュリティのアクセス許可を構成する
- 必ずコード アクセス セキュリティのアクセス許可を制限する適切なゾーンを要求するよう ClickOnce アプリケーションを構成する必要があります。 セキュリティのアクセス許可は、 **プロジェクト デザイナー** の **セキュリティ**ページで構成できます。
+ 必ずコード アクセス セキュリティのアクセス許可を制限する適切なゾーンを要求するよう ClickOnce アプリケーションを構成する必要があります。 セキュリティのアクセス許可は、 **プロジェクト デザイナー** の **セキュリティ** ページで構成できます。
 
  **プロジェクト デザイナー** の **セキュリティ** ページには、 **[ClickOnce セキュリティ設定を有効にする]** チェック ボックスがあります。 このチェック ボッスクを選択すると、アプリケーションの配置マニフェストにセキュリティのアクセス許可要求が追加されます。 インストール時に、要求されたアクセス許可がアプリケーションの配置元ゾーンの既定のアクセス許可を超えると、ユーザーにはアクセス許可を付与するよう求るプロンプトが表示されます。 詳細については、「 [方法: ClickOnce のセキュリティ設定を有効](../deployment/how-to-enable-clickonce-security-settings.md)にする」を参照してください。
 
@@ -61,7 +63,7 @@ ClickOnce アプリケーションは、.NET Framework に基づいており、�
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>アクセス許可が制限されているアプリケーションをデバッグする
  開発者の場合、完全な信頼アクセス許可で開発コンピュータを実行しがちです。 そのため、開発者がアプリケーションのデバッグを行う際には、ユーザーが制限されたアクセス許可でアプリケーションを実行する際に表示されるセキュリティ例外と同じものは表示されません。
 
- これらの例外をキャッチするには、開発者はエンドユーザーと同じアクセス許可を使用してアプリケーションをデバッグする必要があります。 制限されたアクセス許可でのデバッグは、 **プロジェクト デザイナー** の **セキュリティ**ページで有効にすることができます。
+ これらの例外をキャッチするには、開発者はエンドユーザーと同じアクセス許可を使用してアプリケーションをデバッグする必要があります。 制限されたアクセス許可でのデバッグは、 **プロジェクト デザイナー** の **セキュリティ** ページで有効にすることができます。
 
  制限されたアクセス許可でアプリケーションをデバッグする場合、 **セキュリティ** ページで有効にされていないコード セキュリティ要求に対して例外が発生します。 例外ヘルパーが表示され、例外を防止するためのコードの変更方法に関するヒントが利用できます。
 
@@ -96,5 +98,5 @@ ClickOnce アプリケーションは、.NET Framework に基づいており、�
 - [方法: ClickOnce アプリケーションのセキュリティゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [方法: アクセス許可が制限された ClickOnce アプリケーションをデバッグする](securing-clickonce-applications.md)
-- [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)
+- [信頼されたアプリケーションの展開の概要](../deployment/trusted-application-deployment-overview.md)
 - [[セキュリティ] ページ (プロジェクト デザイナー)](../ide/reference/security-page-project-designer.md)

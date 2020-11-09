@@ -1,6 +1,6 @@
 ---
 title: コミットされていない編集
-description: 保存前にデータバインドコントロールのインプロセス編集をコミットする
+description: データを保存する前に、データバインド Windows フォームコントロールのインプロセス編集をコミットします。 フォーム上のすべての BindingSource コンポーネントに対して EndEdit を呼び出します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e2188e20b2ba36a6ef3805faab9f80c4379f1f7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd50ad6c0e81f337ad922f6fa994f0d900edb8b6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038375"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382391"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>データの保存前にデータ バインド コントロールで実行中の編集をコミットする
 
@@ -52,7 +52,7 @@ ms.locfileid: "90038375"
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [階層更新](../data-tools/hierarchical-update.md)

@@ -1,5 +1,7 @@
 ---
 title: '&lt;description &gt; 要素 (ClickOnce 配置) |Microsoft Docs'
+description: Description 要素は、コントロールパネルの [シェルのプレゼンス] と [プログラムの追加と削除] 項目を作成するために使用されるアプリケーション情報を識別します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928799"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382833"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;description &gt; 要素 (ClickOnce 配置)
 コントロールパネルの [シェルのプレゼンス] と [ **プログラムの追加と削除** ] 項目を作成するために使用されるアプリケーション情報を識別します。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -43,12 +45,12 @@ ms.locfileid: "62928799"
 
 |属性|説明|
 |---------------|-----------------|
-|`publisher`|必須です。 展開がインストール用に構成されている場合に、Windows の [ **スタート** ] メニューおよび [コントロールパネル] の [ **プログラムの追加と削除** ] 項目で、アイコンの配置に使用される会社名を識別します。|
-|`product`|必須です。 製品の完全な名前を識別します。 Windows の [ **スタート** ] メニューにインストールされているアイコンのタイトルとして使用されます。|
+|`publisher`|必須。 展開がインストール用に構成されている場合に、Windows の [ **スタート** ] メニューおよび [コントロールパネル] の [ **プログラムの追加と削除** ] 項目で、アイコンの配置に使用される会社名を識別します。|
+|`product`|必須。 製品の完全な名前を識別します。 Windows の [ **スタート** ] メニューにインストールされているアイコンのタイトルとして使用されます。|
 |`suiteName`|省略可能。 Windows の [スタート] メニューのフォルダー内のサブフォルダーを識別 `publisher` します。 **Start**|
 |`supportUrl`|省略可能。 コントロールパネルの [ **プログラムの追加と削除** ] 項目に表示されるサポート URL を指定します。 この URL へのショートカットは、展開がインストール用に構成されている場合に、Windows の [ **スタート** ] メニューでアプリケーションをサポートするためにも作成されます。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>Remarks
  Description 要素は、すべての配置構成に必要です。
 
 ## <a name="example"></a>例
@@ -61,5 +63,5 @@ ms.locfileid: "62928799"
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)

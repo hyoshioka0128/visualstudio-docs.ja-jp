@@ -1,6 +1,6 @@
 ---
 title: プロパティが2回表示されます
-description: 関連付けを作成できません - プロパティが 2 回リストされています
+description: 関連付けを作成できません-プロパティが2回表示されています。 この Visual Studio オブジェクトリレーショナルデザイナー (O/R デザイナー) メッセージに関する情報を表示します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d0e3475896c937f247fc64a0750da25c2d6edac9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d4cb795a5d608e31c26ccec0b96f359a5c63cee7
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036484"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381780"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>関連付け &lt;関連付けの名前&gt; を作成できません - プロパティが 2 回リストされています
 
 関連付けを作成できません \<association name> 。 同じプロパティが複数回表示されて \<property name> います:。
 
-関連付けは、**[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 プロパティは、関連付けのクラスごとに 1 回のみリストできます。
+関連付けは、 **[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 プロパティは、関連付けのクラスごとに 1 回のみリストできます。
 
 メッセージに示されているプロパティは、Parent クラスまたは Child クラスの **[関連付けのプロパティ]** に複数回表示されます。
 

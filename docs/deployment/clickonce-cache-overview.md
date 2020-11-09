@@ -1,5 +1,7 @@
 ---
 title: ClickOnce キャッシュの概要 |Microsoft Docs
+description: Clickonce アプリケーションキャッシュについて説明します。 clickonce アプリケーションキャッシュには、ClickOnce アプリケーションが格納されているクライアントコンピューター上の隠しディレクトリが含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7abeeec4a640119e3089c795ac529a10f8dc09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed4bc8d045ff21a536016edc0a0ac64d99c63c2f
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182626"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383106"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce キャッシュの概要
 ローカルにインストールされているか、オンラインでホストされているすべての [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、クライアントコンピューターのアプリケーションキャッシュに格納され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 *cache* [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]キャッシュは、現在のユーザーの [ドキュメントと設定] フォルダーの [ローカル設定] ディレクトリにある非表示ディレクトリのファミリです。 このキャッシュは、アセンブリ、構成ファイル、アプリケーションとユーザー設定、およびデータディレクトリを含む、アプリケーションのすべてのファイルを保持します。 キャッシュは、アプリケーションのデータディレクトリを最新バージョンに移行する役割も担います。 データ移行の詳細については、「 [ClickOnce アプリケーションにおけるローカルデータおよびリモートデータへのアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)」を参照してください。
@@ -31,7 +33,7 @@ ms.locfileid: "84182626"
 ## <a name="cache-storage-quota"></a>キャッシュストレージクォータ
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] オンラインでホストされているアプリケーションは、キャッシュのサイズを制限するクォータによって占有される領域の量に制限され [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 キャッシュサイズは、すべてのユーザーのオンラインアプリケーションに適用されます。部分的に信頼された1つのオンラインアプリケーションは、クォータ領域の半分に制限されます。 インストールされているアプリケーションはキャッシュサイズによって制限されず、キャッシュの制限にはカウントされません。 すべてのアプリケーションについて、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] キャッシュには現在のバージョンと以前にインストールされたバージョンのみが保持されます。
 
- 既定では、クライアントコンピューターには、オンラインアプリケーション用に 250 MB の記憶域があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 データファイルは、この制限にはカウントされません。 システム管理者は、レジストリ **HKEY_CURRENT_USER キー \software\classes\software\microsoft\windows\currentversion\deployment\onlineappquotainkb**を変更することにより、特定のクライアントコンピューターのこのクォータを拡大または縮小できます。これは、キャッシュサイズを kb 単位で表す DWORD 値です。 たとえば、キャッシュサイズを 50 MB に減らすために、この値を51200に変更します。
+ 既定では、クライアントコンピューターには、オンラインアプリケーション用に 250 MB の記憶域があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 データファイルは、この制限にはカウントされません。 システム管理者は、レジストリキーの **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB** を変更することにより、特定のクライアントコンピューターのこのクォータを拡大または縮小できます。これは、キャッシュサイズを kb 単位で表す DWORD 値です。 たとえば、キャッシュサイズを 50 MB に減らすために、この値を51200に変更します。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

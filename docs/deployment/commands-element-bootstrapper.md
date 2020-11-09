@@ -1,5 +1,7 @@
 ---
 title: '&lt;Commands &gt; 要素 (ブートストラップ) |Microsoft Docs'
+description: Commands 要素は、InstallChecks の下にある要素にテストを実装し、ClickOnce ブートストラップテストが失敗した場合にインストールするパッケージを宣言します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900345"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383054"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands &gt; 要素 (ブートストラップ)
 要素は、要素の下にある `Commands` 要素によって記述されたテストを実装 `InstallChecks` し、テストが [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 失敗した場合にブートストラップがインストールする必要があるパッケージを宣言します。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 <Commands
@@ -72,12 +74,12 @@ ms.locfileid: "62900345"
 |---------------|-----------------|
 |`Reboot`|省略可能。 いずれかのパッケージが再起動終了コードを返す場合に、システムを再起動するかどうかを指定します。 有効な値を次の一覧に示します。<br /><br /> `Defer`. 再起動は、将来の時刻まで延期されます。<br /><br /> `Immediate`. いずれかのパッケージが再起動終了コードを返した場合、直ちに再起動します。<br /><br /> `None`. 再起動要求を無視します。<br /><br /> 既定値は、`Immediate` です。|
 
-## <a name="command"></a>コマンド
+## <a name="command"></a>command
  `Command` 要素は、`Commands` 要素の子要素です。 要素には `Commands` 1 つ以上の要素を含めることができ `Command` ます。 要素には、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
-|`PackageFile`|必須です。 によって指定された1つ以上の条件が false を返す場合は、インストールするパッケージの名前を指定し `InstallConditions` ます。 パッケージは、要素を使用して同じファイル内に定義されている必要があり `PackageFile` ます。|
+|`PackageFile`|必須。 によって指定された1つ以上の条件が false を返す場合は、インストールするパッケージの名前を指定し `InstallConditions` ます。 パッケージは、要素を使用して同じファイル内に定義されている必要があり `PackageFile` ます。|
 |`Arguments`|省略可能。 パッケージファイルに渡すコマンドライン引数のセット。|
 |`EstimatedInstallSeconds`|省略可能。 パッケージのインストールにかかる推定時間 (秒単位)。 この値は、ブートストラップによってユーザーに表示される進行状況バーのサイズを決定します。 既定値は0です。この場合、推定時間は指定されません。|
 |`EstimatedDiskBytes`|省略可能。 インストールの完了後にパッケージが占有するディスク領域の推定サイズ (バイト単位)。 この値は、ブートストラップによってユーザーに表示されるハードディスク領域の要件で使用されます。 既定値は0です。この場合、ブートストラップはハードディスク領域の要件を表示しません。|
@@ -94,9 +96,9 @@ ms.locfileid: "62900345"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 テストするプロパティの名前。 プロパティは、要素の子によって既に定義されている必要があり `InstallChecks` ます。 詳細については、[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)に関するページを参照してください。|
-|`Compare`|必須です。 実行する比較の種類。 有効な値を次の一覧に示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|必須です。 プロパティと比較する値。|
+|`Property`|必須。 テストするプロパティの名前。 プロパティは、要素の子によって既に定義されている必要があり `InstallChecks` ます。 詳細については、[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)に関するページを参照してください。|
+|`Compare`|必須。 実行する比較の種類。 有効な値を次の一覧に示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|必須。 プロパティと比較する値。|
 |`Schedule`|省略可能。 `Schedule`この規則を評価するタイミングを定義するタグの名前。|
 
 ## <a name="failif"></a>FailIf
@@ -106,9 +108,9 @@ ms.locfileid: "62900345"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 テストするプロパティの名前。 プロパティは、要素の子によって既に定義されている必要があり `InstallChecks` ます。 詳細については、[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)に関するページを参照してください。|
-|`Compare`|必須です。 実行する比較の種類。 有効な値を次の一覧に示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
-|`Value`|必須です。 プロパティと比較する値。|
+|`Property`|必須。 テストするプロパティの名前。 プロパティは、要素の子によって既に定義されている必要があり `InstallChecks` ます。 詳細については、[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)に関するページを参照してください。|
+|`Compare`|必須。 実行する比較の種類。 有効な値を次の一覧に示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
+|`Value`|必須。 プロパティと比較する値。|
 |`String`|省略可能。 失敗したときにユーザーに表示するテキスト。|
 |`Schedule`|省略可能。 `Schedule`この規則を評価するタイミングを定義するタグの名前。|
 
@@ -120,8 +122,8 @@ ms.locfileid: "62900345"
 
 |属性|説明|
 |---------------|-----------------|
-|`Value`|必須です。 この要素が適用される終了コード値 `ExitCode` 。|
-|`Result`|必須です。 インストールがこの終了コードにどのように反応するか。 有効な値を次の一覧に示します。<br /><br /> `Success`. パッケージに正常にインストールされたことを示すフラグを付けます。<br /><br /> `SuccessReboot`. パッケージに正常にインストールされたというフラグを付け、再起動するようにシステムに指示します。<br /><br /> `Fail`. パッケージに失敗としてフラグを付けます。<br /><br /> `FailReboot`. パッケージに失敗のフラグを付け、再起動するようにシステムに指示します。|
+|`Value`|必須。 この要素が適用される終了コード値 `ExitCode` 。|
+|`Result`|必須。 インストールがこの終了コードにどのように反応するか。 有効な値を次の一覧に示します。<br /><br /> `Success`. パッケージに正常にインストールされたことを示すフラグを付けます。<br /><br /> `SuccessReboot`. パッケージに正常にインストールされたというフラグを付け、再起動するようにシステムに指示します。<br /><br /> `Fail`. パッケージに失敗としてフラグを付けます。<br /><br /> `FailReboot`. パッケージに失敗のフラグを付け、再起動するようにシステムに指示します。|
 |`String`|省略可能。 この終了コードへの応答としてユーザーに表示される値。|
 |`FormatMessageFromSystem`|省略可能。 終了コードに対応するシステム指定のエラーメッセージを使用するか、に指定された値を使用するかを決定し `String` ます。 有効な値は `true` 、システムによって提供されるエラーとを使用することを意味し `false` ます。これは、によって提供される文字列を使用することを意味し `String` ます。 既定値は、`false` です。 このプロパティが `false` で、が設定されていない場合は、システムによって指定されたエラーが使用され `String` ます。|
 
@@ -203,6 +205,6 @@ ms.locfileid: "62900345"
 </Commands>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)
 - [\<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md)

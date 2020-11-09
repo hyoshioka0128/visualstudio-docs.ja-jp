@@ -1,5 +1,7 @@
 ---
 title: '&lt;assembly &gt; 要素 (ClickOnce 配置) |Microsoft Docs'
+description: Assembly 要素はルート要素であり、ClickOnce 配置に必要です。 最初に含まれる要素は、assemblyIdentity 要素である必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929074"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383236"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly &gt; 要素 (ClickOnce 配置)
 配置マニフェストの最上位要素。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```
@@ -42,7 +44,7 @@ ms.locfileid: "62929074"
 
 |属性|説明|
 |---------------|-----------------|
-|`manifestVersion`|必須です。 この属性は、に設定する必要があり `1.0` ます。|
+|`manifestVersion`|必須。 この属性は、に設定する必要があり `1.0` ます。|
 
 ## <a name="example"></a>例
  次のコード例は、 `assembly` を使用して配置されたアプリケーションの配置マニフェストの要素を示してい [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 このコード例は、「 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md) 」で提供されている、より大きな例の一部です。
@@ -62,6 +64,6 @@ ms.locfileid: "62929074"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
 - [\<assembly> element](../deployment/assembly-element-clickonce-application.md)

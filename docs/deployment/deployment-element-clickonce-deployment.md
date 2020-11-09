@@ -1,5 +1,7 @@
 ---
 title: '&lt;deployment &gt; 要素 (ClickOnce 配置) |Microsoft Docs'
+description: Deployment 要素は、更新の展開およびシステムへの公開に使用される属性を識別します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70887856"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382859"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;deployment &gt; 要素 (ClickOnce 配置)
 更新プログラムの配置とシステムへの公開に使用される属性を指定します。
@@ -62,7 +64,7 @@ ms.locfileid: "70887856"
 
 | 属性 | 説明 |
 |--------------------------| - |
-| `install` | 必須。 このアプリケーションが Windows の [ **スタート** ] メニューと [コントロールパネル] の [ **プログラムの追加と削除** ] アプリケーションでプレゼンスを定義するかどうかを指定します。 有効な値は、`true`、`false` です。 `false`の場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は常に、このアプリケーションの最新バージョンをネットワークから実行し、要素を認識しません `subscription` 。 |
+| `install` | 必須。 このアプリケーションが Windows の [ **スタート** ] メニューと [コントロールパネル] の [ **プログラムの追加と削除** ] アプリケーションでプレゼンスを定義するかどうかを指定します。 有効な値は `true` と `false` です。 `false`の場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は常に、このアプリケーションの最新バージョンをネットワークから実行し、要素を認識しません `subscription` 。 |
 | `minimumRequiredVersion` | 省略可能。 クライアントで実行できる、このアプリケーションの最小バージョンを指定します。 アプリケーションのバージョン番号が配置マニフェストで指定されたバージョン番号よりも小さい場合、アプリケーションは実行されません。 バージョン番号は、という形式で指定する必要があり `N.N.N.N` ます。ここで、 `N` は符号なし整数です。 属性がの場合、を設定することはでき `install` `false` `minimumRequiredVersion` ません。 |
 | `mapFileExtensions` | 省略可能。 既定値は `false` です。 の場合 `true` 、配置内のすべてのファイルに .deploy 拡張子が必要です。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は、これらのファイルを Web サーバーからダウンロードするとすぐに、この拡張機能を削除します。 を使用してアプリケーションを発行すると [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、この拡張機能がすべてのファイルに自動的に追加されます。 このパラメーターを使用すると、配置内のすべてのファイル [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] を Web サーバーからダウンロードして、.exe などの "安全でない" 拡張機能で終わるファイルの転送をブロックすることができます。 |
 | `disallowUrlActivation` | 省略可能。 既定値は `false` です。 `true`の場合、インストールされているアプリケーションは、url をクリックするか、Internet Explorer に url を入力することで起動できなくなります。 `install`属性が存在しない場合、この属性は無視されます。 |
@@ -100,7 +102,7 @@ ms.locfileid: "70887856"
 |------------| - |
 | `codebase` | 必須。 アプリケーションの更新に使用される配置マニフェストの場所を Uniform Resource Identifier (URI) で識別し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 また、この要素により、CD ベースのインストールの更新プログラムの場所も転送できます。 有効な URI である必要があります。 |
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]スタートアップ時に更新プログラムをスキャンしたり、起動後に更新プログラムをスキャンしたり、更新プログラムを確認したりしないようにアプリケーションを構成できます。 スタートアップ時に更新プログラムをスキャンするには、要素が要素の下に存在することを確認し `beforeApplicationStartup` `update` ます。 スタートアップ後に更新プログラムをスキャンするには、要素の `expiration` 下に要素が存在 `update` し、その更新間隔が指定されていることを確認します。
 
  更新プログラムの確認を無効にするには、要素を削除し `subscription` ます。 配置マニフェストで更新プログラムをスキャンしないように指定した場合でも、メソッドを使用して更新プログラムを手動で確認でき <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> ます。

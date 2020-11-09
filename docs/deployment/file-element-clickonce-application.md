@@ -1,5 +1,7 @@
 ---
 title: '&lt;file &gt; 要素 (ClickOnce アプリケーション) |Microsoft Docs'
+description: File 要素は、アプリケーションによってダウンロードおよび使用されるアセンブリ以外のすべてのファイルを識別します。 File 要素は省略可能です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,17 +24,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4d09d4a0e141359b066f2af31c158f36c96522
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900277"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382742"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file &gt; 要素 (ClickOnce アプリケーション)
 アプリケーションによってダウンロードおよび使用されるアセンブリ以外のすべてのファイルを識別します。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 <file
@@ -88,8 +90,8 @@ ms.locfileid: "62900277"
 
 |属性|説明|
 |---------------|-----------------|
-|`name`|必須です。 ファイルの名前を識別します。|
-|`size`|必須です。 ファイルのサイズをバイト単位で指定します。|
+|`name`|必須。 ファイルの名前を識別します。|
+|`size`|必須。 ファイルのサイズをバイト単位で指定します。|
 |`group`|属性が指定されていない場合、またはに設定されている場合は省略可能 `optional` `false` 。がの場合は必須。 `optional` `true` このファイルが属するグループの名前。 名前には、開発者が選択した任意の Unicode 文字列値を使用できます。また、クラスを使用して必要に応じてファイルをダウンロードするために使用され <xref:System.Deployment.Application.ApplicationDeployment> ます。|
 |`optional`|省略可能。 アプリケーションの初回実行時にこのファイルをダウンロードする必要があるかどうか、またはアプリケーションが要求時にファイルをサーバーにのみ配置するかどうかを指定します。 `false`または未定義の場合、アプリケーションを最初に実行またはインストールしたときに、ファイルがダウンロードされます。 の場合 `true` 、 `group` アプリケーションマニフェストが有効であるためにを指定する必要があります。 `optional``writeableType`が値と共に指定されている場合、を true にすることはできません `applicationData` 。|
 |`writeableType`|省略可能。 このファイルがデータファイルであることを指定します。 現在、有効値は `applicationData` のみです。|
@@ -99,9 +101,9 @@ ms.locfileid: "62900277"
 
 |属性|説明|
 |---------------|-----------------|
-|`tlbid`|必須です。 タイプライブラリに割り当てられた GUID。|
-|`version`|必須です。 タイプライブラリのバージョン番号。|
-|`helpdir`|必須です。 コンポーネントのヘルプファイルが格納されているディレクトリ。 長さをゼロにすることができます。|
+|`tlbid`|必須。 タイプライブラリに割り当てられた GUID。|
+|`version`|必須。 タイプライブラリのバージョン番号。|
+|`helpdir`|必須。 コンポーネントのヘルプファイルが格納されているディレクトリ。 長さをゼロにすることができます。|
 |`resourceid`|省略可能。 ロケール識別子 (LCID) の16進数文字列形式。 これは、0x プレフィックスのない 1 ~ 4 桁の16進数で、先頭に0を付けません。 LCID にニュートラルサブ言語識別子が含まれている場合があります。|
 |`flags`|省略可能。 このタイプライブラリのタイプライブラリフラグの文字列形式。 具体的には、"RESTRICTED"、"CONTROL"、"HIDDEN"、および "HASDISKIMAGE" のいずれかである必要があります。|
 
@@ -110,7 +112,7 @@ ms.locfileid: "62900277"
 
 |属性|説明|
 |---------------|-----------------|
-|`clsid`|必須です。 GUID として表される COM コンポーネントのクラス ID。|
+|`clsid`|必須。 GUID として表される COM コンポーネントのクラス ID。|
 |`description`|省略可能。 クラス名。|
 |`threadingModel`|省略可能。 インプロセス COM クラスによって使用されるスレッドモデル。 このプロパティが null の場合、スレッドモデルは使用されません。 コンポーネントはクライアントのメインスレッドで作成され、他のスレッドからの呼び出しはこのスレッドにマーシャリングされます。 有効な値を次の一覧に示します。<br /><br /> `Apartment`、`Free`、`Both`、`Neutral`。|
 |`tlbid`|省略可能。 この COM コンポーネントのタイプライブラリの GUID。|
@@ -126,7 +128,7 @@ ms.locfileid: "62900277"
 
 |属性|説明|
 |---------------|-----------------|
-|`iid`|必須です。 このプロキシによって提供されるインターフェイス ID (IID)。 IID の周囲には中かっこが必要です。|
+|`iid`|必須。 このプロキシによって提供されるインターフェイス ID (IID)。 IID の周囲には中かっこが必要です。|
 |`baseInterface`|省略可能。 によって参照されるインターフェイスの派生元であるインターフェイスの IID `iid` 。|
 |`numMethods`|省略可能。 インターフェイスによって実装されたメソッドの数。|
 |`name`|省略可能。 コードに表示されるインターフェイスの名前。|
@@ -138,7 +140,7 @@ ms.locfileid: "62900277"
 
 |属性|説明|
 |---------------|-----------------|
-|`iid`|必須です。 このプロキシによって提供されるインターフェイス ID (IID)。 IID の周囲には中かっこが必要です。|
+|`iid`|必須。 このプロキシによって提供されるインターフェイス ID (IID)。 IID の周囲には中かっこが必要です。|
 |`baseInterface`|省略可能。 によって参照されるインターフェイスの派生元であるインターフェイスの IID `iid` 。|
 |`numMethods`|省略可能。 インターフェイスによって実装されたメソッドの数。|
 |`Name`|省略可能。 コードに表示されるインターフェイスの名前。|
@@ -166,21 +168,21 @@ ms.locfileid: "62900277"
 ## <a name="dsigtransform"></a>dsig:Transform
  要素は、 `dsig:Transform` 要素の必須の子です `dsig:Transforms` 。 `dsig:Transform` 要素には、次の属性があります。
 
-| 属性 | 説明 |
+| 属性 | [説明] |
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストの計算に使用されるアルゴリズム。 現在、で使用されている値 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はのみ `urn:schemas-microsoft-com:HashTransforms.Identity` です。 |
 
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod
  要素は、 `dsig:DigestMethod` 要素の必須の子です `hash` 。 `dsig:DigestMethod` 要素には、次の属性があります。
 
-| 属性 | 説明 |
+| 属性 | [説明] |
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストの計算に使用されるアルゴリズム。 現在、で使用されている値 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はのみ `http://www.w3.org/2000/09/xmldsig#sha1` です。 |
 
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  要素は、 `dsig:DigestValue` 要素の必須の子です `hash` 。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定されたファイルの計算済みハッシュです。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>Remarks
  この要素は、アプリケーションを構成するすべての非アセンブリファイルと、特にファイル検証のハッシュ値を識別します。 この要素には、ファイルに関連付けられているコンポーネントオブジェクトモデル (COM) 分離データを含めることもできます。 ファイルが変更された場合は、アプリケーションマニフェストファイルを更新して変更を反映する必要もあります。
 
 ## <a name="example"></a>例
@@ -198,5 +200,5 @@ ms.locfileid: "62900277"
 </file>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
