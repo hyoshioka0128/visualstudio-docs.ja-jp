@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー TerminateWorkflow アクティビティデザイナー
+description: TerminateWorkflow アクティビティデザイナーを使用して、TerminateWorkflow アクティビティを作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078dfb43b5960580327448627a30eec20297d9f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5af1f8656e796d9551e1d140b07868551d563a90
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76111780"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433870"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow アクティビティ デザイナー
 
-**TerminateWorkflow**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.TerminateWorkflow> ます。
+**TerminateWorkflow** アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.TerminateWorkflow> ます。
 
 ## <a name="the-terminateworkflow-activity"></a>TerminateWorkflow アクティビティ
 
@@ -27,9 +29,9 @@ ms.locfileid: "76111780"
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>TerminateWorkflow アクティビティ デザイナーの使用
 
-**TerminateWorkflow**アクティビティデザイナーは、 **[ツールボックス**] の [**ランタイム**] カテゴリにあります。このカテゴリにアクセスするには、[**ツール**ボックス] タブをクリックします (または、[**表示**] メニューの [**ツールボックス**] を選択するか、CTRL + ALT + X キーを押します)。
+**TerminateWorkflow** アクティビティデザイナーは、 **[ツールボックス** ] の [ **ランタイム** ] カテゴリにあります。このカテゴリにアクセスするには、[ **ツール** ボックス] タブをクリックします (または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、CTRL + ALT + X キーを押します)。
 
-**TerminateWorkflow**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 これ <xref:System.Activities.Statements.TerminateWorkflow> により、TerminateWorkflow という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **TerminateWorkflow** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**TerminateWorkflow** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 これ <xref:System.Activities.Statements.TerminateWorkflow> により、TerminateWorkflow という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **TerminateWorkflow** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-terminateworkflow-properties"></a>TerminateWorkflow のプロパティ
 

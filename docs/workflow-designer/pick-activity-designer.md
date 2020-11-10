@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-Pick アクティビティデザイナー
+description: ピックアクティビティがイベントベースの制御フローを提供し、トリガーイベントに応答して複数の分岐のいずれか1つを実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9968a00a1e4530e22abe25819c9e3d5188bcefa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876035"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434247"
 ---
 # <a name="pick-activity-designer"></a>Pick アクティビティ デザイナー
 
@@ -27,9 +29,9 @@ ms.locfileid: "86876035"
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Pick アクティビティ デザイナーの使用方法
 
-[**ツールボックス**] の [**制御フロー** ] カテゴリにある**Pick**アクティビティデザイナーにアクセスします。 **Pick**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence**アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.Pick> れます。このアクティビティには、既定で、 <xref:System.Activities.Statements.PickBranch> Branch1 と Branch2 の表示名を持つ要素として2つの空のアクティビティが含まれます。 これらの <xref:System.Activities.Statements.PickBranch.DisplayName%2A> プロパティ値は、各分岐の**PickBranch** [**プロパティ**] ウィンドウ内で、または分岐アクティビティデザイナーヘッダーで編集できます。
+[ **ツールボックス** ] の [ **制御フロー** ] カテゴリにある **Pick** アクティビティデザイナーにアクセスします。 **Pick** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence** アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.Pick> れます。このアクティビティには、既定で、 <xref:System.Activities.Statements.PickBranch> Branch1 と Branch2 の表示名を持つ要素として2つの空のアクティビティが含まれます。 これらの <xref:System.Activities.Statements.PickBranch.DisplayName%2A> プロパティ値は、各分岐の **PickBranch** [ **プロパティ** ] ウィンドウ内で、または分岐アクティビティデザイナーヘッダーで編集できます。
 
-オブジェクトのコレクションにアクティビティを追加するには、 <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> [**ツールボックス**] から [ピックアップ**分岐**] デザイナーをドラッグアンドドロップする方法と、 **Pick**デザイン画面内から右クリックメニューを使用する方法の2つの方法があります。 詳細については、「 [ピック分岐](../workflow-designer/pickbranch-activity-designer.md) 」を参照してください。 Pick アクティビティデザイナー内に配置できる項目は、 **Pick** **branch** アクティビティデザイナーのみであることに注意してください。
+オブジェクトのコレクションにアクティビティを追加するには、 <xref:System.Activities.Statements.PickBranch> <xref:System.Activities.Statements.Pick> [ **ツールボックス** ] から [ピックアップ **分岐** ] デザイナーをドラッグアンドドロップする方法と、 **Pick** デザイン画面内から右クリックメニューを使用する方法の2つの方法があります。 詳細については、「 [ピック分岐](../workflow-designer/pickbranch-activity-designer.md) 」を参照してください。 Pick アクティビティデザイナー内に配置できる項目は、 **Pick** **branch** アクティビティデザイナーのみであることに注意してください。
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの Pick アクティビティのプロパティ
 

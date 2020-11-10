@@ -1,5 +1,7 @@
 ---
 title: 階層更新
+description: 参照整合性ルールを維持したまま、更新されたデータ (2 つ以上の関連テーブルを持つデータセットから) を DB に保存する階層更新を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586576"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435157"
 ---
 # <a name="hierarchical-update"></a>階層更新
 
@@ -34,17 +36,17 @@ ms.locfileid: "75586576"
 
 階層更新機能では、を使用し `TableAdapterManager` て、 `TableAdapter` 型指定されたデータセットのを管理します。 `TableAdapterManager`コンポーネントは、.net 型ではなく、Visual Studio で生成されたクラスです。 [ **データソース** ] ウィンドウから Windows フォームまたは WPF ページにテーブルをドラッグすると、Visual Studio によって TableAdapterManager 型の変数がフォームまたはページに追加され、コンポーネントトレイのデザイナーに表示されます。 クラスの詳細については `TableAdapterManager` 、「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」の「TableAdapterManager Reference」セクションを参照してください。
 
-既定では、データセットは関連テーブルを "リレーションのみ" として扱います。これは、外部キー制約が適用されないことを意味します。 この設定は、デザイン時に **データセットデザイナー**を使用して変更できます。 2つのテーブル間のリレーション線を選択して、[ **リレーションシップ** ] ダイアログボックスを表示します。 ここで行った変更によって、 `TableAdapterManager` 関連テーブルの変更をデータベースに送信するときのの動作が決まります。
+既定では、データセットは関連テーブルを "リレーションのみ" として扱います。これは、外部キー制約が適用されないことを意味します。 この設定は、デザイン時に **データセットデザイナー** を使用して変更できます。 2つのテーブル間のリレーション線を選択して、[ **リレーションシップ** ] ダイアログボックスを表示します。 ここで行った変更によって、 `TableAdapterManager` 関連テーブルの変更をデータベースに送信するときのの動作が決まります。
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>データセットの階層更新を有効にする
 
-プロジェクトで追加または作成されたすべての新しいデータセットでは、階層更新が既定で有効になっています。 データセット内の型指定されたデータセットの " **階層更新** " プロパティを **True** または **False**に設定して、階層更新をオンまたはオフにします。
+プロジェクトで追加または作成されたすべての新しいデータセットでは、階層更新が既定で有効になっています。 データセット内の型指定されたデータセットの " **階層更新** " プロパティを **True** または **False** に設定して、階層更新をオンまたはオフにします。
 
 ![階層更新の設定](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>テーブル間に新しいリレーションシップを作成する
 
-2つのテーブル間の新しいリレーションシップを作成するには、データセットデザイナーで各テーブルのタイトルバーを選択し、右クリックして [ **リレーションシップの追加**] を選択します。
+2つのテーブル間の新しいリレーションシップを作成するには、データセットデザイナーで各テーブルのタイトルバーを選択し、右クリックして [ **リレーションシップの追加** ] を選択します。
 
 ![階層更新の [リレーションシップの追加] メニュー](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
@@ -83,7 +85,7 @@ ms.locfileid: "75586576"
 生成された保存コードには、`CustomersBindingSource.EndEdit` メソッドを呼び出すコード行も含まれています。 具体的には、 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> <xref:System.Windows.Forms.BindingSource> フォームに追加されている最初ののメソッドを呼び出します。 言い換えると、このコードは [ **データソース** ] ウィンドウからフォームにドラッグされた最初のテーブルに対してのみ生成されます。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは、現在編集中のデータ バインド コントロールで実行されている変更をコミットします。 したがって、あるデータ バインド コントロールにフォーカスがある状態で **[保存]** ボタンをクリックすると、実際の保存 (`TableAdapterManager.UpdateAll` メソッド) が実行される前に、そのコントロール内のすべての保留中の編集がコミットされます。
 
 > [!NOTE]
-> **データセットデザイナー**は、 `BindingSource.EndEdit` フォームにドロップされた最初のテーブルのコードのみを追加します。 したがって、フォーム上の各関連テーブルに対して、`BindingSource.EndEdit` メソッドを呼び出すコード行を手動で追加する必要があります。 つまり、このチュートリアルでも、`OrdersBindingSource.EndEdit` メソッドの呼び出しを追加する必要があります。
+> **データセットデザイナー** は、 `BindingSource.EndEdit` フォームにドロップされた最初のテーブルのコードのみを追加します。 したがって、フォーム上の各関連テーブルに対して、`BindingSource.EndEdit` メソッドを呼び出すコード行を手動で追加する必要があります。 つまり、このチュートリアルでも、`OrdersBindingSource.EndEdit` メソッドの呼び出しを追加する必要があります。
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>保存前に、関連テーブルへの変更をコミットするコードを更新するには
 
@@ -103,7 +105,7 @@ ms.locfileid: "75586576"
 
 1. `OrdersBindingSource.AddingNew` イベントのイベント ハンドラーを作成します。
 
-    - デザインビューで**Form1**を開き、コンポーネントトレイで [ **OrdersBindingSource** ] を選択します。次に、[**プロパティ**] ウィンドウで [**イベント**] を選択し、[**追加**] イベントをダブルクリックします。
+    - デザインビューで **Form1** を開き、コンポーネントトレイで [ **OrdersBindingSource** ] を選択します。次に、[ **プロパティ** ] ウィンドウで [ **イベント** ] を選択し、[ **追加** ] イベントをダブルクリックします。
 
 2. メソッドを呼び出すイベントハンドラーにコード行を追加 `CustomersBindingSource.EndEdit` します。 `OrdersBindingSource_AddingNew` イベント ハンドラー内のコードは、次のようになります。
 
@@ -123,8 +125,8 @@ ms.locfileid: "75586576"
 |`UpdateAll` メソッド|すべてのデータテーブルのすべてのデータを保存します。|
 |`BackUpDataSetBeforeUpdate` プロパティ|メソッドを実行する前に、データセットのバックアップコピーを作成するかどうかを決定し `TableAdapterManager.UpdateAll` ます。演算.|
 |*tableName* `TableAdapter` "|を表し `TableAdapter` ます。 生成されたには、 `TableAdapterManager` 各 it が管理するのプロパティが含まれてい `TableAdapter` ます。 たとえば、Customers テーブルと Orders テーブルを含むデータセットは、プロパティとプロパティを含むを使用して生成され `TableAdapterManager` `CustomersTableAdapter` `OrdersTableAdapter` ます。|
-|`UpdateOrder` プロパティ|個々の insert、update、および delete コマンドの順序を制御します。 列挙体のいずれかの値に設定 `TableAdapterManager.UpdateOrderOption` します。<br /><br /> 既定では、 `UpdateOrder` は **Insertupdatedelete**に設定されています。 これは、データセット内のすべてのテーブルに対して、挿入、更新、および削除が実行されることを意味します。|
+|`UpdateOrder` プロパティ|個々の insert、update、および delete コマンドの順序を制御します。 列挙体のいずれかの値に設定 `TableAdapterManager.UpdateOrderOption` します。<br /><br /> 既定では、 `UpdateOrder` は **Insertupdatedelete** に設定されています。 これは、データセット内のすべてのテーブルに対して、挿入、更新、および削除が実行されることを意味します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)

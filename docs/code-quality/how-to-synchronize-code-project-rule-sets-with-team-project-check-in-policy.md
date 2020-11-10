@@ -1,6 +1,8 @@
 ---
 title: チェックインポリシーを使用してプロジェクト規則セットを同期する
 ms.date: 11/04/2016
+description: Azure DevOps プロジェクトのチェックインポリシーを使用して Visual Studio code プロジェクト規則セットを同期する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371782"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434689"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトのチェックインポリシーを使用してコードプロジェクト規則セットを同期する
 
@@ -31,7 +33,7 @@ ms.locfileid: "85371782"
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Microsoft 標準規則セットを指定するには
 
-1. **ソリューションエクスプローラー**で、コードプロジェクトを右クリックし、[**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** で、コードプロジェクトを右クリックし、[ **プロパティ** ] をクリックします。
 
 2. **[コード分析]** をクリックします。
 
@@ -51,7 +53,7 @@ ms.locfileid: "85371782"
 
 1. 必要に応じて、チェックインポリシーを指定するルールセットファイルに対して get 操作を実行します。
 
-2. **ソリューションエクスプローラー**で、コードプロジェクトを右クリックし、[**プロパティ**] をクリックします。
+2. **ソリューションエクスプローラー** で、コードプロジェクトを右クリックし、[ **プロパティ** ] をクリックします。
 
 3. **[コード分析]** をクリックします。
 

@@ -1,5 +1,7 @@
 ---
 title: データセットの作成と構成
+description: Visual Studio でデータセットを作成および構成します。 データセットは、メモリ内のデータベースのデータを格納し、そのデータに対する CRUD 操作をサポートするオブジェクトのセットです。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,22 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a9a10d68b5b0617b5c4e2152cbbbb920a7c683f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282749"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435405"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>方法: Visual Studio でデータセットを作成および構成する
 
 データセットは、メモリ内のデータベースのデータを格納するオブジェクトのセットであり、データベースに常に接続する必要がなく、そのデータに対する作成、読み取り、更新、および削除 (CRUD) 操作を可能にするための変更の追跡をサポートします。 データセットは、データビジネスアプリケーションに対して単純な *形式* を使用するように設計されています。 新しいアプリケーションの場合は、Entity Framework を使用して、メモリにデータを格納およびモデル化することを検討してください。 データセットを操作するには、データベースの概念に関する基本的な知識が必要です。
 
-<xref:System.Data.DataSet>**データソース構成ウィザード**を使用して、デザイン時に Visual Studio で型指定されたクラスを作成できます。 プログラムによるデータセットの作成の詳細については、「 [データセットの作成」 (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset)を参照してください。
+<xref:System.Data.DataSet>**データソース構成ウィザード** を使用して、デザイン時に Visual Studio で型指定されたクラスを作成できます。 プログラムによるデータセットの作成の詳細については、「 [データセットの作成」 (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset)を参照してください。
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>データソース構成ウィザードを使用して新しいデータセットを作成する
 
-1. Visual Studio でプロジェクトを開き、[**プロジェクト**] [  >  **新しいデータソースの追加**] の順に選択して、**データソース構成ウィザード**を開始します。
+1. Visual Studio でプロジェクトを開き、[ **プロジェクト** ] [  >  **新しいデータソースの追加** ] の順に選択して、 **データソース構成ウィザード** を開始します。
 
 2. 接続するデータソースの種類を選択します。
 
@@ -42,11 +44,11 @@ ms.locfileid: "85282749"
 
 5. **[完了]** をクリックします。
 
-   データセットは **ソリューションエクスプローラー**のノードとして表示されます。
+   データセットは **ソリューションエクスプローラー** のノードとして表示されます。
 
    ![ソリューションエクスプローラー内のデータセット](../data-tools/media/dataset-in-solution-explorer.png)
 
-6. データセット**デザイナー**でデータセットを開くには、**ソリューションエクスプローラー**の [データセット] ノードをクリックします。 データセット内の各テーブルには、オブジェクトが関連付けられてい `TableAdapter` ます。これは下部に表示されます。 テーブルアダプターは、データセットを設定し、必要に応じてデータベースにコマンドを送信するために使用されます。
+6. データセット **デザイナー** でデータセットを開くには、 **ソリューションエクスプローラー** の [データセット] ノードをクリックします。 データセット内の各テーブルには、オブジェクトが関連付けられてい `TableAdapter` ます。これは下部に表示されます。 テーブルアダプターは、データセットを設定し、必要に応じてデータベースにコマンドを送信するために使用されます。
 
    ![データセット デザイナー](../data-tools/media/dataset-designer.png)
 
@@ -62,17 +64,17 @@ ms.locfileid: "85282749"
 
      ![データセットツールボックス](../data-tools/media/raddata-dataset-toolbox.png)
 
-次に、データセットにデータを設定する方法を指定します。 そのためには、 **TableAdapter 構成ウィザード**を使用します。 詳細については、「 [tableadapter を使用したデータセットの読み込み](../data-tools/fill-datasets-by-using-tableadapters.md)」を参照してください。
+次に、データセットにデータを設定する方法を指定します。 そのためには、 **TableAdapter 構成ウィザード** を使用します。 詳細については、「 [tableadapter を使用したデータセットの読み込み](../data-tools/fill-datasets-by-using-tableadapters.md)」を参照してください。
 
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>データベーステーブルまたはその他のオブジェクトを既存のデータセットに追加する
 
 この手順では、最初にデータセットを作成するときに使用したものと同じデータベースからテーブルを追加する方法を示します。
 
-1. **データセットデザイナー**でフォーカスを移動するには、**ソリューションエクスプローラー**の [データセット] ノードをクリックします。
+1. **データセットデザイナー** でフォーカスを移動するには、 **ソリューションエクスプローラー** の [データセット] ノードをクリックします。
 
 2. Visual Studio の左側の余白の [ **データソース** ] タブをクリックするか、検索ボックスに「 **データソース** 」と入力します。
 
-3. [データセット] ノードを右クリックし、[ **ウィザードでデータソースを構成する**] を選択します。
+3. [データセット] ノードを右クリックし、[ **ウィザードでデータソースを構成する** ] を選択します。
 
      ![データソースのコンテキストメニュー](../data-tools/media/data-source-context-menu.png)
 
@@ -80,17 +82,17 @@ ms.locfileid: "85282749"
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>データセットへのスタンドアロンデータテーブルの追加
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。
+1. **データセット デザイナー** でご自分のデータセットを開きます。
 
-2. <xref:System.Data.DataTable>**ツールボックス**の [**データセット**] タブから**データセットデザイナー**にクラスをドラッグします。
+2. <xref:System.Data.DataTable>**ツールボックス** の [ **データセット** ] タブから **データセットデザイナー** にクラスをドラッグします。
 
-3. 列を追加してデータ テーブルを定義します。 テーブルを右クリックし、[列の**追加**] を選択し  >  **Column**ます。 必要に応じて、[ **プロパティ** ] ウィンドウを使用して、列のデータ型とキーを設定します。
+3. 列を追加してデータ テーブルを定義します。 テーブルを右クリックし、[列の **追加** ] を選択し  >  **Column** ます。 必要に応じて、[ **プロパティ** ] ウィンドウを使用して、列のデータ型とキーを設定します。
 
 スタンドアロンテーブル `Fill` では、データを格納できるように、スタンドアロンテーブルにロジックを実装する必要があります。 スタンドアロンデータテーブルを入力する方法については、「 [DataAdapter からのデータセットの読み込み](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
 - [データセットのリレーションシップ](../data-tools/relationships-in-datasets.md)
 - [階層更新](../data-tools/hierarchical-update.md)
 - [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)

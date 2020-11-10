@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-While アクティビティデザイナー
+description: While アクティビティが本文に含まれるアクティビティを実行し、指定した条件が true と評価される方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77954925533c51885a056f7156121e68851ad769
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115170"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433701"
 ---
 # <a name="while-activity-designer"></a>While アクティビティ デザイナー
 
-アクティビティは、 <xref:System.Activities.Statements.While> に含まれるアクティビティを実行し、 <xref:System.Activities.Statements.While.Body%2A> 指定されたは <xref:System.Activities.Statements.While.Condition%2A> **true**に評価されます。 場合によっては、含まれているアクティビティが実行されない可能性があります。 含まれているアクティビティを少なくとも 1 回は実行する必要がある場合は、<xref:System.Activities.Statements.DoWhile> アクティビティを代わりに使用します。
+アクティビティは、 <xref:System.Activities.Statements.While> に含まれるアクティビティを実行し、 <xref:System.Activities.Statements.While.Body%2A> 指定されたは <xref:System.Activities.Statements.While.Condition%2A> **true** に評価されます。 場合によっては、含まれているアクティビティが実行されない可能性があります。 含まれているアクティビティを少なくとも 1 回は実行する必要がある場合は、<xref:System.Activities.Statements.DoWhile> アクティビティを代わりに使用します。
 
 ## <a name="while-properties-in-workflow-designer"></a>ワークフロー デザイナーでの While のプロパティ
 

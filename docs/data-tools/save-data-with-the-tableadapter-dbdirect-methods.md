@@ -1,5 +1,7 @@
 ---
 title: TableAdapter DBDirect メソッドを使用してデータを保存する
+description: このチュートリアルでは、TableAdapter の DBDirect メソッドを使用して、データベースに対して SQL ステートメントを直接実行します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281610"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434572"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect メソッドを使用してデータを保存する
 
@@ -29,7 +31,7 @@ ms.locfileid: "85281610"
 
 このチュートリアルでは、次の作業を行う方法について説明します。
 
-- 新しい **Windows フォームアプリケーション**を作成します。
+- 新しい **Windows フォームアプリケーション** を作成します。
 
 - [データソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)を使用して、データセットを作成および構成します。
 
@@ -43,11 +45,11 @@ ms.locfileid: "85281610"
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、 **データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -59,31 +61,31 @@ ms.locfileid: "85281610"
 
 ## <a name="create-a-windows-forms-application"></a>Windows フォーム アプリケーションを作成する
 
-最初の手順では、 **Windows フォームアプリケーション**を作成します。
+最初の手順では、 **Windows フォームアプリケーション** を作成します。
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ** ] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
-4. プロジェクトに **TableAdapterDbDirectMethodsWalkthrough**という名前を入力し、[ **OK]** をクリックします。
+4. プロジェクトに **TableAdapterDbDirectMethodsWalkthrough** という名前を入力し、[ **OK]** をクリックします。
 
-     **TableAdapterDbDirectMethodsWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。
+     **TableAdapterDbDirectMethodsWalkthrough** プロジェクトが作成されて **ソリューション エクスプローラー** に追加されます。
 
 ## <a name="create-a-data-source-from-your-database"></a>データベースからデータソースを作成する
 
-この手順では、**データ ソース構成ウィザード**を使用して、Northwind サンプル データベースの `Region` テーブルに基づいてデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースの設定の詳細については、「 [方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
+この手順では、 **データ ソース構成ウィザード** を使用して、Northwind サンプル データベースの `Region` テーブルに基づいてデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースの設定の詳細については、「 [方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
 
-1. [ **データ** ] メニューの [ **データソースの表示**] をクリックします。
+1. **[データ]** メニューで、 **[データ ソースの表示]** を選択します。
 
    **[データ ソース]** ウィンドウが開きます。
 
-2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード**を開始します。
+2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード** を開始します。
 
-3. [ **データソースの種類を選択** ] 画面で、[ **データベース**] を選択し、[ **次へ**] を選択します。
+3. [ **データソースの種類を選択** ] 画面で、[ **データベース** ] を選択し、[ **次へ** ] を選択します。
 
 4. [ **データ接続の選択** ] 画面で、次のいずれかの操作を行います。
 
@@ -93,27 +95,27 @@ ms.locfileid: "85281610"
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ**] を選択します。
+5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ** ] を選択します。
 
-6. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ**] を選択します。
+6. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ** ] を選択します。
 
 7. [ **データベースオブジェクトの選択** ] 画面で、[ **テーブル** ] ノードを展開します。
 
-8. テーブルを選択し、[ `Region` **完了**] を選択します。
+8. テーブルを選択し、[ `Region` **完了** ] を選択します。
 
-     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Region` テーブルが表示されます。
+     プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Region` テーブルが表示されます。
 
 ## <a name="add-controls-to-the-form-to-display-the-data"></a>フォームにコントロールを追加してデータを表示する
 
 **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
-Windows フォームにデータバインドコントロールを作成するには、[**データソース**] ウィンドウからフォームにメイン**領域**ノードをドラッグします。
+Windows フォームにデータバインドコントロールを作成するには、[ **データソース** ] ウィンドウからフォームにメイン **領域** ノードをドラッグします。
 
 レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 コンポーネントトレイには、 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> 、およびが <xref:System.Windows.Forms.BindingNavigator> 表示されます。
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>個々の TableAdapter DbDirect メソッドを呼び出すボタンを追加するには
 
-1. **ツールボックス**から 3 つの <xref:System.Windows.Forms.Button> コントロールを **RegionDataGridView** の下の **Form1** にドラッグします。
+1. **ツールボックス** から 3 つの <xref:System.Windows.Forms.Button> コントロールを **RegionDataGridView** の下の **Form1** にドラッグします。
 
 2. 各ボタンの **[名前]** および **[テキスト]** プロパティを設定します。
 
@@ -152,7 +154,7 @@ Windows フォームにデータバインドコントロールを作成するに
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-- **F5 キーを押し**てアプリケーションを実行します。
+- **F5 キーを押し** てアプリケーションを実行します。
 
 - [ **挿入** ] ボタンを選択し、新しいレコードがグリッドに表示されていることを確認します。
 

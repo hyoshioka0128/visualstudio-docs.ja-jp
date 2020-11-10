@@ -1,5 +1,7 @@
 ---
 title: データベースの互換性
+description: Microsoft SQL Server、Oracle、MySQL、PostgreSQL、SQLite、Firebird など、Visual Studio の互換性のあるデータベースシステムを確認します。
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfc3b6c3adc5c51cbbc4bc7d91338fd3595ec372
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586407"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434856"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio 向けの互換性のあるデータベース システム
 
@@ -39,15 +41,15 @@ Oracle データベースの有料または無料のエディションは、 [or
 
 ## <a name="mysql"></a>MySQL
 
-MySQL は、企業や web サイトで広く使用されている、広く普及しているオープンソースのデータベースシステムです。 Mysql、mysql for Visual Studio、および関連製品のダウンロードは、 [Windows 上の mysql](https://www.mysql.com/why-mysql/windows/)にあります。 サードパーティは、さまざまな Visual Studio 拡張機能と、MySQL 用のスタンドアロン管理アプリケーションを提供します。 Nuget パッケージマネージャー ([**ツール**] [  >  **nuget パッケージマネージャー**] [  >  **ソリューションの nuget パッケージの管理**]) でオファリングを参照できます。
+MySQL は、企業や web サイトで広く使用されている、広く普及しているオープンソースのデータベースシステムです。 Mysql、mysql for Visual Studio、および関連製品のダウンロードは、 [Windows 上の mysql](https://www.mysql.com/why-mysql/windows/)にあります。 サードパーティは、さまざまな Visual Studio 拡張機能と、MySQL 用のスタンドアロン管理アプリケーションを提供します。 Nuget パッケージマネージャー ([ **ツール** ] [  >  **nuget パッケージマネージャー** ] [  >  **ソリューションの nuget パッケージの管理** ]) でオファリングを参照できます。
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL は、オープンソースの無料のオブジェクトリレーショナルデータベースシステムです。 Windows にインストールするには、 [PostgreSQL のダウンロードページ](https://www.postgresql.org/download/windows/)からダウンロードできます。 また、ソースコードから PostgreSQL を構築することもできます。 PostgreSQL コアシステムには、C 言語インターフェイスが含まれています。 多くのサードパーティは、.NET アプリケーションから PostgreSQL を使用するための NuGet パッケージを提供しています。 Nuget パッケージマネージャー ([**ツール**] [  >  **nuget パッケージマネージャー**] [  >  **ソリューションの nuget パッケージの管理**]) でオファリングを参照できます。 おそらく、最も一般的なパッケージは [npgsql.org](http://www.npgsql.org)によって提供されます。
+PostgreSQL は、オープンソースの無料のオブジェクトリレーショナルデータベースシステムです。 Windows にインストールするには、 [PostgreSQL のダウンロードページ](https://www.postgresql.org/download/windows/)からダウンロードできます。 また、ソースコードから PostgreSQL を構築することもできます。 PostgreSQL コアシステムには、C 言語インターフェイスが含まれています。 多くのサードパーティは、.NET アプリケーションから PostgreSQL を使用するための NuGet パッケージを提供しています。 Nuget パッケージマネージャー ([ **ツール** ] [  >  **nuget パッケージマネージャー** ] [  >  **ソリューションの nuget パッケージの管理** ]) でオファリングを参照できます。 おそらく、最も一般的なパッケージは [npgsql.org](http://www.npgsql.org)によって提供されます。
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite は、アプリケーション独自のプロセスで実行される埋め込みの SQL データベースエンジンです。 これは、 [SQLite ダウンロードページ](https://www.sqlite.org/download.html)からダウンロードできます。 SQLite 用のサードパーティ製の NuGet パッケージも多数用意されています。 Nuget パッケージマネージャー ([**ツール**] [  >  **nuget パッケージマネージャー**] [  >  **ソリューションの nuget パッケージの管理**]) でオファリングを参照できます。
+SQLite は、アプリケーション独自のプロセスで実行される埋め込みの SQL データベースエンジンです。 これは、 [SQLite ダウンロードページ](https://www.sqlite.org/download.html)からダウンロードできます。 SQLite 用のサードパーティ製の NuGet パッケージも多数用意されています。 Nuget パッケージマネージャー ([ **ツール** ] [  >  **nuget パッケージマネージャー** ] [  >  **ソリューションの nuget パッケージの管理** ]) でオファリングを参照できます。
 
 ## <a name="firebird"></a>Firebird
 

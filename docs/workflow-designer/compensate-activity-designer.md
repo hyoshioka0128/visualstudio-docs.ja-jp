@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-Compensate アクティビティデザイナー
+description: Compensate アクティビティデザイナーについて、および compensate アクティビティデザイナーを使用して補正アクティビティを作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5332b6d9ec087f4e1b127d93563dc0f2fe5fdd15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876152"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434325"
 ---
 # <a name="compensate-activity-designer"></a>Compensate アクティビティ デザイナー
 
-**Compensate**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Compensate> ます。
+**Compensate** アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Compensate> ます。
 
 ## <a name="the-compensate-activity"></a>Compensate アクティビティ
 
@@ -29,9 +31,9 @@ ms.locfileid: "86876152"
 
 ### <a name="using-the-compensate-activity-designer"></a>Compensate アクティビティ デザイナーの使用
 
-**Compensate**アクティビティデザイナーは、**ツールボックス**の [**トランザクション**] カテゴリにあります。 **ツールボックス**を開くには、ワークフローデザイナーの左側にある [**ツールボックス**] タブを選択します。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X**キーを押します。
+**Compensate** アクティビティデザイナーは、 **ツールボックス** の [ **トランザクション** ] カテゴリにあります。 **ツールボックス** を開くには、ワークフローデザイナーの左側にある [ **ツールボックス** ] タブを選択します。 または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
 
-**Compensate**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Compensate> と、補正の既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 この <xref:System.Activities.Activity.DisplayName%2A> 値は、 **補正** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**Compensate** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Compensate> と、補正の既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 この <xref:System.Activities.Activity.DisplayName%2A> 値は、 **補正** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-compensate-properties"></a>Compensate のプロパティ
 
@@ -47,5 +49,5 @@ ms.locfileid: "86876152"
 - [トランザクション](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate アクティビティ デザイナー](../workflow-designer/compensate-activity-designer.md)
-- [確認](../workflow-designer/confirm-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
