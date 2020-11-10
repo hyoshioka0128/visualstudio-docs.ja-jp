@@ -32,8 +32,6 @@
   items:
     - name: IDE の外観のカスタマイズ
       href: customizing-the-ide.md
-    - name: Visual Studio for Mac の拡張
-      href: extending-visual-studio-mac.md
 - name: プロジェクトおよびソリューション
   items:
     - name: 概要
