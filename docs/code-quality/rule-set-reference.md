@@ -1,6 +1,8 @@
 ---
 title: コード分析規則セットの参照
 ms.date: 04/04/2018
+description: Visual Studio レガシコード分析での組み込みの規則セットについて説明します。 「ルールセットのリソース」を参照してください。 これらのセットの使用方法については、「カスタマイズされた規則セット」を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
@@ -9,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc025a3ff096e560cc2bd5a135f370e89dba2f9e
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ce5b7f2ecdc854269288c61eaeee6d46b4a74d91
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860463"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436980"
 ---
 # <a name="code-analysis-rule-set-reference"></a>コード分析規則セットの参照
 
-Visual Studio でマネージコードプロジェクトのレガシ分析を構成する場合は、組み込みの *規則セット*の一覧から選択できます。 規則によっては、組み込みの規則セットのうちの1つ以上に含まれるものがあります。たとえば、"基本正確性規則" 規則セットには、"マネージ推奨規則" 規則セット内の規則が含まれます。
+Visual Studio でマネージコードプロジェクトのレガシ分析を構成する場合は、組み込みの *規則セット* の一覧から選択できます。 規則によっては、組み込みの規則セットのうちの1つ以上に含まれるものがあります。たとえば、"基本正確性規則" 規則セットには、"マネージ推奨規則" 規則セット内の規則が含まれます。
 
 > [!NOTE]
 > このセクションのルールセットは、従来の分析に関連しています。 コードアナライザーパッケージで使用できる規則セットの詳細については、「 [コードアナライザーでの規則セットの使用](/dotnet/fundamentals/code-analysis/code-quality-rule-options)」を参照してください。
@@ -34,11 +36,11 @@ Visual Studio でマネージコードプロジェクトのレガシ分析を構
 | [拡張正確性規則](extended-correctness-rules-rule-set-for-managed-code.md) | 基本的な正確性規則 (マネージ推奨規則を含む) に加えて、ロジックエラーとフレームワークの使用に関する規則が追加されます。 |
 | [基本デザイン ガイドライン規則](basic-design-guideline-rules-rule-set-for-managed-code.md) | マネージ推奨規則と、コードの読み取り、理解、保守を容易にするための規則が含まれています。 |
 | [拡張デザイン ガイドライン規則](extended-design-guidelines-rules-rule-set-for-managed-code.md) | 基本的な設計ガイドライン規則 (推奨されるマネージ規則を含む) に加えて、名前付けに重点を置いた保守容易性の規則が含まれています。 |
-| [[グローバリゼーション規則]](globalization-rules-rule-set-for-managed-code.md) | グローバリゼーションの問題に関する規則が含まれています |
+| [グローバリゼーションルール](globalization-rules-rule-set-for-managed-code.md) | グローバリゼーションの問題に関する規則が含まれています |
 | [マネージド最小規則](managed-minimum-rules-rule-set-for-managed-code.md) | 重大なマネージコードの問題に対して4つの規則が含まれています |
 | [マネージド推奨規則](managed-recommended-rules-rule-set-for-managed-code.md) | マネージ最小規則に加えて、重大なマネージコードの問題に関する規則を追加します。 |
 | [混合最小規則](mixed-minimum-rules-rule-set.md) | CLR の C++ コードでの重大な問題に関する規則が含まれています |
 | [混合推奨規則](mixed-recommended-rules-rule-set.md) | CLR の C++ コードでの、混合最小ルールと重大な問題に対するルールの追加が含まれます。 |
 | [ネイティブ最小規則](native-minimum-rules-rule-set.md) | ネイティブコードでの重大な問題に関する規則が含まれています |
 | [ネイティブ推奨規則](native-recommended-rules-rule-set.md) | ネイティブの最小規則に加え、ネイティブコードの重大な問題に関する規則が追加されます。 |
-| [[セキュリティ規則]](security-rules-rule-set-for-managed-code.md) | セキュリティの脆弱性を検出するための規則が含まれています |
+| [セキュリティ規則](security-rules-rule-set-for-managed-code.md) | セキュリティの脆弱性を検出するための規則が含まれています |

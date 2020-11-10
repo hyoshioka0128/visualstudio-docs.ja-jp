@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5618a8996b9858f0799f2a359573d5b7b9da1ce9
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383158"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437605"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>ClickOnce の更新方法の選択
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、アプリケーションを自動的に更新できます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、配置マニフェスト ファイルを定期的に読み取り、アプリケーションに対する更新が利用可能かどうかを確認します。 利用可能であれば、アプリケーションの新しいバージョンがダウンロードされて実行されます。 効率性を高めるために、変更されたファイルだけがダウンロードされます。
@@ -73,6 +73,8 @@ ms.locfileid: "94383158"
    </update>
 </subscription>
 ```
+> [!NOTE]
+> .NET 3.1 以降のアプリケーションでは、アプリケーションが起動する前に更新プログラムをチェックすることが、唯一の更新プログラムオプションとしてサポートされています。
 
 ## <a name="make-updates-required"></a>更新が必要
  アプリケーションの最新バージョンを実行するようユーザーに要求することが必要な場合があります。 たとえば、Web サービスなどの外部リソースに変更を加えたことで、旧バージョンのアプリケーションが適切に動作できなくなるような場合です。 この場合、更新を必須としてマークし、ユーザーが旧バージョンを実行するのを防ぎます。
@@ -119,7 +121,7 @@ ms.locfileid: "94383158"
  信頼されたアプリケーションの配置を使用する場合は、信頼レベルの要求が行われません。 詳細については、「[信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
- \<xref:System.Deployment.Application>
+- <xref:System.Deployment.Application>
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)

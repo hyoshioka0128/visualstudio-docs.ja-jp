@@ -1,18 +1,20 @@
 ---
 title: "\"ネイティブ推奨規則\" 規則セット"
 ms.date: 11/04/2016
+description: Visual Studio ネイティブ推奨規則の規則セットについて説明します。 ネイティブコードでのセキュリティ、堅牢性、およびその他の重要な問題に関するルールの説明を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600012"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437032"
 ---
 # <a name="native-recommended-rules-rule-set"></a>"ネイティブ推奨規則" 規則セット
 
@@ -38,20 +40,20 @@ ms.locfileid: "89600012"
 |[C6201](/cpp/code-quality/c6201)|インデックスがスタック バッファーの最大値を超過|
 |[C6214](/cpp/code-quality/c6214)|HRESULT から BOOL へのキャストが無効です|
 |[C6215](/cpp/code-quality/c6215)|BOOL から HRESULT へのキャストが無効です|
-|[C6216](/cpp/code-quality/c6216)|無効なコンパイラ挿入キャスト BOOL から HRESULT|
+|[C6216](/cpp/code-quality/c6216)|ブール値を HRESULT にキャスト Compiler-Inserted が無効です|
 |[C6217](/cpp/code-quality/c6217)|NOT での無効な HRESULT テスト|
 |[C6220](/cpp/code-quality/c6220)|-1 との無効な HRESULT 比較|
 |[C6226](/cpp/code-quality/c6226)|-1 への無効な HRESULT 割り当て|
 |[C6230](/cpp/code-quality/c6230)|ブール値としての HRESULT 使用は無効です|
-|[C6235](/cpp/code-quality/c6235)|論理 Or を使用した0でない定数|
-|[C6236](/cpp/code-quality/c6236)|論理 Or (0 以外の定数を含む)|
-|[C6237](/cpp/code-quality/c6237)|0と論理 And で失われた副作用|
+|[C6235](/cpp/code-quality/c6235)|0以外の定数 Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|0以外の定数の Logical-Or|
+|[C6237](/cpp/code-quality/c6237)|ゼロ Logical-And の副作用が失われる|
 |[C6242](/cpp/code-quality/c6242)|ローカルアンワインド強制|
 |[C6248](/cpp/code-quality/c6248)|Null DACL の作成|
 |[C6250](/cpp/code-quality/c6250)|未リリースのアドレス記述子|
 |[C6255](/cpp/code-quality/c6255)|Alloca の保護されていない使用|
 |[C6258](/cpp/code-quality/c6258)|Terminate スレッドの使用|
-|[C6259](/cpp/code-quality/c6259)|ビットごとの Or 限定スイッチでの配信不能コード|
+|[C6259](/cpp/code-quality/c6259)|Bitwise-Or 制限付きスイッチの配信不能コード|
 |[C6260](/cpp/code-quality/c6260)|バイト演算の使用|
 |[C6262](/cpp/code-quality/c6262)|過剰なスタック使用|
 |[C6263](/cpp/code-quality/c6263)|ループでの Alloca の使用|
@@ -64,18 +66,18 @@ ms.locfileid: "89600012"
 |[C6274](/cpp/code-quality/c6274)|Format 関数への文字でない引数|
 |[C6276](/cpp/code-quality/c6276)|無効な文字列のキャスト|
 |[C6277](/cpp/code-quality/c6277)|無効な CreateProcess 呼び出し|
-|[C6278](/cpp/code-quality/c6278)|配列-新しいスカラーと削除の不一致|
-|[C6279](/cpp/code-quality/c6279)|スカラーの新しい配列-Delete の不一致|
-|[C6280](/cpp/code-quality/c6280)|メモリ割り当て-解放の不一致|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete 不一致|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete 不一致|
+|[C6280](/cpp/code-quality/c6280)|メモリ Allocation-Deallocation が一致しません|
 |[C6281](/cpp/code-quality/c6281)|ビットごとの関係の優先順位|
 |[C6282](/cpp/code-quality/c6282)|割り当てがテストに置き換わる|
-|[C6283](/cpp/code-quality/c6283)|プリミティブ配列-新しいスカラー/Delete の不一致|
+|[C6283](/cpp/code-quality/c6283)|プリミティブ Array-New Scalar-Delete 不一致|
 |[C6284](/cpp/code-quality/c6284)|Format 関数への無効なオブジェクト引数|
-|[C6285](/cpp/code-quality/c6285)|定数の論理 Or|
-|[C6286](/cpp/code-quality/c6286)|0以外の論理 Or による副作用の損失|
+|[C6285](/cpp/code-quality/c6285)|定数の Logical-Or|
+|[C6286](/cpp/code-quality/c6286)|0以外の Logical-Or による副作用の損失|
 |[C6287](/cpp/code-quality/c6287)|冗長なテスト|
-|[C6288](/cpp/code-quality/c6288)|論理 And に対する相互包括は False|
-|[C6289](/cpp/code-quality/c6289)|論理 Or での相互排他は True|
+|[C6288](/cpp/code-quality/c6288)|Logical-And に対する相互包括が False|
+|[C6289](/cpp/code-quality/c6289)|Logical-Or の相互排他は True|
 |[C6290](/cpp/code-quality/c6290)|論理 Not とビットごとの And の優先順位|
 |[C6291](/cpp/code-quality/c6291)|論理 Not とビットごとの Or の優先順位|
 |[C6292](/cpp/code-quality/c6292)|ループ数が最大値を上限としています|
@@ -92,7 +94,7 @@ ms.locfileid: "89600012"
 |[C6308](/cpp/code-quality/c6308)|Realloc リーク|
 |[C6310](/cpp/code-quality/c6310)|無効な例外フィルター定数|
 |[C6312](/cpp/code-quality/c6312)|例外の実行ループの続行|
-|[C6314](/cpp/code-quality/c6314)|ビットごとの or の優先順位|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or の優先順位|
 |[C6317](/cpp/code-quality/c6317)|非補数|
 |[C6318](/cpp/code-quality/c6318)|例外の検索を続行します|
 |[C6319](/cpp/code-quality/c6319)|コンマで無視|
@@ -103,7 +105,7 @@ ms.locfileid: "89600012"
 |[C6333](/cpp/code-quality/c6333)|VirtualFree のサイズが無効です|
 |[C6335](/cpp/code-quality/c6335)|処理ハンドルのリーク|
 |[C6381](/cpp/code-quality/c6381)|シャットダウン情報がありません|
-|[C6383](/cpp/code-quality/c6383)|要素数のバイト数のバッファーオーバーラン|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count バッファーオーバーラン|
 |[C6384](/cpp/code-quality/c6384)|ポインターのサイズの除算|
 |[C6385](/cpp/code-quality/c6385)|読み取りのオーバーラン|
 |[C6386](/cpp/code-quality/c6386)|書き込みのオーバーラン|

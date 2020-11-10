@@ -1,5 +1,7 @@
 ---
 title: 'ワークフローデザイナー: キーボードショートカット'
+description: Visual Studio でワークフローデザイナーを操作するためにキーボードに入力できるさまざまなコマンドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3b2db8eb0bd2f85a052c9c172b33b179382d168
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115392"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437652"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>ワークフロー デザイナーのキーボード ショートカット
 
@@ -71,7 +73,7 @@ Visual Studio 内では、グローバルショートカットとデバッグシ
 
 - 接続元アクティビティに既に送信接続が作成されているなど、アクティビティのペアを接続できない場合でも、選択範囲のアクティビティ間のその他の接続が、可能な限り作成されます。
 
-- **Flowdecision**が選択に含まれており、 **flowdecision**に送信コネクタがない場合、コネクタは**True**分岐に配置されます。
+- **Flowdecision** が選択に含まれており、 **flowdecision** に送信コネクタがない場合、コネクタは **True** 分岐に配置されます。
 
 ### <a name="expression-editing"></a>式の編集
 
@@ -79,7 +81,7 @@ Visual Studio 内では、グローバルショートカットとデバッグシ
 
 - 次のコマンドのキーボード ショートカットの再マップは無効です。 既定のキーボード ショートカットは、式の編集時にこれらのコマンドにアクセスするためにのみ使用できます。
 
-  - ［切り取り］
+  - 切り取り
   - コピー
   - 貼り付け
   - [すべて選択]

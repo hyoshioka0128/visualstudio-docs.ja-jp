@@ -1,5 +1,7 @@
 ---
 title: 'ワークフローデザイナー: [引数の追加] ダイアログボックス & パラメーターを追加する'
+description: '[パラメーターの追加] ダイアログボックスのユーザーインターフェイス (UI) 要素を InvokeMethod デザイナーで使用する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c8acef82c2616259793ba63ca51c789cfd1b9ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2038e56770a7d671a25b3982f865926c29697b13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547356"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435691"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス
 

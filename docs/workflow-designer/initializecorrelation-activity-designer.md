@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー InitializeCorrelation アクティビティデザイナー
+description: InitializeCorrelation アクティビティデザイナーを使用して、InitializeCorrelation アクティビティを作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875567"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437789"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation アクティビティ デザイナー
 
-**InitializeCorrelation**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.ServiceModel.Activities.InitializeCorrelation> ます。 アクティビティは、 <xref:System.ServiceModel.Activities.InitializeCorrelation> メッセージを送信または受信する前に、メッセージ間の相関関係を確立します。
+**InitializeCorrelation** アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.ServiceModel.Activities.InitializeCorrelation> ます。 アクティビティは、 <xref:System.ServiceModel.Activities.InitializeCorrelation> メッセージを送信または受信する前に、メッセージ間の相関関係を確立します。
 
 ## <a name="the-initializecorrelation-activity"></a>InitializeCorrelation アクティビティ
 
@@ -27,13 +29,13 @@ ms.locfileid: "86875567"
 
 ### <a name="using-the-initializecorrelation-activity-designer"></a>InitializeCorrelation アクティビティ デザイナーの使用
 
-**ツールボックス**の [**メッセージング**] カテゴリの**InitializeCorrelation**アクティビティデザイナーにアクセスします。
+**ツールボックス** の [ **メッセージング** ] カテゴリの **InitializeCorrelation** アクティビティデザイナーにアクセスします。
 
-**InitializeCorrelation**アクティビティデザイナーは、[**ツールボックス**] からドラッグしてワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除する <xref:System.ServiceModel.Activities.InitializeCorrelation> と、既定値の InitializeCorrelation を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **InitializeCorrelation**アクティビティデザイナーのヘッダー、または [**プロパティ**] ウィンドウの [ **DisplayName** ] ボックスで編集できます。
+**InitializeCorrelation** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグしてワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除する <xref:System.ServiceModel.Activities.InitializeCorrelation> と、既定値の InitializeCorrelation を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **InitializeCorrelation** アクティビティデザイナーのヘッダー、または [ **プロパティ** ] ウィンドウの [ **DisplayName** ] ボックスで編集できます。
 
-は、 <xref:System.ServiceModel.Activities.CorrelationHandle> **InitializeCorrelation**アクティビティデザイナー画面の [**プロパティ**] ウィンドウの [**関連付け**] フィールドで指定できます。
+は、 <xref:System.ServiceModel.Activities.CorrelationHandle> **InitializeCorrelation** アクティビティデザイナー画面の [ **プロパティ** ] ウィンドウの [ **関連付け** ] フィールドで指定できます。
 
-関連付けハンドルとその初期化に使用されるキーと値のペアを指定できる [**関連付けの初期化**] ダイアログボックスを表示するには、[**プロパティ**] ウィンドウの [ **correlationdata** ] フィールドの横にある省略記号ボタンを選択します。 または、[表示...] を選択します。 **InitializeCorrelation** アクティビティデザイナー画面にヒントテキストを入力します。 このダイアログボックスの使用方法の詳細については、「[ [型コレクションエディター] ダイアログボックス](../workflow-designer/type-collection-editor-dialog-box.md) 」を参照してください。
+関連付けハンドルとその初期化に使用されるキーと値のペアを指定できる [ **関連付けの初期化** ] ダイアログボックスを表示するには、[ **プロパティ** ] ウィンドウの [ **correlationdata** ] フィールドの横にある省略記号ボタンを選択します。 または、[表示...] を選択します。 **InitializeCorrelation** アクティビティデザイナー画面にヒントテキストを入力します。 このダイアログボックスの使用方法の詳細については、「[ [型コレクションエディター] ダイアログボックス](../workflow-designer/type-collection-editor-dialog-box.md) 」を参照してください。
 
 ### <a name="the-initializecorrelation-properties"></a>InitializeCorrelation プロパティ
 
@@ -50,6 +52,6 @@ ms.locfileid: "86875567"
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [受け取れ](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [送信](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

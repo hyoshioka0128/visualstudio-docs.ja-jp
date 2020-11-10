@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-[関連付けの初期化] ダイアログボックス
+description: ワークフローデザイナーの [関連付けの初期化] ダイアログボックスを使用して、InitializeCorrelation アクティビティの CorrelationData プロパティを編集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f0a3bb70dbab31e0faa5c38caac9b54c6154fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a35911fef39315580f402e174b0f32d443a33cf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114779"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437802"
 ---
 # <a name="initialize-correlation-dialog-box"></a>[関連付け初期化] ダイアログ ボックス
 
@@ -25,12 +27,12 @@ ms.locfileid: "76114779"
 
 |UI 要素|説明|
 |-|-----------------|
-|**Correlation (関連付け)** |初期化する関連付けの <xref:System.ServiceModel.Activities.CorrelationHandle>。|
+|**相関関係**|初期化する関連付けの <xref:System.ServiceModel.Activities.CorrelationHandle>。|
 |**初期化**|初期化するデータが格納されているキー/値ペア。 この値は、プロパティに対応 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> しています。 有効なキーと値のペアの例としては、OrderID という名前の変数と組み合わせた "OrderID" という名前のキーがあります。|
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>[関連付け初期化] ダイアログ ボックスを開くには
 
-**InitializeCorrelation**アクティビティデザイナーで [**表示**] をクリックするか、 <xref:System.ServiceModel.Activities.InitializeCorrelation> ワークフローデザイナーでアクティビティを選択します。 次に、プロパティグリッドでプロパティの横にある省略記号ボタンをクリックし <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> ます。
+**InitializeCorrelation** アクティビティデザイナーで [ **表示** ] をクリックするか、 <xref:System.ServiceModel.Activities.InitializeCorrelation> ワークフローデザイナーでアクティビティを選択します。 次に、プロパティグリッドでプロパティの横にある省略記号ボタンをクリックし <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> ます。
 
 ## <a name="see-also"></a>関連項目
 

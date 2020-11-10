@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-If アクティビティデザイナー
+description: If アクティビティが条件を評価し、その評価の結果に応じてアクティビティを実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 099be38c5585fe19c00b31c00ac3a7ddcd3d7fe2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2daa2ab6e3f41d5447204db573b8ae228d617fdf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76111461"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437815"
 ---
 # <a name="if-activity-designer"></a>If アクティビティ デザイナー
 
@@ -27,9 +29,9 @@ ms.locfileid: "76111461"
 
 |プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|○|実行する子アクティビティを決定する条件。 を設定するには <xref:System.Activities.Statements.If.Condition%2A> 、 **If**アクティビティデザイナーまたはプロパティグリッドの [**条件**] ボックスに Visual Basic 式を入力します。|
-|<xref:System.Activities.Statements.If.Else%2A>|×|が false の場合に実行するアクティビティ <xref:System.Activities.Statements.If.Condition%2A> 。 **false** 分岐によって実行されるアクティビティを追加するには、 <xref:System.Activities.Statements.If.Else%2A> "ここにアクティビティをドロップします" というヒントテキストが表示された**if**アクティビティデザイナーの [ **Else** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。|
-|<xref:System.Activities.Statements.If.Then%2A>|×|が true の場合に実行するアクティビティ <xref:System.Activities.Statements.If.Condition%2A> 。 **true** 分岐によって実行されるアクティビティを追加するには <xref:System.Activities.Statements.If.Then%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**If**アクティビティデザイナーの **[Then** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。|
+|<xref:System.Activities.Statements.If.Condition%2A>|○|実行する子アクティビティを決定する条件。 を設定するには <xref:System.Activities.Statements.If.Condition%2A> 、 **If** アクティビティデザイナーまたはプロパティグリッドの [ **条件** ] ボックスに Visual Basic 式を入力します。|
+|<xref:System.Activities.Statements.If.Else%2A>|×|が false の場合に実行するアクティビティ <xref:System.Activities.Statements.If.Condition%2A> 。 **false** 分岐によって実行されるアクティビティを追加するには、 <xref:System.Activities.Statements.If.Else%2A> "ここにアクティビティをドロップします" というヒントテキストが表示された **if** アクティビティデザイナーの [ **Else** ] ボックスに、[ **ツールボックス** ] からアクティビティをドロップします。|
+|<xref:System.Activities.Statements.If.Then%2A>|×|が true の場合に実行するアクティビティ <xref:System.Activities.Statements.If.Condition%2A> 。 **true** 分岐によって実行されるアクティビティを追加するには <xref:System.Activities.Statements.If.Then%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された **If** アクティビティデザイナーの **[Then** ] ボックスに、[ **ツールボックス** ] からアクティビティをドロップします。|
 
 ## <a name="see-also"></a>関連項目
 

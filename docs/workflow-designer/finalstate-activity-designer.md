@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-FinalState アクティビティデザイナー
+description: FinalState デザイナーを使用して、ステートマシンインスタンスを終了する状態を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e8973de1deba610a90e21edb870000abbb03e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af8887a11b04679789f57f15f32ca03b7b4acf3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875593"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435822"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState アクティビティ デザイナー
 
@@ -21,7 +23,7 @@ ms.locfileid: "86875593"
 
 ## <a name="using-the-finalstate-activity-designer"></a>FinalState アクティビティ デザイナーの使用
 
-**Finalstate**デザイナーは、 <xref:System.Activities.Statements.State> ステートマシンで終了状態として事前に構成されているを作成するために使用されます。 <xref:System.Activities.Statements.State>アクティビティデザイナーを使用して作成されたに <xref:System.Activities.Core.Presentation.FinalState> は、 <xref:System.Activities.Statements.State.IsFinal%2A> プロパティが**true**に設定されており、アクティビティはなく、 <xref:System.Activities.Statements.State.Exit%2A> それからの遷移もありません。 アクティビティデザイナーを使用し <xref:System.Activities.Core.Presentation.FinalState> <xref:System.Activities.Statements.State> て、ステートマシンで終了状態として事前に構成されているアクティビティを追加するには、[**ツールボックス**] の [**ステートマシン**] セクションから**finalstate**アクティビティデザイナーをドラッグし、ワークフローデザイナーにドロップします。 <xref:System.Activities.Core.Presentation.FinalState> アクティビティ デザイナーは、<xref:System.Activities.Statements.StateMachine> にドロップして遷移を後で追加できます。または遷移は、<xref:System.Activities.Core.Presentation.FinalState> アクティビティ デザイナーをドロップしたときに作成できます。 遷移の作成の詳細については、「 [Transition](../workflow-designer/transition-activity-designer.md)」を参照してください。
+**Finalstate** デザイナーは、 <xref:System.Activities.Statements.State> ステートマシンで終了状態として事前に構成されているを作成するために使用されます。 <xref:System.Activities.Statements.State>アクティビティデザイナーを使用して作成されたに <xref:System.Activities.Core.Presentation.FinalState> は、 <xref:System.Activities.Statements.State.IsFinal%2A> プロパティが **true** に設定されており、アクティビティはなく、 <xref:System.Activities.Statements.State.Exit%2A> それからの遷移もありません。 アクティビティデザイナーを使用し <xref:System.Activities.Core.Presentation.FinalState> <xref:System.Activities.Statements.State> て、ステートマシンで終了状態として事前に構成されているアクティビティを追加するには、[ **ツールボックス** ] の [ **ステートマシン** ] セクションから **finalstate** アクティビティデザイナーをドラッグし、ワークフローデザイナーにドロップします。 <xref:System.Activities.Core.Presentation.FinalState> アクティビティ デザイナーは、<xref:System.Activities.Statements.StateMachine> にドロップして遷移を後で追加できます。または遷移は、<xref:System.Activities.Core.Presentation.FinalState> アクティビティ デザイナーをドロップしたときに作成できます。 遷移の作成の詳細については、「 [Transition](../workflow-designer/transition-activity-designer.md)」を参照してください。
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの State アクティビティのプロパティ
 
@@ -29,7 +31,7 @@ ms.locfileid: "86875593"
 
 |プロパティ名|必須|使用法|
 |-|--------------|-|
-|<xref:System.Activities.Statements.State.DisplayName%2A>|×|ヘッダーの <xref:System.Activities.Statements.State> アクティビティ デザイナーの表示名を指定します。 既定値は **State**です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。 <xref:System.Activities.Statements.State.DisplayName%2A> は、ワークフロー デザイナーの上部に表示される階層リンク バーで使用されます。<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.State.DisplayName%2A>|×|ヘッダーの <xref:System.Activities.Statements.State> アクティビティ デザイナーの表示名を指定します。 既定値は **State** です。 この値は、プロパティ グリッドで編集することも、アクティビティ デザイナーのヘッダーで直接編集することもできます。 <xref:System.Activities.Statements.State.DisplayName%2A> は、ワークフロー デザイナーの上部に表示される階層リンク バーで使用されます。<br /><br /> <xref:System.Activities.Statements.State.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
 |<xref:System.Activities.Statements.State.Entry%2A>|×|この状態の遷移時に発生するアクションを指定します。 この値を設定するには、 **ツールボックス** からアクティビティをドラッグし、 <xref:System.Activities.Statements.State.Entry%2A> 状態のセクションにドロップします。|
 
 ## <a name="see-also"></a>関連項目

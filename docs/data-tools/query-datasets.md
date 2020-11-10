@@ -1,5 +1,7 @@
 ---
 title: データセットのクエリ
+description: クエリデータセットについて理解する。 データセットの大文字小文字の区別について説明します。 データテーブル内の特定の行を検索し、列の値で行を検索して、関連レコードにアクセスします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281865"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436069"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 データセット内の特定のレコードを検索するには、 `FindBy` DataTable に対してメソッドを使用し、テーブルの Rows コレクションをループ処理する独自の foreach ステートメントを記述するか、 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)を使用します。
@@ -70,7 +72,7 @@ ms.locfileid: "85281865"
 > [!NOTE]
 > Windows フォームアプリケーションで作業していて、データバインディング機能を使用してデータを表示している場合は、デザイナーで生成されたフォームによってアプリケーションに十分な機能が提供されることがあります。 詳細については、「 [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)」を参照してください。 具体的には、「 [データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
 
-次のコード例は、型指定されたデータセット内の上下関係を移動する方法を示しています。 このコード例では、型 <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) および生成された FindBy*PrimaryKey* ( `FindByCustomerID` ) メソッドを使用して目的の行を検索し、関連レコードを返します。 これらの例は、次のものがある場合にのみ、正しくコンパイルされて実行されます。
+次のコード例は、型指定されたデータセット内の上下関係を移動する方法を示しています。 このコード例では、型 <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) および生成された FindBy *PrimaryKey* ( `FindByCustomerID` ) メソッドを使用して目的の行を検索し、関連レコードを返します。 これらの例は、次のものがある場合にのみ、正しくコンパイルされて実行されます。
 
 - テーブルを持つという名前のデータセットのインスタンス `NorthwindDataSet` `Customers` 。
 
@@ -96,4 +98,4 @@ ms.locfileid: "85281865"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)

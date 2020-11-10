@@ -1,5 +1,7 @@
 ---
 title: データベースへのデータの保存 (複数テーブル)
+description: このチュートリアルでは、Visual Studio のデータセットツールを使用して、複数のテーブルのデータをデータベースに保存します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281644"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436043"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>データベースへのデータの保存 (複数テーブル)
 
@@ -45,11 +47,11 @@ ms.locfileid: "85281644"
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、 **データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -65,15 +67,15 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 
 ## <a name="create-the-data-source"></a>データソースを作成する
 
-この手順では、**データ ソース構成ウィザード**を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースの設定の詳細については、「 [方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
+この手順では、 **データ ソース構成ウィザード** を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースの設定の詳細については、「 [方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
 
-1. [ **データ** ] メニューの [ **データソースの表示**] をクリックします。
+1. **[データ]** メニューで、 **[データ ソースの表示]** を選択します。
 
    **[データ ソース]** ウィンドウが開きます。
 
-2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード**を開始します。
+2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード** を開始します。
 
-3. [ **データソースの種類を選択** ] 画面で、[ **データベース**] を選択し、[ **次へ**] を選択します。
+3. [ **データソースの種類を選択** ] 画面で、[ **データベース** ] を選択し、[ **次へ** ] を選択します。
 
 4. [ **データ接続の選択** ] 画面で、次のいずれかの操作を行います。
 
@@ -83,15 +85,15 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを開きます。
 
-5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ**] を選択します。
+5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ** ] を選択します。
 
-6. [ **接続文字列をアプリケーション構成ファイルに保存する**] で、[ **次へ**] を選択します。
+6. [ **接続文字列をアプリケーション構成ファイルに保存する** ] で、[ **次へ** ] を選択します。
 
 7. [ **データベースオブジェクトの選択** ] 画面で、[ **テーブル** ] ノードを展開します。
 
-8. **Customers**テーブルと**Orders**テーブルを選択し、[**完了**] を選択します。
+8. **Customers** テーブルと **Orders** テーブルを選択し、[ **完了** ] を選択します。
 
-     自分のプロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウにテーブルが表示されます。
+     自分のプロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウにテーブルが表示されます。
 
 ## <a name="set-the-controls-to-be-created"></a>作成するコントロールを設定する
 
@@ -114,7 +116,7 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 2. **[データ ソース]** ウィンドウから **Form1** に関連する **[Orders]** ノードをドラッグします。
 
     > [!NOTE]
-    > 関連する **[Orders]** ノードは **[Fax]** 列の下にあり、**[Customers]** ノードの子ノードです。
+    > 関連する **[Orders]** ノードは **[Fax]** 列の下にあり、 **[Customers]** ノードの子ノードです。
 
      レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 `OrdersTableAdapter`とが <xref:System.Windows.Forms.BindingSource> コンポーネントトレイに表示されます。
 
@@ -136,7 +138,7 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
 
-1. **F5**キーを押します。
+1. **F5** キーを押します。
 
 2. 各テーブルの 1 つ以上のレコードのデータを変更します。
 

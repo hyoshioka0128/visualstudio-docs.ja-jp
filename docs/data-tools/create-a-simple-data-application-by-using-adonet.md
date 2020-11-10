@@ -1,5 +1,6 @@
 ---
 title: ADO.NET を使用した単純なデータ アプリケーションの作成
+description: Visual Studio で Windows フォームと ADO.NET を使用して、簡単なフォーム対データアプリケーションを作成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037433"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436798"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
@@ -44,15 +45,15 @@ ms.locfileid: "90037433"
 
 1. Visual Studio で、[ **サーバーエクスプローラー** ] ウィンドウを開きます。
 
-2. [ **データ接続** ] を右クリックし、[ **新しい SQL Server データベースの作成**] を選択します。
+2. [ **データ接続** ] を右クリックし、[ **新しい SQL Server データベースの作成** ] を選択します。
 
-3. [ **サーバー名** ] ボックスに「 **(localdb) \mssqllocaldb**」と入力します。
+3. [ **サーバー名** ] ボックスに「 **(localdb) \mssqllocaldb** 」と入力します。
 
-4. [ **新しいデータベース名** ] ボックスに「 **Sales**」と入力し、[ **OK]** を選択します。
+4. [ **新しいデータベース名** ] ボックスに「 **Sales** 」と入力し、[ **OK]** を選択します。
 
      空の **Sales** データベースが作成され、サーバーエクスプローラーの [データ接続] ノードに追加されます。
 
-5. **Sales** data 接続を右クリックし、[**新しいクエリ**] を選択します。
+5. **Sales** data 接続を右クリックし、[ **新しいクエリ** ] を選択します。
 
      クエリエディターウィンドウが開きます。
 
@@ -64,9 +65,9 @@ ms.locfileid: "90037433"
 
 ## <a name="create-the-forms-and-add-controls"></a>フォームを作成してコントロールを追加する
 
-1. Windows フォーム アプリケーションのプロジェクトを作成し、**SimpleDataApp** という名前を付けます。
+1. Windows フォーム アプリケーションのプロジェクトを作成し、 **SimpleDataApp** という名前を付けます。
 
-    Visual Studio は、**Form1** という名前の空の Windows フォームを含めた、いくつかのファイルとプロジェクトを作成します。
+    Visual Studio は、 **Form1** という名前の空の Windows フォームを含めた、いくつかのファイルとプロジェクトを作成します。
 
 2. 2 つの Windows フォームをプロジェクトに追加し、合計 3 つのフォームに次の名前を付けます。
 
@@ -85,54 +86,54 @@ ms.locfileid: "90037433"
 
    ![ナビゲーション ダイアログ ボックス](../data-tools/media/simpleappnav.png)
 
-|Navigation フォームのコントロール|プロパティ|
+|Navigation フォームのコントロール|Properties|
 | - |----------------|
-|Button|Name = btnGoToAdd|
-|Button|Name = btnGoToFillOrCancel|
-|Button|Name = btnExit|
+|ボタン|Name = btnGoToAdd|
+|ボタン|Name = btnGoToFillOrCancel|
+|ボタン|Name = btnExit|
 
 **NewCustomer フォーム**
 
 ![新しい顧客を追加して注文を作成する](../data-tools/media/simpleappnewcust.png)
 
-|NewCustomer フォームのコントロール|プロパティ|
+|NewCustomer フォームのコントロール|Properties|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|Button|Name = btnCreateAccount|
+|ボタン|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|
-|Button|Name = btnPlaceOrder|
-|Button|Name = btnAddAnotherAccount|
-|Button|Name = btnAddFinish|
+|ボタン|Name = btnPlaceOrder|
+|ボタン|Name = btnAddAnotherAccount|
+|ボタン|Name = btnAddFinish|
 
 **FillOrCancel フォーム**
 
 ![注文の入力または取り消し](../data-tools/media/simpleappcancelfill.png)
 
-|FillOrCancel フォームのコントロール|プロパティ|
+|FillOrCancel フォームのコントロール|Properties|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|Button|Name = btnFindByOrderID|
+|ボタン|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|Button|Name = btnCancelOrder|
-|Button|Name = btnFillOrder|
-|Button|Name = btnFinishUpdates|
+|ボタン|Name = btnCancelOrder|
+|ボタン|Name = btnFillOrder|
+|ボタン|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>接続文字列を保存する
 アプリケーションがデータベースの接続を開くとき、アプリケーションは接続文字列にアクセスする必要があります。 各フォームに文字列を手動で入力しないようにするには、プロジェクトの *App.config* ファイルに文字列を格納し、アプリケーションの任意の形式からメソッドが呼び出されたときに文字列を返すメソッドを作成します。
 
-接続文字列を見つけるには、**サーバーエクスプローラー**で**Sales**データ接続を右クリックし、[**プロパティ**] を選択します。 **ConnectionString**プロパティを見つけ、 **ctrl** + **A**キー、 **ctrl** + **C**キーを使用して、文字列を選択してクリップボードにコピーします。
+接続文字列を見つけるには、 **サーバーエクスプローラー** で **Sales** データ接続を右クリックし、[ **プロパティ** ] を選択します。 **ConnectionString** プロパティを見つけ、 **ctrl** + **A** キー、 **ctrl** + **C** キーを使用して、文字列を選択してクリップボードにコピーします。
 
-1. C# を使用している場合は、 **ソリューションエクスプローラー**で、プロジェクトの [ **プロパティ** ] ノードを展開し、 **設定** ファイルを開きます。
-    Visual Basic を使用している場合は、 **ソリューションエクスプローラー**で [ **すべてのファイルを表示**] をクリックし、[ **マイプロジェクト** ] ノードを展開して、 **設定の設定** ファイルを開きます。
+1. C# を使用している場合は、 **ソリューションエクスプローラー** で、プロジェクトの [ **プロパティ** ] ノードを展開し、 **設定** ファイルを開きます。
+    Visual Basic を使用している場合は、 **ソリューションエクスプローラー** で [ **すべてのファイルを表示** ] をクリックし、[ **マイプロジェクト** ] ノードを展開して、 **設定の設定** ファイルを開きます。
 
 2. [ **名前** ] 列に「」と入力し `connString` ます。
 
-3. [ **種類** ] ボックスの一覧で [ **(接続文字列)**] を選択します。
+3. [ **種類** ] ボックスの一覧で [ **(接続文字列)** ] を選択します。
 
-4. [ **スコープ** ] ボックスの一覧で [ **アプリケーション**] を選択します。
+4. [ **スコープ** ] ボックスの一覧で [ **アプリケーション** ] を選択します。
 
 5. [ **値** ] 列に、(引用符を除く) 接続文字列を入力し、変更を保存します。
 
@@ -149,9 +150,9 @@ Navigation フォームはアプリケーションを実行すると開きます
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Navigation フォームをスタートアップ フォームに設定
 
-C# を使用している場合、**ソリューション エクスプローラー**で** Program.cs** を開き、`Application.Run` の行を `Application.Run(new Navigation());` に変更します。
+C# を使用している場合、 **ソリューション エクスプローラー** で **Program.cs** を開き、`Application.Run` の行を `Application.Run(new Navigation());` に変更します。
 
-Visual Basic を使用している場合は**ソリューションエクスプローラー**で [**プロパティ**] ウィンドウを開いて [**アプリケーション**] タブを選択し、[**スタートアップフォーム**] の一覧で [ **simpledataapp. ナビゲーション**] を選択します。
+Visual Basic を使用している場合は **ソリューションエクスプローラー** で [ **プロパティ** ] ウィンドウを開いて [ **アプリケーション** ] タブを選択し、[ **スタートアップフォーム** ] の一覧で [ **simpledataapp. ナビゲーション** ] を選択します。
 
 #### <a name="create-auto-generated-event-handlers"></a>自動生成されたイベントハンドラーを作成する
 
@@ -232,7 +233,7 @@ FillOrCancel フォームロジックを完了するには、次の手順を実�
 
 ## <a name="test-your-application"></a>アプリケーションのテスト
 
-各クリック イベント ハンドラーをコードし、コードの記述を完了した後、**F5** キーを押してアプリケーションのビルドとテストを実行します。
+各クリック イベント ハンドラーをコードし、コードの記述を完了した後、 **F5** キーを押してアプリケーションのビルドとテストを実行します。
 
 ## <a name="see-also"></a>関連項目
 

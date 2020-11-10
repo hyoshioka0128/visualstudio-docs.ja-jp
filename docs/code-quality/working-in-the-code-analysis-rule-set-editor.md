@@ -1,6 +1,8 @@
 ---
 title: コード分析規則セット エディターを使用する
 ms.date: 04/04/2018
+description: Visual Studio でルールセットを編集および表示する方法について説明します。 規則の重要度を設定する方法、カスタムセットの規則を指定する方法、および規則セットグリッド内のデータを調整する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659180"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436824"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>コード分析規則セットエディターの使用
 
@@ -25,9 +27,9 @@ ms.locfileid: "91659180"
 
 |アクション (重要度)|説明|
 |-|-|
-|警告|**エラー一覧**とビルド時にも警告を生成します。|
-|エラー|**エラー一覧**とビルド時にもエラーを生成します。|
-|Info|**エラー一覧**にメッセージを生成します。|
+|警告|**エラー一覧** とビルド時にも警告を生成します。|
+|エラー|**エラー一覧** とビルド時にもエラーを生成します。|
+|［情報］|**エラー一覧** にメッセージを生成します。|
 |[非表示]|違反はユーザーに表示されません。 ただし、IDE には違反が通知されます。|
 |なし|ルールが抑制されます。 動作は、規則セットから規則が削除された場合と同じです。|
 
@@ -74,7 +76,7 @@ ms.locfileid: "91659180"
 |**名前**|ルールのタイトル。|
 |**Namespace**|ルールの名前空間です。|
 |**ターゲットの種類**|ルールがネイティブコードとマネージコードのどちらであるかを示します。|
-|**操作**|コード分析の実行でルールに違反したときに実行されるアクション。 **アクション**フィールドは編集できます。|
+|**操作**|コード分析の実行でルールに違反したときに実行されるアクション。 **アクション** フィールドは編集できます。|
 |**ソース規則セット**|ルールを含むルールセットです。|
 
 ## <a name="sort-and-filter-rule-sets"></a>規則セットの並べ替えとフィルター処理

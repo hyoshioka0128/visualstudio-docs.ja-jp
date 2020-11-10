@@ -1,5 +1,7 @@
 ---
 title: データバインドコントロールのキャプションをカスタマイズする
+description: Visual Studio がデータバインドコントロールのキャプションを作成する方法をカスタマイズします。 [データソース] ウィンドウのスマートキャプションの動作を変更します。 スマートキャプションをオフにします。
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282580"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436629"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
 
@@ -26,27 +28,27 @@ ms.locfileid: "85282580"
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER \Software\microsoft\visualstudio\15.0\data designer**レジストリキーで**SmartCaptionExpression**、 **SmartCaptionReplacement**、および**SmartCaptionSuffix**の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** レジストリキーの **SmartCaptionExpression** 、 **SmartCaptionReplacement** 、および **SmartCaptionSuffix** の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER \Software\microsoft\visualstudio\16.0\data designer**レジストリキーで**SmartCaptionExpression**、 **SmartCaptionReplacement**、および**SmartCaptionSuffix**の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** レジストリキーの **SmartCaptionExpression** 、 **SmartCaptionReplacement** 、および **SmartCaptionSuffix** の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
 
 ::: moniker-end
 
 > [!NOTE]
 > このレジストリキーは、作成するまで存在しません。
 
-スマートキャプションは、 **SmartCaptionExpression** 値の値に入力された正規表現によって制御されます。 **データデザイナー**のレジストリキーを追加すると、キャプションラベルを制御する既定の正規表現がオーバーライドされます。 正規表現の詳細については、「 [Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)」を参照してください。
+スマートキャプションは、 **SmartCaptionExpression** 値の値に入力された正規表現によって制御されます。 **データデザイナー** のレジストリキーを追加すると、キャプションラベルを制御する既定の正規表現がオーバーライドされます。 正規表現の詳細については、「 [Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)」を参照してください。
 
 次の表では、キャプションラベルを制御するレジストリ値について説明します。
 
 |レジストリ項目|説明|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|パターンに一致するために使用する正規表現。|
-|**SmartCaptionReplacement**|**SmartCaptionExpression**に一致したすべてのグループを表示する形式。|
+|**SmartCaptionReplacement**|**SmartCaptionExpression** に一致したすべてのグループを表示する形式。|
 |**SmartCaptionSuffix**|キャプションの末尾に追加する省略可能な文字列。|
 
 次の表は、これらのレジストリ値の内部既定の設定を示しています。
@@ -54,7 +56,7 @@ ms.locfileid: "85282580"
 |レジストリ項目|既定値|説明|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \p{Ll}) ( \\ \p{Lu}) &#124;_ +**|小文字の後に大文字またはアンダースコアが続くパターンに一致します。|
-|**SmartCaptionReplacement**|**$1 $2**|**$1**は、式の最初のかっこに一致したすべての文字を表し、 **$2**は2番目のかっこで囲まれた任意の文字を表します。 置換は、最初の一致、空白、および2番目の一致です。|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** は、式の最初のかっこに一致したすべての文字を表し、 **$2** は2番目のかっこで囲まれた任意の文字を表します。 置換は、最初の一致、空白、および2番目の一致です。|
 |**SmartCaptionSuffix**|**:**|返される文字列に付加された文字を表します。 たとえば、キャプションがの場合、 `Company Name` サフィックスによって `Company Name:`|
 
 > [!CAUTION]
@@ -64,9 +66,9 @@ ms.locfileid: "85282580"
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>[データソース] ウィンドウのスマートキャプションの動作を変更する
 
-1. [ **開始** ] をクリックしてコマンドウィンドウを開き、を **実行**します。
+1. [ **開始** ] をクリックしてコマンドウィンドウを開き、を **実行** します。
 
-2. `regedit`[**実行**] ダイアログボックスに「」と入力し、[ **OK**] をクリックします。
+2. `regedit`[ **実行** ] ダイアログボックスに「」と入力し、[ **OK** ] をクリックします。
 
 3. [ **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** ] ノードを展開します。
 
@@ -88,15 +90,15 @@ ms.locfileid: "85282580"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **SmartCaptionExpression**値を右クリックし、[**変更**] を選択します。
+6. **SmartCaptionExpression** 値を右クリックし、[ **変更** ] を選択します。
 
 7. [ **データソース** ] ウィンドウで使用する正規表現を入力します。
 
-8. **SmartCaptionReplacement**値を右クリックし、[**変更**] を選択します。
+8. **SmartCaptionReplacement** 値を右クリックし、[ **変更** ] を選択します。
 
 9. 正規表現で一致したパターンを表示する方法で書式設定された置換文字列を入力します。
 
-10. **SmartCaptionSuffix**値を右クリックし、[**変更**] を選択します。
+10. **SmartCaptionSuffix** 値を右クリックし、[ **変更** ] を選択します。
 
 11. キャプションの末尾に表示する任意の文字を入力します。
 
@@ -104,9 +106,9 @@ ms.locfileid: "85282580"
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>スマートキャプション機能を無効にする
 
-1. [ **開始** ] をクリックしてコマンドウィンドウを開き、を **実行**します。
+1. [ **開始** ] をクリックしてコマンドウィンドウを開き、を **実行** します。
 
-2. `regedit`[**実行**] ダイアログボックスに「」と入力し、[ **OK**] をクリックします。
+2. `regedit`[ **実行** ] ダイアログボックスに「」と入力し、[ **OK** ] をクリックします。
 
 3. [ **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** ] ノードを展開します。
 
@@ -128,11 +130,11 @@ ms.locfileid: "85282580"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **SmartCaptionExpression**アイテムを右クリックし、[**変更**] を選択します。
+6. **SmartCaptionExpression** アイテムを右クリックし、[ **変更** ] を選択します。
 
 7. 値として「」と入力し `(.*)` ます。 これは、文字列全体に一致します。
 
-8. **SmartCaptionReplacement**アイテムを右クリックし、[**変更**] を選択します。
+8. **SmartCaptionReplacement** アイテムを右クリックし、[ **変更** ] を選択します。
 
 9. 値として「」と入力し `$1` ます。 これにより、文字列が一致した値に置き換えられます。文字列全体が変更されずに保持されます。
 
