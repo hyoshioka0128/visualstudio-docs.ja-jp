@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05ac1f393632934f193f5f4efaaf9e5459ffbb14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705868"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407732"
 ---
 # <a name="registering-a-project-type"></a>プロジェクト タイプの登録
 新しいプロジェクトの種類を作成する場合は、がプロジェクトの種類を認識して使用できるようにするレジストリエントリを作成する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 通常、これらのレジストリエントリを作成するには、レジストリスクリプト (.rgs) ファイルを使用します。
@@ -29,7 +29,7 @@ ms.locfileid: "80705868"
 
  次の例は、HKEY_CLASSES_ROOT からのものです。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
 ```
 \.figp
@@ -47,7 +47,7 @@ ms.locfileid: "80705868"
    @="devenv.exe \"%1\""
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|拡張子が figp であるプロジェクトの種類のファイルの名前と説明。|
 |`Content Type`|REG_SZ|`Text/plain`|プロジェクトファイルのコンテンツの種類。|
@@ -56,14 +56,14 @@ ms.locfileid: "80705868"
 |`@`|REG_SZ|`&Open in Visual Studio`|このプロジェクトの種類を開く既定のアプリケーション。|
 |`@`|REG_SZ|`devenv.exe "%1"`|この種類のプロジェクトが開かれたときに実行される既定のコマンドです。|
 
- 次の例は HKEY_LOCAL_MACHINE からのものであり、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] の下にあります。
+ 次の例は HKEY_LOCAL_MACHINE からのものであり、レジストリのキー [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages] の下にあります。
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
 ```
 \{ACEF4EB2-57CF-11D2-96F4-000000000000} (The CLSID for the VSPackage)
    @="FigPrj Project Package"
-   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
+   "InprocServer32"="9.0<Visual Studio SDK installation path>\\VSIntegration\\Archive\\FigPkgs\\FigPrj\\                      Debug\\FigPrj.dll"
    "CompanyName"="Microsoft"
    "ProductName"="Figure Project Sample"
    "ProductVersion"="9.0"
@@ -79,7 +79,7 @@ ms.locfileid: "80705868"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`@` (既定値)|REG_SZ|`FigPrj Project VSPackage`|この登録された VSPackage のローカライズ可能な名前 (プロジェクトの種類)。|
 |`InprocServer32`|REG_SZ|`%MODULE%`|プロジェクトの種類の DLL のパス。 IDE はこの DLL を読み込み、VSPackage CLSID をに渡して `DllGetClassObject` <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> 、オブジェクトを構築し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> ます。|
@@ -93,21 +93,21 @@ ms.locfileid: "80705868"
 |`FigProjectsEvents`|REG_SZ|値については、「ステートメント」を参照してください。|このオートメーションイベントに対して返されるテキスト文字列を決定します。|
 |`FigProjectItemsEvents`|REG_SZ|値については、「ステートメント」を参照してください。|このオートメーションイベントに対して返されるテキスト文字列を決定します。|
 
- 次のすべての例は、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] の下にあります。
+ 次のすべての例は、レジストリの [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] の下にあります。
 
-## <a name="example"></a>例
+## <a name="example-3"></a>例 3
 
 ```
 \{C061DB26-5833-11D2-96F5-000000000000} (The CLSID for projects of this type)
    @="FigPrj Project"
    "DisplayName"="#2"
    "Package"="{ACEF4EB2-57CF-11D2-96F4-000000000000}"
-   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
-   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
+   "ProjectTemplatesDir"="C:\\Program Files\\VSIP 9.0\\EnvSDK\\FigPkgs\\                           FigPrj\\FigPrjProjects"
+   "ItemTemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                           FigPrjProjectItems"
    "DisplayProjectFileExtensions"="#3"
    "PossibleProjectExtensions"="figp"
    "DefaultProjectExtension"=".figp"
-\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
+\{C061DB26-5833-11D2-96F5-000000000000}\Filters\1       (Folder 1 contains settings for Open Files filters.)
    @="#4"
    "CommonOpenFilesFilter"=dword:00000000
    "CommonFindFilesFilter"=dword:00000000
@@ -126,11 +126,11 @@ ms.locfileid: "80705868"
    "SortPriority"=dword:000003e8
 \{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1 (Second GUID indicates the registered project type for the Add Items templates.)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|この種類のプロジェクトの既定の名前。|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|パッケージに登録されているサテライト DLL から取得する名前のリソース ID。|
@@ -147,7 +147,7 @@ ms.locfileid: "80705868"
 
  次の表は、前のコードセグメントで使用できるフィルターオプションを示しています。
 
-|フィルターオプション|説明|
+|フィルターオプション|[説明]|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|フィルターが [ **フォルダーを** 指定して検索] ダイアログボックスの一般的なフィルターの1つであることを示します。 共通フィルターが [共通] としてマークされていない場合は、フィルター一覧に共通のフィルターが一覧表示されます。|
 |`CommonOpenFilesFilter`|フィルターが [ **ファイルを開く** ] ダイアログボックスの一般的なフィルターの1つであることを示します。 共通フィルターが [共通] としてマークされていない場合は、フィルター一覧に共通のフィルターが一覧表示されます。|
@@ -157,9 +157,9 @@ ms.locfileid: "80705868"
 
  既定では、フィルターにこれらのフラグが設定されていない場合、[ **既存項目の追加** ] ダイアログボックスと [ファイルを **開く** ] ダイアログボックスで、共通フィルターが一覧表示された後にフィルターが使用されます。 フィルターは、[ **フォルダーを** 選択して検索] ダイアログボックスでは使用されません。
 
- 次のすべての例は、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] の下にあります。
+ 次のすべての例は、レジストリの [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] の下にあります。
 
-## <a name="example"></a>例
+## <a name="example-4"></a>例 4
 
 ```
 {FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4} (The CLSID for Enterprise Projects)
@@ -170,16 +170,16 @@ ms.locfileid: "80705868"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新しいプロジェクトテンプレートのリソース ID。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|登録されているプロジェクトの種類のプロジェクトの既定のパス。|
 |`SortPriority`|REG_DWORD|`41 (x29)`|[新しいプロジェクトウィザード] ダイアログボックスに表示されるプロジェクトの並べ替え順序を設定します。|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|0は、この種類のプロジェクトが [新しいプロジェクト] ダイアログボックスにのみ表示されることを示します。|
 
- 次のすべての例は、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] の下にあります。
+ 次のすべての例は、レジストリの [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects] の下にあります。
 
-## <a name="example"></a>例
+## <a name="example-5"></a>例 5
 
 ```
 \{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3} (CLSID for Miscellaneous Files projects)
@@ -187,20 +187,20 @@ ms.locfileid: "80705868"
 \AddItemTemplates\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1
                                  (CLSID for Figures Project projects)
    @="#6"
-   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
+   "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\                    FigPrjProjectItems"
    "SortPriority"=dword:00000064
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|なし|次のエントリがその他のファイルプロジェクトエントリ用であることを示す既定値。|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|新しい項目の追加テンプレートファイルのリソース ID 値。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|[ **新しい項目の追加** ] ダイアログボックスに表示される項目の既定のパス。|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|[ **新しい項目の追加** ] ダイアログボックスのツリーノードに表示される並べ替え順序を設定します。|
 
- 次の例は、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] の下にあります。
+ 次の例は、レジストリのキー [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus] の下にあります。
 
-## <a name="example"></a>例
+## <a name="example-6"></a>例 6
 
 ```
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"
@@ -220,28 +220,28 @@ ms.locfileid: "80705868"
 
   最後のフィールドは、CTMENU リソースのバージョン番号を示します。 バージョン番号を変更することによって、もう一度メニューをマージできます。
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|メニュー情報を取得するリソース。|
 
- 次のすべての例は、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] の下にあります。
+ 次のすべての例は、レジストリの [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] の下にあります。
 
 ```
-\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
+\TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
    @="#7"
    "TemplatesDir"="<Visual Studio SDK installation path>\\VSIntegration\\Archive9.0\\FigPkgs\\FigPrj\\FigPrjProjects"
    "SortPriority"=dword:00000029
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|図プロジェクトの新しいプロジェクトテンプレートのリソース ID 値。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新しいプロジェクトディレクトリの既定のパス。 このディレクトリ内の項目は、[ **新しいプロジェクトウィザード** ] ダイアログボックスに表示されます。|
 |`SortPriority`|REG_DWORD|`41 (x29)`|[ **新しいプロジェクト** ] ダイアログボックスのツリーノードにプロジェクトを表示する順序を設定します。|
 |`NewProjectDialogOnly`|REG_DWORD|`0`|0は、この種類のプロジェクトが [ **新しいプロジェクト** ] ダイアログボックスにのみ表示されることを示します。|
 
- 次の例は、レジストリのキー [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] の下にあります。
+ 次の例は、レジストリのキー [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts] の下にあります。
 
 ```
 \FiguresProductSample
@@ -249,22 +249,22 @@ ms.locfileid: "80705868"
    "UseInterface"=dword:00000001
 ```
 
-|名前|種類|Data|説明|
+|名前|種類|データ|説明|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|登録されている VSPackage のクラス ID。|
 |`UseInterface`|REG_DWORD|`1`|1は、このプロジェクトとの対話に UI が使用されることを示します。 0は、UI インターフェイスがないことを示します。|
 
  新しいプロジェクトの種類を制御する .vsz ファイルには、多くの場合 RELATIVE_PATH エントリが含まれています。 このパスは、次のセットアップキーで、プロジェクトの種類の \ productdir エントリの下に指定されたパスに対する相対パスです。
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
 
  たとえば、エンタープライズフレームワークプロジェクトテンプレートでは、次のレジストリエントリが追加されます。
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Visual Studio\EnterpriseFrameworks\
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Studio\EnterpriseFrameworks\ Visual
 
  つまり、.vsz ファイルに PROJECT_TYPE = EF エントリを含めると、環境では、前に指定した ProductDir ディレクトリにある .vsz ファイルが検索されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [プロジェクト モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)
 - [プロジェクト ファクトリを使用したプロジェクト インスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

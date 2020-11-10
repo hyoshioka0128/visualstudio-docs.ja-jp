@@ -1,8 +1,10 @@
 ---
 title: フォルダー、IIS、Azure、または別の場所に Visual Studio アプリを配置する
 titleSuffix: ''
-description: 発行ウィザードを使用したアプリの発行オプションに関する詳細情報
-ms.custom: contperfq1
+description: 発行ツールを使用したアプリの発行オプションに関する詳細情報
+ms.custom:
+- SEO-VS-2020
+- contperfq1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928529"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382973"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>フォルダー、IIS、Azure、または別の場所にアプリを配置する
 
@@ -169,7 +171,7 @@ App Service への発行について詳しくは、次を参照してくださ�
 
 FTP または FTPS サーバーを使用すると、Azure 以外のサーバーにアプリケーションをデプロイできます。 アクセスできるファイル システムや他のサーバー (インターネットまたはイントラネット) にデプロイできます。他のクラウド サービスも含まれます。 Web デプロイ (ファイルまたは .ZIP) および FTP で使用できます。
 
-FTP または FTPS サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の**接続**情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
+FTP または FTPS サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の **接続** 情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
 
 - デプロイする構成。
 - 宛先から既存のファイルを削除するかどうか。
@@ -188,7 +190,7 @@ Visual Studio では任意の数の FTP または FTPS デプロイ プロファ
 
 IIS Web サーバーを使用すると、Azure 以外の Web サーバーにアプリケーションをデプロイできます。 アクセス可能な IIS サーバー (インターネットまたはイントラネット) にデプロイできます。これには他のクラウド サービスのものも含まれます。 Web 配置または Web 配置パッケージと連携できます。
 
-IIS Web サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の**接続**情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
+IIS Web サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の **接続** 情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
 
 - デプロイする構成。
 - 宛先から既存のファイルを削除するかどうか。
@@ -209,7 +211,7 @@ IIS での ASP.NET Core のトラブルシューティングのヘルプにつ�
 
 ## <a name="import-profile"></a>インポート プロファイル
 
-IIS または Azure App Service に発行するときに、プロファイルをインポートできます。 "*発行設定ファイル*" ( *\*.publishsettings*) を使用してデプロイを構成できます。 発行設定ファイルは、IIS または Azure App Service を使用して作成するか、手動で作成して Visual Studio にインポートすることができます。
+IIS または Azure App Service に発行するときに、プロファイルをインポートできます。 " *発行設定ファイル* " ( *\*.publishsettings* ) を使用してデプロイを構成できます。 発行設定ファイルは、IIS または Azure App Service を使用して作成するか、手動で作成して Visual Studio にインポートすることができます。
 
 発行設定ファイルを使用すると、各デプロイ プロファイルを手動で構成するよりも、デプロイ構成が簡素化され、チーム環境で作業しやすくなります。
 

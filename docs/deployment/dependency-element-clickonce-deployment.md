@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382963"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407680"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependency &gt; 要素 (ClickOnce 配置)
 インストールするアプリケーションのバージョンと、アプリケーションマニフェストの場所を指定します。
@@ -128,7 +128,7 @@ ms.locfileid: "94382963"
 ## <a name="remarks"></a>Remarks
  配置マニフェストには、通常、 `assemblyIdentity` アプリケーションマニフェストの名前とバージョンを識別する1つの要素があります。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
  次のコード例は、 `dependency` 配置マニフェストの要素を示して [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] います。
 
 ```xml
@@ -147,7 +147,7 @@ ms.locfileid: "94382963"
 </dependency>
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
  GAC に既にインストールされているアセンブリに対する依存関係を指定するコード例を次に示します。
 
 ```xml
@@ -158,7 +158,7 @@ ms.locfileid: "94382963"
 </dependency>
 ```
 
-## <a name="example"></a>例
+## <a name="example-3"></a>例 3
  共通言語ランタイムの特定のバージョンに対する依存関係を指定するコード例を次に示します。
 
 ```xml
@@ -169,7 +169,7 @@ ms.locfileid: "94382963"
 </dependency>
 ```
 
-## <a name="example"></a>例
+## <a name="example-4"></a>例 4
  オペレーティングシステムの依存関係を指定するコード例を次に示します。
 
 ```xml
