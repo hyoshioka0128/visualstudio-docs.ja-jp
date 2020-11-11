@@ -1,5 +1,7 @@
 ---
 title: 'ワークフローデザイナー-方法: ワークフローにコメントを追加する'
+description: .NET Framework 4.5 を使用して、開発者がデザイナーの特定の種類の項目 (アクティビティ、状態、遷移項目など) に注釈を追加できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815501"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437958"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>ワークフロー デザイナーでワークフローにコメントを追加する方法
 
@@ -39,7 +41,7 @@ ms.locfileid: "85815501"
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>デザイナーのアクティビティへの注釈の追加
 
-1. ワークフローデザイナーで、ワークフローデザイナーの項目を右クリックし、[ **注釈**]、[ **注釈の追加**] の順に選択します。
+1. ワークフローデザイナーで、ワークフローデザイナーの項目を右クリックし、[ **注釈** ]、[ **注釈の追加** ] の順に選択します。
 
 1. 注釈のテキストを提供された領域に追加します。
 
@@ -59,21 +61,21 @@ ms.locfileid: "85815501"
 
 ## <a name="showing-or-hiding-all-annotations"></a>すべての注釈の表示または非表示
 
-1. 注釈を持つアクティビティを右クリックします。 **注釈**を選択し、**すべての注釈を表示**します。
+1. 注釈を持つアクティビティを右クリックします。 **注釈** を選択し、 **すべての注釈を表示** します。
 
    すべての注釈は、アクティビティのデザイナーに表示されます。
 
-1. アクティビティのデザイナーの外側にあるすべての注釈を表示するには、アクティビティを右クリックし、[ **注釈**] を選択して、 **すべての注釈を非表示**にします。
+1. アクティビティのデザイナーの外側にあるすべての注釈を表示するには、アクティビティを右クリックし、[ **注釈** ] を選択して、 **すべての注釈を非表示** にします。
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>アクティビティの注釈の編集または削除
 
 1. 注釈を持つアクティビティを右クリックします。
 
-1. **注釈**の選択、注釈の**編集**、または**注釈の削除**を行います。
+1. **注釈** の選択、注釈の **編集** 、または **注釈の削除** を行います。
 
    編集または削除するために注釈が開かれています。
 
-1. すべての注釈を一度に削除するには、ワークフローデザイナーを右クリックし、[ **注釈**]、[ **すべての注釈を削除**] の順に選択します。
+1. すべての注釈を一度に削除するには、ワークフローデザイナーを右クリックし、[ **注釈** ]、[ **すべての注釈を削除** ] の順に選択します。
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>変数または引数の注釈の追加、編集、削除
 

@@ -1,5 +1,7 @@
 ---
 title: ワークフロー デザイナーでのエラー メッセージ
+description: ワークフローデザイナーの操作時に発生する可能性のあるエラーメッセージの種類について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f3886739cbc6deefd13570ae0f49da7e89ad9b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597049"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438036"
 ---
 # <a name="error-messages-in-workflow-designer"></a>ワークフロー デザイナーでのエラー メッセージ
 
@@ -37,7 +39,7 @@ ms.locfileid: "75597049"
 
 無効な式や検証制約違反によって、ワークフローの構築が失敗することはありません。 ワークフローのビルドは成功しますが、 <xref:System.Activities.InvalidWorkflowException> 実行時にがスローされます。 XAML ファイルにエラーがある場合は、構築が失敗します。
 
-Visual Studio 内では、ワークフローが読み込まれると、そのエラーが **エラー一覧**に表示されます。 エラーの原因となっているアクティビティに移動するには、 **エラー一覧**でエラーをダブルクリックします。
+Visual Studio 内では、ワークフローが読み込まれると、そのエラーが **エラー一覧** に表示されます。 エラーの原因となっているアクティビティに移動するには、 **エラー一覧** でエラーをダブルクリックします。
 
 ### <a name="expression-errors"></a>式のエラー
  無効な式が赤い円で示され、その式の横に白い感嘆符が付いています。 このアイコンの上にカーソルを置くと、エラーの原因を表すツールヒントが表示されます。 Visual Studio 内で式をクリックすると、エラーの原因を示す行が表示されます。 下線が引かれたテキストの上にカーソルを置くと、エラーの発生元を示すツールヒントが表示されます。

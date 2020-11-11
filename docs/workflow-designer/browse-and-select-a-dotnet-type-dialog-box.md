@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-[.NET 型の参照と選択] ダイアログボックス
+description: '[.NET 型の参照と選択] ダイアログボックスを使用して、アセンブリとプロジェクトのツリービューから型を選択する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597114"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438179"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 
@@ -55,7 +57,7 @@ ms.locfileid: "75597114"
 
 ## <a name="types-displayed-in-the-type-browser"></a>型ブラウザーに表示される型
 
-型ブラウザーに表示される型は、型ブラウザーを起動した方法に応じて変わる場合があります。 **Vs2010**内のワークフロープロジェクトから型ブラウザーを起動した場合、既定では、参照されたアセンブリと参照されるプロジェクトのすべての型が表示されます。 **Vs2010**プロジェクトシステム (再ホストされたワークフローアプリケーションやスタンドアロンワークフローファイルなど) の外部から型ブラウザーを起動した場合、既定では、AppDomain に読み込まれたすべてのアセンブリの型が表示されます。
+型ブラウザーに表示される型は、型ブラウザーを起動した方法に応じて変わる場合があります。 **Vs2010** 内のワークフロープロジェクトから型ブラウザーを起動した場合、既定では、参照されたアセンブリと参照されるプロジェクトのすべての型が表示されます。 **Vs2010** プロジェクトシステム (再ホストされたワークフローアプリケーションやスタンドアロンワークフローファイルなど) の外部から型ブラウザーを起動した場合、既定では、AppDomain に読み込まれたすべてのアセンブリの型が表示されます。
 
 アクティビティ デザイナーの開発者は、型ブラウザーの型をフィルター処理できます。 どのアクティビティでも、表示されるのは型のサブセットのみです。 たとえば、<xref:System.Activities.Statements.TryCatch> アクティビティでは、<xref:System.Exception> から派生した型のみが型ブラウザーに表示されます。
 
@@ -67,12 +69,12 @@ ms.locfileid: "75597114"
 
 1. 入力 **操作** はと一致 <xref:System.OperationCanceledException> しますが、は一致しません <xref:System.InvalidOperationException> 。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
-2. **汎用**一致を入力し <xref:System.GenericUriParser> ますが、名前空間には型を指定しません <xref:System.Collections.Generic> 。 名前空間の型を検索するには、 <xref:System.Collections.Generic> 名前空間の完全修飾名を入力します。
+2. **汎用** 一致を入力し <xref:System.GenericUriParser> ますが、名前空間には型を指定しません <xref:System.Collections.Generic> 。 名前空間の型を検索するには、 <xref:System.Collections.Generic> 名前空間の完全修飾名を入力します。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>型ブラウザー ダイアログを使用したサービス コントラクトの選択
 
 サービス コントラクト型を選択すると、型ブラウザーは <xref:System.ServiceModel.ServiceContractAttribute> 属性を持つ型だけを表示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)
