@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731504"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407745"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF デバッグの制約
 WCF サービスのデバッグを開始するには、次の 3 つの方法があります。
@@ -74,9 +74,8 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
   ```
 
 ## <a name="self-hosting"></a>セルフホスト
- *セルフホストされているサービス*とは、IIS 内部で実行されていない WCF サービス、WCF サービス ホスト、または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーです。 セルフホストされているサービスをデバッグする方法については、「[方法: セルフホストされている WCF サービスをデバッグする](../debugger/how-to-debug-a-self-hosted-wcf-service.md)」を参照してください。
+ *セルフホストされているサービス* とは、IIS 内部で実行されていない WCF サービス、WCF サービス ホスト、または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーです。 セルフホストされているサービスをデバッグする方法については、「[方法: セルフホストされている WCF サービスをデバッグする](../debugger/how-to-debug-a-self-hosted-wcf-service.md)」を参照してください。
 
-## <a name="self-hosting"></a>セルフホスト
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 または 3.5 アプリケーションのデバッグを可能にするには、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] をインストールする前に [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 3.0 または 3.5 をインストールする必要があります。 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] が [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 または 3.5 より前にインストールされていると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 または 3.5 アプリケーションのデバッグ時にエラーが発生します。 エラー メッセージは、「サーバーに自動的にステップ インできません。」です。 この問題を解決するには、Windows の **[コントロール パネル]**  >  **[プログラムと機能]** を使用して、[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] のインストールを修復します。
 
 ## <a name="see-also"></a>関連項目

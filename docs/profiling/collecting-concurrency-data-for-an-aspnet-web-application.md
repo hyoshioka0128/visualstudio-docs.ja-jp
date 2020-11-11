@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f2c965866cdd8494af53748e4023196d84136553
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811137"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407706"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用した ASP.NET Web アプリケーションのコンカレンシー データの収集
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]プロファイリング ツールのコンカレンシー メソッドを使用すると、リソース競合データを収集できます。
@@ -54,5 +54,5 @@ ms.locfileid: "90811137"
 
 - [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>リファレンス
+## <a name="see-also"></a>関連項目
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)

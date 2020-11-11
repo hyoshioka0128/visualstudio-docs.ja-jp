@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099428"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399254"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio の機能
 
@@ -20,7 +20,7 @@ Visual Studio の基礎については、「[Visual Studio IDE の概要](../get
 
 ## <a name="modular-installation"></a>モジュール式インストール
 
-Visual Studio のモジュール式インストーラーを使用すると、"*ワークロード*" を選択してインストールすることができます。 ワークロードは、任意のプログラミング言語またはプラットフォームで必要とされる機能のグループです。 この方法により、Visual Studio のインストールのフットプリントが小さくなり、インストールと更新に要する時間が短縮されました。
+Visual Studio のモジュール式インストーラーを使用すると、" *ワークロード* " を選択してインストールすることができます。 ワークロードは、任意のプログラミング言語またはプラットフォームで必要とされる機能のグループです。 この方法により、Visual Studio のインストールのフットプリントが小さくなり、インストールと更新に要する時間が短縮されました。
 
 ::: moniker range="vs-2017"
 
@@ -38,29 +38,29 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Azure 用のクラウド対応アプリの作成
 
-Visual Studio には、Microsoft Azure を使用するクラウド ファーストのアプリケーションを簡単に作成できるツールのスイートが用意されています。 これにより、IDE から直接 Microsoft Azure でアプリケーションとサービスを簡単に構成、ビルド、デバッグ、パッケージ化、およびデプロイできます。 Azure Tools およびプロジェクト テンプレートを入手するには、Visual Studio をインストールするときに **Azure 開発**ワークロードを選択します。
+Visual Studio には、Microsoft Azure を使用するクラウド ファーストのアプリケーションを簡単に作成できるツールのスイートが用意されています。 これにより、IDE から直接 Microsoft Azure でアプリケーションとサービスを簡単に構成、ビルド、デバッグ、パッケージ化、およびデプロイできます。 Azure Tools およびプロジェクト テンプレートを入手するには、Visual Studio をインストールするときに **Azure 開発** ワークロードを選択します。
 
 ![[Azure の開発] ワークロード](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
-**Azure 開発**ワークロードのインストール後は、 **[新しいプロジェクト]** ダイアログ ボックスで、以下に示す C# 用 **[クラウド]** テンプレートを使用することができます。
+**Azure 開発** ワークロードのインストール後は、 **[新しいプロジェクト]** ダイアログ ボックスで、以下に示す C# 用 **[クラウド]** テンプレートを使用することができます。
 
 ![Visual Studio 用のクラウド プロジェクト テンプレート](media/cloud-project-templates.png)
 
 ::: moniker-end
 
-Visual Studio の [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) では、Visual Studio 内の Azure ベースのクラウド リソースを表示および管理できます。 これらのリソースには仮想マシン、テーブル、SQL データベースなどが含まれる場合があります。 **Cloud Explorer** には、ユーザーがログインしている Azure サブスクリプションで管理されているすべてのアカウントに含まれる Azure リソースが表示されます。 特定の操作で Azure Portal が必要な場合は、**Cloud Explorer** によって提供されるリンクから Azure Portal 内の目的の場所に移動できます。
+Visual Studio の [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) では、Visual Studio 内の Azure ベースのクラウド リソースを表示および管理できます。 これらのリソースには仮想マシン、テーブル、SQL データベースなどが含まれる場合があります。 **Cloud Explorer** には、ユーザーがログインしている Azure サブスクリプションで管理されているすべてのアカウントに含まれる Azure リソースが表示されます。 特定の操作で Azure Portal が必要な場合は、 **Cloud Explorer** によって提供されるリンクから Azure Portal 内の目的の場所に移動できます。
 
 ![Visual Studio の Cloud Explorer](media/cloud-explorer.png)
 
-次のような**接続済みサービス**を使用して、アプリに Azure のサービスを活用することができます。
+次のような **接続済みサービス** を使用して、アプリに Azure のサービスを活用することができます。
 
 - ユーザーが [Azure Active Directory](/azure/active-directory/active-directory-whatis) からのアカウントを使用して Web アプリに接続するための [Active Directory 接続済みサービス](/azure/active-directory/develop/vs-active-directory-add-connected-service)
 - BLOB ストレージ、キュー、およびテーブル用の [Azure Storage 接続済みサービス](/azure/vs-azure-tools-connected-services-storage)
 - Web アプリのシークレットを管理する [Key Vault 接続済みサービス](/azure/key-vault/vs-key-vault-add-connected-service)
 
-使用できる**接続済みサービス**はプロジェクトの種類によって異なります。 サービスを追加するには、**ソリューション エクスプローラー**内のプロジェクトを右クリックし、 **[追加]**  >  **[接続済みサービス]** の順に選択します。
+使用できる **接続済みサービス** はプロジェクトの種類によって異なります。 サービスを追加するには、 **ソリューション エクスプローラー** 内のプロジェクトを右クリックし、 **[追加]**  >  **[接続済みサービス]** の順に選択します。
 
 ![Visual Studio の接続済みサービス](media/connected-services.png)
 
@@ -82,7 +82,7 @@ Visual Studio を使用して、macOS、Linux、Windows 用のアプリおよび
 
 - 標準的な Web テクノロジである &mdash;HTML、CSS、および JavaScript&mdash; を使用して iOS、Android、および Windows 用のモバイル アプリをビルドするには、[Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) を使用します。
 
-- [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) を使用して、C# で 2D および 3D ゲームをビルドします。
+- [Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) を使用して、C# で 2D および 3D ゲームをビルドします。
 
 - iOS、Android、および Windows デバイス用のネイティブ C++ アプリをビルドします。 [C++ for Cross-Platform Development](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development) を使用することによって、iOS、Android、および Windows 用にビルドされたライブラリ内で共通コードを共有します。
 
@@ -90,11 +90,11 @@ Visual Studio を使用して、macOS、Linux、Windows 用のアプリおよび
 
 ## <a name="connect-to-databases"></a>データベースへの接続
 
-**サーバー エクスプローラー**は、ローカル、リモートで、また Azure、Salesforce.com、Microsoft 365、および Web サイトで SQL Server インスタンスとアセットを参照および管理するのに役立ちます。 **サーバー エクスプローラー**を開くには、メイン メニューで **[表示]**  >  **[サーバー エクスプローラー]** の順に選択します。 サーバー エクスプローラーの使用方法の詳細については、「[新しい接続を追加する](../data-tools/add-new-connections.md)」をご覧ください。
+**サーバー エクスプローラー** は、ローカル、リモートで、また Azure、Salesforce.com、Microsoft 365、および Web サイトで SQL Server インスタンスとアセットを参照および管理するのに役立ちます。 **サーバー エクスプローラー** を開くには、メイン メニューで **[表示]**  >  **[サーバー エクスプローラー]** の順に選択します。 サーバー エクスプローラーの使用方法の詳細については、「[新しい接続を追加する](../data-tools/add-new-connections.md)」をご覧ください。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) は、SQL Server、Azure SQL Database、Azure SQL Data Warehouse 用の強力な開発環境です。 データベースを構築、デバッグ、管理、およびリファクターできます。 データベース プロジェクトを操作したり、オンプレミスまたはオフプレミスで接続されたデータベース インスタンスを直接操作したりすることができます。
 
-Visual Studio の **SQL Server オブジェクト エクスプローラー**では、SQL Server Management Studio と同様のデータベース オブジェクトのビューを提供します。 SQL Server オブジェクト エクスプローラーを使用すると、データベースの簡易的な管理作業および設計作業を行うことができます。 作業の例としては、SQL Server オブジェクト エクスプローラーから直接表示するコンテキスト メニューを使用したクエリの実行、テーブル データの編集、スキーマの比較などが挙げられます。
+Visual Studio の **SQL Server オブジェクト エクスプローラー** では、SQL Server Management Studio と同様のデータベース オブジェクトのビューを提供します。 SQL Server オブジェクト エクスプローラーを使用すると、データベースの簡易的な管理作業および設計作業を行うことができます。 作業の例としては、SQL Server オブジェクト エクスプローラーから直接表示するコンテキスト メニューを使用したクエリの実行、テーブル データの編集、スキーマの比較などが挙げられます。
 
 ![[SQL Server オブジェクト エクスプローラー]](../ide/media/vs2015_sqlobjectexplorer.png)
 
@@ -118,7 +118,7 @@ Azure DevOps Services はクラウド ベースのサービスであり、ソフ
 
 Team Foundation Server (TFS) は、Visual Studio のアプリケーション ライフサイクル管理のハブです。 これにより、開発プロセスに関わるすべてのユーザーが 1 つのソリューションを使用して参加できるようになります。 TFS は、異種混合のチームやプロジェクトを管理するのにも役立ちます。
 
-Azure DevOps 組織または Team Foundation Server がネットワーク上にある場合、Visual Studio の **[チーム エクスプローラー]** ウィンドウから接続することができます。 このウィンドウからソース管理にコードをチェックインしたりソース管理からコードをチェックアウトできます。また、作業項目を管理したり、ビルドを開始したり、チームのルームやワークスペースにアクセスできます。 **チーム エクスプローラー**は、検索ボックスから開くか、メイン メニューの **[ビュー]**  >  **[チーム エクスプローラー]** または **[チーム]**  >  **[接続の管理]** を選択して開くことができます。
+Azure DevOps 組織または Team Foundation Server がネットワーク上にある場合、Visual Studio の **[チーム エクスプローラー]** ウィンドウから接続することができます。 このウィンドウからソース管理にコードをチェックインしたりソース管理からコードをチェックアウトできます。また、作業項目を管理したり、ビルドを開始したり、チームのルームやワークスペースにアクセスできます。 **チーム エクスプローラー** は、検索ボックスから開くか、メイン メニューの **[ビュー]**  >  **[チーム エクスプローラー]** または **[チーム]**  >  **[接続の管理]** を選択して開くことができます。
 
 次の図は、Azure DevOps Services でホストされているソリューションの **[チーム エクスプローラー]** ウィンドウを示しています。
 

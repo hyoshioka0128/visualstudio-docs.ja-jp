@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099441"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414322"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
@@ -43,7 +43,7 @@ ms.locfileid: "92099441"
 
 次の一覧は、Visual Studio 2017 より前のバージョンで作成されたプロジェクトに対する Visual Studio 2017 でのサポートをまとめたものです。
 
-一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2015 バージョン](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
+一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、 [この記事の Visual Studio 2015 バージョン](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
@@ -91,7 +91,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 ただし、この記事で説明されている一部のプロジェクトの種類のように、このような互換性が不可能な場合は、Visual Studio はアップグレード ウィザードを開いて必要な一方向の変更を行います。
 
-このような一方向の変更には、プロジェクト ファイルでの `ToolsVersion` プロパティの変更が含まれます。これは、最終的に必要な実行可能で配置可能なアーティファクトにプロジェクトのソース コードを変換できる MSBuild の正確なバージョンを示します。 つまり、プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトでの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている限り、Visual Studio をそのツールチェーンを呼び出してプロジェクトをビルドできます。
+このような一方向の変更には、プロジェクト ファイルでの `ToolsVersion` プロパティの変更が含まれます。これは、最終的に必要な実行可能で配置可能なアーティファクトにプロジェクトのソース コードを変換できる MSBuild の正確なバージョンを示します。 つまり、プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、 *Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトでの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている限り、Visual Studio をそのツールチェーンを呼び出してプロジェクトをビルドできます。
 
 以前のバージョンで作成されたプロジェクトとの最大限の互換性を維持するため、Visual Studio 2017 には、`ToolsVersion` 15、14、12、4 をサポートするために必要な MSBuild ツールチェーンが含まれています。 これらの `ToolsVersion` 値のいずれかを使うプロジェクトでは、ビルドが成功するはずです (やはり、「[Visual Studio 2017 の対象プラットフォームと互換性](/visualstudio/productinfo/vs2017-compatibility-vs)」で説明されているように、Visual Studio 2017 がプロジェクトの種類をサポートするかどうかに依存します)。
 
@@ -185,7 +185,7 @@ Microsoft では、以前のバージョンとの互換性を維持しようと�
 
 場合によっては、互換性を実現できないことがあります。 その場合、Visual Studio によって、必要な一方向の変更を加えるためのアップグレード ウィザードが開かれます。 これらの一方向の変更には、プロジェクト ファイルの `ToolsVersion` プロパティの変更が含まれる場合があります。このプロパティにより、プロジェクトのソース コードを目的の実行可能で配置可能な成果物に変換できる、MSBuild の正確なバージョンが示されます。
 
-プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている場合、Visual Studio ではそのツールチェーンを呼び出してプロジェクトをビルドすることができます。
+プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、 *Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている場合、Visual Studio ではそのツールチェーンを呼び出してプロジェクトをビルドすることができます。
 
 以前のバージョンで作成したプロジェクトとの互換性を維持するため、Visual Studio 2019 には、`ToolsVersion` 15、14、12、4 をサポートするために必要な MSBuild ツールチェーンが含まれています。 これらの `ToolsVersion` 値のいずれかを使うプロジェクトでは、ビルドが成功するはずです (やはり、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事で説明されているように、Visual Studio 2019 がそのプロジェクトの種類をサポートするかどうかに依存します)。
 

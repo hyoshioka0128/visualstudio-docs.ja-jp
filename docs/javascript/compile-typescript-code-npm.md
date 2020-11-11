@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927901"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414374"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript コードのコンパイル (Node.js)
 
@@ -115,7 +115,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
 ### <a name="run-the-application"></a>アプリケーションの実行
 
-アプリをコンパイルした後に実行する手順については、[初めての Node.js アプリの作成](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)に関するページを参照してください。
+アプリをコンパイルした後に実行する手順については、[初めての Node.js アプリの作成](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application)に関するページを参照してください。
 
 ## <a name="automate-build-tasks"></a>ビルド タスクの自動化
 

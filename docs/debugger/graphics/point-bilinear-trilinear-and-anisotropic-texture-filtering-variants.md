@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 075fc9c4be3890ce9a63c1aa79762dbd8ceaeea5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262930"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407563"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>ポイント、バイリニア、トリリニア、およびアニソトロピック テクスチャ フィルタリング バリアント
 適切なテクスチャのサンプラーでフィルタリング モードをオーバーライドします。
@@ -54,14 +54,14 @@ ms.locfileid: "66262930"
 
 - `D3D11_FILTER_ANISOTROPIC`
 
-  **Point Texture Filtering** バリアントでは、アプリケーションが提供したフィルター モードが `D3D11_FILTER_MIN_MAG_MIP_POINT` に置き換えられます。**Bilinear Texture Filtering** バリアントでは、`D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT` に置き換えられ、**Trilinear Texture Filtering** バリアントでは `D3D11_FILTER_MIN_MAG_MIP_LINEAR` に置き換えられます。
+  **Point Texture Filtering** バリアントでは、アプリケーションが提供したフィルター モードが `D3D11_FILTER_MIN_MAG_MIP_POINT` に置き換えられます。 **Bilinear Texture Filtering** バリアントでは、`D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT` に置き換えられ、 **Trilinear Texture Filtering** バリアントでは `D3D11_FILTER_MIN_MAG_MIP_LINEAR` に置き換えられます。
 
   **Anisotropic Texture Filtering** バリアントでは、アプリケーションが提供したフィルター モードは `D3D11_FILTER_ANISOTROPIC` に置き換えられ、Max Anisotropy は 16 に設定されます。
 
 ## <a name="restrictions-and-limitations"></a>制約と制限
  Direct3D では機能レベル 9.1 は、最大異方性が 2x であることを表します。 **Anisotropic Texture Filtering** バリアントは 16x の異方性のみを使おうとするため、機能レベル 9.1 のデバイス上でフレーム分析を実行すると再生は失敗します。 この制約の影響を受ける現在のデバイスには、ARM ベースの Surface RT、および Surface 2 Windows タブレットが含まれています。 コンピューターの中には古い GPU が存在している可能性があり、これらの GPU も影響を受けます。ただし、これらは一般的には使われておらず、問題にならなくなっています。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
  **ポイント テクスチャ フィルタリング** バリアントは、次のようなコードを使用して再現することができます。
 
 ```cpp
@@ -75,7 +75,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
  **バイリニア テクスチャ フィルタリング** バリアントは、次のようなコードを使用して再現することができます。
 
 ```cpp
@@ -89,7 +89,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>例
+## <a name="example-3"></a>例 3
  **トリリニア テクスチャ フィルタリング** バリアントは次のようなコードを使用して再現することができます。
 
 ```cpp
@@ -103,7 +103,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>例
+## <a name="example-4"></a>例 4
  **アニソトロピック テクスチャ フィルタリング** バリアントは、次のようなコードを使用して再現することができます。
 
 ```cpp

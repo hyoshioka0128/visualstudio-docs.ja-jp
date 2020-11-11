@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 073943d8b6a3dbf5ee3af653a43046c3b389fbfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348406"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407641"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>方法: ランタイム エラー レポート関数を記述する (C++)
 ランタイム エラーのカスタム レポート関数には、`_CrtDbgReportW` と同じ宣言を使用する必要があります。 デバッガーへの戻り値は 1 です。
 
 次の例は、カスタム レポート関数の定義方法を示しています。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
 ```cpp
 #include <stdio.h>
@@ -61,7 +61,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 次の例は、より複雑なカスタム レポート関数を示しています。 この例では、switch ステートメントによって、各種のエラーが `reportType` の `_CrtDbgReportW` パラメーターの定義に従って処理されます。 `_CrtDbgReportW` を置き換えるため、`_CrtSetReportMode` は使用できません。 関数では、出力を処理する必要があります。 この関数の最初の可変個の引数には、ランタイム エラー番号を使用します。 詳細については、「[_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype)」を参照してください。
 
 ```cpp
@@ -106,7 +106,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)
 ```
 
-## <a name="example"></a>例
+## <a name="example-3"></a>例 3
 `_RTC_SetErrorFuncW` の代わりにカスタム関数を組み込むには、`_CrtDbgReportW` を使用します。 詳細については、「[_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)」を参照してください。 `_RTC_SetErrorFuncW` の戻り値は、直前のレポート関数であり、必要に応じて保存して復元できます。
 
 ```cpp
