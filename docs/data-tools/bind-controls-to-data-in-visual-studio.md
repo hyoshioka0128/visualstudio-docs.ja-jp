@@ -1,6 +1,7 @@
 ---
 title: コントロールをデータにバインドする
 description: Visual Studio のデータにコントロールをバインドします。 [データソース] ウィンドウから項目をドラッグして、データバインドコントロールを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382170"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518623"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへのコントロールのバインド
 
@@ -31,7 +32,7 @@ ms.locfileid: "94382170"
 
 データバインディングのコンテキストでは、データソースは、ユーザーインターフェイスにバインドできるメモリ内のデータを表します。 実際には、データソースは、Entity Framework クラス、データセット、.NET プロキシオブジェクト、LINQ to SQL クラス、または任意の .NET オブジェクトまたはコレクションにカプセル化されたサービスエンドポイントにすることができます。 一部のデータ ソースでは、 **[データ ソース]** ウィンドウから項目をドラッグすることによりデータ バインディング コントロールを作成できますが、その他のデータ ソースではできません。 サポートされるデータ ソースを次の表に示します。
 
-| データ ソースの | **Windows フォーム デザイナー** でのドラッグ アンド ドロップのサポート | **WPF デザイナー** でのドラッグ アンド ドロップのサポート | **Silverlight デザイナー** でのドラッグ アンド ドロップのサポート |
+| データ ソース | **Windows フォーム デザイナー** でのドラッグ アンド ドロップのサポート | **WPF デザイナー** でのドラッグ アンド ドロップのサポート | **Silverlight デザイナー** でのドラッグ アンド ドロップのサポート |
 | - | - | - | - |
 | データセット | はい | はい | いいえ |
 | エンティティ データ モデル | 可<sup>1</sup> | はい | はい |
@@ -56,7 +57,7 @@ ms.locfileid: "94382170"
 
 次の表に、コントロールをデータにバインドするために実行する最も一般的なタスクの一部を示します。
 
-|タスク|説明|
+|タスク|詳細情報|
 |----------| - |
 |**[データ ソース]** ウィンドウを開く。|エディターでデザインサーフェイスを開き、[ **View**  >  **データソース** の表示] を選択します。|
 |プロジェクトにデータ ソースを追加する。|[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)|

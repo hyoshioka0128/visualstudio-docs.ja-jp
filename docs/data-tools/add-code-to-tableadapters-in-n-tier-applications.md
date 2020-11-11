@@ -1,6 +1,7 @@
 ---
 title: n 層アプリケーションの TableAdapters にコードを追加する
 description: N 層アプリケーションのテーブルアダプターにコードを追加します。 TableAdapter の部分クラスファイルを作成し、それにコードを追加します (DatasetName ではなく)。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382365"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518701"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
 Tableadapter の部分クラスファイルを作成し、そのファイルにコードを追加することにより、TableAdapter の機能を拡張できます (コードを *DatasetName* ファイルに追加するのではなく)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [partial](/dotnet/visual-basic/language-reference/modifiers/partial) または [partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)」を参照してください。

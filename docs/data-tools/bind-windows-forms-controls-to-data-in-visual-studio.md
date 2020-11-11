@@ -1,6 +1,7 @@
 ---
 title: Windows フォーム コントロールをデータにバインドする
 description: Windows フォームコントロールを Visual Studio のデータにバインドして、アプリケーションのユーザーにデータを表示できるようにします。
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382378"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518649"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへの Windows フォーム コントロールのバインド
 
