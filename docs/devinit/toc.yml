@@ -80,7 +80,7 @@
           href: sample-eshoponweb.md
         - name: OpenCV リポジトリ
           href: sample-opencv.md
-        - name: Codespaces プライベート プレビュー
+        - name: Codespaces プライベート ベータ版
           href: sample-private-preview.md
         - name: .NET Core アプリ
           href: sample-dotnet-core.md

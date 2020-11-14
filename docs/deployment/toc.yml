@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Microsoft Store のデスクトップ アプリをパッケージ化する
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: ClickOnce を使用してデスクトップ アプリを配置する
+        - name: ClickOnce を使用して .NET Windows アプリケーションを配置する
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: ClickOnce を使用して .NET Framework デスクトップ アプリを配置する
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: ClickOnce アプリケーションのコマンド ラインからのビルド
           href: building-clickonce-applications-from-the-command-line.md

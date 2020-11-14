@@ -1,19 +1,19 @@
 ---
 title: 開発者が Visual Studio サブスクリプションから、プロダクト キーを使用してソフトウェアをアクティブ化するにはどうすればよいですか?
 description: サブスクライバーがダウンロードした製品に応じて、...に関連付けられているメール アドレスを使用してログインすることでアクティブ化できます
-ms.faqid: group2_3
+ms.faqid: group2_4
 ms.topic: include
 ms.assetid: 248726b6-1e50-481c-aabf-0f509da5d710
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: dee077427b766d7f5d9162ff398ff10575fbd8c1
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.date: 11/10/2020
+ms.openlocfilehash: f4e3486b14094872c31595f2ac9ebc0fadf2fef6
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838330"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575515"
 ---
 ## <a name="how-do-my-developers-activate-software-using-product-keys-from-their-visual-studio-subscription"></a>開発者が Visual Studio サブスクリプションから、プロダクト キーを使用してソフトウェアをアクティブ化するにはどうすればよいですか?
 
-サブスクライバーがダウンロードした製品に応じて、サブスクリプションに関連付けられているメール アドレスを使用してログインすることでアクティブ化できます。または、サブスクライバーは Visual Studio サブスクライバー ポータルから[プロダクト キーを要求する](../../../../product-keys.md)ことで、アクティブ化できます。
+サブスクライバーがダウンロードした製品に応じて、サブスクリプションに関連付けられているメール アドレスを使用してログインすることでアクティブ化できます。または、サブスクライバーは Visual Studio サブスクライバー ポータルから[プロダクト キーを要求する](https://docs.microsoft.com/visualstudio/subscriptions/product-keys)ことで、アクティブ化できます。

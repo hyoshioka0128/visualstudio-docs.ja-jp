@@ -6,6 +6,8 @@
       href: whats-new-msbuild-16-0.md
     - name: MSBuild 15.0 の新機能
       href: what-s-new-in-msbuild-15-0.md
+    - name: 流れの変化
+      href: change-waves.md
     - name: MSBuild の概念
       items:
         - name: 概要
