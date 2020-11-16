@@ -7,12 +7,12 @@ author: evanwindom
 ms.author: v-evwin
 ms.date: 11/12/2020
 ms.faqid: q3_4
-ms.openlocfilehash: afcfa047e8b6b26f8e5d3648c91d684c13d8a59d
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 7e38e477cbcbe17ce5407ba87cd7f26b35b4d174
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575562"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94633425"
 ---
 ## <a name="how-do-i-download-find-a-key-and-activate-the-visual-studio-ide"></a>Visual Studio IDE のダウンロード、キーの検索、アクティブ化はどのようにして行いますか?
 サブスクリプション レベルによって、アクセスできる Visual Studio IDE のレベルが特定されます。 たとえば、Visual Studio Professional サブスクリプションは Visual Studio Enterprise にはアクセスできません。 使用しているレベルがわからない場合は、ポータルの[サブスクリプション ページ](https://my.visualstudio.com/subscriptions)を確認して、利用可能なサブスクリプションを確認してください。 
@@ -25,4 +25,4 @@ ms.locfileid: "94575562"
 0. サブスクリプションが割り当てられている電子メールを使用すると、インストール後すぐに IDE にサインインできるようになります。 **プロダクト キーは必要ありません** 。 オフライン環境で[プロダクト キーを要求する](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)方法について説明します。
 
 ### <a name="find-an-older-version"></a>旧バージョンを検索する 
-サブスクリプション ポータルの [ダウンロード ページ](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20mac&pgroup=)で、旧バージョンを検索してダウンロードすることもできます。
+サブスクリプション ポータルの [ダウンロード ページ](https://my.visualstudio.com/Downloads?q=visual%20studio&pgroup=)で、旧バージョンを検索してダウンロードすることもできます。
