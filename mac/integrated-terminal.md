@@ -1,23 +1,23 @@
 ---
 title: Visual Studio for Mac - 統合ターミナル
-description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
+description: Visual Studio for Mac の統合ターミナルを使用する。
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/14/2020
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
-ms.openlocfilehash: d362938e8f0075591ea5d4ed8461d11395680b5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f91c2b1c3f06f8f1fbe54e32fde70b9fe88c5f5d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84185675"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492873"
 ---
 # <a name="integrated-terminal"></a>統合ターミナル
 Visual Studio for Mac では、統合ターミナル ウィンドウを開くことができ、最初はご利用のソリューションのルートから開始します。 ターミナルは、フロントエンド タスクの実行 (npm、ng、vue など)、コンテナーの管理、高度な git コマンドの実行、Entity Framework コマンドの実行、dotnet CLI 出力の表示、NuGet パッケージの追加など、さまざまな種類の状況で役に立ちます。 
 
 ターミナルを開くには:
 - **Ctrl + `** キーボード ショートカットを使用して、ターミナル ウィンドウの表示と非表示を切り替えます。
-- **[表示]** \> **[パッド]** \> **[ターミナル]** メニューを使用します。
+- **[表示]** の **[ターミナル]** メニューを使用します。
 - 検索バーから **terminal** コマンドを使用します。
 
 ![\* 起動直後の Visual Studio for Mac 統合ターミナル *](media/integrated-terminal-intro.png)
@@ -45,11 +45,11 @@ Visual Studio for Mac では、統合ターミナル ウィンドウを開くこ
 ## <a name="multiple-instances"></a>複数インスタンス
 ターミナルの複数のインスタンスをいつでも実行できます。 **Ctrl+'** キーボード ショートカットを使用して新しいインスタンスを作成できます。 インスタンスを切り替えるには、各インスタンスのタブをクリックするか、**Ctrl + tab** ショートカットを使用してウィンドウ ピッカー ダイアログを使用します。
 
-![\* Visual Studio for Mac 内の複数のターミナル インスタンス *](media/integrated-terminal-multiple-instances.png) 
+![\* Visual Studio for Mac 内の複数のターミナル インスタンス *](media/integrated-terminal-multiple-instances.png) 
 
 ## <a name="customizing-the-terminal-window"></a>ターミナル ウィンドウのカスタマイズ
 ### <a name="configuring-the-terminal-font"></a>ターミナル フォントの構成
-ターミナル コンテンツに使用されるフォントとサイズは、[基本設定] > [環境] > [フォント] ウィンドウで変更できます。 既定では、フォントは出力パッドのコンテンツと同じで、Menlo Regular、サイズ 11 を使用します。 エディターのフォントに関係なく、任意のフォントに設定できます。
+ターミナル コンテンツに使用されるフォントとサイズは、[基本設定] > [環境] > [フォント] ウィンドウで変更できます。 既定では、フォントは出力ウィンドウのコンテンツと同じで、Menlo Regular、サイズ 11 を使用します。 エディターのフォントに関係なく、任意のフォントに設定できます。
 
 ![\* 統合ターミナルのフォント設定のカスタマイズ *](media/integrated-terminal-change-font.png)
 
