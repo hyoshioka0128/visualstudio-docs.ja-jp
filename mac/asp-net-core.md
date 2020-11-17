@@ -1,21 +1,21 @@
 ---
 title: ASP.NET Core の概要
 description: この記事では、インストールや新しいプロジェクトの作成など、Visual Studio for Mac で ASP.NET の使用を始める方法について説明します。
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 04/02/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584062"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493362"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -44,13 +44,13 @@ ASP.NET Core アプリケーションの作成を開始するためのテンプ�
 
 ![ASP.NET プロジェクト オプション](media/asp-net-core-2019-new-asp-core.png)
 
-**[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、 **[次へ]** を押します。 プロジェクトに名前を付け、 **[作成]** を押します。 これにより、新しい ASP.NET Core アプリが作成されます。 Solution Pad の左側のウィンドウで、2 番目の矢印を展開し、 **[Startup.cs]** を選択します。 以下の画像のようになります。
+**[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、 **[次へ]** を押します。 プロジェクトに名前を付け、 **[作成]** を押します。 これにより、新しい ASP.NET Core アプリが作成されます。 [ソリューション] ウィンドウの左側のウィンドウで、2 番目の矢印を展開し、 **[Startup.cs]** を選択します。 以下の画像のようになります。
 
 ![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-2019-empty-project.png)
 
 ASP.NET Core の空のテンプレートでは、次の 2 つの既定のファイルを使って Web アプリケーションが作成されます。**Program.cs** と **Startup.cs** です。これらについて以下で説明します。 また、[依存関係] フォルダーが作成されます。このフォルダーには、ASP.NET Core、.NET Core フレームワーク、プロジェクトをビルドする MSBuild ターゲットなど、プロジェクトの NuGet パッケージ依存関係が含まれます。
 
-![Solution Pad と依存関係](media/asp-net-core-2019-solution-dependencies.png)
+![依存関係を表示する [ソリューション] ウィンドウ](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
@@ -128,7 +128,7 @@ ASP.NET Core アプリにより、その main メソッドで Web サーバー�
 
 ![ブラウザーでの実行](media/asp-net-web-picker.png)
 
-Visual Studio for Mac では、ランダムのポートを利用して Web プロジェクトを起動します。 利用されているポートを調べるには、アプリケーション出力を開きます。これは **[表示]、[パッド]** にあります。 出力は下の画像のようになります。
+Visual Studio for Mac では、ランダムのポートを利用して Web プロジェクトを起動します。 利用されているポートを調べるには、アプリケーション出力を開きます。これは **[表示] の [その他のウィンドウ]** メニューにあります。 出力は下の画像のようになります。
 
 ![アプリケーション出力と待ち受けポート](media/asp-net-core-image6.png)
 
@@ -138,13 +138,13 @@ Visual Studio for Mac では、ランダムのポートを利用して Web プ�
 
 ## <a name="adding-a-controller"></a>コントローラーを追加する
 
-ASP.NET Core アプリはモデル ビュー コントローラー (MVC) デザイン パターンを利用し、アプリの各パーツの責任を論理的に分離します。 MVC の構造は次のとおりです。
+ASP.NET Core アプリはモデル ビュー コントローラー (MVC) デザイン パターンを利用し、アプリの各パーツの責任を論理的に分離します。 MVC デザイン パターンは次の概念で構成されます。
 
 - **モデル**:アプリのデータを表すクラス。
 - **表示**:アプリのユーザー インターフェイス (多くの場合、モデル データ) を表示します。
 - **コントローラー**:ブラウザー要求を処理し、ユーザー入力と繰り返しに応答するクラス。
 
-MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview)」 (ASP.NET Core MVC の概要) ガイドを参照してください。
+MVC の使用方法については、「[ASP.NET Core MVC の概要](/aspnet/core/mvc/overview)」というガイドを参照してください。
 
 コントローラーは次のように追加します。
 
@@ -230,7 +230,7 @@ MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/c
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-Mac OS 10.12 (Sierra) 以降に .NET Core を手動インストールする場合、次のように行います。
+macOS 10.12 (Sierra) 以降に .NET Core を手動インストールする場合、次のように行います。
 
 1. .NET Core のインストールを開始する前に、すべての OS が安定した最新版に更新されていることを確認します。 これは App Store アプリケーションで確認できます。[更新プログラム] タブを選択してください。
 
@@ -242,7 +242,7 @@ Mac OS 10.12 (Sierra) 以降に .NET Core を手動インストールする場�
 
 このガイドでは、ASP.NET Core の概要を説明しました。 ASP.NET Core とは何か、それを利用する状況、Visual Studio for Mac で使用する場合について説明しました。
 ここから先の手順については、次のガイドを参照してください。
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1) ドキュメント。
+- [ASP.NET Core](/aspnet/core/) ドキュメント。
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (ネイティブ モバイル アプリケーションのバックエンド サービスを作成する)。ここでは、Xamarin.Forms アプリのために ASP.NET Core を利用して REST サービスをビルドする方法について解説しています。
 - [ASP.NET Core 実践ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 

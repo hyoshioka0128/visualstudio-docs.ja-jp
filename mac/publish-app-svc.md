@@ -1,5 +1,6 @@
 ---
 title: Azure App Service に発行する
+description: Visual Studio for Mac の発行ツールを使用して Web アプリを発行する方法。
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 81ae8c8dde91655a4b9b3b8dcb4d0033af34e4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950507"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493427"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用して Azure App Service に Web アプリを発行する
 
@@ -31,7 +32,7 @@ ms.locfileid: "85950507"
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service に発行する
 
- 1. Solution Pad で、プロジェクトを右クリックして、 **[発行]** を選択します。
+ 1. [ソリューション] ウィンドウで、プロジェクトを右クリックして、 **[発行]** を選択します。
 
     ![[発行] コンテキスト メニュー](media/publish-context-menu.png)
 
@@ -57,7 +58,7 @@ ms.locfileid: "85950507"
 
     **[サブスクリプション]** ドロップダウンを使用して、App Service が関連付けられるサブスクリプションを変更できます。
 
-    ドロップダウンを使って既存の**リソース グループ**を選択するか、または **+** ボタンで新しいリソース グループを作成できます。
+    ドロップダウンを使って既存の **リソース グループ** を選択するか、または **+** ボタンで新しいリソース グループを作成できます。
 
     App Service プランでは、既存のプランを選択するか、 **[カスタム]** ラジオ ボタンを選択することで新しいプランを作成します。
 

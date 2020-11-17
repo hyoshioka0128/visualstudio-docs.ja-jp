@@ -1,5 +1,8 @@
 ---
 title: Assembly 要素 (Visual Studio テンプレート) |Microsoft Docs
+titleSuffix: ''
+description: アセンブリ要素について、およびアセンブリに関する情報をどのように指定するかについて説明します。アセンブリは、そのアセンブリの参照をプロジェクトに追加するために使用されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740035"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671647"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 要素 (Visual Studio テンプレート)
 アセンブリに関する情報を指定します。このアセンブリは、プロジェクトにアセンブリの参照を追加するためにテンプレートで使用されます。
@@ -48,14 +51,14 @@ ms.locfileid: "80740035"
 
 |要素|説明|
 |-------------|-----------------|
-|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
+|[参照](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
  このテキストは、項目テンプレートがインスタンス化されるときにプロジェクトに追加するアセンブリを指定します。 このアセンブリ名は、次のいずれかの方法で指定する必要があります。
 
-- 完全なアセンブリ名として指定します。 たとえば、次のように入力します。
+- 完全なアセンブリ名として指定します。 次に例を示します。
 
     ```
     <Assembly>
@@ -69,7 +72,7 @@ ms.locfileid: "80740035"
     <Assembly> System </Assembly>
     ```
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `Assembly` は `Reference` に必須の子要素です。
 
  、、およびの各要素は、 `Reference` `References,` `Assembly` 属性値がである *.vstemplate* ファイルでのみ使用できます `Type` `Item` 。

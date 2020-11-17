@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938517"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493063"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>カスタム EditorConfig ファイルの作成と編集
 
@@ -51,7 +51,7 @@ EditorConfig は、C# の[コーディング規則](/visualstudio/ide/editorconf
 
     項目をソリューション レベルで追加すると、項目が **[ソリューション項目]** フォルダーに自動的に作成および追加されます。
 
-    ![ソリューション パッドに表示されているソリューション項目](media/editorconfig-image1a.png)
+    ![[ソリューション] ウィンドウに表示されているソリューション項目](media/editorconfig-image1a.png)
 
 4. ファイルを編集します。 次に例を示します。
 
@@ -139,9 +139,9 @@ csharp_new_line_before_open_brace = none
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig 設定のオーバーライド
 
-各ソリューションに複数の `.editorconfig` ファイルを与えることができます。 Visual Studio for Mac は、ソリューションで上から下へと `.editorconfig` ファイルを読み込みながら、設定を追加およびオーバーライドします。これは、編集しているファイルに_最も近い_ `.editorconfig` の設定が優先されることを意味します。 設定は、(存在する場合) 同じフォルダーの `.editorconfig` ファイルから、次いで (存在する場合) 親フォルダーなどの `.editorconfig` から取得されます。 これは、`root=true` が見つかるまで実行されます。
+各ソリューションに複数の `.editorconfig` ファイルを与えることができます。 Visual Studio for Mac は、ソリューションで上から下へと `.editorconfig` ファイルを読み込みながら、設定を追加およびオーバーライドします。これは、編集しているファイルに _最も近い_ `.editorconfig` の設定が優先されることを意味します。 設定は、(存在する場合) 同じフォルダーの `.editorconfig` ファイルから、次いで (存在する場合) 親フォルダーなどの `.editorconfig` から取得されます。 これは、`root=true` が見つかるまで実行されます。
 
-すべての上位レベルの `.editorconfig` ファイルからの設定がコードベースのこの部分に適用_されない_ようにするには、次のように `root=true` プロパティを下位レベルの `.editorconfig` ファイルに追加します。
+すべての上位レベルの `.editorconfig` ファイルからの設定がコードベースのこの部分に適用 _されない_ ようにするには、次のように `root=true` プロパティを下位レベルの `.editorconfig` ファイルに追加します。
 
 ```EditorConfig
 # top-most EditorConfig file

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f3dfdecb28254e5b9683cd1e9640c5a45b728a6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134695"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493479"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
@@ -45,7 +45,7 @@ Windows フォーム デザイナーでは、Windows フォーム アプリケ�
 
    ::: moniker-end
 
-2. ファイルの名前を変更するには、 **ソリューション エクスプローラー** で **UserControl1.vb** または **UserControl1.cs** を右クリックし、 **[名前の変更]** を選択して、ファイル名を DemoCalculator.vb または DemoCalculator.cs に変更します。 コード要素 "UserControl1" へのすべての参照の名前を変更するかどうかをたずねられたら、 **[はい]** を選択します。
+2. ファイルの名前を変更するには、**ソリューション エクスプローラー** で **UserControl1.vb** または **UserControl1.cs** を右クリックし、 **[名前の変更]** を選択して、ファイル名を DemoCalculator.vb または DemoCalculator.cs に変更します。 コード要素 "UserControl1" へのすべての参照の名前を変更するかどうかをたずねられたら、 **[はい]** を選択します。
 
 Windows フォーム デザイナーに、DemoCalculator コントロールのデザイナー画面が表示されます。 このビューでは、[ツールボックス] でコントロールとコンポーネントを選択し、デザイナー画面に配置することで、コントロールの外観をグラフィカルにデザインできます。 カスタム コントロールについて詳しくは、「[さまざまなカスタム コントロール](/dotnet/framework/winforms/controls/varieties-of-custom-controls)」をご覧ください。
 
@@ -87,7 +87,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
    **[ColumnHeader コレクション エディター]** ダイアログ ボックスが表示されます。
 
-10. **[ColumnHeader コレクション エディター]** ダイアログ ボックスで、 **[追加]** を選択して `ListView` コントロールに列を追加します。 列の `Text` プロパティの値を「 **History** 」に変更します。 **[OK]** を選択して列を作成します。
+10. **[ColumnHeader コレクション エディター]** ダイアログ ボックスで、 **[追加]** を選択して `ListView` コントロールに列を追加します。 列の `Text` プロパティの値を「**History**」に変更します。 **[OK]** を選択して列を作成します。
 
 11. スマート タグ パネルで、 **[親コンテナーにドッキングする]** を選択してから、スマート タグ グリフを選択してスマート タグ パネルを閉じます。
 
@@ -151,7 +151,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
     すべての `Button` コントロールのサイズが小さくなり、それらの間に大きな余白が作成されます。
 
-14. **button10** と **button20** を選択し、 **Delete** キーを押してレイアウトから削除します。
+14. **button10** と **button20** を選択し、**Delete** キーを押してレイアウトから削除します。
 
 15. **button5** と **button15** を選択し、それらの `RowSpan` プロパティの値を **2** に変更します。 これらは、DemoCalculator コントロールの **[Clear]** ボタンと **[=]** ボタンになります。
 
@@ -163,7 +163,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
    [ドキュメント アウトライン] ウィンドウには、DemoCalculator コントロールとその構成コントロールのツリー ビューが表示されます。 `SplitContainer` のようなコンテナー コントロールには、ツリー内のサブノードとして子コントロールが表示されます。 また、[ドキュメント アウトライン] ウィンドウを使用して、その場でコントロールの名前を変更することもできます。
 
-2. **[ドキュメント アウトライン]** ウィンドウで、 **button1** を右クリックして、 **[名前の変更]** を選択します。 名前を sevenButton に変更します。
+2. **[ドキュメント アウトライン]** ウィンドウで、**button1** を右クリックして、 **[名前の変更]** を選択します。 名前を sevenButton に変更します。
 
 3. **[ドキュメント アウトライン]** ウィンドウを使用して、`Button` コントロールの名前を、デザイナーで生成された名前から、次の一覧に従った運用環境の名前に変更します。
 
@@ -205,35 +205,35 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 4. **[ドキュメント アウトライン]** ウィンドウと **[プロパティ]** ウィンドウを使用して、各 `Button` コントロール名の `Text` プロパティの値を次の一覧のように変更します。
 
-   - sevenButton コントロールの text プロパティを「 **7** 」に変更します
+   - sevenButton コントロールの text プロパティを「**7**」に変更します
 
-   - eightButton コントロールの text プロパティを「 **8** 」に変更します
+   - eightButton コントロールの text プロパティを「**8**」に変更します
 
-   - nineButton コントロールの text プロパティを「 **9** 」に変更します
+   - nineButton コントロールの text プロパティを「**9**」に変更します
 
    - divisionButton コントロールの text プロパティを「 **/** 」 (スラッシュ) に変更します
 
-   - clearButton コントロールの text プロパティを「 **Clear** 」に変更します
+   - clearButton コントロールの text プロパティを「**Clear**」に変更します
 
-   - fourButton コントロールの text プロパティを「 **4** 」に変更します
+   - fourButton コントロールの text プロパティを「**4**」に変更します
 
-   - fiveButton コントロールの text プロパティを「 **5** 」に変更します
+   - fiveButton コントロールの text プロパティを「**5**」に変更します
 
-   - sixButton コントロールの text プロパティを「 **6** 」に変更します
+   - sixButton コントロールの text プロパティを「**6**」に変更します
 
    - multiplicationButton コントロールの text プロパティを * *\** _ (asterisk) (アスタリスク) に変更します
 
    - oneButton コントロールの text プロパティを_ *1** に変更します
 
-   - twoButton コントロールの text プロパティを「 **2** 」に変更します
+   - twoButton コントロールの text プロパティを「**2**」に変更します
 
-   - threeButton コントロールの text プロパティを「 **3** 」に変更します
+   - threeButton コントロールの text プロパティを「**3**」に変更します
 
    - subtractionButton コントロールの text プロパティを「 **-** 」 (ハイフン) に変更します
 
    - equalsButton コントロールの text プロパティを「 **=** 」 (等号) に変更します
 
-   - zeroButton コントロールの text プロパティを「 **0** 」に変更します
+   - zeroButton コントロールの text プロパティを「**0**」に変更します
 
    - changeSignButton コントロールの text プロパティを「 **+/-** 」に変更します
 
@@ -241,7 +241,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
    - additionButton コントロールの text プロパティを「 **+** 」 (プラス記号) に変更します
 
-5. デザイン画面で、 **Shift** キーを押しながら選択して、`Button` コントロールをすべて選択します。
+5. デザイン画面で、**Shift** キーを押しながら選択して、`Button` コントロールをすべて選択します。
 
 6. **[プロパティ]** ウィンドウで、`Font` プロパティを展開します。 すべての `Button` コントロールの `Size` を **14** に設定し、`Bold` を **true** に設定します。
 
@@ -251,7 +251,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 DemoCalculator コントロールのボタンには、電卓ロジックの多くを実装するために使用できるイベント ハンドラーがあります。 Windows フォーム デザイナーを使用すると、すべてのボタンのすべてのイベント ハンドラーのスタブを 1 回の選択で実装できます。
 
-1. デザイン画面で、 **Shift** キーを押しながら選択して、`Button` コントロールをすべて選択します。
+1. デザイン画面で、**Shift** キーを押しながら選択して、`Button` コントロールをすべて選択します。
 
 2. いずれかの `Button` コントロールを選択します。
 
@@ -259,9 +259,9 @@ DemoCalculator コントロールのボタンには、電卓ロジックの多�
 
 ## <a name="test-the-control"></a>コントロールをテストする
 
-DemoCalculator コントロールは <xref:System.Windows.Forms.UserControl> クラスを継承しているので、 **UserControl テスト コンテナー** を使用してその動作をテストできます。 詳細については、「[方法:UserControl の実行時の動作をテストする](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)」をご覧ください。
+DemoCalculator コントロールは <xref:System.Windows.Forms.UserControl> クラスを継承しているので、**UserControl テスト コンテナー** を使用してその動作をテストできます。 詳細については、「[方法:UserControl の実行時の動作をテストする](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)」をご覧ください。
 
-1. **F5** キーを押し、 **UserControl Test Container** で DemoCalculator コントロールをビルドして実行します。
+1. **F5** キーを押し、**UserControl Test Container** で DemoCalculator コントロールをビルドして実行します。
 
 2. `SplitContainer` のパネル間の境界線を選択し、左右にドラッグします。 `TableLayoutPanel` とそのすべての子コントロールのサイズが、使用可能なスペースに合わせて自動的に変更されます。
 
@@ -275,13 +275,13 @@ DemoCalculator コントロールを他の複合コントロールまたはフ�
 
 最初にアプリケーションのプロジェクトを作成します。 このプロジェクトを使用して、カスタム コントロールが表示されるアプリケーションをビルドします。
 
-1. 新しい **Windows フォーム アプリケーション** プロジェクトを作成し、 **DemoCalculatorTest** という名前を付けます。
+1. 新しい **Windows フォーム アプリケーション** プロジェクトを作成し、**DemoCalculatorTest** という名前を付けます。
 
-2. **ソリューション エクスプローラー** で、 **DemoCalculatorTest** プロジェクトを右クリックし、 **[参照の追加]** を選択して、 **[参照の追加]** ダイアログ ボックスを開きます。
+2. **ソリューション エクスプローラー** で、**DemoCalculatorTest** プロジェクトを右クリックし、 **[参照の追加]** を選択して、 **[参照の追加]** ダイアログ ボックスを開きます。
 
 3. **[プロジェクト]** タブに移動し、DemoCalculatorLib プロジェクトを選択して、テスト プロジェクトへの参照を追加します。
 
-4. **ソリューション エクスプローラー** で、 **DemoCalculatorTest** を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
+4. **ソリューション エクスプローラー** で、**DemoCalculatorTest** を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
 
 5. Windows フォーム デザイナーで、フォームのサイズを約 **700 x 500** に増やします。
 
@@ -291,11 +291,11 @@ DemoCalculator コントロールを他の複合コントロールまたはフ�
 
 1. **[ツールボックス]** で、 **[DemoCalculatorLib コンポーネント]** ノードを展開します。
 
-2. **DemoCalculator** コントロールを **[ツールボックス]** からフォームにドラッグします。 コントロールをフォームの左上隅に移動します。 コントロールがフォームの境界線の近づくと、 *スナップ線* が表示されます。 スナップ線では、フォームの `Padding` プロパティとコントロールの `Margin` プロパティの距離が示されます。 スナップ線によって示される位置にコントロールを配置します。
+2. **DemoCalculator** コントロールを **[ツールボックス]** からフォームにドラッグします。 コントロールをフォームの左上隅に移動します。 コントロールがフォームの境界線の近づくと、*スナップ線* が表示されます。 スナップ線では、フォームの `Padding` プロパティとコントロールの `Margin` プロパティの距離が示されます。 スナップ線によって示される位置にコントロールを配置します。
 
    詳細については、「[チュートリアル:スナップ線を使用した Windows フォーム上のコントロールの配置](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)」をご覧ください。
 
-3. `Button`[ツールボックス] **から** コントロールをドラッグし、フォームにドロップします。
+3. `Button`[ツールボックス]**から** コントロールをドラッグし、フォームにドロップします。
 
 4. `Button` コントロールを DemoCalculator コントロール上であちこち移動して、スナップ線が表示される位置を確認します。 この機能を使用すると、コントロールを正確かつ簡単に配置できます。 終わったら `Button` コントロールを削除します。
 

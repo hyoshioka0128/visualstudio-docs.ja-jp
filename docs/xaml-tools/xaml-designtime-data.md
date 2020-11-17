@@ -1,18 +1,18 @@
 ---
 title: Visual Studio の XAML デザイナーでデザイン時のデータを使用する
 description: XAML でデザイン時のデータを使用する方法について説明します。
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298474"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492896"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio の XAML デザイナーでデザイン時のデータを使用する
 
@@ -25,7 +25,7 @@ ms.locfileid: "92298474"
 
 デザイン時のデータは、XAML デザイナーでのコントロールの視覚化を容易にするために設定するモック データです。 開始するには、次のコード行を XAML ドキュメントのヘッダーに追加します (まだ存在していない場合)。
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ xmlns:models="clr-namespace:Cities.Models"
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>カスタム型とプロパティと共にデザイン時データを使用する
 
-この機能は既定では、プラットフォームのコントロールとプロパティでのみ動作します。 このセクションでは、Visual Studio 2019 プレビュー バージョン [16.8](/visualstudio/releases/2019/preview-notes) 以降をご利用のお客様が使える新機能、デザイン時コントロールとして独自のカスタム コントロールを使用できるようにするために必要な手順を確認します。 これを可能にするには、次の 3 つの要件があります。
+この機能は既定では、プラットフォームのコントロールとプロパティでのみ動作します。 このセクションでは、Visual Studio 2019 バージョン [16.8](/visualstudio/releases/2019/release-notes/) 以降をご利用のお客様が使える新機能、デザイン時コントロールとして独自のカスタム コントロールを使用できるようにするために必要な手順を確認します。 これを可能にするには、次の 3 つの要件があります。
 
-- カスタム xmlns 名前空間 
+- カスタム xmlns 名前空間
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

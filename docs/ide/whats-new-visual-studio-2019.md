@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 08/21/2020
+ms.date: 11/10/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,23 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a9bf479796db1b23a204050c941650c3c20dd6aa
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005370"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438272"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.7 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.8 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
-
-開発者の要求に合わせて Visual Studio を常に変更しています。 **[Microsoft Build](https://mybuild.microsoft.com/)** ライブラリの次のビデオで、一部の[最新機能](/visualstudio/releases/2019/release-notes/)のツアーに参加して[プレビュー](/visualstudio/releases/2019/release-notes-preview/)をご覧ください。 <br><br>"*ビデオの長さ:44.58 分*
-
-> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD111/player]
 
 Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフォームを対象とした最高クラスのツールとサービスを提供しています。 Visual Studio を初めて使用する方も、長年使用している方も、最新バージョンを気に入っていただけるでしょう。
 
@@ -78,7 +74,7 @@ Visual Studio IntelliCode が生産性の強化に役立つ方法を次にいく
 * 見つけにくいコード問題を見つける
 * コード レビューの焦点を本当に重要な領域に向ける
 
-Visual Studio 向けの拡張機能として IntelliCode を初めてプレビューしたときには、C# しかサポートしていませんでした。 今回、**16.1 の新機能**として C# と XAML のサポートを追加しました。 (ただし、C++ と TypeScript/JavaScript のサポートはまだプレビュー段階です。)
+Visual Studio 向けの拡張機能として IntelliCode を初めてプレビューしたときには、C# しかサポートしていませんでした。 今回、**16.1 の新機能** として C# と XAML のサポートを追加しました。 (ただし、C++ と TypeScript/JavaScript のサポートはまだプレビュー段階です。)
 
 C# を使用している場合は、独自のコードでカスタム モデルをトレーニングする機能も追加されました。
 
@@ -137,6 +133,12 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 スタート ウィンドウには、プロジェクトやソリューションを開いたり、ローカル フォルダーを開いたり、新しいプロジェクトを作成したりするオプションも含まれています。
 
 詳しくは、「[Get to code:How we designed the new Visual Studio start window (コードを取得: 新しい Visual Studio 開始ウィンドウの設計方法)](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)」のブログ投稿をご覧ください。
+
+### <a name="git-productivity"></a>Git の生産性
+
+**16.8 の新機能** Git が Visual Studio 2019 での既定のバージョン管理エクスペリエンスになりました。 過去 2 回のリリースにおけるフィードバックに基づいて機能セットを構築し、その反復処理を行いました。 新しいエクスペリエンスは、あらゆるユーザーに対して、既定でオンになっています。 新しい Git メニューから、リポジトリをクローンしたり、作成したり、開いたりできます。 統合された Git ツール ウィンドウを使用し、変更をコミットして自分のコードにプッシュしたり、ブランチを管理したり、リモート リポジトリで最新の状態を維持したり、マージ競合を解決したりします。
+
+詳細については、[Visual Studio の Git 生産性](git-with-visual-studio.md)に関するページを参照してください。
 
 ### <a name="live-share"></a>Live Share
 
@@ -222,11 +224,11 @@ Visual Studio 2019 は、より優れた開発を可能にする新機能で頻�
 
 - **Visual Studio 2019 での Git エクスペリエンスの向上 (プレビュー)**
 
-   GitHub、Azure Repos、その他のリモート ホスティング サービスでコードの作業を行うときの生産性を向上させるため、Git エクスペリエンスの改良が繰り返されています。 1 回の操作 (またはクリック) で、Visual Studio 2019 内から初期化およびプッシュすることができます。 また、新しい分岐の作成、現在のブランチの管理、マージの競合の解決を行うこともできます。
+   Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-notes/) で新しい Git バージョン管理エクスペリエンスが既定でオンになるようになりましたが、最新のプレビュー リリースでエクスペリエンスを向上させるため、機能が引き続き追加されます。
 
-   詳細については、[Visual Studio の新しい Git 体験](git-with-visual-studio.md)に関するページを参照してください。
+   詳細については、[Visual Studio の Git 生産性](git-with-visual-studio.md)に関するページを参照してください。
 
-プレビュー リリースの詳細および試したい場合のダウンロード リンクについては、「 **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** 」ページを参照してください。
+プレビュー リリースの詳細および試したい場合のダウンロード リンクについては、「 **[Visual Studio Preview](https://aka.ms/vspreview/)** 」ページを参照してください。
 
 ## <a name="give-us-feedback"></a>フィードバックの送信
 

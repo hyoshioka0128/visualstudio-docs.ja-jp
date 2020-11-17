@@ -3,16 +3,16 @@ title: Unity を使用したゲーム作成の概要
 description: Unity と Visual Studio for Mac の概要
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950649"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493583"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Unity を使用した Visual Studio for Mac でのゲーム作成の概要
 
@@ -50,9 +50,9 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
     ![空白の unity インターフェイス](media/unity-image3.png)
 
-5. Unity を初めて使用する開発者向けの情報として、自作のアプリ内で実行するものはすべて、**シーン**のコンテキストの中に存在します。 シーン ファイルは、現在のシーンとそのプロパティ用にプロジェクト内で使用されるリソースについての、あらゆる種類のメタデータを含む単一のファイルです。 自作のアプリをあるプラットフォーム用にパッケージ化すると、その結果としてのアプリは、1 つ以上のシーンのコレクションに、プラットフォーム依存コードを自分で追加したものになります。 プロジェクトにはシーンを必要な数だけ含めることができます。
+5. Unity を初めて使用する開発者向けの情報として、自作のアプリ内で実行するものはすべて、**シーン** のコンテキストの中に存在します。 シーン ファイルは、現在のシーンとそのプロパティ用にプロジェクト内で使用されるリソースについての、あらゆる種類のメタデータを含む単一のファイルです。 自作のアプリをあるプラットフォーム用にパッケージ化すると、その結果としてのアプリは、1 つ以上のシーンのコレクションに、プラットフォーム依存コードを自分で追加したものになります。 プロジェクトにはシーンを必要な数だけ含めることができます。
 
-6. 新しいシーンにはカメラと指向性ライトのみが存在します。 シーンには、何かを見えるようにするための**カメラ**と、何かを聞こえるようにするための**オーディオ リスナー**が必要です。 これらのコンポーネントを **GameObject** にアタッチします。
+6. 新しいシーンにはカメラと指向性ライトのみが存在します。 シーンには、何かを見えるようにするための **カメラ** と、何かを聞こえるようにするための **オーディオ リスナー** が必要です。 これらのコンポーネントを **GameObject** にアタッチします。
 
 7. **[Hierarchy]\(ヒエラルキー\)** ペインで **[Main Camera]** を選択します。
 
@@ -66,7 +66,7 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
     ![強調表示された指向性ライト オブジェクト](media/unity-image6.png)
 
-10. **インスペクター**を使用して、一般的なライトのプロパティ (タイプ、色、強度、シャドウ タイプなど) が含まれていることを確認します。
+10. **インスペクター** を使用して、一般的なライトのプロパティ (タイプ、色、強度、シャドウ タイプなど) が含まれていることを確認します。
 
     ![[Inspector]\(インスペクター\) ペインでのプロパティの確認](media/unity-image7.png)
 
@@ -80,7 +80,7 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
 13. **Finder** ウィンドウを閉じ、**Unity** に戻ります。
 
-14. **Assets** フォルダーには、アート、コード、オーディオなどのすべてのアセットが格納されています。今は空ですが、プロジェクトにファイルを追加するたびに、ここに表示されます。 これは常に **Unity エディター**の最上位フォルダーです。 ただし、ファイルの追加と削除は常に Unity のインターフェイス (または Visual Studio for Mac) 経由で行い、決してファイル システムから直接行わないでください。
+14. **Assets** フォルダーには、アート、コード、オーディオなどのすべてのアセットが格納されています。今は空ですが、プロジェクトにファイルを追加するたびに、ここに表示されます。 これは常に **Unity エディター** の最上位フォルダーです。 ただし、ファイルの追加と削除は常に Unity のインターフェイス (または Visual Studio for Mac) 経由で行い、決してファイル システムから直接行わないでください。
 
     ![unity の assets フォルダー](media/unity-image10.png)
 
@@ -104,15 +104,15 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
     ![プレイヤー オブジェクトへのタグ付け](media/unity-image15.png)
 
-20. **シーン** ビューで、マウスを使用してプレイヤー オブジェクトを敵オブジェクトから離すように Z 軸方向に移動します。 キューブの**赤い**パネルを選択し、**青い**線の方向にドラッグすることで、Z 軸方向に移動できます。 キューブは 3 次元空間に存在しますが、1 回 1 回のドラッグは 2 次元でしか行えないため、どの軸方向にドラッグするかは特に重要です。
+20. **シーン** ビューで、マウスを使用してプレイヤー オブジェクトを敵オブジェクトから離すように Z 軸方向に移動します。 キューブの **赤い** パネルを選択し、**青い** 線の方向にドラッグすることで、Z 軸方向に移動できます。 キューブは 3 次元空間に存在しますが、1 回 1 回のドラッグは 2 次元でしか行えないため、どの軸方向にドラッグするかは特に重要です。
 
     ![キューブが表示されているシーン ビュー](media/unity-image16.png)
 
-21. キューブを下方向に、それから Z 軸に沿って右に移動します。 これにより、**インスペクター**上の **Transform.Position** プロパティが更新されます。 ラボでの以降の手順が簡単になるように、ここに示されている位置と同じような位置にドラッグしてください。
+21. キューブを下方向に、それから Z 軸に沿って右に移動します。 これにより、**インスペクター** 上の **Transform.Position** プロパティが更新されます。 ラボでの以降の手順が簡単になるように、ここに示されている位置と同じような位置にドラッグしてください。
 
     ![1 個のキューブを軸に沿って移動](media/unity-image17.png)
 
-22. これで、プレイヤーを追跡するように敵のロジックを駆動するコードを追加することができます。 **[Project]\(プロジェクト\)** パッドの **Assets** フォルダーを右クリックし、 **[Create]\(作成\) > [C# Script]\(C# スクリプト\)** を選択します。
+22. これで、プレイヤーを追跡するように敵のロジックを駆動するコードを追加することができます。 **[Project]\(プロジェクト\)** ウィンドウの **Assets** フォルダーを右クリックし、 **[Create]\(作成\)、[C# Script]\(C# スクリプト\)** の順に選択します。
 
     ![C# スクリプトのコンテキスト アクション](media/unity-image18.png)
 
@@ -144,7 +144,7 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
 5. Visual Studio ソリューションは、わかりやすいものです。 **Assets** フォルダー (**Finder** にあるものと同じ) と、先ほど作成した **EnemyAI.cs** スクリプトが含まれています。 より高度なプロジェクトでは、ヒエラルキーは Unity に表示されているものとは違って見えます。
 
-    ![Visual Studio for Mac のソリューション パッド](media/unity-image24.png)
+    ![Visual Studio for Mac の [ソリューション] ウィンドウ](media/unity-image24.png)
 
 6. **EnemyAI.cs** がエディターで開かれます。 スクリプトには最初、**Start** メソッドと **Update** メソッドのスタブだけが含まれています。
 
@@ -186,7 +186,7 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
     }
     ```
 
-8. ここで定義されている簡単な敵の動作を大まかに確認します。 **Start** メソッドでは、プレイヤー オブジェクトへの (タグによる) 参照と、そのオブジェクトの**トランスフォーム**を取得します。 フレームごとに呼び出される **Update** メソッドでは、敵がプレイヤー オブジェクトに向かって移動します。 Visual Studio for Mac では、コードベースを理解しやすいようにキーワードと名前が色分けして示されます。
+8. ここで定義されている簡単な敵の動作を大まかに確認します。 **Start** メソッドでは、プレイヤー オブジェクトへの (タグによる) 参照と、そのオブジェクトの **トランスフォーム** を取得します。 フレームごとに呼び出される **Update** メソッドでは、敵がプレイヤー オブジェクトに向かって移動します。 Visual Studio for Mac では、コードベースを理解しやすいようにキーワードと名前が色分けして示されます。
 
 9. **Visual Studio for Mac** で敵のスクリプトへの変更を保存します。
 
@@ -194,41 +194,41 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
 1. **Start** メソッドの最初のコード行にブレークポイントを設定します。 目的の行のエディターの余白をクリックします。その行にカーソルを置いて **F9** キーを押すこともできます。
 
-    ![visual studio for mac でのブレークポイントの設定](media/unity-image25.png)
+    ![Visual Studio for Mac でのブレークポイントの設定](media/unity-image25.png)
 
 2. **[デバッグの開始]** ボタンをクリックするか、**F5** キーを押します。 これによりプロジェクトがビルドされ、Unity にアタッチされて、デバッグできるようになります。
 
-    ![visual studio for mac のデバッグ開始ボタン](media/unity-image26.png)
+    ![Visual Studio for Mac の開始ボタン](media/unity-image26.png)
 
-3. **Unity** に戻り、**実行**ボタンをクリックしてゲームを開始します。
+3. **Unity** に戻り、**実行** ボタンをクリックしてゲームを開始します。
 
     ![unity の実行ボタン](media/unity-image27.png)
 
 4. ブレークポイントがヒットし、Visual Studio for Mac のデバッグ ツールを使用することができます。
 
-    ![visual studio for mac でのブレークポイントのヒット](media/unity-image28.png)
+    ![Visual Studio for Mac でのブレークポイントのヒット](media/unity-image28.png)
 
-5. **[ローカル]** パッドで **this** ポインターを見つけます。これは **EnemyAI** オブジェクトを参照しています。 参照を展開し、**Speed** のような関連付けられたメンバーを閲覧できることを確認します。
+5. **[ローカル]** ウィンドウで **this** ポインターを見つけます。これは **EnemyAI** オブジェクトを参照しています。 参照を展開し、**Speed** のような関連付けられたメンバーを閲覧できることを確認します。
 
-    ![visual studio for mac のローカル デバッグ パッド](media/unity-image29.png)
+    ![Visual Studio for Mac の [ローカル] ウィンドウ](media/unity-image29.png)
 
 6. 余白でブレークポイントをクリックするか、行を選択して **F9** キーを押して、追加したときと同じ方法で **Start** メソッドからブレークポイントを削除します。
 
-    ![visual studio for mac でのブレークポイントのヒット](media/unity-image30.png)
+    ![Visual Studio for Mac でブレークポイントをクリックし、削除する](media/unity-image30.png)
 
 7. **F10** キーを押して最初のコード行をステップ実行します。この行では、タグをパラメーターとして使用し、**Player** ゲーム オブジェクトを検索します。
 
 8. コード エディター ウィンドウ内でマウス カーソルを **player** 変数の上に置き、関連付けられているメンバーを表示します。 オーバーレイを展開して子プロパティを表示することもできます。
 
-    ![visual studio for mac エディターのデバッグ ウィンドウ](media/unity-image31.png)
+    ![Visual Studio for Mac エディターのデバッグ ウィンドウ](media/unity-image31.png)
 
-9. **F5** キーを押すか、**実行**ボタンを押して、実行を続行します。 Unity に戻り、敵キューブが繰り返しプレイヤー キューブに近づく様子を確認します。 見えない場合は、カメラを調整する必要がある可能性があります。
+9. **F5** キーを押すか、**実行** ボタンを押して、実行を続行します。 Unity に戻り、敵キューブが繰り返しプレイヤー キューブに近づく様子を確認します。 見えない場合は、カメラを調整する必要がある可能性があります。
 
     ![unity でのシーンの再生](media/unity-image32.png)
 
 10. **Visual Studio for Mac** にまた切り替えて、**Update** メソッドの最初の行にブレークポイントを設定します。 すぐにヒットするはずです。
 
-    ![visual studio for mac でのブレークポイントの設定](media/unity-image33.png)
+    ![Visual Studio for Mac でのブレークポイントの削除](media/unity-image33.png)
 
 11. 速度が速すぎるため、アプリを再起動することなく、変更の影響をテストしたいとします。 **[自動]** または **[ローカル]** ウィンドウで **Speed** 変数を見つけ、それを **"10"** に変更して **Enter** キーを押します。
 
@@ -240,11 +240,11 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
     ![実行中のアプリケーションが表示されている unity のウィンドウ](media/unity-image35.png)
 
-14. もう一度 **再生**ボタンをクリックして Unity アプリを停止します。
+14. もう一度 **再生** ボタンをクリックして Unity アプリを停止します。
 
     ![unity アプリの停止](media/unity-image36.png)
 
-15. **Visual Studio for Mac** に戻ります。 **停止**ボタンをクリックしてデバッグ セッションを停止します。
+15. **Visual Studio for Mac** に戻ります。 **停止** ボタンをクリックしてデバッグ セッションを停止します。
 
     ![Visual Studio for Mac でのデバッグ セッションの停止](media/unity-image37.png)
 
@@ -258,21 +258,21 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
 
     ![ブラウザー ウィンドウで開かれたドキュメント](media/unity-image39.png)
 
-3. Visual Studio for Mac には、Unity の動作クラスを手早く作成するためのヘルパーも用意されています。 **ソリューション エクスプローラー**で **[Assets]** を右クリックし、 **[追加] > [New MonoBehaviour]\(新しい MonoBehaviour\)** を選択します。
+3. Visual Studio for Mac には、Unity の動作クラスを手早く作成するためのヘルパーも用意されています。 **ソリューション エクスプローラー** で **[Assets]** を右クリックし、 **[追加] > [New MonoBehaviour]\(新しい MonoBehaviour\)** を選択します。
 
     ![新しい monobehaviour のコンテキスト アクション](media/unity-image40.png)
 
 4. 新しく作成されたクラスによって、**Start** メソッドと **Update** メソッドのスタブが提供されます。 **Update** メソッドの閉じ中かっこの後に、「**onmouseup**」と入力を始めます。 入力するに従い、実装しようとしているメソッドが Visual Studio の IntelliSense によってすぐに特定されることに注目してください。 表示されたオートコンプリート リストから、それを選択します。 パラメーターを含め、メソッド スタブが自動的に設定されます。
 
-    ![visual studio for mac での intellisense](media/unity-image41.png)
+    ![Visual Studio for Mac での IntelliSense](media/unity-image41.png)
 
 5. **OnMouseUp** メソッド内で「**base.** 」と入力すると、 呼び出しに使用できる基本メソッドがすべて表示されます。 IntelliSense ポップアップの右上隅にあるページング オプションを使用して、各関数のさまざまなオーバーロードを調べることもできます。
 
-    ![visual studio for mac でのオーバーロードの調査](media/unity-image42.png)
+    ![Visual Studio for Mac でのオーバーロードの調査](media/unity-image42.png)
 
-6. Visual Studio for Mac では、新しいシェーダーを簡単に定義することもできます。 **ソリューション エクスプローラー**で **[Assets]** を右クリックし、 **[追加] > [新しいシェーダー]** を選択します。
+6. Visual Studio for Mac では、新しいシェーダーを簡単に定義することもできます。 **ソリューション エクスプローラー** で **[Assets]** を右クリックし、 **[追加] > [新しいシェーダー]** を選択します。
 
-    ![visual studio for mac での新しいシェーダーのアクション](media/unity-image43.png)
+    ![Visual Studio for Mac での新しいシェーダーのアクション](media/unity-image43.png)
 
 7. シェーダー ファイル形式には、読みやすく理解しやすいようにフルカラーとフォントが適用されます。
 

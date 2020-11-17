@@ -1,5 +1,7 @@
 ---
 title: Buildの Tonload 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: 作成してソリューションに追加するときに、Buildて Tonload 要素と、新しいプロジェクトだけをビルドする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739958"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671593"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Buildの Tonload 要素 (Visual Studio テンプレート)
 は、新しいプロジェクトを作成してソリューションに追加するときにのみビルドします。 ソリューション全体がビルドされていません。
@@ -53,7 +55,7 @@ ms.locfileid: "80739958"
 
  テキストは、 `true` `false` テンプレートから作成されたときに新しいプロジェクトのみをビルドするかどうかを示す、またはのいずれかにする必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `BuildProjectOnLoad` は省略可能な要素です。 既定値は `false` です。
 
 ## <a name="example"></a>例

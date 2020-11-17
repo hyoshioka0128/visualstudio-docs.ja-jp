@@ -3,14 +3,14 @@ title: 新しいプロジェクトとソリューションを作成する
 description: この記事では、Visual Studio for Mac でプロジェクトとソリューションを作成する方法について説明します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/06/2020
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: fa77993892c79cf29d268aa942b8c77ccb7a2139
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7ee9b23f9ede12a353f6c6fdc0f578d7f78a772c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183959"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493295"
 ---
 # <a name="create-a-new-project"></a>新しいプロジェクトの作成
 
@@ -45,7 +45,7 @@ Visual Studio for Mac が既に開いていてソリューションが読み込�
 
 ## <a name="adding-additional-projects-to-a-solution"></a>ソリューションにさらにプロジェクトを追加する
 
-ソリューションにさらにプロジェクトを追加するには、Solution Pad 内でソリューションを右クリックし、 **[追加]、[新しいプロジェクトの追加]** の順に選択するか、または **[追加]、[既存のプロジェクトの追加]** の順に選択します。
+ソリューションにさらにプロジェクトを追加するには、 **[ソリューション] ウィンドウ** 内でソリューションを右クリックし、 **[追加]、[新しいプロジェクトの追加]** の順に選択するか、 **[追加]、[既存のプロジェクトの追加]** の順に選択します。
 
 新しいプロジェクトの追加を選択すると、「[ご自分の新しいプロジェクトを構成する](#configuring-your-new-project)」に示すように、プロジェクトの作成が開始されます。
 

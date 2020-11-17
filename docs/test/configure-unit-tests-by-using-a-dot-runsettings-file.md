@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928672"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400103"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -24,7 +24,7 @@ Visual Studio の単体テストは、 *.runsettings* ファイルを使用し�
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>実行設定ファイルを作成してカスタマイズする
 
-1. 実行設定ファイルをソリューションに追加します。 **ソリューション エクスプローラー**でソリューションのショートカット メニューを開き、 **[追加]**  >  **[新しい項目]** 、 **[XML ファイル]** の順に選択します。 *test.runsettings* などの名前でファイルを保存します。
+1. 実行設定ファイルをソリューションに追加します。 **ソリューション エクスプローラー** でソリューションのショートカット メニューを開き、 **[追加]**  >  **[新しい項目]** 、 **[XML ファイル]** の順に選択します。 *test.runsettings* などの名前でファイルを保存します。
 
    > [!TIP]
    > 拡張子 *.runsettings* を使用していれば、ファイル名は自由です。
@@ -172,6 +172,7 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -186,7 +187,8 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapter が配置されているディレクトリの 1 つまたは複数のパス|
 |**TestSessionTimeout**||指定されたタイムアウトを超えたときにユーザーがテスト セッションを終了できるようにします。 タイムアウトを設定すると、リソースが適切に消費され、テスト セッションが設定された時間に制限されます。 この設定は、**Visual Studio 2017 バージョン 15.5** 以降で使用できます。|
-|**DotnetHostPath**||testhost を実行するために使用される dotnet host へのカスタム パスを指定します。 これは、dotnet/runtime リポジトリをビルドする場合など、独自の dotnet をビルドするときに便利です。 このオプションを指定すると、testhost.exe の検索がスキップされ、常に testhost.dll が使用されます。
+|**DotnetHostPath**||testhost を実行するために使用される dotnet host へのカスタム パスを指定します。 これは、dotnet/runtime リポジトリをビルドする場合など、独自の dotnet をビルドするときに便利です。 このオプションを指定すると、testhost.exe の検索がスキップされ、常に testhost.dll が使用されます。|
+|**TreatNoTestsAsError**|false| true または false <br>テストが検出されなかった場合の終了コードを定義するブール値を指定します。 値が `true` で、テストが検出されない場合、ゼロ以外の終了コードが返されます。 それ以外の場合、0 が返されます。|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>DataCollectors 要素 (診断データ アダプター)
 
@@ -308,12 +310,12 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 で、MSTest アダプターは処理速度を向上させ、よりスケーラブルになるように最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を **true** に設定します。<br /><br />たとえば、単体テスト用に指定された *app.config* ファイルがある場合は、この設定を使用することがあります。<br /><br />より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
 |**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager (Visual Studio 2017 では非推奨) から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](/previous-versions/dd286589(v=vs.140))」を参照してください。|
-|**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 また、[[設定] メニューから](#specify-a-run-settings-file-in-the-ide)テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 また、[[設定] メニューから](#specify-a-run-settings-file-in-the-ide)テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true** に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスも中止されています。 テスト実行プログラムを中止しない場合は、この値を **true** に設定します。 たとえば、コード化された UI テストの間にブラウザーの実行を維持するために、この設定を使用できます。|
 |**DeploymentEnabled**|true|値を **false** に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|
 |**CaptureTraceOutput**|true|<xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> を使用して、テスト メソッドからデバッグ トレースに書き込むことができます。|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|テストの実行後に配置ディレクトリを保持するには、この値を **false** に設定します。|
-|**MapInconclusiveToFailed**|False|テストが結果不確定の状態で完了した場合は、**テスト エクスプローラー**でスキップ状態にマップされます。 結果不確定のテストを失敗として表示する場合は、この値を **true** に設定します。|
+|**MapInconclusiveToFailed**|False|テストが結果不確定の状態で完了した場合は、**テスト エクスプローラー** でスキップ状態にマップされます。 結果不確定のテストを失敗として表示する場合は、この値を **true** に設定します。|
 |**InProcMode**|False|テストを MSTest アダプターと同じプロセスで実行する場合は、この値を **true** に設定します。 この設定で、わずかにパフォーマンスが向上します。 ただし、あるテストが例外で終了した場合、残りのテストは続行されません。|
 |**AssemblyResolution**|False|単体テストを検索して実行する場合、追加のアセンブリへのパスを指定できます。 たとえば、テスト アセンブリと同じディレクトリにない依存関係アセンブリにこれらのパスを使用します。 パスを指定するには、**Directory Path** 要素を使用します。 パスには環境変数を含めることができます。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
@@ -345,6 +347,10 @@ public void HomePageTest()
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

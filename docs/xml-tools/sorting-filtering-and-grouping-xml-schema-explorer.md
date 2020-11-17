@@ -1,5 +1,7 @@
 ---
 title: XML スキーマ エクスプローラー内での並べ替え、フィルター処理、およびグループ化
+description: XML スキーマ エクスプローラーのツール バーの並べ替え、フィルター処理、グループ化のオプション メニューで使用できるオプションについて学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 172226334622b830db79b79f7eaae2c5fe7efc79
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592517"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351493"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>並べ替え、フィルター処理、およびグループ化 (XML スキーマ エクスプローラー)
 
-このトピックでは、**XML スキーマ エクスプローラー**のツール バーの **[並べ替え、フィルター処理、およびグループ化オプション]** メニューで使用できるオプションについて説明します。
+このトピックでは、**XML スキーマ エクスプローラー** のツール バーの **[並べ替え、フィルター処理、およびグループ化オプション]** メニューで使用できるオプションについて説明します。
 
 ## <a name="filter-options"></a>フィルター オプション
 

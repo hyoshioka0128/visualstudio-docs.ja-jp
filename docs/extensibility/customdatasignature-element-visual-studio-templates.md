@@ -1,5 +1,7 @@
 ---
 title: CustomDataSignature 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: CustomDataSignature 要素について、およびカスタムデータを検索するためのテキスト署名をどのように指定するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b2442e7b254ccaaf9e890b5370f712b5715f18
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739445"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671520"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 要素 (Visual Studio テンプレート)
 カスタムデータを検索するテキスト署名を指定します。
@@ -51,7 +53,7 @@ ms.locfileid: "80739445"
 
  テキストは、カスタムデータを検索するために必要なテキスト署名が含まれている文字列です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `CustomDataSignature` は省略可能な要素です。
 
 ## <a name="see-also"></a>関連項目

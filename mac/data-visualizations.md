@@ -3,28 +3,28 @@ title: デバッグ - データの視覚化
 description: デバッグは、プログラミングの中でも一般的で必要な部分です。 Visual Studio for Mac には、デバッグが簡単になる機能一式が備わっています。 この記事では、デバッガーでオブジェクトを検査するときに表示できるさまざまなデータの視覚化について説明します。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67691728"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493245"
 ---
 # <a name="data-visualizations"></a>データ可視化
 
 Visual Studio for Mac では、デバッガー用の UI がサポートされているため、デバッグ中に変数、フィールド、プロパティの値を視覚化できます。 これらのデータ ビジュアライザーには拡張されたバージョンのデータが表示され、color 構造体の色など、既知の構造を開発時に検査できます。
 
-行にマウス カーソルを移動したときに値の右に表示されるプレビュー アイコンをクリックすると、デバッグのビジュアライザーである **[ローカル]** パッドが表示されます。
+行にマウス カーソルを移動したときに値の右に表示されるプレビュー アイコンをクリックすると、デバッグのビジュアライザーである **[ローカル]** ウィンドウが表示されます。
 
-![[ローカル] パッド](media/data-visualizations-image9.png)
+![ローカル ウィンドウ](media/data-visualizations-image9.png)
 
 ここでは、Visual Studio for Mac でデバッグするときに使用できる多数の新しい視覚化について説明します。
 
 ## <a name="point"></a>ポイント
-Point/PointF (iOS と Mac では CGPoint) は、X 値と Y 値を示すタプルとしてデバッグ パッドにレンダリングされます。
+Point/PointF (iOS と Mac では CGPoint) は、X 値と Y 値を示すタプルとしてデバッグ ウィンドウにレンダリングされます。
 
 ![ポイントの視覚化](media/data-visualizations-image10.png)
 

@@ -1,6 +1,7 @@
 ---
 title: フォルダーに発行する
-ms.date: 04/02/2019
+description: Visual Studio for Mac を使用してフォルダーに Web アプリを発行する方法。
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583945"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493414"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用してフォルダーに発行する
 
@@ -23,13 +24,13 @@ ms.locfileid: "91583945"
 ## <a name="prerequisites"></a>必須コンポーネント
 
 - .NET Core を有効にしてインストールされた [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)。
-- .NET Core コンソール、または ASP.NET Core プロジェクト。 プロジェクトをまだ用意していない場合は、[新しいプロジェクトを作成](./create-new-projects.md?view=vsmac-2019)することができます。
+- .NET Core コンソール、または ASP.NET Core プロジェクト。 プロジェクトをまだ用意していない場合は、[新しいプロジェクトを作成](./create-new-projects.md)することができます。
 
 ## <a name="publish-to-folder"></a>フォルダーに発行する
 
 Visual Studio for Mac では、発行ツールを使用して、フォルダーに .NET Core プロジェクトを発行することができます。 フォルダーに発行したら、ファイルを別の環境に転送することができます。 フォルダーに発行するには、次の手順を行います。
 
- 1. Solution Pad で、プロジェクトを右クリックして、 **[発行]** を選択します。
+ 1. [ソリューション] ウィンドウで、プロジェクトを右クリックして、 **[発行]** を選択します。
 
     ![[発行] コンテキスト メニュー](media/publish-context-menu.png)
 

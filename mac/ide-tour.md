@@ -3,19 +3,19 @@ title: Visual Studio for Mac ツアー
 description: Visual Studio for Mac は、iOS、Android、Mac、Xamarin.Forms 用に、ASP.NET Core Web サイトや Xamarin プロジェクトなどの .NET アプリケーションを macOS 上で構築する統合開発環境 (IDE) として利用できます。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584010"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493271"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 for Mac ツアー
 
-Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_です。 Visual Studio for Mac には、コード エディターやデバッガーに加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
+Visual Studio for Mac は、コードを編集、デバッグ、ビルドし、その後にアプリを発行できる Mac 上の .NET _統合開発環境_ です。 Visual Studio for Mac には、コード エディターやデバッガーに加えて、コンパイラ、コード補完ツール、グラフィック デザイナー、ソース管理など、ソフトウェア開発プロセスを容易にする機能があります。
 
 Visual Studio for Mac は、`.csproj`、`.fsproj`、または `.sln` など、対応する Windows 版と同じ種類のファイルを多くサポートしています。また、EditorConfig などの機能もサポートしており、これはご自分に最適な IDE を使用できることを意味しています。
 Windows で Visual Studio を使用したことがあれば、使い慣れた方法でアプリの作成、起動、開発を行うことができます。 また、Visual Studio for Mac は、Windows 版を強力な IDE にしている強力なツールの多くを採用しています。 Roslyn コンパイラ プラットフォームは、リファクタリングと IntelliSense に使用されます。 そのプロジェクト システムとビルド エンジンでは MSBuild が使用されており、ソース エディターでは、Windows での Visual Studio と同じ基盤が使用されています。 Xamarin アプリと .NET Core アプリに同じデバッグ エンジンを使用し、Xamarin.iOS と Xamarin.Android に同じデザイナーを使用しています。
@@ -58,11 +58,11 @@ Visual Studio 2019 for Mac を初めて起動すると、新規ユーザーに�
 
 以下のセクションでは、Visual Studio for Mac の主な領域について概要を説明します。
 
-## <a name="solution-pad"></a>Solution Pad
+## <a name="solution-window"></a>[ソリューション] ウィンドウ
 
-Solution Pad では、ソリューション内のプロジェクトが整理されています。
+[ソリューション] ウィンドウでは、ソリューション内のプロジェクトが整理されています。
 
-![Solution Pad に整理されているプロジェクト](media/ide-tour-image18.png)
+![[ソリューション] ウィンドウに整理されているプロジェクト](media/ide-tour-image18.png)
 
 これは、ソース コード、リソース、ユーザー インターフェイス、および依存関係のファイルが、プラットフォーム固有のプロジェクトに整理されている場所です。
 
@@ -72,7 +72,7 @@ Visual Studio for Mac でプロジェクトとソリューションを使用す�
 
 各プロジェクトのアセンブリ参照は、[参照] フォルダーの下に表示されます。
 
-![Solution Pad の [参照] フォルダー](media/ide-tour-image19.png)
+![[ソリューション] ウィンドウの [参照] フォルダー](media/ide-tour-image19.png)
 
 その他の参照は、**[参照の編集]** ダイアログを使用して追加されます。このダイアログを表示するには、[参照] フォルダーをダブルクリックするか、コンテキスト メニュー操作で **[参照の編集]** を選択します。
 
@@ -135,9 +135,9 @@ Visual Studio for Mac は、Git と Subversion ソース管理システムと統
 
 ![ソース管理下にあるプロジェクトを示すブランチ名](media/ide-tour-image22.png)
 
-コミットされていない変更があるファイルは、次の図に示すように、ソリューション ウィンドウにアイコンで示されます。
+コミットされていない変更があるファイルは、次の図に示すように、[ソリューション] ウィンドウにアイコンで示されます。
 
-![Solution Pad のコミットされていないファイル](media/ide-tour-image23.png)
+![[ソリューション] ウィンドウのコミットされていないファイル](media/ide-tour-image23.png)
 
 Visual Studio でバージョン管理を使用する方法については、「[バージョン管理](./version-control.md)」を参照してください。
 

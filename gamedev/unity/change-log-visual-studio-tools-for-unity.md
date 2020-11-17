@@ -2,7 +2,7 @@
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 description: Visual Studio Tools for Unity、Windows の変更ログを確認します。 バージョン 1.0.0.0 から 4.7.0.0 以降にかけて行われた変更を確認します。
 ms.custom: ''
-ms.date: 7/30/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,65 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f8a1ed0520bb1a2e5d213cd9a670769f70251ebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341342"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671247"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4820"></a>4.8.2.0
+リリース日2020年11月10日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) `Component` だけでなく、から継承されたすべてに適用される診断機能が向上しました `MonoBehaviour` 。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - CodeLens メッセージの無効化を修正します。
+
+## <a name="4810"></a>4.8.1.0
+リリース日-2020 年10月13日
+
+### <a name="new-features"></a>新機能
+
+- **評価:**
+
+  - 呼び出しによる暗黙的な変換のサポートが追加されました。 以前は、エバリュエーターに厳密な型チェックが適用され、警告メッセージが生成されていま `Failed to find a match for method([parameters...])` した。
+
+- **統合:**
+
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 診断が追加されました。 、、、など `System.Reflection` のパフォーマンスクリティカルなメッセージでは、機能を使用しないでください `Update` `FixedUpdate` `LateUpdate` `OnGUI` 。
+
+  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) すべての静的メソッドがサポートされるようになり、suppressors が改善されました `AssetPostprocessor` 。
+
+  - `CS8618` 用の [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) サプレッサーが追加されました。 `C# 8.0` null 許容の参照型と null 非許容の参照型について説明します。 から継承する型の初期化検出はサポートされて `UnityEngine.Object` いないため、エラーが発生します。
+
+  - Unity 2019. x と 2020. x + の両方に同じプレーヤーと asmdef プロジェクト生成メカニズムを使用するようになりました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - コメント内のメッセージの予期しない完了を修正します。
+
+## <a name="4800"></a>4.8.0.0 
+2020年9月14日にリリース
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity 2019. x でのプレーヤープロジェクトの生成を修正します。
 
 ## <a name="4710"></a>4.7.1.0
 リリース日: 2020 年 8 月 5 日

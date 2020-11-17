@@ -1,6 +1,8 @@
 ---
 title: Roslyn アナライザーを使用したコード分析
 ms.date: 09/01/2020
+description: Visual Studio のソース コード分析について理解を深めます。 コード修正と、さまざまな種類のアナライザーおよび重大度レベルについて学習します。
+ms.custom: SEO-VS-2020
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +14,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860493"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349036"
 ---
 # <a name="overview-of-source-code-analysis"></a>ソース コード分析の概要
 
@@ -25,7 +27,7 @@ ms.locfileid: "91860493"
 
 アナライザーは、次のグループに分類できます。
 
-- [コード スタイル](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) アナライザーは、Visual Studio に組み込まれています。 これらのアナライザーの診断 ID (コード) は、IDE0067 のように、IDExxxx の形式です。 [テキスト エディターのオプション ページ](../ide/code-styles-and-code-cleanup.md)または [EditorConfig ファイル](/dotnet/fundamentals/code-analysis/code-style-rule-options)で、ユーザー設定を構成できます。 .NET 5.0 以降、コード スタイル アナライザーは .NET SDK に含まれており、ビルドの警告またはエラーとして厳密に適用できます。 詳細については、[このページ](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)を参照してください。
+- [コード スタイル](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) アナライザーは、Visual Studio に組み込まれています。 これらのアナライザーの診断 ID (コード) は、IDE0067 のように、IDExxxx の形式です。 [テキスト エディターのオプション ページ](../ide/code-styles-and-code-cleanup.md)または [EditorConfig ファイル](/dotnet/fundamentals/code-analysis/code-style-rule-options)で、ユーザー設定を構成できます。 .NET 5.0 以降、コード スタイル アナライザーは .NET SDK に含まれており、ビルドの警告またはエラーとして厳密に適用できます。 詳細については、[このページ](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)を参照してください。
 
 - [コード品質](/dotnet/fundamentals/code-analysis/quality-rules/index)アナライザーが .NET 5 SDK に含まれるようになり、既定で有効になりました。 これらのアナライザーの診断 ID (コード) は、CA1822 のように、CAxxxx の形式です。 詳細については、[.NET コード品質分析の概要](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis)に関するページを参照してください。
 
@@ -71,7 +73,7 @@ ms.locfileid: "91860493"
 
 ### <a name="scope"></a>スコープ
 
-Visual Studio 拡張機能としてアナライザーをインストールする場合は、ソリューション レベルで Visual Studio のすべてのインスタンスに適用されます。 NuGet パッケージとしてアナライザーをインストールする (推奨される方法) 場合、NuGet パッケージがインストールされたプロジェクトにのみ適用されます。 チーム環境では、NuGet パッケージとしてインストールされたアナライザーは、そのプロジェクトで作業する*すべての開発者* のスコープ内にあります。
+Visual Studio 拡張機能としてアナライザーをインストールする場合は、ソリューション レベルで Visual Studio のすべてのインスタンスに適用されます。 NuGet パッケージとしてアナライザーをインストールする (推奨される方法) 場合、NuGet パッケージがインストールされたプロジェクトにのみ適用されます。 チーム環境では、NuGet パッケージとしてインストールされたアナライザーは、そのプロジェクトで作業する *すべての開発者* のスコープ内にあります。
 
 ### <a name="build-errors"></a>ビルド エラー
 

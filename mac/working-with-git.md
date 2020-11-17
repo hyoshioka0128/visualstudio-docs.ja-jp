@@ -3,15 +3,15 @@ title: Git の使用
 description: Visual Studio for Mac で Git を使用します。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70108023"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493232"
 ---
 # <a name="working-with-git"></a>Git の使用
 
@@ -27,9 +27,9 @@ Git は、チームが同じドキュメントで同時に作業できるよう�
 
 ## <a name="push-and-pull"></a>プッシュおよびプル
 
-プッシュとプルは、Git 内で最もよく使用される 2 つのアクションです。 リモート リポジトリに他のユーザーが行った変更を同期するためには、そこから**プル**する必要があります。 これを行うには、Visual Studio for Mac で **[バージョン コントロール] > [ソリューションの更新]** を選択します。
+プッシュとプルは、Git 内で最もよく使用される 2 つのアクションです。 リモート リポジトリに他のユーザーが行った変更を同期するためには、そこから **プル** する必要があります。 これを行うには、Visual Studio for Mac で **[バージョン コントロール] > [ソリューションの更新]** を選択します。
 
-ファイルを更新して、レビューし、それらをコミットしたら、他のユーザーが変更にアクセスできるようにそれらをリモート リポジトリに**プッシュ**する必要があります。 これを行うには、Visual Studio for Mac で **[バージョン コントロール] > [変更をプッシュ]** を選択します。 これにより、[プッシュ] ダイアログが表示され、コミットされた変更表示して、プッシュするブランチを選択できます。
+ファイルを更新して、レビューし、それらをコミットしたら、他のユーザーが変更にアクセスできるようにそれらをリモート リポジトリに **プッシュ** する必要があります。 これを行うには、Visual Studio for Mac で **[バージョン コントロール] > [変更をプッシュ]** を選択します。 これにより、[プッシュ] ダイアログが表示され、コミットされた変更表示して、プッシュするブランチを選択できます。
 
 ![コミットするブランチを表示するダイアログ](media/version-control-gitPush.png)
 
@@ -75,11 +75,11 @@ Visual Studio for Mac でブランチを表示するには、 **[バージョン
 
 ![新しいブランチの作成](media/version-control-gitBranch.png)
 
-リモート ブランチを_追跡_ブランチに設定することもできます。 詳しくは、[Git ドキュメント](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches)の追跡ブランチの説明を参照してください。
+リモート ブランチを _追跡_ ブランチに設定することもできます。 詳しくは、[Git ドキュメント](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches)の追跡ブランチの説明を参照してください。
 
-Solution Pad でプロジェクト名の横にある現在のブランチを参照します。
+[ソリューション] ウィンドウでプロジェクト名の横にある現在のブランチを参照します。
 
- ![ソリューション パッドに表示された現在のブランチ](media/version-control-gitBranchName.png)
+ ![[ソリューション] ウィンドウに表示された現在のブランチ](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>確認とコミット
 

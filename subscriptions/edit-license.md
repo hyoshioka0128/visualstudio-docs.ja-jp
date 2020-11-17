@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 09/21/2020
+ms.date: 11/09/2020
 ms.topic: how-to
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904163"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433558"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 サブスクリプション管理者は、組織内の個人に割り当てられているサブスクリプションに変更を加えることができます。  この記事では、行うことができる変更の種類と、必要な手順について説明します。
@@ -39,8 +39,8 @@ ms.locfileid: "92904163"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
-   > [!IMPORTANT]
-   > 一括編集を使用して、サブスクリプション レベル (つまり Enterprise や Professional など) およびサブスクリプション GUID を変更することはできません。  特定のサブスクリプション GUID をユーザーに割り当てる必要がある場合は、サブスクリプション ID を選択してユーザーを追加するための手順を実行します。 変更されたこれらの項目を一括編集テンプレートでアップロードしようとすると、アップロードは失敗します。
+> [!NOTE]
+> テンプレートのサブスクリプション GUID は変更しないでください。 [特定のサブスクリプション GUID の割り当て](assign-guid.md)に関する記事を参照してください。
 
 1. 複数のサブスクライバーを一度に追加するには、[サブスクライバー] タブに移動します。上部リボンの **[一括編集]** をクリックします。
 
@@ -48,7 +48,7 @@ ms.locfileid: "92904163"
    > [!div class="mx-imgBorder"]
    > ![ライセンスの編集 - 一括編集一覧のエクスポート](_img/edit-license/edit-license-bulk-edit-export.png "現在のサブスクリプションの一覧を作成するには、[Excel にエクスポート] をクリックします。")
 
-3. 次に、アップロードする前に簡単に見つけて必要な変更を行うことができるように、ファイルをローカルに保存します。 アップロードを確実に成功させるには、一括編集ファイル内で **サブスクリプション レベルまたはサブスクリプションの GUID を編集しないでください** 。編集すると、アップロードが失敗します。
+3. 次に、アップロードする前に簡単に見つけて必要な変更を行うことができるように、ファイルをローカルに保存します。 
 
 4. Visual Studio サブスクリプション管理ポータルに戻り、[一括編集] ダイアログ ボックスで **[参照]** をクリックします。 保存した Excel ファイルを選んで、 **[OK]** をクリックします。 アップロードの進行状況が画面に表示されます。
    > [!div class="mx-imgBorder"]

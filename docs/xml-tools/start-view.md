@@ -1,5 +1,7 @@
 ---
 title: XML スキーマ デザイナーの開始ビュー
+description: XML スキーマ (XSD) デザイナーのスタート ビューで使用できるコマンドについて学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592530"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351363"
 ---
 # <a name="start-view"></a>スタート ビュー
 
@@ -25,7 +27,7 @@ ms.locfileid: "75592530"
 
 ## <a name="watermark"></a>ウォーターマーク
 
-ウォーターマーク ペインには、XSD デザイナーのすべてのビュー、XML エディター、および **XML スキーマ エクスプローラー**へのリンクの一覧があります。 スキーマ セットにエラーがある場合、一覧の最後に次のテキストが表示されます:"スキーマ セット内のエラーを表示および修正するには、エラー一覧を使用します"。
+ウォーターマーク ペインには、XSD デザイナーのすべてのビュー、XML エディター、および **XML スキーマ エクスプローラー** へのリンクの一覧があります。 スキーマ セットにエラーがある場合、一覧の最後に次のテキストが表示されます:"スキーマ セット内のエラーを表示および修正するには、エラー一覧を使用します"。
 
 ## <a name="schema-set-details"></a>スキーマ セットの詳細
 

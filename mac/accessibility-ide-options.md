@@ -6,20 +6,20 @@ ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
 ms.topic: how-to
-ms.openlocfilehash: 7b0959c8a2f91e340a8b173d94fb2dbd9e2d9474
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f56141cb59cc679993140e2ed2093fe1cb9d9790
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801816"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493466"
 ---
 # <a name="set-ide-accessibility-options"></a>IDE アクセシビリティ オプションを設定する
 
 MacOS に組み込まれている機能に加え、Visual Studio for Mac には、さまざまな身体機能のユーザーが利用できるアクセシビリティ機能があります。
 
-## <a name="resize-pad-and-editor-content"></a>パッドとエディターのコンテンツのサイズを変更する
+## <a name="resize-tool-windows-and-editor-content"></a>ツール ウィンドウとエディター コンテンツのサイズを変更する
 
-1. コンテンツのサイズを変更するパッドまたはウィンドウを選択します。
+1. コンテンツのサイズを変更するツール ウィンドウまたはエディター ウィンドウを選択します。
 
 1. **[表示 (メニュー)]** を選択し、 **[拡大 (&#8984;+)]** または **[縮小 (&#8984;-)]** を選択します。
 
@@ -28,13 +28,13 @@ MacOS に組み込まれている機能に加え、Visual Studio for Mac には�
 
 ## <a name="change-the-content-font-and-size"></a>コンテンツのフォントとサイズを変更する
 
-Visual Studio for Mac のほとんどのパッドで、コンテンツのフォントとサイズをカスタマイズすることができます。 その方法は次のとおりです。
+Visual Studio for Mac のほとんどのツール ウィンドウで、コンテンツのフォントとサイズをカスタマイズすることができます。 その方法は次のとおりです。
 
 1. **[Visual Studio (メニュー)]**  >  **[ユーザー設定 (&#8984;,)]** に移動します。
 
 1. **[ユーザー設定]** の **[環境]**  >  **[フォント]** に移動します。
 
-1. **[テキスト エディター]** 、 **[一般的なパッドの文字]** 、または **[出力パッドのコンテンツ]** について、フォントとサイズのボタンを選択します。
+1. **[テキスト エディター]** 、 **[全般ツール ウィンドウのテキスト]** 、または **[出力ウィンドウの内容]** について、フォントとサイズのボタンを選択します。
 
 1. 目的のフォント、スタイル、サイズを選択し、 **[OK]** を選択します。
 

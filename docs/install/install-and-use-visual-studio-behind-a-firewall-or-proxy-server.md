@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467636"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398996"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -81,6 +81,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | developer.apple.com | Xamarin.iOS provisioning |
 | appstoreconnect.apple.com | Xamarin.iOS provisioning |
 | idmsa.apple.com | Xamarin.iOS provisioning |
+| akamized.net | Content Delivery Network (Akamai Technologies) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio および Azure Services の使用
@@ -149,7 +150,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 
 ## <a name="get-support"></a>サポートを受ける
 
-インストール関連の問題については、 [**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションを提供しています。
+インストール関連の問題については、[**インストール チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションを提供しています。
 
 他のいくつかのサポート オプションを次に示します。
 

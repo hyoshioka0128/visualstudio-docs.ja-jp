@@ -1,17 +1,17 @@
 ---
 title: Git リポジトリのセットアップ
-description: Visual Studio for Mac で Git および Subversion を使用します。
+description: Visual Studio for Mac を使用して Git リポジトリに接続する。
 author: therealjohn
 ms.author: johmil
-ms.date: 05/13/2020
+ms.date: 11/09/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214691"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493128"
 ---
 # <a name="set-up-a-git-repository"></a>Git リポジトリのセットアップ
 
@@ -31,7 +31,7 @@ Git リポジトリをセットアップするには、次の手順を実行し�
 
     ![新しい Git リポジトリを作成する](media/version-control-git1-sml.png)
 
-2. リポジトリの名前、説明、およびプライバシーを設定します。 リポジトリは初期化**しない**でください。 次のように、.gitignore とライセンスを None に設定します。
+2. リポジトリの名前、説明、およびプライバシーを設定します。 リポジトリは初期化 **しない** でください。 次のように、.gitignore とライセンスを None に設定します。
 
     ![Git リポジトリの詳細を設定する](media/version-control-git2.png)
 
@@ -43,9 +43,9 @@ Git リポジトリをセットアップするには、次の手順を実行し�
 
 ## <a name="publishing-an-existing-project"></a>既存のプロジェクトの発行
 
-バージョン管理にまだ_含まれていない_既存のプロジェクトがある場合は、Git のセットアップで次の手順を使用します。
+バージョン管理にまだ _含まれていない_ 既存のプロジェクトがある場合は、Git のセットアップで次の手順を使用します。
 
-1. Visual Studio for Mac でソリューション パッドからソリューション名を選択します。
+1. Visual Studio for Mac で [ソリューション] ウィンドウからソリューション名を選択します。
 
 2. メニュー バーで、 **[バージョン管理] > [バージョン管理で発行]** の順に選択して、 **[リポジトリの複製]** ダイアログを表示します。
 
@@ -159,7 +159,7 @@ Git リポジトリをセットアップするには、次の手順を実行し�
 1. **gitignore** ファイルがある場合は、それを削除します。
 1. **Command + Shift + .** キーを押して、 ファイルとフォルダーを非表示にします。
 1. VS for Mac でソリューションを開きます。
-1. Solution Pad で、ソリューション ノードを選択します。
+1. [ソリューション] ウィンドウで、ソリューション ノードを選択します。
 1. バージョン管理メニューを参照し、 **[バージョン管理で発行]** を選択します。
 1. 上記のチュートリアルの手順 6. 以降の手順に従います。
 

@@ -1,16 +1,16 @@
 ---
 title: タスク コメント
 description: コードにタスク コメントを追加する
-author: cobey
-ms.author: cobey
-ms.date: 05/06/2018
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 02eacb312931d941b716ee65f91cd478eac8bb8a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692325"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493531"
 ---
 # <a name="task-comments"></a>タスク コメント
 
@@ -24,9 +24,9 @@ ms.locfileid: "67692325"
 //TODO: Finish this for all properties.
 ```
 
-Visual Studio for Mac では、これらのマーカーに注意を引くために、**タスク一覧**パッドでマーカーが強調表示されます。これは、 **[表示] > [パッド] > [タスク]** に移動することで表示できます。
+Visual Studio for Mac では、これらのマーカーに注意を引くために、 **[タスク一覧]** ウィンドウでマーカーが強調表示されます。これは **[表示] の [タスク]** メニューで表示できます。
 
-![タスク一覧パッド](media/source-editor-image11.png)
+![[タスク一覧] ウィンドウ。1 つの TODO 項目が表示されています。](media/source-editor-image11.png)
 
 ## <a name="see-also"></a>参照
 

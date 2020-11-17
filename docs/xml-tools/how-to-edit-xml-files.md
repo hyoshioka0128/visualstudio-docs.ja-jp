@@ -1,6 +1,8 @@
 ---
 title: '方法: XML ファイルを編集する'
 ms.date: 11/04/2016
+description: Visual Studio の XML エディターを使用して、XML または DTD コンテンツを含むファイルを編集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: TerryGLee
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 933ce2912845b69ceb73584c0599566b0a037fef
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249516"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399983"
 ---
 # <a name="how-to-edit-xml-files"></a>方法: XML ファイルを編集する
 
-XML エディターは、XML ファイル用の新しいエディターです。 スタンドアロンの XML ファイル、または Visual Studio プロジェクトと関連付けられたファイルに対して使用できます。 XML エディターと関連付けられるファイル拡張子は、 *.config*、 *.dtd*、 *.xml*、 *.xsd*、 *.xdr*、 *.xs*l、 *.xslt*、および *.vssettings* です。 XML エディターは、特定のエディターが登録されておらず、XML や DTD のコンテンツを含む他のファイルの種類にも関連付けられます。
+XML エディターは、XML ファイル用の新しいエディターです。 スタンドアロンの XML ファイル、または Visual Studio プロジェクトと関連付けられたファイルに対して使用できます。 XML エディターと関連付けられるファイル拡張子は、 *.config*、 *.dtd*、 *.xml*、 *.xsd*、 *.xdr*、 *.xs* l、 *.xslt*、および *.vssettings* です。 XML エディターは、特定のエディターが登録されておらず、XML や DTD のコンテンツを含む他のファイルの種類にも関連付けられます。
 
 > [!NOTE]
 > XHTML ドキュメントは HTML エディターによって処理されます。

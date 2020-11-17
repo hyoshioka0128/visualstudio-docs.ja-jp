@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382973"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434494"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>フォルダー、IIS、Azure、または別の場所にアプリを配置する
 
@@ -32,7 +32,7 @@ ms.locfileid: "94382973"
 
 - どの配置オプションを選択すればよいかわかりませんか? 「[どの発行オプションを使用すべきでしょうか?](#what-publishing-options-are-right-for-me)」を参照してください。
 - Azure App Service または IIS の配置に関するイシューのサポートについては、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」を参照してください。
-- .NET の配置設定を構成する方法については、「[.NET 配置設定を構成する](#configure-net-deployment-settings)」を参照してください。
+- .NET 配置設定の構成について詳しくは、「[.NET 配置設定を構成する](#configure-net-deployment-settings)」を参照してください。
 - 既に発行プロファイルを作成していて、新しいターゲットに配置する場合は、構成されているプロファイルの **[発行]** ウィンドウで **[新規]** を選択します。
 
    ![新しい発行プロファイルを作成する](../deployment/media/create-a-new-publish-profile.png)
@@ -117,11 +117,11 @@ App Service への発行について詳しくは、次を参照してくださ�
 
 ### <a name="azure-virtual-machine"></a>Azure Virtual Machine
 
-[Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) を使うと、任意の数のコンピューティング リソースをクラウドに作成して管理できます。 VM 上のすべてのソフトウェアと更新プログラムについての責任を負うことにより、ユーザーはお使いのアプリケーションで必要なだけいくらでもカスタマイズできます。 また、ユーザーはリモート デスクトップを介して仮想マシンに直接アクセスでき、各マシンは必要な限り割り当てられた IP アドレスを保持します。
+[Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) を使用すると、任意の数のコンピューティング リソースをクラウドに作成して管理できます。 VM 上のすべてのソフトウェアと更新プログラムについての責任を負うことにより、ユーザーはお使いのアプリケーションで必要なだけいくらでもカスタマイズできます。 また、ユーザーはリモート デスクトップを介して仮想マシンに直接アクセスでき、各マシンは必要な限り割り当てられた IP アドレスを保持します。
 
 仮想マシンでホストされているアプリケーションのスケーリングには、需要に応じた追加 VM のスピンアップと、必要なソフトウェアのデプロイが含まれます。 このような制御レベルの追加により、グローバル リージョンごとに拡張方法を変えることができます。 たとえば、異なるリージョンの従業員がアプリケーションを利用している場合、リージョンの従業員の数に従って VM を拡張でき、コストを削減できる可能性があります。
 
-詳しくは、Visual Studio の [カスタム] オプションを使ってデプロイ ターゲットとして使うことができる Azure App Service、Azure Virtual Machines、他の Azure サービスの間の[詳細な違い](/azure/architecture/guide/technology-choices/compute-decision-tree)をご覧ください。
+詳しくは、Visual Studio の [カスタム] オプションを使って配置ターゲットとして使用できる Azure App Service、Azure Virtual Machines、およびその他の Azure サービスの間の[詳細な違い](/azure/architecture/guide/technology-choices/compute-decision-tree)を参照してください。
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Azure Virtual Machines を選択する状況
 
@@ -147,8 +147,12 @@ App Service への発行について詳しくは、次を参照してくださ�
 
 ## <a name="folder"></a>フォルダー
 
-ファイル システムへのデプロイとは、ユーザーが所有するコンピューターの特定のフォルダーにアプリケーションのファイルを単にコピーすることです。 この方法は、テスト目的で、またはコンピューターでサーバーも実行している場合に限られた数のユーザーが使うアプリケーションをデプロイする場合に、最もよく使われます。 ターゲット フォルダーがネットワークで共有されている場合、ファイル システムにデプロイすると、他のユーザーも Web アプリケーション ファイルを使用して特定のサーバーにデプロイできます。
+ファイル システムへの配置とは、ユーザーが所有するコンピューターの特定のフォルダーにアプリケーションのファイルをコピーすることを意味します。 フォルダーへの配置は、テスト目的で、またはコンピューターでサーバーも実行している場合に限られた数のユーザーが使用するアプリケーションを配置する場合に、最もよく使われます。 ターゲット フォルダーがネットワークで共有されている場合、ファイル システムにデプロイすると、他のユーザーも Web アプリケーション ファイルを使用して特定のサーバーにデプロイできます。
+::: moniker range=">=vs-2019"
+Visual Studio 2019 16.8 以降、フォルダー ターゲットには、ClickOnce を使用して .Net Windows アプリケーションを発行する機能が含まれています。
 
+ClickOnce を使用して .NET Core 3.1、またはそれ以降の Windows アプリケーションを発行する場合は、[ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)方法に関するページを参照してください。
+::: moniker-end
 アプリケーションの構成方法およびアプリケーションが接続されているネットワークに応じて、サーバーを実行しているすべてのローカル コンピューターで、インターネットまたはイントラネットを通してアプリケーションを利用できます (コンピューターがインターネットに直接接続されている場合、外部のセキュリティ脅威からの保護に特に注意が必要です)。ユーザーは、これらのコンピューターを管理するので、ソフトウェアとハードウェアの構成を完全に制御できます。
 
 何らかの理由で (コンピューターのアクセスなど) ユーザーが Azure App Service や Azure Virtual Machines などのクラウド サービスを使用できない場合、ユーザーは自社のデータセンターで [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) を使用できます。 Azure Stack を使うと、ユーザーは Azure App Service および Azure Virtual Machines によってコンピューティング リソースを管理および使用しながら、すべてのものをオンプレミスに保持できます。
@@ -156,10 +160,16 @@ App Service への発行について詳しくは、次を参照してくださ�
 ### <a name="when-to-choose-file-system-deployment"></a>ファイル システムのデプロイを選ぶ状況
 
 - ファイル共有にアプリケーションをデプロイし、他のユーザーがそれを別のサーバーにデプロイすることだけが必要である。
+::: moniker range=">=vs-2019"
+- ClickOnce を使用して .NET Windows アプリケーションを配置したい
+::: moniker-end
 - ローカル テスト デプロイのみが必要である。
 - 別のデプロイ ターゲットに送る前にアプリケーション ファイルを調べて場合によっては個別に変更したい。
 
 詳細については、[ローカル フォルダーへの配置のクイックスタート](quickstart-deploy-to-local-folder.md)に関するページを参照してください
+::: moniker range=">=vs-2019"
+ClickOnce を使用した .NET Windows アプリケーションの配置の詳細については、[ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)方法に関するページを参照してください。
+::: moniker-end
 
 設定を選択するための追加のヘルプを参照するには、次を参照してください。
 
@@ -207,18 +217,18 @@ Visual Studio では任意の数の IIS Web サーバー デプロイ プロフ�
 
 詳細については、[クイック スタート - Web サイトへのデプロイ](quickstart-deploy-to-a-web-site.md)に関するページを参照してください。
 
-IIS での ASP.NET Core のトラブルシューティングのヘルプについては、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」をご覧ください。
+IIS での ASP.NET Core のトラブルシューティングについて詳しくは、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」を参照してください。
 
 ## <a name="import-profile"></a>インポート プロファイル
 
-IIS または Azure App Service に発行するときに、プロファイルをインポートできます。 " *発行設定ファイル* " ( *\*.publishsettings* ) を使用してデプロイを構成できます。 発行設定ファイルは、IIS または Azure App Service を使用して作成するか、手動で作成して Visual Studio にインポートすることができます。
+IIS または Azure App Service に発行するときに、プロファイルをインポートできます。 "*発行設定ファイル*" ( *\*.publishsettings*) を使用してデプロイを構成できます。 発行設定ファイルは、IIS または Azure App Service を使用して作成するか、手動で作成して Visual Studio にインポートすることができます。
 
 発行設定ファイルを使用すると、各デプロイ プロファイルを手動で構成するよりも、デプロイ構成が簡素化され、チーム環境で作業しやすくなります。
 
 ### <a name="when-to-choose-import-profile"></a>プロファイルのインポートを選択する状況
 
 - IIS に発行し、デプロイ構成を簡略化したい。
-- IIS または Azure App Service に発行し、再利用や同じサービスに発行するチーム メンバーのためにデプロイ構成を高速化したい。
+- IIS または Azure App Service に発行し、再利用や同じサービスに発行するチーム メンバーのために配置構成を高速化したい。
 
 詳細については、「
 

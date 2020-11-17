@@ -1,18 +1,18 @@
 ---
 title: 複数のスタートアップ プロジェクトを設定する
 description: この記事では、実行時またはデバッグ時に開始する複数のプロジェクトを設定する方法について説明します。
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 12/13/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: e0e1af97ec91af4105d1934a431f9aabc6562793
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950107"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493570"
 ---
 # <a name="set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定する
 
@@ -20,7 +20,7 @@ Visual Studio for Mac では、ソリューションをデバッグまたは実�
 
 ## <a name="to-set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定するには
 
-1. Solution Pad で、ソリューション (最上位ノード) を選択します。
+1. [ソリューション] ウィンドウでソリューション (一番上のノード) を選択します。
 
 2. ソリューション ノードを右クリックし、 **[スタートアップ プロジェクトの設定]** を選択します。
 
@@ -42,7 +42,7 @@ Visual Studio for Mac では、ソリューションをデバッグまたは実�
 
    ![デバッグまたは実行時に複数のプロジェクトが開始するように構成されたソリューション](media/startup-project-configured.png)
 
-   Solution Pad で 2 つのプロジェクトが**太字**になっているので、両方のプロジェクトが開始するよう構成されていることがわかります。 ツール バーでは、新しい実行構成が現在のソリューション実行構成として設定されます。
+   これで 2 つのプロジェクトの開始が構成されました。[ソリューション] ウィンドウには、いずれのプロジェクトも **太字** で表示されています。 ツール バーでは、新しい実行構成が現在のソリューション実行構成として設定されます。
 
 ## <a name="next-steps"></a>次の手順
 

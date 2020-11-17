@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 233393114883c2a9833aa7ec82f0d78f0ef33bae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88251337"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400325"
 ---
 # <a name="convert-typeof-to-nameof"></a>`typeof` を `nameof` に変換する
 
@@ -33,15 +33,16 @@ ms.locfileid: "88251337"
 ## <a name="how-to"></a>操作方法
 
 1. C# の `typeof(<QualifiedType>).Name` インスタンスまたは Visual Basic の `GetType(<QualifiedType>).Name` の中にカーソルを置きます。
+
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
+
 3. 次のオプションから 1 つを選択します。
 
-- C#
-  <br>**"typeof" を "nameof" に変換する**ように選択します
-  !["typeof" を "nameof" に変換する](media/convert-type-of.PNG)
+    - C#
+      <br>**['typeof' から 'nameof' へ変換]** を選択します。![typeof を nameof に変換する](media/convert-type-of.PNG)
 
-- Visual Basic
-  <br>**"GetType" を "NameOf" に変換する**ように選択します!["GetType" を "NameOf" に変換する](media/convert-get-type.PNG)
+    - Visual Basic
+      <br>**['GetType' から 'NameOf' へ変換]** を選択します。![typeof を nameof に変換する](media/convert-get-type.PNG)
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,7 @@
 ---
 title: '方法: ビューと XML エディターを切り替える'
+description: XML スキーマ デザイナー (XSD デザイナー) のビューと XML エディターを切り替える方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85dc8f69ce45f94f9f38973d76e14dee140d54b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef64617591da0790a26e4728cd138d2224deed8e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815098"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400129"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>方法: ビューと XML エディターを切り替える
 
@@ -27,11 +29,11 @@ ms.locfileid: "85815098"
 
 3. ウォーターマークを使用してグラフ ビューに切り替えるには、スタート ビューの **[ノード間のリレーションシップを表示するには、グラフ ビューを使用します]** リンクをクリックします。
 
-4. **XML スキーマ エクスプローラー**からグラフ ビューに `USAddress` ノードをドラッグします。 グラフ ビューで `USAddress` ノードを右クリックし、コンテキスト メニューの **[コンテンツ モデル ビューで表示]** をクリックします。
+4. **XML スキーマ エクスプローラー** からグラフ ビューに `USAddress` ノードをドラッグします。 グラフ ビューで `USAddress` ノードを右クリックし、コンテキスト メニューの **[コンテンツ モデル ビューで表示]** をクリックします。
 
      `USAddress` ノードの詳細を示したコンテンツ モデル ビューが表示されます。
 
-5. ツール バーを使用してコンテンツ モデル ビューからスタート ビューに切り替えるには、XSD ツール バーの**スタート ビュー** ボタンをクリックします。
+5. ツール バーを使用してコンテンツ モデル ビューからスタート ビューに切り替えるには、XSD ツール バーの **スタート ビュー** ボタンをクリックします。
 
 6. ホットキーを使用してビューを切り替える場合、スタート ビューに切り替えるには **Ctrl**+**1**、グラフ ビューに切り替えるには **Ctrl**+**2**、コンテンツ モデル ビューに切り替えるには **Ctrl**+**3** を押します。
 

@@ -1,34 +1,30 @@
 ---
-title: Visual Studio での新しい Git エクスペリエンス (プレビュー)
+title: Visual Studio での Git エクスペリエンス
 titleSuffix: ''
-description: Visual Studio 2019 での新しい統合 Git エクスペリエンスについて説明します
-ms.date: 10/13/2020
+description: Visual Studio 2019 での新しい統合 Git エクスペリエンスが、生産性の向上にどのように役立つかについて学習します。
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334208"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493557"
 ---
-# <a name="new-git-experience-in-visual-studio-preview"></a>Visual Studio での新しい Git エクスペリエンス (プレビュー)
+# <a name="git-productivity-in-visual-studio"></a>Visual Studio での Git の生産性
 
-[バージョン 16.6](/visualstudio/releases/2019/release-notes-v16.6) から、Visual Studio 2019 に新しい Git エクスペリエンスが追加され、IDE から Git を簡単に使用できるようになりました。 Git は最も広く使用されている最新のバージョン コントロール システムであるため、プロフェッショナルな開発者であるか、コードの作成方法を学習しているかに関係なく、Git は非常に役に立ちます。
+Git が Visual Studio 2019 での既定のバージョン管理エクスペリエンスになりました。 [バージョン 16.6](/visualstudio/releases/2019/release-notes-v16.6) 以降、機能セットの構築と、お客様のフィードバックに基づくその反復処理に取り組んできました。 [バージョン 16.8](/visualstudio/releases/2019/release-notes/) のリリースでは、すべてのユーザーに対して既定で新しい Git エクスペリエンスが有効になります。
 
 > [!TIP]
-> Git を初めて使用する場合は、 https://git-scm.com/ の Web サイトから開始することをお勧めします。 ここには、人気のあるオンライン ブック、Git の基本のビデオ、およびチート シートがあります。
+> Git は最も広く使用されている最新のバージョン管理システムであるため、プロフェッショナルな開発者であるか、コードの作成方法を学習しているかに関係なく、Git は非常に役に立ちます。 Git を初めて使用する場合は、 https://git-scm.com/ の Web サイトから開始することをお勧めします。 そこには、チート シート、人気のあるオンライン ブック、および Git の基本のビデオがあります。
 
-## <a name="how-to-start-using-git-in-visual-studio"></a>Visual Studio で Git の使用を開始する方法
+## <a name="how-to-use-git-in-visual-studio"></a>Visual Studio で Git を使用する方法
 
-新しい Git エクスペリエンスを切り替えるには、 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[プレビュー機能]** の順に選択し、 **[New Git User Experience]\(新しい Git ユーザー エクスペリエンス\)**  チェックボックスをオンにします。
-
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
-
-Visual Studio 2019 で Git を使用するには、次の 3 つの方法があります。
+生産性を向上させるために Visual Studio 2019 で Git の使用を開始するには、次の 3 つの方法があります。
 
 - [既存の Git リポジトリを開く](#open-an-existing-local-repository)。 お使いのマシン上に既にコードがある場合は、 **[ファイル]**  >  **[開く]**  >  **[プロジェクト/ソリューション]** (または **[フォルダー]** ) を使用して開くことができます。VisualStudio によって、初期化された Git リポジトリがあるかどうかが自動的に検出されます。
 - [新しい Git リポジトリを作成する](#create-a-new-git-repository)。 コードが Git に関連付けられていない場合は、新しい Git リポジトリを作成できます。
@@ -79,9 +75,9 @@ Visual Studio には、簡単なクローン エクスペリエンスが含ま�
 
 Git により、作業中のリポジトリ内のファイルの変更が追跡され、リポジトリ内のファイルが 3 つのカテゴリに分割されます。 これらの変更は、コマンド ラインで `git status` コマンドを入力したときに表示されるものと同じです。
 
-- **未変更のファイル** : これらのファイルは、最後のコミットから変更されていません。
-- **変更されたファイル** : これらのファイルには最後のコミットからの変更が含まれていますが、まだ次回のコミット用にステージされていません。
-- **ステージされたファイル** : これらのファイルには、次のコミットに追加される変更が含まれています。
+- **未変更のファイル**: これらのファイルは、最後のコミットから変更されていません。
+- **変更されたファイル**: これらのファイルには最後のコミットからの変更が含まれていますが、まだ次回のコミット用にステージされていません。
+- **ステージされたファイル**: これらのファイルには、次のコミットに追加される変更が含まれています。
 
 作業を行っている間、Visual Studio により、 **[Git Changes]\(Git 変更\)** ウィンドウの **[変更]** セクションで、プロジェクトに対するファイルの変更が追跡されます。
 
@@ -154,7 +150,7 @@ Visual Studio を使用すると、マージの競合を簡単に識別して解
 
 :::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Visual Studio での &quot;マージが完了し、競合が発生しました&quot; というメッセージのスクリーンショット ":::
 
-**[Git Changes]\(Git 変更\)** ウィンドウにも、" *Merge is in progress with conflicts* " (競合があるマージが進行中) というメッセージが表示され、その下の別のセクションには、マージされていないファイルが表示されます。
+**[Git Changes]\(Git 変更\)** ウィンドウにも、"*Merge is in progress with conflicts*" (競合があるマージが進行中) というメッセージが表示され、その下の別のセクションには、マージされていないファイルが表示されます。
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Visual Studio での &quot;Merge is in progress with conflicts&quot; (競合があるマージが進行中) というメッセージのスクリーンショット ":::
 
@@ -166,7 +162,7 @@ Visual Studio を使用すると、マージの競合を簡単に識別して解
     >>>>>>> main
 ```
 
-代わりに、Visual Studio では、開いているファイルに競合があることを示す金色の情報バーがページの上部に表示されます。 次に、リンクをクリックして、 **マージ エディター** を開きます。
+代わりに、Visual Studio では、開いているファイルに競合があることを示す金色の情報バーがページの上部に表示されます。 次に、リンクをクリックして、**マージ エディター** を開きます。
 
 :::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Visual Studio での &quot;File contains merge conflicts&quot; (ファイルにマージ競合が含まれています) というメッセージのスクリーンショット ":::
 
@@ -184,16 +180,23 @@ Visual Studio のマージ エディターは、入力方向の変更、現在�
 
 :::image type="content" source="media/git-options-settings.png" alt-text="パーソナル化とカスタマイズを選択できる、Visual Studio IDE の [オプション] ダイアログ ボックスのスクリーンショット ":::
 
+## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Visual Studio で従来のチーム エクスプローラー エクスペリエンスを使用する方法
+
+新しい Git エクスペリエンスは、[バージョン 16.8](/visualstudio/releases/2019/release-notes/) 以降の Visual Studio 2019 での既定のバージョン管理システムです。 しかし、それを無効にしたい場合は、そのようにできます。 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[プレビュー機能]** の順に移動してから、 **[New Git user experience]\(新しい Git ユーザー エクスペリエンス\)** チェックボックスを切り替えます。これにより、従来のチーム エクスプローラー エクスペリエンスに戻ります。
+
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクションのスクリーンショット ":::
+
 ## <a name="whats-next"></a>参照トピック
 
-このページは、Visual Studio 2019 の新しい Git エクスペリエンスの改良を続けながら更新する予定です。ご期待ください。
+Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-notes/) で新しい Git エクスペリエンスが既定でオンになるようになりましたが、エクスペリエンスを向上させるために新しい機能が引き続き追加されます。 Preview リリースで Git エクスペリエンスの新しい更新プログラムを確認する場合は、[Visual Studio Preview](https://aka.ms/vspreview/) ページからダウンロードしてインストールできます。
 
 > [!IMPORTANT]
 > ご提案がございましたら、お知らせください。 [**Developer Community**](https://aka.ms/vs-suggest) ポータルを通じて、設計上の決定についてお客様と関わる機会を持てることに感謝いたします。
 
 ## <a name="see-also"></a>関連項目
 
-- Channel 9 と [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be) の [新しい Git エクスペリエンス](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)の動画
+- YouTube の[新しい Git エクスペリエンスの起動](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
+- [Visual Studio のツールボックス シリーズでは、以下が示されます: 新しい Git エクスペリエンス](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)の動画 (Channel 9)。[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be) でもご覧いただけます
 - [Visual Studio での Git エクスペリエンスに関する新しい更新プログラム](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)のブログ記事
 - [Visual Studio 2019 での Git エクスペリエンスの向上](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)のブログ記事
 - [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes)

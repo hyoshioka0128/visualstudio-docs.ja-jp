@@ -1,17 +1,17 @@
 ---
 title: ASP.NET Core アプリケーションの構築
-description: この記事では、インストールや新しいプロジェクトの作成など、Visual Studio for Mac で ASP.NET の使用を始める方法について説明します。
+description: この記事では、Visual Studio for Mac で ASP.NET アプリケーションを作成し、探索する方法を段階的に説明します。
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
-ms.openlocfilehash: 47ddfa11b4c05896037c1fb18e285d46fc79520b
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214616"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493505"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Visual Studio for Mac での ASP.NET Core アプリケーションのビルド
 
@@ -74,13 +74,13 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![ソリューションのスクリーンショット。wwwroot フォルダーが選択されています。](media/netcore-image8.png)
 
-7. また、プロジェクトとそのパッケージ、およびアプリケーションを実行時に管理するために機能するさまざまな構成ファイルがあります。 たとえば、既定のアプリケーション[構成](/aspnet/core/fundamentals/configuration)は **appsettings.json** に格納されます。 appsettings.json ファイルの下に入れ子になっているのは、**appsettings.Development.json** ファイルです。 ここでは、環境ごとにこれらの設定の一部/すべてをオーバーライドすることができます。 Visual Studio for Mac では、Windows 用 Visual Studio と同じロジックを使用したこの方法でファイルが入れ子になります。そのため、より頻繁にアクセスする必要があるファイルは一番前になります。 
+7. また、プロジェクトとそのパッケージ、およびアプリケーションを実行時に管理するために機能するさまざまな構成ファイルがあります。 たとえば、既定のアプリケーション [構成](/aspnet/core/fundamentals/configuration)は **appsettings.json** に格納されます。 appsettings.json ファイルの下に入れ子になっているのは、**appsettings.Development.json** ファイルです。 ここでは、環境ごとにこれらの設定の一部/すべてをオーバーライドすることができます。 Visual Studio for Mac では、Windows 用 Visual Studio と同じロジックを使用したこの方法でファイルが入れ子になります。そのため、より頻繁にアクセスする必要があるファイルは一番前になります。 
 
     ![詳細ビューを示すスクリーンショット。json ファイルが選択されています。](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>タスク 3:アプリケーションをホストする方法の理解
 
-1. **ソリューション エクスプローラー**で、**Program.cs** を開きます。 これは、アプリケーションを実行するブートストラップです。
+1. **ソリューション エクスプローラー** で、**Program.cs** を開きます。 これは、アプリケーションを実行するブートストラップです。
 
     ![ソリューションのスクリーンショット。Program という名前の C# ソース ファイルが選択されています。](media/netcore-image10.png)
 
@@ -88,7 +88,7 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![C# Main メソッドのスクリーンショット。型 WebHostBuilder で host という名前の変数を初期化するステートメントが含まれています。](media/netcore-image11.png)
 
-3. **WebHostBuilder** では、アプリのサーバーをブートストラップするホストが作成されますが、あなたは、**IServer** を実装するサーバーを指定する必要があります。 既定で、これは **libuv** (クロスプラットフォームの非同期 I/O ライブラリ) に基づくクロスプラットフォームの ASP.NET Core 用 Web サーバーである **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** です。
+3. **WebHostBuilder** によってアプリのサーバーをブートストラップするホストが作成されますが、 **`IServer`** を実装するサーバーを指定する必要があります。 既定で、これは **libuv** (クロスプラットフォームの非同期 I/O ライブラリ) に基づくクロスプラットフォームの ASP.NET Core 用 Web サーバーである **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** です。
 
     ![C# Main メソッドのスクリーンショット。UseKestrel メソッドでサーバーを設定する変数 host が強調表示されています。](media/netcore-image12.png)
 
@@ -114,13 +114,13 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
 ## <a name="task-4-running-and-debugging-the-application"></a>タスク 4: アプリケーションの実行とデバッグ
 
-1. **ソリューション エクスプローラー**で、**CoreLab** プロジェクトのノードを右クリックし、**[オプション]** を選択します。
+1. **ソリューション エクスプローラー** で、**CoreLab** プロジェクトのノードを右クリックし、**[オプション]** を選択します。
 
     ![CoreLab ソリューションのコンテキスト メニューを示すスクリーンショット。Options が強調表示されています。](media/netcore-image18.png)
 
 2. **[プロジェクト オプション]** ダイアログには、アプリケーションをビルドして実行する方法を調整するのに必要なすべての項目が含まれます。 左側のパネルで、**[実行] > [構成] > [既定値]** を選択します。
 
-3. **[外部コンソールで実行する]** をオンにし、**[コンソール出力を一時停止する]** をオフにします。 通常、自己ホスト型アプリケーションではそのコンソールは表示されませんが、代わりにその結果が **[出力]** パッドにログ記録されます。 このラボの目的のため、別のウィンドウにも表示します。これは、通常の開発時に実行する必要はありません。
+3. **[外部コンソールで実行する]** をオンにし、**[コンソール出力を一時停止する]** をオフにします。 通常、自己ホスト型アプリケーションではそのコンソールは表示されませんが、代わりにその結果が **[出力]** ウィンドウにログ記録されます。 このラボの目的のため、別のウィンドウにも表示します。これは、通常の開発時に実行する必要はありません。
 
 4. **[OK]** をクリックします。
 
@@ -174,7 +174,7 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
 ## <a name="task-5-application-startup-configuration"></a>タスク 5: アプリケーションのスタートアップ構成
 
-1. **ソリューション エクスプローラー**で、**Startup.cs** を開きます。 バックグラウンドで NuGet パッケージが復元され、Roslyn コンパイラによってプロジェクトの依存関係の全体像が構築されていると、最初にいくつかの赤色の波線が表示される場合があります。
+1. **ソリューション エクスプローラー** で、**Startup.cs** を開きます。 バックグラウンドで NuGet パッケージが復元され、Roslyn コンパイラによってプロジェクトの依存関係の全体像が構築されていると、最初にいくつかの赤色の波線が表示される場合があります。
 
     ![ソリューションのスクリーンショット。Startup という名前の C# クラス ファイルが選択されています。](media/netcore-image29.png)
 
@@ -232,7 +232,7 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![localhost HTML ページのスクリーンショット。](media/netcore-image38.png)
 
-10. **詳細サイドバー**を展開します。
+10. **詳細サイドバー** を展開します。
 
     ![詳細サイドバーの展開に使用するコントロールのスクリーンショット。](media/netcore-image39.png)
 

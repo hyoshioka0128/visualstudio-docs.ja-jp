@@ -1,6 +1,7 @@
 ---
 title: BuildOnLoad 属性と要素 (Visual Studio テンプレート)
 titleSuffix: ''
+description: BuildOnLoad の属性と要素について、およびプロジェクトを作成した直後にビルドするかどうかを指定する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036861"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671606"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad 属性と要素
 
@@ -49,7 +50,7 @@ ms.locfileid: "90036861"
 
 ## <a name="text-value"></a>テキスト値
 
-**BuildOnLoad**要素にはテキスト値が必要です。 テキストはまたはのいずれかである必要があり `true` `false` ます。これは、プロジェクトを作成した直後にビルドするかどうかを示します。
+**BuildOnLoad** 要素にはテキスト値が必要です。 テキストはまたはのいずれかである必要があり `true` `false` ます。これは、プロジェクトを作成した直後にビルドするかどうかを示します。
 
 ## <a name="remarks"></a>注釈
 
@@ -84,7 +85,7 @@ ms.locfileid: "90036861"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Buildの Tonload 要素](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent 要素](../extensibility/templatecontent-element-visual-studio-templates.md)

@@ -1,18 +1,18 @@
 ---
 title: Azure Functions の概要
-description: Visual Studio for Mac での Azure Functions の使用。
+description: Visual Studio for Mac で Azure Functions の使用を開始する。
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402318"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492842"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -95,10 +95,10 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
 ## <a name="publish-to-azure"></a>Azure に発行する
 
-1. プロジェクト名を右クリックし、 **[発行]、[Azure に発行する]** の順に選択します。![[Azure に発行する] メニュー オプション](media/azure-functions-image5.png)
+1. プロジェクト名を右クリックし、 **[発行]、[Azure に発行する]** の順に選択します。![コンテキスト メニューから [発行]、[Azure に発行する] オプションの順に選択している画面](media/azure-functions-image5.png)
 2. ご自分の Azure アカウントを既に Visual Studio for Mac に接続している場合、利用可能なアプリ サービスの一覧が表示されます。 ログインしていない場合、それを行うよう求められます。
 3. **[Azure App Service に発行する]** ダイアログでは、既存のアプリ サービスを選択するか、 **[新規]** をクリックして新しいものを作成することができます。
-4. **[新しい App Service を作成する]** ダイアログに設定を入力します。![[Azure に発行する] メニュー オプション](media/azure-functions-image7.png)
+4. **[新しい App Service を作成する]** ダイアログに設定を入力します。![[新しい App Service] ダイアログ。サービス名、サブスクリプション、リソース グループ、サービスプラン設定のフィールドがあります。](media/azure-functions-image7.png)
 
     |設定  |説明  |
     |---------|---------|
@@ -109,13 +109,13 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
 5. **[次へ]** をクリックし、ストレージ アカウントを作成します。 Functions の共通言語ランタイムでは、Azure ストレージ アカウントが必要です。 **[カスタム]** をクリックし、汎用のストレージ アカウントを作成するか、既存のものを使用します。
 
-    ![[Azure に発行する] メニュー オプション](media/azure-functions-image8.png)
+    ![[新しい App Service] ダイアログ。ストレージ アカウント名の入力が求められます。](media/azure-functions-image8.png)
 
 6. **[作成]** をクリックして、これらの設定で、Azure に関数アプリと関連リソースを作成し、ご自分の関数のプロジェクト コードをデプロイします。
 
 7. 発行時に "Azure で関数のバージョンを更新する" ことを求めるダイアログが表示される場合があります。 **[はい]** をクリックします。
 
-    ![[Azure に発行する] メニュー オプション](media/azure-functions-image12.png)
+    ![[Update Azure application settings to match local Functions version?]\(ローカル Functions バージョンに合わせて Azure アプリケーション設定を更新しますか\) と問われます。 [はい] と [いいえ] の選択肢があります。](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>Function App の設定
 
@@ -149,7 +149,7 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 
 - **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
 
-- **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント**接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
+- **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント **接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
 
 - **BLOB トリガー** – Azure Storage Blob がコンテナーに追加されるとそれを処理します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 詳しくは、[Blob Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-blob-triggered-function)をご覧ください。
 
@@ -159,4 +159,4 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 
 - **イメージ リサイザー** – この関数は、コンテナーに BLOB が追加されるたびに異なるサイズのイメージを作成します。 このテンプレートは、トリガーに対するパスと接続文字列、小さいイメージ出力、および中くらいのイメージ出力を受け取ります。
 
-- **SAS トークン** – この関数は、特定の Azure Storage コンテナーおよび BLOB 名に対して SAS トークンを生成します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 **アクセス権**も設定する必要があります。 承認レベルでは、関数に API キーが必要かどうか、および使用するキーを制御します。関数では関数キーが使用されます。管理者は、アカウント アクセス キーを使用します。 詳しくは、「[C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/)」(SAS トークンを生成するための C# Azure Function) サンプルをご覧ください。
+- **SAS トークン** – この関数は、特定の Azure Storage コンテナーおよび BLOB 名に対して SAS トークンを生成します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 **アクセス権** も設定する必要があります。 承認レベルでは、関数に API キーが必要かどうか、および使用するキーを制御します。関数では関数キーが使用されます。管理者は、アカウント アクセス キーを使用します。 詳しくは、「[C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/)」(SAS トークンを生成するための C# Azure Function) サンプルをご覧ください。

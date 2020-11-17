@@ -1,18 +1,18 @@
 ---
 title: 'チュートリアル: Azure Functions'
-description: Visual Studio for Mac での Azure Functions の使用。
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 05/06/2018
+description: Visual Studio for Mac での Azure Functions の使用に関する詳しいチュートリアル。
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
-ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939097"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493024"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>チュートリアル: Azure Functions の概要
 
@@ -44,14 +44,14 @@ ms.locfileid: "85939097"
 
     ![Azure Functions プロジェクトの名前付けと作成](media/azure-functions-lab-image2.png)
 
-5. **Solution Pad** でノードを展開します。 既定のプロジェクト テンプレートには、さまざまな Azure WebJobs パッケージと、Newtonsoft.Json パッケージへの NuGet 参照が含まれています。
+5. **[ソリューション] ウィンドウ** でノードを展開します。 既定のプロジェクト テンプレートには、さまざまな Azure WebJobs パッケージと、Newtonsoft.Json パッケージへの NuGet 参照が含まれています。
 
      次の 3 つのファイルもあります。- ホストのグローバル構成オプションを記述するための **host.json** - サービス設定を構成するための **local.settings.json**
         - プロジェクト テンプレートでは、既定の HttpTrigger も作成します。 このラボの目的上、プロジェクトから **HttpTrigger.cs** ファイルを削除する必要があります。
 
     **local.settings.json** を開きます。 既定では、2 つの空の接続文字列設定が示されます。
 
-    ![local.settings.json ファイルが表示されている Solution Pad](media/azure-functions-lab-image3.png)
+    ![local.settings.json ファイルが表示されている [ソリューション] ウィンドウ](media/azure-functions-lab-image3.png)
 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>演習 2:Azure ストレージ アカウントの作成
 
@@ -89,11 +89,11 @@ ms.locfileid: "85939097"
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>例 3:Azure Function の作成とデバッグ
 
-1. これで、一部のコードの追加を開始する準備ができました。 .NET クラス ライブラリで作業を行う場合は、Azure Functions が静的メソッドとして追加されます。 **Solution Pad** で、 **[AzureFunctions]** プロジェクト ノードを右クリックし、 **[追加]、[関数の追加]** の順に選択します。
+1. これで、一部のコードの追加を開始する準備ができました。 .NET クラス ライブラリで作業を行う場合は、Azure Functions が静的メソッドとして追加されます。 **[ソリューション] ウィンドウ** で、 **[AzureFunctions]** プロジェクト ノードを右クリックし、 **[追加]、[関数の追加]** の順に選択します。
 
     ![[関数の追加] オプション](media/azure-functions-lab-image11.png)
 
-1. [新しい Azure Functions] ダイアログで、Generic Webhook テンプレートを選択します。 次のように、**名前**を **Add** に設定し、 **[OK]** をクリックして関数を作成します。
+1. [新しい Azure Functions] ダイアログで、Generic Webhook テンプレートを選択します。 次のように、**名前** を **Add** に設定し、 **[OK]** をクリックして関数を作成します。
 
     ![[新しい Azure Functions] ダイアログ](media/azure-functions-lab-image12.png)
 
@@ -193,7 +193,7 @@ ms.locfileid: "85939097"
 
 ## <a name="exercise-4-working-with-functionjson"></a>演習 4:function.json の操作
 
-1. 前の演習では、ライブラリに定義されている Azure Function のジョブ関数が Visual Studio for Mac で生成されたことを示しました。 これは、Azure Functions で実際に実行時にメソッド属性が使用されるのではなく、コンパイル時のファイル システム規則を使用して、Azure Functions を利用可能にする場所と方法を構成するためです。 **Solution Pad** で、プロジェクト ノードを右クリックし、 **[Finder で表示]** を選択します。
+1. 前の演習では、ライブラリに定義されている Azure Function のジョブ関数が Visual Studio for Mac で生成されたことを示しました。 これは、Azure Functions で実際に実行時にメソッド属性が使用されるのではなく、コンパイル時のファイル システム規則を使用して、Azure Functions を利用可能にする場所と方法を構成するためです。 **[ソリューション] ウィンドウ** で、プロジェクト ノードを右クリックし、 **[Finder で表示]** を選択します。
 
      ![[Finder で表示] メニュー オプション](media/azure-functions-lab-image23.png)
 
@@ -205,7 +205,7 @@ ms.locfileid: "85939097"
 
     ![Visual Studio for Mac で開かれた function.json ファイル](media/azure-functions-lab-image25.png)
 
-1. **Solution Pad** で、 **[AzureFunctionsLab]** プロジェクト ノードを右クリックし、 **[追加]** 、[新しいフォルダー] の順に選択します。 新しいフォルダーに **Adder** という名前を付けます。 既定の規則では、このフォルダーの名前で、**api/Adder** などの API へのパスが定義されます。
+1. **[ソリューション] ウィンドウ** で、 **[AzureFunctionsLab]** プロジェクト ノードを右クリックし、 **[追加]** 、[新しいフォルダー] の順に選択します。 新しいフォルダーに **Adder** という名前を付けます。 既定の規則では、このフォルダーの名前で、**api/Adder** などの API へのパスが定義されます。
 
     ![[新しいフォルダー] オプション](media/azure-functions-lab-image26.png)
 
@@ -213,7 +213,7 @@ ms.locfileid: "85939097"
 
     ![[新しいファイル] オプション](media/azure-functions-lab-image27.png)
 
-1. **[Web]** カテゴリ、 **[空の JSON ファイル]** テンプレートの順に選択します。 **[名前]** を**function** に設定して、 **[新規]** をクリックします。
+1. **[Web]** カテゴリ、 **[空の JSON ファイル]** テンプレートの順に選択します。 **[名前]** を **function** に設定して、 **[新規]** をクリックします。
 
     ![[空の JSON ファイル] オプション](media/azure-functions-lab-image28.png)
 
@@ -350,7 +350,7 @@ ms.locfileid: "85939097"
 
 1. ブラウザー タブで、 **http://localhost:7071/api/Process/4/6** に移動します。 これにより別のメッセージがキューに入れられ、最終的には別の行がテーブルに追加されます。
 
-1. **端末**に戻り、**4 + 6** の受信要求を監視します。
+1. **端末** に戻り、**4 + 6** の受信要求を監視します。
 
     ![追加要求を示す端末出力](media/azure-functions-lab-image32.png)
 

@@ -1,5 +1,7 @@
 ---
 title: XML スキーマ:グラフ ビューおよびコンテンツ モデル ビューでダイアグラムを印刷する
+description: XML スキーマ デザイナーのグラフ ビューまたはコンテンツ モデル ビューからダイアグラムを出力する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5aef4b2a7bc040a75a97bc66f26526053f4cada
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61b9e837af5a1112d03740cc67b5d91f24d186a5
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817126"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399160"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>方法: グラフ ビューおよびコンテンツ モデル ビューからダイアグラムを出力する
 

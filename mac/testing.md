@@ -1,18 +1,19 @@
 ---
 title: Visual Studio for Mac テスト ツール
-ms.date: 08/03/2020
+description: Visual Studio for Mac を使用してテストを作成し、実行する。
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580962"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493388"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Visual Studio for Mac のテスト ツール
 
@@ -27,7 +28,7 @@ Visual Studio for Mac のテスト ツールを使用することで、チーム
 > .NET Core アプリケーションを単体テストする方法と単体テスト フレームワークを選択する方法の詳細については、「[.NET Core と .NET Standard の単体テスト](/dotnet/core/testing/?pivots=xunit)」ドキュメントを参照してください。
 
 ## <a name="running-tests"></a>テストを実行する
-**[単体テスト]** ウィンドウは単体テストの実行に使用され、 **[表示]、[パッド]、[単体テスト]** メニューの順に選択して開きます。 ソリューションの単体テストが自動的に検出され、このウィンドウに表示されます。このウィンドウでは、すべてのテストを実行するか、選択した一連のテストを実行できます。
+**[単体テスト]** ウィンドウは単体テストの実行に使用され、 **[表示]、[テスト]** メニューの順に選択して開きます。 ソリューションの単体テストが自動的に検出され、このウィンドウに表示されます。このウィンドウでは、すべてのテストを実行するか、選択した一連のテストを実行できます。
 
 ![テスト ウィンドウに、単体テストの一覧と、テストを実行したり、停止したりするためのツール バーが表示されています。](media/test-window.PNG)
 
