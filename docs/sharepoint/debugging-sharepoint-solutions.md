@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションのデバッグ |Microsoft Docs
+description: Visual Studio デバッガーを使用して SharePoint ソリューションをデバッグします。 F5 キーのデバッグと配置プロセス、ワークフローのデバッグ、および機能イベントレシーバーのデバッグについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984493"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672861"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint ソリューションのデバッグ
   SharePoint ソリューションは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用してデバッグできます。 デバッグを開始すると、に [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] よってプロジェクトファイルが sharepoint サーバーに配置され、Web ブラウザーで sharepoint サイトのインスタンスが開かれます。 以下のセクションでは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で SharePoint アプリケーションをデバッグする方法について説明します。
@@ -100,14 +102,14 @@ ms.locfileid: "72984493"
 
 7. スコープがサイトまたは Web の場合は、SharePoint でプロジェクトのフィーチャーがアクティブ化されます。 ファーム スコープおよび Web アプリケーション スコープのフィーチャーはアクティブ化されません。
 
-8. ワークフローの場合、は、 **Sharepoint カスタマイズウィザード**で選択した sharepoint ライブラリ、リスト、またはサイトにワークフローを関連付けます。
+8. ワークフローの場合、は、 **Sharepoint カスタマイズウィザード** で選択した sharepoint ライブラリ、リスト、またはサイトにワークフローを関連付けます。
 
    > [!NOTE]
    > この関連付けは、ウィザードで [ **ワークフローを自動的に関連付ける** ] を選択した場合にのみ発生します。
 
 9. カスタマイズ可能な配置後コマンドが実行されます。
 
-10. デバッガーを [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロセスにアタッチし [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] ます (*w3wp.exe*)。 プロジェクトの種類で *サンドボックスソリューション* のプロパティを変更でき、その値が **true**に設定されている場合、デバッガーは別のプロセス (*SPUCWorkerProcess.exe*) にアタッチします。 詳細については、「 [サンドボックスソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)」を参照してください。
+10. デバッガーを [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロセスにアタッチし [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] ます (*w3wp.exe*)。 プロジェクトの種類で *サンドボックスソリューション* のプロパティを変更でき、その値が **true** に設定されている場合、デバッガーは別のプロセス (*SPUCWorkerProcess.exe*) にアタッチします。 詳細については、「 [サンドボックスソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)」を参照してください。
 
 11. SharePoint ソリューションがファーム ソリューションである場合は、JavaScript デバッガーが開始されます。
 
@@ -118,9 +120,9 @@ ms.locfileid: "72984493"
 ## <a name="sharepoint-project-features"></a>SharePoint プロジェクトの機能
  フィーチャーは、サイト定義を使用することによってサイトの変更を単純化する、移植性のあるモジュール式の機能単位です。 また、 [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 特定のスコープに対してアクティブ化し、ユーザーが特定の目標やタスクを達成するのに役立つ (WSS) 要素のパッケージでもあります。 テンプレートはフィーチャーとして配置されます。
 
- デバッグモードでプロジェクトを実行すると、配置プロセスによって、 *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*の*機能*ディレクトリにフォルダーが作成されます。 機能名には、 *プロジェクト名*_Feature*x*の形式 (TestProject_Feature1 など) があります。
+ デバッグモードでプロジェクトを実行すると、配置プロセスによって、 *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES* の *機能* ディレクトリにフォルダーが作成されます。 機能名には、 *プロジェクト名* _Feature *x* の形式 (TestProject_Feature1 など) があります。
 
- フィーチャーディレクトリ内のソリューションのフォルダーには、 *機能定義* ファイルと *ワークフロー定義* ファイルが含まれています。 フィーチャー定義ファイル (Feature.xml) は、プロジェクトの機能のファイルについて記述します。プロジェクト定義ファイル (*Elements.xml*) には、プロジェクトテンプレートが記述されています。 *Elements.xml* は **ソリューションエクスプローラー**にありますが、ソリューションパッケージの作成時に Feature.xml が生成されます。 これらのファイルの詳細については、「 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。
+ フィーチャーディレクトリ内のソリューションのフォルダーには、 *機能定義* ファイルと *ワークフロー定義* ファイルが含まれています。 フィーチャー定義ファイル (Feature.xml) は、プロジェクトの機能のファイルについて記述します。プロジェクト定義ファイル (*Elements.xml*) には、プロジェクトテンプレートが記述されています。 *Elements.xml* は **ソリューションエクスプローラー** にありますが、ソリューションパッケージの作成時に Feature.xml が生成されます。 これらのファイルの詳細については、「 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。
 
 ## <a name="debug-workflows"></a>デバッグ ワークフロー
  ワークフロー プロジェクトをデバッグすると、その種類に応じたワークフロー テンプレートが [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によってライブラリまたはリストに追加されます。 このワークフロー テンプレートは手動で開始できるほか、項目を追加または更新することによって開始することもできます。 これで、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を使用してワークフローをデバッグできます。
@@ -128,7 +130,7 @@ ms.locfileid: "72984493"
 > [!NOTE]
 > 他のアセンブリへの参照を追加する場合は、それらのアセンブリがグローバルアセンブリキャッシュ () にインストールされていることを確認してください [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] 。 そうしないと、ワークフロー ソリューションは失敗します。 アセンブリをインストールする方法の詳細については、「 [ドキュメントまたはアイテムでワークフローを手動で開始](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)する」を参照してください。
 
- ただし、配置プロセスでは、ワークフローは開始されません。 SharePoint Web サイトからワークフローを開始する必要があります。 Microsoft Office Word 2010 などのクライアント アプリケーションや別個のサーバー側のコードを使用して、ワークフローを開始することもできます。 **SharePoint カスタマイズウィザード**で指定されたいずれかの方法を使用します。
+ ただし、配置プロセスでは、ワークフローは開始されません。 SharePoint Web サイトからワークフローを開始する必要があります。 Microsoft Office Word 2010 などのクライアント アプリケーションや別個のサーバー側のコードを使用して、ワークフローを開始することもできます。 **SharePoint カスタマイズウィザード** で指定されたいずれかの方法を使用します。
 
  たとえば、ワークフローの手動での開始を許可した場合は、ライブラリまたはリスト内のアイテムから、ワークフローを直接開始します。 ワークフローを手動で開始する方法の詳細については、「 [ドキュメントアイテムでワークフローを手動で開始](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)する」を参照してください。
 
@@ -140,7 +142,7 @@ ms.locfileid: "72984493"
 ## <a name="enable-enhanced-debugging-information"></a>強化されたデバッグ情報を有効にする
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]プロセス (devenv.exe)、sharepoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ホストプロセス (*vssphost4.exe*)、sharepoint、および WCF 層との間の対話が複雑になることがあるため、構築や配置などの際に発生するエラーを診断するのは困難な場合があります。 拡張デバッグ情報を有効にすると、こうしたエラーが解決しやすくなります。 これを行うには、まず Windows レジストリで次のレジストリ キーに移動します。
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  "EnableDiagnostics" **REG_DWORD** 値がまだ存在しない場合は、手動で作成します。 "EnableDiagnostics" の値を "1" に設定します。
 
@@ -148,5 +150,5 @@ ms.locfileid: "72984493"
 
  その他の SharePoint レジストリキーの詳細については、「 [Visual Studio での sharepoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)

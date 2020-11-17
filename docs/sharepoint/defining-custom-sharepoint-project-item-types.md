@@ -1,5 +1,7 @@
 ---
 title: カスタム SharePoint プロジェクト項目の種類の定義 |Microsoft Docs
+description: 新しい種類の SharePoint プロジェクト項目を作成する場合は、カスタム SharePoint プロジェクト項目の種類を定義します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580785"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672835"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>カスタム SharePoint プロジェクト項目の種類を定義する
   新しい種類の SharePoint プロジェクト項目を作成する場合は、新しい SharePoint プロジェクト項目の種類を定義します。 たとえば、Visual Studio には、フィールドやカスタムアクションを SharePoint サイトに追加するための SharePoint プロジェクトアイテムは含まれていません。 フィールド、カスタムアクション、またはその他の種類の SharePoint コンポーネントを作成するために、独自の種類の SharePoint プロジェクト項目を定義できます。
@@ -29,9 +31,9 @@ ms.locfileid: "62580785"
 
  カスタムプロジェクト項目の種類を定義する場合は、次の機能をプロジェクト項目に追加することもできます。
 
-- ショートカットメニュー項目をプロジェクト項目に追加します。 メニュー項目は、**ソリューションエクスプローラー**のプロジェクト項目のショートカットメニューを開くと表示されます。プロジェクト項目を右クリックするか、プロジェクト項目を選択してから**Shift** + **F10**キーを押します。 詳細については、「 [方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
+- ショートカットメニュー項目をプロジェクト項目に追加します。 メニュー項目は、**ソリューションエクスプローラー** のプロジェクト項目のショートカットメニューを開くと表示されます。プロジェクト項目を右クリックするか、プロジェクト項目を選択してから **Shift** + **F10** キーを押します。 詳細については、「 [方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
 
-- カスタムプロパティをプロジェクト項目に追加します。 **ソリューションエクスプローラー**でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。 詳細については、「 [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
+- カスタムプロパティをプロジェクト項目に追加します。 **ソリューションエクスプローラー** でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。 詳細については、「 [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
 
   他の開発者が Visual Studio でプロジェクト項目を使用できるようにするには、sharepointprojectitem.spdata ファイルを作成し、プロジェクト項目に関連付けられている項目テンプレートまたはプロジェクトテンプレートを作成します。 詳細については、「 [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)」を参照してください。
 
@@ -40,7 +42,7 @@ ms.locfileid: "62580785"
 
  プロジェクト項目の種類の特定のインスタンスにアクセスするには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> メソッドの実装で *projectItemTypeDefinition* パラメーターのイベントの1つを処理し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> ます。 たとえば、カスタム型のプロジェクト項目がプロジェクトに追加されたことを確認するには、イベントを処理し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> ます。 詳細については、「 [方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: SharePoint プロジェクト項目の種類を定義する](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [方法: プロパティをカスタム SharePoint プロジェクト項目の種類に追加する](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [方法: ショートカットメニュー項目をカスタム SharePoint プロジェクト項目の種類に追加する](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)

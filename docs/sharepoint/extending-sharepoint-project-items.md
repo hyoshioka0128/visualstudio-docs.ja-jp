@@ -1,5 +1,7 @@
 ---
 title: SharePoint プロジェクト項目の拡張 |Microsoft Docs
+description: SharePoint プロジェクト項目を拡張するためのタスクを確認します。 プロジェクト項目の拡張機能とプロジェクト項目のインスタンスがどのように関連付けられているかを理解します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967397"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672575"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint プロジェクト項目の拡張
   Visual Studio に既にインストールされている SharePoint プロジェクト項目の種類に機能を追加する場合は、プロジェクト項目の拡張機能を作成します。 たとえば、Visual Studio で組み込み **イベントレシーバー** または **リスト定義** プロジェクト項目の拡張機能を作成したり、カスタムプロジェクト項目の種類の拡張機能を作成したりすることができます。 また、すべての種類の SharePoint プロジェクト項目の拡張機能を作成することもできます。
@@ -29,9 +31,9 @@ ms.locfileid: "62967397"
 
  プロジェクト項目を拡張すると、次の機能をプロジェクト項目に追加することもできます。
 
-- ショートカットメニュー項目をプロジェクト項目に追加します。 メニュー項目は、 **ソリューションエクスプローラー**でプロジェクト項目のショートカットメニューを開くと表示されます。 ショートカットメニューを開くには、プロジェクト項目を右クリックするか、プロジェクト項目を選択してから**Shift** + **F10**キーを押します。 詳細については、「 [方法: ショートカットメニュー項目を SharePoint プロジェクト項目の拡張機能に追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)する」を参照してください。
+- ショートカットメニュー項目をプロジェクト項目に追加します。 メニュー項目は、 **ソリューションエクスプローラー** でプロジェクト項目のショートカットメニューを開くと表示されます。 ショートカットメニューを開くには、プロジェクト項目を右クリックするか、プロジェクト項目を選択してから **Shift** + **F10** キーを押します。 詳細については、「 [方法: ショートカットメニュー項目を SharePoint プロジェクト項目の拡張機能に追加](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)する」を参照してください。
 
-- カスタムプロパティをプロジェクト項目に追加します。 **ソリューションエクスプローラー**でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。 詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)する」を参照してください。
+- カスタムプロパティをプロジェクト項目に追加します。 **ソリューションエクスプローラー** でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。 詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)する」を参照してください。
 
   プロジェクト項目の拡張機能を作成、配置、およびテストする方法を示すチュートリアルについては、「 [チュートリアル: SharePoint プロジェクト項目の種類の拡張](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)」を参照してください。
 
@@ -52,7 +54,7 @@ ms.locfileid: "62967397"
 |プロジェクト項目名|文字列識別子|
 |-----------------------|-----------------------|
 |ビジネス Data Catalog モデル|VisualStudio. BusinessDataConnectivity|
-|コンテンツの種類|VisualStudio. ContentType|
+|コンテンツ タイプ|VisualStudio. ContentType|
 |イベント レシーバー|VisualStudio. SharePoint. EventHandler|
 |空の要素|VisualStudio 要素です。|
 |リスト定義<br /><br /> コンテンツの種類からのリスト定義|VisualStudio (ListDefinition)|
@@ -64,9 +66,9 @@ ms.locfileid: "62967397"
 |Web パーツ|VisualStudio (SharePoint)|
 |ワークフローの関連付けフォーム|VisualStudio (WorkflowAssociation)|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: SharePoint プロジェクト項目の拡張機能を作成する](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [方法: ショートカットメニュー項目を SharePoint プロジェクト項目の拡張機能に追加する](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
 - [チュートリアル: SharePoint プロジェクト項目の種類の拡張](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)

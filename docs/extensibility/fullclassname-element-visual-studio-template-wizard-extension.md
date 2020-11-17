@@ -1,5 +1,7 @@
 ---
 title: FullClassName 要素 (VS テンプレートウィザード拡張)
+description: FullClassName 要素と、それが IWizard インターフェイスを実装するクラスの完全修飾名であることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769605"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672744"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 要素 (Visual Studio テンプレートウィザード拡張)
 インターフェイスを実装するクラスの完全修飾名 `IWizard` 。
@@ -52,7 +54,7 @@ ms.locfileid: "85769605"
 
  このテキストは、インターフェイスを実装するクラスを指定し `IWizard` ます。 指定されたクラスは、 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 要素によって指定されたアセンブリ内に存在する必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `FullClassName` は `WizardExtension` に必須の子要素です。
 
 ## <a name="example"></a>例

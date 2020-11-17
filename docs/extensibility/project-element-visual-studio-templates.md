@@ -1,5 +1,7 @@
 ---
 title: Project 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: プロジェクト要素について、およびプロジェクトに追加するファイルまたはディレクトリを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701997"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672386"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 要素 (Visual Studio テンプレート)
 プロジェクトに追加するファイルまたはディレクトリを指定します。
@@ -47,7 +49,7 @@ ms.locfileid: "80701997"
 |属性|説明|
 |---------------|-----------------|
 |`File`|必須の属性です。<br /><br /> テンプレート *.zip* ファイル内のプロジェクトファイルの名前を指定します。|
-|`ReplaceParameters`|省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値をプロジェクトファイルに含めるかどうかを指定するブール値です。 既定値は `false`にする必要があります。|
+|`ReplaceParameters`|省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値をプロジェクトファイルに含めるかどうかを指定するブール値です。 既定値は `false` です。|
 |`TargetFileName`|省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されるときのプロジェクトファイルの名前を指定します。|
 |`IgnoreProjectParameter`|省略可能な属性です。<br /><br /> 現在のソリューションにプロジェクトを追加する必要があるかどうかを指定します。 カスタムパラメーター "$*Mycustomparameter*$" の値がパラメーター置換ファイルに存在する場合、プロジェクトは作成されますが、現在開いているソリューションの一部としては追加されません。|
 
@@ -64,7 +66,7 @@ ms.locfileid: "80701997"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必須の要素です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `Project` は、`TemplateContent` の子要素で、省略可能な要素です。
 
  要素はプロジェクトを指定 `Project` するために使用されます。したがって、はプロジェクトテンプレートでのみ有効です。

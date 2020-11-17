@@ -1,5 +1,7 @@
 ---
 title: Folder 要素 (Visual Studio プロジェクトテンプレート) |Microsoft Docs
+description: フォルダー要素と、プロジェクトに追加されるフォルダーを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769583"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672718"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 要素 (Visual Studio プロジェクトテンプレート)
 プロジェクトに追加されるフォルダーを指定します。
@@ -59,7 +61,7 @@ ms.locfileid: "85769583"
 |-------------|-----------------|
 |[プロジェクト](../extensibility/project-element-visual-studio-templates.md)|[Templatecontent](../extensibility/templatecontent-element-visual-studio-templates.md)子要素 (省略可能)。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `Folder` は、の省略可能な子です `Project` 。
 
  次のいずれかの方法を使用して、プロジェクト項目をテンプレート内のフォルダーに整理できます。
@@ -74,7 +76,7 @@ ms.locfileid: "85769583"
 
      `...`
 
-- テンプレート *.zip*ファイルにフォルダーを含め、要素を含む *.vstemplate*ファイル内のプロジェクトに追加します。 `Folder` 次に例を示します。
+- テンプレート *.zip* ファイルにフォルダーを含め、要素を含む *.vstemplate* ファイル内のプロジェクトに追加します。 `Folder` 次に例を示します。
 
      `...`
 

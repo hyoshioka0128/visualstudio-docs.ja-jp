@@ -1,5 +1,7 @@
 ---
 title: Files 要素 |Microsoft Docs
+description: SharePoint プロジェクト項目スキーマの要素である Files 要素に関する参照情報を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546511"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672809"
 ---
 # <a name="files-element"></a>Files 要素
   SharePoint プロジェクトアイテムと共に配置するファイルを指定します。たとえば、フィーチャー要素ファイルや SharePoint 以外の依存プロジェクトの出力などです。
@@ -31,7 +33,7 @@ ms.locfileid: "85546511"
 </Files>
 ```
 
-## <a name="type"></a>型
+## <a name="type"></a>Type
  **FileCollectionType**
 
 ## <a name="attributes-and-elements"></a>属性と要素

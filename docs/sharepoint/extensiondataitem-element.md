@@ -1,5 +1,7 @@
 ---
 title: ExtensionDataItem 要素 |Microsoft Docs
+description: ExtensionDataItem 要素に関する参照情報を表示します。これは、SharePoint プロジェクト項目スキーマの要素です。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546550"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672614"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 要素
   SharePoint プロジェクト項目に関連付けられているカスタムデータ項目 (キー/値の形式)。 キーと値は、どちらも文字列である必要があります。
@@ -36,8 +38,8 @@ ms.locfileid: "85546550"
 
 |属性|説明|
 |---------------|-----------------|
-|**キー**|**Xs: string**属性が必要です。<br /><br /> データ項目を格納および取得するために使用されるキー。|
-|**Value**|**Xs: string**属性が必要です。<br /><br /> データ項目の値。|
+|**[キー]**|**Xs: string** 属性が必要です。<br /><br /> データ項目を格納および取得するために使用されるキー。|
+|**Value**|**Xs: string** 属性が必要です。<br /><br /> データ項目の値。|
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -48,7 +50,7 @@ ms.locfileid: "85546550"
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|SharePoint プロジェクトアイテムに関連付けられているカスタムデータアイテムのコレクションを表します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  オブジェクトのプロパティを使用してカスタムデータを SharePoint プロジェクトアイテムに関連付けると <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 、Visual Studio は、そのデータをプロジェクトアイテムのファイルの新しい **extensiondataitem** 要素に保存し `.spdata` ます。 詳細については、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
 
 ## <a name="element-information"></a>要素情報

@@ -1,6 +1,7 @@
 ---
 title: LocationFieldMRUPrefix 要素 (Visual Studio テンプレート)
 titleSuffix: ''
+description: LocationFieldMRUPrefix 要素について、および [新しいプロジェクト] ダイアログボックスと [新しい項目の追加] ダイアログボックスで最近使用した (MRU) パスをどのように指定するかについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2c295fa1a69d7815d117a99506a91f08c29aae
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: bd3eca6297430e574435f92d4b58cfbb51be805c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034053"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672510"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 要素 (Visual Studio テンプレート)
 

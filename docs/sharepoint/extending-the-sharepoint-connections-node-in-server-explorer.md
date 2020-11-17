@@ -1,6 +1,8 @@
 ---
 title: サーバーエクスプローラー | の [SharePoint 接続] ノードの拡張Microsoft Docs
 titleSuffix: ''
+description: Visual Studio の [サーバーエクスプローラー] ウィンドウで [SharePoint 接続] ノードを拡張します。 ノードにカスタムプロパティを追加します。 組み込みノードのデータを取得します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584608"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672562"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する
-  Visual Studio では、[**サーバーエクスプローラー** ] ウィンドウの [ **sharepoint 接続**] ノードを使用して、開発用コンピューターのローカル sharepoint サイトに接続できます。 このノードには、ローカル SharePoint サイトの多くのコンポーネントが階層ツリービューで表示されます。 たとえば、ローカルサイトのリスト、ドキュメントライブラリ、コンテンツの種類を表示できます。 **サーバーエクスプローラー**を使用してローカルの SharePoint サイトに接続する方法の詳細については、「[サーバーエクスプローラーを使用した Sharepoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)」を参照してください。
+  Visual Studio では、[**サーバーエクスプローラー** ] ウィンドウの [ **sharepoint 接続**] ノードを使用して、開発用コンピューターのローカル sharepoint サイトに接続できます。 このノードには、ローカル SharePoint サイトの多くのコンポーネントが階層ツリービューで表示されます。 たとえば、ローカルサイトのリスト、ドキュメントライブラリ、コンテンツの種類を表示できます。 **サーバーエクスプローラー** を使用してローカルの SharePoint サイトに接続する方法の詳細については、「[サーバーエクスプローラーを使用した Sharepoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)」を参照してください。
 
  既存のノードの拡張機能を作成するか、カスタムノードの種類を作成してノードの階層に追加することによって、[ **SharePoint 接続** ] ノードを拡張できます。
 
