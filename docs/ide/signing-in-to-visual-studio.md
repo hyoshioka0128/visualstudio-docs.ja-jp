@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870d5005cb74a3c130af3d720991a6797bb53bc5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036172"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672770"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio にサインイン
 
@@ -39,7 +39,7 @@ Visual Studio の開発エクスペリエンスをカスタマイズし、最適
 期待できる内容とサイン後に行うことができる内容の完全なリストを以下に示します。
 - **Visual Studio の評価期間を拡張する** - 30 日の評価期間にとらわれることなく、Visual Studio Professional または Visual Studio Enterprise を 90 日間延長して使用できます。 詳細については、「[試用版を延長する、またはライセンスを更新する](../ide/how-to-unlock-visual-studio.md)」をご覧ください。
 
-- **Visual Studio Community エディションの使用を継続する** - Community エディションのインストール時にライセンスを求めるプロンプトが表示された場合、IDE にサインインし、引き続き Visual Studio Community を**無料**で使用します。 
+- **Visual Studio Community エディションの使用を継続する** - Community エディションのインストール時にライセンスを求めるプロンプトが表示された場合、IDE にサインインし、引き続き Visual Studio Community を **無料** で使用します。 
 
 - **Visual Studio サブスクリプションまたは Azure DevOps 組織に関連付けられているアカウントを使用している場合は、Visual Studio をロック解除します**。 詳細な手順については、「[試用版を延長する、またはライセンスを更新する](../ide/how-to-unlock-visual-studio.md)」をご覧ください。
 
@@ -47,11 +47,11 @@ Visual Studio の開発エクスペリエンスをカスタマイズし、最適
 
 - **Visual Studio の設定を同期する** - どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 [Visual Studio での設定の同期](../ide/synchronized-settings-in-visual-studio.md)に関する記事をご覧ください。
 
-- IDE で、**Azure や Azure DevOps Services などのサービスに自動的に接続**され、同じアカウントの資格情報を再度要求されることはなくなります。
+- IDE で、**Azure や Azure DevOps Services などのサービスに自動的に接続** され、同じアカウントの資格情報を再度要求されることはなくなります。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio にサインインする方法
 
-Visual Studio を初めて開くと、サインインして基本登録情報を入力するように求められます。 
+Visual Studio を初めて開くと、サインインして基本登録情報を入力するように求められます。
 
 ![サインイン プロンプト](../ide/media/vs2019_signinpopup.png)
 
@@ -63,7 +63,7 @@ Microsoft アカウント、またはユーザーを最も的確に表す職場�
 
 ![VS2019 に現在ログインしているユーザー](../ide/media/vs2019_username.png)
 
-最初に Visual Studio を開いたときにサインインしないように選択した場合、後から簡単にサインインできます。 Visual Studio 環境の右上隅にある **[サインイン]** リンクを探してください。 
+最初に Visual Studio を開いたときにサインインしないように選択した場合、後から簡単にサインインできます。 Visual Studio 環境の右上隅にある **[サインイン]** リンクを探してください。
 
 ![サインインしていないユーザー](../ide/media/vs2019_usernotsignedin.png)
 
@@ -84,6 +84,7 @@ Microsoft アカウント、またはユーザーを最も的確に表す職場�
 ## <a name="see-also"></a>関連項目
 
 * [試用版を延長する、またはライセンスを更新する](../ide/how-to-unlock-visual-studio.md)
+* [Visual Studio の GitHub アカウントを使って作業する](../ide/work-with-github-accounts.md)
 * [Visual Studio IDE の概要](../get-started/visual-studio-ide.md)
 * [サインイン (Visual Studio for Mac)](/visualstudio/mac/signing-in)
 * [アクティブ化 (Visual Studio for Mac)](/visualstudio/mac/activation)

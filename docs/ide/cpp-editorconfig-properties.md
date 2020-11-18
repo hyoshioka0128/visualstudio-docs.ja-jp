@@ -14,12 +14,12 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: 31a7db73a4487267c2a74fe628d28b577d339aba
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90078982"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518545"
 ---
 # <a name="c-editorconfig-formatting-conventions"></a>C++ EditorConfig の書式規則
 
@@ -27,10 +27,10 @@ Visual Studio C++ フォーマッタには、グローバルに適用できる�
 
 ## <a name="c-formatting-conventions"></a>C++ 書式設定の規則
 
-C++ 書式設定の EditorConfig 設定には、プレフィックスとして `_cpp__` が付きます。 EditorConfig ファイルの例を次に示します。
+C++ 書式設定の EditorConfig 設定には、プレフィックスとして `cpp_` が付きます。 EditorConfig ファイルの例を次に示します。
 
 ```ini
-[\*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
+[*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
 
 cpp_indent_case_contents_when_block = true
 cpp_new_line_before_open_brace_namespace = same_line
