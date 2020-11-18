@@ -30,7 +30,7 @@ ms.locfileid: "93289972"
 6. 最後に、 **[送信]** を選択します。
 
 > [!NOTE]
-> **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、 [契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
+> **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、[契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
 
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
