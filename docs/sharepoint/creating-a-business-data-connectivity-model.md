@@ -1,5 +1,7 @@
 ---
 title: ビジネスデータ接続モデルを作成する |Microsoft Docs
+description: Business Data Connectivity (BDC) モデルを作成するか、Visual Studio を使用して既存の BDC モデルをカスタマイズします。 各 SharePoint プロジェクトに含めることができるモデルは1つだけです。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841480"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850469"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>ビジネス データ接続モデルを作成する
   Business Data Connectivity (BDC) モデルを作成することも、Visual Studio を使用して既存の BDC モデルをカスタマイズすることもできます。 各 SharePoint プロジェクトに含めることができるモデルは1つだけです。 詳細については、「 [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)」を参照してください。
 
 ## <a name="create-a-new-model"></a>新しいモデルを作成する
- 新しいモデルを作成するには、**ビジネスデータ接続モデル**プロジェクトを作成するか、**空の SharePoint プロジェクト**に**ビジネスデータ接続モデル**アイテムを追加します。
+ 新しいモデルを作成するには、**ビジネスデータ接続モデル** プロジェクトを作成するか、**空の SharePoint プロジェクト** に **ビジネスデータ接続モデル** アイテムを追加します。
 
 > [!NOTE]
 > コンピューターにがインストールされている必要があり [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] ます。
 
- Visual Studio によってフォルダーがプロジェクトに追加されます。 このフォルダーには、[**新しい項目の追加**] ダイアログボックスの [**ビジネスデータ接続モデル**] 項目に指定した名前が表示されます。 新しい **ビジネスデータ接続モデル** プロジェクトを作成すると、Visual Studio によってフォルダーに **BdcModel1**という名前が付いています。
+ Visual Studio によってフォルダーがプロジェクトに追加されます。 このフォルダーには、[**新しい項目の追加**] ダイアログボックスの [**ビジネスデータ接続モデル**] 項目に指定した名前が表示されます。 新しい **ビジネスデータ接続モデル** プロジェクトを作成すると、Visual Studio によってフォルダーに **BdcModel1** という名前が付いています。
 
  Visual Studio は、次のファイルを新しいフォルダーに追加します。
 

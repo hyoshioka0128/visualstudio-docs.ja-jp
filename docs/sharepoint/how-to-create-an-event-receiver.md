@@ -1,5 +1,7 @@
 ---
 title: '方法: イベントレシーバーを作成する |Microsoft Docs'
+description: ユーザーがリストやリストアイテムなどの SharePoint アイテムを操作するときに応答できるように、イベントレシーバーを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,15 +19,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016918"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849884"
 ---
 # <a name="how-to-create-an-event-receiver"></a>方法: イベントレシーバーを作成する
-  *イベントレシーバー*を作成することにより、ユーザーがリストやリストアイテムなどの SharePoint アイテムを操作するときに応答できます。 たとえば、ユーザーがカレンダーを変更したり、連絡先リストから名前を削除したりすると、イベントレシーバーのコードがトリガーされます。 このトピックでは、イベントレシーバーをリストインスタンスに追加する方法について説明します。
+  *イベントレシーバー* を作成することにより、ユーザーがリストやリストアイテムなどの SharePoint アイテムを操作するときに応答できます。 たとえば、ユーザーがカレンダーを変更したり、連絡先リストから名前を削除したりすると、イベントレシーバーのコードがトリガーされます。 このトピックでは、イベントレシーバーをリストインスタンスに追加する方法について説明します。
 
  これらの手順を完了するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows および SharePoint のエディションがインストールされ、サポートされている必要があります。 この例では SharePoint プロジェクトが必要であるため、「 [チュートリアル: サイト列、コンテンツタイプ、および sharepoint の一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)」の手順を完了している必要もあります。
 
@@ -36,21 +38,21 @@ ms.locfileid: "86016918"
 
 1. 「 [チュートリアル: SharePoint のサイト列、コンテンツタイプ、およびリストを作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)する」で作成したプロジェクトを開きます。
 
-2. **ソリューションエクスプローラー**で、[**クリニック**] という名前の SharePoint プロジェクトノードを選択します。
+2. **ソリューションエクスプローラー** で、[**クリニック**] という名前の SharePoint プロジェクトノードを選択します。
 
 3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-4. [ **Visual C#** ] または [ **Visual Basic**で、[ **SharePoint** ] ノードを展開し、[ **2010** ] 項目を選択します。
+4. [ **Visual C#** ] または [ **Visual Basic** で、[ **SharePoint** ] ノードを展開し、[ **2010** ] 項目を選択します。
 
 5. [ **テンプレート** ] ウィンドウで [ **イベントレシーバー**] を選択し、「 **TestEventReceiver1**」という名前を指定して、[ **OK** ] をクリックします。
 
-     **SharePoint カスタマイズウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード** が表示されます。
 
 6. [ **どの種類のイベントレシーバーを使用しますか?** ] ボックスの一覧で、[ **リスト項目イベント**] を選択します。
 
 7. [ **イベントソースを指定してください]** の一覧で、[ **患者 (Clinic\Patients)**] を選択します。
 
-8. [ **次のイベントを処理** する] ボックスの一覧で、 **項目**の横にあるチェックボックスをオンにし、[ **完了** ] をクリックします。
+8. [ **次のイベントを処理** する] ボックスの一覧で、 **項目** の横にあるチェックボックスをオンにし、[ **完了** ] をクリックします。
 
      新しいイベントレシーバーのコードファイルには、という名前の1つのメソッドが含まれてい `ItemAdded` ます。 次の手順では、このメソッドにコードを追加して、すべての連絡先が既定で Scott Brown という名前になるようにします。
 

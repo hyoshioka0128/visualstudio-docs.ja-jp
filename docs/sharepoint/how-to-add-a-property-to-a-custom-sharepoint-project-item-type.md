@@ -1,5 +1,7 @@
 ---
 title: カスタム SharePoint プロジェクト項目の種類へのプロパティの追加
+description: カスタム SharePoint プロジェクト項目の種類にプロパティを追加します。 プロパティは、ソリューションエクスプローラーでプロジェクト項目が選択されたときにプロパティウィンドウに表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54765b9b6b82214a7deccaee4f9ee671a72dd40d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b62f41ff6b185469a61681a8845c4e96d044695
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850183"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>方法: プロパティをカスタム SharePoint プロジェクト項目の種類に追加する
-  カスタム SharePoint プロジェクト項目の種類を定義するときに、プロパティをプロジェクト項目に追加できます。 **ソリューションエクスプローラー**でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
+  カスタム SharePoint プロジェクト項目の種類を定義するときに、プロパティをプロジェクト項目に追加できます。 **ソリューションエクスプローラー** でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
 
  次の手順では、独自の SharePoint プロジェクトアイテムの種類が既に定義されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。
 
@@ -30,7 +32,7 @@ ms.locfileid: "86015993"
 
 1. カスタムプロジェクト項目の種類に追加するプロパティを表すパブリックプロパティを持つクラスを定義します。 カスタムプロジェクト項目の種類に複数のプロパティを追加する場合は、同じクラスまたは異なるクラスのすべてのプロパティを定義できます。
 
-2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> *projectItemTypeDefinition*パラメーターのイベントを処理します。
+2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> *projectItemTypeDefinition* パラメーターのイベントを処理します。
 
 3. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 、カスタムプロパティクラスのインスタンスを <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> イベント引数パラメーターのコレクションに追加します。
 

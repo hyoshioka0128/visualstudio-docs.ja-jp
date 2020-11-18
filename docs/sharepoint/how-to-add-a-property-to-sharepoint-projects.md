@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint プロジェクトにプロパティを追加する |Microsoft Docs'
+description: プロジェクト拡張機能を使用して、SharePoint プロジェクトにプロパティを追加します。 ソリューションエクスプローラーでプロジェクトを選択すると、プロパティウィンドウにプロパティが表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015923"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850157"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加する
-  プロジェクトの拡張機能を使用して、任意の SharePoint プロジェクトにプロパティを追加できます。 **ソリューションエクスプローラー**でプロジェクトを選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
+  プロジェクトの拡張機能を使用して、任意の SharePoint プロジェクトにプロパティを追加できます。 **ソリューションエクスプローラー** でプロジェクトを選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
 
  次の手順では、プロジェクトの拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
 
@@ -30,7 +32,7 @@ ms.locfileid: "86015923"
 
 1. SharePoint プロジェクトに追加するプロパティを表すパブリックプロパティを持つクラスを定義します。 複数のプロパティを追加する場合は、同じクラスまたは異なるクラスのすべてのプロパティを定義できます。
 
-2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> *projectservice*パラメーターのイベントを処理します。
+2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> *projectservice* パラメーターのイベントを処理します。
 
 3. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> 、properties クラスのインスタンスを <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> イベント引数パラメーターのコレクションに追加します。
 
@@ -84,4 +86,4 @@ ms.locfileid: "86015923"
 - [SharePoint プロジェクトの拡張](../sharepoint/extending-sharepoint-projects.md)
 - [方法: SharePoint プロジェクトの拡張機能を作成する](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [方法: ショートカットメニュー項目を SharePoint プロジェクトに追加する](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)

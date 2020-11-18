@@ -1,5 +1,7 @@
 ---
 title: API リファレンス (SharePoint ツールの機能拡張) |Microsoft Docs
+description: Visual Studio での SharePoint ツールの拡張については、API リファレンスドキュメントを参照してください。 VisualStudio など、関連する名前空間の一覧を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987983"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850391"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API リファレンス (SharePoint ツールの機能拡張)
   このセクションでは、Visual Studio の SharePoint ツールを拡張するための API リファレンス ドキュメントを示します。
@@ -29,7 +31,7 @@ ms.locfileid: "62987983"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- カスタム *SharePoint コマンド*の作成に使用できる型が含まれています。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルに対する呼び出しを SharePoint ツールの拡張機能から行うメソッドです。
+ カスタム *SharePoint コマンド* の作成に使用できる型が含まれています。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルに対する呼び出しを SharePoint ツールの拡張機能から行うメソッドです。
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
@@ -37,7 +39,7 @@ ms.locfileid: "62987983"
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer>
 
- **サーバーエクスプローラー**で SharePoint ノードを拡張したり、独自の種類のノードを定義したりするために使用する型が含まれています。
+ **サーバーエクスプローラー** で SharePoint ノードを拡張したり、独自の種類のノードを定義したりするために使用する型が含まれています。
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>
 
@@ -67,10 +69,10 @@ ms.locfileid: "62987983"
 
  SharePoint プロジェクトの機能およびパッケージ検証動作をカスタマイズするために使用する型があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [SharePoint ツールの機能拡張&#41;のリファレンス &#40;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [SharePoint ツール拡張機能のプログラミングモデルの概要](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
-- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [SharePoint ツール拡張機能のプログラミング モデルの概要](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)
+- [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [SharePoint のパッケージ化と配置の拡張](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
 - [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)

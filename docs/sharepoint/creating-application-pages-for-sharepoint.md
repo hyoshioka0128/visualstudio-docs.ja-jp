@@ -1,5 +1,7 @@
 ---
 title: SharePoint 用のアプリケーションページを作成する |Microsoft Docs
+description: SharePoint のアプリケーションページを作成します。 アプリケーションページは、SharePoint web サイトで使用するために設計された ASP.NET web ページです。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981098"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850443"
 ---
-# <a name="create-application-pages-for-sharepoint"></a>SharePoint のアプリケーションページの作成
-  *アプリケーションページ*は、SharePoint web サイトで使用できるように設計された ASP.NET web ページです。 アプリケーションページは特殊な種類の ASP.NET ページです。 アプリケーションページと標準 ASP.NET ページの主な違いは、アプリケーションページに SharePoint マスターページとマージされたコンテンツが含まれていることです。 マスターページを使用すると、アプリケーションページは、サイト上の他のページと同じ外観と動作を共有できます。
+# <a name="create-application-pages-for-sharepoint"></a>SharePoint のアプリケーション ページの作成
+  *アプリケーションページ* は、SharePoint web サイトで使用できるように設計された ASP.NET web ページです。 アプリケーションページは特殊な種類の ASP.NET ページです。 アプリケーションページと標準 ASP.NET ページの主な違いは、アプリケーションページに SharePoint マスターページとマージされたコンテンツが含まれていることです。 マスターページを使用すると、アプリケーションページは、サイト上の他のページと同じ外観と動作を共有できます。
 
  Visual Studio では、デザイナーを使用してアプリケーションページをデザインできます。 デザイナーには、マスターページで定義されている各コンテンツプレースホルダーのコンテンツ領域が表示されます。 これらのコンテンツ領域にコントロールをドラッグすることで、アプリケーションページをデザインできます。
 
-## <a name="application-pages"></a>アプリケーションページ
+## <a name="application-pages"></a>アプリケーション ページ
  アプリケーションページは、サーバー上のすべてのサイトで共有されます。一方、サイトページは、1つのサイトに固有です。 詳細については、「 [SharePoint ページの種類](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))」を参照してください。
 
  既定では、SharePoint サイトを作成するときに表示されるページのほとんどは、サイトページです。 サイトページは、SharePoint ページライブラリに追加できます。 ユーザーは、SharePoint デザイナーなどのツールを使用してサイトページをカスタマイズできます。 サイトページでは、動的 Web パーツ、Web パーツゾーンなどの機能もホストできます。
@@ -43,7 +45,7 @@ ms.locfileid: "72981098"
 
 |Folder|説明|
 |------------|-----------------|
-|レイアウト|SharePoint ファイルシステムの _layouts 仮想ディレクトリにマップされます。|
+|Layouts|SharePoint ファイルシステムの _layouts 仮想ディレクトリにマップされます。|
 |レイアウトサブフォルダー|アプリケーションページを構成するファイルが含まれます。 既定では、このフォルダーの名前はプロジェクトと同じです。 このフォルダーの名前はいつでも変更できます。 プロジェクトを実行すると、Visual Studio によってこのフォルダーが SharePoint ファイルシステムの _layouts 仮想ディレクトリに配置されます。|
 
  Visual Studio によって、次のファイルがプロジェクトに追加されます。
@@ -64,7 +66,7 @@ ms.locfileid: "72981098"
 
  アプリケーションページを表示するには、アプリケーションページの場所 (例: http://<em>Server_Name</em>/_layouts/*Project_Name*/applicationpage1. aspx) に手動で移動する必要があります。
 
- SharePoint プロジェクトをデバッグする方法の詳細については、「 [sharepoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」を参照してください。
+ SharePoint プロジェクトのデバッグ方法の詳細については、「[SharePoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」を参照してください。
 
 ## <a name="choose-a-master-page"></a>マスターページの選択
  既定では、 **アプリケーションページ** アイテムは、プロジェクトのデバッグに使用しているサイトのマスターページを参照します。 このページには「v4. master」という名前が付けられ、SharePoint サイトの **マスターページギャラリー** に一覧表示されます。

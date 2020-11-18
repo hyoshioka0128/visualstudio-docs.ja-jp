@@ -1,6 +1,8 @@
 ---
 title: ショートカットメニュー項目を SharePoint プロジェクト項目の拡張機能に追加する
 titleSuffix: ''
+description: Visual Studio でプロジェクト項目の拡張機能を使用して、既存の SharePoint プロジェクト項目にショートカットメニュー項目を追加します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3c0627849df12b98ddc16f54317faf952cb41f6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f5e6b32c418fbbdfbced5e6a6d698ad02358393d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585863"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849793"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>方法: ショートカットメニュー項目を SharePoint プロジェクト項目の拡張機能に追加する
-  プロジェクト項目の拡張機能を使用して、既存の SharePoint プロジェクト項目にショートカットメニュー項目を追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー**でプロジェクト項目を右クリックしたときに表示されます。
+  プロジェクト項目の拡張機能を使用して、既存の SharePoint プロジェクト項目にショートカットメニュー項目を追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー** でプロジェクト項目を右クリックしたときに表示されます。
 
  次の手順では、プロジェクト項目の拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
 
 ### <a name="to-add-a-shortcut-menu-item-in-a-project-item-extension"></a>プロジェクト項目の拡張機能にショートカットメニュー項目を追加するには
 
-1. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> *projectItemType*パラメーターのイベントを処理します。
+1. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> *projectItemType* パラメーターのイベントを処理します。
 
 2. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> 、 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> イベント引数パラメーターのコレクションまたはコレクションに新しいオブジェクトを追加します。
 
