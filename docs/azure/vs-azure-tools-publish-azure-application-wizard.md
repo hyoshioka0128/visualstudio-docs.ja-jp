@@ -3,21 +3,20 @@ title: Azure クラウド サービスを発行する
 description: Visual Studio の Azure アプリケーションの公開ウィザードで、さまざまな設定を構成する方法について説明します。
 author: ghogen
 manager: jillfra
-assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399457"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902312"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio の Azure アプリケーションの公開ウィザードの使用
 
-Visual Studio で Web アプリケーションをデプロイしたら、 **Azure アプリケーションの公開** ウィザードを使用して、そのアプリケーションを Azure クラウド サービスに発行できます。
+Visual Studio で Web アプリケーションをデプロイしたら、**Azure アプリケーションの公開** ウィザードを使用して、そのアプリケーションを Azure クラウド サービスに発行できます。
 
 > [!Note]
 > この記事では Web サイトではなくクラウド サービスへのデプロイについて説明します。 Web サイトへのデプロイの詳細については、 [Azure の Web サイトのデプロイ方法](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false)に関するページを参照してください。
@@ -44,7 +43,7 @@ Azure アプリケーションの公開ウィザードには、使用する Visu
 
 ![サインイン ページ](./media/vs-azure-tools-publish-azure-application-wizard/sign-in.png)
 
-**アカウント** - アカウント ドロップダウン リストでアカウントを選択するか、 **[アカウントの追加]** を選択します。
+**アカウント** - アカウント ドロップダウン リストでアカウントを選択するか、**[アカウントの追加]** を選択します。
 
 **[サブスクリプションの選択]** - デプロイに使用するサブスクリプションを選択します。
 
@@ -52,7 +51,7 @@ Azure アプリケーションの公開ウィザードには、使用する Visu
 
 ![[共通設定]](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**[クラウド サービス]** - ドロップダウンを使用して、既存のクラウド サービスを選択するか、 **[&lt;新規作成>]** を選択してクラウド サービスを作成します。 クラウド サービスごとに、データ センターがかっこ内に表示されます。 クラウド サービスのデータ センターの場所は、ストレージ アカウントのデータ センターの場所 ([詳細設定]) と同じであることが推奨されます。
+**[クラウド サービス]** - ドロップダウンを使用して、既存のクラウド サービスを選択するか、**[&lt;新規作成>]** を選択してクラウド サービスを作成します。 クラウド サービスごとに、データ センターがかっこ内に表示されます。 クラウド サービスのデータ センターの場所は、ストレージ アカウントのデータ センターの場所 ([詳細設定]) と同じであることが推奨されます。
 
 **[環境]** - **[運用]** または **[ステージング]** を選択します。 アプリケーションをテスト環境にデプロイする場合は、ステージング環境を選択します。
 
@@ -62,7 +61,7 @@ Azure アプリケーションの公開ウィザードには、使用する Visu
 
 **[すべてのロールのリモート デスクトップを有効にする]** - サービスにリモート接続できるようにする場合は、このオプションを選択します。 このオプションは、主にトラブルシューティングのために使用されます。 詳しくは、「[Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio (Visual Studio を使用して Azure Cloud Services のロールでリモート デスクトップ接続を有効にする)](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio)」をご覧ください。
 
-**[すべての Web ロールの Web 配置を有効にする]** - サービスで Web 配置を有効にするには、このオプションを選択します。 この機能を使用するには、 **[すべてのロールのリモート デスクトップを有効にする]** も選択する必要があります。 詳しくは、「[Visual Studio を使用した Azure クラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)」をご覧ください。
+**[すべての Web ロールの Web 配置を有効にする]** - サービスで Web 配置を有効にするには、このオプションを選択します。 この機能を使用するには、**[すべてのロールのリモート デスクトップを有効にする]** も選択する必要があります。 詳しくは、「[Visual Studio を使用した Azure クラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)」をご覧ください。
 
 ## <a name="settings-page---advanced-settings-tab"></a>設定ページ - [詳細設定] タブ
 
@@ -74,7 +73,7 @@ Azure アプリケーションの公開ウィザードには、使用する Visu
 
 Azure ストレージ アカウントには、アプリケーション デプロイのパッケージが格納されます。 アプリケーションのデプロイ後、パッケージはストレージ アカウントから削除されます。
 
-**[失敗時に配置を削除]** - 発行中にエラーが発生した場合にデプロイを削除するには、このチェック ボックスをオンにします。 クラウド サービスの固定仮想 IP アドレスを保持する場合は、これをオフにする必要があります。
+**[失敗時に配置を削除]**- 発行中にエラーが発生した場合にデプロイを削除するには、このチェック ボックスをオンにします。 クラウド サービスの固定仮想 IP アドレスを保持する場合は、これをオフにする必要があります。
 
 **[配置の更新]** - 更新されたコンポーネントだけをデプロイする場合は、このチェック ボックスをオンにします。 このデプロイは、完全なデプロイより高速な場合があります。 クラウド サービスの固定仮想 IP アドレスを保持する場合は、これをオンにする必要があります。
 
@@ -98,7 +97,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 ![概要ページ](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、 **[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、 **[ターゲット プロファイル]** の一覧を開き、 **[&lt;管理…&gt;]** を選択します。
+**[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、**[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、**[ターゲット プロファイル]** の一覧を開き、**[&lt;管理…&gt;]** を選択します。
 
    > [!Note]
    > 発行プロファイルが Visual Studio のソリューション エクスプローラーに表示され、プロファイル設定が .azurePubxml という拡張子を持つファイルに書き込まれます。 設定は、XML タグの属性として保存されます。

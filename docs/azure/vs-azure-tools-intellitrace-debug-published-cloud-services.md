@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Visual Studio と IntelliTrace を使用して、クラウド サービスをデバッグする方法について説明します。
 author: mikejo5000
 manager: jillfra
-ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: b89ed536e6483f54d4d7370a02935728dedfb517
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809821"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902416"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ
 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 実際には、IntelliTrace は Azure アプリケーションが Azure のクラウド サービスとして実行されている際にキー コードの実行および環境データを記録し、その記録されたデータを Visual Studio で再生できるようにします。
@@ -32,7 +31,7 @@ IntelliTrace を Azure アプリケーションで有効にするには、Visual
 
 1. Azure アプリケーションを配置する準備が整ったら、プロジェクト ビルドのターゲットが **[デバッグ]** に設定されていることを確認します。
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、コンテキスト メニューの **[発行]** を選択します。
+1. **ソリューション エクスプローラー** でプロジェクトを右クリックし、コンテキスト メニューの **[発行]** を選択します。
 
 1. **[Azure アプリケーションの公開]** ダイアログで Azure サブスクリプションを選択し、**[次へ]** をクリックします。
 
@@ -50,14 +49,14 @@ IntelliTrace を Azure アプリケーションで有効にするには、Visual
 
 IntelliTrace ログは、IntelliTrace 設定で指定された最大サイズの循環ログ ファイルです(既定のサイズは 250 MB)。 IntelliTrace ログは、仮想マシンのファイル システム内のファイルに収集されます。 ログを要求すると、スナップショットがその時点で取得され、ローカル コンピューターにダウンロードされます。
 
-Azure クラウド サービスが Azure に発行されたら、次の図に示すように、**サーバー エクスプローラー**の Azure ノードから IntelliTrace が有効になっているかどうかを確認できます。
+Azure クラウド サービスが Azure に発行されたら、次の図に示すように、**サーバー エクスプローラー** の Azure ノードから IntelliTrace が有効になっているかどうかを確認できます。
 
 ![サーバー エクスプローラー - 有効化された IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC744134.png)
 
 ## <a name="download-intellitrace-logs-for-a-role-instance"></a>ロール インスタンスの IntelliTrace ログをダウンロードする
 Visual Studio で、次の手順に従ってロール インスタンスの IntelliTrace ログをダウンロードできます。
 
-1. **サーバー エクスプローラー**で **[クラウド サービス]** ノードを展開し、ログをダウンロードするロール インスタンスを見つけます。
+1. **サーバー エクスプローラー** で **[クラウド サービス]** ノードを展開し、ログをダウンロードするロール インスタンスを見つけます。
 
 1. ロール インスタンスを右クリックし、コンテキスト メニューの **[IntelliTrace ログの表示]** を選択します。
 

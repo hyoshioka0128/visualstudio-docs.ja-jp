@@ -3,18 +3,17 @@ title: 接続済みサービスを使用して Azure Storage を追加する | M
 description: Visual Studio を使用して、アプリに Azure Storage サービスの依存関係を追加接続済みサービス
 author: ghogen
 manager: jillfra
-assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800516"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902637"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加
 
@@ -45,7 +44,7 @@ Visual Studio では、次のいずれかを、 **接続済みサービス** 機
 
 1. Visual Studio でプロジェクトを開きます。
 
-1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
+1. **ソリューションエクスプローラー** で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
 
     ![Azure の接続済みサービスを追加する](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
@@ -76,11 +75,11 @@ Visual Studio では、次のいずれかを、 **接続済みサービス** 機
 
 1. Visual Studio でプロジェクトを開きます。
 
-1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
+1. **ソリューションエクスプローラー** で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
 
     ![Azure の接続済みサービスを追加する](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
-1. [ **接続済みサービス** ] タブで、 **サービスの依存関係**の [+] アイコンを選択します。
+1. [ **接続済みサービス** ] タブで、 **サービスの依存関係** の [+] アイコンを選択します。
 
     ![サービスの依存関係の追加](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 

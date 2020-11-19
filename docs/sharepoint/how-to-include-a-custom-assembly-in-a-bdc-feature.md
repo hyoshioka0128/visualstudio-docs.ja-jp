@@ -1,5 +1,7 @@
 ---
 title: '方法: BDC 機能にカスタムアセンブリを含める |Microsoft Docs'
+description: ビジネスデータ接続 (BDC) 機能にカスタムアセンブリを追加して、プロジェクトが同じソリューション内の他のプロジェクトからアセンブリを参照できるようにします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740072"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903469"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>方法: BDC 機能にカスタムアセンブリを含める
   プロジェクトは、同じソリューション内の他のプロジェクトのアセンブリを参照できます。 ただし、[参照された **アセンブリを lobsystem に割り当てる** ] ダイアログボックスを使用して、プロジェクトの機能ファイルにこれらのアセンブリを追加する必要があります。
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Business data connectivity (BDC) 機能にカスタムアセンブリを含めるには
 
-1. **ソリューションエクスプローラー**で、BDC モデルが含まれているフォルダーを選択します。
+1. **ソリューションエクスプローラー** で、BDC モデルが含まれているフォルダーを選択します。
 
 2. **[表示]** メニューの **[プロパティ ウィンドウ]** をクリックします。
 

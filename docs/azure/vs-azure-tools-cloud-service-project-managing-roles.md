@@ -3,17 +3,16 @@ title: Azure クラウド サービスのロールの管理
 description: Visual Studio で Azure クラウド サービスのロールを追加または削除する方法について説明します。
 author: ghogen
 manager: jillfra
-assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8e932084f9bf3d4631b2fae027224f8973602f13
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398840"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902585"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio での Azure クラウド サービスのロールの管理
 Azure クラウド サービスを作成した後、サービスに新しいロールを追加したり、サービスから既存のロールを削除したりできます。 既存のプロジェクトをインポートし、ロールに変換することもできます。 たとえば、ASP.NET Web アプリケーションをインポートし、そのアプリケーションを Web ロールとして指定できます。

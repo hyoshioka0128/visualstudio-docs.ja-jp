@@ -3,17 +3,16 @@ title: 現行バージョンの Azure ツールにプロジェクトをアップ
 description: Visual Studio の Azure プロジェクトを現行バージョンの Azure Tools にアップグレードする方法について説明します。
 author: ghogen
 manager: jillfra
-assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 4cd9ffac5f668a9f6cd6ab266d38b90658ce9336
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: fce77f6417a14c204df883efd2f64655fa79b432
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398580"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901909"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>現行バージョンの Azure Tools for Visual Studio にプロジェクトをアップグレードする方法
 ## <a name="overview"></a>概要
@@ -25,7 +24,7 @@ ms.locfileid: "93398580"
 * より新しいバージョンの Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll を参照するように、Web ロールの web.config ファイルと worker ロールの app.config ファイルが更新されます。
 * Microsoft.WindowsAzure.StorageClient.dll、Microsoft.WindowsAzure.Diagnostics.dll、Microsoft.WindowsAzure.ServiceRuntime.dll の各アセンブリが新しいバージョンにアップグレードされます。
 * Azure のプロジェクト ファイル (.ccproj) に格納された発行プロファイルは、.azurePubXml という拡張子で **Publish** サブディレクトリ内の別のファイルに移されます。
-* 新機能と変更された機能をサポートするために、発行プロファイルのいくつかのプロパティが更新されます。 デプロイされたクラウド サービスを同時にまたは段階的にアップグレードできるため、 **[AllowUpgrade]** は **[DeploymentReplacementMethod]** に置き換えられます。
+* 新機能と変更された機能をサポートするために、発行プロファイルのいくつかのプロパティが更新されます。 デプロイされたクラウド サービスを同時にまたは段階的にアップグレードできるため、**[AllowUpgrade]** は **[DeploymentReplacementMethod]** に置き換えられます。
 * **UseIISExpressByDefault** プロパティが追加され、false に設定されたため、デバッグで使用する Web サーバーはインターネット インフォメーション サービス (IIS: Internet Information Services) から IIS Express に自動的に変更されません。 最近のバージョンのツールで作成したプロジェクトの Web サーバーは、既定では IIS Express になります。
 * 既にあるプロジェクトのロールで Azure のキャッシュ機能がホストされている場合、プロジェクトをアップグレードするときにサービス構成 (.cscfg ファイル) とサービス定義 (.csdef ファイル) 内の一部のプロパティが変更されます。 プロジェクトで使用されている Azure のキャッシュ機能が NuGet パッケージである場合、プロジェクトは最新バージョンのパッケージにアップグレードされます。 web.config ファイルを開き、クライアントの構成がアップグレード処理後も適切に維持されていることを確認する必要があります。 NuGet パッケージを使用せずに、クライアント アセンブリへの参照として Azure のキャッシュ機能を追加した場合は、アセンブリが更新されません。アセンブリへの参照を新しいバージョンに手動で更新する必要があります。
 
@@ -36,8 +35,8 @@ ms.locfileid: "93398580"
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Azure プロジェクトを現行リリースにアップグレードする方法
 1. アップグレード後のプロジェクトに使用する Visual Studio 環境に、新しいバージョンの Azure Tools をインストールして、アップグレード対象のプロジェクトを開きます。 プロジェクトが 1.6 (2011 年 11 月) リリース未満の Azure Tools で作成されている場合、プロジェクトは新しいバージョンに自動的にアップグレードされます。 2011 年 11 月リリースでプロジェクトが作成され、そのバージョンがまだインストールされている場合、プロジェクトはそのバージョンで開きます。
-2. [ソリューション エクスプ ローラー] で、プロジェクト ノードのショートカット メニューを開き、 **[プロパティ]** を選択し、表示されるダイアログ ボックスの **[アプリケーション]** タブを選択します。
+2. [ソリューション エクスプ ローラー] で、プロジェクト ノードのショートカット メニューを開き、**[プロパティ]** を選択し、表示されるダイアログ ボックスの **[アプリケーション]** タブを選択します。
 
-    **[アプリケーション]** タブに、プロジェクトに関連付けられたツールのバージョンが表示されます。 新しいバージョンの Azure Tools が表示された場合、そのプロジェクトは既にアップグレードされています。 タブに表示されたバージョンよりも新しいツールをインストールしている場合は、 **[アップグレード]** が表示されます。
+    **[アプリケーション]** タブに、プロジェクトに関連付けられたツールのバージョンが表示されます。 新しいバージョンの Azure Tools が表示された場合、そのプロジェクトは既にアップグレードされています。 タブに表示されたバージョンよりも新しいツールをインストールしている場合は、**[アップグレード]** が表示されます。
 3. **[アップグレード]** ボタンをクリックして、プロジェクトを現在のバージョンのツールにアップグレードします。
 4. プロジェクトをビルドし、API の変更に起因するエラーがあれば解決してください。 新しいバージョンのコードを変更する方法については、特定の API に関するドキュメントを参照してください。

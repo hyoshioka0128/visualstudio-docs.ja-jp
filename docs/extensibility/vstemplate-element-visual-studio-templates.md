@@ -1,5 +1,7 @@
 ---
 title: .Vstemplate 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: .Vstemplate 要素について、およびプロジェクトテンプレート、項目テンプレート、またはスタートキットに関するすべてのメタデータがどのように含まれているかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 973e2ede7e97d1e7710e6571d520be3d8919b9d9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697864"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903482"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>.Vstemplate 要素 (Visual Studio テンプレート)
 プロジェクトテンプレート、項目テンプレート、またはスタートキットに関するすべてのメタデータが含まれます。
@@ -56,7 +58,7 @@ ms.locfileid: "80697864"
  [なし] :
 
 ## <a name="remarks"></a>解説
- `VSTemplate`要素は *.vstemplate*ファイルのルート要素です。
+ `VSTemplate`要素は *.vstemplate* ファイルのルート要素です。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。

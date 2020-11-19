@@ -4,17 +4,16 @@ description: Visual Studio から Windows PowerShell スクリプトを使用し
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0fafcd0042fce6d3f9eece8e493ee01a9a6923e5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407589"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902144"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -38,7 +37,7 @@ Azure 開発のために、Visual Studio で PowerShell を使用するための
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio によって生成されるスクリプト
 
-Visual Studio では、 **PublishScripts** というソリューション レベルのフォルダーが生成されます。このフォルダーには、2 つの Windows PowerShell ファイルが含まれます。1 つは仮想マシンまたは Web サイト用の公開スクリプト、もう 1 つはスクリプトで使用できる関数が含まれるモジュールです。 また、Visual Studio では、デプロイするプロジェクトの詳細を指定した JSON 形式のファイルも生成されます。
+Visual Studio では、**PublishScripts** というソリューション レベルのフォルダーが生成されます。このフォルダーには、2 つの Windows PowerShell ファイルが含まれます。1 つは仮想マシンまたは Web サイト用の公開スクリプト、もう 1 つはスクリプトで使用できる関数が含まれるモジュールです。 また、Visual Studio では、デプロイするプロジェクトの詳細を指定した JSON 形式のファイルも生成されます。
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell 発行スクリプト
 
@@ -50,7 +49,7 @@ Visual Studio によって生成される Windows PowerShell モジュールに�
 
 ### <a name="json-configuration-file"></a>JSON 構成ファイル
 
-JSON ファイルは [ **構成** ] フォルダーに作成されます。このファイルには、Azure にデプロイするリソースを正確に指定する構成データが含まれています。 Visual Studio によって生成されるファイルの名前は、プロジェクト名-WAWS-dev.json (Web サイトを作成した場合)、またはプロジェクト名-VM-dev.json (仮想マシンを作成した場合) です。 Web サイトの作成時に生成される JSON 構成ファイルの例を次に示します。 ほとんどの値がわかりやすく記述されています。 Web サイト名は Azure によって生成されるので、プロジェクト名と一致しない場合があります。
+JSON ファイルは [**構成**] フォルダーに作成されます。このファイルには、Azure にデプロイするリソースを正確に指定する構成データが含まれています。 Visual Studio によって生成されるファイルの名前は、プロジェクト名-WAWS-dev.json (Web サイトを作成した場合)、またはプロジェクト名-VM-dev.json (仮想マシンを作成した場合) です。 Web サイトの作成時に生成される JSON 構成ファイルの例を次に示します。 ほとんどの値がわかりやすく記述されています。 Web サイト名は Azure によって生成されるので、プロジェクト名と一致しない場合があります。
 
 ```json
 {
@@ -142,7 +141,7 @@ JSON ファイルは [ **構成** ] フォルダーに作成されます。こ�
 
 JSON 構成を編集して、発行スクリプトの実行時の動作を変更できます。 `cloudService` セクションと `virtualMachine` セクションは必須ですが、`databases` セクションは不要であれば削除できます。 Visual Studio によって生成される既定の構成ファイルに含まれる空のプロパティは省略可能です。既定の構成ファイルで値が指定されているプロパティは必須です。
 
-Azure に運用サイトが 1 つだけ存在するのでなく、複数のデプロイ環境 (スロット) を持つ Web サイトがある場合は、JSON 構成ファイルの Web サイト名にスロット名を含めることができます。 たとえば、 **mysite** という名前の Web サイトがあり、そのスロットに **test** という名前を付けた場合、URI は `mysite-test.cloudapp.net` となります。ただし、構成ファイルで使用する正しい名前は mysite(test) です。 これが可能なのは、サブスクリプションに Web サイトとスロットが既に存在している場合に限られます。 存在していない場合は、スロットを指定せずにスクリプトを実行して Web サイトを作成し、[Azure Portal](https://portal.azure.com/) でスロットを作成してから、変更した Web サイト名でスクリプトを実行します。 Web アプリのデプロイ スロットの詳細については、「[Azure App Service の Web アプリのステージング環境を設定する](/azure/app-service/web-sites-staged-publishing)」をご覧ください。
+Azure に運用サイトが 1 つだけ存在するのでなく、複数のデプロイ環境 (スロット) を持つ Web サイトがある場合は、JSON 構成ファイルの Web サイト名にスロット名を含めることができます。 たとえば、**mysite** という名前の Web サイトがあり、そのスロットに **test** という名前を付けた場合、URI は `mysite-test.cloudapp.net` となります。ただし、構成ファイルで使用する正しい名前は mysite(test) です。 これが可能なのは、サブスクリプションに Web サイトとスロットが既に存在している場合に限られます。 存在していない場合は、スロットを指定せずにスクリプトを実行して Web サイトを作成し、[Azure Portal](https://portal.azure.com/) でスロットを作成してから、変更した Web サイト名でスクリプトを実行します。 Web アプリのデプロイ スロットの詳細については、「[Azure App Service の Web アプリのステージング環境を設定する](/azure/app-service/web-sites-staged-publishing)」をご覧ください。
 
 ## <a name="how-to-run-the-publish-scripts"></a>発行スクリプトの実行方法
 
@@ -156,7 +155,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    詳細については、「 [方法: Visual Studio で Web 配置パッケージを作成する](/previous-versions/aspnet/dd465323(v=vs.110))」をご覧ください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
-1. **ソリューション エクスプローラー** でスクリプトのコンテキスト メニューを開き、 **[PowerShell ISE で開く]** をクリックします。
+1. **ソリューション エクスプローラー** でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。
 
     ```powershell
@@ -171,9 +170,9 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
     メッセージが表示されたら、ユーザー名とパスワードを入力します。
 
-    スクリプトを自動化すると、この方法で Azure 資格情報を提供できなくなります。 代わりに、`.publishsettings` ファイルを使用して、資格情報を提供する必要があります。 1 回だけ、 **Get-AzurePublishSettingsFile** コマンドを使用してこのファイルを Azure からダウンロードしたら、それ以降は **Import-AzurePublishSettingsFile** を使用してファイルをインポートします。 詳しい手順については、「 [Azure PowerShell のインストールおよび構成方法](/powershell/azure/overview)」をご覧ください。
+    スクリプトを自動化すると、この方法で Azure 資格情報を提供できなくなります。 代わりに、`.publishsettings` ファイルを使用して、資格情報を提供する必要があります。 1 回だけ、**Get-AzurePublishSettingsFile** コマンドを使用してこのファイルを Azure からダウンロードしたら、それ以降は **Import-AzurePublishSettingsFile** を使用してファイルをインポートします。 詳しい手順については、「 [Azure PowerShell のインストールおよび構成方法](/powershell/azure/overview)」をご覧ください。
 
-1. (省略可能) Web アプリケーションを発行せずに、仮想マシン、データベース、Web サイトなどの Azure リソースを作成する場合は、 **-Configuration** 引数を JSON 構成ファイルに設定した **Publish-WebApplication.ps1** コマンドを使用します。 このコマンド ラインでは、JSON 構成ファイルを使用して作成するリソースを指定します。 他のコマンド ライン引数には既定の設定を使用するため、リソースは作成されますが、Web アプリケーションは発行されません。 –Verbose オプションを使用すると、進行状況の詳細情報が得られます。
+1. (省略可能) Web アプリケーションを発行せずに、仮想マシン、データベース、Web サイトなどの Azure リソースを作成する場合は、**-Configuration** 引数を JSON 構成ファイルに設定した **Publish-WebApplication.ps1** コマンドを使用します。 このコマンド ラインでは、JSON 構成ファイルを使用して作成するリソースを指定します。 他のコマンド ライン引数には既定の設定を使用するため、リソースは作成されますが、Web アプリケーションは発行されません。 –Verbose オプションを使用すると、進行状況の詳細情報が得られます。
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json
@@ -242,7 +241,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
     }
     ```
 
-1. `New-WebDeployPackage` を次のコードで置き換え、`$msbuildCmd` を構築している行のプレースホルダーを置き換えます。 このコードは Visual Studio 2019 用です。 Visual Studio 2017 を使用している場合は、 **VisualStudioVersion** プロパティを `15.0` に変更します (Visual Studio 2015 の場合は '14.0'、Visual Studio 2013 の場合は `12.0`)。
+1. `New-WebDeployPackage` を次のコードで置き換え、`$msbuildCmd` を構築している行のプレースホルダーを置き換えます。 このコードは Visual Studio 2019 用です。 Visual Studio 2017 を使用している場合は、**VisualStudioVersion** プロパティを `15.0` に変更します (Visual Studio 2015 の場合は '14.0'、Visual Studio 2013 の場合は `12.0`)。
 
     ```powershell
     function New-WebDeployPackage
@@ -317,12 +316,12 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Add-AzureVM |Azure 仮想マシンを作成し、デプロイされた VM の URL を返します。 この関数は、前提条件を設定してから、 **New-AzureVM** 関数 (Azure モジュール) を呼び出して新しい仮想マシンを作成します。 |
 | Add-AzureVMEndpoints |新しい入力エンドポイントを仮想マシンに追加し、新しいエンドポイントを持つ仮想マシンを返します。 |
 | Add-AzureVMStorage |現在のサブスクリプションに新しい Azure ストレージ アカウントを作成します。 アカウントの名前は "devtest" で始まり、その後に一意の英数字の文字列が続きます。 この関数は、新しいストレージ アカウントの名前を返します。 新しいストレージ アカウントの場所またはアフィニティ グループを指定します。 |
-| Add-AzureWebsite |指定された名前と場所を使用して Web サイトを作成します。 この関数は、Azure モジュールの **New-AzureWebsite** 関数を呼び出します。 指定された名前の Web サイトがサブスクリプションにまだ含まれていない場合、この関数はその Web サイトを作成し、Web サイト オブジェクトを返します。 それ以外の場合は、 `$null`を返します。 |
+| Add-AzureWebsite |指定された名前と場所を使用して Web サイトを作成します。 この関数は、Azure モジュールの **New-AzureWebsite** 関数を呼び出します。 指定された名前の Web サイトがサブスクリプションにまだ含まれていない場合、この関数はその Web サイトを作成し、Web サイト オブジェクトを返します。 それ以外の場合は `$null`を返します。 |
 | Backup-Subscription |現在の Azure サブスクリプションを、スクリプト スコープ内の `$Script:originalSubscription` 変数に保存します。 この関数は、現在の Azure サブスクリプション (`Get-AzureSubscription -Current` によって取得) とそのストレージ アカウント、およびこのスクリプトによって変更されたサブスクリプション (`$UserSpecifiedSubscription` 変数に格納) とそのストレージ アカウントをスクリプト スコープ内に保存します。 値を保存することで、現在の状態が変わった場合に、`Restore-Subscription` などの関数を使用して、現在の元のサブスクリプションとストレージ アカウントを現在の状態に復元できます。 |
 | Find-AzureVM |指定された Azure 仮想マシンを取得します。 |
 | Format-DevTestMessageWithTime |メッセージの先頭に日付と時刻を追加します。 この関数は、エラー ストリームと詳細ストリームに書き込まれるメッセージを対象としています。 |
 | Get-AzureSQLDatabaseConnectionString |Azure SQL データベースに接続するための接続文字列をアセンブルします。 |
-| Get-AzureVMStorage |*指定された場所またはアフィニティグループに、"devtest" (大文字と小文字を区別しない) という名前の最初のストレージアカウントの名前を返します。"Devtest* " ストレージアカウントが場所またはアフィニティグループと一致しない場合、関数はそれを無視します。 場所またはアフィニティ グループを指定します。 |
+| Get-AzureVMStorage |*指定された場所またはアフィニティグループに、"devtest" (大文字と小文字を区別しない) という名前の最初のストレージアカウントの名前を返します。"Devtest*" ストレージアカウントが場所またはアフィニティグループと一致しない場合、関数はそれを無視します。 場所またはアフィニティ グループを指定します。 |
 | Get-MSDeployCmd |MsDeploy.exe ツールを実行するためのコマンドを返します。 |
 | New-AzureVMEnvironment |JSON 構成ファイル内の値と一致する、サブスクリプション内の仮想マシンを検出または作成します。 |
 | Publish-WebPackage |MsDeploy.exe と Web 発行パッケージの .ZIP ファイルを使用して、リソースを Web サイトにデプロイします。 この関数では出力は生成されません。 MSDeploy.exe の呼び出しに失敗した場合は、例外がスローされます。 さらに詳しい出力を取得するには、 **-Verbose** オプションを使用します。 |
@@ -334,8 +333,8 @@ Windows PowerShell コマンド プロンプトで使用できる関数のヘル
 | Test-HttpsUrl |入力 URL を System.Uri オブジェクトに変換します。 URL が絶対 URL で、スキームが https の場合は、 `$True` を返します。 URL が相対 URL の場合、スキームが https でない場合、または入力文字列を URL に変換できない場合は、 `$false` を返します。 |
 | Test-Member |プロパティまたはメソッドがオブジェクトのメンバーである場合は、 `$true` を返します。 それ以外の場合、`$false` を返します。 |
 | Write-ErrorWithTime |現在の時刻が先頭に付加されたエラー メッセージを書き込みます。 この関数は、 **Format-DevTestMessageWithTime** 関数を呼び出して先頭に時刻を付加してから、メッセージをエラー ストリームに書き込みます。 |
-| Write-HostWithTime |現在の時刻が先頭に付加されたメッセージをホスト プログラムに書き込みます ( **Write-Host** )。 ホスト プログラムへの書き込み結果はさまざまです。 Windows PowerShell をホストするほとんどのプログラムが、これらのメッセージを標準出力に書き込みます。 |
-| Write-VerboseWithTime |現在の時刻が先頭に付加された詳細メッセージを書き込みます。 この関数は **Write-Verbose** を呼び出すので、 **Verbose** パラメーターを指定してスクリプトを実行した場合、または **VerbosePreference** 設定が **Continue** に設定されている場合にのみ、メッセージが表示されます。 |
+| Write-HostWithTime |現在の時刻が先頭に付加されたメッセージをホスト プログラムに書き込みます (**Write-Host**)。 ホスト プログラムへの書き込み結果はさまざまです。 Windows PowerShell をホストするほとんどのプログラムが、これらのメッセージを標準出力に書き込みます。 |
+| Write-VerboseWithTime |現在の時刻が先頭に付加された詳細メッセージを書き込みます。 この関数は **Write-Verbose** を呼び出すので、**Verbose** パラメーターを指定してスクリプトを実行した場合、または **VerbosePreference** 設定が **Continue** に設定されている場合にのみ、メッセージが表示されます。 |
 
 **Publish-WebApplication**
 

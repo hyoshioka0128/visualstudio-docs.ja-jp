@@ -3,17 +3,16 @@ title: クラウド サービスの発行またはデプロイの準備
 description: クラウド サービスとストレージ アカウント サービスを設定し、Azure アプリケーションを構成する手順を説明します。
 author: ghogen
 manager: jillfra
-ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399009"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902506"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio からのクラウド サービスの発行またはデプロイの準備
 
@@ -29,13 +28,13 @@ ms.locfileid: "93399009"
 ### <a name="create-a-cloud-service-from-visual-studio"></a>Visual Studio からクラウド サービスを作成する
 
 1. 以前に作成したクラウド サービス プロジェクトで、プロジェクトを右クリックして **[発行]** を選択します。
-1. 必要に応じて、Microsoft アカウント、または Azure サブスクリプションに関連付けられている組織のアカウントを使用してサインインし、 **[次へ]** を選択して **[設定]** ページに進みます。
-1. **[クラウド サービスとストレージ アカウントの作成]** ダイアログが表示されます (表示されない場合は、 **[クラウド サービス]** 一覧から **[新規作成]** を選択します)。
+1. 必要に応じて、Microsoft アカウント、または Azure サブスクリプションに関連付けられている組織のアカウントを使用してサインインし、**[次へ]** を選択して **[設定]** ページに進みます。
+1. **[クラウド サービスとストレージ アカウントの作成]** ダイアログが表示されます (表示されない場合は、**[クラウド サービス]** 一覧から **[新規作成]** を選択します)。
 1. クラウド サービス名 (大文字と小文字を区別しない) を入力します。この名前は URL の一部となり、一意である必要があります。 さらにリージョンまたはアフィニティ グループを選択し、レプリケーション オプションを選択します。
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Azure Portal を使用してクラウド サービスを作成する
 
-1. [Azure portal](https://portal.azure.com/) にサインインする
+1. [Azure portal](https://portal.azure.com/) にサインインします。
 1. ページ左側の **[Cloud Services (クラシック)]** を選択します。
 1. **[+ 追加]** を選択し、必要な情報 (DNS 名、サブスクリプション、リソース グループ、および場所) を入力します。 後で Visual Studio で行うため、この時点でパッケージをアップロードする必要はありません。
 1. **[作成]** を選択してプロセスを完了します。
@@ -46,15 +45,15 @@ ms.locfileid: "93399009"
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Visual Studio からストレージ アカウントを作成する
 
-1. **ソリューション エクスプローラー** を開き、以前に作成したクラウド サービス プロジェクトで、ロール プロジェクト内の **接続済みサービス** ノードを検索し、右クリックして **[接続済みサービスの追加]** を選択します (Visual Studio 2015 では、 **ストレージ** ノードを右クリックして **[ストレージ アカウントの作成]** を選択します)。
-1. 表示された **[接続済みサービス]** 一覧で、 **[Azure Storage を使用したクラウド ストレージ]** を選択します。
-1. 表示された Azure Storage ダイアログで、 **[+ 新しいストレージ アカウントの作成]** を選択し、表示されたダイアログで、サブスクリプション、アカウント名、価格レベル、リソース グループ、および場所を指定します。
+1. **ソリューション エクスプローラー** を開き、以前に作成したクラウド サービス プロジェクトで、ロール プロジェクト内の **接続済みサービス** ノードを検索し、右クリックして **[接続済みサービスの追加]** を選択します (Visual Studio 2015 では、**ストレージ** ノードを右クリックして **[ストレージ アカウントの作成]** を選択します)。
+1. 表示された **[接続済みサービス]** 一覧で、**[Azure Storage を使用したクラウド ストレージ]** を選択します。
+1. 表示された Azure Storage ダイアログで、**[+ 新しいストレージ アカウントの作成]** を選択し、表示されたダイアログで、サブスクリプション、アカウント名、価格レベル、リソース グループ、および場所を指定します。
 1. 完了したら **[作成]** を選択します。 サブスクリプションで使用できるストレージ アカウントの一覧に、新しいストレージ アカウントが表示されます。
-1. このアカウントを選んで、 **[追加]** を選択します。
+1. このアカウントを選んで、**[追加]** を選択します。
 
 ### <a name="create-a-storage-account-through-the-azure-portal"></a>Azure Portal を使用してストレージ アカウントを作成する
 
-1. [Azure portal](https://portal.azure.com/) にサインインする
+1. [Azure portal](https://portal.azure.com/) にサインインします。
 1. 左上の **[+ 新規]** を選択します。
 1. "Azure Marketplace" の下の **[ストレージ]** を選択し、右側の **[ストレージ アカウント - Blob、File、Table、Queue]** を選択します。
 1. 必要な情報 (名前、デプロイ モデルなど) を入力します。

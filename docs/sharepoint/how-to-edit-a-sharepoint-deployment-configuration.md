@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint の配置構成を編集する |Microsoft Docs'
+description: SharePoint の配置構成を作成する方法、または既存の配置構成を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016778"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903560"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>方法: SharePoint の配置構成を編集する
   展開構成を作成するか、既存の展開構成を変更することができます。 たとえば、1つの手順を実行したり、配置プロセスのステップの順序を変更したりできます。 組み込みの構成およびプログラムによって追加された構成は変更できないため、配置構成を作成または変更することができます。
@@ -28,7 +30,7 @@ ms.locfileid: "86016778"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint の配置構成を作成するには
 
-1. **ソリューションエクスプローラー**で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**]、[ProjectName の_ProjectName_**プロパティ**] の順に選択します。
+1. **ソリューションエクスプローラー** で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**]、[ProjectName の _ProjectName_**プロパティ**] の順に選択します。
 
 2. [ **SharePoint** ] タブで、[ **新規作成** ] をクリックします。
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016778"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>アクティブな配置構成を変更するには
 
-1. **ソリューションエクスプローラー**で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**の  >  ** \<*ProjectName*> プロパティ**] を選択します。
+1. **ソリューションエクスプローラー** で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト** の  >  **\<*ProjectName*> プロパティ**] を選択します。
 
 2. [ **SharePoint** ] タブを選択します。
 

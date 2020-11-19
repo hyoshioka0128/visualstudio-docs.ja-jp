@@ -4,17 +4,16 @@ description: Web プロジェクトを Azure Web サイトに発行する方法�
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c487084a276be31730f1e268527f4c10a2f7b747
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398827"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902169"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -37,7 +36,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | エイリアス |なし |
 | 必須 |true |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -49,7 +48,7 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -61,7 +60,7 @@ Web サイトに発行する Web デプロイ パッケージへのパス。 Vis
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -73,7 +72,7 @@ Azure の SQL データベースのユーザー名およびパスワード。
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -85,7 +84,7 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |

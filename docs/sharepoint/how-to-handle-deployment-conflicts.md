@@ -1,5 +1,7 @@
 ---
 title: '方法: 配置の競合を処理する |Microsoft Docs'
+description: SharePoint プロジェクトアイテムの配置の競合を処理する独自のコードを実装する方法の例を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015313"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903508"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>方法: 配置の競合を処理する
   SharePoint プロジェクト項目の配置の競合を処理する独自のコードを指定できます。 たとえば、現在のプロジェクト項目のファイルが配置場所に既に存在するかどうかを判断し、現在のプロジェクト項目が配置される前に配置済みのファイルを削除することができます。 配置の競合の詳細については、「 [SharePoint のパッケージ化と配置の拡張](../sharepoint/extending-sharepoint-packaging-and-deployment.md)」を参照してください。
