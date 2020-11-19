@@ -41,7 +41,7 @@ Visual Studio のサブスクリプション管理ポータルの新機能を使
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>Q:最大使用量の情報は、ポータルの左側の [概要] セクションに表示される割り当て情報とどのように異なりますか。
-A: 概要の情報には、 *現在* の割り当てと、各契約レベルで使用できるサブスクリプションが表示されます。  これは、現在の年度または契約期間中に契約に割り当てられた最大サブスクリプション数とは大きく異なる場合があります。  最大使用量機能を使用すると、最大割り当てレベルに達した時期とそのレベルを確認できます。  この点は重要な違いです。調整中のサブスクリプションに対する請求は、1 年間の任意の時点で割り当てられた最大サブスクリプション数に基づいているためです。 
+A: 概要の情報には、*現在* の割り当てと、各契約レベルで使用できるサブスクリプションが表示されます。  これは、現在の年度または契約期間中に契約に割り当てられた最大サブスクリプション数とは大きく異なる場合があります。  最大使用量機能を使用すると、最大割り当てレベルに達した時期とそのレベルを確認できます。  この点は重要な違いです。調整中のサブスクリプションに対する請求は、1 年間の任意の時点で割り当てられた最大サブスクリプション数に基づいているためです。 
 
 ## <a name="resources"></a>リソース
 - [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
