@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションのビルドとデバッグ | Microsoft Docs
+description: SharePoint ソリューションのビルドとデバッグについて説明し、Visual Studio で他の種類のプロジェクトをビルドおよびデバッグする場合との違いについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016362"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850222"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>SharePoint ソリューションのビルドとデバッグ
   一般に、SharePoint ソリューションをビルドおよびデバッグするのは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] でその他の種類のプロジェクトをビルドおよびデバッグするのと同じです。 このセクションのトピックでは、いくつかある相違点について説明します。

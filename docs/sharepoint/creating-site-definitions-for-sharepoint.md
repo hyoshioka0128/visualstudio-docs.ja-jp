@@ -1,5 +1,7 @@
 ---
 title: SharePoint のサイト定義の作成 | Microsoft Docs
+description: SharePoint のサイト定義を作成します。 サイト定義によって、SharePoint サイトの外観と動作、およびその既定のコンテンツと機能が決まります。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015067"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850573"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint のサイト定義を作成する
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の SharePoint サイト定義プロジェクトを使用すると、新しい SharePoint サイトの基盤として機能する "*サイト定義*" を作成できます。 これらの定義によって、SharePoint サイトの外観と動作だけでなく、その既定のコンテンツと機能も決まります。 定義には、事前に構成された一覧、コンテンツ タイプ、イベント レシーバー、イメージ、およびその他の項目を含めることができます。 SharePoint には、たとえば、ブログなどのいくつかのサイト定義が含まれています。 ブログ サイト定義に基づいてサイトを作成する場合、そのサイトには、ブログ サイトに必要なリスト、Web パーツ、およびその他の項目が含まれます。

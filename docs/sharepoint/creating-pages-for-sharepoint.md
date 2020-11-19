@@ -1,5 +1,7 @@
 ---
 title: SharePoint 用ページの作成 | Microsoft Docs
+description: アプリケーション ページは、Visual Studio のテンプレートを使用して作成します。 サイト ページ、マスター ページ、およびページ レイアウトは、SharePoint Designer を使用して作成します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974ddb3c68d0c2ef297c884e75300a8507f436cc
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015167"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850625"
 ---
 # <a name="create-pages-for-sharepoint"></a>SharePoint のページを作成する
   SharePoint サイト用のアプリケーション ページ、サイト ページ、マスター ページ、およびページ レイアウトを作成できます。
@@ -44,7 +46,7 @@ ms.locfileid: "86015167"
  ページの各種類の概要については、「[文書パーツ: ページとユーザー インターフェイス](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14))」、および「[ページ レイアウトとマスター ページ](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14))」を参照してください。
 
 ## <a name="create-application-pages"></a>アプリケーション ページを作成する
- **アプリケーション ページ**項目を SharePoint プロジェクトに追加することにより、Visual Studio でアプリケーション ページを作成できます。 コントロールをページに追加し、コードを追加することによってコントロール イベントを処理できます。
+ **アプリケーション ページ** 項目を SharePoint プロジェクトに追加することにより、Visual Studio でアプリケーション ページを作成できます。 コントロールをページに追加し、コードを追加することによってコントロール イベントを処理できます。
 
  ページのコード ファイルにブレークポイントを設定し、デバッガーを起動して、追加の構成手順を実行せずに、ローカルの SharePoint サイトでページをテストすることができます。 詳細については、「[SharePoint のアプリケーション ページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)」を参照してください。
 

@@ -26,7 +26,7 @@ ms.locfileid: "92435997"
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典タイル](_img/vs-whitesource/vs-whitesource-tile.png "開始するには、WhiteSource Bolt タイルの [コードの取得] をクリックします。")
 
-3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし** 、 **[アクティブ化]** をクリックします。
+3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし**、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典コード](_img/vs-whitesource/vs-whitesource-code.png "コードをクリップボードにコピーし、[アクティブ化] をクリックします。")
 

@@ -50,11 +50,11 @@ Visual Studio サブスクリプションの有効期限が切れた場合、ま
 
 Azure の毎月のクレジットは、いくつかの方法で引き続きご利用いただけます。  Azure リソースを保存するには、下で選択したアクションに関係なく、別の Azure サブスクリプションに[リソースを移す](/azure/azure-resource-manager/management/move-resource-group-and-subscription)必要があります。 
 
-- **Visual Studio サブスクリプションを直接購入する場合** 、Microsoft Store で新しいサブスクリプションを購入するか、サブスクリプションを更新します。  
+- **Visual Studio サブスクリプションを直接購入する場合**、Microsoft Store で新しいサブスクリプションを購入するか、サブスクリプションを更新します。  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **組織の誰かが代表してサブスクリプションを購入する場合** 、[Visual Studio サブスクリプションの管理者に問い合わせ](./contact-my-admin.md)、必要な毎月のクレジットが与えられるサブスクリプションをリクエストしてください。  
+- **組織の誰かが代表してサブスクリプションを購入する場合**、[Visual Studio サブスクリプションの管理者に問い合わせ](./contact-my-admin.md)、必要な毎月のクレジットが与えられるサブスクリプションをリクエストしてください。  
 - 別の Microsoft アカウントに関連付けられている同じサブスクリプション レベルで **別の Visual Studio サブスクリプションがアクティブになっている** 場合、Visual Studio [サブスクリプション ポータル](https://my.visualstudio.com/subscriptions)で [代替アカウントを追加する](./manage-vs-subscriptions.md#managing-my-profile)ことで、別の有効な Visual Studio サブスクリプションに Azure 特典を移すことができます。  
 
 以下の適格性テーブルを使用して、各サブスクリプションの種類に含まれるクレジットの数を確認してください。  

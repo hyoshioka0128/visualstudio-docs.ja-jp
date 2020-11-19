@@ -102,7 +102,7 @@ A: いいえ。  サブスクリプションはそのまま維持され、現在
 A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは *ありません* 。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは *ありません*。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q:サブスクリプションをキャンセルした場合、後で別のクラウド サブスクリプション年間プランを購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。
@@ -118,7 +118,7 @@ A: 既存のお客様には影響はありません。 新規のお客様は、V
 A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、管理者は購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは **ありません** 。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは **ありません**。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q:お客様がサブスクリプションをキャンセルした場合、後でクラウド サブスクリプション年間プランをさらに購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。
