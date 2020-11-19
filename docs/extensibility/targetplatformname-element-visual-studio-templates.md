@@ -1,5 +1,7 @@
 ---
 title: TargetPlatformName 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: TargetPlatformName 要素について、およびプロジェクトテンプレートが対象とするプラットフォームをどのように指定するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b8f81ad86c98ab31e8f5d5dddf0efa1b2c89d85
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699275"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903989"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 要素 (Visual Studio テンプレート)
 プロジェクト テンプレートの対象となるプラットフォームを指定します。 この要素は、 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] アプリを作成するためにプロジェクト テンプレートを使用することを指定するために使用されます。
@@ -48,8 +50,8 @@ ms.locfileid: "80699275"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
-## <a name="remarks"></a>注釈
- テキストは、 **Windows**である必要があります。
+## <a name="remarks"></a>解説
+ テキストは、 **Windows** である必要があります。
 
 ## <a name="example"></a>例
  次の例では、プロジェクト テンプレートで [!INCLUDE[win8](../debugger/includes/win8_md.md)] 以降が対象となるように指定しています。
@@ -64,6 +66,6 @@ ms.locfileid: "80699275"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: '方法: パラメーターの型記述子を定義する |Microsoft Docs'
+description: Business data connectivity (BDC) モデルでメソッドのパラメーターの型記述子を定義する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016847"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903599"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>方法: パラメーターの型記述子を定義する
   型記述子には、パラメーターのデータ型を表すプロパティが含まれています。 型記述子では、フィールド、エンティティ、またはエンティティのコレクションを定義できます。 詳細については、「 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))」を参照してください。
@@ -45,7 +47,7 @@ ms.locfileid: "86016847"
 
 ### <a name="to-define-an-entity"></a>エンティティを定義するには
 
-1. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを、エンティティを表す名前に設定します ( **Contact**など)。
+1. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを、エンティティを表す名前に設定します ( **Contact** など)。
 
 2. " **TypeName** " プロパティを、エンティティを表す型の完全修飾名に設定します。 この型は、プロジェクト内のクラスにすることも、ソリューションで参照されているアセンブリで定義されている型にすることも、BDC オブジェクト モデルで定義されている型にすることもできます。
 
@@ -71,7 +73,7 @@ ms.locfileid: "86016847"
 
      [ **BDC エクスプローラー** ] ウィンドウが開きます。
 
-4. **BDC エクスプローラー**で、型記述子のショートカットメニューを開き、[**型記述子の追加**] を選択します。
+4. **BDC エクスプローラー** で、型記述子のショートカットメニューを開き、[**型記述子の追加**] を選択します。
 
      そのエンティティ型記述子の子として新しい型記述子が追加されます。 その型記述子をフィールドとして構成します。
 
@@ -85,7 +87,7 @@ ms.locfileid: "86016847"
 
 3. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを、エンティティを表す名前に設定します (例: **Contacts**)。
 
-4. **IsCollection**プロパティを**True**に設定します。 これは、この型記述子がエンティティのコレクションであることを表します。
+4. **IsCollection** プロパティを **True** に設定します。 これは、この型記述子がエンティティのコレクションであることを表します。
 
 5. [ **TypeName** ] プロパティを、インターフェイスへの参照 <xref:System.Collections.Generic.IEnumerable%601> と、エンティティを表す型の完全修飾名を含む文字列に設定します。 この型は、プロジェクト内のクラスにすることも、ソリューションで参照されているアセンブリで定義されている型にすることも、BDC オブジェクト モデルで定義されている型にすることもできます。
 
@@ -113,7 +115,7 @@ ms.locfileid: "86016847"
 
     [ **BDC エクスプローラー** ] ウィンドウが開きます。
 
-7. **BDC エクスプローラー**で、型記述子のショートカットメニューを開き、[**型記述子の追加**] を選択します。
+7. **BDC エクスプローラー** で、型記述子のショートカットメニューを開き、[**型記述子の追加**] を選択します。
 
     そのコレクション型記述子の子として新しい型記述子が追加されます。 その型記述子をエンティティとして構成します。
 
@@ -122,4 +124,4 @@ ms.locfileid: "86016847"
 - [方法: モデルにエンティティを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [方法: メソッドにパラメーターを追加する](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [方法: メソッドインスタンスを定義する](../sharepoint/how-to-define-a-method-instance.md)
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)

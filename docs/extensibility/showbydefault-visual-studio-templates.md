@@ -1,5 +1,7 @@
 ---
 title: ShowByDefault よる要素 (Visual Studio テンプレート)
+description: ShowByDefault 要素について説明し、false に設定した場合は、指定された TemplateGroupID の下にのみテンプレートが表示されることを指定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700106"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903976"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault よる要素 (Visual Studio テンプレート)
 の場合は `false` 、指定された [templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)の下にのみテンプレートが表示されることを指定します。
@@ -53,7 +55,7 @@ ms.locfileid: "80700106"
 
  テキストは、`true` または `false` である必要があります。 true の場合、すべてのプロジェクトの種類のテンプレートが表示されることを指定します。 false の場合、指定された `TemplateGroupID` にのみテンプレートが表示されます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `ShowByDefault` は省略可能な要素です。 既定値は `true` です。
 
 ## <a name="example"></a>例
@@ -84,7 +86,7 @@ ms.locfileid: "80700106"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID 要素 (Visual Studio テンプレート)](../extensibility/templategroupid-element-visual-studio-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint プロジェクト項目の種類を定義する |Microsoft Docs'
+description: カスタム SharePoint プロジェクト項目を作成するときに、プロジェクト項目の種類を定義する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae709bf2d81e2b8b00dc984602c0426fdf272ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78b10e6878301a878de14306f92f425402e1cc17
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016858"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903612"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>方法: SharePoint プロジェクト項目の種類を定義する
   カスタム SharePoint プロジェクト項目を作成する場合は、プロジェクト項目の種類を定義します。 詳細については、「 [カスタム SharePoint プロジェクト項目の種類の定義](../sharepoint/defining-custom-sharepoint-project-item-types.md)」を参照してください。
@@ -40,9 +42,9 @@ ms.locfileid: "86016858"
 
     - <xref:System.ComponentModel.Composition.ExportAttribute>. この属性を使用すると、Visual Studio で実装を検出して読み込むことができ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> ます。 型を <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 属性コンストラクターに渡します。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. プロジェクト項目の種類の定義で、この属性は新しいプロジェクト項目の文字列識別子を指定します。 *会社名*の形式を使用することをお勧めします。すべてのプロジェクトアイテムの名前が一意になるようにするための*機能名*。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. プロジェクト項目の種類の定義で、この属性は新しいプロジェクト項目の文字列識別子を指定します。 *会社名* の形式を使用することをお勧めします。すべてのプロジェクトアイテムの名前が一意になるようにするための *機能名*。
 
-    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. この属性は、 **ソリューションエクスプローラー**でこのプロジェクト項目に対して表示するアイコンを指定します。 この属性は省略可能です。クラスに適用しない場合、Visual Studio ではプロジェクト項目の既定のアイコンが表示されます。 この属性を設定する場合は、アセンブリに埋め込まれているアイコンまたはビットマップの完全修飾名を渡します。
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. この属性は、 **ソリューションエクスプローラー** でこのプロジェクト項目に対して表示するアイコンを指定します。 この属性は省略可能です。クラスに適用しない場合、Visual Studio ではプロジェクト項目の既定のアイコンが表示されます。 この属性を設定する場合は、アセンブリに埋め込まれているアイコンまたはビットマップの完全修飾名を渡します。
 
 5. メソッドの実装では、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> *projectItemTypeDefinition* パラメーターのメンバーを使用して、プロジェクト項目の種類の動作を定義します。 このパラメーターは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> インターフェイスおよびインターフェイスで定義されたイベントへのアクセスを提供するオブジェクトです <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> 。 プロジェクト項目の種類の特定のインスタンスにアクセスするには、やなどのイベントを処理し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized> ます。
 

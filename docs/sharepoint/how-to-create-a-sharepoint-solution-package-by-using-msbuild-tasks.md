@@ -1,5 +1,7 @@
 ---
 title: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成する
+description: 開発用コンピューターでコマンドライン MSBuild タスクを使用して、SharePoint ソリューションパッケージ (.wsp) をビルド、クリーン、検証する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017009"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903729"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成する
   開発用コンピューターでコマンドライン MSBuild タスクを使用して、SharePoint パッケージ (*.wsp*) のビルド、クリーン、検証を行うことができます。 これらのコマンドを使用して、ビルドコンピューターで Team Foundation Server を使用してビルドプロセスを自動化することもできます。
@@ -30,7 +32,7 @@ ms.locfileid: "86017009"
 
 2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. 次のコマンドを入力して、プロジェクトのパッケージを作成します。 *Projectfilename*をプロジェクトの名前に置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージを作成します。 *Projectfilename* をプロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -51,7 +53,7 @@ ms.locfileid: "86017009"
 
 2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. 次のコマンドを入力して、プロジェクトのパッケージをクリーンアップします。 *Projectfilename*をプロジェクトの名前に置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージをクリーンアップします。 *Projectfilename* をプロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -72,7 +74,7 @@ ms.locfileid: "86017009"
 
 2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. 次のコマンドを入力して、プロジェクトのパッケージを検証します。 *Projectfilename*をプロジェクトの名前に置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージを検証します。 *Projectfilename* をプロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -93,7 +95,7 @@ ms.locfileid: "86017009"
 
 2. SharePoint プロジェクトが配置されているディレクトリに移動します。
 
-3. 次のコマンドを入力して、プロジェクトのパッケージのプロパティを設定します。 *PropertyName*は、設定するプロパティで置き換えます。
+3. 次のコマンドを入力して、プロジェクトのパッケージのプロパティを設定します。 *PropertyName* は、設定するプロパティで置き換えます。
 
     ```cmd
     msbuild /property:PropertyName=Value

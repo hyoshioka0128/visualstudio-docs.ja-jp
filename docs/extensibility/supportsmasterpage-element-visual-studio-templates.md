@@ -1,5 +1,7 @@
 ---
 title: SupportsMasterPage 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: SupportsMasterPage 要素について、および [新しい項目の追加] ダイアログボックスで [マスターページの選択] チェックボックスがオンになっているかどうかをどのように指定するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699447"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903833"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 要素 (Visual Studio テンプレート)
 [**新しい項目の追加**] ダイアログボックスで [**マスターページの選択**] チェックボックスがオンになっているかどうかを指定します。
@@ -53,7 +55,7 @@ ms.locfileid: "80699447"
 
  テキストは、[ `true` `false` **新しい項目の追加**] ダイアログボックスで [**マスターページの選択**] チェックボックスがオンになっているかどうかを示す、またはのいずれかである必要があります。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `SupportsMasterPage` は省略可能な要素です。 既定値は `false` です。
 
  `SupportsMasterPage`要素は、Web 項目テンプレートでのみ使用できます。
@@ -83,6 +85,6 @@ ms.locfileid: "80699447"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
