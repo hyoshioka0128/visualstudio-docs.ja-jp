@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションの開発 | Microsoft Docs
+description: SharePoint ソリューションを開発します。 SharePoint プロジェクトの要素を把握します。 SharePoint プロジェクトとプロジェクト項目のプロパティについて理解します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016788"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672822"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint ソリューションの開発
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトおよびサイト要素を作成するための SharePoint プロジェクトの種類のテンプレートがいくつか用意されています。 使用できるプロジェクトの種類の一覧については、「[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。 次に、SharePoint プロジェクトの要素およびプロパティについて説明します。
@@ -28,7 +30,7 @@ ms.locfileid: "86016788"
  SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint プロジェクトの要素
- SharePoint プロジェクトのノードは、 *SharePoint アイテム*と呼ばれます。 また、SharePoint アイテムには、 *SharePoint アイテム ファイル*と呼ばれる 1 つ以上のサブ ファイル ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 構成ファイル、.aspx フォームなど) が含まれる場合があります。
+ SharePoint プロジェクトのノードは、 *SharePoint アイテム* と呼ばれます。 また、SharePoint アイテムには、 *SharePoint アイテム ファイル* と呼ばれる 1 つ以上のサブ ファイル ( [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 構成ファイル、.aspx フォームなど) が含まれる場合があります。
 
  プロジェクト項目ファイルから成るプロジェクト テンプレートを使用してプロジェクトを作成する代わりに、 **[空のプロジェクト]** テンプレートを使用して、空の SharePoint プロジェクトを作成し、それにプロジェクト項目を手動で追加することもできます。 SharePoint プロジェクトには、必要に応じて 1 つ以上のフィーチャー ファイル (SharePoint でのアクティブ化に使用) およびパッケージ ファイル (プロジェクトの配布に使用) を含めることができます。
 
@@ -47,7 +49,7 @@ ms.locfileid: "86016788"
 
  フィーチャーを手動で追加するには、そのフィーチャー ノードのショートカット メニューから **[フィーチャーの追加]** コマンドを実行します。 フィーチャーの内容は、フィーチャー デザイナーを使用して表示または変更することができます。 詳細については、「[方法:SharePoint フィーチャーをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-feature.md)」を参照してください。
 
- SharePoint プロジェクトに追加したフィーチャーは、 **ソリューション エクスプローラー** にノードとして表示され、"Feature*x*.feature" という既定の名前が付けられます ( *x* は一意の番号)。 SharePoint Server にフィーチャーが配置されると、SharePoint 管理者は SharePoint サイト ユーザーが使用できるようにそれをアクティブ化することができます。
+ SharePoint プロジェクトに追加したフィーチャーは、 **ソリューション エクスプローラー** にノードとして表示され、"Feature *x*.feature" という既定の名前が付けられます ( *x* は一意の番号)。 SharePoint Server にフィーチャーが配置されると、SharePoint 管理者は SharePoint サイト ユーザーが使用できるようにそれをアクティブ化することができます。
 
 #### <a name="package-node"></a>[Package] ノード
  **[Package]** ノードには、SharePoint プロジェクトの配布メカニズムとして機能するファイルが 1 つだけ含まれています。 これは "*ソリューション パッケージ*" と呼ばれ、.WSP という拡張子を持つ .CAB ベースのファイルです。 ソリューション パッケージは、SharePoint サイトに適用される一連のフィーチャー、サイト定義、およびアセンブリを含んでいる配置可能で再利用可能なファイルであり、これは個別に有効または無効にできます。 **[Package]** ノードには、パッケージの [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義ファイルである Package.wspdef というファイルも必ず含まれています。 SharePoint を実行しているサーバーにパッケージが配置されると、SharePoint 管理者はそのパッケージをインストールしてフィーチャーをアクティブにできます。
@@ -57,14 +59,14 @@ ms.locfileid: "86016788"
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint プロジェクトとプロジェクト項目のプロパティ
  SharePoint プロジェクトでは、他の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトと同様、[プロパティ] ウィンドウおよび [プロパティ] ページにプロパティが表示されます。 表示されるプロパティは、選択したノードによって異なります。
 
- **ソリューション エクスプローラー**で SharePoint プロジェクト ノード、プロジェクト項目ノード、またはプロジェクト項目ファイル ノードを選択すると、次のプロパティが [プロパティ] ウィンドウまたは [プロパティ] ページに表示されます。
+ **ソリューション エクスプローラー** で SharePoint プロジェクト ノード、プロジェクト項目ノード、またはプロジェクト項目ファイル ノードを選択すると、次のプロパティが [プロパティ] ウィンドウまたは [プロパティ] ページに表示されます。
 
 ### <a name="project-properties"></a>プロジェクトのプロパティ
 
 |プロパティ名|説明|
 |-------------------|-----------------|
 |アクティブな配置構成|配置中に実行される一連の手順を指定します。 詳細については、「[方法:SharePoint の配置構成を編集する](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)」を参照してください。|
-|アセンブリの配置先|*SharePoint アプリケーション アセンブリ* の場所を決定します。 アセンブリの場所として有効な値は、 *GlobalAssemblyCache* (既定値) または *WebApplication*です。<br /><br /> *Sandboxed Solution* プロパティが **true**に設定されている場合、このプロパティは無効です。|
+|アセンブリの配置先|*SharePoint アプリケーション アセンブリ* の場所を決定します。 アセンブリの場所として有効な値は、 *GlobalAssemblyCache* (既定値) または *WebApplication* です。<br /><br /> *Sandboxed Solution* プロパティが **true** に設定されている場合、このプロパティは無効です。|
 |デバッグ後に自動取り消し|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]のデバッグ モードでアプリケーションを実行した後、配置されたソリューションを SharePoint から自動的に取り消すかどうかを指定します。 オンにすると、デバッグ後に IDE がデザイン ビューに戻ると、ソリューションは取り消されます。 オフにすると、ソリューションは取り消されません。 詳細については、「 [ソリューションを取り消す](/previous-versions/office/developer/sharepoint-2010/aa543958(v=office.14))」を参照してください。|
 |構成の編集|プロジェクトに使用する配置の構成を指定します。 詳細については、「[方法:SharePoint の配置構成を編集する](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)」と「[SharePoint ソリューションパッケージの配置、発行、およびアップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)」を参照してください。|
 |Script デバッグの代わりに Silverlight デバッグを有効にする|オンにすると、Silverlight デバッガーがデバッグ プロセスにアタッチされます。 オフにすると、スクリプト デバッガーがデバッグ プロセスにアタッチされます。 詳細については、「 [Silverlight デバッグの概要](/previous-versions/windows/)」を参照してください。|
@@ -73,7 +75,7 @@ ms.locfileid: "86016788"
 |配置前コマンド ライン|SharePoint ソリューションを配置する前に実行するコマンドを指定します。 この行では、MSBuild 変数が解決されさえすれば、どのようなバッチ コマンドでも指定できます。 詳細については、「 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)」を参照してください。|
 |プロジェクト ファイル|プロジェクトのビルド、構成、およびその他の情報を含むファイルの名前です。|
 |プロジェクト フォルダー|システム上のプロジェクト ファイルの場所。 システム テーブルは読み取り専用です。|
-|Sandboxed Solution|プロジェクトを *サンドボックス ソリューション*( *ユーザー作成のソリューション*とも呼ばれる) として配置するかどうかを指定します。 サンドボックス ソリューションは必ずしも信頼できません。 値が **true** の場合、プロジェクトはサンドボックス ソリューションとして配置され、 **false** の場合、プロジェクトはファーム ソリューションとして配置されます。 詳細については、次のトピックを参照してください。 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) および [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
+|Sandboxed Solution|プロジェクトを *サンドボックス ソリューション*( *ユーザー作成のソリューション* とも呼ばれる) として配置するかどうかを指定します。 サンドボックス ソリューションは必ずしも信頼できません。 値が **true** の場合、プロジェクトはサンドボックス ソリューションとして配置され、 **false** の場合、プロジェクトはファーム ソリューションとして配置されます。 詳細については、次のトピックを参照してください。 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) および [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|
 |サイトの URL|このプロジェクトの対象サイトの [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] を指定します。|
 |スタートアップ アイテム|プロジェクトで最初に実行される項目を指定します。|
 
