@@ -1,5 +1,7 @@
 ---
 title: モーダルダイアログボックスの作成と管理 |Microsoft Docs
+description: Visual Studio 内のモーダルダイアログボックスを作成する方法について説明します。これには、[表示] ウィンドウと [プロパティ] ウィンドウを使用する必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903774"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973623"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>モーダルダイアログボックスの作成と管理
 Visual Studio 内でモーダルダイアログボックスを作成する場合は、ダイアログボックスが表示されている間、ダイアログボックスの親ウィンドウが無効になっていることを確認し、ダイアログボックスを閉じた後で親ウィンドウを再び有効にする必要があります。 そうしないと、 *モーダルダイアログボックスがアクティブになっているため Microsoft Visual Studio をシャットダウンできないことがあります。アクティブなダイアログを閉じて、もう一度やり直してください。*
@@ -26,7 +28,7 @@ Visual Studio 内でモーダルダイアログボックスを作成する場合
 
 ## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>ダイアログボックスを表示ウィンドウから派生する
 
-1. **Open/test**という名前の VSIX プロジェクトを作成し、 **opendialog**という名前のメニューコマンドを追加します。 これを行う方法の詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+1. **Open/test** という名前の VSIX プロジェクトを作成し、 **opendialog** という名前のメニューコマンドを追加します。 これを行う方法の詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
 2. クラスを使用するには、 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> [ **参照の追加** ] ダイアログボックスの [フレームワーク] タブで、次のアセンブリへの参照を追加する必要があります。
 
@@ -38,7 +40,7 @@ Visual Studio 内でモーダルダイアログボックスを作成する場合
 
     - *System.Xaml*
 
-3. *OpenDialog.cs*で、次のステートメントを追加し `using` ます。
+3. *OpenDialog.cs* で、次のステートメントを追加し `using` ます。
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -68,7 +70,7 @@ Visual Studio 内でモーダルダイアログボックスを作成する場合
     testDialog.ShowModal();
     ```
 
-7. アプリケーションをビルドして実行します。 Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの [ **ツール** ] メニューに、 **Invoke opendialog**という名前のコマンドが表示されます。 このコマンドをクリックすると、ダイアログウィンドウが表示されます。 ウィンドウを最小化して最大化できるようになります。
+7. アプリケーションをビルドして実行します。 Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの [ **ツール** ] メニューに、 **Invoke opendialog** という名前のコマンドが表示されます。 このコマンドをクリックすると、ダイアログウィンドウが表示されます。 ウィンドウを最小化して最大化できるようになります。
 
 ## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>ダイアログボックスの作成と管理 ([プロパティ] ウィンドウから派生していない)
 

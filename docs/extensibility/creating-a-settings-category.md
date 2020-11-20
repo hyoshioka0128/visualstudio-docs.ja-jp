@@ -1,5 +1,7 @@
 ---
 title: 設定カテゴリの作成 |Microsoft Docs
+description: Visual Studio の設定カテゴリを作成し、それを使用して設定ファイルの値を保存および復元する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904026"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974544"
 ---
 # <a name="create-a-settings-category"></a>設定カテゴリの作成
 
@@ -35,7 +37,7 @@ ms.locfileid: "85904026"
 
 1. [ [オプションの作成] ページ](../extensibility/creating-an-options-page.md)に入力します。
 
-2. *VSPackage*ファイルを開き、次の3つの文字列リソースを追加します。
+2. *VSPackage* ファイルを開き、次の3つの文字列リソースを追加します。
 
     |名前|値|
     |----------|-----------|
@@ -48,18 +50,18 @@ ms.locfileid: "85904026"
     > [!NOTE]
     > これら3つのうち、カテゴリ名だけが、設定の **インポートおよびエクスポート** ウィザードに表示されません。
 
-3. *MyToolsOptionsPackage.cs*で、次の `float` `OptionFloat` 例に示すように、という名前のプロパティをクラスに追加し `OptionPageGrid` ます。
+3. *MyToolsOptionsPackage.cs* で、次の `float` `OptionFloat` 例に示すように、という名前のプロパティをクラスに追加し `OptionPageGrid` ます。
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ ms.locfileid: "85904026"
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -90,17 +92,17 @@ ms.locfileid: "85904026"
 ## <a name="examine-the-settings-file"></a>設定ファイルを確認する
  このセクションでは、プロパティカテゴリの値を設定ファイルにエクスポートします。 ファイルを調べてから、プロパティカテゴリに値をインポートします。
 
-1. **F5**キーを押して、プロジェクトをデバッグモードで起動します。 これにより、実験用インスタンスが開始されます。
+1. **F5** キーを押して、プロジェクトをデバッグモードで起動します。 これにより、実験用インスタンスが開始されます。
 
 2. [**ツール**  >  **オプション**] ダイアログを開きます。
 
 3. 左側のウィンドウのツリービューで、[ **My Category** ] を展開し、[ **my Grid Page**] をクリックします。
 
-4. **Optionfloat**の値を3.1416 に、**オプション integer**を12に変更します。 **[OK]** をクリックします。
+4. **Optionfloat** の値を3.1416 に、**オプション integer** を12に変更します。 **[OK]** をクリックします。
 
 5. **[ツール]** メニューの **[設定のインポートとエクスポート]** を選択します。
 
-     **設定のインポートとエクスポート**ウィザードが表示されます。
+     **設定のインポートとエクスポート** ウィザードが表示されます。
 
 6. [ **選択した環境設定のエクスポート** ] が選択されていることを確認し、[ **次へ**] をクリックします。
 
@@ -108,7 +110,7 @@ ms.locfileid: "85904026"
 
 7. [ **個人用設定**] をクリックします。
 
-     **説明**は、 **Optioninteger と optioninteger**に変わります。
+     **説明** は、 **Optioninteger と optioninteger** に変わります。
 
 8. [ **個人用設定** ] が選択されている唯一のカテゴリであることを確認し、[ **次へ**] をクリックします。
 
@@ -147,7 +149,7 @@ ms.locfileid: "85904026"
 
      [ **インポートする設定のコレクションを選択** ] ページが表示されます。
 
-15. ツリービューの **[マイ設定**] ノードで、 *mysettings の .vssettings*ファイルを選択します。 ファイルがツリービューに表示されない場合は、[ **参照** ] をクリックして検索します。 **[次へ]** をクリックします。
+15. ツリービューの **[マイ設定**] ノードで、 *mysettings の .vssettings* ファイルを選択します。 ファイルがツリービューに表示されない場合は、[ **参照** ] をクリックして検索します。 **[次へ]** をクリックします。
 
      [ **インポートする設定の選択** ] ダイアログボックスが表示されます。
 

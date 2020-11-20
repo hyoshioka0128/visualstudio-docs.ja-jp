@@ -1,5 +1,7 @@
 ---
 title: 複数インスタンスのツールウィンドウを作成する |Microsoft Docs
+description: ツールウィンドウを変更して、複数のインスタンスを同時に開くことができるようにする方法について説明します。 既定では、ツールウィンドウで開くことができるインスタンスは1つだけです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904064"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973994"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>複数インスタンスのツールウィンドウを作成する
 ツールウィンドウをプログラミングして、複数のインスタンスを同時に開くことができるようにすることができます。 既定では、ツールウィンドウで開くことができるインスタンスは1つだけです。
@@ -25,14 +27,14 @@ ms.locfileid: "85904064"
 
 ## <a name="create-a-basic-single-instance-tool-window"></a>基本 (単一インスタンス) ツールウィンドウを作成する
 
-1. VSIX テンプレートを使用して **MultiInstanceToolWindow** という名前のプロジェクトを作成し、 **MIToolWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
+1. VSIX テンプレートを使用して **MultiInstanceToolWindow** という名前のプロジェクトを作成し、 **MIToolWindow** という名前のカスタムツールウィンドウ項目テンプレートを追加します。
 
     > [!NOTE]
     > ツールウィンドウを使用した拡張機能の作成の詳細については、「 [ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
 ## <a name="make-a-tool-window-multi-instance"></a>ツールウィンドウを複数インスタンスにする
 
-1. *MIToolWindowPackage.cs*ファイルを開き、属性を見つけ `ProvideToolWindow` ます。 次の `MultiInstances=true` 例に示すように、パラメーターとパラメーターを指定します。
+1. *MIToolWindowPackage.cs* ファイルを開き、属性を見つけ `ProvideToolWindow` ます。 次の `MultiInstances=true` 例に示すように、パラメーターとパラメーターを指定します。
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -44,7 +46,7 @@ ms.locfileid: "85904064"
     {. . .}
     ```
 
-2. *MIToolWindowCommand.cs*ファイルで、メソッドを見つけ `ShowToolWindos()` ます。 このメソッドでは、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> その `create` フラグをに設定し `false` ます。これにより、使用可能なが見つかるまで、既存のツールウィンドウインスタンスが反復処理されるようになり `id` ます。
+2. *MIToolWindowCommand.cs* ファイルで、メソッドを見つけ `ShowToolWindos()` ます。 このメソッドでは、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> その `create` フラグをに設定し `false` ます。これにより、使用可能なが見つかるまで、既存のツールウィンドウインスタンスが反復処理されるようになり `id` ます。
 
 3. ツールウィンドウのインスタンスを作成するには、メソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> て、 `id` を使用可能な値に設定し、 `create` フラグをに設定し `true` ます。
 

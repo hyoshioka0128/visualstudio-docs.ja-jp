@@ -1,5 +1,7 @@
 ---
 title: マネージコードの COM 定数 |Microsoft Docs
+description: マネージパッケージフレームワークについて説明します。これにより、いくつかの標準 COM 定数をマネージコードで使用できるようになります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dadf3d8965d36719282e0ae98f56e61679f97e4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739830"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973917"
 ---
 # <a name="com-constants-in-managed-code"></a>マネージコードの COM 定数
 Managed Package Framework (MPF) では、一部の標準 COM 定数をマネージコードで使用できます。 これらの定数を以下に示します。

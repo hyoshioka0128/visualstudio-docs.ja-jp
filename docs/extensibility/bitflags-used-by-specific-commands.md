@@ -1,5 +1,7 @@
 ---
 title: 特定のコマンドで使用されるビットフラグ |Microsoft Docs
+description: ソース管理プラグイン API で使用される bitflags について説明します。これは、それらを使用する関数によって整理されています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740009"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974598"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定のコマンドで使用されるビットフラグ
 ソース管理プラグイン API の多くの関数の動作は、1つの値に1つ以上のビットを設定することによって変更できます。 これらの値は bitflags と呼ばれます。 ソース管理プラグイン API で使用されるさまざまな bitflags の詳細については、こちらを使用する関数によってグループ化されています。

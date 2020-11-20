@@ -1,5 +1,7 @@
 ---
 title: IDE によって実装されるコールバック関数 |Microsoft Docs
+description: IDE に情報を渡すためにソース管理操作中にプラグインが適切なタイミングで呼び出すことができるコールバック関数について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739895"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974458"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE によって実装されるコールバック関数
 統合開発環境 (IDE: integrated development environment) との統合を可能な限りシームレスに行うために、統合されたエンドユーザーエクスペリエンスを提供するために、ソース管理プラグインは、IDE によって実装されるコールバック関数を使用できます。 プラグインは、ソース管理操作中に適切なタイミングでこれらの関数を呼び出して、IDE に情報を渡すことができます。IDE では、この情報をネイティブ UI の埋め込み要素として表示できます。 このシナリオでは、プラグインが独自の UI を使用した場合よりも、ユーザーの断片化が少なくなります。
 
- 必要なヘッダーファイルは *scc*です。 既定の場所は、 *Files\VSIP 8.0 \ EnvSDK\common\inc \\ *です。 また、ソース管理プラグインのサンプルが*MSSCCI \\ *にある VSIP フォルダーにもあります。
+ 必要なヘッダーファイルは *scc* です。 既定の場所は、 *Files\VSIP 8.0 \ EnvSDK\common\inc \\* です。 また、ソース管理プラグインのサンプルが *MSSCCI \\* にある VSIP フォルダーにもあります。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Lptextoutproc](../extensibility/lptextoutproc.md) IDE を介してソース管理プラグインからのメッセージを表示するために [Sccopenproject](../extensibility/sccopenproject-function.md) によって使用されるコールバック関数について説明します。

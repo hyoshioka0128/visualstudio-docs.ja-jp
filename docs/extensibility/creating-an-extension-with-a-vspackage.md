@@ -1,5 +1,7 @@
 ---
 title: VSPackage | を使用した拡張機能の作成Microsoft Docs
+description: メッセージボックスを表示するために UI シェルサービスを取得するために、VSIX プロジェクトを作成し、VSPackage を使用して VSPackage プロジェクト項目を追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903854"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973782"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage を使用して拡張機能を作成する
 
@@ -25,21 +27,21 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="create-a-vspackage"></a>VSPackage を作成する
 
-1. **Firstpackage**という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
+1. **Firstpackage** という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、 **Firstpackage**という名前の Visual Studio パッケージ項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **visual C#** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstPackage.cs*に変更します。
+2. プロジェクトが開いたら、 **Firstpackage** という名前の Visual Studio パッケージ項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加**] ダイアログで、[ **visual C#** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstPackage.cs* に変更します。
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
     Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、 [実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
 
-4. 実験用インスタンスで、[**ツール**  >  ] [**拡張機能と更新プログラム**] ウィンドウを開きます。 **Firstpackage**拡張機能がここに表示されます。 (Visual Studio の作業インスタンスで **拡張機能と更新プログラム** を開いた場合、 **firstpackage**は表示されません)。
+4. 実験用インスタンスで、[**ツール**  >  ] [**拡張機能と更新プログラム**] ウィンドウを開きます。 **Firstpackage** 拡張機能がここに表示されます。 (Visual Studio の作業インスタンスで **拡張機能と更新プログラム** を開いた場合、 **firstpackage** は表示されません)。
 
 ## <a name="load-the-vspackage"></a>VSPackage を読み込む
 
 この時点では、読み込まれる原因となるものがないため、拡張機能は読み込まれません。 通常、拡張機能を読み込むには、UI を操作する (メニューコマンドをクリックするか、ツールウィンドウを開く) か、または VSPackage が特定の UI コンテキストで読み込むように指定します。 Vspackage と UI コンテキストの読み込みの詳細については、「 [vspackage の読み込み](../extensibility/loading-vspackages.md)」を参照してください。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法について説明します。
 
-1. *FirstPackage.cs*ファイルを開きます。 クラスの宣言を探し `FirstPackage` ます。 既存の属性を次の属性に置き換えます。
+1. *FirstPackage.cs* ファイルを開きます。 クラスの宣言を探し `FirstPackage` ます。 既存の属性を次の属性に置き換えます。
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -76,4 +78,4 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 3. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-4. 実験用インスタンスでソリューションを開きます。 **最初のパッケージが Initialize () の中**にあるというメッセージボックスが表示されます。
+4. 実験用インスタンスでソリューションを開きます。 **最初のパッケージが Initialize () の中** にあるというメッセージボックスが表示されます。

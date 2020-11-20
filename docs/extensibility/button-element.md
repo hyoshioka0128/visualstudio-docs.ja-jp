@@ -1,5 +1,7 @@
 ---
 title: Button 要素 |Microsoft Docs
+description: Button 要素は、ユーザーが操作できる要素を定義します。 ボタンは、ボタン、メニューボタン、および SplitDropDown という異なる種類にすることができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739928"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974496"
 ---
 # <a name="button-element"></a>Button 要素
 ユーザーが操作できる要素を定義します。 ボタンには、ボタン、MenuButton、および SplitDropDown のさまざまな種類があります。
@@ -37,12 +39,12 @@ ms.locfileid: "80739928"
 
 ### <a name="attributes"></a>属性
 
-|属性|[説明]|
+|属性|説明|
 |---------------|-----------------|
 |guid|必須。 GUID/ID コマンド識別子の GUID。|
 |id|必須。 GUID/ID コマンド識別子の ID。|
 |priority|省略可能。 優先度を示す数値です。|
-|type|省略可能。 ボタンの種類を指定する列挙値。<br /><br /> 指定されていない場合は、ボタンを使用します。<br /><br /> Button<br /> ツールバーに表示される標準コマンド (通常はアイコンボタン)、メニュー、およびコンテキストメニュー。<br /><br /> MenuButton<br /> コマンドを実行せずに別のメニューを生成するメニュー項目。<br /><br /> SplitDropDown<br /> Microsoft Word の [標準] ツールバーの [元に戻す] および [やり直し] ボタンなどのコントロール。|
+|type|省略可能。 ボタンの種類を指定する列挙値。<br /><br /> 指定されていない場合は、ボタンを使用します。<br /><br /> ボタン<br /> ツールバーに表示される標準コマンド (通常はアイコンボタン)、メニュー、およびコンテキストメニュー。<br /><br /> MenuButton<br /> コマンドを実行せずに別のメニューを生成するメニュー項目。<br /><br /> SplitDropDown<br /> Microsoft Word の [標準] ツールバーの [元に戻す] および [やり直し] ボタンなどのコントロール。|
 |条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
@@ -53,7 +55,7 @@ ms.locfileid: "80739928"
 |[Icon 要素](../extensibility/icon-element.md)|省略可能。 ボタンに関連付けられているアイコン。|
 |[Command flag 要素](../extensibility/command-flag-element.md)|必須。 ボタンの CommandFlag の有効な値は次のとおりです。<br /><br /> -AllowParams<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -Defaul/Visible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> - ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -Text] ボタン<br /><br /> -TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|
 |[Strings 要素](../extensibility/strings-element.md)|必須。 子の [Buttontext 要素](../extensibility/buttontext-element.md) を定義する必要があります。|
-|Annotation|コメント (省略可能)。|
+|注釈|コメント (省略可能)。|
 
 ### <a name="parent-elements"></a>親要素
 
