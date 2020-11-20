@@ -1,5 +1,6 @@
 ---
 title: Windows フォームで簡単な WCF サービスを作成する
+description: このチュートリアルでは、Visual Studio で Windows Communication Foundation (WCF) サービスを作成し、テストしてから、Windows フォームアプリケーションからアクセスします。
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036796"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998136"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームで簡単な WCF サービスを作成する
 
@@ -64,7 +65,7 @@ ms.locfileid: "90036796"
    > [!NOTE]
    > これにより、テストしてアクセスすることが可能な機能するサービスが作成されます。 次の 2 つの手順は、別のデータ型を使用するように既定の方法を変更する方法を示しています。 実際のアプリケーションで、独自の関数をサービスに追加することもできます。
 
-5. **ソリューションエクスプローラー**で、 **IService1**または**IService1.cs**をダブルクリックします。
+5. **ソリューションエクスプローラー** で、 **IService1** または **IService1.cs** をダブルクリックします。
 
    ![IService1 ファイル](../data-tools/media/wcf2.png)
 
@@ -80,7 +81,7 @@ ms.locfileid: "90036796"
 
    上記のコードで、`<OperationContract()>` または `[OperationContract]` 属性に注意してください。 これらの属性は、サービスによって公開されている任意のメソッドに必要です。
 
-6. **ソリューションエクスプローラー**で、 **Service1**または**Service1.cs**をダブルクリックします。
+6. **ソリューションエクスプローラー** で、 **Service1** または **Service1.cs** をダブルクリックします。
 
    ![Service1 ファイル](../data-tools/media/wcf3.png)
 
@@ -96,7 +97,7 @@ ms.locfileid: "90036796"
 
 ## <a name="test-the-service"></a>サービスをテストする
 
-1. **F5** キーを押してサービスを実行します。 **WCF テストクライアント**フォームが表示され、サービスが読み込まれます。
+1. **F5** キーを押してサービスを実行します。 **WCF テストクライアント** フォームが表示され、サービスが読み込まれます。
 
 2. **[WCF のテスト用クライアント]** フォームで、**IService1** の下の **GetData()** メソッドをダブルクリックします。 [ **GetData** ] タブが表示されます。
 
@@ -134,9 +135,9 @@ ms.locfileid: "90036796"
 
 ### <a name="build-a-client-application"></a>クライアント アプリケーションを構築します
 
-1. **ソリューション エクスプローラー**で、**[Form1.vb]** または **[Form1.cs]** をダブルクリックして、Windows フォーム デザイナーを (まだ開いていない場合に) 開きます。
+1. **ソリューション エクスプローラー** で、**[Form1.vb]** または **[Form1.cs]** をダブルクリックして、Windows フォーム デザイナーを (まだ開いていない場合に) 開きます。
 
-2. **ツールボックス**で、`TextBox` コントロール、`Label` コントロール、および `Button` コントロールをフォームにドラッグします。
+2. **ツールボックス** で、`TextBox` コントロール、`Label` コントロール、および `Button` コントロールをフォームにドラッグします。
 
      ![フォームへのコントロールの追加](../data-tools/media/wcf9.png)
 
@@ -145,12 +146,12 @@ ms.locfileid: "90036796"
      [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
      [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]
 
-4. **ソリューション エクスプローラー**で、**[WindowsApplication1]** を右クリックして **[スタートアップ プロジェクトに設定]** をクリックします。
+4. **ソリューション エクスプローラー** で、**[WindowsApplication1]** を右クリックして **[スタートアップ プロジェクトに設定]** をクリックします。
 
-5. **F5**キーを押してプロジェクトを実行します。 いくつかのテキストを入力し、ボタンをクリックします。 ラベルに「入力した内容:」と入力したテキストが表示されます。
+5. **F5** キーを押してプロジェクトを実行します。 いくつかのテキストを入力し、ボタンをクリックします。 ラベルに「入力した内容:」と入力したテキストが表示されます。
 
      ![結果を表示するフォーム](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 
-- [Visual Studio での Windows Communication Foundation サービスと WCF データ サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio でのサービスと WCF Data Services の Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

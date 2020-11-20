@@ -1,5 +1,6 @@
 ---
 title: 単一テーブル継承を使用した LINQ to SQL クラス
+description: このチュートリアルでは、Visual Studio オブジェクトリレーショナルデザイナー (O/R デザイナー) で単一テーブル継承を使用して LINQ to SQL クラスを作成します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036757"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998240"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)
 [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)では、通常はリレーショナルシステムに実装されるため、単一テーブルの継承がサポートされます。 このチュートリアルでは、「 [方法: O/R デザイナーを使用して継承を構成](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) する」のトピックで説明する一般的な手順について説明します。また、での継承の使用方法を示すいくつかの実際のデータを提供し [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] ます。
@@ -43,12 +44,12 @@ ms.locfileid: "90036757"
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>ベース テーブルを作成して継承の動作を確認するには
 
-1. **サーバーエクスプローラー**または**データベースエクスプローラー**で、[**テーブル**] ノードを右クリックし、[**新しいテーブルの追加**] をクリックします。
+1. **サーバーエクスプローラー** または **データベースエクスプローラー** で、[**テーブル**] ノードを右クリックし、[**新しいテーブルの追加**] をクリックします。
 
     > [!NOTE]
     > Northwind データベースを使用することも、テーブルを追加できる他の任意のデータベースを使用することもできます。
 
-2. **テーブル デザイナー**で、次の列をテーブルに追加します。
+2. **テーブル デザイナー** で、次の列をテーブルに追加します。
 
     |列名|データ型|Null を許容|
     |-----------------|---------------|-----------------|
@@ -67,7 +68,7 @@ ms.locfileid: "90036757"
 
 ### <a name="to-add-data-to-the-table"></a>テーブルにデータを追加するには
 
-1. データ ビューでテーブルを開きます  (**サーバーエクスプローラー**または**データベースエクスプローラー**で**Person**テーブルを右クリックし、[**テーブルデータの表示**] をクリックします)。
+1. データ ビューでテーブルを開きます  (**サーバーエクスプローラー** または **データベースエクスプローラー** で **Person** テーブルを右クリックし、[**テーブルデータの表示**] をクリックします)。
 
 2. テーブルに次のデータをコピーします。 (コピーした後、[ **結果** ] ウィンドウで行全体を選択すると、テーブルに貼り付けることができます)。
 
@@ -97,9 +98,9 @@ ms.locfileid: "90036757"
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
-4. プロジェクトに **InheritanceWalkthrough**という名前を入力し、[ **OK]** をクリックします。
+4. プロジェクトに **InheritanceWalkthrough** という名前を入力し、[ **OK]** をクリックします。
 
-     **InheritanceWalkthrough** プロジェクトが作成されて、**ソリューション エクスプローラー**に追加されます。
+     **InheritanceWalkthrough** プロジェクトが作成されて、**ソリューション エクスプローラー** に追加されます。
 
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>LINQ to SQL クラス ファイルをプロジェクトに追加します
 
@@ -109,16 +110,16 @@ ms.locfileid: "90036757"
 
 2. **LINQ to SQL クラス** テンプレートをクリックし、**[追加]** をクリックします。
 
-     *.Dbml*ファイルがプロジェクトに追加され、 **O/R デザイナー**が開きます。
+     *.Dbml* ファイルがプロジェクトに追加され、 **O/R デザイナー** が開きます。
 
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>O/R デザイナーを使用した継承の作成
-**ツールボックス**からデザイン サーフェイスに**継承**オブジェクトをドラッグして、継承を構成します。
+**ツールボックス** からデザイン サーフェイスに **継承** オブジェクトをドラッグして、継承を構成します。
 
 ### <a name="to-create-the-inheritance"></a>継承を作成するには
 
-1. **サーバーエクスプローラー**または**データベースエクスプローラー**で、前に作成した**Person**テーブルに移動します。
+1. **サーバーエクスプローラー** または **データベースエクスプローラー** で、前に作成した **Person** テーブルに移動します。
 
-2. **Person**テーブルを**O/R デザイナー**デザインサーフェイスにドラッグします。
+2. **Person** テーブルを **O/R デザイナー** デザインサーフェイスにドラッグします。
 
 3. 2つ目の **Person** テーブルを **O/R デザイナー** にドラッグし、名前を「 **Employee**」に変更します。
 
@@ -126,9 +127,9 @@ ms.locfileid: "90036757"
 
 5. **Employee** オブジェクトから、**Type**、**ID**、**FirstName**、および **LastName** の各プロパティを削除します。 (つまり、**Manager** 以外のプロパティをすべて削除します。)
 
-6. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に**継承**を作成します。 これを作成するには、**ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、 **O/R デザイナー**で**Employee**オブジェクトをクリックし、 **Person**オブジェクトをクリックします。 継承線の矢印は **Person** オブジェクトを指します。
+6. **ツールボックス** の **[オブジェクト リレーショナル デザイナー]** タブで、**Person** オブジェクトと **Employee** オブジェクトの間に **継承** を作成します。 これを作成するには、**ツールボックス** の **[継承]** 項目をクリックしてマウス ボタンを放します。 次に、 **O/R デザイナー** で **Employee** オブジェクトをクリックし、 **Person** オブジェクトをクリックします。 継承線の矢印は **Person** オブジェクトを指します。
 
-7. デザイン サーフェイスで**継承**線をクリックします。
+7. デザイン サーフェイスで **継承** 線をクリックします。
 
 8. **[識別子プロパティ]** プロパティを **Type** に設定します。
 
@@ -179,13 +180,13 @@ ms.locfileid: "90036757"
 
 ### <a name="to-test-the-application"></a>アプリケーションをテストするには
 
-1. **F5**キーを押します。
+1. **F5** キーを押します。
 
 2. **[Type]** 列の値が 2 のレコードのみが表示されていることを確認します。
 
 3. フォームを閉じます  ([ **デバッグ** ] メニューの [ **デバッグの停止**] をクリックします)。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [チュートリアル: LINQ to SQL クラスの作成 (O-R デザイナー)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

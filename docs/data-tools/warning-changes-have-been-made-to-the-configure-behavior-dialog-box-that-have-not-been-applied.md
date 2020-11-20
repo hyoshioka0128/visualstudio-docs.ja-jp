@@ -1,6 +1,6 @@
 ---
 title: 未適用の変更
-description: 警告 - [動作の構成] ダイアログ ボックスで行った変更が適用されていません
+description: 警告-適用されていない [動作の構成] ダイアログボックスに変更が加えられました。 この Visual Studio O/R デザイナーのメッセージに関する情報を表示します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 02a94c7038e0825a9793521ed57eefd3a61d9e39
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036731"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998214"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません
 
@@ -25,10 +25,10 @@ ms.locfileid: "90036731"
 
 ## <a name="change-options"></a>オプションの変更
 
-- 変更を適用して続行するには、[ **はい**] をクリックします。 この変更は、選択した **クラス** と **動作**に適用されます。
+- 変更を適用して続行するには、[ **はい**] をクリックします。 この変更は、選択した **クラス** と **動作** に適用されます。
 
 - 以前の変更を取り消して続行するには、[ **いいえ**] をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
