@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492842"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575542"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -147,7 +147,7 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
   - Http POST CRUD
   - パラメーター付き HTTP トリガー
 
-- **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
+- **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください
 
 - **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント **接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
 
@@ -155,7 +155,7 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 
 - **汎用 webhook** – これは、webhook をサポートするサービスから要求を受信するたびに実行される単純な関数です。 詳細については、[汎用 webhook についての Azure Functions の記事](/azure/azure-functions/functions-create-generic-webhook-triggered-function)をご覧ください。
 
-- **Durable Functions オーケストレーション** – Durable Functions を使うと、サーバーレス環境でステートフル関数を記述できます。 この拡張機能は、状態、チェックポイント、および再起動を自動的に管理します。 詳細については、[Durable Functions](/azure/azure-functions/durable-functions-overview)に関する Azure Functions ガイドをご覧ください。
+- **Durable Functions オーケストレーション** – Durable Functions を使うと、サーバーレス環境でステートフル関数を記述できます。 この拡張機能は、状態、チェックポイント、および再起動を自動的に管理します。 詳細については、[Durable Functions](/azure/azure-functions/durable-functions-overview) に関する Azure Functions ガイドをご覧ください。
 
 - **イメージ リサイザー** – この関数は、コンテナーに BLOB が追加されるたびに異なるサイズのイメージを作成します。 このテンプレートは、トリガーに対するパスと接続文字列、小さいイメージ出力、および中くらいのイメージ出力を受け取ります。
 

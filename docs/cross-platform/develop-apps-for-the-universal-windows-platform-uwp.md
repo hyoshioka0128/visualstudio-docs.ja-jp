@@ -1,5 +1,7 @@
 ---
 title: ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
+description: Visual Studio とユニバーサル Windows アプリ開発ツールを使用してアプリを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75587148"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671420"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 
@@ -42,7 +44,7 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2017 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs)」と「[システム要件](/visualstudio/productinfo/vs2017-system-requirements-vs)」をご覧ください。
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
 
      ![UWP ワークロード](media/uwp_workload.png)
 
@@ -52,7 +54,7 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2019 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/releases/2019/compatibility/)」と「[システム要件](/visualstudio/releases/2019/system-requirements/)」をご覧ください。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
+- [Visual Studio](https://visualstudio.microsoft.com/downloads). オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
 
      ![UWP ワークロード](media/uwp_workload.png)
 
@@ -68,6 +70,6 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 ユニバーサル Windows アプリを作成したら、アプリをパッケージ化して、それを Windows 10 デバイスにインストールするか Windows ストアに送信する必要があります。 「[アプリのパッケージ化](/windows/uwp/packaging/index)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio におけるクロス プラットフォーム モバイル開発](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

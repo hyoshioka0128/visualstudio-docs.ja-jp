@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492896"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704002"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio の XAML デザイナーでデザイン時のデータを使用する
 
@@ -181,7 +181,7 @@ WPF .NET Core でカスタム xmlns 名前空間を作成するには、コン�
 
 - デザイン時のデータには、Visual Studio 2019 バージョン [16.7](/visualstudio/releases/2019/release-notes) 以降が必要です。
 
-- .NET Core および UWP 用の Windows Presentation Foundation (WPF) を対象とする Windows デスクトップ プロジェクトがサポートされている。 この機能は、".NET Framework 用の新しい WPF XAML デザイナー" プレビュー機能が有効になっている場合に .NET Framework でも使用できます。
+- .NET Core および UWP 用の Windows Presentation Foundation (WPF) を対象とする Windows デスクトップ プロジェクトがサポートされていること。 この機能は、.NET Framework の[プレビュー チャネル](/visualstudio/releases/2019/release-notes-preview)でも利用できます。 これを有効にするには、 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[プレビュー機能]** にアクセスし、 **[.NET Framework 用の新しい WPF XAML デザイナー]** を選択してから Visual Studio を再起動します。
 
 - Visual Studio 2019 バージョン 16.7 以降では、この機能は、WPF および UWP のフレームワークのすべての組み込みコントロールで動作します。 16.8 プレビュー リリースでは、サードパーティ製コントロールのサポートが提供されるようになりました。
 

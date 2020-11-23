@@ -2,20 +2,20 @@
 title: Visual Studio での Git エクスペリエンス
 titleSuffix: ''
 description: Visual Studio 2019 での新しい統合 Git エクスペリエンスが、生産性の向上にどのように役立つかについて学習します。
-ms.date: 11/10/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493557"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704067"
 ---
-# <a name="git-productivity-in-visual-studio"></a>Visual Studio での Git の生産性
+# <a name="git-experience-in-visual-studio"></a>Visual Studio での Git エクスペリエンス
 
 Git が Visual Studio 2019 での既定のバージョン管理エクスペリエンスになりました。 [バージョン 16.6](/visualstudio/releases/2019/release-notes-v16.6) 以降、機能セットの構築と、お客様のフィードバックに基づくその反復処理に取り組んできました。 [バージョン 16.8](/visualstudio/releases/2019/release-notes/) のリリースでは、すべてのユーザーに対して既定で新しい Git エクスペリエンスが有効になります。
 
@@ -24,11 +24,18 @@ Git が Visual Studio 2019 での既定のバージョン管理エクスペリ�
 
 ## <a name="how-to-use-git-in-visual-studio"></a>Visual Studio で Git を使用する方法
 
-生産性を向上させるために Visual Studio 2019 で Git の使用を開始するには、次の 3 つの方法があります。
+Visual Studio 2019 で新しい Git エクスペリエンスを使用する方法について説明しますが、最初に概要を確認したい場合は、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:5.27 分*"
+
+> [!VIDEO https://www.youtube.com/embed/UHrAg3iKoe0]
+
+生産性を向上させるために Visual Studio で Git の使用を開始するには、次の 3 つの方法があります。
 
 - [既存の Git リポジトリを開く](#open-an-existing-local-repository)。 お使いのマシン上に既にコードがある場合は、 **[ファイル]**  >  **[開く]**  >  **[プロジェクト/ソリューション]** (または **[フォルダー]** ) を使用して開くことができます。VisualStudio によって、初期化された Git リポジトリがあるかどうかが自動的に検出されます。
 - [新しい Git リポジトリを作成する](#create-a-new-git-repository)。 コードが Git に関連付けられていない場合は、新しい Git リポジトリを作成できます。
 - [既存の Git リポジトリをクローンする](#clone-an-existing-git-repository)。 使用するコードがお使いのマシン上にない場合は、既存の任意のリモート リポジトリをクローンすることができます。
+
+> [!NOTE]
+> また[バージョン 16.8](/visualstudio/releases/2019/release-notes/) からは、Visual Studio 2019 には完全に統合された GitHub アカウントのエクスペリエンスが含まれています。 これで、GitHub と GitHub Enterprise 両方のアカウントをキーチェーンに追加できるようになりました。 Microsoft アカウントの場合と同様にそれらを追加して活用できるようになります。つまり、Visual Studio 全体で GitHub リソースにより簡単にアクセスできるようになります。 詳細については、「[Visual Studio の GitHub アカウントを使って作業する](work-with-github-accounts.md)」ページを参照してください。
 
 ## <a name="create-a-new-git-repository"></a>新しい Git リポジトリを作成する
 
@@ -195,8 +202,10 @@ Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-no
 
 ## <a name="see-also"></a>関連項目
 
+- 「[Visual Studio での Git エクスペリエンスのリリースの発表](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)」ブログ記事
 - YouTube の[新しい Git エクスペリエンスの起動](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio のツールボックス シリーズでは、以下が示されます: 新しい Git エクスペリエンス](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)の動画 (Channel 9)。[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be) でもご覧いただけます
 - [Visual Studio での Git エクスペリエンスに関する新しい更新プログラム](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)のブログ記事
 - [Visual Studio 2019 での Git エクスペリエンスの向上](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)のブログ記事
+- [Visual Studio の GitHub アカウントを使って作業する](work-with-github-accounts.md)
 - [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes)

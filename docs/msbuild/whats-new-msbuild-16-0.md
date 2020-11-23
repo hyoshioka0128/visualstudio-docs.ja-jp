@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047789"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531863"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0 の新機能
 
@@ -32,6 +32,10 @@ ms.locfileid: "93047789"
 - `MSBuildToolsVersion`: このバージョンのツールでは "Current" になります。 アセンブリのバージョンは、Visual Studio 2017 と同じ (15.1.0.0) です。
 
 - `VisualStudioVersion`: このバージョンのツールでは "16.0" になります。
+
+## <a name="change-waves"></a>流れの変化
+
+MSBuild 16.8 からは、破壊的な可能性のある特定の MSBuild の変更をオプトアウトするかどうかを選択できます。 「[変更ウェーブ](change-waves.md)」を参照してください。
 
 ## <a name="updates"></a>更新
 
