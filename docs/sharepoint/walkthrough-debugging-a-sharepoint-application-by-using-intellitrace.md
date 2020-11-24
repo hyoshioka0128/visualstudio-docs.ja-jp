@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace を使用した SharePoint アプリケーションのデバッグ
+description: IntelliTrace を使用すると、SharePoint アプリケーションをより簡単にデバッグおよび修正できます。 フィーチャーレシーバーにコードを作成して追加します。 プロジェクトをテストします。 IntelliTrace データを収集します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015748"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598485"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>チュートリアル: IntelliTrace を使用した SharePoint アプリケーションのデバッグ
 
@@ -57,15 +59,15 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
 
 最初に、フィーチャー レシーバーがある空の SharePoint プロジェクトを作成します。
 
-1. SharePoint 2010 または SharePoint 2013 ソリューションプロジェクトを作成し、 **IntelliTraceTest**という名前を指定します。
+1. SharePoint 2010 または SharePoint 2013 ソリューションプロジェクトを作成し、 **IntelliTraceTest** という名前を指定します。
 
-     **Sharepoint カスタマイズウィザード**が表示されます。このウィザードでは、プロジェクトの sharepoint サイトとソリューションの信頼レベルの両方を指定できます。
+     **Sharepoint カスタマイズウィザード** が表示されます。このウィザードでは、プロジェクトの sharepoint サイトとソリューションの信頼レベルの両方を指定できます。
 
 2. [ **ファームソリューションとして配置する** ] オプションを選択し、[ **完了** ] をクリックします。
 
      IntelliTrace は、ファーム ソリューションに対してのみ動作します。
 
-3. **ソリューションエクスプローラー**で、[**機能**] ノードのショートカットメニューを開き、[**機能の追加**] を選択します。
+3. **ソリューションエクスプローラー** で、[**機能**] ノードのショートカットメニューを開き、[**機能の追加**] を選択します。
 
      *Feature1.feature* が表示されます。
 
@@ -245,7 +247,7 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
     }
     ```
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
 
 コードがフィーチャー レシーバーに追加され、データ コレクターが実行されているので、SharePoint ソリューションを配置して実行し、それが正常に動作するかどうかをテストします。
 
@@ -266,7 +268,7 @@ IntelliTrace を使用すると、SharePoint ソリューション簡単にデ�
 
    2. [ **サイトの操作**] の [ **サイト機能の管理** ] リンクを選択します。
 
-   3. **IntelliTraceTest feature1.feature**の横にある [**非アクティブ化**] ボタンをクリックします。
+   3. **IntelliTraceTest feature1.feature** の横にある [**非アクティブ化**] ボタンをクリックします。
 
    4. [警告] ページで、[ **この機能を非アクティブ** にする] リンクを選択します。
 
@@ -287,7 +289,7 @@ SharePoint を実行しているシステムに Microsoft Monitoring Agent を�
 
    2. [ **サイトの操作**] の [ **サイト機能の管理** ] リンクを選択します。
 
-   3. **IntelliTraceTest feature1.feature**の横にある [**非アクティブ化**] ボタンをクリックします。
+   3. **IntelliTraceTest feature1.feature** の横にある [**非アクティブ化**] ボタンをクリックします。
 
    4. [警告] ページで、[ **この機能を非アクティブ** にする] リンクを選択します。
 
@@ -321,7 +323,7 @@ SharePoint を実行しているシステムに Microsoft Monitoring Agent を�
 
     2. [ **サイトの操作**] の [ **サイト機能の管理** ] リンクを選択します。
 
-    3. **IntelliTraceTest feature1.feature**の横にある [**非アクティブ化**] ボタンをクリックします。
+    3. **IntelliTraceTest feature1.feature** の横にある [**非アクティブ化**] ボタンをクリックします。
 
     4. [警告] ページで、[ **この機能を非アクティブ** にする] リンクを選択します。
 

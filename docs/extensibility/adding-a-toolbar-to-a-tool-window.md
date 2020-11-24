@@ -1,5 +1,7 @@
 ---
 title: ツールウィンドウへのツールバーの追加 |Microsoft Docs
+description: 'Visual Studio 統合開発環境 (IDE: integrated development environment) のツールウィンドウにコマンドにバインドされているボタンを含むツールバーを追加する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904123"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597978"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>ツールウィンドウにツールバーを追加する
 このチュートリアルでは、ツールウィンドウにツールバーを追加する方法について説明します。
@@ -32,9 +34,9 @@ ms.locfileid: "85904123"
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>ツールウィンドウのツールバーを作成する
 
-1. `TWToolbar` **Twtestcommand**という名前のメニューコマンドと**TestToolWindow**という名前のツールウィンドウの両方を持つという名前の VSIX プロジェクトを作成します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md) する」および「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。 ツールウィンドウテンプレートを追加する前に、コマンド項目テンプレートを追加する必要があります。
+1. `TWToolbar` **Twtestcommand** という名前のメニューコマンドと **TestToolWindow** という名前のツールウィンドウの両方を持つという名前の VSIX プロジェクトを作成します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md) する」および「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。 ツールウィンドウテンプレートを追加する前に、コマンド項目テンプレートを追加する必要があります。
 
-2. *Twtestcommandpackage. vsct*で、[シンボル] セクションを探します。 Guidtwtestcommand蔵書 Ecmdset という GuidSymbol ノードで、次のようにツールバーとツールバーグループを宣言します。
+2. *Twtestcommandpackage. vsct* で、[シンボル] セクションを探します。 Guidtwtestcommand蔵書 Ecmdset という GuidSymbol ノードで、次のようにツールバーとツールバーグループを宣言します。
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
@@ -84,14 +86,14 @@ ms.locfileid: "85904123"
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>ツールウィンドウにツールバーを追加する
 
-1. *TWTestCommandPackageGuids.cs*で、次の行を追加します。
+1. *TWTestCommandPackageGuids.cs* で、次の行を追加します。
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. *TestToolWindow.cs*で、次の using ステートメントを追加します。
+2. *TestToolWindow.cs* で、次の using ステートメントを追加します。
 
     ```csharp
     using System.ComponentModel.Design;

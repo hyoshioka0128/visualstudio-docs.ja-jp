@@ -1,5 +1,7 @@
 ---
 title: 言語サーバープロトコル拡張機能を追加する |Microsoft Docs
+description: 言語サーバープロトコル (LSP) に基づいて言語サーバーを統合する Visual Studio 拡張機能を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860449"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598147"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能の追加
 
@@ -86,7 +88,7 @@ textDocument/documentLink |
 documentLink/解決 |
 textDocument/名前の変更 | はい
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>はじめに
 
 > [!NOTE]
 > Visual Studio 2017 バージョン15.8 以降では、共通言語サーバープロトコルのサポートが Visual Studio に組み込まれています。 プレビュー [言語サーバークライアントの VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) バージョンを使用して LSP 拡張機能をビルドした場合、バージョン15.8 以降にアップグレードすると、その拡張機能が動作しなくなります。 LSP 拡張機能を再び動作させるには、次の手順を実行する必要があります。
@@ -125,12 +127,12 @@ LSP には、言語のテキストの色付け方法に関する仕様は含ま�
 
 1. 拡張機能内に "文法" という名前のフォルダーを作成します (または、任意の名前を選択します)。
 
-2. *文法*フォルダー内に、カスタムの色付けを提供する、任意の* \* tmlanguage*、 * \* plist*、 * \* tmlanguage*、または* \* json*ファイルを含めます。
+2. *文法* フォルダー内に、カスタムの色付けを提供する、任意の *\* tmlanguage*、 *\* plist*、 *\* tmlanguage*、または *\* json* ファイルを含めます。
 
    > [!TIP]
-   > *Tmtheme*ファイルは、スコープが Visual Studio 分類 (名前付きの色キー) にどのようにマップされるかを定義します。 ガイダンスについては、 *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg*ディレクトリで、グローバルな*tmtheme*ファイルを参照できます。
+   > *Tmtheme* ファイルは、スコープが Visual Studio 分類 (名前付きの色キー) にどのようにマップされるかを定義します。 ガイダンスについては、 *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* ディレクトリで、グローバルな *tmtheme* ファイルを参照できます。
 
-3. *Pkgdef*ファイルを作成し、次のような行を追加します。
+3. *Pkgdef* ファイルを作成し、次のような行を追加します。
 
     ```
     [$RootKey$\TextMate\Repositories]
@@ -150,7 +152,7 @@ VSIX プロジェクトを作成したら、次の NuGet パッケージをプ�
 * [VisualStudio. LanguageServer](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
 > [!NOTE]
-> 前の手順を完了した後に NuGet パッケージに対する依存関係を取得すると、Newtonsoft.Jsと StreamJsonRpc パッケージもプロジェクトに追加されます。 **拡張機能が対象とする Visual Studio のバージョンに新しいバージョンがインストールされることが確実である場合を除き、これらのパッケージは更新しないで**ください。 アセンブリは VSIX に含まれません。代わりに、Visual Studio のインストールディレクトリから選択されます。 ユーザーのコンピューターにインストールされているものより新しいバージョンのアセンブリを参照している場合、拡張機能は機能しません。
+> 前の手順を完了した後に NuGet パッケージに対する依存関係を取得すると、Newtonsoft.Jsと StreamJsonRpc パッケージもプロジェクトに追加されます。 **拡張機能が対象とする Visual Studio のバージョンに新しいバージョンがインストールされることが確実である場合を除き、これらのパッケージは更新しないで** ください。 アセンブリは VSIX に含まれません。代わりに、Visual Studio のインストールディレクトリから選択されます。 ユーザーのコンピューターにインストールされているものより新しいバージョンのアセンブリを参照している場合、拡張機能は機能しません。
 
 次に、 [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true) インターフェイスを実装する新しいクラスを作成できます。これは、LSP ベースの言語サーバーに接続する言語クライアントに必要な主要なインターフェイスです。
 
@@ -219,7 +221,7 @@ namespace MockLanguageExtension
 
 "[アクティブな非同期](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true)" は、 [startasync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true)デリゲートを呼び出すことによって、最終的に呼び出されるメソッドです。 言語サーバーを起動して接続を確立するロジックが含まれています。 サーバーへの書き込みとサーバーからの読み取りのためのストリームを含む接続オブジェクトを返す必要があります。 ここでスローされた例外は、Visual Studio の情報バーメッセージを使用してキャッチされ、ユーザーに表示されます。
 
-### <a name="activation"></a>アクティブ化
+### <a name="activation"></a>アクティベーション
 
 言語クライアントクラスが実装されたら、それに対して2つの属性を定義して、Visual Studio への読み込み方法とアクティブ化方法を定義する必要があります。
 
@@ -292,7 +294,7 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 
 次の手順に従って、LSP 言語サービス拡張機能に設定のサポートを追加します。
 
-1. 設定とその既定値を含む JSON ファイル (たとえば、 *MockLanguageExtensionSettings.js*) をプロジェクトに追加します。 次に例を示します。
+1. 設定とその既定値を含む JSON ファイル (たとえば、 *MockLanguageExtensionSettings.js*) をプロジェクトに追加します。 例:
 
     ```json
     {
@@ -300,7 +302,7 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
     }
     ```
 
-2. JSON ファイルを右クリックし、[ **プロパティ**] を選択します。 **ビルド**アクションを "Content" に、"VSIX に含める" プロパティを**true**に変更します。
+2. JSON ファイルを右クリックし、[ **プロパティ**] を選択します。 **ビルド** アクションを "Content" に、"VSIX に含める" プロパティを **true** に変更します。
 
 3. ConfigurationSections を実装し、JSON ファイルで定義されている設定のプレフィックスの一覧を返します (Visual Studio Code では、package.jsの構成セクション名にマップされます)。
 
@@ -330,7 +332,7 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 
 5. Pkgdef ファイルを右クリックし、[ **プロパティ**] を選択します。 [ **ビルド** アクション] を [ **コンテンツ** ] に、[ **VSIX に含める** ] プロパティを [ **true**] に変更します。
 
-6. *Source.extension.vsixmanifest*ファイルを開き、[**資産**] タブに資産を追加します。
+6. *Source.extension.vsixmanifest* ファイルを開き、[**資産**] タブに資産を追加します。
 
    ![vspackage asset の編集](media/lsp-add-vspackage-asset.png)
 
@@ -341,8 +343,8 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 ### <a name="user-editing-of-settings-for-a-workspace"></a>ワークスペースの設定をユーザーが編集する
 
 1. ユーザーは、サーバーが所有しているファイルが含まれているワークスペースを開きます。
-2. ユーザーは、 *VSWorkspaceSettings.js*と呼ばれる*vs*フォルダーにファイルを追加します。
-3. ユーザーは、サーバーが提供する設定について、ファイルの *VSWorkspaceSettings.js* に行を追加します。 次に例を示します。
+2. ユーザーは、 *VSWorkspaceSettings.js* と呼ばれる *vs* フォルダーにファイルを追加します。
+3. ユーザーは、サーバーが提供する設定について、ファイルの *VSWorkspaceSettings.js* に行を追加します。 例:
 
     ```json
     {
@@ -369,7 +371,7 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 * "Messages": トレースが有効になっていますが、メソッド名と応答 ID のみがトレースされています。
 * "Verbose": トレースが有効になります。rpc メッセージ全体がトレースされます。
 
-トレースが有効になっている場合、コンテンツは *%temp%\VisualStudio\LSP* ディレクトリ内のファイルに書き込まれます。 このログは、 *[LanguageClientName]-[Datetime スタンプ] .log*という名前の形式に従います。 現時点では、トレースは、開いているフォルダーのシナリオに対してのみ有効にすることができます。 1つのファイルを開いて言語サーバーをアクティブ化する場合、診断トレースはサポートされません。
+トレースが有効になっている場合、コンテンツは *%temp%\VisualStudio\LSP* ディレクトリ内のファイルに書き込まれます。 このログは、 *[LanguageClientName]-[Datetime スタンプ] .log* という名前の形式に従います。 現時点では、トレースは、開いているフォルダーのシナリオに対してのみ有効にすることができます。 1つのファイルを開いて言語サーバーをアクティブ化する場合、診断トレースはサポートされません。
 
 ### <a name="custom-messages"></a>カスタムメッセージ
 

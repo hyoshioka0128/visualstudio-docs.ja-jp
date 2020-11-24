@@ -1,5 +1,7 @@
 ---
 title: C++ 用のデータ ツール
+description: C++ 用の Visual Studio データ ツールについて調べます。 C++ アプリケーションから localDB に ODBC と SQL Native Client で接続します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 063efeebff92698b8e5db66880360713c73fe150
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36b1fe83cb20aee6d6fc95984a254c9ac9d212bd
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281098"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998097"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ 用の Visual Studio データ ツール
 

@@ -1,5 +1,7 @@
 ---
 title: ソリューションエクスプローラーツールバーにコマンドを追加する |Microsoft Docs
+description: Visual Studio のソリューションエクスプローラーツールバーにコマンドを実行するボタンを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414102"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597510"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>ソリューションエクスプローラーツールバーにコマンドを追加する
 このチュートリアルでは、[ **ソリューションエクスプローラー** ] ツールバーにボタンを追加する方法について説明します。
@@ -27,7 +29,7 @@ ms.locfileid: "93414102"
  メニュー、ツールバーコマンド、および *vsct* ファイルの詳細については、「 [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)」を参照してください。
 
 > [!NOTE]
-> コマンドテーブル構成 ( *ctc* ) ファイルではなく、XML コマンドテーブル ( *vsct* ) ファイルを使用して、vspackage にメニューとコマンドを表示する方法を定義します。 詳細については、「 [Visual Studio コマンドテーブル ()」を参照してください。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+> コマンドテーブル構成 (*ctc*) ファイルではなく、XML コマンドテーブル (*vsct*) ファイルを使用して、vspackage にメニューとコマンドを表示する方法を定義します。 詳細については、「 [Visual Studio コマンドテーブル ()」を参照してください。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。

@@ -1,5 +1,7 @@
 ---
 title: ツールバーの追加 |Microsoft Docs
+description: 'Visual Studio 統合開発環境 (IDE: integrated development environment) にコマンドにバインドされているボタンを含むツールバーを追加する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904074"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597952"
 ---
 # <a name="add-a-toolbar"></a>ツールバーの追加
 このチュートリアルでは、Visual Studio IDE にツールバーを追加する方法について説明します。
@@ -31,11 +33,11 @@ ms.locfileid: "85904074"
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-an-extension-with-a-toolbar"></a>ツールバーを使用して拡張機能を作成する
- という名前の VSIX プロジェクトを作成 `IDEToolbar` します。 **Toolbartestcommand**という名前のメニューコマンド項目テンプレートを追加します。 これを行う方法については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+ という名前の VSIX プロジェクトを作成 `IDEToolbar` します。 **Toolbartestcommand** という名前のメニューコマンド項目テンプレートを追加します。 これを行う方法については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
 ## <a name="create-a-toolbar-for-the-ide"></a>IDE のツールバーを作成する
 
-1. *Toolbartestcommandpackage. vsct*で、[シンボル] セクションを探します。 Guidtoolbartestcommand/Mdset という GuidSymbol 要素で、次のようにツールバーとツールバーグループの宣言を追加します。
+1. *Toolbartestcommandpackage. vsct* で、[シンボル] セクションを探します。 Guidtoolbartestcommand/Mdset という GuidSymbol 要素で、次のようにツールバーとツールバーグループの宣言を追加します。
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -85,7 +87,7 @@ ms.locfileid: "85904074"
 
 5. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-6. Visual Studio のメニューバーを右クリックすると、ツールバーの一覧が表示されます。 **テストツールバー**を選択します。
+6. Visual Studio のメニューバーを右クリックすると、ツールバーの一覧が表示されます。 **テストツールバー** を選択します。
 
 7. ツールバーが [フォルダーを指定して検索] アイコンの右側にアイコンとして表示されます。 アイコンをクリックすると、[Toolbartestcommandpackage] というメッセージボックスが表示さ **れます。Ide ツールバー内で、ToolbarTestCommand. MenuItemCallback ()** を実行します。
 

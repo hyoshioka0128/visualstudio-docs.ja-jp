@@ -1,5 +1,7 @@
 ---
 title: ツールバーにメニューコントローラーを追加する |Microsoft Docs
+description: メニューコントローラーを作成して Visual Studio のツールウィンドウツールバーに追加する方法について説明し、メニューコントローラーのコマンドを実装してテストします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903526"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597822"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>ツールバーにメニューコントローラーを追加する
 このチュートリアルは、「ツール [ウィンドウにツールウィンドウを追加する」](../extensibility/adding-a-toolbar-to-a-tool-window.md) チュートリアルに基づいており、ツールウィンドウのツールバーにメニューコントローラーを追加する方法を示しています。 ここに示す手順は、「 [ツールバーの追加](../extensibility/adding-a-toolbar.md) 」チュートリアルで作成したツールバーにも適用できます。
@@ -33,7 +35,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. 「ツール [ウィンドウにツールバーを追加](../extensibility/adding-a-toolbar-to-a-tool-window.md) する」で説明されている手順に従って、ツールバーを持つツールウィンドウを作成します。
 
-2. *Twtestcommandpackage. vsct*で、[シンボル] セクションにアクセスします。 **Guidtwtestcommand整理 Ecmdset**という guidsymbol 要素で、メニューコントローラー、メニューコントローラーグループ、3つのメニュー項目を宣言します。
+2. *Twtestcommandpackage. vsct* で、[シンボル] セクションにアクセスします。 **Guidtwtestcommand整理 Ecmdset** という guidsymbol 要素で、メニューコントローラー、メニューコントローラーグループ、3つのメニュー項目を宣言します。
 
     ```xml
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />
@@ -110,18 +112,18 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="implement-the-menu-controller-commands"></a>メニューコントローラーのコマンドを実装する
 
-1. *TWTestCommandPackageGuids.cs*で、既存のコマンド id の後に3つのメニュー項目のコマンド id を追加します。
+1. *TWTestCommandPackageGuids.cs* で、既存のコマンド id の後に3つのメニュー項目のコマンド id を追加します。
 
     ```csharp
-    public const int cmdidMCItem1 = 0x130;
-    public const int cmdidMCItem2 = 0x131;
-    public const int cmdidMCItem3 = 0x132;
+    public const int cmdidMCItem1 = 0x130;
+    public const int cmdidMCItem2 = 0x131;
+    public const int cmdidMCItem3 = 0x132;
     ```
 
-2. *TWTestCommand.cs*で、クラスの先頭に次のコードを追加し `TWTestCommand` ます。
+2. *TWTestCommand.cs* で、クラスの先頭に次のコードを追加し `TWTestCommand` ます。
 
     ```csharp
-    private int currentMCCommand; // The currently selected menu controller command
+    private int currentMCCommand; // The currently selected menu controller command
     ```
 
 3. TWTestCommand コンストラクターで、メソッドの最後の呼び出しの後に `AddCommand` 、同じハンドラーを使用して各コマンドのイベントをルーティングするコードを追加します。
@@ -136,7 +138,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
           EventHandler(OnMCItemClicked), cmdID);
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);
         commandService.AddCommand(mc);
-        // The first item is, by default, checked. 
+        // The first item is, by default, checked. 
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)
         {
             mc.Checked = true;
@@ -145,10 +147,10 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     }
     ```
 
-4. **Twtestcommand**クラスにイベントハンドラーを追加して、選択したコマンドをチェック対象としてマークします。
+4. **Twtestcommand** クラスにイベントハンドラーを追加して、選択したコマンドをチェック対象としてマークします。
 
     ```csharp
-    private void OnMCItemQueryStatus(object sender, EventArgs e)
+    private void OnMCItemQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -161,7 +163,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 5. ユーザーがメニューコントローラーでコマンドを選択したときにメッセージボックスを表示するイベントハンドラーを追加します。
 
     ```csharp
-    private void OnMCItemClicked(object sender, EventArgs e)
+    private void OnMCItemClicked(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -212,15 +214,15 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. プロジェクトをビルドし、デバッグを開始します。 実験用のインスタンスが表示されます。
 
-2. [**表示]/[その他のウィンドウ**] メニューで**テスト ToolWindow**を開きます。
+2. [**表示]/[その他のウィンドウ**] メニューで **テスト ToolWindow** を開きます。
 
-    ツールウィンドウのツールバーにメニューコントローラーが表示され、 **MC 項目 1**が表示されます。
+    ツールウィンドウのツールバーにメニューコントローラーが表示され、 **MC 項目 1** が表示されます。
 
 3. 矢印の左側にあるメニューコントローラーのボタンをクリックします。
 
     3つの項目が表示されます。最初の項目が選択されており、そのアイコンの周りに強調表示ボックスがあります。 [ **MC 項目 3**] をクリックします。
 
-    ダイアログボックスが開き、 **[メニューコントローラー項目 3]** というメッセージが表示されます。 メッセージがメニューコントローラーボタンのテキストに対応することに注意してください。 メニューコントローラーボタンに **MC 項目 3**が表示されるようになりました。
+    ダイアログボックスが開き、 **[メニューコントローラー項目 3]** というメッセージが表示されます。 メッセージがメニューコントローラーボタンのテキストに対応することに注意してください。 メニューコントローラーボタンに **MC 項目 3** が表示されるようになりました。
 
 ## <a name="see-also"></a>関連項目
 - [ツールウィンドウへのツールバーの追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)

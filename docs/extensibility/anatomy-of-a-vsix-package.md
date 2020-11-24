@@ -1,5 +1,7 @@
 ---
 title: VSIX パッケージの構造 |Microsoft Docs
+description: Visual Studio での VSIX パッケージの内容、1つ以上の Visual Studio 拡張機能とメタデータマニフェストファイルを含むファイルについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33cecb4767193010d7e7ca330d891d1835091875
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012335"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598160"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX パッケージの構造
 VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を含む *.vsix* ファイルで、visual studio が拡張機能を分類およびインストールするために使用するメタデータと共に使用されます。 このメタデータは、VSIX マニフェストと *[Content_Types] .xml* ファイルに格納されています。 VSIX パッケージには、ローカライズされたセットアップテキストを提供するための *vsixlangpack* ファイルが1つ以上含まれている場合があります。また、依存関係をインストールするための vsix パッケージが追加されている場合もあります。
@@ -50,11 +52,11 @@ VSIX パッケージは、1つまたは複数の Visual Studio 拡張機能を�
  参照されたアセンブリのサテライト Dll を VSIX パッケージに含めるには、 `SatelliteDllsProjectOutputGroup` **vsix プロパティに含まれる出力グループ** にを追加します。
 
 ## <a name="installation-location"></a>インストール場所
- インストール中、 **拡張機能と更新プログラム** によって、 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*の下のフォルダーにある VSIX パッケージの内容が検索されます。
+ インストール中、 **拡張機能と更新プログラム** によって、 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions* の下のフォルダーにある VSIX パッケージの内容が検索されます。
 
  既定では、 *% Localappdata%* はユーザー固有のディレクトリであるため、インストールは現在のユーザーにのみ適用されます。 ただし、マニフェストの[AllUsers](/previous-versions/ee191547(v=vs.110))要素をに設定すると、 `True` 拡張機能がにインストール<em> \\ されます。</em>VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>とは、コンピューターのすべてのユーザーが使用できるようになります。
 
 ## <a name="content_typesxml"></a>[Content_Types] .xml
- *[Content_Types] .xml*ファイルは、展開された *.vsix*ファイル内のファイルの種類を識別します。 Visual Studio では、パッケージのインストール時にこのファイルを使用しますが、ファイル自体はインストールしません。 このファイルの詳細については、 [[Content_types] .xml ファイルの構造](the-structure-of-the-content-types-dot-xml-file.md)を参照してください。
+ *[Content_Types] .xml* ファイルは、展開された *.vsix* ファイル内のファイルの種類を識別します。 Visual Studio では、パッケージのインストール時にこのファイルを使用しますが、ファイル自体はインストールしません。 このファイルの詳細については、 [[Content_types] .xml ファイルの構造](the-structure-of-the-content-types-dot-xml-file.md)を参照してください。
 
  Open パッケージング規約 (OPC) 標準では、 *[Content_Types] .xml* ファイルが必要です。 OPC の詳細については、「 [opc: データをパッケージ化するための新しい標準](/archive/blogs/msdnmagazine/opc-a-new-standard-for-packaging-your-data) 」を参照してください。
