@@ -1,6 +1,8 @@
 ---
 title: SharePoint プロジェクトシステムの拡張機能におけるデータの保存 |Microsoft Docs
 titleSuffix: ''
+description: 拡張機能を含む SharePoint プロジェクトを終了した後に保持される文字列データを保存する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583867"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440650"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクトシステムの拡張機能にデータを保存する
   SharePoint プロジェクトシステムを拡張すると、SharePoint プロジェクトを閉じた後も保持される文字列データを保存できます。 データは、通常、特定のプロジェクトアイテムまたはプロジェクト自体に関連付けられています。
@@ -26,7 +28,7 @@ ms.locfileid: "91583867"
  保持する必要のないデータがある場合は、インターフェイスを実装する SharePoint ツールオブジェクトモデル内の任意のオブジェクトにデータを追加でき <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> ます。 詳細については、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
 
 ## <a name="save-data-that-is-associated-with-a-project-item"></a>プロジェクト項目に関連付けられているデータを保存する
- 特定の SharePoint プロジェクト項目に関連付けられているデータ (プロジェクト項目に追加するプロパティの値など) がある場合は、そのデータをプロジェクト項目の *sharepointprojectitem.spdata* ファイルに保存できます。 これを行うには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> オブジェクトのプロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> ます。 このプロパティに追加したデータは、プロジェクト項目の*sharepointprojectitem.spdata*ファイルの**extensiondata**要素に保存されます。 詳細については、「 [Extensiondata 要素](../sharepoint/extensiondata-element.md)」を参照してください。
+ 特定の SharePoint プロジェクト項目に関連付けられているデータ (プロジェクト項目に追加するプロパティの値など) がある場合は、そのデータをプロジェクト項目の *sharepointprojectitem.spdata* ファイルに保存できます。 これを行うには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> オブジェクトのプロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> ます。 このプロパティに追加したデータは、プロジェクト項目の *sharepointprojectitem.spdata* ファイルの **extensiondata** 要素に保存されます。 詳細については、「 [Extensiondata 要素](../sharepoint/extensiondata-element.md)」を参照してください。
 
  次のコード例は、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> て、カスタム SharePoint プロジェクト項目の種類で定義されている文字列プロパティの値を保存する方法を示しています。 大きな例のコンテキストでこの例を確認するには、「 [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
 

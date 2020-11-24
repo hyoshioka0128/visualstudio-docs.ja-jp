@@ -1,5 +1,7 @@
 ---
 title: '[URL の選択] ダイアログボックス (SharePoint 開発)'
+description: '[URL ピッカー] ダイアログボックスについて説明します。このダイアログボックスでは、ユーザーは、プロジェクトまたは SharePoint を実行しているローカルサーバーにあるファイルを選択できます。'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261941"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442535"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>[URL の選択] ダイアログボックス (Visual Studio での SharePoint 開発)
   [URL ピッカー] ダイアログボックスでは、プロジェクトまたは SharePoint を実行しているローカルサーバー上にあるマスターページファイルやイメージファイルなどのファイルを選択できます。
@@ -30,7 +32,7 @@ ms.locfileid: "66261941"
 ## <a name="uielement-list"></a>UIElement の一覧
  **プロジェクトフォルダー** プロジェクトまたは SharePoint を実行しているローカルサーバーで定義されているフォルダーの一覧を表示します。 [展開] ボタンをクリックしてサブフォルダーを表示します。
 
- **プロジェクトノードを**展開して、プロジェクト内のファイルを選択します。 ダイアログボックスで選択可能なものとして表示するには、プロジェクト内のファイルが次の条件を満たしている必要があります。
+ **プロジェクトノードを** 展開して、プロジェクト内のファイルを選択します。 ダイアログボックスで選択可能なものとして表示するには、プロジェクト内のファイルが次の条件を満たしている必要があります。
 
 - ファイルは、マップされたフォルダーに格納されている必要があります。
 
@@ -40,9 +42,9 @@ ms.locfileid: "66261941"
 
   これらの条件を満たしていないファイルを参照する場合は、ファイルのパスを手動で入力する必要があります。
 
-  **サーバー**ノードを展開して、SharePoint を実行しているローカルサーバー上にあるファイルを選択します。 ダイアログボックスで選択可能として表示するには、これらのファイルが次の条件を満たしている必要があります。
+  **サーバー** ノードを展開して、SharePoint を実行しているローカルサーバー上にあるファイルを選択します。 ダイアログボックスで選択可能として表示するには、これらのファイルが次の条件を満たしている必要があります。
 
-- ファイルは、 **画像**、 **レイアウト**、または **コントロールテンプレート**のいずれかのマップされたフォルダーに配置する必要があります。
+- ファイルは、 **画像**、 **レイアウト**、または **コントロールテンプレート** のいずれかのマップされたフォルダーに配置する必要があります。
 
 - ファイルが SharePoint コンテンツデータベースに見つかりません。
 
@@ -53,6 +55,6 @@ ms.locfileid: "66261941"
   **ファイルの種類** 実行中のタスクに適したファイルの一覧から選択できます。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint のアプリケーションページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)
-- [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [SharePoint のアプリケーション ページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [SharePoint の Web パーツを作成する](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

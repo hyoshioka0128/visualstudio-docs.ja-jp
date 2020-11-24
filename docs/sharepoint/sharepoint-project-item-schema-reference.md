@@ -1,5 +1,7 @@
 ---
 title: SharePoint プロジェクト項目スキーマリファレンス |Microsoft Docs
+description: Sharepointprojectitem.spdata ファイルの内容を検証するために使用される、SharePoint プロジェクト項目の XML スキーマ参照 (ProjectItemModelSchema) の概要について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,15 +25,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007720"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442548"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint プロジェクト項目スキーマのリファレンス
-  Visual Studio では、SharePoint プロジェクト項目スキーマを使用して、 *sharepointprojectitem.spdata* ファイルの内容を検証します。 *Sharepointprojectitem.spdata*ファイルは、SharePoint プロジェクトアイテムの内容と動作を指定します。 SharePoint プロジェクト項目の内容の詳細については、「 [sharepoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)する」を参照してください。
+  Visual Studio では、SharePoint プロジェクト項目スキーマを使用して、 *sharepointprojectitem.spdata* ファイルの内容を検証します。 *Sharepointprojectitem.spdata* ファイルは、SharePoint プロジェクトアイテムの内容と動作を指定します。 SharePoint プロジェクト項目の内容の詳細については、「 [sharepoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)する」を参照してください。
 
  SharePoint プロジェクト項目スキーマは ProjectItemModelSchema という名前で、既定では% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ xmlschema にインストールされます。
 
@@ -51,5 +53,5 @@ ms.locfileid: "63007720"
 |[SafeControl](../sharepoint/safecontrol-element.md)|SharePoint サイトの任意の ASPX ページで任意のユーザーがアクセスできるようにセキュリティで保護されていると指定された ASPX コントロールまたは Web パーツを表します。|
 |[SafeControls](../sharepoint/safecontrols-element.md)|SharePoint サイトの任意の ASPX ページですべてのユーザーがアクセスできるようにセキュリティで保護されたものとして指定された ASPX コントロールおよび Web パーツのコレクションを表します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
