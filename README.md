@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 67368f8bc8e6762dedf448829aca364e06b83fd3
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115293"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973764"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio ドキュメント
 
 ようこそ このリポジトリには、Visual Studio のテクニカル ドキュメント用のソース ファイルが含まれます。 このトピックは、[docs.microsoft.com](https://docs.microsoft.com/visualstudio) に公開されています。
 
-このリポジトリは、2017 年 6 月 23 日に、 https://github.com/Microsoft/vsdocs から移動されました。 以前の URL 宛てのトラフィックはここにリダイレクトされます。
+このリポジトリは、2017 年 6 月 23 日に、 https://github.com/Microsoft/vsdocs から移動されました。
 
 Visual Basic と Visual C# のドキュメントは [dotnet docs リポジトリ](https://github.com/dotnet/docs/tree/master/docs)にあり、Visual C++ のドキュメントは [C++ docs リポジトリ](https://github.com/MicrosoftDocs/cpp-docs)にあります。
 

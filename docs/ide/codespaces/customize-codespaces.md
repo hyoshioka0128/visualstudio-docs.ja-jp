@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862229"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850508"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>codespace をカスタマイズする方法 (プレビュー)
 
@@ -80,11 +80,11 @@ GitHub Codespaces は、次の *devcontainer.json* プロパティをサポー�
 * `postCreateCommand` - codespace の作成後に実行するコマンド文字列またはコマンド引数の一覧。
 
 > [!NOTE]
-> **devcontainer.json** ファイルは、Visual Studio Code の[リモート開発](https://code.visualstudio.com/docs/remote/remote-overview)をサポートするためにも使用され、このドキュメントでは説明されていない他のプロパティがあります。 このような他のプロパティをファイルに追加しても問題ありませんが、Codespaces では無視されます。 詳細については、code.visualstudio.com の [devcontainer.json リファレンス](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)を参照してください。
+> **devcontainer.json** ファイルは、Visual Studio Code の [リモート開発](https://code.visualstudio.com/docs/remote/remote-overview)をサポートするためにも使用され、このドキュメントでは説明されていない他のプロパティがあります。 このような他のプロパティをファイルに追加しても問題ありませんが、Codespaces では無視されます。 詳細については、code.visualstudio.com の [devcontainer.json リファレンス](https://code.visualstudio.com/docs/remote/devcontainerjson-reference)を参照してください。
 
 ## <a name="customize-with-devinit"></a>devinit を使用してカスタマイズする
 
-[devinit](../../devinit/getting-started-with-devinit.md) は Windows codespace に含まれているコマンドライン ツールであり、フレームワークとツールを環境にインストールすることができます。 コマンド プロンプトから手動で実行できますが (`devinit -t require-dotnetcoresdk`)、その真価は、codespace を作成するたびに同様の codespace を構成できるカスタムの [ *.devinit.json* ](../../devinit/devinit-json.md) ファイルを作成することにあります。
+[devinit](../../devinit/getting-started-with-devinit.md) は Windows codespace に含まれているコマンドライン ツールであり、フレームワークとツールを環境にインストールすることができます。 コマンド プロンプトから手動で実行できますが (`devinit run -t require-dotnetcoresdk`)、その真価は、codespace を作成するたびに同様の codespace を構成できるカスタムの [ *.devinit.json*](../../devinit/devinit-json.md) ファイルを作成することにあります。
 
 `devinit` には、SQL Server や Azure CLI などの特定の項目をインストールし、chocolatey、npm、vcpkg などの一般的なパッケージ マネージャーを実行するための一連のツールが含まれています。 `devinit` ツールの詳細な一覧については、「[利用できるツール](../../devinit/devinit-tool-list.md)」のドキュメントを参照してください。
 
