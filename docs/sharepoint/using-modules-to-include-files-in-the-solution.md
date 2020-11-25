@@ -1,5 +1,7 @@
 ---
 title: モジュールを使用してソリューションにファイルを含める | Microsoft Docs
+description: SharePoint ソリューション内のファイル用にモジュールまたはコンテナーを使用して、ファイルの種類 (マスター ページなど) に関係なく、ファイルを SharePoint サーバーに配置します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015819"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442522"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>モジュールを使用してソリューションにファイルを含める
   ファイルの種類 (新しいマスター ページなど) に関係なく、SharePoint サーバーへのファイルの配置が必要になる場合があります。 その場合は、"*モジュール*" ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] コード モジュールと混同しないでください) を使用できます。 モジュールは、SharePoint ソリューション内のファイルのコンテナーです。 ソリューションが配置されると、モジュール内のファイルが SharePoint サーバー上の指定されたフォルダーにコピーされます。
