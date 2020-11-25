@@ -7,11 +7,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_2
-ms.openlocfilehash: e18550018a593c0a3eae0d521148cd240b40f5df
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: d214130bfdc2832ad540fa6fac274e4f52cced5f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 11/25/2020
 ms.locfileid: "91838219"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>プロダクト キーを使用してダウンロードしたソフトウェアをライセンス認証するには、どうすればよいですか?
@@ -25,5 +25,5 @@ ms.locfileid: "91838219"
 
 プロダクト キーの取得と使用の詳細については、次の記事を参照してください。
 
-- [プロダクト キーの概要](../../../../product-keys.md)
-- [キーの検索と要求](../../../../find-keys.md)
+- [プロダクト キーの概要](https://docs.microsoft.com/visualstudio/subscriptions/product-keys)
+- [キーの検索と要求](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)

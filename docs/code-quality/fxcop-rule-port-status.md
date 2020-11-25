@@ -1,33 +1,33 @@
 ---
 title: FxCop 規則のポートの状態
 ms.date: 05/21/2019
-description: Visual Studio で FxCop アナライザーに移植された静的コード分析規則について説明します。 移植された更新プログラムに関する移植されたルールとリソースを表示します。
+description: Visual Studio で .NET analyzer に移植された静的コード分析規則について説明します。 移植された更新プログラムに関する移植されたルールとリソースを表示します。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules
+- .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348946"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039576"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
-以前に Visual Studio で静的コード分析を使用したことがある場合は、現在の実装で [FxCop アナライザー](install-fxcop-analyzers.md)として使用できる規則を考えているかもしれません。 このページには、移植されたルールの一覧が表示されます。 移植されていないルール、およびそれらに移植する計画があるかどうかについては、「 [unported 規則](fxcop-unported-rules.md) 」を参照してください。
+以前に Visual Studio で静的コード分析を使用していた場合は、現在の実装で [.net アナライザー](install-net-analyzers.md)として使用できる規則を確認できます。 このページには、移植されたルールの一覧が表示されます。 移植されていないルール、およびそれらに移植する計画があるかどうかについては、「 [unported 規則](fxcop-unported-rules.md) 」を参照してください。
 
 ## <a name="ported-rules"></a>移植された規則
 
-Roslyn-アナライザーリポジトリの自動生成された [ドキュメントページ](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) には、FxCop アナライザーに移植されたルールの最新の一覧が含まれています。 このページには、規則が既定で有効になっているかどうかや、関連付けられている *コード修正プログラム* があるかどうかなどの追加情報も含まれています。 ([コード修正](../ide/quick-actions.md) は、Visual Studio の電球アイコンメニューで使用できるワンクリック修正です)。
+Roslyn アナライザーリポジトリの自動生成された [ドキュメントページ](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) には、roslyn アナライザーに移植されたルールの最新の一覧が含まれています。 このページには、規則が既定で有効になっているかどうかや、関連付けられている *コード修正プログラム* があるかどうかなどの追加情報も含まれています。 ([コード修正](../ide/quick-actions.md) は、Visual Studio の電球アイコンメニューで使用できるワンクリック修正です)。
 
-このページの日付のとき、 [fxcop アナライザー](install-fxcop-analyzers.md) に移植された fxcop 規則の一覧には次のものが含まれます。
+このページの日付のとき、 [.net アナライザー](install-net-analyzers.md) に移植された FxCop 規則の一覧には次のものが含まれます。
 
 ルールの ID | タイトル
 --------|---------
@@ -64,7 +64,7 @@ Roslyn-アナライザーリポジトリの自動生成された [ドキュメ�
 [CA1050](/dotnet/fundamentals/code-analysis/quality-rules/ca1050) | 名前空間で型を宣言します
 [CA1051](/dotnet/fundamentals/code-analysis/quality-rules/ca1051) | 参照可能なインスタンス フィールドを宣言しません
 [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) | 静的ホルダー型は static または NotInheritable である必要があります
-[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は FxCop アナライザーの [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) に含まれています)
+[CA1053](/dotnet/fundamentals/code-analysis/quality-rules/ca1053) | 静的ホルダー型にコンストラクターを含めることはできません (CA1053 は .NET アナライザーの [CA1052](/dotnet/fundamentals/code-analysis/quality-rules/ca1052) の一部です)
 [CA1054](/dotnet/fundamentals/code-analysis/quality-rules/ca1054) | Uri パラメーターを文字列にすることはできません
 [CA1055](/dotnet/fundamentals/code-analysis/quality-rules/ca1055) | Uri 戻り値を文字列にすることはできません
 [CA1056](/dotnet/fundamentals/code-analysis/quality-rules/ca1056) | Uri プロパティを文字列にすることはできません
@@ -204,4 +204,4 @@ CA9999 | アナライザーのバージョンが一致しません
 
 ## <a name="see-also"></a>関連項目
 
-- [FxCopAnalyzers の規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [.NET analyzer の規則](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)
