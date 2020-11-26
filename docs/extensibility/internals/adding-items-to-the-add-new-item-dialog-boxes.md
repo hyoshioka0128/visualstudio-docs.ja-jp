@@ -1,5 +1,7 @@
 ---
 title: '[新しい項目の追加] ダイアログボックスへの項目の追加 |Microsoft Docs'
+description: Visual Studio の [新しい項目の追加] ダイアログボックスに項目を追加して、プロジェクトで使用するテンプレートとプロジェクト要素を表示できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710212"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190162"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログボックスへの項目の追加
 [ **新しい項目の追加** ] ダイアログボックスに項目を追加するプロセスは、レジストリキーから開始されます。 次のレジストリエントリに示すように、[ **Additemtemplates** ] セクションには、[ **新しい項目の追加** ] ダイアログボックスで使用できる項目が配置されているディレクトリのパスと名前が含まれています。
@@ -23,7 +25,7 @@ ms.locfileid: "80710212"
 > [!NOTE]
 > コードセグメントのすぐ後のテーブルには、レジストリエントリに関する追加情報が含まれています。
 
- このセクションは **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**の下にあります。
+ このセクションは、[ **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**] の下にあります。
 
  最初の GUID は、この種類のプロジェクトの CLSID です。2番目の GUID は、項目の追加テンプレートに登録されているプロジェクトの種類を示します。
 
@@ -35,10 +37,10 @@ ms.locfileid: "80710212"
 
  **Sortpriority** = dword: 00000064
 
-| 名前 | 種類 | データ ( *.rgs* ファイルから) | 説明 |
+| 名前 | Type | データ ( *.rgs* ファイルから) | 説明 |
 |------------------|-----------| - | - |
 | @ (既定値) | REG_SZ | % IDS_ADDITEM_TEMPLATES_ENTRY% | 項目テンプレートの **追加** 用のリソース ID。 |
-| Val Templates ディレクトリ | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | **新しい項目の追加**ウィザードのダイアログに表示されるプロジェクト項目のパス。 |
+| Val Templates ディレクトリ | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | **新しい項目の追加** ウィザードのダイアログに表示されるプロジェクト項目のパス。 |
 | Val SortPriority | REG_DWORD | 100 ( [!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)] ) | [ **新しい項目の追加** ] ダイアログボックスに表示されるファイルのツリーノード内の並べ替え順序を決定します。 |
 
 > [!NOTE]
@@ -46,7 +48,7 @@ ms.locfileid: "80710212"
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- **Templates dir**( *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; *) に一覧表示されているディレクトリは、[**新しい項目の追加**] ダイアログボックスツリーの左側にあるノードです。 ツリー内のその他の要素は、そのルートディレクトリ内のサブディレクトリに基づいています。 プロジェクトに追加できるファイルは、[ **新しい項目の追加** ] ダイアログボックスの右ペインの項目です。
+ **Templates dir**( *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt;*) に一覧表示されているディレクトリは、[**新しい項目の追加**] ダイアログボックスツリーの左側にあるノードです。 ツリー内のその他の要素は、そのルートディレクトリ内のサブディレクトリに基づいています。 プロジェクトに追加できるファイルは、[ **新しい項目の追加** ] ダイアログボックスの右ペインの項目です。
 
  通常、このフォルダーには、テンプレート HTML や *.cpp* ファイルなどのプロジェクトのテンプレートファイルと、ウィザードを起動するための *.vsz* ファイルが含まれます。 項目の表示方法を制御するには、ディレクトリ名とアイコンをローカライズするための *vsdir* ファイルを含めることもできます。 ローカライズされた文字列は、[ **新しい項目の追加** ] ダイアログボックスツリー内のこのノードを表すダイアログボックスに表示されるキャプションです。
 
@@ -73,7 +75,7 @@ ms.locfileid: "80710212"
 
 - カテゴリ別。によって提供され `IVsFilterAddProjectItemDlg2` ます。
 
-  カテゴリでフィルター処理するには、Visual Basic の*Web フォーム*や*クライアント項目*など、 *.vsdir*ファイル内の項目にカテゴリ文字列を指定します。 次に、ダイアログボックスコードは、 *.vsdir* ファイルからカテゴリ分類を取得し、それを渡します。 その後、その情報をの実装に渡して `IVsFilterAddProjectItemDlg2` 、[ **新しい項目の追加** ] ダイアログボックスをカテゴリ別にフィルター処理できます。 Web ページまたはクライアントの Win32 アプリケーションケースとして、項目をフィルター処理することもできます。 また、 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] タグ付き項目は、Microsoft Foundation Classes (MFC) 項目または active template library (ATL) 項目として識別できます。 これらの項目を識別すると、プロジェクトシステムで独自の分類を定義して、カテゴリと分類に基づいてシステムをフィルター処理できるようにすることができます。
+  カテゴリでフィルター処理するには、Visual Basic の *Web フォーム* や *クライアント項目* など、 *.vsdir* ファイル内の項目にカテゴリ文字列を指定します。 次に、ダイアログボックスコードは、 *.vsdir* ファイルからカテゴリ分類を取得し、それを渡します。 その後、その情報をの実装に渡して `IVsFilterAddProjectItemDlg2` 、[ **新しい項目の追加** ] ダイアログボックスをカテゴリ別にフィルター処理できます。 Web ページまたはクライアントの Win32 アプリケーションケースとして、項目をフィルター処理することもできます。 また、 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] タグ付き項目は、Microsoft Foundation Classes (MFC) 項目または active template library (ATL) 項目として識別できます。 これらの項目を識別すると、プロジェクトシステムで独自の分類を定義して、カテゴリと分類に基づいてシステムをフィルター処理できるようにすることができます。
 
   このフィルター機能を実装する場合は、非表示にする必要があるすべての項目のテーブルをマップする必要はありません。 単純に項目を型に分類し、その分類を *.vsdir* ファイルに含めることができます。 その後、インターフェイスを実装することによって、特定の分類を持つすべての項目を非表示にすることができます。 このようにして、[ **新しい項目の追加** ] ダイアログボックスの項目を、プロジェクト内の状態に基づいて動的に設定できます。
 

@@ -1,5 +1,7 @@
 ---
 title: 文書.Vsct ファイル |Microsoft Docs
+description: メニュー項目、ツールバー、およびその他の UI 要素を Visual Studio 統合開発環境 (IDE) に追加する vsct ファイルを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413912"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190084"
 ---
 # <a name="author-vsct-files"></a>作成した vsct ファイル
 このドキュメントでは、メニュー項目、ツールバー、およびその他のユーザーインターフェイス (UI) 要素を Visual Studio 統合開発環境 (IDE) に追加するために、vsct ファイルを作成する方法について説明 *します* 。 この手順は、まだ *vsct* ファイルがない Visual Studio パッケージ (VSPackage) に UI 要素を追加する場合に使用します。
 
- 新しいプロジェクトでは、Visual Studio パッケージテンプレートを使用することをお勧めし *ます。* これは、選択内容によっては、メニューコマンド、ツールウィンドウ、またはカスタムエディターに必要な要素が既に存在するためです。 この *vsct* ファイルを変更して、VSPackage の要件を満たすことができます。 *Vsct* ファイルを変更する方法の詳細については、「 [メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」の例を参照してください。
+ 新しいプロジェクトでは、Visual Studio パッケージテンプレートを使用することをお勧めし *ます。* これは、選択内容によっては、メニューコマンド、ツールウィンドウ、またはカスタムエディターに必要な要素が既に存在するためです。 この *vsct* ファイルを変更して、VSPackage の要件を満たすことができます。 *Vsct* ファイルを変更する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」の例を参照してください。
 
 ## <a name="author-the-file"></a>ファイルを作成する
  これらのフェーズで *vsct* ファイルを作成します。ファイルとリソースの構造を作成し、ui 要素を宣言し、ui 要素を IDE に配置し、特殊な動作を追加します。
@@ -51,9 +53,9 @@ ms.locfileid: "93413912"
 
 1. 要素の先頭に、 `CommandTable` `Extern` 参照する外部ファイルごとに1つの要素を追加し、属性を `href` ファイルの名前に設定します。 次のヘッダーファイルを参照して、Visual Studio リソースにアクセスできます。
 
-   - *Stdidcmd* : Visual Studio によって公開されるすべてのコマンドの id を定義します。
+   - *Stdidcmd*: Visual Studio によって公開されるすべてのコマンドの id を定義します。
 
-   - *Vsshlids. h* : Visual Studio メニューのコマンド id が含まれています。
+   - *Vsshlids. h*: Visual Studio メニューのコマンド id が含まれています。
 
 2. パッケージが Visual Studio または他のパッケージで定義されているコマンドを呼び出す場合は、要素の後に要素を追加し `UsedCommands` `Commands` ます。 この要素には、パッケージの一部ではない、呼び出すコマンドごとに使用される [command](../../extensibility/usedcommand-element.md) 要素を設定します。 `guid` `id` 要素の属性と属性を、 `UsedCommand` 呼び出すコマンドの GUID と ID の値に設定します。
 
@@ -64,7 +66,7 @@ ms.locfileid: "93413912"
 
 #### <a name="to-declare-ui-elements"></a>UI 要素を宣言するには
 
-1. 要素に `Symbols` 、3つの [guidsymbol](../../extensibility/guidsymbol-element.md) 要素を追加します。 各 `GuidSymbol` 要素には、 `name` 属性と `value` 属性があります。 `name`要素の目的を反映するように属性を設定します。 `value`属性は GUID を受け取ります。 (GUID を生成するには、[ **ツール** ] メニューの [ **guid の作成** ] を選択し、[ **レジストリ形式** ] を選択します)。
+1. 要素に `Symbols` 、3つの [guidsymbol](../../extensibility/guidsymbol-element.md) 要素を追加します。 各 `GuidSymbol` 要素には、 `name` 属性と `value` 属性があります。 `name`要素の目的を反映するように属性を設定します。 `value`属性は GUID を受け取ります。 (GUID を生成するには、[ **ツール** ] メニューの [ **guid の作成**] を選択し、[ **レジストリ形式**] を選択します)。
 
      最初の `GuidSymbol` 要素はパッケージを表し、通常は子を持ちません。 2番目の `GuidSymbol` 要素はコマンドセットを表し、メニュー、グループ、およびコマンドを定義するすべての記号が含まれます。 3番目の `GuidSymbol` 要素はイメージストアを表し、コマンドのすべてのアイコンのシンボルが含まれています。 アイコンを使用するコマンドがない場合は、3番目の要素を省略でき `GuidSymbol` ます。
 

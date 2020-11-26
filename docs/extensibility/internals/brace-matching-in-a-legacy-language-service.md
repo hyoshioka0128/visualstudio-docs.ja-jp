@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでの中かっこの照合 |Microsoft Docs
+description: 従来の言語サービスでの中かっこの照合について説明します。これは、かっこや中かっこなど、一緒に出現する必要がある言語要素を追跡するのに役立ちます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709819"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190006"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスでの中かっこの照合
 かっこの照合により、開発者は、かっこや中かっこなど、一緒に出現する必要がある言語要素を追跡できます。 開発者が右中かっこを入力すると、左中かっこが強調表示されます。

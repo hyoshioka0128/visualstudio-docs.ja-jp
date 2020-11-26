@@ -1,5 +1,7 @@
 ---
 title: 'チェックリスト: 新しいプロジェクトの種類を作成する |Microsoft Docs'
+description: Visual Studio で新しいプロジェクトの種類を作成して表示するために完了する必要があるタスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414192"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189967"
 ---
 # <a name="checklist-create-new-project-types"></a>チェックリスト: 新しいプロジェクトの種類を作成する
 新しいプロジェクトの種類を作成するには、いくつかのタスクを完了する必要があります。 次のチェックリストに、これらのタスクのガイドを示します。
@@ -49,13 +51,13 @@ ms.locfileid: "93414192"
 
     - オートメーションに使用できるオブジェクト、またはから派生したクラス `IDispatch` 。
 
-    - XML コマンドテーブル ( *vsct* ) ファイル。 詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
+    - XML コマンドテーブル (*vsct*) ファイル。 詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
 
 6. プロジェクトの種類をテスト、デバッグ、および開始します。
 
-7. の値としてを設定して、[ **参照の追加** ] ダイアログボックスの [ **プロジェクト** ] タブにプロジェクトを表示し `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` ます。 詳細については、次のトピックを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>
+7. の値としてを設定して、[**参照の追加**] ダイアログボックスの [**プロジェクト**] タブにプロジェクトを表示し `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` ます。 詳細については、次のトピックを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>
 
-8. Vspackage をインストールするための Microsoft インストーラー ( *.msi* ) ファイルを作成します。 詳細については、「 [Install vspackage with Windows インストーラー](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」、「 [Register a project type](../../extensibility/internals/registering-a-project-type.md)」、および「 [vspackage](../../extensibility/internals/vspackages.md)」を参照してください。
+8. Vspackage をインストールするための Microsoft インストーラー (*.msi*) ファイルを作成します。 詳細については、「 [Install vspackage with Windows インストーラー](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」、「 [Register a project type](../../extensibility/internals/registering-a-project-type.md)」、および「 [vspackage](../../extensibility/internals/vspackages.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

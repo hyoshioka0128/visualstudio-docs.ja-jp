@@ -1,5 +1,7 @@
 ---
 title: Windows インストーラーパッケージを作成する |Microsoft Docs
+description: ファイルとレジストリデータを含むデータベーステーブルで構成される Visual Studio の Windows インストーラーパッケージを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710039"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190123"
 ---
 # <a name="author-a-windows-installer-package"></a>Windows インストーラーパッケージを作成する
 データは Windows インストーラーモデルを駆動します。 たとえば、ファイルをコピーしてレジストリエントリを書き込むための手続き型スクリプトを記述するのではなく、ファイルとレジストリデータを格納するデータベーステーブルの行と列を作成します。
@@ -32,7 +34,7 @@ VSPackage をインストールするには、Windows インストーラーパ�
 
 - VSPackage の適切な情報をレジストリに追加します (レジストリテーブルを使用します)。
 
-- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](CustomAction テーブルを使用して) **devenv.exe のセットアップ**を呼び出して、の VSPackage を統合します。
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](CustomAction テーブルを使用して) **devenv.exe のセットアップ** を呼び出して、の VSPackage を統合します。
 
 詳細については、「 [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)」を参照してください。
 
