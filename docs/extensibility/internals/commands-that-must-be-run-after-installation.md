@@ -1,5 +1,7 @@
 ---
 title: インストール後に実行する必要があるコマンド |Microsoft Docs
+description: Visual Studio で .msi ファイルを使用して展開された拡張機能のインストールの一部として実行する必要があるコマンドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709473"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305028"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>インストール後に実行する必要があるコマンド
-*.Msi*ファイルを使用して拡張機能を展開する場合は、Visual Studio で拡張機能を検出するために、インストールの一部として**devenv/setup**を実行する必要があります。
+*.Msi* ファイルを使用して拡張機能を展開する場合は、Visual Studio で拡張機能を検出するために、インストールの一部として **devenv/setup** を実行する必要があります。
 
 > [!NOTE]
 > このトピックの情報は、Visual Studio 2008 以前のバージョンで *devenv.exe* を検索する場合に適用されます。 新しいバージョンの Visual Studio で *devenv.exe* を検出する方法の詳細については、「 [システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)」を参照してください。
@@ -28,7 +30,7 @@ ms.locfileid: "80709473"
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>さまざまなバージョンの Visual Studio から devenv.exe を検索するための RegLocator テーブル行
 
-|署名|Root|キー|名前|種類|
+|署名|Root|キー|名前|Type|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|環境パス|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|環境パス|2|
@@ -44,7 +46,7 @@ ms.locfileid: "80709473"
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- たとえば、Visual Studio インストーラーは **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** のレジストリ値を *C:\VS2008\Common7\IDE\devenv.exe*として書き込みます。これはインストーラーが実行する必要のある実行可能ファイルへの完全なパスです。
+ たとえば、Visual Studio インストーラーは、インストーラーが実行する必要のある実行可能ファイルへの完全なパスである **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** のレジストリ値を *C:\VS2008\Common7\IDE\devenv.exe* として書き込みます。
 
 > [!NOTE]
 > RegLocator テーブルの Type 列は2であるため、署名テーブルで追加のバージョン情報を指定する必要はありません。
@@ -74,7 +76,7 @@ ms.locfileid: "80709473"
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>カスタムアクション devenv.exe をスケジュールするための InstallExecuteSequence テーブル
 
-|アクション|条件|シーケンス|
+|アクション|条件|Sequence|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|

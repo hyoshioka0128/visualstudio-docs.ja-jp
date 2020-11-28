@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでのコードのコメント化 |Microsoft Docs
+description: Visual Studio の従来の言語サービスでのコードコメントのサポートを提供する、managed package framework (MPF) クラスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709436"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305002"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>従来の言語サービスでのコメントコード
 プログラミング言語は、通常、コードに注釈を付けたり、コメントを付けたりするための手段を提供します。 コメントは、コードに関する追加情報を提供するテキストのセクションですが、コンパイル時または解釈時には無視されます。
@@ -32,7 +34,7 @@ ms.locfileid: "80709436"
 
 行のコメントには、通常、開始文字 (または文字) がありますが、ブロックコメントには開始文字と終了文字の両方があります。 たとえば、C# では、行コメントはで始まり、 `//` ブロックコメントはで始まり、で `/*` 終わり `*/` ます。
 
-ユーザーが [詳細の**編集**] メニューからコマンド**コメントを選択**すると、  >  **Advanced**コマンドはクラスのメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> ます。 ユーザーがコマンドを選択して **選択**を解除すると、コマンドはメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> ます。
+ユーザーが [詳細の **編集**] メニューからコマンド **コメントを選択** すると、  >  **Advanced** コマンドはクラスのメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> ます。 ユーザーがコマンドを選択して **選択** を解除すると、コマンドはメソッドにルーティングされ <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> ます。
 
 ## <a name="support-code-comments"></a>サポートコードのコメント
  の名前付きパラメーターを使用して、言語サービスでコードのコメントをサポートすることができ `EnableCommenting` <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> ます。 これにより <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> 、クラスのプロパティが設定され <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ます。 言語サービス機能の設定の詳細については、「 [従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md)」を参照してください。

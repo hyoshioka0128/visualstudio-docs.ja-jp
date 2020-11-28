@@ -1,5 +1,7 @@
 ---
 title: コマンドルーティングアルゴリズム |Microsoft Docs
+description: コマンドがさまざまなコンポーネントによって処理され、最も内側から最も外側のコンテキストにルーティングされるため、Visual Studio でのコマンドの解決順序について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709537"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305238"
 ---
 # <a name="command-routing-algorithm"></a>コマンドルーティングアルゴリズム
 Visual Studio のコマンドは、さまざまなコンポーネントによって処理されます。 コマンドは、現在の選択内容に基づいて最も内側のコンテキストから最も外側のコンテキスト (グローバルとも呼ばれます) にルーティングされます。 詳細については、「 [コマンドの可用性](../../extensibility/internals/command-availability.md)」を参照してください。
@@ -36,7 +38,7 @@ Visual Studio のコマンドは、さまざまなコンポーネントによっ
 
 6. ドキュメントウィンドウ: コマンドの `RouteToDocs` *vsct* ファイルにフラグが設定されている場合、Visual Studio はドキュメントビューオブジェクトでコマンドターゲットを検索します。これは、インターフェイスのインスタンスか、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> ドキュメントオブジェクトのインスタンス (通常は <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> インターフェイスまたは <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> インターフェイス) です。 ドキュメントビューオブジェクトがコマンドをサポートしていない場合、Visual Studio は、返されたインターフェイスにコマンドをルーティングし <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 (これは、ドキュメントデータオブジェクトの省略可能なインターフェイスです)。
 
-7. 現在の階層: 現在の階層は、アクティブなドキュメントウィンドウを所有するプロジェクトまたは **ソリューションエクスプローラー**で選択されている階層にすることができます。 Visual Studio は、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 現在の、またはアクティブな階層に実装されているインターフェイスを検索します。 階層では、プロジェクト項目のドキュメントウィンドウにフォーカスがある場合でも、階層がアクティブなときは常に有効なコマンドをサポートする必要があります。 ただし、 **ソリューションエクスプローラー** にフォーカスがある場合にのみ適用されるコマンドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> インターフェイスとその <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> メソッドとメソッドを使用してサポートする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> ます。
+7. 現在の階層: 現在の階層は、アクティブなドキュメントウィンドウを所有するプロジェクトまたは **ソリューションエクスプローラー** で選択されている階層にすることができます。 Visual Studio は、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 現在の、またはアクティブな階層に実装されているインターフェイスを検索します。 階層では、プロジェクト項目のドキュメントウィンドウにフォーカスがある場合でも、階層がアクティブなときは常に有効なコマンドをサポートする必要があります。 ただし、 **ソリューションエクスプローラー** にフォーカスがある場合にのみ適用されるコマンドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> インターフェイスとその <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> メソッドとメソッドを使用してサポートする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> ます。
 
      **切り取り**、 **コピー**、 **貼り付け**、 **削除**、 **名前の変更**、 **Enter**、 **DoubleClick** の各コマンドでは、特別な処理が必要です。 階層内の **Delete** および **Remove** コマンドを処理する方法の詳細については、インターフェイスを参照してください <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> 。
 

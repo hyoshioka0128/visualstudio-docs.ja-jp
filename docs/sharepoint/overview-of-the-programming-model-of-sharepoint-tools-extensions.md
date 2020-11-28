@@ -1,6 +1,8 @@
 ---
 title: SharePoint ツール拡張機能のプログラミングモデルの概要
 titleSuffix: ''
+description: SharePoint ツール拡張機能のプログラミングモデルの概要について説明します。 機能拡張インターフェイスを実装します。 オブジェクトモデルについて理解する。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585733"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305133"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint ツール拡張機能のプログラミング モデルの概要
   Visual Studio で SharePoint ツールの拡張機能を作成する場合、SharePoint ツールによって公開される 1 つ以上の機能拡張インターフェイスを実装することから始めます。 ほとんどの場合、SharePoint ツールによって提供される他の型も使用して、拡張機能で機能を実装します。 一部のシナリオでは、Visual Studio および SharePoint によって提供される他のオブジェクト モデルに含まれる型も使用します。 これらの各オブジェクト モデルの用途と、これらを組み合わせて使用して SharePoint ツールの拡張機能を作成する方法を理解する必要があります。
@@ -73,7 +75,7 @@ ms.locfileid: "91585733"
 
 |名前空間|説明|
 |-|-|
-|<xref:Microsoft.VisualStudio.SharePoint.Commands>|カスタム *SharePoint コマンド*の作成に使用できる型が含まれています。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルに対する呼び出しを SharePoint ツールの拡張機能から行うメソッドです。 詳細については、「 [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)」を参照してください。|
+|<xref:Microsoft.VisualStudio.SharePoint.Commands>|カスタム *SharePoint コマンド* の作成に使用できる型が含まれています。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルに対する呼び出しを SharePoint ツールの拡張機能から行うメソッドです。 詳細については、「 [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)」を参照してください。|
 
 #### <a name="microsoftvisualstudiosharepointexplorerextensionsdll"></a>Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll
 
@@ -84,16 +86,16 @@ ms.locfileid: "91585733"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio オートメーションオブジェクトモデル
  Visual Studio のオートメーション オブジェクト モデルには、Visual Studio のプロジェクトおよび IDE を自動化するために使用できる API が用意されています。 SharePoint プロジェクトに限定されないプロジェクト関連のタスクや、Visual Studio の全般的なオートメーション タスクを実行するには、Visual Studio のオブジェクト モデルを使用します。 このオブジェクト モデルは、以前から Visual Studio のアドインやマクロで使用されていましたが、SharePoint ツールの拡張機能で使用することもできます。
 
- Visual Studio オートメーションオブジェクトモデルの主要な部分は、 *EnvDTE.dll* アセンブリで定義されています。 *EnvDTE \\ \<version> *アセンブリは、Visual Studio の特定のバージョンで導入された追加機能を提供します。 これらのアセンブリは、Visual Studio に属しています。
+ Visual Studio オートメーションオブジェクトモデルの主要な部分は、 *EnvDTE.dll* アセンブリで定義されています。 *EnvDTE \\ \<version>* アセンブリは、Visual Studio の特定のバージョンで導入された追加機能を提供します。 これらのアセンブリは、Visual Studio に属しています。
 
  オートメーションオブジェクトモデルの詳細については、「 [Visual STUDIO SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)」を参照してください。
 
 ### <a name="visual-studio-integration-object-model"></a>Visual Studio の統合オブジェクトモデル
- 統合オブジェクトモデルには、 *VSPackage*を作成することによって Visual Studio に機能を追加するために使用できる api が用意されています。 VSPackage は、カスタム機能 (ツール ウィンドウ、エディター、デザイナー、サービス、プロジェクトなど) を提供することによって Visual Studio IDE を拡張するモジュールです。
+ 統合オブジェクトモデルには、 *VSPackage* を作成することによって Visual Studio に機能を追加するために使用できる api が用意されています。 VSPackage は、カスタム機能 (ツール ウィンドウ、エディター、デザイナー、サービス、プロジェクトなど) を提供することによって Visual Studio IDE を拡張するモジュールです。
 
- 組み込みの SharePoint ツールと組み合わせて使用する新しい Visual Studio 機能を追加するには、統合オブジェクト モデルを使用します。 たとえば、SharePoint サイトのカスタム動作を表すカスタム SharePoint プロジェクト項目を作成する場合、そのカスタム動作のデザイナーを実装する VSPackage を作成することもできます。 **ソリューションエクスプローラー**のカスタム動作を表すプロジェクト項目にショートカットメニュー項目を追加することにより、デザイナーをカスタム動作に関連付けることができます。 デザイナーを開くには、ショートカットメニューを開きます (カスタム動作プロジェクト項目を右クリックするか、[カスタム動作] プロジェクト項目を選択して選択し、 **Shift** + **F10**キーを押します)。次に、[**開く**] を選択します。
+ 組み込みの SharePoint ツールと組み合わせて使用する新しい Visual Studio 機能を追加するには、統合オブジェクト モデルを使用します。 たとえば、SharePoint サイトのカスタム動作を表すカスタム SharePoint プロジェクト項目を作成する場合、そのカスタム動作のデザイナーを実装する VSPackage を作成することもできます。 **ソリューションエクスプローラー** のカスタム動作を表すプロジェクト項目にショートカットメニュー項目を追加することにより、デザイナーをカスタム動作に関連付けることができます。 デザイナーを開くには、ショートカットメニューを開きます (カスタム動作プロジェクト項目を右クリックするか、[カスタム動作] プロジェクト項目を選択して選択し、 **Shift** + **F10** キーを押します)。次に、[**開く**] を選択します。
 
- このオブジェクト モデルは、Visual Studio SDK に付属の一連のアセンブリで定義されています。 このオブジェクトモデルの主なアセンブリには、 *Microsoft.VisualStudio.Shell.11.0.dll*、 *Microsoft.VisualStudio.Shell.Interop.dll*、 *Microsoft.VisualStudio.OLE.Interop.dll*があります。
+ このオブジェクト モデルは、Visual Studio SDK に付属の一連のアセンブリで定義されています。 このオブジェクトモデルの主なアセンブリには、 *Microsoft.VisualStudio.Shell.11.0.dll*、 *Microsoft.VisualStudio.Shell.Interop.dll*、 *Microsoft.VisualStudio.OLE.Interop.dll* があります。
 
  統合オブジェクトモデルの詳細については、「 [オートメーションモデルの概要](../extensibility/internals/automation-model-overview.md) 」および「 [Visual Studio SDK リファレンス](../extensibility/visual-studio-sdk-reference.md)」を参照してください。
 
@@ -104,7 +106,7 @@ ms.locfileid: "91585733"
 
 |オブジェクト モデル|説明|
 |------------------|-----------------|
-|サーバー オブジェクト モデル|サーバー オブジェクト モデルを使用すると、[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] および [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] が公開しているすべての機能をプログラムから使用することができます。 このオブジェクト モデルは、SharePoint サーバー上で動作する SharePoint ソリューションから使用することを前提に設計されています。 このオブジェクトモデルの大部分は *Microsoft.SharePoint.dll* アセンブリで定義されています。 サーバーオブジェクトモデルの詳細については、「 [SharePoint Foundation Server 側のオブジェクトモデルの使用](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))」を参照してください。|
+|サーバー オブジェクト モデル|サーバー オブジェクト モデルを使用すると、[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] および [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] が公開しているすべての機能をプログラムから使用することができます。 このオブジェクト モデルは、SharePoint サーバー上で動作する SharePoint ソリューションから使用することを前提に設計されています。 このオブジェクトモデルの大部分は *Microsoft.SharePoint.dll* アセンブリで定義されています。 サーバーオブジェクトモデルの詳細については、「 [SharePoint Foundation Server-Side オブジェクトモデルの使用](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))」を参照してください。|
 |クライアント オブジェクト モデル|クライアント オブジェクト モデルは、リモート クライアントまたはリモート サーバーの SharePoint データとの相互運用に使用できるサーバー オブジェクト モデルのサブセットです。 一般的なタスクに必要なラウンド トリップの回数を最小限に抑えるようにデザインされています。 クライアントオブジェクトモデルの大部分は、 *Microsoft.SharePoint.Client.dll* アセンブリおよび *Microsoft.SharePoint.Client.Runtime.dll* アセンブリで定義されています。 クライアントオブジェクトモデルの詳細については、「管理された [クライアントオブジェクトモデル](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))」を参照してください。|
 
 ## <a name="see-also"></a>関連項目

@@ -1,5 +1,7 @@
 ---
 title: オートメーションモデルへの貢献 |Microsoft Docs
+description: VSPackage を設計する際の一連のガイドラインに従って、Visual Studio オートメーションモデルに貢献する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709270"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305598"
 ---
 # <a name="contribute-to-the-automation-model"></a>オートメーションモデルに貢献する
 Visual Studio には、環境をカスタマイズするための一連のオートメーションインターフェイスが用意されています。 オートメーションモデルは、エンドユーザーが Visual Studio のアドインと拡張機能を作成できるようにするオブジェクトモデルです。
@@ -47,7 +49,7 @@ Visual Studio には、環境をカスタマイズするための一連のオー
 
 - [オプションページのオートメーションサポート](../../extensibility/internals/automation-support-for-options-pages.md)
 
- オブジェクトを拡張することによって、**ツール**メニューの VSPackage の [カスタム**オプション**] ダイアログボックスのサポートプロパティのオートメーションオブジェクトを返す方法について説明し `DTE.Properties` ます。
+ オブジェクトを拡張することによって、**ツール** メニューの VSPackage の [カスタム **オプション**] ダイアログボックスのサポートプロパティのオートメーションオブジェクトを返す方法について説明し `DTE.Properties` ます。
 
 - [コードの自動化を提供する](../../extensibility/internals/providing-automation-for-code.md)
 
@@ -65,5 +67,5 @@ Visual Studio には、環境をカスタマイズするための一連のオー
 
  Configuration オブジェクトと SelectedItems オブジェクトのオートメーションに関する情報を提供します。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>リファレンス
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> VSPackage が DTE オートメーションオブジェクトモデルにどのように参加するかを示すコードサンプルを提供します。 パラメーター、戻り値、および選択された解説を一覧表示します。

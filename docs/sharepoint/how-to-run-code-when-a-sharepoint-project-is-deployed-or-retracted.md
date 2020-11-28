@@ -1,6 +1,8 @@
 ---
 title: SharePoint プロジェクトの配置時または取り消し時にコードを実行する
 titleSuffix: ''
+description: SharePoint プロジェクトの配置時または取り消し時にコードを実行して、Visual Studio によって発生するイベントを処理できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb83696febe9eca700ae9651492dbd188e38f856
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24e6536dc5fdc62bb3b1c32bbd7c379fcef1f8cd
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585759"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304480"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>方法: SharePoint プロジェクトの配置時または取り消し時にコードを実行する
   SharePoint プロジェクトの配置時または取り消し時に追加のタスクを実行する場合は、Visual Studio によって発生するイベントを処理できます。 詳細については、「 [SharePoint のパッケージ化と配置の拡張](../sharepoint/extending-sharepoint-packaging-and-deployment.md)」を参照してください。

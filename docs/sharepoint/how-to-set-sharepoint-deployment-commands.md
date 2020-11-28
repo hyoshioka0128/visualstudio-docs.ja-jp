@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint の配置コマンドを設定するMicrosoft Docs'
+description: SharePoint の配置前コマンドと配置後コマンドを設定して、デプロイプロセスをカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015504"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304379"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>方法: SharePoint の配置コマンドを設定する
   配置前コマンドと配置後コマンドを設定することによって、デプロイプロセスをカスタマイズできます。 これらのコマンドは、Visual Studio から SharePoint ソリューションをデバッグするときに、他の配置操作の前後に実行されます。
 
 ### <a name="to-add-a-pre-deployment-command"></a>配置前コマンドを追加するには
 
-1. メニューバーで、[**プロジェクト**の  >  ** \<*ProjectName*> プロパティ**] を選択します。
+1. メニューバーで、[**プロジェクト** の  >  **\<*ProjectName*> プロパティ**] を選択します。
 
 2. [ **SharePoint** ] タブを選択します。
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015504"
 
 ### <a name="to-add-a-post-deployment-command"></a>配置後コマンドを追加するには
 
-1. メニューバーで、[**プロジェクト**の  >  ** \<*ProjectName*> プロパティ**] を選択します。
+1. メニューバーで、[**プロジェクト** の  >  **\<*ProjectName*> プロパティ**] を選択します。
 
 2. [ **SharePoint** ] タブを選択します。
 

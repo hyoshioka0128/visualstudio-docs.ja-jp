@@ -1,5 +1,7 @@
 ---
 title: SharePoint でサポートされている MSBuild のプロパティ |Microsoft Docs
+description: およびでサポートされており、SharePoint に固有の MSBuild プロパティの名前と説明の一覧を読み取ります。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985171"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305149"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint でサポートされている MsBuild プロパティ
   [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]VisualStudio ファイル、プロジェクトファイル、またはプロジェクトユーザーファイルで定義されているすべてのプロパティは、sharepoint プロジェクトで使用でき [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 Sharepoint では、 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] プロジェクトによって提供される共通プロパティに加えて、sharepoint プロジェクトに固有の追加のプロパティが定義されています。
@@ -49,7 +51,7 @@ ms.locfileid: "72985171"
  柔軟性を高めるために、[SharePoint のプロパティ] ページの [ **展開前のコマンドライン** ] ボックスと [ **配置後** のコマンド] ボックスでハードコーディングされた文字列を使用する代わりに、sharepoint プロパティを引数として使用できます。 たとえば、SharePoint サイトに特定の文字列を指定する代わりに、 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 代わりにを使用でき `$(SharePointSiteUrl)` ます。
 
 > [!NOTE]
-> [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]変数構文 `$(` *propertyname* `)` または環境変数構文 `%` *propertyname*を使用して、 `%` プロパティを指定できます。
+> [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]変数構文 `$(` *propertyname* `)` または環境変数構文 `%` *propertyname* を使用して、 `%` プロパティを指定できます。
 
 ## <a name="see-also"></a>関連項目
 

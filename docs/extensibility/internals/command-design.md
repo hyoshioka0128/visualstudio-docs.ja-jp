@@ -1,5 +1,7 @@
 ---
 title: コマンドのデザイン |Microsoft Docs
+description: Visual Studio で VSPackage 用のコマンドをデザインする方法について説明します。 を含む、表示される場所を指定する方法、使用できる場合、および処理する方法。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709654"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304867"
 ---
 # <a name="command-design"></a>コマンドのデザイン
 コマンドを VSPackage に追加するときは、表示される場所、使用可能な場合、およびその処理方法を指定する必要があります。

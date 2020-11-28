@@ -1,5 +1,7 @@
 ---
 title: コマンド配置のガイドライン |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) でコマンドを配置するためのガイドラインとベストプラクティスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709563"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305250"
 ---
 # <a name="command-placement-guidelines"></a>コマンド配置のガイドライン
 Visual Studio 統合開発環境 (IDE) でのコマンドの配置に関するベストプラクティスは、コマンドセットのサイズによって異なります。 コマンドは、 *vsct* ファイル内の情報に従って定義され、配置されます。

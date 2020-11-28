@@ -1,5 +1,7 @@
 ---
 title: コンテキストパラメーター |Microsoft Docs
+description: ウィザードを追加または実装するときに、プロジェクトの状態を定義する Visual Studio 統合開発環境 (IDE) のコンテキストパラメーターについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012452"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304719"
 ---
 # <a name="context-parameters"></a>コンテキスト パラメーター
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、[**新しいプロジェクト**]、[**新しい項目の追加**]、または [**サブプロジェクトの追加**] ダイアログボックスにウィザードを追加できます。 追加したウィザードは、[ **ファイル** ] メニューまたは **ソリューションエクスプローラー**でプロジェクトを右クリックして表示できます。 IDE は、ウィザードの実装にコンテキストパラメーターを渡します。 IDE がウィザードを呼び出すと、コンテキストパラメーターによってプロジェクトの状態が定義されます。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、[**新しいプロジェクト**]、[**新しい項目の追加**]、または [**サブプロジェクトの追加**] ダイアログボックスにウィザードを追加できます。 追加したウィザードは、[ **ファイル** ] メニューまたは **ソリューションエクスプローラー** でプロジェクトを右クリックして表示できます。 IDE は、ウィザードの実装にコンテキストパラメーターを渡します。 IDE がウィザードを呼び出すと、コンテキストパラメーターによってプロジェクトの状態が定義されます。
 
  IDE では、 <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> プロジェクトのメソッドに対する ide の呼び出しのフラグを設定することにより、ウィザードが起動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> ます。 設定した場合、プロジェクトは、 `IVsExtensibility::RunWizardFile` 登録されているウィザードの名前または GUID、および IDE によって渡されるその他のコンテキストパラメーターを使用して、メソッドを実行する必要があります。
 
@@ -32,7 +34,7 @@ ms.locfileid: "90012452"
 | `LocalDirectory` | 作業プロジェクトファイルのローカルの場所。 |
 | `InstallationDirectory` | のディレクトリパス [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] がインストールされています。 |
 | `FExclusive` | プロジェクトが開いているソリューションを閉じる必要があることを示すブール型のフラグ。 |
-| `SolutionName` | ディレクトリ部分または *.sln* 拡張子のないソリューションファイルの名前。 *.Suo*ファイル名は、を使用して作成することもでき `SolutionName` ます。 この引数が空の文字列でない場合、ウィザードは <xref:EnvDTE._Solution.Create%2A> を使用してプロジェクトをに追加 <xref:EnvDTE._Solution.AddFromTemplate%2A> します。 この名前が空の文字列の場合は、を呼び出さずにを使用し <xref:EnvDTE._Solution.AddFromTemplate%2A> <xref:EnvDTE._Solution.Create%2A> ます。 |
+| `SolutionName` | ディレクトリ部分または *.sln* 拡張子のないソリューションファイルの名前。 *.Suo* ファイル名は、を使用して作成することもでき `SolutionName` ます。 この引数が空の文字列でない場合、ウィザードは <xref:EnvDTE._Solution.Create%2A> を使用してプロジェクトをに追加 <xref:EnvDTE._Solution.AddFromTemplate%2A> します。 この名前が空の文字列の場合は、を呼び出さずにを使用し <xref:EnvDTE._Solution.AddFromTemplate%2A> <xref:EnvDTE._Solution.Create%2A> ます。 |
 | `Silent` | ウィザードを **[完了** ] がクリックされたかのようにサイレントモードで実行するかどうかを示すブール値 `TRUE` です ()。 |
 
 ## <a name="context-parameters-for-add-new-item"></a>[新しい項目の追加] のコンテキストパラメーター
