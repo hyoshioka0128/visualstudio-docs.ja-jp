@@ -1,5 +1,7 @@
 ---
 title: 既定のコマンド、グループ、およびツールバーの配置 |Microsoft Docs
+description: 既定で Visual Studio ユーザーインターフェイスに表示される IDE コマンド、製品コマンド、およびエディターコマンドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708885"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329888"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>既定のコマンド、グループ、およびツールバーの配置
 製品の統一性と安定性を確保するために、UI には特定のコマンドグループが既定で表示され、コマンド [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] とコマンドグループの定義が用意されています。 Vspackage では、標準のコマンドとコマンドグループを使用することもできます。

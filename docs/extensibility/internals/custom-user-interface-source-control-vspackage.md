@@ -1,5 +1,7 @@
 ---
 title: カスタムユーザーインターフェイス (ソース管理 VSPackage) |Microsoft Docs
+description: Visual Studio でカスタムユーザーインターフェイス (UI) を作成する方法については、「ソース管理 VSPackage を使用して UI 要素を指定する」を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708930"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328523"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>カスタムユーザーインターフェイス (ソース管理 VSPackage)
 VSPackage は、Visual Studio のコマンドテーブル (*vsct*) ファイルを使用して、そのメニュー項目とその既定の状態を宣言します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE: integrated development environment) では、VSPackage が読み込まれるまで、既定の状態でメニュー項目が表示されます。 その後、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドを呼び出して、メニュー項目を有効または無効にします。
 
- VSPackage は、コマンドのユーザーインターフェイス (UI) コンテキストに応じて VSPackage を自動的に読み込むようにレジストリキーを設定できます。ただし、通常は、ソース管理 VSPackage は特定の UI コンテキストに切り替えるだけではなく、必要に応じて読み込む必要があります。 **Autoloadpackages**レジストリキーの詳細については、「 [Manage vspackage](../../extensibility/managing-vspackages.md)」を参照してください。
+ VSPackage は、コマンドのユーザーインターフェイス (UI) コンテキストに応じて VSPackage を自動的に読み込むようにレジストリキーを設定できます。ただし、通常は、ソース管理 VSPackage は特定の UI コンテキストに切り替えるだけではなく、必要に応じて読み込む必要があります。 **Autoloadpackages** レジストリキーの詳細については、「 [Manage vspackage](../../extensibility/managing-vspackages.md)」を参照してください。
 
 ## <a name="vspackage-ui"></a>VSPackage UI
  ソース管理パッケージは VSPackage として実装され、の UI は使用しません [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 各ソース管理 VSPackage は、メニュー項目、メニューグループ、ツールウィンドウ、ツールバー、ソース管理 VSPackage に固有のオプションを設定するために必要な UI など、独自の UI 要素を指定する必要があります。 これらの UI 要素は、静的または動的に有効にすることができます。 静的 UI 要素は、 *vsct* ファイルで定義され、VSPackage が読み込まれているかどうかにかかわらず表示されます。 動的 UI 要素は、などの特定のコマンド UI コンテキストによって <xref:EnvDTE.Constants.vsContextNoSolution> 、またはメソッドの呼び出しの結果として表示される場合があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ます。 動的 UI 要素の可視性は、Vspackage の遅延読み込みの方法に準拠しています。
@@ -51,7 +53,7 @@ VSPackage は、Visual Studio のコマンドテーブル (*vsct*) ファイル�
 
 | UI 項目 | 説明 |
 | - | - |
-| メニューとツールバー | ソース管理パッケージでは、最初のメニューとツールバーの表示状態を、 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)ファイルの [ソース管理パッケージ ID] に設定する必要があり*ます。* これにより、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage を読み込まずに、メソッドの実装を呼び出さなくても、IDE でメニュー項目の状態を適切に設定でき <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ます。 |
+| メニューとツールバー | ソース管理パッケージでは、最初のメニューとツールバーの表示状態を、 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)ファイルの [ソース管理パッケージ ID] に設定する必要があり *ます。* これにより、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage を読み込まずに、メソッドの実装を呼び出さなくても、IDE でメニュー項目の状態を適切に設定でき <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ます。 |
 | ツール ウィンドウ | ソース管理 VSPackage は、非アクティブになったときに所有しているすべてのツールウィンドウを非表示にします。 |
 | ソース管理の VSPackage 固有のオプションページ | レジストリキー **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** を使用すると、オプションページを表示する必要があるコンテキストを VSPackage に設定できます。 このキーの下にあるレジストリエントリを作成するには、ソース管理サービスのサービス ID (SID) を使用して、それに DWORD 値1を割り当てる必要があります。 コンテキストで、ソース管理 VSPackage が登録されているコンテキストで UI イベントが発生すると、アクティブな場合は VSPackage が呼び出されます。 |
 

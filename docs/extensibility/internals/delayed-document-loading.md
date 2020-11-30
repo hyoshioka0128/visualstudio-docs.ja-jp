@@ -1,5 +1,7 @@
 ---
 title: ドキュメントの読み込みの遅延 |Microsoft Docs
+description: Visual Studio でのドキュメントの遅延読み込みと、読み込まれる前にドキュメント内の要素に対してクエリを実行しないように拡張機能をコーディングする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708814"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328393"
 ---
 # <a name="delayed-document-loading"></a>ドキュメントの読み込みの遅延
 
@@ -65,4 +67,4 @@ ms.locfileid: "80708814"
 
 ドキュメントが初期化されているかどうかを示す手掛かりはありません。そのため、拡張機能が強制的に初期化されているかどうかを確認するのが困難な場合があります。 完全に初期化されていないすべてのドキュメントのタイトルがタイトルに *[スタブ]* として表示されるようにするため、検証を簡単にするレジストリキーを設定できます。
 
-**HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**で、 **StubTabTitleFormatString**を* {0} [スタブ]* に設定します。
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad** で、 **StubTabTitleFormatString** を *{0} [スタブ]* に設定します。

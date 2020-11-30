@@ -1,5 +1,7 @@
 ---
 title: オプションページを作成する |Microsoft Docs
+description: Visual Studio の [ツール] メニューの [オプション] ページを作成する方法については、「マネージパッケージフレームワークからの表示ページクラスの実装」を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +13,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709147"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328640"
 ---
 # <a name="create-options-pages"></a>オプションページの作成
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージパッケージフレームワークでは、から派生したクラスは <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、[**ツール**] メニューの下に**オプション**ページを追加して IDE を拡張します。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージパッケージフレームワークでは、から派生したクラスは <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、[**ツール**] メニューの下に **オプション** ページを追加して IDE を拡張します。
 
  特定の **ツールオプション** ページを実装するオブジェクトは、オブジェクトによって特定の vspackage に関連付けられ <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> ます。
 
  環境では、特定の **ツールオプション** ページを実装するオブジェクトをインスタンス化するため、IDE によって特定のページが表示されます。
 
-- **ツールオプション**ページは、VSPackage を実装するオブジェクトではなく、独自のオブジェクトに実装する必要があります。
+- **ツールオプション** ページは、VSPackage を実装するオブジェクトではなく、独自のオブジェクトに実装する必要があります。
 
 - オブジェクトは、複数の **ツールオプション** ページを実装することはできません。
 
@@ -52,7 +54,7 @@ ms.locfileid: "80709147"
 
   を使用して **ツールオプション** ページを実装するオブジェクトの最小要件 <xref:Microsoft.VisualStudio.Shell.DialogPage> は、パブリックプロパティの追加です。
 
-  クラスが**ツールオプション**ページプロバイダーとして適切に登録されている場合は、プロパティグリッドの形式で [**ツール**] メニューの [**オプション**] セクションでそのパブリックプロパティを使用できます。
+  クラスが **ツールオプション** ページプロバイダーとして適切に登録されている場合は、プロパティグリッドの形式で [**ツール**] メニューの [**オプション**] セクションでそのパブリックプロパティを使用できます。
 
   これらの既定の機能はすべてオーバーライドできます。 たとえば、より高度なユーザーインターフェイスを作成するには、の既定の実装をオーバーライドするだけで済み <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A> ます。
 

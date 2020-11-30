@@ -1,5 +1,7 @@
 ---
 title: ソリューションの親コンテナーフォルダーを作成する |Microsoft Docs
+description: ソース管理プラグイン API バージョン1.2 を使用して、ソリューション内のすべての web プロジェクトに対して単一のルートソース管理ターゲットを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709097"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329940"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>ソリューションの親コンテナーフォルダーを作成する
 ソース管理プラグイン API バージョン1.2 では、ユーザーは、ソリューション内のすべての web プロジェクトに対して単一のルートソース管理のターゲットを指定できます。 この1つのルートは、スーパー統合ルート (.SUR) と呼ばれます。
@@ -45,7 +47,7 @@ ms.locfileid: "80709097"
 
 で [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、.sur フォルダーの名前は、拡張子のないソリューション名と同じにすることをお勧めします。 次の表は、2つのバージョンの動作をまとめたものです。
 
-|特徴量|ソース管理プラグイン API バージョン1.1|ソース管理プラグイン API バージョン1.2|
+|機能|ソース管理プラグイン API バージョン1.1|ソース管理プラグイン API バージョン1.2|
 |-------------| - | - |
 |SCC へのソリューションの追加|SccInitialize ()<br /><br /> SccGetProjPath ()<br /><br /> SccGetProjPath ()<br /><br /> SccOpenProject ()|SccInitialize ()<br /><br /> SccGetProjPath ()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject ()|
 |ソース管理ソリューションへのプロジェクトの追加|SccGetProjPath ()<br /><br /> OpenProject ()|SccGetParentProjectPath()<br /><br /> SccOpenProject ()<br /><br />  **注:**  Visual Studio では、ソリューションが .SUR の直接の子であることを前提としています。|
@@ -60,9 +62,9 @@ ms.locfileid: "80709097"
 
  .SUR フォルダーとサブフォルダーは、操作が取り消されたか、エラーが原因で失敗したかに関係なく作成されます。 これらは、キャンセルまたはエラー条件で自動的に削除されることはありません。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ソース管理プラグインによってとの機能フラグが返されない場合、バージョン1.1 の動作が既定値に `SCC_CAP_CREATESUBPROJECT` `SCC_CAP_GETPARENTPROJECT` なります。 さらに、のユーザー [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、次のキーの値を *dword: 00000001*に設定することにより、バージョン1.1 の動作に戻すことができます。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ソース管理プラグインによってとの機能フラグが返されない場合、バージョン1.1 の動作が既定値に `SCC_CAP_CREATESUBPROJECT` `SCC_CAP_GETPARENTPROJECT` なります。 さらに、のユーザー [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、次のキーの値を *dword: 00000001* に設定することにより、バージョン1.1 の動作に戻すことができます。
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  = *dword: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  = *dword: 00000001*
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API バージョン1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

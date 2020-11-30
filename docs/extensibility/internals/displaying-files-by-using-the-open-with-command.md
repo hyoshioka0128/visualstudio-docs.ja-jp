@@ -1,5 +1,7 @@
 ---
 title: Open With Command | を使用したファイルの表示Microsoft Docs
+description: プロジェクトが Visual Studio 統合開発環境 (IDE) で Open With コマンドを呼び出してファイルを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708579"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329693"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>[ファイルを開くアプリケーションの表示] コマンドを使用してファイルを表示する
 プロジェクトでは、[ **ファイルを開くアプリケーション** の選択] ダイアログボックスを表示するよう IDE に要求できます。 この要求は、標準エディターを選択したファイルを開くようにユーザーに求めます。 次の手順では、このプロセスについて説明します。

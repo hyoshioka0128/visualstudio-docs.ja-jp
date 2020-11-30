@@ -1,5 +1,7 @@
 ---
 title: カスタム装飾 Items |Microsoft Docs
+description: キーワードやコメントなどの [フォントおよび色] ダイアログボックスで項目をオーバーライドして、言語サービスの一部としてカスタム装飾項目を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +13,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708995"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328536"
 ---
 # <a name="custom-colorable-items"></a>カスタム装飾項目
 言語サービスの一部としてカスタム装飾項目を実装することで、キーワードやコメントなど、色分けの型の一覧をオーバーライドできます。
 
 ## <a name="user-settings-of-colorable-items"></a>装飾 items のユーザー設定
- [**フォントおよび色**] ダイアログボックスを表示するには、[**ツール**] メニューの [**オプション**] を選択し、[**環境**] の [**フォントおよび色**] を選択します。 **テキストエディター**や**コマンドウィンドウ**などの表示を選択すると、[**表示項目**] ボックスに、その表示のすべての装飾項目が表示されます。 各装飾項目のフォント、サイズ、前景色、および背景色を表示および変更できます。 選択内容は、レジストリのキャッシュに格納され、装飾項目名によってアクセスされます。
+ [**フォントおよび色**] ダイアログボックスを表示するには、[**ツール**] メニューの [**オプション**] を選択し、[**環境**] の [**フォントおよび色**] を選択します。 **テキストエディター** や **コマンドウィンドウ** などの表示を選択すると、[**表示項目**] ボックスに、その表示のすべての装飾項目が表示されます。 各装飾項目のフォント、サイズ、前景色、および背景色を表示および変更できます。 選択内容は、レジストリのキャッシュに格納され、装飾項目名によってアクセスされます。
 
 ## <a name="presentation-of-colorable-items"></a>装飾項目のプレゼンテーション
- IDE では、[ **フォントおよび色** ] ダイアログボックスの装飾項目のユーザーオーバーライドが処理されるため、各カスタム装飾項目には名前を指定するだけで済みます。 この名前は、[ **表示項目** ] の一覧に表示されます。 装飾項目はアルファベット順に表示されます。 言語サービスのカスタム装飾アイテムをグループ化するには、それぞれの言語名で各名前を開始します ( **Newlanguage-Comment** や **Newlanguage-Keyword**など)。
+ IDE では、[ **フォントおよび色** ] ダイアログボックスの装飾項目のユーザーオーバーライドが処理されるため、各カスタム装飾項目には名前を指定するだけで済みます。 この名前は、[ **表示項目** ] の一覧に表示されます。 装飾項目はアルファベット順に表示されます。 言語サービスのカスタム装飾アイテムをグループ化するには、それぞれの言語名で各名前を開始します ( **Newlanguage-Comment** や **Newlanguage-Keyword** など)。
 
 > [!CAUTION]
 > 既存の装飾項目名との競合を避けるために、装飾項目名に言語名を含める必要があります。 開発中にいずれかの装飾項目の名前を変更した場合は、装飾項目に初めてアクセスしたときに作成されたキャッシュをリセットする必要があります。 次に示すように、Visual Studio SDK と共にインストールされる **Createのインスタンス** ツールを使用して試験的なキャッシュをリセットできます。通常はディレクトリにあります。
 >
 > *C:\Program Files (x86) \Microsoft Visual Studio 14.0 \ VSSDK\VisualStudioIntegration\Tools\Bin*
 >
-> キャッシュをリセットするには、「 **Createexpinstance/reset**」と入力します。 **Createのインスタンス**の詳細については、「 [createのインスタンスユーティリティ](../../extensibility/internals/createexpinstance-utility.md)」を参照してください。
+> キャッシュをリセットするには、「 **Createexpinstance/reset**」と入力します。 **Createのインスタンス** の詳細については、「 [createのインスタンスユーティリティ](../../extensibility/internals/createexpinstance-utility.md)」を参照してください。
 
  装飾項目の一覧の最初の項目は参照されません。 最初の項目は、0の装飾 item インデックスに対応し、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] その項目の既定のテキストの色と属性を常に提供します。 この未参照の項目を処理する最も簡単な方法は、リスト内のプレースホルダー装飾項目を最初の項目として指定することです。
 

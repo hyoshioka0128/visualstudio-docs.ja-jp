@@ -1,5 +1,7 @@
 ---
 title: カスタムツール |Microsoft Docs
+description: Visual Studio でカスタムツールを作成する方法について説明します。このツールは、プロジェクト内の項目にツールを関連付け、ファイルが保存されるたびにそのツールを実行します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708960"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329966"
 ---
 # <a name="custom-tools"></a>カスタム ツール
-*カスタムツール* を使用すると、プロジェクト内の項目にツールを関連付け、ファイルが保存されるたびにそのツールを実行できます。 特定のカスタムツール ( *単一ファイルジェネレーター*と呼ばれることもあります) は、データからコードを生成したり、その逆の変換を行ったりするために頻繁に使用されます。 たとえば、単一ファイルジェネレーターは、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *設定* ファイルと *.resx* ファイルからソースコードを作成します。 生成されたソースコードは、 *設定* ファイルおよび *.resx* ファイル内のデータへの厳密に型指定されたアクセスを提供します。 およびプロジェクトの種類では、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] カスタムツールがサポート [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] されます。プロジェクトの種類には対応していません。 独自のプロジェクトの種類で、カスタムツールをサポートすることもできます。
+*カスタムツール* を使用すると、プロジェクト内の項目にツールを関連付け、ファイルが保存されるたびにそのツールを実行できます。 特定のカスタムツール ( *単一ファイルジェネレーター* と呼ばれることもあります) は、データからコードを生成したり、その逆の変換を行ったりするために頻繁に使用されます。 たとえば、単一ファイルジェネレーターは、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] *設定* ファイルと *.resx* ファイルからソースコードを作成します。 生成されたソースコードは、 *設定* ファイルおよび *.resx* ファイル内のデータへの厳密に型指定されたアクセスを提供します。 およびプロジェクトの種類では、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] カスタムツールがサポート [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] されます。プロジェクトの種類には対応していません。 独自のプロジェクトの種類で、カスタムツールをサポートすることもできます。
 
  カスタムツールは、インターフェイスを実装する登録済みのコンポーネントです `IVsSingleFileGenerator` 。
 
@@ -43,7 +45,7 @@ ms.locfileid: "80708960"
 
  ソースファイルの作成者などのプロジェクト項目のプロパティをプロジェクトファイルに保存する方法について説明します。
 
-## <a name="reference"></a>リファレンス
+## <a name="reference"></a>参照先
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator><xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>1 つの入力ファイルをコンパイルしたりプロジェクトに追加したりできる1つの出力ファイルに変換する、の詳細について説明します。
 
  <xref:EnvDTE.ProjectItem>`ProjectItem`プロジェクト内の項目を表すインターフェイスについて説明します。

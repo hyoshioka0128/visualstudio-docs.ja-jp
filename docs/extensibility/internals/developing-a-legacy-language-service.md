@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスの開発 |Microsoft Docs
+description: VSPackage の一部として、または Managed Extensibility Framework (MEF) 拡張機能を使用して、従来の言語サービスを実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7f930d5087b6a822156fd44024def0d5b42b49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7876b590cb5b09cf5db571ba1145f6bf747e5e5
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708668"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329745"
 ---
 # <a name="develop-a-legacy-language-service"></a>従来の言語サービスを開発する
 このセクションでは、従来の言語サービスの作成に役立つトピックにリンクします。

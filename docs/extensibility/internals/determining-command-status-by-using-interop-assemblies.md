@@ -1,5 +1,7 @@
 ---
 title: 相互運用機能アセンブリを使用してコマンドの状態を確認する |Microsoft Docs
+description: IOleCommandTarget インターフェイスを使用して、VSPackage で処理されるコマンドの状態を確認する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bea32997b083cd13349a37201411e357f94a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e46252cea550a2caaa81c92853220db4fa2b5b1a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708710"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328380"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>相互運用機能アセンブリを使用してコマンドの状態を確認する
-VSPackage は、処理可能なコマンドの状態を追跡する必要があります。 環境では、VSPackage 内で処理されたコマンドが有効または無効になるタイミングを判断できません。 **切り取り**、**コピー**、**貼り付け**などの一般的なコマンドの状態など、コマンドの状態について環境に通知するのは、VSPackage の役割です。
+VSPackage は、処理可能なコマンドの状態を追跡する必要があります。 環境では、VSPackage 内で処理されたコマンドが有効または無効になるタイミングを判断できません。 **切り取り**、**コピー**、**貼り付け** などの一般的なコマンドの状態など、コマンドの状態について環境に通知するのは、VSPackage の役割です。
 
 ## <a name="status-notification-sources"></a>状態通知のソース
  環境は、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> インターフェイスの VSPackage の実装の一部である vspackage ' メソッドを使用して、コマンドに関する情報を受け取り <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 環境は、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 次の2つの条件下で VSPackage のメソッドを呼び出します。
