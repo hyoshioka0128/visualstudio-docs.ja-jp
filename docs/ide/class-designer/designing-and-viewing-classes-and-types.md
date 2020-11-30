@@ -1,5 +1,7 @@
 ---
 title: クラス デザイナーの使用
+description: Visual Studio のクラス デザイナーを使用して、コード内のクラスとその他の型をデザイン、視覚化、およびリファクターする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,16 +19,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72d646150baafb7e7169a3c0a2452da6aec5df9b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507912"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902988"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>クラス デザイナーを使用したクラスと型の設計と表示
 
-Visual Studio の**クラス デザイナー**では、コード内のクラスとその他の型をデザイン、視覚化、およびリファクターできます。 C#、Visual Basic、または C++ プロジェクト内にあるクラスを作成および編集するには、クラス ダイアグラムを使用します。 クラス ダイアグラムを使用すると、プロジェクト構造をより深く理解したり、コードを再編成したりすることもできます。
+Visual Studio の **クラス デザイナー** では、コード内のクラスとその他の型をデザイン、視覚化、およびリファクターできます。 C#、Visual Basic、または C++ プロジェクト内にあるクラスを作成および編集するには、クラス ダイアグラムを使用します。 クラス ダイアグラムを使用すると、プロジェクト構造をより深く理解したり、コードを再編成したりすることもできます。
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>クラス ダイアグラムでできること
 
@@ -54,9 +56,9 @@ Visual Studio の**クラス デザイナー**では、コード内のクラス�
 1 つまたは複数のクラス ダイアグラムを微調整した後、それらを Microsoft Office ドキュメント内にコピーして印刷したり、画像ファイルとしてエクスポートしたりできます。 詳細については、「[方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)」、「[方法: クラス ダイアグラムを印刷する](how-to-print-class-diagrams.md)」、「[方法: クラス ダイアグラムをイメージとしてエクスポートする](how-to-export-class-diagrams-as-images.md)」を参照してください。
 
 > [!NOTE]
-> クラス デザイナーはソース ファイルの場所を追跡しないので、プロジェクト構造を変更したり、プロジェクト内のソース ファイルを移動したりすると、クラス デザイナーが、特に typedef のソース型、基本クラス、またはアソシエーション型を追跡できなくなる場合があります。 **クラス デザイナーはこの型を表示できません**などのエラーが表示されることがあります。 エラーが発生した場合は、変更または再配置したソース コードをもう一度クラス ダイアグラムにドラッグして再表示します。
+> クラス デザイナーはソース ファイルの場所を追跡しないので、プロジェクト構造を変更したり、プロジェクト内のソース ファイルを移動したりすると、クラス デザイナーが、特に typedef のソース型、基本クラス、またはアソシエーション型を追跡できなくなる場合があります。 **クラス デザイナーはこの型を表示できません** などのエラーが表示されることがあります。 エラーが発生した場合は、変更または再配置したソース コードをもう一度クラス ダイアグラムにドラッグして再表示します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード エディターの機能](../writing-code-in-the-code-and-text-editor.md)
 - [ソリューション間の依存関係をマップする](../../modeling/map-dependencies-across-your-solutions.md)

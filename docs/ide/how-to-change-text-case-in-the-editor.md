@@ -1,5 +1,7 @@
 ---
 title: テキストを大文字または小文字に変換する
+description: メニュー コマンドやキーボード ショートカットを使って、選択したテキストを、すべて大文字またはすべて小文字に変換する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284634"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597289"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>方法 : エディター内のテキストの大文字と小文字を変更する
 
 メニュー コマンドやキーボード ショートカットを使って、選択したテキストを、すべて大文字またはすべて小文字に変換できます。
 
 > [!NOTE]
-> 実際に表示されるダイアログ ボックスとメニュー コマンドは、この記事の説明と異なる場合があります。それらは、 **[全般]** の環境設定に基づきます。 環境の設定を変更するには、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、 **[すべての設定をリセット]** を選択します。
+> 実際に表示されるダイアログ ボックスとメニュー コマンドは、この記事の説明と異なる場合があります。それらは、**[全般]** の環境設定に基づきます。 環境の設定を変更するには、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、 **[すべての設定をリセット]** を選択します。
 
 ## <a name="to-change-text-case"></a>テキストの大文字と小文字を変更するには
 
@@ -34,8 +36,8 @@ ms.locfileid: "85284634"
    テキストをすべて小文字変換するには、 **[編集]**  >  **[詳細設定]**  >  **[小文字に変換]** を選択するか、**Ctrl**+**U** キーを押します。 (C++ 開発ワークロードがインストールされている場合、このキー バインドは別のコマンドによって使用されていることがあります。)
 
 > [!TIP]
-> 大文字/小文字の書式設定を元に戻すには、 **[編集]** メニューの **[元に戻す]** を選択します。
+> 大文字/小文字の書式設定を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)

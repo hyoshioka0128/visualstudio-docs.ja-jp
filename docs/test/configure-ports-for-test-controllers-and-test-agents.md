@@ -1,5 +1,7 @@
 ---
 title: テスト コントローラーおよびテスト エージェント用のポートの構成
+description: 他のソフトウェアとの競合を防ぐために、テスト コントローラー、テスト エージェント、およびクライアントが使用する既定の着信ポートを変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7889feffc41d6bb64b85b4ea95a17a4a986d22df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2726d489c0c67bffb11bc59357f6ad107a6c94ba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288820"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441569"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>テスト コントローラーおよびテスト エージェント用のポートの構成
 
@@ -65,7 +67,7 @@ ms.locfileid: "85288820"
 
 テスト コントローラーおよびテスト エージェントのポートを設定するには、次の手順に従います。
 
-- **コントローラー サービス** *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* ファイルを編集してポートの値を変更します。
+- **コントローラー サービス***%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* ファイルを編集してポートの値を変更します。
 
     ```xml
     <appSettings>
@@ -73,7 +75,7 @@ ms.locfileid: "85288820"
     </appSettings>
     ```
 
-- **エージェント サービス** *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* ファイルを編集してポートを変更します。
+- **エージェント サービス***%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* ファイルを編集してポートを変更します。
 
     ```xml
     <appSettings>
@@ -87,6 +89,6 @@ ms.locfileid: "85288820"
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)

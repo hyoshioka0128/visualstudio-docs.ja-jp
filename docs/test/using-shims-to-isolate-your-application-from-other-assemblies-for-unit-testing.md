@@ -1,5 +1,6 @@
 ---
 title: shim を使用してアプリを分離する (単体テスト)
+description: shim 型を使用して、特定のメソッドの呼び出しを、テストの一部として作成したコードに迂回させる方法について説明します。 shim を使用すると、すべての呼び出しで一定の結果を返すことができます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,18 +10,18 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325923"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598212"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim を使用して単体テストのためにアプリを分離する
 
 **Shim 型** は、テスト中のコンポーネントを環境から分離するために Microsoft Fakes Framework が使用する 2 つのテクノロジのうちの 1 つです。 Shim は、特定のメソッドの呼び出しを、テストの一部として作成したコードに迂回させます。 多くのメソッドは、外部の状況に応じて異なる結果を返しますが、shim はテストの制御下にあり、すべての呼び出しで一定の結果を返すことができます。 これにより、テストを簡単に記述できるようになります。
 
-*shim* を使用して、ソリューションの一部ではないアセンブリからコードを分離します。 ソリューションの各コンポーネントを分離するには、 *スタブ* を使用します。
+*shim* を使用して、ソリューションの一部ではないアセンブリからコードを分離します。 ソリューションの各コンポーネントを分離するには、*スタブ* を使用します。
 
 概要と "クイック スタート" ガイドについては、「[Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)」を参照してください。
 
@@ -70,11 +71,11 @@ using (ShimsContext.Create()) {
 1. **ソリューション エクスプローラー** で。 
     - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
     ::: moniker range=">=vs-2019"
-    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** の下にフェイク化するアセンブリを見つけます。
+    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
     ::: moniker-end
-    - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、 **ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
+    - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
 
-2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、 **System.dll** を選択します。
+2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、**System.dll** を選択します。
 
 3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。
 
@@ -523,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>制限事項
 
-.NET 基底クラス ライブラリ **mscorlib** 、.NET Framework の **System** 、および .NET Core の **System.Runtime** のすべての型で shim を使用できるわけではありません。
+.NET 基底クラス ライブラリ **mscorlib**、.NET Framework の **System**、および .NET Core の **System.Runtime** のすべての型で shim を使用できるわけではありません。
 
 ## <a name="see-also"></a>参照
 

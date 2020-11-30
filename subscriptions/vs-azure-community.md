@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの Azure コミュニティ サポート特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 07/29/2019
+ms.date: 11/17/2020
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Azure コミュニティ サポート特典について学習します。
-ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 21f984d3c41ae4f654fea638792b5db4f3c8acb2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353214"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903924"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Azure コミュニティ サポート特典
 Azure コミュニティを通じて、選ばれたサポート フォーラム内で Azure チームから直接ヘルプを受けます。  Azure コミュニティ特典は、Azure 関連のトピックに重点を置いたフォーラムのコレクションへのアクセスを提供します。
@@ -70,13 +70,13 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 
 |                                          サブスクリプション レベル                                           |     チャネル      |    特長    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard)                           | VL、Azure、リテール |   1 年    |    はい     |
-|                           Visual Studio Enterprise with GitHub Enterprise                           | VL、Azure、リテール |   1 年    |    はい     |
-|                          Visual Studio Professional (Standard)                          | VL、Azure、リテール |   1 年    |    はい     |
-|                          Visual Studio Professional with GitHub Enterprise                          | VL、Azure、リテール |   1 年    |    はい     |
-|                              Visual Studio Test Professional (標準)                               |    VL、リテール     |   1 年    |    はい     |
-|                                       MSDN Platforms (標準)                                       |    VL、リテール     |   1 年    |    はい     |
-| Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)、NFR<sup>1</sup> |        すべて        | 使用できません |     いいえ     |
+|                           Visual Studio Enterprise (Standard)、NFR<sup>1</sup>                            | VL、Azure、リテール |   使用可能    |    はい     |
+|                           Visual Studio Enterprise with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
+|                          Visual Studio Professional (Standard)                          | VL、Azure、リテール |   使用可能    |    はい     |
+|                          Visual Studio Professional with GitHub Enterprise                          | VL、Azure、リテール |   使用可能    |    はい     |
+|                              Visual Studio Test Professional (標準)                               |    VL、リテール     |   使用可能    |    はい     |
+|                                       MSDN Platforms (標準)                                       |    VL、リテール     |   使用可能    |    はい     |
+| Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)|        すべて        | 使用できません |     いいえ     |
 
 <sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
 

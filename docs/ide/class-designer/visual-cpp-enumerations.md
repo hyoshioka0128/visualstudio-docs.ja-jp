@@ -1,5 +1,7 @@
 ---
 title: クラス デザイナーの C++ 列挙体
+description: クラス デザイナーで C++ 列挙型およびスコープを持つ enum クラス型がサポートされるしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b12d270884ca9877d6c1c80780a9ae96324f3af4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114192"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903456"
 ---
 # <a name="c-enumerations-in-class-designer"></a>クラス デザイナーの C++ 列挙体
 
-**クラス デザイナー**では、C++ の `enum`、およびスコープを持つ `enum class` 型はサポートされていません。 たとえば次のようになります。
+**クラス デザイナー** では、C++ の `enum`、およびスコープを持つ `enum class` 型はサポートされていません。 たとえば次のようになります。
 
 ```cpp
 enum CardSuit {
@@ -45,4 +47,4 @@ enum class CardSuit {
 ## <a name="see-also"></a>参照
 
 - [C++ のコードを操作する](working-with-visual-cpp-code.md)
-- [列挙体](/cpp/cpp/enumerations-cpp)
+- [列挙型](/cpp/cpp/enumerations-cpp)

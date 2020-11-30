@@ -1,5 +1,7 @@
 ---
 title: 拡張機能を見つけてインストールする
+description: 必要なコントロール、サンプル、テンプレート、ツール、その他のコンポーネントを使用できるように、Visual Studio の拡張機能と、それらを管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2019
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594410"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006537"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Visual Studio の機能拡張を管理する
 
@@ -31,7 +33,7 @@ Visual Studio 機能拡張の作成方法については、「[Visual Studio SDK
 
 ## <a name="extensions-and-updates-dialog-box"></a>[拡張機能と更新プログラム] ダイアログ ボックス
 
-**[拡張機能と更新プログラム]** ダイアログ ボックスを使用して、Visual Studio の拡張機能をインストールおよび管理します。 **[拡張機能と更新プログラム]** ダイアログを開くには、**[ツール]** > **[拡張機能と更新プログラム]** を選択するか、または**クイック起動**検索ボックスに「**拡張機能**」と入力します。
+**[拡張機能と更新プログラム]** ダイアログ ボックスを使用して、Visual Studio の拡張機能をインストールおよび管理します。 **[拡張機能と更新プログラム]** ダイアログを開くには、**[ツール]** > **[拡張機能と更新プログラム]** を選択するか、または **クイック起動** 検索ボックスに「**拡張機能**」と入力します。
 
 ::: moniker-end
 

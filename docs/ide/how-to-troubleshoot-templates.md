@@ -1,5 +1,6 @@
 ---
 title: プロジェクト テンプレートと項目テンプレートのトラブルシューティング
+description: テンプレートを開発環境に読み込むことができない場合に、テンプレートのトラブルシューティングを行う方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
@@ -8,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 42dc34d846f37ed1d7655d6758d045b2db7187d9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045708"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596847"
 ---
 # <a name="how-to-troubleshoot-templates"></a>方法: テンプレートの問題を解決する
 
@@ -43,7 +44,7 @@ ms.locfileid: "93045708"
 
 1. テンプレートの *vstemplate* ファイルを選択し、 **[開く]** を選択します。
 
-1. *vstemplate* ファイルの XML がテンプレート スキーマに準拠していることを確認します。 *vstemplate* スキーマの詳細については、 [テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)に関するページを参照してください。
+1. *vstemplate* ファイルの XML がテンプレート スキーマに準拠していることを確認します。 *vstemplate* スキーマの詳細については、[テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)に関するページを参照してください。
 
     > [!NOTE]
     > *vstemplate* ファイルを作成する際に IntelliSense サポートを取得するには、`xmlns` 属性を `VSTemplate` 要素に追加し、 `http://schemas.microsoft.com/developer/vstemplate/2005` の値を割り当てます。

@@ -1,5 +1,7 @@
 ---
 title: '方法: アプリケーション アイコンを指定する (Visual Basic、C#)'
+description: Icon プロパティを使用して、コンパイルされたアプリケーションに対してエクスプローラーと Windows タスク バーに表示されるアイコンを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,29 +13,29 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284062"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596912"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>方法: アプリケーション アイコンを指定する (Visual Basic、C#)
 
-プロジェクトの `Icon` プロパティでは、**ファイル エクスプローラー**と Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル ( *.ico*) を指定します。
+プロジェクトの `Icon` プロパティでは、**ファイル エクスプローラー** と Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル ( *.ico*) を指定します。
 
-`Icon` プロパティには、**プロジェクト デザイナー**の **[アプリケーション]** ウィンドウからアクセスできます。このプロパティには、リソースまたはコンテンツ ファイルとしてプロジェクトに追加されているアイコンの一覧が含まれています。
+`Icon` プロパティには、**プロジェクト デザイナー** の **[アプリケーション]** ウィンドウからアクセスできます。このプロパティには、リソースまたはコンテンツ ファイルとしてプロジェクトに追加されているアイコンの一覧が含まれています。
 
 > [!NOTE]
 > アプリケーションのアイコン プロパティを設定した後、アプリケーション内の各 **Window** または **Form** の `Icon` プロパティを設定することもできます。 Windows Presentation Foundation (WPF) スタンドアロン アプリケーションのウィンドウ アイコンの詳細については、<xref:System.Windows.Window.Icon%2A> プロパティを参照してください。
 
 ## <a name="to-specify-an-application-icon"></a>アプリケーション アイコンを指定するには
 
-1. **ソリューション エクスプローラー**で、 **[ソリューション]** ノードではなくプロジェクト ノードを選びます。
+1. **ソリューション エクスプローラー** で、 **[ソリューション]** ノードではなくプロジェクト ノードを選びます。
 
 1. メニュー バーで、 **[プロジェクト]**  >  **[プロパティ]** を選択します。
 
-1. **プロジェクト デザイナー**が表示されたら、 **[アプリケーション]** タブを選びます。
+1. **プロジェクト デザイナー** が表示されたら、 **[アプリケーション]** タブを選びます。
 
 1. **(Visual Basic)** &mdash; **[アイコン]** 一覧で、アイコン ( *.ico*) ファイルを選びます。
 

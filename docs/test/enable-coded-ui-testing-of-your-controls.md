@@ -1,5 +1,7 @@
 ---
 title: コントロールのコード化された UI テストの有効化
+description: コード化された UI テスト フレームワークのサポートを実装して、コントロールをテストしやすくする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288690"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441405"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストを有効化する
 
@@ -134,7 +136,7 @@ ms.locfileid: "85288690"
 
 1. <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> の残りの抽象メソッドと抽象プロパティをオーバーライドします。
 
-1. バイナリをビルドし、 *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* にコピーします。
+1. バイナリをビルドし、*%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* にコピーします。
 
 > [!NOTE]
 > この拡張パッケージは、"Text" 型であるすべてのコントロールに適用されます。 同じ種類の複数のコントロールをテストしている場合は、テストを記録するとき、配置する拡張パッケージを管理できるように別々にテストします。
@@ -196,7 +198,7 @@ Visual Studio はテストを記録するとき、各マウス イベントと�
 
 6. コード化された UI テスト ビルダーで、プロパティ プロバイダーを実行するためのアサートを作成し、操作フィルターを実行するための操作を記録します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

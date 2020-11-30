@@ -1,5 +1,7 @@
 ---
 title: '[自動バックアップ] ([オプション] ダイアログ ボックス - [環境])'
+description: '[自動バックアップ]、[環境]、[オプション] ダイアログ ボックスの概要、およびそれを使用してファイルを自動的にバックアップするかどうかを指定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250275"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871354"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>[自動バックアップ]\ ([オプション] ダイアログ ボックス - [環境])
 
@@ -36,10 +38,10 @@ ms.locfileid: "88250275"
 
 ::: moniker range="vs-2019"
 
-このオプションを使用し、エディターでファイルを自動的に保存する頻度をカスタマイズします。 以前に保存したファイルについては、Visual Studio 2019 バージョン 16.2 以降の場合、***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[プロジェクト名]*** にファイルのコピーが保存されます。 ファイルが新しく、手動でまだ保存していない場合、Visual Studio では、ランダムに生成されたファイル名でファイルが自動保存されます。
+このオプションを使用し、エディターでファイルを自動的に保存する頻度をカスタマイズします。 以前に保存したファイルについては、Visual Studio 2019 バージョン 16.2 以降の場合、"**_%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[プロジェクト名]_* _" にファイルのコピーが保存されます。 ファイルが新しく、手動でまだ保存していない場合、Visual Studio では、ランダムに生成されたファイル名でファイルが自動保存されます。
 
 > [!NOTE]
-> Visual Studio 2019 バージョン 16.1 以前を使用している場合、ファイルの場所は *%USERPROFILE%\Documents\Visual Studio [バージョン]\Backup Files\\[プロジェクト名]* です。 詳細については、「[Visual Studio 2019 リリース ノート履歴](/visualstudio/releases/2019/release-notes-history/)」を参照してください。
+> Visual Studio 2019 バージョン 16.1 以前を使用している場合、ファイルの場所は "_%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[プロジェクト名]*" になります。 詳細については、「[Visual Studio 2019 リリース ノート履歴](/visualstudio/releases/2019/release-notes-history/)」を参照してください。
 
 ::: moniker-end
 

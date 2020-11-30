@@ -1,5 +1,7 @@
 ---
 title: データ ソースを定義するための構成ファイルの使用
+description: 単体テスト用に app.config ファイルで定義されているデータ ソースを使用する方法について説明します。まずは、データ ソースを定義する app.config ファイルを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06e33721fa4ac1cc657c79c8aa68b35e5ceec00b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75776156"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598498"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 
@@ -46,11 +48,11 @@ ms.locfileid: "75776156"
 
 1. テスト プロジェクトに既に *app.config* ファイルが存在する場合は、「[カスタム構成セクションを定義する](#define-a-custom-configuration-section)」に進みます。
 
-2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックし、 **[追加]**  >  **[新しい項目]** の順に選択します。
+2. **ソリューション エクスプローラー** で、テスト プロジェクトを右クリックし、**[追加]** > **[新しい項目]** の順に選択します。
 
      **[新しい項目の追加]** ウィンドウが開きます。
 
-3. **[アプリケーション構成ファイル]** テンプレートを選択し、 **[追加]** をクリックします。
+3. **[アプリケーション構成ファイル]** テンプレートを選択し、**[追加]** をクリックします。
 
 ## <a name="define-a-custom-configuration-section"></a>カスタム構成セクションを定義する
 
@@ -267,7 +269,7 @@ ms.locfileid: "75776156"
 > [!IMPORTANT]
 > データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コードの単体テスト](../test/unit-test-your-code.md)
 - [方法: データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)

@@ -1,5 +1,7 @@
 ---
 title: クイック アクション、電球、ねじ回し
+description: 1 つのクイック アクションを使用して、コードのリファクタリング、生成、その他の変更を行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036523"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870782"
 ---
 # <a name="quick-actions"></a>クイック アクション
 
@@ -48,9 +50,9 @@ ms.locfileid: "90036523"
 
 いずれの言語でも、サードパーティは、たとえば SDK の一部として、カスタマイズした診断や提案を表示できます。Visual Studio ではそれらの規則に基づいて電球マークが表示されます。
 
-## <a name="icons"></a>[小さいアイコン]
+## <a name="icons"></a>アイコン
 
-クイック アクションが使用可能なときに表示されるアイコンは、使用可能な解決策またはリファクタリングの種類を示します。 *ねじ回し* ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンは、コードを変更するのに使用可能なアクションがあることを示すだけで、必ずしもそれらを使用する必要はありません。 *黄色の電球* ![電球アイコン](media/light-bulb-icon.png) アイコンは、コードを改善するために実行する*必要がある*使用可能なアクションがあることを示します。 *エラー電球* ![エラー電球アイコン](media/error-light-bulb-icon.png) アイコンは、コード内のエラーを修正するために使用可能なアクションがあることを示します。
+クイック アクションが使用可能なときに表示されるアイコンは、使用可能な解決策またはリファクタリングの種類を示します。 *ねじ回し* ![ねじ回しアイコン](media/screwdriver-icon.png) アイコンは、コードを変更するのに使用可能なアクションがあることを示すだけで、必ずしもそれらを使用する必要はありません。 *黄色の電球* ![電球アイコン](media/light-bulb-icon.png) アイコンは、コードを改善するために実行する *必要がある* 使用可能なアクションがあることを示します。 *エラー電球* ![エラー電球アイコン](media/error-light-bulb-icon.png) アイコンは、コード内のエラーを修正するために使用可能なアクションがあることを示します。
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>電球やねじ回しを表示するには
 
@@ -64,11 +66,11 @@ ms.locfileid: "90036523"
 
 行のどこかで **Ctrl**+ **.** キーを押しても、 使用可能なクイック アクションとリファクタリングの一覧が表示されます。
 
-修正候補を表示するには、電球の横の下矢印を選択するか、 **[修正候補を表示する]** リンクを選択します。 使用可能なクイック アクションのリストが表示されます。
+修正候補を表示するには、電球の横の下矢印を選択するか、**[修正候補を表示する]** リンクを選択します。 使用可能なクイック アクションのリストが表示されます。
 
 ![拡大電球](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのコード生成](../ide/code-generation-in-visual-studio.md)
 - [共通のクイック アクション](../ide/common-quick-actions.md)

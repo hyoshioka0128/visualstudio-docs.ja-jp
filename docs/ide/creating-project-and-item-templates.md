@@ -1,5 +1,7 @@
 ---
 title: プロジェクトとファイルのテンプレート
+description: プロジェクトおよび項目テンプレートに、基本的なコードや構造をユーザーに提供する再利用可能なスタブが用意されているしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313797"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006303"
 ---
 # <a name="project-and-item-templates"></a>プロジェクト テンプレートと項目テンプレート
 
@@ -23,7 +25,7 @@ ms.locfileid: "89313797"
 
 ## <a name="visual-studio-templates"></a>Visual Studio のテンプレート
 
-Visual Studio では、複数の定義済みのプロジェクト テンプレートおよび項目テンプレートがインストールされます。 これらのテンプレート (**ASP.NET Web アプリケーション** テンプレートや**クラス ライブラリ** テンプレートなど) は、新しいプロジェクトを作成する際に選択できます。 項目テンプレート (コード ファイル、XML ファイル、HTML ページ、スタイル シートなど) は、 **[新しい項目の追加]** ウィンドウに表示されます。
+Visual Studio では、複数の定義済みのプロジェクト テンプレートおよび項目テンプレートがインストールされます。 これらのテンプレート (**ASP.NET Web アプリケーション** テンプレートや **クラス ライブラリ** テンプレートなど) は、新しいプロジェクトを作成する際に選択できます。 項目テンプレート (コード ファイル、XML ファイル、HTML ページ、スタイル シートなど) は、**[新しい項目の追加]** ウィンドウに表示されます。
 
 これらのテンプレートは、ユーザーがプロジェクトの作成を開始したり、既存プロジェクトを拡張したりするための開始点を提供します。 プロジェクト テンプレートには、特定の種類のプロジェクトで必要になるファイルが用意されており、標準のアセンブリ参照が含まれています。また、ここで既定のプロパティとコンパイラ オプションが設定されます。 項目テンプレートの複雑さは、特定のファイル拡張子を持つ 1 つの空のファイルから、スタブ コードを含む複数のソース コード ファイル、デザイナー情報ファイル、埋め込みリソースまで、さまざまです。
 
@@ -53,21 +55,21 @@ Visual Studio では、複数の定義済みのプロジェクト テンプレ�
 
 ::: moniker range="vs-2017"
 
-- プロジェクト テンプレートは、 **[新しいプロジェクト]** ウィンドウに表示されます。
+- プロジェクト テンプレートは、**[新しいプロジェクト]** ウィンドウに表示されます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- プロジェクト テンプレートは、 **[新しいプロジェクトの作成]** ページに表示されます。
+- プロジェクト テンプレートは、**[新しいプロジェクトの作成]** ページに表示されます。
 
 ::: moniker-end
 
-- 項目テンプレートは、 **[新しい項目の追加]** ウィンドウに表示されます。
+- 項目テンプレートは、**[新しい項目の追加]** ウィンドウに表示されます。
 
 テンプレート フォルダーについては、「[方法: テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)
 - [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)

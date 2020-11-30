@@ -1,5 +1,7 @@
 ---
 title: '方法: ロード テスト結果でカスタム グラフを作成する'
+description: ロード テストの実行中、または実行完了後に、ロード テストの結果に関する特定の情報を表示するグラフをデザインする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c003fc5d6573dfdd88ec85ea37fbb10f80c94484
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287806"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441040"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>方法: ロード テスト結果でカスタム グラフを作成する
 
@@ -28,19 +30,19 @@ ms.locfileid: "85287806"
 
 1. **ロード テスト** ツール バーで、 **[新しいグラフの追加]** を選択します。
 
-     \- - または -
+     \- または
 
-     **ロード テスト アナライザー**で、 **[カウンター]** パネルまたはグラフを右クリックし、 **[グラフの追加]** を選択します。
+     **ロード テスト アナライザー** で、 **[カウンター]** パネルまたはグラフを右クリックし、 **[グラフの追加]** を選択します。
 
      **[グラフ名の入力]** ダイアログ ボックスが表示されます。
 
-2. **[グラフ名]** にグラフの名前を入力し、 **[OK]** を選択します。
+2. **[グラフ名]** にグラフの名前を入力し、**[OK]** を選択します。
 
-     **ロード テスト アナライザー**に新しいグラフが表示されます。 グラフは、現在選択されているグラフ パネルに表示されます。そのパネルに表示されていたグラフが置き換えられます。
+     **ロード テスト アナライザー** に新しいグラフが表示されます。 グラフは、現在選択されているグラフ パネルに表示されます。そのパネルに表示されていたグラフが置き換えられます。
 
-3. カウンターを追加して、新しいグラフをカスタマイズします。 詳細については、「[方法: グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」を参照してください。
+3. カウンターを追加して、新しいグラフをカスタマイズします。 詳細については、「[方法:ロード テスト結果のグラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [グラフ ビューでのロード テスト結果の分析](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [方法: グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

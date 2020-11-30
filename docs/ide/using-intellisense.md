@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565345"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878284"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio での IntelliSense
 
@@ -30,7 +30,7 @@ IntelliSense には、言語によって異なる要素が多数あります。 
 
 ## <a name="list-members"></a>リスト メンバー
 
-トリガーの文字 (マネージド コードではピリオド (`.`)、C++ では `::`) を入力すると、型 (または名前空間) の有効なメンバーが一覧表示されます。 文字の入力を続けると、一覧にフィルターが適用され、その文字で始まるか、名前の中の*いずれか*の単語がその文字で始まるメンバーだけが含まれます。 IntelliSense は "キャメル ケース" 照合も実行します。メンバー内の各キャメル ケースの単語の最初の文字を入力するだけで、それに一致するメンバーが表示されます。
+トリガーの文字 (マネージド コードではピリオド (`.`)、C++ では `::`) を入力すると、型 (または名前空間) の有効なメンバーが一覧表示されます。 文字の入力を続けると、一覧にフィルターが適用され、その文字で始まるか、名前の中の *いずれか* の単語がその文字で始まるメンバーだけが含まれます。 IntelliSense は "キャメル ケース" 照合も実行します。メンバー内の各キャメル ケースの単語の最初の文字を入力するだけで、それに一致するメンバーが表示されます。
 
 項目を選択した後、**Tab** キーを押すか空白を入力することによって、その項目をコードに挿入できます。 項目を選択してピリオドを入力した場合、項目がピリオドの前に表示され、ピリオドによって別のメンバー一覧が表示されます。 項目を選択した場合、挿入する前に、項目のクイック ヒントが表示されます。
 
@@ -38,7 +38,7 @@ IntelliSense には、言語によって異なる要素が多数あります。 
 
 ![Visual Studio のメンバーの一覧](../ide/media/vs2015_intellisense.png)
 
-**メンバーの一覧**機能を手動で起動するには、**Ctrl**+**J** キーを押すか、 **[編集]**  >  **[IntelliSense]**  >  **[メンバーの一覧]** の順に選択するか、エディターのツール バーで **[メンバーの一覧]** を選択します。 空白行または認識可能なスコープの外で呼び出された場合、メンバー一覧にはグローバル名前空間にあるシンボルが表示されます。
+**メンバーの一覧** 機能を手動で起動するには、**Ctrl**+**J** キーを押すか、 **[編集]**  >  **[IntelliSense]**  >  **[メンバーの一覧]** の順に選択するか、エディターのツール バーで **[メンバーの一覧]** を選択します。 空白行または認識可能なスコープの外で呼び出された場合、メンバー一覧にはグローバル名前空間にあるシンボルが表示されます。
 
 既定でメンバーの一覧を無効にする (明確に指定しなければ表示されないようにする) には、 **[ツール]**  >  **[オプション]**  >  **[すべての言語]** の順にクリックし、 **[自動メンバー表示]** をオフにします。 特定の言語に対してのみメンバーの一覧を無効にするには、その言語の **[全般]** 設定で指定します。
 
@@ -111,6 +111,7 @@ MessageBox( hWnd, "String literal|")
 
 - [Visual Basic の IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
+- [Python IntelliSense](../python/editing-python-code-in-visual-studio.md#intellisense)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [コードの記述とリファクタリング (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [XML コード コメントの追加](reference/generate-xml-documentation-comments.md)

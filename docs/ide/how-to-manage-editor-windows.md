@@ -1,5 +1,7 @@
 ---
 title: '方法 : エディター ウィンドウを管理する'
+description: 最適な方法でコードを表示できるように、ウィンドウを分割する方法、および同時にいくつかのウィンドウを開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 461593e4c77d7c90210ae1bb78741a1fff9616ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a2a9d74c66ffa699ea3fbf73da5d9043316f31
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284192"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597133"
 ---
 # <a name="how-to-manage-editor-windows"></a>方法 : エディター ウィンドウを管理する
 
@@ -54,7 +56,7 @@ ms.locfileid: "85284192"
 
    エディターの新しいタブ付きインスタンスが追加されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [ウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)

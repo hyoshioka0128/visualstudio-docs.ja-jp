@@ -1,5 +1,6 @@
 ---
 title: MS Word を使用してロード テスト パフォーマンス レポートを作成する
+description: ロード テスト結果の概要ビューとグラフ ビューのデータをコピーして貼り付けることにより、Microsoft Word ロード テスト レポートを手動で作成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8100ec72beea715a97402f304cfe9dbe6dc54dad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2bddd2585d3bc88821fb2c265f21bfda84ed7bef
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810247"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441001"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>方法: Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する
 
@@ -31,7 +32,7 @@ ms.locfileid: "90810247"
 
 ## <a name="copy-summary-view-data"></a>概要ビューのデータのコピー
 
-1. **ロード テスト結果**で、概要ビューが現在表示されていない場合に、ツール バーの **[概要]** をクリックします。
+1. **ロード テスト結果** で、概要ビューが現在表示されていない場合に、ツール バーの **[概要]** をクリックします。
 
 2. 概要ビューで右クリックし、 **[すべて選択]** を選択します。
 
@@ -43,7 +44,7 @@ ms.locfileid: "90810247"
 
 ## <a name="copy-graph-view-data"></a>グラフ ビューのデータのコピー
 
-1. **ロード テスト結果**で、グラフ ビューが現在表示されていない場合に、ツールバーの **[グラフ]** を選択します。
+1. **ロード テスト結果** で、グラフ ビューが現在表示されていない場合に、ツールバーの **[グラフ]** を選択します。
 
 2. (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、「[方法: グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 

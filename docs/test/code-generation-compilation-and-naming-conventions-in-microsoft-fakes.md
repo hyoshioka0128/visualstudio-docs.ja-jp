@@ -1,5 +1,7 @@
 ---
 title: Microsoft Fakes:コードの生成とコンパイル、名前付け規則
+description: Fakes のコード生成とコンパイルのオプションと問題について説明します。Fakes で生成される型、メンバー、およびパラメーターの名前付け規則についても説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325933"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441634"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 
@@ -30,9 +32,9 @@ ms.locfileid: "93325933"
 
 ### <a name="configure-code-generation-of-stubs"></a>スタブのコード生成を構成する
 
-スタブ型の生成は、 *.fakes* ファイル拡張子を持つ XML ファイルで構成されます。 Fakes フレームワークは、カスタム MSBuild タスクによってビルド処理で統合され、ビルド時にそれらのファイルを検出します。 Fakes コード ジェネレーターは、スタブ型をアセンブリにコンパイルし、参照をプロジェクトに追加します。
+スタブ型の生成は、*.fakes* ファイル拡張子を持つ XML ファイルで構成されます。 Fakes フレームワークは、カスタム MSBuild タスクによってビルド処理で統合され、ビルド時にそれらのファイルを検出します。 Fakes コード ジェネレーターは、スタブ型をアセンブリにコンパイルし、参照をプロジェクトに追加します。
 
-次の例に、 *FileSystem.dll* で定義されたスタブ型を示します。
+次の例に、*FileSystem.dll* で定義されたスタブ型を示します。
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -179,7 +181,7 @@ Fakes アセンブリのコンパイルで、ビルド時間が非常に長く�
 
 チーム ビルド環境では、すべてのビルド出力が 1 つのディレクトリにマージされます。 複数のプロジェクトが Fakes を使用している場合は、異なるバージョンの Fakes アセンブリが互いにオーバーライドすることがあります。 たとえば、.NET Framework 2.0 からの TestProject1 による *mscorlib.dll* の Fakes 処理と .NET Framework 4 の TestProject2 による *mscorlib.dll* の Fakes 処理は、いずれも *mscorlib.Fakes.dll* Fakes アセンブリを生成します。
 
-この問題を回避するには、 *.fakes* ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。
+この問題を回避するには、*.fakes* ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。
 
 アセンブリ MyAssembly とバージョン 1.2.3.4 の場合、Fakes アセンブリ名は MyAssembly.1.2.3.4.Fakes です。
 
@@ -229,7 +231,7 @@ attribute of the Assembly element in the .fakes:
 
 - メソッド名が明示的なインターフェイスの実装の場合、ドットは削除されます。
 
-- メソッドがジェネリックの場合、`Of`*n* が追加されます。ここで、 *n* はジェネリック メソッドの引数の数です。
+- メソッドがジェネリックの場合、`Of`*n* が追加されます。ここで、*n* はジェネリック メソッドの引数の数です。
 
   プロパティの get/set アクセス操作子などの **特殊なメソッド名** は、次の表に示すように処理されます。
 
@@ -237,7 +239,7 @@ attribute of the Assembly element in the .fakes:
 |-|-|-|
 |**コンストラクター**|`.ctor`|`Constructor`|
 |静的 **コンストラクター**|`.cctor`|`StaticConstructor`|
-|"_" で区切られた 2 つの部分で構成されるメソッド名を持つ **アクセサー** (プロパティの get アクセス操作子など)|*kind_name* (一般的なケース。ただし ECMA で強制されていない)|*NameKind* 。両方のパーツが大文字になり、前後が逆になっています|
+|"_" で区切られた 2 つの部分で構成されるメソッド名を持つ **アクセサー** (プロパティの get アクセス操作子など)|*kind_name* (一般的なケース。ただし ECMA で強制されていない)|*NameKind*。両方のパーツが大文字になり、前後が逆になっています|
 ||プロパティの get アクセス操作子 `Prop`|`PropGet`|
 ||プロパティの set アクセス操作子 `Prop`|`PropSet`|
 ||イベントを追加する操作子|`Add`|

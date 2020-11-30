@@ -1,5 +1,7 @@
 ---
 title: プロジェクト内の参照の管理
+description: プロジェクト内の外部コンポーネントおよび接続しているサービスへの参照を管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55b0d3487eb18db33805b418882f157d55b1253
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183536"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870951"
 ---
 # <a name="manage-references-in-a-project"></a>プロジェクト内の参照の管理
 
 外部コンポーネントまたは接続しているサービスを使用するためにコードを記述する前に、あらかじめプロジェクトにそのコンポーネントへの参照を追加しておく必要があります。 参照は、本質的には、Visual Studio がコンポーネントまたはサービスを検索するために必要な情報を含むプロジェクト ファイル内のエントリです。
 
-**参照**または**依存関係**を追加するには、**ソリューション エクスプローラー**で参照ノードを右クリックして **[参照の追加]** を選択します。 あるいは、プロジェクト ノードを右クリックし、 **[追加]**  >  **[参照]** の順に選択します。 詳細については、[参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)」を参照してください。
+**参照** または **依存関係** を追加するには、**ソリューション エクスプローラー** で参照ノードを右クリックして **[参照の追加]** を選択します。 あるいは、プロジェクト ノードを右クリックし、 **[追加]**  >  **[参照]** の順に選択します。 詳細については、[参照を追加または削除する](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)」を参照してください。
 
 ![Visual C++ での参照の追加](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -69,7 +71,7 @@ Visual Basic、C#、C++、JavaScript の各ユニバーサル Windows プラッ�
 1. サポートされていない拡張 SDK の販売元のサイトにアクセスして、プロジェクトのターゲット プラットフォームのバージョンと互換性のある依存関係を持つ拡張 SDK のバージョンをインストールします。
 
     > [!NOTE]
-    > 拡張 SDK が他の拡張 SDK に依存しているかどうかを調べる方法の 1 つは、**参照マネージャー**を見ることです。 Visual Studio を再起動し、新しい C# UWP アプリ プロジェクトを作成してから、プロジェクトを右クリックして、 **[参照の追加]** を選びます。 **[Windows]** タブの **[拡張機能]** サブタブに移動し、拡張 SDK を選びます。 **参照マネージャー**の右側のウィンドウを見ます。 依存関係がある場合は、そのウィンドウに表示されます。
+    > 拡張 SDK が他の拡張 SDK に依存しているかどうかを調べる方法の 1 つは、**参照マネージャー** を見ることです。 Visual Studio を再起動し、新しい C# UWP アプリ プロジェクトを作成してから、プロジェクトを右クリックして、 **[参照の追加]** を選びます。 **[Windows]** タブの **[拡張機能]** サブタブに移動し、拡張 SDK を選びます。 **参照マネージャー** の右側のウィンドウを見ます。 依存関係がある場合は、そのウィンドウに表示されます。
 
     > [!IMPORTANT]
     > プロジェクトが Windows 10 を対象としており、前の手順でインストールした拡張 SDK が Microsoft Visual C++ ランタイム パッケージに依存している場合は、Windows 10 と互換性のある Microsoft Visual C++ ランタイム パッケージのバージョンは v14.0 になります。このバージョンは Visual Studio と共にインストールされます。
@@ -97,11 +99,11 @@ Visual Basic、C#、C++、JavaScript の各ユニバーサル Windows プラッ�
 
 ## <a name="references-to-shared-components-at-run-time"></a>実行時の共有コンポーネントへの参照
 
-実行時には、コンポーネントがプロジェクトの出力パスまたは GAC (Global Assembly Cache) のどちらかにある必要があります。 どちらの場所にも存在しないオブジェクトへの参照がプロジェクトに含まれている場合は、プロジェクトをビルドするときに、その参照をプロジェクトの出力パスにコピーする必要があります。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは、コピーを作成する必要があるかどうかを示します。 値が **True**の場合は、プロジェクトをビルドするときに参照がプロジェクト ディレクトリにコピーされます。 値が **False**の場合は、参照はコピーされません。
+実行時には、コンポーネントがプロジェクトの出力パスまたは GAC (Global Assembly Cache) のどちらかにある必要があります。 どちらの場所にも存在しないオブジェクトへの参照がプロジェクトに含まれている場合は、プロジェクトをビルドするときに、その参照をプロジェクトの出力パスにコピーする必要があります。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは、コピーを作成する必要があるかどうかを示します。 値が **True** の場合は、プロジェクトをビルドするときに参照がプロジェクト ディレクトリにコピーされます。 値が **False** の場合は、参照はコピーされません。
 
 GAC に登録されているカスタム コンポーネントへの参照を含むアプリケーションを配置した場合、 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> の設定に関係なく、そのコンポーネントはアプリケーションと共に配置されません。 Visual Studio の旧バージョンでは、参照で <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティを設定して、アセンブリを確実に配置することができました。 現バージョンでは、アセンブリを \Bin フォルダーに手動で追加する必要があります。 これにより、すべてのカスタム コードを監視下に置いて、見覚えのないカスタム コードを公開するリスクを軽減します。
 
-アセンブリまたはコンポーネントがグローバル アセンブリ キャッシュまたはフレームワーク コンポーネントである場合、既定では、 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは **False** に設定されます。 それ以外の場合、値は **True**に設定されます。 プロジェクト間参照は、常に **True**に設定されます。
+アセンブリまたはコンポーネントがグローバル アセンブリ キャッシュまたはフレームワーク コンポーネントである場合、既定では、 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> プロパティは **False** に設定されます。 それ以外の場合、値は **True** に設定されます。 プロジェクト間参照は、常に **True** に設定されます。
 
 ## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>異なるバージョンの .NET を対象とするプロジェクトまたはアセンブリを参照する
 
@@ -120,7 +122,7 @@ GAC に登録されているカスタム コンポーネントへの参照を含
 
 ## <a name="shared-project-references"></a>共有プロジェクト参照
 
-他のほとんどのプロジェクトの種類とは異なり、*共有プロジェクト*にはバイナリ出力がありません。 代わりに、このコードは参照する各プロジェクトにコンパイルされます。 [共有プロジェクト](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)を使用すると、多数の異なるアプリケーション プロジェクトによって参照される共通のコードを記述できます。 コードは、参照している各プロジェクトの一部としてコンパイルされ、プラットフォーム固有の機能を共有コード ベースに組み込むのに役立つコンパイラ ディレクティブを含めることができます。 [参照マネージャー] ダイアログ ボックスの **[共有プロジェクト]** タブで、共有プロジェクトへの参照を追加します。
+他のほとんどのプロジェクトの種類とは異なり、*共有プロジェクト* にはバイナリ出力がありません。 代わりに、このコードは参照する各プロジェクトにコンパイルされます。 [共有プロジェクト](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)を使用すると、多数の異なるアプリケーション プロジェクトによって参照される共通のコードを記述できます。 コードは、参照している各プロジェクトの一部としてコンパイルされ、プラットフォーム固有の機能を共有コード ベースに組み込むのに役立つコンパイラ ディレクティブを含めることができます。 [参照マネージャー] ダイアログ ボックスの **[共有プロジェクト]** タブで、共有プロジェクトへの参照を追加します。
 
 ## <a name="file-references"></a>ファイル参照
 

@@ -1,5 +1,7 @@
 ---
 title: ファイル ヘッダーを追加する
+description: EditorConfig ファイルを使用して、既存のファイル、プロジェクト、およびソリューションにファイル ヘッダーを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810377"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870860"
 ---
 # <a name="add-file-header"></a>ファイル ヘッダーを追加する
 
@@ -36,7 +38,7 @@ ms.locfileid: "90810377"
 
 3. 適用するヘッダー テキストと同じ規則の値を設定します。 ファイル名のプレースホルダーとして `{fileName}` を使用できます。
 
-    ![EditorConfig ファイル ヘッダー規則](media/add-file-header-rule.png)
+    ![file_header_template 値を示す EditorConfig ファイルのスクリーンショット。](media/add-file-header-rule.png)
 
     > [!NOTE]
     > EditorConfig に複数行を明示的に含めることはできません。新しい行を挿入するには、Unix の改行文字を使用する必要があります。
@@ -47,7 +49,7 @@ ms.locfileid: "90810377"
 
 6. **[ファイル ヘッダーを追加する]** を選択します。 
 
-    ![EditorConfig ファイル ヘッダー規則](media/add-file-header.png)
+    ![[ファイル ヘッダーを追加する] オプションのスクリーンショット。](media/add-file-header.png)
 
 7. ファイル ヘッダーをプロジェクトまたはソリューション全体に適用する場合は、 **[次の場所のすべての出現箇所を修正します]** オプションで **[プロジェクト]** または **[ソリューション]** を選択します。
 

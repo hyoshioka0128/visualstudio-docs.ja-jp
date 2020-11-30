@@ -1,5 +1,6 @@
 ---
 title: Excel を使用してロード テスト パフォーマンス レポートを作成する
+description: 複数のテスト結果に基づく Microsoft Excel のロード テスト レポートを生成する方法について説明します。 比較の実行および傾向レポートを作成できます。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ce92e157ba3fe02dbabd1ddd408492c440102a1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810260"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442431"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>方法: Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する
 
@@ -45,7 +46,7 @@ ms.locfileid: "90810260"
 
 ![アプリケーション コードにおける潜在的な問題](../test/media/lt_excel.png)
 
-Excel レポートを生成するには、**ロード テスト アナライザー**のツール バーの **[Excel レポートの作成]** ボタンを使用するか、Excel で **Office** リボンの **[ロード テスト]** タブで **[ロード テスト レポート]** オプションを使用します。
+Excel レポートを生成するには、**ロード テスト アナライザー** のツール バーの **[Excel レポートの作成]** ボタンを使用するか、Excel で **Office** リボンの **[ロード テスト]** タブで **[ロード テスト レポート]** オプションを使用します。
 
 > [!NOTE]
 > ロード テストにコメントを追加すると、Excel レポートに表示されます。
@@ -61,13 +62,13 @@ Excel レポートを生成するには、**ロード テスト アナライザ�
       > [!NOTE]
       > **Web パフォーマンス テスト結果ビューアー** ツール バーの **[Excel レポートの作成]** ボタンが無効になっている場合、Microsoft Excel を 1 回実行して、このボタンを有効にする必要があります。 Visual Studio Enterprise のインストール時に、Visual Studio Enterprise のロード テスト用の Microsoft Excel アドインがコンピューターにコピーされます。ただし、このアドインのインストール プロセスを完了するには、Microsoft Excel を実行する必要があります。
 
-      Microsoft Excel が開き、**ロード テスト レポートの生成ウィザード**が表示されます。
+      Microsoft Excel が開き、**ロード テスト レポートの生成ウィザード** が表示されます。
 
    **OR**
 
    1. Microsoft Excel を開き、**Office** リボンの **[ロード テスト]** タブを選択し、 **[ロード テスト レポート]** を選びます。
 
-       **ロード テスト レポートの生成ウィザード**が表示されます。
+       **ロード テスト レポートの生成ウィザード** が表示されます。
 
    2. **[ロード テストを含むデータベースを選択]** ページの **[サーバー名]** の下に、ロード テストの結果が格納されているサーバーの名前を入力します。
 
@@ -116,13 +117,13 @@ Excel レポートを生成するには、**ロード テスト アナライザ�
       > [!NOTE]
       > **Web パフォーマンス テスト結果ビューアー** ツール バーの **[Excel レポートの作成]** ボタンが無効になっている場合、Microsoft Excel を 1 回実行して、このボタンを有効にする必要があります。 Visual Studio Enterprise のインストール時に、Visual Studio Enterprise のロード テスト用の Microsoft Excel アドインがコンピューターにコピーされます。ただし、このアドインのインストール プロセスを完了するには、Microsoft Excel を実行する必要があります。
 
-      Microsoft Excel が開き、**ロード テスト レポートの生成ウィザード**が表示されます。
+      Microsoft Excel が開き、**ロード テスト レポートの生成ウィザード** が表示されます。
 
    **OR**
 
    1. Microsoft Excel を開き、**Office** リボンの **[ロード テスト]** タブを選択し、 **[ロード テスト レポート]** を選びます。
 
-       **ロード テスト レポートの生成ウィザード**が表示されます。
+       **ロード テスト レポートの生成ウィザード** が表示されます。
 
    2. **[ロード テストを含むデータベースを選択]** ページの **[サーバー名]** の下に、ロード テストの結果が格納されているサーバーの名前を入力します。
 

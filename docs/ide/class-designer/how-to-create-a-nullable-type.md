@@ -1,5 +1,7 @@
 ---
 title: '方法: Null 許容型を作成する (クラス デザイナー)'
+description: クラス デザイナーで null 許容型を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,18 +16,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad371f987ab7ff0e50dc7d2fe4effeba5205e74e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 3e229583b2ff375928ea462ee676e21462157dcb
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770978"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901649"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>方法: クラス デザイナーで Null 許容型を作成する
 
 ある種の値の型は、常に値が定義されている (または必要である) とは限りません。 これはデータベースではよくあることであり、一部のフィールドに値が何も割り当てられない場合があります。 たとえば、データベースのフィールドに値がまだ割り当てられていないことを示すために、フィールドに null 値を割り当てることがあります。
 
-*null 許容型*は、その型の一般的な値の範囲だけでなく null 値も受け付けるように拡張した値型です。 たとえば、`Int32` の null 許容型 (Nullable\<Int32> とも書きます) には、-2147483648 から 2147483647 の任意の値または null 値を代入できます。 Nullable\<bool> には、値 `True`、`False`、または null (値がまったくない) を割り当てることができます。
+*null 許容型* は、その型の一般的な値の範囲だけでなく null 値も受け付けるように拡張した値型です。 たとえば、`Int32` の null 許容型 (Nullable\<Int32> とも書きます) には、-2147483648 から 2147483647 の任意の値または null 値を代入できます。 Nullable\<bool> には、値 `True`、`False`、または null (値がまったくない) を割り当てることができます。
 
 Null 許容型は、<xref:System.Nullable%601> 構造体のインスタンスです。 null 許容型の各インスタンスには、2 つのパブリック読み取り専用プロパティ `HasValue` と `Value` があります。
 
@@ -60,7 +62,7 @@ C# での null 許容型について詳しくは、「[null 許容型](/dotnet/c
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>コード エディターを使って null 許容型を追加するには
 
-1. プロジェクトにクラスを追加します。 **ソリューション エクスプローラー**でプロジェクト ノードを選び、 **[プロジェクト]** メニューの **[クラスの追加]** をクリックします。
+1. プロジェクトにクラスを追加します。 **ソリューション エクスプローラー** でプロジェクト ノードを選び、 **[プロジェクト]** メニューの **[クラスの追加]** をクリックします。
 
 2. 新しいクラスの .cs または .vb ファイルで、新しいクラスの null 許容型をクラス宣言に追加します。
 

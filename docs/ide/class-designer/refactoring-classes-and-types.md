@@ -1,5 +1,7 @@
 ---
 title: クラス デザイナーでのクラスと型の名前の変更および移動
+description: クラス デザイナーと [クラスの詳細] ウィンドウを使用してクラスと型の名前変更と移動を行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf0e9d9d0f4bb45ef965f64c256bd9360af112b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d51a541edb30e24405faccfec6e05264303d049
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768607"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901089"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>クラス デザイナーでのクラスと型のリファクタリング
 
@@ -55,7 +57,7 @@ ms.locfileid: "85768607"
 
 ### <a name="rename-in-the-class-details-window"></a>[クラスの詳細] ウィンドウで名前を変更する
 
-1. **[クラスの詳細]** ウィンドウを表示するには、型または型のメンバーを右クリックした後、 **[クラスの詳細]** を選択します。
+1. **[クラスの詳細]** ウィンドウを表示するには、型または型のメンバーを右クリックした後、**[クラスの詳細]** を選択します。
 
      **[クラスの詳細]** ウィンドウが表示されます。
 
@@ -68,7 +70,7 @@ ms.locfileid: "85768607"
 
 ### <a name="rename-in-the-properties-window"></a>[プロパティ] ウィンドウで名前を変更する
 
-1. クラス ダイアグラムまたは **[クラスの詳細]** ウィンドウで、型またはメンバーを右クリックした後、 **[プロパティ]** をクリックします。
+1. クラス ダイアグラムまたは **[クラスの詳細]** ウィンドウで、型またはメンバーを右クリックした後、**[プロパティ]** をクリックします。
 
      **[プロパティ]** ウィンドウが表示され、型または型のメンバーのプロパティが表示されます。
 
@@ -78,7 +80,7 @@ ms.locfileid: "85768607"
 
 ## <a name="move-type-members-from-one-type-to-another"></a>1 つの型から別の型への型のメンバーの移動
 
-**クラス デザイナー**を使用すると、1 つの型から別の型に、型のメンバーを移動できます。 両方の型が、現在のクラス ダイアグラムに表示されている必要があります。
+**クラス デザイナー** を使用すると、1 つの型から別の型に、型のメンバーを移動できます。 両方の型が、現在のクラス ダイアグラムに表示されている必要があります。
 
 1. デザイン サーフェイスに表示されている型で、別の型に移動するメンバーを右クリックした後、 **[切り取り]** を選択します。
 
@@ -86,6 +88,6 @@ ms.locfileid: "85768607"
 
      プロパティが移動元の型から削除され、移動先の型に表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [クラスおよび型のデザイン](designing-and-viewing-classes-and-types.md)

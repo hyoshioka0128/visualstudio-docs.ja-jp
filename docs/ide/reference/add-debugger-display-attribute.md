@@ -1,5 +1,7 @@
 ---
 title: DebuggerDisplay 属性を追加する
+description: DebuggerDisplay 属性を追加して、デバッガー変数ウィンドウでのオブジェクト、プロパティ、またはフィールドの表示方法を制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa6baa6e104fca2d3a3b45cac343fd1ceb086271
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810390"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871120"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>DebuggerDisplay 属性を追加する
 
@@ -22,7 +24,7 @@ ms.locfileid: "90810390"
 
 **概要:** [DebuggerDisplay 属性](../../debugger/using-the-debuggerdisplay-attribute.md)を使用して、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。
 
-**条件:** コード内にプログラムによってデバッガー内の[プロパティをピン留め](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips)したいとき。
+**条件:** コード内にプログラムによってデバッガー内の [プロパティをピン留め](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips)したいとき。
 
 **理由:** プロパティをピン留めすると、デバッガー内のオブジェクトのプロパティ リストの一番上にプロパティをバブルアップすることによって、オブジェクトをプロパティによって迅速に検査できます。 
 

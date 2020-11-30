@@ -1,5 +1,7 @@
 ---
 title: surround-with コード スニペットを使用する方法 | Microsoft Docs
+description: キーボード ショートカット、[編集] メニュー、または右クリックまたはコンテキスト メニューを使用して、surround-with コード スニペットにアクセスする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbbd283186ed31960b2f84bd862a762abae748de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd117937979b73b4dbecb19844159e6e8995cf8e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769776"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596873"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>方法: surround-with コード スニペットを使用する
 
-ここでは、surround-with コード スニペットを使用する方法について説明します。 surround-with コード スニペットは 3 つの方法 (キーボード ショートカット、 **[編集]** メニュー、右クリック (コンテキスト) メニュー) で使うことができます。
+ここでは、surround-with コード スニペットを使用する方法について説明します。 surround-with コード スニペットは 3 つの方法 (キーボード ショートカット、**[編集]** メニュー、右クリック (コンテキスト) メニュー) で使うことができます。
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>キーボード ショートカットを用いて surround-with コード スニペットを使用するには
 
 1. Visual Studio IDE で、編集するファイルを開きます。
 
-1. **コード エディター**で、囲むテキストを選択します。
+1. **コード エディター** で、囲むテキストを選択します。
 
 1. **Ctrl**+**K** キー、**Ctrl**+**S** キーの順に押します。
 
@@ -35,9 +37,9 @@ ms.locfileid: "85769776"
 
 1. Visual Studio IDE で、編集するファイルを開きます。
 
-1. **コード エディター**で、囲むテキストを選択します。
+1. **コード エディター** で、囲むテキストを選択します。
 
-1. **[編集]** メニューの **[IntelliSense]** を選択し、 **[ブロックの挿入]** コマンドを選択します。
+1. **[編集]** メニューの **[IntelliSense]** を選択し、**[ブロックの挿入]** コマンドを選択します。
 
 1. コード スニペット挿入でコード スニペットを選択し、**Tab** キーまたは **Enter** キーを押します。
 
@@ -47,7 +49,7 @@ ms.locfileid: "85769776"
 
 1. Visual Studio IDE で、編集するファイルを開きます。
 
-1. **コード エディター**で、囲むテキストを選択します。
+1. **コード エディター** で、囲むテキストを選択します。
 
 1. 選択したテキストを右クリックし、コンテキスト メニューから **[ブロックの挿入]** コマンドを選択します。
 
@@ -55,7 +57,7 @@ ms.locfileid: "85769776"
 
      または、コード スニペットの名前を入力し、**Tab** キーまたは **Enter** キーを押します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [C# コード スニペット](../ide/visual-csharp-code-snippets.md)
 - [コード スニペット ピッカー](../ide/reference/code-snippet-picker.md)

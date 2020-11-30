@@ -1,5 +1,6 @@
 ---
 title: Web パフォーマンス テストのカスタム検証規則の作成
+description: 検証規則クラス ValidationRule から派生した独自の検証規則を作成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6222aaf6b6aeace595e12c797ead1dfb86b4931
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 627122368c90163cf9aef4c8035bfbb67c4a0dba
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810615"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441821"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Web パフォーマンス テストのカスタム検証規則のコーディング
 
@@ -49,7 +50,7 @@ ms.locfileid: "90810615"
 
 6. (省略可能) テスト プロジェクトで、カスタム検証規則を含むクラス ライブラリ プロジェクトへの参照を追加します。
 
-7. テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
+7. テスト プロジェクトで、**Web パフォーマンス テスト エディター** を使用して Web パフォーマンス テストを開きます。
 
 8. カスタム検証規則を Web パフォーマンス テスト要求に追加するには、要求を右クリックし、 **[検証規則の追加]** をクリックします。
 

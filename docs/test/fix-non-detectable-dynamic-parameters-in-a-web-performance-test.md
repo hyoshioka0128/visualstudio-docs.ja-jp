@@ -1,5 +1,6 @@
 ---
 title: 検出できない動的パラメーターの修正 (Web パフォーマンス テスト)
+description: Web パフォーマンス テスト レコーダーと再生エンジンによって、最も一般的な種類の動的パラメーターが自動的に処理されるしくみについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cad94040997d8cead6be799bee6b2bc17aab699c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810641"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442717"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web パフォーマンス テストでの検出できない動的パラメーターの修正
 
@@ -119,7 +120,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 13. プロジェクトを保存します。
 
-14. **ソリューション エクスプローラー**で、*Querystring.aspx* をスタート ページとして設定します。
+14. **ソリューション エクスプローラー** で、*Querystring.aspx* をスタート ページとして設定します。
 
      ![Querystring.aspx をスタート ページとして設定する](../test/media/web_test_dynamicparameter_setstartpage.png)
 
@@ -242,7 +243,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      ![QueryString に適用されたパラメーター](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
-10. **検索と置換**のダイアログ ボックスを閉じます。 要求ツリーで、検出された動的パラメーターと、関連付けた検出されない動的パラメーターとの間に同様の構造があることを確認します。
+10. **検索と置換** のダイアログ ボックスを閉じます。 要求ツリーで、検出された動的パラメーターと、関連付けた検出されない動的パラメーターとの間に同様の構造があることを確認します。
 
      ![検出され関連付けられた動的パラメーター](../test/media/web_test_dynamicparameter_conclusion.png)
 

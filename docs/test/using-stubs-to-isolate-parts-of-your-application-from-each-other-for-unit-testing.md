@@ -1,5 +1,7 @@
 ---
 title: テストを目的として、スタブを使用してアプリケーションの各部分を分離する
+description: スタブについて説明します。これは、テスト中に別のコンポーネントの代わりをする短いコードです。 スタブを使用すると一貫した結果が返されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325961"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598563"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
 
@@ -29,7 +31,7 @@ Fakes の概要とクイック スタート ガイドについては、「[Micro
 
 ![Real クラスと Stub クラスは 1 つのインターフェイスに準拠しています。](../test/media/fakesinterfaces.png)
 
-スタブは、コードをこのように構成できることに依存しているため、通常は自分が管理しているアプリケーションの 1 つの部分を他の部分から分離するために使用されます。 自分の管理下にない他のアセンブリ ( *System.dll* など) から分離するには、通常は shim を使用します。 「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」を参照してください。
+スタブは、コードをこのように構成できることに依存しているため、通常は自分が管理しているアプリケーションの 1 つの部分を他の部分から分離するために使用されます。 自分の管理下にない他のアセンブリ (*System.dll* など) から分離するには、通常は shim を使用します。 「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」を参照してください。
 
 ## <a name="how-to-use-stubs"></a>スタブの使用方法
 
@@ -150,11 +152,11 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. **ソリューション エクスプローラー** で。 
     - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
     ::: moniker range=">=vs-2019"
-    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** の下にフェイク化するアセンブリを見つけます。
+    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
     ::: moniker-end
-    - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、 **ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
+    - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
 
-2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、 **System.dll** を選択します。
+2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、**System.dll** を選択します。
 
 3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。
 

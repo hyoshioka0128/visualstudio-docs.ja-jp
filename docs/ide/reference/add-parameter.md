@@ -1,5 +1,7 @@
 ---
 title: メソッドにパラメーターを追加するクイック アクション
+description: クイック アクションを使用して、使用量に基づいてメソッドにパラメーターを自動的に追加し、宣言する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c2582228426afcefdb2587d646a8668f622309c6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595866"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871302"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>クイック アクションを使用してメソッドにパラメーターを追加する
 
@@ -34,7 +36,7 @@ ms.locfileid: "75595866"
 
    呼び出す場所で、メソッドの名前の下に赤い波線が表示されます。
 
-2. [クイック アクション] メニューが表示されるまで赤い波線の上にポインターを合わせます。 [クイック アクション] メニューの**下矢印**を選択した後、 **[パラメーターを [メソッド] に追加する]** を選択します。
+2. [クイック アクション] メニューが表示されるまで赤い波線の上にポインターを合わせます。 [クイック アクション] メニューの **下矢印** を選択した後、**[パラメーターを [メソッド] に追加する]** を選択します。
 
    ![Visual Studio でのメソッドにパラメーターを追加するクイック アクション](media/add-parameter-to-method.png)
 
@@ -46,6 +48,6 @@ ms.locfileid: "75595866"
 > [!NOTE]
 > メソッドに対するその他の呼び出しがある場合、このクイック アクションを使用した後はそれらでエラーが発生する場合があります。新しく追加されたパラメーターの引数を指定していないためです。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コンストラクターにパラメーターを追加する](generate-constructor.md#addparameter)

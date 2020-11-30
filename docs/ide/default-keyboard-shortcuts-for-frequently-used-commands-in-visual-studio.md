@@ -1,5 +1,6 @@
 ---
 title: よく使われるコマンドのキーボード ショートカット
+description: Visual Studio で最も頻繁に使用されるコマンドを呼び出すキーボード ショートカットについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,23 +9,23 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c60da36ac6a8e5002e65e0973af0f3e0cb13eef7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045654"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006485"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio のよく使われるキーボード ショートカット
 
 Visual Studio で頻繁に使用するコマンドには、ここで示している既定のショートカット キーを押すことでアクセスできます。 既定のショートカットが割り当てられているコマンドの完全なリストについては、「[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
 
-" *全体* " コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
+"*全体*" コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
 
 > [!NOTE]
-> **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの [ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
+> **[オプション]** ダイアログ ボックスを開き、**[環境]** ノードを展開して、**[キーボード]** を選択することで、任意のコマンドの [ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
 
-## <a name="build"></a>Build
+## <a name="build"></a>ビルド
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |
@@ -53,14 +54,14 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Debug.StopDebugging|**Shift + F5** [全体]|
 |Debug.ToggleBreakpoint|**F9** [全体]|
 
-## <a name="edit"></a>編集
+## <a name="edit"></a>[編集]
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |
 |Edit.BreakLine|**Enter** [テキスト エディター、レポート デザイナー、Windows フォーム デザイナー]<br /><br />または **Shift + Enter** [テキスト エディター]|
-|Edit.CollapseToDefinitions|**Ctrl + M** 、 **Ctrl + O** [テキスト エディター]|
-|Edit.CommentSelection|**Ctrl + K** 、 **Ctrl + C** [テキスト エディター]|
-|Edit.CompleteWord|**Alt + →** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K** 、 **W** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + W** [ワークフロー デザイナー]|
+|Edit.CollapseToDefinitions|**Ctrl + M**、**Ctrl + O** [テキスト エディター]|
+|Edit.CommentSelection|**Ctrl + K**、**Ctrl + C** [テキスト エディター]|
+|Edit.CompleteWord|**Alt + →** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K**、**W** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + W** [ワークフロー デザイナー]|
 |Edit.Copy|**Ctrl + C** [全体]<br /><br />または **Ctrl + Insert** [全体]|
 |Edit.Cut|**Ctrl + X** [全体]<br /><br />または **Shift + Delete** [全体]|
 |Edit.Delete|**Delete** [全体、チーム エクスプローラー]<br /><br />または **Shift + Delete** [シーケンス図、UML アクティビティ図、レイヤー図]<br /><br />または **Ctrl + Delete** [クラス図]|
@@ -76,7 +77,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**Ctrl + D** [全体]|
 |Edit.GoToNextLocation|**F8** [全体]|
-|Edit.InsertSnippet|**Ctrl + K** 、 **Ctrl + X** [全体]|
+|Edit.InsertSnippet|**Ctrl + K**、**Ctrl + X** [全体]|
 |Edit.InsertTab|**Tab** [レポート デザイナー、Windows フォーム デザイナー、テキスト エディター]|
 |Edit.LineCut|**Ctrl + L** [テキスト エディター]|
 |Edit.LineDownExtendColumn|**Shift + Alt + ↓** [テキスト エディター]|
@@ -127,19 +128,19 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Project.AddExistingItem|**Shift + Alt + A** [全体]|
 |Project.AddNewItem|**Ctrl + Shift + A** [全体]|
 
-## <a name="refactor"></a>リファクタリング
+## <a name="refactor"></a>リファクター
 
-|command|ショートカット キー [コンテキスト]|
+|コマンド|ショートカット キー [コンテキスト]|
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl + R、Ctrl + M** [全体]|
 
 ## <a name="tools"></a>ツール
 
-|command|ショートカット キー [コンテキスト]|
+|コマンド|ショートカット キー [コンテキスト]|
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl + Alt + P** [全体]|
 
-## <a name="view"></a>View
+## <a name="view"></a>表示
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |
@@ -170,7 +171,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Window.NextDocumentWindowNav|**Ctrl + Tab** [全体]|
 |Window.NextSplitPane|**F6** [全体]|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのキーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Visual Studio のすべてのキーボード ショートカット](default-keyboard-shortcuts-in-visual-studio.md)

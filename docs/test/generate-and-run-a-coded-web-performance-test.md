@@ -1,5 +1,7 @@
 ---
 title: コード化された Web パフォーマンス テスト
+description: Web パフォーマンス テストを、編集およびカスタマイズ可能なコード ベースのスクリプトに変換する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c55c2a2d9b77662170cde24c2b98368240a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589579"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442639"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストの生成と実行
 
@@ -85,7 +87,7 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 ## <a name="qa"></a>Q&A
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q:同時に複数のテストを実行できますか。
-**A:** はい。**ソリューション エクスプローラー**で右クリック (コンテキスト) メニューを使用してください。
+**A:** はい。**ソリューション エクスプローラー** で右クリック (コンテキスト) メニューを使用してください。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q:データ ソースは、コード化されたテストを生成する前か後のどちらに追加すべきでしょうか。
 **A:** [データ ソース](../test/add-a-data-source-to-a-web-performance-test.md)は、コード化されたテストを生成する前に追加する方が簡単です。こうすると、コードが自動的に生成されます。
@@ -97,4 +99,4 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 これは、テスト クラスに対して DataSourceAttribute が定義されていても、対応する DataBindingAttribute がない場合に発生します。 このエラーを解決するには、適切な DataBindingAttribute を追加して削除するか、コード内でコメント アウトします。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Q:検証規則および抽出規則は、コード化されたテストを生成する前か後のどちらに追加すべきでしょうか。
-**A:** 検証規則および抽出規則は、コード化されたテストを生成する前に追加する方が簡単です。ただし検証目的の場合は[コード化された UI テスト](../test/use-ui-automation-to-test-your-code.md)を使用することをお勧めします。
+**A:** 検証規則および抽出規則は、コード化されたテストを生成する前に追加する方が簡単です。ただし検証目的の場合は [コード化された UI テスト](../test/use-ui-automation-to-test-your-code.md)を使用することをお勧めします。

@@ -1,5 +1,7 @@
 ---
 title: コード カバレッジ分析のカスタマイズ
+description: ExcludeFromCodeCoverageAttribute 属性を使用して、カバレッジの結果からテスト コードを除外する方法について説明します。 ソリューションの外部のアセンブリを含めることができます。
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475992"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441829"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -28,7 +30,7 @@ ms.locfileid: "86475992"
 
 コード カバレッジをカスタマイズするには、次の手順を行います。
 
-1. 実行設定ファイルをソリューションに追加します。 **ソリューション エクスプローラー**でソリューションのショートカット メニューを開き、 **[追加]**  >  **[新しい項目]** 、 **[XML ファイル]** の順に選択します。 *CodeCoverage.runsettings* などの名前でファイルを保存します。
+1. 実行設定ファイルをソリューションに追加します。 **ソリューション エクスプローラー** でソリューションのショートカット メニューを開き、 **[追加]**  >  **[新しい項目]** 、 **[XML ファイル]** の順に選択します。 *CodeCoverage.runsettings* などの名前でファイルを保存します。
 
 2. この記事の最後にあるサンプル ファイルの内容を追加し、後続の各セクションの説明に従って、ニーズに合わせてカスタマイズします。
 
@@ -118,9 +120,9 @@ ms.locfileid: "86475992"
 
 Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 次に、例を示します。
 
-- **.\*** は任意の文字の文字列と一致します
+- * *.\** _ は任意の文字の文字列と一致します
 
-- **\\.** はピリオド "." と一致します
+- _ *\\.* * はピリオド "." と一致します
 
 - **\\(   \\)** は "(  )" と一致します
 

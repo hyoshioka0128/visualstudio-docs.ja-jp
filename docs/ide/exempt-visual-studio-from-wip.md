@@ -1,5 +1,7 @@
 ---
 title: Windows Information Protection からの除外
+description: Windows Information Protection から Visual Studio を除外しながら、引き続き企業データを使用できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588565"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598394"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Visual Studio を WIP 除外アプリとして構成する
 
 [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (WIP) は、企業が管理していない電子メールなどのアプリ、ソーシャル メディア、パブリック クラウドなどから、企業のデータが漏えいすることを防ぐために役立ちます。 WIP を使用すると、企業が所有するデバイスと個人用デバイスでも、偶発的なデータ漏えいから保護できます。既存の環境や他のアプリを変更する必要はありません。
 
-WIP に*対応する*アプリは、保護されていないネットワークの場所に企業データが送信されないように防ぎ、個人データの暗号化が回避されることが期待されています。 Visual Studio は対応するアプリではないため、除外しない限り、WIP 対応環境では動作しません。 WIP 対応のマシンで Visual Studio を機能させるには、この記事の手順に従ってください。
+WIP に *対応する* アプリは、保護されていないネットワークの場所に企業データが送信されないように防ぎ、個人データの暗号化が回避されることが期待されています。 Visual Studio は対応するアプリではないため、除外しない限り、WIP 対応環境では動作しません。 WIP 対応のマシンで Visual Studio を機能させるには、この記事の手順に従ってください。
 
 ## <a name="configure-vs-as-a-wip-exempt-app"></a>WIP 除外アプリとして VS を構成する
 
@@ -34,6 +36,6 @@ Visual Studio には複数のバイナリが含まれているので、[WIP 除�
 
 Visual Studio がネットワーク上の企業データにアクセスできる場所を指定するには、[保護されたアプリが企業データを検索および送信できる場所を定義する手順](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data)に従ってください。 Windows が IP アドレスを使用してクラウド リソースへの接続をブロックしないようにするには、/\*AppCompat\*/ 文字列を設定に追加してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [WIP を使っているときのアプリの動作](/windows/security/information-protection/windows-information-protection/app-behavior-with-wip)

@@ -1,5 +1,7 @@
 ---
 title: 問題レポートのプライベート データ
+description: Developer Community でのレビュー用に問題のレポートを作成するときに、プライベートなデータの安全性を高める方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739968"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005939"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -47,9 +49,9 @@ ms.locfileid: "90739968"
 
 ## <a name="data-we-collect"></a>収集されるデータ
 
-**問題の報告**が Visual Studio インストーラーから開始された場合、最新のセットアップ ログが収集されます。
+**問題の報告** が Visual Studio インストーラーから開始された場合、最新のセットアップ ログが収集されます。
 
-**問題の報告**が Visual Studio から開始された場合、次の 1 つ以上の種類のデータが収集されます。
+**問題の報告** が Visual Studio から開始された場合、次の 1 つ以上の種類のデータが収集されます。
 
 - イベント ログからの Watson エントリと .NET エントリ
 

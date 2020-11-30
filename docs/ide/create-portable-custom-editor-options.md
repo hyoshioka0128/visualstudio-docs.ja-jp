@@ -1,5 +1,7 @@
 ---
 title: EditorConfig 設定
+description: EditorConfig ファイルをプロジェクトまたはコードベースに追加して、そのコードベースを使用するすべてのユーザーに一貫したコーディング スタイルを使用させる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659252"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006498"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig で移植可能なカスタム エディター設定を作成する
 
@@ -37,7 +39,7 @@ Visual Studio でプロジェクトに EditorConfig ファイルを追加する�
 
 ::: moniker range="vs-2017"
 
-[ **[書式設定]** オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で、**ドキュメントのフォーマット**で適用する EditorConfig 設定を定義することができます。
+[ **[書式設定]** オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で、**ドキュメントのフォーマット** で適用する EditorConfig 設定を定義することができます。
 
 ::: moniker-end
 
@@ -53,7 +55,7 @@ EditorConfig ファイルの設定を利用すれば、使用するエディタ�
 設定はコードベースのファイルに含まれているため、そのコードベースと共に移動します。 EditorConfig 対応のエディターでコード ファイルを開く限り、テキスト エディター設定が実装されます。 EditorConfig ファイルの詳細については、[EditorConfig.org](https://editorconfig.org/) Web サイトをご覧ください。
 
 > [!NOTE]
-> EditorConfig ファイルで設定されている規則は、現時点ではビルド エラーまたは警告として CI/CD パイプラインに適用できません。 すべてのスタイルの逸脱は、Visual Studio エディターと**エラー一覧**でのみ表示されます。
+> EditorConfig ファイルで設定されている規則は、現時点ではビルド エラーまたは警告として CI/CD パイプラインに適用できません。 すべてのスタイルの逸脱は、Visual Studio エディターと **エラー一覧** でのみ表示されます。
 
 ## <a name="supported-settings"></a>サポートされる設定
 
@@ -86,7 +88,7 @@ EditorConfig ファイルをプロジェクトまたはコードベースから�
 
 1. 検索ボックスで、**editorconfig** を検索します。
 
-   2 つの **editorconfig ファイル**項目テンプレートが、検索結果に表示されます。
+   2 つの **editorconfig ファイル** 項目テンプレートが、検索結果に表示されます。
 
    ![Visual Studio の EditorConfig ファイル項目テンプレート](media/editorconfig-item-templates.png)
 
@@ -104,7 +106,7 @@ EditorConfig ファイルをプロジェクトに追加する方法は、他に�
 
 - Visual Studio 用 IntelliCode の[コード推論機能](/visualstudio/intellicode/code-style-inference)では、既存のコードからコードのスタイルが推論されます。 その後、既に定義されているコード スタイルの設定で、空ではない EditorConfig ファイルが作成されます。
 
-- Visual Studio 2019 以降では、 **[ツール]**  >  **[オプション]** の[コード スタイルの設定に基づいて EditorConfig ファイルを生成する](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)ことができます。
+- Visual Studio 2019 以降では、 **[ツール]**  >  **[オプション]** の [コード スタイルの設定に基づいて EditorConfig ファイルを生成する](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)ことができます。
 
 ## <a name="file-hierarchy-and-precedence"></a>ファイルの階層と優先順位
 
@@ -114,7 +116,7 @@ EditorConfig ファイルをプロジェクトに追加する方法は、他に�
 
 ![EditorConfig 階層](../ide/media/vside_editorconfig_hierarchy.png)
 
-すべての設定ではなく一部をオーバーライドする場合には、 *.editorconfig* ファイルで該当する設定だけを指定します。 下位レベルのファイルで明示的に一覧表示したプロパティのみがオーバーライドされます。 上位レベルの *.editorconfig* ファイルからのその他の設定は、引き続き適用されます。 _すべての_上位レベルの *.editorconfig* ファイルからの設定がコードベースのこの部分に適用_されない_ようにするには、次のように ```root=true``` プロパティを下位レベルの *.editorconfig* ファイルに追加します。
+すべての設定ではなく一部をオーバーライドする場合には、 *.editorconfig* ファイルで該当する設定だけを指定します。 下位レベルのファイルで明示的に一覧表示したプロパティのみがオーバーライドされます。 上位レベルの *.editorconfig* ファイルからのその他の設定は、引き続き適用されます。 _すべての_ 上位レベルの *.editorconfig* ファイルからの設定がコードベースのこの部分に適用 _されない_ ようにするには、次のように ```root=true``` プロパティを下位レベルの *.editorconfig* ファイルに追加します。
 
 ```ini
 # top-most EditorConfig file
@@ -166,7 +168,7 @@ EditorConfig ファイルがディレクトリ構造内でプロジェクトの�
 
    "**このファイルの種類のユーザー設定は、このプロジェクトのコーディング規則によりオーバーライドされます。** "
 
-つまり、 **[ツール]** 、 >  **[オプション]** 、 >  **[テキスト エディター]** の任意のエディター設定 (インデントのサイズとスタイル、タブ サイズ、コーディング規則など) が、ディレクトリ構造内でプロジェクトと同じか上位にある EditorConfig ファイルで指定されると、EditorConfig ファイル内の規則が**オプション**の設定をオーバーライドします。 この動作は、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]** の **[プロジェクトのコーディング規則に従います]** オプションを切り替えることで制御できます。 このオプションをオフにすると、Visual Studio の EditorConfig に対するサポートが無効になります。
+つまり、 **[ツール]** 、 >  **[オプション]** 、 >  **[テキスト エディター]** の任意のエディター設定 (インデントのサイズとスタイル、タブ サイズ、コーディング規則など) が、ディレクトリ構造内でプロジェクトと同じか上位にある EditorConfig ファイルで指定されると、EditorConfig ファイル内の規則が **オプション** の設定をオーバーライドします。 この動作は、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]** の **[プロジェクトのコーディング規則に従います]** オプションを切り替えることで制御できます。 このオプションをオフにすると、Visual Studio の EditorConfig に対するサポートが無効になります。
 
 ![[ツール] メニューの [オプション] - [プロジェクトのコーディング規則に従います]](media/coding_conventions_option.png)
 

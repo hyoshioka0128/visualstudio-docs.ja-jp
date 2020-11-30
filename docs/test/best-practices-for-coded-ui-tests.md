@@ -1,5 +1,7 @@
 ---
 title: コード化された UI テストのベスト プラクティス
+description: コード化された UI テストの開発に関する推奨事項について説明します。 これらのガイドラインは、柔軟性のあるコード化された UI テストを作成するのに役立ちます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e71029a185d1b3fea1812b2a4b1cf7bf20effff8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a4a79ca397b46d06e18c62fde2034551ff7afe0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565163"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441808"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
 
@@ -26,7 +28,7 @@ ms.locfileid: "75565163"
 
 柔軟性のあるコード化された UI テストを作成するには、次のガイドラインを使用します。
 
-- 可能な限り**コード化された UI テスト ビルダー**を使用します。
+- 可能な限り **コード化された UI テスト ビルダー** を使用します。
 
 - *UIMap.designer.cs* ファイルを直接変更しないでください。 ファイルを変更すると、その変更内容が上書きされます。
 
@@ -38,7 +40,7 @@ ms.locfileid: "75565163"
 
 - 可能な場合は、記録される各メソッドを 10 未満の操作に制限します。 このモジュール式のアプローチにより、UI が変更された場合にメソッドを置き換えやすくなります。
 
-- 各アサーションは、**コード化された UI テスト ビルダー**を使用して作成します。この場合、アサーション メソッドは *UIMap.Designer.cs* ファイルに自動的に追加されます。
+- 各アサーションは、**コード化された UI テスト ビルダー** を使用して作成します。この場合、アサーション メソッドは *UIMap.Designer.cs* ファイルに自動的に追加されます。
 
 - ユーザー インターフェイス (UI) が変更された場合は、テスト メソッドまたはアサーション メソッドを再記録するか、既存のテスト メソッドの、影響を受けるセクションを再記録します。
 
@@ -52,13 +54,13 @@ ms.locfileid: "75565163"
 
 コード化された UI テストは、ユーザー インターフェイス内の多くの変更に自動的に適応します。 たとえば、UI 要素の位置や色が変更された場合、通常はコード化された UI テストにより適切な要素が検索されます。
 
-テストの実行中、テスト フレームワークは一連の検索プロパティを使って UI コントロールを特定します。 検索プロパティは、**コード化された UI テスト ビルダー**によって作成された *UIMap.Designer.cs* ファイルの定義の各コントロール クラスに適用されます。 検索プロパティには、コントロールの識別に使用できるプロパティ名とプロパティ値の名前と値のペアが含まれます (コントロールの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A> プロパティ、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> プロパティ、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> プロパティなど)。 検索プロパティが変更されない場合、コード化された UI テストにより UI 内のコントロールが正常に検索されます。 検索プロパティが変更された場合、コード化された UI テストでは、UI 内のコントロールとウィンドウを検索するためのヒューリスティックを適用する高度な一致検出アルゴリズムを使用できます。 UI が変更されている場合は、以前識別された要素が確実に検出されるように、その要素の検索プロパティを変更できます。
+テストの実行中、テスト フレームワークは一連の検索プロパティを使って UI コントロールを特定します。 検索プロパティは、**コード化された UI テスト ビルダー** によって作成された *UIMap.Designer.cs* ファイルの定義の各コントロール クラスに適用されます。 検索プロパティには、コントロールの識別に使用できるプロパティ名とプロパティ値の名前と値のペアが含まれます (コントロールの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A> プロパティ、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> プロパティ、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> プロパティなど)。 検索プロパティが変更されない場合、コード化された UI テストにより UI 内のコントロールが正常に検索されます。 検索プロパティが変更された場合、コード化された UI テストでは、UI 内のコントロールとウィンドウを検索するためのヒューリスティックを適用する高度な一致検出アルゴリズムを使用できます。 UI が変更されている場合は、以前識別された要素が確実に検出されるように、その要素の検索プロパティを変更できます。
 
 ## <a name="if-your-user-interface-changes"></a>ユーザー インターフェイスが変更された場合
 
 開発中にユーザー インターフェイスが変更されることはよくあります。 このような変更の影響を軽減する方法を次に示します。
 
-- このコントロールを参照する記録されたメソッドを見つけ、**コード化された UI テスト ビルダー**を使用してこのメソッドの操作を再記録します。 メソッドに同じ名前を使用すると、既存の操作を上書きできます。
+- このコントロールを参照する記録されたメソッドを見つけ、**コード化された UI テスト ビルダー** を使用してこのメソッドの操作を再記録します。 メソッドに同じ名前を使用すると、既存の操作を上書きできます。
 
 - 有効ではなくなったアサーションがコントロールにある場合は、次の操作を実行します。
 
@@ -85,7 +87,7 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>

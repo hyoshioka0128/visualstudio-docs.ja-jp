@@ -1,5 +1,7 @@
 ---
 title: IDE 内で移動する方法
+description: Visual Studio IDE 内で、ウィンドウ間、およびファイル間を移動するいくつかの方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,19 +19,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769851"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597042"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>方法: Visual Studio IDE 内で移動する
 
 統合開発環境 (IDE) は、ユーザー設定やプロジェクトの要件に応じて、いくつかの異なる方法で、ウィンドウからウィンドウへ、またはファイルからファイルへ移動できるように設計されています。 エディターで開いているファイルを順番に表示することも、IDE 内でアクティブなすべてのツール ウィンドウを順番に表示することもできます。 また、最後にアクセスした順序に関係なく、エディターで開いている任意のファイルに直接切り替えることもできます。 これらの機能は、IDE で作業するときの生産性を向上するのに役立ちます。
 
 > [!NOTE]
-> 使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がこの記事に記載されている内容と異なる場合があります。 この記事は、 **[全般]** 設定を念頭に置いて書かれています。 設定を、たとえば、 **[全般]** や **[Visual C++]** に変更するには、 **[ツール]** 、 **[設定のインポートとエクスポート]** 、 **[すべての設定をリセット]** の順に選択します。
+> 使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がこの記事に記載されている内容と異なる場合があります。 この記事は、**[全般]** 設定を念頭に置いて書かれています。 設定を、たとえば、 **[全般]** や **[Visual C++]** に変更するには、 **[ツール]** 、 **[設定のインポートとエクスポート]** 、 **[すべての設定をリセット]** の順に選択します。
 
 ## <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -59,7 +61,7 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 `Window.PreviousDocumentWindowNav` では最後にアクセスしたファイルに移動することができ、`Window.NextDocumentWindowNav` では逆の順序で移動することができます。 **[全般的な開発設定]** では、**Shift**+**Alt**+**F7** が `Window.PreviousDocumentWindowNav` に、**Alt**+**F7** が `Window.NextDocumentWindowNav` に割り当てられています。
 
 > [!NOTE]
-> 使っている設定の組み合わせの中に、このコマンドに割り当てられているショートカット キーの組み合わせがない場合は、 **[オプション]** ダイアログ ボックスの **[キーボード]** ページを使って、独自のカスタム コマンドを割り当てることができます。 詳しくは、「[キーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
+> 使っている設定の組み合わせの中に、このコマンドに割り当てられているショートカット キーの組み合わせがない場合は、**[オプション]** ダイアログ ボックスの **[キーボード]** ページを使って、独自のカスタム コマンドを割り当てることができます。 詳しくは、「[キーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>エディターで特定のファイルに切り替えるには
 
@@ -70,20 +72,20 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
     \- または
 
-- エディターの右上隅で、 **[アクティブなファイル]** ボタンを選び、切り替え先のファイルをリストから選びます。
+- エディターの右上隅で、**[アクティブなファイル]** ボタンを選び、切り替え先のファイルをリストから選びます。
 
     \- または
 
 - メニュー バーで **[ウィンドウ]**  >  **[ウィンドウ]** の順に選択します。
 
-- 一覧で表示するファイルを選び、 **[開く]** を選びます。
+- 一覧で表示するファイルを選び、**[開く]** を選びます。
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>IDE のツール ウィンドウ間を移動する
 
 **IDE Navigator** では、IDE で開いているツール ウィンドウを順番に表示することもできます。 2 つのコマンドのいずれかを使って **IDE Navigator** にアクセスし、表示したい順番でツール ウィンドウを切り替えることができます。 `Window.PreviousToolWindowNav` では最後にアクセスしたファイルに移動することができ、`Window.NextToolWindowNav` では逆の順序で移動することができます。 **[全般的な開発設定]** では、**Shift**+**Alt**+**F7** が `Window.PreviousDocumentWindowNav` に、**Alt**+**F7** が `Window.NextDocumentWindowNav` に割り当てられています。
 
 > [!NOTE]
-> 使っている設定の組み合わせの中に、このコマンドに割り当てられているショートカット キーの組み合わせがない場合は、 **[オプション]** ダイアログ ボックスの **[キーボード]** ページを使って、独自のカスタム コマンドを割り当てることができます。 詳しくは、「[キーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
+> 使っている設定の組み合わせの中に、このコマンドに割り当てられているショートカット キーの組み合わせがない場合は、**[オプション]** ダイアログ ボックスの **[キーボード]** ページを使って、独自のカスタム コマンドを割り当てることができます。 詳しくは、「[キーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>IDE で特定のツール ウィンドウに切り替えるには
 

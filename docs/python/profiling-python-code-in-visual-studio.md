@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810667"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973802"
 ---
 # <a name="profile-python-code"></a>Python コードのプロファイリング
 
@@ -23,7 +23,7 @@ CPython ベースのインタープリターを使っている場合、Python �
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython ベースのインタープリターのプロファイリング
 
-**[分析]**  >  **[Launch Python Profiling]\(Python プロファイリングの開始\)** メニュー コマンドでプロファイリングを開始すると、構成ダイアログが開きます。
+**[デバッグ]**  >  **[Launch Python Profiling]\(Python プロファイリングの開始\)** メニュー コマンドを使用してプロファイリングを開始すると、構成ダイアログが開きます。
 
 ![プロファイリング構成ダイアログ](media/profiling-start.png)
 

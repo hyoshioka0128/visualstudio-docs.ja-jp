@@ -1,5 +1,7 @@
 ---
 title: データ ドリブン単体テストを作成する
+description: マネージド コード用の Microsoft 単体テスト フレームワークを使用し、データ ソースから値を取得する単体テスト メソッドを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287988"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441197"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>方法: データ ドリブン単体テストを作成する
+# <a name="how-to-create-a-data-driven-unit-test"></a>方法:データ ドリブン単体テストを作成する
 
 マネージド コード用の Microsoft 単体テスト フレームワークを使用し、データ ソースから値を取得する単体テスト メソッドを設定できます。 メソッドはデータ ソース内の各行に対して連続して実行されるため、単一のメソッドを使用してさまざまな入力を簡単にテストできます。
 
@@ -63,11 +65,11 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="create-a-data-source"></a>データ ソースの作成
+## <a name="create-a-data-source"></a>データ ソースを作成する
 
 `AddIntegers` メソッドをテストするには、パラメーターの値の範囲と返される必要のある合計を指定するデータ ソースを作成します。 この例では、`MathsData` という名前の Sql Compact データベースと、次の列の名前と値を含む `AddIntegersData` という名前のテーブルを作成します
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -89,7 +91,7 @@ public TestContext TestContext
 テスト メソッドでは、`TestContext` の `DataRow` インデクサー プロパティを使用してデータにアクセスします。
 
 > [!NOTE]
-> .NET Core では [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性がサポートされていません。 .NET Core または UWP 単体テスト プロジェクトでこの方法でテスト データにアクセスしようとすると、 **"'TestContext' does not contain a definition for 'DataRow' and no accessible extension method 'DataRow' accepting a first argument of type 'TestContext' could be found (are you missing a using directive or an assembly reference?)"** ('TestContext' に 'DataRow' の定義が含まれておらず、型 'TestContext' の最初の引数を受け取るアクセス可能な拡張メソッド 'DataRow' が見つかりません (using ディレクティブかアセンブリ参照が不足していませんか?)) のようなエラーが表示されます。
+> .NET Core では [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性がサポートされていません。 .NET Core または UWP 単体テスト プロジェクトでこの方法でテスト データにアクセスしようとすると、**"'TestContext' does not contain a definition for 'DataRow' and no accessible extension method 'DataRow' accepting a first argument of type 'TestContext' could be found (are you missing a using directive or an assembly reference?)"** ('TestContext' に 'DataRow' の定義が含まれておらず、型 'TestContext' の最初の引数を受け取るアクセス可能な拡張メソッド 'DataRow' が見つかりません (using ディレクティブかアセンブリ参照が不足していませんか?)) のようなエラーが表示されます。
 
 ## <a name="write-the-test-method"></a>テスト メソッドの記述
 
@@ -160,9 +162,9 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>テストを実行して結果を表示する
 
-テスト メソッドの記述が完了したら、テスト プロジェクトを構築します。 **[テストを実行しない]** グループの**テスト エクスプローラー**に、テスト メソッドが表示されます。 テストを実行して、記述し、再実行すると、**テスト エクスプローラー**に **[失敗したテスト]** 、 **[成功したテスト]** 、 **[テストを実行しない]** のグループの結果が表示されます。 **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。
+テスト メソッドの記述が完了したら、テスト プロジェクトを構築します。 **[テストを実行しない]** グループの **テスト エクスプローラー** に、テスト メソッドが表示されます。 テストを実行して、記述し、再実行すると、**テスト エクスプローラー** に **[失敗したテスト]** 、 **[成功したテスト]** 、 **[テストを実行しない]** のグループの結果が表示されます。 **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。
 
-テストの実行中は、**テスト エクスプローラー**の上部にあるテスト結果バーがアニメーションで表示されます。 テストの実行の終了時に、すべてのテストが成功した場合はバーが緑色になり、いずれかのテストが失敗した場合は赤色になります。 **テスト エクスプローラー** ウィンドウの下部の詳細ウィンドウに、テストの実行の概要が表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。
+テストの実行中は、**テスト エクスプローラー** の上部にあるテスト結果バーがアニメーションで表示されます。 テストの実行の終了時に、すべてのテストが成功した場合はバーが緑色になり、いずれかのテストが失敗した場合は赤色になります。 **テスト エクスプローラー** ウィンドウの下部の詳細ウィンドウに、テストの実行の概要が表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。
 
 > [!NOTE]
 > データの各行に対する結果と、1 つのサマリー結果もあります。 データの各行のテストが合格すると、サマリー実行は **[合格]** と表示されます。 いずれかのデータ行のテストが失敗すると、サマリー実行は **[失敗]** と表示されます。

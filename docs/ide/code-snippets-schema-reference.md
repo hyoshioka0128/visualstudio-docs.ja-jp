@@ -1,5 +1,7 @@
 ---
 title: コード スニペット スキーマ リファレンス
+description: IntelliSense コード スニペットの XML スキーマと、それらを使用して自身の生産性を向上させる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183679"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006472"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -44,7 +46,7 @@ IntelliSense コード スニペットとは、Visual Studio でのアプリケ�
 
 ## <a name="author-element"></a>Author 要素
 
-スニペット作成者の名前を指定します。 **コード スニペット マネージャー**には、コード スニペットの `Author` 要素に格納された名前が表示されます。
+スニペット作成者の名前を指定します。 **コード スニペット マネージャー** には、コード スニペットの `Author` 要素に格納された名前が表示されます。
 
 ```xml
 <Author>
@@ -122,7 +124,7 @@ Code 要素に使用できる属性には次の 3 つがあります。
    |`SQL`|SQL のコード スニペットであることを示します。|
    |`HTML`|HTML のコード スニペットであることを示します。|
 
-- **Kind** - スニペットに含まれるコードの種類を指定する_省略可能な_属性。 値は次のいずれかになります。
+- **Kind** - スニペットに含まれるコードの種類を指定する _省略可能な_ 属性。 値は次のいずれかになります。
 
    |[値]|説明|
    |-----|-----------|
@@ -588,7 +590,7 @@ Visual Studio がコード スニペットをどのように挿入するかを�
 
 ## <a name="title-element"></a>Title 要素
 
-コード スニペットのタイトルを指定します。 コード スニペットの `Title` 要素に格納されたタイトルは、**コード スニペット ピッカー**と、**コード スニペット マネージャー**内のコード スニペットの説明に表示されます。
+コード スニペットのタイトルを指定します。 コード スニペットの `Title` 要素に格納されたタイトルは、**コード スニペット ピッカー** と、**コード スニペット マネージャー** 内のコード スニペットの説明に表示されます。
 
 ```xml
 <Title>

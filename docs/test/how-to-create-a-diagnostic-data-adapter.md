@@ -1,5 +1,7 @@
 ---
 title: '方法: 診断データ アダプターを作成する'
+description: Visual Studio を使用してクラス ライブラリを作成し、診断データ アダプター API を追加することで、診断データ アダプターを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928620"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439850"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>方法: 診断データ アダプターを作成する
 
-*診断データ アダプター*を作成するには、Visual Studio を使用してクラス ライブラリを作成し、Visual Studio Enterprise に用意されている診断データ アダプター API をクラス ライブラリに追加します。 テストの実行中に発生したイベントを処理するときに、フレームワークによって提供される <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に対し、ストリームまたはファイルとして情報を送信します。 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に送信したストリームまたはファイルは、テスト完了時点でテスト結果に対する添付ファイルとして保存されます。 テスト結果からバグを作成すると、または [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] を使用すると、ファイルはバグにもリンクされます。
+*診断データ アダプター* を作成するには、Visual Studio を使用してクラス ライブラリを作成し、Visual Studio Enterprise に用意されている診断データ アダプター API をクラス ライブラリに追加します。 テストの実行中に発生したイベントを処理するときに、フレームワークによって提供される <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に対し、ストリームまたはファイルとして情報を送信します。 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に送信したストリームまたはファイルは、テスト完了時点でテスト結果に対する添付ファイルとして保存されます。 テスト結果からバグを作成すると、または [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] を使用すると、ファイルはバグにもリンクされます。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -50,11 +52,11 @@ ms.locfileid: "91928620"
 
 ## <a name="create-and-install-a-diagnostic-data-adapter"></a>診断データ アダプターを作成してインストールする
 
-1. 新しい**クラス ライブラリ** プロジェクトを作成します。
+1. 新しい **クラス ライブラリ** プロジェクトを作成します。
 
 2. アセンブリ **Microsoft.VisualStudio.QualityTools.ExecutionCommon** を追加します。
 
-   1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
+   1. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
 
    2. **[.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll** を探します。
 
@@ -62,7 +64,7 @@ ms.locfileid: "91928620"
 
 3. アセンブリ **Microsoft.VisualStudio.QualityTools.Common** を追加します。
 
-   1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
+   1. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
 
    2. **[/.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.Common.dll** を探します。
 

@@ -1,5 +1,7 @@
 ---
 title: コード化された UI テスト ログを使用したコード化された UI テストの分析
+description: コード化された UI テスト ログについて説明します。これにより、コード化された UI テストの実行に関する重要な情報をフィルター処理して記録できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036146"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442496"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>コード化された UI テスト ログを使用したコード化された UI テストの分析
 
@@ -26,7 +28,7 @@ ms.locfileid: "90036146"
 
 - テスト プロジェクトに *App.config* ファイルが存在しない場合:
 
-   1. テストを実行すると起動される *QTAgent\*.exe* プロセスを判断します。 これを行う方法の 1 つは、Windows **タスク マネージャー**の **[詳細]** タブを観察することです。
+   1. テストを実行すると起動される *QTAgent\*.exe* プロセスを判断します。 これを行う方法の 1 つは、Windows **タスク マネージャー** の **[詳細]** タブを観察することです。
 
    2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* フォルダーから、対応する *.config* ファイルを開きます。 たとえば、実行しているプロセスが *QTAgent_40.exe* である場合、*QTAgent_40.exe.config* を開きます。
 
@@ -60,20 +62,20 @@ ms.locfileid: "90036146"
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>手順 2: コード化された UI テストを実行してログを表示する
 
-*QTAgent\*.exe.config* ファイルに変更を加えてコード化された UI テストを実行すると、**テスト エクスプローラー**の結果に、出力リンクが表示されます。 トレース レベルが **verbose** に設定されていると、ログ ファイルはテストが失敗した場合だけでなく、テストが成功した場合にも生成されます。
+*QTAgent\*.exe.config* ファイルに変更を加えてコード化された UI テストを実行すると、**テスト エクスプローラー** の結果に、出力リンクが表示されます。 トレース レベルが **verbose** に設定されていると、ログ ファイルはテストが失敗した場合だけでなく、テストが成功した場合にも生成されます。
 
 1. **[テスト]** メニューの **[ウィンドウ]** を選択し、 **[テスト エクスプローラー]** を選択します。
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-3. **テスト エクスプローラー**で、実行するコード化された UI テストを選択し、ショートカット メニューを開いて **[選択したテストの実行]** を選択します。
+3. **テスト エクスプローラー** で、実行するコード化された UI テストを選択し、ショートカット メニューを開いて **[選択したテストの実行]** を選択します。
 
      自動テストが実行され、成功したか失敗したかが示されます。
 
     > [!TIP]
-    > **テスト エクスプローラー**を表示するには、**[テスト]**、**[Windows]** の順に選択し、**[テスト エクスプローラー]** を選択します。
+    > **テスト エクスプローラー** を表示するには、**[テスト]**、**[Windows]** の順に選択し、**[テスト エクスプローラー]** を選択します。
 
-4. **テスト エクスプローラー**の結果で、**[出力]** リンクを選択します。
+4. **テスト エクスプローラー** の結果で、**[出力]** リンクを選択します。
 
      ![テスト エクスプローラーの出力リンク](../test/media/cuit_htmlactionlog1.png)
 

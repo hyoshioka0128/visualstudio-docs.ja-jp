@@ -1,5 +1,7 @@
 ---
 title: Web パフォーマンス テストへのデータ ソースの追加
+description: データをバインドして、同じテストに異なる複数の値を指定する方法について説明します (フォーム ポスト パラメーターに異なる複数の値を指定するなど)。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 94ad53e4ac3d65bfe6cf08bf03f1f79c2075e03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c43545af9063ad83c61631b59032751fd9526a12
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289067"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442202"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web パフォーマンス テストへのデータ ソースの追加
 
@@ -32,7 +34,7 @@ ms.locfileid: "85289067"
 
 ![Web パフォーマンス テストが含まれたソリューション](../test/media/web_test_databinding_solution.png)
 
-## <a name="create-a-sql-database"></a>SQL データベースの作成
+## <a name="create-a-sql-database"></a>SQL データベースを作成する
 
 ::: moniker range="vs-2017"
 
@@ -128,7 +130,7 @@ ms.locfileid: "85289067"
 
      ![ColorName フィールドを RadioButtonList1 値にバインドする](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. **ソリューション エクスプローラー**で *Local.testsettings* ファイルを開き、 **[データ ソース行ごとに 1 つ実行]** をクリックします。
+2. **ソリューション エクスプローラー** で *Local.testsettings* ファイルを開き、**[データ ソース行ごとに 1 つ実行]** をクリックします。
 
      ![テスト設定ファイルを編集します。](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -215,7 +217,7 @@ ms.locfileid: "85289067"
 
      ![Web パフォーマンス テストにデータ ソースを追加する](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. *schema.ini* ファイルを使用する場合は、データ ソースとして (CSV ファイルではなく) **データベース**を選択し、名前を指定します。
+4. *schema.ini* ファイルを使用する場合は、データ ソースとして (CSV ファイルではなく) **データベース** を選択し、名前を指定します。
 
      ![データベース データ ソースの追加](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -231,7 +233,7 @@ ms.locfileid: "85289067"
 
      ![[詳細設定] を選択する](../test/media/web_test_databinding_advanced.png)
 
-8. "プロバイダー" プロパティについて Microsoft.Jet.OLEDB.4.0 を選択し、 **[拡張プロパティ]** を Text;HDR=NO に設定します。
+8. "プロバイダー" プロパティについて Microsoft.Jet.OLEDB.4.0 を選択し、**[拡張プロパティ]** を Text;HDR=NO に設定します。
 
      ![詳細設定プロパティの適用](../test/media/web_test_databinding_advancedproperties.png)
 

@@ -1,5 +1,7 @@
 ---
 title: '[アセンブリ情報] ダイアログ ボックス'
+description: '[アセンブリ情報] ダイアログ ボックスの概要、およびそれを使用して .NET Framework グローバル アセンブリ属性の値を指定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,25 +14,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809008"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871341"
 ---
 # <a name="assembly-information-dialog-box"></a>[アセンブリ情報] ダイアログ ボックス
 
-[アセンブリ情報] ダイアログ ボックスは、.NET Framework グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 ソリューション エクスプローラーでの AssemblyInfo ファイルは、Visual Basic プロジェクトの場合は **[マイ プロジェクト]** ノードにあります (表示するには **[すべてのファイルを表示]** をクリックします)。 C# プロジェクトの場合は、 **[プロパティ]** にあります。 詳しくは、「[属性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)」をご覧ください。
+[アセンブリ情報] ダイアログ ボックスは、.NET Framework グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 ソリューション エクスプローラーでの AssemblyInfo ファイルは、Visual Basic プロジェクトの場合は **[マイ プロジェクト]** ノードにあります (表示するには **[すべてのファイルを表示]** をクリックします)。 C# プロジェクトの場合は、**[プロパティ]** にあります。 詳しくは、「[属性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)」をご覧ください。
 
-このダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 **[アプリケーション]** ページで、 **[アセンブリ情報]** ボタンを選択します。
+このダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー** でプロジェクト ノードを選択し、**[プロジェクト]** メニューの **[プロパティ]** を選択します。**[アプリケーション]** ページで、**[アセンブリ情報]** ボタンを選択します。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
 **タイトル**\
 アセンブリ マニフェストのタイトルを指定します。 <xref:System.Reflection.AssemblyTitleAttribute> に相当します。
 
-**Description**\
+**説明**\
 アセンブリ マニフェストの説明を指定します (省略可能)。 <xref:System.Reflection.AssemblyDescriptionAttribute> に相当します。
 
 **会社名**\
@@ -65,7 +67,7 @@ Win32 ファイル バージョン リソースの特定のバージョン番号
 > [!NOTE]
 > .NET Framework クラス ライブラリで NuGet パッケージを生成するときにこれらのプロパティを設定する方法の詳細については、「[パッケージのプロジェクト プロパティを構成する](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [[アプリケーション] ページ (プロジェクト デザイナー)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [属性](/previous-versions/z0w1kczw(v=vs.140))

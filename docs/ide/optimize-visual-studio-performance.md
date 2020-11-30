@@ -1,6 +1,8 @@
 ---
 title: Visual Studio が遅いときにパフォーマンスを改善する
 titleSuffix: ''
+description: Visual Studio の動作が遅いときに、そのパフォーマンスを向上させる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +14,14 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596997"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871471"
 ---
-# <a name="optimize-visual-studio-performance"></a>Visual Studio のパフォーマンスの最適化
+# <a name="optimize-visual-studio-performance"></a>Visual Studio のパフォーマンスを最適化する
 
 この記事では、Visual Studio の動作が遅いときに試すべきことをいくつか紹介します。 パフォーマンス改善案は他にもあり、「[Visual Studio のパフォーマンスのヒントとテクニック](../ide/visual-studio-performance-tips-and-tricks.md)」でご確認いただけます。
 
@@ -29,7 +31,7 @@ Visual Studio 2015 を現在使用している場合、[Visual Studio 2017](http
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 を既に使用している場合、15.6 以降のバージョンを実行していることを確認してください。 バージョン 15.6 ではソリューションの読み込みが最大 2 ～ 3 倍速くなることがデータによって示されています。 [ここから](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)ダウンロードしてください。
+Visual Studio 2017 を既に使用している場合、15.6 以降のバージョンを実行していることを確認してください。 バージョン 15.6 ではソリューションの読み込みが最大 2 ～ 3 倍速くなることがデータによって示されています。 [こちら](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)でダウンロードできます。
 
 ::: moniker-end
 
@@ -49,7 +51,7 @@ SSD を追加する場合、最適なパフォーマンスを得るために、�
 
 ## <a name="help-us-improve"></a>改善にご協力ください
 
-お客様からのフィードバックは品質向上に役立ちます。 **問題の報告**機能を利用してトレースを “記録” し、Microsoft にご送信ください。 **[クイック起動]** の横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[問題の報告]** の順に選択します。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio.md)」を参照してください。
+お客様からのフィードバックは品質向上に役立ちます。 **問題の報告** 機能を利用してトレースを “記録” し、Microsoft にご送信ください。 **[クイック起動]** の横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[問題の報告]** の順に選択します。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

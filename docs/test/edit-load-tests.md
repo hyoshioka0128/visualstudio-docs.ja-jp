@@ -1,5 +1,7 @@
 ---
 title: ロード テストの編集
+description: ロード テストを定義する、シナリオ、カウンター セット、実行設定の違いについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b95689871a987c018720c529743b8447f39b2bf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81825b2a9060d75a792e73519486275fd34569a4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288703"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441470"
 ---
 # <a name="edit-load-tests"></a>ロード テストを編集する
 
@@ -22,7 +24,7 @@ ms.locfileid: "85288703"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-ロード テストは、*シナリオ*、*カウンター セット*、*実行設定*によって定義されます。 次の図では、[シナリオ](../test/edit-load-test-scenarios.md)、[カウンター セット](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)、[実行設定](../test/load-test-run-settings-properties.md)の違いを確認できます。
+ロード テストは、*シナリオ*、*カウンター セット*、*実行設定* によって定義されます。 次の図では、[シナリオ](../test/edit-load-test-scenarios.md)、[カウンター セット](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)、[実行設定](../test/load-test-run-settings-properties.md)の違いを確認できます。
 
 ![ロード テストのアーキテクチャ](../test/media/load_test_editor.png)
 
@@ -38,17 +40,17 @@ Web パフォーマンスとロード テスト プロジェクトは、Visual S
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>パフォーマンス カウンター セットを構成し、管理する
 
-ロード テストでは、テクノロジ単位で整理された名前付きカウンター セットが提供されます。これらのカウンター セットは、パフォーマンス カウンター データを分析する際に役立ちます。 カウンター セットには、ロード テスト、IIS、ASP.NET、SQL などがあります。 **新しいロード テスト ウィザード**でロード テストを作成すると、ロード テストに含めるように指定したコンピューターに対して、定義済みの重要なカウンターの初期セットが構成されます。 カウンターは、**ロード テスト エディター**で管理します。
+ロード テストでは、テクノロジ単位で整理された名前付きカウンター セットが提供されます。これらのカウンター セットは、パフォーマンス カウンター データを分析する際に役立ちます。 カウンター セットには、ロード テスト、IIS、ASP.NET、SQL などがあります。 **新しいロード テスト ウィザード** でロード テストを作成すると、ロード テストに含めるように指定したコンピューターに対して、定義済みの重要なカウンターの初期セットが構成されます。 カウンターは、**ロード テスト エディター** で管理します。
 
 詳しくは、「[ロード テストでのコンピューターのカウンター セットとしきい値規則を指定する](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)」をご覧ください。
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>ロード テストの実行設定を構成し、管理する
 
-実行設定とは、ロード テストの実行方法に影響を与えるプロパティです。 実行設定は、 **[プロパティ]** ウィンドウでカテゴリ別に整理されています。
+実行設定とは、ロード テストの実行方法に影響を与えるプロパティです。 実行設定は、**[プロパティ]** ウィンドウでカテゴリ別に整理されています。
 
 詳細については、「[ロード テストの実行設定の構成](../test/configure-load-test-run-settings.md)」と「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [しきい値規則違反の分析](../test/analyze-threshold-rule-violations-in-load-tests.md)

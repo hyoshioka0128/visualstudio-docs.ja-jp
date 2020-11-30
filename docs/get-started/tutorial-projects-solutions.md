@@ -1,20 +1,23 @@
 ---
 title: プロジェクトとソリューションの概要
+description: プロジェクトとソリューションの違いと、Visual Studio でそれらを使用する方法について説明します。
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704054"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903937"
 ---
 # <a name="learn-about-projects-and-solutions"></a>プロジェクトとソリューションについて理解する
 
@@ -55,7 +58,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. 左側のウィンドウで、 **[その他のプロジェクトの種類]** を展開し、 **[Visual Studio ソリューション]** を選択します。 中央のウィンドウで、 **[空のソリューション]** テンプレートを選択します。 ソリューションに「**QuickSolution**」という名前を付けて、**[OK]** ボタンを選択します。
 
-   ![Visual Studio 2017 での空のソリューション テンプレート](media/tutorial-projects-new-solution.png)
+   ![Visual Studio 2017 での空のソリューション テンプレート](media/tutorial-projects-new-solution.png "Visual Studio 2017 での空のソリューション テンプレート。")
 
    **[スタート ページ]** が閉じて、Visual Studio ウィンドウの右側にある **ソリューション エクスプローラー** にソリューションが表示されます。 多くの場合、**ソリューション エクスプローラー** を使用して、プロジェクトの内容を参照することになります。
 
@@ -69,7 +72,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 3. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**空のソリューション**」と入力し、 **[空のソリューション]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![Visual Studio 2019 での空のソリューション テンプレート](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Visual Studio 2019 での空のソリューション テンプレート](media/vs-2019/tutorial-projects-blank-solution-template.png "Visual Studio 2019 での空のソリューション テンプレート。")
 
     > [!TIP]
     > 複数のワークロードがインストールされている場合、 **[空のソリューション]** テンプレートは、検索結果の一覧の先頭に表示されないことがあります。 一覧の **[検索に基づく他の結果]** セクションまでスクロールしてみてください。 そこに表示されているはずです。
@@ -97,7 +100,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    > [!NOTE]
    > ダイアログ ボックスの左側のウィンドウに **Visual C#** が表示されない場合は、 **.NET デスクトップ開発** Visual Studio ワークロードをインストールする必要があります。 Visual Studio は、ワークロード ベースのインストールを使って、行われる開発の種類に必要なコンポーネントだけをインストールします。 新しいワークロードをインストールする簡単な方法は、 **[新しいプロジェクトの追加]** ダイアログ ボックスの左下隅にある **[Visual Studio インストーラーを開く]** リンクをクリックすることです。 Visual Studio インストーラーが起動した後、 **[.NET デスクトップ開発]** ワークロードを選択して、 **[変更]** ボタンを選択します。
    >
-   > ![Visual Studio インストーラー リンクを開く](media/tutorial-projects-open-installer.png)
+   > ![Visual Studio インストーラー リンクを開く](media/tutorial-projects-open-installer.png "Visual Studio 2017 での [新しいプロジェクトの追加] ダイアログの [Visual Studio インストーラーを開く] リンク。")
 
 ::: moniker-end
 
@@ -116,9 +119,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    **ソリューション エクスプローラー** で、ソリューションの下に QuickDate という名前のプロジェクトが表示されます。 現在のところ、このプロジェクトには *App.config* と呼ばれるファイルが 1 つ含まれています。
 
    > [!NOTE]
-   > **[空のプロジェクト (.NET Framework)]** テンプレートが表示されない場合は、 **.NET デスクトップ開発** Visual Studio ワークロードをインストールする必要があります。 Visual Studio は、ワークロード ベースのインストールを使って、行われる開発の種類に必要なコンポーネントだけをインストールします。 新しいプロジェクトを作成するときに新しいワークロードをインストールする簡単な方法は、 **[探しているものが見つからない場合]** というテキストの下にある **[さらにツールと機能をインストールする]** リンクを選択することです。 Visual Studio インストーラーが起動した後、 **[.NET デスクトップ開発]** ワークロードを選択して、 **[変更]** ボタンを選択します。
+   > **[空のプロジェクト (.NET Framework)]** テンプレートが表示されない場合は、 **.NET デスクトップ開発** Visual Studio ワークロードをインストールする必要があります。 Visual Studio は、ワークロード ベースのインストールを使って、行われる開発の種類に必要なコンポーネントだけをインストールします。
    >
-   > ![Visual Studio インストーラー リンクを開く](media/vs-2019/tutorial-projects-open-installer.png)
+   >新しいプロジェクトを作成するときに新しいワークロードをインストールする簡単な方法は、 **[探しているものが見つからない場合]** というテキストの下にある **[さらにツールと機能をインストールする]** リンクを選択することです。 Visual Studio インストーラーが起動した後、 **[.NET デスクトップ開発]** ワークロードを選択して、 **[変更]** ボタンを選択します。
+   >
+   > ![Visual Studio インストーラー リンクを開く](media/vs-2019/tutorial-projects-open-installer.png "Visual Studio での [新しいプロジェクトの作成] ダイアログの [Visual Studio インストーラーを開く] リンク。")
 
 ::: moniker-end
 
@@ -174,7 +179,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    2 つ目のプロジェクトが **ソリューション エクスプローラー** に追加され、*UnitTest1.cs* という名前のファイルがエディターで開きます。
 
-   ![2 つのプロジェクトを含む Visual Studio ソリューション エクスプローラー](media/tutorial-projects-solution-explorer.png)
+   ![2 つのプロジェクトを含む Visual Studio ソリューション エクスプローラー](media/tutorial-projects-solution-explorer.png "Visual Studio 2017 での 2 つのプロジェクトを含むソリューション エクスプローラー。")
 
 ::: moniker-end
 
@@ -188,7 +193,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    2 つ目のプロジェクトが **ソリューション エクスプローラー** に追加され、*UnitTest1.cs* という名前のファイルがエディターで開きます。
 
-   ![2 つのプロジェクトを含む Visual Studio ソリューション エクスプローラー](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![2 つのプロジェクトを含む Visual Studio ソリューション エクスプローラー](media/vs-2019/tutorial-projects-solution-explorer.png "Visual Studio での 2 つのプロジェクトを含むソリューション エクスプローラー。")
 
 ::: moniker-end
 
@@ -204,7 +209,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    **QuickDate** プロジェクトへの参照が追加されます。
 
-   ![プロジェクト参照が示されている Visual Studio 2019 のソリューション エクスプローラー](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![プロジェクト参照が示されている Visual Studio 2019 のソリューション エクスプローラー](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Visual Studio でのプロジェクト参照が示されているソリューション エクスプローラー。")
 
 ## <a name="add-test-code"></a>テスト コードを追加する
 
@@ -240,7 +245,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    コード ファイルは、次のようになります。
 
-   ![CSharp コード](media/tutorial-projects-cs-code.png)
+   ![CSharp コード](media/tutorial-projects-cs-code.png "この記事の「テスト コードを追加する」セクションのコード スニペット。")
 
 ## <a name="project-properties"></a>プロジェクトのプロパティ
 
@@ -250,7 +255,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    **[アプリケーション]** タブで、プロジェクトの "*プロパティ ページ*" が開きます。プロパティ ページには、プロジェクトのさまざまな設定が含まれます。 **QuickTest** プロジェクトのアセンブリ名が "QuickTest" であることに注目してください。 これを変更する場合は、ここでその変更を行います。 テスト プロジェクトをビルドすると、結果として得られるバイナリ ファイルの名前は *QuickTest.dll* から、選択した任意の名前に変わります。
 
-   ![プロジェクトのプロパティ](media/tutorial-projects-netcore-properties.png)
+   ![プロジェクトのプロパティ](media/tutorial-projects-netcore-properties.png "Visual Studio での [プロジェクトのプロパティ] ダイアログ。")
 
 1. **[ビルド]** や **[デバッグ]** など、プロジェクトのプロパティ ページの他のいくつかのタブを見てみます。 これらのタブは、プロジェクトの種類によって異なります。
 
@@ -258,7 +263,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 単体テストが動作していることを確認する場合は、メニュー バーから **[テスト]**  >  **[実行]**  >  **[すべてのテスト]** を選択します。 **テスト エクスプローラー** と呼ばれるウィンドウが開くので、**TestGetCurrentDate** テストが成功しているか確認する必要があります。
 
-![テストに合格したことを示す Visual Studio のテスト エクスプローラー](media/tutorial-projects-test-explorer.png)
+![テストに合格したことを示す Visual Studio のテスト エクスプローラー](media/tutorial-projects-test-explorer.png "テストに合格したことを示す Visual Studio のテスト エクスプローラー。")
 
 ::: moniker range="vs-2017"
 

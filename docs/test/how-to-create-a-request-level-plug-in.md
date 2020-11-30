@@ -1,5 +1,6 @@
 ---
 title: 要求レベル プラグインを作成する (Web パフォーマンス テスト)
+description: 個々の要求に対して Web パフォーマンス テスト プラグインを使用し、Web パフォーマンス テストの主要な宣言ステートメントの外部でコードを再利用する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f136214b787820396fdbcff37f9f3b78574e9c8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb0b5339507866b8e6c134db2951c5ae94f108b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810273"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441066"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>方法: 要求レベルのプラグインを作成する
 
@@ -31,25 +32,25 @@ ms.locfileid: "90810273"
 
 ## <a name="to-create-a-request-level-plug-in"></a>要求レベルのプラグインを作成するには
 
-1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー** で、ソリューションを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
 
-2. 新しい**クラス ライブラリ** プロジェクトを作成します。
+2. 新しい **クラス ライブラリ** プロジェクトを作成します。
 
-3. **ソリューション エクスプローラー**で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
+3. **ソリューション エクスプローラー** で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
 4. **[.NET]** タブをクリックします。スクロール ダウンし、 **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、 **[OK]** をクリックします。
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** への参照が**ソリューション エクスプローラー**内の **[参照設定]** フォルダーに追加されます。
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** への参照が **ソリューション エクスプローラー** 内の **[参照設定]** フォルダーに追加されます。
 
-5. **ソリューション エクスプローラー**で、Web パフォーマンス テスト要求のテスト プラグインの追加先であるロード テストを含んでいる Web パフォーマンスとロード テスト プロジェクトの最上位ノードを右クリックします。 **[参照の追加]** をクリックします。
+5. **ソリューション エクスプローラー** で、Web パフォーマンス テスト要求のテスト プラグインの追加先であるロード テストを含んでいる Web パフォーマンスとロード テスト プロジェクトの最上位ノードを右クリックします。 **[参照の追加]** をクリックします。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
 6. **[プロジェクト]** タブ、 **[クラス ライブラリ プロジェクト]** 、 **[OK]** の順に選択します。
 
-7. **コード エディター**で、プラグインのコードを記述します。 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> クラスから派生する新しいパブリック クラスを作成します。
+7. **コード エディター** で、プラグインのコードを記述します。 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> クラスから派生する新しいパブリック クラスを作成します。
 
 8. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> イベント ハンドラーと <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> イベント ハンドラーのいずれかまたは両方にコードを実装します。 実装のサンプルについては、次の例を参照してください。
 

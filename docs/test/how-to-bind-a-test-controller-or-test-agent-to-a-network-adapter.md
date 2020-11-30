@@ -1,5 +1,6 @@
 ---
 title: ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする
+description: 複数のネットワーク アダプターに対してインストールされている場合に備えて、IP アドレスを使用してネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc590973a0a98cd9c5108c9cfe44ea957073b313
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3f4c215937f6637eedfa869a5e3abd701966c693
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810299"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442353"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>方法: ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする
 

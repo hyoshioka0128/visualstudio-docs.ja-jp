@@ -1,5 +1,7 @@
 ---
 title: 診断データとシステムによって生成されたログ
+description: Visual Studio のシステムによって生成されたログ、収集されるデータの種類、およびそれを使用して問題を修正し、製品の品質を向上させる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387253"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005926"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio で収集したシステムによって生成されたログ
 
@@ -24,7 +26,7 @@ Visual Studio では、クラッシュ、UI の無応答、CPU またはメモ�
 
 - 高い CPU 使用率と無応答については、関連する Visual Studio のスレッドのスタック トレースが収集されます。
 
-- いくつかのスレッドのスタック トレースでは問題の原因を特定するために十分ではない場合、たとえば、クラッシュ、無応答、高いメモリ使用率については、メモリ *ダンプ*が収集されます。 ダンプは、エラーが発生したときのプロセスの状態を表します。
+- いくつかのスレッドのスタック トレースでは問題の原因を特定するために十分ではない場合、たとえば、クラッシュ、無応答、高いメモリ使用率については、メモリ *ダンプ* が収集されます。 ダンプは、エラーが発生したときのプロセスの状態を表します。
 
 - ディスク上のファイルに書き込もうとしているときの例外など、予期しないエラー条件については、例外に関する情報を収集します。 この情報には、例外の名前、例外が発生したスレッドのスタック トレース、例外に関連するメッセージ、特定の例外に関連するその他の情報が含まれています。
 
