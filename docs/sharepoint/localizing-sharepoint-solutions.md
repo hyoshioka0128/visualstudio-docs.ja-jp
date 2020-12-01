@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションのローカライズ | Microsoft Docs
+description: コードからハードコーディングされた文字列を削除し、翻訳された文字列を含む XML ベースのリソース (.resx) ファイルに抽象化することで、SharePoint ソリューションをローカライズします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017143"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304272"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint ソリューションをローカライズする
 
@@ -54,7 +56,7 @@ ms.locfileid: "86017143"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint アプリケーションでは、フィーチャー、ASPX ページ マークアップ、およびコードの 3 つの領域をローカライズするのが一般的です。 以降の説明では、SharePoint ソリューションをドイツ語と日本語にローカライズする場合を想定しています。 既定の言語は English (英語) です。
 
 ### <a name="localize-features"></a>フィーチャーをローカライズする
- フィーチャーをローカライズするには、ハードコーディングされたフィーチャーのタイトルと説明を、ローカライズされたリソース ファイルに含まれている翻訳済みのタイトルと文字列を参照する式に置き換える必要があります。 この変更は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の**フィーチャー デザイナー**で行います。 詳細については、「[方法:フィーチャーをローカライズする](../sharepoint/how-to-localize-a-feature.md)」を参照してください。
+ フィーチャーをローカライズするには、ハードコーディングされたフィーチャーのタイトルと説明を、ローカライズされたリソース ファイルに含まれている翻訳済みのタイトルと文字列を参照する式に置き換える必要があります。 この変更は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の **フィーチャー デザイナー** で行います。 詳細については、「[方法:フィーチャーをローカライズする](../sharepoint/how-to-localize-a-feature.md)」を参照してください。
 
  英語のフィーチャーをドイツ語と日本語にローカライズするには、プロジェクトに 3 つのリソース ファイル プロジェクト項目 (英語用、ドイツ語用、および日本語用) を追加します。 フィーチャー リソース ファイルは、ASPX マークアップやコードのローカライズには使用できません。これらにはまた別のリソース ファイルが必要です。
 
@@ -113,7 +115,7 @@ $Resources:String ID
 
  SharePoint アプリケーションのコードをローカライズするには、ASPX マークアップの場合と同様に、既定の言語用と各ローカライズ言語用の個別のリソース ファイル プロジェクト項目をプロジェクトに追加します。 ただし、前述のとおり、ASPX マークアップのローカライズ用のリソース ファイルが既にある場合は、それらをコードのローカライズに再利用できます。 リソース ファイルを作成する必要がある場合は、 *.resx* 拡張子が付いた任意の名前を既定の言語のリソース ファイルに付けます。 ローカライズされたリソース ファイルに対しては、同じ名前に言語固有のカルチャ [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] を加えた名前を使用します。 各リソース ファイルの [ビルド アクション] プロパティを [埋め込まれたリソース] に設定して、サテライト リソース アセンブリが作成されるようにします。
 
- サテライト アセンブリを作成するには、プロジェクトをビルドした後、**パッケージ デザイナー**の **[詳細設定]** タブでファイルを追加のアセンブリとして追加します。 アセンブリを追加するときに、場所を表すパスの先頭にカルチャ [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] フォルダーを付加します (*de-DE\\{プロジェクト項目名}.resources.dll* など)。 これにより、同じ名前の複数のファイルをパッケージに含めることができます。
+ サテライト アセンブリを作成するには、プロジェクトをビルドした後、**パッケージ デザイナー** の **[詳細設定]** タブでファイルを追加のアセンブリとして追加します。 アセンブリを追加するときに、場所を表すパスの先頭にカルチャ [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] フォルダーを付加します (*de-DE\\{プロジェクト項目名}.resources.dll* など)。 これにより、同じ名前の複数のファイルをパッケージに含めることができます。
 
  コードで次の構文を使用して、ハードコーディングされた文字列を <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> メソッドの呼び出しに置き換えます。
 

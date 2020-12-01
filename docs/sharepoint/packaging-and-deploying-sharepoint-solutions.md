@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションのパッケージ化と配置 | Microsoft Docs
+description: SharePoint ソリューションをパッケージ化して配置します。これはソリューション パッケージ (.wsp) ファイルを使用して SharePoint サーバーに配置されます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015594"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305078"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>SharePoint ソリューションのパッケージ化と配置
   通常、SharePoint ソリューションは、ソリューション パッケージ (.wsp) ファイルを使用して SharePoint サーバーに配置されます。 Visual Studio を使用して、SharePoint プロジェクト項目をフィーチャーに整理したり、パッケージを作成して SharePoint フィーチャーを配置したりできます。
@@ -53,7 +55,7 @@ ms.locfileid: "86015594"
 
  フィーチャー デザイナーで "*スコープ*" を設定して、特定の Web サイト、または Web サイトのグループにフィーチャーを適用します。 フィーチャーが個々の Web サイトに対してアクティブ化されている場合、フィーチャーはその特定の Web サイトでのみ機能します。 フィーチャーがサイト コレクションに対してアクティブ化されている場合、フィーチャーの項目はサイト コレクション全体に適用されます。 詳細については、「[要素のスコープ](/previous-versions/office/developer/sharepoint-2010/ms476615(v=office.14))」を参照してください。
 
- フィーチャーが他のフィーチャーに依存している場合は、フィーチャーを使用できるようにする前に、*フィーチャー アクティブ化依存関係*を設定して、依存しているフィーチャーをマークすることができます。 フィーチャー アクティブ化依存関係では、依存しているフィーチャーがそのスコープで既にアクティブ化されているかどうかが確認されます。 詳細については、「[アクティブ化依存関係とスコープ](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14))」を参照してください。
+ フィーチャーが他のフィーチャーに依存している場合は、フィーチャーを使用できるようにする前に、*フィーチャー アクティブ化依存関係* を設定して、依存しているフィーチャーをマークすることができます。 フィーチャー アクティブ化依存関係では、依存しているフィーチャーがそのスコープで既にアクティブ化されているかどうかが確認されます。 詳細については、「[アクティブ化依存関係とスコープ](/previous-versions/office/developer/sharepoint-2010/aa543162(v=office.14))」を参照してください。
 
  パッケージ デザイナーでは、SharePoint 要素を 1 つのソリューション パッケージにグループ化し、配置時に Web サーバーをリセットするかどうかを構成することができます。 配置サーバーの種類を設定するには、 **[プロパティ]** ウィンドウを使用します。 また、このデザイナーでは、パッケージの内容を記述する XML ファイルも生成されます。 詳細については、「[SharePoint ソリューション パッケージの作成](../sharepoint/creating-sharepoint-solution-packages.md)」を参照してください。
 
@@ -95,7 +97,7 @@ ms.locfileid: "86015594"
 
  たとえば、 *.xml* ファイルを SharePoint プロジェクトに追加するには、次のいずれかの操作を実行します。
 
-- SharePoint "Layouts" のマップされたフォルダーをプロジェクトに追加します。 これにより、**ソリューション エクスプローラー**に、プロジェクトのサブフォルダーを含む **Layouts** という名前のフォルダーが作成されます。 *.xml* ファイルを新しいサブフォルダーに追加します。 既定では、このファイルは *..\TEMPLATE\LAYOUTS\\\<Folder Name>* の下にある SharePoint ファイル システムに配置されます。 マップされたフォルダーを追加する方法の詳細については、「[方法: マップされたフォルダーを追加および削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)」を参照してください。
+- SharePoint "Layouts" のマップされたフォルダーをプロジェクトに追加します。 これにより、**ソリューション エクスプローラー** に、プロジェクトのサブフォルダーを含む **Layouts** という名前のフォルダーが作成されます。 *.xml* ファイルを新しいサブフォルダーに追加します。 既定では、このファイルは *..\TEMPLATE\LAYOUTS\\\<Folder Name>* の下にある SharePoint ファイル システムに配置されます。 マップされたフォルダーを追加する方法の詳細については、「[方法: マップされたフォルダーを追加および削除する](../sharepoint/how-to-add-and-remove-mapped-folders.md)」を参照してください。
 
 - *.xml* ファイルを SharePoint プロジェクト項目のフォルダーに追加します。次に、 *.xml* ファイルの **[配置の種類]** プロパティを **NoDeployment** から別の設定 (**RootFile** や **ElementFile** など) に変更します。 **[配置の種類]** の適切な設定は、ファイルとプロジェクトによって異なります。 **[配置の種類]** プロパティ設定の詳細については、「[SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」を参照してください。
 

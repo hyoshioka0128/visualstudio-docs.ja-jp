@@ -7,11 +7,11 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
-ms.openlocfilehash: 7493b261de24079b6b245d29749a908c54d341b1
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "91838387"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Visual Studio サブスクリプションを割り当てるにはどうすればよいですか?
@@ -39,7 +39,7 @@ ms.locfileid: "91838387"
 4. [manage.visualstudio.com](https://manage.visualstudio.com) に戻り、[一括追加] を選択して、保存した Excel テンプレートのコピーをアップロードします。
 5. アップロードに成功すると、確認ページが表示され、新しいサブスクライバーが設定されたサブスクライバーの一覧が示されます。 サブスクライバーはメールを受信し、すぐに Visual Studio サブスクリプションを使用し始めることができます (サブスクライバーがアクティブ化する必要はありません)。
 
-サブスクリプションをすばやく簡単に割り当てる方法の詳細については、[Visual Studio サブスクリプション管理者ポータルでのサブスクリプションの割り当て](../../../../assign-license.md#add-a-single-subscriber)に関する記事を参照してください。  [GitHub Enterprise を使用した Visual Studio サブスクリプションの管理](../../../../assign-github.md)に関する記事を参照してください。 
+サブスクリプションをすばやく簡単に割り当てる方法の詳細については、[Visual Studio サブスクリプション管理者ポータルでのサブスクリプションの割り当て](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber)に関する記事を参照してください。  [GitHub Enterprise を使用した Visual Studio サブスクリプションの管理](https://docs.microsoft.com/visualstudio/subscriptions/assign-github)に関する記事を参照してください。 
 
 ## <a name="what-is-the-github-enterprise-setup-process"></a>GitHub Enterprise の設定プロセスとは 
 
@@ -47,4 +47,4 @@ GitHub Enterprise は、Visual Studio サブスクリプションとは別に設
 
 会社が GitHub Enterprise アカウントを設定した後、GitHub Enterprise を使用した Visual Studio サブスクリプションが割り当てられているサブスクライバーは、Visual Studio サブスクリプションがリンクされていることを通知する電子メールを GitHub から受け取ります。 電子メールを受信したサブスクライバーは、GitHub 組織の管理者に連絡して、適切な組織への招待を依頼できます。 
 
-[GitHub Enterprise を使用した Visual Studio サブスクリプションの管理](../../../../assign-github.md)に関する記事を参照してください。 GitHub Enterprise の設定プロセスの詳細については、[サブスクライバー向けドキュメント](../../../../access-github.md)を参照してください。 
+[GitHub Enterprise を使用した Visual Studio サブスクリプションの管理](https://docs.microsoft.com/visualstudio/subscriptions/assign-github)に関する記事を参照してください。 GitHub Enterprise の設定プロセスの詳細については、[サブスクライバー向けドキュメント](https://docs.microsoft.com/visualstudio/subscriptions/access-github)を参照してください。 
