@@ -1,7 +1,7 @@
 ---
-title: .NET アナライザーの有効化またはインストール
+title: ファーストパーティの .NET アナライザーを有効またはインストールする
 ms.date: 08/03/2018
-description: .Net SDK から .NET アナライザーを有効にする方法、または NuGet パッケージとしてこれらのアナライザーをインストールする方法について説明します。
+description: .NET SDK からファーストパーティの .NET analyzer を有効にする方法、または NuGet パッケージとしてこれらのアナライザーをインストールする方法について説明します。
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14d89caba498a07c2447f9df1109e4da9f6a466
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 60eb4828d4c8450376178c2fdccf7d4c0f63d989
+ms.sourcegitcommit: 208bd1edebfe6dec5d3bb92c63b5c1e093677e35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112173"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440370"
 ---
-# <a name="enable-or-install-net-analyzers"></a>.NET アナライザーの有効化またはインストール
+# <a name="enable-or-install-first-party-net-analyzers"></a>ファーストパーティの .NET アナライザーを有効またはインストールする
 
 ## <a name="overview"></a>概要
 
-.NET のコンパイラ プラットフォーム (Roslyn) アナライザーでは、お使いの C# または Visual Basic コードについて、コード品質やコード スタイルに関する問題を検査できます。 これらのアナライザーは、次のいずれかの方法で有効またはインストールできます。
+.NET のコンパイラ プラットフォーム (Roslyn) アナライザーでは、お使いの C# または Visual Basic コードについて、コード品質やコード スタイルに関する問題を検査できます。 ファーストパーティの .NET analyzer は、次のいずれかの方法で有効にしたりインストールしたりできます。
 
 - **.NET sdk からの有効化**: Visual Studio 2019 16.8 と .Net 5.0 以降では、これらのアナライザーは [.net sdk に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 .NET 5.0 以降を対象とするプロジェクトでは、既定で分析が有効になっています。 以前のバージョンの .NET を対象とするプロジェクトでコード分析を有効にするには、 `EnableNETAnalyzers` プロパティをに設定し `true` ます。 をに設定することにより、プロジェクトのコード分析を無効にすることもでき `EnableNETAnalyzers` `false` ます。
 
