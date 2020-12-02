@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd13c0a9f64ce484d9ba4e3193f7da94d0b1e446
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136720"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189291"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法 : Visual Basic 開発者設定が適用されたビルド構成を管理する
 
@@ -30,17 +30,17 @@ ms.locfileid: "92136720"
 
 ## <a name="enable-advanced-build-configurations"></a>ビルド構成の詳細を有効にする
 
-既定では、 **[構成マネージャー]** ダイアログ ボックスおよび [プロジェクト デザイナー](../ide/reference/application-page-project-designer-visual-basic.md)の **[構成]** 一覧と **[プラットフォーム]** 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
+既定では、**[構成マネージャー]** ダイアログ ボックスおよび [プロジェクト デザイナー](../ide/reference/application-page-project-designer-visual-basic.md)の **[構成]** 一覧と **[プラットフォーム]** 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
 
 1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2. **[プロジェクトおよびソリューション]** を展開し、 **[全般]** をクリックします。
+2. **[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。
 
 3. **[ビルド構成の詳細を表示]** をクリックします。
 
 4. **[OK]** をクリックします。
 
-     **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、 **[構成]** 一覧と **[プラットフォーム]** 一覧が **プロジェクト デザイナー** に表示されるようになります。
+     **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、**[構成]** 一覧と **[プラットフォーム]** 一覧が **プロジェクト デザイナー** に表示されるようになります。
 
 ## <a name="see-also"></a>関連項目
 

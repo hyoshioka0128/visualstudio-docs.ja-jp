@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402627"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189798"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -151,7 +151,7 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 
 - **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
 
-- **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント**接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
+- **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント **接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
 
 - **BLOB トリガー** – Azure Storage Blob がコンテナーに追加されるとそれを処理します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 詳しくは、[Blob Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-blob-triggered-function)をご覧ください。
 
@@ -161,4 +161,4 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 
 - **イメージ リサイザー** – この関数は、コンテナーに BLOB が追加されるたびに異なるサイズのイメージを作成します。 このテンプレートは、トリガーに対するパスと接続文字列、小さいイメージ出力、および中くらいのイメージ出力を受け取ります。
 
-- **SAS トークン** – この関数は、特定の Azure Storage コンテナーおよび BLOB 名に対して SAS トークンを生成します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 **アクセス権**も設定する必要があります。 承認レベルでは、関数に API キーが必要かどうか、および使用するキーを制御します。関数では関数キーが使用されます。管理者は、アカウント アクセス キーを使用します。 詳しくは、「[C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/)」(SAS トークンを生成するための C# Azure Function) サンプルをご覧ください。
+- **SAS トークン** – この関数は、特定の Azure Storage コンテナーおよび BLOB 名に対して SAS トークンを生成します。 このテンプレートは、関数名だけでなく、パスと接続のプロパティも受け取ります。 パス プロパティは、トリガーが監視するストレージ アカウント内のパスです。 接続アカウントは、ストレージ アカウント接続文字列が含まれるアプリ設定の名前です。 **アクセス権** も設定する必要があります。 承認レベルでは、関数に API キーが必要かどうか、および使用するキーを制御します。関数では関数キーが使用されます。管理者は、アカウント アクセス キーを使用します。 詳しくは、「[C# Azure Function for generating SAS tokens](https://github.com/Azure-Samples/functions-dotnet-sas-token/)」(SAS トークンを生成するための C# Azure Function) サンプルをご覧ください。

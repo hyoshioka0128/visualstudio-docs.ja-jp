@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918111"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970290"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 
@@ -39,7 +39,7 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> デバッグ中にプロファイリング データを収集する
 
-**[デバッグ]**  >  **[デバッグ開始]** の順に選択するか、 **F5** キーを押して Visual Studio でデバッグを開始すると、既定では **[診断ツール]** ウィンドウが表示されます。 手動で開くには、 **[デバッグ]** 、 **[Windows]** 、 **[診断ツールの表示]** の順に選択します。 **[診断ツール]** ウィンドウには、イベント、プロセス メモリ、CPU 使用率に関する情報が表示されます。
+**[デバッグ]**  >  **[デバッグ開始]** の順に選択するか、**F5** キーを押して Visual Studio でデバッグを開始すると、既定では **[診断ツール]** ウィンドウが表示されます。 手動で開くには、 **[デバッグ]** 、 **[Windows]** 、 **[診断ツールの表示]** の順に選択します。 **[診断ツール]** ウィンドウには、イベント、プロセス メモリ、CPU 使用率に関する情報が表示されます。
 
 ![[診断ツール] ウィンドウのスクリーンショット](../profiling/media/diagnostictoolswindow.png "[診断ツール] ウィンドウ")
 
@@ -76,7 +76,7 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 
 1. Visual Studio プロジェクトでプロジェクトを開き、ソリューション構成を **[リリース]** に設定し、配置ターゲットとして **[ローカル Windows デバッガー]** (または **[ローカル コンピューター]** ) を選択します。
 
-1. **[デバッグ]**  >  **[パフォーマンス プロファイラー]** の順に選択するか、 **Alt**+**F2** を押します。
+1. **[デバッグ]**  >  **[パフォーマンス プロファイラー]** の順に選択するか、**Alt**+**F2** を押します。
 
 1. 診断ツールの起動ページで、実行するツールを 1 つ以上選択します。 プロジェクトの種類、オペレーティング システム、およびプログラミング言語に適用されるツールのみが表示されます。 **[すべてのツールの表示]** を選択すると、この診断セッションで無効になっているツールも表示されます。
 

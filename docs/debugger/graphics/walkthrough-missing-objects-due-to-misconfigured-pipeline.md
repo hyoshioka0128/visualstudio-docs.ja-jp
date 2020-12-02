@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809173"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189850"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>チュートリアル: パイプラインの構成が不適切なことによるオブジェクトの不足
 このチュートリアルでは、ピクセル シェーダーが設定されていないことが原因で表示されないオブジェクトを調査するために、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断ツールを使用する方法を示します。
@@ -74,7 +74,7 @@ ms.locfileid: "90809173"
 
 1. **[d3d11 デバイス コンテキスト]** を開きます。 **[グラフィックス パイプライン ステージ]** ウィンドウで、ウィンドウの上部に表示されている **呼び出しの一部である** ID3D11DeviceContext `DrawIndexed` リンクを選択します。
 
-2. **[d3d11 デバイス コンテキスト]** タブに表示されているデバイス状態を調べて、描画呼び出し中にアクティブなピクセル シェーダーがなかったことを確認します。 このシナリオでは、 **[ピクセル シェーダーの状態]** の下に表示される **[シェーダーの一般情報]** に、そのシェーダーが **NULL**であることが示されます。
+2. **[d3d11 デバイス コンテキスト]** タブに表示されているデバイス状態を調べて、描画呼び出し中にアクティブなピクセル シェーダーがなかったことを確認します。 このシナリオでは、 **[ピクセル シェーダーの状態]** の下に表示される **[シェーダーの一般情報]** に、そのシェーダーが **NULL** であることが示されます。
 
     ![D3D 11 デバイス コンテキストはピクセル シェーダーの状態を示します](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")
 

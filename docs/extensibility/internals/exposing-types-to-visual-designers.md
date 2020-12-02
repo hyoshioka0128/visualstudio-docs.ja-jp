@@ -1,5 +1,7 @@
 ---
 title: ビジュアルデザイナーへの型の公開 |Microsoft Docs
+description: Visual Studio がビジュアルデザイナーで使用できるようにするために、カスタムツールに含まれるクラスと型の定義を公開する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012531"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479529"
 ---
 # <a name="expose-types-to-visual-designers"></a>ビジュアルデザイナーに型を公開する
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビジュアルデザイナーを表示するには、デザイン時にクラスと型の定義にアクセスできる必要があります。 クラスは、現在のプロジェクト (参照とその依存関係) の完全な依存関係セットを含む、定義済みのアセンブリセットから読み込まれます。 また、カスタムツールによって生成されるファイルで定義されているクラスや型にビジュアルデザイナーがアクセスする場合にも必要になることがあります。
@@ -31,13 +33,13 @@ ms.locfileid: "90012531"
 
  一時的な PE サポートを利用するカスタムツールは、次の規則に従う必要があります。
 
-- レジストリで**GeneratesDesignTimeSource**を1に設定する必要があります。
+- レジストリで **GeneratesDesignTimeSource** を1に設定する必要があります。
 
      この設定がないと、プログラムの実行可能ファイルのコンパイルは行われません。
 
 - 生成されたコードは、グローバルプロジェクト設定と同じ言語である必要があります。
 
-     <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>レジストリで**GeneratesDesignTimeSource**が1に設定されている場合、カスタムツールが要求された拡張機能として報告する内容に関係なく、一時 PE がコンパイルされます。 拡張子は *.vb*、 *.cs*、または *. jsl*; である必要はありません。任意の拡張機能を使用できます。
+     <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>レジストリで **GeneratesDesignTimeSource** が1に設定されている場合、カスタムツールが要求された拡張機能として報告する内容に関係なく、一時 PE がコンパイルされます。 拡張子は *.vb*、 *.cs*、または *. jsl*; である必要はありません。任意の拡張機能を使用できます。
 
 - カスタムツールによって生成されるコードは有効である必要があり、実行の完了時にプロジェクト内に存在する参照のセットだけを使用して、独自のコードをコンパイルする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> ます。
 

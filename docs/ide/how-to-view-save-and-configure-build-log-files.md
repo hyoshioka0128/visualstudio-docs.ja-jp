@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136603"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970209"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
@@ -24,7 +24,7 @@ Visual Studio IDE でプロジェクトをビルドしたら、 **[出力]** ウ
 
 - C++ のプロジェクトでは、プロジェクトのビルド時に作成および保存されたログ ファイルで同じ情報を確認することもできます。 
 
-- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、 **Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存するログ ファイルの場所を指定することを求められます。
+- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、**Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存するログ ファイルの場所を指定することを求められます。
 
 また、IDE を使用すれば、各ビルドについて、表示する情報の種類を指定することもできます。
 
@@ -32,7 +32,7 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ プロジェクトのビルド ログ ファイルを表示するには
 
-1. **エクスプローラー** または **エクスプローラー** で、次のファイルを開きます (プロジェクトのルート フォルダーの相対パスです)。 *Release*\\<ProjectName>\>.Log* または *Debug\\<プロジェクト名\>.log*
+1. **エクスプローラー** または **エクスプローラー** で、次のファイルを開きます (プロジェクトのルート フォルダーの相対パスです)。*Release*\\<ProjectName>\>.Log* または *Debug\\<プロジェクト名\>.log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>マネージ コード プロジェクトのビルド ログ ファイルを作成するには
 

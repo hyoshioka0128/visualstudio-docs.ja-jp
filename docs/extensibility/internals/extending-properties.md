@@ -1,5 +1,7 @@
 ---
 title: プロパティの拡張 |Microsoft Docs
+description: Visual Studio プロパティウィンドウのプロパティの一覧を拡張するために実装する必要があるインターフェイスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7064128c54434b0a7bb8799e62b751e765511c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708427"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479537"
 ---
 # <a name="extend-properties"></a>プロパティの拡張
 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **プロパティ** ] ウィンドウは、com コンポーネントと com + コンポーネントのユニバーサルプロパティブラウザーであり、すべての製品をサポートし [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 [ **プロパティ** ] ウィンドウでは、 `ITypeInfo` 型情報と com + メタデータを使用して、統合開発環境 (IDE) の他のウィンドウで現在選択されているオブジェクトのデザイン時プロパティを一覧表示します。
 
- [**プロパティ**] ウィンドウは、キーボードの**F4**キーを押すか、[**表示**] メニューの [**プロパティウィンドウ]** をクリックして開くことができます。このウィンドウでは、選択したオブジェクトの構成に依存しないデザイン時のプロパティやイベントを表示および編集できます。 ソリューションおよびプロジェクトに関連付けられている構成依存プロパティは、 [プロパティページ](../../extensibility/internals/property-pages.md)に表示されます。 詳細については、「 [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)」を参照してください。
+ [**プロパティ**] ウィンドウは、キーボードの **F4** キーを押すか、[**表示**] メニューの [**プロパティウィンドウ]** をクリックして開くことができます。このウィンドウでは、選択したオブジェクトの構成に依存しないデザイン時のプロパティやイベントを表示および編集できます。 ソリューションおよびプロジェクトに関連付けられている構成依存プロパティは、 [プロパティページ](../../extensibility/internals/property-pages.md)に表示されます。 詳細については、「 [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)」を参照してください。
 
  ![プロパティウィンドウの概要](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow") プロパティ ウィンドウ
 
@@ -68,7 +70,7 @@ ms.locfileid: "80708427"
 
  アプリケーションの設定の概要を説明します。これにより、アプリケーションのコンパイル済みコードではなく、外部構成ファイルにプロパティ値が格納されるようにアプリケーションを構成できます。
 
-- [ソリューションとプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)
+- [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソリューションとプロジェクトを通じて、開発作業に必要な参照、データ接続、フォルダー、ファイルなどの項目を効率的に管理する方法について説明します。
 

@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2019
 ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006255"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189928"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>codespace で Visual Studio を使用する方法 (プレビュー)
 
@@ -34,7 +34,7 @@ Visual Studio 2019 Preview での GitHub Codespaces への接続は、既定で�
 
 1. Visual Studio 2019 Preview では、 **[ツール]**  >  **[オプション]** のメニュー項目を使用して [オプション] ダイアログを開きます。
 
-2. **[環境]** の下で **[プレビュー機能]** を選択し、**GitHub Codespaces への接続**のプレビュー機能をオンにします。
+2. **[環境]** の下で **[プレビュー機能]** を選択し、**GitHub Codespaces への接続** のプレビュー機能をオンにします。
 
    ![GitHub Codespaces への接続のプレビュー機能をオンにする](media/connect-to-github-codespaces-preview-feature.png)
 
