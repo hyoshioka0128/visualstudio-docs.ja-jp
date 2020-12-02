@@ -1,5 +1,7 @@
 ---
 title: 入れ子になったプロジェクトの [AddItem] ダイアログボックスのフィルター処理Microsoft Docs
+description: 親プロジェクトの IVsFilterAddProjectItemDlg インターフェイスを実装することによって、Visual Studio で入れ子になったプロジェクトの [AddItem] ダイアログボックスをフィルター処理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708380"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480462"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>入れ子になったプロジェクトの [AddItem] ダイアログボックスをフィルター処理する
 入れ子になったプロジェクトに対して [ **AddItem** ] ダイアログボックスを表示すると、ダイアログボックスに表示される項目を親プロジェクトで制御できます。

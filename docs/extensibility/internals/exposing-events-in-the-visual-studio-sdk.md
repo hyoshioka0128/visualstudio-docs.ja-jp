@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK でのイベントの公開 |Microsoft Docs
+description: プロジェクトおよびプロジェクト項目のイベントを公開する Visual Studio SDK のメソッドとレジストリエントリについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708484"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480539"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK でイベントを公開する
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] オートメーションを使用してイベントのソースを作成できます。 プロジェクトとプロジェクトアイテムのイベントをソースにすることをお勧めします。
@@ -41,18 +43,18 @@ ms.locfileid: "80708484"
 
 8. メソッドは、 `get_` インターフェイスとインターフェイスの両方を実装する別の IDispatch ベースのイベントオブジェクト `IConnectionPointContainer` を作成し、 `IConnectionPoint` オブジェクトにを返し `IDispatchpointer` ます。
 
-   オートメーションを使用してイベントを公開するには、に応答 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> し、レジストリに追加する文字列を監視する必要があります。 基本的なプロジェクトのサンプルでは、文字列は *BscProjectsEvents* と *BscProjectItemsEvents*です。
+   オートメーションを使用してイベントを公開するには、に応答 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> し、レジストリに追加する文字列を監視する必要があります。 基本的なプロジェクトのサンプルでは、文字列は *BscProjectsEvents* と *BscProjectItemsEvents* です。
 
 ## <a name="registry-entries-from-the-basic-project-sample"></a>基本的なプロジェクトのサンプルのレジストリエントリ
  ここでは、レジストリにオートメーションイベントの値を追加する方法について説明します。
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID \> \AutomationEvents]**
 
  **AutomationProjectEvents** = オブジェクトを返し `AutomationProjectEvents` ます。
 
  **AutomationProjectItemEvents** = オブジェクトを返し `AutomationProjectItemsEvents` ます。
 
-|名前|種類|Range|説明|
+|名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
 |既定値 (@)|REG_SZ|未使用|未使用。 データフィールドはドキュメントに使用できます。|
 |*AutomationProjectsEvents*|REG_SZ|イベントオブジェクトの名前。|キー名のみが関連しています。 データフィールドはドキュメントに使用できます。<br /><br /> この例は、基本的なプロジェクトサンプルから取得したものです。|
@@ -62,7 +64,7 @@ ms.locfileid: "80708484"
 
  ![Visual Studio プロジェクトのイベント](../../extensibility/internals/media/projectevents.gif "ProjectEvents") イベントのオートメーションモデル
 
- クラスは、 `CProjectEventsContainer` *BscProjectsEvents*のソースオブジェクトを表し、 `CProjectItemsEventsContainer` *BscProjectItemsEvents*のソースオブジェクトを表します。
+ クラスは、 `CProjectEventsContainer` *BscProjectsEvents* のソースオブジェクトを表し、 `CProjectItemsEventsContainer` *BscProjectItemsEvents* のソースオブジェクトを表します。
 
  ほとんどのイベントオブジェクトはフィルターオブジェクトを受け取るため、ほとんどの場合、すべてのイベント要求に対して新しいオブジェクトを返す必要があります。 イベントを発生させたら、このフィルターをオンにして、イベントハンドラーが呼び出されていることを確認します。
 

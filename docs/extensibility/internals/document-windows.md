@@ -1,5 +1,7 @@
 ---
 title: ドキュメントウィンドウ |Microsoft Docs
+description: Visual Studio のドキュメントウィンドウについて説明します。これには、Visual Studio の実装方法や、実行中のドキュメントテーブル (RDT) がその状態を追跡する方法などが含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca834a5414c73f6acf6ac744620a46bba54b8fbf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: f39c02ece35a36ceb763a2a5b84f8431043a1b50
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413737"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480006"
 ---
 # <a name="document-windows"></a>ドキュメント ウィンドウ
 Visual Studio では、 *ドキュメントウィンドウ* は、マルチドキュメントインターフェイス (MDI) ウィンドウに関連付けられている、フレーム化された子ウィンドウです。 通常、ドキュメントウィンドウは、ソースコードまたはテキストの表示と変更に使用されますが、他の機能型をホストすることもできます。 ドキュメントウィンドウ:

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio メニューの Guid と Id |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) に含まれている Visual Studio のメニューバーで、メニューとグループの GUID と ID の値の一覧を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +17,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a656d5cb9a126a9dc3988d70a290fceb3e56439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708243"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480409"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio メニューの Guid と Id
 この記事では、Visual Studio のメニューバーにあるメニューとグループの GUID と ID の値を列挙します。 これらの値は、Visual Studio SDK の一部としてインストールされる、 *vsct* ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
 
- *Vsct*ファイルで定義されている統合開発環境 (IDE) オブジェクトを使用する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」を参照してください。
+ *Vsct* ファイルで定義されている統合開発環境 (IDE) オブジェクトを使用する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」を参照してください。
 
  Visual Studio のメニューバーのメニューとグループは、GUID を使用し `guidSHLMainMenu` ます。 メニューバー自体の ID は `IDM_VS_TOOL_MAINMENU` です。
 
@@ -36,8 +38,8 @@ ms.locfileid: "80708243"
 |-----------|--------|
 |ファイル/編集/表示|IDG_VS_MM_FILEEDITVIEW|
 |リファクタリング|IDG_VS_MM_REFACTORING:|
-|Project|IDG_VS_MM_PROJECT|
-|Build|IDG_VS_MM_BUILDDEBUGRUN|
+|プロジェクト|IDG_VS_MM_PROJECT|
+|ビルド|IDG_VS_MM_BUILDDEBUGRUN|
 |形式/ツール|IDG_VS_MM_TOOLSADDINS|
 |ウィンドウ/ヘルプ/コミュニティ|IDG_VS_MM_WINDOWHELP|
 |Addins|IDG_VS_MM_MACROS|
@@ -50,11 +52,11 @@ ms.locfileid: "80708243"
 |----------|--------|
 |ファイル|IDM_VS_MENU_FILE|
 |[編集]|IDM_VS_MENU_EDIT|
-|表示|IDM_VS_MENU_VIEW|
+|View|IDM_VS_MENU_VIEW|
 |リファクター|IDM_VS_MENU_REFACTORING|
-|Project|IDM_VS_MENU_PROJECT|
-|Build|IDM_VS_MENU_BUILD|
-|フォーマット|IDM_VS_MENU_FORMAT|
+|プロジェクト|IDM_VS_MENU_PROJECT|
+|ビルド|IDM_VS_MENU_BUILD|
+|Format|IDM_VS_MENU_FORMAT|
 |ツール|IDM_VS_MENU_TOOLS|
 |拡張機能|IDM_VS_MENU_EXTENSIONS|
 |ウィンドウ|IDM_VS_MENU_WINDOW|
@@ -70,12 +72,12 @@ ms.locfileid: "80708243"
 |グループ|ID|
 |-----------|--------|
 |新規/オープン|IDG_VS_FILE_FILE|
-|[追加]|IDG_VS_FILE_ADD|
+|追加|IDG_VS_FILE_ADD|
 |解決策|IDG_VS_FILE_SOLUTION|
 |その他|IDG_VS_FILE_MISC|
 |保存|IDG_VS_FILE_SAVE|
 |[名前の変更]|IDG_VS_FILE_RENAME|
-|Browser|IDG_VS_FILE_BROWSER|
+|ブラウザー|IDG_VS_FILE_BROWSER|
 |印刷|IDG_VS_FILE_PRINT|
 |最近使用|IDG_VS_FILE_MRU|
 |詳細ビュー|IDG_VS_FILE_MOVE|
@@ -87,10 +89,10 @@ ms.locfileid: "80708243"
 |-----------|--------|
 |元に戻す/やり直し|IDG_VS_EDIT_UNDOREDO|
 |切り取り/コピー/貼り付け|IDG_VS_EDIT_CUTCOPY|
-|選択|IDG_VS_EDIT_SELECT|
+|Select|IDG_VS_EDIT_SELECT|
 |GoTo|IDG_VS_EDIT_GOTO|
 |Find|IDG_VS_EDIT_FIND|
-|オブジェクト|IDG_VS_EDIT_OBJECTS|
+|Objects|IDG_VS_EDIT_OBJECTS|
 |OLE 動詞|IDG_VS_EDIT_OLEVERBS|
 |コマンドウェル|IDG_VS_EDIT_COMMANDWELL|
 
@@ -106,7 +108,7 @@ ms.locfileid: "80708243"
 |グループ|ID|
 |-----------|--------|
 |フォームコード|IDG_VS_VIEW_FORMCODE|
-|Browser|IDG_VS_VIEW_BROWSER|
+|ブラウザー|IDG_VS_VIEW_BROWSER|
 |ビューの定義|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
 |Windows の設計|IDG_VS_VIEW_ARCH_WINDOWS|
@@ -127,10 +129,10 @@ ms.locfileid: "80708243"
 |グループ|ID|
 |-----------|--------|
 |その他の追加|IDG_VS_PROJ_MISCADD|
-|[追加]|IDG_VS_PROJ_ADD|
-|Folder|IDG_VS_PROJ_FOLDER|
+|追加|IDG_VS_PROJ_ADD|
+|フォルダー|IDG_VS_PROJ_FOLDER|
 |アンロード/再読み込み|IDG_VS_PROJ_UNLOADRELOAD|
-|関連項目|IDG_VS_PROJ_REFERENCE|
+|リファレンス|IDG_VS_PROJ_REFERENCE|
 |Options|IDG_VS_PROJ_OPTIONS|
 |設定|IDG_VS_PROJ_SETTINGS|
 
@@ -139,7 +141,7 @@ ms.locfileid: "80708243"
 |グループ|ID|
 |-----------|--------|
 |解決策|IDG_VS_BUILD_SOLUTION|
-|選択ツール|IDG_VS_BUILD_SELECTION|
+|選択|IDG_VS_BUILD_SELECTION|
 |ガイド付き最適化のプロファイル|IDG_VS_PGO_SELECTION|
 |その他|IDG_VS_BUILD_MISC|
 |キャンセル|IDG_VS_BUILD_CANCEL|
@@ -160,12 +162,12 @@ ms.locfileid: "80708243"
 
 |グループ|ID|
 |-----------|--------|
-|新規作成|IDG_VS_WINDOW_NEW|
+|新規|IDG_VS_WINDOW_NEW|
 |Dock/Close|IDG_VS_DOCKCLOSE|
 |Dock/Hide|IDG_VS_DOCKHIDE|
 |整列|IDG_VS_WINDOW_ARRANGE|
 |ナビゲーション|IDG_VS_WINDOW_NAVIGATION|
-|リスト|IDG_VS_WINDOW_LIST|
+|List|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>ヘルプメニューグループ
 
@@ -179,7 +181,7 @@ ms.locfileid: "80708243"
  次の階層は、Visual Studio のメニューバーのメニューに関連付けられているサブメニューを示しています。 親としてメニューを持つことができるのはグループのみなので、すべてのサブメニューは、メニューから直接ではなく、メニュー上のグループから降下する必要があります。 メニュー、グループ、サブメニュー間の関係の詳細については、「 [メニューへのサブメニューの追加](../../extensibility/adding-a-submenu-to-a-menu.md)」を参照してください。
 
 > [!NOTE]
-> Visual Studio のメニューバーのメニュー名は、次のように IDE のグループの名前付け規則から推論できるため、この階層では個別に表示されません: *IDG_VS_ \<Menu Name\> _ \<Group Name\> *。
+> Visual Studio のメニューバーのメニュー名は、次のように IDE のグループの名前付け規則から推論できるため、この階層では個別に表示されません: *IDG_VS_ \<Menu Name\> _ \<Group Name\>*。
 
 |[親グループ]|揃える|子グループ|
 |------------------|-------------|------------------|

@@ -1,5 +1,7 @@
 ---
 title: プロジェクトモデル | の要素Microsoft Docs
+description: プロジェクトモデルの要素、および Visual Studio のすべてのプロジェクトのインターフェイスと実装が基本構造を共有する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011776"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480045"
 ---
 # <a name="elements-of-a-project-model"></a>プロジェクトモデルの要素
 のすべてのプロジェクトのインターフェイスと実装は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 基本構造を共有します。プロジェクトの種類のプロジェクトモデルです。 開発中の VSPackage であるプロジェクトモデルでは、設計上の決定に準拠したオブジェクトを作成し、IDE によって提供されるグローバル機能と連携します。 たとえば、プロジェクト項目を永続化する方法を制御しますが、ファイルを永続化する必要があるという通知は制御しません。 開いているプロジェクト項目にフォーカスを移動し、メニューバーの [**ファイル**] メニューの [**保存**] を選択した場合 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、プロジェクトの種類のコードは ide からコマンドをインターセプトし、ファイルを永続化して、ファイルが変更されていないことを ide に通知を送信する必要があります。
