@@ -188,7 +188,7 @@
           href: aliasing.md
         - name: 個人用電子メール サインインを持つサブスクライバー
           href: personal-email-sign-ins.md
-        - name: GitHub Enterprise による Visual Studio の管理
+        - name: Visual Studio Subscriptions with GitHub Enterprise の管理
           href: assign-github.md
 - name: リソース
   items:
