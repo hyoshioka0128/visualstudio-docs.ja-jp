@@ -8,15 +8,21 @@
       items:
         - name: 概要
           href: roslyn-analyzers-overview.md
+        - name: インストール
+          expanded: true
+          items:
+            - name: .NET アナライザー
+              href: install-net-analyzers.md
+            - name: サード パーティのアナライザー
+              href: install-roslyn-analyzers.md
         - name: 構成
           expanded: true
           items:
             - name: 概要
               href: use-roslyn-analyzers.md
             - name: .NET アナライザー
+              expanded: true
               items:
-                - name: .NET アナライザーのインストール
-                  href: install-net-analyzers.md
                 - name: コード品質
                   items:
                     - name: コード品質のオプション
@@ -42,8 +48,6 @@
               href: automatic-feature-suspension.md
             - name: コード分析の違反を抑制する
               href: in-source-suppression-overview.md
-        - name: サードパーティ製アナライザーのインストール
-          href: install-roslyn-analyzers.md
         - name: よく寄せられる質問
           href: analyzers-faq.md
     - name: レガシ分析
