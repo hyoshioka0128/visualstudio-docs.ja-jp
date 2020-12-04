@@ -1,5 +1,7 @@
 ---
 title: ローカルプロパティの取得 |Microsoft Docs
+description: マネージコードとアンマネージコードの例を使用して、Visual Studio が EnumChildren を使用してローカルプロパティを取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b6d104f88999ba7dd8e115a752a78853af6603
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738620"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560019"
 ---
 # <a name="get-local-properties"></a>ローカルプロパティの取得
 > [!IMPORTANT]
 > Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
-Visual Studio は、 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出して、[**ローカル**] ウィンドウに表示されるすべてのローカルへのアクセスを提供する[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを取得します。 次に、Visual Studio は、[ [次へ](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) ] を呼び出して、各ローカルに表示される情報を取得します。 この例では、クラスはインターフェイスを実装して `CEnumPropertyInfo` `IEnumDebugPropertyInfo2` います。
+Visual Studio は、 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出して、[**ローカル**] ウィンドウに表示されるすべてのローカルへのアクセスを提供する [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを取得します。 次に、Visual Studio は、[ [次へ](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) ] を呼び出して、各ローカルに表示される情報を取得します。 この例では、クラスはインターフェイスを実装して `CEnumPropertyInfo` `IEnumDebugPropertyInfo2` います。
 
 のこの実装で `IEnumDebugPropertyInfo2::Next` は、次のタスクを実行します。
 

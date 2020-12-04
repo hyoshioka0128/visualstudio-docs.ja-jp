@@ -1,5 +1,7 @@
 ---
 title: 例外処理 (Visual Studio SDK) |Microsoft Docs
+description: 例外がスローされたときに発生するプロセスについて説明します。 この記事では、関連するすべての手順について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738764"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559655"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外処理 (Visual Studio SDK)
 次に、例外がスローされた場合に発生する処理について説明します。
@@ -34,11 +36,11 @@ ms.locfileid: "80738764"
 
     - メソッドが S_OK を返す場合、は [IDebugExceptionEvent2::P assToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)を呼び出します。
 
-         - または -
+         \- または -
 
          メソッドが S_FALSE を返すと、デバッグ中のプログラムには、例外を処理するための2つ目の機会が与えられます。
 
-6. デバッグ中のプログラムに2つ目の例外のハンドラーがない場合、DE は `IDebugExceptionEvent2` **EVENT_SYNC_STOP**として SDM にを送信します。
+6. デバッグ中のプログラムに2つ目の例外のハンドラーがない場合、DE は `IDebugExceptionEvent2` **EVENT_SYNC_STOP** として SDM にを送信します。
 
 7. デバッグパッケージは、初回例外のダイアログボックスを開いて、例外を処理する方法をユーザーに要求します。
 

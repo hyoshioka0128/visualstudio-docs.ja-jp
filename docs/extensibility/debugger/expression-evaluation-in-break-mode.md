@@ -1,5 +1,7 @@
 ---
 title: 中断モードでの式の評価 |Microsoft Docs
+description: デバッガーが中断モードで、式の評価を行う必要があるときに発生するプロセスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738720"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559637"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中断モードでの式の評価
 次のセクションでは、デバッガーが中断モードで、式の評価を行う必要がある場合に発生するプロセスについて説明します。

@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341181"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559811"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity で.NET 4.x を使用する
 
@@ -34,17 +34,17 @@ Unity には、Unity 2017.1 のリリースで、.NET 4.6 にアップグレー�
 
 1. **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** の順に選択し、Unity Inspector で [PlayerSettings]\(プレーヤー設定\) を開きます。
 
-1. **[Configuration]** \(構成\) 見出しの下で、 **[Scripting Runtime Version]** \(スクリプティング ランタイム バージョン\) ドロップダウンをクリックし、 **[.NET 4.x Equivalent]** \(.NET 4.x と同等\) を選択します。 Unity を再起動するように求められます。
+1. **[Configuration]** \(構成\) 見出しの下で、**[Scripting Runtime Version]** \(スクリプティング ランタイム バージョン\) ドロップダウンをクリックし、**[.NET 4.x Equivalent]** \(.NET 4.x と同等\) を選択します。 Unity を再起動するように求められます。
 
 ![.NET 4.x 同等を選択する](media/vs/vstu-scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x および .NET Standard 2.0 プロファイルのいずれかを選ぶ
 
-.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) ( **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** ) のドロップダウン メニューを使用して、 **[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 2 つのオプションがあります。
+.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) (**[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)**) のドロップダウン メニューを使用して、**[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 2 つのオプションがあります。
 
-* **.NET Standard 2.0** : このプロファイルは、.NET Foundation により発行されている [.NET Standard 2.0 プロファイル](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)と一致します。 Unity では、新しいプロジェクトに .NET Standard 2.0 を推奨しています。 これは .NET 4.x よりも小規模で、サイズに制限のあるプラットフォームで好都合です。 また、Unity では、Unity がサポートしているすべてのプラットフォームで、このプロファイルをサポートすることをコミットしています。
+* **.NET Standard 2.0**: このプロファイルは、.NET Foundation により発行されている [.NET Standard 2.0 プロファイル](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)と一致します。 Unity では、新しいプロジェクトに .NET Standard 2.0 を推奨しています。 これは .NET 4.x よりも小規模で、サイズに制限のあるプラットフォームで好都合です。 また、Unity では、Unity がサポートしているすべてのプラットフォームで、このプロファイルをサポートすることをコミットしています。
 
-* **.NET 4.x** : このプロファイルでは、最新の .NET 4 API にアクセスできます。 これには、.NET Framework クラス ライブラリで利用できるすべてのコードを含み、また .NET Standard 2.0 のプロファイルも同様にサポートしています。 .NET Standard 2.0 のプロファイルに含まれていない一部の API がプロジェクトで必要な場合は、.NET 4.x のプロファイルを使用します。 ただし、この API の一部は Unity のすべてのプラットフォームでサポートされていない場合があります。
+* **.NET 4.x**: このプロファイルでは、最新の .NET 4 API にアクセスできます。 これには、.NET Framework クラス ライブラリで利用できるすべてのコードを含み、また .NET Standard 2.0 のプロファイルも同様にサポートしています。 .NET Standard 2.0 のプロファイルに含まれていない一部の API がプロジェクトで必要な場合は、.NET 4.x のプロファイルを使用します。 ただし、この API の一部は Unity のすべてのプラットフォームでサポートされていない場合があります。
 
 これらのオプションの詳細については、Unity の[ブログ投稿](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)を参照してください。
 
@@ -58,9 +58,9 @@ Unity には、Unity 2017.1 のリリースで、.NET 4.6 にアップグレー�
 
 ![アセンブリ参照がない](media/vs/vstu-missing-reference.png)
 
-Visual Studio では Unity のプロジェクトが開かれるたびに、.csproj と .sln のファイルが再生成されます。 そのため、プロジェクトを開くときに失われてしまうので、Visual Studio に直接アセンブリ参照を追加できません。 代わりに、 **mcs.rsp** という特別なテキスト ファイルを使用する必要があります。
+Visual Studio では Unity のプロジェクトが開かれるたびに、.csproj と .sln のファイルが再生成されます。 そのため、プロジェクトを開くときに失われてしまうので、Visual Studio に直接アセンブリ参照を追加できません。 代わりに、 **csc.exe** という名前の特殊なテキストファイルを使用する必要があります。
 
-1. ご使用の Unity のプロジェクトのルートの **Assets** ディレクトリに **mcs.rsp** という名前の新しいテキスト ファイルを作成します。
+1. Unity プロジェクトのルート **アセット** ディレクトリに、 **csc.exe** という名前の新しいテキストファイルを作成します。
 
 1. 空のテキスト ファイルの最初の行に、`-r:System.Net.Http.dll` と入力しファイルを保存します。 "System.Net.Http.dll" は、参照が見つからない含まれているすべてのアセンブリに置き換えることができます。
 
@@ -82,9 +82,9 @@ Unity のユーザーは、NET 4.x スクリプティング ランタイムで�
 
 1. ダウンロードしたファイルを探し、拡張子を **.nupkg** から **.zip** に変更します。
 
-1. zip ファイル内の **lib/netstandard2.0** ディレクトリに移動し、 **Newtonsoft.Json.dll** ファイルをコピーします。
+1. zip ファイル内の **lib/netstandard2.0** ディレクトリに移動し、**Newtonsoft.Json.dll** ファイルをコピーします。
 
-1. Unity プロジェクトのルートの **Assets** フォルダーに、 **Plugins** という名前の新しいフォルダーを作成します。 Plugins は Unity の特別なフォルダーの名前です。 詳細については、[Unity のドキュメント](https://docs.unity3d.com/Manual/Plugins.html)を参照してください。
+1. Unity プロジェクトのルートの **Assets** フォルダーに、**Plugins** という名前の新しいフォルダーを作成します。 Plugins は Unity の特別なフォルダーの名前です。 詳細については、[Unity のドキュメント](https://docs.unity3d.com/Manual/Plugins.html)を参照してください。
 
 1. **Newtonsoft.Json.dll** ファイルを Unity のプロジェクトの **Plugins** ディレクトリに貼り付けます。
 

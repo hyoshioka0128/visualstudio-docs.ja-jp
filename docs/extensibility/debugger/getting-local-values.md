@@ -1,5 +1,7 @@
 ---
 title: ローカル値の取得 |Microsoft Docs
+description: マネージコードとアンマネージコードの GetPropertyInfo を使用して、Visual Studio がローカル変数の値を取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75cc530f13de22a994eff70492f340059d2a5839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4287bb726ca4b64bc939c12098ca0fc98948931
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738614"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559980"
 ---
 # <a name="get-local-values"></a>ローカル値の取得
 > [!IMPORTANT]

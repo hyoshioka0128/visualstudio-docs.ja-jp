@@ -1,5 +1,7 @@
 ---
 title: '方法: カスタムデバッグエンジンをデバッグする |Microsoft Docs'
+description: Visual Studio を使用してカスタムデバッグエンジンまたはカスタムプロジェクトの種類をデバッグできる手順について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903307"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560812"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタムデバッグエンジンをデバッグする
 プロジェクトの種類は、メソッドからデバッグエンジン (DE) を起動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> ます。 これは、プロジェクトの種類を制御するインスタンスの制御下で DE が起動されることを意味 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。 ただし、のインスタンスでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、DE をデバッグできません。 カスタム DE をデバッグするための手順を次に示します。
@@ -29,9 +31,9 @@ ms.locfileid: "85903307"
 
 ## <a name="debug-a-custom-debug-engine"></a>カスタムデバッグエンジンのデバッグ
 
-1. リモートデバッグモニターの *msvsmon.exe*を開始します。
+1. リモートデバッグモニターの *msvsmon.exe* を開始します。
 
-2. *msvsmon.exe*の [**ツール**] メニューの [**オプション**] をクリックして、[**オプション**] ダイアログボックスを開きます。
+2. *msvsmon.exe* の [**ツール**] メニューの [**オプション**] をクリックして、[**オプション**] ダイアログボックスを開きます。
 
 3. [認証なし] オプションを選択し、[ **OK]** をクリックします。
 
@@ -45,7 +47,7 @@ ms.locfileid: "85903307"
 
 8. [ **プロセスにアタッチ** ] ダイアログボックスで、[ **トランスポート** ] を [ **リモート (認証なしのネイティブのみ)**] に変更します。
 
-9. **修飾子**をコンピューターの名前に変更します (メモ: エントリの履歴があるため、この名前は1回だけ入力する必要があります)。
+9. **修飾子** をコンピューターの名前に変更します (メモ: エントリの履歴があるため、この名前は1回だけ入力する必要があります)。
 
 10. [選択 **可能なプロセス** ] ボックスの一覧で、実行している DE のインスタンスを選択し、[ **アタッチ** ] ボタンをクリックします。
 
@@ -57,13 +59,13 @@ ms.locfileid: "85903307"
 
 1. 通常のレジストリハイブから開始し、プロジェクトの種類のプロジェクト (プロジェクトの種類のインスタンス化ではなく、プロジェクトの種類 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のソース) を読み込みます。
 
-2. プロジェクトのプロパティを開き、[ **デバッグ** ] ページにアクセスします。 **コマンド**の場合は、IDE へのパスを入力し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます (既定では、 *[ドライブ 8\Common7\IDE\devenv.exe] は [ドライブ]* になり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます)。
+2. プロジェクトのプロパティを開き、[ **デバッグ** ] ページにアクセスします。 **コマンド** の場合は、IDE へのパスを入力し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます (既定では、 *[ドライブ 8\Common7\IDE\devenv.exe] は [ドライブ]* になり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます)。
 
-3. コマンドの **引数**には、 `/rootsuffix exp` 実験的なレジストリハイブ (VSIP のインストール時に作成されたもの) を入力します。
+3. コマンドの **引数** には、 `/rootsuffix exp` 実験的なレジストリハイブ (VSIP のインストール時に作成されたもの) を入力します。
 
 4. [ **OK** ] をクリックして変更内容を確定します。
 
-5. **F5**キーを押して、プロジェクトの種類を開始します。 これにより、の2番目のインスタンスが起動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。
+5. **F5** キーを押して、プロジェクトの種類を開始します。 これにより、の2番目のインスタンスが起動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。
 
 6. この時点で、プロジェクトの種類のソースコードにブレークポイントを配置できます。
 
