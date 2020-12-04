@@ -1,5 +1,7 @@
 ---
 title: 64 ビット サポート
+description: 64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定する方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 11cd4979172f80b44ad5fb5ed335b00737e7579d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594137"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479720"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE の 64 ビット サポート
 
@@ -28,7 +30,7 @@ Visual Studio では、64 ビット プラットフォームを含む、さま�
 
 ## <a name="configure-projects-as-64-bit-applications"></a>プロジェクトを 64 ビット アプリケーションとして構成
 
-「[方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)」では、64 ビット アプリケーションとしてビルドされるようにプロジェクトを構成する方法について説明しています。
+[方法: プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)では、64 ビット アプリケーションとしてビルドされるようにプロジェクトを構成する方法について説明しています。
 
 ## <a name="debug-a-64-bit-application"></a>64 ビット アプリケーションのデバッグ
 

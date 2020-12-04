@@ -1,5 +1,7 @@
 ---
 title: 属性の解説 | Microsoft IntelliTest 開発者テスト ツール
+description: この記事では、属性の名前空間と詳細によって整理された IntelliTest 属性の一覧を示します。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c356893b0c9716374950df3edc3dc480f022100
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315227"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330226"
 ---
 # <a name="attribute-glossary"></a>属性の解説
 
@@ -48,7 +50,7 @@ ms.locfileid: "89315227"
 
 この属性は、制御された値が **null** ではないことをアサートします。 次のものにアタッチできます。
 
-* パラメーター化されたテスト メソッドの**パラメーター**
+* パラメーター化されたテスト メソッドの **パラメーター**
 
   ```csharp
   // assume foo is not null
@@ -79,7 +81,7 @@ ms.locfileid: "89315227"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-この属性は、"*探索*" を含むクラスをマークします。 MSTest の **TestClassAttribute** (または、NUnit の **TestFixtureAttribute**) と同等です。 この属性は省略できます。
+この属性は、"*探索*" を含むクラスをマークします。 MSTest の **TestClassAttribute** (または、NUnit の **TestFixtureAttribute**) と同等です。 この属性は省略可能です。
 
 [PexClass](#pexclass) でマークされるクラスは、"*既定で構造化可能*" である必要があります。
 

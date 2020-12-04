@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing に関する FAQ
+description: サポートされているフレームワーク、構成、カスタマイズなど、Live Unit Testing についてよく寄せられる質問をご確認ください。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb2c9a4cae25b388d5817b04ff54f6e6443b2f44
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591542"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329290"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
@@ -77,7 +79,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 "標準の" インストルメント化されていないビルドには必要ないインストルメンテーション (Live Unit Testing) 用にビルドするためのカスタム手順がソリューションに必要な場合は、`BuildingForLiveUnitTesting` プロパティを調べてビルド前/後のカスタム手順を行うコードを、プロジェクトまたは *.targets* ファイルに追加できます。 また、このプロジェクト プロパティに基づいて、Live Unit Testing のビルドから特定のビルド手順 (パッケージの発行や生成など) を削除したり、Live Unit Testing にビルド手順 (前提条件のコピーなど) を追加したりすることもできます。 このプロパティに基づいてビルドをカスタマイズしても、標準のビルドは変更されず、Live Unit Testing のビルドのみが影響を受けます。
 
-たとえば、標準のビルドの間に NuGet パッケージを生成するターゲットがあるものとします。 おそらく、編集のたびに NuGet パッケージを生成する必要はありません。 そのような場合、次のようにして、Live Unit Testing のビルドでそのターゲットを無効にできます。  
+たとえば、標準のビルドの間に NuGet パッケージを生成するターゲットがあるものとします。 おそらく、編集のたびに NuGet パッケージを生成する必要はありません。 そのような場合、次のようにして、Live Unit Testing のビルドでそのターゲットを無効にできます。  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -130,7 +132,7 @@ Live Unit Testing のビルドを成功させるには、主に 2 つの方法�
 ### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>`<LiveUnitTestingBuildRootPath>` プロパティに基づいたプロパティのオーバーライド。
 
 > [!NOTE]
-> この方法では、ビルド中に生成されない成果物フォルダー以下に追加されたファイルに注意する必要があります。 以下の例は、成果物以下にパッケージ フォルダーを配置するときの処理を示しています。 このフォルダーの内容はビルド中に生成されないため、MSBuild プロパティを**変更しないでください**。
+> この方法では、ビルド中に生成されない成果物フォルダー以下に追加されたファイルに注意する必要があります。 以下の例は、成果物以下にパッケージ フォルダーを配置するときの処理を示しています。 このフォルダーの内容はビルド中に生成されないため、MSBuild プロパティを **変更しないでください**。
 
 Live Unit Testing のビルド中に、`<LiveUnitTestingBuildRootPath>` プロパティは Live Unit Testing の成果物フォルダーの場所に設定されます。
 
@@ -171,7 +173,7 @@ Live Unit Testing のビルド中に、`<LiveUnitTestingBuildRootPath>` プロ�
 
 **Live Unit Testing のビルド成果物を、 *.vs* フォルダーの下の既定の場所ではない特定の場所に格納する必要があります。どうすれば変更できますか?**
 
-`LiveUnitTesting_BuildRoot` ユーザー レベル環境変数を、Live Unit Testing のビルド成果物を格納するパスに設定します。 
+`LiveUnitTesting_BuildRoot` ユーザー レベル環境変数を、Live Unit Testing のビルド成果物を格納するパスに設定します。 
 
 ## <a name="test-explorer-versus-live-unit-testing"></a>テスト エクスプローラーと Live Unit Testing
 
@@ -179,13 +181,13 @@ Live Unit Testing のビルド中に、`<LiveUnitTestingBuildRootPath>` プロ�
 
 いくつか違いがあります。
 
-- **[テスト エクスプローラー]** ウィンドウからテストを実行またはデバッグすると標準バイナリが実行されますが、Live Unit Testing ではインストルメント化されたバイナリが実行されます。 インストルメント化されたバイナリをデバッグする場合、テスト メソッドに [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch)  メソッドの呼び出しを追加し、そのメソッドが実行されると常にデバッガーが起動されるようにすると (Live Unit Testing によって実行される場合を含みます)、インストルメント化されたバイナリをアタッチしてデバッグできます。 しかし、ほとんどのユーザー シナリオについてインストルメンテーションが透過的で、インストルメント化されたバイナリをデバッグする必要がないようにするのが理想的です。
+- **[テスト エクスプローラー]** ウィンドウからテストを実行またはデバッグすると標準バイナリが実行されますが、Live Unit Testing ではインストルメント化されたバイナリが実行されます。 インストルメント化されたバイナリをデバッグする場合、テスト メソッドに [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) メソッドの呼び出しを追加し、そのメソッドが実行されると常にデバッガーが起動されるようにすることで (Live Unit Testing によって実行される場合を含みます)、インストルメント化されたバイナリをアタッチしてデバッグできます。 しかし、ほとんどのユーザー シナリオについてインストルメンテーションが透過的で、インストルメント化されたバイナリをデバッグする必要がないようにするのが理想的です。
 
 - Live Unit Testing ではテストを実行するための新しいアプリケーション ドメインは作成されませんが、 **[テスト エクスプローラー]** ウィンドウから実行されたテストでは新しいアプリケーション ドメインが作成されます。
 
-- Live Unit Testing では、各テスト アセンブリで順番にテストが実行されます。 **テスト エクスプローラー**で、複数のテストの並列実行を選択できます。
+- Live Unit Testing では、各テスト アセンブリで順番にテストが実行されます。 **テスト エクスプローラー** で、複数のテストの並列実行を選択できます。
 
-- 既定では、**テスト エクスプローラー**によるテストはシングルスレッド アパートメント (STA) で実行されるのに対し、Live Unit Testing によるテストはマルチスレッド アパートメント (MTA) で実行されます。 Live Unit Testing において MSTest テストを STA で実行するには、テスト メソッドまたはそれを含むクラスを、`MSTest.STAExtensions 1.0.3-beta` NuGet パッケージに含まれる `<STATestMethod>` または `<STATestClass>` 属性で修飾します。 NUnit の場合はテスト メソッドを `<RequiresThread(ApartmentState.STA)>` 属性で修飾し、xUnit の場合は `<STAFact>` 属性で修飾します。
+- 既定では、**テスト エクスプローラー** によるテストはシングルスレッド アパートメント (STA) で実行されるのに対し、Live Unit Testing によるテストはマルチスレッド アパートメント (MTA) で実行されます。 Live Unit Testing において MSTest テストを STA で実行するには、テスト メソッドまたはそれを含むクラスを、`MSTest.STAExtensions 1.0.3-beta` NuGet パッケージに含まれる `<STATestMethod>` または `<STATestClass>` 属性で修飾します。 NUnit の場合はテスト メソッドを `<RequiresThread(ApartmentState.STA)>` 属性で修飾し、xUnit の場合は `<STAFact>` 属性で修飾します。
 
 ## <a name="exclude-tests"></a>テストの除外
 
@@ -248,7 +250,7 @@ Live Unit Testing は、ソース ファイルが変更されたことを検出�
 
 **出力ウィンドウのメッセージでは Live Unit Testing が実行しているようなのに、エディターにアイコンが表示されないのはなぜですか?**
 
-Live Unit Testing が動作しているアセンブリが何らかの理由でインストルメント化されていない場合に、エディターにアイコンが表示されない場合があります。 たとえば、Live Unit Testing は `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` を設定するプロジェクトと互換性がありません。 この場合、Live Unit Testing を動作させるには、ビルド プロセスを更新してこの設定を削除する、または `true` に変更する必要があります。 
+Live Unit Testing が動作しているアセンブリが何らかの理由でインストルメント化されていない場合に、エディターにアイコンが表示されない場合があります。 たとえば、Live Unit Testing は `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` を設定するプロジェクトと互換性がありません。 この場合、Live Unit Testing を動作させるには、ビルド プロセスを更新してこの設定を削除する、または `true` に変更する必要があります。 
 
 ## <a name="capture-logs"></a>ログのキャプチャ
 

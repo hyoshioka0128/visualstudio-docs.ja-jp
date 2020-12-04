@@ -1,5 +1,7 @@
 ---
 title: '手順 9: その他の機能を試す'
+description: アイコンと色の変更、ゲーム タイマーの追加、サウンドの追加、ゲーム ボードの拡大を行う方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2f1977bb0b8b391651ed7ed459b9dc560330
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4f462d70fda9a212bf848477952ecc7132a60265
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579738"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479252"
 ---
 # <a name="step-9-try-other-features"></a>手順 9: その他の機能を試す
 さらに詳しく学習するために、アイコンおよび色の変更、ゲーム タイマーの追加、サウンドの追加を試します。 ゲームをよりやりがいのあるものにするために、ボードの拡大およびタイマーの調整を試します。
@@ -39,7 +41,7 @@ ms.locfileid: "77579738"
     > [!TIP]
     > サウンドを再生するには、<xref:System.Media> 名前空間を使用できます。 詳細については、「[Play Sounds in Windows Forms App (C#)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be)」(Windows フォーム アプリでサウンドを再生する (C#)) または「[How To Play Audio In Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be)」(Visual Basic でオーディオを再生する方法) をご覧ください。
 
-- ボードを拡大して、ゲームをより難しくします
+- ボードを拡大して、ゲームをより難しくします 
 
     > [!TIP]
     > TableLayoutPanel に行や列を追加する以上のことを行う必要があります。作成するアイコンの数を検討する必要もあります。
@@ -48,6 +50,6 @@ ms.locfileid: "77579738"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- 無料で利用できる便利なビデオ学習リソースがあります。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎:入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。 C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。
+- 無料で利用できる便利なビデオ学習リソースがあります。 Visual Basic でのプログラミングの詳細については、「[Visual Basic の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)」を参照してください。 C# でのプログラミングの詳細については、「[C# の基礎: 入門者向けの開発](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 8:プレーヤーが勝利したかどうかを確認するメソッドの追加](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)」を参照してください。

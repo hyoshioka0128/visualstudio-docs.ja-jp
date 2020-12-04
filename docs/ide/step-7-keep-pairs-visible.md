@@ -1,5 +1,7 @@
 ---
 title: '手順 7: ペアの表示の維持'
+description: プレーヤーが一致するアイコンのペアを選択したときにアイコンが表示されたままになるように、if ステートメントを追加する方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 9fc61a59d1e04d96fb36e7a7e4cd1304e2057adb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168724"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479447"
 ---
 # <a name="step-7-keep-pairs-visible"></a>手順 7: ペアの表示の維持
 プレーヤーが一致しないアイコンのペアをクリックしている限り、ゲームは正常に動作します。 しかし、プレーヤーが一致するペアをクリックしたらどうなるでしょうか。 (<xref:System.Windows.Forms.Timer.Start> メソッドを使用して) タイマーを有効にしてアイコンを非表示にする代わりに、ゲームでは、それ自体をリセットすることで、クリックされた 2 つのラベルの色はリセットせずに、`firstClicked` 参照変数および `secondClicked` 参照変数を使用してラベルを追跡しないようにする必要があります。
@@ -57,12 +59,12 @@ ms.locfileid: "88168724"
     firstClicked = null;
     ```
 
-     これら 2 つうち最初のステートメントは、2 つのアイコンが同じであるかどうかをチェックします。 2 つの値を比較しているため、C# のプログラムでは、等値演算子 `==` を使用しています。 2 つ目のステートメントは、実際の値の変更 (*代入*と呼ばれます) を行い、`firstClicked` 参照変数を `null` に設定してリセットします。 代わりに代入演算子 `=` が使用されているのはそのためです。 C# では、`=` を使用して値を設定し、`==` を使用して値を比較します。 Visual Basic では、変数の代入と比較の両方に `=` を使用します。
+     これら 2 つうち最初のステートメントは、2 つのアイコンが同じであるかどうかをチェックします。 2 つの値を比較しているため、C# のプログラムでは、等値演算子 `==` を使用しています。 2 つ目のステートメントは、実際の値の変更 (*代入* と呼ばれます) を行い、`firstClicked` 参照変数を `null` に設定してリセットします。 代わりに代入演算子 `=` が使用されているのはそのためです。 C# では、`=` を使用して値を設定し、`==` を使用して値を比較します。 Visual Basic では、変数の代入と比較の両方に `=` を使用します。
 
 2. プログラムを保存したら実行し、フォームでアイコンのクリックを開始します。 一致しないペアをクリックした場合、タイマーの Tick イベントがトリガーされ、両方のアイコンが非表示になります。 一致するペアをクリックした場合、新しい `if` ステートメントが実行され、return ステートメントにより、メソッドでタイマーを開始するコードがスキップされるため、次の図に示すように、アイコンが表示されたままになります。
 
      ![このチュートリアルで作成するゲーム](../ide/media/express_finishedgame.png)<br/>
-***アイコンのペアが表示された*** *絵合わせゲーム*
+***アイコンのペアが表示された** 絵合わせゲーム_ _*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

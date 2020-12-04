@@ -1,5 +1,7 @@
 ---
 title: スニペットのトラブルシューティング
+description: 通常はスニペット ファイルの不適切な内容または破損したスニペット ファイルが原因で発生する IntelliSense コード スニペットの問題をトラブルシューティングする方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4012298bdc4edf0c174576c739e67781bfffdade
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588695"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479187"
 ---
 # <a name="troubleshoot-snippets"></a>スニペットのトラブルシューティング
 
@@ -35,6 +37,6 @@ IntelliSense コード スニペットに関する問題は、通常は 2 つの
 
 - 変数が未定義の可能性があります。 スニペット内の未定義の変数は強調表示されます。 そうなっていない場合は、スニペットの作成者にエラーとして報告できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード スニペット](../ide/code-snippets.md)

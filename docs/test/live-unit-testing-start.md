@@ -1,5 +1,7 @@
 ---
 title: ライブ単体テストを使用してコードをテストする方法
+description: .NET Standard を対象とする簡単なクラス ライブラリを作成し、.NET Core を対象とする MSTest プロジェクトを作成してテストすることで、Live Unit Testing の使用を学習します。
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287013"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329498"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing の概要
 
@@ -26,7 +28,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルでは、Visual Studio Enterprise エディションと **.NET Core クロスプラットフォームの開発**ワークロードがインストールされている必要があります。
+このチュートリアルでは、Visual Studio Enterprise エディションと **.NET Core クロスプラットフォームの開発** ワークロードがインストールされている必要があります。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>ソリューションとクラス ライブラリ プロジェクトを作成する
 
@@ -48,7 +50,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 ソリューションを作成したので、次に、文字列を操作するための複数の拡張メソッドが含まれる StringLibrary という名前のクラス ライブラリを作成します。
 
-1. **ソリューション エクスプローラー**で、UtilityLibraries ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー** で、UtilityLibraries ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
 ::: moniker range="vs-2017"
 
@@ -96,7 +98,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 次のステップとして、StringLibrary ライブラリをテストする単体テスト プロジェクトを作成します。 次の手順を実行して、単体テストを作成します。
 
-1. **ソリューション エクスプローラー**で、UtilityLibraries ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー** で、UtilityLibraries ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
 ::: moniker range="vs-2017"
 
@@ -161,7 +163,7 @@ StringLibrary クラス ライブラリ用のテストを作成しましたが�
 1. Visual Studio が Live Unit Test を開始します。これによりすべてのテストが自動的に実行されます。
 
 ::: moniker range="vs-2017"
-テストの実行が終了すると、**テスト エクスプローラー**に全体の結果と個々のテストの結果とが両方とも表示されます。 さらに、コード エディター ウィンドウには、テスト コードのカバレッジとテストの結果とが両方ともグラフィカルに表示されます。 次の図に示すように、3 つのテストはいずれも正常に実行されています。 また、テストは `StartsWithUpper` メソッド内のすべてのコード パスをカバーしており、それらのテストはすべて正常に実行されていることがわかります (緑色のチェック マーク "✓" によって示されている)。 最後に、StringLibrary 内の他のメソッドにはコード カバレッジが設定されていないことがわかります (青い線 "➖" によって示されている)。
+テストの実行が終了すると、**テスト エクスプローラー** に全体の結果と個々のテストの結果とが両方とも表示されます。 さらに、コード エディター ウィンドウには、テスト コードのカバレッジとテストの結果とが両方ともグラフィカルに表示されます。 次の図に示すように、3 つのテストはいずれも正常に実行されています。 また、テストは `StartsWithUpper` メソッド内のすべてのコード パスをカバーしており、それらのテストはすべて正常に実行されていることがわかります (緑色のチェック マーク "✓" によって示されている)。 最後に、StringLibrary 内の他のメソッドにはコード カバレッジが設定されていないことがわかります (青い線 "➖" によって示されている)。
 
 ![Live Unit Testing の開始後のテスト エクスプローラーとコード エディター ウィンドウ](media/lut-start/lut-results-cs.png)
 ::: moniker-end
@@ -210,7 +212,7 @@ Live Unit Testing は、重大な問題として不完全なコード カバレ�
 
     ![StartsWithLower メソッドのコード カバレッジ](media/lut-start/lut-extended-cs.png)
 
-場合によっては、成功したテストが**テスト エクスプローラー**で、灰色表示されることがあります。これは、テストが現在実行中であることを示すか、または最後に実行されてから、テストに影響する変更がコードに加えられていないために、テストが再度実行されなかったことを示します。
+場合によっては、成功したテストが **テスト エクスプローラー** で、灰色表示されることがあります。これは、テストが現在実行中であることを示すか、または最後に実行されてから、テストに影響する変更がコードに加えられていないために、テストが再度実行されなかったことを示します。
 
 これまで、すべてのテストが成功しています。 次のセクションでは、テスト エラーを処理する方法について説明します。
 

@@ -1,5 +1,7 @@
 ---
 title: '手順 5: ラベルの参照の追加'
+description: ラベルの参照をフォームに追加する方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,15 +15,15 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579331"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480565"
 ---
 # <a name="step-5-add-label-references"></a>手順 5: ラベルの参照の追加
-プログラムでは、プレーヤーがどのラベル コントロールをクリックしたかを追跡する必要があります。 現在のところ、プレーヤーが選択したすべてのラベルが表示されます。 しかし、次のように変更します。 1 つ目のラベルがクリックされると、プログラムではラベルのアイコンを表示します。 2 つ目のラベルがクリックされると、一時的に両方のアイコンを表示した後に、再びアイコンを非表示にします。 *参照変数*を使用して、1 回目および 2 回目にどのラベル コントロールがクリックされたかを追跡します。
+プログラムでは、プレーヤーがどのラベル コントロールをクリックしたかを追跡する必要があります。 現在のところ、プレーヤーが選択したすべてのラベルが表示されます。 しかし、次のように変更します。 1 つ目のラベルがクリックされると、プログラムではラベルのアイコンを表示します。 2 つ目のラベルがクリックされると、一時的に両方のアイコンを表示した後に、再びアイコンを非表示にします。 *参照変数* を使用して、1 回目および 2 回目にどのラベル コントロールがクリックされたかを追跡します。
 
 ## <a name="to-add-label-references"></a>ラベルの参照を追加するには
 
@@ -37,7 +39,7 @@ ms.locfileid: "77579331"
 
      変数は、オブジェクトを追跡していない間は、特殊な予約値 `null` (C# の場合) および `Nothing` (Visual Basic の場合) に設定されます。 そのため、プログラムが起動されると、`firstClicked` および `secondClicked` の両方が `null` または `Nothing` に設定されます。これは、変数が何も追跡していないことを意味しています。
 
-2. 新しい `firstClicked` 参照変数を使用するように <xref:System.Windows.Forms.Control.Click> イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます (必ずコメントと `if` ステートメント全体を含めてください)。
+2. 新しい `firstClicked` 参照変数を使用するように <xref:System.Windows.Forms.Control.Click> イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます  (必ずコメントと `if` ステートメント全体を含めてください)。
 
      [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
      [!code-csharp[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]
@@ -47,7 +49,7 @@ ms.locfileid: "77579331"
 4. 次のラベル コントロールをクリックすると、何も起こらないことに気付きます。 プログラムでは、プレーヤーがクリックした 1 つ目のラベルが既に追跡されているため、`firstClicked` は `null` (C# の場合) または `Nothing` (Visual Basic の場合) ではありません。 `if` ステートメントは、`firstClicked` が `null` または `Nothing` かどうかをチェックし、そうでないことがわかった場合は、`if` ステートメント内のステートメントを実行しません。 そのため、次の図に示すように、クリックされた 1 つ目のアイコンのみが黒になり、他のアイコンは非表示になります。
 
      ![1 つのアイコンが表示された絵合わせゲーム](../ide/media/express_tut4step5.png)<br/>
-***1 つのアイコンが表示された*** *絵合わせゲーム*
+*1 つのアイコンが表示された **絵合わせゲーム** _ _*
 
      この状況は、チュートリアルの次のステップで **Timer** コントロールを追加することで修正します。
 
@@ -55,4 +57,4 @@ ms.locfileid: "77579331"
 
 - チュートリアルの次の手順に進むには、「 **[手順 6: タイマーの追加](../ide/step-6-add-a-timer.md)** 」をご覧ください。
 
-- チュートリアルの前の手順に戻るには、「[手順 4:各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)」をご覧ください。
+- チュートリアルの前の手順に戻るには、「[手順 4: 各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)」を参照してください。

@@ -1,5 +1,7 @@
 ---
 title: テスト エージェントとテスト コントローラーのインストール
+description: Visual Studio エージェントを使用して、Azure Test Plans または Team Foundation Server でテストを調整する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928607"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328887"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>テスト エージェントとテスト コントローラーのインストール
 
@@ -77,7 +79,7 @@ ISO ファイル形式のインストーラーを入手できるので、仮想�
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Visual Studio 2013 テスト エージェントからのアップグレード
 
-すべての新しい自動テストシナリオでは Agents for Visual Studio を使用することをお勧めします。 ビルド パイプラインで*テスト エージェントの配置*タスクを使用して、コンピューター上にテスト エージェントをダウンロードしてインストールすることができます。
+すべての新しい自動テストシナリオでは Agents for Visual Studio を使用することをお勧めします。 ビルド パイプラインで *テスト エージェントの配置* タスクを使用して、コンピューター上にテスト エージェントをダウンロードしてインストールすることができます。
 
 次の表は、Agents for Visual Studio 2013 でサポートされるシナリオと、Team Foundation Server (TFS) 2015 および Azure Test Plans での代替シナリオを示しています。
 

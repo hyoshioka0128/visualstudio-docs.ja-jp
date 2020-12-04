@@ -1,5 +1,7 @@
 ---
 title: Visual C++ のコード スニペット
+description: コード スニペットを使用して、よく使用されるコードを C++ コード ファイルに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: corob-msft
@@ -9,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e5cde2be817c49344e02ff06030022f99790a7a2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77277836"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478810"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ のコード スニペット
 
@@ -26,11 +28,11 @@ Visual Studio でコード スニペットを使用して、よく使用され�
 
 コード スニペットを挿入するには、C++ コード ファイル ( *.cpp* または *.h*) を開き、ファイル内の任意の場所をクリックして、次のいずれかを実行します。
 
-- 右クリックしてコンテキスト メニューを表示し、 **[スニペットの挿入]** を選択する
+- 右クリックしてコンテキスト メニューを表示し、**[スニペットの挿入]** を選択する
 
 - **[編集 / IntelliSense]** メニューの **[スニペットの挿入]** を選択する
 
-- ホット キー **Ctrl**+**K**+**X** を使用する
+- 次のホット キーを使用します。**Ctrl**+**K**+**X**
 
 **#if** で始まる選択肢の一覧が表示されます。 **#if** を選択すると、ファイルに追加された次のコードが表示されます。
 
@@ -50,7 +52,7 @@ Visual Studio でコード スニペットを使用して、よく使用され�
 
 - **[編集]**  >  **[IntelliSense]** メニューの **[ブロックの挿入]** を選択する
 
-- キーボードの **Ctrl**+**K**+**S** キーを押す
+- キーボードで次のキーを押します。**Ctrl**+**K**+**S**
 
 **#if** を選択します。 次のような結果が表示されます。
 
@@ -64,7 +66,7 @@ Visual Studio でコード スニペットを使用して、よく使用され�
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>C++ コード スニペットの全一覧の確認場所
 
-**コード スニペット マネージャー** ( **[ツール]** メニュー) に移動し、 **[言語]** を **[Visual C++]** に設定すると、C++ コード スニペットの全一覧が表示されます。 下のウィンドウで、 **[Visual C++]** を展開します。 すべての C++ コード スニペットの名前がアルファベット順で表示されます。
+**コード スニペット マネージャー** (**[ツール]** メニュー) に移動し、**[言語]** を **[Visual C++]** に設定すると、C++ コード スニペットの全一覧が表示されます。 下のウィンドウで、**[Visual C++]** を展開します。 すべての C++ コード スニペットの名前がアルファベット順で表示されます。
 
 ほとんどのコード スニペットの名前は自明ですが、一部の名前は分かりにくい場合があります。
 
@@ -170,6 +172,6 @@ class SomeClass {
 {
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード スニペット](../ide/code-snippets.md)

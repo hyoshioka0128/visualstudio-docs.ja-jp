@@ -1,5 +1,7 @@
 ---
 title: '手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加'
+description: プレーヤーが勝利したかどうかを確認するメソッドの追加方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579766"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479291"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加
 楽しいゲームが作成されましたが、完成させるには追加の項目が必要です。 ゲームは、プレーヤーが勝利した時点で終了する必要があるため、プレーヤーが勝利したかどうかを確認する `CheckForWinner()` メソッドを追加する必要があります。
@@ -43,10 +45,10 @@ ms.locfileid: "77579766"
 3. プログラムを保存し、実行します。 ゲームを実行し、すべてのアイコンを一致させます。 勝利すると、プログラムでは、次の図に示すように **MessageBox** が表示され、その後にボックスが閉じられます。
 
      ![MessageBox が表示された絵合わせゲーム](../ide/media/express_tut4step8.png)<br/>
-***MessageBox*** *が表示された* ***絵合わせゲーム***
+** ***MessageBox** _が表示された *_絵合わせゲーム_ _*_
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「 **[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)** 」をご覧ください。
+- チュートリアルの次の手順に進むには、「[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 7:ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」をご覧ください。
+- 前のチュートリアルの手順に戻る場合は、「[手順 7: ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」を参照してください。

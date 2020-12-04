@@ -1,5 +1,7 @@
 ---
 title: C++ IntelliSense
+description: C++ プロジェクトのコーディング中に使用できる IntelliSense 機能について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594215"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478888"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense の機能
 
@@ -72,7 +74,7 @@ Android や iOS 用にビルドするように構成されている OpenGLES ア
 
 ![アクティブなプロジェクトとして iOS が選択されています。](../ide/media/intellisensecppcrossplatform2.png)
 
-次の点に注意してください。
+次に注意してください。
 
 - `__ANDROID__` が iOS プロジェクトに対して定義されていないため、6 行目の `#ifdef` 分岐は淡色表示で非アクティブ領域として表示されています。
 
@@ -90,11 +92,11 @@ Android や iOS 用にビルドするように構成されている OpenGLES ア
 
 ## <a name="intellisense-for-stand-alone-files"></a>スタンドアロン ファイルの IntelliSense
 
-プロジェクトの外部で 1 つのファイルを開いても、やはり IntelliSense を取得します。 **[テキスト エディター]** > **[C/C++]** > **[詳細設定]** の **[オプション]** ダイアログ ボックスで特定の IntelliSense 機能を有効または無効にすることができます。 プロジェクトの一部ではない 1 つのファイルに IntelliSense を構成するには、**IntelliSense を表示し、非プロジェクト ファイルのセクション**を確認します。
+プロジェクトの外部で 1 つのファイルを開いても、やはり IntelliSense を取得します。 **[テキスト エディター]** > **[C/C++]** > **[詳細設定]** の **[オプション]** ダイアログ ボックスで特定の IntelliSense 機能を有効または無効にすることができます。 プロジェクトの一部ではない 1 つのファイルに IntelliSense を構成するには、**IntelliSense を表示し、非プロジェクト ファイルのセクション** を確認します。
 
 ![Visual C&#43;&#43; の単一ファイルの Intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
-既定では、単一ファイルの IntelliSense は標準のインクルード ディレクトリだけを使用してヘッダー ファイルを検索します。 他にディレクトリを追加するには、次の図に示すとおり、**ソリューション** ノードのショートカット メニューを開き、 **[デバッグ ソース ファイル]** リストにディレクトリを追加します。
+既定では、単一ファイルの IntelliSense は標準のインクルード ディレクトリだけを使用してヘッダー ファイルを検索します。 他にディレクトリを追加するには、次の図に示すとおり、**ソリューション** ノードのショートカット メニューを開き、**[デバッグ ソース ファイル]** リストにディレクトリを追加します。
 
 ![ヘッダー ファイルまでのパスを追加しています。](../ide/media/intellisensedebugyourcode.jpg)
 

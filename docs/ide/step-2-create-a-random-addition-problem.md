@@ -1,5 +1,7 @@
 ---
 title: '手順 2: ランダムな加算問題の作成'
+description: 乱数に基づく計算問題を追加して、クイズを難しくする方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2febef6987cf3440f92f6a6c505840cfe3ca3448
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1c23b85dec73c6810420dc5e8ab2d3f4121fc903
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579888"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480682"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題の作成
 
@@ -80,7 +82,7 @@ ms.locfileid: "77579888"
 
      これらのステートメントでは、**plusLeftLabel** および **plusRightLabel** の **Text** プロパティを設定し、2 つの乱数が表示されるようになっています。 数値をテキストに変換するには、整数の `ToString()` メソッドを使用する必要があります。 (プログラミングでは、文字列はテキストを意味します。 ラベル コントロールには、数ではなく、テキストのみが表示されます。
 
-6. デザイン ウィンドウで、 **[Start]** をダブルクリックするか、または [Start] をクリックして、**Enter** キーを押します。
+6. デザイン ウィンドウで、**[Start]** をダブルクリックするか、または [Start] をクリックして、**Enter** キーを押します。
 
      クイズの受け手がこのボタンをクリックすると、クイズが開始され、その動作を実装する Click イベント ハンドラーが追加されました。
 
@@ -91,7 +93,7 @@ ms.locfileid: "77579888"
 
      最初のステートメントは新しい `StartTheQuiz()` メソッドを呼び出します。 2 番目のステートメントは **startButton** コントロールの **Enabled** プロパティを **False** に設定するため、クイズの受け手はクイズ中にこのボタンをクリックできません。
 
-8. コードを保存し、実行して、 **[Start]** ボタンをクリックします。
+8. コードを保存し、実行して、**[Start]** ボタンをクリックします。
 
      次のスクリーンショットに示すように、ランダムな加算の問題が表示されます。
 
@@ -104,4 +106,4 @@ ms.locfileid: "77579888"
 
 - チュートリアルの次の手順に進むには、「 **[手順 3:カウントダウン タイマーの追加](../ide/step-3-add-a-countdown-timer.md)** 」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 1: プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 1: プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)」をご覧ください。

@@ -1,5 +1,7 @@
 ---
 title: テスト コントローラーおよびテスト エージェントのタイムアウト期限
+description: 関連付けられている XML 構成ファイルを編集して、テスト コントローラーとテスト エージェントのタイムアウト値を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287286"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330005"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>方法: テスト コントローラーおよびテスト エージェントのタイムアウト期限を指定する
 
@@ -28,7 +30,7 @@ ms.locfileid: "85287286"
 
 - テスト コントローラー: *QTController.exe.config*
 
-    |キー名|[説明]|値|
+    |キー名|説明|値|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|エージェントの ping 要求を待機する秒数。これを超えると、接続が失われたと判断されます。|"n" 秒。|
     |AgentSyncTimeoutInSeconds|同期テストの実行を開始するときに、すべてのエージェントの同期を待機する秒数。これを超えると、実行が中止されます。|"n" 秒。|
@@ -37,7 +39,7 @@ ms.locfileid: "85287286"
 
 - テスト エージェント: *QTAgentService.exe.config*
 
-    |キー名|[説明]|値|
+    |キー名|説明|値|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|コントローラーへの接続を試行する間隔の秒数。|"n" 秒。 既定値: "30" (30 秒)。|
     |RemotingTimeoutSeconds|リモート処理呼び出しを継続できる時間の最大秒数。|"n" 秒。 既定値: "600" (10 分)。|
@@ -68,7 +70,7 @@ ms.locfileid: "85287286"
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    または
+    - または -
 
     キーを追加して、タイムアウト値を指定します。 たとえば、次のように、`AgentInitializeTimeout` キーを `<appSettings>` セクションに追加して、値を 5 分に指定します。
 
@@ -102,7 +104,7 @@ ms.locfileid: "85287286"
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    または
+    - または -
 
     キーを追加して、タイムアウト値を指定します。 たとえば、次のように、`RemotingTimeoutSeconds` キーを `<appSettings>` セクションに追加して、値を 15 分に指定します。
 
@@ -112,7 +114,7 @@ ms.locfileid: "85287286"
     </appSettings>
     ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テスト エージェントをインストールして構成する](../test/lab-management/install-configure-test-agents.md)
 - [ロード テストのログ設定の変更](../test/modify-load-test-logging-settings.md)

@@ -1,6 +1,6 @@
 ---
 title: その他のボタンおよびチェック ボックスに対するコードの記述
-description: ピクチャ ビューアーの作成チュートリアルのその他のボタンとチェック ボックスのためのコードを記述する方法について説明します。
+description: 画像ビューアーの作成チュートリアル内のその他のボタンとチェック ボックスのコードを記述する方法を説明します。
 ms.date: 08/30/2019
 ms.custom: SEO-VS-2020
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c8fa5bcacd4d6086dbe926240ec11743f06e513d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036913"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480331"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>手順 10: その他のボタンおよびチェック ボックスに対するコードの記述
 

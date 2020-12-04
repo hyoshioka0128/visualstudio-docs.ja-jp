@@ -1,5 +1,7 @@
 ---
 title: Microsoft Fakes を使用したテストでのコードの分離
+description: Microsoft Fakes を使用して、アプリケーションの他の部分をスタブまたは shim に置き換えることにより、テストするコードを分離する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325952"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329537"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
@@ -88,8 +90,8 @@ Fakes には 2 種類のフレーバーがあります。
        ::: moniker range=">=vs-2019"
        - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
        ::: moniker-end
-       - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、 **ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
-   2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、 **System.dll** を選択します。
+       - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
+   2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、**System.dll** を選択します。
 
    3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。
 

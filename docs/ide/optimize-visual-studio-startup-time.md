@@ -1,6 +1,6 @@
 ---
 title: 起動時間の改善
-description: '[Visual Studio のパフォーマンスの管理] ダイアログ ボックスで拡張機能とツール ウィンドウの設定を制御し、Visual Studio の起動時間を短縮する方法について説明します。'
+description: '[Visual Studio のパフォーマンスの管理] ダイアログ ボックスで拡張機能とツール ウィンドウの設定を制御し、Visual Studio の起動時間を短縮する方法を説明します。'
 ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
@@ -16,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871497"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479954"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio の起動時間の最適化
 

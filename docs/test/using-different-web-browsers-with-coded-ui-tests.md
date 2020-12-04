@@ -1,5 +1,7 @@
 ---
 title: コード化された UI テストでのさまざまな Web ブラウザーの使用
+description: テストをカスタマイズし、Web アプリケーションに対応するさまざまなブラウザーを使用して再生する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 507da254d108ddc31f2b1c9fdf7f393d42934f2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6baddaeac3fdea3d27f60722e728df209bfd768d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289327"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330031"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでさまざまな Web ブラウザーを使用する
 
@@ -47,7 +49,7 @@ ms.locfileid: "85289327"
 
 **Internet Explorer 以外の Web ブラウザーでの再生:** Internet Explorer 以外の Web ブラウザーで再生する場合は、テスト コードで BrowserWindow.CurrentBrowser プロパティを **Firefox** または **Chrome** に変更します。
 
-IE 以外の Web ブラウザーでテストを再生するには、**コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント**をインストールする必要があります。
+IE 以外の Web ブラウザーでテストを再生するには、**コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント** をインストールする必要があります。
 
 ### <a name="install-selenium-components"></a>Selenium コンポーネントをインストールする
 
@@ -67,7 +69,7 @@ IE 以外の Web ブラウザーでテストを再生するには、**コード�
 
 ::: moniker-end
 
-3. 拡張機能を強調表示し、 **[ダウンロード]** を選択します。
+3. 拡張機能を強調表示し、**[ダウンロード]** を選択します。
 
     > [!TIP]
     > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)からもダウンロードできます。
@@ -80,7 +82,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
 1. マイ コードのみを有効にする:
 
-    1. **[ツール]** メニューの **[オプション]** を選択し、 **[デバッグ]** を選択します。
+    1. **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。
 
     2. **[マイ コードのみを有効にする]** を選択します。
 
@@ -88,7 +90,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
     1. **[デバッグ]** メニューの **[例外]** を選択します。
 
-    2. **[共通言語ランタイム例外]** で、 **[ユーザーにハンドルされていないとき]** をオフにします。
+    2. **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。
 
 コード化された UI テストの `BrowserWindow.CurrentBrowser` を変更するオプションが表示されない場合、さまざまな Web ブラウザーを使用したコード化された UI テストをサポートしていないバージョンの Visual Studio を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise Edition を使用する必要があります。
 
@@ -118,7 +120,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
 詳細については、「[コード化された UI テスト ログを使用したコード化された UI テストの分析](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)」をご覧ください。
 
-## <a name="video-resources"></a>ビデオ リソース
+## <a name="video-resources"></a>動画リソース
 
 [IE で記録し、任意の場所で再生する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
@@ -130,7 +132,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
 [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

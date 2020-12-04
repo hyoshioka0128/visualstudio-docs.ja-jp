@@ -1,5 +1,7 @@
 ---
 title: 単体テスト
+description: 自分のコードのロジック エラーを開発者やテスト担当者がすばやく検出するために使用する単体テスト ツールについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: be0f8f7eeb116a251477ce57027a2176119c2d17
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099311"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330135"
 ---
 # <a name="unit-test-your-code"></a>コードの単体テスト
 
@@ -24,11 +26,11 @@ ms.locfileid: "92099311"
 
 単体テスト ツールには次の要素が含まれます。
 
-* **テスト エクスプローラー**&mdash;単体テストを実行し、**テスト エクスプローラー**でその結果を確認します。 サードパーティ製のフレームワークを含めて、**テスト エクスプローラー**のアダプターがあるすべての単体テスト フレームワークを使用できます。
+* **テスト エクスプローラー**&mdash;単体テストを実行し、**テスト エクスプローラー** でその結果を確認します。 サードパーティ製のフレームワークを含めて、**テスト エクスプローラー** のアダプターがあるすべての単体テスト フレームワークを使用できます。
 
 * **マネージド コード用の Microsoft 単体テスト フレームワーク**&mdash;マネージド コード用の Microsoft 単体テスト フレームワークは、Visual Studio と共にインストールされ、.NET コードをテストするためのフレームワークを提供します。
 
-* **C++ 用の Microsoft 単体テスト フレームワーク**&mdash;C++ 用の Microsoft 単体テスト フレームワークは、**C++ によるデスクトップ開発**ワークロードの一部としてインストールされます。 これにより、ネイティブ コードをテストするためのフレームワークが提供されます。 Google Test、Boost.Test、CTest の各フレームワークも含まれており、サードパーティ製のアダプターを追加のテスト フレームワークで使用できます。 詳細については、[C/C++ 用の単体テストの作成](../test/writing-unit-tests-for-c-cpp.md)に関するページを参照してください。
+* **C++ 用の Microsoft 単体テスト フレームワーク**&mdash;C++ 用の Microsoft 単体テスト フレームワークは、**C++ によるデスクトップ開発** ワークロードの一部としてインストールされます。 これにより、ネイティブ コードをテストするためのフレームワークが提供されます。 Google Test、Boost.Test、CTest の各フレームワークも含まれており、サードパーティ製のアダプターを追加のテスト フレームワークで使用できます。 詳細については、[C/C++ 用の単体テストの作成](../test/writing-unit-tests-for-c-cpp.md)に関するページを参照してください。
 
 * **コード カバレッジ ツール**&mdash; テスト エクスプローラーで、単体テストが 1 つのコマンドから実行する製品コードの量を確認できます。
 
@@ -46,7 +48,7 @@ ms.locfileid: "92099311"
 |**テスト エクスプローラーによる単体テスト:** テスト エクスプローラーによって、さらに生産性が高く効率的な単体テストを作成できることを学習します。|- [単体テストの基本](../test/unit-test-basics.md)<br />- [単体テスト プロジェクトを作成する](../test/create-a-unit-test-project.md)<br />- [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)<br />- [サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)|
 |**C++ コードの単体テスト**|- [C/C++ 用の単体テストの記述](../test/writing-unit-tests-for-c-cpp.md)|
 |**単体テストの分離**|- [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**コード カバレッジを使用してテストされるプロジェクトのコードの割合を識別する:** Visual Studio のテスト ツールのコード カバレッジ機能について説明します。|- [コード カバレッジを使用した、テストされるコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**コード カバレッジを使用して、テストされたプロジェクトのコードの割合を調べる:** Visual Studio のテスト ツールのコード カバレッジ機能について学習します。|- [コード カバレッジを使用した、テストされるコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**ロード テストを使用したストレスおよびパフォーマンスの分析の実行:** アプリケーションのパフォーマンスとストレスの問題を分離する目的で役立つロード テストの作成方法を説明します。|- [クイック スタート: ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)<br />- [ロード テスト (Azure Test Plans と TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |**品質ゲートの設定:** コードがチェックインまたはマージされる前にテストが実行されるよう、品質ゲートを作成する方法について説明します。|- [チェックイン ポリシー (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**テストのオプションを設定する:** テスト結果の保存場所など、テスト オプションの構成方法について説明します。|[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|

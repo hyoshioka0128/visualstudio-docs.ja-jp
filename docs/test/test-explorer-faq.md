@@ -1,5 +1,7 @@
 ---
 title: テスト エクスプローラーに関する FAQ
+description: 一般的なトラブルシューティングを含む、Visual Studio のテスト エクスプローラーに関してよく寄せられる質問を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 5d0e98c3201d1e0e58ee972ad38c3a49bc9555de
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037030"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330174"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio テスト エクスプローラーに関する FAQ
 
@@ -95,7 +97,7 @@ ms.locfileid: "90037030"
 
 **テスト エクスプローラーの検索ボックスの "ファイル パス" フィルターはもう存在しません。**
 
-**テスト エクスプローラー**の検索ボックスのファイル パス フィルターは、Visual Studio 2017 バージョン 15.7 で削除されました。 この機能は使用頻度が低く、この機能を除外することで、テスト エクスプローラーはテスト メソッドを高速で取得できます。 この変更によって開発フローが中断される場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/)でフィードバックを送信してその旨をお知らせください。
+**テスト エクスプローラー** の検索ボックスのファイル パス フィルターは、Visual Studio 2017 バージョン 15.7 で削除されました。 この機能は使用頻度が低く、この機能を除外することで、テスト エクスプローラーはテスト メソッドを高速で取得できます。 この変更によって開発フローが中断される場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/)でフィードバックを送信してその旨をお知らせください。
 
 ## <a name="remove-undocumented-interfaces"></a>ドキュメントに記載されていないインターフェイスを削除する
 

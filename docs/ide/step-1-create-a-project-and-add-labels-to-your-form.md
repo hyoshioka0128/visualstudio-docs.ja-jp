@@ -1,5 +1,7 @@
 ---
 title: '手順 1: プロジェクトの作成とフォームへのラベルの追加'
+description: プロジェクトの作成、フォームへのラベル、ボタン、その他のコントロールの追加、追加する各コントロールのプロパティの設定を行うための方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579449"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480110"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのラベルの追加
 
@@ -28,11 +30,11 @@ ms.locfileid: "77579449"
 
 ::: moniker range="vs-2017"
 
-1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. メニュー バーで、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの左側で、 **[Visual C#]** または **[Visual Basic]** のいずれかを選択し、 **[Windows Desktop]** を選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側で、**[Visual C#]** または **[Visual Basic]** のいずれかを選択し、**[Windows Desktop]** を選択します。
 
-1. テンプレートの一覧で **[Windows フォーム アプリケーション (.NET Framework)]** テンプレートを選択し、「*MathQuiz*」という名前を付けて、 **[OK]** ボタンを選択します。
+1. テンプレートの一覧で **[Windows フォーム アプリケーション (.NET Framework)]** テンプレートを選択し、「*MathQuiz*」という名前を付けて、**[OK]** ボタンを選択します。
 
     選択したプログラミング言語に応じて、*Form1.cs* または *Form1.vb* という名前のフォームが表示されます。
 
@@ -47,9 +49,9 @@ ms.locfileid: "77579449"
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、 **[プロジェクトの種類]** 一覧から **[デスクトップ]** を選択します。
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、**[プロジェクトの種類]** 一覧から **[デスクトップ]** を選択します。
 
-   **[プロジェクトの種類]** フィルターを適用したら、C# または Visual Basic の **[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、 **[次へ]** を選択します。
+   **[プロジェクトの種類]** フィルターを適用したら、C# または Visual Basic の **[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、**[次へ]** を選択します。
 
    ![Windows フォーム アプリ (.NET Framework) 用の C# または Visual Basic テンプレートを選択する](./media/create-new-project-search-winforms-filtered.png)
 
@@ -84,7 +86,7 @@ ms.locfileid: "77579449"
 
 ## <a name="to-create-the-time-remaining-box"></a>残り時間ボックスを作成するには
 
-1. **ツールボックス**から <xref:System.Windows.Forms.Label> コントロールを追加し、その **[(名前)]** プロパティの値を「**timeLabel**」に設定します。
+1. **ツールボックス** から <xref:System.Windows.Forms.Label> コントロールを追加し、その **[(名前)]** プロパティの値を「**timeLabel**」に設定します。
 
      このラベルは、クイズの残り時間の秒数を表示するボックスとして、右上隅に表示されます。
 
@@ -106,7 +108,7 @@ ms.locfileid: "77579449"
 
      ![フォント サイズを示す [プロパティ] ウィンドウ](../ide/media/express_setfontsize.png)
 
-8. **ツールボックス**から別の Label コントロールを追加し、フォント サイズを **15.75** に設定します。
+8. **ツールボックス** から別の Label コントロールを追加し、フォント サイズを **15.75** に設定します。
 
 9. **Text** プロパティを **Time Left** に設定します。
 
@@ -114,7 +116,7 @@ ms.locfileid: "77579449"
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>加算問題にコントロールを追加するには
 
-1. **ツールボックス**から Label コントロールを追加し、その **Text** プロパティを **?** (疑問符) に設定します。
+1. **ツールボックス** から Label コントロールを追加し、その **Text** プロパティを **?** (疑問符) に設定します。
 
 2. **AutoSize** プロパティを **False** に設定します。
 
@@ -142,7 +144,7 @@ ms.locfileid: "77579449"
 
 13. 4 番目のラベルの **Text** プロパティの値を **=** (等号) に設定します。
 
-14. **ツールボックス**から <xref:System.Windows.Forms.NumericUpDown> コントロールを追加し、フォント サイズを **18** に設定して、幅を **100** に設定します。
+14. **ツールボックス** から <xref:System.Windows.Forms.NumericUpDown> コントロールを追加し、フォント サイズを **18** に設定して、幅を **100** に設定します。
 
      この種類のコントロールについては、後ほど詳しく説明します。
 
@@ -183,7 +185,7 @@ ms.locfileid: "77579449"
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>[Start] ボタンを追加し、タブ インデックスの順序を設定するには
 
-1. **ツールボックス**から <xref:System.Windows.Forms.Button> コントロールを追加し、その **(Name)** プロパティを **startButton** に設定します。
+1. **ツールボックス** から <xref:System.Windows.Forms.Button> コントロールを追加し、その **(Name)** プロパティを **startButton** に設定します。
 
 2. **Text** プロパティを **Start the quiz** に設定します。
 
@@ -204,7 +206,7 @@ ms.locfileid: "77579449"
 
      ![計算クイズの初期フォーム](../ide/media/express_formlaidout.png)
 
-8. 予測どおりに **TabIndex** プロパティが動作するかどうかを確認するには、**F5** キーを押してプログラムを保存して実行するか、またはメニュー バーの **[デバッグ]**  >  **[デバッグの開始]** をクリックし、**Tab** キーを数回押します。
+8. 予測どおりに **TabIndex** プロパティが動作するかどうかを確認するには、**F5** キーを押してプログラムを保存して実行するか、またはメニュー バーの **[デバッグ]** > **[デバッグの開始]** をクリックし、**Tab** キーを数回押します。
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

@@ -1,5 +1,7 @@
 ---
 title: 自動テストに Azure Pipelines を使用する
+description: Azure Pipelines と Team Foundation Server を使用して、ビルド、デプロイ、テストを自動化するための自動テストを実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: bd1ab445093a91875c8e9c20febe37ade3921800
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928594"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329305"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>自動化されたテストに Lab Management ではなく Azure Test Plans を使用する
 

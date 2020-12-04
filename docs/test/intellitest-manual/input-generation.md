@@ -1,5 +1,7 @@
 ---
 title: 動的なシンボリック実行 | Microsoft IntelliTest 開発者テスト ツール
+description: IntelliTest を使用して、プログラムの分岐条件を分析し、パラメーター化された単体テストの入力を生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315201"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329911"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>動的なシンボリック実行を使用する入力生成
 
@@ -26,7 +28,7 @@ IntelliTest は、プログラムの分岐条件を分析して、[パラメー�
 
 1. IntelliTest により、選択された入力 `i` でテストが実行され、テストの実行とテスト対象のプログラムが監視されます。
 
-1. 実行中、プログラムは、プログラムのすべての条件付き分岐で決定される特定のパスを使用します。 実行を決定するすべての条件セットは*パス条件*と呼ばれ、仮入力パラメーターで述語 `p: I -> {true, false}` として書き込まれます。 IntelliTest は、この述語の表現を計算します。
+1. 実行中、プログラムは、プログラムのすべての条件付き分岐で決定される特定のパスを使用します。 実行を決定するすべての条件セットは *パス条件* と呼ばれ、仮入力パラメーターで述語 `p: I -> {true, false}` として書き込まれます。 IntelliTest は、この述語の表現を計算します。
 
 1. IntelliTest で `q := (q or p)` が設定されます。 つまり、`p` で表されるパスが示されたことを記録します。
 
@@ -52,14 +54,14 @@ IntelliTest は [Z3](https://github.com/Z3Prover/z3/wiki) 制約ソルバーを�
 ## <a name="dynamic-code-coverage"></a>動的コード カバレッジ
 
 ランタイム監視の副作用として、IntelliTest は動的コード カバレッジ データを収集します。
-これは*動的*と呼ばれます。IntelliTest は実行されたコードのみを認識するため、他のカバレッジ ツールで通常行われるようにカバレッジに絶対値を指定できません。
+これは *動的* と呼ばれます。IntelliTest は実行されたコードのみを認識するため、他のカバレッジ ツールで通常行われるようにカバレッジに絶対値を指定できません。
 
 たとえば、IntelliTest が動的カバレッジを 5/10 基本ブロックとして報告した場合、10 個のうち 5 個のブロックがカバーされたことを意味します。この場合、分析でこれまでに到達したすべてのメソッド (テスト対象のアセンブリに存在するすべてのメソッドではない) のブロックの総数は 10 です。
 その後の分析で、さらに到達可能なメソッドが検出されたときに、分子 (この例では 5) と分母 (10) の両方が増える可能性があります。
 
 ## <a name="integers-and-floats"></a>整数と浮動小数点数
 
-IntelliTest の[制約ソルバー](#constraint-solver)は、テストとテスト対象のプログラムに対して異なる実行パスをトリガーするために、**byte**、**int**、**float** などのプリミティブ型のテスト入力値を決定します。
+IntelliTest の [制約ソルバー](#constraint-solver)は、テストとテスト対象のプログラムに対して異なる実行パスをトリガーするために、**byte**、**int**、**float** などのプリミティブ型のテスト入力値を決定します。
 
 ## <a name="objects"></a>Objects
 
@@ -79,18 +81,18 @@ IntelliTest は、テストとテスト対象のプログラムを実行する�
 
 ## <a name="visibility"></a>表示
 
-.NET には、詳細な可視性モデルがあります。型、メソッド、フィールド、その他のメンバーを**プライベート**、**パブリック**、**内部**などにすることができます。
+.NET には、詳細な可視性モデルがあります。型、メソッド、フィールド、その他のメンバーを **プライベート**、**パブリック**、**内部** などにすることができます。
 
 IntelliTest は、テストを生成する際に、生成されたテストのコンテキスト内からの .NET 可視性ルールに関して正当なアクション (コンストラクター、メソッドの呼び出しや、フィールドの設定など) のみを実行しようとします。
 
-ルールは以下のとおりです。
+ルールは次のようになります。
 
 * **内部メンバーの可視性**
   * IntelliTest は、生成されたテストで、外部の [PexClass](attribute-glossary.md#pexclass) に表示された内部メンバーにアクセスできると見なします。
   .NET の **InternalsVisibleToAttribute** では、他のアセンブリに内部メンバーの可視性を拡張します。
 
 * **[PexClass](attribute-glossary.md#pexclass) のプライベートおよびファミリ (C# で保護されている) メンバーの可視性**
-  * IntelliTest は常に、[PexClass](attribute-glossary.md#pexclass) に直接、またはサブクラスに生成されたテストを配置します。 そのため、IntelliTest は、表示されたすべてのファミリ メンバー (C# で**保護されている**) を使用できると見なします。
+  * IntelliTest は常に、[PexClass](attribute-glossary.md#pexclass) に直接、またはサブクラスに生成されたテストを配置します。 そのため、IntelliTest は、表示されたすべてのファミリ メンバー (C# で **保護されている**) を使用できると見なします。
   * 生成されたテストが (通常は部分クラスを使用して) [PexClass](attribute-glossary.md#pexclass) に直接配置されている場合、IntelliTest は [PexClass](attribute-glossary.md#pexclass) のすべてのプライベート メンバーも使用できると見なします。
 
 * **パブリック メンバーの可視性**
@@ -100,7 +102,7 @@ IntelliTest は、テストを生成する際に、生成されたテストの�
 
 インターフェイス型のパラメーターを持つメソッドはどのようにテストするのですか? 非シール クラスについてはどうですか? IntelliTest は、このメソッドが呼び出されたときに、後でどの実装が使用されるかを認識できません。 おそらく、テスト時に使用できる実際の実装もありません。
 
-従来の答えは、明示的な動作で*モック オブジェクト*を使用することです。
+従来の答えは、明示的な動作で *モック オブジェクト* を使用することです。
 
 モック オブジェクトはインターフェイスを実装 (または、非シール クラスを拡張) します。 これは実際の実装ではなく、モック オブジェクトを使用するテストの実行を許可する単なるショートカットを表します。 その動作は、使用される各テスト ケースの一部として手動で定義します。 モック オブジェクトとその予期される動作の定義を容易にするツールは多数あります。それでも、この動作は手動で定義する必要があります。
 
@@ -115,7 +117,7 @@ IntelliTest は、テストを生成する際に、生成されたテストの�
 
 ## <a name="structs"></a>構造体
 
-IntelliTest の**構造体**の値に関する推論は、[オブジェクト](#objects)の処理方法に似ています。
+IntelliTest の **構造体** の値に関する推論は、[オブジェクト](#objects)の処理方法に似ています。
 
 ## <a name="arrays-and-strings"></a>配列と文字列
 
@@ -133,6 +135,6 @@ IntelliTest は、適切なプログラムの動作をトリガーするのに�
 
 ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。
 
-## <a name="further-reading"></a>関連項目
+## <a name="further-reading"></a>参考資料
 
 * [それはどのように機能しますか?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

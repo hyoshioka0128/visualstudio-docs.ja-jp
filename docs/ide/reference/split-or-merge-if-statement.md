@@ -1,5 +1,7 @@
 ---
 title: if ステートメントの分割または結合
+description: '[クイック アクションとリファクタリング] メニューを使用して、if ステートメントを分割またはマージする方法を説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093668"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479928"
 ---
 # <a name="split-or-merge-if-statements"></a>if ステートメントの分割または結合
 
@@ -31,7 +33,7 @@ ms.locfileid: "79093668"
 
 **理由:** スタイルの好みの問題です。  
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 `if` ステートメントを分割する場合:
 
