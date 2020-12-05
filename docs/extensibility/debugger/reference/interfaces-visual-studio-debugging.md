@@ -1,5 +1,7 @@
 ---
 title: インターフェイス (Visual Studio デバッグ) |Microsoft Docs
+description: これらのリソースを使用して、Visual Studio のデバッグにおけるコアインターフェイス、式の評価インターフェイス、およびシンボルプロバイダーインターフェイスについて学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715079"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606564"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>インターフェイス (Visual Studio のデバッグ)
 メソッドは、目次の各インターフェイスの下にアルファベット順に一覧表示され、Vtable の順序でインターフェイスページに表示されます。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 
  デバッグエンジンで使用されるインターフェイスについて説明します。
 

@@ -1,5 +1,7 @@
 ---
 title: デバッガーを起動しています |Microsoft Docs
+description: メソッドとイベントのシーケンスと、デバッガーを起動するために必要な適切な属性について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb2f484449d1b3f8474a6586d298b057875b342
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738449"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606659"
 ---
-# <a name="launch-the-debugger"></a>デバッガーを起動する
+# <a name="launch-the-debugger"></a>デバッガーを起動します
 デバッガーを起動するには、適切な属性を使用してメソッドとイベントの正しいシーケンスを送信する必要があります。
 
 ## <a name="sequences-of-methods-and-events"></a>メソッドとイベントのシーケンス

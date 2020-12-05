@@ -1,5 +1,7 @@
 ---
 title: プログラムの起動 |Microsoft Docs
+description: F5 キーを使用してプログラムをデバッグするときに実行される一連のイベントについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738483"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606698"
 ---
 # <a name="launch-a-program"></a>プログラムを起動する
 プログラムをデバッグするユーザーは、 **F5** キーを押して、IDE からデバッガーを実行できます。 これにより、次のように、最終的に IDE がデバッグエンジン (DE) に接続されるか、またはアタッチされてからプログラムに接続されるようになる一連のイベントが開始されます。
@@ -39,7 +41,7 @@ ms.locfileid: "80738483"
 
    新しく作成されたプログラムは、同じ IDE から起動した、または関連付けられていない他のプログラムと共に、デバッグセッションを作成します。
 
-   プログラムによって、ユーザーが最初に **F5 キー**を押したときに、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のデバッグパッケージがメソッドを使用してプロジェクトパッケージ (起動されているプログラムの種類に関連付けられている) を呼び出します。その後 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 、 <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> ソリューションのアクティブなプロジェクトデバッグ設定を使用して構造体が入力されます。 この構造体は、メソッドの呼び出しによってデバッグパッケージに戻され <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> ます。 デバッグパッケージは、セッションデバッグマネージャー (SDM) をインスタンス化します。これにより、デバッグ中のプログラムと、関連付けられているデバッグエンジンが起動されます。
+   プログラムによって、ユーザーが最初に **F5 キー** を押したときに、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のデバッグパッケージがメソッドを使用してプロジェクトパッケージ (起動されているプログラムの種類に関連付けられている) を呼び出します。その後 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 、 <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> ソリューションのアクティブなプロジェクトデバッグ設定を使用して構造体が入力されます。 この構造体は、メソッドの呼び出しによってデバッグパッケージに戻され <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> ます。 デバッグパッケージは、セッションデバッグマネージャー (SDM) をインスタンス化します。これにより、デバッグ中のプログラムと、関連付けられているデバッグエンジンが起動されます。
 
    SDM に渡される引数の1つに、プログラムを起動するために使用される DE の GUID があります。
 
