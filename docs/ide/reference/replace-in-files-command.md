@@ -1,5 +1,7 @@
 ---
 title: ReplaceinFiles コマンド
+description: ReplaceinFiles コマンドと、それを使用することで、[検索と置換] ウィンドウの [フォルダーを指定して置換] タブにあるいくつかのオプションを使用してファイル内のテキストを置換する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da2bfe820f70925a979548abeab955865f2bbc2c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565475"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304151"
 ---
 # <a name="replace-in-files-command"></a>ReplaceinFiles コマンド
 **[検索と置換]** ウィンドウの **[フォルダーを指定して置換]** タブにあるオプションのサブセットを使用してファイル内のテキストを置換します。
@@ -35,7 +37,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>引数
 `findwhat`
 
-必須。 検索するテキスト。
+必須です。 検索するテキスト。
 
 `replacewith`
 
@@ -99,17 +101,17 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 任意。 完全に一致する単語だけを検索します。
 
 ## <a name="example"></a>例
-次の例では、"my visual studio projects" フォルダーに含まれるすべての .cls ファイルで `btnCancel` を検索し、それを `btnReset` に置換して、 **[検索結果 2]** ウィンドウに置換情報を表示します。
+次の例では、"my visual studio projects" フォルダーに含まれるすべての .cls ファイルで `btnCancel` を検索し、それを `btnReset` に置換して、**[検索結果 2]** ウィンドウに置換情報を表示します。
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
 - [フォルダーを指定して置換](../../ide/replace-in-files.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

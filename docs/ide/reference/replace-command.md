@@ -1,5 +1,7 @@
 ---
 title: Replace コマンド
+description: Replace コマンドと、それを使用することにより、[検索と置換] ウィンドウの [フォルダーを指定して置換] タブにあるオプションのサブセットを使用してファイル内のテキストを置換する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2db7b59c1982f706cc6d2b18039870871ffa1039
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596685"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304038"
 ---
 # <a name="replace-command"></a>Replace コマンド
 **[検索と置換]** ウィンドウの **[フォルダーを指定して置換]** タブにあるオプションのサブセットを使用してファイル内のテキストを置換します。
@@ -34,7 +36,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>引数
 `findwhat`
 
-必須。 検索するテキスト。
+必須です。 検索するテキスト。
 
 `replacewith`
 
@@ -100,10 +102,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [テキストの検索と置換](../../ide/finding-and-replacing-text.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

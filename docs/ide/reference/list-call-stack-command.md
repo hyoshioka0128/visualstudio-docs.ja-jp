@@ -1,5 +1,7 @@
 ---
 title: ListCallStack コマンド
+description: List Call Stack コマンドと、これにより、現在のコール スタックを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770689"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305351"
 ---
 # <a name="list-call-stack-command"></a>ListCallStack コマンド
 現在の呼び出し履歴を表示します。
@@ -85,7 +87,7 @@ Thread:`n`
 
 任意。 スレッド `n` の呼び出し履歴を表示します。 スレッドが指定されていない場合、現在のスレッドの呼び出し履歴が表示されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 引数やスイッチに加えられた変更は、以降のコマンドの呼び出しに適用されます。 Debug.ListCallStackby を単独で実行すると、呼び出し履歴全体が表示されます。 たとえば、次のようなインデックスを指定します。
 
 ```cmd
@@ -108,11 +110,11 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)
+- [ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)
 - [ListThreads コマンド](../../ide/reference/list-threads-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

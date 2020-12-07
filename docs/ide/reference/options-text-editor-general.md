@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[全般]'
+description: '[全般] ページを使用して、Visual Studio のコードおよびテキスト エディターのグローバル設定を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.openlocfilehash: 1665db5fff414227c18fd8de4224302cb6d43c2a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80472823"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040603"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [全般]
 

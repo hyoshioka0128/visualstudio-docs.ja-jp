@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[C/C++]、[表示]'
+description: '[C/C++] セクションの [表示] ページを使用して、Visual Studio 内のコードの波線、アクティブでないコード、アウトラインなどの既定の動作を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278694"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041075"
 ---
 # <a name="options-text-editor-cc-view"></a>[オプション]、[テキスト エディター]、[C/C++]、[表示]
 
@@ -46,7 +48,7 @@ ms.locfileid: "77278694"
 
 - **一致するトークンの強調表示** - カーソルが置かれている場所と一致する、囲んでいる中かっこまたは構文を強調表示します。
 
-## <a name="outlining"></a>[アウトライン]
+## <a name="outlining"></a>アウトライン
 
 - **アウトラインの有効化** - ファイルが開いたときにアウトライン モードに入ります。
 
@@ -54,7 +56,7 @@ ms.locfileid: "77278694"
 
 - **Outline Statement Blocks (ステートメント ブロックのアウトライン化)** - ステートメント ブロックを自動的にアウトライン化します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
 - [C++ でのリファクタリング (VC のブログ)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

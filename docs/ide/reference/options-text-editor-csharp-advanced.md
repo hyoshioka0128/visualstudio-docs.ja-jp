@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[C#]、[詳細]'
+description: '[C#] セクションの [詳細] ページを使用して、C# のエディターの書式設定、コードのリファクタリング、および XML ドキュメントのコメントの設定を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626198"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039893"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 

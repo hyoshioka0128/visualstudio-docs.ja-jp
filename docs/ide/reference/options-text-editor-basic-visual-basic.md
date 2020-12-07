@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[基本] (VB)、[詳細]'
+description: '[基本] セクションの [詳細] ページを使用して、分析、インポート ディレクティブ、強調表示のプロパティの既定の設定を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214649"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040993"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>[オプション]、[テキスト エディター]、[基本] (Visual Basic)、[詳細]
 **[オプション]** ( **[ツール]** メニュー) ダイアログ ボックスの **[テキスト エディター]** フォルダーにある **[Basic]** フォルダーの **[VB 固有]** プロパティ ページでは、次のプロパティを指定します。
@@ -32,7 +34,7 @@ ms.locfileid: "88214649"
 
 - ライブ コード分析またはバックグラウンド分析スコープ
 
-   マネージド コードのバックグラウンド分析スコープを構成します。 詳細については、[方法: マネージド コードのライブ コード分析スコープを構成する](../../code-quality/configure-live-code-analysis-scope-managed-code.md)」を参照してください。
+   マネージド コードのバックグラウンド分析スコープを構成します。 詳細については、「[方法:方法: マネージド コードのライブ コード分析スコープを構成する](../../code-quality/configure-live-code-analysis-scope-managed-code.md)」を参照してください。
 
 ## <a name="using-directives"></a>Using ディレクティブ
 
@@ -55,7 +57,7 @@ ms.locfileid: "88214649"
 
  **[参照とキーワードの強調表示を有効にする]**
 
-テキスト エディターで、すべてのシンボルのインスタンスまたは `If..Then`、`While...End While`、`Try...Catch...Finally` などの 句のすべてのキーワードを強調表示できます。 強調表示された参照間またはキーワード間を移動するには、**Ctrl** + **Shift** + **下方向キー**を押すか、**Ctrl** + **Shift** + **上方向キー**を押します。
+テキスト エディターで、すべてのシンボルのインスタンスまたは `If..Then`、`While...End While`、`Try...Catch...Finally` などの 句のすべてのキーワードを強調表示できます。 強調表示された参照間またはキーワード間を移動するには、**Ctrl** + **Shift** + **下方向キー** を押すか、**Ctrl** + **Shift** + **上方向キー** を押します。
 
 ## <a name="outlining"></a>アウトライン
 

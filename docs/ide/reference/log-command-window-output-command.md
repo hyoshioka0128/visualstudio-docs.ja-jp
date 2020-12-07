@@ -1,5 +1,7 @@
 ---
 title: LogCommandWindowOutput コマンド
+description: LogCommandWindowOutput コマンドと、それを使用して [コマンド] ウィンドウからすべての入力と出力をファイルにコピーする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568660"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305279"
 ---
 # <a name="log-command-window-output-command"></a>コマンド ウィンドウ出力のログを記録するコマンド
 
@@ -49,7 +51,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 /overwrite\
 任意。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
 
@@ -73,7 +75,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

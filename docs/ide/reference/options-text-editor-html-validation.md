@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[検証]'
+description: '[HTML] セクションの [検証] ページを使用して、ドキュメント内の HTML マークアップの構文を HTML エディターでチェックする方法を設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568283"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040564"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[検証]
 
@@ -42,6 +44,6 @@ ms.locfileid: "75568283"
      > [!NOTE]
      > スキーマによっては、個々のエラーの種類をマークできません。 たとえば、ターゲット スキーマとして **[XHTML 1.1]** を選択すると、オプションのチェック ボックスはすべて無効になります。 この場合は、すべての種類のエラーがマークされます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)

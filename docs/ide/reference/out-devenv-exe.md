@@ -1,5 +1,7 @@
 ---
 title: -Out (devenv.exe)
+description: devenv の Out コマンドライン スイッチを使用して、ソリューションの実行、実行と終了、アップグレード、ビルド、リビルド、消去、または配置を行ったときにエラーを格納し表示するファイルを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06409d3b7e3d218fcf2b81dce7ea58d3202b7e21
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568012"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040057"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -41,11 +43,11 @@ devenv /Out FileName
 
   必須。 実行可能ファイルのビルド時に出力を受け取るファイルのパスと名前です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 指定したファイル名が存在しない場合は、ファイルが自動的に作成されます。 ファイルが既に存在する場合、結果はファイルの既存の内容に追加されます。
 
-コマンドラインのビルド エラーは、 **[コマンド]** ウィンドウと **[出力]** ウィンドウの [ソリューション ビルダー] ビューに表示されます。 このスイッチは、自動ビルドの結果を表示する場合に便利です。
+コマンドラインのビルド エラーは、**[コマンド]** ウィンドウと **[出力]** ウィンドウの [ソリューション ビルダー] ビューに表示されます。 このスイッチは、自動ビルドの結果を表示する場合に便利です。
 
 ## <a name="example"></a>例
 

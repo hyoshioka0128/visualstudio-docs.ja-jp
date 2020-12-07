@@ -1,5 +1,7 @@
 ---
 title: -RunExit (devenv.exe)
+description: devenv の RunExit コマンドライン スイッチを使用して、指定したプロジェクトまたはソリューションをコンパイルして実行し、IDE を閉じる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2a1e0af28e8a96860039381b958d63e161a24936
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593604"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039851"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -41,15 +43,15 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
+  省略可能。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 アクティブなソリューション構成に対して指定された設定に従って、指定したプロジェクトまたはソリューションをコンパイルして実行します。 このスイッチを指定すると、プロジェクトまたはソリューションの実行中に IDE が最小化されます。 プロジェクトまたはソリューションの実行が完了すると、IDE は閉じられます。
 
 - 空白を含む文字列を二重引用符で囲みます。
 
-- エラーなどの概要情報は、 **[コマンド]** ウィンドウ、または `/Out`スイッチで指定した任意のログ ファイルに表示できます。
+- エラーなどの概要情報は、**[コマンド]** ウィンドウ、または `/Out`スイッチで指定した任意のログ ファイルに表示できます。
 
 ## <a name="example"></a>例
 

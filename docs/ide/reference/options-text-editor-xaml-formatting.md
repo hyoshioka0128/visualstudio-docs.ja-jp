@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[XAML]、[書式設定]'
+description: '[書式設定] オプション ページとそのサブページを使用して、XAML でプログラミングするときのコード エディターでのコードの書式設定オプションを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,16 +31,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568244"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040525"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>[オプション]、[テキスト エディター]、[XAML]、[書式設定]
 
-**[書式設定]** プロパティ ページを使用して、XAML ドキュメントで要素と属性をどのように書式設定するかを指定します。 **[オプション]** ダイアログ ボックスを開くには、 **[ツール]** メニューをクリックし、 **[オプション]** をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、 **[テキスト エディター]**  >  **[XAML]**  >  **[書式設定]** ノードを展開します。
+[**書式設定**] プロパティ ページを使用して、XAML ドキュメントで要素と属性をどのように書式設定するかを指定します。 **[オプション]** ダイアログ ボックスを開くには、 **[ツール]** メニューをクリックし、 **[オプション]** をクリックします。 **[書式設定]** プロパティ ページにアクセスするには、**[テキスト エディター]** > **[XAML]** > **[書式設定]** ノードを展開します。
 
 ## <a name="auto-formatting-events"></a>オートフォーマット イベント
 
@@ -88,9 +90,9 @@ ms.locfileid: "75568244"
 
 **指定の長さを超えたタグを折り返す**
 
-**[長さ]** で指定された行の長さで行を折り返すかどうかを指定します。
+[**長さ**] で指定された行の長さで行を折り返すかどうかを指定します。
 
-**長さ**
+**Length**
 
 1 行に含めることができる文字数です。 一部の XAML 行は、必要に応じて指定した行の長さを超えることができます。
 
@@ -174,6 +176,6 @@ XAML ドキュメント内で要素を配置する方法を制御するには、
 </Grid>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [WPF の XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

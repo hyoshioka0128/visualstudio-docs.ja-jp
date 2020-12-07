@@ -1,5 +1,7 @@
 ---
 title: List Registers コマンド
+description: List Registers コマンドと、これにより、選択したレジスタの値を表示する方法、および表示されるレジスタの一覧を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5459ded60ea90ae00a3f943f829065a82548d160
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568686"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305295"
 ---
 # <a name="list-registers-command"></a>List Registers コマンド
 選択したレジスタの値を表示するほか、表示されるレジスタの一覧を変更できます。
@@ -39,7 +41,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 `Debug.ListRegisters /Display eax`
 
-は次と同等
+上記の式は、次の式と同じです。
 
 `Debug.ListRegisters eax`
 
@@ -55,7 +57,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
 1 つ以上の `register` または `registerGroup` の値が一覧から削除されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 エイリアス `r` を `Debug.ListRegisters` の代わりに使用できます。
 
 ## <a name="example"></a>例
@@ -65,8 +67,8 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [デバッグの基礎 : [レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)
+- [デバッグの基礎:[レジスタ] ウィンドウ](../../debugger/debugging-basics-registers-window.md)
 - [方法: [レジスタ] ウィンドウを使用する](../../debugger/how-to-use-the-registers-window.md)

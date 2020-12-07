@@ -1,5 +1,7 @@
 ---
 title: プロジェクトを開くコマンド
+description: OpenProject コマンドと、それを使用して既存のプロジェクトまたはソリューションを開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565813"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304146"
 ---
 # <a name="open-project-command"></a>OpenProject コマンド
 
@@ -36,12 +38,12 @@ File.OpenProject filename
 
 `filename`
 
-必須。 開くプロジェクトまたはソリューションの完全パスとファイル名。
+必須です。 開くプロジェクトまたはソリューションの完全パスとファイル名。
 
 > [!NOTE]
 > `filename` 引数の構文の場合、空白を含むパスで引用符を使用する必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。
 
@@ -55,7 +57,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)

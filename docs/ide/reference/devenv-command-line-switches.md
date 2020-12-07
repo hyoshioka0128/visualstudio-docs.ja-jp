@@ -1,5 +1,7 @@
 ---
 title: Devenv コマンド ライン スイッチ
+description: Devenv コマンド ライン スイッチと、それらを使用して IDE オプションを設定する方法、およびすべてコマンド ラインからプロジェクトをビルド、デバッグ、配置する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82255559"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305502"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンドライン スイッチ
 
@@ -76,7 +78,7 @@ VSPackage 開発に関連するスイッチの詳細については、「[VSPack
 |[/Run または /R](run-devenv-exe.md)|指定したソリューションをコンパイルして実行します。<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|指定したソリューションをコンパイルして実行します。ソリューションの実行時には IDE を最小化し、ソリューションの実行終了後に IDE を終了します。<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Visual Studio をセーフ モードで起動します。 このスイッチを指定すると、既定の環境、既定のサービス、および出荷バージョンのサードパーティ パッケージのみが読み込まれます。<br /><br /> このスイッチは引数を取りません。|
-|[/UseEnv](useenv-devenv-exe.md)|IDE で C++ のコンパイルに PATH、INCLUDE、LIBPATH、および LIB 環境変数が使用されます。 このスイッチは、**C++ によるデスクトップ開発**ワークロードと共にインストールされます。 詳細については、[コマンド ライン ビルドのパスと環境変数の設定](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)に関するページを参照してください。|
+|[/UseEnv](useenv-devenv-exe.md)|IDE で C++ のコンパイルに PATH、INCLUDE、LIBPATH、および LIB 環境変数が使用されます。 このスイッチは、**C++ によるデスクトップ開発** ワークロードと共にインストールされます。 詳細については、[コマンド ライン ビルドのパスと環境変数の設定](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds)に関するページを参照してください。|
 
 次のコマンドライン スイッチでは、IDE が表示されません。
 

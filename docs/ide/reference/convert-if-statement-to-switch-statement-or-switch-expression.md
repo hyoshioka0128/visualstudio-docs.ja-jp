@@ -1,5 +1,6 @@
 ---
 title: if ステートメントを switch ステートメントまたは式に変換する
+description: '[クイック アクションとリファクタリング] メニューを使用して、if ステートメントを switch ステートメントまたは C# 8.0 スイッチ式に変換する方法について説明します。'
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102533"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305558"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>if ステートメントを switch ステートメントまたは switch 式に変換する
 

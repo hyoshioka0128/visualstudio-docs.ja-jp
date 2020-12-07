@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[F#]、[CodeLens]'
+description: '[F#] セクションの [CodeLens] ページを使用して、テキスト エディターの CodeLens の設定を F# 用に変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6bdccdc45664bd620018fa094d35add545b302d4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568478"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039654"
 ---
 # <a name="options-text-editor-f-codelens"></a>[オプション]、[テキスト エディター]、[F#]、[CodeLens]
 
@@ -38,7 +40,7 @@ ms.locfileid: "75568478"
 
    注釈で使用される既定のプレフィックスを変更できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
 - [CodeLens によるコード変更とその他の履歴の検索](../../ide/find-code-changes-and-other-history-with-codelens.md)

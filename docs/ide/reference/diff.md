@@ -1,5 +1,7 @@
 ---
 title: -Diff (devenv.exe)
+description: Diff devenv コマンド ライン スイッチを使用して 2 つのファイルを比較する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570090"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305494"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -47,7 +49,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   任意。 2 番目のファイルの表示名。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 IDE のインスタンスが既に開かれている場合は、現在の IDE のタブにファイルの比較が表示されます。
 

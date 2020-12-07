@@ -1,5 +1,7 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
+description: devenv の DoNotLoadProjects コマンド ライン スイッチを使用して、プロジェクトを読み込まずに指定したソリューションを開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ef3502a2180f7ae7ed5963deb14844b46f3dbff9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569856"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040629"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -44,7 +46,7 @@ devenv /DoNotLoadProjects SolutionName
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のフィルター処理済みソリューション](../filtered-solutions.md)
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

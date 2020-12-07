@@ -1,5 +1,7 @@
 ---
 title: auto プロパティと full プロパティの間で変換する
+description: '[クイック アクションとリファクタリング] メニューを使用して、自動実装プロパティと完全なプロパティの間で変換を行う方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8950ce27e95a59f5425419dcac5bd807193d51b6
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.openlocfilehash: b53f337b538ff1c0aef84272eea7d9e032eb2c1d
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80395737"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040837"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>auto プロパティと full プロパティの間で変換する
 

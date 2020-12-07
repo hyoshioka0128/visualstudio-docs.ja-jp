@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[XAML]、[その他]'
+description: '[XML] セクションの [その他] ページを使用して、XAML ドキュメントの要素と属性の書式設定方法を指定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544093"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040967"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>[オプション]、[テキスト エディター]、[XAML]、[その他]
 

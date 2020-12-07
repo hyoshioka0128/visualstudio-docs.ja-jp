@@ -1,5 +1,7 @@
 ---
 title: switch ステートメントを switch 式に変換する
+description: '[クイック アクションとリファクタリング] メニューを使用して、switch ステートメントを C# 8.0 スイッチ式に変換する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: add43010fcec04cbe12889672f561f22057efb8c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68740053"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305521"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>switch ステートメントを switch 式に変換する
 
@@ -28,7 +30,7 @@ ms.locfileid: "68740053"
 
 **理由:** 式だけを使っている場合、このリファクタリングにより、従来の `switch` ステートメントから簡単に移行できます。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. `switch` 式は C# 8.0 の新しい機能であるため、プロジェクト ファイルで、[言語バージョンをプレビューに設定](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file)します。
 2. `switch` キーワード内にカーソルを置き、**Ctrl**+ **.** キーを押して、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
