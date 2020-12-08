@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office ランタイムのアセンブリ
+description: Visual Studio によって Visual Studio Tools for Office ランタイムアセンブリに参照が自動的に追加されることについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918780"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848301"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office ランタイムのアセンブリ
   Office プロジェクトを作成すると、Visual Studio によって、そのプロジェクト タイプとプロジェクトの対象 .NET Framework に使用する [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] アセンブリの参照が自動的に追加されます。 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、 [!INCLUDE[net_v45](includes/net-v45-md.md)]の Office 拡張機能にさまざまなアセンブリがあります。 Office 拡張機能の詳細については、「 [Visual Studio Tools for Office ランタイムの概要](visual-studio-tools-for-office-runtime-overview.md)」を参照してください。
@@ -26,7 +28,7 @@ ms.locfileid: "75918780"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-net_v45"></a>.NET Framework 4 との Office 拡張機能のアセンブリ [!INCLUDE[net_v45](includes/net-v45-md.md)]
  次の表は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] と [!INCLUDE[net_v45](includes/net-v45-md.md)]の Office 拡張機能に含まれているアセンブリをまとめたものです。 これらのアセンブリの名前空間と型に関するドキュメントについては、「 [Visual Studio での Office 開発のマネージリファレンス &#40;&#41;](managed-reference-office-development-in-visual-studio.md)」を参照してください。
 
-|[アセンブリ名]|説明|
+|アセンブリ名|説明|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.dll|次の型を提供します。<br /><br /> -リボンのカスタマイズとスマートタグを作成するための型。 **注:**      スマートタグは、およびで非推奨とされ [!INCLUDE[Excel_14_short](includes/excel-14-short-md.md)] [!INCLUDE[Word_14_short](includes/word-14-short-md.md)] ます。<br />-ドキュメントレベルのカスタマイズと VSTO アドインのカスタム作業ウィンドウで操作ウィンドウを作成するための型。|
 |Microsoft.Office.Tools.Excel.dll|Excel プロジェクトのホスト項目とホスト コントロールを表すインターフェイスとサポートする型を提供します。 詳細については、「 [拡張オブジェクトを使用](automating-excel-by-using-extended-objects.md)した Excel の自動化」を参照してください。|
@@ -37,9 +39,9 @@ ms.locfileid: "75918780"
 |Microsoft.VisualStudio.Tools.Applications.Runtime.dll|次の型を提供します。<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 属性と <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> インターフェイス。ドキュメントレベルのカスタマイズでデータオブジェクトをキャッシュするために使用できます。 詳細については、「 [データのキャッシュ](caching-data.md)」を参照してください。<br />-この <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> インターフェイスを実装すると、Office ソリューションの ClickOnce インストーラーの最後の手順として追加のインストール手順を実行できます。 詳細については、「 [ClickOnce を使用した Office ソリューションの配置](deploying-an-office-solution-by-using-clickonce.md)」を参照してください。<br />-Visual Studio Tools for Office ランタイムによってスローされる可能性のある例外。<br />-Visual Studio Tools for Office ランタイムインフラストラクチャの一部であるその他の型は、コードから直接使用するためのものではありません。|
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll|次の型を提供します。<br /><br /> - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> カスタマイズアセンブリをドキュメントにアタッチし、ドキュメント内のキャッシュされたデータにアクセスするために使用できるクラス。 詳細については、「 [ServerDocument クラスを使用してサーバー上のドキュメントを管理](managing-documents-on-a-server-by-using-the-serverdocument-class.md)する」を参照してください。<br />-ドキュメントレベルのカスタマイズでキャッシュされたデータの階層を表すいくつかのクラス。 詳細については、「 [サーバー上のドキュメントのデータにアクセス](accessing-data-in-documents-on-the-server.md)する」を参照してください。|
 
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](includes/net-v45-md.md)] を対象とするプロジェクトは次のアセンブリも参照します。 これらのアセンブリは再頒布可能な [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] に含まれません。 これらはむしろ、ソリューションで展開しなければならない従属アセンブリです。 既定では、プロジェクトのビルド出力フォルダーにコピーされます (これらのアセンブリの **[ローカル コピー]** プロパティは **True**に設定されます)。 ClickOnce を使用してプロジェクトを展開する場合、これらのアセンブリは生成されたパッケージに含まれます。
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](includes/net-v45-md.md)] を対象とするプロジェクトは次のアセンブリも参照します。 これらのアセンブリは再頒布可能な [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] に含まれません。 これらはむしろ、ソリューションで展開しなければならない従属アセンブリです。 既定では、プロジェクトのビルド出力フォルダーにコピーされます (これらのアセンブリの **[ローカル コピー]** プロパティは **True** に設定されます)。 ClickOnce を使用してプロジェクトを展開する場合、これらのアセンブリは生成されたパッケージに含まれます。
 
-|[アセンブリ名]|説明|
+|アセンブリ名|説明|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v4.0.Utilities.dll|VSTO アドイン プロジェクトで生成される `ThisAddIn` クラスとすべてのプロジェクトで生成される Ribbon クラスの基底クラスを提供します。|
 |Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|次の型を提供します。<br /><br /> - `ThisWorkbook` `Sheet` Excel のドキュメントレベルのプロジェクトで生成されるクラスとクラスの基本クラス。<br />-Excel プロジェクトのワークシートで使用できるコントロール Windows フォームます。|
@@ -49,7 +51,7 @@ ms.locfileid: "75918780"
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>.NET Framework 3.5 用の Office 拡張機能のアセンブリ
  次の表は、.NET Framework 3.5 の Office 拡張機能に含まれているアセンブリをまとめたものです。 これらのアセンブリの名前空間とクラスに関するドキュメントについては、Visual Studio 2008 ドキュメントの「」を参照してください [http://go.microsoft.com/fwlink/?LinkId=160658](managed-reference-office-development-in-visual-studio.md) 。
 
-|[アセンブリ名]|説明|
+|アセンブリ名|説明|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v9.0.dll|次の型を提供します。<br /><br /> -VSTO アドインの場合は、Microsoft. Office. .Addin 基底クラス。<br />-リボンのカスタマイズとスマートタグを作成するためのクラス。 **注:**      スマートタグは、およびで非推奨とされ [!INCLUDE[Excel_14_short](includes/excel-14-short-md.md)] [!INCLUDE[Word_14_short](includes/word-14-short-md.md)] ます。<br />-ドキュメントレベルのカスタマイズと VSTO アドインのカスタム作業ウィンドウで操作ウィンドウを作成するためのクラス。|
 |Microsoft.Office.Tools.Excel.v9.0.dll|Excel ソリューションのホスト項目とホスト コントロールを提供します。 詳細については、「 [拡張オブジェクトを使用](automating-excel-by-using-extended-objects.md)した Excel の自動化」を参照してください。|

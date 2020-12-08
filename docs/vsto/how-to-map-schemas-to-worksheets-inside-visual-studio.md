@@ -1,7 +1,8 @@
 ---
 title: '方法: Visual Studio 内のワークシートにスキーマをマップする'
+description: Visual Studio でワークシートを開いているときに、XML スキーマを Microsoft Office Excel ワークシートにマップする方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538139"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848210"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>方法: Visual Studio 内のワークシートにスキーマをマップする
   ワークシートが Visual Studio で開かれているときに、XML スキーマをワークシートにマップできます。 Visual Studio の外部でブックを開いたときに使用するのと同じ Microsoft Office Excel ツールを使用します。 Office プロジェクトでは、Excel ソリューションを作成する前または後に、ワークシートにスキーマをマップするかどうかにかかわらず、同じオブジェクトが作成されます。
@@ -59,7 +60,7 @@ ms.locfileid: "85538139"
 
      スキーマは、[ **XML ソース** ] ウィンドウに表示されます。 プロジェクトでは、スキーマに基づいて型指定されたが生成され、 <xref:System.Data.DataSet> <xref:System.Windows.Forms.BindingSource> が作成されます。
 
-9. **XML ソース**ウィンドウから、対応するコントロールを作成するワークシート内の場所に要素をドラッグします。
+9. **XML ソース** ウィンドウから、対応するコントロールを作成するワークシート内の場所に要素をドラッグします。
 
      非繰り返しスキーマ要素をドラッグすると、に <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 自動的にバインドされるコントロールが Office プロジェクトによって生成され <xref:System.Windows.Forms.BindingSource> ます。
 

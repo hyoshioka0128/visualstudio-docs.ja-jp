@@ -1,5 +1,7 @@
 ---
 title: Bookmark コントロール
+description: ブックマークコントロールが一意の名前を持ち、イベントを公開し、データにバインドできるブックマークであることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255145"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848366"
 ---
 # <a name="bookmark-control"></a>Bookmark コントロール
   <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、一意の名前を持ち、イベントを公開し、データにバインドできるブックマークです。 ブックマークは、Microsoft Office Word 文書内の項目または位置をマークするためのプレースホルダーとして使用できます。 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、 <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトと <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを組み合わせたものです。
@@ -59,7 +61,7 @@ ms.locfileid: "71255145"
 
  次の表では、「This is sample text.」という文が 次の2つの重複するブックマークによって共有されています:
 
-|ブックマーク|Text|
+|ブックマーク|テキスト|
 |--------------|----------|
 |重複するブックマーク|[this is {sample] text.}|
 |Bookmark1|This is sample|
@@ -67,7 +69,7 @@ ms.locfileid: "71255145"
 
  Bookmark1 に新しいテキスト「This is replacement.」を割り当てると Bookmark1 の場合、ブックマークは重複せず、Bookmark2 はもともと Bookmark1 の一部ではないテキストのみを保持します。
 
-|ブックマーク|Text|
+|ブックマーク|テキスト|
 |--------------|----------|
 |2 つの別個のブックマーク|[this is replacement]{ text.}|
 |Bookmark1|This is replacement|
@@ -77,7 +79,7 @@ ms.locfileid: "71255145"
 
 次の表では、「This is sample text.」という文が は、別のブックマーク内に含まれるブックマークによって共有されます。
 
-|ブックマーク|Text|
+|ブックマーク|テキスト|
 |--------------|----------|
 |重複するブックマーク|[this is {sample} text.]|
 |Bookmark1|This is sample text.|
@@ -85,7 +87,7 @@ ms.locfileid: "71255145"
 
  Bookmark1 に新しいテキスト「This is replacement.」を割り当てると 、これらの 2 つのブックマークは重複しなくなり、Bookmark2 は Bookmark1 の末尾にある空のブックマークになります。
 
-|ブックマーク|Text|
+|ブックマーク|テキスト|
 |--------------|----------|
 |2 つの別個のブックマーク|[これは代替です。]{}|
 |Bookmark1|This is replacement.|

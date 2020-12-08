@@ -1,5 +1,7 @@
 ---
 title: '方法: ワークシートに NamedRange コントロールを追加する'
+description: ドキュメントレベルのプロジェクトでデザイン時および実行時に、Microsoft Office の Excel ワークシートに NamedRange コントロールを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448a44c8f4bc9380a4ef1ebfec33b264e797cac8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54487ed7f7cdcb7e7da024e4b96fcbb6d5c2cfe4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543521"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848145"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>方法: ワークシートに NamedRange コントロールを追加する
   ドキュメント レベルのプロジェクトでは、デザイン時および実行時に、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを Microsoft Office Excel ワークシートに追加できます。
@@ -39,7 +41,7 @@ ms.locfileid: "85543521"
   コントロールの詳細について <xref:Microsoft.Office.Tools.Excel.NamedRange> は、「 [NamedRange control](../vsto/namedrange-control.md)」を参照してください。
 
 ## <a name="add-namedrange-controls-at-design-time"></a><a name="designtime"></a> デザイン時に NamedRange コントロールを追加する
- デザイン時にドキュメント レベルのプロジェクトのワークシートに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加する方法として、Excel から行う方法、Visual Studio の **ツールボックス**から行う方法、 **[データ ソース]** ウィンドウから行う方法があります。
+ デザイン時にドキュメント レベルのプロジェクトのワークシートに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加する方法として、Excel から行う方法、Visual Studio の **ツールボックス** から行う方法、 **[データ ソース]** ウィンドウから行う方法があります。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85543521"
 
 1. 名前付き範囲に含める 1 つ以上のセルを選びます。
 
-2. [ **名前] ボックス**に範囲の名前を **入力し、enter キーを**押します。
+2. [ **名前] ボックス** に範囲の名前を **入力し、enter キーを** 押します。
 
      **[名前ボックス]** は、数式バーの横、ワークシートの列 **A** の真上にあります。
 

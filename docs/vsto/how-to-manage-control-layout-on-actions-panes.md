@@ -1,5 +1,7 @@
 ---
 title: '方法: 操作ウィンドウのコントロールのレイアウトを管理する'
+description: ユーザーコントロールを適切にスタックするコードを記述して、操作ウィンドウのコントロールのレイアウトを管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520148"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848249"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>方法: 操作ウィンドウのコントロールのレイアウトを管理する
   既定では、操作ウィンドウは、ドキュメントまたはワークシートの右側にドッキングされます。ただし、左、上、または下にドッキングできます。 複数のユーザーコントロールを使用している場合は、[操作] ウィンドウでユーザーコントロールを適切にスタックするコードを記述できます。 詳細については、「 [操作ウィンドウの概要](../vsto/actions-pane-overview.md)」を参照してください。
@@ -38,7 +40,7 @@ ms.locfileid: "85520148"
 
 1. 複数のユーザーコントロールまたは入れ子になった操作ウィンドウコントロールを持つ操作ウィンドウを含む Microsoft Office Word のドキュメントレベルのプロジェクトを開きます。 詳細については、「 [方法: Word 文書または Excel ブックに操作ウィンドウを追加](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)する」を参照してください。
 
-2. **ソリューションエクスプローラー**で [ **ThisDocument.cs** ] または [ **ThisDocument .vb** ] を右クリックし、[**コードの表示**] をクリックします。
+2. **ソリューションエクスプローラー** で [ **ThisDocument.cs** ] または [ **ThisDocument .vb** ] を右クリックし、[**コードの表示**] をクリックします。
 
 3. <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>操作ウィンドウのイベントハンドラーで、操作ウィンドウの向きが横になっているかどうかを確認します。
 

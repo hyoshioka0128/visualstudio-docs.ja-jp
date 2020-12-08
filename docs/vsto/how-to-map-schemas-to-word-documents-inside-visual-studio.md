@@ -1,7 +1,8 @@
 ---
 title: '方法: Visual Studio 内で Word 文書にスキーマを割り当てる'
+description: Visual Studio でドキュメントを開いているときに、XML スキーマを Microsoft Office Word 文書にマップする方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 281d9dc18ae1d0550ba844e58d4e39c3723c8dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 427e2fcb9b881305c160b906262f251d32d70981
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538152"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848223"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>方法: Visual Studio 内で Word 文書にスキーマを割り当てる
   **重要** このトピックに記載されている Microsoft Word に関する情報は、microsoft word のカスタム XML に関連する特定の機能の実装が microsoft によって削除されたときに、マイクロソフトが2010年1月より前にマイクロソフトによってライセンスされた Microsoft Word 製品米国の特典と使用についてのみ提供されます。 Microsoft Word に関するこの情報は、マイクロソフトが2010年1月10日以降にライセンスを取得した microsoft Word 製品を使用しているか、microsoft Word 製品で実行されているプログラムを開発している個人または米国組織によって読み取られたり使用されたりすることはできません。これらの製品は、その日より前にライセンスされている製品と同じように動作しないか、米国の外部で使用するために購入およびライセンス供与されます。
@@ -61,7 +62,7 @@ ms.locfileid: "85538152"
 
      [ **XML 構造** ] ウィンドウが開きます。
 
-10. **XML 構造**ウィンドウから、対応するコントロールを作成するドキュメント内の場所に要素をドラッグします。
+10. **XML 構造** ウィンドウから、対応するコントロールを作成するドキュメント内の場所に要素をドラッグします。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Studio 内のワークシートにスキーマをマップする](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
