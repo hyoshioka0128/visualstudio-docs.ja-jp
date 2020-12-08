@@ -1,5 +1,7 @@
 ---
 title: '方法: 印刷時にワークシートのコントロールを非表示にする'
+description: Windows フォームコントロールを含む Microsoft Office Excel ワークシートを印刷するときに、コントロールを非表示にできることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544808"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846494"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>方法: 印刷時にワークシートのコントロールを非表示にする
   Windows フォームコントロールを含む Microsoft Office Excel ドキュメントを印刷すると、印刷されたワークシートにコントロールが表示されます。 ワークシートを印刷するときに、コントロールを非表示にすることができます。
@@ -37,9 +39,9 @@ ms.locfileid: "85544808"
 
 1. Visual Studio で Excel プロジェクトを作成または開き、 **Sheet1** がデザイナーに表示されていることを確認します。 プロジェクトの作成の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ツールボックス**の [**コモンコントロール**] タブから、 <xref:Microsoft.Office.Tools.Excel.Controls.Button> コントロールを上のセルにドラッグし `Sheet1` ます。
+2. **ツールボックス** の [**コモンコントロール**] タブから、 <xref:Microsoft.Office.Tools.Excel.Controls.Button> コントロールを上のセルにドラッグし `Sheet1` ます。
 
-3. [ **プロパティ** ] ウィンドウで、 <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> プロパティを **False**に設定します。
+3. [ **プロパティ** ] ウィンドウで、 <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> プロパティを **False** に設定します。
 
 ## <a name="see-also"></a>関連項目
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)

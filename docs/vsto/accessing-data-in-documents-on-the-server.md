@@ -1,5 +1,7 @@
 ---
 title: サーバー上のドキュメントのデータにアクセスする
+description: Microsoft Office Word または Microsoft Office Excel のオブジェクトモデルを使用せずに、ドキュメントレベルのカスタマイズでデータに対してプログラミングする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255775"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847625"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>サーバー上のドキュメントのデータにアクセスする
   Microsoft Office Word または Microsoft Office Excel のオブジェクトモデルを使用しなくても、ドキュメントレベルのカスタマイズでデータに対してプログラミングを行うことができます。 これは、Word または Excel がインストールされていないサーバー上のドキュメントに含まれているデータにアクセスできることを意味します。 たとえば、サーバー上のコード (たとえば、ページ内) では、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ドキュメント内のデータをカスタマイズし、カスタマイズされたドキュメントをエンドユーザーに送信できます。 エンドユーザーがドキュメントを開くと、ソリューションアセンブリのデータバインドコードによって、カスタマイズされたデータがドキュメントにバインドされます。 これが可能なのは、ドキュメント内のデータがユーザーインターフェイスから分離されているためです。 詳細については、「 [ドキュメントレベルのカスタマイズでのキャッシュ](../vsto/cached-data-in-document-level-customizations.md)されたデータ」を参照してください。
@@ -55,7 +57,7 @@ ms.locfileid: "71255775"
 
 3. 次のいずれかのオプションを使用して、変更されたオブジェクトをデータキャッシュにシリアル化して戻します。
 
-    - 変更を自動的にシリアル化する場合は、メソッドを使用し <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> ます。 このメソッドは**DiffGram** <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> データキャッシュ内の、、および型指定された dataset オブジェクトをシリアル化するために DiffGram 形式を使用します。 **DiffGram**形式を指定すると、オフラインドキュメントのデータキャッシュに対する変更がサーバーに正しく送信されます。
+    - 変更を自動的にシリアル化する場合は、メソッドを使用し <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> ます。 このメソッドは **DiffGram** <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> データキャッシュ内の、、および型指定された dataset オブジェクトをシリアル化するために DiffGram 形式を使用します。 **DiffGram** 形式を指定すると、オフラインドキュメントのデータキャッシュに対する変更がサーバーに正しく送信されます。
 
     - キャッシュされたデータを変更するために独自のシリアル化を実行する場合は、プロパティに直接書き込むことができ <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> ます。 、 **DiffGram** <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、または型指定されたデータセットのデータに加えられた変更を使用してデータベースを更新する場合は、DiffGram 形式を指定します。 それ以外の場合、は <xref:System.Data.Common.DataAdapter> 既存の行を変更するのではなく、新しい行を追加してデータベースを更新します。
 
@@ -70,12 +72,12 @@ ms.locfileid: "71255775"
 ### <a name="modify-null-values-in-the-data-cache"></a>データキャッシュ内の null 値を変更する
  ドキュメントを保存して閉じた場合、値が **null** のオブジェクトはデータキャッシュに格納されません。 キャッシュされたデータを変更すると、次のようないくつかの影響があります。
 
-- データキャッシュ内のオブジェクトを **null**値に設定すると、ドキュメントを開いたときにデータキャッシュ内のすべてのオブジェクトが自動的に **null** に設定され、ドキュメントを保存して閉じたときにデータキャッシュ全体がクリアされます。 つまり、キャッシュされたオブジェクトはすべてデータキャッシュから削除され、コレクションは <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 空になります。
+- データキャッシュ内のオブジェクトを **null** 値に設定すると、ドキュメントを開いたときにデータキャッシュ内のすべてのオブジェクトが自動的に **null** に設定され、ドキュメントを保存して閉じたときにデータキャッシュ全体がクリアされます。 つまり、キャッシュされたオブジェクトはすべてデータキャッシュから削除され、コレクションは <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 空になります。
 
 - データキャッシュに **null** オブジェクトを含むソリューションをビルドし、ドキュメントを初めて開く前にクラスを使用してこれらのオブジェクトを初期化する場合は <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 、データキャッシュ内のすべてのオブジェクトを初期化する必要があります。 オブジェクトの一部だけを初期化すると、ドキュメントを開いたときにすべてのオブジェクトが **null** に設定され、ドキュメントを保存して閉じたときにデータキャッシュ全体がクリアされます。
 
 ## <a name="access-typed-datasets-in-the-cache"></a>キャッシュ内の型指定されたデータセットへのアクセス
- Office ソリューションと、Windows フォームアプリケーションやプロジェクトなど、Office 以外のアプリケーションから、型指定されたデータセットのデータにアクセスする場合は、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 両方のプロジェクトで参照される別のアセンブリに、型指定されたデータセットを定義する必要があります。 **データソース構成**ウィザードまたは**データセットデザイナー**を使用して、型指定されたデータセットを各プロジェクトに追加する場合、.NET Framework では、2つのプロジェクト内の型指定されたデータセットを異なる型として扱います。 型指定されたデータセットの作成の詳細については、「 [Visual Studio でのデータセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
+ Office ソリューションと、Windows フォームアプリケーションやプロジェクトなど、Office 以外のアプリケーションから、型指定されたデータセットのデータにアクセスする場合は、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 両方のプロジェクトで参照される別のアセンブリに、型指定されたデータセットを定義する必要があります。 **データソース構成** ウィザードまたは **データセットデザイナー** を使用して、型指定されたデータセットを各プロジェクトに追加する場合、.NET Framework では、2つのプロジェクト内の型指定されたデータセットを異なる型として扱います。 型指定されたデータセットの作成の詳細については、「 [Visual Studio でのデータセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

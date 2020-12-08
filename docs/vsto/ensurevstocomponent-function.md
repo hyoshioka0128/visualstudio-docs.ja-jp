@@ -1,5 +1,7 @@
 ---
 title: EnsureVSTOComponent 関数
+description: EnsureVSTOComponent API が Office インフラストラクチャをサポートする方法について説明します。コードから直接使用するためのものではありません。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf55fc6669edd33d1b8896ee85f33ab2c04e844f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a04cfc249efa4640df2b2e4b1c5f4b43ed52ace2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543586"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846117"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent 関数
   この API は Office インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。
@@ -35,4 +37,4 @@ HRESULT EnsureVSTOComponent(
 |*pProject*|使用しないでください。|
 
 ## <a name="return-value"></a>戻り値
- 関数が成功した場合は、 **S_OK**を返します。 関数が失敗した場合は、エラーコードを返します。
+ 関数が成功した場合は、 **S_OK** を返します。 関数が失敗した場合は、エラーコードを返します。

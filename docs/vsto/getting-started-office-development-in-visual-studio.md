@@ -1,7 +1,8 @@
 ---
 title: はじめに (Visual Studio での Office 開発)
+description: Visual Studio の Microsoft Office 開発者ツールを使用して Office ソリューションを構築する方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a14d8254d42b78e788622afd93c6832871d54627
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986064"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847326"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>はじめに (Visual Studio での Office 開発)
   このセクションには、Visual Studio の Microsoft Office Developer Tools の使用に役立つトピックが含まれています。
@@ -63,7 +64,7 @@ ms.locfileid: "72986064"
 
  一般的な問題の解決に役立つトピックへのリンクを示します。
 
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
 
  サンプル アプリケーション、および一般的なタスクの詳細な手順を説明するトピックへのリンクを示します。

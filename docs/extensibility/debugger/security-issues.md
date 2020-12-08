@@ -1,5 +1,7 @@
 ---
 title: セキュリティの問題 |Microsoft Docs
+description: リモートデバッグや他のサービスが関係する状況など、Visual Studio を使用してプログラムをデバッグするために必要なアクセス許可について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40898f5633eac374206ed40bfcac96d9c1c5b753
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713049"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847612"
 ---
 # <a name="security-issues"></a>セキュリティの問題
 Visual Studio を使用してプログラムをデバッグするために必要なアクセス許可は、開発者がプログラムを実行するために必要とするものと同じです。 これには、ほとんどの状況でのリモートデバッグが含まれます。 インターネットインフォメーションサービスなど、他のサービスを含む状況によっては、より高いレベルの権限が必要になる場合があります。
 
  Visual Studio の実行中、プロセスデバッグマネージャー (PDM) はローカルコンピューター上のデバッグプロセスを追跡します。 リモートデバッグを処理し、PDM を利用できるようにするために、開発者が *msvsmon.exe* と呼ばれるプログラムをリモートで起動します。 (*msvsmon.exe* はサービスではないため、そのコンピューターでリモートデバッグを有効にするには、手動で開始する必要があります。)Visual Studio (または *msvsmon.exe*) が実行されていない場合、デバッグのためにプロセスは追跡されません。
 
- 開発者は、特別なアクセス許可なしで開始したプログラムをデバッグできます。 開発者は、他のユーザーが同じセキュリティグループのメンバーである場合に、他のユーザーによって開始されたプロセスをデバッグすることもできます。 また、リモートデバッグを有効にするには、必要なファイルをリモートコンピューターにコピーして *msvsmon.exe*を開始するだけです。 詳細については、「[リモート デバッグ](../../debugger/remote-debugging.md)」を参照してください。
+ 開発者は、特別なアクセス許可なしで開始したプログラムをデバッグできます。 開発者は、他のユーザーが同じセキュリティグループのメンバーである場合に、他のユーザーによって開始されたプロセスをデバッグすることもできます。 また、リモートデバッグを有効にするには、必要なファイルをリモートコンピューターにコピーして *msvsmon.exe* を開始するだけです。 詳細については、「[リモート デバッグ](../../debugger/remote-debugging.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: VBA とドキュメントレベルのカスタマイズの結合
+description: Microsoft Office Word または Excel のドキュメントレベルのカスタマイズの一部であるドキュメントで Visual Basic for Applications (VBA) コードを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977599"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846403"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA とドキュメントレベルのカスタマイズの結合
   Microsoft Office Word または Microsoft Office Excel 用のドキュメント レベル カスタマイズの一部であるドキュメント内で Visual Basic for Applications (VBA) コードを使用できます。 カスタマイズ アセンブリからドキュメント内の VBA コードを呼び出したり、ドキュメント内の VBA コードがカスタマイズ アセンブリのコードを呼び出せるようにプロジェクトを構成したりすることができます。
@@ -42,7 +44,7 @@ ms.locfileid: "70977599"
  ソリューションを実行すると、VBA およびカスタマイズ アセンブリの両方のイベント ハンドラーがドキュメント内で生成されたイベントを取得し、両方のコード セットが実行します。 どちらのコードが先に実行するかは、事前にはわかりません。個別のケースごとにテストして判断する必要があります。 2 つのコード セットを慎重に調整およびテストしないと、予期しない結果になる可能性があります。
 
 ## <a name="call-vba-code-from-the-customization-assembly"></a>カスタマイズアセンブリから VBA コードを呼び出す
- Word 文書のマクロおよび Excel ブックのマクロと関数を、呼び出すことができます。 これを行うには、次のいずれかの方法を使用します。
+ Word 文書のマクロおよび Excel ブックのマクロと関数を、呼び出すことができます。 そのためには、次のいずれかのメソッドを使用します。
 
 - Word の場合は、 <xref:Microsoft.Office.Interop.Word._Application.Run%2A> クラスのメソッドを呼び出し <xref:Microsoft.Office.Interop.Word.Application> ます。
 
@@ -88,7 +90,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - ドキュメントは、次のいずれかのファイル名拡張子であることが必要です。
 
-  - Word: *.docm*または *.doc*の場合
+  - Word: *.docm* または *.doc* の場合
 
   - Excel の場合: *.xlsm*、 *xltm*、 *.xls*、または *.xlt*
 
@@ -113,21 +115,21 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   2. プロジェクトでホスト項目クラスの **GetAutomationObject** メンバーをオーバーライドして、VBA に公開したクラスのインスタンスを返すようにします。
 
-  3. プロジェクトでホスト項目クラスの **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定します。 これにより、カスタマイズ アセンブリのタイプ ライブラリがアセンブリに埋め込まれ、タイプ ライブラリへの参照がドキュメントの VBA プロジェクトに追加されます。
+  3. プロジェクトでホスト項目クラスの **ReferenceAssemblyFromVbaProject** プロパティを **True** に設定します。 これにより、カスタマイズ アセンブリのタイプ ライブラリがアセンブリに埋め込まれ、タイプ ライブラリへの参照がドキュメントの VBA プロジェクトに追加されます。
 
   詳細な手順については、「 [方法: Visual Basic プロジェクトでコードを vba に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) する」および「 [方法: Visual C&#35; プロジェクトでコードを vba に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)する」を参照してください。
 
   **EnableVbaCallers** および **ReferenceAssemblyFromVbaProject** プロパティは、設計時にのみ [ **プロパティ** ] ウィンドウで使用できます。実行時には使用できません。 プロパティを表示するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]でホスト項目のデザイナーを開きます。 これらのプロパティを設定するときに Visual Studio が実行する特定のタスクの詳細については、「 [ホスト項目のプロパティによって実行](#PropertyTasks)されるタスク」を参照してください。
 
 > [!NOTE]
-> ブックまたはドキュメントに VBA コードがまだ含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **EnableVbaCallers** または **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定するとエラー メッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+> ブックまたはドキュメントに VBA コードがまだ含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **EnableVbaCallers** または **ReferenceAssemblyFromVbaProject** プロパティを **True** に設定するとエラー メッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>VBA コードのメンバーを使用してカスタマイズアセンブリを呼び出す
  VBA コードがカスタマイズ アセンブリを呼び出せるようにプロジェクトを構成すると、Visual Studio は次のメンバーをドキュメントの VBA プロジェクトに追加します。
 
 - すべてのプロジェクトに対し、Visual Studio は `GetManagedClass`という名前のグローバル メソッドを追加します。
 
-- [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **EnableVbaCallers**プロパティを使用してホスト項目クラスのメンバーを公開するプロジェクトでは、Visual Studio によって、という名前のプロパティが `CallVSTOAssembly` `ThisDocument` VBA プロジェクトの、、 `ThisWorkbook` 、、またはの各モジュールにも追加さ `Sheet1` `Sheet2` `Sheet3` れます。
+- [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **EnableVbaCallers** プロパティを使用してホスト項目クラスのメンバーを公開するプロジェクトでは、Visual Studio によって、という名前のプロパティが `CallVSTOAssembly` `ThisDocument` VBA プロジェクトの、、 `ThisWorkbook` 、、またはの各モジュールにも追加さ `Sheet1` `Sheet2` `Sheet3` れます。
 
   プロジェクトの VBA コードに公開したクラスのパブリック メンバーには、 `CallVSTOAssembly` プロパティまたは `GetManagedClass` メソッドを使用してアクセスできます。
 
@@ -211,19 +213,19 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 2. ホスト項目クラスの **GetAutomationObject** メソッドをオーバーライドします。
 
-3. ホスト項目の **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定します。
+3. ホスト項目の **ReferenceAssemblyFromVbaProject** プロパティを **True** に設定します。
 
-   **EnableVbaCallers** プロパティを **False**に戻すと、Visual Studio は次のタスクを実行します。
+   **EnableVbaCallers** プロパティを **False** に戻すと、Visual Studio は次のタスクを実行します。
 
 4. <xref:Microsoft.VisualBasic.ComClassAttribute> および <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性を `ThisDocument` クラスから削除します。
 
 5. **GetAutomationObject** メソッドをホスト項目クラスから削除します。
 
    > [!NOTE]
-   > Visual Studio は、自動的には **ReferenceAssemblyFromVbaProject** プロパティの設定を **False**に戻しません。 このプロパティは、[ **プロパティ** ] ウィンドウを使用して手動で **False** に設定できます。
+   > Visual Studio は、自動的には **ReferenceAssemblyFromVbaProject** プロパティの設定を **False** に戻しません。 このプロパティは、[ **プロパティ** ] ウィンドウを使用して手動で **False** に設定できます。
 
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject
- Visual Basic または Visual C# プロジェクトでホスト項目の **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定すると、Visual Studio は次のタスクを実行します。
+ Visual Basic または Visual C# プロジェクトでホスト項目の **ReferenceAssemblyFromVbaProject** プロパティを **True** に設定すると、Visual Studio は次のタスクを実行します。
 
 1. カスタマイズ アセンブリのタイプ ライブラリを生成し、タイプ ライブラリをアセンブリに埋め込みます。
 
@@ -233,7 +235,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
    - Microsoft Visual Studio Tools for Office Execution Engine 9.0 のタイプ ライブラリ。 このタイプ ライブラリは [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]に含まれます。
 
-   **ReferenceAssemblyFromVbaProject** プロパティを **False**に戻すと、Visual Studio は次のタスクを実行します。
+   **ReferenceAssemblyFromVbaProject** プロパティを **False** に戻すと、Visual Studio は次のタスクを実行します。
 
 3. ドキュメントの VBA プロジェクトから、タイプ ライブラリの参照を削除します。
 
@@ -245,9 +247,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 |エラー|提案される解決策|
 |-----------|----------------|
 |**EnableVbaCallers** または **ReferenceAssemblyFromVbaProject** プロパティを設定した後、ドキュメントに VBA プロジェクトが含まれていない、またはドキュメント内の VBA プロジェクトに対するアクセス許可がないことを示すエラー メッセージが表示される。|プロジェクト内のドキュメントに少なくとも 1 つの VBA マクロが含まれていること、VBA プロジェクトに実行するための十分な信頼があること、および VBA プロジェクトがパスワードによって保護されていないことを確認します。|
-|**EnableVbaCallers**または**ReferenceAssemblyFromVbaProject**プロパティを設定した後、 <xref:System.Runtime.InteropServices.GuidAttribute> 宣言が存在しないか破損していることを示すエラーメッセージが表示されます。|<xref:System.Runtime.InteropServices.GuidAttribute>宣言がプロジェクトの*AssemblyInfo.cs*または*AssemblyInfo*ファイルにあること、およびこの属性が有効な GUID に設定されていることを確認します。|
-|**EnableVbaCallers**または**ReferenceAssemblyFromVbaProject**プロパティを設定した後、によって指定されたバージョン番号が無効であることを示すエラーメッセージが表示され <xref:System.Reflection.AssemblyVersionAttribute> ます。|<xref:System.Reflection.AssemblyVersionAttribute>プロジェクトの*AssemblyInfo.cs*または*AssemblyInfo*ファイル内の宣言が、有効なアセンブリバージョン番号に設定されていることを確認します。 有効なアセンブリのバージョン番号については、 <xref:System.Reflection.AssemblyVersionAttribute> クラスを参照してください。|
-|カスタマイズ アセンブリの名前を変更した後、カスタマイズ アセンブリを呼び出す VBA コードが動作を停止する。|VBA コードに公開した後でカスタマイズ アセンブリの名前を変更すると、ドキュメントの VBA プロジェクトとカスタマイズ アセンブリの間のリンクが切れます。 この問題を解決するには、プロジェクトで **ReferenceFromVbaAssembly** プロパティを **False** に変更した後、 **True**に戻して、VBA コード内にある古いアセンブリ名への参照を新しいアセンブリ名に置き換えます。|
+|**EnableVbaCallers** または **ReferenceAssemblyFromVbaProject** プロパティを設定した後、 <xref:System.Runtime.InteropServices.GuidAttribute> 宣言が存在しないか破損していることを示すエラーメッセージが表示されます。|<xref:System.Runtime.InteropServices.GuidAttribute>宣言がプロジェクトの *AssemblyInfo.cs* または *AssemblyInfo* ファイルにあること、およびこの属性が有効な GUID に設定されていることを確認します。|
+|**EnableVbaCallers** または **ReferenceAssemblyFromVbaProject** プロパティを設定した後、によって指定されたバージョン番号が無効であることを示すエラーメッセージが表示され <xref:System.Reflection.AssemblyVersionAttribute> ます。|<xref:System.Reflection.AssemblyVersionAttribute>プロジェクトの *AssemblyInfo.cs* または *AssemblyInfo* ファイル内の宣言が、有効なアセンブリバージョン番号に設定されていることを確認します。 有効なアセンブリのバージョン番号については、 <xref:System.Reflection.AssemblyVersionAttribute> クラスを参照してください。|
+|カスタマイズ アセンブリの名前を変更した後、カスタマイズ アセンブリを呼び出す VBA コードが動作を停止する。|VBA コードに公開した後でカスタマイズ アセンブリの名前を変更すると、ドキュメントの VBA プロジェクトとカスタマイズ アセンブリの間のリンクが切れます。 この問題を解決するには、プロジェクトで **ReferenceFromVbaAssembly** プロパティを **False** に変更した後、 **True** に戻して、VBA コード内にある古いアセンブリ名への参照を新しいアセンブリ名に置き換えます。|
 
 ## <a name="see-also"></a>関連項目
 - [方法: Visual Basic プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

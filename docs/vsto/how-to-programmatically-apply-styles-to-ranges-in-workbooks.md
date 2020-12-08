@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってブック内の範囲にスタイルを適用する'
+description: ブック内の領域に名前付きスタイルを適用する方法について説明します。 Excel には、定義済みのスタイルがいくつか用意されています。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8b511d195a40f42bf0b1224dd828b6c6d2b9671
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 75dec33b0bf07f117b6228a293e62092c5d012c2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585354"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847560"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>方法: プログラムによってブック内の範囲にスタイルを適用する
   ブック内の領域に名前付きスタイルを適用できます。 Excel には、定義済みのスタイルがいくつか用意されています。

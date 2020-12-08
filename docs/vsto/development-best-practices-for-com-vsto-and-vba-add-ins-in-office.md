@@ -1,5 +1,7 @@
 ---
 title: '開発のベストプラクティス: Office での COM、VSTO、& VBA アドイン'
+description: Microsoft Office 用に COM、VSTO、および VBA アドインを開発する際の推奨されるベストプラクティスについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 07/25/2017
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e536c48004d9c8ff729ac5fb064e04e02c6884b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e7387b58bae486588687fe018453fafb5d6571f7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581197"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846897"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office での COM、VSTO、および VBA アドインの開発に関するベストプラクティス
   Office 用の COM、VSTO、または VBA アドインを開発している場合は、この記事で説明されている開発のベストプラクティスに従ってください。   これにより、次のメリットが得られます。

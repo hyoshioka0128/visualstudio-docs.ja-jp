@@ -1,5 +1,7 @@
 ---
 title: VSTO アドインを使用してドキュメントにカスタム XML 部分を追加する
+description: VSTO アドインでカスタム XML 部分を作成することにより、次の種類のドキュメントに XML データを格納する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92c00ea69069b7374f5f595cc6f198aac23d1f91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538295"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847716"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>方法: VSTO アドインを使用してドキュメントにカスタム XML 部分を追加する
   VSTO アドインでカスタム XML 部分を作成することにより、次のタイプのドキュメントに XML データを格納できます。
@@ -67,7 +69,7 @@ ms.locfileid: "85538295"
 
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>PowerPoint プレゼンテーションにカスタム XML 部分を追加するには
 
-1. <xref:Microsoft.Office.Core.CustomXMLPart>プレゼンテーション内の[_Presentation](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29)コレクションに新しいオブジェクトを追加し、このコレクションに追加します。 <xref:Microsoft.Office.Core.CustomXMLPart> にはプレゼンテーションに格納する XML 文字列が含まれています。
+1. 新しいオブジェクトを <xref:Microsoft.Office.Core.CustomXMLPart> プレゼンテーションの [Microsoft.Office.Interop.PowerPoint._Presentation CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29) コレクションに追加します。 <xref:Microsoft.Office.Core.CustomXMLPart> にはプレゼンテーションに格納する XML 文字列が含まれています。
 
      次のコード例は、指定したプレゼンテーションにカスタム XML 部分を追加します。
 
@@ -76,7 +78,7 @@ ms.locfileid: "85538295"
 
 2. `AddCustomXmlPartToPresentation` `ThisAddIn` POWERPOINT の VSTO アドインプロジェクトのクラスにメソッドを追加します。
 
-3. プロジェクトの他のコードからメソッドを呼び出します。 たとえば、ユーザーがプレゼンテーションを開いたときにカスタム XML 部分を作成するには、EApplication_Event のイベントハンドラーからメソッドを呼び出して、そのイベントを [開き](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) ます。
+3. プロジェクトの他のコードからメソッドを呼び出します。 たとえば、ユーザーがプレゼンテーションを開いたときにカスタム XML 部分を作成するには、 [Microsoft.Office.Interop.PowerPoint.EApplication_Event afterpresentation open](/previous-versions/office/developer/office-2010/ff762843(v=office.14)) イベントのイベントハンドラーからメソッドを呼び出します。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
  わかりやすくするために、この例では、メソッドでローカル変数として定義されている XML 文字列を使用しています。 通常は、ファイルやデータベースなどの外部ソースから XML を取得する必要があります。

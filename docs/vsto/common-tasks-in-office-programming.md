@@ -1,5 +1,7 @@
 ---
 title: Office プログラミングにおける一般的なタスク
+description: Microsoft Office Word または Office Excel のオブジェクトモデルを使用せずに、ドキュメントレベルのカスタマイズでデータに対してプログラミングする方法について説明します。
+ms.custom: SEO-VS-2020SS
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809860"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846299"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office プログラミングにおける一般的なタスク
   このトピックは、Visual Studio を使用した Office ソリューションのプログラミングに共通する質問のうち、次のカテゴリの質問に対する回答を簡単に見つけることができるように構成されています。
@@ -230,7 +232,7 @@ ms.locfileid: "90809860"
 
 - [方法: Office ソリューションのインストールパスを変更する](/previous-versions/bb608626(v=vs.110))。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio で &#40;Office 開発を開始する&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)

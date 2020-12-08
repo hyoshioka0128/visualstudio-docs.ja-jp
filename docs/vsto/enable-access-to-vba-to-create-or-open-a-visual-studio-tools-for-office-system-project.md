@@ -1,8 +1,8 @@
 ---
 title: VSTO システムプロジェクトを作成または開くための VBA アクセス
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Visual Studio Tools for Office システムプロジェクトを作成または開く前に、Office VBA プロジェクトシステムへのアクセスを明示的に有効にする必要があることについて説明します。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584860"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846130"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>VBA へのアクセスを有効にして、Microsoft Office システムプロジェクトの Visual Studio Tools を作成または開く
 
@@ -55,9 +55,9 @@ Microsoft Office システムプロジェクトの Visual Studio Tools を作成
 
 3. [ **セキュリティセンター**] をクリックし、[ **セキュリティセンターの設定**] をクリックします。
 
-4. **セキュリティセンター**で、[**マクロの設定**] をクリックします。
+4. **セキュリティセンター** で、[**マクロの設定**] をクリックします。
 
-5. **VBA プロジェクトオブジェクトモデルへのアクセス権**を確認またはオフにして、Visual Basic プロジェクトへのアクセスを有効または無効にします。
+5. **VBA プロジェクトオブジェクトモデルへのアクセス権** を確認またはオフにして、Visual Basic プロジェクトへのアクセスを有効または無効にします。
 
 6. **[OK]** をクリックします。
 
@@ -67,7 +67,7 @@ Microsoft Office システムプロジェクトの Visual Studio Tools を作成
 
 2. [ **セキュリティ** ] ダイアログボックスで、[ **信頼された発行元** ] タブをクリックします。
 
-3. **Visual Basic プロジェクトへのアクセス**を有効または無効にします。オフにします。
+3. **Visual Basic プロジェクトへのアクセス** を有効または無効にします。オフにします。
 
 4. **[OK]** をクリックします。
 
@@ -79,7 +79,7 @@ Microsoft Office システムプロジェクトの Visual Studio Tools を作成
 
 3. [ **セキュリティセンター**] をクリックし、[ **セキュリティセンターの設定**] をクリックします。
 
-4. **セキュリティセンター**で、[**マクロの設定**] をクリックします。
+4. **セキュリティセンター** で、[**マクロの設定**] をクリックします。
 
 5. [ **マクロの設定** ] セクションで、目的の設定を選択します。
 
@@ -103,9 +103,9 @@ Microsoft Office システムプロジェクトの Visual Studio Tools を作成
 
 4. [ **機能の追加または削除**] を選択し、[ **続行**] をクリックします。
 
-5. [ **アプリケーションの高度なカスタマイズを選択**する] を選択し、[ **次へ**] をクリックします。
+5. [ **アプリケーションの高度なカスタマイズを選択** する] を選択し、[ **次へ**] をクリックします。
 
-6. [**アプリケーションおよびツールの更新オプションを選択**します] の一覧で [ **Office 共有機能**] を展開します。
+6. [**アプリケーションおよびツールの更新オプションを選択** します] の一覧で [ **Office 共有機能**] を展開します。
 
 7. [ **Visual Basic for Applications**] の横にあるドロップダウンメニューを開き、[ **マイコンピューターから実行**] をクリックします。
 
@@ -117,13 +117,13 @@ Microsoft Office システムプロジェクトの Visual Studio Tools を作成
 
 1. コントロールパネルで、[ **プログラムの追加と削除** ] または [ **プログラムと機能**] を実行します。
 
-2. **現在インストールさ**れているプログラムの一覧で、使用している Office のバージョンを選択します。
+2. **現在インストールさ** れているプログラムの一覧で、使用している Office のバージョンを選択します。
 
 3. **[変更]** をクリックします。
 
 4. [ **再インストールまたは修復**] を選択し、[ **次へ**] をクリックします。
 
-5. [ **Office のインストールでエラーを検出して修復**する] を選択し、[ **インストール**] をクリックします。
+5. [ **Office のインストールでエラーを検出して修復** する] を選択し、[ **インストール**] をクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

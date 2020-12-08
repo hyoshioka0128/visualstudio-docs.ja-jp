@@ -1,5 +1,7 @@
 ---
 title: Word 文書または Excel ブックに操作ウィンドウを追加する
+description: Microsoft Office Word 文書または Microsoft Excel ブックに操作ウィンドウを追加するには、まず Windows フォームユーザーコントロールを作成する必要があることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546225"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848067"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>方法: Word 文書または Excel ブックに操作ウィンドウを追加する
   Microsoft Office Word 文書または Microsoft Excel ブックに操作ウィンドウを追加するには、まず Windows フォームユーザーコントロールを作成します。 次に、 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` プロジェクト内のフィールド (Word) またはフィールド (Excel) のプロパティにユーザーコントロールを追加し `ThisWorkbook.ActionsPane` ます。
@@ -42,12 +44,12 @@ ms.locfileid: "85546225"
 3. [ **新しい項目の追加** ] ダイアログボックスで [ **操作ウィンドウコントロール**] を選択し、「 **HelloControl**」という名前を指定して、[ **追加**] をクリックします。
 
     > [!NOTE]
-    > 別の方法として、 **ユーザーコントロール** 項目をプロジェクトに追加することもできます。 **操作ウィンドウコントロール**と**ユーザーコントロール**の項目によって生成されるクラスは、機能的には同等です。
+    > 別の方法として、 **ユーザーコントロール** 項目をプロジェクトに追加することもできます。 **操作ウィンドウコントロール** と **ユーザーコントロール** の項目によって生成されるクラスは、機能的には同等です。
 
-4. [**ツールボックス**] の [ **Windows フォーム**] タブで、**ボタン**コントロールをコントロールにドラッグします。
+4. [**ツールボックス**] の [ **Windows フォーム**] タブで、**ボタン** コントロールをコントロールにドラッグします。
 
     > [!NOTE]
-    > コントロールがデザイナーに表示されていない場合は、**ソリューションエクスプローラー**で [ **HelloControl** ] をダブルクリックします。
+    > コントロールがデザイナーに表示されていない場合は、**ソリューションエクスプローラー** で [ **HelloControl** ] をダブルクリックします。
 
 5. <xref:System.Windows.Forms.Control.Click>ボタンのイベントハンドラーにコードを追加します。 次の例は、Microsoft Office Word 文書のコードを示しています。
 

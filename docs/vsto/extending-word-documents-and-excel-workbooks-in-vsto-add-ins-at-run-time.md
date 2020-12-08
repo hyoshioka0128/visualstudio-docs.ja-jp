@@ -1,5 +1,7 @@
 ---
 title: 実行時に VSTO アドインの Word 文書 & Excel ブックに拡張する
+description: VSTO アドインを使用して、さまざまな方法で Word 文書や Excel ブックをカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2227aa2db4943ab132a8b2e2f9fc3a6f0ec4096
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4686b2cd3a3ca5d4be7eefee9881039b9914a9b8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585446"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847827"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>実行時に VSTO アドインの Word 文書と Excel ブックを拡張する
   VSTO アドインを利用すれば、Word 文書と Excel ブックを次のようにカスタマイズできます。
@@ -49,7 +51,7 @@ ms.locfileid: "91585446"
  特定のネイティブ Office オブジェクトに対して拡張オブジェクトが既に生成されているかどうかを確認するには、`HasVstoObject` メソッドを使用します。 詳細については、「 [Office オブジェクトが拡張されているかどうかを判断する](#HasVstoObject)」を参照してください。
 
 ### <a name="generate-host-items"></a>ホスト項目の生成
- を使用して `GetVstoObject` ドキュメントレベルのオブジェクト (つまり、、、または) を拡張すると、 <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> <xref:Microsoft.Office.Interop.Word.Document> 返されたオブジェクトは *ホスト項目*と呼ばれます。 ホスト項目は、他の拡張されたオブジェクトやコントロールなど、他のオブジェクトを含めることができる種類です。 Word または Excel プライマリ相互運用機能アセンブリの対応する種類と似ていますが、機能が多くなっています。 ホスト項目の詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+ を使用して `GetVstoObject` ドキュメントレベルのオブジェクト (つまり、、、または) を拡張すると、 <xref:Microsoft.Office.Interop.Excel.Workbook> <xref:Microsoft.Office.Interop.Excel.Worksheet> <xref:Microsoft.Office.Interop.Word.Document> 返されたオブジェクトは *ホスト項目* と呼ばれます。 ホスト項目は、他の拡張されたオブジェクトやコントロールなど、他のオブジェクトを含めることができる種類です。 Word または Excel プライマリ相互運用機能アセンブリの対応する種類と似ていますが、機能が多くなっています。 ホスト項目の詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
  ホスト項目を生成したら、それを利用して管理されているコントロールを文書、ブック、ワークシートに追加できます。 詳細については、「 [ドキュメントおよびワークシートへのマネージコントロールの追加](#AddControls)」を参照してください。
 
@@ -87,7 +89,7 @@ ms.locfileid: "91585446"
 ### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> ドキュメントとワークシートへのマネージコントロールの追加
  <xref:Microsoft.Office.Tools.Word.Document> または <xref:Microsoft.Office.Tools.Excel.Worksheet>を生成したら、これらの拡張オブジェクトが表す文書またはワークシートにコントロールを追加できます。 コントロールを追加するに `Controls` は、またはのプロパティを使用し <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Worksheet> ます。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
- Windows フォーム コントロールまたは *ホスト コントロール*を追加できます。 ホスト コントロールは [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] により提供されるコントロールであり、Word または Excel プライマリ相互運用機能アセンブリのそれに対応するコントロールをラップします。 ホストコントロールは、基になるネイティブ Office オブジェクトのすべての動作を公開します。 また、イベントも発生し、Windows フォームデータバインディングモデルを使用してデータにバインドできます。 詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+ Windows フォーム コントロールまたは *ホスト コントロール* を追加できます。 ホスト コントロールは [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] により提供されるコントロールであり、Word または Excel プライマリ相互運用機能アセンブリのそれに対応するコントロールをラップします。 ホストコントロールは、基になるネイティブ Office オブジェクトのすべての動作を公開します。 また、イベントも発生し、Windows フォームデータバインディングモデルを使用してデータにバインドできます。 詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 > [!NOTE]
 > VSTO アドインを利用し、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロールをワークシートに、 <xref:Microsoft.Office.Tools.Word.XMLNode> または <xref:Microsoft.Office.Tools.Word.XMLNodes> コントロールを文書に追加することはできません。 これらのホスト コントロールをプログラミングで追加することはできません。 詳細については、「 [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)」を参照してください。

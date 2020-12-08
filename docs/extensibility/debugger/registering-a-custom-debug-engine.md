@@ -1,5 +1,7 @@
 ---
 title: カスタムデバッグエンジンの登録 |Microsoft Docs
+description: デバッグエンジンが自身をクラスファクトリとして登録する方法、COM 規則に従う方法、およびレジストリを使用して Visual Studio に登録する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011841"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847183"
 ---
 # <a name="register-a-custom-debug-engine"></a>カスタムデバッグエンジンを登録する
 デバッグエンジンは、それ自体をクラスファクトリとして登録する必要があります。 COM の規則に従うだけでなく、visual studio のレジストリサブキーを使用して Visual Studio に登録する必要があります。
@@ -29,7 +31,7 @@ ms.locfileid: "90011841"
  [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) については、デバッグエンジンの登録に必要なレジストリの場所だけでなく、また、 *dbgmetric .lib* ライブラリについても説明します。これには、レジストリの操作を容易にする C++ 開発者向けの便利な関数と宣言が多数含まれています。
 
 ### <a name="example"></a>例
- (TextInterpreter サンプルの) 次の例では、 `SetMetric` 関数 ( *dbgmetric*) を使用して、デバッグエンジンを Visual Studio に登録する方法を示しています。 渡されるメトリックは、 *dbgmetric. lib*でも定義されています。
+ (TextInterpreter サンプルの) 次の例では、 `SetMetric` 関数 ( *dbgmetric*) を使用して、デバッグエンジンを Visual Studio に登録する方法を示しています。 渡されるメトリックは、 *dbgmetric. lib* でも定義されています。
 
 > [!NOTE]
 > TextInterpreter は基本的なデバッグエンジンです。その他の機能は設定されないため、登録されません。 デバッグエンジンの完全な一覧に `SetMetric` は、デバッグエンジンがサポートしている機能ごとに1つずつ、呼び出しのリスト全体が含まれます。

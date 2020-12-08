@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの設計と作成
+description: さまざまな種類の Office ソリューションを作成するために使用できるプロジェクトテンプレートを Visual Studio が提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808221"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847534"
 ---
 # <a name="design-and-create-office-solutions"></a>Office ソリューションの設計と作成
 
@@ -91,7 +93,7 @@ Visual Studio には、さまざまな種類の Office ソリューションの�
 ## <a name="referenced-assemblies"></a>参照アセンブリ
  アセンブリは、プロジェクトの参照にリストされている他のアセンブリを参照できます。 ただし、ドキュメント レベルのプロジェクト アセンブリが別のドキュメント レベルのプロジェクト アセンブリを参照することはできません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)
 - [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)

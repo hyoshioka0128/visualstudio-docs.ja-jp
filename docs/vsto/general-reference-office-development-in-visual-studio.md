@@ -1,7 +1,8 @@
 ---
 title: 全般リファレンス (Visual Studio での Office 開発)
+description: Visual Studio での Microsoft Office 開発プロジェクトに関する一般的なリファレンス情報について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551505"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847781"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>全般リファレンス (Visual Studio での Office 開発)
   このセクションでは、Visual Studio での Microsoft Office プロジェクトに関する技術的な詳細について説明します。

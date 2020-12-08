@@ -1,5 +1,7 @@
 ---
 title: データ範囲をプログラムによって段階的にオートフィルする
+description: Range オブジェクトのオートコンプリートメソッドを使用して、ワークシート内の範囲に値を自動的に入力する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585315"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847209"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>オブジェクトのメソッドを使用すると、 <xref:Microsoft.Office.Interop.Excel.Range> ワークシートの範囲に値を自動的に入力できます。 多くの場合、メソッドを使用して、 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 範囲内の値を段階的に増加または減少させることができます。 列挙から省略可能な定数を指定することにより、動作を指定でき <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> ます。

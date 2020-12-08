@@ -1,5 +1,7 @@
 ---
 title: Visual Studio デバッガーの用語集 |Microsoft Docs
+description: この記事では、バインドされたブレークポイント、因果関係、コードコンテキストなど、Visual Studio デバッグ SDK で使用されるいくつかの用語について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713347"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847066"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio デバッガーの用語集
 デバッグ SDK で使用される用語を次に示し [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。
@@ -34,7 +36,7 @@ ms.locfileid: "80713347"
 
  ドキュメントコンテキストは、デバッグエンジンに認識されているソースファイルドキュメント内の位置の抽象化を提供します。 ほとんどの言語では、ドキュメントコンテキストはソースファイル内の位置です。 ソースファイルがテキストでない nontraditional 言語では、ドキュメントコンテキストが他の方法で表される場合があります。 「 *ドキュメントの位置*」も参照してください。
 
- ドキュメントの位置は、IDE に認識されているソースファイル内の位置の抽象化を提供します。 ほとんどの言語では、ドキュメントの位置はソースファイル内の位置です。 Nontraditional 言語では、ドキュメントの位置を他の方法で表すことができます。 *ドキュメントコンテキスト*に関する記事も参照してください。
+ ドキュメントの位置は、IDE に認識されているソースファイル内の位置の抽象化を提供します。 ほとんどの言語では、ドキュメントの位置はソースファイル内の位置です。 Nontraditional 言語では、ドキュメントの位置を他の方法で表すことができます。 *ドキュメントコンテキスト* に関する記事も参照してください。
 
  エラーブレークポイントは、保留中のブレークポイントにエラーを記述するための抽象化です。 エラーブレークポイントは、保留中のブレークポイントの位置、保留中のブレークポイントに関連付けられている式、または保留中のブレークポイントがコードの場所にバインドされないようにするその他の情報について、エラーを記述する場合があります。
 

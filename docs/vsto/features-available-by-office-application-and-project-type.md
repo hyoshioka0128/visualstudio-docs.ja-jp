@@ -1,5 +1,7 @@
 ---
 title: Office アプリケーションおよびプロジェクトの種類別の使用可能な機能
+description: Microsoft Office アプリケーションのさまざまなビジネスシナリオをサポートする複数の種類のプロジェクトテンプレートが Visual Studio にどのように含まれているかについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585433"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847807"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office アプリケーションおよびプロジェクトの種類別の使用可能な機能
   Visual Studio には、次のように、Microsoft Office アプリケーションのさまざまなビジネス シナリオをサポートするプロジェクト テンプレートがいくつか用意されています。
@@ -50,7 +52,7 @@ ms.locfileid: "91585433"
 ## <a name="features-available-in-different-project-types"></a>さまざまな種類のプロジェクトで使用できる機能
  プロジェクトの種類ごとに異なる機能を次の表に示します。
 
-|機能|機能を提供するプロジェクトの種類|関連項目|
+|機能|機能を提供するプロジェクトの種類|参考資料|
 |-------------|--------------------------------------------|---------------------|
 |[操作] ウィンドウ。|ドキュメントレベルのプロジェクト。|[操作ウィンドウの概要](../vsto/actions-pane-overview.md)|
 |ClickOnce 配置。|VS およびドキュメントレベルのプロジェクト。|[Office ソリューションの配置](../vsto/deploying-an-office-solution.md)|

@@ -1,6 +1,7 @@
 ---
 title: '方法: C# プロジェクトでコードを VBA に公開する'
-ms.custom: seodec18
+description: 2種類のコードが相互に対話できるようにする場合に、Visual C# プロジェクトのコードを Visual Basic for Applications (VBA) コードに公開する方法について説明します。
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544834"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846598"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual C# プロジェクトでコードを VBA に公開する
   2種類のコードが相互に対話できるようにする場合は、Visual C# プロジェクトのコードを Visual Basic for Applications (VBA) コードに公開できます。
@@ -46,7 +47,7 @@ ms.locfileid: "85544834"
 
 2. マクロを有効にするようユーザーに求めることなく、ドキュメント内の VBA コードの実行が許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
-3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを **パブリック**として宣言します。
+3. VBA に公開するメンバーをプロジェクトのパブリッククラスに追加し、新しいメンバーを **パブリック** として宣言します。
 
 4. 次の <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性と <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性を、VBA に公開するクラスに適用します。 これらの属性によってクラスが COM で表示されるようになりますが、クラスのインターフェイスは生成されません。
 
@@ -80,7 +81,7 @@ ms.locfileid: "85544834"
 
 6. VBA に公開しているクラスからインターフェイスを抽出します。 [ **インターフェイスの抽出** ] ダイアログボックスで、インターフェイス宣言に含めるパブリックメンバーを選択します。 詳細については、「 [インターフェイスの抽出リファクタリング](../ide/reference/extract-interface.md)」を参照してください。
 
-7. **パブリック**キーワードをインターフェイス宣言に追加します。
+7. **パブリック** キーワードをインターフェイス宣言に追加します。
 
 8. インターフェイスに次の属性を追加して、インターフェイスが COM に表示されるようにし <xref:System.Runtime.InteropServices.ComVisibleAttribute> ます。
 
@@ -90,10 +91,10 @@ ms.locfileid: "85544834"
 
 9. のデザイナーで、ドキュメント (Word の場合) またはワークシート (Excel の場合) を開き [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
-10. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
+10. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True** に変更します。
 
     > [!NOTE]
-    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > ブックまたはドキュメントに VBA コードが含まれていない場合、またはドキュメント内の VBA コードの実行が信頼されていない場合は、 **ReferenceAssemblyFromVbaProject** プロパティを **True** に設定するとエラーメッセージが表示されます。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 11. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、からプロジェクトを実行するときに、ブックまたはドキュメントに VBA コードを追加した場合、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 次回プロジェクトをビルドするときに vba コードが失われることを通知します。 これは、プロジェクトをビルドするたびに、ビルド出力フォルダー内のドキュメントが上書きされるためです。
 

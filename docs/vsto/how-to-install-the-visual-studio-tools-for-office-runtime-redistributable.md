@@ -1,7 +1,8 @@
 ---
 title: '方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする'
+description: Microsoft Visual Studio 2010 Tools for Office runtime 再頒布可能パッケージをインストールする方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ef71de75be5977ab80cbdd85448daa5de381c077
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8fce7cc0fdbba49e0e247a6a65336105e149b6d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547226"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846533"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする
   Visual Studio 2010 Tools for Office runtime は、の Microsoft Office 開発者ツールを使用して作成されたソリューションを実行する各コンピューターにインストールする必要があり [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、および Microsoft Office をインストールすると自動的にインストールされます。 詳細については、「 [Visual Studio Tools for Office ランタイムのインストールシナリオ](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)」を参照してください。
@@ -46,7 +47,7 @@ ms.locfileid: "85547226"
 
     - をダウンロードするには [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 、「 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)」を参照してください。
 
-2. *vstor_redist.exe*を実行して、をインストールし [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。
+2. *vstor_redist.exe* を実行して、をインストールし [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。
 
      これらのセットアップファイルは、 [Visual Studio 2010 Tools For Office runtime](https://www.microsoft.com/download/details.aspx?id=56961)からダウンロードできます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] の必須コンポーネントは .NET Framework の場合と同じです。
 

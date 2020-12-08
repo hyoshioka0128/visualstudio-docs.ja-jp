@@ -1,5 +1,7 @@
 ---
 title: '方法: Office ドキュメントに Windows フォームコントロールを追加する'
+description: ドキュメントレベルのプロジェクトでデザイン時に Excel ドキュメントと Microsoft Office Word 文書 Microsoft Office Windows フォームコントロールを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547538"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846780"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>方法: Office ドキュメントに Windows フォームコントロールを追加する
   Windows フォーム コントロールは、デザイン時にドキュメント レベルのプロジェクトの Microsoft Office Excel および Microsoft Office Word のドキュメントに追加できます。 実行時には、ドキュメントレベルのカスタマイズと VSTO アドインにコントロールを追加できます。たとえば、 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> ユーザーがオプションの一覧から選択できるように、ワークシートにコントロールを追加できます。
@@ -44,7 +46,7 @@ ms.locfileid: "85547538"
 
 1. Visual Studio で Excel ブック プロジェクトまたは Word 文書プロジェクトを作成するかまたは開き、ドキュメントがデザイナーに表示されるようにします。 プロジェクトの作成の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ツールボックス**の [**コモンコントロール**] タブで、追加するコントロールをクリックし、ドキュメントにドラッグします。
+2. **ツールボックス** の [**コモンコントロール**] タブで、追加するコントロールをクリックし、ドキュメントにドラッグします。
 
     > [!NOTE]
     > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
@@ -53,20 +55,20 @@ ms.locfileid: "85547538"
 
 1. Visual Studio で Excel ブック プロジェクトまたは Word 文書プロジェクトを作成するかまたは開き、ドキュメントがデザイナーに表示されるようにします。 プロジェクトの作成の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ツールボックス**の [**コモンコントロール**] タブで、追加するコントロールをクリックします。
+2. **ツールボックス** の [**コモンコントロール**] タブで、追加するコントロールをクリックします。
 
 3. ドキュメント上で、コントロールの左上隅となる位置をクリックし、コントロールの右下隅となる位置までドラッグします。
 
      指定したドキュメントの位置に、指定したサイズのコントロールが追加されます。
 
     > [!NOTE]
-    > Excel でコントロールを選択すると、**数式バー**に " **= EMBED (" WinForms "," ")** " と表示されます。 このテキストは必要なので、削除しないでください。
+    > Excel でコントロールを選択すると、**数式バー** に " **= EMBED (" WinForms "," ")** " と表示されます。 このテキストは必要なので、削除しないでください。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>シングルクリックで Windows フォーム コントロールをドキュメントに追加するには
 
 1. Visual Studio で Excel ブック プロジェクトまたは Word 文書プロジェクトを作成するかまたは開き、ドキュメントがデザイナーに表示されるようにします。 プロジェクトの作成の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ツールボックス**の [**コモンコントロール**] タブで、追加するコントロールをクリックします。
+2. **ツールボックス** の [**コモンコントロール**] タブで、追加するコントロールをクリックします。
 
 3. ドキュメント上で、コントロールを追加する位置をクリックします。
 
@@ -79,7 +81,7 @@ ms.locfileid: "85547538"
 
 1. Visual Studio で Excel ブック プロジェクトまたは Word 文書プロジェクトを作成するかまたは開き、ドキュメントがデザイナーに表示されるようにします。 プロジェクトの作成の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ツールボックス**の [**コモンコントロール**] タブで、追加するコントロールをダブルクリックします。
+2. **ツールボックス** の [**コモンコントロール**] タブで、追加するコントロールをダブルクリックします。
 
      コントロールは、ドキュメントまたはアクティブなペインの中央に追加されます。
 
@@ -90,7 +92,7 @@ ms.locfileid: "85547538"
 
 1. Visual Studio で Excel ブック プロジェクトまたは Word 文書プロジェクトを作成するかまたは開き、ドキュメントがデザイナーに表示されるようにします。 プロジェクトの作成の詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ツールボックス**の [**コモンコントロール**] タブで、追加するコントロールをクリック**し、enter キーを**押します。
+2. **ツールボックス** の [**コモンコントロール**] タブで、追加するコントロールをクリック **し、enter キーを** 押します。
 
      コントロールは、ドキュメントまたはアクティブなペインの中央に追加されます。
 
@@ -98,7 +100,7 @@ ms.locfileid: "85547538"
     > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> 実行時にドキュメントレベルのプロジェクトにコントロールを追加する
- Windows フォーム コントロールは、実行時にプログラムを使用してドキュメントに追加できます。 Word では、`ThisDocument` クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> プロパティのメソッドを使用します。 Excel では、 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n クラスのプロパティのメソッドを使用し `Sheet` *n*ます。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
+ Windows フォーム コントロールは、実行時にプログラムを使用してドキュメントに追加できます。 Word では、`ThisDocument` クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> プロパティのメソッドを使用します。 Excel では、 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n クラスのプロパティのメソッドを使用し `Sheet` *n* ます。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
 
  実行時にドキュメントに Windows フォーム コントロールを追加した場合、ドキュメントが閉じられると、コントロールはドキュメント内に保持されません。 次にドキュメントを開くときに、コントロールを再作成できます。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: ドキュメントレベルのカスタマイズでのキャッシュされたデータ
+description: データをデータキャッシュとして埋め込むことで、ドキュメントレベルのカスタマイズで Visual Studio がビューからデータを分離する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238349"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847898"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>ドキュメントレベルのカスタマイズでのキャッシュされたデータ
   ドキュメントレベルのカスタマイズの主な目的は、Office ドキュメントのビューからデータを分離することです。 データとは、数字やテキストを含む、ドキュメントに格納されている情報を指します。 ビューは、ユーザーインターフェイスと Microsoft Office Word および Microsoft Office Excel のオブジェクトモデルを参照します。
 
- Visual Studio では、データをデータ *アイランド*として埋め込む (データ *キャッシュ*とも呼ばれる) ことによって、ドキュメントレベルのカスタマイズでビューのデータを分離します。 Word または Excel を起動せずに、直接データの読み取りや変更を行うことができます。 これは、Microsoft Office がインストールされていないサーバー上のドキュメントのデータを変更する必要がある場合に便利です。 Word および Excel は、クライアント環境での使用を目的としています。サーバー上で実行するように設計されていません。
+ Visual Studio では、データをデータ *アイランド* として埋め込む (データ *キャッシュ* とも呼ばれる) ことによって、ドキュメントレベルのカスタマイズでビューのデータを分離します。 Word または Excel を起動せずに、直接データの読み取りや変更を行うことができます。 これは、Microsoft Office がインストールされていないサーバー上のドキュメントのデータを変更する必要がある場合に便利です。 Word および Excel は、クライアント環境での使用を目的としています。サーバー上で実行するように設計されていません。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
