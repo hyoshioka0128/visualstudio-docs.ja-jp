@@ -1,5 +1,7 @@
 ---
 title: カスタム XML 部分の概要
+description: 一部の Microsoft Office アプリケーションのドキュメントに XML データを埋め込む方法について説明します。 ドキュメントに XML データを埋め込む場合、そのデータには「カスタム XML 部分」という名前が付きます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,15 +25,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7998f2a47edd85a65b1e81dd45a046de80d0cdb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64784418"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844128"
 ---
 # <a name="custom-xml-parts-overview"></a>カスタム XML 部分の概要
-  一部の Microsoft Office アプリケーションのドキュメントに XML データを埋め込むことができます。 XML データをドキュメントに埋め込むと、そのデータには *カスタム XML 部分*の名前が付けられます。
+  一部の Microsoft Office アプリケーションのドキュメントに XML データを埋め込むことができます。 XML データをドキュメントに埋め込むと、そのデータには *カスタム XML 部分* の名前が付けられます。
 
  Visual Studio で VSTO アドインまたはドキュメント レベルのソリューションを使用して、ドキュメントのカスタム XML 部分を作成または変更できます。 カスタム XML 部分を作成または変更するために Microsoft Office アプリケーションを開始する必要はありません。
 
@@ -41,9 +43,9 @@ ms.locfileid: "64784418"
 > Visual Studio では、ドキュメント レベルのカスタマイズ内のデータ オブジェクトをキャッシュすることもできます。 いくつかの類似点はありますが、この機能はカスタム XML 部分とは異なります。 詳細については、「 [ドキュメントレベルのカスタマイズでのキャッシュ](../vsto/cached-data-in-document-level-customizations.md)されたデータ」を参照してください。
 
 ## <a name="understand-custom-xml-parts"></a>カスタム XML 部分について
- カスタム XML 部分は、2007 Microsoft Office system で Open XML 形式とともに導入されました。 これらの形式には、Excel、PowerPoint、および Word 用の XML ベースの新しいファイル形式 ( *.xlsx*、 *.pptx*、 *.docx*など) が含まれています。 これらの形式のドキュメントは、ZIP アーカイブ内のフォルダーに整理された XML ファイル (名前付き *xml 部分*) で構成されます。 XML 部分のほとんどは、ドキュメントの構造と状態を定義するのに役立つ組み込みの部分です。 ただし、ドキュメントにはカスタム XML 部分を含めることができ、ユーザーはこれを使用して、ドキュメントに任意の XML データを格納できます。
+ カスタム XML 部分は、2007 Microsoft Office system で Open XML 形式とともに導入されました。 これらの形式には、Excel、PowerPoint、および Word 用の XML ベースの新しいファイル形式 ( *.xlsx*、 *.pptx*、 *.docx* など) が含まれています。 これらの形式のドキュメントは、ZIP アーカイブ内のフォルダーに整理された XML ファイル (名前付き *xml 部分*) で構成されます。 XML 部分のほとんどは、ドキュメントの構造と状態を定義するのに役立つ組み込みの部分です。 ただし、ドキュメントにはカスタム XML 部分を含めることができ、ユーザーはこれを使用して、ドキュメントに任意の XML データを格納できます。
 
- XML ファイル形式を使用すると、古いバイナリファイル形式 ( *.xls*、 *.ppt*、 *.doc*など) ではできない方法で、アプリケーションがドキュメントを操作できるようになります。 ZIP アーカイブを読み取ることができるすべてのアプリケーションは、Microsoft Office がインストールされていない場合でも、ドキュメントの内容を検証し、変更できます。
+ XML ファイル形式を使用すると、古いバイナリファイル形式 ( *.xls*、 *.ppt*、 *.doc* など) ではできない方法で、アプリケーションがドキュメントを操作できるようになります。 ZIP アーカイブを読み取ることができるすべてのアプリケーションは、Microsoft Office がインストールされていない場合でも、ドキュメントの内容を検証し、変更できます。
 
  Open XML およびカスタム XML 部分の構造の詳細については、次の記事をご覧ください。
 
@@ -82,5 +84,5 @@ ms.locfileid: "64784418"
 - [ドキュメントレベルのカスタマイズにおける XML スキーマとデータ](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
 - [方法: ドキュメントレベルのカスタマイズにカスタム XML 部分を追加する](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 - [方法: VSTO アドインを使用してドキュメントにカスタム XML 部分を追加する](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
-- [コンテンツ コントロール](../vsto/content-controls.md)
+- [コンテンツコントロール](../vsto/content-controls.md)
 - [チュートリアル: カスタム XML 部分へのコンテンツコントロールのバインド](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)

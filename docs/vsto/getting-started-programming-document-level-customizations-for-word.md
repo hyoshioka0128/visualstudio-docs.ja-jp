@@ -1,5 +1,7 @@
 ---
 title: Word のドキュメントレベルのカスタマイズのプログラミングの概要
+description: Visual Studio を使用して Microsoft Office Word のドキュメントレベルのカスタマイズの作成を開始するために知っておく必要があることについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585668"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845181"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word のドキュメントレベルのカスタマイズのプログラミングの概要
   Visual Studio を使用して Microsoft Office Word のドキュメントレベルのカスタマイズの作成を開始するだけの場合は、次のことを理解しておく必要があります。
@@ -59,7 +61,7 @@ ms.locfileid: "91585668"
 ## <a name="bind-controls-to-data"></a>コントロールをデータにバインドする
  コンテンツコントロールとコントロールは、 <xref:Microsoft.Office.Tools.Word.Bookmark> [ **データソース** ] ウィンドウからドラッグできるコントロールのリストに含まれています。 この方法でコンテンツコントロールとブックマークを追加すると、ウィンドウを使用して設定したデータソースに自動的にバインドされます。 コードを記述しなくても、データベース、サービス、およびビジネスオブジェクトのデータを表示できます。 詳細については、「 [データを Office ソリューションのコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Word のドキュメントレベルのカスタマイズを作成する方法については、「 [チュートリアル: word の最初のドキュメントレベルのカスタマイズを作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)する」を参照してください。 このチュートリアルでは、Visual Studio の Office 開発ツールと Word ドキュメントレベルのカスタマイズのプログラミングモデルについて説明します。
 
  Word プロジェクトの一般的なタスクについて説明するトピックの一覧については、「 [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)」を参照してください。

@@ -1,5 +1,7 @@
 ---
 title: '方法: リボンをリボンデザイナーからリボン XML にエクスポートする'
+description: リボンをカスタマイズするために、デザイナーからリボン XML にリボンをエクスポートし、XML を直接編集することができます。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298440"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844141"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>方法: リボンをリボンデザイナーからリボン XML にエクスポートする
   **リボン (ビジュアルデザイナー)** 項目は、すべての種類のリボンのカスタマイズをサポートしているわけではありません。 高度な方法でリボンをカスタマイズするには、リボンをデザイナーからリボン XML にエクスポートし、XML を直接編集します。
@@ -36,7 +38,7 @@ ms.locfileid: "92298440"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>リボンをリボンデザイナーからリボン XML にエクスポートするには
 
-1. **ソリューションエクスプローラー**でリボンコードファイルを右クリックし、[デザイナーの**表示**] をクリックします。
+1. **ソリューションエクスプローラー** でリボンコードファイルを右クリックし、[デザイナーの **表示**] をクリックします。
 
 2. リボンデザイナーを右クリックし、[ **リボンを XML にエクスポート**] をクリックします。
 
@@ -48,7 +50,7 @@ ms.locfileid: "92298440"
 
      このコードにより、Microsoft Office アプリケーションでカスタムリボンを検出して読み込むことができます。 詳細については、「 [Ribbon XML](../vsto/ribbon-xml.md)」を参照してください。
 
-5. **ThisAddin**、 **ThisWorkbook**、 **ThisDocument**クラスで、コードブロックのコメントを解除します。
+5. **ThisAddin**、 **ThisWorkbook**、 **ThisDocument** クラスで、コードブロックのコメントを解除します。
 
      コードのコメントを解除すると、次の例のようになります。 この例では、リボンクラスが呼び出され `MyRibbon` ます。
 

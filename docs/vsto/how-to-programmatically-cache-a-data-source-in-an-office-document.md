@@ -1,5 +1,7 @@
 ---
 title: プログラムによる Office ドキュメント内のデータソースのキャッシュ
+description: ホスト項目の StartCaching メソッドを呼び出すことによって、プログラムを使用してデータオブジェクトをドキュメント内のデータキャッシュに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544769"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845013"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>方法: Office ドキュメント内のデータソースをプログラムによってキャッシュする
   、、など `StartCaching` のホスト項目のメソッドを呼び出すことによって、プログラムを使用してデータオブジェクトをドキュメント内のデータキャッシュに追加でき <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> ます。 ホスト項目のメソッドを呼び出すことによって、データキャッシュからデータオブジェクトを削除 `StopCaching` します。

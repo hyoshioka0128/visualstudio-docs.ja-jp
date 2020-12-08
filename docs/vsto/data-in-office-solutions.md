@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションのデータ
+description: Visual Studio を使用して Microsoft Office ソリューションを作成するときにデータを操作するさまざまな方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189682"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845549"
 ---
 # <a name="data-in-office-solutions"></a>Office ソリューションのデータ
   多くの Office ソリューションでは、ユーザーがデータを取得したり変更したりできるようにします。 Visual Studio を使用して Office ソリューションを作成する場合、さまざまな方法でデータを操作できます。
@@ -45,7 +47,7 @@ ms.locfileid: "73189682"
 
  プロジェクトにデータベース ファイルをインポートする方法と、オフラインで使用するためにデータをキャッシュできるタイミングについて説明します。
 
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目
 - [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)
 
  Visual Studio におけるデータの操作方法を説明するトピックの一覧を示します。

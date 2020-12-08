@@ -1,5 +1,7 @@
 ---
 title: '方法: ショートカットメニューにコマンドを追加する'
+description: VSTO アドインを使用して Office アプリケーションのショートカットメニューにコマンドを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546199"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845493"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>方法: ショートカットメニューにコマンドを追加する
   このトピックでは、VSTO アドインを使用して Office アプリケーションのショートカットメニューにコマンドを追加する方法について説明します。
@@ -29,9 +31,9 @@ ms.locfileid: "85546199"
 
 1. **[リボン XML]** 項目をドキュメント レベルのプロジェクトまたは VSTO アドイン プロジェクトに追加します。 詳細については、「 [方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。 /
 
-2. **ソリューション エクスプローラー**で、 **ThisAddin.cs** または **ThisAddin.vb**を選択します。
+2. **ソリューション エクスプローラー** で、 **ThisAddin.cs** または **ThisAddin.vb** を選択します。
 
-3. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
+3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コード エディターで **ThisAddin** クラス ファイルが開きます。
 
@@ -40,9 +42,9 @@ ms.locfileid: "85546199"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには *Ribbon1.xml*という名前が付けられます。
+5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには *Ribbon1.xml* という名前が付けられます。
 
-6. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
+6. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コード エディターでリボン XML ファイルが開きます。
 
@@ -70,7 +72,7 @@ ms.locfileid: "85546199"
     </customUI>
     ```
 
-8. **ソリューション エクスプローラー**で、 **MyRibbon.cs** または **MyRibbon.vb**を選択します。
+8. **ソリューション エクスプローラー** で、 **MyRibbon.cs** または **MyRibbon.vb** を選択します。
 
 9. 処理する各コントロールのクラスにコールバックメソッドを追加し `Ribbon1` ます。
 

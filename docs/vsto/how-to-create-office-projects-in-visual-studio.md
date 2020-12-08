@@ -1,7 +1,8 @@
 ---
 title: '方法: Visual Studio で Office プロジェクトを作成する'
+description: Visual Studio を使用して、Microsoft Office アプリケーションの VSTO アドインとドキュメントレベルのカスタマイズを作成する方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547564"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844375"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>方法: Visual Studio で Office プロジェクトを作成する
   を使用すると、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Microsoft Office アプリケーションの VSTO アドインとドキュメントレベルのカスタマイズを作成できます。 これらの種類のプロジェクトの詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -39,7 +40,7 @@ ms.locfileid: "85547564"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>VSTO アドイン プロジェクトを作成するには
 
-1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 統合開発環境 (IDE) が開発設定を使用するように設定されている場合は、[ [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **ファイル**] メニューの [**新しい**プロジェクト] をクリックし  >  **Project**ます。
+1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 統合開発環境 (IDE) が開発設定を使用するように設定されている場合は、[ [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] **ファイル**] メニューの [**新しい** プロジェクト] をクリックし  >  **Project** ます。
 
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -94,7 +95,7 @@ ms.locfileid: "85547564"
 
 ### <a name="to-create-a-document-level-customization-project"></a>ドキュメント レベルのカスタマイズ プロジェクトを作成するには
 
-1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、[**ファイル**] メニューの [**新しい**プロジェクト] をクリックし  >  **Project**ます。
+1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順にクリックします。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、[**ファイル**] メニューの [**新しい** プロジェクト] をクリックし  >  **Project** ます。
 
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -147,15 +148,15 @@ ms.locfileid: "85547564"
    - パーセント記号 (%)
 
    > [!NOTE]
-   > [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] プロジェクトで既存のドキュメントを使用する場合は、[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] で作成したドキュメントか、この形式に変換したドキュメントだけを使用してください。 同様に、Word 2010 プロジェクトで既存のドキュメントを使用する場合は、Word 2010 で作成したドキュメントか、Word 2010 に変換したドキュメントだけを使用してください。 以前のバージョンの Word で作成した文書を使用すると、文書の一部の機能が使用できなくなります。 このような機能を使用するコードを記述しようとすると、プロジェクトでエラーが発生する可能性があります。 ドキュメントを変換するには、または Word 2010 でドキュメントを開き、 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] リボンの [**ファイル**] タブで [**情報**変換] を選択し  >  **Convert**ます。
+   > [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] プロジェクトで既存のドキュメントを使用する場合は、[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] で作成したドキュメントか、この形式に変換したドキュメントだけを使用してください。 同様に、Word 2010 プロジェクトで既存のドキュメントを使用する場合は、Word 2010 で作成したドキュメントか、Word 2010 に変換したドキュメントだけを使用してください。 以前のバージョンの Word で作成した文書を使用すると、文書の一部の機能が使用できなくなります。 このような機能を使用するコードを記述しようとすると、プロジェクトでエラーが発生する可能性があります。 ドキュメントを変換するには、または Word 2010 でドキュメントを開き、 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] リボンの [**ファイル**] タブで [**情報** 変換] を選択し  >  **Convert** ます。
 
 8. **[完了]** を選択します。
 
 9. 次の場合、Word のセキュリティ センターにある信頼できる場所の一覧に、プロジェクト フォルダーとそのサブフォルダーを追加します。
 
-   - *.Docm*ファイルに基づく Word 文書を作成し、ドキュメントに VBA プロジェクトが含まれているか Windows フォームコントロールをホストしています。 プロジェクト フォルダーを信頼できる場所の一覧に追加すると、デザイン時に文書が期待どおりに動作するか確認するのに役立ちます。
+   - *.Docm* ファイルに基づく Word 文書を作成し、ドキュメントに VBA プロジェクトが含まれているか Windows フォームコントロールをホストしています。 プロジェクト フォルダーを信頼できる場所の一覧に追加すると、デザイン時に文書が期待どおりに動作するか確認するのに役立ちます。
 
-   - *.Dotx*ファイルに基づく Word テンプレートプロジェクトを作成する場合。 プロジェクトを実行およびデバッグできるようにするために、プロジェクト フォルダーを信頼できる場所の一覧に追加する必要があります。
+   - *.Dotx* ファイルに基づく Word テンプレートプロジェクトを作成する場合。 プロジェクトを実行およびデバッグできるようにするために、プロジェクト フォルダーを信頼できる場所の一覧に追加する必要があります。
 
      信頼できる場所にドキュメントを追加する方法の詳細については、Microsoft Office オンライン web サイト「 [ファイルの信頼できる場所を作成、削除、または変更](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)する」を参照してください。
 

@@ -1,7 +1,8 @@
 ---
 title: '&lt;customization &gt; 要素 (Visual Studio での Office 開発)'
+description: Vstov4 名前空間のカスタマイズ要素が特定の Office ソリューションについて記述する方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544873"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844115"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;customization &gt; 要素 (Visual Studio での Office 開発)
   `customization` 名前空間の `vstov4` 要素では、特定の Office ソリューションについて記述します。 ドキュメント レベルのカスタマイズと VSTO アドインでは、子要素が異なります。
@@ -57,11 +58,11 @@ ms.locfileid: "85544873"
 
  `customization` 要素には、次の属性があります。
 
-|属性|[説明]|
+|属性|説明|
 |---------------|-----------------|
 |`id`|複数プロジェクトの配置の場合は必須です。 `id` 要素によって、Office ソリューションを一意に識別します。|
 
-### <a name="document-level-customizations"></a>ドキュメントレベルのカスタマイズ
+### <a name="document-level-customizations"></a>カスタマイズの Document-Level
  `customization` 要素には、次の子要素があります。
 
 #### <a name="document"></a>ドキュメント
@@ -75,7 +76,7 @@ ms.locfileid: "85544873"
 
 ## <a name="example-of-a-document-level-customization"></a>ドキュメントレベルのカスタマイズの例
 
-### <a name="description"></a>[説明]
+### <a name="description"></a>説明
  次のコード例は、ドキュメント レベルのカスタマイズの `customization` 要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
@@ -89,7 +90,7 @@ ms.locfileid: "85544873"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO アドインの例
 
-### <a name="description"></a>[説明]
+### <a name="description"></a>説明
  次のコード例は、 `customization` VSTO アドインの要素を示しています。 この例は、フォーム領域が含まれた Outlook VSTO アドインです。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

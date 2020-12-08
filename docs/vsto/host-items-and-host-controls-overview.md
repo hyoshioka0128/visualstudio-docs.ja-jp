@@ -1,5 +1,7 @@
 ---
 title: ホスト項目とホストコントロールの概要
+description: ホスト項目とホストコントロールは、Office ソリューションのプログラミングモデルを提供するのに役立つ型であることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -36,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc8939f2a9e5f41f81c8176d5268528c273a7ce
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255927"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845571"
 ---
 # <a name="host-items-and-host-controls-overview"></a>ホスト項目とホストコントロールの概要
   ホスト項目とホスト コントロールは、Visual Studio の Office 開発ツールを使用して作成される Office ソリューションのプログラミング モデルを提供する助けとなる型です。 ホスト項目とホスト コントロールは、Microsoft Office Word および Microsoft Office Excel の COM ベースのオブジェクト モデルとの対話を、Windows フォーム コントロールなどのマネージド オブジェクトとの対話と似たものにします。
@@ -59,7 +61,7 @@ ms.locfileid: "71255927"
 
 - <xref:Microsoft.Office.Tools.Excel.ChartSheet>
 
-  これらの型はそれぞれが、Word または Excel のオブジェクト モデルにネイティブに存在する *ネイティブ Office オブジェクト*と呼ばれるオブジェクトを拡張します。 たとえば、 <xref:Microsoft.Office.Tools.Word.Document> ホスト項目は、Word のプライマリ相互運用機能アセンブリに定義されている <xref:Microsoft.Office.Interop.Word.Document> オブジェクトを拡張します。
+  これらの型はそれぞれが、Word または Excel のオブジェクト モデルにネイティブに存在する *ネイティブ Office オブジェクト* と呼ばれるオブジェクトを拡張します。 たとえば、 <xref:Microsoft.Office.Tools.Word.Document> ホスト項目は、Word のプライマリ相互運用機能アセンブリに定義されている <xref:Microsoft.Office.Interop.Word.Document> オブジェクトを拡張します。
 
   ホスト項目は、一般に、対応する Office オブジェクトと同じ基本機能を備えていますが、さらに次の機能を備えています：
 
@@ -98,7 +100,7 @@ ms.locfileid: "71255927"
 
 - [Bookmark コントロール](../vsto/bookmark-control.md)
 
-- [コンテンツ コントロール](../vsto/content-controls.md)
+- [コンテンツコントロール](../vsto/content-controls.md)
 
 - [XMLNode コントロール](../vsto/xmlnode-control.md)
 
@@ -145,10 +147,10 @@ ms.locfileid: "71255927"
 - [方法: Word 文書に XMLNodes コントロールを追加する](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>ホストコントロールの名前
- **ツールボックス** から文書にホスト コントロールをドラッグすると、コントロールには自動的にコントロールの型と末尾の増分番号で構成される名前が付けられます。 たとえば、ブックマークには **bookmark1**や **bookmark2**などの名前が付けられます。 Word または Excel のネイティブ機能を使用してコントロールを追加する場合は、コントロールの作成時に特定の名前を指定できます。 **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を変更してコントロールの名前を変更することもできます。
+ **ツールボックス** から文書にホスト コントロールをドラッグすると、コントロールには自動的にコントロールの型と末尾の増分番号で構成される名前が付けられます。 たとえば、ブックマークには **bookmark1** や **bookmark2** などの名前が付けられます。 Word または Excel のネイティブ機能を使用してコントロールを追加する場合は、コントロールの作成時に特定の名前を指定できます。 **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を変更してコントロールの名前を変更することもできます。
 
 > [!NOTE]
-> ホスト コントロールの名前に予約語は使用できません。 たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをワークシートに追加し、名前を **System**に変更すると、プロジェクトをビルドするときにエラーが発生します。
+> ホスト コントロールの名前に予約語は使用できません。 たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをワークシートに追加し、名前を **System** に変更すると、プロジェクトをビルドするときにエラーが発生します。
 
 ### <a name="delete-host-controls"></a>ホストコントロールの削除
  ドキュメントレベルのプロジェクトでは、Excel ワークシートまたは Word 文書のコントロールを選択し、 **del** キーを押して、デザイン時にホストコントロールを削除できます。 ただし、 **コントロールを削除するには、Excel の** [名前の定義] <xref:Microsoft.Office.Tools.Excel.NamedRange> ダイアログ ボックスを使用する必要があります。
@@ -166,7 +168,7 @@ ms.locfileid: "71255927"
  ホスト コントロールが Office オブジェクトを拡張する方法の 1 つに、イベントの追加が挙げられます。 たとえば、Excel の <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトと Word の <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトはイベントを持ちませんが、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] では、プログラミング可能なイベントを追加することによってこれらのオブジェクトを拡張します。 Windows フォームのコントロールのイベントにアクセスするのと同じ方法で、これらのイベントにアクセスし、コーディングすることができます。Visual Basic ではイベント ドロップダウン リストを使用し、C# ではイベント プロパティ ページを使用します。 詳細については、「 [チュートリアル: NamedRange コントロールのイベントに対してプログラムを実行する](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)」を参照してください。
 
 > [!NOTE]
-> Excel の <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Application> プロパティを **false**と呼ばれるオブジェクトを拡張します。 このプロパティを **false** に設定すると、ホスト コントロールのイベントを含む、すべてのイベントが Excel で発生しなくなります。
+> Excel の <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Application> プロパティを **false** と呼ばれるオブジェクトを拡張します。 このプロパティを **false** に設定すると、ホスト コントロールのイベントを含む、すべてのイベントが Excel で発生しなくなります。
 
 ## <a name="see-also"></a>関連項目
 - [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -1,5 +1,7 @@
 ---
 title: ドキュメントレベルのカスタマイズのアーキテクチャ
+description: カスタマイズコンポーネントや、カスタマイズが Microsoft Office アプリケーションとどのように連携するかなど、ドキュメントレベルのカスタマイズの側面について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926557"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845962"
 ---
 # <a name="architecture-of-document-level-customizations"></a>ドキュメントレベルのカスタマイズのアーキテクチャ
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] には、Microsoft Office Word および Microsoft Office Excel のドキュメント レベルのカスタマイズを作成するためのプロジェクトが含まれています。 ここでは、ドキュメント レベルのカスタマイズの次の側面について説明します。
@@ -91,11 +93,11 @@ ms.locfileid: "68926557"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>.Xml ファイル名拡張子を持つ Word 文書のサポート
  ドキュメント レベルのプロジェクト テンプレートを使用して、次のファイル形式に基づくプロジェクトを作成することはできません。
 
-- Word XML ドキュメント (* \* xml*)。
+- Word XML ドキュメント (*\* xml*)。
 
-- Word 2003 XML ドキュメント (* \* xml*)。
+- Word 2003 XML ドキュメント (*\* xml*)。
 
-  エンド ユーザーがこれらのファイル形式でカスタマイズを使用できるようにするには、前の表に示した、サポートされているいずれかのファイル形式に基づくカスタマイズを作成して配置します。 カスタマイズをインストールすると、エンドユーザーは Word XML ドキュメント (* \* xml*) 形式または Word 2003 xml ドキュメント (* \* xml*) 形式でドキュメントを保存できるようになり、カスタマイズは想定どおりに動作し続けます。
+  エンド ユーザーがこれらのファイル形式でカスタマイズを使用できるようにするには、前の表に示した、サポートされているいずれかのファイル形式に基づくカスタマイズを作成して配置します。 カスタマイズをインストールすると、エンドユーザーは Word XML ドキュメント (*\* xml*) 形式または Word 2003 xml ドキュメント (*\* xml*) 形式でドキュメントを保存できるようになり、カスタマイズは想定どおりに動作し続けます。
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> カスタマイズのコンポーネント
  カスタマイズの主要なコンポーネントは、ドキュメントとアセンブリです。 これらのコンポーネントに加えて、Microsoft Office アプリケーションがカスタマイズを検出して読み込むときに重要な役割を果たすものがあります。
@@ -109,7 +111,7 @@ ms.locfileid: "68926557"
  詳細については、「 [Visual Studio tools For Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)」を参照してください。
 
 ## <a name="how-customizations-work-with-microsoft-office-applications"></a><a name="HowCustomizationsWork"></a> Microsoft Office アプリケーションでのカスタマイズのしくみ
- ユーザーが Microsoft Office カスタマイズの一部であるドキュメントを開くと、アプリケーションはそのドキュメントにリンクされている配置マニフェストを使用して、最新バージョンのカスタマイズ アセンブリを特定し、読み込みます。 配置マニフェストの場所は、 **Assemblylocation**という名前のカスタムドキュメントプロパティに格納されます。 この場所を示す文字列は、ソリューションをビルドするときにプロパティに挿入されます。
+ ユーザーが Microsoft Office カスタマイズの一部であるドキュメントを開くと、アプリケーションはそのドキュメントにリンクされている配置マニフェストを使用して、最新バージョンのカスタマイズ アセンブリを特定し、読み込みます。 配置マニフェストの場所は、 **Assemblylocation** という名前のカスタムドキュメントプロパティに格納されます。 この場所を示す文字列は、ソリューションをビルドするときにプロパティに挿入されます。
 
  配置マニフェストはアプリケーション マニフェストを指し、アプリケーション マニフェストは最新のアセンブリを指します。 詳細については、「 [Office ソリューションのアプリケーションマニフェストと配置マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)」を参照してください。
 
@@ -125,7 +127,7 @@ ms.locfileid: "68926557"
 
 1. Microsoft Office アプリケーションはカスタム ドキュメント プロパティをチェックして、そのドキュメントに関連付けられているマネージド コード拡張機能があるかどうかを調べます。 詳細については、「 [カスタムドキュメントプロパティの概要](../vsto/custom-document-properties-overview.md)」を参照してください。
 
-2. マネージコード拡張機能がある場合、アプリケーションは *VSTOEE.dll*を読み込み、 *VSTOLoader.dll*を読み込みます。 これらは、Visual Studio 2010 Tools for Office runtime のローダーコンポーネントであるアンマネージ Dll です。 詳細については、「 [Visual Studio Tools for Office ランタイムの概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)」を参照してください。
+2. マネージコード拡張機能がある場合、アプリケーションは *VSTOEE.dll* を読み込み、 *VSTOLoader.dll* を読み込みます。 これらは、Visual Studio 2010 Tools for Office runtime のローダーコンポーネントであるアンマネージ Dll です。 詳細については、「 [Visual Studio Tools for Office ランタイムの概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)」を参照してください。
 
 3. *VSTOLoader.dll* はを読み込み、 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] のマネージ部分を開始し [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ます。
 

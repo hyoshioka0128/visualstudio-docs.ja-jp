@@ -1,5 +1,7 @@
 ---
 title: ClickOnce を使用して Office ソリューションを配置する
+description: ClickOnce を使用する場合に、より少数の手順で Office ソリューションを配置する方法について説明します。 更新プログラムを発行する場合は、ソリューションはそれらを自動的に検出してインストールします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809350"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845649"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce を使用して Office ソリューションを配置する
   ClickOnce を使用する場合は、少しの手順で Office ソリューションを配置できます。 更新プログラムを発行する場合は、ソリューションはそれらを自動的に検出してインストールします。 ただし、ClickOnce を使用する場合は、コンピューターのユーザーごとに、ソリューションを個別にインストールする必要があります。 そのため、複数のユーザーが同じコンピューターでソリューションを実行する場合は、Windows インストーラー (*.msi*) の使用を検討する必要があります。
@@ -46,15 +48,15 @@ ms.locfileid: "90809350"
   Windows インストーラーファイルを作成して Office ソリューションを配置する方法の詳細については、「 [Windows インストーラーを使用した office ソリューションの配置](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)」を参照してください。
 
 ## <a name="publish-the-solution"></a><a name="Publish"></a> ソリューションを発行する
- ソリューションを発行するには、 **発行ウィザード** または **プロジェクトデザイナー**を使用します。 この手順では、 **プロジェクトデザイナー** を使用します。これは、発行オプションの完全なセットを提供するためです。 「 [Visual Studio&#41;での Office 開発 &#40;の発行ウィザード」を ](../vsto/publish-wizard-office-development-in-visual-studio.md)参照してください。
+ ソリューションを発行するには、 **発行ウィザード** または **プロジェクトデザイナー** を使用します。 この手順では、 **プロジェクトデザイナー** を使用します。これは、発行オプションの完全なセットを提供するためです。 「 [Visual Studio&#41;での Office 開発 &#40;の発行ウィザード」を ](../vsto/publish-wizard-office-development-in-visual-studio.md)参照してください。
 
 #### <a name="to-publish-the-solution"></a>ソリューションを発行するには
 
-1. **ソリューションエクスプローラー**で、プロジェクトの名前が付けられているノードを選択します。
+1. **ソリューションエクスプローラー** で、プロジェクトの名前が付けられているノードを選択します。
 
 2. メニュー バーで、 **[プロジェクト]**、[ *ProjectName* **のプロパティ]**」を参照してください。
 
-3. **プロジェクトデザイナー**で、[**発行**] タブを選択します。次の図が示されています。
+3. **プロジェクトデザイナー** で、[**発行**] タブを選択します。次の図が示されています。
 
     ![プロジェクト デザイナーの [発行] タブ](../vsto/media/vsto-publishtab.png "プロジェクト デザイナーの [発行] タブ")
 
@@ -64,9 +66,9 @@ ms.locfileid: "90809350"
 
    - ローカルパス (たとえば、 *C:\FolderName\FolderName*)。
 
-   - ネットワーク上のフォルダーへの汎用名前付け規則 (UNC) パス (たとえば、 * \\ \ServerName\FolderName*)。
+   - ネットワーク上のフォルダーへの汎用名前付け規則 (UNC) パス (たとえば、 *\\ \ServerName\FolderName*)。
 
-   - 相対パス (たとえば、プロジェクトが既定で発行されるフォルダーである*Publishfolder \\ *など)。
+   - 相対パス (たとえば、プロジェクトが既定で発行されるフォルダーである *Publishfolder \\* など)。
 
 5. [ **インストールフォルダーの URL** ] ボックスに、エンドユーザーがソリューションを検索する場所の完全修飾パスを入力します。
 
@@ -78,7 +80,7 @@ ms.locfileid: "90809350"
 
 8. [ **インストールする必須コンポーネントの選択** ] ボックスの一覧で、 **Windows インストーラー 4.5** と適切な .NET Framework パッケージのチェックボックスをオンにします。
 
-    たとえば、ソリューションでを対象としている場合は、 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] **Windows インストーラー 4.5** のチェックボックスをオンにし、 **Microsoft .NET Framework 4.5 Full**を選択します。
+    たとえば、ソリューションでを対象としている場合は、 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] **Windows インストーラー 4.5** のチェックボックスをオンにし、 **Microsoft .NET Framework 4.5 Full** を選択します。
 
 9. ソリューションが .NET Framework 4.5 を対象としている場合は、[ **Visual Studio 2010 Tools For Office Runtime** ] チェックボックスもオンにします。
 
@@ -110,13 +112,13 @@ ms.locfileid: "90809350"
 
      この手順で既に指定した発行フォルダーに、Visual Studio は次のフォルダーとファイルを追加します。
 
-    - **アプリケーションファイル**フォルダー。
+    - **アプリケーションファイル** フォルダー。
 
     - セットアップ プログラム。
 
     - 最新バージョンの配置マニフェストを指す配置マニフェスト。
 
-      **Application Files**フォルダーには、発行する各バージョンのサブフォルダーが含まれています。 バージョン固有の各サブフォルダーには、次のファイルが含まれます。
+      **Application Files** フォルダーには、発行する各バージョンのサブフォルダーが含まれています。 バージョン固有の各サブフォルダーには、次のファイルが含まれます。
 
     - アプリケーション マニフェスト。
 
@@ -155,7 +157,7 @@ ms.locfileid: "90809350"
 
 2. 構成しているコンピューター名、 **Web サイト** フォルダー、または web サイトを選択します。
 
-3. メニューバーで [**アクション**のプロパティ] を選択し  >  **Properties**ます。
+3. メニューバーで [**アクション** のプロパティ] を選択し  >  **Properties** ます。
 
 4. [ **HTTP ヘッダー** ] タブで、[ **MIME の種類** ] ボタンをクリックします。
 
@@ -168,7 +170,7 @@ ms.locfileid: "90809350"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>IIS 7.0 に MIME の種類 (.vsto) を追加するには
 
-1. IIS 7.0 を実行しているサーバーで、[**スタート**] [すべてのプログラム] [アクセサリ] の順に選択し  >  **All Programs**  >  **Accessories**ます。
+1. IIS 7.0 を実行しているサーバーで、[**スタート**] [すべてのプログラム] [アクセサリ] の順に選択し  >  **All Programs**  >  **Accessories** ます。
 
 2. [**コマンドプロンプト**] のショートカットメニューを開き、[**管理者として実行**] を選択します。
 
@@ -194,7 +196,7 @@ ms.locfileid: "90809350"
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>配置後アクションを定義するクラスを作成します。
 
-1. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト**の追加] の順に選択します。
+1. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト** の追加] の順に選択します。
 
 2. [ **新しいプロジェクトの追加** ] ダイアログボックスの [ **インストールされたテンプレート** ] ペインで、[ **Windows** ] フォルダーを選択します。
 
@@ -202,7 +204,7 @@ ms.locfileid: "90809350"
 
 4. [ **名前** ] フィールドに「 **FileCopyPDA**」と入力し、[ **OK** ] をクリックします。
 
-5. **ソリューションエクスプローラー**で、 **FileCopyPDA**プロジェクトを選択します。
+5. **ソリューションエクスプローラー** で、 **FileCopyPDA** プロジェクトを選択します。
 
 6. メニュー バーで、 **[プロジェクト]**  >  **[参照の追加]** の順に選択します。
 
@@ -221,39 +223,39 @@ ms.locfileid: "90809350"
 
 ### <a name="build-and-publish-the-solution"></a>ソリューションをビルドし、発行します。
 
-1. **ソリューションエクスプローラー**で、 **FileCopyPDA**プロジェクトのショートカットメニューを開き、[**ビルド**] を選択します。
+1. **ソリューションエクスプローラー** で、 **FileCopyPDA** プロジェクトのショートカットメニューを開き、[**ビルド**] を選択します。
 
-2. **Excelworkbook**プロジェクトのショートカットメニューを開き、[**ビルド**] を選択します。
+2. **Excelworkbook** プロジェクトのショートカットメニューを開き、[**ビルド**] を選択します。
 
-3. **Excelworkbook**プロジェクトのショートカットメニューを開き、[参照の**追加**] を選択します。
+3. **Excelworkbook** プロジェクトのショートカットメニューを開き、[参照の **追加**] を選択します。
 
 4. [ **参照の追加** ] ダイアログボックスで、[ **プロジェクト** ] タブを選択し、[ **FileCopyPDA**] を選択して、[ **OK** ] をクリックします。
 
-5. **ソリューションエクスプローラー**で、 **excelworkbook**プロジェクトを選択します。
+5. **ソリューションエクスプローラー** で、 **excelworkbook** プロジェクトを選択します。
 
-6. メニューバーで、[**プロジェクト**] [新しいフォルダー] の順に選択し  >  **New Folder**ます。
+6. メニューバーで、[**プロジェクト**] [新しいフォルダー] の順に選択し  >  **New Folder** ます。
 
-7. **データ**を入力し、 **enter**キーを押します。
+7. **データ** を入力し、 **enter** キーを押します。
 
-8. **ソリューションエクスプローラー**で、[**データ**] フォルダーを選択します。
+8. **ソリューションエクスプローラー** で、[**データ**] フォルダーを選択します。
 
-9. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  **Add Existing Item**ます。
+9. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  **Add Existing Item** ます。
 
 10. [ **既存項目の追加** ] ダイアログボックスで、 **excelworkbook** プロジェクトの出力ディレクトリを参照し、 **ExcelWorkbook.xlsx** ファイルを選択して、[ **追加** ] ボタンをクリックします。
 
-11. **ソリューションエクスプローラー** **ExcelWorkbook.xlsx**ファイルを選択します。
+11. **ソリューションエクスプローラー** **ExcelWorkbook.xlsx** ファイルを選択します。
 
-12. [ **プロパティ** ] ウィンドウで、[ **ビルドアクション** ] プロパティを [ **コンテンツ** ] に、[ **出力ディレクトリにコピー** ] プロパティを [ **新しい場合はコピー**する] に変更します。
+12. [ **プロパティ** ] ウィンドウで、[ **ビルドアクション** ] プロパティを [ **コンテンツ** ] に、[ **出力ディレクトリにコピー** ] プロパティを [ **新しい場合はコピー** する] に変更します。
 
      これらの手順を完了すると、プロジェクトは次の図のようになります。
 
      ![配置後アクションのプロジェクト構造。](../vsto/media/vsto-postdeployment.png "配置後アクションのプロジェクト構造。")
 
-13. **Excelworkbook**プロジェクトを発行します。
+13. **Excelworkbook** プロジェクトを発行します。
 
 ### <a name="modify-the-application-manifest"></a>アプリケーション マニフェストの変更
 
-1. **エクスプローラー**を使用して、ソリューションディレクトリ**c:\ publish**を開きます。
+1. **エクスプローラー** を使用して、ソリューションディレクトリ **c:\ publish** を開きます。
 
 2. [ **アプリケーションファイル** ] フォルダーを開き、ソリューションの最新の発行バージョンに対応するフォルダーを開きます。
 
@@ -280,9 +282,9 @@ ms.locfileid: "90809350"
 
 ### <a name="re-sign-the-application-and-deployment-manifests"></a>アプリケーション マニフェストと配置マニフェストへの再署名
 
-1. **%USERPROFILE%\Documents\Visual Studio 2013 \ Projects\ExcelWorkbook\ExcelWorkbook**フォルダーで、 **ExcelWorkbook_TemporaryKey .pfx**証明書ファイルをコピーし、 *publishfolder* **\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_フォルダーに貼り付けます。
+1. **%USERPROFILE%\Documents\Visual Studio 2013 \ Projects\ExcelWorkbook\ExcelWorkbook** フォルダーで、 **ExcelWorkbook_TemporaryKey .pfx** 証明書ファイルをコピーし、 *publishfolder* **\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_ フォルダーに貼り付けます。
 
-2. Visual Studio コマンドプロンプトを開き、ディレクトリを**c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_フォルダー (たとえば**c:\publish\Application Files \ ExcelWorkbook_1_0_0_4**) に変更します。
+2. Visual Studio コマンドプロンプトを開き、ディレクトリを **c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentPublishedVersion_ フォルダー (たとえば **c:\publish\Application Files \ ExcelWorkbook_1_0_0_4**) に変更します。
 
 3. 次のコマンドを実行し、変更したアプリケーション マニフェストに署名します。
 
@@ -300,11 +302,11 @@ ms.locfileid: "90809350"
     ```
 
     > [!NOTE]
-    > 前の例では、MostRecentVersionNumber を、ソリューションの最後に発行されたバージョンのバージョン番号 ( **1_0_0_4**など) に置き換えます。
+    > 前の例では、MostRecentVersionNumber を、ソリューションの最後に発行されたバージョンのバージョン番号 ( **1_0_0_4** など) に置き換えます。
 
      "ExcelWorkbook.vsto 正常に署名されました" というメッセージが表示されます。
 
-5. *Excelworkbook の .vsto*ファイルを**c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentVersionNumber_ディレクトリにコピーします。
+5. *Excelworkbook の .vsto* ファイルを **c:\publish\Application Files\ExcelWorkbook** \_ _MostRecentVersionNumber_ ディレクトリにコピーします。
 
 ## <a name="put-the-document-of-a-solution-onto-a-server-thats-running-sharepoint-document-level-customizations-only"></a><a name="SharePoint"></a> SharePoint を実行しているサーバーにソリューションのドキュメントを配置する (ドキュメントレベルのカスタマイズのみ)
  SharePoint を使用して、エンド ユーザーに対してドキュメント レベルのカスタマイズを発行できます。 ユーザーが SharePoint サイトにアクセスし、ドキュメントを開くと、ランタイムが自動的に共有ネットワーク フォルダーからユーザーのローカル コンピューターにソリューションをインストールします。 ソリューションをローカル インストールした後、ドキュメントをデスクトップなど別の場所にコピーした場合でも、カスタマイズは引き続き機能します。
@@ -329,7 +331,7 @@ ms.locfileid: "90809350"
 
         4. [ **パス** ] ボックスに、アップロードしたドキュメントを含む SharePoint ドキュメントライブラリの URL (など) を入力し *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName* ます。
 
-             既定の Web ページの名前 ( *default.aspx* や *AllItems*など) は追加しないでください。
+             既定の Web ページの名前 ( *default.aspx* や *AllItems* など) は追加しないでください。
 
         5. [ **この場所のサブフォルダーも信頼** する] チェックボックスをオンにし、[ **OK** ] をクリックします。
 
@@ -342,18 +344,18 @@ ms.locfileid: "90809350"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- ツールがその場所にない場合は、 **HKEY_LOCAL_MACHINE \Software\microsoft\vsto runtime の \Software\wow6432node\microsoft\vsto V4/インストーラパス** または **HKEY_LOCAL_MACHINE runtime** の文字列キーを使用して、そのツールへのパスを見つけることができます。
+ ツールがその場所にない場合は、 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** または **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** レジストリキーを使用して、そのツールへのパスを見つけることができます。
 
- *VSTOinstaller.exe*では、次のパラメーターを使用できます。
+ *VSTOinstaller.exe* では、次のパラメーターを使用できます。
 
 | パラメーター | 定義 |
 |------------------| - |
-| /Install または /I | ソリューションをインストールします。 このオプションの後に配置マニフェストのパスを指定する必要があります。 ローカル コンピューター上のパス、汎用名前付けの規則 (UNC) のファイル共有を指定できます。 ローカルパス (*C:\FolderName\PublishFolder*)、相対パス (* \\ 発行*)、または完全修飾の場所 (* \\ \ServerName\FolderName*または http://<em>ServerName/FolderName</em>) を指定できます。 |
-| /Uninstall または /U | ソリューションをアンインストールします。 このオプションの後に配置マニフェストのパスを指定する必要があります。 ローカル コンピューター上のパス、UNC ファイル共有を指定できます。 ローカルパス (*c:\FolderName\PublishFolder*)、相対パス (* \\ 発行*)、または完全修飾の場所 (* \\ \ServerName\FolderName*または http://<em>ServerName/FolderName</em>) を指定できます。 |
+| /Install または /I | ソリューションをインストールします。 このオプションの後に配置マニフェストのパスを指定する必要があります。 ローカル コンピューター上のパス、汎用名前付けの規則 (UNC) のファイル共有を指定できます。 ローカルパス (*C:\FolderName\PublishFolder*)、相対パス (*\\ 発行*)、または完全修飾の場所 (*\\ \ServerName\FolderName* または http://<em>ServerName/FolderName</em>) を指定できます。 |
+| /Uninstall または /U | ソリューションをアンインストールします。 このオプションの後に配置マニフェストのパスを指定する必要があります。 ローカル コンピューター上のパス、UNC ファイル共有を指定できます。 ローカルパス (*c:\FolderName\PublishFolder*)、相対パス (*\\ 発行*)、または完全修飾の場所 (*\\ \ServerName\FolderName* または http://<em>ServerName/FolderName</em>) を指定できます。 |
 | /Silent または /S | ユーザーに入力を要求したりメッセージを表示したりすることなくソリューションをインストールまたはアンインストールします。 信頼プロンプトが必要な場合、カスタマイズはインストールまたは更新されません。 |
 | /Help または /? | ヘルプ情報を表示します。 |
 
- *VSTOinstaller.exe*を実行すると、次のエラーコードが表示される場合があります。
+ *VSTOinstaller.exe* を実行すると、次のエラーコードが表示される場合があります。
 
 |エラー コード|定義|
 |----------------|----------------|
@@ -370,7 +372,7 @@ ms.locfileid: "90809350"
 |-500|ソリューションをインストールまたはアンインストールできなかったこと、または配置マニフェストをダウンロードできなかったことが原因で、操作は取り消されました。|
 
 ## <a name="publish-an-update"></a><a name="Update"></a> 更新プログラムの発行
- ソリューションを更新するには、 **プロジェクトデザイナー** または **発行ウィザード**を使用してもう一度発行し、更新したソリューションをインストール場所にコピーします。 インストール場所にファイルをコピーするときに、前のファイルを確実に上書きしてください。
+ ソリューションを更新するには、 **プロジェクトデザイナー** または **発行ウィザード** を使用してもう一度発行し、更新したソリューションをインストール場所にコピーします。 インストール場所にファイルをコピーするときに、前のファイルを確実に上書きしてください。
 
  次回ソリューションが更新プログラムを確認するときに、新しいバージョンが自動的に検出され、読み込まれます。
 
@@ -390,7 +392,7 @@ ms.locfileid: "90809350"
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>セットアップ プログラムのインストール パスを変更するには
 
-1. **コマンドプロンプト**ウィンドウを開き、ディレクトリをインストールフォルダーに変更します。
+1. **コマンドプロンプト** ウィンドウを開き、ディレクトリをインストールフォルダーに変更します。
 
 2. セットアップ プログラムを実行します。このとき、文字列として新しいインストール パスを表す `/url` パラメーターを指定します。
 
@@ -445,7 +447,7 @@ ms.locfileid: "90809350"
 
 4. このサブフォルダー内の配置マニフェストをトップレベルの発行フォルダーにコピーします。
 
-     たとえば、 **outlookaddin1.dll**という名前のソリューションをバージョン1.0.0.1 からバージョン1.0.0.0 にロールバックするには、 **OutlookAddIn1_1_0_0_0**フォルダーから**outlookaddin1.dll**ファイルをコピーします。 最上位レベルの publish フォルダーにファイルを貼り付けて、既に存在していた **OutlookAddIn1_1_0_0_1** のバージョン固有の配置マニフェストを上書きします。
+     たとえば、 **outlookaddin1.dll** という名前のソリューションをバージョン1.0.0.1 からバージョン1.0.0.0 にロールバックするには、 **OutlookAddIn1_1_0_0_0** フォルダーから **outlookaddin1.dll** ファイルをコピーします。 最上位レベルの publish フォルダーにファイルを貼り付けて、既に存在していた **OutlookAddIn1_1_0_0_1** のバージョン固有の配置マニフェストを上書きします。
 
      次の図に、この例に対応する発行フォルダーの構造を示します。
 
@@ -456,7 +458,7 @@ ms.locfileid: "90809350"
 > [!NOTE]
 > ローカル データは、ソリューションの 1 つ前のバージョンについてのみ保存されます。 2つのバージョンをロールバックした場合、ローカルデータは保持されません。 ローカルデータの詳細については、「 [ClickOnce アプリケーションでローカルデータおよびリモートデータにアクセス](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [Office ソリューションの発行](../vsto/deploying-an-office-solution-by-using-clickonce.md)

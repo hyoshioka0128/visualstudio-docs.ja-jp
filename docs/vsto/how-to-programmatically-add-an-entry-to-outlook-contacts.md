@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって Outlook の連絡先にエントリを追加する'
+description: プログラムを使用して Outlook の連絡先にエントリを追加する方法について説明します。 この例では、新しい連絡先を作成し、新しい連絡先にデータを入力します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6ec332e257533d810d61282c348cc71ca317b22
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 981fcbbb6398a6b21cebf598c46cf7a738d2020e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583815"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844674"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>方法: プログラムによって Outlook の連絡先にエントリを追加する
   この例では、新しい連絡先を作成し、新しい連絡先にデータを入力します。

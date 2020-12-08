@@ -1,5 +1,7 @@
 ---
 title: '方法: オフラインまたはサーバーで使用するデータをキャッシュする'
+description: データ項目がドキュメントにキャッシュされるようにマークして、オフラインで使用できるようにします。 これにより、ドキュメント内のデータを他のコードによって操作できるようになります。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546186"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844323"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>方法: オフラインまたはサーバーで使用するデータをキャッシュする
   データ項目がドキュメントにキャッシュされるようにマークして、オフラインで使用できるようにすることができます。 これにより、ドキュメントがサーバーに格納されている場合に、ドキュメント内のデータを他のコードで操作することも可能になります。
@@ -32,7 +34,7 @@ ms.locfileid: "85546186"
  データ項目がコード内で宣言されている場合、またはを使用している場合は、[ <xref:System.Data.DataSet> **プロパティ** ] ウィンドウでプロパティを設定することにより、データ項目がキャッシュされるようにマークすることができます。 またはではないデータ項目をキャッシュする場合 <xref:System.Data.DataSet> は <xref:System.Data.DataTable> 、ドキュメントにキャッシュされている条件を満たしていることを確認します。 詳細については、「 [データのキャッシュ](../vsto/caching-data.md)」を参照してください。
 
 > [!NOTE]
-> Cache および**WithEvents**とマークされている Visual Basic を使用**して作成**されたデータセット ([**データソース**] ウィンドウまたは**CacheInDocument**プロパティが**True**に設定されている**ツールボックス**からドラッグしたデータセットを含む) には、キャッシュ内の名前の先頭にアンダースコアが付きます。 たとえば、データセットを作成して **Customers**という名前を指定した場合、その <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 名前はキャッシュに **_Customers** されます。 を使用してこのキャッシュされた項目にアクセスする場合は <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 、**顧客**の代わりに **_Customers**を指定する必要があります。
+> Cache および **WithEvents** とマークされている Visual Basic を使用 **して作成** されたデータセット ([**データソース**] ウィンドウまたは **CacheInDocument** プロパティが **True** に設定されている **ツールボックス** からドラッグしたデータセットを含む) には、キャッシュ内の名前の先頭にアンダースコアが付きます。 たとえば、データセットを作成して **Customers** という名前を指定した場合、その <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 名前はキャッシュに **_Customers** されます。 を使用してこのキャッシュされた項目にアクセスする場合は <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 、**顧客** の代わりに **_Customers** を指定する必要があります。
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>コードを使用してドキュメントのデータをキャッシュするには
 
@@ -53,7 +55,7 @@ ms.locfileid: "85546186"
 
 2. データセットのインスタンスをまだ作成していない場合は作成し、デザイナーでインスタンスを選択します。
 
-3. [ **プロパティ** ] ウィンドウで、 **CacheInDocument** プロパティを **True**に設定します。
+3. [ **プロパティ** ] ウィンドウで、 **CacheInDocument** プロパティを **True** に設定します。
 
      詳細については、「 [Office プロジェクトのプロパティ](../vsto/properties-in-office-projects.md)」を参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションのアプリケーションマニフェストと配置マニフェスト
+description: アプリケーションマニフェストは、Office ソリューションがアセンブリを検索および更新するために使用する情報を提供する XML ファイルです。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9ca8cf2774b7a24ec3bef40418b6a2157bf0f992
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584439"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844713"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office ソリューションのアプリケーションマニフェストと配置マニフェスト
   アプリケーション マニフェストは、Office ソリューションがアセンブリを特定して更新する際に使用する情報を提供する XML ファイルです。 アプリケーション マニフェストは配置マニフェストと共に使用できます。配置マニフェストは、サーバーに保存されている XML ファイルです。最新バージョンのアプリケーション マニフェストとアセンブリを特定するために必要な情報を提供します。
@@ -36,7 +38,7 @@ ms.locfileid: "91584439"
 ## <a name="create-application-and-deployment-manifests"></a>アプリケーションマニフェストと配置マニフェストの作成
  アプリケーション マニフェストは、ビルド プロセスの一環として自動的に作成されます。 ドキュメントレベルのプロジェクトをビルドするたびに、配置マニフェストの場所はカスタム ドキュメント プロパティとしてドキュメントに埋め込まれます。 VSTO アドインの場合、配置マニフェストの場所はレジストリに格納されます。
 
- **発行ウィザード**の詳細については、「 [ClickOnce を使用した Office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)」を参照してください。
+ **発行ウィザード** の詳細については、「 [ClickOnce を使用した Office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)」を参照してください。
 
  Office ソリューションでのマニフェストの動作の詳細については、「 [office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 

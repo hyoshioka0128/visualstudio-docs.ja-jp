@@ -1,5 +1,7 @@
 ---
 title: Office プロジェクトのデバッグ
+description: 他の Visual Studio プロジェクトで使用するのと同じ Microsoft Visual Studio ツールを使用して Office プロジェクトをデバッグする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189704"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845636"
 ---
 # <a name="debug-office-projects"></a>Office プロジェクトのデバッグ
   Office プロジェクトのデバッグは、他の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトに使用するのと同じ Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tools を使用して実行できます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ブレークポイントの挿入や [ **ローカル** ] ウィンドウでの変数の表示など、デバッガーの機能は、Office プロジェクトをデバッグするときにも使用できます。 デバッグツールの詳細について [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は、「 [Visual Studio でのデバッグ](../debugger/debugger-feature-tour.md)」を参照してください。
@@ -63,7 +65,7 @@ ms.locfileid: "73189704"
  既定では、Visual Studio で Office プロジェクトの Just-In-Time デバッグ エラーも表示されませんが、発生したエラーを表示できるように、この機能を有効にすることができます。 詳細については、「 [Visual Studio での just-in-time デバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)」を参照してください。
 
 ## <a name="command-line-arguments"></a>コマンド ライン引数
- [**デバッグ**] プロパティページの [**開始] アクション**が [**プロジェクトの開始**] に設定されている場合、開始オプションとしてコマンドライン引数を指定した場合でも、Visual Studio はプロジェクトのデバッグ時にコマンドライン引数を使用しません。 デバッグの開始時にコマンドライン引数を使用する場合は、[**プロジェクトの開始**] 以外の**開始アクション**を選択する必要があります。
+ [**デバッグ**] プロパティページの [**開始] アクション** が [**プロジェクトの開始**] に設定されている場合、開始オプションとしてコマンドライン引数を指定した場合でも、Visual Studio はプロジェクトのデバッグ時にコマンドライン引数を使用しません。 デバッグの開始時にコマンドライン引数を使用する場合は、[**プロジェクトの開始**] 以外の **開始アクション** を選択する必要があります。
 
 ## <a name="source-control"></a>ソース管理
  デバッグ プロパティは、ソース管理で複数のユーザー間では共有されません。 Visual Basic プロジェクトや Visual C# プロジェクトでは、デバッグ プロパティはユーザー固有のファイル (*ProjectName*.vbproj.user または *ProjectName*.csproj.user) に格納されます。このファイルはソース管理されません。 複数のユーザーがデバッグを実行する場合は、各自が手動でデバッグ プロパティを入力する必要があります。
@@ -85,7 +87,7 @@ ms.locfileid: "73189704"
  Office アプリケーションが Visual Studio の Office 開発ツールを使用して作成された VSTO アドインをハードに無効にすると、アプリケーションはエラーの原因となった VSTO アドインのみを無効にします。 Visual Studio の Office 開発ツールを使用してその Office アプリケーション用に作成されたその他の VSTO アドインの読み込みは続行されます。
 
 ### <a name="soft-disabling"></a>ソフト無効化
- ソフトな無効化は、VSTO アドインによってエラーが発生したが、アプリケーションが予期せずに終了するということがなかったという場合に発生する可能性があります。 たとえば、 <xref:Microsoft.Office.Tools.AddIn.Startup> イベント ハンドラーの実行中に VSTO アドインによってハンドルされない例外がスローされた場合に、アプリケーションによってそのアドインがソフトに無効化されることがあります。 VSTO アドインがソフトに無効化されると、アプリケーションの [ **アクティブでないアプリケーションアドイン** ] の一覧に表示され、アプリケーションは、vsto アドインの **LoadBehavior** レジストリエントリの値を変更して、アンロードされたことを示します。 **LoadBehavior**レジストリエントリの詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
+ ソフトな無効化は、VSTO アドインによってエラーが発生したが、アプリケーションが予期せずに終了するということがなかったという場合に発生する可能性があります。 たとえば、 <xref:Microsoft.Office.Tools.AddIn.Startup> イベント ハンドラーの実行中に VSTO アドインによってハンドルされない例外がスローされた場合に、アプリケーションによってそのアドインがソフトに無効化されることがあります。 VSTO アドインがソフトに無効化されると、アプリケーションの [ **アクティブでないアプリケーションアドイン** ] の一覧に表示され、アプリケーションは、vsto アドインの **LoadBehavior** レジストリエントリの値を変更して、アンロードされたことを示します。 **LoadBehavior** レジストリエントリの詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
 
 ## <a name="troubleshoot-installation-errors-by-using-the-event-viewer"></a>イベントビューアーを使用したインストールエラーのトラブルシューティング
  Office ソリューションのインストール時またはアンインストール時にスローされたすべての例外のメッセージは、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] によって Windows のイベント ビューアーに書き込まれます。 これらのメッセージを使用して、インストールと配置の問題を解決できます。
@@ -97,7 +99,7 @@ ms.locfileid: "73189704"
 
  エラーをログ ファイルに書き込むには、 `VSTO_LOGALERTS` という環境変数を作成し、1 に設定します。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] によって、VSTO アドインの配置マニフェストを含むフォルダーまたはカスタマイズに関連付けられている文書またはブックを含むフォルダーにログ ファイルが作成されます。 失敗した場合は、によって [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ローカルの *% TEMP%* フォルダーにログファイルが作成されます。 アプリケーション レベルの VSTO アドインの場合、既定の名前は *add-in name*.vsto.log です。 ドキュメント レベルのプロジェクトの場合、ログ ファイルの名前は *document name*.*extension*.log です (例: ExcelWorkbook1.xlsx.log)。 エラーのログ記録を停止するには、この環境変数を 0 (ゼロ) に設定します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office ソリューションのビルド](../vsto/building-office-solutions.md)
 - [方法: 無効になっている VSTO アドインを再度有効にする](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)

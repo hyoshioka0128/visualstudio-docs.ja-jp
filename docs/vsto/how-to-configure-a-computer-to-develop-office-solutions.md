@@ -1,5 +1,7 @@
 ---
 title: '方法: Office ソリューションを開発するようにコンピューターを構成する'
+description: Visual Studio で Microsoft Office 開発者ツールを使用できるように開発用コンピューターを構成する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844310"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>方法: Office ソリューションを開発するようにコンピューターを構成する
   Visual Studio の Microsoft Office Developer Tools を使用できるように開発コンピューターを構成するには、次のトピックの手順を実行します。 これらの手順を実行するには、開発コンピューターの管理特権を保持している必要があります。

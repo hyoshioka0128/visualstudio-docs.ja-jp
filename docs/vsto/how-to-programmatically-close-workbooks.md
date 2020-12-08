@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってブックを閉じる'
+description: 作業中のブックを閉じる方法、またはプログラムによって閉じるブックを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d3fe0f929632bd7021def9f6597182aa8fea87b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b487054e4e8a12c2479ddfc167ca0b8e90285a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547499"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846065"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>方法: プログラムによってブックを閉じる
   作業中のブックを閉じたり、ブックを指定して閉じたりすることができます。

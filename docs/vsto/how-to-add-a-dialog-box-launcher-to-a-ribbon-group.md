@@ -1,5 +1,7 @@
 ---
 title: '方法: リボングループにダイアログボックスランチャーを追加する'
+description: ダイアログボックスランチャーをリボン上の任意のグループに追加して、関連するダイアログボックスや、グループに関連するその他のオプションを提供する作業ウィンドウを開くことができます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29b260929d0478749296496db5b454326497d3ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541621"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844934"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>方法: リボングループにダイアログボックスランチャーを追加する
   ダイアログボックスランチャーは、リボン上の任意のグループに追加できます。 ダイアログボックスランチャーは、グループに表示される小さいアイコンです。 ユーザーはこのアイコンをクリックして、関連するダイアログボックスや、グループに関連するその他のオプションを提供する作業ウィンドウを開くことができます。
@@ -27,7 +29,7 @@ ms.locfileid: "85541621"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>リボングループにダイアログボックスランチャーを追加するには
 
-1. **ソリューションエクスプローラー**でリボンコードファイル (*.vb*または *.cs*ファイル) を選択します。
+1. **ソリューションエクスプローラー** でリボンコードファイル (*.vb* または *.cs* ファイル) を選択します。
 
 2. [ **表示** ] メニューの [ **デザイナー**] をクリックします。
 

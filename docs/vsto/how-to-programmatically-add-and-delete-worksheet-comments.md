@@ -1,5 +1,7 @@
 ---
 title: '方法: ワークシートのコメントをプログラムによって追加および削除する'
+description: Microsoft Office Excel ワークシートでコメントをプログラムによって追加および削除する方法について説明します。 コメントは、複数のセルの範囲ではなく、1つのセルにのみ追加できます。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c87851afb70e9207f9a24fc18826a4c2b218ec08
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583802"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844609"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>方法: ワークシートのコメントをプログラムによって追加および削除する
   Microsoft Office Excel ワークシート内のコメントは、プログラムを使用して追加、削除できます。 コメントは、1 つのセルにのみ追加でき、複数のセル範囲には追加できません。
