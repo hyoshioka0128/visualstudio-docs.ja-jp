@@ -1,5 +1,7 @@
 ---
 title: Vspackage Add User Interface Elements |Microsoft Docs
+description: Vspackage が、メニュー、ツールバー、ツールウィンドウなどのユーザーインターフェイス (UI) 要素を Visual Studio に追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649596"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761089"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage のユーザーインターフェイス要素の追加方法
 VSPackage を使用すると、ユーザーインターフェイス (UI) 要素 (メニュー、ツールバー、ツールウィンドウなど) を、 *vsct* ファイルを使用して Visual Studio に追加できます。
@@ -36,7 +38,7 @@ UI 要素のデザインガイドラインについては、「 [Visual Studio �
 すべてのコマンドは、そのグループ内の唯一の子であっても、親としてグループを持つ必要があります。 すべての標準メニューにも親グループが必要です。 ツールバーとツールウィンドウは、独自の親として機能します。 グループは、メインの Visual Studio のメニューバー、または任意のメニュー、ツールバー、またはツールウィンドウの親としてを持つことができます。
 
 ### <a name="how-items-are-defined"></a>項目の定義方法
-*Vsct*ファイルは XML 形式で書式設定されます。 パッケージの UI 要素を定義し、それらの要素が IDE に表示される場所を決定します。 パッケージ内のすべてのメニュー、グループ、またはコマンドには、最初にセクションの GUID と ID が割り当てられ `Symbols` ます。 他のすべての *vsct* ファイルでは、各メニュー、コマンド、およびグループが GUID と ID の組み合わせによって識別されます。 次の例は、 `Symbols` テンプレートで **メニューコマンド** が選択されたときに Visual Studio パッケージテンプレートによって生成される一般的なセクションを示しています。
+*Vsct* ファイルは XML 形式で書式設定されます。 パッケージの UI 要素を定義し、それらの要素が IDE に表示される場所を決定します。 パッケージ内のすべてのメニュー、グループ、またはコマンドには、最初にセクションの GUID と ID が割り当てられ `Symbols` ます。 他のすべての *vsct* ファイルでは、各メニュー、コマンド、およびグループが GUID と ID の組み合わせによって識別されます。 次の例は、 `Symbols` テンプレートで **メニューコマンド** が選択されたときに Visual Studio パッケージテンプレートによって生成される一般的なセクションを示しています。
 
 ```xml
 <Symbols>
@@ -88,7 +90,7 @@ UI 要素のデザインガイドラインについては、「 [Visual Studio �
 
 - `type`メニューをメニューの一種として、またはツールバーとして IDE に表示するかどうかを指定する属性です。
 
-- **コマンド**ウィンドウでメニューにアクセスするために使用される名前を指定する、 [buttontext 要素](../../extensibility/buttontext-element.md)を含む[Strings 要素](../../extensibility/strings-element.md)。この[要素は、](../../extensibility/commandname-element.md)IDE のメニューのタイトルを指定します。
+- **コマンド** ウィンドウでメニューにアクセスするために使用される名前を指定する、 [buttontext 要素](../../extensibility/buttontext-element.md)を含む [Strings 要素](../../extensibility/strings-element.md)。この [要素は、](../../extensibility/commandname-element.md)IDE のメニューのタイトルを指定します。
 
 - 省略可能なフラグ。 [Commandflag 要素](../../extensibility/command-flag-element.md)は、IDE での外観や動作を変更するためにメニュー定義に表示されることがあります。
 

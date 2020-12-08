@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでの非表示テキストサポートの提供
+description: エディターで制御されるか、クライアントが制御する隠しテキスト領域を追加することによって、従来の言語サービスで非表示テキストのサポートを提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707926"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761310"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスで非表示テキストのサポートを提供する
 アウトライン領域だけでなく、非表示のテキスト領域を作成することもできます。 非表示のテキスト領域は、クライアントコントロールまたはエディターで制御でき、テキスト領域を完全に非表示にするために使用されます。 エディターでは、非表示領域が水平線として表示されます。 この例として、HTML エディターの **スクリプトのみ** のビューがあります。

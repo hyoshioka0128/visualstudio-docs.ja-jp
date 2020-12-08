@@ -1,5 +1,7 @@
 ---
 title: 入れ子になったプロジェクトのコマンド処理の実装 |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) で入れ子になったプロジェクトのコマンド処理を実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707608"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761154"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>入れ子になったプロジェクト向けのコマンド処理の実装
 IDE では、およびインターフェイスを介して渡されたコマンドを <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 入れ子になったプロジェクトに渡すことができます。また、親プロジェクトはコマンドをフィルター処理またはオーバーライドできます。

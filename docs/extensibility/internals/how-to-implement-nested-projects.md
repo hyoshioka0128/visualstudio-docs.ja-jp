@@ -1,5 +1,7 @@
 ---
 title: '方法: 入れ子になったプロジェクトを実装する |Microsoft Docs'
+description: ソリューションおよび親プロジェクトからのイベントを発生させてプロジェクト階層を構築することにより、Visual Studio で入れ子になったプロジェクトを実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905344"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761338"
 ---
 # <a name="how-to-implement-nested-projects"></a>方法: 入れ子になったプロジェクトを実装する
 
@@ -27,7 +29,7 @@ ms.locfileid: "85905344"
 1. 統合開発環境 (IDE: integrated development environment) は、インターフェイスを呼び出すことによって、親プロジェクトのプロジェクトファイルとスタートアップ情報を読み込み <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> ます。 親プロジェクトが作成され、ソリューションに追加されます。
 
     > [!NOTE]
-    > この時点では、子プロジェクトを作成する前に親プロジェクトを作成する必要があるため、親プロジェクトが入れ子になったプロジェクトを作成するプロセスは早すぎます。 このシーケンスに従うと、親プロジェクトは設定を子プロジェクトに適用でき、子プロジェクトは必要に応じて親プロジェクトから情報を取得できます。 このシーケンスは、ソースコード管理 (SCC) や **ソリューションエクスプローラー**などのクライアントによってで必要とされる場合にあります。
+    > この時点では、子プロジェクトを作成する前に親プロジェクトを作成する必要があるため、親プロジェクトが入れ子になったプロジェクトを作成するプロセスは早すぎます。 このシーケンスに従うと、親プロジェクトは設定を子プロジェクトに適用でき、子プロジェクトは必要に応じて親プロジェクトから情報を取得できます。 このシーケンスは、ソースコード管理 (SCC) や **ソリューションエクスプローラー** などのクライアントによってで必要とされる場合にあります。
 
      親プロジェクトは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> 入れ子になった (子) プロジェクトまたはプロジェクトを作成する前に、IDE によってメソッドが呼び出されるまで待機する必要があります。
 

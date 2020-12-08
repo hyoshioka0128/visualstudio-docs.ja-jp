@@ -1,5 +1,7 @@
 ---
 title: '方法: 従来の言語サービスでアウトラインをサポートする |Microsoft Docs'
+description: 従来の言語サービスで、テキストのさまざまな領域を展開したり折りたたんだりするためのサポートを提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707915"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761323"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>方法: 従来の言語サービスでのアウトラインのサポート
 アウトラインは、テキストのさまざまな領域を展開したり折りたたんだりするために使用されます。 アウトラインの使用方法は、言語によって異なる方法で定義できます。 詳細については、「[アウトライン](../../ide/outlining.md)」を参照してください。
@@ -36,7 +38,7 @@ ms.locfileid: "80707915"
 2. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>新しいアウトライン領域を追加するには、現在のアウトラインセッションオブジェクトでを呼び出します。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- ユーザーが**アウトライン**メニューの [**定義を折りたたむ] を**選択すると、IDE は <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 言語サービスでを呼び出します。
+ ユーザーが **アウトライン** メニューの [**定義を折りたたむ] を** 選択すると、IDE は <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 言語サービスでを呼び出します。
 
  このメソッドが呼び出されると、IDE は <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> ポインター (テキストバッファーへのポインター) と <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (現在のアウトラインセッションへのポインター) を渡します。
 

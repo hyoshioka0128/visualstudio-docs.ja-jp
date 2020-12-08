@@ -1,5 +1,7 @@
 ---
 title: レガシ言語の実装 Service2 |Microsoft Docs
+description: Managed package framework (MPF) を使用して、拡張言語サービス機能をサポートする従来の言語サービスを実装する方法について説明します。 第2部。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238700"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761141"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>従来の言語サービスの実装2
 Managed package framework (MPF) を使用して言語サービスを実装するには、クラスからクラスを派生させ、 <xref:Microsoft.VisualStudio.Package.LanguageService> 次の抽象メソッドとプロパティを実装する必要があります。
@@ -193,11 +195,11 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>LanguageService クラス内
 
-|Method|返されるクラス|説明|
+|メソッド|返されるクラス|説明|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|テキストビューへのカスタム追加をサポートします。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|カスタムドキュメントプロパティをサポートします。|
-|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|**ナビゲーションバー**をサポートする場合は。|
+|<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A>|<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>|**ナビゲーションバー** をサポートする場合は。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionFunction>|コードスニペットテンプレート内の関数をサポートする場合は。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A>|<xref:Microsoft.VisualStudio.Package.ExpansionProvider>|コードスニペットをサポートする場合は。通常、このメソッドはオーバーライドされません。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateParseRequest%2A>|<xref:Microsoft.VisualStudio.Package.ParseRequest>|構造体のカスタマイズをサポートする <xref:Microsoft.VisualStudio.Package.ParseRequest> 場合は。通常、このメソッドはオーバーライドされません。|
@@ -210,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>ソースクラス内
 
-|Method|返されるクラス|説明|
+|メソッド|返されるクラス|説明|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|IntelliSense 入力候補一覧の表示をカスタマイズする場合 (通常はオーバーライドされません)。|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|エラー一覧タスク一覧のマーカーをサポートするには、具体的には、ファイルを開いてエラーの原因となった行にジャンプする以外にも機能がサポートされます。|
@@ -220,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>AuthoringScope クラス内
 
-|Method|返されるクラス|説明|
+|メソッド|返されるクラス|説明|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|メンバーや型などの宣言の一覧を提供します。 このメソッドは実装する必要がありますが、null 値を返すことができます。 このメソッドが有効なオブジェクトを返す場合、オブジェクトはクラスのインスタンスである必要があり <xref:Microsoft.VisualStudio.Package.Declarations> ます。|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|指定されたコンテキストのメソッドシグネチャの一覧を提供します。 このメソッドは実装する必要がありますが、null 値を返すことができます。 このメソッドが有効なオブジェクトを返す場合、オブジェクトはクラスのインスタンスである必要があり <xref:Microsoft.VisualStudio.Package.Methods> ます。|
@@ -232,10 +234,10 @@ namespace TestLanguagePackage
  IntelliSense 入力候補一覧の場合、イメージインデックスは、クラスのメソッドの各項目に対して指定され <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> <xref:Microsoft.VisualStudio.Package.Declarations> ます。イメージインデックスを指定する場合は、これをオーバーライドする必要があります。 メソッドから返される値 <xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A> は、クラスコンストラクターに指定されたイメージリストのインデックスであり、クラスの <xref:Microsoft.VisualStudio.Package.CompletionSet> メソッドから返されるイメージリストと同じです <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> (クラスのメソッドをオーバーライドして別の <xref:Microsoft.VisualStudio.Package.LanguageService> イメージリストを指定する場合は、に使用するイメージリストを変更でき <xref:Microsoft.VisualStudio.Package.CompletionSet> <xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A> <xref:Microsoft.VisualStudio.Package.Source> ます)。
 
 ### <a name="images-used-in-the-navigation-bar"></a>ナビゲーションバーで使用されるイメージ
- **ナビゲーションバー**には、型とメンバーの一覧が表示されます。クイックナビゲーションでは、アイコンを表示できます。 これらのアイコンはクラスのメソッドから取得され、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> **ナビゲーションバー**専用にオーバーライドすることはできません。 コンボボックス内の各項目に使用されるインデックスは、コンボボックスを表すリストがクラスのメソッドに入力されるときに指定され <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ます (「 [従来の言語サービスでのナビゲーションバーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)」を参照してください)。 これらのイメージのインデックスは、通常はバージョンのクラスを使用してパーサーから取得され <xref:Microsoft.VisualStudio.Package.Declarations> ます。 インデックスがどのように取得されるかは、ユーザーによって異なります。
+ **ナビゲーションバー** には、型とメンバーの一覧が表示されます。クイックナビゲーションでは、アイコンを表示できます。 これらのアイコンはクラスのメソッドから取得され、 <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> **ナビゲーションバー** 専用にオーバーライドすることはできません。 コンボボックス内の各項目に使用されるインデックスは、コンボボックスを表すリストがクラスのメソッドに入力されるときに指定され <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> ます (「 [従来の言語サービスでのナビゲーションバーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)」を参照してください)。 これらのイメージのインデックスは、通常はバージョンのクラスを使用してパーサーから取得され <xref:Microsoft.VisualStudio.Package.Declarations> ます。 インデックスがどのように取得されるかは、ユーザーによって異なります。
 
 ### <a name="images-used-in-the-error-list-task-window"></a>[エラー一覧タスク] ウィンドウで使用されるイメージ
- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドパーサー ([従来の言語サービスパーサーとスキャナーを](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)参照) がエラーを検出し、そのエラーをクラスのメソッドに渡すたびに、[ <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink> **エラー一覧**タスク] ウィンドウにエラーが報告されます。 アイコンは、タスクウィンドウに表示される各項目に関連付けることができ、そのアイコンは、クラスのメソッドから返されたものと同じイメージリストから取得され <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 MPF クラスの既定の動作では、エラーメッセージと共に画像が表示されません。 ただし、クラスからクラスを派生させ、メソッドをオーバーライドすることによって、この動作をオーバーライドでき <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> ます。 このメソッドでは、新しいオブジェクトを作成し <xref:Microsoft.VisualStudio.Package.DocumentTask> ます。 オブジェクトを返す前に、オブジェクトのプロパティを使用して <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> <xref:Microsoft.VisualStudio.Package.DocumentTask> イメージのインデックスを設定できます。 これは、次の例のようになります。 `TestIconImageIndex`は、すべてのアイコンを一覧表示し、この例に固有の列挙体です。 言語サービスでアイコンを識別する方法が異なる場合があります。
+ <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドパーサー ([従来の言語サービスパーサーとスキャナーを](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)参照) がエラーを検出し、そのエラーをクラスのメソッドに渡すたびに、[ <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink> **エラー一覧** タスク] ウィンドウにエラーが報告されます。 アイコンは、タスクウィンドウに表示される各項目に関連付けることができ、そのアイコンは、クラスのメソッドから返されたものと同じイメージリストから取得され <xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 MPF クラスの既定の動作では、エラーメッセージと共に画像が表示されません。 ただし、クラスからクラスを派生させ、メソッドをオーバーライドすることによって、この動作をオーバーライドでき <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A> ます。 このメソッドでは、新しいオブジェクトを作成し <xref:Microsoft.VisualStudio.Package.DocumentTask> ます。 オブジェクトを返す前に、オブジェクトのプロパティを使用して <xref:Microsoft.VisualStudio.Shell.Task.ImageIndex%2A> <xref:Microsoft.VisualStudio.Package.DocumentTask> イメージのインデックスを設定できます。 これは、次の例のようになります。 `TestIconImageIndex`は、すべてのアイコンを一覧表示し、この例に固有の列挙体です。 言語サービスでアイコンを識別する方法が異なる場合があります。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

@@ -1,5 +1,7 @@
 ---
 title: 言語サービスでアウトラインサポートを提供する |Microsoft Docs
+description: エディターで制御されるアウトライン領域とクライアントコントロールのアウトライン領域を追加することによって、従来の言語サービスで拡張されたアウトラインサポートを提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905284"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761362"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスで拡張されたアウトラインサポートを提供する
 [ **定義に折りたたむ** ] コマンドをサポートしていないと、言語のアウトラインサポートを拡張するためのオプションが2つあります。 エディターによって制御されるアウトライン領域を追加し、クライアントによって制御されるアウトライン領域を追加できます。

@@ -1,5 +1,7 @@
 ---
 title: オブジェクトマネージャーに提供されたシンボルのリストを公開する |Microsoft Docs
+description: IVsSimpleObjectList2 インターフェイスを実装して、Visual Studio のオブジェクトマネージャーにシンボルのリストを公開し、シンボル参照ツールを更新する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708082"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761349"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>方法: ライブラリによって提供されるシンボルのリストをオブジェクトマネージャーに公開する
-シンボル参照ツール、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** および **検索シンボルの結果**は、オブジェクトマネージャーに新しいデータの要求を渡し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 オブジェクトマネージャーは、適切なライブラリを検索し、シンボルの新しいリストを要求します。 ライブラリは、インターフェイスを介して要求されたデータをオブジェクトマネージャーに提供することによって応答し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクトマネージャーは、インターフェイスのメソッドを呼び出して <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> データを取得し、それを使用してシンボル参照ツールのビューを設定または更新します。
+シンボル参照ツール、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** および **検索シンボルの結果** は、オブジェクトマネージャーに新しいデータの要求を渡し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 オブジェクトマネージャーは、適切なライブラリを検索し、シンボルの新しいリストを要求します。 ライブラリは、インターフェイスを介して要求されたデータをオブジェクトマネージャーに提供することによって応答し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクトマネージャーは、インターフェイスのメソッドを呼び出して <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> データを取得し、それを使用してシンボル参照ツールのビューを設定または更新します。
 
  ライブラリは、ツールが呼び出されたとき、ノードが展開されたとき、またはビューが更新されたときに、データの要求を取得することがあります。 シンボル参照ツールが初めて呼び出されるとき、オブジェクトマネージャーは、最上位レベルの一覧を提供するようにライブラリに要求します。 ユーザーがリストノードを展開すると、そのノードの下にある子の一覧がライブラリに表示されます。 各オブジェクトマネージャーの問い合わせには、目的の項目のインデックスが含まれています。 新しい一覧を表示するには、オブジェクトマネージャーが、リスト内の項目の数、項目の種類、名前、アクセシビリティ、およびその他のプロパティを確認する必要があります。
 
