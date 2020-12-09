@@ -1,6 +1,8 @@
 ---
 title: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (パート 1)
 titleSuffix: ''
+description: サイト列を作成するためのプロジェクト項目の種類を定義し、プロジェクト項目を含む SharePoint プロジェクトを作成するために使用するプロジェクトテンプレートを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585551"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915220"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -76,17 +78,17 @@ ms.locfileid: "91585551"
 4. [ **Visual Basic** ] ノードまたは [ **Visual C#** ] ノードを展開し、[ **機能拡張** ] ノードを選択します。
 
     > [!NOTE]
-    > **機能拡張**ノードは、VISUAL Studio SDK をインストールした場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **機能拡張** ノードは、VISUAL Studio SDK をインストールした場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 5. プロジェクトテンプレートの一覧で、[ **VSIX プロジェクト**] を選択します。
 
 6. [ **名前** ] ボックスに「 **SiteColumnProjectItem**」と入力し、[ **OK** ] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**SiteColumnProjectItem**プロジェクトを**ソリューションエクスプローラー**に追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**SiteColumnProjectItem** プロジェクトを **ソリューションエクスプローラー** に追加します。
 
 #### <a name="to-create-the-project-template-project"></a>プロジェクト テンプレート プロジェクトを作成するには
 
-1. **ソリューションエクスプローラー**で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
+1. **ソリューションエクスプローラー** で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
 
 2. [ **新しいプロジェクト** ] ダイアログボックスの上部で、.NET Framework のバージョンの一覧で **.NET Framework 4.5** が選択されていることを確認します。
 
@@ -96,7 +98,7 @@ ms.locfileid: "91585551"
 
 5. [ **名前** ] ボックスに「 **SiteColumnProjectTemplate**」と入力し、[ **OK** ] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**SiteColumnProjectTemplate**プロジェクトをソリューションに追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**SiteColumnProjectTemplate** プロジェクトをソリューションに追加します。
 
 6. Class1 コード ファイルをプロジェクトから削除します。
 
@@ -116,15 +118,15 @@ ms.locfileid: "91585551"
 
 #### <a name="to-create-the-extension-project"></a>拡張機能プロジェクトを作成するには
 
-1. **ソリューションエクスプローラー**で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
+1. **ソリューションエクスプローラー** で、ソリューションノードのショートカットメニューを開き、[**追加**]、[**新しいプロジェクト**] の順に選択します。
 
 2. [ **新しいプロジェクト** ] ダイアログボックスの上部で、.NET Framework のバージョンの一覧で **.NET Framework 4.5** が選択されていることを確認します。
 
-3. **Visual C#** または**Visual Basic**ノードを展開し、[ **Windows** ] ノードを選択して、[**クラスライブラリ**] テンプレートを選択します。
+3. **Visual C#** または **Visual Basic** ノードを展開し、[ **Windows** ] ノードを選択して、[**クラスライブラリ**] テンプレートを選択します。
 
 4. [ **名前** ] ボックスに「 **ProjectItemTypeDefinition** 」と入力し、[ **OK** ] をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ProjectItemTypeDefinition**プロジェクトをソリューションに追加し、既定の Class1 コードファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ProjectItemTypeDefinition** プロジェクトをソリューションに追加し、既定の Class1 コードファイルを開きます。
 
 5. Class1 コード ファイルをプロジェクトから削除します。
 
@@ -133,7 +135,7 @@ ms.locfileid: "91585551"
 
 #### <a name="to-configure-the-project"></a>プロジェクトを構成するには
 
-1. ProjectItemTypeDefinition プロジェクトで、 **SiteColumnProjectItemTypeProvider**という名前のコードファイルを追加します。
+1. ProjectItemTypeDefinition プロジェクトで、 **SiteColumnProjectItemTypeProvider** という名前のコードファイルを追加します。
 
 2. メニュー バーで、 **[プロジェクト]**  >  **[参照の追加]** の順に選択します。
 
@@ -146,7 +148,7 @@ ms.locfileid: "91585551"
 
 #### <a name="to-define-the-new-sharepoint-project-item-type"></a>新しい SharePoint プロジェクト項目の種類を定義するには
 
-1. **SiteColumnProjectItemTypeProvider**コードファイルで、既定のコードを次のコードに置き換え、ファイルを保存します。
+1. **SiteColumnProjectItemTypeProvider** コードファイルで、既定のコードを次のコードに置き換え、ファイルを保存します。
 
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
@@ -160,16 +162,16 @@ ms.locfileid: "91585551"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の 2 つ目のインスタンスを管理者の資格情報で起動します。
 
-2. **Basesharepointproject**という名前の SharePoint 2010 プロジェクトを作成します。
+2. **Basesharepointproject** という名前の SharePoint 2010 プロジェクトを作成します。
 
    > [!IMPORTANT]
-   > **SharePoint カスタマイズウィザード**では、[**ファームソリューションとして配置する**] オプションを選択しないでください。
+   > **SharePoint カスタマイズウィザード** では、[**ファームソリューションとして配置する**] オプションを選択しないでください。
 
-3. 空の要素項目をプロジェクトに追加し、項目に **Field1**という名前を指定します。
+3. 空の要素項目をプロジェクトに追加し、項目に **Field1** という名前を指定します。
 
 4. プロジェクトを保存し、2 つ目の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] インスタンスを閉じます。
 
-5. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SiteColumnProjectItem ソリューションが開かれているのインスタンスで、**ソリューションエクスプローラー**で**SiteColumnProjectTemplate**プロジェクトノードのショートカットメニューを開き、[**追加**]、[既存の**項目**] の順に選択します。
+5. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SiteColumnProjectItem ソリューションが開かれているのインスタンスで、**ソリューションエクスプローラー** で **SiteColumnProjectTemplate** プロジェクトノードのショートカットメニューを開き、[**追加**]、[既存の **項目**] の順に選択します。
 
 6. [ **既存項目の追加** ] ダイアログボックスで、ファイル拡張子の一覧を開き、[ **すべてのファイル ( \* . \* )**] を選択します。
 
@@ -196,9 +198,9 @@ ms.locfileid: "91585551"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>[新しいプロジェクト] ダイアログ ボックスでのプロジェクト テンプレートの表示方法を構成するには
 
-1. **ソリューションエクスプローラー**で、 **SiteColumnProjectTemplate**プロジェクトノードのショートカットメニューを開き、[プロジェクトの**アンロード**] をクリックします。 ファイルへの変更を保存するように求められたら、[ **はい** ] をクリックします。
+1. **ソリューションエクスプローラー** で、 **SiteColumnProjectTemplate** プロジェクトノードのショートカットメニューを開き、[プロジェクトの **アンロード**] をクリックします。 ファイルへの変更を保存するように求められたら、[ **はい** ] をクリックします。
 
-2. **SiteColumnProjectTemplate**ノードのショートカットメニューをもう一度開き、[ **SiteColumnProjectTemplate の編集**] または [SiteColumnProjectTemplate の**編集**] を選択します。
+2. **SiteColumnProjectTemplate** ノードのショートカットメニューをもう一度開き、[ **SiteColumnProjectTemplate の編集**] または [SiteColumnProjectTemplate の **編集**] を選択します。
 
 3. プロジェクト ファイル内で、次の `VSTemplate` 要素を見つけます。
 
@@ -218,7 +220,7 @@ ms.locfileid: "91585551"
 
 5. ファイルを保存して閉じます。
 
-6. **ソリューションエクスプローラー**で、 **SiteColumnProjectTemplate**プロジェクトのショートカットメニューを開き、[プロジェクトの**再読み込み**] をクリックします。
+6. **ソリューションエクスプローラー** で、 **SiteColumnProjectTemplate** プロジェクトのショートカットメニューを開き、[プロジェクトの **再読み込み**] をクリックします。
 
 ## <a name="edit-the-project-template-files"></a>プロジェクトテンプレートファイルを編集する
  SiteColumnProjectTemplate プロジェクトで次のファイルを編集して、プロジェクト テンプレートの動作を定義します。
@@ -251,7 +253,7 @@ ms.locfileid: "91585551"
     using System.Security;
     ```
 
-     SharePoint プロジェクトの " **サンドボックスソリューション** " プロパティが **True**に設定されている場合、Visual Studio はを <xref:System.Security.AllowPartiallyTrustedCallersAttribute> AssemblyInfo コードファイルに追加します。 ただし、プロジェクト テンプレートの AssemblyInfo コード ファイルは、既定では <xref:System.Security> 名前空間をインポートしません。 コンパイルエラーを回避するには、このステートメントまたは**Imports**ステートメント**を**追加する必要があります。
+     SharePoint プロジェクトの " **サンドボックスソリューション** " プロパティが **True** に設定されている場合、Visual Studio はを <xref:System.Security.AllowPartiallyTrustedCallersAttribute> AssemblyInfo コードファイルに追加します。 ただし、プロジェクト テンプレートの AssemblyInfo コード ファイルは、既定では <xref:System.Security> 名前空間をインポートしません。 コンパイルエラーを回避するには、このステートメントまたは **Imports** ステートメント **を** 追加する必要があります。
 
 2. ファイルを保存して閉じます。
 
@@ -295,7 +297,7 @@ ms.locfileid: "91585551"
 
    - `SupportedTrustLevels` 属性と `SupportedDeploymentScopes` 属性が `ProjectItem` 要素から削除されます。 信頼レベルと配置のスコープは ProjectItemTypeDefinition プロジェクトの `SiteColumnProjectItemTypeProvider` クラスに指定されているため、これらの属性値は不要です。
 
-     *Sharepointprojectitem.spdata*ファイルの内容の詳細については、「 [SharePoint プロジェクト項目スキーマリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)」を参照してください。
+     *Sharepointprojectitem.spdata* ファイルの内容の詳細については、「 [SharePoint プロジェクト項目スキーマリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)」を参照してください。
 
 2. ファイルを保存して閉じます。
 
@@ -346,7 +348,7 @@ ms.locfileid: "91585551"
 
    - `itemId` 要素の `featureReference` 属性の値が `$guid4$` に変更されます。
 
-     *パッケージ*ファイルの詳細については、「 [SharePoint プロジェクトアイテムの項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)」を参照してください。
+     *パッケージ* ファイルの詳細については、「 [SharePoint プロジェクトアイテムの項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)」を参照してください。
 
 2. ファイルを保存して閉じます。
 
@@ -428,13 +430,13 @@ ms.locfileid: "91585551"
 
     新しい XML により、ファイルは次のように変更されます。
 
-   - 要素を `Name` Value **Site 列**に設定します。 (この名前は [ **新しいプロジェクト** ] ダイアログボックスに表示されます)。
+   - 要素を `Name` Value **Site 列** に設定します。 (この名前は [ **新しいプロジェクト** ] ダイアログボックスに表示されます)。
 
    - 各プロジェクト インスタンスに含まれているファイルごとに、`ProjectItem` 要素が追加されます。
 
    - 名前空間を使用 `http://schemas.microsoft.com/developer/vstemplate/2005` します。 このソリューション内の他のプロジェクトファイルでは、名前空間が使用さ `http://schemas.microsoft.com/developer/msbuild/2003` れます。 このため、XML スキーマ警告メッセージが生成されますが、このチュートリアルでは、これらを無視できます。
 
-     *.Vstemplate*ファイルの内容の詳細については、「 [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。
+     *.Vstemplate* ファイルの内容の詳細については、「 [Visual Studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。
 
 2. ファイルを保存して閉じます。
 
@@ -629,7 +631,7 @@ ms.locfileid: "91585551"
 
     - SharePoint プロジェクトによって使用されるアセンブリ参照用の `Reference` 要素が追加されます。
 
-    - *Elements.xml*や*sharepointprojectitem.spdata*など、プロジェクト内の既定のファイルごとに要素を追加します。
+    - *Elements.xml* や *sharepointprojectitem.spdata* など、プロジェクト内の既定のファイルごとに要素を追加します。
 
 2. ファイルを保存して閉じます。
 
@@ -638,7 +640,7 @@ ms.locfileid: "91585551"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>VSIX パッケージを構成および作成するには
 
-1. **ソリューションエクスプローラー**の [ **SiteColumnProjectItem** ] プロジェクトで、マニフェストエディターで source.extension.vsixmanifest ファイルを開きます。
+1. **ソリューションエクスプローラー** の [ **SiteColumnProjectItem** ] プロジェクトで、マニフェストエディターで source.extension.vsixmanifest ファイルを開きます。
 
      source.extension.vsixmanifest ファイルが、すべての VSIX パッケージで必要になる extension.vsixmanifest ファイルの基礎となります。 このファイルの詳細については、「 [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))」を参照してください。
 
@@ -646,7 +648,7 @@ ms.locfileid: "91585551"
 
 3. [ **作成者** ] ボックスに「 **Contoso**」と入力します。
 
-4. [ **説明** ] ボックスに、 **サイト列を作成するための SharePoint プロジェクト**を入力します。
+4. [ **説明** ] ボックスに、 **サイト列を作成するための SharePoint プロジェクト** を入力します。
 
 5. [ **アセット** ] タブを選択し、[ **新規作成** ] をクリックします。
 
@@ -657,7 +659,7 @@ ms.locfileid: "91585551"
     > [!NOTE]
     > この値は、extension.vsixmanifest ファイル内の `ProjectTemplate` 要素に対応します。 この要素は、プロジェクト テンプレートを格納する VSIX パッケージ内のサブフォルダーを示します。 詳細については、「 [Projecttemplate 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))」を参照してください。
 
-7. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
+7. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト** を選択します。
 
 8. [ **プロジェクト** ] ボックスの一覧で [ **SiteColumnProjectTemplate**] を選択し、[ **OK** ] をクリックします。
 
@@ -670,11 +672,11 @@ ms.locfileid: "91585551"
     > [!NOTE]
     > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-11. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
+11. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト** を選択します。
 
 12. [ **プロジェクト** ] ボックスの一覧で [ **ProjectItemTypeDefinition**] を選択し、[ **OK** ] をクリックします。
 
-13. メニューバーで [ビルド] [ソリューションの**ビルド**] の順に選択し、  >  **Build Solution**プロジェクトがエラーなしでコンパイルされることを確認します。
+13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** プロジェクトがエラーなしでコンパイルされることを確認します。
 
 ## <a name="test-the-project-template"></a>プロジェクト テンプレートをテストする
  これで、プロジェクト テンプレートをテストする準備ができました。 まず、Visual Studio の実験用インスタンスで SiteColumnProjectItem ソリューションのデバッグを開始します。 次に、Visual Studio の実験用インスタンスで **サイト列** プロジェクトをテストします。 最後に、SharePoint プロジェクトをビルドして実行し、サイト内の列が正常に機能することを確認します。
@@ -689,7 +691,7 @@ ms.locfileid: "91585551"
 
 #### <a name="to-test-the-project-in-visual-studio"></a>Visual Studio でプロジェクトをテストするには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project**ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
 
 2. [ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノード (プロジェクトテンプレートでサポートされている言語によって異なります) を展開し、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
@@ -697,11 +699,11 @@ ms.locfileid: "91585551"
 
 4. [ **名前** ] ボックスに「 **[sitecolumntest]** 」と入力し、[ **OK** ] をクリックします。
 
-     **ソリューションエクスプローラー**、 **Field1**という名前のプロジェクト項目と共に新しいプロジェクトが表示されます。
+     **ソリューションエクスプローラー**、 **Field1** という名前のプロジェクト項目と共に新しいプロジェクトが表示されます。
 
 5. Visual Studio のもう一方のインスタンスのコードが、メソッドで前に設定したブレークポイントで停止していることを確認 `InitializeType` し、 **F5** キーを押してプロジェクトのデバッグを続行します。
 
-6. **ソリューションエクスプローラー**で、[ **Field1** ] ノードを選択し、 **F4**キーを押します。
+6. **ソリューションエクスプローラー** で、[ **Field1** ] ノードを選択し、 **F4** キーを押します。
 
      **[プロパティ]** ウィンドウが開きます。
 
@@ -709,7 +711,7 @@ ms.locfileid: "91585551"
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>SharePoint でサイト内の列をテストするには
 
-1. **ソリューションエクスプローラー**で、[ **[sitecolumntest]** ] ノードを選択します。
+1. **ソリューションエクスプローラー** で、[ **[sitecolumntest]** ] ノードを選択します。
 
 2. [ **プロパティ** ] ウィンドウの [ **サイト URL** ] プロパティの横にあるテキストボックスに、「」と入力し **http://localhost** ます。
 
@@ -750,7 +752,7 @@ ms.locfileid: "91585551"
 
 5. Visual Studio の両方のインスタンス (実験用インスタンスと SiteColumnProjectItem ソリューションを開いたインスタンス) を閉じます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了すると、プロジェクト テンプレートにウィザードを追加できるようになります。 ユーザーが Site Column プロジェクトを作成するときに、ウィザードが、デバッグに使用するサイトの URL と、新しいソリューションがサンドボックス ソリューションかどうかをユーザーに尋ね、この情報を使用して新しいプロジェクトを構成します。 また、このウィザードでは、列に関する情報 (基本データ型や、サイト列ギャラリーの列を一覧表示するグループなど) が収集され、この情報が新しいプロジェクトの *Elements.xml* ファイルに追加されます。 詳細については、「 [チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md))」を参照してください。
 
 ## <a name="see-also"></a>関連項目

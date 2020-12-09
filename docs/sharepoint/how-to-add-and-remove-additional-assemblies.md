@@ -1,5 +1,7 @@
 ---
 title: '方法: 追加のアセンブリを追加および削除するMicrosoft Docs'
+description: SharePoint ソリューションパッケージで追加のアセンブリを追加および削除する方法について説明します。 セーフコントロールとクラスリソースも追加または削除します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014829"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914973"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>方法: 追加のアセンブリを追加および削除する
   SharePoint パッケージが機能またはデータについて他のアセンブリに依存している場合、そのアセンブリをソリューション パッケージ (.wsp) に追加できます。 パッケージをインストールする際は、カスタム アセンブリがインストールされているかどうかが、SharePoint サーバーによって確認されます。
@@ -31,7 +33,7 @@ ms.locfileid: "86014829"
 
 #### <a name="to-add-an-existing-assembly"></a>既存のアセンブリを追加するには
 
-1. **パッケージデザイナー**を開きます。 詳細については、「 [方法: SharePoint ソリューションパッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)する」を参照してください。
+1. **パッケージデザイナー** を開きます。 詳細については、「 [方法: SharePoint ソリューションパッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)する」を参照してください。
 
 2. **[詳細]** タブを選択します。
 
@@ -41,11 +43,11 @@ ms.locfileid: "86014829"
 
 4. 省略記号 (![ASP.NET Mobile Designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) を選択し、追加するアセンブリを選択します。 移植性を考慮して、選択したアセンブリへの相対パスを使用することをお勧めします。
 
-5. **配置ターゲット**の場合は、[ **globalassemblycache** ] オプションボタンをクリックしてアセンブリをグローバルアセンブリキャッシュに配置するか、[ **webapplication** ] オプションボタンをクリックして、SharePoint を実行しているサーバー上の webapplication フォルダーにアセンブリを配置します。
+5. **配置ターゲット** の場合は、[ **globalassemblycache** ] オプションボタンをクリックしてアセンブリをグローバルアセンブリキャッシュに配置するか、[ **webapplication** ] オプションボタンをクリックして、SharePoint を実行しているサーバー上の webapplication フォルダーにアセンブリを配置します。
 
 #### <a name="to-add-an-assembly-from-project-output"></a>プロジェクトの出力からアセンブリを追加するには
 
-1. **パッケージデザイナー**を開きます。
+1. **パッケージデザイナー** を開きます。
 
      詳細については、「 [方法: SharePoint ソリューションパッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)する」を参照してください。
 
@@ -57,7 +59,7 @@ ms.locfileid: "86014829"
 
 4. [ **ソースプロジェクト** ] ボックスの一覧で、追加するソースプロジェクトを選択します。
 
-5. **配置ターゲット**の場合は、[ **globalassemblycache** ] オプションボタンをクリックしてアセンブリをグローバルアセンブリキャッシュに配置するか、[ **webapplication** ] オプションボタンをクリックして、SharePoint を実行しているサーバー上の webapplication フォルダーにアセンブリを配置します。
+5. **配置ターゲット** の場合は、[ **globalassemblycache** ] オプションボタンをクリックしてアセンブリをグローバルアセンブリキャッシュに配置するか、[ **webapplication** ] オプションボタンをクリックして、SharePoint を実行しているサーバー上の webapplication フォルダーにアセンブリを配置します。
 
 #### <a name="to-add-a-safe-control"></a>セーフ コントロールを追加するには
 
@@ -84,7 +86,7 @@ ms.locfileid: "86014829"
 
 #### <a name="to-delete-an-existing-assembly"></a>既存のアセンブリを削除するには
 
-1. **パッケージデザイナー**を開きます。 詳細については、「 [方法: SharePoint ソリューションパッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)する」を参照してください。
+1. **パッケージデザイナー** を開きます。 詳細については、「 [方法: SharePoint ソリューションパッケージをカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)する」を参照してください。
 
 2. **[詳細]** タブを選択します。
 

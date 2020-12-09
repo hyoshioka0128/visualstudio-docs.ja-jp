@@ -1,6 +1,8 @@
 ---
 title: '方法: 既存の BDC モデルファイルを SharePoint プロジェクトに追加する |Microsoft Docs'
 titleSuffix: ''
+description: 既存のビジネスデータ接続 (BDC) モデルファイルを Visual Studio の SharePoint プロジェクトに追加して、BDC モデルをカスタマイズ、パッケージ化、および再配置できるようにします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,25 +20,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584621"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914960"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>方法: 既存の BDC モデル ファイルを SharePoint プロジェクトに追加する
   Visual Studio を使用して、モデルファイル (*bdcm*) を任意の SharePoint ファームプロジェクトに追加することにより、ビジネスデータ接続 (BDC) モデルをカスタマイズ、パッケージ化、および再配置できます。 詳細については、「[ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>BDC モデルファイルを SharePoint プロジェクトに追加するには
 
-1. **ソリューションエクスプローラー**で、SharePoint プロジェクトのフォルダーを選択します。
+1. **ソリューションエクスプローラー** で、SharePoint プロジェクトのフォルダーを選択します。
 
-2. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  **Add Existing Item**ます。
+2. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  **Add Existing Item** ます。
 
 3. [ **既存項目の追加** ] ダイアログボックスで、プロジェクトに追加するモデル定義ファイルの場所を参照し、ファイルを選択して、[ **追加** ] ボタンをクリックします。
 
-    モデルで、 *.net アセンブリ型の基幹業務 (LOB) システム*が定義されていない場合は、[ **.Net アセンブリの追加** ] ダイアログボックスが表示されます。
+    モデルで、 *.net アセンブリ型の基幹業務 (LOB) システム* が定義されていない場合は、[ **.Net アセンブリの追加** ] ダイアログボックスが表示されます。
 
 4. ダイアログボックスが表示されたら、次のいずれかの手順を実行します。
 
@@ -44,7 +46,7 @@ ms.locfileid: "91584621"
 
    - それ以外の場合は、[ **いいえ** ] ボタンをクリックし、[ **OK** ] をクリックします。
 
-     **ビジネスデータ接続モデル**項目がプロジェクトに追加されます。
+     **ビジネスデータ接続モデル** 項目がプロジェクトに追加されます。
 
 ## <a name="see-also"></a>関連項目
 - [ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)

@@ -1,5 +1,7 @@
 ---
 title: '方法: Creator メソッドを追加する |Microsoft Docs'
+description: SharePoint の Business Data Connectivity (BDC) サービスのエンティティのデータソースに新しいデータを追加する Creator メソッドを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 962e353b5ae82f6dd3eccc2898385fd4b9ee30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017065"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915454"
 ---
 # <a name="how-to-add-a-creator-method"></a>方法: Creator メソッドを追加する
-  Creator メソッドは、エンティティのデータソースに新しいデータを追加します。 ユーザーがモデルに基づくリストの**リボン**で [**新しい項目**] ボタンを選択すると、BUSINESS Data Connectivity (BDC) サービスはこのメソッドを呼び出します。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  Creator メソッドは、エンティティのデータソースに新しいデータを追加します。 ユーザーがモデルに基づくリストの **リボン** で [**新しい項目**] ボタンを選択すると、BUSINESS Data Connectivity (BDC) サービスはこのメソッドを呼び出します。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-add-a-creator-method"></a>Creator メソッドを追加するには
 
-1. **BDC デザイナー**で、エンティティを選択します。
+1. **BDC デザイナー** で、エンティティを選択します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  > **BDC メソッドの詳細**を表示] を選択します。
+2. メニューバーで、[ **View**  >  **その他の Windows**  > **BDC メソッドの詳細** を表示] を選択します。
 
     [ **BDC メソッドの詳細** ] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
@@ -39,7 +41,7 @@ ms.locfileid: "86017065"
 
     Visual Studio は、次の要素をモデルに追加します。これらの要素は、[ **BDC メソッドの詳細** ] ウィンドウに表示されます。
 
-   - **Create**という名前のメソッド。
+   - **Create** という名前のメソッド。
 
    - メソッドの入力パラメーター。
 
@@ -49,9 +51,9 @@ ms.locfileid: "86017065"
 
    - メソッドのメソッドインスタンス。
 
-     詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+     詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
-4. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
+4. **ソリューションエクスプローラー** で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
 
     コードエディターで entity service コードファイルが開きます。 Entity service コードファイルの詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
@@ -64,7 +66,7 @@ ms.locfileid: "86017065"
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
 
 ## <a name="see-also"></a>関連項目
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)
 - [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [方法: 削除子メソッドを追加する](../sharepoint/how-to-add-a-deleter-method.md)

@@ -1,5 +1,7 @@
 ---
 title: ローカル変数 | を列挙するMicrosoft Docs
+description: 'Visual Studio が IDebugProperty2:: EnumChildren を使用してローカルウィンドウにデータを設定する方法の詳細について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4282e55dbf90c4ae24a9e3d16beea8bd93420524
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738874"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915688"
 ---
 # <a name="enumerate-locals"></a>ローカルの列挙
 > [!IMPORTANT]
 > Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
-Visual Studio が [**ローカル**] ウィンドウにデータを設定する準備ができたら、 [getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)から返された[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトに対して[Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出します (「 [getmethodproperty の実装](../../extensibility/debugger/implementing-getmethodproperty.md)」を参照してください)。 `IDebugProperty2::EnumChildren`[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを返します。
+Visual Studio が [**ローカル**] ウィンドウにデータを設定する準備ができたら、 [getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)から返された [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトに対して [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を呼び出します (「 [getmethodproperty の実装](../../extensibility/debugger/implementing-getmethodproperty.md)」を参照してください)。 `IDebugProperty2::EnumChildren`[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを返します。
 
 `IDebugProperty2::EnumChildren`を実装すると、次のタスクが実行されます。
 

@@ -1,5 +1,7 @@
 ---
 title: '方法: モデルにエンティティを追加する |Microsoft Docs'
+description: エンティティをモデルに追加するには、Visual Studio のツールボックスからビジネスデータ接続 (BDC) デザイナーにエンティティコントロールを追加します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b80f39494b98014a75d4265f228906be2ff45188
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0efd7a6fc0d6254dbfd3cbda538ffe0e30585453
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016675"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915389"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>方法: モデルにエンティティを追加する
   エンティティを作成するには、Visual Studio の **ツールボックス** から Business Data CONNECTIVITY (BDC) デザイナーにエンティティコントロールを追加します。
 
 ### <a name="to-add-an-entity-to-the-model"></a>エンティティをモデルに追加するには
 
-1. BDC プロジェクトを作成するか、既存の BDC プロジェクトを開きます。 詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
+1. BDC プロジェクトを作成するか、既存の BDC プロジェクトを開きます。 詳細については、「[ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
-2. **ツールボックス**の**BusinessDataCatalog**グループから、**エンティティ**コントロールをデザイナーに追加します。
+2. **ツールボックス** の **BusinessDataCatalog** グループから、**エンティティ** コントロールをデザイナーに追加します。
 
      新しいエンティティがデザイナーに表示されます。 Visual Studio は、 `<Entity>` プロジェクト内の BDC モデルファイルの XML に要素を追加します。 エンティティ要素の属性の詳細については、「 [entity](/previous-versions/office/developer/sharepoint-2010/ee558325(v=office.14))」を参照してください。
 

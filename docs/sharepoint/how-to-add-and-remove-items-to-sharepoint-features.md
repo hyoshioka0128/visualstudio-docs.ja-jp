@@ -1,5 +1,7 @@
 ---
 title: SharePoint 機能に項目を追加または削除する方法 |Microsoft Docs
+description: Visual Studio のフィーチャーデザイナーを使用して、sharepoint プロジェクトアイテムを SharePoint 機能に手動で追加および削除します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014524"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914921"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>方法: SharePoint 機能に項目を追加および削除する
   SharePoint ソリューションを作成すると、Visual Studio によって既定の SharePoint プロジェクト項目が機能に追加されます。 配置する前に、sharepoint プロジェクト項目を追加および削除して、SharePoint 機能を変更することができます。
@@ -30,7 +32,7 @@ ms.locfileid: "86014524"
 
 1. フィーチャーデザイナーを開きます。
 
-    詳細については、「 [方法: SharePoint 機能をカスタマイズ](../sharepoint/how-to-customize-a-sharepoint-feature.md)する」を参照してください。
+    詳細については、「[方法:SharePoint フィーチャーをカスタマイズする](../sharepoint/how-to-customize-a-sharepoint-feature.md)」を参照してください。
 
 2. 次の手順の1つ以上を実行して、 **ソリューション** リストの項目から機能一覧の **項目** に1つ以上の項目を追加します。
 

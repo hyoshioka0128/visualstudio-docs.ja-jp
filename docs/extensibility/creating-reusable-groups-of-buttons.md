@@ -1,5 +1,7 @@
 ---
 title: 再利用可能なボタンのグループの作成 |Microsoft Docs
+description: メニューまたはツールバーに一緒に表示されるコマンドのコレクションであるコマンドグループを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477014ed77b60821ad191ba6842999be6f528fee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903640"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915584"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>再利用可能なボタンのグループを作成する
 コマンドグループは、メニューまたはツールバーに常に一緒に表示されるコマンドのコレクションです。 任意のコマンドグループは、 *vsct* ファイルの commandplacements セクションの別の親メニューに割り当てて再利用できます。
@@ -28,9 +30,9 @@ ms.locfileid: "85903640"
 
 1. という名前の VSIX プロジェクトを作成 `ReusableButtons` します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. プロジェクトが開いたら、 **Reusablecommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *ReusableCommand.cs*に変更します。
+2. プロジェクトが開いたら、 **Reusablecommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *ReusableCommand.cs* に変更します。
 
-3. *. Vsct*ファイルで、[シンボル] セクションにアクセスし、プロジェクトのグループとコマンドを含む guidsymbol 要素を見つけます。 GuidReusableCommandPackageCmdSet という名前にする必要があります。
+3. *. Vsct* ファイルで、[シンボル] セクションにアクセスし、プロジェクトのグループとコマンドを含む guidsymbol 要素を見つけます。 GuidReusableCommandPackageCmdSet という名前にする必要があります。
 
 4. 次の例に示すように、グループに追加する各ボタンの IDSymbol を追加します。
 
@@ -98,7 +100,7 @@ ms.locfileid: "85903640"
    </CommandTable>
    ```
 
-    コマンドグループは、複数のメニューに含めることができます。 親メニューは、作成したものにすることができます。これは、によって提供されるもの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ( *shellcmddef. vsct* または *sharedcmddef. vsct*で説明)、または別の VSPackage で定義されているものです。 親メニューが最終的に [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage によって表示されるショートカットメニューに接続されている限り、親レイヤーの数は無制限です。
+    コマンドグループは、複数のメニューに含めることができます。 親メニューは、作成したものにすることができます。これは、によって提供されるもの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ( *shellcmddef. vsct* または *sharedcmddef. vsct* で説明)、または別の VSPackage で定義されているものです。 親メニューが最終的に [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage によって表示されるショートカットメニューに接続されている限り、親レイヤーの数は無制限です。
 
     次の例では、グループを [ **ソリューションエクスプローラー** ] ツールバーの他のボタンの右側に配置します。
 

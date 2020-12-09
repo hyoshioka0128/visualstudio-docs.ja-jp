@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: SharePoint アプリケーションページの作成 |Microsoft Docs'
+description: このチュートリアルでは、アプリケーションページ (特殊な形式の ASP.NET ページ) を作成し、ローカルの SharePoint サイトを使用してデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016494"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914882"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>チュートリアル: SharePoint アプリケーションページの作成
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>チュートリアル: SharePoint アプリケーション ページの作成
 
 アプリケーション ページとは、特殊なフォームの ASP.NET ページです。 アプリケーション ページには、SharePoint のマスター ページとマージされるコンテンツが含まれます。 詳細については、「 [SharePoint のアプリケーションページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)する」を参照してください。
 
@@ -43,15 +45,15 @@ ms.locfileid: "86016494"
 
 ## <a name="create-a-sharepoint-project"></a>SharePoint プロジェクトを作成する
 
-最初に、 **空の SharePoint プロジェクト**を作成します。 後で、このプロジェクトに **アプリケーションページ** アイテムを追加します。
+最初に、 **空の SharePoint プロジェクト** を作成します。 後で、このプロジェクトに **アプリケーションページ** アイテムを追加します。
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を起動します。
 
 2. [ **新しいプロジェクト** ] ダイアログボックスを開き、使用する言語の [ **Office/SharePoint** ] ノードを展開し、[ **sharepoint ソリューション** ] ノードを選択します。
 
-3. [ **Visual Studio にインストールされたテンプレート** ] ペインで、[ **SharePoint 2010-空のプロジェクト** ] テンプレートを選択します。 プロジェクトに **Mysharepointproject**という名前を指定し、[ **OK** ] をクリックします。
+3. [ **Visual Studio にインストールされたテンプレート** ] ペインで、[ **SharePoint 2010-空のプロジェクト** ] テンプレートを選択します。 プロジェクトに **Mysharepointproject** という名前を指定し、[ **OK** ] をクリックします。
 
-     **SharePoint カスタマイズウィザード**が表示されます。 このウィザードを使用すると、プロジェクトのデバッグに使用するサイトや、ソリューションの信頼レベルを選択できます。
+     **SharePoint カスタマイズウィザード** が表示されます。 このウィザードを使用すると、プロジェクトのデバッグに使用するサイトや、ソリューションの信頼レベルを選択できます。
 
 4. [ **ファームソリューションとして配置** する] オプションボタンをクリックし、[ **完了** ] をクリックして既定のローカル SharePoint サイトを受け入れます。
 
@@ -59,9 +61,9 @@ ms.locfileid: "86016494"
 
 アプリケーションページを作成するには、 **アプリケーションページ** アイテムをプロジェクトに追加します。
 
-1. **ソリューションエクスプローラー**で、 **mysharepointproject**プロジェクトを選択します。
+1. **ソリューションエクスプローラー** で、 **mysharepointproject** プロジェクトを選択します。
 
-2. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+2. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 3. [ **新しい項目の追加** ] ダイアログボックスで、[ **アプリケーション] ページ ([ファームソリューションのみ** ] テンプレート) を選択します。
 
@@ -73,17 +75,17 @@ ms.locfileid: "86016494"
 
 アプリケーション ページ項目を使用すると、デザイナーで ASP.NET コントロールをアプリケーション ページに追加できます。 このデザイナーは、Visual Web Developer で使用するデザイナーと同じです。 ラベル、ラジオボタンリスト、およびテーブルをデザイナーの **ソース** ビューに追加し、標準の ASP.NET ページをデザインする場合と同様にプロパティを設定します。
 
-1. メニューバーで、[ **View**  >  **ツールボックス**の表示] を選択します。
+1. メニューバーで、[ **View**  >  **ツールボックス** の表示] を選択します。
 
-2. **ツールボックス**の [標準] ノードで、次のいずれかの手順を実行します。
+2. **ツールボックス** の [標準] ノードで、次のいずれかの手順を実行します。
 
-    - **ラベル**項目のショートカットメニューを開き、[**コピー**] を選択し、デザイナーの**PlaceHolderMain** content コントロールの下にある行のショートカットメニューを開き、[**貼り付け**] を選択します。
+    - **ラベル** 項目のショートカットメニューを開き、[**コピー**] を選択し、デザイナーの **PlaceHolderMain** content コントロールの下にある行のショートカットメニューを開き、[**貼り付け**] を選択します。
 
-    - [**ツールボックス**] から [**ラベル**] 項目を**PlaceHolderMain**コンテンツコントロールの本文にドラッグします。
+    - [**ツールボックス**] から [**ラベル**] 項目を **PlaceHolderMain** コンテンツコントロールの本文にドラッグします。
 
 3. 前の手順を繰り返して、 **DropDownList** 項目と **テーブル** 項目を **PlaceHolderMain** content コントロールに追加します。
 
-4. デザイナーで、 `Text` ラベルコントロールの属性の値を、すべての項目を **表示**するように変更します。
+4. デザイナーで、 `Text` ラベルコントロールの属性の値を、すべての項目を **表示** するように変更します。
 
 5. デザイナーで、`<asp:DropDownList>` 要素を次の XML に置き換えます。
 
@@ -103,7 +105,7 @@ ASP.NET ページと同様に、アプリケーション ページのコント�
 
      コード エディターでアプリケーション ページ コード ファイルが開きます。
 
-2. `SearchItems` クラスに次のメソッドを追加します。 このコードでは、このチュートリアルでこれから作成するメソッドを呼び出して、<xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> の <xref:System.Web.UI.WebControls.DropDownList> イベントを処理します。
+2. 次のメソッドを `SearchItems` クラスに追加します。 このコードでは、このチュートリアルでこれから作成するメソッドを呼び出して、<xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> の <xref:System.Web.UI.WebControls.DropDownList> イベントを処理します。
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +115,12 @@ ASP.NET ページと同様に、アプリケーション ページのコント�
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. `SearchItems` クラスに次のメソッドを追加します。 このメソッドでは、サーバー ファーム上のすべてのサイトについて反復処理を行い、現在のユーザーが作成または変更した項目を検索します。
+4. 次のメソッドを `SearchItems` クラスに追加します。 このメソッドでは、サーバー ファーム上のすべてのサイトについて反復処理を行い、現在のユーザーが作成または変更した項目を検索します。
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. `SearchItems` クラスに次のメソッドを追加します。 このメソッドでは、現在のユーザーが作成または変更した項目をテーブルに表示します。
+5. 次のメソッドを `SearchItems` クラスに追加します。 このメソッドでは、現在のユーザーが作成または変更した項目をテーブルに表示します。
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -127,7 +129,7 @@ ASP.NET ページと同様に、アプリケーション ページのコント�
 
 プロジェクトを実行すると、SharePoint サイトが開き、アプリケーション ページが表示されます。
 
-1. **ソリューションエクスプローラー**で、アプリケーションページのショートカットメニューを開き、[**スタートアップ項目に設定**] をクリックします。
+1. **ソリューションエクスプローラー** で、アプリケーションページのショートカットメニューを開き、[**スタートアップ項目に設定**] をクリックします。
 
 2. **F5** キーを押します。
 
