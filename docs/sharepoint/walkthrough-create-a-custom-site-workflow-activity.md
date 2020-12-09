@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: カスタムサイトワークフロー活動を作成する |Microsoft Docs'
+description: このチュートリアルでは、「Visual Studio を使用してサイトレベルの SharePoint ワークフローのカスタムアクティビティを作成する方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016537"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913957"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>チュートリアル: カスタムサイトワークフローアクティビティの作成
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>チュートリアル: サイトのカスタム ワークフロー アクティビティの作成
   このチュートリアルでは、を使用してサイトレベルワークフローのカスタムアクティビティを作成する方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 (サイトレベルのワークフローは、サイトのリストだけでなく、サイト全体に適用されます)。カスタムアクティビティでは、バックアップのアナウンスリストを作成し、お知らせリストの内容をそこにコピーします。
 
  このチュートリアルでは、次のタスクについて説明します。
@@ -60,19 +62,19 @@ ms.locfileid: "86016537"
 
 4. [ **名前** ] ボックスに「" **アナウンス ementbackup**"」と入力し、[ **OK** ] をクリックします。
 
-     **SharePoint カスタマイズウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード** が表示されます。
 
 5. [ **デバッグ用のサイトとセキュリティレベルの指定** ] ページで、[ **ファームソリューションとして配置** する] オプションを選択し、[ **完了** ] をクリックして信頼レベルと既定のサイトを受け入れます。
 
      この手順では、ソリューションの信頼レベルをファームソリューションとして設定します。これは、ワークフロープロジェクトに使用できる唯一のオプションです。
 
-6. **ソリューションエクスプローラー**で、プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+6. **ソリューションエクスプローラー** で、プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
-7. [ **Visual C#** ] または [ **Visual Basic**で、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
+7. [ **Visual C#** ] または [ **Visual Basic** で、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
 8. [ **テンプレート** ] ペインで、[ **シーケンシャルワークフロー (ファームソリューションのみ)** ] テンプレートを選択し、[ **追加** ] をクリックします。
 
-     **SharePoint カスタマイズウィザード**が表示されます。
+     **SharePoint カスタマイズウィザード** が表示されます。
 
 9. [ **デバッグ用のワークフロー名の指定** ] ページで、既定の名前をそのまま使用します (workflow1.xaml)。 ワークフローテンプレートの種類を [ **サイトのワークフロー**] に変更し、[ **次へ** ] をクリックします。
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016537"
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. プロジェクトを保存し、メニューバーで [ビルド] [ソリューションの**ビルド**] の順に選択し  >  **Build Solution**ます。
+4. プロジェクトを保存し、メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し  >  **Build Solution** ます。
 
      Class1 は、[**発表**] タブの [**ツールボックス**] にカスタムアクションとして表示されます。
 
@@ -112,16 +114,16 @@ ms.locfileid: "86016537"
 
 #### <a name="to-test-the-site-workflow-custom-activity"></a>サイトワークフローのカスタムアクティビティをテストするには
 
-1. **F5**キーを押してプロジェクトを実行し、SharePoint に配置します。
+1. **F5** キーを押してプロジェクトを実行し、SharePoint に配置します。
 
-2. クイック起動バーで [ **リスト** ] リンクを選択すると、SharePoint サイトで使用できるすべてのリストが表示されます。 **お知らせという**名前のアナウンスの一覧は1つだけであることに注意してください。
+2. クイック起動バーで [ **リスト** ] リンクを選択すると、SharePoint サイトで使用できるすべてのリストが表示されます。 **お知らせという** 名前のアナウンスの一覧は1つだけであることに注意してください。
 
 3. SharePoint web ページの上部で、[ **サイトワークフロー** ] リンクを選択します。
 
 4. [新しいワークフローを開始します] セクションで、[ **workflow1.xaml** ] リンクを選択します。 これにより、サイトのワークフローが開始され、カスタムアクションのコードが実行されます。
 
-5. クイック起動バーで、[ **アナウンスメントバックアップ** ] リンクを選択します。 **お知らせ**リストに含まれているすべてのお知らせが、この新しいリストにコピーされていることに注意してください。
+5. クイック起動バーで、[ **アナウンスメントバックアップ** ] リンクを選択します。 **お知らせ** リストに含まれているすべてのお知らせが、この新しいリストにコピーされていることに注意してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法: イベントレシーバーを作成する](../sharepoint/how-to-create-an-event-receiver.md)
+- [方法: イベント レシーバーを作成する](../sharepoint/how-to-create-an-event-receiver.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

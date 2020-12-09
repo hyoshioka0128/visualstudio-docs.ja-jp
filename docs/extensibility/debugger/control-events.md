@@ -1,5 +1,7 @@
 ---
 title: コントロールイベント |Microsoft Docs
+description: IDebugEvent2 インターフェイスを使用して、プログラムの制御された実行中にイベントを送信する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2c3ad9c9b63923bdf2f107e7bc582f3c76cd62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf7f59384d9317e4be173c93b6165d754a35ad8f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739090"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914245"
 ---
 # <a name="control-events"></a>コントロールイベント
 プログラムの制御された実行中にイベントを送信する必要があります。 すべてのイベントは、 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) インターフェイスを使用して送信され、 [IDebugEvent2:: getattributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) メソッドの実装を必要とする属性を持っています。

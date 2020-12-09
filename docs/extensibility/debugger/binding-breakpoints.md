@@ -1,5 +1,7 @@
 ---
 title: ブレークポイントのバインド |Microsoft Docs
+description: IDE がブレークポイントの要求を使用しし、ユーザーがブレークポイントを設定したときにブレークポイントを作成するようにデバッグセッションに要求する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903230"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914713"
 ---
 # <a name="bind-breakpoints"></a>ブレークポイントのバインド
-ユーザーが **F9**キーを押してブレークポイントを設定した場合、IDE は要求を使用しし、ブレークポイントを作成するようにデバッグセッションに指示します。
+ユーザーが **F9** キーを押してブレークポイントを設定した場合、IDE は要求を使用しし、ブレークポイントを作成するようにデバッグセッションに指示します。
 
 ## <a name="set-a-breakpoint"></a>ブレークポイントの設定
  ブレークポイントの設定は、ブレークポイントの影響を受けるコードまたはデータがまだ使用できない場合があるため、2段階のプロセスです。 まず、ブレークポイントが記述されている必要があります。次に、コードまたはデータが使用可能になったら、次のようにそのコードまたはデータにバインドする必要があります。

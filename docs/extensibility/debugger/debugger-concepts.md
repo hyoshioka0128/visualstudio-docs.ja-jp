@@ -1,5 +1,7 @@
 ---
 title: デバッガーの概念 |Microsoft Docs
+description: Visual Studio デバッグパッケージの設計に使用されるアーキテクチャの概念について説明します。このパッケージを構築するのに役立ちます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ad8a450f9e79c1d44b8e098c8a00bb4b816e1af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7caecc9c3434afd90462757c9cb544f387df88d3
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738985"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914037"
 ---
 # <a name="debugger-concepts"></a>デバッガーの概念
 Visual Studio デバッグパッケージでビルドするには、パッケージのデザインに使用されるアーキテクチャの概念を理解している必要があります。
@@ -44,7 +46,7 @@ Visual Studio デバッグパッケージでビルドするには、パッケー
  [ブレークポイント](../../extensibility/debugger/breakpoints-visual-studio-sdk.md) デバッグアーキテクチャに関して、3種類のブレークポイント (保留、バインド、エラー) を定義します。
 
 ## <a name="related-sections"></a>関連項目
- [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md) コード、ドキュメント、および式の評価コンテキスト内でデバッグエンジン (DE) を同時に動作させる方法について説明します。 3つのコンテキストのそれぞれについて、場所、位置、または評価に関連する評価について説明します。
+ [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md) コード、ドキュメント、および式の評価コンテキスト内でデバッグエンジン (DE) を同時に動作させる方法について説明します。 場所、位置、それに関連する評価の 3 つのコンテキストそれぞれについて説明します。
 
  [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md) デバッグエンジン (DE)、式エバリュエーター (EE)、およびシンボルハンドラー (SH) など、Visual Studio のデバッグコンポーネントの概要について説明します。
 

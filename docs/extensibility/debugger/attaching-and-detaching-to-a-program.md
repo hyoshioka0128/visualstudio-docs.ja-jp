@@ -1,5 +1,7 @@
 ---
 title: プログラムへのアタッチとデタッチ |Microsoft Docs
+description: デバッガーをアタッチするための適切な属性を使用して、メソッドとイベントの正しいシーケンスを送信する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a751e6aa70c1aacd5df598e0c0e62da3b9d14b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b71a78dcee62f89dee4c54b53c1026f42895793
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903151"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913790"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>プログラムへのアタッチとデタッチ
 デバッガーをアタッチするには、適切な属性を持つメソッドとイベントの正しいシーケンスを送信する必要があります。

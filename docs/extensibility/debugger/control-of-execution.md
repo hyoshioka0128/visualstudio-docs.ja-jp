@@ -1,5 +1,7 @@
 ---
 title: 実行の制御 |Microsoft Docs
+description: イベントの停止について説明します。これは、ユーザーからの応答を IDE で待機することを意味します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387006"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913881"
 ---
 # <a name="control-of-execution"></a>実行の制御
 デバッグエンジン (DE) は、通常、次のいずれかのイベントを最後のスタートアップイベントとして送信します。
@@ -39,11 +41,11 @@ ms.locfileid: "86387006"
 
 5. 関数のステップイン、ステップオーバー、またはその一部を実行することをユーザーが決めた場合、IDE はデバッグセッションに対してプログラムのメソッドの呼び出しを求め `Step` ます。 次に、IDE はステップの単位 (命令、ステートメント、または行) とステップの種類 (関数のステップイン、ステップオーバー、またはアウトするかどうか) を渡します。 ステップが完了すると、DE はデバッグセッションにステップ完了イベントを送信します。これは停止イベントです。
 
-    - または -
+    または
 
     ユーザーが現在の命令ポインターからの実行を続行することにした場合、IDE はプログラムの **Execute** メソッドを呼び出すようにデバッグセッションに要求します。 プログラムは、次の停止条件に到達するまで実行を再開します。
 
-    - または -
+    または
 
     デバッグセッションが特定の停止イベントを無視するようになっている場合、デバッグセッションはプログラムの **Continue** メソッドを呼び出します。 プログラムが停止条件を検出したときに関数のステップイン、ステップオーバー、またはログアウトを行っていた場合は、手順を続行します。
 
@@ -60,4 +62,4 @@ ms.locfileid: "86387006"
    SDM による呼び出しが非同期に行われます `Step` 。これは、sdm が呼び出しを迅速に返すことを期待することを意味します。 **Execute** **Continue** DE が、実行前、または続行する前に、同じスレッド上で SDM を停止イベントを送信すると、 `Step` sdm は応答を停止します。 **Execute** **Continue**
 
 ## <a name="see-also"></a>関連項目
-- [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)
+- [タスクをデバッグする](../../extensibility/debugger/debugging-tasks.md)

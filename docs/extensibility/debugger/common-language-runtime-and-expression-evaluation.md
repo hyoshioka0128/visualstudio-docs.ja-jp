@@ -1,5 +1,7 @@
 ---
 title: 共通言語ランタイムおよび式の評価 |Microsoft Docs
+description: 共通言語ランタイムがデバッグエンジンとどのように対話するか、および独自のプログラミング言語を Visual Studio IDE に統合する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7c120ac1da59ab86e9419bcb031af46f1b3d900
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739113"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914258"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>共通言語ランタイムおよび式の評価
 > [!IMPORTANT]
@@ -24,7 +26,7 @@ ms.locfileid: "80739113"
 
  共通言語ランタイム (CLR) を対象とする Visual Basic や C# (C シャープ) などのコンパイラは、後でネイティブコードにコンパイルされる Microsoft 中間言語 (MSIL) を生成します。 CLR には、結果のコードをデバッグするためのデバッグエンジン (DE) が用意されています。 独自のプログラミング言語を Visual Studio IDE に統合する予定がある場合は、MSIL にコンパイルすることを選択できます。そのため、独自の DE を記述する必要はありません。 ただし、プログラミング言語のコンテキスト内で式を評価できる式エバリュエーター (EE) を作成する必要があります。
 
-## <a name="discussion"></a>考察 (Discussion)
+## <a name="discussion"></a>ディスカッション
  通常、コンピューターの言語式は、データオブジェクトのセットとそれらを操作するために使用される一連の演算子を生成するために解析されます。 たとえば、式 "A + B" を解析して、加算演算子 (+) をデータオブジェクト "A" と "B" に適用すると、別のデータオブジェクトが生成される可能性があります。 データオブジェクト、演算子、およびそれらの関連付けの合計セットは、多くの場合、プログラムではツリーとして表され、ツリーのノードと分岐のデータオブジェクトには演算子があります。 ツリー形式に分類された式は、多くの場合、解析されたツリーと呼ばれます。
 
  式が解析されると、各データオブジェクトを評価するためにシンボルプロバイダー (SP) が呼び出されます。 たとえば、"A" が2つ以上の方法で定義されている場合、 の値を確かめるする前に、応答する必要があります。 SP によって返される応答は、"5 番目のスタックフレームの3番目の項目" または "このメソッドに割り当てられた静的メモリの先頭を超える50バイトの A" のようになります。
