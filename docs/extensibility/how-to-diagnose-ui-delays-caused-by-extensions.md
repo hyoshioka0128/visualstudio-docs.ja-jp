@@ -1,17 +1,19 @@
 ---
 title: Visual Studio での拡張 UI 遅延の診断 |Microsoft Docs
+description: 拡張機能によって UI の遅延が発生する可能性がある場合は、Visual Studio によって通知されます。 拡張コードで UI の遅延が発生している内容を診断する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75849148"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994265"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
@@ -71,7 +73,7 @@ PerfView がトレースコレクションを開始したら、通知を再度�
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>アクティビティログを調べて遅延 ID を取得します
 
-既に説明したように、 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*でアクティビティログを見つけることができます。 Visual Studio は、拡張 UI の遅延を検出するたびに、ソースとしてを使用して、アクティビティログにノードを書き込み `UIDelayNotifications` ます。 このノードには、UI の遅延に関する4つの情報が含まれています。
+既に説明したように、 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* でアクティビティログを見つけることができます。 Visual Studio は、拡張 UI の遅延を検出するたびに、ソースとしてを使用して、アクティビティログにノードを書き込み `UIDelayNotifications` ます。 このノードには、UI の遅延に関する4つの情報が含まれています。
 
 - UI 遅延 ID。 VS セッションで UI 遅延を一意に識別するための連続した数値です。
 - 開始から終了までの Visual Studio セッションを一意に識別するセッション ID。
@@ -102,7 +104,7 @@ PerfView がトレースコレクションを開始したら、通知を再度�
 次に、左側のウィンドウでトレースファイルを選択し、右クリックまたはコンテキストメニューから [ **開く** ] を選択して開きます。
 
 > [!NOTE]
-> 既定では、PerfView は Zip アーカイブを出力します。 *trace.zip*を開くと、アーカイブが自動的に圧縮解除され、トレースが開きます。 トレースの収集中に [ **Zip** ] ボックスをオフにすることで、これをスキップできます。 ただし、異なるコンピューター間でトレースを転送して使用する場合は、 **Zip** ボックスをオフにしないことを強くお勧めします。 このオプションを指定しない場合、Ngen アセンブリに必要な Pdb はトレースに含まれないため、Ngen アセンブリからのシンボルは対象のコンピューターで解決されません。 (Ngen アセンブリの Pdb の詳細については、こちらの [ブログ投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) を参照してください。)
+> 既定では、PerfView は Zip アーカイブを出力します。 *trace.zip* を開くと、アーカイブが自動的に圧縮解除され、トレースが開きます。 トレースの収集中に [ **Zip** ] ボックスをオフにすることで、これをスキップできます。 ただし、異なるコンピューター間でトレースを転送して使用する場合は、 **Zip** ボックスをオフにしないことを強くお勧めします。 このオプションを指定しない場合、Ngen アセンブリに必要な Pdb はトレースに含まれないため、Ngen アセンブリからのシンボルは対象のコンピューターで解決されません。 (Ngen アセンブリの Pdb の詳細については、こちらの [ブログ投稿](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) を参照してください。)
 
 PerfView がトレースを処理して開くには、数分かかることがあります。 トレースが開かれると、その下にさまざまな "ビュー" の一覧が表示されます。
 
@@ -110,7 +112,7 @@ PerfView がトレースを処理して開くには、数分かかることが�
 
 まず、 **イベント** ビューを使用して、UI 遅延の時間範囲を取得します。
 
-1. トレースの**Events**下にあるノードを選択 `Events` し、右クリックまたはコンテキストメニューから [**開く**] を選択して、イベントビューを開きます。
+1. トレースの下にあるノードを選択 `Events` し、右クリックまたはコンテキストメニューから [**開く**] を選択して、イベントビューを開きます。
 2. 左側のウィンドウで [] を選択し `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` ます。
 3. Enter キーを押します
 
@@ -126,11 +128,11 @@ PerfView がトレースを処理して開くには、数分かかることが�
 * 遅延開始は 12125.679-6143.085 = 5982.594 です。
 * UI 遅延時間の範囲は 5982.594 ~ 12125.679 です。
 
-時間範囲を設定したら、[ **イベント** ] ビューを閉じて、[ **スレッド時間 (startstop アクティビティを含む)] スタック** ビューを開くことができます。 このビューは特に便利です。なぜなら、UI スレッドをブロックしている拡張機能は、他のスレッドまたは i/o バインド操作を待機しているだけなのです。 そのため、ほとんどの場合、[ **Cpu スタック** ] ビューは、その時間に cpu を使用していないためにスレッドがブロックする時間をキャプチャしない可能性があります。 **スレッド時間スタック**は、ブロック時間を適切に表示することで、この問題を解決します。
+時間範囲を設定したら、[ **イベント** ] ビューを閉じて、[ **スレッド時間 (startstop アクティビティを含む)] スタック** ビューを開くことができます。 このビューは特に便利です。なぜなら、UI スレッドをブロックしている拡張機能は、他のスレッドまたは i/o バインド操作を待機しているだけなのです。 そのため、ほとんどの場合、[ **Cpu スタック** ] ビューは、その時間に cpu を使用していないためにスレッドがブロックする時間をキャプチャしない可能性があります。 **スレッド時間スタック** は、ブロック時間を適切に表示することで、この問題を解決します。
 
 ![PerfView 概要ビューのスレッド時間 (StartStop アクティビティを含む) スタックノード](media/perfview-thread-time-with-startstop-activities-stacks.png)
 
-**スレッド時間スタック**ビューを開くときに、分析を開始する**devenv**プロセスを選択します。
+**スレッド時間スタック** ビューを開くときに、分析を開始する **devenv** プロセスを選択します。
 
 ![UI 遅延分析のスレッド時間スタックビュー](media/ui-delay-thread-time-stacks.png)
 

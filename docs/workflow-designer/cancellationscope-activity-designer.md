@@ -1,6 +1,6 @@
 ---
-title: ワークフローデザイナー CancellationScope アクティビティデザイナー
-description: CancellationScope アクティビティデザイナーを使用して、CancellationScope アクティビティを作成および構成する方法について説明します。
+title: CancellationScope アクティビティデザイナー
+description: ワークフローデザイナーの CancellationScope アクティビティデザイナーを使用して、CancellationScope アクティビティを作成および構成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434442"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993238"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope アクティビティ デザイナー
 
@@ -29,21 +29,21 @@ ms.locfileid: "94434442"
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>CancellationScope アクティビティ デザイナーの使用
 
-**CancellationScope** アクティビティデザイナーは、[ **ツールボックス** ] の [ **トランザクション** ] カテゴリにあります。 **ツールボックス** を開くには、ワークフローデザイナーの [ **ツールボックス** ] タブを選択します。 または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
+**CancellationScope** アクティビティデザイナーは、[**ツールボックス**] の [**トランザクション**] カテゴリにあります。 **ツールボックス** を開くには、ワークフローデザイナーの [**ツールボックス**] タブを選択します。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
 
-**CancellationScope** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 **CancellationScope** アクティビティデザイナーを削除する <xref:System.Activities.Statements.CancellationScope> と、既定値の CancellationScope を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 <xref:System.Activities.Activity.DisplayName%2A> **CancellationScope** アクティビティデザイナーのヘッダーの値を編集します。 また、プロパティグリッドの [ **DisplayName** ] ボックスで編集することもできます。
+**CancellationScope** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 **CancellationScope** アクティビティデザイナーを削除する <xref:System.Activities.Statements.CancellationScope> と、既定値の CancellationScope を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 <xref:System.Activities.Activity.DisplayName%2A> **CancellationScope** アクティビティデザイナーのヘッダーの値を編集します。 また、プロパティグリッドの [ **DisplayName** ] ボックスで編集することもできます。
 
 ### <a name="the-cancellationscope-properties"></a>CancellationScope プロパティ
 
 次の表に、<xref:System.Activities.Statements.CancellationScope> のプロパティと、デザイナーでのその使用方法を示します。 プロパティは <xref:System.Activities.Activity.DisplayName%2A> プロパティグリッドで編集できますが、その他のプロパティはワークフローデザイナー画面で編集する必要があります。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.CancellationScope> アクティビティの省略可能な表示名。 既定では、CancellationScope です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|○|取り消しロジックの対象となるアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.CancellationScope.Body%2A> 、 **CancellationScope** アクティビティデザイナーの [ **Body** ] ボックスに、[ **ツールボックス** ] からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|○|取り消しが発生した場合に実行されるアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 、 **CancellationScope** アクティビティデザイナーの [ **CancellationHandler** ] ボックスに、[ **ツールボックス** ] からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> アクティビティの省略可能な表示名。 既定では、CancellationScope です。 <xref:System.Activities.Activity.DisplayName%2A> 値は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|取り消しロジックの対象となるアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.CancellationScope.Body%2A> 、 **CancellationScope** アクティビティデザイナーの [ **Body** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|取り消しが発生した場合に実行されるアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 、 **CancellationScope** アクティビティデザイナーの [ **CancellationHandler** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [トランザクション](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

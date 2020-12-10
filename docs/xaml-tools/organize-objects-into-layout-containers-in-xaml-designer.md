@@ -1,5 +1,5 @@
 ---
-title: XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
+title: オブジェクトのレイアウト コンテナーへの編成
 description: グリッド、キャンバス、罫線、Viewbox など、ページ上のオブジェクトの配置に使用される XAML デザイナーのレイアウトパネルとコントロールについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 07/17/2020
@@ -8,12 +8,12 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6df200c5adb4993d13e896eaa6d2041e0e9db044
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047351"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995526"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "93047351"
 
 ## <a name="layout-panels"></a>レイアウト パネル
 
-いずれかのレイアウト パネルを選択して、ページを開始します。 ページは、複数にすることができます。 たとえば、 **グリッド** レイアウト パネルで開始してから **StackPanel** を **グリッド** 内の領域に追加することがあります。そうすることで、その要素内でコントロールを縦方向に配置できます。
+いずれかのレイアウト パネルを選択して、ページを開始します。 ページは、複数にすることができます。 たとえば、**グリッド** レイアウト パネルで開始してから **StackPanel** を **グリッド** 内の領域に追加することがあります。そうすることで、その要素内でコントロールを縦方向に配置できます。
 
 次のレイアウト パネルは最もよく使用されますが、他にもレイアウト パネルがあります。 Visual Studio の **ツールボックス** または Blend for Visual Studio の **[資産]** パネルでこれらすべてを見つけることができます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "93047351"
 
 ### <a name="dockpanel"></a>DockPanel
 
-オブジェクトをパネルの 1 辺に沿うように ( *ドッキング* して) 整列します。
+オブジェクトをパネルの 1 辺に沿うように (*ドッキング* して) 整列します。
 
 (WPF プロジェクトでのみ使用可能)
 
@@ -81,7 +81,7 @@ ms.locfileid: "93047351"
 
 次のレイアウト コントロールは最もよく利用されますが、他にもレイアウト コントロールがあります。 Visual Studio の **ツールボックス** または Blend for Visual Studio の **[資産]** パネルでこれらすべてを見つけることができます。
 
-### <a name="border"></a>境界線
+### <a name="border"></a>罫線
 
 罫線、背景、またはその両方をオブジェクトの周りに作成します。 **境界線** に対して追加できるオブジェクトは 1 つのみです。 複数のオブジェクトに境界線や背景を適用する場合は、レイアウト パネルを **境界線** に追加します。 次に、オブジェクトをそのパネルまたはコントロールに追加します。
 
@@ -89,11 +89,11 @@ ms.locfileid: "93047351"
 
 ### <a name="popup"></a>ポップアップ
 
-ウィンドウで情報またはオプションをユーザーに表示します。 **ポップアップ** に対して追加できるオブジェクトは 1 つのみです。 既定では、 **ポップアップ** には **グリッド** が含まれていますが、これは変更することができます。
+ウィンドウで情報またはオプションをユーザーに表示します。 **ポップアップ** に対して追加できるオブジェクトは 1 つのみです。 既定では、**ポップアップ** には **グリッド** が含まれていますが、これは変更することができます。
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-ページまたはページの領域を下にスクロールできるようになります。 **ScrollViewer** に追加できるオブジェクトは 1 つのみであるため、 **グリッド** や **StackPanel** などのレイアウト パネルを追加することには意味があります。
+ページまたはページの領域を下にスクロールできるようになります。 **ScrollViewer** に追加できるオブジェクトは 1 つのみであるため、**グリッド** や **StackPanel** などのレイアウト パネルを追加することには意味があります。
 
 ![ScrollViewer レイアウト コントロール](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "93047351"
 
 ![ViewBox レイアウト コントロール](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [XAML デザイナーで要素を操作する](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [XAML デザイナーを使用して UI を作成する](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

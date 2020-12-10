@@ -1,5 +1,7 @@
 ---
 title: ラウンドトリップ拡張機能について
+description: Visual studio の機能拡張プロジェクトを visual studio 2015 と visual studio 2019 または visual studio 2017 間でラウンドトリップさせる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387279"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993615"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>方法: 拡張機能を Visual Studio 2019/2017 および Visual Studio 2015 と互換性を持たせる
 
@@ -29,7 +31,7 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 1. 適切な NuGet パッケージをインポートします。
 2. 拡張機能マニフェストを更新します。
     * インストールの対象
-    * 前提条件
+    * 必須コンポーネント
 3. CSProj を更新します。
     * `<MinimumVisualStudioVersion>` を更新します。
     * `<VsixType>` プロパティを追加します。
@@ -45,19 +47,19 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 * VS SDK がインストールされた Visual Studio 2015
 * 拡張機能ワークロードがインストールされた Visual Studio 2019 または2017
 
-## <a name="recommended-approach"></a>推奨される方法
+## <a name="recommended-approach"></a>推奨されるアプローチ
 
 Visual studio 2019 または2017ではなく、Visual Studio 2015 を使用してこのアップグレードを開始することを強くお勧めします。 Visual Studio 2015 で開発を行う主な利点は、Visual Studio 2015 で利用できないアセンブリの参照を確実に排除できるという点です。 Visual Studio 2019 または2017で開発する場合、Visual Studio 2019 または2017にのみ存在するアセンブリに依存関係を導入するリスクがあります。
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>project.json への参照を確実に排除する
 
-このドキュメントの後半で、**.csproj* ファイルに条件付きインポートステートメントを挿入します。 これは、NuGet 参照が *project.js*に格納されている場合には機能しません。 そのため、すべての NuGet 参照を *packages.config* ファイルに移動することをお勧めします。
-プロジェクトにファイル * のproject.js* が含まれている場合:
+このドキュメントの後半で、**.csproj* ファイルに条件付きインポートステートメントを挿入します。 これは、NuGet 参照が *project.js* に格納されている場合には機能しません。 そのため、すべての NuGet 参照を *packages.config* ファイルに移動することをお勧めします。
+プロジェクトにファイル *のproject.js* が含まれている場合:
 
-* project.jsの参照をメモし * て*おきます。
-* **ソリューションエクスプローラー**から、ファイルの*project.js*をプロジェクトから削除します。 これにより、ファイルの *project.js* が削除され、プロジェクトから削除されます。
+* project.jsの参照をメモし *て* おきます。
+* **ソリューションエクスプローラー** から、ファイルの *project.js* をプロジェクトから削除します。 これにより、ファイルの *project.js* が削除され、プロジェクトから削除されます。
 * NuGet の参照をプロジェクトに再び追加します。
-  * **ソリューション**を右クリックし、[**ソリューションの NuGet パッケージの管理**] を選択します。
+  * **ソリューション** を右クリックし、[**ソリューションの NuGet パッケージの管理**] を選択します。
   * Visual Studio によって、 *packages.config* ファイルが自動的に作成されます。
 
 > [!NOTE]
@@ -69,12 +71,12 @@ Visual studio 2019 または2017ではなく、Visual Studio 2015 を使用し�
 
 Visual Studio 2015 と2019/2017 の両方で VSIXv3 をビルドしてデプロイするには、次の NuGet パッケージが必要です。
 
-Version | ビルド ツール
+バージョン | ビルド ツール
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2019 または2017 | Microsoft.VSSDK.BuildTool
 
-そのためには次を行います。
+次の手順に従います。
 
 * NuGet パッケージ Microsoft.VisualStudio.Sdk.BuildTasks.14.0 をプロジェクトに追加します。
 * プロジェクトに Microsoft.VSSDK.BuildTools が含まれていない場合は、追加します。
@@ -88,7 +90,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Visual Studio で *source.extension.vsixmanifest* ファイルを開きます。
 * **[Install Targets]\(インストールの対象)\** タブを開きます。
-* **バージョン範囲**を [14.0, 17.0) に変更します。 '[' は、14.0 とそれより前のすべてのバージョンを含めるよう Visual Studio に指示します。 ') ' は、バージョン17.0 までのすべてのバージョンを含むように Visual Studio に指示します。
+* **バージョン範囲** を [14.0, 17.0) に変更します。 '[' は、14.0 とそれより前のすべてのバージョンを含めるよう Visual Studio に指示します。 ') ' は、バージョン17.0 までのすべてのバージョンを含むように Visual Studio に指示します。
 * すべての変更を保存し、Visual Studio のすべてのインスタンスを閉じます。
 
 ![インストールの対象の画像](media/visual-studio-installation-targets-example.png)
@@ -122,7 +124,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 この手順を実行する間、変更した .csproj への参照を開いておくことを強くお勧めします。 [ここ](https://github.com/Microsoft/VSSDK-Extensibility-Samples)でいくつかの例を入手できます。 拡張機能のサンプルを選択し、参照用の *.csproj* ファイルを見つけて、次の手順を実行します。
 
-* **エクスプローラー**でプロジェクトディレクトリに移動します。
+* **エクスプローラー** でプロジェクトディレクトリに移動します。
 * テキストエディターを使用して *myproject* ファイルを開きます。
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. MinimumVisualStudioVersion を更新します。
@@ -153,7 +155,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 </PropertyGroup>
 ```
 
-* *.Csproj*ファイルと *.csproj*ファイルから、次のコード例のすべてのインスタンスを削除します。
+* *.Csproj* ファイルと *.csproj* ファイルから、次のコード例のすべてのインスタンスを削除します。
 
 ```xml
 <StartAction>Program</StartAction>
@@ -165,7 +167,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 `'$(VisualStudioVersion)' != '14.0' And`Condition ステートメントの前にを挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-次に例を示します。
+例:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +175,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 `'$(VisualStudioVersion)' == '14.0' And`Condition ステートメントの前にを挿入します。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-次に例を示します。
+例:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +183,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 これを行うには、条件付きステートメントの前に `'$(VisualStudioVersion)' != '14.0' And` を挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-次に例を示します。
+例:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +191,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 `'$(VisualStudioVersion)' == '14.0' And`Condition ステートメントの前にを挿入します。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-次に例を示します。
+例:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
@@ -205,12 +207,12 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 * Visual Studio 2015 でプロジェクトを開きます。
 * プロジェクトをビルドし、VSIX が正しくビルドされたことを出力で確認します。
 * プロジェクトディレクトリに移動します。
-* *\Bin\debug*フォルダーを開きます。
+* *\Bin\debug* フォルダーを開きます。
 * VSIX ファイルをダブルクリックし、Visual Studio 2015 および Visual Studio 2019/2017 に拡張機能をインストールします。
-* [インストール済み] セクションの [**ツール**] [  >  **拡張機能と更新プログラム**] に拡張機能が表示**さ**れていることを確認してください。
+* [インストール済み] セクションの [**ツール**] [  >  **拡張機能と更新プログラム**] に拡張機能が表示 **さ** れていることを確認してください。
 * 拡張機能を実行または使用して、機能することを確認します。
 
 ![VSIX の検索](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> **ファイルを開く**メッセージでプロジェクトが応答しなくなった場合は、Visual Studio を強制的にシャットダウンし、プロジェクトディレクトリに移動して、隠しフォルダーを表示し、 *vs*フォルダーを削除します。
+> **ファイルを開く** メッセージでプロジェクトが応答しなくなった場合は、Visual Studio を強制的にシャットダウンし、プロジェクトディレクトリに移動して、隠しフォルダーを表示し、 *vs* フォルダーを削除します。

@@ -1,6 +1,6 @@
 ---
-title: 'ワークフローデザイナー: アクティビティデリゲートを定義および使用する'
-description: .NET Framework 4.5 には、アクティビティデリゲートを定義および使用するために使用できる InvokeDelegate アクティビティ用の既定のデザイナーが用意されています。
+title: アクティビティ デリゲートの定義と使用
+description: ワークフローデザイナーでは、.NET Framework 4.5 に、アクティビティデリゲートを定義および使用するために使用できる InvokeDelegate アクティビティ用の既定のデザイナーが含まれていることについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437919"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993277"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する方法
 
@@ -28,31 +28,31 @@ ms.locfileid: "94437919"
    > [!NOTE]
    > **ワークフロー** プロジェクトテンプレートが表示されない場合は、まず Visual Studio の **Windows Workflow Foundation** コンポーネントをインストールします。 詳細については、「 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)」を参照してください。
 
-3. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[新しい項目の **追加** ] を選択し  >  **New Item** ます。 [ **ワークフロー** ] カテゴリを選択し、[ **アクティビティ** 項目] テンプレートを選択します。 新しいアクティビティに「 **Myforeach** 」という名前を指定し、[ **OK]** を選択します。
+3. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [ **ワークフロー** ] カテゴリを選択し、[ **アクティビティ** 項目] テンプレートを選択します。 新しいアクティビティに「 **Myforeach** 」という名前を指定し、[ **OK]** を選択します。
 
    アクティビティがワークフローデザイナーで開きます。
 
 4. ワークフローデザイナーで、[ **引数** ] タブをクリックします。
 
-5. [ **Create Argument** ] (引数の作成) をクリックします。 新しい引数の **項目** に名前を指定します。
+5. [**Create Argument**] (引数の作成) をクリックします。 新しい引数の **項目** に名前を指定します。
 
-6. [ **引数の型** ] 列で、 **[[T] の配列** ] を選択します。
+6. [ **引数の型** ] 列で、 **[[T] の配列**] を選択します。
 
 7. 型ブラウザーで [ **オブジェクト** ] を選択し、[ **OK]** を選択します。
 
-8. [ **引数の作成** ] をもう一度クリックします。 新しい引数の **本体** に名前を指定します。 新しい引数の [ **方向** ] 列で、[ **プロパティ** ] を選択します。
+8. [ **引数の作成** ] をもう一度クリックします。 新しい引数の **本体** に名前を指定します。 新しい引数の [ **方向** ] 列で、[ **プロパティ**] を選択します。
 
-9. [引数の型] 列で、[ **型の参照** ] を選択します。
+9. [引数の型] 列で、[**型の参照**] を選択します。
 
-10. 型ブラウザーで、[ **型名** ] フィールドに「 **activityaction** 」と入力します。 ツリービューで [ **Activityaction \<T>** ] を選択します。 表示されるドロップダウンで [ **オブジェクト** ] を選択して、引数に **activityaction \<Object>** 型を割り当てます。
+10. 型ブラウザーで、[**型名**] フィールドに「 **activityaction** 」と入力します。 ツリービューで [ **Activityaction \<T>** ] を選択します。 表示されるドロップダウンで [**オブジェクト**] を選択して、引数に **activityaction \<Object>** 型を割り当てます。
 
-11. <xref:System.Activities.Statements.While>ツールボックスの [ **制御フロー** ] セクションからデザイナー画面にアクティビティをドラッグします。
+11. <xref:System.Activities.Statements.While>ツールボックスの [**制御フロー** ] セクションからデザイナー画面にアクティビティをドラッグします。
 
 12. アクティビティを選択 <xref:System.Activities.Statements.While> し、[ **変数** ] タブを選択します。
 
-13. [ **変数の作成** ] を選択します。 新しい変数の **インデックス** に名前を付けます。
+13. [ **変数の作成**] を選択します。 新しい変数の **インデックス** に名前を付けます。
 
-14. [ **変数の型** ] 列で [ **Int32** ] を選択します。 [ **スコープ** **] はそのままにし** 、 **既定** の列は空白のままにします。
+14. [ **変数の型** ] 列で [ **Int32**] を選択します。 [ **スコープ** **] はそのままにし**、 **既定** の列は空白のままにします。
 
 15. アクティビティの **Condition** プロパティ <xref:System.Activities.Statements.While> を **Index < Items. Length;** に設定します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "94437919"
 
 4. **Myforeach** アクティビティの **Items** プロパティを **新しいオブジェクト [] {1, "abc"}** に設定します。
 
-5. <xref:System.Activities.Statements.WriteLine>ツールボックスの [ **プリミティブ** ] セクションから、 **Myforeach** アクティビティの [ **Delegate: Body** ] セクションにアクティビティをドラッグします。
+5. <xref:System.Activities.Statements.WriteLine>ツールボックスの [**プリミティブ**] セクションから、 **Myforeach** アクティビティの [ **Delegate: Body** ] セクションにアクティビティをドラッグします。
 
 6. アクティビティの **Text** プロパティ <xref:System.Activities.Statements.WriteLine> を **Argument. ToString ()** に設定します。
 

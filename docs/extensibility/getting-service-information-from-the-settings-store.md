@@ -1,5 +1,7 @@
 ---
 title: 設定ストアからサービス情報を取得しています |Microsoft Docs
+description: 設定ストアを使用して、使用可能なすべてのサービスを検索する方法、または特定のサービスがインストールされているかどうかを確認する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711373"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994434"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>設定ストアからサービス情報を取得する
 設定ストアを使用して、使用可能なすべてのサービスを検索したり、特定のサービスがインストールされているかどうかを判断したりできます。 サービスクラスの型を把握している必要があります。
@@ -22,7 +24,7 @@ ms.locfileid: "80711373"
 
 1. という名前の VSIX プロジェクトを作成し、と `FindServicesExtension` いう名前のカスタムコマンドを追加し `FindServicesCommand` ます。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. *FindServicesCommand.cs*で、次の using ディレクティブを追加します。
+2. *FindServicesCommand.cs* で、次の using ディレクティブを追加します。
 
     ```csharp
     using System.Collections.Generic;
@@ -80,4 +82,4 @@ ms.locfileid: "80711373"
 
 3. 実験用インスタンスで、[ **ツール** ] メニューの [ **Findサービスコマンドの呼び出し**] をクリックします。
 
-     " **Help Service Available**  " というテキストが表示されます。その後に **True** または **False**が続きます。 この設定を確認するには、前の手順で示したように、レジストリエディターを使用します。
+     " **Help Service Available**  " というテキストが表示されます。その後に **True** または **False** が続きます。 この設定を確認するには、前の手順で示したように、レジストリエディターを使用します。

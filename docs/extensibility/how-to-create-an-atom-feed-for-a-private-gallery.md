@@ -1,5 +1,7 @@
 ---
 title: '方法: プライベートギャラリーの Atom フィードを作成する |Microsoft Docs'
+description: 拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、そのフィードをプライベートギャラリーとして拡張機能と更新プログラムに追加することができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905862"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994148"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: プライベートギャラリーの Atom フィードを作成する
 拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、そのフィードをプライベートギャラリーとして **拡張機能と更新プログラム** に追加することができます。 詳細については、「 [プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
@@ -24,17 +26,17 @@ ms.locfileid: "85905862"
 ## <a name="create-an-atom-feed"></a>Atom フィードを作成する
  Atom フィードをプライベートギャラリーとして作成するには、まず、拡張機能 (*.vsix* ファイル) をフォルダーに集めます。 必要に応じて、サブフォルダーに整理することができます。 また、次のリソースも必要になります。
 
-- 拡張機能をプライベートギャラリーとして使用できるようにする *atom.xml* ファイル。 *atom.xml*ファイルを**拡張機能と更新プログラム**に接続する方法の詳細については、「[プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
+- 拡張機能をプライベートギャラリーとして使用できるようにする *atom.xml* ファイル。 *atom.xml* ファイルを **拡張機能と更新プログラム** に接続する方法の詳細については、「[プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
 
-- 拡張機能から抽出されたイメージファイル (スクリーンショットなど) を含むフォルダー。 *atom.xml*ファイルには、**拡張機能と更新プログラム**で使用できるように、これらのイメージへの相対リンクが含まれています。
+- 拡張機能から抽出されたイメージファイル (スクリーンショットなど) を含むフォルダー。 *atom.xml* ファイルには、**拡張機能と更新プログラム** で使用できるように、これらのイメージへの相対リンクが含まれています。
 
   たとえば、フォルダーに次の2つの拡張機能を収集したとします。
 
 - *Template_Wizard_239 .vsix。* これは空の vsix プロジェクトテンプレートです。
 
-- *Selectionhighlight。 .vsix*は、選択した単語のすべてのインスタンスを強調表示するツールです。
+- *Selectionhighlight。 .vsix* は、選択した単語のすべてのインスタンスを強調表示するツールです。
 
-  *atom.xml*ファイルの内容は、次の例のようになります。
+  *atom.xml* ファイルの内容は、次の例のようになります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -72,5 +74,5 @@ ms.locfileid: "85905862"
 
  2つのリンクタグが、生成されるイメージのフォルダー内のスクリーンショットを参照していることに注意してください。
 
-## <a name="see-also"></a>関連項目
-- [プライベートギャラリー](../extensibility/private-galleries.md)
+## <a name="see-also"></a>こちらもご覧ください
+- [プライベート ギャラリー](../extensibility/private-galleries.md)

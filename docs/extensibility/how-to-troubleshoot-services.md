@@ -1,5 +1,7 @@
 ---
 title: '方法: サービスのトラブルシューティング |Microsoft Docs'
+description: Visual Studio SDK でサービスを取得しようとしたときに発生する可能性のあるいくつかの一般的な問題のトラブルシューティング方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bfbe4b11c22d6cfd147783f9fb662843cf57fe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234953"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993693"
 ---
 # <a name="how-to-troubleshoot-services"></a>方法: サービスのトラブルシューティング
 サービスを取得しようとすると、いくつかの一般的な問題が発生する可能性があります。
@@ -66,7 +68,7 @@ if (log == null) return;
 
     ツールウィンドウがユーザーコントロールまたはその他のコントロールコンテナーをホストしている場合、コンテナーは Windows コンポーネントモデルによって配置され、どのサービスにもアクセスできません [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 を呼び出して、 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> コントロールコンテナー内から VSPackage service プロバイダーを取得できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [利用可能なサービスの一覧](../extensibility/internals/list-of-available-services.md)
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)
 - [サービスの基本事項](../extensibility/internals/service-essentials.md)

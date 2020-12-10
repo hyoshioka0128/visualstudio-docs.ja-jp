@@ -1,6 +1,6 @@
 ---
-title: ワークフローデザイナー-[.NET 型の参照と選択] ダイアログボックス
-description: '[.NET 型の参照と選択] ダイアログボックスを使用して、アセンブリとプロジェクトのツリービューから型を選択する方法について説明します。'
+title: '[.NET 型の参照と選択] ダイアログ ボックス'
+description: '[.NET 型の参照と選択] ダイアログボックスを使用して、ワークフローデザイナーのアセンブリおよびプロジェクトのツリービューから型を選択する方法について説明します。'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438179"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995487"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 
@@ -65,7 +65,7 @@ ms.locfileid: "94438179"
 
 [ **型名** ] ボックスの型の一覧は、一致を検索するためにさらに文字を入力すると短くなります。 入力した文字列で始まる fullyqualified 名を持つ型、または入力した文字列で短い名前を持つ型のみが、フィルター処理されたリストに表示されます。
 
-次に例を示します。
+例:
 
 1. 入力 **操作** はと一致 <xref:System.OperationCanceledException> しますが、は一致しません <xref:System.InvalidOperationException> 。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
@@ -75,6 +75,6 @@ ms.locfileid: "94438179"
 
 サービス コントラクト型を選択すると、型ブラウザーは <xref:System.ServiceModel.ServiceContractAttribute> 属性を持つ型だけを表示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)

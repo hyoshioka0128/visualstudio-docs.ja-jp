@@ -1,5 +1,7 @@
 ---
-title: '方法: プロジェクト固有のエディターを開く |Microsoft Docs'
+title: '方法: Project-Specific エディターを開く |Microsoft Docs'
+description: プロジェクト固有のエディターを使用して OpenItem メソッドを実装する方法について説明します。これにより、プロジェクトは、プロジェクトのエディターにバインドされたファイルを開くことができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22106ea09f86e3d61fe7aaa6e86e6e99c002f32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905804"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993784"
 ---
 # <a name="how-to-open-project-specific-editors"></a>方法: プロジェクト固有のエディターを開く
 プロジェクトによって開かれている項目ファイルが、そのプロジェクトの特定のエディターに本質的にバインドされている場合、プロジェクトはプロジェクト固有のエディターを使用してファイルを開く必要があります。 エディターを選択するための IDE のメカニズムにファイルを委任することはできません。 たとえば、標準のビットマップエディターを使用する代わりに、このプロジェクト固有のエディターオプションを使用して、プロジェクトに固有のファイル内の情報を認識する特定のビットマップエディターを指定できます。
@@ -51,7 +53,7 @@ ms.locfileid: "85905804"
 
 6. ビューを <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> 表示して開くには、メソッドを呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)
 - [方法: 開いているドキュメントのエディターを開く](../extensibility/how-to-open-editors-for-open-documents.md)

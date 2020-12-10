@@ -1,5 +1,7 @@
 ---
 title: '方法: サービスを取得する |Microsoft Docs'
+description: さまざまな機能にアクセスするために Visual Studio サービスを取得する方法について説明します。 ほとんどのサービスは、VSPackage を使用して取得できます。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a401103112096a1089b59ba3733d19480f93e891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a8f97900f1d400f3208a24ccc45ff9bbd774aeb
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905825"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994083"
 ---
 # <a name="how-to-get-a-service"></a>方法: サービスを取得する
 
@@ -29,9 +31,9 @@ Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Packag
 
 1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `GetServiceExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. 次に、 **Getservicecommand**という名前のカスタムコマンド項目テンプレートを追加します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *GetServiceCommand.cs*に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+2. 次に、 **Getservicecommand** という名前のカスタムコマンド項目テンプレートを追加します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *GetServiceCommand.cs* に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-3. *GetServiceCommand.cs*で、メソッドの本体を削除 `MenuItemCommand` し、次のコードを追加します。
+3. *GetServiceCommand.cs* で、メソッドの本体を削除 `MenuItemCommand` し、次のコードを追加します。
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -44,7 +46,7 @@ Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Packag
 
 4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
-5. 実験用インスタンスの [ **ツール** ] メニューで、[ **Getservicecommand の呼び出し** ] ボタンを探します。 このボタンをクリックすると、[**アクティビティログサービスが見つかりまし**た] というメッセージボックスが表示されます。
+5. 実験用インスタンスの [ **ツール** ] メニューで、[ **Getservicecommand の呼び出し** ] ボタンを探します。 このボタンをクリックすると、[**アクティビティログサービスが見つかりまし** た] というメッセージボックスが表示されます。
 
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>ツールウィンドウまたはコントロールコンテナーからサービスを取得する
 
@@ -70,7 +72,7 @@ DTE オブジェクトはを実装し <xref:Microsoft.VisualStudio.OLE.Interop.I
 ここでは、DTE オブジェクトからサービスを取得する方法について説明します。
 
 ```csharp
-// Start with the DTE object, for example: 
+// Start with the DTE object, for example: 
 // using EnvDTE;
 // DTE dte = (DTE)GetService(typeof(DTE));
 
@@ -85,7 +87,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [方法: サービスを提供する](../extensibility/how-to-provide-a-service.md)
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)

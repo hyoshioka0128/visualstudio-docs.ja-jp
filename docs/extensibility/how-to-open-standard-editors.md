@@ -1,5 +1,7 @@
 ---
 title: '方法: 標準エディターを開く |Microsoft Docs'
+description: 標準エディターを使用して OpenItem メソッドを実装する方法について説明します。 IDE では、指定されたファイルの種類の標準エディターが決定されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905795"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993771"
 ---
 # <a name="how-to-open-standard-editors"></a>方法: 標準エディターを開く
 標準エディターを開くと、ファイルのプロジェクト固有のエディターを指定するのではなく、指定したファイルの種類の標準エディターが IDE によって決定されます。
@@ -49,7 +51,7 @@ ms.locfileid: "85905795"
 
      ドキュメントビューまたはドキュメントビューオブジェクトがウィンドウフレームに正常に配置されている場合は、を呼び出すことによって、オブジェクトがそのデータで初期化され <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)

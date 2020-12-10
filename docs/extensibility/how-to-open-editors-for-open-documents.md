@@ -1,5 +1,7 @@
 ---
 title: '方法: 開いているドキュメントのエディターを開く |Microsoft Docs'
+description: 標準またはプロジェクト固有のエディターでファイルを開く方法について説明します。 プロジェクトがドキュメントウィンドウを開いたときに、ファイルが既に開いているかどうかを確認する必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f67a7fad5944e82087f520508ef9f4a66b7109d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905821"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993862"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>方法: 開いているドキュメントのエディターを開く
 プロジェクトでドキュメントウィンドウを開く前に、まず、そのファイルが別のエディターのドキュメントウィンドウで既に開いているかどうかを確認する必要があります。 このファイルは、プロジェクト固有のエディターで開くか、に登録されている標準エディターのいずれかで開くことができ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
@@ -52,7 +54,7 @@ ms.locfileid: "85905821"
 
 2. ドキュメントが開いていない場合は、 [「方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)」の手順を完了します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)
 - [方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)

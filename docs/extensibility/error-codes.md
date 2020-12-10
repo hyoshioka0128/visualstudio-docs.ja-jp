@@ -1,5 +1,7 @@
 ---
 title: エラーコード |Microsoft Docs
+description: この記事には、ソース管理プラグイン API 関数のエラーコード、値、および説明の一覧が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711837"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994720"
 ---
 # <a name="error-codes"></a>エラー コード
 ソース管理プラグイン API 関数からエラーが返された場合、次のエラーコードのいずれかである必要があります。 すべてのエラーは負、警告、または情報エラーコードは正の値であり、成功は0です。
@@ -72,12 +74,12 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 ```
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  引数として渡されたローカルファイルが作業フォルダーに存在しない場合、すべてのソース管理プラグイン API 関数 ( [Sccadd](../extensibility/sccadd-function.md)、 [Sccadd](../extensibility/scccheckin-function.md)、 [sccadd](../extensibility/sccdiff-function.md)を除く) が成功することが期待されます。 たとえば、IDE は、作業フォルダーに存在しないがソース管理システムに存在するファイルに対して、 [Scccheckout](../extensibility/scccheckout-function.md) または [SccUncheckout](../extensibility/sccuncheckout-function.md) への呼び出しを発行する場合があります。 この呼び出しは成功します。 作業フォルダーまたはソース管理システムにファイルが存在しない場合にのみ、関数は失敗します。
 
  やなどの特定の関数は、 `SccAdd` `SccCheckin` `SCC_E_FILENOTEXIST` 作業フォルダー内のファイルが存在しない場合に、を返す必要があります。 関数がソース管理システムの有効なファイル名で動作する場合、作業ファイルが存在しないときには、他の関数が成功すると想定されます。
 
  ソース管理プラグインは、操作中にプラグインがファイルを読み取り専用としてマークしていた場合でも、作業フォルダー内のファイルに対する権限についての仮定を行いません。 作業フォルダー内のファイルは、プラグインのコントロールの外部で移動、削除、および変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
