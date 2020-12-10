@@ -1,5 +1,7 @@
 ---
 title: エディターと言語サービスの拡張 |Microsoft Docs
+description: Windows Presentation Foundation を使用して実装され、マネージコードで記述されている Visual Studio code エディターのほとんどの機能を拡張できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78d85cd3651f8769104a61586bea1468e1c21cd2
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 2b15d5f970bfc6a32489991b578a54f2eadc96ea
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414075"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995825"
 ---
 # <a name="editor-and-language-service-extensions"></a>エディターと言語サービスの拡張機能
 Visual Studio code エディターのほとんどの機能を拡張できます。 このエディターは Windows Presentation Foundation (WPF) に基づいており、マネージコードで記述されています。 この設計は、以前のバージョンの Visual Studio の設計とは異なりますが、ほとんど同じ機能を提供します。 エディターを拡張するには、Managed Extensibility Framework (MEF) を使用します。
@@ -24,7 +26,7 @@ Visual Studio code エディターのほとんどの機能を拡張できます�
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|[説明]|
+|Title|説明|
 |-----------|-----------------|
 |[エディター項目テンプレートを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)|エディター項目テンプレートの使用方法について説明します。|
 |[エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)|コアエディターのデザインと機能を紹介するドキュメントへのリンクと、それを拡張する方法を示します。|

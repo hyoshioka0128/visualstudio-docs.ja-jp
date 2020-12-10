@@ -1,5 +1,7 @@
 ---
 title: エディターと言語サービスの拡張 |Microsoft Docs
+description: 言語サービス機能をエディターに追加し、Visual Studio コードエディターの機能を拡張することができます。 Managed Extensibility Framework について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413945"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995747"
 ---
 # <a name="extend-the-editor-and-language-services"></a>エディターと言語サービスの拡張
 独自のエディターに言語サービス機能 (IntelliSense など) を追加し、Visual Studio コードエディターのほとんどの機能を拡張することができます。  拡張できるものの完全な一覧については、「 [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)」を参照してください。
@@ -28,7 +30,7 @@ ms.locfileid: "93413945"
 
 ## <a name="related-topics"></a>関連トピック
 
-|Title|[説明]|
+|Title|説明|
 |-----------|-----------------|
 |[言語サービスとエディターの拡張機能を使ってみる](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|エディターの拡張機能を作成する方法について説明します。|
 |[エディター内](../extensibility/inside-the-editor.md)|エディターの一般的な構造について説明し、その機能の一部を示します。|

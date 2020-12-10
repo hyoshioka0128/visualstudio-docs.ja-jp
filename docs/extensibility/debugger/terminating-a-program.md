@@ -1,5 +1,7 @@
 ---
 title: プログラムを終了する |Microsoft Docs
+description: この記事では、IDE がデバッグエンジンを使用して1つのスレッドで1つのプログラムを終了する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b2b883611d5479f0febc169b32f7f378230be4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712521"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995981"
 ---
 # <a name="terminating-a-program"></a>プログラムを終了する
 次のセクションでは、1つのスレッドで1つのプログラムを終了する方法について説明します。
@@ -29,5 +31,5 @@ ms.locfileid: "80712521"
 
    IDE がデザインモードになります。 デバッグエンジンまたはランタイム環境は、 [IDebugPortNotify2:: RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) を呼び出して、ポートからプログラムを削除します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)

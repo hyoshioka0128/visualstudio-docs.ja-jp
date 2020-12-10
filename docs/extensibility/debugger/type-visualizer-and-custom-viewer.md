@@ -1,5 +1,7 @@
 ---
 title: 型ビジュアライザーとカスタムビューアー |Microsoft Docs
+description: 型ビジュアライザーコンポーネントとカスタムビューアーについて説明します。このビューアーには、データが特定の形式で表示され、それらの違いが表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712466"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995942"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>型ビジュアライザーとカスタムビューアー
 型ビジュアライザーは、特定の形式でデータを表示するコンポーネントです。 この形式は、ビジュアライザーを実装しているユーザーに対してのみ、エンドユーザーまたはビジュアライザーのサードパーティのサプライヤーです。
@@ -29,7 +31,7 @@ ms.locfileid: "80712466"
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>式エバリュエーターでのカスタムビューアーのサポート
  EE は、データ型を表示するためのコードを提供するカスタムビューアーをサポートすることもできます。 カスタムビューアーは、必要な形式でデータを表示するすべての作業を処理する [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) インターフェイスを実装します。ビューアーには、表示を完全に制御できます。また、データを変更することもできます。 EE によって提供されるカスタムビューアーには、製品の出荷時に EE が付属しています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)
 - [式エバリュエーター](../../extensibility/debugger/expression-evaluator.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)

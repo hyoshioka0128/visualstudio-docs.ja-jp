@@ -1,5 +1,7 @@
 ---
 title: ディレクトリ状態コード列挙子 |Microsoft Docs
+description: SccDirStatus 列挙子には、ソース管理システムのディレクトリの状態を指定し、SccDirQueryInfo によって使用される名前付き定数値が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72b9e14695cb954084abebc3a3c336c90af73d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712158"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996124"
 ---
 # <a name="directory-status-code-enumerator"></a>ディレクトリステータスコード列挙子
 列挙子には、 `SccDirStatus` ソース管理システム内のディレクトリの状態を指定する名前付き定数値が含まれます。 この列挙体は、 [Sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)によって使用されます。 これは、ソース管理プラグイン API のバージョン1.2 で導入されました。
@@ -25,10 +27,10 @@ ms.locfileid: "80712158"
 
 ```
 enum SccDirStatus {
-   SCC_DIRSTATUS_INVALID       = -1L,
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
+   SCC_DIRSTATUS_INVALID       = -1L,
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
 };
 ```
 
@@ -41,6 +43,6 @@ enum SccDirStatus {
 
  このディレクトリに対応する SCC_DIRSTATUS_EMPTYPROJ プロジェクトは空です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

@@ -1,5 +1,7 @@
 ---
 title: ドキュメントロック所有者の管理 |Microsoft Docs
+description: ユーザーがドキュメントウィンドウで開いているドキュメントを表示せずに、実行中のドキュメントテーブル内のドキュメントに対して編集ロックを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712122"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995903"
 ---
 # <a name="document-lock-holder-management"></a>ドキュメントロック所有者の管理
 
@@ -37,13 +39,13 @@ ms.locfileid: "80712122"
 
 ## <a name="additional-document-edit-lock-considerations"></a>ドキュメントの編集ロックに関する追加の考慮事項
 
-エディター "A" がファイル "b" に対してドキュメントの編集ロックを持つ唯一のエディターである場合、エディター "b" がファイル "b" に対してドキュメントの編集ロックを保持しているだけの場合、動作は異なります。 で [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、 **クラスデザイナー** は、関連付けられたコードファイルの編集ロックを保持しないビジュアルデザイナーの例です。 つまり、ユーザーがデザインビューでクラスダイアグラムを開いていて、関連付けられているコードファイルが同時に開いていて、ユーザーがコードファイルを変更しても変更を保存していない場合は、クラスダイアグラム (.cd) ファイルにも変更が反映されません。 **クラスデザイナー**にコードファイルに対する唯一のドキュメント編集ロックがある場合、ユーザーはコードファイルを閉じるときに変更を保存するように求められません。 IDE は、ユーザーが **クラスデザイナー**を閉じた後にのみ、変更を保存するようにユーザーに要求します。 保存された変更は両方のファイルに反映されます。 **クラスデザイナー**とコードファイルエディターの両方で、ドキュメントの編集ロックがコードファイルに保持されている場合、コードファイルまたはフォームを閉じるときにユーザーに保存を求めるメッセージが表示されます。 その時点で、保存された変更はフォームとコードファイルの両方に反映されます。 クラスダイアグラムの詳細については、「 [クラスダイアグラムの操作 (クラスデザイナー)](../ide/class-designer/designing-and-viewing-classes-and-types.md)」を参照してください。
+エディター "A" がファイル "b" に対してドキュメントの編集ロックを持つ唯一のエディターである場合、エディター "b" がファイル "b" に対してドキュメントの編集ロックを保持しているだけの場合、動作は異なります。 で [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、 **クラスデザイナー** は、関連付けられたコードファイルの編集ロックを保持しないビジュアルデザイナーの例です。 つまり、ユーザーがデザインビューでクラスダイアグラムを開いていて、関連付けられているコードファイルが同時に開いていて、ユーザーがコードファイルを変更しても変更を保存していない場合は、クラスダイアグラム (.cd) ファイルにも変更が反映されません。 **クラスデザイナー** にコードファイルに対する唯一のドキュメント編集ロックがある場合、ユーザーはコードファイルを閉じるときに変更を保存するように求められません。 IDE は、ユーザーが **クラスデザイナー** を閉じた後にのみ、変更を保存するようにユーザーに要求します。 保存された変更は両方のファイルに反映されます。 **クラスデザイナー** とコードファイルエディターの両方で、ドキュメントの編集ロックがコードファイルに保持されている場合、コードファイルまたはフォームを閉じるときにユーザーに保存を求めるメッセージが表示されます。 その時点で、保存された変更はフォームとコードファイルの両方に反映されます。 クラスダイアグラムの詳細については、「 [クラスダイアグラムの操作 (クラスデザイナー)](../ide/class-designer/designing-and-viewing-classes-and-types.md)」を参照してください。
 
 編集ロックをエディター以外のドキュメントに配置する必要がある場合は、インターフェイスを実装する必要があることに注意してください <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 。
 
 コードファイルをプログラムによって変更する UI デザイナーは、多くの場合、複数のファイルに変更を加えます。 このような場合、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> メソッドは、[ **次の項目に変更を保存しますか?** ] ダイアログボックスを使用して、1つまたは複数のドキュメントの保存を処理します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [実行 (ドキュメントテーブルを)](../extensibility/internals/running-document-table.md)
 - [永続化と実行中のドキュメントテーブル](../extensibility/internals/persistence-and-the-running-document-table.md)

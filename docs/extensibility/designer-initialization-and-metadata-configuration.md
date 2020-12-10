@@ -1,5 +1,7 @@
 ---
 title: デザイナーの初期化とメタデータの構成 |Microsoft Docs
+description: VSPackage によって、Visual Studio SDK がデザイナーまたはデザイナーコンポーネントの初期化とそのメタデータの制御を容易にする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011710"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996163"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>デザイナーの初期化とメタデータの構成
 
@@ -64,7 +66,7 @@ VSPackage は、次の方法でデザイナーの初期化を処理する必要�
 
 - Visual Studio 環境では、特定のプロバイダーによって変更されるメタデータやその他の構成設定を制御することはできません `DesignSurfaceExtension` 。 競合する方法で、2つ以上の `DesignSurfaceExtension` プロバイダーが同じデザイナー機能を変更し、最終的な変更が明確になる可能性があります。 どの変更が最後に適用されたかは不確定です。
 
-- <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>のインスタンスをその実装に適用することで、オブジェクトの実装を特定のデザイナーに明示的に制限することができ <xref:System.ComponentModel.ToolboxItemFilterAttribute> ます。 **ツールボックス**項目のフィルター処理の詳細については、「」および「」を参照してください <xref:System.ComponentModel.ToolboxItemFilterAttribute> <xref:System.ComponentModel.ToolboxItemFilterType> 。
+- <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>のインスタンスをその実装に適用することで、オブジェクトの実装を特定のデザイナーに明示的に制限することができ <xref:System.ComponentModel.ToolboxItemFilterAttribute> ます。 **ツールボックス** 項目のフィルター処理の詳細については、「」および「」を参照してください <xref:System.ComponentModel.ToolboxItemFilterAttribute> <xref:System.ComponentModel.ToolboxItemFilterType> 。
 
 ## <a name="additional-metadata-provisioning"></a>追加のメタデータのプロビジョニング
 
@@ -97,7 +99,7 @@ Global フラグがに設定されている場合、 `false` メタデータの�
 > [!NOTE]
 > デザインサーフェイスはコンポーネントの作成のみをサポートするため、ローカルメタデータを持つことができるのはコンポーネントのみです。 上の例では、オブジェクトのプロパティなどのプロパティを変更しようとしてい `Color` ます。 `false`がグローバルフラグに渡された場合、 `CustomBrowser` デザイナーは実際にのインスタンスを作成することはないため、は表示されません `Color` 。 グローバルフラグをに設定すると、 `false` コントロール、タイマー、ダイアログボックスなどのコンポーネントに役立ちます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>

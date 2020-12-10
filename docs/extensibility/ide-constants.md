@@ -1,5 +1,7 @@
 ---
 title: IDE 定数 |Microsoft Docs
+description: VSConstants クラスは、以前にヘッダーファイルでのみ定義されていた IDE 固有の定数を提供します。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710499"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995565"
 ---
 # <a name="ide-constants"></a>IDE 定数
 
@@ -31,10 +33,10 @@ ms.locfileid: "80710499"
 
 |値|説明|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション**の選択] ダイアログボックス (この場合は、可能なコードビュー) を取得する必要があります。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して [ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> **ファイルを開くアプリケーション**の選択] ダイアログボックスを取得します。この場合は、 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> と同じビューにマップされるデバッグビューが設定され <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> ます。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション**の選択] ダイアログボックス (この場合は**フォーム**デザイナービュー) を取得します。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション**の選択] ダイアログボックス (この場合は、エディターファクトリの既定/プライマリビュー) を取得します。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション** の選択] ダイアログボックス (この場合は、可能なコードビュー) を取得する必要があります。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して [ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> **ファイルを開くアプリケーション** の選択] ダイアログボックスを取得します。この場合は、 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> と同じビューにマップされるデバッグビューが設定され <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> ます。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション** の選択] ダイアログボックス (この場合は **フォーム** デザイナービュー) を取得します。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 、[**ファイルを開くアプリケーション** の選択] ダイアログボックス (この場合は、エディターファクトリの既定/プライマリビュー) を取得します。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>ハンドラーは、この `cmdidOpenWith` 値をメソッドに渡して [ファイル <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> **を開くアプリケーション** の選択] ダイアログボックスを取得します。これは、ドキュメントエディターまたはデータテキストエディタービューに使用します。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`ハンドラーは、この値をメソッドに渡して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> ユーザーが使用するユーザー定義ビューを選択するように要求します。|
 
@@ -116,6 +118,6 @@ ms.locfileid: "80710499"
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [プロジェクトシステムを拡張するための IDE 定義コマンド](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
