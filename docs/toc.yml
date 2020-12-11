@@ -903,7 +903,7 @@
   href: debugger/index.yml
 - name: テスト >>
   displayName: Unit testing
-  href: test/improve-code-quality.md
+  href: test/index.yml
 - name: パフォーマンスの測定 >>
   displayName: Profiling
   href: profiling/index.yml
