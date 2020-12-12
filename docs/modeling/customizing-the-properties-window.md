@@ -1,5 +1,7 @@
 ---
 title: プロパティ ウィンドウのカスタマイズ
+description: Visual Studio でドメイン固有言語 (DSL) の [プロパティ] ウィンドウの外観と動作をカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548279"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362875"
 ---
 # <a name="customize-the-properties-window"></a>プロパティウィンドウをカスタマイズする
 
@@ -40,13 +42,13 @@ DSL 定義でプロパティの名前を設定すると、その表示名が自�
 
 DSL 定義でシェイプクラスを右クリックし、[ **公開の追加**] をポイントして、機能を選択します。
 
-図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および **FillGradientMode** の各プロパティを公開できます。 コネクタで**は、** `,` **textcolor**、**ダッシュスタイル**、および**太さ**の各プロパティを公開できます。 ダイアグラムでは、 **FillColor** プロパティと **textcolor** プロパティを公開できます。
+図形では、 **FillColor**、 **OutlineColor**、 **textcolor**、 **OutlineDashStyle**、 **OutlineThickness** 、および **FillGradientMode** の各プロパティを公開できます。 コネクタで **は、** `,` **textcolor**、**ダッシュスタイル**、および **太さ** の各プロパティを公開できます。 ダイアグラムでは、 **FillColor** プロパティと **textcolor** プロパティを公開できます。
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>転送: 関連する要素のプロパティを表示します。
 
 DSL のユーザーがモデル内の要素を選択すると、その要素のプロパティが [プロパティ] ウィンドウに表示されます。 ただし、指定された関連要素のプロパティを表示することもできます。 これは、連携して動作する要素のグループを定義している場合に便利です。 たとえば、main 要素とオプションのプラグイン要素を定義することができます。 メイン要素が図形にマップされていて、もう一方が図形でない場合は、すべてのプロパティを1つの要素上にあるかのように表示すると便利です。
 
-この効果は *プロパティ転送*と呼ばれ、いくつかのケースで自動的に発生します。 それ以外の場合は、ドメイン型記述子を定義することで、プロパティの転送を実現できます。
+この効果は *プロパティ転送* と呼ばれ、いくつかのケースで自動的に発生します。 それ以外の場合は、ドメイン型記述子を定義することで、プロパティの転送を実現できます。
 
 ### <a name="default-property-forwarding-cases"></a>既定のプロパティ転送ケース
 
@@ -62,7 +64,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 ### <a name="add-property-forwarding"></a>プロパティ転送の追加
 
-プロパティを転送するには、ドメイン型記述子を定義します。 2つのドメインクラス間にドメインリレーションシップがある場合は、ドメイン型記述子を使用して、最初のクラスのドメインプロパティを2番目のドメインクラスのドメインプロパティの値に設定できます。 たとえば、**書籍**ドメインクラスと**作成者**ドメインクラスとの間にリレーションシップがある場合、ドメイン型記述子を使用して、ユーザーが本を選択したときに本の**著者**の**Name**プロパティをプロパティウィンドウに表示させることができます。
+プロパティを転送するには、ドメイン型記述子を定義します。 2つのドメインクラス間にドメインリレーションシップがある場合は、ドメイン型記述子を使用して、最初のクラスのドメインプロパティを2番目のドメインクラスのドメインプロパティの値に設定できます。 たとえば、**書籍** ドメインクラスと **作成者** ドメインクラスとの間にリレーションシップがある場合、ドメイン型記述子を使用して、ユーザーが本を選択したときに本の **著者** の **Name** プロパティをプロパティウィンドウに表示させることができます。
 
 > [!NOTE]
 > プロパティ転送は、ユーザーがモデルを編集している場合にのみプロパティウィンドウに影響します。 受信側クラスのドメインプロパティは定義されません。 DSL 定義またはプログラムコードの他の部分で転送されたドメインプロパティにアクセスするには、転送する要素にアクセスする必要があります。
@@ -71,11 +73,11 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 #### <a name="forward-a-property-from-another-element"></a>別の要素からプロパティを転送する
 
-1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]少なくとも2つのクラスを含むソリューションを作成します。この例では、 **Book**と**Author**と呼ばれています。 **本**と**著者**の間には、どちらの種類のリレーションシップもあります。
+1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]少なくとも2つのクラスを含むソリューションを作成します。この例では、 **Book** と **Author** と呼ばれています。 **本** と **著者** の間には、どちらの種類のリレーションシップもあります。
 
-    各**ブック**に1つの**作成者**が含まれるように、ソースロール (**書籍**側のロール) の多重度は 0 ..1 または 1 ..1 にする必要があります。
+    各 **ブック** に1つの **作成者** が含まれるように、ソースロール (**書籍** 側のロール) の多重度は 0 ..1 または 1 ..1 にする必要があります。
 
-2. **DSL エクスプローラー**で、[ **Book** domain] クラスを右クリックし、[ **Add New domaintypedescriptor**] をクリックします。
+2. **DSL エクスプローラー** で、[ **Book** domain] クラスを右クリックし、[ **Add New domaintypedescriptor**] をクリックします。
 
     カスタム **プロパティ記述子のパス** という名前のノードが、 **カスタム型記述子** ノードの下に表示されます。
 
@@ -87,9 +89,9 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
     このプロパティの右側にある下矢印をクリックすると、ツリービューでパスを編集できます。 ドメインパスの詳細については、「 [ドメインパス構文](../modeling/domain-path-syntax.md)」を参照してください。 編集が完了したら、パスは "ブック名の **作成者/!" に似ています。作成者**。
 
-5. **プロパティ**を**作成者**の**名前**ドメインプロパティに設定します。
+5. **プロパティ** を **作成者** の **名前** ドメインプロパティに設定します。
 
-6. **表示名**を "**作成者名**" に設定します。
+6. **表示名** を "**作成者名**" に設定します。
 
 7. すべてのテンプレートを変換し、DSL を構築して実行します。
 
@@ -113,13 +115,13 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 ### <a name="define-a-domain-property-that-has-an-external-type"></a>外部型を持つドメインプロパティを定義する
 
-1. **ソリューションエクスプローラー**で、 **Dsl**プロジェクトの外部型を含むアセンブリ (DLL) への参照を追加します。
+1. **ソリューションエクスプローラー** で、 **Dsl** プロジェクトの外部型を含むアセンブリ (DLL) への参照を追加します。
 
     アセンブリには、.NET アセンブリまたはユーザーが指定したアセンブリを使用できます。
 
 2. [ **ドメインの種類** ] ボックスの一覧に型を追加します (まだ作成していない場合)。
 
-   1. DslDefinition を開きます。 **Dsl エクスプローラー**で、ルートノードを右クリックし、[ **新しい外部型の追加**] をクリックします。
+   1. DslDefinition を開きます。 **Dsl エクスプローラー** で、ルートノードを右クリックし、[ **新しい外部型の追加**] をクリックします。
 
         [ **ドメインの種類** ] ノードの下に新しいエントリが表示されます。
 
@@ -146,7 +148,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 プロパティの属性を設定するには、プロパティウィンドウの **カスタム属性** エントリを使用します。
 
-の型は、 `AnEditor` 2 番目のパラメーターで指定された型から派生する必要があります。 2番目のパラメーターは、またはのいずれかである必要があり <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.ComponentEditor> ます。 詳細については、 <xref:System.ComponentModel.EditorAttribute> を参照してください。
+の型は、 `AnEditor` 2 番目のパラメーターで指定された型から派生する必要があります。 2番目のパラメーターは、またはのいずれかである必要があり <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.ComponentEditor> ます。 詳細については、「<xref:System.ComponentModel.EditorAttribute>」を参照してください。
 
 独自のエディターまたは .NET エディター (やなど) を指定 <xref:System.Windows.Forms.Design.FileNameEditor> でき <xref:System.Drawing.Design.ImageEditor> ます。 たとえば、次の手順を使用して、ユーザーがファイル名を入力できるプロパティを設定します。
 
@@ -163,7 +165,7 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
     ```
 
-3. ドメインプロパティの型は、既定の **文字列**の設定でそのままにします。
+3. ドメインプロパティの型は、既定の **文字列** の設定でそのままにします。
 
 4. エディターをテストするには、ユーザーがファイル名エディターを開いてドメインのプロパティを編集できることを確認します。
 
@@ -183,12 +185,12 @@ DSL のユーザーがモデル内の要素を選択すると、その要素の�
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>エディターでダイアログボックスを開くか、ドロップダウンメニューを表示するかを指定します。
 
-プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには `GetPaintValueSupported` 、、、およびをオーバーライドし `PaintValue` ます。  詳細については、 <xref:System.Drawing.Design.UITypeEditor> を参照してください。
+プロパティグリッドに表示されるプロパティの値をグラフィカルに表示することもできます。 これを行うには `GetPaintValueSupported` 、、、およびをオーバーライドし `PaintValue` ます。  詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
 
 > [!NOTE]
-> **Dsl**プロジェクト内の別のコードファイルにコードを追加します。
+> **Dsl** プロジェクト内の別のコードファイルにコードを追加します。
 
-たとえば、次のように入力します。
+次に例を示します。
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -210,7 +212,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-詳細については、 <xref:System.Drawing.Design.UITypeEditor> を参照してください。
+詳細については、「<xref:System.Drawing.Design.UITypeEditor>」を参照してください。
 
 ## <a name="provide-a-drop-down-list-of-values"></a>値のドロップダウンリストを指定する
 
@@ -226,7 +228,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 (typeof(MyTypeConverter))]
 ```
 
-<xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl**プロジェクトの別のファイルにコードを追加します。 次に例を示します。
+<xref:System.ComponentModel.TypeConverter> から派生するクラスを定義します。 **Dsl** プロジェクトの別のファイルにコードを追加します。 次に例を示します。
 
 ```csharp
 /// <summary>

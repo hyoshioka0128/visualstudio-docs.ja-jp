@@ -1,5 +1,7 @@
 ---
 title: T4 インポート ディレクティブ
+description: Visual Studio T4 テキストテンプレートで、import ディレクティブを使用すると、完全修飾名を指定しなくても、別の名前空間の要素を参照できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2dbd42f42213e475452185475a69b1dd9fe5f8e0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591867"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363693"
 ---
 # <a name="t4-import-directive"></a>T4 インポート ディレクティブ
 
@@ -49,6 +51,6 @@ The file contains: <#=  fileContent #>
 
 - DSL の名前空間
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [T4 アセンブリ ディレクティブ](../modeling/t4-assembly-directive.md)

@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラム コード内のファイルからモデルを開く'
+description: ModelBus には、モデル内のモデルまたは要素を参照し、移動した場合はモデルを検索するための標準的なメカニズムが用意されていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532484"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363875"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 
@@ -20,18 +22,18 @@ DSL モデルは任意のアプリケーションで開くことができます�
 
 この目的には、Visual Studio 拡張機能から ModelBus を使用できます。 ModelBus には、モデル内のモデルまたは要素を参照したり、モデルが移動された場合にそのモデルを検索したりするための標準的なメカニズムが用意されています。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。
 
-## <a name="target-framework"></a>[対象とする Framework]
+## <a name="target-framework"></a>ターゲット フレーム
 
 アプリケーションプロジェクトの **ターゲットフレームワーク** を .NET Framework 4 以降に設定します。
 
 1. DSL モデルを読み取るアプリケーションの Visual Studio プロジェクトを開きます。
 
-2. **ソリューションエクスプローラー**で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
+2. **ソリューションエクスプローラー** で、プロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
 3. プロジェクトのプロパティウィンドウの [ **アプリケーション** ] タブで、[ **ターゲットフレームワーク** ] フィールドを **.NET Framework 4** (またはそれ以降) に設定します。
 
 > [!NOTE]
-> ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル**にすることはできません。
+> ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル** にすることはできません。
 
 ## <a name="references"></a>References
 
@@ -41,19 +43,19 @@ DSL モデルは任意のアプリケーションで開くことができます�
 
   - [**参照の追加**] ダイアログボックスの [ **.net** ] タブにこれが表示されない場合は、[**参照**] タブをクリックし、に移動し `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` ます。
 
-- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社*の形式です。*YourProject* `.Dsl.dll` 。
+- Dsl アセンブリ。 DSL プロジェクトの bin フォルダーの下にあります。 この名前は、通常、*会社* の形式です。*YourProject* `.Dsl.dll` 。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL の重要なクラス
 
-DSL を読み取るコードを記述する前に、DSL によって生成されたいくつかのクラスの名前がわかっている必要があります。 DSL ソリューションで、 **dsl** プロジェクトを開き、[作成された **コード** ] フォルダーを探します。 または、プロジェクト **参照**で dsl アセンブリをダブルクリックし、 **オブジェクトブラウザー**で dsl 名前空間を開きます。
+DSL を読み取るコードを記述する前に、DSL によって生成されたいくつかのクラスの名前がわかっている必要があります。 DSL ソリューションで、 **dsl** プロジェクトを開き、[作成された **コード** ] フォルダーを探します。 または、プロジェクト **参照** で dsl アセンブリをダブルクリックし、 **オブジェクトブラウザー** で dsl 名前空間を開きます。
 
 次のクラスを識別する必要があります。
 
 - *Dslrootclass* -これはのルートクラスの名前です `DslDefinition.dsl` 。
 
-- 自分の*Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトので定義されてい `SerializationHelper.cs` ます。
+- 自分の *Dslname* `SerializationHelper`-このクラスは、DSL プロジェクトので定義されてい `SerializationHelper.cs` ます。
 
-- 自分の*Dslname* `DomainModel`-このクラスは、DSL プロジェクトので定義されてい `DomainModel.cs` ます。
+- 自分の *Dslname* `DomainModel`-このクラスは、DSL プロジェクトので定義されてい `DomainModel.cs` ます。
 
 ## <a name="read-from-a-file"></a>ファイルのデータを読み取ります。
 

@@ -1,5 +1,7 @@
 ---
 title: '方法: 要素の CLR 属性を設定する'
+description: System.object クラスから継承する属性を追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,19 +13,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49551a5e96e3c354b54b6b2ba7cedf1ba2ab4470
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: df9f8b16edcbe575ebac67f4acde9111a9511b85
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811202"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363849"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>方法: 要素の CLR 属性を設定する
 カスタム属性は、ドメイン要素、図形、コネクタ、および図に追加できる特殊な属性です。 クラスから継承する任意の属性を追加でき `System.Attribute` ます。
 
 ### <a name="to-add-a-custom-attribute"></a>カスタム属性を追加するには
 
-1. **DSL エクスプローラー**で、カスタム属性を追加する要素を選択します。
+1. **DSL エクスプローラー** で、カスタム属性を追加する要素を選択します。
 
 2. [ **プロパティ** ] ウィンドウで、[ **カスタム属性** ] プロパティの横にある参照ボタン ([.**..**]) をクリックします。
 
@@ -37,10 +39,10 @@ ms.locfileid: "90811202"
 
 6. **[OK]** をクリックします。
 
-     **カスタム属性**プロパティの属性が次の形式で表示されるようになりました。
+     **カスタム属性** プロパティの属性が次の形式で表示されるようになりました。
 
      `[`*AttributeName* `(`*ParameterName* `=`*型*`)]`
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

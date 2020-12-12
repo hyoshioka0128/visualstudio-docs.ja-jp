@@ -1,5 +1,7 @@
 ---
 title: コードマップのエクスポートと保存
+description: コードマップを Visual Studio プロジェクトの一部として、またはイメージとして、または XPS ファイルとして保存する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542572"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363771"
 ---
 # <a name="share-code-maps"></a>コード マップの共有
 
@@ -22,9 +24,9 @@ ms.locfileid: "85542572"
 
 マップを保存するには、 **[ファイル]** メニューを使用します。
 
-- または -
+または
 
-マップを特定のプロジェクトの一部として保存するには、マップのツールバーで [**共有**] [移動] の順に選択し、  >  マップを保存するプロジェクトを選択します。** \<CodeMapName> **
+マップを特定のプロジェクトの一部として保存するには、マップのツールバーで [**共有**] [移動] の順に選択し、  >  マップを保存するプロジェクトを選択します。**\<CodeMapName>**
 
 ![マップを別のプロジェクトに移動する](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +45,7 @@ Visual Studio では、マップは .dgml ファイルとして保存され *ま
 
 コードマップをイメージとしてエクスポートする場合は、Microsoft Word や PowerPoint などの他のアプリケーションにコピーできます。
 
-1. コードマップのツールバーで、 **Share**[  >  **電子メールをイメージとして**共有] または [**イメージのコピー**] を選択します。
+1. コードマップのツールバーで、 [  >  **電子メールをイメージとして** 共有] または [**イメージのコピー**] を選択します。
 
 2. そのイメージを他のアプリケーションに貼り付けます。
 
@@ -51,11 +53,11 @@ Visual Studio では、マップは .dgml ファイルとして保存され *ま
 
 コードマップを XPS ファイルとしてエクスポートすると、Internet Explorer のような XML または XAML ビューアーで表示できます。
 
-1. コードマップツールバーで、[ **Share**  >  **電子メールをポータブル xps として**共有] または [**ポータブル xps として保存**] を選択します。
+1. コードマップツールバーで、[   >  **電子メールをポータブル xps として** 共有] または [**ポータブル xps として保存**] を選択します。
 
 2. ファイルを保存する場所を参照します。
 
-3. コード マップの名前を付けます。 [ **名前を付けて保存** ] ボックスが **xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選びます。
+3. コード マップの名前を付けます。 [ **名前を付けて保存** ] ボックスが **xps ファイル ( \* .xps)** に設定されていることを確認します。 **[保存]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 

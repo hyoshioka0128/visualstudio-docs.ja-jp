@@ -1,5 +1,7 @@
 ---
 title: '方法: テキスト テンプレートを使用する'
+description: テキストテンプレートを使用してテキストを生成する際によく寄せられる質問への回答について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594657"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363186"
 ---
 # <a name="how-to--with-text-templates"></a>方法: テキスト テンプレートを使用する
 Visual Studio のテキストテンプレートは、任意の種類のテキストを生成する便利な方法を提供します。 テキストテンプレートを使用して、アプリケーションの一部として実行時にテキストを生成したり、デザイン時にプロジェクトコードを生成したりすることができます。 このトピックでは、最もよく寄せられる "操作方法...?" 点.
@@ -31,9 +33,9 @@ Visual Studio のテキストテンプレートは、任意の種類のテキス
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>実行時にファイルを生成し、テンプレートにデータを渡す
  アプリケーションでは、実行時に、標準のテキストとデータを組み合わせたレポートなどのテキストファイルが生成されます。 何百ものステートメントの記述を避ける必要があり `write` ます。
 
-- ランタイムテキストテンプレートをプロジェクトに追加します。 このテンプレートは、コード内にクラスを作成します。このクラスをインスタンス化して、テキストを生成するために使用できます。 コンストラクターパラメーターでデータを渡すことができます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+- ランタイムテキストテンプレートをプロジェクトに追加します。 このテンプレートは、コード内にクラスを作成します。このクラスをインスタンス化して、テキストを生成するために使用できます。 コンストラクターパラメーターでデータを渡すことができます。 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
-- 実行時にのみ使用できるテンプレートから生成する場合は、標準のテキストテンプレートを使用できます。 Visual Studio 拡張機能を作成する場合は、テキストテンプレートサービスを呼び出すことができます。 詳細については、「 [VS 拡張機能でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください。 他のコンテキストでは、テキストテンプレートエンジンを使用できます。 詳細については、 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> を参照してください。
+- 実行時にのみ使用できるテンプレートから生成する場合は、標準のテキストテンプレートを使用できます。 Visual Studio 拡張機能を作成する場合は、テキストテンプレートサービスを呼び出すことができます。 詳細については、「 [VS 拡張機能でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください。 他のコンテキストでは、テキストテンプレートエンジンを使用できます。 詳細については、「<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>」を参照してください。
 
      これらの \<#@parameter#> テンプレートにパラメーターを渡すには、ディレクティブを使用します。 詳細については、「 [T4 Parameter ディレクティブ](../modeling/t4-parameter-directive.md)」を参照してください。
 
@@ -71,14 +73,14 @@ Visual Studio のテキストテンプレートは、任意の種類のテキス
 
 ### <a name="generate-files-from-a-complex-model"></a>複雑なモデルからのファイルの生成
 
-- モデルを表すために、ドメイン固有言語 (DSL) を作成することを検討してください。 これにより、モデル内の要素の名前を反映する型とプロパティを使用するため、テンプレートの記述が非常に簡単になります。 ファイルを解析したり、XML ノードを移動したりする必要はありません。 たとえば、次のように入力します。
+- モデルを表すために、ドメイン固有言語 (DSL) を作成することを検討してください。 これにより、モデル内の要素の名前を反映する型とプロパティを使用するため、テンプレートの記述が非常に簡単になります。 ファイルを解析したり、XML ノードを移動したりする必要はありません。 次に例を示します。
 
      `foreach (Book book in this.Library) { ... }`
 
-     詳細については、「 [ドメイン固有言語を使用したはじめに](../modeling/getting-started-with-domain-specific-languages.md) 」および「 [ドメイン固有言語からのコードの生成](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
+     詳細については、「 [Domain-Specific 言語を使用したはじめに](../modeling/getting-started-with-domain-specific-languages.md) 」および「 [Domain-Specific 言語からのコードの生成](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 
 ### <a name="get-data-from-visual-studio"></a>Visual Studio からデータを取得する
- Visual Studio で提供されるサービスを使用するには、属性を設定 `hostSpecific` し、アセンブリを読み込み `EnvDTE` ます。 たとえば、次のように入力します。
+ Visual Studio で提供されるサービスを使用するには、属性を設定 `hostSpecific` し、アセンブリを読み込み `EnvDTE` ます。 次に例を示します。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

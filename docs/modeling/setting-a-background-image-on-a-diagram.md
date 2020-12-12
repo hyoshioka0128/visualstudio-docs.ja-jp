@@ -1,5 +1,7 @@
 ---
 title: ダイアグラムへの背景イメージの設定
+description: Visual Studio の視覚化およびモデリング SDK で、カスタムコードを使用して、生成されたデザイナーの背景イメージを設定できることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7701bf0ba1467b481f6da64d3c2e229be77a7fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542585"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363784"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>ダイアグラムへの背景イメージの設定
 Visual Studio の視覚化およびモデリング SDK では、カスタムコードを使用して、生成されたデザイナーの背景イメージを設定できます。
@@ -23,7 +25,7 @@ Visual Studio の視覚化およびモデリング SDK では、カスタムコ�
 
 1. 図の背景として使用するイメージ ファイルを、現在のプロジェクトの Dsl\Resources ディレクトリにコピーします。
 
-2. **ソリューションエクスプローラー**で、[Dsl\ Resources] フォルダーを右クリックし、[**追加**] をポイントして、[**既存の項目**] をクリックします。
+2. **ソリューションエクスプローラー** で、[Dsl\ Resources] フォルダーを右クリックし、[**追加**] をポイントして、[**既存の項目**] をクリックします。
 
 3. [ **既存項目の追加** ] ダイアログボックスで、dsl¥ Resources フォルダーを参照します。
 
@@ -35,17 +37,17 @@ Visual Studio の視覚化およびモデリング SDK では、カスタムコ�
 
 7. [ **リソース** ] タブで、[ **このプロジェクトには既定のリソースファイルが含まれていません] をクリックします。ここをクリックして作成します。**
 
-8. **ソリューションエクスプローラー**から [リソース] ウィンドウに画像をドラッグして、リソースファイルにイメージファイルを追加します。
+8. **ソリューションエクスプローラー** から [リソース] ウィンドウに画像をドラッグして、リソースファイルにイメージファイルを追加します。
 
 9. ［ファイル］ メニューを開き、プロジェクトのプロパティを保存するオプションをクリックします。
 
 10. ファイル Dsl\Properties\Resources.resx が存在しており、その下に Resources.Designer.cs ファイルがあることを確認します。
 
-11. Resources.Designer.cs がない場合は、 **ソリューションエクスプローラー**でファイルリソース .resx をクリックします。
+11. Resources.Designer.cs がない場合は、 **ソリューションエクスプローラー** でファイルリソース .resx をクリックします。
 
 12. **[プロパティ]** ウィンドウで、 `Custom Tool` プロパティを `ResXFileCodeGenerator`に設定します。
 
-13. **ソリューションエクスプローラー**で、Dsl プロジェクトを右クリックし、[**追加**] をポイントして、[**新しいフォルダー**] をクリックします。
+13. **ソリューションエクスプローラー** で、Dsl プロジェクトを右クリックし、[**追加**] をポイントして、[**新しいフォルダー**] をクリックします。
 
 14. フォルダーに「 **Custom**」という名前を指定します。
 

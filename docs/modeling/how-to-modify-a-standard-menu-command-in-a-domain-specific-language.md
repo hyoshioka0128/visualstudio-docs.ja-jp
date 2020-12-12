@@ -1,5 +1,7 @@
 ---
 title: DSL で標準メニューコマンドを変更する
+description: DSL で自動的に定義されている一部の標準コマンドの動作を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e04d3d2c5572c0d0b3dbaa25912b7ec59a3bc0fa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532497"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363888"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>方法: ドメイン固有言語における標準のメニュー コマンドを修正する
 
@@ -53,7 +55,7 @@ DSL で自動的に定義される標準コマンドのいくつかの動作を�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**で、**カスタムコード**という名前のフォルダーを作成します。 このフォルダーに、という名前の新しいクラスファイルを作成 `CommandSet.cs` します。
+2. **Dslpackage** で、**カスタムコード** という名前のフォルダーを作成します。 このフォルダーに、という名前の新しいクラスファイルを作成 `CommandSet.cs` します。
 
 3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 次に例を示します。
 

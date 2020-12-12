@@ -1,5 +1,7 @@
 ---
 title: DGML ファイルを編集してコード マップをカスタマイズする
+description: 有向グラフマークアップ言語 (.dgml) ファイルを編集してコードマップをカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,18 +22,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547278"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363427"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
 コードマップをカスタマイズするには、有向グラフマークアップ言語 (.dgml) ファイルを編集します。 たとえば、要素を編集してカスタム スタイルを指定したり、コード要素とリンクにプロパティおよびカテゴリを割り当てたり、コード要素やリンクにドキュメントや URL をリンクしたりすることができます。 DGML 要素の詳細については、「 [有向グラフマークアップ言語 (dgml) リファレンス](../modeling/directed-graph-markup-language-dgml-reference.md)」を参照してください。
 
-テキスト エディターまたは XML エディターで、コード マップの .dgml ファイルを編集します。 マップが Visual Studio ソリューションの一部である場合は、 **ソリューションエクスプローラー**で選択し、ショートカットメニューを開き、[ **ファイルを開く**]、[ **XML (テキスト) エディター**] の順に選択します。
+テキスト エディターまたは XML エディターで、コード マップの .dgml ファイルを編集します。 マップが Visual Studio ソリューションの一部である場合は、 **ソリューションエクスプローラー** で選択し、ショートカットメニューを開き、[ **ファイルを開く**]、[ **XML (テキスト) エディター**] の順に選択します。
 
 > [!NOTE]
 > コードマップを作成するには Visual Studio Enterprise エディションが必要です。 Visual Studio でコード マップを編集する場合、.dgml ファイルを保存すると、未使用の DGML 要素および属性が削除されクリーンアップされます。 また、新しいリンクを手動で追加すると、コード要素が自動的に作成されます。 .dgml ファイルを保存すると、要素に追加した属性によって、自身がアルファベット順に並べ替えられる場合があります。
@@ -84,7 +86,7 @@ ms.locfileid: "85547278"
 
 2. `<DirectedGraph>` 要素に次の任意の属性を追加して、グラフのスタイルを変更します。
 
-     背景の色
+     背景色
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
@@ -125,7 +127,7 @@ ms.locfileid: "85547278"
 
 2. コード要素の `<Node/>` 要素を見つけます。 次の属性のいずれかを追加して、そのスタイルをカスタマイズします。
 
-     背景の色
+     背景色
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
@@ -371,7 +373,7 @@ ms.locfileid: "85547278"
 
  `Coverage` プロパティに基づいて、コード要素の背景色を設定する。 スタイルは、`if-else` ステートメントと同様に、出現する順番で評価されます。
 
- 次の点に注意してください。
+ この例では、次のように記述されています。
 
 1. `Coverage`が 80 > 場合は、プロパティを `Background` 緑色に設定します。
 

@@ -1,5 +1,7 @@
 ---
 title: モデルおよびエクスポート ダイアグラムの共有
+description: Visual Studio を使用して、モデル、依存関係図、および有向グラフを作成および編集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591919"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363745"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>モデルおよびエクスポート ダイアグラムの共有
 Visual Studio では、いくつかの方法でモデルと図を同僚と共有できます。
@@ -49,6 +51,6 @@ Visual Studio では、いくつかの方法でモデルと図を同僚と共有
 |[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|図の一部を PowerPoint や Word などのアプリケーションにコピーすることも、図 を XPS ファイルに出力することもできます。|
 |[アーキテクチャの分析およびモデリング](../modeling/analyze-and-model-your-architecture.md)|モデルと図の概要。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)

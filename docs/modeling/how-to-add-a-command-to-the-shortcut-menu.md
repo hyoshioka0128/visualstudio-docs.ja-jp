@@ -1,5 +1,7 @@
 ---
 title: '方法: ショートカットメニューにコマンドを追加する'
+description: ユーザーが DSL に固有のタスクを実行できるように、ドメイン固有言語 (DSL) にメニューコマンドを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545718"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363342"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカットメニューにコマンドを追加する
 
@@ -57,9 +59,9 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
 
 ### <a name="to-add-the-command"></a>コマンドを追加するには
 
-1. **ソリューションエクスプローラー**の**dslpackage**プロジェクトで、コマンド. vsct を開きます。
+1. **ソリューションエクスプローラー** の **dslpackage** プロジェクトで、コマンド. vsct を開きます。
 
-2. `Commands` 要素に 1 つ以上のボタンと 1 つのグループを定義します。 *ボタン*は、メニュー上の項目です。 *グループ*は、メニューのセクションです。 これらの項目を定義するため、次の要素を追加します。
+2. `Commands` 要素に 1 つ以上のボタンと 1 つのグループを定義します。 *ボタン* は、メニュー上の項目です。 *グループ* は、メニューのセクションです。 これらの項目を定義するため、次の要素を追加します。
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -135,7 +137,7 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
 
 ### <a name="to-update-the-packagett-file"></a>Package.tt ファイルを更新するには
 
-1. **ソリューションエクスプローラー**の**dslpackage**プロジェクトの [Package.tt **] フォルダーで**、[] ファイルを開きます。
+1. **ソリューションエクスプローラー** の **dslpackage** プロジェクトの [Package.tt **] フォルダーで**、[] ファイルを開きます。
 
 2. `ProvideMenuResource` 属性を探します。
 
@@ -157,7 +159,7 @@ DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部の�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**で、**カスタムコード**という名前のフォルダーを作成します。 このフォルダーに、という名前の新しいクラスファイルを作成 `CommandSet.cs` します。
+2. **Dslpackage** で、**カスタムコード** という名前のフォルダーを作成します。 このフォルダーに、という名前の新しいクラスファイルを作成 `CommandSet.cs` します。
 
 3. 新しいファイル内に、生成された部分クラスと同じ名前空間および名前を持つ部分宣言を記述します。 次に例を示します。
 
@@ -292,7 +294,7 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- **コマンド**に挿入したのと同じ GUID 値を使用します。
+ **コマンド** に挿入したのと同じ GUID 値を使用します。
 
 > [!NOTE]
 > VSCT ファイルの Symbols セクションを変更する場合は、これらの宣言も一致するように変更する必要があります。 Package.tt でバージョン番号を増加する必要もあります。
@@ -321,9 +323,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>コマンドを実行するには
 
-1. **ソリューションエクスプローラー**ツールバーで、[**すべてのテンプレートの変換**] をクリックします。
+1. **ソリューションエクスプローラー** ツールバーで、[**すべてのテンプレートの変換**] をクリックします。
 
-2. **F5**キーを押してソリューションをリビルドし、実験用ビルドでドメイン固有言語のデバッグを開始します。
+2. **F5** キーを押してソリューションをリビルドし、実験用ビルドでドメイン固有言語のデバッグを開始します。
 
 3. 実験用ビルドでサンプルの図を開きます。
 
@@ -351,7 +353,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - OnStatus メソッドをステップ実行し、command.Visible と command.Enabled が true に設定されていることを確認します。
 
-**間違ったメニューテキストが表示されるか、またはコマンドが間違った場所に表示され**ます。
+**間違ったメニューテキストが表示されるか、またはコマンドが間違った場所に表示され** ます。
 
 - GUID と ID の組み合わせがこのコマンドに固有であることを確認します。
 

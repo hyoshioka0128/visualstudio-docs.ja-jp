@@ -1,5 +1,7 @@
 ---
 title: '方法: ドラッグ アンド ドロップ ハンドラーを追加する'
+description: ユーザーが他の図から図に項目をドラッグできるように、ドラッグアンドドロップイベントのハンドラーを DSL に追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,16 +9,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545666"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363329"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
-ドラッグアンドドロップイベントのハンドラーを DSL に追加して、ユーザーが他の図または Visual Studio の他の部分から図に項目をドラッグできるようにすることができます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 また、ドラッグアンドドロップとダブルクリックのハンドラーは、 *ジェスチャハンドラー*と呼ばれます。
+ドラッグアンドドロップイベントのハンドラーを DSL に追加して、ユーザーが他の図または Visual Studio の他の部分から図に項目をドラッグできるようにすることができます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 また、ドラッグアンドドロップとダブルクリックのハンドラーは、 *ジェスチャハンドラー* と呼ばれます。
 
 このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、「 [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)」を参照してください。 DSL 定義をカスタマイズすることもできます。
 
@@ -80,7 +82,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ### <a name="to-define-a-mef-gesture-handler"></a>MEF ジェスチャ ハンドラーを定義するには
 
-1. **Dsl**および**dslpackage**プロジェクトに追加します。「 [MEF を使用して dsl を拡張](../modeling/extend-your-dsl-by-using-mef.md)する」で説明されている**mefextension**ファイルを追加します。
+1. **Dsl** および **dslpackage** プロジェクトに追加します。「 [MEF を使用して dsl を拡張](../modeling/extend-your-dsl-by-using-mef.md)する」で説明されている **mefextension** ファイルを追加します。
 
 2. 次のようにジェスチャ ハンドラーを MEF コンポーネントとして定義できるようになります。
 
@@ -405,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {

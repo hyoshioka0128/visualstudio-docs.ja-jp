@@ -1,5 +1,7 @@
 ---
 title: TextTransform ユーティリティを使用したファイルの生成
+description: TextTransform ユーティリティが、テキストテンプレートの変換に使用できるコマンドラインツールであることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec659bfee9253dfb198c2747e1b5d7fb6b78f2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d849439f3c7b8af310f1f82fc0af8f086139d12b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596555"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363914"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform ユーティリティを使用してファイルを生成する
 
@@ -70,7 +72,7 @@ TextTransform [<options>] <templateName>
 
 |**オプション**|**説明**|
 |-|-|
-|**-out** \<filename>|変換の出力の書き込み先のファイル。|
+|**-out**\<filename>|変換の出力の書き込み先のファイル。|
 |**-r**\<assembly>|テキストテンプレートをコンパイルして実行するために使用されるアセンブリ。|
 |**-u**\<namespace>|テンプレートをコンパイルするために使用される名前空間。|
 |**-I**\<includedirectory>|指定したテキストテンプレートに含まれるテキストテンプレートを格納しているディレクトリ。|

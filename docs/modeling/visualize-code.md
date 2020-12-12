@@ -1,5 +1,7 @@
 ---
 title: コードの視覚化
+description: Visual Studio の視覚化ツールとモデリングツールを使用して、既存のコードを理解し、アプリケーションを記述する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9886ea905a4997d5735e4dd2cabbfc4798a5c4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535877"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362510"
 ---
 # <a name="visualize-code"></a>コードの視覚化
 
@@ -30,7 +32,7 @@ Visual Studio の視覚化ツールとモデリング ツールを使って、�
 
 またこれらのツールを使用すると、プロジェクトの関係者と簡単にやり取りすることができます。
 
-各機能をサポートする Visual Studio のエディションについては、「[アーキテクチャツールとモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
+各機能がサポートされる Visual Studio のバージョンを確認するには、「[アーキテクチャとモデリング ツールのエディション サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください
 
 ## <a name="what-do-you-want-to-do"></a>実行する操作
 

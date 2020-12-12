@@ -1,5 +1,7 @@
 ---
 title: T4 テキスト テンプレートを使用した実行時テキスト生成
+description: Visual Studio ランタイムテキストテンプレートを使用して、実行時にアプリケーションでテキスト文字列を生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520836"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363940"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 テキスト テンプレートを使用した実行時テキスト生成
 
@@ -49,22 +51,22 @@ This report is Company Confidential.
 
 アプリケーションでテンプレートを使用すると、出力の最終的な形式を簡単に確認できるようになります。たとえば、長い一連の write ステートメントのようになります。 出力形式を変更することは、より簡単で信頼性が高くなります。
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>任意のアプリケーションでのランタイムテキストテンプレートの作成
+## <a name="creating-a-run-time-text-template-in-any-application"></a>任意のアプリケーションで Run-Time テキストテンプレートを作成する
 
 ### <a name="to-create-a-run-time-text-template"></a>実行時テキストテンプレートを作成するには
 
-1. ソリューションエクスプローラーのプロジェクトのショートカットメニューで、[ **Add**  >  **新しい項目**の追加] を選択します。
+1. ソリューションエクスプローラーのプロジェクトのショートカットメニューで、[   >  **新しい項目** の追加] を選択します。
 
-2. [ **新しい項目の追加** ] ダイアログボックスで、[ **ランタイムテキストテンプレート**] を選択します。 (Visual Basic**共通項目**  >  の表示 **[全般**]。)
+2. [ **新しい項目の追加** ] ダイアログボックスで、[ **ランタイムテキストテンプレート**] を選択します。 (Visual Basic **共通項目**  >  の表示 **[全般**]。)
 
 3. テンプレートファイルの名前を入力します。
 
     > [!NOTE]
     > テンプレートファイル名は、生成されたコードでクラス名として使用されます。 したがって、スペースや句読点を指定することはできません。
 
-4. **[追加]** をクリックします。
+4. **[追加]** を選びます。
 
-    拡張子が **.tt**の新しいファイルが作成されます。 その **カスタムツール** プロパティは、 **Texttemplatingfilepreprocessor プロセッサ**に設定されています。 次の行が含まれています。
+    拡張子が **.tt** の新しいファイルが作成されます。 その **カスタムツール** プロパティは、 **Texttemplatingfilepreprocessor プロセッサ** に設定されています。 次の行が含まれています。
 
     ```
     <#@ template language="C#" #>
@@ -74,20 +76,20 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>既存のファイルを実行時テンプレートに変換する
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>既存のファイルを Run-Time テンプレートに変換する
 
 テンプレートを作成するには、出力の既存の例を変換することをお勧めします。 たとえば、アプリケーションで HTML ファイルを生成する場合は、プレーン HTML ファイルを作成することから始めます。 正しく動作し、その外観が正しいことを確認します。 次に、それを Visual Studio プロジェクトに追加し、テンプレートに変換します。
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>既存のテキストファイルを実行時テンプレートに変換するには
 
-1. ファイルを Visual Studio プロジェクトに含めます。 ソリューションエクスプローラーのプロジェクトのショートカットメニューで、[ **Add**  >  **既存項目**の追加] を選択します。
+1. ファイルを Visual Studio プロジェクトに含めます。 ソリューションエクスプローラーのプロジェクトのショートカットメニューで、[   >  **既存項目** の追加] を選択します。
 
-2. ファイルの **カスタムツール** プロパティを **Texttemplatingfilepreprocessor プロセッサ**に設定します。 ソリューションエクスプローラーのファイルのショートカットメニューで、[ **プロパティ**] を選択します。
+2. ファイルの **カスタムツール** プロパティを **Texttemplatingfilepreprocessor プロセッサ** に設定します。 ソリューションエクスプローラーのファイルのショートカットメニューで、[ **プロパティ**] を選択します。
 
     > [!NOTE]
-    > プロパティが既に設定されている場合は、Texttemplatingfilepreprocessor では**TextTemplatingFileGenerator**なく**texttemplatingfilepreprocessor**であることを確認します。 これは、既に拡張子が .tt のファイルをインクルードした場合に発生する可能性があり **ます**。
+    > プロパティが既に設定されている場合は、Texttemplatingfilepreprocessor ではなく **texttemplatingfilepreprocessor** であることを確認します。 これは、既に拡張子が .tt のファイルをインクルードした場合に発生する可能性があり **ます**。
 
-3. ファイル名拡張子を **.tt**に変更します。 この手順は省略可能ですが、正しくないエディターでファイルを開くことを避けるのに役立ちます。
+3. ファイル名拡張子を **.tt** に変更します。 この手順は省略可能ですが、正しくないエディターでファイルを開くことを避けるのに役立ちます。
 
 4. ファイル名のメイン部分から、スペースまたは句読点を削除します。 たとえば、"My Web Page.tt" は正しくありませんが、"MyWebPage.tt" は正しいです。 ファイル名は、生成されたコードでクラス名として使用されます。
 
@@ -95,7 +97,7 @@ This report is Company Confidential.
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>ランタイムテンプレートの内容
+## <a name="the-content-of-the-run-time-template"></a>Run-Time テンプレートの内容
 
 ### <a name="template-directive"></a>テンプレートディレクティブ
 
@@ -107,7 +109,7 @@ This report is Company Confidential.
 
 ### <a name="plain-content"></a>プレーンコンテンツ
 
-アプリケーションで生成するテキストが含まれるように .tt ファイルを編集し **ます** 。 たとえば、次のように入力します。
+アプリケーションで生成するテキストが含まれるように .tt ファイルを編集し **ます** 。 次に例を示します。
 
 ```html
 <html><body>
@@ -119,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>埋め込みプログラムコード
 
-プログラムコードは、との間に挿入でき `<#` `#>` ます。 たとえば、次のように入力します。
+プログラムコードは、との間に挿入でき `<#` `#>` ます。 次に例を示します。
 
 ```csharp
 <table>
@@ -150,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>テンプレートから作成されたコード
 
-**.Tt**ファイルを保存すると、関連する **.cs**または **.vb**ファイルが生成されます。 このファイルを **ソリューションエクスプローラー**で表示するには、[.tt ファイル] ノードを展開し **ます** 。 Visual Basic プロジェクトで、最初に [**ソリューションエクスプローラー** ] ツールバーの [**すべてのファイルを表示**] を選択します。
+**.Tt** ファイルを保存すると、関連する **.cs** または **.vb** ファイルが生成されます。 このファイルを **ソリューションエクスプローラー** で表示するには、[.tt ファイル] ノードを展開し **ます** 。 Visual Basic プロジェクトで、最初に [**ソリューションエクスプローラー** ] ツールバーの [**すべてのファイルを表示**] を選択します。
 
 この場合、関連するファイルには、というメソッドを含む部分クラスが含まれていることに注意 `TransformText()` してください。 このメソッドは、アプリケーションから呼び出すことができます。
 
@@ -182,7 +184,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 通常、テンプレートでは、アプリケーションの他の部分からデータをインポートする必要があります。 これを簡単にするために、テンプレートによって作成されたコードは部分クラスです。 プロジェクト内の別のファイルに、同じクラスの別の部分を作成することができます。 このファイルには、パラメーター、プロパティ、および関数を含むコンストラクターを含めることができます。このコンストラクターには、テンプレートに埋め込まれているコードと、アプリケーションの残りの部分の両方でアクセスできます。
 
-たとえば、 **MyWebPageCode.cs**という別のファイルを作成できます。
+たとえば、 **MyWebPageCode.cs** という別のファイルを作成できます。
 
 ```csharp
 partial class MyWebPage
@@ -191,7 +193,7 @@ partial class MyWebPage
     public MyWebPage(MyData data) { this.m_data = data; }}
 ```
 
-テンプレートファイル **MyWebPage.tt**で、次のように記述できます。
+テンプレートファイル **MyWebPage.tt** で、次のように記述できます。
 
 ```html
 <h2>Sales figures</h2>
@@ -272,7 +274,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 ### <a name="assemblies-and-references"></a>アセンブリと参照
 
-テンプレートコードで .NET またはその他のアセンブリ ( **System.Xml.dll**など) を参照する場合は、通常の方法でプロジェクトの **参照** に追加します。
+テンプレートコードで .NET またはその他のアセンブリ ( **System.Xml.dll** など) を参照する場合は、通常の方法でプロジェクトの **参照** に追加します。
 
 ステートメントと同じ方法で名前空間をインポートする場合は、 `using` ディレクティブを使用してこれを行うことができ `import` ます。
 
@@ -294,7 +296,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 Include ディレクティブは、テンプレートファイルまたはインクルードファイルのテキスト内の任意の場所で使用できます。
 
-### <a name="inheritance-between-run-time-text-templates"></a>実行時テキストテンプレート間の継承
+### <a name="inheritance-between-run-time-text-templates"></a>Run-Time テキストテンプレート間の継承
 
 基本クラステンプレートを記述することによって、実行時テンプレート間でコンテンツを共有できます。これは抽象クラスです。 `inherits` `<@#template#>` 別のランタイムテンプレートクラスを参照するには、ディレクティブのパラメーターを使用します。
 
@@ -310,7 +312,7 @@ Include ディレクティブは、テンプレートファイルまたはイン
 
 - アプリケーションは `TextTransform()` 派生クラスのメソッドを呼び出しますが、基底クラスを変換しません `SharedFragments` 。
 
-- 基本クラスと派生クラスは、どちらもランタイムテキストテンプレートです。つまり、 **カスタムツール** プロパティは **Texttemplatingfilepreprocessor プロセッサ**に設定されます。
+- 基本クラスと派生クラスは、どちらもランタイムテキストテンプレートです。つまり、 **カスタムツール** プロパティは **Texttemplatingfilepreprocessor プロセッサ** に設定されます。
 
 **SharedFragments.tt:**
 

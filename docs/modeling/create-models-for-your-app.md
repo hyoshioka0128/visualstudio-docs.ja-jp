@@ -1,5 +1,7 @@
 ---
 title: アプリのモデルを生成する
+description: モデリング図を参考にして、コードとソフトウェアシステムがサポートする必要があるユーザーの要件を理解し、明確にし、伝えることができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 452832785db879e75825b1c862e8e9b1b6e69f1d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b79496e6762d798db14d7341e71129d5e510c1b0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810810"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363472"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 

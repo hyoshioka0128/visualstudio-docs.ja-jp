@@ -1,5 +1,7 @@
 ---
 title: シェイプおよびコネクタの更新とモデルへの反映
+description: Visual Studio のドメイン固有言語では、図形の外観に基になるモデルの状態が反映されるようにすることができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3d16cbc35c468c0101db479799215bcccf64ef6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115024"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362601"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>シェイプおよびコネクタを更新してモデルに反映する
 
@@ -27,7 +29,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>図形マップのプロパティを設定してデコレータの表示を制御する
 
-DSL 定義の図形とドメインクラス間のマッピングを構成することにより、プログラムコードを記述せずにデコレータの可視性を制御できます。 詳細については、「 [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
+DSL 定義の図形とドメインクラス間のマッピングを構成することにより、プログラムコードを記述せずにデコレータの可視性を制御できます。 詳細については、「 [Domain-Specific 言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>図形の色とスタイルをプロパティとして公開する
 
@@ -84,7 +86,7 @@ DSL 定義で、shape クラスを右クリックし、[公開の **追加**] �
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured を使用して図形のプロパティを初期化する
 
-図形の最初の作成時に図形のプロパティを設定するには、 `OnChildConfigured()` ダイアグラムクラスの部分定義でオーバーライドします。 図クラスは DSL 定義で指定されており、生成されたコードは、生成されたコードに含まれて**います。** 次に例を示します。
+図形の最初の作成時に図形のプロパティを設定するには、 `OnChildConfigured()` ダイアグラムクラスの部分定義でオーバーライドします。 図クラスは DSL 定義で指定されており、生成されたコードは、生成されたコードに含まれて **います。** 次に例を示します。
 
 ```csharp
 partial class MyLanguageDiagram

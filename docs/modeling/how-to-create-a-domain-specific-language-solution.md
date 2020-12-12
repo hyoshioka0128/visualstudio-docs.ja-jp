@@ -1,5 +1,7 @@
 ---
 title: '方法: ドメイン固有言語ソリューションを作成する'
+description: 特殊化された Visual Studio ソリューションを使用して、ドメイン固有言語 (DSL) を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298651"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363277"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 ドメイン固有言語 (DSL) は、特化した Visual Studio ソリューションを使用して作成されます。
@@ -27,7 +29,7 @@ ms.locfileid: "92298651"
 
 この手順を開始する前に、次のコンポーネントをインストールします。
 
-- Visual Studio
+- Visual Studio
 - Visual Studio SDK ( **Visual studio 拡張機能の開発** ワークロードの一部としてインストールされます)
 - モデリング SDK (Visual Studio コンポーネントとしてインストールされます)
 
@@ -60,7 +62,7 @@ ms.locfileid: "92298651"
 
 4. ウィザードの残りのページにあるフィールドを検査し、必要に応じて調整します。 設定に問題がなければ、[ **完了**] をクリックします。 設定の詳細については、「 [DSL デザイナーウィザードのページ](#settings)」を参照してください。
 
-    ウィザードによって、 **Dsl** および **dslpackage**という名前の2つのプロジェクトを持つソリューションが作成されます。
+    ウィザードによって、 **Dsl** および **dslpackage** という名前の2つのプロジェクトを持つソリューションが作成されます。
 
    > [!NOTE]
    > 信頼されていないソースからテキストテンプレートを実行しないことを通知するメッセージが表示された場合は、[ **OK]** をクリックします。 このメッセージを再度表示しないように設定できます。
@@ -89,7 +91,7 @@ ms.locfileid: "92298651"
 
      \- または
 
-- Visual Studio の実験的なインスタンスをリセットします。 これにより、以前に作成したすべての Dsl が登録解除されます。 [ **スタート** ] ボタンをクリックし、[ **すべてのプログラム**]、[ **2010 SDK**]、[ **ツール**] の順に Microsoft Visual Studio、 **Microsoft Visual Studio 2010 の実験用インスタンスをリセット**します。 もう一度使用する Dsl を再構築できます。
+- Visual Studio の実験的なインスタンスをリセットします。 これにより、以前に作成したすべての Dsl が登録解除されます。 [ **スタート** ] ボタンをクリックし、[ **すべてのプログラム**]、[ **2010 SDK**]、[ **ツール**] の順に Microsoft Visual Studio、 **Microsoft Visual Studio 2010 の実験用インスタンスをリセット** します。 もう一度使用する Dsl を再構築できます。
 
      \- または
 

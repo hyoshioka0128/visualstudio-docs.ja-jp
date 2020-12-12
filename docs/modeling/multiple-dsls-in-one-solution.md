@@ -1,5 +1,7 @@
 ---
 title: 1 つのソリューション内の複数の DSL
+description: 複数のドメイン固有言語 (Dsl) を1つのソリューションの一部としてパッケージ化して、それらが一緒にインストールされるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542598"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363093"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>1 つのソリューション内の複数の DSL
 
@@ -30,9 +32,9 @@ ms.locfileid: "85542598"
 
    - 各 DSL は異なるファイル拡張子名を付けて作成します。
 
-   - **Dsl**および**dslpackage**プロジェクトの名前を変更して、それらがすべて異なっているようにします。 たとえば、`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2` のようになります。
+   - **Dsl** および **dslpackage** プロジェクトの名前を変更して、それらがすべて異なっているようにします。 たとえば、`Dsl1`、`DslPackage1`、`Dsl2`、`DslPackage2` のようになります。
 
-   - 各 **Dslpackage \* \ source.extension.tt**で、次の行を正しい Dsl プロジェクト名に更新します。
+   - 各 **Dslpackage \* \ source.extension.tt** で、次の行を正しい Dsl プロジェクト名に更新します。
 
       `string dslProjectName = "Dsl2";`
 
@@ -40,19 +42,19 @@ ms.locfileid: "85542598"
 
 2. 以下のように DSL の VSIX マニフェストを結合します。
 
-   1. _Yourvsixproject 配置_**\source.extension.manifest**を開きます。
+   1. _Yourvsixproject 配置_**\source.extension.manifest** を開きます。
 
    2. DSL ごとに、[ **コンテンツの追加** ] を選択し、次のように追加します。
 
-       - `Dsl*`**MEF コンポーネント**としてのプロジェクト
+       - `Dsl*`**MEF コンポーネント** としてのプロジェクト
 
-       - `DslPackage*`**MEF コンポーネント**としてのプロジェクト
+       - `DslPackage*`**MEF コンポーネント** としてのプロジェクト
 
-       - `DslPackage*`**VS パッケージ**としてのプロジェクト
+       - `DslPackage*`**VS パッケージ** としてのプロジェクト
 
 3. ソリューションをビルドします。
 
-   この結果の VSIX では両方の DSL がインストールされます。 F5 キーを使用してテストすることも、 _yourvsixproject 配置_を配置することも**できます。 \\ \* **
+   この結果の VSIX では両方の DSL がインストールされます。 F5 キーを使用してテストすることも、 _yourvsixproject 配置_ を配置することも **できます。 \\ \***
 
 ## <a name="see-also"></a>関連項目
 

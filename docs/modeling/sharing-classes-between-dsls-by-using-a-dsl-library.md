@@ -1,5 +1,7 @@
 ---
 title: DSL ライブラリによる DSL 間でのクラスの共有
+description: Visual Studio の視覚化およびモデリング SDK で、別の DSL にインポートできる不完全な DSL 定義を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1685fe4fc7db6728ebc1ca6a12e27bb6f42589b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542546"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363758"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL ライブラリによる DSL 間でのクラスの共有
 Visual Studio の視覚化およびモデリング SDK では、別の DSL にインポートできる不完全な DSL 定義を作成できます。 これにより、類似するモデルの一般的な部分を考慮することができます。
@@ -45,7 +47,7 @@ Visual Studio の視覚化およびモデリング SDK では、別の DSL に�
 
 #### <a name="to-import-a-dsl-library"></a>DSL ライブラリをインポートするには
 
-1. 別の DSL 定義の **Dsl エクスプローラー**で、dsl のルートクラスを右クリックし、[ **新しい Dsllibrary インポートの追加**] をクリックします。
+1. 別の DSL 定義の **Dsl エクスプローラー** で、dsl のルートクラスを右クリックし、[ **新しい Dsllibrary インポートの追加**] をクリックします。
 
 2. プロパティウィンドウで、ライブラリの **ファイルパス** を設定します。 相対パスと絶対パスのどちらを使用してもかまいません。
 
