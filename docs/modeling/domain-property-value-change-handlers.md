@@ -1,5 +1,7 @@
 ---
 title: ドメイン プロパティ値変更ハンドラー
+description: Visual Studio ドメイン固有言語で使用できる、ドメインプロパティ値の変更ハンドラーについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594709"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361730"
 ---
 # <a name="domain-property-value-change-handlers"></a>ドメインプロパティ値の変更ハンドラー
 
@@ -22,7 +24,7 @@ Visual Studio ドメイン固有言語では、ドメインプロパティの値
 
 ## <a name="override-the-property-handler-methods"></a>プロパティハンドラーメソッドのオーバーライド
 
-ドメイン固有言語の各ドメイン プロパティは親のドメイン クラス内で入れ子になっているクラスにより処理されます。 その名前は、 *PropertyName*propertyhandler という形式に従います。 このプロパティハンドラークラスを検査するには、ファイルを **生成**します。 このクラスで、`OnValueChanging()` は値が変更される直前に呼び出され、`OnValueChanged()` は値が変更された直後に呼び出されます。
+ドメイン固有言語の各ドメイン プロパティは親のドメイン クラス内で入れ子になっているクラスにより処理されます。 その名前は、 *PropertyName* propertyhandler という形式に従います。 このプロパティハンドラークラスを検査するには、ファイルを **生成** します。 このクラスで、`OnValueChanging()` は値が変更される直前に呼び出され、`OnValueChanged()` は値が変更された直後に呼び出されます。
 
 たとえば、という名前の `Comment` 文字列ドメインプロパティとという名前の整数プロパティを持つという名前のドメインクラスがあるとし `Text` `TextLengthCount` ます。 `TextLengthCount`常に文字列の長さが含まれるようにするには `Text` 、Dsl プロジェクト内の別のファイルに次のコードを記述します。
 
@@ -99,7 +101,7 @@ if (newValue > 10)
 
 代わりに、派生したプロパティを Calculated property として定義することを検討できます。 その場合、プロパティは独自のストレージを持たず、値が必要になるときに常に関数が評価されることを定義しています。 詳細については、「 [計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
 
-前の例の代わりに、 **Kind** `TextLengthCount` DSL 定義で**計算**されるの Kind フィールドを設定できます。 このドメインプロパティに対して独自の **Get** メソッドを指定します。 **Get**メソッドは、文字列の現在の長さを返し `Text` ます。
+前の例の代わりに、  `TextLengthCount` DSL 定義で **計算** されるの Kind フィールドを設定できます。 このドメインプロパティに対して独自の **Get** メソッドを指定します。 **Get** メソッドは、文字列の現在の長さを返し `Text` ます。
 
 ただし、計算されるプロパティの潜在的な欠点は、値が使用されるたびに式が評価されるため、パフォーマンスの問題が生じる可能性があることです。 また、計算されるプロパティに OnValueChanging() および OnValueChanged() はありません。
 

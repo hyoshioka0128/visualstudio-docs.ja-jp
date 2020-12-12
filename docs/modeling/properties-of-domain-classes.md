@@ -1,5 +1,7 @@
 ---
 title: ドメイン クラスのプロパティ
+description: アクセス修飾子やカスタム属性など、ドメインクラスのさまざまなプロパティについて説明し、二重の派生を生成します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810029"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360794"
 ---
 # <a name="properties-of-domain-classes"></a>ドメイン クラスのプロパティ
-ドメインクラスには、次の表に示すプロパティがあります。 ドメインクラスの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
+ドメインクラスには、次の表に示すプロパティがあります。 ドメインクラスの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [Domain-Specific 言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
 
 |プロパティ|説明|Default|
 |-|-|-|
@@ -29,11 +31,11 @@ ms.locfileid: "90810029"
 |基本クラス|このドメインクラスが派生している場合は、基本クラスの名前。|\<none>|
 |名前|このドメインクラスの名前。|現在の名前|
 |名前空間|このドメインクラスの名前空間。|現在の名前空間|
-|ノート|このドメインクラスに関連付けられている非公式のメモ。|\<none>|
+|メモ|このドメインクラスに関連付けられている非公式のメモ。|\<none>|
 |説明|生成されたデザイナーの UI を文書化するために使用される説明。|\<none>|
 |表示名|このドメインクラスの生成されたデザイナーに表示される名前。|\<none>|
 |ヘルプ キーワード|このドメインクラスの F1 ヘルプのインデックス作成に使用される省略可能なキーワードです。|\<none>|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

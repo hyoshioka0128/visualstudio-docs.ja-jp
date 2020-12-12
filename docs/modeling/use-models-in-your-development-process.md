@@ -1,5 +1,7 @@
 ---
 title: 開発プロセス内でのモデルの使用
+description: Visual Studio では、モデルを使用して、システム、アプリケーション、またはコンポーネントを理解し、変更することができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a15a6cd0d38ca06b1a0ae25be69a24d42ba8cb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298104"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361431"
 ---
 # <a name="use-models-in-your-development-process"></a>開発プロセス内でのモデルの使用
 

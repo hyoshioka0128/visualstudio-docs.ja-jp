@@ -1,5 +1,7 @@
 ---
 title: VS 拡張機能内でのテキスト変換の呼び出し
+description: テキストテンプレートサービスを使用してテキストテンプレートを変換する方法について説明します。 また、STextTemplating サービスを取得して ITextTemplating にキャストする方法についても説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e781e08bba5e01b5e453e4545b5dd19e5a4d16
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594592"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360872"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Visual Studio 拡張機能でのテキスト変換の呼び出し
 
@@ -38,7 +40,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 
  パラメーターをテンプレートに渡すことができます。 テンプレート内で、`<#@parameter#>` ディレクティブを使用してパラメーター値を取得できます。
 
- パラメーターの型については、シリアル化またはマーシャリング可能な型を使用する必要があります。 つまり、<xref:System.SerializableAttribute> を使用して型を宣言するか、<xref:System.MarshalByRefObject> から型を派生する必要があります。 この制限が必要なのは、テキスト テンプレートは別の AppDomain で実行されるためです。 **System.string や system.string**など、**すべての組み込み**型がシリアル化可能です。
+ パラメーターの型については、シリアル化またはマーシャリング可能な型を使用する必要があります。 つまり、<xref:System.SerializableAttribute> を使用して型を宣言するか、<xref:System.MarshalByRefObject> から型を派生する必要があります。 この制限が必要なのは、テキスト テンプレートは別の AppDomain で実行されるためです。 **System.string や system.string** など、**すべての組み込み** 型がシリアル化可能です。
 
  パラメーター値を渡すために、呼び出し元のコードでは `Session` ディクショナリまたは <xref:System.Runtime.Remoting.Messaging.CallContext> に値を配置できます。
 
@@ -138,7 +140,7 @@ Sample text.
 
 ## <a name="related-articles"></a>関連記事
 
-前処理されたテキストテンプレートからテキストを生成するには `TransformText()` 、生成されたクラスのメソッドを呼び出します。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+前処理されたテキストテンプレートからテキストを生成するには `TransformText()` 、生成されたクラスのメソッドを呼び出します。 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 Visual Studio 拡張機能の外部でテキストを生成するには: カスタムホストを定義します。 詳細については、「 [カスタムホストを使用したテキストテンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)」を参照してください。
 

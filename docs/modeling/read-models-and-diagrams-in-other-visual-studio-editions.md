@@ -1,5 +1,7 @@
 ---
 title: Visual Studio の他のエディションでモデルおよびダイアグラムを読み取る
+description: モデルの作成をサポートしていない Visual Studio のバージョンを使用する場合の、Visual Studio でのモデルと図の読み取り、および読み取り専用の動作について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffbf39421f507338d14a6b05a667ec4301375067
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595411"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360690"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Visual Studio の他のエディションでモデルおよびダイアグラムを読み取る
 
@@ -37,7 +39,7 @@ ms.locfileid: "75595411"
 - 読み取り対象のダイアグラムの2つの図ファイル (例、 **mydiagram. classdiagram と MyDiagram。**[...])。
 
     > [!NOTE]
-    > 依存関係図については、 _Mydiagram_**. レイヤー図の抑制**という名前のファイルも必要です。
+    > 依存関係図については、 _Mydiagram_**. レイヤー図の抑制** という名前のファイルも必要です。
 
 - モデリングプロジェクトファイル (**Mymodel. modelproj**)
 
@@ -55,7 +57,7 @@ ms.locfileid: "75595411"
 
 これらの変更は保存できます。 他のユーザーに変更を表示する場合は、少なくとも更新された **レイアウト** ファイルを送信する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [依存関係図: リファレンス](../modeling/layer-diagrams-reference.md)
 - [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)

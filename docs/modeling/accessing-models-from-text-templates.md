@@ -1,5 +1,7 @@
 ---
 title: テキスト テンプレートからモデルへのアクセス
+description: テキストテンプレートを使用して、ドメイン固有の言語モデルに基づくレポートファイル、ソースコードファイル、およびその他のテキストファイルを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531470"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362289"
 ---
 # <a name="access-models-from-text-templates"></a>テキストテンプレートからモデルにアクセスする
 
 テキストテンプレートを使用すると、ドメイン固有の言語モデルに基づいたレポートファイル、ソースコードファイル、およびその他のテキストファイルを作成できます。 テキストテンプレートの基本的な情報については、「 [コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートは、DSL のデバッグ時に実験的モードで動作し、DSL を展開したコンピューター上でも動作します。
 
 > [!NOTE]
-> DSL ソリューションを作成すると、サンプルテキストテンプレートの** \* .tt**ファイルがデバッグプロジェクトに生成されます。 ドメインクラスの名前を変更すると、これらのテンプレートは機能しなくなります。 それにもかかわらず、必要な基本ディレクティブが含まれており、DSL に一致するように更新できる例を提供しています。
+> DSL ソリューションを作成すると、サンプルテキストテンプレートの **\* .tt** ファイルがデバッグプロジェクトに生成されます。 ドメインクラスの名前を変更すると、これらのテンプレートは機能しなくなります。 それにもかかわらず、必要な基本ディレクティブが含まれており、DSL に一致するように更新できる例を提供しています。
 
  テキストテンプレートからモデルにアクセスするには:
 
@@ -72,7 +74,7 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- ディレクティブの名前 ( `MyLanguage` この例では) は、DSL の名前から派生します。 これは、DSL の一部として生成される *ディレクティブプロセッサ* を呼び出します。 ソースコードは **Dsl\GeneratedCode\DirectiveProcessor.cs**で見つけることができます。
+ ディレクティブの名前 ( `MyLanguage` この例では) は、DSL の名前から派生します。 これは、DSL の一部として生成される *ディレクティブプロセッサ* を呼び出します。 ソースコードは **Dsl\GeneratedCode\DirectiveProcessor.cs** で見つけることができます。
 
  DSL ディレクティブプロセッサは、次の2つの主要タスクを実行します。
 

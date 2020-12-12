@@ -1,5 +1,7 @@
 ---
 title: ドメイン固有言語からのコード生成
+description: Domain-Specific 言語ツールが、モデルで表されるデータからコード、ドキュメント、およびその他の成果物を生成するための強力な方法を提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58a2537f2c2cab0123bc90e8d0e32a8da89874f6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596581"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362197"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>ドメイン固有言語からのコード生成
 
@@ -28,7 +30,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] では、モデルで�
 <# } #>  </table>
 ```
 
-顧客データベースが処理されると、XML ファイルがモデルストアに読み込まれます。 を使用して作成された *ディレクティブプロセッサ*を使用すると、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] テキストテンプレート内のコードで Customer クラスを使用できるようになります。 多くのテキストテンプレートは、同じストアに対して実行できます。
+顧客データベースが処理されると、XML ファイルがモデルストアに読み込まれます。 を使用して作成された *ディレクティブプロセッサ* を使用すると、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] テキストテンプレート内のコードで Customer クラスを使用できるようになります。 多くのテキストテンプレートは、同じストアに対して実行できます。
 
 テキストテンプレートは、に不可欠です [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 。 これらは、ツールを Visual Studio と統合するために使用される VSPackage およびコントロールに加えて、ドメインモデルの要素のソースコードを生成するために使用されます。
 

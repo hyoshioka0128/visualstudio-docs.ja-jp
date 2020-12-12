@@ -1,5 +1,7 @@
 ---
 title: ドメイン固有言語をカスタマイズする
+description: カスタムコードを使用して、ドメイン固有言語 (DSL) でモデルへのアクセス、変更、またはモデルの作成を行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b67a50623eb1924c4a18b57524c409f7eba6ab20
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546875"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360456"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>ドメイン固有言語をカスタマイズするコードを記述する
 
@@ -24,15 +26,15 @@ DSL で動作するコードを記述できるコンテキストがいくつか�
 
 - **カスタムコマンド。** ダイアグラムを右クリックして、ユーザーが呼び出すことができるコマンドを作成できます。このコマンドは、モデルを変更できます。 詳細については、「 [方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
-- **検証。** モデルが正しい状態であることを確認するコードを記述できます。 詳細については、「 [ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
+- **検証。** モデルが正しい状態であることを確認するコードを記述できます。 詳細については、「 [Domain-Specific 言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 
 - **既定の動作をオーバーライドします。** DslDefinition. dsl から生成されるコードの多くの側面を変更できます。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。
 
-- **テキスト変換。** モデルにアクセスするコードを含むテキストテンプレートを作成し、テキストファイルを生成することができます。たとえば、プログラムコードを生成します。 詳細については、「 [ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
+- **テキスト変換。** モデルにアクセスするコードを含むテキストテンプレートを作成し、テキストファイルを生成することができます。たとえば、プログラムコードを生成します。 詳細については、「 [Domain-Specific 言語からのコードの生成](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 
 - **その他の Visual Studio 拡張機能。** モデルの読み取りと変更を行う別の VSIX 拡張機能を作成できます。 詳細については、「[方法: プログラムコードでファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)」を参照してください。
 
-DslDefinition. dsl で定義したクラスのインスタンスは、 *メモリ内ストア* (IMS) または *ストア*と呼ばれるデータ構造に保持されます。 DSL で定義するクラスは、常にコンストラクターの引数としてストアを受け取ります。 たとえば、DSL が Example というクラスを定義しているとします。
+DslDefinition. dsl で定義したクラスのインスタンスは、 *メモリ内ストア* (IMS) または *ストア* と呼ばれるデータ構造に保持されます。 DSL で定義するクラスは、常にコンストラクターの引数としてストアを受け取ります。 たとえば、DSL が Example というクラスを定義しているとします。
 
 `Example element = new Example (theStore);`
 

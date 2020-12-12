@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: カスタム ディレクティブ プロセッサの作成'
+description: Visual Studio を使用してカスタムディレクティブプロセッサを記述し、テキストテンプレートをカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532237"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361886"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>チュートリアル: カスタム ディレクティブ プロセッサを作成する
 
-*ディレクティブプロセッサ* は、 *生成された変換クラス*にコードを追加することで機能します。 *テキストテンプレート*から*ディレクティブ*を呼び出す場合、テキストテンプレートに記述する残りのコードは、ディレクティブによって提供される機能に依存する可能性があります。
+*ディレクティブプロセッサ* は、 *生成された変換クラス* にコードを追加することで機能します。 *テキストテンプレート* から *ディレクティブ* を呼び出す場合、テキストテンプレートに記述する残りのコードは、ディレクティブによって提供される機能に依存する可能性があります。
 
 独自のカスタム ディレクティブ プロセッサを記述できます。 これにより、テキスト テンプレートをカスタマイズすることができます。 カスタム ディレクティブ プロセッサを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> を継承するクラスを作成します。
 
@@ -88,7 +90,7 @@ End Property
 
     - **VisualStudio.. テンプレート. \* .0**
 
-3. **Class1**内のコードを次のコードに置き換えます。 このコードによって、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> クラスを継承し、必要なメソッドを実装する CustomDirectiveProcessor クラスが定義されます。
+3. **Class1** 内のコードを次のコードに置き換えます。 このコードによって、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> クラスを継承し、必要なメソッドを実装する CustomDirectiveProcessor クラスが定義されます。
 
     ```csharp
     using System;
@@ -637,9 +639,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. [ `regedit` スタート] メニューまたはコマンドラインを使用して、コマンドを実行します。
 
-2. **\Software\microsoft\visualstudio \\ \* .0 \ .0\ texttemplating\directiveprocessors HKEY_LOCAL_MACHINE**場所に移動し、ノードをクリックします。
+2. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* .0 \ .0\ texttemplating\directiveprocessors** の場所に移動し、ノードをクリックします。
 
-   64ビットシステムでは**HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\visualstudio .0\ texttemplating\directiveprocessors を使用し \\ \* ます。**
+   64ビットシステムでは **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ .0\ texttemplating\directiveprocessors** を使用します。
 
 3. CustomDirectiveProcessor という名前の新しいキーを追加します。
 
@@ -656,7 +658,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
    | 名前 | 種類 | データ |
    |-|-|-|
-   | (既定) | REG_SZ | (値が設定されていません) |
+   | (既定値)。 | REG_SZ | (値が設定されていません) |
    | クラス | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | CodeBase | REG_SZ | <strong>\<Path to Your Solution></strong>CustomDP\bin\Debug\CustomDP.dll |
 
@@ -664,7 +666,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
    | 名前 | 種類 | データ |
    |-|-|-|
-   | (既定) | REG_SZ | (値が設定されていません) |
+   | (既定値)。 | REG_SZ | (値が設定されていません) |
    | クラス | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | アセンブリ | REG_SZ | CustomDP.dll |
 
@@ -830,11 +832,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-test-the-directive-processor"></a>ディレクティブ プロセッサをテストするには
 
-1. **ソリューションエクスプローラー**で、[TestDP.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
+1. **ソリューションエクスプローラー** で、[TestDP.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
    Visual Basic ユーザーの場合、既定では TestDP.txt が **ソリューションエクスプローラー** に表示されない可能性があります。 プロジェクトに割り当てられているすべてのファイルを表示するには、[ **プロジェクト** ] メニューを開き、[ **すべてのファイルを表示**] をクリックします。
 
-2. **ソリューションエクスプローラー**で、[TestDP.txt] ノードを展開し、[TestDP.txt] をダブルクリックしてエディターで開きます。
+2. **ソリューションエクスプローラー** で、[TestDP.txt] ノードを展開し、[TestDP.txt] をダブルクリックしてエディターで開きます。
 
     生成されたテキスト出力が表示されます。 出力は次のようになります。
 
@@ -874,7 +876,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-html-to-the-generated-text"></a>生成されたテキストに HTML を追加するには
 
-1. *TestDP.tt*のコードを次のコードに置き換えます。 HTML は強調表示されています。 文字列を `YOUR PATH` *DocFile.xml* ファイルのパスに置き換えてください。
+1. *TestDP.tt* のコードを次のコードに置き換えます。 HTML は強調表示されています。 文字列を `YOUR PATH` *DocFile.xml* ファイルのパスに置き換えてください。
 
     > [!NOTE]
     > 開いているタグを追加すると、 \<# and close #> ステートメントコードが HTML タグから分離されます。
@@ -959,8 +961,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>
     ```
 
-2. [ **ファイル** ] メニューの [ **TestDP.txtの保存 **] をクリックします。
+2. [ **ファイル** ] メニューの [ **TestDP.txtの保存**] をクリックします。
 
-3. ブラウザーで出力を表示するには、 **ソリューションエクスプローラー**で [TestDP.htm] を右クリックし、[ **ブラウザーで表示**] をクリックします。
+3. ブラウザーで出力を表示するには、 **ソリューションエクスプローラー** で [TestDP.htm] を右クリックし、[ **ブラウザーで表示**] をクリックします。
 
    HTML 形式が適用されている場合を除き、出力は元のテキストと同じである必要があります。 各項目名は太字で表示されます。

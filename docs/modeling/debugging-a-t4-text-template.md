@@ -1,5 +1,7 @@
 ---
 title: T4 テキスト テンプレートのデバッグ
+description: デザイン時テキスト テンプレートをデバッグするには、テキスト テンプレート ファイルを保存し、ソリューション エクスプローラーでファイルのショートカット メニューを開き、[T4 テンプレートのデバッグ] をクリックします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589683"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361470"
 ---
 # <a name="debugging-a-t4-text-template"></a>T4 テキスト テンプレートのデバッグ
 テキスト テンプレートにブレークポイントを設定できます。 デザイン時テキストテンプレートをデバッグするには、テキストテンプレートファイルを保存し、ソリューションエクスプローラーのファイルのショートカットメニューで [ **T4 テンプレートのデバッグ** ] を選択します。 実行時テキスト テンプレートをデバッグするには、属するアプリケーションを単純にデバッグします。

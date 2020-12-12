@@ -1,5 +1,7 @@
 ---
 title: Windows フォームでのダイアグラムの埋め込み
+description: Windows コントロールに DSL 図を埋め込む方法について説明します。これは、Visual Studio ウィンドウに表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e81a5ff10cd6e309ffbf17e40ffbaa9ec88f185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4338bfa824b511ee0be40516e1396a75901188a1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547629"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361704"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows フォームにダイアグラムを埋め込む
 
@@ -67,7 +69,7 @@ Windows コントロールに DSL 図を埋め込むことができます。こ�
 
 ## <a name="update-the-form-using-store-events"></a>ストアイベントを使用してフォームを更新する
 
-1. フォームデザイナーで、という名前の **リストボックス** を追加 `listBox1` します。 これにより、モデル内の要素の一覧が表示されます。 これは、 *ストアイベント*を使用してモデルと同期されます。 詳細については、「 [イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
+1. フォームデザイナーで、という名前の **リストボックス** を追加 `listBox1` します。 これにより、モデル内の要素の一覧が表示されます。 これは、 *ストアイベント* を使用してモデルと同期されます。 詳細については、「 [イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
 2. カスタムコードファイルで、DocView クラスにさらにメソッドをオーバーライドします。
 

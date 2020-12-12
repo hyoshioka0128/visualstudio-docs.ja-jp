@@ -1,5 +1,7 @@
 ---
 title: '方法: ドメイン固有言語デザイナーを拡張する'
+description: ドメイン固有言語 (DSL) 定義を編集するために使用するデザイナーの拡張機能を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5b3166606312bb74560f207e6e1d0e6065bb2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7a48c5a314dd52893bc7f0675915f0d68297ab
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532587"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361509"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>方法: ドメイン固有言語デザイナーを拡張する
 
@@ -26,7 +28,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL デザイナー拡張機能ソリューションを作成するには
 
-1. **クラスライブラリ**プロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 このプロジェクトには、拡張機能のコードが含まれます。
+1. **クラスライブラリ** プロジェクトテンプレートを使用して、新しいプロジェクトを作成します。 このプロジェクトには、拡張機能のコードが含まれます。
 
 2. 新しい **VSIX プロジェクト** プロジェクトを作成します。
 
@@ -36,7 +38,7 @@ DSL 定義を編集するために使用するデザイナーの拡張機能を�
 
 3. [コンテンツ] フィールドの上にある [ **コンテンツの追加**] をクリックします。
 
-4. [ **コンテンツの追加** ] ダイアログボックスで、 **[コンテンツの種類** を **MEF コンポーネント**に選択] を設定し、[ **プロジェクト** ] をクラスライブラリプロジェクトに設定します。
+4. [ **コンテンツの追加** ] ダイアログボックスで、 **[コンテンツの種類** を **MEF コンポーネント** に選択] を設定し、[ **プロジェクト** ] をクラスライブラリプロジェクトに設定します。
 
 5. [ **エディションの選択** ] をクリックし、 **Visual Studio Enterprise** がオンになっていることを確認します。
 

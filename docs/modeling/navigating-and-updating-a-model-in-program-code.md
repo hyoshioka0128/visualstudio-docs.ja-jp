@@ -1,5 +1,7 @@
 ---
 title: プログラム コードにおけるモデル内の移動およびモデルの更新
+description: モデル要素の作成と削除、そのプロパティの設定、要素間のリンクの作成と削除を行うコードを記述する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566177"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362211"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>プログラム コードのモデル内を移動し、モデルを更新する
 
@@ -55,7 +57,7 @@ ms.locfileid: "75566177"
 
  `henry.Name = "Henry VIII";`
 
- DSL 定義の場合、プロパティの **種類** が **計算**されますが、設定することはできません。 詳細については、「 [計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
+ DSL 定義の場合、プロパティの **種類** が **計算** されますが、設定することはできません。 詳細については、「 [計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。
 
 ### <a name="relationships"></a>リレーションシップ
  DSL 定義で定義したドメインリレーションシップは、プロパティのペアになります。1つはリレーションシップの端にあるクラスです。 DslDefinition ダイアグラムには、プロパティの名前がリレーションシップの各側のロールのラベルとして表示されます。 ロールの多重度に応じて、プロパティの型は、リレーションシップのもう一方の端のクラス、またはそのクラスのコレクションのいずれかになります。
@@ -70,7 +72,7 @@ ms.locfileid: "75566177"
 
  `&& p.Parents.All(parent => parent.Children.Contains(p));`
 
- **Elementlinks**。 リレーションシップは、ドメインリレーションシップ型のインスタンスである *リンク*と呼ばれるモデル要素によっても表されます。 リンクには、常に1つのソース要素と1つのターゲット要素があります。 ソース要素とターゲット要素は同じにすることができます。
+ **Elementlinks**。 リレーションシップは、ドメインリレーションシップ型のインスタンスである *リンク* と呼ばれるモデル要素によっても表されます。 リンクには、常に1つのソース要素と1つのターゲット要素があります。 ソース要素とターゲット要素は同じにすることができます。
 
  リンクとそのプロパティにアクセスできます。
 
@@ -84,7 +86,7 @@ ms.locfileid: "75566177"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- リンクにアクセスするための他の方法もあります。 たとえば、次のように入力します。
+ リンクにアクセスするための他の方法もあります。 次に例を示します。
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +110,7 @@ ms.locfileid: "75566177"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> クラス情報へのアクセス
- DSL 定義のクラス、リレーションシップ、およびその他の側面に関する情報を取得できます。 たとえば、次のように入力します。
+ DSL 定義のクラス、リレーションシップ、およびその他の側面に関する情報を取得できます。 次に例を示します。
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -129,7 +131,7 @@ ms.locfileid: "75566177"
 - ElementLink-すべてのリレーションシップは Elementlink です
 
 ## <a name="perform-changes-inside-a-transaction"></a><a name="transaction"></a> トランザクション内で変更を実行する
- プログラムコードによってストア内の何かが変更されるたびに、トランザクション内で実行する必要があります。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそれらのプロパティに適用されます。 詳細については、 <xref:Microsoft.VisualStudio.Modeling.Transaction> を参照してください。
+ プログラムコードによってストア内の何かが変更されるたびに、トランザクション内で実行する必要があります。 これは、すべてのモデル要素、リレーションシップ、図形、図、およびそれらのプロパティに適用されます。 詳細については、「<xref:Microsoft.VisualStudio.Modeling.Transaction>」を参照してください。
 
  トランザクションを管理する最も便利な方法は、ステートメントでステートメントを使用することです `using` `try...catch` 。
 
@@ -199,13 +201,13 @@ using (Transaction t =
 
  リレーションシップのインスタンスを作成するには、次の3つの方法があります。 これら3つのメソッドは、それぞれ同じ効果を持ちます。
 
-- ソースロールプレーヤーのプロパティを設定します。 たとえば、次のように入力します。
+- ソースロールプレーヤーのプロパティを設定します。 次に例を示します。
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- ターゲットロールプレーヤーのプロパティを設定します。 たとえば、次のように入力します。
+- ターゲットロールプレーヤーのプロパティを設定します。 次に例を示します。
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +217,7 @@ using (Transaction t =
 
        このロールの多重度は `0..*` であるため、コレクションにを追加します。
 
-- リレーションシップのインスタンスを明示的に構築します。 たとえば、次のように入力します。
+- リレーションシップのインスタンスを明示的に構築します。 次に例を示します。
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -288,7 +290,7 @@ using (Transaction t =
 ## <a name="locks"></a><a name="locks"></a> 固定
  ロックによって変更が禁止されている可能性があります。 ロックは、個々の要素、パーティション、およびストアで設定できます。 これらのレベルのいずれかが、変更の種類を妨げるロックを持っている場合は、例外がスローされることがあります。 ロックが設定されているかどうかは、要素を使用して検出できます。GetLocks ()。これは、名前空間で定義されている拡張メソッドです <xref:Microsoft.VisualStudio.Modeling.Immutability> 。
 
- 詳細については、「 [ロックポリシーを定義して読み取り専用セグメントを作成する](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)」を参照してください。
+ 詳細については、「 [Read-Only セグメントを作成するためのロックポリシーの定義](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)」を参照してください。
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> コピーと貼り付け
  要素または要素のグループをにコピーでき <xref:System.Windows.Forms.IDataObject> ます。
@@ -381,7 +383,7 @@ FamilyTreeDiagram diagram =
 
  `connector.FromShape, connector.ToShape`
 
- 多くの図形は複合です。親図形と子の1つ以上のレイヤーで構成されます。 別の図形に相対的に配置された図形は、 *子*と呼ばれます。 親図形が移動すると、子が移動します。
+ 多くの図形は複合です。親図形と子の1つ以上のレイヤーで構成されます。 別の図形に相対的に配置された図形は、 *子* と呼ばれます。 親図形が移動すると、子が移動します。
 
  *相対子* は、親図形の境界ボックスの外側に表示できます。 *入れ子になっ* た子は、親の境界内に厳密に出現します。
 

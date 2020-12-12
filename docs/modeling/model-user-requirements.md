@@ -1,5 +1,7 @@
 ---
 title: ユーザー要件のモデリング
+description: Visual Studio を使用して、ユーザーのアクティビティに関する図を描画することによって、ユーザーのニーズを理解し、議論し、通信する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590242"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361965"
 ---
 # <a name="model-user-requirements"></a>ユーザー要件のモデリング
 
@@ -96,7 +98,7 @@ Customer が Meal を Ordering 中に、Restaurant が Menu Item を削除する
 
 サービス品質要求に準拠するコードを開発する方法については [、「アプリのアーキテクチャのモデル](../modeling/model-your-app-s-architecture.md) 化」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)
 - [アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)

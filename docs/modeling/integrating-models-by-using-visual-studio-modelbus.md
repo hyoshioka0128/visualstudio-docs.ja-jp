@@ -1,5 +1,7 @@
 ---
 title: Modelbus を使用したモデルの統合
+description: Visual Studio ModelBus では、モデルと他のツールとの間のリンクをモデルに作成する方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536943"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360729"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus を使用してモデルを統合する
 
@@ -50,7 +52,7 @@ ModelBus により、モデルまたはモデル内の特定の要素への一�
 
        `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
-   3. ModelBusAdapter プロジェクトの参照の中で、 **VisualStudio**を追加します。
+   3. ModelBusAdapter プロジェクトの参照の中で、 **VisualStudio** を追加します。
 
       テキスト テンプレートと他のコードの両方から DSL にアクセスするには、変更したアダプターと変更していないアダプターの 2 つが必要です。
 
@@ -92,7 +94,7 @@ DSL が別の DSL への参照を使用できるようにするには、まず�
 
 1. DSL 定義図で、図のメイン部分を右クリックし、[ **Modelbus の有効化**] をクリックします。
 
-2. ダイアログボックスで、[ **このモデルでモデルバス参照を使用できる**ようにする] を選択します。
+2. ダイアログボックスで、[ **このモデルでモデルバス参照を使用できる** ようにする] を選択します。
 
 3. 利用する DSL の Dsl プロジェクトで、次のアセンブリをプロジェクト参照に追加します。 これらのアセンブリ (.dll ファイル) は、公開されている DSL の ModelBusAdapter\bin * ディレクトリにあります \\ 。
 
@@ -118,15 +120,15 @@ DSL が別の DSL への参照を使用できるようにするには、まず�
 
 ### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>ユーザーがモデル バス参照をドメイン プロパティに設定可能にするには
 
-1. ドメインプロパティを右クリックし、[ **ModelBusReference 固有のプロパティの編集**] をクリックします。 ダイアログ ボックスが開きます。 これは、 *モデルバスピッカー*です。
+1. ドメインプロパティを右クリックし、[ **ModelBusReference 固有のプロパティの編集**] をクリックします。 ダイアログ ボックスが開きます。 これは、 *モデルバスピッカー* です。
 
-2. モデルまたはモデル内の要素に対して、適切な **種類の ModelBusReference**を選択します。
+2. モデルまたはモデル内の要素に対して、適切な **種類の ModelBusReference** を選択します。
 
 3. ファイル ダイアログ フィルター文字列に、`Family Tree files |*.ftree` のような文字列を入力します。 公開されている DSL のファイル拡張子を置き換えます。
 
 4. モデル内の要素を参照する場合、ユーザーが選択可能な型の一覧を追加します (たとえば、Company.FamilyTree.Person)。
 
-5. [ **OK**] をクリックし、**ソリューションエクスプローラー**ツールバーの [**すべてのテンプレートの変換**] をクリックします。
+5. [ **OK**] をクリックし、**ソリューションエクスプローラー** ツールバーの [**すべてのテンプレートの変換**] をクリックします。
 
     > [!WARNING]
     > 有効なモデルまたはエンティティを選択しなかった場合、[OK] ボタンが有効のように見えても効果はありません。
@@ -303,7 +305,7 @@ using (FamilyTreeAdapter adapter =
 
 1. アクセスする DSL には、テキスト テンプレートによるアクセスのために構成された ModelBus Adapter が含まれている必要があります。 詳細については、「 [DSL へのアクセスの提供](#provide)」を参照してください。
 
-2. 通常、ソース DSL 内に保存されたモデル バス参照 (MBR) を使用してターゲット DSL にアクセスします。 したがって、テンプレートにはソース DSL のディレクティブに加えて、MBR を解決するためのコードが含まれています。 テキストテンプレートの詳細については、「 [ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
+2. 通常、ソース DSL 内に保存されたモデル バス参照 (MBR) を使用してターゲット DSL にアクセスします。 したがって、テンプレートにはソース DSL のディレクティブに加えて、MBR を解決するためのコードが含まれています。 テキストテンプレートの詳細については、「 [Domain-Specific 言語からのコードの生成](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 
    ```
    <#@ template debug="true" hostspecific="true"
@@ -480,19 +482,19 @@ private const string INVALID_REF_FORMAT =
 
 ModelBus 拡張機能は DSL ソリューションで次の変更を加えます。
 
-DSL 定義図を右クリックし、[ **Modelbus の有効化**] をクリックして、[ **この Dsl で Modelbus を使用できるよう**にする] を選択します。
+DSL 定義図を右クリックし、[ **Modelbus の有効化**] をクリックして、[ **この Dsl で Modelbus を使用できるよう** にする] を選択します。
 
 - DSL プロジェクトでは、への参照が追加され **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
 - DSL 定義に、外部型参照 `Microsoft.VisualStudio.Modeling.Integration.ModelBusReference` が追加されます。
 
-   **DSL エクスプローラー**で、[**ドメインの種類**] の下に参照が表示されます。 外部型参照を手動で追加するには、ルート ノードを右クリックします。
+   **DSL エクスプローラー** で、[**ドメインの種類**] の下に参照が表示されます。 外部型参照を手動で追加するには、ルート ノードを右クリックします。
 
-- 新しいテンプレートファイルが追加されます。これは、作成された**コード \ Modelbus.**
+- 新しいテンプレートファイルが追加されます。これは、作成された **コード \ Modelbus.**
 
-ドメインプロパティの type を ModelBusReference に設定し、プロパティを右クリックして、[ **modelbusreference 固有のプロパティを有効に**する] をクリックします。
+ドメインプロパティの type を ModelBusReference に設定し、プロパティを右クリックして、[ **modelbusreference 固有のプロパティを有効に** する] をクリックします。
 
-- ドメイン プロパティにいくつかの CLR 属性が追加されます。 それらはプロパティ ウィンドウの Custom Attributes フィールドで確認できます。 **Dslfrom**を使用すると、プロパティ宣言の属性を確認できます。
+- ドメイン プロパティにいくつかの CLR 属性が追加されます。 それらはプロパティ ウィンドウの Custom Attributes フィールドで確認できます。 **Dslfrom** を使用すると、プロパティ宣言の属性を確認できます。
 
   ```csharp
   [System.ComponentModel.TypeConverter(typeof(
@@ -506,13 +508,13 @@ DSL 定義図を右クリックし、[ **Modelbus の有効化**] をクリッ�
     ("Choose a model file", "Target model|*.target")]
   ```
 
-DSL 定義図を右クリックし、[ **ModelBus の有効化**] をクリックして、[ **この Dsl を Modelbus に公開**する] を選択します。
+DSL 定義図を右クリックし、[ **ModelBus の有効化**] をクリックして、[ **この Dsl を Modelbus に公開** する] を選択します。
 
 - ソリューションに新しいプロジェクト `ModelBusAdapter` が追加されます。
 
 - `ModelBusAdapter` プロジェクトに `DslPackage` への参照が追加されます。 `ModelBusAdapter` プロジェクトへの参照が含まれてい `Dsl` ます。
 
-- **DslPackage\source.extention.tt**で `|ModelBusAdapter|` は、は MEF コンポーネントとして追加されます。
+- **DslPackage\source.extention.tt** で `|ModelBusAdapter|` は、は MEF コンポーネントとして追加されます。
 
 ## <a name="see-also"></a>関連項目
 
