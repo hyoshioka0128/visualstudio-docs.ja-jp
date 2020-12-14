@@ -1,5 +1,7 @@
 ---
 title: Start コマンド
+description: Start コマンドについて、およびそれを使用してスタートアップ プロジェクトのデバッグを開始する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590281"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616422"
 ---
 # <a name="start-command"></a>Start コマンド
 スタートアップ プロジェクトのデバッグを開始します。
@@ -44,9 +46,9 @@ Debug.Start [address]
 >Debug.Start
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: 名前の変更のリファクタリング
+description: 名前の変更のリファクタリング機能を使用して、フィールド、ローカル変数、メソッド、名前空間、プロパティ、型などのコード シンボルの識別子の名前を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182959"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616721"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>コード シンボルの名前の変更のリファクタリング
 
@@ -64,7 +66,7 @@ ms.locfileid: "84182959"
       ![名前の変更 - VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > この新しい名前を使うように、コメントや他の文字列も更新できます。また、エディターの右上に表示される **[名前の変更]** ボックスのチェック ボックスを使って、保存前に[変更をプレビューする](../../ide/preview-changes.md)こともできます。
+   > この新しい名前を使うように、コメントや他の文字列も更新できます。また、エディターの右上に表示される **[名前の変更]** ボックスのチェック ボックスを使って、保存前に [変更をプレビューする](../../ide/preview-changes.md)こともできます。
 
 4. 変更を確認した後は、 **[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
 

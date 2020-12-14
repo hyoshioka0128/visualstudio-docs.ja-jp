@@ -1,5 +1,7 @@
 ---
 title: エディット コンティニュ (Visual C#) | Microsoft Docs
+description: エディット コンティニュは、Visual C# プロジェクトで使用できます。 どのような編集がサポートされているかについて、および編集の適用の可否とタイミングを制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421642"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862882"
 ---
 # <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C#)
  C# のエディット コンティニュを使用すると、デバッグ中に中断モードでコードに変更を加えることができます。 デバッグ セッションを停止したり再開したりしなくても、変更を適用できます。 実行モードでは、ソース エディターは読み取り専用です。

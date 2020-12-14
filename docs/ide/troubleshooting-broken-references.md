@@ -1,6 +1,6 @@
 ---
 title: 壊れた参照のトラブルシューティング
-description: アプリケーションが参照コンポーネントを見つけられないこと以外の原因で発生した可能性のある壊れた参照のトラブルシューティング方法を説明します。
+description: アプリケーションで参照コンポーネントを見つけられないこと以外の原因で発生した可能性、壊れた参照のトラブルシューティングを行う方法を説明します。
 ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6c47f8c399c89df9bf91879abc7cf926eac925bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479174"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560240"
 ---
 # <a name="troubleshoot-broken-references"></a>壊れた参照のトラブルシューティング
 

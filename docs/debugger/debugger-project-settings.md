@@ -1,5 +1,7 @@
 ---
 title: デバッガー プロジェクトの設定 | Microsoft Docs
+description: デバッグに影響を与えるさまざまなプロジェクト設定があります。 この記事に含まれるリンク先で [プロパティ ページ] ダイアログ ボックスを使用して設定を変更する方法について学習してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6a3a5ba7a1e215fddd5b1127859948496e9b4e1d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188639"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561033"
 ---
 # <a name="debugger-project-settings"></a>デバッガーに関連するプロジェクト設定
 一部のプロジェクト設定がデバッグに影響することもあります。 これらの設定により、デバッガーで参照するディレクトリ、プログラムを起動するためのコマンドとコマンド引数、プログラム用に作成されるデバッグ情報の種類などが決まります。 デバッグ設定は、 **[プロパティ ページ]** ダイアログ ボックスで変更できます。

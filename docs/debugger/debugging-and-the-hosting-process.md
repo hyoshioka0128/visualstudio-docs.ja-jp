@@ -1,5 +1,7 @@
 ---
 title: デバッグとホスティング プロセス | Microsoft Docs
+description: 2017 より以前のバージョンの Visual Studio については、デバッガーのパフォーマンスを改善し、一部のデバッガー機能にアクセスする目的でホスティング プロセスを使用します。
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 3b6f2650da6a83d936869d01fdc661bc9ddf8fc0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188458"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560695"
 ---
 # <a name="debugging-and-the-hosting-process"></a>プロセスのデバッグとホスト
 Visual Studio のホスティング プロセスでは、デバッガーのパフォーマンスを向上させ、部分信頼のデバッグやデザイン時の式の評価など、新しいデバッガー機能が使用できるようになりました。 必要に応じてホスティング プロセスを無効にすることもできます。 次のセクションでは、ホスティング プロセスがある場合とない場合のデバッグの違いについて説明します。

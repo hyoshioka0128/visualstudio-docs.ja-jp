@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dbe3ee78d46128a5944ee7b4d0bc69f001270588
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436025"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537449"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -74,9 +74,9 @@ ms.locfileid: "92436025"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  はい       |
-| Visual Studio Enterprise with GitHub Enterprise | VL | 6 か月       |  はい       |
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 6 か月       |  はい       |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                           |N/A         |
-| Visual Studio Professional with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|

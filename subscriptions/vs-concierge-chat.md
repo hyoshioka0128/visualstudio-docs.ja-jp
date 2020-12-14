@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションのコンシェルジェ チャット特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353383"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538099"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
 コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
@@ -39,9 +39,9 @@ ms.locfileid: "92353383"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise | VL| 使用可能       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL| 使用可能       |  はい          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
-| Visual Studio Professional with GitHub Enterprise | VL | 使用可能                                                            |  はい          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 使用可能                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  はい          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |

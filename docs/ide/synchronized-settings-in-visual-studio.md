@@ -1,6 +1,6 @@
 ---
 title: 設定を同期する
-description: 同じ個人アカウントにサインインして、複数のコンピューター間で Visual Studio の設定を同期する方法を説明します。
+description: 同じ個人アカウントにサインインすることで、複数のコンピューター間で Visual Studio 設定を同期させる方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326264063d135582f2e9b8730ffcf16cba9e3d6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479208"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560916"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 

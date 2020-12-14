@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 03/25/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる CODE Magazine 特典について説明します。
-ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970483"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538112"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに含まれる CODE Magazine 特典
 
@@ -50,9 +50,9 @@ CODE Magazine の購読を設定するプロセスは簡単です。  以下の�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  いいえ          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL| 使用可能       |  いいえ          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL| 使用可能       |  いいえ          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                            |  いいえ          |
-| Visual Studio Professional with GitHub Enterprise | VL                                      | 使用可能                                                            |  いいえ          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用可能                                                            |  いいえ          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  いいえ          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  いいえ          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |

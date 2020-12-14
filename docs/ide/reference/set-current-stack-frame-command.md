@@ -1,5 +1,7 @@
 ---
 title: SetCurrentStackFrame コマンド
+description: SetCurrentStackFrame コマンドについて、およびそれを使用して特定のスタック フレームを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f70f5ebfc80933f38f1543d5eb42f01fb470298f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 032602744247ded5cb38d8a3ae3e1157ccbc5cee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769723"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616604"
 ---
 # <a name="set-current-stack-frame-command"></a>SetCurrentStackFrame コマンド
 特定のスタック フレームを設定できます。
@@ -32,7 +34,7 @@ Debug.SetCurrentStackFrame index
 ## <a name="arguments"></a>引数
 `index`
 
-必須。 インデックスでスタック フレームを選びます。
+必須です。 インデックスでスタック フレームを選びます。
 
 ## <a name="example"></a>例
 
@@ -40,9 +42,9 @@ Debug.SetCurrentStackFrame index
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
 title: デバッガーでの書式指定子 (C++) | Microsoft Docs
+description: 書式指定子を使用すると、[ウォッチ] ウィンドウ、[自動変数] ウィンドウ、または [ローカル] ウィンドウに表示される値の書式を変更できます。 この記事では、使用方法の詳細について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832321"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863037"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C++)
 書式指定子を使用して、 **[ウォッチ]** 、 **[自動変数]** 、 **[ローカル]** の各ウィンドウに表示される値の書式を変更することができます。
@@ -50,7 +52,7 @@ int main() {
 }
 ```
 
-デバッグ中に `my_var1` 変数を**ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を整数ではなく文字として表示するには、最初に右クリックして **[16 進数で表示]** を選択解除します。 次に、文字書式指定子 **, c** を、 **[Name]** 列の変数名の後に追加します。 **[Value]** 列に **101 'e'** が表示されるようになります。
+デバッグ中に `my_var1` 変数を **ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を整数ではなく文字として表示するには、最初に右クリックして **[16 進数で表示]** を選択解除します。 次に、文字書式指定子 **, c** を、 **[Name]** 列の変数名の後に追加します。 **[Value]** 列に **101 'e'** が表示されるようになります。
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 

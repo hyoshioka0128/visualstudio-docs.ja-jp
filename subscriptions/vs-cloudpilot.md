@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの CloudPilot 特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 03/24/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
-ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005925"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538151"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 いくつかの簡単な手順で、アプリを Microsoft Azure に移行します。 数分で、Containers、VM、App Services、SQL Azure、SQL MI への正常な移行のためにコード変更が必要なすべてのコード行が識別されます。 次に、ASR、DMA、および DMS を活用するウィザードを使用して、アプリを Azure に移行します。
@@ -60,9 +60,9 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 1 つのライセンス、30 日間、1 つのスキャン                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
-| Visual Studio Professional with GitHub Enterprise | VL | 1 つのライセンス、30 日間、1 つのスキャン                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 1 つのライセンス、30 日間、1 つのスキャン                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |

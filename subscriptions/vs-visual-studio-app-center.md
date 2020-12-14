@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの Visual Studio App Center 特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435738"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537774"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -43,9 +43,9 @@ Visual Studio App Center を開始するのは簡単です。
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、NFR<sup>1</sup> | Included       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | Included       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | Included       |  はい          |
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | Included                                                            |はい |
-| Visual Studio Professional with GitHub Enterprise | VL                                      | Included                                                            |はい |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | Included                                                            |はい |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | Included                                                            |はい |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | Included                                                            |はい |
 ||

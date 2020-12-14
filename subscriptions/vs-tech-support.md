@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413966"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537969"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の **非運用環境** で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -105,12 +105,12 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 4 つのインシデント       |  はい|
-| Visual Studio Enterprise with GitHub Enterprise | VL | 4 つのインシデント       |  はい|
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 4 つのインシデント       |  はい|
 | Visual Studio Professional (Standard) | VL、Azure、リテール、一部の NFR<sup>2</sup>                                        | 2 つのインシデント                                                          |はい         |
-| Visual Studio Professional with GitHub Enterprise | VL                                     | 2 つのインシデント                                                          |はい         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                     | 2 つのインシデント                                                          |はい         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 2 つのインシデント                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 2 つのインシデント                                               | はい         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用不可                                                           |N/A|

@@ -1,5 +1,7 @@
 ---
 title: CRT デバッグ ヒープの詳細 | Microsoft Docs
+description: デバッグ ヒープには、メモリ割り当て問題の解決に役立つ強力なツールがあります。 ツールと、ツールをリークやオーバーランなどの問題に役立てる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -73,12 +75,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 774c6c03d0485664eb01e1a7967003ef2f5bd2bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247945"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560617"
 ---
 # <a name="crt-debug-heap-details"></a>CRT デバッグ ヒープ
 このトピックでは、CRT デバッグ ヒープについて詳しく解説します。
@@ -309,7 +311,7 @@ typedef struct _CrtMemState
 
 **デバッグ用の独自割り当てルーチンの作成**
 
-**_dbg** の付いたデバッグ バージョンの[ヒープ割り当て関数](../debugger/debug-versions-of-heap-allocation-functions.md)を使用するのと比べると少し複雑になりますが、デバッグ用に独自の割り当てルーチンを作成する方法もあります。 そして、基本のヒープ割り当てルーチンにソース ファイルと行番号を引数として渡します。こうすると、不正な割り当てが発生した場所をすばやく見つけることができます。
+**_dbg** の付いたデバッグ バージョンの [ヒープ割り当て関数](../debugger/debug-versions-of-heap-allocation-functions.md)を使用するのと比べると少し複雑になりますが、デバッグ用に独自の割り当てルーチンを作成する方法もあります。 そして、基本のヒープ割り当てルーチンにソース ファイルと行番号を引数として渡します。こうすると、不正な割り当てが発生した場所をすばやく見つけることができます。
 
 たとえば、アプリケーションに次のような共用ルーチンがあるとします。
 

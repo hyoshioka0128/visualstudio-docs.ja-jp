@@ -1,5 +1,7 @@
 ---
 title: C# の Equals および GetHashCode メソッドのオーバーライドを生成する
+description: '[クイックアクションとリファクタリング] メニューを使用して、Equals メソッドと GetHashCode メソッドを生成する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f6f7ec74af21ef62079a3fef18dd39544e7b42aa
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569284"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617514"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio で Equals および GetHashCode メソッドのオーバーライドを生成する
 
@@ -20,7 +22,7 @@ ms.locfileid: "75569284"
 
 - C#
 
-**概要:** **Equals** メソッドと **GetHashCode** メソッドを生成します。
+**概要:****Equals** メソッドと **GetHashCode** メソッドを生成します。
 
 **タイミング:** これらのオーバーライドは、メモリ内のオブジェクトの場所ではなく、1 つ以上のフィールドによって比較される型がある場合に生成されます。
 
@@ -47,7 +49,7 @@ ms.locfileid: "75569284"
 
    - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
 
-   - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](../media/screwdriver-icon.png) アイコンをクリックします。
+   - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](../media/screwdriver-icon.png) アイコンをクリックします。
 
    ![オーバーライド生成のプレビュー](media/overrides-preview-cs.png)
 
@@ -64,7 +66,7 @@ ms.locfileid: "75569284"
 
    ![メソッド生成の結果](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード生成](../code-generation-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

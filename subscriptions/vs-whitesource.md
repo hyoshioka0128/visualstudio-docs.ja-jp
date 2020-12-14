@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435997"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537683"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -43,9 +43,9 @@ ms.locfileid: "92435997"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  はい       |
-| Visual Studio Enterprise with GitHub Enterprise | VL | 6 か月       |  はい       |
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 6 か月       |  はい       |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                           |N/A         |
-| Visual Studio Professional with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|

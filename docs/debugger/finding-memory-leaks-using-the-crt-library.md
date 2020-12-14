@@ -1,5 +1,7 @@
 ---
 title: CRT ライブラリを使用したメモリ リークの検出 | Microsoft Docs
+description: C/C++ デバッガーと C ランタイム ライブラリ (CRT) を使用して、メモリ リークを検出する方法について説明します。 この手法には、メモリ リーク レポート、およびメモリ スナップショットの比較が含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350486"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863076"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>CRT ライブラリを使用したメモリ リークの検出
 
@@ -182,7 +184,7 @@ Object dump complete.
 
 1. アプリの先頭付近にブレークポイントを設定し、デバッグを開始します。
 
-1. アプリがブレークポイントで一時停止したら、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[ウォッチ 1]** (または **[ウォッチ 2]** 、 **[ウォッチ 3]** 、または **[ウォッチ 4]** ) を選択して**ウォッチ** ウィンドウを開きます。
+1. アプリがブレークポイントで一時停止したら、 **[デバッグ]**  >  **[ウィンドウ]**  >  **[ウォッチ 1]** (または **[ウォッチ 2]** 、 **[ウォッチ 3]** 、または **[ウォッチ 4]** ) を選択して **ウォッチ** ウィンドウを開きます。
 
 1. **ウォッチ** ウィンドウの **[名前]** 列に、「`_crtBreakAlloc`」と入力します。
 

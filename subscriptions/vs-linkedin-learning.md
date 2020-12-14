@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970301"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537891"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -72,9 +72,9 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール<sup>1</sup> | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |いいえ。  新しいサブスクライバーのみが使用できます         |
-| Visual Studio Professional with GitHub Enterprise | VL | 3 か月      | いいえ。  新しいサブスクライバーのみが使用できます         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 3 か月      | いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              | N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|

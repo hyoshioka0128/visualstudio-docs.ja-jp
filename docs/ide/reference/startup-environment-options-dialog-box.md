@@ -1,5 +1,7 @@
 ---
 title: '[スタートアップ] ([オプション] ダイアログ ボックス - [環境])'
+description: '[環境] セクションの [スタートアップ] ページを使用して、Visual Studio が開いたときに別の既定のアクションを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27803983fe0b387f98934adfa6be3abbbe23611c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8e6cbac9da68a31c345805c1070c4d5b9fd168d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770594"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616305"
 ---
 # <a name="options-dialog-box-environment--startup"></a>[オプション] ダイアログ ボックス:[環境] \> [スタートアップ]
 
@@ -27,6 +29,6 @@ ms.locfileid: "85770594"
 
 ::: moniker range=">=vs-2019"
 
-このページを使用して、Visual Studio 起動時の別の既定のアクションを設定します。 **[On startup, open]\(起動時に開く\)** リストで、**スタート ウィンドウ** (新しいプロジェクトまたは既存のプロジェクトを開くことができます)、**最新のソリューション**、または**空の環境**から選択します。
+このページを使用して、Visual Studio 起動時の別の既定のアクションを設定します。 **[On startup, open]\(起動時に開く\)** リストで、**スタート ウィンドウ** (新しいプロジェクトまたは既存のプロジェクトを開くことができます)、**最新のソリューション**、または **空の環境** から選択します。
 
 ::: moniker-end

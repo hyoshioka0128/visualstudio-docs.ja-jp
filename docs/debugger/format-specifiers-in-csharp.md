@@ -1,5 +1,7 @@
 ---
 title: デバッガーでの書式指定子 (C#) | Microsoft Docs
+description: 書式指定子を使用すると、ウォッチ ウィンドウに表示される値の書式を変更できます。 この記事では、使用方法の詳細について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849860"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862790"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C#)
 書式指定子を使用して、**ウォッチ** ウィンドウに表示される値の書式を変更することができます。 また、**イミディエイト** ウィンドウ、**コマンド** ウィンドウ、[トレースポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)、ソースのウィンドウでも、書式指定子を使用できます。 これらのウィンドウで式の上にカーソルを合わせると、結果が指定した書式で[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)に表示されます。
@@ -48,7 +50,7 @@ ms.locfileid: "62849860"
 }
 ```
 
-デバッグ中に `my_var1` 変数を**ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を 16 進数の整数ではなく 10 進数の整数で表示するには、 **[名前]** 列で変数名の後に 10 進数の書式指定子 **, d** を追加します。 **[値]** 列には **101** が表示されています。
+デバッグ中に `my_var1` 変数を **ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を 16 進数の整数ではなく 10 進数の整数で表示するには、 **[名前]** 列で変数名の後に 10 進数の書式指定子 **, d** を追加します。 **[値]** 列には **101** が表示されています。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 

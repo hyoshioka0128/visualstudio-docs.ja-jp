@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Microsoft Tech Community フォーラムのサポート特典について説明します。
-ms.openlocfilehash: b579f407e61b4cd0b051c603bdef736e7c52fa44
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2bdd6b638ba490c2643374b15bc8b9644d519ebd
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905579"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537813"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでの Microsoft Tech Community フォーラムのサポート
 ベスト プラクティス、設計アーキテクチャ、および最新情報について、他のユーザーや Microsoft の技術者とつながることができます。
@@ -44,9 +44,9 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                                          サブスクリプション レベル                                           |     チャネル      |    特長    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)、NFR<sup>1</sup>                            | VL、Azure、リテール |   使用可能    |    はい     |
-|                           Visual Studio Enterprise with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
+|                           Visual Studio Enterprise Subscription with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
 |                          Visual Studio Professional (Standard)                          | VL、Azure、リテール |   使用可能    |    はい     |
-|                          Visual Studio Professional with GitHub Enterprise                          | VL、Azure、リテール |   使用可能    |    はい     |
+|                          Visual Studio Professional Subscription with GitHub Enterprise                          | VL、Azure、リテール |   使用可能    |    はい     |
 |                              Visual Studio Test Professional (標準)                               |    VL、リテール     |   使用可能    |    はい     |
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   使用可能    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)|        すべて        | 使用できません |     いいえ     |

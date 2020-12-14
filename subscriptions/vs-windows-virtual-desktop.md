@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを使用して Microsoft Windows Virtual Desktop を活用する方法について説明します
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005047"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537956"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>サブスクリプション内で Windows Virtual Desktop にアクセスする 
 Visual Studio のサブスクライバーは、Microsoft Windows Virtual Desktop サービスで Azure Dev/Test の個人クレジットを使用できるようになりました。  
@@ -47,9 +47,9 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 使用可能|  はい          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | 使用可能|  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能|  はい          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                             |  はい             |
-| Visual Studio Professional with GitHub Enterprise | VL                                       | 使用可能                                        |  はい           |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                       | 使用可能                                        |  はい           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能|  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                         |  はい          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |

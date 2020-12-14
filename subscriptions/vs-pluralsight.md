@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005343"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537982"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -70,14 +70,14 @@ Pluralsight サブスクリプションの有効期限が切れると、状態�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-|                          サブスクリプション レベル                          |     チャンネル      |    特長    |   更新可能かどうか   |
+|                          サブスクリプション レベル                          |     チャネル      |    特長    |   更新可能かどうか   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL、Azure、リテール |   6 か月    | はい<sup>2</sup> |
-|          Visual Studio Enterprise with GitHub Enterprise          | VL  |   6 か月    | はい<sup>2</sup> |
+|          Visual Studio Enterprise Subscription with GitHub Enterprise          | VL  |   6 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL、Azure、リテール |   3 か月    | はい<sup>2</sup> |
-|         Visual Studio Professional with GitHub Enterprise          | VL  |   3 か月    | はい<sup>2</sup> |
-|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用不可    | N/A  |
-|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用不可    | N/A  |
+|         Visual Studio Professional Subscription with GitHub Enterprise          | VL  |   3 か月    | はい<sup>2</sup> |
+|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用不可    | NA  |
+|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用不可    | NA  |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用不可 |       N/A       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       N/A       |
 ||

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435828"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537722"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -44,9 +44,9 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | Included       |  はい|
-| Visual Studio Enterprise with GitHub Enterprise   | VL  | Included       |  はい|
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL  | Included       |  はい|
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい|
-| Visual Studio Professional with GitHub Enterprise | VL                                        | Included                                                            |はい|
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                        | Included                                                            |はい|
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A|
 | MSDN Platforms (標準)                                          | VL、リテール                                              |  使用できません                                            |  N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435882"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538086"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
@@ -60,9 +60,9 @@ ms.locfileid: "92435882"
 | サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
-| Visual Studio Professional with GitHub Enterprise| VL | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
+| Visual Studio Professional Subscription with GitHub Enterprise| VL | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月間                                             |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月間                                              |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |

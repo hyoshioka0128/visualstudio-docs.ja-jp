@@ -1,5 +1,5 @@
 ---
-title: GitHub Enterprise を含む Visual Studio | Microsoft Docs
+title: Visual Studio Subscription with GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,14 +7,14 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションの一部として GitHub Enterprise にアクセスする方法について説明します
-ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467519"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537904"
 ---
-# <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションを含む Visual Studio
+# <a name="visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscription with GitHub Enterprise 
 
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise、Visual Studio Professional、GitHub Enterprise は、
 
 メリットとオプションの詳細については、 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> にアクセスしてください。 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>GitHub Enterprise の設定プロセスを使用した Visual Studio とは
+## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>Visual Studio Subscription with GitHub Enterprise の設定プロセス
 
-GitHub Enterprise サブスクリプションを含む Visual Studio は、次の 2 つの部分に分かれて管理されます。
+Visual Studio Subscription with GitHub Enterprise は、次の 2 つの部分に分かれて管理されます。
 1. Visual Studio サブスクリプション (Enterprise または Professional)
 2. GitHub Enterprise 
 
-GitHub を含む Visual Studio サブスクリプションが割り当てられると、Visual Studio サブスクリプション管理者によって自分にサブスクリプションが割り当てられたことを知らせる電子メールが届きます。  その時点で、<https://my.visualstudio.com/benefits> で利用可能なサブスクリプションの特典を確認できます。  これには、次に示すように GitHub Enterprise の特典が含まれます。
+Visual Studio Subscription with GitHub Enterprise が割り当てられると、Visual Studio サブスクリプション管理者によってサブスクリプションが割り当てられたことを知らせるメールが届きます。  その時点で、<https://my.visualstudio.com/benefits> で利用可能なサブスクリプションの特典を確認できます。  これには、次に示すように GitHub Enterprise の特典が含まれます。
 
    > [!div class="mx-imgBorder"]
    > ![GitHub Enterprise の保留中の Enterprise アカウントの設定](_img/access-github/pending-account-setup.png "まず、組織で Enterprise アカウントを設定する必要があります。")  

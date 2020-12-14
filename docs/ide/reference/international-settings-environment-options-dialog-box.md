@@ -1,5 +1,6 @@
 ---
 title: '[オプション] ダイアログ ボックスの [国際対応の設定]'
+description: インストールされている IDE に複数の言語バージョンがある場合に、[環境] セクションの [国際対応の設定] ページを使用して、既定の言語を変更する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1210f217c9e1dc1f8a90eb99fec9e55970aa8eff
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 37be8d3e5a652bb55b1d71f66c0e9c8ca4cc2f16
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102494"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617371"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>[オプション] ダイアログ ボックス:[環境] \> [国際対応の設定]
 

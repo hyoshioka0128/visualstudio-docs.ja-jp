@@ -1,5 +1,7 @@
 ---
 title: デバッガーでのコンテキスト演算子 (C++) | Microsoft Docs
+description: 場合によっては、外部スコープにあり、ローカル名で非表示になっている C++ の名前のコンテキストを指定する必要があります。 コンテキスト演算子を使用してこれを行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564705"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559759"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio デバッガーでのコンテキスト演算子 (C++)
 C++ のコンテキスト演算子を使用して、ブレークポイントの場所、変数名、または式を修飾できます。 コンテキスト演算子は、ローカル名で隠されていてほかにアクセス方法がない外部スコープから名前を指定するために利用できます。
@@ -59,7 +61,7 @@ C++ のコンテキスト演算子を使用して、ブレークポイントの�
   {,,"a long, long, library name.dll"} g_Var
   ```
 
-- *expression* は任意の有効な C++ 式で、 *module*内の関数名、変数名、ポインター アドレスなどの有効なターゲットに解決します。
+- *expression* は任意の有効な C++ 式で、 *module* 内の関数名、変数名、ポインター アドレスなどの有効なターゲットに解決します。
 
   式エバリュエーターが式に含まれる記号を見つけると、次の順序で記号を検索します。
 

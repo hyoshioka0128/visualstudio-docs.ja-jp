@@ -1,5 +1,7 @@
 ---
 title: XML ドキュメントのコメントを挿入する
+description: コンパイラで生成された XML ファイルを作成して .NET アセンブリと共に配布するために使用できる、XML ドキュメントのコメントをコードに挿入する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77706396"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617475"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>方法: ドキュメント生成のための XML コメントを挿入する
 
@@ -46,11 +48,11 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 
 3. 各 XML 要素の説明を入力し、コード要素を完全に文書化します。
 
-   ![完了したコメント](media/doc-result-cs.png)
+   ![完了したコメントを示すスクリーンショット。](media/doc-result-cs.png)
 
 要素の上にカーソルを置くとクイック ヒントに表示される、XML コメントのスタイルを使用できます。 これらのスタイルには、斜体、太字、箇条書き、クリック可能なリンクなどがあります。
 
-   ![完了したコメント](media/doc-style-cs.png) 
+   ![斜体、太字、箇条書き、クリック可能なリンクのスタイル タグを含む完了したコメントを示すスクリーンショット。](media/doc-style-cs.png) 
 
 > [!NOTE]
 > `///` (C#) または `'''` (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための[オプション](../../ide/reference/options-text-editor-csharp-advanced.md)があります。 メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 次に、 **[テキスト エディター]**  >  **[C#]** または **[Basic]**  >  **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、 **[XML ドキュメントを生成する]** オプションを探します。

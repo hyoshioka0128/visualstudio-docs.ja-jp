@@ -1,5 +1,7 @@
 ---
 title: エディット コンティニュを使用する (C++) | Microsoft Docs
+description: エディット コンティニュは、C++ プロジェクトで使用できます。 どのような編集がサポートされているかについて、および編集の適用の可否とタイミングを制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599655"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863063"
 ---
 # <a name="edit-and-continue-c"></a>エディット コンティニュ (C++)
 C++ プロジェクトで、エディット コンティニュを使用できます。 エディット コンティニュの制限についての情報は、「[サポートされているコード変更 (C++)](../debugger/supported-code-changes-cpp.md)」を参照してください。

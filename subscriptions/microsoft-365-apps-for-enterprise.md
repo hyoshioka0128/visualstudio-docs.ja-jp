@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Microsoft 365 Apps for enterprise に関する説明を読み、インストールする
-ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006125"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537826"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise
 Microsoft 365 Apps for enterprise (以前の Office 365 Pro Plus) は、一部の Visual Studio サブスクリプションで利用できます。 
@@ -56,10 +56,10 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール| 使用可能       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | 使用可能       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能       |  はい          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 使用できません       |  N/A          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                            |  N/A          |
-| Visual Studio Professional with GitHub Enterprise | VL | 使用できません         |  N/A          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 使用できません         |  N/A          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |

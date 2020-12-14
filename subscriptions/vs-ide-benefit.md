@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
-ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435752"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538060"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典
 
@@ -63,9 +63,9 @@ IDE をダウンロードするには:
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 使用可能       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 使用可能       |  はい          |
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
-| Visual Studio Professional with GitHub Enterprise | VL   | 使用可能              |  はい          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL   | 使用可能              |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 

@@ -1,5 +1,7 @@
 ---
 title: すべての呼び出し履歴を含むミニダンプを作成する
+description: すべての呼び出し履歴に関する情報が含まれる Visual Studio プロセスのミニダンプを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5cf6add1a20a0ee45ec69ade0d5f2839483bb9f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770841"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560877"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>すべての呼び出し履歴を含む Visual Studio プロセスのミニダンプを作成する
 
@@ -29,7 +31,7 @@ Microsoft から、すべての呼び出し履歴の情報を含む実行中の 
 
 1. Visual Studio の新しいインスタンスを起動します。
 1. メイン メニューから、 **[デバッグ]**  >  **[プロセスにアタッチ]** の順に選択します。
-1. 関連する **[マネージド]** と **[ネイティブ]** チェック ボックスをオンにして、 **[アタッチ]** を押します。
+1. 関連する **[マネージド]** と **[ネイティブ]** チェック ボックスをオンにして、**[アタッチ]** を押します。
 
    ![プロセスにアタッチする](../ide/media/attach-to-process.png)
 
@@ -40,8 +42,8 @@ Microsoft から、すべての呼び出し履歴の情報を含む実行中の 
 ## <a name="get-the-call-stacks-from-the-minidump"></a>ミニダンプから呼び出し履歴を取得する
 
 1. Visual Studio でダンプ ファイルを開きます。
-1. **[ツール]** > **[オプション]** > **[デバッグ]** > **[シンボル]** に移動し、**[シンボル ファイル (.pdb) の場所]** 内で **[Microsoft シンボル サーバー]** がチェックされていることを確認します。
-1. **[コマンド]** ウィンドウを開きます ( **[ビュー]**  >  **[その他のウィンドウ]**  >  **[コマンド ウィンドウ]** )
+1. **[ツール]**  >  **[オプション]**  >  **[デバッグ]**  >  **[シンボル]** に移動し、 **[シンボル ファイル (.pdb) の場所]** 内で **[Microsoft シンボル サーバー]** がチェックされていることを確認します。
+1. **[コマンド]** ウィンドウを開きます (**[ビュー]** > **[その他のウィンドウ]** > **[コマンド ウィンドウ]**)
 1. 「~*k」と入力します。 すべてのスレッドの呼び出し履歴がウィンドウに表示されます。
 1. [コマンド ウィンドウ] からすべてのテキストをコピーし、テキスト ファイルに保存します。
 1. その txt ファイルをバグに添付します。

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440611"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595267"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes のしくみ
 
@@ -72,7 +72,8 @@ Visual Studio で Bridge to Kubernetes を使用するには、*ASP.NET と Web 
 Bridge to Kubernetes によって、Kubernetes クラスター上で Azure Dev Spaces が有効になっていることが検出されると、Bridge to Kubernetes を使用する前に Azure Dev Spaces を無効にするように求められます。
 
 ルーティング マネージャーによって、起動時に次のことが行われます。
-* サブドメインの *GENERATED_NAME* を使用して、名前空間で見つかったすべてのイングレスが複製されます。
+
+* サブドメインの *GENERATED_NAME* を使用し、名前空間に含まれるすべてのイングレス (ロード バランサー イングレスを含む) を複製します。
 * 各サービス用に、*GENERATED_NAME* サブドメインで複製されたイングレスに関連付けられたエンボイ ポッドを作成します。
 * 分離して作業しているサービス用の追加のエンボイ ポッドを作成します。 これで、サブドメインを指定した要求を開発用コンピューターにルーティングすることができます。
 * サブドメインを持つサービスのルーティングを処理するために、各エンボイ ポッド用のルーティング規則を構成します。
@@ -144,7 +145,7 @@ Bridge to Kubernetes には次の制限があります。
 * あるサービスに接続するには、そのサービスを 1 つのポッドでサポートする必要があります。 レプリカが含まれるサービスなど、1 つのサービスに複数のポッドで接続することはできません。
 * Bridge to Kubernetes を正常に接続するために、1 つのポッドには、そのポッドで実行されているコンテナーが 1 つだけ与えられます。 Bridge to Kubernetes では、サービス メッシュによって挿入されたサイドカー コンテナーなど、追加のコンテナーが与えられたポッドを利用してサービスに接続できません。
 * 現時点では、Bridge to Kubernetes ポッドは、Linux コンテナーである必要があります。 Windows コンテナーはサポートされていません。
-* HTTPS では、分離を使用できません。
+* Visual Studio で Bridge to Kubernetes を使用するとき、HTTPS で分離を使用することはできません。 HTTPS は、Visual Studio Code の使用時にのみ、分離で使用できます。
 * ホスト ファイルを編集する目的で開発コンピューターで実行するには、管理者特権が Bridge to Kubernetes に必要になります。
 * Azure Dev Spaces が有効なクラスターでは、Bridge to Kubernetes を使用できません。
 

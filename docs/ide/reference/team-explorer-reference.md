@@ -1,32 +1,34 @@
 ---
 title: チーム エクスプローラーのリファレンス
+description: 他のチーム メンバーと共同作業してプロジェクトを開発するための、チーム エクスプローラーのさまざまな関数について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928083"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560994"
 ---
 # <a name="team-explorer-reference"></a>チーム エクスプローラーのリファレンス
 
-この記事では、**チーム エクスプローラー**のさまざまな機能に関する Azure DevOps 記事のリンクを紹介します。
+この記事では、**チーム エクスプローラー** のさまざまな機能に関する Azure DevOps 記事のリンクを紹介します。
 
-**チーム エクスプローラー** ツール ウィンドウを使用し、プロジェクトの開発に必要なプログラミング作業を他のチーム メンバーとの間で調整し、自分、チーム、またはプロジェクトに割り当てられている作業を管理します。 **チーム エクスプローラー**は Git と GitHub のリポジトリ、Team Foundation バージョン管理 (TFVC) のリポジトリ、[Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) またはオンプレミス [Azure DevOps Server](/azure/devops/index-all) (以前の TFS) でホストされているプロジェクトに Visual Studio を接続します。 ソース コード、作業項目、およびビルドを管理できます。
+**チーム エクスプローラー** ツール ウィンドウを使用し、プロジェクトの開発に必要なプログラミング作業を他のチーム メンバーとの間で調整し、自分、チーム、またはプロジェクトに割り当てられている作業を管理します。 **チーム エクスプローラー** は Git と GitHub のリポジトリ、Team Foundation バージョン管理 (TFVC) のリポジトリ、[Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) またはオンプレミス [Azure DevOps Server](/azure/devops/index-all) (以前の TFS) でホストされているプロジェクトに Visual Studio を接続します。 ソース コード、作業項目、およびビルドを管理できます。
 
 ## <a name="home-page"></a>ホーム ページ
 
-**チーム エクスプローラー**で[プロジェクトに接続する](../connect-team-project.md)と、 **[プロジェクト]** セクションで次のリンクが利用可能になります。
+**チーム エクスプローラー** で [プロジェクトに接続する](../connect-team-project.md)と、**[プロジェクト]** セクションで次のリンクが利用可能になります。
 
 - [リポジトリの複製](/azure/devops/repos/git/clone)
 - [Web ポータル](/azure/devops/project/navigation/index)
 - [タスク ボード](/azure/devops/boards/sprints/task-board)
 
-[Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) のリポジトリに接続するか、[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview) のリポジトリに接続するかによって、 **[ホーム]** ページには異なる機能が表示されます。
+[Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) のリポジトリに接続するか、[Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview) のリポジトリに接続するかによって、**[ホーム]** ページには異なる機能が表示されます。
 
 > [!TIP]
 > 2 つのバージョン管理システムの比較は、[プロジェクト用の最適なバージョン管理の選択 (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc) に関するページを参照してください。
@@ -102,10 +104,10 @@ ms.locfileid: "91928083"
 
 **[設定]** ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
 
-| Project | プロジェクト コレクション | その他 |
+| プロジェクト | プロジェクト コレクション | その他 |
 | - | - | - |
 | [セキュリティ、グループ メンバーシップ](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[セキュリティ、ソース管理 (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[作業項目の区分](/azure/devops/organizations/settings/set-area-paths)<br/>[作業項目のイテレーション](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[ポータルの設定](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[プロジェクト警告](/azure/devops/notifications/howto-manage-team-notifications) | [セキュリティ、グループ メンバーシップ](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[ソース管理 (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[プロセス テンプレート マネージャー](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git グローバル設定](/azure/devops/repos/git/git-config)<br/>[Git リポジトリ設定](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [チーム エクスプローラーのプロジェクトに接続する](../../ide/connect-team-project.md)

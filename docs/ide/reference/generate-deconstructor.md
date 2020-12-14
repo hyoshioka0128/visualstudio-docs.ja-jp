@@ -1,5 +1,7 @@
 ---
 title: デコンストラクターのクイック アクションを生成する
+description: '[クイック アクションとリファクタリング] メニューを使用して、新しいデコンストラクターのメソッド スタブをすぐに生成する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531884"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617254"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Visual Studio でデコンストラクターを生成する
 
@@ -34,13 +36,13 @@ ms.locfileid: "65531884"
 
    ![デコンストラクター不足エラー](media/deconstruct.png)
 
-2. 次のいずれかの手順を実行します。
+2. 次のいずれかのステップを使用します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 宣言にカーソルを置き、Ctrl + . キーを選択します **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既にクラスの空の行の上にある場合に、左余白に表示される :::image type="icon" source="media/screwdriver.png"::: アイコンを選択します。
 
       ![デコンストラクターの生成のコード修正](media/deconstruct-codefix.png)
 

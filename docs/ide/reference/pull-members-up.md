@@ -1,5 +1,7 @@
 ---
 title: メンバーのプル アップ
+description: '[クイック アクションとリファクタリング] メニューを使用して、基本データ型にメンバーをプル アップする方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 159608644cb641aa2c84e4d55e92156215069030
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969175"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616877"
 ---
 # <a name="pull-members-up"></a>メンバーのプル アップ
 
@@ -31,7 +33,7 @@ ms.locfileid: "62969175"
 
 **理由:** メンバーをプル アップすると、インターフェイスのその他の実装がそれらのメンバーを継承するようになります。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. 実装されているインターフェイスの任意のメンバーの上にカーソルを置きます。
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。

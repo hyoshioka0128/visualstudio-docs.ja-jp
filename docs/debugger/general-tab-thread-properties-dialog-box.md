@@ -1,5 +1,6 @@
 ---
 title: '[全般] タブ ([スレッド プロパティ] ダイアログ ボックス) | Microsoft Docs'
+description: '[スレッド プロパティ] ダイアログ ボックスでは、モジュール名、スレッド ID、プロセス ID、スレッドの状態、待機の理由、CPU 時間など、スレッドに関する情報を確認できます。'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896368"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862998"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>[全般] タブ ([スレッド プロパティ] ダイアログ ボックス)
 このダイアログ ボックスを使用して、特定のスレッドの詳細を確認します。 このダイアログ ボックスを表示するには、フォーカスを [[スレッド ビュー]](../debugger/threads-view.md) ウィンドウに移動するか、[[メッセージ ビュー]](../debugger/messages-view.md) を開いてメッセージを展開します。 ツリーで任意のスレッド ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

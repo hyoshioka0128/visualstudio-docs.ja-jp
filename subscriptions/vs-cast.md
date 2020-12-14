@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 10/21/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353370"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538138"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure へ移行するためのアプリケーションのクラウド レディネスを識別したり、移行中と移行後両方のアプリの進行状況を監視したりできます。
@@ -78,9 +78,9 @@ ms.locfileid: "92353370"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 1 つのアプリを 3 か月間評価する                                                             |  いいえ。  新しいサブスクライバーのみが使用できます                  |
-| Visual Studio Professional with GitHub Enterprise | VL                                       | 1 つのアプリを 3 か月間評価する                                                            |  いいえ。  新しいサブスクライバーのみが使用できます                  |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                       | 1 つのアプリを 3 か月間評価する                                                            |  いいえ。  新しいサブスクライバーのみが使用できます                  |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |

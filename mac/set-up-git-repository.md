@@ -3,15 +3,15 @@ title: Git リポジトリのセットアップ
 description: Visual Studio for Mac を使用して Git リポジトリに接続する。
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493128"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561059"
 ---
 # <a name="set-up-a-git-repository"></a>Git リポジトリのセットアップ
 
@@ -44,6 +44,9 @@ Git リポジトリをセットアップするには、次の手順を実行し�
 ## <a name="publishing-an-existing-project"></a>既存のプロジェクトの発行
 
 バージョン管理にまだ _含まれていない_ 既存のプロジェクトがある場合は、Git のセットアップで次の手順を使用します。
+
+> [!TIP]
+> .gitignore ファイルを利用し、Git で追跡記録され、公開されたフォルダーやファイルを制御します。 ビルド ディレクトリ、バイナリ、生成済みファイルは除外することがあります。 詳細については、[ファイルを無視することに関する GitHub ドキュメント](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files)をご覧ください。
 
 1. Visual Studio for Mac で [ソリューション] ウィンドウからソリューション名を選択します。
 

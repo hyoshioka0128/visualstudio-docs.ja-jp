@@ -1,5 +1,7 @@
 ---
 title: 条件式および論理演算を反転させる
+description: '[クイックアクションとリファクタリング] メニューを使用して、条件式または AND/OR 条件付き演算子を反転させる方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 180e42d5399116df95289e4e5fd0aed1255bf3de
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531673"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617384"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>条件式と AND/OR 条件付き演算子を反転させる
 
@@ -36,9 +38,9 @@ ms.locfileid: "65531673"
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 3. **[Invert conditional]\(条件式の反転\)** または **[Replace '&&' with '||']\('&&' を '||' で置換\)** を選択します。
 
-    ![条件式の反転](media/invert-conditional.png)
+    ![[条件式の反転] オプションのショートカット。](media/invert-conditional.png)
 
-    ![条件式の反転](media/invert-logical-operator.png)
+    ![[Replace '&&' with '||']\('&&' を '||' で置換\) オプションのスクリーンショット。](media/invert-logical-operator.png)
 
 ## <a name="see-also"></a>関連項目
 

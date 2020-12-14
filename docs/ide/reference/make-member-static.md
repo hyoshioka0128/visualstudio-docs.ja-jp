@@ -1,5 +1,7 @@
 ---
 title: メンバーを静的にする
+description: '[クイック アクションとリファクタリング] メニューを使用し、メンバーを静的にする方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ecc66cb58ad11bd431acb341dae0493ce8192da
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e663d59f47728bc4a7c84290ee0e89ae453f23ae
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77519303"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561020"
 ---
 # <a name="make-member-static"></a>メンバーを静的にする
 
@@ -28,7 +30,7 @@ ms.locfileid: "77519303"
 
 **理由:** 静的メンバーを使用すると読みやすさが向上します。特定のコードが分離されていることを把握することで、理解、再読み取り、再利用が容易になります。 
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. メンバー名にキャレットを配置します。
 

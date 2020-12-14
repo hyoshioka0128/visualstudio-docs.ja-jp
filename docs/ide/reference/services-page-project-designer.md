@@ -1,5 +1,7 @@
 ---
 title: '[サービス] ページ (プロジェクト デザイナー)'
+description: プロジェクト デザイナーの [サービス] ページを利用し、プロジェクトのクライアント アプリケーション サービスを有効にし、構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,20 +14,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593565"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560799"
 ---
 # <a name="services-page-project-designer"></a>[サービス] ページ (プロジェクト デザイナー)
 
-クライアント アプリケーション サービスにより、Windows フォーム アプリケーションおよび Windows Presentation Foundation (WPF) アプリケーションから [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] ログイン サービス、ロール サービス、プロファイル サービスに簡単にアクセスできます。 クライアント アプリケーション サービスは、**プロジェクト デザイナー**の [**サービス**] ページで有効にし、構成することができます。
+クライアント アプリケーション サービスにより、Windows フォーム アプリケーションおよび Windows Presentation Foundation (WPF) アプリケーションから [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] ログイン サービス、ロール サービス、プロファイル サービスに簡単にアクセスできます。 クライアント アプリケーション サービスは、**プロジェクト デザイナー** の [**サービス**] ページで有効にし、構成することができます。
 
 クライアント アプリケーション サービスを使用すると、中央のサーバーを使用してユーザーを認証し、各ユーザーの割り当てられたロール (複数可) を判断し、ネットワーク経由で共有できるユーザーごとのアプリケーション設定を保存できます。 詳細については、「[クライアント アプリケーション サービス](/dotnet/framework/common-client-technologies/client-application-services)」を参照してください。
 
-この [**サービス**] ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、[**プロジェクト**] メニューの **[プロパティ**] をクリックします。 **プロジェクト デザイナー** が表示されたら、 **[サービス]** タブをクリックします。
+この [**サービス**] ページにアクセスするには、**ソリューション エクスプローラー** でプロジェクト ノードを選択し、[**プロジェクト**] メニューの **[プロパティ**] をクリックします。 **プロジェクト デザイナー** が表示されたら、[**サービス**] タブをクリックします。
 
 ## <a name="task-list"></a>タスク一覧
 
@@ -33,7 +35,7 @@ ms.locfileid: "75593565"
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
- **構成**
+ **Configuration**
 
 このコントロールは、このページでは編集できません。 このコントロールの詳細については、「[[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)」または「[[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)」を参照してください。
 
@@ -43,7 +45,7 @@ ms.locfileid: "75593565"
 
  **クライアント アプリケーション サービスを有効にする**
 
-選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、 **[サービス]** ページでサービスの場所を指定する必要があります。
+選択すると、クライアント アプリケーション サービスが有効になります。 クライアント アプリケーション サービスを使用するには、[**サービス**] ページでサービスの場所を指定する必要があります。
 
  **[Windows 認証を使用する]**
 
@@ -73,7 +75,7 @@ ms.locfileid: "75593565"
 
 既定の動作をオーバーライドすることができる [[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)を開きます。 たとえば、このダイアログ ボックスを使用すると、ローカル ファイル システムを使用する代わりに、オフラインのストレージにデータベースを指定できます。 詳細については、「[[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [クライアント アプリケーション サービス](/dotnet/framework/common-client-technologies/client-application-services)
 - [[サービスの詳細設定] ダイアログ ボックス](../../ide/reference/advanced-settings-for-services-dialog-box.md)

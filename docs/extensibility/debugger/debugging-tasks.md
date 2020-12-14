@@ -1,5 +1,7 @@
 ---
 title: タスクのデバッグ | Microsoft Docs
+description: デバッグ エンジンへのアタッチ、スタートアップ イベントの生成、ブレークポイントのヒットなど、プログラムをデバッグするために必要なタスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903561"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915571"
 ---
 # <a name="debug-tasks"></a>タスクをデバッグする
 プログラムをデバッグするには、起動してデバッグ エンジン (DE) をアタッチする必要があります。もしくは、以前に起動されたプログラムに DE をアタッチする必要があります。 アタッチが完了すると、DE で特定のスタートアップ イベントを生成する必要があります。 応答として、デバッグ パッケージは IDE で設定されているブレークポイントをバインドしようとします。 プログラムがバインドされたブレークポイントにヒットすると停止し、ユーザー入力を待機します。

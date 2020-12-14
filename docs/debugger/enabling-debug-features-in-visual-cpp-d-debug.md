@@ -1,5 +1,7 @@
 ---
 title: C++ プロジェクトでのデバッグ機能の有効化 (-D_DEBUG) | Microsoft Docs
+description: Visual C++ では、_DEBUG を定義して、デバッグ機能を有効にすることができます。 これを行う方法、および MFC プログラムをリンクしてデバッグする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737956"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862934"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>C++ プロジェクトでのデバッグ機能の有効化 (/D_DEBUG)
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] では、シンボル **_DEBUG** を定義してプログラムをコンパイルすると、アサーションなどのデバッグ機能が有効になります。 **_DEBUG** は、次のいずれかの方法で定義できます。

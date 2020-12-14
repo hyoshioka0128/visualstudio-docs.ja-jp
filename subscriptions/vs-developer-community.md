@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Developer Community サポート特典について説明します。
-ms.openlocfilehash: 68c2ecd4c87039e1e75b2f36fd261e18951d612a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 1b90a18c251e96f3c815129d81b3b09611594e99
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905587"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538047"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Developer Community サポート フォーラム
 Developer Community フォーラムでは、質問を投稿したり、回答を検索したり、知識を共有したりできます。
@@ -42,9 +42,9 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                                          サブスクリプション レベル                                           |     チャネル      |    特長    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)、NFR<sup>1</sup>                            | VL、Azure、リテール |   使用可能    |    はい     |
-|                           Visual Studio Enterprise with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
+|                           Visual Studio Enterprise Subscription with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
 |                          Visual Studio Professional (Standard)                          | VL、Azure、リテール |   使用可能    |    はい     |
-|                          Visual Studio Professional with GitHub Enterprise                          | VL、Azure、リテール |   使用可能    |    はい     |
+|                          Visual Studio Professional Subscription with GitHub Enterprise                          | VL、Azure、リテール |   使用可能    |    はい     |
 |                              Visual Studio Test Professional (標準)                               |    VL、リテール     |   使用可能    |    はい     |
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   使用可能    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)|        すべて        | 使用できません |     いいえ     |

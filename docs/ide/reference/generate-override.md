@@ -1,5 +1,7 @@
 ---
 title: メソッド オーバーライドの生成
+description: 基底クラスからオーバーライドできるメソッドのコードを即座に生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3a8f4eaf863fd8174ff70339fffc80141fc38d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f27adacc39c53bf46b3a2ee09c71ae27b47f928
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569245"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617488"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio でオーバーライドを生成する
 
@@ -56,6 +58,6 @@ ms.locfileid: "75569245"
 
        ![オーバーライドの結果 (VB)](media/override-result-vb.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード生成](../code-generation-in-visual-studio.md)
