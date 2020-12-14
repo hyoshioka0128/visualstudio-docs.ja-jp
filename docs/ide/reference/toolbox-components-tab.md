@@ -1,5 +1,7 @@
 ---
 title: ツールボックス、[コンポーネント] タブ
+description: '[ツールボックス] ウィンドウの [コンポーネント] タブに含まれるコンポーネントについて説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597309"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560942"
 ---
 # <a name="toolbox-components-tab"></a>ツールボックス、[コンポーネント] タブ
 
 Visual Basic と C# の Windows フォーム デザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、Visual Studio に含まれている .NET コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。
 
-このタブを表示するには、Windows フォーム デザイナーを開きます。 **[表示]**、**[ツールボックス]** の順に選択します。 **ツールボックス**で、 **[コンポーネント]** タブを選択します。
+このタブを表示するには、Windows フォーム デザイナーを開きます。 **[表示]** 、 **[ツールボックス]** の順に選択します。 **ツールボックス** で、**[コンポーネント]** タブを選択します。
 
 ## <a name="components"></a>コンポーネント
 
@@ -68,7 +70,7 @@ Active Directory に対してクエリを実行するために使用できる <x
 
 新しいカテゴリとインスタンスの作成、カウンターから値を読み取る、カウンター データに対して計算を実行するなど、Windows パフォーマンス カウンターとのやり取りに使用できる <xref:System.Diagnostics.PerformanceCounter> コンポーネント インスタンスを作成します。
 
-**Process**
+**処理**
 
 システム上のプロセスに関連付けられているデータを停止、開始、および操作できる <xref:System.Diagnostics.Process> コンポーネント インスタンスを作成します。
 
@@ -85,7 +87,7 @@ Active Directory に対してクエリを実行するために使用できる <x
 時間ベースの機能を Windows ベースのアプリケーションに追加するために使用できる <xref:System.Windows.Forms.Timer> コンポーネント インスタンスを作成します。 詳細については、「[Timer コンポーネント](/dotnet/framework/winforms/controls/timer-component-windows-forms)」を参照してください。
 
 > [!NOTE]
-> **ツールボックス**に追加できるシステム ベースの <xref:System.Timers.Timer> もあります。この <xref:System.Timers.Timer> は、サーバー アプリケーション用に最適化され、Windows フォーム <xref:System.Windows.Forms.Timer> は Windows フォームで使用するのに最も適しています。
+> **ツールボックス** に追加できるシステム ベースの <xref:System.Timers.Timer> もあります。この <xref:System.Timers.Timer> は、サーバー アプリケーション用に最適化され、Windows フォーム <xref:System.Windows.Forms.Timer> は Windows フォームで使用するのに最も適しています。
 
 ## <a name="see-also"></a>関連項目
 
