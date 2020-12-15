@@ -1,5 +1,7 @@
 ---
 title: コード生成と T4 テキスト テンプレート
+description: テキスト ブロックと制御ロジックが混在する T4 テキスト テンプレートを使用してテキスト ファイルを生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548240"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363576"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>コード生成と T4 テキスト テンプレート
 
@@ -50,7 +52,7 @@ string webResponseText = new MyTemplate().TransformText();
 
 アプリケーションは、Visual Studio がインストールされていないコンピューターでも実行できます。
 
-実行時テンプレートを作成するには、 **前処理されたテキスト テンプレート** ファイルをプロジェクトに追加します。 または、プレーンテキスト ファイルを追加し、 **[カスタム ツール]** プロパティを **TextTemplatingFilePreprocessor**に設定することもできます。
+実行時テンプレートを作成するには、 **前処理されたテキスト テンプレート** ファイルをプロジェクトに追加します。 または、プレーンテキスト ファイルを追加し、 **[カスタム ツール]** プロパティを **TextTemplatingFilePreprocessor** に設定することもできます。
 
 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。 テンプレートの構文の詳細については、「[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)」を参照してください。
 
@@ -85,14 +87,14 @@ namespace Fabrikam.FirstJob
 
 デザイン時テンプレートを使用すると、要件が変わったときに構成をすばやく変更できるようになり、変更の信頼性も高まります。 ワークフローの例のように、ビジネス要件の観点で入力を定義するのが一般的です。 このように定義すると、変更点についてユーザーと共に検討しやすくなります。 そのため、デザイン時テンプレートは、アジャイル開発プロセスにおける有用なツールとなります。
 
-デザイン時テンプレートを作成するには、 **テキスト テンプレート** ファイルをプロジェクトに追加します。 または、プレーンテキスト ファイルを追加し、 **[カスタム ツール]** プロパティを **TextTemplatingFileGenerator**に設定することもできます。
+デザイン時テンプレートを作成するには、 **テキスト テンプレート** ファイルをプロジェクトに追加します。 または、プレーンテキスト ファイルを追加し、 **[カスタム ツール]** プロパティを **TextTemplatingFileGenerator** に設定することもできます。
 
 詳細については、「[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。 テンプレートの構文の詳細については、「[T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)」を参照してください。
 
 > [!NOTE]
 > 1 つ以上のテンプレートで読み込まれるデータを示す際に、 *モデル* という用語を使用する場合があります。 モデルはどのような形式でもかまいません。あらゆる種類のファイルまたはデータベースを使用できます。 必ずしも UML モデルやドメイン固有言語モデルである必要はありません。 'モデル' は、コードのようなものではなく、ビジネス概念の観点でデータを定義できることを示します。
 
-テキスト テンプレート変換機能は、 *T4*と名付けられています。
+テキスト テンプレート変換機能は、 *T4* と名付けられています。
 
 ## <a name="see-also"></a>関連項目
 
