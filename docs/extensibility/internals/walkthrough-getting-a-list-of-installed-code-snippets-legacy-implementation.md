@@ -1,5 +1,7 @@
 ---
 title: インストールされているコードスニペットの一覧を取得する (レガシ) |Microsoft Docs
+description: 特定の言語 GUID のすべてのコードスニペットを取得する方法について説明します。 これらのスニペットのショートカットは、IntelliSense の入力候補一覧に挿入できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703651"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487895"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)
 コードスニペットは、メニューコマンド (インストールされているコードスニペットの一覧を選択できる) を使用するか、IntelliSense の入力候補一覧からスニペットのショートカットを選択することにより、ソースバッファーに挿入できるコードの一部です。

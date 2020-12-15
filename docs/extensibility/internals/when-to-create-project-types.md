@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの種類を作成する場合 |Microsoft Docs
+description: ユーザーのために Visual Studio をカスタマイズするために新しいプロジェクトの種類が必要かどうかを判断する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012010"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487830"
 ---
 # <a name="when-to-create-project-types"></a>プロジェクト タイプを作成する状況
 新しいプロジェクトの種類を作成すると、ユーザー向けにカスタマイズするための基礎と [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] なります。 ただし、すべてのカスタマイズに新しいプロジェクトの種類を作成する必要はありません [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 次のガイドラインは、シナリオに新しいプロジェクトの種類が必要かどうかを判断するのに役立ちます。
@@ -27,7 +29,7 @@ ms.locfileid: "90012010"
 
 - デバッグサポートを提供します。
 
-- **ソリューションエクスプローラー**にプロジェクト項目を表示します。
+- **ソリューションエクスプローラー** にプロジェクト項目を表示します。
 
 - [ **プロジェクトを開く** ] または [ **新しいプロジェクト** ] ダイアログボックスを使用します。
 
@@ -57,7 +59,7 @@ ms.locfileid: "90012010"
 ## <a name="create-a-project-subtype"></a>プロジェクトのサブタイプを作成する
  プロジェクトのサブタイプを使用して、新しいプロジェクトの種類を作成することなく、マネージプロジェクトの種類を拡張することができます。 プロジェクトのサブタイプは、COM 集計を使用して、Microsoft またはで記述されたマネージプロジェクトを拡張し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ます。 COM 集計を使用すると、マネージプロジェクトシステムの実装の大部分を再利用しながら、集計やサポートインターフェイスを使用して特定のシナリオに合わせてカスタマイズできます。 プロジェクトのサブタイプの詳細については、「 [プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ドキュメントウィンドウとエディター](/previous-versions/bb165691(v=vs.100))
 - [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

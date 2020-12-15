@@ -1,5 +1,7 @@
 ---
 title: VSSDK ユーティリティ |Microsoft Docs
+description: これらの記事では、VSSDK に付属するツール (RegPkg、CreatePkgDef、Create船舶インスタンス、色のテーマツール、イメージサービスツールなど) について説明しています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3faf0dad9d935fcc62637d387e41d599b7ec874
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3da6df6aab6d64d9ca589959a0d0227026983dfe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703743"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487908"
 ---
 # <a name="vssdk-utilities"></a>VSSDK ユーティリティ
 このセクションのトピックでは、VSSDK に付属しているツールについて説明します。

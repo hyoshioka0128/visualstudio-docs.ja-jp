@@ -1,5 +1,7 @@
 ---
 title: VSPackage セットアップシナリオ |Microsoft Docs
+description: VSPackage の共有インストールまたはサイドバイサイドインストールを使用した Visual Studio のサイドバイサイドインストールをサポートするためのベストプラクティスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012114"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487973"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage のセットアップ シナリオ
 
@@ -76,7 +78,7 @@ ms.locfileid: "90012114"
 
 Side-by-side アセンブリの配置の詳細については、「展開の [簡略化と、.NET Framework による DLL の使用の解決](/previous-versions/dotnet/articles/ms973843(v=msdn.10))」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)
 - [複数バージョンの Visual Studio をサポートする](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

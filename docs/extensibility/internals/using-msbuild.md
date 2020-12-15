@@ -1,5 +1,7 @@
 ---
 title: MSBuild の使用 | Microsoft Docs
+description: MSBuild には、ビルドするプロジェクト項目、ビルドタスク、およびビルド構成を完全に記述したプロジェクトファイルを作成するための拡張可能な XML 形式が用意されています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f961249ff584f7767dc2505bb20b1fb0961b7dd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704286"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487674"
 ---
 # <a name="using-msbuild"></a>MSBuild の使用
 MSBuild には、ビルドするプロジェクト項目、ビルドタスク、およびビルド構成を完全に記述したプロジェクトファイルを作成するための、適切に定義された拡張可能な XML 形式が用意されています。
@@ -25,7 +27,7 @@ MSBuild には、ビルドするプロジェクト項目、ビルドタスク、
 ## <a name="general-msbuild-considerations"></a>MSBuild に関する一般的な考慮事項
  MSBuild プロジェクトファイル (.csproj、.vbproj ファイルなど) に [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] は、 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ビルド時に使用されるデータが含まれますが、デザイン時に使用されるデータを含めることもできます。 ビルド時のデータは、 [Item 要素 (msbuild)](../../msbuild/item-element-msbuild.md) や [Property 要素 (msbuild)](../../msbuild/property-element-msbuild.md)などの msbuild プリミティブを使用して格納されます。 デザイン時データは、プロジェクトの種類および関連するプロジェクトのサブタイプに固有のデータであり、そのために予約された自由形式の XML に格納されます。
 
- MSBuild には構成オブジェクトのネイティブサポートはありませんが、構成固有のデータを指定するための条件付き属性が用意されています。 次に例を示します。
+ MSBuild には構成オブジェクトのネイティブサポートはありませんが、構成固有のデータを指定するための条件付き属性が用意されています。 たとえば、次のように入力します。
 
 ```xml
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>

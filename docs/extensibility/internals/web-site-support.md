@@ -1,5 +1,7 @@
 ---
 title: Web サイトのサポート |Microsoft Docs
+description: 既存のプロジェクトシステムにテンプレートと登録属性を追加することによって作成される web サイトプロジェクトシステムについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22047ad1b0709cefa200656e61f8e0d39ace94c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f8ffdd504182dd82b11d4b5ce5f57e0a7629c3
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703441"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487843"
 ---
 # <a name="web-site-support"></a>Web サイト サポート
 Web サイトプロジェクトシステムは、Web プロジェクトを作成するプロジェクトシステムです。 Web プロジェクトは、Web アプリケーションを作成します。 Web サイトプロジェクトは、コードが関連付けられている Web ページごとに1つの実行可能ファイルを生成します。 /App_Code フォルダー内のソースコードファイルから、追加の実行可能ファイルが生成されます。
@@ -25,7 +27,7 @@ Web サイトプロジェクトシステムは、Web プロジェクトを作成
  Web ページのコンパイルに使用される言語コンパイラは、に登録されている必要があり [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] ます。 次の例に示すように、Web.config ファイルで[ \<compiler> 要素](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element)を使用して、コンパイラを登録できます。
 
 ```
-<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
+<system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
 ```
 
 ## <a name="in-this-section"></a>このセクションの内容

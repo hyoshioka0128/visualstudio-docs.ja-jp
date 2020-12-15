@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでブレークポイントを検証する |Microsoft Docs
+description: 従来の言語サービスで ValidateBreakpointLocation メソッドをオーバーライドして、デバッガーが起動する前にブレークポイントを検証する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704091"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488025"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>従来の言語サービスでのブレークポイントの検証
 ブレークポイントは、デバッガーで実行されている特定の時点でプログラムの実行を停止する必要があることを示します。 ブレークポイントの有効な場所を構成する内容についての情報がエディターに含まれていないため、ソースファイル内の任意の行にブレークポイントを設定できます。 デバッガーを起動すると、マークされているすべてのブレークポイント (保留中のブレークポイントと呼ばれます) が、実行中のプログラム内の適切な場所にバインドされます。 同時に、有効なコードの場所をマークするようにブレークポイントが検証されます。 たとえば、コメントのブレークポイントは無効です。これは、ソースコード内のその場所にコードがないためです。 デバッガーは無効なブレークポイントを無効にします。
@@ -98,5 +100,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの特徴](../../extensibility/internals/legacy-language-service-features1.md)

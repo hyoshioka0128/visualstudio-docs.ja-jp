@@ -1,5 +1,7 @@
 ---
 title: Web プロジェクトの Essentials |Microsoft Docs
+description: Visual Studio での web プロジェクトの動作に関する内部の詳細について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e33248ca264fefa79a8d5d5fa5d0cfa3d2da1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703547"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487921"
 ---
 # <a name="web-project-essentials"></a>Web プロジェクトの基本情報
 Web プロジェクトでは、Web アプリケーションを作成します。 Web プロジェクトを使用して、スマート Web ページを含む Web アプリケーションを作成できます。 スマート Web ページには、Web ページをオンデマンドでレンダリングするサーバー側コードがあります。
@@ -32,7 +34,7 @@ Web プロジェクトでは、Web アプリケーションを作成します。
 
   - Web アプリケーションプロジェクト (WAP) は、すべてのスマート Web ページのコードと、/App_Code フォルダー内のすべてのソースファイルを組み合わせた1つの実行可能ファイルを生成します。
 
-- Web プロジェクトのソリューションファイルは、Web サイト自体とは別に配置されます。 既定では、ソリューションファイルは \Documents にあり、[設定] [アカウント] [\My ドキュメント]、[web サイトの設定] にあり \\ *YourAccount* \\ *\<Visual Studio ####>* \\ *YourWebSite*ます。
+- Web プロジェクトのソリューションファイルは、Web サイト自体とは別に配置されます。 既定では、ソリューションファイルは \Documents にあり、[設定] [アカウント] [\My ドキュメント]、[web サイトの設定] にあり \\  \\ *\<Visual Studio ####>* \\ ます。
 
   > [!NOTE]
   > ソリューションファイルを Web サイトと共に保持する場合は、そのファイルを移動して再度開きます。

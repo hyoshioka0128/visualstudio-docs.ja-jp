@@ -1,5 +1,7 @@
 ---
 title: Visual Studio コマンドテーブル (.Vsct) Files |Microsoft Docs
+description: コマンドテーブルの構成ファイルについて説明します。これは、VSPackage に含まれる一連のコマンドを記述するテキストファイルです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 377bae52f506c1cb9ac0f6b2d4136faaab0b50ad
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012348"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488038"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio Command Table (.Vsct) ファイル
 コマンドテーブル構成ファイルは、VSPackage に含まれる一連のコマンドを記述したテキストファイルです。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドテーブル (vsct) コンパイラは、XML ベースの構成ファイル (vsct ファイル) をバイナリコマンドテーブル出力 (cto) ファイルにコンパイルします。 結果として得られる cto ファイルは、コマンドテーブル (CTC) コンパイラを使用して ctc 構成ファイルをコンパイルすることによって作成されるファイルと同じです。 ただし、xml ベースの vsct ファイルには、XML エディターや XML IntelliSense など、いくつかの利点があります。

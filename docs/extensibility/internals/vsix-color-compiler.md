@@ -1,5 +1,7 @@
 ---
 title: VSIX 色コンパイラ |Microsoft Docs
+description: Visual studio 拡張機能のカラーコンパイラツールについて説明します。これは、Visual Studio のテーマの ts 色を pkgdef ファイルに表示するコンソールアプリケーションです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5059a15c483f648c2248321c7ba8271a634d0c69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e50cd1f1c8c3ff7f86cd00e4b384f548c7ec9d21
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536098"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487999"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 Visual Studio 拡張機能の色コンパイラツールは、既存の Visual Studio テーマの色を表す .xml ファイルを取得し、それを pkgdef ファイルに反映して、それらの色を Visual Studio で使用できるようにするコンソールアプリケーションです。 このツールは、.xml ファイル間の違いを簡単に比較できるため、ソース管理でカスタムカラーを管理する場合に便利です。 また、ビルド環境にフックして、ビルドの出力が有効な pkgdef ファイルであるようにすることもできます。
@@ -52,7 +54,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|名前|必要テーマの名前|
+|Name|必要テーマの名前|
 |GUID|必要テーマの GUID (GUID の書式設定と一致する必要があります)|
 
  Visual Studio のカスタム色を作成する場合は、次のテーマに対してこれらの色を定義する必要があります。 特定のテーマに対して色が存在しない場合、Visual Studio は、淡色テーマから不足している色の読み込みを試みます。
@@ -76,7 +78,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|名前|必要カテゴリの名前|
+|Name|必要カテゴリの名前|
 |GUID|必要カテゴリの GUID (GUID の書式設定と一致する必要があります)|
 
  **色**
@@ -92,7 +94,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|名前|必要色の名前|
+|Name|必要色の名前|
 
  **背景または前景**
 
@@ -147,7 +149,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 - VsixColorCompiler D:\xml\colors.xml/noLogo
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>メモ
 
 - このツールを使用するには、最新バージョンの VC + + ランタイムがインストールされている必要があります。
 

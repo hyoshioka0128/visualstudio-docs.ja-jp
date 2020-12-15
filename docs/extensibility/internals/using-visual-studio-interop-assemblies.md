@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 相互運用機能アセンブリの使用 |Microsoft Docs
+description: Visual Studio の相互運用機能アセンブリが、Visual Studio の機能拡張を提供する COM インターフェイスにアクセスできるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c52dd2cf8c76cdef9be5080950d5f1b9e621e70
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704133"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487661"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio 相互運用機能アセンブリの使用
 Visual Studio 相互運用機能アセンブリを使用すると、マネージアプリケーションは Visual Studio の拡張機能を提供する COM インターフェイスにアクセスできます。 ストレート COM インターフェイスとその相互運用バージョンにはいくつかの違いがあります。 たとえば、Hresult は通常 int 値として表され、例外と同様に処理する必要があり、パラメーター (特に出力パラメーター) は異なる方法で処理する必要があります。

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Shell |Microsoft Docs
+description: Visual Studio シェルは、Visual Studio の統合の主要なエージェントであり、基本的な機能を提供し、Vspackage 間の相互通信をサポートしています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703996"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488051"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルは、の統合の主要なエージェントです [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 シェルには、Vspackage が共通のサービスを共有できるようにするために必要な機能が用意されています。 のアーキテクチャ目標 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は vspackage の主要機能を提供することであるため、シェルは基本的な機能を提供し、コンポーネント vspackage 間の相互通信をサポートするフレームワークです。
@@ -78,7 +80,7 @@ ms.locfileid: "80703996"
 
 - **ツールボックス**
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
