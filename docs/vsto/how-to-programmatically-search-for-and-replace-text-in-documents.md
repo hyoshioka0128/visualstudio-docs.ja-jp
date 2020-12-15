@@ -1,5 +1,7 @@
 ---
 title: プログラムによるドキュメント内のテキストの検索と置換
+description: Visual Studio を使用して、Microsoft Word 文書内のテキストをプログラムで検索および置換する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18a50d6d4ef52a0c50be0b72b4cab5706da4e2db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad77da419f70a8e513bf152ced41cccdd0474a8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547044"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524595"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>方法: プログラムによって文書内のテキストを検索および置換する
   <xref:Microsoft.Office.Interop.Word.Find> オブジェクトは <xref:Microsoft.Office.Interop.Word.Selection> および <xref:Microsoft.Office.Interop.Word.Range> オブジェクトの両方のメンバーであり、どちらを使用しても Microsoft Office Word ドキュメント内のテキストを検索できます。 Replace コマンドは、Find コマンドの拡張機能です。
@@ -97,7 +99,7 @@ ms.locfileid: "85547044"
    [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
 
 ## <a name="search-for-and-replace-text-in-documents"></a>ドキュメント内のテキストの検索と置換
- 次のコードでは、現在の選択範囲を検索し、見つかった文字列のすべての出現箇所を **検索** し **た**文字列で置き換えます。
+ 次のコードでは、現在の選択範囲を検索し、見つかった文字列のすべての出現箇所を **検索** し **た** 文字列で置き換えます。
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>ドキュメント内のテキストを検索し、置換するには
 

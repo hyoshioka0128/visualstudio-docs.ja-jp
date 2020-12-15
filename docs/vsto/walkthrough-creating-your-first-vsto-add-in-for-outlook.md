@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 初めての Outlook 用 VSTO アドインの作成'
+description: Microsoft Outlook 用のアプリケーションレベルのアドインを作成します。 この機能は、どの Outlook アイテムが開いているかにかかわらず、アプリケーション自体に対して使用できます。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69547983"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524234"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>チュートリアル: 初めての Outlook 用 VSTO アドインの作成
   このチュートリアルでは、Microsoft Office Outlook 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どの Outlook 項目が開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -48,7 +50,7 @@ ms.locfileid: "69547983"
 
 - Microsoft Outlook
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 ### <a name="to-create-a-new-outlook-project-in-visual-studio"></a>Visual Studio で新しい Outlook プロジェクトを作成するには
 
@@ -66,7 +68,7 @@ ms.locfileid: "69547983"
 
 7. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstoutlookaddin**プロジェクトが作成され、 **ThisAddIn**コードファイルがエディターで開かれます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstoutlookaddin** プロジェクトが作成され、 **ThisAddIn** コードファイルがエディターで開かれます。
 
 ## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>各新しいメールメッセージにテキストを追加するコードを記述する
  次に、ThisAddIn コード ファイルにコードを追加します。 この新しいコードでは、Outlook のオブジェクト モデルを使用して、それぞれの新しいメール メッセージにテキストを追加します。 ThisAddIn コード ファイルには、次の生成されたコードが既定で含まれています。
@@ -100,7 +102,7 @@ ms.locfileid: "69547983"
 
 - `Inspector` イベントのイベント ハンドラーの <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> パラメーター。 `Inspector` パラメーターは、新しいメール メッセージのインスペクター ウィンドウを表す <xref:Microsoft.Office.Interop.Outlook.Inspector> オブジェクトです。 詳細については、「 [Outlook solutions](../vsto/outlook-solutions.md)」を参照してください。
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  プロジェクトをビルドして実行し、新しいメール メッセージの件名と本文にテキストが表示されることを確認します。
 
 ### <a name="to-test-the-project"></a>プロジェクトをテストするには

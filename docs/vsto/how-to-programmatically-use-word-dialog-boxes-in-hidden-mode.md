@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって Word のダイアログボックスを非表示モードで使用する'
+description: Visual Studio を使用して、Microsoft Word のダイアログボックスを非表示モードでプログラムで使用する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54178ecc94026499eed42da4f40f84cfe4eb831f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583763"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523163"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>方法: プログラムによって Word のダイアログボックスを非表示モードで使用する
   1つのメソッド呼び出しで複雑な操作を実行するには、Microsoft Office Word の組み込みダイアログボックスをユーザーに表示せずに呼び出します。 これを行うには、 <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> メソッドを呼び出さずにオブジェクトのメソッドを使用し <xref:Microsoft.Office.Interop.Word.Dialog> <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> ます。
@@ -30,7 +32,7 @@ ms.locfileid: "91583763"
 ## <a name="examples"></a>例
  次のコード例では、[ **ページ設定** ] ダイアログボックスを非表示モードで使用して、ユーザー入力なしで複数のページ設定プロパティを設定する方法を示します。 この例では、オブジェクトを使用して、 <xref:Microsoft.Office.Interop.Word.Dialog> カスタムページサイズを構成します。 ページ設定の特定の設定 (上余白、下余白など) は、オブジェクトの遅延バインディングプロパティとして使用でき <xref:Microsoft.Office.Interop.Word.Dialog> ます。 これらのプロパティは、実行時に Word によって動的に作成されます。
 
- **Option Strict**がオフであり、を対象とする Visual C# プロジェクトでこのタスクを Visual Basic プロジェクトで実行する方法を次の例に示し [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ます。 これらのプロジェクトでは、Visual Basic および Visual C# コンパイラで遅延バインディング機能を使用できます。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
+ **Option Strict** がオフであり、を対象とする Visual C# プロジェクトでこのタスクを Visual Basic プロジェクトで実行する方法を次の例に示し [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ます。 これらのプロジェクトでは、Visual Basic および Visual C# コンパイラで遅延バインディング機能を使用できます。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
  [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
  [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]

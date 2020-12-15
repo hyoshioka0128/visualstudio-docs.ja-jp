@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: ブックマークのショートカットメニューを作成する'
+description: Microsoft Word のドキュメントレベルのカスタマイズでブックマークコントロールのショートカットメニューを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146904"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524219"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>チュートリアル: ブックマークのショートカットメニューを作成する
   このチュートリアルでは、Word のドキュメント レベルのカスタマイズを使用して <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールのショートカット メニューを作成する方法を示します。 ユーザーがブックマーク内のテキストを右クリックすると、ショートカット メニューにテキストの書式設定オプションが表示されます。
@@ -51,9 +53,9 @@ ms.locfileid: "91146904"
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-- "My Bookmark" という名前の **ショートカットメニュー**を持つ Word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+- "My Bookmark" という名前の **ショートカットメニュー** を持つ Word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio では、デザイナーで新しい Word 文書が開き、 **[マイブックマーク] ショートカットメニュー** プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     Visual Studio では、デザイナーで新しい Word 文書が開き、 **[マイブックマーク] ショートカットメニュー** プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a><a name="BKMK_addtextandbookmarks"></a> ドキュメントにテキストとブックマークを追加する
  文書にテキストを追加し、部分的に重なった 2 つのブックマークを追加します。
@@ -88,22 +90,22 @@ ms.locfileid: "91146904"
 
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>ショートカット メニューにコマンドを追加するには
 
-1. **リボン XML**項目をプロジェクトに追加します。 詳細については、「 [方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。
+1. **リボン XML** 項目をプロジェクトに追加します。 詳細については、「 [方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。
 
-2. **ソリューションエクスプローラー**で、 **ThisDocument.cs**または**ThisDocument**を選択します。
+2. **ソリューションエクスプローラー** で、 **ThisDocument.cs** または **ThisDocument** を選択します。
 
-3. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
+3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コードエディターで **ThisDocument** クラスファイルが開きます。
 
-4. **ThisDocument**クラスに次のコードを追加します。 このコードは、CreateRibbonExtensibilityObject メソッドをオーバーライドし、Office アプリケーションにリボン XML クラスを返します。
+4. **ThisDocument** クラスに次のコードを追加します。 このコードは、CreateRibbonExtensibilityObject メソッドをオーバーライドし、Office アプリケーションにリボン XML クラスを返します。
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
 5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには Ribbon1.xml という名前が付けられます。
 
-6. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
+6. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コード エディターでリボン XML ファイルが開きます。
 
@@ -125,16 +127,16 @@ ms.locfileid: "91146904"
 
      このコードでは、ドキュメントを右クリックすると表示されるショートカット メニューに 2 つのボタンが追加されます。
 
-8. **ソリューションエクスプローラー**で、を右クリック `ThisDocument` し、[コードの**表示**] をクリックします。
+8. **ソリューションエクスプローラー** で、を右クリック `ThisDocument` し、[コードの **表示**] をクリックします。
 
 9. 次の変数とブックマーク変数をクラス レベルで宣言します。
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. **ソリューションエクスプローラー**で、リボンコードファイルを選択します。 既定では、リボンコードファイルには **Ribbon1.cs** または **ribbon1.vb**という名前が付けられます。
+10. **ソリューションエクスプローラー** で、リボンコードファイルを選択します。 既定では、リボンコードファイルには **Ribbon1.cs** または **ribbon1.vb** という名前が付けられます。
 
-11. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
+11. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コード エディターでリボン コード ファイルが開きます。
 
@@ -152,13 +154,13 @@ ms.locfileid: "91146904"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **ソリューションエクスプローラー**には、 **ThisDocument.cs** または **ThisDocument**を選択します。
+2. **ソリューションエクスプローラー** には、 **ThisDocument.cs** または **ThisDocument** を選択します。
 
-3. メニューバーで、[コードの**表示**] を選択し  >  **Code**ます。
+3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      コードエディターで **ThisDocument** クラスファイルが開きます。
 
-4. **ThisDocument**クラスに次のコードを追加します。
+4. **ThisDocument** クラスに次のコードを追加します。
 
      [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
      [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
@@ -175,7 +177,7 @@ ms.locfileid: "91146904"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. 最初のブックマークを右クリックし、[ **太字**] をクリックします。
 

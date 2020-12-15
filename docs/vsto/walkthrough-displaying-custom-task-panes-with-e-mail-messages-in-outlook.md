@@ -1,5 +1,7 @@
 ---
 title: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する
+description: Microsoft Outlook で作成または開かれた各電子メールメッセージを使用して、カスタム作業ウィンドウの一意のインスタンスを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584283"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522713"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>チュートリアル: Outlook で電子メールメッセージと共にカスタム作業ウィンドウを表示する
   このチュートリアルでは、作成または開かれた各電子メールメッセージを使用して、カスタム作業ウィンドウの一意のインスタンスを表示する方法について説明します。 ユーザーは、各電子メール メッセージのリボンにあるボタンを使用して、カスタム作業ウィンドウを表示または非表示にすることができます。
@@ -58,25 +60,25 @@ ms.locfileid: "91584283"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] または Microsoft Outlook 2010。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  カスタム作業ウィンドウは、VSTO アドインで実装されます。まず、Outlook 用の VSTO アドインプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. **OutlookMailItemTaskPane** という名前の **Outlook アドイン**プロジェクトを作成します。 **Outlook アドイン** プロジェクトのテンプレートを使用します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **OutlookMailItemTaskPane** という名前の **Outlook アドイン** プロジェクトを作成します。 **Outlook アドイン** プロジェクトのテンプレートを使用します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 *ThisAddIn.cs* コード ファイルまたは *ThisAddIn.vb* コード ファイルが開かれ、 **ソリューション エクスプローラー** に **OutlookMailItemTaskPane**プロジェクトが追加されます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 *ThisAddIn.cs* コード ファイルまたは *ThisAddIn.vb* コード ファイルが開かれ、 **ソリューション エクスプローラー** に **OutlookMailItemTaskPane** プロジェクトが追加されます。
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザーインターフェイスの設計
  カスタム作業ウィンドウにはビジュアルなデザイナーはありませんが、お好きな UI を使用してユーザー コントロールを設計できます。 この VSTO アドインのカスタム作業ウィンドウには、 <xref:System.Windows.Forms.TextBox> コントロールを含む単純な UI が装備されています。 この後に説明するチュートリアルでは、ユーザー コントロールをカスタム作業ウィンドウに追加します。
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザー インターフェイスを設計するには
 
-1. **ソリューション エクスプローラー**で、 **OutlookMailItemTaskPane** プロジェクトをクリックします。
+1. **ソリューション エクスプローラー** で、 **OutlookMailItemTaskPane** プロジェクトをクリックします。
 
 2. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** をクリックします。
 
-3. **[新しい項目の追加]** ダイアログ ボックスでユーザー コントロールの名前を **TaskPaneControl**に変更し、 **[追加]** をクリックします。
+3. **[新しい項目の追加]** ダイアログ ボックスでユーザー コントロールの名前を **TaskPaneControl** に変更し、 **[追加]** をクリックします。
 
      ユーザー コントロールがデザイナーで開きます。
 
@@ -91,17 +93,17 @@ ms.locfileid: "91584283"
 
 2. **[新しい項目の追加]** ダイアログ ボックスで、 **[リボン (ビジュアル デザイナー)]** をクリックします。
 
-3. 新しいリボンの名前を **ManageTaskPaneRibbon**に変更し、 **[追加]** をクリックします。
+3. 新しいリボンの名前を **ManageTaskPaneRibbon** に変更し、 **[追加]** をクリックします。
 
      リボン デザイナーで *ManageTaskPaneRibbon.cs* ファイルまたは *ManageTaskPaneRibbon.vb* ファイルが開き、既定のタブとグループが表示されます。
 
-4. リボン デザイナーで、 **group1**をクリックします。
+4. リボン デザイナーで、 **group1** をクリックします。
 
-5. **[プロパティ]** ウィンドウで、 **[ラベル]** プロパティを **作業ウィンドウ マネージャー**に設定します。
+5. **[プロパティ]** ウィンドウで、 **[ラベル]** プロパティを **作業ウィンドウ マネージャー** に設定します。
 
 6. **[ツールボックス]** の **[Office リボン コントロール]** タブから、[ToggleButton] コントロールを **[作業ウィンドウ マネージャー]** グループにドラッグします。
 
-7. **toggleButton1**をクリックします。
+7. **toggleButton1** をクリックします。
 
 8. **[プロパティ]** ウィンドウで、 **[ラベル]** プロパティを **[作業ウィンドウの表示]** に設定します。
 
@@ -112,7 +114,7 @@ ms.locfileid: "91584283"
 
 1. リボン デザイナーで、 **[ManageTaskPaneRibbon]** リボンをクリックします。
 
-2. **[プロパティ]** ウィンドウで、 **[RibbonType]** の隣にあるドロップダウン リストをクリックして、 **Microsoft.Outlook.Mail.Compose** と **Microsoft.Outlook.Mail.Read**を選択します。
+2. **[プロパティ]** ウィンドウで、 **[RibbonType]** の隣にあるドロップダウン リストをクリックして、 **Microsoft.Outlook.Mail.Compose** と **Microsoft.Outlook.Mail.Read** を選択します。
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>インスペクターウィンドウとカスタム作業ウィンドウを管理するクラスを作成する
  特定の電子メールメッセージに関連付けられているカスタム作業ウィンドウを VSTO アドインが識別する必要がある場合があります。 たとえば、次のようなケースがあります。
@@ -127,7 +129,7 @@ ms.locfileid: "91584283"
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>インスペクターウィンドウとカスタム作業ウィンドウを管理するクラスを作成するには
 
-1. **ソリューション エクスプローラー**で、 *ThisAddIn.cs* または *ThisAddIn.vb* ファイルを右クリックし、 **[コードの表示]** をクリックします。
+1. **ソリューション エクスプローラー** で、 *ThisAddIn.cs* または *ThisAddIn.vb* ファイルを右クリックし、 **[コードの表示]** をクリックします。
 
 2. ファイルの先頭に次のステートメントを追加します。
 
@@ -200,7 +202,7 @@ ms.locfileid: "91584283"
 
 ### <a name="to-build-your-project"></a>プロジェクトをビルドするには
 
-1. **ソリューション エクスプローラー**で、 **OutlookMailItemTaskPane** プロジェクトを右クリックし、 **[ビルド]** をクリックします。 プロジェクトのコンパイルでエラーが発生しないことを確認します。
+1. **ソリューション エクスプローラー** で、 **OutlookMailItemTaskPane** プロジェクトを右クリックし、 **[ビルド]** をクリックします。 プロジェクトのコンパイルでエラーが発生しないことを確認します。
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>リボンのトグルボタンとカスタム作業ウィンドウの同期
  作業ウィンドウが表示されている場合、トグル ボタンは押されているように見え、作業ウィンドウが非表示になっている場合は、押されていないように見えます。 ボタンの状態をカスタム作業ウィンドウと同期させるには、トグル ボタンの <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> イベント ハンドラーを変更します。
@@ -226,7 +228,7 @@ ms.locfileid: "91584283"
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO アドインをテストするには
 
-1. **F5**キーを押します。
+1. **F5** キーを押します。
 
 2. Outlook で、[ **新規** ] をクリックして新しい電子メールメッセージを作成します。
 
@@ -258,7 +260,7 @@ ms.locfileid: "91584283"
 
     また、この VSTO アドインでは、より高度なシナリオも試すことができます。 たとえば、 **[次の項目** ] ボタンと [ **前の項目** ] ボタンを使用して、電子メールを表示するときの動作をテストできます。 VSTO アドインをアンロードしたときの動作をテストし、いくつかの電子メールメッセージを開いて、VSTO アドインを再度読み込むこともできます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  カスタム作業ウィンドウの作成方法の詳細については、次のトピックを参照してください。
 
 - 別のアプリケーション用の VSTO アドインにカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、「 [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」を参照してください。

@@ -1,5 +1,7 @@
 ---
 title: ボタンを使用してワークシートのテキストボックスにテキストを表示する
+description: Microsoft Excel ワークシートでボタンとテキストボックスを使用する方法の基本について説明します。 また、Visual Studio の Office 開発ツールを使用して Excel プロジェクトを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328716"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522648"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>チュートリアル: ボタンを使用してワークシートのテキストボックスにテキストを表示する
   このチュートリアルでは Microsoft Office Excel ワークシートでボタンとテキストボックスを使用する方法、および Visual Studio の Office 開発ツールを使用して Excel プロジェクトを作成する方法の基本について説明します。 完成したサンプルとして結果を表示するには、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の Excel コントロールのサンプルを参照してください。
@@ -45,14 +47,14 @@ ms.locfileid: "67328716"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  この手順では、Visual Studio を使用して Excel ブックプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. [Excel の名前を付けてください **] ボタン**を使用して excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. [Excel の名前を付けてください **] ボタン** を使用して excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     新しい Excel ブックがデザイナーで開き、 **[My Excel Button]** プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     新しい Excel ブックがデザイナーで開き、 **[My Excel Button]** プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加する
  このチュートリアルでは、最初のワークシートにボタンとテキストボックスが必要です。
@@ -65,14 +67,14 @@ ms.locfileid: "67328716"
 
 3. [ **表示** ] メニューの [ **プロパティウィンドウ**] をクリックします。
 
-4. [**プロパティ**] ウィンドウのドロップダウンボックスに [ **TextBox1** ] が表示されていることを確認し、テキストボックスの [**名前**] プロパティを [表示可能 **] に変更**します。
+4. [**プロパティ**] ウィンドウのドロップダウンボックスに [ **TextBox1** ] が表示されていることを確認し、テキストボックスの [**名前**] プロパティを [表示可能 **] に変更** します。
 
-5. **Button**コントロールをにドラッグ `Sheet1` し、次のプロパティを変更します。
+5. **Button** コントロールをにドラッグ `Sheet1` し、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**insertText**|
-   |**Text**|**テキストの挿入**|
+   |**テキスト**|**テキストの挿入**|
 
    ここで、ボタンがクリックされたときに実行するコードを記述します。
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328716"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>ボタンがクリックされたときにテキスト ボックスに書き込むには
 
-1. **ソリューションエクスプローラー**で、[ **Sheet1**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **Sheet1**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. ボタンのイベントハンドラーに次のコードを追加し <xref:System.Windows.Forms.Control.Click> ます。
 
@@ -97,7 +99,7 @@ ms.locfileid: "67328716"
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. ボタンをクリックします。
 

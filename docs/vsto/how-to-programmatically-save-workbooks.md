@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってブックを保存する'
+description: パスを変更せずに Microsoft Excel ブックを保存し、開いているブックをメモリ内に変更せずにブックのコピーを保存します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b45449f72275ac154a433cad725a2867062cc5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbc228a703d6c9224fda545a93132ccb45c94b0f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547083"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524617"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>方法: プログラムによってブックを保存する
   ブックを保存する方法はいくつかあります。 パスを変更しないでブックを保存できます。 以前にブックが保存されていない場合は、パスを指定してブックを保存する必要があります。 明示的なパスがない場合、Microsoft Office Excel は、ファイルが作成されたときに付けられた名前で現在のフォルダーにファイルを保存します。 メモリ内の開いているブックを変更しないで、ブックのコピーを保存することもできます。

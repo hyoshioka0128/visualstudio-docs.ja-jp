@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションに関する特定のセキュリティの考慮事項
+description: Microsoft .NET Framework および Microsoft Office によって提供されるセキュリティ機能を使用して、Office ソリューションをセキュリティ上の脅威から保護する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985580"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524291"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office ソリューションに関する特定のセキュリティの考慮事項
   Microsoft .NET Framework および Microsoft Office には、Office ソリューションをセキュリティ上の脅威から保護するためのセキュリティ機能が備わっています。 このトピックでは、このような脅威のいくつかについて説明し、脅威対策に関する推奨事項を示します。 また、Microsoft Office のセキュリティ設定が Office ソリューションに及ぼす影響についても説明します。
@@ -63,7 +65,7 @@ ms.locfileid: "72985580"
 
  オブジェクト モデルの保護が信頼するのは、このオブジェクトから取得された Outlook オブジェクトのみです。 一方、新しい `Microsoft.Office.Interop.Outlook.Application` オブジェクトから取得したオブジェクトは信頼されないため、オブジェクト モデルの保護が有効になっている場合には、制限されたプロパティおよびメソッドでセキュリティ警告が発生します。
 
- 次のコード例は、オブジェクト モデルの保護が有効になっている場合に、セキュリティの警告を表示します。 `Microsoft.Office.Interop.Outlook.MailItem` クラスの `To` プロパティは、オブジェクト モデルの保護によって制限されています。 `Microsoft.Office.Interop.Outlook.MailItem`オブジェクトは信頼されていません。これは、このオブジェクトを `Microsoft.Office.Interop.Outlook.Application` フィールドから取得するのではなく、 **new**演算子を使用して作成されたから取得するためです `Application` 。
+ 次のコード例は、オブジェクト モデルの保護が有効になっている場合に、セキュリティの警告を表示します。 `Microsoft.Office.Interop.Outlook.MailItem` クラスの `To` プロパティは、オブジェクト モデルの保護によって制限されています。 `Microsoft.Office.Interop.Outlook.MailItem`オブジェクトは信頼されていません。これは、このオブジェクトを `Microsoft.Office.Interop.Outlook.Application` フィールドから取得するのではなく、 **new** 演算子を使用して作成されたから取得するためです `Application` 。
 
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]
@@ -87,9 +89,9 @@ ms.locfileid: "72985580"
  Microsoft Office アプリケーションをホストする他のアプリケーションが原因で、新しいアクセス許可が適用されない場合もあります。 セキュリティ ポリシーが変更された場合、ユーザーは Office を使用するすべてのアプリケーションを (ホストされているか、スタンドアロンであるかを問わず) 終了してください。
 
 ## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Microsoft Office システムのセキュリティセンターの設定がアドインまたはドキュメントレベルのカスタマイズに影響しない
- ユーザーは、 **セキュリティ センター**でオプションを設定して、VSTO アドインの読み込みを禁止できます。 ただし、Visual Studio で Office ソリューションを使用して作成される VSTO アドインとドキュメント レベルのカスタマイズには、これらのセキュリティ設定は影響しません。
+ ユーザーは、 **セキュリティ センター** でオプションを設定して、VSTO アドインの読み込みを禁止できます。 ただし、Visual Studio で Office ソリューションを使用して作成される VSTO アドインとドキュメント レベルのカスタマイズには、これらのセキュリティ設定は影響しません。
 
- **セキュリティ センター**を使用して VSTO アドインの読み込みを禁止した場合、次のタイプのアドインは読み込まれません。
+ **セキュリティ センター** を使用して VSTO アドインの読み込みを禁止した場合、次のタイプのアドインは読み込まれません。
 
 - マネージド COM VSTO アドインおよびアンマネージド COM VSTO アドイン。
 
@@ -115,5 +117,5 @@ ms.locfileid: "72985580"
 
 6. 詳細ウィンドウで **[アプリケーション アドインに対し、信頼できる発行元の署名を必須にする]** または **[すべてのアプリケーション アドインを無効にする]** を選択します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

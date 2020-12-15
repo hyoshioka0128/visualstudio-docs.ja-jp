@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング'
+description: ドキュメントレベルのプロジェクトでのデータバインディングの基本について説明します。また、SQL Server データベースの1つのデータフィールドが Microsoft Excel の名前付き範囲にバインドされていることを確認します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584925"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524106"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでのデータバインディングの基本について説明します。 SQL Server データベースの単一のデータフィールドは、Microsoft Office Excel の名前付き範囲にバインドされます。 このチュートリアルでは、テーブル内のすべてのレコードをスクロールできるようにするコントロールを追加する方法についても説明します。
@@ -55,18 +57,18 @@ ms.locfileid: "91584925"
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. Visual Basic または C# のいずれかを使用して、 **My Simple Data Binding**という名前の Excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. Visual Basic または C# のいずれかを使用して、 **My Simple Data Binding** という名前の Excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-   新しい Excel ブックがデザイナーで開き、 **[My Simple Data Binding** ] プロジェクトが **ソリューションエクスプローラー**に追加されます。
+   新しい Excel ブックがデザイナーで開き、 **[My Simple Data Binding** ] プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="create-the-data-source"></a>データソースを作成する
  **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
 
-1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [   >  **他の Windows**  >  **データソース** の表示] をクリックして表示します。
 
-2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
+2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード** を開始します。
 
 3. [ **データベース** ] を選択し、[ **次へ**] をクリックします。
 
@@ -78,11 +80,11 @@ ms.locfileid: "91584925"
 
 7. [**データベースオブジェクト**] ウィンドウで、[**テーブル**] ノードを展開します。
 
-8. **Customers**テーブルの横にあるチェックボックスをオンにします。
+8. **Customers** テーブルの横にあるチェックボックスをオンにします。
 
 9. **[完了]** をクリックします。
 
-   [**データソース**] ウィンドウに**Customers**テーブルが追加されます。 また、 **ソリューションエクスプローラー**に表示される、型指定されたデータセットをプロジェクトに追加します。
+   [**データソース**] ウィンドウに **Customers** テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
 ## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加する
  このチュートリアルでは、最初のワークシートに2つの名前付き範囲と4つのボタンが必要です。 まず、[ **データソース** ] ウィンドウから2つの名前付き範囲を追加して、データソースに自動的にバインドされるようにします。 次に、[ **ツールボックス**] からボタンを追加します。
@@ -95,19 +97,19 @@ ms.locfileid: "91584925"
 
 3. [ **CompanyName** ] 列を選択し、表示されるドロップダウン矢印をクリックします。
 
-4. ドロップダウンリストから [ **NamedRange** ] を選択し、[ **CompanyName** ] 列をセル **A1**にドラッグします。
+4. ドロップダウンリストから [ **NamedRange** ] を選択し、[ **CompanyName** ] 列をセル **A1** にドラッグします。
 
-     <xref:Microsoft.Office.Tools.Excel.NamedRange>という名前のコントロール `companyNameNamedRange` がセル**A1**に作成されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前 `customersBindingSource` のテーブルアダプターと <xref:System.Data.DataSet> インスタンスがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
+     <xref:Microsoft.Office.Tools.Excel.NamedRange>という名前のコントロール `companyNameNamedRange` がセル **A1** に作成されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前 `customersBindingSource` のテーブルアダプターと <xref:System.Data.DataSet> インスタンスがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
 
 5. [**データソース**] ウィンドウで [ **CustomerID** ] 列を選択し、表示されるドロップダウン矢印をクリックします。
 
-6. ドロップダウンリストで [ **NamedRange** ] をクリックし、[ **CustomerID** ] 列をセル **B1**にドラッグします。
+6. ドロップダウンリストで [ **NamedRange** ] をクリックし、[ **CustomerID** ] 列をセル **B1** にドラッグします。
 
-7. と <xref:Microsoft.Office.Tools.Excel.NamedRange> いう名前の別のコントロール `customerIDNamedRange` がセル **B1**に作成され、にバインドされ <xref:System.Windows.Forms.BindingSource> ます。
+7. と <xref:Microsoft.Office.Tools.Excel.NamedRange> いう名前の別のコントロール `customerIDNamedRange` がセル **B1** に作成され、にバインドされ <xref:System.Windows.Forms.BindingSource> ます。
 
 ### <a name="to-add-four-buttons"></a>4つのボタンを追加するには
 
-1. **ツールボックス**の [**コモンコントロール**] タブから、 <xref:System.Windows.Forms.Button> ワークシートのセル**A3**にコントロールを追加します。
+1. **ツールボックス** の [**コモンコントロール**] タブから、 <xref:System.Windows.Forms.Button> ワークシートのセル **A3** にコントロールを追加します。
 
     このボタンにはという名前が付けら `Button1` れます。
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584925"
 
 ### <a name="to-initialize-the-controls"></a>コントロールを初期化するには
 
-1. **ソリューションエクスプローラー**で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. 次のコードをメソッドに追加して、 `Sheet1_Startup` 各ボタンのテキストを設定します。
 
@@ -175,15 +177,15 @@ ms.locfileid: "91584925"
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
-2. 最初のレコードがセル **A1** と **B1**に表示されることを確認します。
+2. 最初のレコードがセル **A1** と **B1** に表示されることを確認します。
 
-3. **>**( `Button3` ) ボタンをクリックし、次のレコードがセル**A1**と**B1**に表示されることを確認します。
+3. **>**( `Button3` ) ボタンをクリックし、次のレコードがセル **A1** と **B1** に表示されることを確認します。
 
 4. 他のスクロールボタンをクリックして、レコードが想定どおりに変更されていることを確認します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルでは、データベースのフィールドに名前付き範囲をバインドする方法の基本について説明します。 ここでは、次の作業を行います。
 
 - データをキャッシュして、オフラインで使用できるようにします。 詳細については、「 [方法: オフラインまたはサーバー上で使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)する」を参照してください。

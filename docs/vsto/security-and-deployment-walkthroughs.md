@@ -1,5 +1,7 @@
 ---
 title: セキュリティとデプロイのチュートリアル
+description: ソリューションを実行できるようにセキュリティポリシーを設定する方法と、Office ソリューションを配置する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810942"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524373"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>セキュリティとデプロイのチュートリアル
   次のトピックでは、ソリューションを実行できるようにセキュリティポリシーを設定する方法と、Office ソリューションを配置する方法について説明します。
@@ -41,7 +43,7 @@ ms.locfileid: "90810942"
 
 - [方法: Office ソリューションの配置用に IIS を準備する](/previous-versions/bb608629(v=vs.110)) 配置マニフェスト用に Microsoft インターネットインフォメーションサービス (IIS) で MIME の種類を構成する方法について説明します。
 
-- [方法: 配置した Office ソリューションを更新する](/previous-versions/bb157871(v=vs.110))**発行ウィザード**を使用して Office ソリューションを更新する方法について説明します。
+- [方法: 配置した Office ソリューションを更新する](/previous-versions/bb157871(v=vs.110))**発行ウィザード** を使用して Office ソリューションを更新する方法について説明します。
 
 - [方法: Office ソリューションのインストールパスを変更する](/previous-versions/bb608626(v=vs.110)) Office ソリューションのインストールパスを変更する方法について説明します。
 
@@ -58,5 +60,5 @@ ms.locfileid: "90810942"
 
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md) Word および Excel ソリューションの作成と、ソリューション内のアセンブリの役割に関する情報へのリンクを示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)

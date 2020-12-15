@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する'
+description: Microsoft Word 文書に操作ウィンドウを作成します。 操作ウィンドウには、入力を収集し、そのテキストをドキュメントに送信する2つのコントロールが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584964"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524160"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する
   このチュートリアルでは、Microsoft Office Word 文書に操作ウィンドウを作成する方法について説明します。 操作ウィンドウには、入力を収集し、そのテキストをドキュメントに送信する2つのコントロールが含まれています。
@@ -44,14 +46,14 @@ ms.locfileid: "91584964"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] または [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  最初に、Word 文書のプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. **[基本的な操作] ウィンドウ**という名前の Word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **[基本的な操作] ウィンドウ** という名前の Word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     デザイナーで新しい Word 文書が開き、 **[My Basic Actions] ウィンドウ** が **ソリューションエクスプローラー**に追加されます。
+     デザイナーで新しい Word 文書が開き、 **[My Basic Actions] ウィンドウ** が **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="add-text-and-bookmarks-to-the-document"></a>ドキュメントにテキストとブックマークを追加する
  操作ウィンドウは、ドキュメント内のブックマークにテキストを送信します。 ドキュメントをデザインするには、基本的なフォームを作成するためのテキストを入力します。
@@ -72,16 +74,16 @@ ms.locfileid: "91584964"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>ドキュメントにブックマーク コントロールを追加するには
 
-1. **ツールボックス**の [ **Word コントロール**] タブから、 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを文書にドラッグします。
+1. **ツールボックス** の [ **Word コントロール**] タブから、 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを文書にドラッグします。
 
      [ **ブックマークコントロールの追加** ] ダイアログボックスが表示されます。
 
-2. 段落記号を選択せずに単語 **名**を選択し、[ **OK]** をクリックします。
+2. 段落記号を選択せずに単語 **名** を選択し、[ **OK]** をクリックします。
 
     > [!NOTE]
     > 段落記号はブックマークの外側に配置する必要があります。 ドキュメントに段落記号が表示されていない場合は、[ **ツール** ] メニューの [ **Microsoft Office Word ツール** ] をポイントし、[ **オプション**] をクリックします。 [**表示**] タブをクリックし、[**オプション**] ダイアログボックスの [**書式設定**] セクションで [**段落記号**] チェックボックスをオンにします。
 
-3. [**プロパティ**] ウィンドウで、 **Bookmark1**の**name**プロパティを**showname**に変更します。
+3. [**プロパティ**] ウィンドウで、 **Bookmark1** の **name** プロパティを **showname** に変更します。
 
 4. 段落記号を選択せずに、[ **住所**] を選択します。
 
@@ -94,7 +96,7 @@ ms.locfileid: "91584964"
 
 ### <a name="to-add-an-actions-pane-control"></a>操作ウィンドウコントロールを追加するには
 
-1. **ソリューションエクスプローラー**で **[My Basic Actions] ウィンドウ**プロジェクトを選択します。
+1. **ソリューションエクスプローラー** で **[My Basic Actions] ウィンドウ** プロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -106,7 +108,7 @@ ms.locfileid: "91584964"
 
 2. [**ツールボックス**] の [**コモンコントロール**] タブから、[操作] ウィンドウコントロールに [**ラベル**] コントロールをドラッグします。
 
-3. ラベルコントロールの **Text** プロパティを **Name**に変更します。
+3. ラベルコントロールの **Text** プロパティを **Name** に変更します。
 
 4. [操作] ウィンドウコントロールに **テキストボックス** コントロールを追加し、次のプロパティを変更します。
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584964"
     |**名前**|**getName**|
     |**[サイズ]**|**130, 20**|
 
-5. 操作ウィンドウコントロールに2つ目の **ラベル** コントロールを追加し、 **Text** プロパティを **Address**に変更します。
+5. 操作ウィンドウコントロールに2つ目の **ラベル** コントロールを追加し、 **Text** プロパティを **Address** に変更します。
 
 6. 操作ウィンドウコントロールに2つ目の **Textbox** コントロールを追加し、次のプロパティを変更します。
 
@@ -131,7 +133,7 @@ ms.locfileid: "91584964"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**addText**|
-    |**Text**|**挿入**|
+    |**テキスト**|**[挿入]**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>ドキュメントにテキストを挿入するコードを追加する
  [操作] ウィンドウで、テキストボックスのテキストをドキュメント内の適切なコントロールに挿入するコードを記述し <xref:Microsoft.Office.Tools.Word.Bookmark> ます。 クラスを使用して、 `Globals` 操作ウィンドウのコントロールからドキュメントのコントロールにアクセスできます。 詳細については、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。
@@ -167,13 +169,13 @@ ms.locfileid: "91584964"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. 操作ウィンドウが表示されていることを確認します。
 
 3. 操作ウィンドウのテキストボックスに名前と住所を入力し、[ **挿入**] をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  ここでは、次の作業を行います。
 
 - Excel で操作ウィンドウを作成します。 詳細については、「 [方法: Excel ブックに操作ウィンドウを追加](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))する」を参照してください。

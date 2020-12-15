@@ -1,5 +1,7 @@
 ---
 title: Excel の範囲内で日付の値をプログラムによって取得 & 格納する
+description: Visual Studio を使用して、Microsoft Excel の範囲で日付の値をプログラムによって格納および取得する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2bd76d37a9c9b6e51de7bbe01b54d1be6c93128
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 673969e13b2f49b91416d730533be0f075813781
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583776"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523587"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>方法: プログラムによって Excel の範囲内の日付値を格納および取得する
   値を格納および取得するには、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールまたはネイティブの Excel 範囲オブジェクトを使用します。
@@ -43,7 +45,7 @@ ms.locfileid: "91583776"
 
 ### <a name="to-store-a-date-value-in-a-named-range"></a>名前付き範囲に日付値を格納するには
 
-1. <xref:Microsoft.Office.Tools.Excel.NamedRange>セル**A1**にコントロールを作成します。
+1. <xref:Microsoft.Office.Tools.Excel.NamedRange>セル **A1** にコントロールを作成します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
      [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]
@@ -64,7 +66,7 @@ ms.locfileid: "91583776"
 
 ### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>ネイティブの Excel 範囲オブジェクトに日付値を格納するには
 
-1. <xref:Microsoft.Office.Interop.Excel.Range>セル**A1**を表すを作成します。
+1. <xref:Microsoft.Office.Interop.Excel.Range>セル **A1** を表すを作成します。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]

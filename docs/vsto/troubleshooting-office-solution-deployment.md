@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの配置のトラブルシューティング
+description: Office ソリューションを配置するときに発生する可能性のある一般的な問題を解決する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806734"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522976"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションの配置のトラブルシューティング
   このトピックでは、Office ソリューションを配置するときに発生する可能性がある一般的な問題を解決する方法について説明します。
@@ -30,7 +32,7 @@ ms.locfileid: "90806734"
  Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされるエラー メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。 詳細については、「 [Office ソリューションのイベントログ](../vsto/event-logging-for-office-solutions.md)」を参照してください。
 
 ## <a name="change-the-assembly-name-causes-conflicts"></a>アセンブリ名を変更すると競合が発生する
- ソリューションを配置した後に**プロジェクトデザイナー**の [**アプリケーション**] ページで [**アセンブリ名**] の値を変更すると、発行ツールによって、1つの*Setup.exe*ファイルと2つの配置マニフェストを含むセットアップパッケージが変更されます。 2 つのマニフェスト ファイルを配置すると、次のような状況が発生する場合があります。
+ ソリューションを配置した後に **プロジェクトデザイナー** の [**アプリケーション**] ページで [**アセンブリ名**] の値を変更すると、発行ツールによって、1つの *Setup.exe* ファイルと2つの配置マニフェストを含むセットアップパッケージが変更されます。 2 つのマニフェスト ファイルを配置すると、次のような状況が発生する場合があります。
 
 - エンド ユーザーが両方のバージョンをインストールすると、アプリケーションは両方の VSTO アドインを読み込みます。
 
@@ -60,7 +62,7 @@ ms.locfileid: "90806734"
  セットアップ パッケージには、Office ソリューションと共に配置される必須コンポーネントとして、.NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]、および Office プライマリ相互運用機能アセンブリを追加できます。 プライマリ相互運用機能アセンブリをインストールする方法の詳細については、「 [office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md) 」および「 [方法: office プライマリ相互運用機能アセンブリをインストール](../vsto/how-to-install-office-primary-interop-assemblies.md)する」を参照してください。
 
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Localhost を使用して発行すると、インストールの問題が発生することがある
- `http://localhost`ドキュメントレベルのソリューションの発行場所またはインストール先としてを使用すると、**発行ウィザード**によって文字列が実際のコンピューター名に変換されることはありません。 この場合は、ソリューションを開発用コンピューター上にインストールする必要があります。 配置ソリューションに開発用コンピューター上の IIS を使用させるには、HTTP、HTTPS、FTP のすべての場所について、localhost ではなく完全修飾名を使用します。
+ `http://localhost`ドキュメントレベルのソリューションの発行場所またはインストール先としてを使用すると、**発行ウィザード** によって文字列が実際のコンピューター名に変換されることはありません。 この場合は、ソリューションを開発用コンピューター上にインストールする必要があります。 配置ソリューションに開発用コンピューター上の IIS を使用させるには、HTTP、HTTPS、FTP のすべての場所について、localhost ではなく完全修飾名を使用します。
 
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>更新されたアセンブリではなく、キャッシュされたアセンブリが読み込まれる
  プロジェクトの出力パスがネットワーク ファイル共有上にあり、アセンブリが厳密な名前で署名されていて、カスタマイズ アセンブリのバージョンが変更されていない場合、.NET Framework アセンブリ ローダーである fusion は、キャッシュしたアセンブリのコピーを読み込みます。 アセンブリを更新しても、これらの条件が満たされるとキャッシュしたコピーが読み込まれるため、プロジェクトを次回実行するときに更新は表示されません。
@@ -73,7 +75,7 @@ ms.locfileid: "90806734"
 
 2. **[アプリケーション]** ページで、 **[アセンブリ情報]** を選択します。
 
-3. **アセンブリのバージョン**のリビジョン番号、3番目のフィールドをワイルドカード () に設定し \* ます。 たとえば、"1.0. *" のようになります。  次に、[ **OK** ] をクリックします。
+3. **アセンブリのバージョン** のリビジョン番号、3番目のフィールドをワイルドカード () に設定し \* ます。 たとえば、"1.0. *" のようになります。  次に、[ **OK** ] をクリックします。
 
    アセンブリのバージョンを変更したら、厳密な名前でアセンブリに署名します。fusion が最新バージョンのカスタマイズを読み込むようになります。
 
@@ -125,7 +127,7 @@ ms.locfileid: "90806734"
 
  拡張子を **.vsto** に、MIME の種類を " **application/x-ms-vsto**" に設定します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ClickOnce 配置のトラブルシューティング](../deployment/troubleshooting-clickonce-deployments.md)
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)

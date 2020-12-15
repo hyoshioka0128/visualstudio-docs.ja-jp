@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって Visio 図面を印刷する'
+description: 完全な Microsoft Visio 図面を印刷する方法、またはそのドキュメント内の特定のページだけを印刷する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e31a55e49d42311b5ec5fff82769584cc55ce09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46babb5c989f647706bcbe87412adcdeeb0476d7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537801"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523778"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>方法: プログラムによって Visio 図面を印刷する
   Microsoft Office Visio 図面の全体または特定のページだけを印刷することができます。

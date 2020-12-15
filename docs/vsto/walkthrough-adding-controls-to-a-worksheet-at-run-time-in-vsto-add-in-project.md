@@ -1,5 +1,7 @@
 ---
 title: 実行時に VSTO アドインプロジェクトのワークシートにコントロールを追加する
+description: リボンを使用して、ユーザーがボタン、NamedRange、および ListObject をワークシートに追加できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584348"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522775"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>チュートリアル: 実行時における VSTO アドインプロジェクトのワークシートへのコントロールの追加
   Excel VSTO アドインを使用して、任意の開いているワークシートにコントロールを追加できます。 このチュートリアルでは、リボンを使用してユーザーがワークシートに <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange>、および <xref:Microsoft.Office.Tools.Excel.ListObject> を追加できるようにする方法を説明します。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
@@ -50,9 +52,9 @@ ms.locfileid: "91584348"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>新しい Excel VSTO アドイン プロジェクトを作成するには
 
-1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、 **Exceldynamiccontrols**という名前の Excel VSTO アドインプロジェクトを作成します。 詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、 **Exceldynamiccontrols** という名前の Excel VSTO アドインプロジェクトを作成します。 詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**アセンブリへの参照を追加します。 この参照は、このチュートリアルの後半で Windows フォーム コントロールをワークシートにプログラムを使用して追加するのに必要です。
+2. **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** アセンブリへの参照を追加します。 この参照は、このチュートリアルの後半で Windows フォーム コントロールをワークシートにプログラムを使用して追加するのに必要です。
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>ワークシートにコントロールを追加するための UI を提供する
  Excel のリボンにカスタム タブを追加します。 ユーザーはタブにあるチェック ボックスをオンにして、ワークシートにコントロールを追加できます。
@@ -65,7 +67,7 @@ ms.locfileid: "91584348"
 
      リボンデザイナーで **Ribbon1.cs** または **ribbon1.vb** という名前のファイルが開き、既定のタブとグループが表示されます。
 
-3. **ツールボックス** の **[Office リボン コントロール]** タブから、 CheckBox コントロールを **group1**にドラッグします。
+3. **ツールボックス** の **[Office リボン コントロール]** タブから、 CheckBox コントロールを **group1** にドラッグします。
 
 4. **[CheckBox1]** をクリックしてオンにします。
 
@@ -73,10 +75,10 @@ ms.locfileid: "91584348"
 
     |プロパティ|値|
     |--------------|-----------|
-    |**名前**|**ボタン**|
-    |**Label**|**ボタン**|
+    |**名前**|**Button**|
+    |**Label**|**Button**|
 
-6. **group1**に 2 つ目のチェック ボックスを追加し、次のプロパティを変更します。
+6. **group1** に 2 つ目のチェック ボックスを追加し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
@@ -95,9 +97,9 @@ ms.locfileid: "91584348"
 
 ### <a name="to-add-controls-to-a-worksheet"></a>ワークシートにコントロールを追加するには
 
-1. リボンデザイナーで、[ **] ボタン**をダブルクリックします。
+1. リボンデザイナーで、[ **] ボタン** をダブルクリックします。
 
-     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>コードエディターで、**ボタン**のチェックボックスのイベントハンドラーが開きます。
+     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>コードエディターで、**ボタン** のチェックボックスのイベントハンドラーが開きます。
 
 2. `Button_Click` イベント ハンドラーを次のコードで置き換えます。
 
@@ -106,7 +108,7 @@ ms.locfileid: "91584348"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. **ソリューションエクスプローラー**で、 *Ribbon1.cs*または*ribbon1.vb*を選択します。
+3. **ソリューションエクスプローラー** で、 *Ribbon1.cs* または *ribbon1.vb* を選択します。
 
 4. [ **表示** ] メニューの [ **デザイナー**] をクリックします。
 
@@ -138,11 +140,11 @@ ms.locfileid: "91584348"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>ワークシートからコントロールを削除するには
 
-1. **ソリューションエクスプローラー**で、 *ThisAddIn.cs*または*ThisAddIn*を選択します。
+1. **ソリューションエクスプローラー** で、 *ThisAddIn.cs* または *ThisAddIn* を選択します。
 
 2. **[表示]** メニューの **[コード]** をクリックします。
 
-3. `ThisAddIn` クラスに次のメソッドを追加します。 このコードはブックの最初のワークシートを取得し、`HasVstoObject` メソッドを使用して、ワークシートにワークシート オブジェクトが生成されているかどうかを確認します。 生成されたワークシート オブジェクトにコントロールがある場合、コードはそのワークシート オブジェクトを取得し、コントロール コレクションを反復処理してコントロールを削除します。
+3. 次のメソッドを `ThisAddIn` クラスに追加します。 このコードはブックの最初のワークシートを取得し、`HasVstoObject` メソッドを使用して、ワークシートにワークシート オブジェクトが生成されているかどうかを確認します。 生成されたワークシート オブジェクトにコントロールがある場合、コードはそのワークシート オブジェクトを取得し、コントロール コレクションを反復処理してコントロールを削除します。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
@@ -156,13 +158,13 @@ ms.locfileid: "91584348"
 
 ### <a name="to-test-the-solution"></a>ソリューションをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. Sheet1 で任意のセルを選択します。
 
 3. **[アドイン]** タブをクリックします。
 
-4. [ **Group1** ] グループで、[ **] ボタン**をクリックします。
+4. [ **Group1** ] グループで、[ **] ボタン** をクリックします。
 
      選択したセルにボタンが表示されます。
 
@@ -182,7 +184,7 @@ ms.locfileid: "91584348"
 
      Sheet1 に追加したコントロールは表示されなくなります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Excel VSTO アドイン プロジェクトのコントロールの詳細については、以下のトピックをご覧ください。
 
 - コントロールをワークシートに保存する方法の詳細については、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「Excel VSTO アドイン動的コントロールのサンプル」を参照してください。
