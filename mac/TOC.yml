@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: 問題を報告する
       href: report-a-problem.md
+    - name: 'トラブルシューティング:既存の拡張機能の新しいバージョンをリリースする方法'
+      href: migrate-extensions.md
     - name: 'トラブルシューティング:Visual Studio for Mac は Team Foundation バージョン管理をサポートしていますか?'
       href: tf-version-control.md
     - name: 'トラブルシューティング:すべてのテンプレートが表示されない'
