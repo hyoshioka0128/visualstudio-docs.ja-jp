@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってワークシートから保護を削除する'
+description: Visual Studio を使用して、Microsoft Excel ワークシートからプログラムによって保護を削除する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0660c703d94111d042b943935c64546d87bc61fa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 86140e5595fc539a06a9eb8381e50b503e31708d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584808"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526635"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>方法: プログラムによってワークシートから保護を削除する
   プログラムを使用して、Microsoft Office Excel ワークシートから保護を削除できます。

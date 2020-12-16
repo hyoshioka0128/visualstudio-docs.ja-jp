@@ -1,5 +1,7 @@
 ---
 title: プログラム VSTO アドイン
+description: ThisAddIn クラスを使用して、Microsoft Office ホストアプリケーションのオブジェクトモデルにアクセスするなどのタスクを実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115333"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525111"
 ---
 # <a name="program-vsto-add-ins"></a>プログラム VSTO アドイン
   VSTO アドインを作成して Microsoft Office アプリケーションを拡張するときは、プロジェクトの `ThisAddIn` クラスに対して直接コードを記述します。 このクラスを使用し、Microsoft Office ホスト アプリケーションのオブジェクト モデルにアクセスする、アプリケーションのユーザー インターフェイス (UI) をカスタマイズする、その他の Office ソリューションに VSTO アドインのオブジェクトを公開するなどの作業を実行できます。
@@ -49,7 +51,7 @@ ms.locfileid: "87115333"
  VSTO アドインと、Visual Studio の Office 開発ツールを使用して作成できるその他の種類のソリューションに関する一般的な情報については、「 [office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
 ## <a name="use-the-thisaddin-class"></a>ThisAddIn クラスを使用する
- VSTO アドイン コードの記述は `ThisAddIn` クラスから開始することができます。 Visual Studio は、 *ThisAddIn.vb* [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VSTO アドインプロジェクトの*ThisAddIn.cs* (の場合) または (C# の場合) コードファイルにこのクラスを自動的に生成します。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、Microsoft Office アプリケーションが VSTO アドインを読み込むと、このクラスを自動的にインスタンス化します。
+ VSTO アドイン コードの記述は `ThisAddIn` クラスから開始することができます。 Visual Studio は、  [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VSTO アドインプロジェクトの *ThisAddIn.cs* (の場合) または (C# の場合) コードファイルにこのクラスを自動的に生成します。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、Microsoft Office アプリケーションが VSTO アドインを読み込むと、このクラスを自動的にインスタンス化します。
 
  `ThisAddIn` クラスには既定のイベント ハンドラーが 2 つあります。 VSTO アドインが読み込まれるときにコードを実行するには、 `ThisAddIn_Startup` イベント ハンドラーにコードを追加します。 VSTO アドインが読み込み解除される直前にコードを実行するには、 `ThisAddIn_Shutdown` イベント ハンドラーにコードを追加します。 これらのイベントハンドラーの詳細については、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 

@@ -1,5 +1,6 @@
 ---
 title: 'チュートリアル: コンテンツコントロールを使用してテンプレートを作成する'
+description: コンテンツコントロールを使用して Microsoft Word テンプレートに構造化された再利用可能なコンテンツを作成するドキュメントレベルのカスタマイズを作成する方法について説明します。
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585029"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524984"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>チュートリアル: コンテンツコントロールを使用してテンプレートを作成する
   このチュートリアルでは、コンテンツ コントロールを使用して、Microsoft Office Word テンプレートで構造化された再利用可能なコンテンツを作成するための、ドキュメント レベルのカスタマイズを作成する方法について説明します。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Word では、 *ビルドブロック*という名前の再利用可能なドキュメントパーツのコレクションを作成できます。 このチュートリアルでは、文書パーツとして 2 つの表を作成する方法を説明します。 各表には、プレーン テキストや日付などさまざまな種類のコンテンツを保持できる、複数のコンテンツ コントロールが含まれます。 表の 1 つには従業員に関する情報が含まれ、もう一方の表には顧客からのフィードバックが含まれています。
+ Word では、 *ビルドブロック* という名前の再利用可能なドキュメントパーツのコレクションを作成できます。 このチュートリアルでは、文書パーツとして 2 つの表を作成する方法を説明します。 各表には、プレーン テキストや日付などさまざまな種類のコンテンツを保持できる、複数のコンテンツ コントロールが含まれます。 表の 1 つには従業員に関する情報が含まれ、もう一方の表には顧客からのフィードバックが含まれています。
 
  テンプレートからドキュメントを作成した後に、複数の <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> オブジェクトを使用して、いずれかの表をドキュメントに追加できます。これらのオブジェクトには、テンプレート内で使用できる文書パーツが表示されます。
 
@@ -57,9 +58,9 @@ ms.locfileid: "91585029"
 
 ### <a name="to-create-a-new-word-template-project"></a>新しい Word テンプレート プロジェクトを作成するには
 
-1. **MyBuildingBlockTemplate**という名前の Word テンプレートプロジェクトを作成します。 ウィザードで、ソリューション内に新しいドキュメントを作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **MyBuildingBlockTemplate** という名前の Word テンプレートプロジェクトを作成します。 ウィザードで、ソリューション内に新しいドキュメントを作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで新しい Word テンプレートを開き、**ソリューションエクスプローラー**に**MyBuildingBlockTemplate**プロジェクトを追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで新しい Word テンプレートを開き、**ソリューションエクスプローラー** に **MyBuildingBlockTemplate** プロジェクトを追加します。
 
 ## <a name="create-the-employee-table"></a>Employee テーブルを作成する
  ユーザーが従業員に関する情報を入力できる 4 種類のコンテンツ コントロールが含まれる表を作成します。
@@ -76,8 +77,8 @@ ms.locfileid: "91585029"
    |-|
    |**Employee Name**|
    |**Hire Date**|
-   |**タイトル**|
-   |**画像**|
+   |**Title**|
+   |**Picture**|
 
 4. 2番目の列の最初のセル ([ **Employee Name**] の横) をクリックします。
 
@@ -138,7 +139,7 @@ ms.locfileid: "91585029"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>コンテンツ コントロールの UI をプログラムで変更するには
 
-1. **ソリューションエクスプローラー**で、 **ThisDocument.cs**または**ThisDocument**を右クリックし、[コードの**表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、 **ThisDocument.cs** または **ThisDocument** を右クリックし、[コードの **表示**] をクリックします。
 
 2. 次のコードを `ThisDocument` クラスに追加します。 このコードは、このチュートリアルの後半で使用するいくつかのオブジェクトを宣言します。
 
@@ -190,7 +191,7 @@ ms.locfileid: "91585029"
 
 ### <a name="to-test-the-employee-table"></a>従業員表をテストするには
 
-1. **F5**キーを押してプロジェクトを実行します。
+1. **F5** キーを押してプロジェクトを実行します。
 
 2. [ **最初のビルディングブロックを選択** する] をクリックして、最初の文書パーツギャラリーコンテンツコントロールを表示します。
 
@@ -202,11 +203,11 @@ ms.locfileid: "91585029"
 
 5. [ **入社日** ] セルの右側にあるセルをクリックし、日付の選択で日付を選択します。
 
-6. **タイトル**セルの右側にあるセルをクリックし、コンボボックスでいずれかのジョブタイトルを選択します。
+6. **タイトル** セルの右側にあるセルをクリックし、コンボボックスでいずれかのジョブタイトルを選択します。
 
      必要に応じて、リストに含まれていない役職名を入力します。 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ではユーザーがエントリの一覧から選択することも、独自のエントリを入力することもできるため、このようなケースが生じることがあります。
 
-7. **画像**セルの右側にあるセルのアイコンをクリックし、画像を参照して表示します。
+7. **画像** セルの右側にあるセルのアイコンをクリックし、画像を参照して表示します。
 
 8. 表に行や列を追加できるか、また、表から行や列を削除できるか、試してみます。 表を変更できないことを確認します。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> により、表は変更できないようになっています。
 
@@ -218,7 +219,7 @@ ms.locfileid: "91585029"
 
 3. [ **Customer Name** ] セルの右側にあるセルをクリックし、名前を入力します。
 
-4. **満足度評価**セルの右側にあるセルをクリックし、使用可能なオプションの1つを選択します。
+4. **満足度評価** セルの右側にあるセルをクリックし、使用可能なオプションの1つを選択します。
 
      独自のエントリを入力できないことを確認します。 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> では、ユーザーはエントリの一覧から選択することのみが可能です。
 
@@ -230,7 +231,7 @@ ms.locfileid: "91585029"
 
 7. テンプレートを閉じます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  コンテンツ コントロールの使用方法の詳細については、次の各トピックを参照してください。
 
 - コンテンツ コントロールを、文書に埋め込まれている XML の一部 (「カスタム XML 部分」とも呼ばれます) にバインドします。 詳細については、「 [チュートリアル: カスタム XML 部分へのコンテンツコントロールのバインド](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)」を参照してください。

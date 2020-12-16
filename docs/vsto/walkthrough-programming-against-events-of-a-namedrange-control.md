@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: NamedRange コントロールのイベントに対するプログラミング'
+description: Visual Studio の Office 開発ツールを使用して、Microsoft Excel ワークシートに NamedRange コントロールを追加し、そのイベントに対してプログラムを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584938"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526124"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>チュートリアル: NamedRange コントロールのイベントに対するプログラミング
   このチュートリアルでは、 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio の Office 開発ツールを使用して、Microsoft Office Excel ワークシートにコントロールを追加し、そのイベントに対してプログラムを作成する方法について説明します。
@@ -47,19 +49,19 @@ ms.locfileid: "91584938"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  この手順では、Visual Studio を使用して Excel ブックプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. **"My 名前付き範囲イベント" という**名前の Excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **"My 名前付き範囲イベント" という** 名前の Excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     デザイナーで新しい Excel ブックが開き、**ソリューションエクスプローラー**に**My 名前付き範囲のイベント**プロジェクトが追加されます。
+     デザイナーで新しい Excel ブックが開き、**ソリューションエクスプローラー** に **My 名前付き範囲のイベント** プロジェクトが追加されます。
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>ワークシートにテキストと名前付き範囲を追加する
  ホストコントロールは Office の拡張オブジェクトであるため、ネイティブオブジェクトを追加するのと同じ方法でドキュメントに追加することができます。 たとえば、ワークシートに Excel コントロールを追加するには、[ <xref:Microsoft.Office.Tools.Excel.NamedRange> **挿入** ] メニューを開き、[ **名前**] をポイントし、[ **定義**] をクリックします。 また、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを [ **ツールボックス** ] からワークシートにドラッグして追加することもできます。
 
- この手順では、 **ツールボックス**を使用して2つの名前付き範囲コントロールをワークシートに追加し、ワークシートにテキストを追加します。
+ この手順では、 **ツールボックス** を使用して2つの名前付き範囲コントロールをワークシートに追加し、ワークシートにテキストを追加します。
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>ワークシートに範囲を追加するには
 
@@ -73,9 +75,9 @@ ms.locfileid: "91584938"
 
 4. **[OK]** をクリックします。
 
-     セル **A1** は、という名前の範囲になり `namedRange1` ます。 ワークシートには表示されませんが、 `namedRange1` セル**A1**が選択されている場合は、(左側のワークシートのすぐ上にある) [**名前**] ボックスに表示されます。
+     セル **A1** は、という名前の範囲になり `namedRange1` ます。 ワークシートには表示されませんが、 `namedRange1` セル **A1** が選択されている場合は、(左側のワークシートのすぐ上にある) [**名前**] ボックスに表示されます。
 
-5. <xref:Microsoft.Office.Tools.Excel.NamedRange>セル**B3**に別のコントロールを追加します。
+5. <xref:Microsoft.Office.Tools.Excel.NamedRange>セル **B3** に別のコントロールを追加します。
 
 6. 編集可能なテキストボックスに **$B $3** が表示され、そのセル **B3** が選択されていることを確認します。 そうでない場合は、セル **B3** をクリックして選択します。
 
@@ -85,7 +87,7 @@ ms.locfileid: "91584938"
 
 ### <a name="to-add-text-to-your-worksheet"></a>ワークシートにテキストを追加するには
 
-1. セル **A1**で、次のテキストを入力します。
+1. セル **A1** で、次のテキストを入力します。
 
     **これは、NamedRange コントロールの例です。**
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584938"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>BeforeDoubleClick イベントに基づいて NamedRange2 にテキストを挿入するには
 
-1. **ソリューションエクスプローラー**で、 **Sheet1**または**Sheet1.cs**を右クリックして、[**コードの表示**] を選択します。
+1. **ソリューションエクスプローラー** で、 **Sheet1** または **Sheet1.cs** を右クリックして、[**コードの表示**] を選択します。
 
 2. イベントハンドラーが次のようになるように、コードを追加し `namedRange1_BeforeDoubleClick` ます。
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584938"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>SelectionChange イベントに基づいて namedRange2 にテキストを挿入するには
 
-1. **NamedRange1_SelectionChange**イベントハンドラーが次のようになるようにコードを追加します。
+1. **NamedRange1_SelectionChange** イベントハンドラーが次のようになるようにコードを追加します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
@@ -139,7 +141,7 @@ ms.locfileid: "91584938"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. にカーソルを置き、 `namedRange1` イベントに関するテキストが <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 挿入され、ワークシートにコメントが挿入されていることを確認します。
 
@@ -151,7 +153,7 @@ ms.locfileid: "91584938"
 
 6. の外側をクリックし、 `namedRange1` テキストに関する [関連 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> イベント] が青色のテキストと共に挿入されていることを確認し `namedRange2` ます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルでは、コントロールのイベントに対するプログラミングの基本について説明し <xref:Microsoft.Office.Tools.Excel.NamedRange> ます。 次のようなタスクがあります。
 
 - プロジェクトを配置しています。 詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。

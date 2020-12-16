@@ -1,5 +1,7 @@
 ---
 title: VSTO アドインで実行時にドキュメントにコントロールを追加する
+description: リボンを使用して、ユーザーがボタンクラスまたは RichTextContentControl インターフェイスをドキュメントに追加できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254173"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526285"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>チュートリアル: 実行時に VSTO アドインでドキュメントにコントロールを追加する
   VSTO アドインを使用して、開いている Microsoft Office Word 文書にコントロールを追加できます。 このチュートリアルでは、リボンを使用して、ユーザーがドキュメントにまたはを追加できるようにする方法について説明し <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ます。
@@ -51,7 +53,7 @@ ms.locfileid: "71254173"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>新しい Word VSTO アドイン プロジェクトを作成するには
 
-1. **Worddynamiccontrols**という名前の Word 用の VSTO アドインプロジェクトを作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **Worddynamiccontrols** という名前の Word 用の VSTO アドインプロジェクトを作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
 2. **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** アセンブリへの参照を追加します。 この参照は、このチュートリアルの後半でプログラムを使用して Windows フォーム コントロールをドキュメントに追加するのに必要です。
 
@@ -72,7 +74,7 @@ ms.locfileid: "71254173"
 
 5. **[プロパティ]** ウィンドウで、 **group1** の **[ラベル]** プロパティを **[コントロールの追加]** に変更します。
 
-6. **ツールボックス** の **[Office リボン コントロール]** タブから、 **CheckBox** コントロールを **group1**にドラッグします。
+6. **ツールボックス** の **[Office リボン コントロール]** タブから、 **CheckBox** コントロールを **group1** にドラッグします。
 
 7. **[CheckBox1]** をクリックしてオンにします。
 
@@ -83,7 +85,7 @@ ms.locfileid: "71254173"
    | **名前** | **addButtonCheckBox** |
    | **Label** | **[追加] ボタン** |
 
-9. **group1**に 2 つ目のチェック ボックスを追加し、次のプロパティを変更します。
+9. **group1** に 2 つ目のチェック ボックスを追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |-----------|---------------------------|
@@ -107,19 +109,19 @@ ms.locfileid: "71254173"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>アクティブなドキュメントでコントロールを追加または削除するには
 
-1. **ソリューションエクスプローラー**で、 *ThisAddIn.cs*または*ThisAddIn*をダブルクリックして、コードエディターでファイルを開きます。
+1. **ソリューションエクスプローラー** で、 *ThisAddIn.cs* または *ThisAddIn* をダブルクリックして、コードエディターでファイルを開きます。
 
 2. 次のコードを `ThisAddIn` クラスに追加します。 このコードは、ドキュメントに追加されるコントロールを表す <xref:Microsoft.Office.Tools.Word.Controls.Button> オブジェクトと <xref:Microsoft.Office.Tools.Word.RichTextContentControl> オブジェクトを宣言します。
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3. `ThisAddIn` クラスに次のメソッドを追加します。 ユーザーがリボンの **[ボタンの追加]** チェック ボックスをクリックしてこれがオンになると、このメソッドによって <xref:Microsoft.Office.Tools.Word.Controls.Button> がドキュメントの現在の選択項目に追加されます。チェック ボックスがオフになると <xref:Microsoft.Office.Tools.Word.Controls.Button> が削除されます。
+3. 次のメソッドを `ThisAddIn` クラスに追加します。 ユーザーがリボンの **[ボタンの追加]** チェック ボックスをクリックしてこれがオンになると、このメソッドによって <xref:Microsoft.Office.Tools.Word.Controls.Button> がドキュメントの現在の選択項目に追加されます。チェック ボックスがオフになると <xref:Microsoft.Office.Tools.Word.Controls.Button> が削除されます。
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4. `ThisAddIn` クラスに次のメソッドを追加します。 ユーザーがリボンの **[リッチ テキスト コントロールの追加]** チェック ボックスをクリックしてこれがオンになると、このメソッドによって <xref:Microsoft.Office.Tools.Word.RichTextContentControl> がドキュメントの現在の選択項目に追加されます。チェック ボックスがオフになると <xref:Microsoft.Office.Tools.Word.RichTextContentControl> が削除されます。
+4. 次のメソッドを `ThisAddIn` クラスに追加します。 ユーザーがリボンの **[リッチ テキスト コントロールの追加]** チェック ボックスをクリックしてこれがオンになると、このメソッドによって <xref:Microsoft.Office.Tools.Word.RichTextContentControl> がドキュメントの現在の選択項目に追加されます。チェック ボックスがオフになると <xref:Microsoft.Office.Tools.Word.RichTextContentControl> が削除されます。
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -129,7 +131,7 @@ ms.locfileid: "71254173"
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>ドキュメントを保存するときにボタン コントロールを削除するには
 
-1. *ThisAddIn.cs*または*ThisAddIn*コードファイルで、次のメソッドをクラスに追加します `ThisAddIn` 。 このメソッドは、 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> イベントのイベント ハンドラーです。 保存されるドキュメントに <xref:Microsoft.Office.Tools.Word.Document> ホスト項目が関連付けられている場合、イベント ハンドラーはホスト項目を取得し、 <xref:Microsoft.Office.Tools.Word.Controls.Button> コントロールが存在する場合にそれを削除します。
+1. *ThisAddIn.cs* または *ThisAddIn* コードファイルで、次のメソッドをクラスに追加します `ThisAddIn` 。 このメソッドは、 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> イベントのイベント ハンドラーです。 保存されるドキュメントに <xref:Microsoft.Office.Tools.Word.Document> ホスト項目が関連付けられている場合、イベント ハンドラーはホスト項目を取得し、 <xref:Microsoft.Office.Tools.Word.Controls.Button> コントロールが存在する場合にそれを削除します。
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
@@ -143,7 +145,7 @@ ms.locfileid: "71254173"
 
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>ユーザーがリボンのチェックボックスをクリックしたときにコントロールを追加または削除するには
 
-1. *MyRibbon.cs*または*myribbon.vb*コードファイルで、生成された `addButtonCheckBox_Click` ハンドラーと `addRichTextCheckBox_Click` イベントハンドラーを次のコードに置き換えます。 このコードは、このチュートリアルの前半で `ToggleButtonOnDocument` クラスに追加した `ToggleRichTextControlOnDocument` および `ThisAddIn` メソッドを呼び出すように、これらのイベント ハンドラーを再定義します。
+1. *MyRibbon.cs* または *myribbon.vb* コードファイルで、生成された `addButtonCheckBox_Click` ハンドラーと `addRichTextCheckBox_Click` イベントハンドラーを次のコードに置き換えます。 このコードは、このチュートリアルの前半で `ToggleButtonOnDocument` クラスに追加した `ToggleRichTextControlOnDocument` および `ThisAddIn` メソッドを呼び出すように、これらのイベント ハンドラーを再定義します。
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -153,7 +155,7 @@ ms.locfileid: "71254173"
 
 ### <a name="to-test-the-solution"></a>ソリューションをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. アクティブなドキュメントで、 **enter** キーを何度か押して、ドキュメントに新しい空の段落を追加します。
 
@@ -175,14 +177,14 @@ ms.locfileid: "71254173"
 
      ボタンがドキュメントから削除されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  VSTO アドインのコントロールについて詳しくは、次の各トピックをご覧ください。
 
-- 実行時にドキュメントに他のさまざまな種類のコントロールを追加し、ドキュメントを再び開くときにコントロールを再作成する方法を示すサンプルについては、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「アドインの動的コントロールのサンプル」を参照してください。
+- 実行時にドキュメントに他のさまざまな種類のコントロールを追加し、ドキュメントを再び開くときにコントロールを再作成する方法を示すサンプルについては、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「Word Add-In ダイナミックコントロールのサンプル」を参照してください。
 
 - Excel 用の VSTO アドインを使用してワークシートにコントロールを追加する方法を示すチュートリアルについては、「 [チュートリアル: 実行時における vsto アドインプロジェクトのワークシートへのコントロールの追加](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Word ソリューション](../vsto/word-solutions.md)
 - [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Office ドキュメントでのダイナミックコントロールの永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)

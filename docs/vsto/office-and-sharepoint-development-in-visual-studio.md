@@ -1,5 +1,7 @@
 ---
 title: Visual Studio での Office および SharePoint 開発
+description: ユーザーが Office ストアからダウンロードする軽量なアプリまたはアドインを作成することによって Microsoft Office と SharePoint を拡張する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811033"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525342"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio での Office および SharePoint 開発
   ユーザーが [Office ストア](https://store.office.com/) または組織のカタログからダウンロードする軽量なアプリやアドインを作成するか、ユーザーがコンピューターにインストールする .NET Framework ベースのソリューションを作成することによって、Microsoft Office および SharePoint を拡張できます。
@@ -90,7 +92,7 @@ ms.locfileid: "90811033"
 
  **詳細情報**
 
-|終了|Read|
+|終了|読み取り|
 |--------|----------|
 |Office のさまざまな拡張方法を比較し、VSTO アドインと Office アドインのどちらを使用する必要があるかを判断する。|[Office アドイン、VSTO、および VBA のロードマップ](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |VSTO アドインを作成する。|[Visual Studio で作成した VSTO アドイン](create-vsto-add-ins-for-office-by-using-visual-studio.md)|

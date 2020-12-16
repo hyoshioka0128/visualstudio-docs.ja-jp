@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションでの WPF コントロールの使用
+description: Windows Presentation Foundation (WPF) コントロールを使用して、Visual Studio でユーザーインターフェイスをデザインする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189753"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526442"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office ソリューションでの WPF コントロールの使用
 
@@ -75,7 +77,7 @@ Office ソリューションの UI 要素に WPF コントロールを直接追�
 
 4. プロジェクトをビルドします。
 
-5. **ユーザーコントロール**項目 (つまり、Windows フォームユーザーコントロール) をプロジェクトに追加します。
+5. **ユーザーコントロール** 項目 (つまり、Windows フォームユーザーコントロール) をプロジェクトに追加します。
 
 6. Windows フォーム ユーザー コントロールのデザイナーを開きます。
 
@@ -92,7 +94,7 @@ Office ソリューションの UI 要素に WPF コントロールを直接追�
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>コントロールクラスを使用して WPF コントロールをホストする
 
-Visual Studio には Office ソリューションで Windows フォーム コントロールを使用できるようにする機能がありますが、WPF コントロールを対象とする同様の機能はありません。 たとえば、デザイン時に、 **ツールボックス**からコントロールをドラッグして、またはヘルパーメソッドを使用して実行時に、Windows フォームコントロールをドキュメントやワークシートに追加できます。 それに対し、これらの機能は WPF コントロールには使用できません。
+Visual Studio には Office ソリューションで Windows フォーム コントロールを使用できるようにする機能がありますが、WPF コントロールを対象とする同様の機能はありません。 たとえば、デザイン時に、 **ツールボックス** からコントロールをドラッグして、またはヘルパーメソッドを使用して実行時に、Windows フォームコントロールをドキュメントやワークシートに追加できます。 それに対し、これらの機能は WPF コントロールには使用できません。
 
 WPF コントロールでは、Windows フォーム コントロールまたはフォームと WPF コントロールとの間の統合レイヤーとして <xref:System.Windows.Forms.Integration.ElementHost> クラスを使用します。 デザイン時に WPF コントロールをソリューションに追加すると、<xref:System.Windows.Forms.Integration.ElementHost> オブジェクトが自動的に作成されます。
 
@@ -106,7 +108,7 @@ Windows フォーム コントロールおよびフォーム上での WPF のホ
 
 - [WPF と Windows フォームの相互運用](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Windows フォームコントロールと同等の WPF コントロール](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Windows フォーム コントロールおよび同等の WPF コントロール](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Visual Studio でデザイン時に WPF コントロールを Windows フォーム コントロールおよびフォームに追加する方法の詳細については、以下のトピックを参照してください。
 
@@ -116,7 +118,7 @@ Visual Studio でデザイン時に WPF コントロールを Windows フォー�
 
 - [チュートリアル: WPF コンテンツのスタイルを適用する](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
 - [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)

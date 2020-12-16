@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって文書内のテキストを書式設定する'
+description: Range オブジェクトを使用して、Microsoft Word 文書内のテキストの書式をプログラムで設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76af290b0e32126689dbe7b60f27889d9742ea7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931991529b160fedfe65a92e8243183792abf518
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519848"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525725"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>方法: プログラムによって文書内のテキストを書式設定する
   <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを使用することにより、Microsoft Office Word 文書のテキストの書式を設定できます。

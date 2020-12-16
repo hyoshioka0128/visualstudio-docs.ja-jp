@@ -1,5 +1,7 @@
 ---
 title: Office プライマリ相互運用機能アセンブリ
+description: プライマリ相互運用機能アセンブリ (PIA) を使用して、Office プロジェクトから Microsoft Office アプリケーションの機能にアクセスする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 190c5785be9d17ee0a25d16ad6342368b658f252
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830754"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525223"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリ
 
@@ -127,7 +129,7 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 
 詳細については、「 [方法: 自動バインドリダイレクトを有効または無効](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)にする」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel オブジェクトモデルの概要](../vsto/excel-object-model-overview.md)

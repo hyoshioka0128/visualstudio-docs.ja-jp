@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office ランタイムのインストールシナリオ
+description: Visual Studio 2010 Tools for Office runtime をインストールする方法について説明します。 この記事では、3つのインストールシナリオについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 484627c01a5385a6da4b2b0a41a966ac31d0e6d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584374"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526408"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office ランタイムのインストールシナリオ
   Visual Studio 2010 Tools for Office runtime は、次の3つの方法でインストールできます。
@@ -32,7 +34,7 @@ ms.locfileid: "91584374"
   インストールされるランタイム コンポーネントは、コンピューターの構成およびインストール シナリオによって異なります。
 
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>各インストールシナリオでインストールされるランタイムコンポーネント
- Visual Studio 2010 Tools for Office runtime には、Office ソリューションローダー、.NET Framework 3.5 用の Office 拡張機能、以降用の Office 拡張機能の3つのコンポーネントがあります。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ランタイムをインストールすると、常に Office ソリューション ローダーがインストールされます。 .NET Framework 用の Office 拡張機能のインストールは、コンピューターの構成およびインストール シナリオによって異なります。 最初にランタイムをインストールするときにどちらかの Office 拡張機能をインストールできない場合、後で特定の要件を満たすと、インストールされていない Office 拡張機能がランタイムによって自動的にインストールされます。 ランタイムのこの機能は、 *オンデマンドでのインストール*と呼ばれます。
+ Visual Studio 2010 Tools for Office runtime には、Office ソリューションローダー、.NET Framework 3.5 用の Office 拡張機能、以降用の Office 拡張機能の3つのコンポーネントがあります。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ランタイムをインストールすると、常に Office ソリューション ローダーがインストールされます。 .NET Framework 用の Office 拡張機能のインストールは、コンピューターの構成およびインストール シナリオによって異なります。 最初にランタイムをインストールするときにどちらかの Office 拡張機能をインストールできない場合、後で特定の要件を満たすと、インストールされていない Office 拡張機能がランタイムによって自動的にインストールされます。 ランタイムのこの機能は、 *オンデマンドでのインストール* と呼ばれます。
 
  各ランタイム インストールのシナリオで、既定でインストールされるランタイム コンポーネントを次の表に示します。 各シナリオの詳細については、後で説明します。
 

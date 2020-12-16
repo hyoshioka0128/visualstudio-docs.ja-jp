@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって文書からすべてのコメントを削除する'
+description: Visual Studio を使用して、Microsoft Word 文書からすべてのコメントをプログラムで削除する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee30cb7d4083adfff18261e3267dea1d8a96626f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: cdb2d7b61efc1e40bf08b6b38ea6564892a04a33
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584821"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526643"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>方法: プログラムによって文書からすべてのコメントを削除する
   `DeleteAllComments` メソッドを使用して、Microsoft Office Word 文書からすべてのコメントを削除します。

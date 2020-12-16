@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: VSTO アドインプロジェクトでの単純データバインディング'
+description: Microsoft Word 文書にコントロールを追加し、実行時にコントロールをデータにバインドする方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584912"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526149"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでの単純データバインディング
 
@@ -58,11 +60,11 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. Visual Basic または C# を使用して、 **Populating Documents from a Database**という名前の Word VSTO アドイン プロジェクトを作成します。
+1. Visual Basic または C# を使用して、 **Populating Documents from a Database** という名前の Word VSTO アドイン プロジェクトを作成します。
 
      詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio によって、 *ThisAddIn* ファイルまたは *ThisAddIn.cs* ファイルが開かれ、データベースプロジェクトの **ドキュメント** が **ソリューションエクスプローラー**に追加されます。
+     Visual Studio によって、 *ThisAddIn* ファイルまたは *ThisAddIn.cs* ファイルが開かれ、データベースプロジェクトの **ドキュメント** が **ソリューションエクスプローラー** に追加されます。
 
 2. プロジェクトがまたはを対象としている場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* アセンブリへの参照を追加します。 この参照は、このチュートリアルの後半でプログラムを使用して Windows フォーム コントロールをドキュメントに追加するのに必要です。
 
@@ -72,9 +74,9 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>型指定されたデータセットをプロジェクトに追加するには
 
-1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [   >  **他の Windows**  >  **データソース** の表示] をクリックして表示します。
 
-2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
+2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード** を開始します。
 
 3. **[データベース]** をクリックして、 **[次へ]** をクリックします。
 
@@ -88,7 +90,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 7. **[完了]** をクリックします。
 
-    *Adventureworksltdataset.xsd*ファイルが**ソリューションエクスプローラー**に追加されます。 このファイルでは、次の項目を定義します。
+    *Adventureworksltdataset.xsd* ファイルが **ソリューションエクスプローラー** に追加されます。 このファイルでは、次の項目を定義します。
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの **Customer (SalesLT)** テーブルの内容を表します。
 
@@ -145,7 +147,7 @@ Word を開くと、コンテンツ コントロールに `AdventureWorksLTDataS
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO アドインをテストするには
 
-1. **F5**キーを押します。
+1. **F5** キーを押します。
 
      `customerContentControl` という名前のコンテンツ コントロールが作成され、データが読み込まれます。 同時に、 `adventureWorksLTDataSet` という名前のデータセット オブジェクトと、 <xref:System.Windows.Forms.BindingSource> という名前の `customerBindingSource` がプロジェクトに追加されます。 <xref:Microsoft.Office.Tools.Word.ContentControl> が <xref:System.Windows.Forms.BindingSource>にバインドされ、さらにこれがデータセット オブジェクトにバインドされます。
 

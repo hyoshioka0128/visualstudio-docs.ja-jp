@@ -1,5 +1,7 @@
 ---
 title: '方法: 最近使用したブックファイルをプログラムによって一覧表示する'
+description: Visual Studio を使用して、最近使用した Microsoft Excel ブックファイルをプログラムで一覧表示する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e3d6b57251bb19cfb02849defb157c949f4ce35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbcad553ade6234d3a688c8f718a0dd6e6cda509
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585159"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525631"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>方法: 最近使用したブックファイルをプログラムによって一覧表示する
   プロパティは、 <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> 最近使用したファイルの Microsoft Office Excel リストに表示されるすべてのファイルの名前を含むコレクションを返します。 一覧の長さは、ユーザーが保持するように選択したファイルの数によって異なります。 結果は範囲で表示できます。

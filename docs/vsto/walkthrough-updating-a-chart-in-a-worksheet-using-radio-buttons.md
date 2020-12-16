@@ -1,5 +1,7 @@
 ---
 title: オプションボタンを使用してワークシートのグラフを更新する
+description: Microsoft Excel ワークシートでオプションボタンを使用して、オプションをすばやく切り替える方法をユーザーに提供する方法の基本について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238817"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526069"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル : オプション ボタンを使用してワークシートのグラフを更新する方法
   このチュートリアルでは、Microsoft Office の Excel ワークシートでオプションボタンを使用して、オプションをすばやく切り替える方法をユーザーに提供する方法の基本について説明します。 この場合、オプションによってグラフのスタイルが変更されます。
@@ -45,7 +47,7 @@ ms.locfileid: "88238817"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="add-a-chart-to-a-worksheet"></a>ワークシートへのグラフの追加
- 既存のブックをカスタマイズする Excel ブックプロジェクトを作成できます。 このチュートリアルでは、ブックにグラフを追加し、新しい Excel ソリューションでこのブックを使用します。 このチュートリアルのデータソースは、 **グラフのデータ**という名前のワークシートです。
+ 既存のブックをカスタマイズする Excel ブックプロジェクトを作成できます。 このチュートリアルでは、ブックにグラフを追加し、新しい Excel ソリューションでこのブックを使用します。 このチュートリアルのデータソースは、 **グラフのデータ** という名前のワークシートです。
 
 ### <a name="to-add-the-data"></a>データを追加するには
 
@@ -53,7 +55,7 @@ ms.locfileid: "88238817"
 
 2. [ **Sheet3** ] タブを右クリックし、ショートカットメニューの [ **名前の変更** ] をクリックします。
 
-3. シートの名前を **グラフのデータ**に変更します。
+3. シートの名前を **グラフのデータ** に変更します。
 
 4. 左上隅にセル A4 がある **グラフのデータ** に次のデータを追加し、右下隅を E8 します。
 
@@ -80,9 +82,9 @@ ms.locfileid: "88238817"
 
 6. [ **データソースの選択** ] ダイアログボックスで、[ **OK**] をクリックします。
 
-7. 右上隅がセル **E2**と揃うように、グラフの位置を変更します。
+7. 右上隅がセル **E2** と揃うように、グラフの位置を変更します。
 
-8. ファイルを C ドライブに保存し、 **ExcelChart.xlsx**という名前を付けます。
+8. ファイルを C ドライブに保存し、 **ExcelChart.xlsx** という名前を付けます。
 
 9. Excel を終了します。
 
@@ -99,7 +101,7 @@ ms.locfileid: "88238817"
 
 3. **[OK]** をクリックします。
 
-     新しい Excel ブックがデザイナーで開き、 **[My Excel Chart** ] プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     新しい Excel ブックがデザイナーで開き、 **[My Excel Chart** ] プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="set-properties-of-the-chart"></a>グラフのプロパティを設定する
  既存のブックを使用する新しい Excel ブックプロジェクトを作成すると、ブック内のすべての名前付き範囲、リストオブジェクト、およびグラフに対してホストコントロールが自動的に作成されます。 コントロールの名前を変更する <xref:Microsoft.Office.Tools.Excel.Chart> には、[ **プロパティ** ] ウィンドウを使用します。
@@ -120,7 +122,7 @@ ms.locfileid: "88238817"
 
 ### <a name="to-add-a-user-control"></a>ユーザー コントロールを追加するには
 
-1. **ソリューションエクスプローラー**で **[My Excel Chart** ] プロジェクトを選択します。
+1. **ソリューションエクスプローラー** で **[My Excel Chart** ] プロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -128,35 +130,35 @@ ms.locfileid: "88238817"
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>ユーザーコントロールにオプションボタンを追加するには
 
-1. ユーザーコントロールがデザイナーに表示されていない場合は、**ソリューションエクスプローラー**で [ **ChartOptions** ] をダブルクリックします。
+1. ユーザーコントロールがデザイナーに表示されていない場合は、**ソリューションエクスプローラー** で [ **ChartOptions** ] をダブルクリックします。
 
-2. **ツールボックス**の [**コモンコントロール**] タブから、**ラジオボタン**コントロールをユーザーコントロールにドラッグし、次のプロパティを変更します。
+2. **ツールボックス** の [**コモンコントロール**] タブから、**ラジオボタン** コントロールをユーザーコントロールにドラッグし、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|------------------|
    | **名前** | **columnChart** |
-   | **Text** | **縦棒グラフ** |
+   | **テキスト** | **縦棒グラフ** |
 
 3. 2番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|---------------|
    | **名前** | **barChart** |
-   | **Text** | **横棒グラフ** |
+   | **テキスト** | **横棒グラフ** |
 
 4. 3番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|----------------|
    | **名前** | **lineChart** |
-   | **Text** | **折れ線グラフ** |
+   | **テキスト** | **折れ線グラフ** |
 
 5. 4番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**areaBlockChart**|
-   |**Text**|**Area Block Chart**|
+   |**テキスト**|**Area Block Chart**|
 
    次に、オプションボタンがクリックされたときにグラフを更新するコードを記述します。
 
@@ -165,7 +167,7 @@ ms.locfileid: "88238817"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>ユーザー コントロールにイベントおよびプロパティを作成するには
 
-1. **ソリューションエクスプローラー**で、ユーザーコントロールを右クリックし、[コードの**表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、ユーザーコントロールを右クリックし、[コードの **表示**] をクリックします。
 
 2. `ChartOptions`イベントとプロパティを作成するコードをクラスに追加し `SelectionChanged` `Selection` ます。
 
@@ -199,28 +201,28 @@ ms.locfileid: "88238817"
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
 ## <a name="add-the-user-control-to-the-worksheet"></a>ワークシートにユーザーコントロールを追加する
- ソリューションをビルドすると、新しいユーザーコントロールが [ **ツールボックス**] に自動的に追加されます。 **ツールボックス**からワークシートにコントロールをドラッグできます。
+ ソリューションをビルドすると、新しいユーザーコントロールが [ **ツールボックス**] に自動的に追加されます。 **ツールボックス** からワークシートにコントロールをドラッグできます。
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>ワークシートにユーザーコントロールを追加するには
 
 1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-     **ChartOptions**ユーザーコントロールが**ツールボックス**に追加されます。
+     **ChartOptions** ユーザーコントロールが **ツールボックス** に追加されます。
 
-2. **ソリューションエクスプローラー**で、 **Sheet1**または**Sheet1.cs**を右クリックし、[デザイナーの**表示**] をクリックします。
+2. **ソリューションエクスプローラー** で、 **Sheet1** または **Sheet1.cs** を右クリックし、[デザイナーの **表示**] をクリックします。
 
 3. [**ツールボックス**] から [ **ChartOptions** ] コントロールをワークシートにドラッグします。
 
      という名前の新しいコントロール `my_Excel_Chart_ChartOptions1` がプロジェクトに追加されます。
 
-4. コントロールの名前を **ChartOptions1**に変更します。
+4. コントロールの名前を **ChartOptions1** に変更します。
 
 ## <a name="change-the-chart-type"></a>グラフの種類を変更する
  グラフの種類を変更するには、ユーザーコントロールで選択したオプションに従ってスタイルを設定するイベントハンドラーを作成します。
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>ワークシートに表示されるグラフの種類を変更するには
 
-1. 次のイベント ハンドラーを `Sheet1` クラスに追加します。
+1. `Sheet1` クラスに次のイベント ハンドラーを追加します。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
@@ -234,7 +236,7 @@ ms.locfileid: "88238817"
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. オプション ボタンを選択するには
 

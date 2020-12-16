@@ -1,5 +1,7 @@
 ---
 title: '[プロジェクトのアップグレード] ([オプション] ダイアログボックス)'
+description: '[プロジェクトのアップグレード] ページを使用して、Visual Studio が VSTO アドインプロジェクトを自動的に変更して、開発用コンピューター上の Office のバージョンを対象とするように指定します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 75bf6d5f7a3a6d45ba4313bbe70f8595f65c4632
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811007"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525049"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>[プロジェクトのアップグレード] ([オプション] ダイアログボックス)
   **[プロジェクトのアップグレード]** ページを使用して、Visual Studio が、開発用コンピューターにインストールされている Office のバージョンを対象とするように自動的に VSTO アドイン プロジェクトを変更するかどうかを指定します。
@@ -31,6 +33,6 @@ ms.locfileid: "90811007"
 ## <a name="uielement-list"></a>UIElement の一覧
  **インストールされている Office のバージョンに常にアップグレードする** の Office プロジェクトは、 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] または Microsoft アプリケーションのみを対象にできるため、このオプションはでは無効です [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 。 詳細については、「 [Office ソリューションのアップグレードと移行](../vsto/upgrading-and-migrating-office-solutions.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションのアップグレードと移行](../vsto/upgrading-and-migrating-office-solutions.md)
 - [方法: Office ソリューションをアップグレードする](/previous-versions/4bez6837(v=vs.140))

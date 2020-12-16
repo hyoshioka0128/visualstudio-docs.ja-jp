@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションのアップグレードと移行
+description: 以前のバージョンの Visual studio で作成された Offince プロジェクトがある場合は、現在のバージョンの Visual Studio で使用するようにプロジェクトをアップグレードする必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808790"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526606"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office ソリューションのアップグレードと移行
   旧バージョンの Visual Studio で作成された Microsoft Office プロジェクトがある場合、現在のバーションの Visual Studio で使用するには、そのプロジェクトをアップグレードする必要があります。 Microsoft Office プロジェクトをアップグレードするには、Microsoft Office 開発ツールが含まれているバージョンの Visual Studio でそれを開きます。 Microsoft Office 開発者ツールを含む Visual Studio のバージョンの詳細については、「 [Office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」を参照してください。
@@ -83,7 +85,7 @@ ms.locfileid: "90808790"
 
  ClickOnce を使用して VSTO アドインを配置する場合には、セットアップ プロジェクトまたは InstallShield Limited Edition プロジェクトを完全に削除できます。 ClickOnce を使用した VSTO アドインの配置の詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: Office ソリューションをアップグレードする](/previous-versions/4bez6837(v=vs.140))
 - [Office ソリューションを .NET Framework 4 以降に移行する](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [[プロジェクトのアップグレード] ([オプション] ダイアログボックス)](../vsto/project-upgrade-options-dialog-box.md)

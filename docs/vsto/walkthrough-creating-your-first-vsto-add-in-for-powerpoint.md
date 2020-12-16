@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成'
+description: Microsoft PowerPoint 用のアプリケーションレベルのアドインを作成します。 この機能は、どのプレゼンテーションが開いているかに関係なく、アプリケーション自体で使用できます。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584309"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524852"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成
   このチュートリアルでは Microsoft Office PowerPoint 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのプレゼンテーションが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -47,7 +49,7 @@ ms.locfileid: "91584309"
 
 - PowerPoint
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
@@ -76,14 +78,14 @@ ms.locfileid: "91584309"
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>新しい各スライドにテキスト ボックスを追加するには
 
-1. ThisAddIn コード ファイルで、次のコードを `ThisAddIn` クラスに追加します。 このコードでは、アプリケーションオブジェクトの [EApplication_Event](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) のイベントハンドラーを定義します。このイベントハンドラーは、 [アプリケーション](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) オブジェクトの新しいイベントハンドラーです。
+1. ThisAddIn コード ファイルで、次のコードを `ThisAddIn` クラスに追加します。 このコードでは、[アプリケーション](/previous-versions/office/developer/office-2010/ff764034(v=office.14))オブジェクトの[Microsoft.Office.Interop.PowerPoint.EApplication_Event. プレゼンテーション newslide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))イベントのイベントハンドラーを定義します。
 
     ユーザーが、アクティブなプレゼンテーションに新しいスライドを追加するとき、このイベント ハンドラーは、新しいスライドの先頭にテキスト ボックスを追加し、テキスト ボックスにテキストを追加します。
 
     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
 
-2. C# を使用する場合は、次のコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。 このコードは `Application_PresentationNewSlide` 、イベントハンドラーを [EApplication_Event の新しい](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) イベントに接続するために必要となります。
+2. C# を使用する場合は、次のコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。 このコードは `Application_PresentationNewSlide` 、イベントハンドラーを [Microsoft.Office.Interop.PowerPoint.EApplication_Event. プレゼンテーション newslide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) イベントに接続するために必要です。
 
     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
 
@@ -91,7 +93,7 @@ ms.locfileid: "91584309"
 
 - `Application` クラスの `ThisAddIn` フィールド。 この `Application` フィールドは、PowerPoint の現在のインスタンスを表す [アプリケーション](/previous-versions/office/developer/office-2010/ff764034(v=office.14)) オブジェクトを返します。
 
-- EApplication_Event のイベント `Sld` ハンドラーのイベントハンドラーの[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))パラメーターを指定します。このイベントは、 パラメーターは、 `Sld` 新しいスライドを表す [スライド](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) オブジェクトです。 詳細については、「 [PowerPoint ソリューション](../vsto/powerpoint-solutions.md)」を参照してください。
+- `Sld` [Microsoft.Office.Interop.PowerPoint.EApplication_Event. プレゼンテーション newslide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))イベントのイベントハンドラーのパラメーター。 パラメーターは、 `Sld` 新しいスライドを表す [スライド](/previous-versions/office/developer/office-2010/ff763417(v=office.14)) オブジェクトです。 詳細については、「 [PowerPoint ソリューション](../vsto/powerpoint-solutions.md)」を参照してください。
 
 ## <a name="test-the-project"></a>プロジェクトをテストする
  プロジェクトをビルドして実行するときに、プレゼンテーションに追加した新しいスライドに、テキスト ボックスが表示されることを確認します。
@@ -117,7 +119,7 @@ ms.locfileid: "91584309"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  これで PowerPoint 用の基本的な VSTO アドインが作成されました。VSTO アドインの開発方法の詳細について、以下のトピックを参照してください。
 
 - PowerPoint 用 VSTO アドインで実行できる一般的なプログラミング タスク。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。

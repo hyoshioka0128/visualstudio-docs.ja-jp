@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって既存のドキュメントを開く'
+description: Open メソッドを使用して、完全修飾パスとファイル名で指定された既存の Microsoft Word 文書を開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519900"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525560"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>方法: プログラムによって既存のドキュメントを開く
   メソッドは、 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 完全修飾パスとファイル名で指定された既存の Microsoft Office Word 文書を開きます。 このメソッドは、 <xref:Microsoft.Office.Interop.Word.Document> 開いているドキュメントを表すを返します。
@@ -42,7 +44,7 @@ ms.locfileid: "85519900"
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。
 
-- *NewDocument.doc*という名前のドキュメントは、C ドライブの*Test*という名前のディレクトリに存在する必要があります。
+- *NewDocument.doc* という名前のドキュメントは、C ドライブの *Test* という名前のディレクトリに存在する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [方法: プログラムによって新しいドキュメントを作成する](../vsto/how-to-programmatically-create-new-documents.md)

@@ -1,5 +1,7 @@
 ---
 title: '方法: ワークシート内の行をプログラムによってグループ化する'
+description: NamedRange コントロールまたはネイティブの Excel 範囲オブジェクトを使用して、Microsoft Excel で1つ以上の行をプログラムによってグループ化する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 759ba8c6e0796b25a87e8bf0b08795aed5bade05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 203ea7d17a02a224c290e5dd3c6070c06a1d26e4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537879"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525715"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>方法: ワークシート内の行をプログラムによってグループ化する
   1つ以上の行をグループ化できます。 ワークシートにグループを作成するには、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールまたはネイティブの Excel 範囲オブジェクトを使用します。

@@ -1,5 +1,7 @@
 ---
 title: '方法: Office 多言語ユーザーインターフェイスを対象にする'
+description: Visual Studio を使用して、プログラムで Microsoft Office 多言語ユーザーインターフェイスを対象にする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5217f2d6cf67eced00c0c84b9bacda94573c5a09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b6771b202515148b757e811fdfc63fc0d5052e9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537502"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526619"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>方法: Office 多言語ユーザーインターフェイスを対象にする
   多言語ユーザーインターフェイス (MUI) は、エンドユーザーがユーザーインターフェイス (UI) の言語を変更できるようにする Microsoft Office の機能です。 たとえば、英語の UI を使用するエンドユーザーは、UI の言語をスペイン語に変更できます。

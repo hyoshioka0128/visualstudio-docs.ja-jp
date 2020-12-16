@@ -1,5 +1,7 @@
 ---
 title: Office 開発のサンプル
+description: Microsoft Office 開発者ツールを使用して Office ソリューションを作成する方法を示す、Visual Studio のサンプルアプリケーションについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985724"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525161"
 ---
 # <a name="office-development-samples"></a>Office 開発のサンプル
   Visual Studio には、Microsoft Office 開発者ツールを使用して Office ソリューションを作成する方法を示すサンプル アプリケーションが含まれています。 これらのサンプルのコードでは、Office ソリューションのビルドに使用される構文、構造体、および手法を示します。
@@ -40,5 +42,5 @@ ms.locfileid: "72985724"
 |UI マネージャーのサンプル|VSTO アドインに機能拡張インターフェイスを実装することで Outlook のリボンのカスタマイズ、カスタム作業ウィンドウ、カスタム フォーム領域を作成する方法を示します。 リボン、作業ウィンドウ、フォーム領域の各インスタンスは、正しく相互に通信できます。|
 |VBA および VSTO の相互運用性サンプル|ブック内の Visual Basic for Applications (VBA) コードから Excel 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。<br /><br /> このサンプルは、オンラインでのみ使用できます。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)
