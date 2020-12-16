@@ -1,5 +1,7 @@
 ---
 title: Office ドキュメントでのダイナミックコントロールの永続化
+description: ソリューションにコードを追加して、ユーザーが閉じたドキュメントを再び開いたときに永続的な動的コントロールを再作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +20,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527527"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office ドキュメントでのダイナミックコントロールの永続化
 
 実行時に追加されたコントロールは、ドキュメントまたはブックを保存するとき、および閉じるときに永続化されません。 厳密な動作は、ホスト コントロールと Windows フォーム コントロールで違いがあります。 どちらの場合も、ソリューションにコードを追加すれば、ユーザーが同じドキュメントを再び開く時点でコントロールが再作成されるようにできます。
 
-実行時にドキュメントに追加するコントロールのことを、 *ダイナミック コントロール*といいます。 動的コントロールの詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
+実行時にドキュメントに追加するコントロールのことを、 *ダイナミック コントロール* といいます。 動的コントロールの詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 

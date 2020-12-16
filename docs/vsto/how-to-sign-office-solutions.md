@@ -1,5 +1,7 @@
 ---
 title: '方法: Office ソリューションに署名する'
+description: 証明書を証拠として使用して、Microsoft Office ソリューションに信頼を付与する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545757"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528114"
 ---
 # <a name="how-to-sign-office-solutions"></a>方法: Office ソリューションに署名する
   ソリューションに署名する場合は、証明書を証拠として使用して、ソリューションに信頼を付与することができます。 複数のソリューションに同じ証明書を使用することができ、すべてのソリューションは、追加のセキュリティポリシーの更新なしで信頼されます。
@@ -35,7 +37,7 @@ ms.locfileid: "85545757"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>証明書を使用して Office ソリューションに署名するには
 
-1. [**プロジェクト**] メニューの [ _SolutionName_の**プロパティ**] をクリックします。
+1. [**プロジェクト**] メニューの [ _SolutionName_ の **プロパティ**] をクリックします。
 
 2. **[署名]** タブをクリックします。
 

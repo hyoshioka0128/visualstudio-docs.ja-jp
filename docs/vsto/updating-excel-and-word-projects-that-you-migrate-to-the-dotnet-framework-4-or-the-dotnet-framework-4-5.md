@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 4.5 に移行した Excel または Word プロジェクトの更新
+description: 特定の機能を使用する Excel プロジェクトまたは Word プロジェクトがある場合は、ターゲットフレームワークが .NET Framework 4 以降に変更された場合は、コードを変更する必要があります。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584413"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528436"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>.NET Framework 4.5 に移行する Excel プロジェクトおよび Word プロジェクトを更新する
   次の機能を使用する Excel プロジェクトまたは Word プロジェクトのターゲット フレームワークを [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更する場合は、コードを変更する必要があります。
@@ -44,7 +46,7 @@ ms.locfileid: "91584413"
 
 ### <a name="to-remove-the-excellocale1033attribute"></a>ExcelLocale1033Attribute を削除するには
 
-1. Visual Studio でプロジェクトを開き、 **ソリューション エクスプローラー**を開きます。
+1. Visual Studio でプロジェクトを開き、 **ソリューション エクスプローラー** を開きます。
 
 2. **[プロパティ]** ノード (C# の場合) または **[マイ プロジェクト]** ノード (Visual Basic の場合) の下で、AssemblyInfo コード ファイルをダブルクリックしてコード エディターで開きます。
 
@@ -68,7 +70,7 @@ ms.locfileid: "91584413"
 
 1. Visual Studio でプロジェクトを開き、 **[ソリューション エクスプローラー]** を開きます。
 
-2. **ソリューションエクスプローラー**で、 *ThisAddin.cs* (C# の場合) または*ThisAddin* (Visual Basic の場合) のショートカットメニューを開き、[**コードの表示**] を選択します。
+2. **ソリューションエクスプローラー** で、 *ThisAddin.cs* (C# の場合) または *ThisAddin* (Visual Basic の場合) のショートカットメニューを開き、[**コードの表示**] を選択します。
 
 3. コード エディターの `VSTO generated code` 領域で、次のコード行を削除するか、コメント アウトします。
 

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 内での Office 機能の使用
+description: ドキュメントレベルのプロジェクトのドキュメントと関連付けられているアプリケーションを Visual Studio 内でホストして、ドキュメントを直接操作できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982345"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528401"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Visual Studio 内での Office 機能の使用
   ドキュメントレベルのプロジェクトを作成すると、ドキュメントと関連付けられているアプリケーションが Visual Studio 内でホストされるため、ドキュメントを直接デザインして操作できます。 Visual Studio で Microsoft Office アプリケーションを開いている場合は、通常、想定どおりに動作します。 ただし、アプリケーションの機能の中には、異なるものやアクセスできないものがあります。
@@ -35,7 +37,7 @@ ms.locfileid: "62982345"
 ## <a name="password-protection"></a>パスワード保護
  Word 文書や Microsoft Office Excel ブックを Microsoft Office、パスワードを知らない人が開けないように設定できます。 パスワード保護は Word と Excel では異なる方法で処理されるため、開発プロセスに影響を与える可能性があります。 詳細については、「 [Office ドキュメントのパスワード保護](../vsto/password-protection-on-office-documents.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ドキュメントレベルのソリューションにおけるドキュメントの保護](../vsto/document-protection-in-document-level-solutions.md)
 - [Information rights management とマネージコード拡張機能の概要](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Office ドキュメントのパスワード保護](../vsto/password-protection-on-office-documents.md)

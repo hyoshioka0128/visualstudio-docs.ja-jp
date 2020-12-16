@@ -1,5 +1,7 @@
 ---
 title: Visio オブジェクトモデルの概要
+description: Visio オブジェクトモデルを操作して Microsoft Visio 用の Office ソリューションを開発する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88695511d22e38262dc969d66e469441c9c3ac47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985481"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528377"
 ---
 # <a name="visio-object-model-overview"></a>Visio オブジェクトモデルの概要
   Visio オブジェクト モデルと対話することにより、Microsoft Office Visio 用の Office ソリューションを開発できます。 このオブジェクト モデルは、Visio のプライマリ相互運用機能アセンブリで提供されるクラスとインターフェイスで構成されています。それらは `Microsoft.Office.Interop.Visio` 名前空間の中で定義されています。
@@ -76,7 +78,7 @@ ms.locfileid: "72985481"
 
  詳細については、「 [office プライマリ相互運用機能](/previous-versions/office/office-12/ms247299(v=office.12)) アセンブリと [office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)のクラスとインターフェイスの概要」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)
 - [Visio 図面を操作する](../vsto/working-with-visio-documents.md)
 - [Visio 図形を操作する](../vsto/working-with-visio-shapes.md)

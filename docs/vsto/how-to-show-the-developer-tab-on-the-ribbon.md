@@ -1,5 +1,7 @@
 ---
 title: '方法: リボンに [開発] タブを表示する'
+description: Visual Studio を使用して、Microsoft Word 文書のリボンに [開発者] タブをプログラムで表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545848"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528140"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>方法: リボンに [開発] タブを表示する
   Office アプリケーションのリボンにある [ **開発者** ] タブにアクセスするには、既定では表示されないため、このタブを表示するように構成する必要があります。 たとえば、Word のドキュメント レベルのカスタマイズに <xref:Microsoft.Office.Tools.Word.GroupContentControl> を追加しようとする場合、このタブを表示する必要があります。
@@ -52,7 +54,7 @@ ms.locfileid: "85545848"
 
      ![Outlook 2013 Preview の [Options] (オプション) ボタン](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview の [Options] (オプション) ボタン")
 
-3. [ _ApplicationName_の**オプション**] ダイアログボックスで、[**リボンのカスタマイズ**] ボタンをクリックします。
+3. [ _ApplicationName_ の **オプション**] ダイアログボックスで、[**リボンのカスタマイズ**] ボタンをクリックします。
 
      次の図は、Excel 2010 の [ **オプション** ] ダイアログボックスと [ **リボンのカスタマイズ** ] ボタンを示しています。 このボタンの位置は、このトピックの上部付近の「対象」セクションに記載されている他のすべてのアプリケーションで同様です。
 

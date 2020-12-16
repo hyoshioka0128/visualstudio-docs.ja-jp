@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: Visual C# プロジェクトで VBA からコードを呼び出す'
+description: ブックの Visual Basic for Applications (VBA) コードから Microsoft Excel のドキュメントレベルのカスタマイズでメソッドを呼び出す方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297937"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527300"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>チュートリアル: Visual C# プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ブック内の Visual Basic for Applications (VBA) コードから Microsoft Office Excel 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `Sheet1` ホスト項目クラスにメソッドを追加する、ブックの VBA コードにメソッドを公開する、および、ブック内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -66,7 +68,7 @@ ms.locfileid: "92297937"
 
 1. Excel を起動します。
 
-2. **WorkbookWithVBA**という名前で、作業中のドキュメントを**Excel Macro-Enabled ブック ( \* .xlsm)** として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
+2. **WorkbookWithVBA** という名前で、作業中のドキュメントを **Excel Macro-Enabled ブック ( \* .xlsm)** として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
 
 3. リボンの **[開発]** タブをクリックします。
 
@@ -115,7 +117,7 @@ ms.locfileid: "92297937"
 
 9. **[完了]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで**WorkbookWithVBA**ブックを開き、**ソリューションエクスプローラー**に**CallingCodeFromVBA**プロジェクトを追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで **WorkbookWithVBA** ブックを開き、**ソリューションエクスプローラー** に **CallingCodeFromVBA** プロジェクトを追加します。
 
 ## <a name="trust-the-location-of-the-workbook"></a>ブックの場所を信頼する
  ソリューションのコードをブック内の VBA コードに公開する前に、実行するブック内の VBA を信頼する必要があります。 これを行うには、いくつかの方法があります。 このチュートリアルでは、ブックの場所を Excel の **セキュリティ センター** で信頼することにより、この作業を実行します。
@@ -146,14 +148,14 @@ ms.locfileid: "92297937"
 
 12. **[Excel のオプション]** ダイアログ ボックスで **[OK]** をクリックします。
 
-13. **Excel**を終了します。
+13. **Excel** を終了します。
 
 ## <a name="add-a-method-to-the-sheet1-class"></a>Sheet1 クラスにメソッドを追加する
  VBA プロジェクトのセットアップができたので、今度は VBA コードから呼び出すことのできる `Sheet1` ホスト項目クラスにパブリック メソッドを追加します。
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>Sheet1 クラスにメソッドを追加するには
 
-1. **ソリューション エクスプローラー**で **Sheet1.cs**を右クリックし、 **[コードの表示]** をクリックします。
+1. **ソリューション エクスプローラー** で **Sheet1.cs** を右クリックし、 **[コードの表示]** をクリックします。
 
      コード エディターで **Sheet1.cs** ファイルが開きます。
 
@@ -161,7 +163,7 @@ ms.locfileid: "92297937"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. `Sheet1` クラスに次のメソッドを追加します。 このメソッドは <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> メソッドをオーバーライドして、 `Sheet1` クラスの現在のインスタンスを返します。
+3. 次のメソッドを `Sheet1` クラスに追加します。 このメソッドは <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> メソッドをオーバーライドして、 `Sheet1` クラスの現在のインスタンスを返します。
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -191,15 +193,15 @@ ms.locfileid: "92297937"
 6. プロジェクトをビルドします。
 
 ## <a name="expose-the-method-to-vba-code"></a>メソッドを VBA コードに公開する
- `CreateVstoNamedRange` メソッドをブック内の VBA コードに公開するには、 **ホスト項目の** ReferenceAssemblyFromVbaProject `Sheet1` プロパティを **True**に設定します。
+ `CreateVstoNamedRange` メソッドをブック内の VBA コードに公開するには、 **ホスト項目の** ReferenceAssemblyFromVbaProject `Sheet1` プロパティを **True** に設定します。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>メソッドを VBA コードに公開するには
 
-1. **ソリューション エクスプローラー**で、 **Sheet1.cs**をダブルクリックします。
+1. **ソリューション エクスプローラー** で、 **Sheet1.cs** をダブルクリックします。
 
      デザイナーで **WorkbookWithVBA** ファイルが開き、Sheet1 が表示されます。
 
-2. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
+2. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True** に変更します。
 
 3. 表示されるメッセージで **[OK]** をクリックします。
 
@@ -213,7 +215,7 @@ ms.locfileid: "92297937"
 
 ### <a name="to-call-the-method-from-vba-code"></a>VBA コードからメソッドを呼び出すには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. **[開発者]** タブで、 **[コード]** グループの、 **[Visual Basic]** をクリックします。
 
@@ -233,9 +235,9 @@ ms.locfileid: "92297937"
     End Sub
     ```
 
-5. **F5**キーを押します。
+5. **F5** キーを押します。
 
-6. 開いたブックで **Sheet1** のセル **A1**をクリックします。 メッセージ ボックスが表示されることを確認します。
+6. 開いたブックで **Sheet1** のセル **A1** をクリックします。 メッセージ ボックスが表示されることを確認します。
 
 7. 変更を保存せずに Excel を終了します。
 

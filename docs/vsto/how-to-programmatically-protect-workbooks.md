@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってブックを保護する'
+description: ユーザーがワークシートを追加または削除できないように Microsoft Excel ブックを保護する方法、およびプログラムによってブックの保護を解除する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee7444c63c2d774e9b22ea612049f09429729c79
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b35b0fc234c3015275650ddb51e8ea3011c97a6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537632"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528286"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>方法: プログラムによってブックを保護する
   ユーザーがワークシートを追加または削除したり、プログラムでブックの保護を解除したりできないように、Microsoft Office Excel ブックを保護することができます。 必要に応じて、パスワードを指定したり、構造を保護するかどうか (ユーザーがシートを移動できないようにする) を指定したり、ブックの windows を保護するかどうかを指定したりすることができます。

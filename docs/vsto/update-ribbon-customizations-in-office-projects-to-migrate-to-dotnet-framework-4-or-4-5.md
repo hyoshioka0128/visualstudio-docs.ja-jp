@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 4.5 に移行されたリボンのカスタマイズを更新する
+description: ターゲットフレームワークが .NET Framework 4 以降に変更された場合に、プロジェクトコードを変更する必要があることについて説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a831bced793f13394a89d278a6be1cda959c775a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298599"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527939"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>.NET Framework 4.5 に移行されたリボンのカスタマイズを更新する
 
@@ -31,7 +33,7 @@ ms.locfileid: "92298599"
 ## <a name="update-the-generated-ribbon-code"></a>生成されたリボンコードを更新する
  プロジェクトのターゲット フレームワークを [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に変更する場合は、次の手順を実行して、リボン項目に対して生成されたコードを変更する必要があります。 更新する必要があるコード ファイルは、プログラミング言語の種類とプロジェクトの作成方法に応じて次のように異なります。
 
-- Visual Basic プロジェクト、またはで作成した Visual C# プロジェクトでは、 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] または [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] リボンの分離コードファイル (*ribbonitem*) のすべての手順を実行します。Designer.cs または *Ribbonitem*。デザイナー .vb)。 Visual Basic プロジェクトの分離コードファイルを表示するには、**ソリューションエクスプローラー**の [**すべてのファイルを表示**] ボタンをクリックします。
+- Visual Basic プロジェクト、またはで作成した Visual C# プロジェクトでは、 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] または [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] リボンの分離コードファイル (*ribbonitem*) のすべての手順を実行します。Designer.cs または *Ribbonitem*。デザイナー .vb)。 Visual Basic プロジェクトの分離コードファイルを表示するには、**ソリューションエクスプローラー** の [**すべてのファイルを表示**] ボタンをクリックします。
 
 - Visual Studio 2008 で作成してからにアップグレードした Visual C# プロジェクトでは [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 、リボンコードファイルの最初の2つの手順 (*ribbonitem*.Cs または *ribbonitem*.vb) を実行し、リボンの分離コードファイルで残りの手順を実行します。
 

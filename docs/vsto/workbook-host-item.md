@@ -1,5 +1,7 @@
 ---
 title: ブックホスト項目
+description: Workbook ホスト項目は、Microsoft Excel のプライマリ相互運用機能アセンブリからブックの種類を拡張する型であることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d3d5b7efadefd77be7ce25026c8f485ee0ef133
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255083"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528350"
 ---
 # <a name="workbook-host-item"></a>ブックホスト項目
   <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目は、Excel のプライマリ相互運用機能アセンブリの <xref:Microsoft.Office.Interop.Excel.Workbook> 型を拡張する型です。 <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目は <xref:Microsoft.Office.Interop.Excel.Workbook> オブジェクトと同じプロパティ、メソッド、イベントがすべて用意されているだけなく、追加の機能も用意されています。

@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: VSTO アドインプロジェクトでの複合データバインディング'
+description: Microsoft Excel ワークシートにコントロールを追加し、実行時にコントロールをデータにバインドする方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585042"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527091"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでの複合データバインディング
   VSTO アドイン プロジェクトでは、ホスト コントロールと Windows フォーム コントロールにデータをバインドできます。 このチュートリアルでは、Microsoft Office Excel ワークシートにコントロールを追加して、そのコントロールを実行時にデータにバインドする方法を示します。
@@ -53,20 +55,20 @@ ms.locfileid: "91585042"
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. Visual Basic または C# を使用して、 **Populating Worksheets from a Database**という名前の Excel VSTO アドイン プロジェクトを作成します。
+1. Visual Basic または C# を使用して、 **Populating Worksheets from a Database** という名前の Excel VSTO アドイン プロジェクトを作成します。
 
      詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio により、 `ThisAddIn.vb` ファイルまたは `ThisAddIn.cs` ファイルが開かれ、 **Populating Worksheets from a Database** プロジェクトが **ソリューション エクスプローラー**に追加されます。
+     Visual Studio により、 `ThisAddIn.vb` ファイルまたは `ThisAddIn.cs` ファイルが開かれ、 **Populating Worksheets from a Database** プロジェクトが **ソリューション エクスプローラー** に追加されます。
 
 ## <a name="create-a-data-source"></a>データ ソースを作成する
  **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>型指定されたデータセットをプロジェクトに追加するには
 
-1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [   >  **他の Windows**  >  **データソース** の表示] をクリックして表示します。
 
-2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
+2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード** を開始します。
 
 3. **[データベース]** をクリックして、 **[次へ]** をクリックします。
 
@@ -80,7 +82,7 @@ ms.locfileid: "91585042"
 
 7. **[完了]** をクリックします。
 
-    *Adventureworksltdataset.xsd*ファイルが**ソリューションエクスプローラー**に追加されます。 このファイルでは、次の項目を定義します。
+    *Adventureworksltdataset.xsd* ファイルが **ソリューションエクスプローラー** に追加されます。 このファイルでは、次の項目を定義します。
 
    - `AdventureWorksLTDataSet`という名前の型指定されたデータセット。 このデータセットは、AdventureWorksLT データベースの **Address (SalesLT)** テーブルの内容を表します。
 
@@ -125,7 +127,7 @@ ms.locfileid: "91585042"
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO アドインをテストするには
 
-- **F5**キーを押します。
+- **F5** キーを押します。
 
      <xref:Microsoft.Office.Tools.Excel.ListObject> という名前の `addressListObject` コントロールがワークシートに作成されます。 同時に、 `adventureWorksLTDataSet` という名前のデータセット オブジェクトと、 <xref:System.Windows.Forms.BindingSource> という名前の `addressBindingSource` がプロジェクトに追加されます。 <xref:Microsoft.Office.Tools.Excel.ListObject> が <xref:System.Windows.Forms.BindingSource>にバインドされ、さらにこれがデータセット オブジェクトにバインドされます。
 

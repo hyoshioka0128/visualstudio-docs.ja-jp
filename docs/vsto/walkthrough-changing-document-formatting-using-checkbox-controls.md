@@ -1,5 +1,7 @@
 ---
 title: CheckBox コントロールを使用してドキュメントの書式を変更する
+description: Microsoft Word のドキュメントレベルのカスタマイズで Windows フォームコントロールを使用して、テキストの書式設定を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328725"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527241"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したドキュメント書式の変更
   このチュートリアルでは、Microsoft Office Word のドキュメントレベルのカスタマイズで Windows フォームコントロールを使用して、テキストの書式設定を変更する方法について説明します。
@@ -45,16 +47,16 @@ ms.locfileid: "67328725"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] または [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  最初に、Word 文書のプロジェクトを作成します。
 
 ### <a name="create-a-new-project"></a>新しいプロジェクトを作成する
 
-1. Word 文書プロジェクトを作成し、word の **書式を設定**します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。
+1. Word 文書プロジェクトを作成し、word の **書式を設定** します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。
 
      詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio により、デザイナーで新しい Word 文書が開き、**ソリューションエクスプローラー**に**My Word の書式設定**プロジェクトが追加されます。
+     Visual Studio により、デザイナーで新しい Word 文書が開き、**ソリューションエクスプローラー** に **My Word の書式設定** プロジェクトが追加されます。
 
 ## <a name="add-text-and-controls-to-the-word-document"></a>Word 文書にテキストとコントロールを追加する
  このチュートリアルでは、3つのチェックボックスと、コントロール内のテキスト <xref:Microsoft.Office.Tools.Word.Bookmark> を Word 文書に追加します。 チェックボックスをオンにすると、テキストを書式設定するためのオプションがユーザーに表示されます。
@@ -63,32 +65,32 @@ ms.locfileid: "67328725"
 
 1. Visual Studio デザイナーで文書が開いていることを確認します。
 
-2. **ツールボックス**の [**コモンコントロール**] タブから、最初の <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> コントロールを文書にドラッグします。
+2. **ツールボックス** の [**コモンコントロール**] タブから、最初の <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> コントロールを文書にドラッグします。
 
 3. **[プロパティ]** ウィンドウで、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**Text**|**太字**|
+    |**テキスト**|**太字**|
 
-4. **Enter**キーを押して、最初のチェックボックスの下に挿入ポイントを移動します。
+4. **Enter** キーを押して、最初のチェックボックスの下に挿入ポイントを移動します。
 
 5. チェックボックスの下にあるドキュメントに2つ目のチェックボックスを追加 `ApplyBoldFont` し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**Text**|**斜体**|
+    |**テキスト**|**斜体**|
 
-6. **Enter**キーを押して、2番目のチェックボックスの下に挿入ポイントを移動します。
+6. **Enter** キーを押して、2番目のチェックボックスの下に挿入ポイントを移動します。
 
 7. チェックボックスの下にあるドキュメントに3つ目のチェックボックスを追加 `ApplyItalicFont` し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**applyUnderlineFont**|
-    |**Text**|**強調**|
+    |**テキスト**|**Underline**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>テキストとブックマークコントロールを追加する
 
@@ -96,13 +98,13 @@ ms.locfileid: "67328725"
 
     **このテキストの書式を変更するには、チェックボックスをオンにします。**
 
-2. **ツールボックス**の [ **Word コントロール**] タブから、 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを文書にドラッグします。
+2. **ツールボックス** の [ **Word コントロール**] タブから、 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを文書にドラッグします。
 
     [ **ブックマークコントロールの追加** ] ダイアログボックスが表示されます。
 
 3. ドキュメントに追加したテキストを選択し、[ **OK]** をクリックします。
 
-    <xref:Microsoft.Office.Tools.Word.Bookmark> **Bookmark1**という名前のコントロールが、ドキュメント内の選択したテキストに追加されます。
+    <xref:Microsoft.Office.Tools.Word.Bookmark> **Bookmark1** という名前のコントロールが、ドキュメント内の選択したテキストに追加されます。
 
 4. [ **プロパティ** ] ウィンドウで、 **(Name)** プロパティの値を fonttext に変更し **ます。**
 
@@ -113,7 +115,7 @@ ms.locfileid: "67328725"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>チェックボックスをオンにしたときの書式設定の変更
 
-1. `ThisDocument`**ソリューションエクスプローラー**を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. `ThisDocument`**ソリューションエクスプローラー** を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. C# の場合のみ、次の定数を **ThisDocument** クラスに追加します。
 
@@ -143,7 +145,7 @@ ms.locfileid: "67328725"
 
 ### <a name="test-your-document"></a>ドキュメントをテストする
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. チェック ボックスをオンまたはオフにします。
 

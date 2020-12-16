@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの省略可能なパラメーター
+description: 省略可能なパラメーターに値を渡す必要がない方法について説明します。これは、不足している各パラメーターに対して既定値が自動的に使用されるためです。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7567f43dfa79e6a1e5d92b9ecddbf7918a6edef3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841997"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527578"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office ソリューションの省略可能なパラメーター
   Microsoft Office アプリケーションのオブジェクト モデルに含まれるメソッドの多くは、省略可能なパラメーターを受け取ります。 Visual Studio で Visual Basic を使用して Office ソリューションを開発する場合は、省略可能なパラメーターに値を渡す必要はありません。省略したパラメーターに対しては自動的に既定値が使用されます。 ほとんどの場合は、Visual C# プロジェクトでも省略可能なパラメーターを省略できます。 ただし、ドキュメントレベルの Word プロジェクトでは、クラスの省略可能な **ref** パラメーターを省略することはできません `ThisDocument` 。
@@ -33,7 +35,7 @@ ms.locfileid: "90841997"
  Visual C# と Visual Basic のプロジェクトで省略可能なパラメーターを使用する方法の詳細については、「 [名前付き引数と省略可能な引数」 &#40;C&#35; プログラミングガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) および [省略可能なパラメーター ](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)&#40;Visual Basic&#41;」を参照してください。
 
 > [!NOTE]
-> 旧バージョンの Visual Studio では、Visual C# プロジェクトのすべての省略可能なパラメーターに値を渡す必要があります。 便宜上、これらのプロジェクトには `missing` というグローバル変数が含まれています。パラメーターの既定値を使用する場合に、このグローバル変数を省略可能なパラメーターに渡すことができます。 Visual Studio の Office 用 visual C# プロジェクトにも変数が含まれてい `missing` ますが、通常、で office ソリューションを開発するときは、この変数を使用する必要はありません [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 。ただし、 **ref** `ThisDocument` Word のドキュメントレベルのプロジェクトのクラスでオプションの ref パラメーターを指定してメソッドを呼び出す場合を除きます。
+> 旧バージョンの Visual Studio では、Visual C# プロジェクトのすべての省略可能なパラメーターに値を渡す必要があります。 便宜上、これらのプロジェクトには `missing` というグローバル変数が含まれています。パラメーターの既定値を使用する場合に、このグローバル変数を省略可能なパラメーターに渡すことができます。 Visual Studio の Office 用 visual C# プロジェクトにも変数が含まれてい `missing` ますが、通常、で office ソリューションを開発するときは、この変数を使用する必要はありません [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 。ただし、  `ThisDocument` Word のドキュメントレベルのプロジェクトのクラスでオプションの ref パラメーターを指定してメソッドを呼び出す場合を除きます。
 
 ## <a name="example-in-excel"></a>Excel の例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> メソッドには、多くの省略可能なパラメーターがあります。 次のコード例に示すように、一部のパラメーターの値を指定し、他のパラメーターには既定値を使用することができます。 この例では、`Sheet1` というワークシート クラスを持つドキュメント レベルのプロジェクトが必要です。
@@ -48,7 +50,7 @@ ms.locfileid: "90841997"
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
 
 ## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Word の Visual C# ドキュメントレベルのプロジェクトで、ThisDocument クラスのメソッドの省略可能なパラメーターを使用する
- Word オブジェクトモデルには、値を受け入れるオプションの **ref** パラメーターを持つ多くのメソッドが含まれてい <xref:System.Object> ます。 ただし、 **ref** `ThisDocument` Word の Visual C# ドキュメントレベルのプロジェクトでは、生成されたクラスのメソッドの ref パラメーター (省略可能) を省略することはできません。 Visual C# では、クラスではなく、インターフェイスのメソッドに対してのみ省略可能な **ref** パラメーターを省略できます。 たとえば、次のコード例はコンパイルされません。これは、クラスのメソッドの省略可能な **ref** パラメーターを省略できないため <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` です。
+ Word オブジェクトモデルには、値を受け入れるオプションの **ref** パラメーターを持つ多くのメソッドが含まれてい <xref:System.Object> ます。 ただし、  `ThisDocument` Word の Visual C# ドキュメントレベルのプロジェクトでは、生成されたクラスのメソッドの ref パラメーター (省略可能) を省略することはできません。 Visual C# では、クラスではなく、インターフェイスのメソッドに対してのみ省略可能な **ref** パラメーターを省略できます。 たとえば、次のコード例はコンパイルされません。これは、クラスのメソッドの省略可能な **ref** パラメーターを省略できないため <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` です。
 
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
 
@@ -68,6 +70,6 @@ ms.locfileid: "90841997"
 
   値と参照型のパラメーターの詳細については、「 [引数を値で渡す」と「参照渡し &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic の場合)」と「 [&#40;パラメーターを渡す ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)
 - [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)

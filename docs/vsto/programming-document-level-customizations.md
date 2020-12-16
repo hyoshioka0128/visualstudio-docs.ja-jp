@@ -1,5 +1,7 @@
 ---
 title: プログラムドキュメントレベルのカスタマイズ
+description: ドキュメントレベルのカスタマイズを使用して Microsoft Word または Excel を拡張し、さまざまなタスクを実行できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58dd8e1803fc0bd06f5c2295b29e9586e1f8eb68
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254019"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527519"
 ---
 # <a name="program-document-level-customizations"></a>プログラムドキュメントレベルのカスタマイズ
   ドキュメント レベルのカスタマイズを使用して、Microsoft Office Word または Microsoft Office Excel を拡張する場合に、次のタスクを実行できます。
@@ -153,21 +155,21 @@ Globals.ThisDocument.Save();
 ## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>ドキュメントレベルのカスタマイズでネイティブ Office オブジェクトから拡張オブジェクトを取得する
  Office イベントの多くのイベント ハンドラーでは、イベントが発生するワークブック、ワークシート、またはドキュメントを表すネイティブの Office オブジェクトを受け取ります。 場合によっては、いくつかのコードはドキュメント レベルのカスタマイズでワークブックやドキュメントによってイベントが発生した場合のみ実行します。 たとえば、Excel のドキュメント レベルのカスタマイズでは、カスタマイズされたワークブック内でワークシートを 1 つアクティブ化したときに一部のコードを実行し、同時に開いている他のワークブックでワークシートをアクティブ化したときには実行しないようにします。
 
- ネイティブの Office オブジェクトがある場合は、そのオブジェクトがドキュメント レベルのカスタマイズで *ホスト項目* または *ホスト コントロール* に拡張されているかどうかをテストできます。 ホスト項目とホスト コントロールは、Word または Excel オブジェクト モデルにネイティブで存在するオブジェクト ( [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ネイティブの Office オブジェクト *) に機能を追加する*が提供する種類のインスタンスです。 総称して、ホスト項目とホスト コントロールは *拡張オブジェクト*とも呼ばれます。 ホスト項目とホストコントロールの詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
+ ネイティブの Office オブジェクトがある場合は、そのオブジェクトがドキュメント レベルのカスタマイズで *ホスト項目* または *ホスト コントロール* に拡張されているかどうかをテストできます。 ホスト項目とホスト コントロールは、Word または Excel オブジェクト モデルにネイティブで存在するオブジェクト ( [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ネイティブの Office オブジェクト *) に機能を追加する* が提供する種類のインスタンスです。 総称して、ホスト項目とホスト コントロールは *拡張オブジェクト* とも呼ばれます。 ホスト項目とホストコントロールの詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>Getvstoobject メソッドメソッドと HasVstoObject メソッドについて
  ネイティブの Office オブジェクトをテストするには、プロジェクト内で `HasVstoObject` メソッドと `GetVstoObject` メソッドを使用します。
 
 - カスタマイズでネイティブの Office オブジェクトに拡張オブジェクトがあるかどうかを判断するには、`HasVstoObject` メソッドを使用します。 このメソッドは、ネイティブの Office オブジェクトに拡張オブジェクトがある場合は **true** を返し、ない場合は **false** を返します。
 
-- ネイティブの Office オブジェクトに対する拡張オブジェクトを取得する場合は、`GetVstoObject` メソッドを使用します。 このメソッドは、指定したネイティブの Office オブジェクトに拡張オブジェクトがあれば、 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>、または <xref:Microsoft.Office.Tools.Word.Document> オブジェクトを返します。 それ以外の場合は `GetVstoObject` **null**を返します。 たとえば、`GetVstoObject` メソッドは、指定した <xref:Microsoft.Office.Interop.Word.Document> が Word ドキュメント プロジェクトのドキュメントで基礎となるオブジェクトの場合、<xref:Microsoft.Office.Tools.Word.Document> を返します。
+- ネイティブの Office オブジェクトに対する拡張オブジェクトを取得する場合は、`GetVstoObject` メソッドを使用します。 このメソッドは、指定したネイティブの Office オブジェクトに拡張オブジェクトがあれば、 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>、または <xref:Microsoft.Office.Tools.Word.Document> オブジェクトを返します。 それ以外の場合は `GetVstoObject` **null** を返します。 たとえば、`GetVstoObject` メソッドは、指定した <xref:Microsoft.Office.Interop.Word.Document> が Word ドキュメント プロジェクトのドキュメントで基礎となるオブジェクトの場合、<xref:Microsoft.Office.Tools.Word.Document> を返します。
 
   ドキュメントレベルのプロジェクトでは、メソッドを使用して、 `GetVstoObject` 新しい <xref:Microsoft.Office.Tools.Excel.Workbook> 、 <xref:Microsoft.Office.Tools.Excel.Worksheet> 、または <xref:Microsoft.Office.Tools.Word.Document> ホスト項目を実行時に作成することはできません。 このメソッドは、デザイン時にプロジェクトで生成される既存のホスト項目へのアクセスにのみ使用できます。 実行時に新しいホスト項目を作成する場合は、VSTO アドインプロジェクトを開発する必要があります。 詳細については、「 [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) 」と「実行時の [VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Getvstoobject メソッドメソッドと HasVstoObject メソッドを使用する
  `HasVstoObject`メソッドとメソッドを呼び出すに `GetVstoObject` は、 `Globals.Factory.GetVstoObject` メソッドまたはメソッドを使用 `Globals.Factory.HasVstoObject` し、テストするネイティブの Word または Excel オブジェクト (やなど) を渡し <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Excel.Worksheet> ます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)
 - [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)
 - [ServerDocument クラスを使用してサーバー上のドキュメントを管理する](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

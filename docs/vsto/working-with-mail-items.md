@@ -1,5 +1,7 @@
 ---
 title: メールアイテムの操作
+description: この MailItem クラスには、電子メールメッセージを使用してタスクを実行するために使用するメソッドとプロパティが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce91f9773bf4fc212a47bf64d76c8f1131457c38
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815434"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526889"
 ---
 # <a name="work-with-mail-items"></a>メールアイテムの操作
   クラスには、 <xref:Microsoft.Office.Interop.Outlook.MailItem> 電子メールメッセージを使用してタスクを実行するために使用するメソッドとプロパティが含まれています。
@@ -36,7 +38,7 @@ ms.locfileid: "62815434"
 
  Outlook のタスクと Outlook オブジェクトモデルの詳細については、「 [outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [連絡先アイテムの操作](../vsto/working-with-contact-items.md)
 - [フォルダーの操作](../vsto/working-with-folders.md)
 - [予定表アイテムの操作](../vsto/working-with-calendar-items.md)

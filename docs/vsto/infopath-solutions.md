@@ -1,5 +1,7 @@
 ---
 title: InfoPath ソリューション
+description: Visual Studio を使用して、Microsoft InfoPath 2013 および InfoPath 2010 用の VSTO アドインを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3223b5c8211719ad04b2ea7af8079932f6631e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8d5e26614c7f06c803093cd7e19b7e9842b397fb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808803"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527740"
 ---
 # <a name="infopath-solutions"></a>InfoPath ソリューション
   Visual Studio には、Microsoft Office InfoPath 2013 および InfoPath 2010 の VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 InfoPath は、Office 2016 では使用できません。
@@ -55,7 +57,7 @@ ms.locfileid: "90808803"
 
  InfoPath およびその他の Microsoft Office アプリケーションの UI をカスタマイズする方法の詳細については、「 [OFFICE ui のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Microsoft Office の InfoPath プライマリ相互運用機能アセンブリについて](/office/client-developer/infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly)
 - [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

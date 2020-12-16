@@ -1,5 +1,7 @@
 ---
 title: '方法: ListObject コントロールのサイズを変更する'
+description: Visual Studio を使用して、プログラムによって Microsoft Excel ブック内の ListObject コントロールのサイズを変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c401f3938679c72cee3a07c4bff79a5777fcbc1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545835"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528537"
 ---
 # <a name="how-to-resize-listobject-controls"></a>方法: ListObject コントロールのサイズを変更する
   <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールのサイズは Microsoft Office Excel ブックにコントロールを追加するときに設定しますが、後でサイズを変更することもできます。 たとえば、2 列のリストを 3 列のリストに変更できます。
@@ -42,7 +44,7 @@ ms.locfileid: "85545835"
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>[リストのサイズ変更] ダイアログ ボックスを使用してリストのサイズを変更するには
 
-1. テーブル内の任意の場所をクリックし  <xref:Microsoft.Office.Tools.Excel.ListObject> ます。 リボンの [**テーブルツール**の  >  **デザイン**] タブが表示されます。
+1. テーブル内の任意の場所をクリックし  <xref:Microsoft.Office.Tools.Excel.ListObject> ます。 リボンの [**テーブルツール** の  >  **デザイン**] タブが表示されます。
 
 2. [プロパティ] セクションで、[ **テーブルのサイズ変更**] をクリックします。
 
@@ -62,7 +64,7 @@ ms.locfileid: "85545835"
      [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
 
-2. リストのサイズをセル **A1** から **C5**までに変更します。
+2. リストのサイズをセル **A1** から **C5** までに変更します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
@@ -77,7 +79,7 @@ ms.locfileid: "85545835"
      [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
      [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
 
-2. リストのサイズをセル **A1** から **C5**までに変更します。
+2. リストのサイズをセル **A1** から **C5** までに変更します。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]

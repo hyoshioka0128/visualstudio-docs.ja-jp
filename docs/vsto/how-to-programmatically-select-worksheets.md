@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってワークシートを選択する'
+description: Visual Studio を使用して、ワークシートホスト項目または Excel ブックの sheets コレクションを使用して、プログラムによって Microsoft Excel ワークシートを選択します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ddef833feeb4e59f5e9e9b2c95a2170ee3c2530
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547005"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528544"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>方法: プログラムによってワークシートを選択する
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> メソッドは指定されたオブジェクトを選択します。これにより、ユーザーの選択が新しいオブジェクトに移動します。 ユーザーの選択を変更せずにフォーカスをオブジェクトに移動する場合は、<xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> メソッドを使用します。
@@ -28,7 +30,7 @@ ms.locfileid: "85547005"
  VSTO アドインで既存のワークシートを選択する場合、またはワークシートがドキュメントレベルのカスタマイズで実行時に作成された場合は、excel ブックの Excel コレクションを使用してアクセスする必要があります <xref:Microsoft.Office.Interop.Excel.Sheets> 。それ以外の場合は、 <xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目に直接アクセスできます。
 
 ## <a name="use-the-worksheet-host-item"></a>ワークシートのホスト項目を使用する
- ドキュメントレベルのカスタマイズで、 *Sheet1* または *Sheet1.cs*に次のコードを追加します。
+ ドキュメントレベルのカスタマイズで、 *Sheet1* または *Sheet1.cs* に次のコードを追加します。
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>ホスト項目を使用してブック内の最初のワークシートを選択するには
 

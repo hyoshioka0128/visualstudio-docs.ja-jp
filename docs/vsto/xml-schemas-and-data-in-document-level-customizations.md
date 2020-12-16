@@ -1,5 +1,7 @@
 ---
 title: ドキュメントレベルのカスタマイズにおける XML スキーマとデータ
+description: Microsoft Excel および Word には、スキーマをドキュメントにマップする機能が用意されています。これにより、ドキュメントへの XML データのインポートとエクスポートを簡単に行うことができます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57fad7982f762c4837399e12552cd109c9a9086c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841840"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527862"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>ドキュメントレベルのカスタマイズにおける XML スキーマとデータ
   **重要** このトピックに記載されている Microsoft Word に関する情報は、microsoft word のカスタム XML に関連する特定の機能の実装が microsoft によって削除されたときに、マイクロソフトが2010年1月より前にマイクロソフトによってライセンスされた Microsoft Word 製品米国の特典と使用についてのみ提供されます。 Microsoft Word に関するこの情報は、マイクロソフトが2010年1月10日以降にライセンスを取得した microsoft Word 製品を使用しているか、microsoft Word 製品で実行されているプログラムを開発している個人または米国組織によって読み取られたり使用されたりすることはできません。これらの製品は、その日より前にライセンスされている製品と同じように動作しないか、米国の外部で使用するために購入およびライセンス供与されます。
@@ -40,12 +42,12 @@ ms.locfileid: "90841840"
 
  主に次の2つのオブジェクトがあります。
 
-- XML スキーマ (XSD ファイル)。 ブック内のすべてのスキーマに対して、Visual Studio によってスキーマがプロジェクトに追加されます。 これは、 **ソリューションエクスプローラー**に XSD 拡張子を持つプロジェクト項目として表示されます。
+- XML スキーマ (XSD ファイル)。 ブック内のすべてのスキーマに対して、Visual Studio によってスキーマがプロジェクトに追加されます。 これは、 **ソリューションエクスプローラー** に XSD 拡張子を持つプロジェクト項目として表示されます。
 
-- 型指定された <xref:System.Data.DataSet> クラス。 このクラスは、スキーマに基づいて作成されます。 このデータセットクラスは **クラスビュー**に表示されます。
+- 型指定された <xref:System.Data.DataSet> クラス。 このクラスは、スキーマに基づいて作成されます。 このデータセットクラスは **クラスビュー** に表示されます。
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>スキーマ要素が Excel ワークシートにマップされるときに作成されるオブジェクト
- **XML ソース**の作業ウィンドウからワークシートにスキーマ要素をマップすると、Visual Studio によって複数のオブジェクトが自動的に作成され、プロジェクトに追加されます。
+ **XML ソース** の作業ウィンドウからワークシートにスキーマ要素をマップすると、Visual Studio によって複数のオブジェクトが自動的に作成され、プロジェクトに追加されます。
 
 - コントロール ブック内のマップされたオブジェクトごとに、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> コントロール (非繰り返しスキーマ要素用) または <xref:Microsoft.Office.Tools.Excel.ListObject> コントロール (スキーマ要素の繰り返し用) がプログラミングモデルで作成されます。 コントロールを削除できるのは、 <xref:Microsoft.Office.Tools.Excel.ListObject> マッピングとマップされたオブジェクトをブックから削除した場合だけです。 コントロールの詳細については、「 [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)」を参照してください。
 
@@ -79,7 +81,7 @@ ms.locfileid: "90841840"
  [!code-vb[Trin_VstcoreDataWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataWordVB/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstcoreDataWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataWordCS/ThisDocument.cs#1)]
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [方法: Visual Studio 内で Word 文書にスキーマを割り当てる](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [方法: Visual Studio 内のワークシートにスキーマをマップする](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)

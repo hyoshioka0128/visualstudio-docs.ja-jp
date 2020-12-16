@@ -1,5 +1,7 @@
 ---
 title: Office Word の [キーボード] ([オプション] ダイアログボックス-[設定])
+description: '[動的キーボードスキーム] を選択して、ドキュメントにフォーカスがあるときに Microsoft Word がショートカットキーコマンドを受け取るようにする方法について説明します。'
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584504"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528449"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office Word のキーボードの設定、[オプション] ダイアログボックス
   Microsoft Office Word と Visual Studio の両方で、ショートカットキーが処理されます。 Word と Visual Studio では、同じショートカットキーの組み合わせを使用して、さまざまなコマンドを実行できます。 Word が Visual Studio のドキュメントレベルのプロジェクトで開かれている場合、一度に1つのアプリケーションだけがショートカットキーコマンドを受け取ります。 既定では、Visual Studio はすべてのショートカットキーコマンドを受け取りますが、[ **動的キーボードスキーム**] を選択して、ドキュメントにフォーカスがあるときに Word を受け取るようにすることができます。

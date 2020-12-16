@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 初めての Word 用 VSTO アドインの作成'
+description: Microsoft Word 用のアプリケーションレベルのアドインを作成します。 この機能は、どのドキュメントが開いているかに関係なく、アプリケーション自体で使用できます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841416"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527868"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>チュートリアル: 初めての Word 用 VSTO アドインの作成
   この入門チュートリアルでは、Microsoft Office Word 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのドキュメントが開いているかにかかわらず、アプリケーション自体に対して使用できます。
@@ -46,7 +48,7 @@ ms.locfileid: "90841416"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 ### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Visual Studio で新しい Word VSTO アドイン プロジェクトを作成するには
 
@@ -64,7 +66,7 @@ ms.locfileid: "90841416"
 
 7. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstwordaddin**プロジェクトが作成され、ThisAddIn コードファイルがエディターで開かれます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstwordaddin** プロジェクトが作成され、ThisAddIn コードファイルがエディターで開かれます。
 
 ## <a name="write-code-to-add-text-to-the-saved-document"></a>保存されたドキュメントにテキストを追加するコードを記述する
  次に、ThisAddIn コード ファイルにコードを追加します。 この新しいコードでは、Word のオブジェクト モデルを使用して、保存する各ドキュメントに定型のテキストを追加します。 ThisAddIn コード ファイルには、次の生成されたコードが既定で含まれています。
@@ -118,7 +120,7 @@ ms.locfileid: "90841416"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  これで Word 用の基本的な VSTO アドインが作成されました。VSTO アドインの開発方法の詳細について、以下のトピックを参照してください。
 
 - VSTO アドインで実行できる一般的なプログラミングタスク: [プログラム Vsto アドイン](../vsto/programming-vsto-add-ins.md)。
@@ -133,7 +135,7 @@ ms.locfileid: "90841416"
 
 - Word 用の VSTO アドインの配置: [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word ソリューション](../vsto/word-solutions.md)
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)

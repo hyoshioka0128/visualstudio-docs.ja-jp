@@ -1,5 +1,7 @@
 ---
 title: セキュリティで保護された Office ソリューション
+description: Office ソリューションのセキュリティモデルには、Visual Studio Tools for Office ランタイムや ClickOnce など、いくつかのテクノロジが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978600"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528488"
 ---
 # <a name="secure-office-solutions"></a>セキュリティで保護された Office ソリューション
   Office ソリューションのセキュリティモデルには、、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 、Microsoft Office のセキュリティセンター、および Internet Explorer の制限付きサイトゾーンという、いくつかのテクノロジが含まれています。 次のセクションでは、さまざまなセキュリティ機能のしくみについて説明します:
@@ -62,16 +64,16 @@ ms.locfileid: "62978600"
 ### <a name="document-level-solutions"></a>ドキュメントレベルのソリューション
  次の種類のプロジェクトを開発する場合は、Microsoft Office アプリケーションの信頼できる場所の一覧にドキュメントの完全修飾パスを追加する必要があります。
 
-- * \\ \Servername\sharename*などのネットワークファイル共有上にあるドキュメントレベルのソリューション。
+- *\\ \Servername\sharename* などのネットワークファイル共有上にあるドキュメントレベルのソリューション。
 
-- *.Doc*または *.docm*ファイルを使用する Word のドキュメントレベルのソリューション。
+- *.Doc* または *.docm* ファイルを使用する Word のドキュメントレベルのソリューション。
 
   ドキュメントの場所を信頼できる場所の一覧に追加するときにサブディレクトリを含めるか、デバッグ用のフォルダーとビルド用のフォルダーそれ自体を含めます。 詳細については、Microsoft Office オンラインヘルプの記事「 [ファイルの信頼できる場所を作成、削除、または変更](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)する」を参照してください。
 
 ### <a name="temporary-certificates"></a>一時的な証明書
  Visual Studio では、既存の署名証明書がない場合、一時的な証明書が作成されます。  一時的な証明書は開発時のみ使用し、配置には正式な証明書を購入する必要があります。
 
- 一時的な証明書は、Office プロジェクトを最初にビルドした後に生成されます。 次に **F5**キーを押したときに、プロジェクトは再構築されます。これは、証明書が追加されたときにプロジェクトが変更済みとしてマークされているためです。
+ 一時的な証明書は、Office プロジェクトを最初にビルドした後に生成されます。 次に **F5** キーを押したときに、プロジェクトは再構築されます。これは、証明書が追加されたときにプロジェクトが変更済みとしてマークされているためです。
 
  時間の経過と共に多くの一時的な証明書が生成される可能性があるため、一時的な証明書を随時クリアする必要があります。
 
@@ -84,7 +86,7 @@ ms.locfileid: "62978600"
 ### <a name="sequence-of-security-checks-during-installation"></a>インストール中の一連のセキュリティチェック
  Office ソリューションをインストールまたは更新するときには、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] が一連のセキュリティ チェックを所定の順序で実行し、信頼の決定を行います。 ソリューションのインストールまたは更新は、ソリューションが信頼されているとランタイムが判断した場合のみ実行されます。
 
- インストールプロセスを開始するには、セットアッププログラムを実行する方法、配置マニフェストを開く方法、Microsoft Office アプリケーションホストを開く方法、または *VSTOInstaller.exe*を実行する方法の2つの方法があります。
+ インストールプロセスを開始するには、セットアッププログラムを実行する方法、配置マニフェストを開く方法、Microsoft Office アプリケーションホストを開く方法、または *VSTOInstaller.exe* を実行する方法の2つの方法があります。
 
  最初のセキュリティ チェックはドキュメント レベルのソリューションのみが対象となります。 ドキュメント レベルのソリューションのドキュメントは、信頼できる場所に置く必要があります。 ドキュメントがリモートネットワークファイル共有にある場合、または *.doc* または *.docm* ファイル名拡張子を持つ場合は、ドキュメントの場所を信頼できる場所の一覧に追加する必要があります。 詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
@@ -100,7 +102,7 @@ ms.locfileid: "62978600"
 
  ![VSTO セキュリティ - セットアップ プログラムを使用してインストール](../vsto/media/setup-vstoinstaller.png "VSTO セキュリティ - セットアップ プログラムを使用してインストール")
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)
 - [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)
@@ -110,5 +112,5 @@ ms.locfileid: "62978600"
 - [Office ソリューションのセキュリティに関するトラブルシューティング](../vsto/troubleshooting-office-solution-security.md)
 - [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)
 - [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce リファレンス](../deployment/clickonce-reference.md)
+- [ClickOnce に関するリファレンス](../deployment/clickonce-reference.md)
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)

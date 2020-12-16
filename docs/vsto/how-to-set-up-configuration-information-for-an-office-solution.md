@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの構成情報を設定する
+description: 構成ファイルを使用して、Microsoft Office ソリューションに固有の設定を構成する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581040"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528163"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>方法: Office ソリューションの構成情報を設定する
   構成ファイルを使用すると、Office ソリューションに固有の設定を構成できます。 アセンブリバインディングポリシー、リモート処理オブジェクト、デバッグ、トレース設定などの設定を指定できます。
@@ -36,7 +38,7 @@ ms.locfileid: "91581040"
 
 3. [ **テンプレート** ] ペインで、[ **アプリケーション構成ファイル**] を選択します。
 
-4. [ **名前** ] ボックスに、アセンブリと拡張子 *.config*を加えた名前を入力します。たとえば、 *ExcelWorkbook1.dll* という名前の Excel プロジェクトアセンブリの構成ファイルに *ExcelWorkbook1.dll.config*という名前が付けられます。
+4. [ **名前** ] ボックスに、アセンブリと拡張子 *.config* を加えた名前を入力します。たとえば、 *ExcelWorkbook1.dll* という名前の Excel プロジェクトアセンブリの構成ファイルに *ExcelWorkbook1.dll.config* という名前が付けられます。
 
 5. **[追加]** をクリックします。
 

@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す'
+description: ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Word のドキュメントレベルのカスタマイズでメソッドを呼び出す方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298260"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527374"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Office Word 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `ThisDocument` ホスト項目クラスにメソッドを追加する、VBA コードにメソッドを公開する、および、ドキュメント内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -65,7 +67,7 @@ ms.locfileid: "92298260"
 
 1. Word を起動します。
 
-2. 作業中のドキュメントを、 **Documentwithvba**という名前の Word**マクロ有効ドキュメント ( \* .docm)** として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
+2. 作業中のドキュメントを、 **Documentwithvba** という名前の Word **マクロ有効ドキュメント ( \* .docm)** として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
 
 3. リボンの **[開発]** タブをクリックします。
 
@@ -114,7 +116,7 @@ ms.locfileid: "92298260"
 
 9. **[完了]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで**Documentwithvba**ドキュメントを開き、**ソリューションエクスプローラー**に**CallingCodeFromVBA**プロジェクトを追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで **Documentwithvba** ドキュメントを開き、**ソリューションエクスプローラー** に **CallingCodeFromVBA** プロジェクトを追加します。
 
 ## <a name="trust-the-location-of-the-document"></a>ドキュメントの場所を信頼する
  ソリューションのコードをドキュメント内の VBA コードに公開する前に、実行するドキュメント内の VBA を信頼する必要があります。 これを行うには、いくつかの方法があります。 このチュートリアルでは、Word の **セキュリティ センター** で、ドキュメントの場所を信頼します。
@@ -152,26 +154,26 @@ ms.locfileid: "92298260"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>ThisDocument クラスにメソッドを追加するには
 
-1. **ソリューション エクスプローラー**で **ThisDocument.vb**を右クリックし、 **[コードの表示]** をクリックします。
+1. **ソリューション エクスプローラー** で **ThisDocument.vb** を右クリックし、 **[コードの表示]** をクリックします。
 
      コード エディターで **ThisDocument** ファイルが開きます。
 
-2. `ThisDocument` クラスに次のメソッドを追加します。 このメソッドは、ドキュメントの先頭に 2 行 2 列の表を作成します。 パラメーターは、最初の行に表示されるテキストを指定します。 このチュートリアルの後半では、ドキュメント内の VBA コードからこのメソッドを呼び出します。
+2. 次のメソッドを `ThisDocument` クラスに追加します。 このメソッドは、ドキュメントの先頭に 2 行 2 列の表を作成します。 パラメーターは、最初の行に表示されるテキストを指定します。 このチュートリアルの後半では、ドキュメント内の VBA コードからこのメソッドを呼び出します。
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
 3. プロジェクトをビルドします。
 
 ## <a name="expose-the-method-to-vba-code"></a>メソッドを VBA コードに公開する
- `CreateTable` メソッドをドキュメント内の VBA コードに公開するには、 **ホスト項目の** EnableVbaCallers `ThisDocument` プロパティを **True**に設定します。
+ `CreateTable` メソッドをドキュメント内の VBA コードに公開するには、 **ホスト項目の** EnableVbaCallers `ThisDocument` プロパティを **True** に設定します。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>メソッドを VBA コードに公開するには
 
-1. **ソリューション エクスプローラー**で、 **ThisDocument.vb**をダブルクリックします。
+1. **ソリューション エクスプローラー** で、 **ThisDocument.vb** をダブルクリックします。
 
      デザイナーで **DocumentWithVBA** ファイルが開きます。
 
-2. **[プロパティ]** ウィンドウで、 **EnableVbaCallers** プロパティを選択し、値を **True**に変更します。
+2. **[プロパティ]** ウィンドウで、 **EnableVbaCallers** プロパティを選択し、値を **True** に変更します。
 
 3. 表示されるメッセージで **[OK]** をクリックします。
 
@@ -185,7 +187,7 @@ ms.locfileid: "92298260"
 
 ### <a name="to-call-the-method-from-vba-code"></a>VBA コードからメソッドを呼び出すには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. **[開発者]** タブで、 **[コード]** グループの、 **[Visual Basic]** をクリックします。
 
@@ -203,7 +205,7 @@ ms.locfileid: "92298260"
     End Sub
     ```
 
-5. **F5**キーを押します。
+5. **F5** キーを押します。
 
 6. 新しい表がドキュメントに追加されたことを確認します。
 

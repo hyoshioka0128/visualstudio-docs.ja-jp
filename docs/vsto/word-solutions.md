@@ -1,5 +1,7 @@
 ---
 title: Word ソリューション
+description: Visual Studio ソリューションを使用して、Word の自動化、Word の機能拡張、Word のユーザーインターフェイス (UI) のカスタマイズを行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55ffb54e00af0291a33bd635ea81d3d865cc4c9a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985380"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528364"
 ---
 # <a name="word-solutions"></a>Word ソリューション
   Visual Studio には、Microsoft Office Word のドキュメント レベルのカスタマイズおよび VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 これらのソリューションを使用して、Word の自動化、Word の機能拡張、Word のユーザー インターフェイス (UI) のカスタマイズを行うことができます。 ドキュメントレベルのカスタマイズと VSTO アドインの違いの詳細については、「 [Office ソリューションの開発の概要 &#40;vsto&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。

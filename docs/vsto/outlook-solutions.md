@@ -1,5 +1,7 @@
 ---
 title: Outlook ソリューション
+description: VSTO アドインを使用して Outlook の自動化、Outlook の機能の拡張、または Outlook のユーザーインターフェイス (UI) のカスタマイズを行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985673"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527550"
 ---
 # <a name="outlook-solutions"></a>Outlook ソリューション
   Visual Studio には、Microsoft Office Outlook の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用して、Outlook の自動化、Outlook の機能の拡張、または Outlook のユーザー インターフェイス (UI) のカスタマイズが可能です。 VSTO アドインについて詳しくは、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」をご覧ください。
@@ -70,5 +72,5 @@ ms.locfileid: "72985673"
 |-----------|-----------------|
 |[Outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)|Outlook オブジェクト モデルによって提供されるオブジェクトの概要を説明します。|
 |[Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)|フォーム領域のデザイン、開発、およびデバッグを簡単に実行できる、Visual Studio によって提供されるツールについて説明します。|
-|[チュートリアル: 初めての Outlook 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Microsoft Office Outlook 用の VSTO アドインを作成する方法について説明します。|
+|[チュートリアル: 初めての Outlook 用 VSTO Add-In の作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Microsoft Office Outlook 用の VSTO アドインを作成する方法について説明します。|
 |[Office 開発における Outlook 2010](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|この MSDN ライブラリの領域では、Outlook ソリューションの開発に関する記事やリファレンス ドキュメントを参照できます (Visual Studio を使用した Office 開発以外のトピックも含まれています)。|

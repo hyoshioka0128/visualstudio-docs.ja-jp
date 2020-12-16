@@ -1,5 +1,7 @@
 ---
 title: NamedRange コントロール
+description: NamedRange コントロールが一意の名前を持ち、イベントを公開し、データにバインドできる範囲であることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1881afb0dd718eec3815ab9de3becbeaf070f5d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254715"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528091"
 ---
 # <a name="namedrange-control"></a>NamedRange コントロール
   <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールは、一意の名前を持つ、イベントを公開する範囲です。このコントロールは、データにバインドすることができます。 詳細については、「 [Excel オブジェクトモデルの概要](../vsto/excel-object-model-overview.md)」を参照してください。
@@ -50,7 +52,7 @@ ms.locfileid: "71254715"
  <xref:Microsoft.Office.Interop.Excel.Range> に適用できる書式設定は、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールに適用できます。 これには、罫線、フォント、数値書式、およびスタイルが含まれます。
 
 ## <a name="rename-the-control"></a>コントロールの名前を変更する
- <xref:Microsoft.Office.Tools.Excel.NamedRange> [ツールボックス] **から**コントロールをワークシートに追加すると、そのコントロールの名前が Visual Studio により自動的に生成されます。 名前は **[プロパティ]** ウィンドウで変更できます。
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> [ツールボックス] **から** コントロールをワークシートに追加すると、そのコントロールの名前が Visual Studio により自動的に生成されます。 名前は **[プロパティ]** ウィンドウで変更できます。
 
 ## <a name="events"></a>イベント
  次のイベントは <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールに対して利用できます。

@@ -1,5 +1,6 @@
 ---
 title: Word の最初のドキュメントレベルのカスタマイズを作成する
+description: Microsoft Word のドキュメントレベルのカスタマイズを作成します。 この種のソリューションで作成した機能は、特定の文書が開いている場合にのみ使用可能です。
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584990"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527078"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>チュートリアル: 初めての Word 用ドキュメントレベルのカスタマイズの作成
 
@@ -50,7 +51,7 @@ ms.locfileid: "91584990"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 ### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Visual Studio で新しい Word 文書プロジェクトを作成するには
 
@@ -68,7 +69,7 @@ ms.locfileid: "91584990"
 
 7. **[OK]** をクリックします。
 
-8. **Visual Studio Tools for Office プロジェクトウィザード**で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
+8. **Visual Studio Tools for Office プロジェクトウィザード** で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. [ **新しいプロジェクトの作成** ] ダイアログで、 **Word VSTO ドキュメント** プロジェクトを選択します。
@@ -79,9 +80,9 @@ ms.locfileid: "91584990"
 
 5. [**新しいプロジェクトの構成**] ダイアログの [**名前**] ボックスに「 **FirstWorkbookCustomization** 」と入力し、[**作成**] をクリックします。
 
-6. **Visual Studio Tools for Office プロジェクトウィザード**で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
+6. **Visual Studio Tools for Office プロジェクトウィザード** で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**firstdocumentcustomization**プロジェクトを作成し、 **firstdocumentcustomization**ドキュメントと ThisDocument コードファイルをプロジェクトに追加します。 **Firstdocumentcustomization**ドキュメントは、デザイナーで自動的に開きます。
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**firstdocumentcustomization** プロジェクトを作成し、 **firstdocumentcustomization** ドキュメントと ThisDocument コードファイルをプロジェクトに追加します。 **Firstdocumentcustomization** ドキュメントは、デザイナーで自動的に開きます。
 
 ## <a name="close-and-reopen-the-document-in-the-designer"></a>デザイナーでドキュメントを閉じて再度開きます。
 
@@ -91,11 +92,11 @@ ms.locfileid: "91584990"
 
 1. デザイナーウィンドウの [ **閉じる** ] ボタン (X) をクリックして、ドキュメントを閉じます。
 
-2. **ソリューションエクスプローラー**で、 **ThisDocument**コードファイルを右クリックし、[**デザイナーの表示**] をクリックします。
+2. **ソリューションエクスプローラー** で、 **ThisDocument** コードファイルを右クリックし、[**デザイナーの表示**] をクリックします。
 
      \- または
 
-     **ソリューションエクスプローラー**で、 **ThisDocument**コードファイルをダブルクリックします。
+     **ソリューションエクスプローラー** で、 **ThisDocument** コードファイルをダブルクリックします。
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>デザイナーでドキュメントにテキストを追加する
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584990"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>コードを使用してドキュメントに 2 番目のテキスト段落を追加するには
 
-1. **ソリューションエクスプローラー**で、[ **ThisDocument**] を右クリックし、[**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **ThisDocument**] を右クリックし、[**コードの表示**] をクリックします。
 
      Visual Studio でコード ファイルが開かれます。
 
@@ -153,7 +154,7 @@ ms.locfileid: "91584990"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
  Word 用の基本的なドキュメント レベルのカスタマイズを作成した後は、カスタマイズの開発方法の詳細について、以下のトピックを参照してください。
 

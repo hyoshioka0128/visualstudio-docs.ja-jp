@@ -1,5 +1,7 @@
 ---
 title: テーブルを操作する
+description: Microsoft Word のオブジェクトモデルを使用して Office プロジェクトのテーブルを操作する手順とコード例について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815353"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526851"
 ---
 # <a name="work-with-tables"></a>テーブルを操作する
   このセクションのトピックでは、Microsoft Office Word のオブジェクト モデルを使用して Office プロジェクト内のテーブルを操作する手順とコード例を示します。 以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
@@ -32,6 +34,6 @@ ms.locfileid: "62815353"
 |テーブルに行または列を追加します。|[方法: プログラムによって Word の表に行と列を追加する](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
 |セルにテキストを追加して、書式設定します。|[方法: プログラムによって Word の表のセルにテキストと書式設定を追加する](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

@@ -1,5 +1,7 @@
 ---
 title: 予定表アイテムの操作
+description: AppointmentItem クラスには、予定表アイテムでタスクを実行するために使用するメソッドとプロパティが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008730"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528312"
 ---
 # <a name="work-with-calendar-items"></a>予定表アイテムの操作
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> クラスには、予定表アイテム関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -37,7 +39,7 @@ ms.locfileid: "63008730"
 
  Outlook のタスクと Outlook オブジェクトモデルの詳細については、「 [outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [連絡先アイテムの操作](../vsto/working-with-contact-items.md)
 - [フォルダーの操作](../vsto/working-with-folders.md)
 - [メールアイテムの操作](../vsto/working-with-mail-items.md)

@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: リボン (ビジュアルデザイナー) 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボン (XML) 項目を使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90841549"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528412"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   リボン (XML) 項目を使用すると、XML を使用してリボンをカスタマイズできます。 リボン (ビジュアルデザイナー) 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボン (XML) 項目を使用します。 各項目で実行できる操作の比較については、「 [リボンの概要](../vsto/Ribbon-overview.md)」を参照してください。
@@ -40,12 +42,12 @@ ms.locfileid: "90841549"
 
 - リボン XML ファイル。 このファイルは、リボン ユーザー インターフェイス (UI) を定義します。 タブ、グループ、およびコントロールなどの UI 要素を追加するには、このファイルを使用します。 詳細については、このトピックで後述する「 [リボン XML ファイルリファレンス](#RibbonDescriptorFile) 」を参照してください。
 
-- リボン コード ファイル。 このファイルには *リボン クラス*が含まれています。 このクラスの名前は、 **[新しい項目の追加]** ダイアログ ボックスで **リボン (XML)** 項目に指定した名前になります。 Microsoft Office アプリケーションは、このクラスのインスタンスを使用して、カスタムリボンを読み込みます。 詳細については、このトピックで後述する「 [リボンクラスのリファレンス](#RibbonExtensionClass) 」を参照してください。
+- リボン コード ファイル。 このファイルには *リボン クラス* が含まれています。 このクラスの名前は、 **[新しい項目の追加]** ダイアログ ボックスで **リボン (XML)** 項目に指定した名前になります。 Microsoft Office アプリケーションは、このクラスのインスタンスを使用して、カスタムリボンを読み込みます。 詳細については、このトピックで後述する「 [リボンクラスのリファレンス](#RibbonExtensionClass) 」を参照してください。
 
   既定では、これらのファイルは、リボンの [ **アドイン** ] タブにカスタムグループを追加します。
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Microsoft Office アプリケーションでカスタムリボンを表示する
- **リボン (xml)** 項目をプロジェクトに追加した後、コードを**ThisAddin**、 **ThisWorkbook**、 **ThisDocument**のいずれかのクラスに追加して、メソッドをオーバーライド `CreateRibbonExtensibilityObject` し、Office アプリケーションにリボン XML クラスを返します。
+ **リボン (xml)** 項目をプロジェクトに追加した後、コードを **ThisAddin**、 **ThisWorkbook**、 **ThisDocument** のいずれかのクラスに追加して、メソッドをオーバーライド `CreateRibbonExtensibilityObject` し、Office アプリケーションにリボン XML クラスを返します。
 
  次のコード例は `CreateRibbonExtensibilityObject` メソッドをオーバーライドして、MyRibbon という名前のリボン XML クラスを返します。
 
@@ -53,7 +55,7 @@ ms.locfileid: "90841549"
  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>カスタムリボンの動作を定義する
- *コールバックメソッド*を作成することにより、リボン上のボタンをクリックするなど、ユーザーの操作に応答できます。 コールバック メソッドは Windows フォーム コントロールのイベントと似ていますが、UI 要素の XML の属性によって識別されます。 リボン クラスでメソッドを記述すると、コントロールは属性値と同じ名前を持つメソッドを呼び出します。 たとえば、ユーザーがリボン上のボタンをクリックしたときに呼び出されるコールバックメソッドを作成できます。 コールバック メソッドを作成するには、2 つの手順が必要です。
+ *コールバックメソッド* を作成することにより、リボン上のボタンをクリックするなど、ユーザーの操作に応答できます。 コールバック メソッドは Windows フォーム コントロールのイベントと似ていますが、UI 要素の XML の属性によって識別されます。 リボン クラスでメソッドを記述すると、コントロールは属性値と同じ名前を持つメソッドを呼び出します。 たとえば、ユーザーがリボン上のボタンをクリックしたときに呼び出されるコールバックメソッドを作成できます。 コールバック メソッドを作成するには、2 つの手順が必要です。
 
 - コード内のコールバック メソッドを識別するリボン XML ファイル内のコントロールに、属性を割り当てます。
 
@@ -133,7 +135,7 @@ ms.locfileid: "90841549"
  リボン XML ファイルの既定の要素と属性は、使用できる要素と属性の小さなサブセットです。 使用可能な要素と属性の完全な一覧については、技術記事「 [開発者向けの Office (2007) リボンユーザーインターフェイスのカスタマイズ (パート 2/3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12))」を参照してください。
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> リボンクラスのリファレンス
- Visual Studio は、リボン コード ファイルにリボン クラスを生成します。 リボン上のコントロールのコールバックメソッドをこのクラスに追加します。 このクラスによって、<xref:Microsoft.Office.Core.IRibbonExtensibility> インターフェイスが実装されます。
+ Visual Studio は、リボン コード ファイルにリボン クラスを生成します。 リボン上のコントロールのコールバックメソッドをこのクラスに追加します。 このクラスは、 <xref:Microsoft.Office.Core.IRibbonExtensibility> インターフェイスを実装します。
 
  次の表はこのクラスの既定のメソッドについて説明しています。
 
@@ -143,7 +145,7 @@ ms.locfileid: "90841549"
 |`OnLoad`|<xref:Microsoft.Office.Core.IRibbonControl> パラメーターを `Ribbon` フィールドに割り当てます。 Microsoft Office アプリケーションは、カスタムリボンを読み込むときにこのメソッドを呼び出します。 このフィールドを使用すると、カスタムリボンを動的に更新できます。 詳細については、技術記事「 [開発者向けの Office (2007) リボンユーザーインターフェイスのカスタマイズ (パート 1/3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12))」を参照してください。|
 |`GetResourceText`|`GetCustomUI` メソッドによって呼び出され、リボン XML ファイルの内容を取得します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
 - [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)

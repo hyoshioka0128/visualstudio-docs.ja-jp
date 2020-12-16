@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: カスタム XML 部分へのコンテンツコントロールのバインド'
+description: Word のドキュメントレベルのカスタマイズで、ドキュメントに格納されている XML データにコンテンツコントロールをバインドする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544444"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527961"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>チュートリアル: カスタム XML 部分へのコンテンツコントロールのバインド
   このチュートリアルでは、Word のドキュメント レベルのカスタマイズで、コンテンツ コントロールを同じ文書内の XML データにバインドする方法を説明します。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Word を使用すると、 *カスタム xml 部分*という名前の xml データをドキュメントに格納できます。 このデータの表示は、カスタム XML 部分の要素にコンテンツ コントロールをバインドすることによって制御できます。 このチュートリアルで例として示す文書のカスタム XML 部分には、従業員情報が格納されています。 この文書を開くと、XML 要素の値がコンテンツ コントロールに表示されます。 コンテンツ コントロール内のテキストに加えた変更は、カスタム XML 部分に保存されます。
+ Word を使用すると、 *カスタム xml 部分* という名前の xml データをドキュメントに格納できます。 このデータの表示は、カスタム XML 部分の要素にコンテンツ コントロールをバインドすることによって制御できます。 このチュートリアルで例として示す文書のカスタム XML 部分には、従業員情報が格納されています。 この文書を開くと、XML 要素の値がコンテンツ コントロールに表示されます。 コンテンツ コントロール内のテキストに加えた変更は、カスタム XML 部分に保存されます。
 
  このチュートリアルでは、次の作業について説明します。
 
@@ -59,9 +61,9 @@ ms.locfileid: "85544444"
 
 ### <a name="to-create-a-new-word-document-project"></a>Word 文書プロジェクトを作成するには
 
-1. **Employeecontrols.docx**という名前の Word 文書プロジェクトを作成します。 ソリューションの新しい文書を作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. **Employeecontrols.docx** という名前の Word 文書プロジェクトを作成します。 ソリューションの新しい文書を作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで新しい Word 文書を開き、**ソリューションエクスプローラー**に**employeecontrols.docx**プロジェクトを追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで新しい Word 文書を開き、**ソリューションエクスプローラー** に **employeecontrols.docx** プロジェクトを追加します。
 
 ## <a name="add-content-controls-to-the-document"></a>ドキュメントにコンテンツコントロールを追加する
  ユーザーが従業員に関する情報を表示または編集できる 3 種類のコンテンツ コントロールが含まれるテーブルを作成します。
@@ -78,7 +80,7 @@ ms.locfileid: "85544444"
    |-|
    |**Employee Name**|
    |**Hire Date**|
-   |**タイトル**|
+   |**Title**|
 
 4. テーブルの2番目の列で、最初の行 ([ **Employee Name**] の横) を選択します。
 
@@ -110,11 +112,11 @@ ms.locfileid: "85544444"
 
 2. [ **テンプレート** ] ペインで、[ **XML ファイル**] を選択します。
 
-3. ファイルに **employees.xml**という名前を指定し、[ **追加** ] ボタンをクリックします。
+3. ファイルに **employees.xml** という名前を指定し、[ **追加** ] ボタンをクリックします。
 
      コードエディターで **employees.xml** ファイルが開きます。
 
-4. **employees.xml**ファイルの内容を次のテキストに置き換えます。
+4. **employees.xml** ファイルの内容を次のテキストに置き換えます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -127,7 +129,7 @@ ms.locfileid: "85544444"
     </employees>
     ```
 
-5. **ソリューションエクスプローラー**で、 **employees.xml**ファイルを選択します。
+5. **ソリューションエクスプローラー** で、 **employees.xml** ファイルを選択します。
 
 6. [ **プロパティ** ] ウィンドウで、[ **ビルドアクション** ] プロパティを選択し、値を [ **埋め込みリソース**] に変更します。
 
@@ -148,9 +150,9 @@ ms.locfileid: "85544444"
 
      スキーマ デザイナーが開きます。
 
-4. **ソリューションエクスプローラー**で、 **employees**のショートカットメニューを開き、[**コードの表示**] を選択します。
+4. **ソリューションエクスプローラー** で、 **employees** のショートカットメニューを開き、[**コードの表示**] を選択します。
 
-5. **Employees**ファイルの内容を次のスキーマに置き換えます。
+5. **Employees** ファイルの内容を次のスキーマに置き換えます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -225,19 +227,19 @@ ms.locfileid: "85544444"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>カスタム XML 部分を文書に追加するには
 
-1. **ソリューションエクスプローラー**で、 **ThisDocument.cs**または**ThisDocument**のショートカットメニューを開き、[コードの**表示**] を選択します。
+1. **ソリューションエクスプローラー** で、 **ThisDocument.cs** または **ThisDocument** のショートカットメニューを開き、[コードの **表示**] を選択します。
 
 2. `ThisDocument` クラスに次の宣言を追加します。 このコードでは、カスタム XML 部分を文書に追加するために使用する複数のオブジェクトを宣言しています。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3. `ThisDocument` クラスに次のメソッドを追加します。 このメソッドは、アセンブリにリソースとして埋め込まれている XML データ ファイルの内容を取得し、それを XML 文字列として返します。
+3. 次のメソッドを `ThisDocument` クラスに追加します。 このメソッドは、アセンブリにリソースとして埋め込まれている XML データ ファイルの内容を取得し、それを XML 文字列として返します。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4. `ThisDocument` クラスに次のメソッドを追加します。 `AddCustomXmlPart` メソッドは、受け取った XML 文字列を含むカスタム XML 部分を作成します。
+4. 次のメソッドを `ThisDocument` クラスに追加します。 `AddCustomXmlPart` メソッドは、受け取った XML 文字列を含むカスタム XML 部分を作成します。
 
      カスタム XML 部分が一度だけ作成されるように、このメソッドは、一致する GUID を持つカスタム XML 部分が文書内に存在しない場合のみカスタム XML 部分を作成します。 このメソッドは、初めて呼び出されたときに、<xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> プロパティの値を `employeeXMLPartID` 文字列に格納します。 `employeeXMLPartID` 文字列の値は、<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 属性によって宣言されているため、文書内に保持されます。
 
@@ -249,7 +251,7 @@ ms.locfileid: "85544444"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>コンテンツ コントロールをカスタム XML 部分の要素にバインドするには
 
-1. `ThisDocument` クラスに次のメソッドを追加します。 このメソッドは、各コンテンツ コントロールをカスタム XML 部分の要素にバインドし、<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> の日付表示形式を設定します。
+1. 次のメソッドを `ThisDocument` クラスに追加します。 このメソッドは、各コンテンツ コントロールをカスタム XML 部分の要素にバインドし、<xref:Microsoft.Office.Tools.Word.DatePickerContentControl> の日付表示形式を設定します。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -264,12 +266,12 @@ ms.locfileid: "85544444"
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  文書を開くと、コンテンツ コントロールにカスタム XML 部分の要素のデータが表示されます。 をクリックして、 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> `title` 従業員の **.xsd** ファイルで定義されている要素の3つの有効な値のいずれかを選択できます。 コンテンツ コントロールに表示されたデータを編集すると、新しい値が文書内のカスタム XML 部分に保存されます。
 
 ### <a name="to-test-the-content-controls"></a>コンテンツ コントロールをテストするには
 
-1. **F5**キーを押してプロジェクトを実行します。
+1. **F5** キーを押してプロジェクトを実行します。
 
 2. 文書内に次のようなテーブルが表示されることを確認します。 2 つ目の列の文字列は、文書内のカスタム XML 部分の要素から取得されます。
 
@@ -277,35 +279,35 @@ ms.locfileid: "85544444"
     |-|-|
     |**Employee Name**|**Karina Leal**|
     |**Hire Date**|**April 1, 1999**|
-    |**タイトル**|**マネージャー**|
+    |**Title**|**マネージャー**|
 
 3. [ **Employee name** ] セルの右側にあるセルを選択し、別の名前を入力します。
 
 4. [ **入社日** ] セルの右側にあるセルを選択し、日付の選択で別の日付を選択します。
 
-5. **タイトル**セルの右側にあるセルを選択し、ドロップダウンリストから新しい項目を選択します。
+5. **タイトル** セルの右側にあるセルを選択し、ドロップダウンリストから新しい項目を選択します。
 
 6. 文書を保存して閉じます。
 
 7. ファイルエクスプローラーで、プロジェクトの場所の下にある [ *\bin\debug* ] フォルダーを開きます。
 
-8. **EmployeeControls.docx**のショートカットメニューを開き、[**名前の変更**] を選択します。
+8. **EmployeeControls.docx** のショートカットメニューを開き、[**名前の変更**] を選択します。
 
-9. ファイルに **EmployeeControls.docx.zip**という名前を指定します。
+9. ファイルに **EmployeeControls.docx.zip** という名前を指定します。
 
-     **EmployeeControls.docx**ドキュメントは、Open XML 形式で保存されます。 このドキュメントの名前を *.zip* ファイル名拡張子に変更すると、ドキュメントの内容を確認できます。 Open XML の詳細については、技術記事「 [Office (2007) OPEN xml ファイル形式の概要](/previous-versions/office/developer/office-2007/aa338205(v=office.12))」を参照してください。
+     **EmployeeControls.docx** ドキュメントは、Open XML 形式で保存されます。 このドキュメントの名前を *.zip* ファイル名拡張子に変更すると、ドキュメントの内容を確認できます。 Open XML の詳細については、技術記事「 [Office (2007) OPEN xml ファイル形式の概要](/previous-versions/office/developer/office-2007/aa338205(v=office.12))」を参照してください。
 
-10. **EmployeeControls.docx.zip**ファイルを開きます。
+10. **EmployeeControls.docx.zip** ファイルを開きます。
 
-11. **Customxml**フォルダーを開きます。
+11. **Customxml** フォルダーを開きます。
 
-12. **item2.xml**のショートカットメニューを開き、[**開く**] を選択します。
+12. **item2.xml** のショートカットメニューを開き、[**開く**] を選択します。
 
      このファイルには、文書に追加したカスタム XML 部分が含まれています。
 
 13. `name`、`hireDate`、`title` の各要素に文書内のコンテンツ コントロールに入力した値が設定されていることを確認します。
 
-14. **item2.xml**ファイルを閉じます。
+14. **item2.xml** ファイルを閉じます。
 
 ## <a name="next-steps"></a>次のステップ
  コンテンツ コントロールの使用方法の詳細については、次の各トピックを参照してください。
@@ -318,7 +320,7 @@ ms.locfileid: "85544444"
 
 ## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)
-- [コンテンツ コントロール](../vsto/content-controls.md)
+- [コンテンツコントロール](../vsto/content-controls.md)
 - [方法: Word 文書にコンテンツコントロールを追加する](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [方法: コンテンツコントロールを使用して文書の一部を保護する](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)

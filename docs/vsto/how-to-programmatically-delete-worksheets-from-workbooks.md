@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってブックからワークシートを削除する'
+description: たとえば、ワークシートホスト項目を使用して、Microsoft Excel ブック内の任意のワークシートをプログラムで削除する方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585250"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527784"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>方法: プログラムによってブックからワークシートを削除する
   ブック内の任意のワークシートを削除できます。 ワークシートを削除するには、Worksheet ホスト項目を使用するか、ブックの Sheets コレクションを使用してワークシートにアクセスします。

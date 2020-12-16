@@ -1,5 +1,7 @@
 ---
 title: .NET 4.5 に移行された Office プロジェクトに必要な変更
+description: ターゲットフレームワークが以前のバージョンの .NET Framework から .NET Framework 4 以降に変更された場合に、プロジェクトに加える必要がある変更について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584465"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527493"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>.NET 4.5 に移行された Office プロジェクトに必要な変更
 
@@ -41,7 +43,7 @@ ms.locfileid: "91584465"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>SecurityTransparentAttribute を削除するには
 
-1. Visual Studio でプロジェクトを開き、 **ソリューション エクスプローラー**を開きます。
+1. Visual Studio でプロジェクトを開き、 **ソリューション エクスプローラー** を開きます。
 
 2. **[プロパティ]** ノード (C# の場合) または **[マイ プロジェクト]** ノード (Visual Basic の場合) の下で、AssemblyInfo コード ファイルをダブルクリックしてコード エディターで開きます。
 
@@ -61,7 +63,7 @@ ms.locfileid: "91584465"
 ## <a name="perform-the-clean-command-to-debug-or-run-a-project-on-the-development-computer"></a>開発用コンピューターでプロジェクトをデバッグまたは実行するには、clean コマンドを実行します。
  プロジェクトのターゲットフレームワークが以降に変更される前に Office プロジェクトがビルドされている場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ターゲットフレームワークを変更した後で、 **クリーン** コマンドを実行し、プロジェクトをリビルドする必要があります。 [ **クリーン** ] コマンドを実行しない場合は、 <xref:System.Runtime.InteropServices.COMException> ターゲットプロジェクトをデバッグまたは実行しようとすると、が表示されます。
 
- **Clean**コマンドの詳細については、「 [Office ソリューションのビルド](../vsto/building-office-solutions.md)」を参照してください。
+ **Clean** コマンドの詳細については、「 [Office ソリューションのビルド](../vsto/building-office-solutions.md)」を参照してください。
 
 ## <a name="update-the-prerequisites-for-deployment"></a>展開の前提条件を更新する
  Office プロジェクトのターゲットを以降に変更する場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [ **必須コンポーネント** ] ダイアログボックスで、対応する .NET Framework の前提条件も更新する必要があります。 そうしない場合は、ClickOnce 配置または InstallShield Limited Edition プロジェクトが以前のバージョンの .NET Framework をチェックし、インストールします。

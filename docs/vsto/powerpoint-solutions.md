@@ -1,5 +1,7 @@
 ---
 title: PowerPoint ソリューション
+description: Visual Studio に、Microsoft PowerPoint 用の VSTO アドインの作成に使用できるプロジェクトテンプレートが用意されていることを確認してください。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c41b2942b53c97222abf7308b6706a7cdc734df1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e297b0d269d5ff0bff0deeadd6bd346de00a324
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985666"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528034"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint ソリューション
   Visual Studio には、Microsoft Office PowerPoint の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用すると、PowerPoint の自動化、PowerPoint 機能の拡張、PowerPoint ユーザー インターフェイス (UI) のカスタマイズが可能です。
@@ -70,7 +72,7 @@ ms.locfileid: "72985666"
 
  PowerPoint およびその他の Microsoft Office アプリケーションの UI をカスタマイズする方法の詳細については、「 [OFFICE ui のカスタマイズ](office-ui-customization.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成](walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 - [VSTO アドインのプログラミングの概要](getting-started-programming-vsto-add-ins.md)
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](office-solutions-development-overview-vsto.md)

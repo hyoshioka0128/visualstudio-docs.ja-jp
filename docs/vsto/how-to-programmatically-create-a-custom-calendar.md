@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってカスタムカレンダーを作成する'
+description: この例を使用して、"新しい" という名前の新しい予定表フォルダーを作成し、新しい予定アイテムを作成して予定表フォルダーに追加します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546056"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527828"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>方法: プログラムによってカスタムカレンダーを作成する
-  次の例では、"、" という名前の新しい予定表フォルダーを作成 **し、新しい**予定アイテムを作成して予定表フォルダーに追加します。 次に、このコードによって Calendar フォルダーが表示されます。
+  次の例では、"、" という名前の新しい予定表フォルダーを作成 **し、新しい** 予定アイテムを作成して予定表フォルダーに追加します。 次に、このコードによって Calendar フォルダーが表示されます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
