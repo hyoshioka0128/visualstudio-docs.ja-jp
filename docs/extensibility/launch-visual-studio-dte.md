@@ -1,5 +1,7 @@
 ---
 title: DTE を使って Visual Studio を起動する
+description: DTE を使用して Visual Studio を起動し、メジャーリリースのサイドバイサイドインストールをサポートする方法について説明します。 この記事には、コード例が含まれています。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3217835571ac659ac2cef2b46cb45a1c02ba2584
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c84d44b3f775f384ed15a0ede1ef9c68ad2fd5a6
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703034"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615878"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE を使って Visual Studio を起動する
 
@@ -33,7 +35,7 @@ Visual Studio 2017 以降では、DTE を使用して Visual Studio を起動す
 
 4. 次の [コード例](#example-code) を *Program.cs* ファイルに貼り付けます。
 
-5. **F5**キーを押してプログラムを実行します。 プログラムが終了する前に Visual Studio 2019 が開いていることを確認してください。
+5. **F5** キーを押してプログラムを実行します。 プログラムが終了する前に Visual Studio 2019 が開いていることを確認してください。
 
 ## <a name="example-code"></a>コード例
 

@@ -1,5 +1,7 @@
 ---
 title: ソリューションでのプロジェクトの読み込みの管理 |Microsoft Docs
+description: ソリューションロードマネージャーを作成することによって、開発者がソリューションの読み込み時間を短縮し、プロジェクトの読み込み動作を管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21cd5e7e557e795db49aea7a14e8e4cc7caa0422
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702732"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616358"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>ソリューションでのプロジェクトの読み込みの管理
 Visual Studio ソリューションには、多数のプロジェクトを含めることができます。 Visual Studio の既定の動作では、ソリューションを開いたときにソリューション内のすべてのプロジェクトが読み込まれます。また、すべてのプロジェクトの読み込みが完了するまで、ユーザーはどのプロジェクトにもアクセスできません。 プロジェクトの読み込みプロセスが2分以上経過すると、読み込まれたプロジェクトの数とプロジェクトの合計数を示す進行状況バーが表示されます。 ユーザーは、複数のプロジェクトを含むソリューションで作業しているときにプロジェクトをアンロードできますが、この手順にはいくつかの欠点があります。アンロードされたプロジェクトは、リビルドソリューションコマンドの一部としてビルドされず、閉じられたプロジェクトの型とメンバーの IntelliSense 記述は表示されません。
@@ -65,7 +67,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: このイベントは、ソリューションロードマネージャーがあるかどうかにかかわらず、ソリューションが最初に完全に読み込まれた後に発生します。 また、ソリューションが完全に読み込まれたときに、バックグラウンド読み込みまたは要求読み込みの後にも発生します。 同時に、が再 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> アクティブ化されます。
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: このイベントは、プロジェクト (またはプロジェクト) が読み込まれる前に発生します。 プロジェクトが読み込まれる前に他のバックグラウンドプロセスが完了するようにするには、を `pfShouldDelayLoadToNextIdle` **true**に設定します。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: このイベントは、プロジェクト (またはプロジェクト) が読み込まれる前に発生します。 プロジェクトが読み込まれる前に他のバックグラウンドプロセスが完了するようにするには、を `pfShouldDelayLoadToNextIdle` **true** に設定します。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: このイベントは、プロジェクトのバッチが読み込まれるときに発生します。 `fIsBackgroundIdleBatch`が true の場合、プロジェクトはバックグラウンドで読み込まれます。が false の場合、ユーザーが `fIsBackgroundIdleBatch` ソリューションエクスプローラーで保留中のプロジェクトを展開するなど、ユーザー要求の結果としてプロジェクトが同期的に読み込まれます。 このイベントを処理して、で実行する必要がある高額な作業を行うことができ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> ます。
 

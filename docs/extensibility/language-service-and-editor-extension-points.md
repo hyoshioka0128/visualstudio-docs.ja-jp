@@ -1,5 +1,7 @@
 ---
 title: 言語サービスとエディターの拡張機能のポイント |Microsoft Docs
+description: ほとんどの言語サービス機能を含む、拡張できる Visual Studio code エディターの拡張点について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06329fcfcefe3ea75b772495f6a7e0dd14ced087
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703059"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615552"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張点
 エディターには、Managed Extensibility Framework (MEF) コンポーネントパーツとして拡張できる拡張ポイントが用意されています。これには、ほとんどの言語サービス機能が含まれます。 拡張ポイントの主なカテゴリは次のとおりです。

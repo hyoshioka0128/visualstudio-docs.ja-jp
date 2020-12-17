@@ -1,5 +1,7 @@
 ---
 title: VSIX パッケージのローカライズ |Microsoft Docs
+description: 各ターゲット言語の vsixlangpack ファイルを作成し、適切なフォルダーに配置することによって、VSIX パッケージをローカライズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc9f7055145748e0625788e7487bb978911bae7f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702899"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615539"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX パッケージのローカライズ
 
@@ -27,7 +29,7 @@ VSIX パッケージの内容に、メニューコマンドやその他の UI �
 
 ## <a name="directory-structure"></a>ディレクトリの構造
 
- ユーザーが拡張機能をインストールすると、 **拡張機能と更新プログラム** によって、ターゲットコンピューターの Visual Studio ロケールに一致する名前を持つフォルダーの VSIX パッケージの最上位レベルがチェックされます。 **拡張機能と更新プログラム**によってフォルダー内の*vsixlangpack*ファイルが検出されると、そのファイル内のローカライズされた値が、 *source.extension.vsixmanifest*ファイル内の対応する値に置き換えられます。 これらの値は、拡張機能をインストールするときに表示されます。 次の例は、スペイン語 (es) とフランス語 (fr-fr) にローカライズされた VSIX パッケージのディレクトリ構造を示しています。
+ ユーザーが拡張機能をインストールすると、 **拡張機能と更新プログラム** によって、ターゲットコンピューターの Visual Studio ロケールに一致する名前を持つフォルダーの VSIX パッケージの最上位レベルがチェックされます。 **拡張機能と更新プログラム** によってフォルダー内の *vsixlangpack* ファイルが検出されると、そのファイル内のローカライズされた値が、 *source.extension.vsixmanifest* ファイル内の対応する値に置き換えられます。 これらの値は、拡張機能をインストールするときに表示されます。 次の例は、スペイン語 (es) とフランス語 (fr-fr) にローカライズされた VSIX パッケージのディレクトリ構造を示しています。
 
 ```text
 .
@@ -41,19 +43,19 @@ VSIX パッケージの内容に、メニューコマンドやその他の UI �
 ```
 
 > [!NOTE]
-> Vsix でサポートされているプロジェクトテンプレートでは、 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] vsix マニフェストを生成し、それに *source.extension.vsixmanifest*という名前を指定します。 Visual Studio によってプロジェクトがビルドされると、そのファイルの内容が VSIX パッケージの Source.extension.vsixmanifest にコピーされます。
+> Vsix でサポートされているプロジェクトテンプレートでは、 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] vsix マニフェストを生成し、それに *source.extension.vsixmanifest* という名前を指定します。 Visual Studio によってプロジェクトがビルドされると、そのファイルの内容が VSIX パッケージの Source.extension.vsixmanifest にコピーされます。
 
 ## <a name="the-extensionvsixlangpack-file"></a>Vsixlangpack ファイル
 
-*Vsixlangpack*ファイルは、 [VSIX 言語パックのスキーマ 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md)に従います。 このスキーマにはがあり `PackageLanguagePackManifest` 、その直後に `Metadata` 子要素が続きます。 メタデータ要素には、最大6つの子要素、、、、、、およびを含めることができ `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` `Icon` ます。 これらの子要素は `DisplayName` 、 `Description` `MoreInfo` `License` `ReleaseNotes` `Icon` `Metadata` *source.extension.vsixmanifest* ファイルの要素の、、、、、およびの各子要素に対応します。
+*Vsixlangpack* ファイルは、 [VSIX 言語パックのスキーマ 2.0](../extensibility/vsix-language-pack-schema-2-0-reference.md)に従います。 このスキーマにはがあり `PackageLanguagePackManifest` 、その直後に `Metadata` 子要素が続きます。 メタデータ要素には、最大6つの子要素、、、、、、およびを含めることができ `DisplayName` `Description` `MoreInfo` `License` `ReleaseNotes` `Icon` ます。 これらの子要素は `DisplayName` 、 `Description` `MoreInfo` `License` `ReleaseNotes` `Icon` `Metadata` *source.extension.vsixmanifest* ファイルの要素の、、、、、およびの各子要素に対応します。
 
 Vsixlangpack ファイルを作成する場合は、プロパティをに設定する必要があり `Include in Vsix` `true` ます。 それ以外の場合、ローカライズされたインストールテキストは無視されます。
 
 ### <a name="to-set-the-include-in-vsix-property"></a>[Vsix に含める (Vsix に含める) プロパティを設定するには
 
-1. **ソリューションエクスプローラー**で、vsixlangpack ファイルを右クリックし、[**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** で、vsixlangpack ファイルを右クリックし、[**プロパティ**] をクリックします。
 
-2. **プロパティグリッド**で、[ **Vsix に含める**] をクリックし、値をに設定し `true` ます。
+2. **プロパティグリッド** で、[ **Vsix に含める**] をクリックし、値をに設定し `true` ます。
 
 ## <a name="example"></a>例
 

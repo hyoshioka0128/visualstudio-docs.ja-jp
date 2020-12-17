@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7dfa1c79af832cc54d9aee72eeafbf20bbde707
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398417"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615526"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>ファーストパーティの .NET アナライザーを有効またはインストールする
 
@@ -31,7 +31,7 @@ ms.locfileid: "97398417"
 - **Nuget パッケージとしてインストール** する: .net 5 + SDK に移行しない場合、または nuget パッケージベースのモデルを希望する場合は、 `Microsoft.CodeAnalysis.NetAnalyzers` Visual Studio 2019 の [nuget パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) でアナライザーを使用することもできます。  オンデマンドバージョン更新には、パッケージベースのモデルを使用することをお勧めします。 Visual Studio 2017 を使用している場合は、 `2.9.x` 代わりに最新バージョンの `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) をインストールしてください。
 
 > [!NOTE]
-> `Microsoft.CodeAnalysis.NetAnalyzers`可能な場合は、 [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)をインストールするのではなく、.net SDK からアナライザーを有効にすることをお勧めします。 .NET SDK からアナライザーを有効にすると、SDK を更新するとすぐにアナライザーのバグ修正と新しいアナライザーが自動的に取得されるようになります。
+> `Microsoft.CodeAnalysis.NetAnalyzers`可能な場合は、 [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)をインストールするのではなく、.net SDK からアナライザーを有効にすることをお勧めします。 .NET SDK からアナライザーを有効にすると、SDK を更新するとすぐにアナライザーのバグ修正と新しいアナライザーが自動的に取得されるようになります。 NuGet モデルでは、最新のバグ修正が必要になるたびに NuGet パッケージを更新する必要があります。 NuGet パッケージがより頻繁に更新されます。
 
 ## <a name="see-also"></a>関連項目
 
