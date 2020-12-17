@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567af541b819186bda3dc869628c2812be9888b8
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 48dcb2d01e53502c371595048666fd94c267b6ec
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039589"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646386"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -69,7 +69,7 @@ ms.locfileid: "96039589"
 
 **Q**: FxCop アナライザーと .net アナライザーの違いは何ですか。
 
-**A**: fxcop アナライザーと .net アナライザーはどちらも、fxcop CA 規則の .NET Compiler Platform ("Roslyn") アナライザーの実装を参照します。 Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 [FxCop アナライザーから .net analyzer に移行することを](migrate-from-fxcop-analyzers-to-net-analyzers.md)検討してください。
+**A**: fxcop アナライザーと .net アナライザーはどちらも、fxcop CA 規則の .NET Compiler Platform ("Roslyn") アナライザーの実装を参照します。 Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 [FxCop アナライザーから .net analyzer に移行することを](migrate-from-fxcop-analyzers-to-net-analyzers.md)検討してください。
 
 ## <a name="treat-warnings-as-errors"></a>警告をエラーとして扱う
 
@@ -100,7 +100,7 @@ ms.locfileid: "96039589"
 
 **Q**: ソリューションのコード分析プロパティページはどこにありますか。
 
-**A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、CodeAnalysisRuleSet プロパティを使用して、プロパティグループを共有 props/targets ファイルまたはディレクトリに定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、その [ようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。このディレクトリは、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされ](../msbuild/customize-your-build.md)ます。
+**A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、 [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) プロパティを使用して、プロパティグループを共有 props/targets ファイルまたは *ディレクトリ* に定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、そのようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。この [ファイル](../msbuild/customize-your-build.md) は、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされます。
 
 ## <a name="see-also"></a>関連項目
 
