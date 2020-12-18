@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d4bc0417d30d64a05cc7f283784d3b23d9adee
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134028"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668873"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio での XAML ホットリロードを使用した実行中の XAML コードの作成とデバッグ
 
@@ -41,7 +41,7 @@ XAML ホットリロードは、次のような場合に特に役立ちます。
 ![XAML ホット リロード](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
-> Visual Studio XAML ホットリロードは、現在、Visual Studio でアプリケーションを実行している場合、またはデバッガーがアタッチされた ( **F5** または **デバッグを開始** する) Blend for Visual Studio 場合にのみサポートされます。 [環境変数を手動で設定](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)しない限り、[プロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を使用してこのエクスペリエンスを有効にすることはできません。
+> Visual Studio XAML ホットリロードは、現在、Visual Studio でアプリケーションを実行している場合、またはデバッガーがアタッチされた (**F5** または **デバッグを開始** する) Blend for Visual Studio 場合にのみサポートされます。 [環境変数を手動で設定](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)しない限り、[プロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を使用してこのエクスペリエンスを有効にすることはできません。
 
 ## <a name="known-limitations"></a>既知の制限事項
 
@@ -49,13 +49,13 @@ XAML ホットリロードの既知の制限事項を次に示します。 に�
 
 |制限事項|WPF|UWP|Notes|
 |-|-|-|-|
-|アプリの実行中にイベントをコントロールに接続する|サポートされていません|サポートされていません|「エラー: *イベントを確認できませんでした* 」を参照してください。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
-|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや *app.xaml* など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポート|例: を `SolidColorBrush` として使用するために、をリソースディクショナリに追加 `StaticResource` します。</br>注: 静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリのプロパティを変更 `Source` しています。|
+|アプリの実行中にイベントをコントロールに接続する|サポートされていません|サポートされていません|「エラー: *イベントを確認できませんでした*」を参照してください。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
+|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや *app.xaml* など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポートされています|例: を `SolidColorBrush` として使用するために、をリソースディクショナリに追加 `StaticResource` します。</br>注: 静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリのプロパティを変更 `Source` しています。|
 |アプリの実行中に新しいコントロール、クラス、ウィンドウ、またはその他のファイルをプロジェクトに追加する|サポートされていません|サポートされていません|なし|
 |NuGet パッケージの管理 (パッケージの追加/削除/更新)|サポートされていません|サポートされていません|なし|
-|{X:Bind} markup extension を使用するデータバインディングの変更|N/A|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
+|{X:Bind} markup extension を使用するデータバインディングの変更|該当なし|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
 |X:Uid ディレクティブの変更はサポートされていません|なし|サポートしていません。|なし|
-|複数のプロセス | サポート | サポート | Visual Studio 2019 [バージョン 16.6](/visualstudio/releases/2019/release-notes-v16.6) 以降でサポートされています |
+|複数のプロセス | サポートされています | サポートされています | Visual Studio 2019 [バージョン 16.6](/visualstudio/releases/2019/release-notes-v16.6) 以降でサポートされています |
 
 ## <a name="error-messages"></a>エラー メッセージ
 
@@ -64,7 +64,7 @@ XAML ホットリロードの使用中に、次のエラーが発生する場合
 |エラー メッセージ|説明|
 |-|-|
 |イベントが失敗したことを確認する|[エラー] は、アプリケーションの実行中にサポートされていないコントロールの1つにイベントを送信しようとしていることを示します。|
-|この変更は、XAML ホットリロードではサポートされておらず、デバッグセッション中に適用されません。|エラーは、実行しようとしている変更が XAML ホットリロードでサポートされていないことを示します。 デバッグセッションを停止し、変更を加えてから、デバッグセッションを再開します。 サポートが必要なサポートされていないシナリオが見つかった場合は、 [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)の新しい [機能の提案] オプションを使用してください。 |
+|この変更は、XAML ホットリロードではサポートされておらず、デバッグセッション中に適用されません。|エラーは、実行しようとしている変更が XAML ホットリロードでサポートされていないことを示します。 デバッグセッションを停止し、変更を加えてから、デバッグセッションを再開します。 サポートが必要なサポートされていないシナリオが見つかった場合は、 [Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)の新しい [機能の提案] オプションを使用してください。 |
 
 ## <a name="see-also"></a>関連項目
 
