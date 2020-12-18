@@ -1,5 +1,5 @@
 ---
-title: XML スキーマ デザイナーでスタート ビューからワークスペースにノードを追加する
+title: スタート ビューからワークスペースにノードを追加する
 description: スタート ビューでコマンドを使用して、XML スキーマ デザイナー ワークスペースにノードを追加する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c456220ecf8fbe17ce65372c4f7904f54181fe2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b2a30297cd2ede7293929604046550f78427b2a0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049271"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995318"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>方法: スタート ビューからワークスペースにノードを追加する
 
@@ -29,7 +29,7 @@ ms.locfileid: "93049271"
 
      スタート ビューが表示されます。
 
-     **[スキーマ セットの詳細]** セクションには、 **2** つの **[グローバル複合型]** があります。
+     **[スキーマ セットの詳細]** セクションには、**2** つの **[グローバル複合型]** があります。
 
 3. **[グローバル複合型]** 見出しの右側にある **[追加]** リンクをクリックします。
 

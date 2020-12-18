@@ -1,6 +1,6 @@
 ---
-title: XML スキーマ デザイナー:グラフ ビューを使用してスキーマ セットの概要を表示する
-description: XML スキーマ エクスプローラーでグラフ ビューを使用して、スキーマ セット内のノードの概要とノード間のリレーションシップを表示する方法について説明します。
+title: スキーマ セットの概要を取得する
+description: XML スキーマ デザイナー:XML スキーマ エクスプローラーでグラフ ビューを使用して、スキーマ セット内のノードの概要とノード間のリレーションシップを表示する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 553b9f2d84f70c75ebcee40cdffe044237c23a5f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 699167f8fe3662bbb162706f3f9fc6e5d53d82dc
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398489"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995292"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>方法: グラフ ビューを使用してスキーマ セットの概要を表示する
+# <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>方法:グラフ ビューを使用してスキーマ セットの概要を表示する
 
 このトピックでは、[グラフ ビュー](../xml-tools/graph-view.md)を使用して、スキーマ セット内のノードの概要とノード間のリレーションシップを表示する方法について説明します。
 
