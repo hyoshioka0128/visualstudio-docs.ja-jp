@@ -182,11 +182,11 @@
       href: ide/visual-studio-search.md
     - name: ソリューションとプロジェクト
       items:
-        - name: ソリューションとプロジェクトの使用
+        - name: ソリューションとプロジェクトについて学習する
           href: ide/solutions-and-projects-in-visual-studio.md
         - name: 新しいプロジェクトを作成する
           href: ide/create-new-project.md
-        - name: ソリューションとプロジェクトを作成する
+        - name: ソリューションとプロジェクトの使用
           href: ide/creating-solutions-and-projects.md
         - name: リポジトリからプロジェクトを開く
           href: get-started/tutorial-open-project-from-repo.md
