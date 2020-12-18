@@ -2,19 +2,19 @@
 title: パフォーマンスを向上させるためのヒント
 description: パフォーマンスを向上させるために、使用していない可能性のある特定の Visual Studio 機能を最適化する方法を説明します。
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479616"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488181"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
@@ -71,7 +71,7 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 
     CPU プロファイルを使い終わったら無効にすることをお勧めします。 この機能は大量のリソースを使う場合があります。 CPU プロファイルを有効にすると、後続のデバッグ セッションを通してその状態が維持されるので、終了したら明示的にオフにする必要があります。 診断ツールで提供される機能が必要ない場合は、デバッグ中に診断ツールを無効にすることで、リソースを節約できる場合があります。
 
-    **診断ツール** を無効にするには、デバッグ セッションを開始し、 **[ツール]**  >  **[オプション]**  >  **[デバッグ中に診断ツールを有効にする]** の順に選択して、オプションを無効にします。
+    **診断ツール** を無効にするには、デバッグ セッションを開始し、 **[ツール]**  >  **[オプション]**  >  **[デバッグ]**  >  **[全般]** の順に選択した後、 **[デバッグ中に診断ツールを有効にする]** オプションをオフにします。
 
     詳しくは、「[Visual Studio のプロファイリング機能ツアー](../profiling/profiling-feature-tour.md)」をご覧ください。
 

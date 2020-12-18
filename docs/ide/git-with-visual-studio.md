@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878310"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524093"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio での Git エクスペリエンス
 
@@ -187,9 +187,9 @@ Visual Studio のマージ エディターは、入力方向の変更、現在�
 
 :::image type="content" source="media/git-options-settings.png" alt-text="パーソナル化とカスタマイズの設定を選択できる、Visual Studio IDE の [オプション] ダイアログ ボックス ":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Visual Studio で従来のチーム エクスプローラー エクスペリエンスを使用する方法
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Visual Studio でチーム エクスプローラーの完全なエクスペリエンスを使用する方法
 
-新しい Git エクスペリエンスは、[バージョン 16.8](/visualstudio/releases/2019/release-notes/) 以降の Visual Studio 2019 での既定のバージョン管理システムです。 しかし、それを無効にしたい場合は、そのようにできます。 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[プレビュー機能]** の順に移動してから、 **[New Git user experience]\(新しい Git ユーザー エクスペリエンス\)** チェックボックスを切り替えます。これにより、従来のチーム エクスプローラー エクスペリエンスに戻ります。
+新しい Git エクスペリエンスは、[バージョン 16.8](/visualstudio/releases/2019/release-notes/) 以降の Visual Studio 2019 での既定のバージョン管理システムです。 しかし、それを無効にしたい場合は、そのようにできます。 **[ツール]**  >  **[オプション]**  >  **[環境]**  >  **[プレビュー機能]** の順に移動してから、 **[New Git user experience]\(新しい Git ユーザー エクスペリエンス\)** チェックボックスを切り替えます。これにより、Git のチーム エクスプローラーに戻ります。
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio の [オプション] ダイアログ ボックスの [プレビュー機能] セクション ":::
 

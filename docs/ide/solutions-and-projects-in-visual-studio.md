@@ -1,8 +1,8 @@
 ---
 title: ソリューションとプロジェクト
-description: Visual Studio のプロジェクトとソリューション、およびソリューション エクスプローラー ツールを使用して新しいプロジェクトを作成する方法について説明します。
+description: Visual Studio のプロジェクトとソリューションの概要、テンプレートから新しいプロジェクトを作成する方法、ソリューション エクスプローラーでプロジェクトを表示および管理する方法について説明します。
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/15/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
+ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480708"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97578254"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -53,6 +53,8 @@ Visual Studio では、[MSBuild](../msbuild/msbuild.md) を使用してソリュ
 
 プロジェクトは *ソリューション* 内に含まれます。 ソリューションは、その名前にもかかわらず、"答え" ではありません。 1 つ以上の関連するプロジェクト、およびビルド情報、Visual Studio ウィンドウの設定、特定のプロジェクトに関連付けられていないその他のファイルに対するコンテナーに過ぎません。 ソリューションは独自の形式を持つテキスト ファイル (拡張子 *.sln*) で記述され、手動での編集は想定されていません。
 
+### <a name="solution-file"></a>ソリューション ファイル
+
 Visual Studio では、ソリューションの設定を格納するために、2 種類のファイル ( *.sln* および *.suo*) を使用します。
 
 |拡張子|名前|説明|
@@ -60,13 +62,17 @@ Visual Studio では、ソリューションの設定を格納するために、
 |.sln|Visual Studio ソリューション|ソリューション内のプロジェクト、プロジェクト項目、およびソリューション項目を整理します。|
 |.suo|ソリューション ユーザー オプション|ユーザー レベルの設定やブレークポイントなどのカスタマイズを格納します。|
 
+### <a name="solution-folder"></a>ソリューション フォルダー
+
+"ソリューション フォルダー" は、**ソリューション エクスプローラー** にのみ存在する仮想フォルダーで、ソリューション内のプロジェクトをグループ化するために使用できます。 コンピューター上のソリューション ファイルを検索する場合は、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトおよびソリューション]**  >  **[場所]** にアクセスします。 詳細については、「[[オプション] ダイアログ ボックス:[プロジェクトおよびソリューション] > [場所]](./reference/projects-solutions-locations-options.md)」を参照してください。
+
 ## <a name="create-new-projects"></a>新しいプロジェクトの作成
 
 新しいプロジェクトを作成する最も簡単な方法は、特定の種類のアプリケーションまたは Web サイトのプロジェクト テンプレートから始めることです。 プロジェクト テンプレートは、生成済みのコード ファイル、構成ファイル、資産、設定の基本セットで構成されます。 これらのテンプレートは、新しいプロジェクトを作成するダイアログ ボックスで利用できます ( **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** )。 詳細については、「[Visual Studio で新しいプロジェクトを作成する](create-new-project.md)」と「[ソリューションとプロジェクトを作成する](../ide/creating-solutions-and-projects.md)」を参照してください。
 
 特定の方法で、頻繁にプロジェクトをカスタマイズする場合、新しいプロジェクトを作成するために使用できるカスタム プロジェクト テンプレートを作成できます。 詳細については、[プロジェクト テンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)に関するページをご覧ください。
 
-作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトとソリューション]**  >  **[場所]** の **[プロジェクトの場所]** で変更できます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](../ide/reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
+作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトとソリューション]**  >  **[場所]** の **[プロジェクトの場所]** で変更できます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](./reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
 
 ## <a name="solution-explorer"></a>ソリューション エクスプローラー
 

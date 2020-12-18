@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098528"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -186,7 +186,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|所有者カテゴリは、単体テスト フレームワークによって定義されます。所有者の文字列値を指定する必要があります。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先度カテゴリは、単体テスト フレームワークによって定義されます。優先度の整数値を指定する必要があります。|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 属性を使用すると、値なしでカテゴリを指定できます。|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 属性を使用すると、単体テストのカテゴリを指定できます。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty 属性を使用すると、特徴のカテゴリ/値のペアを定義できます。|
 
 
@@ -234,7 +234,16 @@ Visual Studio 2019 バージョン 16.7 以降では、ツールバーの **[編
 
 ![プレイリスト xml ファイル](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-特徴のプレイリストを作成する場合は、次の形式を使用します。 `TestCategory` の名前と `[Value]` の間にスペースがあることを確認してください。
+特徴のプレイリストを作成する場合は、次の形式の MSTest を使用します。
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+次の形式の xUnit を使用します。 `TestCategory` の名前と `[Value]` の間にスペースがあることを確認してください。
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">

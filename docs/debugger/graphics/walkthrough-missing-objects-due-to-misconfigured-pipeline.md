@@ -1,5 +1,6 @@
 ---
 title: パイプラインの構成が不適切なことによるオブジェクトの不足
+description: 正しく構成されていないパイプラインを検出する調査について説明します。 [グラフィックス イベント一覧]、[グラフィックス パイプライン ステージ]、[グラフィックス イベント呼び出し履歴] の使用方法が示されます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189850"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995015"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>チュートリアル: パイプラインの構成が不適切なことによるオブジェクトの不足
 このチュートリアルでは、ピクセル シェーダーが設定されていないことが原因で表示されないオブジェクトを調査するために、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断ツールを使用する方法を示します。

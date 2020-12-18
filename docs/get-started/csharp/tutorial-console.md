@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508179"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527917"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -49,13 +49,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 2. 上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
    (または、**Ctrl**+**Shift**+**N** キーを押します)。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに ***Calculator*** という名前を付けます。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに **_Calculator_* _ という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
-**コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発**ワークロードを追加して取得できます。 ここではその方法を説明します。
+_ *コンソール アプリ (.NET Core)* * プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発** ワークロードを追加して取得できます。 ここではその方法を説明します。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 
@@ -311,7 +311,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 今度は、数値を 0 で割ると、別の値の入力を求められます。 さらに良い点:ゼロ以外の数値を入力するまで、入力要求は停止しません。
 
-   ![0 除算エラーが表示されている Visual Studio のコード エディター](./media/csharp-console-calculator-dividebyzero.png)
+   ![0 除算エラーを修正しました](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>"書式" エラーを修正する
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>次の手順
 
+:::moniker range="vs-2017"
+
+さらにチュートリアルを続ける:
+
+> [!div class="nextstepaction"]
+> [C# チュートリアル](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Visual Studio IDE をツアーする](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 このチュートリアルの第 2 部、
 
 > [!div class="nextstepaction"]
 > 「[パート 2 に続く](tutorial-console-part-2.md)」に進んでください。
+:::moniker-end
 
 ## <a name="see-also"></a>関連項目
 

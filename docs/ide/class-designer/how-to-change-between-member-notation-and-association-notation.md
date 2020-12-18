@@ -1,6 +1,6 @@
 ---
-title: メンバーおよび関連付け表記の間で変更する (クラス デザイナー)
-description: クラス ダイアグラムで 2 つの型の間の関連付けの関係が表される方法を、メンバー表記から関連付け表記に、またはその逆に変更する方法について説明します。
+title: メンバーおよび関連付け表記の間で変更する
+description: クラス デザイナーでクラス ダイアグラムにより 2 つの型の間の関連付けの関係が表される方法を、メンバー表記から関連付け表記に、またはその逆に変更する方法を説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d26b6ca1c71fe3484544f02006a27866ff4843
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901662"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933571"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>方法: クラス デザイナーでメンバー表記と関連付け表記の間で変更する
 

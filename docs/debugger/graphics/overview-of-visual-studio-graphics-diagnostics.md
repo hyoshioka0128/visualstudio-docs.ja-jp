@@ -1,7 +1,7 @@
 ---
 title: グラフィックス診断の概要 | Microsoft Docs
-description: Visual Studio グラフィックス診断の大まかな概要
-ms.custom: seodec18
+description: Visual Studio のグラフィックス診断は、Direct3D アクティビティをログに記録し、そのログを分析してレンダリングとパフォーマンスに関する問題をトラブルシューティングするための一連のツールです。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671407"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996137"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の概要
 Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレンダリングとパフォーマンスを記録し、問題を分析するためのツール セットです。 グラフィックス診断は、Windows PC 上のローカルで、またはリモートの PC やデバイス上で実行されているアプリに対して使用できます。
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>グラフィックス診断を使用したレンダリング問題のデバッグ
- グラフィックを多用したアプリのレンダリングに関する問題のデバッグは、デバッガーを起動してコードをステップ実行するような簡単な作業ではありません。 各フレームでは、状態、データ、パラメーター、およびコードの複雑なセットに応じて、何百何千もの一意のピクセルが生成され、そのような診断対象のうち、問題が発生しているのはほんの少数である場合があります。 さらに複雑なことに、各ピクセルを生成するコードは、何百ものピクセルを並列に処理する特別なハードウェアで実行されます。 スレッドが少ないコードに対してさえ活用が困難な従来のデバッグ ツールおよび方法は、大量のデータに対応するときに役に立ちません。
+ グラフィックスを多用したアプリのレンダリングに関する問題のデバッグは、デバッガーを起動してコードをステップ実行するような簡単な作業ではありません。 各フレームでは、状態、データ、パラメーター、およびコードの複雑なセットに応じて、何百何千もの一意のピクセルが生成され、そのような診断対象のうち、問題が発生しているのはほんの少数である場合があります。 さらに複雑なことに、各ピクセルを生成するコードは、何百ものピクセルを並列に処理する特別なハードウェアで実行されます。 スレッドが少ないコードに対してさえ活用が困難な従来のデバッグ ツールおよび方法は、大量のデータに対応するときに役に立ちません。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断ツールは、レンダリングに関する問題の特定に役立つように設計されています。まず、問題を示している表示の不具合から開始して、次に、アプリのソース コード内で、関連するシェーダー コード、パイプライン ステージ、描画呼び出し、リソース、およびデバイスの状態だけに注目することにより問題の原因までさかのぼってトレースします。
 

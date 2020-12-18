@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878297"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362393"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -136,9 +136,9 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 ### <a name="git-productivity"></a>Git の生産性
 
-**16.8 の新機能** Git が Visual Studio 2019 での既定のバージョン管理エクスペリエンスになりました。 過去 2 回のリリースにおけるフィードバックに基づいて機能セットを構築し、その反復処理を行いました。 新しいエクスペリエンスは、あらゆるユーザーに対して、既定でオンになっています。 新しい Git メニューから、リポジトリをクローンしたり、作成したり、開いたりできます。 統合された Git ツール ウィンドウを使用し、変更をコミットして自分のコードにプッシュしたり、ブランチを管理したり、リモート リポジトリで最新の状態を維持したり、マージ競合を解決したりします。
+**16.8 の新機能**:Git が Visual Studio 2019 での既定のバージョン管理エクスペリエンスになりました。 過去 2 回のリリースにおけるフィードバックに基づいて機能セットを構築し、その反復処理を行いました。 新しいエクスペリエンスは、あらゆるユーザーに対して、既定でオンになっています。 新しい Git メニューから、リポジトリをクローンしたり、作成したり、開いたりできます。 統合された Git ツール ウィンドウを使用し、変更をコミットして自分のコードにプッシュしたり、ブランチを管理したり、リモート リポジトリで最新の状態を維持したり、マージ競合を解決したりします。
 
-詳細については、[Visual Studio の Git 生産性](git-with-visual-studio.md)に関するページを参照してください。
+詳細については、「[Visual Studio での Git エクスペリエンス](git-with-visual-studio.md)」ページを参照してください。
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ Visual Studio 2019 は、より優れた開発を可能にする新機能で頻�
 
    Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-notes/) で新しい Git バージョン管理エクスペリエンスが既定でオンになるようになりましたが、最新のプレビュー リリースでエクスペリエンスを向上させるため、機能が引き続き追加されます。
 
-   詳細については、[Visual Studio の Git 生産性](git-with-visual-studio.md)に関するページを参照してください。
+   詳細については、「[Visual Studio での Git エクスペリエンス](git-with-visual-studio.md)」ページを参照してください。
 
 プレビュー リリースの詳細および試したい場合のダウンロード リンクについては、「 **[Visual Studio Preview](https://aka.ms/vspreview/)** 」ページを参照してください。
 
@@ -240,6 +240,7 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 
 ## <a name="see-also"></a>関連項目
 
+* [Visual Studio ドキュメントの最新情報](whats-new-visual-studio-docs.md)
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 for Mac リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)

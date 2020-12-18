@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211176"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050829"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -65,7 +65,7 @@ Visual Studio またはそのインストーラーで発生した問題を報告
 
 Microsoft では、イシューに重要な情報が含まれていない場合、"**詳細情報が必要**" 状態を割り当てます。 必要な特定の情報と合わせてイシューについてコメントし、ユーザーは電子メール通知を受け取ります。 7 日以内に情報を受信しない場合は、ユーザーにリマインダーを送信します。 その後、14 日間の非アクティブ状態を経て、チケットを終了します。
 
-1. 電子メールに含まれるリンクをクリックして問題のレポートに進むか、[マイ フィードバック] に進み、"**詳細情報が必要**" 状態のすべてのレポートを確認します。
+1. 電子メールに含まれるリンクに移動して問題のレポートに進むか、ホーム ページに進み、"**詳細情報が必要**" 状態のすべてのレポートを確認します。
 
     ![マイ フィードバック](../ide/media/feedback-my-feedback.png)
 

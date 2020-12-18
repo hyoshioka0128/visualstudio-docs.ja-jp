@@ -1,5 +1,7 @@
 ---
 title: DLL プロジェクトからデバッグする | Microsoft Docs
+Description: プロジェクト自体から DLL プロジェクトのデバッグを開始するには、プロジェクトのプロパティで呼び出し元のアプリを指定します。 詳しくは、この記事をご覧ください。
+ms.custom: SEO-VS-2020
 ms.date: 10/10/2018
 ms.topic: how-to
 dev_langs:
@@ -18,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1102eb61f6cfda42f6e4e879f5c592c0c064ce0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 723f35142ec125c016caa3653be450b61fb05d02
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852140"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398559"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>方法: Visual Studio で DLL プロジェクトからデバッグする (C#、C++、Visual Basic、F#)
 
 DLL プロジェクトをデバッグする 1 つの方法は、DLL プロジェクトのプロパティで呼び出し元のアプリを指定することです。 その後、DLL プロジェクト自体からデバッグを開始できます。 この方法を使用するには、アプリにより、構成した場所と同じ場所にある同じ DLL を呼び出す必要があります。 アプリによって、DLL の異なるバージョンが検出されて読み込まれた場合、そのバージョンにブレークポイントは含まれません。 DLL をデバッグするその他の方法については、[DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)に関するページを参照してください。
 
-お使いのマネージド アプリでネイティブ DLL を呼び出すか、ネイティブ アプリでマネージド DLL を呼び出す場合、DLL と呼び出し元のアプリの両方をデバッグできます。 詳細については、「[方法:混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)
+お使いのマネージド アプリでネイティブ DLL を呼び出すか、ネイティブ アプリでマネージド DLL を呼び出す場合、DLL と呼び出し元のアプリの両方をデバッグできます。 詳細については、[混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)
 
 ネイティブ DLL プロジェクトとマネージド DLL プロジェクトでは、呼び出し元のアプリを指定する設定が異なります。
 
 ## <a name="specify-a-calling-app-in-a-native-dll-project"></a>ネイティブ DLL プロジェクトで呼び出し元のアプリを指定する
 
-1. **[ソリューション エクスプローラー]** で C++ DLL プロジェクトを選択します。 **[プロパティ]** アイコンを選択して**Alt**+**Enter**キーを押すか、右クリックして **[プロパティ]** を選択します。
+1. **[ソリューション エクスプローラー]** で C++ DLL プロジェクトを選択します。 **[プロパティ]** アイコンを選択して **Alt**+**Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[\<Project> プロパティ ページ]** ダイアログ ボックスで、ウィンドウの上部にある **[構成]** フィールドが **[デバッグ]** に設定されていることを確認します。
 
@@ -53,7 +55,7 @@ DLL プロジェクトをデバッグする 1 つの方法は、DLL プロジェ
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>マネージド DLL プロジェクトで呼び出し元のアプリを指定する
 
-1. **[ソリューション エクスプローラー]** で、C# DLL プロジェクトまたは Visual Basic DLL プロジェクトを選択します。 **[プロパティ]** アイコンを選択して**Alt**+**Enter**キーを押すか、右クリックして **[プロパティ]** を選択します。
+1. **[ソリューション エクスプローラー]** で、C# DLL プロジェクトまたは Visual Basic DLL プロジェクトを選択します。 **[プロパティ]** アイコンを選択して **Alt**+**Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
 
 1. ウィンドウの上部にある **[構成]** フィールドが **[デバッグ]** に設定されていることを確認します。
 

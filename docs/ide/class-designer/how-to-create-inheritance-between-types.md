@@ -1,5 +1,5 @@
 ---
-title: '方法: 型の間の継承を作成する (クラス デザイナー)'
+title: 型間で継承を作成する
 description: クラス デザイナーを使用してクラス ダイアグラム上の 2 つの型間の継承関係を作成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199f220529b28d4ca0c668d30564da65f6553e0e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 064ae443c264187e7666b7aaabde27d6705388a4
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901467"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933480"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の継承を作成する
 
