@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 拡張機能の配布 |Microsoft Docs
+description: .Vsix ファイルの使用、発行、ローカライズ、更新など、Visual Studio SDK 拡張機能を発行および管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700120"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716004"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 拡張機能の配布
 拡張機能の開発が完了したら、他のコンピューターにインストールしたり、友人や同僚と共有したり、Visual Studio Marketplace に公開したりすることができます。 このセクションでは、拡張機能を発行して維持するために必要なすべての操作について説明します。 .vsix ファイルの使用、発行、ローカライズ、および更新です。
@@ -30,12 +32,12 @@ ms.locfileid: "80700120"
  VSIX 形式では、コードスニペットのインストールはサポートされていません。 また、グローバルアセンブリキャッシュ (GAC) への書き込みやシステムレジストリへの書き込みなど、他の特定のシナリオもサポートしていません。 のインストールで GAC またはレジストリに書き込む必要がある場合は、Windows インストーラーを使用する必要があります。 詳細については、「 [Windows インストーラー展開用の拡張機能の準備](../extensibility/preparing-extensions-for-windows-installer-deployment.md)」を参照してください。
 
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>拡張機能を Visual Studio Marketplace に発行する
- 拡張機能を他のユーザーに配布するには、.vsix ファイルを郵送するか、サーバーに配置します。 しかし、多くの人の手でコードを取得する最善の方法は、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)に配置することです。 **拡張機能と更新プログラム**を使用して Visual Studio ユーザーが Visual Studio Marketplace 拡張機能を使用できるようになります。 詳細については、「 [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。
+ 拡張機能を他のユーザーに配布するには、.vsix ファイルを郵送するか、サーバーに配置します。 しかし、多くの人の手でコードを取得する最善の方法は、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)に配置することです。 **拡張機能と更新プログラム** を使用して Visual Studio ユーザーが Visual Studio Marketplace 拡張機能を使用できるようになります。 詳細については、「[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。
 
  拡張機能を Visual Studio Marketplace にアップロードする方法を示す完全な例については、「 [チュートリアル: Visual Studio 拡張機能の発行](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)」を参照してください。
 
 ## <a name="private-galleries"></a>Private Galleries
- コントロール、テンプレート、およびツールを開発するときに、イントラネット上のプライベートギャラリーに投稿することで、それらを組織と共有できます。 詳細については、「 [Private Galleries](../extensibility/private-galleries.md)」を参照してください。
+ コントロール、テンプレート、およびツールを開発するときに、イントラネット上のプライベートギャラリーに投稿することで、それらを組織と共有できます。 詳細については、「 [プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
 
 ## <a name="localizing-your-extension"></a>拡張機能のローカライズ
  拡張機能を別のロケールでリリースする予定の場合は、ローカライズを検討する必要があります。 関連項目の詳細については、「 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)」を参照してください。
@@ -57,6 +59,6 @@ ms.locfileid: "80700120"
 |[方法: VSIX パッケージへの依存関係の追加](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 配置パッケージへの参照を追加する方法について説明します。|
 |[Windows インストーラーの配置に関する拡張機能を準備する](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Windows インストーラーを使用して拡張機能をデプロイする方法について説明します。|
 |[VSIX パッケージの署名](../extensibility/signing-vsix-packages.md)|VSIX パッケージに署名する方法について説明します。|
-|[プライベート ギャラリー](../extensibility/private-galleries.md)|拡張機能用のプライベートギャラリーを作成する方法について説明します。|
+|[プライベートギャラリー](../extensibility/private-galleries.md)|拡張機能用のプライベートギャラリーを作成する方法について説明します。|
 |[複数バージョンの Visual Studio をサポートする](../extensibility/supporting-multiple-versions-of-visual-studio.md)|拡張機能で Visual Studio の複数のバージョンをサポートする方法を示します。|
 |[Visual Studio の検出](locating-visual-studio.md)|カスタム拡張機能の展開のために Visual Studio インスタンスを検索する方法について説明します。|

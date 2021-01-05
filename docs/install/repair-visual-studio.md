@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007118"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668535"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio を修復します
 
@@ -32,14 +32,14 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 > Windows インストーラーなど、基になる Windows サービスの問題によってインストールの問題が発生した場合は、修復によって同じ問題が発生する可能性があります。 システムの問題には、破損した Windows インストーラーや不安定なインターネット接続などがあります。 システムの問題を確認するには、インストール操作から生成されたエラー レポートを使用します。
 
 > [!NOTE] 
-> Visual Studio を修復すると、ユーザー設定がリセットされ、既にあるアセンブリが再インストールされます。 製品の問題が発生している場合は、修復によって問題が解決されない可能性があるため、[Visual Studio フィードバック チケット](https://developercommunity.visualstudio.com/content/problem/post.html?space=8)を作成します。
+> Visual Studio を修復すると、ユーザー設定がリセットされ、既にあるアセンブリが再インストールされます。 製品の問題が発生している場合は、修復によって問題が解決されない可能性があるため、[Visual Studio フィードバック チケット](https://aka.ms/feedback/suggest?space=8)を作成します。
 
 ## <a name="how-to-repair"></a>修復方法
 ::: moniker range="vs-2017"
 
 1. コンピューター上の **Visual Studio インストーラー** を見つけます。
 
-     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、 **Visual Studio インストーラー** としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、**Visual Studio インストーラー** としてリスト表示される **V** の文字までスクロールします。
 
    > [!NOTE]
    > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー** として **"M"** の項に表示される場合があります。

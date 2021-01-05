@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398996"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668366"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -155,7 +155,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 他のいくつかのサポート オプションを次に示します。
 
 * Visual Studio インストーラーおよび Visual Studio IDE の両方に表示される [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) ツールから、製品の問題を Microsoft に報告してください。
-* [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)で機能の提案、製品の問題の追跡、回答の検索を行うことができます。
+* [Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で機能の提案、製品の問題の追跡、回答の検索を行うことができます。
 * [Gitter コミュニティの Visual Studio に関するスレッド](https://gitter.im/Microsoft/VisualStudio)で、ご自分の [GitHub ](https://github.com/) アカウントを使って Microsoft や他の Visual Studio 開発者と情報を交換することもできます。
 
 ## <a name="see-also"></a>関連項目

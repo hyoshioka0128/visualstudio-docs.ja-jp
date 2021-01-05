@@ -1,5 +1,7 @@
 ---
 title: ソース管理プラグインの用語集 |Microsoft Docs
+description: この記事には、ソース管理プラグイン SDK ドキュメントに関連する便利な用語と定義が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699904"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715406"
 ---
 # <a name="source-control-plug-in-glossary"></a>ソース管理プラグインの用語集
 次の便利な用語と定義は、ソース管理プラグイン SDK ドキュメントに関連しています。
@@ -50,5 +52,5 @@ ms.locfileid: "80699904"
 
  リビジョンファイルまたは一連のファイルの履歴の変更をコミットします。 リビジョンは、継続的に変化するプロジェクト内の1つのスナップショットです。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)

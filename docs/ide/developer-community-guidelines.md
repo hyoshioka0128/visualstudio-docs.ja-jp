@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116151"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668561"
 ---
 # <a name="developer-community-guidelines"></a>開発者コミュニティのガイドライン
 
@@ -21,13 +21,13 @@ ms.locfileid: "92116151"
 
 ## <a name="submitting-problems-and-suggestions"></a>問題と提案の送信
 
-[Visual Studio Developer Community](https://developercommunity.visualstudio.com/) では、Visual Studio に関するイシューと機能の提案を追跡できます。
+[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) では、Visual Studio に関するイシューと機能の提案を追跡できます。
 
 ### <a name="before-submitting-an-issue"></a>イシューを送信する前に
 
 Visual Studio Developer Community でイシューを検索して、それがまだ存在していないことを確認します。 イシューが既に存在する場合は、関連するコメントを作成して、投票してください。
 
-イシューが質問の場合は、 _visual-studio_ タグを使用して、 [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) でコミュニティに質問します。 そのタグを監視するカスタマー サポートのスタッフがいるので、質問への回答を Microsoft が支援します。
+イシューが質問の場合は、_visual-studio_ タグを使用して、[Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest) でコミュニティに質問します。 そのタグを監視するカスタマー サポートのスタッフがいるので、質問への回答を Microsoft が支援します。
 
 バグまたは機能について説明している既存のイシューが見つからない場合は、次のガイドラインを使用して問題を送信します。
 
@@ -42,7 +42,7 @@ Visual Studio Developer Community でイシューを検索して、それがま�
 - 各イシューには、次の手順を含めます。
 
   - 再現可能な手順 (1... 2... 3...)、および想定したことと経験したことの比較。
-  - 画像、アニメーション、またはビデオへのリンク。 画像とアニメーションは再現手順を示していますが、それらを _置き換えないでください_ 。
+  - 画像、アニメーション、またはビデオへのリンク。 画像とアニメーションは再現手順を示していますが、それらを _置き換えないでください_。
   - 必要に応じて、イシュー、またはコード リポジトリへのリンクを示すコード スニペット。これを使用すると、マシンにプルして、イシューを簡単に再作成できます。
 
 - 次の手順を必ず実行してください。
@@ -65,7 +65,7 @@ Visual Studio Developer Community でイシューを検索して、それがま�
 
 ### <a name="missing-important-information"></a>重要な情報が含まれていない
 
-Microsoft では、イシューに重要な情報が含まれていない場合、" _詳細情報が必要_ " 状態を割り当てます。 必要な特定の情報と合わせてイシューについてコメントし、ユーザーは電子メール通知を受け取ります。 7 日以内に情報を受信しない場合は、ユーザーにリマインダーを送信します。 その後、14 日間の非アクティブ状態を経て、チケットを終了します。
+Microsoft では、イシューに重要な情報が含まれていない場合、"_詳細情報が必要_" 状態を割り当てます。 必要な特定の情報と合わせてイシューについてコメントし、ユーザーは電子メール通知を受け取ります。 7 日以内に情報を受信しない場合は、ユーザーにリマインダーを送信します。 その後、14 日間の非アクティブ状態を経て、チケットを終了します。
 
 ### <a name="other-product"></a>その他の製品
 
@@ -99,7 +99,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 これらの質問の 1 つでも、答えが "はい" ではない場合は、終了します。 しかし、多くの場合、提案は _[レビュー中]_ としてオープンのままとなります。
 
-提案が製品の全体的な方向性と一致しない場合は、" *スコープ外* " として閉じます。 たとえば、Visual Studio ファミリ製品の他のメンバーに同様の投資がある場合があります。 または、提案された機能は少数の人にのみ関連しているため、拡張機能を提供する方が適していることがあります。
+提案が製品の全体的な方向性と一致しない場合は、"*スコープ外*" として閉じます。 たとえば、Visual Studio ファミリ製品の他のメンバーに同様の投資がある場合があります。 または、提案された機能は少数の人にのみ関連しているため、拡張機能を提供する方が適していることがあります。
 
 [提案の状態とよくあるご質問](./report-a-problem.md)に関する記事を参照して、機能の提案の進行状況を追跡します。
 
@@ -117,4 +117,4 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 ## <a name="next-steps"></a>次の手順
 
-問題の報告、機能の提案、または既存のチケットを使用した閲覧を行うには、[Visual Studio Developer Community](https://developercommunity.visualstudio.com/) にアクセスしてください。 それではお楽しみください。
+問題の報告、機能の提案、または既存のチケットを使用した閲覧を行うには、[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) にアクセスしてください。 それではお楽しみください。

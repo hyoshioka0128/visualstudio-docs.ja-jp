@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6aacd4639e440998a5123dae8c38a64c84ebb948
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 367b3681d2ff8a828ee45f59359043b5fede3d26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90026302"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668106"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>ARM 搭載デバイスの Visual Studio
 
@@ -42,4 +42,4 @@ Visual Studio のインストールには時間がかかることを見込んで
 ARM デバイスからデバッグを開始する (**F5**) ときに、すべての Visual Studio プロジェクトがローカルでプロジェクトを起動するように構成されているわけではありません。 アプリがローカルで実行されている場合でも、リモート デバッグのために Visual Studio の構成が必要になる場合があります。 詳細については、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。
 
 ## <a name="we-need-your-help"></a>あなたのサポートが必要です。
-Visual Studio を ARM デバイスでネイティブに実行する場合に必要なシナリオとサポートについてのご意見をお待ちしております。 ご連絡をいただく場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html)に投稿してください。 
+Visual Studio を ARM デバイスでネイティブに実行する場合に必要なシナリオとサポートについてのご意見をお待ちしております。 ご連絡をいただく場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html)に投稿してください。

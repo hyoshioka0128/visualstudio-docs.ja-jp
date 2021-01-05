@@ -1,5 +1,7 @@
 ---
 title: 複数バージョンの Visual Studio のサポート |Microsoft Docs
+description: 複数のバージョンの Visual Studio をサポートする方法について説明します。 Vspackage はさまざまなバージョンに読み込むことができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699476"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715627"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>複数バージョンの Visual Studio をサポートする
 この用語は、同じコンピューターに複数のバージョンの製品をインストール *して維持* することを意味します。 Vspackage では、ユーザーは複数の Visual Studio バージョンを同じコンピューターにインストールできます。 ただし、Vspackage のサイドバイサイドバージョンを1つのバージョンの Visual Studio に読み込むことはできません。

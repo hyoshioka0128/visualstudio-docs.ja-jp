@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350811"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668314"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
@@ -53,7 +53,7 @@ Visual Studio インストーラーには、Microsoft が修正に取り組ん�
 
 ### <a name="step-3---check-with-the-developer-community"></a>手順 3 - 開発者コミュニティを確認する
 
-[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)でエラー メッセージを検索します。 コミュニティの他のメンバーが、問題の解決策を文書化している可能性があります。
+[Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)でエラー メッセージを検索します。 コミュニティの他のメンバーが、問題の解決策を文書化している可能性があります。
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>手順 4 - Visual Studio インストーラーのディレクトリを削除してアップグレードの問題を修正する
 
@@ -114,7 +114,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 ### <a name="step-7---contact-us-optional"></a>手順 7 - 問い合わせる (省略可能)
 
-前の手順のいずれに従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してお問い合わせください。
+前の手順のいずれに従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために [**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してお問い合わせください。
 
 ## <a name="offline-installations"></a>オフライン インストール
 
@@ -122,7 +122,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 | 懸案事項       | アイテム                   | ソリューション |
 | ----------- | ---------------------- | -------- |
-| ユーザーにファイルへのアクセス権がない。 | アクセス許可 (ACL) | オフライン インストールを共有する*前*に、他のユーザーに読み取りアクセス権を付与するように、必ずアクセス許可 (ACL) を調整してください。 |
+| ユーザーにファイルへのアクセス権がない。 | アクセス許可 (ACL) | オフライン インストールを共有する *前* に、他のユーザーに読み取りアクセス権を付与するように、必ずアクセス許可 (ACL) を調整してください。 |
 | 新しいワークロード、コンポーネント、または言語をインストールできない。  | `--layout`  | 部分レイアウトからインストールし、その部分レイアウトには以前ダウンロードしなかったワークロード、コンポーネント、または言語を選択した場合は、インターネットにアクセスできることを確認してください。 |
 
 [ネットワーク インストール](create-a-network-installation-of-visual-studio.md)に関する問題を解決する方法の詳細については、「[Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md)」を参照してください。
@@ -145,7 +145,7 @@ Microsoft サポートに連絡する場合、[Microsoft Visual Studio と .NET 
 
 ## <a name="live-help"></a>ライブ ヘルプ
 
-このトラブルシューティング ガイドに記載されているソリューションの一覧に従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してください。
+このトラブルシューティング ガイドに記載されているソリューションの一覧に従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために [**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してください。
 
 ## <a name="see-also"></a>関連項目
 

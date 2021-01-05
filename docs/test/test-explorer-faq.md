@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b69274058ea939251a772dfb30ddf7b42861542c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330174"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668587"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio テスト エクスプローラーに関する FAQ
 
@@ -97,13 +97,13 @@ ms.locfileid: "96330174"
 
 **テスト エクスプローラーの検索ボックスの "ファイル パス" フィルターはもう存在しません。**
 
-**テスト エクスプローラー** の検索ボックスのファイル パス フィルターは、Visual Studio 2017 バージョン 15.7 で削除されました。 この機能は使用頻度が低く、この機能を除外することで、テスト エクスプローラーはテスト メソッドを高速で取得できます。 この変更によって開発フローが中断される場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/)でフィードバックを送信してその旨をお知らせください。
+**テスト エクスプローラー** の検索ボックスのファイル パス フィルターは、Visual Studio 2017 バージョン 15.7 で削除されました。 この機能は使用頻度が低く、この機能を除外することで、テスト エクスプローラーはテスト メソッドを高速で取得できます。 この変更によって開発フローが中断される場合は、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)でフィードバックを送信してその旨をお知らせください。
 
 ## <a name="remove-undocumented-interfaces"></a>ドキュメントに記載されていないインターフェイスを削除する
 
 **テストに関連する一部の API は、Visual Studio 2019 には存在していません。何か変更されたのでしょうか?**
 
-Visual Studio 2019 では、前にパブリックとしてマークされていたが、ドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されます。 これらは、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で "非推奨" としてマークされていました。 弊社の知る限りでは、これらの API を検出して依存関係を築いている拡張機能は、ごくわずかです。 これらのメソッドには、`IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken`、および `SearchFilterTokenType` が含まれます。 この変更が拡張機能に影響を与える場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com)でバグを入力して、その旨をお知らせください。
+Visual Studio 2019 では、前にパブリックとしてマークされていたが、ドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されます。 これらは、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で "非推奨" としてマークされていました。 弊社の知る限りでは、これらの API を検出して依存関係を築いている拡張機能は、ごくわずかです。 これらのメソッドには、`IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken`、および `SearchFilterTokenType` が含まれます。 この変更が拡張機能に影響を与える場合は、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)でバグを入力して、その旨をお知らせください。
 
 ## <a name="test-adapter-nuget-reference"></a>テスト アダプターの NuGet 参照
 

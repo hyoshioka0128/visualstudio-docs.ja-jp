@@ -1,5 +1,7 @@
 ---
 title: ソース管理プラグイン |Microsoft Docs
+description: このセクションの記事では、ソース管理システムを Visual Studio と統合できるようにするための完全なインターフェイス仕様について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699890"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715835"
 ---
 # <a name="source-control-plug-ins"></a>ソース管理プラグイン
 ソース管理プラグイン SDK リファレンスセクションには、ソース管理システムをと統合できるようにするための完全なインターフェイス仕様が含まれてい [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 これは、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) とのインターフェイスとして、ソース管理プラグインが実装する必要のあるさまざまな関数とデータ型の構文とセマンティクスを指定します。

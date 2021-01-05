@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005939"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668548"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
-既定では、[開発者コミュニティ](https://developercommunity.visualstudio.com/)の問題レポートのすべての情報 (すべてのコメントと返信を含む) は、公開されます。 これには、コミュニティ全体が問題、解決策、および他のユーザーが見つけた回避策を閲覧できるという利点があります。 ただし、自分のデータや ID のプライバシーについて心配がある場合には、オプションがあります。
+既定では、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)の問題レポートのすべての情報 (すべてのコメントと返信を含む) は、公開されます。 これには、コミュニティ全体が問題、解決策、および他のユーザーが見つけた回避策を閲覧できるという利点があります。 ただし、自分のデータや ID のプライバシーについて心配がある場合には、オプションがあります。
 
 ## <a name="identity-privacy"></a>ID プライバシー
 

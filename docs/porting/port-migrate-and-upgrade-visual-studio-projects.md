@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ca13ff5263ab43fd6fbdf5764b506091dd9aa3bd
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414322"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667989"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
@@ -32,7 +32,7 @@ ms.locfileid: "93414322"
 
 通常、各バージョンの Visual Studio は、以前の種類のプロジェクト、ファイル、その他のアセットのほとんどに対応しています。 それらのオブジェクトは[これまでと同様に](../ide/solutions-and-projects-in-visual-studio.md)操作できます。新しい機能を利用していない場合でも、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など、以前のバージョンとの下位互換性の維持が試みられています。 (どの機能がどのバージョンに固有の機能であるかについては、[リリース ノート](/visualstudio/releasenotes/vs2017-relnotes/)を参照してください。)
 
-一部の種類のプロジェクトに対するサポートは、今後変更される場合もあります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がないプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio Developer Community のサイト](https://developercommunity.visualstudio.com)を参照してください。
+一部の種類のプロジェクトに対するサポートは、今後変更される場合もあります。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がないプロジェクトの更新が必要になったりすることがあります。 移行に関する問題の現在の状況については、[Visual Studio Developer Community のサイト](https://aka.ms/feedback/suggest?space=8)を参照してください。
 
 現在、この記事では、Visual Studio 2017 の移行が可能なプロジェクト タイプに対してのみ詳細を提供しています。 この記事では、Visual Studio 2017 でサポートされなくなったことで移行できないプロジェクト タイプは除外されています。 また、移行に関する問題がないサポート対象のプロジェクト タイプ ([対象プラットフォームと互換性](/visualstudio/productinfo/vs2017-compatibility-vs)に関するページでその一覧を確認できます) もこの記事では除外されています。
 
@@ -43,7 +43,7 @@ ms.locfileid: "93414322"
 
 次の一覧は、Visual Studio 2017 より前のバージョンで作成されたプロジェクトに対する Visual Studio 2017 でのサポートをまとめたものです。
 
-一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、 [この記事の Visual Studio 2015 バージョン](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
+一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2015 バージョン](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
@@ -91,7 +91,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 ただし、この記事で説明されている一部のプロジェクトの種類のように、このような互換性が不可能な場合は、Visual Studio はアップグレード ウィザードを開いて必要な一方向の変更を行います。
 
-このような一方向の変更には、プロジェクト ファイルでの `ToolsVersion` プロパティの変更が含まれます。これは、最終的に必要な実行可能で配置可能なアーティファクトにプロジェクトのソース コードを変換できる MSBuild の正確なバージョンを示します。 つまり、プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、 *Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトでの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている限り、Visual Studio をそのツールチェーンを呼び出してプロジェクトをビルドできます。
+このような一方向の変更には、プロジェクト ファイルでの `ToolsVersion` プロパティの変更が含まれます。これは、最終的に必要な実行可能で配置可能なアーティファクトにプロジェクトのソース コードを変換できる MSBuild の正確なバージョンを示します。 つまり、プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトでの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている限り、Visual Studio をそのツールチェーンを呼び出してプロジェクトをビルドできます。
 
 以前のバージョンで作成されたプロジェクトとの最大限の互換性を維持するため、Visual Studio 2017 には、`ToolsVersion` 15、14、12、4 をサポートするために必要な MSBuild ツールチェーンが含まれています。 これらの `ToolsVersion` 値のいずれかを使うプロジェクトでは、ビルドが成功するはずです (やはり、「[Visual Studio 2017 の対象プラットフォームと互換性](/visualstudio/productinfo/vs2017-compatibility-vs)」で説明されているように、Visual Studio 2017 がプロジェクトの種類をサポートするかどうかに依存します)。
 
@@ -118,7 +118,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 Microsoft では、以前のバージョン (Visual Studio 2017、Visual Studio 2015、Visual Studio 2013、Visual Studio 2012 など) との下位互換性を維持しようとしています。 しかし、一部の種類のプロジェクトに対するサポートは、時間の経過と共に変化します。 新しいバージョンの Visual Studio では、特定のプロジェクトが一切サポートされなくなったり、下位互換性がなくったためにプロジェクトの更新が必要になったりすることがあります。
 
 > [!NOTE]
-> 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)を参照してください。 また、Visual Studio のそれぞれのバージョンに固有の機能について詳しくは、[リリース ノート](/visualstudio/releases/2019/release-notes/)をご覧ください。
+> 移行に関する問題の現在の状況については、[Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)を参照してください。 また、Visual Studio のそれぞれのバージョンに固有の機能について詳しくは、[リリース ノート](/visualstudio/releases/2019/release-notes/)をご覧ください。
 
 > [!IMPORTANT]
 > 一部のプロジェクトの種類には、特定のワークロードが必要です。 ワークロードがインストールされていない場合、Visual Studio は不明な、または互換性のないプロジェクトの種類を報告します。 その場合、[Visual Studio インストーラーでインストール オプション](../install/modify-visual-studio.md)を確認して、やり直してください。 Visual Studio 2019 のプロジェクト サポートについて詳しくは、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事をご覧ください。
@@ -157,7 +157,7 @@ Microsoft では、以前のバージョン (Visual Studio 2017、Visual Studio 
 | SQL - Redgate | Redgate の SQL Change Automation Core (旧称、ReadyRoll Core)、SQL Prompt Core、および SQL Search は、Visual Studio インストーラーに付属されななくなりました。<br/><br/>これらの機能には、Visual Studio 2017 を引き続き使用することができます。 Visual Studio 2019 では、Redgate の SQL Toolbelt で入手可能な有料の SQL Change Automation および SQL Prompt 製品にアップグレードすることができます。|
 | SQL Server Reporting Services および SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | これらのプロジェクト タイプのサポートは、Visual Studio ギャラリーの次の 2 つの拡張機能を通じて提供されます。[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) と [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 のデータの保存と処理のワークロードには SSDT のサポートも含まれます。 詳細については、「[Visual Studio の SQL Server Data Tools (SSDT) をダウンロードし、インストールする](/sql/ssdt/download-sql-server-data-tools-ssdt)」を参照してください。 |
 | SQL Server Integration Services (SSIS) | Visual Studio 2019 のサポートを利用できます。 詳細については、「[Visual Studio の SQL Server Data Tools (SSDT) をダウンロードし、インストールする](/sql/ssdt/download-sql-server-data-tools-ssdt)」ページ、「[SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS)」チーム ブログ、および Marketplace の「[SQL Server Integration Services Projects](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview)」ページを参照してください。 |
-| テスト ウィンドウ拡張機能 | Visual Studio 2019 では、前にパブリックとしてマークされていたがドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されました。 広く利用されていた API には、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で非推奨のマークが付いていました。 Microsoft の知る限りでは、これらの API に対して依存関係を築いている拡張機能はわずかです。 詳細と更新プログラムにいては、[テスト関連の非推奨の API の完全一覧](https://github.com/Microsoft/vstest/issues/1830)に関するページを参照してください。 これが自分のシナリオに影響する場合、[開発者コミュニティ](https://developercommunity.visualstudio.com)でお知らせください。 |
+| テスト ウィンドウ拡張機能 | Visual Studio 2019 では、前にパブリックとしてマークされていたがドキュメントに正式に記載されたことがないいくつかのテスト ウィンドウ API が削除されました。 広く利用されていた API には、拡張機能の管理者に対して早期に警告を発するために、Visual Studio 2017 で非推奨のマークが付いていました。 Microsoft の知る限りでは、これらの API に対して依存関係を築いている拡張機能はわずかです。 詳細と更新プログラムにいては、[テスト関連の非推奨の API の完全一覧](https://github.com/Microsoft/vstest/issues/1830)に関するページを参照してください。 これが自分のシナリオに影響する場合、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)でお知らせください。 |
 | Visual C++ | Visual Studio 2019 を使用して、Visual Studio 2010 以降の Visual Studio で作成されたプロジェクトを操作できます。 プロジェクトを初めて開いたときに、最新のコンパイラとツールセットにアップグレードするか、元のプロジェクトを引き続き使用するかを選択できます。 元のプロジェクトを引き続き使用することを選択した場合、Visual Studio 2019 はプロジェクト ファイルを変更せず、以前の Visual Studio のインストールのツールセットを使用してプロジェクトをビルドします。 元のオプションを維持すると、必要に応じて、Visual Studio の元のバージョンでプロジェクトを開くことができます。 詳細については、「[Visual Studio でネイティブ マルチ ターゲットを利用し、古いプロジェクトを作成する](/cpp/porting/use-native-multi-targeting)」を参照してください。 |
 | Visual Studio 拡張性/VSIX | MinimumVersion 14.0 以前のプロジェクトは、MinimumVersion 15.0 を宣言するように更新されます。この宣言により、前のバージョンの Visual Studio でプロジェクトを開けなくなります。 前のバージョンでプロジェクトを開くには、MinimumVersion を `$(VisualStudioVersion)` に設定します。 「[方法: 機能拡張プロジェクトの Visual Studio 2017 への移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)に関するページも参照してください。 |
 | Visual Studio Lab Management | Microsoft Test Manager または Visual Studio 2010 SP1 以降を利用し、これらのバージョンで差制された環境を開くことができます。 ただし、Visual Studio 2010 SP1 の場合、環境を作成するには、使用している Microsoft Test Manager のバージョンが Team Foundation Server のバージョンと一致する必要があります。 |
@@ -185,7 +185,7 @@ Microsoft では、以前のバージョンとの互換性を維持しようと�
 
 場合によっては、互換性を実現できないことがあります。 その場合、Visual Studio によって、必要な一方向の変更を加えるためのアップグレード ウィザードが開かれます。 これらの一方向の変更には、プロジェクト ファイルの `ToolsVersion` プロパティの変更が含まれる場合があります。このプロパティにより、プロジェクトのソース コードを目的の実行可能で配置可能な成果物に変換できる、MSBuild の正確なバージョンが示されます。
 
-プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、 *Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている場合、Visual Studio ではそのツールチェーンを呼び出してプロジェクトをビルドすることができます。
+プロジェクトと以前のバージョンの Visual Studio との互換性を損なうものは、*Visual Studio* のバージョンではなく、`ToolsVersion` によって決定される *MSBuild* のバージョンです。 お使いの Visual Studio のバージョンに、プロジェクトの `ToolsVersion` と一致する MSBuild ツールチェーンが含まれている場合、Visual Studio ではそのツールチェーンを呼び出してプロジェクトをビルドすることができます。
 
 以前のバージョンで作成したプロジェクトとの互換性を維持するため、Visual Studio 2019 には、`ToolsVersion` 15、14、12、4 をサポートするために必要な MSBuild ツールチェーンが含まれています。 これらの `ToolsVersion` 値のいずれかを使うプロジェクトでは、ビルドが成功するはずです (やはり、[対象プラットフォームと互換性](/visualstudio/releases/2019/compatibility)に関する記事で説明されているように、Visual Studio 2019 がそのプロジェクトの種類をサポートするかどうかに依存します)。
 

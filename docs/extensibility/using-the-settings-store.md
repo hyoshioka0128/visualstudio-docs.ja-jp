@@ -1,5 +1,7 @@
 ---
 title: 設定ストアを使用する |Microsoft Docs
+description: 読み取り専用の Visual Studio と VSPackage の設定である構成設定ストアからデータを読み取る方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698514"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715913"
 ---
 # <a name="using-the-settings-store"></a>設定ストアの使用
 設定ストアには、次の2種類があります。
@@ -31,7 +33,7 @@ ms.locfileid: "80698514"
 
 1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `SettingsStoreExtension` します。 VSIX プロジェクトテンプレートは、[ **新しいプロジェクト** ] ダイアログボックスの [ **Visual C#]/[拡張機能**] で見つけることができます。
 
-2. 次に、 **Settingsstorecommand**という名前のカスタムコマンド項目テンプレートを追加します。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を **SettingsStoreCommand.cs**に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。
+2. 次に、 **Settingsstorecommand** という名前のカスタムコマンド項目テンプレートを追加します。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を **SettingsStoreCommand.cs** に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)」を参照してください。
 
 ## <a name="using-the-configuration-settings-store"></a>構成設定ストアの使用
  このセクションでは、構成設定を検出して表示する方法について説明します。
@@ -71,7 +73,7 @@ ms.locfileid: "80698514"
 
 5. 実験用インスタンスで、[ **ツール** ] メニューの [ **Settingsstorecommand の呼び出し**] をクリックします。
 
-    **Microsoft Windows Phone 開発者ツール**というメッセージボックスが表示されます。その後に**True**または**False**が続きます。
+    **Microsoft Windows Phone 開発者ツール** というメッセージボックスが表示されます。その後に **True** または **False** が続きます。
 
    Visual Studio では、設定ストアはシステムレジストリに保持されます。
 
@@ -79,9 +81,9 @@ ms.locfileid: "80698514"
 
 1. Regedit.exe を開きます。
 
-2. HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14. 0Exp_Config] に移動 \\ します。
+2. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProductsに移動 \\ します。
 
     > [!NOTE]
-    > \ 14. 0Exp_Config \ 14 を含むキーを参照していることを確認します。 0_Config \\ 。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリハイブ "14. 0Exp_Config" にあります。
+    > \ 14.0Exp_Config \ を含み、14.0_Config ではないキーを見ていることを確認し \\ ます。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリハイブ "14.0Exp_Config" にあります。
 
-3. [\ インストールされた製品] ノードを展開します。 前の手順のメッセージが **microsoft Windows Phone 開発者ツールインストールされている場合: True**の場合は、\ インストールされた製品 \ に microsoft Windows Phone 開発者ツールノードが含まれている必要があります。 メッセージが **microsoft Windows Phone 開発者ツールインストールされている場合: False**の場合、[\ インストールされた製品] に microsoft Windows Phone 開発者ツールノードを含めることはできません。
+3. [\ インストールされた製品] ノードを展開します。 前の手順のメッセージが **microsoft Windows Phone 開発者ツールインストールされている場合: True** の場合は、\ インストールされた製品 \ に microsoft Windows Phone 開発者ツールノードが含まれている必要があります。 メッセージが **microsoft Windows Phone 開発者ツールインストールされている場合: False** の場合、[\ インストールされた製品] に microsoft Windows Phone 開発者ツールノードを含めることはできません。

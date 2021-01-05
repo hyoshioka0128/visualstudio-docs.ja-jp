@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 11caf55a8412477ac94d290add667b9393435fb6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807886"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668743"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio フィードバック オプション
 
@@ -34,7 +34,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ![Visual Studio 2019 IDE の [フィードバックの送信] アイコン](./media/vs-2019/send-feedback-icon.png)
 
-次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) インターフェイスが開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
+次に、Visual Studio で [Developer Community](https://aka.ms/feedback/suggest?space=8) インターフェイスが開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 ![Visual Studio 2019 IDE の [フィードバックの送信] アイコン](./media/send-feedback-icon.png)
 
-次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) インターフェイスが開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
+次に、Visual Studio で [Developer Community](https://aka.ms/feedback/suggest?space=8) インターフェイスが開かれます。ここにサインインして問題を報告することができます。 詳細については、「[Visual Studio で問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」を参照してください。
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ Visual Studio を使用していて問題 &mdash; クラッシュ、パフォー
 
 Visual Studio の品質向上のためのアイデアやご提案をお持ちの場合は、 **[機能の提案]** ツールを使用してお知らせください。 Visual Studio で、右上隅にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[機能の提案]** の順に選択します。
 
-次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) インターフェイスが開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
+次に、Visual Studio で [Developer Community](https://aka.ms/feedback/suggest?space=8) インターフェイスが開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Visual Studio の品質向上のためのアイデアやご提案をお持ちの
 
 Visual Studio の品質向上のためのアイデアやご提案をお持ちの場合は、 **[提案の送信]** ツールを使用してお知らせください。 Visual Studio で、検索ボックスの横にあるフィードバック アイコンを選択するか、メニュー バーで **[ヘルプ]** 、 **[フィードバックの送信]** 、 **[提案の送信]** の順に選択します。
 
-次に、Visual Studio で [Developer Community](https://developercommunity.visualstudio.com) ページが開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
+次に、Visual Studio で [Developer Community](https://aka.ms/feedback/suggest?space=8) ページが開かれます。ここにサインインしてアイデアを共有することができます。 詳細については、[Visual Studio 用の機能の提案](suggest-a-feature.md)に関連するページをご覧ください。
 
 ::: moniker-end
 

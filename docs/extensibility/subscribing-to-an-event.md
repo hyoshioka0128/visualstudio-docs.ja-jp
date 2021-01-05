@@ -1,5 +1,7 @@
 ---
 title: イベントへのサブスクライブ |Microsoft Docs
+description: Visual Studio SDK で実行中のドキュメントテーブルのイベントに応答するツールウィンドウを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefe2efce897aefc26f63835844b0cc705fb5b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c739dad7be8d2a000662eca478bc117699694c8a
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699682"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715874"
 ---
 # <a name="subscribing-to-an-event"></a>イベントのサブスクライブ
 このチュートリアルでは、実行中のドキュメントテーブル (RDT) のイベントに応答するツールウィンドウを作成する方法について説明します。 ツールウィンドウは、を実装するユーザーコントロールをホストし <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> ます。 メソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> インターフェイスをイベントに接続します。
@@ -28,7 +30,7 @@ ms.locfileid: "80699682"
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>ツールウィンドウで拡張機能を作成するには
 
-1. VSIX テンプレートを使用して **Rdtexplorer** という名前のプロジェクトを作成し、 **RDTExplorerWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
+1. VSIX テンプレートを使用して **Rdtexplorer** という名前のプロジェクトを作成し、 **RDTExplorerWindow** という名前のカスタムツールウィンドウ項目テンプレートを追加します。
 
      ツールウィンドウを使用した拡張機能の作成の詳細については、「 [ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
@@ -131,7 +133,7 @@ ms.locfileid: "80699682"
 
 12. **RDTExplorerWindow** (**ビュー/その他のウィンドウ/RDTExplorerWindow**) を開きます。
 
-     **RDTExplorerWindow**ウィンドウが開き、空のイベント一覧が表示されます。
+     **RDTExplorerWindow** ウィンドウが開き、空のイベント一覧が表示されます。
 
 13. ソリューションを開くか、作成します。
 
