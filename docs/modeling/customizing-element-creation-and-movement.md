@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363121"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729341"
 ---
 # <a name="customizing-element-creation-and-movement"></a>要素作成処理および要素移動処理のカスタマイズ
 
@@ -40,7 +40,7 @@ ms.locfileid: "97363121"
 
 EMD の役割は、オブジェクトまたはオブジェクトのグループをモデル内の特定の場所にマージする方法を決定することです。 具体的には、マージされたグループをモデルにリンクするためにインスタンス化する必要があるリレーションシップを決定します。 また、プロパティを設定したり、追加のオブジェクトを作成したりするようにカスタマイズすることもできます。
 
-![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
+![新しい要素の追加方法が E M D によって決定された場合に、要素のツリーとその参照リレーションシップを確認する前と後の図。](../modeling/media/dsl-emd_merge.png)
 
 埋め込みリレーションシップを定義すると、EMD が自動的に生成されます。 この既定の EMD は、ユーザーが新しい子インスタンスを親に追加するときに、リレーションシップのインスタンスを作成します。 たとえば、カスタムコードを追加するなどして、これらの既定値を変更できます。
 
@@ -50,7 +50,7 @@ DSL 定義に独自の内容を追加することもできます。これによ�
 
 要素マージディレクティブは、ドメインクラス、ドメインリレーションシップ、図形、コネクタ、および図に追加できます。 受信側ドメインクラスの下の DSL エクスプローラーで、追加または検索できます。 受信側のクラスは、モデル内に既に存在する要素のドメインクラスで、新しい要素またはコピーされる要素がマージされます。
 
-![DSL&#45;EMD&#95;の詳細](../modeling/media/dsl-emd_details.png)
+![インデックス作成クラスとして選択された [クラスの適用] オプションがオンになっている状態で、E M D が追加されていることを示す DSL エクスプローラーのスクリーンショット。](../modeling/media/dsl-emd_details.png)
 
 **Indexing クラス** は、受信側クラスのメンバーにマージできる要素のドメインクラスです。 [ **サブクラスに適用** ] を False に設定しない限り、インデックス作成クラスのサブクラスのインスタンスもこの EMD によってマージされます。
 
@@ -232,7 +232,7 @@ Merge ディレクティブには、次の2種類があります。
 
 5. **DslFiles\DomainClasses.cs** の内容を検査します。 という名前のメソッドを検索 `MergeRelate` し、その内容を確認します。 これは、独自のバージョンを記述するのに役立ちます。
 
-6. 新しいコードファイルで、受信側クラスの部分クラスを記述し、メソッドをオーバーライドし `MergeRelate` ます。 基本メソッドを必ず呼び出してください。 次に例を示します。
+6. 新しいコードファイルで、受信側クラスの部分クラスを記述し、メソッドをオーバーライドし `MergeRelate` ます。 基本メソッドを必ず呼び出してください。 例:
 
     ```csharp
     partial class ExampleModel

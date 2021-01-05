@@ -15,16 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348250"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729354"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio デバッガーでコード間を移動する
 
-Visual Studio デバッガーを使用すると、コード間を移動してアプリの状態を調査し、その実行フローを表示することができます。 キーボード ショートカット、デバッグ コマンド、ブレークポイントなどの機能を使用して、調べるコードにすばやく移動できます。 デバッガーのナビゲーション コマンドやショートカットを使い慣れることで、アプリの問題をすばやく見つけて解決することができます。  コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に「[入門者向けのデバッグ](../debugger/debugging-absolute-beginners.md)」および「[デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)」を参照することをお勧めします。
+Visual Studio デバッガーを使用すると、コード間を移動してアプリの状態を調査し、その実行フローを表示することができます。 キーボード ショートカット、デバッグ コマンド、ブレークポイントなどの機能を使用して、調べるコードにすばやく移動できます。 デバッガーのナビゲーション コマンドやショートカットを使い慣れることで、アプリの問題をすばやく見つけて解決することができます。
+
+> [!NOTE]
+> コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に「[入門者向けのデバッグ](../debugger/debugging-absolute-beginners.md)」および「[デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)」を参照することをお勧めします。
 
 ## <a name="get-into-break-mode"></a>"中断モード" に移行する
 

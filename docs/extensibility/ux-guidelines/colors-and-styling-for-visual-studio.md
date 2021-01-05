@@ -1,5 +1,7 @@
 ---
 title: Visual Studio の色とスタイル |Microsoft Docs
+description: Visual Studio のユーザーエクスペリエンスが、純粋に美しい理由ではなく、通信ツールとして色を使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414270"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715666"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -44,7 +46,7 @@ Visual Studio の UI 要素に色を割り当てるには、いくつかのオ�
 
 UI 要素に最適な方法を選択します。
 
-| UI | 方法 | それらは何ですか? |
+| UI | メソッド | それらは何ですか? |
 | --- | --- | --- |
 | ダイアログボックスが埋め込まれています。 | **システムカラー** | オペレーティングシステムが UI 要素の色と外観を定義できるシステム名 (コモンダイアログコントロールなど)。 |
 | VS 環境全体と一貫性を持たせ、共有トークンのカテゴリとセマンティックの意味に一致する UI 要素があるカスタム UI があること。 | **共通の共有色** | 特定の UI 要素の既存の定義済みの色のトークン名 |
@@ -81,7 +83,7 @@ Visual Studio のソースコードには、トークン名のリストと各テ
 
 参照: [エンドユーザーの色の公開](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-場合によっては、コードエディターやデザインサーフェイスを作成するときなど、エンドユーザーが UI をカスタマイズできるようにする必要があります。 カスタマイズ可能な UI コンポーネントは、[ツール] の [ **&gt; オプション** ] ダイアログボックスの [ **フォントおよび色** ] セクションにあります。ユーザーは、前景色、背景色、またはその両方を変更できます。
+場合によっては、コードエディターやデザインサーフェイスを作成するときなど、エンドユーザーが UI をカスタマイズできるようにする必要があります。 カスタマイズ可能な UI コンポーネントは、[ツール] の [ **&gt; オプション**] ダイアログボックスの [**フォントおよび色**] セクションにあります。ユーザーは、前景色、背景色、またはその両方を変更できます。
 
 ![ツールの &gt; オプションダイアログ](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />ツールの &gt; オプションダイアログ
 
@@ -334,7 +336,7 @@ Windows では、テキスト、背景、およびイメージの色のコント
 
 ### <a name="overview"></a>概要
 
-場合によっては、コードエディターやデザインサーフェイスを作成するときのように、エンドユーザーが UI をカスタマイズできるようにする必要があります。 これを行う最も一般的な方法は、[ツール] [ **&gt; オプション** ] ダイアログを使用することです。 特別な制御を必要とする高度に特殊化された UI がない限り、カスタマイズを表示する最も簡単な方法は、ダイアログの [ **環境** ] セクション内の [ **フォントおよび色** ] ページを使用することです。 カスタマイズのために公開する要素ごとに、ユーザーは前景色、背景色、またはその両方を変更することができます。
+場合によっては、コードエディターやデザインサーフェイスを作成するときのように、エンドユーザーが UI をカスタマイズできるようにする必要があります。 これを行う最も一般的な方法は、[ツール] [ **&gt; オプション** ] ダイアログを使用することです。 特別な制御を必要とする高度に特殊化された UI がない限り、カスタマイズを表示する最も簡単な方法は、ダイアログの [**環境**] セクション内の [**フォントおよび色**] ページを使用することです。 カスタマイズのために公開する要素ごとに、ユーザーは前景色、背景色、またはその両方を変更することができます。
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>カスタマイズ可能な色のための VSPackage の構築
 
@@ -358,10 +360,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | データ | 説明 |
+| 名前 | 種類 | Data | 説明 |
 | --- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
  レジストリに指定されたサービスは、対応するカテゴリの [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) の実装を提供する必要があります。
 
@@ -371,10 +373,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | データ | 説明 |
+| 名前 | 種類 | Data | 説明 |
 |--- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
 レジストリに指定されたサービスは、対応するグループのの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> ます。
 

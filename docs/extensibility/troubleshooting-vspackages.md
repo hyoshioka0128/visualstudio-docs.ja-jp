@@ -1,5 +1,7 @@
 ---
 title: Vspackage のトラブルシューティング |Microsoft Docs
+description: VSPackage とトラブルシューティングのヒントを使用して、問題を解決する際に発生する可能性のある一般的な問題について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235031"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716056"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
 次に、VSPackage と問題を解決するためのヒントについて、一般的な問題を示します。
@@ -25,7 +27,7 @@ ms.locfileid: "87235031"
 
 - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]セーフモードで起動します。
 
-   セーフモードで起動するには [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、コマンドプロンプトで「 **devenv.exe/セーフ**モード」と入力します。
+   セーフモードで起動するには [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、コマンドプロンプトで「 **devenv.exe/セーフ** モード」と入力します。
 
    このプロセスでは、に含まれている Vspackage を除き、Vspackage は読み込まれません [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
 
@@ -97,7 +99,7 @@ ms.locfileid: "87235031"
 
     1. [ツール] メニューの [オプション] を **選択** し、[デバッグ] **/[シンボル** ] ダイアログボックスに移動します。
 
-    2. 次 **のシンボルファイル (.pdb) の場所**を追加します。
+    2. 次 **のシンボルファイル (.pdb) の場所** を追加します。
 
          `https://msdl.microsoft.com/download/symbols`
 

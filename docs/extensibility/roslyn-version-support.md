@@ -1,5 +1,7 @@
 ---
 title: サポートされている Roslyn パッケージのバージョンマッピング
+description: この記事では、さまざまなバージョンの Visual Studio でサポートされている .NET compiler platform (Roslyn) パッケージのバージョンについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd268dadd03ee5d648075ccea1763e949719c90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c787188fa727692bf11035c00562f7a6e26e81b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701323"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715744"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET compiler platform パッケージバージョンリファレンス
 
@@ -43,7 +45,7 @@ ms.locfileid: "80701323"
 > [!TIP]
 > サポートされている Visual Studio の最小バージョンが Visual Studio 2017 バージョンである Roslyn パッケージの場合、Visual Studio 2019 のすべてのバージョンは、後で提供されているため、すべてサポートされています。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [Roslyn アナライザーを使ってみる](getting-started-with-roslyn-analyzers.md)

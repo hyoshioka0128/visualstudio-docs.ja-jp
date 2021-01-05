@@ -1,5 +1,7 @@
 ---
 title: ユーザーインターフェイスを更新しています |Microsoft Docs
+description: VSPackage に新しいコマンドを実装した後に、ユーザーインターフェイスを更新するコードを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698880"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716030"
 ---
 # <a name="updating-the-user-interface"></a>ユーザー インターフェイスの更新
 コマンドを実装したら、新しいコマンドの状態を使用してユーザーインターフェイスを更新するコードを追加できます。

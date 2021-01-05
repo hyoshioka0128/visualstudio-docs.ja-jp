@@ -1,5 +1,7 @@
 ---
 title: ファイル名拡張子のファイルハンドラーの指定 |Microsoft Docs
+description: OpenWithList と Openwithlist を使用して、Visual Studio SDK でファイル拡張子を処理するアプリケーションを特定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699754"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715601"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>ファイル名拡張子のファイル ハンドラーを指定する
 特定のファイル拡張子を持つファイルを処理するアプリケーションを特定するには、いくつかの方法があります。 OpenWithList と Openwithlist 動詞は、ファイル拡張子のレジストリエントリの下にファイルハンドラーを指定する2つの方法があります。
@@ -23,7 +25,7 @@ ms.locfileid: "80699754"
 ## <a name="openwithlist-verb"></a>OpenWithList 動詞
  エクスプローラーでファイルを右クリックすると、[ **開く** ] コマンドが表示されます。 複数の製品が拡張機能に関連付けられている場合は、 **[ファイルを開くアプリケーションの** 作成] サブメニューが表示されます。
 
- HKEY_CLASSES_ROOT でファイル拡張子の OpenWithList キーを設定することによって、拡張機能を開くさまざまなアプリケーションを登録できます。 このキーの下に一覧表示されるファイル拡張子のアプリケーションは、[プログラムから**開く**] ダイアログボックスの [**推奨プログラム**] 見出しの下に表示されます。 次の例は、.vcproj ファイル拡張子を開くために登録されているアプリケーションを示しています。
+ HKEY_CLASSES_ROOT でファイル拡張子の OpenWithList キーを設定することによって、拡張機能を開くさまざまなアプリケーションを登録できます。 このキーの下に一覧表示されるファイル拡張子のアプリケーションは、[プログラムから **開く**] ダイアログボックスの [**推奨プログラム**] 見出しの下に表示されます。 次の例は、.vcproj ファイル拡張子を開くために登録されているアプリケーションを示しています。
 
 ```
 HKEY_CLASSES_ROOT\
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> アプリケーションを指定するキーは、HKEY_CLASSES_ROOT の下の一覧にあります。
+> アプリケーションを指定するキーは、HKEY_CLASSES_ROOT\Applications の下の一覧にあります。
 
  OpenWithList キーを追加することにより、別のアプリケーションが拡張機能の所有権を取得した場合でも、アプリケーションでファイル拡張子がサポートされるように宣言します。 これは、アプリケーションまたは別のアプリケーションの将来のバージョンである可能性があります。
 
@@ -47,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |. 拡張子|同様. 拡張子. versionMajor. Versionmajor|
 
- バージョン管理された Progid を値として HKEY_CLASSES_ROOT \\ \ openwithprogid キーに追加することで、特定のファイル拡張子を開くことができるさまざまなアプリケーションを登録でき *\<extension>* ます。 このレジストリキーには、ファイル拡張子に関連付けられている別の Progid の一覧が含まれています。 表示されている Progid に関連付けられているアプリケーションは、[_製品名_を指定し**て開く**] サブメニューに表示されます。 との両方のキーに同じアプリケーションが指定されている場合、 `OpenWithList` `OpenWithProgids` オペレーティングシステムは重複部分をマージします。
+ バージョン管理された Progid を値として HKEY_CLASSES_ROOT \\ \ openwithprogid キーに追加することで、特定のファイル拡張子を開くことができるさまざまなアプリケーションを登録でき *\<extension>* ます。 このレジストリキーには、ファイル拡張子に関連付けられている別の Progid の一覧が含まれています。 表示されている Progid に関連付けられているアプリケーションは、[_製品名_ を指定し **て開く**] サブメニューに表示されます。 との両方のキーに同じアプリケーションが指定されている場合、 `OpenWithList` `OpenWithProgids` オペレーティングシステムは重複部分をマージします。
 
 > [!NOTE]
 > この `OpenWithProgids` キーは、WINDOWS XP でのみサポートされています。 このキーは他のオペレーティングシステムでは無視されるため、ファイルハンドラーの唯一の登録として使用しないでください。 Windows XP でのユーザーエクスペリエンスを向上させるには、このキーを使用します。
@@ -63,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- ファイル拡張子の既定値として指定された ProgID が既定のファイルハンドラーです。 以前のバージョンのまたは他のアプリケーションで使用できるファイル拡張子の ProgID を変更する場合は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、 `OpenWithProgids` ファイル拡張子のキーを登録し、サポートする古い progid と共に一覧で新しい progid を指定する必要があります。 次に例を示します。
+ ファイル拡張子の既定値として指定された ProgID が既定のファイルハンドラーです。 以前のバージョンのまたは他のアプリケーションで使用できるファイル拡張子の ProgID を変更する場合は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、 `OpenWithProgids` ファイル拡張子のキーを登録し、サポートする古い progid と共に一覧で新しい progid を指定する必要があります。 例:
 
 ```
 HKEY_CLASSES_ROOT\
@@ -75,8 +77,8 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid
 ```
 
- 古い ProgID に動詞が関連付けられている場合は、ショートカットメニューの [*製品名*を指定し**て開く**] にも、これらの動詞が表示されます。
+ 古い ProgID に動詞が関連付けられている場合は、ショートカットメニューの [*製品名* を指定し **て開く**] にも、これらの動詞が表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ファイル名拡張子について](../extensibility/about-file-name-extensions.md)
 - [ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)
