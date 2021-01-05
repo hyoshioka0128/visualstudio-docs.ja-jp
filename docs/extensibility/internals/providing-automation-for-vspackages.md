@@ -1,5 +1,7 @@
 ---
 title: Vspackage | の自動化を提供するMicrosoft Docs
+description: VSPackage 固有のオブジェクトを実装し、標準オートメーションオブジェクトを実装することによって、Vspackage の自動化を実現する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705949"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875402"
 ---
 # <a name="providing-automation-for-vspackages"></a>VSPackage でのオートメーションの提供
 Vspackage の自動化を提供するには、VSPackage 固有のオブジェクトを実装し、標準オートメーションオブジェクトを実装するという2つの主な方法があります。 通常、これらは、環境のオートメーションモデルを拡張するために一緒に使用されます。
 
-## <a name="vspackage-specific-objects"></a>VSPackage 固有のオブジェクト
+## <a name="vspackage-specific-objects"></a>VSPackage-Specific オブジェクト
  オートメーションモデル内の特定の場所では、VSPackage に固有のオートメーションオブジェクトを提供する必要があります。 たとえば、新しいプロジェクトでは、VSPackage のみが提供する個別のオブジェクトが必要です。 これらのオブジェクトの名前は、レジストリに入力され、環境オブジェクトへの呼び出しによって取得され `DTE` ます。
 
  VSPackage 固有のオブジェクトは、オートメーションコンシューマーが標準オブジェクトの Object プロパティを通じて提供されたオブジェクトを使用する場合にも取得できます。 たとえば、標準のオブジェクトにはプロパティがあり、これ `Window` は `Object` プロパティとして一般的に知られてい `Windows.Object` ます。 コンシューマーが VSPackage に実装されているウィンドウでを呼び出す場合は、 `Window.Object` 独自の設計の特定のオートメーションオブジェクトを返します。

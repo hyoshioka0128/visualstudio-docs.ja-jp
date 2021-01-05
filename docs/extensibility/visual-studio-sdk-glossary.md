@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK の用語集 |Microsoft Docs
+description: この用語集では、Visual Studio SDK ドキュメントで使用される用語の定義を示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 332e606e689e9394f2fcdc8cbc902e2d4a6e5ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec8f6508c6b387ec51872f6e5b59b3f72a57d432
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698171"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863903"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK の用語集
 この用語集では、ドキュメントで使用される用語の定義を示し [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] ます。
@@ -73,7 +75,7 @@ ms.locfileid: "80698171"
 
   独立した最上位レベルのコンポーネント。モードレスのトップレベルウィンドウを使用し、スタンドアロンのアプリケーションウィンドウとして効果的に動作できますが、インプロセスオブジェクトとして実装されます。 そのため、独立した最上位のコンポーネントでは、IDE でモダリティとメッセージループサービスを調整する必要があります。 インプロセスオブジェクトには、独自のメッセージループはありません。
 
-  情報プロバイダー情報プロバイダーは、キーワードを検索し、オブジェクトの形式でトピックの一覧を返すことができるモジュールです `IVsUserContextItem` 。 情報プロバイダーに **F1 キー** および lookup キーワード項目を提供するには、コンパイル済みヘルプファイル () を登録し*ます。HxS*) を使用します。 これらのファイルのヘルプトピックには、[ダイナミックヘルプ] ウィンドウに表示されるトピックの一覧と、ユーザーが **F1 キー**を押したかどうかが表示されます。
+  情報プロバイダー情報プロバイダーは、キーワードを検索し、オブジェクトの形式でトピックの一覧を返すことができるモジュールです `IVsUserContextItem` 。 情報プロバイダーに **F1 キー** および lookup キーワード項目を提供するには、コンパイル済みヘルプファイル () を登録し *ます。HxS*) を使用します。 これらのファイルのヘルプトピックには、[ダイナミックヘルプ] ウィンドウに表示されるトピックの一覧と、ユーザーが **F1 キー** を押したかどうかが表示されます。
 
   埋め込みコンポーネント: `IOleInPlaceComponent` IDE によって所有されるドキュメントウィンドウ内に視覚的に含まれるウィンドウを管理するためのインターフェイスを実装する VSPackage オブジェクトです。 インプレースコンポーネントは標準の OLE メニューに参加しません-マージ代わりに、ユーザーインターフェイス要素を IDE に統合します。
 

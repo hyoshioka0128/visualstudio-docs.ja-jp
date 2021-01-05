@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでコードを再フォーマットする |Microsoft Docs
+description: Visual Studio レガシ言語サービスのソースコードの再フォーマットのサポートを有効にする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705908"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875363"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>従来の言語サービスの再フォーマット コード
 
@@ -25,7 +27,7 @@ ms.locfileid: "80705908"
 > [!NOTE]
 > 改行文字を挿入または削除すると、ブレークポイントやブックマークなどのマーカーに影響を与える可能性がありますが、マーカーには影響しません。
 
-ユーザーは、[**編集**] メニューの [**詳細設定**] メニューから [**選択内容の書式設定**] または [**ドキュメントの書式**設定] を選択して、再フォーマット操作を開始できます。 また、コードスニペットまたは特定の文字が挿入されたときに、再フォーマット操作をトリガーすることもできます。 たとえば、C# で右中かっこを入力すると、一致する左中かっこと終わりかっこの間のすべてが自動的に適切なレベルにインデントされます。
+ユーザーは、[**編集**] メニューの [**詳細設定**] メニューから [**選択内容の書式設定**] または [**ドキュメントの書式** 設定] を選択して、再フォーマット操作を開始できます。 また、コードスニペットまたは特定の文字が挿入されたときに、再フォーマット操作をトリガーすることもできます。 たとえば、C# で右中かっこを入力すると、一致する左中かっこと終わりかっこの間のすべてが自動的に適切なレベルにインデントされます。
 
 によって、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **形式の選択** ] または [ **ドキュメントの書式設定** ] コマンドが言語サービスに送信されると、クラスは <xref:Microsoft.VisualStudio.Package.ViewFilter> クラスのメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> <xref:Microsoft.VisualStudio.Package.Source> ます。 書式設定をサポートするには、メソッドをオーバーライドし、独自の書式設定コードを指定する必要があり <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> ます。
 
@@ -183,6 +185,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [従来の言語サービスの特徴](legacy-language-service-features1.md)

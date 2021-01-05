@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のレイアウト |Microsoft Docs
+description: テーマが設定されていないダイアログや、テーマ付きの外観を持つ新しいダイアログなど、Visual Studio ダイアログのレイアウトについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698403"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863669"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio のレイアウト
 Visual Studio ダイアログの大部分は [ユーティリティダイアログレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)です。これは、標準の [Windows デスクトップダイアログレイアウトの原則](/windows/desktop/uxguide/win-dialog-box)に従う、テーマが適用されていないダイアログです。 Visual Studio が UI を更新するために移動すると、より目立つようなダイアログの中には、製品定義のエクスペリエンスとして機能する新しいデザインが追加されています。 これらの [テーマ付きダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) には、テーマが設定されています。
@@ -105,7 +107,7 @@ Visual Studio ダイアログの大部分は [ユーティリティダイアロ�
 
 - **[OK**] [ / **キャンセル**] が右下隅で水平方向に配置されている場合は、内部ボタンの垂直方向の配置 (列) を使用します。
 
-- **[OK**] / **キャンセル**が右上隅で垂直方向に配置されている場合は、内部ボタンの水平方向の配置 (行) を使用します。 この状況はあまり一般的ではありません。
+- **[OK**] / **キャンセル** が右上隅で垂直方向に配置されている場合は、内部ボタンの水平方向の配置 (行) を使用します。 この状況はあまり一般的ではありません。
 
 - 内部ボタンのサイズは、可能な場合は **[OK**] / **[キャンセル**] ボタンのサイズと一致する標準のボタンサイズ75x23 ピクセルをターゲットにする必要があります。 ボタンのラベルによってボタンのサイズが標準のボタンのサイズを超えた場合、そのセット内の他のボタンはそのサイズよりも大きくなります。
 
@@ -129,13 +131,13 @@ Visual Studio ダイアログの大部分は [ユーティリティダイアロ�
 
 3. ダイアログタイトルはタイトルバーには存在しませんが、大きなポイントサイズでは視覚的な関心と強調表示が提供されます。 (「 [テキストスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)」の「フォントサイズ」セクションを参照してください)。
 
-4. 説明などの追加テキストと結合されたラベルは、 **環境フォント + 太字**にする必要があります。
+4. 説明などの追加テキストと結合されたラベルは、 **環境フォント + 太字** にする必要があります。
 
 5. 内部列は、薄い灰色の1ピクセルのルールで区切られます。
 
 6. 既定のリンクにはアンダースコアがありません。 ホバー状態と押された状態には、色の変更とアンダースコアがあります。
 
-7. コミットボタン ( **OK** / **キャンセル**など) は右下隅に配置されます。
+7. コミットボタン ( **OK** / **キャンセル** など) は右下隅に配置されます。
 
 ### <a name="themed-dialog-layout-examples"></a>テーマ付きダイアログのレイアウトの例
  ![テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-h_ThemedDialog")

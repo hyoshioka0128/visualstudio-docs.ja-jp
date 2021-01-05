@@ -1,5 +1,7 @@
 ---
 title: Document Table | を実行していますMicrosoft Docs
+description: Visual Studio IDE が実行中のドキュメントテーブルをどのように保持しているかを説明します。これには、すべての開いているドキュメントがメモリに含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705564"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875649"
 ---
 # <a name="running-document-table"></a>ドキュメント テーブルの実行
 IDE では、現在開いているすべてのドキュメントの一覧が、実行中のドキュメントテーブル (RDT) と呼ばれる内部構造で保持されます。 この一覧には、これらのドキュメントが現在編集されているかどうかに関係なく、メモリ内のすべての開いているドキュメントが含まれます。 ドキュメントは、プロジェクトまたはメインプロジェクトファイル (.vcxproj ファイルなど) 内のファイルを含む、永続化された任意の項目です。
@@ -56,6 +58,6 @@ IDE では、現在開いているすべてのドキュメントの一覧が、�
 
 - 階層または項目 ID を使用して、プロジェクトシステムに完全なドキュメントパスを要求してから、RDT で項目を確認します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [RDT_ReadLock の使用法](../../extensibility/internals/rdt-readlock-usage.md)
 - [ドキュメント テーブルの保存と実行](../../extensibility/internals/persistence-and-the-running-document-table.md)

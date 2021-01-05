@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの種類を登録する |Microsoft Docs
+description: 新しいプロジェクトの種類を Visual Studio が認識して使用できるようにするレジストリエントリの作成について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407732"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875197"
 ---
 # <a name="registering-a-project-type"></a>プロジェクト タイプの登録
 新しいプロジェクトの種類を作成する場合は、がプロジェクトの種類を認識して使用できるようにするレジストリエントリを作成する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 通常、これらのレジストリエントリを作成するには、レジストリスクリプト (.rgs) ファイルを使用します。
@@ -47,7 +49,7 @@ ms.locfileid: "94407732"
    @="devenv.exe \"%1\""
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|拡張子が figp であるプロジェクトの種類のファイルの名前と説明。|
 |`Content Type`|REG_SZ|`Text/plain`|プロジェクトファイルのコンテンツの種類。|
@@ -79,7 +81,7 @@ ms.locfileid: "94407732"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@` (既定値)|REG_SZ|`FigPrj Project VSPackage`|この登録された VSPackage のローカライズ可能な名前 (プロジェクトの種類)。|
 |`InprocServer32`|REG_SZ|`%MODULE%`|プロジェクトの種類の DLL のパス。 IDE はこの DLL を読み込み、VSPackage CLSID をに渡して `DllGetClassObject` <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> 、オブジェクトを構築し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> ます。|
@@ -130,7 +132,7 @@ ms.locfileid: "94407732"
    "SortPriority"=dword:00000064
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|この種類のプロジェクトの既定の名前。|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|パッケージに登録されているサテライト DLL から取得する名前のリソース ID。|
@@ -147,7 +149,7 @@ ms.locfileid: "94407732"
 
  次の表は、前のコードセグメントで使用できるフィルターオプションを示しています。
 
-|フィルターオプション|[説明]|
+|フィルターオプション|説明|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|フィルターが [ **フォルダーを** 指定して検索] ダイアログボックスの一般的なフィルターの1つであることを示します。 共通フィルターが [共通] としてマークされていない場合は、フィルター一覧に共通のフィルターが一覧表示されます。|
 |`CommonOpenFilesFilter`|フィルターが [ **ファイルを開く** ] ダイアログボックスの一般的なフィルターの1つであることを示します。 共通フィルターが [共通] としてマークされていない場合は、フィルター一覧に共通のフィルターが一覧表示されます。|
@@ -170,7 +172,7 @@ ms.locfileid: "94407732"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新しいプロジェクトテンプレートのリソース ID。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|登録されているプロジェクトの種類のプロジェクトの既定のパス。|
@@ -191,7 +193,7 @@ ms.locfileid: "94407732"
    "SortPriority"=dword:00000064
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|なし|次のエントリがその他のファイルプロジェクトエントリ用であることを示す既定値。|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|新しい項目の追加テンプレートファイルのリソース ID 値。|
@@ -220,7 +222,7 @@ ms.locfileid: "94407732"
 
   最後のフィールドは、CTMENU リソースのバージョン番号を示します。 バージョン番号を変更することによって、もう一度メニューをマージできます。
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|メニュー情報を取得するリソース。|
 
@@ -234,7 +236,7 @@ ms.locfileid: "94407732"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|図プロジェクトの新しいプロジェクトテンプレートのリソース ID 値。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新しいプロジェクトディレクトリの既定のパス。 このディレクトリ内の項目は、[ **新しいプロジェクトウィザード** ] ダイアログボックスに表示されます。|
@@ -249,7 +251,7 @@ ms.locfileid: "94407732"
    "UseInterface"=dword:00000001
 ```
 
-|名前|種類|データ|説明|
+|名前|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|登録されている VSPackage のクラス ID。|
 |`UseInterface`|REG_DWORD|`1`|1は、このプロジェクトとの対話に UI が使用されることを示します。 0は、UI インターフェイスがないことを示します。|

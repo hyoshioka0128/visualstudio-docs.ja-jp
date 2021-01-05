@@ -1,5 +1,7 @@
 ---
 title: プライベートギャラリー |Microsoft Docs
+description: Visual Studio SDK で開発したコントロール、テンプレート、ツールをプライベートギャラリーに投稿することによって共有する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +13,14 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444649"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863499"
 ---
-# <a name="private-galleries"></a>プライベートギャラリー
+# <a name="private-galleries"></a>プライベート ギャラリー
 次のように、組織のイントラネット上の *プライベートギャラリー* に投稿することで、開発したコントロール、テンプレート、およびツールを共有できます。
 
 - イントラネット上の適切に構成された中央の場所 (リポジトリ) に Atom (RSS) フィードを作成します。 詳細については、「 [方法: プライベートギャラリーの Atom フィードを作成](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)する」を参照してください。
@@ -51,7 +53,7 @@ ms.locfileid: "81444649"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -64,7 +66,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
  詳細については、「 [方法: レジストリ設定を使用してプライベートギャラリーを管理](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)する」を参照してください。
 
 ## <a name="install-extensions-from-a-private-gallery"></a>プライベートギャラリーから拡張機能をインストールする
- **拡張機能と更新プログラム**で、プライベートギャラリーから Visual Studio 拡張機能を検索してインストールすることができます。 次の手順では、という名前のプライベートギャラリーを使用し `My Gallery` ます。
+ **拡張機能と更新プログラム** で、プライベートギャラリーから Visual Studio 拡張機能を検索してインストールすることができます。 次の手順では、という名前のプライベートギャラリーを使用し `My Gallery` ます。
 
  ![プライベート ギャラリーをインストールする拡張機能マネージャー](../extensibility/media/em_.png "EM_")
 

@@ -1,5 +1,7 @@
 ---
 title: プロジェクトテンプレートと項目テンプレートの登録 |Microsoft Docs
+description: Visual Studio がプロジェクトの種類に関する登録情報を使用して、[新しいプロジェクトの追加] ダイアログボックスと [新しい項目の追加] ダイアログボックスに表示する内容を確認する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705821"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875272"
 ---
 # <a name="registering-project-and-item-templates"></a>プロジェクトと項目テンプレートの登録
 プロジェクトの種類では、プロジェクトテンプレートとプロジェクト項目テンプレートが配置されているディレクトリを登録する必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、プロジェクトの種類に関連付けられている登録情報を使用して、[ **新しいプロジェクトの追加** ] および [ **新しい項目の追加** ] ダイアログボックスに表示する内容を決定します。
@@ -27,7 +29,7 @@ ms.locfileid: "80705821"
  テンプレートの詳細については、「 [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)」を参照してください。
 
 ## <a name="registry-entries-for-projects"></a>プロジェクトのレジストリエントリ
- 次の例では HKEY_LOCAL_MACHINE \software\microsoft\visualstudio Version> の下にレジストリエントリが表示され \\ < *Version*ます。 これらの表では、例で使用される要素について説明します。
+ 次の例では HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudioバージョン> の下にレジストリエントリが表示され \\ < ます。 これらの表では、例で使用される要素について説明します。
 
 ```
 [Projects\{ProjectGUID}]
@@ -41,7 +43,7 @@ ms.locfileid: "80705821"
 |----------|----------|-----------------|
 |@|REG_SZ|この種類のプロジェクトの既定の名前。|
 |DisplayName|REG_SZ|パッケージに登録されているサテライト DLL から取得する名前のリソース ID。|
-|Package|REG_SZ|パッケージに登録されているパッケージのクラス ID。|
+|パッケージ|REG_SZ|パッケージに登録されているパッケージのクラス ID。|
 |Projecttemplates ディレクトリ|REG_SZ|プロジェクトテンプレートファイルの既定のパス。 プロジェクトテンプレートファイルは、 **新しいプロジェクト** テンプレートによって表示されます。|
 
 ### <a name="registering-item-templates"></a>登録 (項目テンプレートを)
@@ -58,7 +60,7 @@ ms.locfileid: "80705821"
 | 名前 | Type | 説明 |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 項目テンプレートの追加用のリソース ID。 |
-| Templates ディレクトリ | REG_SZ | **新しい項目の追加**ウィザードのダイアログボックスに表示されるプロジェクト項目のパス。 |
+| Templates ディレクトリ | REG_SZ | **新しい項目の追加** ウィザードのダイアログボックスに表示されるプロジェクト項目のパス。 |
 | TemplatesLocalizedSubDir | REG_SZ | ローカライズされたテンプレートを保持する Templates ディレクトリのサブディレクトリに名前を指定する文字列のリソース ID。 では、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] サテライト dll がある場合に文字列リソースが読み込まれるため、各サテライト dll にはローカライズされた別のサブディレクトリ名を含めることができます。 |
 | SortPriority | REG_DWORD | [ **新しい項目の追加** ] ダイアログボックスでのテンプレートの表示順序を制御するには、[sortpriority] を設定します。 より大きな SortPriority 値がテンプレートリストの前に表示されます。 |
 
@@ -67,7 +69,7 @@ ms.locfileid: "80705821"
 
  **Visual C# のファイル (.cs、.resx、. \* \* \* 設定、 \* .xsd、 \* .wsdl); \* 。cs、 \* .resx、 \* settings、 \* .xsd、 \* .wsdl)**
 
- 複数のフィルターの登録をサポートするために、各フィルターは HKEY_LOCAL_MACHINE \software\microsoft\visualstudio \\ < *Version*> \ Projects \\ { \<*ProjectGUID*> } \ filters \\ < *サブキー*> の下に独自のサブキーに登録されます。 サブキーの名前は任意です。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] サブキーの名前を無視し、その値だけを使用します。
+ 複数のフィルターの登録をサポートするために、各フィルターは HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *バージョン*> \ Projects \\ { \<*ProjectGUID*> } \ フィルター \\ < *サブキー*> の下に独自のサブキーとして登録されます。 サブキーの名前は任意です。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] サブキーの名前を無視し、その値だけを使用します。
 
  次の表に示すように、フラグを設定することによってフィルターを使用するコンテキストを制御できます。 フィルターにフラグが設定されていない場合、[ **既存項目の追加** ] ダイアログボックスと [ **ファイルを開く** ] ダイアログボックスの共通フィルターの後に一覧表示されますが、[ **フォルダーを** 指定して検索] ダイアログボックスでは使用されません。
 
@@ -116,7 +118,7 @@ ms.locfileid: "80705821"
 
  \ Wizardfiles
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [ウィザード](../../extensibility/internals/wizards.md)

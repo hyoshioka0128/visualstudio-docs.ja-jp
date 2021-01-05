@@ -1,5 +1,7 @@
 ---
 title: 相互運用機能アセンブリの登録コマンドハンドラー |Microsoft Docs
+description: 相互運用機能アセンブリを使用してコマンドを実装するすべての Vspackage で使用される基本的なコマンドコントラクトについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012049"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875156"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) によってコマンドが適切にルーティングされるように、に登録する必要があります。
@@ -28,10 +30,10 @@ VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] �
 - [コマンドテーブル形式の参照](/previous-versions/bb164647(v=vs.100)) リソースは、アンマネージサテライト UI dll にあります。
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンドハンドラーの登録
- ユーザーインターフェイス (UI) ベースのコマンドのハンドラーとして機能する VSPackage には、VSPackage の後にという名前のレジストリエントリが必要です `GUID` 。 このレジストリエントリは、VSPackage の UI リソースファイルとそのファイル内の menu リソースの場所を指定します。 レジストリエントリ自体は HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \ メニューの下にあり \\ *\<Version>* ます。ここで、 *\<Version>* は9.0 などののバージョンです [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
+ ユーザーインターフェイス (UI) ベースのコマンドのハンドラーとして機能する VSPackage には、VSPackage の後にという名前のレジストリエントリが必要です `GUID` 。 このレジストリエントリは、VSPackage の UI リソースファイルとそのファイル内の menu リソースの場所を指定します。 レジストリエントリ自体は HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudioメニューの下にあり \\ *\<Version>* ます。ここで、 *\<Version>* は、9.0 などののバージョンです [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
 > [!NOTE]
-> シェルが初期化されると、HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio のルートパスを \\ *\<Version>* 代替ルートでオーバーライドでき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 ルートパスの詳細については、「 [Windows インストーラーを使用した Vspackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」を参照してください。
+> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioのルートパスは、 \\ *\<Version>* シェルの初期化時に代替ルートでオーバーライドでき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 ルートパスの詳細については、「 [Windows インストーラーを使用した Vspackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」を参照してください。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU リソースレジストリエントリ
  レジストリエントリの構造は次のとおりです。

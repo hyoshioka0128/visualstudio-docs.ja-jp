@@ -1,5 +1,7 @@
 ---
 title: VSCT XML スキーマリファレンス |Microsoft Docs
+description: VSCT XML スキーマのリファレンス記事では、コマンドテーブルコンパイラのスキーマ要素について説明し、それぞれに許可されている子要素と属性を示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697917"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863983"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML スキーマリファレンス
 コマンドテーブルコンパイラスキーマ要素のテーブルを提供します。これには、許可されている子要素と属性がそれぞれ含まれています。
@@ -72,6 +74,6 @@ ms.locfileid: "80697917"
 
 - [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Vspackage のユーザーインターフェイス要素の追加方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage でのコマンドルーティング](../extensibility/internals/command-routing-in-vspackages.md)

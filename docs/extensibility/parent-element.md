@@ -1,5 +1,7 @@
 ---
 title: 親要素 |Microsoft Docs
+description: 親要素は、要素がボタン、コンボボックス、メニュー、またはグループの親であることを指定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702223"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863329"
 ---
 # <a name="parent-element"></a>親要素
 ボタンまたはコンボボックスの親は、グループのみになることができます。 メニューまたはグループの親は、他のメニューまたはグループの場合もあります。 [Commandplacement 要素](../extensibility/commandplacement-element.md)では、この要素は必須です。それ以外のすべてのインスタンスでは、省略可能です。 この要素が省略された場合、の親は `Group_Undefined:0` 暗黙的に指定されます。
@@ -32,7 +34,7 @@ ms.locfileid: "80702223"
 
 ### <a name="attributes"></a>属性
 
-|属性|[説明]|
+|属性|説明|
 |---------------|-----------------|
 |guid|必須。 GUID/ID コマンド識別子の GUID。|
 |id|必須。 GUID/ID コマンド識別子の ID。|

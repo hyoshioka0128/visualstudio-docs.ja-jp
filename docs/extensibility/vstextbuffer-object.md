@@ -1,5 +1,7 @@
 ---
 title: VSTextBuffer オブジェクト |Microsoft Docs
+description: VSTextBuffer オブジェクトは、通常はファイルに関連付けられている Unicode テキストのストリームを表します。 この記事では、VSTextBuffer のインターフェイスの一覧を示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e5c2afa08e9c480342bff95d417dfb9174250b83
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413915"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863957"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer オブジェクト
 テキストバッファーオブジェクトは、通常はファイルに関連付けられている Unicode テキストのストリームを表します。 オブジェクトは、 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ウィザードの場合と同様に、コアエディターのコンテキストの外部で使用できます。
 
  次の表は、のインターフェイスを示して `VSTextBuffer` います。
 
-|方法|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|標準 OLE インターフェイス。 バッファー内の元に戻す/やり直し処理に使用されます。|
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|標準 OLE インターフェイス。|

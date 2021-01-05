@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスのクイックヒント |Microsoft Docs
+description: Id に関する情報を表示するための IntelliSense クイックヒント操作のサポートについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d070c607313b406f036a5b6f071eaa371070408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705945"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875077"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>従来の言語サービスのクイック ヒント
-IntelliSense のクイックヒントは、ユーザーが識別子にカレットを置き、 **intellisense**メニューから [**クイックヒント**] を選択するか、識別子の上にマウスカーソルを置いたときに、ソースの識別子に関する情報を表示します。 これにより、ツールヒントが識別子に関する情報と共に表示されます。 通常、この情報は識別子の種類で構成されます。 デバッグエンジンがアクティブになっている場合は、この情報に現在の値が含まれている可能性があります。 デバッグエンジンは式の値を提供しますが、言語サービスは識別子のみを処理します。
+IntelliSense のクイックヒントは、ユーザーが識別子にカレットを置き、 **intellisense** メニューから [**クイックヒント**] を選択するか、識別子の上にマウスカーソルを置いたときに、ソースの識別子に関する情報を表示します。 これにより、ツールヒントが識別子に関する情報と共に表示されます。 通常、この情報は識別子の種類で構成されます。 デバッグエンジンがアクティブになっている場合は、この情報に現在の値が含まれている可能性があります。 デバッグエンジンは式の値を提供しますが、言語サービスは識別子のみを処理します。
 
  従来の言語サービスは VSPackage の一部として実装されていますが、言語サービス機能を実装するための新しい方法として、MEF 拡張機能を使用することをお勧めします。 詳細については、「 [チュートリアル: QuickInfo ツールヒントの表示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)」を参照してください。
 
