@@ -1,5 +1,7 @@
 ---
 title: Vspackage | の登録と登録解除Microsoft Docs
+description: 使用する属性や、pkgdef ファイルなど、Vspackage の登録と登録解除について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f345bdbd3cf5858d495937c743b580abf5e3dd50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b60844826387c2807eedcb47fe24c11a58af80f
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701581"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862871"
 ---
 # <a name="register-and-unregister-vspackages"></a>Vspackage の登録と登録解除
 属性を使用して VSPackage を登録しますが、
@@ -29,7 +31,7 @@ ms.locfileid: "80701581"
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]
-public sealed class BasicPackage : Package
+public sealed class BasicPackage : Package
 {
     // ...
 }
@@ -42,7 +44,7 @@ public sealed class BasicPackage : Package
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- Visual Studio の開発インスタンスにインストールした拡張機能をアンインストールする場合は、[ツール] [ **Tools**  >  **拡張機能と更新プログラム**] にアクセスし、拡張機能を見つけて、[**アンインストール**] をクリックします。
+ Visual Studio の開発インスタンスにインストールした拡張機能をアンインストールする場合は、[ツール] [   >  **拡張機能と更新プログラム**] にアクセスし、拡張機能を見つけて、[**アンインストール**] をクリックします。
 
  何らかの理由で、拡張機能のアンインストールでこれらのメソッドのいずれも成功しない場合は、次のようにコマンドラインから VSPackage アセンブリの登録を解除できます。
 
@@ -121,5 +123,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackages](../extensibility/internals/vspackages.md)

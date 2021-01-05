@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328478"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833222"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>XAML ホット リロードのトラブルシューティング
 
@@ -34,24 +34,24 @@ XAML ホットリロードは、WPF アプリと UWP アプリでサポートさ
 
 ![XAML ホットリロードを利用できます](../debugger/media/xaml-hot-reload-available.png)
 
-アプリ内ツールバーが表示されない場合は、**デバッグ**オプションの [全般] を開き  >  **Options**  >  **General**ます。 [ **Xaml の UI デバッグツールを有効** にする] と [ **xaml ホットリロードを有効に** する] の両方が選択されていることを確認します。
+アプリ内ツールバーが表示されない場合は、**デバッグ** オプションの [全般] を開き  >    >  ます。 [ **Xaml の UI デバッグツールを有効** にする] と [ **xaml ホットリロードを有効に** する] の両方が選択されていることを確認します。
 
-![XAML ホットリロードを有効にする](../debugger/media/xaml-hot-reload-enable.png)
+![Visual Studio の [デバッグオプション] ウィンドウのスクリーンショット。 一般的なデバッグオプションが選択され、[XAML ホットリロードを有効にする] オプションがオンになっています。](../debugger/media/xaml-hot-reload-enable.png)
 
-これらのオプションを選択した場合は、[ライブビジュアル**Debug**ツリー (  >  **Windows**  >  **live ビジュアルツリー**のデバッグ)] に移動し、[**ランタイムツールをアプリケーションツールバーに表示**] ボタン (左端) が選択されていることを確認します。
+これらのオプションを選択した場合は、[ライブビジュアルツリー (  >  **Windows**  >  **live ビジュアルツリー** のデバッグ)] に移動し、[**ランタイムツールをアプリケーションツールバーに表示**] ボタン (左端) が選択されていることを確認します。
 
-![XAML ホットリロードを有効にする](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![ライブビジュアルツリーウィンドウの上部にあるツールバーのスクリーンショット。 [アプリケーションのランタイムツールを表示] ボタンが選択されています。](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>プロセスにアタッチするのではなく、デバッグの開始を使用することを確認します。
 
-XAML ホットリロード `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` では、アプリケーションの起動時に環境変数が1に設定されている必要があります。 Visual Studio**は、デバッグ**  >  **開始デバッグ**(または**F5**) コマンドの一部として、これを自動的に設定します。 **Debug**  >  代わりに [**プロセスにアタッチ**] コマンドを使用して XAML ホットリロードを使用する場合は、環境変数を自分で設定します。
+XAML ホットリロード `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` では、アプリケーションの起動時に環境変数が1に設定されている必要があります。 Visual Studio **は、デバッグ**  >  **開始デバッグ**(または **F5**) コマンドの一部として、これを自動的に設定します。   >  代わりに [**プロセスにアタッチ**] コマンドを使用して XAML ホットリロードを使用する場合は、環境変数を自分で設定します。
 
 > [!NOTE]
 > 環境変数を設定するには、[開始] ボタンを使用して "環境変数" を検索し、[ **システム環境変数の編集**] を選択します。 表示されるダイアログボックスで、[ **環境変数**] を選択し、ユーザー変数として追加して、値をに設定し `1` ます。 クリーンアップするには、デバッグが完了したら変数を削除します。
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>MSBuild プロパティが正しいことを確認する
 
-既定では、ソース情報はデバッグ構成に含まれています。 これは、プロジェクトファイル (* .csproj など) の MSBuild プロパティによって制御されます。 WPF の場合、プロパティはです `XamlDebuggingInformation` 。これは、に設定する必要があり `True` ます。 UWP の場合、プロパティはです `DisableXbfLineInfo` 。これは、に設定する必要があり `False` ます。 次に例を示します。
+既定では、ソース情報はデバッグ構成に含まれています。 これは、プロジェクトファイル (* .csproj など) の MSBuild プロパティによって制御されます。 WPF の場合、プロパティはです `XamlDebuggingInformation` 。これは、に設定する必要があり `True` ます。 UWP の場合、プロパティはです `DisableXbfLineInfo` 。これは、に設定する必要があり `False` ます。 例:
 
 WPF
 
@@ -67,7 +67,7 @@ XAML ホットリロードをサポートするには、正しい MSBuild プロ
 
 ## <a name="verify-that-your-xaml-file-has-no-errors"></a>XAML ファイルにエラーがないことを確認する
 
-XAML ファイルで **エラー一覧**にエラーが表示されている場合、Xaml ホットリロードが機能しない可能性があります。
+XAML ファイルで **エラー一覧** にエラーが表示されている場合、Xaml ホットリロードが機能しない可能性があります。
 
 ## <a name="see-also"></a>関連項目
 

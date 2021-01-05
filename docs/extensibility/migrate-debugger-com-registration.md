@@ -1,5 +1,7 @@
 ---
 title: 64ビットデバッガー COM クラス登録の移行 |Microsoft Docs
+description: HKEY_CLASSES_ROOT に書き込むことなくデバッガー拡張のために COM クラスを msvsmon に登録する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -8,12 +10,12 @@ ms.author: greggm
 manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f28f8eb2935ed2dd8a848ccc3151b9f438fc437
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62433696"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862888"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>64ビットデバッガーの COM クラス登録の移行
 
@@ -21,7 +23,7 @@ Regasm、regsvr32、またはレジストリへの直接書き込みを使用し
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
-この手法を使用するには、msvsmon (InstallDir: \Common7\IDE\Remote Debugger\x64 *) の横にある*ファイル*に.msvsmon-comclass-def.js* *を追加します。
+この手法を使用するには、msvsmon (InstallDir: \Common7\IDE\Remote Debugger\x64 *) の横にある *ファイル *に.msvsmon-comclass-def.js** を追加します。
 
 次に、1つのマネージクラスと1つのネイティブクラスを登録する msvsmon クラス def ファイルの例を示します。
 

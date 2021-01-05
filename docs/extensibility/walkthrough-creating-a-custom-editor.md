@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: カスタムエディターの作成 |Microsoft Docs'
+description: VSPackage プロジェクトテンプレートでは、このチュートリアルを使用して、C++ で簡単なカスタムエディターを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4713931d70fd91dd57b85bc6fc749e62e03eb20b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 188c02471e8921e66faefe9668ec3f54c935b50b
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905921"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863127"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>チュートリアル: カスタムエディターを作成する
 VSPackage プロジェクトテンプレートでは、C++ で単純なカスタムエディターを作成できます。 VSPackage プロジェクトテンプレートでは、C# または Visual Basic プロジェクトはサポートされなくなりました。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
@@ -24,7 +26,7 @@ VSPackage プロジェクトテンプレートでは、C++ で単純なカスタ
  このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="the-visual-studio-package-project-template"></a>Visual Studio パッケージプロジェクトテンプレート
- Visual Studio パッケージプロジェクトテンプレートは、 **C++ 機能拡張**フォルダーの下にある [**新しいプロジェクト**] ダイアログで確認できます。
+ Visual Studio パッケージプロジェクトテンプレートは、 **C++ 機能拡張** フォルダーの下にある [**新しいプロジェクト**] ダイアログで確認できます。
 
 ### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Visual Studio パッケージテンプレートを使用して VSPackage を作成するには
 

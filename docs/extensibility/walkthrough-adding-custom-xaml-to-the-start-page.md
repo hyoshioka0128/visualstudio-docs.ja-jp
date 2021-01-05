@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: スタートページへのカスタム XAML の追加 |Microsoft Docs'
+description: このチュートリアルを使用して、web ブラウザーを含むカスタム Visual Studio のスタートページを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012075"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862781"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>チュートリアル: スタートページへのカスタム XAML の追加
 
@@ -27,7 +29,7 @@ ms.locfileid: "90012075"
 
 1. 「 [カスタムスタートページを作成する](../extensibility/creating-a-custom-start-page.md)」の手順に従って、スタートページを作成します。
 
-2. *Mainwindow.xaml*ファイルで、セクションを見つけ \<Grid> ます。
+2. *Mainwindow.xaml* ファイルで、セクションを見つけ \<Grid> ます。
 
 3. 次の \<TabControl> \<TabItem> 例に示すように、要素内に要素とを追加し \< Grid> ます。
 
@@ -61,7 +63,7 @@ ms.locfileid: "90012075"
 
 ## <a name="test-the-custom-start-page"></a>カスタムスタートページをテストする
 
-1. **F5**キーを押します。
+1. **F5** キーを押します。
 
      Visual Studio の実験用インスタンスが開き、カスタムスタートページがインストールされますが、選択されていません。
 
@@ -77,7 +79,7 @@ ms.locfileid: "90012075"
 
 6. [ **MyButton** ] タブをクリックします。
 
-     **MyProject**ボタンが表示され、[**新しいプロジェクト**] ダイアログボックスが開きます。
+     **MyProject** ボタンが表示され、[**新しいプロジェクト**] ダイアログボックスが開きます。
 
 7. 実験用インスタンスを閉じます。
 
@@ -85,7 +87,7 @@ ms.locfileid: "90012075"
 
 ## <a name="next-steps"></a>次のステップ
 
-Visual Studio のスタートページに、[Web ブラウザー] タブと [MyButton] タブを表示するタブが表示されるようになりました。他の機能を持つカスタムスタートページを作成するには、「[スタートページへのユーザーコントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)」の説明に従って、カスタム .dll を追加するための*分離コード*モデルを使用します。 作成した .vsix ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) の web サイト、または別の web サイトまたはネットワーク共有に発行することで、カスタムスタートページを他のユーザーと共有できます。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。
+Visual Studio のスタートページに、[Web ブラウザー] タブと [MyButton] タブを表示するタブが表示されるようになりました。他の機能を持つカスタムスタートページを作成するには、「[スタートページへのユーザーコントロールの追加](../extensibility/adding-user-control-to-the-start-page.md)」の説明に従って、カスタム .dll を追加するための *分離コード* モデルを使用します。 作成した .vsix ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) の web サイト、または別の web サイトまたはネットワーク共有に発行することで、カスタムスタートページを他のユーザーと共有できます。 詳細については、「 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

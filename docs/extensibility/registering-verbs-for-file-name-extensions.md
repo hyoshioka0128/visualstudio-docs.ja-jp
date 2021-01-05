@@ -1,5 +1,7 @@
 ---
 title: ファイル名拡張子に対する動詞の登録 |Microsoft Docs
+description: シェルキーを使用して、ファイル名拡張子のプログラム識別子に関連付けられている動詞を登録する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,26 +12,26 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701534"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863042"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>ファイル名拡張子の動詞を登録する
 通常、ファイル名拡張子とアプリケーションの関連付けには、ユーザーがファイルをダブルクリックしたときに発生する優先的な操作があります。 この優先アクションは、アクションに対応する動詞 (たとえば、open) にリンクされています。
 
- 拡張機能のプログラム識別子 (ProgID) に関連付けられている動詞は、 **HKEY_CLASSES_ROOT \{ progid} \ シェル**にあるシェルキーを使用して登録できます。 詳細については、「 [ファイルの種類](/windows/desktop/shell/fa-file-types)」を参照してください。
+ 拡張機能のプログラム識別子 (ProgID) に関連付けられている動詞は、 **HKEY_CLASSES_ROOT \{ progid} \ シェル** にあるシェルキーを使用して登録できます。 詳細については、「 [ファイルの種類](/windows/desktop/shell/fa-file-types)」を参照してください。
 
 ## <a name="register-standard-verbs"></a>標準動詞の登録
  オペレーティングシステムは、次の標準動詞を認識します。
 
 - [ファイル]
 
-- [編集]
+- 編集
 
-- [再生]
+- Play
 
 - 印刷
 
@@ -71,7 +73,7 @@ ms.locfileid: "80701534"
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- の既存のインスタンスでファイルを開くには [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、DDEEXEC キーを登録します。 次の例は、.cs ファイルの標準的な動詞登録を示してい [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs*ます。
+ の既存のインスタンスでファイルを開くには [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、DDEEXEC キーを登録します。 次の例は、.cs ファイルの標準的な動詞登録を示してい [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ます。
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -106,10 +108,10 @@ ms.locfileid: "80701534"
 ```
 
 ## <a name="set-the-default-verb"></a>既定の動詞を設定する
- 既定の動詞は、ユーザーがエクスプローラーでファイルをダブルクリックしたときに実行されるアクションです。 既定の動詞は、 **HKEY_CLASSES_ROOT \\ *progid*\ シェル**キーの既定値として指定された動詞です。 値が指定されていない場合、既定の動詞は**HKEY_CLASSES_ROOT \\ *progid*\ シェル**キーリストで指定されている最初の動詞です。
+ 既定の動詞は、ユーザーがエクスプローラーでファイルをダブルクリックしたときに実行されるアクションです。 既定の動詞は、 **HKEY_CLASSES_ROOT \\ *progid*\ シェル** キーの既定値として指定された動詞です。 値が指定されていない場合、既定の動詞は **HKEY_CLASSES_ROOT \\ *progid*\ シェル** キーリストで指定されている最初の動詞です。
 
 > [!NOTE]
 > サイドバイサイド展開で拡張機能の既定の動詞を変更する場合は、インストールと削除に与える影響について検討してください。 インストール中に、元の既定値が上書きされます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Side-by-side ファイルの関連付けの管理](../extensibility/managing-side-by-side-file-associations.md)
