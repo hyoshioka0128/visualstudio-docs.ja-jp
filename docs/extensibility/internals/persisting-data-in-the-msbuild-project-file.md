@@ -1,5 +1,7 @@
 ---
 title: MSBuild プロジェクトファイル内のデータの永続化 |Microsoft Docs
+description: プロジェクトファイルにデータを保存し、IPersistXMLFragment を使用してプロジェクトファイル内のデータをプロジェクトのサブタイプ集計レベル全体で維持する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706694"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878080"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild プロジェクト ファイルでのデータの保持
 プロジェクトのサブタイプは、後で使用するために、サブタイプ固有のデータをプロジェクトファイルに保存する必要がある場合があります。 プロジェクトのサブタイプは、次の要件を満たすためにプロジェクトファイルの永続化を使用します。
@@ -24,7 +26,7 @@ ms.locfileid: "80706694"
 
     1. 構成に依存しないデータ。 つまり、条件が空白または不足している MSBuild 要素に格納されているデータです。
 
-    2. 構成に依存するデータ。 つまり、特定のプロジェクト構成に対して条件を設定した MSBuild 要素に格納されたデータ。 次に例を示します。
+    2. 構成に依存するデータ。 つまり、特定のプロジェクト構成に対して条件を設定した MSBuild 要素に格納されたデータ。 例:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -36,7 +38,7 @@ ms.locfileid: "80706694"
 
     2. 構成に依存するデータ。
 
-## <a name="persisting-build-related-information"></a>ビルド関連の情報の保持
+## <a name="persisting-build-related-information"></a>Build-Related 情報の保持
  プロジェクトのビルドに役立つデータの永続化は、MSBuild によって処理されます。 MSBuild システムは、ビルド関連の情報のマスターテーブルを保持します。 プロジェクトのサブタイプは、このデータにアクセスしてプロパティ値を取得および設定する役割を担います。 プロジェクトのサブタイプでは、永続化されるプロパティを追加し、永続化されないようにプロパティを削除することで、ビルド関連のデータテーブルを拡張することもできます。
 
  MSBuild データを変更するために、プロジェクトのサブタイプは、を使用して基本プロジェクトシステムから MSBuild プロパティオブジェクトを取得し <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> ます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> は、コアプロジェクトシステムに実装されたインターフェイスであり、を実行して、プロジェクトのサブタイプを集計し `QueryInterface` ます。

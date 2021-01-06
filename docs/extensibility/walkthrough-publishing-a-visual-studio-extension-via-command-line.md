@@ -1,5 +1,7 @@
 ---
 title: コマンドラインを使用して拡張機能を公開する
+description: コマンドラインを使用して拡張機能を Visual Studio Marketplace に発行する方法について説明します。これにより、開発者は新しい拡張機能と更新された拡張機能を参照できます。
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904672"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877924"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>チュートリアル: コマンドラインを使用した Visual Studio 拡張機能の発行
 
 このチュートリアルでは、コマンドラインを使用して Visual Studio 拡張機能を Visual Studio Marketplace に発行する方法について説明します。 拡張機能を Marketplace に追加すると、開発者は [ [**拡張機能と更新プログラム**](../ide/finding-and-using-visual-studio-extensions.md) ] ダイアログボックスを使用して、新しい拡張機能と更新された拡張機能を参照できます。
 
-VsixPublisher.exe は、Visual Studio 拡張機能を Marketplace に発行するためのコマンドラインツールです。 $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe からアクセスできます。 このツールで使用できるコマンドは、 **publish**、 **createpublisher**、 **deletepublisher**、 **deletepublisher**、 **login**、 **logout**です。
+VsixPublisher.exe は、Visual Studio 拡張機能を Marketplace に発行するためのコマンドラインツールです。 $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe からアクセスできます。 このツールで使用できるコマンドは、 **publish**、 **createpublisher**、 **deletepublisher**、 **deletepublisher**、 **login**、 **logout** です。
 
 ## <a name="commands"></a>コマンド
 
@@ -208,7 +210,7 @@ This is test extension.
 
    ![拡張機能 source.extension.vsixmanifest の更新](media/update-extension-vsixmanifest.png)
 
-2. **リリース**モードで拡張機能をビルドします。 これで、拡張機能は \bin\Release フォルダーに VSIX としてパッケージ化されます。
+2. **リリース** モードで拡張機能をビルドします。 これで、拡張機能は \bin\Release フォルダーに VSIX としてパッケージ化されます。
 
 3. VSIX をダブルクリックして、インストールを確認できます。
 

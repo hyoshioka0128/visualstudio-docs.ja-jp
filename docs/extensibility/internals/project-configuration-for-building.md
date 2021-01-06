@@ -1,5 +1,7 @@
 ---
 title: ビルドのプロジェクト構成 |Microsoft Docs
+description: 新しいプロジェクトの種類の [ソリューション構成] ダイアログボックスで、特定のソリューションのソリューション構成の一覧を管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706727"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878002"
 ---
 # <a name="project-configuration-for-building"></a>ビルドのためのプロジェクト構成
 特定のソリューションのソリューション構成の一覧は、[ソリューション構成] ダイアログボックスによって管理されます。

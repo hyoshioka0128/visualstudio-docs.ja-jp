@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: QuickInfo ツールヒントの表示 |Microsoft Docs'
+description: このチュートリアルを使用して、テキストコンテンツの QuickInfo を表示する方法について説明します。 [QuickInfo] メソッド名のメソッドシグネチャと説明を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 0eb70e5d39708ffd532fe39d6d597043621158d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34e1bb2c92cd387e979fdaa5746a34ea8d3995fc
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904823"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877937"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>チュートリアル: QuickInfo ツールヒントの表示
 QuickInfo は、ユーザーがメソッド名の上にポインターを移動したときに、メソッドのシグネチャと説明を表示する IntelliSense 機能です。 Quickinfo などの言語ベースの機能を実装するには、QuickInfo の説明を提供する識別子を定義した後、コンテンツを表示するためのツールヒントを作成します。 言語サービスのコンテキストで QuickInfo を定義することも、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類のクイックヒントを表示することもできます。または、既存のコンテンツの種類 ("text" など) の QuickInfo を表示することもできます。 このチュートリアルでは、"text" コンテンツタイプの QuickInfo を表示する方法について説明します。
@@ -57,7 +59,7 @@ QuickInfo は、ユーザーがメソッド名の上にポインターを移動�
 
 1. クラス ファイルを追加し、その名前を `TestQuickInfoSource`にします。
 
-2. *VisualStudio*への参照を追加します。
+2. *VisualStudio* への参照を追加します。
 
 3. 次のインポートを追加します。
 

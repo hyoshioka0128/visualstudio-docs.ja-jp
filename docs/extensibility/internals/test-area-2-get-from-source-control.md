@@ -1,5 +1,7 @@
 ---
 title: 'テスト領域 2: ソース管理から取得する |Microsoft Docs'
+description: このテスト領域は、Get を使用してバージョンストアから項目を取得するためのテストケースを対象とします。 これらのテストケースは、ローカルプロジェクトと web プロジェクトの両方に適用できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c213e2774730596db8b8e4f2d0691472495222e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704600"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877703"
 ---
 # <a name="test-area-2-get-from-source-control"></a>テスト領域 2: ソース管理から取得
 このテスト領域は、Get コマンドを使用してバージョンストアから項目を取得するためのテストケースを対象とします。 これらのテストケースは、ローカルプロジェクトと Web プロジェクトの両方に適用できます。
@@ -28,9 +30,9 @@ ms.locfileid: "80704600"
 
 - [**ファイル**]、[**ソース管理**]、[**最新バージョンの取得**]。
 
-- **ファイル**を **取得し、最新バージョンを取得**します。
+- **ファイル** を **取得し、最新バージョンを取得** します。
 
-- ショートカットメニューを表示し、 **最新バージョンを取得**します。
+- ショートカットメニューを表示し、 **最新バージョンを取得** します。
 
 - Get: **File**、 **Source Control**、 **get**。
 

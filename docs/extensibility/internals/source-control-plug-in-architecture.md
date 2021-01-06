@@ -1,5 +1,7 @@
 ---
 title: ソース管理プラグインのアーキテクチャ |Microsoft Docs
+description: ソース管理プラグインを実装およびアタッチして、Visual Studio IDE にソース管理サポートを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f549ad2c4ee456860a08fbf20ccda813934a8582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705109"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878067"
 ---
 # <a name="source-control-plug-in-architecture"></a>アーキテクチャのソース管理プラグイン
-ソース [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 管理プラグインを実装してアタッチすることによって、統合開発環境 (IDE) にソース管理サポートを追加できます。 IDE は、適切に定義されたソース管理プラグイン API を使用してソース管理プラグインに接続します。 IDE では、ツールバーとメニューコマンドで構成されるユーザーインターフェイス (UI) を提供することによって、ソース管理システムのバージョン管理機能を公開しています。 ソース管理プラグインは、ソース管理機能を実装します。
+ソース [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 管理プラグインを実装してアタッチすることによって、統合開発環境 (IDE) にソース管理サポートを追加できます。 IDE は、適切に定義されたソース管理 Plug-In API を使用してソース管理プラグインに接続します。 IDE では、ツールバーとメニューコマンドで構成されるユーザーインターフェイス (UI) を提供することによって、ソース管理システムのバージョン管理機能を公開しています。 ソース管理プラグインは、ソース管理機能を実装します。
 
 ## <a name="source-control-plug-in-resources"></a>ソース管理プラグインのリソース
  ソース管理プラグインは、バージョン管理アプリケーションを作成し、IDE に接続するのに役立つリソースを提供し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 ソース管理プラグインには、IDE に統合できるようにソース管理プラグインによって実装される必要がある API 仕様が含まれてい [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 また、ソース管理プラグイン API に準拠した重要な関数の実装を示すスケルトンソース管理プラグインを実装するコードサンプル (C++ で記述) も含まれています。

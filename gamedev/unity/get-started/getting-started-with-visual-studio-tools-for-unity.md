@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341293"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903754"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio と Unity を使ってみる
 
@@ -34,7 +34,7 @@ Visual Studio Tools for Unity は、C# などの記述とデバッグをサポ�
 > [!NOTE]
 > このインストールガイドは、Visual Studio を対象としています。 Visual Studio Code を使用している場合は、 [VS Code のドキュメントを使用した Unity 開発に関する](https://code.visualstudio.com/docs/other/unity)ページを参照してください。
 
-1. [Visual Studio インストーラーをダウンロードする](/docs/install/install-visual-studio.md)か、既にインストールされている場合は実行します。
+1. [Visual Studio インストーラーをダウンロードする](/visualstudio/docs/install/install-visual-studio.md)か、既にインストールされている場合は実行します。
 2. **[変更]** をクリックします (既にインストールされている場合)。または、 **[インストール]** をクリックして、目的のバージョンの Visual Studio をインストールします (新規インストール)。
 3. [ **ワークロード** ] タブで、[ **ゲーム** ] セクションまでスクロールし、[ **Unity を使用したゲーム開発** ] ワークロードを選択します。
 
@@ -84,7 +84,7 @@ Tools for Unity は Visual Studio for Mac のインストールに含まれて�
 
     ![Windows 上の Unity エディターの [外部ツール] 基本設定メニュー](../media/vs/preferences-external-tools.png)
 
-4. **[Browse...]\(参照...\)** を選択した場合は、Visual Studio インストール ディレクトリの中の **Common7/IDE** ディレクトリに移動し、 **devenv.exe** を選択します。 次に、[ **開く** ] をクリックします。
+4. **[Browse...]\(参照...\)** を選択した場合は、Visual Studio インストール ディレクトリの中の **Common7/IDE** ディレクトリに移動し、**devenv.exe** を選択します。 次に、[ **開く**] をクリックします。
 5. **[External Script Editor]\(外部スクリプト エディター\)** の一覧から Visual Studio を選択した後、 **[Editor Attaching]\(エディターのアタッチ\)** チェックボックスがオンになっていることを確認します。
 6. **[Preferences]\(ユーザー設定\)** ダイアログを閉じて、構成プロセスを完了します。
 

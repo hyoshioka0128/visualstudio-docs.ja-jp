@@ -1,5 +1,6 @@
 ---
 title: エディター拡張機能でシェルコマンドを使用する
+description: メニューコマンドを呼び出して、エディターのテキストビューに表示要素を追加する方法について説明します。 VSPackage から、メニューコマンドなどの機能をエディターに追加できます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33886b170a8e0138a199f5d7cb51467875c8c3c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037472"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877820"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェルコマンドを使用する
 VSPackage から、メニューコマンドなどの機能をエディターに追加できます。 このチュートリアルでは、メニューコマンドを呼び出して、エディターのテキストビューに表示要素を追加する方法について説明します。
@@ -29,17 +30,17 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 ## <a name="create-an-extension-with-a-menu-command"></a>メニューコマンドを使用して拡張機能を作成する
  [**ツール**] メニューに [**装飾要素の追加**] という名前のメニューコマンドを配置する VSPackage を作成します。
 
-1. という名前の C# VSIX プロジェクトを作成 `MenuCommandTest` し、カスタムコマンド項目テンプレート名 **addadornment**を追加します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+1. という名前の C# VSIX プロジェクトを作成 `MenuCommandTest` し、カスタムコマンド項目テンプレート名 **addadornment** を追加します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
 2. MenuCommandTest という名前のソリューションが開きます。 MenuCommandTestPackage ファイルには、メニューコマンドを作成し、[ **ツール** ] メニューに配置するコードが含まれています。 この時点で、コマンドによってメッセージボックスが表示されます。 後の手順では、これを変更してコメントの表示要素を表示する方法を示します。
 
 3. VSIX マニフェストエディターで *source.extension.vsixmanifest* ファイルを開きます。 このタブには、 `Assets` MenuCommandTest という名前の VisualStudio の行が含まれている必要があります。
 
-4. *Source.extension.vsixmanifest*ファイルを保存して閉じます。
+4. *Source.extension.vsixmanifest* ファイルを保存して閉じます。
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>コマンド拡張機能に MEF 拡張機能を追加する
 
-1. **ソリューションエクスプローラー**で、ソリューションノードを右クリックし、[**追加**] をクリックして、[**新しいプロジェクト**] をクリックします。 [**新しいプロジェクトの追加**] ダイアログボックスで、[ **Visual C#**] の [**拡張機能**]、[ **VSIX プロジェクト**] の順にクリックします。 プロジェクトに `CommentAdornmentTest` という名前を付けます。
+1. **ソリューションエクスプローラー** で、ソリューションノードを右クリックし、[**追加**] をクリックして、[**新しいプロジェクト**] をクリックします。 [**新しいプロジェクトの追加**] ダイアログボックスで、[ **Visual C#**] の [**拡張機能**]、[ **VSIX プロジェクト**] の順にクリックします。 プロジェクトに `CommentAdornmentTest` という名前を付けます。
 
 2. このプロジェクトは、厳密な名前が付けられた VSPackage アセンブリと対話するため、アセンブリに署名する必要があります。 VSPackage アセンブリ用に既に作成されているキーファイルを再利用することができます。
 
@@ -47,7 +48,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
     2. [ **アセンブリの署名**] を選択します。
 
-    3. [ **厳密な名前のキーファイルを選択し**てください] で、MenuCommandTest アセンブリ用に生成された *キー .snk* ファイルを選択します。
+    3. [ **厳密な名前のキーファイルを選択し** てください] で、MenuCommandTest アセンブリ用に生成された *キー .snk* ファイルを選択します。
 
 ## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>VSPackage プロジェクトの MEF 拡張機能を参照してください。
  MEF コンポーネントを VSPackage に追加するため、マニフェストで両方の種類のアセットを指定する必要があります。
@@ -63,15 +64,15 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 3. [ **種類** ] ボックスの一覧で、[ **VisualStudio**] を選択します。
 
-4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
+4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト** を選択します。
 
 5. [ **プロジェクト** ] ボックスの一覧で [ **CommentAdornmentTest**] を選択します。
 
-6. *Source.extension.vsixmanifest*ファイルを保存して閉じます。
+6. *Source.extension.vsixmanifest* ファイルを保存して閉じます。
 
 7. MenuCommandTest プロジェクトに CommentAdornmentTest プロジェクトへの参照があることを確認します。
 
-8. CommentAdornmentTest プロジェクトで、アセンブリを生成するようにプロジェクトを設定します。 **ソリューションエクスプローラー**でプロジェクトを選択し、[**プロパティ**] ウィンドウで [**ビルド出力を outputdirectory にコピー** ] プロパティを確認し、[ **true**] に設定します。
+8. CommentAdornmentTest プロジェクトで、アセンブリを生成するようにプロジェクトを設定します。 **ソリューションエクスプローラー** でプロジェクトを選択し、[**プロパティ**] ウィンドウで [**ビルド出力を outputdirectory にコピー** ] プロパティを確認し、[ **true**] に設定します。
 
 ## <a name="define-a-comment-adornment"></a>コメントの装飾を定義する
  コメントの表示記号自体は、 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 選択されたテキストを追跡すると、作成者とテキストの説明を表す文字列で構成されます。
@@ -109,7 +110,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 4. ファイルには、という名前のクラスが含まれている必要があり `CommentAdornment` ます。
 
     ```csharp
-    internal class CommentAdornment
+    internal class CommentAdornment
     ```
 
 5. 、 `CommentAdornment` <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 作成者、および説明のクラスに、3つのフィールドを追加します。
@@ -162,9 +163,9 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
     ```csharp
     private Geometry textGeometry;
     private Grid commentGrid;
-    private static Brush brush;
-    private static Pen solidPen;
-    private static Pen dashPen;
+    private static Brush brush;
+    private static Pen solidPen;
+    private static Pen dashPen;
     ```
 
 5. コメントの表示要素を定義するコンストラクターを追加し、関連するテキストを追加します。
@@ -239,7 +240,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 6. また <xref:System.Windows.Controls.Panel.OnRender%2A> 、装飾を描画するイベントハンドラーも実装します。
 
     ```csharp
-    protected override void OnRender(DrawingContext dc)
+    protected override void OnRender(DrawingContext dc)
     {
         base.OnRender(dc);
         if (this.textGeometry != null)
@@ -276,7 +277,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 4. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>の静的イベントを呼び出すように、メソッドを実装し `Create()` `CommentAdornmentManager` ます。
 
     ```csharp
-    public void TextViewCreated(IWpfTextView textView)
+    public void TextViewCreated(IWpfTextView textView)
     {
         CommentAdornmentManager.Create(textView);
     }
@@ -285,16 +286,16 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 5. コマンドを実行するために使用できるメソッドを追加します。
 
     ```csharp
-    static public void Execute(IWpfTextViewHost host)
+    static public void Execute(IWpfTextViewHost host)
     {
         IWpfTextView view = host.TextView;
-        //Add a comment on the selected text. 
+        //Add a comment on the selected text. 
         if (!view.Selection.IsEmpty)
         {
             //Get the provider for the comment adornments in the property bag of the view.
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));
 
-            //Add some arbitrary author and comment text. 
+            //Add some arbitrary author and comment text. 
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string comment = "Four score....";
 
@@ -356,7 +357,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
     private CommentAdornmentProvider(ITextBuffer buffer)
     {
         this.buffer = buffer;
-        //listen to the Changed event so we can react to deletions. 
+        //listen to the Changed event so we can react to deletions. 
         this.buffer.Changed += OnBufferChanged;
     }
 
@@ -365,9 +366,9 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 6. `Create()` メソッドを追加します。
 
     ```csharp
-    public static CommentAdornmentProvider Create(IWpfTextView view)
+    public static CommentAdornmentProvider Create(IWpfTextView view)
     {
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });
     }
 
     ```
@@ -375,11 +376,11 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 7. `Detach()` メソッドを追加します。
 
     ```csharp
-    public void Detach()
+    public void Detach()
     {
         if (this.buffer != null)
         {
-            //remove the Changed listener 
+            //remove the Changed listener 
             this.buffer.Changed -= OnBufferChanged;
             this.buffer = null;
         }
@@ -394,25 +395,25 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 9. イベントの宣言を追加 `CommentsChanged` します。
 
     ```csharp
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;
     ```
 
 10. 装飾を `Add()` 追加するメソッドを作成します。
 
     ```csharp
-    public void Add(SnapshotSpan span, string author, string text)
+    public void Add(SnapshotSpan span, string author, string text)
     {
         if (span.Length == 0)
-            throw new ArgumentOutOfRangeException("span");
+            throw new ArgumentOutOfRangeException("span");
         if (author == null)
-            throw new ArgumentNullException("author");
+            throw new ArgumentNullException("author");
         if (text == null)
-            throw new ArgumentNullException("text");
+            throw new ArgumentNullException("text");
 
         //Create a comment adornment given the span, author and text.
         CommentAdornment comment = new CommentAdornment(span, author, text);
 
-        //Add it to the list of comments. 
+        //Add it to the list of comments. 
         this.comments.Add(comment);
 
         //Raise the changed event.
@@ -426,19 +427,19 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 11. メソッドを追加 `RemoveComments()` します。
 
     ```csharp
-    public void RemoveComments(SnapshotSpan span)
+    public void RemoveComments(SnapshotSpan span)
     {
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;
 
         //Get a list of all the comments that are being kept
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);
 
-        foreach (CommentAdornment comment in this.comments)
+        foreach (CommentAdornment comment in this.comments)
         {
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith. 
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith. 
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))
             {
-                //Raise the change event to delete this comment. 
+                //Raise the change event to delete this comment. 
                 if (commentsChanged != null)
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));
             }
@@ -456,24 +457,24 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)
     {
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();
-        foreach (CommentAdornment comment in this.comments)
+        foreach (CommentAdornment comment in this.comments)
         {
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))
                 overlappingComments.Add(comment);
         }
 
-        return new Collection<CommentAdornment>(overlappingComments);
+        return new Collection<CommentAdornment>(overlappingComments);
     }
     ```
 
 13. 次のように、という名前のクラスを追加し `CommentsChangedEventArgs` ます。
 
     ```csharp
-    internal class CommentsChangedEventArgs : EventArgs
+    internal class CommentsChangedEventArgs : EventArgs
     {
-        public readonly CommentAdornment CommentAdded;
+        public readonly CommentAdornment CommentAdded;
 
-        public readonly CommentAdornment CommentRemoved;
+        public readonly CommentAdornment CommentRemoved;
 
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)
         {
@@ -510,9 +511,9 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 4. いくつかのプライベートフィールドを追加します。
 
     ```csharp
-    private readonly IWpfTextView view;
-    private readonly IAdornmentLayer layer;
-    private readonly CommentAdornmentProvider provider;
+    private readonly IWpfTextView view;
+    private readonly IAdornmentLayer layer;
+    private readonly CommentAdornmentProvider provider;
     ```
 
 5. イベントおよびイベントに対して、マネージャーをサブスクライブするコンストラクターを追加 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> し `CommentsChanged` ます。 このコンストラクターは、静的メソッドによってマネージャーがインスタンス化されるため、プライベートです `Create()` 。
@@ -534,22 +535,22 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 6. プロバイダーを `Create()` 取得する、または必要に応じて作成するメソッドを追加します。
 
     ```csharp
-    public static CommentAdornmentManager Create(IWpfTextView view)
+    public static CommentAdornmentManager Create(IWpfTextView view)
     {
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });
     }
     ```
 
 7. ハンドラーを追加 `CommentsChanged` します。
 
     ```csharp
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)
     {
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag). 
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag). 
         if (e.CommentRemoved != null)
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);
 
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout). 
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout). 
         if (e.CommentAdded != null)
             this.DrawComment(e.CommentAdded);
     }
@@ -558,7 +559,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 8. ハンドラーを追加 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> します。
 
     ```csharp
-    private void OnClosed(object sender, EventArgs e)
+    private void OnClosed(object sender, EventArgs e)
     {
         this.provider.Detach();
         this.view.LayoutChanged -= OnLayoutChanged;
@@ -569,19 +570,19 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 9. ハンドラーを追加 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> します。
 
     ```csharp
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
     {
         //Get all of the comments that intersect any of the new or reformatted lines of text.
         List<CommentAdornment> newComments = new List<CommentAdornment>();
 
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.  
-        //Use the latter to find the comments that intersect the new or reformatted lines of text. 
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.  
+        //Use the latter to find the comments that intersect the new or reformatted lines of text. 
         foreach (Span span in e.NewOrReformattedSpans)
         {
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));
         }
 
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not. 
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not. 
         //Sort the list and skip duplicates.
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });
 
@@ -613,7 +614,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
     - VisualStudio (Microsoft. UI)
 
-2. *AddAdornment.cs*ファイルを開き、次のディレクティブを追加し `using` ます。
+2. *AddAdornment.cs* ファイルを開き、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;
@@ -692,5 +693,5 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
      4スコア...
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

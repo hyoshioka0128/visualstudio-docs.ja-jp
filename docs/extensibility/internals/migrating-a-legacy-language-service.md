@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスの移行 |Microsoft Docs
+description: プロジェクトを更新し、source.extension.vsixmanifest ファイルを追加することで、言語サービスを最新バージョンの Visual Studio に更新する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707108"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877833"
 ---
 # <a name="migrating-a-legacy-language-service"></a>従来の言語サービスの移行
 レガシ言語サービスを Visual Studio の新しいバージョンに移行するには、プロジェクトを更新し、source.extension.vsixmanifest ファイルをプロジェクトに追加します。 言語サービス自体は以前と同様に機能します。これは、Visual Studio エディターによってそれが適応されるためです。
@@ -53,11 +55,11 @@ ms.locfileid: "80707108"
 
 5. [ **一方向のアップグレード** ] ウィンドウが表示されます。 **[OK]** をクリックします。
 
-6. プロジェクトのプロパティを更新します。 [ **プロジェクトのプロパティ** ] ウィンドウを開くには、 **ソリューションエクスプローラー**でプロジェクトノードを選択し、右クリックして、[ **プロパティ**] を選択します。
+6. プロジェクトのプロパティを更新します。 [ **プロジェクトのプロパティ** ] ウィンドウを開くには、 **ソリューションエクスプローラー** でプロジェクトノードを選択し、右クリックして、[ **プロパティ**] を選択します。
 
-    - [ **アプリケーション** ] タブで、[ **ターゲットフレームワーク** ] を **4.6.1**に変更します。
+    - [ **アプリケーション** ] タブで、[ **ターゲットフレームワーク** ] を **4.6.1** に変更します。
 
-    - [**デバッグ**] タブの [**外部プログラムの開始**] ボックスに「 ** \<Visual Studio installation path>\Common7\IDE\devenv.exe**」と入力します。
+    - [**デバッグ**] タブの [**外部プログラムの開始**] ボックスに「 **\<Visual Studio installation path>\Common7\IDE\devenv.exe**」と入力します。
 
          [ **コマンドライン引数** ] ボックスに、「/**rootsuffix Exp**」と入力します。
 
@@ -87,9 +89,9 @@ ms.locfileid: "80707108"
 
     - ファイルをプロジェクトに追加します。
 
-    - ファイルの **プロパティ**で、[ **ビルドアクション** ] を **[なし**] に設定します。
+    - ファイルの **プロパティ** で、[ **ビルドアクション** ] を **[なし**] に設定します。
 
-    - **VSIX マニフェストエディター**を使用してファイルを開きます。
+    - **VSIX マニフェストエディター** を使用してファイルを開きます。
 
     - 次のフィールドを変更します。
 
@@ -103,7 +105,7 @@ ms.locfileid: "80707108"
 
     - ファイルを保存して閉じます。
 
-11. ソリューションをビルドします。 ビルドされたファイルは **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **に配置されます。
+11. ソリューションをビルドします。 ビルドされたファイルは **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\** に配置されます。
 
 12. デバッグを開始します。 Visual Studio の2番目のインスタンスが開かれました。
 

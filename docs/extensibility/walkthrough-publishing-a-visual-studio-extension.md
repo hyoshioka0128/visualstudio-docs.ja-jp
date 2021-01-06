@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: Visual Studio 拡張機能の発行 |Microsoft Docs'
+description: Visual Studio 拡張機能を Visual Studio Marketplace に発行する方法について説明します。これにより、開発者は新しい拡張機能と更新された拡張機能を参照できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904738"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877885"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>チュートリアル: Visual Studio 拡張機能の発行
 
@@ -38,7 +40,7 @@ ms.locfileid: "85904738"
 
    ![拡張機能 source.extension.vsixmanifest の更新](media/update-extension-vsixmanifest.png)
 
-2. **リリース**モードで拡張機能をビルドします。 これで、拡張機能は \bin\Release フォルダーに VSIX としてパッケージ化されます。
+2. **リリース** モードで拡張機能をビルドします。 これで、拡張機能は \bin\Release フォルダーに VSIX としてパッケージ化されます。
 
 3. VSIX をダブルクリックして、インストールを確認できます。
 
@@ -68,21 +70,21 @@ ms.locfileid: "85904738"
 
 6. 拡張機能のアップロードに使用する発行元を選択します。 左側に一覧表示されている発行元の名前をクリックして、パブリッシャーを変更できます。 [ **新しい拡張機能** ] をクリックし、[ **Visual Studio**] を選択します。
 
-7. **1: 拡張子をアップロード**すると、VSIX ファイルを Visual Studio Marketplace に直接アップロードしたり、自分の web サイトへのリンクを追加したりすることができます。 この例では、拡張機能の *Testpublish* がアップロードされます。 拡張機能をドラッグアンドドロップするか、 **クリック** リンクを使用してファイルを参照します。 プロジェクトの \bin\Release フォルダーで拡張機能を見つけます。  **[Continue]** をクリックします。
+7. **1: 拡張子をアップロード** すると、VSIX ファイルを Visual Studio Marketplace に直接アップロードしたり、自分の web サイトへのリンクを追加したりすることができます。 この例では、拡張機能の *Testpublish* がアップロードされます。 拡張機能をドラッグアンドドロップするか、 **クリック** リンクを使用してファイルを参照します。 プロジェクトの \bin\Release フォルダーで拡張機能を見つけます。  **[続行]** をクリックします。
 
-8. **2: 拡張機能の詳細を指定**すると、一部のフィールドが*source.extension.vsixmanifest*ファイルから自動的に設定されます。 詳細については、以下を参照してください。
+8. **2: 拡張機能の詳細を指定** すると、一部のフィールドが *source.extension.vsixmanifest* ファイルから自動的に設定されます。 詳細については、以下を参照してください。
 
     * **内部名** は、拡張機能の詳細ページの URL で使用されます。 たとえば、発行者名 "myname" の下にある拡張機能を発行し、"my extension" という内部名を指定すると、 \. 拡張機能の詳細ページの URL が "marketplace. visualstudio com/items? itemName = myname" になります。
 
-    * 拡張機能の**表示名**。 この名前は、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
+    * 拡張機能の **表示名**。 この名前は、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
 
-    * アップロードする拡張機能の**バージョン**番号。 このバージョンは、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
+    * アップロードする拡張機能の **バージョン** 番号。 このバージョンは、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
 
     * **VSIX ID** は、Visual Studio が拡張機能に使用する一意の識別子です。 拡張機能が自動更新されるようにする場合は、この識別子が必要です。 この識別子は、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
 
-    * 拡張機能に使用される**ロゴ**。 このロゴは、 *source.extension.vsixmanifest* ファイルから自動的に設定されます (指定されている場合)。
+    * 拡張機能に使用される **ロゴ**。 このロゴは、 *source.extension.vsixmanifest* ファイルから自動的に設定されます (指定されている場合)。
 
-    * 拡張機能についての**簡単な説明**。 この説明は、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
+    * 拡張機能についての **簡単な説明**。 この説明は、 *source.extension.vsixmanifest* ファイルから自動的に設定されます。
 
     * **概要** は、スクリーンショット、および拡張機能の動作に関する詳細情報を含めるのに適した場所です。
 
@@ -90,7 +92,7 @@ ms.locfileid: "85904738"
 
     * * * サポートされている Visual Studio エディションでは、拡張機能が動作する Visual Studio のエディションを選択できます。 拡張機能は、これらのエディションにのみインストールされます。
 
-    * **[種類]** 。 最も一般的な種類の拡張機能は **ツール**です。
+    * **[種類]** 。 最も一般的な種類の拡張機能は **ツール** です。
 
     * **カテゴリ**。 拡張機能に最適な最大3つを選択します。
 
@@ -106,7 +108,7 @@ ms.locfileid: "85904738"
 
    ![拡張機能エントリメニュー](media/extension-entry-menu.png)
 
-10. [ **パブリック**にする] をクリックすると、拡張機能がパブリックになります。 Visual Studio Marketplace で拡張機能を検索します。
+10. [ **パブリック** にする] をクリックすると、拡張機能がパブリックになります。 Visual Studio Marketplace で拡張機能を検索します。
 
 ## <a name="add-additional-users-to-manage-your-publisher-account"></a>発行者アカウントを管理するユーザーを追加する
 
@@ -122,7 +124,7 @@ Marketplace では、発行元アカウントにアクセスして管理する�
 
    * **Creator**: ユーザーは拡張機能を公開できますが、他のユーザーによって発行された拡張機能を表示または管理することはできません。
 
-   * **閲覧**者: ユーザーは拡張機能を表示できますが、拡張機能を公開または管理することはできません。
+   * **閲覧** 者: ユーザーは拡張機能を表示できますが、拡張機能を公開または管理することはできません。
 
    * **共同作成者**: ユーザーは拡張機能を発行および管理できますが、パブリッシャーの設定を編集したり、アクセスを管理したりすることはできません。
 
@@ -134,7 +136,7 @@ Marketplace では、発行元アカウントにアクセスして管理する�
 
 1. Visual Studio の [ **ツール** ] メニューで、[ **拡張機能と更新プログラム**] をクリックします。
 
-2. [ **オンライン** ] をクリックし、 **testpublish**を検索します。
+2. [ **オンライン** ] をクリックし、 **testpublish** を検索します。
 
 3. **[Download]** をクリックします。 その後、拡張機能のインストールがスケジュールされます。
 
@@ -148,7 +150,7 @@ Visual Studio Marketplace およびコンピューターから拡張機能を削
 
 1. [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)の web サイトを開きます。
 
-2. 右上隅の [拡張機能の **公開** ] をクリックします。 **Testpublish**の発行に使用したパブリッシャーを選択します。 **Testpublish**の一覧が表示されます。
+2. 右上隅の [拡張機能の **公開** ] をクリックします。 **Testpublish** の発行に使用したパブリッシャーを選択します。 **Testpublish** の一覧が表示されます。
 
 3. 拡張機能のエントリを右クリックし、[ **削除**] をクリックします。 拡張機能を削除するかどうかを確認するメッセージが表示されます。 **[OK]** をクリックします。
 

@@ -1,5 +1,7 @@
 ---
 title: プロパティを表示する Grid |Microsoft Docs
+description: プロパティウィンドウのグリッドにプロパティ名とプロパティ値のフィールドがある場所と、プロパティの拡張でグリッドを操作する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706190"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878028"
 ---
 # <a name="properties-display-grid"></a>プロパティ表示グリッド
 
@@ -29,11 +31,11 @@ ms.locfileid: "80706190"
 
 2. パラメーターを `pfHide` に設定 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> `TRUE` します。
 
-情報を **プロパティ** ウィンドウにプッシュするには、IDE でを使用 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> します。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> は、[ **プロパティ** ] ウィンドウに表示される、関連するプロパティを持つ選択可能なオブジェクトを含むウィンドウごとに、vspackage によって呼び出されます。 **Solution Explorer** <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> `GetProperty` __VSHPROPID を使用したソリューションエクスプローラーの呼び出しの実装[。](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>)階層内のすべてのオブジェクトを取得するために、プロジェクト階層内の VSHPROPID_BrowseObject します。
+情報を **プロパティ** ウィンドウにプッシュするには、IDE でを使用 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> します。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> は、[ **プロパティ** ] ウィンドウに表示される、関連するプロパティを持つ選択可能なオブジェクトを含むウィンドウごとに、vspackage によって呼び出されます。  <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> `GetProperty` __VSHPROPID を使用したソリューションエクスプローラーの呼び出しの実装[。](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>)階層内のすべてのオブジェクトを取得するために、プロジェクト階層内の VSHPROPID_BrowseObject します。
 
 VSPackage が __VSHPROPID をサポートしていない場合 [。VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>)、IDE は <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> __VSHPROPID の値を使用してを使用しようとし [ます。](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) 階層項目が提供する VSHPROPID_SelContainer ます。
 
-プロジェクト VSPackage を作成する必要はありません <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。これは、それを実装する IDE 提供のウィンドウパッケージ ( **ソリューションエクスプローラー**など) がその代わりに構築されるため <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> です。
+プロジェクト VSPackage を作成する必要はありません <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。これは、それを実装する IDE 提供のウィンドウパッケージ ( **ソリューションエクスプローラー** など) がその代わりに構築されるため <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> です。
 
 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> は、IDE によって呼び出される3つのメソッドで構成されます。
 

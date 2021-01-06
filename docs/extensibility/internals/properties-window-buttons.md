@@ -1,5 +1,7 @@
 ---
 title: プロパティウィンドウのボタン |Microsoft Docs
+description: プロパティウィンドウのツールバーに既定で表示されるボタンと、ボタンの実装について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706174"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878015"
 ---
 # <a name="properties-window-buttons"></a>プロパティ ウィンドウのボタン
-開発言語と製品の種類によっては、[ **プロパティ** ] ウィンドウのツールバーに、既定で特定のボタンが表示されます。 どのような場合でも、[ **分類**済み]、[ **アルファベット**]、[ **プロパティ**]、[ **プロパティページ** ] の各ボタンが表示されます。 Visual C# と Visual Basic では、[ **イベント** ] ボタンも表示されます。 特定の Visual C++ プロジェクトでは、[ **vc + + メッセージ** ] ボタンと [ **vc 上書き** ] ボタンが表示されます。 他のプロジェクトの種類では、追加のボタンが表示される場合があります。 [ **プロパティ** ] ウィンドウのボタンの詳細については、「 [プロパティウィンドウ](../../ide/reference/properties-window.md)」を参照してください。
+開発言語と製品の種類によっては、[ **プロパティ** ] ウィンドウのツールバーに、既定で特定のボタンが表示されます。 どのような場合でも、[ **分類** 済み]、[ **アルファベット**]、[ **プロパティ**]、[ **プロパティページ** ] の各ボタンが表示されます。 Visual C# と Visual Basic では、[ **イベント** ] ボタンも表示されます。 特定の Visual C++ プロジェクトでは、[ **vc + + メッセージ** ] ボタンと [ **vc 上書き** ] ボタンが表示されます。 他のプロジェクトの種類では、追加のボタンが表示される場合があります。 [ **プロパティ** ] ウィンドウのボタンの詳細については、「 [プロパティウィンドウ](../../ide/reference/properties-window.md)」を参照してください。
 
 ## <a name="implementation-of-properties-window-buttons"></a>プロパティウィンドウボタンの実装
  [項目 **別** ] ボタンをクリックすると、Visual Studio は、 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> プロパティをカテゴリ別に並べ替えるためにフォーカスがあるオブジェクトのインターフェイスを呼び出します。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> は `IDispatch` 、[ **プロパティ** ] ウィンドウに表示されるオブジェクトに実装されます。
