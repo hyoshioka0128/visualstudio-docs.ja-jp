@@ -1,5 +1,7 @@
 ---
 title: ソース管理の統合の要点 |Microsoft Docs
+description: Visual Studio がサポートする2種類のソース管理の統合について説明します。ソース管理プラグインと VSPackage ベースのソース管理ソリューションです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705233"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876039"
 ---
 # <a name="source-control-integration-essentials"></a>ソース管理の統合の基本情報
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、基本的な機能を提供し、ソース管理プラグイン API (旧称 MSSCCI API) を使用してビルドされるソース管理プラグインと、より堅牢な機能を提供する VSPackage ベースのソース管理統合ソリューションの2種類のソース管理統合をサポートしています。
@@ -50,7 +52,7 @@ ms.locfileid: "80705233"
 
    詳細については、「 [ソース管理の作成 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 - [概要](../../extensibility/internals/source-control-integration-overview.md)
 - [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [ソース管理 VSPackage の作成](../../extensibility/internals/creating-a-source-control-vspackage.md)

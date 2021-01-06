@@ -1,5 +1,7 @@
 ---
 title: ソース管理の VSPackage 機能 |Microsoft Docs
+description: ソース管理 VSPackage の機能について説明します。これには、登録/選択の詳細や、ソース管理に関連する主な機能に関する情報が含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705019"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876221"
 ---
 # <a name="source-control-vspackage-features"></a>ソース管理 VSPackage の特徴
-このセクションでは、ソース管理 VSPackage のさまざまな機能について説明します。 この記事では、このような VSPackage の登録と選択の詳細について概説し、ソース管理に関連した主な機能のうちの3つについて説明します。これには、ソース管理機能のクエリ編集クエリ、保存 (QEQS) イベントの処理、グリフ置換、およびカスタムユーザーインターフェイス (UI) があります。
+このセクションでは、ソース管理 VSPackage のさまざまな機能について説明します。 この記事では、このような VSPackage の登録と選択の詳細について概説し、ソース管理に関連する主な機能である、Query-Edit Query-Save (QEQS) イベントの処理、グリフ置換、ソース管理関数のカスタムユーザーインターフェイス (UI) について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [登録と選択](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,13 +29,13 @@ ms.locfileid: "80705019"
 
 - [クエリの編集とクエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- クエリ-保存イベントのロールと、ソース管理 VSPackage によってどのように処理されるかについて説明します。
+ Query-Edit Query-Save イベントの役割と、ソース管理 VSPackage によってイベントがどのように処理されるかについて説明します。
 
 - [グリフ管理](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 
  グリフコントロールのレベルとその実装方法について説明します。
 
-- [カスタム ユーザー インターフェイス](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)
+- [ユーザー インターフェイスのカスタム設定](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)
 
  ソース管理 VSPackage が指定できる UI 要素の概要を示します。
 

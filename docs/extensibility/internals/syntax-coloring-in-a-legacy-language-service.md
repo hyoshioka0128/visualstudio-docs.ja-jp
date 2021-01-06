@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでの構文の色分け |Microsoft Docs
+description: Visual Studio が従来の言語サービスで構文の色分け表示サービスを実装する方法について説明します。これにより、言語の要素が識別され、エディターに色で表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d0cc0dcf40ab9231e3af6208ab2f844c69f3398
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: bbf063efe30d90c84848222ff931be43834efbad
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414556"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876390"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>従来の言語サービスでの構文の色分け表示
 

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のワークスペース |Microsoft Docs
+description: Visual Studio がワークスペースを使用して、開いているフォルダー内のファイルのコレクションを表す方法について説明します。これには、ワークスペースプロバイダーやサービスも含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952764"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876949"
 ---
 # <a name="workspaces"></a>Workspaces
 
@@ -49,7 +51,7 @@ ms.locfileid: "62952764"
 
 ワークスペースには、 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> ワークスペースに対するシンプルで強力な制御機能を備えたサービスがあります。 設定の基本的な概要については、「 [ビルドおよびデバッグタスクのカスタマイズ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)」を参照してください。
 
-ほとんどの種類の設定 `SettingsType` は、 _VSWorkspaceSettings.json_や_tasks.vs.json_などの_json_ファイルです。
+ほとんどの種類の設定 `SettingsType` は、 _VSWorkspaceSettings.json_ や _tasks.vs.json_ などの _json_ ファイルです。
 
 ワークスペースの設定の機能は、ワークスペース内の単なるパスである "スコープ" を中心にしています。 コンシューマーがを呼び出すと <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> 、要求されたパスと設定の種類を含むすべてのスコープが集計されます。 スコープの集計の優先順位は次のとおりです。
 
@@ -59,7 +61,7 @@ ms.locfileid: "62952764"
 1. ワークスペースルートまでのすべての親ディレクトリ。
 1. "グローバル設定" は、ユーザーディレクトリにあります。
 
-結果はのインスタンスになり <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> ます。 このオブジェクトは、特定の型の設定を保持し、として格納されているキー名を設定するためにクエリを実行でき `string` ます。 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A>メソッドと <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> 拡張メソッドは、呼び出し元が要求する設定値の型を認識することを想定しています。 ほとんどの設定ファイルは、 _json_ ファイルとして保存されますが、多くの呼び出しでは `string` 、 `bool` `int` これらの型の、、、およびの各配列が使用されます。 オブジェクトの種類もサポートされています。 そのような場合は、 `IWorkspaceSettings` それ自体を型引数として使用できます。 次に例を示します。
+結果はのインスタンスになり <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> ます。 このオブジェクトは、特定の型の設定を保持し、として格納されているキー名を設定するためにクエリを実行でき `string` ます。 <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A>メソッドと <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> 拡張メソッドは、呼び出し元が要求する設定値の型を認識することを想定しています。 ほとんどの設定ファイルは、 _json_ ファイルとして保存されますが、多くの呼び出しでは `string` 、 `bool` `int` これらの型の、、、およびの各配列が使用されます。 オブジェクトの種類もサポートされています。 そのような場合は、 `IWorkspaceSettings` それ自体を型引数として使用できます。 例:
 
 ```json
 {
@@ -76,7 +78,7 @@ ms.locfileid: "62952764"
 }
 ```
 
-これらの設定がユーザーの _VSWorkspaceSettings.js_であると仮定すると、データには次のようにアクセスできます。
+これらの設定がユーザーの _VSWorkspaceSettings.js_ であると仮定すると、データには次のようにアクセスできます。
 
 ```csharp
 using System.Collections.Generic;
@@ -169,7 +171,7 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 読み込まれたパッケージは `IVsSolutionEvents7` 、を実装して呼び出すことができ `IVsSolution.AdviseSolutionEvents` ます。 これには、Visual Studio でフォルダーを開いたり閉じたりするイベントが含まれます。
 
-UI コンテキストを使用すると、パッケージを自動的に読み込むことができます。 値は `4646B819-1AE0-4E79-97F4-8A8176FDD664`です。
+UI コンテキストを使用すると、パッケージを自動的に読み込むことができます。 値が `4646B819-1AE0-4E79-97F4-8A8176FDD664` です。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -179,17 +181,17 @@ UI コンテキストを使用すると、パッケージを自動的に読み�
 
 ::: moniker range="vs-2017"
 
-エラーの詳細については、 _%localappdata%\microsoft\visualstudio\15. 0_id \componentmodelcache\microsoft.visualstudio.default.err_を参照してください。 拡張機能によって実装された型のエラーをすべて解決します。
+エラーの詳細については、 _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.visualstudio.default.err_ を参照してください。 拡張機能によって実装された型のエラーをすべて解決します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-エラーの詳細については、 _%localappdata%\microsoft\visualstudio\16. 0_id \componentmodelcache\microsoft.visualstudio.default.err_を参照してください。 拡張機能によって実装された型のエラーをすべて解決します。
+エラーの詳細については、 _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.visualstudio.default.err_ を参照してください。 拡張機能によって実装された型のエラーをすべて解決します。
 
 ::: moniker-end
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [ファイル](workspace-file-contexts.md) コンテキスト-ファイルコンテキストプロバイダーは、開いているフォルダーワークスペースのコードインテリジェンスを提供します。
 * [インデックス作成](workspace-indexing.md) -ワークスペースのインデックス作成は、ワークスペースに関する情報を収集して保持します。

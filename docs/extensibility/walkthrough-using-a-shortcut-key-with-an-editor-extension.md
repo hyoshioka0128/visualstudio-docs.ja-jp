@@ -1,5 +1,6 @@
 ---
 title: エディター拡張機能でショートカットキーを使用する
+description: ショートカットキーを使用して、テキストビューにビューの表示項目を追加する方法について説明します。 このチュートリアルは、ビューポートの装飾エディターテンプレートに基づいています。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037459"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875844"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でのショートカットキーの使用
 エディター拡張機能のショートカットキーに応答できます。 次のチュートリアルでは、ショートカットキーを使用して、ビューの表示要素をテキストビューに追加する方法について説明します。 このチュートリアルは、ビューポートの表示要素エディターテンプレートに基づいており、+ 文字を使用して表示要素を追加できます。
@@ -40,13 +41,13 @@ ms.locfileid: "90037459"
 
     VisualStudio。相互運用
 
-   KeyBindingTest クラスファイルで、クラス名を PurpleCornerBox に変更します。 左余白に表示される電球を使用して、その他の適切な変更を行います。 コンストラクター内で、装飾層の名前を **Keybindingtest** から **PurpleCornerBox**に変更します。
+   KeyBindingTest クラスファイルで、クラス名を PurpleCornerBox に変更します。 左余白に表示される電球を使用して、その他の適切な変更を行います。 コンストラクター内で、装飾層の名前を **Keybindingtest** から **PurpleCornerBox** に変更します。
 
 ```csharp
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-KeyBindingTestTextViewCreationListener.cs クラスファイルで、AdornmentLayer の名前を **Keybindingtest** から **PurpleCornerBox**に変更します。
+KeyBindingTestTextViewCreationListener.cs クラスファイルで、AdornmentLayer の名前を **Keybindingtest** から **PurpleCornerBox** に変更します。
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -78,7 +79,7 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
 3. KeyBindingCommandFilter という名前のクラスは、から継承する必要があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. テキストビューのプライベートフィールド、コマンドチェーンの次のコマンド、およびコマンドフィルターが既に追加されているかどうかを示すフラグを追加します。
@@ -86,8 +87,8 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. テキストビューを設定するコンストラクターを追加します。
@@ -198,7 +199,7 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
 
 1. プロジェクトを右クリックし、[ **Nuget パッケージの管理**] を選択します。
 
-2. **Nuget パッケージマネージャー**で、[**更新プログラム**] タブを選択し、[**すべてのパッケージを選択**] チェックボックスをオンにして、[**更新**] を選択します。
+2. **Nuget パッケージマネージャー** で、[**更新プログラム**] タブを選択し、[**すべてのパッケージを選択**] チェックボックスをオンにして、[**更新**] を選択します。
 
 コマンドハンドラーは、の実装であり <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> 、装飾をインスタンス化することによってコマンドを処理します。
 
@@ -258,7 +259,7 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
    }
    ```
 
-   7. *KeyBindingTestTextViewCreationListener.cs*ファイルから*KeyBindingCommandHandler.cs*レイヤーの定義をコピーし、 *KeyBindingTestTextViewCreationListener.cs*ファイルを削除します。
+   7. *KeyBindingTestTextViewCreationListener.cs* ファイルから *KeyBindingCommandHandler.cs* レイヤーの定義をコピーし、 *KeyBindingTestTextViewCreationListener.cs* ファイルを削除します。
 
    ```csharp
    /// <summary>
@@ -275,7 +276,7 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
 
 元の表示要素は、テキストファイル内のすべての文字 "a" に表示されます。 文字への応答として装飾を追加するようにコードを変更したので、次は **+** 文字が入力された行にのみ装飾を追加し **+** ます。 表示要素のコードを変更して、すべての "a" に表示されるようになります。
 
-*KeyBindingTest.cs*ファイルで、メソッドを変更し `CreateVisuals()` て、' a ' 文字を修飾するビュー内のすべての行を反復処理します。
+*KeyBindingTest.cs* ファイルで、メソッドを変更し `CreateVisuals()` て、' a ' 文字を修飾するビュー内のすべての行を反復処理します。
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

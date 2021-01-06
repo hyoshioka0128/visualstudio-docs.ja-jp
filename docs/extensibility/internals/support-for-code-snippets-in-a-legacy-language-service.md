@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでのコードスニペットのサポート |Microsoft Docs
+description: 従来の言語サービスがコードスニペットをサポートする方法について説明します。 コードスニペットは、ソースファイルに挿入されるコードの一部です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 781633a995027ee9938a0c579af32373c06207c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704906"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876611"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>従来の言語サービスでのコード スニペットのサポート
 コードスニペットは、ソースファイルに挿入されるコードの一部です。 スニペット自体は、一連のフィールドを持つ XML ベースのテンプレートです。 これらのフィールドは、スニペットが挿入された後に強調表示され、スニペットが挿入されたコンテキストによって異なる値を持つことができます。 スニペットが挿入されるとすぐに、言語サービスはスニペットの書式を設定できます。
@@ -92,7 +94,7 @@ ms.locfileid: "80704906"
 |% TestDocs%|ユーザーの settings フォルダー内のフォルダー (たとえば、C:\documents and と Settings \\ *[username]* \My Documents\Visual Studio\8.)|
 
 ### <a name="enabling-code-snippets-for-your-language-service"></a>言語サービスのコードスニペットの有効化
- 属性を VSPackage に追加することによって、言語サービスのコードスニペットを有効にすることができ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> ます (詳細について [は、「従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md) 」を参照してください)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>パラメーターと <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> パラメーターは省略可能ですが、 `SearchPaths` スニペットの場所を**コードスニペットマネージャー**に通知するために、名前付きパラメーターを含める必要があります。
+ 属性を VSPackage に追加することによって、言語サービスのコードスニペットを有効にすることができ <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> ます (詳細について [は、「従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md) 」を参照してください)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>パラメーターと <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> パラメーターは省略可能ですが、 `SearchPaths` スニペットの場所を **コードスニペットマネージャー** に通知するために、名前付きパラメーターを含める必要があります。
 
  この属性を使用する方法の例を次に示します。
 

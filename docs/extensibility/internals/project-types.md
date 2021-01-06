@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの種類 |Microsoft Docs
+description: Visual Studio には、Visual C# や Visual Basic などの言語用のプロジェクトの種類がいくつか含まれています。 Visual Studio では、独自のプロジェクトの種類を作成することもできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e38649f825e0dfa554d9fbc90c57f63370b31f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706259"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877196"
 ---
 # <a name="project-types"></a>プロジェクトの種類
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、やなどの言語用のプロジェクトの種類がいくつか含まれてい [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、独自のプロジェクトの種類を作成することもできます。
@@ -32,7 +34,7 @@ ms.locfileid: "80706259"
 
 - [ソリューション エクスプローラーのツールバーへのコマンドの追加](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- ソリューションエクスプローラーツールバーにボタンを追加するために従う必要がある手順について詳しく説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Solution Explorer**ます。
+ ソリューションエクスプローラーツールバーにボタンを追加するために従う必要がある手順について詳しく説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
 - [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
@@ -52,7 +54,7 @@ ms.locfileid: "80706259"
 
 - [入れ子になったプロジェクト](../../extensibility/internals/nesting-projects.md)
 
- プロジェクトを**ソリューションエクスプローラー**にまとめてグループ化できるように、プロジェクトの種類で*入れ子*をサポートする方法について説明します。
+ プロジェクトを **ソリューションエクスプローラー** にまとめてグループ化できるように、プロジェクトの種類で *入れ子* をサポートする方法について説明します。
 
 - [プロジェクトのアップグレード](../../extensibility/internals/upgrading-projects.md)
 

@@ -1,5 +1,7 @@
 ---
 title: プロジェクトコンテキスト |Microsoft Docs
+description: Visual Studio IDE でプロジェクトコンテキストを使用して、ユーザーがプロジェクトおよびプロジェクト項目を追加または操作するときに操作を実行する方法を決定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e411f0bca361f96cdffcfd89498908fd21d441
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc4234481023592595de2df482d5ff6c2227a95e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706596"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877664"
 ---
 # <a name="project-context"></a>プロジェクトのコンテキスト
 ユーザーがプロジェクトおよびプロジェクト項目を追加または操作すると、IDE はプロジェクトコンテキストの概念を使用して、さまざまな操作を実行する方法を決定します。
@@ -24,7 +26,7 @@ ms.locfileid: "80706596"
 
  一部のプロジェクトは、非常に豊富なコンテキストを提供します。 たとえば、プロジェクトでは、プロジェクトスコープのプログラムによる名前空間またはデータバインディングのためのプロジェクトスコープデータベース接続を管理します。 ユーザーは、ソリューションエクスプローラーに表示されるプロジェクト項目などの特定のプロジェクトオブジェクトを使用して、ファイルまたはデータベース接続を直接開くことができます。
 
- それ以外の場合は、項目のプロジェクトコンテキストが明示的に指定されていません。 たとえば、ユーザーがファイルを開いたときに、[**ファイル**] メニューの [**既存のファイルを開く**] コマンドを選択するか、デバッガーがファイルを操作するとき、または [**検索と置換**] ダイアログボックスでユーザーが [**フォルダーを**選択して検索] コマンドをクリックしたときに、項目のコンテキストを使用することはできません。 このような状況に対処するために、IDE はを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> ドキュメントを開くための最適なプロジェクトの検索プロセスを管理します。
+ それ以外の場合は、項目のプロジェクトコンテキストが明示的に指定されていません。 たとえば、ユーザーがファイルを開いたときに、[**ファイル**] メニューの [**既存のファイルを開く**] コマンドを選択するか、デバッガーがファイルを操作するとき、または [**検索と置換**] ダイアログボックスでユーザーが [**フォルダーを** 選択して検索] コマンドをクリックしたときに、項目のコンテキストを使用することはできません。 このような状況に対処するために、IDE はを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> ドキュメントを開くための最適なプロジェクトの検索プロセスを管理します。
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクトの優先順位](../../extensibility/internals/project-priority.md)

@@ -1,5 +1,7 @@
 ---
 title: 出力のプロジェクト構成 |Microsoft Docs
+description: 各構成がサポートできるビルドプロセス、および出力項目を使用できるようにするためのインターフェイスとメソッドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706667"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876325"
 ---
 # <a name="project-configuration-for-output"></a>出力のためのプロジェクト構成
 すべての構成で、実行可能ファイルやリソースファイルなどの出力項目を生成する一連のビルドプロセスをサポートできます。 これらの出力項目はユーザーに対してプライベートであり、実行可能ファイル (.exe、.dll、.lib) やソースファイル (.idl、.h ファイル) など、関連する種類の出力をリンクするグループに配置できます。
@@ -41,10 +43,10 @@ ms.locfileid: "80706667"
 
  プロジェクトにパッケージ化または配置しないが含まれている場合は `IVsOutputGroup` 、その出力をグループに配置してはいけないことに注意してください。 出力は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg.EnumOutputs%2A> グループ化に関係なく、すべての構成の出力を返すメソッドを実装することで、通常どおり列挙できます。
 
- 詳細については、「 `IVsOutputGroup` カスタムプロジェクトのサンプル」の「 [MPF for Projects](https://github.com/tunnelvisionlabs/MPFProj10)の実装」を参照してください。
+ 詳細については、「 `IVsOutputGroup` カスタムプロジェクトのサンプル」の「 [](https://github.com/tunnelvisionlabs/MPFProj10)の実装」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 - [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)
 - [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)
-- [ソリューション構成](../../extensibility/internals/solution-configuration.md)
+- [ソリューションの構成](../../extensibility/internals/solution-configuration.md)

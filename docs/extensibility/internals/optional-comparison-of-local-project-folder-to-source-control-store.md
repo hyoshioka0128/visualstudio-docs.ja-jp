@@ -1,5 +1,7 @@
 ---
 title: プロジェクトフォルダーをソース管理ストアに比較する |Microsoft Docs
+description: ソース管理プラグイン API では、ローカルのプロジェクトフォルダーとソース管理の比較は SccDirQueryInfo と SccDirDiff を使用して実現されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706866"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877586"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>ソース管理ストアとローカルのプロジェクト フォルダーとの比較 (オプション)
 ソース管理プラグイン API 1.2 では、ローカルのプロジェクトフォルダーとソース管理を比較するには、関数 [Sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md) と [Sccdirdiff](../../extensibility/sccdirdiff-function.md)を使用します。
 
- **ソリューションエクスプローラー**内では、個々のファイルではなくフォルダーを選択すると、[**バージョンの比較**] ショートカットメニューによって、ソース管理プラグインの新しい[sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md)と[sccdirdiff](../../extensibility/sccdirdiff-function.md)が呼び出されます。
+ **ソリューションエクスプローラー** 内では、個々のファイルではなくフォルダーを選択すると、[**バージョンの比較**] ショートカットメニューによって、ソース管理プラグインの新しい [sccdirqueryinfo](../../extensibility/sccdirqueryinfo-function.md)と [sccdirdiff](../../extensibility/sccdirdiff-function.md)が呼び出されます。
 
 ## <a name="new-capability-flags"></a>新しい機能フラグ
  `SCC_CAP_DIRECTORYDIFF`
@@ -38,5 +40,5 @@ ms.locfileid: "80706866"
 > [!NOTE]
 > この関数は、 [Sccdiff](../../extensibility/sccdiff-function.md)と同じコマンドフラグを使用します。 ソース管理プラグインプロバイダーは、ディレクトリの "クイック diff" 操作をサポートしないことを選択できます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API バージョン 1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの永続化 |Microsoft Docs
+description: IPersistFileFormat を使用してファイルとファイルベース以外のプロジェクトオブジェクトの両方を永続化するなど、プロジェクトの設計における永続化について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706456"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877443"
 ---
 # <a name="project-persistence"></a>プロジェクトの永続化
 永続化は、プロジェクトの主要な設計上の考慮事項です。 ほとんどのプロジェクトでは、ファイルを表すプロジェクト項目を使用します。で [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、ファイルベースではないデータを持つプロジェクトもサポートされています。 プロジェクトとプロジェクトファイルの両方によって所有されているファイルを永続化する必要があります。 IDE により、プロジェクト自体またはプロジェクト項目を保存するように指示されます。

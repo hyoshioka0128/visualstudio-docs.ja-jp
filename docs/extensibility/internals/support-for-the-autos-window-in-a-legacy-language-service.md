@@ -1,5 +1,6 @@
 ---
 title: 従来の言語サービスで [自動変数] ウィンドウをサポートする
+description: '[自動変数] ウィンドウのサポートを実装する方法について説明します。このウィンドウには、デバッグ中のプログラムが一時停止したときにスコープ内にある式が表示されます。'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5eb4a7201888dc52dfe2f801ebc446786ec3274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c97ab4db9b71c91689abe0afb85230e5b0242962
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038297"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876507"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>従来の言語サービスの [自動変数] ウィンドウのサポート
 

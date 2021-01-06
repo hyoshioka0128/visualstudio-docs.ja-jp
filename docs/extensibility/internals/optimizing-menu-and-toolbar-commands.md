@@ -1,5 +1,7 @@
 ---
 title: メニューとツールバーのコマンドを最適化する |Microsoft Docs
+description: Vspackage とそれに対応するコマンドを追加して、Visual Studio がコマンドの混乱を最小限に抑える方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b35f3a87f819885685b54888031883f4c2776d04
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706917"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877599"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>メニュー、ツール バー コマンドの最適化
 Vspackage とそれに対応するコマンドが追加されると、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI が混雑する可能性があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI コマンドの混乱を最小限に抑える方法について説明します。

@@ -1,5 +1,7 @@
 ---
 title: 登録と選択 (ソース管理 VSPackage) |Microsoft Docs
+description: ソース管理 VSPackage を Visual Studio に登録する方法と、複数の登録済みソース管理パッケージから読み込むパッケージを選択する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705720"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877365"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>登録と選択 (ソース管理 VSPackage)
 に公開するには、ソース管理 VSPackage を登録する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 複数のソース管理 VSPackage が登録されている場合、ユーザーは適切なタイミングで読み込む VSPackage を選択できます。 Vspackage とその登録方法の詳細については、「 [vspackage](../../extensibility/internals/vspackages.md) 」を参照してください。
@@ -24,7 +26,7 @@ ms.locfileid: "80705720"
 ## <a name="registering-a-source-control-package"></a>ソース管理パッケージの登録
  ソース管理パッケージが登録されているため、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 環境でサポートされている機能を検索してクエリを実行できます。 これは、機能またはコマンドが必要な場合、または明示的に要求された場合にのみ、パッケージのインスタンスが作成される遅延読み込みスキームに従っています。
 
- Vspackage は HKEY_LOCAL_MACHINE、バージョン固有のレジストリキー ( \\ *x*はメジャーバージョン番号、 *y*はマイナーバージョン番号) に情報を格納し*ます。* この方法では、複数のバージョンののサイドバイサイドインストールをサポートでき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
+ Vspackage はバージョン固有のレジストリキー (x \\ はメジャーバージョン番号、 *y* はマイナー バージョン番号) に情報 *を HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioします。* この方法では、複数のバージョンののサイドバイサイドインストールをサポートでき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ユーザーインターフェイス (UI) は、インストールされている複数のソース管理プラグイン (ソース管理アダプターパッケージを使用) からの選択、およびソース管理 vspackage をサポートします。 アクティブなソース管理プラグインまたは VSPackage は一度に1つしか存在できません。 ただし、以下で説明するように、IDE では、ソリューションベースの自動パッケージスワップメカニズムを使用して、ソース管理プラグインと Vspackage を切り替えることができます。 この選択メカニズムを有効にするために、ソース管理 VSPackage の一部にはいくつかの要件があります。
 
@@ -67,7 +69,7 @@ ms.locfileid: "80705720"
  ソース管理 VSPackage は、ソリューションを開いたときに、VSPackage のレジストリキーがソリューションファイル内にある場合に呼び出されます。 ソリューションが開かれると、は [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] レジストリ値を検索し、適切なソース管理 VSPackage を読み込みます。 すべてのソース管理 Vspackage には、上記で説明したレジストリエントリが必要です。 ソース管理下にあるソリューションは、特定のソース管理 VSPackage に関連付けられているとマークされています。 ソース管理 Vspackage は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> ソリューションベースの VSPackage の自動スワップを有効にするためにを実装する必要があります。
 
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>パッケージの選択と切り替えを行うための Visual Studio UI
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**ソース管理カテゴリの**下にある [**オプション**] ダイアログボックスで、ソース管理 VSPackage とプラグインを選択するための UI を提供します。 これにより、ユーザーはアクティブなソース管理プラグインまたは VSPackage を選択できます。 ドロップダウンリストには次のものが含まれます。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**ソース管理カテゴリの** 下にある [**オプション**] ダイアログボックスで、ソース管理 VSPackage とプラグインを選択するための UI を提供します。 これにより、ユーザーはアクティブなソース管理プラグインまたは VSPackage を選択できます。 ドロップダウンリストには次のものが含まれます。
 
 - インストールされているすべてのソース管理パッケージ
 

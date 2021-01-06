@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでのアウトラインと非表示テキスト |Microsoft Docs
+description: この記事では、従来の言語サービスでアウトラインと隠し文字を実装するためのリソースにリンクしています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706827"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877404"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>従来の言語サービスでのアウトラインと隠し文字
 アウトラインを使用すると、一連のテキスト行を1行に折りたたむことができます。 たとえば、C++ では、すべてのメソッドを1つの行に折りたたんで、メソッドのシグネチャのみを表示することができます。 Hidden text は、表示または非表示にできるテキスト行のシーケンスです。

@@ -1,5 +1,7 @@
 ---
 title: サポートソース管理 |Microsoft Docs
+description: Visual Studio がプロジェクトまたはエディターのファイルのチェックアウト、チェックイン、およびその他のソース管理操作をサポートする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704731"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876455"
 ---
 # <a name="supporting-source-control"></a>ソース管理のサポート
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、プロジェクトまたはエディターのファイルのチェックアウト、チェックイン、およびその他のソース管理操作がサポートされています。 ソース管理クライアントとして、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] 動的に定義された一連のファイルのアーカイブ、バージョン管理、および制御機能を提供する、などのソース管理パッケージと対話するように設計されています。
