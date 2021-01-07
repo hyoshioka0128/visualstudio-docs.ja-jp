@@ -4,17 +4,19 @@
   items:
     - name: テスト ツールの概要
       href: improve-code-quality.md
+    - name: 単体テストのツールとタスク
+      href: unit-test-your-code.md
+- name: チュートリアル
+  items:
+    - name: はじめに
+      href: getting-started-with-unit-testing.md
 - name: 単体テスト
   items:
-    - name: 単体テスト ツールの概要
-      href: unit-test-your-code.md
-    - name: 作業開始
-      href: getting-started-with-unit-testing.md
     - name: 単体テストの基本
       href: unit-test-basics.md
     - name: 単体テスト プロジェクトを作成する
       href: create-a-unit-test-project.md
-    - name: 単体テスト コマンドの作成
+    - name: コードから単体テストを作成する
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:

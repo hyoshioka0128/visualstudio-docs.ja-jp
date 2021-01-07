@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 03/23/2020
-  ms.openlocfilehash: b2b60b7208fe06aa7e2c2e327174e7536941f204
-  ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+  ms.openlocfilehash: 8967405f3b743b2449a90817a700fec092319245
+  ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "91830696"
+  ms.lasthandoff: 12/23/2020
+  ms.locfileid: "97756579"
 landingContent:
 - title: テスト ツールについて
   linkLists:
@@ -23,36 +23,44 @@ landingContent:
     links:
     - text: テスト ツールの概要
       url: improve-code-quality.md
-    - text: 単体テスト ツールの概要
+    - text: 単体テスト ツールとタスク
       url: unit-test-your-code.md
-    - text: Live Unit Testing の概要
+    - text: Live Unit Testing の概要 (.NET)
       url: live-unit-testing-intro.md
-- title: 単体テスト
+- title: はじめに
   linkLists:
   - linkListType: tutorial
     links:
     - text: 単体テストの概要
       url: getting-started-with-unit-testing.md
-    - text: マネージド コードの単体テストを作成し、実行する
-      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: テスト エクスプローラーを使用して単体テストを実行する
       url: run-unit-tests-with-test-explorer.md
+  - linkListType: how-to-guide
+    links:
+    - text: 単体テストの基本
+      url: unit-test-basics.md
+    - text: コード カバレッジ - テストされるコード割合を確認する
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+- title: .NET の単体テスト
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: マネージド コードの単体テストを作成し、実行する
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - text: Live Unit Testing の概要
       url: live-unit-testing-start.md
     - text: 単体テストを生成する (IntelliTest)
       url: generate-unit-tests-for-your-code-with-intellitest.md
-- title: その他のテスト ツール
-  linkLists:
   - linkListType: how-to-guide
     links:
-    - text: コード カバレッジ - テストされるコード割合を確認する
-      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
     - text: Microsoft Fakes - テスト対象のコードを分離する
       url: isolating-code-under-test-with-microsoft-fakes.md
-    - text: コード化された UI (非推奨)
-      url: use-ui-automation-to-test-your-code.md
-    - text: ロード テスト (非推奨)
-      url: quickstart-create-a-load-test-project.md
+- title: C++ 単体テスト
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: C/C++ 用の単体テストの記述
+      url: writing-unit-tests-for-c-cpp.md
 - title: 関連ツール (Azure DevOps)
   linkLists:
   - linkListType: how-to-guide
@@ -63,3 +71,11 @@ landingContent:
       url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops&preserve-view=true
     - text: 継続的なテスト (Azure Pipelines)
       url: /azure/devops/pipelines/?view=azure-devops&preserve-view=true
+- title: その他のテスト ツール
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: コード化された UI (非推奨)
+      url: use-ui-automation-to-test-your-code.md
+    - text: ロード テスト (非推奨)
+      url: quickstart-create-a-load-test-project.md

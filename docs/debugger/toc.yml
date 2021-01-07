@@ -6,8 +6,6 @@
       href: what-is-debugging.md
     - name: デバッグの技術とツール
       href: write-better-code-with-visual-studio.md
-    - name: デバッグ タスクの検索
-      href: find-your-debugging-task.md
 - name: クイックスタート
   items:
     - name: デバッガーでのはじめに
@@ -944,5 +942,7 @@
                   href: copyright-notice-for-spy-increment-help.md
 - name: リソース
   items:
+    - name: FAQ - デバッグ機能を見つける
+      href: find-your-debugging-task.md
     - name: Visual Studio のデバッガーの新機能
       href: what-s-new-for-the-debugger-in-visual-studio.md
