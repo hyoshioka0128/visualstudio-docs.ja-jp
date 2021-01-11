@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434793"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069475"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
@@ -39,15 +39,10 @@ ms.locfileid: "94434793"
 - [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
 - [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
-これらの規則は既定で無効になっていますが、 [**ソリューションエクスプローラー**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) または [規則セット](using-rule-sets-to-group-code-analysis-rules.md) ファイルで有効にすることができます。 たとえば、ルール CA1502 を警告として有効にするために、ルールセットファイルには次のエントリが含まれます。
+これらの規則は既定で無効になっていますが、 [**ソリューションエクスプローラー**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) または [editorconfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ファイルで有効にすることができます。 たとえば、ルール CA1502 を警告として有効にするために、EditorConfig ファイルには次のエントリが含まれます。
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
-    <Rule Id="CA1502" Action="Warning" />
-  </Rules>
-</RuleSet>
+```cs
+dotnet_diagnostic.CA1502.severity = warning
 ```
 
 ### <a name="configuration"></a>構成
@@ -74,15 +69,15 @@ ms.locfileid: "94434793"
 
 ## <a name="calculate-code-metrics-menu-command"></a>[コードメトリックスの計算] メニューコマンド
 
-[ **Analyze**  >  **コードメトリックスの計算** ] メニューを使用して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
+[   >  **コードメトリックスの計算**] メニューを使用して、IDE で開いているプロジェクトの1つまたはすべてに対してコードメトリックスを生成します。
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコードメトリックスの結果を生成する
 
 ソリューション全体に対するコードメトリックスの結果は、次のいずれかの方法で生成できます。
 
-- メニューバーで、[ **Analyze**  >  **Calculate Code Metrics**  >  **ソリューションの** コードメトリックスの分析] を選択します。
+- メニューバーで、[   >    >  **ソリューションの** コードメトリックスの分析] を選択します。
 
-- **ソリューションエクスプローラー** で、ソリューションを右クリックし、[ **コードメトリックスの計算** ] を選択します。
+- **ソリューションエクスプローラー** で、ソリューションを右クリックし、[**コードメトリックスの計算**] を選択します。
 
 - [ **コードメトリックスの結果** ] ウィンドウで、[ **ソリューションのコードメトリックスを計算** する] ボタンを選択します。
 
@@ -92,7 +87,7 @@ ms.locfileid: "94434793"
 
 1. **ソリューションエクスプローラー** で、1つ以上のプロジェクトを選択します。
 
-1. メニューバーで、[ **Analyze**  >  選択したプロジェクトの **コードメトリックス** を分析する] を選択し  >  **For Selected Project(s)** ます。
+1. メニューバーで、[   >  選択したプロジェクトの **コードメトリックス** を分析する] を選択し  >  ます。
 
 結果が生成され、[ **コードメトリックスの結果** ] ウィンドウが表示されます。 結果の詳細を表示するには、 **階層** 内のツリーを展開します。
 
